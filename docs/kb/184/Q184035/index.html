@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184035/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184035/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184035/","publisher":null,"image":null,"headline":"Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184035-wd97-case-change-in-spelling-checker-causes-constant-recheck">Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184035
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbproof word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you spell check a document with the spelling option "Ignore words in
+UPPERCASE" turned off, when you change the case of a word that is repeated in
+the document and you click Change All, the spelling checker will constantly
+recheck the same word.
+
+NOTE: Press ESC to stop the spelling checker from constantly rechecking the same
+word.
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions are true:
+
+- On the Spelling And Grammar tab (click Options on the Tools menu), you have
+  turned off the "Ignore words in UPPERCASE" option.
+
+  -and-
+
+- The misspelled word is not in the main and custom dictionaries.
+
+  -and-
+
+- The spelling checker finds more than one instance of the misspelled word.
+
+  -and-
+
+- You click Change All in the Spelling and Grammar dialog box.
+
+  -and-
+
+- You changed the case of the misspelled word in the Not In Dictionary box in
+  the Spelling And Grammar dialog box.
+
+WORKAROUND
+==========
+
+Use one of the following methods to correct the case of your misspelled word:
+
+Method 1: Select the "Ignore Words in UPPERCASE" option
+-------------------------------------------------------
+
+1. On the Tools menu, click Options.
+
+2. On the Spelling And Grammar tab, click to select the "Ignore words in
+  UPPERCASE" check box and then click OK.
+
+3. On the Tools menu, click Spelling and Grammar.
+
+Method 2: Change the Case of each Misspelled Word Individually
+--------------------------------------------------------------
+
+1. On the Tools menu, click Spelling And Grammar.
+
+2. When the spelling checker selects (flags) a misspelled word, type in the
+  corrected spelling.
+
+3. When you are prompted "You have chosen a word that is not found in the main
+  or custom dictionaries. Do you want to use this word and continue checking,"
+  click No.
+
+  NOTE: The misspelled word is now changed and is still selected.
+
+4. Click Ignore. The spelling check continues to the next misspelled word.
+
+5. Repeat your changes to the next misspelled word and then click Change.
+
+6. Repeat steps 2 through 5 until the spell check is complete.
+
+Method 3: Use Replace to Change the Case of each Misspelled Word
+----------------------------------------------------------------
+
+1. On the Edit menu, click Replace, and then click the Replace tab.
+
+2. In the Find What box, type the misspelled word.
+
+3. In the Replace With box, type your correction to the misspelled word and then
+  click Replace All.
+
+4. When you receive a message indicating that Word has completed its search and
+  replaced the misspelled words, click OK.
+
+5. Click Close.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q172326 WD97: Spelling Checker Constantly Checks Same Word
+
+  Q178407 WD97: Punctuation May Cause Word to Constantly Check Same Word
+
+Additional query words: stop respond responding broken breaks die loop continuously continuous
+
+======================================================================
+Keywords          : kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

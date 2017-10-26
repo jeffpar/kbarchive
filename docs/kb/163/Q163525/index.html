@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163525: Delay When Saving Word File to Windows NT 4.0 Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163525: Delay When Saving Word File to Windows NT 4.0 Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163525/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163525/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163525/","publisher":null,"image":null,"headline":"Q163525: Delay When Saving Word File to Windows NT 4.0 Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163525-delay-when-saving-word-file-to-windows-nt-40-server">Q163525: Delay When Saving Word File to Windows NT 4.0 Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163525
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.51,4.0
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Microsoft Word version 7.0 or 2000, there may be a delay when you save a
+modified document to a network drive that is located on a Windows NT 4.0 server.
+
+CAUSE
+=====
+
+The Windows NT client was ignoring the oplock break request from the server.
+
+RESOLUTION
+==========
+
+This problem has been identified as a Windows NT environment issue.
+
+To work around this problem, you can disable an optimization called oplock
+(opportunistic lock) on the remote Windows NT server or you can apply the latest
+service pack.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start the Registry Editor (Regedt32.exe).
+
+2. Find the following key:
+
+  \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+           \LanmanServer\Parameters
+
+3. Add the following entry, if it is not already present:
+
+    Value Name: EnableOplocks
+        Data Type:  REG_DWORD
+        Data:       0
+
+  If the entry already exists, set the data to 0.
+
+4. Exit the registry.
+
+5. Shut down and restart Windows NT.
+
+For additional information about oplocks, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q129202 Explanation of Opportunistic Locking on Windows NT
+
+Disabling oplocks might cause a slight decrease in performance, but should not be
+noticeable.
+
+If you encounter a drop in performance, please click on the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q249799 Slow Network Performance with Service Pack 4, 5, 6, or 6a
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base:
+
+  " SERVPACK " (without the quotation marks)
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A fix to
+this problem is in development, but has not been regression-tested and may be
+destabilizing in production environments. Microsoft does not recommend
+implementing this fix at this time. Contact Microsoft Product Support Services
+for more information on the availability of this fix.
+
+
+
+
+Additional query words: 4.00 prodnt slow word97 word95
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

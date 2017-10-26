@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175793: Event ID 20105 or 20108 on RRAS Server That Will Not Redial | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175793: Event ID 20105 or 20108 on RRAS Server That Will Not Redial" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175793/","publisher":null,"image":null,"headline":"Q175793: Event ID 20105 or 20108 on RRAS Server That Will Not Redial","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175793-event-id-20105-or-20108-on-rras-server-that-will-not-redial">Q175793: Event ID 20105 or 20108 on RRAS Server That Will Not Redial</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175793
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Microsoft Windows NT Routing and Remote Access Service (RRAS) Server may
+fail to redial a demand dial connection when the connection is dropped or lost.
+One or more of the following event log messages may also be logged in your event
+viewer:
+
+  Event ID   : 20105
+  Source     : Router
+  Description: Unable to load the interface &lt;interfacename&gt; from
+               the registry. The following error occurred: There are no
+               routing-enabled ports available for use by the demand dial
+               interface.
+
+-or-
+
+  Event ID   : 20108
+  Source     : Router
+  Description: Unable to open the port &lt;portname&gt; for use. The port is
+               already open.
+
+CAUSE
+=====
+
+This problem occurs when the port that the demand dial interface is configured
+to use is already in use by another application or service.
+
+RESOLUTION
+==========
+
+To resolve the problem, close or disable the application or service that has
+control of the port that your demand dial interface is configured to use.
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

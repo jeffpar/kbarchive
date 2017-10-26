@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166817/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166817/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166817/","publisher":null,"image":null,"headline":"Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166817-fix-alpha-mfc-regular-dll-fails-after-porting-from-intel">Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166817
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.0a
+Operating System(s): 
+Keyword(s): kbDLL kbide kbMFC kbVC400bug kbVC500fix kbGrpDSTools kbNoUpdate
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.0a, on platform(s):
+   - the hardware: DEC Alpha 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When moving a Visual C++ 4.x MFC regular DLL (_USRDLL) project from the Intel
+platform to the Alpha RISC platform you may run into one or more of a set of
+related problems. Some symptoms are:
+
+- CWinApp::InitInstance() is not called.
+
+- Resources stored in the DLL fail to load because AfxGetResourceHandle or
+  AfxFindResourceHandle returns NULL or an incorrect resource handle.
+
+- AfxGetInstanceHandle() returns NULL.
+
+- Standard MFC database, sockets, or OLE resources fail to load. For example,
+  AfxLoadString(AFX_IDP_SQL_CONNECT_FAIL) returns an empty string, even when
+  the Regular DLL is properly using the MFC Database classes.
+
+CAUSE
+=====
+
+When you create the Alpha configuration from an existing Intel based
+configuration, the Visual C++ development environment does not copy the /D
+_USRDLL compiler flag. This problem does not cause compiler or linker errors.
+
+Without this symbol defined, the default non-MFC DllMain is used and MFC is not
+initialized.
+
+RESOLUTION
+==========
+
+Make sure that /D "_USRDLL" is in the compiler options for regular MFC DLLs. If
+not, add _USRDLL to the list of preprocessor definitions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+REFERENCES
+==========
+
+For more information covering MFC initialization in your Regular DLL, and other
+relevant topics, please see the following articles in the Microsoft Knowledge
+Base:
+
+  Q140850 HOWTO: Properly Export Functions Using the MFC Shared Library
+
+  Q154126 PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Kelly Marie
+Ward, Microsoft Corporation
+
+
+Additional query words: 4.1 4.2B AXP Digital
+
+======================================================================
+Keywords          : kbDLL kbide kbMFC kbVC400bug kbVC500fix kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : winnt:4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

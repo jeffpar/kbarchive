@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/318/Q318339/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/318/Q318339/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/318/Q318339/","publisher":null,"image":null,"headline":"Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q318339-prb-event-log-errors-in-index-server-if-address-space-exhausted">Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q318339
+Product(s): Internet Information Server
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following event log errors may occur in Index Server when the 2-gigabyte
+(GB) process address space is exhausted:
+
+  5/10/01,5:49:58 PM,Ci,Error,CI Service ,4124,N/A,Server,Content index on
+  d:\catalog\catalog.wci is corrupt. Please shutdown and restart the Content
+  Index service (cisvc).
+
+  5/10/01,5:49:21 PM,Ci,Success Audit,CI Service ,4104,N/A,Server,Master merge
+  has been paused on d:\catalog\catalog.wci due to error 0x80070008. It will be
+  rescheduled later.
+
+CAUSE
+=====
+
+This behavior can occur because the dir files associated with each catalog must
+be mapped into contiguous virtual memory within the 2 GB of CiSvc process
+address space. If there is insufficient contiguous virtual memory, the catalog
+fails to start, and therefore the catalog is reported as corrupted and will be
+deleted.
+
+RESOLUTION
+==========
+
+You can use Microsoft Windows 2000 Advanced Server to expand the address space
+of CiSvc to 3 GB. To do this, follow these steps:
+
+1. Install Windows 2000 Advanced Server.
+
+2. Ensure that there is no disc in your computer's CD-ROM or DVD-ROM drive.
+
+3. Run the following command:
+
+  ipconfig /release
+
+4. Search drive C for Cisvc.exe. You will probably find a version in the
+  c:\winnt\servicepackfiles\i386 directory. Rename any copies that you find as
+  "Cisvc.bak" (without the quotation marks).
+
+5. Rename c:\winnt\system32\dllcache\cisvc.exe as
+  "c:\winnt\system32\dllcache\cisvc.bak" (without the quotation marks).
+
+6. Run the following command:
+
+  imagecfg -l c:\windows\system32\cisvc.exe
+
+  The time and date stamp should be updated to the time and date at which you
+  change the image. The Imagecfg.exe utility is included in Supplement One of
+  the Windows 2000 Resource Kit.
+
+7. Wait a few minutes, and then verify that the Cisvc.exe file in
+  c:\winnt\system32 is the updated binary with the correct time and date stamp.
+
+8. Modify the Boot.ini file to enable application memory tuning. To do this, add
+  the /3GB parameter to the ARC path, as follows:
+
+  multi(0)disk(0)rdisk(0)partition(2)\WINNT="Windows 2000 Advanced Server" /3GB
+
+9. Restart your computer.
+
+MORE INFORMATION
+================
+
+To detect this issue, add up the size of the dir files for each catalog. If the
+sum exceeds approximately 1.5 GB, the process virtual memory is most likely
+being exhausted.
+
+1.5 GB is a rough estimate taken from a reproduction of this issue. The number
+can, and will, vary depending on the sizes of the dir files, the order in which
+the catalogs load, and virtual memory usage and fragmentation.
+
+Dir files tend to become large when there are custom properties defined that
+contain a lot of unique words. The number of unique words can be determined on a
+per-catalog basis by using Perfmon to obtain the unique-keys value for each
+catalog.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : :2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

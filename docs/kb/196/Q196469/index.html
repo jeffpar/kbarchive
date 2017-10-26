@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196469: FIX: MSDN Library Does Not Support CD Server Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196469: FIX: MSDN Library Does Not Support CD Server Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196469/","publisher":null,"image":null,"headline":"Q196469: FIX: MSDN Library Does Not Support CD Server Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196469-fix-msdn-library-does-not-support-cd-server-installation">Q196469: FIX: MSDN Library Does Not Support CD Server Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196469
+Product(s): Microsoft Developer Network
+Version(s): WINDOWS:1.21; winnt:6.0
+Operating System(s): 
+Keyword(s): kbHTMLHelp100fix kbMSDN600bug kbMSDN1098bug
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Developer Network (MSDN) October 98 
+- Microsoft HTML Help 1.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install the MSDN Visual Studio 6.x or MSDN October 1998 Library
+from a CD-ROM Server or CD jukebox server, the viewer does not work as expected.
+When you try to open topics, you get the following error message:
+
+  Internet Explorer cannot open the Internet Site
+  mk:@MSStore:\\ABC\CD1\MSDN\vsintro.chm/html/vsstartpage.htm
+
+  %1 could not be found.
+
+CAUSE
+=====
+
+When you run the Setup.exe from a shared CD CD-DRIVE, the HhColReg.dat file
+contains invalid pointers to content (.chm files). For example, in the previous
+error message, "\\ABC\CD1\MSDN\vsintro.chm" represents the location that the
+Setup.exe was installed from and the topic that you are attempting to view.
+
+RESOLUTION
+==========
+
+There are four ways to resolve this problem.
+
+Obtain the April 1999 or Greater Version of the MSDN Library
+
+------------------------------------------------------------
+
+1. This problem has been corrected in the April 1999 MSDN Library.
+
+Option 2: Copy All of the CD Bits the Local Machine or a Network Location
+-------------------------------------------------------------------------
+
+For additional information how to create a network installation, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q196440 PRB: Problems Running MSDN Library from a Network Installation
+
+Option 3: Share CD 2 and CD 3 on a CD Server
+--------------------------------------------
+
+1. Insert CD 1 into the workstation and install the product.
+
+2. Run the product. When you are prompted to insert CD 2, enter the UNC for CD
+  2, and do the same when you are prompted for CD 3.
+
+  NOTE: When you use this option, each customer must have CD 1 on his or her
+  local computer, available for access.
+
+Option 4: Modify the HhColReg.dat File (UNSUPPORTED and NOT recommended)
+------------------------------------------------------------------------
+
+1. Create share points for all CDs. For example, you can use the following share
+  points: \\ABC\CD1, \\ABC\CD2, \\ABC\CD3.
+
+2. On the Start menu, click Run, type \\ABC\CD1 in the Open: text box, and run
+  the Setup.exe for MSDN.
+
+3. Open the HhColReg.dat file (in the %WinDir%\Help directory). You will see the
+  following sections:
+
+        &lt;Locations&gt;
+        &lt;Location&gt;
+           &lt;LocColNum value=1/&gt;
+           &lt;LocName value="98OCT-1033-Local"/&gt;
+           &lt;TitleString value="Local"/&gt;
+           &lt;LocPath value="C:\Program Files\Microsoft Visual
+                           Studio\MSDN98\98OCT\1033\"/&gt;
+           &lt;Volume value="ABCS300"/&gt;
+        &lt;/Location&gt;
+        &lt;Location&gt;
+           &lt;LocColNum value=1/&gt;
+           &lt;LocName value="98OCT-1033-CD3"/&gt;
+           &lt;TitleString value="MSDN October 1998 CD3"/&gt;
+           &lt;LocPath value="\\ABC\CD1\MSDN\"/&gt;  **NEED TO CHANGE**
+           &lt;Volume value="dnq830enu1"/&gt; **NEED TO CHANGE**
+        &lt;/Location&gt;
+        &lt;Location&gt;
+           &lt;LocColNum value=1/&gt;
+           &lt;LocName value="98OCT-1033-CD2"/&gt;
+           &lt;TitleString value="MSDN October 1998 CD2"/&gt;
+           &lt;LocPath value="\\ABC\CD1\MSDN\"/&gt;  **NEED TO CHANGE**
+           &lt;Volume value="dnq830enu1"/&gt; **NEED TO CHANGE**
+        &lt;/Location&gt;
+        &lt;Location&gt;
+           &lt;LocColNum value=1/&gt;
+           &lt;LocName value="98OCT-1033-VC Samples"/&gt;
+           &lt;TitleString value="MSDN October 1998 CD1"/&gt;
+           &lt;LocPath value="\\ABC\CD1\MSDN\"/&gt;
+           &lt;Volume value="dnq830enu1"/&gt;
+        &lt;/Location&gt;
+        &lt;/Locations&gt;
+        ...
+
+        &lt;DocCompilation&gt;
+           &lt;DocCompId value="vsintro"/&gt;
+           &lt;DocCompLanguage value=1033/&gt;
+           &lt;LocationHistory&gt;
+              &lt;ColNum value=1/&gt;
+        **NEED TO CHANGE**&lt;TitleLocation
+                           value="\\ricks266\CD1\MSDN\vsintro.chm"/&gt;
+              &lt;IndexLocation value="C:\Program Files\Microsoft Visual
+                                    Studio\MSDN98\98OCT\1033\vsintro.chi"/&gt;
+        **NEED TO CHANGE**&lt;QueryLocation
+                           value="\\RICKS266\CD1\MSDN\MSDN830.CHQ"/&gt;
+              &lt;LocationRef value="98OCT-1033-CD2"/&gt;
+              &lt;Version value=29200603/&gt;
+              &lt;LastPromptedVersion value=0/&gt;
+              &lt;TitleSampleLocation value=""/&gt;
+              &lt;TitleQueryLocation value="98OCT-1033-CD2"/&gt;
+              &lt;SupportsMerge value=0/&gt;
+           &lt;/LocationHistory&gt;
+        &lt;/DocCompilation&gt;
+
+You need to change the items marked **NEED TO CHANGE**. The following changes to
+these items enable you to view the Visual Studio Start Page topic from a shared
+CD server.
+
+        ...
+        &lt;LocPath value="\\ABC\CD3\MSDN\"/&gt;
+        &lt;Volume value="13"/&gt;
+        ...
+        &lt;LocPath value="\\ABC\CD2\MSDN\"/&gt;
+        &lt;Volume value="14"/&gt;
+        ...
+        &lt;TitleLocation value="\\ABC\CD2\MSDN\vsintro.chm"/&gt;
+        ...
+        &lt;QueryLocation value="\\ABC\CD2\MSDN\MSDN830.CHQ"/&gt;
+        ...
+
+You need to make the changes mentioned previously, for all DocCompilations. In
+the example above, the path for the VSIntro.chm file has been corrected. Also,
+please note that "Volume value=" needs to be a unique value.
+
+The HhColReg.dat file contains many DocCompilations that must be corrected to
+provide a fully functional MSDN Viewer. All the DocCompilations require the same
+type of changes.
+
+STATUS
+======
+
+This problem has been fixed in the April 1999 version of the MSDN Library.
+
+MORE INFORMATION
+================
+
+The HHCOLREG.DAT is a very important file for the MSDN Viewer. Any modification
+of this file is unsupported because it can break the ability to use collections
+within the viewer. Changing this file could potentially break other collections.
+Therefore, it is not recommended that you modified this file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp100fix kbMSDN600bug kbMSDN1098bug 
+Technology        : kbHTMLHelpSearch kbAudDeveloper kbMSDNSearch kbZNotKeyword2 kbHTMLHelp121 kbMSDNOct98
+Version           : WINDOWS:1.21; winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

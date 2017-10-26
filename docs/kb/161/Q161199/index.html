@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161199: FIX: FOR EACH…ENDFOR Does Not Work with Object Variable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161199: FIX: FOR EACH…ENDFOR Does Not Work with Object Variable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161199/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161199/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161199/","publisher":null,"image":null,"headline":"Q161199: FIX: FOR EACH…ENDFOR Does Not Work with Object Variable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161199-fix-for-eachendfor-does-not-work-with-object-variable">Q161199: FIX: FOR EACH…ENDFOR Does Not Work with Object Variable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161199
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The FOR EACH...ENDFOR command does not work with an object variable in the group
+setting. When the group setting is an object variable, the following error
+message appears:
+
+  &lt;variable name&gt; cannot be enumerated
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+The example provided below assumes that the computer has Visual FoxPro 5.0 and
+Microsoft Excel for Windows 95 version 7.0a installed. The FOR EACH...ENDFOR
+command is not available in earlier versions of FoxPro.
+
+The code opens Excel, adds two workbooks, and lists their names on the Visual
+FoxPro desktop.
+
+Steps to Reproduce Problem
+--------------------------
+
+Place the following code in a program and run it:
+
+  PUBLIC otest
+     otest=CREATE("excel.application")
+     otest.Visible=1
+     otest.workbooks.ADD
+     otest.workbooks.ADD
+
+     FOR EACH wb IN otest.WorkBooks  &amp;&amp; this works fine
+        ?  wb.Name
+     ENDFOR
+
+     myvar = otest.WorkBooks   &amp;&amp; create an object variable
+     FOR EACH wb IN myvar      &amp;&amp; this fails with error message
+        ? wb.Name
+     ENDFOR
+     otest.Quit
+
+The first FOR EACH...ENDFOR loop places the names for the two workbooks on the
+Visual FoxPro desktop. The second loop, using the object variable, causes an
+error message.
+
+NOTE: In the above example, if you choose to Ignore the first error message, a
+"Nesting Error" occurs and the second wb.Name is displayed on the screen.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

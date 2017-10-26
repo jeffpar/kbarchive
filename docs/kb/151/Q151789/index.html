@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151789: XADM: Error -1018 (JET_errReadVerifyFailure) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151789/","publisher":null,"image":null,"headline":"Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151789-xadm-error--1018-jet_errreadverifyfailure">Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151789
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 12-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Symptoms include any JET database operation that results in an -1018
+(JET_errReadVerifyFailure) and/or any Windows NT Event Viewer application log
+error reported that included the error code -1018 in its description, such as
+the following:
+
+  Event ID: 23
+  Source: EDB
+  Type: Error
+  Category: Database Page Cache
+  Description: MSExchangeIS ((455)) Direct read found corrupted page error -1018
+  ((1:251563) (0-2295758), 251563 379225672 381322824). Please restore the
+  database from a previous backup.
+
+CAUSE
+=====
+
+When you perform a transaction with the Jet database, the information store or
+the directory store writes the transaction to a transaction log file (Edb*.log
+in Mdbdata or Dsadata). The transaction is then committed to the Jet database.
+During this process, the Jet engine calculates the page's checksum value to be
+written, records it in the page header, and then requests that the file system
+writes the 4-KB page of data to the database on disk. In brief, the file system
+takes this call and uses Windows NT system services to forward this request to
+the corresponding hardware device driver to actually perform the write. The
+hardware device driver returns this information to the file system, which then
+returns it to the Jet engine. If the call is successful, Jet continues.
+
+Faulty hardware or hardware device drivers may return SUCCESS to calls made to
+them before they actually perform the physical operation. When the actual
+physical operation takes place, however, an error occurs and the data is not
+written successfully as expected.
+
+In certain database operations such as but not limited to Online Backup, the
+backup routine makes a call to the operating system to read a 4-KB page of data
+from the database on disk and write it to tape. Before committing the data
+returned from the operating system call to the tape, the online backup process
+compares the checksum value in the page header (recorded when this page was
+written to disk) to that being returned from the READ call. If the checksum
+values do not match, the JET database engine detects this and returns -1018
+(JET_errReadVerifyFailure).
+
+RESOLUTION
+==========
+
+To resolve the problem, use one of the following methods.
+
+Restore from a Backup
+---------------------
+
+When you encounter the error, the recommended and most reliable way to recover
+the database is to restore from the last known good backup.
+
+NOTES:
+
+Even after you restore from a known good backup, however, the -1018 errors may
+appear again unless the root causes of the physical data write problems are
+resolved.
+
+The Windows NT system log should be reviewed for errors reported by the hard
+disks and hard disk controllers as well at the NT Fault Tolerant disk subsystem
+(FTDISK). In particular, hardware-related errors such as SCSI time-out errors,
+memory errors, or drive corruption errors may appear. These errors should be
+dealt with and resolved before the database is restored to this server.
+
+Even if no hardware-related errors appear in the Windows NT system log, a
+hardware problem may exist on your computer.
+
+Microsoft strongly recommendeds that you contact your hardware vendor for further
+updates regarding your hardware.
+
+Use Edbutil.exe or Eseutil.exe
+------------------------------
+
+An alternate way to repair the bad page of data is to use Edbutil.exe for
+Exchange Server 4.0 and 5.0, or Eseutil.exe for Exchange Server 5.5.
+
+IMPORTANT: Make a full offline file backup of the database and log files before
+running this process. This includes file-level backups of the Exchsrvr\Dsadata
+and Exchsrvr\Mdbdata folders. This ensures that there is a way to go back if
+Edbutil/eseutil fails.
+
+Edbutil.exe (and Eseutil.exe) is a low-level Jet database utility that
+defragments and checks the consistency of the database. There is also a repair
+option (Edbutil /d /r &lt;dbname&gt;, Eseutil /p &lt;dbname&gt;) that attempts
+to repair bad pages and remove them if the repair is unsuccessful. If a page is
+removed using the repair option, data loss will occur. A page in a database can
+contain messages, folders, tables, master indexes, and so forth. There is no way
+to tell what Edbutil or Eseutil has removed because Jet sees it as raw data.
+After repair has finished on the Jet database, run Isinteg.exe in fix mode on
+the same database that Edbutil or Eseutil was run on. Isinteg cleans up any
+inconsistencies between the pointers from the information store to the actual
+data in the Jet database. If Isinteg is not run immediately following repair,
+corruption may occur in user mailboxes. Users will have messages that cannot be
+opened, incorrect read/unread counts, and so forth. After running Edbutil or
+Eseutil, make a FULL backup of the database that was repaired.
+
+Refer to the Microsoft Exchange Server Administrator's Guide for more details on
+the use of Edbutil.exe and Isinteg.exe.
+
+Troubleshoot the Problem
+------------------------
+
+If you are unable to resolve the problem by restoring from a backup or using
+Edbutil.exe or Eseutil.exe, use the following steps to troubleshoot the problem.
+After performing each step, check to see if the problem is resolved.
+
+1. Restart the computer. If you do not want to restart the computer at this
+  time, stop and restart the information store and directory services instead.
+  To do so:
+
+  a. In Control Panel, double-click Services.
+
+  b. Click Microsoft Exchange Directory, and then click Stop. If a dialog box
+     appears stating that additional services will be stopped, note the
+     services that will be stopped, and then click OK. The information store
+     service should be included in the list of services that will be stopped.
+
+  c. Click Microsoft Exchange Directory, and then click Start.
+
+  d. Start any additional services that were stopped in step b, including the
+     information store service.
+
+2. Use the Chkdsk.exe utility to verify the integrity of your hard drives.
+
+3. If the Exchsrvr folder is located on a compressed NTFS file system drive,
+  uncompress the drive.
+
+4. If write-back caching is enabled on a SCSI hard disk controller installed in
+  your computer, verify that the cache is not volatile. Non-volatile caches are
+  protected by a battery, Flash RAM, or some other method.
+
+5. Disable any programs that keep files open for an extended period of time,
+  such as anti-virus programs, file and disk management utilities, or backup
+  programs. If disabling a program prevents the problem from occurring, verify
+  that the program is completely compatible with Exchange Server before you
+  enable it again.
+
+6. Run Performance Optimizer (Perfwiz.exe) on the server.
+
+7. Verify that the virtual memory settings in Windows NT Server are correct. To
+  view the virtual memory settings, in Control Panel, double-click System,
+  click the Performance tab, and then click Change.
+
+8. If you are running any hard disk utilities obtained from your original
+  equipment manufacturer (OEM), verify that you are running the most recent
+  version of the programs.
+
+9. Use the Performance Monitor counters associated with the following objects to
+  detect potential problems:
+
+   - Cache
+   - Database
+   - LogicalDisk
+   - Memory
+   - MSExchangeIS
+   - Paging File
+   - PhysicalDisk
+   - Process
+   - Server Work Queues
+   - Server
+   - System
+   - Thread
+
+Additional query words: exfaq 1018 page bad corrupt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

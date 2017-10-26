@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122852/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122852/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122852/","publisher":null,"image":null,"headline":"Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122852-pc-gen-getting-statistics-on-intra-postoffice-mail">Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122852
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+External options (LogReceive, LogSent, and LogMessageVolume) allow a Mail
+administrator to track the volume of mail flowing in or out of a postoffice
+(PO). However, Mail does not have the ability to log the number of mail messages
+or attachments generated and received within the same postoffice. Regular
+monitoring of the CONTROL.GLB file can provide estimates.
+
+The CONTROL.GLB file is an 8-byte file that contains two long integers, which are
+used for generating new, unique file names. The second integer is used primarily
+for generating mail messages (.MAI) and attachments (.ATT) filename prefixes.
+The change in the integer over a period of time is roughly equal to the volume
+of .MAI and .ATT files created during the same period. This number would include
+both mail and attachments generated within the PO, and the ones the PO received
+through a message transfer agent (MTA).
+
+If a receive log is kept, the number of received messages during the time frame
+can be subtracted from the change in the integer over the same period for a
+rough estimate of local mail and attachment volume during the period.
+
+NOTE: ONLY WORK WITH A COPY OF THE CONTROL.GLB FILE. NEVER RUN DEBUG AGAINST THE
+ACTUAL FILE.
+
+MORE INFORMATION
+================
+
+If the Mail administrator made periodic, numbered copies of the CONTROL.GLB, the
+administrator should be able to get a rough estimate of intra-postoffice mail
+and attachment volume by setting up a procedure similar to the following
+example.
+
+Example of Weekly Numbered Copies of CONTROL.GLB
+------------------------------------------------
+
+  M:\GLB\STATS &gt;dir
+
+   Volume in drive M is REG
+   Volume Serial Number is 1B61-1104
+   Directory of M:\GLB\STATS
+
+  .            &lt;DIR&gt;         08-15-94   9:27a
+  ..           &lt;DIR&gt;         08-15-94   9:27a
+  CONTROL  001             8 08-21-94   1:06a
+  CONTROL  002             8 08-28-94   1:09a
+  CONTROL  003             8 09-04-94   1:02a
+          3 file(s)             24 bytes
+                       208,634,368 bytes free
+
+Translate the last 4 bytes of each copy of CONTROL.GLB to a decimal number, and
+calculate the change by following the steps below:
+
+1. View the last 4 bytes of the CONTROL.# file.
+
+2. Reverse the order of the 4 bytes and concatenate to form an 8 digit hex
+  number.
+
+3. Convert the hex number to decimal.
+
+4. Subtract the integer's decimal value in the previous CONTROL.# file from the
+  integer's decimal value in the current CONTROL.# file.
+
+An example of these steps follows:
+
+Viewing the Integer for .MAI/.ATTs for Each Numbered CONTROL.# File
+-------------------------------------------------------------------
+
+  M:\GLB\STATS &gt;debug control.001
+  -d 104 107
+  15B7:0100              4D 3C 2B 1A                               M&lt;+.
+  -q
+
+  M:\GLB\STATS &gt;debug control.002
+  -d 104 107
+  15B7:0100              C8 2C 2C 1A                               .,,.
+  -q
+
+  M:\GLB\STATS &gt;debug control.003
+  -d 104 107
+  15B7:0100              29 21 2D 1A                               )!-.
+  -q
+
+File Name       Last 4 Bytes    HEX Integer  Decimal         Change
+---------------------------------------------------------------------
+CONTROL.001 --&gt; 4D 3C 2B 1A --&gt; 1A2B3C4D --&gt; 439,041,101
+CONTROL.002 --&gt; C8 2C 2C 1A --&gt; 1A2C2CC8 --&gt; 439,102,664 ==&gt; 61,563
+CONTROL.003 --&gt; 29 21 2D 1A --&gt; 1A2D2129 --&gt; 439,165,225 ==&gt; 62,561
+
+NOTE: The calculator that comes with Microsoft Windows can convert between hex
+and decimal numbers if you switch the view to scientific.
+
+The value in the change column above represents the number of new message and
+attachment files that were created during the period being tracked. If you keep
+a log of all received mail, you can then subtract the number of messages in the
+RECV.LOG during the same period for a estimate of local mail and attachment
+volume.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312883/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312883/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312883/","publisher":null,"image":null,"headline":"Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312883-you-cannot-change-the-cache-isapi-applications-property">Q312883: You Cannot Change the "Cache ISAPI Applications" Property</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312883
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 15-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are trying to either select or to remove the check in the Cache ISAPI
+Applications check box on an Internet Information Services (IIS) 5.0 application
+folder, the check box is not available (it is dimmed) and you cannot change the
+value. You can change the value on the Web site level but not on application
+level.
+
+WORKAROUND
+==========
+
+To work around this problem, use the ADSutil.vbs administration script to change
+the application property:
+
+- To not cache ISAPI applications on the folder called "myapplication":
+
+  C:\Inetpub\AdminScripts&gt;cscript.exe adsutil.vbs set w3svc/1/root/myapplication/cacheisapi 0
+
+- To allow the cache of ISAPI applications on the folder called
+  "myapplication":
+
+  C:\Inetpub\AdminScripts&gt;cscript.exe adsutil.vbs set w3svc/1/root/myapplication/cacheisapi 1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services version 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. In Windows 2000, open Internet Services Manager in the Administrative Tools
+  folder.
+
+2. Right-click Default Web Site, and then click Properties.
+
+3. Click Home Directory.
+
+4. Click Configuration. Under App Mappings, you can see that the Cache ISAPI
+  Applications setting is changeable.
+
+5. Click Cancel on both dialog boxes.
+
+6. Click Default Web Site.
+
+7. Right-click IISHelp (or any application folder).
+
+8. Click Configuration. Under App Mappings, you can see that the Cache ISAPI
+  Applications setting is not available, and you cannot modify it (it is
+  dimmed).
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

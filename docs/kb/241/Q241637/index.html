@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241637: PRB: Adding New Method to VB Component Breaks Existing Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241637: PRB: Adding New Method to VB Component Breaks Existing Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241637/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241637/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241637/","publisher":null,"image":null,"headline":"Q241637: PRB: Adding New Method to VB Component Breaks Existing Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241637-prb-adding-new-method-to-vb-component-breaks-existing-client">Q241637: PRB: Adding New Method to VB Component Breaks Existing Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q241637</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">5.0</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbActiveX</span> <span class="n">KbClientServer</span> <span class="n">kbDLL</span> <span class="n">kbInprocSvr</span> <span class="n">kbMTS</span> <span class="n">kbVBp</span> <span class="n">kbVBp500</span> <span class="n">kbVBp600</span> <span class="n">kbGrpDSVB</span> <span class="n">kbDS</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">11</span><span class="p">-</span><span class="n">JAN</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Learning</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">After</span> <span class="n">adding</span> <span class="n">a</span> <span class="n">new</span> <span class="n">method</span> <span class="k">or</span> <span class="n">property</span> <span class="k">to</span> <span class="n">a</span> <span class="n">class</span> <span class="k">in</span> <span class="n">an</span> <span class="n">ActiveX</span> <span class="n">DLL</span> <span class="n">within</span> <span class="n">a</span> <span class="n">MTS</span>
+<span class="k">package</span> <span class="k">and</span> <span class="n">recompiling</span> <span class="n">it</span> <span class="k">with</span> <span class="n">binary</span> <span class="n">compatibility</span><span class="p">,</span> <span class="n">existing</span> <span class="n">clients</span> <span class="n">get</span> <span class="n">one</span>
+<span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">error</span> <span class="n">messages</span> <span class="n">upon</span> <span class="n">deployment</span> <span class="k">of</span> <span class="n">the</span> <span class="n">new</span> <span class="n">client</span> <span class="k">package</span><span class="p">:</span>
+
+  <span class="nf">Run</span><span class="p">-</span><span class="n">time</span> <span class="n">error</span> <span class="s1">'-2147467259 (80004005)'</span><span class="p">:</span><span class="n">Automation</span> <span class="n">error</span> <span class="n">Unspecified</span> <span class="n">error</span>
+
+<span class="p">-</span><span class="k">or</span><span class="p">-</span>
+
+  <span class="nf">Run</span><span class="p">-</span><span class="n">time</span> <span class="n">error</span> <span class="s1">'-2147221163 (80040155)'</span><span class="p">:</span><span class="n">Automation</span> <span class="n">error</span> <span class="n">Interface</span> <span class="k">not</span>
+  <span class="n">registered</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">This</span> <span class="n">is</span> <span class="n">caused</span> <span class="n">by</span> <span class="n">the</span> <span class="n">fact</span> <span class="n">that</span> <span class="n">when</span> <span class="n">you</span> <span class="n">add</span> <span class="n">a</span> <span class="n">new</span> <span class="n">method</span> <span class="k">to</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">class</span>
+<span class="p">(</span><span class="n">interface</span><span class="p">)</span> <span class="k">and</span> <span class="nf">compile</span> <span class="n">the</span> <span class="n">project</span> <span class="k">with</span> <span class="n">binary</span> <span class="n">compatibility</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="p">(</span><span class="n">VB</span><span class="p">)</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">new</span> <span class="n">interface</span> <span class="k">and</span> <span class="k">uses</span> <span class="n">a</span> <span class="n">forwarding</span> <span class="n">mechanism</span> <span class="k">to</span> <span class="k">forward</span>
+<span class="n">calls</span> <span class="n">made</span> <span class="k">to</span> <span class="n">methods</span> <span class="k">of</span> <span class="n">the</span> <span class="n">old</span> <span class="n">interface</span> <span class="k">to</span> <span class="n">corresponding</span> <span class="n">methods</span> <span class="k">of</span> <span class="n">the</span> <span class="n">new</span>
+<span class="n">interface</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">works</span> <span class="n">out</span> <span class="n">well</span> <span class="n">between</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">clients</span> <span class="k">and</span> <span class="n">servers</span> <span class="n">when</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">is</span>
+<span class="n">registered</span> <span class="n">by</span> <span class="n">calling</span> <span class="n">DllRegisterServer</span> <span class="p">(</span><span class="n">using</span> <span class="n">REGSVR32</span><span class="p">.</span><span class="n">EXE</span><span class="p">).</span> <span class="n">Unfortunately</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">type</span> <span class="n">library</span> <span class="n">knows</span> <span class="n">nothing</span> <span class="n">about</span> <span class="n">the</span> <span class="n">forwarding</span> <span class="n">scheme</span> <span class="k">and</span> <span class="n">that</span> <span class="n">is</span> <span class="n">where</span> <span class="n">MTS</span>
+<span class="n">Explorer</span> <span class="n">gets</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">component</span> <span class="n">when</span> <span class="n">creating</span> <span class="n">a</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">best</span> <span class="n">solution</span> <span class="n">is</span> <span class="k">to</span> <span class="n">avoid</span> <span class="n">the</span> <span class="n">practice</span> <span class="k">of</span> <span class="n">adding</span> <span class="n">methods</span> <span class="k">or</span> <span class="n">properties</span>
+<span class="k">to</span> <span class="n">classes</span> <span class="k">with</span> <span class="n">existing</span> <span class="n">clients</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="k">do</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">VBR</span> <span class="n">file</span> <span class="n">for</span> <span class="n">the</span> <span class="n">upgraded</span> <span class="n">component</span> <span class="n">by</span> <span class="n">checking</span> <span class="n">the</span> <span class="n">Remote</span> <span class="n">Server</span>
+  <span class="n">Files</span> <span class="n">checkbox</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Components</span> <span class="n">tab</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Project</span> <span class="n">Properties</span> <span class="n">dialog</span> <span class="n">box</span>
+  <span class="n">before</span> <span class="n">compiling</span> <span class="n">the</span> <span class="n">upgraded</span> <span class="n">DLL</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">VBR</span> <span class="n">file</span> <span class="k">with</span> <span class="n">Notepad</span><span class="p">.</span><span class="n">exe</span> <span class="k">and</span> <span class="n">find</span> <span class="n">the</span> <span class="n">entry</span> <span class="n">that</span> <span class="n">looks</span> <span class="n">like</span> <span class="n">the</span>
+  <span class="n">following</span><span class="p">:</span>
+
+  <span class="n">HKEY_CLASSES_ROOT</span><span class="p">\</span><span class="n">INTERFACE</span><span class="p">\{</span><span class="m">313</span><span class="n">BACC6</span><span class="p">-</span><span class="m">3</span><span class="n">D8B</span><span class="p">-</span><span class="m">4029</span><span class="p">-</span><span class="n">B0D3</span><span class="p">-</span><span class="n">B5F4859CEE3E</span><span class="p">}\</span><span class="k">Forward</span> <span class="p">=</span>
+  <span class="p">{</span><span class="m">485</span><span class="n">D75F2</span><span class="p">-</span><span class="m">6</span><span class="n">AC5</span><span class="p">-</span><span class="m">11</span><span class="n">D3</span><span class="p">-</span><span class="n">BB1C</span><span class="p">-</span><span class="m">00</span><span class="n">C04F8ED9F0</span><span class="p">}</span>
+
+  <span class="n">The</span> <span class="n">first</span> <span class="n">UUID</span> <span class="p">{</span><span class="m">313</span><span class="n">BACC6</span><span class="p">-</span><span class="m">3</span><span class="n">D8B</span><span class="p">-</span><span class="m">4029</span><span class="p">-</span><span class="n">B0D3</span><span class="p">-</span><span class="n">B5F4859CEE3E</span><span class="p">}</span> <span class="n">is</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">ID</span>
+  <span class="n">implemented</span> <span class="n">by</span> <span class="n">the</span> <span class="n">older</span> <span class="k">version</span> <span class="k">of</span> <span class="n">your</span> <span class="n">DLL</span><span class="p">.</span> <span class="n">Make</span> <span class="n">a</span> <span class="n">copy</span> <span class="k">of</span> <span class="n">this</span> <span class="n">UUID</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Start</span> <span class="n">Regedit</span><span class="p">.</span><span class="n">exe</span> <span class="k">and</span> <span class="n">open</span> <span class="n">the</span> <span class="n">HKEY_CLASSES_ROOT</span><span class="p">\</span><span class="n">Interface</span> <span class="n">subkey</span><span class="p">,</span> <span class="k">then</span> <span class="n">find</span>
+  <span class="n">the</span> <span class="n">UUID</span> <span class="n">you</span><span class="s1">'ve copied.
+
+4. This UUID subkey should have three additional subkeys of its own:
+
+   - Forward
+   - ProxyStubClsid
+   - ProxyStubClsid3
+
+5. Export the UUID subkey and save it as a REG file.
+
+6. Create the MTS package with the upgraded component as usual. After you
+  install the client package (the exe in the client folder), double-click the
+  REG file on the client machine. This updates the client machine'</span><span class="n">s</span> <span class="n">registry</span> <span class="k">to</span>
+  <span class="n">enable</span> <span class="n">the</span> <span class="n">existing</span> <span class="n">client</span> <span class="k">to</span> <span class="n">access</span> <span class="n">the</span> <span class="n">upgraded</span> <span class="n">component</span> <span class="n">hosted</span> <span class="k">in</span> <span class="n">MTS</span> <span class="n">on</span>
+  <span class="n">the</span> <span class="n">remote</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Steps</span> <span class="k">to</span> <span class="n">Reproduce</span> <span class="n">the</span> <span class="n">Behavior</span>
+<span class="p">-------------------------------</span>
+
+<span class="n">Creating</span> <span class="k">and</span> <span class="n">testing</span> <span class="n">the</span> <span class="n">initial</span> <span class="k">version</span> <span class="k">of</span> <span class="n">a</span> <span class="n">VB</span> <span class="n">DLL</span><span class="p">::</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">ActiveX</span> <span class="n">DLL</span> <span class="n">project</span> <span class="k">and</span> <span class="n">rename</span> <span class="n">it</span> <span class="n">MyDLL</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span> <span class="k">to</span> <span class="n">the</span> <span class="n">default</span> <span class="n">class</span> <span class="p">(</span><span class="n">Class1</span><span class="p">):</span>
+
+        <span class="k">Public</span> <span class="k">Function</span> <span class="n">Function1</span><span class="p">()</span> <span class="k">As</span> <span class="k">String</span>
+            <span class="n">Function1</span> <span class="p">=</span> <span class="s2">"Function1"</span>
+        <span class="k">End</span> <span class="k">Function</span>
+
+<span class="m">3.</span> <span class="n">Save</span> <span class="n">the</span> <span class="n">project</span> <span class="k">and</span> <span class="nf">compile</span> <span class="n">it</span> <span class="k">as</span> <span class="n">MyDll</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Standard</span> <span class="n">EXE</span> <span class="n">project</span> <span class="k">and</span> <span class="n">rename</span> <span class="n">it</span> <span class="n">Client</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="k">From</span> <span class="n">the</span> <span class="n">Project</span> <span class="n">Menu</span><span class="p">,</span> <span class="n">select</span> <span class="n">References</span><span class="p">,</span> <span class="n">check</span> <span class="n">MyDll</span><span class="p">,</span> <span class="k">and</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">CommandButton</span> <span class="k">to</span> <span class="n">the</span> <span class="n">default</span> <span class="n">form</span> <span class="p">(</span><span class="n">Form1</span><span class="p">)</span> <span class="k">and</span> <span class="n">paste</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span>
+  <span class="n">into</span> <span class="n">Form1</span><span class="s1">'s code window:
+
+        Private Sub Command1_Click()
+            Dim oTest As MyDll.Class1
+            Set oTest = New MyDll.Class1
+            MsgBox oTest.Function1
+        End Sub
+
+7. Make sure the project runs and then compile it as Client.exe.
+
+8. Create an MTS package from MyDll.dll and export the package (See the online
+  Help in MTS Explorer for instructions on Exporting Packages.)
+
+9. Deploy the client package and the Client.exe from the Client package created
+  to a client machine, and make sure it runs.
+
+Creating and testing the upgraded VB DLL::
+
+1. Reopen the MyDll project.
+
+2. Select Project Properties from the Project menu, check the Remote Server
+  Files checkbox, and select the Binary Compatibility option under the
+  Components tab.
+
+3. Add the following code to Class1:
+
+        Public Function Function2() As String
+           Function2 = "Function2"
+        End Function
+
+4. Compile the project. At this point, if you run Client.exe on the development
+  machine, it should work.
+
+5. Delete the MTS package created from the older version of MyDll.dll from MTS
+  Explorer.
+
+6. Create a new package with the new version of MyDll.dll and export it.
+
+7. Uninstall the previous package on the client machine and install the upgraded
+  client package. At this point, when you run Client.exe you get one of the
+  error messages described in the "Symptoms" section. Please see the
+  "Resolution" section of this article for a workaround to this problem.
+
+Additional query words: MTS Binary Compatibility
+
+======================================================================
+Keywords          : kbActiveX KbClientServer kbDLL kbInprocSvr kbMTS kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

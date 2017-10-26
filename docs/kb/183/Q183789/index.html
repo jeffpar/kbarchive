@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183789/","publisher":null,"image":null,"headline":"Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183789-host-fails-to-allocate-session-to-a-connectdirect-client-on-nt">Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183789
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When CONNECT:Direct for Windows NT is configured to operate on a separate
+computer running Windows NT than the SNA Server, the host may fail to
+successfully submit a job (for example, file transfer, automation operations,
+and so forth) to the CONNECT:Direct workstation.
+
+SNA Server version 3.0 and higher may post the following messages in the Windows
+NT application Event Log:
+
+  Event ID: 705
+  Source: SNA Base Service
+  Description: Logon Failed.
+  Explanation: Connection request failed due to data security.
+  GetChallengeResponse failed --- Error Code: C0000008H
+
+  Event ID: 705
+  Source: SNA Base Service
+  Description: Logon Failed.
+  Explanation: Connection request failed due to data security.
+  RegisterLogonProcess failure --- Error Code: C0000041H
+
+  Event ID: 705
+  Source: SNA Server
+  Description: Logon Failed.
+  Explanation: Connection request failed due to data security. Invalid
+  Challenge Response --- Error Code: 002B000AH
+
+CAUSE
+=====
+
+The CONNECT:Direct service running on the Windows NT workstation is configured
+to operate under the Local System Account - therefore running with NULL
+credentials. When the application service attempts to establish a session to SNA
+Server after receiving the Attach (FMH-5) message from the host, it fails
+because of security (lack of credentials).
+
+The Attach message from the host may get processed successfully if the SNABASE
+service is operating with appropriate credentials.
+
+RESOLUTION
+==========
+
+Configure the CONNECT:Direct service to use a User Account and password instead
+of the Local System Account or enable the Guest account on the SNA Server. The
+user account must have the right to act as part of the operating system.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

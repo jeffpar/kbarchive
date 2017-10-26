@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175868/","publisher":null,"image":null,"headline":"Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175868-bug-t-sql-debugger-does-not-run-on-nt-with-user-account">Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175868
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVBDB
+Last Modified: 27-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+T-SQL Debugger causes the following error when a stored procedure is called if
+the Visual Basic 5.0 application is being run on an NT 4.0 or Windows 2000
+machine where the login was to a User Account:
+
+  "You must have Privledges to modify the registry"
+
+NOTE: The word "Privileges" is misspelled in the error message.
+
+Visual Basic will hang when the application is ended and the task manager must be
+invoked to shut it down.
+
+RESOLUTION
+==========
+
+Use an login account that has administrator rights.
+
+STATUS
+======
+
+This is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Login into an NT or Windows 2000 server with administrator privileges.
+
+2. Create a stored procedure on Sqlserver 6.5 by running the following code in
+  ISQL/W:
+
+        CREATE PROCEDURE findstate @whichstate char(2) as
+        select * from authors where state= @whichstate
+
+3. Create a Visual Basic Project and check "Microsoft Remote Data Object 2.0"
+  under Project References.
+
+4. Under Add-Ins Manager, check Visual Basic T-SQL Debugger. Under Tools, T_SQL
+  Debugging Option make sure both check boxes are checked. See references
+  mentioned below for setting up T-SQL Debugger.
+
+5. Place two CommandButtons on the form. Paste the following code in the form:
+
+           Option Explicit
+             Dim cn As rdoConnection
+             Dim qy As rdoQuery
+             Dim rs As rdoResultset
+             Dim strConnect As String
+             Dim n As Integer
+
+           Private Sub Command2_Click()
+              rs.Close
+              Set rs = Nothing
+              unload me
+           End Sub
+
+       Private Sub Command1_Click()
+
+          strConnect = "driver={SQL Server};server=servername;" &amp; _
+            "database=pubs;uid=sa;pwd="
+          rdoEnvironments(0).CursorDriver = rdUseOdbc
+          Set cn = rdoEnvironments(0).OpenConnection( _
+            dsName:="", _
+            Prompt:=rdDriverNoPrompt, _
+            ReadOnly:=False, _
+            Connect:=strConnect)
+
+          Set qy = cn.CreateQuery("sql", _
+                  "{call pubs.dbo.findstate(?) }")
+          qy.RowsetSize = 1
+          qy.rdoParameters(0) = "CA"
+          Set rs = qy.OpenResultset( _
+            Type:=rdOpenForwardOnly, _
+            LockType:=rdConcurReadOnly)
+
+          While Not rs.EOF
+            debug.print rs(0) &amp; ", " &amp; rs(1)
+            rs.MoveNext
+          Wend
+
+        End Sub
+
+6. Place a break point on the procedure call line.
+
+7. Run the code and T-SQL debugger should come up.
+
+8. Press the F5 key and it should continue.
+
+9. Close Visual Basic and restart NT. Login to User Account.
+
+10. Open the same project making sure T-SQL debugger is activated.
+
+11. Run the application and the error will appear.
+
+REFERENCES
+==========
+
+Visual Basic Books Online, query on "t-sql debugger," use quotes.
+
+Hitchhiker's Guide to Visual Basic &amp; SQLserver. pp411-413
+
+For more information on T-SQL Debugger for setup problems, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q166280 T-SQL Debugger Server Setup Provides Incorrect Location
+
+  Q172099 T-SQL - Running Remote and Local SQL Debugging
+
+Additional query words: kbVBp500bug kbVBp600bug kbGrpVBDB kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190168/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190168/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190168/","publisher":null,"image":null,"headline":"Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190168-xcln-outlook-client-dials-incorrect-connectoid-when-syncing">Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190168
+Product(s): Microsoft Exchange
+Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use an Outlook client to connect to an Exchange Server computer
+remotely and try to synchronize your offline storage file (OST), the dial- up
+connection may dial by using the wrong connectoid. (The connectoid appears on
+the screen with a message that includes the number being dialed, which is not
+the number you want.) If you hang up and connect again by going to the Tools
+menu and clicking Synchronize, the correct connectoid will be used. This
+behavior may repeat itself upon subsequent synchronizations and cycle back and
+forth between the two connectoids.
+
+CAUSE
+=====
+
+The above behavior occurs if two different dial-up connectoids are created. The
+first is used for Internet Explorer version 4.0 or later and is configured to
+"Connect to the Internet using a Modem" on the Connections tab of Internet
+Explorer Properties. A second connectoid is configured to allow an Outlook
+client to automatically connect and synchronize with an Exchange Server
+computer.
+
+WORKAROUND
+==========
+
+There are two possible ways to work around this issue:
+
+Method 1
+--------
+
+1. In the Properties for Internet Explorer, select View, Internet Options, and
+  the Connections tab. Select "Connect to the Internet using a local area
+  network". This allows Internet Explorer to open and browse after a connection
+  is established to your Internet Service Provider (ISP).
+
+2. Start Outlook offline. On the Tools menu, click Synchronize. This allows the
+  connection to be made using the correct connectoid as it was configured in
+  the Dial Up Networking properties for the Outlook client. (To configure this,
+  on the Tools menu, click Services, click Microsoft Exchange Server, and then
+  click Properties. Select the Dial-Up Networking tab.)
+
+3. To browse using Internet Explorer, double-click the dial-up connectoid to
+  connect to the ISP. Then you can open Internet Explorer for browsing.
+
+Method 2
+--------
+
+1. In the properties for Internet Explorer, select View, Internet Options, and
+  the Connections tab. Select "Connect to the Internet using a Modem".
+
+2. Configure the connection to be made with the dial-up connectoid that dials
+  the Internet Service Provider (ISP). This allows a connection to be made to
+  the ISP when you double-click the Internet Explorer icon.
+
+3. Change the Dial-Up Networking properties for the Outlook client to "Do not
+  dial, Use existing Connection". To do this, on the Outlook menu bar, click
+  Tools, and then click Services. Select Microsoft Exchange Server, and then
+  select Properties. Click the Dial-Up Networking tab, and select "Do not dial,
+  Use existing Connection".
+
+4. To connect to the RAS server that allows access to the Exchange Server
+  computer, first double-click the dial-up connectoid and make the connection.
+  Then open the Outlook client. On the Tools menu, select Synchronize to
+  synchronize your OST.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03; WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

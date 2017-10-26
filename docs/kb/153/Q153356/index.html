@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153356: Encarta 1996: Error When Starting Yearbook Builder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153356: Encarta 1996: Error When Starting Yearbook Builder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153356/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153356/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153356/","publisher":null,"image":null,"headline":"Q153356: Encarta 1996: Error When Starting Yearbook Builder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153356-encarta-1996-error-when-starting-yearbook-builder">Q153356: Encarta 1996: Error When Starting Yearbook Builder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153356
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+At the Encarta Home Screen, when you click Stay Current, you receive one of the
+following error messages:
+
+  Windows 98
+  ----------
+
+  Memory Error: Quitting Encarta
+
+  Windows 95
+  ----------
+
+  This program has performed an illegal operation and will be shut down.
+
+If you click the Details button, you receive the following message:
+
+  ENC9632 caused an Invalid Page Fault in module ENC9632.EXE
+
+  Windows 3.x
+  -----------
+
+  An error has occurred in your application. If you choose Ignore, you should
+  save your work in a new file. If you choose Close, your application will
+  terminate.
+
+If you click the Close button, you receive the following message:
+
+  ENCART96 caused a General Protection Fault in module ENCART96.EXE
+
+CAUSE
+=====
+
+The Ybstate.dat file is corrupted or missing.
+
+RESOLUTION
+==========
+
+To resolve the problem, use the instructions below for your version of Windows.
+
+Steps for Windows 95/98
+-----------------------
+
+The following instructions assume:
+
+- Your hard drive is drive C:
+
+- Your CD-ROM drive is drive D
+
+- Your destination folder for Encarta is:
+
+     C:\Program Files\Microsoft Reference\Encarta 96 Encyc
+
+NOTE: These instructions involve finding, copying, and editing files and folders.
+For more information about how to accomplish these tasks in Windows, see your
+Windows printed documentation or online Help.
+
+1. Search the C:\Program Files\Microsoft Reference\Encarta 96 Encyc folder for
+  the following file:
+
+  Ybstate.dat
+
+  If found, delete the file.
+
+2. In the C:\Program Files\Microsoft Reference\Encarta 96 Encyc\Yearbook folder,
+  find and delete the most recently dated .ybk file.
+
+3. Copy the following file from the D:\Encarta\Yearbook folder into the
+  C:\Program Files\Microsoft Reference\Encarta 96 Encyc folder:
+
+  Ybstate.dat
+
+4. Copy or download the most recently dated Encarta (.eyb) update file to the
+  following folder:
+
+     C:\Program Files\Microsoft Reference\Encarta 96 Encyc\Yearbook
+
+  NOTE: If you download the self-extracting (.exe) update file, copy the file to
+  C:\Program Files\Microsoft Reference\Encarta 96 Encyc\Yearbook and then
+  double-click the (.exe) file to extract the (.eyb) file.
+
+5. Restart Encarta, then at the Encarta Home Screen, click Stay Current.
+
+6. In the Yearbook Builder, click Add New Months, then click Integrate.
+
+Steps for Windows 3.x
+---------------------
+
+The following instructions assume:
+
+- Your hard drive is drive C:
+
+- Your CD-ROM drive is drive D
+
+- Your destination folder for Windows 3.x is:
+
+     C:\Encarta
+
+NOTE: These instructions involve finding, copying, and editing files and folders.
+For more information about how to accomplish these tasks in Windows, see your
+Windows printed documentation or online Help.
+
+1. In the C:\Encarta folder, search for the following file:
+
+  Ybstate.dat
+
+  If found, delete the file.
+
+2. Delete the most recently dated .ybk file from the following folder:
+
+     C:\Encarta\Yearbook
+
+3. Copy the following file from the D:\Encarta\Yearbook folder into the
+  C:\Encarta folder:
+
+  Ybstate.dat
+
+4. Copy or download the most recently dated Encarta (.eyb) update file to the
+  following folder:
+
+     C:\Encarta\Yearbook
+
+  NOTE: If you download the self-extracting (.exe) update file, copy the file to
+  C:\Encarta\Yearbook and then double-click the (.exe) file to extract the
+  (.eyb) file.
+
+5. Restart Encarta, and then at the Encarta Home screen, click Stay Current.
+
+6. In the Yearbook Builder, click Add New Months, then click Integrate.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+Version           : WINDOWS:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

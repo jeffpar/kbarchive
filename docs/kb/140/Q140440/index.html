@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140440/","publisher":null,"image":null,"headline":"Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140440-fix-global-overloaded-delete-operator-causes-lnk2005">Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140440
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC kbVC400bug kbVC410fix
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When globally overloading operator delete, the linker may generate the following
+errors when building in the debug mode and using the static C run-time
+libraries:
+
+  error LNK2005: "void __cdecl operator delete(void *)"(??3@YAXPAX@Z)
+  already defined in file.obj
+
+  fatal error LNK1169: one or more multiply defined symbols found
+
+RESOLUTION
+==========
+
+The problem only appears with the static C run-time libraries for the debug
+mode; it does not occur when using the release mode. Also at this time, the
+problem is noted to occur only when an iostream object is linked in. For
+example, in the code fragment listed in the "Steps to Reproduce Problem" section
+of this article, if you change the statement to output to "cout" into a comment
+inside main(), the problem does not occur.
+
+To work around this problem:
+
+1. Use the DLL version of the C Run-Time library.
+
+2. Bring up the Project Settings dialog box. On the Build menu, click Settings.
+  Click the Link tab, and select the Customize category. Select the Force File
+  output option. This forces the linker to generate the executable regardless
+  of the error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Build the following program as a console application using the debug mode.
+
+  // test.cpp
+
+  #include &lt;iostream.h&gt;
+  #include &lt;malloc.h&gt;
+
+  void operator delete (void *p)
+  {
+     free (p);
+  }
+
+  void main()
+  {
+     cout &lt;&lt; "main" &lt;&lt; endl;
+  }
+
+Additional query words: 4.00 4.10
+
+======================================================================
+Keywords          : kbCRT kbVC kbVC400bug kbVC410fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178312: XADM: Removing the Active Server Component Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178312: XADM: Removing the Active Server Component Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178312/","publisher":null,"image":null,"headline":"Q178312: XADM: Removing the Active Server Component Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178312-xadm-removing-the-active-server-component-fails">Q178312: XADM: Removing the Active Server Component Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178312
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you run Microsoft Exchange Setup, selecting "Reinstall" or "Add/Remove" to
+remove the Active Server Component will fail with one or both of the following
+pop-up error messages:
+
+  Processing file "D:\setup\I386\webcon.uns" at or near line 16.
+  The system cannot find the file specified.
+  Microsoft Windows NT
+  ID No: 0xc0020002
+
+  System cannot find the file specified.
+  Microsoft Windows NT
+  ID No: 0xc0020002
+
+This also applies to applying Service Pack 2 to Exchange Server 5.5 in a
+clustered environment, on the second node. The server had Microsoft Internet
+Information Server (IIS) 3.0, and Outlook Web Access (OWA) installed (OWA is not
+supported in a clustered environment).
+
+CAUSE
+=====
+
+The Active Server Pages (ASP) in Windows NT were removed before the Active
+Server Component was removed from Exchange. A registry key that is required for
+the Exchange Server Setup program to operate is deleted when the ASP is removed.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps: WARNING: If you use
+Registry Editor incorrectly, you may cause serious problems that may require you
+to reinstall your operating system. Microsoft cannot guarantee that you can
+solve problems that result from using Registry Editor incorrectly. Use Registry
+Editor at your own risk.
+
+1. Reinstall Active Server Pages on the server.
+
+2. On the Start menu, click Run.
+
+3. In the Open box, type "Regedt32" (without the quotation marks).
+
+4. In the Windows Registry Editor, click HKEY_Local_Machine on Local Machine on
+  the Window menu.
+
+5. Select System\CurrentControlSet\Services\MSExchangeWEB\Parameters.
+  a. If MSExchangeWEB or Parameters does not exist, Highlight the folder to add
+     it to (Services or MSExchangeWEB).
+
+  b. On the Edit menu, select Add Key and enter the name "MSExchangeWEB or
+     Parameters" (without the quotation marks).
+
+  c. Click OK.
+
+6. With Parameters selected, select Add Value from the Edit menu.
+
+7. Type "Server" (without the quotation marks) in the Value Name field.
+
+8. Set the type to REG_SZ and click OK.
+
+9. In the String dialog box, enter the server's name (all in capital letters)
+  and click OK.
+
+10. Start the Exchange Server Setup program and select Add/Remove and deselect
+  Active Server Components.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111558/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111558/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111558/","publisher":null,"image":null,"headline":"Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111558-pc-ext-microsoft-mail-externalexe-version-3218-update">Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111558
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a
+Operating System(s): 
+Keyword(s): kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft provides a replacement for the External Mail program files that are
+included with versions 3.2 and 3.2a of Microsoft Mail for PC Networks.
+
+For complete information about obtaining and installing the External Mail program
+files, see the following sections:
+
+- To download the updated file
+
+- To update your MS-DOS EXTERNAL.EXE file
+
+MORE INFORMATION
+================
+
+This update contains the External Mail program (EXTERNAL.EXE), a replacement for
+the External Mail program files that are included with version 3.2 of Microsoft
+Mail for PC Networks. This update resolves the following problems:
+
+- NetBIOS notification does not work when the sender and receiver are on
+  different postoffices and there are multiple External Mail programs running.
+  The only time notification works is if the first External Mail program that
+  was started up dispatches mail between the sender's and receiver's
+  postoffices.
+
+- On Novell networks, the RNETWORK.GLB file is not updated at 4:00 A.M. on any
+  drives that are dynamically attached.
+
+- In low-memory conditions, the External Mail program deletes mail from the
+  outgoing mail queue without returning that mail to the sender. There are
+  error messages in the SESSION.LOG and SYSTEM.LOG, but the mail file is still
+  deleted. In most cases, the sender is not notified that the mail was not
+  delivered. With the updated External Mail program, the mail message is not
+  deleted but remains in the outgoing queue, and the External Mail program
+  still attempts to deliver the mail. Because there is not enough memory to
+  return the message to the sender, there is no entry in the SYSTEM.LOG. The
+  administrator can return the mail from the queue.
+
+- When the EXTERNAL.INI parameter MinKDiskFull is not included in the
+  EXTERNAL.INI file, the default value of 0 is used. This causes the External
+  Mail program to attempt to deliver mail to a postoffice that has no disk
+  space. The default value for MinKDiskFull has now been changed from 0 to
+  100K.
+
+- When the External Mail program marks a dynamic drive as being full (no disk
+  space), it is not checked again until the External Mail program is restarted.
+  The External Mail program now checks dynamic drives that are full on every
+  cycle and changes their status if disk space becomes available.
+
+- Messages transferred asynchronously or through an X.25 connection do not get
+  time stamped. Therefore, when you view the received message in Mail for
+  Windows, the received date/time is actually the date/time it was composed,
+  not the date/time it was received by External. The External Mail program now
+  time stamps all messages.
+
+- The External Mail program sometimes hangs when CommType=X25EICON. The
+  CommType setting can be specified in the .INI file or on the command line for
+  External.
+
+- Versions 3.2.5 and 3.2.6 of the External Mail program mark a static drive as
+  being full (no disk space) and the drive is not checked again until the
+  External Mail program is restarted. The External Mail program now checks
+  static drives that are full on every cycle and changes their status if disk
+  space becomes available.
+
+- Mail sent to Remote Mail users would not be recorded in the SENT.LOG file if
+  the LogSent option was specified in the EXTERNAL.INI file or if the -ms
+  command-line option was included when the External Mail program was started.
+  Version 3.2.9 of the External Mail program will correctly log mail sent to
+  Remote Mail users in the SENT.LOG file.
+
+- When the Import utility is run with the autocreate function, and the External
+  Mail program is also run against the same postoffice across a wide-area
+  network (WAN) connection or in a high mail traffic situation, the Import
+  utility may report "Fatal [59] Error autocreating postoffice: XXXXXXXXXX."
+  This error occurs because of .XTN file contention between the External Mail
+  program and the Import utility. Under normal circumstances, the External Mail
+  program holds an .XTN file open for a very short interval and file contention
+  is not an issue. Version 3.2.9 of the External Mail program now allows the
+  Import utility to have write access to the .XTN file.
+
+- The External Mail program now determines and uses the appropriate
+  international date format when the MS-DOS country command is used in the
+  CONFIG.SYS file of the workstation running External.
+
+- The MinKDiskFull and MinKDiskNotFull parameters and their specified values
+  are now recorded in the SESSION.LOG file and are displayed on screen in the
+  External Mail program's LAN Postoffice Mail Activity display area when you
+  use EXTERNAL.INI file entries and the undocumented -q1 command-line switch.
+  Previously, logging of these parameters and their specified values would only
+  occur when you used command-line parameters and the undocumented -q1 command-
+  line switch.
+
+This replacement file also resolves the following problems that can occur when
+you use version 3.2 or 3.2a of Microsoft Mail for PC Networks:
+
+- The External Mail program fails to lock the queue when another instance of
+  the External Mail program requests two-way asynchronous communication,
+  including X.25. If a third instance of the External Mail program tries to
+  service the same queue to deliver a message that was already deleted by the
+  second instance, the following message may appear in the SYSTEM.LOG file:
+
+  [16] Message was not sent due to missing message file.
+
+- The External Mail program may hang or create incorrect entries in the
+  SYSTEM.LOG file if External encounters mailbag contention when it tries to
+  deliver a single message to multiple users on a single postoffice. Under
+  these conditions, the External Mail program may add the following entry to
+  the SYSTEM.LOG file
+
+  [008] Failure delivering mail due to mailbag contention.
+  Mail item was not delivered to: &lt;Friendly-Name&gt;
+
+  where &lt;Friendly-Name&gt; may list recipients who actually did receive the
+  message, rather than listing only the recipient whose mailbag could not be
+  accessed. It is also possible that no entries will be added to the SYSTEM.LOG
+  file and External may stop responding. Under Windows NT, the External Mail
+  program may return a general- protection fault (GP fault) and exit, or
+  External may continue processing and add the following entry to the
+  SYSTEM.LOG file on the destination postoffice:
+
+  [012] This corrupt message cannot be delivered. Contact your Administrator.
+
+- Multiple message attachments can now be sent successfully over an X.25
+  connection.
+
+
+- Two entries are now placed in the SENT.LOG file for each message that is
+  transmitted asynchronously between postoffices.
+
+
+- The Echo command for modem scripts now works with EXTERNAL.EXE versions 3.2.x
+  and Mail Remote for Windows.
+
+  NOTE: The Echo command is restricted to the Send command and does not affect
+  the Display command.
+
+
+- The System log now returns the name of the Invalid Address user after an
+  error 002 (Unknown Address) occurs.
+
+
+- In some instances, External would call Mail Remote for MS-DOS or Mail Remote
+  for Windows, make the connection, send mail, but not receive any queued mail
+  for the user. The External Mail program now transmits any queued mail.
+
+
+- External was generating an extra P1 file when Mail Remote for Windows
+  attempts to receive mail. These extra P1 files were not being deleted
+  properly, and they were locked open until External was stopped. Although mail
+  was still delivered, the P1 directory could have several stranded P1 files.
+  The External Mail program now deletes the extra P1 files.
+
+
+- If a message is sent to another postoffice via asynchronous communication
+  with the Useful Life of the message exceeded and no connection is made, two
+  entries are added to the SYSTEM.LOG. One has valid information, and the other
+  is a blank entry containing no message information.
+
+
+- External may report a "Circular route detected" error in the SYSTEM.LOG. This
+  happens when the PO where mail is processed has a 9 character postoffice name
+  that matches the first 9 characters of a 10 character PO name in the hop
+  trace.
+
+
+- External stops delivering mail after it receives a NetBIOS datagram (for a
+  priority 5 mail message) from a user on a PO connected using the DrivesWAN
+  option.
+
+
+To download the updated file
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Extupd.exe now
+  (http://download.microsoft.com/download/pcmail/Update/2/DOS/EN-US/Extupd.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+After you download EXTUPD.EXE to a clean directory, run it (by typing "extupd"
+(without the quotation marks) at the MS-DOS prompt) to extract the contents of
+the file. You should receive the following files:
+
+  EXTERNAL.EXE ( 57,551 bytes, dated 04-14-95, 5:54 P.M.)
+  ASYNC.OVL (371,978 bytes, dated 04-14-95, 6:13 P.M.)
+  X25ATLAN.OVL (376,970 bytes, dated 04-14-95, 6:16 P.M.)
+  X25EICON.OVL (395,978 bytes, dated 04-14-95, 6:18 P.M.)
+  README.TXT
+
+To update your MS-DOS EXTERNAL.EXE file
+---------------------------------------
+
+At the MS-DOS command prompt, type the following and press ENTER after each line
+
+  " copy &lt;path&gt;:\external.exe &lt;destination&gt;
+
+  copy &lt;path&gt;:\*.ovl &lt;destination&gt;" (without the quotation marks)
+
+where &lt;path&gt; is the drive and directory where you ran the self- extracting
+EXTUPD.EXE file and &lt;destination&gt; is the drive and directory where your
+EXTERNAL.EXE and *.OVL files currently reside. For example, if you ran the
+self-extracting file from the TEST directory on drive D, and your EXTERNAL.EXE
+and *.OVL files are located in the MAILEXE directory on drive C, type the
+following commands:
+
+  " copy d:\test\external.exe c:\mailexe
+
+  copy d:\test\*.ovl c:\mailexe" (without the quotation marks)
+
+NOTE: The EXTERNAL.EXE and *.OVL files typically reside on the postoffice server
+in the Mail executables directory, as well as on the machine transferring
+messages to and from the database. Make sure you update all copies of the
+EXTERNAL.EXE and *.OVL files.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

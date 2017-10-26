@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151401/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151401/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151401/","publisher":null,"image":null,"headline":"Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151401-err-msg-bad-command-or-filename-on-windows-nt-login-script">Q151401: Err Msg: "Bad Command or Filename" on Windows NT Login Script</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151401
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a Windows NT Server from a client workstation, and the
+Windows NT server carries out a login script as defined in the Login Script Name
+field in the User Environment Profile dialog box, the following error message
+appears:
+
+  "Bad Command or Filename"
+
+MORE INFORMATION
+================
+
+The user is being validated by the Windows NT Server and the problem is not in
+the script. The script may not even be running. The error message is generated
+when the workstation tries to locate and run the script.
+
+CAUSE
+=====
+
+Changing the Advanced User Rights setting for "Bypass Traverse Checking" in User
+Manager on the Windows NT Server domain controller can result in this error
+message.
+
+By default, the group Everyone has this user right. This can be changed to limit
+this right to particular users or groups.
+
+Bypass Traverse Checking
+------------------------
+
+With Bypass Traverse Checking, the user can traverse a directory tree even if the
+user has no other rights to access that directory. Bypass Traverse Checking
+denies access to users in POSIX applications.
+
+Bypass Traverse Checking allows users to access Windows NT Server shares without
+having to have explicit rights to the directory structure above that share,
+which is located on the Windows NT Server. Once the group Everyone is removed
+from this right, users not only have to have permissions to a share in order to
+access that share(and possibly NTFS permissions related to that share), but they
+also have to have been granted NTFS permissions to the rest of the Windows NT
+Server's directory structure (which does not mean that the entire directory tree
+needs to be shared).
+
+Bypass Traverse Checking allows Windows NT to skip the checking of permissions
+higher up in the directory structure for a user and apply only the permissions
+granted by the share and the NTFS permissions for the directory (or directories)
+shared.
+
+RESOLUTION
+==========
+
+Re-add the group Everyone to the Advanced User Right of Bypass Traverse
+Checking. A second option is to re-add the Administrator's groups and Domain
+Users or individual user accounts.
+
+Additional query words: 2.20 3.11
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128818/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128818/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128818/","publisher":null,"image":null,"headline":"Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128818-windows-nt-35-fails-to-upgrade-ast-manhatten-with-mylex-dac">Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128818
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to upgrade a Windows NT 3.1 installation on an AST Manhatten
+SMP machine with a Mylex DAC960 SCSI controller, Windows NT 3.5 Setup fails to
+recognize the Windows NT 3.1 installation. As a result, setup performs a new
+installation rather than upgrading you Windows NT 3.1 installation.
+
+CAUSE
+=====
+
+This problem occurs because Windows NT 3.5 Setup does not recognize the Mylex
+driver for Windows NT 3.1 as a driver that it can upgrade correctly.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+NOTE: These instructions require that you have the Windows NT 3.1 drivers for the
+Mylex controller on a floppy disk. These instructions will work correctly if you
+installing from a CD-ROM drive, a floppy drive, or running a normal
+WINNT/WINNT32 installation. The will not work if you have done a WINNT /B or
+WINNT32 /B installation.
+
+1. At the second setup screen, select Custom Setup.
+
+2. During the SCSI detection portion of Setup, do not allow setup to auto-
+  detect your SCSI controllers. Instead, skip the auto detection and choose to
+  manually add SCSI drivers (Press S).
+
+3. From the SCSI driver list, select "Other - requires disk provided by
+  manufacturer) and insert the floppy disk with the Mylex drivers.
+
+4. After the Mylex drivers have loaded, manually select drivers for any other
+  controllers in the system.
+
+5. Let Setup continue normally.
+
+When you have finished upgrading to Windows NT 3.5, you can remove the old driver
+and add in the 3.5 Mylex drivers using the Windows NT Setup Add/Remove SCSI
+option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt dac960nt.sys
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

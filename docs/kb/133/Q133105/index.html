@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133105/","publisher":null,"image":null,"headline":"Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133105-fortran-powerstation-32-readmetxt-miscellaneous">Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133105
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is from the Microsoft FORTRAN PowerStation 32
+README.TXT file located in the \FPSNT\README directory.
+
+This file has four parts:
+
+    Part     Contents
+    ----     --------
+     1       Installation
+     2       Debugging
+     3       Building and Running Programs
+     4       Miscellaneous
+
+MORE INFORMATION
+================
+
+=======================&lt; Part 4: Miscellaneous &gt;========================
+
+Floating-Point Precision: FP10.OBJ
+----------------------------------
+The run-time libraries set the default internal precision of the chip
+(or emulator) to 64 bits. Note that this does not apply to the size of
+arguments, return values, or variables; it only applies to the internal
+precision at which all intermediate calculations are performed. You can
+override this default and set the chip (or emulator) back to full
+80-bit, 10-byte precision by linking in the FP10.OBJ file, installed by
+Setup in your Fortran PowerStation LIB directory. If you are building
+your application in the Visual Workbench, do the following:
+
+1. From the Options menu, choose Project. The Project Options dialog
+  box appears.
+
+2. Choose Linker. The Linker Options dialog box appears.
+
+3. In the Category box, select Input.
+
+4. Type FP10.OBJ in the Object/Library Modules box.
+
+5. Choose OK. The Project Options dialog box reappears.
+
+6. Choose OK.
+
+If you are running the linker from the command line, FP10.OBJ must
+appear on the linker command line before any library files (.LIB).
+
+Notes on Using NAMELIST Statement
+---------------------------------
+A value-assignment pair consists of a variable name, array element, or
+substring followed by an equal sign and one or more values or value
+separators. The equal sign can be preceded or followed by any number
+of blanks, or by no blanks at all. A value separator is a single comma
+or one or more blanks. Tabs are valid as white-space separators.
+
+Using Assumed-Size Arrays of Structures
+---------------------------------------
+Writing an assumed-size array without specifying element indexes should
+produce an error, but does not if the array is an array of structures.
+
+    subroutine sub(s)
+    structure /struc/ 
+      real r
+    end structure
+    record /struc/ s(*)
+
+C  The following line is incorrect, but will not produce an error:
+    write(*,*) s(i).r
+
+C  Instead, a write statement such as the following should be used:
+    write(*,*) (s(i).r, i=1,10)
+
+Reading Index before Structure Array Element
+--------------------------------------------
+The FORTRAN standard (p12-15) states that READ statements of the form
+
+     READ (unit) N, A(N)
+
+are valid, and that the value READ for N is transferred to N before
+A(N) is read. This works fine for a standard array, but not when the
+array is a structure element, as the following example illustrates:
+
+     STRUCTURE /struc/ 
+       INTEGER*2 arr(5)
+     END STRUCTURE
+     RECORD /struc/ st
+     INTEGER*2 arr(5)
+
+     OPEN(1,FILE='test.dat')
+     DO WHILE (.not.eof(1))
+        READ(1,*) j,arr(j)  ! The value of 'j' does transfer to
+                            ! 'arr' correctly.
+     ENDDO
+
+     WRITE(*,*) 'Non-structure array'
+     DO j=1,5
+        WRITE(*,*) j,arr(j)
+     ENDDO
+
+     REWIND(1)
+     DO WHILE (.not.eof(1))
+        READ(1,*) j,st.arr(j)  ! The value of 'j' does not transfer
+                               ! to 'st.arr' correctly.
+     ENDDO
+
+     WRITE(*,'(/1x,a)') 'Structure array'
+
+     DO j=1,5
+       WRITE(*,*) j,st.arr(j)
+     ENDDO
+     END
+
+The output from this program is:
+
+Non-structure array
+         1           1
+         2           2
+         3           3
+         4           4
+         5           5
+
+Structure array
+         1           2
+         2           3
+         3           4
+         4           5
+         5           0
+
+Command Line Access to Help Files
+---------------------------------
+You can open and search the FORTRAN Visual Workbench help files from the
+console command line by using the "fhelp" command:
+
+Usage: fhelp [Error | Language | Compile | LInk] &lt;search-string&gt;
+
+Note that you can abbreviate categories by specifying at least the
+capital letters shown.
+
+Examples:
+     "fhelp error lnk1104" provides information on LINK error 1104
+
+     "fhelp lang record" provides information on the RECORD statement
+
+     "fhelp comp /Ox" provides information on the /Ox compiler switch
+
+The fhelp command runs WinHelp to display the requested information
+from the appropriate help file. If the search-string is not found, a
+selection box is presented to further narrow the search. Note that the
+search-string is optional; if it is not present, fhelp will provide a
+table of contents for the selected help file.
+
+Using Extended Characters in Console Applications
+-------------------------------------------------
+Because FORTRAN Visual Workbench runs in Microsoft Windows NT and
+produces console applications that run in an emulation of MS-DOS, two
+distinct character sets are used: ANSI and OEM. The ANSI set is normally
+used in Windows; the OEM set is used in MS-DOS. Both character sets
+contain extended characters (such as accented letters and line-drawing
+symbols), but the numerical representation of these characters is
+different. Windows NT provides a special font called TERNIMAL that uses
+the OEM character set. If you use extended characters in your files, you
+need to know about both character sets.
+
+FORTRAN Visual Workbench is an ANSI editor; it does not convert
+characters to the OEM character set.  If you want to see the true
+OEM characters, use the TERMINAL font.  If you want to enter OEM
+characters, add a zero to the beginning of the character code.
+(For example, 'ALT + 0130' will produce an accented 'e'; typing
+'ALT + 130' will produce the ANSI character.) No translation is
+performed when files are loaded or saved. The editor displays the
+character representation of what was in the file. When a character
+is entered, it is translated to ANSI and saved as that value. This
+applies for all characters on the keyboard, including an e-accent
+on an international keyboard and an ALT+number entered from the
+numeric key pad. The only time a translation is not done is when an
+ALT+0+number is entered. When looking at a file from the command
+console, you will get the OEM representation of the characters.
+
+We recommend that you do not use extended characters in filenames.
+
+Wrong Example Code in Reference Manual for CYCLE
+------------------------------------------------
+The CYCLE statement's example in the Reference Manual is incorrect.
+Help contains the correct program as CYCLE.FOR.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

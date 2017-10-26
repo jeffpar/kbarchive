@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133068/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133068/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133068/","publisher":null,"image":null,"headline":"Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133068-bug-deleting-a-struct-typedef-causes-c1059-c1063-or-c1001">Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133068
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,7.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC21
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The sample code fragment listed at the end of this article incorrectly deletes a
+typedef of a pointer to a structure, which generates the following compiler
+errors:
+
+- For Visual C++ 4.2 for Windows NT:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file 'toil.c', line
+  4094)
+
+- For Visual C++ 4.1 for Windows NT:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file 'toil.c', line
+  4051)
+
+- For Visual C++ 4.0 for Windows NT:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file 'toil.c', line
+  3128)
+
+- For Visual C++ 2.x for Windows NT:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file 'toil.c', line
+  2847)
+
+- For Visual C++ 1.0 for Windows NT:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file '@(#)main.c:1.82',
+  line 289)
+
+- For Visual C++ version 1.5x for Windows:
+
+  fatal error C1059: compiler is out of near heap space
+
+- For Visual C++ version 1.0 for Windows:
+
+  fatal error C1063
+
+- For C/C++ version 7.0:
+
+  fatal error C1001: INTERNAL COMPILER ERROR (compiler file '2pass/getattr.c',
+  line 346) Contact Microsoft Product Support Services
+
+RESOLUTION
+==========
+
+The above error messages are misleading and do not point out the real problem,
+which is that you cannot delete a typedef. Additionally, the operand of delete
+must be a pointer returned by the new operator. Using delete on a pointer to an
+object not allocated with new gives unpredictable results.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+  /* Compile options needed: none
+  */ 
+
+  typedef struct {
+     int x;
+  }MY_STRUCT, *LPMY_STRUCT;
+
+  LPMY_STRUCT  pMyStruct = new MY_STRUCT;
+
+  void MyTestFunction()
+  {
+     delete pMyStruct;   // ok.
+     delete LPMY_STRUCT; // Can not delete a type.
+  }
+
+Additional query words: 8.0 8.0c 8.00 8.00c 9.0 9.00 9.1 9.10 10.00 10.10 10.20
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC210bug kbVC400bug kbVC410bug kbVC420bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,7.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

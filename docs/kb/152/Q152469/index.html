@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152469/","publisher":null,"image":null,"headline":"Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152469-hardware-inventory-hangs-at-30-when-detecting-the-game-port">Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152469
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbDatabase smsdatabase
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the network card's I/O address is set to 200h, hardware inventory will hang
+and ultimately fail when trying to detect the game port.
+
+CAUSE
+=====
+
+When inventory verifies whether the game port adapter is in the computer (using
+Getother.exe), it makes a call to port 201h (this is the industry standard
+setting for game ports). This call impinges on the network card address range,
+causing the network connection to hang.
+
+The issue is discussed in QUE's "Upgrading and Repairing PCs" (4th edition):
+
+  The game adapter does not use much in the way of system resources. The
+  card does not use an IRQ, DMA channel, or memory, and requires only a
+  single I/O address (port) 201h. The adapter is controlled by reading and
+  writing data to and from port 201h.
+
+WORKAROUND
+==========
+
+There are three possible workarounds to this problem:
+
+1. Set the net card I/O address to another value (recommended).
+
+2. Create an Smssafe.tmp file and add "GamePorts=CRASHED" to prevent it from
+  being inventoried.
+
+3. Remove Getother.exe from your SMS site, so that the it is never called during
+  the inventory process. (Not Recommended)
+
+Additional query words: prodsms sms game port adapter 201h network getother
+
+======================================================================
+Keywords          : kbnetwork kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137809/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137809/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137809/","publisher":null,"image":null,"headline":"Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137809-fix-insufficient-memory-on-a-computer-that-has-512-mb-of-ram">Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137809
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbenv kbvfp kbvfp300bFIX kbDSupportkbbuglist kbfixlist
+Last Modified: 27-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error "Insufficient Memory" displays when you attempt to start a Visual
+FoxPro 3.0 session. The computer has 512 megabytes (MB) of RAM, or more, and
+should have enough memory for Visual FoxPro to start.
+
+NOTE: In Visual FoxPro 3.0, the insufficient memory message does not occur on
+computers with less than 512 MB of RAM.
+
+NOTE: In Visual FoxPro 3.0b, the insufficient memory message does not occur on
+computers with less than 768 MB of RAM.
+
+
+RESOLUTION
+==========
+
+If you are using Microsoft Windows NT, you can limit the amount of memory used
+by the operating system. You can create a boot (in the Boot.ini file) that uses
+a special configuration for Visual FoxPro. To limit the amount of memory that
+Windows NT uses, use the MaxMem switch. Using a trial and error method,
+determine the maximum amount of memory you can use before you receive the
+"Insufficient Memory" error when launching Visual FoxPro.
+
+For more information about multi-boot and the MaxMem switch, please see the
+Windows NT documentation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in Visual FoxPro
+5.0a for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Install Visual FoxPro on a computer that has 512 megabytes of RAM.
+
+2. Start Visual FoxPro. The "Insufficient memory" error appears, and Visual
+  FoxPro cannot start.
+
+Additional query words: crash
+
+======================================================================
+Keywords          : kbenv kbvfp kbvfp300bFIX kbDSupport kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

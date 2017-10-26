@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61777/","publisher":null,"image":null,"headline":"Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61777-why-globalalloc-returns-a-handle-to-a-0-byte-segment">Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61777
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Calling GlobalAlloc() with a segment of size 0 (zero), Windows returns a
+handle to the memory. Attempting a GlobalLock() using that handle returns a NULL
+pointer. Since a 0-byte block of memory is treated by the system as if it is
+discarded, the following explains how these memory handles can be reused.
+
+Consider the following scenario:
+
+1. hMemory = GlobalAlloc (GMEM_MOVEABLE, 0L);
+
+  This returns a handle to a block of memory of length 0 (zero).
+
+2. wFlags = GlobalFlags (hMemory);
+
+  wFlags is 0x4000, which is GMEM_DISCARDED. Thus, the memory object is thought
+  of as if it has already been discarded.
+
+3. lpszMemory = GlobalLock (hMemory);
+
+  This fails. lpszMemory == 0.
+
+4. hMemory = GlobalReAlloc (hMemory, 1L, GMEM_MOVEABLE);
+
+  This returns the handle, and sets the size of the block to 1 byte.
+
+5. wFlags = GlobalFlags (hMemory);
+
+  wFlags = 0 (zero), which is GMEM_FIXED (Windows protected mode or in Windows
+  3.1, GMEM_FIXED and GMEM_MOVEABLE are the same).
+
+6. lpszMemory = GlobalLock (hMemory);
+
+  This returns a valid far pointer to a 1-byte buffer.
+
+When the lock count of a GMEM_DISCARDABLE object reaches 0 (zero), it is a
+candidate for discarding. If it has been discarded, it cannot be locked or used
+because the memory it refers to has been deallocated. However, it can be
+reallocated and then locked. As a result, the memory handles are reused after
+having been discarded.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

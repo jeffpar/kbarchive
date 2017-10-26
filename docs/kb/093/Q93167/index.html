@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93167: MS-DOS Shell Limited to 2000 Tokens | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93167: MS-DOS Shell Limited to 2000 Tokens" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93167/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93167/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93167/","publisher":null,"image":null,"headline":"Q93167: MS-DOS Shell Limited to 2000 Tokens","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93167-ms-dos-shell-limited-to-2000-tokens">Q93167: MS-DOS Shell Limited to 2000 Tokens</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93167
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start MS-DOS Shell, the DOSSHELL.INI file is read into memory. Each
+unique item in the DOSSHELL.INI file is stored as a token (there is a 2000 token
+limit). When this limit is reached, any action that causes MS- DOS Shell to
+write to the DOSSHELL.INI file (which requires a new token) causes the computer
+to beep. For example, the computer beeps when you try to add a New Program
+Object.
+
+MORE INFORMATION
+================
+
+A token is a word, a string of text, or a symbol. The following DOSSHELL.INI
+file entry would be represented in memory by three tokens; one for the word
+"help," one for the equal sign, and one for the string of text to the right of
+the equal sign:
+
+  help = Starts the MS-DOS command prompt
+
+Once a token has been used to represent a word, string, or symbol, each
+additional occurrence of the word, string, or symbol does not require an
+additional token. For example, the following block of text uses 11 tokens:
+
+  startup = filemanager
+  filemanagermode = shared
+  sortkey = name
+  pause = disabled
+  explicitselection = disabled
+  swapmouse = disabled
+
+Only one token is used to represent each occurrence of the equal sign and one
+token is used to represent each occurrence of the word "disabled."
+
+What Happens When New Tokens Are Added
+--------------------------------------
+
+The text on the left of the equal sign is usually a common word (such as
+"sortkey," "pause," "swapmouse," and so on) that is used repeatedly in the
+DOSSHELL.INI file. Therefore, each new line added to the DOSSHELL.INI file
+usually requires only one new token for the string to the right of the equal
+sign.
+
+If you reach the 2000 token limit, you can remove unneeded lines to make room for
+additional Program Objects or other items.
+
+The following items can usually be removed without significantly impacting your
+MS-DOS Shell configuration:
+
+- Color schemes you do not use.
+
+- Default program items and groups you don't use.
+
+- Help text (If you don't need or use it).
+
+
+Additional query words: 5.00 5.00a 6.00 dos shell dos-shell
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

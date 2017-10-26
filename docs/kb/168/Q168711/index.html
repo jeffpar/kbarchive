@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168711/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168711/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168711/","publisher":null,"image":null,"headline":"Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168711-how-to-move-a-dhcp-db-from-winnt-351-to-new-winnt-40-computer">Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168711
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to move a Dynamic Host Configuration Protocol (DHCP)
+database from a Windows NT 3.51 server computer to a new Windows NT 4.0 server
+computer.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+From the Windows NT 3.51 source server:
+
+1. In Control Panel, double-click the Services icon. On the Services tab, select
+  the Microsoft DHCP Server, and then click Stop. This stops the DHCP Server
+  service.
+
+2. Select the Microsoft DHCP Server, and then click Startup. Change the value to
+  Disabled, and then click OK. This prevents the DHCP Server service from
+  running after you restart the computer.
+
+3. Copy the DHCP directory tree (%SystemRoot%\System32\Dhcp) to a temporary
+  location on the new (destination) Windows NT 4.0 DHCP server computer. For
+  example, copy the directory tree to C:\Temp\System32\Dhcp.
+
+  NOTE: The following two steps are optional on the source server. You may want
+  to wait until the new Windows NT 4.0 DHCP server is functional before
+  completing these steps.
+
+4. Remove the DHCP directory (%SystemRoot%\System32\Dhcp).
+
+5. In Control Panel, double-click the Network icon, and then click the Services
+  tab. Remove the DHCP Server service.
+
+On the new Windows NT 4.0 DHCP server computer:
+
+1. In Control Panel, double-click the Network icon. Click the Services tab, and
+  add the Microsoft DHCP server. Click OK, and then restart the computer when
+  prompted.
+
+2. Once you have restarted, open Control Panel, and then double-click on the
+  Services icon. Stop the DHCP Server service.
+
+3. Rename the %SystemRoot%\System32\Dhcp directory to
+  %SystemRoot%\System32\Dhcporiginal. (once the below steps are completed, and
+  the DHCP server is running, this directory may be deleted)
+
+4. Create a new DHCP directory on the Windows NT 4.0 DHCP server computer, and
+  then copy the DHCP directory tree from the temporary directory to
+  %SystemRoot%\System32\Dhcp (to replace the DHCP directory that was renamed in
+  the previous step).
+
+5. Delete the System.mdb file.
+
+6. Start Windows NT Registry Editor (Regedt32.exe).
+
+7. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+     SYSTEM\CurrentControlSet\Services\DHCPServer
+
+8. Click Configuration.
+
+9. From the Registry menu, click Restore.
+
+10. Select %SystemRoot%\System32\Dhcp\Backup\Dhcpcfg.
+
+11. When the warning appears, click Yes.
+
+12. Exit Registry Editor.
+
+13. Start the DHCP service.
+
+14. Start the DHCP Manager.
+
+NOTE: After you restart the DHCP server computer you will receive a message that
+the database needs to be updated. You will then be asked if you want to update.
+Once the update is complete you will not be able to use this database file on
+the Windows NT 3.51 computer again.
+
+Additional query words: update upgrading migrate ntdhcp
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

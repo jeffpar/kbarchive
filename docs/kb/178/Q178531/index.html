@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178531: XADM: Generating the Calls.out File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178531: XADM: Generating the Calls.out File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178531/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178531/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178531/","publisher":null,"image":null,"headline":"Q178531: XADM: Generating the Calls.out File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178531-xadm-generating-the-callsout-file">Q178531: XADM: Generating the Calls.out File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178531
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The Calls.out file is a useful diagnostic tool in cases where the message
+transfer agent (MTA) is not functioning properly, but fails to stop responding.
+For example, if the MTA is failing to deliver any mail while messages are
+present in the work queue, a Calls.out file may indicate the function that the
+MTA is trying to perform. The Performance Monitor chart displaying the processor
+usage for each MTA thread will indicate if there is a persistently stuck thread.
+If there is a persistently stuck thread, make note of the MTA thread ID so that
+information can be used when you look at the Calls.out file.
+
+MORE INFORMATION
+================
+
+Thread states can change over time. Therefore, the MTA thread analysis in
+Performance Monitor must coincide with the generation of the Calls.out file. It
+is best to keep the Performance Monitor chart active while generating the
+Calls.out file to verify the actual state of the threads at the precise moment
+the Calls.out file is generated. The Calls.out file is generated using the
+following steps:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start the Registry Editor (Regedt32.exe)
+
+2. Open the following registry key:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA\
+  Diagnostics
+
+3. Select the X400 Service diagnostic value.
+
+4. Type the value of 7 in the Data box.
+
+5. Click OK. The Calls.out file is generated.
+
+6. Select the X.400 Service diagnostic value.
+
+7. Type the previous value for this registry setting in the Data box.
+
+8. Click OK.
+
+The Calls.out file is created by default in the Exchsrvr\Mtadata subdirectory
+whenever one of the MTA diagnostic values is set to 7. The Calls.out file is a
+text file and can be viewed by any text editor. However, you need to make a
+private copy of Calls.out before you restart the MSexchangeMTA. The MTA service
+will remove Calls.out upon startup.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

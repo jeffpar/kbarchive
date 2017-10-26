@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q298063: WD97: No Macro Warning Opening RTF Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q298063: WD97: No Macro Warning Opening RTF Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/298/Q298063/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/298/Q298063/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/298/Q298063/","publisher":null,"image":null,"headline":"Q298063: WD97: No Macro Warning Opening RTF Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q298063-wd97-no-macro-warning-opening-rtf-document">Q298063: WD97: No Macro Warning Opening RTF Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q298063
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word97
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft 2000 version of this article, see Q288266.
+
+SYMPTOMS
+========
+
+When you open a Rich Text Format (RTF) document that has a template attached
+that contains macros, Microsoft Word 97 does not prompt you with the macro
+warning message.
+
+CAUSE
+=====
+
+This problem can occur if a template that contains macros is attached to a Rich
+Text Format document and then opened. Microsoft Word trusts that the attached
+template contains safe macros.
+
+RESOLUTION
+==========
+
+To resolve the problem described in this article, obtain and install the latest
+Microsoft Word 97 update from the following Microsoft Web site:
+
+  http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+
+IMPORTANT: To use Wd97mcrs.exe, you must have already installed Office 97 Service
+Release 2b (SR-2b). Otherwise, if you install the update now and then install
+Office 97 SR-2b at a later date, you will have to reinstall this update. To find
+out whether you have SR-2b installed, start an Office program and then click
+About Microsoft &lt;program name&gt; on the Help menu. You should see Microsoft
+&lt;program name&gt; 97 SR-2b as your version of the program.
+
+
+WORKAROUND
+==========
+
+To temporarily work around this problem with a Rich Text Format document that
+you suspect is attached to a template that contains macros, do one of the
+following:
+
+- Hold SHIFT when you open the Rich Text Format document.
+
+  -or-
+
+- In a new blank Word document, click File on the Insert menu, and then insert
+  the Rich Text Format document. The new file is automatically attached to your
+  existing global template (Normal.dot), and the macros contained in the
+  previously attached template are not inserted into the new Word document.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem is fixed in the latest
+Microsoft Word 97 Update.
+
+
+MORE INFORMATION
+================
+
+When you have the "Macro virus protection" option turned on in Word 97, a
+warning appears whenever you open a document that might contain macro viruses.
+You are prompted with the following warning:
+
+  The document you are opening contains macros or customizations. Some macros
+  may contain viruses that could harm your computer.
+
+  If you are sure this document is from a trusted source, click Enable Macros.
+  If you are not sure and want to prevent any macros from running, click
+  Disable Macros.
+
+To set macro virus protection in Word, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the General tab.
+
+3. Click to select the "Macro virus protection" check box, and then click OK.
+
+When the "Macro virus protection" option is selected, you can choose whether to
+run potentially unsafe macros.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q214652 WD97: Macro Warning Doesn't Appear Opening File Attached to Template
+  That Contains Macros
+
+  Q163932 WD97: Frequently Asked Questions About Word Macro Viruses
+
+  Q49500 List of Antivirus Software Vendors
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

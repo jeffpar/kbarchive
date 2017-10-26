@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162670: XCLN: 16-Bit Exchange Client Memory Issue | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162670: XCLN: 16-Bit Exchange Client Memory Issue" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162670/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162670/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162670/","publisher":null,"image":null,"headline":"Q162670: XCLN: 16-Bit Exchange Client Memory Issue","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162670-xcln-16-bit-exchange-client-memory-issue">Q162670: XCLN: 16-Bit Exchange Client Memory Issue</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162670
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message appears when you start a 16-bit Exchange Client:
+
+  The MAPI spooler could not be started. Close and restart all mail-
+  enabled applications. MAPI 1.0[000004c7]
+
+In most cases, this is a conventional memory issue.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following:
+
+- Optimize conventional memory as much as possible (for example, by means of
+  MEMMAKER from MS-DOS 6.0/6.2).
+
+- Disable all real mode device drivers and TSR programs you do not need.
+
+- Disable automatically started applications by WIN.INI via RUN=, LOAD=).
+
+- Use Program Manager (Progman.exe) as your shell.
+
+- Change the order in which your programs or drivers load to minimize memory
+  fragmentation.
+
+- Remove as many third-party Windows drivers or virtual device drivers (VxDs)
+  as possible.
+
+- Using Windows for Workgroups, uncheck the option "Use Network DDE" in control
+  panel app network.
+
+- Configure the computer using NetBEUI or TCP/IP if possible.
+
+- Test a Win16 computer by means of the Memvalet utility (this forces DLLs to
+  load into upper memory). The utility is unsupported and should only be used
+  after the normal troubleshooting steps have failed.
+  (ftp://ftp.microsoft.com/bussys/exchange/exchange-unsup-ed/Memval.zip)
+
+For more information about Win16 memory issues, please see the following articles
+in the Microsoft Knowledge Base:
+
+
+  Q151359 XCLN: Out of Memory Errors Starting Schedule+ After Exchange
+
+  Q150156 XCLN: Cannot Send from Word When Exchange Client Not Running
+
+  Q112676 Troubleshooting Insufficient Memory Errors
+
+MORE INFORMATION
+================
+
+You may also receive this error when you try to access Windows Messaging e- mail
+in MSN 2.0. If so, try emptying your Temp directory, Temporary Internet Files
+directory, and History folders in your Windows directory and then rebooting the
+computer.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

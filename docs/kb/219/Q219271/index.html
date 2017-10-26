@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q219271: How to Add the Immediate-If Function to an ASP Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q219271: How to Add the Immediate-If Function to an ASP Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/219/Q219271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/219/Q219271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/219/Q219271/","publisher":null,"image":null,"headline":"Q219271: How to Add the Immediate-If Function to an ASP Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q219271-how-to-add-the-immediate-if-function-to-an-asp-page">Q219271: How to Add the Immediate-If Function to an ASP Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q219271
+Product(s): Internet Information Server
+Version(s): winnt:3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One of the common Visual Basic (VB) or Visual Basic for Applications (VBA)
+functions that was omitted from VBScript (VBS) for Active Server Pages (ASP) is
+the "Immediate-If" or IIf() function.
+
+The IIf() function is used in place of If..Then..Else statements, where a single
+expression is being tested and specific values are returned if the expression
+evaluates as true or false. Because this command was omitted from the ASP VBS
+command set, you can use the code below to add this functionality to an ASP page
+by adding IIf() as a new function to the code.
+
+MORE INFORMATION
+================
+
+The following syntax explanation is from Microsoft's Developer Network:
+
+  
+
+  IIf Function
+  ------------
+
+  Returns one of two parts, depending on the evaluation of an expression.
+
+  Syntax
+
+  IIf(expr,truepart,falsepart)
+
+  +----------------------------------------------------------------------+
+  | Part      | Description                                              | 
+  +----------------------------------------------------------------------+
+  | expr      | Required. Expression you want to evaluate.               | 
+  +----------------------------------------------------------------------+
+  | truepart  | Required. Value or expression returned if expr is True.  | 
+  +----------------------------------------------------------------------+
+  | falsepart | Required. Value or expression returned if expr is False. | 
+  +----------------------------------------------------------------------+
+
+Usage
+-----
+
+The IIf() function can be used in ASP code by adding the following function to a
+page:
+
+  Function IIf(i,j,k)
+  	If i Then IIf = j Else IIf = k
+  End Function
+
+Example
+-------
+
+The following ASP code shows an example page using the IIf() function to
+determine if a number is even or odd:
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="err">@</span><span class="na">LANGUAGE=</span><span class="s">"VBSCRIPT"</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">Function</span> <span class="na">IIf</span><span class="err">(</span><span class="na">i</span><span class="err">,</span><span class="na">j</span><span class="err">,</span><span class="na">k</span><span class="err">)</span>
+      <span class="na">If</span> <span class="na">i</span> <span class="na">Then</span> <span class="na">IIf =</span><span class="err"> </span><span class="s">j</span> <span class="na">Else</span> <span class="na">IIf =</span><span class="err"> </span><span class="s">k</span>
+    <span class="na">End</span> <span class="na">Function</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;</span>IIF() example<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">For</span> <span class="na">X =</span><span class="err"> </span><span class="s">1</span> <span class="na">to</span> <span class="na">5</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">li</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> X <span class="err">&amp;</span> " is an " <span class="err">&amp;</span> IIf(X Mod 2, "Odd", "Even") <span class="err">&amp;</span> " number.<span class="nt">&lt;/li&gt;</span>" <span class="err">&amp;</span> vbCrLf
+    Next
+  %&gt;
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+For more information on Microsoft Scripting Technologies, please see the
+information at the following URL:
+
+http://msdn.microsoft.com/scripting/
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : winnt:3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

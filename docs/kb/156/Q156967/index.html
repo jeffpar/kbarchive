@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156967: SNA Server Performance Degrades Running LUA Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156967: SNA Server Performance Degrades Running LUA Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156967/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156967/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156967/","publisher":null,"image":null,"headline":"Q156967: SNA Server Performance Degrades Running LUA Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156967-sna-server-performance-degrades-running-lua-application">Q156967: SNA Server Performance Degrades Running LUA Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156967
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbprogramming
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an LUA application (or 3270 application that uses the LUA flavor of
+the SNA Server 3270 Emulator Interface Specification), SNA Server performance
+may degrade if the application is receiving a large number of frames and SNA
+exception response protocol is being used on the session.
+
+CAUSE
+=====
+
+This problem can occur if exception response protocol is used on an LU type 0,
+1, 2, or 3 session, and the application does not periodically send "courtesy
+acknowledgments" to SNA Server, as documented in the SNA Considerations section
+in Chapter 2 of the SNA Server "LUA Programmer's Guide" (included below).
+
+If an LUA application developer encounters this problem, the application should
+issue "courtesy acknowledgments" periodically (say, after every 10 frames
+received or so), as described below.
+
+If a customer suspects a problem in this area, see the information below for
+instructions on generating SNA Server traces to provide to the LUA application
+developer or to SNA Server support personnel.
+
+MORE INFORMATION
+================
+
+Chapter 2 of the SNA Server "LUA Programmer's Guide" includes the following
+information regarding "courtesy acknowledgments":
+
+"SNA Server keeps a record of requests received from the host in order to
+correlate any response sent by the application with the appropriate request.
+When the application sends a response, SNA Server correlates the response with
+the data from the original request, and can then free the storage associated
+with it.
+
+If the host specifies exception response only (a negative response may be sent
+but a positive response should not be sent), SNA Server must still keep a record
+of the request in case the application subsequently sends a negative response.
+If the application does not send a response, the storage associated with this
+request cannot be freed.
+
+Because of this, SNA Server allows the LUA application to issue a positive
+response to an exception-response-only request from the host (this is known as a
+courtesy acknowledgment). The response is not sent to the host, but is used by
+LUA to clear the storage associated with the request."
+
+
+If the LUA application does not issue courtesy acknowledgments in this scenario,
+the following behavior may be observed using Microsoft Windows NT Performance
+Monitor utility:
+
+- The "private bytes" memory counter for the SNASERVR.EXE process will steadily
+  increase while the LUA application receives data.
+
+- Processor CPU usage may steadily increase
+
+- Data throughput on the LUA session will decrease
+
+Also, if SNA Server tracing is enabled, the SNA Server may encounter unexpected
+delays up to 45 seconds before responding to client requests.
+
+To determine if this problem is occurring, the following traces should be
+captured and provided to the LUA application developer, or to SNA Server support
+personnel:
+
+- Stop the LUA application
+
+- Run SNATRACE, focus on the SNA Server service and turn on Data Link Control
+  (DLC) and 3270 message tracing, set the trace file size to a large value
+  (say, 5000000 or 5 MB) and select Apply.
+
+- Start the LUA application and run a sample transaction.
+
+- Return to SNATRACE and select Clear All. The resulting trace files can be
+  found in &lt;Snaroot&gt;\System\Nodemsg?.trc.
+
+To send a courtesy acknowledgment, the LUA application should write a response
+containing a zero-length data message, setting the RH to indicate a response and
+by setting the TH to have the sequence number (SNF) of the RECEIVE verb that is
+being acknowledged. A SLI_SEND or RUI_WRITE indicates a response if it has the
+response bit set in the RH in the verb control block. The bits to set are:
+
+  lua_rh.rri = 1 /* response */
+  lua_rh.ri = 0 /* positive response*/
+
+Also, if you use an SLI application, the lua_message_type in the SLI_SEND command
+must be set to indicate a response (LUA_MESSAGE_TYPE_RSP). This is described in
+Chapter 4 of the [ASCII 147]LUA Programmer's Reference.[ASCII 148]
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

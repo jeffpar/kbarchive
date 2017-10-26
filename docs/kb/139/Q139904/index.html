@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139904: How to Configure Your DHCP Server Scope | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139904: How to Configure Your DHCP Server Scope" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139904/","publisher":null,"image":null,"headline":"Q139904: How to Configure Your DHCP Server Scope","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139904-how-to-configure-your-dhcp-server-scope">Q139904: How to Configure Your DHCP Server Scope</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139904
+Product(s): Microsoft Windows NT
+Version(s): 3.11,3.11a,3.11b,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+- Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is supplied to help explain what the Dynamic Host
+Configuration Protocol (DHCP) is, how to configure the DHCP server and enable a
+Windows NT as well as Windows for Workgroups DHCP client.
+
+MORE INFORMATION
+================
+
+Implementing DHCP eliminates some of the configuration problems associated with
+manually configuring TCP/IP. DHCP centralizes TCP/IP configurations and manages
+the allocation of TCP/IP configuration information by automatically assigning IP
+addresses to computers configured to use DHCP.
+
+DHCP Requirements
+-----------------
+
+The following requirements need to be met by the DHCP server:
+
+- The DHCP server service is running on a Windows NT Server on at least one
+  computer within the TCP/IP internetwork.
+
+  NOTE: Your IP routers must support RFC 1542, otherwise you need a DHCP server
+  or a DHCP Relay agent on each subnet.
+
+- A DHCP scope exists on the DHCP server.
+
+  A DHCP scope consists of a pool of IP addresses the DHCP server can assign or
+  lease to DHCP clients. For example:
+
+  xxx.107.3.51 through xxx.107.3.200
+
+  where xxx is any valid number for the first octet of the IP address.
+
+The following requirements need to be met by the DHCP client:
+
+- The client computer has a DHCP supported operating system. The following
+  operating systems are capable of being a DHCP client with DHCP enabled at the
+  client:
+
+  - Windows NT Server 3.5, 3.51, and 4.0
+  - Windows NT Workstation 3.5, 3.51, and 4.0
+  - Windows 95
+  - Windows for Workgroups 3.11 with the Microsoft TCP/IP-32 for Windows for
+  Workgroups installed
+  - MS Network Client 3.0 for MS-DOS with the real mode TCP/IP driver installed
+  - LAN Manager 2.2c
+
+Installing the DHCP Server Service
+----------------------------------
+
+Prior to installing the DHCP service, you must log on as administrator from the
+primary domain controller. To install the DHCP Server service, follow these
+steps:
+
+1. Run Control Panel and choose Network.
+
+2. Choose Add Software.
+
+3. In the Add Network Software dialog box, select TCP/IP Protocol And Related
+  Components, and then choose Continue.
+
+  The Windows NT TCP/IP Installation Options dialog box appears, displaying the
+  TCP/IP components available to be installed.
+
+4. Select DHCP Server Service, and then choose Continue.
+
+  The Windows NT setup box appears, prompting you for the full path of the
+  Windows NT distribution files.
+
+  NOTE: You may be prompted with the following message:
+
+  At least one of your adapters has automatic DHCP configuration enabled. In
+  order to correctly install the DHCP server, setup will disable automatic DHCP
+  configuration. Are you sure you want to install the DHCP Server?
+
+  Choose Continue.
+
+5. Type the path to the location of Windows NT Server distribution files, and
+  choose Continue.
+
+  If you install from compact disc, the path is under the \I386 directory.
+
+  The TCP/IP configuration Box appears.
+
+6. Enter the static IP address of the DHCP Server as well as the subnet mask and
+  the default gateway. If you use Windows Internet Name Service (WINS), add the
+  primary and secondary WINS addresses here.
+
+  The appropriate files are copied to your server, and then the Network Settings
+  dialog box appears.
+
+7. Choose OK.
+
+  A Network Settings Change dialog box appears, indicating that the system must
+  be restarted to initialize the new configuration.
+
+8. Save any unsaved work in other windows and choose Restart Now to restart
+  Windows NT Server.
+
+9. Log on as Administrator.
+
+Configuring a DHCP Scope
+------------------------
+
+Be sure to install and initialize the DHCP Server before completing the next
+step.
+
+To configure the DHCP scope, you must log on as administrator. Configuring the
+DHCP scope supplies the DHCP client with the range of IP addresses from which
+the server draws from and a subnet mask to be assigned to clients.
+
+The DHCP Server provides:
+
+- Default gateway address
+
+- Domain Name
+
+- Service server addresses
+
+- WINS server addresses
+
+- NETBIOS name resolution type.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q121005
+  TITLE : DHCP Options Supported by Clients
+
+1. From the Network Administration group, start DHCP Manager.
+
+  The DHCP Manager window appears.
+
+2. Under DHCP Servers, select *Local Machine*
+
+  Local Machine indicates that you are configuring the local DHCP server, and
+  not a remote DHCP server.
+
+3. From the Scope menu, choose Create.
+
+  The Create Scope dialog box appears.
+
+4. Complete the scope configuration.
+
+  The DHCP server cannot be a DHCP client. It must have a static IP address,
+  subnet mask, and default gateway address. You also have the option of
+  assigning an exclusion range or specific excluded addresses as well as lease
+  duration and a name.
+
+5. Choose OK when done.
+
+6. Choose Yes to activate the scope.
+
+  The DHCP Manager window appears with the new scope added. Notice the yellow
+  light bulb next to the IP address. This indicates an active scope.
+
+7. Close the DHCP Manager.
+
+Enabling DHCP at the Client
+---------------------------
+
+To enable the Windows NT DHCP client, you must log on as administrator at the
+Windows NT client.
+
+Normally, you enable DHCP as part of the installation procedure for Microsoft
+TCP/IP, however, you can use this procedure if you have manually configured
+TCP/IP:
+
+1. Run Control Panel and choose Network.
+
+  The Network Settings dialog box appears.
+
+2. Under Installed Network Software, select TCP/IP Protocol and then choose
+  configure.
+
+  The TCP/IP configuration dialog box appears.
+
+3. Select Enable Automatic DHCP Configuration.
+
+  A Microsoft (MS) TCP/IP message appears, indicating that the DHCP Protocol
+  attempts to configure the server automatically during system initialization.
+
+4. Choose Yes.
+
+  A MS TCP/IP Configuration dialog box appears, displaying current TCP/IP
+  configuration parameters. The IP Address and Subnet Mask boxes are not
+  available (grayed out) and the manually configured values are no longer
+  displayed.
+
+5. Choose OK to return to the Network Settings dialog box.
+
+6. Choose OK again.
+
+7. Shut down and restart the computer.
+
+To enable DHCP on a Windows for Workgroups client if TCP/IP is not installed
+yet:
+
+1. Use Network Setup to install the MS TCP/IP-32 3.11 protocol.
+
+2. In the MS TCP/IP Configuration dialog box, select the Enable Automatic DHCP
+  Configuration check box, and choose Continue.
+
+3. Restart the computer to initialize TCP/IP using DHCP.
+
+To enable DHCP on a Windows for Workgroups client if TCP/IP is installed:
+
+1. To access the Network Drivers dialog box, run Network Setup.
+
+2. Select Microsoft TCP/IP-32 3.11, and then choose Setup.
+
+3. In the MS TCP/IP Configuration dialog box, select the Enable Automatic DHCP
+  Configuration check box, and choose continue.
+
+  A message box appears indicating that the configuration of DHCP overrides any
+  values established locally.
+
+4. Choose Yes.
+
+5. To initialize TCP/IP using DHCP information, restart the computer.
+
+Additional query words: 3.11 reskit grey greyed
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b,3.5,3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159804: Toolbar or Color Palette Not Visible in Paint | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159804: Toolbar or Color Palette Not Visible in Paint" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159804/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159804/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159804/","publisher":null,"image":null,"headline":"Q159804: Toolbar or Color Palette Not Visible in Paint","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159804-toolbar-or-color-palette-not-visible-in-paint">Q159804: Toolbar or Color Palette Not Visible in Paint</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159804
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you are using Paint, the toolbar or color palette may not be visible even
+though you have chosen the corresponding command on the View menu. Removing and
+reinstalling Paint does not correct the problem.
+
+CAUSE
+=====
+
+This behavior can occur when you move the toolbar or color palette so that it
+appears in a separate window, and then either of the following events occurs:
+
+- You move the toolbar or color palette so that it is hidden behind the Windows
+  95 taskbar.
+
+- You move the toolbar or color palette to the bottom or right edge of the
+  screen and then configure Windows 95 to use a lower resolution. When you do
+  so, the toolbar or color palette may be located on an area of the desktop
+  that is not visible.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods:
+
+- Move the taskbar to a different location. If the toolbar or color palette is
+  then visible, move the toolbar or color palette to a different location and
+  then move the taskbar back to its original location.
+
+- Configure Windows 95 to use the highest resolution supported by your display
+  adapter and monitor. To configure Windows 95 to use a higher resolution,
+  double-click Display in Control Panel, click the Settings tab, and then move
+  the Desktop Area slider to the right.
+
+  If the toolbar or color palette is then visible, move the toolbar or color
+  palette to a different location and then configure Windows 95 to use the
+  original resolution. To prevent the behavior from happening again when you
+  return to the original resolution, move the toolbar or color palette to the
+  upper left corner of the screen or move it so that it does not appear in a
+  separate window. After you return to the original resolution, you can move
+  the toolbar or color palette to the location you want.
+
+- WARNING: Using Registry Editor incorrectly can cause serious problems that
+  may require you to reinstall Windows 95. Microsoft cannot guarantee that
+  problems resulting from the incorrect use of Registry Editor can be solved.
+  Use Registry Editor at your own risk.
+
+  NOTE: For information about how to edit the registry, view the Changing Keys
+  And Values online Help topic in Registry Editor (Regedit.exe). Note that you
+  should make a backup copy of the registry files (System.dat and User.dat)
+  before you edit the registry.
+
+  If the toolbar is not visible when you are using Paint, delete the Floating
+  value under the following registry key:
+
+  Hkey_Current_User\Software\Microsoft\Windows\CurrentVersion\Applets\
+  Paint\General-Bar3
+
+  If the color palette is not visible when you are using Paint, delete the
+  Floating value under the following registry key:
+
+  Hkey_Current_User\Software\Microsoft\Windows\CurrentVersion\Applets\
+  Paint\General-Bar4
+
+  Deleting the appropriate registry value causes the toolbar or color palette to
+  appear in the Paint window instead of appearing as a separate window. You can
+  then move the toolbar or color palette to the location you want.
+
+Additional query words: mspaint.exe
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

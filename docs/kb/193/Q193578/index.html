@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193578: BUG: Rollback Causes File Label Corruption | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193578: BUG: Rollback Causes File Label Corruption" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193578/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193578/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193578/","publisher":null,"image":null,"headline":"Q193578: BUG: Rollback Causes File Label Corruption","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193578-bug-rollback-causes-file-label-corruption">Q193578: BUG: Rollback Causes File Label Corruption</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193578
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe500bug kbSSafe600bug
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a file is rolled back, previous "File Label" label comments are corrupted.
+The first eight characters of the label comment are removed. If you run Analyze
+in autofix mode (-f switch), it removes the entire corrupted label comment.
+
+A "File Label" is a label that is applied to an individual file, not a project. A
+project label is applied to an entire project and all its sub- projects. This
+error does not occur with project labels.
+
+RESOLUTION
+==========
+
+You can work around this problem by performing the steps in the following
+article instead of doing a rollback. The major benefit of this method is that it
+maintains all the history information.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q153493 HOWTO: Perform a RollBack Without Losing History
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new file and add it to the project with a comment of "original
+  comment".
+
+2. Check it out and make a change.
+
+3. Check it in with the comment "first comment".
+
+4. Label it with the label "first label" and the comment "first label comment".
+
+5. Check it out and make a change.
+
+6. Check it in with the comment "second comment".
+
+7. Label it with the label "second label" and the comment "second label
+  comment".
+
+8. Check it out and make a change.
+
+9. Check it in with the comment "third comment".
+
+10. Label it with the label "third label" and the comment "third label comment".
+
+11. Show history of the file. There should be five versions, with labels on
+  versions one, three, and five. Examine each of the Details to make sure that
+  all of the labels and comments are in tact.
+
+12. Click on version three.
+
+13. Click Rollback, and perform the rollback.
+
+RESULT: Examine each of the Details.
+
+NOTE: The first eight characters are missing from the label comment on version
+three.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500bug kbSSafe600bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

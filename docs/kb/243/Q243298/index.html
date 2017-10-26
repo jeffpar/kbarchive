@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243298/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243298/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243298/","publisher":null,"image":null,"headline":"Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243298-fix-err-msg-c2668-inlineisequalguid--ambiguous-call">Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243298
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbDebug kbSDKPlatform kbSDKWin32 kbVC600bug kbATL300bug kbDSupport kbfix kbGrpDS
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Building a default ATL project containing a COM object supporting
+ISupportErrorInfo might result in the following error:
+
+  C2668: 'InlineIsEqualGUID' : ambiguous call to overloaded function
+
+This error may also occur when calling the function InlineIsEqualGUID() in your
+ATL project.
+
+CAUSE
+=====
+
+The problem occurs because the function InlineIsEqualGUID() is defined both in
+the ATL header file, AtlBase.h, and the Platform SDK header file, Guiddef.h, in
+different name spaces. The include paths for the build point first to the
+Platform SDK include directory, and then to the ATL include directory. In the
+ATL header, InlineIsEqualGUID() is defined in a name space called "ATL", while
+in the Platform SDK header it is defined in the global name space. Because
+AtlBase.h includes the statement
+
+  using namespace ATL;
+
+the compiler is unable to distinguish which definition to use.
+
+RESOLUTION
+==========
+
+To work around this problem, prefix the call to the InlineIsEqualGUID() function
+with "::ATL::" (without the quotation marks). This explicitly qualifies the ATL
+namespace from where the implementation of InlineIsEqualGUID is pulled in. For
+example:
+
+  ::ATL::InlineIsEqualGUID()
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ATL DLL project and insert a simple object into the project with
+  ISupportErrorInfo support.
+
+2. Make sure that the includes path for the Platform SDK include directory comes
+  before the ATL include directory on the Directory tab of the Options dialog
+  box, which is accessed from the Tools menu.
+
+3. Build the project, and the error message appears.
+
+
+Additional query words: PlatSDK MMC Samples ATL Object Wizard
+
+======================================================================
+Keywords          : kbCOMt kbDebug kbSDKPlatform kbSDKWin32 kbVC600bug kbATL300bug kbDSupport kbfix kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

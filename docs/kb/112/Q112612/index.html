@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112612: Problems Sending Mail After Installing AWFAX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112612: Problems Sending Mail After Installing AWFAX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112612/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112612/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112612/","publisher":null,"image":null,"headline":"Q112612: Problems Sending Mail After Installing AWFAX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112612-problems-sending-mail-after-installing-awfax">Q112612: Problems Sending Mail After Installing AWFAX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112612
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft At Work PC Fax, you may no longer be able to send
+mail to users sharing the same post office. When you send a message to a member
+of the post office, the message returns with an "Undeliverable Mail" error
+message. The text of the mail message reads
+
+  The message recipient was invalid.
+
+-or-
+
+  The PostOffice List icon in the Address Book may be unavailable in Microsoft
+  Mail.
+
+-or-
+
+  The Open Other's Appt. Book option may be unavailable in Microsoft Schedule+.
+
+CAUSE
+=====
+
+If Microsoft Mail was installed with Microsoft Windows for Workgroups version
+3.1 and you choose to install Microsoft At Work PC Fax for "Fax Only" rather
+than "Email And Fax" in Windows for Workgroups 3.11, the MSMAIL.INI file is not
+properly updated.
+
+RESOLUTION
+==========
+
+If Microsoft Mail was not installed before you started At Work PC Fax, make the
+following changes:
+
+1. Rename the following files:
+
+  MSMAIL.INI
+  EFAXPUMP.INI
+  SCHDPLUS.INI.
+
+2. Choose the Fax icon in Control Panel.
+
+3. Select the Email And Fax option and choose OK.
+
+4. Select the appropriate settings for your fax board.
+
+5. Install Microsoft Mail.
+
+If Microsoft Mail was installed prior to starting At Work PC Fax, do the
+following:
+
+1. Remove the [Providers] section of the MSMAIL.INI file.
+
+2. Rename the EFAXPUMP.INI file.
+
+  NOTE: If you are receiving the following error message when starting Microsoft
+  Schedule+
+
+  Your schedule transport DLL does not support the current transport. You will
+  only be able to work off-line. PCMail users are supported.
+
+  also perform the following step:
+
+  a. In the SCHDPLUS.INI file, remove the following statement:
+
+         ScheduleTransport=TRNOFF
+       
+
+     NOTE: The "ScheduleTransport=TRNOFF" entry in the SCHPLUS.INI file causes
+     the "This account is for a resource" check box in the Schedule Plus
+     Options dialog box to be unavailable.
+
+     -or-
+
+     Rename the SCHDPLUS.INI file.
+
+3. Choose the Fax icon in Control Panel.
+
+4. Select the Email And Fax option and choose OK.
+
+5. Select the appropriate settings for your fax board.
+
+Additional query words: 3.11 fax missing postoffice computer efax grey gray greyed grayed out address book "Your schedule transport does not support the current"
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q269043: Problems Saving or Opening Files with Extended Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q269043: Problems Saving or Opening Files with Extended Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/269/Q269043/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/269/Q269043/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/269/Q269043/","publisher":null,"image":null,"headline":"Q269043: Problems Saving or Opening Files with Extended Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q269043-problems-saving-or-opening-files-with-extended-characters">Q269043: Problems Saving or Opening Files with Extended Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q269043
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kbfile kbdta w2000netware kbNetWareService
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience any of the following issues:
+
+- When you try to open a file with extended characters in the file name that is
+  located on a NetWare volume by using Gateway Service for NetWare or Client
+  Services for NetWare, you may not be able to open the file and you may
+  receive an error message. The error message that you receive varies,
+  depending on the program that is attempting to open the file.
+
+  -or-
+
+- When you try to save or copy files with extended characters in the file name
+  to the NetWare server, some of the characters in the file name may change.
+
+  -or-
+
+- When you try to locate a folder on a NetWare server by using Windows
+  Explorer, files with extended characters in the file name may not display
+  correctly.
+
+CAUSE
+=====
+
+The current default regional settings do not provide a character mapping for the
+extended characters.
+
+Characters with a tilde (~) over them are examples of extended characters that
+may not appear correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the Regional tool in Control Panel to change the
+default regional settings to the same regional settings that you are using. To
+create the extended characters, use either of the following methods.
+
+Microsoft Windows NT 4.0
+------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click Regional Settings.
+
+3. On the Regional Settings tab, click the appropriate language in the list, and
+  then click to select the "Set as system default locale" check box.
+
+4. Restart your computer when you are prompted.
+
+Windows 2000
+------------
+
+1. On the toolbar click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click Regional Options.
+
+3. On the General tab, click Set Default, click the appropriate language in the
+  box, and then click OK.
+
+4. Restart your computer when you are prompted.
+
+Additional query words: gsnw csnw unicode Portuguese prb WD10
+
+======================================================================
+Keywords          : kbfile kbdta w2000netware kbNetWareService 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

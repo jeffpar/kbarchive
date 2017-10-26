@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47959: Description of a .MAP File’s &quot;Program Entry Point&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47959: Description of a .MAP File’s &quot;Program Entry Point&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47959/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47959/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47959/","publisher":null,"image":null,"headline":"Q47959: Description of a .MAP File’s &quot;Program Entry Point&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47959-description-of-a-map-files-program-entry-point">Q47959: Description of a .MAP File’s "Program Entry Point"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47959
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 16-JAN-1990
+
+The "Program entry point" is the last item in a .MAP file. It refers
+to the segment:offset address of the first instruction of the program
+to be executed, relative to the lowest memory address in the .EXE load
+image (the program loaded into RAM). A more detailed description and
+the use of entry point(s) are noted below.
+
+The load address can be obtained by adding 10h to the segment address
+of the PSP. (In C, this is available in the variable _psp.)
+
+An entry point is where code in a module actually begins execution
+via the loading of the CS:IP (CodeSegment:InstructionPointer --
+segment:offset) registers with the entry point address. The entry
+point could be the actual beginning of a program executed by the
+operating system, or it could be an exported function from an
+OS/2 or DOS Windows dynamic link library (DLL).
+
+The "Program entry point" specified at the end of a .MAP file is where
+the operating system will begin executing the program, RELATIVE to the
+lowest memory address where the program's code will be loaded. In DOS
+or real-mode OS/2, the lowest memory address will be the lowest
+physical address in RAM. In protected-mode OS/2, the lowest relative
+address will be segment selector 1, offset 0.
+
+The lowest address your code occupies in RAM is usually the first
+routine (function, procedure, or main program body) defined at the
+beginning of your main source file, and it is assigned a RELATIVE
+address of 0000:0000 [or, typically, 0:10 for main()] in DOS or
+real-mode OS/2, or an address of 0001:0000 in protected-mode OS/2.
+
+For our current high-level languages (except Microsoft QuickPascal
+1.00), the entry point is at the beginning of the routine "__astart".
+Our high-level languages require initialization code before executing
+C's main() function or the main program code for other languages such
+as Microsoft Pascal 3.3x or 4.00, and currently __astart is where the
+initializations begin.
+
+The "Program entry point" is a segment:offset address above the
+program's relative address of 0:0. For a C program, the entry point
+will be __astart. If the entry point is something like 2:0abc hex, the
+absolute DOS physical address or the virtual OS/2 address where
+__astart will be located can be calculated as follows:
+
+     lowest address of your program's load image  1234:0400
+   + relative entry point                         +  2:0abc
+   ---------------------------------------------  ---------
+   = DOS absolute or OS/2 virtual address of      1236:0e34
+     the entry point (__astart)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

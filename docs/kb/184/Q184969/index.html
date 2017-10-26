@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184969/","publisher":null,"image":null,"headline":"Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184969-prb-set-compatible-on-causes-problems-with-arrays">Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184969
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp
+Last Modified: 02-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Hardcore Visual Basic, Second Edition ISBN 1-57231-422-2, versions 3.0, 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+- Microsoft Visual FoxPro for Macintosh, Professional Edition, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If SET COMPATIBLE is ON and an array is redimensioned, the array loses it
+previously saved values and sets the current value to logical false (.F.).
+
+CAUSE
+=====
+
+When SET COMPATIBLE is set to ON or DB4, Visual FoxPro overwrites any existing
+array with a variable of the same name when a STORE command or assignment is
+made.
+
+RESOLUTION
+==========
+
+If the array needs to retain its contents, try one of the following:
+
+- Issue SET COMPATIBLE OFF in the program or form.
+
+- Add COMPATIBLE=OFF to the Config.fpw file.
+
+- From the Tools menu, select Options. In the Options dialog box, click the
+  General tab and clear the dBase compatibility check box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+This can be demonstrated when an array is redimensioned within a loop. To
+reproduce the problem, create a new program and enter the following code:
+
+     CLEAR
+     SET COMPATIBLE ON         &amp;&amp; Or SET COMPATIBLE DB4
+     DIMENSION atest(5)     &amp;&amp; Dimension to some value.
+     FOR i = 1 to 10
+        DIMENSION atest(i)
+        Atest(i)="Test "+ALLTRIM(STR(i))
+     ENDFOR
+
+     DISPLAY MEMORY LIKE atest
+
+When the code is executed, the array has 10 elements, but only the last element
+contains a value. The other elements contain a logical false (.F.).
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Dean Christopher, Microsoft Corporation
+
+
+REFERENCES
+==========
+
+Visual FoxPro 3.x for Windows Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 3.0b for Macintosh Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 5.x for Windows Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 3.x for Windows, "Language Reference", pages 756 and 794.
+Visual FoxPro 5.x for Windows, "Language Reference", pages 379 and 403.
+Visual FoxPro 3.0b for Macintosh, "Language Reference", pages 803 and 843.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp 
+Technology        : kbMSPressSearch kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300Mac kbVFP500 kbVFP500a
+Version           : MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

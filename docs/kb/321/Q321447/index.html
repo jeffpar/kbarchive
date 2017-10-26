@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321447: Event ID 201: No License Was Available | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321447: Event ID 201: No License Was Available" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321447/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321447/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321447/","publisher":null,"image":null,"headline":"Q321447: Event ID 201: No License Was Available","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321447-event-id-201--no-license-was-available">Q321447: Event ID 201:  No License Was Available</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321447
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to a shared resource on a Microsoft Windows NT 4.0
+Terminal Server, you may receive the following error message:
+
+  No more connections can be made to this remote computer at this time, because
+  there are already as many connections as the computer can accept.
+
+When you view the Application Log in the Event Viewer, you may notice the
+following logged event:
+
+  
+
+  Date:     &lt;date&gt;          Event ID: 201
+  Time:     &lt;time&gt;          Source:   LicenseService 
+  User:     N/A             Type:     Error
+  Computer: &lt;ServerName&gt;    Category: None
+
+  Description:
+  No license was available for user Domain\User using product SMBServer 4.0.
+
+CAUSE
+=====
+
+This behavior may occur if the Windows NT 4.0 Terminal Server is configured to
+use "Per Server" licensing.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the Windows NT licensing mode to "Per Seat", and
+then restart the computer. To do this, follow these steps.
+
+WARNING: Before you change the licensing mode on the server, review your license
+agreement to make sure that you have the correct number of seats, and the
+correct type of licenses. If you are not sure of your license requirements,
+please contact Microsoft. For more information, visit the following Microsoft
+Web site:
+
+  http://www.microsoft.com/licensing/Default.asp
+
+1. Start License Manager. To do this, click Start, point to Programs, point to
+  Administrative Tools (Common), and then click License Manager.
+
+2. Click the Server Browser tab, expand the domain, and then expand the server
+  that you want.
+
+3. Double-click the Windows product that you want.
+
+4. In the Choose Licensing Mode dialog box that appears, click Per Seat. You
+  receive the following message:
+
+  Changing the license mode to Per Seat will result in current Per Server
+  license loss. Press F1 for more help.
+
+  Are you sure you wish to make this change?
+
+5. Click Yes, and then click OK.
+
+6. Read the Client Access License message that appears, click the "I agree that"
+  check box, and then click OK.
+
+7. When you finish configuring Per Seat licensing, restart the computer.
+
+MORE INFORMATION
+================
+
+For additional information about Windows NT 4.0 Terminal Server licensing, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q187629 Terminal Server Licensing
+
+  Q153140 How to Reset License Manager Information
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

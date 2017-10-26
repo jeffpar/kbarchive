@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141272/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141272/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141272/","publisher":null,"image":null,"headline":"Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141272-xcln-how-exchange-clients-use-msmailini-and-sharedini">Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141272
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbenv kbusage
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about the registry. Before you
+edit the registry, you should first make a backup copy of the registry
+files (System.dat and User.dat). Both are hidden files in the Windows
+folder.
+
+SUMMARY
+=======
+
+This article describes how the Microsoft Exchange Windows client use the
+MSMAIL.INI and SHARED.INI files that are created by version 3.x of Microsoft
+Mail for Windows.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange 16-Bit Client
+--------------------------------
+
+The Microsoft Exchange client for Windows 3.x does not support 32- bit
+extensions. It reads the MSMAIL.INI and SHARED.INI files, just like the
+Microsoft Mail client for Windows 3.x. On startup, the Exchange 16-bit client
+performs the following steps:
+
+1. The Exchange 16-bit client searches the [Options] section of EXCHNG.INI for
+  the SharedExtsDir, SharedExtsServer, and SharedExtsPassword entries. If
+  found, an anonymous connection to the server is made with the provided
+  password. Then a search for the SHARED.INI file in the directory specified by
+  any SharedExtsDir entry is performed.
+
+2. The Exchange 16-bit client searches the MSMAIL.INI file for a
+  SharedExtensionsDir entry. If found, Exchange will search for the SHARED.INI
+  file in the directory indicated. The Exchange 16- bit client will never look
+  for the MSMAIL32.INI or SHARED32.INI file.
+
+3. If a SHARED.INI file is found, Exchange reads the extension entries specified
+  in the [Custom Menus], [Custom Commands], and [Custom Messages] sections.
+
+4. The Exchange 16-bit client then reads the extension entries ([Custom Menus],
+  [Custom Commands], and [Custom Messages] sections) specified in the
+  MSMAIL.INI file.
+
+The Exchange 16-bit client will ignore any extension entries whose version
+parameter is appended with a ',32' (for example, 3.0,32) as these are only
+supported by Exchange 32-bit clients.
+
+NOTE: Specifying the bit of the extension in the version number will result in a
+syntax error if read by the Mail 3.x client for Windows 3.x or Microsoft Windows
+NT.
+
+Microsoft Exchange 32-Bit Client
+--------------------------------
+
+The 32-bit Microsoft Exchange client supports 16-bit Microsoft Mail 3.x client
+extensions as well as 32-bit extensions for the Microsoft Windows NT version of
+the Microsoft Mail 3.x client. The following steps describe how the extensions
+are read when the Microsoft Exchange 32-bit client starts up.
+
+1. The Microsoft Exchange 32-bit client will look for extensions in the
+  HKEY_CURRENT_USER\Software\Microsoft\Mail\Microsoft Mail registry key. This
+  is the location where extensions for the Microsoft Mail 3.x client for
+  Windows NT are installed. In order to be consistent across 32-bit platforms,
+  this registry is also used by the Microsoft Exchange client for Windows 95.
+
+2. The Microsoft Exchange 32-bit clients look in the registry for a
+  SharedExtsDir in the KEY_CURRENT_USER\Software\Microsoft
+  \Exchange\Client\Options registry key. If present, it also gets the
+  SharedExtsServer and SharedExtsPassword entries. If the SharedExtsDir entry
+  is not present, it looks in the MSMAIL32.INI file for the Microsoft Mail 3.x
+  SharedExtensionsDir entry. If it is not found, it will use the MSMAIL.INI
+  file to look for the SharedExtensionsDir. If a SharedExtensionsDir entry is
+  found, it is parsed into the Microsoft Exchange equivalents. An anonymous
+  connection to the server is made with the provided password, if required.
+
+
+3. The Microsoft Exchange 32-bit client looks in the shared directory for a
+  SHARED32.INI file. If found, it will not look for SHARED.INI file.
+
+4. The Microsoft Exchange 32-bit client reads extensions ([Custom Menus],
+  [Custom Commands], and [Custom Messages] sections) from the SHARED32.INI file
+  found in step 3.
+
+5. The Microsoft Exchange 32-bit client reads extensions from the MSMAIL32.INI
+  file.
+
+6. If the SHARED32.INI file is not found, the Microsoft Exchange 32-bit client
+  looks for a SHARED.INI file in the same location.
+
+7. The Microsoft Exchange 32-bit client reads the MSMAIL.INI file.
+
+
+Microsoft Exchange supports an enhancement to the version parameter of the
+extension registration entry. The version number can be followed by ',16' to
+indicate a 16-bit extension DLL or by ',32' to indicate a 32-bit extension DLL.
+If the version does not specify either of these settings, Microsoft Exchange
+assumes that the bit of the extension matches the bit corresponding to the file
+name.
+
+For example, the MSMAIL32.INI file corresponds to 32 bits, and the SHARED.INI
+file corresponds to 16 bits. Specifying the bit of the extension in the version
+number will result in a syntax error if it is read by the Microsoft Mail 3.x
+client for either Windows 3.x or Windows NT.
+
+For additional information on how the Microsoft Exchange client can be configured
+to exclude certain Microsoft Mail 3.x client extensions, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q136804 Loading/Disabling MS Mail 3.x Win Client Extensions
+
+
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbenv kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : :4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

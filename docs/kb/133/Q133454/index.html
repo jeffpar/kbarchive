@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133454/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133454/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133454/","publisher":null,"image":null,"headline":"Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133454-prb-setup-error-setup-parse-error-in-initialize-pass">Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133454
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting up an EXE from distribution disks created by the Setup Wizard generates
+this error:
+
+  Setup Parse Error in Initialize pass Object ID2: AppSearch Object: Bad
+  default path field
+
+When you can click the OK button, the setup application fails.
+
+CAUSE
+=====
+
+In Step 5 of the Setup Wizard, the developer has the option of setting a
+destination directory for the application being distributed. This directory is
+where setup program places the executable when a user installs the application.
+The error is caused by the fact that the directory name specified by the
+developer contains spaces or does not conform to directory name rules for a
+particular operating system. This typically occurs when an application developed
+on Windows 95 is being set up under Windows 3.1.
+
+RESOLUTION
+==========
+
+The destination directory must be a valid directory for the platform. When
+running the Setup Wizard for Visual FoxPro be sure the destination directory
+name, in step 5, conforms to the 8.3 file/directory name format for backward
+compatibility with previous versions of the Windows operating system.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+It is assumed that the developer is running Visual FoxPro on the Windows 95
+operating system.
+
+1. Open an existing project, and build an executable file.
+
+2. Close the Project.
+
+3. On the Tools menu, click Wizards and then Setup.
+
+4. Follow the steps in the Setup Wizard to locate the desired executable.
+
+5. In Step 5 of the Setup Wizard, use the name "My Application" (without the
+  quotation marks) as the Destination Directory.
+
+6. Complete the remaining Setup Wizard steps, and build distribution disks for
+  your .EXE.
+
+7. Take the disks created by the Setup Wizard and attempt to install the
+  application on a computer running Windows version 3.1 or Windows for
+  Workgroups version 3.1 or 3.11.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

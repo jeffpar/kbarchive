@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/304/Q304334/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/304/Q304334/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/304/Q304334/","publisher":null,"image":null,"headline":"Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q304334-prb-users-w-proper-permissions-cannot-get-files-on-ftp-server">Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q304334
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbWin2000PreSP3Fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a File Transfer Protocol (FTP) client with proper permissions attempts to
+GET a file on an Internet Information Services (IIS) FTP server, you may receive
+the following error message:
+
+  550 filename.xxx: Access is denied
+
+CAUSE
+=====
+
+The file was previously deleted, but it remains on the FTP server because a
+handle to the file was open at the time of the deletion attempt. The file is
+actually pending deletion. This can result in a situation in which the Inetinfo
+process has an open file handle that prevents access of a file by any other
+local or remote user, and in which users are not disconnected on timeout. For an
+example of how this can occur, see the "More Information" section.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q159199 A File Cannot Be Deleted or Accessed on an NTFS Volume
+
+RESOLUTION
+==========
+
+Use Move.exe or the MoveFileEx API to move the file to another location before
+you delete it, so that the file does not appear in the folder contents on the
+FTP server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services 5.0.
+
+MORE INFORMATION
+================
+
+The FTP connection timeout does not close handles that are opened by a user.
+When a connection timeout occurs, the FTP server checks for a transfer in
+progress, which implies that a file handle is open. The FTP server resets the
+connection timeout when a transfer is in progress, so the handle remains open
+and the user remains connected.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Internet Explorer, open a .zip file by using FTP and leave the download
+  dialog box open.
+
+2. FTP by using Ftp.exe and GET the file. Note that the file downloads as
+  expected.
+
+3. At a command prompt, type "del c:\inetpub\ftproot\file.zip" (without the
+  quotation marks). The file appears to have been deleted.
+
+4. FTP by using Ftp.exe and download the file. You receive a "550: access
+  denied" error message.
+
+5. At a command prompt, attempt to delete the file. You again receive the
+  "access denied" error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000PreSP3Fix 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248458/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248458/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248458/","publisher":null,"image":null,"headline":"Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248458-prb-connecting-to-mas-90-odbc-driver-fails-in-visual-foxpro">Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248458
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbDatabase kbODBC kbvfp300b kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSuppor
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After connecting to the Sage MAS 90 32-bit ODBC driver, all the versions of
+Visual FoxPro listed above terminate with the following error:
+
+  An application error has occurred and an application log is being generated.
+  vfp.exe
+  Exception:access violation (0x0000005), Address: &lt;memory address&gt;
+
+When running under Microsoft Windows version 9x, you receive different error
+messages but Visual FoxPro still terminates.
+
+
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install the Sage MAS 90 accounting package or the demo.
+
+2. Create a new database container.
+
+3. Create a remote view and choose the Available data sources option.
+
+4. Choose the SOTAMAS90 data source from the Available data sources list box on
+  the Select Connection or Data Source dialog box.
+
+5. Click OK.
+
+Immediately after you click OK, Visual FoxPro reports the error listed in the
+"Symptoms" section and terminates.
+
+Additional query words: vfp
+
+======================================================================
+Keywords          : kb3rdparty kbDatabase kbODBC kbvfp300b kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

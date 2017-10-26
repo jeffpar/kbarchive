@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87008/","publisher":null,"image":null,"headline":"Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87008-prb-building-setup-toolkit-overwrites-dialogsres-file">Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87008
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 10-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Resource Compiler builds the resources for the custom DLL in the Setup
+Toolkit provided with the Microsoft Windows Software Development Kit (SDK)
+version 3.1, the DIALOGS.RES file is overwritten.
+
+RESOLUTION
+==========
+
+Modify the files in the Setup Toolkit BLDCUI directory (by default,
+C:\WINDEV\MSSETUP\BLDCUI) as follows:
+
+1. In the DIALOGS.DLG file, add the following two statements:
+
+        #include &lt;windows.h&gt;
+        #include "dialogs.h"
+
+2. Rename the DIALOGS.RC file to MSCUISTF.RC.
+
+3. Edit MAKEFILE as follows:
+
+  a. Find all occurrences of DIALOGS.RC and replace them with MSCUISTF.RC.
+
+  b. Find all occurrences of DIALOGS.RES and replace them with MSCUISTF.RES.
+
+MORE INFORMATION
+================
+
+It is necessary to make these changes before customizing the Setup Toolkit
+dialog boxes with the Dialog Editor. If the dialog box template, DIALOGS.RES,
+grows to larger than 64K, the Dialog Editor cannot load the file. For
+information on rebuilding the dialog template from the DIALOGS.DLG file, query
+in the Microsoft Knowledge Base on the following words:
+
+  " dialog editor corrupt " (without the quotation marks)
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

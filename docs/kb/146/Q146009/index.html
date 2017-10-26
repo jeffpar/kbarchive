@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146009/","publisher":null,"image":null,"headline":"Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146009-backup-cannot-find-hklmback-and-hkuback-files-during-compare">Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146009
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Backup to perform a complete backup using the "Full
+System Backup.set" file set, and then perform a compare operation on the
+resulting backup set, you may receive the following error message:
+
+  Errors occurred during this operation. Do you want to view them now?
+
+If you click Yes, the Error.log file is opened in Notepad, and lines that contain
+the following text are displayed:
+
+  C:\&lt;windows&gt;\HKLMBACK ... Microsoft Backup cannot find this file. If
+  this is a network file, the network may not be available. Or, the file Backup
+  is looking for may have been deleted or moved.
+
+  C:\&lt;windows&gt;\HKUBACK ... Microsoft Backup cannot find this file. If this
+  is a network file, the network may not be available. Or, the file Backup is
+  looking for may have been deleted or moved.
+
+  C:\Program Files\Accessories\Full System Backup.Set...Error: The file
+  comparison failed. Files in the backup set and in the source are different.
+
+  C:\Program Files\Accessories\LOG\ERROR.LOG...Error: The file comparison
+  failed. Files in the backup set and in the source are different.
+
+CAUSE
+=====
+
+This problem can occur if you perform the compare operation after you close the
+"Full System Backup.set" file set. If you have configured Backup to
+automatically compare files after each backup operation is performed, the
+problem does not occur.
+
+RESOLUTION
+==========
+
+If the errors listed above are the only errors contained in the Error.log file,
+the backup and compare operations were successful. The presence of the errors
+listed above does not indicate a problem with the backup set.
+
+To prevent this problem from occurring when you use the "Full System Backup.set"
+file set, configure Backup to automatically compare files after each backup
+operation. To do so, follow these steps:
+
+1. In Backup, click Options on the Settings menu.
+
+2. Click the Backup tab.
+
+3. Click the "Verify backup data by automatically comparing files after backup
+  is finished" check box to select it.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+When you use the "Full System Backup.set" file set to perform a complete backup,
+Backup creates two temporary files called Hklmback and Hkuback in the Windows
+folder. These files contain information that Backup uses to rebuild the registry
+when you perform a restore operation using the resulting backup set.
+
+The Hklmback and Hkuback files are included in the backup set, and are removed
+from the Windows folder when you close the "Full System Backup.set" file set
+after the backup operation is finished. When you perform a compare operation on
+the resulting backup set, the errors listed above are generated when Backup is
+unable to find these temporary files in the Windows folder.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

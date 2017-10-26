@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305628/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305628/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305628/","publisher":null,"image":null,"headline":"Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305628-prb-error-class-definition-mapisession-is-not-found">Q305628: PRB: Error "Class Definition MAPI.SESSION is not found"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305628
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500aFIX kbvfp600 kbGrpDSFox kbDSupport kbvfp
+Last Modified: 01-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When sending e-mail messages from Visual FoxPro applications, programmers
+usually use CREATEOBJECT("MAPI.Session"). Under some circumstances, however,
+this may return the following error messages:
+
+  Class definition MAPI.SESSION is not found
+
+  -or-
+
+  OLE error code: 0x8007007e Specified module cannot be found.
+
+CAUSE
+=====
+
+The most likely cause of these errors is that the Collaboration Data Objects
+(CDO) library is not installed. Although CDO ships with Microsoft Outlook 98 and
+later, it is not installed by default.
+
+Another possible cause is that Outlook is installed in Internet Mail Only (IMO)
+mode. MAPI and CDO are not supported in this mode.
+
+RESOLUTION
+==========
+
+If you already have Outlook 98 or later installed, and Outlook is not installed
+in IMO mode, you can install the CDO library by rerunning the Outlook setup
+program and explicitly including CDO. If installing Outlook is not possible, see
+the following article in the Microsoft Knowledge Base:
+
+  Q171440 INFO: Where to Acquire the CDO Libraries (all versions)
+
+If the CDO libraries are already installed and are not working, try using
+RegSvr32 to reregister them. For example, the following command line would work
+on Microsoft Windows 2000:
+
+  "RegSvr32 c:\WINNT\system32\cdonts.dll" (without the quotation marks)
+
+If this fails, contact Microsoft for further support.
+
+REFERENCES
+==========
+
+For additional information about Collaboration Data Objects, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q272402 OL2000: General Information About CDO
+
+  Q262701 OL2000: Developer Information About the Outlook E-mail Security
+  Update
+
+  Q252720 INFO: MAPI and CDO Are Not Supported in Outlook IMO Mode
+
+  Q254458 Windows 2000 Does Not Include Windows Messaging by Default
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500aFIX kbvfp600 kbGrpDSFox kbDSupport kbvfp500xSearch kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP700 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0,7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

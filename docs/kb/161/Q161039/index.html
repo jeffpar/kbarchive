@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161039: Snaservr.exe Application Exception in SAPUGETI Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161039: Snaservr.exe Application Exception in SAPUGETI Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161039/","publisher":null,"image":null,"headline":"Q161039: Snaservr.exe Application Exception in SAPUGETI Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161039-snaservrexe-application-exception-in-sapugeti-function">Q161039: Snaservr.exe Application Exception in SAPUGETI Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161039
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may see an application exception with SNA Server after an update to 3270 (or
+LUA) LUs on an active server. This application exception occurs when one or more
+of the updates cannot be immediately enacted (the SNA Server will appear
+"out-of-date" in the SNA Server Administrator program) and you then attempt to
+activate/deactivate a connection on the computer running SNA Server.
+
+When this problem occurs, SNA Server generates a Dr. Watson error. The
+Drwtsn32.log file indicates that an application exception has occurred in
+Snaservr.exe, in the sapugeti function. In addition, SNA Server may log an Event
+624 in the Windows NT Application Event log when the Snaservr.exe application
+exception occurs.
+
+RESOLUTION
+==========
+
+A fix is available to correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 2.11 SP1.
+This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Event 624 in the Windows NT Application Event log has a description similar to
+the following:
+
+  Creating dump file C:\SNA\traces\snadump.log for SNASERVR.EXE
+
+  EXPLANATION
+  A process (SNASERVR.EXE) ended abnormally due to a protection violation or
+  similar condition and a dump file SNADUMP.LOG has been created that contains
+  information about the state of the process at the time of the exception.
+  Register information is contained in your Windows NT root directory in the
+  file DRWTSN32.LOG.
+
+The Drwtsn32.log will contain information similar to the following excerpt:
+
+  Application exception occurred:
+       App: snaservr.exe (pid=221)
+       When: 12/12/1996 @ 14:23:51.8
+       Exception number: c0000005 (access violation)
+
+  function: sapugeti
+    003ff6f5 99               cdq
+    003ff6f6 f7fe             idiv    esi
+    003ff6f8 0fbfc1           movsx   eax,cx
+    003ff6fb 6642             inc     dx
+    003ff6fd 8d1c40           lea     ebx,[eax+eax*2]
+ds:00748e6b=????????
+    003ff700 0fbfc2           movsx   eax,dx
+    003ff703 8d0cdd00000000   lea     ecx,[00000000+ebx*8]
+ds:ffffd1cb=????????
+    003ff70a 0305f8634300     add     eax,[sct (004363f8)]
+ds:004363f8=00760000
+    003ff710 03c1             add     eax,ecx
+    003ff712 663bd6           cmp     dx,si
+FAULT -&gt;003ff715 8a58eb       mov     bl,[eax-0x15]        ds:0135778d=??
+    003ff718 885c240f         mov     [esp+0xf],bl         ss:00ede79f=??
+    003ff71c 750b             jnz     sapugeti+0x59 (003ff729)
+    003ff71e a1f8634300       mov     eax,[sct (004363f8)]
+ds:004363f8=00760000
+    003ff723 8a440804         mov     al,[eax+ecx+0x4]     ds:00bf777b=??
+    003ff727 eb03             jmp     sapugeti+0x5c (003ff72c)
+    003ff729 8a40ec           mov     al,[eax-0x14]        ds:0135778d=??
+    003ff72c 8844240e         mov     [esp+0xe],al         ss:00ede79f=??
+    003ff730 668b44240e       mov     ax,[esp+0xe]
+ss:00ede7a0=????
+    003ff735 5f               pop     edi
+    003ff736 5e               pop     esi
+    003ff737 5b               pop     ebx
+
+ *----&gt; Stack Back Trace &lt;----*
+
+ FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+ 002cfe88 003eab9a 0006f098 00000027 00000001 00000001 snaservr!sapugeti
+ 002cfee0 003eed63 011bcb60 00000000 00000000 00069ff0 snaservr!s1pnsfol
+
+
+
+Additional query words: trap 2.00 2.10 2.11 prodsna kbbug2.00
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

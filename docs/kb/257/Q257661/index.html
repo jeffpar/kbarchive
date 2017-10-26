@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257661: FIX: Form Double-Click Event May Fire SSTab Events | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257661: FIX: Form Double-Click Event May Fire SSTab Events" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257661/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257661/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257661/","publisher":null,"image":null,"headline":"Q257661: FIX: Form Double-Click Event May Fire SSTab Events","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257661-fix-form-double-click-event-may-fire-sstab-events">Q257661: FIX: Form Double-Click Event May Fire SSTab Events</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257661
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbTabCtrl kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix
+Last Modified: 20-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you cover the SSTab control with a Form and double-click on that form in the
+area above any tab of the SSTab control, then either the GotFocus event itself
+or both the GotFocus and the Click events are fired.
+
+RESOLUTION
+==========
+
+To resolve this problem, install the latest service pack for Visual Studio 6.0.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+  http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. On the Project menu, choose Components.
+
+3. Add a reference to Microsoft Tabbed Dialog Control 6.0.
+
+4. Place an SSTab control and a CommandButton control on Form1.
+
+5. Paste the following code into Form1's code window:
+
+  Option Explicit
+
+  Private Sub Command1_Click()
+    Form2.Show vbModal
+  End Sub
+
+  Private Sub SSTab1_Click(PreviousTab As Integer)
+    Debug.Print "SSTab1_Click " &amp; PreviousTab
+  End Sub
+
+  Private Sub SSTab1_GotFocus()
+    Debug.Print "SSTab1_GotFocus"
+  End Sub
+
+6. From the Project menu, add a new Form. Form2 is added by default.
+
+7. Paste the following code into Form2's code window:
+
+  Option Explicit
+
+  Private Sub Form_DblClick()
+    Debug.Print "Form2 DblClick"
+    Unload Me
+  End Sub
+
+8. Press the F5 key to run the program.
+
+9. On the View menu, select the Immediate window.
+
+10. On Form1, the current tab of the SSTab1 control is Tab0.
+
+11. Click on Command1. Form2 pops up.
+
+12. Position Form2 so that it covers the Tab1 or Tab2 tab of the SSTab1 control.
+
+13. Double-click on Form2 in the area above the Tab1 or Tab2 tab of the SSTab1
+  control.
+
+14. Form2 unloads and you see that the current tab of the SSTab1 control has
+  switched to Tab1 or Tab2 depending on where you clicked.
+
+15. In the Immediate window, note that the Click and GotFocus events of the
+  SSTab1 control are fired.
+
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbTabCtrl kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

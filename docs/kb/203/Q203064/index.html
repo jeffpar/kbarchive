@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/203/Q203064/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/203/Q203064/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/203/Q203064/","publisher":null,"image":null,"headline":"Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q203064-iis-notes-on-server-side-includes-ssi-syntax">Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q203064
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article details some features that are available in the Microsoft
+implementation of Server-Side Include (SSI) files for Internet Information
+Server (IIS) and provides general syntax and examples for SSI directives.
+
+MORE INFORMATION
+================
+
+SSI files are most commonly used with IIS to allow content authors to include
+the contents of one file inside another file, allowing the easy creation of
+script libraries or page headers and footers.
+
+SSI files, like Active Server Pages (ASP) and Internet Data Connector (IDC)
+files, are script-mapped by file extension to a preprocessor dynamic-link
+library (DLL). In the case of SSI, the handler is Ssiinc.dll. SSI files are
+usually named with .stm file extensions, although extensions of .shtm and .shtml
+are also supported.
+
+SSI is employed by the use of special preprocessing directives in SSI documents.
+These directives are parsed by the SSI DLL and processed. All directives are
+contained in HTML comment tokens and take the following general form:
+
+  <span class="c">&lt;!--#&lt;DIRECTIVE&gt; [&lt;ADDITIONAL DATA&gt;]--&gt;</span>
+
+Supported Directives:
+
+The following directives are supported in the IIS implementation of SSI:
+
+- #config - Configures how variables and commands are displayed.
+
+   - The general syntax for the #config directive is as follows:
+
+  <span class="c">&lt;!-- #CONFIG &lt;ERRMSG/TIMEFMT/SIZEFMT&gt;="&lt;format&gt;" --&gt;</span>
+
+   - The following is an example of a simple page that uses the #config
+     directive:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!-- #CONFIG TIMEFMT="%m/%d/%y" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Today's Date = <span class="c">&lt;!--#ECHO VAR = "DATE_LOCAL" --&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="c">&lt;!-- #CONFIG TIMEFMT="%A, %B %d, %Y" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Today's Date = <span class="c">&lt;!--#ECHO VAR = "DATE_LOCAL" --&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+- #echo - Inserts the value of various Common Gateway Interface (CGI) system
+  environment variables.
+
+   - The general syntax for the #echo directive is as follows:
+
+  <span class="c">&lt;!--#INCLUDE VAR = "&lt;CGI_VARIABLE_NAME&gt;"--&gt;</span>
+
+   - The following is an example of a simple page that uses the #echo
+     directive:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Server Name = <span class="c">&lt;!--#ECHO VAR = "SERVER_NAME"--&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Date = <span class="c">&lt;!--#ECHO VAR = "DATE_LOCAL" --&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Page URL = <span class="c">&lt;!--#ECHO VAR = "URL" --&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+- #exec - Executes CGI or Internet Server API (ISAPI) command scripts and
+  inserts output into an HTML document.
+
+   - The general syntax for the #exec directive is as follows:
+
+  <span class="c">&lt;!-- #EXEC &lt;CGI/CMD&gt;="&lt;command&gt;" --&gt;</span>
+
+   - The CMD command for the #exec directive is disabled by default on IIS 5.0.
+     For more information, see the following MIcrosoft Knowledge Base article:
+
+  Q233969 SSIEnableCmdDirective Is Set to FALSE by Default
+
+   - The following is an example of a simple page that uses the #exec
+     directive:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Root Directory of C:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;pre&gt;</span><span class="c">&lt;!--#EXEC CMD="cmd /c dir c:\ /b"--&gt;</span><span class="nt">&lt;/pre&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+- #flastmod - Retrieves the last modification time of a specified file.
+
+   - The general syntax for the #flastmod directive is as follows:
+
+  <span class="c">&lt;!--#FLASTMOD &lt;FILE/VIRTUAL&gt; = "filename.ext"--&gt;</span>
+
+   - The following is an example of a simple page that uses the #flastmod and
+     #config directives:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!-- #CONFIG TIMEFMT="%m/%d/%y" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Modified Date = <span class="c">&lt;!--#FLASTMOD FILE="filename.ext"--&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="c">&lt;!-- #CONFIG TIMEFMT="%B %d, %Y" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Modified Date = <span class="c">&lt;!--#FLASTMOD FILE="filename.ext"--&gt;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+- #fsize - Retrieves the size of a specified file.
+
+   - The general syntax for the #fsize directive is as follows:
+
+  <span class="c">&lt;!--#FSIZE &lt;FILE/VIRTUAL&gt; = "filename.ext"--&gt;</span>
+
+   - The following is an example of a simple page that uses the #fsize and
+     #config directives:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!-- #CONFIG SIZEFMT="BYTES" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>File Size = <span class="c">&lt;!--#FSIZE FILE="filename.ext"--&gt;</span> bytes<span class="nt">&lt;/p&gt;</span>
+  <span class="c">&lt;!-- #CONFIG SIZEFMT="ABBREV" --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>File Size = <span class="c">&lt;!--#FSIZE FILE="filename.ext"--&gt;</span> KB<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+- #include - Includes the contents of one specified file inside another.
+
+   - The general syntax for the #include directive is as follows:
+
+  <span class="c">&lt;!--#INCLUDE &lt;FILE/VIRTUAL&gt; = "filename.ext"--&gt;</span>
+
+   - The following is an example of a simple page that uses the #include
+     directive:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!--#INCLUDE FILE = "header.inc"--&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Hello World!<span class="nt">&lt;/p&gt;</span>
+  <span class="c">&lt;!--#INCLUDE VIRTUAL = "/includes/footer.inc"--&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+More Information on File and Virtual Syntax:
+
+SSI directives that use file paths can reference files by using a file or virtual
+path.
+
+- The file element is used with files that are relative to the folder of the
+  current document. The following example includes a file in the current
+  folder:
+
+  <span class="c">&lt;!--#include file="myfile.txt"--&gt;</span>
+
+- The virtual element represents paths that are relative to the base folder of
+  the Web server. The following example includes a file in the /scripts virtual
+  folder:
+
+  <span class="c">&lt;!--#include virtual="/scripts/myfile.txt"--&gt;</span>
+
+REFERENCES
+==========
+
+For additional information on using SSI with IIS, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q169996 To Run an ISAPI DLL with #exec, Use the CGI Statement
+
+  Q166491 Secure Batch Files Return Access Denied Error Message
+
+  Q195291 How to Disable #exec in Server-Side Include files
+
+Additional query words: iis ssi
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

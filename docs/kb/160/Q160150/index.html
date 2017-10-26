@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160150: Error in RAS Admin: &quot;No Remote Access Servers Were Found…&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160150: Error in RAS Admin: &quot;No Remote Access Servers Were Found…&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160150/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160150/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160150/","publisher":null,"image":null,"headline":"Q160150: Error in RAS Admin: &quot;No Remote Access Servers Were Found…&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160150-error-in-ras-admin-no-remote-access-servers-were-found">Q160150: Error in RAS Admin: "No Remote Access Servers Were Found…"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160150
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While using Remote Access Server (RAS) Administrator to remotely administer a
+domain, you get the following error in RAS Administrator:
+
+  No Remote Access Servers were found in the selected domain.
+
+Or the following error may appear in your Windows NT graphical user interface
+(GUI):
+
+  Error 1909: The referenced account is currently locked out and may not be
+  logged on to.
+
+CAUSE
+=====
+
+You have a one-way trust from your domain (domain A) to two other domains
+(domains B and C). You have an account on domains B and C, but your password is
+different on the two trusted domains.
+
+You have administrator privilege on all domains, and you use RAS to remotely
+administer one of the domains, say domain B. Then you shift the RAS
+Administrator focus to domain C. Now one of the errors listed above occurs. You
+should be offered the opportunity to supply the correct password, but instead
+you get one of the previously mentioned error messages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Which error message you get depends on whether you have the "Account lockout"
+option selected in the Account Policy menu item for User Manager for Domains:
+
+Case 1: If "Account lockout" is configured, you will get the "No Remote Access
+Servers were found..." error.
+
+Case 2: If "Account lockout" is configured, you will get the Error 1909 in the
+Windows NT user interface.
+
+Notice that under these same conditions Event Viewer and Server Manager produce
+the error "Access Denied" if Account lockout is not selected. With the Account
+lockout option selected, all tools produce the Error 1909 in the GUI.
+
+Additional query words: validate validation authenticate pass word
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122259/","publisher":null,"image":null,"headline":"Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122259-fix-classwizard-reports-invalid-filename-when-importing-class">Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122259
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbwizard kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410fix kbClassWizard kbG
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, used with:
+   - Microsoft Visual C++ for Windows 
+   - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to import a class into a project using ClassWizard, and locating
+the header file and implementation file using the Browse buttons to select a
+path to each file, you may get an error when you click the OK button even though
+the paths to the files are valid.
+
+If either path has a drive letter in it, ClassWizard displays a message box with
+this error message:
+
+  The file name "&lt;full path to file&gt;" is not a valid file name. Please
+  enter a valid file name.
+
+When the message box is dismissed, the Import Class dialog has the path
+highlighted for change even though the file name and path are valid.
+
+If either path is a relative path that does not include drive letter, such as
+..\..\DIR1\DIR2\MYFILE.H, ClassWizard displays a message box with this error
+message:
+
+  The file names [&lt;full path to header file&gt;, &lt;full path to
+  implementation file&gt;] for class "&lt;class name&gt;" do not exist or are
+  invalid file names.
+
+ClassWizard will accept a relative path that indicates one level above the
+current directory, such as ..\DIR1\DIR2\MYFILE.H.
+
+RESOLUTION
+==========
+
+To successfully import the class, change the path to the header and
+implementation files, so they are not relative paths and do not contain a drive
+letter. For example, ClassWizard will not accept this:
+
+  C:\DIR1\MYFILE.H and ..\..\..\MYFILE.H
+
+But ClassWizard will accept this:
+
+  \DIR1\MYFILE.H
+
+An alternative solution is to copy the files to the project directory. Note that
+in any case, you need to add the class implemenation files to your project. When
+you import a class, ClassWizard will not update your project to include the
+implementation files for the classes you import.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+Additional query words: kbVC400bug 1.00 1.50 1.51 2.00 wizard pathname 4.00 4.10 kbNoUpdate
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410fix kbClassWizard kbGrpDSTools kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

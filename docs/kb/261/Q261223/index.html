@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261223: File Download Dialog Box Appears When You Browse an ASP File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261223: File Download Dialog Box Appears When You Browse an ASP File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261223/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261223/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261223/","publisher":null,"image":null,"headline":"Q261223: File Download Dialog Box Appears When You Browse an ASP File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261223-file-download-dialog-box-appears-when-you-browse-an-asp-file">Q261223: File Download Dialog Box Appears When You Browse an ASP File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261223
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 05-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to browse a .asp file, the File Download dialog box is
+displayed (instead of displaying the .asp file in the browser).
+
+CAUSE
+=====
+
+The .asp file has an error in it, which invokes the custom error handler for
+500;100 HTTP error messages.
+
+The custom error handler for 500;100 HTTP error messages has been set to open
+500-100.asp as a file rather than a URL. Therefore, when Internet Information
+Services (IIS) encounters the error in the .asp file, it tries to open the file
+associated with 500;100 error messages instead of browsing it.
+
+It is not apparent to the user that IIS is attempting to open the 500-100.asp
+file rather than the .asp file that was specified in the browser.
+
+RESOLUTION
+==========
+
+Add the folder that contains 500-100.asp file as a virtual directory, and then
+change the Custom Error page for 500;100 HTTP errors to invoke the 500-100.asp
+file using a URL instead of a file path. To do this, perform the following:
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+  Information Services snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the appropriate Web site, click New, and then click Virtual
+  Directory.
+
+3. In the Virtual Directory Creation Wizard, click Next. In the Alias text box,
+  type "IISHelp" (without the quotation marks), and then click Next.
+
+4. When you are prompted for the path to the content directory, click Browse,
+  select the WINNT\Help\IisHelp folder, and then click Next.
+
+5. On the Access Permissions page, accept all the defaults, click Next, and then
+  click Finish.
+
+6. Right-click the Web site again, and then click Properties.
+
+7. On the Custom Errors tab, select the "500;100" error line, and then click the
+  Edit Properties.
+
+8. In the Error Mapping Properties dialog box, change File to URL in the Message
+  Type list box, and then type "/iisHelp/common/500-100.asp" (without the
+  quotation marks) in the URL text box.
+
+9. Click OK twice to return to the ISM.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: iis 5 akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

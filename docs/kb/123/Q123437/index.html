@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123437: PC Adm: Err Msg: Could Not Access Requestor’s Configuration… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123437: PC Adm: Err Msg: Could Not Access Requestor’s Configuration…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123437/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123437/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123437/","publisher":null,"image":null,"headline":"Q123437: PC Adm: Err Msg: Could Not Access Requestor’s Configuration…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123437-pc-adm-err-msg-could-not-access-requestors-configuration">Q123437: PC Adm: Err Msg: Could Not Access Requestor’s Configuration…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123437
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0a,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While performing a Config, DirSync, Requestor, Import from the Microsoft Mail
+for PC Networks Administrator program (ADMIN.EXE), the user may encounter the
+following error message:
+
+  Notice 159
+  Could not access Requestor's configuration information.
+  Press Enter to continue
+
+CAUSE
+=====
+
+This error message indicates the REQCONF.GLB is either missing or has become
+corrupted. In particular, a REQCONF.GLB with a file size less than or equal to
+100 bytes will cause this error to be displayed. The REQCONF.GLB should always
+be 512 bytes in size.
+
+RESOLUTION
+==========
+
+The administrator will need to recover a copy of the REQCONF.GLB from a tape
+backup prior to the corruption. If a backup does not exist, the administrator
+can instead copy a REQCONF.GLB from a different postoffice and then perform the
+steps outlined in the "Directory Synchronization (Dir-Sync)" document for
+resetting a single requestor's Dir-Sync files. This will require the
+administrator to run LISTDS against the requestor. In addition, the
+administrator will also need to unregister and reregister the requestor on the
+Dir-Sync server.
+
+For more information about Dir-Sync and how to obtain the Dir-Sync document,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q96060 PC DirSync: Directory Synchronization (Dir-Sync)
+
+MORE INFORMATION
+================
+
+A Config, DirSync, Requestor, Import (CDRI) can only be performed on a
+requestor. Therefore, this error message will never be generated on the
+Directory Synchronization Server (DSS). The actual error message text may also
+appear as follows:
+
+  Notice 159
+  Error file not accessible
+  Check server connection
+  Press Enter to continue
+
+This message text is displayed if the user did not install the Administration
+utilities from the Setup disk. The Notice 159 still implies the same error as
+described above. However, the message text displayed is different due to the
+fact that the database did not have the appropriate Admin error message file in
+the database (ERRORADM.GLB).
+
+Additional query words: 3.00 3.00a 3.20 CDRI
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238596/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238596/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238596/","publisher":null,"image":null,"headline":"Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238596-midtown-madness-err-msg-ebu90b4-caused-an-invalid-page-fault">Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238596
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbsetup kbimu msgame
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Midtown Madness, you may receive the
+following error message:
+
+  EBU90B4 caused an invalid page fault in module Oleaut32.dll.
+
+RESOLUTION
+==========
+
+To work around this issue, copy the contents of Midtown Madness CD-ROM to your
+hard disk drive:
+
+1. Insert the Midtown Madness CD-ROM into the CD-ROM drive. Press and hold down
+  the SHIFT key when you insert the CD-ROM to prevent the program from starting
+  automatically.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following line (including the quotation marks), and
+  then click OK
+
+  ""&lt;drive&gt;:\program files"" (without the quotation marks)
+
+  where &lt;drive&gt; is the drive letter of the hard disk on which Microsoft
+  Windows is installed.
+
+4. Right-click a blank area in the Program Files window, point to New, and then
+  click Folder.
+
+5. Type "microsoft games" (without the quotation marks), and then press ENTER.
+
+6. Double-click the Microsoft Games folder.
+
+7. Right-click a blank area in the Microsoft Games window, point to New, and
+  then click Folder.
+
+8. Type "midtown madness" (without the quotation marks), and then press ENTER.
+
+9. Click Start, and then click Run.
+
+10. In the Open box, type the following line, and then click OK
+
+  &lt;cdrom&gt;:\
+
+  where &lt;cdrom&gt; is the drive letter of the CD-ROM drive.
+
+11. On the Edit menu, click Select All.
+
+12. Press and hold down the CTRL key, and then click each of the following
+  folders to cancel the selection of these folders:
+
+   - DirectX
+
+   - Indeo
+
+   - MCM
+
+13. On the Edit menu, click Copy.
+
+14. Right-click inside the Midtown Madness folder you created in step 8, and
+  then click Paste.
+
+15. Double-click the Midtown.exe file to start Midtown Madness.
+
+MORE INFORMATION
+================
+
+If you continue to encounter problems, you may need to install Microsoft DirectX
+6.1 from the Midtown Madness CD-ROM:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line, and then click OK
+
+  &lt;cdrom&gt;:\directx\dxsetup.exe
+
+  where &lt;cdrom&gt; is the drive letter of the CD-ROM drive.
+
+3. Follow the instructions on the screen to install DirectX.
+
+Additional query words: 1.0 midmad ipf gpf general protection dx direct-x
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

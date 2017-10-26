@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242854: Certificate Server 1.0 Readme.htm File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242854: Certificate Server 1.0 Readme.htm File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242854/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242854/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242854/","publisher":null,"image":null,"headline":"Q242854: Certificate Server 1.0 Readme.htm File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242854-certificate-server-10-readmehtm-file">Q242854: Certificate Server 1.0 Readme.htm File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242854
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0 SP6a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP6a 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the Microsoft Certificate Server 1.0 Readme.htm
+file included with Microsoft Windows NT 4.0 Service Pack 6a (SP6a).
+
+MORE INFORMATION
+================
+
+Certificate Server is a standards-based, highly customizable server program for
+managing the creation, issuance, and renewal of digital certificates.
+Certificate Server generates certificates in standard X.509 format. These
+certificates are used for a number of public-key security and authentication
+applications including, but not limited to, server and client authentication
+under the Secure Sockets Layer (SSL) protocol and Secure/Multipurpose Internet
+Mail (S/MIME).
+
+This update to Certificate Server includes:
+
+- Teletex Encoding - Data encoded as teletex in a certificate request is
+  encoded as teletex data in the certificate issued. Previously, this data was
+  encoded as Unicode in the certificate issued.
+
+- Serial Number - Serial numbers are generated according to X.509 standards.
+  These serial numbers are automatically generated, unique, and always
+  positive. This accommodates restrictive mail clients.
+
+- Backup/Restore - Specific backup requests are supported, including backing up
+  keys and certificates.
+
+- An update to the default policy module so that mail certificates issued are
+  usable by Microsoft Outlook 98.
+
+- An update to fix a problem with certificates issued on February 29th of a
+  leap year. Previously, the validity period had the NotBefore and NotAfter
+  dates set to the same date. With this update, NotBefore and NotAfter are now
+  set correctly in the context of the CA validity for certificates issued on
+  February 29th of a leap year.
+
+- An update to the Certificate Server policy module to correctly process
+  subordinate Certificate Authority (CA) requests.
+
+- An update to the Certificate Server core engine to correctly process the
+  Certificate Server CA chain stored in the local machine certificate store.
+
+- An update to the certificate hierarchy installation tool (Certhier.exe) used
+  during subordinate CA Setup to support both base64 and DER encoded
+  certificates as import file formats.
+
+- An update to the certificate hierarchy installation tool (Certhier.exe) used
+  during subordinate CA Setup to support a broader range of CA certificates
+  encoding types that are generated by other CA when issuing subordinate CA
+  certificates.
+
+- An addition to the Advanced Configuration Options to support the selection of
+  the CA's key size of 512, 1024, 2048, or 4096 bits in length during
+  installation.
+
+Basic Installation of Certificate Server
+----------------------------------------
+
+The following section describes how to install a Certificate Server as a root CA
+with the standard configuration options.
+
+
+To install Certificate Server as a root CA, use the following steps:
+
+NOTE: Microsoft Internet Information Server 4.0 and Microsoft Internet Explorer
+4.01 or later must be installed on the computer. Windows NT 4.0 Service Pack 6a
+must have been previously applied to the computer.
+
+1. Click Start, point to Programs, and then click Windows NT 4.0 Option Pack.
+
+2. Click Next.
+
+3. Click Add/Remove.
+
+4. In the Components box, click Certificate Server.
+
+5. Click Next.
+
+6. In the Microsoft Certificate Server Setup dialog box, type the fully
+  qualified path name of a folder into which configuration information is
+  placed (for example, "c:\public" (without the quotation marks)). If the
+  folder does not exist, it is created. If it is an existing folder, you can
+  click Browse to find the folder name.
+
+7. Click Next. A dialog box is displayed and you are prompted to input
+  identifying information for the CA. Provide the information for each of the
+  requested identifying items.
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Item              | Information                                                                                                                                                                                                                                                                                | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CA Name           | This information is used to create the Distinguished Name (DN) that is included in the Subject Name and Issuer Name fields of the X.509v3 certificate being created to represent this certificate authority. NOTE: Check the release notes for the valid characters to use for this field. | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Organization      | Your company                                                                                                                                                                                                                                                                               | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Organization Unit | Your organization unit                                                                                                                                                                                                                                                                     | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Locality          | Your locality                                                                                                                                                                                                                                                                              | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| State             | Your state                                                                                                                                                                                                                                                                                 | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Country           | Your country                                                                                                                                                                                                                                                                               | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CA Description    | An identifying comment                                                                                                                                                                                                                                                                     | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+8. Click Next. A dialog box is displayed and you are prompted for the location
+  of the Certsrv.cab file. The Certsrv.cab file you need is located on the SP6a
+  CD-ROM, which is located in the Valueadd\Certsrv\Processer folder. Either
+  browse or type the location of the folder containing the .cab file (for
+  example, if the CD-ROM drive is drive E and you have an Intel processor, the
+  location is E:\Valueadd\Certsrv\I386).
+
+9. Click OK.
+
+10. Click Finish.
+
+Known Problems and Limitations
+------------------------------
+
+- Be sure to consult the QFE update release at the following Microsoft Web
+  site:
+
+  ftp://ftp.microsoft.com/bussys/iis/iis-public/fixes/usa/certserv/
+
+- If you install Certificate Server from the SP6a CD-ROM without first applying
+  SP6a, you may receive a "Msrevoke.dll is missing from the installation
+  directory" error message because Windows NT 4.0 Option Pack is using a Setup
+  file that is incompatible with the new Certificate Server. If you receive the
+  error message, click Cancel, stop the installation process, and apply SP6a
+  before reattempting the installation. SP6a updates the Setup files needed to
+  perform the new installation.
+
+- If you are unable to gain access to the Certificate Server log and queue from
+  the administration Web pages because of an "E78 database access" error
+  message after you install Certificate Server, there may be a problem with the
+  IIS virtual directory settings. To resolve this problem, reapply SP6a after
+  you install Certificate Server or make sure that the application attribute
+  for the Certificate Administration (CertAdm) folder in the default Web site
+  is applied. For additional information about how to apply the application
+  attribute for the CertAdm folder in IIS, click the article number below to
+  view the article in the Microsoft Knowledge Base:
+
+  Q241061 Cannot Gain Access to Certificate Server Log and Queue
+
+- If the CA service does not start after you install Certificate Server, check
+  to see if the following error message is displayed in the application log in
+  Event Viewer:
+
+  Event ID: 17
+  Source: CertSvc
+  Description: The Certificate Server did not start: Unable to initialize the
+  database connection for &lt;Your CA Name&gt;. The error code is 0xffffffff.
+
+If this error message is displayed, you may not have the proper SystemDSN
+available for Open Database Connectivity (ODBC). For additional information
+about how to create the proper SystemDSN, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q241060 Err Msg: The Certificate Server Did Not Start: Unable To...
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400sp6 kbWinNTS400search kbWinNTSEnt400SP6a
+Version           : winnt:4.0 SP6a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

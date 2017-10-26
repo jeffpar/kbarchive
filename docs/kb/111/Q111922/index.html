@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111922: How to Import ASCII Files with Nonstandard Delimiters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111922: How to Import ASCII Files with Nonstandard Delimiters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111922/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111922/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111922/","publisher":null,"image":null,"headline":"Q111922: How to Import ASCII Files with Nonstandard Delimiters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111922-how-to-import-ascii-files-with-nonstandard-delimiters">Q111922: How to Import ASCII Files with Nonstandard Delimiters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111922
+Product(s): Microsoft FoxPro
+Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are importing an ASCII text file that has delimiters other than a comma
+or a tab, specify the delimiter in the APPEND FROM command.
+
+MORE INFORMATION
+================
+
+Example (using FoxPro 2.x Sample Tables)
+----------------------------------------
+
+1. Create an ASCII text file by typing the following command in the Command
+  window:
+
+        MODIFY COMMAND test.txt
+
+2. In the TEST.TXT window, type in the following:
+
+        |4444|,|44444|,|12/01/93|,|444.44|,|444|
+        |5555|,|55555|,|12/02/93|,|555.55|,|555|
+        |6666||666666||12/03/93||666.66||666|
+        |7777||777777||12/04/93||777.77||777|
+        8888,|44444|,19931217,444.44,|444|
+        9999,|55555|,19931215,555.55,|555|
+        4545,45454,|12/01/93|,444.45,454
+        5656,56565,19931202,565.65,565
+
+  Notes
+
+   - To create the pipe character ("|"), press SHIFT+BACKSLASH (\).
+
+   - In this example, the pipe character is used as a field delimiter and the
+     comma is used as a field separator. Using DELIMITED WITH TAB yields tab
+     field delimiters and DELIMITED WITH BLANK yields space field delimiters.
+     The field delimiter characters are used only to surround the field data,
+     and the field separator characters will remain commas.
+
+3. Save the file.
+
+4. From the File menu, choose Open. Under List Files Of Type, select Table/DBF,
+  and then select INVOICES.DBF from the TUTORIAL subdirectory.
+
+5. In the Command window, type the following:
+
+        APPEND FROM TEST.TXT TYPE DELIMITED WITH |
+
+  Eight records should be added to the database.
+
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c 2.60 import
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+Version           : 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

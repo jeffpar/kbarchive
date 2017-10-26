@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/213/Q213364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/213/Q213364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/213/Q213364/","publisher":null,"image":null,"headline":"Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q213364-howto-retrieve-an-adomd-cellset-as-an-adodb-recordset">Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q213364
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbADO250 kbADO260 kb
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- ActiveX Data Objects (ADO), versions 2.0, 2.01, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ActiveX Data Objects Multi-Dimensional Library (ADOMD) documentation ("Using
+ADO with ADO MD") indicates that you can access a multidimensional data provider
+using ADOMD cellsets or ADODB recordsets. The operation of flattening a dataset
+to produce a rowset can be done by using ADODB instead of ADOMD. Since ADODB
+tries to get a rowset, the MSOLAP OLE DB provider gives a flattened rowset.
+
+MORE INFORMATION
+================
+
+The following code demonstrates using ADODB to retrieve a flattened rowset based
+on an OLAP multidimensional cube. This code sample requires the MSOLAP OLEDB
+provider on the SQL Server machine with the FoodMart or FoodMart 2000 OLAP
+database. The MSOLAP OLEDB provider is installed when you install OLAP client
+components from the SQL Server 7.0 or later CD.
+
+Paste the following code into a new Visual Basic ActiveX DLL Project class. Set a
+reference to the Microsoft ActiveX Data Objects (version 2.0 or later) Library.
+Change the project name to ADOBusObj and then compile the application.
+
+  Option Explicit
+  Private strSQL As String
+  Private strConnect As String
+  Private adoCn As ADODB.Connection
+
+  Public Function GetRs() As ADODB.Recordset
+      If Not adoCn Is Nothing Then
+      Else
+          Err.Raise vbObjectError + 98, "GetRs", "No valid Connection"
+      End If
+
+      Dim adoRs As ADODB.Recordset
+
+      Set adoRs = New ADODB.Recordset
+      With adoRs
+          .CursorLocation = adUseClient
+          .ActiveConnection = adoCn
+          .CursorType = adOpenStatic
+          .LockType = adLockBatchOptimistic
+          .Open strSQL
+      End With
+
+      'disConnect the Recordset.
+      Set adoRs.ActiveConnection = Nothing
+
+      'return the Recordset
+      Set GetRs = adoRs
+  End Function
+
+  Private Property Get ConnectStr() As String
+      ConnectStr = strConnect
+  End Property
+
+  Private Property Let ConnectStr(strCn As String)
+      strConnect = strCn
+  End Property
+
+  Public Property Get SQL() As String
+      SQL = strSQL
+  End Property
+
+  Public Property Let SQL(nSQL As String)
+      strSQL = nSQL
+  End Property
+
+  Public Sub ADOConnect(strConnect As String, Optional CmdTimeOut As Integer = 20)
+      Set adoCn = New ADODB.Connection
+      With adoCn
+          .ConnectionString = strConnect
+          .CursorLocation = adUseClient
+          .CommandTimeout = CmdTimeOut
+          .Open
+      End With
+
+      ConnectStr = adoCn
+  End Sub
+
+Paste the following code into a new Visual Basic Standard EXE Project Form in the
+General Declarations section. Set a reference to the ActiveX Data Objects
+(version 2.0 or later) Library. Set a reference to the ActiveX ADOBusObj created
+above. Change the connection string and the SQL string to reflect your OLAP
+server's configuration.
+
+  Option Explicit
+  'For SQL 2000, use the FoodMart 2000 database.
+  Const strConnect = "Data Source=&lt;DataSource&gt;;PROVIDER=MSOLAP;INITIAL CATALOG=FoodMart"
+
+  Private Sub Form_Click()
+      On Error GoTo ErrorHandler
+
+      Dim adoRs As ADODB.Recordset
+      Dim objAdoData As New ADOBusObj.Class1
+
+      With objAdoData
+          .SQL = "Select {[Measures].[Unit Sales]} on columns, " &amp; _
+                     "Non Empty [Store].[Store Name].members on rows From Sales"
+          .ADOConnect strConnect, 20 'Establish connection.
+      End With
+      
+      'Return the Resultset from Data Object.
+      Set adoRs = objAdoData.GetRs
+      
+      Debug.Print adoRs.RecordCount
+      
+      While Not adoRs.EOF
+          Debug.Print adoRs.Fields(0).Value
+          adoRs.MoveNext
+      Wend
+      
+      MsgBox "Success", vbOKOnly, "Data Object"
+      Exit Sub
+      
+      ErrorHandler:
+          MsgBox "Change Failed:" &amp; vbCrLf &amp; Err.Number &amp; vbCrLf &amp; Err.Description, vbOKOnly, "Data Object"
+      Exit Sub
+  End Sub
+
+REFERENCES
+==========
+
+SQL Server 7 Books Online 'Building OLAP Services Applications'.
+SQL Server 7 Books Online 'Installing OLAP Services'.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q234552 HOWTO: Use ADOMD to Return Out of Process Cellset
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbADO250 kbADO260 kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO201 kbADO200 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbADO270
+Version           : :2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58732: QB 4.50 Parameter Passed to Separate Module Shows as Garbage | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58732: QB 4.50 Parameter Passed to Separate Module Shows as Garbage" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58732/","publisher":null,"image":null,"headline":"Q58732: QB 4.50 Parameter Passed to Separate Module Shows as Garbage","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58732-qb-450-parameter-passed-to-separate-module-shows-as-garbage">Q58732: QB 4.50 Parameter Passed to Separate Module Shows as Garbage</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58732
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900210-1 buglist4.50 | mspl13_basic
+Last Modified: 1-MAR-1990
+
+A QuickBASIC 4.50 program that calls a subprogram located in a
+separate module (such as in a library or Quick library) can have a
+parameter's contents become corrupt under the specific circumstances
+described further below. After the parameter has been corrupted,
+PRINTing that parameter may display "garbage" instead of the correct
+results.
+
+Microsoft has confirmed this to be a problem in Microsoft QuickBASIC
+Version 4.50. We are researching this problem and will post new
+information here as it becomes available.
+
+This problem does NOT occur in earlier versions of QuickBASIC, in
+Microsoft BASIC Compiler Versions 6.00 or 6.00b for MS-DOS and MS
+OS/2, or in Microsoft BASIC Professional Development System (PDS)
+Version 7.00 for MS-DOS and MS OS/2.
+
+The conditions under which parameters may become corrupt are as
+follows:
+
+1. Variables are passed using argument and parameter lists to a
+   subprogram located in a separate module (a linked .OBJ, a library,
+   or a Quick library). (This problem does not occur if variables are
+   passed through a COMMON SHARED statement.)
+
+2. The second argument passed is of type SINGLE, DOUBLE, or INTEGER.
+   (This problem does not occur with long integers.)
+
+3. In the subprogram, the variable in the first position of the
+   parameter list is multiplied by the variable in the second
+   position, giving the result to a third variable such as a third
+   parameter or a variable local to the subroutine. The problem
+   does not occur if the order of multiplication is switched.
+
+4. If all of the above conditions are met, the variable that is
+   defined in the second position of the parameter list shows garbage
+   when PRINTed even though no changes were made to this variable.
+   All other variables are displayed correctly.
+
+The following program exhibits the problem:
+
+Main Level Code
+---------------
+
+   x = 5
+   y = 6
+   Print "Before Call "; x, y, z
+   CALL Garbage(x, y, z)
+   PRINT "After Call "; x, y, z   '--Correct values are displayed
+                                  '  after exiting the sub
+
+Separate Module (.OBJ, Library, or Quick Library) Code
+------------------------------------------------------
+
+   SUB Garbage (x, y, z)
+     PRINT "In sub, before multiplying "; x, y, z  '--Correct values
+                                                   '  are displayed
+     z = x * y                   '--Change this line to z = y * x
+                                 '  and program will work correctly
+     PRINT "In sub, after multiplying  "; x, y, z  '--y displays garbage
+   END SUB
+
+Workarounds
+-----------
+
+One workaround to the problem is to assign the variable located in the
+second position of the parameter list to a temporary variable and work
+with that temporary variable. At the end of the procedure, assign the
+parameter variable the value of the temporary variable. For example,
+the procedure in the library or Quick library would look like the
+following:
+
+   SUB Garbage (x, y, z)
+      ytemp = y
+      z = x * ytemp
+      y = ytemp
+      PRINT "Printing ytemp "; ytemp
+      PRINT "Printing y     "; y
+  END SUB
+
+Another workaround is to pass variables through a COMMON SHARED
+statement instead of a parameter list.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

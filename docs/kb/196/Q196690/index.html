@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196690/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196690/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196690/","publisher":null,"image":null,"headline":"Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196690-xadm-failed-to-traverse-mailboxes-using-mbclean-on-exchange">Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196690
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to run the Mailbox Cleanup Agent on an Exchange 5.5 Server
+computer the user may receive the following message in the Windows NT
+Application log:
+
+  Event ID 722
+  MSExchangeMCA
+  Description:
+  Failed to traverse mailbox's in container ORG~Site~Recipients - Mailbox:
+  Mailboxname.
+
+CAUSE
+=====
+
+This problem can occur when the cleanup agent finds a mailbox that is no longer
+accessible. For example, the mailbox was deleted but still exists in the
+directory.
+
+This has been shown to occur most of the time when a user runs Loadsim on the
+Exchange Server computer and the Mailbox Cleanup Agent is run against one of the
+containers it creates.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Mailbox Cleanup Agent of the
+Microsoft Exchange Resource Kit. This has been addressed in version 5.0.1.91.0
+of the Mailbox Cleanup Agent.
+
+Additional query words: mbclean BORKIII BORK MCA
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268498/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268498/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268498/","publisher":null,"image":null,"headline":"Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268498-error-message-stop-0x0000001e---kmode_exception_not_handled">Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268498
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): sna4
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+A "Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED" error message may occur when
+the SNA Server service starts after you install the Digi Datafire 570 SDLC link
+service. The Stop screen information indicates that the Digi570mp.sys driver is
+the cause of the problem.
+
+CAUSE
+=====
+
+This stop error can occur if the Digi Datafire 570 SDLC Link Service has been
+installed by using the External Link Service (Linkset.exe) on the Tools menu in
+the SNA Server Manager instead of using the Insert Link Service option.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must completely remove the link service and driver
+files, and then reinstall them. To do this, perform the following steps:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Remove the Digi Network adapter by double-clicking the Network icon in
+  Control Panel, and then selecting Adapters. Restart the computer when you are
+  prompted.
+
+2. Remove the External Link Service drivers by selecting the Digi/Sync Link
+  Service. To do this, on the SNA Server Tools menu, click External Link
+  Services, select Links, and then click Remove.
+
+3. Remove the files associated with the Digi Link Service from the from the
+  SNAROOT\System\Hwsetup directory. The files all begin with DIGI.
+
+4. In Registry Editor, remove all of the references to the Digi drivers. These
+  drivers are located under the following registry keys and all begin with
+  Digi, Dgi, or DGP:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services
+
+5. Reinstall the Digi Surefire adapter through the Control Panel Network icon by
+  selecting Adapters, and then clicking Add.
+
+6. Configure SNA Server to be the layer 2 protocol for that adapter. To do this,
+  open the properties for the adapter, select the line to configure, and then
+  select SNA as the protocol.
+
+7. To install the link service, open the SNA Server Manager, choose Insert,
+  select Link Service, select Digi SDLC, and then answer the remaining
+  configuration questions as appropriate.
+
+MORE INFORMATION
+================
+
+A Stop error message can also occur if the incorrect Digi Link Service for the
+adapter has been installed or is misconfigured.
+
+For more information, please see the following:
+
+  http://support.digi.com/support/techsupport/nonunix/winnt/sna_faq/
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

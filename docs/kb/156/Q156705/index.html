@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156705/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156705/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156705/","publisher":null,"image":null,"headline":"Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156705-xadm-site-tear-down-causes-public-folders-to-be-re-homed">Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156705
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 13-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The process of deleting a directory replication connector between two Microsoft
+Exchange Sites (hereafter referred to as Site tear-down) and then
+re-establishing the directory replication connector might cause undesired
+affects with regards to public folders such as re-homing and loss of
+permissions.
+
+CAUSE
+=====
+
+Directory replication connectors to other Microsoft Exchange Sites are permanent
+relationships and were not designed to be torn down and re-established on a
+frequent basis.
+
+When you delete a directory replication connector, you will see a series of
+dialog boxes, one stating that the DS/IS Consistency Adjuster should be run to
+clear up public folder inconsistencies. This dialog box makes the assumption
+that these Sites will not be re-connected in the future. Once the DS/IS
+Consistency Checker has been run on each of the affected Sites (each Site
+involved in the Site tear-down), all public folders that exist in the hierarchy
+are now homed to each of these individual Sites. This is done to provide
+transparency to the users of these public folders after the Site replication has
+been torn down. In other words, if a user in Site1 had access to a public folder
+that existed in Site2, DS/IS ensures that this same user will still have access
+to the public folder and its contents after the Site has been torn down. The
+DS/IS Consistency Checker also ensures that the Access Control Lists (ACLs) are
+purged of any invalid entries. This process cleanses the folders permissions
+list of users that existed in the Site that was just disconnected. All of the
+above is by product design.
+
+The problem arises when these two Sites are re-connected, in other words, you
+create a directory replication connector between the two Sites that were
+previously disconnected. Since DS/IS re-homed the public folders to each of the
+individual Sites after Site tear-down, when the Sites are reconnected and the
+public folder hierarchy is replicated, a conflict arises because a folder exists
+in each Site that has the same folder id (FID) yet claims to be homed in two
+different places. This conflict is resolved by homing the public folder to the
+Site that has the latest modification to a public folder property. This process
+could have the following undesired affects:
+
+- A public folder which was originally created in Site1 when these Sites were
+  connected via directory replication, could be now homed in Site2 after a Site
+  tear-down, DS/IS, and the re-connection of the Sites has taken place.
+
+- The original owner of the public folder might no longer have any rights to
+  the public folder if it was re-homed to a different Site after a Site
+  tear-down, DS/IS, and re-connection of the Sites has occurred.
+
+- Users who were assigned permissions to the public folder in one Site might no
+  longer have rights after a Site tear-down, DS/IS, and re- connection of the
+  Sites has occurred.
+
+There is no way to reverse these affects once they have taken place. The public
+folders must be manually moved back to their original home Servers, using a
+Personal Folder (PST), and the permissions re-established to the public folders.
+
+WORKAROUND
+==========
+
+Do not run the DS/IS consistency adjuster if the directory replication connector
+has been torn down temporarily and the Sites will be reconnected in the future.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base:
+
+  " SERVPACK" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+It is important to note that the hotfix does not prevent the re-homing from
+taking place. The hotfix does provide a series of new dialog boxes that pop-up
+when you perform a Site tear-down. These dialog boxes clearly define the cases
+in which the DS/IS consistency adjuster should be used as well as describe the
+implications that running DS/IS could have to public folders if the Sites were
+to be reconnected. The hotfix also presents a warning dialog box when the DS/IS
+consistency adjuster is run and provides a Help button on the dialog that brings
+up a detailed description of the implications to public folders.
+
+Additional query words: orphaned re-home rehome
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

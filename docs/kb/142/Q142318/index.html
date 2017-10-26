@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142318/","publisher":null,"image":null,"headline":"Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142318-howto-remove-ole-controls--gallery-components-from-a-project">Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142318
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbide kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are occasions when you may need to remove a Toolbox component, an OLE
+Control, or a Visual C++ 6.0 Component Gallery component from your project.
+Because all components are different, the steps in this article are general
+guidelines only.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. If you are attempting to remove a Toolbox component from your project, you
+  may delete the component from the Visual Studio .NET designers. Any event
+  handlers that you have added, such as the Click event handler for a button,
+  must be manually deleted from your code (both the .cpp and .h files) because
+  the designer does not delete the event handlers automatically.
+
+2. In Visual C++ 6.0, if you are attempting to remove a Component Gallery
+  component from your project, read the Results section of the component's Help
+  file to find out what the component inserts into your application. If you are
+  attempting to remove an OLE Control from your project, locate the wrapper
+  classes for the OLE Control that have been inserted into your project.
+
+3. Remove the source code files that were inserted into your project. Generally,
+  these are source files that define the class and relevant code for the OLE
+  Control or Component. For example, the Password Dialog Component creates and
+  adds the PWDLG1.CPP and PWDLG1.H files to your project.
+
+4. If you are attempting to remove a Component Gallery component, remove any
+  code that is inserted into existing code files. For example, several
+  Components insert code into a project's InitInstance() function. To find all
+  occurrences of inserted code, search for "// CG:" in your .cpp files. This
+  comment precedes each code insertion that was made to your application. Also,
+  be sure to remove any added member declarations in the .h files, and make
+  sure your remove all appropriate header files from these same source files.
+  For example, to remove the Password Dialog Component from your project,
+  remove the following from all files in your project:
+
+        #include "pwdlg1.h"
+
+  When you remove code, be sure to remove any associated message map entries.
+  For example, the Clipboard Assistant Component adds a number of message map
+  entries to a project.
+
+5. Remove any added resources. For example, the Password Dialog Component
+  inserts a dialog resource into the project's resource file (.rc).
+
+In addition to the previous steps, some OLE Controls and Component Gallery
+components insert data at the end of your project's .mak file for Visual C++,
+versions 4.x. This data does not affect your project but might prevent you from
+reinserting the Control or Component later. Developer Studio uses this data to
+determine which controls to display in its Controls toolbar.
+
+In Visual C++, versions 5.0 and 6.0, this information is stored in the .dsp file,
+and the following instructions do not apply. Similar troubleshooting methods can
+remove this information from the .dsp file, but directly modifying the project
+file is unsupported.
+
+In Visual C++, versions 4.x, you can identify this data by the Section keyword.
+For example, inserting the Splash Screen Component adds the following text to
+your project's .mak or file:
+
+     #####################################################################
+     # Section SplashIt : {21FFBCBF-33A6-11CF-9420-00AA00C14AF9}
+     #   0:8:Splash.h:C:\SplashIt\Splash.h
+     #   0:10:Splash.cpp:C:\SpashIt\Splash.cpp
+     #   1:10:IDB_SPLASH:102
+     #   2:10:ResHdrName:resource.h
+     #   2:11:ProjHdrName:stdafx.h
+     #   2:10:WrapperDef:_SPLASH_SCRN_
+     #   2:12:SplClassName:CSplashWnd
+     #   2:21:SplashScreenInsertKey:4.0
+     #   2:10:HeaderName:Splash.h
+     #   2:10:ImplemName:Splash.cpp
+     #   2:7:BmpID16:IDB_SPLASH
+     # End Section
+     #####################################################################
+
+To allow for re-inserting the Splash Screen Component, this section of text must
+first be removed from the project's .mak or file.
+
+WARNING: Remove only the entries for the component you want to delete. Do not
+delete another component's entry that you may still need to keep.
+
+To determine which Section entries belong to a particular component, you should
+create a new MFC project, insert the component in question, and examine this new
+project's .mak file. Then you can remove the identical Section entries from the
+original project.
+
+Additional query words: VwbIss
+
+======================================================================
+Keywords          : kbide kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

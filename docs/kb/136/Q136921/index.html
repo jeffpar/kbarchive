@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136921: Guidelines for Creating Unique and Sequential Keys | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136921: Guidelines for Creating Unique and Sequential Keys" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136921/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136921/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136921/","publisher":null,"image":null,"headline":"Q136921: Guidelines for Creating Unique and Sequential Keys","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136921-guidelines-for-creating-unique-and-sequential-keys">Q136921: Guidelines for Creating Unique and Sequential Keys</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136921
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create unique and sequential keys in Visual FoxPro by using two of
+Visual FoxPro's new features: Stored Procedures and Default Values.
+
+MORE INFORMATION
+================
+
+To see an example showing how to create unique and sequential keys, please look
+at the TasTrade sample application located in the Vfp\Samples\Mainsamp
+directory. In this sample, the NewID() stored procedure has been written and
+stored in the TasTrade database. The following text is taken from the "Behind
+the Scenes" feature of the Tastrade sample:
+
+The NewID() stored procedure creates unique IDs in the system. It returns the
+default value for the primary keys for the Supplier, Products, Employee,
+Category, Shippers, and Orders tables.
+
+Code in NewID() opens Setup.dbf, looks for table alias in the Key_name field,
+reads the current value of the Value field, increments it by 1, and then writes
+it back to Setup.dbf. The value that was read from the Value field before
+incrementing is then returned as the primary key value for a record.
+
+Note that the NewID() stored procedure is also designed to accept an alias as a
+parameter. The same technique could then be used to maintain incrementing values
+that were not being used as primary keys. An example of this is the order_number
+record, which is used to generate order numbers for the Orders table.
+
+You can modify stored procedures by first opening the database with the OPEN
+DATABASE command, and then using the MODIFY PROCEDURES command to bring up an
+editing window. Alternatively, you can use the MODIFY DATABASE command, and then
+click the Stored Procedures button on the toolbar.
+
+The code for NewID() is as follows:
+
+     FUNCTION NewID(tcAlias)
+       LOCAL lcAlias, ;
+             lcID, ;
+             lcOldReprocess, ;
+             lnOldArea
+
+       lnOldArea = SELECT()
+
+       IF PARAMETERS() &lt; 1
+         lcAlias = UPPER(ALIAS())
+       ELSE
+         lcAlias = UPPER(tcAlias)
+       ENDIF
+
+       lcID = ""
+       lcOldReprocess = SET('REPROCESS')
+
+       *-- Lock until user presses Esc
+       SET REPROCESS TO AUTOMATIC
+
+       IF !USED("SETUP")
+         USE tastrade!setup IN 0
+       ENDIF
+       SELECT setup
+
+       IF SEEK(lcAlias, "setup", "key_name")
+         IF RLOCK()
+           lcID = setup.value
+           REPLACE setup.value WITH ;
+                   STR(VAL(ALLT(lcID)) + 1, LEN(setup.value))
+           UNLOCK
+         ENDIF
+       ENDIF
+
+       SELECT (lnOldArea)
+       SET REPROCESS TO lcOldReprocess
+
+       RETURN lcID
+     ENDFUNC
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

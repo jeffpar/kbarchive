@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172873: SMSINST: Messages Not Translated Into Correct Language | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172873: SMSINST: Messages Not Translated Into Correct Language" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172873/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172873/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172873/","publisher":null,"image":null,"headline":"Q172873: SMSINST: Messages Not Translated Into Correct Language","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172873-smsinst-messages-not-translated-into-correct-language">Q172873: SMSINST: Messages Not Translated Into Correct Language</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172873
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup smsinst
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have selected multiple languages during Systems Management Server
+Installer Setup, installation error messages are displayed in French rather than
+the locale specified. The languages affected include Danish, Dutch, Finnish,
+Norwegian, Portuguese, and Swedish.
+
+German, Spanish, Italian, English, and French have correctly translated messages.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following procedure to manually edit
+Installer messages for the affected languages:
+
+1. On the Edit menu, click Installer Messages.
+
+2. From the Language Name list box, select the appropriate language.
+
+3. In the Messages list, select the first message. Note that the corresponding
+  message text appears to the right.
+
+4. Edit the Message Text field to reflect the correct translation for the
+  specified language.
+
+5. Repeat step 4 for each message.
+
+After you complete this procedure, this information is saved in the Smsinstl.ini
+file located in the Windows or Winnt directory. You should save the appropriate
+sections as a template so that you do not need to repeat this procedure if
+Systems Management Server Installer is reinstalled or installed on additional
+reference computers. To save it as a template, perform the following steps:
+
+1. Locate the Smsinstl.ini file in the %SYSTEMROOT% directory (that is, the
+  Winnt directory on computers running Windows NT Systems or the Windows
+  directory on computers running Windows 95 or Windows 3.x).
+
+2. Back up the Smsinstl.ini file to a safe place.
+
+3. Open the backup version of the file in a text editor such as Notepad.
+
+4. Note the sections labeled [Languagex]. Each section contains the Installer
+  messages for that specific locale.
+
+5. If the Installer is installed again, the sections for the affected languages
+  could be cut from this backup and pasted into the new Smsinst.ini file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer 1.0. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms smsinst multiple
+
+======================================================================
+Keywords          : kbenv kbsetup smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

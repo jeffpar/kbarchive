@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288141: PRB: Access Driver Window Doesn’t Appear for System or User DSN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288141: PRB: Access Driver Window Doesn’t Appear for System or User DSN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288141/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288141/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288141/","publisher":null,"image":null,"headline":"Q288141: PRB: Access Driver Window Doesn’t Appear for System or User DSN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288141-prb-access-driver-window-doesnt-appear-for-system-or-user-dsn">Q288141: PRB: Access Driver Window Doesn’t Appear for System or User DSN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288141
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.5,2.6,2000,2000 SP1,4.0
+Operating System(s): 
+Keyword(s): kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC260
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Access, version 4.0, used with:
+   - Microsoft Windows versions 2000, 2000 SP1 Professional 
+   - Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+   - Microsoft Windows versions 2000, 2000 SP1 Server 
+- Microsoft Data Access Components versions 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add a system or user data source name (DSN) to a Microsoft
+Access database, the ODBC Microsoft Access Setup window may not appear after you
+select Microsoft Access driver from the drivers listed in the Create New Data
+Source window.
+
+CAUSE
+=====
+
+This problem is caused by the following invalid registry entries:
+
+  HKEY_LOCAL_MACHINE\Software\ODBC\ODBC.INI\Engines\Jet
+  HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\Engines\Jet
+
+
+RESOLUTION
+==========
+
+To resolve this issue, delete these registry keys if they are found on your
+system.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Registry Editor (RegEdit.exe or RegEdt32.exe).
+
+2. Locate one of the following keys:
+
+   - HKEY_LOCAL_MACHINE\Software\ODBC\ODBC.INI
+
+   - HKEY_CURRENT_USER\Software\ODBC\ODBC.INI
+
+3. Add a new key Engines underneath the above selected key.
+
+4. Add a new key Jet underneath the newly created key Engines.
+
+5. Start ODBC Administrator.
+
+6. Click either the User DSN or System DSN tab and then click Add to create a
+  new DSN for an Access database.
+
+7. Select Microsoft Access driver from the Create New Data Source window, and
+  then click Finish. You are returned to the original ODBC Administrator
+  window, instead of to a new ODBC Microsoft Access Setup window.
+
+Additional query words: access dsn setup
+
+======================================================================
+Keywords          : kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC260 
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch
+Version           : :2.5,2.6,2000,2000 SP1,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

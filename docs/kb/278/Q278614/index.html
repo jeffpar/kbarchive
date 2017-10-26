@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/278/Q278614/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/278/Q278614/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/278/Q278614/","publisher":null,"image":null,"headline":"Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q278614-xadm-event-8285-when-replicating-mailboxes-from-exch55-to-ad">Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q278614
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 12-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you set up the Active Directory Connector (ADC) to replicate mailboxes
+from Exchange Server 5.5 to Active Directory, the Properties' General tab that
+shows the home server for the mailbox for the account is not displayed on some
+user accounts.
+
+In addition, the following event may be reported in the application event log:
+
+  Event Type: Warning
+  Event Source: MSADC
+  Event Category: (1)
+  Event ID: 8285
+  Date: 10/27/2000
+  Time: 5:15:28 PM
+  User: N/A
+  Computer: Computername
+  Description:
+  ADC will not replicate from cn=Mailbox,cn=Recipients,ou=Sitename,o=OrgName to
+  CN=Mailbox,OU=Users,DC=Domain,DC=local because both objects are not mailbox
+  enabled. The source object is a mailbox. The target object is either a
+  Contact or a mail enabled user. If this is a problem, consider making the
+  Connection Agreement an Inter-Organizational Connection Agreement.
+  (Connection Agreement 'Exchange to Windows' #540)
+
+  For more information, click http://www.microsoft.com/contentredirect.asp.
+
+CAUSE
+=====
+
+This issue may occur if the Windows 2000 account already has an e-mail address
+associated with it.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start the Active Directory Users and Computers snap-in, right-click the
+  Windows 2000 account, and then click Properties.
+
+2. Click the General tab, clear the E-mail box, and then click OK.
+
+3. Open the Active Directory Connector snap-in, and click the recipient
+  Connection Agreement that is used to replicate that mailbox from Exchange
+  Server 5.5 to Active Directory.
+
+4. Right-click Connection Agreement, and then click Replicate Now.
+
+5. Allow enough time for the replication to occur.
+
+Additional query words: adc ca app log exch2kp2w AD
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

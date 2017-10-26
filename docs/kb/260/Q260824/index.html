@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260824/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260824/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260824/","publisher":null,"image":null,"headline":"Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260824-changing-caps-or-client-connection-accounts-may-orphan-clients">Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260824
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbnetwork kbtool kbsms200
+Last Modified: 12-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When transitioning Client Access Points (CAP) or client connection accounts
+within a site, Systems Management Server (SMS) clients may be orphaned.
+
+CAUSE
+=====
+
+This issue can occur because within a site, clients use the CAP to check their
+assignments and refresh site configuration data. Clients refresh this
+information on a set schedule (approximately once a day) or you restart the
+computer. If the administrator removes all of the CAPs that a client can use, or
+removes the client connection accounts, the clients are not able to connect to a
+CAP, and so are not able to send inventory data or receive new advertisements.
+
+If the administrator removes all of the old CAPs and then adds new ones, the
+existing clients have the "old" CAP list. Similarly, if the administrator
+removes all of the old client connection accounts and then adds new ones, the
+clients have the old client connection accounts and are unable to connect to any
+CAPs.
+
+If a site has Windows Networking Logon Client Installation enabled, and is
+orphaned for one of the previous reasons, they are able to get the new list of
+CAPs and connection accounts by authenticating through the SMS Logon Point.
+However, for sites that do not have Windows Networking Logon Client Installation
+enabled, the clients do not authenticate through the logon point, and are unable
+to regain connectivity to the CAP.
+
+WORKAROUND
+==========
+
+To work around this issue and avoid this situation, gradually transition from
+the old CAPs to the new CAPs or from the old client connection accounts to the
+new client connection accounts. When you decide how long the transition should
+take, consider how long clients in the site can be disconnected from the network
+under normal conditions (for example, over the weekend, overnight, or during a
+holiday break). During this transition, have both the old and new CAPs or the
+old and new client connection accounts enabled, and permit sufficient time for
+the clients to update their configuration with the new CAP list or client
+connection account list. After the clients have received the updates, remove the
+old CAPs or client connection accounts.
+
+MORE INFORMATION
+================
+
+For additional information about related topics, click the article numbers below
+to view the articles in the Microsoft Knowledge Base:
+
+  Q237759 SMS: Avoiding Client Lockouts When Using Client Connection Accounts
+
+  Q236052 SMS: Recovering When a client Connection Account Is Locked Out
+
+  Q227033 SMS: Changing SMSClient_SiteCode Password Can Cause Lockouts
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

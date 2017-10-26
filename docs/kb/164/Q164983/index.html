@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164983/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164983/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164983/","publisher":null,"image":null,"headline":"Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164983-howto-do-asynchronous-wininet-with-mfc-classes">Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164983
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:4.0; winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbIE400 kbInternet kbMFC kbVC500 kbVC600
+Last Modified: 17-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Internet Explorer (Programming) version 4.0 
+- Microsoft Windows Internet Services (WinInet) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MFC WinInet classes (CInternetSession, CInternetConnection, and so forth)
+are not designed to be used with asynchronous WinInet connections or file
+transfer. Instead, developers looking for asynchronous-like behavior in their
+MFC WinInet application should implement separate synchronous WinInet sessions
+in secondary threads.
+
+MORE INFORMATION
+================
+
+A WinInet application creates an asynchronous WinInet session by using
+INTERNET_FLAG_ASYNC in the last parameter of the CInternetSession constructor,
+dwFlags.
+
+Because some Internet operations may take a long period of time to complete, it
+is often desirable to make asynchronous WinInet calls, which return control to
+the application and run the operation in the background. This allows the
+application's user interface to continue to function. In addition, the
+application can display status updates on a lengthy download or even allow the
+user to halt an operation while it is executing. In this case, the recommended
+method for an MFC WinInet application is to not use INTERNET_FLAG_ASYNC in
+constructing the CInternetSession. Instead, for each necessary concurrent
+session, a secondary thread is spawned from the main thread. Each secondary
+thread is responsible for creating a new CInternetSession object without the
+INTERNET_FLAG_ASYNC flag and then performing any needed operations on that
+synchronous session, such as making an FTP connection and then downloading a
+file.
+
+In some cases however, true asynchronous WinInet is really the desired goal. If
+this is the case, developers are encouraged to abandon their use of the MFC
+WinInet classes and make calls to the WinInet API directly. You can get more
+information about this from the Internet Client SDK at:
+
+  http://www.microsoft.com/msdn/sdk/inetsdk/help/default.htm
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbIE400 kbInternet kbMFC kbVC500 kbVC600 
+Technology        : kbVCsearch kbIEsearch kbAudDeveloper kbSDKIESearch kbSDKIE400 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS:4.0; winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

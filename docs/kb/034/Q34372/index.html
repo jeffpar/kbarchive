@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34372: Unresolved Externals Link Errors for OS/2 Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34372: Unresolved Externals Link Errors for OS/2 Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34372/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34372/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34372/","publisher":null,"image":null,"headline":"Q34372: Unresolved Externals Link Errors for OS/2 Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34372-unresolved-externals-link-errors-for-os2-calls">Q34372: Unresolved Externals Link Errors for OS/2 Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34372
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 20-OCT-1988
+
+Question:
+
+Why do I get unresolved externals for all of my API calls when I link
+object files produced by the C Version 5.10 compiler?
+
+Response:
+
+You can control the OS/2 files to include by defining certain symbols
+in your source code. A few of the more common ones are listed below:
+
+#define INCL_BASE        /*  all OS/2 base definitions        */
+#define INCL_DOS         /*  OS/2 DOS kernel                  */
+#define INCL_SUB         /*  VIO, keyboard, mouse functions   */
+#define INCL_DOSERRORS   /*  OS/2 errors                      */
+
+One or more of the above definitions should be followed by the
+following:
+
+#include &lt;os2.h&gt;
+
+The above #defines and #include preprocessor directives will start a
+chain reaction of #defines and #includes that will define the API
+functions in the respective categories of functions. You can follow
+this series to determine the minimum prototypes required for the API
+functions called by your application.
+
+If the proper constant is not defined in your source code above the
+line where you include OS2.H, there will be no prototypes for API
+functions.
+
+All of the API functions must be declared with the Pascal calling
+convention. If there are no prototypes to tell the compiler to use the
+Pascal calling convention, the compiler will use the default C calling
+convention. The C calling convention will place an underscore (_) in
+front of each function called; therefore, each function will be
+incorrectly named, resulting in unresolved externals at link time. The
+Pascal calling convention does not place an underscore in front of
+each function, so if the correct prototypes are given, the linker will
+resolve all of the references to the API functions in the DOSCALLS.LIB
+library.
+
+This information is documented in the README.DOC file that comes with
+Microsoft C Version 5.10.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

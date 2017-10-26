@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138364: Windows NT Partitioning Rules During Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138364: Windows NT Partitioning Rules During Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138364/","publisher":null,"image":null,"headline":"Q138364: Windows NT Partitioning Rules During Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138364-windows-nt-partitioning-rules-during-setup">Q138364: Windows NT Partitioning Rules During Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138364
+Product(s): Microsoft Windows NT
+Version(s): 2000,3.1,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft BackOffice Small Business Server 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During the installation of Windows NT, Setup determines the best partitioning
+scheme to use based on the existing partition table entries and where you choose
+to install Windows NT. Windows NT Setup restraints restrict the boot partition
+of up to 4 GB. The limit may be smaller depending on disk geometry. The actual
+value that is used as the limit is whatever Setup believes to be 1024 cylinders
+worth of disk space. Sometimes this is 1 GB, 2 GB, or 4 GB, but can be some
+other value depending on the make, model, and configuration of the hard disk
+adapter in use. This is the amount of space with which the text-mode portion of
+the installation can work. From this amount, you can create partitions that do
+not exceed 4 GB because the partition must first be formatted FAT and this file
+system has a limit to 4 GB.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q119497 Boot Partition Created During Setup Limited to 4 Gigabytes
+
+  Q224526 Windows NT 4.0 Supports Maximum of 7.8-GB System Partition
+
+These articles explains rules you should consider before installing Windows NT on
+computers that contain large hardware RAID-5 drive arrays if you want to use the
+full contiguous capacity of these large arrays after Windows NT is installed.
+
+MORE INFORMATION
+================
+
+When you use a Hardware RAID-5 configuration, it is very important to understand
+how Windows NT partitions your drive during Setup in order to maintain maximum
+contiguous capacity of the large Array for user data after Windows NT is
+installed. Setup follows these rules:
+
+Rule 1
+------
+
+If no partitions pre-exist on the drive, Setup makes the primary partition the
+size you specify for Windows NT (up to 4GB).
+
+Rule 2
+------
+
+If a primary partition already exists, and you choose to install Windows NT in an
+unformatted free space, you are prompted for the size of the partition to create
+(up to 4 GB). After you choose the partition size, Setup creates the largest
+extended partition possible (up to 7.8 GB if using a 63 sectors/track, 255
+tracks/cylinder translation scheme) and creates a logical drive within the
+extended partition of the size you choose. After Windows NT is installed, the
+unused extended partition space can be used for additional logical drives.
+
+Rule 3
+------
+
+If a primary and extended partition already exist and free space in the extended
+partition is selected, Windows NT creates a new logical drive of the size
+specified by you.
+
+Rule 4
+------
+
+If a primary and extended partition already exist and free space is available and
+selected outside of the extended partition, Windows NT creates another primary
+partition of the size the you choose (up to 4GB) for Windows NT to be installed
+in.
+
+There are two possible workarounds:
+
+- Prior to installing Windows NT, use MS-DOS FDISK to create an extended
+  partition of 250 MB, then create a logical drive of 250 MB within the
+  extended partition. When you install Windows NT, select this partition as the
+  target to install Windows NT in.
+
+  -or-
+
+- Install Windows NT into the first primary MS-DOS FAT partition. After Windows
+  NT is installed, run Disk Administrator and create a second primary partition
+  of 250 MB. Re-install Windows NT into this second primary partition and then
+  delete the first Windows NT installation from the first primary MS-DOS
+  partition.
+
+EXAMPLE
+-------
+
+You have four 2-GB drives configured in a hardware RAID-5 configuration for a
+total capacity of 6 GB and want a 5.5-GB NTFS partition for user data after
+Windows NT is installed. You have MS-DOS pre-installed on a 250-MB primary
+partition prior to installing Windows NT and want to keep this intact. You
+decide to install Windows NT into a separate NTFS partition and create a 250-MB
+partition from free space during Windows NT Setup.
+
+Using rule 3 above, Windows NT creates an extended partition of 4 GB, then
+creates a 250-MB logical drive within to install Windows NT on. After Windows NT
+is installed, Disk Administrator shows the following:
+
+  C:   250   MB FAT
+  D:   250   MB NTFS (logical drive)
+     3.750   GB extended partition space (free)
+     1.750   GB Free space
+     -----
+     6.0     GB total usable space in hardware raid-5 configuration.
+
+The problem is that the 2 free spaces cannot be combined to equal the 5.5-GB
+partition space wanted for user data.
+
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinNTS350search kbWinNTS310search kbAudDeveloper kbWinNT310Search kbWinNTW310Search kbSBServSearch kbWinAdvServSearch
+Version           : :2000,3.1,3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

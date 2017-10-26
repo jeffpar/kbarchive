@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172215: How to Force 128-bit Data Encryption for RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172215: How to Force 128-bit Data Encryption for RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172215/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172215/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172215/","publisher":null,"image":null,"headline":"Q172215: How to Force 128-bit Data Encryption for RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172215-how-to-force-128-bit-data-encryption-for-ras">Q172215: How to Force 128-bit Data Encryption for RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172215
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetwork dun win95 kbDialUp
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+With the release of the 128-bit Service Pack 3 (SP3) for Windows NT 4.0, RAS
+clients can now negotiate 128-bit RAS data encryption with a Windows NT 4.0 RAS
+server. Normal RAS data encryption is 40-bit. RAS clients that can take
+advantage of 128-bit data encryption are Windows NT Server or Workstation 4.0
+with SP3 128-bit and Windows 95 Dial-Up Networking 1.2 128- bit.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To enable 128-bit RAS data encryption on an NT 4.0 SP3 128-bit RAS server, use
+the following steps:
+
+1. in Control Panel, double-click Network , and then click Services.
+
+2. Click Remote Access Service, and tjem click Properties.
+
+3. Click Network, and then click "Require Microsoft encrypted authentication".
+
+4. Click "Require data encryption", and then click OK.
+
+5. Click Continue, and then click Close.
+
+6. Click No when you receive a prompt to restart the computer.
+
+7. Start Registry Editor (Regedit.exe or Regedt32.exe).
+
+8. Navigate to the following registry subtree:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\PPP\COMPCP
+
+9. Click Edit, click Add Value, and then enter the following information:
+
+  Value Name: "ForceStrongEncryption" (without the quotation marks)
+  Value Type: "DWORD" (without the quotation marks)
+  Value Data: "1" (without the quotation marks)
+
+10. Exit Registry Editor, and then restart the computer.
+
+With 128-bit RAS encryption enabled, you will see one or more event log messages
+in Event Viewer when RAS users connect using RAS or PPTP. If the RAS client
+supports 128-bit RAS data encryption, the computer may log the following event:
+
+  Event ID: 20107
+  Source: RemoteAccess
+  Description: The user RAS connected to port COM1 using strong encryption.
+
+If the RAS client does not support 128-bit RAS data encryption, the computer may
+log the following event:
+
+  Event ID: 20077
+  Source: RemoteAccess
+  Description: An error occurred in the Point to Point Protocol module on port
+  COM1. The remote computer does not support the required encryption type.
+
+A Windows 95 client that fails with the above event log may receive the following
+error message:
+
+  Dial-Up Networking
+  Error 629: You have been disconnected from the computer you dialed.
+  Double-click the connection to try again.
+
+A Windows NT client that fails with the above event log may receive the following
+error message:
+
+  Error Connecting to RAS server
+  Disconnected.
+  Error 629: The port was disconnected by the remote machine.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q169895 Enabling 128-bit Encryption for Routing and Remote Access
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork dun win95 kbDialUp 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

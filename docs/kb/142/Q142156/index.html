@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142156/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142156/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142156/","publisher":null,"image":null,"headline":"Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142156-prb-cannot-see-objects-on-back-tabs-if-using-vb-sstab-control">Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142156
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe600 kbVBp400
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SSTAB control is used in Visual Basic 4.0 to allow controls to be placed on
+different tabs and seen when the user clicks that tab. However, when using
+Source Code Control (SCC) in Visual Basic, if the form that the tab control is
+on is not checked out (read only), then only objects on the top level tab are
+seen no matter what tab is selected. This occurs in design mode.
+
+CAUSE
+=====
+
+Enabling Visual SourceSafe through the ADD-INS Manager forces Visual Basic into
+Strict read-only mode. The SSTAB control relies on being able to change the
+properties of the form when you click different tabs in the control. When Visual
+Basic is in strict read-only mode, it can't display the objects on the back tabs
+because Visual Basic won't allow changes to the form. For more information about
+how the SSTAB control displays child controls, please refer to the following
+article in the Microsoft Knowledge Base:
+
+  Q150417 PRB: Read-Only SSTab Does Not Display Child Controls Properly
+
+
+RESOLUTION
+==========
+
+The form can be checked out and will function normally in design mode. Also,
+removing Source Code Control from the ADD-INs Manager will allow the control to
+function properly.
+
+Another workaround would be to get the file from the Visual SourceSafe explorer
+and check the Make writable option on the get dialog box, then quit and restart
+Visual Basic.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This is a limitation of the SSTAB control in Visual Basic. There is no way to
+address this behavior in Visual SourceSafe. The tab control would have to be
+re-written so that it doesn't rely on changing the Forms properties to display
+different tabs.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe600 kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

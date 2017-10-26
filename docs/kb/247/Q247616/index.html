@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247616/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247616/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247616/","publisher":null,"image":null,"headline":"Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247616-xadm-error-1025-appears-approximately-every-15-seconds">Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247616
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 09-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While your computer is running Microsoft Exchange Server 5.5, the following
+event may be logged in the Windows NT Event Viewer application event log every
+15 seconds or so:
+
+  Event ID: 1025
+  Source: MSExchangeIS Private
+  Type: Warning
+  Category: Transport
+  Description: An error occurred. Function name or description of problem:
+  EcGetRestriction
+
+CAUSE
+=====
+
+This behavior may occur when the data integrity of the information store has
+become corrupted.
+
+One possible cause of this problem is the number of times any particular search
+folder is added to and deleted from the ptagSearchBackLinks list, which is a
+list of information store folders in Exchange Server that is searched by the
+client. Search folders are at times added to the list more than once, but not
+all of the instances are deleted when the search is complete. This problem may
+occur when you perform a search on folders in the information store.
+
+RESOLUTION
+==========
+
+To resolve this issue, repair the damage by using the Isinteg utility with the
+-fix parameter on the information store. The command line for the Isinteg
+utility in Exchange Server 5.5 is the following:
+
+  isinteg -fix -pri -test alltests
+
+It is also possible to resolve this problem either using the isinteg -fix
+-pri-test search command, or by performing an offline defragmentation.
+
+To keep the problem from recurring, install the latest service pack for Exchange
+Server 5.5.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+5.5.This problem was corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.5.
+
+For information on obtaining this service pack, query on the following word in
+the Microsoft Knowledge Base, without the spaces:
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+There are two types of folders: search folders and normal folders. Search
+folders are the folders that clients create when they perform a search of a
+folder and its subfolders. The search folder contains information such as the
+folders that are being searched, the messages that meet the search conditions,
+and so on.
+
+On the normal folders, there is a property called ptagSearchBackLinks that lists
+all of the search folders that reference this normal folder. When items in the
+folder change (when messages are added, modified, or deleted), the folder must
+notify the search folder through the ptagSearchBackLinks list.
+
+The problem occurs when these search folders are created (when the client runs a
+'Find' procedure), and the search folder is added to the ptagSearchBackLinks
+list more than once. However, when the search folders are deleted (when the
+client closes the 'Find' dialog box), the folders are not necessarily removed
+from the ptagSearchBackLinks list the same number of times that they were added.
+Consequently, when the items in the normal folders change, they attempt to
+notify a search folder that does not exist, generating Event ID 1025.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

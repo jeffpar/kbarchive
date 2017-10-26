@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28442: OS/2 Protected Mode Restrictions for BASIC Compiler 6.00/6.00b | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28442: OS/2 Protected Mode Restrictions for BASIC Compiler 6.00/6.00b" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28442/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28442/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28442/","publisher":null,"image":null,"headline":"Q28442: OS/2 Protected Mode Restrictions for BASIC Compiler 6.00/6.00b","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28442-os2-protected-mode-restrictions-for-basic-compiler-600600b">Q28442: OS/2 Protected Mode Restrictions for BASIC Compiler 6.00/6.00b</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28442
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 2-FEB-1990
+
+The following is a list of restrictions under MS OS/2 protected mode
+for Microsoft BASIC Compiler Versions 6.00 and 6.00b and Microsoft
+BASIC Professional Development System (PDS) Version 7.00:
+
+ 1. Programs using statements that refer directly to addresses in the
+    machine's physical memory may need modification when run in
+    protected mode, for example, CALL ABSOLUTE, DEF SEG, PEEK, POKE,
+    BLOAD, BSAVE, VARPTR, and VARSEG.
+
+ 2. Graphics are limited to screens 1 and 2. EGA and VGA graphics are
+    not supported in protected mode.
+
+ 3. Except for BEEP, no sound is supported. SOUND or PLAY statements
+    are not allowed in protected mode. As a workaround, you can make
+    an OS/2 CALL to create a sound with a specified frequency and
+    duration.
+
+ 4. Light pens and joysticks are not allowed in protected mode.
+
+ 5. CALL INT86, INT86OLD, INT86X, INTERRUPT, and INTERRUPTX are not
+    available in protected mode.
+
+ 6. COLOR is ignored in Screen 1 in protected mode.
+
+ 7. INP and OUT are not available in protected mode.
+
+ 8. IOCTL and IOCTL$ are not available in protected mode.
+
+ 9. PALETTE [USING] is not available in protected mode.
+
+10. WAIT is not available in protected mode.
+
+11. If a program in real mode is using the serial communications port
+    (COM1 or COM2), then you cannot use that port in protected mode at
+    the same time. This is an OS/2 restriction. The reverse is also
+    true: if a program in protected mode is using the communications
+    port (COM1 or COM2), then you cannot use that port in real mode at
+    the same time.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

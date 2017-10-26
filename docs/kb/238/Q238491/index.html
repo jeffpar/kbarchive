@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238491/","publisher":null,"image":null,"headline":"Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238491-xcon-exchange-mta-mimeinternet-x400-enhanced-relay---mixer">Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238491
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5,5.5 SP3
+Operating System(s): 
+Keyword(s): kbFEA exc55 exc55sp3 EXC55SP3Fea
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a large community using RFC 822-based protocols, Simple Mail Transfer
+Protocol (SMTP), for mail services, who may want to communicate with users of
+the Interpersonal Messaging System (IPMS) provided by X.400 systems. The
+Multipurpose Internet Mail Extensions (MIME) Internet X.400 Enhanced Relay
+(MIXER) defines a method for mapping message formats between RFC 822/MIME and
+X.400.
+
+MORE INFORMATION
+================
+
+Possible Configurations
+-----------------------
+
+- A "gateway" between X.400 and SMTP networks. It is not a requirement that
+  custom recipients be set up to map recipient addresses.
+
+- Routing X.400 messages over an Internet connection, or SMTP messages over an
+  X.400 Connector.
+
+- Inter-working with other mail systems that use the RFC 822 Domain Defined
+  Attribute (DDA) to encapsulate SMTP addresses. The MIXER message transfer
+  agent (MTA) understands this DDA type, and also uses it (in place of the SMTP
+  DDA type) when sending a message out of the site.
+
+Address Mapping
+---------------
+
+The MTA MIXER supports four types of address mapping:
+
+- GAL: Use of the Exchange Server global address list (the current method). If
+  a custom recipient or a mailbox exists that can map the address, then this
+  mapping is taken, and MIXER is not invoked.
+
+- Encapsulation: An SMTP address can be provided by adding the DDA type RFC 822
+  to the site's X.400 address. The value of the DDA is the SMTP address. For
+  example, c=co; a=admd, p=Org,
+  dda:rfc-822=&lt;user&gt;@&lt;internet_address&gt;.com. An X.400 address can
+  be encapsulated in an SMTP address, as in the current product.
+
+- MCGAM Mapping: This is the MIXER Conformant Global Address Mapping. It is
+  implemented in Exchange Server as a plain text file called Mcgam.in.txt,
+  which is placed in the MTA's run directory (normally Mtadata). In this file,
+  the administrator specifies exactly how addresses are to be mapped, by
+  specifying domains and subdomains, and indicating how they are mapped to the
+  Country, ADMD, PRMD, Organization, and OrgUnit values, and vice versa.
+
+- Algorithmic Mapping: RFC 2156/MIXER also specifies how SMTP address strings
+  can be automatically mapped to X.400 addresses, for example, c=de; a=admd;
+  p=microsoft; o=pss; s= &lt;user_alias&gt; is automatically mapped to
+  &lt;user_alias&gt;@pss.microsoft.admd.de. If this mapping is not the one you
+  want, then the administrator must define one in the MCGAM File.
+
+For additional information, please refer to RFC 2156. This feature is available
+in the latest service pack for Exchange Server version 5.5. For additional
+information, click the following article number to view the article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+This feature was first included in Exchange Server 5.5 Service Pack 3.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFEA exc55 exc55sp3 EXC55SP3Fea 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

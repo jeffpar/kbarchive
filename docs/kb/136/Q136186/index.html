@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136186/","publisher":null,"image":null,"headline":"Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136186-doc-incorrect-description-of-array-created-by-adbobjects">Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136186
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbdocfix
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro Help file gives the following incorrect information for
+ADBOBJECTS():
+
+  A two-dimensional array is created when you specify RELATION for cSetting.
+  Each row in the two-dimensional array corresponds to a relationship in the
+  database. The first column in an array row contains the name of the parent
+  table, and the second column in an array row contains the name of the child
+  table. The third column contains the name of the index tag for the parent
+  table and the fourth column contains the name of the index tag of the child
+  table.
+
+This documentation error has been fixed in Visual FoxPro 5.0 and 3.0b for
+Windows.
+
+MORE INFORMATION
+================
+
+Actually, the child table's information is displayed in the columns before the
+parent table's information is displayed. Therefore, the information in the
+ADBOBJECTS() topic should say:
+
+  A two-dimensional array is created when you specify RELATION for cSetting.
+  Each row in the two-dimensional array corresponds to a relationship in the
+  database. The first column in an array row contains the name of the child
+  table, and the second column in an array row contains the name of the parent
+  table. The third column contains the name of the index tag for the child
+  table and the fourth column contians the name of the index tag of the parent
+  table.
+
+Additional query words: docerr VFoxWin 3.00b 5.00
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

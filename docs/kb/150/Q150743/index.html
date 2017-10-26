@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150743/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150743/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150743/","publisher":null,"image":null,"headline":"Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150743-cannot-use-diskcopy-command-on-identical-35-inch-disk-drives">Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150743
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kberrmsg kbhw win95 win98 kbHardware
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run the DISKCOPY command from the Run command on the Start menu
+to copy from one 3.5-inch floppy disk drive to another identical drive, you may
+receive the following error message:
+
+  Unrecoverable read error on drive A: side 0, track 64 Unrecoverable write
+  error on drive B: side 0, track 64 Target diskette may be unusable.
+
+RESOLUTION
+==========
+
+To work around this behavior, use any one of the following methods:
+
+Method 1
+--------
+
+Run the DISKCOPY command in MS-DOS mode. To do so, follow these steps:
+
+1. Click Start, and then click Shut Down.
+
+2. Click "Restart the computer in MS-DOS mode," and then click Yes.
+
+3. At the command prompt, type the DISKCOPY command you want to use. For
+  example, type the following line, and then press ENTER:
+
+  " diskcopy a: b: " (without the quotation marks)
+
+4. When the copy operation is finished, type the following line and then press
+  ENTER:
+
+  " exit " (without the quotation marks)
+
+Method 2
+--------
+
+Disable protected-mode support for the floppy disk controller. This causes the
+floppy disk drives to operate in MS-DOS Compatibility mode. To do so, follow
+these steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+  System.
+
+2. Click the Device Manager tab.
+
+3. Double-click the Floppy Disk Controllers branch to expand it, and then
+  double-click Standard Floppy Disk Controller.
+
+4. Click the Original Configuration (Current) check box to clear it, and then
+  click OK.
+
+5. When you are prompted to restart your computer, do so.
+
+Method 3
+--------
+
+Manually copy the information from the source disk to the destination disk.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem does not occur on computers with one 3.5-inch floppy disk drive and
+one 5.25-inch floppy disk drive, or on computers with two 5.25- inch floppy disk
+drives.
+
+
+======================================================================
+Keywords          : kberrmsg kbhw win95 win98 kbHardware 
+Technology        : kbWin95search kbWin98search kbWin95 kbWin98
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

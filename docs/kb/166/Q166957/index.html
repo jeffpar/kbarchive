@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166957/","publisher":null,"image":null,"headline":"Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166957-wd97-problems-with-mail-merge-main-documents-saved-as-rtf">Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166957
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop winword word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After a mail merge main document has been saved in Rich Text Format (RTF) or
+Word 6.0/95 format, you may experience one or both of the following problems.
+
+Case 1: Error Message Opening the File
+--------------------------------------
+
+When opening the file, you may receive the following message:
+
+  &lt;file name&gt;.rtf is a mail merge main document. Word cannot find its
+  data source.
+
+This message may be followed by:
+
+  &lt;file name&gt;.rtf is a mail merge main document. Word cannot find its
+  header source.
+
+NOTE: These error messages seem to occur most often when opening a mailing label
+main merge document in Microsoft Word 6.x for the Macintosh or Microsoft Word
+for Windows 95, version 7.x. But they may occur at other times.
+
+Case 2: Merge Type Changed
+--------------------------
+
+Once the file is opened, the merge type of the main document is changed to "Form
+Letters."
+
+NOTE: This problem occurs regardless of which merge type the mail merge main
+document is set to initially.
+
+WORKAROUND
+==========
+
+To work around this problem, use the appropriate method for your situation.
+
+Method 1: If You Receive the Error Message When You Open the File
+-----------------------------------------------------------------
+
+To find the data source, follow these steps:
+
+1. Click Find Data Source.
+
+2. Select the data file associated with the mail merge main document.
+
+3. Click Open.
+
+4. If the following message appears:
+
+  &lt;file name&gt;.rtf is a mail merge main document. Word cannot find its
+  header source.
+
+  click Options.
+
+5. In the next dialog box, click Remove Data/Header Source.
+
+Method 2: If the Merge Type Is Changed
+--------------------------------------
+
+Use the appropriate method for your situation.
+
+Form Letters or Catalogs:
+
+For form letters or catalog merge types, follow these steps:
+
+1. On the Tools menu, click Mail Merge.
+
+2. In the Mail Merge Helper, click Create, and then click either Form Letters or
+  Catalog.
+
+  You receive the following message:
+
+  You can change &lt;file name&gt;.rtf from form letters to &lt;merge type&gt;
+  or you can create a new main document.
+
+3. Click "Change Document Type."
+
+  The document "Merge Type" is now shown correctly in the Mail Merge Helper.
+
+Envelopes or Mailing Labels:
+
+For Envelopes or Mailing Labels merge types, follow these steps:
+
+1. On the Tools menu, click Mail Merge.
+
+2. In the Mail Merge Helper, click Create, and then click either Envelopes or
+  Mailing Labels.
+
+  You receive the following message:
+
+  You can change &lt;file name&gt;.rtf from form letters to mailing labels or
+  you can create a new main document.
+
+3. Click "Change Document Type."
+
+  This may activate the Setup button (in step 1 Main Document) which disables
+  the Merge button (in step 3 "Merge the Data with the document"). To perform a
+  mail merge if the Merge Button is disabled, use either of the following
+  methods.
+
+  Use the Mail Merge Toolbar
+  --------------------------
+
+  a. Click Close to close the Mail Merge Helper.
+
+  b. Click the "Merge to New Document" icon on the Mail Merge Toolbar.
+
+  Use the Mail Merge Helper
+  -------------------------
+
+  a. Click Setup.
+
+  b. Select the Product Number and click OK.
+
+  c. Insert your merge fields and click OK.
+
+     You receive the following message:
+
+  This mail merge main document is not empty. Continuing will replace all text
+  in this document with new text.
+
+  d. Click OK.
+
+  NOTE: You may want to save your mail merge main document in Word format to
+  prevent this problem from reoccurring.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the versions of Microsoft Word
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q161978 WD97: RTF Format Given to File Send in Word 6.0/95
+
+  Q162602 WD: Questions About Saving in the Word 6.0/95 File Format
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbinterop winword word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

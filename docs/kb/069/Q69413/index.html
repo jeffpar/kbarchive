@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69413: C1001: Internal Compiler Error: regMD.c, Lines 3101 and 3074 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69413: C1001: Internal Compiler Error: regMD.c, Lines 3101 and 3074" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69413/","publisher":null,"image":null,"headline":"Q69413: C1001: Internal Compiler Error: regMD.c, Lines 3101 and 3074","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69413-c1001-internal-compiler-error-regmdc-lines-3101-and-3074">Q69413: C1001: Internal Compiler Error: regMD.c, Lines 3101 and 3074</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69413
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 buglist6.00a | mspl13_c
+Last Modified: 25-FEB-1991
+
+The Microsoft C Compiler versions 6.00 and 6.00a produce the following
+internal compiler errors when the sample program below is compiled
+with default optimization:
+
+With C 6.00a
+------------
+
+   file.c(5) : fatal error C1001: Internal Compiler Error
+               (compiler file '@(#)regMD.c:1.110', line 3101)
+               Contact Microsoft Product Support Services
+
+With C 6.00
+-----------
+
+   file.c(5) : fatal error C1001: Internal Compiler Error
+               (compiler file '@(#)regMD.c:1.100', line 3074)
+               Contact Microsoft Product Support Services
+
+These errors will occur under any memory model when using any one of
+the following optimizations (although the errors may not occur when
+some of these options are combined):
+
+   /Oa, /Oc, /Od, /Oi, /On, /Op, /Or, /Os, /Ot, /Ow, or /Oz
+
+There are several possible ways to work around these errors:
+
+1. Do not use any of the above options and do not use the default
+   optimization for the module where the error occurs.
+
+2. Add /Oe or /Og; one of these combined with other optimizations
+   may eliminate the problem.
+
+3. Selectively disable optimizations for the particular function that
+   is producing the error through use of the optimize pragma.
+
+4. Rewrite the statement to use an if-else construct instead of the
+   ternary operator.
+
+Microsoft has confirmed this to be a problem in C versions 6.00 and
+6.00a. We are researching this problem and will post new information
+here as it becomes available.
+
+Sample Code
+-----------
+
+/* Compile options needed: none
+*/
+
+void func(unsigned char uch1, unsigned char uch2)
+{
+    uch2 = uch1 ? (unsigned char)'0' : (unsigned char)(uch1 % 24);
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215297/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215297/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215297/","publisher":null,"image":null,"headline":"Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215297-xadm-windows-nt-version-change-rebuilds-exchange-db-indexes">Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215297
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you upgrade the major (that is, Microsoft Windows NT 3.51. to Windows NT
+4.0) or minor version (that is, Windows NT Service Pack 3 to Windows NT Service
+Pack 4) of Windows NT on an Exchange Server computer, the following events are
+logged in the Windows NT Event Viewer application event log:
+
+  Event ID: 172
+  Source: ESE97
+  Type: Error
+  Category: Table/Column/Index
+  Description:
+  'MSExchangeIS ((298))' The database engine is initiating index cleanup of
+  database 'c:\exchsrvr\mdbdata\priv.edb' as a result of an NT version upgrade
+  from '4.0.1381 SP3' to '4.0.1381 SP4'.
+
+  Event ID: 173
+  Source: ESE97
+  Type: Error
+  Category: Table/Column/Index
+  Description:
+  'MSExchangeIS ((298))' The database engine is initiating index cleanup of
+  database 'c:\exchsrvr\mdbdata\priv.edb' as a result of an NT version upgrade
+  to '4.0.1381 SP4'.
+
+  Event ID: 174
+  Source: ESE97
+  Type: Error
+  Category: Table/Column/Index
+  Description:
+  'MSExchangeIS ((298))' Database 'c:\exchsrvr\mdbdata\priv.edb': The secondary
+  index '+Q6749+S3001+Q6748 409' of table 'Folder' will be rebuilt as a
+  precautionary measure after the NT version upgrade of this system.
+
+NOTE: The items surrounded by single quotes in the event IDs above do not always
+match what is listed in the above example.
+
+MORE INFORMATION
+================
+
+The Exchange Server Database engine has detected a potential change (or fix) in
+the sort order for various characters in the newly installed version (major or
+minor) of Windows NT. To prevent any corruption to secondary indexes, the
+Exchange Server Database engine assumes that the sort order has changed and
+initiates the rebuilding of the indexes.
+
+Additional query words: sort order corruption JET
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

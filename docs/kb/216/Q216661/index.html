@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216661: How to Implement a Policy to Set the Date Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216661: How to Implement a Policy to Set the Date Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216661/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216661/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216661/","publisher":null,"image":null,"headline":"Q216661: How to Implement a Policy to Set the Date Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216661-how-to-implement-a-policy-to-set-the-date-format">Q216661: How to Implement a Policy to Set the Date Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216661
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbenv kbYear2000
+Last Modified: 28-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to determine the date format that is displayed to
+users when they log on to a computer.
+
+MORE INFORMATION
+================
+
+A user can configure the date format using the Regional Settings tool in Control
+Panel.
+
+You can apply a policy to a computer to control the date format that is displayed
+to the user (for example, MM/dd/yy or MM/dd/yyyy). The following registry key
+controls the date format:
+
+  Path: HKEY_CURRENT_USER\Control Panel\International
+  Name: sShortDate
+  Type: REG_SZ
+  Default value for U.S. English: MM/dd/yy
+
+The following example shows the different values you can use for this registry
+key, and how the date is displayed for a specified value:
+
+Value          Result
+MM/dd/yy       03/08/98
+M/d/yy         3/8/98
+M/d/yyyy       3/8/1998
+MM/dd/yyyy     03/08/1998
+yy/MM/dd       98/03/08
+dd-MMM-yy      03-Mar-98
+
+Through the use of policies in Windows NT 4.0, you can write a custom .adm file
+and incorporate it into the policy file. For additional information about policy
+files and custom .adm templates, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q185589 Guide To Windows NT 4.0 Profiles and Policies (Part 4 of 6)
+
+You can cut and paste the following information into a file and save it as a
+custom .adm file. After the .adm file is incorporated into the policy, you can
+configure the date format for users.
+
+----------Start of Date Format ADM----------
+CLASS USER
+
+CATEGORY !!DATE
+	KEYNAME "Control Panel\International"
+	
+	POLICY !!ShortDateFormat
+		PART !!DateFormatDesc         EDITTEXT REQUIRED
+		VALUENAME sShortDate
+		END PART
+	END POLICY
+END CATEGORY	; Date
+
+[strings]
+Date="Date"
+ShortDateFormat="Short Date Format"
+DateFormatDesc="Please enter the date mask. For example MM/dd/yyyy"
+----------End of Date Format ADM----------
+
+Additional query words: year y2k hoax user profile
+
+======================================================================
+Keywords          : kbenv kbYear2000 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

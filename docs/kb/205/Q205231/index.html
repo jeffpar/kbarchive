@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q205231: FP: How to Search Using LIKE In SQL Statement For ASP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q205231: FP: How to Search Using LIKE In SQL Statement For ASP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/205/Q205231/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/205/Q205231/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/205/Q205231/","publisher":null,"image":null,"headline":"Q205231: FP: How to Search Using LIKE In SQL Statement For ASP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q205231-fp-how-to-search-using-like-in-sql-statement-for-asp">Q205231: FP: How to Search Using LIKE In SQL Statement For ASP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q205231
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 08-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 2002 
+- Microsoft FrontPage 2000 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194677.
+
+For a Microsoft FrontPage 97 version of this article, see Q190621.
+
+SUMMARY
+=======
+
+This article describes how to search a database using the LIKE parameter in a
+Structured Query Language (SQL) statement in the Database Results Wizard of
+Microsoft FrontPage.
+
+This article assumes that you have a basic knowledge of how to query a database
+using Active Server Pages (ASP) technologies in FrontPage.
+
+MORE INFORMATION
+================
+
+When used in a search, the LIKE clause in SQL can be used to generate a result
+set based on a minimum amount of information typed into the form field of a
+Hypertext Markup Language (HTML) form. For example, if you type "mic%" (without
+the quotation marks) in the form field, the results may include Microsoft,
+microphone, microwave, and so forth.
+
+To use the Database Results Wizard to specify what you want to compare, follow
+thse steps:
+
+1. Open a Web on an Internet Information Services (IIS) Web server and create a
+  new blank page.
+
+2. On the Insert menu, point to Database, and then click Results.
+
+3. In Step 1, choose your Data Source, and then click Next. (For example, click
+  the Northwind sample connection.)
+
+4. In Step 2, click to select Record Source, select the table from which you
+  want to retrieve data, and then click Next. For this example, select the
+  "Employees" table.
+
+5. In Step 3, edit the list of fields that you want to be included in your
+  query.
+
+6. Click More Options.
+
+7. Click Criteria.
+
+8. Click Add.
+
+9. In the Add Criteria dialog box, select the field name you want to compare.
+  For this example, choose "Title".
+
+10. Click the Comparison list, and select "Like" or "Not Like".
+
+11. In the Value box, specify the form field name you will use to search with,
+  and then click OK three times.
+
+12. Click Next twice.
+
+13. In Step 5, click to select the Add Search Form check box to have FrontPage
+  automatically create a search form.
+
+14. Click Finish.
+
+FrontPage will generate a SQL statement like the following:
+
+  SELECT * FROM Employees WHERE (Title LIKE '::Title::')
+
+If you browse to the page and enter "Sales Manager" (without the quotation
+marks), you will see only those records that exactly matched the search string.
+If you enter "Sales%" (without the quotation marks), you will see all records
+that begin with the word "Sales" (without the quotation marks). The resulting
+SQL used by this query would be:
+
+  SELECT * FROM Employees WHERE (Title Like 'Title%')
+
+The precent sign is a wildcard character so that the LIKE string can match
+multiple records.
+
+NOTE: When you first browse the page or if the form field is blank when you
+submit the form, no records from the database will be returned. However, you can
+enter a value of a single precent sign and all records will be returned.
+
+For additional information about SQL queries and FrontPage, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q306430 FP: SQL Syntax Generated by the FrontPage Database Results Wizard
+
+Additional query words: SQL ASP Database LIKE front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPage2000Search kbFrontPage2002Search kbZNotKeyword5
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

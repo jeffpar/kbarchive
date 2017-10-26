@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134251/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134251/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134251/","publisher":null,"image":null,"headline":"Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134251-bug-run-time-changes-to-the-grid-not-saved-correctly">Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134251
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The AddColumn method allows a column to be added to a grid at runtime. However,
+if a column is added between two existing columns and the form is saved using
+the Thisform.Saveas method, the column order of the grid is not saved correctly.
+Altough, at runtime the column appears in the correct order. The column added
+between the existing columns becomes the last column on the grid when the saved
+screen is modified.
+
+WORKAROUND
+==========
+
+Use this command:
+
+     Thisform.&lt;gridname&gt;.column(n).colunmnorder = &lt;number&gt;
+
+Here &lt;number&gt; is the column position you want the newly created column to
+be. Issue this command after you have inserted the column and before using the
+ThisForm.SaveAs command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form called x.
+
+2. In the data environment, add any table.
+
+3. Drag the table from the data environment to the form to create a grid on the
+  form. Set the Name property of the Grid to Grid1.
+
+4. Save the form.
+
+5. Create a program called Testobj.prg, and add this code:
+
+        set safety off
+        do form x
+        x.grid1.name='mygrid'    &amp;&amp; change the default grid name to "mygrid"
+        x.mygrid.columncount=2     &amp;&amp; dimension the column count to 2
+        x.mygrid.column1.width=8
+        x.mygrid.addcolumn(2)    &amp;&amp; add a new column between existing columns
+        x.mygrid.column3.header1.name='HdrItem' &amp;&amp; change the header name
+        x.mygrid.column3.name='colItem'         &amp;&amp; change the column name
+        x.mygrid.colItem.hdrItem.caption='Item' &amp;&amp; change the caption name
+        x.saveas('y')                           &amp;&amp; save the Form as "y"
+        modify form y
+
+6. Run the program. When the program is running, observe the difference between
+  the grid column order of the running form (x) and the modified form (y). The
+  running form contains the new column (ColItem) in the correct order as
+  required by the program, but the modified form does not.
+
+Example Workaround
+------------------
+
+To correct the problem, add the following line of code to Testobj.prg before the
+x.savas('y') command. Then run the program again.
+
+     x.mygrid.colItem.columnorder = 2
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163949/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163949/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163949/","publisher":null,"image":null,"headline":"Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163949-workstation-using-lmhosts-fails-to-logon-if-dc-unavailable">Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163949
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 workstations that log on to a Windows NT account domain that has no
+domain controllers located in the local subnet using LMHOSTS name resolution may
+only select one domain controller to perform logon validation.
+
+CAUSE
+=====
+
+The Windows 95 workstation will fail to be validated if the remote domain
+controller cannot be accessed or fails to respond. When an LMHOSTS file is
+configured with a #PRE #DOM entry, NetBIOS over TCP/IP (NetBT) resolves the name
+successfully using its cache. The Windows 95 workstation will not fall back to
+other name resolution methods including Domain Name System (DNS) or Windows
+Internet Name Service (WINS). If the Domain Controller (DC) is unavailable, this
+results in a single point for client logon failure.
+
+RESOLUTION
+==========
+
+To work around the LMHOSTS #PRE #DOM functionality, entries can be added to the
+LMHOSTS file to provide access to more than one Domain Controller by adding two
+unique names; one for the 1C name (the domain name), and one for each 00 #DOM
+entry (the other Domain Controllers that you want to use for domain logon
+validation). This provides fault tolerance for clients during the logon process,
+because the clients can locate more than one domain controller. It is also
+deterministic, because domain controllers are explicitly listed by address in
+the LMHOSTS file. Those with the shortest available path can be selected for
+logon validation.
+
+The LMHOSTS file in this example contains the following information:
+
+- The IP address and NetBIOS name of the Domain Controller (Primary Domain
+  Controller or Backup Domain Controller)
+
+- The domain name is preceded by the #PRE #DOM: tag. For example:
+
+  200.1.1.1   &lt;PDC computer name&gt; #PRE  #DOM:Domain_name
+
+NOTE: Multiple #DOM entries pointing to DCs will provide additional names that
+can be resolved.
+
+In addition to the above line, you also need to add the following line in the
+LMHOSTS file:
+
+  &lt;IP address&gt;&lt;tab&gt;"DOMAIN NAME  \0x1C" &lt;tab&gt; #PRE
+
+Add one LMHOSTS entry to provide access to the domain controllers by adding the
+1C name. This will enable name resolution at the workstation so that the Domain
+Name will be resolved successfully to the listed domain controllers.
+
+NOTE: The Domain name is limited to 15 characters. If the Domain name is less
+than 15 characters, use spaces to fill it up to 15 characters, then type the
+backslash ('\') and the 0x1C value. The hexadecimal value 1C is appended
+following the Domain name and starts with the sixteenth character (20 characters
+overall). The Domain name must be all upper-case letters and must be inside
+quotation marks. You can verify that the entry has loaded into cache correctly
+by running the nbtstat -c command. You should see the domain name &lt;1C&gt;
+entry in the NetBIOS name cache.
+
+Example LMHOSTS File
+--------------------
+
+In the following example, each IP address is either the PDC or a BDC of MYDOMAIN.
+The first entry lists a Domain Controller not by its machine name, but by its
+domain name with a &lt;1C&gt; in the sixteenth position indicating a domain
+controller. Each subsequent line lists an additional Domain Controller by its
+computer name, with a #DOM entry that links it back to the 1C entry. All lines
+must have the #PRE entry to preload them into the NetBIOS name cache.
+
+123.45.101.20  "MYDOMAIN    \0x1C"  #PRE                   #Domain Name
+123.45.101.21  "A-THIRD-DC"         #PRE  #DOM:MYDOMAIN    #Domain Name
+123.45.220.15  "ANOTHERDC"          #PRE  #DOM:MYDOMAIN    #Domain Name
+
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q119495 List of Names Registered with WINS Service
+
+  Q150800 Domain Browsing with TCP/IP and LMHOSTS Files
+
+MORE INFORMATION
+================
+
+WINS can be used for client name resolution when clients are located on a subnet
+that has no domain controller. This provides fault tolerance for name resolution
+(unlike the LMHOSTS solution, where a #PRE #DOM entry is typically used for a
+single domain controller) because the WINS server provides the Windows 95 client
+with a group name list registered under the "domain &lt;1C&gt;" name in response
+to the name resolution requests. The first domain controller to respond to the
+name query will log the user on to the Windows NT domain. However, this is not a
+deterministic method for name resolution, and it is not possible to select a
+preferred logon Domain Controller. As a result, a distant DC located multiple
+router hops away from the workstation could be selected. This may result in
+significant WAN traffic and extended logon delays.
+
+Additional query words: networking wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : :3.11,3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

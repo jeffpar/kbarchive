@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154272: Non-System Disk or Disk Error on Remote Boot Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154272: Non-System Disk or Disk Error on Remote Boot Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154272/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154272/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154272/","publisher":null,"image":null,"headline":"Q154272: Non-System Disk or Disk Error on Remote Boot Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154272-non-system-disk-or-disk-error-on-remote-boot-client">Q154272: Non-System Disk or Disk Error on Remote Boot Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154272
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a remote boot workstation attempts to boot using the boot block from the
+remote boot server, the following error may occur on the workstation:
+
+  Non-System Disk or Disk Error.
+
+CAUSE
+=====
+
+When a remote boot server prepares the boot block for the workstation, it
+gathers the component files needed for the workstation to boot and have
+connectivity with the network. If some of the required MS-DOS boot files are
+missing or inaccessible, the "non-system disk or disk error" message may occur.
+The same message may be observed when you attempt to boot from an MS-DOS
+formatted floppy disk that does not contain the Msdos.sys or Io.sys files.
+
+RESOLUTION
+==========
+
+Make sure of the following:
+
+1. Make sure that the share \\&lt;Server&gt;\Rplfiles exists and contains the
+  Msdos.sys and Io.sys files.
+
+2. Make sure that the Msdos.sys and Io.sys files do not have any access
+  restrictions on them. On an MS-DOS disk, these files would normally have the
+  read-only, system, and hidden attributes. The procedure for copying these
+  files, as stated in the Microsoft Windows NT Installation Guide, removes
+  these attributes before copying and does not restore them to the files that
+  exist in the \\&lt;Server&gt;\Rplfiles share. Any restrictions on these files
+  will prevent their inclusion in the boot block.
+
+3. If you copied MS-DOS files from an operating system other than MS-DOS, you
+  may need to rename them to Msdos.sys and Io.sys respectively.
+
+MORE INFORMATION
+================
+
+For more information on remote boot, please consult the Microsoft Windows NT
+Installation Guide.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

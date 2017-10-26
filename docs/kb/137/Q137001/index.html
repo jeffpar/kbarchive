@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137001/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137001/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137001/","publisher":null,"image":null,"headline":"Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137001-automatic-mounting-in-real-mode-disabled-in-drivespace-3">Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137001
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you boot your computer to a command prompt, compressed, removable- media
+drives are not mounted. In addition, the physical boot drive is not mounted when
+you boot your previous operating system.
+
+Also, when you change the Automatically Mount New Compressed Drives setting in
+DriveSpace, the Drvspace.ini file is not updated, although the registry is.
+
+
+CAUSE
+=====
+
+DriveSpace 3, which is included with Microsoft Plus!, does not support
+automatically mounting drives in real mode by default.
+
+RESOLUTION
+==========
+
+Mounting Compressed Volumes Manually
+------------------------------------
+
+To work around this behavior, use ScanDisk to mount compressed volumes in real
+mode.
+
+The following example demonstrates how to use ScanDisk in real mode to mount a
+compressed volume on drive A:
+
+1. At the command prompt, type the following command
+
+  c:\windows\command\scandisk.exe a:\&lt;compressed_volume_name&gt;
+
+  where &lt;compressed_volume_name&gt; is the name of the compressed volume file
+  (CVF) on drive A. For example, if the name of the CVF on drive A were
+  Dblspace.000, you would type the following line:
+
+  c:\windows\command\scandisk.exe a:\dblspace.000
+
+2. ScanDisk detects that the CVF has not been mounted and offers to check the
+  host drive. Choose not to check the host drive by clicking No.
+
+3. When you are prompted to mount drive A, click Yes.
+
+4. Quit ScanDisk. The volume on drive A is mounted for the duration of the
+  session.
+
+Enabling Automatic Mounting in Real Mode
+----------------------------------------
+
+To enable automatic mounting of compressed volumes on removable-media drives in
+real mode, follow these steps:
+
+1. In Windows Explorer, use the right mouse button to click the Drvspace.ini or
+  Dblspace.ini file in the root folder of the physical boot disk, and then
+  click Properties on the menu that appears.
+
+2. Click the Read-Only check box to clear it, and then click OK.
+
+3. Double-click the Drvspace.ini or Dblspace.ini file to open it.
+
+4. Change the line that reads
+
+  AutoMount=0
+
+  to read:
+
+  AutoMount=1
+
+5. Save and then close the file.
+
+6. Restart your computer.
+
+WARNING: Modifying the Dblspace.ini or Drvspace.ini file incorrectly can cause
+serious problems that may require you to reinstall Windows 95. Microsoft cannot
+guarantee that problems resulting from incorrect modifications to these files
+can be solved. Edit these files at your own risk.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

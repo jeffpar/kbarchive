@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130963: Summary of Network Intermediate Systems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130963: Summary of Network Intermediate Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130963/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130963/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130963/","publisher":null,"image":null,"headline":"Q130963: Summary of Network Intermediate Systems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130963-summary-of-network-intermediate-systems">Q130963: Summary of Network Intermediate Systems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130963
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-FEB-2002
+
+kbnetwork
+---------
+
+Intermediate Systems; Repeaters, Bridges, Routers, and Gateways, are
+networking devices that facilitate the transmission of packets between the
+source computer and the final destination computer. Although the gateway
+involves all seven levels of the OSI model, these devices are generally
+thought of as functioning at the lowest three levels; Physical, Data Link,
+and Network.
+
+MORE INFORMATION
+================
+
+Repeaters strengthen the physical transmission signal. In analog electronic
+networks, such as Ethernet and Token Ring, the signal is also improved or
+cleaned up by regenerating the square wave that has degenerated as it traveled
+down the wire.
+
+Bridges connect multiple subnets, networks, or rings into one large logical
+network. A bridge maintains a table of node addresses and based on this,
+forwards packets to a specific subnet, reducing traffic on other subnets. In a
+bridged network, there can be only one path to any destination. Otherwise
+packets would circle the network causing network storms.
+
+Routers are more intelligent and use the network address in the frame to decide
+how to best send a packet to its final destination. Some protocol suites provide
+a dynamic client protocol that routers send between themselves to exchange
+information regarding their status and optimal paths between nodes. IPX and its
+client protocol, RIP (Routing Information Protocol) is an example of this.
+
+Gateways are the most intelligent of the intermediate systems. They allow network
+nodes using different protocols to communicate with each other. The gateway
+understands both protocols and receives and disassembles a packet of one
+protocol and then reassembles and transmits it using other protocol.
+
+Definitions
+-----------
+
+Gateway: (All OSI layers)
+
+  Translator. Allows communication between two dissimilar protocols (eg: IPX
+  and NetBEUI) or physical networks (eg: Ethernet and Token Ring).
+
+NOTE: In TCP/IP terminology, a gateway = router.
+
+Router: (Network Layer.)
+
+  Uses the Network address. Protocol independent. Can change between topologies
+  even in the frame size changes between the segments or networks. Breaks-up
+  the network into separate physical segments, filtering out traffic and
+  increasing each segments bandwidth or capacity.
+
+Bridge: (Data Link level.)
+
+  Frame-level, Understands the network adapter address in the packet. Protocol
+  independent. Can change between topologies if the frame size between the
+  networks is the same.
+
+Brouter: A combination device.
+
+  A Bridge with some of the features of a Router.
+
+Repeater: (Physical level)
+
+  Bit-level. Topology and Protocol independent. Strengthens and/or cleans-up
+  the transmission signal.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

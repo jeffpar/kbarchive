@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232449: Sample ASP Code May be Used to View Unsecured Server Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232449: Sample ASP Code May be Used to View Unsecured Server Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232449/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232449/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232449/","publisher":null,"image":null,"headline":"Q232449: Sample ASP Code May be Used to View Unsecured Server Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232449-sample-asp-code-may-be-used-to-view-unsecured-server-files">Q232449: Sample ASP Code May be Used to View Unsecured Server Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q232449</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">4.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">install</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Page</span> <span class="p">(</span><span class="n">ASP</span><span class="p">)</span> <span class="n">sample</span> <span class="n">files</span> <span class="n">on</span> <span class="n">a</span>
+<span class="n">computer</span> <span class="n">running</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="p">(</span><span class="n">IIS</span><span class="p">)</span> <span class="m">4.0</span><span class="p">,</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">visitor</span> <span class="n">may</span> <span class="n">be</span>
+<span class="n">able</span> <span class="k">to</span> <span class="n">use</span> <span class="n">these</span> <span class="n">files</span> <span class="k">to</span> <span class="n">gain</span> <span class="n">access</span> <span class="k">to</span> <span class="k">and</span> <span class="nb">read</span> <span class="n">any</span> <span class="n">known</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">same</span>
+<span class="n">logical</span> <span class="n">disk</span> <span class="k">as</span> <span class="n">the</span> <span class="n">installed</span> <span class="n">ASP</span> <span class="n">code</span><span class="p">,</span> <span class="n">which</span> <span class="n">is</span> <span class="k">not</span> <span class="n">protected</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">the</span>
+<span class="nf">system</span> <span class="n">Access</span> <span class="n">Control</span> <span class="n">Lists</span> <span class="p">(</span><span class="n">ACLs</span><span class="p">)</span> <span class="n">for</span> <span class="n">these</span> <span class="n">files</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Exair</span><span class="p">\</span><span class="n">Howitworks</span><span class="p">\</span><span class="n">Code</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Exair</span><span class="p">\</span><span class="n">Howitworks</span><span class="p">\</span><span class="n">Codebrws</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Sdk</span><span class="p">\</span><span class="n">Asp</span><span class="p">\</span><span class="n">Docs</span><span class="p">\</span><span class="n">Codebrws</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">Program_Files</span><span class="p">&gt;\&lt;</span><span class="n">Common_Files</span><span class="p">&gt;\</span><span class="nf">System</span><span class="p">\</span><span class="n">Msadc</span><span class="p">\</span><span class="n">Samples</span><span class="p">\</span><span class="n">Selector</span><span class="p">\</span><span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="n">Please</span> <span class="n">note</span><span class="p">,</span> <span class="n">however</span><span class="p">,</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">visitor</span> <span class="n">cannot</span> <span class="n">change</span><span class="p">,</span> <span class="n">delete</span><span class="p">,</span> <span class="k">or</span> <span class="n">add</span> <span class="n">any</span>
+<span class="n">files</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="n">installed</span> <span class="n">ASP</span> <span class="n">code</span> <span class="n">was</span> <span class="n">never</span> <span class="n">intended</span> <span class="n">for</span> <span class="n">anything</span> <span class="n">other</span> <span class="n">than</span> <span class="n">demonstration</span>
+<span class="n">purposes</span> <span class="k">and</span> <span class="n">does</span> <span class="k">not</span> <span class="n">restrict</span> <span class="n">which</span> <span class="n">files</span> <span class="n">a</span> <span class="n">visitor</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">can</span> <span class="n">view</span><span class="p">.</span>
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="n">Remove</span> <span class="n">all</span> <span class="n">copies</span> <span class="k">of</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">production</span> <span class="n">server</span><span class="p">,</span> <span class="k">or</span> <span class="k">set</span> <span class="n">the</span> <span class="n">ACLs</span> <span class="n">for</span> <span class="n">each</span> <span class="k">of</span> <span class="n">these</span> <span class="n">files</span> <span class="n">so</span> <span class="n">that</span> <span class="n">only</span> <span class="n">the</span>
+<span class="n">appropriate</span> <span class="n">users</span> <span class="n">have</span> <span class="n">access</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Per</span> <span class="n">normal</span> <span class="n">security</span> <span class="n">practices</span><span class="p">,</span> <span class="n">the</span> <span class="n">ACLs</span> <span class="n">on</span> <span class="n">the</span> <span class="n">server</span> <span class="n">should</span> <span class="n">always</span> <span class="n">be</span> <span class="k">set</span>
+<span class="k">to</span> <span class="n">enable</span> <span class="n">Web</span> <span class="n">visitors</span> <span class="k">to</span> <span class="n">view</span> <span class="n">only</span> <span class="n">the</span> <span class="n">files</span> <span class="n">they</span> <span class="n">need</span><span class="p">,</span> <span class="k">and</span> <span class="k">to</span> <span class="n">deny</span> <span class="n">access</span> <span class="k">to</span>
+<span class="n">all</span> <span class="n">others</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">A</span> <span class="n">supported</span> <span class="n">fix</span> <span class="n">is</span> <span class="n">now</span> <span class="n">available</span> <span class="k">from</span> <span class="n">Microsoft</span><span class="p">,</span> <span class="n">but</span> <span class="n">it</span> <span class="n">is</span> <span class="n">only</span> <span class="n">intended</span> <span class="k">to</span>
+<span class="n">correct</span> <span class="n">the</span> <span class="n">problem</span> <span class="n">that</span> <span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span> <span class="n">Apply</span> <span class="n">it</span> <span class="n">only</span> <span class="k">to</span> <span class="n">systems</span>
+<span class="n">that</span> <span class="n">are</span> <span class="n">experiencing</span> <span class="n">this</span> <span class="n">specific</span> <span class="n">problem</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">contact</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span> <span class="k">to</span> <span class="n">obtain</span> <span class="n">the</span>
+<span class="n">fix</span><span class="p">.</span> <span class="n">For</span> <span class="n">a</span> <span class="n">complete</span> <span class="k">list</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span> <span class="n">phone</span> <span class="n">numbers</span> <span class="k">and</span>
+<span class="n">information</span> <span class="n">about</span> <span class="n">support</span> <span class="n">costs</span><span class="p">,</span> <span class="n">visit</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">support</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">default</span><span class="p">.</span><span class="n">aspx</span><span class="p">?</span><span class="n">scid</span><span class="p">=</span><span class="n">fh</span><span class="p">;</span><span class="n">EN</span><span class="p">-</span><span class="n">US</span><span class="p">;</span><span class="n">CNTACTMS</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">In</span> <span class="n">special</span> <span class="n">cases</span><span class="p">,</span> <span class="n">charges</span> <span class="n">that</span> <span class="n">are</span> <span class="n">ordinarily</span> <span class="n">incurred</span> <span class="n">for</span> <span class="n">support</span> <span class="n">calls</span>
+<span class="n">may</span> <span class="n">be</span> <span class="n">canceled</span> <span class="k">if</span> <span class="n">a</span> <span class="n">Microsoft</span> <span class="n">Support</span> <span class="n">Professional</span> <span class="n">determines</span> <span class="n">that</span> <span class="n">a</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="n">will</span> <span class="n">resolve</span> <span class="n">your</span> <span class="n">problem</span><span class="p">.</span> <span class="n">The</span> <span class="n">usual</span> <span class="n">support</span> <span class="n">costs</span> <span class="n">will</span> <span class="n">apply</span> <span class="k">to</span>
+<span class="n">additional</span> <span class="n">support</span> <span class="n">questions</span> <span class="k">and</span> <span class="n">issues</span> <span class="n">that</span> <span class="k">do</span> <span class="k">not</span> <span class="n">qualify</span> <span class="n">for</span> <span class="n">the</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="k">in</span> <span class="n">question</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">English</span> <span class="k">version</span> <span class="k">of</span> <span class="n">this</span> <span class="n">fix</span> <span class="n">should</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">file</span> <span class="n">attributes</span> <span class="k">or</span>
+<span class="n">later</span><span class="p">:</span>
+
+  <span class="n">Date</span>      <span class="n">Time</span>                 <span class="n">Size</span>  <span class="n">File</span> <span class="n">name</span>                <span class="n">Platform</span>
+  <span class="p">-------------------------------------------------------------------------</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">3</span><span class="n">Kb</span>   <span class="n">Code</span><span class="p">.</span><span class="n">asp</span>                 <span class="p">&lt;</span><span class="n">x86</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">8</span><span class="n">Kb</span>   <span class="n">Codebrw1</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">x86</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">8</span><span class="n">Kb</span>   <span class="n">Codebrw2</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">x86</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">6</span><span class="n">Kb</span>   <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">x86</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">3</span><span class="n">Kb</span>   <span class="n">Code</span><span class="p">.</span><span class="n">asp</span>                 <span class="p">&lt;</span><span class="n">alpha</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">8</span><span class="n">Kb</span>   <span class="n">Codebrw1</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">alpha</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">8</span><span class="n">Kb</span>   <span class="n">CodeBrw2</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">alpha</span><span class="p">&gt;</span>
+  <span class="m">5</span><span class="p">/</span><span class="m">17</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">17</span><span class="n">PM</span>               <span class="m">6</span><span class="n">Kb</span>   <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span>             <span class="p">&lt;</span><span class="n">alpha</span><span class="p">&gt;</span>
+
+<span class="n">This</span> <span class="n">hotfix</span> <span class="n">has</span> <span class="n">been</span> <span class="n">posted</span> <span class="k">to</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Internet</span> <span class="n">location</span> <span class="k">as</span> <span class="n">Fix2450I</span><span class="p">.</span><span class="n">exe</span>
+<span class="p">(</span><span class="n">Intel</span><span class="p">)</span> <span class="k">or</span> <span class="n">Fix2450A</span><span class="p">.</span><span class="n">exe</span> <span class="p">(</span><span class="n">Alpha</span><span class="p">):</span>
+
+  <span class="n">ftp</span><span class="p">://</span><span class="n">ftp</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">bussys</span><span class="p">/</span><span class="n">iis</span><span class="p">/</span><span class="n">iis</span><span class="p">-</span><span class="k">public</span><span class="p">/</span><span class="n">fixes</span><span class="p">/</span><span class="n">usa</span><span class="p">/</span><span class="n">Viewcode</span><span class="p">-</span><span class="n">fix</span><span class="p">/</span>
+
+
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">that</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="m">4.0</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Microsoft</span> <span class="n">highly</span> <span class="n">recommends</span> <span class="n">that</span> <span class="n">customers</span> <span class="n">evaluate</span> <span class="n">the</span> <span class="n">degree</span> <span class="k">of</span> <span class="n">risk</span> <span class="n">that</span> <span class="n">this</span>
+<span class="n">vulnerability</span> <span class="n">poses</span> <span class="k">to</span> <span class="n">their</span> <span class="n">systems</span> <span class="k">and</span> <span class="n">determine</span> <span class="n">whether</span> <span class="k">to</span> <span class="n">download</span> <span class="k">and</span>
+<span class="n">install</span> <span class="n">the</span> <span class="n">fix</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">fix</span> <span class="n">corrects</span> <span class="n">the</span> <span class="n">vulnerability</span> <span class="n">by</span> <span class="n">restricting</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="k">to</span> <span class="n">viewing</span> <span class="n">only</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="n">current</span> <span class="n">directory</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">Web</span> <span class="n">site</span>
+<span class="n">operators</span> <span class="n">who</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="n">a</span> <span class="n">need</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">the</span> <span class="n">file</span> <span class="n">viewing</span> <span class="n">capability</span> <span class="n">may</span>
+<span class="n">choose</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">all</span> <span class="n">copies</span> <span class="k">OF</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">server</span> <span class="n">altogether</span><span class="p">.</span>
+
+<span class="n">Environment</span> <span class="k">in</span> <span class="n">Which</span> <span class="n">These</span> <span class="n">ASP</span> <span class="n">Files</span> <span class="n">May</span> <span class="n">Cause</span> <span class="n">Security</span> <span class="n">Risk</span>
+<span class="p">------------------------------------------------------------</span>
+
+<span class="n">Security</span> <span class="n">exposure</span> <span class="n">is</span> <span class="n">limited</span> <span class="k">to</span> <span class="n">the</span> <span class="n">situation</span> <span class="k">in</span> <span class="n">which</span> <span class="n">all</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">conditions</span> <span class="n">are</span> <span class="nb">true</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Servers</span> <span class="n">have</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">sites</span> <span class="n">installed</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="n">sample</span> <span class="n">sites</span> <span class="n">are</span> <span class="k">not</span> <span class="n">protected</span> <span class="n">by</span> <span class="n">ACLs</span> <span class="p">(</span><span class="n">Access</span> <span class="n">Control</span> <span class="n">Lists</span><span class="p">).</span>
+
+<span class="p">-</span> <span class="n">Sensitive</span> <span class="n">data</span> <span class="nb">exists</span> <span class="n">on</span> <span class="n">the</span> <span class="n">same</span> <span class="n">logical</span> <span class="n">drive</span> <span class="k">as</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span>
+  <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Files</span> <span class="n">containing</span> <span class="n">sensitive</span> <span class="n">data</span> <span class="n">allow</span> <span class="n">the</span> <span class="s2">"Everyone"</span> <span class="n">user</span> <span class="n">group</span> <span class="nb">read</span> <span class="k">or</span>
+  <span class="n">greater</span> <span class="n">access</span> <span class="k">in</span> <span class="n">the</span> <span class="n">ACL</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Malicious</span> <span class="n">users</span> <span class="n">know</span> <span class="n">the</span> <span class="n">path</span> <span class="k">and</span> <span class="n">file</span> <span class="n">name</span> <span class="k">of</span> <span class="n">files</span> <span class="n">that</span> <span class="n">contain</span> <span class="n">sensitive</span>
+  <span class="n">data</span><span class="p">.</span>
+
+<span class="n">Installing</span> <span class="n">the</span> <span class="n">Fix</span>
+<span class="p">------------------</span>
+
+<span class="n">The</span> <span class="n">fix</span> <span class="n">installation</span> <span class="n">program</span> <span class="p">(</span><span class="n">Fix2450I</span><span class="p">.</span><span class="n">exe</span> <span class="p">[</span><span class="n">Intel</span><span class="p">]</span> <span class="k">and</span> <span class="n">Fix2450A</span><span class="p">.</span><span class="n">exe</span> <span class="p">[</span><span class="n">Alpha</span><span class="p">])</span>
+<span class="n">automatically</span> <span class="n">replaces</span> <span class="n">existing</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">default</span> <span class="n">installation</span> <span class="n">directories</span> <span class="n">listed</span> <span class="n">below</span> <span class="n">the</span> <span class="n">fix</span> <span class="n">installation</span>
+<span class="k">package</span> <span class="n">will</span> <span class="n">attempt</span> <span class="k">to</span> <span class="n">locate</span> <span class="n">the</span> <span class="n">files</span> <span class="k">as</span> <span class="n">they</span> <span class="n">were</span> <span class="n">installed</span> <span class="n">onto</span> <span class="n">the</span>
+<span class="n">effected</span> <span class="nf">system</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">install</span> <span class="n">the</span> <span class="n">fix</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">perform</span> <span class="n">a</span> <span class="n">complete</span> <span class="n">disk</span>
+<span class="n">search</span> <span class="n">for</span> <span class="n">these</span> <span class="n">files</span> <span class="k">to</span> <span class="n">verify</span> <span class="n">that</span> <span class="n">all</span> <span class="n">instances</span> <span class="k">of</span> <span class="n">these</span> <span class="n">files</span> <span class="n">have</span> <span class="n">been</span>
+<span class="n">replaced</span><span class="p">.</span> <span class="k">If</span> <span class="n">your</span> <span class="n">IIS</span> <span class="m">4.0</span> <span class="n">installation</span> <span class="n">was</span> <span class="n">installed</span> <span class="n">into</span> <span class="n">a</span> <span class="n">different</span> <span class="n">directory</span>
+<span class="n">than</span> <span class="n">the</span> <span class="n">default</span> <span class="n">directory</span><span class="p">,</span> <span class="k">then</span> <span class="n">you</span> <span class="n">must</span> <span class="n">verify</span> <span class="n">that</span> <span class="n">the</span> <span class="n">effected</span> <span class="n">files</span> <span class="n">have</span>
+<span class="n">been</span> <span class="n">removed</span> <span class="k">and</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">performing</span> <span class="n">a</span> <span class="n">full</span> <span class="n">disk</span> <span class="n">search</span> <span class="n">for</span> <span class="n">these</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Exair</span><span class="p">\</span><span class="n">Howitworks</span><span class="p">\</span><span class="n">Code</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Exair</span><span class="p">\</span><span class="n">Howitworks</span><span class="p">\</span><span class="n">Codebrws</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">IIS_DIRECTORY</span><span class="p">&gt;\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Sdk</span><span class="p">\</span><span class="n">Asp</span><span class="p">\</span><span class="n">docs</span><span class="p">\</span><span class="n">Codebrws</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">Program_Files</span><span class="p">&gt;\&lt;</span><span class="n">Common_Files</span><span class="p">&gt;\</span><span class="nf">System</span><span class="p">\</span><span class="n">Msadc</span><span class="p">\</span><span class="n">Samples</span><span class="p">\</span><span class="n">Selector</span><span class="p">\</span><span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="n">A</span> <span class="n">complete</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">code</span> <span class="n">for</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="m">4.0</span>
+<span class="k">and</span> <span class="n">the</span> <span class="n">Internet</span> <span class="n">SDK</span> <span class="n">will</span> <span class="n">install</span> <span class="n">various</span> <span class="n">copies</span> <span class="k">of</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="k">in</span> <span class="n">different</span> <span class="n">directories</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="k">to</span> <span class="n">choose</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">it</span><span class="p">,</span>
+<span class="n">perform</span> <span class="n">a</span> <span class="n">full</span><span class="p">-</span><span class="n">disk</span> <span class="n">search</span> <span class="k">to</span> <span class="n">locate</span> <span class="n">all</span> <span class="n">copies</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">manually</span> <span class="n">extract</span> <span class="n">the</span> <span class="n">modified</span> <span class="n">ASP</span> <span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">fix</span><span class="p">,</span> <span class="k">do</span> <span class="n">the</span>
+<span class="n">following</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">file</span> <span class="p">(</span><span class="n">Fix2450I</span> <span class="k">or</span> <span class="n">Fix2450A</span> <span class="k">as</span> <span class="n">appropriate</span><span class="p">)</span> <span class="k">to</span> <span class="n">a</span>
+  <span class="n">temporary</span> <span class="n">location</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Open</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span> <span class="k">and</span> <span class="n">change</span> <span class="k">to</span> <span class="n">that</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">type</span> <span class="s2">"Fix2450I.EXE /T:c:</span><span class="se">\t</span><span class="s2">emp /C"</span> <span class="k">or</span> <span class="s2">"Fix2450A.EXE
+  /T:c:</span><span class="se">\t</span><span class="s2">emp /C"</span> <span class="k">as</span> <span class="n">appropriate</span><span class="p">.</span> <span class="n">This</span> <span class="nf">command</span> <span class="n">will</span> <span class="n">extract</span> <span class="n">the</span> <span class="n">files</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">location</span> <span class="k">of</span> <span class="n">c</span><span class="p">:\</span><span class="n">temp</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Various</span> <span class="n">installation</span> <span class="n">files</span> <span class="n">will</span> <span class="n">be</span> <span class="n">extracted</span><span class="p">,</span> <span class="n">but</span> <span class="n">the</span> <span class="n">effected</span> <span class="n">files</span> <span class="n">are</span> <span class="k">as</span>
+  <span class="n">follows</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span> <span class="p">(</span><span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="p">%</span><span class="n">Program</span> <span class="n">Files</span><span class="p">%\</span><span class="n">Microsoft</span> <span class="n">Visual</span>
+  <span class="n">Studio</span><span class="p">\</span><span class="n">VIntDev98</span><span class="p">\</span><span class="n">Sample</span><span class="p">\</span><span class="n">Gallery</span><span class="p">\</span><span class="n">content</span> <span class="n">directory</span><span class="p">)</span>
+
+<span class="p">-</span> <span class="n">CODEBRW1</span><span class="p">.</span><span class="n">ASP</span> <span class="p">(</span><span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="p">\</span><span class="n">iissamples</span><span class="p">\</span><span class="n">ExAir</span><span class="p">\</span><span class="n">HowItWorks</span>
+  <span class="n">directory</span><span class="p">)</span>
+
+<span class="p">-</span> <span class="n">CODEBRW2</span><span class="p">.</span><span class="n">ASP</span> <span class="p">(</span><span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="p">\</span><span class="n">Iissamples</span><span class="p">\</span><span class="n">Sdk</span><span class="p">\</span><span class="n">asp</span><span class="p">\</span><span class="n">Docs</span><span class="p">\</span>
+  <span class="n">directory</span><span class="p">)</span>
+
+<span class="p">-</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="n">the</span> <span class="n">ACL</span>
+<span class="n">permissions</span> <span class="k">set</span> <span class="k">to</span> <span class="n">Administrators</span> <span class="n">only</span><span class="p">,</span> <span class="k">or</span> <span class="k">to</span> <span class="n">a</span> <span class="n">group</span> <span class="n">that</span> <span class="n">is</span> <span class="n">limited</span> <span class="k">to</span> <span class="n">Web</span>
+<span class="n">content</span> <span class="n">developers</span><span class="p">.</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="n">that</span> <span class="n">you</span> <span class="n">may</span> <span class="n">have</span> <span class="k">to</span> <span class="n">extract</span> <span class="k">and</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">files</span> <span class="n">manually</span> <span class="k">if</span> <span class="n">the</span> <span class="n">hot</span>
+<span class="n">fix</span> <span class="n">installation</span> <span class="n">will</span> <span class="k">not</span> <span class="n">complete</span><span class="p">.</span>
+
+
+<span class="n">IMPORTANT</span> <span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">Codebrws</span><span class="p">.</span><span class="n">asp</span> <span class="n">file</span> <span class="n">has</span> <span class="n">the</span> <span class="n">same</span> <span class="n">name</span> <span class="k">in</span> <span class="n">both</span> <span class="k">of</span> <span class="n">the</span> <span class="n">target</span>
+<span class="n">directories</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">for</span> <span class="n">the</span> <span class="n">purpose</span> <span class="k">of</span> <span class="n">the</span> <span class="n">hot</span> <span class="n">fix</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">given</span> <span class="n">different</span>
+<span class="n">names</span> <span class="n">so</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">differentiated</span><span class="p">.</span> <span class="n">The</span> <span class="n">hot</span> <span class="n">fix</span> <span class="n">installer</span> <span class="n">will</span> <span class="n">rename</span> <span class="n">place</span>
+<span class="k">and</span> <span class="n">rename</span> <span class="n">them</span> <span class="n">appropriately</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">manually</span> <span class="n">install</span> <span class="n">them</span><span class="p">,</span> <span class="n">however</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span>
+<span class="n">need</span> <span class="k">to</span> <span class="n">rename</span> <span class="n">them</span> <span class="n">appropriately</span><span class="p">.</span>
+
+<span class="n">Code</span> <span class="n">Changes</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Fix</span>
+<span class="p">-----------------------</span>
+
+<span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="n">files</span> <span class="n">use</span> <span class="s2">"server.mappath"</span> <span class="n">without</span> <span class="n">any</span>
+<span class="n">restrictions</span> <span class="n">on</span> <span class="n">what</span> <span class="n">is</span> <span class="n">passed</span> <span class="k">to</span> <span class="n">this</span> <span class="k">function</span><span class="p">.</span> <span class="n">Because</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span> <span class="n">allow</span> <span class="n">a</span> <span class="n">user</span> <span class="k">to</span> <span class="n">enter</span> <span class="n">a</span> <span class="n">path</span> <span class="k">and</span> <span class="n">filename</span><span class="p">,</span> <span class="n">a</span> <span class="n">malicious</span> <span class="n">user</span>
+<span class="n">could</span> <span class="n">gain</span> <span class="n">access</span> <span class="k">to</span> <span class="k">and</span> <span class="nb">read</span> <span class="p">(</span><span class="nb">read</span><span class="p">-</span><span class="n">only</span><span class="p">)</span> <span class="n">any</span> <span class="n">known</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">same</span> <span class="n">logical</span>
+<span class="n">disk</span> <span class="k">as</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">which</span> <span class="n">are</span> <span class="k">not</span> <span class="n">protected</span> <span class="p">(</span><span class="n">no</span>
+<span class="n">ACLs</span> <span class="k">set</span><span class="p">).</span>
+
+<span class="n">The</span> <span class="n">code</span> <span class="n">added</span> <span class="k">to</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span> <span class="n">is</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+<span class="p">(</span><span class="n">Note</span><span class="p">:</span> <span class="n">These</span> <span class="n">lines</span> <span class="k">of</span> <span class="n">code</span> <span class="n">may</span> <span class="n">wrap</span><span class="p">):</span>
+
+  <span class="p">&lt;</span><span class="n">SCRIPT</span> <span class="n">LANGUAGE</span><span class="p">=</span><span class="n">VBScript</span> <span class="n">RUNAT</span><span class="p">=</span><span class="n">Server</span><span class="p">&gt;</span>
+  <span class="n">REM</span> <span class="p">**************************************</span>
+  <span class="n">REM</span> <span class="n">intended</span> <span class="n">behavior</span><span class="p">:</span>
+  <span class="n">REM</span> <span class="n">allow</span> <span class="n">access</span> <span class="k">to</span> <span class="n">only</span> <span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="p">.</span><span class="n">htm</span><span class="p">,</span> <span class="p">.</span><span class="n">html</span><span class="p">,</span> <span class="p">.</span><span class="n">inc</span> <span class="n">files</span>
+  <span class="n">REM</span> <span class="k">in</span> <span class="n">some</span> <span class="n">directory</span> <span class="n">starting</span> <span class="k">from</span> <span class="p">/</span><span class="n">IISSAMPLES</span>
+  <span class="n">REM</span> <span class="k">and</span> <span class="n">without</span> <span class="p">..</span> <span class="k">in</span> <span class="n">the</span> <span class="n">path</span>
+  <span class="n">REM</span> <span class="p">**************************************</span>
+  <span class="k">FUNCTION</span> <span class="n">fValidPath</span> <span class="p">(</span><span class="n">ByVal</span> <span class="n">strPath</span><span class="p">)</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="n">strPath</span><span class="p">,</span> <span class="s2">"/iissamples/"</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="s1">' the beginning of the string looks good
+  Dim dwLen
+  Dim SomeKnownExtension
+  SomeKnownExtension = false
+  dwLen = Len(strPath)
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-5,strPath,".html",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".htm",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".asp",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".inc",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  fValidPath = 0
+  Exit Function
+  End If
+  '</span> <span class="n">now</span> <span class="n">the</span> <span class="n">most</span> <span class="n">important</span> <span class="n">part</span><span class="p">:</span> <span class="n">look</span> <span class="n">for</span> <span class="p">..</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="n">strPath</span><span class="p">,</span><span class="s2">".."</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">1</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">END</span> <span class="k">FUNCTION</span>
+  <span class="p">&lt;/</span><span class="n">SCRIPT</span><span class="p">&gt;</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">code</span> <span class="n">was</span> <span class="n">removed</span> <span class="k">from</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">:</span>
+
+<span class="p">(</span><span class="n">Note</span><span class="p">:</span> <span class="n">These</span> <span class="n">lines</span> <span class="k">of</span> <span class="n">code</span> <span class="n">may</span> <span class="n">wrap</span><span class="p">):</span>
+
+  <span class="p">&lt;</span> <span class="s1">' Function to determine if a file exists
+  Function FileExists(Source)
+  On Error Resume Next
+
+  strFilename = Server.MapPath(Source)
+  Set FileObject = Server.CreateObject("Scripting.FileSystemObject")
+
+  FileExists = False
+
+  '</span> <span class="n">Attempt</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span> <span class="n">file</span>
+  <span class="k">Set</span> <span class="n">oTempStream</span> <span class="p">=</span> <span class="n">FileObject</span><span class="p">.</span><span class="n">OpenTextFile</span><span class="p">(</span><span class="n">strFilename</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="nb">FALSE</span><span class="p">,</span> <span class="nb">TRUE</span> <span class="p">)</span>
+  <span class="k">If</span> <span class="n">Err</span> <span class="p">=</span> <span class="m">0</span> <span class="k">Then</span> <span class="n">FileExists</span> <span class="p">=</span> <span class="nb">True</span>
+  <span class="k">End</span> <span class="k">Function</span>
+  <span class="p">%&gt;</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">code</span> <span class="n">was</span> <span class="n">added</span> <span class="k">to</span> <span class="n">ShowCode</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">(</span><span class="n">Note</span><span class="p">:</span> <span class="n">These</span> <span class="n">lines</span> <span class="k">of</span> <span class="n">code</span> <span class="n">may</span> <span class="n">wrap</span><span class="p">):</span>
+
+  <span class="n">REM</span> <span class="p">***************</span> <span class="n">NOTICE</span> <span class="p">****************</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="n">This</span> <span class="n">file</span> <span class="n">may</span> <span class="n">only</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">view</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="n">source</span> <span class="n">code</span> <span class="k">of</span> <span class="p">.</span><span class="n">asp</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="n">AdvWorks</span> <span class="k">or</span> <span class="n">ASP</span> <span class="n">Sample</span> <span class="n">directory</span><span class="p">.</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="k">If</span> <span class="n">you</span> <span class="n">wish</span> <span class="k">to</span> <span class="n">change</span> <span class="n">the</span> <span class="n">security</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="n">on</span> <span class="n">this</span><span class="p">,</span> <span class="n">modify</span> <span class="k">or</span> <span class="n">remove</span> <span class="n">this</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">*</span> <span class="k">function</span><span class="p">.</span> <span class="p">*</span>
+  <span class="n">REM</span> <span class="p">***************************************</span>
+
+  <span class="n">REM</span> <span class="p">**************************************</span>
+  <span class="n">REM</span> <span class="n">intended</span> <span class="n">behavior</span><span class="p">:</span>
+  <span class="n">REM</span> <span class="n">allow</span> <span class="n">access</span> <span class="k">to</span> <span class="n">only</span> <span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="p">.</span><span class="n">htm</span><span class="p">,</span> <span class="p">.</span><span class="n">html</span><span class="p">,</span> <span class="p">.</span><span class="n">inc</span> <span class="n">files</span>
+  <span class="n">REM</span> <span class="k">in</span> <span class="n">some</span> <span class="n">directory</span> <span class="n">starting</span> <span class="k">from</span> <span class="p">/</span><span class="n">Msdac</span>
+  <span class="n">REM</span> <span class="k">and</span> <span class="n">without</span> <span class="p">..</span> <span class="k">in</span> <span class="n">the</span> <span class="n">path</span>
+  <span class="n">REM</span> <span class="p">**************************************</span>
+
+  <span class="k">FUNCTION</span> <span class="n">fValidPath</span> <span class="p">(</span><span class="n">ByVal</span> <span class="n">strPath</span><span class="p">)</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="n">strPath</span><span class="p">,</span> <span class="s2">"/Msadc/"</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="s1">' the beginning of the string looks good
+  Dim dwLen
+  Dim SomeKnownExtension
+  SomeKnownExtension = false
+  dwLen = Len(strPath)
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-5,strPath,".html",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".htm",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".asp",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".inc",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  fValidPath = 0
+  Exit Function
+  End If
+  '</span> <span class="n">now</span> <span class="n">the</span> <span class="n">most</span> <span class="n">importan</span> <span class="n">part</span><span class="p">:</span> <span class="n">look</span> <span class="n">for</span> <span class="p">..</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="n">strPath</span><span class="p">,</span><span class="s2">".."</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">1</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">END</span> <span class="k">FUNCTION</span>
+
+  <span class="p">&lt;/</span><span class="n">SCRIPT</span><span class="p">&gt;</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">code</span> <span class="n">was</span> <span class="n">added</span> <span class="k">to</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span><span class="p">:</span>
+
+<span class="p">(</span><span class="n">Note</span><span class="p">:</span> <span class="n">These</span> <span class="n">lines</span> <span class="k">of</span> <span class="n">code</span> <span class="n">may</span> <span class="n">wrap</span><span class="p">):</span>
+
+  <span class="n">REM</span> <span class="p">**************************************</span>
+  <span class="n">REM</span> <span class="n">intended</span> <span class="n">behavior</span><span class="p">:</span>
+  <span class="n">REM</span> <span class="n">allow</span> <span class="n">access</span> <span class="k">to</span> <span class="n">only</span> <span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="p">.</span><span class="n">htm</span><span class="p">,</span> <span class="p">.</span><span class="n">html</span><span class="p">,</span> <span class="p">.</span><span class="n">inc</span> <span class="n">files</span>
+  <span class="n">REM</span> <span class="k">in</span> <span class="n">some</span> <span class="n">directory</span> <span class="n">starting</span> <span class="k">from</span> <span class="p">/</span><span class="n">IISSAMPLES</span>
+  <span class="n">REM</span> <span class="k">and</span> <span class="n">without</span> <span class="p">..</span> <span class="k">in</span> <span class="n">the</span> <span class="n">path</span>
+  <span class="n">REM</span> <span class="p">**************************************</span>
+
+  <span class="k">FUNCTION</span> <span class="n">fValidPath</span> <span class="p">(</span><span class="n">ByVal</span> <span class="n">strPath</span><span class="p">)</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="n">strPath</span><span class="p">,</span> <span class="s2">"/iissamples/"</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="s1">' the beginning of the string looks good
+  Dim dwLen
+  Dim SomeKnownExtension
+  SomeKnownExtension = false
+  dwLen = Len(strPath)
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-5,strPath,".html",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".htm",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".asp",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  If InStr(dwLen-4,strPath,".inc",1) Then
+  SomeKnownExtension = true
+  End If
+  End If
+  If Not SomeKnownExtension Then
+  fValidPath = 0
+  Exit Function
+  End If
+  '</span> <span class="n">now</span> <span class="n">the</span> <span class="n">most</span> <span class="n">importan</span> <span class="n">part</span><span class="p">:</span> <span class="n">look</span> <span class="n">for</span> <span class="p">..</span>
+  <span class="k">If</span> <span class="n">InStr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="n">strPath</span><span class="p">,</span><span class="s2">".."</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="k">Then</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">1</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">Else</span>
+  <span class="n">fValidPath</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="k">End</span> <span class="k">If</span>
+  <span class="k">END</span> <span class="k">FUNCTION</span>
+  <span class="p">&lt;/</span><span class="n">SCRIPT</span><span class="p">&gt;</span>
+
+<span class="n">Purpose</span> <span class="k">of</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">Related</span> <span class="n">MSDN</span> <span class="n">Samples</span>
+<span class="p">-----------------------------------------------------------------------------</span>
+
+<span class="n">The</span> <span class="n">purpose</span> <span class="k">of</span> <span class="n">Showcode</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">Code</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="n">CodeBrws</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span> <span class="n">is</span> <span class="k">to</span> <span class="n">show</span> <span class="n">the</span> <span class="n">Web</span>
+<span class="n">content</span> <span class="n">developer</span> <span class="n">the</span> <span class="n">code</span> <span class="n">that</span> <span class="n">makes</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">sites</span> <span class="n">work</span><span class="p">.</span> <span class="n">This</span> <span class="n">type</span> <span class="k">of</span>
+<span class="k">function</span> <span class="n">is</span> <span class="n">also</span> <span class="n">used</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">author</span><span class="s1">'s workshop on the MSDN site
+(http://msdn.microsoft.com/workshop/c-frame.htm#/workshop/author/default.asp).
+
+If you base your content on one of the sample sites, remove the buttons (links)
+that load the code into Showcode.asp, Code.asp, and CodeBrws.asp to display it.
+
+Installing Samples and Documentation on Production Servers
+----------------------------------------------------------
+
+Most Internet Information Server 4.0 users do not install the sample sites on
+their production servers, just as they do not install the documentation. They
+are not typically needed on the production servers, as they use additional disk
+space. Because they are just samples, they may not be secure in a production
+environment.
+
+If you have a need to include the samples on a production server, consider
+restricting access to your developers only.
+
+Additional References
+---------------------
+
+For more information related to this issue, please see the following:
+
+  Microsoft Security Bulletin MS99-013, "Patch Available for ViewCode.asp
+  Vulnerability" (The Web-posted version of this bulletin),
+  http://www.microsoft.com/security/bulletins/ms99-013.asp
+
+For additional security-related information about Microsoft products, please
+visit:
+
+  http://www.microsoft.com/security
+
+Additional query words: patch hotfix hot fix qfe default setup set up viewcode utility hacker breach read see source
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

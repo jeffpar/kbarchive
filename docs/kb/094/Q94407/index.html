@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94407: FIX: ML DX1020 Error With Several Source Files In Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94407: FIX: ML DX1020 Error With Several Source Files In Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94407/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94407/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94407/","publisher":null,"image":null,"headline":"Q94407: FIX: ML DX1020 Error With Several Source Files In Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94407-fix-ml-dx1020-error-with-several-source-files-in-directory">Q94407: FIX: ML DX1020 Error With Several Source Files In Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94407
+Product(s): Microsoft Macro Assembler
+Version(s): 6.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Microsoft Macro Assembler (MASM) assembles multiple source files in the
+current directory using a command such as the following:
+
+  ml *.asm
+
+the following error may occur:
+
+  DOSXNT : fatal error DX1020: unhandled exception:
+
+  Stack fault;
+
+  contact Microsoft Support Services
+
+When MASM assembles multiple source files from a directory other than the current
+directory, the following error may occur:
+
+  DOSXNT : fatal error DX1020: unhandled exception:
+
+  General protection fault;
+
+  contact Microsoft Support Services
+
+RESOLUTION
+==========
+
+To work around this problem, build each file separately and not in a batch. The
+other option is to rename the source files to make the names shorter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.1 for MS- DOS.
+This problem was corrected in MASM version 6.10a for MS-DOS.
+
+MORE INFORMATION
+================
+
+This error occurs when an filename buffer in MASM becomes full. When files have
+long names, fewer files are required to fill the buffer and cause the error.
+
+This error does not depend on the contents of the source files.
+
+
+Additional query words: 6.10 buglist6.10 fixlist6.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM610
+Version           : :6.1
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

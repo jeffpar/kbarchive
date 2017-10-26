@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q25996: No EOF (CTRL+Z) Marker Written at End of Sequential File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q25996: No EOF (CTRL+Z) Marker Written at End of Sequential File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/025/Q25996/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/025/Q25996/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/025/Q25996/","publisher":null,"image":null,"headline":"Q25996: No EOF (CTRL+Z) Marker Written at End of Sequential File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q25996-no-eof-ctrlz-marker-written-at-end-of-sequential-file">Q25996: No EOF (CTRL+Z) Marker Written at End of Sequential File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q25996
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | TAR68492 B_BasicCom | mspl13_basic
+Last Modified: 7-JUN-1989
+
+Programs compiled in QuickBASIC Version 4.00, 4.00b, or 4.50, or in
+BASIC Compiler Version 6.00 or 6.00b, don't add an end-of-file (EOF)
+marker [chr$(26), or CTRL+Z] at the end of output or appended
+sequential files.
+
+Sequential files created with QuickBASIC Version 4.00 (and later) and
+BC 6.00 (and later) programs will correctly read into programs
+compiled in QuickBASIC Version 3.00 even though there is no EOF
+marker, but other applications (those that follow the DOS Versions 1.x
+standard for EOF) may generate an "input past end" error looking for
+the CTRL+Z.
+
+This is not an error in the QuickBASIC or compiled BASIC software.
+
+The lack of writing CTRL+Z to mark the end of the file was a
+deliberate change to allow QuickBASIC programs to read files that
+contain embedded CTRL+Z's. CTRL+Z's can often occur with binary files
+and screen files saved with the BSAVE command.
+
+The use of CTRL+Z to mark the end of file is a DOS Versions 1.x
+application standard (which was carried over from the CP/M-80
+operating system). Applications written for DOS Versions 2.x and 3.x
+standards use the exact number of bytes in the file to determine the
+end of file, which is a more practical design. This file size is
+stored for each file in the File Allocation Table (FAT) on each disk.
+
+You can write your own CTRL+Z to the end of a file by writing a
+program that opens the file for append and sends a chr$(26) to the
+file.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

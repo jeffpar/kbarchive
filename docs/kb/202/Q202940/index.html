@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/202/Q202940/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/202/Q202940/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/202/Q202940/","publisher":null,"image":null,"headline":"Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q202940-sms-resource-explorer-shows-blank-hardware-inventory-classes">Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q202940
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbClient kbConfig kbMMC kbsms200 kbCollections kbInventory kbResX kbsmsAdmin kbsmsUtil
+Last Modified: 13-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Resource Explorer, when you are viewing hardware for a Systems Management
+Server 2.0 client, some hardware inventory classes that are displayed may not
+contain data, although other clients display data for the same hardware
+inventory classes.
+
+This behavior can be seen in the following scenarios:
+
+- A child site reporting to the parent has more options enabled in the
+  SMS_def.mof file than other child sites also reporting to the parent, or more
+  options enabled than are on the parent site itself.
+
+- A client that is assigned to multiple sites uses the principal site's
+  SMS_def.mof file. If this site has enabled more classes in its SMS_def.mof
+  file than the other site(s) that the client is assigned to, this problem may
+  occur.
+
+MORE INFORMATION
+================
+
+During the initial hardware inventory, by default, SMS collects as many as 200
+hardware properties with details such as:
+
+- Number of disk drives
+
+- Type of processor
+
+- Amount of memory
+
+- Operating system
+
+- Monitor and display settings
+
+- Computer name and IP address
+
+- Information about peripherals connected to the resource
+
+- Network type
+
+The properties that are collected depend on which classes and attributes are
+enabled in the SMS_def.mof file. Classes are categories of hardware resources.
+Although this file contains more than 650 properties, it is distributed with
+approximately 200 of the properties enabled. This file can be modified by
+administrators.
+
+SMS_def.mof contains classes and properties of hardware that are defined by the
+Desktop Management Task Force (DMTF). Properties are the attributes of the
+classes. SMS_def.mof is used by hardware inventory client components to
+determine what classes and properties should be gathered. SMS_def.mof is stored
+on CAPs in the \CAP_sitecode\CLIFILES.BOX\HINV directory. A master copy of this
+file is stored on the site server in \smsdir\INBOXES\CLIFILES.SRC\HINV. Disabled
+properties in SMS_def.mof can be enabled by editing the master copy.
+
+Both Windows 16-bit and Windows 32-bit client computers use the SMS_def.mof file
+to determine what hardware inventory should be collected. However, the way the
+data is collected on these client computers differs. Windows 32-bit client
+computers use the CIM Object Manager (started by the Windows Management Service)
+to collect hardware inventory data from providers. Windows 16-bit client
+computers use the Hardware Inventory Client Agent to collect inventory data. On
+both client computer types, collection data is sent to the Client Access Point
+(CAP) by the Hardware Inventory Client Agent and added to the site server
+database by threads of the SMS Executive.
+
+Only a subset of the data that is collected by the CIM Object Manager can be
+collected by the Windows 16-bit Hardware Inventory Client Agent. Further, most
+hardware data processing for Windows 16-bit client computers is done on the site
+server. On the other hand, most hardware data processing for Windows 32-bit
+client computers is completed on the client computer. So, for example, only
+changes in hardware configuration are sent to the CAP by the Windows 32-bit
+client agent, while all hardware data is sent to the CAP by the Windows 16-bit
+client agent, and the site server must then process the data to find changes in
+hardware inventory.
+
+REFERENCES
+==========
+
+For additional information about this topic, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q199318 How SMS Uses the SMS_DEF.MOF in Hardware Inventory
+
+  Q200879 Resource Explorer Does Not Show Readable Format of Inventory
+
+  Q237495 Err Msg: ERROR 2 Failed to Run MofComp
+
+Systems Management Resource Guide:
+
+- Chapter 10 - Customizing Hardware Inventory
+- Chapter 13 - Using SMS 2.0 Tools - Part 1
+- Chapter 14 - Using SMS 2.0 Tools - Part 2
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbCollections kbInventory kbResX kbsmsAdmin kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

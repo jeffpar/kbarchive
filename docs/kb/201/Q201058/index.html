@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201058/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201058/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201058/","publisher":null,"image":null,"headline":"Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201058-all-exchange-users-receive-ndr-when-sending-to-ccmail-users">Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201058
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Server users may get a non-delivery report (NDR) when sending
+messages to cc:Mail users although CC:Mail users are able to send messages to
+Exchange Server users. This may happen even when the Custom Recipient container
+of cc:Mail users is populated and the cc:Mail names are showing up in the Global
+Address list (GAL). The NDR is immediate and includes the following
+information:
+
+Your message did not reach some or all of the intended recipients.
+
+  Subject: &lt;subject&gt; Sent: &lt;date / time&gt;
+
+  The following recipient(s) could not be reached:
+
+  &lt;Recipient&gt; on &lt;date / Time&gt; The recipient name is not recognized
+  MSEXCH:MSExchangeMTA:&lt;Site&gt;:&lt;Server name&gt;
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Verify that the address being used is accurate.
+
+2. Verify that cc:Mail traffic is allowed to the cc:Mail connector.
+
+3. Verify the address type in the cc:Mail address space property page. It is
+  recommended that an * or a blank address is defined. The * will be a wild
+  card and the space being a least character match.
+
+4. If a more exact address type needs to be defined, confirm the use of * or
+  blank space first to ensure mail flow and then verify the use of an accurate
+  post office name.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

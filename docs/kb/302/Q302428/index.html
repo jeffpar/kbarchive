@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/302/Q302428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/302/Q302428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/302/Q302428/","publisher":null,"image":null,"headline":"Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q302428-uninstalling-msn-explorer-60-after-upgrade-from-windows-9x-to-w">Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q302428
+Product(s): The Microsoft Network
+Version(s): 6.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install MSN Explorer 6.0 (build 911.2) in a directory other than the
+default directory on a Windows 95 or 98 computer, or if you install Windows XP
+on a computer that includes an updated version of MSN Explorer, then Windows XP
+will automatically install this updated version of MSN Explorer in its default
+location: C:\Program Files\MSN. The newer version of MSN Explorer will overwrite
+all shortcuts pointing to the MSN Explorer 6.0 client, and will leave the 6.0
+files intact.
+
+It's possible to delete these unnecessary files by running the file msnunin.exe
+from the Setup folder using the msnunin.exe file (this file is located in the
+directory where MSN Explorer 6.0 was originally installed). However, msnunin.exe
+can also remove important registry keys that may be necessary in executing the
+updated version of MSN Explorer that was installed with Windows XP.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+If you want to delete files left over from your installation of MSN Explorer
+6.0, do not click the msnunin.exe file. Instead, delete the entire MSNCorefiles
+folder for MSN Explorer 6.0. This folder is located in the directory you chose
+when you first installed MSN Explorer.
+Note: Do not delete the default MSNCorefiles folder installed by Windows XP. This
+file is located at C:\Program Files\MSN.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

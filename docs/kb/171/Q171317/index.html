@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171317/","publisher":null,"image":null,"headline":"Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171317-upgrade-winnt-to-40-may-hang-with-trident-94xx-agi-video-card">Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171317
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbsetup
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade from Windows NT version 3.51 to Windows NT version 4.0, the
+system may stop responding on the subsequent restart while entering the
+graphical user interface (GUI) portion of setup. When you use a Trident
+TGUI94XXAGI video adapter and the Windows NT 3.51 driver from Trident, the
+system may stop responding after carrying out the NTDETECT command while the
+operating system loader displays the following message:
+
+  Microsoft (r) Windows NT TM Version 4.0 (build 1381). 1 System Processor
+  [32 MB Memory]
+
+No error messages are displayed.
+
+CAUSE
+=====
+
+The Windows NT 3.51 video driver supplied by Trident for the AGI series video
+adapter, Agi.sys, is not compatible with Windows NT 4.0.
+
+RESOLUTION
+==========
+
+Windows NT Installed on FAT Drive
+---------------------------------
+
+If Windows NT is installed on a FAT drive, perform the following steps:
+
+1. Start the computer with another operating system (such as MS-DOS, Microsoft
+  Windows 95, or Microsoft Windows 3.x) and then rename Agi.sys in
+  \Winnt35\System32\Drivers.
+
+2. Copy Vga.sys to Agi.sys. Restart the computer and the upgrade will finish.
+
+3. Contact Trident to obtain the updated Windows NT 4.0 video drivers. Then
+  install them on your computer.
+
+-or-
+
+Continue to use the standard VGA driver.
+
+Windows NT Installed on NTFS Drive
+----------------------------------
+
+If Windows NT is installed on an NTFS partition, perform the following steps:
+
+1. Install a parallel copy of Windows NT 4.0 into a different directory and then
+  rename AGI.SYS in \Winnt35\system32\drivers.
+
+2. Copy VGA.SYS to AGI.SYS.
+
+3. Restart the computer and the upgrade will finish.
+
+4. Contact Trident to obtain the updated Windows NT 4.0 video drivers. Then
+  install them on your computer.
+
+-or-
+
+Continue to use the standard VGA driver.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

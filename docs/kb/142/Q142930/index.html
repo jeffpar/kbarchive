@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142930/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142930/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142930/","publisher":null,"image":null,"headline":"Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142930-howto-rdo-use-odbc-escape-clauses-in-your-sql-syntax">Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142930
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:2.5,4.0
+Operating System(s): 
+Keyword(s): kbODBC kbRDO kbVBp kbVBp400 kbGrpDSVBDB kbDSupport kbMDAC250
+Last Modified: 24-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An ODBC escape clause is a way to talk to the ODBC driver you are using in a
+DBMS independent manner. The escape clause is represented by a pair of curly
+braces ({}) surrounding the standard form of the SQL syntax and a one- character
+or two-character token that specifies the type of the escape clause.
+
+For example, if you want to specify a date value and you don't know which ODBC
+driver you will be using, you can use the Escape clause in this construct, {d
+'yyyy-mm-dd'} and it will be translated by the ODBC driver manager into the form
+the backend can utilize. The following select statement will work with any ODBC
+driver: "SELECT * FROM table1 WHERE datefield = {d '1995-09-12'}" There are also
+other areas where you can use ODBC escape clauses:
+
+Date and Time
+-------------
+
+  Date      {d 'yyyy-mm-dd'}
+  Time      {t 'hh:mm:ss'}
+  Timestamp   {ts 'yyyy-mm-dd hh:mm:ss[.f...]'}
+
+where [.f...] allows you to specify fractions of a second if you wish.
+
+Stored Procedures
+-----------------
+
+For stored procedures a parameter marker (?) must be used for the return value
+(if any) and any output arguments because it is bound to a program variable.
+Input arguments can be either literals or parameters, for example, "{? = call
+procedure_name(arg1, arg2, ?)}" or "{call procedure_name(arg1, arg2, ?)}".
+
+String Functions
+----------------
+
+  ASCII(), CHAR(), CONCAT(), DIFFERENCE(), INSERT(), LCASE(), LEFT(), LENGTH(),
+  LOCATE(), LTRIM(), REPEAT(), REPLACE(), RIGHT(), RTRIM(), SOUNDEX(), SPACE(),
+  SUBSTRING() and UCASE().
+
+This example will retrieve a resultset where the first three characters of author
+field is 'dat' from the Pubs database. "Select * from authors where {fn
+LEFT(author, 3)} = 'dat'".
+
+This example will retrieve a resultset with the author field all in uppercase
+letters. It is necessary to alias the column with the phrase "as AUTHORS"
+because the RDC control doesn't know what you are asking for in an escape clause
+so if you do not alias the column, the RDC control will refer to is as
+"Expr1000". MSRDC1.SQL = "Select {fn UCASE(author)} as AUTHORS from authors"
+
+Math Functions
+--------------
+
+  ABS(), ACOS(), ASIN(), ATAN(), ATAN2(), CEILING(), COS(), COT(), DEGREES(),
+  EXP(), FLOOR(), LOG(), LOG10(), MOD(), PI(), POWER(), RADIANS(), RAND(),
+  ROUND(), SIGN(), SIN(), SQRT(), TAN() and TRUNCATE().
+
+System Functions
+----------------
+
+  DATABASE(), IFNULL() and USER().
+
+This example returns all the orders entered by the current user: "Select ordnum
+From orders Where employee = {fn User()}".
+
+Time and Date Functions
+-----------------------
+
+  CURDATE(), CURTIME(), DAYNAME(), DAYOFMONTH(), DAYOFWEEK(), DAYOFYEAR(),
+  HOUR(), MINUTE(), MONTH(), MONTHNAME(), NOW(), QUARTER(), SECOND() and
+  TIMESTAMPADD()
+
+Data Type Conversion Functions
+------------------------------
+
+The data type conversion function converts a data type to a different data type
+on the server. This example shows the simple conversion of a date column to a
+character string. It also shows how powerful the use of scalar functions in
+expressions can be. In this case, the query returns all orders made in the 1990s
+"Select ordnum From orders Where {fn convert(orddate, SQL_CHAR)} like '199%'".
+
+For complete documentation see the "Microsoft ODBC 2.0 Programmer's Reference and
+SDK Guide."
+
+MORE INFORMATION
+================
+
+Sample Program
+--------------
+
+This example uses the escape clause string function and assumes that you already
+have an ODBC data source set up. This example uses a "DSN-less" ODBC connection
+so you will not need to set up a DSN with the ODBC Admin utility.
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a command button to Form1.
+
+3. Paste the following code into the General Declarations section of form1.
+
+     Private Sub Command1_Click()
+       Dim cn As rdoConnection
+       Dim en As rdoEnvironment
+       Dim rs As rdoResultset
+       'establish connection
+       Set en = rdoEngine.rdoEnvironments(0)
+       en.CursorDriver = rdUseOdbc
+       'Below should be modified to match your data source
+       Dim cnStr As String
+       cnStr = "driver={SQL Server};server=myserver;" &amp; _
+         "database=pubs;uid=myuid;pwd=mypwd"
+       Set cn = en.OpenConnection(DSName:="", Prompt:=rdDriverNoPrompt, _
+         Connect:=cnStr)
+       Dim sql As String
+       sql = "Select * from authors where {fn LEFT(au_lname, 3)} = 'gre'"
+       Set rs = cn.OpenResultset(Name:=sql, Type:=rdOpenDynamic, _
+         Option:=rdAsyncEnable)
+       'check if still executing for asynchronous query option
+       While rs.StillExecuting
+         DoEvents
+       Wend
+       If rs.RowCount &gt; 0 Then
+         While Not rs.EOF
+           Me.Print rs("au_lname")
+           rs.MoveNext
+         Wend
+       End If
+       MsgBox Str(rs.RowCount) &amp; " rows returned."
+     End Sub
+
+4. Note that you will need to change your DRIVER, SERVER, DATABASE, UID, and PWD
+  in the OpenConnection method. You will also need to modify the SQL statement
+  contained in the Command1_Click event to match your own SQL data source.
+
+5. Start the program or press the F5 key.
+
+6. You can then click on the Command1 button to start the query which will
+  display the number of rows returned.
+
+REFERENCES
+==========
+
+(Hitchhiker's Guide to Visual Basic and SQL Server, Microsoft Press. ISBN:
+1-55615-906-4.).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbRDO kbVBp kbVBp400 kbGrpDSVBDB kbDSupport kbMDAC250 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbMDACSearch kbVB400Search kbVB400 kbMDAC250
+Version           : WINDOWS:2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

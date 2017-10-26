@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86815/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86815/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86815/","publisher":null,"image":null,"headline":"Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86815-mixed-c-and-masm-with-masm-main-language-no-c-run-time">Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86815
+Product(s): Microsoft Macro Assembler
+Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b, 6.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following steps should be used when doing mixed-language programming between
+the Microsoft Macro Assembler (MASM) and Microsoft C with MASM as the main
+language and when no C run-time will be used:
+
+1. Include the statement
+
+  .MODEL &lt;model&gt;
+
+  in the assembly module to ensure that the modules use the same default
+  segments. The &lt;model&gt; will be small, medium, compact, or large.
+
+2. Use the END directive in the assembly module to specify the entry point.
+
+3. Compile the C module with /Gs to avoid generation of calls to the stack
+  checking routine.
+
+4. If the C compiler is version 5.1, include the following statement in the C
+  module to ensure that the startup code is not brought in:
+
+        int _acrtused = 0;
+
+5. Assemble the assembly module with /Mx to preserve the case of nonlocal names.
+  If MASM 6.0 or later is being used, use /Cx to preserve the case of nonlocal
+  names.
+
+Note that the only contributions to the stack segment come from the assembly
+module.
+
+MORE INFORMATION
+================
+
+The following is a mixed-language sample. There is one C module and one assembly
+module that must be compiled and then linked together. No special link options
+are needed.
+
+The sample declares two words, arg1 and arg2, converts them to dollar-terminated
+strings, prints out their values to the screen, and passes their addresses to a
+C routine. The C routine swaps the values of arg1 and arg2. The values of arg1
+and arg2 are printed out a second time to show that they have been swapped.
+
+NOTE: The EXTRN directive changed to EXTERN in MASM 6.1 All instances of EXTRN
+should be changed to EXTERN in the sample code below if you are using MASM
+version 6.1 or later.
+
+Sample Code
+-----------
+
+  /* Compile options needed: /Gs
+  */ 
+
+  /* Uncomment the following line for C 5.1 to ensure that the startup
+     code is not brought in:
+
+        int _acrtused = 0;
+  */ 
+
+  void ptrswap( int *ptr1, int *ptr2 )
+  {
+      int temp;
+
+      temp = *ptr1;
+      *ptr1 = *ptr2;
+      *ptr2 = temp;
+  }
+
+  ----------------------------------------------------------------------
+
+  ; Assemble options needed: /Mx
+
+      .MODEL small
+
+  Display MACRO string              ; Print a "$" terminated string
+      MOV ah, 9
+      MOV dx, offset string
+      INT 21h
+      ENDM
+
+      .STACK
+      .DATA
+
+  arg1    DW 1234
+  arg2    DW 4321
+  outstr1 DB "Arg1: ", "$"
+  outstr2 DB "Arg2: ", "$"
+  newline DB 13, 10, "$"            ; Carriage return-linefeed
+  converted  DD ?                   ; Will contain arg1 or arg2 after
+          DB "$"                    ;    they are converted
+
+      .CODE
+
+  EXTRN   _ptrswap:proc             ; External C routine
+
+  cnvrt   PROC
+
+  ; ********     Convert a word to a dollar-terminated string.    *******
+
+      PUSH   bp                 ; Establish
+      MOV    bp, sp             ; stack frame
+
+      MOV    ax, [bp+4]         ; Get first argument off stack
+      MOV    bx, offset converted
+      MOV    cx, 10
+      MOV    si, 3              ; Index for storing in converted
+  nextdigit:
+      MOV    dx, 0
+      DIV    cx                 ; Divide ax by cx
+      ADD    dl, "0"            ; Convert to ASCII value
+      MOV    [bx][si], dl       ; Save digit in converted
+      DEC    si                 ; Decrement index
+      CMP    si, 0FFFFh         ; Are we done?
+      JNZ    nextdigit
+
+      ADD    sp, 2              ; Destroy argument
+      RET                       ; Return
+  cnvrt   ENDP
+  ; ********************************************************************
+
+  start:
+      MOV    ax, @data          ; Load the data
+      MOV    ds, ax             ;    segment register
+
+  ; Print "Arg1: &lt;value&gt;"  where &lt;value&gt; is the value of arg1
+
+      Display outstr1           ; Use display macro
+      MOV    ax, arg1
+      PUSH   ax                 ; Push argument
+      CALL   cnvrt              ; Call the convert procedure
+      Display converted         ; Use display macro
+      Display newline           ; Use display macro
+
+  ; Print "Arg2: &lt;value&gt;"  where &lt;value&gt; is the value of arg2
+
+      Display outstr2           ; Use display macro
+      MOV    ax, arg2
+      PUSH   ax                 ; Push argument
+      CALL   cnvrt              ; Call the convert procedure
+      Display converted         ; Use the display macro
+      Display newline           ; Use the display macro
+      Display newline           ; Use the display macro
+
+  ; Call the C module to swap the values of arg1 and arg2
+
+      MOV    bx, offset arg2
+      PUSH   bx                 ; Push the 2nd argument
+      MOV    bx, offset arg1
+      PUSH   bx                 ; Push the 1st argument
+      CALL   _ptrswap           ; Call the C routine
+
+  ; Print out arg1 again, to show that it has changed
+
+      Display outstr1           ; Use display macro
+      MOV    ax, arg1
+      PUSH   ax                 ; Push argument
+      CALL   cnvrt              ; Call the convert procedure
+      Display converted         ; Use display macro
+      Display newline           ; Use display macro
+
+  ; Print out arg2 again, to show that it has changed
+
+      Display outstr2           ; Use display macro
+      MOV    ax, arg2
+      PUSH   ax                 ; Push argument
+      CALL   cnvrt              ; Call the convert procedure
+      Display converted         ; Use display macro
+      Display newline           ; Use display macro
+
+      MOV    ah, 4ch            ; Terminate program
+      int    21h
+
+      END    start              ; Specify entry point as _start
+
+Additional query words: kbinf non-local 5.00 5.10 5.10a 6.00 6.00a 6.00b s_quickasm s_c s_quickc s_qcwin
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM610 kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

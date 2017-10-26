@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105150: HOWTO: Prevent Static Splitter Bars from Tracking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105150: HOWTO: Prevent Static Splitter Bars from Tracking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105150/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105150/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105150/","publisher":null,"image":null,"headline":"Q105150: HOWTO: Prevent Static Splitter Bars from Tracking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105150-howto-prevent-static-splitter-bars-from-tracking">Q105150: HOWTO: Prevent Static Splitter Bars from Tracking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105150
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC kbWndw kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Editions, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In addition to providing the ability to dynamically split a single view, the
+CSplitterWnd class provides a convenient method of displaying two or more view
+classes in a single frame. This type of splitter window is called a "static
+splitter." The CSplitterWnd class contains member functions that allow the
+splitter bar to be dragged by the mouse or moved using the keyboard to change
+the proportionate sizes of the views (or panes, in splitter terminology) within
+the frame.
+
+Sometimes it is desirable to fix the initial position of the splitter bars and
+not allow the user to move them. This can be accomplished simply by deriving a
+class from CSplitterWnd and overriding several members. This method is outlined
+below.
+
+MORE INFORMATION
+================
+
+1. Use ClassWizard to create a new class named CMySplitterWnd of class type
+  "generic CWnd" and change the references to CWnd in the class declaration and
+  BEGIN_MESSAGE_MAP macro to CSplitterWnd.
+
+2. Using ClassWizard, create message handlers for WM_LBUTTONDOWN, WM_LBUTTONUP,
+  WM_LBUTTONDBLCLK, and WM_MOUSEMOVE. Bypass the CSplitterWnd functionality in
+  each of these overrides by calling the corresponding CWnd handlers. The
+  following example illustrates the WM_LBUTTONDOWN handler:
+
+        void CMySplitterWnd::OnLButtonDown(UINT nFlags, Cpoint point)
+        {
+           CWnd::OnLButtonDown(nFlags, point);
+        }
+
+3. Change any embedded CSplitterWnd members of your frame class to type
+  CMySplitterWnd.
+
+4. Remove any menu items that generate a ID_WINDOW_SPLIT command (such as the
+  "Split" item on the VIEWEX sample's "Window" menu). This prevents
+  CView::OnSplitCmd() from being called.
+
+
+Additional query words: resize
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC kbWndw kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,4.0,4.1,4.2,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

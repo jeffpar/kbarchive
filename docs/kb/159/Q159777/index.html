@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159777/","publisher":null,"image":null,"headline":"Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159777-bug-invalid-syntax-error-when-logging-on-to-visual-sourcesafe">Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159777
+Product(s): Microsoft SourceSafe
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbSSafe500bug kbSSafe600fix kbgrpdsvc
+Last Modified: 06-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to Visual SourceSafe, the following error message might appear:
+
+  Invalid Syntax on line &lt;line #&gt; of the file &lt;path to user's SS.INI
+  file&gt;\SS.INI
+
+When you use the command line, the following error message might appear:
+
+  Invalid Syntax on line &lt;line #&gt; of the file &lt;path to user's SS.INI
+  file&gt;\SS.INI Too many SS.INI environment settings
+
+In both error messages, &lt;line #&gt; is some integer and &lt;path to user's
+SS.ini file&gt; is the MS-DOS path to the user's SS.ini file.
+
+CAUSE
+=====
+
+This error occurs in Visual SourceSafe 5.0 if your SS.ini file references
+settings for more than 10 computers.
+
+In Visual SourceSafe version 6.0 the situation has improved. The error now occurs
+only if your SS.ini file references settings for more than 24 computers.
+
+RESOLUTION
+==========
+
+Manually edit the user's SS.ini file, and reduce the number of references to
+computer names to 10 or less for version 5.0 or 24 or less for version 6.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+In Visual SourceSafe, user settings such as window size and window state, are
+all saved to the user's SS.ini file. This is done to preserve the appearance of
+the Visual SourceSafe Explorer from one Visual SourceSafe session to another.
+Each entry is identified with a machine name. If users log on from MachineA,
+their SS.ini might contain entries like the following:
+
+  Maximized (MachineA) = No
+  PrjWidth (MachineA) = 260
+
+If they log on from MachineB later on, then a section of the SS.INI might look
+like the following:
+
+  Maximized (MachineA) = No
+  PrjWidth (MachineA) = 260
+  Maximized (MachineB) = Yes
+  PrjWidth (MachineB) = 300
+
+Users can log on to Visual SourceSafe from 10 different machines successfully.
+However, once they attempt to log on from the 11th machine, the above error
+messages appears.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open your SS.ini file into a text editor, such as Microsoft Notepad. Your
+  SS.ini file is located in \\Vss\Users\&lt;your SourceSafe user name&gt;.
+
+2. Modify this file so that it contains references to 11 or more different
+  computer names in Visual SourceSafe version 5.0 or 25 or more for Visual
+  SourceSafe version 6.0. You can do this by copying one line and pasting it
+  back into the file ten times and then modifying each line to make it unique,
+  for example:
+
+  (Beginning of the file goes here)
+  Hist_Rect (RIGEL1) = 188, 225, 721, 561, 1024, 768
+  History_File_Columns (UI) = 75,85,135,100
+  Maximized (RIGEL1) = No
+  mssccprj = *.vbp, *.mak
+  OutputHeight (TIMWIN1) = 150
+  Position_Toolbar (TIMWIN1) = 222, 183, 676, 215, 1280, 1024
+  PrjWidth (RIGEL1) = 260
+  PrjWidth (RIGEL2) = 260
+  PrjWidth (RIGEL3) = 260
+  PrjWidth (RIGEL4) = 260
+  PrjWidth (RIGEL5) = 260
+  PrjWidth (RIGEL6) = 260
+  PrjWidth (RIGEL7) = 260
+  PrjWidth (RIGEL8) = 260
+  PrjWidth (RIGEL9) = 260
+  PrjWidth (RIGEL10) = 260
+  PrjWidth (RIGEL11) = 260
+  Toolbar (RIGEL2) = Yes
+  (etc. etc.)
+
+3. Start the Visual SourceSafe Explorer or use the command line. Note that the
+  above error messages appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbSSafe500bug kbSSafe600fix kbgrpdsvc 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103800/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103800/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103800/","publisher":null,"image":null,"headline":"Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103800-mhs-inpostexe-strips-local-user-aliases-from-to-line">Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103800
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Microsoft Mail for PC Networks user composes mail to multiple user types
+(local postoffice users and MHS users), the Inpost program (INPOST.EXE)
+correctly routes mail to MHS. However, when the MHS users receive the mail, they
+do not see any of the local users in the To: field, they see only the MHS type
+users in this field.
+
+CAUSE
+=====
+
+In keeping with Standard Message Format (SMF) 64, 70, and 71 specification, the
+To: field is a text field that contains a list of recipient names. (It is the
+12th field from the top when you specify the -h option on the command line to
+activate header information.) However, because the SMF specification does not
+require that local aliases be retained, the Microsoft Mail Gateway to MHS does
+not retain this information.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name    Version
+  --------------------
+  Inpost.exe   3.0.10
+
+This hotfix has been posted to the following Internet location as Mhsgy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/gateways-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to MHS
+version 3.0.
+
+MORE INFORMATION
+================
+
+The message below originally had a total of four recipients: two Microsoft local
+users and two MHS users. However, MHS (INPOST.EXE) has removed the Microsoft
+local users from the To: field.
+
+  Send-to: admin @ CHIMHS,
+   andy @ chimhs
+  Hop-count: 1
+  Sender: andy@chimhs {MAIL32/CHICAGO/andy}
+  Message-encoding: IBM-437
+  MCB-options: NNYOANA
+  MCB-type: 0
+  Date-posted: 25-May-93 11:16:18
+  SMF-version: 70
+  Error-report: 0
+  MHS-id: 43FA012C8117D4D1
+  From: andy@chimhs {MAIL32/CHICAGO/andy}
+  &gt;&gt;&gt;     To: admin@CHIMHS,
+     andy@chimhs
+  Subject: Multi Test # 2
+  Date: 25-May-93 09:40
+  Importance: Low
+  Message-id: 45FA012C8117D4D1
+  Via-host: Hometown.Hometown
+
+
+Additional query words: 3.00 Standard Message Format
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

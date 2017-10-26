@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310179: INFO: How to File a Bug Report for Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310179: INFO: How to File a Bug Report for Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310179/","publisher":null,"image":null,"headline":"Q310179: INFO: How to File a Bug Report for Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310179-info-how-to-file-a-bug-report-for-visual-foxpro">Q310179: INFO: How to File a Bug Report for Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310179
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbGrpDSFox kbDSupport kbvfp700
+Last Modified: 04-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are various techniques that help the Visual FoxPro development team
+reproduce and fix the issues described in your Visual FoxPro bug reports. This
+article provides an overview of some of these techniques, which you may find
+useful in other situations as well.
+
+MORE INFORMATION
+================
+
+To submit a bug report, browse to the following MSDN Online Web site
+
+  Visual FoxPro Support
+  (http://msdn.microsoft.com/vfoxpro/technical/support.asp)
+
+and then click the Submit a Bug Report link. Use the input boxes provided to
+describe your problem, the expected behavior, and the code to reproduce the
+problem.
+
+
+When you report a suspected bug in Visual FoxPro, make the report as automatic as
+possible. If you can copy your code out of the report and paste it into Visual
+FoxPro or an automated test tool, it is much likelier that the error will be
+reproduced and fixed. For example, the following is not an optimal way to report
+a bug:
+
+1. Create a program, and then insert the following code:
+
+  DEFINE CLASS fred98 AS session OLEPUBLIC
+  PROCEDURE mike4
+     RETURN "One ring to rule them all"
+  ENDPROC
+  PROCEDURE mike5
+     RETURN "One ring to bind them"
+  ENDPROC
+  PROCEDURE jenni3
+     RETURN "One ring to bring them all and in the darkness bind them"
+  ENDPROC
+  ENDDEFINE
+
+2. Put the program into a project, and then build a multithreaded DLL.
+
+3. Use a CreateObject function on the DLL that you just created, and then call
+  Mike4.
+
+Although, those are perfectly valid steps, they require excessive modification
+before they can be added to a test suite. In addition, the report includes
+methods that do not have anything to do with the problem at hand.
+
+A concise description of what you expect is particularly important, and
+indicating why -- for example, if the Help file states that something should
+work, the bug may be located in the Help file, as well as in the code.
+
+Note how the following steps are very clear, include only relevant code, describe
+exactly the behavior that you expect to occur, and then describe the behavior
+that actually occurs:
+
+- Run the following code:
+
+  TEXT TO lcRepro NOSHOW 
+  DEFINE CLASS reproClass AS session OLEPUBLIC
+     PROCEDURE reproMethod
+         RETURN "This should return correctly."
+     ENDPROC
+  ENDDEFINE
+  ENDTEXT
+
+  STRTOFILE(lcRepro, "classPrg.prg")
+  BUILD PROJECT reproProj FROM classPrg.prg
+  BUILD MTDLL reproDLL FROM reproProj
+
+  loReproObj = CREATEOBJECT("reproDLL.reproClass")
+  lcRetVal = loReproObj.reproMethod()
+
+Expected behavior:
+
+lcRetVal equal to "This should return correctly."
+
+Actual behavior:
+
+Visual FoxPro starts humming a marching tune.
+In the bug report's "More Information" section, you can include your operating
+system version (including service packs), computer information (video card and
+driver are relevant for problems involving screen display, and occasionally
+other issues), and the results of any other testing that you have done. If you
+have a workaround, provide that as well: Documentation of a workaround can be
+preferable to fixing the bug, because bug fixes can introduce bugs elsewhere in
+the code.
+
+As another possibility, you may need to demonstrate what happens when you click a
+particular button. However, you cannot add code to a button at runtime, so you
+need to create a button class first, as in the following example:
+
+  loForm = CREATEOBJECT("Form")
+  loForm.AddObject("cmdTest", "cmdRepro")
+  loForm.cmdTest.Click()
+
+  DEFINE CLASS cmdRepro AS CommandButton
+  PROCEDURE Click
+     MESSAGEBOX("This is the custom click button we defined.")
+  ENDPROC
+  ENDdefine
+
+However, note that this sample code is not as good an example as the previous
+one: Because it forces the tester to view output onscreen instead of comparing a
+string value, it cannot be automated in the same way.
+
+If you want to show an error that occurred while you were designing the form
+instead of running it, you can use the ASELOBJ function, as follows:
+
+  MODIFY FORM myTestForm NOWAIT
+  ASELOBJ(laForm, 1)  &amp;&amp; The 1 gives the container of the selected object. 
+                      &amp;&amp; While there isn't a selected object in this case,
+                      &amp;&amp; you still get the form designer reference.
+  loForm = laForm(1)
+
+  loForm.AddObject("cmdProblem", "commandButton")
+
+  loForm.AddObject("txtDisplay", "textbox")
+  loForm.txtDisplay.Top = 100
+  loForm.txtDisplay.Width = 200
+
+Finally, if all else fails, you can use the KEYBOARD command to stuff keystrokes
+into the IDE, as follows:
+
+1. Run the following code:
+
+  CREATE FORM form1 NOWAIT 
+  ASELOBJ(laObj, 1)
+  laObj(1).AddObject("cmdTest", "CommandButton")
+  laObj(1).cmdTest.SaveAsClass("corrupt2", "myButton")
+
+  CREATE FORM form2 NOWAIT
+  ASELOBJ(laObj, 1)
+  laObj(1).NewObject("cmdTest", "myButton", "corrupt2")
+  laObj(1).cmdTest.SetFocus()
+  *!* Here's where it gets interesting: I can't SaveAsClass with a live
+  *!* reference, so I have to stuff keystrokes into the menus and 
+  *!* dialogs.
+  *!* ALT-F + L = Save As Class...
+  *!* myButton = name of class
+  *!* corrupt2 = class library
+  *!* y = Yes, overwrite previous definition
+  RELEASE laObj
+  KEYBOARD "{ALT+F}L{PAUSE 1}myButton{TAB}corrupt2{ENTER}{PAUSE 1}Y{PAUSE 1}"
+  *!* Close the form designer windows.
+  KEYBOARD "{CTRL+W}"
+  KEYBOARD "{CTRL+W}"
+
+2. Quit Visual FoxPro.
+
+3. Start Visual FoxPro, and then attempt to MODIFY FORM form2.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

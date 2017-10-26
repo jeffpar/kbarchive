@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172952/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172952/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172952/","publisher":null,"image":null,"headline":"Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172952-how-to-rebuild-corrupted-or-missing-system-partition">Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172952
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Digital Equipment Corporation (DEC) ALPHA-based RISC computers rely on a small
+(less than 4 GB) FAT-formatted SYSTEM partition containing boot files. This
+SYSTEM partition can also contain the Windows NT operating system, but must be
+FAT. RISC computers use the system's firmware and the ARC paths defined in NVRAM
+to read the SYSTEM and OSLOAD partitions. The firmware loads boot files from the
+SYSTEM partition; the SYSTEM partition loads the Windows NT operating system
+files from the OSLOAD partition. If the SYSTEM partition is damaged, corrupted,
+or deleted, the system will no longer start. The SYSTEM partition can have any
+partition number, but is usually Partition-1.
+
+Typical Disk Configuration
+--------------------------
+
+   _________&lt;4GB______________________________________________
+
+  | SYSTEM PARTITION - FAT   |  BOOT PARTITION - NTFS or FAT  |
+  |                          |                                |
+  | \Os\Winntxx\Osloader.exe | \Winnt\System32\Ntoskrnl.exe   |
+  |            \Hal.dll      |                                |
+  |            \*.PAL files  |                                |
+  |__________________________|________________________________|
+       SYSTEMPARTITION (1)            OSLOADPARTITION (2)
+
+The SYSTEM partition contains Os\Winntxx directory (xx = Windows NT OS version).
+The OSLOAD partition contains the Winnt directory or a user- defined directory
+for Windows NT.
+
+Until the SYSTEM partition can be rebuilt, use the article below to help return
+to Windows NT:
+
+  Q172806 Creating an NT Boot Floppy for DEC ALPHA RISC Machines
+
+After you are in Windows NT, you can try to run Chkdsk.exe to recover the
+partition. If Disk Administrator shows the small SYSTEM partition as unknown,
+Windows NT 3.51 will allow you to reformat or delete and recreate the SYSTEM
+partition.
+
+Disk Administrator in Windows NT 4.0 will not allow you to delete or reformat the
+SYSTEM partition. If you try to do so, you will receive one of the following
+messages:
+
+  Windows NT cannot format a volume containing Windows NT system files
+
+-or-
+
+  Disk Administrator cannot delete the active partition on disk 0
+
+MORE INFORMATION
+================
+
+To rebuild the SYSTEM partition, you must either run a built-in program
+contained in the ALPHA firmware or use a utility called Arcinst.exe from the
+Windows NT installation compact disc's Alpha directory to delete and then create
+the SYSTEM partition.
+
+DEC has two different kinds of firmware: the new AlphaBios firmware and the
+original ARC MULTIBOOT firmware. Depending on the model number and age of the
+computer, either kind of firmware could be in place.
+
+NOTE: The screens and menu items may vary from one firmware revision to the next.
+Use the appropriate section below for instructions on deleting or creating a new
+SYSTEM partition.
+
+Deleting and Creating a SYSTEM Partition Using AlphaBios Firmware
+-----------------------------------------------------------------
+
+To delete a system partition and then create a new one, use the following steps:
+
+1. Turn on power to the system.
+
+2. After POST initialization completes, press F2 to enter SETUP; the menu will
+  look similar to the following:
+
+     Display System Configuration
+     Upgrade AlphaBios
+     Hard Disk Setup ...
+     CMOS Setup ...
+     Install Windows NT
+     Utilities
+     About AlphaBios
+
+3. From the AlphaBios SETUP menu, click Hard Disk Setup.
+
+4. A map of the drives and partitions will be displayed along with selections
+  for deleting and creating or formatting partitions. The map will resemble the
+  following diagram:
+
+     -----------------------------------------------------------
+     Disk 0  QLISP10x0    SCSI  ID  0      4091MB
+           Partition 1                   4081MB FAT
+           Partition 2                     10MB UNKNOWN
+
+     Insert=NEW   DEL=Delete   F6=Format   F7=Express   Esc=Exit
+     -----------------------------------------------------------
+
+5. Select the damaged SYSTEM partition, and then either press F6 to format, or
+  choose DELETE and then create a new partition and format it.
+
+  NOTE: If you are recovering a Windows NT 3.51 installation, it will be
+  necessary to start Windows NT using the boot floppy as described in the
+  following Knowledge Base article:
+
+  Q172806 Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers
+
+This is necessary because the Windows NT repair process fails to copy the Windows
+NT loader files if the Os\Winnt351 directory structure is not found on the
+newly-created partition. After you manually recreate this directory structure on
+the SYSTEM partition, copy the six boot files manually from the Windows NT
+installation compact disc, or perform a normal shutdown and then continue with
+step 5 from within the AlphaBios SETUP menu.
+
+6. Go back to the main menu, and then click Install Windows NT.
+
+7. At the first Windows NT Setup screen, press R to repair.
+
+8. When you see the following menu, select only this repair option:
+
+    [ ]  Inspect registry files
+    [ ]  Inspect startup environment
+    [x]  Verify Windows NT system files.
+
+  By selecting this option, Windows NT 4.0 setup will recreate the Os\Winnt40
+  directory structure on the newly created SYSTEM partition, and then prompt to
+  replace the following files from the Windows NT installation compact disc:
+
+      - A221064.PAL
+      - A221066.PAL
+      - A221164.PAL
+      - A321064.PAL
+      - Osloader.exe
+      - Hal.dll
+
+  NOTE: If you have any Windows NT service packs installed, it is very important
+  that you only allow Windows NT to replace the above six files, then select F3
+  to exit repair after they have been replaced. Do NOT select A to replace all
+  files during Repair.
+
+9. After repair is complete, restart the system. The system should start up
+  using the re-created SYSTEM partition.
+
+Deleting and Creating a SYSTEM Partition Using ARC Multiboot Firmware
+---------------------------------------------------------------------
+
+1. Insert the Windows NT installation compact disc into the CD-ROM drive.
+
+2. Start the system. The first menu will be the Boot menu, which will appear
+  similar to the following:
+
+     Boot menu:
+
+        Boot Windows NT Server Vx.xx
+        Boot an alternate Operating System
+        Run A Program
+        Supplementary menu...
+
+3. Click Run a Program on the menu. Type the following path, and then press
+  ENTER:
+
+     cd:\alpha\arcinst
+
+  Arcinst.exe will load from the compact disc and give you the following
+  choices:
+
+     CONFIGURE PARTITIONS
+     EXIT
+
+  Click Configure Partitions. Next, you will see this menu:
+
+     CREATE SYSTEM PARTITION
+     DELETE PARTITION
+     MAKE EXISTING PARTITION INTO THE SYSTEM PARTITION
+     EXIT
+
+  Click Delete Partition, and then select the small ~4 MB FAT partition. Click
+  Create a New System partition; the program will prompt you to enter the size
+  of the new partition:
+
+     ENTER SIZE IN MB (1-4)
+
+  After the partition is made, it will be automatically formatted.
+
+4. Exit Arcinst.exe and go back to the main Boot menu.
+
+  NOTE: If you are recovering a Windows NT 3.51 installation, it will be
+  necessary to start Windows NT using the boot floppy as described in the
+  following Knowledge Base article:
+
+  Q172806 Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers
+
+This is necessary because the Windows NT repair process fails to copy the Windows
+NT loader files if the Os\Winnt351 directory structure is not found on the
+newly-created partition. After you manually recreate this directory structure on
+the SYSTEM partition, copy the six boot files manually from the Windows NT
+installation compact disc, or perform a normal shutdown and then continue with
+step 5 from within the ARC Multiboot menu.
+
+5. Select Run a Program from the main Boot menu. Type the following path, then
+  press ENTER:
+
+     cd:\alpha\setupldr
+
+6. At the first Windows NT Setup screen, press R to repair.
+
+7. When you see the following menu, select only this repair option:
+
+   [ ]  Inspect registry Files
+   [ ]  Inspect startup environment
+   [x]  Verify Windows NT system files.
+
+  When you select this option, Windows NT 4.0 setup will recreate the directory
+  structure os\winnt40 on the newly-created SYSTEM partition, then prompt you
+  to replace the following files from the Windows NT Installation CD-ROM:
+
+      - A221064.PAL
+      - A221066.PAL
+      - A221164.PAL
+      - A321064.PAL
+      - Osloader.exe
+      - Hal.dll
+
+  NOTE: If you have any Windows NT service packs installed, it is very important
+  that you only allow Windows NT to replace the above six files, then select F3
+  to exit repair after they have been replaced. Do NOT select A (replace all
+  files) during Repair.
+
+8. After Repair is complete, restart the system. The system should boot using
+  the re-created system partition.
+
+Additional query words: RISC ALPHA BOOT SYSTEM
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Hardware          : ALPHA
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

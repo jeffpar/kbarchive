@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99745: Tuning NWLINK Registry Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99745: Tuning NWLINK Registry Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99745/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99745/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99745/","publisher":null,"image":null,"headline":"Q99745: Tuning NWLINK Registry Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99745-tuning-nwlink-registry-parameters">Q99745: Tuning NWLINK Registry Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99745
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NWLink is an implementation of the IPX/SPX protocols popular in Novell NetWare
+networks. An additional module, NWNBLink, provides support for the Novell
+implementation of the NetBIOS protocol. This article is divided into the
+following sections:
+
+- NWNBLink Parameters (Microsoft Extensions to Novell NetBIOS)
+
+- NWNBLink Parameters (Novell NetBIOS or Microsoft Extensions)
+
+- IPX/SPX Parameters (Network Interface Cards/Token Ring)
+
+- IPX/SPX Parameters (Global)
+
+CAUTION: Although you can modify all the parameters listed here in Registry
+Editor, the default values should rarely need to be changed. Any changes you
+make to these parameters can easily affect the performance of NWLink.
+
+Note: All parameters are listed in the following format:
+
+  &lt;name&gt; : &lt;data type&gt; : &lt;default value&gt; (valid range, units)
+
+In Registry Editor, if no value is present, assume the default is being used. If
+you cannot find the parameter, you need to manually add it (choose Add Value
+from the Edit menu).
+
+NWNBLink Parameters (Microsoft Extensions to Novell NetBIOS)
+------------------------------------------------------------
+
+Registry path:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NWNBLink\Parameters The
+Microsoft Extensions to Novell NetBIOS are provided to enhance the performance
+of the traditional Novell NetBIOS protocol. NWNBLink can automatically detect
+whether or not it is talking to a Novell NetBIOS implementation that does not
+understand these extensions; if it is being misunderstood, NWNBLink falls back
+to the standard Novell NetBIOS protocol currently in use in Novell networks.
+Significant performance gains can be realized if the extensions are used (for
+example, if the NetBIOS conversation occurs between two Windows NT computers).
+
+AckDelayTime : REG_DWORD : 250 (50-65535, milliseconds)
+-------------------------------------------------------
+
+Determines the value of the delayed acknowledgment timer.
+
+AckWindow : REG_DWORD : 2 (0-65535, frames)
+-------------------------------------------
+
+Specifies the number of frames to receive before sending an acknowledgment.
+AckWindow is used as a clocking mechanism on networks in which the sender is
+networked on a fast LAN, but the receiver is networked on the other side using a
+slower link. By automatically forcing acknowledgments, the sender can keep
+sending frames continually. If both the sender and receiver are located on a
+fast link, you can set AckWindow to 0 to turn off sending an acknowledgment to
+the sender. Alternatively, NWNBLink can be set to dynamically determine whether
+to use the AckWindow parameter based on the setting of AckWindowThreshold.
+
+AckWindowThreshold : REG_DWORD : 500 (0-65535, milliseconds)
+------------------------------------------------------------
+
+Specifies the threshold value for the round trip time that defines when AckWindow
+is ignored. The round trip time is an estimate of how long it takes for a frame
+to be sent and received from a workstation. NWNBLink determines this estimate
+and uses it as a basis for determining whether it is necessary to send automatic
+acknowledgments. If AckWindowThreshold is set to 0, NWNBLink relies on the
+AckWindow entry.
+
+EnablePiggyBackAck : REG_DWORD : 1 (0 - False or 1 - True)
+----------------------------------------------------------
+
+Allows the receiver to piggyback acknowledgments. Piggybacking acknowledgments
+can occur when the receiver has detected the end of a NetBIOS message. When the
+sender and receiver are not participating in two-way NetBIOS traffic, you should
+set EnablePiggyBackAck to false. An example of one-way traffic is a stock update
+application, where a server constantly sends NetBIOS messages to clients, but
+the client does not need to respond.
+
+If EnablePiggyBackAck is true but there is no back traffic, NWNBLink will wait
+the number of milliseconds determined by AckDelayTime before sending the
+acknowledgment, then it will turn off support for piggybacking acknowledgments.
+If the workstation at some point starts sending as well as receiving data,
+NWNBLink will turn support back on for piggybacking acknowledgments.
+
+Extensions : REG_DWORD : 1 (0 - false or 1 - true)
+--------------------------------------------------
+
+Specifies whether to use NWNBLink extensions discussed in this section.
+
+RcvWindowMax : REG_DWORD : 4 (1-49152, frames)
+----------------------------------------------
+
+Specifies the maximum number of frames the receiver can receive at one time. The
+value specified by RcvWindowMax is sent to the sender during session
+initialization to give the sender an upper bound on the number of frames that
+can be sent at one time. (Related parameters: AckDelayTime, AckWindow,
+AckWindowThreshold, EnablePiggyBackAck, and RcvWindowMax.)
+
+NWNBLink Parameters (Novell NetBIOS or Microsoft Extensions)
+------------------------------------------------------------
+
+Registry path:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NWNBLink\Parameters
+
+The following parameters can be used to configure Novell NetBIOS or Microsoft
+extensions.
+
+BroadcastTimeout : REG_DWORD : 1 (1-65535, half-seconds)
+--------------------------------------------------------
+
+Specifies the time between sending find-name requests. This value is not affected
+if Internet is set to 1. (Related parameter: BroadcastCount.)
+
+BroadcastCount : REG_DWORD : 3 (1-65535, times)
+-----------------------------------------------
+
+Specifies the number of times to send a broadcast. This value is not affected if
+Internet is set to 1. (Related parameter: BroadcastTimeout.)
+
+ConnectionCount : REG_DWORD : 5 (1-65535, times)
+------------------------------------------------
+
+Specifies the number of times to send a connection probe. A connection probe is
+sent by the initiator of a session if a connection could not be made to the
+remote computer. (Related parameter: ConnectionTimeout.)
+
+ConnectionTimeout : REG_DWORD : 2 (1-65535, half-seconds)
+---------------------------------------------------------
+
+Specifies the time between sending connection probes when initiating a session.
+
+InitialRetransmissionTime : REG_DWORD : 500 (1-65535, milliseconds)
+-------------------------------------------------------------------
+
+Specifies the initial value for the retransmission time. (Related parameter:
+RetransmitMax.)
+
+Internet : REG_DWORD : 1 (0 - False or 1 - True)
+------------------------------------------------
+
+Specifies whether to change the packet type from 0x04 to 0x14 (Novell WAN
+broadcast).
+
+KeepAliveCount : REG_DWORD : 8 (1-65535, times)
+-----------------------------------------------
+
+Specifies the number of times to send a session-alive frame before timing out if
+there is no response. (Related parameter: KeepAliveTimeout.)
+
+KeepAliveTimeout : REG_DWORD : 60 (1-65535, half-seconds)
+---------------------------------------------------------
+
+Specifies the time between sending session-alive frames. (Related parameter:
+KeepAliveCount.)
+
+RetransmitMax : REG_DWORD : 8 (1-65535, times)
+----------------------------------------------
+
+Specifies the maximum number of times the sender should retransmit before
+assuming that something is wrong with the link. (Related parameter:
+InitialRetransmissionTime.)
+
+IPX/SPX Parameters (Network Interface Cards) (NT 3.1 only)
+----------------------------------------------------------
+
+Registry path:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NWLink\NetConfig\Driver01
+
+These parameters are specific for each binding of NWLink to each network adapter.
+Currently, only one card is supported.
+
+AdapterName : REG_DWORD : &lt;Adapter name&gt;
+----------------------------------------
+
+Specifies the name of the adapter NWLink will use. This parameter is set when you
+choose a network adapter to bind NWLink using the Network icon in Control
+Panel.
+
+BindSap : REG_DWORD : 8137 (hex)
+--------------------------------
+
+Specifies the Ethertype if the frame format is Ethernet II. The Ethertype field
+is only relevant if Ethernet II frames are to be sent or received. You can
+choose the frame type using the Network icon in Control Panel. For more
+information, see the PktType parameter.
+
+EnableFuncaddr : REG_DWORD : 1 (0 - False or 1 - True)
+------------------------------------------------------
+
+When true, this parameter specifies that the IPX functional address is enabled if
+the adapter is a Token Ring card. If false, the IPX functional address is not
+added. The IPX functional address is C00000800000 (hex). Novell has been phasing
+out the use of this address, but it is still used in some places. It is up to
+the application to take advantage of the IPX functional address. In most
+instances, the broadcast address (FFFFFFFFFFFF hex) is used.
+
+MaxPktSize : REG_DWORD : 0 (0-65535)
+------------------------------------
+
+Specifies the maximum frame size the network adapter should be allowed to
+transmit. If this number is 0, NWLink will get this information from the adapter
+driver. This parameter allows the administrator to make the maximum transmit
+size smaller than the driver allows. A scenario in which you might want to
+change this entry is in an environment in which the network adapter on one side
+of a conversation is on a link that has a larger frame size than the link on the
+other side. For example, if the sending station is linked to a 16 MBPS Token
+Ring and the receiving station is linked to an Ethernet network.
+
+NetworkNumber : REG_MULTI_SZ : 0 (network number in hex)
+--------------------------------------------------------
+
+Specifies the network number to be used for this adapter. If it is 0, NWLink gets
+the network number from the network as it is running. This parameter is set
+using the Network icon in Control Panel. IPX network numbers are 4 bytes (8 hex
+characters) long. An example of an IPX network number is AABBDDFF. You should
+not have to enter a specific value because NWLink will determine it for you.
+Make sure to get the network number for your IPX subnet from the network
+administrator if you want to enter a specific number.
+
+PktType : REG_MULTI_SZ : 1 (0-4)
+--------------------------------
+
+NWLink supports Ethernet, Token Ring, FDDI, and Arcnet topologies. The PktType
+parameter specifies the packet form to use. The valid values are:
+
+  0 (Ethernet II) 1 (Ethernet 802.3) 2 (802.2) 3 (SNAP) 4 (Arcnet)
+
+If your adapter is an Ethernet adapter, choose between 0 and 3. If the adapter is
+Token Ring or FDDI, choose option 2 or 3. If you are using an Arcnet adapter,
+choose option 4. If the adapter is a Token Ring or FDDI adapter, values 0 and 1
+will work the same as value 2. (Related parameter: BindSap.)
+
+RipAgeTime : REG_DWORD : 5 (1-65535, minutes)
+---------------------------------------------
+
+IPX maintains a routing information protocol (RIP) cache in order to locate
+machines on a remote network. The RipAgeTime entry informs IPX how many minutes
+to wait before requesting a RIP update for an entry. This timer is reset when a
+RIP announcement is received for an entry that is in the RIP cache.
+
+RipUsageTime : REG_DWORD : 15 (1-65535, minutes)
+------------------------------------------------
+
+IPX maintains a RIP cache in order to locate machines on a remote network. The
+RipUsageTime entry informs IPX how many minutes to wait before an entry in the
+RIP cache will be deleted from the cache. This timer is reset when a packet is
+sent to the remote machine.
+
+SourceRouteBcast : REG_DWORD : 0 (0 or 1)
+-----------------------------------------
+
+Specifies the source route to be used when transmitting a packet to the broadcast
+MAC address (FFFFFFFFFFF hex). If this value is 0, the packet is transmitted to
+the single-route broadcast (0xC2, 0x70). If the value is 1, the packet is
+transmitted to the all-routes broadcast (0x82, 0x70). (Related parameters:
+SourceRouteDef, SourceRouting, and SourceRouteMCast.)
+
+SourceRouteDef : REG_DWORD : 0 (0 or 1)
+---------------------------------------
+
+Specifies the source route to be used when transmitting a package to a unique MAC
+address that is not in the source routing table. If the MAC address is in the
+source routing table, the route in the table will be used. If this value is 0,
+the packet is transmitted to the single- route broadcast (0xC2, 0x70). If the
+value is 1, the packet is transmitted to the all-routes broadcast (0x82, 0x70).
+(Related parameters: SourceRouteBcast, SourceRouting, and SourceRouteMCast.)
+
+SourceRouting : REG_DWORD : 0 (0 - False or 1 - True)
+-----------------------------------------------------
+
+Specifies whether to use source routing. This parameter is only used if the
+adapter is Token Ring. If there are no source routing bridges on the Token Ring,
+disable this entry to disable all of the source routing logic. (Related
+parameters: SourceRouteBcast, SourceRouteDef, and SourceRouteMCast.)
+
+SourceRouteMcast : REG_DWORD : 0 (0 - False or 1 - True)
+--------------------------------------------------------
+
+Specifies the source route to be used when transmitting a packet to a multi-cast
+MAC address (C000xxxxxxxx). If false, the packet is transmitted to the
+single-route broadcast (0xC2, 0x70). If true, the packet is transmitted to the
+all-routes broadcast (0x82, 0x70). (Related parameters: SourceRouteBcast,
+SourceRouteDef, and SourceRouting.)
+
+IPX/SPX Parameters (Global)
+---------------------------
+
+Registry path:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NWLink\Parameters
+
+The following parameters are global for the entire NWLink transport.
+
+ConnectionCount : REG_DWORD : 10 (1-65535, times)
+-------------------------------------------------
+
+Specifies the number of times the probe is sent when SPX is trying to connect to
+a remote node. If no response is received after the probes are sent, an error
+occurs. (Related parameter: ConnectionTimeout.)
+
+ConnectionTimeout : REG_DWORD : 2 (1 to 65535, half-seconds)
+------------------------------------------------------------
+
+Specifies the time between connection probes when SPX is trying to connect to a
+remote node. (Related parameter: ConnectionCount.)
+
+KeepAliveTimeout : REG_DWORD : 12 (1-65535, half-seconds)
+---------------------------------------------------------
+
+Specifies the amount of time the local side should wait before sending a probe to
+the remote side to verify that the SPX connection is still alive. (Related
+parameter: KeepAliveCount.)
+
+KeepAliveCount : REG_DWORD : 8 (1-65535, times)
+-----------------------------------------------
+
+Specifies how many times to send a keep-alive probe before timing out if there is
+no response. (Related parameter: KeepAliveTimeout.)
+
+RipCount : REG_DWORD : 5 (1-65535, times)
+-----------------------------------------
+
+When the RIP protocol layer is trying to find a route on the network, this
+parameter specifies how many times to send a request before giving up. (Related
+parameter: RipTimeout.)
+
+RipTimeout : REG_DWORD : 1 (1-65535, half-seconds)
+--------------------------------------------------
+
+Specifies the timeout between RIP request packets being sent out when the RIP
+protocol layer is trying to find a route on the network. (Related parameter:
+RipCount.)
+
+WindowSize : REG_DWORD : 4 (1-10, SPX packets)
+----------------------------------------------
+
+Specifies the window to use in the SPX packets. SPX uses the Allocation field of
+the SPX packet to tell the remote node how many receives are available for
+receiving data. The WindowSize entry specifies what value to put in the SPX
+Allocation field.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

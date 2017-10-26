@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81821: Program Manager Does Not Maximize | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81821: Program Manager Does Not Maximize" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81821/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81821/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81821/","publisher":null,"image":null,"headline":"Q81821: Program Manager Does Not Maximize","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81821-program-manager-does-not-maximize">Q81821: Program Manager Does Not Maximize</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81821
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program is started using the run= line in the WIN.INI file, or by placing
+its name on the command line that starts Windows, Program Manager starts
+minimized. When Program Manager is restored, Program Manager does not come up
+maximized, even if it was maximized when you last exited Windows and saved
+changes.
+
+WORKAROUND
+==========
+
+The only workaround at this time is to save the changes with Program Manager in
+a non-maximized state, but with the borders pulled out as far as possible.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows version 3.0. This
+problem was corrected and does not occur in later versions of Windows.
+
+MORE INFORMATION
+================
+
+The WIN.INI file has a run= line, on which program executable filenames can be
+placed. For example:
+
+       run=c:\winword\winword.exe c:\windows\calendar.exe
+
+The programs listed on this line are then started automatically as if they had
+been started by double-clicking their icons or starting them by choosing Run
+from the File menu. The same thing occurs if the program is started by including
+its name on the command line that starts Windows. For example:
+
+  win winword
+
+This is as opposed to using the load= line in the WIN.INI file where the programs
+start minimized as icons on the desktop. One consequence of starting programs on
+the run= line or the command line is that Program Manager is minimized
+regardless of whether or not Minimize On Use is selected in the Options menu of
+Program Manager.
+
+If the Program Manager is then restored by double-clicking its icon, it returns
+in a non-maximized state. This occurs even if, when the you last exited Windows,
+Program Manager was maximized and the changes were saved.
+
+The state of Program Manager, minimized, maximized, or restored (open as a Window
+but not maximized) is recorded in the PROGMAN.INI file in the [Settings]
+section. The line appears as follows
+
+       Window=vv ww xxx yyy z
+
+where z can be either 1, 2, or 3. This number determines the state Program
+Manager is in when Windows starts. Restored is represented by 1, minimized by 2,
+and maximized by 3. If the number is 3, Program Manager starts maximized unless
+a program is started on the run= line in the WIN.INI file or by putting its
+executable filename on the command line that starts Windows.
+
+When the program starts, Program Manager is minimized. When you double- click on
+its icon, Program Manager displays in a window but is not maximized. The value
+in the PROGMAN.INI file, however, is not changed. It is still 3.
+
+Additional query words: 3.00 3.00a 3.0 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

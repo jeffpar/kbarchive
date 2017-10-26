@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149108: BUG: Command Group Class Button Movements Not Inherited | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149108: BUG: Command Group Class Button Movements Not Inherited" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149108/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149108/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149108/","publisher":null,"image":null,"headline":"Q149108: BUG: Command Group Class Button Movements Not Inherited","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149108-bug-command-group-class-button-movements-not-inherited">Q149108: BUG: Command Group Class Button Movements Not Inherited</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149108
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changes to command button positions made in a class based on CommandGroup are
+not inherited properly in forms containing that class.
+
+WORKAROUND
+==========
+
+Delete the instance of the class from the forms where it is contained.
+Reinstantiate the class on the form. The changes in command button positions
+will be displayed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new project in Visual FoxPro called "Test" (without the quotation
+  marks).
+
+2. With the Test project maximized, click the Classes tab. Click the New button
+  in the Project Manager to create a new class.
+
+3. Enter Cmdtst as the class name. Base the class on CommandGroup, and save it
+  in C:\Vfp\Repro.vcx. (This path assumes C: is the current drive and Vfp is
+  the Visual FoxPro root directory. This may need to be modified to suit
+  individual configurations.)
+
+4. When the Class Designer window appears, drag the border surrounding the
+  command group out enough to provide room to reposition command buttons. Save
+  the class. The Repro class library should now appear in the Classes tab of
+  the Test project.
+
+5. Click the Documents tab in the Test project. With Forms highlighted, click
+  the New button in the project manager to create a new form.
+
+6. When the Form Designer window appears, make sure the Form Controls toolbar is
+  visible. Click the View Classes button in the Form Controls toolbar, and
+  select Add from the menu. Add C:\Vfp\Repro.vcx. The Form Controls toolbar
+  should now change so that it contains the Cmdtst class. Click the Cmdtst
+  class, and add it to the form.
+
+7. Save the form as REPROTST.
+
+8. Click the Classes tab on the Test project, and modify the Cmdtst class. When
+  the Class Designer window appears, select and move one of the command buttons
+  in the group to another position inside the border. Move the command button
+  enough to be noticeably out of place. Save the class.
+
+9. Click the Documents tab from the Test project, and modify the Reprotst form.
+  The change in position made in the class is not inherited by the instance of
+  the class on the form.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q323470: HOW TO: Create a Secure WebDAV Publishing Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q323470: HOW TO: Create a Secure WebDAV Publishing Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/323/Q323470/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/323/Q323470/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/323/Q323470/","publisher":null,"image":null,"headline":"Q323470: HOW TO: Create a Secure WebDAV Publishing Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q323470-how-to-create-a-secure-webdav-publishing-directory">Q323470: HOW TO: Create a Secure WebDAV Publishing Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q323470
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 21-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Create a WebDAV Publishing Directory
+- Set Up Basic Authentication
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to create a secure Web Distributed
+Authoring and Versioning (WebDAV) publishing directory.
+
+Create a WebDAV Publishing Directory
+------------------------------------
+
+1. On the Microsoft Windows 2000 desktop, click My Computer.
+
+2. In the Inetpub directory, create a physical directory. For example, if you
+  name the directory WebDAV, the path to this directory is C:\Inetpub\WebDAV.
+  You can put this directory anywhere except under the Wwwroot directory.
+  Wwwroot is an exception because its default discretionary access control
+  lists (DACLs) are different from those on other directories.
+
+3. Click Start, click Programs, click Administrative Tools, and then open the
+  Internet Information Services (IIS) snap-in. Click to select the Web site in
+  which you want to create the virtual directory, and then map it to the
+  physical directory that you created in step 2.
+
+4. Type "WebDAV" (without the quotation marks) as the alias for this virtual
+  directory, and then link it to the physical directory that you created in
+  step 2.
+
+5. Reset the default NTFS file system permissions to something more restrictive.
+  Users need at least Read permissions to see the directory. If users want to
+  upload content, users also need Write permissions.
+
+6. Grant the Read, Write, and Browsing access permissions for the virtual
+  directory from the IIS Microsoft Management Console (MMC). This grants users
+  the right to publish documents on this virtual directory and to see a list of
+  the files in it. Although Microsoft does not recommend this for security
+  reasons, you can grant the same access to all of your Web site and allow
+  clients to publish to all of your Web server.
+
+  NOTE: Granting Write access does not give a client the ability to modify
+  Active Server Pages (ASP) pages or any other script-mapped files. To allow
+  these files to be modified, you must grant Write permissions and Script
+  source access after you create the virtual directory.
+
+Set Up Basic Authentication
+---------------------------
+
+1. Set up Secure Sockets Layer (SSL).
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q290625 HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment Using
+  Certificate Server 2.0
+
+2. After you have installed the certificate on the Web server, enable Basic
+  authentication on the WebDAV virtual directory in the IIS MMC:
+
+  a. Click Start, click Programs, and then click Administrative Tools.
+
+  b. Click Internet Information Services. This opens the MMC for IIS.
+
+  c. Locate your WebDAV publishing directory under the Web site that you
+     created. Right-click the directory, and then click Properties.
+
+  d. In the window that appears, click the Directory Security tab. Under
+     Anonymous Access and Authentication Control, click Edit. This opens the
+     Authentication Methods window.
+
+  e. Click to select Basic authentication for the virtual directory. Make sure
+     that nothing except Basic is selected.
+
+  f. Click OK in the next two windows so that the settings take effect.
+
+Troubleshooting
+---------------
+
+For a user to log on to a server using Basic authentication, their user account
+needs Log on locally permissions. You can add these permissions from the Local
+Security Policy.
+
+REFERENCES
+==========
+
+For more information, see the Internet Information Services 5.0 documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis510
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

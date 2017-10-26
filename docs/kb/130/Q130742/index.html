@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130742/","publisher":null,"image":null,"headline":"Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130742-event-id-5721-when-upgrading-lan-manager-bdc-to-windows-nt-bdc">Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130742
+Product(s): Microsoft Windows NT
+Version(s): 1.0,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server 
+- Microsoft Windows NT Server version 3.5 
+- Microsoft LAN Manager to Windows NT Advanced Server Upgrade, version 1.0 
+- Microsoft LAN Manager 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade a LAN Manager backup domain controller (BDC) to a Windows NT
+BDC, the NetLogon service terminates and the following is written to the system
+log:
+
+  Event ID: 5721
+  Source: NetLogon
+  Type: Error
+  Description: The session setup to the Windows NT Domain Controller &lt;domain
+  controller name&gt; for domain &lt;domain name&gt; failed because the Windows
+  NT domain controller does not have an account for the computer &lt;computer
+  name&gt;.
+
+CAUSE
+=====
+
+This problem occurs if the computer name is the same as an existing user name.
+For example, if you upgrade a LAN Manager BDC to a Windows NT BDC with a unique
+computer name and then change the computer name to the replaced LAN Manager BDC,
+the above symptom occurs.
+
+When you create a Windows NT primary domain controller (PDC), the PORTUAS utility
+is run to convert the LAN Manager user account database (UAS) to a Windows NT
+security accounts manager (SAM) database. LAN Manager servers have a users group
+called SERVER, which contains the computer names of the servers as users. This
+group and its users were ported to the Windows NT PDC.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Shutdown the new Windows NT BDC.
+
+2. On the Windows NT PDC, remove the BDC computer name from the SERVER group in
+  User Manager for Domains.
+
+3. In Server Manager, remove the BDC computer name and synchronize with the
+  domain.
+
+4. After the synchronization is complete, add the BDC computer name and
+  synchronize with the domain again.
+
+5. Restart the Windows NT BDC.
+
+NOTE: If the domain becomes a Windows NT-only domain, you may want to remove the
+SERVER group and the individual user names in the group.
+
+Additional query words: prodnt lanman 3.10 2.20 event viewer
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTAdvSerSearch kbWinNTS350search kbAudDeveloper _IKkbbogus kbLanManSearch kbLanManNTAdvServUpg
+Version           : :1.0,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

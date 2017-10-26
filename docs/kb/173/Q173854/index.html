@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173854/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173854/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173854/","publisher":null,"image":null,"headline":"Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173854-wd97-cannot-view-graphics-inserted-with-image-submit-control">Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173854
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbgraphic word97 kbwdinternet
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word, when you save a document as Hypertext Markup Language (HTML),
+if the document contains images inserted in an Image Submit Form Field ActiveX
+control, you cannot view the images in a Web browser, such as Microsoft Internet
+Explorer.
+
+This problem occurs with images in the following formats:
+
+- Windows Metafile (WMF)
+
+- Portable Network Graphics (PNG)
+
+CAUSE
+=====
+
+When you save the document, Word does not convert WMF and PNG images to Graphics
+Interchange Format (GIF); however, your Web browser cannot display WMF or PNG
+images.
+
+WORKAROUND
+==========
+
+To use a WMF or PNG image file in an Image Submit Form Field control, use either
+of the following methods.
+
+Method 1: Save the Image in the Body of an HTML Document
+--------------------------------------------------------
+
+1. After you insert the WMF or PNG image into your Word document, convert the
+  Word document to HTML format by following these steps:
+
+  a. Click Save on the File menu.
+
+  b. In the Save As Type list, click to select HTML Document.
+
+  c. Click Save.
+
+  NOTE: Word coverts the WMF or PNG to GIF images. As Word converts these
+  images, it assigns a file name such as Image1.gif, Image2.gif, Image3.gif,
+  and so on. Word saves these files in the same directory as your HTML
+  document.
+
+2. If you want to rename the Image&lt;X&gt;.gif files, follow these steps:
+
+  a. Click Open on the File menu, and click All Files(*.*) in the Files Of Type
+     list.
+
+  b. Use the right mouse button to click (right-click) the Image&lt;X&gt;.gif
+     file, and then click Rename on the shortcut menu.
+
+  c. Type a new name for the file and then press ENTER.
+
+3. When you insert the image into the Image Submit Form Field control, use the
+  file from step 2.
+
+Method 2: Use a Graphics Program to Convert the Graphic Format to GIF
+---------------------------------------------------------------------
+
+Use a graphics program to export the WMF or PNG images to the GIF or JPEG (JPG)
+image format, and then insert the GIF or JPEG image into the Image Submit Form
+Field control.
+
+To convert the image, you can use the Microsoft Paint program that comes with
+Microsoft Windows, and the Microsoft Photo Editor program that comes with
+Microsoft Office 97.
+
+Use the appropriate method for your situation.
+
+WMF Image:
+
+To convert a WMF image using Microsoft Paint and Microsoft Photo Editor, follow
+these steps:
+
+1. In Word 97, click to select the WMF graphic, and then click Copy on the Edit
+  menu.
+
+2. Save the image as a bitmap in Microsoft Paint. To do this, follow these
+  steps:
+
+  a. Click Start, point to Programs, point to Accessories, and then click
+     Paint.
+
+  b. In Microsoft Paint, click Paste on the Edit menu. Click Yes if you receive
+     the following prompt:
+
+  The image in the clipboard is larger than this bitmap. Would you like the
+  bitmap enlarged?
+
+  c. On the File menu, click Save.
+
+  d. In the Save As dialog box, navigate to the folder that contains your HTML
+     document, type a file name, and then click Save to save the file as a
+     bitmap.
+
+  e. Quit Microsoft Paint by clicking Exit on the File menu.
+
+3. Start Microsoft Photo Editor. To do this, click Start, point to Programs, and
+  then click Microsoft Photo Editor.
+
+4. In Microsoft Photo Editor, click Open on the File menu, and then open the
+  bitmap file you created in step 2.
+
+5. Click Save As on the File menu. In the Save As Type list, click to select
+  GIF, type a file name, and then click Save.
+
+6. On the File menu, click Exit, and then switch to Microsoft Word.
+
+When you insert the graphic into the Image Submit Form Field Control, use the
+file you created in step 5.
+
+PNG Image:
+
+To convert a PNG image using Microsoft Photo Editor, follow these steps:
+
+1. Start Microsoft Photo Editor. To do this, click Start, point to Programs, and
+  then click Microsoft Photo Editor.
+
+2. In Microsoft Photo Editor, click Open on the File menu, and then open the PNG
+  file.
+
+3. On the File menu, click Save As. In the Save As Type list, click to select
+  GIF, type a file name, and then Click Save.
+
+4. On the File menu, click Exit, and then switch to Microsoft Word.
+
+When you insert the graphic into the Image Submit Form Field Control, use the
+file you created in step 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Forms on Web Pages
+------------------
+
+When authoring a Web page, you can use ActiveX controls to create forms for
+collecting or providing dynamic data. The controls are standard form elements
+used on the World Wide Web.
+
+Because forms require additional support files and therefore additional server
+support, you should consult your network or Web administrator when designing the
+form.
+
+Every form must have one Submit or Image Submit button.
+
+Image Submit:
+
+This control provides a Picture dialog box that allows you to select the image
+you want. When you copy the Web page to the server, you must also copy the
+button image.
+
+Submit:
+
+This control submits the data that the user types into other form elements.
+
+For more information about the Web page form elements that are installed with
+Word, click the Office Assistant, type "image submit control," click Search, and
+then click the "Form elements you can use on a Web page" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Graphic Filters
+---------------
+
+This section further describes the types of graphic filters mentioned in this
+article. Graphic filters allow you to use graphics formats in various ways
+within Word.
+
+Windows Metafile (WMF):
+
+The Windows Metafile graphics filter (Wmfimp32.flt) supports the Windows Metafile
+format. You must have the Windows Metafile filter to insert a WMF file into a
+Word document as a Microsoft Clip Gallery object. However, you don't need the
+filter to insert a WMF file directly into a Word document.
+
+Portable Network Graphics (PNG):
+
+The Portable Network Graphics filter (Png32.flt) supports the Portable Network
+Graphics tenth specification (version 1.0). You must have the filter to insert a
+PNG file into a Word document as a Microsoft Clip Gallery object or a Photo
+Editor object. However, you don't need the filter to insert a PNG file directly
+into a Word document. You must also have the PNG filter to import GIF files into
+Word.
+
+Graphics Interchange Format (GIF):
+
+The Graphics Interchange Format filter (Gifimp32.flt) supports file format
+versions GIF87a (including interlacing) and GIF89a (including interlacing and
+transparency). The GIF filter works with the Portable Network Graphics filter to
+import GIF files into Word. The HTML converter also uses the GIF filter to
+export pictures in a Word document to GIF images in an HTML page.
+
+NOTE: A limitation of the GIF filter is that it only imports the first image of a
+multi-image GIF file.
+
+JPEG File Interchange Format file (JPG):
+
+The JPEG graphics filter (Jpegim32.flt) supports Version 6.0 of the JPEG File
+Interchange Format (JFIF). You must have the JPEG filter to insert a JPEG file
+into a Word document as a Microsoft Clip Gallery object or a Photo Editor
+object. However you don't need the JPEG filter to insert a JPEG file directly
+into a Word document.
+
+The JPEG filter has the following limitations:
+
+- The filter does not support JPEG Tagged Interchange Format (JTIF) files.
+
+- The filter does not support cyan-magenta-yellow-black (CMYK) JPEG files.
+
+For more information about other graphic filters that Word can use, click the
+Office Assistant, type "graphic filters," click Search, and then click the
+"Graphic file types Word can use" topic.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbgraphic word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

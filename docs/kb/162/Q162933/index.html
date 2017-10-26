@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162933/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162933/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162933/","publisher":null,"image":null,"headline":"Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162933-acc97-user-without-permissions-can-check-out-an-object-in-vss">Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162933
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop
+Last Modified: 15-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multi-user skills.
+
+When you try to check out a module for which you have no Microsoft Access
+permissions, you may receive the following error message:
+
+  You don't have permissions to modify '&lt;object name&gt;.' To modify this
+  object you must have Modify Design permission for it. If the object is a
+  table, you must also have Delete Data and Update Data permissions for it. For
+  more information on permissions and who can set them, click Help.
+
+You will then receive a Visual SourceSafe error that states that the object was
+not imported.
+
+Although the module is not replaced and the permissions are enforced as expected,
+the module appears as "checked out." You are then not allowed to either check in
+or undo the checkout. The Admin user must check it in.
+
+CAUSE
+=====
+
+Adding a secure database to Visual SourceSafe will not remove security on the
+local version of that database. Visual SourceSafe and Microsoft Access will
+function normally, as long as the users have permissions to modify objects in
+the local database. If they log in as someone who doesn't, then they will be
+able to check out an object but not be able to make changes to it.
+
+RESOLUTION
+==========
+
+If you delete the local version of the database and create a new one from Visual
+SourceSafe, then the resulting database will not have any of the security
+permissions in it.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new database and name it vssTest.mdb.
+
+2. Create a new module and name it modVssTest. Save the module.
+
+3. On the Tools menu, click Security, and select "User and Group Accounts."
+
+4. Click the Change Password Tab and give Admin a new password of "admin"
+  (without the quotation marks).
+
+5. Click the Users tab, and click New.
+
+6. Create a new user with a name of "test" (without the quotation marks) and a
+  Personal ID of "1234" (without the quotation marks).
+
+7. Click OK.
+
+8. On the Tools menu, click Security, and select "User and Group Permissions."
+
+9. Click to select Groups.
+
+10. Select Users in the Users/Group Name box and revoke all permissions for
+  Users on modVssTest by clicking to clear the Read Design check box.
+
+11. Click OK.
+
+12. On the Tools menu, click SourceSafe, and select "Add Database to
+  SourceSafe."
+
+13. Close Microsoft Access.
+
+14. Restart Microsoft Access and log in as "test" (without the quotation marks).
+
+15. Open vssTest.mdb.
+
+16. Using the right mouse button, click modVssTest, and click Check Out.
+
+17. Note that you receive the first of error messages mentioned in the
+  "Symptoms" sections. Click OK, and then OK on the next error message. Note
+  that the Object shows in the database container as checked out.
+
+18. Using the right mouse button, click modVssTest and click Check In. Note that
+  you receive an error message that "You don't have permission to read
+  '&lt;object name&gt;'". Click OK. Note that you receive an error message
+  from SourceSafe that it failed to export the object.
+
+19. Close Microsoft Access.
+
+20. Open Microsoft Access and log in as Admin with password "admin" (without the
+  quotation marks).
+
+21. Open vssTest.mdb.
+
+22. Using the right mouse button, click modVssTest and select Check In. The
+  admin user is able to check the object back into SourceSafe.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbAccessSearch kbAccess97 kbAccess97Search
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

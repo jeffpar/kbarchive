@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134621: How to Find Out If an Object Is in a Container or Not | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134621: How to Find Out If an Object Is in a Container or Not" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134621/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134621/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134621/","publisher":null,"image":null,"headline":"Q134621: How to Find Out If an Object Is in a Container or Not","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134621-how-to-find-out-if-an-object-is-in-a-container-or-not">Q134621: How to Find Out If an Object Is in a Container or Not</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134621
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the TYPE() function to find out whether or not
+an object is contained in another object.
+
+MORE INFORMATION
+================
+
+It is sometimes necessary to know if an object is in a container, and perform an
+action according to the way an instance of the object is created. For example, a
+form can be placed on the desktop or in a formset, and the program can perform
+different tasks depending on the container.
+
+The Parent property of an object references the container object of a control.
+Use the TYPE() function to determine if an object has a parent. For example:
+
+     IF TYPE ('This.Parent')= "0"  &amp;&amp; The object has a container
+        ? This.Parent.Name
+     ENDIF
+
+The following example illustrates this method using a command button. If the
+control is placed in a toolbar, the Visible property of the toolbar is set to
+false (.F.) when the button is released. To run this example, copy and paste the
+code into a program (.PRG) file. When the toolbar is displayed, click the Close
+button. The toolbar is hidden before it is released.
+
+Sample Code
+-----------
+
+  PUBLIC oTB1,oFrm1  &amp;&amp; Define public variables
+  oTb1=CREATE('tbmytool') &amp;&amp; Create an instance of the toolbar object
+  oTb1.SHOW
+  oFrm1=CREATE('Frmmyform') &amp;&amp; Create an instance of the form object
+  oFrm1.SHOW
+
+  DEFINE CLASS cmdQuit AS COMMANDBUTTON
+     PROCEDURE CLICK
+        RELEASE THISFORM  &amp;&amp; Release either the form or the toolbar
+     ENDPROC
+     PROCEDURE DESTROY  &amp;&amp; Called when the object is released
+        IF TYPE('This.parent')="O"
+           IF THIS.PARENT.BASECLASS="Toolbar"
+              THIS.PARENT.VISIBLE = .F. &amp;&amp; Hides the toolbar
+              =MESSAGEBOX('Toolbar is hidden')
+           ENDIF
+        ENDIF
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS tbMyTool AS TOOLBAR
+     ADD OBJECT cmdNew AS COMMANDBUTTON
+     ADD OBJECT cmdClose AS cmdQuit
+  ENDDEFINE
+
+  DEFINE CLASS frmmyform AS FORM
+     ADD OBJECT cmdForm AS cmdQuit
+  ENDDEFINE
+
+Additional query words: VFoxWin form set
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

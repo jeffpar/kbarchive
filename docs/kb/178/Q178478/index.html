@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178478: WD97: Can’t Send Word Document with Outlook Express | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178478: WD97: Can’t Send Word Document with Outlook Express" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178478/","publisher":null,"image":null,"headline":"Q178478: WD97: Can’t Send Word Document with Outlook Express","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178478-wd97-cant-send-word-document-with-outlook-express">Q178478: WD97: Can’t Send Word Document with Outlook Express</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178478
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97 kbwdinternetkbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you point to Send To on the File menu, and then click Mail Recipient, Word
+does not use Microsoft Outlook Express to send your e-mail message, even though
+you have set Outlook Express to be your default e-mail editor.
+
+Note: If Mail Recipient is missing when you point to Send To on the File menu, or
+if you get an error message when you click Mail Recipient, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q190716 WD97: Send To Mail Recipient Problem with Outlook Express/Win 95
+
+  Q190719 WD97: No Send To Mail Recipient with Outlook Express/Windows 98
+
+CAUSE
+=====
+
+Microsoft Outlook Express is not correctly set up to work with Word as your
+default e-mail program. The "Make Outlook Express my default Simple MAPI client"
+option has not been selected.
+
+RESOLUTION
+==========
+
+To set Microsoft Outlook Express as your default e-mail program with Word, use
+the following steps:
+
+1. Quit Word and all running e-mail programs. For example, quit Microsoft
+  Exchange or Microsoft Outlook.
+
+2. In Microsoft Outlook Express, click Options on the Tools menu.
+
+3. Click to select the General tab.
+
+4. Click to select the "Make Outlook Express my default e-mail program" check
+  box.
+
+5. Click to select the "Make Outlook Express my default Simple MAPI client"
+  check box.
+
+  When you click to select this option, the following message will appear:
+
+  Enabling Outlook Express as your Simple MAPI client will allow you to send
+  documents from other programs using the Send command on the File menu. You
+  should do this if Outlook Express is the only mail program you use.
+
+  Other MAPI-enabled applications such as Microsoft Exchange, Microsoft Outlook,
+  Windows Messaging, and the Mail Merge feature in Microsoft Word will be
+  disabled if you make Outlook Express your Simple MAPI client, but they will
+  work again when you deselect this option.
+
+  Are you sure you want to set Outlook Express as your Simple MAPI client?
+
+  Click Yes.
+
+6. Click OK. The following message will appear:
+
+  The Simple MAPI client has been changed. You may need to restart your machine
+  for this change to take effect.
+
+  Click OK.
+
+7. Quit Outlook Express, and then restart your computer.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q178077 How to Set Outlook Express as Your Default Simple MAPI Client
+
+  Q178481 WD97: Errors Accessing the Address Book Icon
+
+
+Additional query words: IE IE4 file send
+
+======================================================================
+Keywords          : word97 kbwdinternet kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

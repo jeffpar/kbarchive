@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192054/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192054/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192054/","publisher":null,"image":null,"headline":"Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192054-smtp-mail-from-smtp-gateway-has-incorrect-sent-date-and-time">Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192054
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0a; winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.0a 
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When viewing mail on a Microsoft Exchange Server computer sent from the
+Microsoft Mail SMTP gateway, the SENT date/time as displayed in the message is
+not accurate.
+
+CAUSE
+=====
+
+The SMTP gateway was incorrectly sending the sent date/time time zone
+information in the format
+
+  DOW, DAY  MMM YYYY HH:MM:SS +/-NN
+
+where NN = number of hours offset from GMT. This format is incorrect according to
+RFC 822, and should be
+
+  DOW, DAY  MMM YYYY HH:MM:SS +/-NNNN
+
+where NNNN = number of hours and minutes from GMT. As a result, the Microsoft
+Exchange Internet Mail Service ignored this offset and displayed the SENT
+date/time as if no time zone information had been sent.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact Microsoft Product Support Services to obtain
+the following fix.
+
+This fix should have the following time stamp:
+
+  21/08/98  17:05   71,739 SMTPLMN.EXE Microsoft LAN Manager for MS-DOS
+
+  21/08/98  17:05   80,721 SMTPFTP.EXE PC/TCP Kernel from FTP Software, Inc.
+
+  21/08/98  17:05   74,643 SMTPNVL.EXE Novell LAN WorkPlace for DOS
+
+  21/08/98  17:05   76,179 SMTPWIN.EXE Excelan EXOS 205T Intelligent
+                                       Ethernet Controller with LAN
+                                       WorkPlace Network Software
+                                       (version 3.4)
+
+  21/08/98  17:05   80,473 SMTPXLN.EXE WIN/TCP for DOS RunTime (version
+                                       4.1) from The Wollongong Group,
+                                       Inc.
+
+Change the name of the appropriate EXE file above to Smtpgate.exe, and replace
+this file on your gateway.
+
+A new command-line option, -Z, has been added to this version. If the -Z
+command-line parameter is not used, the SMTP gateway will format the time zone
+in the way it always did. With the fix, the correct format will be used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Mail SMTP Gateway
+version 3.0a.
+
+
+A supported fix is now available, but has not been fully regression tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next service pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: msmail timezone sent
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300a
+Version           : MS-DOS:3.0a; winnt:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

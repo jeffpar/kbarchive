@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159498/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159498/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159498/","publisher":null,"image":null,"headline":"Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159498-howto-call-lanman-services-from-32-bit-visual-basic-apps">Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159498
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbSDKPlatform kbVBp400 kbNetAPI kbGrpDSVBDB kbGrpDSNet kb32bitOnly
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to call various LanMan services from 32-bit Visual
+Basic 4.0 applications. The sample code also applies to applications which use
+the 32-bit VBA engine. An example of such an application is Microsoft Excel 97.
+
+MORE INFORMATION
+================
+
+Windows NT and Windows 2000 exposes LanMan 32-bit Application Programming
+Interfaces (APIs) to provide network services. These APIs are called only from
+32-bit programs running on a Windows NT or Windows 2000 and are used to control
+both the local and remote Windows NT (or Windows 2000) machines that you have
+permission to access.
+
+Note: While Windows 2000 supports LanMan APIs for backwards compatibility, it is
+recommended that ADSI be used instead for most of the functions below. For more
+information about ADSI, search for Active Directory Services Interface or ADSI
+in the Microsoft Knowledge Base or MSDN.
+
+This article contains code examples of using the following LanMan APIs:
+
+  NetGetDCName
+  NetUserDel
+  NetGroupAddUser
+  NetGroupDelUser
+  NetUserAdd        (using Level 1 structure)
+  NetUserEnum       (using Level 0 structure)
+  NetGroupEnumUsers (using Level 0 structure)
+  NetGroupEnum      (using Level 0 structure)
+  NetUserGetGroups  (using Level 0 structure)
+  NetAPIBufferFree
+  NetAPIBufferAllocate
+
+Although, Visual Basic stores strings internally as UNICODE, it converts them to
+ANSI when it calls APIs. Normally this isn't a problem because most 32-bit APIs
+have both an ANSI and a UNICODE version. However, LanMan APIs only support
+UNICODE. The code snippet below demonstrates how to use Byte arrays to pass
+UNICODE parameters.
+
+Instead of using strings, for example:
+
+     "X = My_ANSI_API("Some String")"
+
+use Byte arrays, such the one below, because they aren't converted to ANSI:
+
+     Dim Temp() As Byte, Message As String
+     Message = "Some String"
+     Temp = Message &amp; vbNullChar     '
+     MyUnicodeAPI Temp(0)
+     Message = Temp                  ' modified me
+
+Declarations and Sample Code
+----------------------------
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN RISK.
+Microsoft provides this macro code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose. Microsoft provides
+examples of Visual Basic procedures for illustration only, without warranty
+either expressed or implied, including, but not limited to the implied
+warranties of merchantability and/or fitness for a particular purpose. The
+Visual Basic procedures in this article are provided 'as is' and Microsoft does
+not guarantee that they can be used in all situations. While Microsoft Support
+professionals can help explain the functionality of a particular procedure, they
+will not modify these examples to provide added functionality, nor will they
+help you construct procedures to meet your specific needs. If you have limited
+programming experience, you may want to consult one of the Microsoft Solution
+Providers. Solution Providers offer a wide range of fee-based services,
+including creating custom procedures. For more information about Microsoft
+Solution Providers, call Microsoft Customer Information Service at (800)
+426-9400.
+
+     Option Explicit
+     Option Base 0     ' Important assumption for this code
+
+     Type MungeLong
+       X As Long
+       Dummy As Integer
+     End Type
+
+     Type MungeInt
+       XLo As Integer
+       XHi As Integer
+       Dummy As Integer
+     End Type
+
+     Type TUser0                    ' Level 0
+       ptrName As Long
+     End Type
+
+     Type TUser1                    ' Level 1
+       ptrName As Long
+       ptrPassword As Long
+       dwPasswordAge As Long
+       dwPriv As Long
+       ptrHomeDir As Long
+       ptrComment As Long
+       dwFlags As Long
+       ptrScriptPath As Long
+     End Type
+
+     '
+     ' for dwPriv
+     '
+     Const USER_PRIV_MASK = &amp;H3
+     Const USER_PRIV_GUEST = &amp;H0
+     Const USER_PRIV_USER = &amp;H1
+     Const USER_PRIV_ADMIN = &amp;H2
+
+     '
+     ' for dwFlags
+     '
+     Const UF_SCRIPT = &amp;H1
+     Const UF_ACCOUNTDISABLE = &amp;H2
+     Const UF_HOMEDIR_REQUIRED = &amp;H8
+     Const UF_LOCKOUT = &amp;H10
+     Const UF_PASSWD_NOTREQD = &amp;H20
+     Const UF_PASSWD_CANT_CHANGE = &amp;H40
+     Const UF_NORMAL_ACCOUNT = &amp;H200     ' Needs to be ORed with the
+                                         ' other flags
+
+     '
+     ' for lFilter
+     '
+     Const FILTER_NORMAL_ACCOUNT = &amp;H2
+
+     Declare Function NetGetDCName Lib "NETAPI32.DLL" (ServerName As Byte, _
+     DomainName As Byte, DCNPtr As Long) As Long
+
+     Declare Function NetUserDel Lib "NETAPI32.DLL" (ServerName As Byte, _
+     UserName As Byte) As Long
+
+     Declare Function NetGroupAddUser Lib "NETAPI32.DLL" (ServerName As _
+     Byte, GroupName As Byte, UserName As Byte) As Long
+
+     Declare Function NetGroupDelUser Lib "NETAPI32.DLL" (ServerName As _
+     Byte, GroupName As Byte, UserName As Byte) As Long
+
+     ' Add using Level 1 user structure
+     Declare Function NetUserAdd1 Lib "NETAPI32.DLL" Alias "NetUserAdd" _
+     (ServerName As Byte, ByVal Level As Long, Buffer As TUser1, ParmError _
+     As Long) As Long
+
+     ' Enumerate using Level 0 user structure
+     Declare Function NetUserEnum0 Lib "NETAPI32.DLL" Alias "NetUserEnum" _
+     (ServerName As Byte, ByVal Level As Long, ByVal lFilter As Long, _
+     Buffer As Long, ByVal PrefMaxLen As Long, EntriesRead As Long, _
+     TotalEntries As Long, ResumeHandle As Long) As Long
+
+     Declare Function NetGroupEnumUsers0 Lib "NETAPI32.DLL" Alias _
+     "NetGroupGetUsers" (ServerName As Byte, GroupName As Byte, _
+     ByVal Level As Long, Buffer As Long, ByVal PrefMaxLen As Long, _
+     EntriesRead As Long, TotalEntries As Long, ResumeHandle As Long) As Long
+
+     Declare Function NetGroupEnum0 Lib "NETAPI32.DLL" Alias "NetGroupEnum" _
+     (ServerName As Byte, ByVal Level As Long, Buffer As Long, ByVal _
+     PrefMaxLen As Long, EntriesRead As Long, TotalEntries As Long, _
+     ResumeHandle As Long) As Long
+
+     Declare Function NetUserGetGroups0 Lib "NETAPI32.DLL" Alias _
+     "NetUserGetGroups" (ServerName As Byte, UserName As Byte, _
+     ByVal Level As Long, Buffer As Long, ByVal PrefMaxLen As Long, _
+     EntriesRead As Long, TotalEntries As Long) As Long
+
+     Declare Function NetAPIBufferFree Lib "NETAPI32.DLL" Alias _
+     "NetApiBufferFree" (ByVal Ptr As Long) As Long
+
+     Declare Function NetAPIBufferAllocate Lib "NETAPI32.DLL" Alias _
+     "NetApiBufferAllocate" (ByVal ByteCount As Long, Ptr As Long) As Long
+
+     Declare Function PtrToStr Lib "Kernel32" Alias "lstrcpyW" _
+     (RetVal As Byte, ByVal Ptr As Long) As Long
+
+     Declare Function StrToPtr Lib "Kernel32" Alias "lstrcpyW" _
+     (ByVal Ptr As Long, Source As Byte) As Long
+
+     Declare Function PtrToInt Lib "Kernel32" Alias "lstrcpynW" _
+     (RetVal As Any, ByVal Ptr As Long, ByVal nCharCount As Long) As Long
+
+     Declare Function StrLen Lib "Kernel32" Alias "lstrlenW" _
+     (ByVal Ptr As Long) As Long
+
+     Function AddUserToGroup(ByVal SName As String, _
+     ByVal GName As String, ByVal UName As String) As Long
+     '
+     ' This only adds users to global groups - not to local groups
+     '
+     Dim SNArray() As Byte, GNArray() As Byte, UNArray() As Byte, _
+     Result As Long
+       SNArray = SName &amp; vbNullChar
+       GNArray = GName &amp; vbNullChar
+       UNArray = UName &amp; vbNullChar
+       Result = NetGroupAddUser(SNArray(0), GNArray(0), UNArray(0))
+       If Result = 2220 Then Debug.Print _
+     "There is no **GLOBAL** group '" &amp; GName &amp; "'"
+       AddUserToGroup = Result
+     End Function
+
+     Function DelUser(ByVal SName As String, ByVal UName As String) As Long
+     Dim UNArray() As Byte, SNArray() As Byte
+       UNArray = UName &amp; vbNullChar
+       SNArray = SName &amp; vbNullChar
+       DelUser = NetUserDel(SNArray(0), UNArray(0))
+     End Function
+
+     Function DelUserFromGroup(ByVal SName As String, _
+     ByVal GName As String, ByVal UName As String) As Long
+     '
+     ' This only deletes users from global groups - not local groups
+     '
+     Dim SNArray() As Byte, GNArray() As Byte, UNArray() As Byte, _
+     Result As Long
+       SNArray = SName &amp; vbNullChar
+       GNArray = GName &amp; vbNullChar
+       UNArray = UName &amp; vbNullChar
+       Result = NetGroupDelUser(SNArray(0), GNArray(0), UNArray(0))
+       If Result = 2220 Then Debug.Print _
+     "There is no **GLOBAL** group '" &amp; GName &amp; "'"
+       DelUserFromGroup = Result
+     End Function
+
+     Function EnumerateGroups(ByVal SName As String, _
+     ByVal UName As String) As Long
+     '
+     ' Enumerates global groups only - not local groups
+     '
+     ' The buffer is filled from the left with pointers to user names that
+     ' are filled from the right side. For example:
+     '
+     '     ptr1|ptr2|...|ptrn|&lt;garbage&gt;|strn|...|str2|str1
+     '     ^-------------- BufPtr buffer ----------------^
+     '
+     ' On NT, TotalEntries is the number of entries left to be read including
+     ' the currently read entries.
+     '
+     ' On LanMan and OS/2, it is the total number of entries, period. Code
+     ' would have to be changed to reflect this if the Domain controller
+     ' wasn't an NT machine.
+     '
+     ' BufPtr gets the address of the buffer (or ptr1 - add 4 to BufPtr for
+     ' each additional pointer)
+     '
+     Dim Result As Long, BufPtr As Long, EntriesRead As Long, _
+     TotalEntries As Long, ResumeHandle As Long, BufLen As Long, _
+     SNArray() As Byte, GNArray(99) As Byte, UNArray() As Byte, _
+     GName As String, I As Integer, UNPtr As Long, _
+     TempPtr As MungeLong, TempStr As MungeInt
+
+       SNArray = SName &amp; vbNullChar       ' Move to byte array
+       UNArray = UName &amp; vbNullChar       ' Move to Byte array
+       BufLen = 255                       ' Buffer size
+       ResumeHandle = 0                   ' Start with the first entry
+
+       Do
+         If UName = "" Then
+           Result = NetGroupEnum0(SNArray(0), 0, BufPtr, BufLen, _
+     EntriesRead, TotalEntries, ResumeHandle)
+         Else
+           Result = NetUserGetGroups0(SNArray(0), UNArray(0), 0, BufPtr, _
+     BufLen, EntriesRead, TotalEntries)
+         End If
+         EnumerateGroups = Result
+         If Result &lt;&gt; 0 And Result &lt;&gt; 234 Then    ' 234 means multiple reads
+                                                  ' required
+           Debug.Print "Error " &amp; Result &amp; " enumerating group " &amp; _
+     EntriesRead &amp; " of " &amp; TotalEntries
+           Exit Function
+         End If
+         For I = 1 To EntriesRead
+           ' Get pointer to string from beginning of buffer
+           ' Copy 4 byte block of memory in 2 steps
+           Result = PtrToInt(TempStr.XLo, BufPtr + (I - 1) * 4, 2)
+           Result = PtrToInt(TempStr.XHi, BufPtr + (I - 1) * 4 + 2, 2)
+           LSet TempPtr = TempStr ' munge 2 Integers to a Long
+           ' Copy string to array and convert to a string
+           Result = PtrToStr(GNArray(0), TempPtr.X)
+           GName = Left(GNArray, StrLen(TempPtr.X))
+           Debug.Print "Group: " &amp; GName
+         Next I
+       Loop Until EntriesRead = TotalEntries
+     ' The above condition only valid for reading accounts on NT
+     ' but not OK for OS/2 or LanMan
+
+       Result = NetAPIBufferFree(BufPtr)         ' Don't leak memory
+
+     End Function
+
+     Function EnumerateUsers(ByVal SName As String, ByVal GName As String) _
+     As Long
+     '
+     ' If a group name is specified, it must be a global group
+     ' and not a local group.
+     '
+     ' The buffer is filled from the left with pointers to user names that
+     ' are filled from the right side. For example:
+     '
+     '     ptr1|ptr2|...|ptrn|&lt;garbage&gt;|strn|...|str2|str1
+     '     ^-------------- BufPtr buffer ----------------^
+     '
+     ' On Windows NT, TotalEntries is the number of entries left to be read,
+     ' including the currently read entries.
+     ' On LanMan and OS/2, it is the total number of entries, period.  Code
+     ' would have to be changed to reflect this if the Domain controller
+     ' wasn't an NT machine.
+     '
+     ' BufPtr gets the address of the buffer (or ptr1 - add 4 to BufPtr for
+     ' each additional pointer)
+     '
+     ' SName should be "\\servername"
+     '
+     Dim Result As Long, BufPtr As Long, EntriesRead As Long, _
+     TotalEntries As Long, ResumeHandle As Long, BufLen As Long, _
+     SNArray() As Byte, GNArray() As Byte, UNArray(99) As Byte, _
+     UName As String, I As Integer, UNPtr As Long, TempPtr As MungeLong, _
+     TempStr As MungeInt
+
+       SNArray = SName &amp; vbNullChar       ' Move to byte array
+       GNArray = GName &amp; vbNullChar       ' Move to Byte array
+       BufLen = 255                       ' Buffer size
+       ResumeHandle = 0                   ' Start with the first entry
+
+       Do
+         If GName = "" Then
+           Result = NetUserEnum0(SNArray(0), 0, FILTER_NORMAL_ACCOUNT, _
+     BufPtr, BufLen, EntriesRead, TotalEntries, ResumeHandle)
+         Else
+           Result = NetGroupEnumUsers0(SNArray(0), GNArray(0), 0, BufPtr, _
+     BufLen, EntriesRead, TotalEntries, ResumeHandle)
+         End If
+         EnumerateUsers = Result
+         If Result &lt;&gt; 0 And Result &lt;&gt; 234 Then    ' 234 means multiple reads
+                                                  ' required
+           Debug.Print "Error " &amp; Result &amp; " enumerating user " _
+     &amp; EntriesRead &amp; " of " &amp; TotalEntries
+           If Result = 2220 Then Debug.Print _
+     "There is no **GLOBAL** group '" &amp; GName &amp; "'"
+           Exit Function
+         End If
+         For I = 1 To EntriesRead
+           ' Get pointer to string from beginning of buffer
+           ' Copy 4-byte block of memory in 2 steps
+           Result = PtrToInt(TempStr.XLo, BufPtr + (I - 1) * 4, 2)
+           Result = PtrToInt(TempStr.XHi, BufPtr + (I - 1) * 4 + 2, 2)
+           LSet TempPtr = TempStr ' munge 2 integers into a Long
+           ' Copy string to array
+           Result = PtrToStr(UNArray(0), TempPtr.X)
+           UName = Left(UNArray, StrLen(TempPtr.X))
+           Debug.Print "User: " &amp; UName
+         Next I
+       Loop Until EntriesRead = TotalEntries
+     ' The above condition is only valid for reading accounts on Windows NT,
+     ' but is not OK for OS/2 or LanMan
+
+       Result = NetAPIBufferFree(BufPtr)         ' Don't leak memory
+
+     End Function
+
+     Function GetPrimaryDCName(ByVal MName As String, _
+     ByVal DName As String) As String
+     Dim Result As Long, DCName As String, DCNPtr As Long
+     Dim DNArray() As Byte, MNArray() As Byte, DCNArray(100) As Byte
+       MNArray = MName &amp; vbNullChar
+       DNArray = DName &amp; vbNullChar
+       Result = NetGetDCName(MNArray(0), DNArray(0), DCNPtr)
+       If Result &lt;&gt; 0 Then
+         Debug.Print "Error: " &amp; Result
+         Exit Function
+       End If
+       Result = PtrToStr(DCNArray(0), DCNPtr)
+       Result = NetAPIBufferFree(DCNPtr)
+       DCName = DCNArray()
+       GetPrimaryDCName = DCName
+     End Function
+
+     Function AddUser(ByVal SName As String, ByVal UName As String, _
+     ByVal PWD As String) As Long
+     Dim Result As Long, UNPtr As Long, PWDPtr As Long, ParmError As Long
+     Dim SNArray() As Byte, UNArray() As Byte, PWDArray() As Byte
+     Dim UserStruct As TUser1
+     '
+     ' Move to byte arrays
+     '
+       SNArray = SName &amp; vbNullChar
+       UNArray = UName &amp; vbNullChar
+       PWDArray = PWD &amp; vbNullChar
+     '
+     ' Allocate buffer space
+     '
+       Result = NetAPIBufferAllocate(UBound(UNArray) + 1, UNPtr)
+       Result = NetAPIBufferAllocate(UBound(PWDArray) + 1, PWDPtr)
+     '
+     ' Copy arrays to the buffer
+     '
+       Result = StrToPtr(UNPtr, UNArray(0))
+       Result = StrToPtr(PWDPtr, PWDArray(0))
+     '
+     ' Fill the structure
+     '
+       With UserStruct
+         .ptrName = UNPtr
+         .ptrPassword = PWDPtr
+         .dwPasswordAge = 3
+         .dwPriv = USER_PRIV_USER
+         .ptrHomeDir = 0
+         .ptrComment = 0
+         .dwFlags = UF_NORMAL_ACCOUNT Or UF_SCRIPT
+         .ptrScriptPath = 0
+       End With
+     '
+     ' Add the user
+     '
+       Result = NetUserAdd1(SNArray(0), 1, UserStruct, ParmError)
+       AddUser = Result
+       If Result &lt;&gt; 0 Then
+         Debug.Print "Error " &amp; Result &amp; " in parameter " &amp; ParmError _
+     &amp; " when adding user " &amp; UName
+       End If
+     '
+     ' Release buffers from memory
+     '
+       Result = NetAPIBufferFree(UNPtr)
+       Result = NetAPIBufferFree(PWDPtr)
+
+     End Function
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbVBp400 kbNetAPI kbGrpDSVBDB kbGrpDSNet kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

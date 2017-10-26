@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60845: Source Level Routing and OpenAdapter Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60845: Source Level Routing and OpenAdapter Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60845/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60845/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60845/","publisher":null,"image":null,"headline":"Q60845: Source Level Routing and OpenAdapter Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60845-source-level-routing-and-openadapter-issues">Q60845: Source Level Routing and OpenAdapter Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60845
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The following are questions and answers about LAN Manager source level routing
+and OpenAdapter issues:
+
+1. Q. What does it mean when an NDIS driver says it supports source routing?
+  Does this mean the NDIS driver keeps a table of routing information for
+  subsequent use, or does it mean that the token-ring chipset the NDIS driver
+  talks to keeps the routing information? Or, does this signal JETBEUI that the
+  data it is receiving from the NDIS driver may have source routing
+  information? This would mean that when JETBEUI receives the data, it has to
+  know how to determine whether the source routing field exists, and determine
+  the length of the source routing field in order to determine where the real
+  data in the frame begins.
+
+  A. If IBM source routing is used (bit 9 in MACservice specific
+  characteristics), it is the protocol module's responsibility to encode and
+  interpret appropriate source routing information. This bit merely implies
+  that the device is capable of sending packets with the source routing bit set
+  in the source address so that a protocol may recognize such a packet.
+
+2. Q. If a Token-ring NDIS driver says it supports the open adapter, is it
+  JETBEUI's responsibility to call OpenAdapter to get onto the ring? Or should
+  the NDIS driver open the adapter itself once the NDIS driver has initialized
+  the adapter?
+
+  A. If OpenAdapter (bit 11) is set, the protocol driver must ensure that the
+  adapter is open. The open status of an adapter can be determined by examining
+  bit 4 of the MAC status in the MAC-specific status table. If the adapter is
+  not open, the protocol must issue an OpenAdapterRequest (normally during
+  bind-time processing).
+
+Additional query words: 2.00 2.10 2.10a 2.20 source routing ndis
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

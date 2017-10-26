@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139972/","publisher":null,"image":null,"headline":"Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139972-fix-file-open-common-dialog-in-win95-returns-invalid-filename">Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139972
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,95
+Operating System(s): 
+Keyword(s): kbVBp400bug kbOSWin95 kbOSWin98fix kbGrpDSVB
+Last Modified: 07-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling the ShowOpen method of the common dialog control to show the File Open
+common dialog box results in the following error:
+
+  Run-time error '20477'
+  Invalid filename
+
+CAUSE
+=====
+
+This error occurs the second time the ShowOpen method is called after multiple
+file names have been previously selected in the File Open dialog box. The only
+time this error occurs is when the Flags property of the common dialog box
+includes both cdlOFNAllowMultiselect (to allow multiple selections) and
+cdlOFNExplorer (to use the Windows Explorer File Open dialog box). Without the
+new shell, Microsoft Windows NT does not display the Windows Explorer Open File
+dialog box, so this problem only occurs with Microsoft Windows 95.
+
+In this case, clicking multiple files in the File Open dialog box and clicking
+Open causes the FileName property of the common dialog control to be filled with
+a NULL delimited string of filenames. When the ShowOpen method is called, an
+attempt is made to set the default file(s) to whatever the FileName property of
+the common dialog control is. The error results because the common dialog
+control does not know what to do when it encounters embedded NULLs in the
+FileName property.
+
+RESOLUTION
+==========
+
+NULLs must be used instead of spaces to delimit the list of file names because
+the Windows Explorer style Open File common dialog box with multiple selections
+enabled automatically includes support for long filenames. However, because the
+Open File dialog box does not accept a list of NULL delimited files when it is
+displayed, there is no way to have multiple files selected by default when
+displaying the Open File dialog box.
+
+Use either of the following methods to avoid the error described above:
+
+In your code, before the ShowOpen method is called again, reset the FileName
+property of the common dialog box to a single file or to no file at all.
+
+- or -
+
+Do not use the cdlOFNAllowMultiselect and cdlOFNExplorer flags at the same time.
+Search on "CommonDialog control," Topic: "Changes to CommonDialog Flags for
+Windows 95 and Windows NT," in the Visual Basic Help file for more information
+on the behavior of different combinations of these constants under different
+operating systems.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of the article. This problem has been fixed in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+Steps to reproduce problem (under Windows 95 only)
+--------------------------------------------------
+
+1. Start Visual Basic, or if it is already running, click New Project on the
+  File menu.
+
+2. In the toolbox, double-click CommonDialog to add a common dialog control to
+  the form.
+
+3. In the toolbox, double-click the command button to add a new command button
+  to the form.
+
+4. Add the following code to the Command1_Click procedure:
+
+        Private Sub Command1_Click()
+           CommonDialog1.Flags = cdlOFNAllowMultiselect Or cdlOFNExplorer
+           CommonDialog1.ShowOpen
+        End Sub
+
+5. On the Run menu, click Start or press the F5 key to run your application.
+
+6. Click the command button and in the resulting File Open dialog box select two
+  or more files. Click Open to hide the File Open dialog box.
+
+7. Click the command button again to attempt to show the File Open dialog box
+  again. Instead of the dialog box, a message box showing the above mentioned
+  error is displayed.
+
+REFERENCES
+==========
+
+Visual Basic for Windows Help file version 4.0; Search on "CommonDialog
+control,"; Topic: "Changes to CommonDialog Flags for Windows 95 and Windows
+NT,".
+
+Additional query words: kbCtrlz
+
+======================================================================
+Keywords          : kbVBp400bug kbOSWin95 kbOSWin98fix kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWin95search kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Version           : WINDOWS:4.0,95
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159904: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan TCP/IP) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159904: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan TCP/IP)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159904/","publisher":null,"image":null,"headline":"Q159904: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan TCP/IP)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159904-xcln-using-shivaremote-with-exchange-win-3xlanman-tcpip">Q159904: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan TCP/IP)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159904
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup kbusage exc4 exc5
+Last Modified: 26-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A white paper on ShivaRemote is located on Microsoft TechNet and can also be
+found on the following World Wide Web location:
+
+  http://www.microsoft.com/Exchange/
+
+This article explains how to use ShivaRemote with the Microsoft Exchange Windows
+3.x client, with LAN Manager version 2.2c with TCP/IP. Use the Config.sys,
+Autoexec.bat, and Protcol.ini files shown at the end of this article as models.
+
+MORE INFORMATION
+================
+
+Server Considerations
+---------------------
+
+Configure the Remote Access Server (either Windows NT or a Shiva LanRover) to
+allow remote clients to request a predetermined IP address. To use this option
+in Windows NT:
+
+1. In Control Panel, double-click the Network icon.
+
+2. Click RAS, click Network, and click Server Settings.
+
+3. Click TCP, and select the "Allow remote clients to request a predetermined IP
+  address" check box.
+
+The following article has additional information on RAS:
+
+  Q158124 XCLN: ShivaRemote with Exchange - RAS Server Considerations
+
+Client Configuration
+--------------------
+
+Install LAN Manager version 2.2c software on the client computer. This is located
+on the Windows NT 3.51 Server compact disc in the
+Clients\Lanman\Disks\Disk1\Setup directory.
+
+NOTE: If LAN Manager has already been installed, run Setup.exe from the LAN
+Manager installation directory (Lanman.dos by default).
+
+1. Configure LAN Manager with the following options:
+
+   - TCP/IP (only) bound to the network card driver
+
+   - A static IP address, subnet mask, and default gateway
+
+   - DHCP disabled
+
+2. Manually add entries for the Microsoft Exchange Server computer name and IP
+  address in the HOSTS file. This file is located in the
+  &lt;drive&gt;:\Lanman.dos\Etc directory, where &lt;drive&gt; is the letter of
+  the local hard disk drive where LAN Manager is installed.
+
+3. Configure LAN Manager with the following options:
+
+   - Username and HostName in the Advanced dialog box
+
+   - Windows Sockets enabled in the Advanced dialog box
+
+   - Computername, Username, and Domain in the Workstation Settings dialog box
+
+4. Install the Microsoft Exchange Windows 3.x client.
+
+5. In the Config.sys file, manually add the following line:
+
+     DEVICE=C:\EXCHANGE\DIALNDIS.EXE(after DEVICE=...\PROTMAN.DOS
+     /i:C:\LANMAN.DOS)
+
+6. In the Config.sys file, remark out or remove the line that loads the network
+  card driver.
+
+7. In the \Lanman.Dos\Protocol.ini file, manually edit the following:
+
+  [TCPIP_XIF]
+  ;BINDINGS = "LAN Card Driver"     Remark out this line
+  BINDINGS = SDIALIN$               Add this line
+
+  [SDIALIN$]                        Add this line
+  DriverName = SDIALIN$             Add this line
+
+8. Run Connectw.exe to bring up the ShivaRemote Connect window.
+
+9. On the Tools menu, click Port Setup to configure the modem port.
+
+10. Click the Options button to select the IP protocol and type the static IP
+  address of the client computer. For more information on creating and saving
+  a connection file, refer to the ShivaRemote Online Guide.
+
+11. Save the new connection information and quit the Connect.exe utility.
+
+12. Restart the computer. If you receive any errors during startup, resolve
+  these before continuing.
+
+13. Open the connection file you want and click the Connect button. After the
+  connection has been established, quit the Connect program. You should see
+  the message regarding the static IP address. Make sure this is the same IP
+  address which is statically assigned to the client computer.
+
+14. Next, attempt to PING the IP address and host name of the computer running
+  Microsoft Exchange Server. The PING.EXE utility is located in the
+  \LANMAN.DOS\NETPROG directory. If PINGing the host name fails, but PINGing
+  the IP address works, the HOSTS file must be modified (see Step 2 above).
+  This step is necessary for the Microsoft Exchange client to connect to the
+  server.
+
+15. Start the Microsoft Exchange Windows 3.x client (online, as a test). Type
+  the User Name (Exchange Mailbox Name), the Password (Windows NT Domain
+  Password), and the Domain (Windows NT Domain Name that your account is in)
+  and verify you can be properly logged in.
+
+If the above step allows you to properly send/receive mail, ShivaRemote and
+Microsoft Exchange are configured correctly.
+
+The Microsoft Exchange client remote capabilities can now be configured (remote
+mail or offline folders).
+
+To set up the Microsoft Exchange client to automatically dial while working
+offline:
+
+1. In Control Panel Mail-Fax, select the properties for Exchange Server in the
+  profile and on the "dial up networking" tab.
+
+2. Click the Shiva connection name that was tested in step 1 under "dial using
+  the following connection."
+
+3. Type the user name, password, and domain name in the dialog box.
+
+Start the Microsoft Exchange client offline and select either the "remote
+mail/connect" or the "sync this folder" check box. Shiva will dial and transmit
+necessary information (depending on whether off-line folders [.ost files] or
+.pst files are being used).
+
+NOTE: To disconnect, either run Connect.exe again and select Disconnect or type
+"connect /d" from the command line.
+
+Sample Configuration Files
+--------------------------
+
+Use these Config.sys, Autoexec.bat, and Protocol.ini files as models.
+
+NOTE: In order to format this article for the Web, some line breaks in this file
+sample had to be changed. In the Config.sys file, the following line should be
+part of the line that preceded it:
+
+  /i:C:\LANMAN.DOS
+
+In the Autoexec.bat file, the following line should be part of the line that
+preceded it:
+
+  2.2a
+
+  Config.sys
+  ----------
+
+  device=c:\dos\himem.sys /testmem:off
+  device=c:\dos\emm386.exe noems
+  LASTDRIVE=Z
+  DOS=HIGH,UMB
+  DEVICEhigh=C:\LANMAN.DOS\DRIVERS\PROTMAN\PROTMAN.DOS /i:C:\LANMAN.DOS
+  devicehigh=c:\doscln\dialndis.exe
+  DEVICEhigh=C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\tcpdrv.dos
+  /i:C:\LANMAN.DOS
+  DEVICEhigh=C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\nemm.dos
+
+Autoexec.bat
+------------
+
+  @REM ==== LANMAN 2.2a == DO NOT MODIFY BETWEEN THESE LINES == LANMAN
+  2.2a
+  ====
+  SET PATH=C:\LANMAN.DOS\NETPROG;%PATH%
+  C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\umb.com
+  NET START WORKSTATION
+  LOAD TCPIP
+  SOCKETS
+  NET LOGON shivat *
+  @REM ==== LANMAN 2.2a == DO NOT MODIFY BETWEEN THESE LINES == LANMAN
+  2.2a
+  ====
+  set shiva=c:\exchange\shiva
+
+Protocol.ini
+------------
+
+  [PROTMAN]
+    DRIVERNAME = PROTMAN$
+    DYNAMIC = YES
+    PRIORITY = NETBEUI
+
+  [TCPIP_XIF]
+    DRIVERNAME      = TCPIP$
+    IPADDRESS0 = 200 200 200 201
+    SUBNETMASK0 = 255 255 255 0
+    DEFAULTGATEWAY0 =
+    NBSESSIONS = 6
+  ; the following two parameters added after documentation was completed
+    TCPSEGMENTSIZE  = 1450
+    TCPWINDOWSIZE   = 1450
+    LOAD            = tcptsr[c],tinyrfc[c],emsbfr[cr]
+    UNLOAD          = "unloadt /notsr[dc]"
+  ;  BINDINGS = "DEPCA_NIF"
+    BINDINGS = SDIALIN$
+    NETFILES = C:\LANMAN.DOS\ETC
+    DISABLEDHCP = 1
+    LANABASE = 0
+
+  [SDIALIN$]
+  DRIVERNAME=SDIALIN$
+
+REFERENCES
+==========
+
+Updated modem scripts for use with ShivaRemote can be found on Shiva's web page
+at www.shiva.com under "support"/modem scripts.
+
+Additional configuration information can also be found in the Config.hlp file
+installed during installation of the ShivaRemote software.
+
+For more information about specific remote options with the Microsoft Exchange
+client, see the following article in the Microsoft Knowledge Base:
+
+  Q139934 XCLN: The Microsoft Exchange Client and Mobile Users
+
+For additional information on supported Shiva configurations for use with the
+Microsoft Exchange Server, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q158124 XCLN: ShivaRemote with Exchange - RAS Server Considerations
+
+
+  Q158095 Using ShivaRemote with Exchange (Windows 3.x/LanMan NetBEUI)
+
+  Q158077 Using ShivaRemote with Exchange (Windows 3.x/real-mode IPX)
+
+  Q158111 ShivaRemote with Exchange (WFW 3.11/WFW TCP/IP or NetBEUI)
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: remote deliver now sync all folders exclnfaqold
+
+======================================================================
+Keywords          : kbenv kbsetup kbusage exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

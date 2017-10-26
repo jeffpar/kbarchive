@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176280/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176280/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176280/","publisher":null,"image":null,"headline":"Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176280-tn3270-name-resolution-requires-fully-qualified-domain-names">Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176280
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TN3270 service included with SNA Server version 3.0 (and later) allows an
+administrator to restrict access to specific TN3270 clients by assigning either
+IP addresses or host names to LUA LUs/Pools assigned to the TN3270 service.
+
+When you restrict access to TN3270 sessions using host names, TN3270 clients fail
+to connect to the TN3270 service if the host name used is the NETBIOS name (that
+is, computer name) of the client. The exact error that the client sees will
+depend on the TN3270 emulator being used.
+
+The 3270 applet included with SNA Server 3.0 Service Pack 2 when configured for
+TN3270E Server Connection returns the following error when this problem occurs:
+
+  [TN3270-33]: ERROR - The server is unable to satisfy the session request.
+
+A TN3270 internal trace returns the following message to the TN3270 client:
+
+  &gt;10/31 14:00:50.491 (+ smidgen ) Event=TEV_DataToClient
+  Thread = 0x00000145 Session = 0x0009F6F0 Socket = 0x00000300
+  SUBNEG BEGIN TN3270E DEVICE-TYPE REJECT
+  Number of bytes = 9
+
+CAUSE
+=====
+
+If the TN3270 service is configured for Use Name Resolution, it requires the use
+of fully qualified domain names (FQDNs). The TN3270 service does not allow
+clients to connect to LUA LUs/Pools that are configured with client NETBIOS
+names.
+
+Note: You must select the Use Name Resolution option under TN3270 Server
+properties when you restrict access via host names.
+
+WORKAROUND
+==========
+
+Specify the fully qualified domain names in the LUA LUs/Pools properties when
+restricting access by host name. A simple way of determining the FQDN for a
+client is to Ping the client. For example:
+
+c:\&gt; ping client1
+
+ Pinging client1.dns.company.com [ip address] with 32 bytes of data:
+
+ Reply from &lt;ip address&gt;: bytes=32 time&lt;10ms TTL=128
+ Reply from &lt;ip address&gt;: bytes=32 time&lt;10ms TTL=128
+ Reply from &lt;ip address&gt;: bytes=32 time&lt;10ms TTL=128
+ Reply from &lt;ip address&gt;: bytes=32 time&lt;10ms TTL=128
+
+In this case, the LUA LU/Pool should be configured with a name of
+client1.dns.company.com to allow a user on the CLIENT1 system to access this
+LU/Pool.
+
+STATUS
+======
+
+The TN3270 service has been updated to correctly use both NETBIOS names and
+FQDNs for name resolution.
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0 SP1,
+and 3.0 SP2.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+The name resolution method used is determined by the Windows NT Server computer
+on which SNA Server is installed. There are currently four NetBIOS over TCP/IP
+name resolution methods: b-node, p-node, m-node, and h-node. For more
+information about these name resolution methods, please refer to the following
+Microsoft Knowledge Base article:
+
+  Q119493 NetBIOS over TCP/IP Name Resolution and WINS
+
+To determine which name resolution method is being used by a Windows NT system,
+use the IPCONFIG utility from a command prompt as shown here:
+
+  "c:\&gt; ipconfig /all" (without the quotation marks)
+
+The IPCONFIG /ALL command will return information similar to the following:
+
+Windows NT IP Configuration
+
+  Host Name . . . . . . . . . : server1.companyname.com
+  DNS Servers . . . . . . . . : 123.23.234.123
+                             123.23.235.124
+  Node Type . . . . . . . . . : Mixed
+
+  NetBIOS Scope ID. . . . . . :
+
+  IP Routing Enabled. . . . . : No
+
+  WINS Proxy Enabled. . . . . : No
+
+  NetBIOS Resolution Uses DNS : No
+
+Ethernet adapter El90x1:
+
+  Description . . . . . . . . : 3Com 3C90x Ethernet Adapter
+
+  Physical Address. . . . . . : 00-80-C7-55-55-C5
+
+  DHCP Enabled. . . . . . . . : Yes
+
+  IP Address. . . . . . . . . : 124.24.235.123
+
+  Subnet Mask . . . . . . . . : 255.255.248.0
+
+  Default Gateway . . . . . . : 124.24.235.1
+
+  DHCP Server . . . . . . . . : 124.24.235.111
+
+  Primary WINS Server . . . . : 123.23.234.125
+
+  Secondary WINS Server . . . : 123.23.234.126
+
+  Lease Obtained. . . . . . . : Tuesday, January 01, 1998 7:30:00 AM
+
+  Lease Expires . . . . . . . : Saturday, November 05, 1998 7:30:00 AM
+
+The name resolution method used for this sample system is Mixed (m-node) as shown
+by the Node Type parameter above.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

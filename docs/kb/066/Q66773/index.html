@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66773: Based Variable EXTRN Directive Wrongly Located in ASM Listing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66773: Based Variable EXTRN Directive Wrongly Located in ASM Listing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66773/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66773/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66773/","publisher":null,"image":null,"headline":"Q66773: Based Variable EXTRN Directive Wrongly Located in ASM Listing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66773-based-variable-extrn-directive-wrongly-located-in-asm-listing">Q66773: Based Variable EXTRN Directive Wrongly Located in ASM Listing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66773
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 buglist6.00a _based | mspl13_c
+Last Modified: 10-NOV-1990
+
+The Microsoft C Optimizing Compiler provides options for generating
+assembly language listings from C source files. In cases where based
+allocation is used, the assembly language listings produced with /Fa
+(.ASM files) and /Fc (.COD files) contain an error. The EXTRN
+directive emitted for based variables is located in the wrong place.
+
+The EXTRN directive for a based variable should be located between the
+SEGMENT and ENDS directives for the segment in which the variable is
+declared to reside. This allows MASM to generate the correct fixups
+for references to this variable, which in turn enables LINK to detect
+whether the variable is actually defined in the specified segment.
+
+To workaround this problem, edit the .ASM or .COD listing so that the
+EXTRN directives for based variables are located between the correct
+SEGMENT and ENDS directives.
+
+Note that this problem also occurs for functions specified in an
+alloc_text pragma.
+
+Microsoft has confirmed this to be a problem in C versions 6.00 and
+6.00a. We are researching this problem and will post new information
+here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

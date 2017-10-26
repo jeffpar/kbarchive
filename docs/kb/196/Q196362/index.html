@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196362: XFOR: AV in ExchINS with Very Long MessageID | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196362: XFOR: AV in ExchINS with Very Long MessageID" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196362/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196362/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196362/","publisher":null,"image":null,"headline":"Q196362: XFOR: AV in ExchINS with Very Long MessageID","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196362-xfor-av-in-exchins-with-very-long-messageid">Q196362: XFOR: AV in ExchINS with Very Long MessageID</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196362
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): kbfixlist
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+ExchINS (Exchange NNTP) will cause an access violation error while attempting to
+send an IHAVE message with an excessively long MessageID.
+
+The debug stack is as follows:
+
+Access Violation c0000005 in ExchINS
+&gt; kv
+026efd54  00414b45  EXCHINS!CNNTPPost::SendIHave+0x128 (FPO: [ebp 00057e40]
+[1,1,4])
+026efd8c  00409355  EXCHINS!CNNTPOutboundStreamServer::HrGetStream+0xb5
+(FPO: [ebp 00bf05c0] [2,8,4])
+026efdc8  6f787b54  EXCHINS!CCollector::ImportMessageChangeAsAStream+0xd5
+(FPO: [5,10,2])
+026efe18  6f786321  EMSMDB32!IXMSGSYNC::EcUpdateCollector+0x174 (FPO: [ebp
+02991474] [4,10,4])
+026efe38  6f773300  EMSMDB32!IXMSGFXRCV::EcRcv+0x151 (FPO: [1,0,3])
+026efe48  6f7784c9  EMSMDB32!FXRCVCTX::EcRcv+0x10 (FPO: [1,0,2])
+026efe58  6f78715e  EMSMDB32!FXRCVMGR::EcDoClient+0x39 (FPO: [2,0,2])
+026efe88  6f7880a5  EMSMDB32!IXCHGSYNC::EcSynchronize+0x5e (FPO: [ebp
+77f674e0] [3,5,4])
+026efea4  00408a71  EMSMDB32!IXMSGSYNC::Synchronize+0x25 (FPO: [3,0,2])
+026effb8  77f04f2c  EXCHINS!HrGetOutboundThread+0x2c1 (FPO: [ebp 77f64b1c]
+[1,61,4])
+77f64b1c  0cc25de5  KERNEL32!BaseThreadStart+0x51(UKNOWN FPO TYPE)
+
+CAUSE
+=====
+
+This is because of ExchINS not comparing the length of the MessageID with the
+amount of available buffer space.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next Microsoft
+Exchange Server version 5.5 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: NNTP
+
+  File Name     Version
+  -------------------------
+  Exchins.dll   5.5.2399.0
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+
+MORE INFORMATION
+================
+
+The updated component limits MessageIDs to 256 characters, and will discard
+messages with IDs longer than this.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfixlist
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

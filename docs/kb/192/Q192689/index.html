@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192689: HOWTO: Get UNC Path From a Mapped Network Share’s Drive Letter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192689: HOWTO: Get UNC Path From a Mapped Network Share’s Drive Letter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192689/","publisher":null,"image":null,"headline":"Q192689: HOWTO: Get UNC Path From a Mapped Network Share’s Drive Letter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192689-howto-get-unc-path-from-a-mapped-network-shares-drive-letter">Q192689: HOWTO: Get UNC Path From a Mapped Network Share’s Drive Letter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192689
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 6.0, 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 6.0, 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 5.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most network client software allows you to refer to network drives through the
+use of mapped drive letters or the use of syntax known as UNC notation
+(Universal Naming Convention). Use of UNC notation requires that you know the
+name of the server and share, while a mapped drive letter only requires the
+drive letter once the connection has been established. At times, it may be
+necessary to determine the UNC path to a server given only it's mapped drive
+letter. This article demonstrates a method for obtaining this information.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Map a drive letter to any available network share and make note of the letter
+  assigned.
+
+2. Create a new Visual Basic project. Form1 is created by default.
+
+3. Add a CommandButton to Form1.
+
+4. Paste the following code into Form1's code window:
+
+        Option Explicit
+
+        Private Const RESOURCETYPE_ANY = &amp;H0
+        Private Const RESOURCE_CONNECTED = &amp;H1
+
+        Private Type NETRESOURCE
+           dwScope As Long
+           dwType As Long
+           dwDisplayType As Long
+           dwUsage As Long
+           lpLocalName As Long
+           lpRemoteName As Long
+           lpComment As Long
+           lpProvider As Long
+        End Type
+
+        Private Declare Function WNetOpenEnum Lib "mpr.dll" Alias _
+           "WNetOpenEnumA" (ByVal dwScope As Long, ByVal dwType As Long, _
+           ByVal dwUsage As Long, lpNetResource As Any, lphEnum As Long) _
+           As Long
+
+        Private Declare Function WNetEnumResource Lib "mpr.dll" Alias _
+           "WNetEnumResourceA" (ByVal hEnum As Long, lpcCount As Long, _
+           lpBuffer As Any, lpBufferSize As Long) As Long
+
+        Private Declare Function WNetCloseEnum Lib "mpr.dll" ( _
+           ByVal hEnum As Long) As Long
+
+        Private Declare Function lstrlen Lib "kernel32" Alias "lstrlenA" _
+           (ByVal lpString As Any) As Long
+
+        Private Declare Function lstrcpy Lib "kernel32" Alias "lstrcpyA" _
+           (ByVal lpString1 As Any, ByVal lpString2 As Any) As Long
+
+        Private Sub Command1_Click()
+           MsgBox LetterToUNC("F:") ' &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+        End Sub
+
+        Function LetterToUNC(DriveLetter As String) As String
+           Dim hEnum As Long
+           Dim NetInfo(1023) As NETRESOURCE
+           Dim entries As Long
+           Dim nStatus As Long
+           Dim LocalName As String
+           Dim UNCName As String
+           Dim i As Long
+           Dim r As Long
+
+           ' Begin the enumeration
+           nStatus = WNetOpenEnum(RESOURCE_CONNECTED, RESOURCETYPE_ANY, _
+              0&amp;, ByVal 0&amp;, hEnum)
+
+           LetterToUNC = "Drive Letter Not Found"
+
+           'Check for success from open enum
+           If ((nStatus = 0) And (hEnum &lt;&gt; 0)) Then
+              ' Set number of entries
+              entries = 1024
+
+              ' Enumerate the resource
+              nStatus = WNetEnumResource(hEnum, entries, NetInfo(0), _
+                 CLng(Len(NetInfo(0))) * 1024)
+
+              ' Check for success
+              If nStatus = 0 Then
+                 For i = 0 To entries - 1
+                    ' Get the local name
+                    LocalName = ""
+                    If NetInfo(i).lpLocalName &lt;&gt; 0 Then
+                       LocalName = Space(lstrlen(NetInfo(i).lpLocalName) + 1)
+                       r = lstrcpy(LocalName, NetInfo(i).lpLocalName)
+                    End If
+
+                    ' Strip null character from end
+                    If Len(LocalName) &lt;&gt; 0 Then
+                       LocalName = Left(LocalName, (Len(LocalName) - 1))
+                    End If
+
+                    If UCase$(LocalName) = UCase$(DriveLetter) Then
+                       ' Get the remote name
+                       UNCName = ""
+                       If NetInfo(i).lpRemoteName &lt;&gt; 0 Then
+                          UNCName = Space(lstrlen(NetInfo(i).lpRemoteName) _
+                             + 1)
+                          r = lstrcpy(UNCName, NetInfo(i).lpRemoteName)
+                       End If
+
+                       ' Strip null character from end
+                       If Len(UNCName) &lt;&gt; 0 Then
+                          UNCName = Left(UNCName, (Len(UNCName) _
+                             - 1))
+                       End If
+
+                       ' Return the UNC path to drive
+                       LetterToUNC = UNCName
+
+                       ' Exit the loop
+                       Exit For
+                    End If
+                 Next i
+              End If
+           End If
+
+           ' End enumeration
+           nStatus = WNetCloseEnum(hEnum)
+        End Function
+
+5. Change the code in Command1's Click event to refer to the drive letter
+  created by step 1.
+
+6. Run the sample.
+
+7. Click the CommandButton. The UNC path to the mapped drive is shown in a
+  message box.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp400 kbVBp500 kbVBp600 KbVBA kbAPI kbSDKWin32 kbWNet
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

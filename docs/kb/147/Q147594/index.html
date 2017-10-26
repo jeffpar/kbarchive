@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147594: Problems Running MS-DOS-Based Program from System Agent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147594: Problems Running MS-DOS-Based Program from System Agent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147594/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147594/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147594/","publisher":null,"image":null,"headline":"Q147594: Problems Running MS-DOS-Based Program from System Agent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147594-problems-running-ms-dos-based-program-from-system-agent">Q147594: Problems Running MS-DOS-Based Program from System Agent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147594
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use System Agent to schedule an MS-DOS-based program that is configured
+to run in MS-DOS mode, System Agent runs the program successfully, but may run
+the program again after you quit the program and return to Windows 95. If the
+program's shortcut is configured so that you are not warned before Windows 95
+restarts in MS-DOS mode, it may appear that there is no way to stop the program
+from running every time you restart Windows 95.
+
+CAUSE
+=====
+
+When System Agent runs an MS-DOS-based program in MS-DOS mode, it is unable to
+detect that the program has finished running after you quit the program and
+return to Windows 95. Because System Agent does not know that the program has
+already been run successfully, it runs the program again.
+
+RESOLUTION
+==========
+
+If the shortcut for the MS-DOS-based program is configured so that you are
+warned before Windows 95 restarts in MS-DOS mode, the following message is
+displayed before Windows 95 restarts in MS-DOS mode and the MS-DOS-based program
+is run:
+
+  This program is set to run in MS-DOS mode and cannot run while other
+  programs are running. All other programs will close if you choose to
+  continue.
+
+  Do you want to continue?
+
+To stop the MS-DOS-based program from running every time you restart Windows 95,
+click No. If the shortcut for the program is configured so that you are not
+warned before Windows 95 restarts in MS-DOS mode, start Windows 95 in Safe mode
+and use System Agent to disable the program. To do so, follow these steps:
+
+1. When Windows 95 restarts after you quit the MS-DOS-based program, press the
+  F8 key when you see the "Starting Windows 95" message, and then choose Safe
+  Mode from the Startup menu.
+
+  NOTE: If you do not see the "Starting Windows 95" message after you quit the
+  MS-DOS-based program, restart your computer by pressing CTRL+ALT+DELETE,
+  using the computer's reset button, or turning the computer off and then back
+  on. To minimize the risk of data loss, you should not restart the computer
+  while the hard disk light indicates that the drive is being accessed.
+
+2. Click the Start button, point to Programs, point to Accessories, point to
+  System Tools, and then click System Agent.
+
+3. Click the MS-DOS-based program in the list of scheduled programs, and then
+  click Disable on the Program menu.
+
+4. Close System Agent and then restart Windows 95 normally.
+
+Once you have stopped the MS-DOS-based program from running every time you
+restart Windows 95, you can configure System Agent to prevent this behavior from
+occurring again. To do so, follow these steps:
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+  System Tools, and then click System Agent.
+
+2. Click the MS-DOS-based program in the list of scheduled programs, and then
+  click Change Schedule on the Program menu. In the Start At box, note the time
+  at which the program is scheduled to be run.
+
+3. Click Advanced.
+
+4. Click the "If the program is still running, stop it at this time" check box
+  to select it.
+
+5. In the Deadline box, type the time you noted in step 2 plus one minute. For
+  example, if the program is scheduled to start at 5:00 P.M., type "5:01 PM"
+  (without the quotation marks) in the Deadline box.
+
+6. Click OK, and then close System Agent.
+
+MORE INFORMATION
+================
+
+To configure the shortcut for the MS-DOS-based program so that you are warned
+before Windows 95 restarts in MS-DOS mode, follow these steps:
+
+1. Use the right mouse button to click the shortcut, and then click Properties
+  on the menu that appears.
+
+2. Click the Program tab.
+
+3. Click Advanced.
+
+4. Click the Warn Before Entering MS-DOS Mode check box to select it, and then
+  click OK.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

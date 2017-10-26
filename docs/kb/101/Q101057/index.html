@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101057/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101057/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101057/","publisher":null,"image":null,"headline":"Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101057-prb-variable-not-found-or-public-variables-acting-private">Q101057: PRB: "Variable Not Found" or Public Variables Acting Private</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101057
+Product(s): Microsoft Fox Miscellaneous Products
+Version(s): MACINTOSH:2.01
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 23-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Adding memory variables to a report, or changing the scope of memory variables
+from private to public after a report is created, can cause a variety of
+problems in FoxBASE+/Mac, including the following:
+
+- Issuing a "Report Form XXX" command returns the error message
+
+  Variable not found
+
+  when you are using a report created with public memory variables.
+
+- Variables in a user-defined function (UDF) that were originally defined as
+  private may still function as private variables after the UDF is changed to
+  declare the variables as public.
+
+CAUSE
+=====
+
+When a report and environment is initially saved in FoxBASE+/Mac, a view file is
+created. The view file contains the memory variables currently defined in memory
+at the time the report is initially saved.
+
+Subsequent modifications to the defined memory variables are not saved in the
+view file, even if the environment is cleared and resaved. When the report form
+is printed, the view file restores memory to the state initially saved with the
+report. A variety of problems can occur, including memory variables appearing to
+be missing or being defined with an incorrect scope.
+
+RESOLUTION
+==========
+
+The following steps will resolve problems related to the view file:
+
+
+1. From the File menu, choose Open and select the report form. This will restore
+  memory to the state originally saved with the view file.
+
+2. Switch to the Command window. Make any necessary modifications to memory
+  variables (such as declaring new variables or releasing private memory
+  variables and declaring them as public).
+
+3. Switch to the View window. From the File menu, choose Save, and save the view
+  with the same name as the report.
+
+Additional query words: 2.01 errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

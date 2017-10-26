@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262374/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262374/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262374/","publisher":null,"image":null,"headline":"Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262374-xadm-2140-and-1002-with-error--1811-error-starting-exchange">Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262374
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 28-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Exchange Server directory service, you may receive the
+following error message:
+
+  Error 2140. Internal Windows NT error.
+
+The following Event ID is logged in the Microsoft Windows NT Event Viewer
+application event log:
+
+  Event ID: 1002
+  Source: MSExchangeDS
+  Type: Error
+  Category: Internal Processing
+  Description:
+  The Microsoft Exchange Server database, EDB, could not be initialized and
+  returned error -1811. Unrecoverable error. The directory cannot continue.
+
+CAUSE
+=====
+
+Most virus protection programs have settings to remove, rename or quarantine
+infected files as a part of their cleanup process. This issue can occur if the
+virus protection program renames the directory.
+
+The -1811 error corresponds to JET_errFileNotFound.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Check your virus protection program to determine its settings.
+
+2. Rename the files to the original file names if they were renamed by the virus
+  protection program.
+
+3. Restore the files to their original location if they were deleted or sent to
+  a quarantine folder. They may be in the Recycle Bin.
+
+4. If the files were completely deleted from the system, then you must restore
+  the files from a backup.
+
+
+MORE INFORMATION
+================
+
+Microsoft recommends that file-level virus protection programs exclude the
+Exchange Server database and log files. Scan these files by using an Exchange
+Server-aware virus protection product.
+
+For additional information about antivirus software and Exchange Server, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q245822 XGEN: Recommendations for Troubleshooting an Exchange Server Computer
+  with Antivirus Installed
+
+Additional query words: 0xFFFFF8ED 4294965485 JET_errFileNotFound
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260581/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260581/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260581/","publisher":null,"image":null,"headline":"Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260581-bug-installing-app-via-pdw-generates-err-msg-creating-icons">Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260581
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbDeployment kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing an application distributed through the Package and
+Deployment Wizard (PDW), the following error is encountered:
+
+  An error occurred trying to create a program icon for '&lt;Project Name&gt;'
+
+CAUSE
+=====
+
+Program folders and shortcuts are created at this location
+
+  C:\Windows\Start Menu\Programs
+
+or this location:
+
+  C:\Winnt\Profiles\&lt;Loginid&gt;\Start Menu\Programs
+
+If the Start Menu or Programs folder has a different name, setup may raise the
+preceding error when trying to add the new program icon to this list.
+
+RESOLUTION
+==========
+
+There are four potential methods to work around this problem:
+
+- Choose to ignore the error, allowing the application to complete its
+  installation. Once the install is complete, manually create the necessary
+  Start menu items.
+
+- Rename the Start menu's programs folder back to its default name, \Start
+  Menu\Programs, and then install the application.
+
+- Use a third-party installation program in place of the Package and Deployment
+  Wizard.
+
+- Modify the setup program used by the Package and Deployment Wizard. Please
+  note that modifications to the setup program are not supported by Microsoft.
+  By default, the project for the Setup1.exe file is found at this location:
+
+  C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Setup1\
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem has occurred under all versions of Microsoft Windows. However, the
+following "Steps to Reproduce Behavior" are not always successful in generating
+the error on Microsoft Windows NT and Microsoft Windows 2000.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic and save it. Form1 is
+  created by default.
+
+2. Run the Package and Deployment Wizard to create a setup program for this
+  project. When running the wizard, accept the default choices.
+
+3. Run the Setup program. After the installation completes, on the Windows Start
+  menu, select Programs, and you should see a program group named Project1 that
+  contains a shortcut to start the Project1.exe file.
+
+4. On the Start menu, under Control Panel, use the Add/Remove Programs option to
+  remove the application.
+
+5. Confirm that the Start menu items have been successfully removed.
+
+6. Right-click on the Windows Taskbar and select Properties.
+
+7. Select the Start Menu Programs tab.
+
+8. Click the Advanced button.
+
+9. Rename the Programs folder to A.
+
+10. Re-run the application's setup. This time, you receive the error message
+  shown in the "Symptoms" section.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbDeployment kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158702: INFO: How ANALYZE Passes Work | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158702: INFO: How ANALYZE Passes Work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158702/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158702/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158702/","publisher":null,"image":null,"headline":"Q158702: INFO: How ANALYZE Passes Work","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158702-info-how-analyze-passes-work">Q158702: INFO: How ANALYZE Passes Work</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158702
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ANALYZE database scan and repair tool scans a Visual SourceSafe database in
+four different passes. Each pass completes a different database operation and,
+depending on the problem found, some passes may take significantly longer than
+others. ANALYZE may be re-creating vital Visual SourceSafe files during these
+slow periods.
+
+MORE INFORMATION
+================
+
+The following list is a description of each pass that ANALZYE performs and any
+issues that may arise:
+
+Pass 1 of 4
+-----------
+
+ANALYZE builds a project list that it uses throughout passes 2 and 3. All of the
+project history logs are validated and compared with the current child list.
+ANALYZE also maps memory for all of the files that it plans to scan. This pass
+of ANALYZE should be significantly shorter than passes 2 and 3.
+
+The following error may appear when you are running ANALYZE:
+
+  Unable to create the filemapping for the database
+
+If this error occurs, you must contact Product Support for assistance. This is a
+serious error that may cause severe database problems.
+
+Pass 2 of 4
+-----------
+
+ANALYZE loads the files into memory and validates the log entries for each file.
+ANALYZE also validates the parent/child relationship in the file. This
+information is used later in pass 3 to rebuild projects, if necessary.
+
+Pass 3 of 4
+-----------
+
+ANALYZE rebuilds the project by using the information in pass 2 to validate the
+project. If the project is missing or invalid, ANALYZE traces the files back up
+and down the tree to determine the true contents of the project. If the project
+does not exist, ANALYZE creates the project. If ANALYZE creates the project, all
+of the log entries for the files are created by referencing the child files. The
+history of the files is not correct (correct user and date information), but the
+history is complete enough to avoid further database errors.
+
+
+Pass 4 of 4
+-----------
+
+ANALYZE processes the user and rights system. Any inconsistencies in these
+systems are repaired. For the remainder of the pass, ANALYZE cleans up code.
+
+
+Additional query words: RIGHTS.DAT UM.DAT mapping
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

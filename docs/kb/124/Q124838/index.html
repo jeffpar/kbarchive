@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124838: NICs That Work with Network Monitor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124838: NICs That Work with Network Monitor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124838/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124838/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124838/","publisher":null,"image":null,"headline":"Q124838: NICs That Work with Network Monitor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124838-nics-that-work-with-network-monitor">Q124838: NICs That Work with Network Monitor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124838
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1
+Operating System(s): 
+Keyword(s): kbhw kbnetwork smsnetmon kbHardware
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The following network interface cards (NICs), or network adapters, have
+been verified to work with Network Monitor. Microsoft has not tested every
+computer and/or device in all possible configurations.
+
+The following network adapters have been tested on the indicated platforms.
+
+X86  MIPS  ALPHA  Network Adapter
+X     X      X    3Com[R] 3C503 EtherLink II[R] (Coax &amp; TP)
+X     X      X    3Com 3C503/16 EtherLink[R] II/16 (Coax &amp; P)
+X     X           3Com 3C507 EtherLink 16 (Coax &amp; TP)
+X     X      X    3Com 3C509 EtherLink III Parallel Tasking
+                    Adapter - ISA (Coax, TP and Combo)
+X                 3Com 3C523 EtherLink/MC (Coax &amp; TP)
+X                 3Com 3C529 EtherLink III Parallel Tasking
+                    Adapter - MCA (Coax &amp; TP)
+X     X      X    3Com 3C579 EtherLink III Parallel Tasking
+                    Adapter - EISA (Coax &amp; TP)
+X                 3Com 3C770 FDDILink-F for Optical, UTP &amp; STP[1, 106, 107]
+X                 COMPAQ NetFlex-2 ENET-TR Controller
+X                 COMPAQ NetFlex-2 TR Controller
+X                 COMPAQ NetFlex-2 DualPort ENET Controller
+X            X    DEC DE201 EtherWORKS Turbo/TP
+X                 Madge Smart 16/4 EISA Ringnode [1]
+     X           National Semiconductor DP83932 (Sonic) Motherboard
+                    Ethernet Controller on MIPS ARC/R4000 systems
+X     X      X    Novell/Eagle Technology NE2000
+X     X      X    Novell/Eagle Technology NE3200
+X                 Thomas-Conrad TC4046 MCA Token Ring Adapter [1]
+X                 Ungermann-Bass NIUps/EOTP
+X                 Xircom Corporate Series CreditCard Ethernet
+                    Adapter [1]
+X                 Xircom Pocket Ethernet III Adapter [1, 112, 113, 114]
+
+Technical Notes
+---------------
+
+  1   This device requires a driver from the \DRVLIB directory on
+      the Windows NT CD-ROM, or the Windows NT Driver Library.
+ 106  This adapter is not supported on the Compaq ProSignia 500 and
+      DeskPro M series computers..
+ 107  FDDI tested only.
+ 112  Not compatible with IBM Thinkpad 700.
+ 113  Non-bi-directional parallel ported machines may suffer
+      performance degradation when the driver for this adapter
+      is installed.
+ 114  The Toshiba 4700CS and 4800CT are not supported in Bi-directional
+      mode with this adapter.
+
+The Windows NT Driver Library is provided on the Windows NT CD-ROM in the
+DRVLIB directory, as well as several locations for electronic transmission.
+
+
+Additional query words: sms prodsms Bloodhound Netmon
+
+======================================================================
+Keywords          : kbhw kbnetwork smsnetmon kbHardware 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

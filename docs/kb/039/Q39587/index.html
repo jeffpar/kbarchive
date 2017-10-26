@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39587: QB Advisor 4.50 &quot;Help: ON ERROR Statement Details&quot; Correction | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39587: QB Advisor 4.50 &quot;Help: ON ERROR Statement Details&quot; Correction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39587/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39587/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39587/","publisher":null,"image":null,"headline":"Q39587: QB Advisor 4.50 &quot;Help: ON ERROR Statement Details&quot; Correction","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39587-qb-advisor-450-help-on-error-statement-details-correction">Q39587: QB Advisor 4.50 "Help: ON ERROR Statement Details" Correction</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39587
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr SR# S881206-71 | mspl13_basic
+Last Modified: 19-JAN-1989
+
+The paragraph in the QuickBASIC Version 4.50 QB Advisor (on-line help
+facility) that describes how to perform error trapping in a SUB or
+FUNCTION procedure or DEF FN function is incorrect, and an incorrect
+example is shown.
+
+The paragraph incorrectly states that a SUB, FUNCTION, or DEF FN block
+can contain an error-handling routine. The error handler-label and
+RESUME must be at the main-program level or module level.
+
+The "Help: ON ERROR Statement Details" should instead say the
+following:
+
+   To have an error-handling routine trap errors occurring within a
+   SUB, FUNCTION, or DEF FN block, you need to place the error-
+   handling routine at the module-level code (before the SUB or
+   FUNCTION procedure definition). A label (such as Labelx) marks the
+   start of the error-handler routine. The ON ERROR GOTO Labelx
+   statement must be an executable statement within the same module as
+   Labelx, but Labelx is put OUTSIDE the SUB...END SUB or
+   FUNCTION...END FUNCTION procedure block, and the
+   ON ERROR GOTO Labelx statement can be put INSIDE the
+   procedure block or main program.
+
+Note: QuickBASIC Version 4.50 uses global-error handling. For more
+information about global-error handling, please search for "GLOBAL",
+"ERROR", "HANDLING", and "4.50" in this KnowledgeBase.
+
+The following program correctly demonstrates the flow of control when
+an error occurs in a SUB procedure:
+
+DECLARE SUB dork ()
+  CALL dork
+  PRINT "This is the last statement in main module"
+END
+
+handler:
+  PRINT "error 50 has occurred"
+  RESUME NEXT
+
+SUB dork()
+  ON ERROR GOTO handler
+  ERROR 50              'This forces an error to occur
+  PRINT "In the subroutine"
+END SUB
+
+You can find the incorrect paragraph in the QB Advisor "Help: ON ERROR
+Statement Details," as follows:
+
+1. Run QB.EXE Version 4.50.
+
+2. Press SHIFT+F1 to invoke the QB Advisor Help menu.
+
+3. Select Index.
+
+4. Press PAGE DOWN key, or press "O" to jump directly to the Keywords
+   beginning with the letter "O", then cursor to the ON ERROR statement
+   and select it.
+
+5. Select Details. The following window title appears:
+
+      "Help: ON ERROR Statement Details"
+
+6. Scroll down to the seventh paragraph. This paragraph and the
+   example program below contain errors.
+
+The following is the INCORRECT paragraph and example that can be found
+in the HELP facility:
+
+   " [ The following information is in error: ]
+   SUB and FUNCTION procedures and DEF FN functions can contain their
+   own error handlers. The error handler must be located after the
+   last executable statement but before the END SUB, END FUNCTION, or
+   END DEF statement. To keep the error handler from executing when
+   there is no error, the procedure or function must terminate with an
+   EXIT SUB, EXIT FUNCTION, or EXIT DEF statement immediately ahead of
+   the error handler, as in the following example:
+
+SUB InitializeMatrix (var1, var2, var3, var4)
+      .
+      .
+   ON ERR GOTO ErrorHandler    ' [ Should be ON ERROR, not ON ERR! ]
+      .
+      .
+   EXIT SUB         ' [ EXIT SUB is optional (not required). ]
+
+   ErrorHandler:    ' [ Must move this after END SUB !]
+      .
+      .
+   RETURN           ' [ Use RESUME, not RETURN!  Must move
+                    '   ErrorHandler...RESUME to after END SUB ]
+
+END SUB
+[ end of incorrect HELP example. ] "
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

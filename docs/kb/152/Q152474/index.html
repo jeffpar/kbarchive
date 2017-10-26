@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152474: Window Socket Application Failure with Connection Reset Event | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152474: Window Socket Application Failure with Connection Reset Event" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152474/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152474/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152474/","publisher":null,"image":null,"headline":"Q152474: Window Socket Application Failure with Connection Reset Event","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152474-window-socket-application-failure-with-connection-reset-event">Q152474: Window Socket Application Failure with Connection Reset Event</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152474
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNet
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A Windows Socket (WinSock) application fails to receive data from a remote
+server. It may display a message indicating that a Connection Reset message or a
+WSAECONNRESET event occurred.
+
+CAUSE
+=====
+
+Under certain circumstances, a condition exists with Microsoft TCP/IP where a
+TCP packet can be sent on a connection that has already closed causing a Reset
+packet to be issued. This causes the WinSock application to fail with a
+WSAECONNRESET event.
+
+Detailed Explanation:
+
+In a normal WinSock client-server TCP/IP communication sequence, the following
+type of conversation could be observed with a Network Monitor product.
+
+  CLIENT               SERVER
+  ======               ======
+  SYN         --&gt;
+           &lt;--      SYN - ACK
+  ACK         --&gt;
+
+  TCP (Data - request) --&gt;
+           &lt;--      ACK
+
+           &lt;--      TCP (Data - response)
+  ACK         --&gt;
+
+     ... potentially many Data/Ack response packets ...
+
+  FIN         --&gt;
+           &lt;--      ACK
+           &lt;--      FIN
+  ACK         --&gt;
+
+When the final FIN packet is sent by the server, and the ACK packet returns, the
+server is free to close the socket created for the client communication. In this
+instance, the client initiated the closing of communications, followed by the
+server.
+
+In a WinSock client-server TCP/IP communication sequence that exposes the
+Connection Reset problem, the following type of conversation could be observed
+with a Network Monitor product.
+
+  CLIENT               SERVER
+  ======               ======
+  SYN         --&gt;
+           &lt;--      SYN - ACK
+  ACK         --&gt;
+
+  TCP (Data - request) --&gt;
+           &lt;--      ACK
+
+  FIN         --&gt;
+           &lt;--      ACK
+
+           &lt;--      TCP (Data - response)
+  ACK         --&gt;
+
+     ... potentially many Data/Ack response packets ...
+
+           &lt;--      FIN
+  ACK         --&gt;
+
+  ACK (this is bad) --&gt;
+
+           &lt;--      RESET
+  ACK         --&gt;
+
+In the problem scenario above, the following events transpired. The client issues
+a Shutdown on their local socket after they sent the request to the server,
+notifying the socket that it will not be sending any more data. This causes a
+FIN packet to be sent very early in the conversation (this is perfectly
+legitimate programming style). Later, the server issues a FIN to indicate it is
+done sending data, and the client acknowledges the FIN packet. Due to the way
+that Delayed Acknowledgments worked, it was possible for another ACK to be sent
+to the server after the ACK for the FIN packet. If the server has already closed
+the socket it was communicating with the client on, this will generate a RESET
+packet to the client.
+
+If the client was still reading data, the RESET packet will cause the client read
+of data to return in error with a WSAECONNRESET, indicating that the connection
+was reset.
+
+RESOLUTION
+==========
+
+To resolve this problem, install the fix mentioned below.
+
+Obtain the fix mentioned below or wait for the next Windows NT Service Pack.
+
+The fix was to modify TCPIP.SYS to not send an acknowledgment if an
+acknowledgment was already sent for a FIN packet.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Windows NT version 3.51. This
+problem was corrected in the latest U.S. Service Pack for Windows NT Workstation
+or Server version 3.51. For information on obtaining this update, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodnt wsock32
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

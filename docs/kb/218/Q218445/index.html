@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218445: How to Configure Certificate Server for Use with SSL on IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218445: How to Configure Certificate Server for Use with SSL on IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218445/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218445/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218445/","publisher":null,"image":null,"headline":"Q218445: How to Configure Certificate Server for Use with SSL on IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218445-how-to-configure-certificate-server-for-use-with-ssl-on-iis">Q218445: How to Configure Certificate Server for Use with SSL on IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218445
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use Certificate Server to issue certificates for use with the Secure
+Sockets Layer (SSL). This is typically done on a local intranet, where you have
+the ability to directly inform your clients that they can trust your
+certificates.
+
+MORE INFORMATION
+================
+
+IIS supports the SSL 3.0 protocol, which uses certificates to identify both the
+client and server during communication, and to establish a one-time session key
+to encrypt and decrypt data transmitted during that particular communication
+session.
+
+You can use Certificate Server 1.0, which is a component of the Windows NT Option
+Pack, to issue certificates for your clients to use.
+
+Before SSL can be used, the following tasks must be performed on the server:
+
+1. Create a Root CA Certificate on the server.
+
+2. Install the Root CA Certificate on the server.
+
+3. Create a Key Certificate Request for the server.
+
+4. Process the Key Certificate Request for the server.
+
+5. Install the Key Certificate on the server.
+
+6. Secure the directory on the server.
+
+Next, perform the following tasks on the client:
+
+1. Install the Root CA Certificate on the client.
+
+2. Install a Certificate on the client.
+
+3. Connect to the SSL-Secured directory from the client.
+
+NOTE: Each of the tasks listed above correspond to a section below. Go to that
+section for details on how to perform that particular task.
+
+Creating a Root CA Certificate on the Server
+--------------------------------------------
+
+To create a root CA certificate on the server, simply perform the default
+installation of the Certificate Server component of the Windows NT Option Pack.
+The default installation automatically creates a root CA certificate.
+
+NOTE: If you choose to use Advanced Configuration, do NOT select the Non-root CA
+option.
+
+Installing the Root CA Certificate on the Server
+------------------------------------------------
+
+1. Browse to http://localhost/certsrv/, click the Certificate Enrollment Tools
+  link, and then click the Install Certificate Authority Certificates link.
+
+2. Click the Refresh button to verify that the information displayed is current,
+  and then click the "Certificate for &lt;ComputerName&gt;\&lt;CA-Name&gt;"
+  link.
+
+3. In the File Download dialog box, select the "Open this file from its current
+  location" radio button, and then click OK.
+
+  Perform the following steps if Windows NT 4.0, SP4 or SP5 is installed:
+
+  a. In the Certificate dialog box, click the Install Certificate button.
+
+  b. When the Certificate Manager Import Wizard starts, click Next.
+
+  c. When prompted to select a certificate store, select the "Place all
+     certificates into the following store" radio button, and then click
+     Browse.
+
+  d. Select the Show Physical Stores option, open Trusted Root Certificate
+     Authorities, and then click Local Computer. Click OK.
+
+  e. Click Next, and then click Finish. Click OK to close the dialog box.
+
+  f. Restart the server to cause the root CA certificate to take effect.
+
+  For additional information, please see the following article(s) in the
+  Microsoft Knowledge Base:
+
+  Q194788 Windows NT Service Pack 4 and Client Certificates
+
+  Perform the following steps if Windows NT 4.0, SP3 is installed:
+
+  a. In the New Site Certificate dialog box, click OK (you will typically want
+     to leave all of the check boxes selected).
+
+  b. When prompted by "Do you want to ADD the following certificate to the Root
+     Store?", click Yes.
+
+  c. At a command prompt, use the CD command to change directories to the
+     %SystemRoot%\System32\InetSrv directory (for example, type "cd
+     \winnt\system32\inetsrv" (without the quotation marks) if your system root
+     is \winnt).
+
+  d. Type "iisca" (without the quotation marks), to synchronize the root CA
+     certificate stores used by IIS and Internet Explorer.
+
+  e. Force the registry to be re-read, so that the new root CA certificate is
+     recognized. This is done by either restarting the server, or stopping the
+     IISADMIN service and its dependent services (for example WWW, FTP, NNTP,
+     SMTP, and so on) and then restarting the dependent services that you use.
+     These services can be stopped and restarted by doing either of the
+     following:
+
+      - Open Control Panel, open Services, and then stop and restart the
+        services.
+
+     -OR-
+
+      - Run NET STOP and NET START commands at a command prompt. To do this,
+        perform the following:
+
+        1. At a command prompt, type "net stop iisadmin /y" (without the
+           quotation marks) to stop the IISADMIN service and its dependent
+           services.
+
+        2. Restart the dependent services you use. For example, to restart the
+           WWW service, type "net start w3svc" (without the quotation marks).
+           To restart FTP, type "net start msftpsvc" (without the quotation
+           marks).
+
+Creating a Key Certificate Request for the Server
+-------------------------------------------------
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+  Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the Web site, directory, or file to be secured, and then click
+  Properties. Click the Directory Security (or File Security) tab.
+
+3. Under Secure Communications, click the Key Manager button.
+
+  NOTE: This button will labeled "Edit" instead of "Key Manager" if a
+  certificate has already been installed.
+
+4. In Key Manager, right-click WWW, and then click "Create New Key".
+
+5. Click the "Put the request in a file that you will send to an authority"
+  radio button, and then save the file to your hard disk. Be sure to remember
+  the name and location of the file.
+
+  NOTE: C:\NewKeyRq.txt is the default path and name for this file.
+
+6. Step through the rest of the Create New Key dialog boxes.
+
+  NOTE: When prompted for your state, be sure to spell it out completely (do not
+  use the abbreviation), with proper capitalization, so that the certificate
+  request will be PKCS #10 compatible.
+
+7. Close the Key Manager, being sure to click Yes when prompted to "Commit all
+  changes now?"
+
+8. In the MMC, click OK.
+
+Processing the Key Certificate Request for the Server
+-----------------------------------------------------
+
+1. Open the text file created for the server request (C:\NewKeyRq.txt by
+  default).
+
+2. Select and copy the text for the key, beginning with the line:
+
+  -----BEGIN NEW CERTIFICATE REQUEST-----
+
+  and ending with:
+
+  -----END NEW CERTIFICATE REQUEST-----
+
+  (in other words, include both of these lines).
+
+3. Browse to http://localhost/certsrv/, click the Certificate Enrollment Tools
+  link, and then click the Process a Certificate Request link.
+
+4. On the Web Server Enrollment page, paste the text from the key into the text
+  box, and then click Submit Request.
+
+  If you receive the following error message:
+
+  Error!!! Certificate Server is unable to process your request. Last status
+  error code = 57.
+
+  See the following Knowledge Base article for more information:
+
+  Q255981 Processing the Key Certificate Request for the Server Fails
+
+5. When the certificate has been successfully processed, click the Download
+  button.
+
+6. Click the "Save this file to disk" radio button, and then save the file. Be
+  sure to remember the name and location of the file.
+
+  NOTE: Newcert.cer is the default name for this file.
+
+Installing the Key Certificate on the Server
+--------------------------------------------
+
+1. In the MMC, right-click the Web site, directory, or file to be secured, and
+  then click Properties. Click the Directory Security (or File Security) tab.
+
+2. Under Secure Communications, click the Edit button (note that this changed
+  from previously being labeled Key Manager). Now click the Key Manager button.
+
+3. In Key Manager, right-click the new key request (the icon with a red slash
+  through it), and then click Install Key Certificate.
+
+4. Select the certificate file, and then when prompted, provide the password.
+  Click OK.
+
+5. In the Server Bindings dialog box, "Any Unassigned" should be displayed under
+  both the IP Address and Port Number columns. Click OK (unless you want to
+  assign the key to particular IP address and port number).
+
+6. Close Key Manager and make sure to click Yes when prompted to "Commit all
+  changes now?"
+
+7. Click OK twice to return to the MMC.
+
+Securing the Directory on the Server
+------------------------------------
+
+1. In the MMC, right-click the the Web site, directory, or file to be secured,
+  and then click Properties.
+
+2. Click the Directory Security (or File Security) tab. Under Secure
+  Communications, click the Edit button.
+
+3. Select the "Require Secure Channel when accessing this resource" check box.
+
+4. Select the Require Client Certificates radio button.
+
+5. Click OK twice to return to the MMC.
+
+Installing the Root CA Certificate on the Client
+------------------------------------------------
+
+1. Browse to http://&lt;ServerDomainName&gt;/certsrv/, click the Certificate
+  Enrollment Tools link, and then click the Install Certificate Authority
+  Certificates link.
+
+2. Click the Refresh button to verify that the information displayed is current,
+  and then click the "Certificate for &lt;ServerDomainName&gt;\&lt;CA-Name&gt;"
+  link.
+
+3. In the File Download dialog box, select the "Open this file from its current
+  location" radio button, and then click OK.
+
+4. The dialog box displayed next will depend on which Service Pack has been
+  applied to Windows NT 4.0.
+
+If SP4 or SP5 Is Installed:
+
+1. In the Certificate dialog box, click the Install Certificate button.
+
+2. When the Certificate Manager Import Wizard starts, click Next.
+
+3. When prompted to select a certificate store, select the "Place all
+  certificates into the following store" radio button, and then click Browse.
+
+4. Select the Show Physical Stores checkbox, open Trusted Root Certificate
+  Authorities, and then select Local Computer. Click OK.
+
+5. Click Next, and then click Finish. Click OK to close the dialog box.
+
+6. Restart the computer.
+
+If SP3 Is Installed:
+
+1. In the New Site Certificate dialog box, click OK (you will typically want to
+  leave all of the check boxes selected).
+
+2. When prompted by "Do you want to ADD the following certificate to the Root
+  Store?", click Yes.
+
+3. Restart the client computer, so that the new root CA certificate will take
+  effect.
+
+Installing a Certificate on the Client
+--------------------------------------
+
+1. Browse to http://&lt;ServerDomainName&gt;/certsrv/, click the Certificate
+  Enrollment Tools link, and then click the Request a Client Authentication
+  Certificate link.
+
+  NOTE: In Internet Explorer, security must be set to Medium in order to
+  download the ActiveX control on this Web page. (Netscape does not use the
+  ActiveX control, so the security setting is not an issue for it).
+
+2. Fill in the information requested in Certificate Enrollment Form the page,
+  and then click the Submit Request button.
+
+3. When the certificate has been successfully processed, click the Download
+  button.
+
+4. Click OK when you see the message "Your new certificate has been successfully
+  installed!"
+
+Connecting to the SSL-Secured Directory from the Client
+-------------------------------------------------------
+
+1. Browse to https://&lt;ServerDomainName&gt;/&lt;SecuredResource&gt;
+
+  NOTE: Be sure to use the httpS protocol, not just http, so that the server
+  will create a secure connection.
+
+2. When the Client Authentication dialog box appears, select the certificate you
+  just installed (in the section above), and then click OK.
+
+You should now have a secure connection from the client to the server, using
+SSL.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: ntop certsrv certsvr wkz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40548: Using CALL INTERRUPT to Determine Current Video Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40548: Using CALL INTERRUPT to Determine Current Video Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40548/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40548/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40548/","publisher":null,"image":null,"headline":"Q40548: Using CALL INTERRUPT to Determine Current Video Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40548-using-call-interrupt-to-determine-current-video-mode">Q40548: Using CALL INTERRUPT to Determine Current Video Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40548
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom SR# S881221-34 | mspl13_basic
+Last Modified: 15-JAN-1991
+
+Microsoft QuickBASIC cannot determine which kind of video card is
+installed on your machine. However, you can use the CALL INTERRUPT
+statement to invoke ROM BIOS video interrupt 10 Hex, function 0F Hex
+(Get Video Mode), to find out which video mode the machine is
+currently using. From the information returned by this interrupt, you
+can determine whether the video card installed is a monochrome card,
+such as a Hercules or compatible card, or if it is a color card, such
+as an IBM CGA, EGA, VGA, or compatible card.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50 for MS-DOS. It also applies to Microsoft BASIC Compiler
+versions 6.00 and 6.00b and Microsoft BASIC PDS versions 7.00 and 7.10
+running under MS-DOS or in MS OS/2 real mode in the DOS compatibility
+box.
+
+In QuickBASIC versions 2.00, 2.01, and 3.00, you can use the CALL
+INT86 routine instead of CALL INTERRUPT to invoke the video interrupt.
+
+A BASIC application may need to determine whether or not the video
+system in the machine it is running on is monochrome or color (that
+is, to decide which colors to use for its output, etc.).
+
+The ROM BIOS interrupt 10 Hex, function 0F Hex, will return the
+current video mode. If this interrupt returns a 7 in the AL register,
+the video card is a monochrome card and cannot support color. If it
+returns something other than 7, the video card can support color;
+however, this does NOT determine whether or not a color monitor is
+connected to the computer.
+
+Also, this function can determine where video memory for text mode
+begins. If the function returns 7, video memory begins at the segment
+paragraph address of B000 hex; otherwise, it begins at segment B800
+hex.
+
+For more information, see Page 415 of "Advanced MS-DOS" by Ray Duncan
+(Microsoft Press, 1986) and Page 45 of "Microsoft QuickBASIC
+Programmer's Toolbox" by John Clark Craig (Microsoft Press, 1988).
+
+The following sample listing demonstrates the use of CALL INTERRUPT to
+obtain the current video mode. This program can be compiled in
+QuickBASIC 4.00, 4.00b, or 4.50 with QB /L QB.QLB or linked with
+QB.LIB, which contains the INTERRUPT routine:
+
+' Note: The QB.BI file includes the TYPE definition of RegType.
+' If you are using BASIC PDS version 7.00/7.10, the include file
+' name should be 'QBX.BI' and the Quick library should be QBX.QLB.
+
+REM $INCLUDE: 'QB.BI'
+FUNCTION GetVMode% STATIC
+'--------------------------------------------------------------------
+'Function to return the current video mode. The mode value returned is
+'the same value returned from INT 10H, function 0FH -- Get Video Mode
+'(7 = Monochrome card, other = color graphics card)
+'--------------------------------------------------------------------
+  DIM InRegs AS RegType, OutRegs AS RegType
+  InRegs.ax = &amp;HF00                    'INT 10H, fn. 0FH (get vmode)
+  CALL INTERRUPT(&amp;H10, InRegs, OutRegs)
+  GetVMode% = OutRegs.ax AND 255       'AL returns the Video Mode
+END FUNCTION
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

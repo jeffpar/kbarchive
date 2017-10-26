@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129879: How to Import Relationships Using DAO in a VB 4.0 Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129879: How to Import Relationships Using DAO in a VB 4.0 Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129879/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129879/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129879/","publisher":null,"image":null,"headline":"Q129879: How to Import Relationships Using DAO in a VB 4.0 Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129879-how-to-import-relationships-using-dao-in-a-vb-40-program">Q129879: How to Import Relationships Using DAO in a VB 4.0 Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129879
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use the new capabilities of Visual Basic Data
+Access Objects (DAO) 3.0 to manipulate relationships through Visual Basic code.
+The step-by-step example uses DAO to read all relations from a specified
+database and then attempts to append identical relations into the current
+database. The appended relations that succeed become the imported relations.
+
+MORE INFORMATION
+================
+
+When attempts to append relations fail, it is often because either the table
+names or fields names of that relation do not exist in the current database. The
+appended relations that succeed will be the only relations imported.
+
+The following example shows how to use relation objects in the DAO. To run this
+example, you must have access to a Microsoft Access database with relations
+established on it. The NWIND.MDB database that ships with Microsoft Access is
+used as an example. In this example, the function imports the appropriate
+relations between the NWIND.MDB tables into a copy of NWIND.MDB called
+NWIND2.MDB.
+
+Step-by-Step Example
+--------------------
+
+1. Use the File Manager to make a new copy of the NWIND.MDB database in the
+  \ACCESS\SAMPAPPS\ directory. Name the copy NWIND2.MDB and place it in the
+  same directory.
+
+2. Start a new project in Visual Basic. Form1 is created by default.
+
+3. Add two command buttons (Command1 and Command2) to Form1.
+
+4. Add the following code to the appropriate events:
+
+     Private Sub Command1_Click()
+        '-------------------------------------------------------------------
+        ' PURPOSE: Clear all relations from destination table.
+        ' This is used to later demonstrate importing relations.
+        '-------------------------------------------------------------------
+        Dim ThisDb As Database
+        Dim i As Integer
+
+        Set ThisDb = DBEngine.Workspaces(0)_
+           .OpenDatabase("C:\access\sampapps\nwind.mdb")
+
+        ' Loop through all existing relations in that database:
+
+        For i = ThisDb.Relations.Count - 1 To 0 Step -1
+           Debug.Print i, ThisDb.Relations(i).Name
+           ' Clear all relations to later demonstrate importing them:
+           ThisDb.Relations.Delete ThisDb.Relations(i).Name
+        Next
+
+
+        Debug.Print "#Relations on "; ThisDb.Name; " = ";_
+        ThisDB.Relations.Count
+     End Sub
+
+     Private Sub Command2_Click()
+        Call ImportRelations("C:\access\sampapps\nwind2.mdb")
+     End Sub
+
+5. Add the following code to the General Declarations section of Form1:
+
+     Sub ImportRelations(DBName As String)
+        '-------------------------------------------------------------------
+        ' PURPOSE: Import relations where tablenames and fieldnames match.
+        ' ACCEPTS: name of the database to import from as string.
+        ' RETURNS: Number of relations imported as integer.
+        '--------------------------------------------------------------------
+        Dim ThisDb As Database, ThatDB As Database
+        Dim ThisRela As Relation, ThatRela As Relation
+        Dim ThisField As Field, ThatField As Field
+        Dim Cr As String, i As Integer, cnt As Integer, RCount As Integer
+        Dim j As Integer
+        Dim ErrBadField As Integer
+
+        Cr$ = Chr$(13)
+        RCount = 0
+
+        Set ThisDb = DBEngine.Workspaces(0)_
+           .OpenDatabase("C:\access\sampapps\nwind.mdb")
+        Set ThatDB = DBEngine.Workspaces(0).OpenDatabase(DBName$)
+
+        Debug.Print "Before import ..."
+        Debug.Print "  "; ThisDb.Name; " has "; _
+        ThisDb.Relations.Count; " relations defined."
+        Debug.Print "  "; ThatDB.Name; " has "; _
+        ThatDB.Relations.Count; " relations defined."
+
+        ' Loop through all existing relations in that database:
+        For i = 0 To ThatDB.Relations.Count - 1
+           Set ThatRela = ThatDB.Relations(i)
+
+           ' Create 'ThisRela' using values from 'ThatRela':
+           Set ThisRela = ThisDb.CreateRelation(ThatRela.Name, _
+              ThatRela.Table, ThatRela.ForeignTable, ThatRela.Attributes)
+
+           ' Set bad field flag to false:
+           ErrBadField = False
+
+           ' Loop through all fields in that relation:
+           For j = 0 To ThatRela.Fields.Count - 1
+              Set ThatField = ThatRela.Fields(j)
+
+              ' Create 'ThisField' using values from 'ThatField':
+              Set ThisField = ThisRela.CreateField(ThatField.Name)
+              ThisField.ForeignName = ThatField.ForeignName
+
+           Next j
+
+           ' If any field of this relation caused an error,
+           ' then don't add this relation:
+           If ErrBadField = True Then
+              ' Something went wrong with the fields.
+              ' Don't do anything.
+           Else
+              ' Try to append the relation:
+              On Error Resume Next
+              ThisDb.Relations.Append ThisRela
+              If Err &lt;&gt; False Then
+                 ' Something went wrong with the relation.
+                 ' Skip it.
+              Else
+                 ' Keep count of successful imports
+                 RCount = RCount + 1
+              End If
+              On Error GoTo 0
+           End If
+        Next i
+
+        Debug.Print "After import ..."
+        Debug.Print "  "; ThisDb.Name; " has "; _
+        ThisDb.Relations.Count; " relations defined."
+        Debug.Print "  "; ThatDB.Name; " has "; _
+        ThatDB.Relations.Count; " relations defined."
+
+        ' Close databases:
+        ThisDb.Close
+        ThatDB.Close
+     End Sub
+
+6. Start the program by choosing Start from the Run menu or by pressing the F5
+  key.
+
+7. Click the Command1 button to clear out any existing relations in the
+  NWIND2.MDB database.
+
+8. Click the Command2 button to run through all of the relations in the
+  NWIND.MDB database, and copy them to the NWIND2.MDB database.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

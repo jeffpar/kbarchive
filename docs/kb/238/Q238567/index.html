@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238567: XCLN: How to Restore the Outlook Icon to the Desktop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238567: XCLN: How to Restore the Outlook Icon to the Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238567/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238567/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238567/","publisher":null,"image":null,"headline":"Q238567: XCLN: How to Restore the Outlook Icon to the Desktop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238567-xcln-how-to-restore-the-outlook-icon-to-the-desktop">Q238567: XCLN: How to Restore the Outlook Icon to the Desktop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238567
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+For Outlook 98 and Outlook 2000, if you delete the Outlook icon from the
+desktop, there is no interface to restore the icon back to the desktop. You
+cannot recover the icon by right-clicking the desktop and using the Undo Delete
+menu item.
+
+For Outlook 97, the above is also true if you removed the Inbox icon from the
+desktop and converted the Outlook shortcut to a permanent desktop icon using the
+Chnginbx.exe utility from the Office 97 compact disc in the Valupack\Patch
+folder or from the following Microsoft Web site:
+
+  http://office.microsoft.com/downloads/9798/chnginbx.aspx (
+  http://office.microsoft.com/downloads/9798/chnginbx.aspx).
+
+For additional information about the Chnginbx.exe utility, please click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q160297 OL97: How to Change Inbox Icon to Start Microsoft Outlook 97
+
+MORE INFORMATION
+================
+
+When you attempt to delete the Outlook icon from the desktop, a Confirm Delete
+dialog box appears with one of the following messages:
+
+  Microsoft Outlook cannot be stored in the Recycle Bin.
+  Are you sure you want to delete Microsoft Outlook from your desktop? After you
+  remove this icon from your desktop you can still access the files in this
+  folder: C:\Program Files \Microsoft\Office\Office\
+  Are you sure you want to delete Microsoft Outlook from your desktop?
+
+-or-
+
+  Microsoft Outlook cannot be stored in the Recycle Bin.
+  Are you sure you want to delete Microsoft Outlook from your desktop?
+
+It is possible to restore the icon by adding a key in the Registry.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\
+
+3. On the Edit menu, click Add Key, and then add the following registry key:
+
+  Key Name: {00020D75-0000-0000-C000-000000000046}
+
+4. Quit Registry Editor.
+
+You must refresh the desktop to see the restored Outlook icon. To do this:
+
+1. Minimize all open windows.
+
+2. With the left mouse button, click on the desktop.
+
+3. Press F5 to refresh the desktop.
+
+Additional query words: missing deleted icon
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

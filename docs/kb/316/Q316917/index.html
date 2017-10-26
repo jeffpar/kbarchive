@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316917/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316917/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316917/","publisher":null,"image":null,"headline":"Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316917-microsoft-windows-xp-professional-resource-kit-documentation-com">Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q316917
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbfix
+Last Modified: 24-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows XP Professional Resource Kit Documentation ISBN 0-7356-1485-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Windows XP Professional Resource
+Kit Documentation, ISBN 0-7356-1485-7.
+
+The following topics are covered:
+
+- Page 227: Correction To Table 5.5
+
+- Page 759: Incorrect Information About Encryption Status In Table 17.2
+
+- Page 817: Windows 2000 Administration Tools Pack Not Supported On Windows XP
+
+MORE INFORMATION
+================
+
+Page 227: Correction To Table 5.5
+---------------------------------
+
+On page 227, Table 5.5 contains incorrect information. Please replace the table
+with the following table:
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Parameters:               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Value                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Target:{Computer | User} | Specifies that only User or only Computer
+                           policy settings are refreshed. By default,
+                           both User and Computer policy settings are
+                           refreshed.                                                                                                                                                                                                                                                                                                                                                                                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Force                    | Reapplies all policy settings. By default,
+                           only policy settings that have changed are
+                           applied.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Wait:{value}             | Sets the number of seconds to wait for policy
+                           processing to finish. The default is 600
+                           seconds. The value '0' means not to wait.
+                           The value '-1' means to wait indefinitely.
+                           When the time limit is exceeded, the command
+                           prompt returns, but policy processing
+                           continues.                                                                                                                                                                                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Logoff                   | Causes a logoff after the Group Policy settings
+                           have been refreshed. This is required for
+                           those Group Policy client-side extensions
+                           that do not process policy on a background
+                           refresh cycle but do process policy when a
+                           user logs on. Examples include user-targeted
+                           Software Installation and Folder Redirection.
+                           This option has no effect if there are no
+                           extensions called that require a logoff. | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Boot                     | Causes a reboot after the Group Policy settings
+                           are refreshed. This is required for those
+                           Group Policy client-side extensions that do
+                           not process policy on a background refresh cycle
+                           but do process policy at computer startup.
+                           Examples include computer-targeted Software
+                           Installation. This option has no effect if
+                           there are no extensions called that require
+                           a reboot.                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| /Sync                     | Causes the next foreground policy application to
+                           be done synchronously. Foreground policy
+                           applications occur at computer boot and user
+                           logon. You can specify this for the user,
+                           computer or both using the /Target parameter.
+                           The /Force and /Wait parameters will be ignored
+                           if specified.                                                                                                                                                                    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Page 759: Incorrect Information About Encryption Status In Table 17.2
+---------------------------------------------------------------------
+
+On page 759, in Table 17.2, in the Encryption Status cell for "Later moved to the
+folder or subfolders", change:
+"Unchanged."
+
+To:
+"Moving unencrypted files into an encrypted folder will automatically encrypt
+those files in the new folder."
+
+
+Page 817: Windows 2000 Administration Tools Pack Not Supported On Windows XP
+----------------------------------------------------------------------------
+
+On page 817, under "Administrative Tools", it states that the Windows 2000
+Administration Tools Pack (adminpak.msi) can be used on Windows XP. This is
+incorrect. The Windows 2000 version of the Administration Tools Pack is not
+supported on Windows XP. A Windows XP compatible version of the Administration
+Tools Pack will not be available in Windows XP until the next version of Windows
+2000 server ships.
+
+Change:
+"Domain administrators use administrative tools to create Active Directory
+objects and containers on a domain controller. Users can create Active Directory
+objects from a Windows XP Professional-based client if they have sufficient
+permissions and the Windows 2000 Administration Tools has been installed
+locally. The tools are available on the Windows 2000 Server operating system CD.
+For more information about installing Windows 2000 Administration Tools, see
+Windows 2000 Server Help. For more information about Active Directory objects,
+see "Active Directory Logical Structure" in the Distributed Systems Guide of the
+Windows 2000 Server Resource Kit."
+
+To:
+"This will not be available in Windows XP until the next version of Windows 2000
+server ships. Until then, you can use the Remote Desktop feature to connect to a
+Windows 2000 server running Terminal Services and the Windows 2000
+Administration Tools Pack to remotely manage these servers. The Windows 2000
+version of the Administration Tools Pack is not supported on Windows XP."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1485-7 RKBOOK
+
+======================================================================
+Keywords          : kbfix 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

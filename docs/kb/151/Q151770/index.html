@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151770/","publisher":null,"image":null,"headline":"Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151770-inf-how-to-suppress-local-port-error-dialog-boxes">Q151770: INF: How to Suppress "Local Port Error" Dialog Boxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151770
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you have created a printer for a local port (for example, LPT1) on a
+computer running Windows NT, and you want to print from an application running
+on this computer, a dialog box appears if the printer is not connected or turned
+on or is out of paper. The box says that Windows NT can't write to the port and
+asks you to either cancel or retry the print job. This is expected behavior and
+is desirable under most circumstances; however, in some cases you may not want
+these dialog boxes to appear on the user's desktop. There are steps you can take
+to suppress these dialog boxes.
+
+MORE INFORMATION
+================
+
+To suppress the dialog boxes, complete the following procedure:
+
+1. Create a second printer with exactly the same settings as the printer
+  attached locally and have it print to the same port as the local one.
+
+2. Share this second printer on the network.
+
+3. Open the Properties of the original printer.
+
+4. In the "Print to" dialog box, select "Other...".
+
+5. In the "Print Destinations" dialog box, select "Local Port" then press OK.
+
+6. In the "Port Name" dialog box, type the UNC name for the printer you shared
+  in step 2. The UNC name contains your computer name and the share name, for
+  example, "\\my_computer\laserjet2".
+
+7. Press the OK button twice to return to Print Manager.
+
+The local monitor displays the dialog box advising of a printing error only for
+users who work at the local computer and use printers that print to local ports.
+If you follow the procedure described above, the local monitor does not display
+this dialog box for the original printer since it is not printing to a local
+destination, and it does not display it for the second printer because it thinks
+that the client is coming in from the network (that is, arriving through the
+print share).
+
+Additional query words: 3.5 prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185008/","publisher":null,"image":null,"headline":"Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185008-xadm-err-msg-information-store-fails-to-start-with-error-429">Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185008
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The information store fails to start with Server-specific error 4294966090 after
+an offline restore of a private information store or public information store.
+
+The application event viewer log displays the following events:
+
+  Event ID:  5000
+  Source: MSExchange IS
+  Type:  Error
+  Description: Unable to initialize the Microsoft Exchange Information
+  Store service. Error non-database file or corrupted database.
+
+  Event ID: 1120
+  Source: MSExchange IS
+  Type:  Error
+  Description: Error non-database file or corrupted database initializing
+  the Microsoft Exchange Server information store database.
+
+CAUSE
+=====
+
+The information store being restored is not an Exchange Server 5.5 information
+store.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- Restore the information store from an online backup or an offline copy of an
+  Exchange Server 5.5 information store.
+
+-OR-
+
+- Restore the incorrect version information store to its proper environment by
+  installing the version of Exchange Server that corresponds with the version
+  of the offline copies of the Priv.edb and/or Pub.edb files.
+
+MORE INFORMATION
+================
+
+Server-specific error 4294966090 refers to Jet Error -1206 0xFFFFFB4A
+JET_errDatabaseCorrupted non-db file or corrupted db.
+
+For additional information about other causes for server-specific error
+4294966090 or error -1206, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q181824 XADM: Exchange Database Engine Doesn't Detect Removed Page in B-tree
+  Split Operation
+
+  Q195856 XADM: How to Detect and Remove Long Values in Exchange Databases
+
+  Q233295 Error -1206 Starting Database
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

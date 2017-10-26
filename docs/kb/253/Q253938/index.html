@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253938/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253938/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253938/","publisher":null,"image":null,"headline":"Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253938-bug-application-error-when-accessing-cursorstables-in-loop">Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253938
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbvfp300 kbvfp300bBUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug K
+Last Modified: 13-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are creating cursors and changing the cursor names in a loop, after
+about 32,160 cursor name changes, Visual FoxPro generates an error message and
+shuts down. The error message can be:
+
+  Fatal Error: Exception code=C00000005
+
+  -or-
+
+  Alias '' is not found.
+
+This is followed by the error message:
+
+  Fatal Error.
+
+CAUSE
+=====
+
+The use of macro expansion/variable substitution, in conjunction with the use of
+macro expansion/variable substitution to access the table, causes this problem.
+For example:
+
+  lcAlias = "A" + ALLTRIM(STR(x))
+  CREATE CURSOR (lcAlias) (fld1 c(10))
+  cValue = &amp;lcAlias..fld1  
+
+  -or-
+
+  lcAlias = SYS(2015)
+  USE Table1 ALIAS &amp;lcAlias
+  cValue = &amp;lcAlias..fld1
+
+The more instances of macro expansion/variable substitution, the sooner the
+problem occurs. However, the problem only occurs when a table/cursor is
+USEd/CREATEd with macro substitution/variable substitution.
+
+RESOLUTION
+==========
+
+Use constant alias names. Do not change the name of the alias each time it is
+created. For example, when you create a cursor in a loop, use the same name each
+time instead of using a unique name.
+
+  LOCAL lcAlias, x
+  CLEAR
+  @ 2,1 SAY "Starting User Object Memory Use"
+  @ 3,1 SAY SYS(1016)       &amp;&amp; User Object Memory Use
+  @ 4,1 SAY "Current User Object Memory Use"
+
+  FOR x = 1 TO 100000
+  	lcAlias = "ABCDEF"
+  	CREATE CURSOR (lcAlias) (fld1 c(10))
+  	cValue = &amp;lcAlias..fld1
+  	USE IN (lcAlias)
+  	@ 1,1 SAY lcAlias
+  	@ 5,1 SAY SYS(1016)  &amp;&amp; User Object Memory Use
+  ENDFOR
+  RETURN
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The sample program fails at approximately 32,160 iterations. The problem is
+exacerbated when you use additional variables, arrays, cursors, and tables
+created in this manner. Then the error occurs at a fraction of the 32,160
+iterations. If you modify the reproduction code to have three different aliases,
+then the problem occurs at one third (1/3) of 32,160 iterations. So, this
+problem may occur sooner or later in an application depending on how many macro
+expansion/variable substitutions variables are used.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code to a program (.prg) file and save it as "MemTest"
+  (without the quotation marks):
+
+  LOCAL lcAlias, x
+  CLEAR
+  @ 2,1 SAY "Starting User Object Memory Use"
+  @ 3,1 SAY SYS(1016)       &amp;&amp; User Object Memory Use
+  @ 4,1 SAY "Current User Object Memory Use"
+
+  FOR x = 1 TO 100000
+  	lcAlias = "A" + ALLTRIM(STR(x))
+  	CREATE CURSOR (lcAlias) (fld1 c(10))
+  	cValue = &amp;lcAlias..fld1
+  	USE IN (lcAlias)
+  	@ 1,1 SAY lcAlias
+  	@ 5,1 SAY SYS(1016)  &amp;&amp; User Object Memory Use
+  ENDFOR
+  RETURN
+
+2. Exit FoxPro.
+
+3. Start Visual FoxPro.
+
+4. Run the .prg file MemTest.
+
+5. Watch the User Object Memory Use climb. It should cause an error at
+  approximately 32,160 iterations through the loop.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp300 kbvfp300bBUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

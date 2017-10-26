@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299720: MapPoint 2002: Contents of the Readme.wri File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299720: MapPoint 2002: Contents of the Readme.wri File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299720/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299720/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299720/","publisher":null,"image":null,"headline":"Q299720: MapPoint 2002: Contents of the Readme.wri File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299720-mappoint-2002-contents-of-the-readmewri-file">Q299720: MapPoint 2002: Contents of the Readme.wri File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299720
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 05-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MapPoint 2002 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the complete text of the Readme.wri file located on the
+root folder of the Microsoft MapPoint 2002 Setup CD-ROM.
+
+MORE INFORMATION
+================
+
+Microsoft MapPoint 2002 North America Release Notes
+This document contains information about known issues with MapPoint 2002 and
+other useful troubleshooting information. Please read this document before
+installing MapPoint 2002.
+
+Document Contents:
+
+I. Known Issues
+II. Troubleshooting Setup
+III. Troubleshooting Printing Problems
+IV. Hardware Issues
+
+I. Known Issues
+---------------
+
+If you want to install MapPoint 2001 after installing MapPoint 2002, choose a
+different installation directory for MapPoint 2001. If you do not choose a
+different installation directory for MapPoint 2001 after installing MapPoint
+2002, neither application can start.
+
+If you install MapPoint 2001 after installing MapPoint 2002, programs written
+using the MapPoint 2002 object model may no longer work properly.
+
+The Map.ObjectsFromPoint method sometimes creates an invalid FindResults object.
+The count of the results is larger than the actual number of found items. When
+using the Item method of the returned object, you should include error handling,
+checking for Runtime error 5: Invalid procedure call or argument. You will still
+be able to access the complete set of returned objects, but some nonexisting
+items will return this error.
+
+When creating territories within the MapPoint Control, be sure to explicitly save
+map files by calling the Control's SaveMap, SaveMapAs or CloseMap methods. If
+you close the Control or the application that hosts the Control without
+explicitly saving a map with territories by using one of these methods, all
+territory data may not be saved with the map. Another way to work around this
+problem is to hide the territory pane before closing the Control by replacing it
+with another pane, such as the Legend and Overview pane.
+
+When using the Visual Basic Package and Deployment Wizard to create a custom
+setup program for MapPoint on Windows 98 or Windows Millennium Edition, you
+should use Visual Basic version 6.0 with Service Pack 4 or later. If you do not
+use this version of Visual Basic, your setup program will not run properly.
+
+Do not use the trial version of MapPoint to design or deploy applications.
+
+There are known issues with floating objects not appearing on multiple monitors
+after the monitors are switched. For example, if you have multiple monitors and
+move a floating object, such as a toolbar, from one monitor to another, then
+close the application, switch monitor positions in Control Panel, and start the
+application again, you will no longer be able to see the toolbar on either
+monitor. To work around this problem, restore the monitors to their original
+positions.
+
+MapPoint includes various geographies such as State/Province and ZIP
+Code/Postcode to support Data Mapping and Territory functionality. These
+geometries do not exist up to the same altitude for all countries; consequently,
+it may be necessary to zoom in after completing a data map or while creating a
+territory that spans countries.
+
+If you are running Windows 98 First Edition or Windows NT Service Pack 6 with
+Internet Explorer 4.01 Service Pack 1 or earlier, the Find feature of MapPoint
+may not function. To work around this problem, upgrade to the most recent
+version of comctl32.dll:
+
+1. Insert the MapPoint Setup disc in your disc drive.
+
+2. Browse to the \MSMap\redist\common\ folder.
+
+3. Double-click 50comupd.exe.
+
+4. Follow the on-screen instructions.
+
+Installing Microsoft Internet Explorer 5.0 or greater will also update this file.
+You can install Internet Explorer version 5.0 from the MapPoint Setup disc:
+
+1. Insert the MapPoint Setup disc into your disc drive.
+
+2. Browse to the \OSP\1033\IE5\EN\ folder.
+
+3. Double-click IE5SETUP.EXE.
+
+4. Follow the on-screen instructions.
+
+II. Troubleshooting Setup
+-------------------------
+
+Because MapPoint 2002 installs system files that might be shared with other
+applications, you need to shut down all other applications (including anti-virus
+software) before running Setup.
+
+To start Setup for installing MapPoint 2002, insert the Setup disc in your disc
+drive. After setup is complete, replace the Setup disc with the Run disc to run
+the program.
+
+If, after running Setup and restarting Windows, MapPoint does not run, the
+problem is most likely related to system files used by some anti-virus software.
+To resolve this problem, turn off your anti-virus software, uninstall MapPoint,
+and then reinstall MapPoint.
+
+If you need to reinstall MapPoint, on the Start menu, point to Settings, and then
+click Control Panel. Double-click Add/Remove Programs, and double-click
+Microsoft MapPoint 2002 North America in the list displayed; if you are running
+Windows 2000, select Microsoft MapPoint 2002 North America in the list
+displayed, then click Change.
+
+To make MapPoint available through advertising on Windows 98 or Windows NT
+operating systems the Office Service Pack must first be installed on client
+machines. With the Setup disc in the client machine's X: drive, open a command
+prompt window on a user's computer and type the following command
+
+  X:\Setup.exe /jm \\machine\share\MapPoint\msmap\data.msi
+
+where \\machine\share\MapPoint is the administrative installation location.
+This will install the Office Service Pack to the client machine and advertise
+MapPoint.
+
+III. Troubleshooting Printing Problems
+--------------------------------------
+
+If you encounter problems when printing from MapPoint 2002, such as no printout
+or partial printout, low print quality, or erratic text being printed, there are
+several ways to correct the problem.
+
+Check with the manufacturer of your printer to see if updated drivers are
+available. The manufacturer's Web site is usually a good place to look for
+updated drivers.
+
+Changing your print quality may improve printouts from certain printers or in
+certain memory configurations. To change your print quality, go to the File
+menu, and click Print. Under Options, select one of the options in the Map
+quality box. The print quality is still quite good in the lower resolution mode.
+Even if your printer supports high-resolution printing, you may choose to use
+the Draft option to speed up printing. You can also increase the margins so the
+printed map is smaller and faster.
+
+If your printer displays a message or error indicator, see your printer manual
+for information about how to correct the problem.
+
+If you receive an "out of memory" error message when printing, check your printer
+settings in Control Panel. On the Start menu, point to Settings, and then click
+Control Panel. Double-click Printers, and then right-click the icon for your
+printer to view its properties. Verify that the amount of printer memory
+installed in the printer matches the setting specified in Control Panel. If this
+does not correct the problem, then try printing in a lower resolution mode by
+changing the Map quality to Normal or Draft, or try increasing your page margins
+or using portrait orientation so the printed map is smaller and can print
+faster.
+
+If the legend symbols are unclear on your printout, look for a "dithering"
+setting in the Printer Properties dialog box. Setting dithering to None or Fine
+gives better results than Coarse.
+
+If you receive a message that no printers are installed and you have a printer
+installed, make sure that one of the printers has been set as the default
+printer.
+
+IV. Hardware Issues
+-------------------
+
+MapPoint 2002 will run best with multi-disc changers if you run it from the same
+drive to which it was installed. Also, if you want to listen to audio discs at
+the same time, it is best to start MapPoint 2002 and then start your audio
+disc.
+
+The Plextor 6PLEX CD-ROM drive may cause "fail to read" messages. If you see this
+message, you will need to upgrade your CD-ROM drive to an 8PLEX or other more
+recent model.
+
+If you use a Microsoft IntelliMouse and are running the Microsoft Windows 2000
+operating system, the IntelliMouse wheel may not scroll correctly through
+directions. To correct this behavior, on the Start menu, point to Settings, and
+then click Control Panel. Double-click Display, click Effects, and clear the
+"Use transition effects for menus and ToolTips" check box.
+
+MapPoint will not run if your computer has an ATI 3D Rage Pro AGP 2X card running
+display driver version 5.2.040.4.0.0 with display settings in True Color mode.
+See the ATI Web site to install the recommended display driver. If you are
+running Windows NT 4.0 or Windows 2000 and you have an ATI or Matrox video
+adapter installed in the computer, you may receive a "fatal exception" error
+message and blue screen or unexpected computer restart when you use the search
+or data mapping features.
+
+To work around this problem on Microsoft Windows 2000, reduce the graphics
+acceleration setting:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. On the Settings tab, click Advanced.
+
+4. Click the Troubleshooting tab.
+
+5. Move the Hardware Acceleration slider all the way to the left (the None
+  position), and then click OK.
+
+NOTE: If the issue continues to occur, reduce the Colors setting on the Settings
+tab of the Display Properties dialog box to 256 Colors, and then click OK.
+
+To work around this problem on Windows NT 4.0, reduce the color palette setting
+to 256 colors:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Color Palette box, click 256 Colors, and then click Test.
+
+5. Click OK, and then click Yes.
+
+6. Click OK, and then close Control Panel.
+
+NOTE: If reducing the color palette setting to 256 colors resolves this issue,
+you can also attempt to increase the color palette setting to True Color (24
+bit) or True Color (32 bit).
+
+Trademarks
+
+Product, service, and/or company names mentioned herein may be trademarks or
+registered trademarks of their respective owners.
+
+The third-party products that are discussed in this article are manufactured by
+companies that are independent of Microsoft. Microsoft makes no warranty,
+implied or otherwise, regarding the performance or reliability of these
+products.
+
+Additional query words: multi multi-media media mm
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2002
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

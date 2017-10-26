@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58333: Windows 3.0 WIN.INI [extensions] Section | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58333: Windows 3.0 WIN.INI [extensions] Section" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58333/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58333/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58333/","publisher":null,"image":null,"headline":"Q58333: Windows 3.0 WIN.INI [extensions] Section","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58333-windows-30-winini-extensions-section">Q58333: Windows 3.0 WIN.INI [extensions] Section</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58333
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Windows 3.0 WININI.TXT
+readme file. The Windows Setup program copies this file to the Windows
+directory.
+
+[EXTENSIONS] SECTION
+--------------------
+
+The [extensions] section contains settings that link groups of
+document files with an application so that opening the document file
+automatically starts the application.
+
+The [extensions] section can contain settings of the following type:
+
+&lt;extension&gt;=&lt;executable-filename input-filename&gt;
+
+Purpose: Contains a list of filename extensions and corresponding
+        applications that are called when the user chooses a file
+        that has one of the given extensions.
+
+        The &lt;extension&gt; keyname is a one- to three-character
+        extension. The &lt;executable-filename&gt; value is the filename
+        (with the .EXE extension) of the corresponding application.
+        The &lt;input-filename&gt; value is the filename that will be
+        passed to the application when called. This value can be any
+        filename, or it can consist of a special wildcard character
+        -- the caret (^) -- followed by a filename extension. The
+        caret (^) represents all files with the specified extension.
+
+        For example, the following setting links document files with
+        the .CAL extension to the Windows Calendar application:
+
+           cal=calendar.exe ^.cal
+
+To change: Choose Association from the File menu in File Manager.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

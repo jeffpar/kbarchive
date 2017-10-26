@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193944: PRB: AddProperty Does Not Work in OLE DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193944: PRB: AddProperty Does Not Work in OLE DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193944/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193944/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193944/","publisher":null,"image":null,"headline":"Q193944: PRB: AddProperty Does Not Work in OLE DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193944-prb-addproperty-does-not-work-in-ole-dll">Q193944: PRB: AddProperty Does Not Work in OLE DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193944
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running a custom Component Object Model (COM) server that uses the AddProperty
+method of the same object, returns an OLE Automation error when the property is
+referenced.
+
+CAUSE
+=====
+
+Microsoft Visual FoxPro allows creation of the property, although it does not
+expose it publicly. You can access the added property within the class
+definition. For example, the following code sample shows assignment of the
+initial value of the added property to an existing property.
+
+1. Modify the custom COM server created in the MORE INFORMATION section to the
+  following code:
+
+        DEFINE CLASS addcomprop AS LINE OLEPUBLIC
+           errbyte=0
+           mytest=""
+           PROCEDURE INIT
+              THIS.ADDPROPERTY("NewProp", "Test")
+              THIS.mytest=THIS.NewProp
+              *No Error, from preceding line, Shows NewProp's Existence
+           ENDPROC
+           PROCEDURE ERROR
+              LPARAMETERS nError, cMethod, nLine
+              THIS.errbyte=STRTOFILE(STR(nError) + " " + cMethod + " " ;
+              + STR(nLine),"c:\errfile.txt")
+           ENDPROC
+        ENDDEFINE
+
+2. Call the preceding server with the following client code:
+
+        x = CREATEOBJECT("PropTest1.addcomprop")
+        ? x.mytest &amp;&amp; Returns Value 'Test' rather than ''
+        ? x.errbyte &amp;&amp; Returns 0 for no errors.
+        ? x.NewProp &amp;&amp; Returns Unknown Name Error.
+
+RESOLUTION
+==========
+
+Reference the property internally in the object, and expose it through a public
+property, or a return value of a method.
+
+A better way to create a property that you do not publicly expose in a COM server
+is to use the PROTECTED or HIDDEN keyword when defining the property. For
+example, you could use the following code in the class definition (not in the
+Init event or any other procedure) in place of the
+This.AddProperty("NewProp","Test") code that is in the Init event of the class
+definition:
+
+     PROTECTED NewProp
+     NewProp="Test"
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following error is not trappable by the Error event of the class set as
+OLEPUBLIC:
+
+  Error Text: "Program Error OLE error code 0x80020006: Unknown Name"
+
+NOTE: We do not recommend that you create properties programmatically in COM
+servers because the type library file, PropTest1.tlb, will not reflect the
+properties.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place the following code in a program file, attach it to a project, and build
+  it into PropTest1.exe:
+
+        DEFINE CLASS addcomprop AS LINE OLEPUBLIC
+           errbyte=0
+           PROCEDURE INIT
+              THIS.ADDPROPERTY("NewProp", "Test")
+           ENDPROC
+           PROCEDURE ERROR
+              LPARAMETERS nError, cMethod, nLine
+              THIS.errbyte=STRTOFILE(STR(nError) + " " + cMethod + " " ;
+              + STR(nLine),"c:\errfile.txt")
+           ENDPROC
+        ENDDEFINE
+
+2. Use the following code in a program file to call that custom COM server:
+
+        x = CREATEOBJECT("PropTest1.addcomprop")
+        ? x.errbyte    &amp;&amp; Returns 0 for no errors.
+        ? x.NewProp    &amp;&amp; Returns Unknown Name Error.
+
+Additional query words: kbCOMt kbCtrl kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

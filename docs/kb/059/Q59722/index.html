@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59722: Open and Save in QB/QBX Editor Treat Filenames as Directories | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59722: Open and Save in QB/QBX Editor Treat Filenames as Directories" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59722/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59722/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59722/","publisher":null,"image":null,"headline":"Q59722: Open and Save in QB/QBX Editor Treat Filenames as Directories","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59722-open-and-save-in-qbqbx-editor-treat-filenames-as-directories">Q59722: Open and Save in QB/QBX Editor Treat Filenames as Directories</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59722
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900227-113 B_BasicCom | mspl13_basic
+Last Modified: 26-MAR-1990
+
+When opening or saving a file in the QuickBASIC (QB) or QuickBASIC
+Extended (QBX) editor, the name of the file can be entered in an edit
+field titled "File Name :". If the filename is entered without an
+extension, the editor assumes that the extension is ".BAS". However,
+if the name entered is also the name of a subdirectory within the
+current directory, the editor (depending on the version) may change to
+that directory and no file will be opened or saved. In such a
+situation, you must enter the extension to tell the editor you are
+referring to the file, not the directory.
+
+This information applies to QB.EXE in Microsoft QuickBASIC Versions
+2.00, 2.01, 3.00, 4.00, 4.00b, and 4.50 for MS-DOS and to QBX.EXE in
+Microsoft BASIC Professional Development System (PDS) Version 7.00 for
+MS-DOS.
+
+What the QB.EXE or QBX.EXE editor will do in the above situation
+depends on which version you use.
+
+The following table describes the behavior of different versions of
+the QB.EXE and QBX.EXE editors in this situation. There is also a
+difference that depends on whether a file is being opened (or loaded)
+or saved. In the table below, the "Open" column lists the behavior of
+the editor when a file is being opened, while the "Save" column lists
+the editor's behavior when a file is being saved.
+
+   Editor     Open                       Save
+   ------     ----                       ----
+
+   QB 2.00    Treats the name entered    "Invalid file specification"
+   QB 2.01    as a directory and         error, then it changes to that
+   QB 3.00    changes to it.             directory.
+
+              Treats the name entered    Treats the name entered as a
+   QB 4.00    as a directory and         file.
+   QB 4.00b   changes to it.
+
+              Treats the name entered    Treats the name entered as a
+   QB 4.50    as a directory and         directory and changes to it.
+              changes to it.
+
+              Treats the name entered    Treats the name entered as a
+   QBX 7.00   as a directory and         directory and changes to it.
+              changes to it.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94372/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94372/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94372/","publisher":null,"image":null,"headline":"Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94372-golf-err-msg-machine-is-too-slow-to-play-sounds">Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94372
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-1999
+
+kbusage kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Golf for Windows issues the error statement "Machine is too slow to
+play sounds" in the Current Sound Driver portion of the System Info dialog box
+if the machine fails Golf's internal timing test. Golf performs this test as
+Golf is launched, so you may not always receive this message every time Golf is
+started.
+
+MORE INFORMATION
+================
+
+This test is a series of instructions designed to benchmark the speed of the
+particular system. Among the instructions in the series are instructions
+representative of those necessary to play the sounds. Through testing, we have
+determined that any machine that is unable to perform this series of
+instructions less than 3200 times per second is also unable to play the sounds
+effectively. We found that machines that were unable to satisfy the 3200 loops
+per second requirement produced broken and garbled sound.
+
+Machines such as the 386DX, 486SX, and 486DX should have no problem playing the
+sounds. The dominant factors in this benchmark are the CPU speed, speed of
+memory chips, and the time spent servicing the resident interrupts, following
+the CLI (clear interrupt) instruction.
+
+Anything that reduces the amount of time spent accessing memory, servicing
+interrupts, or time in other applications will increase the likelihood of
+playing sounds. Other than obtaining a new computer or a sound card, things you
+can try to resolve the problem include the following:
+
+1. If the computer has a Turbo switch, make sure that it is on.
+
+2. Eliminate all unnecessary terminate-and-stay-resident (TSR) programs.
+
+3. Run Windows in standard mode.
+
+Additional query words: 1.00 3.00 3.10 Help
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

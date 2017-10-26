@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216746/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216746/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216746/","publisher":null,"image":null,"headline":"Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216746-fp-uppercase-links-to-files-are-broken-publishing-to-unix">Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216746
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 2002 
+- FrontPage 2002 Server Extensions from Microsoft 
+- Microsoft FrontPage 2000 
+- FrontPage 2000 Server Extensions from Microsoft 
+- Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you publish Web content that contains uppercase links from a Windows- based
+personal computer to a Web server that resides on UNIX, the links may break.
+
+CAUSE
+=====
+
+Windows-based computers perform case-insensitive compares when resolving URLs,
+while UNIX-based servers perform case-sensitive compares. URLs by definition are
+case-sensitive, so the UNIX systems apply them literally, while Windows-based
+Web servers make a reasonable simplification.
+
+RESOLUTION
+==========
+
+To resolve this problem, make your links relative to the case of the directories
+where the links point.
+
+For instance, if you make a relative link to an image in your Web called
+Picture.gif, and you enter the URL: IMAGES/picture.gif, this link will work
+properly for Web servers on Windows. If you publish this Web to a UNIX Web
+Server, the link will appear broken when browsing to it. This is because the URL
+points to "IMAGES" and the actual folder is named (lower case) "images."
+
+In this situation, you would need to modify the URL: images/picture.gif so that
+"images" matches the case of the directory on the UNIX Web server. The other
+option is to change the case of the images folder on the UNIX Web server to
+"IMAGES."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: front page FPSE FP 2002 2000 FP98
+
+======================================================================
+Keywords          :  
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPageServXSearch _IKkbZNotKeyword4 kbZNotKeyword2 kbFrontPage2000Search kbFrontPage2002Search kbFrontPage98Search kbZNotKeyword3 kbFrontPage2000ServX kbFrontPage2002ServX kbZNotKeyword5
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

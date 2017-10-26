@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137785: How to Use a Number Other Than 1 When Dialing Long Distance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137785: How to Use a Number Other Than 1 When Dialing Long Distance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137785/","publisher":null,"image":null,"headline":"Q137785: How to Use a Number Other Than 1 When Dialing Long Distance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137785-how-to-use-a-number-other-than-1-when-dialing-long-distance">Q137785: How to Use a Number Other Than 1 When Dialing Long Distance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137785
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbtool kbusage win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you dial a long distance number using a 32-bit communications program in
+Windows 95, the number 1 is automatically dialed before the area code of the
+number to be dialed. Dialing 1 first for a long distance call is appropriate for
+most phone systems, but some systems require you to dial a number other than 1.
+
+This article describes how to configure Windows 95 to dial a number other than 1
+to begin a long distance call.
+
+MORE INFORMATION
+================
+
+To configure Windows 95 to dial a number other than one to begin a long distance
+call, follow these steps:
+
+1. In Control Panel, double-click the Modems icon.
+
+2. Click Dialing Properties.
+
+3. Click New, type a name for the new location in the dialog box that appears,
+  and then click OK.
+
+4. Click the Dial Using Calling Card check box to select it, and then click New
+  in the dialog box that appears.
+
+5. Type a name for the new calling card in the dialog box that appears, click
+  OK, and then click Advanced.
+
+6. Type "G" (without the quotation marks) in the Calls Within The Same Area Code
+  box.
+
+7. Type "&lt;n&gt;FG" (without the quotation marks) in the Long Distance Calls
+  box, where &lt;n&gt; is the number you want to use in place of 1. For
+  example, if you want to use 8 in place of 1, type "8FG" in the Long Distance
+  Calls box.
+
+8. Type "&lt;n&gt;1EFG" (without the quotation marks) in the International Calls
+  box, where &lt;n&gt; is the number you want to use in place of 1. For
+  example, if you want to use 8 in place of 1, type "81EFG" in the
+  International Calls box.
+
+9. Click Close, and then click OK.
+
+When you want to dial a long distance number using a communications program,
+configure the program to use this new location.
+
+NOTE: "G" inserts the telephone number. "F" inserts the area code. "E" inserts
+the country code.
+
+Note that this method works only with 32-bit communications programs that support
+the Telephony Application Programming Interface (TAPI). You cannot use this
+method if you already use a calling card to dial long distance. When you choose
+a calling card in the Change Calling Card dialog box, the advanced settings are
+set automatically and cannot be changed.
+
+Another method that you can use for a single HyperTerminal or Dial-Up Networking
+connection, or for The Microsoft Network, is to change the area code of the
+number to be dialed to match your own area code, and then enter the entire
+10-digit number you want to dial in the Phone Number box.
+
+For example, if your local area code is 555, enter 555 in the Area Code box and a
+phone number such as "8 123 456-7890" (without the quotation marks) in the Phone
+Number box. Windows 95 dials this phone number exactly as it appears in the
+Phone Number box. When you use this method, dialing options such as call waiting
+or outside line access numbers are used.
+
+Additional query words: awfax
+
+======================================================================
+Keywords          : kbtool kbusage win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

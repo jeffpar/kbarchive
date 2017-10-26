@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154810/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154810/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154810/","publisher":null,"image":null,"headline":"Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154810-fix-errors-when-accessing-rdopreparedstatements-not-consistent">Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154810
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to access a non-existent rdoPreparedStatement, the error you
+receive depends on whether there are other rdoPreparedStatements in the
+collection.
+
+If there are none, you will get this error:
+
+  40054 - invalid parameter.
+
+If there is at least one, you will get this error:
+
+  40041: Couldn't find object indicated by text.
+
+RESOLUTION
+==========
+
+To minimize the impact of this problem, ensure that any error handlers that may
+trap the preceding errors perform the same code for both errors.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This bug was corrected in Visual Studo 97 Service Pack 3.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Problem
+--------------------------
+
+1. Create a DSN in the 32-Bit ODBC section of the Control Panel. Name it "pubs"
+  and configure it to point to the pubs database on a Microsoft SQL server.
+
+2. Start the 32-bit edition of Visual Basic version 4.0 for Windows. Form1 is
+  created by default.
+
+3. Add two Command buttons to the form.
+
+4. Add the following code to the General Declarations section of Form1:
+
+        Option Explicit
+
+        Private Sub Command1_Click()
+          Dim rdocon As rdoConnection
+          Dim rdoprep As rdoPreparedStatement
+          Set rdocon = rdoEngine(0).OpenConnection("pubs", False, _
+                                                   False, "uid=;pwd=;")
+          Set rdoprep = rdocon.rdoPreparedStatements("Test1")
+        End Sub
+
+        Private Sub Command2_Click()
+          Dim rdocon As rdoConnection
+          Dim rdoprep As rdoPreparedStatement
+          Set rdocon = rdoEngine(0).OpenConnection("pubs", False, _
+                                                   False, "uid=;pwd=;")
+          Set rdoprep = rdocon.CreatePreparedStatement("Test", _
+                                                 "Select * from Authors")
+          Set rdoprep = rdocon.rdoPreparedStatements("Test1")
+        End Sub
+
+5. Press the F5 key or click Start on the Run menu to run the application. Click
+  Command1, and you should see that Visual Basic gives the following error: (At
+  this point the prepared statement has not been created.)
+
+  40054 - invalid parameter.
+
+6. Stop Visual Basic by using Stop on the Run Menu. Press the F5 key or click
+  the Run menu again. Click the second button. This time the error will be
+  different as the code has created a prepared statement:
+
+  40041: Couldn't find object indicated by text.
+
+REFERENCES
+==========
+
+Visual Basic Online help, search on: "CreatePreparedStatement;
+"rdoPreparedStatements".
+
+Building Client/Server Applications with Visual Basic Manual, Chapter 8.
+
+Additional query words: kbVBp400 kbVS97PS3fix kbVBp kbdse kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

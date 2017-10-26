@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98314: PRB: #pragma pack Can Generate Compiler Warnings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98314: PRB: #pragma pack Can Generate Compiler Warnings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98314/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98314/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98314/","publisher":null,"image":null,"headline":"Q98314: PRB: #pragma pack Can Generate Compiler Warnings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98314-prb-pragma-pack-can-generate-compiler-warnings">Q98314: PRB: #pragma pack Can Generate Compiler Warnings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98314
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC
+Last Modified: 29-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51 
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an application uses the pack pragma, C/C++ the compiler generates the
+following message:
+
+  warning C4103 used #pragma pack to change alignment
+
+Microsoft Visual C++ 5.0 generates a different warning:
+
+  warning C4653: compiler option 'structure packing (/Zp)' inconsistent with
+  precompiled header; current command-line option ignored
+
+CAUSE
+=====
+
+The pragma pack argument differs from the structure packing option specified on
+the compiler command line. This warning was added to the compiler because
+third-party tools can change the performance of user code by including a pragma
+pack message in library include files. The warning message is designed to
+indicate potential bugs in code under development.
+
+RESOLUTION
+==========
+
+If the code restores the pack argument to the structure packing option specified
+on the compiler command line, the warning does not occur. The sample code below
+demonstrates restoring the compiler default.
+
+MORE INFORMATION
+================
+
+The pack pragma and the /Zp compiler option each pack data structures to a
+specified byte boundary. For example, if a structure requires 9 bytes of storage
+and the compiler command line includes the /Zp1 option or the code includes the
+#pragma pack(1) statement, the compiler reads and writes 9 bytes of information
+when it accesses the structure. If the compiler command line includes the /Zp2
+option or the code includes the #pragma pack(2) statement, the compiler reads
+and writes 10 bytes when it accesses the structure.
+
+Adding the /Zp option to the command line may generate a different warning if the
+PCH file is not updated after the change:
+
+  warning C4653: compiler option 'structure packing (/Zp)' inconsistent with
+  precompiled header; current command-line option ignored
+
+If the code includes the pack pragma, the compiler determines whether the
+/Zp&lt;x&gt; option is specified, where &lt;x&gt; is 1 (the default when no
+number is specified), 2, 4, 8, or 16. If the compiler command line does not
+specify the /Zp option, the compiler packs structures on 2-, 4-, or 8-byte
+boundaries depending on the compiler version.
+
+The compiler generates a warning if a header file changes the structure packing
+boundary and does not restore it to the value it before the end of the file.
+
+Sample Code
+-----------
+
+  /*
+  * Compile options needed: /Zp2 or /Zp4
+  */ 
+
+  FILE.H
+  ------
+
+   #pragma pack(1)
+
+   // Remove the comment from the following line to eliminate this
+   // warning:
+   // #pragma pack()
+
+  FILE.C
+  ------
+
+  #include "file.h"
+
+  void main(void)
+  {}
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbVC410 kbVC420 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

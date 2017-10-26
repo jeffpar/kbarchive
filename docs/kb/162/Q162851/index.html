@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162851: ACC97: &quot;Couldn’t find object&quot; Error Checking Out Table/Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162851: ACC97: &quot;Couldn’t find object&quot; Error Checking Out Table/Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162851/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162851/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162851/","publisher":null,"image":null,"headline":"Q162851: ACC97: &quot;Couldn’t find object&quot; Error Checking Out Table/Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162851-acc97-couldnt-find-object-error-checking-out-tablequery">Q162851: ACC97: "Couldn’t find object" Error Checking Out Table/Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162851
+Product(s): Microsoft SourceSafe
+Version(s): 97
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multi-user skills.
+
+This article assumes that you are familiar with using the client side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or the Help topics
+available from the Visual SourceSafe menu.
+
+This article also assumes that you have Microsoft Visual SourceSafe installed.
+
+When you check out a query object, you may receive the following error message:
+
+  The Microsoft Jet database engine could not find the object &lt;'Object'&gt;.
+  Make sure the object exists and that you spell its name and the path name
+  correctly.
+
+CAUSE
+=====
+
+You are trying to check out a query that conflicts with the name of a table.
+
+-or-
+
+You are trying to check out the "Data and Misc. Objects" file, and there is a
+table in it that conflicts with the name of a query.
+
+RESOLUTION
+==========
+
+Make sure that tables and queries do not share the same name.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Database and name it VssTest.mdb.
+
+2. Add this database to SourceSafe Control by clicking SourceSafe on the Tools
+  Menu and selecting "Add Database to SourceSafe."
+
+3. Check out the "Data and Misc. Objects" file from SourceSafe.
+
+4. On the File menu, point to Get External Data, and then click Import. Import
+  the Employees Table from the sample database Northwind.mdb.
+
+5. Create a new query based on the Employees table, save it as "SSTest" (without
+  the quotation marks), and add it to SourceSafe.
+
+6. Delete the SSTest query from the Database window.
+
+7. Note that you receive a message box asking "Would you like to remove query
+  "SSTest" from the source code control?" Click No.
+
+8. Create a new table in Datasheet View and save it as "SSTest" (without the
+  quotation marks).
+
+9. Check in the "Data and Misc. Objects" file.
+
+10. Check out SSTest from the "Object type of Query" in SourceSafe. Note that
+  you receive the error message mentioned in the "Symptoms" section.
+
+REFERENCES
+==========
+
+For more information about using Microsoft Access 97 with Source Code Control,
+search the Help Index for "source code control."
+
+Additional query words: AccScc, VSS, Visual
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe400 kbSSafe400a kbSSafe500
+Version           : 97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

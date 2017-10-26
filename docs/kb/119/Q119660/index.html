@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119660: Compressed Audio Doesn’t Play on Aztech Labs (AZI) Sound Cards | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119660: Compressed Audio Doesn’t Play on Aztech Labs (AZI) Sound Cards" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119660/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119660/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119660/","publisher":null,"image":null,"headline":"Q119660: Compressed Audio Doesn’t Play on Aztech Labs (AZI) Sound Cards","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119660-compressed-audio-doesnt-play-on-aztech-labs-azi-sound-cards">Q119660: Compressed Audio Doesn’t Play on Aztech Labs (AZI) Sound Cards</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119660
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbmm kbsound
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Ancient Lands for Windows, version 1.0 
+- Microsoft Art Gallery for Windows, version 1.0 
+- Microsoft Bob, version 1.0 
+- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions, versions 1993, 1994, 1995 
+- Microsoft Bookshelf '95 for Windows 95 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+- Microsoft Creative Writer for Windows, version 1.0 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+- Microsoft Encarta 96 Encyclopedia for Windows 
+- Microsoft Explorapedia series: World of People for Windows, version 1.0 
+- Microsoft Fine Artist for Windows, version 1.0 
+- Microsoft Multimedia Mozart for Windows, version 1.0 
+- Microsoft Multimedia Schubert for Windows, version 1.0 
+- Microsoft Multimedia Strauss for Windows, version 1.0 
+- Microsoft Multimedia Stravinsky for Windows, version 1.0 
+- Microsoft Musical Instruments for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+- Microsoft SoundBits, Hanna-Barbera, version 2.0 
+- Microsoft SoundBits, MGM Movies, version 1.0 
+- Microsoft SoundBits, Musical Instruments, version 1.0 
+- Microsoft Wine Guide for Windows, versions 1.0, 1.0a, 2.0 
+- Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There may be various problems playing compressed wave audio with the following
+Aztech Labs (AZI) sound cards:
+
+- Multimedia Pro
+
+- NX Pro 16
+
+- Sound Galaxy Basic 16
+
+- Sound Galaxy Pro 16
+
+These problems may include the following:
+
+- Compressed wave audio does not play.
+
+- After playing compressed audio, such as the opening sounds in Microsoft
+  Complete Baseball, the machine may hang and an EMM Exception Error #6 or GP
+  Fault error message may be displayed.
+
+- You may receive a wave error.
+
+RESOLUTION
+==========
+
+According to AZI Labs, the following steps should be taken to solve the
+problem:
+
+1. Add a D=64 parameter at the end of the Device=EMM386 line in the CONFIG.SYS
+  file. For example, if your EMM386.EXE file is in the DOS directory on drive
+  C, you would use the following line:
+
+     Device=C:\DOS\EMM386.EXE D=64.
+
+2. Change the DMABufferSize setting in the [386enh] section of the SYSTEM.INI
+  file to "DMABufferSize=064" (without the quotation marks). If the line does
+  not exist, add it.
+
+3. Do the following:
+  a. Note the driver listed in the Wave= line in the [drivers] section of the
+     SYSTEM.INI file.
+
+  b. Find the section by that name in the SYSTEM.INI file. For example, if
+     Wave=mm16.drv, find the [mm16.drv] section.
+
+  c. Add a "SingleModeDMA=True" line (without the quotation marks) to this
+     section.
+
+4. If the driver in the Control Panel for the particular AZI card has separate
+  8-bit and 16-bit DMA settings, try setting the 16-bit to None.
+
+  NOTE: Some 16-bit AZI sound card drivers do not have separate 8-bit and 16-bit
+  DMA settings.
+
+5. If the problem still persists, you may need a sound driver update. Contact
+  Aztech Labs to find the most recent version available for your particular
+  card.
+
+MORE INFORMATION
+================
+
+The Aztech products discussed here are manufactured by Aztech, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+REFERENCES
+==========
+
+Aztech Labs Sound Galaxy Support: (510) 623-8988
+Aztech Labs Technical Support: (800) 886-8879
+Aztech Labs BBS: (510) 623-8933
+
+Additional query words: multi media multimedia multi-media AZI silent doesn't play music sound soundtrack effects narration speech pronunciation creative writer fine artist kids mmpro mm pro msacm w_bob reveal msb wave error 50
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbmm kbsound 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbBookshelfSearch kbSoundBitsSearch kbBaseballSearch kbEncartaEncycSearch kbBOBSearch kbCineManiaSearch kbWinSoundSysSearch kbWinSoundSys200 kbBOB100 kbAncientLands kbCreativeWriter100 kbMMStrauss kbMMSchubert kbMMStravinsky kbMMMozart100 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCompleteBaseball1994 kbDangerousCreatures kbDinosaurs100 kbExplorapediaPeople100 kbFineArtist100 kbMusicalInst kbSoundBits kbWine100 kbWine100a kbWine200 kbScholasticHuman kbScholasticSolar kbArtGallery kbEncartaEnCyc1996 kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac kbMSBSearch
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148686/","publisher":null,"image":null,"headline":"Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148686-fix-iomanipdeclare-macro-causes-c2758-error-with-references">Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148686
+Product(s): Microsoft C Compiler
+Version(s): 1.52,2.2,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbGenInfo kbVC152bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug k
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.52, 2.2, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a IOMANIPdeclare() macro is used with a reference type, the compiler
+generates the following error message:
+
+  error C2758: '_tp' : must be initialized in constructor base/member
+  initializer list
+
+CAUSE
+=====
+
+The IOMANIPdeclare() macro is expanded into a number of classes containing data
+members of the type passed into the IOMANIPdeclare() macro. The constructors for
+these classes are written such that the data members are initialized in the body
+of each class constructor. This is not allowed for reference type data members.
+Reference type data members should be initialized in a member initialization
+list for the class constructor.
+
+RESOLUTION
+==========
+
+Modify the IOMANIPdeclare() macro (defined in Iomanip.h) so that the class data
+members are initialized in a member initialization list instead of in the body
+of the constructor.
+
+For example, the following line is defined in the IOMANIPdeclare() macro
+definition:
+
+SMANIP(T)(ios&amp; (*f)(ios&amp;,T), T t) { _fp = f; _tp = t; }
+
+The inline constructor body where the class data members are initialized can be
+modifed so that the constructor uses a member initialization list as follows:
+
+SMANIP(T)(ios&amp; (*f)(ios&amp;,T), T t) : _fp(f), _tp(t) {}
+
+This change must be made for each class constructor that initializes the _fp and
+_tp data members. These declarations are:
+
+SMANIP(T)(ios&amp; (*f)(ios&amp;,T), T t) { _fp = f; _tp = t; }
+IMANIP(T)(istream&amp; (*f)(istream&amp;,T), T t) { _fp = f; _tp = t; }
+OMANIP(T)(ostream&amp; (*f)(ostream&amp;,T), T t) { _fp = f; _tp = t; }
+IOMANIP(T)(iostream&amp; (*f)(iostream&amp;,T), T t) { _fp = f; _tp = t; }
+
+After making this change, you can use reference data types in the
+IOMANIPdeclare() macro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /*
+  The following sample code demonstrates both the error, and the
+  workaround.
+
+  Compile options needed: none
+                          /DWORKAROUND to enable the workaround macro
+  */ 
+
+  #include &lt;iostream.h&gt;
+  #include &lt;iomanip.h&gt;
+
+  // --------------------------------------------------------
+  // following is the workaround macro
+
+  #ifdef WORKAROUND
+
+  #ifdef IOMANIPdeclare
+  #undef IOMANIPdeclare
+
+  #define IOMANIPdeclare(T)  \ 
+  class SMANIP(T) { \ 
+  public: \ 
+    SMANIP(T)(ios&amp; (*f)(ios&amp;,T), T t) : _tp(t), _fp(f) {} \ 
+    friend istream&amp; operator&gt;&gt;(istream&amp; s, const SMANIP(T) &amp; sm) { \ 
+      (*(sm._fp))(s,sm._tp); return s; \ 
+    } \ 
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; s, const SMANIP(T) &amp; sm) { \ 
+      (*(sm._fp))(s,sm._tp); return s; \ 
+    } \ 
+  private: \ 
+    ios&amp; (* _fp)(ios&amp;,T); \ 
+    T _tp; \ 
+  }; \ 
+  class SAPP(T) { \ 
+  public: \ 
+    SAPP(T)( ios&amp; (*f)(ios&amp;,T)) { _fp = f; } \ 
+    SMANIP(T) operator()(T t) { return SMANIP(T)(_fp,t); } \ 
+  private: \ 
+    ios&amp; (* _fp)(ios&amp;,T); \ 
+  }; \ 
+  class IMANIP(T) { \ 
+  public: \ 
+    IMANIP(T)(istream&amp; (*f)(istream&amp;,T), T t) : _tp(t), _fp(f) {} \ 
+    friend istream&amp; operator&gt;&gt;(istream&amp; s, IMANIP(T) &amp; sm) { \ 
+      (*sm._fp)(s,sm._tp); return s; \ 
+    } \ 
+  private: \ 
+    istream&amp; (* _fp)(istream&amp;,T); \ 
+    T _tp; \ 
+  }; \ 
+  class IAPP(T) { \ 
+  public: \ 
+    IAPP(T)( istream&amp; (*f)(istream&amp;,T)) { _fp = f; } \ 
+    IMANIP(T) operator()(T t) { return IMANIP(T)(_fp,t); } \ 
+  private: \ 
+    istream&amp; (* _fp)(istream&amp;,T); \ 
+  }; \ 
+  class OMANIP(T) { \ 
+  public: \ 
+    OMANIP(T)(ostream&amp; (*f)(ostream&amp;,T), T t) : _tp(t), _fp(f) {} \ 
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; s, OMANIP(T) &amp; sm) { \ 
+      (*sm._fp)(s,sm._tp); return s; \ 
+    } \ 
+  private: \ 
+    ostream&amp; (* _fp)(ostream&amp;,T); \ 
+    T _tp; \ 
+  }; \ 
+  class OAPP(T) { \ 
+  public: \ 
+    OAPP(T)(ostream&amp; (*f)(ostream&amp;,T)) { _fp = f; } \ 
+    OMANIP(T) operator()(T t) { return OMANIP(T)(_fp,t); } \ 
+  private: \ 
+    ostream&amp; (* _fp)(ostream&amp;,T); \ 
+  }; \ 
+  class IOMANIP(T) { \ 
+  public: \ 
+    IOMANIP(T)(iostream&amp; (*f)(iostream&amp;,T), T t) : _tp(t), _fp(f) {} \ 
+    friend istream&amp; operator&gt;&gt;(iostream&amp; s, IOMANIP(T) &amp; sm) { \ 
+      (*sm._fp)(s,sm._tp); return s; \ 
+    } \ 
+    friend ostream&amp; operator&lt;&lt;(iostream&amp; s, IOMANIP(T) &amp; sm) { \ 
+      (*sm._fp)(s,sm._tp); return s; \ 
+    } \ 
+  private: \ 
+    iostream&amp; (* _fp)(iostream&amp;,T); T _tp; \ 
+  }; \ 
+  class IOAPP(T) { \ 
+  public: \ 
+    IOAPP(T)( iostream&amp; (*f)(iostream&amp;,T)) { _fp = f; } \ 
+    IOMANIP(T) operator()(T t) { return IOMANIP(T)(_fp,t); } \ 
+  private: \ 
+    iostream&amp; (* _fp)(iostream&amp;,T); \ 
+  };
+  #endif  //IOMANIPdeclare
+
+  #endif  //WORKAROUND
+
+  // This is the end of the workaround macro
+  // --------------------------------------------------------
+
+  typedef  int&amp; fillpair;
+
+  IOMANIPdeclare( fillpair );
+
+  ostream&amp; fp( ostream&amp; os, fillpair pair ) {
+    for ( int c = 0; c &lt; 10; c++ ) {
+      os &lt;&lt; pair;
+    }
+    return os;
+  }
+
+  OMANIP(fillpair) fill( fillpair var ) {
+    return OMANIP(fillpair)( fp, var);
+  }
+
+  void main() {
+    int test=0;
+    fillpair var=test;
+
+    cout &lt;&lt; "10 things coming " &lt;&lt; fill( var ) &lt;&lt; " done " &lt;&lt; endl;
+  }
+  // ***** End of code sample ******
+
+Additional query words: kbVC400bug 1.50 1.51 1.52b 1.52c 8.00c 9.10 10.00 10.10 10.20 iostream io library
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbGenInfo kbVC152bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbNoUpdate kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC152 kbVC500Search
+Version           : :1.52,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

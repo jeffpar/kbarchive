@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q315718: SMS: Windows File Protection Message During Client Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q315718: SMS: Windows File Protection Message During Client Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/315/Q315718/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/315/Q315718/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/315/Q315718/","publisher":null,"image":null,"headline":"Q315718: SMS: Windows File Protection Message During Client Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q315718-sms-windows-file-protection-message-during-client-installation">Q315718: SMS: Windows File Protection Message During Client Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q315718
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbsetup kbtool kbsms200 kbsms200bug kbsms200preSP4fix
+Last Modified: 09-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the base installation of the Systems Management Server (SMS) client, you
+may receive the following error message on your Microsoft Windows XP-based
+computer:
+
+  Windows File Protection
+  Files that required for Windows to run properly have been replaced by
+  unrecognized versions. To maintain system stability. Windows must restore the
+  original versions of these files.
+  Insert your Windows XP Professional CD-ROM now.
+
+The System Event log may contain the following informational Windows File
+Protection 64005 events:
+
+  The protected system file snmpthrd.dll was not restored to its original,
+  valid version because the Windows File Protection restoration process was
+  cancelled by user interaction, user name is smsadmin. The file version of the
+  bad file is 1.10.698.0.
+
+  The protected system file snmpcl.dll was not restored to its original, valid
+  version because the Windows File Protection restoration process was cancelled
+  by user interaction, user name is smsadmin. The file version of the bad file
+  is 1.10.698.0
+
+WORKAROUND
+==========
+
+To work around this problem, install the WMI SNMP Provider by using the
+Add/Remove Programs tool in Control Panel. This process copies the Windows XP
+versions of the Snmpcl.dll and Snmpthrd.dll files into the Windows\System32\Wbem
+folder. Because these files are a later version than the files that are included
+with SMS, the SMS Wbemsdk.exe tool will not try to overwrite those files. With
+SMS 2.0 Service Pack 4 (SP4) and later, SMS no longer tries to install these
+files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The SMS Wbemsdk.exe tool contains version 698 of Windows Management
+Instrumentation (WMI), and the SMS base installation runs Wbemsdk.exe on Windows
+XP-based computers that have WMI version 2600. However, before SMS 2.0 SP4,
+Wbemsdk.exe would install the Snmpcl.dll and Snmpthrd.dll files before an
+evaluation of the WMI version. The installation script was then stopped because
+of a later version of WMI already being installed.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbtool kbsms200 kbsms200bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

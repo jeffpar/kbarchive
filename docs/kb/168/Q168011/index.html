@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168011: FIX: C1001, file ‘fppeeps.c’, line 394, Caused By /Og | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168011: FIX: C1001, file ‘fppeeps.c’, line 394, Caused By /Og" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168011/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168011/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168011/","publisher":null,"image":null,"headline":"Q168011: FIX: C1001, file ‘fppeeps.c’, line 394, Caused By /Og","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168011-fix-c1001-file-fppeepsc-line-394-caused-by-og">Q168011: FIX: C1001, file ‘fppeeps.c’, line 394, Caused By /Og</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168011
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbVS97sp1fix kbVS97sp2fixkbbuglist kbfixlist
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling the sample code below may cause the following error:
+
+  
+
+  ttt.cpp(10) : fatal error C1001: INTERNAL COMPILER ERROR
+               (compiler file 'E:\utc\src\\P2\x86\fppeeps.c', line 394)
+
+CAUSE
+=====
+
+This internal compiler error is caused by global optimizations which is enabled
+by the /Og option. The /O1 (minimize space), /O2 (maximize speed), and /Ox
+(maximum opts.) options include the /Og switch so those may also cause this
+C1001 error.
+
+RESOLUTION
+==========
+
+Enabling the /Op (improve floating-pt consistency) optimization, or disabling
+the /Og optimization, either at the command line or by use of #pragma optimize
+will avoid the C1001 error. A more intrusive workaround would be to change the
+floats to doubles.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following code demonstrates one form of this C1001 error. Use /Og- or /Ogp
+as a workaround.
+
+SAMPLE CODE:
+
+     // cl /c /Og
+     float gf1, gf2, gf3;
+     float func( float *pf2, float f, float f1, float f2, float f3 )
+     {
+         f3 = f * (*pf2);
+         gf3 = f3;
+         gf2 = f2;
+         gf1 = f1;
+         return f;
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVS97sp1fix kbVS97sp2fix kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

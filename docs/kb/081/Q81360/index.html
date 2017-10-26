@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81360: MS-DOS EDIT and QBASIC Command Line Switches | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81360: MS-DOS EDIT and QBASIC Command Line Switches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81360/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81360/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81360/","publisher":null,"image":null,"headline":"Q81360: MS-DOS EDIT and QBASIC Command Line Switches","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81360-ms-dos-edit-and-qbasic-command-line-switches">Q81360: MS-DOS EDIT and QBASIC Command Line Switches</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81360
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the command line switches you can use to enhance or
+modify the performance of the MS-DOS Editor and QBasic utilities.
+
+MORE INFORMATION
+================
+
+Editor is a full screen text editor. QBasic is a program that reads instructions
+written in Basic and interprets them into executable computer code.
+
+The EDIT command starts Editor from the command prompt. QBASIC starts the QBasic
+Interpreter from the command prompt. Both Editor and QBasic may be executed with
+a switch or combination of switches to enhance or modify their performance. The
+following is a description of the switches available and how they affect Editor
+and QBasic:
+
+   Switch   Description
+  ------   -----------
+
+  /B       Displays Editor or QBasic in black and white. This switch
+           should be used to run Editor or QBasic on a monochrome
+           monitor with a color graphics card. If the Editor or
+           QBasic pull-down menus do not show the short cut keys on a
+           CGA monitor, then use the /B switch when starting Editor
+           or QBasic.
+
+  /G       Use this switch with a CGA monitor to provide the fastest
+           screen updating.
+
+  /H       Use this switch to display the maximum number of lines on
+           the screen that the monitor supports.
+
+  /NOHI    Editor and QBasic are designed for 16 color monitors, but
+           this switch allows Editor or QBasic to function on an
+           eight color monitor. If Editor or QBasic pull-down menus
+           do not show the short cut keys on a system that does not
+           support bold characters, use the /NOHI switch when
+           starting Editor or QBasic.
+
+The following switches may be used only with QBasic:
+
+  Switch     Description
+  ------     -----------
+
+  /EDITOR    Invokes Editor.
+
+  /MBF       Converts the built-in functions MKS$,MKD$,CVS$, and CVD
+             to MKSMBF$, MKDMBF$, CVSMBF, and CVDMBF, respectively.
+
+  /RUN       Runs a specified Basic program before displaying it.
+
+To start Editor with the /NOHI switch, type the following command at the command
+prompt:
+
+  " edit /nohi " (without the quotation marks)
+
+To start QBasic and run the program MYPROG.BAS, type the following at the command
+prompt:
+
+  " qbasic /run myprog.bas " (without the quotation marks)
+
+Reference(s):
+
+"MS-DOS User's Guide and Reference," versions 5.0 and 5.0a, pages 459, 547
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 EDIT.COM QBASIC.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

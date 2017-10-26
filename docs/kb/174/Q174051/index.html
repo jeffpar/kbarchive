@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174051: DHCP Server Fails to Lease Addresses for New Scope | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174051: DHCP Server Fails to Lease Addresses for New Scope" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174051/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174051/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174051/","publisher":null,"image":null,"headline":"Q174051: DHCP Server Fails to Lease Addresses for New Scope","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174051-dhcp-server-fails-to-lease-addresses-for-new-scope">Q174051: DHCP Server Fails to Lease Addresses for New Scope</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174051
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may be necessary to remove an existing scope from a Dynamic Host
+Configuration Protocol (DHCP) server and replace it with a new scope. For
+example, you may obtain a registered class of IP addresses for your network or
+you may be changing the class of IP addresses to accommodate more hosts or
+networks. This article discusses the recommended method of performing this task.
+
+MORE INFORMATION
+================
+
+When you need to change your DHCP scope range, it may be necessary to leave the
+server's original IP address bound to the network interface card (NIC) for
+connectivity reasons until all clients have obtained an IP address from the new
+scope. However, if you just create the new scope, you may notice that the DHCP
+server does not assign leases from the newly created scope(s) after binding
+additional IP address(es) to the NIC.
+
+This can happen because DHCP only binds to one IP address for each NIC and this
+IP address is the primary address found in TCP/IP properties. The additional
+addresses are found in the Advanced Properties of TCP/IP dialog box.
+
+To make this transition, you will need to do one of the following:
+
+- Change the primary IP address on the NIC to an IP address that is a part of
+  the same network as the new scope.
+
+  NOTE: This is the only option if you have Windows NT Server version 3.51 or
+  Windows NT Server version 4.0 before Service Pack 2.
+
+  -or-
+
+- Configure the server to use a Superscope that includes the old scope(s) and
+  the new scope(s).
+
+  For additional information, please see the following article in the Microsoft
+  Knowledge Base:
+
+  ARTICLE-ID: Q161571
+  TITLE : Using DHCP "Superscopes" to Serve Multiple Logical Subnets
+
+NOTE: If you cannot change the primary IP address of your NIC and you must use
+the second option above, leave the original scope active and exclude all the
+addresses within the scope.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

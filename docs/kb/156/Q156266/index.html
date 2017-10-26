@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156266/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156266/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156266/","publisher":null,"image":null,"headline":"Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156266-bug-adding-menu-shifts-controls-and-reduces-sdi-form-height">Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156266
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbprogramming kbtool kbui kbvfp kbvfp500aBUGkbbuglist
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a menu is added to a Single-Document Interface (SDI) form, the Height of
+the form is reduced by the height of the menu. The window size remains the same,
+but all the controls shift downward, causing some controls to be moved partially
+or fully off the bottom of the form.
+
+WORKAROUND
+==========
+
+After adding the menu, increase the form Height by adding the menu height to
+it.
+
+-or-
+
+After adding the menu, reduce the Top property of all controls contained in the
+form by subtracting the menu height.
+
+STATUS
+======
+
+Microsoft Microsoft has confirmed this problem in the products listed above and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new menu. Make it a Menu rather than a Shortcut.
+
+2. On the Menu menu, click Quick Menu to create a default quick menu.
+
+3. On the View menu, click General Options. In the General Options dialog box,
+  select the Top-Level Form check box, then click OK.
+
+4. On the Menu menu, click Generate. Save the menu as Testmenu, then select the
+  Generate button to generate the default .mpr file.
+
+5. Run the following code from a program (.prg) file:
+
+     * Start of code example
+     *
+     PUBLIC oform1
+     oform1=CREATEOBJECT("form1")
+     oform1.SHOW
+     RETURN
+
+     DEFINE CLASS form1 AS FORM
+        HEIGHT = 210
+        WIDTH = 387
+        SHOWWINDOW = 2
+        AUTOCENTER = .T.
+        CAPTION = "SDI form with Menu"
+
+        ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+          TOP = 180, ;
+          LEFT = 144, ;
+          HEIGHT = 27, ;
+          WIDTH = 84, ;
+          CAPTION = "E\&lt;xit", ;
+          NAME = "Command1"
+
+        ADD OBJECT line1 AS LINE WITH ;
+          HEIGHT = 0, ;
+          LEFT = 24, ;
+          TOP = 209, ;
+          WIDTH = 348, ;
+          NAME = "Line1"
+
+        ADD OBJECT line2 AS LINE WITH ;
+          HEIGHT = 0, ;
+          LEFT = 24, ;
+          TOP = 0, ;
+          WIDTH = 348, ;
+          NAME = "Line2"
+
+        PROCEDURE INIT
+          * DO Testmenu.mpr WITH THIS, .T.  &amp;&amp; Remove * to add menu - Step 7
+          * Add workaround code after this line...
+          * ... And before this line
+          =MESSAGEBOX('Form Height = '+ALLTR(STR(THIS.HEIGHT)),0)
+        ENDPROC
+
+        PROCEDURE command1.CLICK
+          THISFORM.RELEASE()
+        ENDPROC
+     ENDDEFINE
+     *
+     * End of code example
+
+6. The message box appears showing the form Height as 210. Click OK. The form
+  appears with no menu. The upper and lower lines and the Exit button appear on
+  the form. Close the form by clicking the Exit button.
+
+7. Remove the * from the following line in the Init procedure code:
+
+        * DO Testmenu.mpr WITH THIS, .T.  &amp;&amp; Remove * to add menu - Step 7
+
+8. Rerun the .prg. The message box appears showing the form Height as 210 minus
+  the menu height (by default the menu height should be 19, so 191 should
+  appear). Click OK. The form appears with its menu. The upper line is visible
+  just below the menu, but the lower line is not visible and neither is the
+  lower half of the Exit button. Close the form by clicking the visible portion
+  of the Exit button.
+
+How to Compensate for the Menu in an SDI Form
+---------------------------------------------
+
+The menu height is a configurable component of the Windows operating system. This
+is can be changed in Windows 95 or Windows NT 4.0 by opening Control Panel then
+selecting Display. Under the Appearance tab, there is an Item drop-down list.
+Selecting Menu from the Item drop-down list allows the Size spinner to adjust
+the menu height.
+
+Make adjustments to the form's appearance by compensating for menu height.
+Because the menu height is configurable, you must query the operating system for
+the current setting of the menu height. This is done by making an API call to
+the GetSystemMetrics function.
+
+Demonstration of Workaround 1: Maintaining Constant Form Height
+---------------------------------------------------------------
+
+With the first workaround, the form's window height is increased by the height of
+the menu, and all controls retain the same proximity to each other:
+
+1. Modify the Init code in the above example by adding the following code to the
+  Init procedure between the two lines beginning with the * character:
+
+        #DEFINE sm_cymenu   15    &amp;&amp; From Winuser.h
+        DECLARE INTEGER GetSystemMetrics IN Win32API ;
+           AS GetSysMet INTEGER nIndex
+        THISFORM.HEIGHT = THISFORM.HEIGHT + GetSysMet(sm_cymenu)
+
+2. Run the program again. The message box appears showing the form Height as
+  210. Click OK, then the form appears with its menu. Both lines and the Exit
+  button are fully visible. The form's window size increases by the menu
+  height. Close the form by clicking the Exit button.
+
+Demonstration of Workaround 2: Maintaining Constant Window Height
+-----------------------------------------------------------------
+
+With the second workaround, the form's window size remains the same, but any
+controls within a menu height's distance of the top of the form may be partially
+or fully moved off the top of the form.
+
+1. Remove the code added in Workaround 1, and modify the Init code in the above
+  example by adding the following code to the Init procedure between the two
+  lines beginning with the * character:
+
+        #DEFINE sm_cymenu   15    &amp;&amp; From Winuser.h
+        DECLARE INTEGER GetSystemMetrics IN Win32API ;
+           AS GetSysMet INTEGER nIndex
+        FOR EACH CONTROL IN THISFORM.CONTROLS
+           CONTROL.TOP = CONTROL.TOP - GetSysMet(sm_cymenu)
+        ENDFOR
+
+2. Run the program again. The message box appears showing the form Height as 210
+  minus the menu height (191 by default). Click OK. The form appears with its
+  menu. The lower line and the Exit button is fully visible, but the upper line
+  has moved off the top of the form. Note that the form's window size has not
+  increased. Close the form by clicking the Exit button.
+
+NOTE: Workaround 2 is roughly the same technique used in the SDI form example
+(\Vfp\samples\solution\forms\Sdiform.scx) in the Solutions.app sample
+application.
+
+REFERENCES
+==========
+
+Win32 SDK Win32.hlp Help file
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbtool kbui kbvfp kbvfp500aBUG kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

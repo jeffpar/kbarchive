@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148505: HOWTO: Force Files to Be Flushed to Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148505: HOWTO: Force Files to Be Flushed to Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148505/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148505/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148505/","publisher":null,"image":null,"headline":"Q148505: HOWTO: Force Files to Be Flushed to Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148505-howto-force-files-to-be-flushed-to-disk">Q148505: HOWTO: Force Files to Be Flushed to Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148505
+Product(s): Microsoft C Compiler
+Version(s): WIN3X:1.0,1.5,1.51,1.52;WINNT:1.0,2.0,2.1,2.2,4.0;
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbVC
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+C and C++ file operations, by default, perform their own data caching. This
+caching is in addition to the disk caching done by the operating system. Under
+certain conditions it may be necessary to ensure your data is fully flushed to
+the disk. This article explains how to ensure that your data is properly flushed
+to the disk.
+
+MORE INFORMATION
+================
+
+To flush the C runtime buffers, you need a call to fflush for files that are
+opened with fopen or a call to the flush function for C++ ofstream objects.
+Flushing the operating system's disk cache is a little more difficult; it
+depends on the operating system in use.
+
+16-bit Operating Systems - MS-DOS or Windows 3.1
+------------------------------------------------
+
+In MS-DOS or Windows 3.1 running Smartdrv.exe version 4.0 or later, you have two
+choices. You can use the _commit C runtime function or link with Commode.obj and
+use the fflush C runtime function.
+
+32-bit Windows Operating Systems
+--------------------------------
+
+In 32-bit versions of Windows, the operating system has built-in disk caching.
+The only way to force a file to be flushed to disk is by linking to
+Commode.obj.
+
+Commode.obj is designed to affect the way the C Runtime handles files. When you
+link to this .obj file, a call to the C runtime function fflush also forces the
+operating system to flush its cache to disk, making the call to _commit
+unnecessary.
+
+Sample Code
+-----------
+
+     /* Compile options needed: none
+
+        This sample code is designed to show some of the more
+        common ways to flush both the C runtime buffers and the
+        operating system cache
+     */ 
+
+     #include &lt;stdio.h&gt;
+     #include &lt;ofstream.h&gt;
+
+     void DoSomeCFileIO();
+     void DoSomeCXXFileIO();
+
+     void main()
+     {
+       DoSomeCFileIO()
+       DoSomeCXXFileIO();
+     }
+
+     void DoSomeCFileIO()
+     {
+      FILE* CFileBuf;
+
+     // Open CFileBuf for output &amp; perform some writes
+
+      fflush(CFileBuf);
+      _commit(_fileno(CFileBuf));
+
+     // The call to fflush will cause the C Runtime to flush
+     // the buffers associated with CFileBuf to the
+     // Operating system.
+     // The call to _commit will tell Smartdrv.exe to flush
+     // its cache to the disk.
+     // The _commit function requires a file handle, hence the
+     // call to _fileno
+     // _commit will only function on 16-bit operating systems.
+     // On 32-bit operating systems, you need to link to Commode.obj
+     }
+
+     void DoSomeCXXFileIO()
+     {
+      ofstream CXXFileBuf;
+
+     // Open CXXFileBuf &amp; perform some writes
+
+      CXXFileBuf.flush();
+      _commit(CXXFileBuf.rdbuf()-&gt;fd());
+
+     // The call to flush causes the C Runtime to flush
+     // the buffer associated with CXXFileBuf to the operating system.
+     // 
+     // The call to _commit tells Smartdrv.exe to flush
+     // its cache to the disk.
+     // 
+     // The _commit function requires a file handle, hence the
+     // call to ofstream.rdbuf()-&gt;fd()
+     // _commit will only function on 16-bit operating systesm.
+     // On 32-bit operating systems, you will need to link to Commode.obj.
+     }
+
+REFERENCES
+==========
+
+See the documentation for fflush(), _commit(), _fileno(), and ofstream.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC220 kbVC151 kbVC200 kbVC210 kbVC152
+Version           : WIN3X:1.0,1.5,1.51,1.52;WINNT:1.0,2.0,2.1,2.2,4.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

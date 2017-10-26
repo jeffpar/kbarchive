@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170618: Virus Detected in the Suhdlog.dat File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170618: Virus Detected in the Suhdlog.dat File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170618/","publisher":null,"image":null,"headline":"Q170618: Virus Detected in the Suhdlog.dat File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170618-virus-detected-in-the-suhdlogdat-file">Q170618: Virus Detected in the Suhdlog.dat File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170618
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbsetup win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Anti-virus programs may detect a virus in the Suhdlog.dat file.
+
+CAUSE
+=====
+
+Your computer was infected with a master-boot-record (MBR) virus before you
+installed Windows 95.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods:
+
+Method 1
+--------
+
+Remove the virus from the Suhdlog.dat file with an anti-virus program.
+
+NOTE: If the Suhdlog.dat file is damaged when the virus is removed, you cannot
+use the Uninstall tool to remove Windows 95.
+
+For information about how to remove a virus with your anti-virus program, refer
+to the documentation included with your anti-virus program or contact your
+anti-virus program's manufacturer.
+
+Method 2
+--------
+
+NOTE: You cannot use the Uninstall tool to remove Windows 95 when you use this
+method to remove the virus-infected Suhdlog.dat file.
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. On the Install/Uninstall tab, click "Old Windows 3.x/MS-DOS System Files,"
+  and then click Add/Remove.
+
+If after you remove the "Old Windows 3.x/MS-DOS System Files" component the
+Suhdlog.dat file is still present, delete the Suhdlog.dat file using the
+following steps:
+
+1. Click Start, point to Programs, and then click MS-DOS Prompt.
+
+2. type the following lines, pressing ENTER after each line:
+
+  " cd\
+  attrib -s -h -r c:\suhdlog.dat
+  del c:\suhdlog.dat " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+When you upgrade an earlier version of Windows to Windows 95 and you choose to
+back up the system files during the upgrade, your hard disk's original MBR and
+partition tables are copied to the Suhdlog.dat file.
+
+If your computer is infected with an MBR virus before you install Windows 95, the
+virus is copied along with the original MBR and partition tables into the
+Suhdlog.dat file. Even though an anti-virus program removes the virus from your
+current MBR, if the Suhdlog.dat file contains the virus when you use the Windows
+95 Uninstall tool to restore the previous version of Windows and MS-DOS on your
+computer, the MBR becomes infected again.
+
+The virus is not active while it is stored in the Suhdlog.dat file, but
+anti-virus programs may detect its presence and display a warning.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q129972 Description of Computer Viruses
+
+  Q151667 Description of Windows 95 Files Located in the Root Folder
+
+  Q138127 How to Uninstall Windows 95
+
+======================================================================
+Keywords          : kbsetup win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

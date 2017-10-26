@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118937/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118937/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118937/","publisher":null,"image":null,"headline":"Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118937-prb-files-copied-from-ms-dos-to-mac-have-wrong-icon-and-type">Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118937
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After FoxPro files have been converted from MS-DOS format to the Macintosh
+format, they do not display the correct FoxPro icons or file kind in a window.
+Additionally, viewing the files with a resource editor, such as ResEdit, shows
+that they have the wrong resource type and creator.
+
+CAUSE
+=====
+
+Because MS-DOS files do not have resources, the tool used to transport them to
+the Macintosh usually assigns its creator and file type to the files. Examples
+are the Apple File Exchange utility and networks that support connections to
+MS-DOS-based machines and Macintoshes, such as Microsoft Windows NT.
+
+WORKAROUND
+==========
+
+To fix the files, do one of the following:
+
+- If only a few files are involved, use one of the techniques described in the
+  "More Information" section below to change the creator and file types of the
+  files.
+
+-or-
+
+- If many files are involved, you may want to use the programmatic workaround
+  described in the following article in the Microsoft Knowledge Base:
+
+  Q114999 PRB: Creators and Types Are Reset After Transport to Macintosh
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Change File Creator and Types by Using File, Save As
+-------------------------------------------------------------
+
+NOTE: This technique does not work on file types, such as tables, that can't be
+saved using the Save As command on the File menu.
+
+1. From the File menu, choose Open. Select the appropriate file type in the Type
+  list box.
+
+2. Select the file you want to change, and then choose Open.
+
+  NOTE: If the file isn't visible, select the All Files check box.
+
+3. If prompted to transport the file, choose Transport.
+
+4. From the File menu, choose Save As. Keep the current filename and choose
+  Save.
+
+5. When prompted to replace the existing file, choose Save.
+
+6. From the File menu, choose Close.
+
+Steps to Change File Creator and Types Using ResEdit
+----------------------------------------------------
+
+CAUTION: This workaround uses Apple's resource editor, ResEdit. Because a file
+may be damaged if incorrect changes are made, the use of ResEdit is recommended
+for advanced Macintosh users only. As a precautionary step, you may want to make
+backup copies of the FoxPro files before proceeding.
+
+NOTE: The instructions below are for ResEdit version 2.1.1. If you use a
+different version of ResEdit, these instructions may vary slightly. ResEdit does
+not come with the Macintosh operating system, but can be obtained from Macintosh
+user groups or the Apple Programmers and Developers Association (APDA).
+
+
+1. Start ResEdit. Press ESC to stop the animated opening screen.
+
+2. In the opening dialog box, choose Cancel.
+
+3. From the File menu, choose Get File/Folder Info.
+
+4. Select the file that needs its creator and type changed. Choose Get Info.
+
+5. Change the type to the appropriate type. Change the Creator to FOXX.
+
+  NOTE: For a list of FoxPro types, see the "Creator File Types" topic in the
+  FoxPro online Help system.
+
+6. Close the window for the selected file. When prompted to "save info," choose
+  Yes.
+
+7. If you need to change other files, repeat steps 3-6 for each file.
+
+8. From the File menu, choose Quit.
+
+NOTE: If the file kind/type and icon do not change, you will need to rebuild the
+desktop. To do this, perform the following steps:
+
+1. While holding down the COMMAND and OPTION keys, choose Restart from the
+  Special menu. Continue holding down the COMMAND and OPTION keys while the
+  Macintosh restarts--this rebuilds the desktop.
+
+2. After the Macintosh restarts, it displays the following dialog box:
+
+  Are you sure you want to rebuild the
+  desktop file on the disk "&lt;disk_name&gt;"?
+  Comments in info windows will be lost.
+
+  Release the COMMAND and OPTION keys, and then choose OK.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac lan lanman os/2 text lman bina mdos translate import export port move platform pc akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

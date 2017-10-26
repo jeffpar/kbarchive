@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130184: Changing From Auto to Manual Logon Scripts In SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130184: Changing From Auto to Manual Logon Scripts In SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130184/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130184/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130184/","publisher":null,"image":null,"headline":"Q130184: Changing From Auto to Manual Logon Scripts In SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130184-changing-from-auto-to-manual-logon-scripts-in-sms">Q130184: Changing From Auto to Manual Logon Scripts In SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130184
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbSCMan smssiteconfigman
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Systems Management Server to automatically configure user logon
+scripts, and then disable the feature and set up scripts manually, the Site
+Configuration Manager removes it's script files from the primary domain
+controller's REPL$\SCRIPTS directory.
+
+CAUSE
+=====
+
+Site Configuration Manager records on a domain basis if it has previously
+modified logon scripts at any time, even if the auto-script feature is currently
+disabled.
+
+WORKAROUND
+==========
+
+To work around this problem, modify the registry:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (REGEDT32.EXE).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+     \SOFTWARE\Microsoft\SMS\Sites\&lt;sitecode&gt;\Domains\&lt;domain&gt;\Role
+
+3. The setting for Role is based on a bit mask of the following:
+
+     ENUMERATED      = 0x0001  Servers are enumerated
+     SERVERLIST      = 0x0002  Servers from user list
+     SCRIPTSMODIFIED = 0x0004  User/system logon scripts have been
+                               modified
+
+  Role is likely 5 (enumerated + modified). If you change it to 1, it will
+  appear to Site Configuration Manager as though it had never touched logon
+  scripts. If you switched to Use Specified Servers, the value will be 6. You
+  can change it to 2 to obtain the same effect.
+
+  SMS 1.2 NOTE: SMS 1.2 introduces a new feature to manage how standalone
+  servers are handled.
+
+  If you want to ignore standalone servers then you OR the Role value by 0x10.
+  So for (enumerated + modified) you would see 0x15. If you see this value just
+  reset Role to 0x11. The goal of this article is to remove the bit
+  SCRIPTSMODIFIED 0x4.
+
+  NOTE: When you switch to Use Specified Servers, NetWare "domains" do not
+  require auto-detect as a prerequisite to automatically configuring logon
+  scripts. If you have NetWare domains, the needed script files could get
+  removed. Consequently, changing the domain role value is a better solution.
+
+4. Shut down and restart the site server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1 and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: config prodsms sms configuration login
+
+======================================================================
+Keywords          : kbnetwork kbSCMan smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

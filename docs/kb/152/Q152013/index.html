@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152013: Automating AFTP Commands Through a Script File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152013: Automating AFTP Commands Through a Script File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152013/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152013/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152013/","publisher":null,"image":null,"headline":"Q152013: Automating AFTP Commands Through a Script File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152013-automating-aftp-commands-through-a-script-file">Q152013: Automating AFTP Commands Through a Script File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152013
+Product(s): Microsoft SNA Server
+Version(s): 2.11 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server for Windows NT, version 2.11 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server 2.11 includes support for the APPC File Transfer Protocol
+(AFTP), which implements FTP-like commands over an LU6.2 session, as defined by
+IBM. The SNA Server 2.11 readme file includes information on how to automate the
+use of AFTP commands by passing an inputfile (attached below).
+
+However, if an AFTP command is invoked from a batch (BAT or CMD) file and the
+command fails, no ERRORLEVEL value is returned, so batch file error recovery is
+not possible.
+
+
+MORE INFORMATION
+================
+
+The following information is included in the SNA Server 2.11 readme file, which
+describes how to automate the use of AFTP.
+
+-------------------------------------------------------------------------
+
+D.13. Automating AFTP client sessions
+
+You can supply a script file to the AFTP client that contains commands for the
+AFTP client to carry out. The syntax of the AFTP command when used in this
+manner is:
+
+aftp -f inputfile
+
+where inputfile is the name of the script file.
+
+When the AFTP client is invoked using the -f command-line parameter, it executes
+each line in the specified script as a command and then terminates when it
+reaches the end of the file.
+
+For example, a file named Input.txt contains the following lines:
+
+open aftprrr
+steved
+pword
+ascii
+get file1.txt
+close
+
+The command aftp -f input.txt would do the following:
+
+1. Connect to a remote LU named aftprrr.
+
+2. Log on with the user name steved and the password pword.
+
+3. Select ASCII transfer mode.
+
+4. Download a file named FILE1.TXT.
+
+5. Close the connection.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211NTSP1
+Version           : :2.11 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

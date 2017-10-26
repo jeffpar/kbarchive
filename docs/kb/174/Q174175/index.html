@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174175/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174175/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174175/","publisher":null,"image":null,"headline":"Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174175-xfor-some-exchange-server-non-delivery-report-codes">Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174175
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0 SP4
+Operating System(s): 
+Keyword(s): exc4sp4
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of codes that are sometimes associated with an Exchange
+Server non-delivery report (NDR). The codes are broken down into two categories:
+Reason Codes, and Diagnostic Codes, which are sometimes associated with NDR from
+the message transfer agent (MTA).
+
+Reason Codes on Non-Delivery Notifications
+------------------------------------------
+
++--------------------------------------+
+| 0 | transfer-failure                 | 
++--------------------------------------+
+| 1 | unable-to-transfer               | 
++--------------------------------------+
+| 2 | conversion-not-performed         | 
++--------------------------------------+
+| 3 | physical-rendition-not-performed | 
++--------------------------------------+
+| 4 | physical-delivery-not-performed  | 
++--------------------------------------+
+| 5 | restricted-delivery              | 
++--------------------------------------+
+| 6 | directory-operation-unsuccessful | 
++--------------------------------------+
+
+Diagnostic Codes on Non-Delivery Notifications from MTA
+-------------------------------------------------------
+
++-------------------------------------------------------------+
+| 0  | unrecognized-OR-name                                   | 
++-------------------------------------------------------------+
+| 1  | ambiguous-OR-name                                      | 
++-------------------------------------------------------------+
+| 2  | MTS-congestion                                         | 
++-------------------------------------------------------------+
+| 3  | loop-detected                                          | 
++-------------------------------------------------------------+
+| 4  | recipient-unavailable                                  | 
++-------------------------------------------------------------+
+| 5  | maximum-time-expired                                   | 
++-------------------------------------------------------------+
+| 6  | encoded-information-types-unsupported                  | 
++-------------------------------------------------------------+
+| 7  | content-too-long                                       | 
++-------------------------------------------------------------+
+| 8  | conversion-impractical                                 | 
++-------------------------------------------------------------+
+| 9  | implicit-conversion-prohibited                         | 
++-------------------------------------------------------------+
+| 10 | implicit-conversion-not-subscribed                     | 
++-------------------------------------------------------------+
+| 11 | invalid-arguments                                      | 
++-------------------------------------------------------------+
+| 12 | content-syntax-error                                   | 
++-------------------------------------------------------------+
+| 13 | size-constraint-violation                              | 
++-------------------------------------------------------------+
+| 14 | protocol-violation                                     | 
++-------------------------------------------------------------+
+| 15 | content-type-not-supported                             | 
++-------------------------------------------------------------+
+| 16 | too-many-recipients                                    | 
++-------------------------------------------------------------+
+| 17 | no-bilateral-agreement                                 | 
++-------------------------------------------------------------+
+| 18 | unsupported-critical-function                          | 
++-------------------------------------------------------------+
+| 19 | conversion-with-loss-prohibited                        | 
++-------------------------------------------------------------+
+| 20 | line-too-long                                          | 
++-------------------------------------------------------------+
+| 21 | page-split                                             | 
++-------------------------------------------------------------+
+| 22 | pictorial-symbol-loss                                  | 
++-------------------------------------------------------------+
+| 23 | punctuation-symbol-loss                                | 
++-------------------------------------------------------------+
+| 24 | alphabetic-character-loss                              | 
++-------------------------------------------------------------+
+| 25 | multiple-information-loss                              | 
++-------------------------------------------------------------+
+| 26 | recipient-reassignment-prohibited                      | 
++-------------------------------------------------------------+
+| 27 | redirection-loop-detected                              | 
++-------------------------------------------------------------+
+| 28 | DL-expansion-prohibited                                | 
++-------------------------------------------------------------+
+| 29 | no-DL-submit-permission                                | 
++-------------------------------------------------------------+
+| 30 | DL-expansion-failure                                   | 
++-------------------------------------------------------------+
+| 31 | physical-rendition-attributes-not-supported            | 
++-------------------------------------------------------------+
+| 32 | undeliverable-mail-physical-delivery-address-incorrect | 
++-------------------------------------------------------------+
+| 33 | undeliverable-mail-phys-deliv-office-incorrect/invalid | 
++-------------------------------------------------------------+
+| 34 | undeliverable-mail-physical-delivery-address-incomplet | 
++-------------------------------------------------------------+
+| 35 | undeliverable-mail-recipient-unknown                   | 
++-------------------------------------------------------------+
+| 36 | undeliverable-mail-recipient-deceased                  | 
++-------------------------------------------------------------+
+| 37 | undeliverable-mail-organization-expired                | 
++-------------------------------------------------------------+
+| 38 | undeliverable-mail-recipient-refused-to-accept         | 
++-------------------------------------------------------------+
+| 39 | undeliverable-mail-recipient-did-not-claim             | 
++-------------------------------------------------------------+
+| 40 | undeliverable-mail-recipient-changed-addr-permanently  | 
++-------------------------------------------------------------+
+| 41 | undeliverable-mail-recipient-changed-addr-temporarily  | 
++-------------------------------------------------------------+
+| 42 | undeliverable-mail-recipient-changed-temporary-address | 
++-------------------------------------------------------------+
+| 43 | undeliverable-mail-new-address-unknown                 | 
++-------------------------------------------------------------+
+| 44 | undeliverable-mail-recipient-did-not-want-forwarding   | 
++-------------------------------------------------------------+
+| 45 | undeliverable-mail-originator-prohibited-forwarding    | 
++-------------------------------------------------------------+
+| 46 | secure-messaging-error                                 | 
++-------------------------------------------------------------+
+| 47 | unable-to-downgrade                                    | 
++-------------------------------------------------------------+
+
++--------------------------------+
+| 253 | No Report required       | 
++--------------------------------+
+| 254 | Per-recip failure        | 
++--------------------------------+
+| 255 | Omit any diagnostic code | 
++--------------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4sp4 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange400SP4
+Version           : winnt:4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

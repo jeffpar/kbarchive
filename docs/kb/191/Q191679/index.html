@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191679: FIX: Wrong Line Number Information Debugging STL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191679: FIX: Wrong Line Number Information Debugging STL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191679/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191679/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191679/","publisher":null,"image":null,"headline":"Q191679: FIX: Wrong Line Number Information Debugging STL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191679-fix-wrong-line-number-information-debugging-stl">Q191679: FIX: Wrong Line Number Information Debugging STL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191679
+Product(s): Microsoft C Compiler
+Version(s): WINNT:5.0sp3
+Operating System(s): 
+Keyword(s): kbDebug kbVC500bug kbVC600fix
+Last Modified: 21-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Integrated Debugger, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp3 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to debug a program that uses STL template classes, the debugger may
+point to the wrong line in the source file.
+
+CAUSE
+=====
+
+The Compiler is generating incorrect line-number information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++, version
+6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Sample Code
+-----------
+
+     //test.cpp
+     #include &lt;vector&gt;
+     int main()
+     {
+     int a, b ;
+     a=10;
+     std::vector&lt;int&gt;  v; //Incorrect debug line-number info for this line.
+     b=5;
+     return 0;
+     }
+     //end test.cpp
+
+1. Create a Console Application project and add test.cpp to the project.
+
+2. Make a debug build of the project.
+
+3. Start stepping over each line of code by using F10.
+
+RESULTS: After the "a=10;" line, the cursor points to the last line of test.cpp.
+
+Pressing F10 again takes the cursor back to "b=5;" line.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbDebug kbVC500bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : WINNT:5.0sp3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43173: Using printf with %p in Small or Medium Model | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43173: Using printf with %p in Small or Medium Model" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43173/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43173/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43173/","publisher":null,"image":null,"headline":"Q43173: Using printf with %p in Small or Medium Model","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43173-using-printf-with-p-in-small-or-medium-model">Q43173: Using printf with %p in Small or Medium Model</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43173
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 17-MAY-1989
+
+When using the %p format in the C Run-Time Library function printf()
+in the small or medium memory model, the corresponding argument must
+be cast to a far pointer. If the argument is not cast to a far
+pointer, the segmented address of the pointer will not be displayed
+correctly.
+
+This behavior occurs because printf does not have a formal parameter
+list that will automatically cause the type conversion to take place.
+In small or medium memory model, a pointer argument will be pushed
+onto the stack as a near address if it is not cast to a far pointer,
+i.e., only the offset is pushed onto the stack. At run time, printf
+sees %p and then assumes both the segment and the offset for the
+corresponding argument are pushed onto the stack. This action causes
+the function to print an incorrect segment for that argument.
+Explicitly casting the argument to a far pointer will force the
+segment address to be pushed onto the stack as well.
+
+The following program will point the wrong content of the variable ch:
+
+/* sample program */
+#include &lt;stdio. h&gt;
+
+char ch[1] ;
+void main (void)
+{
+printf ("ch = %p\n", ch) ;    /* wrong !! */
+}
+/* end of sample program */
+
+The following is the correct statement in small and medium model:
+
+    printf ("ch = %p\n", (char far *) ch) ;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

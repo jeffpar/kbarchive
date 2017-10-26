@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145954/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145954/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145954/","publisher":null,"image":null,"headline":"Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145954-howto-set-up-3270-device-emulation-to-as400">Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145954
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+5250 device emulation is recommended for initiating interactive terminal
+sessions to an AS/400. However, it is possible for an AS/400 to communicate
+through a 3270 data stream. This article will describe how you can configure an
+SNA Server and an AS/400 to allow 3270 device emulators to initiate a terminal
+session.
+
+MORE INFORMATION
+================
+
+Before you configure an SNA Server and an AS/400, disable the auto-
+configuration option on the AS/400. If this option is not disabled, the AS/400
+creates an APPC controller that conflicts with the controller you are creating.
+If this occurs, de-activate (vary off) the auto-configured controller and remove
+it. If you do not wish to disable the auto- configuration option, do the
+following:
+
+1. Make sure that you complete the AS/400 configuration first.
+
+2. Make sure that the controller is varied on before you attempt to activate the
+  SNA Server connection.
+
+3. If there is an active connection, you may re-enable auto-configuration.
+
+AS/400 Configuration
+--------------------
+
+1. Create a remote workstation controller. The SNA Server is detected as a
+  LAN-attached 3174 controller by the AS/400. From a command prompt, type the
+  following one-line command:
+
+  "CRTCTLRWS CTLD(&lt;controller name&gt;) TYPE(3174) MODEL(0) LINKTYPE(*LAN)
+  SWTLINLST(&lt;line name&gt;) EXCHID(05DFFFFF) ADPTADR(&lt;server MAC
+  address&gt;)" (without the quotation marks)
+
+  where &lt;controller name&gt; is the name for the controller. Any name can be
+  specified. The &lt;line name&gt; is the name of the AS/400 line description
+  for the LAN connection and &lt;server MAC address&gt; is the network
+  interface card (NIC) address of the SNA Server.
+
+2. Create 3270 devices. Each 3270 device corresponds to one emulation session
+  and one display LU in SNA Server Admin. From the command prompt, type the
+  following one-line command:
+
+  "CRTDEVDSP DEVD(&lt;device name&gt;) DEVCLS(*RMT) TYPE(3278) MODEL(0)
+  LOCADR(02) CTL(&lt;controller name&gt;) " (without the quotation marks)
+
+  where &lt;device name&gt; is the name for the device. Any name can be
+  specified. The &lt;controller name&gt; is the name of the controller in step
+  1.
+
+3. Repeat typing the command on step 2. Increase LOCADR until you have created
+  the desired number of devices.
+
+4. Vary on the controller and devices and verify that they are ready for use.
+  Type the following command:
+
+  "WRKCFGSTS *CTL &lt;controller name&gt;" (without the quotation marks)
+
+  where &lt;controller name&gt; is the name of the controller in step 1.
+
+5. The controller and attached devices are displayed in a state of "Varied Off."
+  Use option 1 to vary on the controller.
+
+6. Wait for a moment and press F5 to refresh the display. Make sure that the
+  status of the controller is Active and all of the devices are Vary On
+  Pending.
+
+SNA Server 2.11 Configuration
+-----------------------------
+
+1. Run SNA Server Setup and add an 802.2 link service.
+
+2. Run SNA Server Admin and configure the 802.2 connection (associated with the
+  802.2 link service) from the Servers And Connections dialog box. Use the
+  following properties:
+
+  Remote End: Host System
+  Activation: On Server Startup (recommended but any of the options
+  should work)
+  Allowed Directions: Outgoing Calls
+
+3. Click Setup and add the following parameters:
+
+  Remote Network Address: &lt;NIC address&gt; (Enter the NIC address of the
+  AS/400. This can be found in the ADPTADR parameter of the AS/400
+  line description)
+
+  Local Node ID and Remote Node Name fields: &lt;Use Default Settings&gt;
+
+  The Advanced settings can be left at the default settings.
+
+4. Return to the Servers And Connections dialog box. Focus on the 802.2
+  connection and create all required 3270 LUs off the connection. The LU
+  numbers correspond to the LOCADR values in the AS/400 device descriptions.
+
+5. Configure pools of LUs through the LU Pools dialog box of SNA Server Admin.
+  This is optional.
+
+6. In the Users And Groups dialog box in SNA Server Admin, assign LUs and/or LU
+  Pools to the appropriate users and groups.
+
+7. Save the configuration and start your services. The LUs should be Available
+  in SNA Server Admin.
+
+SNA Server 3.0 and 4.0 Configuration
+------------------------------------
+
+1. Run Manager and add an 802.2 link service. NOTE: DO NOT USE THE AS/400
+  CONFIGURATION WIZARD.
+
+2. Configure the 802.2 connection (associated with the 802.2 link service) using
+  the following properties:
+
+  Remote End: Host System
+  Activation: On Server Startup (recommended but any of the options
+  should work)
+  Allowed Directions: Outgoing Calls
+
+3. Use the Address and System Identification Tabs and add the following
+  parameters:
+
+  Remote Network Address: &lt;NIC address&gt; (Enter the NIC address of the
+  AS/400. This can be found in the ADPTADR parameter of the AS/400
+  line description)
+
+  Local Node ID and Remote Node Name fields: &lt;Use Default Settings&gt;
+
+4. Click on the 802.2 connection and insert all required 3270 LUs off the
+  connection.
+
+  The LU numbers correspond to the LOCADR values in the AS/400 device
+  descriptions.
+
+5. Assign LUs to corresponding pools and users by right-clicking on the LU and
+  using the Assign option. This step is optional.
+
+6. Save the configuration. The LUs should be available as soon as the connection
+  is started successfully.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

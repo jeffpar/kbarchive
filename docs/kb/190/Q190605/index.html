@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190605: PRB: Binding Hierarchical Recordset in Data Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190605: PRB: Binding Hierarchical Recordset in Data Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190605/","publisher":null,"image":null,"headline":"Q190605: PRB: Binding Hierarchical Recordset in Data Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190605-prb-binding-hierarchical-recordset-in-data-environment">Q190605: PRB: Binding Hierarchical Recordset in Data Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190605
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.5,2.6,2.7,6.0,6.0 SP4
+Operating System(s): 
+Keyword(s): kbATM kbDatabase kbDataBinding kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250
+Last Modified: 10-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 6.0 SP4 
+- Microsoft Data Access Components versions 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Data Environment, when a hierarchical recordset is used, and the
+parent/child/grandchild recordsets are bound, the expected behavior is for all
+the child/grandchild recordsets to "stay in sync" with the parent. However, when
+record in the parent table moves, the grandchild recordset does not receive
+notification that it needs to retrieve the current chapter. This creates a
+situation in which the grandchild recordset becomes out of sync.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following Visual Basic code reproduces the problem described above. Access
+database NWIND.MDB is used here: Customers table is the parent, Orders table,
+the child, and OrderDetails table, the grandchild. Two workarounds are provided
+by binding the parent/child/grandchild recordsets in code to the DataGrid
+controls. Workaround 1 takes the recordset from the Data Environment, and sets
+the DataSource property with the recordsets; Workaround 2, bypassing the Data
+Environment, uses the ADO SHAPE command to generate the hierarchical recordset.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Task One: Data Environment
+
+1. Start a new project in Visual Basic and choose Standard EXE. Form1 is created
+  by default.
+
+2. On the Project menu, select Components.
+
+3. On the Designers tab, select Data Environment.
+
+4. On the Project menu, select Add Data Environment. If Add Data Environment
+  item is not found directly under the Project menu, select More ActiveX
+  Designers, and then click Data Environment. This brings up a Data Environment
+  Window, named DataEnvironment1 by default.
+
+5. Right-click Connection1, then select Properties. Enter appropriate
+  information to establish a connection to Access sample database NWIND.MDB.
+  Click OK to save the information.
+
+6. Right-click Connection1, and then select Add Command. Command1 is created by
+  default. Rename it as Customers, and set the following property values for
+  Customers:
+
+Property     Value
+----------------------
+CommandText  Customers
+CommandType  adCmdTable
+
+7. Right-click Customers, and then select Add Child Command. Command2 is created
+  by default. Rename it as Orders.
+
+8. Right-click Orders, and then select Properties.
+
+9. On the General tab, under the Source of Data section, click Database Object,
+  and then select Table from the dropdown combobox. Select Orders table as the
+  Object Name from the dropdown combobox.
+
+10. On the Relation tab, place a check next to Relate to a Parent Command
+  Object. Select Customers as the Parent Command. Then relate the Parent-child
+  with CustomerID field, and then click Add button.
+
+11. Click OK to save the information, and return to the Data Environment Window.
+
+12. Add a child command to the Orders command and rename it OrderDetails.
+
+13. Right-click OrderDetails, and then select Properties to bring up the
+  OrderDetails Properties dialog. On the General tab, under Source of
+  Datasection, click Database Object, and then select Table from the dropdown
+  combobox. Select OrderDetails table as the Object Name from the drop-down
+  combobox. On the Relations tab, select Orders as the Parent Command and
+  relate the two commands on the OrderID field.
+
+Task Two: Other Controls and Visual Basic Code
+
+1. From the Project menu, select Components, and then place a check next to
+  Microsoft DataGrid Control 6.0 (OLE DB).
+
+2. Add three DataGrid controls, DataGrid1, DataGrid2, and DataGrid3 to Form1.
+
+3. Add three CommandButton controls, Command1, Command2, and Command3 to Form1.
+
+4. Paste the following code in the General Declaration section of Form1:
+
+        Option Explicit
+
+        Dim cn as ADODB.Connection
+        Dim rsCustomers As ADODB.Recordset
+        Dim rsOrders As ADODB.Recordset
+        Dim rsOrderDetails As ADODB.Recordset
+
+        Private Sub Form_Load()
+
+           Command1.Caption = "Re-pro"
+           Command2.Caption = "Workaround I"
+           Command3.Caption = "Workaround II"
+
+        End Sub
+
+        Private Sub Command1_Click()
+
+           Set DataGrid1.DataSource = DataEnvironment1
+           DataGrid1.DataMember = "Customers"
+           Set DataGrid2.DataSource = DataEnvironment1
+           DataGrid2.DataMember = "Orders"
+           Set DataGrid3.DataSource = DataEnvironment1
+           DataGrid3.DataMember = "OrderDetails"
+
+        End Sub
+
+        Private Sub Command2_Click()
+
+           Set DataGrid1.DataSource = Nothing
+           DataGrid1.DataMember = ""
+           Set DataGrid2.DataSource = Nothing
+           DataGrid2.DataMember = ""
+           Set DataGrid3.DataSource = Nothing
+           DataGrid3.DataMember = ""
+
+           Set rsCustomers = DataEnvironment1.rsCustomers
+           Set rsOrders = rsCustomers.Fields("Orders").Value
+           Set rsOrderDetails = rsOrders.Fields("OrderDetails").Value
+
+           Set DataGrid1.DataSource = rsCustomers
+           Set DataGrid2.DataSource = rsOrders
+           Set DataGrid3.DataSource = rsOrderDetails
+
+        End Sub
+
+        Private Sub Command3_Click()
+           Dim cn As New ADODB.Connection
+           With cn
+              .Provider = "MSDataShape"
+              .CursorLocation = adUseClient
+              .ConnectionString = "dsn=nwind;"
+              .Open
+           End With
+
+           Dim rsCustomers As New ADODB.Recordset
+           Dim rsOrders As ADODB.Recordset
+           Dim rsOrderDetails As ADODB.Recordset
+           rsCustomers.Source = "SHAPE {SELECT * FROM Customers} " &amp; _
+                               "APPEND ((SHAPE {SELECT * FROM Orders} " &amp; _
+                               "AS Orders " &amp; _
+                               "APPEND ({SELECT * FROM [Order Details]} " &amp; _
+                               "AS OrderDetails " &amp; _
+                               "RELATE OrderID TO OrderID)) " &amp; _
+                               "AS Orders RELATE CustomerID TO CustomerID)"
+
+          rsCustomers.Open , cn, adOpenStatic, adLockOptimistic
+
+          Set rsOrders = rsCustomers.Fields("Orders").Value
+          Set rsOrderDetails = rsOrders.Fields("OrderDetails").Value
+
+          Set DataGrid1.DataSource = Nothing
+          DataGrid1.DataMember = ""
+          Set DataGrid2.DataSource = Nothing
+          DataGrid2.DataMember = ""
+          Set DataGrid3.DataSource = Nothing
+          DataGrid3.DataMember = ""
+
+          Set DataGrid1.DataSource = rsCustomers
+          Set DataGrid2.DataSource = rsOrders
+          Set DataGrid3.DataSource = rsOrderDetails
+        End Sub
+
+  NOTE: Without the workaround, when you move a record from parent table in
+  DataGrid1, the child recordset in DataGrid2 is updated accordingly. However,
+  the grandchild recordset in DataGrid3 disappears.
+
+REFERENCES
+==========
+
+For additional information about SHAPE APPEND syntax and how to traverse
+hierarchical recordsets, click the article numbers below to view the articles in
+the Microsoft Knowledge Base:
+
+  Q189657 HOWTO: Use the ADO SHAPE Command
+
+  Q185425 ADO Hierarchical Recordsets via SHAPE APPEND via C++/VBA/Java
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATM kbDatabase kbDataBinding kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250 kbMDAC260 kbADO260 kbmdac270bug kbado270bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC250 kbMDAC260 kbVB600SP4 kbMDAC270
+Version           : :2.5,2.6,2.7,6.0,6.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

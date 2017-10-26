@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191457/","publisher":null,"image":null,"headline":"Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191457-prb-dataenvironment-recordset-requery-does-not-refresh-controls">Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191457
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have controls bound to a query built by the DataEnvironment and then call
+the underlying recordset's Requery method, your bound controls will still
+display data from the recordset prior to having called the Requery method. In
+short, you will still see your old data.
+
+You may also see an error message stating:
+
+  "Error while trying to set current row."
+
+RESOLUTION
+==========
+
+- After you have re-queried the recordset, you must re-bind it.
+
+  -or-
+
+- Bind your controls to the recordset object rather than to the
+  DataEnvironment. If you then call the Requery method on the recordset object,
+  you see the up-to-date data in your bound controls.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a DataEnvironment to your project.
+
+3. Rename the connection "cnNWind" and use its property pages to use the
+  Microsoft Jet OLE DB Provider to connect to the Northwind database
+  (NWind.MDB) on your hard drive.
+
+4. Add a command to the cnNWind connection. Rename the command "Customers," and
+  use the SQL statement "SELECT CustomerID, City FROM Customers."
+
+5. Drag-and-drop the CustomerID and City fields from the DataEnvironment onto
+  your form.
+
+6. Drag the Customers command from the DataEnvironment onto your form while
+  holding down the right-mouse button. Select "Data Grid" from the available
+  choices in the menu that appears when you release the right- mouse button.
+
+7. Add two CommandButtons to your form. Name them cmdModifyData and cmdRequery.
+
+8. Add the following code to your form:
+
+        Private Sub Form_Load()
+            cmdModifyData.Caption = "Modify Data"
+            cmdRequery.Caption = "Requery"
+        End Sub
+
+        Private Sub ReBindMyControls()
+            Set txtCustomerID.DataSource = DataEnvironment1
+            Set txtCity.DataSource = DataEnvironment1
+            Set DataGrid1.DataSource = DataEnvironment1
+        End Sub
+
+        Private Sub cmdModifyData_Click()
+            Dim strSQL As String
+            Dim strNewCity As String
+            Dim intRecordsAffected As Integer
+
+            strNewCity = InputBox("Enter a new value for the city")
+            If strNewCity &lt;&gt; "" Then
+                strSQL = "UPDATE Customers " &amp; _
+                         "SET City = '" &amp; strNewCity &amp; "' " &amp; _
+                         "WHERE CustomerID = '" &amp; _
+                         DataEnvironment1.rsCustomers!CustomerID &amp; "'"
+                  DataEnvironment1.cnNWind.Execute strSQL, _
+                                       IntRecordsAffected, adExecuteNoRecords
+                MsgBox intRecordsAffected &amp; " record(s) affected"
+            Else
+                MsgBox "No update performed"
+            End If
+        End Sub
+
+        Private Sub cmdRequery_Click()
+            DataEnvironment1.rsCustomers.Requery
+            'ReBindMyControls
+            MsgBox "Recordset reopened" &amp; vbCrLf &amp; _
+                   "Current customer's city: " &amp; _
+                   DataEnvironment1.rsCustomers!City
+        End Sub
+
+9. Run the project.
+
+10. Click on the button marked "Modify Data" to enter a new value for the
+  current customer's city. The code will modify that row in the database
+  without changing the row in the recordset.
+
+11. Click on the button marked "Requery" to re-run the query. You will see a
+  message box that says that the recordset has been re-opened and displays the
+  value for the current customer's city in the recordset object. You will see
+  the value that you entered in step 9 in this message box, but the textbox
+  will still display the old value and the data in the grid will remain the
+  same.
+
+12. Exit the project by clicking on the "X" button in the upper-right corner of
+  the form.
+
+13. Modify the cmdRequery_Click event and un-comment the following line:
+
+        ReBindMyControls
+
+14. Re-run the project.
+
+15. Click on the button marked "Modify Data" to enter a new value for the
+  current customer's city. The code will modify that row in the database
+  without changing the row in the recordset.
+
+16. Click on the button marked "Requery" to re-run the query. You will see a
+  message box that says that the recordset has been re-opened and displays the
+  value for the current customer's city in the recordset object. You will see
+  the value that you entered in Step 9 in this message box. The grid and
+  textbox will now display the new value.
+
+  NOTE: You could also bind your controls to the recordset itself rather than
+  to the DataEnvironment by placing the following code in the Form_Load event.
+  If you use this method, you do not need to re-bind your controls:
+
+        txtCustomerID.DataMember = ""
+        Set txtCustomerID.DataSource = DataEnvironment1.rsCustomers
+        txtCity.DataMember = ""
+        Set txtCity.DataSource = DataEnvironment1.rsCustomers
+        DataGrid1.DataMember = ""
+        Set DataGrid1.DataSource = DataEnvironment1.rsCustomers
+    
+
+(c) Microsoft Corporation 1998. All Rights Reserved.
+Contributions by David Sceppa, Microsoft Corporation.
+
+
+Additional query words: binding kbCtrl kbVS600 kbdse kbDSupport kbVBp kbDataBinding kbVBp600 kbDataEnv kbDatabase
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

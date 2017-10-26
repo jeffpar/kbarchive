@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172171: How to Create Write Only Mac Volumes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172171: How to Create Write Only Mac Volumes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172171/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172171/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172171/","publisher":null,"image":null,"headline":"Q172171: How to Create Write Only Mac Volumes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172171-how-to-create-write-only-mac-volumes">Q172171: How to Create Write Only Mac Volumes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172171
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An Administrator may wish to create Macintosh volumes in which Macintosh clients
+only have the Write permission. This proposes a problem because the Macintosh
+clients must be able to see the folder in order to write to it. Therefore, a
+volume cannot be created where the Everyone group only has the Make Changes
+permission. The volume must also have the See Folders permission. To accomplish
+this task, you can create a volume that Macintosh users can see, then create a
+folder in that volume that users can drag and drop files into without ever being
+able to see the contents of the folder.
+
+MORE INFORMATION
+================
+
+To create folders in which Macintosh clients only have the Write Permission,
+follow these steps on the Windows NT Server with Services for Macintosh
+installed:
+
+1. Create a default Macintosh Volume using the MacFile menu in File Manager
+  (Winfile.exe). For example, create a directory called C:\MacFolder.
+
+  If the Volume is already created, proceed to Step #2.
+
+2. From the Macfile Menu, click Permissions. Check the following boxes for the
+  Everyone group:
+
+  X See Folders
+  X See Files
+  X Make Changes
+
+3. Create a subdirectory in the Macintosh Volume. For example,
+  C:\MacFolder\Files. Select this new Files folder.
+
+4. From the MacFile menu, click Permissions. Check the following box for the
+  Everyone group:
+
+  X Make Changes
+
+When Macintosh clients log into this Windows NT Server, they are able to select
+the Macintosh volume with See Files and See Folders permission. After they have
+selected this volume, the folder will appear on their desktop. When they
+double-click on the folder (volume), the subdirectory Files will appear as a
+normal folder but it will have a Belt around it. This prevents users from being
+able to open the folder and viewing its contents, but will still be able to drag
+and drop files into that folder.
+
+Additional query words: prodnt sfm
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

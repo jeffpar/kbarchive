@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185240/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185240/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185240/","publisher":null,"image":null,"headline":"Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185240-howto-updating-embedded-excel-sheet-when-linked-sheet-changed">Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185240
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An Excel sheet that is embedded in the General field of a FoxPro table, which is
+linked to another Excel sheet, is not automatically updated when the linked
+sheet is modified.
+
+To update the embedded sheet, it has to be displayed and edited using Excel by
+double clicking the sheet. This article shows a way of doing this
+programmatically.
+
+MORE INFORMATION
+================
+
+Following are steps to update an embedded Excel sheet programmatically:
+
+1. Create an Excel workbook. On the first sheet, enter text or numbers in some
+  of the cells, and save the file as XSheet1.xls. Do not close this sheet.
+
+2. Create another Excel workBook, enter text or numbers in some of the cells,
+  and save it as XSheet2.xls.
+
+3. Create a Link from XSheet1 so that some of its cells are linked to cells in
+  XSheet2. One way to do this would be to copy using CTRL+C, one of the cells
+  in XSheet2 to the clipboard. Then, from the Edit menu, select Paste Special
+  and then select Paste Link to copy the cell into XSheet1.
+
+4. Save both Excel files and close the first workbook (XSheet1.xls). Leave the
+  second workbook (XSheet2.xls) open.
+
+5. Run Visual FoxPro and create a table with a General field.
+
+6. Add a new record to the table and then embed the first workbook (XSheet1.xls)
+  into the General field.
+
+7. Create a form and add the table created in step 6, to the Data Environment of
+  the form.
+
+8. Add an OLE Bound Control to the form. Set the ControlSource property of the
+  control to the General field, of the table in the form's data environment,
+  that contains the embedded Excel sheet. Set the name of the control to
+  OLEBoundControl1.
+
+9. Run the form, to display the embedded sheet (XSheet1.xls).
+
+10. Go to the linked sheet, XSheet2.xls in Excel, and change the value of the
+  linked cell. Press ENTER or move to another cell to submit the change.
+
+11. Switch to FoxPro and look at the embedded sheet, XSheet1.xls, as displayed
+  by the form.
+
+  NOTE: The changes to the linked workbook (XSheet2.XLS) are not reflected on
+  the embedded workbook (XSheet1.XLS) as displayed by Visual FoxPro.
+
+12. Close the FoxPro form and then edit the form using the Form Designer.
+
+13. Add the following code to the INIT event and the Refresh of the OLE
+  Control:
+
+        This.DoVerb(-3)
+
+14. Repeat steps 9, 10, and 11.
+
+NOTE: The changes to the linked workbook (XSheet2.XLS) are reflected on the
+embedded workbook (XSheet1.XLS) as displayed by Visual FoxPro.
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on: "DoVerb"
+
+Additional query words: OLEAutomation
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178053: XADM: Store Thread’s Processor Use Peaks Indefinitely | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178053: XADM: Store Thread’s Processor Use Peaks Indefinitely" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178053/","publisher":null,"image":null,"headline":"Q178053: XADM: Store Thread’s Processor Use Peaks Indefinitely","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178053-xadm-store-threads-processor-use-peaks-indefinitely">Q178053: XADM: Store Thread’s Processor Use Peaks Indefinitely</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178053
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A thread in the store indefinitely consumes a substantial percentage of
+processor utilization. In addition, this problem begins to occur at
+approximately the same time every week. If the spinning thread is viewed in a
+debugger, the call stack will appear similar to the following:
+
+  035efd50 0045b208 : store!TibNext+0x34
+  035efd50 00459fb8 : store!REPL__EcGetNextFtSend+0xd8
+  035efd90 0045a0f0 : store!REPL__EcGetNextFtSendStatus+0xc8
+  035efdd0 0044f448 : store!REPL__EcSetFtSendStatus+0xc0
+  035efe10 00472670 : store!EcReplFolderMessagesSend+0x238
+  035efec0 0047283c : store!EcReplSendMessages+0xc0
+  035eff10 004713e0 : store!EcReplSendMessagesSelectedTimes+0x7c
+  035eff50 005258ac : store!FReplAgent+0x130
+  035eff80 77e6cbe8 : store!EcProcessTask+0x1bc
+
+CAUSE
+=====
+
+This problem only occurs when a public folder has been selected to replicate to
+other servers only once a week. The store's thread remains in a loop
+indefinitely while attempting to calculate the next instance to send a status
+message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.0. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 4.0 and 5.5.
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.5. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words: 100% CPU
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

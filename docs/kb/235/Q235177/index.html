@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235177: Windows NT or 2000 Clients Do Not Start Client Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235177: Windows NT or 2000 Clients Do Not Start Client Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235177/","publisher":null,"image":null,"headline":"Q235177: Windows NT or 2000 Clients Do Not Start Client Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235177-windows-nt-or-2000-clients-do-not-start-client-components">Q235177: Windows NT or 2000 Clients Do Not Start Client Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235177
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbClient kbsms200 kbsms200bug kbAdvertisement kbPackage kbSoftwareDist kbsmsMeter
+Last Modified: 09-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A logged on Microsoft Windows NT or Windows 2000 client does not receive
+advertised packages, or does not correctly process Software Metering (SWM) rules
+set for the Systems Management Server (SMS) Site.
+
+CAUSE
+=====
+
+This behavior occurs if the user was logged on when Windows NT Remote Client
+Installation installed the SMS services and components. The Advertised Programs
+Monitor (Smsmon32.exe) and the SMS client component launcher (Launch32.exe) must
+run in the user context. These processes can be started only in the user-context
+mode when the user logs on to the computer.
+
+WORKAROUND
+==========
+
+To work around this issue, use one (or more) of the following methods:
+
+- Log off, and then log back on to the Windows NT-based computer.
+
+- In the Windows NT Control Panel, start the Advertised Programs Monitor.
+
+- Start Launch32.exe from the following location:
+
+  %Windir%\Ms\Sms\Core\Bin
+
+MORE INFORMATION
+================
+
+If these workarounds do not resolve this issue, review
+%Windir%\Ms\Sms\Logs\Launch32.log for possible causes.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbsms200 kbsms200bug kbAdvertisement kbPackage kbSoftwareDist kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

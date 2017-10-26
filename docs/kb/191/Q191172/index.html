@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191172: FIX: Performance Degradation with Repeated SQL SELECTs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191172: FIX: Performance Degradation with Repeated SQL SELECTs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191172/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191172/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191172/","publisher":null,"image":null,"headline":"Q191172: FIX: Performance Degradation with Repeated SQL SELECTs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191172-fix-performance-degradation-with-repeated-sql-selects">Q191172: FIX: Performance Degradation with Repeated SQL SELECTs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191172
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbSQL kbvfp500 kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug kbVS600sp3fix k
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There is a slow degradation of Visual FoxPro's performance with repeated
+execution of SQL SELECT statements. The results returned by SYS(1016) and the
+time required to process SQL Select statements gradually increase with repeated
+execution of SQL Select statements.
+
+CAUSE
+=====
+
+This is caused by repeated execution of an SQL SELECT statement containing WHERE
+and OR clauses, as in the following example:
+
+  SELECT * ;
+    FROM &lt;TABLE NAME&gt; ;
+    WHERE .T. ;
+    OR .T. ;
+    INTO CURSOR TEST
+
+RESOLUTION
+==========
+
+Here are three ways to workaround this problem:
+
+- Use the HAVING clause in the SQL Select statement rather than the WHERE
+  clause. For example:
+
+  SELECT DISTINCT * ;
+    FROM &lt;table name&gt; ;
+    HAVING &lt;condition 1&gt; ;
+    OR &lt;condition 2&gt; ;
+    OR &lt;condition 3&gt; ;
+    ORDER BY &lt;order&gt; ;
+    INTO CURSOR &lt;destination&gt;
+
+- Use the INLIST() function in the SQL Select statement, in place of the OR.
+  For example:
+
+  SELECT DISTINCT * ;
+    FROM &lt;table name&gt; ;
+    WHERE INLIST(eExpression,&lt;condition 1&gt;, ;
+    &lt;condition 2&gt;, ;
+    &lt;condition 3&gt;, ;
+    ORDER BY &lt;order&gt; ;
+    INTO CURSOR &lt;destination&gt;;
+
+- Use a UNION for each OR condition. For example:
+
+  SELECT DISTINCT * ;
+    FROM &lt;table name&gt; ;
+    WHERE &lt;condition 1&gt; ;
+    UNION SELECT DISTINCT * ;
+    FROM &lt;table name&gt; ;
+    WHERE &lt;condition 2&gt; ;
+    UNION SELECT DISTINCT * ;
+    FROM &lt;table name&gt; ;
+    WHERE &lt;condition 3&gt; ;
+    INTO CURSOR &lt;destination&gt;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+The amount by which the result returned by SYS(1016) increases is dependent on
+the version of Visual FoxPro and the number of ORs contained in the SQL Select
+statement. With Visual FoxPro 5.0, the amount of increase in the result returned
+by SYS(1016) is 16 times the number of ORs contained in the SQL Select
+statement. In Visual FoxPro 6.0, the amount of increase in the result returned
+by SYS(1016) is 24 times the number of ORs contained in the SQL Select
+statement. This behavior does not occur with Visual FoxPro 3.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program named Test.prg using the following code:
+
+  CLOSE ALL
+  CLEAR ALL
+  OPEN DATABASE "c:\program files\devstudio\vfp\samples\data\testdata"
+  startval=VAL(SYS(1016))
+  FOR i=1 TO 10
+    SELECT * FROM customer WHERE .T. OR .T. INTO CURSOR test
+    endval=VAL(SYS(1016))
+    ? ALLTRIM(STR(endval)) +  ;
+      " - " + ALLTRIM(STR(startval)) + ;
+      " = " + ALLTRIM(STR(endval-startval))
+    startval=endval
+  NEXT
+
+2. From the Command prompt, type the following:
+
+  DO TEST
+
+3. Observe that the startval and endval increase and that the difference between
+  endval and startval is 16 in Visual FoxPro 5.0 and 24 in Visual FoxPro 6.0.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by John Desch, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp500 kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

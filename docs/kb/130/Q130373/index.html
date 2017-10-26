@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130373: Obtaining Package ID from Within a Microsoft Test Script | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130373: Obtaining Package ID from Within a Microsoft Test Script" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130373/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130373/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130373/","publisher":null,"image":null,"headline":"Q130373: Obtaining Package ID from Within a Microsoft Test Script","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130373-obtaining-package-id-from-within-a-microsoft-test-script">Q130373: Obtaining Package ID from Within a Microsoft Test Script</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q130373</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">kbPCM</span> <span class="n">smspcm</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">30</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="nb">write</span> <span class="n">a</span> <span class="n">custom</span> <span class="n">detail</span> <span class="n">status</span> <span class="n">MIF</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">wish</span> <span class="k">to</span> <span class="n">obtain</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">ID</span> <span class="n">for</span> <span class="n">the</span> <span class="n">current</span> <span class="k">package</span> <span class="n">during</span> <span class="n">the</span> <span class="n">running</span> <span class="k">of</span> <span class="n">a</span> <span class="k">Package</span> <span class="n">Command</span>
+<span class="n">Manager</span> <span class="p">(</span><span class="n">PCM</span><span class="p">)</span> <span class="n">job</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">should</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">directory</span> <span class="n">one</span> <span class="n">level</span> <span class="n">up</span> <span class="k">from</span>
+<span class="n">the</span> <span class="n">current</span> <span class="n">working</span> <span class="n">directory</span> <span class="n">at</span> <span class="n">the</span> <span class="n">time</span> <span class="n">PCM</span> <span class="n">launches</span> <span class="n">the</span> <span class="n">job</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span>
+<span class="n">available</span> <span class="n">because</span> <span class="n">PCM</span> <span class="n">changes</span> <span class="n">the</span> <span class="n">current</span> <span class="n">working</span> <span class="n">directory</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">source</span> <span class="n">before</span> <span class="n">launching</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">workstation</span> <span class="nf">command</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">parent</span> <span class="n">directory</span> <span class="n">name</span> <span class="n">can</span> <span class="n">be</span> <span class="n">obtained</span> <span class="k">from</span> <span class="n">an</span> <span class="n">executable</span> <span class="n">file</span><span class="p">,</span> <span class="k">or</span> <span class="k">from</span>
+<span class="n">within</span> <span class="n">an</span> <span class="n">Microsoft</span> <span class="n">Test</span> <span class="n">script</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">easily</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">information</span>
+<span class="n">written</span> <span class="n">by</span> <span class="n">the</span> <span class="n">administrator</span><span class="p">-</span><span class="n">written</span> <span class="n">detail</span><span class="p">.</span> <span class="n">For</span> <span class="n">examples</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span>
+<span class="n">BackOffice</span> <span class="n">SDK</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">samples</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">sms</span> <span class="n">prodsms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbnetwork</span> <span class="n">kbPCM</span> <span class="n">smspcm</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

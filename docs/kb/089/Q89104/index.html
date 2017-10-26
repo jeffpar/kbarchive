@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89104: Using Windows with LAWN Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89104: Using Windows with LAWN Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89104/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89104/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89104/","publisher":null,"image":null,"headline":"Q89104: Using Windows with LAWN Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89104-using-windows-with-lawn-network">Q89104: Using Windows with LAWN Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89104
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The LAWN (Local Area Wireless Network) requires a minimum version of 1.12 10091
+or later for use with Microsoft Windows. If you are using MS-DOS 5.0, you need
+to be using LAWN version 1.12 or later. LAWN is unsupported by Microsoft
+Windows.
+
+This article discusses the following:
+
+- System requirements
+
+- Steps for printing from Windows 3.0, 3.0a
+
+- Steps for printing from Windows 3.1
+
+- Windows and LAWN compatibility
+
+MORE INFORMATION
+================
+
+System Requirements
+-------------------
+
+The following are the LAWN system requirements:
+
+- MS-DOS 2.0 or later
+
+- 512K RAM minimum
+
+- Hard disk recommended
+
+- For machines using MS-DOS 4.0 or later, running the LAWN software through the
+  MS-DOS Shell is NOT recommended
+
+Steps for Printing from Windows 3.0, 3.0a
+-----------------------------------------
+
+1. Instead of selecting LPTx in Control Panel's Printers option, select LPTx.OS2
+  (where x is the port number).
+
+Steps for Printing from Windows 3.1
+-----------------------------------
+
+1. Instead of selecting LPTx in Control Panel's Printers option, select LPTx.DOS
+  or LPTx.OS2 (where x is the port number).
+
+2. Disable Fast Printing Direct To Port if step 1 fails.
+
+3. Edit the SYSTEM.INI's [386Enh] section with an ASCII text editor and add the
+  following:
+
+  TimerCriticalSection=1
+
+Windows and LAWN Compatibility
+------------------------------
+
+Each computer or peripheral is connected to its own LAWN box through the unit's
+serial port.
+
+Windows/LAWN Compatibility and Support Chart
+--------------------------------------------
+
+  Computer   Windows    Serial                      File
+  Type       Mode       Port       PRINT   E-Mail   Transfer
+  ----------------------------------------------------------
+
+  286        Standard   Regular    (1)    (2)       (2)
+  386/486    Standard   Regular    yes    yes       yes
+  386/486    Enhanced   Regular    yes    (2)       (2)
+  All        All        Enhanced   yes    yes       yes
+
+Note the following:
+
+- 286 computers with a PS/2-style mouse may have problems with LAWN print
+  spooling.
+
+- File transfer and electronic mail (E-Mail) operations are dependent on BIOS
+  and computer speed.
+
+For more information, contact O'Neill Communications technical support or direct
+any mail correspondence to:
+
+  O'Neill Communications, Inc. (OCI)
+  100 Thanet Circle
+  Princeton NJ 08540
+
+Additional query words: 3.00 3.10 3.11 manager loader lan 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

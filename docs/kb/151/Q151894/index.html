@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151894/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151894/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151894/","publisher":null,"image":null,"headline":"Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151894-prb-ctoolbarctrlgettooltips-may-return-null-for-a-toolbar">Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151894
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbMFC kbToolbar kbToolTip kbVC400 kbVC410 kbGrpDSMFCATL kbMFCCtrlBar
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Accessing the CToolTipCtrl for a CToolBar with CBRS_TOOLTIPS style, using
+GetToolBarCtrl() and subsequently using that pointer to call GetToolTips(),
+returns a NULL value.
+
+CAUSE
+=====
+
+GetToolTips() returns the pointer to a CToolTipCtrl associated specifically with
+the CToolBar. The CToolTipCtrl created for a CToolBar by setting the
+CBRS_TOOLTIPS style is not specific to the CToolBar, but rather, is MFC's
+CToolTipCtrl common to the entire application.
+
+RESOLUTION
+==========
+
+The common CToolTipCtrl is kept as a part of the MFC thread state information.
+To access the MFC's common CToolTipCtrl, access m_pToolTip public member of the
+current thread state:
+
+     _AFX_THREAD_STATE* pThreadState = AfxGetThreadState();
+      CToolTipCtrl* pToolTip = pThreadState-&gt;m_pToolTip;
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In order to provide ToolTip support for a CToolBar, the CBRS_TOOLTIPS style has
+to be set during creation or by using CControlBar::SetBarStyle(). This style
+results in the ToolBar using MFC's thread specific common CToolTipCtrl rather
+than a unique one for the ToolBar. Since the ToolTip is not specific to the
+ToolBar, GetToolTips() returns NULL.
+
+Note that a CToolTipCtrl specific to a CToolBar can be created by overriding the
+CToolBar::PreCreateWindow() and setting the TBSTYLE_TOOLTIPS. In this case, the
+return value of GetToolTips() will be valid.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q151162 PRB: CToolBarCtrl Styles Fail with CToolBar
+
+Additional query words: 4.00 4.10
+
+======================================================================
+Keywords          : kbMFC kbToolbar kbToolTip kbVC400 kbVC410 kbGrpDSMFCATL kbMFCCtrlBar 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

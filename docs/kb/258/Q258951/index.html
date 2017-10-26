@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258951: XADM: Space Not Gained After Changing Deleted Items Retention | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258951: XADM: Space Not Gained After Changing Deleted Items Retention" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258951/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258951/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258951/","publisher":null,"image":null,"headline":"Q258951: XADM: Space Not Gained After Changing Deleted Items Retention","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258951-xadm-space-not-gained-after-changing-deleted-items-retention">Q258951: XADM: Space Not Gained After Changing Deleted Items Retention</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258951
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you reduce the number of days for the Deleted Items Retention setting in the
+Exchange Server Administrator program and then run an offline defragmentation,
+the space that should be reclaimed from the removal of deleted items that exceed
+the new Deleted Items Retention setting is not freed from the Priv.edb database.
+
+CAUSE
+=====
+
+This issue can occur because the removal of these deleted items is not completed
+until an online defragmentation (information store maintenance) has been run on
+the Priv.edb database. After an online defragmentation of the Priv.edb database
+is allowed to finish, an offline defragmentation reclaims free space from the
+database.
+
+WORKAROUND
+==========
+
+To free up space in the Priv.edb database as quickly as possible after you
+reduce the days in Deleted Items Retention, open the properties of the Server
+object, click the IS Maintenance tab, and then click Always to run an online
+defragmentation.
+
+The online defragmentation may take up to 30 minutes to begin. The beginning of
+the defragmentation is logged with the following event in the application event
+log:
+
+  Event ID: 179
+  Source: Ese97
+  Type: Information
+  Category: Online Defragmentation
+  Description: MSExchangeIS (170) Online Defragmentation is beginning a full
+  pass on database 'C:\exchsrvr\mdbdata\priv.edb'.
+
+  The defrag may take several hours to complete and upon complete will log the
+  following in the application log:
+
+  Event ID: 180
+  Source: Ese97
+  Type: Information
+  Category: Online Defragmentation
+  Description: MSExchangeIS (170) Online Defragmentation has completed a full
+  pass on database 'C:\exchsrvr\mdbdata\priv.edb'.
+
+After the online defragmentation is complete, you must stop the information store
+to run the offline defragmentation (the eseutil /d /ispriv command) and reclaim
+the free space.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

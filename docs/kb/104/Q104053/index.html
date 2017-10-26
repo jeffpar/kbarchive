@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104053/","publisher":null,"image":null,"headline":"Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104053-difference-between-copy-to-array-and-select-into-array">Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104053
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Once an array has been created with the COPY TO ARRAY command, the array length
+remains constant even when a subsequent COPY TO ARRAY command is issued.
+However, the SQL SELECT INTO ARRAY command creates a new array each time it is
+issued.
+
+MORE INFORMATION
+================
+
+The following steps illustrate this behavior using the FoxPro 2.x CUSTOMER
+table:
+
+1. In the Command window, issue the following commands:
+
+  SET DEFAULT TO &lt;path to FoxPro TUTORIAL directory&gt;
+  USE customer
+
+2. Open the Debug window, and type "ALEN(arr)" (without the quotation marks).
+  Observe the value displayed after issuing each of the following commands:
+
+        COPY TO ARRAY arr FIELDS state FOR state = "CA"
+        * arr has 123 elements, all of which are "CA".
+
+        COPY TO ARRAY arr FIELDS state FOR state = "AK"
+        * arr still has 123 elements, but issuing the command
+        * DISPLAYMEMORY LIKE arr will show that only the first
+        * element of arr is "AK"; the rest are "CA".
+
+  NOTE: If the second COPY TO ARRAY command returns a smaller number of elements
+  than those existing in the array, only that number of elements will be
+  overwritten; the others will retain their former value.
+
+  If the second COPY TO ARRAY command returns a larger number of elements than
+  those existing in the array, the result set will be truncated to the number
+  of elements in the array.
+
+  To obtain correct results, you must use the RELEASE command to release the
+  array between consecutive COPY TO ARRAY commands.
+
+3. Observe the value of ALEN(arr) after issuing the following commands:
+
+        SELECT cno FROM customer INTO array arr WHERE state = "CA"
+        * arr now has 123 elements, all of which are "CA".
+
+        SELECT cno FROM customer INTO ARRAY arr WHERE cno = "AK"
+        * ALEN(arr) =1; the value is "AK".
+
+REFERENCES
+==========
+
+"Commands &amp; Functions," version 2.0, COPY TO ARRAY and SELECT - SQL
+"Language Reference," version 2.5, pages L3-317 and L3-862
+
+Additional query words: VFoxWin FoxDos FoxWin dimension declare
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

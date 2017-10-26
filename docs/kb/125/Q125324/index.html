@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125324/","publisher":null,"image":null,"headline":"Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125324-inf-semantics-of-select-distinct-with-order-by">Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125324
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article applies to ODBC Desktop Database Drivers version
+2.0. A SELECT clause that has the DISTINCT modifier in the select list and has
+an ORDER BY and the ORDER BY clause has columns that are not present in the
+select list, causes an error due to ambiguous semantics. The article discusses
+why this occurs.
+
+MORE INFORMATION
+================
+
+ODBC Desktop Database drivers are single-tier drivers. They are written as a
+thin layer on top of the JET database engine. The JET engine is the SQL engine
+that Microsoft Access and Microsoft Visual Basic use to get to dBASE, Paradox,
+FoxPro, Btrieve, Access, Excel, and Text file formats.
+
+When a SELECT statement is executed, the JET engine always performs an implicit
+sort if a DISTINCT modifier is present; an ORDER BY clause causes another sort
+to be done, which occurs after all other sorts (if any).
+
+As an extension to ANSI 89 SQL, the JET engine allows you to ORDER BY columns
+that do not appear in the SELECT list. Thus, a SELECT statement of the form
+
+     SELECT x FROM test_table
+     ORDER BY y
+
+is a valid SQL statement. On this statement, the engine does a sort on the result
+set and throws out the columns that are not selected.
+
+However, the semantics of a statement of the form
+
+     SELECT DISTINCT x FROM test_table
+     ORDER BY y
+
+are non-deterministic. The engine does an implicit sort for the SELECT DISTINCT.
+If it has the pairs (x0,y1),(x0,y2), one of them has to go because of the
+DISTINCT x. But which one should go?
+
+The decision that the engine makes will affect where in the sort order (x0)
+appears, because the sort for the ORDER BY clause is always done last. Because
+of the non-determinism in the semantics of a SELECT statement, when you try to
+execute it, you will generate the error:
+
+  [Microsoft][ODBC Microsoft Access 2.0 Driver] ORDER BY clause (y) conflicts
+  with DISTINCT
+  SQLSTATE = "22005", NativeError = -3015
+
+Note that what you want might be obtained by the following query:
+
+     SELECT DISTINCT x,y FROM test_table
+     ORDER BY y
+
+This will cause duplicate values of x that you would not otherwise see had you
+not included y in the select list. However, in most cases, this is a very
+acceptable workaround.
+
+Additional query words: 2.00.2317 dBASE Paradox Btrieve Access FoxPro Text Excel SQL 3015 Windows NT
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

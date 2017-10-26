@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259433/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259433/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259433/","publisher":null,"image":null,"headline":"Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259433-bug-wrong-event-is-signaled-when-using-ras-custom-script-api">Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259433
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbOSWin2000 _IK12469 _IK912 kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDS
+Last Modified: 29-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The WAIT_OBJECT_0 event is signaled even when there is no data available on the
+wire to read. This causes the RasRetrieveBuffer function to fill up the
+receiving buffer with a NULL character.
+
+RESOLUTION
+==========
+
+On the client side, when the WAIT_OBJECT_0 event is signaled, if pRecvBuf
+contains a NULL character, just ignore this, and then call the RasReceiveBuffer
+function again.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+  dwErr = pfnRasReceiveBuffer(hPort, pRecvBuf, &amp;dwRecvBufSize, 1, hEvent);  
+
+  dwWait = WaitForSingleObject (hEvent, INFINITE);
+
+  switch (dwWait) {
+          case WAIT_FAILED:
+              OutputDebugString(_T("Wait Failed"));
+              return 1;
+
+          case WAIT_TIMEOUT:
+              dwErr = ERROR_SMM_TIMEOUT;
+              return 1;
+
+          case WAIT_ABANDONED:
+              OutputDebugString(_T("WAIT_ABANDONED\n"));
+              return 1;
+
+          case WAIT_OBJECT_0:
+              OutputDebugString(_T("The state of the object is signaled\n"));
+              break;
+  }
+
+  dwErr = pfnRasRetrieveBuffer(hPort,pRecvBuf,&amp;dwRecvBufSize);
+
+The server side does not send out any data. RasReceiveBuffer returns immediately.
+Even though there is no data on the wire, the WAIT_OBJECT_0 event is signaled.
+RasRetrieveBuffer is executed, and it fills pRecvBuf with NULL character.
+
+REFERENCES
+==========
+
+Please see the Platform SDK\Samples\NetDs\RAS\CustomScript\CustomClient folder
+for the complete sample on how to use the RAS Custom Script APIs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbOSWin2000 _IK12469 _IK912 kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSNet 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

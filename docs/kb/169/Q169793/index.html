@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169793: RUI Libraries Don’t Return All Negative Responses to RUI App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169793: RUI Libraries Don’t Return All Negative Responses to RUI App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169793/","publisher":null,"image":null,"headline":"Q169793: RUI Libraries Don’t Return All Negative Responses to RUI App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169793-rui-libraries-dont-return-all-negative-responses-to-rui-app">Q169793: RUI Libraries Don’t Return All Negative Responses to RUI App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169793
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An RUI application that is written to capture all negative responses is only
+notified by the RUI libraries of the first -RSP generated at the host by a
+series of bad messages. SNA Server traces indicate that host negative responses
+for each "bad" message sent by the RUI application are received by SNA Server,
+but only the first negative response is passed to the RUI application.
+
+CAUSE
+=====
+
+To improve efficiency, SNA Server treats sequences of RQE chains received from
+an RUI application as if they were a single RQE chain. This causes SNA Server to
+pass only the first host negative response to the first RU as if it was a
+response to all "bad" RU's.
+
+
+RESOLUTION
+==========
+
+Snaservr.exe has been changed to allow the behavior of the SNA Server to be
+altered so that all -RSP messages that have the RQE bit set are passed to the
+RUI libraries if the following registry parameter is added:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ 
+     SnaServr\Parameters\ 
+
+  DONTCOALESCE :  REG_SZ   [value is not important]
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Use the following steps to edit the registry:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  \SYSTEM\CurrentControlSet\Services\SnaServr\Parameters
+
+3. On the Edit menu, click Add Value.
+
+4. Add the following values:
+
+  "Value Name: DONTCOALESCE
+  Data Type: REG_SZ
+  String: YES" (without the quotation marks)
+
+5. Click OK and then quit Registry Editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT
+version 2.11, 2.11 SP1, 2.11 SP2, 3.0, and 3.0 SP1.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+The following is an excerpt from an SNA trace:
+
+  LINKMSG.AFT
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   03020101-&gt;01160001 DLC DATA
+  DLC                      DAF:09 OAF:09 ODAI:off Normal
+  DLC                      RQE FMD BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012C45EC, 1 elements ----
+  DLC   00000000 00032C00 09090001 01002701     &lt;......,.......'.&gt;
+  DLC
+  DLC   ---- Element at address 017BCB60, start 10, end 21 ----
+  DLC   03900061 61616161 6161610A              &lt;...aaaaaaaa.    &gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+              data "bbbbbbbb" and "cccccccc" deleted for brevity
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   03020101-&gt;01160001 DLC DATA
+  DLC                      DAF:09 OAF:09 ODAI:off Normal
+  DLC                      RQE FMD BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012C41DC, 1 elements ----
+  DLC   00050000 60032C00 09090004 01002701     &lt;....`.,.......'.&gt;
+  DLC
+  DLC   ---- Element at address 017BB5B4, start 10, end 21 ----
+  DLC   03900064 64646464 6464640A              &lt;...dddddddd.    &gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   01160001-&gt;03020101 DLC DATA
+  DLC                      DAF:09 OAF:09 ODAI:off Normal
+  DLC                      -RSP FMD SD BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012C41DC, 1 elements ----
+  DLC   00050000 60032C00 09090001 01002701     &lt;....`.,.......'.&gt;
+  DLC
+  DLC   ---- Element at address 017BB5B4, start 10, end 16 ----
+  DLC   87900010 010001                         &lt;g......         &gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   03020101-&gt;01160001 DLCST RSRC
+  DLC                      Credit:4
+  DLC
+  DLC   ---- Header  at address 012C45B8, 0 elements ----
+  DLC   04050004 60032C00 09090003 01002701     &lt;....`.,.......'.&gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+           sense codes 10010002 and 10010003 deleted for brevity
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   01160001-&gt;03020101 DLC DATA
+  DLC                      DAF:09 OAF:09 ODAI:off Normal
+  DLC                      -RSP FMD SD BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012C45B8, 1 elements ----
+  DLC   04050004 60032C00 09090004 01007F00     &lt;....`.,.......&lt;7F&gt;.&gt;
+  DLC
+  DLC   ---- Element at address 017BB5B4, start 10, end 16 ----
+  DLC   87900010 010004                         &lt;g......         &gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+  DLC   01160001-&gt;03020101 DLC DATA
+  DLC                      DAF:09 OAF:09 ODAI:off Normal
+  DLC                      RQE FMD BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012C45B8, 1 elements ----
+  DLC   04050004 60032C00 09090001 01007F00     &lt;....`.,.......&lt;7F&gt;.&gt;
+  DLC
+  DLC   ---- Element at address 017BB5B4, start 10, end 112 ----
+  DLC   03900058 58585858 58585858 58585858     &lt;...XXXXXXXXXXXXX&gt;
+  DLC   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  DLC   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  DLC   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  DLC   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  DLC   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  DLC   58585858 585858                         &lt;XXXXXXX         &gt;
+  DLC   ------------------------------------------------------------------
+  ---
+  -----------
+
+  CLIINT.AFT
+  RUI   ------------------------------------------------------------------
+  ---
+  -----------
+  RUI   RUI_READ response
+  RUI   OK - OK
+  RUI   ---- Verb Parameter Block at address 0193ED6C ----
+  RUI   5200CC00 00000000 00000000 03800000     &lt;R...............&gt;
+  RUI   00000000 00000000 00000000 00000000     &lt;................&gt;
+  RUI   03000000 00010400 ACE69301 F0010000     &lt;.........Wl.0...&gt;
+  RUI   2C000909 00018790 000F0241 00000000     &lt;,.....g....A....&gt;
+  RUI   00000000                                &lt;....            &gt;
+  RUI   ---- Data at address 0193E6AC ----
+  RUI   10010001                                &lt;....            &gt;
+  RUI   ------------------------------------------------------------------
+  ---
+  -----------
+  RUI   RUI_READ request
+  RUI   ---- Verb Parameter Block at address 0193ED6C ----
+  RUI   5200CC00 00000000 00000000 03800000     &lt;R...............&gt;
+  RUI   00000000 00000000 00000000 00000000     &lt;................&gt;
+  RUI   03000000 00010000 ACE69301 F0010000     &lt;.........Wl.0...&gt;
+  RUI   00000000 00000000 000F0000 00000000     &lt;................&gt;
+  RUI   00000000                                &lt;....            &gt;
+  RUI   ------------------------------------------------------------------
+  ---
+  -----------
+  RUI   RUI_READ response
+  RUI   OK - OK
+  RUI   ---- Verb Parameter Block at address 0193ED6C ----
+  RUI   5200CC00 00000000 00000000 03800000     &lt;R...............&gt;
+  RUI   00000000 00000000 00000000 00000000     &lt;................&gt;
+  RUI   03000000 00016400 ACE69301 F0010000     &lt;......d..Wl.0...&gt;
+  RUI   2C000909 00010390 000F0141 00000000     &lt;,..........A....&gt;
+  RUI   00000000                                &lt;....            &gt;
+  RUI   ---- Data at address 0193E6AC ----
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858 58585858 58585858 58585858     &lt;XXXXXXXXXXXXXXXX&gt;
+  RUI   58585858                                &lt;XXXX            &gt;
+  RUI   ------------------------------------------------------------------
+  ---
+  -----------
+
+Additional query words: rui rqe
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

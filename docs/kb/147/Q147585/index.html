@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147585: INFO: The Mssccprj.scc File and How Is It Used | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147585: INFO: The Mssccprj.scc File and How Is It Used" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147585/","publisher":null,"image":null,"headline":"Q147585: INFO: The Mssccprj.scc File and How Is It Used","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147585-info-the-mssccprjscc-file-and-how-is-it-used">Q147585: INFO: The Mssccprj.scc File and How Is It Used</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147585
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you work with a Visual Basic project in Visual SourceSafe, a special file
+is created in your working directory called Mssccprj.scc. This file can never be
+added to Visual SourceSafe. It stays in your working directory and stores
+important information used by the SourceSafe integration in Visual Basic.
+
+MORE INFORMATION
+================
+
+The File Types Options tab in Visual SourceSafe sets options relating to the
+types of files you store in Visual SourceSafe. To get to the File Types tab,
+click Options on the Visual SourceSafe Explorer Tools menu, and then click File
+Types.
+
+This tab has an option for Create SCC File. Create SCC File dictates when
+SourceSafe creates this file. Its default setting (*.vbp, *.mak) means that
+whenever you get or add a file with an extension of .vbp (Visual Basic 4.0
+project file) or .mak (used by older versions of Visual Basic), SourceSafe
+creates the Mssccprj.scc file. This file is very important because without it,
+SourceSafe integration inside Visual Basic will not function properly.
+
+If you are having problems with Visual Basic integration with Visual SourceSafe,
+Make sure the Create SCC File option is set. Also, to rebuild the Mssccprj.scc
+file, delete the old copy, and then regain access to the Visual Basic project.
+It will allow you to point to the existing SourceSafe project and will display
+this message:
+
+  The source code control project already has a make file with the same name as
+  the one you are adding. Is this the same file?
+
+If you answer Yes, the Mssccprj.scc file will be rebuilt.
+
+The Mssccprj.scc file is a text file. It contains information like that shown
+below. There is no reason for anyone to go in and manually make changes to this
+file.
+
+  SCC=This is a Source Code Control file
+
+  [PROJECT1.VBP]
+  SCC_Project_Name="$/Project1", BAAAAAAA
+  SCC_Aux_Path=C:\VSS1CLI,
+
+If a Visual Basic project is removed and destroyed in Visual SourceSafe,
+SourceSafe does not automatically delete the Mssccprj.scc file from the local
+working directory. This will cause some strange errors to appear.
+
+The Mssccprj.scc file is only used by Visual Basic. Visual C++ and other
+development environments do not use this file at all. You may not want this file
+appearing in your Visual C++ directory. To prevent the appearance of the
+Mssccprj.scc file in your Visual C++ directory, remove the *.mak from this
+field. (This change should only be made if you do not use Visual Basic 3.0 .mak
+files.)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

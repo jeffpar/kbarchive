@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63595: Windows 3.0: Installing Video Seven’s High-Resolution Drivers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63595: Windows 3.0: Installing Video Seven’s High-Resolution Drivers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63595/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63595/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63595/","publisher":null,"image":null,"headline":"Q63595: Windows 3.0: Installing Video Seven’s High-Resolution Drivers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63595-windows-30-installing-video-sevens-high-resolution-drivers">Q63595: Windows 3.0: Installing Video Seven’s High-Resolution Drivers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63595
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information is contained in the README.TXT supplied with the supplementary
+high-resolution graphics drivers available from Video Seven. All questions
+regarding these drivers should be directed to Headland Technologies.
+
+MORE INFORMATION
+================
+
+Video Seven provides the following Microsoft Windows version 3.0 drivers
+for the Video Seven V-RAM VGA and VGA 1024i:
+
+  Filename       Video Resolution
+  -------------  -------------------------
+
+   V754016.DRV   720 x 540  16 color
+   V760016.DRV   800 x 600  16 color
+   V776816.DRV   1024 x 768  16 color (requires 512K)
+   V7512256.DRV  720 x 512 256 color (V-RAM VGA 512K only)
+
+The Windows 3.0 package contains a 640 x 480 16-color and 256-color
+driver for the Video Seven VGA card.
+
+The example below shows how to install the 800 x 600 16-color driver.
+You can install a different resolution driver by substituting the
+driver filename for the resolution you want to install. You should
+already have Windows 3.0 installed, using the Video Seven driver
+supplied with Windows (640 x 480 with 256 colors).
+
+1. Copy the V760016.DRV file from the floppy disk to the \SYSTEM
+  subdirectory under the directory where you have installed Windows
+  3.0 (for example, WIN3\SYSTEM\).
+
+2. Using a text editor (such as the Notepad from within Windows), change
+  the DISPLAY.DRV line of the SYSTEM.INI from DISPLAY.DRV=V7VGA.DRV to
+  DISPLAY.DRV=V760016.DRV.
+
+3. Check that the following lines appear in the [Boot] section of the
+  SYSTEM.INI file:
+
+     386GRABBER=V7VGA.GR3 (386 machines only) and
+     286GRABBER=VGACOLOR.GR2.
+
+  NOTE: If you have installed Windows for standard VGA you do not
+  have the file V7VGA.GR3 in your Windows directory. This file is
+  compressed and must be expanded off the original disks. The file
+  V7VGA.GR3 is on Windows Disk 4 on 5.25" media or Windows Disk 5 on
+  3.5" media. Or simply install Windows for Video Seven with 512K.
+
+4. Save the SYSTEM.INI file. Restart Windows from the MS-DOS prompt.
+  You are now in the 800 x 600 resolution mode. You can repeat
+  the above steps to change resolutions at any time.
+
+If you do not have Windows 3.0 installed, do the following:
+
+1. Install Windows 3.00 and select "Video Seven VGA with 512K" or
+  "VGA" depending on your memory configuration, as the display
+  option.
+
+2. Follow steps 1-4 above to change resolution.
+
+The products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.00 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195804: XFOR: Imcsave Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195804: XFOR: Imcsave Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195804/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195804/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195804/","publisher":null,"image":null,"headline":"Q195804: XFOR: Imcsave Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195804-xfor-imcsave-utility">Q195804: XFOR: Imcsave Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195804
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Mail Connector (IMC) Configuration Extractor (Imcsave.exe) is a
+command-line tool that extracts IMC messages and configurations from the
+Microsoft Exchange Server information store and directory. These messages and
+configurations can then be restored on another computer.
+
+This tool allows Microsoft Product Support Services to collect information for
+troubleshooting, and to set up a matching configuration to reproduce problems.
+Use the IMC Configuration Extractor only with the assistance of Microsoft
+Product Support Services.
+
+A copy of the Imcsave utility can be found only on the BackOffice Resource Kit
+1.0 Part 1 or Part 2 CD.
+
+Starting with the release of Exchange Server 5.0 the Imcsave utility is available
+with the product. It can be found on Exchange Server 5.x CDs.
+
+MORE INFORMATION
+================
+
+The IMC Configuration Extractor does not require special installation and can be
+run from your directory.
+
+The IMC Configuration Extractor performs the following operations for collecting
+data and extracting IMC messages:
+
+- Looks in the registry to find the location of the Imcdata directory, then
+  creates a directory called Backup under the Imcdata directory. If the
+  directory already exists, the process quits.
+
+- Copies all IMC service registry values to a file called Imcsvc.reg.
+
+- Copies all IMC profile registry values to a file called Imcpro.reg.
+
+- Uses DAPI to export the gateway object to a file called Imcobj.csv.
+
+- Logs on to the service in the same manner as the Internet Mail Connector
+  does.
+
+- Immediately sets a flag in the information store, which prevents more mail
+  from being routed through the Internet Mail Connector.
+
+- Creates a directory called Imcdata\Backup\Mtsout, and copies all messages
+  from MTS-OUT into it using the transport-neutral encapsulation format (TNEF).
+
+- Creates a directory called Imcdata\Backup\Mtsin, and copies all messages from
+  MTS-IN into it.
+
+- Generates a packing list of all generated files called Imcfls, using the
+  format of an .ini file to encode the information.
+
+  USAGE: IMCSAVE [-output SaveDir] [-save Item [Item]...] [-delete]
+
+   -output SaveDir       Save all output under the specified directory
+                         (SaveDir) in a subdirectory named Backup.
+                         If not specified, output will be stored under the
+                         IMC root directory in a subdirectory named
+                         Backup.
+
+   -save Item [Item]...  Save the specified output Items.
+
+   Items include:
+
+       Reg[istry]                - IMC Registry data
+       Dir[ectory]               - IMC Directory Service data
+       MTSI[n]                   - MTS-IN message queue
+       MTSO[ut]                  - MTS-OUT message queue
+       Bad                       - Bad message queue
+       Con[tentConversionFailed] - ContentConversionFailed message queue
+       Work                      - Work message queue
+
+                         If -save is not specified, all Items are saved.
+
+   -delete               Delete messages in the queues.
+                         A confirmation dialog is conducted, and messages
+                         are only deleted if they are successfully saved
+                         in TNEF files.
+
+   -help                 Displays this screen.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247546/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247546/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247546/","publisher":null,"image":null,"headline":"Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247546-sms-discovery-data-manager-fails-to-enumerate-sites">Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247546
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsetup kbDatabase kbMMC kbSecurity kbServer kbsms200 kbDiscovery kbQuery kbsmsProvider
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Systems Management Server site receives the following error message (Msg ID
+679) every few minutes from the Discovery Data Manager:
+
+  Failed to enumerate sites
+
+CAUSE
+=====
+
+The SMS Service account listed in the SMSDATA table of the Systems Management
+Server database does not match the service account with which the SMS_EXECUTIVE
+is started (as listed under Services in Control Panel).
+
+When a Systems Management Server component connects to an SQL database, Systems
+Management Server checks whether the connection is being made by the SMS Service
+account. If not, Systems Management Server checks permissions and excludes sites
+from the query of the Sites table based on explicit permissions (provider
+security). In this case, Discovery Data Manager (DDM) is logged on with an
+account name that does not match the &lt;ServiceAccountName&gt; entry in the
+SMSDATA table. As a result, the query to find all sites returns no rows, causing
+DDM to malfunction and the error message above to be displayed.
+
+
+WORKAROUND
+==========
+
+To work around this behavior, perform a site reset by running SMS Setup at the
+Site Server, and respecify the SMS Service Account in the
+DomainName\ServiceAccountName format.
+
+For example:
+
+  MYDOM1\smsservice
+
+It may take several minutes after the site reset is complete before the
+information is actually updated.
+
+
+MORE INFORMATION
+================
+
+Example of the Behavior
+-----------------------
+
+The following is an excerpt from the Ddm.log file:
+
+  CDiscoverDataManager::GetSiteInfo - Could not get subsites.
+  STATMSG: ID=679 SEV=E LEV=M SOURCE="SMS Server"
+  COMP="SMS_DISCOVERY_DATA_MANAGER" SYS=FMCSMS SITE=FMC PID=314 TID=519
+  GMTDATE=Tue Mar 23 15:38:31.973 1999 ISTR0="" ISTR1="" ISTR2="" ISTR3=""
+  ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=0
+  CDiscoverDataManager::Process - Could not refresh registry values. Sleeping
+  for 60 seconds
+  CDiscoverDataManager::GetSiteStatus - Registering SQL types, Server = FMCSMS,
+  Database = SMS, User = sa
+  CDiscoverDataManager::GetSiteInfo - Could not get subsites.
+  STATMSG: ID=679 SEV=E LEV=M SOURCE="SMS Server"
+  COMP="SMS_DISCOVERY_DATA_MANAGER" SYS=FMCSMS SITE=FMC PID=314 TID=519
+  GMTDATE=Tue Mar 23 15:39:32.363 1999 ISTR0="" ISTR1="" ISTR2="" ISTR3=""
+  ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=0
+  CDiscoverDataManager::Process - Could not refresh registry values. Sleeping
+  for 60 seconds
+
+No Discovery Data Records (DDRs) are processed.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbDatabase kbMMC kbSecurity kbServer kbsms200 kbDiscovery kbQuery kbsmsProvider kbStatSum 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

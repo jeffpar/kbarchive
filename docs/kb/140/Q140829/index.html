@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140829: TN3270 Clients Do Not Accept &quot;Do TN3270E&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140829: TN3270 Clients Do Not Accept &quot;Do TN3270E&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140829/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140829/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140829/","publisher":null,"image":null,"headline":"Q140829: TN3270 Clients Do Not Accept &quot;Do TN3270E&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140829-tn3270-clients-do-not-accept-do-tn3270e">Q140829: TN3270 Clients Do Not Accept "Do TN3270E"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140829
+Product(s): Microsoft SNA Server
+Version(s): 2.11
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+"Do TN3270E" is a command sent from the TN3270E Server Service to the TN3270
+emulator during session initialization. It asks the TN3270 emulator whether it
+can support the TN3270E protocol. Some TN3270 clients do not accept the "Do
+TN3270E" message from the TN3270E server. This prevents session establishment
+between the TN3270 client and TN3270E Server Service. Sending the "Do TN3270E"
+command is a legal command according to RFC 1647."
+
+RFC 1647 states the Following:
+
+"Telnet clients and servers would be free to negotiate support of the TN3270E
+option or not. If either side does not support TN3270E, traditional TN3270 can
+be used; otherwise, a sub-negotiation will occur to determine what subset of
+TN3270E will be used on the session. It is anticipated that a client or server
+capable of both types of 3270 emulation would attempt to negotiate TN3270E
+first, and only negotiate traditional tn3270 if the other side refuses
+TN3270E."
+
+SAMPLE TRACE
+------------
+
+&gt;12/08 11:18:16.828 (+ smidgen )  Event=TEV_Started
+
+&gt;12/08 11:18:30.217 (+ 13 secs )  Event=TEV_DataToClient
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+DO TN3270E
+Number of bytes = 3
+
+&gt;12/08 11:18:30.217 (+ smidgen )  Event=TEV_TCPSendIssued
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+Number of bytes = 3
+000000  fffd 28                                  !..(             !
+
+&gt;12/08 11:18:30.257 (+ 40 msecs)  Event=TEV_TCPRecvIssued
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+
+&gt;12/08 11:18:30.277 (+ 20 msecs)  Event=TEV_TCPSendCompleted
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+Bytes transferred = 3
+
+&gt;12/08 11:19:09.403 (+ 39 secs )  Event=TEV_TCPRecvCompleted
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+Bytes returned = 0
+
+&gt;12/08 11:19:09.423 (+ 20 msecs)  Event=TEV_SessionTerminationScheduled
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+NormalTermination
+
+&gt;12/08 11:19:09.463 (+ 40 msecs)  Event=TEV_SessionTermination
+Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+Session terminated
+
+RESOLUTION
+==========
+
+The TN3270E Server has a new registry entry that can be used to turn off TN3270E
+support:
+
+  Subtree:   HKEY_LOCAL_MACHINE
+  Key:       \currentcontrolset\services\tn3270\parameters\NoTN3270E
+  Type:      REG_EXPAND_SZ
+  Value:     ON
+
+When this value is set to ON, the server reverts to being a TN3270 Server. This
+registry setting effects all sessions; not just ones from TN3270 emulators.
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : :2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249121/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249121/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249121/","publisher":null,"image":null,"headline":"Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249121-sms-commit-transaction-request-has-no-begin-transaction">Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249121
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbConfig kbDatabase kbMMC kbServer kbsms200 kbsms200bug kbStatSum kbsms200preSP3fix kbs
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following status message may appear sporadically in the Systems Management
+Server (SMS) site database at the central site in a large site hierarchy:
+
+  SMS_COMPONENT_STATUS_SUMMARIZER 620 Microsoft SQL Server reported SQL message
+  3902, severity 16: The COMMIT TRANSACTION request has no corresponding BEGIN
+  TRANSACTION. Please refer to your SMS documentation, SQL documentation, or
+  the Microsoft Knowledge Base for further troubleshooting information.
+
+Thousands of these messages may occur per day, and status summaries for site
+systems may be incomplete temporarily, depending on whether the table involved
+(Summarizers_Status) in the deadlock was updated in the last attempt.
+
+CAUSE
+=====
+
+A deadlock occurs between the Site System Status summarizer and the Component
+Status summarizer.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+
+
+WORKAROUND
+==========
+
+This condition does not necessarily cause issues with site functionality, but
+does cause a large number of status messages to be generated. To work around
+this behavior, use either of the following methods.
+
+Method 1
+--------
+
+Reduce the frequency of replication for the site system status from each of the
+child sites:
+
+1. In the Administrator console, for each site in your hierarchy, expand Site
+  Hierarchy, &lt;Site Name&gt;, Site Settings, and Status Summarizers.
+
+2. Right-click Site System Status Summarizer, and then click Properties.
+
+3. Click the Schedule button, and then assign a summarization schedule that
+  occurs less often than once an hour. For example, assign a summarization
+  schedule that occurs once every eight hours or once each day.
+
+4. Commit the changes.
+
+Method 2
+--------
+
+Prevent the status messages from being loaded in the site database or forwarded
+to the summarizers with a Status Filter rule:
+
+1. In the Administrator console, for each site where the error message is
+  reported, expand Site Hierarchy, &lt;Site Name&gt;, Site Settings, and Status
+  Filter Rules.
+
+2. Right-click the Status Filter Rules node, point to New, and then click Status
+  Filter Rule.
+
+3. Type a name for the Status Filter rule (for example, "Exclude
+  SMS_COMPONENT_STATUS_SUMMARIZER 620 Messages").
+
+4. Click to select the Message ID check box. Type "620" (without the quotation
+  marks) in the box to the right.
+
+5. Click the Action tab.
+
+6. Click the following options:
+
+   - "Do not forward to status summarizers"
+
+   - "Do not process lower-priority status filter rules"
+
+7. Click OK.
+
+8. Right-click the new Status Filter rule, point to All Tasks, and then click
+  Increment Priority. Repeat this step until the Status Filter rule appears at
+  the top of the list. This causes the rule to be processed first, discarding
+  any status messages with an ID of 620 before writing them to the database or
+  passing them on to the Component Status summarizer.
+
+NOTE: This procedure prevents all messages with an ID of 620 from being written
+to the database or tallied by the Component Status summarizer. Use caution when
+you configure Status Filter rules to exclude status messages because you may
+inadvertently exclude important information.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q264378 SMS: Site System Summarizer May Deadlock
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbDatabase kbMMC kbServer kbsms200 kbsms200bug kbStatSum kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

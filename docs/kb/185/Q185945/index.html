@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185945/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185945/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185945/","publisher":null,"image":null,"headline":"Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185945-av-in-win32khmmarkobjectdestroy-in-japanese-and-korean-winnt">Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185945
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Japanese or Korean versions of Windows NT 4.0, the system
+displays a blue screen error message. When you examine the call stack, you see
+an access violation in either of the following:
+
+  win32k!HMMarkObjectDestroy
+
+  win32k!HMAllocObject
+
+The blue screen error message would be displayed as a STOP 0x1E in Win32k.sys
+
+  STOP: 0x0000001E ( 0xC00000005, 0xA0036FC2, 0x00000000, 0x00000004)
+  K_MODE_EXCEPTION_NOT_HANDLED address 0xA0036FC2 in Win32K.sys
+
+CAUSE
+=====
+
+HMAllocObject() is not supposed to run in parallel, but it was being called
+simultaneously from multiple threads:
+
+HMAllocObject() &lt;- GetCPD() &lt;- _GetClassInfo() &lt;- NtUserGetClassInfo()
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+MORE INFORMATION
+================
+
+Two call stacks have been seen in stress testing, both of which are caused by
+the same problem.
+
+Stack for access violation in win32k!HMMarkObjectDestroy:
+
+  win32k!HMMarkObjectDestroy+0x17
+  win32k!HMDestroyUnlockedObject+0x88
+  win32k!DestroyThreadsObjects+0x85
+  win32k!xxxDestroyThreadInfo+0xbd
+  win32k!UserThreadCallout+0x58
+  win32k!W32pThreadCallout+0x1d
+  ntkrnlmp!PspExitThread+0x24f
+  ntkrnlmp!NtTerminateProcess+0x13c
+  ntkrnlmp!KiSystemService+0xc9
+  NTDLL!ZwTerminateProcess+0xb
+
+Stack for access violation in win32k!HMAllocObject:
+
+  febec540 a002c77f e13d9e88 ff6a6d28 00000001 win32k!HMAllocObject+0x1da
+  febec61c a002d3ee 00000000 febec674 febec680
+  win32k!xxxCreateWindowExWOW+0x111
+  febec6c0 8013bb59 80000000 febec674 febec680
+  win32k!NtUserCreateWindowEx+0x1aa
+  febec6c0 77eb0257 80000000 febec674 febec680
+  ntoskrnl!KiSystemService+0xb9
+  0012f864 77e77470 80000000 00144e98 00144e98 0x77eb0257
+
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

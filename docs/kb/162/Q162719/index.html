@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162719/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162719/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162719/","publisher":null,"image":null,"headline":"Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162719-howto-use-the-webbrowser-control-from-visual-basic-50">Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162719
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbcode kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Explorer 3.0 includes a custom ActiveX control called
+"WebBrowser." When you use WebBrowser in combination with Microsoft Visual Basic
+5.0, you can design powerful custom solutions that include Internet Web browsing
+features. This article illustrates how to use the WebBrowser control within
+Microsoft Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+The following example creates a mini-browser:
+
+1. Create a new Standard .exe project in Microsoft Visual Basic 5.0. Form1 is
+  added automatically.
+
+2. On the Project menu, click Components.
+
+3. Select the Microsoft Internet Controls component. Click OK.
+
+4. Add the following controls to Form1:
+
+  Control           Name
+  --------------    ---------
+  Text Box          Text1
+  Command Button    Command1
+  WebBrowser        WebBrowser1
+
+5. In Form1's code window, add the following code:
+
+       Option Explicit
+
+       Private Sub Command1_Click()
+           If Text1.Text &lt;&gt; "" Then
+               WebBrowser1.Navigate Text1.Text
+               If WebBrowser1.Visible = False Then
+                   WebBrowser1.Visible = True
+               End If
+           End If
+       End Sub
+
+       Private Sub Form_Load()
+           Me.Width = 5325
+           Me.Height = 5400
+           Me.Caption = "Mini browser"
+           With WebBrowser1
+               .Visible = False
+               .Width = 4575
+               .Height = 3375
+               .Top = 600
+               .Left = 240
+           End With
+           With Text1
+               .Top = 240
+               .Left = 1680
+               .Height = 285
+               .Width = 3135
+               .Text = "http://www.microsoft.com"
+           End With
+           With Command1
+               .Top = 120
+               .Left = 240
+               .Height = 375
+               .Width = 1215
+               .Caption = "Navigate"
+               .Default = True
+           End With
+       End Sub
+
+6. On the File menu, click Save Project1.
+
+7. On the Run menu, click Start.
+
+When you click Navigate, the WebBrowser appears and automatically loads the URL
+displayed in the TextBox.
+
+NOTE: Distribution of a Microsoft Visual Basic 5.0 application that uses the
+WebBrowser control requires that Microsoft Internet Explorer 3.0 (or later) be
+installed on the target system prior to installation.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q155969 : How To Distribute the WebBrowser Control
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

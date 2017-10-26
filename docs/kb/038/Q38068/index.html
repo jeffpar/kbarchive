@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38068: PRINT SCREEN (Hardware Interrupt 5) Fails If Printer Is Busy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38068: PRINT SCREEN (Hardware Interrupt 5) Fails If Printer Is Busy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38068/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38068/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38068/","publisher":null,"image":null,"headline":"Q38068: PRINT SCREEN (Hardware Interrupt 5) Fails If Printer Is Busy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38068-print-screen-hardware-interrupt-5-fails-if-printer-is-busy">Q38068: PRINT SCREEN (Hardware Interrupt 5) Fails If Printer Is Busy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38068
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 12-JAN-1990
+
+If the printer is busy (still working on a print job) when a hardware
+interrupt 5 (PRINT SCREEN) interrupt is issued (such as by pressing
+the SHIFT+PRINT SCREEN or PRINT SCREEN key), the interrupt will not
+dump the screen to the printer. The hardware interrupt 5 checks the
+printer status before continuing, and if the printer is busy, it
+aborts the screen dump.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler Versions 6.00 and 6.00b for
+MS-DOS, and to Microsoft BASIC PDS 7.00 for MS-DOS. It also applies to
+any language that supports hardware interrupt 5.
+
+If a program sends some information to the printer and then issues an
+interrupt 5 (through CALL INTERRUPT, or an assembly-language program),
+the screen dump may be skipped. If the printer has not finished
+printing the information sent prior to the interrupt 5 call, the
+printer will return "busy" when the print screen interrupt checks the
+printer status.
+
+This may not be a problem running on machines with slower clock speeds
+(4.77, 6 MHz, etc.), but the same code running on a faster machine
+(clock speed 10, 12, 16, 20 MHz, etc.) may fail because the processor
+of the computer may work faster than the printer does.
+
+To guarantee that the printer is not busy before doing a screen dump,
+you can check the printer status yourself. The printer status can be
+obtained by invoking interrupt 17 hex, function 2. The value returned
+in the AH register by this interrupt contains the following
+information corresponding to each bit:
+
+   Bit     Status
+   ---     ------
+
+   7       Printer NOT busy
+   6       Acknowledge
+   5       Out of paper
+   4       Printer selected
+   3       I/O error
+   2       Unused
+   1       Unused
+   0       Timed-out
+
+Below are two sample program listings, one for assembly language, and
+one for BASIC using the CALL INTERRUPT method, that return the printer
+status byte. If the status byte ANDed with 128 is 128, the printer is
+not busy; if it is 0, the printer is busy, and a screen dump at that
+point would fail. Program logic should loop, constantly checking the
+printer status, until the status (AND 128) is 128, and then perform
+the interrupt 5.
+
+For another sample BASIC program using this interrupt, query on the
+following:
+
+   time-out and printer and interrupt and 17 and function and 2
+
+Code Example
+------------
+
+   The assembly listing is as follows:
+
+; Assembled with Microsoft Macro Assembler (MASM) Version 5.x.
+.MODEL  medium
+.CODE
+        public PStat
+PStat   proc    far
+        mov ah, 2
+        mov     dx,0                    ;printer # 0
+        int     17h
+        mov al, ah
+        mov     ah,0                    ;one byte return value
+        ret
+PStat endp
+END
+
+   The BASIC listing is as follows:
+
+REM $INCLUDE: 'QB.BI'
+REM For PDS 7.00, you must include QBX.BI
+FUNCTION PStat% STATIC
+  DIM Regs AS RegType
+  Regs.AX = &amp;H200
+  Regs.DX = 0                           'printer # 0
+  CALL INTERRUPT(&amp;H17, Regs, Regs)
+  PStat% = Regs.AX \ 256                'status = AH
+END FUNCTION
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

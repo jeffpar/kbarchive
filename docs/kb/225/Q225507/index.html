@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q225507: SMS: Windows Management Service Keeps High Processor Utilization | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q225507: SMS: Windows Management Service Keeps High Processor Utilization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/225/Q225507/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/225/Q225507/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/225/Q225507/","publisher":null,"image":null,"headline":"Q225507: SMS: Windows Management Service Keeps High Processor Utilization","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q225507-sms-windows-management-service-keeps-high-processor-utilization">Q225507: SMS: Windows Management Service Keeps High Processor Utilization</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q225507
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After enabling Hardware Inventory on Systems Management Server with clients that
+have multiple network providers, the Windows Management Instrumentation (WMI)
+service may exhibit high processor usage, which can substantially affect
+performance of the client system.
+
+You may also see large temporary inventory files in the \Ms\Sms\Clicomp\Hinv
+folder on the client computer.
+
+Upon examining the hardware inventory agent log (%windir%\Ms\Sms\Logs\Hinv32.log)
+it is observed that the agent times out while attempting to enumerate the
+Win32_NetworkClient class:
+
+  ...
+
+  CLASS - Process Class: Win32_NetworkAdapterConfiguration  	Hardware Inventory Agent	4/2/99 12:01:35 AM	182 (0xB6)	
+  CLASS - Process Class: Win32_NetworkClient  	Hardware Inventory Agent	4/2/99 12:01:36 AM	182 (0xB6)	
+  INSTANCE WARNING - Enumeration Timeout  	Hardware Inventory Agent	4/2/99 1:01:37 AM	182 (0xB6)	
+  CLASS - Process Class: Win32_OperatingSystem  	Hardware Inventory Agent	4/2/99 1:01:37 AM	182 (0xB6)	
+  ...
+
+When the Systems Management Server 2.0 client runs hardware inventory and uses
+the CPU for a long period of time, the computer will appear to have stopped
+responding and/or will send up a huge badmif. The enumeration of the
+Win32_NetworkClient class can be disabled by modifying the Sms_def.mof file. To
+prevent this problem, set reporting for the Win32_NetworkClient class to false
+in the site's Sms_def.mof file. For more information on the procedure to do
+this, please refer to Chapter 10 of the Systems Management Server
+Administrator's Guide.
+
+
+CAUSE
+=====
+
+The hardware inventory agent uses the Sms_def.mof file to determine which
+classes it will attempt to enumerate from WMI. When enumerating the
+Win32_NetworkClient class from WMI, the Windows Management service processor
+usage raises substantially and continues to maintain high usage. WMI never
+returns the requested values for the Win32_NetworkClient class back to the
+hardware inventory agent, which then will time out one hour after making the
+request to WMI and logs the error indicated above. This problem is typically
+caused because the hinv process gets hung up trying to detect a third-party
+network redirector, such as Novell Intranetware client, IBM Client Access
+client, or Hummingbird client and Lanworks client.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server 2.0. For additional information, click the following article number to
+view the article in the Microsoft Knowledge Base:
+
+  Q236325 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Systems Management Server 2.0.
+This problem was first corrected in Systems Management Server 2.0 Service Pack
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+You can use the following registry key to determine which providers and how many
+providers are installed on a given computer:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Lanmanworkstation\Networkprovider
+
+NOTE: Client computers running Windows 95 or Windows 98 continually run WinMgmt
+to be accessible remotely. This is not the case with Windows NT clients, where
+the WinMgmt service is set to Manual and is started on demand (for example, when
+hardware inventory is started or when WMI is accessed remotely).
+
+Additional query words: prodsms winmgmt hang hung hangs freeze lock up win9x win95 win98 winnt hinv
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

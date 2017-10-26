@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132331/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132331/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132331/","publisher":null,"image":null,"headline":"Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132331-prb-null-values-disappear-when-selected-in-a-grid-or-browse">Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132331
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The text string ".NULL." for null values disappears when the field is selected.
+When you move out of the field, ".NULL." reappears. This is by design.
+
+
+RESOLUTION
+==========
+
+To display a text string ".NULL." for the currently selected field, create a
+column class that displays a label with the text string ".NULL." via the
+column's DynamicCurrentControl property. Copy the following code into
+TESTNULL.PRG, and then run it. You will see a grid with one column and 10 rows.
+Some of the rows contain numeric values, and some contain ".NULL." as a text
+string. Press DOWN ARROW to move through the records, note that the text string
+value of ".NULL." is displayed when the pointer is on a record that contains a
+null value.
+
+    PUBLIC oForm
+    oForm = CREATEOBJECT('myform')
+    oForm.SHOW
+
+    DEFINE CLASS mytextbox AS textbox
+       SpecialEffect = 1
+       BorderStyle = 0
+       FontBold = .F.
+
+       PROCEDURE keypress
+       LPARAMETERS nKeyCode, nShiftAltCtrl
+
+         IF nKeyCode = 48
+           REPLACE testnull.name WITH .NULL.
+           This.Value = ".NULL."
+           NODEFAULT
+         ENDIF
+       ENDPROC
+    ENDDEFINE
+
+    DEFINE CLASS mytextbox1 AS mytextbox
+       ControlSource = "testnull.name"
+    ENDDEFINE
+
+    DEFINE CLASS mytextbox2 AS mytextbox
+       ControlSource = "This.Value"
+       Value = ".NULL."
+
+       PROCEDURE gotfocus
+          This.Value = ".NULL."
+       ENDPROC
+
+       PROCEDURE lostfocus
+          IF This.Value &lt;&gt; ".NULL."
+             REPLACE testnull.name WITH This.Value
+          ENDIF
+       ENDPROC
+    ENDDEFINE
+
+    DEFINE CLASS mycolumn AS column
+       DynamicCurrentControl = "IIF(ISNULL(testnull.name),'text2', 'text1')"
+       Sparse = .f.
+       Bound = .f.
+
+       ADD OBJECT text1 AS mytextbox1
+       ADD OBJECT text2 AS mytextbox2
+    ENDDEFINE
+
+    DEFINE CLASS mygrid AS grid
+       RecordSource = ALIAS()
+       ADD OBJECT c1 AS mycolumn
+    ENDDEFINE
+
+    DEFINE CLASS myform AS form
+       ADD OBJECT g1 AS mygrid
+
+       PROCEDURE load
+          DELETE FILE testnull.dbf
+          CREATE TABLE testnull (name c(10) NULL)
+
+          FOR cnt = 1 to 10
+            APPEND BLANK
+            REPLACE name WITH IIF(MOD(RAND()*100, 2) &gt;=1, SYS(3), .NULL.)
+          ENDFOR
+          GO TOP
+       ENDPROC
+
+       PROCEDURE unload
+          CLOSE DATA ALL
+       ENDPROC
+    ENDDEFINE
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To see the behavior described above, run the following code in the Command
+window:
+
+     CREATE TABLE test (name C(10) NULL)
+     APPEND BLANK
+     REPLACE name WITH "Harry"
+     APPEND BLANK
+     REPLACE name WITH .NULL.
+     BROWSE
+
+The currently selected field has no text in it. Press the UP ARROW key or click
+in record 1. Record 2 now displays the ".NULL." text string.
+
+Additional query words: VFoxWin browse
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

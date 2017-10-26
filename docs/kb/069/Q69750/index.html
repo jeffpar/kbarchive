@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69750/","publisher":null,"image":null,"headline":"Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69750-changing-pwb-build-from-com-to-exe-causes-file-conflict">Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69750
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0,1.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under MS-DOS, the Programmer's WorkBench (PWB) will allow the build target for a
+project to be a .COM file or a .EXE file. If you are in the middle of a project
+and you switch the build options from one of these file types to the other, the
+previously built files may cause unexpected results when you try to run or debug
+the program.
+
+This problem is the result of the ordering in which MS-DOS invokes files, and not
+a problem with PWB. If a filename is entered at the MS-DOS command prompt,
+MS-DOS first looks for a file with a .COM extension. If no .COM file is found,
+then DOS searches for a .EXE file. Therefore, if both a .COM and a .EXE file
+with the same base name (for example, PROJ.COM and PROJ.EXE) appear in the same
+directory, MS-DOS will always invoke the .COM version (even if the .EXE
+extension is explicitly specified).
+
+MORE INFORMATION
+================
+
+Within PWB, a request to run your program causes the entire filename to be
+passed to MS-DOS for execution, but MS-DOS prevents an .EXE from overriding a
+.COM file of the same name. So, if you start a project with the target as a .COM
+file and later switch it to an .EXE, then the existing .COM file always
+supersedes the new .EXE and is unexpectedly run whenever you try to execute the
+program.
+
+The only way to ensure that you are dealing with the correct .EXE file is to
+delete the previous .COM file that you are no longer trying to build.
+
+It should also be noted that if you invoke CodeView from inside PWB, PWB will
+pass the correct filename (.COM or .EXE) to CodeView, but outside of PWB, the
+reverse of the above situation may exist. This results from the fact that
+CodeView always assumes that the file you specify to debug is an .EXE, unless
+the .COM extension is explicitly specified on the CodeView command line. Thus,
+if you switch your project from an .EXE to a .COM and both files exist in the
+current directory, the .EXE will be inadvertently brought up in CodeView when
+you invoke the debugger from the MS-DOS prompt if you forget to include the .COM
+extension.
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS
+Version           : MS-DOS:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

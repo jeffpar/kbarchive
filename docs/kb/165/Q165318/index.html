@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165318/","publisher":null,"image":null,"headline":"Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165318-trio-64-display-adapter-error-due-to-idis_ntdll">Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165318
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbdisplay kbsetup
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade Windows NT 3.51 (that has the SMS 1.2 Remote Control client
+enabled) and the system uses a S3 Trio 64 Video adapter, the following
+configuration error is displayed on the initial log on attempt:
+
+  Invalid Display Settings
+
+NOTE: Testing shows this to be a problem with the S3 Trio 64 and not with other
+S3 compatible display adapters.
+
+The currently selected graphics display driver cannot be used. It was written for
+a previous version of Windows NT, and is no longer compatible with the current
+version of Windows NT.
+
+The system has been started using the default VGA driver.
+
+Please contact your hardware manufacture to get an upgraded driver, or select one
+of the Microsoft provided drivers.
+
+CAUSE
+=====
+
+The cause of the error is due to the IDIS_NT.DLL driver used by SMS 1.2 for the
+Remote Control of Windows NT 3.51 systems. Under Windows NT 4.0 the DLL is not
+needed and is not removed on the upgrade.
+
+IDIS_NT driver can be located in the following registry location:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\S3\Device0
+
+Value: InstalledDisplayDrivers REG_MULTI_SZ: IDIS_NT S3
+
+RESOLUTION
+==========
+
+Automated workaround
+--------------------
+
+The following REGEDIT script can be run during the upgrade process to rewrite the
+registry to remove the IDIS_NT.DLL driver. Copy the information starting with
+REGEDIT4 to the ,00 and save to a file as S3.REG. Place the S3.REG file in the
+Windows NT distribution share.
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\s3\Device0]
+"InstalledDisplayDrivers"=hex(7):73,33,00,00
+
+The script is run towards the end of GUI mode setup just prior to final save
+configuration.
+
+The following step-by-step instructions will ensure proper removal of the IDIS_NT
+driver. The following solution assumes Z:\ is mapped to the root of the Windows
+NT distribution share for the example.
+
+Create the following batch job to start installation process and place in the
+Windows NT distribuition share.
+
+MKDIR C:\S3
+XCOPY Z:\S3.REG C:\S3
+XCOPY Z:\REGEDIT.EXE C:\S3
+WINNT32 /B /S:Z:\ /E:"C:\S3\REGEDIT.EXE /S C:\S3.REG"
+
+The /E: option is used to execute an external program that is not part of the
+normal Windows NT installation process.
+
+Manual Workaround
+-----------------
+
+The registry entry can be manually updated prior to upgrade using Registry Editor
+(REGEDT32.EXE) from Windows NT 3.51.
+
+1. Start Registry Editor (REGEDIT32.EXE) and select the following subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\S3\Device0
+
+2. Double-click on InstalledDisplayDrivers.
+
+3. Remove any reference to IDIS_NT.
+
+4. Quit Registry Editor.
+
+5. Upgrade the system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0 and SMS
+1.2. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: unattended
+======================================================================
+Keywords          : kbdisplay kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

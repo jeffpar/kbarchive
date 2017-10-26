@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154531: XADM: Moving the KM Server to Another Server in the Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154531: XADM: Moving the KM Server to Another Server in the Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154531/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154531/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154531/","publisher":null,"image":null,"headline":"Q154531: XADM: Moving the KM Server to Another Server in the Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154531-xadm-moving-the-km-server-to-another-server-in-the-site">Q154531: XADM: Moving the KM Server to Another Server in the Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154531
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 02-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Chapter 6 of the Microsoft Exchange Administrator's Guide there are
+documented procedures to move the Key Management Server to another server in the
+same site. The directions in this section are misleading and could lead to
+difficulties in moving the Key Management server. In particular, the
+"Administrator's Guide" makes no mention of needing the ORGINAL Key Management
+server disk that was created on installation for this process to succeed.
+
+MORE INFORMATION
+================
+
+Here are the revised instructions for moving an existing Key Management server
+to another server in the same site:
+
+It is recommended that you DO NOT move the Key Management server from one
+Microsoft Exchange Server computer to another because of the critical
+information kept in the Key Management database. There is, however, a mechanism
+for moving the Key Management server if the need arises.
+
+1. Back up the advanced security data on the Microsoft Exchange Server computer
+  that hosts the Key Management server. See "Backing Up and Restoring Advanced
+  Security Data" in the Microsoft "Administrator's Guide," Chapter 6.
+
+2. Use the Services option in Control Panel to stop the Microsoft Key Management
+  Service.
+
+3. Run the Key Management server Setup program and select the REMOVE ALL option.
+  This will rename your Security directory to Security.bak and remove the Key
+  Management server components.
+
+4. Go to the Microsoft Exchange Server that will now host the Key Management
+  server.
+
+5. Run the Key Management server Setup program, which is on the Microsoft
+  Exchange Server compact disc in the EXCHKey Management directory.
+
+6. Use the Services option in Control Panel to stop the Microsoft Key Management
+  Service.
+
+7. Restore the advanced security data on the server where you ran the Key
+  Management server. See "Backing Up and Restoring Advanced Security Data" in
+  the Microsoft "Administrator's Guide," Chapter 6.
+
+8. Place the ORIGINAL Key Management server disk (from the original install of
+  the Key Management server) into drive A and start the Key Management server
+  service.
+
+9. After allowing for replication to occur within your organization (this could
+  take several hours depending on your topology), run the Key Management server
+  setup program on each of the other sites in your organization.
+
+The original Key Management disk is needed because it contains the 64-bit
+encryption key for the database. Because the data that is being moved was
+created with this key, it needs to be present to issue and revoke certificates
+on the new location. If this disk is not used, new tokens will need to be issued
+for all users in the organization.
+
+STATUS
+======
+
+This process is by design; future versions of the Microsoft Exchange
+Administrator's Guide will be updated to reflect the above instructions. It is
+highly recommended that the disk that is created during the Key Management
+server Setup be backed up and kept in a secure place in the event that the
+original is lost or damaged.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

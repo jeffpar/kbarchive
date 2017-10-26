@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312891: HOW TO: Synchronize a Computer Database with Pocket Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312891: HOW TO: Synchronize a Computer Database with Pocket Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312891/","publisher":null,"image":null,"headline":"Q312891: HOW TO: Synchronize a Computer Database with Pocket Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312891-how-to-synchronize-a-computer-database-with-pocket-access">Q312891: HOW TO: Synchronize a Computer Database with Pocket Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312891
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 
+Operating System(s): 
+Keyword(s): kbtool kbAudITPro kbHOWTOmaster
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 2000 
+- Microsoft Access 2002 
+- Microsoft Pocket PC 2002 
+-------------------------------------------------------------------------------
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Synchronize a Desktop Computer Database to a Pocket PC Device
+- Troubleshooting
+
+SUMMARY
+=======
+
+This step-by-step article describes how to synchronize a computer database with
+Microsoft Pocket Access on a Pocket PC. Pocket Access is a Pocket PC program you
+can use to create and access databases. You can synchronize Pocket Access
+databases on a Pocket PC with Microsoft Access databases on a computer.
+
+Databases can be synchronized between your Pocket PC and desktop computer by
+using Microsoft ActiveSync. Note that by default, the synchronization of
+databases is not enabled. However, it is fairly simple to synchronize a database
+on your computer to a Pocket PC device.
+
+Synchronize a Desktop Computer Database to a Pocket PC Device
+-------------------------------------------------------------
+
+1. Connect the Pocket PC to the desktop computer, and then start ActiveSync.
+
+2. In ActiveSync, click Options on the Tools menu.
+
+3. In the list of mobile devices, click Pocket Access.
+
+4. Click OK. ActiveSync synchronizes information and configures the Pocket PC to
+  accept databases.
+
+5. On the Tools menu, click Options.
+
+6. Click Pocket Access, and then click Settings to view the Database
+  Synchronization Settings dialog box.
+
+7. Click Add to view the Open dialog box. Note that by default, only Microsoft
+  Access databases are listed in the Open dialog box, but you can browse for
+  any other type of ODBC database by clicking the ODBC option in the "Files of
+  Type" box.
+
+8. Find the database on the computer that you want to synchronize, and then
+  click OK to view the "Import from Database to Mobile Device" dialog box.
+
+9. Type a location and file name for the database on your Pocket PC in the "Copy
+  the *.CDB file to this location on your device" box.
+
+10. Use the tree-view of the database to select specific tables and fields to
+  include in the synchronization.
+
+11. Use the "Keep tables synchronized" option if you want to maintain automatic
+  synchronization of the desktop computer and Pocket PC databases.
+
+12. Use the "Overwrite existing tables and/or data" option if you want to copy
+  over existing database information on the Pocket PC.
+
+13. Click OK.
+
+14. ActiveSync copies the database file to the device, and then returns you to
+  the Database Synchronization Settings dialog box.
+
+Troubleshooting
+---------------
+
+Only tables, fields, and indexes are synchronized to the Pocket PC. Also, only
+65,536 records may be synchronized to a Pocket Access database.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbAudDeveloper kbAccessSearch kbAccess2000 kbAccess2002 kbAccess2000Search kbAccess2002Search kbPocketPC2002
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

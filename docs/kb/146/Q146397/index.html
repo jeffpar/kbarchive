@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146397/","publisher":null,"image":null,"headline":"Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146397-xcon-large-number-of-messages-with-receipts-can-stay-in-mta">Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146397
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may find that a large number of messages with Read receipts and Delivery
+receipts destined to go out the Microsoft Exchange Server version 4.0 Internet
+Mail Connector (IMC), or Microsoft Exchange Server version 5.0 Internet Mail
+Service (IMS), slow down or halt the Microsoft Exchange Server Message Transfer
+Agent (MTA).
+
+If you stop and restart the MTA and IMC (or IMS), a few messages will be
+delivered. From that point onward, delivery may be very slow or halted outright.
+Symptoms can also include messages placed in the BAD queue.
+
+CAUSE
+=====
+
+This is caused by a corrupted application protocol data unit (APDU) received
+from the MTA.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange versions 4.0
+and 5.0.
+
+For Microsoft Exchange Server version 4.0, this has been fixed in MTA build
+996.25. Please contact Microsoft Technical Support for information on the
+availability of this fix.
+
+This problem was corrected in the latest Microsoft Exchange Server 5.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+To install the fix for Microsoft Exchange Server version 4.0:
+
+1. Get the appropriate file from Microsoft Technical Support and unzip it. There
+  is no password on these files.
+
+2. Install the new MTA by running the following command on the Microsoft
+  Exchange Server computer:
+
+  hotfix /i
+
+  The retail symbols (BDB files, but renamed to DBG) are included. You will need
+  to install these manually into your Symbols directory.
+
+Please note that this is also a problem on other platforms and localized
+versions. If you need an Alpha version of the MTA (or a different localized
+version), please contact Microsoft Technical Support.
+
+How to find the MTA build number from the Event Logs:
+
+The MTA automatically logs its build number in the NT Application Event Log when
+the service is started. This information is written to Event ID 9298 and looks
+similar to the following:
+
+Event ID:    9298
+Source:      MSExchangeMTA
+Type:        Information
+Category:    X.400 Service
+Description:
+Microsoft Exchange Server MTA Service startup complete, version 4 (build
+995.54).
+[BASE IL MAIN BASE 46 490] (14)
+
+This entry corresponds to the Microsoft Exchange Server version 4.0 Service Pack
+4 MTA.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316914/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316914/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316914/","publisher":null,"image":null,"headline":"Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316914-bug-menu-generated-with-skip-for-that-contains-f-is-missing-s">Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q316914
+Product(s): Microsoft FoxPro
+Version(s): 7.0,7.0 SP1
+Operating System(s): 
+Keyword(s): kbBuilder kbXBase kbGrpDSFox kbCodeSnippet
+Last Modified: 19-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 7.0, 7.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Menu Designer to create a menu (.mpr) file that has one or more
+SKIP FOR expressions that contain a .F., and you generate the menu, the .mpr
+file does not contain the correct SKIP FOR clause, and you receive the following
+error message:
+
+  Function argument value, type, or count is invalid
+
+CAUSE
+=====
+
+A SKIP FOR expression contains a .F. before the first space in the expression.
+
+RESOLUTION
+==========
+
+To resolve this program, make sure that the string contains a space before the
+first .F.
+To do this, follow these steps:
+
+1. Paste the following code in a program (.prg) file, and then run the program
+  from the Command window to update the menu generator program:
+
+  NOTE:The menu generator is contained in a program file named Genmenu.prg,
+  which is located in the Visual FoxPro home directory.
+
+  LOCAL lcGenMenu, lcOldText, lcNewText, lcFileText, ;
+  	lnStartFileSize, lcSafety  
+  * Get the file name.
+  lcGenMenu = HOME()+'genmenu.prg'
+  IF NOT FILE(lcGenMenu)
+  	MESSAGEBOX('File '+ lcGenMenu + ' does not exist.')
+  	RETURN 
+  ENDIF 
+  * Make a backup.
+  COPY FILE (lcGenMenu) TO (ADDBS(JUSTPATH(lcGenMenu))+ ;
+  	JUSTSTEM(lcGenMenu)+'backup_for_q316914.prg')
+
+  * Store the original text.
+  lcOldText = [   IF ATC(".F.",GETWORDNUM(m.skip,1)) # 0]
+
+  * Store the replacement text.
+  TEXT TO lcNewText NOSHOW 
+     lcWord1 = UPPER(GETWORDNUM(ALLTRIM(m.skip),1))
+     lcWord2 = UPPER(GETWORDNUM(ALLTRIM(m.skip),2))
+     IF lcWord1==".F." AND !EMPTY(lcWord2) AND !INLIST(lcWord2,"AND",".AND.","OR",".OR.")
+  ENDTEXT
+
+  * Store the genmenu contents in a string variable.
+  lcFileText = FILETOSTR(lcGenMenu)
+  * Store the original length for later comparison.
+  lnStartFileSize = LEN(lcFileText)
+  * Replace the original string with the new string.
+  lcFileText = STRTRAN(lcFileText,lcOldText,lcNewText) 
+  * Write back to the file when you are finished.
+  IF (LEN(lcFileText)- lnStartFileSize) = ;
+  		(LEN(lcNewText) - LEN(lcOldText))
+  	lcSafety = SET('safety')
+  	SET SAFETY OFF 
+  	=STRTOFILE(lcFileText, lcGenMenu,0) 
+  	SET SAFETY &amp;lcSafety 
+  	MESSAGEBOX("Patch successfully applied!",48)
+  ELSE 
+  	MESSAGEBOX("Patch NOT successfully applied, ;
+  original file unchanged!",16)
+  ENDIF 
+  RETURN 
+
+2. Generate the menu again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows, versions 7.0, 7.0 SP1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. To create a new menu, run the following code from the Command window:
+
+  CREATE MENU MENUTEST
+
+2. In the New Menu dialog box, click Menu.
+
+3. Under Prompt, type "Test" (without the quotation marks), and then click
+  Command in the Result list.
+
+4. Type "?"test"" (without the quotation marks) in the Command text box.
+
+5. Click Options, and then paste the following text in the Skip For text box:
+
+  lnTest1=.F. and lnTest2=.T.
+
+6. Click OK.
+
+7. On the Menu menu, click Generate.
+
+8. To open the .mpr file, run the following code from the Command window:
+
+  MODIFY COMMAND MENUTEST.MPR
+
+9. Examine the DEFINE PAD command in the .mpr file, and observe that it contains
+  the following:
+
+  DEFINE PAD _0l10tlzkl OF _MSYSMENU PROMPT "test" COLOR SCHEME 3 ;
+  	KEY ALT+T, "" ;
+  	and lnTest2=.T.
+
+10. Run the .mpr file, and note that you receive the error message that is
+  described in the "Symptoms" section. Also note that the SKIP FOR clause is
+  omitted, and all of the characters before and including the first .F. are
+  omitted.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbBuilder kbXBase kbGrpDSFox kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700 kbVFP700SP1
+Version           : :7.0,7.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

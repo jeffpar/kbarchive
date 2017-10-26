@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97447: NETLOGON Fails with Valid Directory, Correct Permissions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97447: NETLOGON Fails with Valid Directory, Correct Permissions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97447/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97447/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97447/","publisher":null,"image":null,"headline":"Q97447: NETLOGON Fails with Valid Directory, Correct Permissions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97447-netlogon-fails-with-valid-directory-correct-permissions">Q97447: NETLOGON Fails with Valid Directory, Correct Permissions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97447
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+NETLOGON can sometimes fail to load, even though the path specified for scripts
+points to a valid directory, permissions are correctly set, and there are no bad
+disk sectors. It fails because the userpath must have a directory under it
+called scripts.
+
+SYMPTOMS
+========
+
+When the primary domain controller tries to load the NETLOGON service, it causes
+error NET3056, followed by a message that the path specified in the userpath or
+scripts does not match (NET5600).
+
+During a boot, if you try to start the Server service and NETLOGON fails, then
+Server fails also. Trying to start NETLOGON first brings up a message that the
+Server is not started and a prompt to enter (Y/N) for starting it. If you enter
+Y, Server service starts but NETLOGON continues to fail.
+
+This problem has been reported when the path specified for scripts in the
+LANMAN.INI file points to a valid directory with proper permissions according to
+the manual, and when CHKDSK does not locate any bad disk sections.
+
+CAUSE
+=====
+
+The path specified in userpath must have a directory under it called "scripts,"
+or NETLOGON will not start.
+
+RESOLUTION
+==========
+
+Create the necessary subdirectory. For example, if
+
+  userpath = accounts\users
+
+then you must create a subdirectory called
+
+  &lt;lanroot&gt;\accounts\users\scripts
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2 3056 5600
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

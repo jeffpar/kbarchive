@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28249: How to Derive Inverse (ARC) and Hyperbolic Trig Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28249: How to Derive Inverse (ARC) and Hyperbolic Trig Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28249/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28249/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28249/","publisher":null,"image":null,"headline":"Q28249: How to Derive Inverse (ARC) and Hyperbolic Trig Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28249-how-to-derive-inverse-arc-and-hyperbolic-trig-functions">Q28249: How to Derive Inverse (ARC) and Hyperbolic Trig Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28249
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom B_GWBasicI B_BasicInt B_MQuickB B_BBasic | mspl13_basic
+Last Modified: 10-JAN-1991
+
+From the BASIC functions LOG, COS, SIN, TAN, SGN, EXP, and SQR, you
+can derive the other transcendental functions as shown below.
+
+The following trigonometric and mathematical functions that are not
+intrinsic to BASIC can be calculated as shown:
+
+Function                  BASIC Equivalent
+--------                  ----------------
+
+Secant                    SEC(X) = 1/COS(X)
+Cosecant                  CSC(X) = 1/SIN(X)
+Cotangent                 COT(X) = 1/TAN(X)
+Inverse Sine              ARCSIN(X) = ATN(X/SQR(1-X*X))
+Inverse Cosine            ARCCOS(X) = -ATN(X/SQR(X*X-1)) + Pi/2
+Inverse Secant            ARCSEC(X) = ATN(X/SQR(X*X-1)) + (SGN(X)-1) * Pi/2
+Inverse Cosecant          ARCCSC(X) = ATN(1/SQR(X*X-1)) + (SGN(X)-1) * Pi/2
+Inverse Cotangent         ARCCOT(X) = -ATN(X) + Pi/2
+Hyperbolic Sine           SINH(X) = (EXP(X) - EXP(-X))/2
+Hyperbolic Cosine         CACHE(X) = (EXP(X) + EXP(-X))/2
+Hyperbolic Tangent        TANH(X) = (EXP(X) - EXP(-X))/(EXP(X) + EXP(-X))
+Hyperbolic Secant         SECH(X) = 2/(EXP(X) + EXP(-X))
+Hyperbolic Cosecant       CSCH(X) = 2/(EXP(X) - EXP(-X))
+Hyperbolic Cotangent      COTH(X) = EXP(-X)/(EXP(X) - EXP(-X)) * 2 + 1
+Inverse Hyperbolic Sine   ARCSINH(X) = LOG(X + SQR(X*X+1))
+Inverse Hyperbolic Cos    ARCCOSH(X) = LOG(X + SQR(X*X-1))
+Inverse Hyperbolic Tan    ARCCTANH(X) = LOG((1 + X)/(1 - X)) / 2
+Inverse Hyperbolic CSC    ARCCSCH(X) = LOG((SGN(X)*SQR(X*X+1)+1)/X)
+Inverse Hyperbolic Sec    ARCSECH(X) = LOG((SQR(1-X*X)+1) / X)
+Inverse Hyperbolic Cot    ARCCOTH(X) = LOG((X+1)/(X-1)) / 2
+
+The above general formulas may be used in Microsoft BASIC or any other
+language. Note that the constant Pi has the following approximate
+value:
+
+   Pi# = 3.14159265359
+   Pi# = 4.0# * ATN(1.0#)
+
+The above information applies to most Microsoft BASIC products,
+including the following:
+
+1. Microsoft QuickBASIC versions 1.00, 1.01, 1.02, 2.00, 2.01,
+   3.00, 4.00, 4.00b, and 4.50 for the IBM PC
+
+2. Microsoft BASIC Compiler versions 6.00 and 6.00b for MS-DOS and
+   MS OS/2, and Microsoft BASIC Compiler versions 5.35 and 5.36 for
+   MS-DOS
+
+3. Microsoft GW-BASIC Interpreter versions 3.20, 3.22, and 3.23
+
+4. Microsoft BASIC Interpreter versions 1.00, 1.01, 2.00, 2.10,
+   and 3.00 for the Apple Macintosh
+
+5. Microsoft BASIC Compiler version 1.00 for the Apple Macintosh
+
+6. Microsoft QuickBASIC version 1.00 for the Apple Macintosh
+
+7. Microsoft BASIC Professional Development System (PDS) versions 7.00
+   and 7.10 for MS-DOS and MS OS/2
+
+8. Microsoft Business BASIC Compiler versions 1.00 and 1.10 for MS-DOS
+   (discontinued product)
+
+9. Microsoft BASIC Interpreter (BASIC86.EXE) version 5.28 for MS-DOS
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

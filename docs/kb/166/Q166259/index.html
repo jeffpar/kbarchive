@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166259/","publisher":null,"image":null,"headline":"Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166259-info-visual-interdevvisual-sourcesafe-integration-discussion">Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166259
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:1.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbSSafe500 kbSSafe600 kbVisID100 kbFAQ kbDSupport kbSsafe600FAQ
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft Visual InterDev, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual Studio contains a number of source code control operations on
+the Project/Source Control menu. These operations do not have any effect on a
+Visual InterDev project.
+
+In Visual C++, Visual J++, and other Visual Studio projects, source code control
+is a client-side issue. Any source control operations are performed on a source
+code database stored either on the client computer or on a computer with a LAN
+connection to the client. To support projects that use this type of connection,
+the Project\Source Control menu is used, and the source code client lives on the
+client computer.
+
+Unlike the cases above, however, it is possible that the Visual InterDev project
+can be stored on the other side of a firewall, on some location where a LAN
+connection cannot be made. This requires the source code control database to
+likewise be behind the firewall, to ensure the security of the project database.
+Visual InterDev uses FrontPage Server Extensions to access the Web Server for
+this robustness, therefore Visual SourceSafe and Visual InterDev integration is
+done via the FrontPage Server Extensions.
+
+This requires Visual InterDev to use a different model for source code control
+than the other Visual Studio projects. As a result, the options on the
+Project\Source control menu do not work against a Visual InterDev project. To
+differentiate the client-side source control model of other Visual Studio
+projects from the server-side source control of Visual InterDev projects,
+different terminology is used for these operations. These options are available
+by right-clicking any file in the Visual InterDev project window.
+
+In Visual InterDev, a "Get Working Copy" operation on a file retrieves the file,
+and performs the server-side "check-out" action if the project is under source
+control. "Release Working Copy" removes the file from the local drive and checks
+in the file to the server. And "Discard Changes" performs the equivalent of an
+undo checkout.
+
+To use source code control in Visual InterDev, always use the Visual InterDev
+server-side commands (accessed by right-clicking the files in the project pane).
+The client-side commands available on the Project\Source Control menu do not
+work with the server-side source control databases required by Visual InterDev.
+
+MORE INFORMATION
+================
+
+If you need to access any of the higher-level source control functionality on
+the web server, then you need to access the source control server directly,
+either on the server or on a computer connected to the server through a LAN
+connection. When you are using Microsoft Visual SourceSafe, for example, you can
+view the history information by running the Visual SourceSafe client on the
+server computer. Likewise, the rolling back of changes, Visual SourceSafe
+administration, and other source control tasks can be performed in this way.
+However, note that if you use this approach, you have to ensure that you move
+the changes you make directly to the Visual SourceSafe database to the server
+directory that stores your web in order to keep the Visual SourceSafe database
+and your web site in sync.
+
+REFERENCES
+==========
+
+To setup up Visual SourceSafe on your web server, consult the Visual InterDev
+user's guide for the chapter "Using Visual SourceSafe with your web."
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q128723 HOWTO: Reference a Time on the Command Line
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbSSafe500 kbSSafe600 kbVisID100 kbFAQ kbDSupport kbSsafe600FAQ 
+Technology        : kbVisIDsearch kbSSafeSearch kbAudDeveloper kbVisID100 kbSSafe600 kbSSafe500
+Version           : WINDOWS:1.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

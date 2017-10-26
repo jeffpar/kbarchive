@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130224: PRB: Cannot Pass an Array Member to a Procedure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130224: PRB: Cannot Pass an Array Member to a Procedure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130224/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130224/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130224/","publisher":null,"image":null,"headline":"Q130224: PRB: Cannot Pass an Array Member to a Procedure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130224-prb-cannot-pass-an-array-member-to-a-procedure">Q130224: PRB: Cannot Pass an Array Member to a Procedure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130224
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An array that is declared as a member of a class cannot be passed by reference
+to a function or a method. For example, if you declare an array as a property of
+a form, the error "Alias 'this' is not found" is displayed when a method is
+called as follows:
+
+     This.pNewFunction(@this.atest)
+
+CAUSE
+=====
+
+Visual FoxPro always passes object properties by value. Object properties cannot
+be passed by reference.
+
+WORKAROUND
+==========
+
+An alternative is to pass the array name to a method, and manipulate the array
+or a copy of the array. The following example code defines a form with a command
+button. When the command button is clicked, a function is called that adds 10 to
+each element of an array declared as a property of the command button. The same
+method can be used in the Form Designer.
+
+Sample Code
+-----------
+
+  PUBLIC oform
+
+  oform=CREATEOBJECT('frmtest')
+  oform.Show
+
+  DEFINE CLASS  frmtest AS FORM
+     ADD OBJECT cmd1 AS cmd
+  ENDDEFINE
+
+  DEFINE CLASS cmd AS COMMANDBUTTON
+  DIMENSION aprop[10]
+  PROCEDURE init
+     LOCAL ii
+     FOR ii = 1 TO 10
+        This.aprop[ii]=ii
+     ENDFOR
+  ENDPROC
+
+  PROCEDURE click
+     LOCAL ii
+     THIS.ADDEM(This, 'aprop')
+     ACTIVATE SCREEN
+     FOR ii =1 TO 10
+        ?This.aprop[ii]
+     ENDFOR
+  ENDPROC
+
+  * Two parameters are passed to the procedure: a reference to the object,
+  * and the array name.
+  PROCEDURE ADDEM
+     LPARAMETERS oref, cprop
+     local ii, atemp[1]
+
+     =ACOPY(oref.&amp;cprop,atemp)  &amp; Makes a copy of the member array.
+
+     FOR ii = 1 TO aLEN(oref.&amp;cprop)
+        atemp[ii]=atemp[ii] + 10
+     ENDFOR
+
+     =ACOPY(atemp,oref.&amp;cprop)
+  ENDPROC
+  ENDDEFINE
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

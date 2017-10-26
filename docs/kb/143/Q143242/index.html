@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143242: Externally Locked System Files Can Cause SP Update Failure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143242: Externally Locked System Files Can Cause SP Update Failure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143242/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143242/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143242/","publisher":null,"image":null,"headline":"Q143242: Externally Locked System Files Can Cause SP Update Failure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143242-externally-locked-system-files-can-cause-sp-update-failure">Q143242: Externally Locked System Files Can Cause SP Update Failure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143242
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When applying a Service Pack for Windows NT Workstation or Server version 4.0,
+the update process may pause and display a dialog that one of the files it is
+trying to update is currently locked, and cannot be replaced. It gives the
+option to retry, abort the update, or to skip copying the file. If the file is
+skipped, the system may be left in an unstable state, causing system crashes or
+unpredictable behavior.
+
+RESOLUTION
+==========
+
+To work around this problem, quit all non-essential programs using Task Manager
+or the Kill.exe tool included with the Microsoft Windows NT 4.0 Resource Kit.
+
+WORKAROUND
+==========
+
+Be sure to choose to allow the update program to create an Uninstall directory.
+If a system file, such as Ntdll.dll, should be locked, do not choose to skip the
+file. Choose to abort the update, and re-run the update program without
+restarting the computer. This time, choose to uninstall the service pack. This
+should return your system to a stable state, and you can remove the application
+which is causing the service pack installation failure. If, during update, you
+chose to not create an Uninstall directory, abort the update process and use the
+Emergency Repair Disk to return your system to a stable configuration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.00 Service
+Pack 2. For information on obtaining the Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+Some applications and add-on components for Windows NT can cause system
+components to be locked and nonreplaceable. One example of this is the Compaq
+Insight Manager. This can cause update to fail to replace the Ntdll.dll file or
+other important system files. During startup, a system which has had the Service
+Pack applied, but has the original Ntdll.dll, will crash.
+
+You must disable any such applications before applying Service Packs.
+
+SEE Knowledge base Article:
+
+  Article ID: Q166160
+  TITLED : Stop C000021a after applying Windows NT 4.0 Service Pack
+
+
+Additional query words: prodnt SP2 SP3
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

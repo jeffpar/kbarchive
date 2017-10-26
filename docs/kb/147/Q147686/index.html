@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147686: HOWTO: Get Current Drive’s Free Disk Space in VB 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147686: HOWTO: Get Current Drive’s Free Disk Space in VB 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147686/","publisher":null,"image":null,"headline":"Q147686: HOWTO: Get Current Drive’s Free Disk Space in VB 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147686-howto-get-current-drives-free-disk-space-in-vb-40">Q147686: HOWTO: Get Current Drive’s Free Disk Space in VB 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147686
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbsetup kbVBp400 kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to find out how much free disk space is available on the
+current drive by calling the DiskSpaceFree function found in STKIT416.DLL for
+Win16 or STKIT432.DLL for Win32. Both dynamic-link libraries (DLLs) ship with
+the Setup kit in Microsoft Visual Basic version 4.0 for Windows. The
+DiskSpaceFree function is useful for finding the free space available on a
+drive. If you use the DiskSpaceFree function in your Visual Basic program, you
+need to distribute STKIT416.DLL or STKIT432.DLL to your customers.
+
+MORE INFORMATION
+================
+
+There is also a function in the Win32 API (Application Programmers Interface)
+called GetDiskFreeSpace provided by the Win32 operating system that retrieves
+information about a specified disk, including the amount of free space on the
+disk. Refer to Method II in the example below. There are also other functions in
+the STKIT416.DLL or STKIT432.DLL that may be useful. You can use the AllocUnit
+function to get the disk allocation unit for the current drive, and use the
+SetTime function to set the destination file's date and time to the source
+file's date and time.
+
+Examples of using these SETUPKIT functions are also included in the
+\VB\SETUPKIT\SETUP1\SETUP1.VBP project which is part of the SetupWizard.
+
+Steps to Finding Out How Much Free Space Is Available on Drive C
+----------------------------------------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add two Label controls (Label1 and Label2) and one Command button (Command1)
+  to Form1.
+
+3. Using the following table as a guide, set the properties of the controls you
+  added in step 2.
+
+  Control Name   Property       New Value
+  ----------------------------------------------------------------
+  Command1       Caption        Press for Free Space on Drive C
+  Label1         AutoSize       True
+  Label2         AutoSize       True
+
+4. Place the following code in the general declarations section of Form1:
+
+        #If Win32 Then
+        Private Declare Function DiskSpaceFree Lib "STKIT432.DLL" Alias _
+        "DISKSPACEFREE" () As Long
+        Private Declare Function GetDiskFreeSpace Lib "kernel32" Alias _
+        "GetDiskFreeSpaceA" ( ByVal lpRootPathName As String, _
+        lpSectorsPerCluster As Long, lpBytesPerSector As Long, _
+        lpNumberOfFreeClusters As Long, lpTotalNumberOfClusters As Long) _
+        As Long
+        #Else
+        Private Declare Function DiskSpaceFree Lib "STKIT416.DLL" () As Long
+        #End If
+
+5. Place the following code in the Command1 Click event procedure of Form1:
+
+        Private Sub Command1_Click()
+        Dim free_Space As Long
+        ChDrive "C:"
+        ' Method I (using the Win16 API).
+        free_Space = DiskSpaceFree()
+        Label1.Caption = "(Method I: ) The total free space on Drive C: = " _
+        &amp; Str$(free_Space) &amp; " bytes"
+        ' Method II (using the Win32 API).
+        #If Win32 Then
+        Dim numSectorsPerCluster As Long
+        Dim numBytesPerSector As Long
+        Dim numFreeClusters As Long
+        Dim numTotalClusters As Long
+        Dim success As Boolean
+        success = GetDiskFreeSpace("C:\", numSectorsPerCluster, _
+        numBytesPerSector,  numFreeClusters, numTotalClusters)
+        free_Space = numSectorsPerCluster * numBytesPerSector * _
+        numFreeClusters
+        Label2.Caption = _
+        "(Method II:) The total free space on Drive C: = " &amp; _
+        Str$(free_Space) &amp; " bytes"
+        #Else
+        Label2.Caption = "Use Method I for Win16 applications"
+        #End If
+        End Sub
+
+6. From the Run menu, click Start (ALT, R, S), or press the F5 key to run the
+  program. Click the Command1 button to view the free disk space on drive C.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVBp400 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

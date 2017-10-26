@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190457: FIX: Extended Character Data Overwritten Upon Reselection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190457: FIX: Extended Character Data Overwritten Upon Reselection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190457/","publisher":null,"image":null,"headline":"Q190457: FIX: Extended Character Data Overwritten Upon Reselection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190457-fix-extended-character-data-overwritten-upon-reselection">Q190457: FIX: Extended Character Data Overwritten Upon Reselection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190457
+Product(s): Open Database Connectivity (ODBC)
+Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Operating System(s): 
+Keyword(s): kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 kbMDACNo
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.0, versions Build 2.73.7269, Build 2.73.7283.01, Build 2.73.7283.03 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If static cursors are used with the Microsoft Oracle ODBC driver, extended ANSI
+characters are over-written the second time any particular record is read.
+
+RESOLUTION
+==========
+
+Use dynamic cursors instead of static cursors or upgrade to version 2.573.2927
+of the Microsoft Oracle ODBC driver.
+
+STATUS
+======
+
+This problem has been fixed in the 2.573.2927 version of the Microsoft Oracle
+ODBC driver. This driver can be found in the Microsoft Data Access Components
+(MDAC) 2.0, Data Access Software Development Kit (DASDK) 2.0, and Visual Studio
+6.0. This driver can be downloaded with the new Data Access SDK version 2.0 from
+the following Web address:
+
+  http://www.microsoft.com/data/
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create and Execute the following Console application. The statements to create
+the table and records are at the bottom of the code. Change the UID, PWD, and
+DSN in the code to match your server configuration.
+
+You should see the last letter change when you reselect the first record in the
+table.
+
+The data source must be set up correctly to see the behavior.
+
+Steps to Set up the Driver
+--------------------------
+
+1. Create Oracle Data Source.
+
+2. Add User Name.
+
+3. Add Server name.
+
+4. From the Options menu, choose Translation and then choose the Select button.
+
+5. Choose "MS Code Page3 Translator".
+
+6. Choose Windows Latin 1 (1252)/850.
+
+Create the table on the Oracle Server in SQL*Plus with the following code:
+
+     create table myTest (id_num int, last_name char(25));
+     insert into myTest(id_num,last_name) values (1,'johny[ASCII 224]');
+     insert into myTest(id_num,last_name) values (2,'smith[ASCII 232]');
+     insert into myTest(id_num,last_name) values (2,'james');
+
+Use the following line once you have tested the problem to remove the table from
+the Oracle server:
+
+  DROP TABLE myTest;
+
+     // Begin sample code.
+     #define STR_LEN 128+1
+
+     #include &lt;windows.h&gt;
+     #include &lt;sql.h&gt;
+     #include &lt;sqlext.h&gt;
+     #include &lt;odbcinst.h&gt;
+     #include &lt;iostream.h&gt;
+     #include "stdio.h"
+
+     int main()
+
+     {
+        SQLHENV    henv;
+        SQLHDBC    hdbc;
+        SQLHSTMT   hstmt;
+        SQLRETURN  retcode;
+        SQLCHAR      szLastName[STR_LEN];
+        SQLINTEGER cbLastName;
+        SQLUINTEGER    pcrow;
+        SQLUSMALLINT     rgfRowStatus;
+
+        pcrow=1;
+        szLastName[0]='\0';
+        cbLastName=0;
+        /*Allocate environment handle */ 
+        retcode = SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &amp;henv);
+
+        if (retcode == SQL_SUCCESS || retcode == SQL_SUCCESS_WITH_INFO) {
+        /* Set the ODBC version environment attribute */ 
+        retcode = SQLSetEnvAttr(henv, SQL_ATTR_ODBC_VERSION,
+                               (void*)SQL_OV_ODBC3, 0);
+
+        if (retcode == SQL_SUCCESS || retcode == SQL_SUCCESS_WITH_INFO) {
+           /* Allocate connection handle */ 
+           retcode = SQLAllocHandle(SQL_HANDLE_DBC, henv, &amp;hdbc);
+
+           if (retcode == SQL_SUCCESS || retcode == SQL_SUCCESS_WITH_INFO) {
+              /* Set login timeout to 5 seconds. */ 
+              /*SQLSetConnectAttr(hdbc, SQL_ATTR_LOGIN_TIMEOUT, 5, 0);
+
+              /* Connect to data source */ 
+              retcode = SQLConnect(hdbc, (SQLCHAR*) "NCORACLE73", SQL_NTS,
+                                  (SQLCHAR*) "pss", SQL_NTS,
+                                  (SQLCHAR*) "pss", SQL_NTS);
+
+              if (retcode == SQL_SUCCESS || retcode ==
+                  SQL_SUCCESS_WITH_INFO){
+                  /* Allocate statement handle */ 
+                  retcode = SQLAllocHandle(SQL_HANDLE_STMT, hdbc, &amp;hstmt);
+
+                  if (retcode == SQL_SUCCESS || retcode ==
+
+                      SQL_SUCCESS_WITH_INFO) {
+
+                     retcode = SQLSetStmtAttr(hstmt,SQL_ATTR_CONCURRENCY,
+                               (void *)SQL_CONCUR_READ_ONLY ,SQL_NTS);
+              // Fails with static cursor but works with Dynamic.
+              // Change parameter 3 in line below to SQL_CURSOR_STATIC or
+              // SQL_CURSOR_DYNAMIC to switch cursor type.
+                    retcode = SQLSetStmtAttr(hstmt,SQL_ATTR_CURSOR_TYPE,
+                              (void *) SQL_CURSOR_STATIC  ,SQL_NTS);
+
+                    retcode = SQLPrepare(hstmt,(unsigned char *)"SELECT *
+                                         FROM myTest", SQL_NTS);
+                    retcode = SQLExecute(hstmt);
+                    retcode = SQLBindCol(hstmt,2,SQL_C_CHAR, szLastName,
+                                         STR_LEN,(long*) cbLastName);
+             //SQLFetchScroll
+                    retcode = SQLFetchScroll(hstmt, SQL_FETCH_NEXT, 0);
+                    cout &lt;&lt; "Printing Record 1: " &lt;&lt; szLastName &lt;&lt; "\n";
+
+                    retcode = SQLFetchScroll(hstmt, SQL_FETCH_NEXT, 0);
+                    cout &lt;&lt; "Printing Record 2: " &lt;&lt; szLastName &lt;&lt; "\n";
+
+                    retcode = SQLFetchScroll(hstmt, SQL_FETCH_FIRST, 0);
+                    cout &lt;&lt; "Printing Record 1: " &lt;&lt; szLastName &lt;&lt; "\n";
+
+                    SQLFreeHandle(SQL_HANDLE_STMT, hstmt);
+                 }
+                 SQLDisconnect(hdbc);
+              }
+              SQLFreeHandle(SQL_HANDLE_DBC, hdbc);
+           }
+        }
+        SQLFreeHandle(SQL_HANDLE_ENV, henv);
+     }
+     return 1;
+
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 kbMDACNoSweep 
+Technology        : kbAudDeveloper kbODBCSearch kbODBCOracle2737269 kbODBCOracle273728303 kbODBCOracle273728301 kbODBCOracle200Search
+Version           : :Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

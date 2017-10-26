@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81493: Using VCPI Programs with Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81493: Using VCPI Programs with Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81493/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81493/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81493/","publisher":null,"image":null,"headline":"Q81493: Using VCPI Programs with Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81493-using-vcpi-programs-with-windows">Q81493: Using VCPI Programs with Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81493
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many MS-DOS-based applications use the Virtual Control Program Interface (VCPI)
+specification to directly access protected-mode extended memory on an 80386 or
+80486 computer. These programs do not work with Microsoft Windows version 3.0 in
+386 enhanced mode. They work in Windows in real mode and may work in standard
+mode. Windows uses a newer standard called DOS Protected Mode Interface (DPMI).
+
+DPMI is a multitasking version of VCPI with a few other enhancements. Many
+software companies have already announced plans to support DPMI in future
+releases of their products. If you experience difficulties running an MS-
+DOS-based application in standard or enhanced mode of Windows, check with the
+MS-DOS-based-application manufacturer to see if it now supports the DPMI
+specification.
+
+MORE INFORMATION
+================
+
+The following switch can be entered into the SYSTEM.INI file in the [386Enh]
+section to turn off the warning message that appears when an MS-DOS-based
+application attempts to use VCPI:
+
+  VCPIWarning=false
+
+NOTE: Changing this switch does not allow the application to run. It merely
+suppresses the warning message if you attempt to run one of these applications.
+
+The following is a partial list of applications that use the VCPI specification
+to access extended memory:
+
+  Application                          Vendor
+  --------------------------------------------------------------------
+  Lotus 1-2-3 release 3.0              Lotus
+  Interleaf Publisher                  IBM
+  Autocad 386                          Autodesk
+  Paradox 386                          Borland
+  FoxBase+ 386                         Microsoft
+  Smalltalk 80 386                     ParcPlace
+  Common Lisp CLOE-386                 Symbolics
+  Laboratory Microsystems UR/Forth     STSC
+  APL Plus II                          STSC
+  VM/386                               Intelligent Graphics Corporation
+  Concurrent DOS 386                   Digital Research
+  PC-MOS/386                           The Software Link
+
+Lotus has announced that version 3.1 will follow the DPMI specifications and will
+run under all three modes of Windows 3.0.
+
+PC-MOS is a multitasking operating environment similar to Windows/386. You cannot
+run Windows under PC-MOS because Microsoft Windows/286, Windows/386, and Windows
+3.0 and 3.1 are all protected-mode software competing for the same resources.
+
+The following is a list of 386 memory managers that use the VCPI specification
+and are incompatible with Windows 3.0 running in enhanced mode:
+
+  Memory Manager                       Vendor
+  --------------------------------------------------------------------
+  ILIM386.SYS                          Intel
+  Soft Bits 386                        Soft Bits
+  CEMM                                 COMPAQ Computer Company
+  QEMM                                 Quarterdeck Office Systems
+  386-to-the-Max                       Qualitas
+
+Most of the companies listed above are also planning versions of their
+applications that will use the DPMI specification.
+
+Additional query words: 3.00 3.0 3.0a 3.00a VCPI DPMI 3.10 3.1 winmem win31 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

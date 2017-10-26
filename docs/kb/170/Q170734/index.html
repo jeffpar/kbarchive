@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170734: WD97: Cut or Copy Object in Label Causes IPF | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170734: WD97: Cut or Copy Object in Label Causes IPF" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170734/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170734/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170734/","publisher":null,"image":null,"headline":"Q170734: WD97: Cut or Copy Object in Label Causes IPF","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170734-wd97-cut-or-copy-object-in-label-causes-ipf">Q170734: WD97: Cut or Copy Object in Label Causes IPF</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170734
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you cut or copy some objects inserted into a page of labels created by
+clicking New Document on the Label tab, the following error message may appear:
+
+  This program has performed an illegal operation and will be shut down. If the
+  problem persists, contact the program vendor.
+
+When you click Details, the following error message is shown:
+
+  Winword caused an invalid page fault in module WINWORD.EXE at
+  0137:&lt;address&gt;.
+
+NOTE: The Label tab can be accessed by clicking Envelopes And Labels on the Tools
+menu.
+
+CAUSE
+=====
+
+The object was inserted as Float Over Text by one of the following methods.
+
+Method 1
+--------
+
+1. On the Insert menu, click Object.
+
+2. Click the Create New tab.
+
+3. Click an object (for example: Microsoft Map), and then click OK.
+
+Method 2
+--------
+
+1. On the Insert menu, point to Picture and then click Clip Art.
+
+2. Click to select the graphic you want, and then click Insert.
+
+WORKAROUND
+==========
+
+To prevent the error from occurring, use any of the following methods to change
+the object from a floating object to an inline object.
+
+Method 1: Object Already in the Document
+----------------------------------------
+
+1. Click the object to select it, and then click Picture on the Format menu.
+
+2. Click the Position Tab, and then click to clear the Float Over Text check
+  box.
+
+NOTE: When clip art is inserted from the Microsoft Clip Gallery, the clip art is
+always inserted as a floating object. Method 1 should be used to turn off the
+Float Over Text option before you copy or cut an image inserted from Microsoft
+Clip Gallery.
+
+Method 2: Insert Picture as Inline
+----------------------------------
+
+1. On the Insert Menu, point to Picture, and then click From File.
+
+2. Look In should point to the Clipart directory or the directory where your
+  clip art has been stored.
+
+3. If necessary, double-click Popular or a different folder.
+
+4. Click to select the image you want to insert.
+
+5. Click to clear the Float Over Text check box, and then click Insert.
+
+Method 3: Insert Object as Inline
+---------------------------------
+
+1. On the Insert Menu, click Object.
+
+2. Click to clear the Float Over Text check box, scroll through the list of
+  objects, and then click to select the object you want to insert.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+REFERENCES
+==========
+
+For additional information on instances of Word not responding (hanging), please
+see the following article in the Microsoft Knowledge Base:
+
+  Q163365 WD97: Hang During Copy/Paste or Drag/Drop of Object After Undo
+
+For additional information on Float Over Text, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q161692 WD97: Problems With Float Over Text Objects
+
+  Q163276 OFF97: Office 97 Clipart Not Available
+
+When inserting a graphic into a label, it is very common to insert the graphic as
+an inline object rather than a floating object. For more information about
+converting floating objects to inline objects, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q167738 WD97: Can't See or Manipulate Objects (and Other Odd Behavior)
+
+For more information about floating objects, click the Office Assistant, type
+"floating objects," click Search, and then click "Label a graphic or insert text
+in a shape."
+
+For more information about adding graphics to labels, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q123312 WD: How to Add a Graphic or Logo to Every Label on a Page
+
+For more information about positioning objects, click the Office Assistant, type
+"float over text," click Search, and then click one of the following topics:
+
+- About positioning text and graphics
+
+- Type over existing text
+
+- Select text and graphics
+
+- Change a floating picture to an inline picture and vice-versa
+
+Additional query words: 8.0 word97
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

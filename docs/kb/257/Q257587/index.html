@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257587: Description of Server Authentication Process During SSLHandshake | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257587: Description of Server Authentication Process During SSLHandshake" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257587/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257587/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257587/","publisher":null,"image":null,"headline":"Q257587: Description of Server Authentication Process During SSLHandshake","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257587-description-of-server-authentication-process-during-sslhandshake">Q257587: Description of Server Authentication Process During SSLHandshake</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257587
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the server authentication process during the Secure
+Sockets Layer (SSL) handshake.
+
+MORE INFORMATION
+================
+
+During the SSL handshake, the server sends the client a certificate to
+authenticate itself. The client uses the certificate to authenticate the
+identity the certificate claims to represent.
+
+An SSL-enabled client goes through these steps to authenticate a server's
+identity:
+
+1. Is today's date within the validity period?
+
+The client checks the server certificate's validity period. If the current date
+and time are outside of that range, the authentication process does not go any
+further. If the current date and time are within the certificate's validity
+period, the client goes on to step 2.
+
+2. Is the issuing Certificate Authority (CA) a trusted CA?
+
+Each SSL-enabled client maintains a list of trusted CA certificates. This list
+determines which server certificates the client will accept. If the
+distinguished name (DN) of the issuing CA matches the DN of a CA on the client's
+list of trusted CAs, the answer to this question is yes, and the client goes on
+to step 3. If the issuing CA is not on the list, the server is not authenticated
+unless the client can verify a certificate chain ending in a CA that is on the
+list.
+
+3. Does the issuing CA's public key validate the issuer's digital signature?
+
+The client uses the public key from the CA's certificate (which it found in its
+list of trusted CAs in step 2) to validate the CA's digital signature on the
+server certificate that is being presented. If the information in the server
+certificate has changed since it was signed by the CA, or if the CA
+certificate's public key doesn't correspond to the private key that was used by
+the CA to sign the server certificate, the client does not authenticate the
+server's identity. If the CA's digital signature can be validated, the client
+treats the server's certificate as a valid "letter of introduction" from that CA
+and proceeds. At this point, the client has determined that the server
+certificate is valid. It is the client's responsibility to take step 4 before it
+takes step 5.
+
+4. Does the domain name in the server's certificate match the domain name of the
+  server itself?
+
+This step confirms that the server is actually located at the same network
+address that is specified by the domain name in the server certificate. Although
+step 4 is not technically part of the SSL protocol, it provides the only
+protection against a form of security attack known as a "Man-in-the-Middle
+Attack." Clients must perform this step and must refuse to authenticate the
+server or establish a connection if the domain names do not match. If the
+server's actual domain name matches the domain name in the server certificate,
+the client goes on to step 5.
+
+5. The server is authenticated.
+
+The client proceeds with the SSL handshake. If the client does not get to step 5
+for any reason, the server that is identified by the certificate cannot be
+authenticated, and the user is warned of the problem and informed that an
+encrypted and authenticated connection cannot be established.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q257591 Description of the Secure Sockets Layer (SSL) Handshake
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

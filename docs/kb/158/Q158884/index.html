@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158884: SET: Problem Running Programs in German Resource Kit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158884: SET: Problem Running Programs in German Resource Kit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158884/","publisher":null,"image":null,"headline":"Q158884: SET: Problem Running Programs in German Resource Kit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158884-set-problem-running-programs-in-german-resource-kit">Q158884: SET: Problem Running Programs in German Resource Kit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158884
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 31-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Resource Kit, version 3.51 
+-------------------------------------------------------------------------------
+
+NOTE: This articles applies to the German version of the Microsoft Windows NT Resource Kit only.
+
+SYMPTOMS
+========
+
+You might experience problems when running the CPS utilities Winntp.exe or
+Uplodprf after installing the Resource Kit from the original German Windows NT
+3.5x Resource Kit CD-ROM.
+
+For example, if you attempt to run Winntp.exe, you will receive the following
+error message:
+
+  Unable to find the .INF Source File.
+  Check the /i switch on the Setup command line.
+
+
+CAUSE
+=====
+
+The original United States Windows NT 3.51 Resource Kit CD-ROM was not fully ISO
+9660 compliant. While mastering the German CD-ROM, all special character and
+long filenames were automatically converted to ISO 9660. This process changed
+all ~ (tilde) characters to _ (underscore) characters. The CPS file ~profile.inf
+was changed to _profile.inf, which causes Winntp.exe to fail.
+
+Note that the Windows NT 4.0 Resource Kits do not have files containing the ~
+character, so this issue affects only the 3.5x version of the German Resource
+Kit.
+
+WORKAROUND
+==========
+
+After installing the Resource Kit utilities, rename _profile.inf to
+~profile.inf.
+
+RESOLUTION
+==========
+
+Microsoft Press Germany has created a corrected CD-ROM for this title.
+
+Q1) How can a customer identify the defective CD-ROM?
+
+  The defective CD-ROM has a two-color label: magenta and black.
+  The label for the corrected CD-ROM is solid Black.
+
+Q2) Is this specific to the German Windows NT Resource Kit CD-ROM?
+
+  Yes.
+
+Q3) What is the fax number and e-mail address for replacement requests?
+
+  Fax: ++49 89 31765270
+  E-mail should be sent using the following format:
+  To: RKINPUT@MICROSOFT.COM
+  Subject: German NT 3.51 ResKit Correction CD-ROM Request
+  Body Text: &lt;include name and mailing address for replacement&gt;
+
+
+Q4) Are there any other known problems with the defective CD-ROM?
+
+  \SOURCE\POSIX\GREP is the only other directory that contains tilde filenames
+  that might also be similarly affected.
+
+Additional query words: bookbug mspress ms_press NT3.50 NT3.51 reskit
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+Version           : :3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

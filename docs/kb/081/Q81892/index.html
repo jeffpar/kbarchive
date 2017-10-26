@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81892/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81892/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81892/","publisher":null,"image":null,"headline":"Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81892-fix-fneni-fnclex-assembled-wrong-after-proc-uses">Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81892
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) incorrectly assemble the FNENI or FNCLEX
+coprocessor instructions if the instructions are used in a procedure declared
+with the PROC USES directive. FNENI and FNCLEX used outsize of PROC USES
+procedures assemble correctly.
+
+RESOLUTION
+==========
+
+Several methods can be used to work around this problem, including:
+
+1. Using FENI or FCLEX instead of FNENI or FNCLEX.
+
+2. Using a PROC without the USES directive.
+
+3. Putting the opcode for FNENI or FNCLEX into the code directly. The sample
+  code below demonstrates this workaround. This could also be done by setting
+  up a macro that when invoked puts the opcode into the code directly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 6.0, 6.0a, and
+6.0b. This problem was corrected in MASM for MS-DOS version 6.1.
+
+MORE INFORMATION
+================
+
+FENI enables interrupts by clearing the interrupt-enable mask in the control
+word. Since the 80287, 80387, and 80486 coprocessors do not have an
+interrupt-enable mask, this instruction is recognized but ignored on these
+coprocessors. FENI is the wait version and FNENI is the no-wait version.
+
+FCLEX clears all coprocessor exception flags, the busy flag, and bit 7 in the
+status word. Bit 7 is the interrupt-request flag on the 8087 and the
+error-status flag on the 80287, 80387 and 80486 coprocessors. FCLEX is the wait
+version and FNCLEX is the no-wait version.
+
+If the following sample code is assembled, the FNENI and FNCLEX instruction will
+generate the following code:
+
+     pop ax
+     iretd
+
+     pop ax
+     iret
+
+Sample Code
+-----------
+
+  ; Assemble options needed: none
+
+  .MODEL small, C
+  .STACK 4096
+
+  .CODE
+      .startup
+      call func
+      .exit 0
+
+  func PROC uses ax
+      fneni       ; This statement generates a pop ax and an iretd.
+      fnclex      ; This statement generates a pop ax and an iret.
+      DW 0E0DBh   ; This defines a FNENI statement.
+      DW 0E2DBh   ; This defines a FNCLEX statement.
+      ret
+  func ENDP
+  END
+
+Additional query words: 6.00 6.00a 6.00b buglist6.00 buglist6.00a buglist6.00b fixlist6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

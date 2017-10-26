@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175387/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175387/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175387/","publisher":null,"image":null,"headline":"Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175387-xfor-linkage-directory-exchange-agent-or-directory-exchange-man">Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175387
+Product(s): Microsoft Exchange
+Version(s): 4.0 SP5,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0 SP5, 5.5 
+- Microsoft Exchange, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempts to propagate updates results in the Directory Exchange Agent (DXA) or
+Directory Exchange Manager (DXM) consistently timing out. This is indicated by
+the following error messages in the log: "Agent has timed out," "Permanent error
+has occurred," or "Agent or manager will disable sending or receiving now."
+Another symptom is, in Process Manager, the current activity of the DXM or the
+DXA process is "Processing updates" or "Generating updates for an abnormal
+amount of time.
+
+CAUSE
+=====
+
+The DXM or DXA cannot process the Message Information File (MIF) or update
+request. Causes are usually a malformed or corrupted .rdy file, MIF, or MIF
+Partition Block (.mpb) file (see the More Information section). If the files are
+indeed corrupted and the process can determine this, the file will be moved to
+the badmif queue. If the file cannot be processed and cannot be moved, it will
+become stuck in the queue. If the file becomes stuck in the queue, additional
+update requests can be initiated, however, they will not be processed because
+the agent or manager will continually try to process the first file.
+
+WORKAROUND
+==========
+
+Delete and/or rename the problem files. These files are resident in the
+file-based queues in the Linkage\Q\Dxanotes.in, Dxm.in, Router.in, or Dxamex.in
+queue.
+
+MORE INFORMATION
+================
+
+The following is excerpted from the LinkAge self-study guide.
+
+LinkAge Directory Exchange (LDE) Queues
+---------------------------------------
+
+Directory synchronization between Notes and Exchange uses four file-based queues,
+Router.in, DXM.in, DXANOTES.in and DXAMEX.in.
+
+All communications between the DXM and the DXAs are first placed in Router.in as
+.RDY files. Router.in places the .RDY file in the appropriate DXA queue (e.g.
+DXANOTES.in, DXAMEX.in, and DXM.in).
+
+For example, when the DXM requests an incremental update from the Notes DXA, the
+request is formulated by the DXM into .RDY file; a process then places this file
+into Router.in. The Router.in process is activated by work items (.RDY files) in
+its queue. These items are placed into the appropriate queue - in this case
+DXANOTES.in. Each DXA periodically monitors its queue and in the event that a
+work item arrives in the queue, the DXA processes the request (in this case, for
+an incremental update). Next, the DXA queries its native mail system, gathers
+any updates and/or deletions, creates another .RDY file, as well as a .MIF file,
+which contains the actual directory updates. The .RDY file is forwarded to
+Router.in; Router.in forwards it to DXM.in. The .MIF file is forwarded into the
+LinkAge\q\archive directory.
+
+The .RDY file that is sent back to the DXM is a work order file, which informs
+the DXM that DXANOTES has completed the request. The .RDY file also contains
+pointers to the actual information (directory updates) contained within .MIF
+files. Each .MIF file can hold up 9999 entries. Therefore, in a dirsync cycle
+with 25,000 updates, there will be 3 .MIF files. (The number of entries a .MIF
+can hold can be changed by updating a parameter in the LINKAGE.INI file. See the
+LINKAGE.INI file online help for more information.)
+
+Once processing of the transactions has begun, the .RDY file becomes a MIF
+Partition Block (.MPB) file. .MPB files are used to organize and track the .MIF
+files in a given set of directory updates while processing is taking place.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchangeClientSearch kbZNotKeyword2 kbExchange400SP5
+Version           : :4.0 SP5,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

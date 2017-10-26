@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114370: WFWG Err Msg: Error 58 on Protocol 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114370: WFWG Err Msg: Error 58 on Protocol 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114370/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114370/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114370/","publisher":null,"image":null,"headline":"Q114370: WFWG Err Msg: Error 58 on Protocol 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114370-wfwg-err-msg-error-58-on-protocol-0">Q114370: WFWG Err Msg: Error 58 on Protocol 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114370
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start Microsoft Windows for Workgroups version 3.11 with Novell
+connectivity installed through IPXODI, the following error may occur:
+
+  The following error occurred while loading protocol number 0.
+
+  Error 58: The network has responded incorrectly. You may need to reconfigure
+  the protocol using Network Setup. If your computer is a portable, make sure
+  it is connected to its docking station."
+
+NOTE: Choosing OK in this dialog box allows Windows to load; however, the
+Microsoft Windows Network is disabled.
+
+CAUSE
+=====
+
+When you install Novell IPXODI support in Windows for Workgroups 3.11, Setup
+must make certain assumptions about the IPXODI configuration since Windows for
+Workgroups 3.11 does not ship with any of the Novell ODI files. One of the
+assumptions concerns the specific name of the multiple link interface driver
+(the Novell ODI network interface card driver). This name is referenced in the
+PROTOCOL.INI file on the Bindings= line(s). If the driver name specified on the
+Bindings= line does not match the name of the multiple link interface driver
+(MLID) being used, the above error may be generated.
+
+RESOLUTION
+==========
+
+To correct this error, make a note of the actual name of the MLID file listed
+after LSL.COM in the AUTOEXEC.BAT or STARTNET.BAT file. Edit the PROTOCOL.INI
+file and verify that the Bindings= line matches the MLID file described above.
+If the Bindings= entry does not match the MLID name, correct the line so that it
+does.
+
+NOTE: On some configurations there may be two Bindings= lines.
+
+Example
+-------
+
+The following example uses a 3Com Etherlink III (3C5x9) NIC, which is one of the
+more common cards with which the above error message occurs. Below are excerpts
+of the files created by Network Setup.
+
+AUTOEXEC.BAT:
+
+     C:\WINDOWS\NET START
+     C:\&lt;PATH&gt;\LSL.COM
+     C:\&lt;PATH&gt;\&lt;3C5X9.COM&gt;    (This is the MLID.)
+     C:\&lt;PATH&gt;\IPXODI.COM
+     C:\WINDOWS\ODIHLP.EXE
+     C:\&lt;PATH&gt;\NETX.EXE
+
+PROTOCOL.INI:
+
+     [NWLINK]
+     Bindings=3C509
+
+     [NETBEUI]
+     Bindings=3C509
+
+Note that the MLID filename in the AUTOEXEC.BAT file is 3C5x9.COM, but the
+PROTOCOL.INI file references 3C509; including the file extension will result in
+the problem not being resolved. The corrected PROTOCOL.INI should read as
+follows:
+
+     [NWLINK]
+     Bindings=3C5x9
+
+     [NETBEUI]
+     Bindings=3C5x9
+
+For more information about this error in non-ODI configurations, query on the
+following words in the Microsoft Knowledge Base:
+
+  netbeui and wfwg and ndis and tshoot
+
+
+Additional query words: adapter 3.11 netware
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

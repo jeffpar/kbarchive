@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87223: FFAPI: Understanding Microsoft Mail File Formats | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87223: FFAPI: Understanding Microsoft Mail File Formats" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87223/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87223/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87223/","publisher":null,"image":null,"headline":"Q87223: FFAPI: Understanding Microsoft Mail File Formats","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87223-ffapi-understanding-microsoft-mail-file-formats">Q87223: FFAPI: Understanding Microsoft Mail File Formats</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87223
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit (FFAPI), version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail File Format (MMFF) is an input or output file that contains
+messages formatted especially for Microsoft Mail. These messages are messages
+that have been exported from the Mail data files or are about to be imported
+into the Mail data files.
+
+There are four MMFF types:
+
+- Basic message format
+
+- Extended message format
+
+- Encapsulated message format
+
+- Extended mailbag header format
+
+A complete description of all file formats is in the "Microsoft Mail Software
+Development Kit File Format API for Gateways and Applications" manual. This
+article describes the purpose of each file format.
+
+MORE INFORMATION
+================
+
+Basic Message Format
+--------------------
+
+This format should be used for very basic application interfaces; for example,
+automating reporting procedures to send mail directly from a database
+application. This format does not support CC: fields; when exporting messages
+with a CC: field, CC: addresses will be converted to TO: addresses. Attempting
+to import messages with a CC: will generate errors.
+
+Extended Message Format
+-----------------------
+
+This format allows a developer to access message header date, address, and file
+details. This format is typically used when you want to access information in a
+message file that would otherwise not be available. For example, you can build
+an extended message field that split the time into three components: hours,
+minutes, and seconds. You can also access detailed information about attached
+files, such as name, size, create date, and file type.
+
+Extended Mailbag Header Format
+------------------------------
+
+This format allows you to access individual pieces of mail in a mailbag. By
+enumerating mailbag headers, you can choose which particular item you want to
+extract or delete. You can also manipulate the individual mailbag headers in the
+mailbag file.
+
+For example, your application could read all the unread headers in its mailbag
+and display them in a type of list box. Selecting a particular header would tell
+the application to extract that mail message.
+
+Encapsulated Message Format
+---------------------------
+
+Encapsulated message format should be used when the messages are being routed
+through foreign mail systems, such as X.400 or SMTP. The entire message will be
+encapsulated as an attachment, and transmitted through the foreign system with a
+dummy header.
+
+REFERENCES
+==========
+
+"Microsoft Mail Software Development Kit File Format API for Gateways and
+Applications"
+
+
+Additional query words: 3.00 pcmail ffapi
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailFFAPI300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

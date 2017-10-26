@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151198: XADM: How to Set Up a Search for a Custom Attribute | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151198: XADM: How to Set Up a Search for a Custom Attribute" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151198/","publisher":null,"image":null,"headline":"Q151198: XADM: How to Set Up a Search for a Custom Attribute","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151198-xadm-how-to-set-up-a-search-for-a-custom-attribute">Q151198: XADM: How to Set Up a Search for a Custom Attribute</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151198
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 26-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In many cases, Microsoft Exchange administrator's would like users to be able to
+search the Global Address List (GAL) based on fields that are not available by
+default. This article explains how to include additional attributes in searches
+and Address Name Resolutions (ANR).
+
+MORE INFORMATION
+================
+
+To adding a custom attribute to a search, an administrator will need to perform
+the following:
+
+- Change the name of the custom attribute.
+
+- Add the custom attribute to be included in searches.
+
+- Modify the Search template of the Address Book.
+
+For example, if you want to modify Custom Attribute 1 to represent each user's
+Birthday, follow these steps:
+
+1. Open the Microsoft Exchange Administrator program in Raw mode by specifying
+  Admin /r on the command line.
+
+2. Bring up the properties of the DS Site Configuration object in the
+  Configuration container.
+
+3. Select the Custom Attributes property page.
+
+4. Type "Birthday" (without the quotation marks) as the value for Custom
+  Attribute 1 and click on OK.
+
+5. From the View menu, select Raw Directory. This should add a container in the
+  left pane called Schema.
+
+6. Double click the Schema object and hit F5 to refresh the display.
+
+7. Get the properties of the Birthday object by double clicking on the object or
+  by selecting the Properties command from the File menu.
+
+8. This should bring up a message box. Click the Yes button to view the raw
+  properties of the object.
+
+9. From the Object attributes listbox, select the Search-Flags attribute.
+
+10. In the Edit value box, enter the value 2 and then click the Set button.
+
+11. Click on OK to close the Property Sheet.
+
+12. Go to the Configuration, Addressing, Details Templates, English/USA
+  container. Select the Search Dialog object and get its properties.
+
+13. Select the Templates page.
+
+14. Click the New button, select Label, and click OK.
+
+15. Enter the following details:
+
+      X = 10       Y = 130
+      Width = 25   Height = 12
+      Text = Birthday
+
+  and click on OK.
+
+16. Click the New button, select Edit, and click OK.
+
+17. Enter the following details:
+
+      X = 65       Y = 130
+      Width = 50   Height = 12
+      Field = Birthday
+
+  and click on OK.
+
+18. Click the Test button. This should bring up a dialog that will allow you to
+  test the changes you just made. This is how the dialog will appear from the
+  Microsoft Exchange client.
+
+After the above steps have been completed, a user can search the GAL based on the
+Birthday field. The search dialog will contain a field for the Birthday. In
+order for the search to be successful, the Birthday field on the Custom
+Attributes page of each mailbox's properties will need to be filled in by the
+administrator.
+
+In order for the Birthday field to appear in the details of each user when viewed
+from a Microsoft Exchange client, steps 13-18 should be repeated on the
+Configuration, Details Templates, English/USA, Mailbox object.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

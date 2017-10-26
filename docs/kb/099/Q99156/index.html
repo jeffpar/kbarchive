@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99156: Strategies for Boosting File Transfer Throughput Rates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99156: Strategies for Boosting File Transfer Throughput Rates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99156/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99156/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99156/","publisher":null,"image":null,"headline":"Q99156: Strategies for Boosting File Transfer Throughput Rates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99156-strategies-for-boosting-file-transfer-throughput-rates">Q99156: Strategies for Boosting File Transfer Throughput Rates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99156
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article discusses several strategies for boosting file transfer throughput
+rates: raw I/O mode at the workstation (the procedures for which are included),
+and modem compression.
+
+
+MORE INFORMATION
+================
+
+Raw I/O
+-------
+
+You can increase file transfer throughput with the shipping RAS by putting your
+workstation in raw I/O mode. Not counting protocol overhead, raw I/O makes
+possible 95 percent efficiency. It is not enabled by default so as to conserve
+resources at the server.
+
+To turn raw I/O on you have to go to the wrkheurestics section in the LANMAN.INI
+file and change bit 14 from 1 to 0. However, if the baud rate is 2400 or less,
+you should also increase the "netsesstimeout" parameter in LANMAN.INI (to avoid
+session timeouts on 64K raw I/O blocks). Changing netsesstimeout is not
+documented anywhere.
+
+
+Modem Compression
+-----------------
+
+Another way to improve throughput is to turn on compression in modems. Some
+modems cannot successfully negotiate the correct protocol, and you end up with a
+lower baud rate phone link than might otherwise be possible, but if all your
+modems are compatible, it is easy to turn compression on by following the
+instructions in their documentation.
+
+
+Windows is constrained because it uses the redirector for transparent LAN access,
+which enables file transfer as well as support for other services such as
+NetBIOS or named pipes. Because Windows supports all these APIs, it must allow
+for multiple simultaneous applications to be active and alive, which prevents
+using strategies such as Laplink uses.
+
+
+LAN Manager 2.1 PTK Headers
+---------------------------
+
+A final method for improving throughput is to use the LAN Manager 2.1 PTK headers
+with the IBM C/2 compiler, and make the compiler perform all flat-to-selector
+translations. Put the code below in your file before including the LAN Manager
+files:
+
+    #undef FAR
+     #undef far
+
+     #define FAR     _far16
+     #define far     _far16
+     #define     syscall     pascal _far16
+
+     {LAN #defines}
+     #include &lt;lan.h&gt;
+
+     #undef _syscall
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

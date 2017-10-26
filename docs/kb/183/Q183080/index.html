@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183080: HOWTO: Use ON_EVENT_RANGE Macro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183080: HOWTO: Use ON_EVENT_RANGE Macro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183080/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183080/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183080/","publisher":null,"image":null,"headline":"Q183080: HOWTO: Use ON_EVENT_RANGE Macro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183080-howto-use-on_event_range-macro">Q183080: HOWTO: Use ON_EVENT_RANGE Macro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183080
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbCOMt kbCtrl kbMFC kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is copied from the Visual C++ online documentation regarding the
+usage of the ON_EVENT_RANGE macro:
+
+  PfnHandler Pointer to a member function that handles the event. This function
+  should have a BOOL return type, a first parameter of type UINT (for the
+  control ID), and additional parameter types that match the event's parameters
+  (see vtsParams). The function should return TRUE to indicate the event was
+  handled; otherwise FALSE.
+
+  VtsParams A sequence of VTS_ constants that specifies the types of the
+  parameters for the event. The first constant should be of type VTS_I4, for
+  the control ID. These are the same constants that are used in dispatch map
+  entries such as DISP_FUNCTION.
+
+  The vtsParams argument is a space-separated list of values from the VTS_
+  constants. One or more of these values separated by spaces (not commas)
+  specifies the function's parameter list. For example:
+
+  VTS_I2 VTS_BOOL specifies a list containing a short integer followed by a
+  BOOL.
+
+According to this specification, the pfnHandler should have at least one
+parameter. In addition, the first parameter must be a UINT data type for the
+control ID. Therefore, the first VTS_ constant for vtsParams must be VTS_I4
+(UINT data type).
+
+If pfnHandler has some additional parameters besides the UINT of the control ID,
+then each VTS_ constant for vtsParams after VTS_I4 must match the data types of
+these additional parameters of pfnHandler.
+
+To better illustrate the usage of the ON_EVENT_RANGE macro, a simple sample is
+shown below.
+
+MORE INFORMATION
+================
+
+The sample code below illustrates the use of the ON_EVENT_RANGE() macro in an
+MFC dialog-based application. CTestDlg is a CDialog-derived class. In the sample
+code below, TestOnProblem is the pfnHandler and it has two parameters: a control
+ID of type UINT and an additional parameter of type short. Thus, vtsParams
+should be:
+
+     VTS_I4 VTS_I2
+
+VTS_I4 and VTS_I2 match the data type of the first and second parameters of
+TestOnProblem(), respectively.
+
+For instance, the function prototype for pfnHandler is below:
+
+     BOOL CTestDlg::TestOnProblem(UINT CtrlID, short Param)
+     {
+        TRACE("control id = %u, Second parameter = %d\n", CtrlID, Param);
+        return TRUE;  // returns TRUE to indicate the event was handled;
+     }
+
+Then, the event map should look similar to the following:
+
+     BEGIN_EVENTSINK_MAP(CTestDlg, CDialog)
+         //{{AFX_EVENTSINK_MAP(CTestDlg)
+         //}}AFX_EVENTSINK_MAP
+         ON_EVENT_RANGE(
+             CTestDlg,      // Class to which this event sink map belongs.
+             IDC_FIRSTCTRL, // ID of the first control in the range.
+             IDC_LASTCTRL,  // ID of the last control in the range.
+             1,             // Dispatch ID of event fired by the control.
+             TestOnProblem, // Function for handling events.
+             VTS_I4 VTS_I2) // VTS_I4 and VTS_I2 are the first and second
+                            // parameters of TestOnProblem() function.
+     END_EVENTSINK_MAP()
+
+It is important to note that ON_EVENT_RANGE must be added outside of
+ClassWizard's comment ("//") lines. Otherwise, ClassWizard will give you an
+error message box whenever you open the dialog box resource template. This is
+because ClassWizard doesn't recognize the syntax of the ON_EVENT_RANGE macro.
+
+Also, make sure the controls whose events are being handled have IDs within the
+contiguous range of IDs listed in ON_EVENT_RANGE. Check the Ids by clicking View
+on the Resource Symbols toolbar in Visual C++ 5.0. Note that the IDs of the
+controls may be different than expected, depending on the order in which they
+were created on the dialog box template.
+
+Although one can't create an ON_EVENT_RANGE handler using ClassWizard, it is
+possible to create an ON_EVENT handler using ClassWizard. Please be aware that
+in creating an ON_EVENT handler using ClassWizard, the return type of the
+handler created may be void. This is a bug in ClassWizard. The documentation for
+both ON_EVENT and ON_EVENT_RANGE is still correct when it says "This function
+should have a BOOL return type." Returning void usually works correctly,
+however, so this is not a big problem.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation.
+
+
+Additional query words: event sink ocx map
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbCtrl kbMFC kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

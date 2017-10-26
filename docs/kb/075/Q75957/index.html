@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q75957: Mac Form: Changing Font on Printed Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q75957: Mac Form: Changing Font on Printed Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/075/Q75957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/075/Q75957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/075/Q75957/","publisher":null,"image":null,"headline":"Q75957: Mac Form: Changing Font on Printed Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q75957-mac-form-changing-font-on-printed-form">Q75957: Mac Form: Changing Font on Printed Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q75957
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Form Designer for Microsoft Mail can create custom forms for use on a Mail
+server. Included in the form is a description of the printed form. This
+description assumes some defaults that can be changed only with special scripts.
+
+MORE INFORMATION
+================
+
+The following global font variables can be modified on the print screen:
+
+  laserLabelFont
+  laserFieldFont
+  imageLabelFont
+  imageFieldFont
+
+NOTE: This information relies on System 6.0.x font ID numbers and may not work
+correctly with System 7.0. Make the form and install it using System 6.0.x only.
+Once it is installed, it doesn't matter if System 6.0.x or 7.0 users uses it,
+just as long as it was created and installed with System 6.0.x.
+
+To specify fonts for the print description, you must access the card script. The
+only scripts that are used in a form when it is compiled are "on compile"
+scripts. Put new values in the global font variables listed above to override
+the defaults. To modify the scripts, do the following:
+
+1. Go to the printed form card.
+
+2. Bring up the message box (press COMMAND+M).
+
+3. Type the following, then press RETURN:
+
+  " set userLevel to 5 " (without the quotation marks)
+
+4. Open the card script (press COMMAND+OPTION+C).
+
+5. Add a script that looks like this:
+
+     on compile                         &lt;- Handler for the compile message
+        global laserFieldFont           &lt;- Declare the global
+        put 5513 into laserFieldFont    &lt;- Put in new value (see below)
+     end compile                        &lt;- End of the compile message
+
+The font ID numbers (5513 in example), as found in the FONT resource of the
+System file, will vary from Macintosh to Macintosh. The font ID numbers from the
+System of the Macintosh the form is compiled and installed from are changed to
+font names during installation.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67007: Executing a Function From the Command or Watch Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67007: Executing a Function From the Command or Watch Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67007/","publisher":null,"image":null,"headline":"Q67007: Executing a Function From the Command or Watch Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67007-executing-a-function-from-the-command-or-watch-window">Q67007: Executing a Function From the Command or Watch Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67007
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kbCodeView kbDebug kbVC _IK
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS 
+- Microsoft CodeView for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to page 201 of the Microsoft C "Advanced Programming Techniques"
+manual for versions 6.x, "any C function in your program (whether user-written
+or from the library) can be called from the Command window or the Watch
+window."
+
+This statement is not entirely true; you can call only functions compiled with
+full CodeView symbolic debugging information from the Command and Watch windows.
+Therefore, you cannot call any functions in the C run-time library because the
+libraries do not contain symbolic information. The text below provides an
+example of calling a function in the C run-time library.
+
+In Microsoft C/C++ version 7.0, chapter 11 of the "Environment and Tools" manual
+documents calling functions from the CodeView command window.
+
+MORE INFORMATION
+================
+
+An attempt to call, from the Command window, a function that does not have any
+symbolic information fails and CodeView generates an error message. In CodeView
+versions 4.0x, 4.1, and 4.25, the error is as follows:
+
+  CXX0017: Error: symbol not found
+
+  -or-
+
+  CAN0017: Error: symbol not found
+
+In CodeView versions 3.x, the error is as follows:
+
+  CV1017 Error: Syntax error
+
+CodeView versions 2.x display an "unknown symbol" error in the Command window.
+
+An attempt to add to the Watch window a function that does not have any symbolic
+information fails and CodeView generates an error message. In CodeView versions
+4.0x, 4.1, and 4.25, the error is as follows:
+
+  CXX0030: Error: expression cannot be evaluated
+
+  -or-
+
+  CAN0030: Error: expression cannot be evaluated
+
+CodeView versions 3.x ignore the entry and sound the system bell. CodeView
+versions 2.x generate an "unknown symbol" error.
+
+The Advanced Programming Techniques manual provides an example of calling a
+function in the C run-time library from the Command window with the following
+command:
+
+  ?funcname (varlist)
+
+This command invokes the function and displays its return value in the Command
+window. To add the function to the Watch window, use the following command:
+
+  w?funcname (varlist)
+
+Another method to add a function to the Watch window is as follows: choose Add
+Watch from the Watch menu. Type the function name, a left parenthesis, the
+argument list, a right parenthesis, and choose OK. Neither "w" or "?" is
+required in this situation.
+
+If the function required any input or produces any output, the screen flip/swap
+option on the Options menu must be selected.
+
+To call a function in the C run-time library, a function in the Windows
+application programming interface (API), or any other function that does not
+contain CodeView symbolic information, you must write a shell function that
+calls the desired function and passes along the value it returns.
+
+For example, to call the sqrt() function in the C run-time library from the
+CodeView Command or Watch window, create a shell function that looks like the
+following:
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: /Zi
+   */ 
+
+  #include &lt;math.h&gt;
+
+  double my_sqrt(double x)
+  {
+     return sqrt(x);
+  }
+
+Compile this function and link it into your application (be sure to specify the
+/CO[DEVIEW] LINK option). Your application does not need to call my_sqrt() for
+the function to be available for direct execution. However, before calling
+my_sqrt() from the Command or Watch window, you must step into the main()
+function to initialize the program's stack.
+
+To run the my_sqrt() function from the Command window, type the following:
+
+  " ?my_sqrt(4.0)" (without the quotation marks)
+
+CodeView displays the value returned by the function on the next line in the
+Command window. In this example, CodeView displays 2.0000000000000, the square
+root of 4.0.
+
+To add the my_sqrt() function to the Watch window, type the following in the
+Command window:
+
+  " w?my_sqrt(4.0)" (without the quotation marks)
+
+To add the my_sqrt() function to the Watch window using the Add Watch command on
+the Watch menu, type the following at the Add Watch prompt:
+
+  " my_sqrt(4.0)" (without the quotation marks)
+
+CodeView executes each function in the Watch window each time it updates the
+Watch window.
+
+Even though these examples use a constant value for the function parameter, you
+can specify any variable that is currently in scope.
+
+Additional query words: 2.20 3.00 3.50 4.00 4.10 docerr
+
+======================================================================
+Keywords          : kbCodeView kbDebug kbVC _IK 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

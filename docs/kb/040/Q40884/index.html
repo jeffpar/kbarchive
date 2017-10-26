@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40884: Passing a LONG INTEGER Array to FORTRAN 4.10 From QuickBASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40884: Passing a LONG INTEGER Array to FORTRAN 4.10 From QuickBASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40884/","publisher":null,"image":null,"headline":"Q40884: Passing a LONG INTEGER Array to FORTRAN 4.10 From QuickBASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40884-passing-a-long-integer-array-to-fortran-410-from-quickbasic">Q40884: Passing a LONG INTEGER Array to FORTRAN 4.10 From QuickBASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40884
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890123-197 B_BasicCom | mspl13_basic
+Last Modified: 7-FEB-1989
+
+This article contains a sample BASIC program that calls a Microsoft
+FORTRAN Version 4.10 subroutine, which passes a long-integer array.
+The array is passed to FORTRAN by FAR reference, allowing you to
+compile the FORTRAN subroutines with both medium- and large-memory
+models.
+
+When passing an array to FORTRAN by FAR reference, the BASIC program
+must use the VARSEG and VARPTR commands. The FAR keyword in FORTRAN
+requires that the variable segment (VARSEG) is passed as the first two
+bytes, and the offset (VARPTR) as the next two bytes.
+
+The following BASIC program and FORTRAN Version 4.10 subroutine has
+been tested with Microsoft QuickBASIC Versions 4.00, 4.00b, and 4.50
+and the BASIC Compiler Versions 6.00 and 6.00b. The BASIC compiler
+Versions 6.00 and 6.00b supports the alternate math (/FPa) in addition
+to the emulation math (/FPi), both of which have been successfully
+tested.
+
+Both QuickBASIC and the BASIC compiler can produce stand-alone
+programs (compiled with the /o option) and programs that require a
+run-time library (compiled without the /o option). The following table
+has been produced to show the results of execution with these options.
+
+Note: An "X" means the product worked correctly, and an "O" means
+the program failed to work correctly, possibly hanging the computer.
+
+QuickBASIC           4.00      4.00b     4.50
+
+Stand-Alone            X         X         X
+Run-Time Library       X         X         X
+
+NOTE: When using QuickBASIC, FORTRAN must be compiled with the /FPi
+math option because this is the only math option available to
+QuickBASIC.
+
+BASIC Compiler       6.00      6.00b
+
+/FPa Stand-Alone       X         X
+/FPa Run-Time          X         X
+
+/FPi Stand-Alone       X         X
+/FPi Run-Time          X         X
+
+As the above information shows, it is possible to pass a LONG INTEGER
+array by FAR reference to a FORTRAN subroutine.
+
+When using a mixed-language program, you should not mix the math
+options between the different languages and between the subroutines of
+the same language.
+
+The following are the compiling instructions:
+
+   BC file1;
+   FL /FPi /c /AL file2.for
+   LINK file1 file2 /NOE;
+
+The above compiling instructions assume that FILE1.BAS is the BASIC
+source file, and FILE2.FOR is the FORTRAN source filename. When
+invoking the FORTRAN compiler in the second step above, the filename
+and extension is used.
+
+The FORTRAN subroutine can be compiled with the /AM (medium-model)
+compiler directive.
+
+The following is the BASIC source code:
+
+DECLARE SUB forsub (BYVAL segvar%, BYVAL valvar%)
+REM ** Passing the elements BYVAL is required.  The first
+REM ** element is the segment and the second element is the
+REM ** offset.  Using the INTEGER sign "%" after the variable
+REM ** names ensures that two-bytes of information is being
+REM ** passed, since the FAR keyword is being used in the FORTRAN
+REM ** subroutine.
+
+DIM heap%(2048)
+COMMON SHARED /nmalloc/ heap%()
+REM ** This is used to increase the amount of heap available to
+REM ** the FORTRAN subroutine.
+
+DIM PassInt&amp;(10)
+REM ** Array actual contains elements 0 through 10 which
+REM ** make 11 values being passed in this example.
+
+RANDOMIZE 32767
+PRINT "BASIC Language"
+PRINT "=============="
+FOR a&amp; = 0 TO 10
+  PassInt&amp;(a&amp;) = INT(RND * 50000&amp;)
+  PRINT PassInt&amp;(a&amp;),
+NEXT a&amp;
+REM ** Load the array elements with random LONG INTEGER numbers
+REM ** and print these numbers to the screen.
+
+PRINT
+
+CALL forsub(VARSEG(PassInt&amp;(0)), VARPTR(PassInt&amp;(0)))
+REM ** Call the FORTRAN subroutine passing the segment (VARSEG)
+REM ** and offset (VARPTR) of the first element of the array.
+END
+
+The following is the FORTRAN source code:
+
+      subroutine forsub(PassInt)
+      integer*4 PassInt [far] (11)
+C     ** Receive the array into a four-byte LONG INTEGER array of
+C     ** 11 elements, since the BASIC array was from 0 through 10
+C     ** which makes 11 elements.
+      write (*,*) ' '
+      write (*,*) 'FORTRAN Language'
+      write (*,*) '================'
+      write (*,*) PassInt(1), PassInt(2), PassInt(3)
+      write (*,*) PassInt(4), PassInt(5), PassInt(6)
+      write (*,*) PassInt(7), PassInt(8), PassInt(9)
+      write (*,*) PassInt(9), PassInt(10), PassInt(11)
+C     ** Display the 11 elements to the screen to compare with
+C     ** what was displayed by the BASIC program.
+      RETURN
+      END
+
+The following is the output from the program:
+
+   BASIC Language
+
+    37940         33524         13884         43346         27709
+    3244          147           10789         9183          19917
+    29339
+
+    FORTRAN Language
+
+    37940       33524       13884       43346
+    27709        3244         147       10789
+    9183       19917       29339
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

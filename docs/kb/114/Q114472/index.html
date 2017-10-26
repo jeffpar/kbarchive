@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114472: PRB: Viewer Errors 6181 and 6182 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114472: PRB: Viewer Errors 6181 and 6182" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114472/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114472/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114472/","publisher":null,"image":null,"headline":"Q114472: PRB: Viewer Errors 6181 and 6182","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114472-prb-viewer-errors-6181-and-6182">Q114472: PRB: Viewer Errors 6181 and 6182</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114472
+Product(s): Miscellaneous Software Development Kits
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Viewer Publishing Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to compile an RTF file with the Microsoft Multimedia Viewer, the
+following errors occur:
+
+  error 6181 specified word breaker unable to break word
+
+  error 6182 failure on DLL breaking function
+
+CAUSE
+=====
+
+These errors can occur if the TEMP environment variable is not set to a valid
+drive and directory or if that drive does not have enough space.
+
+RESOLUTION
+==========
+
+At a command prompt, type
+
+  set
+
+in order to determine the settings of the environment variables. If this
+environment variable is not set or is not set correctly, do the following 2
+steps:
+
+1. create a directory (for example, C:\TEMP)
+
+2. set the environment variable at the command prompt (set TEMP=c:\temp)
+
+MORE INFORMATION
+================
+
+NOTE: If the TEMP environment variable is set to a remote drive, Viewer will
+ignore the TEMP setting and place temporary files in your Windows directory
+instead.
+
+It is not a good idea to set the TEMP environment variable to the root directory.
+Windows has a limit on the number of files which can be created in the root
+directory. Page 12-4 of the "Viewer Authoring Guide" states the following:
+
+  If the drive on which this directory resides is not large enough to hold the
+  files, the compiler will report error messages and eventually halt
+  compilation.
+
+The error messages that will be generated are these errors, 6181 and 6182.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200
+Version           : :2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

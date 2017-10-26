@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q289120: XCLN: Exchange Server Performance Problems Caused by Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q289120: XCLN: Exchange Server Performance Problems Caused by Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/289/Q289120/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/289/Q289120/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/289/Q289120/","publisher":null,"image":null,"headline":"Q289120: XCLN: Exchange Server Performance Problems Caused by Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q289120-xcln-exchange-server-performance-problems-caused-by-clients">Q289120: XCLN: Exchange Server Performance Problems Caused by Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q289120
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 18-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+General Exchange Server performance and stability problems may be caused if a
+client application opens a large numbers of messages at once. Some add-on
+services and applications may inadvertently do this while performing their
+functions.
+
+Symptoms may be non-specific and can include slow performance on the server or
+unexpected program exits by clients. You may also observe Out-of-Memory errors
+on the Exchange Server computer. Examination of Exchange Server-related errors
+in the server Application log may show errors with the following IDs in the
+event descriptions:
+
+- 0x800700E
+- 1014
+- CdoE_NOT_ENOUGH_MEMORY
+
+RESOLUTION
+==========
+
+For Exchange Server 5.5 and earlier, you must address the problem from the
+client. Exchange 2000 provides two server-side options for dealing with this
+problem:
+
+- Limit the number of open messages for each client logon.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q289109 XADM: Limit the Number of Messages Opened per MAPI Logon
+
+- If you find that a particular client version is problematic in your
+  environment, you may prevent all clients of this version from connecting at
+  all to the Exchange 2000 server.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q289115 XADM: How to Disable MAPI Clients at a Server Level Based on Client
+  MAPI Provider Version
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange 2000 Server.
+Microsoft has confirmed this to be a problem in Microsoft Exchange 5.5 Server.
+
+MORE INFORMATION
+================
+
+You can view the number of open messages for each client logon in the Exchange
+Server 5.5 Administrator program or in Exchange System Manager for Exchange
+2000. A client logon is suspect if it shows more than 1,000 messages open for
+more than a few minutes at a time.
+
+To check the open message count:
+
+1. Start the Administrator program for Microsoft Exchange Server 5.5, or
+  Exchange System Manager for Exchange 2000.
+
+2. Expand the mailbox database object, and then click Logons.
+
+  NOTE: In Exchange Server 5.5, this database is always the private information
+  store. In Exchange 2000, the database name is set by the administrator.
+
+3. On the View menu, click Columns, and then add "Open Messages" to the
+  displayed columns.
+
+Note that the column display does not refresh automatically, and values in it are
+updated at approximately one minute intervals.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

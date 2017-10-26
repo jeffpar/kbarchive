@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147837: FIX: &quot;File not Found&quot; Error Message During Check In | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147837: FIX: &quot;File not Found&quot; Error Message During Check In" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147837/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147837/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147837/","publisher":null,"image":null,"headline":"Q147837: FIX: &quot;File not Found&quot; Error Message During Check In","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147837-fix-file-not-found-error-message-during-check-in">Q147837: FIX: "File not Found" Error Message During Check In</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147837
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600fix
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is possible to check out an entire project and its subprojects, recursively.
+The project structure can be preserved by using the "Build tree (override
+working dirs)" option in the Check Out dialog. If, however, one of the
+subprojects has a working directory set, SourceSafe will look in this working
+directory when checking in the projects. If the working directory is not the
+same as the directory structure which was created during the recursive checkout,
+a "File not Found" error will occur for each file in the subproject.
+
+CAUSE
+=====
+
+SourceSafe looks in the project's working directory for the files to check in
+rather than the check out directory.
+
+NOTE: From the command line, files can only be checked in from the working
+directory. In the interface, files may be checked in from the check out
+directory if the "Override working dirs" option is used.
+
+RESOLUTION
+==========
+
+If you don't know if working directories have been set for subordinate projects,
+use the "Override working dirs" option on the Check In dialog.
+
+Another option to avoid the error is to use the "Undo Check Out..." option.
+
+STATUS
+======
+
+This behavior is by design. This problem was corrected in Visual SourceSafe
+version 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Main project with several subprojects and associated files.
+
+2. Set a working directory for one of the subprojects to something other than
+  what will be used for the Main project.
+
+3. Check out the Main project recursively, and choose the "Build tree (override
+  working dirs)" option.
+
+4. Check the Main project in recursively. The error will occur.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

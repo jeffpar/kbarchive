@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158568: Installing Retired or Third-Party SCSI Drivers During Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158568: Installing Retired or Third-Party SCSI Drivers During Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158568/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158568/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158568/","publisher":null,"image":null,"headline":"Q158568: Installing Retired or Third-Party SCSI Drivers During Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158568-installing-retired-or-third-party-scsi-drivers-during-setup">Q158568: Installing Retired or Third-Party SCSI Drivers During Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158568
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the release of Windows NT version 4.0, the drivers for certain SCSI
+adapters have been moved from the base operating system to the Windows NT Driver
+Library included on the Windows NT 4.0 CD-ROM. Check the following list to
+determine if any of your adapters are affected by this change. If your computer
+has an adapter that appears on this list, you must create a driver disk before
+you can use that adapter. Use the driver disk to install the appropriate
+driver(s) during Setup, or keep the disk handy and install the driver once Setup
+is finished.
+
+Note that an unattended upgrade can no longer be performed with these adapters.
+On x86-based computers, the recommended method of performing Setup with any of
+these adapters is to use the three boot floppy disks with the CD-ROM.
+
+The following drivers have been moved:
+
+- Always.sys
+
+- Dtc329x.sys
+
+- T128.sys
+
+- T13b.sys
+
+- Tmv1.sys
+
+- Ultra124.sys
+
+- Wd33c93.sys
+
+The following adapters are affected by this change:
+
+- Always IN-2000
+
+- Data Technology Corp. 3290
+
+- Maynard 16-bit SCSI Adapter
+
+- MediaVision Pro Audio Spectrum-16
+
+- Trantor T-128
+
+- Trantor T-130B
+
+- UltraStor 124f EISA Disk Array Controller
+
+MORE INFORMATION
+================
+
+To create a driver disk for drivers that have been moved to the Driver Library,
+follow these steps:
+
+1. Create a blank formatted 3.5-inch disk.
+
+2. Copy all the files from the Drvlib\Storage\Retired\&lt;platform&gt; folder to
+  the floppy disk.
+
+  For enabler drivers, copy the files from the Drvlib\Storage\Fenb folder.
+
+3. Label the disk Driver Disk.
+
+To install drivers from the driver disk during Windows NT version 4.0 Setup,
+follow these steps:
+
+1. Start Windows NT Setup.
+
+2. When you see the "Setup has recognized the following mass storage devices in
+  your computer" message, press S to skip detection.
+
+3. Press S to display a list of supported SCSI host adapters.
+
+4. Click Other at the bottom of the list.
+
+5. Insert the Driver Disk you created. Select your host adapter from this list.
+
+  Windows NT will then recognize any devices attached to the adapter. Repeat
+  this step for each host adapter not already recognized by Windows NT Setup.
+
+To install drivers when Setup recognizes one of the supported SCSI host adapters
+without making the devices attached to it available for use, follow these
+steps:
+
+1. Restart Windows NT Setup.
+
+2. When Windows NT Setup displays the message "Setup is inspecting your
+  computer's hardware configuration..." press F6. This prevents Windows NT
+  Setup from performing disk controller detection and allows you to install a
+  driver from the Driver Disk you created. Note that all SCSI adapters will
+  have to be installed manually.
+
+3. When Windows NT Setup displays the message "Setup could not determine the
+  type of one or more mass storage devices installed in your system, or you
+  have chosen to manually specify an adapter" press S to display a list of
+  supported SCSI host adapters.
+
+4. Click Other at the bottom of the list.
+
+5. Insert the Driver Disk when you are prompted to do so, and select your host
+  adapter from the list. Note that in some cases, Windows NT Setup will
+  repeatedly prompt you to swap disks.
+
+  Windows NT will then recognize any devices attached to the adapter. Repeat
+  this step for each host adapter not already recognized by Windows NT Setup.
+
+To install drivers from your Driver Disk after running Windows NT 4.0 Setup,
+follow these steps:
+
+1. After installing the properly configured adapter in your computer, start
+  Windows NT version 4.0 as you normally would.
+
+2. In Control Panel, double-click SCSI Adapters.
+
+3. Click the Drivers tab, and then click Add.
+
+4. Click Have Disk, insert your Driver Disk in the appropriate floppy disk
+  drive, and then click OK.
+
+5. Click the driver in the list and then click OK. Click Continue to load the
+  driver.
+
+6. Restart the computer.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129979: How to Reinstall Win32s with Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129979: How to Reinstall Win32s with Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129979/","publisher":null,"image":null,"headline":"Q129979: How to Reinstall Win32s with Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129979-how-to-reinstall-win32s-with-visual-foxpro">Q129979: How to Reinstall Win32s with Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129979
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro uses the Microsoft Setup program. It provides flexibility by
+letting you install Visual FoxPro as well as remove parts of the application
+components once the application has been installed. To reinstall Win32s, it is
+necessary to remove the subsystem first. Then invoke the maintenance mode of the
+Microsoft Setup. This article explains the process of reinstalling Win32s in
+detail.
+
+MORE INFORMATION
+================
+
+Visual FoxPro is a 32-bit application, so it requires a 32-bit operating system.
+The Microsoft Setup system installs the Win32s operating system under Windows
+and Windows for Workgroups to provide a 32-bit environment.
+
+If you receive a Win32s error such as "Improper Installation," you might need to
+reinstall the subsystem. However, you should use extreme caution when
+proceeding. If you believe you have a faulty installation of the Win32s
+operating system, and need to reinstall it, use the following step-by-step
+procedure.
+
+
+1. Remove Win32s from your system.
+
+  a. Remove the following line in the [386Enh] section of the SYSTEM.INI file:
+
+  device=&lt;WINDOWS&gt;\&lt;SYSTEM&gt;\win32s\w32s.386
+
+     Here &lt;WINDOWS&gt; and &lt;SYSTEM&gt; are where the Windows and System
+     directories are located.
+
+  b. Modify the following line in the [BOOT] section of the SYSTEM.INI file:
+
+  drivers=mmsystem.dll, winmm16.dll
+
+     to the following (remove winmm16.dll):
+
+  drivers=mmsystem.dll
+
+  c. Delete the following files from the &lt;WINDOWS&gt;\&lt;SYSTEM&gt;
+     subdirectory or from the SYSTEM directory in network installations:
+
+  W32SYS.DLL
+  WIN32S16.DLL
+  WIN32S.INI
+
+     NOTE: In some instances the file WINMM16.DLL, located in the System
+     subdirectory, will also need to be deleted.
+
+  d. Delete all the files in the &lt;WINDOWS&gt;\&lt;SYSTEM&gt;\WIN32S
+     subdirectory or the &lt;SYSTEM&gt;\WIN32S subdirectory in network
+     installations. Then delete subdirectory itself.
+
+  e. Restart Windows.
+
+  NOTE: &lt;WINDOWS&gt; refers to the windows installation directory. On a
+  networked Windows installation, the system directory may be located on a
+  remote share. If you are only removing Win32s from your machine, then you do
+  not need to remove the shared files (in &lt;SYSTEM&gt; and
+  &lt;SYSTEM&gt;\WIN32S). Before removing these files from the network share,
+  make sure all users that use Win32s have removed the references to Win32s
+  from the SYSTEM.INI file.
+
+
+2. Reinstall Win32s.
+
+  Because the maintenance mode of the Microsoft Setup program is also designed
+  to reinstall system files, you can run the SETUP program to reinstall Win32s.
+  The maintenance mode of SETUP is started when SETUP detects that a version of
+  Visual FoxPro has been installed. When the Setup Dialog is displayed, select
+  the Add/Remove option, click the Change Option button, and click the Win32s
+  and OLE 2.02 check box option to add Win32s.
+
+  If you prefer to have a clean installation of Visual FoxPro, you can bypass
+  the maintenance mode of the Visual FoxPro Setup by deleting the FOXSET16.STF,
+  FOXSET32.STF, or FOXSET95.STF files located in the VFP\SETUP directory. Setup
+  Table Files (STF) are text files that contain information about your Setup.
+  In particular, they report at which point a maintenance mode installation
+  should begin. Deleting the STF file will force a new installation of Visual
+  FoxPro.
+
+Additional query words: VFoxWin uninstall 3.00
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

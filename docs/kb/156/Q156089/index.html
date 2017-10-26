@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156089/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156089/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156089/","publisher":null,"image":null,"headline":"Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156089-prb-closing-sdi-top-level-form-does-not-release-menu">Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156089
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp600
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Top-Level, or single document interface (SDI), form uses a menu, this menu
+is not automatically released when the form is released.
+
+WORKAROUND
+==========
+
+In order for a menu to be released, you must issue the RELEASE MENUS command. If
+you want the menu to be released when the form is closed, issue the command as
+follows in the Destroy method of the form:
+
+     RELEASE MENUS &lt;menuname&gt; EXTENDED
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+With Visual FoxPro 5.0 or 6.0, you can create forms that appear outside of (or
+in lieu of) the FoxPro desktop and that appear in the task list or on the task
+bar. These forms are called Top-Level, or SDI, forms and require setting the
+form's ShowWindow property to "2 - As Top-Level Form." You can add menus,
+toolbars, and child forms to these forms the same way you add them to the Visual
+FoxPro desktop in this and previous versions of Visual FoxPro.
+
+There is a sample SDI form in the Solution sample application that displays these
+new capabilities.
+
+Access the Solution sample by clicking Sample Applications from the Help menu in
+the Visual FoxPro 5.0 or 6.0. This opens the Sample Applications Overview help
+topic. Start the Solution sample by clicking Run, which is to the right of
+Solutions Sample under Access.
+
+You can access the SDI form example within the Solution application by clicking
+Forms to expand the folder tree in the Visual FoxPro Solutions dialog box. Then
+click "Create an SDI form" and the Run Sample button to run the form.
+Alternately, you can click the See Code button to display the form in the Form
+Designer.
+
+You must explicitly release the menu so you can reuse the menu if desired.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form called Test.
+
+2. Set its ShowWindow property to "2 - As Top-Level Form" in the Form Designer.
+
+3. In the Init method of the form, add the following code:
+
+        DO TESTMENU.MPR with THIS, .T.
+
+4. Create a new menu. Click the Menu button, rather than the Shortcut button.
+
+5. On the Menu menu, click Quick Menu to create a default quick menu.
+
+6. On the View menu, click General Options. In the General Options dialog box,
+  select the Top-Level Form check box, then click OK.
+
+7. On the Menu menu, click Generate and Save the menu as Testmenu. Click the
+  Generate button to generate the default .mpr file.
+
+8. Run the Test form. Notice that the menu appears in the form itself.
+
+9. Close the form. Issue a DISPLAY MEMORY command, and notice that the menu
+  definition remains in memory.
+
+You can place the following code in the form's Destroy method, which causes the
+menu to be released when the form is closed:
+
+     RELEASE MENUS (This.Name) EXTENDED
+
+NOTE: This technique is explained in more detail in the header of any .mpr file
+created when you generate a Top-Level menu.
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

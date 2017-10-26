@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166625: Host Print Service Stops Responding After Invalid SCS Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166625: Host Print Service Stops Responding After Invalid SCS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166625/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166625/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166625/","publisher":null,"image":null,"headline":"Q166625: Host Print Service Stops Responding After Invalid SCS Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166625-host-print-service-stops-responding-after-invalid-scs-code">Q166625: Host Print Service Stops Responding After Invalid SCS Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166625
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbprint
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A 3270 print session gets stuck in a spooling state when an invalid SCS control
+code is sent to the host print service. SNA Server Manager is slow to respond to
+requests when this problem occurs.
+
+The Windows NT Application Event Log logs an Event 21, similar to the following:
+
+  
+
+  Event ID: 21
+  Source: SNA Server
+  Description: (1124) Negative Response Sent on Connection &lt;connection
+  name&gt;
+                       (SENSE = 1005)
+
+When you stop the SNA Server host print service, the system returns to its normal
+responsiveness.
+
+CAUSE
+=====
+
+The SNA Server host print service does not correctly reset an error field after
+an invalid SCS control code is received from the host. This causes the print
+service to get into a loop that prevents print jobs from completing and may
+cause the system's responsiveness to slow, especially in SNA Server Manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Print service internal traces that are captured when this problem occurs may
+include data similar to the following:
+
+  INTRN SNAP-3270   S3PR1DAT            HPBYTE                  43
+  INTRN SNAP-3270   S3PR1DAT            START OF SHF/SVF/SLD
+  INTRN SNAP-3270   S3PR1DAT            CONTINUE
+  INTRN SNAP-3270   S3PR1DAT            HPORDER                 2
+  INTRN SNAP-3270   S3PR1DAT            PRTDSTRT                2872
+  INTRN SNAP-3270   S3PR1DAT            HPBYTE                  131
+  INTRN SNAP-3270   S3PR1DAT            SHF/SVF/SLD 2ND BYTE    83
+  INTRN SNAP-3270   S3PR1DAT            EXIT
+  INTRN SNAP-3270   S3PRDSCS           SCS DATASTREAM ERROR
+  INTRN SNAP-3270   S3PRDSCS           EXIT
+  INTRN SNAP-3270   S3PRRSCS           ENTRY
+
+
+With the fix applied, the SNA Server host print service correctly handles invalid
+SCS control codes; the print service does not get into the loop that causes it
+to stop responding. The updated print service prints everything contained in the
+print job up to the invalid SCS control code. After the invalid SCS control
+code, the print service notifies the printer that the print job is finished.
+
+Additional query words: LU1 3287
+
+======================================================================
+Keywords          : kbnetwork kbprint 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

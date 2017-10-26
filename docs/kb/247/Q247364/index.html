@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247364/","publisher":null,"image":null,"headline":"Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247364-iis-sample-adsi-script-to-create-ftp-virtual-servers">Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247364
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Services (IIS) version 5.0 includes several
+sample Windows Scripting Host (WSH) administration scripts in the
+%SystemDrive%\InetPub\AdminScripts folder. These sample scripts perform various
+administrative functions. The purpose of this article is to define a sample
+script to complement the existing set of scripts that create FTP virtual
+servers.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+WSH Sample ADSI Script:
+
+1. Save the following code as Mkftpsite.vbs in your
+  %SystemDrive%\InetPub\AdminScripts folder:
+
+  '------------------------------------------------------------
+  '
+  ' This is a simple script to create a new virtual FTP server.
+  '
+  ' Call this script with "-?" for usage instructions
+  '
+  '------------------------------------------------------------
+
+  ' Force explicit declaration of all variables
+  Option Explicit
+
+  On Error Resume Next
+
+  Dim bArgStart
+  Dim bVerbose
+  Dim iArgPort
+  Dim iArgSiteNumber
+  Dim iArgNum
+  Dim oArgs
+  Dim szArgComputers
+  Dim szArgIPAddress
+  Dim szArgRootDirectory
+  Dim szArgServerComment
+
+  bArgStart = True
+  bVerbose = False
+  iArgPort = 21
+  iArgSiteNumber = 0
+  szArgIPAddress = ""
+  szArgComputers = Array(1)
+  szArgComputers(0) = "LocalHost"
+
+  Set oArgs = WScript.Arguments
+  iArgNum = 0
+
+  While iArgNum &lt; oArgs.Count
+
+    Select Case LCase(oArgs(iArgNum))
+      Case "-o","--port":
+        iArgNum = iArgNum + 1
+        iArgPort = oArgs(iArgNum)  
+      Case "-i","--ipaddress":
+        iArgNum = iArgNum + 1
+        szArgIPAddress = oArgs(iArgNum)
+      Case "-r","--rootdirectory":
+        iArgNum = iArgNum + 1
+        szArgRootDirectory = oArgs(iArgNum)
+      Case "-t","--comment":
+        iArgNum = iArgNum + 1
+        szArgServerComment = oArgs(iArgNum)
+      Case "-c","--computer":
+        iArgNum = iArgNum + 1
+        szArgComputers = Split(oArgs(iArgNum),",",-1)
+      Case "-n","--sitenumber":
+        iArgNum = iArgNum + 1
+        iArgSiteNumber = CLng(oArgs(iArgNum))
+      Case "-d","--dontstart":
+        bArgStart = False
+      Case "-?","--help":
+        Call DisplayUsage
+      Case "-v","--verbose":
+        bVerbose = True
+      Case Else:
+        WScript.Echo "Unknown argument " &amp; oArgs(iArgNum)
+        Call DisplayUsage
+    End Select  
+
+    iArgNum = iArgNum + 1
+  Wend
+
+  If (szArgRootDirectory = "") Or (szArgServerComment = "") Then
+    If (szArgRootDirectory = "") Then
+      WScript.Echo "Missing Root Directory"
+    Else
+      WScript.Echo "Missing Server Comment"
+    End If
+    Call DisplayUsage
+    WScript.Quit(1)
+  End If
+
+  Call ASTCreateFtpSite(szArgIPAddress, szArgRootDirectory, szArgServerComment, iArgPort, szArgComputers, iArgSiteNumber, bArgStart)
+
+  Sub ASTCreateFtpSite(szIPAddress, szRootDirectory, szServerComment, iPortNum, szComputers, iSiteNumber, bStart)
+    Dim bDone
+    Dim iComputerIndex
+    Dim iIndex
+    Dim oFtpServer
+    Dim oFtpSite
+    Dim oMsFtpSvc
+    Dim oNewFtpServer
+    Dim oNewDir
+    Dim szBindings
+    Dim szBindingString
+    Dim szComp
+    Dim szNewBindings
+
+    On Error Resume Next
+
+    For iComputerIndex = 0 To UBound(szComputers)
+      szComp = szComputers(iComputerIndex)
+      If iComputerIndex &lt;&gt; UBound(szComputers) Then
+        Trace "Creating FTP site on " &amp; szComp &amp; "."
+      End If
+
+      ' Grab the ftp service object
+      Err.Clear
+      Set oMsFtpSvc = GetObject("IIS://" &amp; szComp &amp; "/MSFTPSVC")
+      If Err.Number &lt;&gt; 0 Then
+        Display "Unable to open: " &amp; "IIS://" &amp; szComp &amp; "/MSFTPSVC"
+      End If
+
+      szBindingString = szIPAddress &amp; ":" &amp; iPortNum &amp; ":"
+      Trace "Making sure this FTP server doesn't conflict with another..."
+      For Each oFtpServer in oMsFtpSvc
+        If oFtpServer.Class = "IIsFtpServer" Then
+          szBindings = oFtpServer.ServerBindings
+          If szBindingString = szBindings(0) Then
+            Display "The server bindings you specified are duplicated in another virtual FTP server."
+            WScript.Quit (1)
+          End If
+        End If
+      Next
+
+      iIndex = 1
+      bDone = False
+      Trace "Creating new FTP server..."
+
+      ' If the user specified a SiteNumber, then use that.  Otherwise,
+      ' test successive numbers under MSFTPSVC until an unoccupied slot is found
+      If iSiteNumber &lt;&gt; 0 Then
+        Set oNewFtpServer = oMsFtpSvc.Create("IIsFtpServer", iSiteNumber)
+        oNewFtpServer.SetInfo
+        If (Err.Number &lt;&gt; 0) Then
+          WScript.Echo "Couldn't create a FTP site with the specified number: " &amp; iSiteNumber
+          WScript.Quit (1)
+        Else
+          Err.Clear
+          ' Verify that the newly created site can be retrieved
+          Set oFtpSite = GetObject("IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iSiteNumber)
+          If (Err.Number = 0) Then
+            bDone = True
+            Trace "FTP server created. Path is - " &amp; "IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iSiteNumber
+          Else
+            WScript.Echo "Couldn't create a FTP site with the specified number: " &amp; iSiteNumber
+            WScript.Quit (1)
+          End If
+        End If
+      Else
+        While (Not bDone)
+          Err.Clear
+          Set oFtpSite = GetObject("IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iIndex)
+
+          If (Err.Number = 0) Then
+            ' A ftp server is already defined at this position so increment
+            iIndex = iIndex + 1
+          Else
+            Err.Clear
+            Set oNewFtpServer = oMsFtpSvc.Create("IIsFtpServer", iIndex)
+            oNewFtpServer.SetInfo
+            If (Err.Number &lt;&gt; 0) Then
+              ' If call to Create failed then try the next number
+              iIndex = iIndex + 1
+            Else
+              Err.Clear
+              ' Verify that the newly created site can be retrieved
+              Set oFtpSite = GetObject("IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iIndex)
+              If (Err.Number = 0) Then
+                bDone = True
+                Trace "FTP server created. Path is - " &amp; "IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iIndex
+              Else
+                iIndex = iIndex + 1
+              End If
+            End If
+          End If
+
+          ' sanity check at 10K sites
+          If (iIndex &gt; 10000) Then
+            Display "Seem to be unable to create new FTP server.  Server number is " &amp; iIndex &amp; "."
+            WScript.Quit (1)
+          End If
+        Wend
+      End If
+
+      szNewBindings = Array(0)
+      szNewBindings(0) = szBindingString
+      oNewFtpServer.ServerBindings = szNewBindings
+      oNewFtpServer.ServerComment = szServerComment
+      oNewFtpServer.SetInfo
+
+      ' Now create the root directory object.
+      Trace "Setting the home directory..."
+      Set oNewDir = oNewFtpServer.Create("IIsFtpVirtualDir", "ROOT")
+      oNewDir.Path = szRootDirectory
+      oNewDir.AccessRead = True
+      Err.Clear
+      oNewDir.SetInfo
+
+      If (Err.Number = 0) Then
+        Trace "Home directory set."
+      Else
+        Display "Error setting home directory."
+      End If
+
+      Trace "FTP site created!"
+
+      If bStart = True Then
+        Trace "Attempting to start new FTP server..."
+        Err.Clear
+        Set oNewFtpServer = GetObject("IIS://" &amp; szComp &amp; "/MSFTPSVC/" &amp; iIndex)
+        oNewFtpServer.Start
+        ' the next line "debounces" some startup errors
+        WScript.Sleep 5000
+        If (Err.Number &lt;&gt; 0) Or (oNewFtpServer.ServerState &lt;&gt; 2) Then
+          Display "Error starting FTP server!"
+          Err.Clear
+        Else
+          Trace "FTP server started succesfully!"
+        End If
+      End If
+    Next
+  End Sub
+
+  ' Display the usage message
+  Sub DisplayUsage
+    WScript.Echo "Usage: mkftpsite &lt;-r|--RootDirectory ""ROOT DIRECTORY""&gt;"
+    WScript.Echo "                 &lt;-t|--Comment       ""SERVER COMMENT""&gt;"
+    WScript.Echo "                 [-c|--Computer      COMPUTER1[,COMPUTER2...]]"
+    WScript.Echo "                 [-o|--Port          PORT NUM]"
+    WScript.Echo "                 [-i|--IPAddress     IP ADDRESS]"
+    WScript.Echo "                 [-n|--SiteNumber    SITENUMBER]"
+    WScript.Echo "                 [-d|--DontStart]"
+    WScript.Echo "                 [-v|--Verbose]"
+    WScript.Echo "                 [-?|--Help]"
+    WScript.Echo ""
+    WScript.Echo "IP ADDRESS       Optional - The IP Address to assign to the new server"
+    WScript.Echo "PORT NUM         Optional - The port to which the server should bind"
+    WScript.Echo "ROOT DIRECTORY   Required - Full path to the root directory for the new server"
+    WScript.Echo "SERVER COMMENT   Required - The server comment (this is the name that appears"
+    WScript.Echo "                            in the MMC)"
+    WScript.Echo "SITENUMBER       Optional - The site number is the number in the ADSI path that"
+    WScript.Echo "                            the FTP server will be created at (i.e. MSFTPSVC/3)"
+    WScript.Echo ""
+    WScript.Echo "Example 1: mkftpsite -r D:\Roots\MyCompany --DontStart -t ""My Company Site"""
+    WScript.Echo "Example 2: mkftpsite -r C:\Inetpub\ftproot -t Test -o 1021"
+    WScript.Quit (1)
+  End Sub
+
+  Sub Display(Msg)
+    WScript.Echo Now &amp; " : ERROR: " &amp; Msg
+    WScript.Echo Now &amp; " : ERROR: 0x" &amp; Hex(Err.Number) &amp; " - " &amp; Err.Description
+  End Sub
+
+  Sub Trace(Msg)
+    If bVerbose = True then
+      WScript.Echo Now &amp; " : " &amp; Msg  
+    End If
+  End Sub
+
+2. Call this script with the following syntax for full usage instructions:
+
+  
+  C:\&gt;CSCRIPT %SystemDrive%\InetPub\AdminScripts\MKFTPSITE.VBS -?
+
+For more information on Microsoft scripting technologies, see the following Web
+site:
+
+  http://msdn.microsoft.com/scripting/
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

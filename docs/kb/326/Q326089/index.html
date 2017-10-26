@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/326/Q326089/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/326/Q326089/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/326/Q326089/","publisher":null,"image":null,"headline":"Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q326089-how-to-enable-kerberos-on-a-non-dc-for-iis-web-applications">Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q326089
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 02-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.1 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Enable Delegation on Domain Controllers
+   - Test FQDN Name Resolution on IIS
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to enable Kerberos on an Internet
+Information Services (IIS) computer that is not running as a domain controller.
+By default, domain controllers have Kerberos enabled to do many of the security
+functions in the Active Directory domains. However, IIS member servers are not
+enabled to communicate by using the faster, more secure Kerberos protocol.
+
+Enable Delegation on Domain Controllers
+---------------------------------------
+
+1. Click Start, point to Programs, click Administrative Tools, and then click
+  Active Directory Users and Computers.
+
+2. Under Computers Organizational Unit, click to select the name of the IIS
+  server.
+
+3. Right-click the server name, and then click Properties to open the computer
+  properties for the IIS computer.
+
+4. On the General tab, click to select Trust Computer for Delegation, and then
+  click Apply.
+
+NOTE: Enabling your IIS server for delegation does introduce possible security
+concerns, as noted in the warning on the General tab. This delegation permits
+services that run in the context of the system account to request information
+from remote services. This is enabled because Kerberos is a mutual
+authentication protocol, that is, it verifies the client and server
+credentials.
+
+Test FQDN Name Resolution on IIS
+--------------------------------
+
+For Kerberos to work, all communication must use a fully qualified domain name
+(FQDN). To make sure that IIS can be reached with an FQDN, follow these steps:
+
+1. On the domain controller, open a command prompt. To do this, click Start,
+  click Run, type "CMD" (without the quotation marks), and then click OK.
+
+2. At the command prompt, type "ping &lt;fqdn&gt;" (without the quotation
+  marks), and then press ENTER. For example:
+
+  ping webserver01.mydomain.ms.local
+
+If the operation is successful, the system replies with a readout that states
+that the system successfully communicated during all 5 attempts.
+
+If these steps do not work (that is, if the ping operation is unsuccessful), use
+the articles that are listed in the "References" section to troubleshoot network
+Domain Name System (DNS) issues. For Kerberos to work as designed, DNS
+resolution must be working correctly on your network.
+
+REFERENCES
+==========
+
+For additional information about DNS troubleshooting, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q300986 HOW TO: Diagnose and Test TCP/IP or NetBIOS Network Connections in
+  Windows 2000
+
+  Q316341 HOW TO: Troubleshoot DNS Name Resolution on the Internet in Windows
+  2000
+
+
+For additional information about Kerberos, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q287537 Using Basic Authentication to Generate Kerberos Tokens
+
+  Q283201 HOWTO: Use Delegation in Windows 2000 with COM+
+
+  Q266080 Answers to Frequently Asked Kerberos Questions
+
+  Q282189 Error 0x800706D5 from ASP When Calling OOP Component with Delegation
+  Security Level
+
+  Q314404 HOWTO: Use Kerberos with the ServerXMLHTTP Component in MSXML
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis510
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

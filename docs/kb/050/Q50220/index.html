@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50220: QB.EXE 4.50 &quot;String Space Corrupt&quot; Passing Function to .QLB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50220: QB.EXE 4.50 &quot;String Space Corrupt&quot; Passing Function to .QLB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50220/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50220/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50220/","publisher":null,"image":null,"headline":"Q50220: QB.EXE 4.50 &quot;String Space Corrupt&quot; Passing Function to .QLB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50220-qbexe-450-string-space-corrupt-passing-function-to-qlb">Q50220: QB.EXE 4.50 "String Space Corrupt" Passing Function to .QLB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50220
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891006-116 buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 26-FEB-1990
+
+There is a problem in the QuickBASIC Version 4.50 environment with
+passing a FUNCTION procedure as a parameter to a user-defined function
+that calls a SUBprogram when the FUNCTION and SUBprogram procedures
+are located in a Quick library. A "String space corrupt" error
+displays, and the program returns to DOS. This problem occurs only
+when running the program a second time [using any combination of the
+ALT+R+R (Restart), F8, F5 (ALT+R+N), or SHIFT+F5 (ALT+R+S) (Start)
+keys]. The problem doesn't occur in compiled .EXE programs.
+
+Microsoft has confirmed this to be a problem in the QuickBASIC
+environment (QB.EXE) in Version 4.50. This problem was corrected in
+the QBX.EXE environment of Microsoft BASIC Professional Development
+System (PDS) Version 7.00 for MS-DOS and MS OS/2 (fixlist7.00).
+
+You can work around this problem by assigning the value returned by
+the BN$ FUNCTION to a temporary value and passing this temporary value
+when you invoke the FNOPEN% user-defined function (as demonstrated in
+MAIN.BAS below).
+
+The "String space corrupt" error is not generated in any of the
+following cases:
+
+1. If QLIB.BAS (shown below) is loaded as a secondary module instead
+   of as a .QLB (Quick library)
+
+2. When the two modules (shown below) are compiled into an .EXE (using
+   QLIB.LIB or QLIB.OBJ) and run as an .EXE
+
+3. When QuickBASIC Version 4.00 or 4.00b is used
+
+The following programs, MAIN.BAS and QLIB.BAS, demonstrate the
+problem. MAIN.BAS is the module loaded into the environment, and
+QLIB.BAS is the Quick library, which is loaded in with the /L
+invocation switch (for example, QB MAIN /L QLIB).
+
+MAIN.BAS
+--------
+
+DECLARE FUNCTION BN$ (X$)
+DECLARE SUB SOPEN (KAN%, K$, BEST$, RECL%)
+
+DEF FNOPEN% (KAN%, K$, BEST$, RECL%)
+     CALL SOPEN(KAN%, K$, BEST$, RECL%)
+END DEF
+
+CLS : LOCATE 21, 1
+
+'Statement that causes the "String space corrupt" error:
+FS% = FNOPEN%(2, "S", BN$("XXXXACTR"), 256)
+
+'Workaround to eliminate the "String space corrupt" error:
+'TEMP$ = BN$("XXXXACTR")
+'FS% = FNOPEN%(2, "S", TEMP$, 256)
+
+QLIB.BAS
+--------
+
+DECLARE FUNCTION BN$ (X$)
+DECLARE SUB SOPEN (KAN%, K$, BEST$, RECL%)
+FUNCTION BN$ (X$)
+     BN$ = "C:0001" + MID$(X$, 5)
+END FUNCTION
+SUB SOPEN (KAN%, K$, BEST$, RECL%)
+     PRINT BEST$
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163059: WD97: Some Fonts Are Not Available in Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163059: WD97: Some Fonts Are Not Available in Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163059/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163059/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163059/","publisher":null,"image":null,"headline":"Q163059: WD97: Some Fonts Are Not Available in Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163059-wd97-some-fonts-are-not-available-in-word">Q163059: WD97: Some Fonts Are Not Available in Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163059
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbprint kbualink97kbfaq
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+For a Microsoft Word 2002 version of this article, see Q291354.
+
+SUMMARY
+=======
+
+The following TrueType fonts, available in earlier versions of Word for Windows,
+are no longer available in Word 97. This functionality is by design.
+
+- Arial CE
+- Arial Cyr
+- Arial Greek
+- Bookshelf Symbol 1
+- Bookshelf Symbol 2
+- Courier New CE
+- Courier New Cyr
+- Courier Greek
+- MS LineDraw
+- Times New Roman CE
+- Times New Roman Cyr
+- Times New Roman Greek
+
+The following vector fonts available in earlier versions of Word for Windows are
+no longer available in Word 97. This functionality is by design.
+
+- Modern
+- Roman
+- Script
+
+Screen fonts are not available in Microsoft Word 97 for Windows or earlier
+versions of Word for Windows. Screen fonts may include:
+
+- Fixedsys
+- MS Sans Serif
+- MS Serif
+- Small Fonts
+- System
+- Terminal
+
+MORE INFORMATION
+================
+
+MS LineDraw
+-----------
+
+The MS LineDraw font is identified as a symbol font. Therefore, Word 97 will
+interpret text typed in the MS LineDraw font as a series of symbols and many of
+formatting and proofing features of Word will ignore the text.
+
+Courier New contains the exact same character set as MS LineDraw. Existing
+documents formatted with the MS LineDraw font will be mapped to Courier New when
+opened in Word 97.
+
+To access the line drawing characters that used to be available in MS LineDraw,
+click Symbol on the Insert menu, change the font to (normal text), and change
+the Subset to Box Drawing.
+
+Bookshelf Symbol
+----------------
+
+Bookshelf Symbol 1 and Bookshelf Symbol 2 fonts are not proper symbol fonts.
+Because Word 97 supports Unicode, these fonts are unusable in Word 97. In many
+cases, if a converted document contains these fonts, you will get "empty"
+characters, represented by a square box.
+
+International Fonts
+-------------------
+
+International font sets that are available in Word 7.0 are not automatically
+available in Word 97. Word 97 makes available only the fonts that are determined
+by the language and keyboard setting in Windows 95.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q159341 Word 97: International Fonts Don't Appear in Font List
+
+Vector Fonts
+------------
+
+Vector fonts use an older font technology and the quality of the printed output
+is very poor. Because of the poor printed quality, these fonts were removed from
+the font drop-down box in Microsoft Word 97.
+
+Examples of this type of font are the Roman, Modern, and Script. They are mostly
+used by Plotter printers under Microsoft Windows 3.x.
+
+Screen Fonts
+------------
+
+Microsoft Word is designed to produce WYSIWYG (What you see is what you get)
+output. In order to attain that goal, the text that is displayed on the screen
+must be able to be printed. If the text is formatted with a screen font, then a
+font substitution must occur when the document is printed because screen fonts
+are for display only and cannot be printed.
+
+Performing a font substitution when printing may produce non-WYSIWYG output. For
+this reason, screen fonts are not available in the font drop-down box.
+
+You can still force Word to use a screen font to display the text by typing in
+the name of the font, exactly as it is named in Windows, into the font drop-down
+box and pressing ENTER.
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbprint kbualink97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

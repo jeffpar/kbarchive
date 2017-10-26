@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200233/","publisher":null,"image":null,"headline":"Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200233-xfor-modifying-proxy-address-generators-for-notes-snads-and-p">Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200233
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kb3rdparty kbusage
+Last Modified: 08-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some cases, the administrator of an Exchange Server computer may want to
+alter the format used in generating e-mail proxy addresses, particularly for the
+Lotus Notes, SNADS, and OV/VM (PROFS) connectors. This is accomplished by
+altering the Address Type definitions within the Site Addressing object.
+
+MORE INFORMATION
+================
+
+For example, take the Lotus Notes proxy address generator. By default, Notes
+proxy addresses are generated in the following format:
+
+  Display Name/Exchange Site/Exchange Org@Exchange
+
+You may want to change this addressing format to follow naming conventions used
+within your organization. You can use variables in place of the defaults. The
+following variables may be used within the Site Addressing object (case
+insensitive):
+
+  &amp;M - The mailbox name or alias of the user.
+  &amp;I - The user's initials.
+  &amp;D - The user's display name (compressed to avoid white spaces).
+  &amp;G - The user's first name.
+  &amp;S - The user's last name.
+
+Combinations of these can be used together, as well as a specific number of
+characters from each group. To specify the number of characters used for a
+particular variable, simply append a number on the end of the variable, as
+follows:
+
+  &amp;S2 = The first two characters of the user's last name
+
+See the examples at the end of this article.
+
+To modify these settings for your Exchange Server site, follow the steps below:
+
+1. Start the Exchange Server Administrator program.
+
+2. Select the Configuration container directly underneath your Site.
+
+3. Double-click the Site Addressing object in the right pane.
+
+4. Select the Site Addressing tab.
+
+5. Select the Notes address, and click Edit.
+
+6. Type in your new address format using the variables inidicated above.
+
+7. Click OK.
+
+At this time, you are asked if you would like all the existing Notes addresses to
+be modified to reflect the changes within site addressing. If you select Yes,
+the recipients within that site will inherit the new addressing format for their
+Notes e-mail proxy addess.
+
+Examples
+--------
+
+Name: Nancy M. Lee
+
+  Site Addressing: &amp;G@Exchange
+  Result: Nancy@Exchange
+
+  Site Addressing: &amp;S&amp;G&amp;I/Microsoft@Exchange
+  Result: LeeNancyM/Microsoft@Exchange
+
+  Site Addressing: &amp;S&amp;G3@Exchange
+  Result: LeeNan@Exchange
+
+This modification to site addressing can also be done with the Exchange Server
+SMTP proxy generator. For additional information on how to do this, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q153270 Internet Mail Connector Proxy Generator Options
+
+Additional query words: modifying proxy address generator
+
+======================================================================
+Keywords          : kb3rdparty kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

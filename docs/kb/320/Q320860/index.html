@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/320/Q320860/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/320/Q320860/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/320/Q320860/","publisher":null,"image":null,"headline":"Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q320860-prb-operation-could-not-be-completed-err-msg">Q320860: PRB: "Operation Could Not Be Completed" Err Msg</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q320860
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSSSafe kbdssupport
+Last Modified: 10-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe 6.0c, used with:
+   - Microsoft Visual Studio.NET (2002), Professional Edition 
+   - Microsoft Visual Studio.NET (2002), Enterprise Architect Edition 
+   - Microsoft Visual Studio.NET (2002), Enterprise Developer Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can integrate a solution that is created by using Visual Studio .NET with
+Visual SourceSafe to implement source code control and to facilitate development
+in a team environment.
+
+When you integrate a Visual Studio .NET solution with Visual SourceSafe, a
+project is created that can be administered from Visual SourceSafe Explorer.
+However, if you delete this project, or if you delete and destroy this project
+in Visual SourceSafe Explorer while the project is checked out in the Visual
+Studio .NET integrated development environment (IDE), you receive the following
+error message when you try to check in the project:
+
+  The operation could not be completed
+
+Additionally, the corresponding .sln file is deleted from the user's hard disk,
+which may result in data loss.
+
+RESOLUTION
+==========
+
+If the project is deleted but is not destroyed, the project can be recovered
+from Visual SourceSafe Explorer. After recovery, you must check in the solution
+from the Visual Studio .NET IDE.
+
+If the project is deleted and destroyed, you must restore the .sln file from a
+backup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual SourceSafe.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Start Visual Studio .NET, and then create a blank solution.
+
+2. Follow these steps to place the solution under source code control:
+
+  a. In Solution Explorer, right-click the solution, and then click "Add
+     Solution to Source Control".
+
+  b. Log on to a Visual SourceSafe database.
+
+  c. Click OK to accept the default Visual SourceSafe project name and folder
+     structure, and then click Yes to create the project.
+
+3. In Solution Explorer, right-click the solution, and then click Check Out.
+
+4. In the Check Out dialog box, make sure that all of the items in the solution
+  hierarchy are selected, and then click Check Out.
+
+5. Start Visual SourceSafe Explorer, and then log on to the database that you
+  used in step 2b.
+
+6. In Visual SourceSafe Explorer, delete the project that you created in step
+  2c. Click Yes All in the resulting message dialog box, which states that the
+  solution is currently checked out. Note that the problem reproduces
+  regardless of whether you destroy the project permanently.
+
+7. In the Visual Studio .NET IDE, right-click the solution in Solution Explorer,
+  and then click Check In.
+
+8. In the Check In dialog box, make sure that all of the items in the solution
+  hierarchy are selected, and then click Check In.
+
+9. Click Yes All two times, and then click OK. Notice that you receive the error
+  message that is listed in the "Symptoms" section. Additionally, notice that
+  the solution still appears as being checked out in the Visual Studio .NET IDE
+  and that the .sln file has been deleted from the hard disk.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSSSafe kbdssupport 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600C
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

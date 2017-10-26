@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185030/","publisher":null,"image":null,"headline":"Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185030-wd97-odma-how-word-97-works-with-docs-open-pc-docs">Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185030
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbdta kbtemplate word97kbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes what DOCS Open(R) from PC DOCS, Inc. is and how Microsoft
+Word 97 for Windows integrates with DOCS Open.
+
+MORE INFORMATION
+================
+
+DOCS Open is a document management solution that enables you to control,
+organize, access, and share information. Word processing documents,
+spreadsheets, presentations, forms, images, e-mail messages, or any type of file
+you want to save can be managed through DOCS Open.
+
+DOCS Open is an open architecture, working in virtually any computer environment
+to manage network-based information across a variety of applications, platforms,
+databases and networks. DOCS Open creates a document profile for each document
+you create. To retrieve a document, you select a search that locates the
+document profiles that you or someone else has created.
+
+How DOCS Open Works
+-------------------
+
+A Document Profile is associated with every DOCS Open document that you create.
+The Document Profile form is analogous to a library catalog card. It contains
+customizable attribute information (author, document title, client number,
+project, application type, and so forth) which describes a DOCS Open document.
+When you want to retrieve a document, you simply select a search that locates
+the Document Profiles that were created by you or other DOCS Open users.
+
+DOCS Open lets you search remote file servers automatically and provides you with
+a host of powerful, easy-to-use search features. You can search for any words or
+phrases in the text of the document or the Document Profile. Document Profiles
+are stored in a DOCS Open Library.
+
+How Word 97 Integrates with DOCS Open
+-------------------------------------
+
+As an Open Document Management (ODMA) compliant application, Word 97 searches the
+Windows Registry during start-up for either of the following keys to determine
+if a document management system (DMS) is installed.
+
+  HKEY_LOCAL_MACHINE\Software\Classes\ODMA
+
+  -or-
+
+  HKEY_LOCAL_MACHINE\Software\Classes\ODMA32
+
+If DOCS Open is found as installed in this registry key, Word 97 initiates calls
+(hooks) into DOCS Open using ODMA integration. As a result of this integration,
+several default Word functions are either replaced or supplemented with the DOCS
+Open interface. Items that are replaced are supplemented include the following
+commands on the File menu:
+
+- Open
+
+- Close
+
+- Save
+
+- Save As
+
+- Save as HTML
+
+- Versions
+
+- Properties
+
+Microsoft Word 97 does not have full ODMA integration for all features. To
+compensate for this, DOCS Open installs the Wordin80.dot template, usually
+located in the "\Program Files\Microsoft Office\Office\Startup" folder, which
+adds four additional menu commands (through the use of macros) to Word 97 as
+listed in the following table.
+
+NOTE: The macro name that adds the menu command is listed inside the parentheses
+below the menu command. For example, the macro name is shown as
+(&lt;macroname&gt;).
+
+  Menu Command Added
+  (Macro Name)              Menu     Function of Menu Command
+  ------------------------------------------------------------------------
+
+  Save With Options         File     This command provides a dialog box
+  (PasswordProtectDocument)          before saving that allows you to
+                                     password protect the document and
+                                     also allows you to choose the file
+                                     format your document should be saved
+                                     in.
+
+  DOCS Open Footer          Insert   This command adds a footer to the
+  (Footer)                           current document based on the values
+                                     stored in a profile.
+
+  DOCS Open Mail Merge      Tools    Microsoft Word 97 does not provide
+  (PCDOCSMailMerge)                  ODMA integration for a mail merge.
+                                     DOCS Open provides macro integration
+                                     for using the mail merge feature in
+                                     Word 97.
+
+  About DOCS Open           Help     This command displays which version
+  (AboutPCDOCS)                      of DOCS Open you are using.
+
+Additionally, DOCS Open modifies the functionality of three other native Word
+menu commands. These Word menu commands are modified by a macro with the same
+name as the built-in Word command.
+
+NOTE: If you rename these macros, the DOCS Open menu command functionality will
+be disabled and the normal Word menu command functionality will return. The
+macro name is listed inside the parentheses below the menu command. For example,
+the macro name is shown as (macroname).
+
+  Command Modified
+  (Macro Name)          Menu               Function of Menu Command
+  ------------------------------------------------------------------------
+
+  File                  Insert             Brings up the DOCS Open Quick
+  (InsertFile)                             Retrieve dialog box.
+
+  From File             Point to           Brings up the DOCS Open Quick
+  (InsertPicture)       Picture on the     Retrieve dialog box.
+                        Insert menu
+
+  Highlight Changes     Point to Track     This menu command was
+  (ToolsRevisions)      Changes on the     mistakenly included in the
+                        Tools menu         DOCSOpen Wordin80.dot template.
+                                           The modified menu command
+                                           displays the old Word 95 for
+                                           Windows Revisions dialog box.
+
+Several other macros are included in the DOCS Open Wordin80.dot template. These
+macros are either not used or have no effect on Word 97.
+
+  ExitWord
+  FileSaveAsPassword
+  PCDOCS
+
+During the installation and integration of DOCS Open, one of the following keys
+is written into the Windows Registry:
+
+  16-bit version:
+
+     HKEY_LOCAL_MACHINE\Software\Classes\ODMA\PCDOCS
+
+  32-bit version:
+
+     HKEY_LOCAL_MACHINE\Software\Classes\ODMA32\PCDOCS
+
+NOTE: This is the registry key that informs ODMA-compliant applications that DOCS
+Open is installed on the computer. If the key is removed from the Windows
+Registry, DOCS Open ODMA integration with Word 97 will be disabled.
+
+
+Features of DOCS Open
+---------------------
+
+Search and retrieval capabilities as well as version control and security provide
+you with access to documents. Additionally, DOCS Open provides system
+administration features such as storage management for document archival and
+document activity tracking. These features are detailed in the following table.
+
+  Feature                  Description
+  -----------------------------------------------------------------------
+
+  Open Architecture        Supports all of the leading SQL databases,
+                           networks, and desktop operating systems. It is
+                           the only document management solution that
+                           supports multiple text, imaging, and workflow
+                           engines.
+
+  Application              Provides seamless integration with all the
+  Integration              major desktop applications. It also supports
+                           cross-repository connections automatically
+                           without requiring the user to specify an
+                           alternate library.
+
+  Quick Retrieve           Brings up a list of the last 30 documents you
+                           edited, and allows you to launch the document
+                           by double clicking on its name.
+
+  Attribute Indexing       Lets you find documents matching any entries in
+                           any one or more of the fields on the Document
+                           Profile.
+
+  Content Search           Full-text retrieval enables you to search the
+                           text of your documents or profiles with
+                           specific words, phrases, or words within the
+                           proximity of each other.
+
+  Quick Search             Allows you to store frequently-used searches
+                           for quick access. Quick Searches can be
+                           accessed from DOCS Opens Desktops Search
+                           menu, from Quick Retrieve, and they can be
+                           iconized on the desktop.
+
+  Global Network           Allows you to search on Wide Area Networks as
+  Searching                easily as on Local Area Networks.
+
+  Version Tracking         Lets you store up to 99 major versions of a
+                           document. You can also store up to 26
+                           sub-versions of each major version.
+
+  Form Selection           Allows your administrator to set up multiple
+                           Profile Entry and Profile Search forms from
+                           which you can choose when creating and
+                           searching for documents.
+
+  Security                 Allows you to grant document access rights to
+                           other users or groups in your organization.
+
+  Check-in/Check-out       Tracks documents that users have copied from
+                           the network and notes when they will be
+                           returned. It also enables you to lock documents
+                           so they temporarily cannot be edited by other
+                           users.
+
+  Document History         Provides a log of every activity performed on a
+                           document.
+
+  Projects                 Allows you to logically group related documents
+                           in electronic folders.
+
+  Templates                Lets you save forms or boilerplates created in
+                           any application to be retrieved and used.
+
+  Storage Management       Enables you to delete or archive documents
+                           after a specified period of time.
+
+System Requirements
+-------------------
+
+The following are system requirements needed to run DOCS Open:
+
+Workstation:
+
+- Intel processor or compatible system
+
+- Windows 3.x (for desktop functions only, administration requires Win95 or
+  higher), Windows 95, Windows NT Workstation
+
+- 16MB RAM, 32MB recommended
+
+Server:
+
+- Intel, Alpha, and others
+
+- Microsoft Windows NT Server, Novell NetWare 3.x/4.x, Banyan VINES, UNIX, and
+  others
+
+- Microsoft NT SQL Server, Oracle, and Sybase
+
+- Memory and disk space varies depending upon above server combinations used
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q159963 WD97: Word 97 Supports ODMA
+
+For more information about DOCS Open, please contact PC DOCS, Inc.
+
+  PC DOCS, Inc.
+  25 Burlington Mall Road
+  4th Floor
+  Burlington, MA 01803
+
+  Main Number : (781) 273-3800
+  Corporate Sales : (800) 933-3627
+  Technical Support: (850) 942-5000
+  Internet : http://www.pcdocs.com/
+  E-mail : info@pcdocs.com
+
+PC DOCS and DOCS Open are registered trademarks of PC DOCS, Inc.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: pcdocs api docsopen
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbdta kbtemplate word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

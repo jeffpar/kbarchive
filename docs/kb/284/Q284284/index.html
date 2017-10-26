@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/284/Q284284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/284/Q284284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/284/Q284284/","publisher":null,"image":null,"headline":"Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q284284-crimson-skies-err-msg-error-starting-program-the-msvp60dll">Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q284284
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Crimson Skies, you may receive the following
+error message:
+
+  ERROR starting program the MSVCP60.DLL file is linked to missing export
+  MSVCRT.dll:_lc_collate_cp
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions is true:
+
+- You install the program, and then you attempt to start the program before you
+  restart your computer.
+
+- The Windows Libraries Update is not installed on your computer.
+
+- The Msvcrt.dll file is missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Extract A New Copy of the Msvcrt.dll file
+-----------------------------------------
+
+To resolve this issue, extract a new copy of the Msvcrt.dll file from the
+original Microsoft Windows installation CD-ROM or floppy disk to the following
+folder:
+
+  &lt;drive&gt;:\Windows\System
+
+where &lt;drive&gt; is the drive letter of the hard disk on which Microsoft
+Windows is installed.
+
+NOTE: These steps are for Windows 98 only.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "sfc" (without the quotation marks), and then click OK.
+
+3. Click "Extract one file from installation disk".
+
+4. In the text box, type "msvcrt.dll" (without the quotation marks), and then
+  click Start.
+
+5. Click OK, and then follow the instructions on backing up the existing file
+  before you overwrite it.
+
+6. If you are prompted to restart your computer, click Yes.
+
+For additional information about how to extract files from the Windows CD-ROM or
+a Windows floppy disk, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+If the issue continues to occur, proceed to the next method.
+
+Copy Msvcrt.dll File from the Crimson Skies CD-ROM
+--------------------------------------------------
+
+1. Click Start, point to Programs, and click Windows Explorer.
+
+2. Click the CD-ROM drive that contains the Microsoft Crimson Skies CD-ROM.
+
+3. Double-click the Game folder.
+
+4. Right-click the Msvcrt.dll file, and then click Copy.
+
+5. Click the Windows\System folder.
+
+6. Right-click an empty area in the System folder, and then click Paste.
+
+7. Click Yes to overwrite the file.
+
+8. Restart your computer.
+
+If the issue continues to occur, proceed to the next method.
+
+Download and Install the Windows Libraries Update
+-------------------------------------------------
+
+To download and install the Windows Libraries Update:
+
+1. Visit the following Microsoft Web site:
+
+  http://www.microsoft.com/downloads/search.asp?
+
+2. Next to "Search using", click Keyword Search.
+
+3. In the Keywords box, type "libraries update" (without the quotation marks).
+
+4. In the Operating System box, click the appropriate operating system for your
+  computer, and then click Find It!
+
+5. Under Title, click the Microsoft Libraries Update Web link.
+
+6. Follow the instructions on the screen to download and install the Microsoft
+  Libraries Update.
+
+Additional query words: msgame crimsonskies msvcrt dll msvp60
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

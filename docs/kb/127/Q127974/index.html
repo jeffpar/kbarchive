@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127974/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127974/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127974/","publisher":null,"image":null,"headline":"Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127974-adtode-error-msg-could-not-open-the-file-named-file-name">Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127974
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0,7.0,97
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 25-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you are running the Setup program for an application that was created with
+the Microsoft Office 97 Developer Edition Tools (ODE) or the Microsoft Access
+Developer's Toolkit (ADT), you may receive the following error message:
+
+  In Microsoft Office 97 Developer Edition Tools and Microsoft Access
+  Developer's Toolkit version 7.0:
+
+  Setup could not open the file '&lt;filename&gt;'.
+
+  In Microsoft Access Developer's Toolkit version 2.0:
+
+  Could not open the file named: '&lt;filename&gt;'.
+
+The specified file has a name with an extension that contains one or two letters
+(for example, READ.ME).
+
+CAUSE
+=====
+
+The Setup Wizard requires three-letter file extensions (for example, MYDB.MDB).
+This is a limitation of the Setup Wizard.
+
+NOTE: Microsoft Access 97 and Microsoft Access version 7.0 allows files that have
+no extensions, for example, README.
+
+RESOLUTION
+==========
+
+To work around this problem, you can use either of the following methods:
+
+- Make sure all the files included with your application have three-letter
+  extensions.
+
+- Use the Network Setup (Flat) option when you are prompted "What kind of
+  distribution disks do you wish to create?" This option does not create
+  compressed files for distribution on floppy disks, but places all the files
+  in one folder. This option is useful for creating a Setup program that will
+  be run from a file server or a CD-ROM image.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Office 97
+Developer Edition Tools (ODE), and the Microsoft Access Developer's Toolkit
+version 2.0 and 7.0.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a text file called READ.ME.
+
+2. Run the ODE or ADT Setup Wizard and specify the READ.ME file as the only file
+  to include. When you are prompted "What kind of distribution disks do you
+  wish to create?" select:
+
+  In Microsoft Office 97 Developer Edition Tools and Microsoft Access
+  Developer's Toolkit version 7.0:
+
+  Either the 1.44-MB Disks or the Compressed Network Setup option.
+
+  In Microsoft Access Developer's Toolkit version 2.0:
+
+  Either the 1.2 MB Disks or 1.44 MB Disks option.
+
+3. When the Setup Wizard is finished, run the new Setup program. Note that you
+  receive the error message mentioned earlier in this article.
+
+REFERENCES
+==========
+
+For more information about creating disk images using the Setup wizard, search
+the Help Index for "Setup wizard," or ask the Microsoft Access 97 Office
+Assistant.
+
+Additional query words: ext suffix
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+Version           : WINDOWS:2.0,7.0,97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

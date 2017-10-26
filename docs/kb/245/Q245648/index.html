@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245648: Values List from Query Builder Not Always Sorted and Is Limited | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245648: Values List from Query Builder Not Always Sorted and Is Limited" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245648/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245648/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245648/","publisher":null,"image":null,"headline":"Q245648: Values List from Query Builder Not Always Sorted and Is Limited","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245648-values-list-from-query-builder-not-always-sorted-and-is-limited">Q245648: Values List from Query Builder Not Always Sorted and Is Limited</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245648
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbtool kbsms200 kbsms200bug kbsms200preSP3fix kbsms200SP3fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you browse a list of values in the query builder criteria section of the
+Microsoft Management Console (MMC) Systems Management Server (SMS) Administrator
+Console snap-in, the Values list may not appear in a sorted alpha-numeric order,
+making it difficult to locate desired values. Also, only a maximum of 2000
+records are listed.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+SMS 2.0 Service Pack 1:
+
+The English-language version of this fix that can be applied to a site or
+administrator console running SMS 2.0 Service Pack 1 should have the following
+file attributes:
+
+  Date      Time     Version         Size       File name   Platform
+  ------------------------------------------------------------------
+  3/29/2000 20:00:46 2.00.1380.1147   534,528  Mmcbasui.dll  Intel
+  3/29/2000 20:00:46 2.00.1380.1147   997,888  Mmcbasui.dll  Alpha
+
+SMS 2.0 Service Pack 2:
+
+The English-language version of this fix that can be applied to a site or
+administrator console running SMS 2.0 Service Pack 2 should have the following
+file attributes:
+
+  Date       Time    Version          Size     File name     Platform
+  -------------------------------------------------------------------
+  6/10/2000  3:55:00 2.00.1493.2112   534,528  Mmcbasui.dll  Intel
+  6/10/2000  3:55:00 2.0.1493.2112    998,672  Mmcbasui.dll  Alpha
+
+NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+the above files may also contain additional files.
+
+To override the 2000 value limit, the fix uses a new registry value:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft/SMS/AdminUI/QueryBuilder/ValueLimit
+
+The ValueLimit value is a DWORD value. If it does not exist, the default limit of
+2000 is used; this is consistent with current functionality. If it has a zero
+value, there is no value limitation and all possible values are returned.
+
+When you add the key, do not enter anything for Class (leave it blank). Name the
+key QueryBuilder, click OK, add a new REG_DWORD value named ValueLimit, and then
+click OK. When you are prompted to provide a value, type 0 as the value.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200bug kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

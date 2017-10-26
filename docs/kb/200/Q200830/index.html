@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200830: SMS: Regularly Verifies Directory Structures and Shares | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200830: SMS: Regularly Verifies Directory Structures and Shares" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200830/","publisher":null,"image":null,"headline":"Q200830: SMS: Regularly Verifies Directory Structures and Shares","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200830-sms-regularly-verifies-directory-structures-and-shares">Q200830: SMS: Regularly Verifies Directory Structures and Shares</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200830
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbServer kbsms200 kbsms200bug kbCAP kbInboxMgr
+Last Modified: 18-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Manager Server version 2.0 now has the ability to monitor the
+directory structure of the Site Server for changes. If for some reason the
+CAP_XXX share and/or directories get removed from the Client Access Point (CAP),
+the Inbox Manager will restore them during its integrity verification checks.
+
+MORE INFORMATION
+================
+
+The Systems Management Server (SMS) version 2.0 Inbox Manager will check all
+inboxes hourly to verify that they still have valid paths. When the Inbox
+Manager checks, one of the following four things will occur:
+
+1. Inbox Manager cannot reach the Site Server, therefore it will not perform any
+  maintenance work.
+
+2. Inbox Manager can reach Site Server but is not able to reach the CAP_XXX
+  share. The Inbox Manager then treats the CAP as a newly added CAP and
+  recreated CAP_XXX share.
+
+NOTE: If the CAP_XXX was created on D:\ drive and CAP_XXX share is removed by the
+user, it's not guaranteed that the CAP_XXX will be recreated on the D:\ drive,
+however, it will be created on the NTFS drive with the most free disk space.
+
+3. Inbox Manager can reach the Site Server and the CAP_XXX share, but one or
+  more of the inbox directories are gone. The Inbox Manager recreates the
+  missing directories and resets their permissions.
+
+4. If the inbox directories are accessible, Inbox Manager will do nothing.
+
+If the CAP Network Abstraction Layer (NAL) Path is determined to be NWBind,
+NetWare Directory Services (NDS), or a Windows NT share path, the Inbox Manager
+will make sure that the path is still valid. If it is not, the Inbox Manager
+recreates the inbox path and resets the permissions.
+
+NOTE: Inbox manager will not, however, reset the permissions on an inbox
+directory that still exists. If the inbox folder's permissions have been
+changed, the Inbox Manager will not reset the permission on the inbox directory.
+This is to allow the Administrator to change inbox directory permission if they
+do not like the generic permission that NAL applies.
+
+Additional query words: prodsms smssvr
+
+======================================================================
+Keywords          : kbServer kbsms200 kbsms200bug kbCAP kbInboxMgr 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

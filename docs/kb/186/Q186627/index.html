@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186627: How to Temporarily Disable Terminal Server Client Logons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186627: How to Temporarily Disable Terminal Server Client Logons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186627/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186627/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186627/","publisher":null,"image":null,"headline":"Q186627: How to Temporarily Disable Terminal Server Client Logons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186627-how-to-temporarily-disable-terminal-server-client-logons">Q186627: How to Temporarily Disable Terminal Server Client Logons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186627
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you need to disable connectivity to the Terminal Server, you have several
+options. Note that disabling connectivity for Terminal Server Clients is
+different from disabling normal user connectivity. For non-client connectivity
+you can pause or stop the Net Logon or Server services in Control
+Panel/Services. However, the Terminal Server service cannot be paused, stopped,
+or disabled.
+
+To disable Client connectivity, you can:
+
+1. Stop connectivity to the Terminal Server at the command prompt with the
+  Command, "Change Logon /Disable." You can re-enable connectivity with "Change
+  Logon /Enable."
+
+-or-
+
+2. Stop connectivity to a specific socket connection in Terminal Server
+  Connection Configuration under Connection/Disable. This is the same action as
+  opening the connection and selecting Logon/Disabled under the Advanced
+  Configuration.
+
+-or-
+
+3. Stop connectivity for a user or group to a specific socket connection in
+  Terminal Server Connection Configuration under Security/Permissions.
+
+-or-
+
+4. Stop connectivity for a specific user in User Manager by opening the user
+  account and selecting CONFIG. Here you can uncheck the box, "Allow Logon to
+  Terminal Server." If you modify the user's domain account, the user will not
+  be able to connect to the domain from ANY Terminal Server. The other options
+  are specific to the Terminal Server on which they are set.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

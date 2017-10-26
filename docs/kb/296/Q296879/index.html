@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296879/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296879/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296879/","publisher":null,"image":null,"headline":"Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296879-xfor-sent-messages-appear-in-the-ims-queue-and-event-id-3038">Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296879
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbExchange550
+Last Modified: 09-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you examine the Outbound Awaiting Conversion queue of the Internet Mail
+Service, messages that are already sent may still appear in the queue.
+
+Also, the application event log reports the following event:
+
+  Event ID: 3038
+  Source: MSExchangeIMC
+  Description: An attempt to remove processed messages from the outbound store
+  queue has failed. The removal will be retried later. If the messages are not
+  removed before the service is shutdown, the mail will be resent at service
+  startup causing duplicate mail.
+
+You may also find that messages are sent more than once to recipients who are not
+within the Exchange organization.
+
+CAUSE
+=====
+
+This behavior can occur if there is corruption on a folder level in the Internet
+Mail Connector (IMC) mailbox.
+
+RESOLUTION
+==========
+
+To resolve this behavior, recreate the Internet Mail Service:
+
+1. Delete the Internet Mail Service, and then recreate the In and Out folders in
+  the Imcdata folder.
+
+2. Defragment the information store.
+
+3. Recreate the Internet Mail Service, and then check the mail flow.
+
+MORE INFORMATION
+================
+
+This behavior has been observed when the Exchange Server computer uses Network
+Associates' GroupShield Exchange 4.0.4. You may need to change GroupShield's
+scanning settings:
+
+1. As an Exchange Administrator, go to the GroupShield properties.
+
+2. Click the On-Access(Mailboxes) tab, and then click Exclusion List.
+
+3. Add the IMS mailbox.
+
+Alternatively, you can upgrade to GroupShield Exchange 4.5, which by default
+scans the correct API mode.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For information about how to contact Network Associates' McAfee, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

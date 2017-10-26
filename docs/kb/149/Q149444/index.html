@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149444/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149444/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149444/","publisher":null,"image":null,"headline":"Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149444-downstream-pu-to-dec-server-may-fail-with-event-56-xid-reject">Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149444
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to configure Microsoft SNA server as a Downstream Physical Unit
+(DSPU) to an DEC SNA Peer Server, you may get an XID exchange failure resulting
+in the link entering a pending state and failing to activate.
+
+The Microsoft Windows NT application event log may contain an EventID 56 with the
+following description referencing xxxxx as the failing connection:
+
+  Connection xxxxx failed: XID rejected by remote computer.
+
+Further investigation using the SNA tracing utility may demonstrate an XID
+exchange failure in CONNECTx.TRC with the following sense code:
+
+  086F0000:- Length Error: A length field within an MS major vector is invalid,
+  or two or more length fields are incompatible.
+
+CAUSE
+=====
+
+There is an error in the XID3 transmitted by SNA Server version 2.11 that
+prevents it communicating over 802.2 DLC with some SNA PU 2.1 products that
+specifically validate the control vector in the XID.
+
+The Control Vector part of the XID (byte 29 onwards for SDLC) is incorrectly
+formatted. The first part of the Product Set ID (X'10') Control Vector is a
+Product Identifier (X'11') MS Common Subvector of Product classification X'0C'.
+This subvector has an indicated length field of X'27'; however, it is only X'23'
+bytes long.
+
+Attached is an extract from a trace (connect1.trc) of an XID exchange with a
+Digital SNA Peer Server. The Control Vectors start at byte 29 with
+'10370=3D0'(Product Set Id). The next three bytes '27110C' indicate a 0x27hex
+length (39 decimal) byte Product Identifier Subvector. In fact this subvector is
+only 0x23 hex (35 decimal) byte length:
+
+  3 byte header, X'27110C'
+  8 byte Software Product Common Level '021000',
+  15 byte Software Common Product Name 'MS SNA SERVER'
+  9 byte Software Product Program Number '0000000'
+
+The trace continues with an XID rejection from the DEC Peer Server with the
+following sense data:
+
+  '086F0000' "Length Error: A length field within an MS major vector is
+  invalid, or two or more length fields are incompatible.
+
+The significant portion of Connect1.trc obtained by enabling Level 2 tracing on
+the link service follows:
+
+---------------------------------------------- 15:07:24.61
+TR     XMIT XID CMD       REQUEST
+TR     ---- DLC API control block at address 73618----
+TR     000E0000 00000000 00000000 34360700      &lt;............46..&gt;
+TR     70000000 00000000 00001C00                     &lt;p...........    &gt;
+TR
+TR     00043004 00000000 00000000 0E006100      &lt;..0...........a.&gt;
+TR     CBE32201 6AE32201 00000000                   &lt;.T".jT".....    &gt;
+TR     ---- Message data ----
+TR     00005500 2000192C 00000000 0000             &lt;..U...,......  &gt;
+TR     ---- Message data ----
+TR     326105D0 00010000 B0841000 00000000      &lt;2a.......d......&gt;
+TR     00010B70 00040400 0000007F 00103700      &lt;...p.......=7F..7.&gt;
+TR     27110C08 04F0F2F1 F0F0F00F 06D4E240    &lt;'....021000..MS@&gt;
+TR     E2D5C140 E2C5D9E5 C5D90908 F0F0F0F0  &lt;SNA@SERVER..0000&gt;
+TR     F0F0F013 11031000 10F0F0F0 F0F0F0F0    &lt;000......0000000&gt;
+TR     F0F0F0F0 F0F00E09 F4C1D7D7 D54BC3D7 &lt;000000..4APPNKCP&gt;
+TR     F1                                                              &lt;1
+&gt;
+TR    ---------------------------------------------- 15:07:24.61
+TR     DIR  TIMER SET     REQUEST
+TR     ---- DLC API control block at address 73698----
+TR     00220000 00000000 00000000 1E000000     &lt;."..............&gt;
+TR     70000000 00000000 00000000                     &lt;p...........    &gt;
+TR    ---------------------------------------------- 15:07:24.62
+TR     DIR  TIMER SET     ERROR - Command canceled by user
+TR     ---- DLC API control block at address 73598----
+TR     00220A00 00000000 00000000 1E000000     &lt;."..............&gt;
+TR     70000000 00000000 00000000                     &lt;p...........    &gt;
+
+RESOLUTION
+==========
+
+The SNA server component, Snacfg.dll, was incorrectly generating the data for
+the node to send and has been hotfixed to correct the problem. To implement the
+fix, the Snacfg.dll file must be applied and the SNA Server configuration file
+must be resaved using the SNA Admin program. Once saved, the SNA Server service
+must be stopped and started to enable the change.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.0, 2.1, 2.11, and 3.0. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

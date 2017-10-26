@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169915: XFOR: How to Publish Exchange Public Folders as NNTP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169915: XFOR: How to Publish Exchange Public Folders as NNTP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169915/","publisher":null,"image":null,"headline":"Q169915: XFOR: How to Publish Exchange Public Folders as NNTP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169915-xfor-how-to-publish-exchange-public-folders-as-nntp">Q169915: XFOR: How to Publish Exchange Public Folders as NNTP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169915
+Product(s): Microsoft Exchange
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to publish an existing Exchange Server public folder
+as a newsgroup. This allows people using Network News Transfer Protocol (NNTP)
+newsreaders to participate in Exchange public folder discussions.
+
+MORE INFORMATION
+================
+
+The key to understanding how Exchange Server supports newsgroups is the
+newsgroup hierarchy anchor. A newsgroup hierarchy anchor is used to designate
+the top folder in a new newsgroup hierarchy. This is demonstrated in the
+following example:
+
+You have seven public folders in your public folder hierarchy. Indentations
+represent the relationship between parent folders and sub-folders:
+
+  All Public Folders
+     Outlook
+        Development
+     Usage
+        MAPI Service Providers
+     Exchange
+        Internet Protocols
+        Connectors
+
+You decide to publish the Outlook, Development, Usage, and MAPI Service Providers
+folders as newsgroups. To do this, you must create a new newsgroup hierarchy
+anchor:
+
+1. In the Exchange Administrator program, on the Tools menu, select Newsgroup
+  Hierarchies.
+
+2. In the Newsgroup Hierarchies dialog box, select Add.
+
+3. Select the public folder you want to designate as the new newsgroup hierarchy
+  anchor. In this example, it is the Outlook folder.
+
+4. Click OK.
+
+5. Repeat steps 1-4 for the anchor folder Usage.
+
+  The subfolders of Outlook and Usage are automatically published as newsgroups
+  when you designate the parent folders Outlook and Usage as the anchors.
+  Newsgroup readers now have access to four new newsgroups: outlook,
+  outlook.development, usage, and usage.mapi-service-providers.
+
+  Notice that the spaces in the name MAPI Service Providers were replaced with
+  dashes (-). This happened because spaces are not allowed in newsgroup names.
+  Most other illegal characters in newsgroup names are automatically discarded
+  or changed. It is better to carefully select the folder names and avoid
+  unusual characters and spaces as much as possible.
+
+6. After you have designated your anchors, you must change permissions for the
+  published folders. You can do this with either the Exchange 5.0 Administrator
+  program or the Exchange/Outlook clients. New features in the Administrator
+  program make it easier to grant permissions from the Administrator rather
+  than from the client.
+
+  Often, you want to just allow anonymous access to the newly published folders.
+  The following example shows you how to grant anonymous access to the newly
+  published folders through the Administrator program:
+
+  1. In the Exchange Administrator program, select Public Folders.
+
+  2. Select the top-level public folder.
+
+  3. On the File menu, select Properties.
+
+  4. On the General property page, select Client Permissions.
+
+  5. Assign the role desired to the anonymous user. By default, the role of
+     Anonymous is None.
+
+  6. Click OK.
+
+  7. Select the Propagate These Changes to All Sub-folders check box.
+
+  8. Click Apply.
+
+  9. On the Sub-folder Properties dialog box, the Client Permissions check box
+     should already be selected, but be sure it is selected.
+
+  10. Click OK until you fully exit all dialog boxes.
+
+Additional query words: NNTP Public folders
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : 5.00
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

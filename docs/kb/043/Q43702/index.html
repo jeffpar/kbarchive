@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43702: QuickC: Dual Floppy Compile/Link Procedure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43702: QuickC: Dual Floppy Compile/Link Procedure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43702/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43702/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43702/","publisher":null,"image":null,"headline":"Q43702: QuickC: Dual Floppy Compile/Link Procedure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43702-quickc-dual-floppy-compilelink-procedure">Q43702: QuickC: Dual Floppy Compile/Link Procedure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43702
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr | mspl13_c
+Last Modified: 2-MAY-1989
+
+The following list details the steps used to compile and link with a
+Microsoft QuickC Version 2.00 dual-360K floppy setup. This procedure
+assumes that source files are stored on disk 5, which also contains
+the include and library files. This also assumes that no errors are
+encountered during the process. Remember to use backup disks, not
+your original disks.
+
+Instructions for the compile/link process with no errors during the
+compile phase are described below.
+
+Note: Drive A will be used to hold disks 1 and 2. Drive B will hold
+your work disk and disk 5. During the process, you will start with
+disk 1 in Drive A and your work disk in Drive B. You will swap between
+disks 1 and 2 in Drive A, and disks 5 and your work disk in Drive B.
+
+Assuming you have set up your disks as suggested by the README.DOC
+file, follow these steps to compile and link:
+
+ 1. Insert your DOS-bootable disk in Drive A.
+
+ 2. Turn on the machine.
+
+ 3. When the DOS prompt appears and the disk drive has stopped
+    running, remove the boot disk and insert disk 1 in Drive A.
+
+ 4. Insert disk 5 in Drive B.
+
+ 5. Type "B:" at the DOS command prompt.
+
+ 6. Type "QC &lt;filename&gt;" (where &lt;filename&gt; is the name of the source
+    file you will be working on).
+
+ 7. QuickC will now start. If the file does not currently exist,
+    QuickC will ask if you want to create the file. Answer this query
+    appropriately.
+
+ 8. You may now enter or edit your program.
+
+ 9. When the program is ready to be compiled, press F5.
+
+10. If you have made changes in the program QuickC will ask if you
+    want to save these changes. Answer this query with a Yes or No.
+
+11. After a short while, QuickC will say it cannot find QCCOM.OVL.
+    Insert disk 2 in Drive A, and press ENTER.
+
+12. QuickC will soon say it cannot access QC.EXE. At this point,
+    again insert disk 1 in Drive A, and press ENTER.
+
+13. QuickC will ask for either ILINK.EXE or LINK.EXE soon. Remove disk
+    1 from drive A, insert disk 2 into that drive, and press ENTER.
+
+14. After linking is complete, QuickC will ask for QC.EXE again.
+    Remove disk 2 from Drive A and insert disk 1 in drive A. Press
+    Enter.
+
+15. At this point you will have an executable file. Because you
+    pressed F5 for run, QuickC will now run the program if no errors
+    were encountered during the compile/link process.
+
+If there are errors in your code, QuickC will stop after step 12 and
+report any errors it finds. Correct these errors and start from Step
+9.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

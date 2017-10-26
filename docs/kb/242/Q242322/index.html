@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242322/","publisher":null,"image":null,"headline":"Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242322-prb-tooltiptext-property-on-mmctoolbar-button-does-not-update">Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242322
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Management Console, versions 1.1, 1.2 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A SnapIn project developed with the MMC Snap-in Designer for Visual Basic may
+require that a MMCToolbar button's ToolTipText property be changed at runtime.
+While the ToolTipText property for an MMCToolbar button cannot be changed
+dynamically, it can be changed the next time the MMCToolbar control is attached
+to a view.
+
+CAUSE
+=====
+
+By design the ToolTipText property for an MMCToolbar button control cannot be
+changed while it's MMCToolbar is being displayed in the current view.
+
+RESOLUTION
+==========
+
+Remove the MMCToolbar button from the MMCToolbar button collection. Modify the
+ToolTipText property and re-add the MMCButton to the MMCToolbar control. The
+next time the MMCToolbar control is attached to a view, the updated ToolTipText
+will be displayed. The following code demonstrates how to achieve this
+functionality:
+
+      ' only modify a certain toolbar button
+      Select Case Button.Key
+      
+          Case "Test":
+          
+              ' change the tooltiptext for this button
+              Button.ToolTipText = "This is a different tip"
+              
+              ' remove the button from the toolbar control
+              Call Toolbar1.Buttons.Remove(Button.Index)
+              
+              ' re-add the button to the toolbar control
+              Call Toolbar1.Buttons.Add(Button.Index, Button.Key, Button.Caption, Button.Style, Button.Image, Button.ToolTipText)
+              
+      End Select
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following steps demonstrate how to change the ToolTipText property of an
+MMCToolbar button control.
+
+Steps to reproduce sample
+-------------------------
+
+1. Start Visual Basic and select a New SnapIn project.
+
+2. Open the SnapIn1 Designer from the Project Explorer, and add a new ImageList
+  and Toolbar object under the Tools Node. By default these objects will be
+  named ImageList1 and Toolbar1.
+
+3. View the properties of ImageList1, and insert a 16x16 bitmap into the
+  Imagelist. Set the Key field of the bitmap to "Test."
+
+4. View the properties of Toolbar1 and set the ImageList field to ImageList1. On
+  the Buttons tab, insert a new button onto the toolbar. Set the Key and Image
+  fields to "Test," and the ToolTipText field to "First ToolTip."
+
+5. Open the code window to the SnapIn1 Designer and paste in the following code:
+
+  Private Sub Toolbar1_ButtonClick(ByVal Selection As SnapInLib.MMCClipboard, ByVal Button As SnapInLib.MMCButton)
+
+      ' only modify a certain toolbar button
+      Select Case Button.Key
+      
+          Case "Test":
+          
+              ' change the tooltiptext for this button
+              Button.ToolTipText = "This is a different tip"
+              
+              ' remove the button from the toolbar control
+              Call Toolbar1.Buttons.Remove(Button.Index)
+              
+              ' re-add the button to the toolbar control
+              Call Toolbar1.Buttons.Add(Button.Index, Button.Key, Button.Caption, Button.Style, Button.Image, Button.ToolTipText)
+              
+      End Select
+      
+  End Sub
+
+  Private Sub Views_SetControlbar(ByVal View As SnapInLib.View, ByVal Controlbar As SnapInLib.MMCControlbar)
+
+      ' attach the test MMCToolbar control to the Controlbar
+      Controlbar.Attach Toolbar1
+      
+  End Sub
+
+6. Compile the SnapIn and load it into MMC.
+
+7. When the SnapIn loads, the sample button appears in the MMC menu item area.
+  Move the mouse over the button, and the current ToolTipText will be
+  displayed.
+
+8. Click the button. Move the mouse over the button, and notice the original
+  ToolTipText is still displayed.
+
+9. On the ScopeNode pane, select the ConsoleRoot node, and then the SnapIn1
+  Node. When the SnapIn1 Node is selected the MMCToolbar is re-attach to the
+  MMC Controlbar with the updated button./
+
+10. Move the mouse over the button. The new ToolTipText displays.
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

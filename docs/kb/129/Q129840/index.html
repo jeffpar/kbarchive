@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129840: ADVANCED WINDOWS: Corrections and Comments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129840: ADVANCED WINDOWS: Corrections and Comments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129840/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129840/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129840/","publisher":null,"image":null,"headline":"Q129840: ADVANCED WINDOWS: Corrections and Comments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129840-advanced-windows-corrections-and-comments">Q129840: ADVANCED WINDOWS: Corrections and Comments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129840
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Advanced Windows ISBN 1-55615-677-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Advanced Windows: Developer's Guide to
+Windows NT 3.5 and Windows 95."
+
+The following topics are covered:
+
+- Page 6: First Paragraph, Last Sentence Is Misleading
+
+- Page 494: pvData in Sample Code Should Be pData
+
+- Page 502: Missing "not" in Second to Last Sentence
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Page 6: First Paragraph, Last Sentence Is Misleading
+----------------------------------------------------
+
+The last sentence in the first paragraph on page 6 reads as follows:
+
+  On Windows 95, a new thread of execution cannot be created because Microsoft
+  didn't feel that the function was useful enough to warrant the additional
+  memory overhead required to make Windows 95 run in a 4-MB machine.
+
+As this sentence stands, the reasoning for omitting the CreatRemoteThread() API
+function is unclear and the effect on Windows 95 is misleading.
+
+Correction:
+
+Change this sentence to the following:
+
+  On Windows 95, the CreateRemoteThread() function is not fully implemented
+  because Microsoft didn't feel that the function was useful enough to warrant
+  the additional memory overhead of the function, given that Windows 95 is
+  required to run on a 4-MB machine.
+
+Page 494: pvData in Sample Code Should Be pData
+-----------------------------------------------
+
+In the sample code, change
+
+     static PVOID pvData = NULL
+
+to
+
+     static PVOID pData = NULL
+
+Page 502: Missing "not" in Second to Last Sentence
+--------------------------------------------------
+
+On page 501, there is a code fragment that uses DisableThreadLibraryCalls in an
+attempt to avoid a deadlock condition. On that same page, the text states that
+this approach did not solve the problem.
+
+However, the continued discussion on page 502 describes a mutex object that is
+created with each process and states "Because the system works this way, adding
+the call to DisableThreadLibraryCalls does prevent the threads from
+deadlocking."
+
+Correction:
+
+In the second to last sentence on page 502, change
+
+  DisableThreadLibraryCalls does prevent
+
+to
+
+  DisableThreadLibraryCalls does not prevent
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

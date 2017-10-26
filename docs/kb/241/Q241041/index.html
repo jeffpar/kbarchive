@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241041: Enabling NetBT to Open IP Ports Exclusively | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241041: Enabling NetBT to Open IP Ports Exclusively" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241041/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241041/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241041/","publisher":null,"image":null,"headline":"Q241041: Enabling NetBT to Open IP Ports Exclusively","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241041-enabling-netbt-to-open-ip-ports-exclusively">Q241041: Enabling NetBT to Open IP Ports Exclusively</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241041
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user-mode program can listen to TCP port 139 as well as UDP ports 137 and 138.
+Because these ports are used by Windows NT services, it is a Trusted Computer
+System Evaluation Criteria (TCSEC) C2 requirement that an unprivileged user-mode
+program should not be able to listen to these ports used by Windows NT services,
+regardless of the cryptographic protection applied to the Windows NT service
+traffic using these ports.
+
+CAUSE
+=====
+
+This problem occurs because Netbt.sys (NetBIOS over TCP/IP) is responsible for
+opening the following TCP and UDP ports that subsequently are used by Windows NT
+services:
+
+- UDP Port 137
+
+- UDP Port 138
+
+- TCP Port 139
+
+For additional information about Windows NT services that use these ports, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q150543 WinNT, Terminal Server, and Exchange Services Use TCP/IP Ports
+
+As explained in the Windows NT 4.0 Device Development Kit (DDK) for network
+driver development, Netbt.sys (as a TDI client) begins communicating with its
+local-node transport by opening a file object that represents a transport
+address. Netbt.sys calls ZwCreateFile, passing the address specification in the
+extended attributes (EA) buffer parameter to ZwCreateFile.
+
+In Windows NT 4.0 Service Pack 6a and earlier, Netbt.sys allows file share access
+to file objects representing the aforementioned TCP and UDP ports when calling
+ZwCreateFile. Subsequently, a user-mode program installed on a computer running
+Windows NT 4.0 Service Pack 6a and earlier can gain access to a share and listen
+to the TCP and UDP ports. The Post-SP6a hotfix, C2 Update, allows the option to
+change the Netbt.sys behavior so that it does not allow file share access to
+files objects representing the aforementioned TCP and UDP ports when calling
+ZwCreateFile. The option is selected through the use of the following registry
+key and key value:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters
+&lt;/B&gt;
+EnablePortLocking:REG_DWORD
+
+Default: 0 - NetBt allows file share access
+	 1 - NetBt disallows file share access
+
+When EnablePortLocking is set to 1, Netbt.sys passes in zero (ULONG) in the
+ShareAccess parameter of ZwCreateFile. After the application of Netbt-fix and
+the setting of the REG_DWORD value to 1 for EnablePortLocking, a user-mode
+program cannot gain share access and listen to the TCP and UDP ports.
+
+NOTE: NETBT in Windows 2000 does not support this option and the above registry
+key and value. The default behaviour in Windows 2000 is to disallow file share
+access to all ports created by NETBT.
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the individual package referenced below or obtain
+the Windows NT 4.0 Security Rollup Package. For additional information on the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The individual hotfix is available for download from the Microsoft Download
+Center or Microsoft's FTP site. Click the file names below to download the
+appropriate file:
+
+English:
+
+  x86:
+
+  Microsoft Download Center: DownloadDownload Q244599i.exe now
+  (http://download.microsoft.com/download/winntsp/Patch/SP6a_C2/NT4/EN-US/Q244599i.exe)
+
+  FTP: DownloadDownload Q244599i.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp6a/c2-fix/Q244599i.exe)
+
+  Alpha:
+
+  Microsoft Download Center: DownloadDownload Q244599a.exe now
+  (http://download.microsoft.com/download/winntsp/Patch/SP6a_C2/ALPHA/EN-US/Q244599a.exe)
+
+  FTP: DownloadDownload Q244599a.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp6a/c2-fix/Q244599a.exe)
+
+French:
+
+  x86:
+
+  
+
+
+  FTP: DownloadDownload Q244599i.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/frn/nt40/hotfixes-postsp6a/c2-fix/Q244599i.exe)
+
+  Alpha:
+
+  
+
+
+  FTP: DownloadDownload Q244599a.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/frn/nt40/hotfixes-postsp6a/c2-fix/Q244599a.exe)
+
+Spanish:
+
+  x86:
+
+  
+
+
+  FTP: DownloadDownload Q244599i.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/spa/nt40/hotfixes-postsp6a/c2-fix/Q244599i.exe)
+
+  Alpha:
+
+  
+
+
+  FTP: DownloadDownload Q244599a.exe now
+  (ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/spa/nt40/hotfixes-postsp6a/c2-fix/Q244599a.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date        Time      Size   File name  Platform
+  ------------------------------------------------
+  10/07/1999  03:13p  123,152  Netbt.sys  x86
+  10/07/1999  03:11p  222,800  Netbt.sys  Alpha
+
+
+
+Microsoft Windows NT Server version 4.0, Terminal Server Edition
+----------------------------------------------------------------
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+  Package
+
+STATUS
+======
+
+Microsoft has confirmed that this problem could result in some degree of
+security vulnerability in Windows NT 4.0.
+
+Additional query words: c2 security_patch kbTSE400SRP
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

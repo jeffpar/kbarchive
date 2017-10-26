@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q82048: Windows 3.0 Err Msg: Second Instance of Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q82048: Windows 3.0 Err Msg: Second Instance of Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/082/Q82048/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/082/Q82048/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/082/Q82048/","publisher":null,"image":null,"headline":"Q82048: Windows 3.0 Err Msg: Second Instance of Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q82048-windows-30-err-msg-second-instance-of-windows">Q82048: Windows 3.0 Err Msg: Second Instance of Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q82048
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a second instance of Microsoft Windows 3.0 is started from another
+application (including an MS-DOS virtual session, the MS-DOS Shell, or certain
+Windows applications), one of the following error messages may be displayed:
+
+  Cannot run second instance of Windows, exit this instance of Windows and run
+  from the original version of Windows.
+
+  -or-
+
+  Cannot run a non-Windows application from the second instance of Windows;
+  exit this instance of Windows and run your application from the original
+  instance.
+
+  -or-
+
+  Insufficient memory to run application; close one or more applications to
+  increase available memory and try again.
+
+Microsoft recommends that you do not start Windows from within a shell utility or
+from menu program.
+
+NOTE: The information in this article applies to Windows 3.0 and 3.0a; it does
+not apply to later versions of Windows.
+
+MORE INFORMATION
+================
+
+Second Instance of Windows Started from MS-DOS Prompt
+-----------------------------------------------------
+
+A second (or additional) instance of Windows is created if you issue the WIN
+command from an application running within Windows, including the MS-DOS prompt
+and MS-DOS batch files. If this happens, the following error may be displayed:
+
+  Cannot run second instance of Windows, exit this instance of Windows and run
+  from the original version of Windows.
+
+For example, if you start an MS-DOS session from the MS-DOS Prompt within
+Windows,you have access to all MS-DOS commands and statements. If you then type
+"WIN" (without the quotation marks) and press ENTER, a second instance of
+Windows is started and the error message is displayed.
+
+To end your MS-DOS session and return to Windows, type "EXIT" (without quotation
+marks) and then press ENTER. To return to Windows without ending your MS-DOS
+session, press ALT+TAB.
+
+Second Instance of Windows Started from MS-DOS Shell
+----------------------------------------------------
+
+Although it is not recommended, you can run Windows from the MS-DOS Shell.
+However, if you attempt to execute an MS-DOS application within Windows and you
+have the MS-DOS Task Swapper option enabled, the following error message may be
+displayed:
+
+  Cannot run a non-Windows application from the second instance of Windows;
+  exit this instance of Windows and run your application from the original.
+
+In the MS-DOS Shell, the Enable Task Swapper option should be displayed (that is,
+it should not have a check mark beside Enable Task Swapper on the Option menu).
+This option is a toggled selection: choosing Enable Task Swapper the first time
+enables it; choosing it again disables it.
+
+The following error may be displayed if you try to run Windows in 386 enhanced
+mode from within the MS-DOS Shell (regardless of the Enable Task Swapper option
+status):
+
+  Insufficient memory to run application; close one or more applications to
+  increase available memory and try again.
+
+At this point, exit Windows, exit MS-DOS Shell, and start Windows from the MS-DOS
+command prompt.
+
+Second Instance of Windows Started from an Application
+------------------------------------------------------
+
+Starting a Windows application such as Microsoft Excel, Microsoft Project, or
+Microsoft PowerPoint from an MS-DOS batch file inside Windows starts another
+instance of Windows.
+
+Large Windows applications such as these start an instance of Windows when the
+application's executable filename is invoked. Smaller Windows applications, such
+as Notepad, do not start another instance of Windows.
+
+For example, if you type "EXCEL" (without the quotation marks) at an MS-DOS
+command prompt, Microsoft Excel starts as does a new instance of Windows. If you
+type "NOTEPAD" (without the quotation marks) at an MS-DOS command prompt,
+Notepad does not start unless you type WIN before the command (that is, WIN
+NOTEPAD ).
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169771: Remote Session Manager Unavailable When Installing TelnetD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169771: Remote Session Manager Unavailable When Installing TelnetD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169771/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169771/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169771/","publisher":null,"image":null,"headline":"Q169771: Remote Session Manager Unavailable When Installing TelnetD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169771-remote-session-manager-unavailable-when-installing-telnetd">Q169771: Remote Session Manager Unavailable When Installing TelnetD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169771
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Telnet Server service does not install properly as described in the
+Telnet.wri documentation. The instructions are to select the Remote Session
+Manager when adding the Telnet service. However, the only selection available is
+Telnet Service Beta (Inbound Telnet).
+
+If you install TelnetD without installing the Remote Session Manager, clients
+attempting to connect to the server through Telnet will receive a "Connection
+Failed" error message.
+
+RESOLUTION
+==========
+
+This issue has been addressed in an updated Oemsetup.inf file for the TelnetD
+service.
+
+To obtain a copy of the latest Oemsetup.inf file for the Telnet Server:
+
+- Connect to the following ftp site:
+
+  ftp://ntrk.microsoft.com/telnet_beta/beta.10/
+
+  -or-
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/reskit/nt40/
+
+NOTE: You can also obtain the Oemsetup.inf file from the Windows NT 4.0 Resource
+Kit Supplement 4 in case the FTP site is unavailable.
+
+- Download Oemsetup.inf directly into your current Resource Kit Telnet
+  directory. This is typically C:\Reskit\Telnet.
+
+- Follow the directions in the Telnet.wri file.
+
+MORE INFORMATION
+================
+
+Telnet Server has two components: the service itself (Telnetd.exe), and an
+underlying component--the Remote Session Manager (Rsm.exe). The Telnet Server
+service operates by connecting to the Remote Session Manager (RSM) component.
+
+RSM is responsible for initiating, terminating, and managing the character-
+oriented remote Telnet session on a given system. RSM only affects the services
+provided in the Telnet Server service; it does not affect Microsoft Remote
+Access Service (RAS) or other layered products.
+
+Additional query words: telnet
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbMSPressSearch kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

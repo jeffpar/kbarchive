@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q21969: SCREEN 1 COLOR Yellow Is Brown (Muddy) on EGA Versus CGA Card | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q21969: SCREEN 1 COLOR Yellow Is Brown (Muddy) on EGA Versus CGA Card" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/021/Q21969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/021/Q21969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/021/Q21969/","publisher":null,"image":null,"headline":"Q21969: SCREEN 1 COLOR Yellow Is Brown (Muddy) on EGA Versus CGA Card","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q21969-screen-1-color-yellow-is-brown-muddy-on-ega-versus-cga-card">Q21969: SCREEN 1 COLOR Yellow Is Brown (Muddy) on EGA Versus CGA Card</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q21969
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 11-JAN-1990
+
+The following program, which uses the COLOR statement on SCREEN 1, may
+give different colors on a machine with an EGA card compared to the
+colors on a machine equipped with a CGA card:
+
+   10 SCREEN 1
+   20 COLOR 8,0
+   30 LINE (30,100)-(40,150),3,bf
+   40 LINE (10,40)-(60,100),2,bf
+   50 LINE (100,100)-(130,130),1,bf
+
+The background color selected is dark gray (8). Palette 0 is selected,
+and includes red, green, and yellow on a CGA. Under QuickBASIC on an
+EGA card, the colors may appear "muddy" compared to running on a CGA
+card: the red and green are less intense than shown on a CGA card and
+the yellow is brown.
+
+This is not a problem with QuickBASIC, but is a difference between CGA
+and EGA cards. The EGA allows only nonintensified colors. The same
+colors occur on an EGA card in the Microsoft GW-BASIC Version 3.20,
+3.22, or 3.23 Interpreter on an EGA card.
+
+Note that in SCREEN 1 on an EGA or VGA, the PALETTE statement can
+change the color used by output from the PRINT statement, for example
+
+   PALETTE 3,n
+
+where n can be a color from 0 to 15. On an EGA card, PALETTE 3,6
+(where 6 is brown) is the default. PALETTE 3,14 will make PRINT output
+appear in yellow.
+
+The PALETTE statement is not supported on CGA cards. On a CGA card,
+the color of text output with the PRINT statement can only be changed to
+one of two possible colors by changing the palette argument of the
+COLOR statement. For example
+
+   COLOR b,p
+
+where b is the background color, and p (the palette) can be 0 or 1. If
+the p argument is 0, PRINT output displays in color number 6 (brown on
+an EGA, yellow on some CGA cards). If the p argument is 1, PRINT
+output displays in color number 7 (white). See the COLOR statement in
+the BASIC language reference documentation for more information.
+
+Graphics statements such as LINE and CIRCLE can use color (attribute)
+arguments 0, 1, 2, or 3 to allow simultaneous display of four colors
+at once (including the background) in SCREEN 1 on CGA, EGA, or VGA.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

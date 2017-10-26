@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175482: XFOR: Populating First and Last Name for Dirsync’d MS Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175482: XFOR: Populating First and Last Name for Dirsync’d MS Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175482/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175482/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175482/","publisher":null,"image":null,"headline":"Q175482: XFOR: Populating First and Last Name for Dirsync’d MS Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175482-xfor-populating-first-and-last-name-for-dirsyncd-ms-mail">Q175482: XFOR: Populating First and Last Name for Dirsync’d MS Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175482
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The First name or Last name fields of custom recipients for Microsoft Mail for
+PC Users users are not exchanged by directory synchronization (dirsync) by
+default. Consequently, any naming rules based on the Surname (Last name) or
+Given name (First name) will not be followed.
+
+To populate the First name and Last name fields for MS Mail custom recipients for
+Exchange Server user properties, follow the three steps outlined in the
+workaround section.
+
+MORE INFORMATION
+================
+
+1. Set up a template file in MS Mail. To do this:
+  a. Create a text file named Admin.tpl in the \Maildata\Tpl directory.
+
+  b. In that file, create the following entries:
+
+           Surname:~17~10~ULP~Last~
+           Given Name:~17~10~ULP~First~
+    
+
+     For an in-depth explanation of these fields, refer to the MS Mail
+     Administrator guide.
+
+  c. After the template file is made, start the MS Mail Administrator program.
+
+  d. Modify each MS Mail account to enter new template information.
+
+  e. Enable "Send local template information" under Config\Dirsync\
+     Requestor\Options.
+
+2. Set up incoming template definitions on the Exchange Server Directory
+  Synchronization object.
+
+  a. In the Configuration container, select Servers\Server Name\ Directory
+     Synchronization\Incoming Templates, and then click New .
+
+  b. In the "Map the string" field, enter: Given Name: (include the colon).
+
+  c. In the "Mapped to" field, select from the list: Given name, and click OK.
+
+  d. Click New again, and in the "Map this String" area type: Surname: (include
+     the colon).
+
+  e. In the "Mapped to" field, select from the list: Surname.
+
+  NOTE: Be sure to include the colon after each string entry after Surname and
+  the Given name.
+
+3. Perform manual or automatic directory synchronization between MS Mail and
+  Exchange Server. Existing MS Mail custom recipient addresses will be replaced
+  with updated template information.
+
+After the First and Last name fields have been populated, naming rules based on
+Surname and Given names can be applied for custom recipients.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

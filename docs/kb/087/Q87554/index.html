@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87554: BUG: CArchiveException for Read-only and Write-only Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87554: BUG: CArchiveException for Read-only and Write-only Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87554/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87554/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87554/","publisher":null,"image":null,"headline":"Q87554: BUG: CArchiveException for Read-only and Write-only Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87554-bug-carchiveexception-for-read-only-and-write-only-files">Q87554: BUG: CArchiveException for Read-only and Write-only Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87554
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbnokeyword kbFileIO kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbGrp
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows 
+   - Microsoft Visual C++ 32-bit Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CArchiveExceptions for read-only and write-only archives are not thrown by
+the Microsoft Foundation Class Library. This condition can be caught by checking
+for an access denied CFileException.
+
+CAUSE
+=====
+
+This is an oversight of the MFC libraries. The CArchive class does not utilize a
+try/catch block in its member functions that actually perform the serialization.
+Thus, a CArchiveException will never be thrown for read-only and write-only
+archives.
+
+RESOLUTION
+==========
+
+To test for this condition, look for a CFileException with an m_cause value of
+CFileException::accessDenied.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the versions of the Microsoft
+Foundation Classes listed above. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The CArchiveException class is used to handle exceptions that happen when using
+the CArchive class. The cause of the CArchiveException can be found by checking
+the m_cause data member of CArchiveException. Two of the values listed for
+m_cause are CArchiveException::readOnly and CArchiveException::writeOnly. For
+more information, refer to the Visual C++ Books Online topics for CArchive and
+CArchiveException.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbFileIO kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

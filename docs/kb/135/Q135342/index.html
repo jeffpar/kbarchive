@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135342: BUG: Scope on Report Command Doesn’t Work as in version 2.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135342: BUG: Scope on Report Command Doesn’t Work as in version 2.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135342/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135342/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135342/","publisher":null,"image":null,"headline":"Q135342: BUG: Scope on Report Command Doesn’t Work as in version 2.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135342-bug-scope-on-report-command-doesnt-work-as-in-version-2x">Q135342: BUG: Scope on Report Command Doesn’t Work as in version 2.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135342
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbtool kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Specifying a scope for a report to print does not print the correct records from
+the table.
+
+CAUSE
+=====
+
+The problem is that the DataEnvironment object created when the report was
+created performs an implicit GO TOP command as it initializes, even if the table
+is already open. This is necessary so that programmatic changes to Cursor object
+properties, such as Filter, take effect. A unexpected side- effect of this
+recent change is that the Scope clauses (ALL, NEXT, RECORD, and REST) on the
+REPORT FORM command do not affect which the records are printed.
+
+For example, if you have a table open and the record pointer is sitting at record
+5, a REPORT FORM &lt;x&gt; NEXT 1 should print record number 5 only. However,
+because the DataEnvironment object performs a GO TOP command, the record pointer
+is re-positioned as the DataEnvironment object is initiated, so record number 1
+prints - not 5.
+
+WORKAROUND
+==========
+
+To use the REST, RECORD, and NEXT Scope clauses on the REPORT FORM command, you
+must prevent the implicit GO TOP command performed by the DataEnvironment
+object, which can be done in any one of these ways:
+
+- Remove the table from the DataEnvironment object, and open it before running
+  the report.
+
+-or-
+
+- Keep the table in the DataEnvironment object, but set the AutoOpenTables
+  property to false, and open the table manually before running the report.
+
+-or-
+
+- Keep the table in the DataEnvironment object, and save and restore the record
+  pointer before the report actually prints. To do this:
+
+  1. Set AutoOpenTables to false for the DataEnvironment object.
+
+  2. In the Init event, do the following:
+
+        x=0               &amp;&amp; Create a scoped variable
+        this.opentables   &amp;&amp; Call the OpenTables method
+        go (x)            &amp;&amp; Restore the Record pointer
+
+  3. In the OpenTables method, save the record pointer:
+
+        x=RECNO()
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Code to Reproduce Problem
+-------------------------
+
+  create table repotest (mychar c(1))
+  insert into repotest values ('1')
+  insert into repotest values ('2')
+  insert into repotest values ('3')
+  insert into repotest values ('4')
+  insert into repotest values ('5')
+  create report repotest from repotest
+   
+  goto 2
+  REPORT FORM repotest next 1  &amp;&amp;Record 2 should print but record 1 prints
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbtool kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167749: FIX: Access to Nested Base Class Member Functions Blocked | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167749: FIX: Access to Nested Base Class Member Functions Blocked" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167749/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167749/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167749/","publisher":null,"image":null,"headline":"Q167749: FIX: Access to Nested Base Class Member Functions Blocked","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167749-fix-access-to-nested-base-class-member-functions-blocked">Q167749: FIX: Access to Nested Base Class Member Functions Blocked</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167749
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbProgramming kbLangCPP kbVC kbVC500bug kbVC600bug kbNoUpdatekbbuglist
+Last Modified: 10-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a class derived from a nested class calls a base class member function
+explicitly, the compiler generates error C2352 (relative to the sample code
+below):
+
+  main.cpp(13) : error C2352: 'A::B::f' : illegal call of non-static member
+  function
+
+RESOLUTION
+==========
+
+In the definition of the derived class, use typedef to define an alias for the
+base class (see the sample code), and use this alias to qualify calls to the
+base class methods.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /* Compile Options: None */ 
+     class A {
+     public:
+       class B {
+       public:
+            void f();
+       };
+     };
+
+     class C : public A::B {
+     public:
+       void g() { A::B::f(); } // &lt;== C2352 at this line
+     };
+
+  Workaround
+  Use a typedef for class A::B as follows:
+
+  class C : public A::B 
+  {
+     public:
+        typedef A::B BaseClass;
+        void f() { BaseClass::f(); } // &lt;== No Error Any More
+  };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbLangCPP kbVC kbVC500bug kbVC600bug kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

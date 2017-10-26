@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168469/","publisher":null,"image":null,"headline":"Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168469-rras-upgrade-for-winnt-server-40-hotfix-pack-20-release-notes">Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168469
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the Routing and Remote Access Upgrade for
+Microsoft Windows NT 4.0 Server Hotfix Pack 2.0 Release Notes. Version 2.0 has
+been replaced by version 3.0. Routing and Remote Access Upgrade for Microsoft
+Windows NT 4.0 Server Hotfix Pack 3.0 is available at:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/rras30-fix/
+
+NOTE: The above link is one path; it has been wrapped for readability.
+
+You can find the original version at the following Microsoft ftp site:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/archive/rras20-fix/
+
+NOTE: The above link is one path; it has been wrapped for readability.
+
+WARNING: If you install the original (archived) version of this hotfix after you
+apply the later version, your system may become unusable. Microsoft does not
+recommend you install the original hotfix after you apply the later version.
+
+MORE INFORMATION
+================
+
+Routing and Remote Access Upgrade for Microsoft Windows NT 4.0 Server Hotfix Pack 2.0 Release Notes
+---------------------------------------------------------------------------------------------------
+
+Please use this document to address questions which may arise during the
+installation of this Routing and Remote Access Hotfix Pack 2.0 for Microsoft
+Windows NT 4.0 Server.
+
+Contents
+
+- Information on Installation
+
+- List of issues addressed
+
+- Known Problems
+
+- Fixes and Features included from Hotfix Update 1.0
+
+Information on Installation:
+
+This Hotfix Pack requires that you already have Routing and Remote Access Service
+for Windows NT 4.0 Server installed on your system. Note that you must first
+apply the Windows NT 4.0 PPTP Update before applying the RRAS hotfix 2.0. For
+more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q167040 PPTP Performance Update for Windows NT 4.0 Release Notes
+
+This release includes the features and fixes from Routing and Remote Access
+Hotfix Update 1.0 and is packaged in an auto-install format. Copy the Hotfix to
+a temporary directory, and double-click the executable name or type the
+executable name "rrasfixi.exe" (without the quotation marks) for x86, or
+"rrasfixa.exe" (without the quotation marks) for alpha at a command prompt to
+install.
+
+The files can also be extracted from the Hotfix Pack without installing them. To
+do this, copy the Hotfix to a temporary directory, and type "rrasfixi /x"
+(without the quotation marks) or "rrasfixa/x" (without the quotation marks) at a
+command prompt. After extracting the files, the Hotfix can be installed by
+typing "hotfix" (without the quotation marks) at a command prompt.
+
+To uninstall this update, type "HOTFIX -Y" (without the quotation marks) from the
+directory you copied the files to.
+
+Output of "HOTFIX -?":
+
+  HOTFIX [-y] [-f] [-n] [-z] [-q] [-m] [-l]
+     -y Perform uninstall (only with -m or -q)
+     -f Force apps closed at shutdown
+     -n Do not create uninstall directory
+     -z Do not reboot when update completes
+     -q Quiet or Unattended mode with no user interface
+     -m Unattended mode with user interface
+     -l List installed hotfixes
+
+List of Issues Addressed:
+
+NT Issues Performance Issues:
+
+- This release includes an enhancement to TCP/IP that improves the performance
+  of TCP-based applications over high latency networks, such as the Internet.
+
+Routing Issues:
+
+- Added new Demand dial filters. You can now keep demand dial interfaces from
+  dialing by setting filters using the Routemon.exe command with a new
+  "Filtertype= Dial" option. The new syntax for this is the same for setting
+  Input and Output filters using Routemon.exe, and can be seen by typing
+  "routemon ip set filter /?" (without the quotation marks) at a command
+  prompt.
+
+  The following is an example of the syntax used to prevent a demand dial
+  interface from dialing:
+
+  C:\&gt;routemon ip add filter myremoterouter dial 0.0.0.0 0.0.0.0 0.0.0.0
+  0.0.0.0 any
+
+  C:\&gt;routemon ip set filter myremoterouter dial forward
+
+  NOTE: The first example above is one line; it has been wrapped for
+  readability.
+
+  For more information on using the Routemon.exe command to set filters, please
+  see the Routing and Remote Access Administrator's Guide.
+
+- Added the capability to filter fragmented IP packets. Two registry keys
+  control this functionality.
+
+     HKEY_LOCAL_MACHINE\System|CurrentControlSet\IPFilterDriver
+     \Parameters
+
+     EnableFragmentChecking REG_DWORD
+
+  Setting this to 1 enables fragment checks
+
+     DefaultForwardFragments REG_DWORD
+
+  Setting this to 0 causes the filterdriver to drop fragments if they do not
+  match a previous header.
+
+- Changes were applied to the Router's Remote Authentication Dial-In User
+  Service (RADIUS) client to address a duplicate Acct-Session-Id accounting
+  problem, as well as an issue that caused the reversal of the FramedIPAddress
+  returned from a RADIUS server. In addition, the RADIUS client now sends the
+  NAS-Port-Type and Acct- Session-Time attributes.
+
+- Resolved issue that used to cause an Access Violation when adding a Virtual
+  Interface right after configuring an Area under OSPF routing. Adjusted the
+  RIP Authentication type to 2 instead of 1, per RFC 1388.
+
+  NOTE: This update must be applied to all Routing and Remote Access routers if
+  you are using RIP2 authentication.
+
+- Resolved issue which could cause Mprouter to hang when doing an "ipconfig
+  /release".
+
+- Made a change that ensures that periodic RIP route updates resume each time a
+  demand-dial interface is reactivated.
+
+Known Problems in this Update:
+
+- Although there is a checkbox in the Global IP Config dialog to enable/disable
+  filtering, at this time the only functionality it has is to visually show you
+  if any filters have been configured on your interface(s). Regardless, the
+  filter driver is always enabled. In order to disable filtering on an
+  interface, you must use the per interface option in the Interface IP Config
+  dialog.
+
+- Even though the "Filtertype= Dial" option has been properly configured for a
+  demand dial interface, it might still be possible for that interface to dial.
+  This only occurs if you are pinging from the command line of the Routing and
+  RAS server in which the demand dial interface is configured.
+
+Fixes and Features Included from Hotfix Update 1.0:
+
+New Features Added in Hotfix 1.0:
+
+- Allowing PPP clients to connect without authentication.
+
+  This can be accomplished by altering the default registry key as shown:
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman
+     \PPP\ForceEncryptedPassword
+
+  (DWORD) 3 allows the server to accept incoming PPP clients without
+  authentication.
+
+- Using MS-CHAP with RADIUS authentication.
+
+  In order to enable MS-CHAP with RADIUS authentication, you must add a registry
+  value
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman
+     \PPP\CHAP\OfferMSCHAP
+
+  and set it to (DWORD) 1.
+
+  Once this is enabled every incoming PPP connection will be offered MS- CHAP,
+  and MS-CHAP will be used to authenticate each PPP user against the RADIUS
+  server that your RAS server is using.
+
+List of Issues Fixed in Hotfix Update 1.0:
+
+All bug fixes contained in this hotfix are listed below. You can query the
+Microsoft Knowledge Base (KB) to find an article about a specific bug by using
+the KB Qxxxxxx number that is assigned to the bug. The Microsoft Knowledge Base
+can be found on the Microsoft Web site at http://msdn.microsoft.com/support/.
+
+KB# Brief Description
+-----------------------------------------------------------------------
+Q172290 Routing and Remote Access "Out of Buffers" Event Logs
+Q176689 RRAS Requires hotfix when Using Proxy 2.0
+Q173533 WinNT Radius Client Sends Incomplete Accounting Information
+Q176506 Radius Accounting Only Logs One Entry for Multilink Client
+Q173532 Radius Authentication Causes Access Violation in Mprouter.exe
+Q172512 Routing and Remote Access Event ID 20100
+Q176502 RAS Authentication Rechallenge Resets Compression Flag
+Q176209 RAS or RRAS Server Fails to Answer Incoming Calls
+Q167038 RAS Clients Run Winsock and RPC Applications Slowly
+Q171061 RIP Does Not Advertise Zero Subnets
+Q160517 RRAS May Decrement Local Static Route Metric
+Q176082 RRAS Server Updates Link State Database but not Route Table
+Q162834 RRAS Stops Routing After Encountering Zero Checksum
+Q104296 RRAS Uses Larger MTU Than Other OSPF Routers
+
+Information in this document is subject to change without notice and is provided
+for informational purposes only. The entire risk of the use or results of the
+use of this document remains with the user, and Microsoft Corporation makes no
+warranties, either express or implied. The names of companies, products, people,
+characters, and/or data mentioned herein are fictitious and are in no way
+intended to represent any real individual, company, product, or event, unless
+otherwise noted. Complying with all applicable copyright laws is the
+responsibility of the user. No part of this document may be reproduced or
+transmitted in any form or by any means, electronic or mechanical, for any
+purpose, without the express written permission of Microsoft Corporation.
+
+Microsoft may have patents, patent applications, trademarks, copyrights, or other
+intellectual property rights covering subject matter in this document. Except as
+expressly provided in any written license agreement from Microsoft, the
+furnishing of this document does not give you any license to these patents,
+trademarks, copyrights, or other intellectual property.
+
+(c) 1998 Microsoft Corporation. All rights reserved.
+
+Microsoft, MS-DOS, MS, Windows, Windows NT, are either registered trademarks or
+trademarks of Microsoft Corporation in the U.S.A. and/or other countries.
+
+Other product and company names mentioned herein may be the trademarks of their
+respective owners.
+
+Additional query words: 4.00 rras
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

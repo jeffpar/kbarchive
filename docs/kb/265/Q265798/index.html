@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265798/","publisher":null,"image":null,"headline":"Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265798-how-to-change-the-cursor-in-an-embedded-visual-basic-applicatio">Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265798
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 kbAudDeveloper kbHOWTOmaster
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Change Cursor in Visual Basic Application
+
+SUMMARY
+=======
+
+This article illustrates how to use the SetCursor and LoadCursor API function
+calls to change the cursor in an eMbedded Visual Basic 3.0 (eVB) application.
+This approach is necessary because the Screen.MousePointer property in eVB works
+only on the Pocket PC device. It does not work on the Handheld PC Professional
+Edition or the Palm-size PC devices.
+
+Change Cursor in Visual Basic Application
+-----------------------------------------
+
+1. Create a new Windows CE project in eMbedded Visual Basic. Form1 is created by
+  default.
+
+2. Place two Command buttons on Form1.
+
+3. Paste the following code into Form1:
+
+NOTE: This code works on the Windows CE devices with touch screens but it does
+not work in the emulation environment.
+
+  Const IDC_WAIT = 32514
+
+  Public Declare Function LoadCursor Lib "Coredll" _
+      Alias "LoadCursorW" ( _
+      ByVal hInstance As Long, _
+      ByVal lpCursorName As Long) As Long
+
+  Public Declare Function SetCursor Lib "Coredll" ( _
+      ByVal hCursor As Long) As Long
+
+  Function WaitCursor(bWait As Boolean) As Long
+      Dim hCursor As Long
+      
+      'Obtain the handle to the cursor
+      If bWait Then
+          'Get handle to the wait cursor
+          hCursor = LoadCursor(0, IDC_WAIT)
+      Else
+          'Restore default cursor
+          hCursor = LoadCursor(0, 0)
+      End If
+      
+      'Set the cursor based on the cursor handle
+      WaitCursor = SetCursor(hCursor)
+
+  End Function
+
+  Private Sub Command1_Click()
+      WaitCursor True
+  End Sub
+
+  Private Sub Command2_Click()
+      WaitCursor False
+  End Sub
+
+  Private Sub Form_Load()
+      Command1.Move 120, 120, 2535, 375
+      Command2.Move 120, 600, 2535, 375
+      Command1.Caption = "Hourglass"
+      Command2.Caption = "Default"
+  End Sub
+
+4. Run the application.
+
+5. Click the Command buttons, and note that the cursor changes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 kbAudDeveloper kbHOWTOmaster 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

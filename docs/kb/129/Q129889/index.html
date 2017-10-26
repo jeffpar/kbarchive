@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129889: How to Use a UDF in Index with the Trim Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129889: How to Use a UDF in Index with the Trim Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129889/","publisher":null,"image":null,"headline":"Q129889: How to Use a UDF in Index with the Trim Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129889-how-to-use-a-udf-in-index-with-the-trim-functions">Q129889: How to Use a UDF in Index with the Trim Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129889
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; UNIX:2.6; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When creating an index key, it is important to remember that the index keys will
+have a fixed length even if the length of the field contents are varying
+lengths. FoxPro does not create or use variable-length keys. Index keys are
+padded with spaces to a constant size (the length of the field in the table
+structure).
+
+You can use a User-Defined Function (UDF) in an index expression. For example,
+you can order the records based on a partial field (for example, the street name
+in an address field). When a UDF is used to create an index key, the UDF is
+called twice to initiate the process before the records are processed. Then it
+is called once for each record in the table.
+
+This article shows by example how to use a UDF in an index expression with the
+four trim functions.
+
+MORE INFORMATION
+================
+
+The four trim functions, TRIM(), ALLTRIM(), RTRIM(), and LTRIM() are ignored
+during the first two passes through the UDF. Then they are used to generate the
+index keys. However, note that the resulting key is still padded with blanks to
+the constant length of the field in the index. It is still a fixed-length
+index.
+
+When tracing the UDF through the TRACE WINDOW, the first two passes through the
+code, as the index is built, calculate the key expressions so all the functions
+for removing blanks are ignored. The remaining passes through the UDF build the
+actual index keys. During this phase of building the index keys, the trim
+functions operate as expected within the UDF.
+
+Sample Code
+-----------
+
+This sample code creates a table (TEST.DBF) and a text file (UDFINDEX.TXT)
+containing output that shows the values of the record number and the string's
+length, using the ALLTRIM function. It also creates a second index and list to
+compare with the first list, showing that the ALLTRIM function did work in the
+UDF index. Notice the placement of the record with the name "Joe Brown."
+
+  *Beginning of program.
+
+  SET ALTERNATE TO udfindex.txt
+  SET ALTERNATE ON
+  CLEAR
+  CREATE TABLE test (name C(30))
+  INSERT INTO test (name) VALUES ("John Doe")
+  INSERT INTO test (name) VALUES ("Jane Smith")
+  INSERT INTO test (name) VALUES ("  Joe Brown")
+  INSERT INTO test (name) VALUES ("Mary Green")
+  CLEAR
+  PUBLIC n
+  n=1
+       ? "THIS FILE IS OUTPUT FROM A PROGRAM SHOWING THE USE OF ALLTRIM IN A"
+       ? "UDF USED TO BUILD AN INDEX KEY."
+       ?
+  INDEX ON strtrim(name) TAG testtag
+  m.name=test.name
+  * Note that the memory variable created from the field is again 30
+  * characters long. It has been padded with spaces to a constant length.
+       ?
+       ?
+       ? "FoxPro will pad the key to the size of the field, making a fixed"
+       ? "length key."
+       ?
+       ? "*** The length of the new memory variable using the UDF index is ";
+         +STR(LEN(m.name))
+  * Note that the leading spaces are ignored in this output showing that
+  * ALLTRIM is working.
+       ?
+       ?
+       ? "Below is the list of records indexed using ALLTRIM in the UDF."
+       ?
+  LIST
+  INDEX ON name TAG name
+  * Note that the leading spaces are not ignored in this list.
+       ?
+       ? "Below is a list of records indexed without removing the leading"
+       ? "spaces."
+       ?
+  LIST
+  SET ALTERNATE OFF
+  CLOSE ALL
+  MODIFY FILE udfindex.txt
+
+  FUNCTION strtrim
+  PARAMETER strin
+       ? REPLICATE(CHR(45),80)
+  IF LEN(ALLTRIM(strin)) = LEN(strin)
+     * Note output from the following command:  ALLTRIM is ignored.
+     ? "On pass " +ALLTRIM(STR(n))+" the ALLTRIM function IS NOT in effect."
+  ELSE
+     ? "On pass " +ALLTRIM(STR(n))+" the ALLTRIM function IS in effect."
+  ENDIF
+  ? "   Record number is: "+ALLTRIM(STR(RECNO()))
+  N=N+1
+  ? "   The trimmed string's length is: "+ALLTRIM(STR(LEN(ALLTRIM(strin))))
+  IF n = 3
+       ?
+       ? REPLICATE(CHR(42),60)
+       ? "*  Notice in the first two iterations, the last record is  *"
+       ? "*  evaluated in the UDF strtrim(), not the first record.  *"
+       ? REPLICATE(CHR(42),60)
+       ?
+  ENDIF
+  RETURN ALLTRIM(strin)
+
+  * End of program.
+
+Additional query words: VFoxWin FoxWin FoxMac FoxDos database design considerations 2.50 2.50a 2.50b 2.50c
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260UNIX kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; UNIX:2.6; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122262/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122262/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122262/","publisher":null,"image":null,"headline":"Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122262-bug-lnk1200-error-issued-because-of-low-disk-space">Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122262
+Product(s): Microsoft Programming Utilities
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Linker (LINK.EXE), used with:
+   - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project with debug information under low disk space conditions
+(on either the project drive or the TEMP\ directory drive), the following error
+may be generated:
+
+  LINK : error LNK1200: error reading program database
+
+When linking incrementally, the following warning may precede the LNK1200 error:
+
+  LINK : warning LNK4081: low on disk space;
+
+  linking non-incrementally
+
+CAUSE
+=====
+
+When LINK fails because of low disk space conditions, corruption of the .PDB
+file associated with the target may occur. Because .PDB files are updated
+incrementally, subsequent builds that update the .PDB file for the target will
+fail and give the LNK1200 error.
+
+RESOLUTION
+==========
+
+Having LINK generate a new .PDB file for the target will alleviate the problem.
+The resolution has two steps:
+
+1. Delete the (corrupt) .PDB file for the target.
+
+2. Free up enough disk space, so that there is sufficient room for the new .PDB
+  file and the updated target.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The LNK4081 warning is warning you that there is not enough disk space for the
+Linker to update the .ILK file or write out a new one if one doesn't already
+exist.
+
+Additional query words: 2.00 2.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbLINKSearch
+Version           : :2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

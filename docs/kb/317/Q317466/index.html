@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317466/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317466/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317466/","publisher":null,"image":null,"headline":"Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317466-howto-remove-buttons-from-the-print-preview-toolbar">Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317466
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0,7.0
+Operating System(s): 
+Keyword(s): kbReportWriter kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700
+Last Modified: 24-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to remove buttons from the Print Preview toolbar and
+how to use the toolbar in an executable.
+
+MORE INFORMATION
+================
+
+The following steps describe how to remove the Print button from the Print
+Preview toolbar. The Print button is used as an example. However, any of the
+buttons can be removed. You may want to remove the Print button, for example, if
+you want users of your application to be able to preview a report but not to
+print it.
+
+1. Paste the following code in a program (.prg) file, and then run the program
+  from the Command window:
+
+  LOCAL lcResourceFileStem
+  IF '05.'$VERSION()  &amp;&amp; 	Foxtools required in VFP5
+  	SET LIBRARY TO HOME()+'foxtools.fll'
+  ENDIF
+  SET SAFETY OFF
+
+  lcResourceFileStem = ADDBS(JUSTPATH(SYS(2005)))+JUSTSTEM(SYS(2005))
+  SET RESOURCE OFF
+  * Copy the current resource file to NoPrint which is
+  * used to store changes to the Print Preview toolbar.
+  COPY FILE (lcResourceFileStem + ".dbf") ;
+  	TO noprint.DBF
+  COPY FILE (lcResourceFileStem + ".fpt") ;
+  	TO noprint.fpt
+
+  * Remove current settings by deleting all records in the table.
+  USE noprint.DBF EXCLUSIVE
+  ZAP
+  USE
+  CLOSE ALL
+
+  * Create a table to use for a simple report and put some data in it.
+  DELETE FILE PrintTest.DBF
+  CREATE TABLE PrintTest (NAME C(30), Address C(20), City C(20), State C(2))
+  INSERT INTO PrintTest VALUES ("Jodie Garber", "1234 Jones St", "Phoenix", "AZ")
+  INSERT INTO PrintTest VALUES ("Holly Johnson", "675 Smith St", "Chicago", "IL")
+  INSERT INTO PrintTest VALUES ("Jack Reacher", "968 Duvall Street", "Key West", "FL")
+  INSERT INTO PrintTest VALUES ("Beau Borken", "1515 Main St", "York", "MT")
+
+  * Create a report and preview it.
+  CREATE REPORT PrintTest FROM PrintTest COLUMN&lt;BR/&gt;
+  USE IN PrintTest
+  SET RESOURCE TO noprint.DBF
+  REPORT FORM PrintTest PREVIEW NOWAIT
+  IF '05.'$VERSION()  &amp;&amp; 	Turn off Foxtools in VFP5
+  	SET LIBRARY TO
+  ENDIF
+  RETURN
+
+2. Right-click the Title bar of the Print Preview toolbar, and then click
+  Customize. If the Print Preview toolbar is docked, you can right-click
+  between the buttons of the toolbar.
+
+3. Under Categories, click Print Preview, and then click the Print button and
+  drag it off the toolbar.
+
+4. Click the Close button to close the Customize Toolbar dialog box.
+
+5. Click the Close button on the Print Preview toolbar to close the Print
+  Preview toolbar.
+
+6. Type the following command in the Command window:
+
+  SET RESOURCE OFF
+
+7. Paste the following code in a program (.prg) file, and then run the program
+  from the Command window:
+
+  Note: This step is used to demonstrate that the Print button has been removed
+  from the Print Preview toolbar. The code will run in Visual FoxPro 6.0 and
+  later, but the steps that are described earlier can be used in Visual FoxPro
+  5.0. You can test in Visual FoxPro 5.0 by manually generating a project that
+  has a main program that contains the SET RESOURCE TO NoPrint, and the REPORT
+  FORM command.
+
+  #DEFINE CRLF CHR(13) + CHR(10)
+
+  LOCAL cMain
+
+  CLOSE ALL
+  * Delete any projects with the same name.
+  DELETE FILE PrintTest.PJ?
+  SET SAFETY OFF
+  * Open the table used by the report.
+  cMain = "USE PrintTest " + CRLF 
+
+  * Set the resource file to the one that does not have 
+  * a print button on it.
+  cMain = cMain + "SET RESOURCE TO NoPrint" + CRLF
+  cMain = cMain + "REPORT FORM PrintTest PREVIEW" + CRLF
+
+  * Save the string cMain to main.prg.
+  STRTOFILE(cMain,"Main.Prg")
+
+  * Create a project and add all the files that the project needs.
+  CREATE PROJECT PrintTest NOWAIT
+  _VFP.ActiveProject.Files.Add("Main.Prg")
+  _VFP.ActiveProject.Files.Add("PrintTest.Frx")
+
+  * Add the resource file that the print button was removed
+  * from and include it in the executable. This makes it read only.
+  * If the resource file is read only, changes made to the 
+  * environment at runtime will not be saved. 
+  _VFP.ActiveProject.Files.Add("NoPrint.Dbf")
+  _VFP.ActiveProject.Files.Item(3).Exclude = .F.
+
+  * Compile the project into an executable.
+  _VFP.ActiveProject.Build("PrintTest.Exe",3,.T., .T.)
+
+8. Run PrintTest.exe and note that the toolbar does not have a Print button. You
+  can double-click PrintTest.exe in Windows Explorer to run the program, or you
+  can run the following command from the Command window:
+
+  RUN /N PrintTest.exe
+
+9. Click the Close button on the Print Preview toolbar to close the toolbar.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbReportWriter kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP700 kbVFP500a
+Version           : :5.0,5.0a,6.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

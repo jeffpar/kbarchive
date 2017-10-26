@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163021: RUI_WRITE Is Rejected with Sense Code 0X’200D’ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163021: RUI_WRITE Is Rejected with Sense Code 0X’200D’" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163021/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163021/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163021/","publisher":null,"image":null,"headline":"Q163021: RUI_WRITE Is Rejected with Sense Code 0X’200D’","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163021-rui_write-is-rejected-with-sense-code-0x200d">Q163021: RUI_WRITE Is Rejected with Sense Code 0X’200D’</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163021
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 SP1,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11 SP1, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an LUA application sends data while a BID response is pending, the
+RUI_WRITE request is rejected with Sense Code 0X'200D'
+
+CAUSE
+=====
+
+The LUA application is trying to send data while a BID response has not
+processed. This causes a race condition, and the RUI_WRITE is rejected.
+
+RESOLUTION
+==========
+
+A fix is available to correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.11 Service Pack 1 and 3.0. Microsoft has confirmed this to be a problem in SNA
+Server for Windows NT. This problem was corrected in the latest SNA Server for
+Windows NT 2.11 and 3.0 U.S. Service Packs. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The application is trying to send data immediately after a BID request has come
+in. The SNA Server service processed the data sent by the application instead of
+sending the BID response for the pending BID request. This causes a race
+condition in the SNA Server service, and the RUI_WRITE is rejected with the
+following Sense Code:
+
+  0X'200D' Response Owed Before Sending Request: An attempt has been made
+           in half-duplex (flip-flop or contention) send/receive mode to
+           send a normal-flow request when a response to a previously
+           received request has not yet been sent.
+
+With the SNA Application LUA API trace enabled, you may see the following:
+
+  |00000150.000000c1 RUI    RUI_WRITE request
+  |00000150.000000c1 RUI    ---- Verb Parameter Block at address 001AA37C
+  ----
+  |00000150.000000c1 RUI    52004400 00000000 00000000 04800000
+  &lt;R.D.............&gt;
+  |00000150.000000c1 RUI    02000000 45303157 494E3031 00000000
+  &lt;....E01WIN01....&gt;
+  |00000150.000000c1 RUI    0E000700 00006900 80755D00 803FD700
+  &lt;......i..u]..?P.&gt;
+  |00000150.000000c1 RUI    2C000101 001A0190 20010000 00000000
+  &lt;,..............&gt;
+  |00000150.000000c1 RUI    00000000
+&lt;....&gt;
+  |00000150.000000c1 RUI    ---- Data at address 005D7580 ----
+  |00000150.000000c1 RUI    F5F2F7F1 F0F00D25 7AF8F7C4 7AC3C5C4
+  &lt;527100.%z87DzCED&gt;
+  |00000150.000000c1 RUI    C5D340F3 F2F9F0F5 0D257AF8 F5C47AC3
+  &lt;EL@32905.%z85DzC&gt;
+  |00000150.000000c1 RUI    C5C4C5D3 40F3F2F9 F0F50D25 7AF3F2C2
+  &lt;EDEL@32905.%z32B&gt;
+  |00000150.000000c1 RUI    7AC4C5D4 F6F3F9F2 F9F66B0D 2560D0C0
+  &lt;zDEM639296k.%`..&gt;
+  |00000150.000000c1 RUI    F57AC0D4 C1C37AF1 C5F9F2F1 F2F9F1D0
+  &lt;5z.MACz1E921291.&gt;
+  |00000150.000000c1 RUI    C0C3C8D2 7AF3C6F0 C6F8F5F3 F2F5C3F4
+  &lt;.CHKz3F0F85325C4&gt;
+  |00000150.000000c1 RUI    C4D0C0E3 D5C77AD0 D0
+  &lt;D..TNGz..       &gt;
+  |00000150.00000104 RUI    ---------------------------------------------
+-
+  11:02:36.41
+  |00000150.00000104 RUI    RUI_WRITE response
+  |00000150.00000104 RUI    UNSUCCESSFUL - RSP_BEFORE_SENDING_REQ
+  |00000150.00000104 RUI    ---- Verb Parameter Block at address 001AA37C
+  ----
+  |00000150.00000104 RUI    52004400 00140000 200D0000 04800000
+  &lt;R.D............&gt;
+  |00000150.00000104 RUI    02000000 45303157 494E3031 00000000
+  &lt;....E01WIN01....&gt;
+  |00000150.00000104 RUI    0E000700 00006900 80755D00 803FD700
+  &lt;......i..u]..?P.&gt;
+  |00000150.00000104 RUI    2C000000 00000190 20010041 00000000
+  &lt;,.........A....&gt;
+  |00000150.00000104 RUI    00000000
+&lt;....&gt;
+  |00000150.00000104 RUI    ---- Data at address 005D7580 ----
+  |00000150.00000104 RUI    F5F2F7F1 F0F00D25 7AF8F7C4 7AC3C5C4
+  &lt;527100.%z87DzCED&gt;
+  |00000150.00000104 RUI    C5D340F3 F2F9F0F5 0D257AF8 F5C47AC3
+  &lt;EL@32905.%z85DzC&gt;
+  |00000150.00000104 RUI    C5C4C5D3 40F3F2F9 F0F50D25 7AF3F2C2
+  &lt;EDEL@32905.%z32B&gt;
+  |00000150.00000104 RUI    7AC4C5D4 F6F3F9F2 F9F66B0D 2560D0C0
+  &lt;zDEM639296k.%`..&gt;
+  |00000150.00000104 RUI    F57AC0D4 C1C37AF1 C5F9F2F1 F2F9F1D0
+  &lt;5z.MACz1E921291.&gt;
+  |00000150.00000104 RUI    C0C3C8D2 7AF3C6F0 C6F8F5F3 F2F5C3F4
+  &lt;.CHKz3F0F85325C4&gt;
+  |00000150.00000104 RUI    C4D0C0E3 D5C77AD0 D0
+  &lt;D..TNGz..       &gt;
+
+Additional query words: prodsna 2.11.sp1 SP1 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211SP1
+Version           : WINDOWS:2.11 SP1,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

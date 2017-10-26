@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/320/Q320010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/320/Q320010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/320/Q320010/","publisher":null,"image":null,"headline":"Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q320010-100--cpu-utilization-and-event-id-8-warnings-after-mc_allocate">Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q320010
+Product(s): Microsoft SNA Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 22-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An APPC transaction program may cause Host Integration Server 2000 to log
+multiple Event ID 8 messages and cause CPU utilization to reach 100 percent.
+
+Details of the Event ID 8
+-------------------------
+
+Event Type:	Warning
+Event Source:	SNA Server
+Event Category:	None
+Event ID:	8
+Description:
+(1174) Internal Protocol Violation
+
+EXPLANATION
+A protocol violation has occurred at the interface between the SNA 
+Service and another SNA component (for example, the emulator or link 
+service).
+
+SUBCODE INFORMATION
+X'1105'  Insufficient space to copy data into node buffer.
+X'1112'  Received unknown message type at the node interface.
+X'1144'  Received illegal message at the node interface.
+X'1151'  Received unrecognized message from the link service component.
+X'1174'  Received invalid session limits message from Host Integration 
+         Server SNA Manager.
+X'1175'  Received invalid CNOS command.
+X'1188'  Received invalid CNMS message.
+
+ACTION
+Provide network support personnel with the event log file(s) related to
+SNA, SNA trace file(s), and the number and description of the displayed 
+subcode. For information about SNA log and trace files, see the 
+"Microsoft Host Integration Server Online Books."
+
+When this problem occurs, you must stop and restart the SNA Server service.
+
+CAUSE
+=====
+
+This problem occurs if the following conditions exist:
+
+- An APPC mode has been configured with an automatic activation limit, and an
+  explicit partnership has been defined.
+
+- An invoking APPC transaction program issues an MC_ALLOCATE request by using
+  the FQPLU_NAME (fully-qualified partner LU name) field instead of the
+  PLU_ALIAS (partner LU alias) field. However the string that the transaction
+  program specifies in the FQPLU_NAME field actually represents the partner LU
+  alias instead of the fully-qualified partner LU name.
+
+When the APPC transaction program issues an MC_ALLOCATE request under these
+conditions, the SNA Server service enters an internal loop. This looping causes
+the service to generate the symptoms that are listed in the "Symptoms" section
+of this article.
+
+RESOLUTION
+==========
+
+To resolve this problem, correct the APPC transaction program by using one of
+the following methods:
+
+- Change the invoking APPC transaction program so that it uses the PLU_ALIAS
+  field of the MC_ALLOCATE instead of the FQPLU_NAME field.
+
+- Change the invoking APPC transaction program so that it specifies a
+  fully-qualified partner LU name in the FQPLU_NAME field instead of specifying
+  a partner LU alias.
+
+Additional query words: his2000 spin tp
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141805: FIX: ‘Unknown member’ Error Loading Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141805: FIX: ‘Unknown member’ Error Loading Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141805/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141805/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141805/","publisher":null,"image":null,"headline":"Q141805: FIX: ‘Unknown member’ Error Loading Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141805-fix-unknown-member-error-loading-form">Q141805: FIX: ‘Unknown member’ Error Loading Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141805
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to run your form, you get the following error message:
+
+  Error loading file - ControlSource - record number 4. Unknown member
+  &lt;member_name&gt;.
+
+CAUSE
+=====
+
+You have an object on the form that has a ControlSource property that references
+an object that used to be on the form but was subsequently been deleted and
+replaced with a object of the same name as the deleted object.
+
+WORKAROUND
+==========
+
+1. Select the object that has the incorrect reference, and delete it from the
+  form.
+
+2. Save the form.
+
+3. Paste the object back onto the form.
+
+These steps will change the object hierarchy reference, and your form should run
+as expected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Form objects are added to the end of an .scx file. Because of this, property
+references are positionally dependent. In the following example, the text box
+object (object B) placed on the form references the Name property of the check
+box object (object A). When the form is run, the example works correctly.
+
+Removing the text box object from the form and replacing it with an identical
+object that is still referenced by the text box object moves the position of the
+check box object from the beginning of the .scx file to a position after the
+text box.
+
+Because of the way objects and property references are processed, when the form
+is run, you will get the noted error message. The new check box object that is
+placed on the form is written to the end of the file and is not available when
+required by the reference in the text box object.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the Command window, type this command:
+
+     CREATE FORM testform
+
+2. Place a check box on the form, and then place a text box on the form.
+
+3. For the text box, set the ControlSource property to:
+
+     Thisform.Check1.Name
+
+4. Save and run the form. You will see the name of the check box object on the
+  form ("Check box1").
+
+5. Modify the form, and select and delete the check box object.
+
+6. Place a new check box on the form, and run the form a second time. You will
+  get the error message.
+
+Additional query words: uknown member load
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b
+Version           : WINDOWS:3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158020: SMS: Error 529 When Installing a Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158020: SMS: Error 529 When Installing a Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158020/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158020/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158020/","publisher":null,"image":null,"headline":"Q158020: SMS: Error 529 When Installing a Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158020-sms-error-529-when-installing-a-client">Q158020: SMS: Error 529 When Installing a Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158020
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup smssetup
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing a Systems Management Server 1.2 client, the installation script
+(SMSLS or RUNSMS) fails with the following error message:
+
+  ERROR: 529
+  Veuillez contacter votre administrateur systeme.
+
+The error message is NOT displayed in English. The translation is: "Please
+contact your system administrator."
+
+A verbose output shows that CLISETUP (Cli_dos.exe for MS-DOS) fails with an Error
+529.
+
+CAUSE
+=====
+
+This problem occurs when both of the following conditions are true:
+
+- The language setting in Control Panel Regional Settings is set to something
+  other than "English" on the client.
+
+-and-
+
+- A Systems Management Server 1.1 site with the Multi-Lingual Client Pack for
+  Systems Management Server 1.1 has been upgraded to Systems Management Server
+  version 1.2, but the Multi-Lingual Client Pack is still the "old" 1.1
+  version.
+
+WORKAROUND
+==========
+
+To work around this problem, do either of the following:
+
+- Remove (making a backup copy of the files first) the Systems Management
+  Server 1.1 Multi-Lingual Client Pack for Systems Management Server 1.1, in
+  order to install a default U. S. version of Systems Management Server 1.2
+  Client. For a French version, remove Sms\Logon.srv\X86.bin\0000040C.
+
+-or-
+
+- Upgrade the Multi-Lingual Client Pack to the Systems Management Server 1.2
+  version.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Systems Management Server tree is affected as shown by the following:
+
+- Sms\Logon.srv\X86.bin\00000409 (Systems Management Server 1.2, US resources)
+
+- Sms\Logon.srv\X86.bin\0000040C (Systems Management Server 1.1, FR resources)
+
+NOTE: This problem may affect all international clients.
+The following list summarizes most of the existing country codes:
+
+00000405=cz      00000414=no      0000080C=be
+00000406=dk      00000415=pl      00000813=be
+00000407=gr      00000416=br      00000816=po
+00000409=us      00000419=ru      00000C0C=cf
+0000040A=sp      0000041A=yu      00001009=us
+0000040B=su      0000041B=sl      0000100C=sf
+0000040C=fr      0000041D=sv      00010409=dv
+0000040E=hu      00000807=sg      0001040A=sp
+0000040F=us      00000809=uk      00010C0C=cf
+00000410=it      0000080A=la      00020409=us
+00000413=nl
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

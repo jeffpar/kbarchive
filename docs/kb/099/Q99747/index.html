@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99747: Connectivity Issues About SQL Server for LAN Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99747: Connectivity Issues About SQL Server for LAN Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99747/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99747/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99747/","publisher":null,"image":null,"headline":"Q99747: Connectivity Issues About SQL Server for LAN Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99747-connectivity-issues-about-sql-server-for-lan-manager">Q99747: Connectivity Issues About SQL Server for LAN Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q99747</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">LAN</span> <span class="n">Manager</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">30</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">summarizes</span> <span class="n">some</span> <span class="n">simple</span> <span class="n">connectivity</span> <span class="n">issues</span> <span class="n">about</span> <span class="n">SQL</span> <span class="n">server</span> <span class="n">for</span> <span class="n">LAN</span>
+<span class="n">Manager</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="m">1.</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Can</span> <span class="n">I</span> <span class="n">install</span> <span class="n">SQL</span> <span class="n">server</span> <span class="n">on</span> <span class="n">my</span> <span class="n">LAN</span> <span class="n">Manager</span> <span class="n">server</span><span class="p">?</span>
+
+  <span class="n">A</span><span class="p">.</span> <span class="n">Yes</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Can</span> <span class="n">I</span> <span class="n">change</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">my</span> <span class="n">SQL</span> <span class="n">server</span><span class="p">?</span>
+
+  <span class="n">A</span><span class="p">.</span> <span class="n">The</span> <span class="n">SQL</span> <span class="n">server</span> <span class="n">name</span> <span class="n">must</span> <span class="n">be</span> <span class="n">the</span> <span class="n">same</span> <span class="k">as</span> <span class="n">that</span> <span class="k">of</span> <span class="n">your</span> <span class="n">LAN</span> <span class="n">Manager</span> <span class="n">server</span><span class="p">.</span> <span class="k">If</span>
+  <span class="n">you</span> <span class="n">have</span> <span class="k">to</span> <span class="n">change</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">server</span> <span class="n">name</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">also</span> <span class="n">change</span> <span class="n">the</span> <span class="n">LAN</span> <span class="n">Manager</span>
+  <span class="n">server</span> <span class="n">name</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Q</span><span class="p">.</span> <span class="n">What</span> <span class="n">is</span> <span class="n">a</span> <span class="n">DB</span><span class="p">-</span><span class="n">LIBRARY</span> <span class="p">(</span><span class="n">db</span><span class="p">-</span><span class="n">lib</span><span class="p">)?</span>
+
+  <span class="n">A</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="n">a</span> <span class="n">client</span><span class="p">-</span><span class="n">side</span> <span class="n">library</span> <span class="n">that</span> <span class="n">provides</span> <span class="n">a</span> <span class="n">call</span><span class="p">-</span><span class="n">level</span> <span class="n">interface</span> <span class="n">for</span>
+  <span class="n">clients</span> <span class="k">to</span> <span class="n">access</span> <span class="n">SQL</span> <span class="n">Server</span><span class="p">.</span> <span class="n">On</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">library</span> <span class="n">file</span> <span class="k">with</span> <span class="n">a</span> <span class="n">name</span>
+  <span class="k">of</span> <span class="n">the</span> <span class="n">form</span> <span class="s2">"RXDBLIB.LIB,"</span> <span class="n">where</span> <span class="n">x</span> <span class="n">indicates</span> <span class="n">the</span> <span class="n">memory</span> <span class="k">model</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span>
+  <span class="s2">"m"</span> <span class="n">for</span> <span class="n">medium</span> <span class="k">model</span> <span class="k">and</span> <span class="s2">"l"</span> <span class="n">for</span> <span class="n">large</span> <span class="k">model</span><span class="p">.</span> <span class="n">On</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">a</span> <span class="n">medium</span>
+  <span class="k">model</span> <span class="n">DLL</span> <span class="n">called</span> <span class="n">W3DBLIB</span><span class="p">.</span><span class="n">DLL</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Can</span> <span class="n">I</span> <span class="nf">connect</span> <span class="n">my</span> <span class="n">MS</span> <span class="n">SQL</span> <span class="n">server</span> <span class="k">to</span> <span class="n">work</span> <span class="k">with</span> <span class="n">Novell</span> <span class="n">network</span><span class="p">?</span>
+
+  <span class="n">A</span><span class="p">.</span> <span class="n">Yes</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="k">do</span> <span class="n">it</span> <span class="k">in</span> <span class="n">one</span> <span class="k">of</span> <span class="n">two</span> <span class="n">ways</span><span class="p">:</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Novell</span><span class="p">-</span><span class="n">named</span> <span class="n">pipe</span> <span class="n">requestor</span><span class="p">--</span><span class="n">because</span> <span class="n">Novell</span> <span class="n">NetWare</span> <span class="n">does</span> <span class="k">not</span>
+     <span class="n">natively</span> <span class="n">provide</span> <span class="n">named</span> <span class="n">pipes</span><span class="p">,</span> <span class="n">the</span> <span class="n">requestor</span> <span class="n">is</span> <span class="n">needed</span> <span class="n">for</span> <span class="n">applications</span> <span class="k">to</span>
+     <span class="n">communicate</span> <span class="k">with</span> <span class="n">SQL</span> <span class="n">Server</span> <span class="n">using</span> <span class="n">named</span> <span class="n">pipes</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">NetWare</span> <span class="n">Integration</span> <span class="n">Kit</span> <span class="p">(</span><span class="n">NIK</span><span class="p">)--</span><span class="n">the</span> <span class="n">NIK</span> <span class="n">makes</span> <span class="n">it</span> <span class="n">possible</span> <span class="n">for</span>
+     <span class="n">clients</span> <span class="k">to</span> <span class="n">communicate</span> <span class="n">using</span> <span class="n">NetWare</span><span class="s1">'s native SPX mechanism. The NIK
+     consists of a client-side net library and a server-side net manager.
+
+5. Q. Can I connect my Mac system to SQL Server?
+
+  A. Yes. You can use an SQL bridge or third party software applications by
+  TechGnosis Sequelink to interconnect with the Mac system.
+
+6. Q. What is an SQL Bridge?
+
+  A. An SQL bridge allows clients to communicate with a SQL server when the
+  client and server are using different IPC mechanisms. You can think of it as
+  a multiprotocol router. For example, it allows a Windows client using named
+  pipes as IPC to communicate with a Sybase SQL Server on UNIX using sockets as
+  IPC. SQL Bridge sits on a separate "bridge machine" that appears as an SQL
+  server to the client. The client actually connects to the bridge thinking
+  that it is the SQL server; the bridge listens to the client requests on one
+  IPC and routes them to the SQL server using another IPC. Currently, the
+  "bridge" machine needs to be running OS/2 or NT.
+
+7. Q. Does SQL Server work on a Banyan Vines network?
+
+  A. Yes. You need to buy an SQL Network Integration Kit (NIK) for Banyan Vines.
+
+8. Q. What are ODBC and ODS?
+
+  A. ODBC, or Open Database Connectivity, is a call-level interface (CLI)
+  standard that enables applications to interoperate with various DBMSs. The
+  application is written using ODBC API calls, which are translated to a
+  DBMS-specific format by modules known as ODBC drivers. Right now, drivers are
+  available for SQL Server, Oracle, and the various ISAM databases such as
+  dBASE, Paradox, Access, Btrieve, and Excel. Microsoft Access, Visual Basic,
+  FoxPro, and Excel use ODBC to achieve database connectivity.
+
+  ODS, or Open Data Services, allows you to write database "gateways." The ODS
+  API uses event driver architecture to trap SQL server client events--requests
+  such as insert, begin transmission, and so on. The ODS gateway translates
+  these events into a format understandable by another DBMS and sends it over
+  to that DBMS. So, an SQL server client thinks it is communicating with an SQL
+  server when, in reality, it is getting data from another DBMS using the
+  Gateway. Micro DecisionWare has written a gateway to get to DB/2 databases
+  using ODS. Note that ODS and ODBC can be used together because you can write
+  a gateway driver that works for all gateways.
+
+9. Q. What is ESQL?
+
+  A. ESQL, or embedded SQL, is an alternative to CLI (like db-lib and ODBC) for
+  accessing SQL server. In ESQL, the client application "embeds" SQL statements
+  within the programming language code. ESQL used to be the access method of
+  choice and is only now being replaced by CLI. For SQL server, toolkits are
+  available to write ESQL programs for COBOL and C.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

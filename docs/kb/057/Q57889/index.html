@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57889: File Buffering Can Hide Out-of-Disk-Space Condition | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57889: File Buffering Can Hide Out-of-Disk-Space Condition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57889/","publisher":null,"image":null,"headline":"Q57889: File Buffering Can Hide Out-of-Disk-Space Condition","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57889-file-buffering-can-hide-out-of-disk-space-condition">Q57889: File Buffering Can Hide Out-of-Disk-Space Condition</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57889
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | s_quickc s_quickasm | mspl13_c
+Last Modified: 22-JAN-1990
+
+If disk space is exceeded, file buffering fails when buffering is done
+by the stream I/O functions. For example, if a file buffer for a
+stream is set to 10K by setvbuf() but only 2K disk space is available,
+all data written to the buffer above 2K will be lost. This problem can
+occur even when setvbuf() and fwrite() return successful return codes.
+
+In the case where there is less space on the disk than there is in the
+stream buffer, all stream I/O functions will seem to work properly
+until the stream buffer is filled [for example, fwrite() returns the
+number of bytes written as if it were successful]. However, the status
+of these functions is valid only for the data going to the buffer and
+is not reflected in the file that is written to the disk.
+
+The problem is due to the existence of both the C run-time buffers and
+the DOS buffers. Only when the DOS buffers try to write to disk does
+it become evident that the disk is full. Then, the next return value
+from fwrite() will indicate failure.
+
+The following is the series of events that leads to the loss of data
+with buffered stream I/O functions:
+
+1. The stream is opened with fopen().
+
+2. Buffering is set on the stream, either 512 bytes default or the number
+   of bytes selected by the user with setvbuf().
+
+3. There is less disk space than the size of the buffer set by Step 2.
+
+4. Bytes are written to the file [for example, fwrite()], with
+   successful return codes.
+
+5. The buffer is filled and then the stream I/O function attempts to
+   write all data to DOS.
+
+6. The bytes that can fit on the disk are written and all remaining
+   data that was in the buffer is lost.
+
+7. Successive calls to write data to the file fail.
+
+The following are possible workarounds:
+
+1. Turn buffering off by setting the file buffer to NULL, using
+   setvbuf().
+
+2. Use nonbuffered I/O functions, such as open(), read(), and write().
+
+3. Check the result of closing the stream with fclose(), which flushes
+   all buffers associated with the given stream prior to closing.
+
+4. Set buffering to the same size as the records that are being
+   written. The third workaround will force fwrite() to return a
+   "failure" return code at a point where the program can easily
+   recover because the program knows exactly which records were
+   successfully written to disk and which one was not.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

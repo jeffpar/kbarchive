@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81319/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81319/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81319/","publisher":null,"image":null,"headline":"Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81319-cannot-print-from-windows-30-30a-accessory-applications">Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81319
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Windows accessory applications (Write, Notepad, Paintbrush, and so
+on) cannot print.
+
+CAUSE
+=====
+
+A compressed or otherwise invalid Windows printer driver corresponding to the
+default printer is in the Windows directory.
+
+NOTE: Applications not located in the Windows directory do not demonstrate this
+problem.
+
+For example, if the current default printer is a Hewlett-Packard (HP) LaserJet
+II, and HPPCL.DRV is in the Windows directory in compressed format, none of the
+accessory applications can print. In addition, you can't choose the Setup button
+from the Printer Setup dialog box (on the File menu in each accessory
+application).
+
+RESOLUTION
+==========
+
+Delete the compressed driver file from the Windows directory and make sure an
+uncompressed version is in the Windows SYSTEM directory.
+
+MORE INFORMATION
+================
+
+When this situation occurs, the Windows accessory applications exhibit the
+following symptoms:
+
+Notepad, Cardfile, Calendar
+---------------------------
+
+- The Print command on the File menu is unavailable (dimmed).
+
+- Choosing Printer Setup from the File menu and then choosing the Setup button
+  yields the following error message:
+
+  Cannot find printer or printer driver
+
+Write
+-----
+
+- The Print command on the File menu is unavailable (dimmed).
+
+- Upon opening Write, the following error message immediately appears:
+
+  Cannot print; check to ensure that your printer is installed correctly and
+  your disk has sufficient available space.
+
+- Choosing Printer Setup from the File menu and then choosing the Setup button
+  yields the following error message:
+
+  Cannot use printer; use Setup to install a new printer-driver file.
+
+Paintbrush
+----------
+
+- The Print command in the File menu is unavailable (dimmed).
+
+- When you choose Printer Setup from the File menu, the default printer is
+  omitted from the list of printers.
+
+
+Additional query words: greyed dimmed grey dim disabled inactive 3.0 3.0a accessories gray grayed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

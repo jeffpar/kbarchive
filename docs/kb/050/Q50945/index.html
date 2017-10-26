@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50945: How to Get Blinking Text in BASIC SCREEN Modes 7, 8, 9, 12, 13 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50945: How to Get Blinking Text in BASIC SCREEN Modes 7, 8, 9, 12, 13" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50945/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50945/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50945/","publisher":null,"image":null,"headline":"Q50945: How to Get Blinking Text in BASIC SCREEN Modes 7, 8, 9, 12, 13","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50945-how-to-get-blinking-text-in-basic-screen-modes-7-8-9-12-13">Q50945: How to Get Blinking Text in BASIC SCREEN Modes 7, 8, 9, 12, 13</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50945
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891113-97 B_BasicCom | mspl13_basic
+Last Modified: 5-SEP-1990
+
+The program example below demonstrates how to use the CALL INTERRUPT
+statement to enable blinking text in screen modes 7, 8, 9, 12, and 13.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50 for MS-DOS; to Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS-DOS; and to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+Interrupt 10 hex, with function 10 hex and subfunction 03 hex, can be
+used to toggle the blink/intensity bit on the video card. This
+determines whether the most-significant bit of the character attribute
+selects a blinking or intensified display. The default is for this bit
+to signify intensified display.
+
+After this interrupt has been called, anything displayed in colors 0
+through 7 is displayed normally, but anything displayed in colors 8
+through 15 is displayed blinking. This is because colors 8 through 15
+have the most-significant bit of the character attribute set.
+
+The registers to load for the interrupt call are as follows:
+
+   Interrupt 10 hex
+   AH = 10 hex
+   AL = 03 hex
+   BL = 0 = enable intensity (turns off blinking)
+        1 = enable blinking  (turns off intensity)
+
+Running the following program, BLINK.BAS, enables and disables
+blinking characters:
+
+REM $INCLUDE: 'qb.bi'
+' For BC.EXE and QBX.EXE in PDS 7.00 or 7.10, use the include file 'QBX.BI'
+
+DIM inregs AS regtype
+DIM outregs AS regtype
+SCREEN 9
+FOR x% = 1 TO 15
+   COLOR x%
+   PRINT "this is color: "; x%
+NEXT
+COLOR 7
+LOCATE 24, 1
+PRINT "Press any key to enable blinking";
+WHILE INKEY$ = "": WEND
+inregs.ax = &amp;H1003
+inregs.bx = 1
+CALL interrupt(&amp;H10, inregs, outregs)
+LOCATE 24, 1
+PRINT "Press any key to turn off blinking";
+WHILE INKEY$ = "": WEND
+inregs.ax = &amp;H1003
+inregs.bx = 0
+CALL interrupt(&amp;H10, inregs, outregs)
+
+Compile and link with Microsoft QuickBASIC 4.00, 4.00b, and 4.50 or
+with Microsoft BASIC Compiler 6.00 and 6.00b as follows:
+
+   BC Blink.bas;
+   LINK Blink.bas,,,BRUNxx.Lib+QB.Lib;
+
+The "xx" in the library name is for the current version of the product
+you are using (40, 41, 45, 60, or 61). For Microsoft BASIC Compiler
+6.00 and 6.00b, use BRUNxxER.Lib (emulation math package) or
+BRUNxxAR.Lib (alternate math package). For the alternate math library,
+you must compile with the BC /FPa switch. If you compile with BC /O,
+link with BCOMxx.LIB instead of BRUNxx.LIB.
+
+To run this program in the QB.EXE environment, you must load the Quick
+library QB.QLB: QB /L QB.QLB.
+
+For BASIC PDS 7.00 or 7.10, compile and link as follows:
+
+   BC Blink.bas;
+   LINK Blink.bas,,,BRT70ENR.Lib+QBX.Lib;
+
+The above example is for the math emulation, near strings, and real
+mode run-time library. The other possible run-time libraries and their
+corresponding compiler switches are as follows:
+
+   Library Name   Compiler Switches     Comments
+   ------------   -----------------     --------
+
+   BRT70ENR.LIB   [The default mode]    Emulation math, near strings
+   BRT70ANR.LIB   /FPa                  Alternate math, near strings
+   BRT70EFR.LIB        /Fs              Emulation math, far strings
+   BRT70AFR.LIB   /FPa /Fs              Alternate math, far strings
+
+To use stand-alone libraries, use BCL70xxx.Lib instead of
+BRT70xxx.Lib and add the compiler switch BC /O.
+
+For the QBX.EXE 7.00 or 7.10 environment, use QBX.QLB: QBX /L QBX.QLB.
+
+Note: This interrupt can be used to accomplish the same effect in
+SCREEN 0. Usually this in not needed because the COLOR statement can
+be used to control the intensity and blinking. However, if a program
+is directly accessing the hardware (through POKE, for example), this
+interrupt might be needed. This will have no effect for video cards
+that are NOT in a color mode (for example, MODE CO80). For example, if
+a program is running on a dual-monitor system (Hercules and VGA) and
+the current mode is monochrome, this interrupt will not affect the
+color card.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

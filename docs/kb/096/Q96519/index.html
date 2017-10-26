@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96519: Situations in Which DEFRAG Cannot Run | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96519: Situations in Which DEFRAG Cannot Run" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96519/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96519/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96519/","publisher":null,"image":null,"headline":"Q96519: Situations in Which DEFRAG Cannot Run","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96519-situations-in-which-defrag-cannot-run">Q96519: Situations in Which DEFRAG Cannot Run</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96519
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft DEFRAG operates on the MS-DOS logical drive level only. Third-party
+partitioning utilities that modify or translate disk geometry (such as Disk
+Manager and SpeedStor) operate beneath the MS-DOS file system and are therefore
+transparent to DEFRAG.
+
+DEFRAG cannot share access to a drive with other tasks; therefore, you cannot run
+DEFRAG if Windows or DESQview is running.
+
+MORE INFORMATION
+================
+
+DEFRAG does not work in the following situations:
+
+  Situation        Reason
+  ----------       ------
+  Network Drive    Network software usually does not allow full
+                   single-tasking access to the entire drive,
+                   including the file tables. Often network drives
+                   (such as Novell NetWare) use another file system.
+
+  CHKDSK Errors    Errors in the drive organization can cause
+                   unpredictable results from DEFRAG. DEFRAG
+                   identifies most CHKDSK errors while reading
+                   the drive organization, and then refuses
+                   to run until you correct them.
+
+  Windows          DEFRAG cannot operate properly in a
+                   multitasking or task-switching situation;
+                   therefore, it detects Windows in real, standard,
+                   and 386 enhanced modes and does not run.
+
+  Task Swapper     DEFRAG cannot operate properly in a
+                   task-switching situation; therefore, it detects
+                   the MS-DOS Shell task swapper and does not run.
+
+  Interlnk Drives  Interlnk is not designed to support defragmentation
+                   and other low-level utilities. Specifically, it does
+                   not implement interrupts 25 and 26.
+
+  Fastopen         The Fastopen program tracks which files are located
+                   in which clusters on your disk. DEFRAG rearranges
+                   data on a cluster level, which confuses Fastopen.
+
+  JOIN             JOIN does not allow normal access to a drive.
+
+  SUBST            SUBST drives do not have their own file tables or
+                   directories to optimize.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 6.00 3rd party defrag 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

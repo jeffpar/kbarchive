@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94764: Video: No Frames Captured with New Media Graphics Cards | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94764: Video: No Frames Captured with New Media Graphics Cards" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94764/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94764/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94764/","publisher":null,"image":null,"headline":"Q94764: Video: No Frames Captured with New Media Graphics Cards","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94764-video-no-frames-captured-with-new-media-graphics-cards">Q94764: Video: No Frames Captured with New Media Graphics Cards</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94764
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Super VideoWindows and TV-VideoWindows video capture cards from New Media
+Graphics must be configured to utilize hardware interrupt 10 to work correctly
+under Video for Windows. If this interrupt is not selected you will receive the
+following error message when you attempt to capture video using the VidCap
+utility.
+
+  No frames were captured, confirm that vertical sync interrupts are configured
+  and enabled.
+
+MORE INFORMATION
+================
+
+The following excerpt is from the release notes provided with Video for
+Windows:
+
+==============================================
+New Media Graphics Driver
+==============================================
+
+This release includes a video capture driver that works with the Microsoft
+Video for Windows software.
+
+The Super VideoWindows board is installed through INSTALL.EXE, supplied by
+New Media Graphics. Once you've run this program another accessory,
+VCONFIG.EXE, is used to configure and adjust the colors for the board. Use
+the other supplied accessory, VDEV.EXE, to check the installation.
+
+After you've run these accessories to install the board, use the Control
+Panel Drivers option to install the SuperVideo Windows video capture driver
+included on this disk. Choose the Add button and select Unlisted Or Updated
+Driver to install the correct driver. There is one driver compatible with
+all versions of Super VideoWindows and TV-VideoWindows.
+
+Once the driver is installed, you may use the AVI capture program VidCap to
+capture frames, sequences of frames, or capture video in real time.
+
+If you have an earlier SVW-ISA card, you may not be able to use the real-
+time video capture feature of the VidCap program. See below.
+
+After installation and setup is complete, you may want to check to see that
+NMGSVW.DLL and NMGSVW.INI are both in your WINDOWS\SYSTEM directory.
+
+Note: The Super VideoWindows board uses INT 10 only. If you want to change
+the I/O port address for the card, you must use the Control Panel Driver's
+option, the VCONFIG.EXE utility, and then restart the machine.
+
+If you have any problems or questions about the SVW capture driver, please
+call the New Media Graphics technical support department at (508) 663-0666.
+
+All Cards
+---------
+
+In order to use the AVI Video Sequence capture feature, you must enable the
+interrupt jumper on the board. The number and location of the jumper varies
+from board to board. Refer to the board specific directions below. Use an
+unused jumper block from the I/O address selection jumper to enable the
+interrupt.
+
+SVW-ISA, SVW-CM
+---------------
+
+The interrupt jumper is labeled JP18 and is located above and to the left
+of the edge fingers on the bottom of the card, when looking at the top of
+the board.
+
+Note: Some earlier revisions of the Super VideoWindows board may not
+support interrupts. These boards are marked REV 2A, REV 2B, or REV 2E. They
+can capture single frames, but cannot capture a sequence of frames in real
+time.
+
+SVW SL, TV-VideoWindows
+-----------------------
+
+The interrupt jumper is labeled JP13, and is located above the shorter row
+of the card edge fingers when looking at the top of the board.
+
+New Media Graphics
+780 Boston Road
+Billerica, MA  01821-5925
+
+Phone: (508) 663-0666
+Fax:   (508) 663-6678
+
+Additional query words: 1.00 videowindows TV TV=videowindows
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

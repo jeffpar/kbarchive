@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195402/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195402/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195402/","publisher":null,"image":null,"headline":"Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195402-absolute-vertical-move-command-handled-incorrectly-if-pdt-used">Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195402
+Product(s): Microsoft SNA Server
+Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+AS/400 print jobs that contain the Absolute Vertical Move SCS Command will print
+with incorrect formatting if the AS/400 print session is configured to use a
+Printer Definition Table (PDT) file. The incorrect formatting will appear as
+data printing farther down the page then it is supposed to print.
+
+As an example, a print job that contains an Absolute Vertical Move command at the
+end of line 12 that specifies printing should continue on line 24 will generate
+printed output that has the next data printed on line 36 instead of on line 24.
+
+This does not occur if the AS/400 print session is not configured to use a PDT in
+SNA Server Manager.
+
+CAUSE
+=====
+
+The virtual print driver used by SNA Server's host print service does not keep
+track of the print job's current line number when a PDT is used for a print
+session. Consequently, the 5250 print provider always uses a current line number
+of 1 when calculating the number of lines to move down the page when processing
+an Absolute Vertical Move command. This results in extra carriage returns being
+sent to the printer, which moves the print data too far down the page.
+
+The current line number is tracked when a PDT is not used, which is why this
+problem does not occur when a PDT is not used for the AS/400 print session.
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+Service Pack 1, 3.0 Service Pack 2, 3.0 Service Pack 3, 4.0, and 4.0 Service
+Pack 1. This problem was first corrected in SNA Server 3.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+After applying the update, the host print service keeps track of a print job's
+current line number when a PDT is used. In addition, a Form Feed will be issued
+if the Absolute Vertical Move command specifies a line number lower than the
+current line number.
+
+The SCS control code Presentation Position (PP) '0x34' is commonly used in AS/400
+(APPC) printing. This control code allows the print position to be moved either
+horizontally or vertically, relative to the previous position or to an absolute
+position.
+
+The following are the four forms of the Presentation Position SCS control code.
+
+Absolute Horizontal Presentation Position (AHPP) '0x34C0(nn)'
+
+  Parameters: nn - The column number the print position is set to. Example:
+  34C00F 34C0 - AHPP 0F - column number 15
+
+Relative Horizontal Presentation Position (RHPP) '0x34C8(nn)'
+
+  Parameters: nn - The number of columns to move from the current print
+  position. Example: 34C80F 34C8 - RHPP 0F - 15 columns
+
+Absolute Vertical Presentation Position (AVPP) '0x34C4(nn)'
+
+  Parameters: nn - The line number the print position is set to. Example:
+  34C40F 34C4 - AVPP 0F - line number 15
+
+Relative Vertical Presentation Position (RVPP) '0x344C(nn)'
+
+  Parameters: nn - The number of lines to move from the current print position.
+  Example: 344C0F 344C - RVPP 0F - 15 lines
+
+For more information about a similar problem with the Absolute Horizontal Move
+Command, please see the following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID:Q214656
+  TITLE     : Absolute Horizontal Move Command Handled Incorrectly if PDT
+Used
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

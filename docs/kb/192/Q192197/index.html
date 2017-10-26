@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192197/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192197/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192197/","publisher":null,"image":null,"headline":"Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192197-fix-beautify-may-not-uppercase-extended-ascii-characters">Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192197
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Visual FoxPro's Beautify against code that contains extended ASCII
+characters, the extended characters may not be set to the proper case.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+The normal ASCII character set runs from ASCII 33 to ASCII 126, inclusive.
+Extended ASCII characters are those outside of that range.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Because Microsoft Knowledge Base articles do not support extended ASCII
+  characters, we will place the text in the Windows clipboard through the
+  _CLIPTEXT environment variable, and paste it into a program file from the
+  clipboard. Run the following code after pasting it into the Command window,
+  placing the cursor at the end of the last line, and pressing ENTER:
+
+        CLIPTEXT = ;
+        "#DEFINE V"+chr(196)+"NSTER 1"+chr(13)+ ;
+        "#DEFINE H"+chr(214)+"GER 2"+chr(13)+ ;
+        "#DEFINE "+chr(197)+"TER 3"+chr(13)+ ;
+        "? v"+chr(228)+"nster"+chr(13)+ ;
+        "? h"+chr(246)+"ger"+chr(13)+ ;
+        "? "+chr(229)+"ter"+chr(13)+ ;
+        "? V"+chr(196)+"NSTER"+chr(13)+ ;
+        "? H"+chr(214)+"GER"+chr(13)+ ;
+        "? "+chr(197)+"TER"
+
+2. Paste the contents of the clipboard into a program (.prg) file.
+
+3. Right-click in the Editor window, and select Beautify from the Context menu.
+
+4. In the Beautify Options dialog box, select the "Match first occurrence" in
+  the Symbols drop-down list box, and then click the Run button.
+
+  Look at the Editor for the results. The text following one or more of the
+  first 3 ? commands contains a lower case character or characters.
+
+5. From the Edit menu, click Undo.
+
+6. Right-click the Editor Window, and then select Beautify from the Context
+  menu.
+
+7. In the Beautify Options dialog box, select the "UPPERCASE" in the Symbols
+  drop-down list box, and then click the Run button.
+
+Look at the Editor for the results. The text following one or more of the first 2
+? commands contains a lower case character.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp600fix kbVFp500abug kbXBase kbMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138680: How to Scope Variable Declared in Event Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138680: How to Scope Variable Declared in Event Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138680/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138680/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138680/","publisher":null,"image":null,"headline":"Q138680: How to Scope Variable Declared in Event Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138680-how-to-scope-variable-declared-in-event-code">Q138680: How to Scope Variable Declared in Event Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138680
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A variable declared in event code is not visible outside that code unless the
+variable is declared Public or you crate a new form property.
+
+MORE INFORMATION
+================
+
+Variables declared in event code for objects are only visible to those objects
+at the time the event code is running. There are two ways to make variables
+visible to code outside a specific event.
+
+Method One
+----------
+
+Declare the variable Public. To do this, add the following line of code to the
+Load event of your form:
+
+     Public X
+
+Method Two
+----------
+
+Create a custom property of the form. To do this, follow these steps:
+
+1. Create a form.
+
+2. On the Form menu, click New Property.
+
+3. In the Name box, type "X" (without the quotation marks).
+
+4. On the Other tab of the form's Property sheet locate your new property (X),
+  and select it.
+
+5. Type the words, "Hello World" (without the quotation marks), and press ENTER.
+
+6. Add a command button to your form.
+
+7. In the Click event of the command button, enter the following line of code:
+
+     WAIT WINDOW THISFORM.X
+
+8. Run your form.
+
+9. Click the command button. The wait window displays: Hello World.
+
+Step-by-Step Example
+--------------------
+
+1. Create a form.
+
+2. In the Load event of the form, add the following line of code:
+
+     X = "Hello World"
+
+3. Add a command button to your form.
+
+4. In the Click event of the command button, add the following line of code:
+
+     WAIT WINDOW X
+
+  An error occurs that states: Variable 'X' is not found.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

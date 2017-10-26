@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245020: BUG: Bus Error When Copying and Pasting In Browse Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245020: BUG: Bus Error When Copying and Pasting In Browse Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245020/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245020/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245020/","publisher":null,"image":null,"headline":"Q245020: BUG: Bus Error When Copying and Pasting In Browse Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245020-bug-bus-error-when-copying-and-pasting-in-browse-window">Q245020: BUG: Bus Error When Copying and Pasting In Browse Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245020
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): kbvfp300b kbXBase KbDBFDBC kbGrpDSFox
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro for Macintosh quits with a type 2 error, or the Macintosh computer
+stops responding, reporting a bus error in some cases, when copying and pasting
+in a Browse window. An error of type 11 may also appear.
+
+CAUSE
+=====
+
+This is known to happen when the field that is the copy source and copy
+destination is defined as eight characters wide. Microsoft has tested this on
+Macintosh operating systems 7.5.3, OS 8.1, OS 8.5, OS 8.5.1 and OS 9. We presume
+the problem happens on other Macintosh operating systems as well.
+
+RESOLUTION
+==========
+
+If it is possible, do not use character fields with a width of eight to copy and
+paste into.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code to create a new table, add two records and browse it:
+
+  CREATE TABLE test (test1 c(8), test2 c(10))
+  INSERT INTO test (test1,test2) VALUES ("Hello","Goodbye")
+  APPEND BLANK
+  BROWSE
+
+2. The test1 field is a character field that is eight characters wide. Copy the
+  data in it with either CMD+C or with the Copy command on the Edit menu.
+
+3. Move to the second record in the test1 field by using the down arrow key.
+
+4. Paste the data into the second record with either CMD+V or the Paste command
+  on the Edit menu.
+
+5. If the Macintosh computer does not stop responding or if Visual FoxPro does
+  not quit with an error of type 2, continue copying and pasting in the test1
+  field.
+
+Cutting and pasting also causes the computer to quit. Copy or cut and then
+pasting in a character field wider or narrower than eight characters has not
+been reported to be a problem.
+
+Additional query words: lock lockup freeze hang kbDSE
+
+======================================================================
+Keywords          : kbvfp300b kbXBase KbDBFDBC kbGrpDSFox 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

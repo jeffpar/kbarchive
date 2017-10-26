@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241896/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241896/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241896/","publisher":null,"image":null,"headline":"Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241896-prb-threading-issues-with-visual-basic-60-activex-components">Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241896
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0,6.0 SP3
+Operating System(s): 
+Keyword(s): kbtophit kbActiveX kbThread kbVBp600 kbGrpDSVB kbWinDNA MSGRAPH
+Last Modified: 25-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Studio, Enterprise Edition versions 6.0, 6.0 SP3 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Visual Basic 6.0 ActiveX components in a multi-threaded environment,
+you should be aware of the following potential problems:
+
+ActiveX DLL Hosted in a Multi-threaded Client
+---------------------------------------------
+
+- Access Violation inside MSVBVM60.DLL.
+- Client enters a deadlock state.
+
+You may see these two symptoms if a Visual Basic ActiveX DLL is hosted in a
+multi-threaded environment, for example, IIS, MTS, or a multi-threaded C client,
+and the Retain In Memory option is not enabled. To enable this option, follow
+the steps below:
+
+1. From Project menu, select Project Properties.
+
+2. On the General tab, make sure that the Threading Model is Apartment Threaded,
+  then select the Unattended Execution and Retain In Memory checkboxes*.
+
+3. Save the project and compile the DLL.
+
+*NOTE: The Unattended Execution option is not available if the project contains
+any user interface elements, such as forms or controls. The Retain In Memory
+option is not available if Unattended Execution is not selected.
+
+NOTE: Prior to Service Pack 3 for Visual Studio 6.0, it was possible to get an AV
+during process shutdown with Retain in Memory enabled. This has been fixed in
+Visual Studio 6, Service Pack 3
+(http://msdn.microsoft.com/vstudio/sp/vs6sp3/default.asp).
+
+
+If an ActiveX DLL or UserControl project contains API declarations, you may
+experience deadlocks during process/thread shut down or object creation, even if
+the Unattended Execution check box has been selected in the case of an ActiveX
+DLL.
+
+
+To workaround this problem, you can use a Type Library instead of Declare in
+Visual Basic. For additional information on how to use a Type Library, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q189133 HOWTO: Make C DLL More Accessible to VB with a Type Library
+
+ActiveX EXE Accessed by a Multi-threaded Client or by Multiple Single- or Multi-threaded Clients:
+-------------------------------------------------------------------------------------------------
+
+  Runtime error '7': out of memory and sometimes followed by a disk operation
+  error.
+
+  Run-time error '430': Class does not support Automation or does not support
+  expected interface.
+
+  Run-time error '424': Object required.
+
+  Run-time error '-2147023170 (800706be)': Automation error. The remote
+  procedure call failed.
+
+  Run-time error '-2147287010 (8003001e)': Automation error. This is a "A disk
+  error occurred during a read operation." based on ErrLook.
+
+  Additional server processes (ThreadTest.EXE) are created even though the
+  Instancing property of Class1 is marked MultiUse.
+
+You may see the error messages listed above if you have an ActiveX EXE server
+with a thread pool greater than one (1), and a multi-threaded client or multiple
+single- or multi-threaded clients rapidly creating and destroying objects inside
+the server. To work around this problem, you can create an empty class in the
+local server and have the client keep a reference to it as shown in the "More
+Information" section below.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+A: Creating the server:
+
+1. Create an ActiveX EXE project and rename it ThreadTest.
+
+2. From Project menu, select Project Properties and on the General tab, select a
+  Thread Pool of two (2).
+
+3. Add the following code to the default class (Class1):
+
+  Private strClassName As String
+  Public Property Let ClassName(ByVal vData As String)
+     strClassName = vData
+  End Property
+  Public Property Get ClassName() As String
+     ClassName = strClassName 
+  End Property
+
+4. Save and compile the project (ThreadTest.EXE).
+
+B: Creating the client and testing:
+
+1. Start a Standard EXE project and rename it Client.
+
+2. Add a command button and a textbox to the default form (Form1).
+
+3. Add the following code to Form1:
+
+  Private Sub Command1_Click()
+     Dim i As Long, j As Long
+     Dim o As Object
+     j = Val(Text1.Text)
+     For i = 1 To j
+        DoEvents
+        Set o = CreateObject("ThreadTest.Class1")
+        o.ClassName = i
+        Me.Caption = o.ClassName
+        Set o = Nothing
+     Next
+  End Sub
+  Private Sub Form_Load()
+     Text1.Text = 1000
+     Command1.Caption = "Start"
+  End Sub
+
+4. Compile the project (Client.EXE).
+
+5. Start three or more instances of Client.EXE and press the Start button on
+  each form. Note that you see one or more of the error messages above.
+
+C: Implementing the workaround:
+
+1. Open the ThreadTest project.
+
+2. Add another class module (Class2) with no code.
+
+3. Save and re-compile the project (ThreadTest.EXE).
+
+4. Open the Client project.
+
+5. Replace the code in Form1 with the following:
+
+  Private p As Object
+  Private Sub Command1_Click()
+     Dim i As Long, j As Long
+     Dim o As Object
+     j = Val(Text1.Text)
+     For i = 1 To j
+        DoEvents
+        Set o = CreateObject("ThreadTest.Class1")
+        o.ClassName = i
+        Me.Caption = o.ClassName
+        Set o = Nothing
+     Next
+  End Sub
+  Private Sub Form_Load()
+     Text1.Text = 1000
+     Command1.Caption = "Start"   
+     Set p = CreateObject("ThreadTest.Class2")
+  End Sub
+  Private Sub Form_Unload(Cancel As Integer)
+     Set p = Nothing
+  End Sub
+
+6. Save and re-compile the project (Client.EXE).
+
+7. Run three or more instances of Client.EXE and press the Start button on each
+  form. Note that you should see no error messages.
+
+When an ActiveX EXE with a thread pool greater than one is accessed by multiple
+clients through DCOM, the workaround described in part C of the "More
+Information" section does not work. As a consequence, Visual Basic 6.0 ActiveX
+EXE servers are not suitable for DCOM servers with multiple clients rapidly
+creating and destroying objects. If your server application needs to handle this
+scenario, it is strongly recommended that you use ActiveX DLLs in MTS instead.
+When designing ActiveX DLLs to be hosted in MTS, you should make sure that the
+Unattended Execution and Retain In Memory checkboxes are both selected. These
+checkboxes and located on the Project menu, when you choose Properties, and
+select the General tab.
+
+Do not use the GlobalMultiUse Instancing property for a class when you intend to
+use the ActiveX component under MTS or COM+. The interface for the
+GlobalMultiUse object is cached in a per thread-based table and is not freed
+until the thread terminates. As a result, if a call comes in with a different
+context (although on the same thread), it fails with RPC_E_WRONG_THREAD. To use
+components in MTS and COM+, you should design your classes in such a way that
+the objects are stateless.
+
+
+REFERENCES
+==========
+
+For more information, refer to the following books:
+
+  Ted Pattison Programming Distributed Applications with COM+ and Microsoft
+  Visual Basic 6.0, Second Edition (http://go.microsoft.com/fwlink/?LinkId=8387
+  ) Microsoft Press, 2001
+
+  Francesco Balena Programming Microsoft Visual Basic 6.0
+  (http://www.microsoft.com/redirect.asp?PageID=159&amp;PARAM=BOKPSS62&amp;TARGET=http://www1.fatbrain.com/asp/bookinfo/bookinfo.asp?theisbn=0735605580%2526p=netskills%2526s=69196)
+  Microsoft Press, 2001
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtophit kbActiveX kbThread kbVBp600 kbGrpDSVB kbWinDNA MSGRAPH 
+Technology        : kbVSsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVS600SP3 kbVS600 kbVS600Search
+Version           : :6.0,6.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

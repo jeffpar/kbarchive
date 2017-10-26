@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168033: DNS Server Fails to Start After Promoting Secondary to Primary | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168033: DNS Server Fails to Start After Promoting Secondary to Primary" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168033/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168033/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168033/","publisher":null,"image":null,"headline":"Q168033: DNS Server Fails to Start After Promoting Secondary to Primary","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168033-dns-server-fails-to-start-after-promoting-secondary-to-primary">Q168033: DNS Server Fails to Start After Promoting Secondary to Primary</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168033
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you use Domain Name Service (DNS) Manager to promote a secondary zone to
+primary zone, or demote a primary zone to secondary zone, the DNS Server service
+will not restart. Trying to restart the service will produce the following Event
+ID's:
+
+  Event ID: 7023
+  The MS DNS Server service terminated with the following error:
+  The data is invalid.
+
+  Event ID: 130
+  DNS Server zone &lt;zone name&gt; has invalid or corrupted registry data.
+  Delete its registry data and recreate with DNSAdmin.
+
+  Event ID: 133
+  DNS Server secondary zone &lt;zone name&gt;, had no master IP addresses in
+  registry.  Secondary zones require masters.
+
+CAUSE
+=====
+
+The registry key that specifies the zone type does not get updated correctly.
+
+RESOLUTION
+==========
+
+Use the Registry Editor to modify the
+HKEY_LOCAL_MACHINE\System\Ccs\Services\Dns\Zones
+key in the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To modify the zone to the correct type, perform the following steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\Ccs\Services\Dns\Zones
+
+3. On the zones key, select the key with the name of secondary zone (like
+  mydomain.com) which was promoted to primary. Set the value to 1.
+
+     Value Name: Type
+     Data Type:  REG_DWORD
+     Value:      1
+                 0x1 specifies Primary zone
+                 0x2 specifies secondary zone
+
+4. Quit Registry Editor and restart the Microsoft DNS Service in the Services
+  Control Panel.
+
+Additional query words: Event ID 7023 Secondary Zone dns ntdns
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

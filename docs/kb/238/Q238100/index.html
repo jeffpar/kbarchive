@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238100/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238100/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238100/","publisher":null,"image":null,"headline":"Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238100-howto-limit-32-bit-mfc-sdi-app-to-a-single-instance-in-wince">Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238100
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbMFC kbVC kbVC500 kbVC600 kbOSWinCEsearch kbDSupport kbGrpDSMFCATL
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Windows CE Toolkit for Visual C++, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article disscusses how to limit 32-bit applications to a single instance on
+WinCE.
+
+MORE INFORMATION
+================
+
+The reason the steps outlined in article Q141752 do not work for WinCE is
+because, under WinCE, wce_PreCreateWindow function prefixes "WCE_" to class name
+of the window. For example, if you register a class name of "MyNewClass", the
+actual class name you need to pass to FindWindow() is "WCE_MyNewClass".
+
+Sample code
+-----------
+
+1. Create a default WCE MFC AppWizard (exe)
+
+2. Select the ClassView tab, and go to the definition of InitInstance in the
+  Application class. Add the code at the begining of the definition of
+  InitInstance:
+
+     BOOL CSampleApp::InitInstance()
+     {
+     /********************************************************************/ 
+      // If a previous instance of the application is already running,
+      // then activate it and return FALSE from InitInstance to
+      // end the execution of this instance.
+
+      CWnd *pWndPrev;
+   
+      // Determine if another window with your class name exists...
+      if (pWndPrev = CWnd::FindWindow(_T("WCE_MyNewClass"),NULL))
+      {
+          // Bring previous instance to the foreground
+  	pWndPrev-&gt;SetForegroundWindow();
+  	return FALSE;
+      }
+      WNDCLASS wndcls;
+
+      memset(&amp;wndcls, 0, sizeof(WNDCLASS));   // start with NULL defaults
+
+      wndcls.style = CS_DBLCLKS | CS_HREDRAW | CS_VREDRAW;
+      wndcls.lpfnWndProc = ::DefWindowProc;
+      wndcls.hInstance = AfxGetInstanceHandle();
+      wndcls.hIcon = LoadIcon(IDR_MAINFRAME); // or load a different icon
+      wndcls.hbrBackground = (HBRUSH) (COLOR_WINDOW + 1);
+      wndcls.lpszMenuName = NULL;
+      // Specify your own class name for using FindWindow later
+      wndcls.lpszClassName = _T("MyNewClass");
+
+      // Register the new class and exit if it fails
+      if(!AfxRegisterClass(&amp;wndcls))
+      {
+         AfxMessageBox(_T("Class Registration Failed\n"));
+         return FALSE;
+      }
+     /********************************************************************/ 
+     // Other code here...
+     }
+
+3. Find the definition of PreCreateWindow for the Main Frame and add the
+  following code.
+
+     BOOL CMainFrame::PreCreateWindow(CREATESTRUCT&amp; cs)
+     {
+       if( !CFrameWnd::PreCreateWindow(cs) )
+  	return FALSE;
+     /*************************************/ 
+       cs.lpszClass = _T("MyNewClass");
+     /*************************************/ 
+       return TRUE;
+     }
+
+4. Right-click CSampleApp and add a Virtual Function ExitInstance. Add the
+  following code in the function body:
+
+     int CSampleApp::ExitInstance() 
+     {
+      // Add your specialized code here and/or call the base class
+     /*********************/ 
+      ::UnregisterClass(_T("MyNewClass"),AfxGetInstanceHandle());
+     /*********************/        	
+      return CWinApp::ExitInstance();
+     }
+
+5. Choose your target, select Rebuild All and then select Run.
+
+REFERENCES
+==========
+
+  Q141752 SAMPLE: Limiting 32-bit Applications to a Single Instance
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Vidyanand Rajpathak, Microsoft Corporation
+
+
+Additional query words: VCCE, single, Instance
+
+======================================================================
+Keywords          : kbMFC kbVC kbVC500 kbVC600 kbOSWinCEsearch kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

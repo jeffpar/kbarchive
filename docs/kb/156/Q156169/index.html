@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156169: HOWTO: Ignore Parameters in View or Query If Blank | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156169: HOWTO: Ignore Parameters in View or Query If Blank" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156169/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156169/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156169/","publisher":null,"image":null,"headline":"Q156169: HOWTO: Ignore Parameters in View or Query If Blank","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156169-howto-ignore-parameters-in-view-or-query-if-blank">Q156169: HOWTO: Ignore Parameters in View or Query If Blank</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156169
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSQL kbvfp300 kbvfp500 kbvfp600 kbSQLProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes two examples on how to return records that meet a
+specific criteria and how to ignore the criteria if a parameter is empty or
+null.
+
+MORE INFORMATION
+================
+
+Example 1: Parameter View with Values Passed from Controls on a Form
+--------------------------------------------------------------------
+
+1. Open the Tastrade project. The project is in one of the following locations:
+
+  Visual FoxPro 3.0: Samples\Mainsamp
+  Visual FoxPro 5.0: Samples\Tastrade
+  Visual FoxPro 6.0: _samples variable
+
+2. Create a new program, click the Code tab, and add the following lines of
+  code:
+
+        IF "6.00" $ VERSION()
+           cdir = _samples + "Tastrade"
+        ELSE
+        IF "5.00" $ VERSION()
+           cDir = HOME()+"SAMPLES\TASTRADE"
+        ELSE
+           cDir = HOME()+"SAMPLES\MAINSAMP"
+        ENDIF
+        ENDIF
+        OPEN DATABASE cDir+"\DATA\TASTRADE.DBC" EXCLUSIVE
+        CREATE SQL VIEW MyView as SELECT *;
+           FROM tastrade!Employee;
+           WHERE ((ALLTRIM(Employee.employee_id)==?vEmpid);
+           OR (EMPTY(?vEmpid)=.T.));
+           AND ((Employee.title == ?vTitle;
+           OR (EMPTY(?vTitle)=.T.)))
+
+  Save it as MyViewCode.prg and then Run the program.
+
+3. Create a new form and save it as frmMyParam.
+
+4. Add MyView to the DataEnviroment object of the frmMyParam form. View the
+  properties of cursor1 and set the NoDataOnLoad property to .T. - True.
+
+5. Add the following controls to the form and set the properties as indicated:
+
+     Text Box
+     Name: Text1
+
+     Text Box
+     Name: Text2
+
+     Grid
+     Name: Grid1
+     RecordSource: MyView
+
+     Command Button
+     Name: Command1
+     Caption: Requery
+
+     Command Button
+     Name: Command2
+     Caption: Clear
+
+6. Add the following code to the Click event of the Command1 button:
+
+        vEmpid=Thisform.Text1.Value
+        vTitle=Thisform.Text2.Value
+        =REQUERY('MyView')
+        ThisForm.Refresh
+
+7. Add the following code to the Click event of the Command2 button:
+
+        Thisform.Text1.Value=""
+        Thisform.Text2.Value=""
+        Thisform.Refresh
+
+8. Save and Run the form with following combination of values in the table
+  below, and then click the Command1(Requery) button. Before you test the next
+  combination of values, click the Command2(Clear) button.
+
+  Text1      Text2       Results
+  --------------------------------------------------------
+
+  &lt;blank&gt;    &lt;blank&gt;     All records are return
+
+  1          &lt;blank&gt;     One record with Employee ID is 1
+
+  1       Sales Manager  One record with Employee Id is 1
+                         and Title is Sales Manager
+
+  &lt;blank&gt; Sales Manager  Two records return with Title being Sales Manager
+
+  2       Sales Manager  No records are returned
+
+Example 2: Parameter Query
+--------------------------
+
+1. Open the project called Tastrade.
+
+2. Create a new program under the Code tab with the following lines of code,
+  save it as MyQueryCode and then Run the program:
+
+        CLOSE DATABASE
+        IF "6.00" $ VERSION()
+          cdir = _samples
+        ELSE
+        IF "5.00" $ VERSION()
+          cDir = HOME()+"SAMPLES\TASTRADE"
+        ELSE
+          cDir = HOME()+"SAMPLES\MAINSAMP"
+        ENDIF
+        USE cDir+"\DATA\employee.dbf"
+        CLEAR
+        ACCEPT "Enter an Employee ID: " to vEmpid
+        ACCEPT "Enter an Employee Last Name: " to vTitle
+        SELECT *;
+           FROM tastrade!Employee;
+           WHERE ((ALLTRIM(Employee.employee_id)==?vEmpid);
+           OR (EMPTY(?vEmpid)=.T.));
+           AND ((Employee.title == ?vTitle;
+           OR (EMPTY(?vTitle)=.T.)))
+
+3. Use the same data as stated in the previous example for a test. For
+  &lt;blank&gt; (in the table) press Enter at the prompt and the results
+  returned should be the same as in Example 1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSQL kbvfp300 kbvfp500 kbvfp600 kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

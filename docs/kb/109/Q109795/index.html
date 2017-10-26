@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109795: Reinstalling the &quot;Microsoft At Work PC Fax on FAX:&quot; Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109795: Reinstalling the &quot;Microsoft At Work PC Fax on FAX:&quot; Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109795/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109795/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109795/","publisher":null,"image":null,"headline":"Q109795: Reinstalling the &quot;Microsoft At Work PC Fax on FAX:&quot; Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109795-reinstalling-the-microsoft-at-work-pc-fax-on-fax-driver">Q109795: Reinstalling the "Microsoft At Work PC Fax on FAX:" Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109795
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you install a fax modem for Microsoft At Work PC Fax using Control Panel,
+an additional printer driver called "Microsoft At Work PC Fax on FAX:" is
+installed. If you remove this driver using Print Manager or Control Panel, you
+cannot restore it. Reinstalling Microsoft At Work PC Fax does not restore the
+printer driver to the printer driver list.
+
+RESOLUTION
+==========
+
+To reinstall the Microsoft At Work PC Fax printer driver, you must rename the
+EFAXPUMP.INI and MSMAIL.INI files before reinstalling Microsoft At Work PC Fax
+driver. If you delete the Microsoft At Work PC Fax on FAX driver from your hard
+disk (EFAXDRV.DRV), you need to uninstall and reinstall Microsoft At Work PC Fax
+using Windows Setup.
+
+If You Delete Microsoft At Work PC Fax Driver (EFAXDRV.DRV)
+-----------------------------------------------------------
+
+If you delete the Microsoft At Work PC Fax driver (EFAXDRV.DRV) from your hard
+disk, you can use the following procedure to reinstall it:
+
+1. From the Main group, run Windows Setup (WINSETUP.EXE).
+
+2. From the Options menu, choose Add/Remove Windows Components.
+
+3. Choose the Select Files button for Accessories.
+
+4. From the list box on the right, choose Microsoft At Work PC Fax.
+
+5. Choose Remove.
+
+6. Choose OK twice.
+
+7. Choose Yes.
+
+8. From the Options menu, choose Add/Remove Windows Components.
+
+9. Choose the Select Files button for Accessories.
+
+10. From the list box on the left, choose Microsoft At Work PC Fax.
+
+11. Choose Add.
+
+12. Choose OK twice.
+
+13. Follow the procedure in the following section to reinstall the "Microsoft At
+  Work PC Fax on FAX:" printer driver.
+
+If You Remove the "Microsoft At Work PC Fax on FAX:" Printer Driver
+Using Print Manager or Control Panel
+--------------------------------------------------------------------------------------------------------
+
+If you remove the "Microsoft At Work PC Fax on FAX:" printer driver using Print
+Manager or Control Panel, use the following procedure to restore it:
+
+1. Rename EFAXPUMP.INI and MSMAIL.INI to other names. For example, type the
+  following at the MS-DOS command prompt and press ENTER after each line:
+
+  ren c:\windows\efaxpump.ini efaxpump.pss
+  ren c:\windows\msmail.ini msmail.pss
+
+2. Reinstall the fax option from Control Panel.
+
+  The fax print driver settings are restored to the WIN.INI file.
+
+3. Restore the EFAXPUMP.INI and MSMAIL.INI files. For example, type the
+  following at the MS-DOS command prompt and press ENTER after each line:
+
+  copy c:\windows\efaxpump.pss c:\windows\efaxpump.ini copy
+  c:\windows\msmail.pss c:\windows\msmail.ini
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

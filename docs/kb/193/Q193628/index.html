@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193628/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193628/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193628/","publisher":null,"image":null,"headline":"Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193628-fix-append-from-with-certain-file-types-crashes-vfp">Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193628
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbinterop kbExcel kbvfp600 kbvfp600bug kbXBase kbVS600sp3fix kbGrpDSFox kbDSupport
+Last Modified: 31-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs when you use the APPEND FROM command with certain
+file types:
+
+  Fatal error: Exception code=C0000005
+
+After you click OK, Visual FoxPro exits.
+
+CAUSE
+=====
+
+This occurs when you use the following APPEND FROM syntax to append from the
+following file types:
+
+  APPEND FROM &lt;filename&gt;.xls TYPE XLS &amp;&amp; Excel 2.1, 3.0 and 4.0 file types
+  APPEND FROM &lt;filename&gt;.wk1 TYPE WK1 &amp;&amp; Lotus 1-2-3 version 2.x
+  APPEND FROM &lt;filename&gt;.wk3 TYPE WK3 &amp;&amp; Lotus 1-2-3 version 3.x
+  APPEND FROM &lt;filename&gt;.mod TYPE MOD &amp;&amp; Microsoft Multiplan 4.01
+  APPEND FROM &lt;filename&gt;.wks TYPE WKS &amp;&amp; Lotus 1-2-3 version 1-A
+
+Appending from other file types can also cause the crash although text files and
+.dbf files do not seem to have any problems.
+
+NOTE: Using the COPY TO command in Visual FoxPro to copy a table out to one of
+the file types in the preceding list and then appending back into the table from
+that file does not appear to cause the crash.
+
+RESOLUTION
+==========
+
+The IMPORT command can import the file types in the preceding list into a new
+table. With a little work, you can append this imported table into an existing
+table. You can use the following sample code instead of the program in the
+"Steps to Reproduce Behavior" section in order to append the records
+successfully.
+
+Sample Code
+-----------
+
+  CLOSE DATABASE ALL
+  CLEAR ALL
+  CLEAR
+
+  SET SAFETY OFF
+  CREATE TABLE fruit ;
+      (fruit c(12), color c(15), treeorvine c(10), number n(8,2))
+
+  INSERT INTO fruit VALUES ("Apple", "Red", "Tree", 5)
+  INSERT INTO fruit VALUES ("Orange", "Orange","Tree", 18)
+  INSERT INTO fruit VALUES ("Grape", "Purple", "Vine", 42)
+  INSERT INTO fruit VALUES ("Blueberry", "Blue", "Bush", 78)
+  INSERT INTO fruit VALUES ("Grapefruit", "Pink", "Tree", 62)
+  INSERT INTO fruit VALUES ("Banana", "Yellow", "Tree", 37)
+  SELECT fruit
+
+  WAIT WINDOW "Choose an Excel 2.1, 3 or 4 file"
+  x=GETFILE("xls")
+  SELECT 0
+  IMPORT FROM (x) TYPE XLS
+  SET SAFETY ON
+  SET DELETED ON
+  DELETE FOR RECNO()=1 &amp;&amp; To eliminate field name headers in Excel sheet.
+  y=ALIAS()
+
+  * Need to change the field names to match the target table.
+  For i=1 TO FCOUNT()
+    ALTER TABLE (y) RENAME COLUMN (LOWER(FIELD(i))) TO (FIELD(i,"fruit"))
+  ENDFOR
+
+  SELECT fruit
+  APPEND FROM (y)
+  SELECT (y)
+  USE
+  ERASE (y)
+  SELECT fruit
+
+  BROWSE NOWAIT
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+This problem occurs more frequently when the table used to append the records
+into is not empty.
+
+Steps to Reproduce Behavior
+---------------------------
+
+WARNING: The following steps cause Visual FoxPro to crash. Please make sure that
+you save all important data or code before following the steps. It is also a
+good idea to save all information in any other running applications before you
+use these steps.
+
+1. Create a new Excel sheet with the following layout in Sheet1:
+
+NOTE: Excel 97 was used to recreate these steps at Microsoft.
+
+     Cell          Data to Enter
+     ---------------------------
+     A1            Fruit
+     B1            Color
+     C1            TreeorVine
+     D1            Number
+     A2            Apple
+     B2            Red
+     C2            Tree
+     D2            50.25
+     A3            Banana
+     B3            Yellow
+     C3            Tree
+     D3            17.45
+
+2. In Excel, from the File menu, choose Save As. In the Save As Type drop-down
+  list box, select Microsoft Excel 4.0 Worksheet (*.xls). Name the file
+  fruit4.xls.
+
+3. In Visual FoxPro 6.0, place the following code in a new program file, save it
+  and then run the program:
+
+  CLOSE DATABASE ALL
+  CLEAR ALL
+  CLEAR
+
+  SET SAFETY OFF
+  CREATE TABLE fruit ;
+     (fruit c(12), color c(15), treeorvine c(10), number n(8,2))
+  SET SAFETY ON
+  SELECT fruit
+  INSERT INTO fruit VALUES ("Apple", "Red", "Tree", 5)
+  INSERT INTO fruit VALUES ("Orange", "Orange","Tree", 18)
+  INSERT INTO fruit VALUES ("Grape", "Purple", "Vine", 42)
+  INSERT INTO fruit VALUES ("Blueberry", "Blue", "Bush", 78)
+  INSERT INTO fruit VALUES ("Grapefruit", "Pink", "Tree", 62)
+  INSERT INTO fruit VALUES ("Banana", "Yellow", "Tree", 37)
+
+  APPEND FROM fruit4.xls TYPE XLS    &amp;&amp; This causes the crash.
+  BROWSE NOWAIT
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbExcel kbvfp600 kbvfp600bug kbXBase kbVS600sp3fix kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

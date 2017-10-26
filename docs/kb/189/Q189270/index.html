@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189270/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189270/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189270/","publisher":null,"image":null,"headline":"Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189270-xfor-40-server-cannot-process-encapsulated-delivery-receipts">Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189270
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a message is sent from a Microsoft Exchange Server 4.0 computer to an
+Exchange Server 5.0 or 5.5 computer through the Internet Mail Connector or
+Internet Mail Service and a delivery receipt is requested, the delivery receipt
+may not be received, even though it is sent by the 5.0 or 5.5 server. When the
+delivery receipt is sent, the following event appears in the event log on the
+4.0 server:
+
+  Event: 4082
+  Description: The following message is a report from another Microsoft
+  Exchange Server computer; the report could not be decoded.
+
+Note that this problem only occurs under the following conditions:
+
+- The 4.0 server and the 5.0 or 5.5 server are in different sites. Therefore, a
+  site is included in the Simple Mail Transfer Protocol (SMTP) address
+  (&lt;user&gt;@&lt;site&gt;.&lt;domain&gt;.com).
+
+- You are running Build 1461.6 or later of the Internet Mail Connector on the
+  5.0 server or Build 2186.0 or later of the Internet Mail Service on the 5.5
+  server.
+
+CAUSE
+=====
+
+Later builds of the Internet Mail Connector and Internet Mail Service
+encapsulate the Request for Comments (RFC) 821 recipient information in the
+delivery receipt before it is sent. The Exchange Server 4.0 Internet Mail
+Connector cannot process delivery receipts that are formatted in this manner.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: Internet Mail Connector
+
+  File Name      Version
+  ------------------------
+  Msexcimc.exe   4.0.997.1
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0.
+
+MORE INFORMATION
+================
+
+For additional information about the fixes that cause later builds of the
+Internet Mail Connector and Internet Mail Service to encapsulate the RFC 821
+recipient information in delivery receipts, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q178436 Looping Messages over Internet Mail Service Site Connector
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

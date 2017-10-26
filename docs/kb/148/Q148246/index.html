@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148246: PC Ext Gen: Questions Asked About X.25 and External [Part II] | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148246: PC Ext Gen: Questions Asked About X.25 and External [Part II]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148246/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148246/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148246/","publisher":null,"image":null,"headline":"Q148246: PC Ext Gen: Questions Asked About X.25 and External [Part II]","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148246-pc-ext-gen-questions-asked-about-x25-and-external-part-ii">Q148246: PC Ext Gen: Questions Asked About X.25 and External [Part II]</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148246
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a,3.5; :3.2,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+- Microsoft Mail Multitasking MTA, version 3.2 
+- Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Setting up External computers communicating through X.25 requires considerable
+configuration procedures. The following are some of the frequently asked
+questions related to X.25 and the Mail External program (EXTERNAL.EXE).
+
+MORE INFORMATION
+================
+
+1. Q. Can one Multitasking Message Transfer Agent (MMTA) service X.25 and Async
+  External instances simultaneously, for more than the home postoffice?
+
+  A. Yes, but every instance of External can handle only one connection method
+  in the Admin program (Direct via either MS-DOS Drive, Modem, or X.25). The
+  X.25 instance can service many permanent drives or dynamic drive connections
+  (both MS-DOS Direct Drives). The number of these connections are limited
+  largely by the memory on the OS/2 computer. Dynamic Drives can use DynAdmin
+  tables only on the home postoffice. DrivesUNC or DrivesNovell do not use the
+  DynAdmin tables.
+
+  NOTE: The EXTERNAL.INI options DrivesDirectPO, DrivesDynamic, DrivesHomePO,
+  and DrivesNovell are not available for the Multitasking MTA for Windows NT
+  Server version 3.5 (NT MMTA).
+
+2. Q. How do you configure an MMTA to service more than one home PO?
+
+  A. Use the DriveHomePO option with different DirectDrives in the EXTERNAL.INI
+  as follows:
+
+  [External - Instance1]
+  DriveHomePO=M
+
+  [External - Instance2]
+  DriveHomePO=N
+
+3. Q. Can one instance of External handle both an X.25 and an Async call?
+
+  A. No, choosing "CommType=X25Eicon", precludes using asynchronous (async)
+  communication for the same instance, and vice-versa. The External program,
+  for example, can launch either ASYNC.OVL or the X25&lt;card-type&gt;.OVL, but
+  not both in the same instance. Only one X.25 session can be done at any time
+  by one External instance.
+
+4. Q. What happens when two remote postoffices or remote users dial-in at the
+  same time to one DOS MTA, or one instance of External on an MMTA?
+
+  A. One PO or remote user will connect, and the second user will fail to
+  connect, receiving a busy signal. Concurrent connections are only possible
+  with:
+   - Multiple instances of External on one OS/2 machine.
+
+   - Several instances on a Windows NT Server version 3.51 running the
+     Multitasking MTA (NT MMTA).
+
+   - Multiple MS-DOS machines running the MTA.
+
+5. Q. Can one instance of External (MS-DOS or MMTA) connecting to multiple
+  postoffices via multiple directly attached permanent drives (DrivesDirectPO),
+  support remote mail for all users on all postoffices?
+
+  A. Yes, provided that they are not dialing in at the same time. To avoid this
+  limitation, multiple instances would need to be setup. Each instance would
+  need to be connecting to a separate set of direct drive mappings. If
+  Instance1 was connecting to drives M, N, and O, Instance2 would need to
+  connect to a different set of direct drives. For example, Instance2 could
+  connect to drives P, Q, and S.
+
+6. Q. Are there any special flags or attributes in the \MAILDATA directory to
+  prevent file locking (in a Novell environment), when using X.25?
+
+  A No, there are no special flags or access rights for the Novell NetWare
+  environment for X.25. Flags and rights are the same as for "direct drive"
+  connections. For details, refer to the Microsoft Mail for PC Networks
+  "Administrator's Guide", Appendix G Troubleshooting Guide.
+
+7. Q. What is the command line for each External instance, used for X.25, to
+  differentiate it from the others?
+
+  A. The best way to differentiate the instances is to add "X25" (without the
+  quotes) to the beginning of the instance name. For example, to initiate the
+  instance from a command line use the instance name from the EXTERNAL.INI file
+  with the /InstanceName command line parameter:
+
+  EXTERNAL /InstanceName=&lt;X25Instance_Name&gt;
+
+8. Q. Can I specify the last X.25 channel specifically for outbound and the rest
+  of the channels for inbound mail?
+
+  A. Yes, but you control the Virtual Circuits (VC) by specifying the Comm
+  options of the External instance using this VC. Given the fact that you can
+  not specify the "Virtual Circuit" with the X25PortNumber, you are still able
+  to include CommOutOnly (-KO) and CommInOnly (-KI) EXTERNAL.INI options (-KO
+  and -KI External command line parameters). When you configure the Eicon card,
+  specify one-way or two-way in External_Admin, Setup, VCs by number. The other
+  option is to use the -KI, -KO switches with X.25. It is recommended to use a
+  single two-way virtual circuit in the Eicon setup (the default), rather than
+  using -KI and -KO switches in the External command line.
+
+9. Q. What are X.25 subaddresses, and how do they relate to External_Admin,
+  Setup and to the EXTERNAL.INI file entries?
+
+  A. When an X.25 application, such as the MTA is on a LAN workstation, and the
+  X.25 card and software are installed on a second computer, the X.25 card
+  software (Eicon or Atlantis) needs a way of identifying which LAN process it
+  is establishing a X.25 virtual circuit.
+
+  The subaddress is an arbitrary but unique two-digit number assigned by the
+  mail Admin that is added to the end of the original X.21 subaddress.
+
+  ADMIN PROGRAM
+  An X.25 connection is defined under the Admin program by selecting
+  External-Admin, Create, Network, Postoffice, Direct/X.25.
+
+  EXTERNAL.INI FILE
+  In the EXTERNAL.INI file, the required entries look similar to the following
+  for the Eicon X.25 card and software:
+
+  [External - X.25]
+  CommType=X25Eicon
+  X25PortNumber=255 ; 255 is for a DOS MTA
+  X25SubAddress=234187654321XX ; where XX is a unique 2-digit number
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q130231 External Command Line Options Not Used with NT MMTA
+
+Additional query words: 3.00 3.20 3.20a faq ntmmta
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350 kbMailMMTA320 kbMailMMTA350NT
+Version           : WINDOWS:3.2,3.2a,3.5; :3.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

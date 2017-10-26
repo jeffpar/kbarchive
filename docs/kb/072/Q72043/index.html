@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72043: Byte Total Returned by DIR Less Than Bytes Used | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72043: Byte Total Returned by DIR Less Than Bytes Used" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72043/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72043/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72043/","publisher":null,"image":null,"headline":"Q72043: Byte Total Returned by DIR Less Than Bytes Used","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72043-byte-total-returned-by-dir-less-than-bytes-used">Q72043: Byte Total Returned by DIR Less Than Bytes Used</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72043
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A directory listing using the DIR command under Microsoft MS-DOS version 5.0 or
+later reports the total number of bytes in the files for that specific
+directory. The disk space occupied by these files can be much greater than the
+byte total reported by DIR, depending on the disk's allocation unit size. This
+difference may cause confusion when calculating disk space requirements for
+copying files.
+
+NOTE: File storage is handled the same under all versions of MS-DOS; the 5.0 DIR
+command is the first MS-DOS command to list the number of bytes stored in a
+particular directory.
+
+MORE INFORMATION
+================
+
+The minimum storage space on an MS-DOS disk is one allocation unit. Each
+allocation unit contains one or more sectors, depending on the disk size and
+capacity. Sectors can also vary in size but are usually 512 bytes.
+
+Since files seldom fill a single allocation unit entirely, a number of bytes are
+left unused. These bytes are unavailable to MS-DOS for any other file storage.
+For example, if the allocation unit size is 1024 bytes, a file of 1000 bytes
+occupies one allocation unit, leaving 24 bytes unused and unavailable to MS-DOS
+for storage of other files.
+
+Calculating Disk Space Requirements
+-----------------------------------
+
+PC utility programs like Norton Utilities and PCTools determine the number of
+bytes in a particular directory as well as the number of bytes occupied on the
+current disk. If you do not have one of these programs, you can estimate disk
+space requirements.
+
+To estimate the number of bytes occupied by the files in a particular directory,
+you must determine the allocation unit size for the disk. CHKDSK return the
+allocation units for a MS-DOS disk.
+
+The following equation is based on the law of averages that dictates that
+one-half of an allocation unit will be unused for each file stored on a disk.
+The more files you have in a particular directory, the closer the estimate will
+be. If you have just a few small files, this formula is not accurate.
+
+     disk space occupied = (number of files in directory *
+
+                           allocation unit size in bytes * .5) +
+                           file size total reported by DIR
+
+Use the following method to estimate the disk space required to copy the files in
+a directory to a disk. Use CHKDSK to determine the allocation unit size of the
+destination disk. Use the same equation as above, substituting the allocation
+unit size of the disk for the allocation unit size in bytes.
+
+For more information on allocation unit sizes, query on the following words here
+in the Microsoft Knowledge Base:
+
+  "allocation" (without the quotation marks) and "unit" (without the quotation
+  marks) and "fat" (without the quotation marks) and "disk" (without the
+  quotation marks)
+
+REFERENCES
+==========
+
+More information on this topic can be found in "The MS-DOS Encyclopedia,"
+"Advanced MS-DOS Programming," or "The NEW Peter Norton Programmer's Guide to
+the IBM PC &amp; PS/2," which are published by Microsoft Press.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 6.21
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

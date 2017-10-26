@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189596/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189596/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189596/","publisher":null,"image":null,"headline":"Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189596-sample-vb6wlctlexe-windowless-controls-demonstration">Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189596
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbfile kbole kbreadme kbsample kbCtrl kbRegistry kbVBp kbVBp600 kbOSWin95 kbOSWin98 kbG
+Last Modified: 27-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic 6.0 introduces the capability of creating "Windowless" controls. A
+Windowless control, also known as a "lightweight" control, is a control that
+does not have a WndProc function for message handling. These lightweight
+controls require fewer resources than normal controls, and allow for development
+of transparent controls. This sample demonstrates how to create windowless
+controls in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  VB6WLCTL.exe
+  (http://download.microsoft.com/download/vb60pro/2/2/Win98/EN-US/VB6WLCTL.exe)
+
+Release Date: June 16, 2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Below is the content of the Readme.txt for this sample.
+
+Description
+-----------
+
+Visual Basic 6.0 provides the capability of building Windowless controls, also
+known as lightweight controls. A new property of the UserControl, Windowless,
+enables this feature. Setting the Windowless property to True will make the
+UserControl Windowless, a control which sends and receives messages through OLE
+rather than the regular messaging queues that Windows uses.
+
+A Windowless control behaves the same as the normal UserControls with the
+following exceptions:
+
+- The UserControl has no hWnd property (limits some API calls).
+
+- The Borderstyle property cannot be set.
+
+- The UserControl cannot host normal Windowed controls.
+
+- Windowless controls are not supported by some containers. If sited in such a
+  container, they will be assigned an hWnd and be treated as a normal Windowed
+  controls.
+
+This sample demonstrates the functionalities of Windowless controls created in
+Visual Basic 6.0. The main project group file is WndLessControlAGroup.vbg, which
+contains the controls as well as a client that shows the controls in action. The
+documentation in the source code explains in great detail the behavior of each
+control.
+
+Summary Of Sample Controls
+--------------------------
+
+Four Windowless Controls are included in the sample to show different
+Functionality:
+
+TestControl1 - A Windowless control that acts and handles events like a
+              normal control.
+
+TestControl2 - Allows events to bypass it and be handled by the controls
+              underneath it.
+
+TestControl3 - Demonstrates "HitTesting" to see where the user has clicked
+              within the Windowless control's region on the form. The
+              control acts "transparently" (events being passed to the
+              Form underneath) unless the CommandButton sited on it is
+              clicked. Then it handles that Event normally.
+
+TestControl4 - This control demonstrates how to determine what areas of a
+              control are transparent by using the Picture, MaskPicture,
+              and MaskColor properties, and where events can be handled.
+
+To Start
+--------
+
+Before loading this sample into Visual Basic 6.0, the following steps need to be
+taken:
+
+1. Copy the following files on the Visual Basic 6.0 or Visual Studio 6.0
+  installation CD-ROM in the ...\Common\Tools\VB\WINLESS folder to the
+  Windows\System (Windows 95, Windows 98, or Windows Me) or Windows\System32
+  (Windows NT) folder:
+
+     mswless.reg
+     mswless.ocx
+
+2. Double-click on mswless.reg to import information to the registry.
+
+3. Register mswless.ocx by typing in the following command in the Windows Run
+  dialog:
+
+     RegSvr32 C:\Windows\System\mswless.ocx
+
+REFERENCES
+==========
+
+For more information about lightweight controls in Visual Basic, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q184687 : INFO: Lightweight Controls in Visual Basic 6.0
+
+  Q184645 : HOWTO: Create Lightweight Controls with Visual Basic 6.0
+
+Additional query words: VB6WLCTL windowless
+
+======================================================================
+Keywords          : kbfile kbole kbreadme kbsample kbCtrl kbRegistry kbVBp kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

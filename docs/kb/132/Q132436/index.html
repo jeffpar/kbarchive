@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132436: SNA Server Handling of 3270 LU Session Cleanup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132436: SNA Server Handling of 3270 LU Session Cleanup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132436/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132436/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132436/","publisher":null,"image":null,"headline":"Q132436: SNA Server Handling of 3270 LU Session Cleanup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132436-sna-server-handling-of-3270-lu-session-cleanup">Q132436: SNA Server Handling of 3270 LU Session Cleanup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132436
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using pooled 3270 LUs with SNA Server, a 3270 user may access the previous
+user's host application session. This occurs when the host did not clean up the
+3270 application after receiving a TERM-SELF message from SNA Server on the
+session. If this occurs, the NOTERMSELF:REG_SZ:YES registry setting should be
+used to force SNA Server to send an UNBIND(Cleanup) when the user ends their
+3270 session, or when the user's client-server LAN session is lost.
+
+The NOTERMSELF registry setting is described below, and in the SNA Server 2.1 or
+3.0 "Reference Guide".
+
+MORE INFORMATION
+================
+
+When a 3270 user closes their emulation session, or if the SNA Server client
+loses its LAN connection to the SNA Server, SNA Server sends a TERM-SELF on the
+SSCP-LU session to request that the host unbind the PLU-SLU session. On some
+host systems, this TERM-SELF message does not cause the 3270 application session
+to be cleaned up.
+
+To force SNA Server to send an UNBIND(Cleanup) to the host:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (REGEDT32.EXE).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  \SYSTEM\CurrentControlSet\Services\SnaServr\Parameters
+
+3. From the Edit menu, choose Add Value.
+
+4. Add the following:
+
+  "Value Name: NOTERMSELF
+  Data Type: REG_SZ
+  String: YES" (without the quotation marks)
+
+5. Choose OK.
+
+When this variable is set to YES, 3270 sessions are terminated directly by
+sending UNBIND(cleanup). Otherwise, a TERM-SELF is sent to solicit UNBIND from
+the host. Setting this variable to YES is a workaround for host-based session
+monitors that mark the LU as inactive after the TERM-SELF sequence, or do not
+properly unbind the application session.
+
+If CICS is being used and the CICS "dedicated LU" feature is enabled at the host,
+or if certain host session monitors are being used (such as "TPX"), the host
+3270 application session may not be cleaned up even if SNA Server is configured
+to send Unbind(cleanup).
+
+When using dedicated LUs, CICS preserves the user's host application session even
+when the user were to turn off their 3270 terminal. So, this host feature
+assumes that a given LU will always be accessed by a specific user. If you want
+to use the dedicated LU feature, consider assigning specific 3270 LUs to
+specific users using SNA Server Admin, and do not use pooled 3270 LUs.
+Otherwise, if a user disconnects from their emulation session, the next user who
+acquires the same 3270 LU (through the use of a 3270 pool) reconnects to the
+same host application state of the previous user.
+
+Additional query words: prodsna notermself unbind
+
+======================================================================
+Keywords          : kbenv kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

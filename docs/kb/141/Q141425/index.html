@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141425/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141425/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141425/","publisher":null,"image":null,"headline":"Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141425-fix-toolbar-events-fire-differently-when-using-dock-method">Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141425
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The BeforeDock, Undock, and AfterDock events are not triggered in the same order
+when a toolbar is docked interactively versus when a toolbar is docked under
+program control.
+
+When the dock position of a toolbar is changed interactively, the events fire in
+the following order:
+
+     BeforeDock, AfterDock
+
+When the dock position of a toolbar is changed under program control with the
+Dock method, the events fire in the following order:
+
+     BeforeDock, Undock, BeforeDock, AfterDock
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+WORKAROUND
+==========
+
+There is no way to prevent the events from occurring, or to trigger the events
+under program control. However, if you have code for the BeforeDock and Undock
+methods and do not want to call it when the Dock method is executed, follow
+these steps:
+
+1. Add a property to the class called lDockit.
+
+2. In the Dock method, set the value of this property to true (.T.) as in this
+  example:
+
+     IF THIS.DockPosition != -1 &amp;&amp; The toolbar is already docked
+        THIS.lDockit=.T.
+     ENDIF
+
+3. In the event handler for BeforeDock, add the following:
+
+     IF THIS.lDockit &lt;&gt; .T.
+        &lt;your code here&gt;
+     ENDIF
+
+4. In the event handler for Undock, add the following:
+
+     IF THIS.lDockit&lt;&gt;.T.
+        &lt;your code here&gt;
+        ELSE
+        THIS.lDockit=.F.
+     ENDIF
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Type CREATE CLASS in the Command window.
+
+2. In the Create Class dialog box, enter the following information to create a
+  class based on the Toolbar class:
+
+     ClassName: TbrDock
+     Based On : select Toolbar
+     Store In : Clstbar
+
+3. In the Class Designer, enter the following line for the AfterDock,
+  BeforeDock, and Undock event handlers:
+
+     =MESSAGEBOX(PROGRAM())
+
+4. Save the class.
+
+5. Create a toolbar object by typing the following code in the Command window:
+
+     SET CLASSLIB TO clstbar
+     oTrdock=CREATEOBJECT("TbrDock")
+     oTrdock.Show
+
+6. Use the mouse to dock the toolbar. The BeforeDock and AfterDock events fire.
+
+7. From the Command window, call the Dock method to move to another docked
+  position:
+
+     oTrDock.Dock(1)
+
+  The BeforeDock, Undock, BeforeDock, and AfterDock events are triggered.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

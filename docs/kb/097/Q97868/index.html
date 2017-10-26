@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97868: Uninstall Doesn’t Run If It Finds DoubleSpace Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97868: Uninstall Doesn’t Run If It Finds DoubleSpace Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97868/","publisher":null,"image":null,"headline":"Q97868: Uninstall Doesn’t Run If It Finds DoubleSpace Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97868-uninstall-doesnt-run-if-it-finds-doublespace-files">Q97868: Uninstall Doesn’t Run If It Finds DoubleSpace Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97868
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You try to use the Uninstall disk to remove MS-DOS 6.0, but you receive an error
+message stating that you cannot uninstall MS-DOS 6.0 because you installed
+DoubleSpace.
+
+CAUSE
+=====
+
+If DoubleSpace is installed on your computer, you cannot use the Uninstall disk
+to remove MS-DOS 6.0. If you try to do so, you receive the error message
+mentioned above. If you remove DoubleSpace, you still receive this error message
+if either of the following is true:
+
+- DBLSPACE.BIN is in the root of the host drive
+
+-or-
+
+- A functional DoubleSpace driver is active in memory after you start your
+  computer with the Uninstall disk in drive A. This occurs when you have a
+  valid DBLSPACE.INI file on your host drive.
+
+WORKAROUND
+==========
+
+To work around these problems, try using the Uninstall disk after you following
+these steps:
+
+1. Use the DIR /A command to confirm that no DBLSPACE.&lt;nnn&gt; files are
+  located in the root directory of your local drive(s). As an alternative, you
+  can use the DBLSPACE /LIST command to confirm no DBLSPACE.&lt;nnn&gt; files
+  exist on your system.
+
+  If you find any compressed volume files (DBLSPACE.&lt;nnn&gt;), and you want
+  to remove DoubleSpace, see section 7.6 of the README.TXT file, "Removing
+  DoubleSpace from your computer," or query on the following words in the
+  Microsoft Knowledge Base:
+
+  "how" (without the quotation marks) and "remove" (without the quotation
+  marks) and "doublespace" (without the quotation marks) and "preserve"
+  (without the quotation marks)
+
+  After you remove any DBLSPACE.&lt;nnn&gt; files, continue with step 2 of this
+  procedure.
+
+2. Delete or rename any DBLSPACE.BIN or DBLSPACE.INI files in the root directory
+  of all drive(s). If the Uninstall program finds a DBLSPACE.BIN or
+  DBLSPACE.INI file in the root directory of the first hard disk drive or the
+  root of the first hard disk drive's host drive, it assumes DoubleSpace is in
+  use.
+
+3. Delete or rename DBLSPACE.BIN on the Uninstall disk. The driver can't load if
+  MS-DOS can't find it.
+
+If you cannot use the Uninstall disk to remove MS-DOS 6 because DoubleSpace is
+still detected, call Microsoft Product Support Services at (425) 646-5104 for
+assistance.
+
+
+Additional query words: 6.00 dblspace double space remove delete un-install
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

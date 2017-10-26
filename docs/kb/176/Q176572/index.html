@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176572/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176572/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176572/","publisher":null,"image":null,"headline":"Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176572-fix-odbc-date-filter-greater-than-12311999-return-no-records">Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176572
+Product(s): Microsoft FoxPro
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbYear2000 kbDriver kbvfp500 kbVS600fix kbGrpDSFox kbGrpDSMDAC
+Last Modified: 14-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Visual FoxPro, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A SQL query through the Microsoft Visual FoxPro driver (Vfpodbc.dll) that
+specifies a date greater than 12/31/1999 in the WHERE statement does not return
+any records.
+
+RESOLUTION
+==========
+
+Use one of the following workarounds:
+
+- Use the Visual FoxPro syntax {01/01/2000} instead of the ODBC escape sequence
+  dates {d '01/01/2000'}.
+
+- Use the CTOD() function to convert the date string to a date. For example:
+
+  SELECT * FROM Test WHERE MyDate BETWEEN CTOD('01/01/1997');
+           AND CTOD('01/01/2002')
+
+- Pass the date as a parameter instead of an embedded string. For example:
+
+  SELECT * FROM Test WHERE MyDate BETWEEN ? and ?
+
+  NOTE: The method only works if the application you are using in the front end
+  supports passing parameters to the ODBC driver using the SQLBindParameter
+  ODBC API.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.This bug was corrected in the Vfpodbc.dll file that
+ships with Visual FoxPro 6.0..
+
+The fix is available in Microsoft Visual Studio 6.0 and through the download of
+the Microsoft Data Access Components (MDAC) version 2.5. You can download MDAC
+2.5 from the following Microsoft Web site:
+
+  http://www.microsoft.com/data/
+
+MORE INFORMATION
+================
+
+NOTE: This problem only occurs when you attempt to connect from a client other
+than Microsoft Visual FoxPro through ODBC to a Microsoft Visual FoxPro
+database.
+
+This problem specifically deals with the ODBC escape sequence dates. For
+example:
+
+  {d '2000/01/01')
+
+NOTE: This format works correctly for any dates less than 01/01/2000.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table in Microsoft Visual FoxPro by running the following code in a
+  program file:
+
+  CREATE TABLE TEST (MyID c(10), MyDate d)
+        INSERT INTO TEST VALUES ('1',{01/01/1997})
+        INSERT INTO TEST VALUES ('2',{02/01/2001})
+        INSERT INTO TEST VALUES ('3',{10/22/2002})
+
+2. Create a datasource based on the Microsoft Visual FoxPro Driver with a
+  database type of Free Table Directory. Make sure you specify the directory
+  where Test.dbf is saved in the Path textbox.
+
+  NOTE: If your application supports specifying a data source connection string,
+  here is an example for the connect string.
+
+  Replace the SOURCEDB setting with the path for the saved Test.dbf file as
+  follows:
+
+  DRIVER=Microsoft Visual FoxPro Driver;BACKGROUNDFETCH=NO;
+        SOURCETYPE=DBF; SOURCEDB=C:\MYPATH
+
+3. Using that data source, execute the following SQL statement. This query does
+  not return any records:
+
+  SELECT * FROM TEST WHERE MyDate BETWEEN ;
+        {d '01/01/1996'} and {d '01/01/2000'}
+
+  This query returns the one record that matches the criteria:
+
+  SELECT * FROM TEST WHERE MyDate BETWEEN ;
+        {d '01/01/1996'} and {d '12/31/1999'}
+
+  NOTE: If the application you are using does not support multi-line SQL
+  statements without a line continuation character, please make sure to insert
+  the appropriate line continuation character after the word BETWEEN in both
+  SQL statements.
+
+Additional query words: Date
+
+======================================================================
+Keywords          : kbYear2000 kbDriver kbvfp500 kbVS600fix kbGrpDSFox kbGrpDSMDAC 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

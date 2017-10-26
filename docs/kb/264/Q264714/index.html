@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264714/","publisher":null,"image":null,"headline":"Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264714-sms-win9x-clients-fail-to-run-advert-w-status-message-10003">Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264714
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbClient kbConfig kbMMC kbsms200 kbAdvertisement kbPackage kbsmsAdmin kbSoftwareDist
+Last Modified: 10-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Windows 95 and Microsoft Windows 98 clients fail to run an
+advertisement and report a status message 10003 with error 1317, "The specified
+user does not exist." The following error message is logged in the Smsapm32.log
+file on the client:
+
+  ACCOUNT MGR : ERROR: Could not get APM run account data for site 'XXX'
+  ACCOUNT MGR : Could not get data blob for site 'XXX'
+  SCHED DATA : Return code = 0x525; The specified user does not exist
+
+CAUSE
+=====
+
+When you create a new program using the Systems Management Server Administrator
+console, you can enable the following settings:
+
+- "Run with administrative rights"
+- "Use Windows NT client software installation account"
+
+However, only Microsoft Windows NT clients can run programs using the NT client
+software installation account. Note that Windows 95 and Windows 98 clients still
+attempt to run such a program as long as they are in the targeted collection and
+are not excluded by the "This program can only run on specified platforms"
+setting. This is because the Windows 95 and Windows 98 operating systems can
+only execute a process in the logged-on user's context. The concept of multiple
+user contexts does not exist.
+
+WORKAROUND
+==========
+
+If you need to advertise a program that must run with administrative privileges
+to Windows 95, Windows 98 clients, and Windows NT clients in a single
+advertisement, enable the "Run with administrative rights" setting but not "Use
+Windows NT client software installation account" setting. Windows 95 and Windows
+98 clients can successfully execute such a program in the logged-on user's
+context.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbAdvertisement kbPackage kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

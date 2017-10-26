@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140800: TN3270E Print Job Hangs in Print Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140800: TN3270E Print Job Hangs in Print Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140800/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140800/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140800/","publisher":null,"image":null,"headline":"Q140800: TN3270E Print Job Hangs in Print Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140800-tn3270e-print-job-hangs-in-print-manager">Q140800: TN3270E Print Job Hangs in Print Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140800
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A TN3270E printer session hangs if the Host sends a BIND RU that specifies an
+Inbound Maximum RU size of 0 (indicating that no maximum RU size applies on the
+session to the Host). This causes the print job to remain in 'Spooling..." state
+in the Windows NT Print Manager until the Printer Session is disconnected.
+
+This symptom occurs sporadically.
+
+CAUSE
+=====
+
+There are two causes to this problem:
+
+1. The TN3270 Server incorrectly interprets 0 as the maximum RU size which
+  prevents it from sending any data to the host. When the host establishes a
+  session and specifies the maximum inbound RU size as "no maximum", the
+  TN3270E Server treats this as an RU size of zero bytes. This has the effect
+  that it ignores all the data it receives from a TN3270 or TN3270E client,
+  apart from the 5-byte header in the case of TN3270E.
+
+2. A TN3270E client may also misinterpret this byte and would then be unable to
+  send any response to the TN3270 Server. The WRQ emulator is one such
+  emulator.
+
+RESOLUTION
+==========
+
+There is a fix for cause number one and two:
+
+1. The fix for cause number 1 ensures that the TN3270 sends inbound data. The
+  data is sent in Request Units (RUs) up to the "Default Inbound RU Size"
+  specified in the "Options" dialog of TN3270 Admin.
+
+2. To work around the second cause, the client problem, the TN3270 Server has a
+  registry entry that allows a 0 RU size in the BIND image transmitted to the
+  client to be overwritten by the "Default Inbound RU Size" specified in the
+  "Options" dialog of TN3270 Admin. You can find the registry entry under the
+  subtree HKEY_LOCAL_MACHINE under the subkey:
+
+  CurrentControlSet\Services\TN3270\Parameters
+
+  The registry value is as follows:
+
+  Value Name: ReplaceRUSize
+  Data Type: REG_EXPAND_SZ
+
+  If this entry is set to "ON" then the value for the inbound RU size in the
+  BIND Image sent to the TN3270E client is set to the default inbound RU size
+  as configured for the TN3270E Server, if the host has specified no maximum.
+
+  Set this registry entry only if you experience this problem.
+
+Microsoft has updated the following files to correct this problem:
+
+- &lt;TN3270Root&gt;\TN3SERVR.EXE
+
+- &lt;TN3270Root&gt;\TN3SERVR.DBG
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

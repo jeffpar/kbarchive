@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126820/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126820/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126820/","publisher":null,"image":null,"headline":"Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126820-bug-em_limittext-causes-gpf-in-japanese-and-chinese-windows">Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126820
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 12-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) for Windows (Japanese and Traditional Chinese), version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under the Japanese and Traditional Chinese versions of Windows version 3.1, if
+an edit control has style ES_AUTOHSCROLL, and EM_LIMITTEXT is sent to the edit
+control to limit the number of bytes the user can input to the edit control, a
+general protection fault (GPF) will occur when the user is entering a
+double-byte character for the last byte.
+
+For example, if the following function is used to limit the number of bytes a
+user can input to 7:
+
+     SendMessage (hWnd, EM_LIMITEXT, 7, NULL);
+
+The user enters ABCDEF ( all single-byte character) to the edit control, then try
+to enter a double-byte 'G' to the edit control, a GPF will occur.
+
+Also, a GPF will also occur under the Japanese version of Windows version 3.1, if
+EM_LIMITTEXT is used and the edit control has style ES_UPPERCASE and the edit
+control is using the MS MINCHO or MS GOTHIC font.
+
+Hangeul (Korean) Windows version 3.1 does not GPF if EM_LIMITTEXT is used along
+with the ES_UPPERCASE style and the MS MINCHO or MS GOTHIC font.
+
+RESOLUTION
+==========
+
+Subclass the edit control, and check the WM_CHAR message coming in. If the
+WM_CHAR message for the last byte is a DBCS leadbyte, discard the WM_CHAR
+message along with the next WM_CHAR message. The following code demonstrates
+this workaround:
+
+  LONG FAR PASCAL SubClassFunc(HWND hWnd,
+                               WORD Message,
+                               WORD wParam,
+                               LONG lParam)
+  {
+  static BOOL bInvalidchar=FALSE; // Is this the last byte?
+     if ( Message == WM_CHAR )
+     {
+        if (bInvalidchar==TRUE) //The trailing byte of a DBCS character
+        {                       //that comes in for the last byte in edit.
+           bInvalidchar=FALSE;  //Reset the flag. Next char is valid.
+           return 0;            //Throw away the trailing byte.
+        }
+        else
+        {
+           // Is this the last byte?  Is the incoming WM_CHAR a DBCS
+           //   leadbyte?
+           if ( IsDBCSLeadByte(LOBYTE(wParam)) &amp;&amp;
+              (( TEXTLIMIT - SendMessage(hWnd, WM_GETTEXTLENGTH, 0,0)) == 1))
+           {
+              bInvalidchar=TRUE;   //The character is invalid.
+              return 0;               // Throw away this byte.
+           }
+           else return CallWindowProc(lpfnOldWndProc,
+                                       hWnd,
+                                       Message,
+                                       wParam,
+                                       lParam);
+        }
+     }
+     else return CallWindowProc(lpfnOldWndProc,
+                                hWnd,
+                                Message,
+                                wParam,
+                                lParam);
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the product(s) listed at the
+beginning of this article.
+
+This problem does not occur in Chinese or Japenese Windows 95 or Windows NT.
+
+Additional query words: cwin jwin fesdk
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbHLangJapanese kbHLangChineseTrad kbAudDeveloper kbWin3xSearch kbSDKSearch kbZNotKeyword3 kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

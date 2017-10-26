@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72412: Math Coprocessor Detection Hangs System in QBasic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72412: Math Coprocessor Detection Hangs System in QBasic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72412/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72412/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72412/","publisher":null,"image":null,"headline":"Q72412: Math Coprocessor Detection Hangs System in QBasic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72412-math-coprocessor-detection-hangs-system-in-qbasic">Q72412: Math Coprocessor Detection Hangs System in QBasic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72412
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting MS-DOS QBasic (included with MS-DOS versionS 5.x and 6.x) your
+system may stop responding (hang).
+
+CAUSE
+=====
+
+This problem occurs because of the way the QBasic environment checks for the
+presence of a math coprocessor chip in your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with MS-DOS versions 5.0, 5.00a,
+6.0, 6.2, 6.21, and 6.22. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+If this problem occurs, reboot your machine and add the following line to your
+AUTOEXEC.BAT file:
+
+  " SET NO87=NOMATH " (without the quotation marks)
+
+After you add this line to the AUTOEXEC.BAT file, reboot your machine so that
+this switch can take effect. You should now be able to enter the QBasic
+interpreter with no difficulty.
+
+NOTE: Setting NO87 does not affect other applications' use of a math coprocessor
+(with the exception of MS-DOS 6.00 DoubleSpace) because the application has to
+look for this environment variable.
+
+The environment variable NO87 is a switch to tell the QBasic interpreter that
+there is no 80x87 chip in your machine. You can set this variable to any value
+to make NO87 true. Setting NO87 to null (SET NO87=&lt;Enter&gt;) makes NO87
+false, which is the default state.
+
+Although the QBasic interpreter checks for a coprocessor, it doesn't actually use
+the coprocessor even if it successfully detects one. You do not lose any
+functionality or speed by setting the NO87 variable to true, even if you have a
+math coprocessor chip.
+
+The same problem occurs in QuickBasic version 4.5, but the QuickBasic environment
+can use the coprocessor if it is successfully detected.
+
+Additional query words: dblspace 5.00 5.00a 6.00 6.20 80387 80287 8087
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

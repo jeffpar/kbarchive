@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181480/","publisher":null,"image":null,"headline":"Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181480-fix-mfc-odbc-cannot-update-access-datetime-with-no-date">Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181480
+Product(s): Microsoft C Compiler
+Version(s): 2.5,2000,5.0,6.0,97
+Operating System(s): 
+Keyword(s): kbJET kbMFC kbODBC kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport MSGRAPH kbMDAC250
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Access 2000 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you update records in an Access database using the ODBC cursor library and
+you previously added a date/time field in Access without a date using the
+CRecordset (with TIMESTAMP_STRUCT) classes, MFC throws the following exception:
+
+  No Rows Affected
+
+CAUSE
+=====
+
+The ODBC WHERE clause fails to find the record it needs to update it.
+
+RESOLUTION
+==========
+
+This problem has been fixed in MDAC 2.6. For MDAC versions before 2.6 use the
+following workarounds:
+
+You must always enter a date in the Access date/time field for CRecordset classes
+using the ODBC cursor library.
+
+You can also resolve this problem by switching to dynasets.
+
+STATUS
+======
+
+
+
+MORE INFORMATION
+================
+
+If you have to use the ODBC cursor library, you must always enter a date along
+with a time in the Access date/time field. If you only enter a time, the
+recordset will fail to post updates and the MFC exception "No Rows Affected"
+will be thrown. This occurs because the ODBC cursor library attempts to update
+the database using an UPDATE clause and attempts to select all columns to ensure
+a unique record. During this selection, the date field fails to be resolved.
+
+If you do not have to use the ODBC cursor library, you can open the recordset as
+a dynaset, which effectively eliminates this problem.
+
+REFERENCES
+==========
+
+Visual C++, Microsoft Foundation Class Reference, Class Library Reference:
+Crecordset; CDatabase
+
+
+Additional query words: MfcDatabase
+
+======================================================================
+Keywords          : kbJET kbMFC kbODBC kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport MSGRAPH kbMDAC250 kbMDAC260fix kbMDACNoSweep 
+Technology        : kbAudDeveloper kbMFC
+Version           : :2.5,2000,5.0,6.0,97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

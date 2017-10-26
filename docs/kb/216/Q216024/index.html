@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216024: Maintenance Mode Setup for BackOffice 4.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216024: Maintenance Mode Setup for BackOffice 4.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216024/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216024/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216024/","publisher":null,"image":null,"headline":"Q216024: Maintenance Mode Setup for BackOffice 4.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216024-maintenance-mode-setup-for-backoffice-45">Q216024: Maintenance Mode Setup for BackOffice 4.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216024
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot run Setup for individual components in BackOffice 4.5 (for example,
+Microsoft SQL Server or Microsoft Exchange Server) using the BackOffice
+interface.
+
+This article lists the location of the Setup files for the various BackOffice
+components.
+
+MORE INFORMATION
+================
+
+For additional information, consult documentation for each of the products.
+
+Product                CD# Folder file location
+-------                --- ---------------------------------
+BackOffice 4.5         1   Setup.exe
+Windows NT             1   %Platform%\Winnt32.exe
+Service Pack 4         1   BkOffice\%Platform%\Sp4setup.exe
+Microsoft Management   1   Mmc\%Platform%\Setupmmc.exe
+Console 1.1	       
+BackOffice Deployment  1   Bkoffice\%Platform%\Dploywiz.exe
+Tool                   
+Internet Explorer 5    1   Ie50\%Platform%\Ie5setup.exe
+SQL 7.0                2   Sql70\%Platform%\Setup\Setupsql.exe
+SQL OLAP Services      2   Sql70\Msolap\Install\Setup.exe
+English Query 7.0      2   Sql70\Mseq\%Platform%\Setup.exe
+Windows Option 4.0     3   Ntoptpak\En\%Platform%\Winnt.srv\Setup.exe
+Proxy 2.0              3   Msp\Setup.exe
+Exchange 5.5           4   Exchsrvr\Server\Setup\%Platform%\Setup.exe
+Exchange SP2           4   Exchsrvr.SP2\Server\Setup\%Platform%\Update.exe
+Exchange Chat          4   Exchsrvr\Chat\Setup\%Platform%\Setup.exe
+Site 3.0               5   SiteSrv\%Platform%\Setup.exe
+Site 3.0 SP2           5   SiteSrv.SP2\%Platform%\Ss3sp2.exe
+Systems Management     6   Sms\Smssetup\Bin\%Platform%\Setup.exe
+Server
+Seagate Crystal        6   Crystal\%Platform%\Setup.exe
+Info 7.0               
+BackOffice Core        6   Bkoffice\%Platform%\AdminSetup.exe
+Components             
+Intranet Kit           6   Bkoffice\%Platform%\Iksetup.exe
+SNA 4.0                7   Sna40\$Platform%\Setup.exe
+Outlook 2000           8   Setup.exe
+
+NOTE: Substitute %Platform% with I386 (x86) or Alpha, depending on the computer
+type.
+
+To initiate Mode Setup, browse the CD-ROM folders of the program you want to
+modify, double-click the file, and then follow the instructions.
+
+Additional query words: sms
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

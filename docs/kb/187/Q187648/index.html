@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187648/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187648/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187648/","publisher":null,"image":null,"headline":"Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187648-info-frontpage-and-vid-local-files-on-a-source-controlled-web">Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187648
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:1.0,5.0,97
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+- Microsoft Visual InterDev, version 1.0 
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article addresses a situation where you are using both FrontPage (FP)
+and/or Visual Interdev (VID) to develop a Web that is also source controlled and
+you want to give Web authors and developers the ability to edit and save files
+locally before saving them to the Web server and checking them in to SourceSafe.
+
+MORE INFORMATION
+================
+
+Assuming that you already have the file checked out, there are two steps
+involved:
+
+1. Work on a local copy of the file, occasionally saving it locally.
+
+2. Save the file to the Web server.
+
+Work on a Local Copy of the File
+--------------------------------
+
+The major issue here is that VID has a "sandbox" (the ability to store a local
+copy of the file while you are working on the file). You can save a file locally
+until you are ready to update the test server and/or check it in to SourceSafe,
+whereas saving a file in FrontPage always saves it to the Web server.
+
+FrontPage does not support the sandbox functionality. In certain cases, you can
+use the method described here, but use it with caution. For example, if there
+are dependencies based on borders, class files, image links, and so forth,
+choosing "Save As" in the FrontPage editor to take a file from an open Web and
+save it on the hard drive generates some problematic conditions.
+
+1. Open the file from the FrontPage explorer. From the File menu, select "Save
+  As" and save the file locally.
+
+2. Work on the local version of the file. Remember to work with the local copy
+  by opening it in the FrontPage editor. Do not open the Web copy in the
+  FrontPage explorer.
+
+3. To save a local copy in Visual Interdev without updating the server, from the
+  Tools menu, choose Options. In the Options dialog box, click the "Web
+  Projects" tab and clear the "Update server when files are saved" check box.
+
+Saving the File to the Server
+-----------------------------
+
+There are two possible approaches here. Some administrators prefer to always have
+the version of all files on the server synchronized with the latest SourceSafe
+version, so that any file saved to the server must also be checked in to
+SourceSafe, while others do not want to check in a file until it has been tested
+and approved.
+
+To save a local file to the server in FrontPage, assuming you have used the
+approach described above to simulate a sandbox, import the local copy into the
+FrontPage web, answering "Yes" when prompted to replace the current copy. You
+can then choose to check the file in. Note that in FrontPage saving to the
+server and checking the file in will always be a two step process.
+
+NOTE: You must import any dependencies, such as images for example, into the Web
+along with the file.
+
+In Visual Interdev, you can "Update Server" to save the local copy to the server
+without checking it in to SourceSafe. Selecting "Release Working Copy" then
+performs the check in. If you want the SourceSafe version synchronized with the
+server version, just choose Release Working Copy, then answer "Yes" when
+prompted to update the server copy.
+
+Additional query words: kbDSupport kbdse ssfp ssidev kbInetDev
+
+======================================================================
+Keywords          :  
+Technology        : kbVisIDsearch kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search kbVisID100 kbSSafe500
+Version           : WINDOWS:1.0,5.0,97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

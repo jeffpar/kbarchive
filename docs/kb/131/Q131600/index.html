@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131600: How to Customize RightClick Behavior | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131600: How to Customize RightClick Behavior" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131600/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131600/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131600/","publisher":null,"image":null,"headline":"Q131600: How to Customize RightClick Behavior","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131600-how-to-customize-rightclick-behavior">Q131600: How to Customize RightClick Behavior</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131600
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under certain circumstances, you may want to customize the behavior of the right
+mouse button. In Visual FoxPro, you usually click the right mouse button to
+bring up additional popup menus. This article shows by example how to do the
+same thing in your applications. You can present the user with a popup menu of
+choices (including a choice to Exit) when the user clicks the right mouse
+button.
+
+MORE INFORMATION
+================
+
+You cannot change the default behavior of the _Screen.RightClick method, so
+instead of using the RightClick method, use an ON KEY LABEL RIGHTMOUSE command
+to achieve the desired result.
+
+For example, the following code sample defines a window for the popup, builds the
+popup, and then executes a WAIT WINDOW showing the user's choice.
+
+To make the following code example work, type the following command in the
+Command window:
+
+     ON KEY LABEL RIGHTMOUSE DO RightPop
+
+Note that for this example, when you press the ESC key, the ON KEY LABEL
+definitions are reset, so this only works for a single pass as it is written. To
+force the definition for the right mouse button to remain in effect even after
+the ESC key is pressed, comment out the ON KEY LABEL RIGHTMOUSE command in
+RelWind procedure.
+
+NOTE: To place the popup at the mouse pointer's location, use the MCOL() and
+MROW() functions to retrieve the X &amp; Y coordinates for use when defining the
+popup's window.
+
+Code Sample
+-----------
+
+  *------------------------------------------------------------------------*
+  * Program: RightPop                                                      *
+  * Purpose: Demonstrate how to mimic the behavior of the right mouse      *
+  *          button in Visual FoxPro.                                     *
+  *------------------------------------------------------------------------*
+  ON KEY LABEL esc DO RelWind IN RightPop
+
+  DEFINE WINDOW test FROM 0,0 to 5,12 FLOAT CLOSE NOMINIMIZE
+
+  DEFINE POPUP conversion MARGIN RELATIVE SHADOW COLOR SCHEME 4 ;
+     IN WINDOW test
+  DEFINE BAR 1 OF conversion PROMPT 'Ar\&lt;ea' KEY CTRL+E, '^E'
+  DEFINE BAR 2 OF conversion PROMPT '\&lt;Length' ;
+     KEY CTRL+L, '^L'
+  DEFINE BAR 3 OF conversion PROMPT 'Ma\&lt;ss' ;
+     KEY CTRL+S, '^S'
+  DEFINE BAR 4 OF conversion PROMPT 'Spee\&lt;d' ;
+     KEY CTRL+D, '^D'
+
+  ON SELECTION POPUP conversion;
+     DO choice IN RightPop WITH PROMPT( ), POPUP( )
+  ACTI WINDOW test
+  ACTIVATE POPUP conversion NOWAIT
+
+  PROCEDURE choice
+  PARAMETERS mprompt, mpopup
+  WAIT WINDOW 'You chose ' + mprompt + ;
+      ' from popup ' + mpopup NOWAIT
+
+  PROCEDURE RelWind
+  On Key Label Esc
+  On Key Label RightMouse
+  Release Window Test
+  *----------------------------&lt; End program code &gt;------------------------*
+
+Additional query words: VFoxWin _SCREEN rightclick
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

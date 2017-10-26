@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154988/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154988/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154988/","publisher":null,"image":null,"headline":"Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154988-troubleshooting-fast-etherlink-and-etherlink-iii-r-adapters">Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154988
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are have problems installing 3com Etherdisk drivers for Etherlink and
+the Etherlink III (R) Bus Master Adapters, the troubleshooting guide below will
+help you with a smooth installation.
+
+If the adapter diagnostic tests fail, the adapter might not be defective. Check
+the following:
+
+- Make sure the adapter is completely seated in its slot. Review the
+  installation instructions in the appropriate adapter guide.
+
+- If you are running the Group 2 test, make sure the adapter is securely
+  connected to a loopback plug or to a properly cabled network.
+
+- If you are running the Group 3 test, make sure the adapter is securely
+  connected to a properly cabled network and an echo server is set up on the
+  network.
+
+- Make sure the configuration setting for the transceiver type is correct.
+
+- Running Group 2 tests while connected to an active network can cause
+  intermittent failures. These failures can be avoided by using a loopback plug
+  or by connecting to an inactive network on which only the computer being
+  tested is operating.
+
+- If you installed a twisted-pair adapter, check the LED on the back plate of
+  the adapter. The LED should be checked only during or after the diagnostic
+  tests have been run. The LED will be on when there is a correct connection
+  between the adapter and the hub. The LED will flash if the polarity of the
+  connection is swapped.
+
+- Install the adapter in another slot and run the tests again. The slot in the
+  computer may be defective.
+
+- Install the adapter in a known, functioning computer and run the tests again.
+  The computer in which the adapter is installed might be defective.
+
+- Try a different loopback plug. The loopback plug you are using might be
+  defective.
+
+- Replace the failed adapter with a known working adapter with the same
+  configuration. If the second adapter fails, something is probably wrong with
+  the test environment, not with the adapter.
+
+MORE INFORMATION
+================
+
+For more information, please contact 3com Corporation.
+
+Additional query words: 3com Nic netcard drivers installation setup diagnostic bus master adapter
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

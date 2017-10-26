@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197509/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197509/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197509/","publisher":null,"image":null,"headline":"Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197509-xfor-notes-connector-may-timeout-on-resource-lock-on-startup">Q197509: XFOR: Notes Connector May "Timeout on resource lock" on Startup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197509
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start or restart the Microsoft Exchange Notes connector, the browse
+logs might display the following errors:
+
+  1998/03/17 22:19:48 - LME-NOTES-DXANOTES(0199) 2 41100:Intializing
+  Lotus Notes Interface
+  &gt;&gt; lsnabapi(525)
+
+  1998/03/17 22:19:50 - LME-NOTES-NTSMEX(0192) 3 41207:Successfully
+  Initialized Notes Interface
+  &gt;&gt; ntshcs(1480)
+
+  1998/03/17 22:19:50 - LME-NOTES-NTSMEX(0192) 4 00019:The value of the
+  NOTESSERVER keyword in the LME-NOTES-NTSMEX section is 'Test/Notes'
+  &gt;&gt; ntshcs(3935)
+
+  1998/03/17 22:19:50 - LME-NOTES-NTSMEX(0192) 3 41262:Performing
+  consistency check, validating items, and automatically removing old
+  deleted note stubs on Test/Notes!!Exchange.box...
+  &gt;&gt; ntshcs(1814)
+
+  1998/03/17 22:19:50 - LME-NOTES-MEXNTS(018b) 3 41207:Successfully
+  Initialized Notes Interface
+  &gt;&gt; ntshcs(1480)
+
+  1998/03/17 22:22:50 - LME-NOTES-MEXNTS(018b) 2 01211:Error {Timeout on
+  resource lock}: Unable to lock the LME-NOTESOPEN shared memory object
+  &gt;&gt; ntshcs(1765)
+
+  1998/03/17 22:22:50 - LME-NOTES-MEXNTS(018b) 1 00510:Error (Timeout on
+  resource lock}: The application failed to initialize.
+  &gt;&gt; stdmain(863)
+
+  1998/03/17 22:22:50-        LME-NOTES-MEXNTS(018b) 3 00505:LME-NOTES-
+  MEXNTS is ending, last return code was {Timeout on resource lock}
+&gt;&gt; stdmain(958)
+
+  1998/03/17 22:22:50 - LME-NOTES-MEXNTS(018b) 1 41220:Error: no Notes
+  Session Open
+  &gt;&gt; ntshcs(2317)
+
+  1998/03/17 22:22:50 - LME-NOTES-MEXNTS(018b) 3 41210:Terminating Notes
+  Interface
+  &gt;&gt; ntshcs(1596)
+
+CAUSE
+=====
+
+This problem is because of a bug in the Notes API. This occurs because the
+LAPI_Init/LAPI_InitExtended call to the Notes API fails or stops responding
+(hangs) when one of the Notes-related processes is (re-)starting.
+
+RESOLUTION
+==========
+
+The Notes connector will handle this problem in the Notes API DLL by
+automatically restarting upon receiving this error.
+
+WORKAROUND
+==========
+
+To work around this problem, manually restart the Exchange Notes Connector.
+
+STATUS
+======
+
+Microsoft confirms this to be a problem in Microsoft Exchange Server version
+5.5.
+
+MORE INFORMATION
+================
+
+This will likely shut down all three of the Notes connector processes.
+
+Additional query words: crash, notes connector, resource, timeout
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

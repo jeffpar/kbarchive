@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195666/","publisher":null,"image":null,"headline":"Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195666-xcln-macintosh-outlook-ends-unexpectedly-with-type-2-error">Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195666
+Product(s): Microsoft Exchange
+Version(s): MACINTOSH:8.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Exchange Server is modified to create Container Level Search Control
+using Address Book views as mentioned in the following Knowledge Base article:
+
+  Q182902 XADM: How To Setup Container Level Search Control
+
+The idea is to have multiple departments within one Exchange Server organization,
+and to prevent these departments from viewing the mailboxes of other departments
+in the global address list.
+
+When you use Microsoft Outlook for Windows to create a profile, access the
+mailbox and view the global address list. Only the respective mailboxes are
+viewed in the global address list, just as expected.
+
+When you use Microsoft Outlook for Macintosh, Exchange Server Edition, and create
+a profile, it quits unexpectedly with the following error message:
+
+  The application "Microsoft Outlook" has unexpectedly quit, because an error
+  of Type 2 occurred.
+
+CAUSE
+=====
+
+Outlook ends unexpectedly because the Macintosh client expects to receive
+information about the home server network address from a property called
+PR_EMS_AB_NETWORK_ADDRESS. When Exchange Server returns Permission Denied, the
+Macintosh client fails to process this error condition, and quits.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Microsoft Exchange
+Server. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook for Macintosh,
+Exchange Server Edition, version 8.0. This problem was first corrected in
+Exchange Server 5.5 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To fix this, both the client and server computers needs modifications as
+follows:
+
+Macintosh client
+----------------
+
+Modify the Macintosh client to handle Non-existence, Null-value, and Access
+Denied cases for the PR_EMS_AB_NETWORK_ADDRESS property.
+
+Exchange Server computer
+------------------------
+
+In the Microsoft Exchange Server Administrator program, select each of the server
+objects in the directory, and grant search permissions to the "Everyone"
+account. This will allow the Macintosh client to read the
+PR_EMS_AB_NETWORK_ADDRESS attribute off that server, which was originally
+inaccessible.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbOutlookMacSearch kbOutlook800Mac
+Version           : MACINTOSH:8.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

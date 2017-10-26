@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156937/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156937/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156937/","publisher":null,"image":null,"headline":"Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156937-prb-report-wizard-shows-surplus-data-sources-for-query">Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156937
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Query Designer to select a limited number of fields from a
+limited number of tables, if the Destination is a report and the Report Wizard
+is invoked, the Step 1 - Select Fields dialog box displays the names of all
+tables and cursors open in work areas and all of the tables in the currently
+open database, with the fields of the first table listed the Available Fields
+list box.
+
+Because the query has already been designed and the selected fields have already
+been specified, you might expect the Report Wizard to show only those fields in
+the Select Fields dialog form.
+
+CAUSE
+=====
+
+The Wizard can be called from a number of locations (menus, and so forth). When
+it is called it has no idea that it was called from the Output Destination
+dialog box of the Query Designer.
+
+To make it easier for the user, the Wizard displays the open Databases to gather
+information on tables, views, and so forth. It also reads all the tables open in
+work areas.
+
+When calling the Report Wizard from the Query Designer, unless you actually run
+the query before you choose the Output Destinations options, there is no way for
+the Wizard to gather this information. If you do run the query first, the Wizard
+picks up these fields as well, as the result set is in an active cursor.
+
+For the Report Wizard to display only the fields selected from the queried table,
+the behavior of the Query Designer has to be changed to run the Query before you
+specify an output destination.
+
+Another aspect of the issue is that the Report Wizard saves the original table as
+the data source in the report's data environment if the query hasn't been run.
+If the query has been run and the cursor that it created is still open, this
+cursor, normally named "query," is saved in the report's data environment.
+Usually this isn't a problem. But the best way to set this up is to modify the
+report after its creation and remove any and all tables or cursors from the data
+environment. Then when the report is run from the query it will always use the
+correct data. The report wizard does not add the table or cursor alias to the
+report expressions for the fields. For instance, it uses CUST_ID for the report
+expression to print the CUST_ID field rather than CUSTOMER.CUST_ID or
+QUERY.CUST_ID. This is the best way to setup the report expressions and should
+not be changed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the Samples\Data\Testdata database
+
+2. Create a new query, selecting two fields from the Customer table.
+
+3. In the Output Destination dialog box, choose the Report button, and then the
+  Wizard button, which is at the right end of the Open Report text box, and
+  then the Report Wizard. Select the "Report Wizard" from the Wizard Selection
+  dialog box.
+
+The fields listed are from the first table in the database, Customers. The
+remaining tables are also listed.
+
+Additional query words: kbdsd vFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186914/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186914/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186914/","publisher":null,"image":null,"headline":"Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186914-howto-implement-additional-interfaces-in-an-activex-control">Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186914
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to implement an additional interface in a Visual
+Basic ActiveX control. ActiveX EXE and DLL components are better suited for this
+purpose, but it may be desirable, for example, to implement a custom interface
+that is present in all of your ActiveX controls. That is the approach taken in
+the example shown in this article.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Start a new ActiveX DLL project in Visual Basic. Change the name of the
+  project to BaseClass. Change the name of Class1 to CustomInterface. Insert
+  the following code into the CustomInterface class module:
+
+        Public Function testCustomInterface()
+        End Function
+
+2. On the File menu, click Add Project to add a new ActiveX Control project.
+  Click References on the Project menu, and check the reference to BaseClass.
+  Insert the following code into the General Declarations section of the
+  UserControl's code module:
+
+        Implements BaseClass.CustomInterface
+
+        Private Function CustomInterface_testCustomInterface() As Variant
+           CustomInterface_testCustomInterface = _
+                                 "Custom Interface test successful."
+        End Function
+
+        Public Function testStandardInterface() As Variant
+           testStandardInterface = "Standard Interface test successful."
+        End Function
+
+3. Change the name of the project to interfacesControl. Click Add Project on the
+  File menu to add a new Standard EXE project. Right-click on Project1 in the
+  Project window and select the Set as Start Up option.
+
+4. On the Project menu, click References, and then check the reference to
+  BaseClass. Place the UserControl (interfacesControl) on Form1. Add a
+  CommandButton to Form1.
+
+5. Insert the following code into the General Declaration section of Form1:
+
+         Private Sub Command1_Click()
+
+            Debug.Print Me.UserControl11.testStandardInterface
+
+            Dim obj As BaseClass.CustomInterface
+            Set obj = Me.UserControl11.Object
+            Debug.Print obj.testCustomInterface
+
+         End Sub
+
+6. Run the project, click Command1 and note that both interfaces responded in
+  the Immediate Window,.
+
+Additional query words: kbDSupport kbDSD kbActiveX kbClientServer kbVBp500 kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

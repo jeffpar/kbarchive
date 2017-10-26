@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198968: Err Msg: SSL Required | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198968: Err Msg: SSL Required" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198968/","publisher":null,"image":null,"headline":"Q198968: Err Msg: SSL Required","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198968-err-msg-ssl-required">Q198968: Err Msg: SSL Required</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198968
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the HTMLA Web Administration forms that come with Internet
+Information Services (IIS) 5.0, you may see a problem with requiring SSL. The
+HTMLA Administration forms do not validate when Require SSL is selected on a Web
+site. If you do not have a key installed, it may render you Web site unusable
+until the problem is corrected. If you use Require SSL on the default Web site
+or the administration Web site and you do not have a key installed, you will
+receive an "SSL required" error message when you try to view or administer the
+site from the Web interface.
+
+CAUSE
+=====
+
+The HTMLA Administration forms do not check to see if an SSL key is installed
+before allowing the box to be checked. You will receive a warning when you try
+to do this on the administration Web site, but not on any other sites, such as
+the default Web site.
+
+WORKAROUND
+==========
+
+To work around this problem, run the ADSVW utility that comes with Windows 2000.
+Follow these steps:
+
+1. Click Start, click Run, type "ADSVW" (without the quotation marks), and then
+  click OK.
+
+2. When you see the Active Directory Browser on you screen, select the
+  ObjectViewer option, and then click OK.
+
+3. For the ADs path, type "IIS://localhost" (without the quotation marks) and
+  click OK.
+
+4. When you see the Localhost entry in the left pane of the window, expand it,
+  and then double-click W3svc.
+
+5. You should now see your Web sites on the IIS computer enumerated under the
+  W3svc.
+
+6. Double-click the "1" entry (the default Web site) to expand it.
+
+7. Expand the entry for "ROOT" under "1."
+
+8. In the right-hand pane, in the "Properties" drop-down list, find the
+  "AccessSSL" setting in this list. The property value should be set at "-1" if
+  you are experiencing this problem.
+
+9. The correct setting should be "0" (zero) if SSL is not required.
+
+10. Change the setting to "0" (zero) under the property value (be sure the
+  property on the left is set to AccessSSL), and then click Apply.
+
+11. This change should take place immediately.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

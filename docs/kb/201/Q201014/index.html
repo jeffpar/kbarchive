@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201014/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201014/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201014/","publisher":null,"image":null,"headline":"Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201014-prb-blocking-occurs-when-you-call-a-vb-activex-exe-from-asp">Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201014
+Product(s): Internet Information Server
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbASP kbVBp600 kbGrpDSCom kbDSupport kbiis400
+Last Modified: 16-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Active Server Pages 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you instantiate an ActiveX EXE component from Active Server Pages (ASP) in
+page scope only, by default, all requests to the component are serialized to a
+single thread. This may cause contention and blocking.
+
+CAUSE
+=====
+
+Visual Basic 6.0 only supports Single-threaded or Apartment-threaded objects. By
+default, ActiveX EXE projects are set to the Apartment threading model. Thus, a
+Visual Basic ActiveX EXE is subject to the rules that COM imposes on
+single-threaded apartment (STA) objects.
+
+If an object that runs in an STA is called concurrently by multiple clients
+(regardless of their threading model), COM synchronizes access to the object by
+posting window messages to the component's message queue. As a result, the
+object only receives one call each time it retrieves and dispatches a
+COM-related message.
+
+Although this interference implies some performance penalty, it allows
+applications that support different threading models to work together. Thus, all
+possible combinations of client and out-of-process component interoperability
+are supported.
+
+RESOLUTION
+==========
+
+By default, the Instancing property of a Visual Basic ActiveX EXE is set to
+MultiUse. Therefore, only one server process is created using the STA model.
+Because Visual Basic only supports Single-threaded and STA objects, you cannot
+use either Free-threading or Both-threading to create multi-threaded objects.
+However, you can achieve concurrent execution as follows:
+
+- Increase the number of threads in the thread pool.
+- In the Visual Basic project properties, set the "Thread by object" option.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use Performance Monitor (PerfMon) to monitor the following counters:
+
+   - Active Server Pages object
+
+      - Requests Queued
+
+      - Requests Executing
+
+      - Sessions Total
+
+   - Process object (for the ActiveX EXE process)
+
+      - Thread Count
+
+2. If you are using a single computer as your client, make sure that you have
+  two instances of Internet Explorer (Iexplore.exe) running. This ensures that
+  you have two separate client processes.
+
+3. Create a Visual Basic ActiveX EXE named ThreadWaitProject.exe with one class
+  named ThreadTest. Accept the default values of the threading model in the
+  project properties, and implement the following function:
+
+  Private Declare Function GetCurrentThreadId Lib "kernel32" () As Long
+  Private Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
+
+  Function ThreadWait(nSeconds As Long) As Long
+      Sleep nSeconds * 1000
+      ThreadWait = GetCurrentThreadId
+  End Function
+
+4. Create an ASP page named Threadwait_vb_exe.asp, and paste the following
+  script:
+
+  &lt;%
+  Option Explicit
+  DIM NSec
+
+  Sub TestEXE
+  response.write "&lt;H1&gt;OOP VB EXE Threadwait&lt;/H1&gt;"
+  Dim objTest
+  Set objTest = Server.CreateObject("ThreadWaitProjectEXE.ThreadSleep")
+  Response.Write "StartTime: " &amp; Now &amp; "&lt;BR&gt;"
+  Response.Write "ThreadID: " &amp; objTest.ThreadWait(10) &amp; "&lt;BR&gt;"
+  Response.Write "EndTime: " &amp; Now &amp; "&lt;BR&gt;"
+  Response.write "Session ID: " &amp; Session.SessionId &amp; "&lt;BR&gt;"
+  Set objTest = Nothing
+  End Sub
+
+  TestEXE
+  %&gt;
+
+5. From two distinct clients (see step 2), request the ASP page
+  Threadwait_vb_exe at the same time. Both requests share the same ThreadID,
+  and the start and end times of both requests are serialized (that is, the
+  second request starts only after the first request finishes). You can use
+  PerfMon (see step 1) to see that one request is queued while the other is
+  being executed. When you apply the resolution, the ThreadIDs differ for the
+  two requests.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbASP kbVBp600 kbGrpDSCom kbDSupport kbiis400 
+Technology        : kbVBSearch kbiisSearch kbAudDeveloper kbASPsearch kbZNotKeyword6 kbiis400 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

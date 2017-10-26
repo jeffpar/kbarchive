@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37769: Using Run-Time Module, RUN Makes Program Lose 70K Memory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37769: Using Run-Time Module, RUN Makes Program Lose 70K Memory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37769/","publisher":null,"image":null,"headline":"Q37769: Using Run-Time Module, RUN Makes Program Lose 70K Memory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37769-using-run-time-module-run-makes-program-lose-70k-memory">Q37769: Using Run-Time Module, RUN Makes Program Lose 70K Memory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37769
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist6.00 buglist6.00b buglist7.00 buglist7.10 B_QuickBas | mspl13_basic
+Last Modified: 20-SEP-1990
+
+When a program compiled without the /O option executes the RUN
+statement to run a second program, the run-time module (BRUNxx.EXE or
+BRTMxx.EXE) is unloaded from memory. However, the 70K of space for the
+run-time module fragments memory, and approximately 70K of RAM is
+unavailable to the program run with the RUN statement. When the second
+program quits or transfers control, the 70K of memory is available
+again.
+
+Microsoft has confirmed this to be a problem in Microsoft BASIC
+Compiler versions 6.00 and 6.00b for MS-DOS, Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS, and Microsoft QuickBASIC Compiler versions 4.00, 4.00b, and
+4.50 (buglist4.00, buglist4.00b, buglist4.50) for MS-DOS. We are
+researching this problem and will post new information here as it
+becomes available. This problem doesn't occur in QuickBASIC version
+3.00.
+
+This temporary fragmentation of memory can contribute towards causing
+any one of the following errors when attempting to RUN another .EXE
+program: "Out of Memory," "Error R6005," or the MS-DOS message "Not
+enough memory to Exec."
+
+To work around this problem, you can make the program that uses the
+run-time module RUN another BASIC program compiled with the BC /O
+(stand-alone) option, which in turn can RUN the desired .EXE program.
+
+If the first BASIC program is compiled with the BC /O (stand-alone)
+option, all but 200 bytes are available after the RUN statement. In
+this case, the 200 missing bytes are the expected overhead associated
+with the RUN statement.
+
+The following are two different examples (1 and 2) that duplicate the
+problem:
+
+1. To duplicate the problem, do the following:
+
+   a. Compile the following program WITHOUT the BC /O (stand-alone)
+      option:
+
+         ' TEST1.BAS
+         PRINT FRE(-1)
+         RUN "TEST2"
+
+   b. Compile the following program WITH the BC /O (stand-alone)
+      option:
+
+         ' TEST2.BAS
+         PRINT FRE(-1)
+
+   c. Run TEST1.EXE. The following is sample output:
+
+         439432  (from TEST1)
+         429432  (from TEST2)
+
+   d. Run TEST2.EXE alone. The following is sample output:
+
+         500232  (from TEST2)
+
+      There is about 70K more far heap available for TEST2 when it is
+      run alone compared to when it is run from a BASIC program using
+      the BRUNxx.EXE module.
+
+2. The problem was originally reported using the RUN statement to
+   execute a Microsoft C .EXE program.
+
+   To duplicate this problem, compile (without /O) and run the BASIC
+   program below, which RUNs a Microsoft C program. The C routine
+   prints the approximate amount of memory free. When the BASIC
+   routine is compiled with the run-time module, about 70K is lost.
+
+   If you RUN the C program from the BASIC routine compiled with /O
+   and then compare with running the C program from MS-DOS, the memory
+   numbers are within 200 bytes of one another.
+
+   The following BASIC routine RUNS the C routine:
+
+      RUN "memtest.exe"
+
+   The following Microsoft C routine prints available memory:
+
+/*   memtest.c   */
+#include &lt;dos.h&gt;
+#include &lt;malloc.h&gt;
+#include &lt;stdio.h&gt;
+long l;
+unsigned int j,pp;
+main()
+{
+union REGS inregs, outregs;
+inregs.h.ah=0x48;
+inregs.x.bx=0xffff;
+intdos(&amp;inregs,&amp;outregs);
+l=(long)(outregs.x.bx * 16L); /*amount available from far heap*/
+j=_memavl();/*calculate approximate amount available from near heap*/
+printf("approximate # of bytes available for allocation %ld\n",l+j);
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

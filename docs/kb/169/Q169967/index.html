@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169967: WD97: Cannot Change Suggested AutoComplete Date Year Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169967: WD97: Cannot Change Suggested AutoComplete Date Year Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169967/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169967/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169967/","publisher":null,"image":null,"headline":"Q169967: WD97: Cannot Change Suggested AutoComplete Date Year Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169967-wd97-cannot-change-suggested-autocomplete-date-year-format">Q169967: WD97: Cannot Change Suggested AutoComplete Date Year Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169967
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 kbautotext word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change the Regional Settings on your computer to use a four-digit year
+(for example, in the short-date format), the AutoComplete feature in Microsoft
+Word still suggests a two-digit year.
+
+
+WORKAROUND
+==========
+
+Use one of the following methods to work around this problem:
+
+Method 1: Create an AutoCorrect Entry
+-------------------------------------
+
+Use this method to correct the date after accepting the suggested AutoComplete
+date. To do this, follow these steps:
+
+1. On the Tools menu, click AutoCorrect.
+
+2. On the AutoCorrect tab, type "/00" (without the quotation marks) in the
+  Replace box. Then type "/2000" (without the quotation marks) in the With box.
+
+3. Click Add to add your new AutoCorrect entry to the AutoCorrect list.
+
+4. Click OK to close the AutoCorrect dialog box.
+
+When you type the first four characters of the date, Word suggests today's date
+as usual. If you type "1/1/" (without the quotation marks), Word suggests the
+date 1/1/00. Press ENTER or the TAB key to accept the suggested date. When you
+press the SPACEBAR to type additional text or press ENTER to go to the next
+paragraph, Word corrects the date with the AutoCorrect entry you added.
+
+For example, Word corrects the date from the date you accepted, 1/1/00, to
+1/1/2000.
+
+Method 2: Use the "M/d/yyyy" or "MM/dd/yyyy" Date Format
+--------------------------------------------------------
+
+Use this method to "force" Word to show the correct AutoComplete date format as
+M/d/yyyy or MM/dd/yyyy. To do this, follow these steps:
+
+NOTE: There is no known workaround that forces Word to show an AutoComplete date
+in the format of M-d-yyyy or MM-dd-yyyy.
+
+1. Quit Microsoft Word.
+
+2. On the Windows Start menu, point to Settings and click Control Panel.
+
+3. Double-click Regional Settings.
+
+4. On the Date tab, type one of the following in the Short date style box:
+
+   - If you want to type and show the date as M/d/yyyy (for example: 1/1/2000),
+     type "M-d-yyyy" (without the quotation marks).
+
+     -or-
+
+   - If you want to type and show the date as MM/dd/yyyy (for example:
+     01/01/2000), type "MM-dd-yyyy" (without the quotation marks)
+
+NOTE: Word does not show or use this Short date style format. Instead, this
+"forces" Word to use the short date style M/d/yyyy or MM/dd/yyyy.
+
+5. Click Apply.
+
+6. Click OK to close the Regional Settings Properties dialog box.
+
+7. Restart Microsoft Word.
+
+When you type the first four characters of the date (for example, type "1/1/"
+(without the quotation marks) or "01/0" (without the quotation marks)), Word
+shows an AutoComplete tip in the correct date format. To accept the AutoComplete
+date, press either ENTER or the TAB key.
+
+For example, when you type "1/13" (without the quotation marks), Word shows an
+AutoComplete date of 1/13/2000.
+
+MORE INFORMATION
+================
+
+Most non-English (U.S.) languages show the default date format with the day
+first, followed by the month and year. Use Method 2 earlier in this article when
+you want to insert a date in the format of either d/M/yyyy (for example:
+13/1/2000) or dd/MM/yyyy (for example: 13/01/2000).
+
+To do this, type either "d-M-yyyy" (without the quotation marks) or "dd-MM-yyyy"
+(without the quotation marks) in step 4.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 kbautotext word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

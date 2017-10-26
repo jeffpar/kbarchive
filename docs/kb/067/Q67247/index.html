@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67247: MuScroll.exe - Custom Control Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67247: MuScroll.exe - Custom Control Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67247/","publisher":null,"image":null,"headline":"Q67247: MuScroll.exe - Custom Control Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67247-muscrollexe---custom-control-code">Q67247: MuScroll.exe - Custom Control Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67247
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kbCtrl kbSDKPlatform kbGrpDSUser kbOSWin310 kbOSWin300 kb16bitonly
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Download Center contains a custom control DLL and documentation
+for a custom control class, MicroScroll. These controls are essentially small
+scroll bars with no scroll box, and perform no scroll-box tracking.
+
+MicroScroll controls are small enough to be placed next to edit controls to
+create a spin button, such as those in the Date/Time dialog box in the Control
+Panel. Spin buttons are discussed on pages 86 and 87 of the IBM CUA guide, which
+is included with the Windows Software Development Kit (SDK).
+
+The archive file in the Microsoft Download Center, MUSCROLL, contains the
+following files:
+
+  Filename      Description
+  --------      -----------
+  MUSCROLL.DLL  MicroScroll custom control DLL. Currently, the source
+                files necessary to build the custom control are not
+                available to the public.
+
+  MUSCROLL.H    Header file containing control styles and messages
+                that define the interface to the control.
+
+  MUSCROLL.HLP  Windows Help file describing the control interface
+                and notes on using the control in an application.
+
+  MUSTEST.ZIP   Code for a test program that uses MicroScroll
+                controls to implement a numeric spin button and to
+                add horizontal scrolling capabilities to a
+                single line edit control.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Muscroll.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+To use MicroScroll effectively with the Dialog Editor that is shipped with the
+Microsoft Windows SDK version 3.0, you must first patch the Dialog Editor
+executable file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbCtrl kbSDKPlatform kbGrpDSUser kbOSWin310 kbOSWin300 kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

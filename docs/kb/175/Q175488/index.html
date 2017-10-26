@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175488/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175488/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175488/","publisher":null,"image":null,"headline":"Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175488-prb-vb4-16-bit-clients-cannot-early-bind-to-vb5-exe-servers">Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175488
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a Visual Basic 4.0 16-bit client that early-binds to a Visual Basic
+4.0 32-bit server and you replace the Visual Basic 4.0 32-bit server with a
+binary-compatible Visual Basic 5.0 or 6.0 32-bit server, you receive the
+following message when you try to run the client:
+
+  "Run-time error '-2147319784 (80028018)' OLE Automation error"
+
+CAUSE
+=====
+
+A Visual Basic 4.0 16-bit client can make use of the services of a Visual Basic
+4.0 32-bit local server (EXE OLE Server) with both early- and late- binding.
+However, a Visual Basic 4.0 16-bit client can only late-bind to a Visual Basic
+5.0 or 6.0 32-bit server (ActiveX EXE).
+
+The type library of the Visual Basic 5.0 or 6.0 32-bit server does not appear in
+the references list of the Visual Basic 4.0 16-bit design environment.
+
+This also applies if you are upgrading a Visual Basic 4.0 32-bit local server to
+a Visual Basic 5.0 or 6.0 ActiveX EXE and your server is going to be used by a
+Visual Basic 4.0 16-bit client. You will have to use late- binding in the Visual
+Basic 4.0 16-bit application. This is true even if you simply recompile the
+project in Visual Basic 5.0 or 6.0 and set the component to be binary compatible
+to the existing Visual Basic 4.0 32-bit component.
+
+RESOLUTION
+==========
+
+Use late binding with CreateObject as shown below.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Start 32-bit Visual Basic 4.0.
+
+2. Remove Form1 and insert a module (Module1) and a class module (Class1).
+
+3. Add the procedure Sub Main() to Module1.
+
+4. Set Class1's Name property to CServer, Instancing property to 2- Creatable
+  MultiUse and Public property to True.
+
+5. On the Tools menu, click Options. In the Options dialog box, select the
+  Project tab. Change Project Name to Server32, set StartMode to OLE Server,
+  and enter an Application Description of "32-Bit Visual Basic Server."
+
+6. Paste the following code into the General Declarations section of the CServer
+  (formerly Class1) class module:
+
+         Private mName As String
+
+         Private Sub Class_Initialize()
+            mName = "Default name"
+         End Sub
+         Public Property Get sName() As String
+            sName = mName
+         End Property
+         Public Property Let sName(vNewValue As String)
+            mName = vNewValue
+         End Property
+
+7. Save the BAS module as Server32M.bas, the class module as Server32C.cls, and
+  the project as Server32.vbp, and then compile the project as Server32.exe.
+
+8. Exit Visual Basic 4.0 32-bit.
+
+9. Start 16-bit Visual Basic 4.0.
+
+10. On the Tools menu, click References and then check 32-Bit Visual Basic
+  Server. You may have to use the Browse button to add Server32.exe to the
+  references list.
+
+11. Add the controls listed in the table below to your form (Form1). Change the
+  name property of these controls to the value listed in the Updated Name
+  column and change the caption property of those controls to the value listed
+  in the Updated Caption column.
+
+      Control Type   Default Name   Updated Name  Updated Caption
+      -----------------------------------------------------------------
+      TextBox        Text1          txtEarly
+      TextBox        Text2          txtLate
+      Label          Label1                       lblEarly
+      Label          Label2                       lblLate
+      CommandButton  Command1       cmdEarly      Change Early's Name
+      CommandButton  Command2       cmdLate       Change Late's Name
+
+12. Change Form1's Name property to frmTest.
+
+13. Paste the following code into the General Declarations section of frmTest
+  (formerly Form1):
+
+         Dim LateObj As Object
+         Dim EarlyObj As New Server32.CServer
+
+         Private Sub cmdLate_Click()
+            On Error GoTo LateErrHandler:
+            With LateObj
+               .sName = txtLate
+               lblLate = .sName
+            End With
+            Exit Sub
+         LateErrHandler:
+            MsgBox Err.Number &amp; "  " &amp; Err.Description
+         End Sub
+         Private Sub cmdEarly_Click()
+            On Error GoTo EarlyErrHandler:
+            With EarlyObj
+               .sName = txtEarly
+               lblEarly = .sName
+            End With
+            Exit Sub
+         EarlyErrHandler:
+            MsgBox Err.Number &amp; "  " &amp; Err.Description
+         End Sub
+         Private Sub Form_Load()
+            On Error GoTo LoadErrHandler:
+            Set LateObj = CreateObject("server32.CServer")
+            lblEarly.Caption = EarlyObj.sName
+            Exit Sub
+         LoadErrHandler:
+            MsgBox Err.Number &amp; "  " &amp; Err.Description
+         End Sub
+
+14. Test and then save the form as Client16.frm and the project as Client16.vbp.
+
+15. Compile the project as Client16.exe and then exit Visual Basic 4.0 16-bit.
+  Run Client16.exe and verify that both the early and late buttons work
+  correctly.
+
+16. Copy Server32.exe to Server32B.exe (the backup copy) and copy the Server32
+  project files to a new (backup) directory.
+
+17. Open the original Server32 project in 32-bit Visual Basic 4.0.
+
+18. Select the Options menu item from the Tools menu, and on the resulting
+  Options dialog, select the Project tab. Under Compatible OLE Server, use the
+  ellipsis button ("...") to select Server32B.exe (the backup copy of
+  Server32.exe).
+
+19. Recompile the project, making sure it over-writes the original copy of
+  Server32.exe, and then exit Visual Basic 4.0 32-bit.
+
+20. Run Client16.exe. It should still work if you have followed these steps
+  correctly.
+
+21. Using Visual Basic 5.0 or 6.0, recompile the Server32 project into
+  Server32.exe and make sure it over-writes the original copy of Server32.exe.
+
+22. Run Client16.exe.
+
+RESULT: You should receive one of the following error messages:
+
+  Error 429, 429 OLE Automation server can't create object
+
+  -2147319784 OLE Automation Error
+
+After clearing the error message box, click the "Change Early's Name" button
+(early-bound to server) which should produce the same error. Clicking on the
+"Change Late's Name" button (late-bound to server) should work.
+
+======================================================================
+Keywords          : kberrmsg kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

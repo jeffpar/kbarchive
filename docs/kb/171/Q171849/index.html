@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171849/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171849/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171849/","publisher":null,"image":null,"headline":"Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171849-fix-debugger-hangs-when-very-long-stl-symbol-in-watch-window">Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171849
+Product(s): Microsoft C Compiler
+Version(s): 97
+Operating System(s): 
+Keyword(s): kbVS97sp2fix
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Integrated Debugger, included with:
+   - Microsoft Visual Studio 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The debugger hangs when an STL object with very long symbol name is viewed in
+the Watch Window and expanded. You have to close Developer Studio Task Manager
+and restart. The sample program in the MORE INFORMATION section demonstrates
+this behavior.
+
+CAUSE
+=====
+
+This behavior occurs because the debugger currently has a limit of 255
+characters for symbols.
+
+RESOLUTION
+==========
+
+Reduce the size of the mangled symbol names. You can do this by shortening the
+names of classes and class members. You can also shorten class names of classes
+by using #define.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 2.
+
+For more information on the Visual Studio 97 Service Pack 2, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Build the following sample code as a Console application:
+
+     #include &lt;windows.h&gt;
+     #include &lt;map&gt;
+     #pragma warning (disable : 4786 )
+     using namespace std;
+     template&lt;typename Type&gt;
+     class SomeReallyLongSymbolName
+     {
+         public:
+           SomeReallyLongSymbolName(Type var){m_Type = var;}
+           SomeReallyLongSymbolName(){}
+           void func(Type var){m_Type = var;}
+           Type m_Type;
+     };
+     SomeReallyLongSymbolName&lt;int&gt; intObject(0);
+     typedef map&lt; DWORD, SomeReallyLongSymbolName&lt; DWORD&gt; &gt;
+     STLTypeWithLongName ;
+     STLTypeWithLongName  STLObjectWithLongName;
+     int main()
+     {
+        intObject.func(1);
+        return 0;
+     }
+
+After the build is complete, start the debugger by pressing the F10 key. In the
+Watch Window, enter the two variable names, intObject and STLObjectWithLongName.
+You will be able to expand the intObject variable. However, when you try to
+expand the STLObjectWithLongName variable, the Debugger will hang.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVS97sp2fix 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : 97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

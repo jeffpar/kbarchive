@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73737: DOSSWAP.EXE Problem Occurs When Swap Not Allowed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73737: DOSSWAP.EXE Problem Occurs When Swap Not Allowed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73737/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73737/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73737/","publisher":null,"image":null,"headline":"Q73737: DOSSWAP.EXE Problem Occurs When Swap Not Allowed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73737-dosswapexe-problem-occurs-when-swap-not-allowed">Q73737: DOSSWAP.EXE Problem Occurs When Swap Not Allowed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73737
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a problem in MS-DOS version 5.0 Task Swapper that can cause mysterious
+failures after a task switch request is not allowed.
+
+A task switch request is prevented whenever you attempt to switch tasks by
+pressing ALT+TAB or ALT+ESC when task switching could cause a problem for the
+application. When the request is prevented, the machine beeps, and the task
+switch does not occur.
+
+If you find that erratic behavior occurs after you are not allowed to perform a
+task switch, you should obtain the above application note.
+
+MORE INFORMATION
+================
+
+A task switch request is disallowed under the following circumstances:
+
+- If you are running an application that is MS-DOS Shell Task Switcher aware
+  and you press ALT+TAB to switch, Task Swapper may disallow the call because
+  the application has notified MS-DOS Shell not to swap it. For example, Novell
+  NetWare never allows task switches while it is servicing any MS-DOS function
+  (INT 21) call over the network.
+
+- If you run any application that uses netBIOS asynchronous API (for example,
+  VTP or an SQL application in a session), Task Swapper automatically disallows
+  any switch request to avoid possible problems.
+
+In either of the above cases, the value in the CX register will be destroyed. The
+affect of the CX register being destroyed will vary, depending on what the
+application was storing there.
+
+Additional query words: appnote 5.00 dosshell dosswap kbfest
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

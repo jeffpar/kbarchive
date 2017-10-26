@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161887/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161887/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161887/","publisher":null,"image":null,"headline":"Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161887-xfor-starting-internet-mail-service-store-causes-stack-fault">Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161887
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Exchange Server Internet Mail Service, Store.exe
+causes a stack fault, halting store-related activities.
+
+CAUSE
+=====
+
+Multiple cascading embedded messages processed through a recursion routine is
+not limiting the number of recursions, which causes a stack overflow.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+When this problem occurs, the DrWtsn32.Log may look something like this:
+
+  Microsoft (R) Windows NT (TM) Version 4.0 DrWtsn32
+  Copyright (C) 1985-1995 Microsoft Corp. All rights reserved.
+
+  Application exception occurred:
+
+     App: Store.DBG (pid=159)
+     When: 1/2/1997 @ 7:30:30.452
+     Exception number: c00000fd (stack overflow)
+
+  State Dump for Thread Id 0xd0
+
+  EAX=0000000c EBX=011ab1cc ECX=011a2f04 EDX=000004b0 ESI=00949314
+  EDI=0213b061
+  EIP=0205febc ESP=011aaefc EBP=011aaf04 EFL=00000206
+  CS=001b DS=0023 ES=0023 SS=0023 FS=0038 GS=0000
+
+  function: chkstk
+
+  FAULT --&gt;   0x0205fea5 51 push ecx
+  0x0205fea6 3d00100000 cmp eax,00001000
+  0x0205feab 8d4c2408 lea ecx,dword ptr [esp+08]
+  0x0205feaf 7214 jb lastpage (0205fec5)
+  0x0205feb1 81e900100000 sub ecx,00001000
+  0x0205feb7 2d00100000 sub eax,00001000
+  0x0205febc 8501 test dword ptr [ecx],eax
+  0x0205febe 3d00100000 cmp eax,00001000
+..
+
+  Stack Back Trace:
+
+  FramePtr RetAddr Param1 Param2 Param3 Function Name
+  011aaf04 02004c4d 011ab178 000004b0 000004b0 STORE!$$$00001+0x17(...)
+  011ab158 02004e97 011ab178 011ab1c4 000004b0
+  STORE!JTAB_BASE::EcGetPropByPtagid+0xcb
+  011ab184 02010a7a 001a84b0 011ab1c4 000004b0
+  STORE!JTAB_BASE::EcGetProp+0x2b
+  011ab1f0 020ca807 0823c2e4 08231018 00000021 STORE!OMSG::EcConfig+0xb2f
+  011ab21c 020d4d20 08230fc4 00000021 011ab41c STORE!OMSG::EcConfig+0xa7
+  011ab254 0207bea9 00000021 00000001 011ab434
+  STORE!ATTACH::EcOpenPropertyMessage+0x142
+  011ab43c 02035225 00943e24 0129fac4 08230a1c
+  STORE!EcAttachFromMDBEF+0x2c516
+  011ab664 0207bf27 00943e24 0129fac4 08230a1c
+  STORE!EcMessageFromMDBEF+0x54d
+  011ab84c 02035225 00943e24 0129fac4 08235c84
+  STORE!EcAttachFromMDBEF+0x2c594
+  011aba74 0207bf27 00943e24 0129fac4 08235c84
+  STORE!EcMessageFromMDBEF+0x54d
+
+
+Additional query words: stack fault overflow
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

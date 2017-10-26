@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104402/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104402/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104402/","publisher":null,"image":null,"headline":"Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104402-pc-wsplus-err-msg-not-enough-disk-space-available">Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104402
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+- Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setup program (SETUP.EXE) to install version 1.0 or 1.0a of
+Microsoft Schedule+ for Windows, the following error message may appear:
+
+  There is not enough disk space available to install Schedule+
+
+The error message indicates that there is not enough disk space on the drive
+where Schedule+ is being installed. However, this message will also appear when
+there is not enough disk space available on the disk drive or partition where
+Microsoft Windows is installed.
+
+NOTE: This error message may also appear when you try to load versions 3.0, 3.0b,
+and 3.2 of Microsoft Mail for PC Networks.
+
+CAUSE
+=====
+
+When the Setup program determines available disk space, it looks at the target
+drive for information. When the Setup program attempts to write to the Windows
+directory (on a different drive), there may not be enough disk space to write
+the SCHDPLUS.INI into the Windows directory and the necessary .DLL files into
+the WINDOWS\SYSTEM subdirectory.
+
+RESOLUTION
+==========
+
+Move or delete files to free up the drive and ensure there is enough disk space
+available on the drive.
+
+MORE INFORMATION
+================
+
+Disk Space Requirements: (Clean Setup)
+
+  Microsoft Schedule+: approximately 1.6 MB
+  The disk drive Windows resides on: approximately 1.2 MB
+
+Additional query words: schedule plus 1.00 1.00a partition
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbZNotKeyword3 kbSchedule100 kbSchedule100a kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

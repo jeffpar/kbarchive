@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q220157: PRB: GETPRINTER() Behaves Differently Based on Machine’s OS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q220157: PRB: GETPRINTER() Behaves Differently Based on Machine’s OS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/220/Q220157/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/220/Q220157/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/220/Q220157/","publisher":null,"image":null,"headline":"Q220157: PRB: GETPRINTER() Behaves Differently Based on Machine’s OS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q220157-prb-getprinter--behaves-differently-based-on-machines-os">Q220157: PRB: GETPRINTER()  Behaves Differently Based on Machine’s OS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q220157
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbOSWinNT kbvfp500 kbvfp500a kbvfp600 kbOSWin95 kbOSWin98 kbXBase
+Last Modified: 28-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The GETPRINTERS() function produces both a different dialog and different
+results when querying printers from a machine running Windows 95 or 98 as
+opposed to Windows NT 4.0.
+
+RESOLUTION
+==========
+
+As a workaround, use the APRINTERS() function to store the available printers
+into an array. Also, if you want to choose the printer when running a report,
+add the PROMPT clause to the REPORT FORM command.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual FoxPro 6.0 or 5.0 on a Windows NT 4.0 machine.
+
+2. In the Command window, type:
+
+  ? GETPRINTER()
+
+3. Expand the drop-down list and note the values that appear next to the Name,
+  Type, and Where labels in the dialog box.
+
+4. Perform the steps above on a Windows 95 or 98 machine.
+
+5. On the Windows NT machine, the Name drop-down box contains the address of the
+  printer if the printer is on a network. Therefore, the GETPRINTER() function
+  returns the printer's network address, if the printer is on a network. The
+  Type label lists the actual printer name. If it is a local printer, they are
+  the same. The Where label has a number and the word PASSTHRU.
+
+  On Windows 95 or 98, the Name drop-down box contains the name of the printer.
+  Therefore, GETPRINTERS() returns the name of the printer and not its network
+  address under Windows 95 or 98. The Type label also has the name of the
+  printer. The Where label has the network address. If the printer is local,
+  Name and Type are the same.
+
+REFERENCES
+==========
+
+For additional information about APRINTERS, please see the following article in
+the Microsoft Knowledge Base:
+
+Q155929 BUG: APRINTERS Function Behaves Differently in Windows 95
+
+For more information about the APRINTERS function, search for APRINTERS, and then
+in Visual FoxPro Help.
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbOSWinNT kbvfp500 kbvfp500a kbvfp600 kbOSWin95 kbOSWin98 kbXBase 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

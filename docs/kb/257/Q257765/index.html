@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257765: SNA DDM Service Fails with an Access Violation Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257765: SNA DDM Service Fails with an Access Violation Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257765/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257765/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257765/","publisher":null,"image":null,"headline":"Q257765: SNA DDM Service Fails with an Access Violation Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257765-sna-ddm-service-fails-with-an-access-violation-error">Q257765: SNA DDM Service Fails with an Access Violation Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257765
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SNA DDM Service (Ddmserv.exe) may fail with an Access Violation error
+message, causing the following events to be logged:
+
+  Event ID: 3
+  Source: SNA DDM Service
+  Description: DDM Requestor has encountered exception 6be at location
+  IOpenRowset::OpenRowset
+
+If the VSAM Provider is invoked from within an Active Server Page, the following
+event may also be logged:
+
+  Event ID: 5
+  Source: Active Server Pages
+  Description: Error: File (file.asp) Unexpected error
+
+A Drwtsn.log file is also created, indicating an Access Violation failure in
+Ddmserv.exe in one of the following routines:
+
+  - ddmserv!mwOpen()
+  - ddmserv!InitializeFileInfo()
+  - ddmserv!IsKeyInRange()
+  - ddmserv!mwConnect()
+
+For example:
+
+  Application exception occurred:
+  App: exe\ddmserv.dbg (pid)
+  When: date @ time
+  Exception number: c0000005 (access violation)
+
+  [...]
+
+  State Dump for Thread Id 0xa8
+  eax=00000001 ebx=015c7690 ecx=00000000 edx=00017fff esi=041919e0 edi=00000000
+  eip=01008a83 esp=05fef8e0 ebp=032b7250 iopl=0 nv up ei pl nz ac pe nc
+  cs=001b ss=0023 ds=0023 es=0023 fs=0038 gs=0000 efl=00000212
+
+  function: mwOpen
+  01008a68 5f pop edi
+  01008a69 5e pop esi
+  01008a6a 5d pop ebp
+  01008a6b 5b pop ebx
+  01008a6c 81c450020000 add esp,0x250
+  01008a72 c3 ret
+  01008a73 8b83e4000000 mov eax,[ebx+0xe4] ds:015c7774=00000001
+  01008a79 85c0 test eax,eax
+  01008a7b 7e21 jle mwOpen+0x4ee (01008a9e)
+  01008a7d 8b8bec0c0000 mov ecx,[ebx+0xcec] ds:015c837c=00000000
+  FAULT -&gt;01008a83 8929 mov [ecx],ebp ds:00000000=????????
+
+  *---- Stack Back Trace ----*
+
+  FramePtr ReturnAd Param#1 Param#2 Param#3 Param#4 Function Name
+  05fefb3c 0100323f 0000000f 00076fbc 00076fcc 036e6a08 ddmserv!mwOpen
+  05feff28 00000010 00076fb8 0000004c 00000004 00078ad0 ddmserv!DDMAgent_mwOpen
+
+CAUSE
+=====
+
+The DDMSERV process is not properly handling new open requests when the maximum
+number of concurrent tables are open (157). Also, internal fileinfo structures
+are not being properly protected across different threads of the process.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+This update also increases the maximum number of concurrently open tables
+(files) to 1024 (from 157), and increases the maximum connections to 1024 (from
+128).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

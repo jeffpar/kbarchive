@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196755: HOWTO: Determine the Location of a Crash | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196755: HOWTO: Determine the Location of a Crash" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196755/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196755/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196755/","publisher":null,"image":null,"headline":"Q196755: HOWTO: Determine the Location of a Crash","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196755-howto-determine-the-location-of-a-crash">Q196755: HOWTO: Determine the Location of a Crash</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196755
+Product(s): Microsoft C Compiler
+Version(s): WINNT:4.0,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDebug kbVC400 kbVC420 kbVC500 kbVC600
+Last Modified: 30-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to identify, based on the address in the error
+message, where a failure is happening in your code.
+
+For example, a customer reports a crash while running a release version of your
+application, and the only information you have is the numeric address.
+
+MORE INFORMATION
+================
+
+Technique 1 - Using a MAP file
+------------------------------
+
+If you can not generate debug information on all of the objects in your
+application, you can still identify the function where the crash is occurring.
+For example, one reason you might be unable to get debug information is if you
+are using a library that did not include it.
+
+By using a MAP file you can identify the function that contains the code that is
+crashing. To generate the MAP file, use the /MAP linker switch when you build
+your release-mode build. If you have a crash in a debug build, you already have
+more effective information than a MAP file and should simply debug your
+application. You can also create a map file in the MSDev shell:
+
+1. In Project settings for the release configuration, click the Link tab.
+
+2. Under category General, select Generate mapfile.
+
+3. Rebuild your application.
+
+Assume you start from an application error such as the following:
+
+  testcrash.exe - Application Error
+  The instruction at "0x004011a9" referenced memory at "0x00000000". The
+  memory could not be "written"
+
+You would then look in the column of Rva+Base values and note where the location
+fits. The following is taken from a sample MAP file. To find this section in
+your own MAP file, search on "Rva+Base":
+
+  &lt;... lines removed ...&gt;
+    Address            Publics by Value              Rva+Base   Lib:Object
+  
+   0001:00000000
+  ?_GetBaseMessageMap@CTestcrashApp@@KGPBUAFX_MSGMAP@@XZ 00401000 f
+  testcrash.obj
+   0001:00000010       ?GetMessageMap@CTestcrashApp@@MBEPBUAFX_MSGMAP@@XZ
+  00401010 f testcrash.obj
+   0001:00000020       ??0CTestcrashApp@@QAE@XZ      00401020 f
+  testcrash.obj
+   0001:00000080       ??_ECTestcrashApp@@UAEPAXI@Z  00401080 f
+  testcrash.obj
+   0001:00000080       ??_GCTestcrashApp@@UAEPAXI@Z  00401080 f
+  testcrash.obj
+   0001:00000170       ?InitInstance@CTestcrashApp@@UAEHXZ 00401170 f
+  testcrash.obj
+   0001:00000210       ??1CTestcrashDlg@@UAE@XZ      00401210 f
+  testcrash.obj
+   0001:00000260       ?Serialize@CObject@@UAEXAAVCArchive@@@Z 00401260 f
+  testcrash.obj
+  &lt;... lines removed ...&gt;
+
+The columns in a MAP are not always well aligned so it may be a little hard to
+read. The number following the function name indicates the starting address of
+the function. We find the function containing the crash by noticing that address
+0x004011a9 falls after the start of ?InitInstance@CTestcrashApp@@UAEHXZ (start
+address is 00401170) and before the start of the next function
+??1CTestcrashDlg@@UAE@XZ (start address is 00401210). The crash thus seems to be
+in InitInstance.
+
+This method can usually be used to identify a function, but it won't narrow down
+the problem to a specific line or statement.
+
+Technique 2 - Using a PDB file
+------------------------------
+
+If the crash is in your own code, then you can probably create a PDB file, which
+gives you much more accurate data on where the crash is occurring.
+
+There are several settings that need to be changed to generate a useful PDB
+file:
+
+1. Save a copy of the MAP file created as described in Technique 1.
+
+2. In MSDev, click Project Settings for the release configuration.
+
+3. Click C++ tab, under the category General, under Debug info, select Program
+  Database (the corresponding compiler switch is /Zi).
+
+4. Click the Link tab, under the category General, select Generate debug info
+  (the corresponding linker switch is /debug). Make sure that "Use program
+  database" is selected on the Link tab, category Customize (the corresponding
+  linker switch is similar to the following:
+
+  /pdb:"Release/myproject.pdb" ).
+
+5. On the Link tab, in the Project Options box, append the following:
+
+  /OPT:ICF /OPT:REF
+
+6. Rebuild your application.
+
+7. Use Windiff or FC to compare the MAP file generated at this step with the MAP
+  file saved in step 1.
+
+8. Compare the Rva+Base of the function where the crash occurred. If it has not
+  changed after rebuilding in step 6, you can skip step 9.
+
+9. If the Rva+Base has changed, calculate the difference in the start location
+  of the function. Add this difference to the location of the reported crash so
+  that you have an adjusted location, which will match the .exe and PDB you
+  have just created. Use the adjusted value in all remaining steps.
+
+You now have a PDB file that you can use to debug the released executable and
+determine exactly where the crash occurred:
+
+1. Load your project in MSDev (be sure to use the release configuration).
+
+2. Press F11 to step into your application.
+
+3. Press ALT+F9 to bring up the Breakpoints dialog box.
+
+4. Set a breakpoint at the location of the crash (be sure to include the "0x" at
+  the beginning).
+
+5. Open the file containing the function that you identified in Technique 1; you
+  should see the breakpoint location. This is where the crash occurred.
+
+REFERENCES
+==========
+
+For more information on debugging techniques, please refer to the Visual C++
+online documents under the topic:
+
+  Using Visual C++ -- VC++ User's Guide -- Debugger
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbDebug kbVC400 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINNT:4.0,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

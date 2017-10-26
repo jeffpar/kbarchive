@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69087: Information on Windows 3.0 Font Scaling Technology | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69087: Information on Windows 3.0 Font Scaling Technology" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69087/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69087/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69087/","publisher":null,"image":null,"headline":"Q69087: Information on Windows 3.0 Font Scaling Technology","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69087-information-on-windows-30-font-scaling-technology">Q69087: Information on Windows 3.0 Font Scaling Technology</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q69087</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95.</span><span class="n">x</span> <span class="n">Retail</span> <span class="n">Product</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.0</span><span class="n">a</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">11</span><span class="p">-</span><span class="n">OCT</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">versions</span> <span class="m">3.0</span><span class="p">,</span> <span class="m">3.0</span><span class="n">a</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">contains</span> <span class="n">information</span> <span class="n">on</span> <span class="n">third</span><span class="p">-</span><span class="n">party</span> <span class="n">font</span> <span class="n">scaling</span> <span class="n">technology</span> <span class="n">for</span>
+<span class="n">Microsoft</span> <span class="n">Windows</span> <span class="k">version</span> <span class="m">3.0</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Several</span> <span class="n">manufacturers</span> <span class="n">supply</span> <span class="n">font</span> <span class="n">scaling</span> <span class="n">packages</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">3.0</span><span class="p">.</span> <span class="n">A</span> <span class="n">font</span>
+<span class="n">scaling</span> <span class="k">package</span> <span class="k">uses</span> <span class="n">a</span> <span class="n">scalable</span> <span class="n">font</span> <span class="n">outline</span> <span class="k">to</span> <span class="n">produce</span> <span class="n">various</span> <span class="n">sizes</span> <span class="k">of</span> <span class="n">bitmap</span>
+<span class="n">fonts</span> <span class="n">for</span> <span class="n">the</span> <span class="n">display</span> <span class="k">and</span><span class="p">/</span><span class="k">or</span> <span class="n">printer</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">major</span> <span class="n">advantage</span> <span class="k">in</span> <span class="n">that</span> <span class="n">it</span> <span class="n">is</span>
+<span class="n">only</span> <span class="n">necessary</span> <span class="k">to</span> <span class="n">install</span> <span class="n">a</span> <span class="n">single</span> <span class="n">font</span> <span class="n">outline</span> <span class="k">to</span> <span class="n">produce</span> <span class="n">a</span> <span class="n">wide</span> <span class="k">range</span> <span class="k">of</span> <span class="n">sizes</span>
+<span class="k">of</span> <span class="n">a</span> <span class="n">given</span> <span class="n">typeface</span><span class="p">.</span>
+
+<span class="n">Windows</span> <span class="n">screen</span> <span class="n">fonts</span><span class="p">,</span> <span class="n">the</span> <span class="n">default</span> <span class="n">fonts</span> <span class="n">supplied</span> <span class="k">with</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">3.00</span> <span class="k">package</span><span class="p">,</span>
+<span class="n">cover</span> <span class="n">a</span> <span class="n">useful</span> <span class="k">range</span> <span class="n">but</span> <span class="n">are</span> <span class="n">somewhat</span> <span class="n">basic</span><span class="p">.</span> <span class="n">These</span> <span class="k">include</span> <span class="n">Times</span> <span class="n">Roman</span><span class="p">,</span>
+<span class="n">Helvetica</span><span class="p">,</span> <span class="k">and</span> <span class="n">Symbol</span> <span class="n">at</span> <span class="m">8</span> <span class="n">through</span> <span class="m">24</span> <span class="n">point</span> <span class="n">sizes</span><span class="p">;</span> <span class="k">and</span> <span class="n">Courier</span> <span class="n">at</span> <span class="m">10</span> <span class="n">through</span> <span class="m">15</span>
+<span class="n">points</span><span class="p">.</span> <span class="n">You</span> <span class="n">may</span> <span class="n">have</span> <span class="n">found</span> <span class="n">instances</span> <span class="n">where</span> <span class="n">Windows</span> <span class="n">did</span> <span class="k">not</span> <span class="n">have</span> <span class="n">a</span> <span class="n">suitable</span>
+<span class="n">screen</span> <span class="n">font</span> <span class="k">to</span> <span class="n">correspond</span> <span class="k">to</span> <span class="n">the</span> <span class="n">printer</span> <span class="n">font</span> <span class="n">you</span> <span class="n">chose</span><span class="p">.</span> <span class="n">This</span> <span class="n">prevents</span> <span class="nb">true</span>
+<span class="n">WYSIWYG</span> <span class="p">(</span><span class="n">what</span> <span class="n">you</span> <span class="n">see</span> <span class="n">is</span> <span class="n">what</span> <span class="n">you</span> <span class="n">get</span><span class="p">)</span> <span class="n">implementation</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">use</span> <span class="k">of</span> <span class="n">a</span> <span class="n">font</span> <span class="n">scaling</span> <span class="k">package</span> <span class="n">can</span> <span class="n">greatly</span> <span class="n">enhance</span> <span class="n">both</span> <span class="n">your</span> <span class="n">printed</span> <span class="n">output</span>
+<span class="k">and</span> <span class="n">the</span> <span class="n">WYSIWYG</span> <span class="n">capability</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">especially</span> <span class="n">useful</span> <span class="n">when</span> <span class="n">doing</span> <span class="n">heavy</span> <span class="n">word</span>
+<span class="n">processing</span> <span class="k">or</span> <span class="n">desktop</span> <span class="n">publishing</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span> <span class="n">two</span> <span class="n">major</span> <span class="n">types</span> <span class="k">of</span> <span class="n">font</span> <span class="n">scaling</span>
+<span class="n">packages</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">font</span> <span class="n">creation</span> <span class="k">package</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">font</span> <span class="n">scaling</span> <span class="k">package</span>
+
+<span class="n">The</span> <span class="n">Fixed</span><span class="p">-</span><span class="n">Size</span> <span class="n">Font</span> <span class="n">Creation</span> <span class="k">Package</span>
+<span class="p">------------------------------------</span>
+
+<span class="n">Examples</span> <span class="k">of</span> <span class="n">this</span> <span class="n">type</span> <span class="k">of</span> <span class="k">package</span> <span class="k">include</span> <span class="n">Bitstream</span> <span class="n">Fontware</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">Hewlett</span>
+<span class="n">Packard</span><span class="p">/</span><span class="n">Compugraphic</span> <span class="n">Type</span> <span class="n">Director</span><span class="p">,</span> <span class="k">and</span> <span class="n">ZSoft</span> <span class="n">SoftType</span><span class="p">.</span> <span class="n">These</span> <span class="n">packages</span> <span class="n">allow</span> <span class="n">you</span>
+<span class="k">to</span> <span class="nb">create</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">downloadable</span> <span class="n">fonts</span> <span class="n">for</span> <span class="n">Hewlett</span><span class="p">-</span><span class="n">Packard</span> <span class="p">(</span><span class="n">HP</span><span class="p">)</span> <span class="n">LaserJet</span>
+<span class="n">compatibles</span><span class="p">,</span> <span class="k">and</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">Windows</span> <span class="n">screen</span> <span class="n">font</span> <span class="p">(.</span><span class="n">FON</span><span class="p">)</span> <span class="n">files</span> <span class="n">that</span> <span class="n">may</span> <span class="n">also</span> <span class="n">be</span>
+<span class="n">used</span> <span class="n">for</span> <span class="n">dot</span><span class="p">-</span><span class="n">matrix</span> <span class="k">or</span> <span class="n">InkJet</span> <span class="n">printing</span><span class="p">.</span> <span class="n">Both</span> <span class="n">LaserJet</span> <span class="n">downloadables</span> <span class="k">and</span> <span class="n">Windows</span>
+<span class="p">.</span><span class="n">FON</span> <span class="n">files</span> <span class="n">are</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">bitmap</span> <span class="n">fonts</span><span class="p">.</span> <span class="n">Some</span> <span class="n">packages</span> <span class="n">are</span> <span class="n">able</span> <span class="k">to</span> <span class="nb">create</span>
+<span class="n">PostScript</span> <span class="n">downloadable</span> <span class="n">outline</span> <span class="n">fonts</span> <span class="k">as</span> <span class="n">well</span><span class="p">,</span> <span class="n">which</span><span class="p">,</span> <span class="n">like</span> <span class="n">all</span> <span class="n">PostScript</span> <span class="n">fonts</span><span class="p">,</span>
+<span class="n">may</span> <span class="n">be</span> <span class="n">scaled</span> <span class="n">by</span> <span class="n">the</span> <span class="n">printer</span> <span class="n">itself</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">using</span> <span class="n">a</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">font</span> <span class="n">creation</span> <span class="k">package</span><span class="p">,</span> <span class="n">you</span> <span class="n">first</span> <span class="n">install</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span>
+<span class="n">scalable</span> <span class="n">outline</span> <span class="n">fonts</span><span class="p">,</span> <span class="n">usually</span> <span class="k">in</span> <span class="n">a</span> <span class="n">format</span> <span class="n">that</span> <span class="n">is</span> <span class="n">proprietary</span> <span class="k">to</span> <span class="n">the</span> <span class="n">font</span>
+<span class="k">package</span> <span class="n">manufacturer</span><span class="p">.</span> <span class="n">You</span> <span class="k">then</span> <span class="n">choose</span> <span class="n">specific</span> <span class="n">fixed</span> <span class="n">sizes</span> <span class="k">of</span> <span class="n">screen</span> <span class="k">and</span> <span class="n">printer</span>
+<span class="n">fonts</span> <span class="k">to</span> <span class="nb">create</span><span class="p">.</span> <span class="n">The</span> <span class="k">package</span> <span class="n">generates</span> <span class="n">the</span> <span class="n">requested</span> <span class="n">bitmap</span> <span class="n">fonts</span> <span class="n">by</span> <span class="n">scaling</span> <span class="n">the</span>
+<span class="n">outlines</span> <span class="k">to</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">sizes</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">the</span> <span class="k">case</span> <span class="k">of</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">support</span> <span class="n">PostScript</span> <span class="n">printers</span><span class="p">,</span> <span class="n">the</span> <span class="n">process</span> <span class="n">is</span> <span class="n">slightly</span>
+<span class="n">different</span><span class="p">.</span> <span class="n">First</span><span class="p">,</span> <span class="n">the</span> <span class="n">proprietary</span> <span class="n">outline</span> <span class="n">font</span> <span class="n">is</span> <span class="n">converted</span> <span class="k">to</span> <span class="n">a</span> <span class="n">downloadable</span>
+<span class="n">PostScript</span> <span class="n">outline</span><span class="p">.</span> <span class="k">Then</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="nb">create</span> <span class="n">specific</span> <span class="n">fixed</span> <span class="n">sizes</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">screen</span>
+<span class="n">fonts</span> <span class="k">to</span> <span class="n">correspond</span> <span class="k">to</span> <span class="n">the</span> <span class="n">PostScript</span> <span class="n">font</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">font</span> <span class="n">creation</span> <span class="k">package</span> <span class="n">is</span> <span class="n">best</span> <span class="n">for</span> <span class="n">situations</span> <span class="n">that</span> <span class="n">require</span> <span class="n">a</span> <span class="n">small</span>
+<span class="n">number</span> <span class="k">of</span> <span class="n">additional</span> <span class="n">fonts</span> <span class="k">in</span> <span class="n">specific</span> <span class="n">sizes</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">number</span> <span class="k">of</span>
+<span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">downloadable</span> <span class="n">fonts</span> <span class="k">and</span><span class="p">/</span><span class="k">or</span> <span class="n">Windows</span> <span class="p">.</span><span class="n">FON</span> <span class="n">screen</span> <span class="n">fonts</span><span class="p">,</span> <span class="n">it</span><span class="s1">'s fairly easy
+to consume a great deal of hard disk space. Also, downloadable fonts can be
+difficult to manage in a network environment. On the plus side, fixed-size fonts
+are very fast.
+
+The Real-Time Font Scaling Package
+----------------------------------
+
+This fairly recent technology is represented by packages such as Adobe Type
+Manager, Atech Publisher'</span><span class="n">s</span> <span class="n">Powerpak</span><span class="p">,</span> <span class="n">Bitstream</span> <span class="n">FaceLift</span><span class="p">,</span> <span class="k">and</span> <span class="n">Zenographics</span>
+<span class="n">SuperPrint</span><span class="p">.</span> <span class="n">These</span> <span class="n">packages</span> <span class="n">provide</span> <span class="nb">true</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">screen</span> <span class="k">and</span> <span class="n">printer</span> <span class="n">font</span>
+<span class="n">scaling</span><span class="p">.</span> <span class="n">They</span> <span class="n">are</span> <span class="n">somewhat</span> <span class="n">slower</span> <span class="n">than</span> <span class="n">the</span> <span class="n">use</span> <span class="k">of</span> <span class="n">fixed</span><span class="p">-</span><span class="n">size</span> <span class="n">fonts</span><span class="p">,</span> <span class="n">but</span> <span class="n">provide</span>
+<span class="n">the</span> <span class="n">best</span> <span class="n">WYSIWYG</span> <span class="n">feature</span> <span class="n">across</span> <span class="n">a</span> <span class="n">wide</span> <span class="k">range</span> <span class="k">of</span> <span class="n">sizes</span> <span class="k">and</span> <span class="n">type</span> <span class="n">styles</span> <span class="n">without</span>
+<span class="n">consuming</span> <span class="n">much</span> <span class="n">disk</span> <span class="n">space</span><span class="p">.</span> <span class="n">For</span> <span class="n">desktop</span> <span class="n">publishing</span><span class="p">,</span> <span class="n">such</span> <span class="n">a</span> <span class="k">package</span> <span class="n">is</span> <span class="n">quite</span>
+<span class="n">helpful</span><span class="p">.</span>
+
+<span class="n">Each</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">font</span> <span class="n">scaling</span> <span class="k">package</span> <span class="n">accepts</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">scalable</span> <span class="n">outline</span> <span class="n">font</span>
+<span class="n">formats</span><span class="p">.</span> <span class="n">At</span> <span class="n">the</span> <span class="n">time</span> <span class="n">that</span> <span class="n">you</span> <span class="n">choose</span> <span class="n">a</span> <span class="n">given</span> <span class="n">font</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">renders</span> <span class="n">it</span> <span class="k">as</span> <span class="n">a</span>
+<span class="n">bitmap</span> <span class="n">on</span> <span class="n">the</span> <span class="n">screen</span> <span class="k">in</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">at</span> <span class="n">whatever</span> <span class="n">size</span> <span class="n">you</span> <span class="n">specified</span> <span class="p">(</span><span class="n">up</span> <span class="k">to</span> <span class="m">127</span>
+<span class="n">points</span><span class="p">,</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">internal</span> <span class="n">limitation</span><span class="p">).</span> <span class="n">The</span> <span class="n">same</span> <span class="n">outline</span> <span class="n">font</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">scaled</span>
+<span class="k">and</span> <span class="n">sent</span> <span class="k">to</span> <span class="n">the</span> <span class="n">printer</span><span class="p">,</span> <span class="n">which</span> <span class="n">produces</span> <span class="n">a</span> <span class="n">direct</span> <span class="n">correlation</span> <span class="n">between</span> <span class="n">the</span> <span class="n">screen</span>
+<span class="k">and</span> <span class="n">printed</span> <span class="n">output</span> <span class="p">--</span> <span class="nb">true</span> <span class="n">WYSIWYG</span><span class="p">.</span>
+
+<span class="n">Some</span> <span class="n">printers</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">Hewlett</span><span class="p">-</span><span class="n">Packard</span> <span class="n">LaserJet</span> <span class="n">III</span> <span class="n">series</span> <span class="k">and</span> <span class="n">PostScript</span>
+<span class="n">compatibles</span><span class="p">,</span> <span class="k">include</span> <span class="n">printer</span><span class="p">-</span><span class="n">resident</span> <span class="n">font</span> <span class="n">scaling</span> <span class="n">technology</span><span class="p">.</span> <span class="k">In</span> <span class="n">such</span> <span class="n">cases</span><span class="p">,</span> <span class="n">it</span>
+<span class="n">is</span> <span class="k">not</span> <span class="n">necessary</span> <span class="k">to</span> <span class="n">have</span> <span class="n">a</span> <span class="n">software</span> <span class="k">package</span> <span class="n">provide</span> <span class="n">this</span> <span class="n">functionality</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span>
+<span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">scaled</span> <span class="n">screen</span> <span class="n">fonts</span> <span class="n">are</span> <span class="n">still</span> <span class="n">quite</span> <span class="n">helpful</span><span class="p">.</span> <span class="n">Some</span> <span class="n">packages</span> <span class="n">can</span> <span class="n">provide</span>
+<span class="n">scalable</span> <span class="n">screen</span> <span class="n">fonts</span> <span class="n">that</span> <span class="n">correspond</span> <span class="k">to</span> <span class="n">the</span> <span class="n">resident</span> <span class="n">fonts</span> <span class="k">of</span> <span class="n">these</span> <span class="n">printers</span><span class="p">.</span>
+<span class="k">In</span> <span class="n">this</span> <span class="k">case</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">does</span> <span class="k">not</span> <span class="k">do</span> <span class="n">the</span> <span class="n">printer</span> <span class="n">font</span> <span class="n">scaling</span><span class="p">.</span> <span class="n">It</span> <span class="n">allows</span> <span class="n">the</span>
+<span class="n">printer</span> <span class="k">to</span> <span class="n">scale</span> <span class="n">the</span> <span class="n">printer</span> <span class="n">fonts</span><span class="p">,</span> <span class="k">while</span> <span class="n">it</span> <span class="n">scales</span> <span class="n">only</span> <span class="n">for</span> <span class="n">the</span> <span class="n">display</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">combination</span> <span class="k">of</span> <span class="n">hardware</span> <span class="n">print</span> <span class="n">scaling</span> <span class="k">and</span> <span class="n">corresponding</span> <span class="n">scaled</span> <span class="n">screen</span> <span class="n">fonts</span> <span class="n">is</span>
+<span class="n">an</span> <span class="n">attractive</span> <span class="n">solution</span><span class="p">.</span>
+
+<span class="n">Most</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">scaling</span> <span class="n">packages</span> <span class="n">will</span> <span class="n">work</span> <span class="k">with</span> <span class="n">any</span> <span class="n">display</span><span class="p">,</span> <span class="k">and</span> <span class="n">any</span> <span class="n">printer</span> <span class="n">that</span>
+<span class="n">can</span> <span class="n">accept</span> <span class="n">raster</span> <span class="p">(</span><span class="n">bitmap</span><span class="p">)</span> <span class="n">input</span> <span class="p">(</span><span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">almost</span> <span class="n">anything</span> <span class="n">but</span> <span class="n">a</span> <span class="n">plotter</span><span class="p">).</span> <span class="n">This</span>
+<span class="n">means</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="n">your</span> <span class="n">existing</span> <span class="n">copy</span> <span class="k">of</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">with</span> <span class="n">any</span> <span class="n">Windows</span> <span class="n">display</span> <span class="k">or</span>
+<span class="n">printer</span> <span class="n">driver</span><span class="p">,</span> <span class="k">in</span> <span class="n">combination</span> <span class="k">with</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="n">produce</span> <span class="n">a</span> <span class="n">WYSIWYG</span>
+<span class="n">environment</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">some</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">scaling</span> <span class="n">packages</span> <span class="n">use</span> <span class="n">their</span> <span class="n">own</span> <span class="n">display</span> <span class="k">and</span>
+<span class="n">printer</span> <span class="n">drivers</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="k">not</span> <span class="n">much</span> <span class="k">of</span> <span class="n">a</span> <span class="n">disadvantage</span> <span class="k">as</span> <span class="n">long</span> <span class="k">as</span> <span class="n">the</span> <span class="n">drivers</span>
+<span class="n">support</span> <span class="n">your</span> <span class="n">hardware</span><span class="p">.</span> <span class="n">Check</span> <span class="k">with</span> <span class="n">the</span> <span class="k">package</span> <span class="n">manufacturer</span> <span class="k">to</span> <span class="n">determine</span> <span class="k">if</span> <span class="n">your</span>
+<span class="n">desired</span> <span class="n">printer</span> <span class="k">and</span> <span class="n">display</span> <span class="n">are</span> <span class="n">supported</span><span class="p">,</span> <span class="n">before</span> <span class="n">you</span> <span class="n">purchase</span> <span class="n">any</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">products</span> <span class="n">included</span> <span class="n">here</span> <span class="n">are</span> <span class="n">manufactured</span> <span class="n">by</span> <span class="n">vendors</span> <span class="n">independent</span> <span class="k">of</span> <span class="n">Microsoft</span><span class="p">;</span>
+<span class="n">we</span> <span class="n">make</span> <span class="n">no</span> <span class="n">warranty</span><span class="p">,</span> <span class="n">implied</span> <span class="k">or</span> <span class="n">otherwise</span><span class="p">,</span> <span class="n">regarding</span> <span class="n">these</span> <span class="n">products</span><span class="s1">' performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185572/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185572/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185572/","publisher":null,"image":null,"headline":"Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185572-howto-get-dropped-file-names-using-ole-drag-and-drop">Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185572
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbClipboard kbDragDrop kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL kbDataObject
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Traditionally, developers have used the WM_DROPFILES message to handle files
+dropped from the File Manager or Windows Explorer. This message is sent when the
+user drops a file on the window of an application that has registered itself as
+a recipient of dropped files.
+
+OLE drag and drop supports this same functionality. Both techniques involve
+passing a global HDROP (drop structure handle) from the source to the target.
+WM_DROPFILES passes this handle in the WPARAM value. OLE drag and drop passes
+the HDROP with the data object.
+
+This article demonstrates how to get the dropped file names using OLE drag and
+drop. The information in this article supplements the following Microsoft
+Knowledge Base article:
+
+  Q135299 SAMPLE: Using MFC OLE Drag &amp; Drop to Drag Text Between Windows
+
+MORE INFORMATION
+================
+
+To retrieve the dropped file names from a drop source, modify the sample code
+included with Q135299, "SAMPLE: Using MFC OLE Drag &amp; Drop to Drag Text
+Between Windows" as follows:
+
+Sample Code
+-----------
+
+     // OnDrop is called by OLE DLLs when an item is dropped in a window
+     // that is registered with the OLE DLLs.
+     // 
+     BOOL COleEditDropTarget::OnDrop(CWnd* pWnd, COleDataObject* pDataObject,
+        DROPEFFECT dropEffect, CPoint point )
+     {
+      HGLOBAL  hGlobal;
+      LPCSTR   pData;
+
+      FORMATETC fmtetc =
+     { CF_HDROP, NULL, DVASPECT_CONTENT, -1, TYMED_HGLOBAL };
+      STGMEDIUM stgmed;
+      TCHAR szFileName[_MAX_PATH + 1];
+
+      if(pDataObject-&gt;GetData(CF_HDROP, &amp;stgmed, &amp;fmtetc))
+      {
+          HDROP hdrop = (HDROP)GlobalLock(stgmed.hGlobal);
+
+          if (NULL != hdrop)
+          {
+              UINT nFiles = DragQueryFile(hdrop, (UINT)-1, NULL, 0);
+
+              for(UINT nNames = 0; nNames &lt; nFiles; nNames++)
+              {
+                  ZeroMemory(szFileName, _MAX_PATH + 1);
+                  DragQueryFile
+                      (hdrop, nNames, (LPTSTR)szFileName, _MAX_PATH + 1);
+                  // Do something with szFileName.
+              }
+              GlobalUnlock(hdrop);
+
+          }
+          ReleaseStgMedium(&amp;stgmed);
+        return TRUE;
+
+      } else {
+
+     // Get text data from ColeDataObject.
+     hGlobal=pDataObject-&gt;GetGlobalData(CF_TEXT);
+
+     // Get a pointer to data.
+     pData=(LPCSTR)GlobalLock(hGlobal);
+     ASSERT(pData!=NULL);
+
+     // Set text in the dropped window.
+     ((CEdit*)pWnd)-&gt;SetWindowText(pData);
+
+     // Unlock memory.
+     GlobalUnlock(hGlobal);
+
+     return TRUE;
+     }
+     }
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Robert
+Duke, Microsoft Corporation.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Robert Duke, Microsoft Corporation
+
+
+Additional query words: Drag Drop DragAcceptFiles CF_
+
+======================================================================
+Keywords          : kbole kbClipboard kbDragDrop kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL kbDataObject 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

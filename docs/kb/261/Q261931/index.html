@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261931/","publisher":null,"image":null,"headline":"Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261931-sms-required-hotfixes-before-installing-sms-20-sp2">Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261931
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 22-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you prepare your Systems Management Server (SMS) 2.0 hierarchy for an
+upgrade to SMS 2.0 Service Pack 2 (SP2), you may need to apply two specific
+updates to every SMS 2.0 site server in your existing hierarchy. Please review
+this article thoroughly to determine which updates you need to apply to your
+hierarchy.
+
+There are separate versions of these updates based on the version of SMS 2.0 that
+each site is currently running. There are two updates for SMS 2.0 (build 1239),
+and two updates for SMS 2.0 Service Pack 1 (build 1380) sites. These updates are
+included on the SP2 CD-ROM in the Smsqfe folder. The updates are also included
+in the Web patch download, and are available as separate downloads as noted in
+the Knowledge Base articles that are referenced in the "More Information"
+section of this article.
+
+NOTE: You can obtain SMS 2.0 SP2 at the following Microsoft Web site:
+
+  http://www.microsoft.com/smsmgmt
+
+MORE INFORMATION
+================
+
+You need to apply these hotfixes to your SMS hierarchy if your hierarchy
+consists of multiple sites managing logon points in the same domain. You must
+implement these hotfixes before upgrading any of your sites to SP2. Note that
+there are two sets of hotfixes. There is one set for sites that are running SMS
+2.0 (build 1239), and one set for sites that are running SMS 2.0 SP1 (build
+1380).
+
+If you do not apply these updates, SMS clients may not function properly because
+of different versions of the client components. This condition may cause a
+situation in which the base components are installed by SP2 while the optional
+components are still at an SP1 level. This may cause the client to enter an
+unmanageable state. If this occurs, you may have to reinstall the SMS client
+software on the affected computers to correct this condition.
+
+NOTE: After you apply either the Q251070 (release) or Q249077 (SP1) update, you
+must wait until the Copylog.tcf file is updated on each Logon Point before
+installing SP2. This file is located in the Smslogon\Config folder on each
+domain controller. The Senior Site configured in the hierarchy should update
+this file on an all shared Logon Points. For a description of the Senior Site
+concept, please review the following Microsoft Knowledge Base article:
+
+  Q235726 SMS: Specifying Senior Site for WinNT Logon Point Management
+
+SMS 2.0
+-------
+
+If the site is running SMS 2.0 without SP1 (build 1239), view the following
+Microsoft Knowledge Base articles:
+
+  Q251070 Copylog.tcf Does Not Reflect Site Which Site Last Updated the Logon
+  Point
+
+  Q252718 CCM Avoids Installation Attempts on SP2 Clients
+
+SMS 2.0 SP1
+-----------
+
+If the site is running SMS 2.0 with SP1 (build 1380), view the following
+Microsoft Knowledge Base articles:
+
+  Q249077 SP1: Copylog.tcf Does Not Reflect Which Site Last Updated the Logon
+  Point
+
+  Q252717 SP1: CCM Avoids Installation Attempts on SP2 Clients
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

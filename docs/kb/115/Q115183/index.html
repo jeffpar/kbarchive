@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115183: Running WINHELP.EXE with Command Line Switches | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115183: Running WINHELP.EXE with Command Line Switches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115183/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115183/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115183/","publisher":null,"image":null,"headline":"Q115183: Running WINHELP.EXE with Command Line Switches","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115183-running-winhelpexe-with-command-line-switches">Q115183: Running WINHELP.EXE with Command Line Switches</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115183
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to use certain command-line arguments on the running of
+WINHELP.EXE to go immediately to areas of the help file other than the contents.
+
+MORE INFORMATION
+================
+
+When calling WINHELP.EXE, but before specifying the help file name, use the
+following switches:
+
+   -k  Go to keyword (set up with the K footnote within the help file).
+
+  -n  Go to context number (set up with the # footnote within the help
+      file).
+
+  -i  Go to context ID (set up with the # footnote within the help file
+      using a #defined string).
+
+  -h  Run WINHELP.EXE with the WINHELP.HLP file (no other help file is
+      necessary).
+
+
+EXAMPLES
+--------
+
+The following examples can be tested by typing them into the Run dialog box that
+opens when you choose Run from the File menu in the Program Manager.
+
+To run the file MYHELP.HLP and jump to the keyword "jumphere", type the
+following:
+
+  " WINHELP.EXE -kjumphere myhelp.hlp" (without the quotation marks)
+
+To run the file TEST.HLP and jump to the topic with context ID number 101, type
+the following:
+
+  " WINHELP.EXE -n101 test.hlp" (without the quotation marks)
+
+To run the file CIJUMP.HLP and jump to the topic with context ID "MY_JUMPID"
+(which had previously been set within the .HLP file with #define MY_JUMPID 102),
+type the following:
+
+  " WINHELP.EXE -iMY_JUMPID cijump.hlp" (without the quotation marks)
+
+To run the file "Help on Help", type the following:
+
+  " WINHELP.EXE -h" (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

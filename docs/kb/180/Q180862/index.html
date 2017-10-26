@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180862/","publisher":null,"image":null,"headline":"Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180862-single-form-feed-sent-by-host-on-lu3-print-session-is-ignored">Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180862
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+A single form feed (FF) that is sent by the host on a LU3 printer session is
+ignored by the SNA Print Server.
+
+CAUSE
+=====
+
+The SNA Server Print Service is designed to execute a form feed (FF) included in
+an LU3 print job when any of the following conditions are met:
+
+- If the FF is inserted as the first character after the WCC in a 3270
+  Erase/Write or Erase/Write Alternate command.
+
+- If the FF is located after a valid NL (New Line) order.
+
+- If the FF is located after the last printable character position of any print
+  line.
+
+This is by design according to IBM's 3270 Information Display System manual.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, 3.0 SP2, and 4.0. This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack and the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining these Service Packs, query on the following
+word in the Microsoft Knowledge Base(without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To include form feeds that are not at the beginning of lines, add the following
+registry entry. Start the Windows NT Registry Editor (Regedt32.exe) and find
+this key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaPrint\Parameters\
+
+Add the following entry to this key:
+
+  
+
+  Value Name: DoAllLU3FFs
+  Data Type: REG_SZ
+  String: TRUE
+
+NOTE: If this registry entry exists, it will be used. The only way to disable
+this registry entry is to remove it.
+
+Additional query words: LU3 snaprint
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175278: How to Install Additional Drives on the Shared SCSI Bus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175278: How to Install Additional Drives on the Shared SCSI Bus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175278/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175278/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175278/","publisher":null,"image":null,"headline":"Q175278: How to Install Additional Drives on the Shared SCSI Bus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175278-how-to-install-additional-drives-on-the-shared-scsi-bus">Q175278: How to Install Additional Drives on the Shared SCSI Bus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175278
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 15-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you want to add additional drives to an existing cluster, special procedures
+may be necessary. This article discusses how to add additional drives on a
+shared SCSI bus when the system does not support hot swapping.
+
+MORE INFORMATION
+================
+
+
+Unless your drive cabinet supports hot swapping, you must shut down and turn off
+both cluster nodes to add or replace SCSI drives because the shared SCSI bus is
+disconnected during this procedure. If you Disconnect the bus while the cluster
+is in use, you may experience data loss or other failures. Microsoft recommends
+that you turn off all attached hardware while you perform this procedure.
+
+To add additional drives to an existing cluster:
+
+1. Change the startup values for the Clusdisk device and the Cluster Server
+  service:
+
+   - Change the Startup value for the Cluster Disk device (Microsoft Windows NT
+     4.0) or the Clusdisk device (Microsoft Windows 2000) to Disabled.
+   - Change the Startup value for the Cluster Server service to Disabled.
+
+To do so, use the appropriate method for your version of Microsoft Windows.
+
+Windows NT 4.0
+--------------
+
+  a. Click Start, point to Settings, and then click Control Panel.
+
+  b. Double-click Devices.
+
+  c. In the list of devices, click Cluster Disk, and then click Startup.
+
+  d. Change the setting to Manual, click OK, and then click Yes.
+
+  e. Close the Devices window.
+
+  f. In Control Panel, double-click Services.
+
+  g. In the list of services, click Cluster Server, and then click Startup.
+
+  h. Change the setting to Manual, click OK, and then click Yes.
+
+  i. Close the Services window, and then close Control Panel.
+
+Windows 2000
+------------
+
+  a. Click Start, point to Programs, point to Administrative Tools, and then
+     click Computer Management.
+
+  b. In the left pane, click Device Manager.
+
+  c. On the View menu, click Show Hidden Devices.
+
+  d. In the right pane, under the Non-Plug and Play Drivers branch,
+     double-click Clusdisk.
+
+  e. Click the Driver tab.
+
+  f. In the Type box, click Disabled, and then click OK.
+
+  g. In the left pane, click the plus sign (+) next to "Services and
+     Applications" to expand the branch.
+
+  h. Under the "Services and Applications" branch, click Services.
+
+  i. In the right pane, double-click the Cluster service.
+
+  j. In the "Startup type" box, click Disabled, and then click OK.
+
+  k. Close the Computer Management tool.
+
+2. Shut down both nodes and turn off both computers.
+
+3. Turn off SCSI devices on the shared SCSI bus.
+
+4. Add or replace drives on the shared SCSI bus.
+
+5. Make sure that every device on the shared SCSI bus has a unique SCSI ID.
+
+  NOTE: Remember that the two SCSI host adapters each use a different SCSI ID
+  (usually 6 and 7).
+
+6. Make sure that the bus is terminated properly.
+
+7. Restart node 1 and allow the boot process to complete. Turn on node 2 and
+  press the SPACEBAR when the OS Loader screen appears.
+
+  NOTE: Do not allow Windows NT to start on the second node.
+
+8. On the first node, use Windows NT Disk Administrator (Windisk.exe) to
+  partition and format the drive, and then assign drive letters to the new
+  disks that are available on the shared SCSI bus.
+
+9. Select the partition, click Properties on the Tools menu, and then label the
+  partition to match its corresponding drive letter. For example, the label for
+  drive E drive should be "E". Repeat this for each partition.
+
+10. On the Partition menu, click Configuration, and then click Save.
+
+11. Restore the original startup values for the Clusdisk device and the Cluster
+  Server service:
+
+   - Change the Startup value for the Cluster Disk device or Clusdisk device to
+     System.
+   - Change the Startup value for the Cluster Server service to Automatic.
+
+  To do so, use the appropriate method in step 1 for your version of Windows.
+
+12. Restart node 1, press the SPACEBAR when the OS Loader screen appears to
+  pause the startup process.
+
+13. Select the operating system you want, and then allow Node 2 to start.
+
+  NOTE: Do not allow Windows NT to start on node 1.
+
+14. On the second node, run Windows NT Disk Administrator (Windisk.exe) for
+  Windows NT 4.0 or Disk Management (diskmgmt.msc) for Windows 2000 and
+  Windows .NET, and then assign drive letters to the new disks available on
+  the shared SCSI bus. These drive letters should match the drive labels
+  created in step 9.
+
+15. Restore the original startup values for the Clusdisk device and the Cluster
+  Server service:
+
+   - Change the Startup value for the Cluster Disk device or Clusdisk device to
+     System.
+   - Change the Startup value for the Cluster Server service to Automatic.
+
+  To do so, use the appropriate method in step 1 for your version of Windows.
+
+16. Restart node 2 (allow it to do a full restart).
+
+17. Create a physical disk resource for each new disk using Cluster
+  Administrator and bring the disks online.
+
+18. If there are no errors, select the Windows NT Server operating system on the
+  second node and press ENTER. If there are errors, check the SCSI cabling,
+  termination, and SCSI ID assignment for proper configuration.
+
+19. When the node comes online and appears so in Cluster Administrator, try
+  moving the group to the node. Check for the ability to go online on each
+  node.
+
+NOTE: For additional information, consult Chapter 4 of the MSCS Administrator's
+Guide, or the Support/Books folder on CD-ROM 1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

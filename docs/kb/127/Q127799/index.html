@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127799/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127799/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127799/","publisher":null,"image":null,"headline":"Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127799-files-not-deleted-changes-not-occurring-after-you-run-setup">Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127799
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1994 edition,1994-1995 edition,1995 edition
+Operating System(s): 
+Keyword(s): win31
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bookshelf for Windows versions 1994 edition, 1995 edition 
+- Microsoft Cinemania for Windows 1995 edition 
+- Microsoft Complete Basketball for Windows 1994-1995 edition 
+- Microsoft Encarta 96 Encyclopedia for Windows 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some system files are not removed after the Remove All option has been selected
+from the multimedia Setup program. Some expected changes do not occur when
+selecting Reinstall.
+
+RESOLUTION
+==========
+
+1. Run the program's Setup program.
+
+2. Select the Remove All option and complete the setup removal process.
+
+3. Run the Setup program again, and install the program.
+
+NOTE: Programs that use monthly updates may lose the updates when performing
+these steps.
+
+MORE INFORMATION
+================
+
+1. The Remove All option does not remove the specified entries in the following
+  files:
+
+  System.ini
+  ----------
+
+     [mci]
+     mixer=mcimixer.drv
+     AVIVideo=mciavi.drv
+     MMMovie=mcimmp.drv
+
+     [drivers]
+     mixer=mvmixer.drv
+     wavemapper=msacm.drv
+     MSACM.msadpcm=msadpcm.acm
+     MSACM.msgsm610=msgsm610.acm
+     MSACM.imaadpcm=imaadpcm.acm
+     VIDC.MSVC=msvidc.drv
+     VIDC.RT21=indeo.drv
+     VIDC.CVID=iccvid.drv
+     VIDC.IV31=ir32.dll
+     VIDC.MRLE=msrle.drv
+     VIDC.YVU9=ir21_r.dll
+     VIDC.IV32=ir32.dll
+     IV32=ir32.dll
+     vidc.cram=msvidc.drv
+
+  Win.ini
+  -------
+
+     [mci extensions]
+     avi=AVIVideo
+     mmm=MMMovie
+
+  Windows Folder
+  --------------
+
+     &lt;Mmtitle.ini&gt;
+
+  where &lt;Mmtitle.ini&gt; is the multimedia title's .ini filename, for example
+  Encarta.ini for Encarta.
+
+  NOTES: Please note the following:
+   - Cinemania 1995 does not delete the Cinmania.ini file and Encarta 1995 does
+     not delete the Encarta.ini file.
+
+   - Cinemania 1995 does not reinstall font files.
+
+   - Complete Basketball '94-'95 WILL delete the Bktball.ini file and Bookshelf
+     WILL delete its .ini file.
+
+   - Encarta 96 does not reinstall the fonts provided on the Encarta CD.
+
+  Windows System Folder
+  ---------------------
+
+  No multimedia title system files will be deleted. Many of the compressed
+  Audio, Video for Windows, and OLE system files are shared by other programs.
+  The ACME Setup program cannot determine if other programs will require these
+  files and as a result they are preserved to ensure proper shared component
+  functionality.
+
+2. The Reinstall option only reinstalls the files in the program folder and does
+  not reinstall any files in the Windows folder (usually C:\Windows) or the
+  Windows \System folder. The files in these folders can only be installed
+  during a new installation.
+
+3. The Win.ini and System.ini files entries are created during the initial
+  installation of the multimedia program.
+
+  Win.ini
+  -------
+
+     [mci extensions]
+
+  System.ini
+  ----------
+
+     [mci]
+     [drivers]
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          : win31 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbBookshelfSearch kbEncartaEncycSearch kbCineManiaSearch kbCompleteBasketballSearch kbBookShelf1994 kbBookShelf1995 kbCinemania1995 kbCompleteBasketball1994 kbCompleteBasketball1995 kbEncartaEnCyc1996 kbEncartaEnCyc1995Mac
+Version           : :1994 edition,1994-1995 edition,1995 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

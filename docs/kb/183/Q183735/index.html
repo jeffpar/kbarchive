@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183735: PRB: Saving a File in FrontPage Does a Silent Check In | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183735: PRB: Saving a File in FrontPage Does a Silent Check In" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183735/","publisher":null,"image":null,"headline":"Q183735: PRB: Saving a File in FrontPage Does a Silent Check In","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183735-prb-saving-a-file-in-frontpage-does-a-silent-check-in">Q183735: PRB: Saving a File in FrontPage Does a Silent Check In</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183735
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0,97
+Operating System(s): 
+Keyword(s): kbinterop kbSSafe500 kbSSafe600 kbFrontPage97 kbFrontPage98
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Source Controlled file for editing in FrontPage, and respond
+"No" when prompted to check it out, saving the file checks in any changes that
+were made.
+
+RESOLUTION
+==========
+
+Depending on your working environment, consider the following options:
+
+1. Always check files out before editing them.
+
+2. After opening the file, save it to a different location before editing the
+  file. NOTE: There is no way to automatically enforce either of these options.
+
+3. If a file has been inadvertently checked in, you can use the SourceSafe
+  Explorer to rollback to an earlier version. After doing a rollback, users
+  also have to select 'Recalculate Hyperlinks' to get that rolled- back version
+  out of the Visual SourceSafe (VSS) database into their master Web. Otherwise,
+  the master Web version will still be what was last saved.
+
+STATUS
+======
+
+This behavior is by design. When you save the file, FrontPage performs an
+implicit checkout - update [ASCII 150] checkin, in order to keep the version in
+the SourceSafe database synchronized with the content on the Web.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Using the FrontPage Explorer, open a Source Controlled Web.
+
+2. Open a file that is currently checked in, and select "No" when prompted to
+  check it out.
+
+3. Edit the file and save the changes.
+
+4. Using the SourceSafe Explorer, show the history of the file, and note that a
+  new version was created when the file was saved.
+
+NOTE: The exact behavior depends on the version of the FrontPage Server
+Extensions installed. In certain versions, messages such as "The file
+&lt;filename&gt; has been automatically checked out" are displayed, in others,
+no notification is given.
+
+REFERENCES
+==========
+
+For additional information, please see the FrontPage Server Extensions
+ResourceKit at the following Web site:
+
+  http://www.msdn.microsoft.com
+
+  Select Administration Tasks and Procedures, then Microsoft Visual
+  SourceSafe 5.0 Integration
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q171116 HOW TO: Enable VSS Integration With FrontPage and Visual Interdev
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by David de
+Groot, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbSSafe500 kbSSafe600 kbFrontPage97 kbFrontPage98 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0,97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

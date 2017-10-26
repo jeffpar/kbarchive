@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272680: SNMP Service Does Not Start or Hangs on Shutdown | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272680: SNMP Service Does Not Start or Hangs on Shutdown" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272680/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272680/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272680/","publisher":null,"image":null,"headline":"Q272680: SNMP Service Does Not Start or Hangs on Shutdown","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272680-snmp-service-does-not-start-or-hangs-on-shutdown">Q272680: SNMP Service Does Not Start or Hangs on Shutdown</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272680
+Product(s): Microsoft Windows NT
+Version(s): winnt:1.2,4.0
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+The SNMP service may not start, or may stop responding (hang) on shutdown or
+when you manually stop the service by using the Services tool or the net stop
+snmp command. Also, you may receive the following error message:
+
+  An application error has occurred and a application log is being generated.
+  SNMP.EXE Exception: access violation(0xc0000005), Address: address
+
+CAUSE
+=====
+
+This problem can occur if you previously uninstalled the Systems Management
+Server (SMS) version 1.2 client from your Windows NT Server-based computer. By
+default, SMS 1.2 client Setup installs the Snmpelea.dll file, even if the SNMP
+service is running on the server. Note that this does not occur with SMS 2.0.
+When you uninstall the SMS 1.2 client, the Snmpelea.dll file and its associated
+references in the registry are not removed, and this may cause problems with the
+SNMP service that is still running on the server.
+
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To work around this problem, delete the Snmpelea.dll file after you uninstall the
+client, and then delete its associated registry keys:
+
+1. Delete the %systemroot%\system32\Snmpelea.dll file.
+
+2. Delete the following registry keys, where &lt;REG_SZ:&gt; is the numerical
+  listing of the extension agent:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\SNMP_EVENTS
+
+  HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents\&lt;REG_SZ:&gt;SOFTWARE\Microsoft\SNMP_EVENTS\EventLog
+
+3. Restart the server. Note that if you do not restart the server, event ID 1105
+  ("The SNMP service is ignoring extension agent key
+  SOFTWARE\MICROSOFT\SNMP_EVENTS\EVENTLOG because it is missing or
+  misconfigured") is logged in Event Viewer.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: snmpelea dll
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbSMSSearch kbSMS120
+Version           : winnt:1.2,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

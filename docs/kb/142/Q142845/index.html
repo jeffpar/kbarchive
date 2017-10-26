@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142845: How to Use SQL Functions in *.IDC Scripts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142845: How to Use SQL Functions in *.IDC Scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142845/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142845/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142845/","publisher":null,"image":null,"headline":"Q142845: How to Use SQL Functions in *.IDC Scripts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142845-how-to-use-sql-functions-in-idc-scripts">Q142845: How to Use SQL Functions in *.IDC Scripts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142845
+Product(s): Internet Information Server
+Version(s): 1.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how you can add SQL Server back-end functions to *.IDC
+(Internet Database Connector) files when using ODBC with the Internet Server.
+
+MORE INFORMATION
+================
+
+Files with the .IDC file extension can contain SQL commands that can manipulate
+an ODBC DataSource. Files with the .HTX file extension contain information that
+should be presented to the browser upon completion of the .IDC file execution.
+
+The following is an example *.IDC file called EXAMPLE.IDC. This file calls
+EXAMPLE.HTX upon completion of the SQL commands:
+
+     Datasource: ODBC DataSource
+     Username: sa
+     Template: example.htx
+     RequiredParameters: Field1, Field2
+     SQLStatement:
+     +INSERT INTO Table
+     +(Field1, Field2, Field3, SQLField)
+     +VALUES('%Field1%', '%Field2%', '%Field3%', GETDATE());
+
+Explanation of Fields in the Above EXAMPLE.IDC
+----------------------------------------------
+
+DataSource:
+
+  The datasource line needs to contain the name of the ODBC data source listed
+  in the Control Panel ODBC applet.
+
+Username:
+
+  Username is the name you use to log on to SQL Server.
+
+Template:
+
+  Template specifies the *.HTX file that is displayed when the query is
+  successful.
+
+RequiredParameters:
+
+  The parameters listed after this keyword need to contain values in order for
+  the *.IDC file to run.
+
+SQLStatement:
+
+  This contains the SQL statement as you would input it from the command line
+  to the SQL Server. The only difference between this and a SQL statement is
+  that each line begins with a plus sign (+).
+
+Explanation of SQL Statement
+----------------------------
+
+INSERT INTO:
+
+  SQL commands that insert data into a table.
+
+Table:
+
+  The name of the table where the data is to be placed.
+
+Field1, Field2, Field3, SQLfield:
+
+  These are the names of the fields where you want to place the data in the
+  VALUES statement.
+
+VALUES statement:
+
+  These are the values the get inserted into the table "Table". These are
+  obtained from the name= statements in the &lt;form&gt; section on the HTML
+  page where the data was entered.
+
+Additional query words: prodiis1 internet www http odbc idc
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis100
+Version           : 1.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

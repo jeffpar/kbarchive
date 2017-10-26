@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194608: FIX: Incorrect Code Generated with /Og Optimization | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194608: FIX: Incorrect Code Generated with /Og Optimization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194608/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194608/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194608/","publisher":null,"image":null,"headline":"Q194608: FIX: Incorrect Code Generated with /Og Optimization","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194608-fix-incorrect-code-generated-with-og-optimization">Q194608: FIX: Incorrect Code Generated with /Og Optimization</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194608
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCodeGen kbCompiler kbVC500bug kbVC600bug kbVC600fix
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A code sequence similar to the following generates incorrect code when compiled
+with global (/Og) optimization:
+
+  ( ( ConstantValue &lt;&lt; Variable ) + OptimizableValue );
+
+RESOLUTION
+==========
+
+You can work around this problem by removing global optimization from the
+command line or by disabling global optimization on a per-function basis with
+the optimize pragma.
+
+Another workaround is to simplify the code and use a temporary global variable as
+illustrated in the "More Information" section of this article.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0,
+Service Pack 3 (SP3).
+
+
+MORE INFORMATION
+================
+
+The following code outputs 0 if compiled with /Og and 1 if compiled with /Od.
+
+Sample Code Workaround One
+--------------------------
+
+     #include &lt;iostream&gt;
+     #define  SIZE         (unsigned int)512
+     static unsigned int   new_depth = 1;
+
+     // #pragma optimize("g",off)      // Uncomment for Workaround One.
+     int main()
+     {
+        unsigned int result = ( ( 8 &lt;&lt; new_depth ) +  SIZE - 1 ) / SIZE;
+        std::cout &lt;&lt; "Result = " &lt;&lt; result ;
+        return 0;
+     }
+     // #pragma optimize("g",on)      // Uncomment for Workaround One.
+
+Sample Code Workaround Two
+--------------------------
+
+     #include &lt;iostream&gt;
+     #define  SIZE        (unsigned int)512
+     static unsigned int  new_depth = 1;
+
+     unsigned int result1;
+
+     int main()
+     {
+        result1 = ( 8 &lt;&lt; new_depth );
+        unsigned int result2 = ( ( result1 +  SIZE - 1 ) / SIZE );
+
+        std::cout &lt;&lt; "Result = " &lt;&lt; result2 ;
+        return 0;
+
+     }
+
+REFERENCES
+==========
+
+service pack 3 sp3
+
+Additional query words: compiler
+
+======================================================================
+Keywords          : kbCodeGen kbCompiler kbVC500bug kbVC600bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

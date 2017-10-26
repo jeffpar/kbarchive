@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173093/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173093/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173093/","publisher":null,"image":null,"headline":"Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173093-bug-moving-vbp-file-can-corrupt-references-with-long-paths">Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173093
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbVBp500bug kbVBp600bug kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When moving a Visual Basic 5.0 or 6.0 project from one folder to another, you
+may see corruption to references that include a path longer than approximately
+40 characters (such as DAO 3.5) in the project's .vbp file. On the same drive,
+this problem can occur when one of the folders is at least one level lower in
+the directory tree structure than the other. This problem does not occur when
+saving the project to a different folder within the IDE.
+
+This corruption may also occur when checking a VBP file out of Visual SourceSafe,
+if the file was previously saved and then checked in from a different computer,
+even if the directory structure used to store the project on the other machine
+is identical to that used on your computer.
+
+RESOLUTION
+==========
+
+Avoid moving .vbp files, or save them through the IDE to their new location
+using File | Save As. Attempting to edit and correct the corrupt .vbp file in
+Notepad does not work because the file becomes corrupt again the next time it is
+saved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Corruption of the .vbp file may occur when the project is moved to a different
+directory.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create two new directories as follows: C:\aaaTestThisBug
+  C:\aaaFirstLevel\SecondLevel One of the directories needs to be two or more
+  levels down.
+
+2. Start a new Visual Basic Standard EXE project, Project1.
+
+3. On the Project menu, click References and add at least one reference whose
+  path is longer than approximately 40 characters (The reference to Microsoft
+  DAO 3.5 or 3.51 (Visual Basic 6.0) Object Library is a good one).
+
+4. Save Project1 to C:\aaaTestThisBug and exit Visual Basic. Using Windows
+  Explorer, move the .vbp, .vbw, and .frm files associated with this project to
+  C:\aaaFirstLevel\SecondLevel.
+
+5. Open the .vbp file in Notepad and note that the all of the paths for the
+  references are still correct.
+
+6. Close Notepad.
+
+7. Open Project1 with Visual Basic.
+
+8. Save and Close Project1. Answer "yes" when prompted to save changes.
+
+9. Examine the .vbp file in Notepad. Note that any reference that includes a
+  path longer than approximately 40 characters is likely to be corrupted.
+
+Examples of sections from good and bad .vbp files
+-------------------------------------------------
+
+DAO 3.5 reference from a good file:
+
+  Reference=*\G{00025E01-0000-0000-C000-000000000046}#4.0#0#..\Program
+  Files\Common Files\Microsoft Shared\DAO\DAO350.DLL#Microsoft
+  DAO 3.5 Object Library
+
+DAO 3.5 reference from a bad file:
+
+  Reference=*\G{00025E01-0000-0000-C000-000000000046}#4.0#0#..\..\..\ 
+  Program Files\Common Files\Microsoft Shared\DC:\Program Fi#Microsoft
+  DAO 3.5 Object Library
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500bug kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

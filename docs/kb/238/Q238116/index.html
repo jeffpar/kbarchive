@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238116/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238116/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238116/","publisher":null,"image":null,"headline":"Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238116-prb-accessing-temporary-sql-server-table-result-db_e_notable">Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238116
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 1.5,2.0,2.1,2.5,2.6,3.0,3.5,3.6,3.7
+Operating System(s): 
+Keyword(s): kbDatabase kbMDAC kbODBC kbSQLServ kbODBC300 kbODBC350 kbODBC360 kbGrpDSVCDB kbGrpDSMDA
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for SQL Server, versions 2000.80.194, 3.0, 3.5, 3.6, 3.7, included with:
+   - Microsoft Data Access Components versions 1.5, 2.0, 2.1, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the SQL Server ODBC driver with forward-only server-side cursors in
+trying to access a local temporary SQL Server table that was explicitly created
+using the same ActiveX Data Object (ADO) connection object, the application
+receives the following error message:
+
+  [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name
+  '#temptable12'.
+
+The HRESULT obtained is:
+
+     DB_E_NOTABLE // 0x80040e37
+
+CAUSE
+=====
+
+The SQL Server ODBC driver does not support multiple active recordsets on the
+same connection when using the forward-only cursor. The OLE DB Provider for ODBC
+drivers attempts to work around this limitation by creating a second connection.
+Since temporary tables are only visible to the connection that created it, the
+application fails to find the table and returns a DB_E_NOTABLE HRESULT.
+
+RESOLUTION
+==========
+
+Use one of the following solutions to correct the problem:
+
+- Use ADO client-side cursors.
+
+- Use the Microsoft OLE DB Provider for SQL Server.
+
+- Insert a rs.Release() call in between two execute calls in the Visual C++
+  code, when using forward-only server-side cursors.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce this Error
+-----------------------------
+
+1. Create an empty WinConsole application.
+
+2. Insert the sample code below into a Visual C++ source code file.
+
+3. Set the appropriate values of Server, User ID, and Password to access the
+  default Pubs database on a SQL 7.0 Server.
+
+4. Compile and run the application.
+
+5. Uncomment either of the following lines:
+
+  // conn-&gt;CursorLocation = adUseClient;
+  //rs.Release();
+
+Visual C++ 6.0 Sample Code
+--------------------------
+
+  // Start of TempTbl.cpp
+  //  Database Type : SQL Server 7
+  //  Server: "ServerName" UID: "sa" PWD:""
+  //  This code checks lifetimes of temporary tables in SQL 7.0
+  //  Database : pubs
+  //  TableName: #temptable12
+  // The includes
+  #include &lt;stdio.h&gt;		// Needed for printf.
+  #include &lt;tchar.h&gt;		// Needed for _T() macro.
+  #include &lt;conio.h&gt;		// Needed for _getch().
+  #include &lt;afxdisp.h&gt;  // CString etc...
+  // The #import
+  #undef EOF
+  #import "C:\Program Files\Common Files\System\ADO\msado15.dll" rename_namespace("ado20")
+  #define CATCHCOM(hr)  if ( FAILED( hr ) ) throw( _com_error( hr, NULL ) );
+  // The BSTR's
+  _bstr_t connStrSQL("Driver=SQL Server;Server=ServerName;Database=pubs;UID=sa;PWD=;");
+  // The Coinitialize
+  struct HandleCOM
+  {
+     HandleCOM()  { ::CoInitialize(NULL); }
+     ~HandleCOM() { ::CoUninitialize();   }
+  } _HandleCOM_;
+
+  int main(void)
+  {
+     using namespace ado20;
+     _ConnectionPtr conn;
+     _RecordsetPtr rs;
+     _variant_t vra;
+     HRESULT hr;
+     try
+     {
+  	conn.CreateInstance(__uuidof(Connection));
+  	hr = conn-&gt;Open(connStrSQL,L"",L"",-1);
+  	//conn-&gt;CursorLocation = adUseClient;
+  	CATCHCOM(hr)
+  	rs =conn-&gt;Execute(_bstr_t("Select * into #temptable12 from authors"),&amp;vra,-1);
+  	//rs.Release();
+  	rs = conn-&gt;Execute(_bstr_t("Select * from #temptable12"),&amp;vra,-1);
+     }
+     catch (_com_error &amp;ce)
+     {
+  	CString adoStr,msgStr,tempStr;
+  	// 
+  	// Trace COM error information.
+  	// 
+  	adoStr=_T("");
+  	TRACE( "\nCom Exception Information\n-----------------------------------------------\n" );
+  	TRACE( "Description : %s\n",   (char*) ce.Description()  );
+  	TRACE( "Message     : %s\n",   (char*) ce.ErrorMessage() );
+  	TRACE( "HResult     : 0x%08x\n", ce.Error() );
+  	// 
+  	// Trace ADO exception information only if connection is not null.
+  	// 
+  	if ( NULL != conn )
+  	{
+  	   TRACE( "\nADO Exception Information\n-----------------------------------------------\n" );
+   	   ado20::ErrorPtr err;
+  	   for ( long i=0; i&lt;conn-&gt;Errors-&gt;Count; i++ ) 
+  	   {
+  		tempStr=_T("");
+  		err = conn-&gt;Errors-&gt;Item[i];
+  		TRACE( "Number      : 0x%08x\n", err-&gt;Number );
+  		TRACE( "Description : %s\n",	  (char*) err-&gt;Description );
+  		TRACE( "SQLState    : %s\n",     (char*) err-&gt;SQLState );
+  		TRACE( "Source      : %s\n\n",   (char*) err-&gt;Source );
+  		tempStr.Format("Ado Exception :\n===============\nDescription : %s\nSource : %s\n",(char*) err-&gt;Description,(char*) err-&gt;Source);  
+  		adoStr += tempStr;
+  	   } 
+  	}
+  	msgStr.Format("Com Exception :\n===============\nDescription : %s\nMessage     : %s\n%s",(char*) ce.Description(),(char*) ce.ErrorMessage(), (LPCTSTR) adoStr);  
+  	MessageBox(::GetDesktopWindow(),msgStr,"Error Message", MB_OK);
+     }
+     return 0;
+  }
+  // End of TempTbl.cpp
+
+REFERENCES
+==========
+
+SQL Server Books Online
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbMDAC kbODBC kbSQLServ kbODBC300 kbODBC350 kbODBC360 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC210 kbMDAC210SP2 kbMDAC250 kbODBC370 kbMDAC260 kbmdac270 kbado270 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch
+Version           : :1.5,2.0,2.1,2.5,2.6,3.0,3.5,3.6,3.7
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93215: Making Enter Key in Directory List Box Act Like Double-Click | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93215: Making Enter Key in Directory List Box Act Like Double-Click" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93215/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93215/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93215/","publisher":null,"image":null,"headline":"Q93215: Making Enter Key in Directory List Box Act Like Double-Click","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93215-making-enter-key-in-directory-list-box-act-like-double-click">Q93215: Making Enter Key in Directory List Box Act Like Double-Click</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93215
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic for MS-DOS 1.0 
+- Microsoft Visual Basic Standard Edition for Windows, versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you double-click an item in a directory list box control, it opens the
+directory and displays its subdirectories.
+
+The directory list box control ignores the Enter key by default. To cause a
+directory list box to treat the Enter key the same way as a double-click, set
+the Path property to List(ListIndex) from within the KeyPress event handler.
+
+MORE INFORMATION
+================
+
+The following code shows how to cause a directory list box to open the selected
+directory when the user presses the ENTER key. This code causes a Change event,
+just as when you double-click an item.
+
+     Sub Dir1_KeyPress (KeyAscii As Integer)
+        If KeyAscii = 13 Then
+           Dir1.Path = Dir1.List(Dir1.ListIndex)
+        End If
+     End Sub
+
+If your form contains a command button with the Default property set to True,
+pressing the ENTER key clicks the command button instead of firing the KeyPress
+event. In this case, set the Path property to List(ListIndex) from within the
+button Click event handler. For example:
+
+     Sub Command1_Click ()
+        Dir1.Path = Dir1.List(Dir1.ListIndex)
+     End Sub
+
+Additional reference(s):
+
+Chapter 18, "Using the File-System Controls" of the "Microsoft Visual Basic for
+Windows Programmer's Guide"
+
+Chapter 10, "Using the File-System Controls" of the "Microsoft Visual Basic for
+MS-DOS Programmer's Guide"
+
+Additional query words: 1.00 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB300Search kbVB300 kbZNotKeyword3 kbVB100DOS
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248364/","publisher":null,"image":null,"headline":"Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248364-updating-mime-types-with-adsutilvbs-results-corrupted-mime-type">Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248364
+Product(s): Internet Information Server
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbiis400 kbiis500
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are creating or updating Mime Types with the Visual Basic Script
+ADSUTIL.vbs that ships with Microsoft Internet Information Server (IIS) 4.0 and
+above, the script can lead to a corrupted Mime Type Metabase entry.
+
+CAUSE
+=====
+
+There is an error in function MimeMapSet of the ADSUTIL.vbs script:
+
+  Function MimeMapSet(ObjectPath, ObjectParameter, MachineName)
+         .
+         .   (some lines removed)
+         .
+
+          ' Fill the list with mime entries
+          For MimeEntryIndex = 0 To UBound(MimeMapList)
+
+                  MimeStr = Args(2 + MimeEntryIndex)
+                  MimeOutPutStr = MimeOutPutStr &amp; """" &amp; MimeStr &amp; """ "
+
+                  Set MimeEntry = CreateObject("MimeMap")
+
+  ERROR --&gt;       MimeEntry.MimeType = Right(MimeStr, InStr(MimeStr, ",") - 1)
+                  MimeEntry.Extension = Left(MimeStr, InStr(MimeStr, ",") - 1)
+
+                  Set MimeMapList(MimeEntryIndex) = MimeEntry
+          Next
+
+         .
+         .   (some lines removed)
+         .
+  End Function
+
+The script line with the ERROR contains a wrong string calculation
+
+RESOLUTION
+==========
+
+Replace the line starting with "ERROR" in the "Cause" section with the following
+code:
+
+                  MimeEntry.MimeType = Right(MimeStr, len(MimeStr) - InStr (MimeStr, ","))
+
+Now you can use the ADSUTIL.vbs script to update your Mime types. The following
+example shows how to replace the MimeMap of the Default Web Site with a new one
+that lists two Mime types:
+
+  cscript adsutil set w3svc/1/root/MimeMap ".hmtlx,text/html" ".htmla,text/html"
+
+MORE INFORMATION
+================
+
+
+REFERENCES
+==========
+
+More information on the ADSUTIL.vbs script can be found in:
+
+  Q240225 Description of Adsutil and MetaEdit Used to Modify the Metabase
+
+Additional query words:
+
+======================================================================
+Keywords          : kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

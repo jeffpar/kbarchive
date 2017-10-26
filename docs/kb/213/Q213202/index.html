@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/213/Q213202/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/213/Q213202/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/213/Q213202/","publisher":null,"image":null,"headline":"Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q213202-xadm-event-30-appears-when-a-program-is-accessing-the-log-files">Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q213202
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 01-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The information store may stop unexpectedly and the following events may appear
+in the event log:
+
+  Event ID: 30
+  Source: EDB
+  Type: Error
+  Category: Logging/Recovery
+  Description: MSExchangeIS ((425)) Unable to create the log. The drive may be
+  read-only or out of disk space. Error -1032.
+
+  -and-
+
+  Event ID: 1111
+  Source: MSExchangeIS
+  Type: Error
+  Category: None
+  Description: An error occurred while writing to the database log file.
+  Attempting to stop the Microsoft Exchange Information Store.
+
+CAUSE
+=====
+
+This problem can occur when another program prevents Exchange Server from
+accessing the log files. For example, an anti-virus program or file management
+utility may be accessing the log files, which prevents Exchange Server from
+accessing them.
+
+WORKAROUND
+==========
+
+To work around this problem, quit all programs that may be accessing the log
+files. This includes anti-virus programs, file and disk management utilities,
+and other programs that keep files open for an extended period of time.
+
+If you determine that an anti-virus program was accessing the log files, you may
+be able to prevent this problem from occurring by configuring the program so
+that it does not scan the folders in which the log files are located. By
+default, the log files are located in the Exchsrvr\Mdbdata and Exchsrvr\Dsadata
+folders. In addition, if the program is not completely compatible with Exchange
+Server, you may be able to prevent this problem from occurring by obtaining an
+updated version of the program, or a different anti-virus program, that is
+completely compatible with Exchange Server.
+
+MORE INFORMATION
+================
+
+There are several other conditions that may prevent Exchange Server from writing
+to the log files, including the following:
+
+- There is not enough free disk space on the drive where the log files are
+  located.
+- The necessary permissions have not been assigned on the drive or folder where
+  the log files are located.
+- The log files do not exist.
+
+However, the -1032 error (jet_errFileAccessDenied) in the first event typically
+indicates that another program has the log files open, which is preventing
+Exchange Server from accessing the files.
+
+Additional query words: 4294966264
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153569/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153569/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153569/","publisher":null,"image":null,"headline":"Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153569-howto-get-a-typelib-tlb-file-for-a-visual-basic-ole-server">Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153569
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create an OLE or ActiveX server using Visual Basic, a separate Type
+library file (.TLB) is not automatically created. By default, the type library
+for the OLE server is compiled into the executable or .DLL file. However, if you
+choose to create "Remote Server Support Files" when you build your server, a TLB
+file will be generated
+
+NOTE: The ability to create Remote Server Support Files is provided only by the
+Enterprise versions of Microsoft Visual Basic.
+
+MORE INFORMATION
+================
+
+Visual Basic 4.0
+----------------
+
+1. Open the project for your server in Visual Basic.
+
+2. Click Make EXE File (or Make OLE DLL) on the File menu.
+
+3. In the Make EXE (or Make OLE DLL) dialog, click Options.
+
+4. Check "Remote Server Support Files".
+
+Visual Basic 5.0 and 6.0
+------------------------
+
+1. Open the project for your server in Visual Basic.
+
+2. Click Properties on the Project menu.
+
+3. Click the Component tab and check "Remote Server Files" and click OK.
+
+4. Build your server as usual.
+
+  NOTE: This check box will be enabled only if you are creating an accessible
+  OLE server with your current project; that is, only if you have at least one
+  Class Module in the project whose Public property has been set to True.
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbCompiler
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

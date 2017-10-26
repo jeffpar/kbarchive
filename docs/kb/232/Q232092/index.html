@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232092: BUG: In-Top-Level Form Appears to Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232092: BUG: In-Top-Level Form Appears to Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232092/","publisher":null,"image":null,"headline":"Q232092: BUG: In-Top-Level Form Appears to Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232092-bug-in-top-level-form-appears-to-hang">Q232092: BUG: In-Top-Level Form Appears to Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232092
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbContainer kbDatabase kbvfp500aBUG kbvfp600bug KbDBFDBC kbGrpDSFox
+Last Modified: 27-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a field validation rule fires while running an In-Top-Level form that is
+modal, the field validation message box will appear behind the In-Top-Level
+form. The message box cannot be seen, so it will appear as if the form is
+non-operational until either the ENTER or ESCAPE key is pressed. If the
+In-Top-Level form is modeless, then the field validation message box appears on
+top of the form.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Execute the following code in the Command window:
+
+       CREATE DATABASE mydata
+       CREATE TABLE mydata1 (fld1  c(10) ;
+               CHECK(fld1 &lt; "z") ;
+               ERROR 'Enter a character that comes before "z".')
+       APPEND BLANK
+
+2. Copy the following code into a prg called field_val1:
+
+       OPEN DATABASE mydata
+       USE mydata1 SHARED
+
+       PUBLIC oform1
+       oform1=NEWOBJECT("form1")
+       oform1.Show
+
+       DEFINE CLASS form1 AS form
+
+                       Height = 296
+                       Width = 415
+                       ShowWindow = 2
+                       AutoCenter = .T.
+                       Caption = "Top-Level Form"
+                       Name = "Form1"
+
+                       ADD OBJECT command1 AS commandbutton WITH ;
+                               Top = 132, ;
+                               Left = 132, ;
+                               Height = 27, ;
+                               Width = 120, ;
+                               Caption = "Do Field_val2.prg", ;
+                               Name = "Command1"
+
+                       PROCEDURE command1.Click
+                               DO field_val2.prg
+                       ENDPROC
+       ENDDEFINE
+
+3. Place this code into a prg called field_val2:
+
+       PUBLIC oform2
+
+       OPEN DATABASE mydata
+       USE mydata1 SHARED
+
+       oform2=NEWOBJECT("form2")
+       oform2.Show
+       RETURN
+
+       DEFINE CLASS form2 AS form
+
+                       Height = 260
+                       Width = 375
+                       ShowWindow = 1
+                       AutoCenter = .T.
+                       Caption = "In-Top-Level Form"
+                       WindowType = 1
+                       Name = "Form2"
+
+                       ADD OBJECT txtfld1 AS textbox WITH ;
+                               Top = 55, ;
+                               Width = 79, ;
+                               ControlSource = "mydata1.fld1", ;
+                               Height = 23, ;
+                               Left = 140, ;
+                               Name = "txtFld1"
+       ENDDEFINE
+
+4. Run the field_val1.prg, selecting the "Do field_val2.prg" command button.
+
+5. Type the letter ""z" (without the quotation marks)" in the text box and press
+  the ENTER key. Note that the form seems to freeze, and pressing the ENTER or
+  ESCAPE key is the only way to release the field validation's message box and
+  return to the form.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbContainer kbDatabase kbvfp500aBUG kbvfp600bug KbDBFDBC kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

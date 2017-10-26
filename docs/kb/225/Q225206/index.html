@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q225206: XCON: Multiple Servers Can’t Send to Another Server in Same Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q225206: XCON: Multiple Servers Can’t Send to Another Server in Same Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/225/Q225206/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/225/Q225206/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/225/Q225206/","publisher":null,"image":null,"headline":"Q225206: XCON: Multiple Servers Can’t Send to Another Server in Same Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q225206-xcon-multiple-servers-cant-send-to-another-server-in-same-site">Q225206: XCON: Multiple Servers Can’t Send to Another Server in Same Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q225206
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 20-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to provide some tips on basic troubleshooting of
+mail delivery problems caused by recent network changes.
+
+MORE INFORMATION
+================
+
+Problem
+-------
+
+After working properly for some time, the Exchange Server Message Transfer Agent
+(MTA) may have difficulties sending messages to other servers in the same
+Exchange Server site. This may be because the Exchange Server computer's
+connection to the network infrastructure has changed. The following events may
+be logged when the network connectivity has been changed, and the MTA
+experiences remote procedure call (RPC) errors when trying to connect to other
+Exchange Servers computers:
+
+  Application Log Events:
+
+  Event ID: 1153
+  Description:
+  An interoperability error occurred. A reliable transport service element
+  (RTSE) error occurred. Incorrect session protocol data unit (SPDU).
+  SPDU ID 29, SPDU field in error 41. [PLATFORM RTSE 34 151](14)
+
+  Event ID: 1209
+  Description:
+  Unable to recognize an internal message identifier (LPI) from entity. The
+  incorrect LPI is 108-1-5. Control block index 32. [PLATFORM KERNEL 27 62]
+  (14)
+
+  Event ID: 1198
+  Description:
+  An error occurred while processing an association to entity.
+  Presentation error: state check failure. Current state 0, service type 20,
+  service flavor 2 Control block index 33. The association will be terminated
+  and restarted if necessary. [PLATFORM KERNEL 31 108] (14)
+
+  Event ID: 1222
+  Description:
+  An error occurred while processing an association with entity. Session error:
+  state check failure. Current state 7. NIST defined current event 6. Control
+  block index 33. The association will be terminated and restarted if
+  necessary. [PLATFORM KERNEL 31 82] (14)
+
+  Event ID 1001:
+  There has been an association error with entity:. The internal connection
+  handle (LPT) is incorrect. The incorrect LPI is 1-13-33.
+  Control block index 2004 [PLATFORM RTSE 34 146] (14)
+
+  Event ID 9277: The MTA has issued an RPC Cancel call for thread 1, Locality
+  Table
+  Index: 192, Time (ms): 1318100, Cancel result: 0 [RESFW01 MtaBind
+  ncacn_ip_tcp:166.35.134.1[1092] BASE IL] (14)
+
+  Event ID: 9322
+  Description:
+  An interface error has occurred. An MtaBindBack over RPC has failed.
+  Locality Table (LTAB) index: 213, NT/MTA error code: 9260. Comms error BASE
+  IL, Bind error INCOMING RPC, Remote Server Name 106, Protocol String 507 [%7
+  %8 %9 %10] (14)
+
+  Event ID: 25
+  Description:
+  An internal error occurred while transferring a message or report.
+  [2474Receive RT-TRANSFER ind Send - pop-mta has the turn MTA XFER-IN 21 58]
+  (14)
+
+  Event ID: 1131
+  Description:
+  An interoperability error occurred with entity
+  /O=ORG/OU=USAE001/CN=CONFIGURATION/CN=SERVERS/CN=BRB45/CN=MICROSOFT MTA. A
+  reliable transport service element (RTSE) error occurred. There is an
+  incorrect internal connector handle (LPI) on the message. The incorrect LPI
+  is 1-13-37. Control block index 2004. [PLATFORM RTSE 33 147] (14)
+
+The MTA may log the above events when the Exchange Server computer's connection
+to the network infrastructure is unreliable.
+
+Examples of where network configuration may cause message delivery problems:
+
+- The Exchange Server computer has been moved to a new Ethernet switch port
+  that auto-senses network speed. However, the Exchange Server computer's
+  network interface card (NIC) is configured to force full-duplex communication
+  at 100-megabit network transfer speeds.
+
+- Both the Ethernet switch port and the Exchange Server computer's NIC are
+  configured to force 100-MB full-duplex communication. However, the Ethernet
+  switch or the network card may be having trouble communicating at that rate
+  or using full-duplex transmissions.
+
+The following are some tips to troubleshoot network connectivity as a cause for
+message delivery problems:
+
+1. If there is another nearly identical Exchange Server computer connected to
+  the same model of Ethernet switch as the problem server, try trading the
+  Exchange Server computers' switch ports. If after doing so, the problem
+  server can successfully send and receive mail, compare the configurations of
+  the two Ethernet switch port for differences.
+
+2. If step 1 does not resolve the issue, then compare the two Exchange Server
+  computers' network card configurations to see if there are differences. Also
+  verify that the same version or date of the network card driver is being used
+  on both servers. Change the problem server's network card configuration to be
+  the same as that of the working Exchange Server computer.
+
+3. If there is not an identical working Exchange Server computer to examine for
+  comparisons or if mail flow must be established immediately, connect the
+  problem Exchange Server computer to a half-duplex 10-MB Ethernet switch port
+  or hub to see if mail flow can be established.
+
+In the Exchange Server's system event log, you may observe the following event
+IDs:
+
+  Event ID: 5716
+  Description:
+  The partial synchronization replication of the SAM database from the primary
+  domain controller failed with the following error: "The remote procedure call
+  failed."
+
+  Event ID: 3013
+  Description:
+  The redirector has timed out a request to Server01.
+
+  Event ID: 5719
+  Description:
+  No Windows NT Domain Controller is available for domain LCORP. (This event is
+  expected and can be ignored when booting with the 'No Net' Hardware Profile.)
+  The following error occurred: "There are currently no logon servers available
+  to service the logon request."
+
+These events indicate that the Windows NT services such as the replication
+service are experiencing similar difficulties using the network.
+
+Additional query words: 1209 1198 1131 25 1222 9322 9277 5719 5716 MSExchangeMTA
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158019/","publisher":null,"image":null,"headline":"Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158019-sms-quick-windows-viewer-unavailable-on-rc-french-winnt-client">Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158019
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,1.2 SP1
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 1.2 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Quick Windows Viewer remains unavailable when you try to remotely control a
+computer running Windows NT 4.0 (Build 1381, U.S. or French version) that is
+both configured with the French Regional Settings and located in a domain other
+than the one containing the computer running Systems Management Server 1.2 (U.S.
+or French version).
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions are true:
+
+- Either the Windows NT 4.0 client or the computer running Systems Management
+  Server on Windows NT 4.0 are configured with the French regional settings.
+
+- These two computers are located in different domains, without a trust
+  relationship.
+
+- These two computers attempt to use the same user account with a different
+  password.
+
+WORKAROUND
+==========
+
+To work around this problem, do any of the following:
+
+- Use the same user account and password.
+
+- Use the trust relationship (for example, DOMAIN2 trusts DOMAIN1) and include
+  the DOMAIN1\MFST user account to the local administrator's group of DOMAIN2.
+
+- Use the English regional settings.
+
+
+Additional query words: SP1
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS120SP1
+Version           : :1.2,1.2 SP1
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

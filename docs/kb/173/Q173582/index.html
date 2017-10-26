@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173582/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173582/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173582/","publisher":null,"image":null,"headline":"Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173582-howto-using-ole-automation-to-display-outlook-from-vfp">Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173582
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,6.0,97,97sp1,97sp2
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300 kbvfp300b kbvfp600
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may want to display Microsoft Outlook from Visual FoxPro to allow users to
+read or send messages or to open other folders in Outlook. This article
+demonstrates how to do this.
+
+MORE INFORMATION
+================
+
+The Outlook object provides the functionality to control data stored in the
+Outlook folders, but there is limited functionality to manipulate Outlook
+itself. Since you probably want to interact with the data stored in Outlook, you
+need to create a reference to the Messaging Application Programming Interface
+(MAPI) folders where Outlook stores all of its information. Do this by setting a
+variable to the "Namespace" object.
+
+The following code creates and displays an instance of Outlook. Visual FoxPro for
+Windows pauses execution as long as the user has the Outlook application on top
+using the GetActivewindow API function call. If the Visual FoxPro application
+window is brought on top, then the code forces Outlook to close:
+
+     oOutlookObj = CREATEOBJECT("Outlook.Application")
+     oNamespace = oOutlookObj.GetNamespace("MAPI")
+     oFolder = oNamespace.GetDefaultfolder(6)   &amp;&amp; See below for other values
+     oFolder.Display
+
+     * Code to pause FoxPro while Outlook window is on top
+     IF NOT 'FOXTOOLS' $ SET('LIBRARY')
+        SET LIBRARY TO SYS(2004)+"FoxTools"
+     ENDIF
+     FoxWind = MAINHWND()
+     GetActive=RegFn('GetActiveWindow','','I') &amp;&amp; Determine if FoxPro is
+                                               &amp;&amp; on top
+     DO WHILE .T.    &amp;&amp; Keep looping until the ActiveWindow = FoxWind
+        IF FoxWind = CallFn(GetActive)
+           EXIT
+        ENDIF
+     ENDDO
+     SET LIBRARY TO
+
+     oOutlookObj.Quit
+
+The GetDefaultfolder method has several values that open different folders in
+Outlook. The list below provides the default folder values.
+
+  Folder Name      Value
+  ----------------------
+  Deleted Items      3
+  Outbox             4
+  Sent Items         5
+  Inbox              6
+  Calendar           9
+  Contacts          10
+  Journal           11
+  Notes             12
+  Tasks             13
+
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Dean Christopher, Microsoft Corporation
+
+
+REFERENCES
+==========
+
+Microsoft Outlook Visual Basic Help
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300 kbvfp300b kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS:3.0,3.0b,6.0,97,97sp1,97sp2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

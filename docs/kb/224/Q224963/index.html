@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224963/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224963/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224963/","publisher":null,"image":null,"headline":"Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224963-using-enhanced-script-tags-for-includes">Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224963
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Services (IIS) version 5.0 adds many new Active
+Server Pages (ASP) capabilities. This article describes how to use the new
+<span class="nt">&lt;SCRIPT&gt;</span> tag syntax to include ASP code in another page.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+Previous versions of IIS allowed an ASP page to include the contents of another
+file using code similar to the following:
+
+  <span class="c">&lt;!--#include file="FILE1.INC"--&gt;</span>
+  <span class="c">&lt;!--#include virtual="/folder/FILE2.INC"--&gt;</span>
+
+IIS 5.0 has extended the server-side <span class="nt">&lt;SCRIPT&gt;</span> tag to include a new SRC
+attribute as an alternative method to include another page. The new syntax may
+then look similar to the following:
+
+  <span class="nt">&lt;SCRIPT</span> <span class="na">LANGUAGE=</span><span class="s">"VBSCRIPT"</span> <span class="na">RUNAT=</span><span class="s">"SERVER"</span>
+  <span class="na">SRC=</span><span class="s">"FILE.INC"</span><span class="nt">&gt;&lt;/SCRIPT&gt;</span>
+
+All code in the included page appears to the scripting engine as though it were
+between the <span class="nt">&lt;SCRIPT&gt;</span> and <span class="nt">&lt;/SCRIPT&gt;</span> tags. Therefore, unlike the
+#include directive, your included page should consist of raw code only.
+
+  For example, consider the following #include statement:
+
+  <span class="c">&lt;!--#include file="file.inc"--&gt;</span>
+
+  This statement would need to include a page similar to the following:
+
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">For</span> <span class="na">X =</span><span class="err"> </span><span class="s">1</span> <span class="na">To</span> <span class="na">5</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">p</span><span class="nt">&gt;</span>Howdy!<span class="nt">&lt;/p&gt;</span>"
+    Next
+  %&gt;
+
+  Now consider the following <span class="nt">&lt;SCRIPT&gt;</span> statement:
+
+  <span class="nt">&lt;SCRIPT</span> <span class="na">LANGUAGE=</span><span class="s">"VBScript"</span> <span class="na">RUNAT=</span><span class="s">"SERVER"</span>
+  <span class="na">SRC=</span><span class="s">"file.inc"</span><span class="nt">&gt;&lt;/SCRIPT&gt;</span>
+
+  This page would need to include a page similar to the following:
+
+  For X = 1 To 5
+    Response.Write "<span class="nt">&lt;p&gt;</span>Howdy!<span class="nt">&lt;/p&gt;</span>"
+  Next
+
+  The <span class="nt">&lt;SCRIPT&gt;</span> example is treated by ASP as though the parent page
+  contains the following syntax:
+
+  <span class="nt">&lt;SCRIPT</span> <span class="na">LANGUAGE=</span><span class="s">"VBScript"</span> <span class="na">RUNAT=</span><span class="s">"SERVER"</span> <span class="na">SRC=</span><span class="s">"file.inc"</span><span class="nt">&gt;</span>
+  For X = 1 To 5
+    Response.Write "<span class="nt">&lt;p&gt;</span>Howdy!<span class="nt">&lt;/p&gt;</span>"
+  Next
+  <span class="nt">&lt;/SCRIPT&gt;</span>
+
+  Note: No actual code should placed between the <span class="nt">&lt;SCRIPT&gt;</span> and
+  <span class="nt">&lt;/SCRIPT&gt;</span> tags in the parent page, as it will be ignored.
+
+The SRC attribute can use either relative or virtual paths, as shown in the
+following table:
+
+  
+  +-------------------------------------+
+  | Path Style | Example Syntax         | 
+  +-------------------------------------+
+  | Relative   | SRC="file.ext"         | 
+  +-------------------------------------+
+  | Relative   | SRC="folder\file.ext"  | 
+  +-------------------------------------+
+  | Virtual    | SRC="\folder\file.ext" | 
+  +-------------------------------------+
+  | Virtual    | SRC="/folder/file.ext" | 
+  +-------------------------------------+
+
+The following ASP code demonstrates how to use the new <span class="nt">&lt;SCRIPT&gt;</span> syntax to
+mix server-side and client-side scripting.
+
+1. Save the following ASP page as "ScriptTest.asp" to a Web folder with Script
+  Access enabled:
+
+  <span class="nt">&lt;</span><span class="err">%@</span><span class="na">LANGUAGE=</span><span class="s">"VBSCRIPT"</span><span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Enhanced SCRIPT Example<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>Enhanced SCRIPT Example<span class="nt">&lt;/h2&gt;</span>
+
+  <span class="nt">&lt;p</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"GET"</span> <span class="na">name=</span><span class="s">"objForm"</span>
+  <span class="na">action=</span><span class="s">"&lt;%=Request.ServerVariables("</span><span class="na">URL</span><span class="err">")%</span><span class="nt">&gt;</span>"&gt;
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"Message"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;SCRIPT</span> <span class="na">LANGUAGE=</span><span class="s">"VBScript"</span> <span class="na">RUNAT=</span><span class="s">"SERVER"</span>
+  <span class="na">SRC=</span><span class="s">"server.inc"</span><span class="nt">&gt;&lt;/SCRIPT&gt;</span>
+
+  <span class="nt">&lt;SCRIPT</span> <span class="na">LANGUAGE=</span><span class="s">"JavaScript"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!--#include file="client.inc"--&gt;</span>
+  <span class="nt">&lt;/SCRIPT&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+2. Save the following code as "Server.inc" to the same folder:
+
+  Dim strMessage
+  strMessage = Request.QueryString("Message")
+  If strMessage <span class="nt">&lt;&gt;</span> "" Then
+    Response.Write vbCrLf <span class="err">&amp;</span> "<span class="nt">&lt;script </span><span class="na">for=</span><span class="s">""</span><span class="na">window</span><span class="err">""</span> <span class="na">event=</span><span class="s">""</span><span class="na">onLoad</span><span class="err">""</span> <span class="na">language=</span><span class="s">""</span><span class="na">JavaScript</span><span class="err">""</span><span class="nt">&gt;</span><span class="s2">"
+    Response.Write vbCrLf &amp; "</span><span class="nx">objForm</span><span class="p">.</span><span class="nx">Message</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">'" &amp; strMessage &amp; "'</span><span class="p">;</span><span class="s2">"
+    Response.Write vbCrLf &amp; "</span><span class="nx">showMessage</span><span class="p">(</span><span class="s1">'" &amp; strMessage &amp; "'</span><span class="p">);</span><span class="s2">"
+    Response.Write vbCrLf &amp; "</span><span class="nt">&lt;/script&gt;</span>"
+  End If 
+
+3. Next, save the following code as "client.inc" to the same folder:
+
+  function showMessage(strText) {
+     alert(strText)
+  }
+
+Notes:
+
+- When you first browse "ScriptTest.asp," the form is displayed and the
+  client-side function is not called.
+- When you submit text to the page, the server-side script outputs another
+  client-side function that displays the submitted text in the form's input box
+  and in a pop-up window.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

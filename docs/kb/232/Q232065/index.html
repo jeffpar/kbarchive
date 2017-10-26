@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232065: How to Use ASP to Create a DHTML Table of Contents from an INI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232065: How to Use ASP to Create a DHTML Table of Contents from an INI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232065/","publisher":null,"image":null,"headline":"Q232065: How to Use ASP to Create a DHTML Table of Contents from an INI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232065-how-to-use-asp-to-create-a-dhtml-table-of-contents-from-an-ini">Q232065: How to Use ASP to Create a DHTML Table of Contents from an INI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232065
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft IIS and Active Server Pages (ASP) can be used to create Dynamic HTML
+(DHTML) pages for use with Microsoft Internet Explorer version 4.0 and later.
+This article explains how to create a dynamic table of contents from a .ini file
+with a list of URLs.
+
+MORE INFORMATION
+================
+
+Note: Microsoft provides programming examples for illustration only, without
+warranty either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The following example creates a DHTML table of contents from a .ini file, which
+is formatted as described in the steps below.
+
+1. Save the following ASP code as "Links.inc" in the root of your Web server:
+
+  <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"JavaScript"</span><span class="nt">&gt;</span>
+  <span class="o">&lt;!--</span>
+  <span class="kd">function</span> <span class="nx">mouseOverLink</span><span class="p">(</span><span class="nx">objLink</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nx">objLink</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">textDecorationUnderline</span> <span class="o">=</span> <span class="s1">'True'</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">mouseOutLink</span><span class="p">(</span><span class="nx">objLink</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nx">objLink</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">textDecorationNone</span> <span class="o">=</span> <span class="s1">'True'</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">mouseClickLink</span><span class="p">(</span><span class="nx">objItem</span><span class="p">)</span>
+  <span class="p">{</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">objItem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span><span class="s1">''</span><span class="p">)</span>
+        <span class="nx">objItem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">'none'</span><span class="p">;</span>
+     <span class="k">else</span>
+        <span class="nx">objItem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//--&gt;</span>
+  <span class="nt">&lt;/script&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span>
+     <span class="na">With</span> <span class="na">Response</span>
+        <span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">ul</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> VbCrLf
+        Dim objLinkFSO, objLinkFILE, objLinkTEMP
+        Dim objLinkSECT, objLinkTITLE, objLinkHREF
+        Dim intLinkSectionCount
+         Set objLinkFSO = Server.CreateObject("Scripting.FileSystemObject")
+        Set objLinkFILE = objLinkFSO.OpenTextFile(Server.MapPath("./") <span class="err">&amp;</span> "\links.ini", 1, FALSE, 0)
+        intLinkSectionCount = 0
+        Do While Not objLinkFILE.AtEndOfStream
+           objLinkTEMP = Trim(objLinkFILE.ReadLine)
+           If Left(objLinkTEMP,1) = "[" Then
+              objLinkSECT = Trim(Mid(objLinkTEMP,2,Len(objLinkTEMP) - 2))
+              If intLinkSectionCount Then
+                 .Write Chr(9) <span class="err">&amp;</span> Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;/ul&gt;</span>" <span class="err">&amp;</span> vbCrLf
+                 .Write Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;/li&gt;</span>" <span class="err">&amp;</span> vbCrLf
+              End If
+              intLinkSectionCount = intLinkSectionCount + 1
+              .Write Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;li&gt;&lt;span</span> <span class="na">onMouseOver=</span><span class="s">""</span><span class="na">mouseOverLink</span><span class="err">(</span><span class="na">this</span><span class="err">);"""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">onMouseOut=</span><span class="s">""</span><span class="na">mouseOutLink</span><span class="err">(</span><span class="na">this</span><span class="err">);"""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">onClick=</span><span class="s">""</span><span class="na">mouseClickLink</span><span class="err">(</span><span class="na">LinkSection</span><span class="err">"</span> <span class="err">&amp;</span> <span class="na">intLinkSectionCount</span> <span class="err">&amp;</span> <span class="err">");""</span><span class="nt">&gt;</span>"
+              .Write objLinkSECT <span class="err">&amp;</span> "<span class="nt">&lt;/span&gt;</span>" <span class="err">&amp;</span> VbCrLf
+              .Write Chr(9) <span class="err">&amp;</span> Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">""</span><span class="na">LinkSection</span><span class="err">"</span> <span class="err">&amp;</span> <span class="na">intLinkSectionCount</span> <span class="err">&amp;</span> <span class="err">""""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">style=</span><span class="s">""</span><span class="na">display:none</span><span class="err">""</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> VbCrLf
+           ElseIf InStr(objLinkTEMP,"=") Then
+              objLinkTITLE = Trim(Left(objLinkTEMP,Instr(objLinkTEMP,"=")-1))
+              objLinkHREF  = Trim(Right(objLinkTEMP,Len(objLinkTEMP) - Instr(objLinkTEMP,"=")))
+              .Write Chr(9) <span class="err">&amp;</span> Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="err">"</span> <span class="err">&amp;</span> <span class="na">objLinkHREF</span> <span class="err">&amp;</span> <span class="err">""""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">style=</span><span class="s">""</span><span class="na">text-decoration:none</span><span class="err">"""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">onMouseOver=</span><span class="s">""</span><span class="na">mouseOverLink</span><span class="err">(</span><span class="na">this</span><span class="err">);"""</span>
+              <span class="err">.</span><span class="na">Write</span> <span class="err">"</span> <span class="na">onMouseOut=</span><span class="s">""</span><span class="na">mouseOutLink</span><span class="err">(</span><span class="na">this</span><span class="err">);""</span><span class="nt">&gt;</span>"
+              .Write objLinkTITLE <span class="err">&amp;</span> "<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>" <span class="err">&amp;</span> VbCrLf
+           End If
+        Loop
+        objLinkFILE.Close
+        If intLinkSectionCount Then .Write Chr(9) <span class="err">&amp;</span> "<span class="nt">&lt;/li&gt;</span>" <span class="err">&amp;</span> VbCrLf
+        .Write "<span class="nt">&lt;/ul&gt;</span>" <span class="err">&amp;</span> VbCrLf
+     End With
+  %&gt;
+
+2. Create a directory or virtual directory in the root of your Web server named
+  "Linktest" with at least Script Access enabled.
+
+3. Save the following text as "Links.ini" in the "Linktest" folder:
+
+  [Section 1]
+  Home Page=/ 
+  Microsoft Corp=http://www.microsoft.com/ 
+
+  [Section 2]
+  Microsoft Network=http://www.msn.com/ 
+  IIS Documentation=/iishelp/ 
+
+  [Section 3]
+  Microsoft Investor=http://investor.msn.com/ 
+  HotMail=http://www.hotmail.com/ 
+
+  The format for the entries is as follows:
+
+   - Section headings are in brackets as [Section Name].
+
+   - URLs are listed as Title=HREF, and can be absolute or relative references.
+
+4. Save the following ASP code as "Default.asp" in the "Linktest" folder:
+
+  <span class="nt">&lt;</span><span class="err">%@</span><span class="na">LANGUAGE=</span><span class="s">"VBSCRIPT"</span><span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">valign=</span><span class="s">"top"</span> <span class="na">align=</span><span class="s">"left"</span> <span class="na">width=</span><span class="s">"200"</span><span class="nt">&gt;</span><span class="c">&lt;!--#include virtual="/links.inc"--&gt;</span><span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">valign=</span><span class="s">"top"</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>This is a test<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+When the example page is browsed, it will read the contents of the "Links.ini"
+file in the same directory and create the DHTML table of contents. Because the
+ASP code in the "Links.inc" file always searches the local folder for the
+"Links.ini" file, you can create a separate list of contents for each folder on
+your Web server.
+
+To use the this code in any folder on your server, do the following:
+
+1. Include the following line of code in an ASP page where you want the table of
+  contents to be written:
+
+  <span class="c">&lt;!--#include virtual="/links.inc"--&gt;</span>
+
+  This will include the code from the "Links.inc" ASP page from the root of your
+  Web server into the current page.
+
+2. Create a file named "Links.ini" in the same folder as the page from the
+  previous step.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

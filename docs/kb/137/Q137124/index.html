@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137124: HOWTO: Create a PageFrame Parameterized View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137124: HOWTO: Create a PageFrame Parameterized View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137124/","publisher":null,"image":null,"headline":"Q137124: HOWTO: Create a PageFrame Parameterized View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137124-howto-create-a-pageframe-parameterized-view">Q137124: HOWTO: Create a PageFrame Parameterized View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137124
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a complete example showing how to create a PageFrame that
+has Pages and ListBoxes to display the results of a parameterized view from a
+single table. The views created may be modified to suit a specific situation.
+
+MORE INFORMATION
+================
+
+It is assumed that you are familiar with the View Designer.
+
+1. Create the following Views in Vpf\Samples\Mainsamp\Data\Tastrade.dbc database
+  in Visual FoxPro 6.0, the sample path is under _samples+"Testrade\data":
+
+  NOTE: When you create the local view in the View Designer, set the parameter
+  in the SELECT statement to the List Value property, as in the following
+  SELECT statements. For example in the View Designer for List2, place "city"
+  in the Selected Output field, "country" in the Field Name field, and
+  ?ThisForm.PageFrame1.Page1.List1.Value in the Example field.
+
+  View List2:
+
+        SELECT customer.city FROM tastrade!customer ;
+           WHERE customer.country = ?ThisForm.PageFrame1.Page1.List1.Value
+
+  View List3:
+
+        SELECT customer.company_name FROM tastrade!customer ;
+           WHERE customer.city = ?ThisForm.PageFrame1.Page2.List1.Value
+
+  View List4:
+
+        SELECT customer.customer_id FROM tastrade!customer WHERE ;
+           customer.company_name = ?ThisForm.PageFrame1.Page3.List1.Value
+
+2. On a Form, place a PageFrame with 4 Pages and a ListBox on each Page.
+  Establish the following methods and properties for the Form and PageFrame
+  Pages:
+
+  a. In the Init event of the form:
+
+        This.DataEnvironment.OpenTables
+
+        This.PageFrame1.Page2.List1.RowSource='List2'
+        This.PageFrame1.Page2.List1.RowSourceType=2
+
+        This.PageFrame1.Page3.List1.RowSource='List3'
+        This.PageFrame1.Page3.List1.RowSourceType=2
+
+        This.PageFrame1.Page4.List1.RowSource='List4'
+        This.PageFrame1.Page4.List1.RowSourceType=2
+
+  b. On the Property Sheet for Page1.List1:
+
+     Page1.List1.RowSource
+
+           SELECT distinct Country from Customer into Cursor abc
+
+     Page1.List1.RowSourceType
+
+           3 - SQL Statement
+
+  c. In the InterActiveChange event for Page 1.List1:
+
+        *This is for the List on Page 1
+
+        = REQUERY("List2")
+
+        ThisForm.PageFrame1.Page2.List1.RowSource='List2'
+        ThisForm.PageFrame1.Page2.List1.RowSourceType=2
+        ThisForm.PageFrame1.Page2.List1.requery( )
+
+  d. In the Page2.List1.LostFocus event:
+
+     NOTE: The Help file recommends that the following code be placed in the
+     InterActiveChange method but testing has shown that if there is only one
+     selection available beyond Page1, the subsequent Lists are not updated.
+
+        *This is for the ListBox on Page 2
+        = REQUERY("List3")
+
+        ThisForm.PageFrame1.Page3.List1.RowSource='List3'
+        ThisForm.PageFrame1.Page3.List1.RowSourceType=2
+        ThisForm.PageFrame1.Page3.List1.requery( )
+
+  e. In the Page3.List1.LostFocus event:
+
+        *This is for the ListBox on Page 3
+
+        = REQUERY("List4")
+
+        ThisForm.PageFrame1.Page4.List1.RowSource='List4'
+        ThisForm.PageFrame1.Page4.List1.RowSourceType=2
+        ThisForm.PageFrame1.Page4.List1.Requery( )
+
+3. Create a DataEnvironment for the form.
+
+  a. Include the following table and views from the TASTRADE.DBC:
+
+     1. Customer table
+     2. View List2
+     3. View List 3
+     4. View List 4
+
+  b. Set the DataEnvironment.AutoOpenTables property to false (.F.).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP500 kbVFP600
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

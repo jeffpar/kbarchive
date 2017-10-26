@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241750/","publisher":null,"image":null,"headline":"Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241750-bug-chtmlview-leaks-memory-by-not-releasing-bstrs">Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241750
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbInternet kbMFC kbVC600bug kbVS600bug kbDSupport kbGrpDSMFCATL
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following methods in CHtmlView cause a memory leak if called:
+
+- Navigate
+
+- GetFullName
+
+- GetType
+
+- GetLocationName
+
+- GetLocationURL
+
+- LoadFromResource(LPCTSTR lpszResource)
+
+- LoadFromResource(UINT nRes)
+
+CAUSE
+=====
+
+This problem is caused by bugs in the internal implementation in the first five
+functions listed in the "Summary" section. SysFreeString must be called in the
+first five functions on the allocated BSTRs. The last two functions cause a leak
+because CHtmlView::Navigate is called in both of these functions and
+CHtmlView::Navigate causes a leak.
+
+RESOLUTION
+==========
+
+To work around the leak, the functions listed in the "Summary" must be
+implemented in each class derived from CHtmlView. If you have several views
+derived some CHtmlView, consider making a new base class, such as CFixHtmlView,
+from CHtmlView, and then deriving the rest of the views from CFixHtmlView
+instead of CHtmlView:
+
+1. Inside the MFC application project, insert a new class. On the Insert menu,
+  click New Class. In the New Class dialog box, make sure the Class Type is set
+  to MFC Class.
+
+2. Name the class CFixHtmlView, and then set the Base Class combo-box item to
+  CHtmlView.
+
+3. In the FixHtmlView.h file, add the following code to the class:
+
+  class CFixHtmlView : public CHtmlView
+  {
+  //new code
+  // Operations
+  public:
+      CString GetFullName() const;
+      CString GetType() const;
+      CString GetLocationName() const;
+      CString GetLocationURL() const;
+
+      void Navigate(LPCTSTR lpszURL, DWORD dwFlags = 0 ,  
+                    LPCTSTR lpszTargetFrameName = NULL ,  
+                    LPCTSTR lpszHeaders = NULL, LPVOID lpvPostData = NULL,  
+                    DWORD dwPostDataLen = 0);
+
+  //Add the following functions. This action prevents the leak because the 
+  //CHtmlView versions of LoadFromResource() call CHtmlView::Navigate().
+  //These need to be defined because CHtmlView::Navigate() is not virtual.
+      BOOL LoadFromResource(LPCTSTR lpszResource);
+      BOOL LoadFromResource(UINT nRes);
+  //end new code
+
+4. In the FixHtmlView.cpp file, add the following code:
+
+  //new code
+  CString CFixHtmlView::GetFullName() const
+  {
+      ASSERT(m_pBrowserApp != NULL);
+
+      BSTR bstr;
+      m_pBrowserApp-&gt;get_FullName(&amp;bstr);
+      CString retVal(bstr);
+
+      SysFreeString(bstr); // Added this line to prevent leak.
+      return retVal;
+  }
+
+  CString CFixHtmlView::GetType() const
+  {
+      ASSERT(m_pBrowserApp != NULL);
+
+      BSTR bstr;
+      m_pBrowserApp-&gt;get_Type(&amp;bstr);
+
+      CString retVal(bstr);
+
+      SysFreeString(bstr); // Added this line to prevent leak.
+      return retVal;
+  }
+
+  CString CFixHtmlView::GetLocationName() const
+  {
+      ASSERT(m_pBrowserApp != NULL);
+
+      BSTR bstr;
+      m_pBrowserApp-&gt;get_LocationName(&amp;bstr);
+      CString retVal(bstr);
+
+      SysFreeString(bstr); // Added this line to prevent leak.
+      return retVal;
+  }
+   
+  CString CFixHtmlView::GetLocationURL() const
+  {
+      ASSERT(m_pBrowserApp != NULL);
+
+      BSTR bstr;
+      m_pBrowserApp-&gt;get_LocationURL(&amp;bstr);
+      CString retVal(bstr);
+
+      SysFreeString(bstr); // Added this line to prevent leak.
+      return retVal;
+  }
+
+  void CFixHtmlView::Navigate(LPCTSTR lpszURL, DWORD dwFlags /* = 0 */,
+  	LPCTSTR lpszTargetFrameName /* = NULL */ ,
+  	LPCTSTR lpszHeaders /* = NULL */, LPVOID lpvPostData /* = NULL */,
+  	DWORD dwPostDataLen /* = 0 */)
+  {
+      CString strURL(lpszURL);
+      BSTR bstrURL = strURL.AllocSysString();
+
+      COleSafeArray vPostData;
+      if (lpvPostData != NULL)
+      {
+         if (dwPostDataLen == 0)
+            dwPostDataLen = lstrlen((LPCTSTR) lpvPostData);
+
+         vPostData.CreateOneDim(VT_UI1, dwPostDataLen, lpvPostData);
+      }
+
+      m_pBrowserApp-&gt;Navigate(bstrURL, COleVariant((long) dwFlags, VT_I4), COleVariant(lpszTargetFrameName, VT_BSTR), 
+                              vPostData, COleVariant(lpszHeaders, VT_BSTR));
+
+      SysFreeString(bstrURL); // Added this line to prevent leak.
+  }
+
+  BOOL CFixHtmlView::LoadFromResource(LPCTSTR lpszResource)
+  {
+      HINSTANCE hInstance = AfxGetResourceHandle();
+      ASSERT(hInstance != NULL);
+
+      CString strResourceURL;
+      BOOL bRetVal = TRUE;
+      LPTSTR lpszModule = new TCHAR[_MAX_PATH];
+
+      if (GetModuleFileName(hInstance, lpszModule, _MAX_PATH))
+      {
+         strResourceURL.Format(_T("res://%s/%s"), lpszModule, lpszResource);
+         Navigate(strResourceURL, 0, 0, 0);
+      }
+      else
+         bRetVal = FALSE;
+
+      delete [] lpszModule;
+      return bRetVal;
+  }
+
+  BOOL CFixHtmlView::LoadFromResource(UINT nRes)
+  {
+      HINSTANCE hInstance = AfxGetResourceHandle();
+      ASSERT(hInstance != NULL);
+
+      CString strResourceURL;
+      BOOL bRetVal = TRUE;
+      LPTSTR lpszModule = new TCHAR[_MAX_PATH];
+
+      if (GetModuleFileName(hInstance, lpszModule, _MAX_PATH))
+      {
+         strResourceURL.Format(_T("res://%s/%d"), lpszModule, nRes);
+         Navigate(strResourceURL, 0, 0, 0);
+      }
+      else
+         bRetVal = FALSE;
+
+      delete [] lpszModule;
+      return bRetVal;
+  }
+  //end new code
+
+5. In each of the CHtmlView-derived classes' header and source files, change all
+  the code that refers to CHtmlView to CFixHtmlView. To assist with this task,
+  on the Edit menu, click Replace.
+
+6. Be sure to add the following line of code in each of the CHtmlView-derived
+  classes' header files before the class declaration:
+
+  #include "FixHtmlView.h" //Add me before the class declaration.
+
+  class CMyHtmlView : public CFixHtmlView
+  {
+  //class body
+  };
+
+7. Rebuild the project.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new MFC SDI Application using AppWizard. Name it TestLeak1.
+
+2. On Page 1 of AppWizard, change the Base class from CView to CHtmlView, and
+  then click Finish.
+
+3. Click the ResourceView tab and add a new menu item for the menu resource
+  IDR_MAINFRAME. Add the item under the Help menu and change the caption to
+  Test.
+
+4. Use Class Wizard to add a COMMAND handler for the new menu item ID_HELP_TEST.
+  Make sure that the class that handles the item is your CTestLeak1View class.
+
+5. Add the following code to the handler:
+
+  void CTestLeak1View::OnHelpTest() 
+  {
+     for (int i = 0; i &lt; 10000; i++)
+     {
+        CString str = GetFullName(); //add me
+     }	
+  }
+
+6. Build the project.
+
+Under Windows NT, run Task Manager and click the Performance tab. Run the
+TestLeak1 application. On the Help menu, click Test. Note that you will see the
+MEM Usage meter increase each time you click Test on the Help menu.
+
+Additional query words: leak BSTR SysAllocString AllocSysString SysFreeString CComBSTR _bstr_t HTML IE
+
+======================================================================
+Keywords          : kbInternet kbMFC kbVC600bug kbVS600bug kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

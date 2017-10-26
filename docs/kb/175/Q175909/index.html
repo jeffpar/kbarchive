@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175909: HOWTO: Hide an Executable from the Taskbar | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175909: HOWTO: Hide an Executable from the Taskbar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175909/","publisher":null,"image":null,"headline":"Q175909: HOWTO: Hide an Executable from the Taskbar","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175909-howto-hide-an-executable-from-the-taskbar">Q175909: HOWTO: Hide an Executable from the Taskbar</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175909
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 30-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Visual FoxPro executable is running, it appears on the Windows or Windows
+NT 4.0 taskbar. This code provides a programmatic method of removing the Visual
+FoxPro executable from the taskbar while it is executing. This code emulates
+behavior similar to setting the ShowInTaskbar property to false (.F.) in Visual
+Basic.
+
+MORE INFORMATION
+================
+
+This code does not work with Single Document Interface forms (SDI) because the
+mainhwnd() function gets the Windows handle (HWND) of the Visual FoxPro desktop.
+SW_HIDE serves to hide the executable from both the taskbar and the tasklist.
+However, the executable is not totally hidden from the operating system. When
+running an executable created with Visual FoxPro 3.0b, the Close Program window
+in Windows 95 and the Processes tab of the Windows NT 4.0 Task Manager both show
+the Vfp300.esl file. With a Visual FoxPro 5.0x executable running under Windows
+NT 4.0 or Windows 95, the executable's name appears in the Processes tab of the
+Windows NT Task Manager or in the Close Program window.
+
+1. Create a project called Zhide and add a program named Zhide.prg.
+
+2. In Zhide.prg, add the following code:
+
+  
+
+        DO FORM Zhide.scx
+        READ EVENTS
+
+  Zhide.prg should be marked as the main file of the project.
+
+3. Add a form named Zhide to the project. Place the following code in the Load
+  event of the form:
+
+  
+
+        Declare Integer ShowWindow in Win32API Integer hWnd, Integer nCmdShow
+        SET LIBRARY TO c:\vfp3\foxtools.fll
+        * The name of the Visual FoxPro folder may vary between machines.
+
+4. Add a command button and place the following code in the Click event:
+
+  
+
+        #DEFINE SW_HIDE 0
+        m.retval = ShowWindow(mainhwnd(), SW_HIDE)
+
+5. Add a timer control to the form with an interval set to 10000 millisecond.
+  Place the following code in the Timer event and close the form:
+
+  
+
+        m.retval = MessageBox("Click OK to quit", 0 + 48 + 0)
+        #DEFINE SW_SHOW 5
+        m.retval = ShowWindow(mainhwnd(), SW_SHOW)
+        CLEAR EVENTS
+        ThisForm.Release
+
+  NOTE: This code is important. Without this code the window does not reappear
+  and you cannot quit the application.
+
+6. Build the executable and close Visual FoxPro. From Explorer, double- click
+  Zhide.exe and within 10 seconds click the command button. The form should
+  disappear from the taskbar and the tasklist. Check the tasklist by pressing
+  the CTRL+ALT+DEL keys. In Windows 95 the Close Program window appears. In
+  Windows NT 4.0 the Windows NT Security dialog box appears. Click Task Manager
+  and then click the Applications tab. The Visual Foxpro executable is not
+  listed in the Task Manager of the operating systems.
+
+7. When the Messagebox appears, click OK to restore Visual Foxpro.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

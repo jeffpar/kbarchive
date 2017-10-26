@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179615: HOWTO: Specify or Change a Remote Server’s Location at Run Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179615: HOWTO: Specify or Change a Remote Server’s Location at Run Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179615/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179615/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179615/","publisher":null,"image":null,"headline":"Q179615: HOWTO: Specify or Change a Remote Server’s Location at Run Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179615-howto-specify-or-change-a-remote-servers-location-at-run-time">Q179615: HOWTO: Specify or Change a Remote Server’s Location at Run Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179615
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbDCOM kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport
+Last Modified: 12-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0, used with:
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0, used with:
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0, used with:
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE: This article was written as a solution for Visual Basic 5.0, when the CreateObject function did not have the second optional parameter, which allows it to select the remote server computer. PLEASE NOTE: You should not use the solution that is described in this article if you are using Visual Basic version 6.0 or later. To accomplish the same results, you can simply provide the second parameter in the CreateObject function.
+
+If you decide to use the solution that is described in this article, please be aware that the solution implies to make changes in the registry. Therefore, the solution only works if the user that is running the application has Administrator rights on operating systems such as Windows NT or Windows 2000.
+
+SUMMARY
+=======
+
+This article demonstrates how to programmatically change a remote DCOM server's
+actual computer location. This change enables a remote client to be directed to
+any computer that has the server component installed without the need to restart
+the client or register the new server object. This is accomplished by using the
+WIN32 API to make modifications to the registry. The sample below provides two
+functions that wrap the needed API calls cleanly: SetRemoteServer and
+GetRemoteServer.
+
+NOTE: Late binding must be used to accomplish this behavior at run-time.
+
+MORE INFORMATION
+================
+
+Add the following constants, declarations, and the two public functions to a
+standard module in your project:
+
+        'API Function and Constant Declarations
+
+        Public Const REG_NONE = 0             'No value type
+        Public Const REG_SZ = 1               'Unicode null terminated string
+        Public Const REG_EXPAND_SZ = 2        'Unicode null terminated string
+        Public Const REG_BINARY = 3              'Free form binary
+        Public Const REG_DWORD = 4               '32-bit number
+        Public Const REG_DWORD_LITTLE_ENDIAN = 4 '(same as REG_DWORD)
+        Public Const REG_DWORD_BIG_ENDIAN = 5    '32-bit number
+        Public Const REG_LINK = 6                'Symbolic Link (unicode)
+        Public Const REG_MULTI_SZ = 7            'Multiple Unicode strings
+
+        Public Const HKEY_CLASSES_ROOT = &amp;H80000000
+        Public Const HKEY_CURRENT_USER = &amp;H80000001
+        Public Const HKEY_LOCAL_MACHINE = &amp;H80000002
+        Public Const HKEY_USERS = &amp;H80000003
+        Public Const HKEY_CURRENT_CONFIG = &amp;H80000005
+
+        Public Const ERROR_SUCCESS = 0
+        Public Const ERROR_NONE = 0
+        Public Const ERROR_BADDB = 1
+        Public Const ERROR_BADKEY = 2
+        Public Const ERROR_CANTOPEN = 3
+        Public Const ERROR_CANTREAD = 4
+        Public Const ERROR_CANTWRITE = 5
+        Public Const ERROR_OUTOFMEMORY = 6
+        Public Const ERROR_INVALID_PARAMETER = 7
+        Public Const ERROR_ACCESS_DENIED = 8
+        Public Const ERROR_INVALID_PARAMETERS = 87
+        Public Const ERROR_NO_MORE_ITEMS = 259
+        Public Const KEY_ALL_ACCESS = &amp;H3F
+        Public Const REG_OPTION_NON_VOLATILE = 0
+
+     Private Declare Function RegCloseKey Lib "advapi32.dll" _
+        (ByVal hKey As Long) As Long
+     Private Declare Function RegOpenKey Lib "advapi32.dll" _
+         Alias "RegOpenKeyA" (ByVal hKey As Long, _
+         ByVal lpSubKey As String, _
+         phkResult As Long) As Long
+     Private Declare Function RegOpenKeyEx Lib "advapi32.dll"  _
+         Alias "RegOpenKeyExA" _
+        (ByVal hKey As Long, _
+         ByVal lpSubKey As String, _
+         ByVal ulOptions As Long, _
+         ByVal samDesired As Long, _
+         phkResult As Long) As Long
+     Private Declare Function RegQueryValue Lib "advapi32.dll" _
+         Alias "RegQueryValueA" _
+        (ByVal hKey As Long, _
+         ByVal lpSubKey As String, _
+         ByVal lpValue As String, _
+         lpcbValue As Long) As Long
+     Private Declare Function RegQueryValueEx Lib "advapi32.dll"  _
+         Alias "RegQueryValueExA" _
+        (ByVal hKey As Long, _
+         ByVal lpValueName As String, _
+         ByVal lpReserved As Long, _
+         lpType As Long, _
+         lpData As Any, _
+         lpcbData As Long) As Long
+     Private Declare Function RegSetValue Lib "advapi32.dll" _
+         Alias "RegSetValueA" _
+        (ByVal hKey As Long, _
+         ByVal lpSubKey As String, _
+         ByVal dwType As Long, _
+         ByVal lpData As String, _
+         ByVal cbData As Long) As Long
+     Private Declare Function RegSetValueEx Lib "advapi32.dll" _
+         Alias "RegSetValueExA" _
+        (ByVal hKey As Long, _
+         ByVal lpValueName As String, _
+         ByVal Reserved As Long, _
+         ByVal dwType As Long, _
+         lpData As Any, _
+         ByVal cbData As Long) As Long
+
+        'GetRemoteServer function
+        Public Function GetRemoteServer(ClassName As String) As String
+
+        Dim lRetVal As Long      'result of the API functions
+        Dim hKey As Long         'handle of opened key
+        Dim sKeyName As String
+        Dim lpType As Long
+        Dim lpData As String
+        Dim lpcbData As Long
+        Dim myclsid As String
+        Dim MyServerName As String
+
+         sKeyName = ClassName
+         If sKeyName = "" Then
+          MsgBox "This is not a valid class name"
+          GetRemoteServer = "None"
+          Exit Function
+         End If
+         lRetVal = RegOpenKey(HKEY_CLASSES_ROOT, sKeyName, hKey)
+         If lRetVal = ERROR_SUCCESS Then
+          lpcbData = 40
+          lpData = Space$(40)
+          lRetVal = RegQueryValue(hKey, "CLSID", lpData, lpcbData)
+          If lRetVal = ERROR_NONE Then
+           myclsid = Left$(lpData, lpcbData - 1)
+           RegCloseKey (hKey)
+           sKeyName = "AppID\" &amp; myclsid
+           lRetVal = RegOpenKeyEx(HKEY_CLASSES_ROOT, sKeyName, 0, _
+                KEY_ALL_ACCESS, hKey)
+           If lRetVal = ERROR_SUCCESS Then
+            lpcbData = 255
+            lpData = Space$(255)
+            lRetVal = RegQueryValueEx(ByVal hKey, "RemoteServerName", 0, _
+                 ByVal lpType, ByVal lpData, lpcbData)
+            If lRetVal = ERROR_NONE Then
+             MyServerName = Left$(lpData, lpcbData - 1)
+             GetRemoteServer = MyServerName
+            Else
+             MsgBox lRetVal &amp; " - This class is not registered remotely."
+             GetRemoteServer = "None"
+            End If
+           Else
+            MsgBox lRetVal &amp; " - Cannot find CLSID for " &amp; sKeyName
+            GetRemoteServer = "None"
+           End If
+           RegCloseKey (hKey)
+          End If
+         Else
+          MsgBox lRetVal &amp; " - Cannot find class name - " &amp; sKeyName
+          GetRemoteServer = "None"
+         End If
+
+         Exit Function
+        QueryValueExExit:
+         MsgBox lRetVal
+         GetRemoteServer = "None"
+         Exit Function
+        QueryValueExError:
+         Resume QueryValueExExit
+        End Function
+
+        'SetRemoteServer function
+      Public Function SetRemoteServer(ClassName As String, _
+            NewRemote As String) As String
+
+        Dim lRetVal As Long      'result of the API functions
+        Dim hKey As Long         'handle of opened key
+        Dim sKeyName As String
+        Dim lpType As Long
+        Dim lpData As String
+        Dim lpcbData As Long
+        Dim myclsid As String
+        Dim MyServerName As String
+
+        If NewRemote &lt;&gt; "" Then
+         MyServerName = NewRemote
+         sKeyName = ClassName
+         If sKeyName = "" Then
+          MsgBox "You did not enter a class name"
+          SetRemoteServer = "None"
+          Exit Function
+         End If
+         lRetVal = RegOpenKey(HKEY_CLASSES_ROOT, sKeyName, hKey)
+         If lRetVal = ERROR_SUCCESS Then
+          lpcbData = 40
+          lpData = Space$(40)
+          lRetVal = RegQueryValue(hKey, "CLSID", lpData, lpcbData)
+          If lRetVal = ERROR_NONE Then
+           myclsid = Left$(lpData, lpcbData - 1)
+           RegCloseKey (hKey)
+           sKeyName = "AppID\" &amp; myclsid
+           lRetVal = RegOpenKeyEx(HKEY_CLASSES_ROOT, sKeyName, 0&amp;, _
+                KEY_ALL_ACCESS, hKey)
+           If lRetVal = ERROR_SUCCESS Then
+            lpcbData = Len(MyServerName) + 1
+            lpData = MyServerName
+            lpType = REG_SZ
+            lRetVal = RegSetValueEx(hKey, "RemoteServerName", 0&amp;, lpType, _
+                 ByVal lpData, lpcbData)
+             If lRetVal = ERROR_NONE Then
+              SetRemoteServer = MyServerName
+             Else
+              MsgBox lRetVal &amp; " - This class is not registered remotely."
+              SetRemoteServer = "None"
+             End If
+            Else
+             MsgBox lRetVal &amp; " - Cannot find CLSID for " &amp; sKeyName
+             SetRemoteServer = "None"
+            End If
+            RegCloseKey (hKey)
+           End If
+          Else
+           MsgBox lRetVal &amp; " - Cannot find class name - " &amp; sKeyName
+           SetRemoteServer = "None"
+          End If
+         Else
+          MsgBox "Invalid Parameter - NewRemote"
+          SetRemoteServer = "None"
+         End If
+         Exit Function
+        QueryValueExExit:
+         MsgBox lRetVal
+         SetRemoteServer = "None"
+         Exit Function
+        QueryValueExError:
+         Resume QueryValueExExit
+        End Function
+
+You can now call these functions from anywhere in your project.
+
+NOTE: The server object must be declared using late binding:
+
+     Private MyServer as Object
+     Set MyServer = CreateObject("YourServer.YourClass")
+
+GetRemoteServer Function
+------------------------
+
+You can call this function at any time to retrieve the current remote computer
+name that a remotely-registered class is set up to use. Pass the
+object.classname to the function, and its return value will be either the
+RemoteMachineName or "None" if there was an error. For example:
+
+     Dim ClassName as String
+     Dim MachineName as String
+
+     ClassName = "YourServer.YourClass"      'The name of your object
+     MachineName = GetRemoteServer(ClassName)
+     If MachineName = "None" Then
+      MsgBox "Error retrieving machine name"
+     Else
+      MsgBox "The machine name is " &amp; MachineName
+     End If
+
+SetRemoteServer Function
+------------------------
+
+NOTE: It is recommended that you set any current references to this object to
+"Nothing" before changing the server location via this function.
+
+To change the remote computer on which your server will run, pass the
+object.classname and the new remote computer name to this method. The return
+value will be either the New remote computer name or "None" if there was an
+error. The next CreateObject that is called for this object will then use the
+new server location. For example:
+
+     dim MyServer as Object
+     dim ClassName as String
+     dim MachineName as String
+     dim NewMachine as String
+
+     Set MyServer = Nothing                  'Clear existing reference
+     ClassName = "YourServer.YourClass"      'The name of your object
+     NewMachine = "MachineToChangeTo"        'The name of the new machine
+     MachineName = SetRemoteServer(ClassName, NewMachine)
+     If MachineName = NewMachine Then
+      Set MyServer = CreateObject(ClassName) 'connect to the new machine
+     Else
+      MsgBox "Error Setting machine name"
+     End If
+
+NOTE: The Remote ActiveX Server applications must be set up and functioning
+correctly for the code above to work properly.
+
+Additional query words: DCOM RemoteServerName DCOMCNFG OLEView
+
+======================================================================
+Keywords          : kbDCOM kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

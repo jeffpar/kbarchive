@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263206/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263206/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263206/","publisher":null,"image":null,"headline":"Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263206-vtam-v4r2-ptf-may-cause-appc-conversation-to-stop-responding">Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263206
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An APPC or CPI-C application may intermittently stop responding while it waits
+for a host response. The application stops responding after the Allocate,
+Send_Data, and Receive_and_Wait (or a CMALLC, CMSEND, and CMRCV for a CPI-C
+application) commands are issued. A trace shows SNA Server has sent the FMH-5
+ATTACH request to the host along with the data, and is waiting for a response.
+The message that is sent to the host has the change direction indicator (CDI)
+set.
+
+CAUSE
+=====
+
+The FMH-5 ATTACH request and APPC data are sent to the host in two messages
+(begin-chain and end-chain). A problem in Virtual Telecommunications Access
+Method (VTAM) V4R2 with IBM PTF #UV60018 prevents the end-chain message from
+being received by the APPC application on the host.
+
+RESOLUTION
+==========
+
+IBM PTF #UV60101 fixes the VTAM problem when it is applied to VTAM V4R2. Contact
+IBM to request this update.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+MORE INFORMATION
+================
+
+An SNA Server Node Message shows the following. The first two messages are the
+begin-chain and end-chain messages that are sent to the host by SNA Server. The
+third message is the Isolated Pacing Response sent by the host.:
+
+  
+
+  DLC   ----------------------------------------------- 10:51:00.0208
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:03 OAF:02 ODAI:on  Normal
+  DLC                      RQE FMD FI BC DR1 PI BB
+  DLC
+  DLC   ---- Header  at address 0131444C, 1 elements ----
+  DLC   0B080000 1D002E00 03020007 01008A01     &lt;................&gt;
+  DLC
+  DLC   ---- Element at address 01D02240, start 10, end 77 ----
+  DLC   0A918041 0502FF00 03D00000 07E2D8D3     &lt;.j.A.........SQL&gt;
+  DLC   D7D9D6C4 130802C4 C2F2D3D4 E2C40901     &lt;PROD...DB2LMSD..&gt;
+  DLC   C4C2F2D9 E4D3C5E2 1A11E4E2 D4C4D5D9     &lt;DB2RULES..USMDNR&gt;
+  DLC   F0F14BC4 D5D9C4C2 F2F0F107 D045C173     &lt;01KDNRDB201..EAs&gt;
+  DLC   E5000100                                &lt;V...            &gt;
+
+  DLC   ----------------------------------------------- 10:51:00.0208
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:03 OAF:02 ODAI:on  Normal
+  DLC                      RQE FMD EC DR1 CD
+  DLC
+  DLC   ---- Header  at address 0131403C, 1 elements ----
+  DLC   07050000 1D002E00 03020008 01008A01     &lt;................&gt;
+  DLC
+  DLC   ---- Element at address 01D02A3C, start 10, end 249 ----
+  DLC   01902000 68D04100 01006210 41002011     &lt;.. .h.A...b.A. .&gt;
+  DLC   5E8482F2 82974B85 A7854040 40404040     &lt;^db2bpKexe@@@@@@&gt;
+  DLC   40404040 40F0F1F8 C1F0F0C6 F8000C11     &lt;@@@@@018A00F8...&gt;
+  DLC   6D404040 40404040 40001311 5AC4C2F2     &lt;m@@@@@@@@...ZDB2&gt;
+  DLC   40C39695 958583A3 40F54BF2 00141404     &lt;@Connect@5K2....&gt;
+  DLC   14030004 14440003 24070006 240F0003     &lt;.....D..$...$...&gt;
+  DLC   000B1147 D8C4C2F2 61D5E300 85D00100     &lt;...GQDB2aNT.e...&gt;
+  DLC   02007F20 01001621 10E2D8D3 D7D9D6C4     &lt;..&lt;A6&gt; ...!.SQLPROD&gt;
+  DLC   40404040 40404040 40404000 06210F24     &lt;@@@@@@@@@@@..!.$&gt;
+  DLC   07000D00 2FD8E3C4 E2D8D3E7 F8F6000C     &lt;..../QTDSQLX86..&gt;
+  DLC   112EE2D8 D3F0F5F0 F2F0003C 210437E2     &lt;..SQL05020.&lt;!.7S&gt;
+  DLC   D8D3F0F5 F0F2F0D5 E3404040 40404040     &lt;QL05020NT@@@@@@@&gt;
+  DLC   40404040 40404040 408482F2 82974B85     &lt;@@@@@@@@@db2bpKe&gt;
+  DLC   A7854040 40404040 40404040 40C4C2F2     &lt;xe@@@@@@@@@@@DB2&gt;
+  DLC   D3D4E2C4 4000000A 00350006 119C04E4     &lt;LMSD@....5.....U&gt;
+
+  ----------------------------------------------- 10:51:00.0224
+  04160000-&gt;01020101 DLC DATA
+                  DAF:02 OAF:03 ODAI:on  Normal
+                  +RSP FMD BC EC PI
+
+  ---- Header  at address 01314070, 1 elements ----
+  04080004 1D002E00 02030000 0100C401     &lt;..............D.&gt;
+
+  ---- Element at address 01D02A3C, start 10, end 12 ----
+  830100                                  &lt;c..             &gt;
+
+Neither the end-chain message or the Isolated Pacing Response appear in a VTAM
+trace. Note that because this session is using two-stage pacing, the Isolated
+Pacing Response is generated by a boundary function, which is why it does not
+appear in the VTAM trace.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

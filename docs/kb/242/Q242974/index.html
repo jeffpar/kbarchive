@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242974/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242974/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242974/","publisher":null,"image":null,"headline":"Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242974-prb-unable-to-createmodify-remote-view-with-right-join">Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242974
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDesigner kbSQL kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbMDAC250 kbCodeSnip
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create or modify a remote view that uses a RIGHT JOIN, the
+RIGHT JOIN clause does not appear in the SQL SELECT syntax.
+
+When you attempt to save the View, an error similar to the following appears:
+
+  Connectivity error: [Microsoft][ODBC Visual FoxPro Driver] Command contains
+  unrecognized phrase/keyword
+
+RESOLUTION
+==========
+
+Create Views that use a RIGHT JOIN programmatically.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file named Demo.prg using the following code:
+
+  CREATE DATABASE testa
+  CREATE TABLE tablea (fld1 c(10), fld2 c(10))
+  CREATE TABLE tableb (fld1 c(10), fld3 c(10))
+  CREATE SQL VIEW localsql ;
+     AS SELECT * ;
+     FROM tablea RIGHT JOIN tableb ;
+     ON tablea.fld1 = tableb.fld1
+
+  MODIFY VIEW localsql
+
+  CLOSE ALL
+
+  CREATE DATABASE testb
+  CREATE CONNECTION connect1 CONNSTRING 'DRIVER={Microsoft Visual FoxPro Driver};' + ;
+     'Exclusive=No;SourceType=DBC;SourceDB='+SYS(5)+SYS(2003)+'\TESTA.DBC'
+
+  CREATE SQL VIEW remotesql REMOTE CONNECTION connect1 ;
+     AS SELECT * ;
+     FROM testa!tablea tablea RIGHT JOIN testa!tableb tableb ;
+     ON tablea.fld1 = tableb.fld1
+
+  MODI VIEW remotesql
+
+2. Run the program file.
+
+3. When the View Designer opens the local view, localsql, click the Show SQL
+  button on the View Designer toolbar. Note that the SQL statement is:
+
+      SELECT *;
+       FROM  testa!tablea RIGHT OUTER JOIN testa!tableb ;
+         ON  Tablea.fld1 = Tableb.fld1
+
+4. Close the code and the View Designer-Localsql windows. When the View Designer
+  opens the remote view, remotesql, click the Show SQL button on the View
+  Designer toolbar and note that the SQL statement is:
+
+      SELECT *;
+       FROM  {oj testa!tablea Tablea  testa!tableb Tableb ;
+         ON  Tablea.fld1 = Tableb.fld1 }
+
+5. Close the code window. Press CTRL-W or from the File menu, choose Save. In
+  the View Designer window note that an error message similar to the following
+  appears:
+
+  Connectivity error: [Microsoft][ODBC Visual FoxPro Driver] Command contains
+  unrecognized phrase/keyword
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John
+Desch, Microsoft Corporation.
+
+
+Additional query words: kbDSE
+
+======================================================================
+Keywords          : kbDesigner kbSQL kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbMDAC250 kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

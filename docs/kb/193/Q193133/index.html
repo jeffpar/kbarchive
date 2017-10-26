@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193133/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193133/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193133/","publisher":null,"image":null,"headline":"Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193133-howto-compile-vb-programs-with-debug-symbols-embedded">Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193133
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbDebug kbVBp500 kbVBp600 kbVC kbGrpDSVB kbSymbols
+Last Modified: 28-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Compile to Native Code" option introduced in Visual Basic versions 5.0 and
+6.0 not only improves performance of Visual Basic programs and components, but
+also makes it possible to debug them with the Visual C++ debugger.
+
+This article shows you how to compile a Visual Basic program or component with
+embedded debug symbols. By doing so, you simplify the debugging process and
+avoid the problems associated with mismatched and improperly placed symbols.
+
+MORE INFORMATION
+================
+
+All it takes to compile a Visual Basic program or component with embedded debug
+symbols is a properly set environment variable, LINK. The key is to set it in
+such a way that Visual Basic inherits the setting when it is launched. To do
+this, follow the steps below:
+
+There are several ways to set the LINK environment variable, each of these
+methods is outlined below:
+
+Windows NT or Windows 95/98/Me
+------------------------------
+
+1. Open an MS-DOS Prompt.
+
+2. Navigate to the folder containing Visual Basic.
+
+3. Execute the following command, "set link=/pdb:none" without quotes.
+
+4. Start Visual Basic from the MS-DOS command prompt.
+
+Windows NT Only
+---------------
+
+1. From the Control Panel, select the System icon.
+
+2. Select the Environment tab.
+
+3. In the Variable entry, enter "link" without quotes.
+
+4. In the Value entry, enter the following:
+
+  /pdb:none
+
+5. Press Set, then Apply.
+
+6. Start Visual Basic from the MS-DOS command prompt.
+
+Windows 95/98/Me Only
+---------------------
+
+1. Make a backup copy of the AutoExec.Bat file.
+
+2. Open the Autoexec.bat file with Notepad.Exe or any text editor.
+
+3. Add the following entry to the AutoExec.Bat file:
+
+  set link=/pdb:none
+
+4. Save the AutoExec.Bat file.
+
+5. Execute the AutoExec.Bat file or reboot the machine.
+
+6. Start Visual Basic.
+
+  Once the LINK environment variable is set, a Visual Basic project can be
+  compiled with embedded debug symbols. The following steps describe how to
+  create a test program and compile it with embedded debug symbols:
+
+Step-by-Step Example
+--------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a CommandButton (Command1) to Form1.
+
+3. Add the following code to Form1:
+
+        Private Sub Command1_Click()
+           Dim s As String
+           s = App.EXEName
+           Print s
+        End Sub
+
+4. Select Project1 Properties from the Project menu.
+
+5. Select the Compile tab.
+
+6. Select Compile to Native Code, check Create Symbolic Debug Info, and select
+  No Optimization.
+
+7. Save the project and create Project1.EXE. Note that the EXE is created with
+  embedded debug symbols.
+
+REFERENCES
+==========
+
+The article "Set Linker Options" in MSDN.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q166275 : HOWTO: Debug a Native Code Visual Basic Component in VC++
+
+Additional query words: kbdss linker link option debug
+
+======================================================================
+Keywords          : kbCompiler kbDebug kbVBp500 kbVBp600 kbVC kbGrpDSVB kbSymbols 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207750: How to Prevent the Display of Control Panel Icons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207750: How to Prevent the Display of Control Panel Icons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207750/","publisher":null,"image":null,"headline":"Q207750: How to Prevent the Display of Control Panel Icons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207750-how-to-prevent-the-display-of-control-panel-icons">Q207750: How to Prevent the Display of Control Panel Icons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207750
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kbEnableMove kbEnableLearn
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To provide enhanced workstation security, network administrators may prevent the
+display of icons on Control Panel on specific computers using a Windows NT
+security policy template.
+
+MORE INFORMATION
+================
+
+A preconfigured policy template file can be created for this purpose. To create
+the policy file:
+
+1. Click Start, click Run, type "notepad" (without the quotation marks), and
+  then click OK.
+
+2. Type the following lines into the empty file. You can also use copy and paste
+  commands to place the text into the empty file:
+
+  CLASS USER
+
+  CATEGORY !!CPL_Icons
+  POLICY !!CPL_Access
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "Access.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Norton
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "S32LUCP1.CPL"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_AppWiz
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "appwiz.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Console
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "console.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Cpqmgt
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "cpqmgmt.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_DevApps
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "devapps.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Inetcpl
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "inetcpl.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Intl
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "intl.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Joy
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "Joy.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_License
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "liccpa.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Main
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "main.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_MonAgt
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "bhctrl.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_MMsys
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "mmsys.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Modem
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "modem.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_NCPA
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "ncpa.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_ODBC
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "odbccp32.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Ports
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "Ports.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Server
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "srvmgr.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_System
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "sysdm.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Telephony
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "telephon.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_Timedate
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "timedate.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_UPS
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "UPS.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_MAIL
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "MLCFG32.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_HARDWARE
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "hdwwiz.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_SCANNER
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "sticpl.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+
+  POLICY !!CPL_POWER
+  KEYNAME "Control Panel\Don't Load"
+  VALUENAME "powercfg.cpl"ValueOn !!CPL_Hide ValueOff Numeric 0
+  END POLICY
+  END CATEGORY; Control Panel
+
+  [strings]
+  CPL_Icons="Control Panel Icons"
+  CPL_Access="Deny Access to Accessibility"
+  CPL_Norton="Deny Access to Norton Live Update"
+  CPL_AppWiz="Deny Access to Add/Remove Programs"
+  CPL_Console="Deny Access to Console Properties"
+  CPL_Cpqmgt="Deny Access to Compaq Insight Agents"
+  CPL_DevApps="Deny Access to PC Card"
+  CPL_Inetcpl="Deny Access to Internet"
+  CPL_Intl="Deny Access to Regional Settings"
+  CPL_Joy="Deny Access to Joystick"
+  CPL_License="Deny Access to Licensing"
+  CPL_Main="Deny Access to Fonts,Mouse,Keyboard,Printers"
+  CPL_MonAgt="Deny Access to Monitoring Agent"
+  CPL_MMSys="Deny Access to Multimedia"
+  CPL_Modem="Deny Access to Modem"
+  CPL_NCPA="Deny Access to Network"
+  CPL_ODBC="Deny Access to ODBC"
+  CPL_Ports="Deny Access to Ports"
+  CPL_Server="Deny Access to Server"
+  CPL_System="Deny Access to System"
+  CPL_Telephony="Deny Access to Telephony"
+  CPL_TimeDate="Deny Access to Date/Time"
+  CPL_UPS="Deny Access to UPS"
+  CPL_Hide ="No"
+  CPL_HARDWARE="Deny Access to Hardware Wizard"
+  CPL_MAIL="Deny Access to Mail"
+  CPL_SCANNER="Deny Access to Scanners &amp; Cameras"
+  CPL_POWER="Deny Access to Power Options"
+
+3. Click File, click Save As, type "Cpanel.adm" (without the quotation marks),
+  and then click Save.
+
+To enable the policy:
+
+1. Copy the Cpanel.adm file to the %&lt;SystemRoot&gt;%\Inf folder.
+
+2. Click Start, click Run, type "POLEDIT" (without the quotation marks), and
+  then click OK. Click Options, click Policy Template, click to select the
+  Cpanel.adm file, and then click OK.
+
+3. Click File, click New Policy, and then double-click the icon representing the
+  user name for which you want to prevent the icon display.
+
+4. Double-click Control Panel Icons, click to select the check box for the
+  individual icon entries to prevent their on-screen display, and then click
+  OK.
+
+5. Click File, click Save, type a name for the new policy, and then click Save.
+
+NOTE: If in a Windows NT 4.0 domain you start a Terminal Services session to a
+Windows 2000 Terminal Services server and you have Control Panel disabled or
+Control Panel Printers disabled per this article and you click Print on the File
+menu, you receive the following error message: "Error occured during this
+operation." Clicking the Print icon does not cause this error message. The error
+message occurs because clicking Print on the File menu uses the Control Panel
+printer properties to create the print job; locking Control Panel causes the
+function not to work. This behavior is by design.
+
+For additional information about how to implement the security policy using the
+newly created file, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q168579 How to Set Up Locally-Based System Policies
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbEnableMove kbEnableLearn 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

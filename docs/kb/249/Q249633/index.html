@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249633/","publisher":null,"image":null,"headline":"Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249633-setting-a-filter-allows-no-real-time-scrolling-in-listbox">Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249633
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 05-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the scroll button of a combo or list box to scroll through data that
+has a SET FILTER TO expression, the data in the combo or list box will not be
+refreshed to show the new data until the mouse button is released. If there is
+no SET FILTER used on the data the data moves as the scroll button moves and
+immediately displays the new data.
+
+NOTE: Setting DELETED ON in Visual FoxPro 6.0 causes the same behavior to occur.
+
+STATUS
+======
+
+This behavior is by design. When any type of filter is used there is no real
+time scrolling of data in a combo or list box.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code into a program (.prg) file and then run the program.
+  This code uses the customer.dbf sample table that comes with Visual FoxPro.
+  Make sure that a path is set to the table:
+
+     PUBLIC oform
+          oform = CREATEOBJECT("frmFilterTest")
+          oform.Show
+      
+          DEFINE CLASS frmFilterTest AS form
+                Top = 0
+                Left = 0
+                Height = 255
+                Width = 354
+                DoCreate = .T.
+                Caption = "frmFilterTest"
+                Name = "frmFilterTest"
+
+                ADD OBJECT cboFilter AS combobox WITH ;
+                          RowSourceType = 6, ;
+                          RowSource = "customer.cust_id", ;
+                          Height = 24, ;
+                          Left = 24, ;
+                          Top = 36, ;
+                          Width = 100, ;
+                          Name = "cboFilter"
+
+                ADD OBJECT lstCustomer AS listbox WITH ;
+                          RowSourceType = 6, ;
+                          RowSource = "customer.cust_id", ;
+                          Height = 170, ;
+                          Left = 180, ;
+                          Top = 24, ;
+                          Width = 100, ;
+                          Name = "lstCustomer"
+
+                ADD OBJECT cmdFilter AS commandbutton WITH ;
+                          Top = 156, ;
+                          Left = 24, ;
+                          Height = 27, ;
+                          Width = 84, ;
+                          Caption = "Filter On", ;
+                          Name = "cmdFilter"
+
+                PROCEDURE Load
+                          SET DELETED OFF
+                          SET FILTER to maxordamt &gt; 1000
+
+                PROCEDURE cmdFilter.Click
+                          IF This.caption='Filter On'
+                                  SET FILTER TO
+                                  This.caption='Filter Off'
+                          ELSE
+                                  SET FILTER TO maxordamt &gt; 1000
+                                  This.caption='Filter On'
+                          ENDIF
+
+2. Move the scroll button of the list or combo box and note that the data does
+  not refresh until the mouse button is released.
+
+3. Select the Set Filter command button to turn the filter off and note that the
+  data moves interactively when the scroll button is moved.
+
+4. Changing the SET DELETED OFF command to ON in the Load event of the code
+  causes the same behavior to occur in both the combo and list boxes when you
+  use Visual FoxPro 6.0.
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

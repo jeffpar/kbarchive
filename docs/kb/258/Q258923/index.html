@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258923/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258923/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258923/","publisher":null,"image":null,"headline":"Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258923-xadm-ds_e_attribute_or_value_exists-error-appears-joining-site">Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258923
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 02-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a new Exchange server to an existing site, you may be unable to add
+the Exchange Server computer to the site and you receive the following error
+message:
+
+  An internal processing error has occurred:
+  The attribute or value exists. Try restarting the Administrator program or the
+  Microsoft Exchange Server computer, or both.
+
+  Microsoft Exchange Directory ID no: DS_E_ATTRIBUTE_OR_VALUE_EXISTS
+
+The error can also occur when you use the Move Server Wizard to move an Exchange
+server into an existing Exchange site.
+
+CAUSE
+=====
+
+This issue can occur if you have disabled the generation of proxy addresses for
+address types.
+
+In Microsoft Exchange Server version 5.0, you can disable the generation of
+e-mail addresses for a particular site.
+
+You can receive the error message in the "Symptoms" section of this article when
+you add an Exchange Server computer to a site in which e-mail addressing for a
+third-party connector or gateway such as RightFax that has been disabled, but
+you can also receive the error message if any e-mail address type in site
+addressing has been disabled.
+
+RESOLUTION
+==========
+
+WARNING: If you use the raw mode of the Exchange Server Administrator program
+(admin /r) incorrectly, serious problems may occur that may require you to
+reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+Microsoft cannot guarantee that problems that result from using raw mode
+incorrectly can be solved. Use raw mode at your own risk.
+
+1. Start the Exchange Server Administrator program in raw mode by typing the
+  following at a command prompt:
+
+  c:\exchsrvr\bin\admin /r
+
+2. In the Configuration container, click the Site Addressing object, and then
+  click Raw Properties on the File menu.
+
+3. In the "Object Attributes" box, click "Disabled-Gateway-Proxy".
+
+4. Remove any attribute values that may exist by clicking the attribute in the
+  "Attribute values" box, and then clicking Remove.
+
+5. Click OK, and then quit the Administrator program.
+
+6. You should now be able to join the Exchange server to the existing site or
+  run the Move Server Wizard to move the server to the existing site.
+
+MORE INFORMATION
+================
+
+You can disable generation of an e-mail address type by using the Administrator
+program:
+
+1. Navigate to the particular Site object.
+
+2. Click the Configuration object.
+
+3. Open the properties of the Site Addressing object.
+
+4. Select the Site Addressing tab.
+
+5. Select the E-mail Address type.
+
+6. Click Remove to disable e-mail generation of the address type for the site.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Component         : Admin
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

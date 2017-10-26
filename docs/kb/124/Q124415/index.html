@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124415/","publisher":null,"image":null,"headline":"Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124415-cinemania-1995-manual-setup-err-msg-path-not-found">Q124415: Cinemania 1995: Manual Setup Err Msg: "Path Not Found"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124415
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1995 edition
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Cinemania for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Pss.bat file located in the Aamsstp\Manual folder on the
+Microsoft Cinemania 1995 compact disc, you receive the error message "Path not
+found" after the first seven files are copied.
+
+RESOLUTION
+==========
+
+To work around this problem, do the following:
+
+1. Run the Pss.bat file.
+
+2. Make the system changes described in the Msetup.txt file.
+
+3. At an MS-DOS prompt, copy all the files from the Aamsstp\System folder
+  (subdirectory) on the compact disc to the Windows\System folder on your hard
+  disk. For example, if your CD-ROM drive is drive X, and your hard disk drive
+  is drive C, to copy the files, type the following line and press ENTER:
+
+  "copy x:\aamsstp\system\*.* c:\windows\system" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+The manual installation batch file for Cinemania 1995 does not specify the
+correct path name for most of the files it is supposed to copy. The batch file
+specifies the System directory as the source for the files, but the files are
+actually in the Aamsstp\System folder.
+
+CAUTION: The manual installation batch file for Cinemania 1995 should not be used
+on computers running Microsoft Windows 95 or Microsoft Windows NT.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles set up error message pathing bat man installation
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1995
+Version           : :1995 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/208/Q208618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/208/Q208618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/208/Q208618/","publisher":null,"image":null,"headline":"Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q208618-sms-cap-not-accessible-during-sms-20-client-installation">Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q208618
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbClient kbsms200 kbCAP
+Last Modified: 30-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During a Systems Management Server 2.0 client installation, the Ccim32.log might
+indicate that the client access point (CAP) is not accessible. You may see an
+entry similar to the following in the CCIM32 log:
+
+  WaitForCAPAccess - abstract export ABEXPRT:\\CAP List for site ABC not
+  accessible
+
+Enabling network abstraction layer (NAL) logging will provide more detail. The
+Ccim32.log will have an entry similar to the following:
+
+  NAL[4] - ERROR: failed to make the network connection. No more connections
+  can be made to this remote computer at this time
+
+For more information about enabling NAL logging see the Systems Management Server
+Resource Guide.
+
+CAUSE
+=====
+
+This behavior can occur if the client is unable to connect to the CAP because
+there are no more licenses available for the Windows NT server. This usually
+occurs with "Per Server" licensing. Each Systems Management Server client
+installation may use several licenses as connections to the CAP server are made
+under multiple user contexts.
+
+Note that this is just one of many causes that may cause a client not to be able
+to connect to a CAP.
+
+WORKAROUND
+==========
+
+To work around this problem, you must change your licenses from "per server" to
+"per seat," or purchase more licenses.
+
+Additional query words: prodsms client access point connect
+
+======================================================================
+Keywords          : kbClient kbsms200 kbCAP 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

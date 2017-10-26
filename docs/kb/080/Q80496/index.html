@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80496/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80496/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80496/","publisher":null,"image":null,"headline":"Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80496-when-not-to-use-ms-dos-50-chkdsk-and-undelete-commands">Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80496
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 03-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft MS-DOS CHKDSK and UNDELETE commands dated 04/09/91, which are
+included in the Microsoft MS-DOS 5 Upgrade, do not work correctly on logical
+drives that require 256 sectors to store each copy of the file allocation table
+(FAT). If any of the partitions on your hard disk drive are within the ranges
+listed in the following section and you do not have version 5.0a of the
+Microsoft MS-DOS 5 Upgrade, which includes CHKDSK.EXE and UNDELETE.EXE files
+dated 11/11/91, obtain the new CHKDSK and UNDELETE file.
+
+  127 MB - 129 MB
+  254 MB - 258 MB
+  508 MB - 516 MB
+  1018 MB - 1030 MB
+  2035 MB - 2061 MB
+
+If your FAT occupies 256 sectors, using the CHKDSK.EXE file dated 04/09/91 with
+the /f parameter ("chkdsk /f" [without the quotation marks]) can result in data
+loss. Using the UNDELETE.EXE file dated 04/09/91 can lead to unpredictable
+results.
+
+Microsoft has confirmed this to be a problem in MS-DOS version 5.0. This problem
+was corrected in MS-DOS version 5.0a.
+
+MORE INFORMATION
+================
+
+Drives that require a 256-sector FAT occur when the disk is close to 128 MB, 256
+MB, 512 MB, or 1024 MB. The closeness to these limits increases as the drive
+size increases. For example, "close to 128 MB" is within 0.25 MB of 128 MB and
+"close to 256 MB" is within 0.74 MB of 256 MB.
+
+Determining If You Need to Install the Updated Files
+----------------------------------------------------
+
+Drives require a 256-sector FAT if they have partitions within the size ranges
+listed below. Because the potential problems are serious, these ranges include a
+margin of safety.
+
+  127 MB - 129 MB
+  254 MB - 258 MB
+  508 MB - 516 MB
+  1018 MB - 1030 MB
+  2035 MB - 2061 MB
+
+You can use the Fdisk program to determine if you have a 256-sector FAT with the
+following procedure:
+
+1. At the MS-DOS command prompt, type the following and press the ENTER key:
+
+  " fdisk " (without the quotation marks)
+
+2. Press 4 on the keyboard to select the Display Partition Information option
+  and press ENTER.
+
+3. The primary partition size is listed under the Mbytes heading. If the size
+  falls within any of the ranges specified above, obtain the updated CHKDSK.EXE
+  and UNDELETE.EXE files.
+
+4. If you have an extended partition, press the ENTER key to view those
+  partition sizes. If any of the extended partition sizes listed under the
+  Mbytes heading fall within the ranges specified above, obtain the CHKDSK.EXE
+  and UNDELETE.EXE files.
+
+5. Press the ESC key twice to exit to the MS-DOS command prompt.
+
+
+Reference(s):
+
+"MS-DOS Functions Quick Reference," Ray Duncan, Microsoft Press, Microsoft
+Corporation
+
+"QUE DOS Programmer's Reference," Terry Dettman, QUE Corporation
+
+"MS-DOS 5.0 Programmer's Reference," Microsoft Press, Microsoft Corporation, page
+315
+
+
+Additional query words: appnote 5.00
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

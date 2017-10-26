@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200386: SMS: NetWare Server Roles in SMS 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200386: SMS: NetWare Server Roles in SMS 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200386/","publisher":null,"image":null,"headline":"Q200386: SMS: NetWare Server Roles in SMS 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200386-sms-netware-server-roles-in-sms-20">Q200386: SMS: NetWare Server Roles in SMS 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q200386</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms200</span> <span class="n">kbBindery</span> <span class="n">kbCAP</span> <span class="n">kbNDS</span> <span class="n">kbOSNovell</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">20</span><span class="p">-</span><span class="n">MAR</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">SMS</span><span class="p">)</span> <span class="m">2.0</span> <span class="n">supports</span> <span class="n">NetWare</span> <span class="n">servers</span> <span class="k">in</span> <span class="n">both</span> <span class="n">Bindery</span>
+<span class="n">mode</span> <span class="k">and</span> <span class="k">in</span> <span class="n">an</span> <span class="n">NetWare</span> <span class="n">Directory</span> <span class="n">Services</span> <span class="p">(</span><span class="n">NDS</span><span class="p">)</span> <span class="n">architecture</span><span class="p">.</span>
+<span class="n">Running</span> <span class="n">Bindery</span> <span class="n">emulation</span> <span class="k">and</span> <span class="n">NDS</span> <span class="n">on</span> <span class="n">one</span> <span class="n">Novell</span> <span class="n">server</span> <span class="n">requires</span> <span class="n">the</span> <span class="n">usage</span> <span class="k">of</span> <span class="n">two</span>
+<span class="n">separate</span> <span class="n">volumes</span><span class="p">.</span> <span class="n">One</span> <span class="n">volume</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">Client</span> <span class="n">Access</span> <span class="n">point</span><span class="p">,</span> <span class="n">Distribution</span>
+<span class="n">point</span><span class="p">,</span> <span class="k">and</span> <span class="n">logon</span> <span class="n">point</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Bindery</span> <span class="n">Emulation</span> <span class="n">Site</span> <span class="nf">System</span><span class="p">,</span> <span class="k">and</span> <span class="n">one</span> <span class="n">volume</span>
+<span class="n">contains</span> <span class="n">the</span> <span class="n">Client</span> <span class="n">Access</span> <span class="n">point</span><span class="p">,</span> <span class="n">Distribution</span> <span class="n">point</span><span class="p">,</span> <span class="k">and</span> <span class="n">logon</span> <span class="n">point</span> <span class="n">for</span> <span class="n">the</span>
+<span class="n">NDS</span> <span class="n">Site</span> <span class="nf">System</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">necessary</span> <span class="n">because</span> <span class="n">the</span> <span class="n">Clicore</span><span class="p">.</span><span class="n">exe</span> <span class="n">file</span> <span class="n">is</span> <span class="n">different</span> <span class="n">for</span>
+<span class="n">NDS</span> <span class="k">and</span> <span class="n">Bindery</span> <span class="k">and</span> <span class="n">is</span> <span class="n">overwritten</span> <span class="k">if</span> <span class="n">both</span> <span class="n">Site</span> <span class="n">Systems</span> <span class="n">point</span> <span class="n">at</span> <span class="n">the</span> <span class="n">same</span>
+<span class="n">volume</span><span class="p">.</span>
+
+<span class="n">NetWare</span> <span class="n">servers</span> <span class="n">can</span> <span class="n">participate</span> <span class="k">as</span> <span class="n">site</span> <span class="n">systems</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">roles</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Client</span> <span class="n">Access</span> <span class="n">Points</span><span class="p">:</span> <span class="n">A</span> <span class="n">Client</span> <span class="n">Access</span> <span class="n">Point</span> <span class="p">(</span><span class="n">CAP</span><span class="p">)</span> <span class="n">is</span> <span class="n">a</span> <span class="n">site</span> <span class="nf">system</span> <span class="n">that</span> <span class="n">acts</span>
+  <span class="k">as</span> <span class="n">a</span> <span class="n">communication</span> <span class="n">point</span> <span class="n">between</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="k">and</span> <span class="n">the</span> <span class="n">clients</span> <span class="n">assigned</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">site</span><span class="p">.</span> <span class="n">You</span> <span class="n">need</span> <span class="n">at</span> <span class="n">least</span> <span class="n">one</span> <span class="n">CAP</span> <span class="k">in</span> <span class="n">your</span> <span class="n">site</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">install</span> <span class="n">Systems</span>
+  <span class="n">Management</span> <span class="n">Server</span><span class="p">,</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">automatically</span> <span class="n">becomes</span> <span class="n">a</span> <span class="n">client</span> <span class="n">access</span>
+  <span class="n">point</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="nb">create</span> <span class="n">additional</span> <span class="n">CAPs</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">the</span> <span class="n">workload</span> <span class="k">and</span> <span class="k">to</span> <span class="n">serve</span>
+  <span class="k">as</span> <span class="n">backup</span> <span class="n">CAPs</span> <span class="k">in</span> <span class="n">the</span> <span class="n">event</span> <span class="n">that</span> <span class="n">one</span> <span class="n">CAP</span> <span class="n">is</span> <span class="n">unavailable</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">there</span> <span class="n">are</span> <span class="n">clients</span> <span class="n">using</span> <span class="n">NetWare</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">site</span><span class="p">,</span> <span class="n">you</span>
+  <span class="n">might</span> <span class="n">want</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">CAP</span> <span class="n">on</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">type</span> <span class="k">of</span> <span class="n">NetWare</span> <span class="n">volume</span> <span class="p">(</span><span class="n">NDS</span> <span class="k">or</span>
+  <span class="n">Bindery</span><span class="p">).</span> <span class="n">Alternatively</span><span class="p">,</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">can</span> <span class="n">use</span> <span class="n">CAPs</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span>
+  <span class="n">Server</span> <span class="k">if</span> <span class="n">both</span> <span class="n">NetWare</span> <span class="k">and</span> <span class="n">Windows</span> <span class="n">redirectors</span> <span class="n">are</span> <span class="n">configured</span> <span class="n">on</span> <span class="n">the</span> <span class="n">clients</span><span class="p">.</span>
+  <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">A</span> <span class="n">CAP</span> <span class="n">can</span> <span class="n">be</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="n">computer</span><span class="p">,</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span>
+  <span class="n">share</span><span class="p">,</span> <span class="n">a</span> <span class="n">NetWare</span> <span class="n">NDS</span> <span class="n">volume</span><span class="p">,</span> <span class="k">or</span> <span class="n">a</span> <span class="n">NetWare</span> <span class="n">Bindery</span> <span class="n">volume</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Distribution</span> <span class="n">Points</span><span class="p">:</span> <span class="n">A</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">is</span> <span class="n">a</span> <span class="n">site</span> <span class="nf">system</span> <span class="n">that</span> <span class="n">stores</span>
+  <span class="k">package</span> <span class="n">files</span> <span class="n">so</span> <span class="n">clients</span> <span class="n">can</span> <span class="n">access</span> <span class="n">them</span> <span class="n">during</span> <span class="n">the</span> <span class="n">software</span> <span class="n">distribution</span> <span class="k">and</span>
+  <span class="n">installation</span> <span class="n">process</span><span class="p">.</span> <span class="n">Because</span> <span class="n">distribution</span> <span class="n">points</span> <span class="n">handle</span> <span class="n">significant</span> <span class="n">client</span>
+  <span class="n">network</span> <span class="n">activity</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">generally</span> <span class="n">better</span> <span class="k">to</span> <span class="n">assign</span> <span class="n">this</span> <span class="n">role</span> <span class="k">to</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span>
+  <span class="n">computers</span> <span class="n">other</span> <span class="n">than</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">there</span> <span class="n">are</span> <span class="n">clients</span> <span class="n">using</span> <span class="n">NetWare</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">site</span><span class="p">,</span> <span class="n">you</span>
+  <span class="n">can</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">on</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">type</span> <span class="k">of</span> <span class="n">NetWare</span> <span class="n">volume</span>
+  <span class="p">(</span><span class="n">NDS</span> <span class="k">or</span> <span class="n">Bindery</span><span class="p">).</span> <span class="n">However</span><span class="p">,</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">can</span> <span class="n">use</span> <span class="n">distribution</span> <span class="n">points</span>
+  <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="k">if</span> <span class="n">both</span> <span class="n">NetWare</span> <span class="k">and</span> <span class="n">Windows</span> <span class="n">redirectors</span> <span class="n">are</span>
+  <span class="n">configured</span> <span class="n">on</span> <span class="n">the</span> <span class="n">clients</span><span class="p">.</span>
+
+  <span class="n">A</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">can</span> <span class="n">be</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="n">computer</span><span class="p">,</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span>
+  <span class="n">share</span><span class="p">,</span> <span class="n">a</span> <span class="n">NetWare</span> <span class="n">NDS</span> <span class="n">volume</span><span class="p">,</span> <span class="k">or</span> <span class="n">a</span> <span class="n">NetWare</span> <span class="n">Bindery</span> <span class="n">volume</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Logon</span> <span class="n">Points</span><span class="p">:</span> <span class="n">Logon</span> <span class="n">points</span> <span class="n">are</span> <span class="n">the</span> <span class="n">initial</span> <span class="n">point</span> <span class="k">of</span> <span class="n">contact</span> <span class="n">between</span> <span class="n">clients</span>
+  <span class="k">and</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">environment</span><span class="p">.</span> <span class="n">When</span> <span class="n">a</span> <span class="n">client</span> <span class="n">logs</span> <span class="n">on</span> <span class="k">to</span> <span class="n">a</span>
+  <span class="n">logon</span> <span class="n">point</span><span class="p">,</span> <span class="n">the</span> <span class="n">client</span> <span class="n">runs</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">script</span><span class="p">,</span> <span class="n">determines</span> <span class="n">which</span> <span class="n">site</span> <span class="n">it</span>
+  <span class="n">belongs</span> <span class="k">to</span><span class="p">,</span> <span class="k">and</span> <span class="n">finds</span> <span class="n">a</span> <span class="n">CAP</span> <span class="n">for</span> <span class="n">installation</span><span class="p">.</span> <span class="k">In</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">,</span> <span class="n">Systems</span>
+  <span class="n">Management</span> <span class="n">Server</span> <span class="n">installs</span> <span class="n">logon</span> <span class="n">software</span> <span class="n">onto</span> <span class="n">the</span> <span class="n">domain</span> <span class="n">logon</span> <span class="n">servers</span>
+  <span class="n">within</span> <span class="n">your</span> <span class="n">network</span> <span class="n">so</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">plan</span> <span class="n">for</span> <span class="n">separate</span> <span class="n">servers</span> <span class="k">to</span> <span class="n">act</span> <span class="k">as</span>
+  <span class="n">logon</span> <span class="n">points</span><span class="p">.</span> <span class="n">NetWare</span> <span class="n">NDS</span> <span class="k">and</span> <span class="n">Bindery</span> <span class="n">volumes</span> <span class="n">are</span> <span class="n">also</span> <span class="n">installed</span> <span class="k">as</span> <span class="n">logon</span>
+  <span class="n">points</span> <span class="k">in</span> <span class="n">their</span> <span class="n">environments</span><span class="p">.</span>
+
+<span class="n">A</span> <span class="n">NetWare</span> <span class="n">server</span> <span class="n">cannot</span> <span class="n">participate</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">SMS</span> <span class="n">server</span> <span class="n">roles</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Site</span> <span class="n">Server</span> <span class="n">Role</span>
+
+<span class="p">-</span> <span class="n">Site</span> <span class="n">Database</span> <span class="n">Server</span>
+
+<span class="p">-</span> <span class="n">Component</span> <span class="n">Server</span> <span class="n">Role</span>
+
+<span class="p">-</span> <span class="n">Software</span> <span class="n">Metering</span> <span class="n">Server</span> <span class="n">Role</span>
+
+<span class="p">-</span> <span class="n">Software</span> <span class="n">Metering</span> <span class="n">Database</span> <span class="n">Server</span> <span class="n">Role</span>
+
+<span class="p">-</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span> <span class="n">Console</span> <span class="n">Role</span>
+
+<span class="p">-</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Provider</span> <span class="n">Role</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">client</span> <span class="n">access</span> <span class="n">points</span><span class="p">,</span> <span class="n">see</span> <span class="n">Chapter</span> <span class="m">14</span><span class="p">,</span> <span class="s2">"Distributing
+Software."</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">nwroles</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsms200</span> <span class="n">kbBindery</span> <span class="n">kbCAP</span> <span class="n">kbNDS</span> <span class="n">kbOSNovell</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS200</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

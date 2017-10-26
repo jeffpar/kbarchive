@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119691: How to Format Telephone Numbers with PICTURE Mask | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119691: How to Format Telephone Numbers with PICTURE Mask" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119691/","publisher":null,"image":null,"headline":"Q119691: How to Format Telephone Numbers with PICTURE Mask","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119691-how-to-format-telephone-numbers-with-picture-mask">Q119691: How to Format Telephone Numbers with PICTURE Mask</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119691
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-APR-2000
+
+2.5x 2.6x 3.00 | 2.5x 2.60 2.60a | 2.5x 2.60a
+WINDOWS        | MS-DOS          | MACINTOSH
+kbtool kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b, 2.6 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The format of the data entry @ ... GET edit region for a telephone number can be
+controlled programmatically with a mask defined using the PICTURE clause, or it
+can be controlled in the Screen Builder or Form Designer by specifying the
+picture in the Format edit region of the Field dialog box. The examples shown
+below illustrate both methods.
+
+MORE INFORMATION
+================
+
+The @ ... GET ... PICTURE clause provides the means of specifying a mask to
+control the format of data entered in a GET object in a window. The following
+paragraphs show examples of parameters of the clause that create a mask to
+control the format of a GET for entering a telephone number. These parameters
+provide all the customary nondata formatting characters (such as parentheses and
+dashes), but allow FoxPro to store only the numeric information so that the
+number is saved in just ten characters, either as a character field or as a
+numeric field. The parameters can be included either in a hard-coded "@ n.n GET
+&lt;variable/field name&gt; PICTURE ..." (without the quotation marks) command
+or they can be included in the Format box in the Field dialog box of FoxPro's
+Screen Builder.
+
+FoxPro 2.x for Windows Examples
+-------------------------------
+
+For example, if the telephone number is to appear on the screen as follows (these
+numbers are for example purposes only)
+
+  (213)123-1234
+
+the PICTURE clause should appear as follows:
+
+  PICTURE "@R (999)999-9999"
+
+The string to enter in the Format box in the Field dialog box is:
+
+  @R (999)999-9999
+
+Likewise, if the telephone number is to appear as follows
+
+  213/123-1234
+
+the mask should appear as follows:
+
+  @R 999/999-9999
+
+Visual FoxPro for Windows Examples
+----------------------------------
+
+For example, if the telephone number is to appear on the screen as follows (these
+numbers are for example purposes only)
+
+  (213)123-1234
+
+Set the Format property to "R" (without quotation marks) and the InputMask
+property to the following:
+
+  (999)999-9999
+
+Likewise, if the telephone number is to appear as follows
+
+  213/123-1234
+
+the Format property should be "R" (without quotation marks) and the InputMask
+should appear as follows:
+
+  999/999-9999
+
+Notes
+-----
+
+- The "@" symbol defines the characters following it as belonging to the
+  PICTURE clause.
+
+- The capital letter "R" and the space character following the "R" display a
+  format mask in an @ ... GET editing region. These mask characters are not
+  stored in the field when the @ ... GET editing region is exited.
+
+- The mask characters shown in the above examples, other than the digit 9, are
+  not stored in the table. These characters are skipped over when keys are
+  pressed during data entry.
+
+- The nines (9) in the mask allow only digits to be entered in character
+  fields; in numeric fields, they allow digits and signs to be entered. Since a
+  telephone number consists of digits but is seldom used in arithmetic
+  operations, the database field holding the number should be defined as a
+  character field. Only digits in the range from zero through nine are accepted
+  in the edit region.
+
+REFERENCES
+==========
+
+For additional PICTURE code options, see pages L3-33, L3-34, and L3-35 of the
+"Language Reference" for FoxPro for MS-DOS and Windows, or see page 47 of the
+"Language Reference" for FoxPro for Macintosh. Also refer to the online Help
+topic for the @ ... GET command.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin 2.50 2.50a 2.60a number format picture mask phone
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro250cMac kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b,2.5c; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

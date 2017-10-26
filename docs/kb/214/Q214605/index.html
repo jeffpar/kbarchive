@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214605/","publisher":null,"image":null,"headline":"Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214605-fp98-how-to-uninstall-and-reinstall-server-extensions-on-unix">Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214605
+Product(s): Word Front Page
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 98 for Windows, used with:
+   - the operating system: UNIX 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to uninstall and reinstall the FrontPage98 Server
+Extensions on a UNIX operating system.
+
+MORE INFORMATION
+================
+
+To uninstall the Server Extensions, follow the steps below (Note: you will need
+log in as root):
+
+1. Type the following:
+
+  "cd /usr/local/frontpage/version3.0/bin" (without the quotation marks)
+
+2. In the bin directory is an executable file called Fpsrvadm.exe. Run the
+  executable by typing the following:
+
+  "./fpsrvadm.exe" (without the quotation marks)
+
+3. When you see the list of 15 options to choose from, choose option 3 to
+  uninstall.
+
+4. The default in the brackets is number [1]. Select option 3 and press the
+  Enter key.
+
+5. The next step asks for the port number. The default port is [80] unless you
+  have installed it to a different port. Press the Enter key. If you have
+  installed it to a different port, type in the port number and then press the
+  Enter key.
+
+6. When it informs you that Port 80: uninstall is complete, you will be returned
+  to the bin directory.
+
+To install the Server Extensions, perform the following steps (Note: you will
+need to be logged in as root):
+
+1. Type the following:
+
+  "cd /usr/local/frontpage/version3.0/bin" (without the quotation marks)
+
+2. In the bin directory is an executable file called Fpsrvadm.exe. Run the
+  executable by typing the following:
+
+  "./fpsrvadm.exe" (without the quotation marks)
+
+3. When see the list of 15 options to choose from, choose option 1 to install.
+
+4. The default in the brackets is number [1]. Press the Enter key.
+
+5. The next set of choices is for the type of Web server. Locate the number that
+  corresponds to your Web server, type in the number, and then press the Enter
+  key.
+
+6. The next prompt is for the server config file name. You will need to know
+  where this file is located. The file is Httpd.conf. You will need to type in
+  the entire path, for example /etc/httpd/conf/httpd.conf.
+
+  If you are not sure, type the following command:
+
+  "find / -name httpd.conf -print" (without the quotation marks)
+
+7. The next prompt requests for the host name. Unless your are multihosting your
+  Web server or have a virtual server, press the Enter key.
+
+  If you are multihosting or have a virtual server, type in either the IP
+  address or the Host Name, and then press the Enter key.
+
+8. The next prompt ask for the user name. This is typically going to be the
+  owner of the Web. Type in the user's name and press the Enter key. (This will
+  be used in FrontPage when prompted for a user's name.)
+
+9. The next prompt ask for a password. Type in whatever password you want to
+  assign the Web owner. (This will be used when you are prompted in FrontPage
+  for a password.)
+
+10. Retype the password to confirm it, and then press the Enter key. The install
+  in now complete.
+
+Note: The FrontPage patched Apache servers on UNIX require both the UID (User
+Identification) of the user and GID (Group Identification) of the group that own
+the content are a higher value than the values defined below:
+
+UID
+
+Linux - 15
+All other versions of UNIX - 11
+
+GID
+
+HPUX - 20
+IRIX - 20
+SUNOS4 - 20
+SCO - 24
+All other versions of UNIX - 21
+
+The above restrictions apply only to the Apache Web server, with the Microsoft
+FrontPage patch compiled into it.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbFrontPageSearch _IKkbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

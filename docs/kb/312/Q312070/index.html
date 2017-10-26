@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312070: ENC: Computer May Stop Responding During Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312070: ENC: Computer May Stop Responding During Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312070/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312070/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312070/","publisher":null,"image":null,"headline":"Q312070: ENC: Computer May Stop Responding During Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312070-enc-computer-may-stop-responding-during-installation">Q312070: ENC: Computer May Stop Responding During Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312070
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 28-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta Reference Library 2003, version 1.0 
+- Microsoft Encarta Reference Library 2003 - DVD Edition 
+- Microsoft Encarta Encyclopedia Standard 2003 
+- Microsoft Encarta Encyclopedia Deluxe 2003 
+- Microsoft Encarta Reference Library 2002, version 1.0 
+- Microsoft Encarta Reference Library 2002 - DVD Edition 
+- Microsoft Encarta Encyclopedia Deluxe 2002, version 1.0 
+- Microsoft Encarta Encyclopedia Standard 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install any of the products listed above, your computer may stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+- Your computer has programs running in the background that are using resources
+  the installation process requires to update and cannot access or may be
+  causing a conflict.
+
+- Your CD-ROM player has trouble reading the CD-ROM installation disc.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow the steps below in the order given.
+
+Clean Boot the Computer
+-----------------------
+
+To clean boot the computer, use the appropriate method for your version of
+Microsoft Windows.
+
+Microsoft Windows XP:
+
+1. Click Start, and then click Run.
+
+2. Type "msconfig" (without the quotation marks) in the Open box, and then click
+  OK.
+
+3. Click the General tab, and then click Selective Startup.
+
+4. Click to clear the following check boxes under Selective Startup:
+
+   - "Process SYSTEM.INI file"
+   - "Process WIN.INI file"
+   - "Load Startup Items"
+
+5. Click the Services tab, click to select the "Hide All Microsoft Services"
+  check box, and then click Disable All.
+
+6. Click OK, and then click Restart to restart the computer.
+
+For additional information about how to perform a clean boot in Windows XP, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q310353 How to Perform a Clean Boot in Windows XP
+
+Microsoft Windows Millennium Edition (Me):
+
+For additional information about how to perform a clean boot, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+Microsoft Windows 98:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+  click OK.
+
+3. On the General tab, click Selective Startup, and then click to clear the
+  following check boxes:
+
+   - Process Config.sys File
+
+   - Process Autoexec.bat File
+
+   - Process Winstart.bat File (if available)
+
+   - Process Win.ini File
+
+   - Load Startup Group Items
+
+4. Click OK. When you are prompted to restart the computer, do so.
+
+For additional information about how to clean boot Windows 98, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+
+NOTE: To restore your original Startup options, click Normal Startup on the
+General tab in System Configuration Utility.
+
+Uninstall Encarta Reference Library
+-----------------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, double-click "Microsoft Encarta Reference
+  Library", and then follow the onscreen instructions for the removal.
+
+Remove Program Folders
+----------------------
+
+To remove the program folders, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type (including quotation marks):
+
+  "c:\Program Files\Microsoft Encarta"
+
+3. Click OK.
+
+4. In the Microsoft Encarta dialog box, click the "Encarta Reference Library
+  200x" folder, and then press DELETE.
+
+5. Close the Microsoft Encarta dialog box.
+
+6. Click Start, and then click Run.
+
+7. In the Open box, type (including quotation marks):
+
+  "c:\Program Files"
+
+8. Click OK.
+
+9. If you are using Encarta 2002, click the Microsoft FactFinder folder, and
+  then press DELETE.
+
+  NOTE: FactFinder is not included in Encarta 2003.
+
+10. Close the Program Files dialog box.
+
+11. Click Start, and then click Run.
+
+12. In the Open box, type (including quotation marks):
+
+  "c:\Program Files\Common Files\Microsoft Shared"
+
+13. Click OK.
+
+14. If you are using Encarta 2002, in the "Program Files\Common Files\Microsoft
+  Shared" dialog box, select the following folders, and then press DELETE.
+
+   - Encarta Researcher
+
+   - Reference 2002
+
+  NOTE: If you are using Encarta Reference Library 2003, delete Encarta
+  Researcher, and both Reference 2002 and Reference 2003.
+
+15. Close the "Program Files\Common Files\Microsoft Shared" dialog box.
+
+
+Clean the Program CD-ROM
+------------------------
+
+Clean the program CD-ROM. To do this, use a CD-ROM cleaning kit, or gently wipe
+the silver side of the CD-ROM with a soft, lint-free cotton cloth. Wipe from the
+center of the CD-ROM outward.
+
+NOTE: Do not use paper, which can scratch the plastic and leave streaks, and do
+not use a circular motion when you wipe the CD-ROM.
+
+If the issue continues to occur, clean the CD-ROM with a damp cloth or a
+commercial CD cleaning solution. Dry the CD-ROM thoroughly before you insert it
+into the CD-ROM drive.
+
+For additional information about CD-ROM troubleshooting, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q218617 How to Troubleshoot CD-ROM Read Errors
+
+Install Encarta Reference Library
+---------------------------------
+
+Insert the installation CD ROM, and select Typical or Minimal installation.
+Follow the onscreen instruction for the installation process.
+
+MORE INFORMATION
+================
+
+If Setup is run subsequent times and it appears to complete successfully, the
+following issues may occur:
+
+- Installer skips recopying the files, and partially coping files when it
+  previously stopped responding.
+
+- Issues that occur later in specific features of the program.
+
+- The files copied before the program stopped responding are not removed by
+  Installer or the Add/Remove Programs tool.
+
+
+Additional query words: freeze setup
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002 kbEncartaEncyc2002 kbEncartaEnCyc2002Del kbEncartaRef2002DVD
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

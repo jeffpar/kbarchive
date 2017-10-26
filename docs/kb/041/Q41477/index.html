@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41477: QuickC 2.00 README.DOC: Using Another Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41477: QuickC 2.00 README.DOC: Using Another Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41477/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41477/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41477/","publisher":null,"image":null,"headline":"Q41477: QuickC 2.00 README.DOC: Using Another Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41477-quickc-200-readmedoc-using-another-editor">Q41477: QuickC 2.00 README.DOC: Using Another Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41477
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 28-FEB-1989
+
+The following information is taken from the QuickC Version 2.00
+README.DOC file, part 1, "Notes on 'Up and Running.'" The notes refer
+to specific pages in "Up and Running."
+
+Page 32  Using Another Editor
+
+The instructions for using another editor are not complete. You can
+add any other editor to the menu. To use "Brief(R)," "Epsilon(TM)," or
+the Microsoft "M" Editor, follow these steps:
+
+Open the Utility menu and choose Customize Menu. Highlight "Custom&amp;
+Editor" and choose the &lt;Edit&gt; button. In the text box for Path Name,
+list the path and the name of the editor. For example, \BIN\B,
+extension. Next, follow the appropriate steps below:
+
+Brief
+
+1. Set the Arguments command line to:
+    -m"editat $LINE $COL" $FILE
+
+2. Add the macro below to your Brief macro file:
+
+     ; *** editat -- interface to QC Utility.Edit menu
+     ; SYNOPSIS
+     ; b -m"editat $LINE $COL" $FILE
+     ; DESCRIPTION
+     ; editat positions Brief at the specified line and column in the
+     ; current file. It is invoked from the command line (i.e. -m )
+     ; *
+        (macro editat
+         (
+           (int line col)
+
+           (get_parm 0 line)
+           (get_parm 1 col)
+           (move_abs line col)
+         )
+       )
+
+Epsilon
+
+Set the Arguments command line to:
+
+     $FILE +$LINE
+
+M Editor
+
+Set the Arguments command line to:
+
+   /e "Arg \"$LINE\" Mark" $FILE
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

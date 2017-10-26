@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145816: How to Access Report’s Data Environment While the Report Runs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145816: How to Access Report’s Data Environment While the Report Runs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145816/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145816/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145816/","publisher":null,"image":null,"headline":"Q145816: How to Access Report’s Data Environment While the Report Runs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145816-how-to-access-reports-data-environment-while-the-report-runs">Q145816: How to Access Report’s Data Environment While the Report Runs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145816
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to access a report's data environment while the report
+is running.
+
+MORE INFORMATION
+================
+
+When you create a report, an associated data environment (DE) is created. The
+data environment contains information about the tables, views and relations
+associated with the report.
+
+The data environment is an object, and it is a container for a cursor and a
+relation object. You can gain access to the DE of a report while it is running,
+so you can manipulate the its properties and methods.
+
+To gain access to the data environment, you need to be able to reference it as an
+object. Use the NAME clause on the REPORT FORM command to specify an object's
+variable name for the data environment as in this example:
+
+     REPORT FORM Samples\Mainsamp\Reports\salessum NAME salessum PREVIEW ;
+        NOWAIT
+     ?salessum.Name           &amp;&amp; Returns DataEnvironment
+     ?salessum.Cursor1.Alias  &amp;&amp; Returns sales_summary
+
+For example, if you want to manually open the tables associated with a report,
+you can call the OpenTables method of the data environment. The following
+step-by-step procedure explains how.
+
+Step-by-Step Procedure
+----------------------
+
+1. Create a new report.
+
+2. Add the Customer table, located in Samples\Data, to the data environment, and
+  drag it onto the Detail band of the report to create a quick report.
+
+3. In the DE, set the AutoOpenTables property to false (.F.).
+
+4. Add a title to the report, and place a field in the Title band. In the field
+  expression, type OpenAll() to call a user-defined function.
+
+5. Create a program file. Adjust the following code to your needs, and place it
+  in the program file:
+
+     REPORT FORM &lt;reportname&gt; NAME TEST  &amp;&amp;Names the data environment TEST
+
+     PROCEDURE openall
+     IF &lt;condition&gt;
+        TEST.OpenTables      &amp;&amp; Calls the OpenTables method of the DE
+     ENDIF
+     RETURN ""
+
+6. Save the program, and run it.
+
+Additional query words: DE aselobj
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

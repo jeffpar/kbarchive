@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173126/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173126/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173126/","publisher":null,"image":null,"headline":"Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173126-ppt-using-leftmargin-or-firstmargin-yields-unexpected-results">Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173126
+Product(s): Microsoft PowerPoint for Windows
+Version(s): MACINTOSH:98; WINDOWS:97
+Operating System(s): 
+Keyword(s): kbprogramming kbdtacode KbVBA
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint 98 Macintosh Edition 
+- Microsoft PowerPoint 97 for Windows 
+- Microsoft Visual Basic for Applications 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a Microsoft Visual Basic for Applications macro or procedure to
+modify the LeftMargin and FirstMargin properties of the RulerLevel class, some
+values that are assigned to these properties produce unexpected results.
+
+CAUSE
+=====
+
+This problem occurs because the LeftMargin and FirstMargin properties allow you
+to assign invalid values to the properties.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+There are five RulerLevel classes, each of which corresponds to a possible
+indent level. The FirstMargin and LeftMargin values of RulerLevel 1 have a valid
+range of (-9.0 to 4,095.0). The valid range of values for the FirstMargin and
+LeftMargin properties for RulerLevel classes 2 through 4 are described as
+follows.
+
+For each RulerLevel L in the set {2, 3, 4, 5}, the following equations describe
+the minimum value for the FirstMargin and LeftMargin properties:
+
+     Min(RulerLevel(L).FirstMargin) = Max(RulerLevel(L-1).FirstMargin,
+   
+                                          RulerLevel(L-1).LeftMargin) + 9
+   
+     Min(RulerLevel(L).LeftMargin) = Max(RulerLevel(L-1).FirstMargin,
+   
+                                         RulerLevel(L-1).LeftMargin) + 9
+
+If you assign a value that is between 4,096 and 8,182 to the FirstMargin or
+LeftMargin property, a sign bit is switched. The resulting values range from
+-4,096 to -10; these values are invalid. Assigning values that range from 8,183
+to 8,191 results in values that range from -9 to -1; these values are valid.
+
+Additional query words: 8.00 ppt8 vba vbe macppt
+
+======================================================================
+Keywords          : kbprogramming kbdtacode KbVBA 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbZNotKeyword6 kbPowerPt97 kbPowerPt97Search kbPowerPt98Search kbPowerPt98 kbVBASearch kbZNotKeyword3
+Version           : MACINTOSH:98; WINDOWS:97
+Hardware          : MAC x86
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196168: XADM: Error Configuring Message Service (MSEMS) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196168: XADM: Error Configuring Message Service (MSEMS)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196168/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196168/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196168/","publisher":null,"image":null,"headline":"Q196168: XADM: Error Configuring Message Service (MSEMS)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196168-xadm-error-configuring-message-service-msems">Q196168: XADM: Error Configuring Message Service (MSEMS)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196168
+Product(s): Microsoft Exchange
+Version(s): WINNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the one-step merge in the Exmerge.exe utility, the following error
+events are displayed in the Exmerge log file located in C:\Exmerge.log:
+
+  [16:31:21] Copying data from mailbox 'Jim Wallace' ('JIMWA') on Server
+  'BATTLEBAT' to file 'C:\EXMERGEDATA\JIMWA.PST'.
+  [16:31:24] Successfully completed copying mailbox 'Jim Wallace' to file
+  'C:\EXMERGEDATA\JIMWA.PST'
+  [16:31:24] Merging data from file 'C:\EXMERGEDATA\JIMWA.PST' to mailbox
+  'Jim Wallace' ('JIMWAL') on server 'WHAMYOW'.
+  [16:31:25] Error configuring message service (MSEMS)
+  [16:31:25] Errors encountered. Copy process aborted
+  [16:31:25] Deleting file 'C:\EXMERGEDATA\JIMWA.PST'
+  [16:31:25] 1 mailboxes successfully processed. 1 errors encountered
+
+Running in 2-step mode reveals the following:
+
+  Part 1 Log:
+  [16:43:46] Copying data from mailbox 'Jim Wallace' ('JIMWA') on Server
+  'BATTLEBAT' to file 'C:\EXMERGEDATA\JIMWA.PST'.
+
+  Part 2 Log:
+  [16:46:09] Merging data from file 'C:\EXMERGEDATA\JIMW.PST' to mailbox
+  'Jim
+  Wallace' ('JIMW') on server 'WHAMYOW'.
+  [16:46:09] Error. File 'C:\EXMERGEDATA\JIMW.PST' not found. Cannot merge
+  data into mailbox for user 'Jim Wallace' ('JIMW').
+
+CAUSE
+=====
+
+The directory name of the user on the target server is not the same as the user
+name on the original server.
+
+WORKAROUND
+==========
+
+To correct the problem, rename the .pst file created in Step 1 of the
+Exmerge.exe utility to original directory name of the user on the target
+Exchange Server computer.
+
+MORE INFORMATION
+================
+
+This error will occur if the Exchange Server recipient's alias was created with
+a different directory name, and then changed to reflect the original e- mail
+address. This can be determined by looking at the directory name on the new
+Exchange Server computer while running the Exchange Server Administrator program
+in raw mode.
+
+WARNING: Using the raw mode of the Exchange Server Administrator program
+(admin/r) incorrectly can cause serious problems that may require you to
+reinstall Microsoft Windows NT Server and/or Microsoft Exchange Server.
+Microsoft cannot guarantee that problems resulting from the incorrect use of raw
+mode can be solved. Use raw mode at your own risk.
+
+To start the Exchange Server Administrator program in raw mode, at a command
+prompt, type:
+
+  c:\exchsrvr\bin\admin /r
+
+
+Additional query words: EXMERGE MSEMS
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINNT:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

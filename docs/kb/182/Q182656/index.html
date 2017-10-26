@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182656/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182656/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182656/","publisher":null,"image":null,"headline":"Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182656-new-security-feature-in-sna-40-may-prevent-access-to-appc-lus">Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182656
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some cases, a remote APPC LU that is correctly defined in SNA Server Manager
+may not be visible to a transaction program (TP) requesting use of the APPC LU.
+The APPC LU may post Event an 93 in the Windows NT system event log (for
+example, 5250 emulator), indicating that the local conversation failed to start
+successfully.
+
+You may observe other symptoms too, such as an application message indicating
+that the remote LU name specified for the session is invalid or not known to the
+TP.
+
+CAUSE
+=====
+
+The APPC LU access permission has been enabled in SNA Server Manager, but the
+APPC remote LU has not been explicitly assigned to the user or group.
+
+MORE INFORMATION
+================
+
+With SNA Server version 4.0 and later, it is possible to provide user level
+security permissions to all LU types defined (for example, 3270, LUA, and APPC).
+Previous versions of SNA Server did not allow user-level access permissions to
+be applied to APPC and LUA LUs; only 3270 LUs had this capability.
+
+Users and applications will have the appropriate permissions to use all remote
+APPC LU resources defined in the SNA Server subdomain by default because the
+APPC LU security featured is disabled. If an SNA Server administrator enables
+the APPC LU security feature in SNA Server Manager, then all users will be
+*denied* access to *all* remote APPC Lus, unless the LUs are explicitly assigned
+to the user. This behavior is similar to the way that 3270 display LUs have
+traditionally operated in SNA Server.
+
+An SNA Server administrator can adjust LU security settings for the SNA Server
+subdomain by using the SNA Server Manager utility and selecting the security tab
+for the subdomain properties. A list of LU types (3270, LUA, APPC) will be
+presented, indicating the current security settings. By default, APPC and LUA
+will be unchecked.
+
+For more details concerning security and rights assignment, please see the online
+Help information.
+
+The following trace fragment is an LU6.2 message trace that details the message
+activity between the client TP and SNA Server. An application that fails to
+access a remote TP because of security permissions will fail with following
+return qualifier(s):
+
+----------------------------------------------- 07:27:16.0712
+081F0001-&gt;01020000 OPEN  LU62 REQUEST
+
+---- Header at address 015C4724, 2 elements ----
+01240000 1D000000 0000AC58 01003301     &lt;.$.........X..3.&gt;
+
+---- Element at address 01FB2918, start 1, end 80 ----
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 01000000 00000002 4C4F4341     &lt;............LOCA&gt;
+4C202020 5448494E 47202020 D8D7C3E2     &lt;L   THING   QPCS&gt;
+E4D7D740 00000000 00000000 00000000     &lt;UPP@............&gt;
+00000000 00000000 00000000 603C2500     &lt;............`&lt;%.&gt;
+
+---- Element at address 01FBEF90, start 1, end 127 ----
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 000000       &lt;............... &gt;
+----------------------------------------------- 07:27:17.0363
+01020000-&gt;081F0001 OPEN  LU62 RSP ERROR
+                  Err1:0000 Err2:0004
+
+---- Header  at address 015C4724, 2 elements ----
+03240000 1D000000 0004AC58 01003301     &lt;.$.........X..3.&gt;
+
+---- Element at address 01FB2918, start 1, end 80 ----
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 01061300 00000002 4C4F4341     &lt;............LOCA&gt;
+          ^^^^
+4C202020 5448494E 47202020 51504353     &lt;L   THING   QPCS&gt;
+55505020 00000000 00000000 00000000     &lt;UPP ............&gt;
+00000000 00000000 00000000 603C2500     &lt;............`&lt;%.&gt;
+
+---- Element at address 01FBEF90, start 1, end 89 ----
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00060814 00                    &lt;.........       &gt;
+
+The 0613 above suggests a parameter check with a bad remote LU alias specified by
+the TP. This error message would, in fact, be accurate for this particular
+problem, because the security credentials under which the TP is running do not
+have permission to use the LU. So you don't see the TP. To correct this problem,
+the SNA Server administrator can assign the remote LU to the user, or turn off
+the APPC LU security in the SNA Server Manager if it is not needed.
+
+For more details on SNA Server tracing, please see the SNA Server Administration
+guide.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

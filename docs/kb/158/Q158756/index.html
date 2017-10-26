@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158756: BUG: Double Data Type Does Not Display Small Values Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158756: BUG: Double Data Type Does Not Display Small Values Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158756/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158756/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158756/","publisher":null,"image":null,"headline":"Q158756: BUG: Double Data Type Does Not Display Small Values Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158756-bug-double-data-type-does-not-display-small-values-correctly">Q158756: BUG: Double Data Type Does Not Display Small Values Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158756
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the stored value is smaller than 10 to the minus (-)15th power, the new
+data type, known as double, is not displayed correctly in a table field.
+
+Visual FoxPro should display numbers smaller than 10 to the -15th power. For
+example, the number 0.00000000000000009 (9 x 10 to the -17th power) should be
+displayed as 9.0000000000000E-17. You see this as .0000000000000000000 in a
+browse.
+
+In Visual FoxPro versions 3.0 and 3.0b, values smaller than 10 to the -15th power
+are displayed as a string of zeros.
+
+In Visual FoxPro 5.0, values between 10 to the -15th power and 10 to the -30th
+power are displayed as zeros. Values smaller than 10 to the -30th power are
+displayed correctly. For example, 9 x 10 to the -32nd power is displayed
+correctly as 9.0000000000000E-32.
+
+Values between 10 to the -13th power and 10 to the -15th power may also appear
+incorrectly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The values are stored correctly, but displayed incorrectly. Arithmetic
+operations that use the values are performed correctly. To see the values, you
+must multiply them by a positive power of 10. As a result, the significant
+digits are within the range of values that are displayed correctly.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Visual FoxPro 3.0, 3.0b, and 5.0 may display the following commands in the
+Command window:
+
+     CREATE TABLE dpt (dp B(18))     &amp;&amp; Double data, 18 to right of decimal
+     INSERT INTO dpt (dp) VALUES (9)
+     BROWSE     &amp;&amp;; The data appears as a 9, a decimal, and 18 zeros
+     REPLACE dp WITH dp/10**15  &amp;&amp; 0. then 14 zeros followed by 9000
+     REPLACE dp WITH dp/10      &amp;&amp; 0. then 14 zeros followed by 1000
+     REPLACE dp WITH 9          &amp;&amp; Reset
+     REPLACE dp WITH dp/10**31  &amp;&amp; Correct in version 5, wrong in version 3.x
+     REPLACE dp WITH dp/10**277 &amp;&amp; Correct in version 5, zeros in version 3.x
+     REPLACE dp WITH dp*10**308 &amp;&amp; Restores 9.00000000000000000
+
+Additional query words: kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

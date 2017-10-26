@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186380/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186380/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186380/","publisher":null,"image":null,"headline":"Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186380-bug-error-when-using-table-aliases-with-oracle-odbc-driver">Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186380
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.5,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Operating System(s): 
+Keyword(s): kbDatabase kbDriver kbODBC kbOracle kbDSupport kbMDAC250bug
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.0, versions Build 2.73.7269, Build 2.73.7283.01, Build 2.73.7283.03 
+- Microsoft ODBC for Oracle version 2.5 Build 2.573.2927 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use table aliases in SELECT statements with the Microsoft Oracle
+ODBC driver and you are using the Keyset cursor type, you receive the following
+error:
+
+  [Microsoft][ODBC driver for Oracle]Cannot use Keyset-driven cursor on join,
+  with union, intersect or minus or on read only result set"
+
+CAUSE
+=====
+
+When the driver re-writes the SQL statement to send to the Oracle server it
+doesn't create the correct syntax.
+
+Internally, Oracle returns the following error message:
+
+  ORA-00964: table name not in FROM list
+
+In turn, The Microsoft Oracle ODBC driver maps that error message to the message
+listed in the SYMPTOMS section of this article.
+
+RESOLUTION
+==========
+
+The solution depends on the nature of the application. If the application needs
+to use Keyset cursors, it may not use table aliases. If the application must use
+table aliases, the cursor type must be changed to FORWARD-ONLY or STATIC.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior using ODBCTest
+------------------------------------------
+
+1. Make a full connection to an Oracle DataSource. ODBC Behavior is set to 2.0,
+  and Cursor Library is set to "Use Driver".
+
+2. From the Attr menu select SQLSetStmtAttr.
+
+3. Set the attribute SQL_ATTR_CURSOR_TYPE=6 to SQL_CURSOR_KEYSET_DRIVEN=1, and
+  then click OK.
+
+4. Set the attribute SQL_ATTR_CONCURRENCY=7 to SQL_CONCUR_VALUES=4, and then
+  click OK.
+
+5. Type in the following statement in the "henv" window.
+
+  SELECT * FROM demo.customer myalias
+
+6. Click on the toolbar button for SQLExecDirect (the button with exclamation
+  point), or select the Stmt menu and chose SQLExecDirect. The error message
+  appears.
+
+NOTE: This error occurs regardless of the program's front end. This error has
+been reported in Visual Basic and Visual C++.
+
+
+Additional query words: kbDSupport kbOracle kbDatabase kbODBC kbDriver odbcOracle
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbODBC kbOracle kbDSupport kbMDAC250bug 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC250 kbODBCOracle2737269 kbODBCOracle273728303 kbODBCOracle25732927 kbODBCOracle273728301 kbODBCOracle200Search kbODBCOracle250Search
+Version           : :2.5,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

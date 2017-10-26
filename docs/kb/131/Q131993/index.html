@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131993: PRB: DDX Displays Float/Double in Exponential Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131993: PRB: DDX Displays Float/Double in Exponential Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131993/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131993/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131993/","publisher":null,"image":null,"headline":"Q131993: PRB: DDX Displays Float/Double in Exponential Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131993-prb-ddx-displays-floatdouble-in-exponential-format">Q131993: PRB: DDX Displays Float/Double in Exponential Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131993
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbDlg kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 29-JUL-2001
+
+1.50 1.51 1.52 | 2.00 2.10 4.00
+WINDOWS        | WINDOWS NT
+kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A floating point or double value may appear unexpectedly in exponential format
+(scientific notation) in an edit control in an MFC dialog box or formview. This
+may happen if the following is used to associate a DDX variable of type float or
+double with the edit control:
+
+  DDX_Text(CDataExchange* pDX, int nIDC, float&amp; value)
+  DDX_Text(CDataExchange* pDX, int nIDC, double&amp; value)
+
+This is true even though the documentation indicates that DDX_Text produces the
+exponential format only when the decimal point format is not possible.
+
+CAUSE
+=====
+
+In Visual C++ for Windows version 1.5x and Visual C++ 32-bit Edition, version
+2.x, the edit control value appears in exponential format because DDX_Text()
+uses gcvt() for floats and doubles. The gcvt() C Run-time
+
+  function returns exponential format for all numbers of the format 0.0&lt;x&gt;,
+
+where x is any sequence of digits.
+
+In Visual C++ 32-bit Edition, version 4.0, it is less likely that an edit
+control's value will appear in exponential format, but it is still possible.
+DDX_Text calls the internal C Run-time function _stprintf() with a format
+specifier of "%.*g" and a precision of either FLT_DIG for floats or DBL_DIG for
+doubles. As their underlying implementations are the same, _stprintf() follows
+the same rules as does printf(). As the Visual C++ 4.0 Books Online point out in
+the "printf Type Field Characters" topic, the field type "g" yields a
+
+  Signed value printed in f or e format, whichever is more compact
+  for the given value and precision. The e format is used only when
+  the exponent of the value is less than -4 or greater than or equal
+  to the precision argument. . .
+
+RESOLUTION
+==========
+
+To work around this behavior, rewrite the DDX_Text() function to use fcvt().
+It's a good idea to create a function that calls fcvt() and does all the
+formatting of the string returned from fcvt(). You would call this function from
+your own DDX_Text().
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The definitions for the float and the double versions of DDX_Text can be found
+in the MFC source file DLGFLOAT.CPP in the MFC\SRC subdirectory of the main
+Visual C++ product directory. We recommend that you familiarize yourself with
+these functions and those that they call to obtain a solid understanding of
+their implementations. This will help you rewrite them in the event you decide
+to do so.
+
+The following provides two sample code backbones for the resolution mentioned
+above, one for Visual C++ versions 1.5 through 2.2 and one for Visual C++ 4.0.
+Sample Code I assumes that you have an edit control with ID IDC_EDIT1 on a form
+view with an associated DDX variable of type float called m_eFloat. The custom
+DDX_Text function is called DDX_MyFloatText. It uses the function
+double_to_char, which reads in a double and returns a character string
+representing the double. Sample Code II makes similar assumptions but supports
+an edit control with type double as well. The custom functions are called
+DDX_MyFloatText and DDX_MyDoubleText. They both depend on the internal CRT
+function _stprintf.
+
+Sample Code I - for Visual C++ 16-bit 1.5x and Visual C++ 32-bit 2.x
+--------------------------------------------------------------------
+
+  // include header files.
+  #include &lt;stdio.h&gt;
+  #include &lt;stdlib.h&gt;
+  #include &lt;string.h&gt;
+
+  //............
+  //............
+  //............
+
+  // The function prototypes
+  void AFXAPI DDX_MyFloatText(CDataExchange* pDX, int nIDC,
+                              float&amp; value);
+  char *double_to_char (double number);
+  static BOOL PASCAL NEAR _AfxSimpleFloatParse(const char* pszText,
+                                               double&amp; d);
+
+  //............
+  //............
+  //............
+
+  // Change the DoDataExchange to use DDX_MyFloatText
+  void CDlgfloatView::DoDataExchange(CDataExchange* pDX)
+  {
+      CFormView::DoDataExchange(pDX);
+      //{{AFX_DATA_MAP(CDlgfloatView)
+      DDX_MyFloatText(pDX, IDC_EDIT1, m_eFloat);
+      //}}AFX_DATA_MAP
+  }
+
+  //............
+  //............
+  //............
+
+  // Implementation of DDX_MyFloatText and other helper functions
+  void AFXAPI DDX_MyFloatText(CDataExchange* pDX, int nIDC,
+                              float&amp; value)
+  {
+      HWND hWndCtrl = pDX-&gt;PrepareEditCtrl(nIDC);
+      char szT[64];
+      if (pDX-&gt;m_bSaveAndValidate)
+      {
+          ::GetWindowText(hWndCtrl, szT, sizeof(szT));
+          double d;
+          if (!_AfxSimpleFloatParse(szT, d))
+          {
+              AfxMessageBox(AFX_IDP_PARSE_REAL);
+              pDX-&gt;Fail();            // throws exception
+          }
+          value = (float)d;
+      }
+      else
+      {
+          char * pszCvt = double_to_char(value);
+          if (pszCvt)
+          {
+              int nNewLen = lstrlen(pszCvt);
+              char szOld[64];
+              // fast check to see if text really changes (reduces
+              // flash in controls)
+              if (nNewLen &gt; sizeof(szOld) ||
+                  ::GetWindowText(hWndCtrl, szOld, sizeof(szOld)) !=
+                                  nNewLen ||
+                  lstrcmp(szOld, pszCvt) != 0)
+              {
+                  // change it
+                  ::SetWindowText(hWndCtrl, pszCvt);
+              }
+              delete pszCvt;
+          }
+          else
+          {
+              TRACE("DDX_MyFloatText() failed to convert float
+                    value.\n");
+              pDX-&gt;Fail();            // throws exception
+          }
+      }
+  }
+
+  #define PRECISION  5
+
+  char *double_to_char (double number)
+  {
+     char *buffer,*temp ;
+
+     int  decimal_spot,
+          sign,
+          count,
+          current_location = 0,
+          zeropos;
+
+     temp = _fcvt (number, PRECISION, &amp;decimal_spot, &amp;sign) ;
+
+     if (strlen (temp) &gt; PRECISION)
+        buffer = new char[(strlen (temp) + 3)];
+     else
+        buffer = new char[(PRECISION + 3)];
+
+     if (buffer == NULL)
+     {
+        OutputDebugString("Memory allocating attempt has failed in"
+                          "'double_to_char'\n") ;
+        return (NULL) ;
+     }
+
+   /* Add negative sign if required. */ 
+
+     if (sign)
+        buffer [current_location++] = '-' ;
+
+   /* Place decimal point in the correct location. */ 
+
+     if (decimal_spot &gt; 0)
+     {
+        strncpy (&amp;buffer [current_location], temp, decimal_spot) ;
+        buffer [decimal_spot + current_location] = '.' ;
+        strcpy (&amp;buffer [decimal_spot + current_location + 1],
+                        &amp;temp [decimal_spot]) ;
+     }
+     else
+     {
+        buffer [current_location++] = '0';
+        buffer [current_location] = '.' ;
+        for(count = current_location-(1+sign);
+            count&lt;abs(decimal_spot); count++)
+           buffer [count + (current_location+1)] = '0' ;
+        strcpy (&amp;buffer [count + (current_location+1)], temp) ;
+     }
+
+     zeropos = strlen(buffer)-3;
+     if (buffer[zeropos+2] == '0')
+     {
+
+       while (buffer[zeropos--] == '0')
+           buffer[zeropos+2] = '\0';
+
+       if (buffer[zeropos+1] != '.')
+           buffer[zeropos+2] = '\0';
+
+     }
+     return (buffer) ;
+  }
+
+  static BOOL PASCAL NEAR _AfxSimpleFloatParse(const char* pszText,
+                                               double&amp; d)
+  {
+      ASSERT(pszText != NULL);
+      while (*pszText == ' ' || *pszText == '\t')
+          pszText++;
+
+      ASSERT(!::IsDBCSLeadByte(*pszText));
+      char chFirst = pszText[0];
+      d = strtod(pszText, (char**)&amp;pszText);
+      if (d == 0.0 &amp;&amp; chFirst != '0')
+          return FALSE;   // could not convert
+      while (*pszText == ' ' || *pszText == '\t')
+          pszText++;
+      ASSERT(!::IsDBCSLeadByte(*pszText));
+
+      if (*pszText != '\0')
+          return FALSE;   // not terminated properly
+
+      return TRUE;
+  }
+
+  Sample Code II - for Visual C++ 32-bit 4.0
+  ------------------------------------------
+
+  //............
+  //............
+  //............
+
+  // The function prototypes
+  void AFXAPI DDX_MyFloatText(CDataExchange* pDX, int nIDC, float&amp; value);
+  void AFXAPI DDX_MyDoubleText(CDataExchange* pDX, int nIDC, double&amp; value);
+  void AFXAPI _MyAfxTextFloatFormat(CDataExchange* pDX, int nIDC,
+                                    void* pData, double value, int nSizeGcvt,
+                                    int nSizeType);
+
+  //............
+  //............
+  //............
+
+  // Change the DoDataExchange to use DDX_MyFloatText or DDX_MyDoubleText
+  void CDlgfloatView::DoDataExchange(CDataExchange* pDX)
+  {
+      CFormView::DoDataExchange(pDX);
+      //{{AFX_DATA_MAP(CDlgfloatView)
+      DDX_MyFloatText(pDX, IDC_EDIT1, m_eFloat);
+      DDX_MyDoubleText(pDX, IDC_EDIT2, m_eDouble);
+      //}}AFX_DATA_MAP
+  }
+
+  //............
+  //............
+  //............
+
+  // Implementation of DDX_MyFloatText, DDX_MyDoubleText and
+  //   _MyAfxTextFloatFormat.
+
+  #include &lt;float.h&gt;
+  #define PRECISION  8
+
+  void AFXAPI DDX_MyFloatText(CDataExchange* pDX, int nIDC, float&amp; value)
+  {
+      _MyAfxTextFloatFormat(pDX, nIDC, &amp;value, value, PRECISION, FLT_DIG);
+  }
+
+  void AFXAPI DDX_MyDoubleText(CDataExchange* pDX, int nIDC, double&amp; value)
+  {
+      _MyAfxTextFloatFormat(pDX, nIDC, &amp;value, value, PRECISION, DBL_DIG);
+  }
+
+  void AFXAPI _MyAfxTextFloatFormat(CDataExchange* pDX, int nIDC,
+                                    void* pData, double value, int nSizeGcvt,
+                                    int nSizeType)
+  {
+      ASSERT(pData != NULL);
+
+      HWND hWndCtrl = pDX-&gt;PrepareEditCtrl(nIDC);
+
+          // Make sure your buffer is big enough. Strings returned by
+          // _stprintf() using the "f" specifier tend to be longer
+          // than those returned using the "g" specifier.
+      TCHAR szBuffer[64];
+
+      if (pDX-&gt;m_bSaveAndValidate)
+      {
+          ::GetWindowText(hWndCtrl, szBuffer, _countof(szBuffer));
+          double d;
+          if (!AfxSimpleFloatParse(szBuffer, d))
+          {
+              AfxMessageBox(AFX_IDP_PARSE_REAL);
+              pDX-&gt;Fail();            // throws exception
+          }
+          if (nSizeType == FLT_DIG)
+              *((float*)pData) = (float)d;
+          else
+              *((double*)pData) = d;
+      }
+      else
+      {
+          _stprintf(szBuffer, _T("%.*f"), nSizeGcvt, value);
+          AfxSetWindowText(hWndCtrl, szBuffer);
+      }
+  }
+
+Additional query words: 1.50 2.00 2.10 4.00
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbDlg kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

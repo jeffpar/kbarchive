@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q322943: Configure Server Extensions Option Is Missing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q322943: Configure Server Extensions Option Is Missing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/322/Q322943/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/322/Q322943/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/322/Q322943/","publisher":null,"image":null,"headline":"Q322943: Configure Server Extensions Option Is Missing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q322943-configure-server-extensions-option-is-missing">Q322943: Configure Server Extensions Option Is Missing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q322943
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to configure the FrontPage Server Extensions (FPSE) on the second
+Web site in the Internet Service Manager (ISM), the Configure Server Extensions
+option is missing. The option is available on any site that you create after the
+second Web site.
+
+CAUSE
+=====
+
+This occurs if you have deleted the Administration Web site by using Adsutil or
+MetaEdit 2.1 or 2.2.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove the Administration Web site correctly by using
+the Windows Components Wizard:
+
+1. Click Start, click Settings, and then click Control Panel.
+
+2. Open Add/Remove Programs, and then click Add/Remove Windows Components.
+
+3. In the Components box, click to select Internet Information Services (IIS),
+  and then click Details.
+
+4. In the Subcomponents of Internet Information Services (IIS) box, click to
+  clear the Internet Services Manager (HTML) check box, and then click OK.
+
+  NOTE: Removing the ISM deletes your Web site on instance 2 (W3SVC/2), and you
+  have to re-create this site later manually. Make sure that you really want to
+  do this.
+
+5. Click Next, and then click Finish.
+
+MORE INFORMATION
+================
+
+By default, the Administration Web site does not allow FPSE to be configured, so
+when the site is deleted from the ISM, the next site that is created
+automatically takes its place in the metabase (W3SVC/2). This prevents any site
+that is configured as the second Web site from having FPSE installed.
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

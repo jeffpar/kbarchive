@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237557: SMS 2.0 Network Discovery Internals | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237557: SMS 2.0 Network Discovery Internals" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237557/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237557/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237557/","publisher":null,"image":null,"headline":"Q237557: SMS 2.0 Network Discovery Internals","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237557-sms-20-network-discovery-internals">Q237557: SMS 2.0 Network Discovery Internals</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237557
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbenv kbsms200
+Last Modified: 10-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the details of Systems Management Server 2.0 network
+discovery.
+
+MORE INFORMATION
+================
+
+Determining Computer in Domains
+-------------------------------
+
+This is accomplished by querying the master browser of the domain.
+
+Determining the Computer's Operating System
+-------------------------------------------
+
+This is accomplished by connecting to the computer and using LAN Manager calls
+initiating the following items:
+
+Collect tree object identifiers (OIDs):
+
+  1.3.6.1.2.1.1.1
+  (sysDescr: include the full name and the version identification of the
+  system's hardware type, operating system, and networking software)
+
+  1.3.6.1.2.1.1.2
+  (sysObjectID: The vendor's authoritative identification of the network
+  management subsystem contained in the entity)
+
+  1.3.6.1.2.1.4.1
+  (ipForwarding: The indication of whether this entity is acting as an IP
+  gateway in respect to the forwarding of datagrams received by, but not
+  addressed to, this entity. IP gateways forward datagrams. IP hosts do not)
+
+The first OID reports the operating system; the third OID reports the subnet
+necessary to create a Data Discovery record (DDR). For more information, see RFC
+1213.
+
+To determine the computer's operating system, the Microsoft Windows NT Server
+service, or file sharing on Microsoft Windows 95, Windows 98, or Windows
+Millennium Edition (Me) clients, must be enabled. Otherwise, the client is
+considered "hidden" from the network. If a computer is "hidden" from the
+network, it not seen during network discovery. The computer may be discovered
+but does not provide the operating system. Systems Management Server cannot do
+much without this information.
+
+For example, if a Windows 95, Windows 98, or Windows Me client does not have file
+and print sharing enabled, it cannot be identified as a Windows 95, Windows 98,
+or Windows Me client. Because Systems Management Server cannot extrapolate the
+operating system on the computer, it is prevented from being discovered by this
+method. This is by design. It can, however, be discover as an IP device with an
+IP address that responds to ICMP but not SNMP. This is a limitation of the
+network.
+
+Windows NT-based computers generally have the Server service installed, so this
+is not typically a problem. If you disable the Server service to "hide" a
+Windows NT-based computer, it does not appear in the Browser list which in turn
+does not appear in the Microsoft DHCP list. This causes the computer to be
+"hidden" from network discovery. When you are using static IP addresses, Systems
+Management Server sends out Broadcast messages to discover clients. You can
+verify this by using Network Monitor. Use the "net config server /hidden:no"
+command to resolve this situation manually.
+
+Determining the Subnet Mask
+---------------------------
+
+This is accomplished by using the following methods:
+
+- Microsoft DHCP: provides the IP address and subnet mask
+
+- SNMP agents on the clients
+
+- Router's ARP cache
+
+If none of these methods are used, there is no way for network discovery to
+absolutely determine the subnet mask. Network discovery creates DDRs only for
+computers for which the subnet mask can be determined. When you are reviewing
+the Netdisc.log file by using Systems Management ServerTrace or Notepad, the
+computer is listed as being seen, but no DDR is created unless the subnet mask
+can be verified. If a DDR is not written and the computer is statically mapped,
+see the following article in the Microsoft Knowledge Base:
+
+  Q228900 SMS: How SMS 2.0 Network Discovery Discovers Clients With Static IP
+  Addresses
+
+Once the IP address of a device is seen, the subnet mask can be verified by
+either Microsoft DHCP or SNMP if the SNMP agents have been installed on the
+client computer.
+
+Subnet Discovery and the Subnet Tab
+-----------------------------------
+
+The Subnets tab is simply a way of finding some potential resources. Enabling an
+individual subnet means that the next time network discovery runs, it can query
+that subnet for other subnet information, as well as query its ARP cache. If the
+interface from which an IP address is listed has only a single IP address, that
+is enough to provide the subnet mask and allow a DDR to be generated. Not
+enabling, or disabling, a subnet means that a router is not contacted for that
+subnet for discovery. It allows subnets and topology (routers, etc.) to be
+discovered. Using the subnets listed on this tab, the community names are used
+to contact the routers for their ARP cache information. Note that if the router
+port is multihomed, Systems Management Server does not use it because there is
+no way to determine which subnets are intended to be used for Systems Management
+Server.
+
+NOTE: If a subnet is not enabled, no clients will be returned from that subnet.
+
+To enable a subnet that has been previously discovered by Network Discovery, you
+must modify the Network Discovery properties. In the Subnets tab, all subnets
+will be listed that were either placed into the list by the SMS Administrator
+manually or were discovered by a previous run of Network Discovery. By default,
+all subnets that are discovered by Network Discovery are disabled when they are
+added to the list and must be manually enabled before clients will be discovered
+on that subnet.
+
+Under the Search column you will see the status of each subnet, Enabled or
+Disabled. To toggle the status highlight the desired subnet and click on the far
+right hand icon immediately above the subnet list. This will change the status
+of the subnet.
+
+NOTE: After modifying the Enabled status of a subnet, Network Discovery must be
+scheduled to run again before any clients will be returned from the newly
+enabled subnet(s).
+
+Assuming that a valid community name is provided, the ARP cache information is
+returned for each subnet served by the router. If the client can be found in the
+ARP cache and the router has a single address for that interface, its subnet
+mask can be identified, and the device can be reported. The list of subnets on
+the Subnets tab is those that network discovery found during its previous
+discovery runs (by default, initially, just the local default gateway of the
+site server is known). The default gateway is queried to determine which other
+subnets it knows about. RIP 1 announcements are also listened for, as well as
+OSPF Hello announcements. These subnets are then all listed. If network
+discovery finds the subnet by either routers or DHCP, it reports them in the
+user interface with a gold lock icon next to the subnet. This lock icon
+indicates that they were found by network discovery and are valid IP subnets.
+They cannot be deleted. If they were deleted, they would reappear after the next
+discovery run when they were discovered again. If the subnet no longer exists,
+it is removed from the user interface listing after a period of time. To specify
+the time to delete the non-existent subnet from network discovery, specify the
+Database Management task field to Delete Aged Discovery Data. You can delete the
+subnets that were entered manually if network discovery did not find them
+automatically.
+
+Domains, SNMP, DHCP, and  Tabs
+------------------------------
+
+The Domains, SNMP, and DHCP tabs are simply seeding mechanisms for providing
+Systems Management a list of potential resources, and one way to contact them.
+Domain browsing (from the Domains tab) occurs to get a list of resources. They
+are then pinged to determine if they are available, then connected to, then sent
+some API calls to return operating system information (if enabled), and then
+SNMP is used to get the subnet mask. With SNMP, the device can be queried
+directly, or a router's ARP cache can be queried to retrieve it. The community
+name listed on the SNMP tab is used to provide a name that can be used to query
+the individual hosts that were discovered through router queries, domain
+browsing calls, or DHCP retrieval. The hops count also limits how far away from
+the local subnet it traverses.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

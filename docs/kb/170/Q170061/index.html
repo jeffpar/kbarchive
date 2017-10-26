@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170061: XCLN: Readme.txt for Msoutl32.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170061: XCLN: Readme.txt for Msoutl32.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170061/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170061/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170061/","publisher":null,"image":null,"headline":"Q170061: XCLN: Readme.txt for Msoutl32.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170061-xcln-readmetxt-for-msoutl32dll">Q170061: XCLN: Readme.txt for Msoutl32.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170061
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:7.0,7.5; :8.01,8.02
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+, versions 7.0, 7.5 
+- Microsoft Outlook 97, versions 8.01, 8.02 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is taken from the Readme file included with the Outlook driver for
+Microsoft Schedule+ 7.x.
+
+
+MORE INFORMATION
+================
+
+Contents:
+
+- Overview
+
+- Supported Configurations/Platforms
+
+- Installing the Driver
+
+- Removing the Driver
+
+- Known Issues
+
+Overview
+--------
+
+This driver enables a Microsoft Schedule+ 7.x user to open a Microsoft Outlook
+user's calendar in Schedule+ ("Schedule+ 7.x" is a general term referring to
+Schedule+ 7.0, Schedule+ 7.5, and Schedule+ 95).
+
+After the driver is installed, the Schedule+ user can open an Outlook user's
+calendar (Open command, File menu, Open Other's Appointment Book submenu). The
+Schedule+ user must have Read permission for the Outlook user's calendar, and
+that calendar must be stored on the Exchange Server.
+
+NOTE: The Schedule+ user can only read the Outlook user's Calendar, not add to or
+edit it, regardless of the permissions granted by the Outlook user.
+
+Supported Configurations/Platforms
+----------------------------------
+
+This driver works only on 32-bit versions of Microsoft Schedule+ 7.x (for Windows
+95 and Windows NT 3.51 and 4.0). It does not work with the 16-bit version of
+Schedule+ 7.x (for Windows 3.1 and 3.11).
+
+Both the Schedule+ and Outlook users must be running Exchange Server.
+
+Installing the Driver
+---------------------
+
+Computer requirements: x86 architecture
+
+Operating system requirements: Windows 95, Windows NT 3.51, or 4.0 (32-bit)
+
+Dependent programs: Schedule+ 7.x (32 bit)
+
+To install the Microsoft Outlook 97 driver for Schedule+ 7.x:
+
+1. Make sure the computer has Schedule+ 7.x installed.
+
+2. If Schedule+ is running, click Exit and Log Off on the File menu.
+
+3. Double-click Msoutl.exe. (located in the same folder as Schedule+ 7.x)
+
+4. When asked if you want to continue, click Yes.
+
+5. When the installation is complete, restart Schedule+.
+
+Files installed:
+
+- Msoutl32.dll
+
+- Mssotubs.dll
+
+- Msoutl.inf
+
+- Unins351.reg
+
+- Readme.txt
+
+Removing the Driver
+-------------------
+
+To remove the Microsoft Outlook 97 driver for Schedule+ 7.x in Windows 95 or
+Windows NT 4.0:
+
+1. On the Windows Start menu, point to Settings and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Microsoft Outlook 97 Driver for Schedule+
+  7.x and then click Add/Remove.
+
+NOTE: Windows NT 3.51 users can remove the driver by running Unins351.reg and
+then deleting Msoutl32.dll and Msostubs.dll. These files are located in the same
+folder as Schedule+ 7.x.
+
+Known Issues
+------------
+
+- All-day events in Outlook appear as appointments when viewed in Schedule+ 7.x
+  using the Outlook Driver for Schedule+ 7.x.
+
+- If Schedule+ 7.x is re-installed, then the driver will also need to be
+  re-installed afterward.
+
+- An Outlook user might share his or her Outlook Calendar with other users,
+  then switch to using Schedule+ 7.x as the primary calendar. In this case,
+  Schedule+ 7.x users who are using the Outlook Driver for Schedule+ 7.x to
+  open that user's calendar will continue to open that user's Outlook calendar
+  instead of that user's Schedule+ 7.x calendar. To solve this, the Outlook
+  user needs to remove the permissions on his or her Outlook Calendar folder so
+  that the Outlook Driver for Schedule+ 7.x will not open it.
+
+- Outlook appointments with more than 32 KB of text in the Notes field will
+  appear to have a blank Notes field when viewed in Schedule+ 7.x using the
+  Outlook Driver for Schedule+ 7.x.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbSchedule750
+Version           : WINDOWS:7.0,7.5; :8.01,8.02
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

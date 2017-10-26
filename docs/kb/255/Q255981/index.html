@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255981: Processing the Key Certificate Request for the Server Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255981: Processing the Key Certificate Request for the Server Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255981/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255981/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255981/","publisher":null,"image":null,"headline":"Q255981: Processing the Key Certificate Request for the Server Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255981-processing-the-key-certificate-request-for-the-server-fails">Q255981: Processing the Key Certificate Request for the Server Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255981
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to process a Key Certificate Request for a server, you may
+receive the following error message:
+
+  Error!!! Certificate Server is unable to process your request. Last status
+  error code = 57.
+
+If you are following the steps described in the "Processing the Key Certificate
+Request for the Server" section in Q218445, How to Configure Certificate Server
+for Use with SSL on IIS, this error message occurs when you click Submit Request
+on the Web Server Enrollment page.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q218445 How to Configure Certificate Server for Use with SSL on IIS
+
+CAUSE
+=====
+
+This error message indicates that "Invalid Data" was submitted to Certificate
+Server. This can occur for one of the following reasons:
+
+- You are submitting a request that is not formatted correctly
+
+-OR-
+
+- The Certificate Authority used a network share or relative path to point to
+  the Shared Directory when configuring Certificate Server. Please contact your
+  Certificate Authority for assistance.
+
+RESOLUTION
+==========
+
+To resolve this issue, do the following:
+
+1. From the Windows NT Option Pack, click Microsoft Certificate Server, and then
+  choose Process Certificate Request File.
+
+2. When you are prompted to open a Request File, choose the file, which is
+  NewKeyRq.txt (by default) and stored in the root.
+
+3. When you are prompted to save this file as an Outfile Name, choose an
+  appropriate file name with the extension .crt.
+
+You can now proceed to the steps described in the "Installing the Key Certificate
+on the Server" section in the following Knowledge Base article:
+
+  Q218445 How to Configure Certificate Server for Use with SSL on IIS
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

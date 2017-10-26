@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130853: Distributable Files in Visual FoxPro Distribution Kit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130853: Distributable Files in Visual FoxPro Distribution Kit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130853/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130853/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130853/","publisher":null,"image":null,"headline":"Q130853: Distributable Files in Visual FoxPro Distribution Kit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130853-distributable-files-in-visual-foxpro-distribution-kit">Q130853: Distributable Files in Visual FoxPro Distribution Kit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130853
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article tells you which files from the Visual FoxPro Distribution Kit you
+may and may not distribute with your applications.
+
+This information is also available in the Visual FoxPro Help file under
+Distributable Files.
+
+MORE INFORMATION
+================
+
+Distributable Files for Visual FoxPro
+-------------------------------------
+
+You may distribute any Visual FoxPro file that is not restricted. Pursuant to the
+Microsoft License Agreement you received with Visual FoxPro, files must be
+distributed in conjunction with a corresponding application. The following
+guidelines apply to distributable files.
+
+Setup Wizard
+------------
+
+Any files in the Visual FoxPro DISTRIB.SRC and SETUP directories that are
+required to support a corresponding application may be distributed. When you use
+the Setup Wizard to create distribution disks, it automatically places the
+required files from these directories on the distributable disks in a compressed
+format. Upon installation, these file are decompressed and are installed by name
+in the appropriate directories on the user's computer. It is not necessary to
+copy these files to your distribution tree.
+
+Samples
+-------
+
+Files in the Visual FoxPro SAMPLES and API\SAMPLE directories are provided for
+you to learn from and build on. Although you may not distribute unmodified
+Visual FoxPro sample applications, you may refer to portions of sample
+application code as examples for building your own application. If you use any
+files in the Visual FoxPro SAMPLES or API\SAMPLE directories (including all
+.BMP, .ICO, and .CUR files), these files must be included in your project and in
+the application build. They must not appear by name on the distributable disks
+and may not be distributed independent of your applications.
+
+Class Libraries
+---------------
+
+You can use any .VCX file without modification in your applications. The
+libraries must be included in your project and in your application build.
+
+ODBC Files
+----------
+
+Please refer to the Microsoft License Agreement you received with Visual FoxPro
+for specific restrictions with respect to your redistibution of ODBC files.
+
+Restricted Files
+----------------
+
+Visual FoxPro contains many files that are licensed for your use only for design,
+development, and testing purposes. See LICENSE.TXT, located in your Visual
+FoxPro directory, for a list of restricted files.
+
+If your application contains any of these files, remove them. Under the terms of
+the Microsoft License Agreement you received with Visual FoxPro, you are not
+permitted to ship these files in your application or on your disks. The Setup
+Wizard checks for these files and will exclude them from distributable disk
+sets. Do not assign these filenames to any files you distribute. The Setup
+Wizard excludes any file that has a name identical to one on this list.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

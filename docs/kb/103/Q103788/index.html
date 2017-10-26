@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103788/","publisher":null,"image":null,"headline":"Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103788-info-creating-a-modeless-dialog-box-with-mfc-libraries">Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103788
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+This article demonstrates how to create a modeless dialog box using a
+dialog-box template resource  using MFC.
+
+To build a CModeless dialog box, the following steps should be
+followed:
+
+1. Create a dialog class derived from CDialog and override the Create() member
+  function of CDialog. For example, you might have code that resembles the
+  following:
+
+        class CModeless: public CDialog
+             {
+               .
+               .
+               .
+               public:
+                   CModeless(){ }
+                   BOOL Create(UINT nID, CWnd * pWnd)
+                        { return CDialog::Create(nID,pWnd);}
+               .
+               .
+               .
+             };
+
+  NOTE: You could let ClassWizard generate the dialog class and then simply add
+  the Create() function.
+
+2. Write code to construct an object of the dialog class and create the dialog
+  box window. For example, if you have a menu item that should display the
+  dialog box, you might have code that resembles the following:
+
+        void CMainFrame::OnModeless()
+          {
+              pdlg = new CModeless;
+              pdlg-&gt;Create(IDD_DIALOG1,this);
+          }
+
+  where CMainFrame::pdlg is defined as:
+
+  CModeless * pdlg;
+
+  NOTE: It is important to allocate the object on the heap rather than the stack
+  if you want to prevent the modeless dialog box from being destroyed when the
+  function is exited.
+
+3. You must call CWnd::DestroyWindow() in OnCancel, or whenever the modeless
+  dialog box needs to be destroyed.
+
+        void CModeless::OnCancel()
+        {
+            DestroyWindow();
+        }
+
+4. Override CWnd::PostNcDestroy() in your dialog class to delete the dialog box
+  object:
+
+     virtual void CModeless::PostNcDestroy() {delete this;}
+
+  PostNcDestroy() is a virtual member function of the CWnd class that is called
+  by the OnNcDestroy() function.
+
+A modeless dialog class will typically override the OnOK() and
+OnCancel() member functions to call DestroyWindow() and should not
+call the base class CDialog::OnOK() and CDialog::OnCancel() functions.
+The CDialog::OnOK() and CDialog::OnCancel() functions call
+EndDialog(). EndDialog() should be called only when using modal dialog
+boxes.
+
+If you are using Dialog Data Exchange (DDX) and Dialog Data Validation
+(DDV), you're OnOK() handler for your dialog class might resemble the
+following:
+
+     void CModeless::OnOK()
+     {
+             if (!UpdateData(TRUE))
+               {
+                 TRACE0("UpdateData failed during dialog termination\n");
+                 // The UpdateData routine will set focus to correct item
+                 return;
+               }
+             DestroyWindow();
+     }
+
+SUMMARY
+=======
+
+
+
+Additional query words: kbinf 1.00 1.50 2.00 2.10 2.50 2.51 2.52 3.00 3.10 4.00
+
+======================================================================
+Keywords          : kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180165: WD: AutoCorrect Feature Limitations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180165: WD: AutoCorrect Feature Limitations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180165/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180165/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180165/","publisher":null,"image":null,"headline":"Q180165: WD: AutoCorrect Feature Limitations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180165-wd-autocorrect-feature-limitations">Q180165: WD: AutoCorrect Feature Limitations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180165
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta kbautotext winword word97
+Last Modified: 10-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Word 2000 
+- Microsoft Word 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you enter a large number of AutoCorrect entries (for example, 7000 entries),
+you may receive an "Out of Memory" or other memory error.
+
+CAUSE
+=====
+
+AutoCorrect entries are stored in an index file attached to the Normal.dot file,
+and use a minimum of 4 bytes per entry. Because the AutoCorrect feature uses the
+64K local memory heap allocated to Word, inserting large numbers of AutoCorrect
+entries may result in an "Out of memory" error message. For example, when you
+create 7000 AutoCorrect entries, you use approximately 28K of memory--almost
+half the available local memory. This could also result in other memory-related
+error messages because the local memory is used by several other operations.
+
+MORE INFORMATION
+================
+
+The AutoCorrect feature automatically corrects common typing mistakes as you
+work. For example, if you type "adn," AutoCorrect replaces it with "and" as soon
+as you press the SPACEBAR.
+
+You can also use AutoCorrect to quickly insert words or phrases that are long or
+difficult to type. For example, use AutoCorrect to automatically replace "FYI"
+with "For Your Information." AutoCorrect entries are stored in the Ms097.acl
+file.
+
+The operating limits of the AutoCorrect feature for Microsoft Word are listed in
+the following table.
+
+  Feature                                  Limit
+  ---------------------------------------------------------
+
+  Maximum number of AutoCorrect entries    Limited to
+                                           memory/hard disk
+                                           space
+
+  Maximum number of characters as a        255
+  plain text entry
+
+  Maximum number of characters as a        Unlimited
+  formatted entry
+
+  Maximum number of characters stored as   31
+  Replace text
+
+NOTE: In Protected Mode, AutoCorrect entries which are plain text are available
+for selection. However, AutoCorrect entries which are formatted text will not
+work in Protected Mode (for example, form fields).
+
+Additional query words: limits 8.0 wd97 wd2000 wd2002
+
+======================================================================
+Keywords          : kbdta kbautotext winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

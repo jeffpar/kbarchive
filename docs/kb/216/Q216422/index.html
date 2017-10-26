@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216422: Exchange Specific Policy Module for Certificate Server disables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216422: Exchange Specific Policy Module for Certificate Server disables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216422/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216422/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216422/","publisher":null,"image":null,"headline":"Q216422: Exchange Specific Policy Module for Certificate Server disables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216422-exchange-specific-policy-module-for-certificate-server-disables">Q216422: Exchange Specific Policy Module for Certificate Server disables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216422
+Product(s): Internet Information Server
+Version(s): winnt:1.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Certificate Server version 1.0 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Server 5.5 SP1 includes an Exchange Server policy module for
+Microsoft Certificate Server 1.0. This policy module allows Exchange Server's
+Key Management Server to directly interact with Certificate Server to issue SSL
+keys to e-mail clients.
+
+When this policy module is applied to the Certificate Server, it will no longer
+be able to fulfill certificate requests through its Web interface. When you
+browse to the Certificate Server Enrollment tools and create a request for a new
+client or server key, the following error occurs:
+
+  Error!!!
+  Certificate Server is unable to process your request.
+  Last Status Error Code = 0
+  Please verify that you are submitting a valid request or contact your
+  Certificate Authority for assistance.
+
+CAUSE
+=====
+
+This is by design. The Exchange Server policy module disables the Certificate
+Server Web interface. When the Exchange Server policy module is installed to a
+Certificate Server, it can only be used by that Exchange Server computer.
+
+RESOLUTION
+==========
+
+To resolve this problem, set up and configure multiple Certificate Servers.
+Configure the first Certificate Server as the Root Certificate Authority for
+your organization and the second Certificate Server as a Subordinate Certificate
+Authority to your Root Certificate Authority.
+
+Install the Subordinate Certificate Authority on your Exchange Server computer.
+This Certificate Server is for the exclusive use of your Exchange Server's Key
+Management Service.
+
+WORKAROUND
+==========
+
+As noted in the Microsoft Windows NT Option Pack release notes, Microsoft
+Certificate Server 1.0 does not officially support certification authority
+hierarchies. However, several of the key capabilities of a "certification
+authority hierarchies" feature do work and can be used in an implementation with
+Exchange Server to achieve most of the desirable characteristics of
+certification authority hierarchies.
+
+Installing a Certificate Server Subordinate Certificate Authority
+-----------------------------------------------------------------
+
+A Certificate Server subordinate Certificate Authority (CA) is a certifying
+authority that issues certificates and CRLs, but does not sign certificates. The
+subordinate CA must submit certificates to a root CA to be signed.
+
+Before you install the Certificate Server subordinate CA, you must install
+Internet Explorer version 4.01 or later on the server computer. You must also
+create a shared directory where Certificate Server will store certificates. The
+Windows NT Everyone account should have read permissions on the shared
+directory.
+
+After you install the Certificate Server, you need to install the Exchange Server
+policy module and Certificate Server hotfix before the Certificate Server can
+use Key Management Server.
+
+To install a subordinate CA, perform the following steps:
+
+1. Run the Windows NT Option Pack 4.0 Setup program and choose Custom.
+
+2. On the Components page, select Certificate Server, and then choose Show
+  Subcomponents.
+
+3. Select Certificate Server Certifying Authority, and then choose Next.
+
+4. On the Microsoft Certificate Server page, in the Shared Folder box, enter the
+  path to the shared certificate directory on the CA computer, and then choose
+  Next.
+
+5. Select Show Advanced Configuration, and then choose Next.
+
+6. In the Hash Algorithm box, choose SHA-1.
+
+7. Select Non-Root CA, and then choose Next.
+
+8. Type the information describing your CA, and then choose Next.
+
+9. After you restart the computer, install the Microsoft Exchange Server policy
+  module and the Certificate Server fix found in Service Pack 4 for Windows NT.
+
+Creating Trust Between a Subordinate CA and a Root CA
+-----------------------------------------------------
+
+The Certificate Authority service will not start automatically until you obtain a
+certificate from another CA using the request file in the Certs directory. Copy
+the certificate from the CA directory to the Certs directory, and then run the
+Certificate Server Hierarchy Configuration tool (Certhier.exe) to establish a
+trust relationship between the root CA and the subordinate CA.
+
+To create a trust relationship between a subordinate CA and a root CA, do the
+following:
+
+1. From the Certs directory on the subordinate CA computer, copy the .req file
+  to a disk.
+
+2. At the root CA computer, log on as an Administrator.
+
+3. From the command prompt, type the following command:
+
+  certreq a:\filename.req a:\ filename.crt
+
+4. From the shared certificate directory, copy the signature file of the root CA
+  to the disk. The following files are now on the disk:
+
+  &lt;B7&gt; SubMachineName_SubCAName.crt
+&lt;B7&gt; SubMachineName_SubCAName.req
+&lt;B7&gt; RootMachineName_RootCAName.crt
+
+5. From the subordinate CA computer, copy the root CA signature file to the
+  Winnt\System32 directory, and name it RootCa.crt.
+
+  Note: This file must be copied as RootCa.crt not
+  RootMachineName_RootCAName.crt, where RootMachineName is the name of your
+  computer, and RootCAName is the name of your CA.
+
+6. Copy the new signed .crt file and the original .req file from the disk to the
+  shared directory.
+
+  Note: The subordinate CA certificate is SubMachineName_SubCAName.crt where
+  SubMachineName is the name of the computer where the subordinate CA is
+  installed, and SubCAName is the name of the subordinate CA.
+
+7. Verify that the following registry key value exists (if not, add a new string
+  value):
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration
+  \&lt;I&gt;SubCAName&lt;/I&gt;\HierFileName
+
+  where SubCAName is the name of the subordinate CA. Set the value of the
+  registry key to path SubCAName, where path is the complete path to the shared
+  certificate and SubCAName is the name of the .req file without the .req
+  extension. For example:
+
+  c:\certs\SubMachineName_SubCAName
+
+8. From the command prompt, run Certhier.exe.
+
+9. In Control Panel, double-click Services, and then start the Certificate
+  Authority service.
+
+MORE INFORMATION
+================
+
+For more information on the setup and configuration of Certificate Server,
+please read your Certificate Server documentation.
+
+For more information on Exchange Server 5.5 Service Pack 1 and the Exchange
+Server policy module for Certificate Server, please download and read the
+following:
+
+  Microsoft Exchange Server 5.5 Service Pack 1 Readme
+
+For more specific information on Microsoft Certificate Server and Microsoft
+Exchange Server 5.5 Service Pack 1 interaction, please see the following:
+
+  http://www.microsoft.com/technet/iis/
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbCertServSearch kbZNotKeyword3 kbCertServ100
+Version           : winnt:1.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

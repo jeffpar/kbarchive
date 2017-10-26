@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246092/","publisher":null,"image":null,"headline":"Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246092-xadm-how-to-modify-outlook-ldap-for-foreign-systems">Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246092
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Exchange Server allows you to set up a Lightweight Directory Access Protocol
+(LDAP) referral to foreign systems. Microsoft Outlook LDAP referral returns the
+Simple Mail Transfer Protocol (SMTP) address for the foreign system by default.
+In some cases, you may need to have Outlook return a different value from the
+foreign system.
+
+By default, the LDAP service (Ol98ldap.exe) client returns only SMTP addresses.
+You can modify the Mapisvc.inf file on any computer with the LDAP service
+installed to return an LDAP-enabled value from an LDAP server.
+
+MORE INFORMATION
+================
+
+To modify the Mapisvc.inf file:
+
+1. Quit and log off from Outlook 98 or Outlook 2000.
+
+2. Locate the Mapisvc.inf file.
+
+For Outlook 98
+
+On a computer running Microsoft Windows NT, it is located in the Winnt\System32
+folder.
+
+On a computer running Microsoft Windows 95 or Microsoft Windows 98, it is located
+in the Windows\System folder.
+
+For Outlook 2000
+
+On a computer running Windows NT, it is located in the Program Files\Common
+Files\System\Mapi\1033\Nt folder.
+
+On a computer running Windows 95 or Windows 98, it is located in the Program
+Files\Common Files\System\Mapi\1033\95 folder or the Program Files\Common
+Files\System\Mapi\1033\98 folder.
+
+3. Locate the EMABLT section in the Mapisvc.inf file.
+
+4. Locate and change the following two entries:
+
+  6605001e=[Title]
+  6606001e=[Value]
+
+The Title will be the column header that LDAP displays in the results window.
+
+The Value is the value name that is being pulled from the LDAP server on the
+foreign system.
+
+  Example:
+
+  6605001e=Unix X400
+  6606001e=mhsORAddress
+
+Would return the X400 address from a Unix MHS Server.
+
+5. Start Outlook 98 or Outlook 2000 and add a new LDAP directory service in the
+  Tools\Services\Add\Microsoft LDAP folder.
+
+NOTE: The new Mapisvc.inf file settings do not take effect until a new LDAP
+service is added to the profile. If an LDAP directory service was added to the
+profile before the change was made in the Mapisvc.inf file, you must remove the
+LDAP service and add it again.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

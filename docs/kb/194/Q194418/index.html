@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194418: PRB: CallByName Fails to Return the Correct Error Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194418: PRB: CallByName Fails to Return the Correct Error Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194418/","publisher":null,"image":null,"headline":"Q194418: PRB: CallByName Fails to Return the Correct Error Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194418-prb-callbyname-fails-to-return-the-correct-error-information">Q194418: PRB: CallByName Fails to Return the Correct Error Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194418
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an error is raised in a procedure of an ActiveX server and the procedure is
+called with the CallByName() function from a client, the client always gets
+error 440 regardless of the original error number being raised.
+
+RESOLUTION
+==========
+
+See the MORE INFORMATION section of this article for a workaround.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following sample projects demonstrate the problem and a workaround:
+
+Create a Test Server
+--------------------
+
+1. Start Visual Basic and create a new ActiveX DLL project. Class1 is created by
+  default.
+
+2. Rename the project TestSvr.
+
+3. Add the following code to Class1:
+
+        Option Explicit
+
+        Private strObjName As String
+
+        Private Sub Class_Initialize()
+           strObjName = "Default Name"
+        End Sub
+
+        Public Property Get ObjectName() As String
+           ObjectName = strObjName
+        End Property
+
+        Public Property Let ObjectName(s As String)
+           strObjName = s
+        End Property
+
+        Public Property Get ObjectNameWithErr() As String
+           ObjectNameWithErr = strObjName
+           ' User-defined error numbers should be between 513 and 65535
+           ' plus vbObjectError Numbers below 513 are reserved.
+           ' The vbObjectError is equivalent to FACILITY_ITF (&amp;H80040000).
+           ' You need to add this constant because everything made public
+           ' in VB is on an interface.
+           ' We are arbitrarily choosing 1000 below.
+           Err.Raise vbObjectError + 1000, _
+              "Error in " &amp; App.EXEName &amp; ".ObjectNameWithErr", _
+              "User defined error"
+        End Property
+
+        Public Property Let ObjectNameWithErr(s As String)
+           strObjName = s
+
+           Err.Raise vbObjectError + 1000, _
+              "Error in " &amp; App.EXEName &amp; ".ObjectNameWithErr", _
+              "User defined error"
+        End Property
+
+        Public Function ConcatString _
+           (s1 As String, s2 As String) As String
+           ConcatString = s1 &amp; s2
+        End Function
+
+        Public Function ConcatStringWithErr _
+           (s1 As String, s2 As String) As String
+           ConcatStringWithErr = s1 &amp; s2
+
+           Err.Raise vbObjectError + 1000, _
+              "Error in " &amp; App.EXEName &amp; ".ConcatStringWithErr", _
+              "User defined error"
+        End Function
+
+4. Compile the project. If you want to run the server in the IDE, select Options
+  from the Tools menu, and select "Break on Unhandled Errors" under "Error
+  Trapping" on the General Tab.
+
+Create a Test Client
+--------------------
+
+1. Create a new Standard EXE project in Microsoft Visual Basic. Form1 is created
+  by default.
+
+2. Select References from the Project menu, and add "TypeLib Information"
+  (TLBINF32.DLL) to the reference list.
+
+3. Add a ComboBox, two CommandButtons, a Frame, and two OptionButtons inside the
+  frame to Form1.
+
+4. Add the following code to Form1's code window:
+
+        Option Explicit
+
+        Private objServer As Object
+        Private IFaceInfo As TLI.InterfaceInfo
+
+        Private Sub Command1_Click()
+           ' This subroutine demonstrates the problem with returned errors
+           ' when CallByName() is used.
+           On Error GoTo Command1Handler
+           Select Case Combo1.ListIndex
+           Case 0, 2
+              If Option1.Value Then
+                 Call CallByName(objServer, _
+                                 Combo1.Text, _
+                                 VbLet, _
+                                 App.EXEName)
+              Else
+                 MsgBox CallByName(objServer, _
+                                   Combo1.Text, _
+                                   VbGet)
+              End If
+           Case 1, 3
+               MsgBox CallByName(objServer, _
+                                 Combo1.Text, _
+                                 VbMethod, _
+                                 "Parameter1", _
+                                 "Parameter2")
+           End Select
+           Exit Sub
+        Command1Handler:
+           MsgBox Err.Number &amp; vbCrLf &amp; Err.Source &amp; vbCrLf &amp; Err.Description
+        End Sub
+
+        Private Sub Command2_Click()
+           ' This subroutine demonstrates a workaround for the problem
+           ' shown in the Command1_Click subroutine.
+           Dim sResults As TLI.SearchResults
+           Dim sItem As TLI.SearchItem
+           On Error GoTo Command2Handler
+           Set IFaceInfo = TLI.InterfaceInfoFromObject(objServer)
+           Set sResults = IFaceInfo.Members.GetFilteredMembers
+
+           With sResults
+              For Each sItem In sResults
+                 If sItem.Name = Combo1.Text Then
+                    Select Case Combo1.ListIndex
+                       Case 0, 2
+                          If Option1.Value = True Then
+                              Call TLI.InvokeHook(objServer, _
+                                                  sItem.MemberId, _
+                                                  INVOKE_PROPERTYPUT, _
+                                                  App.EXEName)
+                          Else
+                              MsgBox TLI.InvokeHook(objServer, _
+                                                    sItem.MemberId, _
+                                                    INVOKE_PROPERTYGET)
+                          End If
+                       Case 1, 3
+                          Dim vArg(1) As Variant
+                          vArg(0) = "Parameter2": vArg(1) = "Parameter1"
+                          ' The variant array elements are passed in reverse
+                          ' order, that is the 0th element first
+                          MsgBox TLI.InvokeHookArray(objServer, _
+                                                     sItem.MemberId, _
+                                                     INVOKE_FUNC, _
+                                                     vArg)
+                    End Select
+                 End If
+              Next
+           End With
+           Exit Sub
+        Command2Handler:
+           ' Please note that the error number will be the raw error number
+           ' raised in the server.
+           ' To get the equivalent error number of VB, subtract vbObjectError
+           ' from Err.Number.
+           MsgBox (Err.Number - vbObjectError) &amp; vbCrLf &amp; Err.Source &amp; _
+                 vbCrLf &amp; Err.Description
+        End Sub
+
+        Private Sub Form_Load()
+            Command1.Caption = "&amp;CallByName"
+            Command2.Caption = "&amp;InvokeHook"
+            Option1.Caption = "Property &amp;Let"
+            Option2.Value = True
+            Option2.Caption = "Property &amp;Get"
+            With Combo1
+                .AddItem "ObjectName"
+                .AddItem "ConcatString"
+                .AddItem "ObjectNameWithErr"
+                .AddItem "ConcatStringWithErr"
+                .ListIndex = 0
+            End With
+            Set objServer = CreateObject("TestSvr.Class1")
+        End Sub
+
+        Private Sub Form_Unload(Cancel As Integer)
+            Set objServer = Nothing
+        End Sub
+
+5. Run the project.
+
+  When you access the ObjectNameWithErr property or call the ConcatStringWithErr
+  function using CallByName(), the error object you received has the following
+  error information regardless of the error raised in the server:
+
+        Number: 440
+        Source: Name of the application
+        Description: Automation error
+
+  To get the correct error object, use the InvokeHook set of functions as shown
+  in the Click event of Command2.
+
+REFERENCES
+==========
+
+Additional information on TLBINF32.DLL can be found in the article "Inspect
+Dynamic Objects" by Matthew Curland in the November 1998 issue of Visual Basic
+Programmer's Journal, pages 120-124
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q172988 : FILE: Programmatically Retrieve the Members of a DLL Class
+
+Additional query words: kbDSupport kbVBp kbdss kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

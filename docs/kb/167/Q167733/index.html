@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167733: PRB: Operator New Doesn’t Throw bad_alloc Exception on Failure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167733: PRB: Operator New Doesn’t Throw bad_alloc Exception on Failure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167733/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167733/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167733/","publisher":null,"image":null,"headline":"Q167733: PRB: Operator New Doesn’t Throw bad_alloc Exception on Failure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167733-prb-operator-new-doesnt-throw-bad_alloc-exception-on-failure">Q167733: PRB: Operator New Doesn’t Throw bad_alloc Exception on Failure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167733
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbCRT kbVC kbVC500 kbVC600
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Operator new does not throw a bad_alloc exception when it fails. It simply
+returns a null pointer.
+
+RESOLUTION
+==========
+
+Operator new does call the new handler function after it fails to procure the
+requestion block of memory, but before it returns the null pointer. An
+application could install a new handler to throw a bad_alloc exception as
+follows:
+
+     #include &lt;new&gt;
+     #include &lt;new.h&gt;
+     int my_new_handler(size_t) {
+        throw std::bad_alloc();
+        return 0;
+     }
+     int main () {
+        _PNH _old_new_handler;
+        _old_new_handler = _set_new_handler(my_new_handler);
+        /* ... application processing ... */ 
+        _set_new_handler(_old_new_handler);
+        return 0;
+     }
+
+To call new handler when malloc fails to obtain the requested block of memory,
+use the _set_new_mode function.
+
+To install the new handler before your global objects are initialized, create a
+class that sets the new handler in its constructor and installs the old new
+handler in its destructor. Create a global object of that type and use the
+init_seg pragma to force this global object to be initialized before any of your
+global objects. The example below demonstrates this. It also demonstrates the
+use of _set_new_mode to cause a failed malloc call to generate an exception.
+Note that to do this, the code below must reside in its own source file. You
+cannot change the initializations segment more than once per translation unit
+(source file) with the pragma init_seg.
+
+     #include &lt;new&gt;
+     #include &lt;new.h&gt;
+     #pragma init_seg(lib)
+     int my_new_handler(size_t) {
+     throw std::bad_alloc();
+     return 0;
+     }
+     struct my_new_handler_obj{
+     _PNH _old_new_handler;
+     int _old_new_mode;
+     _tag_g_new_handler_obj() {
+        _old_new_mode = _set_new_mode(1);
+        _old_new_handler = _set_new_handler(my_new_handler);
+     }
+     ~_tag_g_new_handler_obj() {
+        _set_new_handler(_old_new_handler);
+        _set_new_mode(_old_new_mode);
+     }
+
+     } _g_new_handler_obj;
+
+Operator new, as implemented by Visual C++ 5.0, ignores the function exception
+specification. So new(std::nothrow) still generates an exception if your new
+handler is installed to throw an exception as the examples above demonstrate. To
+change this behavior, override operator new as follows:
+
+     void *__cdecl operator new(size_t cb, const std::nothrow_t&amp;) throw()
+     {
+      char *p;
+      try {
+          p = new char[cb];
+      }
+      catch (std::bad_alloc) {
+          p = 0;
+      }
+      return p;
+     }
+
+STATUS
+======
+
+This is a bug in Microsoft's implementation of operator new as this in not in
+conformance with the ANSI C++ Standard.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Visual C++
+5.0 online Help:
+
+  Using _set_new_handler
+
+  _set_new_handler
+
+  _set_new_mode
+
+  init_seg
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbCRT kbVC kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

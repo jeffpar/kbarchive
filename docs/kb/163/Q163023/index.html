@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163023/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163023/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163023/","publisher":null,"image":null,"headline":"Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163023-fix-vfp-3-form-or-class-modified-in-vfp-5-loses-method-code">Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163023
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbtool kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Modifying a form created in Visual FoxPro 3.0 or 3.0b may, under certain
+circumstances, result in temporary or permanent loss of event or method
+procedure code.
+
+-or-
+
+Instantiating a class created in Visual FoxPro 3.0 or 3.0b may, under certain
+circumstances, result in temporary or permanent loss of event or method
+procedure code.
+
+This can happen if both of the following conditions are true:
+
+- Code is contained in method or event procedures within dependent controls,
+  such as the following:
+   - Option buttons in option groups
+
+   - Command buttons in CommandGroups
+
+   - Grid columns in grids or headers within columns
+
+   - Pages in PageFrames
+
+- The Visual FoxPro 3.0x form is modified under Visual FoxPro 5.0 without being
+  first run or compiled under Visual FoxPro 5.0, or the Visual FoxPro 3.0x
+  class is instantiated under Visual FoxPro 5.0 without being first compiled
+  under Visual FoxPro 5.0.
+
+This loss of code does not occur if any of the following are true:
+
+- If code is not contained in dependent controls.
+
+- If the Visual FoxPro 3.x form or class is run or instantiated prior to
+  modification in Visual FoxPro 5.
+
+- The form or class is compiled with COMPILE FORM or COMPILE CLASSLIB before
+  form modification or class instantiation.
+
+RESOLUTION
+==========
+
+Issuing a COMPILE FORM or COMPILE CLASSLIB command against the form or class
+library sometimes, but not always, repairs the file in question. If any other
+changes are made to the form or class and the form or class is saved, compiling
+is not likely to retrieve the lost code.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+The format of compiled object code has been changed between Visual FoxPro 3.0x
+and Visual FoxPro 5.0. Any event or method procedure code is automatically
+recompiled when a Visual FoxPro 3.0x form is modified or run in Visual FoxPro
+5.0. Classes created in Visual FoxPro 3.0x must be first run or compiled in
+Visual FoxPro 5.0 in order to be modified in Visual FoxPro 5.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Use the following steps to demonstrate the behavior in the Form Designer:
+
+1. Create a form in Visual FoxPro 3.0b.
+
+2. Add a command group to the form.
+
+3. In the Click method of each command button, add a WAIT WINDOW command.
+
+4. Close the Form Designer and save the form.
+
+5. Modify the form in Visual FoxPro 5.
+
+6. Attempt to view the click method code for each of the command buttons. They
+  appear empty.
+
+7. Run the form in Visual FoxPro 5.0, and click on the command buttons. No code
+  is executed.
+
+In the above example, issuing a COMPILE FORM &lt;form file name&gt; command
+repairs the form. More complex forms may or may not be successfully repaired
+with COMPILE FORM.
+
+Use the following steps to demonstrate the behavior in the Class Designer:
+
+1. Create a class in Visual FoxPro 3.0b based on CommandGroup:
+
+        CREATE CLASS cmdgroup OF cmdgrp3 AS COMMANDGROUP
+
+2. In the Click method of each command button, add a WAIT WINDOW command.
+
+3. Close the Class Designer and save the class.
+
+4. Instantiate the class in Visual FoxPro 5.0 by issuing the following commands
+  in the Command window or from a program file:
+
+        SET CLASSLIB TO cmdgrp3
+        x=CREATEOBJECT('cmdgroup')
+        x.command1.CLICK()
+        RELEASE x
+
+  Note that no WAIT WINDOW is executed.
+
+5. Modify the class:
+
+        MODIFY CLASS cmdgroup OF cmdgrp3
+
+6. Attempt to view the Click method code for each of the command buttons. They
+  will appear empty.
+
+In the above example, issuing the following:
+
+     COMPILE CLASSLIB cmdgrp3
+
+will repair the class. More complex classes may or may not be successfully
+repaired with COMPILE CLASSLIB.
+
+
+Additional query words: delete program remove object
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

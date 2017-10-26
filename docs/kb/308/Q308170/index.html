@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q308170: IIS Property Sheet Incorrect in IIS 5.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q308170: IIS Property Sheet Incorrect in IIS 5.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/308/Q308170/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/308/Q308170/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/308/Q308170/","publisher":null,"image":null,"headline":"Q308170: IIS Property Sheet Incorrect in IIS 5.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q308170-iis-property-sheet-incorrect-in-iis-51">Q308170: IIS Property Sheet Incorrect in IIS 5.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q308170
+Product(s): Internet Information Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 22-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services, version 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation that is included with Internet Information Services (IIS) 5.1
+contains an incorrect reference to the Bandwidth Throttling feature. Bandwidth
+Throttling is not available in IIS 5.1
+
+MORE INFORMATION
+================
+
+On the computer running IIS 5.1, open a browser, and then type the following in
+the address bar:
+
+  "http://localhost/iishelp/iis/htm/core/iipx.htm" (without the quotation
+  marks)
+
+The following information is displayed in the browser:
+
+  
+
+  Internet Information Services Property Sheet:
+
+  Use this property sheet to set the bandwidth used by all services and to
+  configure MIME types. These default values can be changed on an individual
+  basis for each site if desired.
+
+  Enable Bandwidth Throttling
+
+  Select this option to limit the bandwidth used by Web and FTP services on your
+  computer.
+
+  Limiting the bandwidth is especially useful if your network card has multiple
+  purposes, such as e-mail and remote logons. Bandwidth throttling limits only
+  the bandwidth used by static HTML files.
+
+  MIME Map
+
+  Select the File Types button to configure Multipurpose Internet Mail
+  Extensions (MIME) mappings. These mappings set the various file types that
+  the Web service returns to browsers.
+
+This information is relevant to IIS 4.0 and IIS 5.0, but not to IIS 5.1.
+
+To change the MIME mappings in IIS 5.1, complete the following steps:
+
+1. Open the Internet Information Services snap-in.
+
+2. Expand the Internet Information Services snap-in, right-click the Web Sites
+  node, and then click Properties.
+
+3. Click the HTTP Headers tab, and then click File Types under the MIME Types
+  section. In this section, you can create and edit the MIME file types on the
+  IIS server. For each site, you can configure the MIME settings on an
+  individual basis.
+
+REFERENCES
+==========
+
+  Q238145 How to Monitor Bandwidth Throttling
+
+  Q186800 How Bandwidth Throttling Works in IIS 4.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

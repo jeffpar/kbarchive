@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154691/","publisher":null,"image":null,"headline":"Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154691-xcln-how-to-print-the-schedule-contact-list-in-two-columns">Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154691
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbprint kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a Contact List in Microsoft Schedule+, the list is printed in one
+left-aligned column. This format leaves a lot of empty space on the right side
+of the page. There is no way to change this format through the user interface.
+
+CAUSE
+=====
+
+This behavior is by design of Microsoft Schedule+.
+
+WORKAROUND
+==========
+
+To work around this problem, you can edit the associated Print Layout (.PRT)
+file to allow you to print in two columns. (However, Microsoft does not support
+the modifying of the .PRT files.)
+
+The .PRT files, located in the \Msoffice\Schedule folder, control the layout of
+printed Schedule+ views. These are ASCII (text) files, which you can edit in a
+text editor such as Notepad.
+
+WARNING: Microsoft does not support .PRT files that have been modified. Therefore
+you should make a copy of the original file to retain access to the original
+format in the Print dialog box in Schedule+.
+
+The .PRT file that controls the layout of the Contact List is named Card1.prt. To
+be able to print the Contact List in either one or two column format, follow
+these steps:
+
+1. Copy the Card1.prt file.
+
+  a. In the Windows Explorer, locate the card1.prt file. By default this file
+     is in the following directory:
+
+  Program Files\Microsoft Office\Office
+
+  b. Use the right mouse button to click (right-click) the Card1.prt file, and
+     then click Copy on the shortcut menu.
+
+  c. Click once on an empty area of the folder contents, and choose Paste from
+     the Edit menu.
+
+  NOTE: The pasted file is named "Copy of card1.prt."
+
+2. Open "Copy of card1.prt" in a text editor such as Notepad.
+
+3. Change the first line to read:
+
+     VIEW "Contact List - 2 columns","FULL page",ALL,,1000,1000
+
+  NOTE: Quotation marks and commas are required for proper functionality.
+
+4. Scroll down to the first Contact List section, and replace the contents of
+  this section with the following text, beginning at the first line.
+
+  NOTE: Be sure to make all modifications exactly as printed here due to case
+  sensitivity.
+
+        OBJECT   ,RECTANGLE,0,70,1000,74
+           OPTIONS     BLACK
+
+        OBJECT   ,RECTANGLE,0,74,500,978
+
+        OBJECT  ,TEXT,10,75,1000,120
+           STYLES      styHeading
+           VALUE       "Contact List:"
+
+        OBJECT  ,CARDLIST,0,75,500,978
+           STYLES      styApptText, styListHeading, styProjectText
+
+        OBJECT   ,OVERFLOW,10,115,1000,978
+           OPTIONS     FULL, NONE, 0
+
+        OBJECT   ,RECTANGLE,500,74,1000,978
+
+        OBJECT   ,OVERFLOW,510,115,1000,978
+           OPTIONS     FULL, NONE, 0
+
+5. Scroll down to the second Contact List section, and replace the contents of
+  this section with the following text, beginning at the first line.
+
+  NOTE: Be sure to make all modifications exactly as printed here due to case
+  sensitivity.
+
+        OBJECT   ,RECTANGLE,0,70,1000,74
+           OPTIONS     BLACK
+
+        OBJECT   ,RECTANGLE,0,74,500,978
+
+        OBJECT  ,TEXT,10,75,1000,120
+           STYLES      styHeading
+           VALUE       "Contact List (continued):"
+
+        OBJECT   ,RECTANGLE,500,74,1000,978
+
+        OBJECT   ,OVERFLOW,10,115,1000,978
+           OPTIONS     FULL, NONE, 0
+
+        OBJECT   ,OVERFLOW,510,115,1000,978
+           OPTIONS     FULL, NONE, 0
+
+6. Save the file as a text only document.
+
+In the Print Layout section of the Print dialog box, there are now two entries
+for the Contact List, the original (Contact List) and the copy (Contact List - 2
+columns).
+
+If you choose Contact List - 2 columns, Schedule+ prints the Contact List in two
+columns.
+
+MORE INFORMATION
+================
+
+For the most part, .PRT files are formatted in sections. The exception is the
+very first line of the file which defines a view.
+
+Section names differ depending on the type of printout required. For example, the
+card1.prt file contains the following sections.
+
+Header - Username
+-----------------
+
+This section defines the Header for the first page.
+
+Contact List
+------------
+
+This section defines the information to be printed on the first page.
+
+Footer - Text and Page num.
+---------------------------
+
+This section defines the footer of the first page.
+
+PAGE 2 - Overflow page
+----------------------
+
+This section defines a new or overflow page if the printout spans more than one
+page.
+
+Header - Username
+-----------------
+
+This section defines the header for the second and subsequent pages.
+
+Contact List
+------------
+
+This section defines the information to be printed on the second and subsequent
+pages.
+
+Footer - Text and Page num.
+---------------------------
+
+This section defines the footer for the second and subsequent pages
+
+Additional query words: 7.0
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

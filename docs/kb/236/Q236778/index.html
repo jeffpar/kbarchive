@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236778/","publisher":null,"image":null,"headline":"Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236778-bug-focus-events-not-triggered-in-activex-doc-with-acc-keys">Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236778
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbActiveDocs kbGrpDSInet kbDSupportkbbuglist
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an ActiveX Document is hosted inside Internet Explorer, the focus events
+are not triggered when using accelerator keys to navigate the controls.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Start a new ActiveX Document project(either DLL or EXE). Default name is
+  "Project1" and it contains one user control "UserDocument1".
+
+2. Place three labels (Label1, Label2, Label3) and two Text boxes (Text1,
+  Text2).
+
+3. Arrange controls so that Text1 is next to Label1 and Text2 is next to Label2.
+
+4. Set the order of TabIndex as Label1, Text1, Label2, Text2, Label3.
+
+5. Change the label caption of Label1 as Label&amp;1 and Label2 as Label&amp;2.
+  Remove the caption of Label3.
+
+6. Paste the following code in the UserDocument1's code:
+
+     Private Sub Text1_LostFocus()
+        Label3.Caption = Label3.Caption &amp; "Text1_LostFocus "
+     End Sub
+
+     Private Sub Text2_GotFocus()
+        Label3.Caption = Label3.Caption &amp; "Text2_GotFocus "
+     End Sub
+
+7. Run the project and start the component in UserDocument1.
+
+8. When using the accelerator keys ALT+1 and ALT+2, the focus can shift from
+  Text1 to Text2, but the lost_focus event of Text1 and the get_focus event of
+  Text2 are not triggered (while TAB triggers both of those events).
+
+Additional query words: ActiveX Document
+
+======================================================================
+Keywords          : kbActiveDocs kbGrpDSInet kbDSupport kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

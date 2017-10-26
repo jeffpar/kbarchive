@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134314: Container Classes Versus Control Classes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134314: Container Classes Versus Control Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134314/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134314/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134314/","publisher":null,"image":null,"headline":"Q134314: Container Classes Versus Control Classes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134314-container-classes-versus-control-classes">Q134314: Container Classes Versus Control Classes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134314
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two main Visual FoxPro base classes, the Control class and the
+Container class. This article compares and contrasts them.
+
+MORE INFORMATION
+================
+
+Built-in Control Classes
+------------------------
+
+  CheckBox
+  ComboBox
+  CommandButton
+  Control
+  Custom
+  EditBox
+  Header
+  Image
+  Label
+  Line
+  ListBox
+  OLEBoundControl
+  OLEControl
+  OptionButton
+  Shape
+  Spinner
+  TextBox
+  Timer
+
+Built-in Container Classes
+--------------------------
+
+  Column
+  CommandGroup
+  Container
+  Form
+  Formset
+  Grid
+  OptionGroup
+  Page
+  PageFrame
+  Toolbar
+
+Differences Between the Two Base Classes
+----------------------------------------
+
+These two base classes are different when it comes to how objects within each
+class can be referenced and manipulated. Member objects within Control classes
+can only be manipulated at the design time of the class. These objects cannot be
+referenced from outside the class at run time. In contrast, objects within
+Container classes can be manipulated individually at design time or run time,
+and they can be referenced from outside the class by calling methods or setting
+properties (this applies to members and methods not defined as PROTECTED).
+
+How Subclassing Works for Container and Control Classes
+-------------------------------------------------------
+
+If a Container is subclassed and child member objects are added to it (Command
+Buttons, for example), then when an object is instantiated from this container
+subclass, all methods and properties of any of the child member objects as well
+those of the parent (the Container subclass) may be accessed as long as they are
+not protected.
+
+If a Control is subclassed and member objects are added to it, then when this
+Control is instantiated, only methods and properties of the Control class itself
+may be accessed, and then only if they are not protected. The methods and
+properties of child member objects contained in the control cannot be accessed
+from outside the control. These child members can only be accessed from within
+the control (a method in the control can set a property or call a method in a
+child member of the control). All methods and properties of child members of
+controls are automatically protected.
+
+Member objects must be added to Controls at design time with the ADD OBJECT
+clause of the DEFINE CLASS command. Member objects may be added to containers
+either at design time (with the ADD OBJECT clause) or at run time (with the
+.AddObject() method).
+
+Code Sample
+-----------
+
+  *****************************************************************
+  * Start of CNTVSCTL.PRG
+  * This program contrasts Container and Control classes
+  *****************************************************************
+
+  ON ERROR DO errhand ;
+     WITH ERROR( ), MESSAGE( )  &amp;&amp; Traps unknown member error
+
+  oForm1 = CREATEOBJECT( 'frmform1', 'Form with Container', 'cntContainer' )
+
+  oForm1.VISIBLE = .T.
+
+  oForm2 = CREATEOBJECT( 'frmform1', 'Form with Control', 'ctlControl' )
+  oForm2.LEFT = 310
+  oForm2.VISIBLE = .T.
+  READ EVENTS
+
+  ON ERROR
+
+  DEFINE CLASS frmForm1 AS FORM
+
+     WIDTH = 300
+     SCALEMODE = 3
+
+     PROCEDURE INIT
+        PARAMETERS cformcaption cobj2add
+        THIS.CAPTION = cformcaption
+        THIS.ADDOBJECT( 'oAddedobject', cobj2add )
+        THIS.ADDOBJECT( 'oFormbutton', 'cmdbutton2' )
+        THIS.oformbutton.VISIBLE = .T.
+        THIS.oAddedobject.VISIBLE = .T.
+     ENDPROC
+
+     PROCEDURE DESTROY
+        CLEAR EVENTS
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS cntContainer AS CONTAINER
+
+     ADD OBJECT oCenter AS center_it
+     CAPTION = 'Container'
+     HEIGHT = 120
+
+     PROCEDURE INIT
+        THIS.ADDOBJECT( 'ocmdButton', 'cmdbutton', 'Container Button' )
+        THIS.ocmdButton.VISIBLE = .T.
+        THIS.TOP = THIS.oCenter.T_B_center( THISFORM.HEIGHT, THIS.HEIGHT )
+        THIS.LEFT = THIS.oCenter.L_R_center( THISFORM.WIDTH, THIS.WIDTH )
+     ENDPROC
+
+     PROCEDURE Call_click
+        PARAMETERS cClickText
+        THIS.ocmdButton.CLICK( cClickText )
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS ctlControl AS CONTROL
+
+     ADD OBJECT oCenter AS center_it
+     ADD OBJECT 'ocmdButton' AS 'cmdButton' NOINIT
+
+     * Cannot do ADDOBJECT() in INIT PROCEDURE (at run time) in Control.
+     * Must add with ADD OBJECT clause of DEFINE CLASS command.
+
+     CAPTION = 'Control'
+     HEIGHT = 120
+
+     PROCEDURE INIT
+
+        * The following command calls the ocmdButton INIT and passes
+        * the desired button caption to the INIT
+        THIS.ocmdButton.INIT( 'Control Button' )
+
+        THIS.TOP = THIS.oCenter.T_B_center( THISFORM.HEIGHT, THIS.HEIGHT )
+        THIS.LEFT = THIS.oCenter.L_R_center( THISFORM.WIDTH, THIS.WIDTH )
+     ENDPROC
+
+     PROCEDURE Call_click
+        PARAMETERS cClickText
+        THIS.ocmdButton.CLICK( cClickText )
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS cmdbutton AS COMMANDBUTTON
+
+     PROCEDURE INIT
+        PARAMETERS cButtonCaption
+        THIS.WIDTH = 125
+        THIS.TOP = THIS.PARENT.oCenter.T_B_center ;
+           ( THIS.PARENT.HEIGHT, THIS.HEIGHT )
+        THIS.LEFT = THIS.PARENT.oCenter.L_R_center ;
+           ( THIS.PARENT.WIDTH, THIS.WIDTH )
+        THIS.CAPTION = cButtonCaption
+     ENDPROC
+
+     PROCEDURE CLICK
+        PARAMETERS cClickText
+        WAIT WINDOW IIF(TYPE('cClickText') = 'C', cClickText ;
+           ,THIS.PARENT.CAPTION+' Button'+' Click in '+ '"' ;
+           +THIS.PARENT.CAPTION+'"') TIMEOUT 5
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS cmdbutton2 AS COMMANDBUTTON
+
+     TOP = 215
+     CAPTION = 'Form Button'
+
+     PROCEDURE INIT
+        THIS.LEFT =  (THIS.PARENT.WIDTH-THIS.WIDTH)/2
+     ENDPROC
+
+     PROCEDURE CLICK   &amp;&amp; Passes wait window message to display
+        * The following line causes an error when calling Click event
+        * of ocmdbutton in Control, but works properly when called
+        * in Container.
+        THIS.PARENT.oAddedobject.ocmdButton.CLICK('Click Event for ';
+           +'"'+THIS.PARENT.oAddedobject.CAPTION+' Button"'+' in ' ;
+           +'"'+THIS.PARENT.oAddedobject.CAPTION+'"'+' Called from '+'"' ;
+           +THIS.CAPTION+'"'+' Click')
+        THIS.PARENT.oAddedobject.Call_click( 'Click Event for ';
+           +'"'+THIS.PARENT.oAddedobject.CAPTION+' Button"' ;
+           +' Called Through Call_Click Procedure in '+'"' ;
+           +THISFORM.oAddedobject.CAPTION+'"')
+     ENDPROC
+
+  ENDDEFINE
+
+  * Define a class to center buttons, containers, &amp; controls:
+  DEFINE CLASS center_it AS CUSTOM  &amp;&amp; s
+
+     FUNCTION T_B_center
+        PARAMETERS ncontheight nobjheight
+        RETURN (ncontheight-nobjheight)/2
+     ENDFUNC
+
+     FUNCTION L_R_center
+        PARAMETERS ncontwidth nobjwidth
+        RETURN (ncontwidth-nobjwidth)/2
+     ENDFUNC
+
+  ENDDEFINE
+
+  PROCEDURE errhand
+     PARAMETERS nError, cMess
+     DO CASE
+        CASE nerror = 1925
+            = MESSAGEBOX('Error # '+ALLTRIM(STR(nError))+ '. '+cMess;
+                 +CHR(13)+CHR(13) ;
+                 +'Member ocmdButton is unknown outside of Control!',48)
+        OTHERWISE
+            = MESSAGEBOX('Error # '+ALLTRIM(STR(nerror))+'. '+cMess)
+     ENDCASE
+  ENDPROC
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

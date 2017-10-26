@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160491: INFO: Files Modified by VC42b Patch - Part 1 of 4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160491: INFO: Files Modified by VC42b Patch - Part 1 of 4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160491/","publisher":null,"image":null,"headline":"Q160491: INFO: Files Modified by VC42b Patch - Part 1 of 4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160491-info-files-modified-by-vc42b-patch---part-1-of-4">Q160491: INFO: Files Modified by VC42b Patch - Part 1 of 4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160491
+Product(s): Microsoft C Compiler
+Version(s): 4.2
+Operating System(s): 
+Keyword(s): kbenv kbother kbnokeyword kbDAOsearch kbDatabase kbGenInfo kbMFC kbODBC kbVC kbHWx86 kb
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual C++ 4.2 patch is a technology update that updates the Visual C++ 4.2
+retail installation to work with the final release of the Win32 and ActiveX
+SDKs. In addition, AppWizard, ClassWizard, and BSCMAKE.EXE have been updated.
+There are four self-extracting files available for this patch. These files
+contain different combinations of the patch. You should download the proper
+self-extracting files that best suit your needs.
+
+For more information on how to download the patch, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q156934 PATCH: Visual C++ 4.2b Patch
+
+This article is broken into four parts with different article numbers. Please see
+the REFERENCES section at the end of this article for information on the
+additional parts.
+
+This is Part 1 of 4.
+
+MORE INFORMATION
+================
+
+Below is a list of files with file size, date, time stamps, and version numbers
+(as proper) before and after the patch is applied. This list is based on the
+comprehensive patch extracted from file vc42b.exe.
+
+Files that are modified by other combinations of the patch are also listed below
+without the file information. You should be able to find the file information
+from the ones listed for the comprehensive patch.
+
+VC42B.EXE Patch
+---------------
+
+1. Files patched by dll42b.rtp in the \windows\system directory on Windows 95 or
+  \windows\system32 directory on Windows NT:
+
+   - mfc42.dll
+
+     (Before) Size: 1,011,472  Date: 06/19/96  Time: 04:20p Version: 4.2.6068
+     (After)        1,013,520        09/13/96        10:47a          4.2.6256
+   
+
+   - mfc42u.dll
+
+     (Before) Size: 1,013,008  Date: 06/19/96  Time: 04:21p Version: 4.2.6068
+     (After)        1,012,496        09/25/96        09:54p          4.2.6269
+   
+
+   - mfc42.dbg
+
+     (Before) Size: 3,876,644  Date: 06/19/96  Time: 04:20p
+     (After)        3,895,348        09/13/96        10:47a
+   
+
+   - mfc42.map
+
+     (Before) Size: 1,066,391  Date: 06/19/96  Time: 10:04a
+     (After)        1,061,487        09/12/96        02:26a
+   
+
+   - mfc42chs.dll
+
+     (Before) Size:    31,744  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           31,744        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42cht.dll
+
+     (Before) Size:    32,256  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           32,256        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42d.dll
+
+     (Before) Size:   944,640  Date: 06/19/96  Time: 10:01a Version: 4.2.6068
+     (After)          947,200        09/25/96        05:36p          4.2.6269
+   
+
+   - mfc42d.map
+
+     (Before) Size:   782,935  Date: 06/19/96  Time: 10:01a
+     (After)          784,475        09/25/96        05:36p
+   
+
+   - mfc42d.pdb
+
+     (Before) Size: 3,035,136  Date: 06/19/96  Time: 10:01a
+     (After)        3,043,328        09/25/96        05:36p
+   
+
+   - mfc42deu.dll
+
+     (Before) Size:    50,688  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           50,688        09/12/96        02:59a          4.2.6256
+   
+
+   - mfc42enu.dll
+
+     (Before) Size:    44,032  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           44,032        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42esp.dll
+
+     (Before) Size:    48,128  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           48,128        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42fra.dll
+
+     (Before) Size:    49,664  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           49,664        09/12/96        02:59a          4.2.6256
+   
+
+   - mfc42ita.dll
+
+     (Before) Size:    49,152  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           49,152        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42jpn.dll
+
+     (Before) Size:    36,864  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           36,864        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42kor.dll
+
+     (Before) Size:    34,816  Date: 06/19/96  Time: 10:08a Version: 4.2.6068
+     (After)           34,816        09/12/96        03:00a          4.2.6256
+   
+
+   - mfc42u.dbg
+
+     (Before) Size: 3,911,884  Date: 06/19/96  Time: 04:21p
+     (After)        3,904,096        09/25/96        09:54p
+   
+
+   - mfc42u.map
+
+     (Before) Size: 1,082,699  Date: 06/19/96  Time: 10:06a
+     (After)        1,076,450        09/25/96        05:41p
+   
+
+   - mfc42ud.dll
+
+     (Before) Size:   957,952  Date: 06/19/96  Time: 10:04a Version: 4.2.6068
+     (After)          960,512        09/25/96        05:39p          4.2.6269
+   
+
+   - mfc42ud.map
+
+     (Before) Size:   805,616  Date: 06/19/96  Time: 10:04a
+     (After)          806,043        09/25/96        05:39p
+   
+
+   - mfc42ud.pdb
+
+     (Before) Size: 3,059,712  Date: 06/19/96  Time: 10:04a
+     (After)        3,067,904        09/25/96        05:39p
+   
+
+   - mfcd42d.dll
+
+     (Before) Size:   258,560  Date: 06/19/96  Time: 10:02a Version: 4.2.6068
+     (After)          257,536        09/12/96        02:16a          4.2.6256
+   
+
+   - mfcd42d.map
+
+     (Before) Size:   218,214  Date: 06/19/96  Time: 10:02a
+     (After)          214,318        09/12/96        02:16a
+   
+
+   - mfcd42d.pdb
+
+     (Before) Size: 1,290,240  Date: 06/19/96  Time: 10:02a
+     (After)        1,290,240        09/12/96        02:16a
+   
+
+   - mfcd42ud.pdb
+
+     (Before) Size: 1,306,624  Date: 06/19/96  Time: 10:05a
+     (After)        1,298,432        09/12/96        02:35a
+   
+
+   - mfcd42ud.dll
+
+     (Before) Size:   266,752  Date: 06/19/96  Time: 10:05a Version: 4.2.6068
+     (After)          265,728        09/12/96        02:35a          4.2.6256
+   
+
+   - mfcn42d.dll
+
+     (Before) Size:    31,232  Date: 06/19/96  Time: 10:02a Version: 4.2.6068
+     (After)           31,232        09/12/96        02:16a          4.2.6256
+   
+
+   - mfcn42d.map
+
+     (Before) Size:    49,014  Date: 06/19/96  Time: 10:02a
+     (After)           49,095        09/12/96        02:16a
+   
+
+   - mfcn42d.pdb
+
+     (Before) Size:   921,600  Date: 06/19/96  Time: 10:02a
+     (After)          921,600        09/12/96        02:16a
+   
+
+   - mfcn42ud.dll
+
+     (Before) Size:    32,256  Date: 06/19/96  Time: 10:05a Version: 4.2.6068
+     (After)           32,256        09/12/96        02:36a          4.2.6256
+   
+
+   - mfcn42ud.map
+
+     (Before) Size:    50,203  Date: 06/19/96  Time: 10:05a
+     (After)           50,285        09/12/96        02:36a
+   
+
+   - mfcn42ud.pdb
+
+     (Before) Size:   929,792  Date: 06/19/96  Time: 10:05a
+     (After)          929,792        09/12/96        02:36a
+   
+
+   - mfco42d.dll
+
+     (Before) Size:   777,728  Date: 06/19/96  Time: 10:02a Version: 4.2.6068
+     (After)          781,312        09/12/96        02:15a          4.2.6256
+   
+
+   - mfco42d.map
+
+     (Before) Size:   758,536  Date: 06/19/96  Time: 10:02a
+     (After)          758,904        09/12/96        02:15a
+   
+
+   - mfco42d.pdb
+
+     (Before) Size: 2,723,840  Date: 06/19/96  Time: 10:02a
+     (After)        3,190,784        09/12/96        02:15a
+   
+
+   - mfco42ud.dll
+
+     (Before) Size:   781,312  Date: 06/19/96  Time: 10:05a Version: 4.2.6068
+     (After)          784,384        09/12/96        02:34a          4.2.6256
+   
+
+   - mfco42ud.map
+
+     (Before) Size:   808,815  Date: 06/19/96  Time: 10:05a
+     (After)          808,918        09/12/96        02:34a
+   
+
+   - mfco42ud.pdb
+
+     (Before) Size: 2,772,992  Date: 06/19/96  Time: 10:05a
+     (After)        3,239,936        09/12/96        02:34a
+   
+
+2. Files patched by vc42b.rtp in the \msdev directory are:
+
+   - include\accctrl.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     8,711  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\aclapi.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    14,090  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\activscp.h
+
+     (Before) Size:    43,363  Date: 05/24/96  Time: 08:44a
+     (After)           45,596        09/06/96        10:56a
+   
+
+   - lib\advapi32.lib
+
+     (Before) Size:   383,472  Date: 05/06/96  Time: 02:14a
+     (After)          381,586        09/06/96        10:58a
+   
+
+   - include\alphaops.h
+
+     (Before) Size:    43,059  Date: 06/20/95  Time: 09:25a
+     (After)           43,059        09/06/96        10:56a
+   
+
+   - include\basetyps.h
+
+     (Before) Size:     8,967  Date: 01/07/96  Time: 07:31p
+     (After)            8,965        09/06/96        10:56a
+   
+
+   - lib\cap.lib
+
+     (Before) Size:     4,656  Date: 05/06/96  Time: 02:14a
+     (After)            4,656        09/06/96        10:58a
+   
+
+   - include\cguid.h
+
+     (Before) Size:     3,499  Date: 01/07/96  Time: 07:31p
+     (After)            3,497        09/06/96        10:56a
+   
+
+   - lib\chkstk.obj
+
+     (Before) Size:       311  Date: 06/14/96  Time: 07:09p
+     (After)            1,306        09/06/96        10:58a
+   
+
+   - include\comcat.h
+
+     (Before) Size:    31,353  Date: 06/03/96  Time: 01:14p
+     (After)           32,381        09/06/96        10:56a
+   
+
+   - include\comcat.idl
+
+     (Before) Size:     7,800  Date: 02/29/96  Time: 07:59a
+     (After)            8,208        09/06/96        10:56a
+   
+
+   - lib\comctl32.lib
+
+     (Before) Size:    43,080  Date: 05/21/96  Time: 05:39a
+     (After)          118,500        09/06/96        10:58a
+   
+
+   - lib\comdlg32.lib
+
+     (Before) Size:    23,494  Date: 05/06/96  Time: 02:14a
+     (After)           23,494        09/06/96        10:58a
+   
+
+   - include\commctrl.h
+
+     (Before) Size:   121,919  Date: 06/03/96  Time: 02:20p
+     (After)           80,893        09/06/96        10:56a
+   
+
+   - lib\commode.obj
+
+     (Before) Size:       168  Date: 06/14/96  Time: 07:06p
+     (After)              588        09/06/96        10:58a
+   
+
+   - include\compobj.h
+
+     (Before) Size:       437  Date: 01/07/96  Time: 07:31p
+     (After)              435        09/06/96        10:56a
+   
+
+   - include\cplext.h
+
+     (Before) Size:     2,158  Date: 01/07/96  Time: 07:31p
+     (After)            2,158        09/06/96        10:56a
+   
+
+   - include\d3d.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    18,414  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\d3dcaps.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    13,527  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\d3drm.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     5,488  Date: 09/06/96  Time: 10:56a
+   
+
+   - lib\d3drm.lib
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    21,640  Date: 09/06/96  Time: 10:58a
+   
+
+   - include\d3drmdef.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    14,133  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\d3drmobj.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    32,372  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\d3drmwin.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     1,180  Date: 09/06/96  Time: 10:56a
+   
+
+   - include\d3dtypes.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    31,957  Date: 09/06/96  Time: 10:56a
+   
+
+   - lib\daouuid.lib
+
+     (Before) Size:    26,824  Date: 06/18/96  Time: 06:30p
+     (After)           27,838        09/06/96        03:53p
+   
+
+   - include\dbt.h
+
+     (Before) Size:    10,628  Date: 01/07/96  Time: 07:31p
+     (After)           10,633        09/06/96        10:56a
+   
+
+   - include\dde.h
+
+     (Before) Size:     5,030  Date: 01/07/96  Time: 07:30p
+     (After)            5,072        09/06/96        10:56a
+   
+
+   - include\ddeml.h
+
+     (Before) Size:    17,870  Date: 04/02/96  Time: 12:31p
+     (After)           17,868        09/06/96        10:56a
+   
+
+   - include\ddraw.h
+
+     (Before) Size:   103,774  Date: 05/06/96  Time: 02:14a
+     (After)          102,313        09/06/96        10:56a
+   
+
+   - lib\ddraw.lib
+
+     (Before) Size:    17,386  Date: 05/06/96  Time: 02:14a
+     (After)           19,282        09/06/96        10:58a
+   
+
+   - lib\dflayout.lib
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     2,668  Date: 09/06/96  Time: 10:58a
+   
+
+   - include\digitalv.h
+
+     (Before) Size:    37,704  Date: 05/06/96  Time: 02:14a
+     (After)           37,699        09/06/96        10:56a
+   
+
+   - include\dispatch.h
+
+     (Before) Size:       439  Date: 05/06/96  Time: 02:14a
+     (After)              437        09/06/96        10:56a
+   
+
+   - include\dispdib.h
+
+     (Before) Size:    11,161  Date: 01/07/96  Time: 07:31p
+     (After)           11,161        09/06/96        10:56a
+   
+
+   - lib\dlcapi.lib
+
+     (Before) Size:     4,332  Date: 05/06/96  Time: 02:14a
+     (After)            4,332        09/06/96        10:58a
+   
+
+   - include\docobj.h
+
+     (Before) Size:    49,528  Date: 06/03/96  Time: 01:16p
+     (After)           51,721        09/06/96        10:56a
+   
+
+   - include\docobj.idl
+
+     (Before) Size:    14,729  Date: 05/29/96  Time: 07:50a
+     (After)           19,123        09/06/96        10:56a
+   
+
+   - include\dplay.h
+
+     (Before) Size:    10,913  Date: 04/04/96  Time: 11:06a
+     (After)           10,913        09/06/96        10:56a
+   
+
+   - lib\dplay.lib
+
+     (Before) Size:     3,314  Date: 05/06/96  Time: 02:14a
+     (After)            3,314        09/06/96        10:58a
+   
+
+   - include\dsound.h
+
+     (Before) Size:    13,262  Date: 05/06/96  Time: 02:14a
+     (After)           13,356        09/06/96        10:56a
+   
+
+   - lib\dsound.lib
+
+     (Before) Size:     4,550  Date: 05/06/96  Time: 02:14a
+     (After)            4,550        09/06/96        10:58a
+   
+
+   - include\dvobj.h
+
+     (Before) Size:       426  Date: 01/07/96  Time: 07:31p
+     (After)              424        09/06/96        10:56a
+   
+
+   - include\error.h
+
+     (Before) Size:    14,337  Date: 04/08/96  Time: 07:38p
+     (After)           14,337        09/06/96        10:56a
+   
+
+   - include\exdisp.h
+
+     (Before) Size:    17,641  Date: 05/24/96  Time: 08:44a
+     (After)            9,762        09/06/96        10:56a
+   
+
+   - include\exdisp.odl
+
+     (Before) Size:    23,581  Date: 05/29/96  Time: 11:59a
+     (After)           15,586        09/06/96        10:56a
+   
+
+   - include\exdispid.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     1,518  Date: 09/06/96  Time: 10:56a
+   
+
+   - lib\fdi.lib
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    84,646  Date: 09/06/96  Time: 10:58a
+   
+
+   - include\ftsiface.h
+
+     (Before) Size:     6,568  Date: 12/04/95  Time: 02:05p
+     (After)            6,789        09/06/96        10:56a
+   
+
+   - lib\gdi32.lib
+
+     (Before) Size:   307,520  Date: 05/06/96  Time: 02:14a
+     (After)          307,520        09/06/96        10:58a
+   
+
+   - include\gl\gl.h
+
+     (Before) Size:    68,455  Date: 03/20/96  Time: 04:45p
+     (After)           68,392        08/09/96        01:30a
+   
+
+   - lib\glaux.lib
+
+     (Before) Size: 1,273,936  Date: 03/30/96  Time: 01:22a
+     (After)        1,273,900        09/06/96        10:58a
+   
+
+   - include\gl\glu.h
+
+     (Before) Size:    18,280  Date: 10/20/95  Time: 07:56p
+     (After)           18,282        08/09/96        01:30a
+   
+
+   - lib\glu32.lib
+
+     (Before) Size:    49,514  Date: 05/06/96  Time: 02:14a
+     (After)           49,514        09/06/96        10:58a
+   
+
+   - include\hliface.h
+
+     (Before) Size:     1,330  Date: 05/24/96  Time: 08:43a
+     (After)            1,879        09/06/96        10:56a
+   
+
+   - include\hliface.idl
+
+     (Before) Size:       846  Date: 04/19/96  Time: 02:01p
+     (After)            1,364        09/06/96        10:56a
+   
+
+   - include\hlink.h
+
+     (Before) Size:    78,931  Date: 06/03/96  Time: 01:20p
+     (After)           69,305        09/06/96        10:56a
+   
+
+   - include\hlink.idl
+
+     (Before) Size:    37,242  Date: 05/11/96  Time: 01:58p
+     (After)           26,540        09/06/96        10:56a
+   
+
+   - include\httpext.h
+
+     (Before) Size:     5,334  Date: 05/06/96  Time: 02:14a
+     (After)            7,775        09/06/96        10:56a
+   
+
+   - include\httpfilt.h
+
+     (Before) Size:    12,458  Date: 05/06/96  Time: 02:14a
+     (After)           12,805        09/06/96        10:56a
+   
+
+   - include\idf.h
+
+     (Before) Size:    12,538  Date: 01/07/96  Time: 07:31p
+     (After)           12,538        09/06/96        10:56a
+   
+
+   - include\imagehlp.h
+
+     (Before) Size:    23,421  Date: 05/30/96  Time: 01:59a
+     (After)           23,452        09/06/96        10:56a
+   
+
+   - lib\imagehlp.lib
+
+     (Before) Size:    59,426  Date: 04/10/96  Time: 02:07p
+     (After)           59,426        09/06/96        10:58a
+   
+
+   - include\ime.h
+
+     (Before) Size:     7,735  Date: 02/09/96  Time: 12:14p
+     (After)            7,803        09/06/96        10:56a
+   
+
+   - include\imm.h
+
+     (Before) Size:    21,310  Date: 01/07/96  Time: 07:56p
+     (After)           20,634        09/06/96        10:56a
+   
+
+   - lib\imm32.lib
+
+     (Before) Size:    52,402  Date: 12/04/95  Time: 02:07p
+     (After)           70,420        09/06/96        10:58a
+   
+
+   - include\inetsdk.h
+
+     (Before) Size:     1,350  Date: 05/24/96  Time: 10:15a
+     (After)            1,892        09/06/96        10:56a
+   
+
+   - include\inetsdk.idl
+
+     (Before) Size:       832  Date: 02/26/96  Time: 04:00p
+     (After)            1,313        09/06/96        10:56a
+   
+
+   - include\inetsdk.mak
+
+     (Before) Size:    20,934  Date: 05/30/96  Time: 01:35a
+     (After)           20,892        09/06/96        10:56a
+   
+
+   - include\intshcut.h
+
+     (Before) Size:    15,672  Date: 05/30/96  Time: 01:59a
+     (After)           15,073        09/06/96        10:56a
+   
+
+   - include\isguids.h
+
+     (Before) Size:       453  Date: 05/06/96  Time: 02:14a
+     (After)              747        09/06/96        10:56a
+   
+
+   - lib\kernel32.lib
+
+     (Before) Size:   630,924  Date: 05/06/96  Time: 02:14a
+     (After)          635,638        09/06/96        10:58a
+   
+
+   - include\lmaccess.h
+
+     (Before) Size:    40,757  Date: 03/05/96  Time: 09:27a
+     (After)           40,810        09/06/96        10:56a
+   
+
+   - include\lmat.h
+
+     (Before) Size:     3,577  Date: 01/07/96  Time: 07:31p
+     (After)            3,576        09/06/96        10:56a
+   
+
+   - include\lmbrowsr.h
+
+     (Before) Size:     5,969  Date: 01/07/96  Time: 07:31p
+     (After)            5,967        09/06/96        10:56a
+   
+
+   - include\lmerr.h
+
+     (Before) Size:    36,056  Date: 02/14/96  Time: 12:30p
+     (After)           36,393        09/06/96        10:56a
+   
+
+   - include\lmerrlog.h
+
+     (Before) Size:    38,298  Date: 03/26/96  Time: 11:01a
+     (After)           38,479        09/06/96        10:56a
+   
+
+   - include\lmserver.h
+
+     (Before) Size:    47,741  Date: 03/13/96  Time: 02:48p
+     (After)           47,741        09/06/96        10:56a
+   
+
+   - include\lmshare.h
+
+     (Before) Size:    10,411  Date: 02/14/96  Time: 12:30p
+     (After)           10,475        09/06/96        10:56a
+   
+
+   - lib\loadperf.lib
+
+     (Before) Size:     6,704  Date: 05/06/96  Time: 02:14a
+     (After)            6,704        09/06/96        10:58a
+   
+
+   - include\lsapi.h
+
+     (Before) Size:    11,551  Date: 01/16/96  Time: 02:18p
+     (After)           11,774        09/06/96        10:56a
+   
+
+   - lib\lz32.lib
+
+     (Before) Size:    12,198  Date: 05/06/96  Time: 02:14a
+     (After)           12,198        09/06/96        10:58a
+   
+
+   - lib\mapi32.lib
+
+     (Before) Size:    82,128  Date: 05/06/96  Time: 02:14a
+     (After)          121,082        09/06/96        10:58a
+   
+
+   - include\mapivb.bas
+
+     (Before) Size:    10,479  Date: 12/04/95  Time: 02:05p
+     (After)  File Deleted
+   
+
+   - include\mciavi.h
+
+     (Before) Size:     2,984  Date: 01/13/96  Time: 05:30p
+     (After)            2,989        09/06/96        10:57a
+   
+
+   - include\mcx.h
+
+     (Before) Size:     3,930  Date: 01/07/96  Time: 07:29p
+     (After)            3,915        09/06/96        10:57a
+   
+
+   - include\mgmtapi.h
+
+     (Before) Size:     5,279  Date: 05/06/96  Time: 02:14a
+     (After)            5,210        09/06/96        10:57a
+   
+
+   - lib\mgmtapi.lib
+
+     (Before) Size:     9,976  Date: 05/06/96  Time: 02:14a
+     (After)            9,976        09/06/96        10:58a
+   
+
+   - bin\midl.exe
+
+     (Before) Size:   764,560  Date: 05/06/96  Time: 02:14a
+     (After)          750,352        07/25/96        02:51p
+   
+
+   - bin\mktyplib.exe
+
+     (Before) Size:    71,168  Date: 05/06/96  Time: 02:14a
+     (After)           86,016        07/26/96        04:41p
+   
+
+   - include\mmreg.h
+
+     (Before) Size:    69,422  Date: 05/06/96  Time: 02:14a
+     (After)           69,235        09/06/96        10:57a
+   
+
+   - include\mmsystem.h
+
+     (Before) Size:   154,496  Date: 01/07/96  Time: 07:30p
+     (After)          154,496        09/06/96        10:57a
+   
+
+   - include\moniker.h
+
+     (Before) Size:       437  Date: 01/07/96  Time: 07:31p
+     (After)              435        09/06/96        10:57a
+   
+
+   - lib\mpr.lib
+
+     (Before) Size:    74,104  Date: 05/06/96  Time: 02:14a
+     (After)           74,104        09/06/96        10:58a
+   
+
+   - include\msacm.h
+
+     (Before) Size:    58,508  Date: 01/07/96  Time: 07:30p
+     (After)           58,508        09/06/96        10:57a
+   
+
+   - lib\msacm32.lib
+
+     (Before) Size:    42,720  Date: 05/06/96  Time: 02:14a
+     (After)           42,720        09/06/96        10:58a
+   
+
+   - include\msacmdlg.dlg
+
+     (Before) Size:     2,902  Date: 12/04/95  Time: 02:05p
+     (After)            2,902        09/06/96        10:57a
+   
+
+   - include\msacmdlg.h
+
+     (Before) Size:     1,029  Date: 01/07/96  Time: 07:30p
+     (After)            1,029        09/06/96        10:57a
+   
+
+   - include\msconf.h
+
+     (Before) Size:     9,231  Date: 05/20/96  Time: 11:00p
+     (After)           13,545        09/06/96        10:57a
+   
+
+   - lib\msconf.lib
+
+     (Before) Size:     7,038  Date: 05/20/96  Time: 11:00p
+     (After)           12,224        09/06/96        10:58a
+   
+
+   - include\mswsock.h
+
+     (Before) Size:     2,815  Date: 03/22/96  Time: 10:09a
+     (After)            4,189        09/06/96        10:57a
+   
+
+   - lib\mswsock.lib
+
+     (Before) Size:     4,442  Date: 05/06/96  Time: 02:14a
+     (After)           25,332        09/06/96        10:58a
+   
+
+   - lib\nddeapi.lib
+
+     (Before) Size:    25,062  Date: 05/06/96  Time: 02:14a
+     (After)           25,062        09/06/96        10:58a
+   
+
+   - lib\netapi32.lib
+
+     (Before) Size:   260,134  Date: 05/06/96  Time: 02:14a
+     (After)          261,142        09/06/96        10:58a
+   
+
+   - include\nspapi.h
+
+     (Before) Size:    19,000  Date: 04/02/96  Time: 12:31p
+     (After)           18,996        09/06/96        10:57a
+   
+
+   - include\oaidl.h
+
+     (Before) Size:   195,458  Date: 06/03/96  Time: 02:12p
+     (After)          197,254        09/06/96        10:57a
+   
+
+   - include\oaidl.idl
+
+     (Before) Size:    44,086  Date: 01/07/96  Time: 07:31p
+     (After)           53,167        09/06/96        10:57a
+   
+
+   - include\objbase.h
+
+     (Before) Size:    29,459  Date: 05/06/96  Time: 02:14a
+     (After)           30,028        09/06/96        10:57a
+   
+
+   - include\objerror.h
+
+     (Before) Size:       303  Date: 01/07/96  Time: 07:31p
+     (After)              301        09/06/96        10:57a
+   
+
+   - include\objidl.h
+
+     (Before) Size:   346,914  Date: 05/31/96  Time: 02:42p
+     (After)          330,903        09/06/96        10:57a
+   
+
+   - include\objidl.idl
+
+     (Before) Size:    63,151  Date: 05/06/96  Time: 02:14a
+     (After)           67,505        09/06/96        10:57a
+   
+
+   - include\objsafe.h
+
+     (Before) Size:     6,355  Date: 05/24/96  Time: 08:44a
+     (After)            7,808        09/06/96        10:57a
+   
+
+   - include\ocidl.h
+
+     (Before) Size:   243,611  Date: 05/23/96  Time: 05:42p
+     (After)          244,528        09/06/96        10:57a
+   
+
+   - include\ocidl.idl
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    37,266  Date: 09/06/96  Time: 10:57a
+   
+
+   - include\ole2.h
+
+     (Before) Size:    12,684  Date: 04/02/96  Time: 12:31p
+     (After)           12,682        09/06/96        10:57a
+   
+
+   - lib\ole32.lib
+
+     (Before) Size:   234,560  Date: 05/06/96  Time: 02:14a
+     (After)          243,180        09/06/96        10:58a
+   
+
+   - lib\oleaut32.lib
+
+     (Before) Size:   212,844  Date: 05/29/96  Time: 06:23p
+     (After)          231,168        09/06/96        10:58a
+   
+
+   - include\oleauto.h
+
+     (Before) Size:    33,147  Date: 05/30/96  Time: 03:05a
+     (After)           33,100        09/06/96        10:57a
+   
+
+   - include\olectl.h
+
+     (Before) Size:    16,931  Date: 06/17/96  Time: 10:47a
+     (After)           20,424        09/06/96        10:57a
+   
+
+   - include\olectlid.h
+
+     (Before) Size:     6,732  Date: 05/06/96  Time: 02:14a
+     (After)              824        09/06/96        10:57a
+   
+
+   - include\oledlg.h
+
+     (Before) Size:    74,489  Date: 01/07/96  Time: 07:30p
+     (After)           74,489        09/06/96        10:57a
+   
+
+   - lib\oledlg.lib
+
+     (Before) Size:    21,802  Date: 05/06/96  Time: 02:14a
+     (After)           21,802        09/06/96        10:58a
+   
+
+   - include\oleidl.h
+
+     (Before) Size:   158,879  Date: 05/06/96  Time: 02:14a
+     (After)          159,627        09/06/96        10:57a
+   
+
+   - include\oleidl.idl
+
+     (Before) Size:    27,158  Date: 03/15/96  Time: 01:43p
+     (After)           28,120        09/06/96        10:57a
+   
+
+   - lib\olepro32.lib
+
+     (Before) Size:     5,446  Date: 06/18/96  Time: 07:40p
+     (After)            5,446        09/06/96        10:58a
+   
+
+   - lib\opengl32.lib
+
+     (Before) Size:   336,274  Date: 05/06/96  Time: 02:14a
+     (After)          336,274        09/06/96        10:58a
+   
+
+   - include\pbt.h
+
+     (Before) Size:     1,409  Date: 01/07/96  Time: 07:31p
+     (After)            1,409        09/06/96        10:57a
+   
+
+   - include\pcrt32.h
+
+     (Before) Size:     1,534  Date: 01/07/96  Time: 07:31p
+     (After)            1,534        09/06/96        10:57a
+   
+
+   - include\pdh.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    16,235  Date: 09/06/96  Time: 10:57a
+   
+
+   - lib\pdh.lib
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:    46,296  Date: 09/06/96  Time: 10:58a
+   
+
+   - include\pdhmsg.h
+
+     (Before)  N/A. This is a newly added file.
+     (After)  Size:     8,303  Date: 09/06/96  Time: 10:57a
+   
+
+   - lib\penter.lib
+
+     (Before) Size:     3,800  Date: 03/30/96  Time: 06:09a
+     (After)            3,800        09/06/96        10:58a
+   
+
+   - include\penwin.h
+
+     (Before) Size:   106,402  Date: 01/07/96  Time: 07:31p
+     (After)          106,402        09/06/96        10:57a
+   
+
+   - include\prsht.h
+
+     (Before) Size:    12,511  Date: 03/29/96  Time: 10:03p
+     (After)           12,580        09/06/96        10:57a
+   
+
+   - include\pshpack4.h
+
+     (Before) Size:       880  Date: 01/07/96  Time: 07:31p
+     (After)              911        09/06/96        10:57a
+   
+
+   - include\ras.h
+
+     (Before) Size:    32,287  Date: 05/06/96  Time: 02:14a
+     (After)           32,269        09/06/96        10:57a
+   
+
+   - lib\rasapi32.lib
+
+     (Before) Size:    71,930  Date: 05/06/96  Time: 02:14a
+     (After)           71,930        09/06/96        10:58a
+   
+
+   - include\rasdlg.h
+
+     (Before) Size:     6,524  Date: 05/06/96  Time: 02:14a
+     (After)            6,445        09/06/96        10:57a
+   
+
+   - lib\rasdlg.lib
+
+     (Before) Size:    10,922  Date: 05/06/96  Time: 02:14a
+     (After)           10,926        09/06/96        10:58a
+   
+
+   - include\raserror.h
+
+     (Before) Size:    18,142  Date: 02/14/96  Time: 12:27p
+     (After)           18,219        09/06/96        10:57a
+   
+
+This is the end of Part 1.
+
+REFERENCES
+==========
+
+You can find the additional parts of this article in the Microsoft Knowledge
+Base:
+
+  Q160496 INFO: Files Modified by VC42b Patch - Part 2 of 4
+
+  Q160505 INFO: Files Modified by VC42b Patch - Part 3 of 4
+
+  Q160506 INFO: Files Modified by VC42b Patch - Part 4 of 4
+
+Additional query words: patch
+
+======================================================================
+Keywords          : kbenv kbother kbnokeyword kbDAOsearch kbDatabase kbGenInfo kbMFC kbODBC kbVC kbHWx86 kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : 4.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

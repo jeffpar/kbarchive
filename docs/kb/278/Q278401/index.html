@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/278/Q278401/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/278/Q278401/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/278/Q278401/","publisher":null,"image":null,"headline":"Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q278401-xccc-event-205-occurs-after-security-bulletin-is-installed">Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q278401
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+Applies to all versions of Microsoft Outlook Web Access
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install the Microsoft Security Bulletin MS00-078, you are not able to
+access Microsoft Exchange Outlook Web Access, and the following event is
+reported in the system event log:
+
+  Event ID 205
+  Source: WAM
+  The HTTP server was unable to load the ISAPI Application
+  'C:\WINNTSRV\System32\inetsrv\asp.dll'. The data is the error.
+  For additional information specific to this message please visit the Microsoft
+  Online Support site located at: http://www.microsoft.com/contentredirect.asp.
+
+CAUSE
+=====
+
+This issue can occur if mismatched dynamic link libraries exist. The order in
+which you install programs can result in mismatched dynamic link libraries.
+
+RESOLUTION
+==========
+
+To resolve this issue, install the latest Microsoft Windows NT Service Pack, and
+then install the security patch.
+
+MORE INFORMATION
+================
+
+The error in the "Symptoms" section of this article may also occur when you
+attempt to access web pages through LocalHost, independent of Outlook Web
+Access. For more information about the Microsoft Security Bulletin, visit the
+following Microsoft Web site:
+
+  Microsoft Security Bulletin MS00-078
+
+Additional query words: owa security bulletin ex55 exch2kp2w
+
+======================================================================
+Keywords          :  
+Component         : WebClient
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : :5.5
+Hardware          : x86
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

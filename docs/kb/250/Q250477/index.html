@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250477/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250477/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250477/","publisher":null,"image":null,"headline":"Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250477-prb-terminate-events-fire-in-reverse-order-in-vbceevb">Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250477
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbOSWinCE100 kbGrpDSVB
+Last Modified: 05-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+- Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When two forms are shown and closed, the Terminate event of the second form
+fires prior to the Terminate event of the first form. The order of these events
+is opposite of what occurs in Microsoft Visual Basic 6.0. This behavior occurs
+in the emulation environment and on the remote device.
+
+RESOLUTION
+==========
+
+In cases where this behavior needs to be worked around, project level variables
+can be used to store when forms in the project are loaded and unloaded. Each
+form in the project can call a generic Terminate routine. When the generic
+Terminate event is called and all forms that had been loaded have been unloaded,
+the Terminate code can be executed.
+
+The following example demonstrates this concept:
+
+1. Create a new Windows CE project in either Visual Basic or eMbedded Visual
+  Basic. Form1 is created by default.
+
+2. Paste the following code into Form1:
+
+  Private Sub Form_Click()
+      Form2.Show
+  End Sub
+
+  Private Sub Form_Load()
+      Form1Unloaded = False
+  End Sub
+
+  Private Sub Form_Terminate()
+      TerminateHandler
+  End Sub
+
+  Private Sub Form_Unload(Cancel As Integer)
+      Form1Unloaded = True
+  End Sub
+
+3. Add a second form to the project.
+
+4. Paste the following code into Form2:
+
+  Private Sub Form_Load()
+      Form2Unloaded = False
+  End Sub
+
+  Private Sub Form_Terminate()
+      TerminateHandler
+  End Sub
+
+  Private Sub Form_Unload(Cancel As Integer)
+      Form2Unloaded = True
+  End Sub
+
+5. Add a module to the project.
+
+6. Paste the following code into Module1:
+
+  Dim Form1Unloaded
+  Dim Form2Unloaded
+  Dim ExecTerminateRoutine
+
+  Sub TerminateHandler()
+      If Form1Unloaded And Form2Unloaded And Not (ExecTerminateRoutine) Then
+          ExecTerminateRoutine = True
+          ' Execute termination code in
+          ' the order required.
+      End If
+  End Sub
+
+  Sub Main()
+      Form1Unloaded = True
+      Form2Unloaded = True
+      ExecTerminateRoutine = False
+      Form1.Show
+  End Sub
+
+7. In the Project Properties dialog box, change the Startup object to Sub Main.
+
+8. Press the F5 key to run the program.
+
+9. Click on Form1 and notice that Form2 is displayed.
+
+10. Close Form2.
+
+11. Close Form1.
+
+12. After closing Form1, the TerminateHandler routine is called and the code
+  within the If statement is executed once.
+
+MORE INFORMATION
+================
+
+This behavior only occurs in the Windows CE Platform.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE Project in Visual Basic. Form1 is created by default.
+
+2. On the Projects menu, select Components, and then select Microsoft CE File
+  System Control.
+
+3. Add a File control to Form1.
+
+4. Paste the following code into Form1:
+
+  Private Sub Form_Click()
+      Form2.Show
+  End Sub
+
+  Private Sub Form_Terminate()
+      File1.Open "terminate.txt", fsModeAppend
+      File1.WriteFields "Form1 Terminate"
+      File1.Close
+  End Sub
+
+5. Add a second form to the project.
+
+6. Add a File control to Form2.
+
+7. Add the following code behind Form2.
+
+  Private Sub Form_Terminate()
+      File1.Open "terminate.txt", fsModeAppend
+      File1.WriteFields "Form2 Terminate"
+      File1.Close
+  End Sub
+
+8. Press the F5 key to run the program.
+
+9. Click on Form1 and note that Form2 is displayed.
+
+10. Close Form2.
+
+11. Close Form1.
+
+12. Open the text file that has been created (terminate.txt) and note that the
+  Terminate event of Form2 has been executed prior to the Terminate event of
+  Form1.
+
+Additional query words: wince vbce vbce6 eVB
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

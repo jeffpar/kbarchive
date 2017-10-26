@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167662/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167662/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167662/","publisher":null,"image":null,"headline":"Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167662-ode97-uninstall-fails-if-run-time-not-shown-in-component-list">Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167662
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 16-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+
+SYMPTOMS
+========
+
+You cannot remove a run-time application created with Microsoft Office 97
+Developer Edition Tools if the Microsoft Access Run-Time version is not visible
+in the component list of your Setup program.
+
+When you try to uninstall the application, you receive the following error
+message:
+
+  &lt;Application Name&gt; Setup was not completed successfully.
+
+RESOLUTION
+==========
+
+Verify that the "Display in Component List" check box is selected for the
+Microsoft Access Run-Time version when you create disk images with the Setup
+Wizard. For example, follow the instructions in the "Steps to Reproduce
+Behavior" section below, but omit step 7, which instructs you to clear the
+"Display in Component List" check box.
+
+MORE INFORMATION
+================
+
+The Setup Wizard in Microsoft Office 97 Developer Edition Tools allows you to
+customize your Setup program by selecting which components of your application
+appear in the component list when a user selects the Custom installation
+option.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Microsoft Office 97 Developer Edition Tools Setup Wizard.
+
+2. On the first screen of the wizard, click "Create a new set of setup options
+  for my application's custom Setup program," and then click Next.
+
+3. On the "List of Files" screen, click the Add button, and add the sample
+  database Northwind.mdb. Click to select the "Set as Application's Main File"
+  check box, and then click Next.
+
+4. On the "List of Shortcuts" screen, click the Add button to add a new shortcut
+  for the database file. Type "Uninstall Test" (without the quotation marks) in
+  the Description box. Click the Database Shortcut Properties tab, and then
+  click to select the Run-Time check box. Click Next.
+
+5. Click Yes when prompted to include the run-time executable file, and click OK
+  when prompted about including a workgroup information file.
+
+6. Click Next on the "List of Registry Values" and "Which of the following
+  components do you want to include" screens.
+
+7. On the "List of Components" screen of the Setup Wizard, select Microsoft
+  Access Run-Time Version, and then click to clear the "Display in Component
+  List" check box. Repeat for the Workgroup Administrator component, and then
+  click Next.
+
+8. Complete the Setup Wizard, following the instructions on your screen to
+  create your setup files.
+
+9. Run your custom Setup program to install the run-time application on a target
+  computer.
+
+10. Run the Setup program again, and click Remove All in the Installation
+  Maintenance dialog box. Note that you receive the error message immediately,
+  and the application is not removed from the target computer.
+
+Additional query words: ode app runtime rt
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

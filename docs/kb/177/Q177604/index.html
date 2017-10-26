@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177604/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177604/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177604/","publisher":null,"image":null,"headline":"Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177604-multimedia-troubleshooting-using-clean-boot-of-windows-95">Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177604
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0,2.0,95
+Operating System(s): 
+Keyword(s): kbenv kbtshoot kbimu
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bookshelf 2000 
+- Microsoft Bookshelf 99 
+- Microsoft Bookshelf 98 for Windows 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Bookshelf '95 for Windows 95 
+- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+- Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+- Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+- Microsoft Encarta Encyclopedia 2000 
+- Microsoft Encarta Encyclopedia 99 
+- Microsoft Encarta 98 Encyclopedia for Windows 
+- Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+- Microsoft Encarta 97 Encyclopedia for Windows 
+- Microsoft Encarta 96 Encyclopedia for Windows 
+- Microsoft Encarta Reference Suite 2001 
+- Microsoft Encarta Reference Suite 2000 
+- Microsoft Encarta Reference Suite 99 
+- Microsoft Encarta Interactive World Atlas 2001 
+- Microsoft Encarta Interactive World Atlas 2000 
+- Microsoft Encarta Virtual Globe 99, version 1.0 
+- Microsoft Encarta World English Dictionary 2001 
+- Microsoft Encarta World English Dictionary 
+- Microsoft Flight Simulator 98 
+- Microsoft Flight Simulator for Windows 95, version 1.0 
+- Microsoft Midtown Madness 2, version 2.0 
+- Microsoft Motocross Madness 2, version 2.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to start Windows 95 without loading any unnecessary
+terminate-and-stay-resident (TSR) programs or device drivers (this is called a
+"clean boot"). You can clean boot Windows to troubleshoot problems you may
+experience with programs that cannot run in Safe mode because Safe mode does not
+meet the program's minimum system requirements. A program cannot run in Safe
+mode if the program requires 256 colors, a CD-ROM drive, or any other feature
+that Safe mode does not support.
+
+NOTE: When you experience a problem with a program that can run in Safe mode, use
+Safe mode to troubleshoot the issue.
+
+MORE INFORMATION
+================
+
+To use a clean boot of Windows 95 to troubleshoot an issue, use the following
+methods, starting with the "Clean Boot the Computer" method.
+
+Clean Boot the Computer
+-----------------------
+
+To clean boot the computer:
+
+1. Empty the StartUp folder. To do this, follow these steps:
+
+  a. Right-click Start, and then click Open.
+
+  b. Double-click the Programs folder.
+
+  c. Double-click the StartUp folder.
+
+  d. On the Edit menu, click Select All.
+
+  e. On the Edit menu, click Cut.
+
+  f. Close all open windows.
+
+  g. Right-click an empty area on the desktop, point to New, and then click
+     Folder.
+
+  h. Type "StartUp Items" (without the quotation marks), and then press ENTER.
+
+  i. Double-click the StartUp Items folder.
+
+  j. On the Edit menu, click Paste.
+
+  k. Close the StartUp Items window.
+
+2. Empty the Run Keys in the Registry
+
+  WARNING: If you use Registry Editor incorrectly, you may cause serious
+  problems that may require you to reinstall your operating system. Microsoft
+  cannot guarantee that you can solve problems that result from using Registry
+  Editor incorrectly. Use Registry Editor at your own risk.
+
+  Use Registry Editor to save a registry backup file for each of the Run keys in
+  the Windows registry, and then delete all value settings except the (Default)
+  value setting in each of the Run keys.
+
+  The following table shows the Run keys in the Windows registry that you need
+  to empty, along with suggested file names for the registry backup files:
+
+     File Name                  Registry Key
+     -----------------------------------------------------------------
+
+     HKLM-Run.reg               HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\Run
+
+     HKLM-RunOnce.reg           HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunOnce
+
+     HKLM-RunOnceEx.reg         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunOnceEx
+
+     HKLM-RunServices.reg       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunServices
+
+     HKLM-RunServicesOnce.reg   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunServicesOnce
+
+     HKCU-Run.reg               HKEY_CURRENT_USER\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\Run
+
+     HKCU-RunOnce.reg           HKEY_CURRENT_USER\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunOnce
+
+     HKCU-RunOnceEx.reg         HKEY_CURRENT_USER\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunOnceEx
+
+     HKCU-RunServices.reg       HKEY_CURRENT_USER\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunServices
+
+     HKCU-RunServicesOnce.reg   HKEY_CURRENT_USER\SOFTWARE\Microsoft\ 
+                                Windows\CurrentVersion\RunServicesOnce
+
+
+3. Rename the Winstart.bat file if it exists. This file loads
+  terminate-and-stay-resident (TSR) programs that are required by some
+  Windows-based programs. This file is not required by Windows 95, and may not
+  exist on the computer. To rename the Winstart.bat file, follow these steps:
+
+  a. Click Start, point to Find, and then click Files Or Folders.
+
+  b. In the Named box, type "winstart.bat" (without the quotation marks), and
+     then click Find Now.
+
+  c. In the list of found files, right-click the Winstart.bat file, click
+     Rename, type "winstart.pss" (without the quotation marks), and then press
+     ENTER.
+
+  d. Close the Find: Files Named Winstart.bat window.
+
+For additional information about the Winstart.bat file, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q134402 Some TSRs Moved from Autoexec.bat to Winstart.bat During Setup
+
+4. Modify the Autoexec.bat and Config.sys files.
+
+  The Autoexec.bat and Config.sys files are present for compatibility with
+  MS-DOS programs, and load when Windows 95 starts. These files can load TSR
+  programs and device drivers that may adversely affect the performance of
+  other programs.
+
+  NOTE: If the Autoexec.bat file or Config.sys file is extremely large or
+  complex, you can skip this step and then repeat Step 3 to rename the
+  Autoexec.bat file to Autoexec.pss and rename the Config.sys file to
+  Config.pss.
+
+  a. Click Start, and then click Run.
+
+  b. In the Open box, type "sysedit" (without the quotation marks), and then
+     click OK.
+
+  c. In the Autoexec.bat window, type "rem" (without the quotation marks), and
+     then press the SPACEBAR at the beginning of each line in the file. You may
+     need to scroll down to see all of the lines in the file.
+
+  d. When you finish modifying the Autoexec.bat file, on the File menu, click
+     Save.
+
+  e. In the Config.sys window, type "rem" (without the quotation marks), and
+     then press the SPACEBAR at the beginning of each line in the file. You may
+     need to scroll down to see all of the lines in the file.
+
+  f. When you finish modifying the Config.sys file, on the File menu, click
+     Save.
+
+5. Disable the Load= and Run= lines in the Win.ini file. To do this, follow
+  these steps:
+
+  a. In the Win.ini window in System Configuration Editor, locate the [Windows]
+     section.
+
+  b. Under [Windows], type a SEMICOLON (;) at the beginning of each of the
+     Load= and Run= lines.
+
+  c. On the File menu, click Save.
+
+6. Disable any non-standard entries in the [boot] section of the System.ini
+  file. To do this:
+
+  a. In the System.ini window in System Configuration Editor, locate the [boot]
+     section of the System.ini file.
+
+  b. In the [boot] section, locate the following line:
+
+     system.drv=system.drv
+
+     If you do not see this line, you may see the following lines:
+
+     system.drv=atmsys.drv
+     atm.sys.drv=system.drv
+
+     If you see these lines, type a semicolon (;) at the beginning of each line,
+     press END, press ENTER, and then type "system.drv=system.drv" (without the
+     quotation marks).
+
+  c. In the [boot] section, verify that each of the following lines are
+     present:
+
+     shell=Explorer.exe
+     mouse.drv=mouse.drv
+     keyboard.drv=keyboard.drv
+
+     If on of these lines in the file does not match the corresponding line in
+     the list exactly, type a SEMICOLON (;) at the beginning of the line, press
+     END, press ENTER, and then type the line exactly as it appears in the
+     list.
+
+  d. In the [boot] section of the System.ini file, locate the following line:
+
+     display.drv=pnpdrvr.drv
+
+     If the display.drv= line is not identical to this line, contact your
+     hardware manufacturer to inquire about how to obtain the latest Windows 95
+     version of the driver for your video adapter.
+
+     IMPORTANT: Do not change this line in the System.ini file!
+
+  e. On the File menu, click Save.
+
+  f. Quit System Configuration Editor.
+
+7. Restart the computer and then run the program to determine if the issue is
+  resolved.
+
+  If the issue is resolved, proceed to the "Isolate the Conflicting Component"
+  method.
+
+  If the issue continues to occur, proceed to the "Troubleshoot the System.ini
+  File" method.
+
+  If Windows does not start, or if the program requires a component that no
+  longer starts when you start Windows, proceed to the next method.
+
+Restore Required Windows Components
+-----------------------------------
+
+In some cases, Windows may require a component in the Autoexec.bat or Config.sys
+file to start or to use the CD-ROM drive.
+
+If Windows does not start, follow these steps to restart the computer to a
+command prompt:
+
+1. Press CTRL+ALT+DELETE to restart the computer.
+
+2. When you see the "Starting Windows 95" message, press the F8 key
+
+3. On the Startup menu, select Command Prompt Only, and then press ENTER.
+
+4. At the command prompt, type "cd\" (without the quotation marks), and then
+  press ENTER.
+
+If Windows starts, but does not recognize the CD-ROM drive, restart the computer
+to a command prompt. To do this:
+
+1. Click Start, and then click Shut Down.
+
+2. Click Restart the Computer, and then click OK.
+
+3. When you see the "Starting Windows 95" message, press the F8 key.
+
+4. On the Startup menu, select Command Prompt Only, and then press ENTER.
+
+5. At the command prompt, type "cd\" (without the quotation marks), and then
+  press ENTER.
+
+If you know the component that Windows requires, you can either edit the
+appropriate startup file, or create a new copy of the file that starts only the
+required component.
+
+To restore the required component(s) in the Autoexec.bat and Config.sys files:
+
+1. At the command prompt, type "edit autoexec.bat" (without the quotation
+  marks), and then press ENTER.
+
+2. Locate the line that starts the required component.
+
+  NOTE: If you need to load MS-DOS drivers for your CD-ROM drive, restore the
+  line that loads the Mscdex.exe file, and then note the drive name that
+  follows the /D: switch on that line.
+
+3. At the beginning of the line, press DELETE four times to erase "rem" and the
+  blank space that follows it.
+
+  Repeat this step to restore each line in the file that starts a required
+  component.
+
+4. Press ALT+F, and then press S.
+
+5. Press ALT+F, and then press O.
+
+6. Type "config.sys" (without the quotation marks), and then press ENTER.
+
+7. Locate the line that starts the required component.
+
+  NOTE: To locate the line that loads the MS-DOS CD-ROM driver, press ALT+S,
+  press F, type the drive name you noted in step 2, and then press ENTER. To
+  move to the beginning of this line, press HOME.
+
+8. At the beginning of the line, press DELETE four times to erase "rem" and the
+  blank space that follows it.
+
+  Repeat this step to restore each line in the file that starts a required
+  component.
+
+9. Press ALT+F, and then press X. When you are prompted to save the changes,
+  press Y.
+
+10. Press CTRL+ALT+DELETE to restart the computer.
+
+To create new copies of the Autoexec.bat and Config.sys files that contain only
+the required lines:
+
+1. At the command prompt, type "edit autoexec.pss" (without the quotation
+  marks), and then press ENTER.
+
+2. In the Autoexec.pss file, delete all lines except the required line(s).
+
+  NOTE: If you need to load MS-DOS drivers for your CD-ROM drive, restore the
+  line that loads the Mscdex.exe file, and then note the drive name that
+  follows the /D: switch on that line.
+
+3. Press ALT+F, and then press A.
+
+4. Type "autoexec.bat" (without the quotation marks), and then press ENTER.
+
+5. Press ALT+F, and then press O.
+
+6. Type "config.pss" (without the quotation marks), and then press ENTER.
+
+7. In the Config.pss file, delete all lines except the required line(s).
+
+  NOTE: To locate the line that loads the MS-DOS CD-ROM driver, press ALT+S,
+  press F, type the drive name you noted in step 2, and then press ENTER.
+
+8. Press ALT+F, and then press A.
+
+9. Type "config.sys" (without the quotation marks), and then press ENTER.
+
+10. Press ALT+F, and then press X.
+
+11. Press CTRL+ALT+DELETE to restart the computer.
+
+If you do not know the component that Windows requires, restore the Autoexec.bat
+and Config.sys files to their original conditions. After you restore the files
+to their original conditions, contact your computer manufacturer or your
+hardware documentation to determine the components that Windows requires.
+
+If you renamed the Autoexec.bat and Config.sys files, follow these steps to
+restore them:
+
+1. At the command prompt, type "ren autoexec.pss autoexec.bat" (without the
+  quotation marks), and then press ENTER.
+
+2. At the command prompt, type "ren config.pss config.sys" (without the
+  quotation marks), and then press ENTER.
+
+3. Press CTRL+ALT+DEL to restart the computer.
+
+If you modified the Autoexec.bat and Config.sys files, follow these steps to
+restore them to their original conditions:
+
+1. At the command prompt, type "edit autoexec.bat" (without the quotation
+  marks), and then press ENTER.
+
+2. At the beginning of the first line, press DELETE four times to erase "rem"
+  and the blank space that follows it.
+
+3. Press DOWN ARROW to move to the next line.
+
+4. Repeat steps 2-3 to restore each line in the Autoexec.bat file.
+
+5. Press ALT+F, and then press S.
+
+6. Press ALT+F, and then press O.
+
+7. Type "config.sys" (without the quotation marks), and then press ENTER.
+
+8. At the beginning of the first line, press DELETE four times to erase "rem"
+  and the blank space that follows it.
+
+9. Press DOWN ARROW to move to the next line.
+
+10. Repeat steps 8-9 to restore each line in the Config.sys file.
+
+11. Press ALT+F, and then press X. When you are prompted to save the changes,
+  press Y.
+
+12. Press CTRL+ALT+DELETE to restart the computer.
+
+NOTE: If you have a SCSI CD-ROM drive and these steps do not restore the CD-ROM
+drive, please see your hardware documentation or contact your hardware
+manufacturer for information about how to configure the MS-DOS drivers for the
+CD-ROM drive.
+
+Troubleshoot the System.ini File
+--------------------------------
+
+To troubleshoot the System.ini file, follow these steps:
+
+1. Restart the computer to an MS-DOS prompt.
+
+2. At the command prompt, type the following lines, pressing ENTER after each
+  line:
+
+  cd \windows
+  ren system.ini system.pss
+  copy system.cb system.ini
+  edit system.ini
+
+3. Locate the [boot] section of the System.ini file.
+
+4. In the [boot] section, type the following lines, pressing ENTER after each
+  line:
+
+  drivers=mmsystem.dll
+  mouse.drv=mouse.drv
+
+5. Locate the [386Enh] section of the System.ini file.
+
+6. In the [386Enh] section, type the following line, and then press ENTER:
+
+  mouse=*vmouse, msmouse.vxd
+
+7. Press ALT+F, and then press X. When you are prompted to save the changes,
+  press Y.
+
+8. Restart the computer.
+
+9. Start the program.
+
+  If the issue is resolved, the cause of the problem is probably a line in the
+  [boot] or [386Enh] section of the original System.ini file. Restore the
+  original System.ini file to troubleshoot the problem.
+
+For additional information about the System.ini file and its default entries,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+  Q140441 Creating a New System.ini File Without Third-Party Drivers
+
+Isolate the Cause
+-----------------
+
+If you resolve the issue using a clean boot of Windows 95, restore your startup
+files, registry keys, and StartUp folder one at a time to isolate the cause of
+the issue.
+
+After you identify the startup file, registry key, or folder that causes the
+issue, repeat the steps in the "Clean Boot the Computer" method to disable the
+appropriate lines, value settings, or shortcuts, and then restore them one at a
+time to isolate the component, driver, or program that causes the issue.
+
+After you identify the component, driver, or program that causes the issue,
+contact the manufacturer of the component, driver or program for information
+about how to resolve or work around the issue. If a device driver causes the
+issue, contact the manufacturer of the device to inquire about how to obtain and
+install the most recent version of the driver.
+
+Additional query words: multi media multi-media mm clean-boot safe-mode tshoot
+
+======================================================================
+Keywords          : kbenv kbtshoot kbimu 
+Technology        : kbHomeProdSearch kbWin95search _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbFlightSimSearch kbBookshelfSearch kbMotocrossSearch kbMidtownMadSearch kbEncartaEncycSearch kbZNotKeyword3 kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim98 kbFlightSim95 kbMidtownMadness2 kbMotocrossM2 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbBookShelf1998 kbBookShelf2000 kbBookShelf1999 kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaEnCyc2000 kbEncartaEnCyc1999 kbEncartaEnCyc1998 kbEncartaReference99 kbEncartaReference2000 kbEncartaReference2001 kbEncartaVirtGlobe99 kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000 kbEncartaWorldEngDict kbEncartaWorldEngDict2001 kbSimSearch
+Version           : :1.0,2.0,95
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

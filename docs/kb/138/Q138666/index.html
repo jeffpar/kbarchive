@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138666/","publisher":null,"image":null,"headline":"Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138666-howto-browse-on-demand-with-visual-c-version-40">Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138666
+Product(s): Microsoft C Compiler
+Version(s): WINNT:4.0,5.0,6.0;
+Operating System(s): 
+Keyword(s): kbide kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Browsing on demand works differently in Visual C++, versions 4.0 and later, from
+previous versions. If you do not have browse information generated when you
+attempt to use the browser in Visual C++ 4.0 and later, you get a message
+stating that there is no browse information for the project. Then the project is
+rebuilt accordingly to allow you to browse your project information.
+
+One other option is to always build the individual source browser files (.sbr)
+during your builds without generating the combined browser file (.bsc). Then run
+Bscmake.exe as a tool from the Tools menu. This article describes the steps
+required to do this.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. On the Build menu, click Settings to bring up the Project Settings dialog
+  box.
+
+2. Select the desired target in the Settings For tree view.
+
+3. Click the C/C++ tab, and select the Generate browse info check box. This will
+  generate an .sbr file corresponding to each source file. Ensure that the
+  "Build browse info file" check box in the Browse Info tab is cleared.
+
+4. Click OK to accept.
+
+5. On the Tools menu, click Customize to bring the Customize dialog box. Click
+  the Tools tab. In Visual C++, version 4.0, click Add. In Visual C++, versions
+  5.0 and 6.0, click the blank line at the bottom of the Menu Contents list and
+  type &amp;Bscmake.
+
+6. Browse for the Bscmake.exe file. In Visual C++, versions 5.0 and 6.0, you can
+  click the ellipsis beside the Command box to do this.
+
+7. Fill in the fields for the tool as shown here:
+
+  Field                Value
+  -------------------------------------------------------------
+  Menu text            &amp;Bscmake
+  Command              [Full path to BSCMAKE.EXE]\bscmake.exe
+  Arguments            /o$(TargetName).bsc /n *.sbr
+  Initial directory    $(TargetDir)
+
+  NOTE: You can select the custom arguments like $(TargetName) from the menu
+  provided on the right side of the edit box.
+
+8. In Visual C++, version 4.0, select "Redirect to Output Window", and click
+  Close, accepting this tool. In Visual C++, versions 5.0 and 6.0, select "Use
+  Output Window".
+
+NOTE: If you have been browsing the current .bsc file, you will have to close it
+before building a new .bsc file. On the Tools menu, click Close Browse Info
+File.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINNT:4.0,5.0,6.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

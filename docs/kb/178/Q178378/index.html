@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178378: XFOR: IMS Doesn’t Send NDR for Messages Passed From Custom DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178378: XFOR: IMS Doesn’t Send NDR for Messages Passed From Custom DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178378/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178378/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178378/","publisher":null,"image":null,"headline":"Q178378: XFOR: IMS Doesn’t Send NDR for Messages Passed From Custom DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178378-xfor-ims-doesnt-send-ndr-for-messages-passed-from-custom-dll">Q178378: XFOR: IMS Doesn’t Send NDR for Messages Passed From Custom DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178378
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Server Internet Mail Service does not send a non-
+delivery report (NDR) on a message it has passed from a custom routing .Dll file
+with DISP_NDR_ORIG. The message may be delivered to the mailbox and the
+following event ID recorded:
+
+  Event id 2078 from MSExchangeIS Private
+  Category: Transfer Out Of Gateway
+  Description: Unable to submit, send or transfer out a message. Check
+  PR_DELIVERY_TIME, PR_NDR_REASON, PR_NON_DELIVERY_DIAGNOSTIC.
+
+CAUSE
+=====
+
+The Microsoft Exchange Server Internet Mail Service will attempt to resolve the
+name and deliver the message if a valid address is available in the message. If
+the address in the recipient list is not valid, the message transfer agent (MTA)
+will send an NDR. If the address is resolved, then the MTA will attempt to
+deliver the message.
+
+RESOLUTION
+==========
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in Microsoft Exchange Server
+version 5.0 Service Pack 2.
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in Microsoft Exchange Server version 5.5
+Service Pack 1.
+
+For information on obtaining Service Packs, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: imc ims
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

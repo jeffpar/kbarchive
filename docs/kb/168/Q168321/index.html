@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168321: Creating a DNS Record for a Host with Two or More IP Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168321: Creating a DNS Record for a Host with Two or More IP Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168321/","publisher":null,"image":null,"headline":"Q168321: Creating a DNS Record for a Host with Two or More IP Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168321-creating-a-dns-record-for-a-host-with-two-or-more-ip-addresses">Q168321: Creating a DNS Record for a Host with Two or More IP Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168321
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may have a computer with two or more network interface cards (NICs), or one
+NIC with more than one IP address, and need to add a record for the additional
+IP address(es) to your Domain Name Service (DNS) server. This article explains
+how to add this entry.
+
+MORE INFORMATION
+================
+
+An "A" record needs to be created for each IP address that the host uses.
+
+For example, you have a server whose DNS host name is &lt;myserver&gt; and DNS
+domain name is &lt;mydomain.com&gt;. This server has 2 IP addresses assigned to
+it: IPAddress1 and IPAddress2 (replace IPAddress1 and IPAddress2 with server's
+IP addresses).
+
+To add these IP addresses, create 2 A records in the &lt;mydomain.com&gt; zone:
+
+  Myserver   A   &lt;IPAddress1&gt;
+  Myserver   A   &lt;IPAddress2&gt;
+
+NOTE: The Microsoft DNS Server supports round robin, which is a technique used as
+a form of load balancing between servers (to get more information about this
+feature, refer to RFC 1794). This feature will make DNS send both IP addresses
+when a query is received for myserver.mydomain.com. The client (or Resolver)
+will always use the first one. The next time DNS receives a query for this name
+the order of the list of IP addresses is changed in a round robin fashion (the
+address that was first in the previous list will be last in the new list). Round
+Robin of Cname records is not supported because there should be only one
+canonical name for any one alias.
+
+If, for some reason, you need the Resolver to get the same IP address every time,
+create two more "A" records assigning a unique name to each address. For
+example, you can create:
+
+  Altname1   A   &lt;IPAddress1&gt;
+  Altname2   A   &lt;IPAddress2&gt;
+
+Using this method, a Resolver will always obtain IPAddress1 when sending a query
+for Altname1 and will always obtain IPAddress2 when sending a query for
+Altname2.
+
+NOTE: A "CNAME" record is not used, since DNS will look up the IP address of
+&lt;Myserver&gt;, returning the 2 IP addresses.
+
+See RFC 2181 for more information.
+
+Additional query words: DNS multi-homed multiple IP Addresses Multihomed multi homed
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

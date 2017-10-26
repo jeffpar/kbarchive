@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118876: PRB: USER Resource Leak when Improperly Using CFormView | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118876: PRB: USER Resource Leak when Improperly Using CFormView" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118876/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118876/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118876/","publisher":null,"image":null,"headline":"Q118876: PRB: USER Resource Leak when Improperly Using CFormView","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118876-prb-user-resource-leak-when-improperly-using-cformview">Q118876: PRB: USER Resource Leak when Improperly Using CFormView</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118876
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbDocView kbMFC kbResourceEd kbVC100 kbVC150 kbVC151 kbVC152 kbVC400 kbprb kbGrpDSMFCAT
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a menu is specified for the dialog-box template of a CFormView, then a
+permanent USER resource leak occurs.
+
+CAUSE
+=====
+
+A CFormView object uses a dialog-box template with a child style. It is not
+valid for a child window to have a menu. If a menu is specified for a child
+window, the menu will be created when the template is created but it will not be
+attached to the CFormView and it will therefore not be destroyed when the
+CFormView object is destroyed.
+
+RESOLUTION
+==========
+
+Make sure none of the dialog-box templates for your CFormView objects have menus
+specified for them. To assist in this endeavor, starting with Visual C++, 32-bit
+Edition, version 4.0, the Dialog Editor will disable the Menu option on the
+Dialog Properties dialog box if the loaded dialog template has the Child style
+(WS_CHILD).
+
+MORE INFORMATION
+================
+
+If you are still encountering the resource leak, there are several other
+articles in the Knowledge Base that discuss possible causes:
+
+  Q71455 Tracking Down Lost System Resources
+
+  Q66654 Possible Causes for System Resource Reduction
+
+  Q72236 Maximizing the Use of Available Memory in Windows
+
+Additional query words: 1.00 1.50 1.51 1.52 2.00 2.10 2.50 2.51 2.52 3.00 3.10 4.00 kbNoUpdate
+
+======================================================================
+Keywords          : kbDocView kbMFC kbResourceEd kbVC100 kbVC150 kbVC151 kbVC152 kbVC400 kbprb kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

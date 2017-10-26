@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156771/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156771/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156771/","publisher":null,"image":null,"headline":"Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156771-prb-displayvalue-of-combobox-is-truncated-in-a-grid">Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156771
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a ComboBox is placed in a grid, the DisplayValue of the ComboBox appears
+truncated.
+
+CAUSE
+=====
+
+The DisplayValue is longer than the field to which the column is bound.
+
+WORKAROUND
+==========
+
+Set the InputMask property of the Column to the length needed for the
+DisplayValue.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The default InputMask used by the Column is calculated based on the field to
+which the column is bound (the ControlSource).
+
+Steps to Reproduce Behavior
+---------------------------
+
+This example will use the Customer table in the Visual FoxPro\SAMPLES\DATA
+directory.
+
+1. Create a new form.
+
+2. Add the Customer table of TESTDATA to the Data Environment.
+
+3. Add a grid to the form, and set the following properties for the grid:
+
+     ColumnCount = 3
+     RecordSource = Customer
+     RowHeight = 25
+
+4. Set the ControlSource property for Column1 of the grid to customer.cust_id.
+
+5. Set the ControlSource property for Column3 of the grid to customer.company.
+
+6. Add a ComboBox to Column2 of the grid and set the following properties of the
+  ComboBox:
+
+     BoundColumn = 2
+     ColumnCount = 2
+     ColumnWidths = 75,0
+     Name = Combo1
+     RowSource = customer.company, cust_id
+     RowSourceType = 6 - Fields
+
+7. Set the following properties for Column2 of the grid:
+
+     ControlSource = customer.cust_id
+     CurrentControl = Combo1
+     Sparse = .F. - False
+
+8. Save and run the form.
+
+9. Click the down arrow for the ComboBox on one of the records. Note that the
+  DisplayValue (the company field) becomes truncated (to five characters).If
+  you scroll in the grid, you will notice that the DisplayValues for the other
+  rows in the grid also become truncated.
+
+To work around the problem, change the InputMask of the column to match the
+length of the field you are trying to display in the ComboBox. For the example
+above, set the InputMask of Column2 to:
+
+     = REPLICATE("X", 40)
+
+Additional query words: VFoxWin kbdsd
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

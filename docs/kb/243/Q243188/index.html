@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243188: Unable to Browse RAS Clients from the Local Area Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243188: Unable to Browse RAS Clients from the Local Area Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243188/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243188/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243188/","publisher":null,"image":null,"headline":"Q243188: Unable to Browse RAS Clients from the Local Area Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243188-unable-to-browse-ras-clients-from-the-local-area-network">Q243188: Unable to Browse RAS Clients from the Local Area Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243188
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:95; winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Clients that dial in to a Remote Access Services (RAS) server using only the
+Transmission Control Protocol/Internet Protocol (TCP/IP) do not appear in the
+browse list on clients on the local area network (LAN). Such a RAS client,
+assuming it is configured properly to view the browse list in Network
+Neighborhood, sees the LAN clients and also sees itself in the browse list.
+
+For additional information about browsing from RAS clients, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q150800 Domain Browsing with TCP/IP and LMHOSTS Files
+
+  Q232511 Client Dialup, Authentication, Browsing Using TCPIP, IPX/SPX
+
+  Q149907 Browsing a Remote Network from a DUN Client Using Only TCP/IP
+
+RESOLUTION
+==========
+
+To cause LAN clients to be able to view RAS clients, install the NetBEUI
+protocol on the RAS clients and server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When you use only TCP/IP, HOST announcements are not broadcast to the LAN. When
+you use the NetBEUI protocol dial-up connection, the NetBIOS gateway forwards
+HOST announcements to the LAN. The NetBEUI protocol allows RAS clients to
+communicate with the browser servers on the LAN through the NetBIOS gateway on
+the RAS server. The NetBEUI protocol therefore allows RAS clients to be added to
+the LAN browse list.
+
+For additional information about NetBIOS gateways, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q97559 How Remote Access Service Processes Datagram Traffic
+
+  Q99145 RAS RemoteListen Parameter
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

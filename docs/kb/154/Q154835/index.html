@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154835: BUG: &quot;Project History Options&quot; Won’t Search for Labels in File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154835: BUG: &quot;Project History Options&quot; Won’t Search for Labels in File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154835/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154835/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154835/","publisher":null,"image":null,"headline":"Q154835: BUG: &quot;Project History Options&quot; Won’t Search for Labels in File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154835-bug-project-history-options-wont-search-for-labels-in-file">Q154835: BUG: "Project History Options" Won’t Search for Labels in File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154835
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500bug kbSSafe600bug
+Last Modified: 08-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+According to the Online Documentation, in the "Project History Options" dialog
+box there is a "Labels Only" check box that can be used to search the current
+project for any files for a given label.
+
+Specifically, the Online Documentation describes this functionality as follows:
+
+  "Type a time, date, version, or label. Use the prefix D to indicate a date or
+  time, and the prefix L to indicate a label..."
+
+Attempting to use this dialog box to get a listing of files with a given label
+results in a SourceSafe message box that displays:
+
+  "There are no items in the list."
+
+After clicking OK on this message box, an empty "Results" window is displayed.
+
+CAUSE
+=====
+
+This function was designed for project searches only.
+
+WORKAROUND
+==========
+
+The following SourceSafe command can be used to achieve the desired result:
+
+        ss get $/*.* -r -g- -vlmylabel -oresults.txt
+
+The breakdown of the command is as follows:
+
+        &lt;ss get&gt;: SourceSafe command to retrieve a read-only output &lt;$/*.*&gt; -
+        start at project $/, and get all files (hence *.*)
+
+        &lt;-r&gt;: recursive - search through all files and sub-projects of
+        starting project
+
+        &lt;-g-&gt;: don't actually place read-only files in the working directory
+
+        &lt;-vlmylabel&gt;: search for the label "mylabel"
+
+        &lt;-oresults.txt&gt;: pipe the results of the search to the named file
+
+At this point, you can look at the results.txt file to see the list of files that
+had the label in question assigned to it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project in Visual SourceSafe. Add two or more test files to the
+  project.
+
+2. In the Visual SourceSafe Explorer, highlight the first file in the right pane
+  of the Explorer window and click the mouse again. From the pop-up menu,
+  choose "Show History."
+
+3. Double-click on any version of the file. Then click the "Details" button and
+  type "mylabel" (without the quotation marks) in the text box provided for the
+  Label. Close this dialog box by choosing "Close."
+
+4. Repeat steps 1 through 3 for the second file added to the same project.
+
+5. Click the left pane of the Visual SourceSafe Explorer window (project side)
+  and highlight the project that contains the files labeled "mylabel."
+
+6. Right-click the mouse and choose "Show History" from the pop-up menu. In the
+  "Project History Options" dialog box, check "Include Files," "Recursive," and
+  "Labels Only."
+
+7. In the "From" box, enter "Lmylabel" (without the quotation marks), and then
+  choose OK.
+
+RESULT: Note that the message box will display "There are no items in the list"
+followed by the empty "Results" window.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbSSafe600bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128890: How the Import Wizard Determines the Text File Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128890: How the Import Wizard Determines the Text File Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128890/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128890/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128890/","publisher":null,"image":null,"headline":"Q128890: How the Import Wizard Determines the Text File Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128890-how-the-import-wizard-determines-the-text-file-type">Q128890: How the Import Wizard Determines the Text File Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128890
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Import Wizard assists you in creating a FoxPro table from another type of
+file, such as a text file. This article explains how FoxPro determines the type
+(fixed-length, comma-delimited, or tab-delimited) of text file you are
+importing.
+
+MORE INFORMATION
+================
+
+Determining Records to Analyze
+------------------------------
+
+When you import a text file using the Import Wizard, by default it reads the
+first 50 records in the text file. To begin analysis at a different row, or
+perform analysis on all records, choose the Options button in the "Step 1a -
+Options" screen of the Import Wizard.
+
+NOTE: The analysis of records cannot be manually interrupted.
+
+Determining File Type
+---------------------
+
+The following tests are performed in the order listed to determine the file's
+type:
+
+1. Do all records have the same length? If true, this is a fixed-length file.
+
+2. Do all records have the same number of commas? If true, this is a
+  comma-delimited file.
+
+3. Do all records have the same number of tabs? If true, this is a tab-delimited
+  file.
+
+4. Do all records have the same number of semicolons? If true, this is a
+  semicolon-delimited file.
+
+5. If none of the previous tests are true, the Import Wizard assumes the file to
+  be a fixed-length file, using the length of the longest record in the
+  50-record sample as the record length.
+
+Determining File Structure
+--------------------------
+
+Once the file's type is determined, the following tests are performed to
+determine its structure.
+
+- Fixed-length Files: Each record is analyzed to determine potential column
+  breaks, by tracking the locations in each record where a space is followed by
+  a non-space character. When 75% or more of the records have this transition
+  from a space to non-space character in the same location, that location is
+  assumed to be a column break. This is how the Import Wizard decides where to
+  place the default column breaks displayed in Step 1a.
+
+- Delimited Files: Each field in all records is analyzed to determine the
+  maximum field lengths. All fields are assumed to be character unless a field
+  is wider than the maximum character field width, in which case the field is
+  assumed to be a memo field.
+
+Additional query words: VFoxWin semi-colon 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

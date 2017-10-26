@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109484: BUG: Running Macintosh Project in Windows Causes Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109484: BUG: Running Macintosh Project in Windows Causes Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109484/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109484/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109484/","publisher":null,"image":null,"headline":"Q109484: BUG: Running Macintosh Project in Windows Causes Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109484-bug-running-macintosh-project-in-windows-causes-error">Q109484: BUG: Running Macintosh Project in Windows Causes Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109484
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,3.0b
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are modifying a FoxPro for Macintosh project in FoxPro for Windows, you
+receive the following error:
+
+  Invalid path or filename
+
+CAUSE
+=====
+
+The above error message may be caused by including a File type object in the
+project.
+
+RESOLUTION
+==========
+
+To solve this problem, do ONE of the following:
+
+- Before adding any File type objects to a project on the Macintosh, type the
+  following in the Command window (replace "Macintosh HD:" with the drive name
+  that contains the File object):
+
+  SET VOLUME C TO "Macintosh HD:"
+
+  This command creates a record entry in the .PJX file that points to a path
+  that conforms to the MS-DOS path conventions.
+
+-or-
+
+- If you have already created a project, modify the project by typing "USE
+  &lt;project name&gt;.PJX" (without the quotation marks), and then change the
+  hard disk name in the Name memo field for each record that has a lowercase
+  "x" as its object type so that the hard disk name follows the MS-DOS path
+  conventions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FoxPro version 2.5b for
+Macintosh. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In FoxPro for Macintosh, create a project called TEST.PJX.
+
+2. Click the Add button. In the Type popup list box, select File. Double- click
+  the file FOX.PCT in the FoxPro folder.
+
+3. Save the project.
+
+4. Copy the Macintosh project over to an MS-DOS-based machine.
+
+5. In FoxPro for Windows, type "MODIFY PROJECT test" (without the quotation
+  marks) in the Command window.
+
+The error message "Invalid path or filename" is displayed.
+
+Even though the project cannot be modified, the file is still left in an open
+state and must be closed with the CLOSE ALL command.
+
+Additional query words: vFoxMac FoxMac buglist2.50b errmsg err msg
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

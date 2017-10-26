@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78445: Using MS-DOS with Pacific Rim External Drives | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78445: Using MS-DOS with Pacific Rim External Drives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78445/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78445/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78445/","publisher":null,"image":null,"headline":"Q78445: Using MS-DOS with Pacific Rim External Drives","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78445-using-ms-dos-with-pacific-rim-external-drives">Q78445: Using MS-DOS with Pacific Rim External Drives</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78445
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pacific Rim Systems has confirmed that MS-DOS 5.0 and later may incorrectly
+attempt to format a 3.5-inch disk as a 5.25-inch disk on their external floppy
+disk drives for the IBM PS/2 series of computers.
+
+A possible solution to this problem is to use the MS-DOS DRIVPARM command and the
+DRIVER.SYS utility.
+
+MORE INFORMATION
+================
+
+To set the disk drive characteristics with the DRIVPARM command, add the
+following line to the CONFIG.SYS file:
+
+  drivparm= /d:x /f:y
+
+(where x is the physical drive number and y is the drive type).
+
+See page 455 of the version 5.0 "Microsoft MS-DOS User's Guide and Reference" for
+correct drive type information for your floppy disk drive. Information for
+version 6.0 and later is in online Help.
+
+If the DRIVPARM command does not solve the problem, install DRIVER.SYS in the
+CONFIG.SYS file, as follows:
+
+  device=&lt;path&gt;\driver.sys /d:1 /n /f:1
+
+where &lt;path&gt; is the location of the DRIVER.SYS file.
+
+See page 602 of the version 5.0 "Microsoft MS-DOS User's Guide and Reference" for
+more information about DRIVER.SYS. Information for version 6.0 and later is in
+online Help.
+
+The product included here is manufactured by vendors independent of Microsoft; we
+make no warranties, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 6.22 5.00 6.00 6.20 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182929/","publisher":null,"image":null,"headline":"Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182929-prb-stored-procedures-with-a-return-statement-can-cause-errors">Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182929
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbVBp500 kbGrpDSVBDB
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling more than one OpenResultSet statement synchronously on the same
+connection can generate the error:
+
+  Run-time error '40002':
+  S1000 [Microsoft][ODBC SQL Server Driver] Connection is busy with
+  results for another hstmt.
+
+RESOLUTION
+==========
+
+There are four possible workarounds for this issue:
+
+- use rduseClientBatch and check the ResultSet's RowCount property prior to
+  executing the next OpenResultSet statement.
+
+- remove the RETURN(0) statement from the Stored Procedure.
+
+- set NOCOUNT to ON as the first line of the Stored Procedure.
+
+- trap the error(s) and drop and re-establish the connection prior to issuing
+  any more OpenResultSet statements.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+If any additional OpenResultSet calls are made on the same Connection Object it
+results in the error:
+
+  Run-time error '40002':
+  S1000: [Microsoft][ODBC SQL Server Driver]Connection is busy with
+  results for another hstmt
+
+The problem can also occur under ADO where the error is:
+
+  Run-time error: '-2147217900 (80040e14)'
+  [Microsoft][ODBC SQL Server Driver][SQL Server] Cannot open a cursor on
+  a stored procedure that has anything other than a single select
+  statement in it.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following SQL Server script on SQL Server (make sure it is run from
+  the Pubs database):
+
+        if exists (select * from sysobjects
+        where id = object_id('dbo.test') and sysstat &amp; 0xf = 4)
+           drop procedure dbo.test
+        GO
+
+        CREATE PROCEDURE test AS
+           select * from authors
+           return(0)
+        GO
+    
+
+2. Start the Enterprise edition Visual Basic 5.0. Create a Standard EXE Project.
+  Form1 is created by default.
+
+3. Add a Project reference to "Microsoft Remote Data Objects 2.0."
+
+4. Add the following code to the default form's Load Method:
+
+        Dim en As rdoEnvironment
+        Dim cn As rdoConnection
+        Dim rs1 As rdoResultset
+        Dim rs2 As rdoResultset
+        Dim sql As String
+
+        Set en = rdoEngine.rdoEnvironments(0)
+        en.CursorDriver = rdUseOdbc
+
+        Set cn = en.OpenConnection( _
+        dsName:="", _
+        Prompt:=rdDriverNoPrompt, _
+        Connect:="DRIVER={SQL SERVER};" _
+        &amp; "SERVER=&lt;server_name&gt;;UID=&lt;user_id&gt;;PWD=&lt;pwd&gt;;DATABASE=&lt;db_name&gt;")
+
+        sql = "Exec test"
+        Set rs1 = cn.OpenResultset(sql, rdOpenStatic, rdConcurRowVer)
+        Set rs2 = cn.OpenResultset(sql, rdOpenStatic, rdConcurRowVer)
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp500 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

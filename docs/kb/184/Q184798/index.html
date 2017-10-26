@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184798: SSL: Connections May Fail Using Online Requested Certificates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184798: SSL: Connections May Fail Using Online Requested Certificates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184798/","publisher":null,"image":null,"headline":"Q184798: SSL: Connections May Fail Using Online Requested Certificates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184798-ssl-connections-may-fail-using-online-requested-certificates">Q184798: SSL: Connections May Fail Using Online Requested Certificates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184798
+Product(s): Internet Information Server
+Version(s): WINNT:1.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Certificate Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect using Secure Sockets Layer (SSL) to an Internet
+Information Server version 4.0 (IIS) that has a server certificate from an
+online Microsoft Certificate Server, you may receive the following error
+message:
+
+  Internet Explorer cannot open the Internet site &lt;address&gt;
+  A connection with the server could not be established.
+
+CAUSE
+=====
+
+When you perform an online request, the certificate returned by Certificate
+Server is not bound with an IP address or port number. As a result, IIS does not
+use this certificate for incoming SSL connections.
+
+WORKAROUND
+==========
+
+When you get the certificate back from the online request, a dialog box appears
+in Key Manager. Click Add, and then click OK. The certificate is now bound to
+all unassigned IP addresses and port numbers.
+
+MORE INFORMATION
+================
+
+NOTE: The above steps are not required if the certificate is requested from a
+well-known certificate authority, such as VeriSign, or when you are requesting a
+certificate from Certificate Server through the file-based mechanism (that is,
+not an online request).
+
+IIS 4.0 ships with a tool named Key Manager, Keyring.exe, to request and process
+server certificates. One of the options is to request a certificate from an
+online Microsoft Certificate Server. Online indicates that Certificate Server is
+running on the same computer as IIS, and the request is made without using a
+text-based approach.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbCertServSearch kbZNotKeyword3 kbCertServ100
+Version           : WINNT:1.0,4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

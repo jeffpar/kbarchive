@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102467/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102467/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102467/","publisher":null,"image":null,"headline":"Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102467-howto-use-mapidll-to-invoke-ms-mail-from-foxpro-for-windows">Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102467
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbvfp300 kbvfp500 kbvfp600
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro for Windows, you can use FOXTOOLS.FLL with MAPI.DLL to invoke
+Microsoft Mail version 3.0 so that you can send Mail messages while running your
+FoxPro program.
+
+MORE INFORMATION
+================
+
+By using the RegFn() and CallFn() functions in FOXTOOLS.FLL to access the
+MAPI.DLL from Mail 3.0, you can send attachments or messages from within a
+FoxPro for Windows application.
+
+The following sample code calls Microsoft Mail to bring up a Send Note dialog box
+and attaches the AUTOEXEC.BAT file to the Mail message that is going to be
+sent:
+
+     SET LIBRARY TO SYS(2004) + "FOXTOOLS.FLL" ADDITIVE
+     GetSysDir = RegFn("GetSystemDirectory","@CI","I")
+     bigstr = REPLICATE(chr(0),144) &amp;&amp;creates a big string
+     retlen = CallFn(GetSysDir, @bigstr,144)
+     winsys = LEFT(bigstr,retlen)
+     SendMail=RegFn("MAPISendDocuments","L@C@C@CL", ;
+        "L", winsys+"\MAPI.DLL")
+     T1=";"
+     T2="C:\AUTOEXEC.BAT"
+     T3=""
+     X=CallFn(SendMail,0,@T1,@T2,@T3,0)
+     RELEASE LIBRARY SYS(2004) + "FOXTOOLS.FLL"
+
+GetSystemDirectory() is a Microsoft Windows application programming interface
+(API) function used to retrieve the Windows SYSTEM subdirectory. RegFn() returns
+a function handle to GetSysDir so that the handle can be accessed by CallFn().
+CallFn() is used to determine the length of GetSysDir and assigns the numeric
+value to retlen. It also puts the string value of GetSysDir in the variable
+bigstr. At this point, the location of the MAPI.DLL file is known, and the
+MAPISendDocuments() function is used to send a standard Microsoft Mail message.
+
+Now that MAPISendDocuments() has been registered, the SendMail variable can be
+used to start Mail. T1 refers to the delimiter between filenames. T2 is the list
+of files that you would like to send. T3 is a null character and is not
+necessary for this program. Therefore, if you want to send both the AUTOEXEC.BAT
+and CONFIG.SYS files in your Mail message, you would use
+T2="C:\AUTOEXEC.BAT;C:\CONFIG.SYS". For more information on the
+MAPISendDocuments() function, see the Microsoft Mail "Technical Reference"
+manual.
+
+REFERENCES
+==========
+
+FOXTOOLS.WRI file
+
+Microsoft Mail "Technical Reference," version 3.0, pages 76-81
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

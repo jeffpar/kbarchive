@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194726/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194726/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194726/","publisher":null,"image":null,"headline":"Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194726-fpnw-client-does-not-get-correct-time-or-date-after-y2k">Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194726
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an MS-DOS-based NetWare client attaches or logs on to a Windows NT Server
+computer running File and Print Services for NetWare (FPNW), the client's date
+and time are not synchronized with that of the server when the server's date and
+time are beyond 12/31/1999 at 11:59:59pm.
+
+CAUSE
+=====
+
+FPNW fails to provide the proper date and time information to the client for
+synchronization when the server's date is past 12/31/1999 at 11:59:59pm.
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+The English version of this post-SP3 hotfix has been posted to the following
+Internet locations.
+
+  http://www.microsoft.com/ntserver/nts/downloads/archive/NT4y2kpostSP3/default.asp
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/y2k2-fix/
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+MORE INFORMATION
+================
+
+Novell's NETX or VLM NetWare shells running on an MS-DOS-based client
+synchronize the client's clock with that of the NetWare server being attached
+to. Like Novell's Login.exe, FPNW's Login.exe also synchronizes the client's
+clock with that of the server when run.
+
+If one of these MS-DOS-based clients attaches or logs on to an FPNW server
+anytime before 12/31/1999 at 11:59:59pm, the client's time and date will be
+updated to match that of the server being attached or logged into. If the client
+attaches or logs on to an FPNW server after 12/31/1999 at 11:59:59pm, the
+client's time will be updated to the correct time, but the client's date will
+not be updated.
+
+NOTE: Microsoft Windows NT clients running Client Services for NetWare (CSNW) or
+Gateway Services for NetWare (GSNW), and Microsoft Windows 95 or Windows 98
+clients running the Microsoft Client for NetWare networks do not synchronize the
+workstations' clocks when attaching or logging on to NetWare servers.
+
+For more information on what is fixed in Y2K2-fix, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q175093 User Manager Does Not Recognize February 2000 As a Leap Year
+
+  Q180122 After Changing the Time, Windows NT May Skip a Day
+
+  Q183123 Find Files Displays Garbled Date if Year is 2000 or Greater
+
+  Q183125 Shell Doc Property Dialog Custom Date Incorrect after Year 2000
+
+  Q184132 Err Msg: Value Entered Does Not Match with the Specified Type
+
+  Q186669 FPNW Logout.exe Incorrectly Reports Year After Jan. 1, 2000
+
+  Q191768 Date of Print Job May Be Displayed Incorrectly in Print Queue
+
+  Q193056 Problems in Date/Time after Choosing February 29 in a Leap Year
+
+  Q193434 Migration Changes NetWare Accounts Expiration Date
+
+  Q207799 IBM PS/1 will not Boot on or After January 1, 2000
+
+  Q216916 NTBACKUP Writes Incorrect Year to Log File
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+For information on the Y2K2-fix for Windows NT 4.0, Terminal Server Edition,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q196548 Y2K Update for Windows NT 4.0, Terminal Server Edition
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

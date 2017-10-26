@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198563: XFOR: Replies to Some Internet Mail Messages Fail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198563: XFOR: Replies to Some Internet Mail Messages Fail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198563/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198563/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198563/","publisher":null,"image":null,"headline":"Q198563: XFOR: Replies to Some Internet Mail Messages Fail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198563-xfor-replies-to-some-internet-mail-messages-fail">Q198563: XFOR: Replies to Some Internet Mail Messages Fail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198563
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-JAN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an Exchange Server recipient replies to some Internet messages, he or she
+may receive a non-delivery report (NDR) indicating an invalid domain name. The
+original in-bound message the recipient received from the Internet contains a
+sender with an address similar to the following:
+
+  &lt;user@correct.domain.com&gt;@incorrect.domain.com
+
+In this example, "@incorrect.domain.com" is a non-existent domain name that has
+been appended to the correct address, "user@correct.domain.com." The domain
+"@correct.domain.com" is the valid domain name.
+
+These additional domain name or names cause the message not be delivered. The
+additional domain names may be added to the sender's address as a result of some
+foreign mail configurations.
+
+CAUSE
+=====
+
+In Internet Mail Service outbound mail, the domain name is found by looking for
+the last @ sign in the address. In this case this is "@incorrect.domain.com."
+
+
+The Internet Mail Service tries to resolve "incorrect.domain.com," which does not
+exist, and fails. Thus, the message gets returned to the Exchange Server sender
+as an NDR.
+
+Now, on the way into the information store from the Internet Mail Service, the
+address is checked to make sure it is usable. The check looks for the &lt; and
+&gt; symbols, and clears out everything else except what is inside these
+symbols. As a result, the message is cleaned up, and resent.
+
+WORKAROUND
+==========
+
+The Exchange Server sender should resend the message from the NDR; it will
+work.
+
+
+Additional query words: reply double dual domains smtp mail fail duplicate
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126400/","publisher":null,"image":null,"headline":"Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126400-sna-server-as400-connection-active-but-no-sessions-negotiated">Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126400
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbsna211sp1 sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect from an SNA Server client using a 5250 emulator, you
+will get the following error message:
+
+  There is a problem with the configuration of the connection to the AS/400
+
+  Primary return code = 0003
+  Secondary return code = 00000005
+
+When you look in SNA Server Admin (SNA Server 2.11), you find the AS/400
+connection is active; however, it has not negotiated any sessions.
+
+NOTE: You can identify how many sessions have been negotiated by starting the
+Local APPC LU icon and selecting the Status button.
+
+You will see something similar to the following:
+
+  Partner LU    Mode       Connection          Sessions   Limit
+  -------------------------------------------------------------
+  &lt;remote LU&gt;   QPCSUPP    &lt;connection_name&gt;   0          64
+  &lt;remote LU&gt;   SNASVCMG   &lt;connection_name&gt;   0          2
+
+NOTE: In SNA Server Manager 3.0 and 4.0 there is no Status button.
+
+The value is commonly 64, but may be different if the QPCSUPP mode has been
+modified in SNA Server Admin and on the AS/400. If the limit on the QPCSUPP mode
+is 0, then the SNA Server has failed to negotiate any sessions. The maximum
+Parallel Session Limit that QPCSUPP supports on the AS/400 is 512. This limit
+was imposed by IBM.
+
+CAUSE
+=====
+
+The following configurations cause 0 sessions to be negotiated:
+
+- The local APPC LU is not partnered with a Remote APPC LU in SNA Server Admin.
+
+- The LU-LU pairing is not using QPCSUPP mode. SNA Server AS/400 connections
+  require that this mode be used. However, LU6.2 connections configured to
+  other SNA devices do not necessarily require this mode.
+
+- The LU-LU pairing is using the QPCSUPP mode, but the mode has been modified
+  in SNA Server or on the AS/400 so they no longer match. For instance, the
+  Parallel Session Limit parameter is not the same on the SNA Server and on the
+  AS/400.
+
+- The APPC remote LUs LU name does not match the AS/400 Local Control Point
+  Name as defined in the AS/400's Network Attribute screen.
+
+If this is an SDLC connection to the AS/400, force the AS/400 to become the
+primary Link Station. There are two ways to force the AS/400 to become the
+primary link station.
+
+- Create a SDLC Line Description specifying *PRI for the Data Link Role
+  parameter.
+
+- Create a Controller Description for the SNA Server specifying *SEC for the
+  Data Link Role parameter.
+
+RESOLUTION
+==========
+
+Reconfigure to correct the problem.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbenv kbnetwork kbsna211sp1 sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

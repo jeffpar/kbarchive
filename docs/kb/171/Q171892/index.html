@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171892: Err Msg: The File System Does Not Support Compression | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171892: Err Msg: The File System Does Not Support Compression" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171892/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171892/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171892/","publisher":null,"image":null,"headline":"Q171892: Err Msg: The File System Does Not Support Compression","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171892-err-msg-the-file-system-does-not-support-compression">Q171892: Err Msg: The File System Does Not Support Compression</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171892
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to compress an NTFS partition using Windows NT Explorer, the option
+is unavailable while looking at properties or, while using the Command Line
+utility Compact.exe, you receive the error message:
+
+  The file system does not support compression
+
+For example:
+
+  H:\compact /c *.* /s
+
+  Compressing files in H:\
+
+  Apps [ERR]
+  Apps: The file system does not support compression.
+
+  0 files within 1 directories were compressed.
+  0 total bytes of data are stored in 0 bytes.
+  The compression ratio is 1.0 to 1.
+
+CAUSE
+=====
+
+The partition is a very large partition, and when the partition was formatted,
+it was formatted with a cluster size greater than the default size of 4,096
+bytes. NTFS compression is not supported for allocation unit sizes above 4k
+bytes
+
+You can verify what the allocation unit size is by doing a CHKDSK at the command
+prompt and look at the bytes in each allocation unit.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must backup your data, then reformat the NTFS
+partition using a cluster size of 4,096 bytes or less.
+
+You can use one of three methods to reformat:
+
+- Start Windows NT Explorer, right-click on the drive icon, select format, and
+  then set the allocation unit size to 4,096 or less.
+
+- Start Disk Administrator, right-click on the partition, select format, and
+  then set the allocation unit size to 4,096 or less.
+
+- Use the FORMAT command with the /A:size option and format it for an
+  allocation unit size 4,096.
+
+  For example,
+
+  format c: /A:4096
+
+MORE INFORMATION
+================
+
+NTFS needs to process an entire compression unit at a time when writing
+compressed files, where a compression unit consists of 16 clusters.
+
+Windows NT memory management's largest paging write size is 64 KB and Windows NT
+limits operations to the maximum memory management transfer size.
+
+This results in a maximum cluster size that can be manipulated within the
+compression code to 4 KB. [64 KB/16 clusters = 4 KB per cluster]
+
+Some defrag software also uses the same compression code and may have the same
+limitation of 4 KB clusters.
+
+Additional query words: compress ntfs
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

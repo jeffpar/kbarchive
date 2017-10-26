@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113822: WD97: How to Embed TrueType Fonts in a Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113822: WD97: How to Embed TrueType Fonts in a Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113822/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113822/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113822/","publisher":null,"image":null,"headline":"Q113822: WD97: How to Embed TrueType Fonts in a Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113822-wd97-how-to-embed-truetype-fonts-in-a-document">Q113822: WD97: How to Embed TrueType Fonts in a Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113822
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Word allows you to embed TrueType fonts in a Word document so that you
+can view and edit the fonts (if licensing rights allow), even if you open the
+document on a computer that does not have the font installed.
+
+To embed TrueType fonts in a saved document, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the Save tab.
+
+3. Select the Embed TrueType Fonts check box.
+
+Not all fonts are licensed so that they can be embedded. If a font can be
+embedded, it increases the file size of your document by approximately the size
+of the TrueType font (.ttf) file.
+
+NOTE: Some fonts treat normal, bold, italic, and bold-italic as separate font
+.ttf files. In this case, the file size of your document is larger when you use
+bold and italic formatting than it is if you do not.
+
+If a font does not have a bold, italic, or bold-italic version, Windows generates
+bold or italic from the core font. In this case, the file size increases when
+you use bold or italic formatting.
+
+MORE INFORMATION
+================
+
+Font embedding licensing rights determine how the font may be embedded in the
+document.
+
+To determine the licensing rights of a particular font, Microsoft provides a Font
+Properties Extension tool that can be downloaded from the following Web site:
+
+  http://www.microsoft.com/OpenType/property/property.htm
+
+  Font licensed as   Result
+  ---------------------------------------------------------------
+
+  Protected          The font may not be embedded, copied, or
+                     modified. If you use a protected font in a
+                     document and this document is opened on a computer
+                     that does not have the font installed on it, a
+                     font substitution occurs. Word substitutes the
+                     closest font available on the computer for the
+                     missing protected font.
+
+  Print/Preview      The font is embedded and temporarily loaded on
+                     the target computer. Documents that contain
+                     print/preview fonts must be opened read-only, and
+                     no edits are stored in the document. Embedding
+                     a font of this nature has the least impact on
+                     file size increase.
+
+  Editable           The font behaves just like the print/preview
+                     fonts, except that you may also apply the font to
+                     other text in the same document.
+
+  Installable        The font is installed on the target computer
+                     permanently when you open the document. This
+                     allows you to use the new fonts as if you
+                     installed the fonts directly into Windows
+                     yourself. This type of embedded font has the
+                     greatest impact on file size because the entire
+                     font or fonts are included with the document. The
+                     size of the font file can vary greatly. To
+                     estimate the font file size, follow the appropriate
+                     procedure for your version of Windows.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+
+Windows 95:
+
+1. On the Start menu, click Settings and then click Control Panel.
+
+2. Double-click the Fonts icon.
+
+3. Right-click the font you want, and click Properties on the shortcut menu. The
+  size of the font on disk is listed for "Size:".
+
+
+Additional query words: 8.0 true type
+
+======================================================================
+Keywords          : kbualink97 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

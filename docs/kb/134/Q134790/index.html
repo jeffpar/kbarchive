@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134790: How to Add Code to Wizard-Generated Command Buttons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134790: How to Add Code to Wizard-Generated Command Buttons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134790/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134790/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134790/","publisher":null,"image":null,"headline":"Q134790: How to Add Code to Wizard-Generated Command Buttons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134790-how-to-add-code-to-wizard-generated-command-buttons">Q134790: How to Add Code to Wizard-Generated Command Buttons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134790
+Product(s): Microsoft FoxPro
+Version(s): 3.00    | 3.00b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can add code to command buttons created by the Form Wizard and still have
+the command buttons function properly.
+
+MORE INFORMATION
+================
+
+The command buttons created by the Form Wizard are based on classes defined in
+the Vfp\Wizards\Wizstyle.vcx visual class library.
+
+All of the command buttons are contained in one of three classes, depending on
+which style of buttons was used:
+
+class Name      Button Style
+--------------------------------
+txtbtns         Horizontal; text
+verttxtbtns     Vertical; text
+picbtns         Horizontal; picture
+
+Each button is assigned an individual name, following recommended Visual FoxPro
+naming conventions:
+
+  cmdPrev
+  cmdNext
+  cmdTop
+  cmdEnd
+  cmdFind
+  cmdPrint
+  cmdAdd
+  cmdEdit
+  cmdDelete
+  cmdExit
+
+The code for each button is contained in the class definition, not in each button
+on the form. If method code is entered in an event, such as the click event,
+which also has code defined in the parent class, the new code will override the
+parent class code. The parent class code must be explicitly called within the
+method.
+
+You can add code to the buttons in a generated screen, as long as the code in the
+parent class is called using the scope resolution operator, as in this example:
+
+     txtbtns.cmdAdd::Click
+     WAIT WINDOW "I just called the parent click code"
+
+If you want the additional code to be processed prior to the default button
+behavior, place it before the line that calls the parent method. If you want the
+additional to be processed after the default button behavior, place it after the
+line that calls the parent method.
+
+Additional query words: VFoxMac VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300
+Version           : 3.00    | 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

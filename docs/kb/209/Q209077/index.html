@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/209/Q209077/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/209/Q209077/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/209/Q209077/","publisher":null,"image":null,"headline":"Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q209077-prb-commctl-no-ok-received-when-using-some-modems">Q209077: PRB: CommCtl: No "OK" Received When Using Some Modems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q209077
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbGrpDSVB kbGrpDSVBDB
+Last Modified: 16-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft eMbedded Visual Basic, version 3.0 
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some modems may not respond with an OK in the Input string of the Communications
+control when an AT command has been sent.
+
+CAUSE
+=====
+
+Modems may not respond if the Data Terminal Ready (DTR) signal is low. You may
+need to raise the DTR signal before opening the Communications port.
+
+Note that the Communication control only checks the DTREnable property when the
+port is being opened. If the DTREnable property is set to True after opening the
+port, the DTR signal does not change until the port is closed and reopened.
+
+RESOLUTION
+==========
+
+To get the modem to respond with an OK, set the DTREnable property of the
+Communication control to True prior to opening the communications port.
+
+NOTE: This will not necessarily work for all modems.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Windows CE project in either Visual Basic or eMbedded Visual
+  Basic. Form1 is created by default.
+
+2. From the Project menu, choose Components. In the Components dialog box, click
+  the Controls tab, then select the Microsoft CE Comm Control.
+
+3. Place a command button (named Command1), a text box (named Text1) and a Comm
+  control (named Comm1) on Form1.
+
+4. Paste the following code into Form1:
+
+     Option Explicit
+     Dim InBuff
+
+     Private Sub Comm1_OnComm()
+         If Comm1.CommEvent = comEvReceive Then
+            InBuff = InBuff &amp; Comm1.Input
+            Text1.Text = InBuff
+         End If
+     End Sub
+
+     Private Sub Command1_Click()
+         Comm1.RTSEnable = True
+         Comm1.Settings = "9600,n,8,1"
+         Comm1.RThreshold = 1
+         Comm1.SThreshold = 1
+         Comm1.CommPort = 2
+         Comm1.PortOpen = True
+         Comm1.Output = "AT" &amp; vbCrLf
+     End Sub
+
+     Private Sub Form_Unload(Cancel As Integer)
+         Comm1.PortOpen = False
+     End Sub
+
+5. Run the project on the device.
+
+RESULTS: The OK does not come back from the modem.
+
+REFERENCES
+==========
+
+Microsoft eMbedded Visual Basic 3.0 Online Help
+
+Microsoft Windows CE Toolkit for Visual Basic 6.0 Online Help
+
+Additional query words: kbdse vbce evb vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbGrpDSVB kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

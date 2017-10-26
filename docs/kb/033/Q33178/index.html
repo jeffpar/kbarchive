@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q33178: Example to Load OS/2 Disk Directory into String Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q33178: Example to Load OS/2 Disk Directory into String Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/033/Q33178/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/033/Q33178/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/033/Q33178/","publisher":null,"image":null,"headline":"Q33178: Example to Load OS/2 Disk Directory into String Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q33178-example-to-load-os2-disk-directory-into-string-array">Q33178: Example to Load OS/2 Disk Directory into String Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q33178
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 31-JAN-1990
+
+This article discusses two methods to put a disk directory listing
+into a string array under OS/2 protected mode. (Note: This article was
+written because the FILES statement in BASIC only outputs to the
+screen, not to a file or to string variables.)
+
+Example 1 shows a simple method to SHELL to the DIR command, redirect
+the output to a file, and input from the file into string variables.
+(Example 1 also works correctly in MS-DOS.)
+
+Example 2 shows how to invoke OS/2 API functions (DosFindFirst and
+DosFindNext) to retrieve a disk directory into string variables.
+
+This article applies to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2 and to Microsoft BASIC Professional
+Development System (PDS) Version 7.00 for MS-DOS and MS OS/2.
+
+Note: In Microsoft BASIC PDS 7.00, the DIR$ function can be used to
+accomplish the same thing as these two routines show. The use of DIR$
+is documented on Page 107 of the "Microsoft BASIC 7.0: Language
+Reference" manual.
+
+For an article about how to invoke MS-DOS (or OS/2 real mode)
+functions to accomplish the same thing, query in this Knowledge Base
+on the following keywords:
+
+   INTERRUPT and FINDFIRST and FINDNEXT
+
+In MS OS/2 protected mode, you can use the API CALLs DosFindFirst and
+DosFindNext to retrieve a disk directory listing and load it into a
+string array, as shown in Example 2 below. Example 2 does NOT apply to
+QuickBASIC Versions 4.50 and earlier because they cannot compile
+programs for OS/2 protected mode.
+
+Example 1 (the simplest technique) is as follows:
+
+' Works in QuickBASIC 2.00, 2.01, 3.00, 4.00, 4.00b, 4.50, and
+' BASIC compiler 6.00 and 6.00b.
+nf = 200   ' Handles directory listing up to 200 lines.
+DIM buffer$(nf)
+INPUT "Enter Search Path: ", path$   ' Enter path such as c:
+SHELLSTRING$ = "dir " + path$ + " &gt;dirfile.dat"
+SHELL SHELLSTRING$   ' SHELL to the MS-DOS DIRectory command.
+OPEN "dirfile.dat" FOR INPUT AS #1
+pntr% = 0
+WHILE NOT EOF(1) AND pntr% &lt; nf
+  pntr% = pntr% + 1
+  INPUT #1, buffer$(pntr%)  ' Inputs one directory line at a time.
+  PRINT buffer$(pntr%)
+WEND
+CLOSE #1
+KILL "dirfile.dat"
+END
+
+Example 2 is as follows:
+
+The following sample program is for MS OS/2 protected mode (to be
+compiled only in BASIC compiler Version 6.00 or 6.00b in MS OS/2
+protected mode or BASIC PDS Version 7.00 in MS OS/2 protected mode):
+
+'The TYPE below is taken from the following include file: BSEDOSFL.BI
+TYPE FILEFINDBUF
+        fdateCreation   AS INTEGER
+        ftimeCreation   AS INTEGER
+        fdateLastAccess AS INTEGER
+        ftimeLastAccess AS INTEGER
+        fdateLastWrite  AS INTEGER
+        ftimeLastWrite  AS INTEGER
+        cbFile          AS LONG
+        cbFileAlloc     AS LONG
+        attrFile        AS INTEGER
+        cchName         AS STRING * 1
+        achName         AS STRING * 13
+END TYPE
+
+DECLARE FUNCTION DosFindFirst%( _
+        BYVAL P1s AS INTEGER,_
+        BYVAL P1o AS INTEGER,_
+        SEG   P2  AS INTEGER,_
+        BYVAL P3  AS INTEGER,_
+        SEG   P4  AS FILEFINDBUF,_
+        BYVAL P5  AS INTEGER,_
+        SEG   P6  AS INTEGER,_
+        BYVAL P7  AS LONG)
+
+DECLARE FUNCTION DosFindNext%( _
+        BYVAL P1 AS INTEGER,_
+        SEG   P2 AS FILEFINDBUF,_
+        BYVAL P3 AS INTEGER,_
+        SEG   P4 AS INTEGER)
+
+DEFINT a-z
+
+DIM buffer AS FileFindBuf
+DIM filelist(255) as string*13
+DIM reserved  AS LONG
+
+CLS
+
+INPUT "Enter the Filename(s) : ";flname$
+flname$=flname$+chr$(0)
+
+atr= 0+2+4+16    'normal + hidden + system + subdirectory
+dirh=1
+searchcount=1
+bufflen=36
+x=DosFindFirst%(varseg(flname$),sadd(flname$),_
+                dirh,atr,buffer,bufflen,searchcount,reserved)
+IF (X=0) THEN
+   DO
+     counter=counter+1
+     filelist(counter)=buffer.achName
+     buffer.achName=string$(13,32)  'assign blanks
+   LOOP WHILE (DosFindNext%(dirh,buffer,bufflen,searchcount) = 0 )
+ELSE
+    PRINT "No MATCH was found"
+    END
+END IF
+
+for i = 1 to counter
+    print filelist(i)
+next i
+
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150193: BUG: Visible Property of Sheridan Command Button May Not Work | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150193: BUG: Visible Property of Sheridan Command Button May Not Work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150193/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150193/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150193/","publisher":null,"image":null,"headline":"Q150193: BUG: Visible Property of Sheridan Command Button May Not Work","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150193-bug-visible-property-of-sheridan-command-button-may-not-work">Q150193: BUG: Visible Property of Sheridan Command Button May Not Work</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150193
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbVBp400bug
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Sheridan Command button does not stay invisible although the Visible
+property is set to False. This can occur if the Visible property of a Sheridan
+Command button was set to False in a procedure in another form.
+
+RESOLUTION
+==========
+
+Use the ShowWindow API function instead of the Visible property of the button to
+hide/show the button. This function takes only two parameters: a window handle
+that becomes the hWnd property of the Sheridan control, and a constant that
+determines how to show the window.
+
+The declaration below can be pasted in the General...Declarations section of the
+form where the routine is to hide the window:
+
+     #If Win16 Then
+
+     Private Declare Function ShowWindow Lib "User" (ByVal hWnd As Integer,
+
+     ByVal nCmdShow As Integer) As Integer
+
+     #Else
+
+     Private Declare Function ShowWindow Lib "user32" (ByVal hwnd As Long,
+
+     ByVal nCmdShow As Long) As Long
+
+     #EndIf
+
+     Const SW_SHOW = 5
+
+     Const SW_HIDE = 0
+
+To hide a Sheridan Command button, issue a command similar to the following:
+
+     ShowWindow Form1.SSCOmmand1.HWnd, SW_HIDE
+
+and, to show a button:
+
+      ShowWindow Form1.SSCommand1.HWnd, SW_SHOW
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start a new project. Form1 is created by default. On Form1 place a regular
+  Command button and a Sheridan SSCommand button. Go to the Properties window
+  and change the TabIndex property of the SSCommand1 control to 0.
+
+2. In the Form_Load event for Form1, place the following code:
+
+        Private Sub Form_Load()
+
+            Form2.Show
+
+        End Sub
+
+3. Insert another form into the project. On Form2, place a regular command
+  button. In the Command1_Click event for the button on Form2, place the
+  following code:
+
+        Private Sub Command1_Click()
+
+            Form1.SSCommand1.Visible = False
+
+        End Sub
+
+Run the project by pressing the F5 key. Bring Form2 to the foreground and press
+the Command button to make the Sheridan Command button on Form1 disappear. Click
+anywhere on Form1 to bring it to the foreground. Notice that SSCommand1
+reappears.
+
+To correct this problem with the workaround, paste the declaration for ShowWindow
+in the Form...Declarations section of Form2. Instead of the command to make
+Visible property false, use the following command:
+
+     Call ShowWindow(Form1.SSCOmmand1.HWnd, SW_HIDE)
+
+The button will not reappear until the following command is issued:
+
+     Call ShowWindow(Form1.SSCommand1.HWnd, SW_SHOW)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400bug 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

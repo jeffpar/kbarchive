@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240271: Event 1045 When Bringing IP Address Resource Online | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240271: Event 1045 When Bringing IP Address Resource Online" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240271/","publisher":null,"image":null,"headline":"Q240271: Event 1045 When Bringing IP Address Resource Online","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240271-event-1045-when-bringing-ip-address-resource-online">Q240271: Event 1045 When Bringing IP Address Resource Online</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240271
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): kbui
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Cluster service attemtpts to bring one or more resources with an IP
+address online, the following event may appear in the System Event log:
+
+  Cluster IP address "IP address" could not create the required TCP/IP
+  Interface.
+
+CAUSE
+=====
+
+This behavior occurs because the Cluster service tried to bring an IP address
+online. The resource properties may specify an invalid network or malfunctioning
+adapter. This event may be registered if you replace a network adapter with a
+different model and continue to use the old or inappropriate driver. As a
+result, the IP address resource cannot be bound to the specified network.
+
+This event message may also be displayed if you are using an OEM-provided driver
+with the same name as the normal retail version of the adapter and choose to
+update the driver with the non-OEM version when applying a service pack.
+
+Mismatched versions of SSDs or other drivers requiring some form of
+synchronization between nic cards can also cause this behavior.
+
+RESOLUTION
+==========
+
+To resolve this behavior, resolve the network adapter driver issue or change the
+properties of the IP address resource to reflect the proper network for the
+resource. This problem may also be caused by a malfunctioning adapter or a
+conflict between similar network adapters and accompanying drivers. You may want
+to eliminate adapters from the configuration in an attempt to determine which
+adapter may be causing the problem.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbAudDeveloper kbClustServSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

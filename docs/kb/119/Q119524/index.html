@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119524: Copying Files with Long Filenames to FAT Partitions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119524: Copying Files with Long Filenames to FAT Partitions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119524/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119524/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119524/","publisher":null,"image":null,"headline":"Q119524: Copying Files with Long Filenames to FAT Partitions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119524-copying-files-with-long-filenames-to-fat-partitions">Q119524: Copying Files with Long Filenames to FAT Partitions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119524
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.10
+
+WINDOWS
+
+kbother
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT supports the use of long filenames on NTFS partitions and allows you
+to copy these files to FAT partitions, which do not support long filenames. This
+article describes the procedure to copy files with long names to the FAT
+partition from a command prompt.
+
+MORE INFORMATION
+================
+
+When you copy a file from an NTFS partition to a FAT partition using File
+Manager, Windows NT automatically converts the name of the file to a format that
+is legal under FAT conventions. This does not occur when you copy files from the
+command prompt.
+
+If you attempt to copy a file with a long name to a FAT partition from a command
+prompt, one of the following error messages appear:
+
+- The filename, directory name, or volume label syntax is incorrect.
+
+  -or-
+
+- File creation error - The filename, directory name, or volume label syntax is
+  incorrect.
+
+To copy a file with a long filename to a FAT partition without receiving one of
+these errors:
+
+1. Use File Manager to copy the files.
+
+2. Use the COPY command at a command prompt to rename the file to a valid FAT
+  filename in the copy process. For example, to copy a file by the name of
+  "This is a LONGFILE.BAT" to C:\TEST the following command could be used:
+
+  COPY "This is a long file" C:\TEST\LONGFILE.BAT
+
+  Note that files with long filenames or spaces in the name need to be enclosed
+  in quotation marks.
+
+
+Additional query words: lfn prodnt 3.10
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

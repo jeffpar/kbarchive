@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163589: XCLN: Restoring from an OST after Deleting the Mailbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163589: XCLN: Restoring from an OST after Deleting the Mailbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163589/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163589/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163589/","publisher":null,"image":null,"headline":"Q163589: XCLN: Restoring from an OST after Deleting the Mailbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163589-xcln-restoring-from-an-ost-after-deleting-the-mailbox">Q163589: XCLN: Restoring from an OST after Deleting the Mailbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163589
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+- Microsoft Outlook 98 
+- Microsoft Outlook 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Offline Folder files (OSTs) are considered slave replicas of the server- based
+folders. If you delete the master, the slave is orphaned.
+
+If the original Microsoft Exchange profile was not modified, you can still start
+the Microsoft Exchange client offline with the old OST and recover the data by
+moving the messages from the OST to a PST file. However, if the old profile was
+deleted or modified (by using it to log onto a different mailbox) then the data
+in the OST is lost.
+
+MORE INFORMATION
+================
+
+You can recover mail stored in an OST, provided that you have not tried to
+modify the profile that was used to create the OST file. If the profile used to
+create the OST file has been modified to point to a new mailbox, the information
+contained in the OST file may be lost.
+
+This is because security on an OST works so that Windows NT authentication cannot
+be used when you work offline. Therefore, you must "prove" that you're allowed
+to log onto the server-based master before the OST file gives you local access.
+To do this, Exchange Server creates an encrypted "cookie" from your mailbox's
+unique entry ID while you are successfully logged into the Exchange Server
+computer. This cookie is securely stored in your Exchange Server profile.
+Essentially, your profile stores this key for the OST. Every time you try to
+access the OST file it checks your profile for the existence of this key.
+
+If you modify the profile or try to connect to a new mailbox or new server with
+the current profile, Microsoft Exchange replaces this key with a new value from
+the mailbox that was created. At this point, you cannot access the data that was
+contained in the OST created against the first mailbox.
+
+For more information, see the Microsoft Exchange Disaster Recovery Document on
+Microsoft TechNet or on the Internet at:
+
+  http://www.microsoft.com/exchange/techinfo/administration/55/BackupRestore.asp
+
+Steps to Recover
+----------------
+
+If you have not modified your profile or attempted to log on to the new mailbox,
+use the following steps to copy the offline messages to a PST:
+
+1. Start the Exchange Client OFFLINE.
+
+2. On the Tools menu, click Services.
+
+3. Click Add.
+
+4. Add a Personal Folders (PST) service.
+
+5. Select the messages that you want to copy.
+
+6. On the File menu, click Copy.
+
+7. In the Copy to dialog box, select the personal folders (PST) that you created
+  in step 4.
+
+8. Click OK.
+
+9. Repeat steps 5 through 8 for each folder that contains messages.
+
+At this point, the messages are copied to a PST. You can create a new profile and
+you can log on to the new server-based mailbox. After you complete this
+successfully, you can add a Personal Folders service (by referencing the PST
+created above), and you can copy the messages from the PST back to the
+server-based mailbox.
+
+NOTE: offline folders (OSTs) should not be considered as backups of your server
+based store. For more information on proper server backups, refer to the
+Microsoft Exchange Server Administrator's Guide, Chapter 15.
+
+
+Additional query words: exclnfaq 8.5
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbOutlook97 kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803 kbExchange400NT kbExchange500NT
+Version           : :4.0,5.0,8.0,8.01,8.02,8.03
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

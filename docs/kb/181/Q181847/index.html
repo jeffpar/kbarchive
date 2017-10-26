@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181847: XADM: How to Configure Exchange Server with Proxy Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181847: XADM: How to Configure Exchange Server with Proxy Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181847/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181847/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181847/","publisher":null,"image":null,"headline":"Q181847: XADM: How to Configure Exchange Server with Proxy Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181847-xadm-how-to-configure-exchange-server-with-proxy-server">Q181847: XADM: How to Configure Exchange Server with Proxy Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181847
+Product(s): Microsoft Exchange
+Version(s): 2.0,4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 11-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to configure Microsoft Exchange Server to operate
+behind Proxy Server 2.0 to handle incoming Internet client requests (this is
+known as "reverse-hosting").
+
+Simple Mail Transfer Protocol (SMTP) servers and Post Office Protocol (POP)
+clients on the Internet must be configured to contact the Proxy Server computer
+through the appropriate port in order to communicate with the Exchange Server
+computer.
+
+NOTE: this article is specifically for running Exchange Server behind Proxy
+server. If the two products are to be installed on the same computer, this
+article does not apply.
+
+In addition, versions of the Wspcfg.ini file need to be placed in the directory
+where the server application's .exe files are installed. Because Exchange Server
+has more than one .exe file, more than one Wspcfg.ini file is needed in specific
+directories.
+
+MORE INFORMATION
+================
+
+1. Install Winsock proxy client from the proxy server Mspclnt share.
+
+2. Copy two instances of the Wspcfg.ini file.
+
+3. Add the following section to the end of the first Wspcfg.ini file. This
+  section is required for the Exchange SMTP service:
+
+  [Msexcimc]
+  ServerBindTcpPorts=25
+  Persistent=1
+  KillOldSession=1
+
+
+4. Place this file in the directory where the Msexcimc.exe file is located. The
+  default directory path is \Exchsrvr\Connect\Msexcimc\Bin.
+
+5. Restart the Microsoft Exchange IMS Service.
+
+6. Confirm that the SMTP port is bound to port 25 on the Proxy Server computer.
+  Do this by typing "telnet &lt;proxy external IP&gt; 25" (without the
+  quotation marks), where &lt;proxy external IP&gt; is the external IP address
+  of the Proxy server.
+
+7. The second Wspcfg.ini file contains entries needed for the Exchange Store
+  (Store.exe), as follows:
+
+  [Store]
+        ServerBindTcpPorts=110,119,143
+        Persistent=1
+        KillOldSession=1
+
+  Additional ports can be listed in this because Store.exe sets POP mail on port
+  110, NNTP on port 119, and IMAP4 on port 143.
+
+8. Place this second Wspcfg.ini file in the directory where Store.exe is
+  located. The default directory path is \Exchsrvr\Bin.
+
+9. Stop and restart the Exchange services, or restart the Exchange Server
+  computer, for the new settings to take effect. You should be able to contact
+  the Exchange Server computer by connecting to the external IP address on the
+  Proxy Server computer using IMAP, NNTP, or POP3 protocols.
+
+10. Verify that your DNS MX records point to the Proxy Server computer and not
+  to the Exchange Server computer. Because the MX record is different from the
+  regular GetHostByName call, you must configure network TCP/IP properties,
+  using Control Panel, to use DNS for the Exchange Server computer. The
+  WinSock Proxy client application automatically redirects the DNS MX request.
+
+NOTE: If you have an internal DNS server on your network, you can use DHCP to
+configure the internal server. This may enable you to use both internal and
+external DNS servers to resolve names on your internal network and on the
+Internet.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbProxyServSearch kbProxyServ200
+Version           : :2.0,4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

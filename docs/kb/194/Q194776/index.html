@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194776: HOWTO: Install a Visual Basic Application on Terminal Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194776: HOWTO: Install a Visual Basic Application on Terminal Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194776/","publisher":null,"image":null,"headline":"Q194776: HOWTO: Install a Visual Basic Application on Terminal Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194776-howto-install-a-visual-basic-application-on-terminal-server">Q194776: HOWTO: Install a Visual Basic Application on Terminal Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194776
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbConfig kbOSWinNT kbVBp600 kbGrpDSVB
+Last Modified: 01-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Package and Deployment Wizard (PDW) to install a Microsoft
+Visual Basic 6.0 application on a Microsoft Windows-based Terminal Server
+Client, the following error message may occur:
+
+  Cannot start main setup program!
+  (CreateProcess() returned error code 0x00000002H)
+
+MORE INFORMATION
+================
+
+Although Microsoft Windows NT 4.0 Terminal Server Edition is not a supported
+platform for Microsoft Visual Basic 6.0, an application that is created in
+Visual Basic 6.0 may be installed and may work on Windows NT 4.0 Terminal Server
+Edition. It may be necessary to modify path information before installing a
+Visual Basic 6.0 application using the Terminal Server client.
+
+NOTE: Visual Basic 6.0 is supported on Windows 2000 Server with terminal services
+installed.
+
+The error above can be avoided by modifying the path environment variable on the
+Terminal Server client to contain the exact path of the \Windows and
+\Windows\System directories. The following is an example of what the path should
+be set to:
+
+  C:\WTSVR\Profiles\[User]\Windows
+
+and:
+
+  C:\WTSVR\Profiles\[User]\System32
+
+where [User] is the username name for the user logged on to the Terminal Server
+client. The information would be entered into the path as a single line
+separated by a semicolon (;). The following steps demonstrate how to modify the
+path environment:
+
+Step-by-Step Example
+--------------------
+
+1. Open the Windows Control Panel.
+
+2. Double-click the System icon, and click the Environment tab.
+
+3. In the System Variables list, click Path.
+
+4. In the Value box, add the necessary path information, as shown above, for
+  both the \Windows and \Windows\System32 directories for the given user, and
+  separate these two entries with a semicolon (;).
+
+5. Click OK to exit the System Properties dialog box. The Visual Basic
+  application should now install without the error message listed above.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q196201 INFO: Visual Basic Is Not Supported on Terminal Server 4.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbConfig kbOSWinNT kbVBp600 kbGrpDSVB 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :4.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132365/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132365/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132365/","publisher":null,"image":null,"headline":"Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132365-prb-phantom-grid-column-displayed-after-moving-to-last-column">Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132365
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the TAB key to move across a row in a grid, after moving into the
+last column, the mouse pointer jumps one column to the left and displays a
+phantom column.
+
+For example, this happens when the grid has these properties:
+
+  .ColumnCount = 4
+  .RecordMark = .F.
+  .DeleteMark = .F.
+  .ScrollBars = 0
+  .Width = 400
+  .Column1.Width = 100
+  .Column2.Width = 100
+  .Column3.Width = 100
+  .Column4.Width = 100
+
+RESOLUTION
+==========
+
+To suppress the horizontal scrolling effect and the display of a phantom column
+after the last column, set the grid's Width property to a value that causes the
+right border of the grid to be displayed in a thicker (bolder) line. This makes
+the edge of the right-most column the same as the border of the grid.
+
+For example, add seven to the sum of the column widths in the example given in
+the "Symptoms" section of this article. This suppresses the horizontal scrolling
+effect:
+
+  .ColumnCount = 4
+  .RecordMark = .F.
+  .DeleteMark = .F.
+  .ScrollBars = 0
+  .Width = 407 &amp;&amp; Add 7 to the sum of the column widths
+  .Column1.Width = 100
+  .Column2.Width = 100
+  .Column3.Width = 100
+  .Column4.Width = 100
+
+The addition of seven pixels to the sum of the column widths is based on the
+number of vertical lines in the grid, which includes the right border of the
+grid. When the grid's Width property is set to 407, the right border of the grid
+is shown in bold in the Form Designer. When the form is executed, you will not
+be able to press the TAB key or the CTRL-TAB to move past the last column so
+that the horizontal scrolling of the grid display will not occur.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

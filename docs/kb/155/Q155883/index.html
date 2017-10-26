@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155883/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155883/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155883/","publisher":null,"image":null,"headline":"Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155883-nt-40-breaks-sna-server-2x-server-communication-over-ip">Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155883
+Product(s): Microsoft Windows NT
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade from Windows NT 3.51 to Windows NT 4.0, SNA Server Admin is no
+longer able to locate the primary SNA Server 2.1/2.11 configuration server. This
+problem will occur if the SNA Server "server" computers are separated by TCP/IP
+routers and no LMHOSTS files are being used to define the Windows NT domain
+controllers where the SNA Servers are running.
+
+When you start SNA Server Admin on a Backup SNA Server, the following error will
+be displayed:
+
+  The Primary SNA Server for the domain is not active.
+  OK to attempt to open to a Backup SNA Server in read only mode?
+
+For more information on troubleshooting SNA Server 2.1 or 2.11 communication
+across TCP/IP routers, see the following Microsoft Knowledge Base article:
+
+  ARTICLE-ID: Q148969
+  TITLE: Troubleshooting SNA Server Communication Over an IP Router
+
+NOTE: Microsoft SNA Server 3.0 (to be released Fall 1996) does not rely on this
+Windows NT mechanism for server-to-server communication across TCP/IP routers.
+So, this issue is not relevant if SNA Server 3.0 is being used.
+
+CAUSE
+=====
+
+Optimizations made to Netbt.sys under Windows NT 4.0 have introduced a problem
+with SNA Server 2.x inter-server communication over TCP/IP routers.
+
+RESOLUTION
+==========
+
+Customers can work around the problem by adding an LMHOSTS file on the Windows
+NT 4.0 domain controllers where SNA Server is running and adding an entry for
+each SNA Server as follows:
+
+  &lt;ipaddress&gt;   &lt;computername&gt;  #PRE #DOM:&lt;winntdomainname&gt;
+
+For example:
+
+  123.123.10.10   SNASERVER1  #PRE  #DOM:NTDOMAIN
+  123.105.15.149  SNASERVER2  #PRE  #DOM:NTDOMAIN
+  199.199.20.5    SNASALES    #PRE  #DOM:NTDOMAIN
+
+An entry for each domain controller where SNA Server is running is required.
+
+A Windows NT 4.0 fix to this problem is also available from Microsoft which does
+not require the above LMHOSTS entries (in other words, in WINS-only
+configurations).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack. For
+information on obtaining the service pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

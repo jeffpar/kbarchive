@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123074/","publisher":null,"image":null,"headline":"Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123074-msb-human-midi-mapper-does-not-appear-in-control-panel">Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123074
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 08-NOV-2001
+
+1.0
+WINDOWS
+kbsound kbenv kbmm kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Magic School Bus Explores The Human Body uses MIDI sound, which requires that
+the MIDI Mapper be correctly configured. Sometimes, the MIDI Mapper icon does
+not appear in the Control Panel group, and it is not started when you run MIDI
+Mapper in the Bus Stop utility for Explores The Human Body.
+
+CAUSE
+=====
+
+This behavior occurs if the sound drivers for the sound card are not installed,
+or are incorrectly installed.
+
+The MIDI Mapper icon will also not be present in Control Panel if the [Don't
+Load] section of the CONTROL.INI file has the Midi Mapper=1 entry. If Midi
+Mapper=1 is in the [Don't Load] section of CONTROL.INI, change the =1 to =2.
+
+MORE INFORMATION
+================
+
+The MIDI Mapper Control Panel is present in the Control Panel group only if a
+sound board and the correct sound drivers have been installed. It is not a .CPL
+file installed by Windows; it is a Control Panel installed by the sound drivers
+upon installation.
+
+Contact the manufacturer of your sound card for more information regarding the
+specific drivers for your sound card, and the correct installation of the sound
+card software.
+
+Additional query words: 1.0 audio CPL missing absent msbhb sound gone empty msb-hb frizz frizzle magicbus liz winmsbhuman msbhuman schoolbus magic_bus
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticHuman kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

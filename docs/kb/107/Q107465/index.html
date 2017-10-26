@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107465: FIX: ClassWizard Floating-Point Parsing Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107465: FIX: ClassWizard Floating-Point Parsing Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107465/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107465/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107465/","publisher":null,"image":null,"headline":"Q107465: FIX: ClassWizard Floating-Point Parsing Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107465-fix-classwizard-floating-point-parsing-errors">Q107465: FIX: ClassWizard Floating-Point Parsing Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107465
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0
+Operating System(s): 
+Keyword(s): kbwizard kbMFC kbVCkbbuglist kbfixlist
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 1.5 
+- Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassWizard cannot parse floating-point numbers written in scientific
+floating-point notation, such as 1.e+006. If a number formatted in this manner
+is in the lines of code that ClassWizard must parse, the following error is
+generated:
+
+  Parsing error: Expected ")".
+  Input Line: "DDV_MinMaxFloat(pDX, m_Var, 0., 1.e+006);"
+
+The follow sequence of steps causes the code generator of ClassWizard to generate
+floating-point numbers in scientific notation:
+
+1. Add an edit control to a dialog box in App Studio.
+
+2. Add a float or double member variable to class of the previously added edit
+  control.
+
+3. In the range validation fields, add a floating-point number that fits one of
+  the following criteria, for member variable of type float:
+
+  a. It has seven digits or more to the left of the decimal point.
+
+  b. It has one or more zeros to the right of the decimal point, between the
+     decimal point and the first nonzero number.
+
+  Or the range validation fields contain a floating-pointer number that fits one
+  of the following criteria, for a member variable of type double:
+
+  a. It has 16 digits or more to the left of the decimal point.
+
+  b. It has one or more zeros to the right of the decimal point, between the
+     decimal point and the first nonzero number.
+
+RESOLUTION
+==========
+
+The only work around is to modify the code by hand and convert it back to the
+original notation. Be aware, however, that if you edit the variables for that
+class again, the numbers will be converted back to scientific notation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++ 2.1.
+
+Additional query words: 1.00 1.50
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100 kbVC200
+Version           : :1.0,1.5,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171259/","publisher":null,"image":null,"headline":"Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171259-xfor-how-to-move-the-microsoft-mail-connector-postoffice">Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171259
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbsetup kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+NOTE: As of 1/28/98, Quarterdeck Mail became StarNine Mail.
+
+SUMMARY
+=======
+
+When using the Microsoft Exchange Microsoft Mail Connector to connect Microsoft
+Exchange and Quarterdeck Mail for the Macintosh, the Exchange Connector
+Postoffice is required to be on an NTFS partition. By default, the Exchange
+Connector Postoffice is installed to the &lt;Exchange Server
+Path&gt;\Connect\Msmcon directory. If Microsoft Exchange is installed to a FAT
+drive, the connection to Quarterdeck Mail for the Macintosh requires that either
+the drive containing the Exchange Server installation be formatted as NTFS or
+the connector postoffice be moved to an NTFS partition.
+
+MORE INFORMATION
+================
+
+To move the Microsoft Mail Connector Postoffice to a different drive, you can
+follow the following steps:
+
+1. Stop the MS Mail Connector Interchange service, MSMail connector (Appletalk)
+  MTA service (if present), and any PCMTA services that are running.
+
+2. Stop sharing \\&lt;Server Name&gt;\Maildat$.
+
+3. Create a directory on the NTFS partition called ExchSrvr.
+
+4. Copy the &lt;Exchange Server Path&gt;\Connect\Msmcon directory tree to the
+  newly created ExchServ directory on the NTFS partition.
+
+5. Share the &lt;NTFS Drive Letter&gt;\ExchSrvr\Connect\Msmcon\Maildata
+  subdirectory as Maildat$.
+
+6. Modify the following registry keys under:
+
+     HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services
+ 
+
+  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+  problems that may require you to reinstall Windows NT to correct them.
+  Microsoft cannot guarantee that any problems resulting from the use of
+  Registry Editor can be solved. Use this tool at your own risk.
+
+  The following registry entries assume that you moved the connector postoffice
+  to the D: drive. If this is not the case, then you must substitute the drive
+  letter where the new connector postoffice is located for the "D:" value.
+
+  Registry Key: MSExchangeATMTA
+  Value Name: ImagePath
+  Data Type: REG_EXPAND_SZ
+  Data Value: D:\ExchSrvr\Connect\Msmcon\Bin\Macgate.exe
+
+  Registry Key: MSExchangeATMTA/Performance
+  Value Name: Library
+  Data Type: REG_EXPAND_SZ
+  Data Value: D:\ExchSrvr\Connect\Msmcon\Bin\Macgperf.dll
+
+  Registry Key: MSExchangeMSMI
+  Value Name: ImagePath
+  Data Type: REG_EXPAND_SZ
+  Data Value: D:\ExchSrvr\Connect\Msmcon\Bin\Mt.exe
+
+  Registry Key: MSExchangeMSMI/Performance
+  Value Name: Library
+  Data Type: REG_SZ
+  Data Value: D:\ExchSrvr\Connect\Msmcon\Bin\Mtperf.dll
+
+  Registry Key: MSExchangePCMTA/Performance
+  Value Name: Library
+  Data Type: REG_SZ
+  Data Value: D:\ExchSrvr\Connect\Msmcon\Bin\Xtnperf.dll
+
+7. Restart the MS Mail Connector Interchange service, MSMail connector
+  (Appletalk) MTA service (if present), and any PCMTA services that are defined
+  for Exchange Server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

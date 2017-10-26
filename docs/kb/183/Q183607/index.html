@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183607/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183607/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183607/","publisher":null,"image":null,"headline":"Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183607-howto-configure-dcom-for-visual-basic-using-dcomcnfgexe">Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183607
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp500 kbOSWin98 kbGrpDSVBDB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the DCOM configuration utility DCOMCNFG.EXE to
+configure DCOM for remote client/server applications created using Microsoft
+Visual Basic 5.0.
+
+Incorrectly setting up security for DCOM client/server applications will
+typically result in the following errors:
+
+  Run-time error '429'
+  ActiveX component can't create object.
+
+  -or-
+
+  Run-time error '70'
+  Permission denied.
+
+This article does not discuss the settings required to enable client access
+through firewalls. Please contact Microsoft Technical Support to obtain
+assistance regarding firewalls, proxy servers, or domain controllers.
+
+MORE INFORMATION
+================
+
+The following settings will enable Windows NT or Windows 2000 to communicate
+with an NT or Windows client and back (assuming that there are no firewalls or
+proxy servers involved).
+
+To configure your Visual Basic DCOM "Server" on an NT or Windows 2000machine,
+follow these steps: (Note that DCOMCNFG will only show servers that are EXEs. It
+will not show DLL servers.)
+
+1. Run DCOMCNFG.EXE.
+
+2. From the Applications tab, select the DCOM Server application (which will be
+  represented by its ProgID - a friendly name, such as "Your DCOM Server") or
+  by its CLSID (a GUID - Globally Unique Identifier) such as
+  {5BD7512F-3F2B-11D0-B4D2-02E0C911A7B1}).
+
+3. Double-click the Server application or click the Properties button to view
+  the properties of the server application.
+
+4. Select the Security Tab.
+
+5. Make the following changes:
+
+  IMPORTANT: The following changes will allow anyone at all to launch the
+  server. These settings are just for getting the servers up and running in
+  development mode for debugging purposes. They are not intended for specific
+  DCOM security on a target platform distribution.
+
+  CUSTOM ACCESS PERMISSIONS:
+    Everyone    -allow access
+    System      -allow access
+    Interactive -allow access
+
+  CUSTOM LAUNCH PERMISSIONS:
+    Everyone    -allow launch
+    System      -allow launch
+    Interactive -allow launch
+
+6. Select the Identity Tab, and then select "The Interactive User."
+
+7. Click OK, and then click OK again.
+
+If your DCOM server is raising events to your clients or using client callbacks,
+then you will also need to make the following changes to the default settings
+for your NT or Windows 2000 'Server' machine:
+
+
+On the NT or Windows 2000 SERVER machine:
+
+1. Using DCOMCNFG.EXE, select the Default Properties Tab.
+
+2. Set the Default Authentication Level to "None."
+
+3. Set the Default Impersonation Level to "Identify."
+
+NOTE: Make sure you test your DCOM application where the client and the server
+are running under different user accounts.
+
+If your application works at this point, then you should not need to make any
+configuration settings on the client machines.
+
+If your client is receiving events raised from the server or has enabled the
+server to call it back, then the following steps might be necessary, depending
+upon your specific network:
+
+To configure your Visual Basic DCOM "Clients:"
+
+On the NT or Windows CLIENT machines:
+
+1. Using DCOMCNFG, select the Default Properties Tab.
+
+2. Set the Default Authentication Level to "None."
+
+3. Set the Default Impersonation Level to "Impersonate."
+
+On the WIN95 CLIENT machines (if receiving events):
+
+1. Using DCOMCNFG.EXE, select the Default Security Tab.
+
+2. Click Edit Default.
+
+3. Grant Access to "The World" user.
+
+Modifying and setting security settings should be done with caution and
+awareness. Before modifying security settings, be sure that you understand the
+security implications involved. The above client settings are only necessary in
+certain network situations and can be added via setup code to the clients
+registry. For more information about writing such code see the References
+section later in this article.
+
+NOTE: DCOM registry keys are intended for Legacy software and not for Proprietary
+software or programming convenience.
+
+REFERENCES
+==========
+
+For more detailed information regarding DCOM security settings, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q176799 : INFO: Using DCOM Config (DCOMCNFG.EXE) on Windows NT
+
+  Q182248 : HOWTO:: Use DCOM Config (DCOMCNFG.EXE) on Windows 95
+
+For more information regarding using WIN95 as a DCOM server, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q165101 : HOWTO: Use Windows as a DCOM Server
+
+Visual Basic 5.0 can use remote events callbacks to enable two-way communication
+between DCOM clients and a DCOM server application.
+
+For more information regarding using remote events or callbacks with DCOM and
+Visual Basic 5.0, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q175510 : FILE: VB5DCOM.EXE: Using Callbacks and WithEvents with DCOM
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Randy Russell, Microsoft Corporation
+
+Additional query words: 429 70
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbOSWin98 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

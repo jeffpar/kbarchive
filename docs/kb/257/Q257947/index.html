@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257947: PRB: Runtime Error 7 : Out of Memory Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257947: PRB: Runtime Error 7 : Out of Memory Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257947/","publisher":null,"image":null,"headline":"Q257947: PRB: Runtime Error 7 : Out of Memory Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257947-prb-runtime-error-7--out-of-memory-error-message">Q257947: PRB: Runtime Error 7 : Out of Memory Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257947
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0,6.0 SP3,6.0 SP4
+Operating System(s): 
+Keyword(s): kbVBp600 kbGrpDSVBDB
+Last Modified: 24-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 6.0 SP3, 6.0 SP4 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to access the BoundText property of a Data Combo control in Visual
+Basic code after you scroll down the list of elements in its list portion until
+the currently selected element is no longer visible in the list, the following
+error message is displayed:
+
+  Runtime Error '7': Out of Memory
+
+CAUSE
+=====
+
+The cause of this behavior is unknown.
+
+RESOLUTION
+==========
+
+Write code in the Click event of the Data Combo to store the value of the its
+BoundText property in a form-level variable. Use the form-level variable to
+access the value of the Data Combo's BoundText property.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps reproduce this error:
+
+1. Open a new Data project in Visual Basic. Drag-and-drop a Data Combo control,
+  two ADO Data controls, and a CommandButton onto the form that is added to the
+  project (frmDataEnv).
+
+2. Set the Style property of the Data Combo to one of the following:
+
+   - dbcDropdownCombo
+   - dbcDropdownList
+
+3. Set the ConnectionString property of the first ADO Data control (ADODC1) to
+  connect to the Nwind.mdb database that is located in the Visual Basic 98
+  folder. Specify the Products table in the Nwind.mdb database as its
+  RecordSource.
+
+4. Set the ConnectionString property of the second ADO Data control (ADODC2) to
+  also connect to the Nwind.mdb database that is located in the Visual Basic 98
+  folder. Specify the Suppliers table in the Nwind.mdb database as its
+  RecordSource.
+
+5. Set the following properties of the Data combo as specified below:
+
+   - DataSource - ADODC1
+   - DataField - SupplierID
+   - RowSource - ADODC2
+   - ListField - CompanyName
+   - BoundColumn - SupplierID
+
+6. Cut-and-paste the following line of code into the Click event of the
+  CommandButton:
+
+     MsgBox DataCombo1.BoundText
+
+7. Save and run the Visual Basic project, and note that the Data Combo displays
+  a List of CompanyNames from the Suppliers table.
+
+8. Click the drop-down button on the Data Combo to display the list portion of
+  the control, and then scroll down the list of items by using the vertical
+  scroll bar until the currently selected element in the Data Combo is no
+  longer visible in the elements that are displayed in the list portion of the
+  control.
+
+9. Click the CommandButton, and note that this collapses the list portion of the
+  Data Combo control and generates the run-time error message noted in the
+  "Summary" section of this article. Stop the execution of the project and
+  return to the Visual Basic environment.
+
+10. Declare a string variable by the name of BoundText in the form's General
+  Declarations section. Cut-and-paste the following line of code in the Click
+  event procedure of the Data Combo:
+
+      BoundText = DataCombo1.BoundText
+
+11. Modify the MsgBox statement in the Click event procedure of the Command
+  Button to display the value of the BoundText variable instead of the
+  BoundText property of the Data Combo.
+
+12. Repeat steps 8 through 11, and note that the error message does not occur
+  and that the value of the variable that is displayed reflects the value in
+  the BoundText property of the Data Combo control.
+
+Additional query words: DataGrid Runtime 7
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVB600SP3 kbVB600SP4
+Version           : :6.0,6.0 SP3,6.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

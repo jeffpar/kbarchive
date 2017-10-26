@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166275/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166275/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166275/","publisher":null,"image":null,"headline":"Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166275-howto-debug-a-native-code-visual-basic-component-in-vc">Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166275
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbusage kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Basic 5.0 debugger allows you to debug your code at design time
+before you compile it into an .exe, .dll, or .ocx. If you are debugging Visual
+Basic-created COM components, you can debug them out-of-process by running
+multiple projects in the same instance of Visual Basic 5.0, or by running
+separate instances of Visual Basic 5.0 with the client running in one and the
+COM component running in the other.
+
+If you want to debug your components after they are compiled, you cannot use the
+Visual Basic 5.0 debugger because it will only debug them at design time. To
+debug a compiled Visual Basic component, you will need to use the functionality
+of the Visual C++ 5.0 debugger. The following are situations when you may need
+to debug a compiled Visual Basic component:
+
+- if you are creating an ActiveX control for use in a container other than
+  Visual Basic 5.0.
+- in an application execution environment such as Microsoft Transaction Server
+  where you are only allowed to run compiled .dlls.
+- if you suspect your Visual Basic component is behaving differently at design
+  time than it is compiled.
+
+This article explains how to do this within the Microsoft Developer Studio
+environment. You will need to have Visual Basic 5.0 and Visual C++ 5.0 installed
+on your development machine to follow this example.
+
+MORE INFORMATION
+================
+
+The following steps assume that you already have a Visual Basic 5.0-created
+Standard EXE (.exe), ActiveX DLL (.dll), ActiveX EXE (.exe), or ActiveX Control
+(.ocx) that you want to debug.
+
+1. In Visual Basic 5.0, open the Visual Basic project that you want to debug.
+  From the File menu, choose Make &lt;YourProject&gt;.exe. Click the Options
+  button and select the Compile tab. Choose Compile to Native Code and Create
+  Symbolic Debug Info. Then select OK, and OK again to compile your component.
+
+2. From the Visual C++ 5.0 File menu, choose Open Workspace. In the Open
+  Workspace dialog, set Files of Type to All files(*.*), and then select your
+  compiled component.
+
+3. Again from the Visual C++ 5.0 File menu, choose Open (not Open Workspace),
+  and open the Visual Basic module (.bas), form (.frm), or class (.cls) that
+  you want to debug. Set break points (F9), watches, step-through instructions,
+  etc., that you would for a normal program. You may also want to display
+  variable information in the debug environment by going to the Visual C++ 5.0
+  Tools menu, selecting Options, and then selecting the Debug tab. In the Debug
+  tab, place a check next to Display unicode strings.
+
+  Variables on a separate thread cannot be watched. An example would be a
+  background thread with an .ocx or a hidden vb background thread. Visual Basic
+  globals are per-apartment or single-thread, so you will not see them on the
+  stack if it is on another thread.
+
+  a. Standard EXE: From the Build menu in Visual C++ 5.0, select Start Debug
+     then Go, or press the F5 key. When your Visual Basic compiled component
+     reaches the line you set a breakpoint on, it will stop in Visual C++ 5.0
+     and allow you to perform normal debug operations.
+
+  b. ActiveX EXE, DLL, or OCX: It is a little different for DLLs in that you
+     have to specify an exe to debug with. To do this, from the Project menu
+     select Settings, and then click the Debug tab. In the Executable for debug
+     session text box specify the .exe file that references your .dll. Now
+     follow step 4a which will launch your executable and your .dll and the
+     Visual C++ 5.0 debugger will come up where you set the breakpoint in your
+     .dll.
+
+  c. ActiveX DLL Running Under Microsoft Transaction Server (MTS): To set this
+     up, select Settings from the Visual C++ 5.0 Project menu, and then click
+     the Debug tab. In the Executable for debug session text box, specify
+     MTX.EXE. Then, in the Program arguments text box place /p:{00000000-0000-
+     0000-0000- 000000000000} where you would replace the 0's with the actual
+     MTS Package ID. The Package ID can be obtained by examining the properties
+     of your package in the Transaction Server Explorer. Following step 4a
+     above which will launch MTX.EXE and your .dll. Now run the base client
+     .exe that makes a call into your COM component running under MTS and the
+     Visual C++ 5.0 debugger will come up where you set the breakpoint in your
+     .dll.
+
+The following are additional notes when debugging under MTS:
+
+     1. Is the dll being called on the system path?
+
+     2. Have you accidentally re-registered your com object's dll, thereby
+        wiping out the MTS-alterations to the registry?
+
+     3. Might you have multiple copies of your com object's dll laying around,
+        and you're setting breakpoints in the one that doesn't get loaded?
+
+     4. Similarly to 3, might you have multiple copies of your non-com dll
+        laying around?
+
+     5. There was one seemingly very stupid trick which was that you should
+        copy your DLL with symbolic Information to the MTS directory and from
+        there add that DLL as a package to the MTS explorer. If you do not do
+        this, symbolic debugging inside the MTS component does not work.
+
+        Also, make sure you kill all running mtx.exe's before starting up your
+        copy in the debugger. When you start it up, does it run or does it
+        shutdown immediately? Note any event log messages logged by MTS. To
+        start from a safe starting point, you might want to completely delete
+        your application, then recreate it, reinstall your component's dll,
+        etc.
+
+  d. ActiveX DLL Running Under Internet Information Server (IIS): Because IIS
+     runs as an NT Service, you will need to give yourself permission to act as
+     part of the operation system. To do this, go to NT Administrative Tools
+     and select User Manager. If you are using User Manager for Domains in NT
+     Server, make sure you have selected your machine name as the Domain from
+     the File menu. Then, choose User Rights from the Policies menu. In the
+     User Rights dialog box, place a check next to Show Advanced User Rights
+     and select "Act as part of the operating system" from the combo box. Click
+     the Add button and type in "domainxxx\userxxx" in the text area, or select
+     your username from the listbox. Click OK and you should now have the
+     correct privileges. To start the debugging session in Visual C++ 5.0, go
+     to the Build menu, select Start Debug, then Attach to Process. Place a
+     check next to Show System Processes, then select inetinfo and click OK.
+     Now load a client .htm or .asp file that will make a call into your
+     ActiveX component. If you follow the directions in step 3 above, you
+     should now be able to walk through your Visual Basic code.
+
+  It has been noted that following the guidelines in step 4d of this
+  article, the breakpoint is not hit. After some tries you might find
+  that, in order for the breakpoint to be hit, it is necessary to load the
+  DLL being debugged in the Additional DLLs project settings. Moreover,
+  the breakpoint is not hit the first time that the HTML page is called,
+  unless you set the breakpoint after attach to process has been made. It
+  was tested under Windows NT 4.0 Workstation SP3 with Peer Web Services
+  and Visual Studio SP2.
+
+
+Another Visual C++ feature is the ability to do cross-process and cross- machine
+debugging. If you are running in a debugger and call a .dll that has debugging
+info, it will automatically start another instance of the debugger and the
+source so that you can debug into it.
+
+Note that if the .exe is compiled optimized for size or speed, lines of dead code
+will be compiled out of the project.
+
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Jon Fowler, Microsoft Corporation
+
+
+Additional query words: MTS MTX VIPER
+
+======================================================================
+Keywords          : kbusage kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

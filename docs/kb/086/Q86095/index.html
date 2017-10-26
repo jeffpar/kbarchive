@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands] | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86095/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86095/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86095/","publisher":null,"image":null,"headline":"Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands]","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86095-pc-win-msmailini-entries-in-custom-commands">Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands]</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86095
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists and explains all the entries in the Microsoft Mail for
+Windows private profile, MSMAIL.INI, that are contained in the [Custom Commands]
+section.
+
+[Custom Commands]
+
+This section may contain any number of entries of complicated form. Each entry
+specifies a custom command that is installed into one of the Mail menus at run
+time. This section may appear both in the usual location, the MSMAIL.INI in your
+Windows directory, and in SHARED.INI in the directory pointer to by the
+SharedExtensionsDir entry of MSMAIL.INI. Here are a synopsis and a couple of
+examples of the [Custom Commands] entry format; a description of each subfield
+follows. Each entry must occupy a single line. Many sub fields are optional.
+
+tag=version;menu;name;position;DLL name;command;event map;status text;help
+file;help context;
+
+IC3=3.2;File;&amp;Empty Wastebasket;13;EMPTYWB.DLL;1;;Purge messages from the
+wastebasket
+
+IC4=3.2;Help;&amp;Out of Office;10;OOF.DLL;3;;Out of Office Email Notification
+
+  tag            Identifies the command to someone reading the INI
+                 file, but serves no other purpose.
+
+  version        Identifies the version of Mail with which the
+                 command is compatible; 3.2 is the current version.
+
+  menu           Names the menu to which the custom command should be
+                 added, such as File or Help.
+
+  name           The command name that is to appear on the menu. As
+                 usual, you may include an ampersand (&amp;) just before
+                 the letter that is to serve as an ALT-key
+                 accelerator.
+
+  position       The zero-relative position within its menu at which
+                 the command should appear. -1 places the command at
+                 the end of the menu.
+
+  DLL name       Name or path of the DLL in which the custom command
+                 resides.
+
+  command        Command string passed as one of the parameters to
+                 the DLL entry point for the command.
+
+  event map      Sequence of up to 16 digits. Each can be 0 or 1,
+                 indicating that the DLL should be called for a
+                 specific event. Currently 3 events are defined; the
+                 rest are reserved and must be zero:
+
+                 The first digit means Mail start-up.
+                 The second digit means Mail exit.
+                 The third digit means the arrival of a new message.
+
+  status text    Text to be displayed in the Mail status bar when the
+                 user cursors to the command in the menu.
+
+  help file      Windows Help file to be invoked when the user
+                 presses F1 while the command is selected. Passed to
+                 the Windows Help program.
+
+  help context   Passed to the Windows Help program along with the
+                 Help file name. Use -1 (Help file index) if there is
+                 no specific entry in the Help file for this command.
+
+A more detailed description of custom command creation and installation can be
+found in the Microsoft Mail "Technical Reference."
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

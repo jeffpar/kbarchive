@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173519: WINS Allows Duplicate Name Registrations Across Slow Link | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173519: WINS Allows Duplicate Name Registrations Across Slow Link" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173519/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173519/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173519/","publisher":null,"image":null,"headline":"Q173519: WINS Allows Duplicate Name Registrations Across Slow Link","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173519-wins-allows-duplicate-name-registrations-across-slow-link">Q173519: WINS Allows Duplicate Name Registrations Across Slow Link</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173519
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist kbfixlist
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Windows Internet Name Service (WINS) server is operating across a slow
+wide area network (WAN) link, it allows workstations and servers to register
+duplicate names, causing connectivity problems on your network.
+
+CAUSE
+=====
+
+The WINS Server name challenge may time-out on a slow WAN link, which may allow
+a computer to register a duplicate name on the network.
+
+RESOLUTION
+==========
+
+Obtain the fix mentioned below, then use the following steps to configure the
+number of retries and the time interval for the initial retry attempt that WINS
+uses for name challenges and responses:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WINS\Parameters
+
+3. Click Add Value on the Edit menu and type the following information to create
+  two new registry values:
+
+     Value: ChlMaxNoOfRetries
+     Data Type: REG_DWORD
+     Default = 3
+     Description: This parameter determines the number of retries WINS
+                  Server will do for the name challenge query.
+
+     Value: InitChlRetryInterval
+     Data Type: REG_DWORD
+     Default = 500(milliseconds)
+     Default: This parameter sets the initial retry interval for name
+              challenge query. The interval is doubled for each subsequent
+              retries. For example, if ChlmaxNoOfRetries is set to 4 and
+              InitChlRetryInterval is set to 1000, the first retry will be
+              1000ms later and the following retries will be at 2000ms,
+              4000ms, 8000ms, and so on.
+
+4. Exit Registry Editor.
+
+5. Stop the WINS Server by typing the following at a command prompt, then
+  pressing ENTER:
+
+  net stop wins
+
+6. Restart the WINS server by typing the following at a command prompt, then
+  pressing ENTER:
+
+  net start wins
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+4.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+MORE INFORMATION
+================
+
+When a WINS client sends a name registration request to its WINS Server for a
+name that already exists, the WINS server sends a challenge request to the
+computer that registered earliest. If there is no response to the challenge, the
+WINS server will try two more times at 500-microsecond intervals. This was
+previously a hard-coded value and could not be configured.
+
+If the computer is operating across a slow link, it is possible that the response
+will take too long, causing a time-out on the WINS server. The new computer will
+then be successfully registered on the WINS server, which will cause two
+computers to use the same name on the network.
+
+Additional query words: conflict error
+
+======================================================================
+Keywords          : kbnetwork kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

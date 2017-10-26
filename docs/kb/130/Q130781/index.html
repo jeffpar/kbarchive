@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130781/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130781/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130781/","publisher":null,"image":null,"headline":"Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130781-trust-fails-if-pdc-computer-name-exists-in-a-trusted-domain">Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130781
+Product(s): Microsoft Windows NT
+Version(s): 3.1,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your two-way trust between Domain1 and Domain2 may experience a failure in one
+direction. Domain1 may receive the following error message in Event Viewer:
+
+  Event ID : 5770
+  Source : NetLogon
+  Description: The session setup to the Windows NT Comain Controller
+  &lt;PDC1&gt; from computer &lt;PDC2&gt; using account &lt;Domain2$&gt;
+  failed. &lt;PDC1&gt; is declared to be a BDC in domain &lt;Domain1&gt;.
+  However, &lt;PDC2&gt; tried to connect as either a DC in a trusted domain, a
+  member workstation in domain &lt;Domain1&gt;, or as a server in domain
+  &lt;Domain1&gt;. Use the Server Manager to remove the BDC account for
+  &lt;PDC2&gt;.
+
+  where PDCx is the primary domain controller of Domainx and BDC is backup
+  domain controller.
+
+When you attempt to connect to the PDC of Domain2, you may receive the following
+error message:
+
+  The trust relationship between the primary domain and the trusted domain
+  failed.
+
+CAUSE
+=====
+
+User Manager on the Domain1 PDC incorrectly assumes that the Domain2 PDC is a
+Backup Domain Controller in Domain1 and sends a validation request to it to
+verify its Security Accounts Management (SAM) database. When the Domain2 PDC
+attempts to connect as a PDC, the validation request fails.
+
+
+RESOLUTION
+==========
+
+In NT 3.1:
+
+Go to Server Manager and delete the duplicate computer name from the list of
+servers. This BDC will need to be re-installed if it will be brought up on the
+network. Or, the PDC can be re-installed that has the duplicate name.
+
+In NT 3.5x / 4.0 :
+
+If the BDC that is duplicated has been taken off the network, simply delete the
+duplicate computer account from Server Manager on DOM1.
+
+If the BDC and PDC need to coexist, the PDC (or BDC) can be renamed and rebooted.
+The coinciding entry from Server Manager must also be removed as a result.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+Version           : :3.1,3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

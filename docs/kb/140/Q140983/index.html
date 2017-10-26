@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140983/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140983/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140983/","publisher":null,"image":null,"headline":"Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140983-ppt7-pack-and-go-wizard-is-not-supported-on-windows-31">Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140983
+Product(s): Microsoft PowerPoint for Windows
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbenv kbinterop kbdta kbviewer kbpng
+Last Modified: 19-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint Viewer for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the Pack and Go Wizard to pack a PowerPoint presentation and include
+the Viewer, the Wizard gives you this warning:
+
+  This viewer only works on Windows NT or Windows 95 (or later) operating
+  systems. You must use the Viewer disk included with PowerPoint to view this
+  presentation on the Windows 3.x operating system.
+
+If you then unpack the presentation and Viewer on a computer running Windows 3.1,
+the Viewer may not run. Instead, you may get one or more of the following error
+messages:
+
+  Share.exe must be run before running the PowerPoint Viewer.
+
+  Cannot find COMPOBJ.DLL.
+
+  Cannot find OLE2.DLL.
+
+  Cannot find OLE2DISP.DLL.
+
+  Sorry, PowerPoint cannot locate one of its components.
+
+CAUSE
+=====
+
+IMPORTANT NOTE: The information in this article applies to the version 4.0
+16-bit Viewer that originally shipped with PowerPoint for Windows 95. The new
+32-bit PowerPoint Viewer for Windows 95 cannot run on Windows 3.1. If you do
+have the new 32-bit Viewer for Windows 95, you should not pack it. You should
+take the packed file disk(s) and the 4.0 16-bit Viewer and run Vsetup.exe from
+it on the Windows 3.1x computer.
+
+The first message ("This viewer only works on Windows NT or Windows 95...") is
+not necessarily true. The 16-bit PowerPoint Viewer originally included with
+PowerPoint for Windows 95 in the Pack and Go Wizard (that is, 16-bit Viewer 4.0)
+will work on Windows 3.1 but requires several dynamic link library (.dll) files
+that it does not install. These files are listed below in the "Resolution"
+section. Windows 95 installs these files, but Windows 3.1 does not. If the
+Windows 3.1 computer does not have a program on it that installs these .dll
+files (Office, for example), the 4.0 16-bit Viewer will not run.
+
+If you try to run the 4.0 16-bit Viewer without the correct .dll files, you may
+receive one of the error messages listed in the second paragraph of the
+"Symptoms" section above.
+
+RESOLUTION
+==========
+
+The message you get when you pack the presentation and Viewer ("This viewer only
+works on Windows NT or Windows 95...") is not necessarily true. If the following
+files are present on the computer where you will unpack, the 4.0 16-bit Viewer
+will run correctly under Windows 3.1:
+
+  Compobj.dll
+  Ole2.dll
+  Ole2conv.dll
+  Ole2disp.dll
+  Ole2nls.dll
+  Ole2prox.dll
+  Storage.dll
+  Typelib.dll
+  Stdole.tlb
+
+These files can be found in the Windows\System folder. They are installed by many
+programs, including Microsoft Office for Windows.
+
+If the files are not present, you must run the Viewer Setup Program, Vsetup.exe,
+from a PowerPoint Viewer disk.
+
+If you have the PowerPoint for Windows 95 or Office for Windows 95 disk set, the
+Viewer disk is the last disk. There is also a folder called Pptview on the
+PowerPoint for Windows 95 or Microsoft Office for Windows 95 CD-ROM. You can
+copy the files from this folder to a blank disk to make a Viewer disk. The
+viewer setup program, Vsetup.exe and other viewer files can also be found in the
+\PPVIEW\VIEWDISK folder of the Office95 Pro compact_disc.
+
+The Viewer disk contents can also be downloaded from the Microsoft Download
+Library at (425) 936-6735.
+
+Additional query words: 7.00 ppt7 ppt95 unpacked Pack and Go PowerPoint 95 Viewer w_powerpt powerpnt
+
+======================================================================
+Keywords          : kbenv kbinterop kbdta kbviewer kbpng 
+Technology        : kbPowerptViewerSearch kbPowerptViewer700 kbZnotKeyword7 kbViewerSearch
+Version           : :7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

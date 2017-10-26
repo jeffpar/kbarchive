@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200350/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200350/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200350/","publisher":null,"image":null,"headline":"Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200350-hpmon-generates-event-id-1012-when-using-dlc-protocol">Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200350
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view your Windows NT Event logs, you may come across Event ID: 1012.
+The source for the event ID is HPMON.
+
+CAUSE
+=====
+
+This error is generated in rare conditions or when the network is either
+overloaded or slow. The error can be an indication of problems with network
+traffic, network hardware and/or hardware drivers.
+
+RESOLUTION
+==========
+
+As a general rule, the operating system is not usually the cause of the error.
+It is more likely that the error is being driven from one of the following.
+
+- Network routing, switching, logical addressing, and datagram services.
+
+- Data link transmission control and error detection.
+
+- Physical, electrical, mechanical, and functional interfaces.
+
+The following settings can be altered to reduce the amount of DLC errors logged
+in the event log by HPMON. To make these changes, follow these steps:
+
+1. Go to Print Manager.
+
+2. Select any printer that uses a DLC port.
+
+3. On the Printer menu, click Properties.
+
+4. On Printer Properties, verify the port that the printer uses is a DLC port.
+  If not, select another printer that is using DLC.
+
+5. Click Settings and go to Timers and Status Update. Set this to 160 seconds.
+  Click OK.
+
+6. Select Options to modify the DLC timers:
+
+   - Response Timer (T!): set to 10
+     This setting opens the response to queries to give more slack time to
+     respond.
+
+   - Acknowledge Timer (T2): set to 10
+     This setting gives more time to respond to print requests.
+
+   - Inactivity Timer (Ti): set to 10
+     This setting will give the printer extra time to respond before DLC
+     believes the connection is having a problem.
+
+NOTE: Making these changes will affect all DLC ports.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

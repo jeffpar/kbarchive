@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240142: How to Prevent User Validation on a Specific Domain Controller | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240142: How to Prevent User Validation on a Specific Domain Controller" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240142/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240142/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240142/","publisher":null,"image":null,"headline":"Q240142: How to Prevent User Validation on a Specific Domain Controller","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240142-how-to-prevent-user-validation-on-a-specific-domain-controller">Q240142: How to Prevent User Validation on a Specific Domain Controller</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240142
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A network administrator may need to prevent users from having their credentials
+validated by a specific domain controller for maintenance or troubleshooting
+purposes. This article describes how to prevent user logon validation from a
+single server.
+
+MORE INFORMATION
+================
+
+To prevent a domain controller from validating users' credentials:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Services.
+
+2. Click the Net Logon service, click Pause, and then click Yes.
+
+To reset the Net Logon service on a domain controller that is paused:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Services.
+
+2. Click the Net Logon service, and then click Continue.
+
+Pausing the Net Logon service does not disconnect any existing sessions, but
+prevents any other users from logging on and establishing a new connection.
+Pausing the service after the computer has started allows a backup domain
+controller (BDC) to set up a secure channel with the primary domain controller
+(PDC) to receive updates to the accounts database.
+
+When you connect to shares on a BDC with a paused Net Logon service, validation
+is carried out locally at the BDC, not forwarded to another domain controller or
+the PDC. This applies only to the validation of users who are gaining direct
+access to resources on a BDC with a paused Net Logon service. The main objective
+of reducing the load on the BDC is met because the workstations and other member
+servers cannot set up a secure channel with the BDC. If you stop the Net Logon
+service instead of pausing it, the BDC does not receive updates from the PDC. In
+this case, a user could be denied access to a local share with a valid password
+after a password change has occurred.
+
+You cannot set the Net Logon service to pause at startup. The service must run
+long enough to establish a secure channel with the PDC. You can automate this
+activity using the AT Scheduler tool to run a "net pause netlogon" (without the
+quotation marks) command after the computer has started. You can also create a
+batch file to run the same command in a loop combined with the Sleep tool from
+the Windows NT 4.0 Resource Kit to set the delay between intervals.
+
+For information about using the AT Scheduler tool, click Start, click Help, click
+the Index tab, type "at" (without the quotation marks), and then click Display.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

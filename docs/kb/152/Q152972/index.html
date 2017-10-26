@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152972: How to Pass Values from VFP Back to Calling AppleScript | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152972: How to Pass Values from VFP Back to Calling AppleScript" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152972/","publisher":null,"image":null,"headline":"Q152972: How to Pass Values from VFP Back to Calling AppleScript","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152972-how-to-pass-values-from-vfp-back-to-calling-applescript">Q152972: How to Pass Values from VFP Back to Calling AppleScript</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152972
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 15-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro evaluates the Apple Script command DO SCRIPT argument as an
+expression. This article describes the specific command syntax that must be used
+to use returned values successfully in AppleScripts. Visual FoxPro will only
+return character and numeric data; all others must be converted before being
+returned.
+
+MORE INFORMATION
+================
+
+The following examples show syntax for returning different data types as values
+from Visual FoxPro to a calling AppleScript:
+
+EXAMPLE 1
+---------
+
+To return a numeric value from a program file (.PRG):
+
+AppleScript:
+
+     tell application "Microsoft Visual FoxPro"
+       display dialog "Enter thickness in inches:" default answer 1
+       set param1 to the text returned of the result
+       display dialog "Enter width in inches:" default answer 6
+       set param2 to the text returned of the result
+       display dialog "Enter length in feet:" default answer 8
+       set param3 to the text returned of the result
+       Do Script "BdFeet(" &amp; param1 &amp; "," &amp; param2 &amp; "," &amp; param3 &amp; " ) "
+       display dialog "Calculated board feet: " &amp; the result
+     end tell
+
+Visual FoxPro:
+
+     * BdFeet.PRG - Program to return the board feet based on TWL
+     * nThick  - Thickness (in)
+     * nWidth  - Width     (in)
+     * nLength - Length    (ft)
+     *
+     #DEFINE nInPerCuFt 144
+     #DEFINE nInPerLinFt 12
+     PARAMETERS nThick, nWidth, nLength
+
+     nBoardFeet = nThick * nWidth *  nLength * nInPerLinFt
+     nBoardFeet = nBoardFeet / nInPerCuFt
+
+     RETURN nBoardFeet
+
+EXAMPLE 2
+---------
+
+To set and return a numeric value from an object property:
+
+AppleScript:
+
+     tell application "Microsoft Visual FoxPro"
+       activate
+       Do Script "_screen.resettodefault('backcolor')"
+       -- Syntax 1 incorrect example to set backcolor to red
+       Do Script "_screen.backcolor = RGB(255,0,0)"
+       -- grab the backcolor
+       Do Script "_screen.backcolor"
+       display dialog "The current value of the backcolor is " &amp; the result
+       -- Syntax 2 correct example to set backcolor to red
+       Do Script "Store RGB( 255, 0, 0 ) to _screen.backcolor"
+       -- grab the backcolor
+       Do Script "_screen.backcolor"
+       display dialog "The current value of the backcolor is " &amp; the result
+     end tell
+
+Both syntax 1 and 2, if executed directly in Visual FoxPro, would assign a value
+to a property. In AppleScript, only Syntax 2 would work as expected. The equal
+sign in Visual FoxPro is used as an assignment and a comparison operator. Syntax
+1 is simply a test for equivalence, but Syntax 2 will correctly store the value
+to the property.
+
+EXAMPLE 3
+---------
+
+To return a numeric value from a MessageBox:
+
+AppleScript:
+
+     tell application "Microsoft Visual FoxPro"
+       activate
+       -- iconless message box with yes no cancel, note no equals sign
+       Do Script "MESSAGEBOX('What happens happens.', 3 , 'Acceptance')"
+       if the result is 6 then
+         -- yes    (6)
+         set btnclicked to "Yes"
+       else if the result is 7 then
+         -- no     (7)
+         set btnclicked to "No"
+       else
+        -- cancel (2)
+        set btnclicked to "Cancel"
+       end if
+       display dialog "The user chose " &amp; the result &amp; "."
+     end tell
+
+EXAMPLE 4
+---------
+
+To return a text value and a logical value as a text value from a table:
+
+AppleScript:
+
+     tell application "Microsoft Visual FoxPro"
+       activate
+       Do Script "USE :samples:data:customer"
+       display dialog "Enter a key in all caps." default answer "LETSS"
+       set keyval to the text returned of the result
+       -- note concatenation and inclusion of single quotes for argument
+       Do Script "LOCATE for Cust_Id = '" &amp; keyval &amp; "'"
+       -- forced conversion of logical result to string
+       Do Script "IIF(FOUND(),'TRUE','FALSE')"
+       if the result is "TRUE" then
+         -- note argument syntax
+         Do Script "customer.company"
+         display dialog "Key: " &amp; keyval &amp; ", Company: " &amp; the result
+       else
+         display dialog "Key: " &amp; keyval &amp; " not found."
+       end if
+     end tell
+
+Additional query words: VFoxMac passing
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

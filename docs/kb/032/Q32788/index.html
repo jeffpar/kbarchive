@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q32788: Example of Trapping CTRL+ALT+DEL Keys in QuickBASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q32788: Example of Trapping CTRL+ALT+DEL Keys in QuickBASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/032/Q32788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/032/Q32788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/032/Q32788/","publisher":null,"image":null,"headline":"Q32788: Example of Trapping CTRL+ALT+DEL Keys in QuickBASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q32788-example-of-trapping-ctrlaltdel-keys-in-quickbasic">Q32788: Example of Trapping CTRL+ALT+DEL Keys in QuickBASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q32788
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr B_BasicCom | mspl13_basic
+Last Modified: 22-DEC-1989
+
+The correction below applies to the KEY statement on Page 236 of the
+following manuals:
+
+1. Page 236 of "Microsoft QuickBASIC 4.0: BASIC Language Reference"
+   for Versions 4.00 and 4.00b
+
+2. Page 236 of "Microsoft BASIC Compiler 6.0: BASIC Language
+   Reference" for Versions 6.00 and 6.00b for MS-DOS and MS OS/2
+
+3. Page 180 of the "Microsoft BASIC 7.0: Language Reference" manual
+   for Microsoft BASIC PDS Version 7.00
+
+4. Page 198 of the "Microsoft QuickBASIC: BASIC Language Reference" manual
+   for QuickBASIC Version 4.50
+
+The following phrase for the KEY(n) statement is incorrect:
+
+   ...a keyboardflag value of &amp;H12 would test for both CTRL and ALT
+   being pressed.
+
+The keyboardflag value should be &amp;H0C on a non-extended keyboard, not
+&amp;H12, to test for both CTRL and ALT being pressed. The keyboardflag
+value should be &amp;H8C on an extended keyboard. This example incorrectly
+uses decimal addition on hexadecimal numbers.
+
+The following BASIC program gives an example of trapping the
+CTRL+ALT+DEL key sequence for both extended and non-extended
+keyboards:
+
+  ' This example works in QuickBASIC Versions 4.00 and later.
+  ' &amp;H80 = keyboard flag value to add for extended keyboard keys
+  ' &amp;H0C = keyboard flag for CTRL (&amp;H04) plus ALT (&amp;H08), pressed
+  '        together.
+  ' &amp;H53 = scan code for DELETE (or DEL) key
+  CLS
+  KEY 15, CHR$(&amp;HC) + CHR$(&amp;H53)    '   Trap CTRL+ALT+DEL for
+  ON KEY(15) GOSUB ctrlaltdelwhite  '   white DEL key
+  KEY(15) ON
+  KEY 16, CHR$(&amp;H8C) + CHR$(&amp;H53)   '   Trap CTRL+ALT+DELETE for
+  ON KEY(16) GOSUB ctrlaltdelgrey   '   grey (extended) DELETE key
+  KEY(16) ON
+  DO
+  LOOP UNTIL INKEY$ = "q"         '  Idle loop
+  END
+ctrlaltdelgrey:
+  PRINT "pressed CTRL+ALT+DELETE (grey DELETE key) on extended keyboard"
+  RETURN
+ctrlaltdelwhite:
+  PRINT "Pressed CTRL+ALT+DEL (white DEL key) on either keyboard"
+  RETURN
+
+Please note that when you run this program, pressing CTRL+ALT+DEL will
+reboot the computer if any of the following key states are also
+active:
+
+   SHIFT, NUM LOCK, or CAPS LOCK
+
+You must define separate ON KEY(n) statements for trapping
+CTRL+ALT+DEL in combination with the different states of the SHIFT,
+NUM LOCK, or CAPS LOCK keys. In the ON KEY(n) statement, n can be 15
+through 25; this limits you to 11 user-defined keys.
+
+The keyboardflag value &amp;H0C in the KEY statement is obtained by adding
+together the keyboardflag values from Page 236 for the CTRL and ALT
+keys, as in the following example:
+
+      &amp;H04   +  &amp;H08   =&gt;  &amp;H0C
+      (CTRL)    (ALT)      (keyboardflag for KEY statement)
+
+When adding together keyboardflag values to trap different
+combinations of SHIFT, CTRL, ALT, NUM LOCK, CAPS LOCK, or
+Advanced-101-keyboard extended keys, it is important to remember that
+the values on Page 236 are in hexadecimal (base 16) notation, where
+numbers are preceded with &amp;H. If you wish, you can convert the number
+to decimal notation (base 10) and use that value. Be sure not to use
+&amp;H in front of the value in BASIC if the value is in decimal notation.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

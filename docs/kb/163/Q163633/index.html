@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163633: Err Msg: No Disk in Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163633: Err Msg: No Disk in Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163633/","publisher":null,"image":null,"headline":"Q163633: Err Msg: No Disk in Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163633-err-msg-no-disk-in-drive">Q163633: Err Msg: No Disk in Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163633
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, make sure you understand how to restore it if a problem
+occurs. For information about how to do this, view the "Restoring the Registry"
+Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in
+Regedt32.exe.
+
+When you open or receive mail in the Microsoft Exchange client, one of the
+following error messages may occur:
+
+  Exchng32.exe - No Disk
+  There is no disk in the drive. Please insert a disk into &lt;drive&gt;:
+
+  -or-
+
+  WMS Spooler: Mapisp32.exe - No Disk
+
+  -or-
+
+  OleMainThreadWndName: Mapisp32.exe - No Disk
+
+NOTE: If you select the Abort option, the message box clears. Selecting Retry or
+Ignore only works if a floppy disk is inserted into the drive.
+
+CAUSE
+=====
+
+This problem occurs when the PATH statement in the Autoexec.bat file, Windows NT
+System Environment Variables, or User Environment Variables for &lt;user
+name&gt; refers to a floppy disk drive or CD-ROM drive.
+
+If the Autoexec.bat file refers to a floppy disk or CD-ROM drive, Windows NT 4.0
+does not display the error when you log on, but when you run applications.
+
+WORKAROUND
+==========
+
+To work around this problem, you should either have a disk in the drive or
+remove the entry from the PATH statement.
+
+The drive letter may not be entered in the PATH statement, but may be found in
+the following registry location:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\SETUP\WinntPath
+
+Delete the entry here and log back in.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+MORE INFORMATION
+================
+
+When a user logs on to their account, Windows NT searches for an Autoexec.bat
+file in the root directory of drive C. If the file is found, Ntvdm.exe appends
+its PATH environment variable to the system PATH environment variable. Only the
+DOS virtual machine (VDM) PATH variable is affected.
+
+Ntvdm.exe tests the PATH statement for validity. If the drive physically exists,
+Ntvdm.exe tests for the drive type (removable media or fixed). If the drive is a
+floppy disk or CD-ROM, Ntvdm.exe tests for the presence of valid media. If no
+valid media is found, the error message is displayed. If invalid drives are used
+in the Autoexec.bat PATH statement, no error message is displayed; however, the
+PATH variable in any previously opened VDMs may be invalid.
+
+For more information, please see the following Microsoft Knowledge Base article:
+
+  Q102418 NTVDM Error: There Is No Disk in the Drive
+
+
+This problem can also occur after you save an attachment to removable media, and
+then eject the media. For example, when you save an attachment to a zip drive,
+and then eject the disk and attempt to open another message, the error message
+appears. To work around this problem, insert a new disk in to the same drive and
+open a message.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

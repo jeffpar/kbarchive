@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125254/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125254/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125254/","publisher":null,"image":null,"headline":"Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125254-pc-wsplus-err-msg-the-schedule-file-could-not-be-opened">Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125254
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-SEP-1999
+
+1.00
+WINDOWS
+kbusage kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When attempting to Open Other's Appt. Book... in Schedule+ for Windows with the
+proper access privileges already set, the user gets the following message:
+
+  The schedule file could not be opened. You may not have the necessary access
+  privileges or the file is unavailable.
+
+RESOLUTION
+==========
+
+1. From the Options menu, choose Set Access Privileges.
+
+2. From the Set Access Privileges dialog box and in the Users: box, set the
+  Default user to None and remove any additional users from the Users list.
+
+3. Click the OK button.
+
+4. From the File menu, choose Exit and Sign Out.
+
+  NOTE: This step is important as it writes the changes to the user's .CAL file.
+
+5. Sign back in to Schedule+ as the same user.
+
+6. Repeat Step 1.
+
+7. From the Users: box, select the Set Access Privileges dialog box and set the
+  default or any additional users to the READ privilege or higher. The READ
+  privilege is the minimum privilege required when you open another user's
+  appointment books.
+
+  NOTE: If any users have the same access privileges as the default user, they
+  will not show up in the Users: box.
+
+8. Repeat Steps 3 and 4.
+
+  The user is now ready to Open Other's Appt. Book....
+
+MORE INFORMATION
+================
+
+This problem occurs when minor corruption affects the user's .CAL file. By
+resetting all the access privileges to None and Exiting and Signing Out this
+saves the changes to the user's .CAL file.
+
+
+Additional query words: schedule plus 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73685/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73685/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73685/","publisher":null,"image":null,"headline":"Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73685-bug-preprocessor-program-invocation-gets-wrong-return-value-nmk">Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73685
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.11
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft NMAKE Utility for MS-DOS, version 1.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NMK.COM version 1.11 does not correctly evaluate the return value from a program
+invocation in a preprocessor directive. NMK will always indicate that the
+program returns 0 (zero) no matter what the actual return value is. This can
+cause problems if the return value is used in some conditional code in the
+makefile. The sample code and makefile below may be used to illustrate this
+problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in NMK version 1.11. We are
+researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+A program can be invoked in a makefile preprocessing directive by enclosing the
+program inside square brackets ([]). The program will be invoked before any
+other processing of the makefile is done.
+
+NMAKE evaluates the program correctly and may be used to work around the problem;
+however, you may need to use the DOS extended versions of the compiler or
+assembler to work around the memory limitations of NMAKE.
+
+For more information on preprocessing directives in makefiles, see the NMAKE
+documentation or online Help supplied with your version of the compiler or
+assembler.
+
+Sample Code and Makefile
+------------------------
+
+To illustrate the problem described above, compile or assemble one of the sample
+programs below to create an executable file called TEST.EXE. Save the following
+makefile as a file called MAKEFILE and invoke NMK with no arguments.
+
+MAKEFILE
+--------
+
+  !IF ( [TEST.EXE] )   # This test is TRUE for NMAKE and FALSE for NMK
+
+  all:
+      echo Worked
+
+  !ELSE
+
+  all:
+      echo Failed
+
+  !ENDIF
+
+TEST.C
+------
+
+  /* Sample C code that can be invoked as a part of a makefile
+     preprocessor directive.
+
+     Compile options needed: none
+  */ 
+
+  #include &lt;stdlib.h&gt;
+
+  void main(void)
+  {
+     exit(1);
+  }
+
+TEST.ASM
+--------
+
+  ; Sample assembly code that can be invoked as a part of a makefile
+  ; preprocessor directive
+
+  ; Compile options needed: none
+
+     .MODEL small, os_dos
+
+     .STACK
+
+     .CODE
+     .STARTUP
+        mov al, 1h
+     .EXIT
+
+     END
+
+Additional query words: 1.11 buglist1.11
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111DOS
+Version           : MS-DOS:1.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

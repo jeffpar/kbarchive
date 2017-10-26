@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62329: Internal Compiler Error ‘@(#)regMD.c:1.100’, Line 4634 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62329: Internal Compiler Error ‘@(#)regMD.c:1.100’, Line 4634" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62329/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62329/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62329/","publisher":null,"image":null,"headline":"Q62329: Internal Compiler Error ‘@(#)regMD.c:1.100’, Line 4634","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62329-internal-compiler-error-regmdc1100-line-4634">Q62329: Internal Compiler Error ‘@(#)regMD.c:1.100’, Line 4634</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62329
+Product(s): See article
+Version(s): 6.00   | 6.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 | mspl13_c
+Last Modified: 25-JUL-1990
+
+The two code samples below will produce the following internal
+compiler error when the code is compiled using the compact or large
+memory model:
+
+   fatal error C1001: Internal Compiler Error
+   (compiler file '@(#)regMD.c:1.100', line 4634)
+   Contact Microsoft Product Support Services
+
+This error can occur with various optimizations. In general, compiling
+with /Od (no optimization) or /Ox (maximum save optimization) will
+work correctly. In the following examples, there are various
+"failsafe" optimizations that can cause the error to go away. If one
+of these optimizations is used on a compile line that would otherwise
+cause the internal compiler error, the error will not appear.
+
+ 1. /** Code Sample1 **/
+ 2.
+ 3. struct str
+ 4. {
+ 5.    int *a;
+ 6.    int b;
+ 7. };
+ 8.
+ 9. void foo(struct str * w)
+10. {
+11.    dog( w-&gt;a[(*w).b], w-&gt;a[w-&gt;b+1] &amp; w-&gt;a[w-&gt;b]);
+12. }
+
+In this example, using any combination that doesn't include /Oe will
+result in the above error. As soon as /Oe is included, the error
+doesn't occur. For example:
+
+   cl /c /AL /Oacgilnprstwz  foo.c    &lt;&lt; Fails with error.
+
+   cl /c /AL /Oacgilnprstwze foo.c    &lt;&lt; Works correctly, no error.
+   cl /c /AL /Oanprswzx      foo.c    &lt;&lt; Also works correctly.
+
+In the second working compile line, remember that /Ox includes /Oe
+(actually /Ox = /Ocegilt /Gs).
+
+ 1. /** Code Sample2 **/
+ 2.
+ 3. struct cat{
+ 4.    int x;
+ 5.    int y;
+ 6.    int dog[7];
+ 7. };
+ 8.
+ 9. void g(struct cat foo[0][1])
+10. {
+11.    int a=0;
+12.    int b=0;
+13.    unsigned int  c=0;
+14.
+15.    char buf[1];
+16.
+17.    if(0);
+18.
+19.    buf[0] = foo[a][b].x &lt;&lt; 1 + foo[a][b].y;
+20.    buf[0] = c + foo[a][b].x;
+21. }
+
+In the above example, using /Oe will correct the problem. However, /Ol
+and /Og will also work correctly. Again, any combination of the other
+optimizations will result in the above error until one of the
+"failsafe" optimizations are used.
+
+If you want to change the code in the program, the following are some
+code sequences that seem to cause the error:
+
+1. Global struct
+
+2. Structure passed to function
+
+3. Complex dereference of structure member
+
+Usually, modifying the code to change this sequence will cause the
+error to go away. For instance, in Example 2, any of the following
+changes will eliminate the error:
+
+1. Change dog[7] to dog [6] and declare a dummy int to pad the
+   structure.
+
+2. Change "c" from an unsigned int to int.
+
+3. Change the order of the code or use a temporary variable in the
+   assignment statement.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

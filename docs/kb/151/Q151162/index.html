@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151162/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151162/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151162/","publisher":null,"image":null,"headline":"Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151162-prb-ctoolbarctrl-styles-fail-with-ctoolbar">Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151162
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbMFC kbToolbar KbUIDesign kbVC400 kbVC410 kbGrpDSMFCATL kbMFCCtrlBar
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CToolBarCtrl styles such as CCS_ADJUSTABLE are ignored by CToolBar::Create(),
+and do not have any affect on the CToolBar that is created.
+
+The Common Control Toolbar controls styles that are ignored include
+CCS_ADJUSTABLE, CCS_BOTTOM, CCS_NOHILITE, CCS_TOP, and the Toolbar styles
+TBSTYLE_ALTDRAG, TBSTYLE_TOOLTIPS and TBSTYLE_WRAPABLE.
+
+CAUSE
+=====
+
+CToolBar is an implementation of the Common Control Toolbar and requires
+specific flags. Before calling CWnd::Create() to create the Toolbar control,
+CToolBar removes all styles in the range of 0 to 0xFFFF. This includes all of
+the CControlBar (CBRS_X) styles as well as the Common Control styles.
+
+The following Common Control styles are then set:
+
+  CCS_NOPARENTALIGN, CCS_NOMOVEY, CCS_NODIVIDER, and CCS_NORESIZE
+
+RESOLUTION
+==========
+
+One solution is to use ModifyStyle in the handler for WM_NCCREATE to set the
+styles needed.
+
+CToolBarCtrl may also be used instead of CToolBar when modifying the toolbar
+using the Common Control styles, but the CToolBarCtrl does not support all of
+the functionality of CToolBar, such as docking, automatic CFrameWnd layout and
+CmdUI updates. The CToolBarCtrl notifications arising due to these styles also
+have to be handled.
+
+It is possible to set the Common Control styles in CToolBar by deriving a class
+from CToolBar and overriding the virtual function CToolBar::PreCreateWindow().
+This may cause problems because some of the CCS_X styles have the same value as
+some of the CBRS_X styles. For example, CBRS_FLYBY and CCS_ADJUSTABLE are both
+0x0020L.
+
+Additional query words: 4.00 4.10
+
+======================================================================
+Keywords          : kbCmnCtrls kbMFC kbToolbar KbUIDesign kbVC400 kbVC410 kbGrpDSMFCATL kbMFCCtrlBar 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

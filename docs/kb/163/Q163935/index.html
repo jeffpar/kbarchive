@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163935/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163935/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163935/","publisher":null,"image":null,"headline":"Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163935-fix-error-invalid-page-fault-when-connecting-to-sybase">Q163935: FIX: Error "Invalid Page Fault" When Connecting to Sybase</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163935
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kb3rdparty kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbMDAC250kbbuglist
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs after disconnecting from Sybase server and
+reconnecting:
+
+  "VFP caused an invalid page fault in module LIBCOMN.DLL"
+
+This error occurs if the SQLCONNECT() function is used for connecting, and two or
+more connections have been made to Sybase 10 or 11. When any connection that was
+created before the last connection is terminated and then another connection is
+created, the error occurs. However, it only occurs with Sybase and the Sybase
+ODBC driver from Intersolv. Other database servers, such as SQL Server and
+Oracle, work correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+If an SQL connection is created with the SQLCONNECT() function, a numerical
+value is stored to the connection handle of the connection. If the value is
+greater than zero, then the connection is valid. The first connection usually
+has a value of one, and the second of two, and so forth. When one of the
+connections before the last connection is terminated, that termination leaves a
+lower number available for a future connection to use. Creating a new connection
+that uses one of these lower numbers causes the error.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Issuing the following code in a program (.PRG) file or from the Command window
+will cause the error to occur. After issuing each SQLCONNECT() function, you
+need to select the data source for Sybase and enter the correct UserId and
+password in the Logon dialog box. Note that x and y must return numbers greater
+than zero to ensure a valid connection:
+
+        x = SQLCONNECT()
+        ? x
+        y = SQLCONNECT()
+        ? y
+        = SQLDISCONN(x)
+        z = SQLCONNECT()
+        ? z
+
+Additional query words: kbvfp600fix
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbMDAC250 kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

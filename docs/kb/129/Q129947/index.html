@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129947: INFO: Win32 Replacement for the hmemcpy Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129947: INFO: Win32 Replacement for the hmemcpy Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129947/","publisher":null,"image":null,"headline":"Q129947: INFO: Win32 Replacement for the hmemcpy Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129947-info-win32-replacement-for-the-hmemcpy-function">Q129947: INFO: Win32 Replacement for the hmemcpy Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129947
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The hmemcpy function is no longer available in Windows 32-bit development
+systems. This article describes the Win32 Replacement for HMEMCPY function.
+
+MORE INFORMATION
+================
+
+Excerpted from "Hardcore Visual Basic" by Bruce McKinney, published by Microsoft
+Press:
+
+CopyMemory: A Strange and Terrible Saga
+---------------------------------------
+
+Experienced Basic API programmers have come to know, if not love, the hmemcpy
+function. When C's weak data typing and Basic's strong data typing meet in the
+Windows API, hmemcpy is frequently called on to mediate. The h in the name
+indicates that hmemcpy can handle huge memory (greater than 64K bytes), but
+Basic programmers rarely need it for such large chunks. Unfortunately, if you
+look for hmemcpy in the Win32 documentation, you'll come up with nothing - not
+even a note saying that the function is obsolete.
+
+But you might happen to run across the Win32 CopyMemory function, which has
+exactly the same arguments and in fact looks like the same procedure. The h has
+disappeared because all memory in 32-bit mode is huge. If you write a Declare
+statement for CopyMemory, however, giving KERNEL32.DLL as the most likely
+library, you'll get nothing but an error indicating that no such function
+exists. In fact, you can search all the 32-bit DLLs with the DumpBin utility,
+but you won't find any containing CopyMemory.
+
+But a careful search of Win32 C include files turns up the following in
+WINBASE.H:
+
+     #define CopyMemory RtlCopyMemory
+     #define MoveMemory RtlMoveMemory
+     #define ZeroMemory RtlZeroMemory
+
+This C equivalent of an alias indicates that CopyMemory is another name for a
+function called RtlCopyMemory. Don't ask why; just check for RtlCopyMemory in
+KERNEL32.DLL. Again, nothing. A little more sleuthing in Win32 include files
+reveals the reason. WINNT.H contains something like this:
+
+     #define RtlCopyMemory(dst, src, len) memcpy(dst, src, len)
+
+In other words, RtlCopyMemory is an alias for the C memcpy function, but you
+can't use memcpy or any other C library function from Basic. If it's not
+exported from a DLL, you can't call it.
+
+But KERNEL32.DLL does contain an entry for RtlMoveMemory. If you check the Win32
+documentation, you'll see that MoveMemory does the same thing as CopyMemory
+except that it handles overlapped memory differently. I can't imagine a
+situation in which a Basic programmer would be copying overlapped memory. No
+reason not to use MoveMemory instead. Because CopyMemory is more intelligible
+than hmemcpy, I alias this name for both 16-bit and 32-bit versions:
+
+     #If Win32 Then
+        Declare Sub CopyMemory Lib "KERNEL32" Alias "RtlMoveMemory" ( _
+           hpvDest As Any, hpvSource As Any, ByVal cbCopy As Long)
+     #Else
+        Declare Sub CopyMemory Lib "KERNEL" Alias "hmemcpy" ( _
+           hpvDest As Any, hpvSource As Any, ByVal cbCopy As Long)
+     #End If
+
+You must still be careful about what you pass to these functions. There are a lot
+of issues with ByVal versus ByRef depending on whether you're passing strings,
+UDTs, pointers, and so on.
+
+Additional query words: 4.00 vb4win vb432
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

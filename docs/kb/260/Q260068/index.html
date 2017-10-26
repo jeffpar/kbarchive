@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260068/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260068/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260068/","publisher":null,"image":null,"headline":"Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260068-xadm-error-800ff330-running-exchange-performance-optimizer">Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260068
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 02-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An error message similar to the following may appear when you run the Exchange
+Server Performance Optimizer against a private-only server or public-only
+server:
+
+  The file D:\Exchsrvr\mdbdata\Priv.edb (or Pub.edb) could not be found. -
+  [800FF330]
+
+This error message may reference the full path to the Priv.edb or Pub.edb
+database. This error message appears while Performance Optimizer is running a
+disk analysis against the local drives.
+
+CAUSE
+=====
+
+This issue can occur because, when the disk analyzing portion of Performance
+Optimizer is running, Performance Optimizer always checks for the existence of
+the Priv.edb and Pub.edb databases, whether these files are being used or not.
+Performance Optimizer reads the Exchange Server registry keys to determine where
+these databases are supposed to be located. If the databases are not in the path
+that is specified in the registry, an error message is generated.
+
+A private-only Exchange Server computer does not use the Pub.edb database, and a
+public-only Exchange Server computer does not use the Priv.edb database. For
+this reason, the Pub.edb or Priv.edb may have been manually deleted to free disk
+space on a private-only server or public-only server. When you delete the
+Private Information Store object or Public Information Store object from the
+Exchange Admin program, the corresponding database is not removed from the drive
+by Exchange Server. The database is left on the drive but the database is not
+used.
+
+WORKAROUND
+==========
+
+To work around this issue, use one of the three following methods:
+
+Method 1
+--------
+
+Create a sample database file in the path specified in the registry. For example,
+you can create a file with Notepad. Once the text document is created, you can
+then rename the file to Priv.edb and place it in the appropriate path.
+Performance Optimizer does not check for a valid database, but rather, it simply
+checks for the existence of files named Priv.edb and Pub.edb. The easiest way to
+determine where the newly created file should be copied is to click the Database
+Paths tab in the properties of the appropriate server object in the Exchange
+Administrator program. The list of servers in the site is maintained in the
+Site\Configuration\Servers container of the Exchange Admin program.
+
+Method 2
+--------
+
+Run Performance Optimizer in verbose mode by running the Perfwiz -v command from
+the Exchsrvr\bin directory at a command prompt. When you run Performance
+Optimizer in verbose mode, you are given the option to "Analyze hard disks." If
+this option is unchecked, Performance Optimizer will not check for the existence
+of a Priv.edb or Pub.edb database file.
+
+Method 3
+--------
+
+If you are using Performance Optimizer solely to modify the database paths, do
+not use Performance Optimizer; move the database(s) by modifying the database
+paths in the Exchange Admin program. For additional information, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q234295 XADM: Changing Database Paths Using the Administrator Program
+  [exchange]
+
+MORE INFORMATION
+================
+
+A private-only server or public-only server is a server from which the private
+information store or public information store object has been deleted in the
+Exchange Admin program (for example, dedicated mailbox servers or dedicated
+public folder servers). A private-only server or public-only server can improve
+performance by allowing the Store.exe process to dedicate all processing time
+and allocated memory to one Information Store database rather than two databases
+(Priv.edb and Pub.edb).
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Component         : Admin
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

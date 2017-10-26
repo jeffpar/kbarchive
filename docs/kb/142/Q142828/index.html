@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142828: PRB: Incorrect Toolbar Bitmaps Installed with VB 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142828: PRB: Incorrect Toolbar Bitmaps Installed with VB 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142828/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142828/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142828/","publisher":null,"image":null,"headline":"Q142828: PRB: Incorrect Toolbar Bitmaps Installed with VB 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142828-prb-incorrect-toolbar-bitmaps-installed-with-vb-40">Q142828: PRB: Incorrect Toolbar Bitmaps Installed with VB 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142828
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp400bug kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following pairs of bitmaps that come with Visual Basic are identical, but
+they should be different:
+
+  \bitmaps\outline\open.bmp      AND    \bitmaps\tlbr_w95\open.bmp
+  (222 bytes)                  (246 bytes)
+
+  \bitmaps\assorted\delete.bmp   AND    \bitmaps\tlbr_w95\delete.bmp
+  (382 bytes)                  (246 bytes)
+
+RESOLUTION
+==========
+
+Although they are not installed correctly, there are two different versions of
+Open.bmp and Delete.bmp included on the distribution media for Visual Basic 4.0.
+The Extract.exe program, which comes with Visual Basic, can be used to extract
+the Windows 95 toolbar versions of Open.bmp and Delete.bmp from the installation
+disks or CD. These files can then be copied over the files in the tlbr_w95
+directory.
+
+To extract the Open.bmp file, open an MS-DOS command window, change to the drive
+that your installation disk resides in, and enter the following line: extract /a
+/e /l c:\temp vb4-1.cab open.bmp where c:\temp is the name of a temporary
+directory that the new copy of Open.bmp will be extracted to. The '/a' switch
+tells Extract.exe to search all .cab files for the file(s) specified.
+
+After pressing ENTER, Extract.exe starts searching, and finds and extracts the
+first copy of Open.bmp (which is already installed). It continues searching and
+finds the second copy, at which point it will ask if it's ok to overwrite
+Open.bmp. Choose OK and let Extract.exe finish up. The second version of
+Open.bmp now resides in the directory specified in the command. All that remains
+now is to copy it to the tlbr_w95 subdirectory. Repeat the same steps to extract
+the other version of Delete.bmp. For more information on Extract.exe enter
+'extract /?' at a command prompt.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Start Visual Basic, or if it is already running, choose New Project from the
+  File menu.
+
+2. Double-click twice on the Image button in the Toolbox to add two image
+  controls to the form. Move one of the image controls so both are visible.
+
+3. Change the Picture property of Image1 to:
+
+     &lt;path to your VB directory&gt;\bitmaps\outline\open.bmp
+
+4. Change the Picture property of Image2 to:
+
+     &lt;path to your VB directory&gt;\bitmaps\tlbr_w95\open.bmp
+
+The pictures in the two image controls should be different, but they're not.
+
+Manually extracting the second Open.bmp from the installation disks or CD will
+allow access to both bitmaps.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp400bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121387: Use of the %0\..\ Syntax in the Smsls.bat File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121387: Use of the %0\..\ Syntax in the Smsls.bat File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121387/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121387/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121387/","publisher":null,"image":null,"headline":"Q121387: Use of the %0\\..\\ Syntax in the Smsls.bat File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121387-use-of-the-0-syntax-in-the-smslsbat-file">Q121387: Use of the %0\..\ Syntax in the Smsls.bat File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121387
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbConfig smshowto smsconfig
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When programs are run from a logon script, and they are located in the NETLOGON
+share, the actual logon script can not determine what drive or path to execute
+the program from, and the NETLOGON share is not included in the MS-DOS path
+statement. To resolve this, Systems Management Server uses a little known
+feature of MS-DOS to determine the drive and path the script is running from.
+
+MORE INFORMATION
+================
+
+During a log on and when the logon script is running, the Lmscript.exe program
+runs its commands from the NETLOGON share. However, batch files have no way of
+determining where they are running from, and the current directory set by
+Lmscript.exe is not the NETLOGON share. As a workaround, Systems Management
+Server uses the %0\..\ path to indicate the argv[0] present when the batch file
+was run. The batch file can then refer to this path and determine its own
+location and look for other files there.
+
+An example of this can be found in the Slow Network detection portion of the
+Smsls.bat logon script file:
+
+     REM SNET_DOS
+     %0\..\netspeed
+     if not errorlevel 1 goto NET_DOS
+     if not errorlevel 2 goto END
+     if errorlevel 2 %0\..\choice /T:Y,30 Slow network detected. Continue
+     if not errorlevel 2 goto NET_DOS
+     goto END
+
+Prior to use of this technique, Systems Management Server was forced to use
+hard-coded drive Z to reference needed files. Now the drive used during a NET
+LOGON can be arbitrary, and dynamically determined.
+
+Additional query words: sms prodsms login
+
+======================================================================
+Keywords          : kbnetwork kbConfig smshowto smsconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141834/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141834/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141834/","publisher":null,"image":null,"headline":"Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141834-howto-change-icon-or-bitmap-of-clistctrl-item-when-selected">Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141834
+Product(s): Microsoft C Compiler
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbDocView kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 01-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+This article shows how to change the icon or bitmap of a CListCtrl item when it
+is selected.
+
+MORE INFORMATION
+================
+
+When you initialize the CListCtrl by calling CListCtrl::InsertItem(), you can
+pass in a value of I_IMAGECALLBACK for the index of the image. This means that
+the system expects you to fill in the image index when you get an
+LVN_GETDISPINFO notification. Inside of the handler for LVN_GETDISPINFO, you can
+check if the item is selected and set the appropriate image index.
+
+Sample Code
+-----------
+
+     BEGIN_MESSAGE_MAP(CTestView, CView)
+        //{{AFX_MSG_MAP(CTestView)
+        ON_WM_CREATE()
+        //}}AFX_MSG_MAP
+        ON_NOTIFY (LVN_GETDISPINFO, IDI_LIST, OnGetDispInfo)
+     END_MESSAGE_MAP()
+
+     int CTestView::OnCreate(LPCREATESTRUCT lpCreateStruct)
+     {
+        if (CView::OnCreate(lpCreateStruct) == -1)
+           return -1;
+
+        // m_pImage is a CTestView's member variable of type CImageList*
+        // create the CImageList with 16x15 images
+        m_pImage = new CImageList();
+        VERIFY (m_pImage-&gt;Create (16, 15, TRUE, 0, 1));
+        CBitmap bm;
+        // IDR_MAINFRAME is the toolbar bitmap in a default AppWizard
+        // project.
+        bm.LoadBitmap (IDR_MAINFRAME);
+        // This will automatically parse the bitmap into nine images.
+        m_pImage-&gt;Add (&amp;bm, RGB (192, 192, 192));
+
+        // m_pList is  CTestView's member variable of type CListCtrl*
+        // create the CListCtrl.
+        m_pList = new CListCtrl();
+        VERIFY (m_pList-&gt;Create (WS_VISIBLE | WS_CHILD | LVS_REPORT |
+            LVS_EDITLABELS, CRect (0, 0, 400, 400), this, IDI_LIST));
+        // Create column.
+        m_pList-&gt;InsertColumn (0, "Button Number", LVCFMT_LEFT, 100);
+        // Associate CImageList with CListCtrl.
+        m_pList-&gt;SetImageList (m_pImage, LVSIL_SMALL);
+
+        char szTemp[10];
+        for (int iCntr = 0; iCntr &lt; 9; iCntr++)
+        {
+           wsprintf (szTemp, "%d", iCntr);
+           m_pList-&gt;InsertItem (LVIF_IMAGE | LVIF_TEXT,
+              iCntr, szTemp, 0, 0, I_IMAGECALLBACK, 0L);
+        }
+        return 0;
+     }
+
+     void CTestView::OnGetDispInfo (NMHDR* pnmhdr, LRESULT* pResult)
+     {
+        LV_DISPINFO* pdi = (LV_DISPINFO *) pnmhdr;
+
+        // Fill in the LV_ITEM structure with the image info.
+        // When an item is selected, the image is set to the first
+        // image (the new bitmap on the toolbar).
+        // When it is not selected, the image index is equal to the
+        // item number (that is, 0=new, 1=open, 2=save, and so on.)
+        if (LVIS_SELECTED == m_pList-&gt;GetItemState (pdi-&gt;item.iItem,
+                           LVIS_SELECTED))
+           pdi-&gt;item.iImage = 0;
+        else
+           pdi-&gt;item.iImage = pdi-&gt;item.iItem;
+     }
+
+     CTestView::~CTestView()
+     {
+        // Clean up.
+        delete m_pImage;
+        delete m_pList;
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnCtrls kbDocView kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

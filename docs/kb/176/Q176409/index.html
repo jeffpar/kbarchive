@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176409/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176409/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176409/","publisher":null,"image":null,"headline":"Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176409-xadm-internet-newsgroup-public-folder-becomes-visible">Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176409
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Newsgroup public folder may become visible to clients in the
+organization after making the folder not visible from the Client Permission
+Property page inside of the Microsoft Exchange Administrator program.
+
+MORE INFORMATION
+================
+
+This can be caused either by:
+
+  Introducing an Exchange Server 5.0 site to the organization through directory
+  replication with the Internet Newsgroups public folder configured to be
+  visible, which is the default.
+
+  - or -
+
+  Installing an Exchange Server 5.0 computer into an existing Exchange Server
+  4.0 site which participates in directory replication with the organization.
+
+RESOLUTION
+==========
+
+Follow these steps to make the Internet Newsgroups public folder not visible to
+Exchange Clients:
+
+1. Connect to the new Exchange Server 5.0 computer from the Exchange
+  Administrator program.
+
+2. Expand the Folders object to expose the Public Folders hierarchy.
+
+3. Expand the Public Folders hierarchy and view the properties of the Internet
+  Newsgroups public folder.
+
+4. Click on the Client Permissions button and clear the "Folder Visible" check
+  box for the role of "Nonediting Author."
+
+This will hide the Internet Newsgroups public folder from your Exchange Clients
+in this site and other sites to which it replicates to throughout the
+organization.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

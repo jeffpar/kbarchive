@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196959: PRB:’Unspecified Error’ Err Using ADO Data Marshalling w/ DCOM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196959: PRB:’Unspecified Error’ Err Using ADO Data Marshalling w/ DCOM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196959/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196959/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196959/","publisher":null,"image":null,"headline":"Q196959: PRB:’Unspecified Error’ Err Using ADO Data Marshalling w/ DCOM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196959-prbunspecified-error-err-using-ado-data-marshalling-w-dcom">Q196959: PRB:’Unspecified Error’ Err Using ADO Data Marshalling w/ DCOM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q196959</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">2.0</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbADO200</span> <span class="n">kbDatabase</span> <span class="n">kbMTS</span> <span class="n">kbVBp</span> <span class="n">kbVBp600</span> <span class="n">kbGrpDSVBDB</span> <span class="n">kbGrpDSMDAC</span> <span class="n">kbDSupport</span> <span class="n">kbADO210sp2</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">23</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">ActiveX</span> <span class="n">Data</span> <span class="n">Objects</span> <span class="p">(</span><span class="n">ADO</span><span class="p">),</span> <span class="k">version</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">executing</span> <span class="n">an</span> <span class="n">ActiveX</span> <span class="n">Data</span> <span class="n">Objects</span> <span class="p">(</span><span class="n">ADO</span><span class="p">)</span> <span class="n">UpdateBatch</span> <span class="n">on</span> <span class="n">a</span> <span class="n">disconnected</span>
+<span class="n">recordset</span> <span class="n">through</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">remote</span><span class="p">)</span> <span class="k">or</span> <span class="n">Distributed</span> <span class="n">Component</span>
+<span class="n">Object</span> <span class="k">Model</span> <span class="p">(</span><span class="n">DCOM</span><span class="p">),</span> <span class="n">the</span> <span class="n">following</span> <span class="n">error</span> <span class="n">may</span> <span class="n">occur</span><span class="p">:</span>
+
+  <span class="n">Unspecified</span> <span class="n">Error</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">assign</span> <span class="n">a</span> <span class="n">date</span> <span class="n">value</span> <span class="k">in</span> <span class="n">a</span> <span class="n">recordset</span> <span class="k">with</span> <span class="n">quotes</span> <span class="n">around</span> <span class="n">it</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">get</span> <span class="n">an</span> <span class="s1">'Unspecified Error'</span> <span class="n">only</span> <span class="n">when</span> <span class="n">attempting</span> <span class="k">to</span> <span class="k">do</span> <span class="n">an</span> <span class="n">UpdateBatch</span> <span class="n">on</span> <span class="n">the</span>
+<span class="n">recordset</span> <span class="n">remotely</span><span class="p">.</span> <span class="n">This</span> <span class="n">problem</span> <span class="n">does</span> <span class="k">not</span> <span class="n">occur</span> <span class="k">if</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">component</span> <span class="n">is</span> <span class="n">running</span>
+<span class="n">on</span> <span class="n">the</span> <span class="n">same</span> <span class="n">computer</span> <span class="k">as</span> <span class="n">the</span> <span class="n">client</span> <span class="p">.</span><span class="n">exe</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">There</span> <span class="n">are</span> <span class="n">two</span> <span class="n">possible</span> <span class="n">workarounds</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Upgrade</span> <span class="n">both</span> <span class="n">the</span> <span class="n">server</span> <span class="k">and</span> <span class="n">the</span> <span class="n">client</span> <span class="k">to</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Objects</span> <span class="m">2.1</span>
+  <span class="n">Service</span> <span class="n">Pack</span> <span class="m">2</span> <span class="k">or</span> <span class="n">later</span><span class="p">.</span> <span class="n">The</span> <span class="s2">"Unspecified error"</span> <span class="n">does</span> <span class="k">not</span> <span class="n">occur</span> <span class="k">with</span> <span class="n">a</span> <span class="n">client</span>
+  <span class="k">and</span> <span class="n">a</span> <span class="n">server</span> <span class="n">both</span> <span class="n">using</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Objects</span> <span class="m">2.1</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">2</span> <span class="k">or</span>
+  <span class="n">later</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Put</span> <span class="p">#</span> <span class="n">signs</span> <span class="n">around</span> <span class="n">the</span> <span class="n">date</span> <span class="n">value</span> <span class="n">when</span> <span class="n">assigning</span> <span class="k">to</span> <span class="n">the</span> <span class="n">resultset</span> <span class="n">field</span><span class="p">.</span> <span class="n">For</span>
+  <span class="n">example</span><span class="p">,</span> <span class="n">rs</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="p">#</span><span class="m">12</span><span class="p">/</span><span class="m">31</span><span class="p">/</span><span class="m">9999</span><span class="p">#</span> <span class="n">instead</span> <span class="k">of</span> <span class="n">rs</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="s2">"12/31/9999."</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">products</span> <span class="n">that</span> <span class="n">are</span>
+<span class="n">listed</span> <span class="n">at</span> <span class="n">the</span> <span class="n">beginning</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">problem</span> <span class="n">has</span> <span class="n">been</span> <span class="n">fix</span> <span class="k">in</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Objects</span> <span class="m">2.1</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">2.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Steps</span> <span class="k">to</span> <span class="n">Reproduce</span> <span class="n">Behavior</span>
+<span class="p">---------------------------</span>
+
+<span class="n">The</span> <span class="n">steps</span> <span class="k">in</span> <span class="n">this</span> <span class="n">section</span> <span class="n">encompass</span> <span class="n">four</span> <span class="n">sections</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Creating</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">Server</span> <span class="n">table</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Creating</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">ActiveX</span> <span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Creating</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Standard</span> <span class="n">EXE</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Setting</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="n">Explorer</span><span class="p">.</span>
+
+<span class="n">Creating</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">Server</span> <span class="n">Table</span>
+<span class="p">-----------------------------</span>
+
+<span class="m">1.</span> <span class="n">Start</span> <span class="n">ISQL_w</span> <span class="k">and</span> <span class="n">execute</span> <span class="n">the</span> <span class="n">following</span> <span class="n">script</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">the</span> <span class="n">test</span> <span class="n">table</span> <span class="n">for</span>
+  <span class="n">the</span> <span class="n">ADO</span> <span class="n">sample</span> <span class="n">code</span><span class="p">.</span> <span class="n">After</span> <span class="n">executing</span> <span class="n">the</span> <span class="n">script</span> <span class="n">you</span> <span class="n">may</span> <span class="n">close</span> <span class="n">ISQL_w</span><span class="p">:</span>
+
+        <span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">dbo</span><span class="p">.</span><span class="n">TestTable_SN</span>
+        <span class="p">(</span>
+           <span class="n">col1</span> <span class="n">varchar</span> <span class="p">(</span><span class="m">25</span><span class="p">)</span> <span class="k">NOT</span> <span class="n">NULL</span> <span class="n">DEFAULT</span> <span class="p">(</span><span class="n">user_name</span><span class="p">()),</span>
+           <span class="n">col2</span> <span class="n">datetime</span> <span class="k">NOT</span> <span class="n">NULL</span> <span class="n">DEFAULT</span> <span class="p">(</span><span class="nf">getdate</span><span class="p">())</span>
+        <span class="p">)</span>
+        <span class="n">GO</span>
+
+<span class="n">Start</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="k">and</span> <span class="n">Create</span> <span class="n">an</span> <span class="n">ActiveX</span> <span class="n">DLL</span> <span class="n">Project</span>
+<span class="p">----------------------------------------------------</span>
+
+<span class="m">1.</span> <span class="k">From</span> <span class="n">the</span> <span class="n">Project</span> <span class="n">menu</span><span class="p">,</span> <span class="n">choose</span> <span class="n">References</span> <span class="k">and</span> <span class="n">select</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span>
+  <span class="n">Objects</span> <span class="m">2.0</span> <span class="n">Library</span> <span class="k">and</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Objects</span> <span class="n">Recordset</span> <span class="m">2.0</span>
+  <span class="n">Library</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Paste</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span> <span class="k">in</span> <span class="n">the</span> <span class="p">&lt;</span><span class="n">Class</span><span class="p">&gt;</span> <span class="n">for</span> <span class="n">the</span> <span class="n">project</span><span class="p">:</span>
+
+        <span class="n">Private</span> <span class="n">strSQL</span> <span class="k">As</span> <span class="k">String</span>
+        <span class="n">Private</span> <span class="n">strConnect</span> <span class="k">As</span> <span class="k">String</span>
+        <span class="n">Dim</span> <span class="n">ADOCn</span> <span class="k">As</span> <span class="n">ADODB</span><span class="p">.</span><span class="n">Connection</span>
+
+        <span class="k">Public</span> <span class="k">Function</span> <span class="n">GetData</span><span class="p">()</span> <span class="k">As</span> <span class="n">ADOR</span><span class="p">.</span><span class="n">Recordset</span>
+         <span class="k">If</span> <span class="k">Not</span> <span class="n">ADOCn</span> <span class="n">Is</span> <span class="n">Nothing</span> <span class="k">Then</span>
+          <span class="k">Else</span>
+           <span class="n">Err</span><span class="p">.</span><span class="n">Raise</span> <span class="n">vbObjectError</span> <span class="p">+</span> <span class="m">98</span><span class="p">,</span> <span class="s2">"ADOGetData"</span><span class="p">,</span> <span class="s2">"No valid Connection"</span>
+          <span class="k">End</span> <span class="k">If</span>
+          <span class="n">Dim</span> <span class="n">ADORs</span> <span class="k">As</span> <span class="n">ADOR</span><span class="p">.</span><span class="n">Recordset</span>
+          <span class="k">Set</span> <span class="n">ADORs</span> <span class="p">=</span> <span class="n">New</span> <span class="n">ADOR</span><span class="p">.</span><span class="n">Recordset</span>
+          <span class="k">With</span> <span class="n">ADORs</span>
+             <span class="p">.</span><span class="n">CursorLocation</span> <span class="p">=</span> <span class="n">adUseClient</span>
+             <span class="p">.</span><span class="n">ActiveConnection</span> <span class="p">=</span> <span class="n">ADOCn</span>
+             <span class="p">.</span><span class="n">CursorType</span> <span class="p">=</span> <span class="n">adOpenForwardOnly</span>
+             <span class="p">.</span><span class="n">LockType</span> <span class="p">=</span> <span class="n">adLockBatchOptimistic</span> <span class="s1">'batch updates.
+             .Open strSQL
+          End With
+
+           '</span><span class="nf">DisConnect</span> <span class="n">the</span> <span class="n">Recordset</span> <span class="k">from</span> <span class="n">the</span> <span class="n">connection</span><span class="p">.</span>
+          <span class="k">Set</span> <span class="n">ADORs</span><span class="p">.</span><span class="n">ActiveConnection</span> <span class="p">=</span> <span class="n">Nothing</span>
+          <span class="k">Set</span> <span class="n">GetData</span> <span class="p">=</span> <span class="n">ADORs</span>
+          <span class="k">Set</span> <span class="n">ADORs</span> <span class="p">=</span> <span class="n">Nothing</span>
+        <span class="k">End</span> <span class="k">Function</span>
+
+        <span class="n">Private</span> <span class="n">Property</span> <span class="n">Get</span> <span class="n">ConnectStr</span><span class="p">()</span> <span class="k">As</span> <span class="k">String</span>
+            <span class="n">ConnectStr</span> <span class="p">=</span> <span class="n">strConnect</span>
+        <span class="k">End</span> <span class="n">Property</span>
+
+        <span class="n">Private</span> <span class="n">Property</span> <span class="n">Let</span> <span class="n">ConnectStr</span><span class="p">(</span><span class="n">strCn</span> <span class="k">As</span> <span class="k">String</span><span class="p">)</span>
+          <span class="n">strConnect</span> <span class="p">=</span> <span class="n">strCn</span>
+        <span class="k">End</span> <span class="n">Property</span>
+
+        <span class="k">Public</span> <span class="n">Property</span> <span class="n">Get</span> <span class="n">SQL</span><span class="p">()</span> <span class="k">As</span> <span class="k">String</span>
+          <span class="n">SQL</span> <span class="p">=</span> <span class="n">strSQL</span>
+        <span class="k">End</span> <span class="n">Property</span>
+
+        <span class="k">Public</span> <span class="n">Property</span> <span class="n">Let</span> <span class="n">SQL</span><span class="p">(</span><span class="n">nSQL</span> <span class="k">As</span> <span class="k">String</span><span class="p">)</span>
+          <span class="n">strSQL</span> <span class="p">=</span> <span class="n">nSQL</span>
+        <span class="k">End</span> <span class="n">Property</span>
+
+        <span class="k">Public</span> <span class="n">Sub</span> <span class="n">UpdateRS</span><span class="p">(</span><span class="n">ByVal</span> <span class="n">ClientRs</span> <span class="k">As</span> <span class="n">ADOR</span><span class="p">.</span><span class="n">Recordset</span><span class="p">)</span>
+            <span class="n">Dim</span> <span class="n">ADORs</span> <span class="k">As</span> <span class="n">New</span> <span class="n">ADOR</span><span class="p">.</span><span class="n">Recordset</span>
+            <span class="k">If</span> <span class="k">Not</span> <span class="n">ADOCn</span> <span class="n">Is</span> <span class="n">Nothing</span> <span class="k">Then</span>
+            <span class="k">Else</span>
+             <span class="n">Err</span><span class="p">.</span><span class="n">Raise</span> <span class="n">vbObjectError</span> <span class="p">+</span> <span class="m">99</span><span class="p">,</span> <span class="s2">"ADOUpdate"</span><span class="p">,</span> <span class="s2">"No valid Connection"</span>
+            <span class="k">End</span> <span class="k">If</span>
+            <span class="n">ADORs</span><span class="p">.</span><span class="n">ActiveConnection</span> <span class="p">=</span> <span class="n">strConnect</span>
+            <span class="n">ADORs</span><span class="p">.</span><span class="n">Open</span> <span class="n">ClientRs</span>
+            <span class="n">ADORs</span><span class="p">.</span><span class="n">UpdateBatch</span>
+
+        <span class="k">End</span> <span class="n">Sub</span>
+
+        <span class="k">Public</span> <span class="n">Sub</span> <span class="n">ADOConnect</span><span class="p">(</span><span class="n">strConnect</span> <span class="k">As</span> <span class="k">String</span><span class="p">,</span> <span class="n">Optional</span> <span class="n">CnTimeOut</span> <span class="k">As</span> <span class="n">_</span>
+            <span class="k">Integer</span> <span class="p">=</span> <span class="m">20</span><span class="p">)</span>
+           <span class="k">Set</span> <span class="n">ADOCn</span> <span class="p">=</span> <span class="n">New</span> <span class="n">ADODB</span><span class="p">.</span><span class="n">Connection</span>
+           <span class="k">With</span> <span class="n">ADOCn</span>
+              <span class="p">.</span><span class="n">Provider</span> <span class="p">=</span> <span class="s2">"MSDASQL"</span>  <span class="s1">'"SQLOLEDB"
+              .CursorLocation = adUseClient
+              .ConnectionString = strConnect
+              .CommandTimeout = CnTimeOut
+              .Open
+           End With
+           ConnectStr = ADOCn
+         End Sub
+
+3. Rename the Class to ADOData.
+
+4. Rename the Project to ADOProc.
+
+5. Compile the project and an ActiveX DLL named ADOProc.dll will be created and
+  registered.
+
+Creating a New Standard EXE Project to Call the DLL
+---------------------------------------------------
+
+1. Open a new project and create a Standard EXE application.
+
+2. From the Project menu, choose References and select the Microsoft Data Access
+  Objects 2.0 Library and the Microsoft Data Access Objects Recordset 2.0
+  Library and ADOProc.
+
+3. Add a Command button to the form.
+
+4. Add a text box to the form and change the name to txtValue.
+
+5. Paste the following code into the General Declarations section of the form:
+
+NOTE: You may need to change the connect string to work in your environment.
+
+        Const strConnect = "Driver={SQL _
+           Server};Server=(local);Database=Pubs;Uid=Sa;Pwd="
+
+        Private Sub Command1_Click()
+           On Error GoTo ErrorHandler
+
+           Dim ADORs As ADOR.Recordset
+           Dim objADOData As ADOProc.ADOData
+           Dim rField As ADODB.Field
+           Dim iValue As Byte
+
+           '</span> <span class="n">Instantiate</span> <span class="n">the</span> <span class="n">Data</span> <span class="n">Object</span><span class="p">.</span>
+           <span class="k">Set</span> <span class="n">objADOData</span> <span class="p">=</span> <span class="n">New</span> <span class="n">ADOProc</span><span class="p">.</span><span class="n">ADOData</span>
+           <span class="k">With</span> <span class="n">objADOData</span>
+              <span class="p">.</span><span class="n">SQL</span> <span class="p">=</span> <span class="s2">"SELECT * FROM TestTable_SN"</span>
+              <span class="p">.</span><span class="n">ADOConnect</span> <span class="n">strConnect</span><span class="p">,</span> <span class="m">15</span> <span class="s1">'Establish connection.
+           End With
+
+           Set ADORs = New ADOR.Recordset
+           '</span> <span class="n">Rtrn</span> <span class="n">the</span> <span class="n">Resultset</span> <span class="k">from</span> <span class="n">Data</span> <span class="n">object</span><span class="p">.</span>
+           <span class="k">Set</span> <span class="n">ADORs</span> <span class="p">=</span> <span class="n">objADOData</span><span class="p">.</span><span class="n">GetData</span>
+           <span class="s1">' The Resultset is disConnected at this point.
+
+           ADORs.AddNew
+
+           '</span> <span class="n">Fails</span> <span class="p">(</span><span class="n">Remotely</span> <span class="p">-</span> <span class="n">DCOM</span><span class="p">)</span> <span class="k">if</span> <span class="n">quotes</span> <span class="n">around</span> <span class="n">the</span>
+           <span class="s1">' Date value instead of pound sign.
+           ADORs(0) = App.EXEName
+           ADORs(1) = #12/12/98#
+
+           ADORs.MarshalOptions = adMarshalModifiedOnly
+           objADOData.UpdateRS ADORs
+           MsgBox "Data Changed", vbOKOnly, "Data Object"
+         Exit Sub
+
+         ErrorHandler:
+         MsgBox "Change Failed:" &amp; vbCrLf &amp; Err.Number &amp; vbCrLf &amp; _
+           Err.Description, vbOKOnly, "Data Object"
+         Debug.Print Err.Number &amp; vbCrLf &amp; Err.Description
+         Exit Sub
+         End Sub
+
+Setting up Microsoft Transaction Server Explorer
+------------------------------------------------
+
+1. Compile the Client application (the Standard EXE) and build a setup/install
+  package with the Application Setup Wizard in Visual Basic 5.0 and the Package
+  and Deployment Wizard for Visual Basic 6.0.
+
+  NOTE: For more information about using these, please refer to the Online help.
+
+2. Copy the install/setup program for the Client application to the remote
+  computer and run the install.
+
+3. On the server, start Microsoft Transaction Server Explorer.
+
+4. Navigate to Microsoft Transaction Server, Computers, My Computer, Packages
+  Installed.
+
+5. Right-click Packages Installed and select New Package.
+
+6. Create a new Empty Package, enter a name for the package, click Next twice,
+  then click Finish.
+
+7. Navigate to your new package by name then navigate to the Component folder.
+
+8. Click Component then right-click Component. Select New-Component then choose
+  "Import Components that are already Registered."
+
+9. Scroll down to the ADOProc.ADOData component and click Finish.
+
+10. Export the package to the second computer by right-clicking the Package
+  folder (for your new package) and selecting Export.
+
+11. Browse to the computer to export the package and then name the exported
+  package.
+
+12. On the client computer (where you exported the package), run the client
+  Setup .exe to install/register the package on the remote client.
+
+13. When the Client application is installed run the application and you should
+  not see any errors.
+
+14. Change the Client application to see the error by modifying the Visual Basic
+  code as indicated in the source. That is, put quotes around the date value
+  and recompile the Client application. Next, copy the client EXE file to the
+  remote computer and rerun it. You should see an '</span><span class="n">Unspecified</span> <span class="n">Error</span><span class="s1">' error
+  message this time.
+
+NOTE: The only difference in the code is the # signs around the date value.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q186342 HOWTO: Create a 3-Tier App using VB, MTS and SQL Server
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADO200 kbDatabase kbMTS kbVBp kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2fix kbATM 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO200 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :2.0,5.0,6.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247774: XADM: MSExchangeIS (306) Error in Event Log with Antivirus Use | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247774: XADM: MSExchangeIS (306) Error in Event Log with Antivirus Use" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247774/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247774/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247774/","publisher":null,"image":null,"headline":"Q247774: XADM: MSExchangeIS (306) Error in Event Log with Antivirus Use","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247774-xadm-msexchangeis-306-error-in-event-log-with-antivirus-use">Q247774: XADM: MSExchangeIS (306) Error in Event Log with Antivirus Use</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247774
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an antivirus program on a computer running Microsoft Windows NT
+Server 4.0 Service Pack 3 and Microsoft Exchange Server 5.5, the following error
+message may appear in the application log of Event Viewer:
+
+  Event ID: 0
+  Source: ESE97
+  Category: Performance
+  Description: MSExchangeIS (306) Unexpected Windows NT API error. 0xC000000D
+
+CAUSE
+=====
+
+This behavior can be caused by a virus protection program, especially when it is
+not a program built to recognize Exchange Server processes. The program may
+install a file system filter that prevents a JET engine from addressing database
+files.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the two following procedures:
+
+- Remove the antivirus software, and then restart the server. (Disabling the
+  antivirus program is not sufficient.)
+
+  -or-
+
+- Install a Windows NT hotfix that is part of the roll-up hotfixes recommended
+  in the Readme.doc file for Microsoft Exchange Server 5.5. These hotfixes are
+  available at:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postSP3/roll-up/
+
+  NOTE: If you later reinstall Windows NT service packs, you must also reinstall
+  the hotfixes, regardless of your responses to the Overwrite Newer Files
+  prompts during the service pack installation.
+
+MORE INFORMATION
+================
+
+This error can occur when you install Norton NT Tools version 1.0. Disabling the
+Norton program does not work; you must remove it.
+
+Use of Omtool Fax Senior version 2.5 also produces this error, with an internal
+ID of 2030148. The hotfix noted above also corrects this problem.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q174746 XADM: Err Msg: Unexpected NT API Error: 0xC000000D
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

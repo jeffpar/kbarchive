@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161812: TN3270 Server Does Not Send All Data to Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161812: TN3270 Server Does Not Send All Data to Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161812/","publisher":null,"image":null,"headline":"Q161812: TN3270 Server Does Not Send All Data to Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161812-tn3270-server-does-not-send-all-data-to-host">Q161812: TN3270 Server Does Not Send All Data to Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161812
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a TN3270 emulator submits data to the TN3270 Server, the TN3270 Server does
+not transfer all of the data to the host. The TN3270 emulator session stays
+intact. The host application may complain that not all of the data was sent, and
+sends any errors as data to the receiving application.
+
+CAUSE
+=====
+
+The problem is caused by the TN3270 Server's logic for handling SYSREQ requests.
+In TN3270, one way for a TN3270 client to send a SYSREQ request is to send an
+SNA TESTREQ key value 0x01. (Note: TESTREQ/SYSREQ are normally 0xF0. However,
+the original specification for TN3270 did not specify what message a TN3270
+client should send when the user press the TESTREQ/SYSREQ key, so different
+vendors implemented it in different ways.) The TN3270 Server has logic to spot
+this key as the first byte of an RU, and not to send it to the host, but instead
+to send a SYSREQ request. However, this code should have been looking for a
+TESTREQ as the first byte of a chain, not the first byte of an RU. In this case,
+one of the subsequent RUs in the chain began with 0x01 and the TN3270 Server
+treated this as a TESTREQ key and ended the chain (EC) when it should not have.
+
+NOTE: Splitting a chain into RUs is arbitrary, so there is no significance to
+where the split occurs.
+
+This problem is seen when chunks of data are larger than the RU size supported
+for the session, and the chunks need to be split up. The chunk size (chain size)
+is controlled by the Structured Field Size, configurable in some TN3270
+emulators. The RU size is controlled by the primary half session's bind image
+(byte 10).
+
+The following is a sample trace that shows the problem:
+
+Beginning of Chain (BC):
+
+|000000c9.000000ca DLC    ----------------------------------------------
+17:06:52.39
+|000000c9.000000ca DLC    01020101-&gt;0A160080 DLC DATA
+|000000c9.000000ca DLC                       DAF:01 OAF:03 ODAI:off Normal
+|000000c9.000000ca DLC                       RQE FMD BC DR1 BB
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Header  at address 00CC4620, 4 elements ---
+-
+|000000c9.000000ca DLC    00050004 00032C00 01030068 0100E800
+&lt;......,....h..Y.&gt;
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Element at address 011BCA3C, start 10, end
+268 ----
+|000000c9.000000ca DLC    02908088 ...etc
+
+Middle Chain (MC):
+
+|000000c9.000000ca DLC    ----------------------------------------------
+17:06:52.59
+|000000c9.000000ca DLC    01020101-&gt;0A160080 DLC DATA
+|000000c9.000000ca DLC                       DAF:01 OAF:03 ODAI:off Normal
+|000000c9.000000ca DLC                       RQE FMD MC DR1
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Header  at address 00CC444C, 4 elements ---
+-
+|000000c9.000000ca DLC    00050004 40032C00 01030069 0100E800
+&lt;....@.,....i..Y.&gt;
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Element at address 011BD7EC, start 10, end
+268 ----
+|000000c9.000000ca DLC    009000FF ...etc
+
+More middle chains flow...
+
+End Chain (EC)
+
+|000000c9.000000ca DLC    ----------------------------------------------
+17:06:54.79
+|000000c9.000000ca DLC    01020101-&gt;0A160080 DLC DATA
+|000000c9.000000ca DLC                       DAF:01 OAF:03 ODAI:off Normal
+|000000c9.000000ca DLC                       RQE FMD EC DR1 CD
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Header  at address 00CC46F0, 4 elements ---
+-
+|000000c9.000000ca DLC    00050400 00032C00 01030072 0100E800
+&lt;......,....r..Y.&gt;
+|000000c9.000000ca DLC
+|000000c9.000000ca DLC    ---- Element at address 011BE7E4, start 10, end
+268 ----
+|000000c9.000000ca DLC    01902001 ...etc
+                               ^^ - This is the TESTREQ key.
+
+The SYSREQ and TESTREQ AID bytes are found in the "IBM 3270 Information Display
+System" reference (Part #: GA23-0061-2).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below. With this hotfix,
+the TN3270 Server now looks for TESTREQ as the first byte of a chain instead of
+an RU.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 3.0. This problem was corrected in the latest Microsoft SNA Server
+2.11 and 3.0 U.S. Service Packs. For information on obtaining these service
+packs, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+A supported fix is now available for version 2.11 Service Pack 1, but has not
+been fully regression-tested and should be applied only to systems experiencing
+this specific problem. Unless you are severely impacted by this specific
+problem, Microsoft recommends that you wait for the next Service Pack that
+contains this fix. Contact Microsoft Technical Support for more information.
+
+
+Additional query words: prodsna 2.00 2.10 2.11 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

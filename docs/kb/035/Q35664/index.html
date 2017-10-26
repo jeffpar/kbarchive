@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35664: Create Your Own Non-ASCII Graphics Characters in CGA Graphics | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35664: Create Your Own Non-ASCII Graphics Characters in CGA Graphics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35664/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35664/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35664/","publisher":null,"image":null,"headline":"Q35664: Create Your Own Non-ASCII Graphics Characters in CGA Graphics","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35664-create-your-own-non-ascii-graphics-characters-in-cga-graphics">Q35664: Create Your Own Non-ASCII Graphics Characters in CGA Graphics</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35664
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 16-DEC-1989
+
+The program below demonstrates how to create your own non-ASCII
+characters for use in CGA screens 1 and 2. This way you can make
+characters such as 1/3, or foreign letters and symbols not found in
+the ASCII or extended-ASCII character set.
+
+This information applies to Microsoft QuickBASIC Versions 4.00 4.00b
+and 4.50, to Microsoft BASIC Compiler Versions 6.00 and 6.00b for
+MS-DOS, and to Microsoft BASIC PDS Version 7.00 for MS-DOS.
+
+In graphics mode, the bit patterns for ASCII character codes 128
+through 255 are obtained from a table located in RAM. The address of
+this table is located in the Interrupt Vector Table at location
+0000:007C (the vector for interrupt 1F). This location can be modified
+to install modified character sets. Note, that on a standard IBM PC or
+compatible, ASCII characters 0 through 127 are contained in the ROM
+BIOS and cannot be replaced. (The IBM PCjr, which is not supported by
+QuickBASIC, handles these characters differently.)
+
+To create your own character set, you would create a table of
+characters and replace the current address in the Interrupt Vector
+Table with the address of your table. Keep in mind that the segment
+and offset are stored "backwards" in the table. The following example
+
+   F000: FF54
+
+would be stored as follows:
+
+   54 FF 00 F0
+
+The information stored in the table should be an 8 x 8 bitmap for each
+character desired. For example, the following character would be
+represented by the following eight decimal values:
+
+Character         Decimal Value
+---------         -------------
+
+11110000              240
+10010000              144
+10010000              144
+11111110              254
+10010010              146
+10010010              146
+10011110              158
+00000000                0
+
+The decimal value is the binary value for each line converted to
+decimal.
+
+Code Example:
+------------
+
+The three DATA statements hold the binary coding for the characters to
+be represented. They are a small triangle, a sigma, and a 1/3. In
+binary, the data looks like the following:
+
+Triangle          Sigma             1/3
+--------          -----             ---
+
+00000010        11111110          10000100
+00000110        00100000          10001000
+00001110        00010000          10011110
+00011110        00001000          10100010
+00111110        00010000          01000110
+01111110        00100000          10000010
+11111110        11111110          00001110
+00000000        00000000          00000000
+
+DATA 2,6,14,30,62,126,254,0
+DATA 254,64,32,16,32,64,254,0
+DATA 132,136,158,162,70,130,14,0
+
+DIM table(100)
+COMMON SHARED table()
+
+location = VARPTR(table(0))
+segment = VARSEG(table(0))
+
+DEF SEG = 0: SCREEN 1
+  A = PEEK(124)         'Save this information and restore it when done.
+  B = PEEK(125)
+  C = PEEK(126)
+  D = PEEK(127)
+  POKE 124, location MOD 256 'This is where the address of the graphics
+  POKE 125, location \ 256   'screen characters are stored. The program
+  POKE 126, segment MOD 256  'changes this so now it thinks the graphics
+  POKE 127, segment \ 256    'characters are stored in the table() array.
+DEF SEG
+
+FOR I = 1 TO 24
+   READ A%                   'Place the created characters into the new
+   POKE location + I, A%     'graphics table
+NEXT I
+
+FOR I = 128 TO 130           'Print the new characters out.
+   PRINT CHR$(I) + " ";
+NEXT
+
+DEF SEG = 0             'Restore to the original graphics character set.
+  POKE 124, A
+  POKE 125, B
+  POKE 126, C
+  POKE 127, D
+DEF SEG
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

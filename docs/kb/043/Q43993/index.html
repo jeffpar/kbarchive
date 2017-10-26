@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43993: How to Flush the Keyboard Typeahead Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43993: How to Flush the Keyboard Typeahead Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43993/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43993/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43993/","publisher":null,"image":null,"headline":"Q43993: How to Flush the Keyboard Typeahead Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43993-how-to-flush-the-keyboard-typeahead-buffer">Q43993: How to Flush the Keyboard Typeahead Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43993
+Product(s): Microsoft Programming Utilities
+Version(s): 1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for OS/2, versions 5.1, 6.0, 6.0a 
+- Microsoft C/C++ for MS-DOS, version 7.0 
+- Microsoft Visual C++, versions 1.0, 1.5 
+- Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To flush the BIOS keyboard typeahead buffer, the MS-DOS Interrupt 21 Function
+0CH may be used. This function clears the keyboard typeahead buffer and then
+invokes a reading function specified in the AL register. The AL register can be
+0x01, 0x06, 0x07, 0x08, or 0x0A to specify a valid reading function. If you do
+not intend to read after flushing the buffer, you may specify an invalid number
+in AL.
+
+Another method of flushing the BIOS buffer is to call the console I/O function
+getch() until the function kbhit() becomes false. This method is demonstrated in
+the program below and has the advantage of being usable under OS/2 as well as
+MS-DOS.
+
+MORE INFORMATION
+================
+
+The buffer implemented by the C run-time functions for the stream "stdin" is
+different from the BIOS keyboard typeahead buffer. To clear the buffer for
+stdin, use the function fflush(). However, this method will not flush the BIOS
+buffer. To be totally flushed, you must both flush the BIOS buffer as described
+above AND call fflush for stdin.
+
+The following sample program is an example:
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+  #include &lt;stdio.h&gt;
+  #include &lt;time.h&gt;
+  #include &lt;conio.h&gt;
+  #include &lt;dos.h&gt;
+  void main (void)
+  {
+  time_t start, work ;
+  char str [50] ;
+  puts ("type for getchar(). Go to stdin's buffer.") ;
+  // user can type more than one character and an Enter.
+  getchar () ;
+  puts ("Type fast, 5 seconds. Go to BIOS buffer.") ;
+  // user can type anything including multiple Enters.
+  time (&amp;start) ;
+  work = start ;
+  while ( (work - start) &lt; 5 ) time (&amp;work) ;
+  bdos (0xC, 0, 0) ;       // clear BIOS keyboard buffer
+  //  Alternative method:
+  //  while (kbhit()) getch();
+  fflush (stdin) ;         // clear stdin's buffer
+  puts ("Should be waiting again.") ;
+  gets (str) ;
+  puts (str) ;
+  }
+
+Additional query words: kbinf 5.10 6.00 6.00a 6.00ax 7.00 1.00 1.50
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbPTProdChange kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbCComp510DOS kbCComp600DOS kbCComp600aDOS kbCComp600axDOS kbCComp510OS2 kbCComp600OS2 kbCComp600aOS2 kbCVC700DOS
+Version           : :1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

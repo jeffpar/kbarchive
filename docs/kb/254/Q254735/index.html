@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254735: SMS: How to Clean Up Duplicate Computer IDs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254735: SMS: How to Clean Up Duplicate Computer IDs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254735/","publisher":null,"image":null,"headline":"Q254735: SMS: How to Clean Up Duplicate Computer IDs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254735-sms-how-to-clean-up-duplicate-computer-ids">Q254735: SMS: How to Clean Up Duplicate Computer IDs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q254735</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbClient</span> <span class="n">kbConfig</span> <span class="n">kbDatabase</span> <span class="n">kbsms200</span> <span class="n">kbCollections</span> <span class="n">kbInventory</span> <span class="n">kbQuery</span> <span class="n">kbsmsAdmin</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">find</span> <span class="k">and</span> <span class="n">clean</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="m">2.0</span> <span class="n">clients</span> <span class="n">that</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">unique</span> <span class="n">identifier</span><span class="p">.</span> <span class="n">The</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="n">Unique</span> <span class="n">ID</span> <span class="n">property</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">distinguish</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="n">clients</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="n">important</span> <span class="n">that</span> <span class="n">this</span> <span class="n">value</span> <span class="n">stay</span> <span class="n">unique</span> <span class="n">for</span> <span class="n">each</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">may</span> <span class="n">have</span> <span class="n">duplicate</span> <span class="n">IDs</span> <span class="k">in</span> <span class="n">your</span> <span class="n">environment</span> <span class="k">if</span> <span class="n">you</span> <span class="s2">"clone"</span> <span class="n">workstations</span> <span class="n">that</span>
+<span class="n">have</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">client</span> <span class="n">installed</span> <span class="k">or</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span> <span class="n">remnants</span> <span class="k">from</span>
+<span class="n">a</span> <span class="n">previous</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">client</span> <span class="n">installation</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="k">or</span>
+<span class="n">Smscfg</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span><span class="p">).</span>
+
+<span class="n">Duplicate</span> <span class="n">IDs</span> <span class="n">can</span> <span class="n">cause</span> <span class="n">behaviors</span> <span class="n">such</span> <span class="k">as</span> <span class="n">high</span> <span class="n">central</span> <span class="n">processing</span> <span class="n">unit</span> <span class="p">(</span><span class="n">CPU</span><span class="p">)</span>
+<span class="n">usage</span><span class="p">,</span> <span class="n">incorrect</span> <span class="n">inventory</span> <span class="n">reporting</span><span class="p">,</span> <span class="n">advertisements</span> <span class="nf">run</span> <span class="n">by</span> <span class="n">the</span> <span class="n">wrong</span> <span class="n">clients</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">other</span> <span class="n">unexpected</span> <span class="n">events</span><span class="p">.</span> <span class="k">To</span> <span class="n">help</span> <span class="n">avoid</span> <span class="n">these</span> <span class="n">behaviors</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">important</span> <span class="k">to</span>
+<span class="n">clean</span> <span class="n">up</span> <span class="n">duplicate</span> <span class="n">IDs</span> <span class="k">as</span> <span class="n">soon</span> <span class="k">as</span> <span class="n">possible</span> <span class="k">if</span> <span class="n">you</span> <span class="n">encounter</span> <span class="n">them</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">To</span> <span class="n">determine</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span> <span class="n">duplicate</span> <span class="n">IDs</span><span class="p">,</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">query</span>
+<span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">following</span> <span class="n">sample</span> <span class="n">query</span><span class="p">:</span>
+
+  <span class="n">select</span> <span class="p">*</span> <span class="k">from</span> <span class="n">sms_g_system_SYSTEM</span> <span class="k">as</span> <span class="n">g</span> <span class="n">INNER</span> <span class="n">JOIN</span> <span class="n">sms_gh_system_SYSTEM</span> <span class="k">as</span> <span class="n">h</span>
+  <span class="n">on</span> <span class="n">g</span><span class="p">.</span><span class="n">ResourceId</span> <span class="p">=</span> <span class="n">h</span><span class="p">.</span><span class="n">ResourceId</span> <span class="n">where</span> <span class="n">g</span><span class="p">.</span><span class="n">Name</span> <span class="p">&lt;&gt;</span> <span class="n">h</span><span class="p">.</span><span class="n">Name</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="nf">run</span> <span class="n">this</span> <span class="n">query</span><span class="p">,</span> <span class="n">you</span> <span class="n">see</span> <span class="n">all</span> <span class="k">of</span> <span class="n">the</span> <span class="n">different</span> <span class="n">computer</span> <span class="n">names</span> <span class="n">that</span> <span class="n">are</span>
+<span class="n">using</span> <span class="n">the</span> <span class="n">same</span> <span class="n">ID</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">multiple</span><span class="p">-</span><span class="n">boot</span> <span class="n">clients</span> <span class="k">or</span> <span class="n">clients</span> <span class="n">that</span> <span class="n">have</span> <span class="n">been</span>
+<span class="n">renamed</span> <span class="n">also</span> <span class="n">appear</span> <span class="k">as</span> <span class="n">duplicates</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">find</span> <span class="n">the</span> <span class="n">duplicates</span><span class="p">,</span> <span class="n">allocate</span> <span class="n">a</span> <span class="n">new</span>
+<span class="n">ID</span> <span class="k">to</span> <span class="n">these</span> <span class="n">workstations</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span> <span class="n">two</span> <span class="n">methods</span> <span class="n">for</span> <span class="n">allocating</span> <span class="n">a</span> <span class="n">new</span> <span class="n">ID</span> <span class="k">to</span> <span class="n">a</span>
+<span class="n">client</span><span class="p">.</span>
+
+<span class="n">Manual</span> <span class="n">Method</span>
+<span class="p">-------------</span>
+
+<span class="k">To</span> <span class="n">manually</span> <span class="n">clean</span> <span class="n">up</span> <span class="n">a</span> <span class="n">client</span><span class="p">,</span> <span class="nf">run</span> <span class="n">the</span> <span class="m">20</span><span class="n">clicln</span><span class="p">.</span><span class="n">bat</span> <span class="n">file</span> <span class="k">to</span> <span class="n">uninstall</span> <span class="n">the</span> <span class="n">Systems</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="n">client</span><span class="p">.</span> <span class="n">When</span> <span class="n">this</span> <span class="n">process</span> <span class="n">is</span> <span class="n">finished</span><span class="p">,</span> <span class="n">delete</span> <span class="n">any</span> <span class="n">instance</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="k">or</span> <span class="n">Smscfg</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">workstation</span><span class="p">.</span> <span class="n">After</span> <span class="n">this</span> <span class="n">is</span> <span class="n">complete</span><span class="p">,</span>
+<span class="n">reinstall</span> <span class="n">the</span> <span class="n">client</span> <span class="n">by</span> <span class="n">using</span> <span class="n">normal</span> <span class="n">installation</span> <span class="n">methods</span><span class="p">.</span> <span class="n">A</span> <span class="n">new</span> <span class="n">ID</span> <span class="n">will</span> <span class="n">be</span>
+<span class="n">allocated</span> <span class="k">to</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="n">BR</span><span class="p">/&gt;</span>
+<span class="n">The</span> <span class="k">version</span> <span class="k">of</span> <span class="m">20</span><span class="n">CliCln</span><span class="p">.</span><span class="n">bat</span> <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">downloaded</span> <span class="k">as</span> <span class="n">part</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SP2</span> <span class="n">support</span>
+<span class="n">tools</span> <span class="n">can</span> <span class="n">be</span> <span class="nf">run</span> <span class="k">with</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">switch</span> <span class="k">of</span> <span class="p">/</span><span class="n">scrub</span> <span class="n">which</span> <span class="n">removes</span> <span class="n">the</span>
+<span class="n">Smscfg</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span> <span class="k">and</span> <span class="n">enable</span> <span class="n">a</span> <span class="n">creation</span> <span class="k">of</span> <span class="n">a</span> <span class="n">new</span> <span class="n">GUID</span><span class="p">.</span> <span class="n">It</span> <span class="n">does</span> <span class="k">not</span> <span class="n">remove</span> <span class="n">the</span>
+<span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="n">left</span> <span class="n">over</span> <span class="k">from</span> <span class="n">a</span> <span class="n">SMS</span> <span class="m">1.2</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="n">Software</span> <span class="n">Distribution</span> <span class="n">Method</span>
+<span class="p">----------------------------</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">numerous</span> <span class="n">computers</span> <span class="n">that</span> <span class="n">need</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">ID</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">BackOffice</span> <span class="n">Resource</span> <span class="n">Kit</span> <span class="m">4.5</span> <span class="n">Newuid</span><span class="p">.</span><span class="n">exe</span> <span class="n">utility</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span>
+<span class="k">package</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">utility</span> <span class="k">with</span> <span class="n">the</span> <span class="s2">"Newuid.exe /s"</span> <span class="nf">command</span><span class="p">,</span> <span class="n">which</span> <span class="n">causes</span> <span class="n">the</span>
+<span class="n">utility</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">silently</span><span class="p">.</span> <span class="n">You</span> <span class="n">need</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">collection</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">all</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">workstations</span> <span class="n">that</span> <span class="n">have</span> <span class="n">a</span> <span class="n">duplicate</span> <span class="n">ID</span><span class="p">.</span> <span class="n">Use</span> <span class="n">a</span> <span class="n">query</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">sample</span> <span class="n">query</span><span class="p">:</span>
+
+  <span class="n">select</span> <span class="n">distinct</span> <span class="n">r</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">r</span><span class="p">.</span><span class="n">OperatingSystemNameandVersion</span><span class="p">,</span>
+  <span class="n">r</span><span class="p">.</span><span class="n">ResourceDomainORWorkgroup</span><span class="p">,</span> <span class="n">r</span><span class="p">.</span><span class="n">LastLogonUserDomain</span><span class="p">,</span> <span class="n">r</span><span class="p">.</span><span class="n">LastLogonUserName</span><span class="p">,</span>
+  <span class="n">r</span><span class="p">.</span><span class="n">SMSUniqueIdentifier</span><span class="p">,</span> <span class="n">r</span><span class="p">.</span><span class="n">ResourceId</span> <span class="k">from</span> <span class="n">SMS_R_System</span> <span class="k">as</span> <span class="n">r</span><span class="p">,</span>
+  <span class="n">SMS_GH_System_SYSTEM</span> <span class="k">as</span> <span class="n">h</span><span class="p">,</span> <span class="n">SMS_G_System_SYSTEM</span> <span class="k">as</span> <span class="n">g</span> <span class="n">where</span> <span class="n">g</span><span class="p">.</span><span class="n">ResourceID</span> <span class="p">=</span>
+  <span class="n">h</span><span class="p">.</span><span class="n">ResourceID</span> <span class="k">and</span> <span class="n">g</span><span class="p">.</span><span class="n">Name</span> <span class="p">&lt;&gt;</span> <span class="n">h</span><span class="p">.</span><span class="n">Name</span> <span class="k">and</span> <span class="n">r</span><span class="p">.</span><span class="n">ResourceID</span> <span class="p">=</span> <span class="n">g</span><span class="p">.</span><span class="n">ResourceID</span>
+
+<span class="n">Make</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">any</span> <span class="n">carriage</span> <span class="n">returns</span> <span class="k">from</span> <span class="n">this</span> <span class="n">query</span> <span class="n">before</span> <span class="n">pasting</span> <span class="n">it</span> <span class="n">into</span>
+<span class="n">the</span> <span class="n">Edit</span> <span class="n">Query</span> <span class="n">window</span> <span class="n">for</span> <span class="n">this</span> <span class="n">collection</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">carriage</span>
+<span class="n">returns</span><span class="p">,</span> <span class="n">the</span> <span class="n">query</span> <span class="n">is</span> <span class="k">not</span> <span class="n">saved</span> <span class="n">because</span> <span class="k">of</span> <span class="n">improper</span> <span class="n">syntax</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q234262</span> <span class="n">SMS</span><span class="p">:</span> <span class="n">Linking</span> <span class="n">Query</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Collection</span> <span class="n">Membership</span> <span class="n">Rule</span> <span class="n">May</span> <span class="k">Not</span> <span class="n">Work</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">this</span> <span class="n">collection</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="k">not</span> <span class="n">see</span> <span class="n">the</span> <span class="n">same</span> <span class="n">number</span> <span class="k">of</span> <span class="n">clients</span> <span class="k">as</span>
+<span class="n">you</span> <span class="n">did</span> <span class="k">in</span> <span class="n">the</span> <span class="n">first</span> <span class="n">query</span><span class="p">.</span> <span class="n">This</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">this</span> <span class="n">query</span> <span class="n">returns</span> <span class="n">only</span> <span class="n">a</span> <span class="n">unique</span>
+<span class="k">list</span> <span class="k">of</span> <span class="n">duplicate</span> <span class="n">IDs</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">advertise</span> <span class="n">the</span> <span class="n">Newuid</span><span class="p">.</span><span class="n">exe</span> <span class="k">package</span> <span class="k">to</span> <span class="n">this</span>
+<span class="n">collection</span><span class="p">,</span> <span class="n">all</span> <span class="n">the</span> <span class="n">clients</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">previous</span> <span class="n">query</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">program</span> <span class="n">because</span>
+<span class="n">these</span> <span class="n">workstations</span> <span class="n">are</span> <span class="n">all</span> <span class="n">sharing</span> <span class="n">the</span> <span class="n">same</span> <span class="n">IDs</span> <span class="p">(</span><span class="n">the</span> <span class="n">same</span> <span class="n">globally</span> <span class="n">unique</span>
+<span class="n">identifiers</span><span class="p">,</span> <span class="k">or</span> <span class="n">GUIDs</span><span class="p">).</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="nf">run</span> <span class="n">Newuid</span><span class="p">.</span><span class="n">exe</span><span class="p">,</span> <span class="n">use</span> <span class="n">the</span> <span class="s2">"Newuid.exe /s /allocate"</span> <span class="nf">command</span> <span class="n">enables</span> <span class="n">the</span>
+<span class="n">clients</span> <span class="k">to</span> <span class="n">get</span> <span class="n">a</span> <span class="n">new</span> <span class="n">ID</span> <span class="k">and</span> <span class="n">retain</span> <span class="n">client</span> <span class="n">functionality</span><span class="p">.</span> <span class="n">The</span> <span class="p">/</span><span class="n">s</span> <span class="n">switch</span> <span class="n">causes</span>
+<span class="n">the</span> <span class="n">installation</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">silently</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span><span class="n">When</span> <span class="n">the</span> <span class="p">/</span><span class="n">allocate</span> <span class="n">switch</span> <span class="n">is</span> <span class="n">used</span><span class="p">,</span> <span class="n">Newuid</span><span class="p">.</span><span class="n">exe</span> <span class="n">attempts</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">Smsboot1</span><span class="p">.</span><span class="n">exe</span>
+<span class="k">from</span> <span class="n">a</span> <span class="n">logon</span> <span class="n">point</span><span class="p">.</span> <span class="n">Access</span> <span class="k">to</span> <span class="n">a</span> <span class="n">logon</span> <span class="n">point</span> <span class="n">requires</span> <span class="n">that</span> <span class="n">a</span> <span class="n">user</span> <span class="n">be</span> <span class="n">logged</span> <span class="n">on</span><span class="p">.</span>
+<span class="k">If</span> <span class="n">no</span> <span class="n">user</span> <span class="n">is</span> <span class="n">logged</span> <span class="n">on</span><span class="p">,</span> <span class="n">the</span> <span class="n">GUID</span> <span class="n">that</span> <span class="nb">exists</span> <span class="n">is</span> <span class="n">deleted</span><span class="p">,</span> <span class="n">but</span> <span class="n">a</span> <span class="n">new</span> <span class="n">GUID</span> <span class="n">is</span> <span class="k">not</span>
+<span class="n">allocated</span> <span class="k">until</span> <span class="n">Smsls</span><span class="p">.</span><span class="n">bat</span> <span class="k">or</span> <span class="n">Smsman</span><span class="p">.</span><span class="n">exe</span> <span class="n">is</span> <span class="n">executed</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="k">do</span> <span class="k">not</span> <span class="n">receive</span> <span class="n">confirmation</span> <span class="n">that</span> <span class="n">the</span> <span class="n">clients</span> <span class="n">have</span> <span class="n">successfully</span> <span class="nf">run</span> <span class="n">the</span>
+<span class="n">program</span> <span class="k">if</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">use</span> <span class="n">the</span> <span class="p">/</span><span class="n">allocate</span> <span class="n">switch</span><span class="p">.</span> <span class="n">After</span> <span class="n">Newuid</span><span class="p">.</span><span class="n">exe</span> <span class="n">has</span> <span class="n">been</span> <span class="nf">run</span>
+<span class="n">without</span> <span class="n">the</span> <span class="p">/</span><span class="n">allocate</span> <span class="n">switch</span><span class="p">,</span> <span class="n">all</span> <span class="n">client</span> <span class="n">communication</span> <span class="k">with</span> <span class="n">the</span> <span class="n">client</span> <span class="n">access</span>
+<span class="n">point</span> <span class="p">(</span><span class="n">CAP</span><span class="p">)</span> <span class="n">stops</span> <span class="k">until</span> <span class="n">the</span> <span class="n">client</span> <span class="n">either</span> <span class="n">runs</span> <span class="n">Smsls</span><span class="p">.</span><span class="n">bat</span> <span class="k">or</span> <span class="n">Smsman</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span> <span class="n">has</span>
+<span class="n">been</span> <span class="n">reinstalled</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Remote</span> <span class="n">Client</span> <span class="n">installation</span><span class="p">.</span>
+<span class="n">Client</span> <span class="n">functionality</span> <span class="n">does</span> <span class="k">not</span> <span class="n">return</span> <span class="k">and</span> <span class="n">the</span> <span class="n">new</span> <span class="n">ID</span> <span class="n">is</span> <span class="k">not</span> <span class="n">allocated</span> <span class="k">until</span> <span class="n">the</span>
+<span class="n">client</span> <span class="n">has</span> <span class="n">used</span> <span class="n">one</span> <span class="k">of</span> <span class="n">these</span> <span class="n">installation</span> <span class="n">methods</span><span class="p">.</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">have</span> <span class="n">cleaned</span> <span class="n">up</span> <span class="n">the</span> <span class="n">duplicate</span> <span class="n">IDs</span><span class="p">,</span> <span class="n">purge</span> <span class="n">the</span> <span class="n">inventory</span> <span class="n">history</span> <span class="k">in</span> <span class="n">your</span>
+<span class="n">database</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Delete</span> <span class="n">Aged</span> <span class="n">Inventory</span> <span class="n">History</span> <span class="n">task</span> <span class="n">under</span> <span class="n">Tasks</span> <span class="n">under</span> <span class="n">Database</span>
+<span class="n">Maintenance</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">console</span> <span class="k">to</span> <span class="n">delete</span> <span class="n">all</span> <span class="n">history</span> <span class="n">older</span>
+<span class="n">than</span> <span class="n">one</span> <span class="n">day</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="k">set</span> <span class="n">this</span> <span class="n">value</span> <span class="n">back</span> <span class="k">to</span> <span class="n">its</span> <span class="n">previous</span> <span class="n">value</span> <span class="n">after</span> <span class="n">you</span> <span class="n">have</span>
+<span class="n">all</span> <span class="k">of</span> <span class="n">your</span> <span class="n">client</span> <span class="n">inventory</span> <span class="n">back</span> <span class="k">and</span> <span class="n">have</span> <span class="n">you</span> <span class="n">have</span> <span class="n">verified</span> <span class="n">that</span> <span class="n">there</span> <span class="n">are</span> <span class="n">no</span>
+<span class="n">more</span> <span class="n">duplicates</span> <span class="k">in</span> <span class="n">your</span> <span class="n">environment</span><span class="p">.</span>
+
+<span class="n">By</span> <span class="n">changing</span> <span class="n">the</span> <span class="n">settings</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Database</span> <span class="n">Maintenance</span> <span class="n">Tasks</span><span class="p">,</span> <span class="n">all</span> <span class="n">data</span> <span class="k">in</span> <span class="n">your</span>
+<span class="n">database</span> <span class="n">older</span> <span class="n">than</span> <span class="n">one</span> <span class="n">day</span> <span class="n">may</span> <span class="n">be</span> <span class="n">removed</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">fine</span> <span class="k">in</span> <span class="n">many</span> <span class="n">situations</span><span class="p">,</span>
+<span class="n">however</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">only</span> <span class="n">have</span> <span class="n">a</span> <span class="n">small</span> <span class="n">percentage</span> <span class="k">of</span> <span class="n">your</span> <span class="n">inventory</span> <span class="n">which</span> <span class="n">is</span>
+<span class="n">duplicated</span><span class="p">,</span> <span class="n">this</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span> <span class="n">appropriate</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">such</span> <span class="n">a</span> <span class="k">case</span><span class="p">,</span> <span class="n">use</span> <span class="n">the</span> <span class="n">white</span> <span class="n">paper</span><span class="p">,</span> <span class="n">Managing</span> <span class="n">Duplicate</span> <span class="n">Microsoft</span> <span class="n">Systems</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="n">Unique</span> <span class="n">Identifiers</span><span class="p">,</span> <span class="n">which</span> <span class="n">may</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">better</span> <span class="n">solution</span><span class="p">,</span> <span class="n">which</span>
+<span class="n">is</span> <span class="n">located</span> <span class="n">at</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">smsmgmt</span><span class="p">/</span><span class="n">techdetails</span><span class="p">/</span><span class="n">newuid</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">This</span> <span class="n">paper</span> <span class="n">discusses</span> <span class="n">the</span> <span class="n">process</span> <span class="k">of</span> <span class="n">only</span> <span class="n">removing</span> <span class="n">the</span> <span class="n">history</span> <span class="n">information</span>
+<span class="n">for</span> <span class="n">the</span> <span class="n">duplicate</span> <span class="n">computers</span><span class="p">,</span> <span class="k">not</span> <span class="n">the</span> <span class="n">entire</span> <span class="n">database</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="m">20</span><span class="n">clicln</span><span class="p">.</span><span class="n">bat</span> <span class="n">sms</span><span class="p">.</span><span class="n">ini</span> <span class="n">newuid</span><span class="p">.</span><span class="n">exe</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbClient</span> <span class="n">kbConfig</span> <span class="n">kbDatabase</span> <span class="n">kbsms200</span> <span class="n">kbCollections</span> <span class="n">kbInventory</span> <span class="n">kbQuery</span> <span class="n">kbsmsAdmin</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS200</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">2.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

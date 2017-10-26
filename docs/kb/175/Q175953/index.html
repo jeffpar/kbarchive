@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175953: XADM: Disabling Proxy Address Generation Does Not Work | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175953: XADM: Disabling Proxy Address Generation Does Not Work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175953/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175953/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175953/","publisher":null,"image":null,"headline":"Q175953: XADM: Disabling Proxy Address Generation Does Not Work","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175953-xadm-disabling-proxy-address-generation-does-not-work">Q175953: XADM: Disabling Proxy Address Generation Does Not Work</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175953
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0, 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Server version 5.0 and 5.5 Administrator programs have
+the ability to disable the generation of proxy addresses for certain address
+types. This is done on the Site Addressing page of the Site Addressing object
+under the Configuration object.
+
+This functionality only works on Microsoft Exchange Server, version 5.0 or
+above.
+
+Therefore, if an Exchange Server site contains both version 4.0 and 5.0 or above
+servers, mailboxes that were created on the version 5.0 or above server, will
+not have the proxy addresses automatically created because the option was
+disabled. However, if a mailbox is created on a version 4.0 server, the mailbox
+will have all the proxy addresses automatically created.
+
+The same results occur, when mailboxes are modified using the Import/Export
+functionality of the Administrator program. If the import is done on a version
+5.0 or above server, the disabled proxy addresses are not added to the
+mailboxes, however, if the import is done on a version 4.0 server, the disabled
+proxy addresses will be added to the server.
+
+CAUSE
+=====
+
+The problem occurs because the functionality to disable certain proxy addresses
+from being generated was added in version 5.0.
+
+The System Attendant service is responsible for generating proxy addresses. It
+does so by calling the proxy generators registered with the Exchange Directory,
+for the current hardware platform. To confirm which proxy generators are
+registered, double-click "Configuration\Addressing\E-Mail Address Generators" in
+the right pane of the Microsoft Exchange Administrator program.
+
+In version 5.0 and above, the System Attendant service looks at the
+"Disabled-Gateway-Proxy" attribute on the Site Addressing object and does not
+call the proxy address generators corresponding to the address types listed in
+the above attribute.
+
+In version 4.0, the System Attendant does not use the "Disabled-Gateway- Proxy"
+attribute, and calls each proxy address generator registered for the current
+hardware platform. This results in the generation of proxy addresses for address
+types that have been disabled.
+
+WORKAROUND
+==========
+
+In a site with a mixture of version 4.0 and 5.0 or above servers, the easiest
+way to generate mailboxes or custom recipients without proxy addresses of a
+certain type, is to make all the additions or modifications are performed on a
+version 5.0 or above server.
+
+In version 4.0, the only way to prevent the generation of an address is to remove
+the proxy address generator.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0, 5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

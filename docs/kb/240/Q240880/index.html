@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240880/","publisher":null,"image":null,"headline":"Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240880-prb-activex-control-pack-unavailable-for-download-for-vcce-60">Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240880
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr kbActiveX kbCOMt kbCtrlCreate kbVC600 kbOSWinCEsearch kbCompGallery k
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Release Notes for the Windows CE Toolkit for Visual C++ version 6.0 include
+this passage:
+
+  ActiveX Controls Missing in Component Gallery
+
+  ActiveX controls in Windows CE are not available in the Component Gallery,
+  because the ActiveX Control Pack is not included in this release of the
+  Windows CE operating system.
+
+  See the Windows CE web page for an updated ActiveX Control Pack.
+
+However, the Windows CE Web page does not offer an ActiveX Control Pack to
+download.
+
+CAUSE
+=====
+
+No such download opportunity is provided because an ActiveX Control Pack is not
+available for Windows CE Toolkit for Visual C++ version 6.0 at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Workaround
+----------
+
+To work around this problem, you have these options:
+
+- Write the ActiveX controls yourself.
+
+- Windows CE Toolkit for Visual Basic 6.0 ships with some of the common Windows
+  CE ActiveX controls. You can install this Visual Basic CE Toolkit 6.0 to
+  register and use the controls.
+
+  Please note: even though most of the controls shipped with the Visual Basic CE
+  Toolkit 6.0 may work correctly under VCCE environment, these controls are
+  neither tested nor supported for a VCCE environment.
+
+- Register and use third-party ActiveX controls.
+
+- Using the source code for the controls that ship with source code, port the
+  Win32 ActiveX controls to Windows CE ActiveX controls.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual C++ 6.0 and Windows CE Toolkit for Visual C++ 6.0.
+
+2. Using the WCE MFC AppWizard (exe), create a default dialog-based application.
+
+3. Switch to the Resource View tab for the Project Workspace.
+
+4. Open the Dialog Resource and right-click on the dialog box to select ActiveX
+  controls.
+
+5. Note that no Windows CE ActiveX controls are available to be added to the
+  dialog resource.
+
+REFERENCES
+==========
+
+See the following MSDN documents:
+
+  Windows CE Toolkit for Visual C++, Version 6.0 Release Notes
+  (http://msdn.microsoft.com/library/wcedoc/vcce/rlnvcce6.htm)
+
+  Windows CE Toolkit for Visual Basic 6.0 Release Notes
+  (http://msdn.microsoft.com/library/wcedoc/vbce/readme.htm)
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Vidyanand Rajpathak, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbActiveX kbCOMt kbCtrlCreate kbVC600 kbOSWinCEsearch kbCompGallery kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : :6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

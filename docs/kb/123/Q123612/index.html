@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123612: Support for CD-ROM Changers in Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123612: Support for CD-ROM Changers in Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123612/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123612/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123612/","publisher":null,"image":null,"headline":"Q123612: Support for CD-ROM Changers in Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123612-support-for-cd-rom-changers-in-windows-95">Q123612: Support for CD-ROM Changers in Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123612
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): Win2000:95; winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Windows 95 supports the use of CD-ROM changers (also known as
+jukeboxes). Although the protected-mode CD-ROM drivers should allow you access
+to your CD-ROM changer, the real-mode CD-ROM drivers are likely to be more
+reliable.
+
+MORE INFORMATION
+================
+
+The reason real-mode drivers may be more reliable is because the CD-ROM File
+System (CDFS) virtual device drivers (VxDs), such as Volume Tracker
+(VOLTRACK.VXD), need to know whether each CD is accessible at boot. Each time a
+shell operation queries the system (for example, whenever you run My Computer or
+Explorer), you experience a time delay. The length of this delay depends on the
+number of CDs in the changer.
+
+To work around this delay, you can set up a large CD-ROM cache. This is helpful
+only if you have large amounts of physical RAM. Please note that your cache may
+be used by something else, thus causing the CD shuffling to be slow anyway.
+Another workaround is to use the real-mode drivers.
+
+If you are uncertain whether your CD-ROM is using real- or protected-mode
+drivers, check the Properties of the CD-ROM drive through My Computer. If the
+Capacity value of the CD is 127 MB, you are probably using real-mode drivers. If
+the Capacity value is an actual value (such as 370.9 MB), you are probably using
+protected-mode drivers. The Microsoft CD-ROM Extensions (MSCDEX) driver shows a
+capacity of 127 MB while in Windows regardless of the actual capacity. Also, if
+you are loading a CD-ROM driver in your CONFIG.SYS file and MSCDEX in your
+AUTOEXEC.BAT file, you are using real- mode drivers.
+
+
+NOTE: Another issue experienced with CD-ROM changers is that a drive letter is
+used for each CD. This limits the number of network drives you can have.
+
+
+Additional query words: 3rdparty jukebox winnt w95hw w95hwfaq
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : Win2000:95; winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

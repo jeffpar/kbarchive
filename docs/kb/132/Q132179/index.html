@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132179: PRB: Controls in a Page Frame Are Not Refreshed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132179: PRB: Controls in a Page Frame Are Not Refreshed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132179/","publisher":null,"image":null,"headline":"Q132179: PRB: Controls in a Page Frame Are Not Refreshed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132179-prb-controls-in-a-page-frame-are-not-refreshed">Q132179: PRB: Controls in a Page Frame Are Not Refreshed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132179
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS: 3.0,5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a page frame, you observe that only the controls placed on the active page
+are refreshed when data changes. Controls in underlying pages are not refreshed
+until they receive the focus.
+
+CAUSE
+=====
+
+For performance reasons, only the active page in a page frame is refreshed when
+a form is refreshed. This is by design.
+
+WORKAROUND
+==========
+
+Alternatives include explicitly calling the Refresh method for each page that is
+to be refreshed. For example, it is possible to define a method that loops
+through the pages in a page frame and refreshes all the pages. The following
+code sample illustrates this method.
+
+Code Sample
+-----------
+
+  * Call this method ,and pass the name of the page frame as a
+  * parameter.
+  * For example,
+  *    Thisform.RefreshAllPages('PageFrame1')
+  *
+  PROCEDURE RefreshAllPages
+  PARAMETER tcPageFrameName
+  oRef=EVAL('thisform.'+tcPageFrameName)
+  FOR I=1 TO oRef.PageCount
+     oRef.Pages(I).Refresh
+  ENDFOR
+  Thisform.Refresh
+
+Alternative Workaround
+----------------------
+
+Another alternative is to refresh a page when it becomes active. To accomplish
+this, place the following code in the method associated with the activate event
+of the page:
+
+     This.Refresh
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Form.
+
+2. Place a page frame on the Form.
+
+3. Using the secondary (right) mouse button, click the form. Then select Data
+  Environment. Add the Employee table, located in the Samples\Data directory,
+  to the Data Environment.
+
+4. Click Page1 on the Object menu in the Property sheet.
+
+5. Select the text box control from the Form Controls toolbar, and place the
+  text box on Page1. Modify the ControlSource property to be:
+
+     Employee.Emp_id
+
+6. Place another text box on Page1, and modify the ControlSource property to
+  be:
+
+     Employee.Last_name
+
+  NOTE: This step is important as the controls that do not have the focus when
+  the page is activated are not refreshed.
+
+7. Select Page2, and place two text boxes on that page. Change the ControlSource
+  property of the controls to Employee.Address and Employee.City, respectively.
+
+8. Place a command button on the form, and place the following code in its Click
+  event method:
+
+     SKIP
+     ThisForm.Refresh
+
+9. Save and run the form. Click the command button to skip through the table,
+  and activate each page. The data on the second text box is not refreshed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP500a
+Version           : WINDOWS: 3.0,5.0,5.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

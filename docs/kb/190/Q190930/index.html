@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190930: UDP Broadcast Forwarding by Cisco’s IP Helper | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190930: UDP Broadcast Forwarding by Cisco’s IP Helper" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190930/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190930/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190930/","publisher":null,"image":null,"headline":"Q190930: UDP Broadcast Forwarding by Cisco’s IP Helper","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190930-udp-broadcast-forwarding-by-ciscos-ip-helper">Q190930: UDP Broadcast Forwarding by Cisco’s IP Helper</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190930
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 2000,3.1,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 23-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Datacenter Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+User Datagram Protocol (UDP) broadcasts are transformed into directed datagrams.
+Upon inspection of the media access control address, network packets have been
+transformed from the expected broadcast address (FFFFFFFF) to a specific media
+access control address.
+
+CAUSE
+=====
+
+IP Helper has been enabled on a Cisco switch.
+
+
+RESOLUTION
+==========
+
+Disable IP Help either completely or on a per UDP port basis.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Typically, a broadcast should be confined within its IP subnet. However, notable
+exceptions occur such as a DHCP (BootP) broadcast. Cisco has provided
+functionality in some of its router products called IP Helper to forward
+specific broadcast to designated computers. For example, you could configure all
+DHCP broadcasts to be directed to the specified DHCP server. The thinking behind
+this is a directed datagram will decrease the network traffic when compared to a
+broadcast packet propagated to all subnets.
+
+If an IP helper address is specified and UDP forwarding is enabled, broadcast
+packets destined to the following port numbers are forwarded by default.
+
+  Time Service             Port 37
+  TACACS                   Port 49
+  Domain Name Services     Port 53
+  Trivial File Transfer    Port 69
+  DHCP (BootP)             Port 67 and Port 68
+  NetBIOS Name Server      Port 137
+  NetBIOS Datagram Server  Port 138
+
+The forwarding of NetBIOS broadcasts on UDP port 138 can impact the ability of
+the browser service to properly elect a segment master browser or a domain
+master browser. Disabling the forwarding of broadcast packets on ports 137 and
+138 enables the browser service to work as designed.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q135464 8003 Browsing Errors with UDP Forwarding
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: ethernet helper forward 8003 missing event events
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTW310 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWin95search kbWin98search kbWinNT310Search kbWinNTW310Search kbWinAdvServSearch kbWinDataServSearch kbZNotKeyword3 kbWin98
+Version           : :2000,3.1,3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

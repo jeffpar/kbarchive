@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172593/","publisher":null,"image":null,"headline":"Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172593-howto-populate-dbgrid-from-crosstab-parameter-query">Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172593
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to create a Parameter Crosstab Query using the
+sample Nwind.mdb Access database file. It also explains how to create a
+recordset in Visual Basic by running the query, passing the necessary parameters
+to it, and then populating a Visual Basic DBGrid with the resultant recordset.
+
+MORE INFORMATION
+================
+
+The following example uses the sample Nwind database that ships with Visual
+Basic. Note that it is recommended to explicitly declare the parameters when
+creating and running Crosstab Parameter Queries. See the REFERENCES section of
+this article for more information.
+
+1. Create a new Project in Visual Basic.
+
+2. From the menu, select Project - References and make a reference to Microsoft
+  DAO 3.5 Object Library. In Visual Basic 4.0, under Tools references make, a
+  reference to DAO 3.0 object library.
+
+3. From the menu, select Project - Components and select a Data Bound Grid
+  control. In Visual Basic 4.0, this is under Tools - Custom Controls.
+
+4. Add a CommandButton, a Data Control and a DBGrid Control to the new Form.
+
+5. Accept the default Names for the Command Button, DBGrid, and Data Control.
+
+6. Enter the sample code below into the General Declarations of the Form.
+
+7. In the properties Window, set the DataSource property of the DBGrid to Data1
+  to bind the DBGrid to the Data control.
+
+8. Run the application and click the CommandButton.
+
+  Sample code:
+
+        Private Sub Command1_Click()
+          Dim Sql As String
+          Dim DatabaseFile As String
+          Dim MyDB As Database
+          Dim RS As Recordset
+          Dim QD As QueryDef
+
+        On Error GoTo errorHand
+
+        'This is the Path &amp; Database filename.
+        'Change to match your path and filename.
+        DatabaseFile = "C:\VB5\Nwind.mdb"
+
+        'Create the querydef SQL string
+        Sql = "Parameters [Enter first date] DateTime, " _
+           &amp; "[Enter second date] DateTime;"
+        Sql = Sql &amp; " TRANSFORM Sum(CCur([Order Details].[UnitPrice]" _
+           &amp; " *[Quantity]*(1-[Discount])/100)*100) AS ProductAmount"
+        Sql = Sql &amp; " SELECT Products.ProductName, Orders.CustomerID," _
+           &amp; " Year([OrderDate]) AS OrderYear"
+        Sql = Sql &amp; " FROM Products INNER JOIN (Orders INNER JOIN" _
+           &amp; " [Order Details] ON Orders.OrderID ="
+        Sql = Sql &amp; " [Order Details].OrderID) ON" _
+           &amp; " Products.ProductID = [Order Details].ProductID"
+        Sql = Sql &amp; " WHERE (((Orders.OrderDate) Between" _
+           &amp; " [Enter first date] And [Enter second date]))"
+        Sql = Sql &amp; " GROUP BY Products.ProductName, Orders.CustomerID," _
+           &amp; " Year([OrderDate])"
+        Sql = Sql &amp; " PIVOT 'Qtr ' &amp; DatePart('q',[OrderDate],1,0) In" _
+           &amp; " ('Qtr 1','Qtr 2','Qtr 3','Qtr 4');"
+
+        'This code creates the parameter query
+
+        Set MyDB = DBEngine(0).OpenDatabase(DatabaseFile)
+        Set QD = MyDB.CreateQueryDef("CrossTabParamQuery")
+        With QD
+            .Sql = Sql
+            .Parameters("[Enter first date]") = #1/1/95#
+            .Parameters("[Enter second date]") = #1/1/96#
+        End With
+        Set Rs = QD.OpenRecordset(dbOpenDynaset)
+        Set Data1.Recordset = Rs
+        Exit Sub
+
+        errorHand:
+        If Err.Number = 3012 Then   ' The querydef exists
+            MyDB.QueryDefs.Delete "CrossTabParamQuery"
+            Resume
+        Else
+            MsgBox Err.Number &amp; "  " &amp; Err.Description
+        End If
+        End Sub
+
+        Private Sub Form_Unload(Cancel As Integer)
+           RS.Close
+           QD.Close
+           MyDB.Close
+        End Sub
+
+REFERENCES
+==========
+
+Visual Basic Help topic "PARAMETERS Declaration"
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q91710 : Can't Bind Name '[XXX]'" Error with Crosstab Query
+
+Additional query words: kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbVBp400
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

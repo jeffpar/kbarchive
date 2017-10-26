@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174544: PJL Control Commands May Cause Postscript Code to Print | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174544: PJL Control Commands May Cause Postscript Code to Print" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174544/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174544/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174544/","publisher":null,"image":null,"headline":"Q174544: PJL Control Commands May Cause Postscript Code to Print","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174544-pjl-control-commands-may-cause-postscript-code-to-print">Q174544: PJL Control Commands May Cause Postscript Code to Print</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174544
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbprint
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you print to a postscript printer in Windows NT, job output produced may
+contain the entire flush of the postscript code rather than the actual desired
+job output.
+
+MORE INFORMATION
+================
+
+By default, Microsoft Windows NT issues Printer Job Language (PJL) commands for
+job control purposes for postscript print drivers. This may cause undesirable
+effects if you intend to redirect the output to a file for post processing by
+other programs (for example, Page imposition program or PostScript preview
+program). PJL was developed by Hewlett-Packard to provide a method for switching
+printer languages at the job level, and for status readback between the printer
+and the host computer. Please reference Hewlett-Packard's "Printer Job Language
+Technical Reference Manual" for more details.
+
+
+To turn off these job control commands in Windows NT, use the following
+procedures:
+
+Windows NT 3.51
+---------------
+
+1. In Print Manager, select the printer.
+
+2. On the Printer menu, click Properties.
+
+3. Click Details, click Job Defaults, and then click Options.
+
+4. Click to clear the Page Independence check box.
+
+  NOTE: In Windows NT 3.51, selecting the Page Independence check box allows
+  pages to be printed or previewed out of order. Use this option if you are
+  generating output to be used by a Page imposition program or a PostScript
+  preview program. To improve print speed, do not check this option if you are
+  printing directly to a printer.
+
+  To preview a page or print a page out of sequence, select the Page
+  Independence check box.
+
+Windows NT 4.0
+--------------
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Select the printer, then click Document Defaults from the File menu.
+
+3. Click the Advanced tab and expand the Document Options-Postscript Options
+  tree.
+
+4. Click the Generate Job Control Code check box and then click No.
+
+  NOTE: In Windows NT 4.0, this specifies whether to generate job control code
+  (such as adding CTRL+D at the beginning and end of the document, or PJL
+  commands). If you print to an AppleTalk port, click No.
+
+  Additionally, the setting for Generate Job Control Code is separated out from
+  the Page Independence setting which can be found in the same location as step
+  2 above. Page Independence is not enabled by default and has the same
+  implications in Windows NT 4.0 as it does in Windows NT 3.51.
+
+For more information, please see the following Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q168924
+TITLE : Print to File with 5Si Mx PS Driver Inserts Wrong Control Code
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

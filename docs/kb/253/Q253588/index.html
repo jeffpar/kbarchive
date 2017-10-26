@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253588/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253588/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253588/","publisher":null,"image":null,"headline":"Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253588-prb-ole-error-with-empty-or-null-controlsource-with-dt-picker">Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253588
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbContainer kbCtrl kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Date and Time Picker ActiveX control is added to a form, its
+ControlSource set to a date field, and the record pointer moved to a record that
+contains a blank value in the date field, the following error message appears:
+
+  OLE IDispatch exception code 0 from DTPicker: A date was specified that does
+  not fall within the MinDate and MaxDate Properties...
+
+When the record pointer is moved to a record that contains a NULL value in the
+date field, the following error message appears:
+
+  OLE IDispatch exception code 0 from DTPicker: Invalid Property Value.
+
+CAUSE
+=====
+
+The DateTimePicker control's Calendar interface handles adjusting the Day,
+Month, and Year properties to create a valid date. If a value is assigned that
+creates an invalid date, one of the error messages above appears. This behavior
+occurs because the DateTimePicker control does not recognize {" / / "} as a
+valid date. Likewise, the DateTimePicker control does not recognize a NULL as a
+valid date.
+
+RESOLUTION
+==========
+
+Use the EMPTY() or ISNULL() functions to determine whether the date field that
+is the ControlSource for the DateTimePicker control is blank or NULL. If the
+field contains a blank or NULL value, set the ControlSource property of the
+DateTimePicker control to a NULL string. If the field is not blank, set the
+ControlSource of the DateTimePicker control to the datefield.
+
+  IF !EMPTY(TESTDTP.DTP_DATEA)
+      THISFORM.DTPicker1.CONTROLSOURCE="TESTDTP.DTP_Datea"
+   ELSE
+       THISFORM.DTPicker1.CONTROLSOURCE=""
+   ENDIF
+   IF !ISNULL(TESTDTP.DTP_DATEB)
+      THISFORM.DTPicker2.CONTROLSOURCE="TESTDTP.DTP_Dateb"
+   ELSE
+      THISFORM.DTPicker2.CONTROLSOURCE=""
+  ENDIF
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file named "DTP_DEMO" (without the quotation marks) using
+  the following code:
+
+  PUBLIC OX
+  OX=CREATEOBJECT('MYFORM')
+  OX.SHOW
+  READ EVENTS
+
+  DEFINE CLASS myform AS FORM
+     CAPTION = "DateTimePicker Form"
+     HEIGHT = 125
+     LEFT = 0
+     TOP = 0
+     WIDTH = 230
+     NAME = "myform"
+
+     ADD OBJECT DTPicker1 AS OLECONTROL WITH ;
+        OLECLASS="MSComCtl2.DTPicker.2",;
+        TOP = 5, ;
+        LEFT = 5, ;
+        HEIGHT = 25, ;
+        WIDTH = 100, ;
+        NAME = "DTPicker1"
+
+     ADD OBJECT DTPicker2 AS OLECONTROL WITH ;
+        OLECLASS="MSComCtl2.DTPicker.2",;
+        TOP = 35, ;
+        LEFT = 5, ;
+        HEIGHT = 25, ;
+        WIDTH = 100, ;
+        NAME = "DTPicker2"
+
+     ADD OBJECT commandbutton1 AS COMMANDBUTTON WITH ;
+        TOP=75, ;
+        LEFT=125, ;
+        HEIGHT=25, ;
+        CAPTION="\&lt;Close"
+     NAME="commandbutton1"
+
+     PROCEDURE INIT
+  *!*      IF !EMPTY(TESTDTP.DTP_DATEA)
+           THISFORM.DTPicker1.CONTROLSOURCE="TESTDTP.DTP_Datea"
+  *!*      ELSE
+  *!*         THISFORM.DTPicker1.CONTROLSOURCE=""
+  *!*      ENDIF
+  *!*      IF !ISNULL(TESTDTP.DTP_DATEB)
+           THISFORM.DTPicker2.CONTROLSOURCE="TESTDTP.DTP_Dateb"
+  *!*      ELSE
+  *!*         THISFORM.DTPicker2.CONTROLSOURCE=""
+  *!*      ENDIF
+           
+     ENDPROC
+
+     PROCEDURE commandbutton1.CLICK
+        RELEASE THISFORM
+     ENDPROC
+
+     PROCEDURE LOAD
+        IF !FILE('TESTDTP.DBF')
+           CREATE TABLE TESTDTP (DTP_DATEA D, DTP_DATEB D NULL)
+           INSERT INTO TESTDTP VALUES (CTOD('  /  /  '),(.NULL.))
+        ENDIF
+        IF !USED("TESTDTP")
+           USE TESTDTP IN 0
+        ENDIF
+        SELECT TESTDTP
+     ENDPROC
+
+     PROCEDURE UNLOAD
+        USE IN TESTDTP
+        ERASE TESTDTP.DBF
+        CLEAR EVENTS
+     ENDPROC
+
+  ENDDEFINE
+
+2. Save and run DTP_DEMO. Note the error message that appears when the
+  DTPicker.ControlSource is set to a date field that contains an empty value.
+
+3. Note the error message that appears when the DTPicker.ControlSource is set to
+  a date field that contains a NULL value.
+
+4. Uncomment the commented lines of code in the Init method.
+
+  NOTE: This example uses the Init method. If you populate the ControlSource by
+  moving through the records of a table, you need to check for empty and NULL
+  fields in another event.
+
+5. Save and run DTP_DEMO. Note that the error message does not appear.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information DTPicker ActiveX Control, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q189991 PRB: Error Setting DateTimePicker's Month Programmatically
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbContainer kbCtrl kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

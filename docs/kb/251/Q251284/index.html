@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251284/","publisher":null,"image":null,"headline":"Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251284-cluster-server-cannot-start-if-the-quorum-disk-space-is-full">Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251284
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbnetwork kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to start Windows Clustering. Also, any combination of the
+following event messages may be listed in the System Event log:
+
+- Event 1021: There is insufficient disk space remaining on the Quorum device.
+  Please free up some space on the Quorum device. If there is no space on the
+  disk for the Quorum Log files, then changes to the cluster registry will be
+  prevented.
+
+- Event 1080: Microsoft Cluster Server could not write file &lt;file&gt;. The
+  disk may be low on disk space or some other serious condition exists.
+
+- Event 1016: Microsoft Cluster Server failed to obtain a checkpoint from the
+  cluster database for log file &lt;file&gt;.
+
+- Event 1000: Microsoft Cluster Server suffered an unexpected fatal error at
+  line &lt;line&gt; of source module &lt;module&gt;. The error code was: 112.
+
+- Event 1022: There is insufficient space left on the Quorum device. Microsoft
+  Cluster Server cannot start.
+
+- Event 1009: Microsoft Cluster Server could not join an existing cluster and
+  could not form a new cluster. Microsoft Cluster Server has terminated.
+
+- Event 1063: Microsoft Cluster Server was successfully stopped.
+
+CAUSE
+=====
+
+This behavior can occur if the disk that contains the Quorum log file does not
+have any free disk space.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Turn off one of the nodes, for example, Node1.
+
+2. On the remaining node, for example, Node2, in Control Panel, select Devices
+  and set the startup value of the ClusDisk device to "disabled."
+
+3. On Node2, in Control Panel, select Services and set the ClusSvc service to
+  "disabled."
+
+4. Restart Node2.
+
+  Because the Cluster Disk device driver does not start, the disk drives on the
+  shared SCSI bus appear as normal disk drives to the computer.
+
+5. Delete the files on the disk that contains the Quorum log to free up space on
+  the disk drive. Do not access any files that might be needed by the Cluster
+  Service or by shared applications, unless absolutely necessary.
+
+6. Set the startup value of the ClusDisk device back to "System" and the ClusSvc
+  service back to "Automatic."
+
+7. Restart the computer.
+
+  The Cluster Service should start and the shared SCSI disk drives (and all
+  other resources) should be "owned" by the node that is turned on (Node2).
+
+8. Restart the other node, Node1.
+
+9. If necessary, you can now move the Quorum log to a disk that has more
+  available free space.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If the Cluster Service on both nodes has stopped, it may be impossible to start
+the Cluster Service on either node. Until the Cluster Service is started,
+neither node can "own" the disk drive that contains the Quorum log file. Because
+neither node can "own" the disk drive, access to the disk drive is not available
+and therefore files on the disk drive cannot be deleted.
+
+Additional query words: mscs
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400search kbWinNTSEnt400SP6a
+Version           : winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

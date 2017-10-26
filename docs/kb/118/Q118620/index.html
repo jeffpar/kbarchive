@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118620/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118620/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118620/","publisher":null,"image":null,"headline":"Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118620-pc-ext-support-of-externalexe-under-windows-nt">Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118620
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a,3.5; :3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+- Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the support of both the Microsoft Mail Message Transfer
+Agent (MTA) and the Microsoft Mail Multitasking MTA (MMTA) version 3.2 running
+under Microsoft Windows NT versions 3.1 and 3.5. The program name for both the
+MTA and the MMTA executables is EXTERNAL.EXE.
+
+NOTE: This article does not apply to version 3.5 of Microsoft Mail Multitasking
+MTA for Windows NT.
+
+MORE INFORMATION
+================
+
+The following is a summary of the support of the MTA and the MMTA under Windows
+NT 3.1 and 3.5:
+
+The Multitasking MTA for Windows NT Server (NT MMTA) was created to replace
+running the OS/2 Multitasking MTA on Windows NT. It is strongly recommended in
+this configuration to upgrade to the NT MMTA. Advantages gained by upgrading to
+the NT MMTA include:
+
+- Running External as a Windows NT service.
+
+- Asynchronous message transfer up to 28800 baud with supported modems.
+
+The NT MMTA requires that you are running Windows NT Server version 3.51, and is
+not supported on Windows NT Workstation.
+
+Supported Under Windows NT
+--------------------------
+
+The MMTA doing LAN-based transfers only under Windows NT operating system.
+
+Not Supported Under Windows NT
+------------------------------
+
+The MTA is not supported under any circumstances under Windows NT.
+
+The MMTA is not supported doing asynchronous transfers because the MMTA must
+access hardware directly, and this is not possible under Windows NT.
+Transferring via X.25 is not supported either for the MMTA on Windows NT, as
+there was not an X.25 driver for Windows NT.
+
+For systems connecting to Novell NetWare versions 3.x and 4.x using Microsoft
+Client Service for NetWare, dynamic drive connections are not supported. This is
+because the MMTA using dynamic drive connections uses the OS/2 NetWare APIs,
+which are not supported under Microsoft Client Service for NetWare under Windows
+NT.
+
+Additional query words: 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350 kbMailMMTA320
+Version           : WINDOWS:3.2,3.2a,3.5; :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

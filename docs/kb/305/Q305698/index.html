@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305698: SMSINST: Install File Script Item May Cause Compile to Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305698: SMSINST: Install File Script Item May Cause Compile to Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305698/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305698/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305698/","publisher":null,"image":null,"headline":"Q305698: SMSINST: Install File Script Item May Cause Compile to Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305698-smsinst-install-file-script-item-may-cause-compile-to-hang">Q305698: SMSINST: Install File Script Item May Cause Compile to Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305698
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsms200 kbsms200bug smsinst
+Last Modified: 14-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The System Management Server (SMS) Installer may stop responding (hang) during
+compilation of an installation script when that script contains an install file
+script item that uses wildcard (*.*) files for the source and specifies the
+"Include sub-directories" option on a folder structure that has more than 16
+levels.
+
+Additionally, if you cancel the compilation, the SMS Installer may stop and
+generate an access violation error message.
+
+CAUSE
+=====
+
+This problem occurs because the SMS Installer is limited to 16 sub-folders when
+you specify wildcard source paths and select the "Include sub-directories"
+option for the install file script item.
+
+WORKAROUND
+==========
+
+To work around this problem, break the install file script items into multiple
+install file script items that specify sub-folders below the original folder.
+This ensures that they include no more than 16 levels of folder structures.
+
+For example, a script may not compile because the folder depth is 17 folders and
+the Install Files script item is for c:\Myapp\DLL\*.*, include sub-folders. View
+the sub-folders under C:\Myapp\Dll. There are eight sub-folders, one that goes
+16 levels deep. To work around this problem:
+
+- Create a single Install File script item for C:\Myapp\Dll\*.*, but do not
+  choose the Include sub-folders option. This is to get all of the files that
+  are at the root of C:\Myapp\Dll, but not the sub-folders.
+
+- Create eight Install File script items for each of the eight sub-folders
+  under C:\Myapp\Dll, and specify *.* and the "Include sub-directories" option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 2.0.
+
+MORE INFORMATION
+================
+
+The compile process hangs when processing Install file script item for a 16
+level deep directory tree structure using wildcards and include sub-directory
+options.
+
+Steps to Reproduce the Problem
+------------------------------
+
+To reproduce the problem, use the following steps:
+
+1. Install latest SMS Installer build.
+
+2. Create a folder called C:\Test.
+
+3. Create 16 sub-folders under this folder. For example,
+  C:\Test\A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P.
+
+4. Create a file in the \P (lowest) folder.
+
+5. Open Installer and start in Script Editor view with no items. Add the
+  following script items to the script:
+
+  item: Set Variable
+    Variable=MAINDIR
+    Value=C:\TESTDEST
+  end
+  item: Install File
+    Source=C:\Test\*.*
+    Destination=%MAINDIR%
+    Flags=0000000100000010
+  end
+
+  Note that wildcards are used for source, and the include subdirs flag is
+  selected.
+
+Note that steps 6 through 9 are not vital to reproduce the problem; however, they
+are necessary to for this simple test script to compile.
+6. In Script Editor view, click the Cancel event in the Event box (Mainline,
+  Exit, Cancel).
+
+7. Delete the Include Uninstal.ipf script item in the "Cancel event script"
+  section.
+
+8. Switch back to the Mainline event.
+
+9. Click Edit, click Installation Properties, click the Screen tab, and then
+  change the "Progress Bar Based on" setting to Position in the Installation
+  script.
+
+10. Compile the script.
+
+RESULT: The SMS Installer hangs during the compile; the progress dialog box hangs
+and there is no activity.
+
+
+11. Click Cancel, and then click OK when you are prompted to confirm.
+
+RESULT: An error message occurs in the SMS Installer.
+
+
+Additional query words: prodsms directory subdirectory
+
+======================================================================
+Keywords          : kberrmsg kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

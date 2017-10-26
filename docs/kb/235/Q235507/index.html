@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235507/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235507/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235507/","publisher":null,"image":null,"headline":"Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235507-fix-dao-36-causes-debug-errors-in-mfc-dao-non-unicode-builds">Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235507
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbVC600 kbGrpDSVCDB kbDAO360 kbDAO360bug
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you convert a Microsoft Foundation Classes (MFC) Data Access Objects (DAO)
+application to use DAO 3.6, the application can produce a debug error. The exact
+error message is as follows:
+
+  DAMAGE: after Normal block (#204) at &lt;hex address&gt;
+
+CAUSE
+=====
+
+DAO 3.6 incorrectly overwrites the character buffer supplied to it by MFC when
+it fetches text data. It first copies the Unicode string into the buffer that is
+twice as long as the length of the buffer, and then converts the string to an
+Ansi string.
+
+
+RESOLUTION
+==========
+
+With the exception of one case where the error still occurs, this problem has
+been fixed in DAO 3.60 version 3.60.3714.5. To obtain the updated DAO 3.60 dll,
+please install Microsoft Jet 4.0 Service Pack 4 (SP4) or later. For additional
+information, see the following article:
+
+  Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+  Center
+
+Even after you apply this fix, the problem may still occur when the table you are
+accessing through DAO contains a text field that is defined to be only one
+character in length. If the field definition allows more than one character in
+the field, the problem should be resolved by applying the fix described above.
+
+If your table must contain a single-character text field, you need to use the
+code workaround in the More Information section.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was corrected in Microsoft Jet 4.0 Service Pack 4, with the one
+exception noted in the Resolution section of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new MFC application with database support using DAO and pointing to
+  the Northwind.mdb sample database. Use the Employees table to base your
+  recordset class.
+
+  a. Select Multiple Documents if necessary on step one.
+
+  b. Select Database View without file support on step two.
+
+  c. Click Data Source.
+
+  d. In the Database Options dialog box select DAO and specify the
+     Northwind.mdb file in the corresponding edit box. Click OK on the Database
+     Options dialog.
+
+  e. Select the Employees table from the list and click OK in the Select
+     Database Tables dialog box.
+
+  f. Click Finish on step two of the wizard to accept default options and
+     finish creating your project.
+
+2. Insert the following line as the first line in your application's
+  InitInstance() method. This will load DAO 3.6 instead of DAO 3.5.
+
+  AfxGetModuleState()-&gt;m_dwVersion = 0x0601;
+
+3. Build your application in the Win32 Debug configuration.
+
+4. Run your application.
+
+5. Click Move Next a few times. You will get a debug error similar to the one
+  described above.
+
+Workaround
+----------
+
+1. Declare your own callback function in your application header file. It should
+  be in the same file where your application class is declared.
+
+  STDAPI MyDaoStringAllocCallback(DWORD dwLen, DWORD pData, void** ppv);
+
+2. Define the function in the implementation file where your application class
+  is defined. This function is very similar to the function that MFC defines
+  except it reallocates the CString internal buffer to twice the size that is
+  needed.
+
+  STDAPI MyDaoStringAllocCallback(DWORD dwLen, DWORD pData, void** ppv)
+  {
+  	LPTSTR lpsz;
+  	CString* pstr = (CString*)pData;
+
+  	dwLen++;
+
+  	TRY
+  	{
+  		//Allocate twice the space needed so that DAO does not overwrite the buffer
+  		lpsz = pstr-&gt;GetBufferSetLength(2*dwLen/sizeof(TCHAR));
+  		*ppv = (void*)(dwLen &gt; 0 ? lpsz : NULL);
+  	}
+  	CATCH_ALL(e)
+  	{
+  		e-&gt;Delete();
+  		return E_OUTOFMEMORY;
+  	}
+  	END_CATCH_ALL
+
+  	return S_OK;
+  } 
+
+3. In your DoFieldExchange function for your recordset class, add the code
+  below. This modifies the DAO binding structure for each field that is a text
+  field so that the callback function is called instead of the MFC function.
+  Insert the code after the calls to the RFX functions.
+
+  if (pFX-&gt;m_nOperation == CDaoFieldExchange::BindField)
+  {
+  	for (int i=0;i&lt;this-&gt;m_nFields;i++)
+  	{
+  		LPDAOCOLUMNBINDING pcb = &amp;m_prgDaoColBindInfo[i];
+  		if (pcb-&gt;dwDataType == DAO_CHAR)
+  		{
+  			pcb-&gt;cbDataOffset = (DWORD)MyDaoStringAllocCallback;
+  		}			
+  	}
+  }
+
+4. Compile your application.
+
+5. Run the application.
+
+6. Moving through the recordset does not produce errors.
+
+REFERENCES
+==========
+
+  Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+  Center
+
+  Q236991 PRB: Unrecognized Database Format Error with Access 2000 Database
+
+  Q236056 FIX: DAO 3.6 Overruns Buffers in GetRowsEx Method
+
+Additional query words: DAO AppWizard MFC MoveNext
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbVC600 kbGrpDSVCDB kbDAO360 kbDAO360bug 
+Component         : dao
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

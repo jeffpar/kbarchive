@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243056/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243056/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243056/","publisher":null,"image":null,"headline":"Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243056-info-using-schemaname-and-the-schemaseparator-in-odbc">Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243056
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.0,3.5,3.51,3.6,3.7
+Operating System(s): 
+Keyword(s): kbdocfix kbODBC kbODBC300 kbODBC350 kbODBC351 kbODBC360 kbGrpDSVCDB kbDSupport kbODBC37
+Last Modified: 18-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, versions 3.0, 3.5, 3.51, 3.6, 3.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ODBC specification defines the following attributes, which an application
+can query through SQLGetInfo to get information about the Catalog names and
+Schema names, in order to use the information to qualify the objects when they
+are used in different types of SQL statements:
+
+SQL_CATALOG_LOCATION
+SQL_CATALOG_NAME
+SQL_CATALOG_NAME_SEPARATOR
+SQL_CATALOG_TERM
+SQL_CATALOG_USAGE
+SQL_SCHEMA_TERM
+SQL_SCHEMA_USAGE
+
+Although the documentation is clear about the usage of Catalog names, it is not
+clear about how the Schema names should be used.
+
+Given that the driver supports usage of Catalog names and the Catalog separator,
+if the driver returns an empty string for SQL_SCHEMA_TERM, then an application
+using the driver should qualify the tablename as follows:
+
+  select * from catalog_name.tablename
+
+The driver and the database backend should be responsible for making sure that
+such a syntax is supported.
+
+Any SQL92 compliant driver supports qualifying a tablename with a Schema name.
+The Schema name always precedes the tablename, and the separator is always a
+".".
+
+A driver that does not support Schema names returns an empty string as the Schema
+Term through SQL_SCHEMA_TERM. Also, if it exposes SQL_SCHEMA_USAGE it returns a
+zero.
+
+If the driver returns an empty string for Schema Term, then the application
+should not use the schema separator (".") when constructing a qualified name
+(that is, it should qualify names as: &lt;catalog&gt;&lt;catalog
+separator&gt;&lt;tablename&gt;).
+
+If the driver does support Schema names, but the application wants to qualify the
+tablename with the catalog and use the default schema, then the application must
+use the schema separator as well (that is, &lt;catalog&gt;&lt;catalog
+separator&gt;.&lt;tablename&gt;).
+
+Additional query words: Catalog Separator, Schema, SQLGetInfo
+
+======================================================================
+Keywords          : kbdocfix kbODBC kbODBC300 kbODBC350 kbODBC351 kbODBC360 kbGrpDSVCDB kbDSupport kbODBC370 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC360 kbODBC350 kbODBC351 kbODBC370 kbODBC300
+Version           : WINDOWS:3.0,3.5,3.51,3.6,3.7
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

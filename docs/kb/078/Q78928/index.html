@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78928: Beethoven: Manual Installation Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78928: Beethoven: Manual Installation Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78928/","publisher":null,"image":null,"headline":"Q78928: Beethoven: Manual Installation Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78928-beethoven-manual-installation-instructions">Q78928: Beethoven: Manual Installation Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78928
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Beethoven for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides instructions to manually install Microsoft Beethoven for
+Windows.
+
+The steps below assume:
+
+- Your hard disk drive is C.
+
+- Your CD-ROM drive is drive D.
+
+MORE INFORMATION
+================
+
+Copy Files
+----------
+
+1. Create a directory on the hard disk called C:\LUDWIG by typing the following
+  at the MS-DOS command prompt:
+
+  "md c:\ludwig" (without the quotation marks)
+
+2. Make it the current directory. For example, at the MS-DOS command prompt,
+  type the following and press ENTER:
+
+  "cd c:\ludwig" (without the quotation marks)
+
+3. Copy and rename the following files from the CD-ROM by typing the following
+  at the command prompt
+
+  "copy d:\&lt;old filename&gt; c:&lt;new filename&gt;" (without the quotation
+  marks)
+
+  where the following applies:
+
+     &lt;old filename&gt;    &lt;new filename&gt;
+     --------------    --------------
+
+     TBKBASE.DL_       TBKBASE.DLL
+     TBKCOMP.DL_       TBKCOMP.DLL
+     TBKUTIL.DL_       TBKUTIL.DLL
+     TBKWIN.DL_        TBKWIN.DLL
+     NINTHMSG.DL_      NINTHMSG.DLL
+     TBOOK.EX_         TBOOK.EXE
+     NINTHGLY.TB_      NINTHGLY.TBK
+     LUDWIG.IC_        LUDWIG.ICO
+     README.WRI        README.WRI
+     THENINTH.TB_      THENINTH.TBK
+
+4. Create a directory called C:\LUDWIG\MIDI. For example, type the following at
+  the MS-DOS command prompt and press ENTER:
+
+  "md c:\ludwig\midi" (without the quotation marks)
+
+5. Copy all files from the MIDI directory of the CD-ROM to the C:\LUDWIG\MIDI
+  directory. For example, type the following at the MS-DOS command prompt and
+  press ENTER:
+
+  "copy d:\midi\*.* c:\ludwig\midi" (without the quotation marks)
+
+6. The files in the C:\LUDWIG\MIDI directory have an ".MI_" extension. They need
+  to be renamed with a ".MID" extension. To change the names, type the
+  following at the MS-DOS command prompt and press ENTER:
+
+  "ren *.mi_ *.mid" (without the quotation marks)
+
+Program Manager - Create Icons
+------------------------------
+
+If you use Windows Program Manager, create a new program group for Multimedia
+Beethoven and add the Beethoven program as a new program item to this group. The
+following command line should be used:
+
+  c:\ludwig\tbook.exe c:\ludwig\theninth.tbk
+
+To have the Beethoven icon appear in the Program Manager instead of the Toolbook
+icon, choose Change Icon from the New Program Item dialog box and type the
+following filename as the file in which to look for the icon:
+
+  c:\ludwig\ludwig.ico
+
+For more information about creating new program groups, adding new program items
+to existing groups, and changing program icons in Windows, see your printed
+Windows documentation or online Help.
+
+Windows 95 - Creating Start Menu Shortcuts
+------------------------------------------
+
+If you are using Windows 95, do the following to add Beethoven to the Start
+menu:
+
+1. With your right mouse button, click the taskbar. Click Properties.
+
+2. Click the Start Menu Programs tab
+
+3. Click Advanced.
+
+4. Double-click the Programs Folder.
+
+5. Create a Beethoven Folder.
+  a. On the File menu, point to New, and then click Folder.
+
+  b. Type the following and press ENTER:
+
+  "Microsoft Beethoven" (without the quotation marks)
+
+6. Open the Microsoft Beethoven folder.
+
+7. On the File menu, point to New, and then click Shortcut.
+
+8. Type the following into the Target box:
+
+  "c:\ludwig\tbook.exe c:\ludwig\theninth.tbk" (without the quotation marks)
+
+9. Click Next
+
+10. Type the following name for the shortcut, and then click Finish:
+
+  "Microsoft Beethoven" (without the quotation marks)
+
+11. To have the Beethoven icon appear in the Start Menu instead of the toolbook
+  icon, do the following:
+  a. With your right mouse button, click the Beethoven shortcut. Then, click
+     Properties.
+
+  b. Click the Shortcut tab, and then click Change Icon.
+
+  c. Type the following in the File Name box, and then click OK:
+
+  "c:\ludwig\ludwig.ico" (without the quotation marks)
+
+  d. Click OK to finish.
+
+Additional query words: 1.00 1.0 Tbook Usage installing manual installer
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMBeethoven100
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

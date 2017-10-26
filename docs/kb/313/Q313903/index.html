@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/313/Q313903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/313/Q313903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/313/Q313903/","publisher":null,"image":null,"headline":"Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q313903-how-to-change-a-user-name-in-a-domain-in-windows-nt-40">Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q313903
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbtool kbAudITPro kbHOWTOmaster
+Last Modified: 24-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Create a New User Account
+- Disable the Old User Account
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to change a user's name in a Windows NT
+4.0 domain environment. The most efficient way to accomplish this is to create a
+new user account by copying the user account that is being modified, and then
+disabling the old account. A member of the administrators group on a Windows NT
+4.0-based domain controller (DC) will complete the following procedures.
+
+Create a New User Account
+-------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  User Manager.
+
+2. Click the user account that you want to modify, and then click Copy on the
+  User menu.
+
+3. In the User Name box, type the new name for the user, and then provide the
+  rest of the user information.
+
+4. Click to select the "User must change password at next login" check box, and
+  then click OK.
+
+Disable the Old User Account
+----------------------------
+
+1. In the User Manager window, double click the old user account.
+
+2. Click Account Disabled, and then click OK.
+
+Troubleshooting
+---------------
+
+This procedure will not copy the existing Access Control Lists (ACLs) for the old
+user account. New ACLs will need to be created for the new user account.
+
+REFERENCES
+==========
+
+For additional information on modifying account passwords, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q272530 How to Use the Cusrmgr.exe Tool to Change Administrator Account
+  Password on Multiple Computers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

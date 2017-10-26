@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138249/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138249/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138249/","publisher":null,"image":null,"headline":"Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138249-updated-vredirvxd-corrects-errors-running-files-on-lmx">Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138249
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 3rdpartynet msnets win95 kb3rdPartyNetClient
+Last Modified: 15-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run an executable file from a LAN Manager for Unix (LMX) version
+1.44 server, you may receive an "Access denied" error message, even though you
+have the correct permissions to access the file.
+
+CAUSE
+=====
+
+Some LMX configurations allow files to be opened for Execute access without
+allowing Read access. If a Windows 95 client opens such a file to run it, the
+server denies subsequent read requests. You must be able to read the file in
+order to run it.
+
+RESOLUTION
+==========
+
+This issue is resolved by the following updated file(s) for Windows 95, and
+later versions of these file(s):
+
+  VREDIR.VXD  version 4.00.953  dated 9/13/95  140,367 bytes
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 which is
+resolved by Windows 95 Service Pack 1. For information about Windows 95 Service
+Pack 1, please see the following article in the Microsoft Knowledge Base:
+
+  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+This issue is resolved in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+The updated Vredir.vxd file (version 4.00.955) is also available in Windows 95
+Service Pack 1. For information about Windows 95 Service Pack 1, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+For additional information about issues resolved by updates to this component,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q183493 Batch File Calling CD Command May Not Run on HPFS
+
+  Q174371 Possible Database File Damage When Data Is Appended
+
+  Q172594 Cannot Connect to Server with 15 Characters and Period in Name
+
+  Q167712 Fatal Exception Error in VREDIR with DCOM Program
+
+  Q165403 Windows 95 Update Prevents Sending Clear-Text Password Over Net
+
+  Q165402 Windows 95 Update to Encrypt Passwords in Memory
+
+  Q161100 File May Be Truncated When Copied to a Full Network Drive
+
+  Q160807 Cannot Connect to Windows NT Server with Many Shares
+
+  Q157114 "Access Denied" Attempting to Run File on LM/X Server
+
+  Q152186 Possible Network Data Corruption If Locking Not Used
+
+  Q150215 Disabling Automatic Network Shortcut Resolution
+
+  Q148367 Possible Network File Corruption with Redirector Caching
+
+  Q142803 Locking Error or Computer Hangs Accessing Network Database Files
+
+  Q140558 Deleting Files on Samba Servers May Delete Local Files Instead
+
+  Q138249 Updated Vredir.vxd Corrects Errors Running Files on LMX
+
+  Q138014 File May Be Truncated to Zero Bytes When Copied Onto Itself
+
+  Q136834 Error Copying Read-Only Files to Core SMB Server
+
+
+Additional query words:
+
+======================================================================
+Keywords          : 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

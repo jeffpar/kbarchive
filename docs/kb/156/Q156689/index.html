@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156689: How to Change Print Job Priority in Windows NT Server 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156689: How to Change Print Job Priority in Windows NT Server 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156689/","publisher":null,"image":null,"headline":"Q156689: How to Change Print Job Priority in Windows NT Server 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156689-how-to-change-print-job-priority-in-windows-nt-server-40">Q156689: How to Change Print Job Priority in Windows NT Server 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156689
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbprint kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can adjust print performance and the priority used to assign print jobs to
+ports by setting the SchedulerThreadPriority setting in the registry. You can
+also use this entry to improve overall system performance by reducing the
+priority of the Scheduler thread.
+
+MORE INFORMATION
+================
+
+Use the steps below to add or edit the SchedulerThreadPriority value.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Open Registry Editor (Regedt32.exe) and navigate to the following path in the
+  registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+
+2. Click to select the Print key.
+
+3. On the Edit menu, click Add Value.
+
+4. Enter the following information in the Add Value dialog box and click OK:
+
+  Value Name: SchedulerThreadPriority&lt;BR/&gt;
+  Data  Type: REG_DWORD
+
+5. Use the following table to determine what value you want to put in the Data
+  field of the DWORD Editor dialog box:
+
+     Value          Description
+     --------------------------
+     1             Above normal
+     0             Normal (default)
+     ffffffff      Below normal
+
+6. Restart the computer or restart the Spooler service to make the change take
+  effect. To restart the Spooler service, type the following at a command
+  prompt:
+
+  net stop spooler
+  net start spooler
+
+You can use Pviewer.exe from the Windows NT 4.0 Resource Kit to observe the
+thread priority for the fifth thread of the spoolss process. Note that you must
+use the Refresh key in Pviewer.exe to see the change.
+
+You can use System Policy Editor on computers running Windows NT Server 4.0 to
+configure the SchedulerThreadPriority entry for individual computers, or as a
+default configuration for all computers. To do this, perform the following
+steps:
+
+1. Start Poledit.exe and click the icon representing the computer you want to
+  modify.
+
+2. Locate the following path in the Computer Properties dialog box:
+
+     Windows NT Printers\Scheduler Priority
+
+  Assignable values are normal (default) above normal and below normal.
+
+For more information on the use of system policies, see chapter 3 of the Windows
+NT Server 4.0 Concepts and Planning Guide.
+
+
+Additional query words: monitor boost priority enable schedule
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276593/","publisher":null,"image":null,"headline":"Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276593-prb-error-nmake--fatal-error-u1045-spawn-failed-when-you-a">Q276593: PRB: Error: "NMAKE : Fatal Error U1045: Spawn Failed" When You A</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276593
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbNMake kbVC500 kbVC600
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a makefile by using the Microsoft Program Maintenance utility,
+Nmake.exe (NMAKE), you may receive the following error message:
+
+  NMAKE : fatal error U1045: spawn failed : Invalid argument
+
+CAUSE
+=====
+
+NMAKE uses the command interpreter to spawn the different tools that are needed
+to build the targets. The path to the command interpreter is found by querying
+for the value of the ComSpec environment variable. If the ComSpec environment
+variable is set incorrectly, you receive the error message shown in the
+"Symptoms" section.
+
+RESOLUTION
+==========
+
+To resolve this problem, ensure that the ComSpec environment variable is set
+correctly.
+
+For Microsoft Windows NT and Microsoft Windows 2000, the command interpreter is
+Cmd.exe. The ComSpec environment variable should contain the following:
+
+  %SYSTEMROOT%\System32\Cmd.exe
+
+To view and modify the ComSpec environment variable in Windows NT:
+
+1. Open Control Panel.
+
+2. Double-click the System icon, and then click the Environment tab.
+
+3. Select the ComSpec variable, which is located in the System Variables box.
+
+4. Modify the variable by using the Value edit box.
+
+To view and modify the ComSpec environment variable in Windows 2000 and Windows
+XP:
+
+1. Open Control Panel.
+
+2. Double-click the System icon, click the Advanced tab, and then click
+  Environment Variables.
+
+3. Select the ComSpec variable, which is located in the System Variables box.
+
+4. Click Edit to modify the variable.
+
+For Microsoft Windows 95, Microsoft Windows 98, and Microsoft Windows Millennium
+(Me), the command interpreter is Command.com. The ComSpec environment variable
+should contain the following:
+
+  %WINDIR%\Command.com
+
+To view the value of the ComSpec environment variable:
+
+1. Start the command interpreter. Click Start, point to Programs, and then click
+  MS-DOS Prompt.
+
+2. At the command prompt, type "set" (without the quotation marks), and then
+  press ENTER.
+
+A list of all of the environment variables should be displayed in alphabetical
+order.
+
+To correctly set the ComSpec environment variable:
+
+1. Open the Autoexec.bat file and add the following line:
+
+  "set ComSpec=%WINDIR%\Command.com" (without the quotation marks)
+
+2. Save the Autoexec.bat file and restart the computer.
+
+NOTE: On all these operating systems, ComSpec must not contain multiple paths.
+Only a single path is acceptable.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior in Windows 2000
+-------------------------------------------
+
+1. Start the command interpreter. Click Start, point to Programs, point to
+  Accessories, and then click Command Prompt.
+
+2. Type the following at the command prompt, and then press ENTER:
+
+  "set ComSpec=%ComSpec%;%ComSpec%" (without the quotation marks)
+
+3. Run NMAKE on your make file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbNMake kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

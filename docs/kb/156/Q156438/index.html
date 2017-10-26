@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156438: Internet Mail or News Reader Software Hangs or Times Out | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156438: Internet Mail or News Reader Software Hangs or Times Out" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156438/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156438/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156438/","publisher":null,"image":null,"headline":"Q156438: Internet Mail or News Reader Software Hangs or Times Out","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156438-internet-mail-or-news-reader-software-hangs-or-times-out">Q156438: Internet Mail or News Reader Software Hangs or Times Out</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156438
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): win95 appscomp kbAppCompatibility
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Internet mail or news reader may stop responding (hang) or time out in
+Windows 95.
+
+CAUSE
+=====
+
+This problem can occur if requests are routed through a "black hole" router.
+
+A black hole router does not return an Internet Control Message Protocol (ICMP)
+"destination unreachable" message when it needs to fragment a packet that has
+its Don't Fragment bit enabled.
+
+RESOLUTION
+==========
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+To correct this problem, add the string value
+
+  PMTUBlackHoleDetect
+
+to the following registry key:
+
+  Hkey_Local_Machine\System\CurrentControlSet\Services\VxD\MSTCP
+
+Add a data value of 1 for the new PMTUBlackHoleDetect string value.
+
+This setting specifies whether the stack attempts to detect Maximum Transmission
+Unit (MTU) routers that do not send ICMP fragmentation- needed messages. Setting
+this parameter when it is not needed can cause performance degradation. The
+default is 0.
+
+If you continue to experience the problem described in this article, add the
+string value
+
+  PMTUDiscovery
+
+to the following registry key:
+
+  Hkey_Local_Machine\System\CurrentControlSet\Services\VxD\MSTCP
+
+Add a data value of 1 for the new PMTUDiscovery string value.
+
+This setting specifies whether Microsoft TCP/IP attempts to perform path MTU
+discovery as specified in RFC 1191. The default is 1.
+
+MORE INFORMATION
+================
+
+Eudora versions 2.0.3 and 2.1.0 are examples of programs known to exhibit the
+problem described in this article. Eudora may pause when you try to send a
+message with more than 10 lines. After a few minutes, Eudora reports a time-out
+error.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

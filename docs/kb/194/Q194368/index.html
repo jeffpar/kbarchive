@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194368: FIX: Operators Do Not Recursively Call Object Default Properties | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194368: FIX: Operators Do Not Recursively Call Object Default Properties" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194368/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194368/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194368/","publisher":null,"image":null,"headline":"Q194368: FIX: Operators Do Not Recursively Call Object Default Properties","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194368-fix-operators-do-not-recursively-call-object-default-properties">Q194368: FIX: Operators Do Not Recursively Call Object Default Properties</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194368
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB kbVS600sp3fix
+Last Modified: 04-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Visual Basic 5.0, the following code calls the default property of
+obj:
+
+  Dim obj As Object
+  If obj = 5 Then
+
+If the Object's default property returns an object, it recursively calls the
+default property of that object until it finally finds a non-object property.
+
+Prior to Visual Basic 6.0 Service Pack 3 (SP3), Visual Basic 6.0 only invoked the
+default property of the second level, at most. If the default property is also
+an object, Visual Basic 6.0 generates the following error message:
+
+  Type Mismatch
+
+CAUSE
+=====
+
+The way the comparison operators (=, &gt;, &lt;, etc.) evaluate objects was
+changed in Visual Basic 6.0. However, the behavior was changed back in Visual
+Basic 6.0 SP3.
+
+NOTE: Visual Basic 5.0 behavior for this case is undocumented and programmers
+should not rely on this feature.
+
+RESOLUTION
+==========
+
+- Install Visual Basic 6.0 SP3 or later.
+
+  -or-
+
+- Use the following workaround:
+
+  1. Add the following function to your project:
+
+        Public Function EvaluateObjToLong(obj As Object) As Long
+              EvaluateObjToLong = obj
+           End Function
+
+  2. Replace the following line:
+
+        if obj = 5 then
+
+  with:
+
+        if EvaluateObjToLong(obj) = 5 then
+
+NOTE: This is only a workaround for migrating from Visual Basic 5.0 to Visual
+Basic 6.0. Programmers should not rely on this feature. The recursive evaluation
+of the default property of the assignment operator may change in future
+versions.
+
+The use of default properties, especially non-parameterized default properties,
+is discouraged for the following reasons:
+
+- The code is harder to read because the person who reads your code must know
+  exactly which property is the default to understand what you are really
+  doing.
+
+- The code might not work the way you think it should and the behavior might
+  change between different versions of Visual Basic.
+
+- If you forget to write the property name when you use an object that has a
+  default property, Visual Basic considers that you are using the default
+  property and you will not get an error message when you compile the code.
+  However, if your object does not support a non-parameterized default
+  property, the compiler generates an error message.
+
+STATUS
+======
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+NOTE: This behavior change is by design. The reasons for this are:
+
+- This change makes the behavior of late bound objects more closely match that
+  of early bound objects.
+
+- The behavior of Visual Basic 5.0 permits the possibility of an infinite loop,
+  which was determined to be much worse than this restriction.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX DLL project in Visual Basic 5. Class1 is created by
+  default.
+
+2. From the Project menu, add two additional classes named Class2 and Class3 to
+  the project.
+
+3. Add following code to Class1:
+
+        Public Property Get DefProp() As Object
+           Set DefProp = New Class2
+        End Property
+
+4. From the Tools menu, select Procedure Attributes. In the Procedure Attributes
+  dialog box, click the Advanced &gt;&gt; command button, and then change the
+  Procedure ID to "&lt;Default&gt;."
+
+5. Add the following code to Class2:
+
+        Public Property Get DefProp() As Object
+           Set DefProp = New Class3
+        End Property
+
+6. Set the DefProp of Class2 to be the default property, as in step 4.
+
+7. Add the following code to Class3:
+
+        Public Property Get DefProp() As Long
+           DefProp = 5
+        End Property
+
+8. Set the DefProp of Class3 to be the default property, as in step 4.
+
+9. From the File menu, add a Standard EXE project to the project group as
+  Project2. Form1 is created by default. Set Project2 as the start up project.
+
+10. Add the following code to the General Declarations section of Form1:
+
+        Public Function EvaluateObjToLong(obj As Object) As Long
+              EvaluateObjToLong = obj
+           End Function
+
+           Private Sub Form_Load()
+              Dim obj As Object
+              Set obj = CreateObject("project1.Class1")
+              If obj = 5 Then MsgBox "work"
+           End Sub
+
+11. Press the F5 key to run the project, and note that a message box displays
+  the word "work."
+
+12. Stop the project and save the project group.
+
+13. Open the project group in Visual Basic 6.0 (without Service Pack 3) and run
+  the project. The following error message displays:
+
+  Run Time Error '13':
+  Type Mismatch
+
+14. Change the line:
+
+        If obj = 5 Then MsgBox "work"
+
+to:
+
+         If EvaluateObjToLong(obj) = 5 Then MsgBox "work"
+
+15. Run the project again, and note that the Message box displays "work."
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp600 kbActiveX kbVBp500
+
+======================================================================
+Keywords          : kbGrpDSVB kbVS600sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

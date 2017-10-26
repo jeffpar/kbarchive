@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67881: C 6.00 Pragmas Supported by QuickC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67881: C 6.00 Pragmas Supported by QuickC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67881/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67881/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67881/","publisher":null,"image":null,"headline":"Q67881: C 6.00 Pragmas Supported by QuickC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67881-c-600-pragmas-supported-by-quickc">Q67881: C 6.00 Pragmas Supported by QuickC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67881
+Product(s): See article
+Version(s): 2.50 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 16-JAN-1991
+
+The QuickC online help system documents support for the following four
+pragmas:
+
+   check_stack, check_pointer, message, and pack
+
+Six pragmas are actually supported, but using any of the others (which
+are also supported by the C 6.00 compiler) with QuickC will have no
+effect, even though warnings are generated for only four of them.
+
+Below is a list of pragmas supported by the C compiler version 6.00
+and the behavior exhibited by QuickC versions 2.00 and 2.50 when they
+are encountered in a source file. Those that are not supported and
+that actually issue a warning will generate the following warning
+message:
+
+   C4118: pragma not supported
+
+   A pragma that the compiler does not support was used. The pragma
+   was ignored.
+
+   Pragma                       Behavior
+   ------                       --------
+
+   #pragma alloc_text()         Supported but not documented
+
+   #pragma check_pointer()      Supported and documented
+
+   #pragma check_stack()        Supported and documented
+
+   #pragma comment()            Not supported -- issues a warning at level
+                                3 and above.
+
+   #pragma intrinsic()          Not supported -- issues a warning at level
+                                1 and above.
+
+   #pragma function()           Not supported -- issues a warning at level
+                                1 and above.
+
+   #pragma linesize()           Not supported -- ignored (but is only
+                                useful with /Fs, which is not
+                                supported by QuickC).
+
+   #pragma loop_opt()           Supported (but only with -Ol -- otherwise
+                                ignored).
+
+   #pragma message()            Supported and documented.
+
+   #pragma optimize             Not supported -- ignored.
+
+   #pragma pack()               Supported and documented.
+
+   #pragma page()               Not supported -- ignored, same as
+                                linesize.
+
+   #pragma pagesize()           Not supported -- ignored, same as
+                                linesize.
+
+   #pragma same_seg()           Not supported -- issues a warning at level
+                                1 and above.
+
+   #pragma skip()               Not supported -- ignored, same as
+                                linesize.
+
+   #pragma subtitle()           Not supported -- ignored, same as
+                                linesize.
+
+   #pragma title()              Not supported -- ignored, same as
+                                linesize.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

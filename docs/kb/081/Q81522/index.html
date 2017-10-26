@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81522: Manually Reconstructing Windows Productivity Pack Groups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81522: Manually Reconstructing Windows Productivity Pack Groups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81522/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81522/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81522/","publisher":null,"image":null,"headline":"Q81522: Manually Reconstructing Windows Productivity Pack Groups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81522-manually-reconstructing-windows-productivity-pack-groups">Q81522: Manually Reconstructing Windows Productivity Pack Groups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81522
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 1.0,3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+- Microsoft Windows Productivity Pack, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows Productivity Pack version 1.0 creates two program groups
+and a total of 10 icons when you install this package under Windows version 3.0.
+There are two methods of recovery if you have inadvertently deleted the
+application icons and/or program groups. Because the icon properties for some of
+the Windows Productivity Pack modules are somewhat unusual, the normal method of
+manually setting up Windows icons or using the Windows Search For Applications
+feature doesn't work unless you have additional information about the required
+command line entries.
+
+This is because of the method Productivity Pack uses to create its icons. Each
+icon refers to an executable file and either a data file or a Windows Help file.
+If you choose Set Up Applications from the Options menu of Windows Setup, you
+can recover the executable files. The only way to recover a lost Troubleshooter
+Tools group and the associated icons is to reinstall the Productivity Pack.
+
+MORE INFORMATION
+================
+
+One way of recovering the Productivity Pack groups and icons is to run the
+Productivity Pack Setup program. This will re-create all the groups and icons.
+
+However, if you only deleted a few things, it may be easier to re-create them
+manually. Listed below are the contents of each program group and the correct
+properties that must be entered to create the icons that are normally generated
+by the Setup program.
+
+PRODUCTIVITY PACK GROUP CONTENTS
+--------------------------------
+
+Icon Description        Command Line
+----------------        ------------
+
+Learning Windows        C:\PRODPACK\LWIN.EXE
+
+Quick Troubleshooter    C:\PRODPACK\QT.EXE LWINHELP.EXE TROUBLES.HLP
+
+Working Smarter         C:\PRODPACK\LWINHELP.EXE SMARTER.HLP
+
+Note that the c:\prodpack portion of the paths listed above are simply the
+original program defaults. If you installed the Windows Productivity Pack to a
+different directory, insert the appropriate path.
+
+TROUBLESHOOTER TOOLS GROUP CONTENTS
+-----------------------------------
+
+Icon Description        Command Line
+----------------        ------------
+
+View WIN.INI            NOTEPAD.EXE C:\WINDOWS\WIN.INI
+View SYSTEM.INI         NOTEPAD.EXE C:\WINDOWS\SYSTEM.INI
+View AUTOEXEC.BAT       NOTEPAD.EXE C:\AUTOEXEC.BAT
+View CONFIG.SYS         NOTEPAD.EXE C:\CONFIG.SYS
+Control Panel           CONTROL.EXE
+File Manager            WINFILE.EXE
+PIF Editor              PIFEDIT.EXE
+
+Note that the C:\WINDOWS portion of the paths listed above are simply the
+original program defaults. If you installed Windows to a directory other than
+WINDOWS, insert the appropriate path.
+
+The name of the group in which these icons reside must be called "Troubleshooter
+Tools." You cannot shorten or change the name in any way because the Quick
+Troubleshooter is hard coded to look for that group name.
+
+You may receive the following messages when you select an icon created from the
+Set Up Applications command of Windows Setup:
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Icon Name             | Description of Problem or Message that Appears                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| MS Modified Help      | Starts the Windows Help engine, but doesn't
+                  load any file.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Windows
+Setup for WPP | Displays the error message 
+Setup is currently
+                  unable to continue. Insert the Setup disk
+                  and type setup again. Press ENTER to exit setup.
+
+                  Windows exits to MS-DOS if ENTER is chosen or if
+                  the OK button is chosen. The second time you use
+                  this icon, an error message appears stating
+                  
+Application Execution Error: Cannot find file;
+                  check to ensure the path and filename are correct. | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Quick
+Troublshooter   | Displays the error message 
+ERROR: Troubleshooter
+                  has not been set up correctly. Please insert the
+                  Setup disk and type setup.                                                                                                                                                                                                                                                                                                                                                              | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WINCBT                | Display the message 
+Change Disk: Cannot find
+                  CBTLIB.DLL, Please insert in drive A:.
+If you
+                  choose Cancel, the message 
+Application Execution
+                  Error: Cannot find file; check to ensure the path
+                  and filename are correct
+appears on the screen.                                                                                                                                                                                                    | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Learning
+Windows 1.0  | This application works correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+For information on setting up Windows icons, refer to pages 87-89 of the
+"Microsoft Windows User's Guide."
+
+Additional query words: 3.0 3.0a WPP1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWinProdPack100
+Version           : :1.0,3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

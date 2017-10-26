@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161871/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161871/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161871/","publisher":null,"image":null,"headline":"Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161871-prb-mfc-sockets-application-crashes-after-exit-on-nt-351">Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161871
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.1,4.2
+Operating System(s): 
+Keyword(s): kbMFC kbOSWinNT350 kbOSWinNT351 kbVC410 kbVC420 kbWinsock kbGrpDSMFCATL kbNoUpdate
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you unload an application or DLL that uses the MFC socket classes, an
+Unhandled Access violation occurs. This only happens on Windows NT 3.50 or 3.51
+and will often be erratic in its occurrence; it does not reproduce consistently.
+
+CAUSE
+=====
+
+A bug in the WSOCK32.DLL that is included with Windows NT 3.5x can cause this
+behavior. The bug occurs when the DLL is being unloaded via FreeLibrary.
+
+As of MFC version 4.1, the sockets classes explicitly load the WINSOCK DLL rather
+than implicitly loading the DLL. Consequently, the socket classes may encounter
+this bug when FreeLibrary is called to unload the DLL.
+
+RESOLUTION
+==========
+
+The only resolution is to prevent WSOCK32.DLL from being completely unloaded
+when MFC makes the call to FreeLibrary. This can only be done by increasing the
+DLL's module usage count.
+
+The effect of this will be an increased memory footprint for the process that is
+using the socket classes. If it is a DLL that is using the MFC socket classes,
+then the WSOCK32.DLL will remain loaded in the process memory space even after
+the MFC DLL is unloaded.
+
+However, as long as the DLL is not being used or accessed, this memory will be
+swapped out to disk and should not have a major impact on performance.
+
+To implement the following workaround, modify your code to make an additional
+call to LoadLibrary after the call to AfxSocketInit(). Because the problem only
+occurs on Windows NT 3.5x, you don't need to include the additional call to
+LoadLibrary for Windows 95 or Windows NT 4.0. This can be determined using the
+GetVersion() API call.
+
+For example:
+
+     BOOL CMyApp::InitInstance()
+     {
+       ...
+       if(!AfxSocketInit())
+       {
+             AfxMessageBox(IDP_SOCKETS_INIT_FAILED);
+             return FALSE;
+       }
+       DWORD dwVersion = ::GetVersion();
+       BOOL bWin4 = (BYTE)dwVersion &gt;= 4;
+       if(!bWin4 &amp;&amp; !LoadLibrary("WSOCK32.DLL"))
+       {
+             AfxMessageBox(IDP_SOCKETS_INIT_FAILED);
+             return FALSE;
+       }
+       ...
+
+Additional query words: 4.10 4.20 kbdsd
+
+======================================================================
+Keywords          : kbMFC kbOSWinNT350 kbOSWinNT351 kbVC410 kbVC420 kbWinsock kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : winnt:4.1,4.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

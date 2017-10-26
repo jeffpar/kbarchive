@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148971/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148971/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148971/","publisher":null,"image":null,"headline":"Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148971-tr-attached-ipx-sna-client-not-find-server-across-fddi-bridge">Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148971
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run the SNA Server client software configured to use the Novell NetWare
+IPX/SPX client interface on Token Ring, the client is unable to find a SNA
+Server located across an FDDI transitional bridge.
+
+When the problem occurs on a SNA Server Microsoft Windows 3.x client, Wnap.exe
+will display the following error when it is started:
+
+  SNA Server Error: 546 Cannot establish connection with SNA Server
+  &lt;servername&gt;.
+
+Microsoft Windows NT and Microsoft Windows 95 clients will indicate that the
+SnaBase service is not started.
+
+CAUSE
+=====
+
+When you connect a SNA Server IPX/SPX client from a Token Ring network to a SNA
+Server located on FDDI, the intervening FDDI bridge may bit-swap the destination
+address of the IPX/SPX connection request, causing the SNA client to fail to
+connect to the SNA Server.
+
+This problem only occurs when SNA Server clients are configured to use NetWare
+IPX/SPX on Token Ring, where the server's IPX address is based on the network
+card adapter address installed in the SNA Server.
+
+Ethernet-attached IPX clients will not encounter this problem because the FDDI
+bridge does not bit-flip destination addresses when bridging frames. Also, all
+other client-server connection methods supported by SNA Server (for example,
+named pipes, TCP/IP sockets, Banyan IP, and AppleTalk) do not directly refer to
+the server's adapter address when it connects to the server and will not
+encounter this problem.
+
+RESOLUTION
+==========
+
+To support this configuration, an update to the SNA Server client software is
+available that supports "bit flipping" of the SNA Server's IPX address. It will
+try if the following new SNA Server client setting is enabled:
+
+  FlipMacAddress=Yes
+
+For Windows 3.x clients, this setting must be added to the [WNAP] section of the
+Win.ini file.
+
+For Windows NT clients, this setting must be as follows:
+
+ HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SnaBase/ 
+  Parameters/SnaSpx/ 
+
+  FlipMacAddress: REG_SZ: Yes
+
+For Windows 95 clients, this setting must be as follows:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft/SnaBase/Parameters/SnaSpx/ 
+
+  FlipMacAddress: REG_SZ: Yes
+
+If this value is set to Yes, the SNA Server client NetWare transport first tries
+the bit flipped server address, and if it fails, it retries with the original
+non-flipped address.
+
+For additional information on the algorithm for bit-flipping network addresses,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q123791 SNA Server Remote Station Discovery Process
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 2.0, 2.1, 2.11, and
+2.11.sp1.
+This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

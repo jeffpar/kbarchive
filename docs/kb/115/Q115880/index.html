@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115880: ADT2: ADT Application Setup Fails with Error -1809 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115880: ADT2: ADT Application Setup Fails with Error -1809" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115880/","publisher":null,"image":null,"headline":"Q115880: ADT2: ADT Application Setup Fails with Error -1809","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115880-adt2-adt-application-setup-fails-with-error--1809">Q115880: ADT2: ADT Application Setup Fails with Error -1809</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115880
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 08-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When you install a custom application created with the Microsoft Access
+Developer's Toolkit (ADT), you may receive the following error message:
+
+  Setup couldn't create a SYSTEM.MDA file. After Setup is completed, reboot
+  your computer, then run the Workgroup Administrator before you run this
+  application. (-1809)
+
+CAUSE
+=====
+
+This problem occurs if no form of file sharing (SHARE.EXE, VSHARE.386, or
+network locking) is running when the Workgroup Administrator (WRKGADM.EXE) tries
+to create a SYSTEM.MDA file. In order for the Workgroup Administrator to be able
+to create the SYSTEM.MDA file, some form of file sharing must be running.
+
+RESOLUTION
+==========
+
+There are two workarounds for this problem:
+
+- Ship a SYSTEM.MDA file with your custom application. To do this, add the
+  SYSTEM.MDA file in the Files To Include box in the ADT Setup Wizard. This
+  way, the Workgroup Administrator does not need to create a SYSTEM.MDA file.
+  Note that the file must be named SYSTEM.MDA in order for this workaround to
+  work. No other name (such as MYSYS.MDA) will work.
+
+- Test to see if some form of file sharing is running before starting the
+  custom Setup program. You can test to see if file sharing is running in a
+  number of ways. To test for file sharing in Microsoft Windows, you can start
+  the MS-DOS prompt and then type "share" (without quotation marks). If file
+  sharing is running, you will receive a message stating "SHARE already
+  installed." You can also test for file sharing with a small Microsoft Visual
+  Basic or Microsoft Visual C application (these applications are not discussed
+  in this article).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Access Developer's
+Toolkit version 2.0. This problem no longer occurs in the Microsoft Access
+Developer's Toolkit version 7.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create application disks using the ADT Setup Wizard. Do not include a
+  SYSTEM.MDA file with your application.
+
+2. Install your application on a computer that is not running some form of file
+  sharing (either loading SHARE.EXE in the AUTOEXEC.BAT file or loading
+  VSHARE.386 in the [386Enh] section of the SYSTEM.INI file). Note that you
+  receive the error message mentioned earlier in this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281570/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281570/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281570/","publisher":null,"image":null,"headline":"Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281570-howto-use-asp-request-and-session-collections-to-link-forms">Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281570
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbdta kbDSupport kbiis500
+Last Modified: 21-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Request and Session collections in Active
+Server Pages (ASP) to link the HTML forms on multiple Web pages.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+To create the ASP sample, follow these steps:
+
+1. In Windows Explorer, open the root folder of your Web site.
+
+2. In Notepad, save each of the following pages in the root folder:
+
+  Page1.asp
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Page 1<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">action=</span><span class="s">"page2.asp"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>NAME <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"NAME"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Page2.asp
+
+  <span class="c">&lt;!--#include file="session.inc"--&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Page 2<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">action=</span><span class="s">"page3.asp"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>ADDRESS <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"ADDRESS"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Page3.asp
+
+  <span class="c">&lt;!--#include file="session.inc"--&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Page 3<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">action=</span><span class="s">"page4.asp"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>PHONE <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"PHONE"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Page4.asp
+
+  <span class="c">&lt;!--#include file="session.inc"--&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">Declare</span> <span class="na">variables</span> <span class="na">for</span> <span class="na">later</span> <span class="na">use</span><span class="err">.</span>
+    <span class="na">Dim</span> <span class="na">strBody</span>
+    <span class="na">Dim</span> <span class="na">objMail</span>
+
+    <span class="err">'</span> <span class="na">The</span> <span class="na">following</span> <span class="na">constants</span> <span class="na">are</span> <span class="na">used</span> <span class="na">with</span> <span class="na">the</span> <span class="na">CDONTS</span><span class="err">.</span><span class="na">NewMail</span> <span class="na">object:</span>
+    <span class="err">'</span><span class="na">----</span> <span class="na">BodyFormat</span> <span class="na">Property</span> <span class="na">----</span>
+      <span class="err">'</span> <span class="na">The</span> <span class="na">Body</span> <span class="na">property</span> <span class="na">is</span> <span class="na">to</span> <span class="na">include</span> <span class="na">HTML</span><span class="err">.</span>
+      <span class="na">Const</span> <span class="na">CdoBodyFormatHTML =</span><span class="err"> </span><span class="s">0</span>
+      <span class="err">'</span> <span class="na">The</span> <span class="na">Body</span> <span class="na">property</span> <span class="na">is</span> <span class="na">to</span> <span class="na">be</span> <span class="na">plain</span> <span class="na">text</span> <span class="err">(</span><span class="na">default</span><span class="err">).</span>
+      <span class="na">Const</span> <span class="na">CdoBodyFormatText =</span><span class="err"> </span><span class="s">1</span>
+    <span class="err">'</span><span class="na">----</span> <span class="na">MailFormat</span> <span class="na">Property</span> <span class="na">----</span>
+      <span class="err">'</span> <span class="na">The</span> <span class="na">NewMail</span> <span class="na">object</span> <span class="na">is</span> <span class="na">to</span> <span class="na">be</span> <span class="na">in</span> <span class="na">MIME</span> <span class="na">format</span><span class="err">.</span>
+      <span class="na">Const</span> <span class="na">CdoMailFormatMime =</span><span class="err"> </span><span class="s">0</span>
+      <span class="err">'</span> <span class="na">The</span> <span class="na">NewMail</span> <span class="na">object</span> <span class="na">is</span> <span class="na">to</span> <span class="na">be</span> <span class="na">in</span> <span class="na">plain</span> <span class="na">text</span> <span class="err">(</span><span class="na">default</span><span class="err">).</span>
+      <span class="na">Const</span> <span class="na">CdoMailFormatText =</span><span class="err"> </span><span class="s">1</span>
+    <span class="err">'</span><span class="na">----</span> <span class="na">Importance</span> <span class="na">Property</span> <span class="na">----</span>
+      <span class="err">'</span> <span class="na">Low</span> <span class="na">importance</span>
+      <span class="na">Const</span> <span class="na">CdoLow    =</span><span class="err"> </span><span class="s">0</span>
+      <span class="err">'</span> <span class="na">Normal</span> <span class="na">importance</span> <span class="err">(</span><span class="na">default</span><span class="err">)</span>
+      <span class="na">Const</span> <span class="na">CdoNormal =</span><span class="err"> </span><span class="s">1</span>
+      <span class="err">'</span> <span class="na">High</span> <span class="na">importance</span>
+      <span class="na">Const</span> <span class="na">CdoHigh   =</span><span class="err"> </span><span class="s">2</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Page 4<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">strBody =</span><span class="err"> </span><span class="s">"&lt;html&gt;&lt;body&gt;"</span> <span class="err">&amp;</span> <span class="na">vbCrLf</span>
+
+    <span class="err">'</span> <span class="na">Loop</span> <span class="na">through</span> <span class="na">the</span> <span class="na">session</span> <span class="na">collection</span><span class="err">.</span>
+    <span class="na">For</span> <span class="na">Each</span> <span class="na">objFIELD</span> <span class="na">in</span> <span class="na">Session</span><span class="err">.</span><span class="na">Contents</span>
+      <span class="err">'</span> <span class="na">Build</span> <span class="na">a</span> <span class="na">Web</span> <span class="na">page</span> <span class="na">from</span> <span class="na">the</span> <span class="na">collection</span> <span class="na">values</span><span class="err">.</span>
+      <span class="na">strBody =</span><span class="err"> </span><span class="s">strBody</span> <span class="err">&amp;</span> <span class="err">"&lt;</span><span class="na">p</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> objFIELD <span class="err">&amp;</span> " = "
+      strBody = strBody <span class="err">&amp;</span> Session(objFIELD) <span class="err">&amp;</span> "<span class="nt">&lt;/p&gt;</span>" <span class="err">&amp;</span> vbCrLf
+    Next
+
+    strBody = strBody <span class="err">&amp;</span> "<span class="nt">&lt;/body&gt;&lt;/html&gt;</span>" <span class="err">&amp;</span> vbCrLf
+
+    ' Create a mail object.
+    Set objMail = CreateObject("CDONTS.NewMail")
+      ' Set email addresses.
+      objMail.From = "someone@microsoft.com"
+      objMail.To = "someone@microsoft.com"
+      ' Add the subject.
+      objMail.Subject = "Form Results"
+      ' Set the mail format.
+      objMail.BodyFormat = CdoBodyFormatHTML
+      objMail.MailFormat = CdoMailFormatMime
+      ' Add the Web page.
+      objMail.Body = strBody
+      ' Send the email.
+      objMail.Send
+    Set objMail = Nothing
+    ' Erase the session collection.
+    Session.Abandon  
+  %&gt;
+  <span class="nt">&lt;p&gt;</span>Your results have been mailed!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Session.inc
+
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">Loop</span> <span class="na">through</span> <span class="na">the</span> <span class="na">submitted</span> <span class="na">form</span> <span class="na">fields</span><span class="err">.</span>
+    <span class="na">For</span> <span class="na">Each</span> <span class="na">objFIELD</span> <span class="na">in</span> <span class="na">Request</span><span class="err">.</span><span class="na">Form</span>
+      <span class="err">'</span> <span class="na">Save</span> <span class="na">each</span> <span class="na">value</span> <span class="na">in</span> <span class="na">a</span> <span class="na">session</span> <span class="na">variable</span><span class="err">.</span>
+      <span class="na">Session</span><span class="err">(</span><span class="na">objFIELD</span><span class="err">)</span> <span class="err">=</span> <span class="na">Request</span><span class="err">.</span><span class="na">Form</span><span class="err">(</span><span class="na">objFIELD</span><span class="err">)</span>
+    <span class="na">Next</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+
+3. When Page1.asp is browsed through HTTP, the values that are submitted on the
+  form are passed to Page2.asp.
+
+4. Page2.asp uses the server-side include file, Session.inc, to loop through any
+  fields from the form on Page1.asp through the Request collection and saves
+  the values to the Session collection.
+
+5. This behavior is repeated for Page3.asp and Page4.asp, but Page4.asp contains
+  additional ASP code that loops through the Session collection and builds and
+  HTML page that will be sent by e-mail message.
+
+References
+----------
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q218607 How to Create a File Defining the Constants for Use w/ CDONTS
+
+  Q186204 HOWTO: Use CDONTS to Collect and Mail Information From a User
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbdta kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

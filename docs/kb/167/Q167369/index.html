@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167369/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167369/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167369/","publisher":null,"image":null,"headline":"Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167369-wd97-cannot-print-after-canceling-using-hpdj820cxi-driver">Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167369
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbprint kbusage word97
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you cancel printing to a Hewlett-Packard (HP) DeskJet 820CXi printer in
+Word, and then try to print again, you may experience the following symptoms:
+
+Case 1
+------
+
+Word flashes the "Printing" dialog box.
+
+Case 2
+------
+
+You may receive the following error message when you try to print after canceling
+printing a second time
+
+  Printer Driver Busy Another software application is using the printer. Cancel
+  printing and wait until the other software program has finished. Try printing
+  again.
+
+followed by this message:
+
+  Windows cannot print due to a problem with the current printer setup.
+  Try one or more of the following:
+
+  * Check the printer by printing a test page from Windows.
+  * Make sure the printer is turned on and online.
+  * Reinstall the printer driver.
+
+Case 3
+------
+
+If you continue to try to print, and the HP Deskjet 820 is set as default, you
+may receive the following error message:
+
+  Invalid Page Fault in module unknown at 014f:30080f6c
+
+CAUSE
+=====
+
+These problems have been reported to occur when the following conditions are
+true:
+
+- Background Printing is turned off.
+
+- The HP DeskJet 820CXi driver version 8.2 is being used.
+
+WORKAROUND
+==========
+
+To work around this problem, use any of the following methods.
+
+Method 1: Change Printers
+-------------------------
+
+In Word, change the printer to a different installed printer, change back to the
+HP DeskJet 820CXi printer, and then try printing again.
+
+Method 2: Turn on Background Printing
+-------------------------------------
+
+1. On the Tools menu, click Options.
+
+2. Click the Print tab.
+
+3. Under Printing Options, click to select the Background Printing check box,
+  and then click OK.
+
+Method 3: Restart Windows
+-------------------------
+
+Save your document and quit Word. Also quit any other programs you may have open.
+Then, quit and restart Windows. Start Word, open your document, and try printing
+to the HP DeskJet 820CXi again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: hpdj dj820 dj820c hpdj820 hpdj820c
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbprint kbusage word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

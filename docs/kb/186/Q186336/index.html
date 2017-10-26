@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186336/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186336/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186336/","publisher":null,"image":null,"headline":"Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186336-info-unattendtxt-options-that-are-used-during-an-unattended-up">Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186336
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbSBK
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An unattended upgrade from a previous version of Microsoft Windows NT to
+Microsoft Windows NT 4.0 ignores most parameters commonly set in the
+Unattend.txt answer file. The upgrade installation automatically reads the
+registry of the system being upgraded for system configuration information and
+uses those values during the upgrade. It is not possible to override or replace
+the existing system configuration information with an unattended answer file.
+
+MORE INFORMATION
+================
+
+During an unattended upgrade, only the following parameters in the unattend
+answer file are used. If NtUpgrade = yes, all other options in the answer file,
+if specified, are ignored.
+
+  [Unattended]
+  OemPreinstall = Yes
+  NoWaitAfterTextMode = 1
+  NoWaitAfterGUIMode = 1
+  NtUpgrade = Yes
+  OverwriteOemFilesOnUpgrade = Yes
+
+  [UserData]
+  ProductId = "xxx-xxxxxxx"
+
+  [GuiUnattended]
+  OemSkipWelcome = 1
+
+
+NOTE: During an upgrade installation, if OemPreinstall is set to YES, the $OEM$
+directory structure is copied to the local hard disk, but the directory
+structure is not used during the installation. Any options specified in a
+Cmdlines.txt file are ignored. Windows NT Setup recognizes and uses the $OEM$
+directory structure only if NtUpgrade is set to NO in the Unattend.txt answer
+file. Most options commonly applied with a Cmdlines.txt file can still be
+applied during the unattended upgrade by specifying the winnt/winnt32
+command-line switch /e. The /e switch allows Setup to run an external program at
+the end of GUI-mode Setup. This option can be used to apply a service pack or to
+start other custom applications during Setup. For additional information about
+the /e command-line switch, please see Chapter 5 of the Windows NT Deployment
+Guide.
+
+REFERENCES
+==========
+
+The Windows NT Deployment Guide, the Automating Windows NT Setup Deployment
+Guide, and other resources designed to aid in the deployment of Microsoft
+Windows NT are available for free download from the following Microsoft Web
+site:
+
+  http://www.microsoft.com/ntworkstation/info/deployguide.htm
+
+For additional information about unattended installations, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q155197 Unattended Setup Parameters for Unattend.txt File
+
+  Q180647 Disabling WinNT 3.51 Video Drivers to Enable Unattended Installation
+
+Additional query words: unattend upgrade oem Setup
+
+======================================================================
+Keywords          : kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

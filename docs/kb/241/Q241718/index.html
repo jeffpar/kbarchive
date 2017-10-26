@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241718/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241718/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241718/","publisher":null,"image":null,"headline":"Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241718-howto-convert-a-dbtimestamp-into-a-date">Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241718
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbAutomation kbMFC kbVC400 kbVC420 kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When given a DBTIMESTAMP value, you might need to convert the value into a type
+that is compatible with COM IDispatch interfaces such as the DATE type. If you
+are using Microsoft Foundation Classes (MFC), you can use the COleDateTime class
+to help convert from a DBTIMESTAMP to a DATE. If you are not using MFC, you can
+still use the code provided by MFC without needing the entire MFC framework.
+
+MORE INFORMATION
+================
+
+If You Are Using MFC, Use this Code
+-----------------------------------
+
+  #include &lt;oledb.h&gt;
+
+  void MFCTestConversion()
+  {
+     DBTIMESTAMP dbTimeStamp;
+
+     dbTimeStamp.year = 1900;
+     dbTimeStamp.month = 1;
+     dbTimeStamp.day = 1;
+     dbTimeStamp.hour = 0;
+     dbTimeStamp.minute = 0;
+     dbTimeStamp.second = 0;
+
+     COleDateTime d(dbTimeStamp.year, dbTimeStamp.month, dbTimeStamp.day,  
+              dbTimeStamp.hour, dbTimeStamp.minute, dbTimeStamp.second);
+
+     COleVariant var = d;
+     DATE date = var.date;
+  }
+
+If You Are Using MFC, Use this Code
+-----------------------------------
+
+  //headers needed
+  #include &lt;windows.h&gt;
+  #include &lt;oledb.h&gt;
+
+  // One-based array of days in year at month start
+  int MonthDays[13] =
+  	{0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
+
+  // Modified Helper taken from \MFC\SRC\OLEVAR.CPP, _AfxOleDateFromTm
+  // This will compile in .c files too
+  BOOL OleDateFromTm(WORD wYear, WORD wMonth, WORD wDay, 
+                     WORD wHour, WORD wMinute, WORD wSecond, DATE *dtDest)
+  {
+     long nDate;
+     double dblTime;
+     BOOL bLeapYear;
+     int nDaysInMonth;
+
+     // Validate year and month (ignore day of week and milliseconds)
+     if (wYear &gt; 9999 || wMonth &lt; 1 || wMonth &gt; 12)
+        return FALSE;
+
+     //  Check for leap year and set the number of days in the month
+     bLeapYear = ((wYear &amp; 3) == 0) &amp;&amp; ((wYear % 100) != 0 || (wYear % 400) == 0);
+
+     nDaysInMonth = MonthDays[wMonth] - MonthDays[wMonth-1] +
+                 ((bLeapYear &amp;&amp; wDay == 29 &amp;&amp; wMonth == 2) ? 1 : 0);
+
+     // Finish validating the date
+     if (wDay &lt; 1 || wDay &gt; nDaysInMonth || wHour &gt; 23 || wMinute &gt; 59 || wSecond &gt; 59)
+        return FALSE;
+
+     // Cache the date in days and time in fractional days
+     //It is a valid date; make Jan 1, 1AD be 1
+     nDate = wYear*365L + wYear/4 - wYear/100 + wYear/400 + MonthDays[wMonth-1] + wDay;
+
+     //  If leap year and it's before March, subtract 1:
+     if (wMonth &lt;= 2 &amp;&amp; bLeapYear)
+        --nDate;
+
+     //  Offset so that 12/30/1899 is 0
+     nDate -= 693959L;
+
+     dblTime = (((long)wHour * 3600L) +  // hrs in seconds
+                ((long)wMinute * 60L) +  // mins in seconds
+                ((long)wSecond)) / 86400L;
+
+     *dtDest = (double) nDate + ((nDate &gt;= 0) ? dblTime : -dblTime);
+     return TRUE;
+  }
+
+  void TestConversion()
+  {
+     BOOL bRet;
+     DBTIMESTAMP dbTimeStamp;
+     DATE d;
+
+     dbTimeStamp.year = 1900;
+     dbTimeStamp.month = 1;
+     dbTimeStamp.day = 1;
+     dbTimeStamp.hour = 0;
+     dbTimeStamp.minute = 0;
+     dbTimeStamp.second = 0;
+
+     bRet = OleDateFromTm(dbTimeStamp.year, dbTimeStamp.month,  
+                          dbTimeStamp.day, dbTimeStamp.hour,  
+                          dbTimeStamp.minute, dbTimeStamp.second, &amp;d);
+     if (bRet) //succeeded...
+     {
+        //d should equal 2.00
+     }
+  }
+
+REFERENCES
+==========
+
+COleDateTime in MSDN
+
+Additional query words: COleDateTime DBTIMESTAMP OLEDB Conversion VarDateFromStr
+
+======================================================================
+Keywords          : kbnokeyword kbAutomation kbMFC kbVC400 kbVC420 kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

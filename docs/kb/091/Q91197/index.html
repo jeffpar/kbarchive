@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q91197: How To: Troubleshooting a Network DDE Link with WFWG | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q91197: How To: Troubleshooting a Network DDE Link with WFWG" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/091/Q91197/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/091/Q91197/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/091/Q91197/","publisher":null,"image":null,"headline":"Q91197: How To: Troubleshooting a Network DDE Link with WFWG","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q91197-how-to-troubleshooting-a-network-dde-link-with-wfwg">Q91197: How To: Troubleshooting a Network DDE Link with WFWG</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q91197
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows for Workgroups, the Windows Clipboard Viewer was completely rebuilt
+as ClipBook Viewer, which includes capabilities to transfer information over the
+network (called network dynamic data exchange [DDE]).
+
+MORE INFORMATION
+================
+
+To test network DDE, both machines should be running the same video driver, such
+as VGA (16 colors), which shipped with Windows for Workgroups.
+
+Network DDE works like object-linking-and-embedding (OLE) over a network. There
+are several logical steps to troubleshoot a network DDE problem:
+
+1. Make sure that the machines can communicate with each other. To test this,
+  try to copy a file from one machine to another. Remember that a Windows for
+  Workgroups machine needs to be in enhanced mode and have 4 megabytes (MB) of
+  memory to have server functionality.
+
+2. To make sure that the problem is not application-related, do a network DDE
+  link using Paintbrush and Write. The steps are as follows:
+
+  a. Open a bitmap in Paintbrush and copy it to the Clipboard.
+
+  b. Open ClipBook. From the Edit menu, choose Paste. This brings up a dialog
+     box that asks for a Page (Share) Name.
+
+  c. Type "test" (without the quotation marks) as the Page Name and choose OK.
+     (Make sure the Share Item Now box is selected.)
+
+  d. When the next dialog box comes up, choose Start Application On Connect.
+
+  e. From the Client machine, open ClipBook. From the File menu, choose
+     Connect.
+
+  f. Select the server name from the list, then select the "test" file.
+
+  g. From the Edit menu, choose Copy.
+
+  h. Start Write. From the Edit menu, choose Paste Link. This should create a
+     Network DDE link from Paintbrush on the server machine to Write on the
+     client machine.
+
+  i. Test the link by drawing in Paintbrush on the server and see if Write is
+     updated on the client.
+
+If Write isn't updated, there is a problem with Network DDE. If the above steps
+work, the problem is in one or both of the applications that were having the
+original problem.
+
+Each of the applications can be tested with Write or Paintbrush to determine
+which application is at fault. Some applications may have to be upgraded to work
+properly with Network DDE. Check with the application vendor for more
+information on a specific application.
+
+Additional query words: 3.10 3.1 netdde win31 tshoot 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

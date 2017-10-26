@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/229/Q229351/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/229/Q229351/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/229/Q229351/","publisher":null,"image":null,"headline":"Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q229351-sp5-includes-an-updated-version-of-the-streaming-simd-driver">Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q229351
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbtool kbWinNT400sp5fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Service Pack 5 (SP5) includes an updated Streaming SIMD
+Extensions driver. The Streaming SIMD (Single Instruction Multiple
+Data)Extensions driver provides transparent, user-mode support for saving and
+restoring the Streaming SIMD Extensions register state in Windows NT 4.0 SP5.
+This driver enables programs to use the extended register set required by some
+of the Streaming SIMD Extensions. The driver provides support for all Intel
+Architecture processor families that support the Streaming SIMD Extensions. The
+Streaming SIMD Extensions driver runs on personal computers that are based on
+Intel Architecture processors supporting the Streaming SIMD Extensions and run
+Windows NT 4.0 SP5.
+
+MORE INFORMATION
+================
+
+The Streaming SIMD Extensions driver provides error-related information in
+Windows NT Event Viewer. This section contains the error message descriptions in
+the event log and the details needed to understand the error message and take
+corrective action.
+
+Error Message Description
+-------------------------
+
+- The driver did not enable Streaming SIMD Extensions support as floating point
+  emulation is enabled.
+
+  The Streaming SIMD Extensions driver does not enable Streaming SIMD Extensions
+  support in the operating system if floating-point emulation has been enabled.
+  To turn off floating-point emulation in Windows NT 4.0 SP5, run the "pentnt
+  -o" (without the quotation marks) command and then reboot the computer.
+
+- Not all processors in the system support the Streaming SIMD Extensions.
+
+  The Streaming SIMD Extensions driver did not enable Streaming SIMD Extensions
+  support in the operating system because all processors in the computer do not
+  support Streaming SIMD Extensions.
+
+- The driver was unable to allocate memory.
+
+  The Streaming SIMD Extensions driver was unable to allocate required memory
+  and did not enable Streaming SIMD Extensions support in the operating system.
+
+- The driver failed to register required notify routines.
+
+  The Streaming SIMD Extensions driver did not enable Streaming SIMD Extensions
+  support in the operating system because it could not register required
+  routines.
+
+- The driver failed to hook required handler.
+
+  The Streaming SIMD Extensions driver did not enable Streaming SIMD Extensions
+  support in the operating system because of an internal error.
+
+For information about obtaining Windows NT 4.0 SP5, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+For information about SIMD, go to:
+http://support.intel.com/support/processors/pentiumiii/ntdriver.htm
+
+NOTE: What are Intel Streaming SIMD Extensions?
+
+Streaming SIMD Extensions is a new set of instructions that will be supported by
+future Intel processors beginning with the Pentium III processor. Single
+Instruction Multiple Data (SIMD) extensions significantly accelerate performance
+of 3D graphics. Besides 3D graphics improvements, the extensions also include
+additional integer and cacheability instructions that improve other aspects of
+performance.
+
+Any errors seen on a production server shouldn't be a major problem; simply
+DISABLE the INTLFXSR service and reboot.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

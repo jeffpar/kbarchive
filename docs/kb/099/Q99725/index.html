@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99725: PC DB: Checking for Ownerless Files in NetWare | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99725: PC DB: Checking for Ownerless Files in NetWare" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99725/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99725/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99725/","publisher":null,"image":null,"headline":"Q99725: PC DB: Checking for Ownerless Files in NetWare","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99725-pc-db-checking-for-ownerless-files-in-netware">Q99725: PC DB: Checking for Ownerless Files in NetWare</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99725
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1,3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two Novell NetWare utilities you can use to check for ownerless
+database files: NDIR and Filer.
+
+NDIR
+----
+
+To use NDIR to check for ownerless files in the GLB subdirectory of the Microsoft
+Mail database, do the following:
+
+1. Change to the GLB subdirectory in the Mail database.
+
+2. Type the following and press ENTER:
+
+  " ndir *.* " (without the quotation marks)
+
+  A listing similar to the following should appear:
+
+  SERVER/SYS:HOME\MAILDATA\GLB
+
+  Files                 Size       Last Updated          Flags      Owner
+  ------------------------------------------------------------------------
+
+  ACCESS    GLB           586  5-21-93  5:05p [Rw-A--------------]   N/A
+  ACCESS2   GLB            69  5-21-93  5:05p [Rw-A--------------]   N/A
+  ACCESS3   GLB           512  5-21-93  5:05p [Rw-A--------------]   N/A
+  ANSISORT  GLB           795  9-09-92  0:00  [Rw-A--------------]   N/A
+  BUSY      MDM         1,563  9-09-92  0:00  [Rw-A--------------]   N/A
+  BUSY      SCR           297  9-09-92  0:00  [Rw-A--------------]   N/A
+  C850SORT  GLB           795  9-09-92  0:00  [Rw-A--------------]   N/A
+  CONTROL   GLB             8  5-21-93  5:05p [Rw-A--------------]   N/A
+  CREDCARD  MDM         7,806  9-09-92  0:00  [Rw-A--------------]   N/A
+  DEFAULT   MDM         6,517  9-09-92  0:00  [Rw-A--------------]   N/A
+  DEFAULT   SCR         2,144  9-09-92  0:00  [Rw-A--------------]   N/A
+  DS_MSG    GLB        32,512  9-09-92  0:00  [Rw-A--------------]   N/A
+  ERRORADM  GLB        22,272  9-09-92  0:00  [Rw-A--------------]   N/A
+  ERRORDYN  GLB         1,920  9-09-92  0:00  [Rw-A--------------]   N/A
+  GLOBAL    GLB           512  5-21-93  5:05p [Rw-A--------------]   N/A
+  GROUP     GLB             4  5-21-93  5:05p [Rw-A--------------]   N/A
+  GRPMEM    GLB             4  5-21-93  5:05p [Rw-A--------------]   N/A
+  GWTRANS   GLB             0  5-21-93  5:05p [Rw-A--------------]   N/A
+  HAYES12   MDM         6,127  9-09-92  0:00  [Rw-A--------------]   N/A
+  HAYES12   SCR         1,927  9-09-92  0:00  [Rw-A--------------]   N/A
+  HAYES24   MDM         6,262  9-09-92  0:00  [Rw-A--------------]   N/A
+
+  "N/A" in the Owner column indicates the file has no owner.
+
+Filer
+-----
+
+To use FILER.EXE to check for ownerless files, do the following:
+
+1. Change to the subdirectory where the suspected ownerless file resides.
+
+2. Type the following and press ENTER:
+
+  " filer " (without the quotation marks)
+
+3. In the Available Topics list box, select Directory Contents and press ENTER.
+  A listing of files in the directory will be displayed.
+
+4. Highlight the file you suspect to be ownerless, and press ENTER.
+
+5. From the File Options menu, select View/Set File Information and press ENTER.
+
+6. At the File Information For &lt;filename&gt; menu, an Owner field will be
+  displayed and will contain the entry "No Owner."
+
+Additional query words: 2.10 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN210
+Version           : WINDOWS:2.1,3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

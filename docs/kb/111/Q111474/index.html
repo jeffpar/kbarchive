@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111474/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111474/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111474/","publisher":null,"image":null,"headline":"Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111474-prb-usage-of-an-org-directive-in-a-struct-declaration">Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111474
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Beginning with MASM version 6.0, an ORG directive is permitted in a structure
+declaration. This enables the generation of a template that can ease references
+to the internals of data structures that are predefined, for example by the
+operating system, the operating platform, or a high- level language compiler. A
+consequence of declaring an ORG in a STRUCT is that an instance is not intended
+to be defined in the source file, and in fact will generate the following
+error:
+
+  error: A2159: structure cannot be instanced
+
+This is the expected behavior.
+
+MORE INFORMATION
+================
+
+For additional information about the usage of an ORG directive inside a
+structure declaration, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q111473 BUG: ORG in STRUCT Affects Current Segment Size with -Sf
+
+The following code sample illustrates the usage of an ORG in a structure
+declaration. The sample declares a structure that is used as a template to refer
+to video memory for the last two lines of a text mode display. Possible usage
+includes easing the display of status information of an application running in
+text mode. This is not necessarily the best method to accomplish this task, but
+is presented to demonstrate a point.
+
+This code sample assumes a color video adapter running in the 80X25 text display
+mode with the processor running in real mode, and must be modified for another
+configuration.
+
+Sample Code
+-----------
+
+  ; Assemble options needed: none
+  .MODEL SMALL,C
+  .386
+   
+  VIDEOMEM     EQU 0B800h   ; segment address of video memory
+  NUMLINES     EQU 25
+  NUMCOLS      EQU 80
+  BLACKONWHITE EQU  70h     ; display attributes
+  YELLOWONBLUE EQU  1Eh
+   
+  status STRUCT
+      org (NUMLINES - 2) * NUMCOLS * 2
+      line1   db ?
+      attrib1 db ?
+      org (NUMLINES - 1) * NUMCOLS * 2
+      line2   db ?
+      attrib2 db ?
+  status ENDS
+   
+  .STACK
+   
+  .DATA
+      msg1    db "This is the first status line, "
+              db "with yellow characters on a blue background."
+      lenmsg1 dw $-msg1
+
+      msg2    db "This is the second status line, "
+              db "with black characters on a white background."
+      lenmsg2 dw $-msg2
+   
+  .CODE
+  .STARTUP
+   
+      mov ax, VIDEOMEM
+      mov es, ax
+   
+      mov cx, NUMCOLS
+      xor di, di
+  @@:
+      mov es:[di].status.attrib1, YELLOWONBLUE
+      mov es:[di].status.attrib2, BLACKONWHITE
+      inc di
+      inc di
+      loop @B
+
+      xor si, si
+      xor di, di
+      mov cx, lenmsg1
+  @@:
+      mov al, msg1[si]
+      mov es:[di].status.line1, al
+      inc si
+      inc di
+      inc di
+      loop @B
+
+      xor si, si
+      xor di, di
+      mov cx, lenmsg2
+  @@:
+      mov al, msg2[si]
+      mov es:[di].status.line2, al
+      inc si
+      inc di
+      inc di
+      loop @B
+
+  .EXIT
+   
+  END
+
+Additional query words: 6.00 6.00a 6.00b 6.10 6.10a 6.1x
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b,6.1,6.11,6.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

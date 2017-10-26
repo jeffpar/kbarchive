@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301939: HOWTO: Add MSXML Support to a C++ Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301939: HOWTO: Add MSXML Support to a C++ Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301939/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301939/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301939/","publisher":null,"image":null,"headline":"Q301939: HOWTO: Add MSXML Support to a C++ Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301939-howto-add-msxml-support-to-a-c-application">Q301939: HOWTO: Add MSXML Support to a C++ Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301939
+Product(s): Microsoft C Compiler
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 06-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE eMbedded Visual C++, version 3.0 
+- Microsoft Windows CE Platform SDK for Pocket PC 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some Windows CE-based platforms include support for the Microsoft XML component,
+but no examples of calling the XML component from C++ on Windows CE platforms
+are available in the online documentation. Many of the existing desktop examples
+will not work because they utilize the COM compiler extensions (through the
+#import statement) which are not currently supported in the Windows CE
+development environment. This article describes what is necessary to incorporate
+XML support
+
+MORE INFORMATION
+================
+
+The MSXML component is declared in the MSXML.h file. This includes everything
+that is necessary to access the component including:
+
+- Class and interface identifiers
+
+- Interface declarations
+
+To use these declarations, you can simply include the MSXML.h file in any source
+files that access the component. If you are porting desktop code that accesses
+the component through a namespace, you can achieve a similar effect, without
+needing to edit all of the scoped references to the namespace, by including
+MSXML.h in a namespace. For example, if the code you are porting accesses the
+IXMLDOMDocument interface like this
+
+  MSXML::IXMLDOMDocument
+
+the MSXML component is declared in the MSXML namespace. You can achieve the same
+effect in Windows CE by including MSXML.h as follows:
+
+  namespace MSXML
+  {
+  #include &lt;msxml.h&gt;
+  }
+
+To link the application, include Uuid.lib in the list of linker object/library
+modules.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q301586 BUG: MSXML Methods Return 0x80070005 - E_ACCESSDENIED
+
+  Q301630 FIX: IXMLDOMDocument::load() 'Hangs' MIPS Device When Called from C++
+
+  Q301935 BUG: MSXML Component Fails When Loading Local Files
+
+Additional query words: XML
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbPocketSearch kbSDKSearch kbWinCEETKSearch kbWinCESDKSearch kbWinCESearch kbWinCEETK300VC kbWinCESDKPalmsizePC
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

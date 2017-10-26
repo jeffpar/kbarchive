@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152861: SMS: Using Dosetup to Create Registry Entries for PGC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152861: SMS: Using Dosetup to Create Registry Entries for PGC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152861/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152861/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152861/","publisher":null,"image":null,"headline":"Q152861: SMS: Using Dosetup to Create Registry Entries for PGC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152861-sms-using-dosetup-to-create-registry-entries-for-pgc">Q152861: SMS: Using Dosetup to Create Registry Entries for PGC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152861
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbPGC smspgc
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If distributing a Shared Application without a package definition file (PDF),
+the administrator will need to specify the Registry Entry name and a
+Configuration Command Line, in order for SMS to correctly configure the
+application and record that in its registry. Use the "Dosetup.exe" executable
+file to complete this task.
+
+MORE INFORMATION
+================
+
+DOSETUP.EXE can be used to run a user-specified setup program under Program
+Group Control (PGC). This program would normally be specified as the
+'ConfigurationScript' entry within the [Program Item Properties i] section of a
+PDF file. The command-line syntax is:
+
+     DOSETUP &lt;RegName&gt; &lt;CommandLine&gt;
+
+where RegName has the same value as the 'RegistryName' entry in the same section
+of the PDF, and CommandLine is any valid command line.
+
+For example, the following command will run the setup program for the Microsoft
+Access 2.0 Service Pack:
+
+     DOSETUP acs2pak setup.exe
+
+This program does not handle all of the complexities of making an arbitrary
+shared application fully SMS-compliant. It merely provides a mechanism for
+running a setup program and for setting certain SMS registry status flags
+required by PGC.
+
+DOSETUP runs the specified command line and manages the status entry under the
+program item's registry key
+
+(HKEY_CLASSES_ROOT\SMS\APPLICATIONS\&lt;regName&gt;\Configuration\Status)
+
+The status entry must be set to UNFINISHED, FAIL or SUCCESS.
+
+DOSETUP operates like SMSSETUP in most respects; it displays the SMS blue setup
+screen, reports errors, and does postprocessing following any system restart.
+The postprocessing sets an application's status flag to SUCCESS. DOSETUP
+initially sets an application's status to FAIL, in case anything goes wrong
+during its processing. To handle a possible system restart by an installation
+program, DOSETUP sets the status to UNFINISHED immediately before running the
+user's command line. When the installation program terminates, or when PGC Start
+reruns DOSETUP following a system restart, the status is reset to SUCCESS. There
+is currently no mechanism for an installation program to pass an error message
+to DOSETUP.
+
+DOSETUP will be installed into the MSTEST directory on the logon server so that
+it will be available to users from any PDF.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

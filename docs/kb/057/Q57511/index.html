@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57511: Cannot Move Upper Left Corner in PG Chart Scatter Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57511: Cannot Move Upper Left Corner in PG Chart Scatter Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57511/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57511/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57511/","publisher":null,"image":null,"headline":"Q57511: Cannot Move Upper Left Corner in PG Chart Scatter Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57511-cannot-move-upper-left-corner-in-pg-chart-scatter-functions">Q57511: Cannot Move Upper Left Corner in PG Chart Scatter Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57511
+Product(s): See article
+Version(s): 2.00 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickasm chart | mspl13_c
+Last Modified: 17-JAN-1990
+
+By changing the defaults in the windowtype structure, you can
+customize charts for use in Presentation Graphics (PG) as described in
+"C for Yourself" on Pages 251-260. However, when changing the default
+values for x1 and y1 in the windowtype structure for use with the
+_pg_chartscatter or _pg_chartscatterms functions, the function will
+either ignore the change, or fail.
+
+By changing the value for x1 in the windowtype structure, you can set
+the location of the left edge of the window. By changing y1, you can
+change the location of the top edge of the window. If you change one
+and not the other, the change will be ignored. If you change both of
+them, the chart scatter functions will fail and return 107, which
+means "chart window is too small." The following program demonstrates
+the problem:
+
+Sample Program
+--------------
+
+/*
+ * This is part of the sample program, SCAT.C, from the online help
+ * of QuickC 2.00 and QuickC 2.01.
+ */
+
+#include &lt;conio.h&gt;
+#include &lt;graph.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;pgchart.h&gt;
+
+#define ITEMS  5
+#define SERIES 2
+
+float far employees[SERIES][ITEMS] = { { 235., 423., 596., 729., 963. },
+                                       { 285., 392., 634., 801., 895. } };
+float far profits[SERIES][ITEMS] =   { { 0.9,  2.3,  5.4,  8.0,  9.3  },
+                                       { 4.2,  3.4,  3.6,  2.9,  2.7  } };
+char far *companies[SERIES] = { "Goodstuff, Inc.", "Badjunk &amp; Co." };
+
+void main(void)
+{
+    int x;       /* for return value from _pg_chartscatter() */
+    chartenv env;
+    short mode = _VRES16COLOR;
+
+    while( !_setvideomode( mode ) )     /* Find a valid graphics mode   */
+        mode--;
+    if (mode == _TEXTMONO )
+        exit( 1 );                      /* No graphics available     */
+
+    _pg_initchart();                    /* Initialize chart system   */
+
+    /* Single-series scatter chart */
+    _pg_defaultchart (&amp;env, _PG_SCATTERCHART, _PG_POINTONLY );
+    strcpy( env.maintitle.title, "Goodstuff, Inc." );
+    strcpy( env.xaxis.axistitle.title, "Employees" );
+    strcpy( env.yaxis.axistitle.title, "Profitability" );
+
+/*  Change the value for x1 and y1.  Note that if only one is changed, the
+    value will be ignored.  If both are changed, _pg_chartscatter will fail *
+
+    env.chartwindow.x1 = 1;  /* left */
+    env.chartwindow.y1 = 1;  /* top  */
+
+    x = _pg_chartscatter( &amp;env, employees[0], profits[0], ITEMS );
+    if (x != 0)
+        printf("error! chartscatter returned %d\n",x);
+    getch();
+    _clearscreen( _GCLEARSCREEN );
+
+    exit( !_setvideomode( _DEFAULTMODE ) );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

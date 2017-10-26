@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83230: Determining the Default EXETYPE Value in Microsoft LINK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83230: Determining the Default EXETYPE Value in Microsoft LINK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83230/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83230/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83230/","publisher":null,"image":null,"headline":"Q83230: Determining the Default EXETYPE Value in Microsoft LINK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83230-determining-the-default-exetype-value-in-microsoft-link">Q83230: Determining the Default EXETYPE Value in Microsoft LINK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83230
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS 
+- Microsoft LINK for OS/2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Beginning with version 5.3, the Microsoft Segmented Executable Linker can create
+executable files for three different operating systems: MS-DOS, Microsoft
+Windows, and OS/2. LINK determines the executable file type (EXETYPE) unless it
+is specified explicitly in the module- definition (.DEF) file. The EXETYPE
+defaults to a different type depending on the host operating system, the
+presence of the .DEF file, and the presence of imported or exported symbols. The
+following chart summarizes the default EXETYPE values:
+
+--------------------------------------------------------------------
+|Host Operating | No .DEF File | .DEF File |Imports/Exports in Module|
+|   System      |   Present    |  Present  |and No .DEF File Present |
+--------------------------------------------------------------------
+|               |              |           |                         |
+|    MS-DOS     |     MS-DOS   |  Windows  |          MS-DOS         |
+|               |              |           |                         |
+--------------------------------------------------------------------
+|               |              |           |                         |
+|     OS/2      |     OS/2     |  Windows  |           OS/2          |
+|               |              |           |                         |
+--------------------------------------------------------------------
+
+In previous versions of the Segmented Executable linker, OS/2 is the default
+EXETYPE when a .DEF file is present.
+
+MORE INFORMATION
+================
+
+EXETYPE [&lt;descriptor&gt;] statement specifies the target operating system
+with which an application is designed to run. The &lt;descriptor&gt; value can
+be one of the following values:
+
+  Descriptor           Meaning
+  -------------------------------------------------------------------
+WINDOWS [&lt;version&gt;]  Microsoft Windows. Default EXETYPE value. The
+                       &lt;version&gt; parameter specifies the minimum
+                       version of Windows needed to load the
+                       application or dynamic-link library (DLL). The
+                       syntax for &lt;version&gt; is as follows:
+
+                          &lt;number&gt;[.[&lt;number&gt;]]
+
+                       where each &lt;number&gt; is a decimal integer.
+
+  DOS                  Nonsegmented executable file. LINK assumes
+                       EXETYPE DOS for an overlaid MS-DOS program.
+
+  OS/2                 OS/2 version 1.x segmented executable file.
+
+  UNKNOWN              Other applications.
+
+Additional query words: kbinf 5.30 5.31 5.31.009 5.50 LinkIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

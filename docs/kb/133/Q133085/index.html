@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133085: EPS Picture Appears Transparent on PCL Printers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133085: EPS Picture Appears Transparent on PCL Printers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133085/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133085/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133085/","publisher":null,"image":null,"headline":"Q133085: EPS Picture Appears Transparent on PCL Printers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133085-eps-picture-appears-transparent-on-pcl-printers">Q133085: EPS Picture Appears Transparent on PCL Printers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133085
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbgraphic kbprint kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an Encapsulated PostScript (EPS) graphic from PowerPoint 7.0 for
+Windows 95 to a black-and-white PCL printer, parts or all of the EPS graphic may
+appear to be transparent.
+
+A PCL printer is a printer that uses the Hewlett-Packard Printer Control
+Language. PCL printers include all HP LaserJet printers and LaserJet- compatible
+printers.
+
+CAUSE
+=====
+
+This is a bug in PCL banding printer drivers. The drivers do not preserve the
+z-order, or "layering" of the objects in the EPS file, which in turn causes them
+to appear as transparent.
+
+NOTE: EPS graphics are designed to print well to printers that use the PostScript
+page description language and not to printers that use other printer languages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint version 7.0 for
+Windows 95. We are researching this problem and will post new information here
+as it becomes available.
+
+WORKAROUND
+==========
+
+Convert the EPS graphic to another one of the supported graphic file formats
+that PowerPoint is able to use, and then import the new version of the graphic
+to your presentation. Many commercially available graphics and drawing software
+packages can convert EPS graphics to other file formats.
+
+Additional query words: 7.00 ppt95 WIN95 LaserJet II Plus III IIIsi IIIp 4 4m 4mplus 4mvplus 5m 4si
+
+======================================================================
+Keywords          : kbgraphic kbprint kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

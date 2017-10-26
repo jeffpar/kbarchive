@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138456: HOWTO: Use Visual FoxPro Builders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138456: HOWTO: Use Visual FoxPro Builders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138456/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138456/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138456/","publisher":null,"image":null,"headline":"Q138456: HOWTO: Use Visual FoxPro Builders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138456-howto-use-visual-foxpro-builders">Q138456: HOWTO: Use Visual FoxPro Builders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138456
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbBuilder kbvfp300 kbvfp500 kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains what Visual FoxPro Builders are and outlines some of the
+points about Builders.
+
+MORE INFORMATION
+================
+
+Visual FoxPro Builders are tools that help you set properties for a specific
+control. For example, you can use a ListBox Builder to set the properties for a
+list box or a Grid Builder to set properties for a grid. Builders facilitate the
+process of setting up objects with the proper set of attributes (property
+values).
+
+Builders are different from wizards in that builders are re-entrant. That is, a
+builder can be used repeatedly on an object without altering or destroying the
+original attributes the object possesses. For example, when you are creating a
+screen that has a command button group and you decide to add an extra command
+button, you can reuse the builder to do it.
+
+Wizards, however, are not re-entrant. They are intended to be used once to create
+a usable item such as a simple data entry screen. Runnning a wizard a second
+time using the file name of an existing object will destroy the original work of
+the same name, including any and all modifications you made previously.
+
+While you can edit a container object manually to add a new command button and
+set its properties individually, it is usually easier to run the builder over
+the CommandButton Group to add the new button. The builder asks a series of
+questions about the control you are modifying and then sets the appropriate
+properties to make the control work the way you want it to work.
+
+You can also use builders to add objects to a form, not just to modify existing
+objects. If you want to add a new text box to a form, the builder will ask a
+series of questions to help define the object's attributes. When you finish the
+definition, the builder adds the object to the form.
+
+Builders can be started in two ways. You can click the Builder button on the
+Properties window. Or you can click the Builder Lock button on the Form Controls
+toolbar, and then click another button on the Controls toolbar to both create a
+new control and automatically start the builder for that control.
+
+Visual FoxPro supports the following Builders:
+
+- Text Box Builder
+
+- Edit Box Builder
+
+- Command Group Builder
+
+- Option Group Builder
+
+- Combo Box Builder
+
+- List Box Builder
+
+- Grid Builder
+
+- Form Builder - AutoFormat Builder - Referential Integrity Builder
+
+To find out the specific attributes available under each builder, place the
+desired object on a form, and activate the builder for the object. All other
+objects not listed here (such as the Page Frame or Spinner controls) do not have
+native builders. If you want to have such functionality for an unlisted object,
+you can use Visual FoxPro to write your own builder for that object.
+
+To add a control by using a builder, follow these steps:
+
+1. In the Form Controls toolbar, click the Builder Lock button.
+
+2. Select the control you want from the Form Controls toolbar, and drop it on
+  the form.
+
+3. Fill in the information on the builder tabs.
+
+In summary, builders are useful and powerful tools that help take some of the
+drudge work out of defining object attributes.
+
+Additional query words: builder list supported reentrant
+
+======================================================================
+Keywords          : kbBuilder kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

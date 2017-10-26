@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155164/","publisher":null,"image":null,"headline":"Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155164-fix-c2678-on-overloaded-functions-when-using-a-namespace">Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155164
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbProgramming kbCompiler
+Last Modified: 29-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The wrong version of an overloaded function is called causing the following
+compiler two errors:
+
+  
+
+  error C2678: binary '!=' : no operator defined which takes a left-hand
+  operand of type 'const struct Test' (or there is no acceptable
+  conversion) (new behavior; please see help)
+
+-and-
+
+  
+
+  error C2664: 'Tester' : cannot convert parameter 1 from 'const struct
+  Test' to 'const float &amp;' (new behavior; please see help)
+
+The sample in the "Sample Code" demonstrates this problem. These errors occur
+when:
+
+1. The function has a global definition.
+
+2. The function (with the same name and different argument types compared to the
+  global function) is defined in a named namespace.
+
+3. The named Namespace function is included in the global namespace by the
+  "using" declarative.
+
+RESOLUTION
+==========
+
+1. Put the function in a named namespace (within the global namespace) and then
+  use the "using" declaration. See workaround #1 below.
+
+2. Specify the "using" declaration at the global level. See workaround #2 below.
+
+Also see the "More Information" section for the sample code and the workarounds.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem of incorrect overloaded
+function call causing the C2678 and the C2664 compiler errors.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+        struct Test
+        {
+        } ;
+  // Uncomment the following 2 lines for workaround #1
+  //      namespace Space2
+  //      {
+            int Tester(const Test&amp; rx, const Test&amp; ry)
+            {
+               return 0 ;
+            }
+
+            int operator!=(const Test&amp; rx, const Test&amp; ry)
+            {
+               return 0 ;
+            }
+  // Uncomment the following line for workaround #1
+  //      }
+
+        namespace Space1
+        {
+           int operator!=(const float&amp; rx, const Test&amp; rt)
+           {
+               return 1 ;
+           }
+
+           int Tester(const float&amp; rx, const int&amp; ri)
+           {
+               return 1 ;
+           }
+        }
+
+  // Uncomment the following line for workaround #2
+  //      using namespace Space1 ;
+        void main()
+        {
+           const Test a ;
+           const Test b ;
+           using namespace Space1 ;
+           if (a != b) ;  // This line causes the C2678
+           Tester(a, b);  // This line causes the C2664
+        }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbCompiler 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

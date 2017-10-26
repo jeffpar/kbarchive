@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148362: Connecting Two Windows NT Computers with EiconCards | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148362: Connecting Two Windows NT Computers with EiconCards" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148362/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148362/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148362/","publisher":null,"image":null,"headline":"Q148362: Connecting Two Windows NT Computers with EiconCards","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148362-connecting-two-windows-nt-computers-with-eiconcards">Q148362: Connecting Two Windows NT Computers with EiconCards</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148362
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can configure two Windows NT computers with EiconCards back-to-back using a
+null modem cable. You can set up the two computers so that Windows NT Remote
+Access Services (RAS) can be used to make a connection over the null modem cable
+that connects the two EiconCards.
+
+MORE INFORMATION
+================
+
+1. Make sure both EiconCards support the null modem cable you will be using.
+  Cable requirements may be different for different models on EiconCards.
+
+2. One computer must be configured to use internal clocking and the other
+  computer must be configured to use external clocking. To configure the type
+  of clocking, run Eicon's WAN Services Configuration program and go to the
+  Sync Driver Configuration panel.
+
+3. Configure the internal clocking computer to use DCE addressing. Configure the
+  external clocking computer to use DTE addressing. To configure DTE/DCE
+  Addressing, go to the Sync Driver Configuration panel in the WAN Services
+  Configuration program.
+
+4. Make sure all X.25 and HDLC panel settings are the same on both computers.
+
+5. Verify the Eicon X.PAD driver is installed in the Network Control Panel
+  Applet (NCPA) on both computers. If X.PAD is not installed, install it.
+  Consult your Eicon documentation for installation instructions.
+
+6. Configure the X.PAD driver and a COM port on both computers. Leave all X.PAD
+  configuration settings for the ports at their default values.
+
+7. Configure RAS in NCPA on both computers. Add the port you configured in the
+  X.PAD driver. Select Eicon X.PAD as the device. Make sure the port on one
+  computer is set for dialout and the port on the other computer is set to
+  receive calls.
+
+8. Restart both computers when prompted.
+
+9. Create an entry in the RAS Phonebook application on one computer and
+  configure it to use the port you configured within the X.PAD driver.
+
+10. Dial the entry you have created, using an account that has been granted RAS
+  dial-in permission on the other computer.
+
+You should now have a connection between the two computers using RAS.
+
+
+Additional query words: prodnt 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109483: Using AppleScript to Programmatically Convert PICT to BMP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109483: Using AppleScript to Programmatically Convert PICT to BMP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109483/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109483/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109483/","publisher":null,"image":null,"headline":"Q109483: Using AppleScript to Programmatically Convert PICT to BMP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109483-using-applescript-to-programmatically-convert-pict-to-bmp">Q109483: Using AppleScript to Programmatically Convert PICT to BMP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109483
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Because the Pict To Bmp application that comes with FoxPro for Macintosh is a
+"scriptable" application, you can instruct it to programmatically convert a file
+of type "PICT" to a file of type "BMP" using AppleScript.
+
+See below for instructions and a sample script.
+
+MORE INFORMATION
+================
+
+The following script can be called from within FoxPro for Macintosh or any other
+application that can communicate with the AppleScript extension. The script can
+be keyed into the AppleScript Script Editor supplied with the AppleScript
+extension.
+
+This script requires that Scripting Additions be installed in the Extensions
+subfolder of the System Folder. The "choose file" Scripting additions is
+utilized. These additions are supplied with the AppleScript extension and placed
+in the Extensions folder by the Installer program.
+
+Please note that due to the limitations of the character set used to display and
+print this Microsoft Knowledge Base article, the line- continuation character
+created by pressing OPTION+RETURN on the Macintosh has been replaced by a
+semicolon (the FoxPro line-continuation character). When you are typing the
+script in the AppleScript Script Editor, replace any line that ends with a
+semicolon with the appropriate line-continuation character.
+
+To create the script:
+
+1. Start the AppleScript Script Editor.
+
+2. In the Script Editor edit region where the cursor is initially blinking, type
+  the following code:
+
+        -- Pict2Bmp, a routine for converting PICTs to BMPs
+
+        -- Get a file of type "PICT" to convert
+        set theFile to choose file of type {"PICT"} ;
+           with prompt "Choose PICT to convert:"
+        -- Call the conversion handler
+        Convert(theFile)
+
+        -- Conversion handler
+        on Convert(fToConvert)
+          -- Tell Pict To Bmp to convert the file
+          -- and terminate.
+          tell application "Pict To Bmp"
+            open fToConvert
+            quit
+          end tell
+        end Convert
+
+3. Save the script. If the script will not save in its compiled format, make
+  sure the script was typed exactly as it appears above, with the exception of
+  the line-continuation characters. The Script Editor should help you focus in
+  on the source of the error by highlighting the offending command.
+
+4. To run the script from the FoxPro for Macintosh Command window, issue the
+  following command
+
+  RUNSCRIPT &lt;pict2bmp&gt;
+
+  where &lt;pict2bmp&gt; is the name of the file to which the script was saved.
+
+The first time the script is run, a dialog box may appear requesting the location
+of the "Pict to Bmp" application. It is located in the FoxPro:Goodies:Misc
+folder. In Visual FoxPro for Macintosh, the application is located in the
+VFP:Tools:Tools:PictToBmp folder. To avoid this message, specify the full path
+to the application in the Convert handler of the script. For example, use the
+following command:
+
+  tell application "HD:FoxPro:Goodies:Misc"
+
+If the user chooses to cancel the script at any time during the execution of the
+script, the following FoxPro error message will be displayed:
+
+  Script error: User canceled.
+
+To avoid the display of this message in the context of a FoxPro program or
+application, use an ON ERROR handling routine to trap for error number 1917.
+
+For more information about creating scripts with AppleScript, see the
+"AppleScript Language Guide" or contact the Apple Programmer's and Developer's
+Association (APDA).
+
+Additional query words: vFoxMac FoxMac
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

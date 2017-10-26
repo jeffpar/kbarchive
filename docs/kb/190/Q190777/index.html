@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190777/","publisher":null,"image":null,"headline":"Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190777-fix-pdw-out-of-date-dependency-information-comct332ocx">Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190777
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAddIn kbAppSetup kbVBp kbVBp600bug kbGrpDSVB kbVS600sp3fix kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Creating a setup program using the Package and Deployment Wizard (PDW) for a
+project that includes COMCT332.OCX generates an incorrect Out-of-Date Dependency
+Information error dialog.
+
+CAUSE
+=====
+
+The dependency file for the file COMCT332.OCX may contain incorrect version
+information for the control.
+
+RESOLUTION
+==========
+
+To resolve the problem, install Visual Basic 6.0 SP3 or later.
+
+To work around the problem, there are two options:
+
+- Ignore the Out-Of-Date error message.
+
+- Modify COMCT332.DEP using a text editor such as NotePad. The Version items
+  within the [Version] and [Comct332.ocx] sections of COMCT332.DEP need to be
+  updated to the following:
+
+        [Version]
+        Version=6.0.00.8169
+
+        [Comct332.ocx]
+        Version=6.0.00.8169
+
+  NOTE: COMCT332.DEP can be found in the Windows System directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+
+1. Create a new Standard EXE in Microsoft Visual Basic. Form1 is created by
+  default.
+
+2. From the Project menu, click Components.
+
+3. Select the Microsoft Windows Common Controls-3 6.0, and click OK.
+
+4. Add a CoolBar control to Form1.
+
+5. Save the project, using the default names.
+
+6. From the Add-In Menu, click Package and Deployment Wizard. NOTE: If this menu
+  item does not exist, you can add it via the Add-In Manager.
+
+7. In the Package and Deployment Wizard, click Package. NOTE: When prompted to
+  Compile and Save the project, click Yes for both.
+
+8. Select Standard Setup Package and click the Next button.
+
+9. Click on Next for the Package Folder. Choose Yes to create the folder, if
+  prompted.
+
+RESULTS: The Out-of-Date Dependency Information dialog will appear, indicating
+the dependency information for Comct332.OCX is out-of-date.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAddIn kbAppSetup kbVBp kbVBp600bug kbGrpDSVB kbVS600sp3fix kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

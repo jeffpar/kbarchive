@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199058/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199058/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199058/","publisher":null,"image":null,"headline":"Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199058-bug-debuggersetnextstatement-displays-dialog-box">Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199058
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:1.0,1.1,97; winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbide kbVC500 kbVC600 kbVCObj kbVisID100 kbVJ100 kbVJ110 kbVS97 kbDevStudi
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual J++, versions 1.0, 1.1 
+- Microsoft Visual InterDev, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are automating the MSDEV.exe Debugger object, the SetNextStatement
+method displays the following message:
+
+  This operation will move the current location to a different function.
+
+CAUSE
+=====
+
+The target line number of the SetNextStatement method is outside the scope of
+the current function. The message is not suppressed during automation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The error message alerts the operator that this action, while permitted, might
+cause unexpected behavior. It appears normally when you click Set Next Statement
+from the debugger's shortcut menu to move the code execution location to another
+function. However, during automation, this sort of informational message box
+should never appear.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a default MFC .exe application. Name it SetNext.
+
+2. From the ClassView window, expand the CSetNextDoc class. Double-click
+  CSetNextDoc().
+
+3. Click on the curly brace at the beginning of the function (at or near line
+  31). Press the F9 key once to set a breakpoint there. The code should look
+  something like the following:
+
+  ...
+  30: CSetNextDoc::CSetNextDoc()
+  31:&gt;{
+  32:    // TODO: add one-time construction code here
+  33: }
+  34:
+  35: CSetNextDoc::~CSetNextDoc()
+  36: {
+  37: }
+  ...
+
+  The line numbers are added for illustration only. The &gt; represents a line
+  with a set breakpoint.
+
+4. Create a Visual Basic Script macro named SetNext. To do this, go to the Tools
+  menu, click Macro, type "SetNext" (without the quotation marks) in the Macro
+  Name field, and click Edit. Click OK on the Add Macro dialog box. Replace the
+  SetNext subroutine with the following text and press Ctrl+S to save the macro
+  file:
+
+  Sub SetNext()
+     Debugger.RunToCursor
+     Debugger.SetNextStatement 36, "SetNextDoc.cpp"
+  End Sub
+
+  In this example, 36 represents a valid line in another function of the same
+  source file of the SetNext application.
+
+5. On the File menu, click Close. This closes the Macro window.
+
+6. Execute the SetNext VBScript macro. To do this, go to the Tools menu, click
+  Macro, click OK on any informational dialog boxes, and double-click SetNext
+  in the Macro Name list.
+
+RESULT: The message described in the SYMPTOMS section appears. Click OK to
+dismiss it. On the Debug menu, click Stop Debugging.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbide kbVC500 kbVC600 kbVCObj kbVisID100 kbVJ100 kbVJ110 kbVS97 kbDevStudio kbGrpDSTools 
+Technology        : kbVCsearch kbVJsearch kbVisIDsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVisID100 kbVJ100 kbVJ110 kbVC500Search
+Version           : WINDOWS:1.0,1.1,97; winnt:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

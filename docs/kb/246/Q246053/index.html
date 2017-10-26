@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246053/","publisher":null,"image":null,"headline":"Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246053-why-defaultasp-is-not-created-in-the-default-web-site-of-iis5">Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246053
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbDSupport kbiis500
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Internet Information Server (IIS) 4.0, a Default.asp file was placed in the
+default Web site created during setup. This file described IIS 4.0 and the
+Windows NT 4.0 Option Pack. It displayed information for the user who installed
+IIS 4.0, but it could also be viewed by end users who had access to the site.
+
+In Internet Information Services 5.0, however, Setup does not create a
+Default.asp (or Default.htm file). Instead, it creates a new default document,
+"Iisstart.asp".
+
+MORE INFORMATION
+================
+
+When Iisstart.asp loads, it determines if the request for the page came from the
+local computer or from a remote connection. If it came from a remote connection,
+then an "under construction" Web page is returned to the user of the Web site.
+
+If the request came from a local connection, the Localstart.asp file is loaded.
+This file presents a "Welcome to Windows 2000 Internet Services" page, which is
+targeted at Web developers and administrators. In addition, it also opens the
+"Microsoft Internet Information Services 5.0 Documentation" in a new window.
+
+NOTE: Iisstart.asp is a new default document for the default Web site. Because it
+has lower priority than the other standard default documents, Default.htm and
+Default.asp, it will not be loaded if either of those other files exist.
+Furthermore, if IIS 5.0 is installed over an IIS 4.0 installation that already
+has a Default.asp or Default.htm file, it does not remove or overwrite them.
+
+Additional query words: iis iisstart.asp iisstart localstart.asp localstart default.htm default.asp akz
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

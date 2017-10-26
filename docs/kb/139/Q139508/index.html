@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139508: Internet Firewall Support in SNA Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139508: Internet Firewall Support in SNA Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139508/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139508/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139508/","publisher":null,"image":null,"headline":"Q139508: Internet Firewall Support in SNA Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139508-internet-firewall-support-in-sna-server">Q139508: Internet Firewall Support in SNA Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139508
+Product(s): Microsoft SNA Server
+Version(s): 2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This article discusses how SNA Server supports Internet Firewalls, including
+instructions on the following:
+
+- How to allow SNA Server clients and SNA Servers to interoperate with
+  screening routers, where the client does know the address of the SNA
+  Server(s).
+
+- How to allow SNA Server clients and SNA Servers to interoperate with
+  full-blown Internet firewalls, where the end user is not allowed to know the
+  IP address of the SNA Server(s).
+
+OVERVIEW
+--------
+
+SNA Server can be configured to use specific software port numbers. Specific port
+numbers are commonly defined in software components to allow administrators of
+Internet firewalls to filter packets based on port number, thereby
+denying/accepting their propagation to the private network. By assigning
+specific destination port numbers to SNA Server components, SNA Server can
+interoperate with screening routers and full-blown firewalls to meet the
+requirement that users of the public network should not know the IP address of
+the SNA Server.
+
+I. SNA Server Clients and SNA Servers Interoperation with
+Screening Routers (Client knows the address of the SNA Server)
+------------------------------------------------------------------------------------------------------------------------
+
+The following are the instructions on how to allow SNA Server clients and SNA
+Servers to interoperate with screening routers, where the client does know the
+address of the SNA Server(s).
+
+Destination port numbers are configurable in SNA Server on the following
+platforms:
+
+- Windows NT
+
+- Windows 95
+
+- Windows 3.x
+
+The following transport protocols can be used:
+
+- TCP/IP
+
+- IPX/SPX
+
+- Vines IP
+
+Each transport has the following three components that can have administrator
+defined destination ports assigned to them:
+
+- DatagramPort.
+
+  This port is used for datagram (mostly broadcast or multicast) traffic. Use
+  the Server Broadcasts dialog in SNA Server Admin to control which transport
+  is used for Server to Server communication.
+
+- SnaBasePort.
+
+  This is the port where the server SnaBase listens for new client sponsor
+  connections. Sponsor connections are used by the SNA Server client to learn
+  about the SNA Server subdomain in which it participates.
+
+- SnaServerPort.
+
+  This is the port where the SNASERVR.EXE waits for new application session
+  requests.
+
+NOTE: These parameters are configured on the SNA Server side to control what port
+numbers the SnaBase and SNAServr processes use.
+
+The default values for destination port numbers are:
+
+  Port            TCP/IP   IPX/SPX     Vines
+  --------------------------------------------
+  DatagramPort    1478     0x84C8      381
+  SnaBasePort     1478     0x84C8      381
+  SnaServerPort   1477     0x84C9      dynamic
+
+There is no need to change any of these ports except when it is necessary to run
+each SNA Server service and SNABase service with a unique port number. It is the
+administrator[ASCII 146]s responsibility to make sure that the ports are not
+used by other applications on the network.
+
+NOTE: The DatagramPort must be the same in every server in a subdomain.
+
+On Windows NT, the ports are configured in the registry under the subtree
+HKEY_LOCAL_MACHINE under the subkey:
+
+  System\CurrentControlSet\Services\SnaBase\Parameters\&lt;transport&gt;\ 
+
+where &lt;transport&gt; is SnaTcp, SnaSpx, or SnaVines.
+
+Add the following value name under the &lt;transport&gt; subkey:
+
+  " Value Name: &lt;port&gt;
+  Data Type: REG_DWORD" (without the quotation marks)
+
+where &lt;port&gt; is DatagramPort or SnaBasePort.
+
+On Windows 95, the ports are configured in the registry under the subtree
+HKEY_LOCAL_MACHINE under the subkey:
+
+  Software\Microsoft\SnaBase\Parameters\&lt;transport&gt;\ 
+
+where &lt;transport&gt; is SnaTcp, SnaSpx, or SnaVines.
+
+Add the following value name under the &lt;transport&gt; subkey:
+
+  "Value Name: &lt;port&gt;
+  Data Type: REG_DWORD" (without the quotation marks)
+
+where &lt;port&gt; is DatagramPort or SnaBasePort.
+
+On Windows 3.x, the ports are configured in the WIN.INI file under the [WNAP]
+section:
+
+  [WNAP]
+  &lt;port&gt;=&lt;value&gt;
+
+where &lt;port&gt; is DatagramPort or SnaBasePort and value is the port number
+either in decimal or hexadecimal notation.
+
+Remote TCP/IP Clients:
+
+For TCP/IP it is not enough just to add one SnaBasePort number to the WIN.INI
+file or registry in Windows NT or Windows 95. Because every SNA Server in the
+subdomain is potentially using a different destination port number, every
+sponsor server requires its own entry. To make this possible, the port names can
+be prefixed with a server name. For example, if the SnaBase service on the
+server Server_A is using destination port 1234 and the server Server_B is using
+destination port number 5678, you need to add the following entries into the
+WIN.INI file or registry:
+
+Windows NT or Windows 95 registry:
+
+  Server_ASnaBasePort:REG_DWORD:1234
+  Server_BSnaBasePort:REG_DWORD:5678
+
+Windows 3.x WIN.INI file:
+
+  Server_ASnaBasePort=1234
+  Server_BSnaBasePort=5678
+
+The clients get the SnaServer ports through the sponsor connection. On IPX/SPX
+and Vines IP, the clients get the SnaBase ports from the NetWare bindery and
+Vines StreetTalk respectively. There is no need to configure any port numbers on
+these two client types.
+
+OtherServers:
+
+When you use the OtherServers parameter, use the following convention in the
+WIN.INI file under the [WNAP] section:
+
+  [WNAP]
+  &lt;server_nameX&gt;SnaServerPort=3333
+  &lt;server_nameY&gt;SnaServerPort=4444
+
+You still need to include the following entry in this section:
+
+  Otherservers=&lt;server_nameX&gt; &lt;servernameY&gt;
+
+II. SNA Server Clients and SNA Servers Interoperation with Full-Blown
+Internet firewalls (Client Cannot Know the IP address of the SNA Server(s))
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+The following are the instructions on how to allow SNA Server clients and SNA
+Servers to interoperate with full-blown Internet firewalls, where the client is
+not allowed to know the IP address of the SNA Server(s).
+
+First, follow directions in section I. above. Then, add the following entry to
+the respective platform:
+
+Windows NT:
+
+1. In the registry, go to the subtree HKEY_LOCAL_MACHINE under the following
+  subkey:
+
+System\CurrentControlSet\Services\SnaBase\Parameters\SnaTcp\ 
+
+2. Add the following information:
+
+"
+
+  Value Name: FireWall
+  Data Type:  REG_MULTI_SZ
+  Data:       &lt;list of firewall IP addresses&gt;
+
+" (without the quotation marks)
+Windows 95:
+
+1. In the registry, go to the subtree HKEY_LOCAL_MACHINE under the following
+  subkey:
+
+Software\Microsoft\SnaBase\Parameters\SnaTcp\ 
+
+2. Add the following information: "
+
+  Value Name: FireWall
+  Data Type:  REG_SZ
+  Data:       &lt;list of firewall IP addresses&gt;
+
+  " (without the quotation marks) where Reg_SZ equates to STRING.
+
+  NOTE: The list can be separated by spaces, commas, or semicolons.
+
+Windows 3.x:
+
+1. Add the following information in the WIN.INI file under the [WNAP] section:
+
+"
+
+     [WNAP]
+     FireWall =&lt;list of firewall IP addresses&gt;
+
+" (without the quotation marks)
+The SNA Server IP transport replaces the real destination IP address with a
+firewall address when it opens a connection to an SNA Server for both
+application sessions or sponsor connection.
+
+Microsoft has updated the following files:
+
+  LIBS\WIN32\SNAIP.DLL
+  LIBS\WIN32\SNANW.DLL
+  LIBS\WIN32\SNABV.DLL
+  LIBS\WIN95\SNACIP.DLL
+  LIBS\WIN95\SNACNW.DLL
+  LIBS\WIN95\SNACBV.DLL
+  EXE\WIN16\IPCLI.DLL
+  EXE\WIN16\NWCLI.DLL
+  EXE\WIN16\BVCLI.DLL
+  EXE\TWIN16\IPCLI.DLL
+  EXE\TWIN16\NWCLI.DLL
+  EXE\TWIN16\BVCLI.DLL
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna 2.11 snafaq
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211
+Version           : :2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

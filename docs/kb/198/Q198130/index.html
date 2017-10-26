@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198130: PRB: FLL Causes Error After Recompilation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198130: PRB: FLL Causes Error After Recompilation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198130/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198130/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198130/","publisher":null,"image":null,"headline":"Q198130: PRB: FLL Causes Error After Recompilation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198130-prb-fll-causes-error-after-recompilation">Q198130: PRB: FLL Causes Error After Recompilation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198130
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0; WINNT:6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVC600 kbvfp300 kbvfp500 kbvfp600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After building an FLL in Visual C++ 6.0, you may get one of the following error
+messages when calling a function in the FLL from Visual FoxPro:
+
+  API Caused an Exception
+
+-or-
+
+  The error occurs when loading the debug build of the FLL, but not with the
+  release build.
+
+CAUSE
+=====
+
+The project has been compiled in Visual C++ version 6.0 with debug information
+using the new "Edit and Continue" format. This is why a release build of the FLL
+works and a debug build that uses "Edit and Continue" for the debug information
+format fails. The default setting for a debug build in Visual C++ 6.0 is to use
+a "Program database for Edit and Continue." This causes tokens to be inserted in
+the compiled program that are not recognized by FoxPro.
+
+NOTE: It appears that the errors occur only when compiling on Windows NT.
+
+RESOLUTION
+==========
+
+Use one of the following workarounds:
+
+- Compile the project as a release build.
+
+- Change the project settings. In the Project Settings dialog box, click the
+  C/C++ tab. Select General in the Category box, and change the selection in
+  the Debug Info: box from "Program database for Edit and Continue" to "Program
+  Database."
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Locate the HOME()+"Api\Samples" folder.
+
+2. In Visual C++ 6.0, start a new Win32 Dynamic Link Library project named
+  Reverse.
+
+3. Add Reverse.C (found in HOME()+"Api\Samples\") to the project.
+
+4. In the Project Settings, make sure the /MDd compiler switch is used. Add
+  winapims.lib (found in HOME()+"Api\Samples\") to the Object/library modules
+  setting.
+
+5. On the Build menu of Visual Studio, click "Set Active Configuration," and
+  select Win32 Debug.
+
+6. Click Rebuild All on the Build menu.
+
+7. SET LIBRARY TO the newly-compiled Reverse.Dll.
+
+8. In the Command window, type "? reverse('test')" (without the double quotation
+  marks), and note that one of the two error messages listed above appears.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+Stewart, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVC600 kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVCsearch kbVFPsearch kbAudDeveloper kbVC32bitSearch kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a kbVCPE600 kbVCEE600 kbVCLE600
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0; WINNT:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

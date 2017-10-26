@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188817/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188817/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188817/","publisher":null,"image":null,"headline":"Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188817-howto-vc-mfc-client-for-the-comcallingjava-sample">Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188817
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbActiveX kbAutomation kbCOMt kbJavaVM kbMFC kbVC500 kbGrpDSJava
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft virtual machine 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Java classes created with the Visual J++ Java compiler can be accessed through
+COM. Visual J++ contains a sample that shows how to use COM to call a Java class
+from Visual Basic.
+
+It is also possible to call the Java class through Automation using any language.
+This article contains steps to create an Automation client using Visual C++ and
+MFC.
+
+MORE INFORMATION
+================
+
+It is easy to generate a ColeDispatchDriver-derived class in MFC by creating a
+new class in ClassWizard using the type library created by Visual J++. However,
+to create the Java object and attach the wrapper, you must first call
+COleDispatchDriver::CreateDispatch(), then QueryInterface() for the correct
+dispinterface.
+
+Calling QueryInterface() is necessary because, by default, Java objects use
+AutoIDispatch as the default dispinterface. CreateDispatch() just calls
+CoCreateInstance() for IUnknown and then does a QueryInterface() on the IUnknown
+for IDispatch. AutoIDispatch assigns DISPIDs during run time and can be used
+only when doing late binding.
+
+It is also possible to have the Java object associate the class as the default
+dispinterface by implementing an interface called com.ms.com.NoAutoScripting.
+This interface does not have any methods associated with it, but tells the VM
+(virtual memory) to not make IDispatch available as the default interface
+through AutoIDispatch.
+
+Use the following steps to create the client:
+
+1. Follow the steps in the ComCallingJava sample to create a typelib, to create
+  a wrapper class, and to build and register the Java class.
+
+2. Create an AppWizard-generated application, either SDI (single-document
+  interface) or MDI (multiple-document interface).
+
+3. Initialize OLE by calling AfxOleInit() in CWinApp::InitInstance().
+
+4. Create a COleDispatchDriver wrapper for the Euclid Java class using the type
+  library created in step 1. You can do this in ClassWizard by choosing "Add
+  Class..." and then "From a type library...".
+
+5. Using ClassWizard, handle the WM_LBUTTONDOWN message in the CView. Use the
+  following code as a guide for the button handler:
+
+        //(33B0ECE2-E706-11CF-A0C2-00AA00A71DD8)
+        static const CLSID GCDclsid =
+           { 0x33B0ECE2, 0xE706, 0x11CF, { 0xa0, 0xC2, 0x0, 0xaa, 0x0, 0xa7,
+             0x1d, 0xd8 }};
+
+        // (33B0ECE1-E706-11cf-A0C2-00AA00A71DD8)
+        static const CLSID IGCDclsid =
+        { 0x33B0ECE1, 0xE706, 0x11CF, { 0xa0, 0xC2, 0x0, 0xaa, 0x0, 0xa7,
+          0x1d, 0xd8 }};
+
+        void CComjavaView::OnLButtonDown(UINT nFlags, CPoint point)
+        {
+           CString str;
+           LPDISPATCH pDisp;
+
+           IGCD VJCom;
+           VJCom.CreateDispatch(GCDclsid);
+
+           pDisp = VJCom.m_lpDispatch;
+           HRESULT hr = pDisp-&gt;QueryInterface( IGCDclsid,
+                                               (void**)&amp;VJCom.m_lpDispatch);
+           if (hr == S_OK)
+              pDisp-&gt;Release();
+           else
+              VJCom.m_lpDispatch = pDisp;
+
+           str.Format("The least common denominator of 40 and 24 is %d",
+                       VJCom.GCD(40,24));
+           AfxMessageBox(str);
+           VJCom.ReleaseDispatch();
+
+           CView::OnLButtonDown(nFlags, point);
+        }
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Kelly Marie
+Ward, Microsoft Corporation
+
+Additional query words: QueryInterface AutoIDispatch
+
+======================================================================
+Keywords          : kbActiveX kbAutomation kbCOMt kbJavaVM kbMFC kbVC500 kbGrpDSJava 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

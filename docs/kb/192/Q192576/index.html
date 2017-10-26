@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192576/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192576/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192576/","publisher":null,"image":null,"headline":"Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192576-fix-fix-from-debugger-does-not-show-vfp-desktop-if-visiblef">Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192576
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When viewing and executing program code in the Debugger Trace Window, you can
+select Debug then Fix from the Debugger menu. Normally, this closes your
+currently executing program and brings up the code you were tracing in the
+appropriate editor or designer. If the application you are tracing uses a Top
+Level form, and the Visual FoxPro desktop is hidden with _SCREEN.Visible = .F.,
+the Visual FoxPro desktop will not become visible, and the code is not displayed
+in the appropriate editor or designer.
+
+RESOLUTION
+==========
+
+To cause the Visual FoxPro desktop to display, you can do the following:
+
+1. Type "_SCREEN.Visible" (without the quotation marks) in the Watch Window and
+  then press the ENTER key.
+
+2. Click the .F. in the Value column adjacent to _SCREEN.Visible to edit it,
+  change it to .T., and then press the ENTER key.
+
+This causes the Visual FoxPro desktop to display, and the code is now visible in
+the appropriate editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Make sure you have configured the Debugger to use the Debug Frame. To do
+  this, from the Tools menu, select Options, and then click the Debug tab in
+  the Options dialog box. The Environment drop-down list box must be set to
+  Debug Frame. Note that the Debugger must be closed for this drop- down list
+  box to be enabled.
+
+2. Run the following code from a program (.PRG) file:
+
+        PUBLIC oform
+        oform=CREATEOBJECT("TL_form")
+        oform.SHOW()
+        READ EVENTS
+
+        DEFINE CLASS TL_form AS FORM
+           ShowWindow = 2
+           AutoCenter = .T.
+           lIsFormUp=.F.
+           ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+              TOP = 180, ;
+              LEFT = 80, ;
+              HEIGHT = 27, ;
+              WIDTH = 195, ;
+              CAPTION = "Press to display Debugger", ;
+              NAME = "Command1"
+
+           PROCEDURE DESTROY
+              Clear EVENTS
+              _SCREEN.VISIBLE=.T.
+           ENDPROC
+
+           PROCEDURE ACTIVATE
+              IF !THIS.lIsFormUp
+                 _SCREEN.VISIBLE = .F.   &amp;&amp; We wait till now to hide desktop
+                    &amp;&amp; to ensure Top Level form is active window.
+                 THIS.lIsFormUp = .T.
+              ENDIF
+           ENDPROC
+
+           PROCEDURE command1.CLICK
+             SET STEP ON
+             x = 1
+           ENDPROC
+        ENDDEFINE
+
+3. Press the "Press to display Debugger" command button.
+
+4. In the Debugger, select Debug then Fix from the menu.
+
+5. Select Yes to cancel the program.
+
+RESULTS: The Debugger remains displayed, and the Visual FoxPro desktop does not
+reappear with program in the editor.
+
+NOTE: You can get the Visual FoxPro desktop back by typing the following into the
+Watch window, and changing its value from .F. to .T.:
+
+  " _SCREEN.Visible" (without the quotation marks)
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp500 kbVFp500a kbVFp600fix kbMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

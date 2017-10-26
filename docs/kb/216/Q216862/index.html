@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216862: PRB:Access Violation on Chat Server During Callback Registration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216862: PRB:Access Violation on Chat Server During Callback Registration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216862/","publisher":null,"image":null,"headline":"Q216862: PRB:Access Violation on Chat Server During Callback Registration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216862-prbaccess-violation-on-chat-server-during-callback-registration">Q216862: PRB:Access Violation on Chat Server During Callback Registration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216862
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbExchange550 kbMsg kbVC kbGrpDSMsg kbDSupport
+Last Modified: 18-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the callback registration for an Extension Filter to Microsoft Exchange
+Chat Server, calls to the AddServerEvents and AddChannelEvents methods of the
+IChatRegistrar object may result in an access violation.
+
+NOTE: The access violation is caught by the Chat Server. To detect an access
+violation, the Extension Filter must install its own exception handler.
+
+CAUSE
+=====
+
+During callback registration, the Chat Server modifies the string parameters
+that are passed to the methods of the IChatRegistrar object. If the string
+parameters are hard-coded in the Extension Filter, the buffer that is passed to
+the Chat Server is marked read-only. When the Chat Server attempts to modify
+this buffer, it generates an access violation.
+
+RESOLUTION
+==========
+
+To avoid this problem, copy the registration string to a temporary buffer, and
+pass the buffer to the IChatRegistrar object. The following code sample
+registers the OnNewUser and OnCloseUser events properly:
+
+  STDMETHODIMP CMyExtension::Init(IChatServer *pServer, 
+                                  IChatRegistrar* pRegistrar, 
+                                  long *Result)
+  {
+     long     nResult;
+     wchar_t  sServerEvent[512] = { 0 };
+     
+     wcscpy(sServerEvent, L"OnNewUser,OnCloseUser");
+
+     __try
+     {
+        pRegistrar-&gt;AddServerEvent(sServerEvent, &amp;nResult);
+        if(nResult != 0)
+           OutputDebugString("AddServerEvent failed!\n");
+     }
+     __except(TRUE)
+     {
+        OutputDebugString("Aiiiieeee\n");
+     }
+
+     *pResult = nResult;
+     return S_OK;
+  }
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code to register the OnNewUser and OnCloseUser events causes
+an access violation:
+
+  STDMETHODIMP CMyExtension::Init(IChatServer *pServer, 
+                                  IChatRegistrar* pRegistrar, 
+                                  long *Result)
+  {
+     long     nResult;
+
+     __try
+     {
+        pRegistrar-&gt;AddServerEvent(L"OnNewUser,OnCloseUser", &amp;nResult);
+        if(nResult != 0)
+           OutputDebugString("AddServerEvent failed!\n");
+     }
+     __except(TRUE)
+     {
+        OutputDebugString("Aiiiieeee\n");
+     }
+
+     *Result = nResult;
+     return S_OK;
+  }
+
+REFERENCES
+==========
+
+- Microsoft Exchange Chat Server Extensibility Software Development Kit (SDK).
+
+- Microsoft Exchange Chat Server Online Documentation.
+
+Additional query words: Chat Server
+
+======================================================================
+Keywords          : kbExchange550 kbMsg kbVC kbGrpDSMsg kbDSupport 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57579: Why BASIC 7.00 and 7.10 Don’t Support Multiuser ISAM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57579: Why BASIC 7.00 and 7.10 Don’t Support Multiuser ISAM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57579/","publisher":null,"image":null,"headline":"Q57579: Why BASIC 7.00 and 7.10 Don’t Support Multiuser ISAM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57579-why-basic-700-and-710-dont-support-multiuser-isam">Q57579: Why BASIC 7.00 and 7.10 Don’t Support Multiuser ISAM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57579
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 27-JUL-1990
+
+Question:
+
+Why is ISAM support in Microsoft BASIC Professional Development System
+(PDS) versions 7.00 and 7.10 only single-user and not multiuser? Also,
+why was ISAM support for OS/2 protected mode not available in 7.00 but
+was released in version 7.10?
+
+(Multiuser ISAM support refers to the ability for multiple processes,
+or users on a network, to access different records within one ISAM
+file at the same time, with locking of individual records. BASIC 7.00
+and 7.10 don't support multiuser ISAM; they only support single-user
+ISAM, where the whole ISAM file is locked during use by one program.)
+
+Response:
+
+The Microsoft BASIC Professional Development System (PDS) is a
+feature-packed product designed to satisfy the majority of needs
+expressed to us by our professional BASIC programmers. It includes the
+following:
+
+ - Significant enhancements in performance (smaller and faster EXEs)
+
+ - Significant enhancements in capacity (a 10- to 50-times increase in
+   code and/or data space)
+
+ - Significant enhancements in language (CURRENCY data type, static
+   arrays in user-defined-TYPE records, local error handling, stack
+   control, DOS file control)
+
+ - Extras (three Excel-based libraries, three BASIC toolboxes for user
+   interfaces, presentation graphics, and matrix math)
+
+ - A new dimension added to file handling in the form of the
+   high-performance ISAM database engine with a powerful, integrated
+   BASIC programming interface
+
+As much as Microsoft wanted to include multiuser ISAM in BASIC PDS
+version 7.00 or 7.10, doing so meant holding back other features (such
+as those above) from the programmers who have expressed such a great
+need for them. Clearly, PC connectivity is growing and so will the
+need for a multiuser ISAM in BASIC. Just as Microsoft listened to
+customers in creating BASIC PDS 7.00 and 7.10, we will continue to
+listen and will make every attempt to have our future products address
+the most serious needs made known to us.
+
+The longer we allow the feature list for a given product release to
+grow, the longer everyone has to wait to get the feature(s) that may
+solve their immediate problem(s). If we had held BASIC 7.00 or 7.10
+off the market until multiuser ISAM was ready, no one would have had
+any of the above capacity, performance, or language features in a
+satisfactory time frame.
+
+Only after thorough testing did we introduce protected-mode (but still
+single-user) ISAM support in BASIC 7.10.
+
+Our perpetual challenge in the product release planning process is to
+find the combination of features and schedule that will best satisfy
+the needs of most of our customers.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

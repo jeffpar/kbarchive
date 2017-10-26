@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296851: PRB: Error &quot;User Password/Validation Failed&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296851: PRB: Error &quot;User Password/Validation Failed&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296851/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296851/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296851/","publisher":null,"image":null,"headline":"Q296851: PRB: Error &quot;User Password/Validation Failed&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296851-prb-error-user-passwordvalidation-failed">Q296851: PRB: Error "User Password/Validation Failed"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296851
+Product(s): Internet Information Server
+Version(s): 1.0,5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbCOMPlus kbConfig kbVisID600 kbWebServer kbGrpDSASP kbDSupport kberror kbiis5
+Last Modified: 04-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM+, version 1.0 
+- Microsoft Internet Information Server 5.0 
+- Microsoft Active Server Pages 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure a Web application to run in High (Isolated) protection mode
+(out-of-process from Internet Information Server) in the Internet Services
+Manager (ISM) console, the application is disabled, and you receive the
+following error message:
+
+  User Password/Validation failed
+
+This means that the application does not serve Active Server Pages (ASP) pages,
+it appears as a yellow folder in the ISM console, and the Create button in the
+application properties is enabled.
+
+In a related but slightly different scenario, you may already have an application
+set to High (Isolated) protection, and then someone changes the password for the
+IWAM_&lt;ServerName&gt; account without following the synchronization steps in
+this article. When this occurs, your application is disabled, but you do not
+receive an error message. HTML pages in your application continue to work as
+expected; however, when you try to browse to ASP pages in the application, you
+receive the following error message in the browser:
+
+  Server Application Error. The server has encountered an error while loading
+  an application during the processing of your request. Please refer to the
+  event log for more detail information. Please contact the server
+  administrator for assistance.
+
+CAUSE
+=====
+
+This behavior is by design. When you run an Internet Information Server (IIS)
+5.0 application in High (Isolated) mode, a COM+ application package is
+automatically created for the application in the Component Services Manager
+(CSM) console. By default, this package runs your application's process under
+the IWAM_&lt;ServerName&gt; user account. The error occurs because the IWAM
+account is not synchronized. The password that is specified for the IWAM account
+(or whatever account the user specifies) in the metabase (the IIS 5.0 registry)
+is different from the Windows password that is set for the same account in the
+Local Users and Groups Manager (UGM) console.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Use a GET command to determine what account is used for the Web Application
+  Manager (WAM) in the metabase. If your Windows computer name is WebServer1,
+  at a command prompt, browse to the Adminscripts folder, and type the
+  following command:
+
+  "inetpub\adminscripts&gt;adsutil GET w3svc/WAMUserName" (without the
+  quotation marks)
+
+  This returns the WAM user account name in the following format:
+
+  
+
+  WAMUserName                    : (String) "IWAM_WebServer1"
+
+2. Reset the password for this account in the UGM console as follows:
+
+  a. On the Start menu, click Run, and type "lusrmgr.msc" (without the
+     quotation marks) to open the UGM console.
+
+  b. Click the Users folder, right-click the account from step 1 (usually
+     IWAM_&lt;ServerName&gt;), and then click Set Password.
+
+  c. In the Password and Confirm Password boxes, type a new password. This
+     example uses the password "Password".
+
+3. At a command prompt, type the following command to set the new password in
+  the metabase:
+
+  "Inetpub\adminscripts&gt; adsutil SET w3svc/WAMUserPass [Password]" (without
+  the quotation marks)
+
+  This returns the following output:
+
+  
+
+  WAMUserPass                       : (String) "**********"
+
+4. On the Start menu, click Run, and then type "iisreset" (without the quotation
+  marks) to restart the World Wide Web Publishing Service. This command stops
+  and restarts all Web services.
+
+5. Make sure that you re-enable your virtual directory as an application. To do
+  this, follow these steps:
+
+  a. On the Start menu, point to Programs, point to Administrative Tools, and
+     then click Internet Services Manager to open the ISM console.
+
+  b. Right-click the virtual directory, and then click Properties.
+
+  c. On the Directory tab (or Home Directory if you are working with a site),
+     click Create if it is enabled.
+
+  d. In the Application Protection drop-down list box, make sure that High
+     (Isolated) is selected.
+
+6. Update the password in the COM+ package that was automatically created for
+  your out-of-process Web application as follows:
+
+For IIS 4.0
+
+  a. On the Start menu, point to Programs, point to Windows NT 4.0 Option Pack,
+     point to Microsoft Internet Information Server, click on Internet Service
+     Manager.
+
+  b. Double-click Microsoft Transaction Server, double-click Computers,
+     double-click My Computer, and then double-click Packages Installed.
+
+  c. Right-click on the objects associated with your IIS Websites (identifed as
+     IIS-{websitename}).
+
+  d. On the Identiy tab, make sure that "This user" is selected, and verify
+     that the account from Step 1 appears in the User Box.
+
+  e. In the Password and Confirm Password boxes, type the updated password.
+
+For IIS 5.0
+
+  a. On the Start menu, point to Programs, point to Administrative Tools, and
+     then click Component Services to open the CSM console.
+
+  b. Click to expand the Component Services, Computers, My Computer, and COM+
+     Applications nodes.
+
+  c. Under COM+ Applications, right-click the package for your Web application,
+     and then click Properties.
+
+  d. On the Identity tab, make sure that This user is selected, and verify that
+     the account from step 1 appears in the User box.
+
+  e. In the Password and Confirm Password boxes, type the updated password.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the UGM console, and reset the password for IWAM_&lt;ServerName&gt;.
+
+2. Open the ISM console. On the Internet Information Server menu, click My
+  Computer (name), and then click Default Web Site.
+
+3. From the list, select an application that is not yet configured to run
+  out-of-process. Right-click your selection, and then click Properties.
+
+4. On the Virtual Directory (or Directory) tab, in the Application Protection
+  drop-down list box, click High (Isolated), and then click OK.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q195956 Cannot Set AppRoot OutProc, MTS Package Identity Set to "Y"
+
+  Q255770 PRB: Logon Failure: Unknown User Name or Bad Password When You Run
+  Out-of-Process Webs
+
+Additional query words: disable disabled create remove High(Isolated) high isolated out of process identity synchronize
+
+======================================================================
+Keywords          : kberrmsg kbCOMPlus kbConfig kbVisID600 kbWebServer kbGrpDSASP kbDSupport kberror kbiis500 
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis500 kbCOMPlusSearch kbZNotKeyword3 kbCOMPlus100
+Version           : :1.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

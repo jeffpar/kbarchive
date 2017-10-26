@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268332/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268332/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268332/","publisher":null,"image":null,"headline":"Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268332-err-msg-setup-of-certificate-server-certificate-authority-fa">Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268332
+Product(s): Internet Information Server
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT version 4.0 Option Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Certificate Server 1.0 by using the Windows NT
+Windows Option Pack (NTOP) Setup program, and you choose the Show Advanced
+Configuration option, the following error message may occur:
+
+  Setup of "Certificate Server Certificate Authority" failed. The specific
+  error code is 0x350e644. Setup will continue but the component may not
+  function properly.
+
+CAUSE
+=====
+
+This error message (or similar) may occur if you chose the hash method
+(algorithm) SSL3 SHAMD5 in the Advanced Configuration section of the setup
+routine.
+
+Other hash methods may encounter this same type of error message.
+
+RESOLUTION
+==========
+
+For SSL 3.0 and 128-bit encryption support, you need to choose either SHA-1 or
+MD5 (MD5 is the default hash algorithm) instead of SSL3 SHAMD5.
+
+SSL SHAMD5 is a valid hash type, but it cannot be used to sign certificates. It
+is used only during the SSL handshake, as part of the client authentication
+process.
+
+MORE INFORMATION
+================
+
+In Certificate Server 1.0, Setup enumerates all algorithms supported by the
+Cryptographic Services Provider (CSP) and puts them in the visible list. This
+includes hash algorithms that may or may not support signing. This allows you to
+choose a hash that cannot be signed as a CA (Certificate Authority), and fails
+during the Create and Sign section of the setup.
+
+In Certificate Server 2.0 (installed though Windows 2000 Setup), the setup
+routine checks if the selected Cryptographic Services Provider supports signing,
+and filters out all hashes that are not designated for signing (for example SSL3
+SHAMD5). Further, if the CSP does not support the new flags that are available
+to distinguish hash-signing capabilities, setup does a signing test before
+leaving this screen to verify that this CSP supports signing with the selected
+hash. If it does not support signing on the selected hash, a warning dialog box
+appears so that you can select another hash.
+
+Additional query words: error certserver setup ca
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNT400OptionPack
+Version           : winnt:
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

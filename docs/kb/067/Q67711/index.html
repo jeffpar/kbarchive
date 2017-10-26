@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67711/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67711/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67711/","publisher":null,"image":null,"headline":"Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67711-using-windows-user-kernel-and-gdi-symbols-in-codeview">Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67711
+Product(s): Microsoft Programming Utilities
+Version(s): 3.05,3.14,4.0,4.01,4.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for Windows, versions 3.05, 3.14, 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+CodeView for Windows (CVW) can view symbolic information in Windows's core code
+and can set breakpoints inside Windows functions when the debugging versions of
+USER.EXE, GDI.EXE, KRNL286.EXE, and KRNL386.EXE are installed in your
+development environment.
+
+For Windows 3.0, Section 7.3.2 of the "Microsoft Windows Software Development Kit
+Tools" manual describes how to install the debugging version of Windows. The
+"Microsoft Windows Software Development Kit: Programming Tools" manual presents
+similar information for Windows 3.1 beginning on page 73.
+
+This article discusses using Windows symbols to set breakpoints, list module
+names and functions, and disassemble Windows code.
+
+MORE INFORMATION
+================
+
+For CVW to access Windows symbols, USER.EXE, GDI.EXE, and either KRNL286.EXE or
+KRNL386.EXE must be loaded into CVW as dynamic-link libraries (DLLs). This can
+be done with the /L command-line switch or in response to the DLL prompt when
+CVW starts.
+
+KRNL286.EXE should be used when debugging applications in standard mode and
+KRNL386.EXE should be used when debugging in enhanced mode.
+
+The symbolic information is available only while viewing assembly language
+listings of Windows code. By default, the symbols are not visible. To view the
+symbolic information, perform the following two steps:
+
+1. From the Options menu, choose Source Window.
+
+2. In the Source Window dialog box under the heading Assembly Listing, check the
+  Show Symbolic Name box. If this box is not checked, no symbols appear in any
+  assembly display.
+
+When the Source Window option has been set, you can step into Windows code or
+break into the debugger with the CTRL+ALT+SYS RQ key combination and see what
+function is currently being executed. Note that you will probably break into a
+private function within Windows for which no symbolic information is available.
+
+When the symbols are loaded, you can set breakpoints at a particular function
+name, disassemble a Windows function, list all the modules, and list all
+functions contained in those modules.
+
+Note that whenever you use the name of a Windows function that is defined with
+the PASCAL calling convention, you must type the name in uppercase letters. When
+the name of a Windows function begins with a capital letter, such as the GetDC
+function, the function is defined with the PASCAL calling convention. The name
+of a function defined with the C calling convention, such as the wsprintf
+function, begins with a lowercase letter.
+
+To set a breakpoint, use the BP command or the Watch menu, and specify the symbol
+for the function name.
+
+To disassemble Windows code, use the command
+
+     U [&lt;module&gt;!]&lt;function name&gt;
+
+where &lt;module&gt; is the name of the module you want to disassemble and
+&lt;function name&gt; is the name of a function in that module. The character
+"!" after the module name is required. Disassembly takes place in the source
+window.
+
+In CVW, the X* command lists all available modules. This command lists the names
+of all modules in the application and in any loaded DLLs.
+
+Once a module name is known, the following command lists all the functions within
+that module:
+
+     X? [&lt;module&gt;!]*
+
+Example
+-------
+
+KRNL386.EXE has a module named LDDEBUG. To list the functions in this module,
+enter the following in the command window:
+
+     X? LDDEBUG!*
+
+The output window displays many addresses with no symbols, but the listing
+includes OUTPUTDEBUGSTRING. This shows that the OutputDebugString function is
+implemented in the LDDEBUG module.
+
+If [&lt;module&gt;!] is not specified, the functions in the current module are
+displayed.
+
+Using the X command by itself displays all public symbols available to CVW.
+
+Additional query words: no32bit 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbCodeView305 kbCodeView314 kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :3.05,3.14,4.0,4.01,4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

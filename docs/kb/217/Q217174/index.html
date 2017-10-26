@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217174/","publisher":null,"image":null,"headline":"Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217174-fix-append-from-type-xl8-makes-vfp-6-disappear">Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217174
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbvfp600bug kbXBase KbDBFDBC kbVS600sp4fix kbVS600sp5fix
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing the APPEND FROM &lt;xlfile.xls&gt; TYPE XL8 command makes Visual FoxPro
+either disappear or produce an error. In Visual FoxPro 6.0 running under Windows
+NT 4.0, the following error message may appear before the application closes:
+
+  Fatal error: Exception code=C0000005
+
+After selecting OK, Visual FoxPro disappears.
+
+In Visual FoxPro 6.0 Service Pack 3 running under Windows NT 4.0, FoxPro simply
+disappears after executing the APPEND FROM command. No error mesage appears.
+
+In Visual FoxPro 6.0 Service Pack 3 running under Windows 98, the following error
+appears:
+
+  Microsoft Excel file format is invalid.
+
+CAUSE
+=====
+
+This is known to happen if over approximately 350 cells in the Excel spreadsheet
+have been copied and then the Paste Special, Values option is used. The actual
+number of cells varies.
+
+RESOLUTION
+==========
+
+Here are a few possible resolutions to this problem:
+
+- Save the Excel file as an Excel 5.0/95 workbook, or earlier, and use the
+  APPEND FROM command to transfer the data.
+
+- Save the Excel file as a tab or comma delimited (.csv) text file and use the
+  APPEND FROM command to transfer the data.
+
+- Use the Import command in Visual FoxPro. Import is on the File menu or you
+  can code:
+
+     IMPORT FROM append.xls XL8
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the next service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+  Visual Studio Product Updates
+  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+This mainly happens with files in an Excel 97 format, which for purposes of
+Visual FoxPro's APPEND command, is version 8.0. The TYPE XL8 clause for Excel 97
+files was added in Visual FoxPro 6.0. Visual FoxPro 5.x and earlier did not have
+this option.
+
+Steps to Reproduce Behavior
+---------------------------
+
+WARNING: The following steps cause Visual FoxPro to crash. Please make sure that
+you save all important data or code before following the steps. It is also a
+good idea to save all information in any other running applications before you
+use these steps:
+
+1. In Excel 97, create a new file.
+
+2. Place the following data in the corresponding cells:
+
+A1: 1
+A2: 2
+A3: 3
+B1: =CONCATENATE("Hello",A1)
+
+3. Press the F5 key to open the GoTo dialog box, then type the following and
+  then click OK:
+
+A1:A4000
+
+4. From the Edit menu, point to Fill, then choose Series. In the Series dialog
+  box, select OK. This fills the column with numbers from 1 to 4,000.
+
+5. Press the F5 key again, then type the following and then click OK:
+
+B1:B4000
+
+6. From the Edit menu, point to Fill, then choose Down. This fills the columns
+  with the formula.
+
+7. While B1:B4000 is selected, from the Edit menu, select Copy, then select
+  Edit, Paste Special. In the Paste Special dialog box, select Values, then
+  choose OK. Before doing anything else, press the ESCAPE key to get rid of the
+  copy marquee. Pressing the ESCAPE key after pasting is important because if
+  you press the ENTER key, the formulas will be pasted back in the cells.
+
+8. Save the Excel file. By default, it should save as a Microsoft Excel
+  Workbook. For these steps, call the file Append.xls and place it in your
+  Visual FoxPro default directory to avoid pathing problems.
+
+9. Close Excel.
+
+10. In Visual FoxPro 6.0, issue these commands in the Command window to create a
+  new table and append in the Excel file. Remember that Visual FoxPro should
+  disappear after the APPEND FROM command so make sure everything is saved:
+
+     CREATE TABLE appendtest (num I, char C(40))
+     APPEND FROM append.xls TYPE XL8
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbvfp600bug kbXBase KbDBFDBC kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

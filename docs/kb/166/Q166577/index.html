@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166577/","publisher":null,"image":null,"headline":"Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166577-xfor-subject-field-for-smtp-outbound-mails-not-ecu-kr-encoded">Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166577
+Product(s): Microsoft Exchange
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 09-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the Korean Microsoft Exchange Client that is connected to US Exchange Server
+version 5.0 with the Build 1458.15 sends an SMTP mail message with Korean
+characters in the subject field, the Korean characters are not readable although
+KSC-5601 is set on the Character Set Translation for both MIME and non-MIME in
+the Internet Mail tab of the Internet Mail Service Properties.
+
+CAUSE
+=====
+
+The "euc-kr" label should be used to encode SMTP mails with Korean characters in
+the subject field. If you turn on the Message Archival on the Diagnostics
+Logging tab, the outbound SMTP messages with Korean characters in the subject
+saved in the IMCDATA\OUT\ARCHIVE directory should have "euc- kr" label in the
+subject field. One correctly encoded header is as follows:
+
+  Message-ID: &lt;6180A23D98B7D011BD4800A0C90D616D051C@server.company1.com&gt;
+  From:  &lt;user1@company1.com&gt;
+  To: "'user2@company2.com'" &lt;user2@company2.com&gt;
+  Subject: =?euc-kr?B?Rlc6IL7GufbB9g==?=
+  Date: Thu, 22 May 1997 15:55:46 -0700
+  X-Priority: 3
+  MIME-Version: 1.0
+  X-Mailer: Internet Mail Service (5.0.1457.3)
+  Content-Type: text/plain; charset="iso-2022-kr"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in the latest Microsoft Exchange Server
+5.0 U.S. Service Pack. For information on obtaining the service pack, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: kbkorea
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

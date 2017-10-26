@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188715/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188715/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188715/","publisher":null,"image":null,"headline":"Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188715-global-asa-not-firing-when-visual-interdev-made-iis-40-app">Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188715
+Product(s): Internet Information Server
+Version(s): 1.0,4.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword
+Last Modified: 11-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Visual InterDev, versions 1.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating a new application with Visual InterDev on Internet Information
+Server 4.0 (IIS), the code in the Global.asa for this application does not
+execute. A common symptom is while an administrator is logged into the IIS 4.0
+computer, applications are created successfully, and when an administrator is
+not logged into the IIS computer, projects are not created as applications.
+
+CAUSE
+=====
+
+If the virtual directory that contains the Global.asa is not set as an
+Application Root, the code in the Global.asa will not be executed. Visual
+InterDev will be unable to create an application root if the Microsoft
+Transaction Server (MTS) system package logon identity is set to "Interactive
+user - the current logged on user" and no one is currently logged on or the
+current logged on does not have the proper permissions to create an MTS package.
+
+RESOLUTION
+==========
+
+During the installation of Internet Information Server 4.0, a user can specify
+the account for MTS sessions to run under. By default, the Interactive User is
+specified. What this means is that when there is no Interactive User (for
+example, an administrator is not logged onto the Web server), administrative
+operations that require authentication, such as creating an Application Root,
+fail.
+
+Use the following steps to resolve existing problems:
+
+1. Bring up the Microsoft Management Console (MMC).
+
+2. Right-click the directory that contains the Global.asa that is not firing and
+  select "properties."
+
+3. Select the Directory or Virtual Directory tab.
+
+4. Click the Create button to establish this directory as an application root.
+
+While the above steps will resolve existing problems, you can use the following
+steps to prevent future problems:
+
+1. Bring up the MMC for the server.
+
+2. Expand "Microsoft Transaction Server."
+
+3. Expand "Computers."
+
+4. Expand "My Computer."
+
+5. Expand "Packages Installed."
+
+6. Right-click "System" and bring up the Property page.
+
+7. On the Identity tab, change from the interactive user to a user that is an
+  administrator* on the machine.
+
+8. Close the Property page.
+
+9. Reboot.
+
+*Following are steps to create an account to use for the MTS System Package:
+
+Follow these steps to use the user manager:
+
+1. Create a new local group and name it MTS Administrators.
+
+2. Create a new user and name it MTS Administrator.
+
+3. Make the new user a member of the both the Administrators group and the MTS
+  Administrators group,
+
+4. Give the new user the advanced user right to log on as a service.
+
+For more information on how to configure the system package account, see the
+Internet Information Server 4.0 product documentation under Getting Started
+Release Notes for Microsoft Transaction Server
+
+REFERENCES
+==========
+
+For more information about application settings, see the "Configuring
+Applications" topic in the Windows NT 4.0 Option Pack online documentation.
+
+For the latest Knowledge Base articles and other support information on Visual
+InterDev and Active Server Pages, see the following page on the Microsoft
+Technical Support site:
+
+  http://support.microsoft.com/support/vinterdev/
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword 
+Technology        : kbVisIDsearch kbiisSearch kbAudDeveloper kbiis400 kbVisID100 kbVisID600
+Version           : :1.0,4.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

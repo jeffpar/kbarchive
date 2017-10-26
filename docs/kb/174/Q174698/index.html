@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174698/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174698/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174698/","publisher":null,"image":null,"headline":"Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174698-xfor-dxanotes-stops-responding-due-to-incorrect-id-file">Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174698
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 06-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The LinkAge Notes Directory Exchange Agent (DXA) will not process any requests.
+It appears to initialize properly and does not do anything. Requests from
+LinkAge Administrator's Process Manager to stop the process do not take effect.
+The LinkAge Notes DXA is stuck in the current activity "Processing Inbound MIF
+Message," regardless of size of the update. After you terminate the process
+through Windows NT 4.0 Task Manager (Lsdxants.exe), within the next minute the
+log reveals the following (logs are located in LINKAGE\LOGS directory):
+
+  1997/09/22 17:57:34- LDE(01a8) 4 10153:Subtask DXANOTES(lsdxants.exe)
+  has ended with return code 1
+  &gt;&gt; subtask(441)
+  1997/09/22 17:57:34- LDE(01a8) 2 10157:Subtask DXANOTES generated the
+  following messages:
+  &gt;&gt; subtask(1031)
+  1997/09/22 17:57:34- LDE(01a8) 2 10158: DXANOTES&gt; The ID file being used
+  is: C:\notes_server\data\user.id
+  &gt;&gt; subtask(1049)
+  1997/09/22 17:57:34- LDE(01a8) 2 10158: DXANOTES&gt; Enter password (press
+  the Esc key to abort):
+  &gt;&gt; subtask(1049)
+
+CAUSE
+=====
+
+The incorrect Lotus Notes ID file is being used in reference to the LinkAge
+Notes Directory Exchange Agent (DXA). The LinkAge Notes DXA, similar to the
+LinkAge Notes Connector, requires a Notes ID file with no password.
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. Check the [DXANOTES] section in the Linkage.ini file, located in the \LINKAGE
+  directory. The parameter NOTESINI points to the location of the Notes.ini
+  file that the LinkAge Notes DXA will use.
+
+2. Start a Notes client pointing to the Notes.ini file (notes.exe
+  =c:\notes\notes.ini).
+
+3. Select the File menu, and then click Tools, and select User ID to verify
+  which ID file is being used by the LinkAge Notes DXA.
+
+4. Change the User ID to the proper Notes ID (should not have a password) by
+  going to the File menu, clicking Tools, and selecting Switch ID.
+
+5. If you receive one of the following pop-up messages:
+
+  The ID file is locked by another process. Try again later.
+
+  -or-
+
+  Unable to open desktop file. Notes may have terminated abnormally in an
+  earlier session. Please log off or shut down the operating system before
+  running Notes again.
+
+  you should stop the LinkAge controller service from Control Panel and ensure
+  that no Lsdxants.exe, Lsntsmex.exe, Lsmexnts.exe, Notes.exe, or Nlnotes.exe
+  processes are resident in memory. If so, terminate them using task manager
+  and attempt another dirsync cycle.
+
+6. If this fails, restart the computer.
+
+MORE INFORMATION
+================
+
+By default, LinkAge Message Exchange (LME) and the LinkAge Directory Exchange
+(LDE) components connect to the same Notes server. Therefore, the Notes.ini
+parameter in the LME-NOTES and DXANOTES section points to the same Notes.ini
+file on the LinkAge computer. If the LDE component is connecting to a different
+Notes server than the LME component, the Notes.ini parameter in the DXANOTES
+section of the Linkage.ini file must reflect this difference; otherwise, dirsync
+will not work. Check this parameter first, and confirm that it is correct.
+
+
+Additional query words: HANG
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

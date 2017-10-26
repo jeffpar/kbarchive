@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138560/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138560/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138560/","publisher":null,"image":null,"headline":"Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138560-how-to-disable-combo-and-list-boxes-in-wizard-generated-forms">Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138560
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Form Wizard builds a form, it creates the form so that when the form
+runs, the objects that hold data are disabled. Clicking the Edit button enables
+the objects and allows editing of the information. However, if controls other
+than check boxes, text boxes, or OLE-bound controls are added to the form, they
+are enabled, not disabled, when the form is run.
+
+This article shows you how to disable controls such as combo boxes and list boxes
+so that they are disabled when the form runs and enabled when the Edit button is
+clicked. The code that controls which objects are disabled or enabled is located
+in the Wizstyle.vcx form. The combo and list boxes were not included in that
+code, but you can modify the code to include the combo and list boxes.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. On the File menu, click Open, and change Files of Type to Visual Class
+  Library. In the \Vfp\Wizards\ directory, select Wizstyle.vcx. In the Open
+  box, choose TXTBTNS as the Class Name. The Class Designer will appear and
+  allow the editing of the wizard buttons.
+
+2. Double-click any button. In the Object box, select TXTBTNS. In the Procedures
+  box, select SETALLPROP. In this code, look for the following line (it is
+  split here for readability):
+
+     CASE ATC(m.oControlParent.Controls[m.i].BaseClass,
+        "CheckBox,TextBox,OleBoundControl") # 0
+            m.oControlParent.Controls[m.i].Enabled = THIS.EditMode
+
+3. Note that CheckBox, TextBox, and OleBoundControl are the only objects
+  referenced here. Add "ComboBox, ListBox, EditBox" to this line of code.
+
+4. Save the changes, and create or open a wizard-generated form. Add a combo box
+  based on a field from a table. When you run the form, note that the combo box
+  is disabled until you click the Edit button.
+
+By changing the code in the TXTBTNS class, this change will also effect the way
+the picture buttons in PICBTNS behave on the combo and list boxes.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

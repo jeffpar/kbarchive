@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90904: Access Key in Label Before Control with No TabStop Problem | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90904: Access Key in Label Before Control with No TabStop Problem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90904/","publisher":null,"image":null,"headline":"Q90904: Access Key in Label Before Control with No TabStop Problem","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90904-access-key-in-label-before-control-with-no-tabstop-problem">Q90904: Access Key in Label Before Control with No TabStop Problem</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90904
+Product(s): Microsoft Visual Basic for Windows
+Version(s): MS-DOS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic for MS-DOS 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The system will hang when an application is run and you choose the access key if
+both
+
+- A label with an access key in the caption
+
+- A control that can receive focus (for example, a text box) with the TabStop
+  property set to False are placed on a form.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Visual Basic for MS-DOS,
+version 1.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem only occurs if you do not have any controls on the form with the
+TabStop property set to True.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start VBDOS.EXE.
+
+2. From the File menu, choose New Form.
+
+3. In the Form Designer (FD.EXE), add a label (Label1) and a text box (Text1) to
+  the form (Form1).
+
+4. Set the Caption property of Label1 to "&amp;Other".
+
+5. Set the TabStop property of Text1 to False.
+
+6. Exit the Form Designer, and save all changes.
+
+7. In VBDOS.EXE, run the application.
+
+8. Press ALT+O to actuate the Label access key.
+
+NOTE: Because it has nowhere to set the focus via the TabStop, your machine will
+hang and may proceed to make a repeated beeping sound.
+
+If the access key happens to be &amp;O as in the above example, you printer (if
+on) will continuously print a screen dump of the form.
+
+Additional query words: VBmsdos buglist1.00 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword3 kbVB100DOS
+Version           : MS-DOS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

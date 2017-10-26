@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/269/Q269139/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/269/Q269139/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/269/Q269139/","publisher":null,"image":null,"headline":"Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q269139-windows-2000-tcpip-protocols-and-services-technical-reference-c">Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q269139
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 13-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows 2000 TCP/IP Protocols and Services Technical Reference ISBN 0-7356-0556-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Windows 2000 TCP/IP Protocols and
+Services Technical Reference, ISBN 0-7356-0556-4.
+
+The following topics are covered:
+
+- Page 69: Incorrect Information About Defending Node's ARP Request
+
+- Page 122: Binary Number Should End With 1 Not 0
+
+- Page 146: Change 172.16.1.19 To 172.16.1.99
+
+- Page 467: Incorrect Reference To Appendix Folder
+
+MORE INFORMATION
+================
+
+Page 69: Incorrect Information About Defending Node's ARP Request
+-----------------------------------------------------------------
+
+On page 69, in lines 4 and 5,
+
+Change:
+"The defending node's ARP Request contains the SHA set to the offending node's
+MAC address."
+
+To:
+"The defending node's ARP Request contains the SHA set to the defending node's
+MAC address."
+
+
+Page 122:  Binary Number Should End With 1 Not 0
+------------------------------------------------
+
+On page 122, in Table 5-9, in row 1, the binary number should end with 1, not 0.
+
+Change:
+10000011.01101011.00000000.00000000
+
+To:
+10000011.01101011.00000000.00000001
+
+
+Page 146: Change 172.16.1.19 To 172.16.1.99
+-------------------------------------------
+
+On page 146, in the "actives route" table, correct the second to last entry as
+follows.
+
+Change:
+
+224.0.0.0    224.0.0.0    172.16.1.19     172.16.1.19
+
+To:
+
+224.0.0.0    224.0.0.0    172.16.1.99     172.16.1.99
+
+
+Page 467: Incorrect Reference To Appendix Folder
+------------------------------------------------
+
+The companion CD of the book does not contain a \Appendix folder. Please remove
+the following references on page 467:
+
+Under "FTP Commands":
+"Client commands and Windows 2000 FTP server-recognized commands can be found in
+the \Appendix folder of the companion CD-ROM."
+
+Under "FTP Replies":
+"These codes are extensible, and a listing of specific codes and their meanings
+may be found in the \Appendix folder of the companion CD-ROM."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: TKBOOK WIN2000 0-7356-0556-4
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

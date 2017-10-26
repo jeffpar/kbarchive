@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199114: SMS: How to Configure Traveling Mode on Client Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199114: SMS: How to Configure Traveling Mode on Client Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199114/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199114/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199114/","publisher":null,"image":null,"headline":"Q199114: SMS: How to Configure Traveling Mode on Client Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199114-sms-how-to-configure-traveling-mode-on-client-computers">Q199114: SMS: How to Configure Traveling Mode on Client Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199114
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup kbClient kbConfig _IK964 kbServer kbsms200 kbsms200bug kbsmsUtil kbRe
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure Traveling mode on client computers.
+
+MORE INFORMATION
+================
+
+If you are using a client computer that is running Systems Management Server
+(SMS) 2.0 that is connected to a new SMS 2.0 site, if the computer's assignment
+has been changed, you may receive one of the following messages:
+
+  SMS - Traveling Mode
+
+  Systems Management Server has detected that this computer is a traveling
+  machine. A request has been made to assign this machine to site site code.
+  Would you like to continue with this operation?
+
+  -and-
+
+  SMS - Traveling Mode
+
+  Systems Management Server has detected that this computer is a traveling
+  machine. A request has been made to deassign this machine from site site
+  code. Would you like to continue with this operation?
+
+If you are an administrator, you may want to suppress these messages on the
+client in some environments.
+
+How to Set the Traveling Mode Flag on the Client
+------------------------------------------------
+
+You can use the client to enable or disable Traveling-mode behavior. To set
+Traveling mode:
+
+1. On the client, open Control Panel, and then double-click Systems Management.
+
+2. Click the General tab, and then click to select the "This computer connects
+  to the network from different locations".
+
+SMS 2.0 Service Pack 2 (SP2) includes the Chktravl.bat and Clitravl.exe
+utilities, which are located in the SMS SP2 Support folder. The Clitravl.exe
+file calls Clitravl.exe to verify the Traveling mode configuration of a client.
+Clitravl.exe can also be called separately without the use of the Chktravl.bat
+file. Both of these files use the following command-line parameters; however you
+must use capital letters in all of these parameters for the parameter to be
+recognized by Clitravl.exe:
+
+- /TRAVEL=ON: Enables Traveling mode on the client.
+
+- /TRAVEL=OFF: Disables Traveling mode on the client.
+
+- /PROMPT=ON: Enables Traveling mode prompting on the client.
+
+- /PROMPT=OFF: Disables Traveling mode prompting on the client.
+
+You can use either the Chktravl.bat or Clitravl.exe utilities to get a report on
+the current Traveling mode configuration of the client. Note that you cannot run
+these utilities silently.
+
+
+Additional query words: prodsms travel Clitravl Chktravl bat exe
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbClient kbConfig _IK964 kbServer kbsms200 kbsms200bug kbsmsUtil kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : :2.0,2.0 SP1
+Issue type        : kbhowto
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

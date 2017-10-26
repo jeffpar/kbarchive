@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158573: STL Sample for the set::(key_, value_)comp Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158573: STL Sample for the set::(key_, value_)comp Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158573/","publisher":null,"image":null,"headline":"Q158573: STL Sample for the set::(key_, value_)comp Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158573-stl-sample-for-the-setkey_-value_comp-function">Q158573: STL Sample for the set::(key_, value_)comp Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158573
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 04-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The following sample code illustrates how to use the set::key_comp and
+set::value_comp STL functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;set&gt;
+
+Prototype
+---------
+
+     template&lt;class _K, class _Pr, class _A&gt;
+     class set {
+     public:
+     // Function 1:
+
+        key_compare key_comp() const;
+
+     // Function 2:
+        value_compare value_comp() const;
+     }
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The key_comp function returns the stored function object that determines the
+order of elements in the controlled sequence. The value_comp function returns
+the same function that key_comp returns.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: -GX
+  // 
+  // SetComp.cpp:
+  //      Illustrates how to use the key_comp function to obtain a
+  //      function pointer that is the stored function object that
+  //      determines the order of elements in the controlled sequence.
+  //      It also illustrates how to use the value_comp function to
+  //      obtain a function pointer that is the stored function object
+  //      that determines the order of the elements in the controlled
+  //      sequence (same as key_comp result).
+  // 
+  // Functions:
+  // 
+  //    key_comp     Returns a function pointer to the function that
+  //                 determines the order of elements in the controlled
+  //                 sequence.
+  //    value_comp   Returns a function pointer to the function that
+  //                 determines the order of elements in the controlled
+  //                 sequence (same as key_comp).
+  // 
+  // Written by Derek Jamison
+  // of Microsoft Technical Support,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #pragma warning(disable:4786)
+
+  #include &lt;set&gt;
+  #include &lt;iostream&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef set&lt;int,less&lt;int&gt;,allocator&lt;int&gt; &gt; SET_INT;
+
+  void truefalse(int x)
+
+  {
+    cout &lt;&lt; (x?"True":"False") &lt;&lt; endl;
+  }
+
+  void main() {
+
+    SET_INT s1;
+
+    cout &lt;&lt; "s1.key_comp()(8,10) returned ";
+    truefalse(s1.key_comp()(8,10));  // True
+
+    cout &lt;&lt; "s1.value_comp()(8,10) returned ";
+    truefalse(s1.value_comp()(8,10));  // True
+
+    cout &lt;&lt; "s1.key_comp()(10,8) returned ";
+    truefalse(s1.key_comp()(10,8));  // False
+
+    cout &lt;&lt; "s1.value_comp()(10,8) returned ";
+    truefalse(s1.value_comp()(10,8));  // False
+
+    cout &lt;&lt; "s1.key_comp()(8,8) returned ";
+    truefalse(s1.key_comp()(8,8));  // False
+
+    cout &lt;&lt; "s1.value_comp()(8,8) returned ";
+    truefalse(s1.value_comp()(8,8));   // False
+  }
+
+Program Output
+--------------
+
+  s1.key_comp()(8,10) returned True
+  s1.value_comp()(8,10) returned True
+  s1.key_comp()(10,8) returned False
+  s1.value_comp()(10,8) returned False
+  s1.key_comp()(8,8) returned False
+  s1.value_comp()(8,8) returned False
+
+REFERENCES
+==========
+
+Visual C++ Books Online: Visual C++ Books; C/C++; Standard C++ Library Reference
+
+Additional query words: STL STLSample value_comp key_comp
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

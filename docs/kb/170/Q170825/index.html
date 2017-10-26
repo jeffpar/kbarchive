@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170825: RAS Auto-Answer Behavior in Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170825: RAS Auto-Answer Behavior in Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170825/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170825/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170825/","publisher":null,"image":null,"headline":"Q170825: RAS Auto-Answer Behavior in Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170825-ras-auto-answer-behavior-in-windows-nt">Q170825: RAS Auto-Answer Behavior in Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170825
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.50,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the new behavior of Windows NT remote access service (RAS)
+when answering incoming calls, in Windows NT version 4.0. This behavior has
+changed because Unimodem support is included in Windows NT version 4.0, but not
+in version 3.5x.
+
+MORE INFORMATION
+================
+
+In Windows NT 3.5x, RAS initializes analog modems by sending an ATS0=1 command
+to the modem when RAS loads. This instructs the modem to answer incoming calls
+on the first ring. See the following article in the Microsoft Knowledge Base for
+more information about this parameter and how to modify the number of rings
+before answering:
+
+  Q114687 Setting Number of Rings for RAS Server Auto-Answer in NT 3.5x
+
+By default in Windows NT version 4.0, the modem is initialized by Unimodem, which
+sends an ATS0=0 to the modem when RAS loads. When an incoming call is received,
+Unimodem answers the call and passes control to RAS. In this case, the "AA"
+light on an external modem is NOT lit, though RAS answers incoming calls. For
+information about modifying the number of rings for Unimodem to answer a call in
+Windows NT 4.0, see the following article in the Microsoft Knowledge Base:
+
+  Q145879 How to Set the Number of Rings for RAS Auto-Answer in NT 4.0
+
+NOTE: Unimodem can be disabled in Windows NT 4.0, which causes RAS to behave as
+it does in Windows NT 3.5x, as described above. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q150808 Disabling Support for Unimodem Modems in Remote Access
+
+EXAMPLE
+-------
+
+The following is an example of Unimodem initializing or answering the line in
+Windows NT 4.0 (from the modem log):
+
+06-25-1997 17:06:20.113 - Hayes Accura 288 V.FC + FAX in use.
+06-25-1997 17:06:20.143 - Modem type: Hayes Accura 288 V.FC + FAX
+06-25-1997 17:06:20.143 - Modem inf path: mdmhayes.inf
+06-25-1997 17:06:20.143 - Modem inf section: M1846
+06-25-1997 17:06:20.143 - 115200,N,8,1
+06-25-1997 17:06:20.143 - 115200,N,8,1
+06-25-1997 17:06:20.173 - Initializing modem.
+06-25-1997 17:06:20.173 - Send: AT&lt;cr&gt;
+06-25-1997 17:06:20.193 - Recv: AT&lt;cr&gt;
+06-25-1997 17:06:20.423 - Recv: &lt;cr&gt;&lt;lf&gt;OK&lt;cr&gt;&lt;lf&gt;
+06-25-1997 17:06:20.423 - Interpreted response: OK
+06-25-1997 17:06:20.423 - Send: AT&amp;FE0V0W1&amp;C1&amp;D2S95=47&lt;cr&gt;
+06-25-1997 17:06:20.534 - Recv: AT&amp;FE0V0W1&amp;C1&amp;D2S95=47&lt;cr&gt;
+06-25-1997 17:06:21.064 - Recv: 0&lt;cr&gt;
+06-25-1997 17:06:21.064 - Interpreted response: OK
+06-25-1997 17:06:21.064 - Send: ATS7=60S30=0L0M1&amp;Q5S36=7S48=7S46=138&amp;K3&lt;cr&gt;
+06-25-1997 17:06:21.485 - Recv: 0&lt;cr&gt;
+06-25-1997 17:06:21.485 - Interpreted response: OK
+06-25-1997 17:06:21.485 - Send: ATB0N1X4&lt;cr&gt;
+06-25-1997 17:06:21.685 - Recv: 0&lt;cr&gt;
+06-25-1997 17:06:21.685 - Interpreted response: OK
+06-25-1997 17:06:21.685 - Waiting for a call.
+06-25-1997 17:06:21.685 - Send: ATS0=0&lt;cr&gt;
+***(tells the modem not to answer the line when a call comes in; this lets
+Unimodem do it)***
+
+06-25-1997 17:06:21.876 - Recv: 0&lt;cr&gt;
+06-25-1997 17:06:21.876 - Interpreted response: OK
+06-25-1997 17:07:15.703 - Recv: 2&lt;cr&gt;
+***(this is the ring coming in on the modem)***
+
+06-25-1997 17:07:15.713 - Interpreted response: Ring
+06-25-1997 17:07:15.743 - Answering the call.
+06-25-1997 17:07:15.743 - Send: ATA&lt;cr&gt;
+***(this is Unimodem telling the modem to answer the call)***
+
+06-25-1997 17:07:27.009 - Recv: 55&lt;cr&gt;
+06-25-1997 17:07:27.009 - Interpreted response: Informative
+06-25-1997 17:07:27.610 - Recv: 77&lt;cr&gt;
+06-25-1997 17:07:27.610 - Interpreted response: Informative
+06-25-1997 17:07:27.610 - Recv: 67&lt;cr&gt;
+06-25-1997 17:07:27.610 - Interpreted response: Informative
+06-25-1997 17:07:27.610 - Recv: 15&lt;cr&gt;
+06-25-1997 17:07:27.610 - Interpreted response: Connect
+06-25-1997 17:07:27.620 - Connection established at 28800bps.
+06-25-1997 17:07:27.620 - Error-control on.
+06-25-1997 17:07:27.620 - Data compression on.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.50,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

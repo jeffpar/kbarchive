@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/275/Q275191/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/275/Q275191/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/275/Q275191/","publisher":null,"image":null,"headline":"Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q275191-sms-corrupted-raw-file-is-created-after-hardware-inventory">Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q275191
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2
+Operating System(s): 
+Keyword(s): kbinterop kbConfig kbsms120 kbsms120bug kbInventory
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a hardware inventory, a corrupted RAW file may be created. If the
+hardware inventory is performed on a client that is not already in the database,
+a .mif file cannot be produced by the Systems Management Server (SMS) Inventory
+Processor, and the client is not added to the database.
+
+When the server attempts to process a RAW file from a client, the Invproc.log
+file that is created by the SMS Inventory Processor may report the following
+error messages:
+
+  Reading the RAW file $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  It's for machine HF1004R1 $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Processing Machine ISV MIF Files... $&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Converting RAW data to MIF $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  &gt;&gt;&gt;Inside of IndexValid(), pNetwork-&gt;dwNumNetCard = 2
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  &gt;&gt;&gt;Inside of IndexValid(), pNetwork-&gt;dwNumNetCard = 2
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  &gt;&gt;&gt;Inside of IndexValid(), pNetwork-&gt;dwNumNetCard = 2
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  &gt;&gt;&gt;Inside of IndexValid(), pNetwork-&gt;dwNumNetCard = 2
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Appending no ID group PC BIOS $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Writing $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Compilation failed~Time has incorrect format or illegal values. on line 109
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  No inventory changes for this machine, delta-mif not created
+  $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+  Waiting for MIF ........ $$&lt;SMS_INVENTORY_PROCESSOR&gt;
+
+CAUSE
+=====
+
+This issue can occur on some Dell PowerEdge servers that are running Phoenix ROM
+BIOS PLUS version 1.10 A04 or A05. On these servers, the date string that is
+collected by the SMS Inventory Process is reported by the manufacturer in
+European format (YY/MM/DD) instead of American format (MM/DD/YY).
+
+WORKAROUND
+==========
+
+To work around this issue, open an incident with Microsoft Product Support
+Services and obtain the hotfix that is described in the following Knowledge Base
+article:
+
+  Q239534 SMS: Data Loader Cannot Process MIF Date Above Year 2030
+
+This hotfix provides a resolution for this issue. You are not charged for the
+hotfix.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+MORE INFORMATION
+================
+
+The Windows NT Inventory Agent extracts the video date from the following
+registry key:
+
+  HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\VideoBiosDate
+
+This part of the registry is built when Windows NT is started (it is a volatile
+part of the registry). If you modify the key, the changes are only valid until
+you restart the computer.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbConfig kbsms120 kbsms120bug kbInventory 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

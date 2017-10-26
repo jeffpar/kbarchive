@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145995: BUG: Changes to Remote Project Files Not Detected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145995: BUG: Changes to Remote Project Files Not Detected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145995/","publisher":null,"image":null,"headline":"Q145995: BUG: Changes to Remote Project Files Not Detected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145995-bug-changes-to-remote-project-files-not-detected">Q145995: BUG: Changes to Remote Project Files Not Detected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145995
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbusage kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Developer Studio does not detect changes to project files located on remote
+computers when those project files are modified by an external source on a
+remote computer. This occurs when Developer Studio is running on Windows 95,
+Windows 98, or Windows Millennium Edition (Me). It may also occur on Windows NT
+or Windows 2000 when the remote files are on network servers that are not
+running Windows.
+
+
+CAUSE
+=====
+
+The problem occurs on networked systems that do not support the file change
+notification functions defined in the Win32 API.
+
+RESOLUTION
+==========
+
+To work around problem 1, you need to reload the file manually.
+
+To work around problem 2, you need to do a Rebuild All of the project, rather
+than a Build.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+There are two ways this problem manifests:
+
+1. If a remote file is open in Developer Studio and is modified by an external
+  source, Developer Studio should notify the user that the file has been
+  changed outside of the source editor and prompts the user to reload the file.
+  However, there is no notification.
+
+2. If a remote file is modified by an external source on a remote computer and a
+  build is launched, Developer Studio does not detect it. It will not recompile
+  the file or do whatever build step is necessary to rebuild files that are
+  dependent on the remote file.
+
+Additional query words: modify update dependency
+
+======================================================================
+Keywords          : kbusage kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90796: Instanced Data Management in Enhanced Mode Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90796: Instanced Data Management in Enhanced Mode Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90796/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90796/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90796/","publisher":null,"image":null,"headline":"Q90796: Instanced Data Management in Enhanced Mode Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90796-instanced-data-management-in-enhanced-mode-windows">Q90796: Instanced Data Management in Enhanced Mode Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90796
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the enhanced mode Windows environment, both TSRs (terminate-and-stay-
+resident programs) and VxDs (virtual device drivers) can ask the operating
+system for areas of instanced data in the V86-mode addressable virtual memory
+range. This article describes the algorithm that the VMM (virtual memory
+manager) employs to determine the memory layout as well as some implications
+arising from that approach.
+
+MORE INFORMATION
+================
+
+Because the smallest unit of memory for which the Intel i386+ processor provides
+support to the operating system is 4K and the total addressable range in V86
+mode is 0 - FFFF:F (including the virtual high memory area), the memory range of
+each virtual machine is associated with 0x10F pages that the VMM can maintain.
+Each of these pages is associated with a number of flags; the following are
+relevant for this discussion:
+
+- global (PG_SYS); meaning that this page is being mapped onto the same
+  physical page in every virtual machine; thus, changing the contents of that
+  page in one VM will affect the corresponding page in all VMs. By default, all
+  TSRs that were active before enhanced mode Windows started up are considered
+  global, as well as the images of the BIOS and MS-DOS system code.
+
+- local (PG_VM); meaning that that page is maintained in the context of that VM
+  only. Changes in these pages in one VM do not affect other VMs unless the
+  mapping has been changed by a VxD.
+
+- instanced (PG_INSTANCE); meaning data that is generally being operated on by
+  code in global pages but needs to have local instances in each VM. For
+  example, MS-DOS keeps a variable in which it stores the current working
+  directory. Although the code that works on this variable is global, the data
+  itself is local so that each VM can operate in the context of a different
+  current working directory.
+
+Because TSR code is not generally designed to be aligned on 4K boundaries, each
+page labeled PG_INSTANCE typically contains a mixture of instanced and global
+data. Windows requires that all instanced data be identified at system
+initialization time; once this task is completed, Windows sets up a data
+structure that contains the locations of instance data areas PG_INSTANCE marked
+pages. The contents of the instanced data structures present at Windows startup
+time will be saved into a snapshot buffer and restored from that buffer at
+Windows termination time.
+
+Each VM will then be associated with an instance buffer that will initially
+contain a copy of the data in the snapshot buffer. Using a copy-on-write scheme
+that is supported by the faulting mechanism provided by the hardware, Windows
+updates a VM's instance buffer once write access has been detected to a
+PG_INSTANCE page (note that this is absolutely unrelated to the paging
+mechanism, although page faults are involved to implement this technique).
+Because only parts of an instance page are being updated, fragmented and large
+instance areas decrease the performance of the swapping mechanism. Note that
+VMs' instance buffers are not accessible to VxDs or TSRs; they are local data
+structures to be accessed by the VMM only.
+
+One consequence of this approach is that changes that are made to instanced data
+while in Windows are lost after Windows terminates because the startup snapshot
+is restored then. For example, if files opened with handles are open before
+Windows enhanced mode starts up, these files should not be touched while Windows
+is running, because the internal structures that represent the files in MS-DOS
+are instanced.
+
+Using the Windows termination notification broadcasts Interrupt 2fh, ax=1606h,
+and 1609h, respectively, a TSR could override the snapshot taking by providing a
+snapshot buffer of its own. That buffer would have to reside in global memory,
+that is, in the TSR itself, and would be allocated and filled while the TSR
+processes the 1609h broadcast; at 1606h time, the TSR could "undo" the
+restoration Windows did from its snapshot buffer. However, this technique
+requires knowledge of the internal structures of MS-DOS that are to be
+manipulated and is therefore not recommended.
+
+When running the debug version of WIN386.EXE under control of the WDEB386
+debugger, the .mi command allows you to examine the currently active instanced
+areas.
+
+The inspiration for this article and some of the information, in particular the
+last chapter, comes from NeilSa (who else?).
+
+The real interesting information starts here. I have grepped through the sources
+and put together a small (and incomplete) list of DOS-stuff that is instanced.
+It's MS-DOS 5 and Win 3.1 only. Note that OEMs can use the [386Enh] switch
+USEINSTFILE to tell Windows about more of their MS-DOS version's data to
+instance. All of the stuff is in the dosmgr VxD. TSRs instancing data do so in
+response to int 2fh, ax=1605 - this is resolved to a call to AddInstanceItem, so
+all instancing goes through the code (vmm\int2fapi.asm). Very convenient! The
+only other VMM service that calls into AddInstanceItem is AllocateGlobalV86 area
+with the GVDAInstance flag set.
+
+This is the (again, incomplete) list of data items instanced by the MS-DOS
+Manager:
+
+-&gt; The BIOS memory size variable that contains the memory size as
+returned by int 12 (normally 40:13)
+-&gt; The DOS memory arena
+-&gt; A chunk of self-modifying code from the DOS loader (conspirative
+patch #14)
+-&gt; Single drive management byte (504h)
+-&gt; V86 interrupt vector table (addresses 0 - 3ffh)
+-&gt; Extra DOS data from internal DOS tables
+-&gt; BIOS data from internal DOS tables
+-&gt; DOS swappable area
+-&gt; Current directory string
+-&gt; System file table
+-&gt; DOS stack
+-&gt; Last link in SFT table; VM1 grows SFT; shouldn't be seen in other
+-&gt; SF_FLAGS in CONs SFT; accessed by COMMAND.COM
+-&gt; Device header list (so that Windows can locally add DOS drivers
+-&gt; All devices found under *local=* in SYSTEM.INI but not *global=*
+
+Data instanced by the virtual keyboard driver:
+
+-&gt; 40 bytes following address 415h (hard coded - keyboard buffer &amp;
+status)
+-&gt; one byte at address 471h (hard coded - break bit)
+-&gt; 4 bytes at address 480h (hard coded - buffer)
+-&gt; 11 bytes at 496h (hard coded - enhanced keyboard status)
+
+Data instanced by the virtual comm device:
+
+-&gt; 8 bytes following address 400h (where the comm ports' port address
+are stored)
+-&gt; 4 bytes at address 4fch (time-out value)
+
+Data instanced by the virtual printer device (if installed -- has been nuked):
+
+-&gt; 3 bytes at address 478h (time-out values)
+
+Also, VMD instanced the DOS mouse driver if it is found by following int 33h;
+almost all virtual video drivers instance data. The virtual EMM provide
+instances the segment that contains the real mode XMS entry point, and VNETWARE
+instances its redirector table.
+
+Just in case you're interested. Note also that the loadhi VxD hooks into the
+AddInstanceItem call and processes all instanced data in UMBs itself.
+
+Additional query words: 3.10 plus
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

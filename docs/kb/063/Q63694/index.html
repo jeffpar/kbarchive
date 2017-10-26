@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63694: Moving Windows 3.0 to Another Location | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63694: Moving Windows 3.0 to Another Location" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63694/","publisher":null,"image":null,"headline":"Q63694: Moving Windows 3.0 to Another Location","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63694-moving-windows-30-to-another-location">Q63694: Moving Windows 3.0 to Another Location</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63694
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may install Microsoft Windows version 3.0, then later want to copy or move
+it to a new location (on another directory, drive, or system). Although this is
+not a problem with Windows versions 2.x, such an action causes difficulties with
+Windows version 3.0. We recommend making a complete new installation if it is
+necessary to change the Windows 3.0 location.
+
+If you must move the existing installation, you must make the following
+modifications:
+
+1. Modify any entries in your .INI files that contain absolute paths (such as
+  PROGMAN.INI and any others such as the [HPPCL,LPT2] section of the WIN.INI).
+
+2. Your PIF files may contain the absolute paths to various applications that
+  might differ on another system. These must be either recreated by Setup or
+  modified by hand with the PIF Editor.
+
+3. Your Program Manager group (GRP) files contain absolute paths, both to the
+  Windows accessories and to any other applications detected by the Setup
+  program. The standard groups normally created by Setup must be modified by
+  hand with an ASCII text editor, such as Notepad. Setup can be used to help
+  re-create the Windows Applications and Non-Windows Applications groups.
+
+4. If you have changed machine types, you should run the character mode Setup on
+  the target system before starting Windows and adjust any settings as
+  necessary.
+
+MORE INFORMATION
+================
+
+If you move your Windows installation from one machine to another by copying the
+files with the MS-DOS program XCOPY.EXE or third-party programs such as Laplink
+Release III or Brooklyn Bridge, then the following error messages will appear if
+the SYSTEM subdirectory located in the WINDOWS directory is not copied at the
+same time:
++--------------------------------------------------------------------------------------------------------------------------------+
+| Command | Message                                                                                                              | 
++--------------------------------------------------------------------------------------------------------------------------------+
+| win     | Cannot find KERNEL.EXE needed to run in real mode; check to ensure the path is correct or reinstall Windows.         | 
++--------------------------------------------------------------------------------------------------------------------------------+
+| win /s  | Cannot find DOSX.EXE needed to run in standard mode; check to ensure the path is correct or reinstall Windows.       | 
++--------------------------------------------------------------------------------------------------------------------------------+
+| win /3  | Cannot find WIN386.EXE needed to run in 386 enhanced mode; check to ensure the path is correct or reinstall Windows. | 
++--------------------------------------------------------------------------------------------------------------------------------+
+The SYSTEM directory could be copied over to the new machine, but this is an
+improper installation and may not run correctly.
+
+The only correct way to install Windows 3.0 on a computer is to run the SETUP.EXE
+Setup program.
+
+Additional query words: 3.00 3.00a 3.0 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

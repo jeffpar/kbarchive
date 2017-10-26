@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106262/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106262/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106262/","publisher":null,"image":null,"headline":"Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106262-fix-direction-flag-is-not-cleared-when-an-exception-occurs">Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106262
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbCRT kbVCkbbuglist kbfixlist
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Functions called in an exception handler can cause unexpected behavior such as
+access violations.
+
+CAUSE
+=====
+
+The direction flag bit may not be cleared when the exception occurs.
+
+RESOLUTION
+==========
+
+Clear the direction flag bit within either the exception handler or the
+termination handler. The sample code shown below illustrates clearing the flag
+in an exception handler.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in Visual C++ version 2.0.
+
+MORE INFORMATION
+================
+
+On Intel processors, the direction flag bit in the flags register modifies the
+behavior of the string instructions. When the direction flag (DF) is 0 (zero),
+the string instructions operate on incrementally higher addresses. When DF is 1,
+the string instructions operate on incrementally lower addresses. On Intel
+chips, DF can be set to 1 with the STD instruction and can be cleared to 0 with
+the CLD instruction.
+
+If a function sets DF to 1, it should clear DF before terminating. This allows
+all functions to make the assumption that DF is always 0.
+
+All C run-time functions correctly clear DF upon termination. However, if an
+exception occurs before a function has a chance to clear DF, the flag will still
+be set when the exception handler is executed. This will cause code in the
+handler (which assumes that DF is 0) to fail. The manner in which the code fails
+depends on what the code is trying to do. In the example shown below, the
+printf() function called in the exception handler causes a memory access
+violation.
+
+The problem can be worked around by clearing DF upon entry into an exception or
+termination handler. In the sample code shown below, the exception handler
+checks the value of the do_cld variable to determine whether or not it will
+clear DF. The do_cld variable is set to 0 or 1 depending on whether or not the
+CLD command-line argument is specified when the sample is run. To illustrate the
+problem with DF being set to 1, run the sample without any command-line
+arguments. To allow the sample to run correctly, specify the CLD command-line
+argument.
+
+Sample Code
+-----------
+
+  /* Compiler options needed: /D_X86_
+  */ 
+
+  #include &lt;windows.h&gt;
+  #include &lt;memory.h&gt;
+  #include &lt;string.h&gt;
+  #include &lt;stdio.h&gt;
+
+  int handling = 0;
+  int do_cld = 0;
+
+  LONG MyFilter(LPEXCEPTION_POINTERS except_pointers)
+  {
+      EXCEPTION_RECORD* er = except_pointers-&gt;ExceptionRecord;
+
+      if (do_cld)
+      {
+          __asm cld
+      }
+
+      if (er-&gt;ExceptionCode==EXCEPTION_ACCESS_VIOLATION &amp;&amp; handling==0)
+      {
+          handling = 1;
+          printf("We're in the filter now and printing out a long"
+                 "string that's long enough to cause a problem\n");
+          handling = 0;
+          return EXCEPTION_EXECUTE_HANDLER;
+      }
+      else return EXCEPTION_CONTINUE_SEARCH;
+  }
+
+  int main(int argc,char** argv)
+  {
+      if ( argc==2 &amp;&amp; ((strcmp(argv[1],"cld")==0) ||
+                       (strcmp(argv[1],"CLD")==0)))
+          do_cld = 1;
+
+      __try
+      {
+          printf("Starting the test\n");
+          memcpy((void*)4,(void*)0,8);
+          printf("After exception");
+      }
+      __except (MyFilter(GetExceptionInformation()))
+      {
+          printf("In the handler now\n");
+      }
+
+      return 0;
+  }
+
+Additional query words: 1.00 structured handling protection fault
+
+======================================================================
+Keywords          : kbCRT kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

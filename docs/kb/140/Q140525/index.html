@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140525/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140525/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140525/","publisher":null,"image":null,"headline":"Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140525-howto-receive-from-the-serial-port-by-using-mscomm32ocx">Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140525
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600
+Last Modified: 29-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article gives you two techniques you can use to receive data from the
+serial port using the Mscomm32.ocx control. The first uses an event-driven
+method and does not require you to poll the serial port to check for the
+presence of received characters. This technique allows the most flexibility and
+does not require extensive coding to prevent buffer over-runs. The second
+technique requires you to poll the input buffer periodically to check for the
+presence of received characters. This article describes these two techniques and
+provides examples for each.
+
+MORE INFORMATION
+================
+
+You need to set the following properties regardless of which technique you use:
+
+- CommPort property: Set this numeric property to the desired communications
+  port. Valid values are 1, 2, 3, or 4 depending on the serial ports available
+  and the configuration of the individual computer. These values correspond to
+  Com1, Com2, Com3, and Com4 respectively.
+
+- Settings property: Set this character property to the baud rate, Parity, Data
+  Bits, and Stop Bits required by the device connected to the serial port. This
+  property is a character, comma-delimited list. For example, to set the serial
+  port to 14,400 baud, Even Parity, 7 Data Bits, and 1 Stop Bit, set the string
+  to:
+
+  
+
+     14400,E,7,1
+
+- PortOpen property: Set this logical property to true to open communications
+  to the serial port. You can also check this property to determine if the port
+  opened correctly.
+
+Technique One: Event-Driven Receive
+-----------------------------------
+
+The event Driven technique generates an OnComm event when there are characters
+waiting in the input buffer. Also, the CommEvent property will contain a numeric
+2. For the OnComm event to be triggered, you must set the Rthreshold property to
+a value other than zero (its default). The most common setting for the
+rthreshold property is 1, meaning that the OnComm event is triggered if a
+minimum of one character is waiting in the input buffer.
+
+For example, you can place the following code in the OnComm event to append
+received data to a property of a form called mybuffer:
+
+     Procedure MyCom.OnComm
+       IF This.CommEvent = 2
+         ThisForm.mybuffer = ThisForm.mybuffer + This.Input
+       ENDIF
+     ENDPROC
+
+Technique Two: Polling the Input Buffer
+---------------------------------------
+
+Polling the input buffer requires that the program periodically stop what it is
+doing and check to see if there are characters waiting in the input buffer. When
+using this technique, leave the Rthreshold property at 0 (its default value),
+and check the InBufferCount property to see if it is greater than zero, which
+indicates that there are characters waiting in the buffer.
+
+NOTE: Using a technique such as checking the length of the Input property results
+in lost characters because as soon as the Input property is accessed, the Input
+buffer is emptied. Use the InBufferCount property instead.
+
+Assuming the Mscomm control is on the form and has the name MyCom and that there
+is a form property named mybuffer, the following code illustrates how to poll
+for waiting characters:
+
+     Procedure myform.myproc
+       IF Thisform.MyCom.InBufferCount &gt; 0
+         Thisform.mybuffer = Thisform.mybuffer + Thisform.MyCom.Input
+       ENDIF
+     ENDPROC
+
+The procedure code could be called in a timer method to facilitate checking for
+characters at semi-regular intervals. However, if large amounts of data are
+expected to be received from the serial port, Technique One will reduce the
+chance of over-running the input buffer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

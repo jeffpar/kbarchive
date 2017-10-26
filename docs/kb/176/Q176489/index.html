@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176489: XCON: MTA Generates NDRs and Message Loops | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176489: XCON: MTA Generates NDRs and Message Loops" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176489/","publisher":null,"image":null,"headline":"Q176489: XCON: MTA Generates NDRs and Message Loops","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176489-xcon-mta-generates-ndrs-and-message-loops">Q176489: XCON: MTA Generates NDRs and Message Loops</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176489
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you restart a Microsoft Exchange Server computer that has been offline for
+a few hours or days, the Message Transfer Agent (MTA) may start rejecting
+messages, holding messages in the queues, or creating message loops. All of
+these symptoms contribute to degraded system performance and slow mail flow. The
+following error may occur:
+
+  Event ID 200
+  Source MSExchangeMTA
+  Type Warning
+  Category X.400 Service
+  Description An error occurred while ASN.1 was decoding an object (dump
+  reference 192). [limit exceeded on set of or sequence of 30464 2614
+  1spdi 192 MTA XFER-IN 15 97] Event ID 2024 Source MSExchangeIS Private
+  TypeError Category MTA Connections Description: Unable to access the
+  object manager (OM) object from the Microsoft Exchange MTA for
+  MH_T_ALTERNATE_RECIP_ALLOWED, MH_T_CONVERSION_LOSS_PROHIBITED, etc.
+
+CAUSE
+=====
+
+This behavior can occur when the MTA Open Interval time is set too low. These
+settings are located in a few places depending on the setup. The global setting
+can be found by:
+
+1. Opening the Microsoft Exchange Administrator program.
+
+2. Highlight and expand the Exchange Site name.
+
+3. Highlight the Configuration option.
+
+4. Highlight MTA Site Configuration and select File, Properties.
+
+5. Select the Messaging Defaults Tab.
+
+The Administrator may also set the MTA Open Interval time on individual X400 and
+Dynamic RAS connectors. The Open Interval Setting is located on each connector's
+Override tabs on their respective property pages.
+
+MORE INFORMATION
+================
+
+The Open Interval time is used to determine how long the MTA should wait before
+attempting an association to another MTA. The default is 600 seconds, which
+should suffice in most situations. The lowest value that can be entered is 15
+seconds; however, if you set the value this low, the above problem will occur if
+the MTA has to handle a large volume of messages (such as restarting after a
+maintenance period). It is recommend that this setting is never below 30 seconds
+on a LAN and 60 seconds on a RAS connection.
+
+Additional query words: ndr stuck queue perfmon
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

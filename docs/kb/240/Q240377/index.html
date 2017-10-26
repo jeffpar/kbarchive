@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240377/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240377/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240377/","publisher":null,"image":null,"headline":"Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240377-howto-ensure-jet-35-is-installed-correctly-part-i">Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240377
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.5,2.1 SP2,2.5,5.0,6.0
+Operating System(s): 
+Keyword(s): kbtophit kbMDAC kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDAC210SP2 kbMDACNoSweep
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Data Access Components versions 1.5, 2.1 SP2, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article details steps you can take to correct an installation problem with
+Microsoft Jet 3.51. It covers troubleshooting for DAO, ActiveX Data Objects
+(ADO), and ODBC access methods.
+
+MORE INFORMATION
+================
+
+WARNING: This article contains specific information regarding editing the
+Windows Registry. You should always back up the registry before you edit it. If
+you alter the registry, you could cause your computer to stop functioning. Only
+an expert level programmer should attempt the steps in this article.
+
+Microsoft provides this information without warranty either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and/or
+fitness for a particular purpose. This article assumes that you are familiar
+with safe registry editing procedures.
+
+If you have limited experience, you may want to contact a Microsoft Certified
+Partner. For more information about Microsoft Certified Partners, please see the
+following page on the World Wide Web:
+
+  http://www.microsoft.com/certpartner/
+
+For more information about the support options available from Microsoft, please
+see the following page on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Introduction
+------------
+
+The Microsoft Jet database engine is used by a wide variety of applications so it
+is possible that an application installation, or, more likely, an application
+uninstallation could adversely affect other applications on your computer. This
+article details steps you can take to make sure that Microsoft Jet is correctly
+installed on your computer.
+
+The document is divided into three sections, (a) Troubleshooting the Access
+Method, which covers making sure the DAO, ADO, and ODBC drivers are installed
+correctly, (b) Troubleshooting Microsoft Jet, which covers the Jet DLLs and
+registry settings, and (c) Resource Data, which lists registry keys that would
+make the body of the article difficult to read.
+
+Please see the following Microsoft Knowledge Base article for a continuation of
+this article, which includes Part C, the Resource Data:
+
+  Q245524 HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part II)
+
+Troubleshooting the Access Method
+---------------------------------
+
+Before troubleshooting the Jet installation, you need to make sure that the
+access method is correctly installed. The following sections cover DAO, ODBC,
+and ADO.
+
+Data Access Objects (DAO):
+
+DAO is the most common Jet access method. The following steps can be used to make
+sure that it is properly installed:
+
+1. Make sure you have the following file:
+
+C:\Program Files\Common Files\Microsoft Shared\Dao\Dao350.dll
+
+NOTE: The drive letter may be different if your copy of Windows is installed on a
+drive other than drive C:.
+
+2. If your project references the Microsoft DAO 2.5/3.5 (or 3.51) Compatibility
+  Library instead of the Microsoft DAO 3.5 (or 3.51) Library, then you need to
+  make sure the following file is installed:
+
+C:\Program Files\Common Files\Microsoft Shared\Dao\Dao2535.tlb
+
+3. You need to make sure that the registry keys for DAO exist. The registry keys
+  are listed in the Microsoft DAO Registry Settings section later in this
+  article. Use the RegEdit program to verify that the registry keys exist. If
+  the registry keys are missing or pointing to a nonexistent file, you can
+  manually unregister and re-register the Dao350.dll file by running the
+  following two commands from the Windows Start button, and then select Run or
+  from the MS/DOS command prompt use this command:
+
+  Regsvr32.exe /U 
+  "C:\Program Files\Common Files\Microsoft Shared\Dao\Dao350.dll"
+
+  Regsvr32.exe
+  "C:\Program Files\Common Files\Microsoft Shared\Dao\Dao350.dll"
+
+  Note that the earlier two commands have a line break for readability. You
+  should run each command on one continuous line.
+
+  Alternately, you can edit the registry directly. Instructions for applying the
+  values through a .reg file are given in the Microsoft DAO Registry Settings
+  section.
+
+4. Once the file and registry settings are in place, you can test the DAO
+  installation through code. Make a reference to the Microsoft DAO 3.5 (or
+  3.51) Library in your project and run the following statement:
+
+  Debug.Print DBEngine.Version
+
+  If the statement works, yet your application still fails, you should continue
+  with the "Troubleshooting Microsoft Jet" section.
+
+  If the preceding test code causes this run-time error message:
+
+  '429': ActiveX component can't create object.
+
+  check to see if the DAO design-time license key exists on your computer. The
+  following three lines may be saved to a file with the .reg extension and
+  imported into the registry through the RegEdit program:
+
+REGEDIT4
+[HKEY_CLASSES_ROOT\Licenses\F4FC596D-DFFE-11CF-9551-00AA00A3DC45]
+@="mbmabptebkjcdlgtjmskjwtsdhjbmkmwtrak"
+
+5. If the code fails with an access violation, some of the support files may be
+  out of date, typically:
+
+Oleaut32.dll
+Msvcrt.dll
+
+The latest version of these files can be obtained by installing the latest
+version of:
+
+  http://www.microsoft.com/data Microsoft Data Access Components (MDAC)
+
+from the World Wide Web. Run it on your computer to install the latest support
+files.
+
+NOTE: Installing this file may overwrite the Microsoft Access ODBC drivers as
+outlined in the following section. If you have programs that use these drivers,
+you should be cautious about upgrading them.
+
+6. Occasionally, an access violation may result from a mismatch between the
+  version of Dao350.dll and some of the other Jet or support DLLs. For example,
+  if you have a 3.50 version of Dao350.dll and Jet 3.51, you might have
+  problems. Upgrading to a 3.51 version of Dao350.dll might help.
+
+Microsoft Access ODBC Drivers:
+
+Installing Microsoft Access 2000, Microsoft Visual Basic 6.0 SP3, Microsoft
+Windows 2000, ADO 2.1 or later, and other products may break programs that use
+the Microsoft Access ODBC driver. These applications replace the Microsoft Jet
+3.5 ODBC drivers with Microsoft Jet 4.0 ODBC drivers. These drivers have
+different capabilities and may cause your application to fail under certain
+circumstances. You can check the version numbers of the following files:
+
+Odbcjt32.dll 
+Odbcji32.dll 
+Odexl32.dll
+Oddbse32.dll 
+Odpdx32.dll 
+Odtext32.dll 
+Odfox32.dll
+
+These files are located in your Windows\System (or Winnt\System32 for Windows NT)
+folder. The file version should start with 3.5 or 3.51.
+
+If the version number starts with 4.0, then the following Microsoft Knowledge
+Base article deals specifically with this problem:
+
+  Q237575 Reverting to the Access 97 ODBC Driver After Installing MDAC
+
+The article can also be used if the files do not exist at all. Once the drivers
+are in place, you should be able to view them in the ODBC Administrator in
+Control Panel (or Administrative Tools, if you are using Windows 2000), create
+DSNs to MDB and ISAM files, and compact a Microsoft Access database. If the
+article does not resolve the problem and you can use other ODBC drivers without
+experiencing a problem, continue to the Troubleshooting Microsoft Jet section.
+
+ActiveX Data Objects (ADO):
+
+1. First verify that you can use ADO with a provider other than the OLEDB
+  Provider for Microsoft Jet. If not, then you need to verify that ADO is
+  properly installed and registered. The following Microsoft Knowledge Base
+  article helps you to troubleshoot the Microsoft Data Access Components:
+
+  Q232060 HOWTO: MDAC Setup Troubleshooting Guide
+
+  After ADO is installed and working properly proceed with the following steps
+  to verify that the OLEDB provider for Microsoft Jet is properly installed and
+  registered.
+
+2. The OLEDB provider for Microsoft Jet 3.5 consists of the following two
+  files:
+
+  C:\Windows\System\Msjt4jlt.dll     (Winnt\System32 for Windows NT or Windows 2000)
+  C:\Program Files\Common Files\System\Ole Db\Msjtor35.dll
+
+  Msjt4jlt.dll is Jet 3.52, a special version of Jet 3.5 specifically for ADO.
+  It does not support linked files, stored queries, or the Installable ISAM
+  drivers. It does rely on some of the other Jet 3.51 core files, specifically
+  Msjter35.dll and Msjint35.dll, also located in the system directory.
+
+  If these files do not exist, you can obtain them by downloading MDAC 2.0 from
+  the following location on the Web, or from Visual Basic 6.0 (versions prior
+  to SP3). MDAC 2.1 and later do not contain these files.
+
+  If you do not have MDAC 2.1 or later on your computer, you can download the
+  MDAC 2.0 version of the MDAC_TYP.exe file and run it to install these
+  components. This MDAC 2.0 version of the MDAC_TYP.EXE file can be found at
+  the following location:
+
+  http://microsoft.com/data/download_20300223.htm
+
+  If you do have a 2.1 or later version of MDAC on your computer, copy the MDAC
+  2.0 MDAC_TYP.exe file to a clean directory and run the following command: "
+  mdac_typ.exe /c /t:C:\MDAC20 " (without the quotation marks) This extracts
+  the files into the C:\Mdac20 folder without installing them on your system.
+  You can then copy the Msjt4jlt.dll and Msjtor35.dll files from this location
+  to the directories indicated below in the REGSVR32 commands.
+
+3. Register the files in the following order:
+
+  Regsvr32.exe C:\Windows\System\Msjt4jlt.dll  (Winnt\System32 for Windows NT or Windows 2000)
+
+  Regsvr32.exe "C:\Program Files\Common Files\System\Ole Db\Msjtor35.DLL"
+
+  If these steps do not resolve the problem, continue with the Troubleshooting
+  Microsoft Jet section.
+
+Troubleshooting Microsoft Jet
+-----------------------------
+
+If you have reached this step, then you should be experiencing problems with
+Microsoft Access, the Microsoft Visual Basic data control, the VISDATA add-in,
+other applications, and your own DAO, RDO, and ADO code.
+
+Core Jet Files:
+
+1. In order for Microsoft Jet to operate, you need a minimum of the following
+  files installed on your computer, all in the C:\Windows\System directory
+  (Winnt\System32 for Windows NT or Windows 2000):
+
+Msjet35.dll
+Msjter35.dll
+Msjint35.dll
+Vbajet32.dll
+Expsrv.dll       (this was introduced with Vbajet32.dll 6.x versions)
+
+2. The Microsoft Jet registry keys are given in the Microsoft Jet Registry
+  Settings section at the end of the article. Verify the registry keys exist.
+  If not, the section gives instructions on creating them through a .reg file.
+
+3. After completing these steps, you should be able to use Microsoft Jet to open
+  Microsoft Jet 3.x database files. If you still have problems, some of the
+  dependencies may be out of date. You can update them as detailed in the next
+  section.
+
+Jet Dependencies:
+
+Microsoft Jet has a number of file dependencies:
+
+Msvcrt.dll
+Oleaut32.dll
+
+Older versions of the Oleaut32.dll file especially can be problematic. The
+Expsrv.dll file will not work properly with older versions. You can obtain the
+latest version of these DLLs by downloading the latest Microsoft Data Access
+Components from the Web. If you need the 3.5 version of the Microsoft Access
+ODBC drivers, you will have to restore them, as detailed in the Microsoft Access
+ODBC Drivers section earlier in the article, after upgrading the Microsoft Data
+Access Components.
+
+Jet Installable ISAM Drivers:
+
+If your application uses Jet 2.x or earlier MDB files, dBase files, Excel
+spreadsheets, or any of the other installable ISAM file formats, then you need
+to install one or more of the following files to the Windows\System
+(Winnt\System32 for Windows NT or Windows 2000) directory:
+
+Msrd2x35.dll           Jet 2.x IISAM
+Msexcl35.dll           Excel IISAM
+Msexch35.dll           Exchange IISAM
+Msltus35.dll           Lotus 123 IISAM
+Mspdox35.Dll           Paradox IISAM
+Mstext35.dll           Text file IISAM
+Msxbse35.dll           dBase/FoxPro IISAM
+
+The registry keys are given in the Microsoft Jet Registry Settings section at the
+end of the article. Verify the registry keys exist. If not, the section gives
+instructions on creating them through a .reg file.
+
+You can also register them with the following commands:
+
+Regsvr32.exe C:\Windows\Msrd2x35.dll
+Regsvr32.exe C:\Windows\Msexcl35.dll
+Regsvr32.exe C:\Windows\Msexch35.dll
+Regsvr32.exe C:\Windows\Msltus35.dll
+Regsvr32.exe C:\Windows\Mspdox35.dll
+Regsvr32.exe C:\Windows\Mstext35.dll
+Regsvr32.exe C:\Windows\Msxbse35.dll
+
+Jet Profiles:
+
+If you use custom Jet profiles, the following article provides more information:
+
+  
+
+  Q173646 HOWTO: Use a Custom Jet Profile to Alter Data Access Behavior
+
+REFERENCES
+==========
+
+Microsoft Jet Database Engine Programmer's Guide, Second Edition
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Malcolm Stewart, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtophit kbMDAC kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDAC210SP2 kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbMDACSearch kbMDAC150 kbMDAC210SP2 kbMDAC250
+Version           : :1.5,2.1 SP2,2.5,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

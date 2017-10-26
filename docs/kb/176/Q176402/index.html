@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176402: Introducing Microsoft Windows 98 Comments and Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176402: Introducing Microsoft Windows 98 Comments and Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176402/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176402/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176402/","publisher":null,"image":null,"headline":"Q176402: Introducing Microsoft Windows 98 Comments and Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176402-introducing-microsoft-windows-98-comments-and-corrections">Q176402: Introducing Microsoft Windows 98 Comments and Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176402
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 13-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Introducing Microsoft Windows 98, ISBN 1-57231-630-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Introducing Microsoft Windows 98," ISBN
+1-57231-630-6.
+
+Contents:
+
+- ActiveMovie Now Called DirectShow
+
+- Page 73: Web Path Incorrect
+
+- Page 158: Outlook Express Will Not Support Faxes
+
+- Page 322: Win32 Driver Model Supports All Audio Types
+
+- Page 350: Incorrect Short Filename Representations
+
+MORE INFORMATION
+================
+
+ActiveMovie Now Called DirectShow
+---------------------------------
+
+Pages 20, 79, 81, and 441: All references to Microsoft ActiveMovie should be to
+Microsoft DirectShow.
+
+
+Page 73: Web Path Incorrect
+---------------------------
+
+Page 73, top of page:
+Change: "http://www.w3.orgPICS"
+To: "http://www.w3.org/PICS/"
+
+
+Page 158: Outlook Express Will Not Support Faxes
+------------------------------------------------
+
+Page 158 states that Outlook Express will send, receive, and organize e- mail,
+faxes, and other information. However, Outlook Express does not support faxes.
+
+Correction: Page 158, paragraph 7, sentence 1:
+Change: "...organize e-mail, faxes, and other information."
+To: "...organize e-mail and other information."
+
+Page 159, bullet 4:
+Delete bullet "The Microsoft Fax Driver" and adjoining paragraph.
+
+
+Page 322: Win32 Driver Model Supports All Audio Types
+-----------------------------------------------------
+
+The "WDM digital audio" section of page 322 states, in part: "If you aren't
+planning to use USB speakers, this section is probably of no use to you.... The
+features mentioned in the following paragraphs are of no relevance to systems
+with conventional audio systems installed."
+
+However, the Win32 Driver Model will support all types of audio systems,
+including USB, ISA, and PCI. Much of the information in this section is valid
+for non-USB systems as well.
+
+Page 322:
+
+- Delete paragraph 6 ("If you aren't planning to use USB speakers...")
+
+- Move the "USB support" section below the "WDM digital audio" section
+
+- Move USB-specific information from the "WDM digital audio" section to the
+  "USB support" section
+
+
+Page 350: Incorrect Short Filename Representations
+--------------------------------------------------
+
+The list of long filenames on page 350 contains incorrect short filename
+representations. All long filenames have a short filename representation ending
+with ~1 (or some other number). Below is the correct directory listing:
+
+Volume in drive C is MY HARDDISK
+Volume Serial Number is 1E30-830F
+Directory of C:\Long Filename Directory
+
+.        &lt;DIR&gt; 11-07-97  8:39a .
+..       &lt;DIR&gt; 11-07-97  8:39a ..
+4THQUA~1 XLS 147 11-07-97 8:40a 4th Quarter Analysis.xls
+BOSS'S~1 TXT 147 11-07-97 8:41a Boss's birthday card.txt
+1994FI~1 DOC 147 11-07-97 8:41a 1994 Financial Projections.doc
+COMPAN~1 BMP 147 11-07-97 8:41a Company Logo.bmp
+FISCAL~1 &lt;DIR&gt;   11-07-97 8:42a Fiscal Year Information
+SHORTC~1 PIF 147 11-07-97 8:42a Shortcut to MS-DOS Application.pif
+NEWWAV~1 WAV 147 11-07-97 8:43a New Wave Sound.wav
+NEWVID~1 AVI 147 11-07-97 8:44a New video.avi
+DIRECT~1 DOC 147 11-07-97 8:44a Directions to company picnic.doc
+        8 file(s)              0 bytes
+        3 dir(s)     861,011,968 bytes free
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: press ms_press win98
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

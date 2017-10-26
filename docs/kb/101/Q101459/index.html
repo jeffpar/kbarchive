@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101459/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101459/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101459/","publisher":null,"image":null,"headline":"Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101459-smtp-gw0645-configuring-the-smtp-gateway--dns">Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101459
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The application note titled "Configuring the SMTP Gateway and Domain Name
+Service (DNS)," GW0645, concentrates on how to properly configure the Domain
+Name Service (DNS) to route Microsoft Mail messages.
+
+You can obtain this Application Note from the following sources:
+
+- Microsoft Product Support Services
+
+For complete information, see the "To Obtain This Application Note" section at
+the end of this article.
+
+MORE INFORMATION
+================
+
+Here is the text of the application note:
+
+======================================================================
+ Microsoft(R) Product Support Services Application Note (Text File)
+  Configuring the SMTP Gateway and Domain Name Service (DNS): MAIL
+                         GATEWAY TO SMTP 3.0
+======================================================================
+                                                  Revision Date: 7/93
+                                                     No Disk included
+
+The following information applies to Microsoft Mail version 3.0.
+
+--------------------------------------------------------------------
+| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY    |
+| ACCOMPANY THIS DOCUMENT (collectively referred to as an            |
+| Application Note) IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY      |
+| KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO    |
+| THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A     |
+| PARTICULAR PURPOSE. The user assumes the entire risk as to the     |
+| accuracy and the use of this Application Note. This Application    |
+| Note may be copied and distributed subject to the following        |
+| conditions: 1) All text must be copied without modification and    |
+| all pages must be included; 2) If software is included, all files  |
+| on the disk(s) must be copied without modification [the MS-DOS(R)  |
+| utility DISKCOPY is appropriate for this purpose]; 3) All          |
+| components of this Application Note must be distributed together;  |
+| and 4) This Application Note may not be distributed for profit.    |
+|                                                                    |
+| Copyright 1993 Microsoft Corporation. All Rights Reserved.         |
+| Microsoft and MS-DOS are registered trademarks and Windows         |
+| is a trademark of Microsoft Corporation.                           |
+--------------------------------------------------------------------
+
+INTRODUCTION
+============
+
+The Microsoft Mail Gateway to SMTP software depends on another host on
+the TCP/IP side of the gateway to route messages from the Microsoft
+Mail world to the TCP/IP world. This routing host is referred to in
+the "Microsoft Mail Gateway to SMTP" manual as the "smarthost". The
+smarthost routes mail both to and from the Microsoft Mail world by
+using a group of routing files collectively referred to as the Domain
+Name Service. The term Domain Name Service (DNS) is a generic term
+common to all implementations of TCP/IP, not just Microsoft's gateway,
+and is defined in RFC 1034 and RFC 1035. Thus, you need to configure
+two hosts when setting up an SMTP gateway: the host with Microsoft
+Mail SMTP gateway software (commonly referred to as the gateway PC)
+and the smarthost designated as the DNS. This article concentrates on
+how to properly configure the DNS to route Microsoft Mail messages.
+
+CONFIGURING THE DNS
+===================
+
+The DNS files include several different routing records. The two types
+of records needed to route Microsoft Mail records are the address
+record and the mail exchanger record.
+
+Address Record
+--------------
+
+The mail address record, also known as an A record in the zone file of
+the DNS, defines the IP address to a domain name. For example,
+123.123.123.123 might be defined as hostname.dept.company.com.
+
+Mail Exchanger Record
+---------------------
+
+The mail exchanger record, also known as an MX record in the zone file
+of the DNS, associates a domain name to a domain name defined in an
+address record. For example, postoffice.network.company.com might be
+associated with hostname.dept.company.com. The exact syntax for
+defining mail exchanger records depends on the TCP/IP software the
+smarthost is running.
+
+CONFIGURING THE SMTP GATEWAY TO MATCH THE DNS
+=============================================
+
+Parts of the SMTP gateway configuration should match exactly what is
+defined as an A record and MX record(s) in the DNS. Specifically, when
+you select the Administrator program Gateway, SMTP, Setup command, the
+Internet Name Of Gateway field must match exactly the domain name
+defined in the A record. This is the domain name of the dedicated PC
+running the Microsoft Mail SMTP gateway.
+
+NOTE: The smarthost does not have to be the host that has the DNS
+running on it. This depends on your site's implementation of the
+TCP/IP network and which machine will be responsible for receiving
+mail from the gateway.
+
+Also, when you select the Administrator program Gateway, SMTP, Address
+Map command, the SMTP Domain field must match exactly the domain name
+defined in an MX record in the DNS. The address map must contain all
+the Microsoft Mail (gateway and downstream) postoffices that will send
+and receive SMTP mail. Each SMTP Domain entry in the address map must
+have a corresponding MX record that associates it to the gateway PC's
+domain name (Internet Name of Gateway).
+
+EXAMPLE
+=======
+
+To make the process clearer, let's follow a message from the SMTP
+world to the Microsoft Mail world, using the following assumptions:
+
+- The domain name of the gateway PC is msmailgwy.company.com, and its
+  IP address is 123.123.123.123.
+
+- The two Microsoft Mail postoffices are named Sales and HQ, and the
+  network name is Company. The gateway is attached to the Sales
+  postoffice.
+
+- There is a user named Sparky on postoffice HQ. The DNS resides on a
+  host with the IP address of 123.123.1.1.
+
+Configuring the Gateway
+-----------------------
+
+1. Set up the DNS with one A record defining msmailgwy.company.com to
+  123.123.123.123.
+
+2. Set up an MX record for each postoffice. Set up one MX record to
+  define all mail destined for HQ.company.com to be routed to host
+  msmailgwy.company.com, and set up another MX record to define all
+  mail destined for Sales.company.com to be routed to host
+  msmailgwy.company.com.
+
+  NOTE: The MX record for each postoffice including the SMTP HUB should
+  map to the UNIX smart host NOT the SMTP gateway. If it maps to the
+  SMTP gateway this will allow a foreign SMTP gateway on the Internet to
+  connect to and hang the SMTP gateway. If the MX record maps to the
+  UNIX smart host the SMTP gateway will only ever talk to the smart
+  host.
+
+3. Select the Gateway, SMTP, Setup command to configure the following
+  options:
+
+     Domain Suffix:              .company.com
+     Internet Name of Gateway:   msmailgwy.company.com
+     IP Address of SMTP Router:  123.123.1.1
+
+4. Select the Gateway, SMTP, Postoffices command to configure the
+  following options:
+
+     company/HQ
+     company/sales
+
+5. Select the Gateway, SMTP, Address Map command to configure the
+  following options:
+
+     Enter network name:         company
+     Enter postoffice name:      HQ
+     SMTP Domain:                HQ.company.com
+
+  -and-
+
+     Enter network name:         company
+     Enter postoffice name:      Sales
+     SMTP Domain:                Sales.company.com
+
+Sending Mail
+------------
+
+1. Mail is sent from the SMTP world to a Microsoft Mail user. The
+  sender types in the TO: field something similar to the following:
+
+     Sparky@HQ.company.com
+
+2. The message arrives at the DNS for routing. The DNS looks in its
+  files for HQ.company.com. It finds HQ.company.com as an MX record
+  and routes the message to host msmailgwy.company.com. The DNS then
+  looks in its files for msmailgwy.company.com. It finds
+  msmailgwy.company.com as an A record and routes the message to the
+  IP address 123.123.123.123.
+
+3. The gateway PC receives the message. It compares HQ.company.com to
+  the entries in the address map until it finds a match. It finds a
+  match, which tells the gateway PC that HQ.company.com is Company/HQ
+  in the Microsoft Mail world.
+
+4. The gateway PC then delivers the message to the HQ postoffice.
+
+  NOTE: The DNS is defined in the gateway PC's TCP/IP software
+  configuration and in the Microsoft Mail SMTP gateway software (in
+  the Administrator program Gateway, Setup, IP Address Of SMTP Router
+  field).
+
+TO OBTAIN THIS APPLICATION NOTE
+-------------------------------
+
+- If you are unable to access the source(s) listed above, you can have this
+  Application Note mailed or faxed to you by contacting Microsoft Product
+  Support Services.
+
+REFERENCES
+==========
+
+Microsoft Mail Gateway to SMTP "Administrator's Guide," RFC 1034, RFC 1035.
+
+
+Additional query words: wga appnotes
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

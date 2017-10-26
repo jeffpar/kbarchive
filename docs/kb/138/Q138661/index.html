@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138661: PRB: Aliased Field Not Saved in Query Designer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138661: PRB: Aliased Field Not Saved in Query Designer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138661/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138661/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138661/","publisher":null,"image":null,"headline":"Q138661: PRB: Aliased Field Not Saved in Query Designer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138661-prb-aliased-field-not-saved-in-query-designer">Q138661: PRB: Aliased Field Not Saved in Query Designer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138661
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the AS clause is used to rename a field in the Query or View designer, it
+will be lost when the Query or View is reopened. As long as the Query or View is
+created and saved, the AS clause remains and works correctly. If the Query or
+View is modified, then the AS clause will disappear.
+
+WORKAROUND
+==========
+
+A query can be created with FoxPro's SELECT - SQL statement. The following
+example will create a query.
+
+     SELECT &lt;tablename.fieldname&gt; AS custom_name FROM ;
+         &lt;tablename&gt; INTO CURSOR queryname
+
+A view can be created with FoxPro's CREATE SQL VIEW statement. The following
+example will create a local view.
+
+     CREATE SQL VIEW mysqlview AS SELECT &lt;tablename.fieldname&gt; AS ;
+         custom_name FROM &lt;database container.tablename&gt;
+
+Instead of opening the Query or View designer and losing the AS clause, the code
+can be changed in a .prg file.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In the Query or View designer, a field can be assigned another name using the AS
+clause. This is done under the Fields tab in the Functions/Expressions box.
+Typing the field name and adding the AS clause with a name after it gives the
+field the name that follows the AS clause. For example,
+
+     customer.cust_id AS Customer_Id
+
+gives the field customer.cust_id the name of Customer_Id when browsed.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Creating a Query:
+
+1. Select the File menu pad and choose New. Click the Query radio button and
+  choose the New File button. Select a table from the "Add Table or View"
+  window.
+
+2. Choose the Fields tab and type the name of a field from the table in the
+  Functions/Expressions box, followed by "AS custom_name" (without the
+  quotation marks).
+
+3. Click the Add button to place the expression In the Selected Output box.
+
+4. Run the query, and note that the field has the title of "custom_name." Save
+  and close the query after giving it a name. Reopen the query and choose the
+  Fields tab. Note that the field in the Selected Output box no longer contains
+  the AS clause.
+
+Creating a View:
+
+1. A database container must be open to create a view and it has to be opened
+  exclusively. So, make sure Exclusive is on by typing "SET EXCLUSIVE ON"
+  (without the quotation marks) in the Command window. Then, open a database
+  container.
+
+2. From the File menu, click New. Click the View radio button, and then click
+  the New File button. Select a table from the "Add Table or View" window.
+
+3. Click the Fields tab and type the name of a field from the table in the
+  Functions/Expressions box, followed by "AS custom_name" (without the
+  quotation marks).
+
+4. Click the Add button to place the expression In the Selected Output box.
+
+5. Run the view and note that the field has the title of "custom_name." Save and
+  close the view after giving it a name. Reopen the view and click the Fields
+  tab. Note that the field in the Selected Output box no longer contains the AS
+  clause.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

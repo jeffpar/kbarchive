@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160830: FP: Cannot Remove Pages Error Attempting to Delete Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160830: FP: Cannot Remove Pages Error Attempting to Delete Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160830/","publisher":null,"image":null,"headline":"Q160830: FP: Cannot Remove Pages Error Attempting to Delete Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160830-fp-cannot-remove-pages-error-attempting-to-delete-folder">Q160830: FP: Cannot Remove Pages Error Attempting to Delete Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160830
+Product(s): Word Front Page
+Version(s): windows:97,macintosh:1.0
+Operating System(s): 
+Keyword(s): kbusage kbdta
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194285.
+
+SYMPTOMS
+========
+
+When you attempt to delete a folder that is located on a FrontPage 1.1 server,
+you receive the following error message:
+
+  Server error: Couldn't remove the following pages: &lt;folder name&gt;
+
+CAUSE
+=====
+
+This error occurs if you attempt to delete the folder from FrontPage Explorer in
+any of the versions of FrontPage listed at the beginning of this article.
+
+The FrontPage 1.1 Server Extensions were not designed to handle folder management
+tasks on the server.
+
+RESOLUTION
+==========
+
+To delete a folder on a Web server on which you installed the FrontPage 1.1
+Server Extensions, use either of the following methods.
+
+Method 1: Upgrade the FrontPage Server Extensions
+-------------------------------------------------
+
+1. Install the FrontPage 97 Server Extensions.
+
+2. From FrontPage Explorer, use the Delete command on the Edit menu to delete
+  the folder from the upgraded Web server.
+
+For more information about deleting folders, click the Index tab in FrontPage
+Help, type the following text
+
+  "Delete command" (without the quotation marks)
+
+and then double-click the selected text to go to the "Delete Command" topic.
+
+Method 2: Use File Manager or an Internet service, such as Telnet or FTP
+------------------------------------------------------------------------
+
+1. Directly access the file system of the Web content area by using Telnet, FTP,
+  or the file manager program for your operating system.
+
+2. Delete the folder you want to remove from the Web server.
+
+3. Start FrontPage Explorer, open the Web, and then click Recalculate Hyperlinks
+  on the Tools menu.
+
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97,macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbhowto
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

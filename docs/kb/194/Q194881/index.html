@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194881/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194881/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194881/","publisher":null,"image":null,"headline":"Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194881-winnt-router-may-drop-ip-packets-while-awaiting-arp-response">Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194881
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Windows NT Server version 4.0 is configured as a router, some routed IP
+packets may be dropped while the server awaits an ARP response from the
+destination or next hop router.
+
+MORE INFORMATION
+================
+
+If a Windows NT router does not have an Ethernet (media access control) address
+entry for the destination or next hop router in its ARP cache, it will have to
+send an ARP Request. While Windows NT awaits an ARP Response, ARP will "queue"
+the IP packet that needs to be sent. When Windows NT receives the ARP Response,
+it will only transmit the "latest" or last packet that it received in its "ARP
+Packet Queue" for any given destination host.
+
+A common example of this phenomenon would be a ping (ICMP) message larger than
+the MTU of a given network segment. This will force TCP/IP to fragment the
+message into multiple packets. When Windows NT receives packet 1 of 2, it will
+send an ARP Request for the destination or next hop router. Before it receives
+the ARP Response, it will receive packet 2 of 2 of the ping message. When
+Windows NT finally receives the ARP Response, it will only transmit the "latest"
+or last packet it received -- the rest would be discarded.
+
+REFERENCES
+==========
+
+For detailed information about the Address Resolution Protocol (ARP) in Windows
+NT Server version 4.0, please download the "TCP/IP Implementation Details" white
+paper from the Microsoft FTP Site:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/TCPIMP2.EXE
+
+For more information about the ARP Packet Queue, please see RFC 1122 -
+"Requirements for Internet Hosts -- Communication Layers".
+
+RFCs may be obtained via the Internet as follows:
+
+Paper copies of all RFCs are available from the NIC, either individually or on a
+subscription basis (for more information, contact NIC@NIC.DDN.MIL). Online
+copies are available via FTP or Kermit from NIC.DDN.MIL as rfc/rfc####.txt or
+rfc/rfc####.PS (#### is the RFC number without leading zeros).
+
+Additionally, RFCs may be requested through electronic mail from the automated
+NIC mail server by sending a message to SERVICE@NIC.DDN.MIL with a subject line
+of "rfc ####" for text versions, or a subject line of "rfc ####.PS" for
+PostScript versions. To obtain the RFC index, the subject line of your message
+should read "rfc index".
+
+Additional query words: ntrouter
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

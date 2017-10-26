@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/075/Q75911/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/075/Q75911/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/075/Q75911/","publisher":null,"image":null,"headline":"Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q75911-info-paper-sizes-50-through-56-reserved-for-postscript-driver">Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q75911
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16
+Last Modified: 04-JUL-1999
+
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.4 of the PostScript printer driver, distributed with version 3.0 of
+the Microsoft Windows graphical envionment, implements the following paper size
+constants:
+
+     #define DMPAPER_LETTER_EXTRA   50
+     #define DMPAPER_LEGAL_EXTRA    51
+     #define DMPAPER_TABLOID_EXTRA  52
+     #define DMPAPER_A4_EXTRA       53
+
+These constants are specific to the PostScript driver (as is the entire range
+from 50 to 56). These constants are used only by Linotronic printers to help
+save paper and do not generally apply.
+
+The DRIVINIT.H header file distributed with version 3.0 of the Microsoft Windows
+Device Development Kit (DDK) lists these constants while the DRIVINIT.H file
+distributed with version 3.0 of the Microsoft Windows Software Development Kit
+(SDK) does not. In version 3.1, the PRINT.H header file replaces DRIVINIT.H.
+PRINT.H contains the following note:
+
+  WARNING: The PostScript driver mistakingly uses DMPAPER_ values between 50
+  and 56. Don't use this range when defining new paper sizes.
+
+To avoid conflicts, do not use the range 50-56 when defining new paper sizes.
+
+MORE INFORMATION
+================
+
+The DRIVINIT.H file contains constants (defined with the prefix DMPAPER_) for
+all the standard paper sizes. These constants are usually retrieved from the
+printer driver by using the ExtDeviceMode function, and examining the
+dmPaperSize field. Some PostScript drivers support the paper sizes listed above,
+and will return one of the listed constants if the extra paper size is selected
+in the ExtDeviceMode dialog box.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160917: FIX: PAGE UP and PAGE DOWN in FormSet with Toolbar Crashes VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160917: FIX: PAGE UP and PAGE DOWN in FormSet with Toolbar Crashes VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160917/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160917/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160917/","publisher":null,"image":null,"headline":"Q160917: FIX: PAGE UP and PAGE DOWN in FormSet with Toolbar Crashes VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160917-fix-page-up-and-page-down-in-formset-with-toolbar-crashes-vfp">Q160917: FIX: PAGE UP and PAGE DOWN in FormSet with Toolbar Crashes VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160917
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the PAGE UP or the PAGE DOWN keys in a Formset that contains a
+Toolbar, Visual FoxPro 5.0 crashes.
+
+WORKAROUND
+==========
+
+Put the following code in the KeyPress Method of the form. However, the best
+location would be in the KeyPress Method of the form super class:
+
+   DO CASE
+   CASE nKeyCode = 3 &amp;&amp;PageDown
+     NODEFAULT &amp;&amp; Don't let VFP do it's own thing for this KeyStroke.
+     &amp;&amp; Loop through the forms in the Formset.
+     FOR i = 1 TO THISFORMSET.FORMCOUNT
+     &amp;&amp; Find the active form in the forms collection.
+        IF THISFORMSET.FORMS(i).NAME = THISFORMSET.ACTIVEFORM.NAME
+        &amp;&amp; See if the next number(i) in the Formset is a valid number
+        &amp;&amp; regarding FormCount.
+           IF BETWEEN(i+1,1,THISFORMSET.FORMCOUNT)
+           &amp;&amp; If it is, see if the next form is a Form and not a Toolbar.
+              IF UPPER(THISFORMSET.FORMS(i+1).baseclass) = 'FORM'
+              &amp;&amp; If it is, show the Form and get out.
+                 thisformset.FORMS(i+1).SHOW()
+                 EXIT
+              ENDIF
+           ELSE
+           &amp;&amp; If the next number(i) was not a valid number regarding
+           &amp;&amp; FormCount, start the loop again from the top. This keeps
+           &amp;&amp; the "expected flow" or expected navigation of the forms.
+              FOR li = 1 TO THISFORMSET.FORMCOUNT
+              &amp;&amp; See if the next form in the Formset is a Form and not a
+              &amp;&amp; Toolbar.
+                 IF UPPER(THISFORMSET.FORMS(li).baseclass) = 'FORM'
+                 &amp;&amp; If it is, Show the Form and get out.
+                    thisformset.FORMS(li).SHOW()
+                    EXIT
+                 ENDIF
+              ENDFOR
+           ENDIF
+        ENDIF
+     ENDFOR
+   CASE nKeyCode = 18 &amp;&amp; PageUp
+     NODEFAULT &amp;&amp; Don't let VFP do it's own thing for this KeyStroke.
+     &amp;&amp; Loop through the forms in the Formset.
+     FOR i = 1 TO THISFORMSET.FORMCOUNT
+     &amp;&amp; Find the active form in the forms collection.
+        IF THISFORMSET.FORMS(i).NAME = THISFORMSET.ACTIVEFORM.NAME
+        &amp;&amp; See if the previous number(i) in the Formset is a valid number
+        &amp;&amp; regarding FormCount.
+           IF BETWEEN(i-1,1,THISFORMSET.FORMCOUNT)
+           &amp;&amp; If it is, see if the next form is a Form and not a Toolbar.
+              IF UPPER(THISFORMSET.FORMS(i-1).baseclass) = 'FORM'
+              &amp;&amp; If it is, Show the Form and get out.
+                 thisformset.FORMS(i-1).SHOW()
+                 EXIT
+              ELSE
+              &amp;&amp; If the previous number(i) was not a valid number regarding
+              &amp;&amp; FormCount, start the loop again from the bottom. This keeps
+              &amp;&amp; the "expected flow" or expected navigation of the forms.
+                 FOR li = THISFORMSET.FORMCOUNT TO 1 STEP -1
+                 &amp;&amp; See if the next form in the Formset is a Form and not a
+                 &amp;&amp; Toolbar.
+                    IF UPPER(THISFORMSET.FORMS(li).baseclass) = 'FORM'
+                    &amp;&amp; If it is, Show the Form and get out.
+                       thisformset.FORMS(li).SHOW()
+                       EXIT
+                    ENDIF
+                 ENDFOR
+                 EXIT
+              ENDIF
+           ENDIF
+        ENDIF
+     ENDFOR
+   ENDCASE
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+When you use the PAGE UP or the PAGE DOWN keys in a Formset that contains a
+Toolbar, Visual FoxPro 5.0 crashes. The crash occurs when you use PAGE UP or
+PAGE DOWN and the next logical form in the Formset is a Toolbar form.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form and add a TextBox control to the form.
+
+2. Create a Formset.
+
+3. Add a Toolbar to the Formset.
+
+4. Save and run the form.
+
+5. Press the PAGE UP or PAGE DOWN keys repeatedly.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

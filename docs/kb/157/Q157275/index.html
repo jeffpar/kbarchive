@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157275: Troubleshooting Dual-Channel ISDN Connection Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157275: Troubleshooting Dual-Channel ISDN Connection Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157275/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157275/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157275/","publisher":null,"image":null,"headline":"Q157275: Troubleshooting Dual-Channel ISDN Connection Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157275-troubleshooting-dual-channel-isdn-connection-problems">Q157275: Troubleshooting Dual-Channel ISDN Connection Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157275
+Product(s): The Microsoft Network
+Version(s): WINDOWS:1.3,2.0,2.5
+Operating System(s): 
+Keyword(s): kbmsn
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 1.3, 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information to help you identify why the second channel on
+your ISDN adapter may not connect to MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+Your ISDN adapter Can Support Only a Single Channel
+---------------------------------------------------
+
+Not all ISDN adapters can support more than one channel. Read the documentation
+included with your adapter to identify whether your ISDN adapter can support
+Multilink PPP.
+
+Your ISDN Line Is Not Set Up for Dual-Channel Connections
+---------------------------------------------------------
+
+When you have your ISDN line installed, you may need to specify to your ISDN
+provider that you need two channels provisioned on your line. This is not always
+the default configuration from your ISDN provider.
+
+Your ISDN Adapter Settings Are Not Correct
+------------------------------------------
+
+With most ISDN adapters that can support Multilink PPP, you must change the
+settings to enable dual-channel capabilities. Use the documentation included
+with your adapter to identify which settings to use for Multilink PPP. Then, you
+can change the settings using these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Modems.
+
+3. Click the ISDN adapter you are using, and then click Properties.
+
+4. On the Connection tab, click Advanced.
+
+5. In the Extra Settings box, type the dual-channel settings for your ISDN
+  adapter. You can find these settings in the documentation for your adapter.
+
+The Two ISDN Channels Are Connected to Different Access Boxes
+-------------------------------------------------------------
+
+Internet access numbers sometimes have more than one access box to handle a large
+number of incoming calls at once. Sometimes, when you connect with two channels,
+the channels get separated into two different access boxes. This situation is
+called straddling. When straddling occurs, your second channel might not make a
+connection. And in some cases, your adapter might not make a connection at all.
+If this happens, you must wait and try your connection again later.
+
+The Phone Numbers for Your Adapter Are Not Configured Correctly
+---------------------------------------------------------------
+
+ISDN lines usually come configured with two phone numbers. When you use
+dual-channel ISDN, your adapter uses only one phone number. The second number
+might be the reason your second line is not connecting. This problem is
+especially common with the 3Com Impact adapter running firmware version 2.02. If
+you think the second phone number might be the problem, try reconfiguring your
+adapter to use only one of your ISDN numbers.
+
+If you experience difficulties, please contact technical support for the
+manufacturer of the ISDN device.
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296405/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296405/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296405/","publisher":null,"image":null,"headline":"Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296405-restrictanonymous-registry-key-breaks-trust-to-win2000-domain">Q296405: "RestrictAnonymous" Registry Key Breaks Trust to Win2000 Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296405
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork
+Last Modified: 11-JUN-2002
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Server 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+With User Manager, when you attempt to add users or global groups from a trusted
+Windows 2000 domain (on a Windows NT 4.0 domain controller) to a local group in
+the Windows NT 4.0 domain, you may receive the following error message:
+
+  Unable to browse the selected domain because the following error occurred:
+
+  There are currently no logon servers available to service the logon request.
+
+Also, you may observe in User Manager that existing users and groups from the
+Windows 2000 domain, which are members of domain local groups, are displayed as
+"Account Unknown."
+
+CAUSE
+=====
+
+This behavior can occur because the RestrictAnonymous registry value is set to
+Level 2 on the Windows 2000 domain controller on which the Windows NT 4.0-based
+computer has its secure channel.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this behavior:
+
+1. Set the RestrictAnonymous registry value to 0 or 1 on the Windows 2000 domain
+  controller. This registry value can be found at:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa
+
+  Value: RestrictAnonymous
+  Value Type: REG_DWORD
+  Value Data: 0x1 or 0x0(Hex)
+
+2. Restart the domain controller.
+
+3. Break, and then reestablish the trust.
+
+MORE INFORMATION
+================
+
+The RestrictAnonymous registry value with a Level 2 setting must only be used in
+"pure" Windows 2000 environments.
+
+For additional information about the RestrictAnonymous registry value in Windows
+2000, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q246261 How to Use the RestrictAnonymous Registry Value in Windows 2000
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

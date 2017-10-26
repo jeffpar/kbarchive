@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120098/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120098/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120098/","publisher":null,"image":null,"headline":"Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120098-info-two-ways-to-search--remove-characters-from-a-text-string">Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120098
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 30-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can delete characters from a text string in a memory variable or database
+field. You can use the FoxPro SUBSTR(), ATC(), and STRTRAN() functions to search
+a text string for a particular value and replace it with another.
+
+MORE INFORMATION
+================
+
+Method One: Use SUBSTR() and ATC() Functions
+--------------------------------------------
+
+You can use the ATC() and SUBSTR() functions to eliminate unwanted characters
+from database fields and memory variables.
+
+For example, look at the following code:
+
+  a="123.45"
+  y=SUBSTR(a,1,ATC(".",a)-1)+SUBSTR(a,ATC(".",a)+1)
+  b="123 45"
+  y=SUBSTR(b,1,ATC(" ",b)-1)+SUBSTR(b,ATC(" ",b)+1)
+
+The variables a and b contain the text strings "123.45" and "123 45"
+respectively. The code removes the period (.) and the blank space from the
+variables.
+
+The SUBSTR() function parses the variable into separate pieces based on the value
+returned by the ATC() function. The ATC() function searches for a string in a
+variable or field and returns the numeric position of the first character in the
+string if it is found. If the ATC() function can't locate the string, it returns
+zero (0).
+
+By combining the SUBSTR() and ATC() functions, you can construct complex
+statements to alter data in numerous ways.
+
+Method Two: Use STRTRAN() Function
+----------------------------------
+
+You can use the STRTRAN() function to search and replace characters within a text
+string using a single command. The following example code shows you how to use
+STRTRAN() to remove an unwanted period (.) from a text string:
+
+  x="123.4567"
+  y=strtran(x,".","")
+  ? y  &amp;&amp; The variable y now contains "1234567" as a text string.
+
+By default, STRTRAN() looks for all occurrences of the second parameter listed in
+the function. By adding a numeric value in the third parameter, you can force
+the function to ignore earlier instances of a character. By adding a fourth
+numeric parameter, you can control the number of occurrences the function
+replaces.
+
+The following example code shows you how to remove the second period from a text
+string while preserving the first occurrence:
+
+  x="123.4567.8910"
+  y=strtran(x,".","",2)
+  ? y
+
+The variable y returns "123.45678910" as a text string.
+
+REFERENCES
+==========
+
+Microsoft FoxPro Commands &amp; Functions 1.02 pp. C4-17; C4-191; C4-189
+Microsoft FoxPro Commands &amp; Functions 2.00 pp. C3-156; C3-870; C3-866
+Microsoft FoxPro Language Reference 2.5x and 2.60 pp. L3-218; L3-1059; L3-1055
+
+Additional query words: VFoxWin FoxUnix FoxMac FoxDos FoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300 kbVFP500 kbVFP600
+Version           : MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

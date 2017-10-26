@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195573: WD97: Word Doesn’t Propose Correct &quot;Address To&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195573: WD97: Word Doesn’t Propose Correct &quot;Address To&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195573/","publisher":null,"image":null,"headline":"Q195573: WD97: Word Doesn’t Propose Correct &quot;Address To&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195573-wd97-word-doesnt-propose-correct-address-to">Q195573: WD97: Word Doesn’t Propose Correct "Address To"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195573
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbenvelope winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When your document contains an address, Word may not properly identify the
+address paragraphs and may not propose the correct address information in the
+Address To box.
+
+CAUSE
+=====
+
+This problem may occur when you use one of the following commands:
+
+- The Envelopes And Labels command on the Tools menu
+
+  -or-
+
+- The ToolsCreateEnvelope macro command
+
+  -or-
+
+- The ToolsCreateLabel macro command
+
+MORE INFORMATION
+================
+
+When you use these commands in an open document, Word searches the document for
+an address, opens a dialog box with the proposed address, and allows you to
+print the address on an envelope or label. When Word conducts an address search,
+it uses the following rules:
+
+1. Word searches for any paragraphs that you defined as bookmarks named
+  "EnvelopeAddress" and "EnvelopeReturn."
+
+2. Word searches for highlighted paragraphs that represent each line of the
+  address.
+
+  NOTE: This will not work in Microsoft Word 97 for Windows if your address
+  lines end with line feeds rather than paragraph marks.
+
+3. Word searches for a series of paragraphs meeting the following criteria:
+
+  a. left-aligned
+
+  b. only include a few words
+
+  c. include three to five paragraphs in a row envelope address bookmark
+
+  d. no formatting between paragraphs
+
+If any of these conditions is not met, Word may return an unexpected result in
+the Address To box.
+
+NOTE: If you format an address as a single paragraph (for example, if you end
+each line with a new line character or SHIFT+ENTER), Word may not find the
+correct address information.
+
+Note also that if the first line of the address is formatted with space before or
+space after formatting, Word will not find the address. If you highlight the
+address, Word will show only the first line. This is true for the Labels dialog
+box as well as for the Envelope dialog box.
+
+Some third-party information managers, such as PackRat (for Windows), store
+addresses as one paragraph with line feeds (instead of carriage returns) at the
+end of each address line. In this situation, Word may not find the three to five
+consecutive paragraphs that satisfy its search algorithm. To work around this
+problem, replace the line feeds with carriage returns.
+
+If a single paragraph has more than 58 characters and spaces, Word may not find
+the correct address information.
+
+Additional query words: automatic block bookmark center centered delivery detect determine incorrect insert justified toolbar valid
+
+======================================================================
+Keywords          : kbdta kbenvelope winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

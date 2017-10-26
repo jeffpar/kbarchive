@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/212/Q212825/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/212/Q212825/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/212/Q212825/","publisher":null,"image":null,"headline":"Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q212825-sms-gpf-initialization-of-crypt32dll-failed">Q212825: SMS: GPF: "Initialization of CRYPT32.DLL Failed"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q212825
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbinterop kbClient kbRemote kbsms200 kbsms200bug kbRemoteProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Client computers running Microsoft Systems Management Server (SMS) 2.0 and
+Microsoft Windows NT Workstation 4.0 with Service Pack 3 (SP3) installed may
+receive the following General Protection Fault (GPF) error message in WUSER32:
+
+  Initialization of the dynamic link library C:\WINNT40\System32\CRYPT32.dll
+  failed. The process is terminating abnormally.
+
+CAUSE
+=====
+
+This behavior can occur because the Crypt32.dll file in Windows NT 4.0 SP3
+contains a subtle memory leak that eventually becomes apparent if it is loaded
+and unloaded constantly. This leak occurs because Transport Layer Security (TLS)
+is allocated when Crypt32.dll is loaded, but it is not freed when the DLL is
+unloaded.
+
+WORKAROUND
+==========
+
+To resolve this issue, apply an updated version of Crypt32.dll. This can be done
+either by upgrading the client computer to Windows NT 4.0 SP4, or by replacing
+the Crypt32.dll file with the newer version from Windows NT 4.0 SP4.
+
+STATUS
+======
+
+This problem was corrected in Windows NT 4.0 SP4.
+
+MORE INFORMATION
+================
+
+For additional information about DLL errors in Windows NT 4.0 SP3, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q174327 DLL Initialization Failure May Occur When Loading Crypt32.dll
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbRemote kbsms200 kbsms200bug kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

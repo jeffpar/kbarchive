@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170602/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170602/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170602/","publisher":null,"image":null,"headline":"Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170602-cannot-browse-the-internet-using-proxy-server-on-zak-client">Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170602
+Product(s): Microsoft Windows NT
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 21-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to the Internet using a proxy server on a Zero
+Administration Kit (ZAK) client, you may receive the following error message:
+
+  Internet Explorer cannot open the Internet site http://&lt;Internet site&gt;.
+  The site was not found. Make sure the address is correct, and try again.
+
+CAUSE
+=====
+
+The proxy settings for your ZAK client may not be configured correctly.
+
+RESOLUTION
+==========
+
+Configure the proxy settings in the policy file for your ZAK client. The policy
+file resides on the ZAK server. To modify the policy file, use the following
+steps:
+
+1. Log on to the ZAK server (this is the primary domain controller for the
+  network) as the domain administrator.
+
+2. Start Policy Editor (Poledit.exe), and then open the Ntconfig.pol file in the
+  following folder:
+
+     %SystemRoot%\System32\Repl\Import\Scripts
+
+3. Double-click the icon for the user group to which the ZAK client user
+  belongs. By default, this icon is labeled either AppUsers or TaskUsers.
+
+4. Double-click Windows, and then click the Internet Settings check box to
+  select it.
+
+  NOTE: There is a policy listed above this policy that is titled "Set the
+  values for your proxy server." Proxy server settings configured in this
+  policy have no effect on the ZAK client. You must configure proxy server
+  settings for the ZAK client in the Windows policy, as indicated above.
+
+
+5. Under Settings For Internet Settings, type a value in the Proxy Server box
+  using the following format:
+
+  http://&lt;proxy server&gt;:&lt;port&gt;
+
+6. You can also specify addresses for which the proxy server setting should be
+  overridden. By default, the proxy server setting is overridden only for
+  addresses located on your local area network (or intranet). To add a specific
+  address or set of addresses that should override the proxy server setting,
+  add a semicolon, and then the address, as in the following example:
+
+  &lt;local&gt;;www.microsoft.com;*.&lt;myserver&gt;.com
+
+7. Click the Proxy Enable check box to select it, and then click OK.
+
+8. Save the file, and then quit Policy Editor.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

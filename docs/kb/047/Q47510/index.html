@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47510: Watch Value and Watchpoint Ignored During Event or ERROR Trap | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47510: Watch Value and Watchpoint Ignored During Event or ERROR Trap" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47510/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47510/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47510/","publisher":null,"image":null,"headline":"Q47510: Watch Value and Watchpoint Ignored During Event or ERROR Trap","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47510-watch-value-and-watchpoint-ignored-during-event-or-error-trap">Q47510: Watch Value and Watchpoint Ignored During Event or ERROR Trap</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47510
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 13-DEC-1989
+
+When using ON ERROR GOTO or any of the ON event GOSUB statements
+(where event includes KEY, TIMER, COM, PEN, PLAY, and STRIG),
+watchpoints or watch values will not function while you are in the ON
+ERROR GOTO or ON &lt;event&gt; GOSUB subroutine. Watch values will show the
+default value for the type of variable (either 0 or a null string),
+and watchpoints will not halt the program.
+
+This behavior occurs in the QB.EXE editor for QuickBASIC Versions
+4.00, 4.00b, 4.50 and the QB.EXE editor for Microsoft BASIC Compiler
+Versions 6.00 and 6.00b. This behavior is a known design limitation of
+these versions of QuickBASIC and is not an error.
+
+The QBX.EXE editor for Microsoft BASIC PDS 7.00 has been enhanced
+so that you may now use watchpoints and watch values in ON ERROR GOTO
+and ON &lt;event&gt; GOSUB subroutines.
+
+The following example demonstrates the limitation:
+
+ON TIMER (5) GOSUB 1000
+TIMER ON
+WHILE INKEY$ = "" : WEND
+END
+
+1000 PRINT "In routine"
+     FOR x = 1 TO 10
+       PRINT x
+     NEXT x
+     RETURN
+
+Execute the program with a watchpoint or watch value for the variable
+"x". The watchpoint will not halt the program in the FOR NEXT loop as
+you would expect. If you set a breakpoint inside the FOR NEXT loop,
+you will also see that a watch value on "x" will always report a value
+of 0.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98706: Login Scripts to Change a User to Home Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98706: Login Scripts to Change a User to Home Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98706/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98706/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98706/","publisher":null,"image":null,"headline":"Q98706: Login Scripts to Change a User to Home Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98706-login-scripts-to-change-a-user-to-home-directory">Q98706: Login Scripts to Change a User to Home Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98706
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+Because the NET USE /HOME command places you at the root of your share, rather
+than the home directory in your share, you must manually change to your home
+directory. The procedure outlined below passes a variable (your logon name) to
+allow automatic changing to your home directory. It assumes that your home
+directory and login name are the same, and that your home directory is directly
+off of the root of your server share.
+
+MORE INFORMATION
+================
+
+On the Server
+-------------
+
+Because a LAN Manager login script cannot contain replaceable parameters, set up
+your login script like the file below:
+
+  NETLOGON.BAT
+  ------------
+  echo net use s: \\servername\public &gt;c:\local.bat
+  echo net use v: \\servername\apps &gt;&gt;c:\local.bat
+  echo net use r: /home &gt;&gt;c:\local.bat
+
+Notice that the NET USE commands are redirected into a file on your local hard
+drive and called LOCAL.BAT. Also notice the first NET USE has only one redirect
+symbol(&gt;). This is necessary to recreate the LOCAL.BAT file; all succeeding
+commands are appended to the end of the file by using the double redirect
+(&gt;&gt;).
+
+On Each Workstation
+-------------------
+
+Create a batch file similar to the batch file below:
+
+  LOGON.BAT
+  ---------
+  net logon %1
+  call c:\local.bat
+  cd r:\%1
+  r:
+
+Execute the LOGON.BAT file with a parameter of your username--"logon
+username"--where username becomes the %1 variable.
+
+The flow of the batch file is:
+
+1. Assume a username of maryjo
+
+2. Assume a directory named maryjo exists off of the root of your share on the
+  server.
+
+3. User maryjo enters the command "logon maryjo" (without the quotation marks).
+
+4. The LOGON.BAT file runs with "maryjo" as the %1 variable.
+
+5. You are logged on as maryjo, and the script file then executes.
+
+6. The login script redirects all commands to the C:\LOCAL.BAT file.
+
+7. The login script ends, and the LOCAL.BAT file is called.
+
+8. All commands redirected to LOCAL.BAT by means of the login script are
+  executed in the LOCAL.BAT file.
+
+9. The LOCAL.BAT file ends, and the LOGON.BAT continues to execute.
+
+10. The command "cd r:\%1" is executed, which causes the directory to be changed
+  to R:\MARYJO.
+
+11. The command "r:" is executed, and you then are in directory R:\MARYJO&gt;.
+
+This procedure allows you to log in from any workstation on the network, run your
+login script and automatically be changed to your home directory. Because the
+login script is redirected to a local file, and the file is updated at every
+login, the administrator can easily make changes to the login scripts on the
+server and be assured the changes are run at your next login.
+
+Additional query words: 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

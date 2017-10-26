@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111017: PRB: Multiple CEditViews on Document Don’t Behave as Expected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111017: PRB: Multiple CEditViews on Document Don’t Behave as Expected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111017/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111017/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111017/","publisher":null,"image":null,"headline":"Q111017: PRB: Multiple CEditViews on Document Don’t Behave as Expected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111017-prb-multiple-ceditviews-on-document-dont-behave-as-expected">Q111017: PRB: Multiple CEditViews on Document Don’t Behave as Expected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111017
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbDocView kbMFC kbVC kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you write an application that uses multiple CEditView views for one document,
+you will find that changes to one view will not be reflected in the other views.
+This behavior will also be seen with splitter windows when the panes are
+CEditViews.
+
+CAUSE
+=====
+
+The CEditViews are effectively edit controls. This means that the text in a
+CEditView is stored in the view rather than the document object. Normally, when
+the document needs to serialize (load or save), it calls the CEditView's
+SerializeRaw() member function.
+
+RESOLUTION
+==========
+
+This is expected behavior and is not a problem in the Microsoft Foundation Class
+Library.
+
+MORE INFORMATION
+================
+
+For an application that makes use of the CEditView's SerializeRaw() member
+function, please see the SuperPad example included in the Visual C++ MFC
+samples. The following are the default installation directories or distribution
+CD directories of the SuperPad sample:
+
+   Visual C++ version  |         Directory
+ --------------------------------------------------------------
+         1.0           |  \MSVC\MFC\SAMPLES\SUPERPAD
+         1.5x          |  \MSVC15\MFC\SAMPLES\SUPERPAD
+         2.x           |  \MSVC20\SAMPLES\MFC\SUPERPAD
+         4.0           |  \MSDEV\SAMPLES\MFC\OLE\SUPERPAD
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDocView kbMFC kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

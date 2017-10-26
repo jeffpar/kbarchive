@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143370/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143370/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143370/","publisher":null,"image":null,"headline":"Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143370-explorapedia-nature-setup-runs-each-time-you-insert-the-cd">Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143370
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.2 (UK only)
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Explorapedia series: World of Nature for Windows, version 1.2 (UK only) 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+Every time you insert the Explorapedia World of Nature (Nature) compact disc
+into the CD-ROM drive, Nature Setup runs.
+
+This occurs with version Nature version 1.2 (United Kingdom only) installed on a
+computer running Windows 95/98.
+
+RESOLUTION
+==========
+
+To stop Setup from running every time you insert the compact disc, use the
+following instructions.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+For information about how to edit the registry, view the Changing Keys And Values
+online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+backup copy of the registry files (System.dat and User.dat) before you edit the
+registry.
+
+1. Click Start, and then click Run.
+
+2. In the Open: box, type the following line, and then click OK:
+
+  " regedit " (without the quotation marks)
+
+3. Click the plus sign (+) next to the HKEY_LOCAL_MACHINE folder.
+
+4. Click the plus sign next to the SOFTWARE folder.
+
+5. Click the plus sign next to the Microsoft folder.
+
+6. Click the plus sign next to the Windows folder.
+
+7. Click the plus sign next to the CurrentVersion folder.
+
+8. Click the plus sign next to the App Paths folder.
+
+9. Click the App Paths folder.
+
+10. On the Edit menu at the top of the Registry Editor window, click New Key.
+
+11. Type the following as the name of the new folder, and then press ENTER:
+
+  " PEOPLE.EXE " (without the quotation marks)
+
+12. On the right side of the split screen, double-click the word (Default).
+
+13. A dialog box should appear with the title "Edit String" (without the
+  quotation marks).
+
+14. In the Value data box, type the following:
+
+  " C:\Program Files\Microsoft Kids\NatureZ\NATURE.EXE " (without the quotation
+  marks)
+
+  where C is the hard drive where you installed Nature.
+
+15. Click OK.
+
+16. On the Registry menu, click Exit.
+
+The Windows Autorun feature should now work successfully with Explorapedia
+Nature.
+
+MORE INFORMATION
+================
+
+In summary, what you need to do in Regedit is enter the path to Nature.exe as
+the (Default) value under the PEOPLE.EXE key in the App Paths section of the
+registry.
+
+
+Microsoft has confirmed this to be a problem in Explorapedia Nature for Windows
+95, version 1.2 (UK only).
+
+
+Additional query words: 1.20 mskids kids tad series explore kbmm world people nature multimedia multi-media multi 32-bit bundle easyball easy ball auto
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaNature120
+Version           : WINDOWS:1.2 (UK only)
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

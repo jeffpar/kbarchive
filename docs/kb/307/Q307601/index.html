@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/307/Q307601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/307/Q307601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/307/Q307601/","publisher":null,"image":null,"headline":"Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q307601-unable-to-allocate-lu-62-sessions-using-dependent-appc-lus">Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q307601
+Product(s): Microsoft SNA Server
+Version(s): 3.0,4.0
+Operating System(s): 
+Keyword(s): kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 4.0 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced Program-to-Program Communications (APPC) or Common Programming
+Interface for Communications (CPI-C) applications may be unable to allocate LU
+6.2 sessions. This typically occurs after the applications have been functioning
+normally for a long period of time.
+
+This problem only occurs if the SNA Server or Host Integration Server (HIS) 2000
+systems are using dependent APPC LUs for communications with the host system.
+
+The exact symptoms experienced by the end users of the APPC or CPI-C applications
+may vary depending on the application, but the following errors are likely to be
+returned by the underlying SNA Server/HIS 2000 APPC and CPI-C APIs:
+
+  APPC
+
+  Primary Return Code: 0003 (AP_ALLOCATION_ERROR)
+
+  Secondary Return Code: 00000005 (AP_ALLOCATION_FAILURE_RETRY)
+
+  CPI-C
+
+  Error 20 (CM_PRODUCT_SPECIFIC_ERROR)
+
+  -or-
+
+  Error 24 (CM_PROGRAM_PARAMETER_CHECK)
+
+CAUSE
+=====
+
+The SNA Server service gets into a state where it rejects solicited BINDs from
+the host, which leads to the APPC or CPI-C allocation failures. The following
+problems have been identified:
+
+- An internal variable could become negative if the SNA Server/HIS 2000
+  configuration is very large.
+
+- The SNA Server service does not correctly process a BIND when the host system
+  responds to an INIT-SELF request with a NOTIFY ILU/TLU (Initiating
+  LU/Terminating LU) notification of a procedure error.
+
+RESOLUTION
+==========
+
+SNA Server
+----------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft SNA Server version 4.0 service pack that contains this
+fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++-------------------------------------+
+| File name    | Date       | Time    | 
++-------------------------------------+
+| Snaservr.exe | 08/10/2001 | 02:36PM | 
++-------------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+Host Integration Server 2000
+----------------------------
+
+No fix is available for this problem in Host Integration Server 2000 at this
+time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+3.0 and 4.0.
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration Server
+2000.
+
+
+MORE INFORMATION
+================
+
+Note that the APPC and CPI-C errors described in the "Symptoms" section are
+common errors that can also occur for reasons other than the ones discussed in
+this article.
+
+SNA Server and HIS 2000 systems that meet the following criteria may be
+susceptible to the problem described in this article:
+
+- Dependent APPC LUs used for LU 6.2 sessions.
+
+- Supports Dynamic Remote APPC LU Definition is enabled in the connection
+  properties for the configured host connections.
+
+- SNA configurations that are very large. This would include configurations
+  that contain large numbers of LUs (APPC, 3270, LUA) and/or host connections.
+
+The following Microsoft Knowledge Base articles describe other problems related
+to dependent APPC LUs or the use of dynamic remote APPC LUs that can cause
+similar symptoms:
+
+  Q307520 Dynamic Remote LUs May Lead to Allocation Failures
+
+  Q281507 Dependent LU Version 6.2 Session Requests May Hang If Default Pool Is
+  Used
+
+  Q259149 SNA Server Selects Bad Dependent APPC LU from Default Pool
+
+  Q245487 APPC Program Never Retries New Local LU From Pool
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400
+Version           : :3.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192238/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192238/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192238/","publisher":null,"image":null,"headline":"Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192238-pc-wrmt-remote-client-may-display-date-incorrectly-after-2000">Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192238
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.5
+Operating System(s): 
+Keyword(s): kbYear2000
+Last Modified: 20-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.5 
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After the year 2000, the Microsoft Mail Remote for Windows client may display
+the year as 10 instead of 2000. The Callin.log and Callout.log files may also
+reflect this date incorrectly.
+
+CAUSE
+=====
+
+The problem is caused by running an older version of Microsoft Mail Remote for
+Windows or the Microsoft Mail External.exe program.
+
+RESOLUTION
+==========
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Contact
+Microsoft Product Support Services for more information.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+following fix.
+
+Microsoft Mail Remote for Windows
+---------------------------------
+
+This fix should have the following time stamp:
+
+  Msrmttr.dll   7/31/98   11:37a   76,608 bytes (version 3.2.4025)
+
+This hotfix has been posted to the following Internet location as Remcy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+MS-DOS External
+---------------
+
+This fix should have the following time stamp:
+
+  Async.ovl      7/31/98   11:34a   372,634 bytes (version 3.5.34)
+  External.exe   7/29/98    6:02p    57,583 bytes (version 3.5.34)
+  X25eicon.ovl   7/29/98    6:13p   396,618 bytes (version 3.5.34)
+
+This hotfix has been posted to the following Internet location as Exty2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+OS/2 External
+-------------
+
+This fix should have the following time stamp:
+
+  Async.ovl      7/29/98   6:22p   266,642 bytes (version 3.5.34)
+  External.exe   7/29/98   6:14p    53,200 bytes (version 3.5.34)
+  X25eicon.ovl   7/29/98   6:24p   263,986 bytes (version 3.5.34)
+
+This hotfix has been posted to the following Internet location as Exty2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+Windows NT External
+-------------------
+
+This fix should have the following time stamp:
+
+  Async.ovl      1/06/00   5:48p   266,770 bytes (version 3.5.35)
+  External.exe   1/06/00   5:48p    53,200 bytes (version 3.5.35)
+  X25eicon.ovl   1/06/00   5:48p   264,098 bytes (version 3.5.35)
+
+This hotfix has been posted to the following Internet location as Exty2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbYear2000 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350 kbMailRemote320
+Version           : WINDOWS:3.2,3.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

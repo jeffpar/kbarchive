@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235785/","publisher":null,"image":null,"headline":"Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235785-sms-sms-backup-schedule-is-updated-only-once-a-day">Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235785
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil
+Last Modified: 01-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The schedule for the Backup SMS Site Server task can be changed at any time;
+however, the process that reads the schedule and performs all changes operates
+only once each day. Therefore, any changes made to the backup schedule can
+require as long as 24 hours to take effect.
+
+WORKAROUND
+==========
+
+To immediately start the Backup SMS Site Server task in Microsoft Systems
+Management Server (SMS) 2.0 Service Pack 1, manually start the SMS_SITE_BACKUP
+service. Doing so forces the process to cycle through the instructions in the
+SMSbkup.ctl file. The service then automatically shuts down. The SMSbkup.ctl
+file can be found in the SMS\inboxes\smsbkup.box folder.
+
+In both SMS 2.0 and SMS 2.0 Service Pack 1, to force SMSdbmon to reread the
+backup schedule and, if appropriate, start an immediate backup, follow these
+steps:
+
+1. In Notepad, open the following file:
+
+  \Sms\Bin\I386\Sqlmon.dat
+
+2. Locate the following string:
+
+  Backup SMS Site Server
+
+3. Change the date located directly after the backup string to a date more than
+  one week old.
+
+4. In the Service Manager, stop and restart the SMS_SQL_MONITOR (SMSdbmon)
+  service.
+
+Regardless of how the backup schedule is configured, this process forces SMSdbmon
+to read the schedule and run the backup process.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+MORE INFORMATION
+================
+
+Please refer to the SMS Administrator's Guide for additional information on how
+to stop and start SMS components, including the Backup service
+(SMS_SITE_BACKUP).
+
+Additional query words: prodsms recovery
+
+======================================================================
+Keywords          : kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

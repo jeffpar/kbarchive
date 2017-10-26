@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246023: Cannot Remove Folder Without Being Prompted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246023: Cannot Remove Folder Without Being Prompted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246023/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246023/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246023/","publisher":null,"image":null,"headline":"Q246023: Cannot Remove Folder Without Being Prompted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246023-cannot-remove-folder-without-being-prompted">Q246023: Cannot Remove Folder Without Being Prompted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246023
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive the following error message when you attempt to remove a folder
+that is owned by a deleted user, especially if the deleted user was the only
+user with Full Control permissions on the folder:
+
+  Cannot remove folder &lt;Path&gt;:
+  Access Denied. Make sure the disk is not full or write protected and that the
+  file is not currently in use.
+
+When you attempt to take ownership of the entire folder structure, you may
+receive an "Access denied" prompt for each subfolder. It could take a long time
+to process a large folder structure.
+
+MORE INFORMATION
+================
+
+You can use the Subinacl.exe and Xcacls.exe tools from the Microsoft Windows NT
+Service Resource Kit to make this process easier. For example, to remove a
+folder named U3 and its subfolders, use the following commands:
+
+  g:\users\testing&gt; subinacl /subdirectories u3 /setowner=Administrator
+
+  g:\users\testing&gt; xcacls u3 /T /G Administrator:F
+
+Subinacl sets the owner to Administrator and Xcacls gives the Administrator
+account Full Control (F) permissions.
+
+The /subdirectories switch for Subinacl.exe specifies that the tool also process
+subfolders. The /setowner switch specifies the account name that should be made
+the owner.
+
+The /T switch for Xcacls.exe specifies that the tool also process subfolders. The
+/G switch means "Grant."
+
+NOTE: There may be cases in which Subinacl does not act on a subfolder. In this
+case, use the /file switch in place of the /subdirectories switch, and change
+the owner of the one file or folder. For example:
+
+  subinacl /file u3 /setowner=Administrator
+
+For additional information about these tools, type the following commands after
+you install the tools from the Resource Kit:
+
+  subinacl /help
+
+  xcacls /help
+
+Additional query words: code 5 net helpmsg
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

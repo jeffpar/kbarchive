@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175282/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175282/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175282/","publisher":null,"image":null,"headline":"Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175282-fix-error-message-appears-when-answer-file-contains-blank-entri">Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175282
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbsetup kbOPK kbSBK
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use unattended setup for computers running Windows NT Server and leave
+the AdvServerType and AutoMode / AutoUsers sections out of the Unattend.txt
+file, it may cause the setup process to display the following error message:
+
+  A Setup parameter specified by your system administrator or computer
+  manufacturer is missing or invalid. Setup must therefore ask you to
+  provide this information now.
+
+  Once you have furnished the required information, unattended setup will
+  continue.
+
+  You may wish to inform system administrator or computer manufacturer
+  that the 'XXXXXXX' value is missing or invalid.
+
+The error message appears twice, once for the AdvServerType and once for AutoMode
+/ AutoUsers. The XXXXXXX in the error message refers to the missing entry in the
+answer file.
+
+CAUSE
+=====
+
+One of the files that runs setup, Syssetup.dll, does not handle the missing
+values as for AdvServerType and AutoMode / AutoUsers the same way it does for
+ComputerName and IPAddress during unattended setup.
+
+RESOLUTION
+==========
+
+Copy the Syssetup.dll that comes with Windows NT 4.0 Service Pack 3 or later to
+you distribution server, this will suppress the first message that appears for
+AdvServerType. You must set the Licensing Type to either AutoMode or AutoUsers
+or you will still get the above error message once during setup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Under a normal unattended installation of Windows NT 4.0, not entering in a
+value will simply cause the setup to prompt the user for information. It may be
+beneficial to have setup stop for sections like ComputerName or IPAddress and
+give the installer the ability to type in the machine specific information
+without using Uniqueness Database Files (UDFs).
+
+For additional information on Windows NT 4.0 deployment/unattended installation
+consult the Windows NT 4.0 Deployment Guide. You can download the Deployment
+Guide from:
+
+http://www.microsoft.com/ntworkstation
+
+Note that the Deployment Guide is valid for both Windows NT workstation and
+Windows NT Server.
+
+Additional query words: answerfile unattended Setup
+
+======================================================================
+Keywords          : kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

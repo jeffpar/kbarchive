@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251441/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251441/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251441/","publisher":null,"image":null,"headline":"Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251441-xims-internet-mail-service-ndr-behavior-changes-in-55-sp3">Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251441
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The From address of the postmaster in the non-delivery report (NDR) is different
+from the e-mail domain that the original in-bound message was destined to. This
+difference may occur if the Internet Mail Service returns the NDR through
+another Internet Mail Service. Such new behavior is a result of the "Bounce
+Back" feature in the Microsoft Exchange Server message transfer agent (MTA).
+
+MORE INFORMATION
+================
+
+The Bounce Back feature is meant to eliminate the message looping by reducing
+the possibility of an MTA sending a message to a route that was already taken by
+a message. This feature also changes the way the MTA routes an NDR message that
+would have been sent out of the local Internet Mail Service. This feature was
+first applied as a post-Service Pack 2 (SP2) fix and then was rolled into
+Exchange Server 5.5 Service Pack 3 (SP3) where it is the default algorithm.
+Consequently, an Internet Mail Service NDR message takes a route different than
+the path taken by the original message when there are several routes available.
+
+The Bounce Back feature can be turned off by installing SP3 and setting the Only
+Use Least Cost Routes option. To locate this option
+
+1. In the Microsoft Exchange Server Administrator program, click Organization,
+  click Site, click Configuration, click Servers, and then double-click your
+  server.
+
+2. In the MTA Properties dialog box, click the General tab.
+
+By implementing the fix, the MTA handles NDR replies by causing the NDR to be
+routed back along the lowest cost route for its address space (which is the
+local connector). In essence, the NDR routes back along the same path of the
+original message that produced the NDR.
+
+A further consequence of this new MTA routing feature is that a message coming in
+one Internet Mail Service that produces an NDR that goes out a second Internet
+Mail Service will have the From address of the second Internet Mail Service
+postmaster, which might be a different e-mail domain than the e-mail domain to
+which the original in-bound message was destined. This can be confusing to the
+recipient of the NDR.
+
+
+Additional query words: IMC XFOR XCON IMS
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

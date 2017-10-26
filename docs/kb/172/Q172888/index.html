@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172888/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172888/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172888/","publisher":null,"image":null,"headline":"Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172888-prb-comctl32ocx---the-dependency-file-is-out-of-date">Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172888
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Visual Basic 5.0 Application Setup Wizard on a project that
+uses COMCTL32.OCX, the Out of Date Dependencies dialog box displays the
+following message:
+
+  The dependency file for the following component(s) is out of date.
+
+CAUSE
+=====
+
+A version of COMCTL32.OCX later than 5.00.3714 was installed and registered on
+the system, but the dependency file COMCTL32.DEP was not updated.
+
+This can occur if a newer COMCTL32.OCX was installed when you visited a Web site.
+When a user navigates to a Web site that uses an ActiveX control, such as
+COMCTL32.OCX, Internet Explorer checks to see if the current version installed
+on the system is newer, older, or the same version as the one being used by the
+Web site. If the version currently installed on the system is older, Internet
+Explorer replaces the control with the newer version. When this occurs, the
+dependency files for that control are not updated and the message described
+above will occur when you run the Application Setup Wizard.
+
+RESOLUTION
+==========
+
+Obtain the latest versions of COMCTL32.OCX and COMCTL32.DEP from the Microsoft
+Web site.
+
+For additional information on how to obtain the latest version of COMCTL32.OCX,
+see the following article in the Microsoft Knowledge Base:
+
+  Q167121 : FILE: Updated Comctl32.ocx Version 5.00.3828 Available
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Visual Basic 5.0 ships with COMCTL32.OCX version 5.00.3714, as well as its
+dependency file COMCTL32.DEP. After the initial release of Visual Basic 5.0,
+version 5.00.3828 of COMCTL32.OCX became available via the Visual Basic Control
+Creation Edition and the Microsoft Web site.
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : WINDOWS:5.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

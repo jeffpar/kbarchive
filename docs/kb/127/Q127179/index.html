@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127179: PRB: Output from TIME() Does Not Change with SET HOURS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127179: PRB: Output from TIME() Does Not Change with SET HOURS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127179/","publisher":null,"image":null,"headline":"Q127179: PRB: Output from TIME() Does Not Change with SET HOURS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127179-prb-output-from-time-does-not-change-with-set-hours">Q127179: PRB: Output from TIME() Does Not Change with SET HOURS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127179
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If TIME() is supplied as the initial value of a text box, The SET HOURS TO
+command has no effect on the time value displayed.
+
+CAUSE
+=====
+
+TIME() returns a character string in the 24-hour HH:MM:SS format regardless of
+the SET HOURS setting. As a result, the text box control is not a time value but
+a character value and will behave as such.
+
+WORKAROUND
+==========
+
+Add a new method to the form to perform the necessary conversion regardless of
+whether the SET HOURS TO value is determined by the current environment settings
+or changed programmatically at run-time.
+
+Step-by-Step Example
+--------------------
+
+Steps 1 through 5 in the following procedure illustrate how to change the hours
+setting in a program by adding two option buttons. You can omit steps 2 through
+5 if desired.
+
+1. Open the desired form or create a new one named Form1.
+
+2. Choose the Form Control toolbar from the View menu.
+
+3. Pick the Option Group tool, and put a set of Option Buttons on the form.
+  Change the Caption Property for each to read '12 Hour' and '24 Hour'
+  respectively.
+
+4. Double-click the Option Buttons to open the OptionsGroup1 code dialog.
+
+5. Select Option1 under the Object list box. Then select Click from the
+  procedure list box, and enter this code:
+
+     SET HOURS TO 12
+     THISFORM.TEXT1.VALUE = THISFORM.CivTym()
+
+  While in the same code dialog, select Option2 from the Object combo box, and
+  enter this code:
+
+     SET HOURS TO 24
+     THISFORM.TEXT1.VALUE = TIME()
+
+6. If a new form was created in step 1, add a Text box (Text1) to the form, and
+  remove any previous value of the Text1 text box from the Properties sheet.
+
+7. While Form Designer is selected, choose the Form menu pad from the system
+  menu, and select New Method. Enter CivTym as the Method Name.
+
+8. In the Description box, enter the following and click OK to save the new
+  method descriptor:
+
+     Returns civilian time (hh:mm:ss ampm)
+
+9. Choose Properties under the system menu View pad or click Form1 with the
+  alternate mouse key to bring up the Options menu and choose Properties.
+
+10. While Form1 is shown as the current object, choose the Method tab.
+
+11. Double-click the civtym procedure at the end of the Method list, and enter
+  this code:
+
+      cTym = TIME()     &amp;&amp; Save the current time string
+      iHr  = VAL(LEFT(cTym,2))   &amp;&amp; extract the numerical hour
+      lPm  = iHr &gt; 12   &amp;&amp; logically, is it post meridian (after noon)?
+      RETURN STR( IIF( lPm, iHr - 12, iHr ), 2 ) + SUBSTR( cTym, 3 ) + ;
+              " " + IIF( lPm, 'p', 'a' )+".m."
+
+12. From the same dialog, select the Init procedure, and enter this code:
+
+      IF SET('HOURS') &gt; 12
+         THISFORM.TEXT1.VALUE = TIME()
+         ** optional setting code: remove if option buttons omitted
+         *
+         THISFORM.OPTIONGROUP1.OPTION1.VALUE = 0
+         THISFORM.OPTIONGROUP1.OPTION2.VALUE = 1
+         *
+         ** end of optional setting code
+      ELSE
+         THISFORM.TEXT1.VALUE = THISFORM.CivTym()
+         ** optional setting code: remove if option buttons omitted
+         *
+         THISFORM.OPTIONGROUP1.OPTION1.VALUE = 1
+         THISFORM.OPTIONGROUP1.OPTION2.VALUE = 0
+         *
+         ** end of optional setting code
+      ENDIF
+
+13. Type SET HOURS TO 12 in the Command window.
+
+14. Run the form, and note the display. If option buttons are used, note which
+  is selected; then change it to 24 hours. Close the form. Then re-run it with
+  the opposite hours setting in effect, and note the display.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

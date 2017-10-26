@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63974: IOCtl Calls in Protected-Mode Microsoft Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63974: IOCtl Calls in Protected-Mode Microsoft Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63974/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63974/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63974/","publisher":null,"image":null,"headline":"Q63974: IOCtl Calls in Protected-Mode Microsoft Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63974-ioctl-calls-in-protected-mode-microsoft-windows">Q63974: IOCtl Calls in Protected-Mode Microsoft Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63974
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Generally, Microsoft Windows translates standard MS-DOS IOCtl calls in the two
+protected modes (standard mode and enhanced mode). Therefore, in most cases an
+application can make IOCtl calls regardless of the mode in which Windows is
+running. However, if the buffer passed to the IOCtl call contains pointers to
+additional data, the calling application must translate those pointers and the
+data referenced by those pointers into a form that can be used in real mode,
+before making the IOCtl call.
+
+MS-DOS functions are executed only in real mode, and thus can only access data
+that is located in the first 1 MB of memory. To work within this limitation, the
+memory referenced by the pointers contained in the buffer must be allocated
+below 1 MB. In addition, the buffer must contain the segment address of the
+data, rather than the protected-mode selector.
+
+For example, consider IOCtl call Write Control Data to Character Device Driver,
+Interrupt 21h Function 44h Subfunction 03h. The parameters to this call are as
+follows:
+
+  AH = 44H
+  AL = 03H
+  BX = handle
+  CX = number of bytes to write
+  DS:DX = segment:offset address of data buffer
+
+Because this interface is known to protected-mode Windows, Windows is able to
+translate (map) the protected-mode address passed in DS:DX to a memory location
+that is accessible in real mode. Because of this translation, in most cases the
+application is not required to perform any additional work to make the call. The
+caller should set the DS:DX register pair to the selector:offset address of the
+data buffer.
+
+If an MS-DOS device driver defines a special interface that requires pointers to
+additional data be passed in the main data buffer, the caller must ensure the
+pointers passed in the data buffer can be used in real mode. The caller should
+allocate the memory referenced by these pointers using the GlobalDOSAlloc()
+function.
+
+GlobalDOSAlloc() returns a double-word. If the allocation is successful, the
+high-order word contains the segment:paragraph address of the allocated buffer,
+while the lower-order word contains the selector to the buffer. The selector is
+used to access the buffer in protected mode; the segment:paragraph address can
+be used in real mode. Use the GlobalDOSFree() function to free memory allocated
+by GlobalDOSAlloc().
+
+Additional query words: 3.00 3.10 DDKDPMI DDKTSR
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

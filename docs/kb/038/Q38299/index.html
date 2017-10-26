@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38299: How CodeView Interprets Values (octal, decimal, hexadecimal) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38299: How CodeView Interprets Values (octal, decimal, hexadecimal)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38299/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38299/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38299/","publisher":null,"image":null,"headline":"Q38299: How CodeView Interprets Values (octal, decimal, hexadecimal)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38299-how-codeview-interprets-values-octal-decimal-hexadecimal">Q38299: How CodeView Interprets Values (octal, decimal, hexadecimal)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38299
+Product(s): See article
+Version(s): 1.x 2.00 2.10 2.20 | 2.20
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 23-NOV-1988
+
+Problem:
+
+When trying to watch a portion of memory, I have a problem with
+the following command at the dialog prompt:
+
+   WW DS:0050 L 4.
+
+I thought this should have created a watch on the four words starting
+at offset 0x50. It actually set the watch starting at 0x28, CodeView
+interpreted the number as if it had been in base 8. Using the N
+command to change the radix doesn't make any difference.
+
+Response:
+
+In this case, the 0's before the offset cause CodeView to evaluate the
+expression in octal. CodeView provides three different prefixes for
+numbers to use an explicit base: 0 signifies octal, 0n signifies
+decimal, and 0x signifies hexadecimal. The current radix setting will
+have no bearing on numbers entered with these prefixes; however, it
+will affect those without prefixes.
+
+The lines below have different meanings when setting watches.
+The left column is the command, while the right column is an example
+of the display produced in the watch window. Radix is assumed to be 10.
+
+The following is an example:
+
+1. ww 50               50    :  0067:0032  6942
+
+2. ww 050              050   :  0067:0028  6328
+
+3. ww 0n50             0n50  :  0067:0032  6942
+
+4. ww 0x50             0x50  :  0067:0050  6163
+
+The first command sets the watch at the address specified using the
+current radix. This address will change when you use the N command to
+change the radix; the 50 on the left of the watch remains the same;
+however, the offset in the address will change to watch 50 in the new
+base. This address will always be displayed in hexadecimal, but 50
+will be evaluated differently.
+
+Examples 2 through 4 show watches being set in octal, decimal, and
+hexadecimal modes, respectively. These addresses will never change
+with a change of radix.
+
+Notice that watches 1 and 3 match. This is because by default CodeView
+is in base 10, so 50 and 0n50 evaluate to the same thing. Using N 8 will
+cause watches 1 and 2 to match, and N 16 will match 1 and 4.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

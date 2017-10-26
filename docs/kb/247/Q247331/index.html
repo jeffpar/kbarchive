@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247331/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247331/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247331/","publisher":null,"image":null,"headline":"Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247331-prb-error-spawning-compiler-for-windows-ce-212-platforms">Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247331
+Product(s): Microsoft C Compiler
+Version(s): 2.12,6.0
+Operating System(s): 
+Keyword(s): kbVC600 kbDSupport kbGrpDSVCCompiler
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 6.0 
+- Microsoft Windows CE Platform Builder, version 2.12 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With a successful install of the Microsoft Windows CE Toolkit for Microsoft
+Visual C++ 6.0 and a software development kit (SDK) exported from Microsoft
+Windows CE Platform Builder 2.12, attempts to build projects targeting the 2.12
+platform fail with an error similar to the following:
+
+  Error spawning clmips.exe
+
+CAUSE
+=====
+
+The Microsoft Windows CE Toolkit for Visual C++ 6.0 was shipped prior to the
+release of Windows CE version 2.12 and does not include the compilers needed to
+build applications for this operating system.
+
+RESOLUTION
+==========
+
+By using the compilers provided for Windows CE 2.11 you will be able to build
+and debug applications targeting Windows CE 2.12:
+
+1. Start Microsoft Visual C++ 6.0.
+
+2. From the Tools select Options, and then select the Directories tab.
+
+3. Select the 2.12 platform in the WCE Configuration drop-down list.
+
+4. Select Executable Files in the Show Directories for drop-down list.
+
+5. Change the WCE212\BIN entry to WCE211\BIN.
+
+6. Select Library Files in the Show Directories for drop-down list.
+
+7. Change occurrences of "Mfc" to "MFC" (capitalize all of the letters).
+
+8. Change occurrences of "Atl" to "ATL" (capitalize all of the letters).
+
+NOTE: The preceding changes will not allow applications to be built for the
+MIPS16 or Thumb processors, which are supported by Windows CE 2.12. Check the
+Microsoft Windows CE products web site at http://www.microsoft.com/windowsce for
+information on the availability of updated development tools.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install an SDK exported from Platform Builder 2.12 into the Windows CE
+  Toolkit for Visual C++ 6.0.
+
+2. Create or load a Windows CE application and attempt to build for the platform
+  installed in step 1 using a CPU configuration other than x86.
+
+  An error occurs while spawning the Windows CE compiler for the requested
+  processor.
+
+Additional query words: Toolkit Windows CE Platform Builder SDK kbWinCE212
+
+======================================================================
+Keywords          : kbVC600 kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbSDKSearch kbWinCETKVCSearch kbWinCESDKSearch kbWinCESearch kbWinCESDK212 kbWinCETK600VC
+Version           : :2.12,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

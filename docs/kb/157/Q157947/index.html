@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157947: HOWTO: Create a Report Based on a Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157947: HOWTO: Create a Report Based on a Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157947/","publisher":null,"image":null,"headline":"Q157947: HOWTO: Create a Report Based on a Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157947-howto-create-a-report-based-on-a-query">Q157947: HOWTO: Create a Report Based on a Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157947
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDesigner kbvfp300 kbvfp500 kbvfp600
+Last Modified: 19-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to create a report based on a query by placing the SELECT
+statement in the Init method of the DataEnvironment.
+
+MORE INFORMATION
+================
+
+Use the following steps to create a report based on a query:
+
+1. Issue the following command in the command window:
+
+        CREATE TABLE TEST (fld_one C(5), fld_two N(5))
+
+2. Add five records, three of them with "aaa" in fld_one.
+
+3. Create a report, and add the table to the DataEnvironment.
+
+4. Drag the fields to the detail band.
+
+5. Remove the Alias reference from each field in the report.
+
+6. In the Init method of the DataEnvironment enter the following code:
+
+        USE test  &amp;&amp; Only need if the table is not already open.
+        SELECT fld_one, fld_two ;
+          FROM Test where fld_one= "aaa" ;
+          INTO CURSOR Temp
+
+7. In the Destroy method of the DataEnvironment enter CLOSE ALL. (You may leave
+  this out if you do not want to close everything.)
+
+8. Remove the table from the DataEnvironment.
+
+9. Save the report as QueryTest.
+
+10. In the Command window issue either of the following two commands:
+
+         REPORT FORM Querytest to PRINT
+
+  -or-
+
+         REPORT FORM Querytest PREVIEW
+
+REFERENCES
+==========
+
+For another method of doing this based on a view, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q130122 HOWTO: Add SQL SELECT to the Data Environment of a Report
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

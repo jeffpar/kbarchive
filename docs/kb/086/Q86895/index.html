@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86895/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86895/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86895/","publisher":null,"image":null,"headline":"Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86895-possible-problems-with-windows-30-31-using-setup-p">Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86895
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+From within Program Manager, you can use the /P parameter to run the Windows
+Setup, forcing it to rebuild the default Program Manager groups and icons. This
+feature behaves differently in Windows versions 3.0 and 3.1.
+
+You can interfere with this maintenance mode operation.
+
+MORE INFORMATION WINDOWS 3.0
+----------------------------
+
+How Setup /P Works:
+
+For Windows 3.0, Setup /P will rebuild the default groups for Program Manager,
+(Main, Accessories, Games) in a "destructive" manner. That is, when it rebuilds
+the groups, it will do so from scratch; the new groups will NOT include any
+icons that you added to the group. In addition, the window's size and location
+will be overwritten.
+
+Possible Problems:
+
+During the process of rebuilding the groups, the mouse cursor is live. If you
+select a group during the process, an Unrecoverable Application Error (UAE) may
+occur, or the system may stop, except for the mouse cursor.
+
+It is also possible that if you select one of the groups as they are being
+rebuilt, the next icons added in the sequence will be put in the wrong group. If
+a group is selected before it is rebuilt, the next icons to be added will be put
+in the wrong group temporarily, until the additional groups are rebuilt.
+
+To correct these problems, run Setup /P again and do not use the keyboard or
+mouse while the process is running.
+
+MORE INFORMATION WINDOWS 3.1
+----------------------------
+
+How Setup /P Works:
+
+For Windows 3.1, Setup /P will rebuild the default Program Manager Groups, (Main,
+Accessories, Games, Startup), in a non-destructive manner. This process will
+KEEP any icons you have added to the default groups, and it will not alter the
+size or window location of these groups. Setup will restore the original icons
+for any of the default items if they have been changed.
+
+Because this is a "non-destructive" process, you will have to use the following
+procedure to restore the default groups as they would be at installation time:
+
+1. Exit Windows 3.1.
+
+2. Delete the file PROGMAN.INI from the WINDOWS directory.
+
+3. Start Windows again. Program Manager should load without any groups.
+
+4. From the File Menu, choose Run.
+
+5. Type the following text and press ENTER.
+
+  setup /p
+
+This will rebuild the groups back to their default contents.
+
+Possible Problems:
+
+The mouse cursor is active during this rebuilding process. If you select either
+an open group, or a minimized group, the rebuilding process will add the next
+icons in the rebuilding sequence to that group. Whether you exit Windows Saving
+Settings or not, you will still have these groups with non-default icons. Due to
+the "non-destructive" process, use the method above for deleting PROGMAN.INI,
+and returning to the original default groups.
+
+If you select a minimized group (which opens the Control menu) during the
+rebuilding process, after the rebuilding process the hourglass pointer will not
+return to a standard pointer. Moving the mouse will return it to the standard
+mouse pointer.
+
+Additional query words: 3.00 3.00a 3.11 3.10 uae freeze lock hang
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : :3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

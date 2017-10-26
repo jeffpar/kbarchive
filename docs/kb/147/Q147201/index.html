@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147201/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147201/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147201/","publisher":null,"image":null,"headline":"Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147201-prb-header-files-ignored-by-recompile-all--build-process">Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147201
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a Recompile All from the Project Manager does not force a recompile of
+program (.prg) files if the program has not been altered. As a result, header
+(.h) files that are referenced in the program file are ignored by the Recompile
+All and Build processes. Therefore, if changes are made to a header file that is
+referenced in a program file, the new changes are not automatically redefined.
+
+NOTE: This behavior applies only to header files that are referenced in unchanged
+program files. In other words, header files referenced in forms and classes are
+reprocessed by a Recompile All.
+
+CAUSE
+=====
+
+Each .prg file has an associated .fxp file after the first Build process. If the
+.fxp and .prg file datetime stamps are the same, then it is assumed that the
+.prg file hasn't changed, so it's left out of any subsequent recompile
+processes.
+
+RESOLUTION
+==========
+
+There are two ways to force a recompile of .prg files:
+
+- Delete all corresponding .fxp files before starting the build process from
+  within the Project Manager.
+
+-or-
+
+- Issue a COMPILE *.PRG command from the Command window.
+
+It is the presence of the .fxp file that prevents the Project Manager from
+recompiling all files.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a simple project, and add a .prg file that contains a #INCLUDE
+  statement that references a header (.h) file. Also include a WAIT WINDOW
+  statement that will display the contents of a constant variable that is
+  declared in the header file.
+
+2. Add the header file to the Text File section of Project Manager.
+
+3. In the header file, insert a #DEFINE command that places a value into the
+  constant referenced by the WAIT WINDOW.
+
+4. Build the project, and run it noting the value displayed from the constant.
+  Then change the value for the constant in the header file.
+
+5. Rebuild the project with the Recompile All Files check box selected.
+
+6. Rerun the application, and note that the displayed value does not reflect the
+  new value in the header file. The value is the same as the previously stored
+  value.
+
+7. Delete the .fxp file that corresponds to the .prg file.
+
+8. Rebuild the project with the Recompile All Files check box selected.
+
+9. Rerun the application, and note that the displayed value now reflects the
+  value in the header file.
+
+Additional query words: VFoxWin re-compile akz
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

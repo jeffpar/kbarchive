@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161727/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161727/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161727/","publisher":null,"image":null,"headline":"Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161727-prb-scc-api-error-project-created-occurs-when-opening-a-pjx">Q161727: PRB: SCC API Error "Project Created" Occurs When Opening a PJX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161727
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbvfp500
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a project (.pjx) in Visual FoxPro 5.0, the following error message
+appears:
+
+  SCC API error "Project created" occurred. The project will be opened without
+  source control.
+
+After the project opens, no source control glyphs appear in the project window,
+and no source control options are available on the Visual FoxPro 5.0 menu.
+
+CAUSE
+=====
+
+You deleted the SourceSafe project that was associated with this .pjx project.
+
+RESOLUTION
+==========
+
+For example, the project "Tastrade.pjx" is under SourceSafe control in a project
+named $/FoxApps/Tastrade.
+
+If you did not select the "destroy permanently" checkbox when you deleted the
+Tastrade project, the integration with the .pjx can be restored to its previous
+state by following these steps:
+
+1. Close the project (.pjx).
+
+2. The Visual SourceSafe Explorer lists a project named $/FoxApps/Tastrade that
+  does not have any files in it. You may have to collapse and expand the Visual
+  SourceSafe tree view to see this project. Select the project. On the File
+  menu, choose Delete.
+
+  IMPORTANT: Ensure that the "destroy permanently" checkbox is selected.
+
+3. In the Visual SourceSafe Explorer, highlight the parent project of the
+  project that was linked to the .pjx (in this example select $/FoxApps). On
+  the File menu, choose Properties. The Deleted Items tab lists the deleted
+  Tastrade project. Click "Recover." The $/FoxApps/Tastrade appears in the
+  Visual SourceSafe Explorer.
+
+4. Finally, select the Tastrade.pjm file (for every .pjx, a .pjm file is created
+  by the integration) in the Visual SourceSafe Explorer and check it out.
+
+NOTE: If you open Tastrade.pjx in Visual FoxPro, it now shows all of the
+integration glyphs and the history of the files.
+
+If you selected the "destroy permanently" checkbox when you deleted the Tastrade
+project, you can add the .pjx back to SourceSafe, but you lose the history of
+all the files. To do this, type the following Visual FoxPro commands in the
+Command Window:
+
+     CLOSE ALL
+     USE Tastrade.pjx
+     REPLACE ALL sccdata WITH ""
+     USE
+     MODIFY PROJECT Tastrade
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Add a project (.pjx) to source control as described in the "Visual FoxPro
+  Developer's Guide," Chapter 29, pages 678 [ASCII 150] 680, under the heading
+  "Putting Projects Under Source Control."
+
+2. Close the project (.pjx).
+
+3. Start the Visual SourceSafe Explorer, and delete the project that is
+  associated with the project (.pjx).
+
+4. In Visual FoxPro 5.0, open the project (.pjx) and the error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbvfp500 
+Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP500 kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

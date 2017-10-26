@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189928/","publisher":null,"image":null,"headline":"Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189928-wd97-errors-attempting-to-fax-after-installing-outlook-98">Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189928
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop kbdta word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+
+
+SYMPTOMS
+========
+
+When you attempt to fax after installing Microsoft Outlook 98, one of the
+following may occur:
+
+- When merging to Electronic Mail using the WinFax Starter Edition fax number
+  format (Fax@&lt;fax number&gt;), you may receive the following error message
+  when Outlook 98 sends the merged items to your Outbox:
+
+  Some errors occurred while processing the requested tasks. Please review the
+  list of errors below for more details.
+
+  Unable to connect to the server. (Account: 'Symantec WinFax Starter Edition',
+  SMTP Server: '127.0.0.1', Error Number: 0x800ccc0e).
+
+  NOTE: This error message will appear if Symantec WinFax Starter Edition is set
+  as the default Internet Account in Outlook 98. To check the default account
+  in Outlook 98, click Accounts on the Tools menu and then click the Mail tab.
+
+  -or-
+
+- When you try to merge to Electronic Mail using the Microsoft Fax fax number
+  format (Fax:&lt;fax number&gt;), the following error message may appear:
+
+  This program has performed an illegal operation and will be shutdown. If the
+  problem persists, contact the program vendor.
+
+  WINWORD caused an invalid page fault in module OLEAUT32.dll at 0137:6534b2dl.
+
+  -or-
+
+- In a Word document, when you point to Send To on the File menu and then click
+  Mail Recipient, a new mail message appears. When you type the fax number
+  using the [Fax:&lt;fax number&gt;] format in the To box and click Send, the
+  Check Names dialog box appears with the "No Matches Found" message.
+
+  -or-
+
+- In a Word document, when you point to Send To on the File menu and then click
+  Fax Recipient, the Fax Wizard tries to start but nothing happens or you
+  receive the following error message:
+
+  This program has performed an illegal operation and will be shutdown. If the
+  problem persists, contact the program vendor.
+
+  WINWORD caused an invalid page fault in module OLEAUT32.dll at 0137:6534b2dl.
+
+  -or-
+
+- When you try to send a fax from Microsoft Fax (on the Start menu, point to
+  Programs, point to Accessories, point to Fax, and then click Compose New Fax,
+  the following error message appears:
+
+  The profile you selected does not have fax capabilities. You can either add
+  fax to this profile (through the Control Panel), or restart with a profile
+  that contains fax.
+
+CAUSE
+=====
+
+These errors occur if you selected the Internet Mail Only (IMO) option in the
+Microsoft Outlook 98 Setup program and you have Microsoft Fax installed.
+
+RESOLUTION
+==========
+
+To correct these problems, you need to remove Microsoft Fax and then reinstall
+the Symantec WinFax Starter Edition in Outlook 98 setup.
+
+For additional information about how to remove Microsoft Fax and to reinstall the
+Symantec WinFax Starter Edition, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q187978 OL98: (IMO) Can't Fax After Mail Merge from Microsoft Word
+
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q184029 OL98: How to Tell What Type of Outlook Setup You Have
+
+
+  Q189932 WD97: Merge To Electronic Fax Option Missing
+
+Additional query words: ol98 8.0
+
+======================================================================
+Keywords          : kbinterop kbdta word97 kbmerge 
+Technology        : kbWordSearch kbOutlookSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

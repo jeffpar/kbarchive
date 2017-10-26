@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167541/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167541/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167541/","publisher":null,"image":null,"headline":"Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167541-encarta-97bookshelf-98-invalid-page-fault-starting-program">Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167541
+Product(s): Microsoft Home Kids Products
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup kbusage kbprb
+Last Modified: 25-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta for Windows 
+- Microsoft Bookshelf 98 for Windows 
+- the operating system: Microsoft Windows 95 
+- the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Encarta 97 Encyclopedia or Bookshelf 98, you may receive an error
+message similar to the following error message:
+
+Encarta Error Message
+---------------------
+
+  This program has performed an Illegal Operation and will be shut down.
+
+  If the problem persists, contact the program vendor.
+
+If you click the Details button, you receive the following message:
+
+  ENC97 caused an invalid page fault in module ENC97.EXE
+
+Bookshelf Error Message
+-----------------------
+
+  BSHELF98 caused an invalid page fault in module BSHELF98.EXE
+
+CAUSE
+=====
+
+You have disabled Virtual Memory, or your Windows 95/98 swapfile is too small.
+
+RESOLUTION
+==========
+
+To view and change the current swapfile settings, do the following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the System icon.
+
+3. On the Performance tab, click the Virtual Memory button.
+
+4. Select Let Me Specify My Own Virtual Memory Settings.
+
+5. Note the current setting to the right of the "Hard disk" drop down box.
+
+  This number represents the amount of free space on this drive that can be used
+  for a swapfile. If this number is too small (under 10 MB, for example), you
+  need to choose a different drive that has more available space or you need to
+  free up additional disk space on this drive.
+
+6. Once you have made necessary changes such as freeing drive space or changing
+  drives, click OK. When you are asked to confirm your changes, click Yes.
+
+7. Click Close. Restart the computer when you are prompted.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm invalid page fault virtual memory swap file cdrom
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbusage kbprb 
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbBookShelf1998
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

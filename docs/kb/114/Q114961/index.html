@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114961: RFX_Date() function for TIMESTAMP_STRUCT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114961: RFX_Date() function for TIMESTAMP_STRUCT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114961/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114961/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114961/","publisher":null,"image":null,"headline":"Q114961: RFX_Date() function for TIMESTAMP_STRUCT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114961-rfx_date-function-for-timestamp_struct">Q114961: RFX_Date() function for TIMESTAMP_STRUCT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114961
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,1.52,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbYear2000 kbDatabase kbMFC kbODBC kbVC
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The RFX_Date() record field exchange function transfers data from a date/time
+field to a CTime object. AppWizard/ClassWizard will use this RFX_Date() function
+when mapping date/time fields to variables.
+
+The CTime object doesn't allow dates before the year 1970 and after the year 2037
+(the CRT stores the time as a signed long, so the limit is actually Jan 18, 2038
+19:14:07). Therefore, it may be better to use a TIMESTAMP_STRUCT (defined in the
+SQLEXT.H) to retrieve the date/time information.
+
+The structure TIMESTAMP_STRUCT is defined as:
+
+  typedef struct tagTIMESTAMP_STRUCT
+      {
+          SWORD year;
+          UWORD month;
+          UWORD day;
+          UWORD hour;
+          UWORD minute;
+          UWORD second;
+          UDWORD fraction;
+      } TIMESTAMP_STRUCT;
+
+NOTE: The code in the following sample is not needed if you are using MFC version
+3.1 or above (i.e. VC++ 2.1 or greater). MFC version 3.1 and above includes an
+overloaded RFX_Date function that takes a TIMESTAMP_STRUCT. In this case, simply
+changing the declaration of the recordset members to TIMESTAMP_STRUCT and
+modifying any initializations of those members is sufficient.
+
+The RFXDTE sample contains two files; RFXDATE.H and RFXDATE.CPP. These define a
+RFX_Date() function which accepts a TIMESTAMP_STRUCT reference. To use the
+function, you need to include the .CPP file into your project. If your project
+doesn't use the standard precompiled header STDAFX.H then you may need to add
+header files to the top of the .CPP file. Either in your precompiled header or
+the RFXDATE.CPP file, you must include AFXWIN.H, AFXEXT.H, and AFXDB.H.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Rfxdte.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Record field exchange (RFX) functions are called in the DoFieldExchange()
+function of a CRecordset. RFX functions handle the transfer of data from a field
+of a resultset (table that results from an SQL query) and the data members of a
+CRecordset object.
+
+To use the RFX_Date function in the RFXDTE sample, first define a
+TIMESTAMP_STRUCT member of a CRecordset class. Then, pass the variable as the
+third parameter to the RFX routine. The prototype for the function is:
+
+  void RFX_Date(CFieldExchange* pFX, const char *szName,
+      TIMESTAMP_STRUCT&amp; value);
+
+Be sure to include RFXDATE.H in the source file that calls RFX_Date().
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbSample kbYear2000 kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,1.52,2.0,2.1,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

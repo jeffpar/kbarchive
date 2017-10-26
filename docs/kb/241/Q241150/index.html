@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241150/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241150/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241150/","publisher":null,"image":null,"headline":"Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241150-tpu-err-msg-unable-to-register-all-files-that-were-installed">Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241150
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.5
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 15-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation of Team Productivity Update (TPU), you may receive the
+following error message:
+
+  Unable to register all files that were installed.
+
+  Please review any documentation accompanying your setup for more information
+  on why setup may not be working properly. You might also try closing any open
+  applications and run setup again.
+
+You may also see the following error message in the Results window when the
+wizard finishes:
+
+  Unable to register all files that were installed.
+
+CAUSE
+=====
+
+This error message can occur if the Manages.dll file does not exist or cannot be
+found, or if the currently logged-on user does not have permissions to access
+the file. This file is used by the TPU installation wizard to self-register the
+TPU dynamic-link libraries (DLLs) needed to complete the installation.
+
+RESOLUTION
+==========
+
+The Manages.dll file is installed during the installation of the BackOffice
+Server 4.5 components in the following folder:
+
+  %SystemRoot%\Program Files\Microsoft BackOffice\Admin
+
+To reinstall TPU, manually uninstall the installed components and then run Setup
+again:
+
+1. Remove the TPUWeb virtual directory from the default Web site.
+
+2. Uninstall Microsoft Outlook 2000 Team Folders Wizard by using the Add/Remove
+  Programs tool in Control Panel.
+
+3. Delete the TPUWeb, TeamDocs, and TeamFolders folders in the
+  %SystemRoot%\Inetpub\Wwwroot folder.
+
+4. Delete the %SystemRoot%\Public folder. This removes the TPU client share.
+
+5. Start SQL Enterprise Manager and delete the MSTWS and TFConfig databases.
+
+6. Delete the new public folder in the location specified during Setup.
+
+7. Run TPU Setup again.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

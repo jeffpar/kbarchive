@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139299: FIX: Ampersand (&amp;) Appears as Underscore (_) in the Explorer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139299: FIX: Ampersand (&amp;) Appears as Underscore (_) in the Explorer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139299/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139299/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139299/","publisher":null,"image":null,"headline":"Q139299: FIX: Ampersand (&amp;) Appears as Underscore (_) in the Explorer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139299-fix-ampersand--appears-as-underscore-_-in-the-explorer">Q139299: FIX: Ampersand (&amp;) Appears as Underscore (_) in the Explorer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139299
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500fix
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Visual SourceSafe Explorer displays a project or file name with an
+underscore (_) character. It appears to be a shortcut but does not provide
+shortcut functionality. The MS-DOS command line shows an ampersand (&amp;)
+character instead.
+
+RESOLUTION
+==========
+
+Do not use files or projects that contain the ampersand (&amp;) character. If
+there are items that appear this way in the SourceSafe Explorer, then you can
+easily rename the items by clicking Rename on the File menu. Give the file the
+same name without the ampersand (&amp;) character.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual SourceSafe 5.0.
+
+MORE INFORMATION
+================
+
+The way the ampersand (&amp;) character in Visual SourceSafe works is different
+in the SourceSafe Explorer from the way it works on the command line. In the
+SourceSafe Explorer, the ampersand (&amp;) character translates into the
+underscore (_) character. In most Windows programming languages, the ampersand
+(&amp;) character is used to define a shortcut key to an item. In Visual
+SourceSafe, the same appears to happen, but no shortcut is available. The MS-DOS
+command line interprets this character differently and returns the item as a
+literal ampersand (&amp;) character in the string.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the SourceSafe Explorer. create a project $/My&amp;Project.
+
+2. Notice the ampersand has changed to an underscore under the P in MyProject.
+  This appears to be a standard Windows shortcut.
+
+3. Press CTRL+P. Notice that nothing happens. The shortcut for MyProject is not
+  active even though there appears to be a valid shortcut defined.
+
+4. Open an MS-DOS command window.
+
+5. Type the following on the command line:
+
+  " SS DIR $/ " (without the quotation marks)
+
+6. Notice that the MyProject project shows up as My&amp;Project on the command
+  line.
+
+This might occur on files as well as projects. The file may be renamed from the
+Visual SourceSafe Explorer to eliminate this problem.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

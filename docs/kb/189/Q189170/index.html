@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189170/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189170/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189170/","publisher":null,"image":null,"headline":"Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189170-howto-package-hiwordloword-values-into-a-long-parameter">Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q189170</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbGrpDSVB</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">11</span><span class="p">-</span><span class="n">JAN</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Learning</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">For</span> <span class="n">some</span> <span class="n">API</span> <span class="n">functions</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">SendMessage</span> <span class="k">or</span> <span class="n">PostMessage</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="k">to</span>
+<span class="k">package</span> <span class="n">two</span> <span class="n">short</span> <span class="k">Integer</span> <span class="n">values</span> <span class="n">into</span> <span class="n">a</span> <span class="n">Long</span> <span class="n">variable</span> <span class="k">to</span> <span class="n">pass</span> <span class="n">them</span> <span class="k">as</span> <span class="n">a</span> <span class="n">single</span>
+<span class="n">parameter</span><span class="p">.</span> <span class="n">This</span> <span class="n">article</span> <span class="n">demonstrates</span> <span class="n">how</span> <span class="k">to</span> <span class="k">package</span> <span class="n">such</span> <span class="n">Integers</span> <span class="k">and</span> <span class="n">how</span> <span class="k">to</span>
+<span class="n">unpack</span> <span class="n">them</span> <span class="k">if</span> <span class="n">necessary</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">trick</span> <span class="k">to</span> <span class="n">packing</span> <span class="n">values</span> <span class="n">is</span> <span class="n">bit</span> <span class="n">shifting</span><span class="p">.</span> <span class="n">Because</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">does</span> <span class="k">not</span>
+<span class="n">provide</span> <span class="n">bit</span> <span class="n">shift</span> <span class="n">operators</span> <span class="k">to</span> <span class="n">use</span><span class="p">,</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span> <span class="k">do</span> <span class="n">things</span> <span class="n">the</span> <span class="n">old</span> <span class="n">fashioned</span> <span class="n">way</span><span class="p">;</span>
+<span class="n">through</span> <span class="n">multiplication</span><span class="p">.</span> <span class="k">To</span> <span class="n">make</span> <span class="n">an</span> <span class="k">Integer</span> <span class="n">the</span> <span class="n">high</span> <span class="n">word</span> <span class="n">for</span> <span class="n">a</span> <span class="n">Long</span> <span class="n">value</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">need</span> <span class="k">to</span> <span class="n">multiply</span> <span class="n">it</span> <span class="n">by</span> <span class="p">&amp;</span><span class="n">H10000</span><span class="p">.</span> <span class="n">This</span> <span class="n">has</span> <span class="n">the</span> <span class="n">effect</span> <span class="k">of</span> <span class="n">shifting</span> <span class="n">the</span> <span class="n">bit</span>
+<span class="n">values</span> <span class="m">16</span><span class="p">-</span><span class="n">bits</span> <span class="p">(</span><span class="m">2</span><span class="p">-</span><span class="n">bytes</span><span class="p">)</span> <span class="k">to</span> <span class="n">the</span> <span class="n">left</span><span class="p">,</span> <span class="n">making</span> <span class="n">room</span> <span class="n">for</span> <span class="n">the</span> <span class="n">low</span> <span class="n">word</span> <span class="n">value</span> <span class="n">you</span>
+<span class="n">want</span> <span class="k">to</span> <span class="n">add</span><span class="p">.</span>
+
+<span class="n">Before</span> <span class="n">you</span> <span class="n">can</span> <span class="n">add</span> <span class="n">the</span> <span class="n">low</span> <span class="n">word</span> <span class="n">value</span><span class="p">,</span> <span class="n">however</span><span class="p">,</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span> <span class="n">make</span> <span class="n">an</span> <span class="n">adjustment</span><span class="p">.</span>
+<span class="n">Remember</span> <span class="n">that</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="k">Integer</span> <span class="n">types</span> <span class="n">are</span> <span class="n">signed</span> <span class="n">values</span><span class="p">,</span> <span class="n">but</span> <span class="n">the</span> <span class="n">low</span> <span class="n">word</span>
+<span class="n">value</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">be</span> <span class="n">unsigned</span> <span class="k">if</span> <span class="n">you</span> <span class="n">plan</span> <span class="k">to</span> <span class="n">add</span> <span class="n">it</span> <span class="k">to</span> <span class="n">your</span> <span class="n">high</span> <span class="n">word</span> <span class="n">value</span><span class="p">.</span> <span class="k">To</span>
+<span class="n">make</span> <span class="n">sure</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">treats</span> <span class="n">the</span> <span class="n">low</span> <span class="n">word</span> <span class="k">as</span> <span class="n">an</span> <span class="n">unsigned</span> <span class="k">integer</span><span class="p">,</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span>
+<span class="n">perform</span> <span class="n">a</span> <span class="n">bitwise</span> <span class="s2">"And"</span> <span class="n">on</span> <span class="n">the</span> <span class="n">value</span> <span class="n">using</span> <span class="p">&amp;</span><span class="n">HFFFF</span><span class="p">&amp;</span> <span class="k">as</span> <span class="n">a</span> <span class="n">mask</span><span class="p">.</span> <span class="k">In</span> <span class="n">effect</span><span class="p">,</span>
+<span class="n">this</span> <span class="n">saves</span> <span class="n">the</span> <span class="n">value</span> <span class="k">as</span> <span class="n">a</span> <span class="n">Long</span> <span class="k">integer</span> <span class="k">with</span> <span class="n">the</span> <span class="n">high</span> <span class="p">(</span><span class="n">signed</span><span class="p">)</span> <span class="n">bit</span> <span class="n">cleared</span> <span class="n">but</span>
+<span class="n">keeps</span> <span class="n">the</span> <span class="n">original</span> <span class="k">Integer</span><span class="s1">'s bit value preserved.
+
+With this in mind, here is a Visual Basic function that creates a Long value from
+two Integers:
+
+     Function MakeDWord(LoWord As Integer, HiWord As Integer) As Long
+        MakeDWord = (HiWord * &amp;H10000) Or (LoWord And &amp;HFFFF&amp;)
+     End Function
+
+Only a few API functions require that you unpack a double word into two short
+Integers. If you find that you need to perform such a task, you can use
+conversion routines similar to these:
+
+     Function LoWord(DWord As Long) As Integer
+        If DWord And &amp;H8000&amp; Then '</span> <span class="p">&amp;</span><span class="n">H8000</span><span class="p">&amp;</span> <span class="p">=</span> <span class="p">&amp;</span><span class="n">H00008000</span>
+           <span class="n">LoWord</span> <span class="p">=</span> <span class="n">DWord</span> <span class="k">Or</span> <span class="p">&amp;</span><span class="n">HFFFF0000</span>
+        <span class="k">Else</span>
+           <span class="n">LoWord</span> <span class="p">=</span> <span class="n">DWord</span> <span class="k">And</span> <span class="p">&amp;</span><span class="n">HFFFF</span><span class="p">&amp;</span>
+        <span class="k">End</span> <span class="k">If</span>
+     <span class="k">End</span> <span class="k">Function</span>
+
+     <span class="k">Function</span> <span class="n">HiWord</span><span class="p">(</span><span class="n">DWord</span> <span class="k">As</span> <span class="n">Long</span><span class="p">)</span> <span class="k">As</span> <span class="k">Integer</span>
+        <span class="n">HiWord</span> <span class="p">=</span> <span class="p">(</span><span class="n">DWord</span> <span class="k">And</span> <span class="p">&amp;</span><span class="n">HFFFF0000</span><span class="p">)</span> <span class="p">\</span> <span class="p">&amp;</span><span class="n">H10000</span>
+     <span class="k">End</span> <span class="k">Function</span>
+
+<span class="n">Both</span> <span class="n">these</span> <span class="n">functions</span> <span class="n">simply</span> <span class="n">mask</span> <span class="n">the</span> <span class="n">portion</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Long</span> <span class="k">integer</span> <span class="n">they</span> <span class="n">want</span> <span class="k">to</span>
+<span class="n">return</span> <span class="n">using</span> <span class="n">the</span> <span class="n">bitwise</span> <span class="s2">"And"</span> <span class="n">operator</span><span class="p">.</span> <span class="n">The</span> <span class="n">HiWord</span> <span class="k">function</span> <span class="n">shifts</span> <span class="n">this</span> <span class="n">value</span>
+<span class="n">right</span> <span class="m">16</span><span class="p">-</span><span class="n">bits</span> <span class="n">by</span> <span class="n">dividing</span> <span class="n">it</span> <span class="n">by</span> <span class="p">&amp;</span><span class="n">H10000</span><span class="p">.</span> <span class="n">The</span> <span class="n">LoWord</span> <span class="k">function</span> <span class="n">can</span> <span class="n">simply</span>
+<span class="n">return</span> <span class="n">the</span> <span class="n">value</span> <span class="k">of</span> <span class="n">the</span> <span class="s2">"And"</span> <span class="n">operation</span> <span class="k">in</span> <span class="n">most</span> <span class="n">cases</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">because</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="n">Integers</span> <span class="n">are</span> <span class="n">signed</span><span class="p">,</span> <span class="n">any</span> <span class="n">low</span> <span class="n">word</span> <span class="n">value</span> <span class="n">that</span> <span class="n">has</span> <span class="n">its</span> <span class="n">high</span> <span class="n">bit</span> <span class="k">set</span> <span class="n">must</span> <span class="n">be</span>
+<span class="n">converted</span> <span class="n">back</span> <span class="n">into</span> <span class="n">a</span> <span class="n">negative</span> <span class="n">value</span> <span class="n">using</span> <span class="n">the</span> <span class="s2">"Or"</span> <span class="n">operator</span> <span class="k">and</span> <span class="n">a</span> <span class="n">mask</span> <span class="k">of</span>
+<span class="p">&amp;</span><span class="n">HFFFF0000</span><span class="p">.</span>
+
+<span class="n">Sample</span> <span class="n">Code</span>
+<span class="p">-----------</span>
+
+<span class="m">1.</span> <span class="n">Open</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Standard</span> <span class="n">EXE</span> <span class="n">project</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">.</span> <span class="n">Form1</span> <span class="n">is</span> <span class="n">created</span> <span class="n">by</span> <span class="n">default</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">CommandButton</span> <span class="k">to</span> <span class="n">the</span> <span class="n">lower</span><span class="p">-</span><span class="n">right</span> <span class="n">corner</span> <span class="k">of</span> <span class="n">Form1</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span> <span class="k">to</span> <span class="n">the</span> <span class="n">General</span> <span class="n">Declaration</span> <span class="n">section</span> <span class="n">for</span> <span class="n">Form1</span><span class="p">:</span>
+
+        <span class="n">Private</span> <span class="n">Declare</span> <span class="k">Function</span> <span class="n">SendMessage</span> <span class="n">Lib</span> <span class="s2">"user32"</span> <span class="n">_</span>
+           <span class="n">Alias</span> <span class="s2">"SendMessageA"</span> <span class="p">(</span><span class="n">ByVal</span> <span class="n">hwnd</span> <span class="k">As</span> <span class="n">Long</span><span class="p">,</span> <span class="n">_</span>
+                                 <span class="n">ByVal</span> <span class="n">wMsg</span> <span class="k">As</span> <span class="n">Long</span><span class="p">,</span> <span class="n">_</span>
+                                 <span class="n">ByVal</span> <span class="n">wParam</span> <span class="k">As</span> <span class="n">Long</span><span class="p">,</span> <span class="n">_</span>
+                                 <span class="n">ByVal</span> <span class="n">lParam</span> <span class="k">As</span> <span class="n">Long</span><span class="p">)</span> <span class="k">As</span> <span class="n">Long</span>
+
+        <span class="n">Private</span> <span class="n">Const</span> <span class="n">MK_LBUTTON</span> <span class="p">=</span> <span class="p">&amp;</span><span class="n">H1</span>
+        <span class="n">Private</span> <span class="n">Const</span> <span class="n">WM_LBUTTONDOWN</span> <span class="p">=</span> <span class="p">&amp;</span><span class="n">H201</span>
+
+        <span class="k">Function</span> <span class="n">MakeDWord</span><span class="p">(</span><span class="n">LoWord</span> <span class="k">As</span> <span class="k">Integer</span><span class="p">,</span> <span class="n">HiWord</span> <span class="k">As</span> <span class="k">Integer</span><span class="p">)</span> <span class="k">As</span> <span class="n">Long</span>
+           <span class="n">MakeDWord</span> <span class="p">=</span> <span class="p">(</span><span class="n">HiWord</span> <span class="p">*</span> <span class="p">&amp;</span><span class="n">H10000</span><span class="p">)</span> <span class="k">Or</span> <span class="p">(</span><span class="n">LoWord</span> <span class="k">And</span> <span class="p">&amp;</span><span class="n">HFFFF</span><span class="p">&amp;)</span>
+        <span class="k">End</span> <span class="k">Function</span>
+
+        <span class="n">Private</span> <span class="n">Sub</span> <span class="n">Form_MouseDown</span><span class="p">(</span><span class="n">Button</span> <span class="k">As</span> <span class="k">Integer</span><span class="p">,</span> <span class="n">Shift</span> <span class="k">As</span> <span class="k">Integer</span><span class="p">,</span> <span class="n">_</span>
+        <span class="n">X</span> <span class="k">As</span> <span class="n">Single</span><span class="p">,</span> <span class="n">Y</span> <span class="k">As</span> <span class="n">Single</span><span class="p">)</span>
+           <span class="n">Form1</span><span class="p">.</span><span class="n">Cls</span>
+           <span class="n">Form1</span><span class="p">.</span><span class="n">Print</span> <span class="s2">"Button Click Event Fired"</span>
+           <span class="n">Form1</span><span class="p">.</span><span class="n">Print</span> <span class="s2">"Position X:"</span> <span class="p">&amp;</span> <span class="n">Str</span><span class="p">$(</span><span class="n">X</span> <span class="p">/</span> <span class="n">Screen</span><span class="p">.</span><span class="n">TwipsPerPixelX</span><span class="p">)</span>
+           <span class="n">Form1</span><span class="p">.</span><span class="n">Print</span> <span class="s2">"Position Y:"</span> <span class="p">&amp;</span> <span class="n">Str</span><span class="p">$(</span><span class="n">Y</span> <span class="p">/</span> <span class="n">Screen</span><span class="p">.</span><span class="n">TwipsPerPixelY</span><span class="p">)</span>
+        <span class="k">End</span> <span class="n">Sub</span>
+
+        <span class="n">Private</span> <span class="n">Sub</span> <span class="n">Command1_Click</span><span class="p">()</span>
+           <span class="n">Dim</span> <span class="n">nMousePosition</span> <span class="k">As</span> <span class="n">Long</span>
+           <span class="s1">' nMousePosition stores the x (hiword) and y (loword) values
+           '</span> <span class="k">of</span> <span class="n">the</span> <span class="n">mouse</span> <span class="n">cursor</span> <span class="k">as</span> <span class="n">measured</span> <span class="k">in</span> <span class="n">pixels</span><span class="p">.</span>
+
+           <span class="n">Let</span> <span class="n">nMousePosition</span> <span class="p">=</span> <span class="n">MakeDWord</span><span class="p">(</span><span class="m">16</span><span class="p">,</span> <span class="m">18</span><span class="p">)</span>
+           <span class="n">Call</span> <span class="n">SendMessage</span><span class="p">(</span><span class="n">Me</span><span class="p">.</span><span class="n">hwnd</span><span class="p">,</span> <span class="n">WM_LBUTTONDOWN</span><span class="p">,</span> <span class="n">MK_LBUTTON</span><span class="p">,</span> <span class="n">_</span>
+           <span class="n">nMousePosition</span><span class="p">)</span>
+        <span class="k">End</span> <span class="n">Sub</span>
+
+<span class="m">4.</span> <span class="n">Press</span> <span class="n">the</span> <span class="n">F5</span> <span class="n">key</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">project</span><span class="p">.</span>
+
+  <span class="n">You</span> <span class="n">will</span> <span class="n">notice</span> <span class="n">that</span> <span class="n">anywhere</span> <span class="n">you</span> <span class="n">click</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Form</span><span class="p">,</span> <span class="n">the</span> <span class="n">values</span> <span class="k">of</span> <span class="n">the</span> <span class="n">mouse</span>
+  <span class="n">cursor</span> <span class="n">are</span> <span class="n">displayed</span> <span class="p">(</span><span class="k">in</span> <span class="n">pixels</span><span class="p">).</span> <span class="n">When</span> <span class="n">you</span> <span class="n">click</span> <span class="n">the</span> <span class="n">CommandButton</span><span class="p">,</span> <span class="n">the</span>
+  <span class="n">SendMessage</span> <span class="n">call</span> <span class="n">simulates</span> <span class="n">a</span> <span class="n">mouse</span> <span class="n">click</span> <span class="n">at</span> <span class="n">the</span> <span class="n">location</span> <span class="m">16</span> <span class="n">pixels</span> <span class="n">right</span> <span class="k">of</span>
+  <span class="n">the</span> <span class="n">left</span> <span class="n">side</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Form</span> <span class="k">and</span> <span class="m">18</span> <span class="n">pixels</span> <span class="n">down</span> <span class="k">from</span> <span class="n">the</span> <span class="n">top</span><span class="p">,</span> <span class="n">causing</span> <span class="n">the</span>
+  <span class="n">Form_MouseDown</span> <span class="n">event</span> <span class="k">to</span> <span class="n">fire</span><span class="p">.</span>
+
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q112651</span> <span class="n">HOWTO</span><span class="p">:</span> <span class="n">Mimic</span> <span class="n">HIWORD</span><span class="p">,</span> <span class="n">LOWORD</span><span class="p">,</span> <span class="n">HIBYTE</span><span class="p">,</span> <span class="n">LOBYTE</span> <span class="n">C</span> <span class="n">Macros</span> <span class="k">in</span> <span class="n">VB</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">kbDSupport</span> <span class="n">kbDSD</span> <span class="n">kbVBp</span> <span class="n">kbVBp500</span> <span class="n">kbAPI</span> <span class="n">kbSDKWin32</span> <span class="n">kbVBp600</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbGrpDSVB</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVBSearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbZNotKeyword6</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbVB500Search</span> <span class="n">kbVB600Search</span> <span class="n">kbVBA500</span> <span class="n">kbVBA600</span> <span class="n">kbVB500</span> <span class="n">kbVB600</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

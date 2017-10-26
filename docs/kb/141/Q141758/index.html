@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141758/","publisher":null,"image":null,"headline":"Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141758-howto-how-to-add-tooltips-for-controls-to-an-mfc-modal-dialog-b">Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141758
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbcode kbDlg kbMFC kbToolTip KbUIDesign kbVC210 kbVC220 kbVC400 kbGrpDSMFCATL kbDialog
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To make the CToolTipCtrl class work correctly, you must call the
+CToolTipCtrl::RelayEvent() function. This makes it possible for the mouse
+messages to be passed to the tooltip control.
+
+For a non-modal dialog box window in an MFC application, use the window's
+CWnd::PreTranslateMessage() function to call CToolTipsCtrl::RelayEvent().
+However, for a modal dialog box in MFC versions prior to 4.0, the
+CDialog::PreTranslateMessage() function is not called because modal dialog boxes
+have their own message loops.
+
+In versions of MFC 4.0 and later, this is not a problem because of changes to the
+implementation of DoModal. Therefore, to use CToolTipCtrl in a modal dialog box,
+you need a different approach for versions prior to 4.0. This article gives you
+step-by-step example that shows how to use the CToolTipCtrl class in a MFC modal
+dialog box for 4.0 and prior versions.
+
+MORE INFORMATION
+================
+
+Step-by-Step Examples
+---------------------
+
+The following procedures generate a default MFC skeleton application and add
+tooltips to the OK button on the About dialog box and the dialog box itself.
+
+For Versions of MFC 4.0 or Later Use These Steps:
+
+1. Use the Appwizard in Visual C++ to generate an MFC application. Call it
+  Tooltips, and use all the Appwizard default settings.
+
+2. Use ClassWizard to add a PreTranslateMessage override to CAboutDialog as
+  follows:
+
+     CAboutDialog::PreTranslateMessage(MSG* pMsg)
+     {
+          if (NULL != m_pToolTip)
+              m_pToolTip-&gt;RelayEvent(pMsg);
+
+          return CDialog::PreTranslateMessage(pMsg);
+     }
+
+3. Use ClassWizard to add a member variable for the OK button in the CAboutDlg
+  class, and call it m_btOK. Also, add a m_pToolTip pointer to a CToolTipCtrl
+  object:
+
+     class CAboutDlg : public CDialog
+     {
+     public:
+         CAboutDlg();
+
+         // Dialog Data
+         //{{AFX_DATA(CAboutDlg)
+         enum { IDD = IDD_ABOUTBOX };
+         CButton   m_btOK;
+         //}}AFX_DATA
+
+         CToolTipCtrl* m_pToolTip;
+
+         //...
+     };
+
+4. Add code to the CAboutDlg class constructor and destructor to initialize and
+  release the tooltip object. You might also need to add a default destructor
+  first:
+
+     CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
+     {
+         m_pToolTip = NULL;
+     }
+
+     CAboutDlg::~CAboutDlg()
+     {
+         delete m_pToolTip;
+     }
+
+5. Override the OnInitDialog() function of the CAboutDlg class to set up the
+  tooltip control.
+
+     BOOL CAboutDlg::OnInitDialog()
+     {
+        CDialog::OnInitDialog();
+
+         //Set up the tooltip
+         m_pToolTip = new CToolTipCtrl;
+         if(!m_pToolTip-&gt;Create(this))
+         {
+             TRACE("Unable To create ToolTip\n");
+             return TRUE;
+         }
+
+         if(m_pToolTip-&gt;AddTool(this, "About Box"))
+         {
+             TRACE("Unable to add Dialog to the tooltip\n");
+         }
+
+         if (m_pToolTip-&gt;AddTool(&amp;m_btOK,"OK Button"))
+         {
+             TRACE("Unable to add OK button to the tooltip\n");
+         }
+
+         m_pToolTip-&gt;Activate(TRUE);
+
+         return TRUE;
+     }
+
+6. Rebuild the application, and bring up the About dialog box, you will see the
+  tooltips.
+
+For Versions of MFC Prior to 4.0 Use These Steps:
+
+1. Use the Appwizard in Visual C++ to generate an MFC application. Call it
+  Tooltips, and use all the Appwizard default settings.
+
+2. Include the &lt;Afxcmn.h&gt; header file in the Stdafx.h file.
+
+3. Add the following member variables to the CTooktipsApp class in the
+  Tooltips.h file:
+
+     class CTooltipsApp : public CWinApp
+     {
+         //...
+     public:
+         HWND    m_hwndDialog;
+         CToolTipCtrl*   m_gpToolTip;
+
+         //...
+     };
+
+4. Initialize the two variables in the application's constructor to NULL:
+
+     CTooltipsApp::CTooltipsApp()
+     {
+         m_hwndDialog = NULL;
+         m_gpToolTip = NULL;
+     }
+
+5. Override the CTooltipsApp::ProcessMessageFilter() function as follows:
+
+     BOOL CTooltipsApp::ProcessMessageFilter(int code, LPMSG lpMsg)
+     {
+         if (m_hwndDialog != NULL)
+             if (lpMsg-&gt;hwnd == m_hwndDialog ||
+                 ::IsChild(m_hwndDialog, lpMsg-&gt;hwnd))
+             {
+                 if (NULL != m_gpToolTip)
+                     m_gpToolTip-&gt;RelayEvent(lpMsg);
+             }
+             return CWinApp::ProcessMessageFilter(code, lpMsg);
+     }
+
+6. Use ClassWizard to add a member variable for the OK button in the CAboutDlg
+  class, and call it m_btOK. Also, add a m_pToolTip pointer to a CToolTipCtrl
+  object:
+
+     class CAboutDlg : public CDialog
+     {
+     public:
+         CAboutDlg();
+
+         // Dialog Data
+         //{{AFX_DATA(CAboutDlg)
+         enum { IDD = IDD_ABOUTBOX };
+         CButton   m_btOK;
+         //}}AFX_DATA
+
+         CToolTipCtrl* m_pToolTip;
+
+         //...
+     };
+
+7. Add code to the CAboutDlg class constructor and destructor to initialize and
+  release the tooltip object. You might also need to add a default destructor
+  first:
+
+     CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
+     {
+         m_pToolTip = NULL;
+     }
+
+     CAboutDlg::~CAboutDlg()
+     {
+         delete m_pToolTip;
+     }
+
+8. Override the OnInitDialog() function of the CAboutDlg class to pass the
+  dialog's handle to the application:
+
+     BOOL CAboutDlg::OnInitDialog()
+     {
+         CDialog::OnInitDialog();
+
+         ((CTooltipsApp*)AfxGetApp())-&gt;m_hwndDialog=m_hWnd;
+
+         if (!m_pToolTip)
+         {
+             m_pToolTip = new CToolTipCtrl;
+             if(!m_pToolTip-&gt;Create(this))
+            {
+                 TRACE("Unable To create ToolTip\n");
+                 return TRUE;
+           }
+
+             ((CTooltipsApp*)AfxGetApp())-&gt;m_gpToolTip = m_pToolTip;
+
+             if(m_pToolTip-&gt;AddTool(this, "About Box"))
+             {
+                 TRACE("Unable to add Dialog to the tooltip\n");
+             }
+
+             if (m_pToolTip-&gt;AddTool(&amp;m_btOK,"OK Button"))
+             {
+                 TRACE("Unable to add OK button to the tooltip\n");
+             }
+
+             m_pToolTip-&gt;Activate(TRUE);
+         }
+
+        return TRUE;//return TRUE unless you set the focus to a control
+                    //EXCEPTION: OCX Property Pages should return FALSE
+      }
+
+9. Override the PostNcDestroy() function of the CAboutDlg class to reset the
+  variables in the application class:
+
+     void CAboutDlg::PostNcDestroy( )
+     {
+         CDialog::PostNcDestroy();
+
+         ((CToolTipsApp*)AfxGetApp())-&gt;m_hwndDialog= NULL;
+         ((CToolTipsApp*)AfxGetApp())-&gt;m_gpToolTip= NULL;
+     }
+
+10. Rebuild the application, and bring up the About dialog box, you will see the
+  tooltips.
+
+Additional query words: 2.10 2.20 3.10 3.20 4.00
+
+======================================================================
+Keywords          : kbcode kbDlg kbMFC kbToolTip KbUIDesign kbVC210 kbVC220 kbVC400 kbGrpDSMFCATL kbDialog 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.1,2.2,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

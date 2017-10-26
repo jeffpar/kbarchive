@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257547/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257547/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257547/","publisher":null,"image":null,"headline":"Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257547-event-id-204-in-event-log-and-asp-response-is-not-returned">Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257547
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbDSupport kbiis500
+Last Modified: 31-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to access an Active Server Pages (ASP) page on an Internet
+Information Services (IIS) 5.0 server, the server does not appear to return a
+response to the client's browser.
+
+In addition, the following event is logged in the system event log:
+
+  Event Type: Error
+  Event Source: WAM
+  Event Category: None
+  Event ID: 204
+  Date: 10/1/2000
+  Time: 2:52:48 PM
+  User: N/A
+  Computer: MyComputerName
+  Description:
+  The HTTP server encountered an unhandled exception while processing the ISAPI
+  Application ' IISRTL!ALLOC_CACHE_HANDLER::Alloc(void) + 0x7
+  ISATQ!_AtqAddAsyncHandle@24 + 0x1C ISATQ!CDirMonitor::Monitor(class
+  CDirMonitorEntry *,char const *,int,unsigned long) + 0xA8 asp + 0x879B +
+  0xD86A3FBE '.
+
+CAUSE
+=====
+
+If the Microsoft Winsock Proxy Client is installed, the IWAM_computername user
+account may not have access permissions to the \Winnt\System32\Wspwsp.dll file.
+
+RESOLUTION
+==========
+
+To resolve this problem, give Read permissions to the IWAM_computername account
+on the \Winnt\System32\Wspwsp.dll file.
+
+WORKAROUND
+==========
+
+
+Additional query words: iis 5 win2k iis5.0 204
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

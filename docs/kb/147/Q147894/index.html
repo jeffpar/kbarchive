@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147894/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147894/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147894/","publisher":null,"image":null,"headline":"Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147894-bug-spy-causes-exception-in-owner-drawn-combo-box">Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147894
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Spy++ with message logging on an owner-drawn combo box results in one of
+the following errors:
+
+  First-chance exception in OWNCOMBO.exe (USER32.DLL): 0xC0000005: Access
+  Violation.
+
+  -or-
+
+  First-chance exception in OWNCOMBO.exe (KERNEL32.DLL): 0xC0000005: Access
+  Violation.
+
+This exception is printed out in the Visual C++ debug output window. This happens
+both on Windows 95 and Windows NT version 3.51.
+
+RESOLUTION
+==========
+
+This exception is caused by the Spy++ installed Windows hook function. It
+doesn't cause the program to quit, so no action should be necessary.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In the sample used to produce this error, the owner-drawn combo box did not have
+the style CBS_HASSTRINGS. A 32-bit value was being passed to the combo box by
+way of CB_ADDSTRING. This appears to cause the exception when the Spy++ message
+logging is turned on.
+
+This error did not occur in previous versions of Spy++.
+
+Steps to Reproduce Error
+------------------------
+
+1. Load the project of the OWNCOMBO sample as provided with Visual C++ 4.0.
+
+2. On the Build menu, click Rebuild All to get a debug executable.
+
+3. Start Owncombo.exe by pressing F5.
+
+4. On the View menu, click Output in Visual C++ 4.0.
+
+5. Start Spy++ and move its window as well as OWNCOMBO's window so that MSDEV's
+  output window is visible.
+
+6. In OWNCOMBO, on the Examples menu, click Owner Draw Combo Box.
+
+7. In Spy++, on the Spy menu, click Find Window.
+
+8. Use the Finder Tool, and drag it over the combo box in OWNCOMBO.
+
+9. In Spy++, under Show, click Messages, and then click OK.
+
+10. In OWNCOMBO, add a color to the combo box (either Red or Blue).
+
+Additional query words: kbVC400bug 4.00 4.10 4.20
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

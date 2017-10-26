@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200730/","publisher":null,"image":null,"headline":"Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200730-sms-netware-clients-do-not-show-netbios-machine-name">Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200730
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup kbsms200 kbsms120 kbsms120bug kbsmsAdmin smsadmin smssetup
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 1.2 SP1, 1.2 SP2, 1.2 SP3, 1.2 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Novell NetWare uses IPX as the default network protocol. NetWare does not use
+NetBIOS machine names for client identification purposes; NetWare uses the ID of
+the user who is logged on and the computer (MAC) address of the Network
+Information Center instead. Consequently, it is possible to have duplicate
+machine names on the network in a NetWare environment. Therefore, when a NetWare
+client computer becomes a Systems Management Server client, the ID data that is
+used is indeed the MAC address.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server version 1.2
+service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date         Time         Size     File name    Platform
+  ---------------------------------------------------------
+  06/07/2001   03:45 P.M.   8,1012   Invdos.exe   Intel
+
+NOTE: Because of file dependencies, the most recent fix or feature that contains
+the above files may also contain additional files.
+
+
+WORKAROUND
+==========
+
+To work around this problem and have the computers report their NetBIOS machine
+names to the Systems Management Server administrator console, use one of the
+following methods:
+
+- Have the clients log on to Microsoft Windows NT, or LAN Manager Domain
+  controller by using a NetBIOS-compatible transport such as TCP/IP or NetBEUI.
+
+- For Microsoft Windows 3.1, Microsoft Windows for Workgroups 3.11, Microsoft
+  Windows 95, or Microsoft Windows 98 clients, use the /M switch for Invdos.exe
+  to specify the client's machine identifier (machine name). If the fix that
+  this article describes is not applied, the user must manually enter the
+  machine name at the time that Invdos.exe is run (during logon) to use the /M
+  switch. The fix that this article describes updates the /M switch
+  functionality to optionally allow a user to specify a machine identifier on
+  the command line for Invdos.exe. To specify a machine name on the command
+  line, append the machine name that you want to use to the /M switch when you
+  call Invdos.exe. This allows you to use an environment variable that contains
+  a machine-specific identifier to override the default SMS identifier
+  convention (MAC address).
+
+  NOTE: When you use this method to override the default naming convention, make
+  sure that each computer receives a unique identifier to prevent duplication
+  in the SMS database.
+
+  The following command line is the correct usage:
+
+  INVDOS /M&lt;machine_name&gt;
+
+  NOTE: Do not include a space between the /M switch and the machine name that
+  you want to use.
+
+  The following code is sample usage in SMSLS script that identifies the client
+  with the value in the environment variable "MACHINENAME" on that client:
+
+  setls%SMS_OS% -m:E -i -p:%SMS_BIN%\INVDOS.EXE -pa:/m%MACHINENAME% -pa:/l:%%SMS_UNC%%\ -pa:/i -pa:%SMS_VERBOSE%
+
+  NOTE: The use of the /pa: switch is required for the Setls.exe command line to
+  indicate to Setls that the data that follows is an argument for Invdos.exe,
+  and not for Setls itself. For additional information about the Setls.exe or
+  Invdos.exe command-line options, see chapter 2 of the SMS Resource Guide.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+MORE INFORMATION
+================
+
+The fix that this article describes updates the /M switch functionality to allow
+a machine identifier to be specified optionally on the command line for
+Invdos.exe
+
+Additional query words: prodsms NIC
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbsms200 kbsms120 kbsms120bug kbsmsAdmin smsadmin smssetup 
+Technology        : kbSMSSearch kbSMS120 kbSMS120SP2 kbSMS120SP3 kbSMS120SP4 kbSMS120SP1
+Version           : :1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

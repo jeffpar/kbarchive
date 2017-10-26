@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131865/","publisher":null,"image":null,"headline":"Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131865-smc-elite-ultra-nic-causes-unix-computers-to-disconnect-tcpip">Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131865
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51; :
+Operating System(s): 
+Keyword(s): kb3rdparty kbhw kbnetwork kbHardware
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft TCP/IP-32 for Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+TCP/IP connections between two UNIX computers or between a Microsoft network
+computer and UNIX computer are lost.
+
+This happens on a network with both UNIX computers and a computer running a
+Microsoft protected mode TCP/IP protocol stack (including TCP/IP-32 versions
+3.11, 3.11a, and 3.11b and Windows NT versions 3.5 and 3.51) and where the
+Microsoft network computer is using the SMC Elite Ultra network interface card
+(NIC).
+
+CAUSE
+=====
+
+The SMC Elite Ultra NIC incorrectly passes up ethernet packets addressed to
+other computers. This causes the Microsoft TCP/IP protocol stack to send an ICMP
+Host Unreachable message back to the source computer. Some UNIX TCP/IP stacks
+disconnect when they receive this ICMP packet.
+
+WORK AROUND
+-----------
+
+To work around the SMC hardware problem, Microsoft has removed the code from the
+protected mode TCP/IP stack which sends the ICMP Host Unreachable message under
+these circumstances.
+
+Versions of the Windows NT version 3.51 file, TCPIP.SYS, date stamped 6/14/95 or
+later incorporate the above workaround.
+
+Versions of the Windows for Workgroups TCP/IP-32 file, VIP.386, date stamped
+7/19/95 or later incorporate the above workaround.
+
+This workaround is also included in the release version of Windows 95.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem while using Windows NT versions 3.5
+and 3.51 and Windows for Workgroups TCP/IP-32 versions 3.11, 3.11a, and 3.11b.
+
+Windows NT 3.51
+---------------
+
+This problem has been corrected in the latest U.S. Service Pack for Windows NT
+version 3.51. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Windows NT 3.5 and TCP/IP-32 3.11x
+----------------------------------
+
+A workaround to this problem is in development, but has not been regression-
+tested and may be destabilizing in production environments. Microsoft does not
+recommend implementing this workaround at this time. This workaround is
+available from Microsoft Product Support Services as well as electronically by
+"anonymous" ftp at:
+
+  ftp://ftp.microsoft.com:/bussys/winnt/winnt-unsup-ed/fixes/nt35/icmpfix
+
+  -and-
+
+  ftp://ftp.microsoft.com:/bussys/clients/wfw/tcpip32-fixes/icmpfix
+
+
+The Elite Ultra is manufactured by SMC, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodnt sniper
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbnetwork kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbZNotKeyword3
+Version           : winnt:3.5,3.51; :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

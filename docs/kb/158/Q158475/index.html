@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158475/","publisher":null,"image":null,"headline":"Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158475-howto-find-missing-versions-in-the-project-history-dialog-box">Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158475
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When viewing the history dialog box for a file, some versions may appear to be
+missing. This article describes four scenarios that could cause this behavior.
+
+MORE INFORMATION
+================
+
+Whenever a file is modified in Visual SourceSafe (checked in, branched, labeled
+at the file level, etc.), a new log entry for that file is created. Each of
+these log entries is represented as a version in the history dialog box for the
+file. When viewing the history of a file, these version numbers are displayed in
+the left-most column of the window. Sometimes a version appears to be missing.
+The following four scenarios describe conditions that could cause this to
+happen:
+
+1. Older versions of Visual SourceSafe created a log entry for the Undo Check
+  Out command. By design, this log entry is ignored by the History of Project
+  dialog box. If you upgraded your database from an older version of
+  SourceSafe, files that were designated "Uncheckout" will display missing
+  version numbers. Visual SourceSafe versions 4.0 and higher do not create a
+  log entry for the Undo Check Out action.
+
+2. If you apply a label to a file, a log entry for that label is created. If you
+  delete the label (by reapplying the same label later, for example), the log
+  entry (and thus, a version) representing the label is removed. As a result,
+  the version will appear to be missing in the History of Project dialog box.
+
+3. Under some conditions, when you run the ANALYZE utility with the -f option, a
+  log entry (and thus, a version) is removed. ANALYZE will only do this if the
+  log entry is damaged beyond repair. If the damaged log entry represents a
+  label, the file itself will remain unchanged. However, if the log entry
+  represents a checked-in file, previous versions of the file may not be
+  recoverable.
+
+  NOTE: Under this scenario, if the log entry is damaged beyond repair, previous
+  versions of the file are unrecoverable anyway so it doesn't matter if ANALYZE
+  removes the log entry.
+
+4. If a file is checked in from a machine whose internal clock, when performing
+  the check in, is set to a time and date earlier than when the file was
+  originally added to SourceSafe, its version will not be displayed by the Show
+  History command in the Visual SourceSafe Explorer. In this scenario, the log
+  entry is created and the file differences are saved. The following eight-step
+  procedure describes how to reproduce the behavior described in this scenario.
+
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Set up two machines that are connected to a common Visual SourceSafe database
+  on a server.
+
+2. Set the clock on machine number 1 to the current date and time.
+
+3. Set the clock on machine number 2 to a date and time three or more days
+  behind machine number 1. If a file is checked in from a machine whose
+  internal clock, when performing the check in, is set to a time and date
+  earlier than when the file was originally added to SourceSafe, its version
+  will not be displayed by the Show History command in the Visual SourceSafe
+  Explorer.
+
+4. Add a file to the database using the Visual SourceSafe Explorer on machine
+  number 1. View this file's history and note that there is one item displayed,
+  version 1.
+
+5. Check the file out from machine number 2, modify it, and check the file back
+  in.
+
+6. View the file's history from either machine number 1 or machine number 2. The
+  history still displays only one version.
+
+7. Check the file out from machine number 1, modify it, and check it back in.
+
+8. View the file's history from either machine number 1 or machine number 2. The
+  History now displays two versions, version 1 and version 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

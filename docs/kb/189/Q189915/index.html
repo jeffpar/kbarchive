@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189915/","publisher":null,"image":null,"headline":"Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189915-bug-alter-table-can-add-duplicate-relations-to-dbc">Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189915
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the ALTER TABLE ... ADD FOREIGN KEY command, it will add a relation
+to the database that contains it. If you run the equivalent ALTER TABLE ... ADD
+FOREIGN KEY command again, it will add a duplicate relation to the database.
+This can cause duplicate stored procedures to be created with the Referential
+Integrity Builder, and these can cause duplication of functionality when the
+triggers are called.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+        #DEFINE DBCNAME    'testdb'
+        #DEFINE TABNAME    'testtab'
+        #DEFINE TABCOUNT      2
+
+        LOCAL lmRel1, lmRel2
+
+        CLEAR
+        CLOSE DATABASE ALL
+        DELETE FILE testdb.DBC
+        DELETE FILE testdb.dc?
+
+        CREATE DATABASE DBCNAME
+
+        FOR lni = 1 TO TABCOUNT
+           DELETE FILE (TABNAME+ALLTR(STR(lni)))+'.dbf'
+           DELETE FILE (TABNAME+ALLTR(STR(lni)))+'.cdx'
+           CREATE TABLE (TABNAME+ALLTR(STR(lni))) (F1 C(10) NOT NULL ;
+              PRIMARY KEY, ;
+              F2 C(10) NOT NULL)
+        ENDFOR
+
+        ALTER TABLE (TABNAME+ALLTR(STR(lni-2))) ADD FOREIGN KEY TAG ;
+           F1 REFERENCES (TABNAME+ALLTR(STR(lni-1))) TAG F1
+        CLOSE DATABASE ALL
+        USE DBCNAME+'.dbc'
+        BROWSE FOR objecttype = 'Relation' TITLE "1st relation added" ;
+           TIMEOUT 2
+        USE
+        OPEN DATABASE DBCNAME
+        ALTER TABLE (TABNAME+ALLTR(STR(lni-2))) ADD FOREIGN KEY TAG ;
+           F1 REFERENCES (TABNAME+ALLTR(STR(lni-1))) TAG F1
+        CLOSE DATABASE ALL
+        USE DBCNAME+'.dbc'
+        BROWSE FOR objecttype = 'Relation' TITLE "2nd relation added" ;
+           TIMEOUT 2
+        LOCATE FOR objecttype = 'Relation'
+        lmRel1 = property
+        CONTINUE
+        IF !EOF()
+           lmRel2 = property
+           ?lmRel1 = lmRel2, "The two relation property fields are equal"
+        ELSE
+           ?'2nd relation not found'
+        ENDIF
+        USE
+
+2. Watch the two browse windows appear.
+
+The first browse displays one relation after the first ALTER TABLE command. The
+second browse displays two relations after the second ALTER TABLE command. The
+Property fields of the two relations are equal. This indicates that the same
+relation has been added twice.
+
+NOTES:
+
+A DBC with multiple identical relation objects causes the RI Builder to display
+the relationship twice and causes the builder to generate two blocks of RI code,
+each of which is run every time the trapped event is triggered.
+
+There will also be multiple rows for the relationship being displayed in the RI
+Builder's grid, and you could change the trigger settings for one but not the
+other(s).
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp500abug kbVFp300bbug kbDatabase
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

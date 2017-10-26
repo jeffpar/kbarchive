@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142915/","publisher":null,"image":null,"headline":"Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142915-unattended-installation-of-windows-nt-351-service-pack-3">Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142915
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The installation of the Windows NT 3.51 Service Pack 3 requires manual input. To
+perform an unattended installation of the Service Pack, you must modify the
+Service Pack information (.INF) file.
+
+MORE INFORMATION
+================
+
+To perform an unattended installation of the Windows NT 3.51 Service Pack 3,
+close all applications and do the following:
+
+
+NOTE: Specific line changes to the files below are valid only for Windows NT 3.51
+Service Pack 3. The changes described in this article are intended to be used as
+a starting point, and deal only with the initial and final dialog messages. If
+other errors are encountered during the update process, such as low disk space
+or incorrect Windows NT version, additional dialog messages may appear.
+
+1. Copy all Service Pack files to a working directory. For example, create a
+  directory called NT351SP3 on Drive C.
+
+2. In the working directory, copy UPDATE.INF to a new file. For example:
+
+  COPY UPDATE.INF SP3QUIET.INF.
+
+3. Using a text editor, edit the SP3QUIET.INF file. Comment out, by placing a
+  semi-colon (;) in front of, the six lines that start at line 403 (SHELL
+  through ENDIF). For example:
+
+  ; shell "" QueryOkCancel $(String9)
+  ; ifstr(i) $($R1) == "OK"
+  ; else
+  ; set String = $(String12)
+  ; goto finish2
+  ; endif
+
+  This suppresses the initial dialog box requesting the installation of the
+  service pack.
+
+4. Comment out, with a semi-colon, three lines starting at line 578 (UI START
+  through UI POP 1) and the four lines starting at line 582. For example:
+
+  ; ui start "SetupDone"
+  ; ifstr(i) $(DLGEVENT) == "CONTINUE"
+  ; ui pop 1
+  goto rebootend
+  ; else
+  ; ui pop 1
+  ; goto finish1
+  ; endif
+
+  This suppresses the dialog box that prompts users to allow the system to be
+  restarted. The system will reboot automatically.
+
+5. The following line used in either a batch file or at a command prompt
+  installs Windows NT Service Pack 3:
+
+  setup.exe /s C:\NT351SP3 /i C:\NT351SP3\sp3quiet.inf
+
+If you want to implement the steps above for a Microsoft Systems Management
+Server 1.1, please see the following article(s) in the Microsoft Knowledge
+Base:
+
+  ARTICLE-ID: Q135584
+  TITLE : Unattended Installation of Windows NT 3.51 Service Pack 1
+
+NOTE: You may also modify UPDATE.INF for Windows NT 3.51 Service Pack 3, save the
+file back as UPDATE.INF and run UPDATE.EXE from the working directory.
+
+Additional query words: 3.50 prodnt sms
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

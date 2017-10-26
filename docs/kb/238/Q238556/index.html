@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238556: HOWTO: Notify Team When Changing Projects Under VSS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238556: HOWTO: Notify Team When Changing Projects Under VSS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238556/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238556/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238556/","publisher":null,"image":null,"headline":"Q238556: HOWTO: Notify Team When Changing Projects Under VSS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238556-howto-notify-team-when-changing-projects-under-vss">Q238556: HOWTO: Notify Team When Changing Projects Under VSS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238556
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbProjManager kbSSafe kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro 6.0 ProjectHook object allows you to automatically perform
+actions when modifying the project. You can use these methods to notify your
+team members by e-mail that they need to update their project lists when working
+under source control.
+
+MORE INFORMATION
+================
+
+The following ProjectHook class enables you to automatically notify members of
+your team when you have changed the project.
+
+1. Copy the code below into a VCX.
+
+2. Create a ProjectHook class, and add the custom property ProjectEmail and the
+  custom methods SendMail and GetProjectName.
+
+3. Copy the code from here into the appropriate methods, and set the
+  ProjectEmail to the correct address. Height, Width, and Name are irrelevant
+  for these purposes.
+
+4. Attach it to a project by choosing Project Info from the Project menu. There
+  is a check box and text box at the bottom for Project Class. Fill in the
+  reference to the class you have created here.
+
+  DEFINE CLASS notifyhook AS projecthook
+
+     Height = 22
+     Width = 22
+     *-- This is the address to which notifications will be sent. Set it up as a mailing list before using this hook.
+     projectemail = "MyProjectGroup"
+     Name = "notifyhook"
+
+     PROCEDURE SendMail
+        LPARAMETER tcMessage
+        LOCAL loSession, loMessage, loRecip
+
+        *!* For more details on Messaging, see the MSDN library. 
+        *!* As of July 1999:
+        *!* Platform SDK
+        *!*   Messaging and Collaboration
+        *!*      CDO 1.2.1
+        *!*         CDO Library
+        *!*            Guide
+        *!*               Introduction
+        *!*                  Quick Start
+
+        loSession = CREATEOBJECT("MAPI.Session")
+
+        *!* Here you stuff an ENTER to the keyboard. This is used to
+        *!* bypass the Profile window. You can stop this window
+        *!* from coming up at all by passing the profile name you 
+        *!* wish to use to MAPI:
+        *!* loSession.Logon("&lt;exchange profile name&gt;").
+        *!* For more information on how to work with MAPI
+        *!* profiles, see the References section.
+
+        KEYBOARD "{ENTER}"
+        loSession.Logon()
+
+        loMessage = loSession.Outbox.Messages.Add()
+        loMessage.Subject = "VFP/VSS notification"
+        loMessage.Text = tcMessage
+
+        #DEFINE CDOTO 1
+        loRecip = loMessage.Recipients.Add()
+        loRecip.Name = This.ProjectEmail
+        loRecip.Type = CDOTO	&amp;&amp; This is a To, not a CC or BCC
+        loRecip.Resolve()	&amp;&amp; This will validate the name you put in above
+
+        loMessage.Update()
+        loMessage.Send()
+
+        loSession.LogOff()
+     ENDPROC
+
+     PROCEDURE getprojectname
+        LOCAL loProject, lcProjName
+
+        FOR EACH loProject IN _VFP.PROJECTS
+  	IF VARTYPE(loProject.PROJECTHOOK) = "O"
+  		IF loProject.PROJECTHOOK.NAME = THIS.NAME
+  *~~~~~  Found the project that has ME as its projecthook!
+  	           lcProjName = loProject.NAME
+                     EXIT
+  		ENDIF
+  	ENDIF
+        ENDFOR
+
+        RETURN ALLTRIM(JUSTSTEM(lcProjName))
+     ENDPROC
+
+     PROCEDURE QueryAddFile
+        LPARAMETERS cFileName
+        LOCAL lcMessage
+
+        lcMessage = "I have just added " + JUSTFNAME(cFileName) + " to " + ;
+        This.GetProjectName() + ". Please update your project list. Thank you."
+        This.SendMail(lcMessage)
+     ENDPROC
+
+     PROCEDURE QueryModifyFile
+        *!* Note: QueryModifyFile fires every time you click the Modify
+        *!* button, not every time you save changes. Using this code will
+        *!* send email to your teammates every time you modify a file.
+        *!* Please consider the effects on your team of all this extra mail.
+
+        LPARAMETERS oFile, cClassName
+        LOCAL lnNotify, lcMessage
+
+        *!* FoxPro.h constants (MODI FILE (HOME() + "foxpro.h"))
+        *!* You can include this file under Class:Include File...
+        *!* and delete the following lines.
+        #DEFINE MB_ICONQUESTION 32
+        #DEFINE MB_YESNO 4
+        #DEFINE MB_DEFBUTTON1 0
+        #DEFINE IDYES 6
+
+        lnNotify = MESSAGEBOX("Notify project team?", ;
+           MB_ICONQUESTION + MB_YESNO + MB_DEFBUTTON1, ;
+           "ProjectHook: Modify")
+
+        IF lnNotify = IDYES
+           lcMessage = "I am working on " + JUSTFNAME(oFile.Name) + " in " + ;
+              This.GetProjectName() + ". Please get the latest version before using. Thank you."
+
+           This.SendMail(lcMessage)
+        ENDIF
+     ENDPROC
+
+     PROCEDURE QueryRemoveFile
+        LPARAMETERS oFile, cClassName, lDeleteFile
+        LOCAL lcMessage
+
+        lcMessage = "I have just removed " + JUSTFNAME(oFile.Name) + " from " + ;
+           This.GetProjectName() + ". Please update your project list. Thank you."
+
+        This.SendMail(lcMessage)
+     ENDPROC
+
+  ENDDEFINE
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Garrett
+Fitzgerald, Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information about working with MAPI profiles, please click on the
+article number to view it in the Microsoft Knowledge Base:
+
+  Q195850 HOWTO: Determine the Windows Messaging Subsystem Default
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProjManager kbSSafe kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP600 kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

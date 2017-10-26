@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/287/Q287093/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/287/Q287093/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/287/Q287093/","publisher":null,"image":null,"headline":"Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q287093-info-db2oledb-supports-updatedelete-from-sql-linked-server">Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q287093
+Product(s): Microsoft SNA Server
+Version(s): 4.0 SP4,7.0 Service Pack 2,7.0 Service Pack 3
+Operating System(s): 
+Keyword(s): kbGrpDSVCDB kbDSupport kbGrpDSODBC kbGrpDSOLEDB kbhis2000
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Host Integration Server 2000 
+- Microsoft SNA Server, version 4.0 SP4 
+- Microsoft SQL Server 2000 (all editions) 
+- Microsoft SQL Server versions 7.0 Service Pack 2, 7.0 Service Pack 3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft OLE DB Provider for DB2 (DB2OLEDB) that ships with Host
+Integration Server 2000 or SNA Server 4.0 Service Pack 4 supports SELECT,
+INSERT, UPDATE, and DELETE statements from SQL Server Linked Server.
+
+All earlier versions of DB2OLEDB support only SELECT and INSERT statements when
+used with SQL Server Linked Server.
+
+MORE INFORMATION
+================
+
+For an UPDATE or DELETE, the minimum requirements are as follows:
+
+- Host Integration Server 2000 or SNA Server 4.0 Service Pack 4
+
+- SQL Server 2000 or SQL Server 7.0 Service Pack 2
+
+To execute INSERT, UPDATE, and DELETE statements using four-part linked server
+queries, the SQL Server Distributed Query Processor (DQP) feature uses bookmark
+support in the underlying OLE DB provider. The OLE DB Provider for DB2 does not
+support bookmarks. However, when DQP loads the provider using service
+components, the client cursor engine (CCE) is invoked. The CCE provides
+scrollable cursors and bookmarks.
+
+INSERT, UPDATE, and DELETE statements when using four-part linked server queries
+can be supported using the CCE. However, some statements may fail or may update
+incorrect columns when there is no unique key column on the target tables, or
+when there are not enough unique values for the CCE to accurately determine
+which columns to update. In these cases, unpredictable results may occur, or DQP
+may fail to perform the update.
+
+SELECT, INSERT, UPDATE and DELETE are also supported with passthrough query using
+OpenQuery syntax.
+
+
+REFERENCES
+==========
+
+For additional information on DB2OLEDB and Linked Server, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q218590 INF: Configuring Data Sources for the Microsoft OLE DB Provider
+
+  Q222937 INF: Creating a Linked Server to DB2 using Microsoft OLE DB Provider
+  for DB2
+
+  Q235213 BUG: Four-part Name Linked Server Queries Fail Against DB2 for OS/390
+
+  Q216810 Creating Packages for Use with ODBC Driver for DB2 and OLE DB
+  Provider for DB2
+
+  Q269626 INFO: Permissions Needed to Create Packages Using DB2OLEDB on DB2 and
+  DB2/400
+
+  Q274160 FIX: Four-Part Inserts to DB2 Through LinkedServer Fail
+
+  Q277871 Linked Server SELECT's to DB2/400 Tables with a DBCS Character Field
+  Fail
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVCDB kbDSupport kbGrpDSODBC kbGrpDSOLEDB kbhis2000 
+Technology        : kbSQLServSearch kbAudDeveloper kbSQLServ2000Search kbSNAServSearch kbHostIntegServ2000 kbSQLServ700SP2 kbSQLServ700SP3 kbSQLServ2000 kbSNAServ400SP4
+Version           : :4.0 SP4,7.0 Service Pack 2,7.0 Service Pack 3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

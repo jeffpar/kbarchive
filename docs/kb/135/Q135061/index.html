@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135061: Regeneration of a Stripe Set With Parity Disk Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135061: Regeneration of a Stripe Set With Parity Disk Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135061/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135061/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135061/","publisher":null,"image":null,"headline":"Q135061: Regeneration of a Stripe Set With Parity Disk Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135061-regeneration-of-a-stripe-set-with-parity-disk-fails">Q135061: Regeneration of a Stripe Set With Parity Disk Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135061
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51 4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to regenerate an orphaned drive (stripe set with parity), the
+following error message appears:
+
+  The drive cannot be locked for exclusive use. Please check to see if some
+  applications are currently accessing the drive. If so, close them and try
+  again.
+
+CAUSE
+=====
+
+This problem occurs if Disk Administrator is not allowed exclusive access to the
+stripe set volume. This is usually caused by having an open file on the volume
+you are trying to regenerate.
+
+A file is open when:
+
+- A paging file is located on the volume.
+
+- An application that was started from the volume is still running.
+
+- An application that is running has loaded a .DLL file from the volume.
+
+- An application has a file open on the volume.
+
+- An application's current directory is on the volume.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+If the error continues to appear after you have stopped all applications and
+services that could be accessing the volume:
+
+1. Remove the Page File.
+
+  If there is a page file on the volume, define a page file of sufficient size
+  on another volume and reboot the computer.
+
+2. If you were running Microsoft Mail and or Schedule+, start Mail and choose
+  Exit and Sign Out from the file menu.
+
+  Microsoft Mail and or Schedule+ have hidden processes that run in the
+  background.
+
+3. If you run a Systems Management Server client, close the two hidden Systems
+  Management Server processes: APPCTL32 and PCMWIN32.
+
+  Use KILL.EXE from the PSSTOOLS directory on the Systems Management Server CD,
+  or Process Viewer from the Windows NT Resource Kit to terminate the
+  processes.
+
+4. If you log on to the machine with any logon script containing any Systems
+  Management Server batch file, then remove the batch file from the logon
+  script and log on again before starting the regeneration.
+
+5. To make the volume inaccessible to any processes and to ensure disk
+  administrator can lock the volume, go into Disk Administrator, select Tools,
+  Assign Drive Letter, click the "Do not assign a drive letter" radio button,
+  click OK, select Partition from the menu and then select Commit Changes Now,
+  exit Disk Administrator, reboot the system and then try to regenerate the
+  stripe set with parity.
+
+Additional query words: prodnt 3.5 4.0 ft
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

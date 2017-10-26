@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157015: XCON: MTA Outbound Connection Refused by X.400 Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157015: XCON: MTA Outbound Connection Refused by X.400 Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157015/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157015/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157015/","publisher":null,"image":null,"headline":"Q157015: XCON: MTA Outbound Connection Refused by X.400 Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157015-xcon-mta-outbound-connection-refused-by-x400-host">Q157015: XCON: MTA Outbound Connection Refused by X.400 Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157015
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork
+Last Modified: 05-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outbound connections from Microsoft Exchange Server are refused by the
+destination Message Transfer Agent (MTA) using X.400.
+
+CAUSE
+=====
+
+The reserved byte in the RFC1006 TPKT header is not necessarily 0x0 in the
+Microsoft Exchange MTA. This can cause connection attempts to remote MTAs to
+fail if the remote RFC1006 implementation requires this byte to be 0x0.
+
+This byte is not specified to be a particular value according to RFC1006.
+
+MORE INFORMATION
+================
+
+A trace of the faulting connection might yield a packet similar to the
+following. The line of interest in this particular situation is ISO: Reserved =
+0 (0x0). The following sample shows the Reserved field with the new behavior,
+specifically the Reserved field will always be explicitly set to 0x0. If this
+field shows this to be any other value, this may be the cause of the connection
+failure and is corrected in SP3.
+
+&lt;SOURCE MACHINE&gt; &lt;DESTINATION MACHINE&gt; TPDU Type: Connection Request, Len:
+14 199.199.199.199 200.200.200.200 IP
+
+FRAME: Base frame properties
+ETHERNET: ETYPE = 0x0800 : Protocol = IP:  DOD Internet Protocol
+IP: ID = 0xC6B5; Proto = TCP; Len: 58
+TCP: .AP..., len:   18, seq:  93150219-93150236, ack: 508652377, win: 8760,
+src: 2185  dst:  102
+ISO: RFC 1006 ISO Packet, ver: 3, Len: 4
+   ISO: Version = 3 (0x3)
+   ISO: Reserved = 0 (0x0)&lt;===== RIGHT HERE
+   ISO: Length = 18 (0x12)
+   ISO: Data: Number of data bytes remaining = 14 (0x000E)
+TPDU: Type: Connection Request, Len: 14
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

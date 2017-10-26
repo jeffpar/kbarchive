@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59953: 9th Pixel of 9x16 VGA Fonts Mimics 8th Pixel for ASCII 192-223 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59953: 9th Pixel of 9x16 VGA Fonts Mimics 8th Pixel for ASCII 192-223" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59953/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59953/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59953/","publisher":null,"image":null,"headline":"Q59953: 9th Pixel of 9x16 VGA Fonts Mimics 8th Pixel for ASCII 192-223","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59953-9th-pixel-of-9x16-vga-fonts-mimics-8th-pixel-for-ascii-192-223">Q59953: 9th Pixel of 9x16 VGA Fonts Mimics 8th Pixel for ASCII 192-223</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59953
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900206-119 B_BasicCom | mspl13_basic
+Last Modified: 26-MAR-1990
+
+The width of CGA, EGA, MCGA, and VGA text characters is 8 pixels. In
+the case of VGA however, 9 pixels are actually used for displaying the
+characters. The 9th pixel is appended to the right end of each pixel
+row. If the character being displayed has an ASCII code ranging from
+192 to 223 and the 8th pixel in a given pixel row is on, the 9th pixel
+in that row will be on also. If the 8th pixel in the row is off or the
+ASCII code for the character is not in the range 192 to 223, the 9th
+pixel will not be turned on.
+
+This hardware information may be of interest to users of Microsoft
+QuickBASIC Versions 4.00, 4.00b, and 4.50 for MS-DOS, Microsoft BASIC
+Compiler Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and Microsoft
+BASIC Professional Development System (PDS) Version 7.00 for MS-DOS
+and MS OS/2.
+
+The following diagram shows the pixel make-up of a sample VGA
+character and how it would be displayed on the screen if it had an
+ASCII code within the range 192 to 223, and if its ASCII code was also
+outside that range:
+
+   * = lit pixel
+   O = unlit pixel
+
+   Pixel make-up        ASCII 192             ASCII 255
+   -------------        ---------             ---------
+
+   OO****OO             OO****OOO             OO****OOO
+   O******O             O******OO             O******OO
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   ********             *********             ********O
+   O******O             O******OO             O******OO
+   OO****OO             OO****OOO             OO****OOO
+
+Note how the 9th pixel mimics the status of the 8th pixel preceding it
+when the ASCII code is 192. When the ASCII code is 255 (outside the
+range 192 to 223), the 9th pixel is always off, regardless of the
+status of the 8th pixel. This behavior is limited to VGA text mode and
+is not found in CGA, EGA, or MCGA.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

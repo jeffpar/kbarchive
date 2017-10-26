@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255653: Error Message: MDAC Install Was Unsuccessful | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255653: Error Message: MDAC Install Was Unsuccessful" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255653/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255653/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255653/","publisher":null,"image":null,"headline":"Q255653: Error Message: MDAC Install Was Unsuccessful","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255653-error-message-mdac-install-was-unsuccessful">Q255653: Error Message: MDAC Install Was Unsuccessful</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255653
+Product(s): Microsoft Automap
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kberrmsg kbtool kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Expedia Streets and Trips 2000 
+- Microsoft Home Publishing 2000 
+- Microsoft Works Suite 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install one of the programs listed at the beginning of this
+article, you may receive the following error message
+
+  MDAC install was unsuccessful.
+
+or you may receive an error message similar to the following:
+
+  &lt;Filename&gt; was not installed properly.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Data Access Components (MDAC) is not
+installed properly or is damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, manually extract the MDAC files to the Windows\System
+folder, and then reinstall the Mdac_typ.exe file while your computer is in Safe
+mode. To do this, use the following methods in the order in which they are
+presented.
+
+Back Up the Windows\System Folder
+---------------------------------
+
+To back up the Windows\System folder:
+
+1. Click Start, and then click Run.
+
+In the Open box, type the following line, and then click OK
+
+  &lt;drive&gt;:\Windows
+
+where &lt;drive&gt; is the drive letter of the hard disk on which Microsoft
+Windows is installed.
+
+2. Right-click the System folder, and then click Copy.
+
+3. Right-click a blank area inside the Windows folder, and then click Paste to
+  paste a folder named "Copy of System" inside the Windows folder.
+
+4. Right-click the "Copy of System" folder, and then click Rename.
+
+5. Type "sysold" (without the quotation marks), and then press ENTER.
+
+6. Quit Windows Explorer.
+
+Copy and Extract the Mdac_typ.exe File
+--------------------------------------
+
+Copy the Mdac_typ.exe File to the Windows Desktop:
+
+Copy the Mdac_typ.exe file to the Windows Desktop from the appropriate path for
+your program: Expedia Streets and Trips 2000:
+
+  &lt;cdrom&gt;:\common\enu
+
+  where &lt;cdrom&gt; is the drive letter of your CD-ROM drive.
+
+Microsoft Works Suite 2000:
+
+  &lt;cdrom&gt;:\redist\mdac
+
+  where &lt;cdrom&gt; is the drive letter of your CD-ROM drive.
+
+Microsoft Home Publishing 2000:
+
+  &lt;cdrom&gt;:\MHP\redist\mdac
+
+  where &lt;cdrom&gt; is the drive letter of your CD-ROM drive.
+
+Extract the MDAC Files:
+
+To extract the MDAC files:
+
+1. Click Start, point to Programs, and then click MS-DOS Prompt.
+
+2. At the command prompt, type the following lines, and then press ENTER after
+  you type each line:
+
+  cd c:\windows\desktop
+  mdac_typ.exe /c /t:c:\mdactemp
+  exit
+
+NOTE: These steps automatically create a folder named Mdactemp.
+
+3. Click Start, and then click Shut Down.
+
+4. Click "Restart in MS-DOS mode", and then click OK.
+
+Copy the Extracted Files to the Windows\System Folder
+-----------------------------------------------------
+
+To copy the extracted files to the Windows\System folder:
+
+1. At the command prompt, type the following lines, and then press ENTER after
+  you type each line:
+
+  cd c:\mdactemp
+  copy *.dll c:\windows\system
+
+2. Press CTRL+ALT+DELETE to restart the computer.
+
+Restart the Computer in Safe Mode
+---------------------------------
+
+To restart the computer in Safe mode, use the appropriate method for your version
+of Microsoft Windows.
+
+Microsoft Windows 95:
+
+When you see the "Starting Windows 95" message, press the F8 key, and then choose
+Safe Mode from the Startup menu.
+
+Microsoft Windows 98:
+
+Press and hold down the CTRL key after your computer completes the POST (Power on
+Self Test), and then choose Safe Mode from the Startup menu.
+
+Reinstall the Mdac_typ.exe File
+-------------------------------
+
+To reinstall the Mdac_typ.exe file:
+
+1. When the computer is in Safe mode, double-click the Mdac_type.exe file.
+
+2. Follow the instructions on the screen to reinstall the Mdac_type.exe file.
+
+3. Restart the computer.
+
+MORE INFORMATION
+================
+
+To download the latest version of MDAC, visit the following Microsoft Web site:
+
+  http://www.microsoft.com/downloads
+
+1. In the "Search using" box, click Keyword Search.
+
+2. In the Operating System box, click the version of Microsoft Windows that you
+  are using.
+
+3. In the Keywords box, type "mdac" (without the quotation marks), and then
+  click Find It!.
+
+4. In the list of found files, click the MDAC (Microsoft Data Access Components)
+  2.50.4403.12 link.
+
+5. Under Download Now, click the "MDAC_TYP.EXE - 7,857 Kb" link.
+
+6. Click "Save this program to disk", and then click OK.
+
+7. In the "Save in" box, click Desktop, and then click Save.
+
+For additional information about this issue, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q247532 Works 2000 Err Msg: Installer Terminated Prematurely
+
+  Q248263 Works Suite 2000: Error 1305 During Installation
+
+Additional query words: w_works works2k est2000 est2k hp2k hp2000
+
+======================================================================
+Keywords          : kberrmsg kbtool kbimu 
+Technology        : kbHomeProdSearch kbWorksSearch kbExpediaSearch kbExpediaStreets2000 kbHomePubSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132957: Removable-Media Drives Not Automatically Mounted at Startup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132957: Removable-Media Drives Not Automatically Mounted at Startup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132957/","publisher":null,"image":null,"headline":"Q132957: Removable-Media Drives Not Automatically Mounted at Startup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132957-removable-media-drives-not-automatically-mounted-at-startup">Q132957: Removable-Media Drives Not Automatically Mounted at Startup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132957
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, a compressed volume on a removable-media drive (such
+as a Bernoulli or Syquest drive) may not be automatically mounted.
+
+CAUSE
+=====
+
+This problem can occur if the computer has two floppy disk drives and the
+following settings exist in the Drvspace.ini file:
+
+- MaxRemovableDrives=2
+
+- AutoMount=1
+
+RESOLUTION
+==========
+
+To correct this problem, increase the value of the MaxRemovableDrives setting to
+match the total number of removable-media drives in the computer. For example,
+if your computer has two floppy disk drives and a double Bernoulli drive, use
+the setting "MaxRemovableDrives=4" (two floppy disk drives plus two Bernoulli
+drives).
+
+To edit the Drvspace.ini file, follow these steps.
+
+1. Using Windows Explorer, locate the Drvspace.ini file in the root directory of
+  the boot drive.
+
+2. Use the right mouse button to click the Drvspace.ini file, then click
+  Properties on the menu that appears.
+
+3. Click the Read-only check box to clear it, then click OK.
+
+4. Double-click the Drvspace.ini file to open it.
+
+5. Make either of the following changes to the file:
+
+   - Change the value of the MaxRemovableDrives setting to match the total
+     number of removable-media drives.
+
+     -or-
+
+   - Set the AutoMount entry to the drive letters assigned to the
+     removable-media drives. For example, if you have a double Bernoulli drive
+     with drive letters D and E assigned to the drive, use the setting
+     "AutoMount=DE."
+
+6. Save and then close the file.
+
+MORE INFORMATION
+================
+
+Note that when you are using an Iomega RCD driver with a double Bernoulli drive,
+you may receive a "General Failure" error message the first time you access the
+second drive. This causes automatic activation and automatic mounting to fail.
+Using an Iomega OAD or SCSI driver resolves the problem.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: automount autoactivate cvf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https:// | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268822/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268822/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268822/","publisher":null,"image":null,"headline":"Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268822-xweb-redirecting-httpservernameexchange-users-to-https">Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268822
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): kbfile
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to customize the error feature for the Exchange
+Server virtual directory to redirect Outlook Web Access (OWA) users to use the
+"https://" prefix.
+
+An Exchange Server administrator who has just enabled the use of Secure Sockets
+Layer (SSL) to gain access to the OWA server by using the Internet for greater
+security may want to seamlessly switch former users of the
+"http://server_name/exchange" Uniform Resource Locator (URL) to use the
+"https://server_name/exchange" URL.
+
+MORE INFORMATION
+================
+
+To redirect OWA users to use the "https://" prefix by using the Custom Errors
+page for the Exchange Server virtual directory:
+
+1. Copy the following example to an .htm file (use Notepad if you want to, just
+  make sure that the file name has an .htm extension):
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html;
+  charset=windows-1252"</span><span class="nt">&gt;</span> <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span>
+  <span class="na">content=</span><span class="s">"0;url=https://&lt;server_name&gt;/exchange/logon.asp"</span><span class="nt">&gt;</span> <span class="nt">&lt;meta</span>
+  <span class="na">name=</span><span class="s">"GENERATOR"</span> <span class="na">content=</span><span class="s">"Microsoft FrontPage 4.0"</span><span class="nt">&gt;</span> <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"ProgId"</span>
+  <span class="na">content=</span><span class="s">"FrontPage.Editor.Document"</span><span class="nt">&gt;</span> <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;/html&gt;</span>
+
+2. Replace <span class="nt">&lt;server</span><span class="na">_name</span><span class="nt">&gt;</span> with your server name. For example, if your
+  server is named OWAserver, the line should look like the following line:
+
+  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span>
+  <span class="na">content=</span><span class="s">"0;url=https://OWAserver/exchange/logon.asp"</span><span class="nt">&gt;</span>
+
+3. Save this .htm file in the same folder that the custom errors for the
+  Exchange Server virtual directory are located in. To determine the location
+  of those files, right-click the Exchange Server virtual directory, open the
+  properties, and then click the Custom Errors tab. Copy your new .htm file to
+  that location.
+
+4. To change the default error message for 403.4 errors, click 403;4 error, and
+  then click Edit Properties. The properties for this error are displayed in a
+  dialog box. Leave the message type as File, and copy or move the .htm file
+  that you created to the same default folder that the custom errors are
+  located in. Change the end of the entry for the file to reflect the name of
+  the new .htm file that you just copied to this folder. Click OK.
+
+After you perform these steps, if you go to http://<span class="nt">&lt;server</span><span class="na">_name</span><span class="nt">&gt;</span>/exchange,
+where <span class="nt">&lt;server</span><span class="na">_name</span><span class="nt">&gt;</span> is your Microsoft Internet Information Service (IIS)
+server name, you should be redirected to https://<span class="nt">&lt;server</span><span class="na">_name</span><span class="nt">&gt;</span>/exchange
+and the Logon.asp page to continue.
+
+Additional query words: "outlook web access" security
+
+======================================================================
+Keywords          : kbfile 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

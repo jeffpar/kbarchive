@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182579: HOWTO: Getting Started With Active Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182579: HOWTO: Getting Started With Active Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182579/","publisher":null,"image":null,"headline":"Q182579: HOWTO: Getting Started With Active Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182579-howto-getting-started-with-active-documents">Q182579: HOWTO: Getting Started With Active Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182579
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to create a simple Active Document application.
+
+MORE INFORMATION
+================
+
+The "Programmer's Guide" contains good information on the background and
+features of Active Documents.
+
+The Microsoft Visual FoxPro "Programmer's Guide" defines Active Documents As
+follows:
+
+  "... a Windows-based, non-HTML application embedded in a browser, providing a
+  way for the functionality of that application to be accessible from within
+  the browser interface. Visual FoxPro Active Document applications are like
+  any other Visual FoxPro applications in that you can run forms, reports, and
+  labels, instantiate classes, run code, and manipulate data, but they have the
+  added advantage of being hostable in an Active Document container, such as
+  Internet Explorer."
+
+The following are a series of steps to get a simple Active Document application
+up and running in Visual FoxPro.
+
+Steps to Create Active Document Application
+-------------------------------------------
+
+1. Create a new project and name it Adtest.pjx.
+
+2. Select the Classes tab and click the New button to add a new class.
+
+3. Name the new class ADTest. Make sure it is based on the ActiveDoc class,
+  which should be the default. Store that new class in Adtest.vcx.
+
+4. Once the Class Designer opens, go to the Properties sheet and select the
+  Methods tab.
+
+5. In the Run Event method code, type in the following:
+
+        SET TALK OFF
+        SET STATUS BAR OFF
+        ** DO Adtest.mpr
+        DO FORM Adtest.scx
+        READ EVENTS
+
+  NOTE: This code sets the Visual FoxPro Status Bar off since Internet Explorer
+  already has a status bar. You do not want to have two status bars. TALK is
+  set off because when the status bar is off, some FoxPro commands talk to the
+  active window instead of the status bar. The command to "DO" a menu program
+  is commented out since this article will not cover setting up a menu in the
+  Active Document application. Please refer to the article listed in the
+  REFERENCES section for information on creating a sample menu program for use
+  with this Active Document application.
+
+  Next, a form is opened before the READ EVENTS, which keeps the entire
+  application from exiting as soon as the application starts.
+
+6. In the ContainerRelease Event method code, place the CLEAR EVENTS command.
+
+7. Save the Run Event code, the ContainerRelease code, the ADTest class and
+  close the Class Designer.
+
+8. Select the ADTest class in the Project Manager, it should have a fox head to
+  the left. From the Project menu, point to the Set Main command. The font
+  should turn bold.
+
+9. Select the Documents tab and create a new form in the project. Do not use the
+  Form Wizard.
+
+10. In the new form, set the following properties:
+
+        BorderStyle  0-No border
+        ScrollBars   3-Both
+        TitleBar     0-Off
+        WindowState  2-Maximized
+        Left         0
+        Top          0
+
+  The BackColor and Picture properties can also be set to any valid value.
+
+11. Add a command button to the form. Change the Caption property of the Command
+  button to "Quit" and place the following two lines of code in the Click
+  Event method:
+
+        Thisform.Release
+        CLEAR EVENTS
+
+12. Save the form as Adtest.scx and close the Form Designer.
+
+13. The Active Document application is now ready to be built. In the Project
+  Manager, select the Build button and make sure Build Application is selected
+  in the Action section of the Build Options dialog box. Save the application
+  as Adtest.app.
+
+14. To run the Active Document application, Adtest.app, go to the Tools menu in
+  Visual FoxPro and point to the Run Active Document... command. In the Run
+  Active Document dialog box select Adtest.app for the Active Document combo
+  box. In the Hosting combo box, select In Browser.
+
+15. The Active Document application should have appeared in Internet Explorer.
+  Note that selecting the Quit button leaves Internet Explorer loaded. Close
+  Internet Explorer and run Adtest.app again. This time, close Internet
+  Explorer with the Closebox in the upper left corner. Internet Explorer
+  should close this time but before the form disappears, it will briefly show
+  up in the main Visual FoxPro window. To prevent this, modify the ADTest
+  class and change the ContainerReleaseType to:
+
+        1-Don't show the Visual FoxPro main window
+
+  Rebuild the application and test it again. This time, when Internet Explorer
+  is closed, the form from the Active Document application will not show
+  before closing.
+
+For more information on Active Documents, follow the instructions below to get
+into the Active Documents section of the Visual FoxPro "Programmer's Guide."
+
+Steps to Active Documents Topic
+-------------------------------
+
+1. In the MSDN Library for Visual Studio 6.0, open the Visual FoxPro
+  Documentation book, and go to the What's New in Visual FoxPro page. The
+  Active Documents topic from the "Programmer's Guide" should be the second
+  item listed.
+
+2. Click Active Documents to open the Active Documents section of Chapter 31,
+  "Interoperability and the Internet".
+
+There is also a good sample in the Solutions sample under the New Features for
+Visual FoxPro 6.0 category titled, "Create Active Documents for the Web". This
+can also be accessed from the MSDN Library. Select Samples, Visual FoxPro
+Samples, in the Visual FoxPro Documentation book instead of into Visual FoxPro
+Documentation.
+
+REFERENCES
+==========
+
+Visual FoxPro Online Help, version 6.0; Search on "Active Documents";
+Topic: Creating
+
+For information on creating a sample menu program for use with this Active
+Document application, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q182580 HOWTO: Setting Up a Quick Menu for an ActiveDoc App
+
+Additional query words: kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

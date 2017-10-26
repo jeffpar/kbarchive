@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143008/","publisher":null,"image":null,"headline":"Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143008-32-bit-powerpoint-viewer-interface-different-on-windows-nt">Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143008
+Product(s): Microsoft PowerPoint for Windows
+Version(s): 7.0; winnt:3.51
+Operating System(s): 
+Keyword(s): kbui kbviewer
+Last Modified: 19-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint Viewer for Windows 95, version 7.0 
+- the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The following new features of the PowerPoint Viewer (32-bit) are not supported
+by the user interface in Windows NT 3.51:
+
+- Print button
+
+- About button
+
+- The Password-Locked SlideShow option
+
+- The Show Slideshow Dialog check box
+
+- The Pop-Up Menu On Right Mouse Click check box
+
+- The Show Pop-up Menu Button check box
+
+- The End With Black Slide check box
+
+- The Run In A Window check box
+
+RESOLUTION
+==========
+
+To use these features, modify the properties of the PowerPoint Viewer icon (or
+create a new PowerPoint Viewer icon and change its properties) and add the
+command line switches that correspond to the features that you want to use.
+
+Use this switch         To enable this feature
+----------------------------------------------
+
+  /A                  Automatic Advance
+  /K                  Show Password Dialog
+  /P                  Print Presentation
+  /R                  Define slide range for presentation
+  /W                  View in Window mode
+  /S                  View in full screen &lt;default&gt;
+  /L                  Loop continuously
+
+To create an icon in Windows NT 3.51, follow these steps:
+
+1. In Program Manager, open the group in which you want the new icon to appear.
+
+2. On the File menu, click New.
+
+3. Click Program Item, and then click OK.
+
+4. Fill out the Program Item properties as follows:
+
+  Description: Type the text you want to appear below the icon.
+
+  Command line: Type the path to the viewer, followed by any command line
+  switches you want to use, followed by the name of the presentation you want
+  to run. For example, if you want to view the Pres1.ppt presentation in Window
+  mode, type the following:
+
+  "c:\powerpnt\ppview32.exe /w c:\document\pres1.ppt" (without the quotation
+  marks)
+
+5. Click OK.
+
+When you double-click the new icon, the 32-bit PowerPoint Viewer will run the
+specified presentation in the manner specified by the command line switches.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          : kbui kbviewer 
+Technology        : kbOSWinSearch kbOSWinNT351 kbPowerptViewerSearch kbPowerptViewer700 kbZnotKeyword7 kbOSWinNTSearch kbViewerSearch
+Version           : :7.0; winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

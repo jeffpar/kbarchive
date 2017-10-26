@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178007/","publisher":null,"image":null,"headline":"Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178007-encarta-98-clicking-home-screen-title-does-not-open-feature">Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178007
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv kbui kburl kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a title on the Encarta 98 Encyclopedia for Windows Home screen,
+the linked feature may not open. In addition, you may be unable to start
+InterActivities from the InterActivities Home screen.
+
+CAUSE
+=====
+
+This behavior can occur for either of the following reasons:
+
+- The Mfc42.dll file installed on your computer is missing, damaged, or the
+  incorrect version.
+
+- Macromedia ShockWave Flash, version 2.1.12 is installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line, and then click OK
+
+  "&lt;cd-rom&gt;:\aamsstp " (without the quotation marks)
+
+  where &lt;cd-rom&gt; is the letter of the CD-ROM drive.
+
+3. Click to highlight the Axdist.exe file, press and hold down the CTRL key, and
+  then click to highlight the Flash2in.exe and Swie6.exe files.
+
+4. On the Edit menu, click Copy.
+
+5. Close the Aamsstp window.
+
+6. Right-click an empty area of the desktop, and then click Paste.
+
+7. Click Start, and then click Shut Down.
+
+8. Click Restart The Computer, and then click OK.
+
+9. If you are using a Microsoft Windows 95-based computer, press the F5 key when
+  you see the "Starting Windows 95" message. If you are using a Windows
+  98-based computer, when your computer restarts, press down and hold the SHIFT
+  key until Windows 98 starts in Safe Mode.
+
+10. When Windows starts in Safe Mode, click OK.
+
+11. On the desktop, double-click the Axdist.exe file, and then follow the
+  instructions on the screen to install the ActiveX software.
+
+12. On the desktop, double-click the Flash2in.exe file, and then follow the
+  instructions on the screen to install the Macromedia ShockWave Flash
+  software.
+
+13. On the desktop, double-click the Swiex6.exe file, and then follow the
+  instructions on the screen to install the Macromedia Director 6.0 software.
+
+14. Restart the computer.
+
+If the issue continues to occur, download and install the Windows Libraries
+Update. To do this:
+
+1. Visit the following Microsoft Web site:
+
+  http://www.microsoft.com/downloads/search.asp?
+
+2. In the Search By area, click Keywords.
+
+3. In the Keywords box, type "libraries update" (without the quotation marks).
+
+4. In the Operating System box, click the appropriate operating system, and then
+  click Find It.
+
+5. Click the link that is returned, and then follow the instructions on the
+  screen to install the Microsoft Libraries Update.
+
+The Microsoft Libraries Update resolves an issue that can cause some third-party
+software to behave unexpectedly after the installation of Microsoft Works Suite
+99, Microsoft Encarta Encyclopedia 99 (US only), Microsoft Encarta Virtual Globe
+99, Microsoft Graphics Studio Greetings 99, or other third-party software.
+Impacted programs include America Online (AOL) version 4.0 and HyperTerminal.
+
+For additional information about the Microsoft Libraries Update, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q197298 INFO: Microsoft Libraries Update: What, Where, Why
+
+
+MORE INFORMATION
+================
+
+The versions of Macromedia Shockwave Flash (version 2.0.11) and the Mfc42.dll
+file installed by Encarta Encyclopedia 97 are fully compatible.
+
+
+Additional query words: 98 multi media multimedia multi-media mmtitles mm
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbui kburl kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

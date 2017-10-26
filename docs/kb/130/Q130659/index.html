@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130659/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130659/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130659/","publisher":null,"image":null,"headline":"Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130659-prb-the-database-must-be-opened-exclusively-multiuser-error">Q130659: PRB: "The database must be opened exclusively" Multiuser Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130659
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprogramming
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a multiuser situation, when you perform tasks that affect the contents of a
+database (.DBC file), the error "The database must be opened exclusively" is
+displayed.
+
+CAUSE
+=====
+
+The command requires exclusive access to the database. Several commands that
+create or modify database objects require that the database not be shared--at
+design time or run time.
+
+This error may also occur at run time in an application or EXE if you have
+included the database(s) in the project. By including the database(s) in the
+project, you have caused them to be read-only, and you will not be able to
+properly validate the database. In this situation, it is possible for ISE
+CLUSIVE() to return a .T. (true) value and still get the error message described
+above.
+
+WORKAROUND
+==========
+
+If you receive the error "The database must be opened exclusively" at design
+time, all developers must close the database before you can proceed.
+
+To prevent this error from occurring at run time when manipulating views or
+connections, create a local database for each user. All users will have
+exclusive access to their database, and will also be able to update the table
+records contained in a centralized, shared database.
+
+To verify whether or not a database is open exclusively, use the ISEXCLUSIVE()
+function. The syntax for the ISEXCLUSIVE() function is:
+
+  ISEXCLUSIVE([cTableAlias | nWorkArea | cDatabaseName [, nType]])
+
+When the nType parameter has a value of 2, the function returns the exclusive
+status for a database. The following example code makes sure the database is
+open exclusively before using the INDEX ON command:
+
+     CLOSE ALL
+     OPEN DATABASE SYS(2004)+"SAMPLES\DATA\TESTDATA"
+     SELECT 0
+     USE CUSTOMER
+     IF ISEXCLUSIVE('testdata',2)
+        INDEX ON CITY TAG CITY
+        ELSE
+        =MESSAGEBOX("Database must be opened Exclusively")
+     ENDIF
+     CLOSE DATABASE
+
+NOTE: The above code uses CLOSE ALL to close all the files so that the database
+can be opened but not selected, making the CLOSE DATABASE command useless. Of
+course using CLOSE DATABASE ALL might not be helpful if only one database needs
+to be closed. Therefore, issue the following code to select a certain database
+to close and reopen:
+
+     SET DATABASE TO &lt;dbc name&gt;
+     CLOSE DATABASE
+     OPEN DATABASE &lt;dbc name&gt; EXCLUSIVE
+
+This ensures that the correct database container is selected, closed, and
+reopened.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If a view or a table contained in a database is open for shared use, the
+database is also shared. Therefore, all multiuser applications require that a
+database be shared.
+
+However, commands that directly relate to the database (.DBC file) structure and
+commands that involve the creation or deletion of objects require exclusive use
+of the database. These commands include:
+
+  CREATE TABLE
+  MODIFY STRUCTURE
+  ALTER TABLE
+  ADD TABLE
+  RENAME TABLE
+
+  CREATE SQL VIEW
+  MODIFY VIEW
+  DELETE VIEW
+  RENAME VIEW
+
+  CREATE CONNECTION
+  MODIFY CONNECTION
+  DELETE CONNECTION
+  RENAME CONNECTION
+
+  INDEX ON &amp;&amp; You can however use INDEX ON on a view
+  DELETE TAG
+
+  CREATE TRIGGER
+  DELETE TRIGGER
+
+  APPEND PROCEDURES
+  COPY PROCEDURES
+  MODIFY PROCEDURE
+
+  COMPILE DATABASE
+  PACK DATABASE
+  VALIDATE DATABASE
+
+Additional query words: denied
+
+======================================================================
+Keywords          : kbnetwork kbprogramming 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP500a
+Version           : 3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

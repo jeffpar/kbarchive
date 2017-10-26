@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166454/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166454/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166454/","publisher":null,"image":null,"headline":"Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166454-using-fdisk-mbr-for-troubleshooting-windows-nt-boot-problems">Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166454
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbother
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Windows NT, using the MS-DOS FDISK /MBR command is not always
+appropriate when you cannot boot a computer. The problem is that the command
+rewrites the master boot record (MBR) only, and not the entire boot record. The
+FDISK /MBR command rewrites only the first 446 bytes of the master boot record,
+not the partition table. Windows NT disk signatures used for fault tolerance are
+also overwritten, and if the drive contained an FT member, it may not be
+recognized by Windows NT as an FT member afterward.
+
+If a drive is infected with a Stealth virus, the partition table and pointers
+have been offset. The offset pointer is contained in the MBR. Using the FDISK
+/MBR command on the computer refreshes the MBR--the pointer to the partition
+table is lost, as is the ability to boot. The only possible solution is to
+reinfect the drive and then try to remove the virus again using Fdisk or
+anti-virus software.
+
+The only time that the FDISK /MBR command is effective against a virus is if it
+is a boot-sector-only virus (such as the Stoned virus).
+
+If the sector is infected, recovery cannot be guaranteed. If the FDISK /MBR
+command is used and a Stealth virus is present, the computer can most likely not
+be recovered because the offsets are not constant.
+
+Examples of Stealth viruses include:
+
+- NY Bomber or NYB
+
+- Stealth.B
+
+- Hare
+
+- Monkey.B
+
+MORE INFORMATION
+================
+
+If you receive any of the following messages on a blue screen when you are
+booting Windows NT, you need to check for a virus:
+
+  0x0000007B  INACCESSIBLE_BOOT_DEVICE
+  0x0000008F  MBR_CHECKSUM_MISMATCH
+  (0x4,0,0,0)
+
+When these symptoms occur, the first step is to run a virus scan. F-Prot, Norton,
+McAfee, and Dr. Soloman are programs that are commonly used and all have
+shareware downloads on the Internet. If one of these does not indicate a virus,
+try one of the others.
+
+Other symptoms can include the following:
+
+- The error message "Windows NT could not start because the following file is
+  missing or corrupt: \&lt;WINN ROOT&gt;\COMPUTER32\NTOSKRNL.EXE."
+
+- A black screen with a cursor blinking in the upper left corner.
+
+TO protect yourself before using the FDISK /MBR command or cleaning the virus
+from the disk using an anti-virus inoculation program, you can use the Windows
+NT 4.0 Resource Kit tool named Disksave.exe. This is an MS- DOS-based tool that
+you can use to back up the MBR and save it to a floppy disk. In the event that
+the inoculation of the virus also deletes the partition table, you can restore
+the MBR using Disksave.exe, and then try a different method of removing the
+virus.
+
+Another option for protecting yourself is to boot from an MS-DOS disk and run
+Norton DiskEdit to view the partition table entries. The entries displayed are
+those from the indexed location from the active virus. Record the values that
+are displayed. If, after inoculation, the partition table entries are destroyed,
+you can manually type the recorded values and restore the partition table values
+to valid entries (but without the virus).
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q69013
+  TITLE : FDISK /MBR Rewrites the Master Boot Record
+
+Additional query words: 6.22 5.00 5.00a
+
+======================================================================
+Keywords          : kb3rdparty kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

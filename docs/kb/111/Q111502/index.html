@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111502/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111502/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111502/","publisher":null,"image":null,"headline":"Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111502-bug-substr-index-past-end-of-string-incorrectly-assembles">Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111502
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MASM 6.x will incorrectly assemble the SUBSTR directive and not generate the
+expected error if the index value is 1 (one) greater than the length of the
+string. The expected error is:
+
+  A2091: index value past end of string
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Macro Assembler
+(MASM) versions 6.x. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The sample code below illustrates this behavior as well as the correct use of
+SUBSTR.
+
+The SUBSTR directive selects a value from a string and assigns it to a symbol.
+The index value (start value) cannot be greater than the length of the string.
+The format of the directive is:
+
+  &lt;name&gt; SUBSTR &lt;string&gt;, &lt;index&gt;
+
+-or-
+
+  &lt;name&gt; SUBSTR &lt;string&gt;, &lt;start&gt;, &lt;length&gt;
+
+The directive is documented on pages 246-247 of the MASM 6.1x "Programmer[ASCII
+146]s Guide."
+
+Sample Code
+-----------
+
+  ; Assemble options needed: /c /Fl
+  .model small
+  .data
+     op1 substr &lt;12345678&gt;,8  ;  4
+     op2 sizestr op1          ;  5
+
+     op3 substr &lt;12345678&gt;,9  ;  7 - should be A2091 here
+     op4 sizestr op3          ;  8 - should be A2006 here
+
+     op5 substr &lt;12345678&gt;,10 ; 10 - A2091 here
+     op6 sizestr op5          ; 11 - A2006 here
+  END
+
+  Assembling this will correctly generate two errors (A2091 and A2006) on
+  lines 10 and 11 as shown in the following (partial) listing. These errors
+  should also be generated on lines 7 and 8 of the source, but aren't, and
+  the value 0 (zero) is incorrectly assigned to symbol op4.
+
+                 ; Assemble options needed: /c /Fl
+                 .model small
+   0000          .data
+   = 8              op1 substr &lt;12345678&gt;,8  ;  4
+   = 0001           op2 sizestr op1          ;  5
+
+   =                op3 substr &lt;12345678&gt;,9  ;  7 - should be A2091 here
+   = 0000           op4 sizestr op3          ;  8 - should be A2006 here
+
+                    op5 substr &lt;12345678&gt;,10 ; 10 - A2091 here
+  test.asm(10): error A2091: index value past end of string
+                    op6 sizestr op5          ; 11 - A2006 here
+  test.asm(11): error A2006: undefined symbol : op5
+                 END
+
+Additional query words: 6.00 6.00a 6.00b 6.10 6.10a buglist6.10 buglist6.10b buglist6.11 buglist6.00 buglist6.00b buglist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b,6.1,6.11,6.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

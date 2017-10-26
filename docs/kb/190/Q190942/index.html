@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190942/","publisher":null,"image":null,"headline":"Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190942-bug-ole-db-appwizard-generates-wrong-sql-statement">Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190942
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbOLEDB kbOracle kbVC600bug
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an Oracle table name contains spaces in it, the MFC OLE DB AppWizard will
+generate incorrect SQL Statements. This problem happens when using either the
+OLE DB Provider for ODBC (using the Microsoft Oracle ODBC Driver) or the OLE DB
+Provider for Oracle.
+
+When attempting to build the application, the following error is returned:
+
+  error C2017: illegal escape sequence
+
+RESOLUTION
+==========
+
+The solution is to remove one of the slashes from each part of the SQL
+Statement. The SQL Statement should resemble the following:
+
+     "SELECT * FROM PSS.\"my table\""
+
+Although this corrects the SELECT statement, the COLUMN_MAP and Data members for
+the CMytable class are not created, because of the original syntax problem. The
+datamembers and COLUMN_MAPs must be manually created. A better solution would be
+to not use spaces in table names.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a DSN pointing to an Oracle Server. Run the following DDL statement using
+SQL Plus (Oracle's client query tool):
+
+     Create table "my table" (fld1 VARCHAR2(10));
+     INSERT INTO "my table" VALUES ('Hello');
+
+Start Visual C++ version 6.0.
+
+1. Create an MFC AppWizard(exe) Project.
+
+2. Click Next in step 1 of 6.
+
+3. In step 2 of 6, select "Database view with file support."
+
+4. Click Data Source.
+
+5. Select OLE DB, then click "Select OLE DB Datasource."
+
+6. Choose the OLE DB Provider for ODBC and select the Oracle data source that
+  has been created for this test. User ID and Password need to be filled in.
+
+7. Click OK on the Database Options dialog box. Then select "my table" from the
+  table list.
+
+8. Click Finish on step 2 of 6.
+
+NOTE: The SQL SELECT statement is generated incorrectly in the
+CCommand&lt;CAccessor&lt;CMytable class. The CCommand&lt;CAccessor&lt;CMytable
+class can be found in the xxxSet.h file, where xxx is the name of your project:
+
+     "SELECT * FROM PSS.\\"my table\\""
+
+When you attempt to build the application, you will receive error C2017: illegal
+escape sequence.
+
+After testing this situation, run the following DDL script to remove the table.
+
+     DROP TABLE "my table";
+
+Additional query words: spaces
+
+======================================================================
+Keywords          : kbDatabase kbOLEDB kbOracle kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

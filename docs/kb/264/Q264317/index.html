@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264317/","publisher":null,"image":null,"headline":"Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264317-xadm-public-folders-are-re-homed-when-you-restore-pubedb-file">Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264317
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 06-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During a disaster recovery situation, the public folders in an Exchange Server
+organization may be re-homed under the following circumstances:
+
+- The information store is restored to a recovery server.
+- The directory service or information store consistency checker is run on the
+  recovery server.
+- The information store service is stopped on the recovery server.
+- The information store database files are copied to the production server and
+  the information store service is started.
+
+When the information store service is started on the production server (after the
+Pub.edb file is copied from the recovery server), public folder replication
+takes place between the production server and the rest of the public folder
+servers in the organization. After replication has occurred, all unsecured
+public folders in the organization are re-homed to the production server where
+the databases are restored.
+
+After the public folders are re-homed, clients may not be able to access the
+public folders. Also, unlike other public folder re-homing scenarios, in this
+case, no administrators in any site can administer the re-homed public folders.
+
+MORE INFORMATION
+================
+
+The recovery server, on which the information store was restored, did not have a
+copy of the folder from the production server. Therefore, when you run the
+directory service or information store checker on this computer, the directory
+service or information store checker does not have information about all of the
+other servers and mailboxes in the organization. As a result, the public folders
+are re-homed to the recovery server. In addition to re-homing the public
+folders, because a directory object for the public folders is not found in the
+folder on the recovery server, a new directory object is created for each
+re-homed public folder.
+
+The following events are logged on the recovery server on which you run the
+directory service or information store consistency checker:
+
+  Event Type: Information
+  Event Source: MSExchangeIS Public
+  Event Category: IS/DS Interactions
+  Event ID: 7008
+  Date: 4/13/2000
+  Time: 10:13:15 AM
+  User: N/A
+  Computer: EXCHSRV01
+  Description:
+  Created a public folder OFFLINE ADDRESS BOOK\EX:/o=Company/ou=Site\OAB Version
+  2 in the directory service.
+
+  Event Type: Information
+  Event Source: MSExchangeIS Public
+  Event Category: IS/DS Interactions
+  Event ID: 7032
+  Date: 4/13/2000
+  Time: 10:13:15 AM
+  User: N/A
+  Computer: EXCHSRV01
+  Description:
+  The public information store
+  /o=Company/ou=Site/cn=Configuration/cn=Servers/cn= EXCHSRV01/cn=Microsoft
+  Public MDB became the home information store of folder OFFLINE ADDRESS
+  BOOK\EX:/o=Company/ou=Site\OAB Version 2.
+
+  Event Type: Information
+  Event Source: MSExchangeIS Public
+  Event Category: IS/DS Interactions
+  Event ID: 7001
+  Date: 4/13/2000
+  Time: 10:13:15 AM
+  User: N/A
+  Computer: EXCHSRV01
+  Description:
+  The public folder Americas\Texas\Las Colinas in the directory service was
+  updated with information store public folder properties.
+
+  Event Type: Information
+  Event Source: MSExchangeIS Public
+  Event Category: IS/DS Interactions
+  Event ID: 7021
+  Date: 4/13/2000
+  Time: 10:13:15 AM
+  User: N/A
+  Computer: EXCHSRV01
+  Description:
+  Users that were not valid have been removed from the access control list of
+  public folder Americas\Texas\Las Colinas.
+
+When the Pub.edb file from the recovery server is copied to the production server
+and the service is started, the information store recognizes that the public
+store is restored from another server and it logs the following event which says
+that the replication will not occur. This event is not accurate because
+replication does occur.
+
+  Event Type: Information
+  Event Source: MSExchangeIS
+  Event Category: Recovery
+  Event ID: 1117
+  Date: 4/13/2000
+  Time: 11:25:23 AM
+  User: N/A
+  Computer: EXCHSRV01
+  Description:
+  The public database has been restored to an alternate server. This database
+  will no longer be able to replicate with other public databases.
+
+After the information store service is started on the production server, public
+folder replication starts. Because the public folders on this server have been
+modified more recently than those on the other sites or servers, the changes are
+replicated out to the other servers.
+
+When the information store on a server in another site receives the changes,
+which indicates that the folders that were previously homed on it are now homed
+on another site, the information store removes the directory object for that
+public folder from the folder because it assumes that the folder in the new home
+site contains the directory service object for the public folder. This folder
+change is replicated to all of the servers in the organization. Eventually, all
+of the public folder and folder changes are replicated throughout the
+organization. After this is finished, the public folders appear to be homed in
+the site where the public store is restored, and the re-homed public folders do
+not have a corresponding directory object.
+
+Because there is no associated directory object, when you try to get the
+properties of a re-homed public folder, you receive the following error message
+in the Exchange Administrator program:
+
+  The object cannot be found in the directory. This could be because
+  replication has not completed.
+
+  Microsoft Exchange Directory
+  ID no: c1010aae
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

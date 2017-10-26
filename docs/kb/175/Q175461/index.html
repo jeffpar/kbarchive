@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175461: Camcorder Files Do Not Play Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175461: Camcorder Files Do Not Play Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175461/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175461/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175461/","publisher":null,"image":null,"headline":"Q175461: Camcorder Files Do Not Play Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175461-camcorder-files-do-not-play-correctly">Q175461: Camcorder Files Do Not Play Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175461
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Excel 97 Step by Step ISBN 1-57231-314-5 
+- MSPRESS Microsoft Excel 97 Step by Step, Advanced Topics ISBN 1-57231-564-4 
+- MSPRESS Microsoft Exchange 5.0 Step by Step ISBN 1-57231-627-6 
+- MSPRESS Microsoft Office 97 Integration Step by Step ISBN 1-57231-317-X 
+- MSPRESS Microsoft Office 97 Professional 6-in-1 Step by Step ISBN 1-57231-703-5 
+- MSPRESS Microsoft PowerPoint 97 Step by Step ISBN 1-57231-315-3 
+- MSPRESS Microsoft Word 97 Step by Step ISBN 1-57231-313-7 
+- MSPRESS Microsoft Word 97 Step by Step, Advanced Topics ISBN 1-57231-563-6 
+- MSPRESS Microsoft Team Manager 97 Step by Step ISBN 1-57231-217-3 
+- MSPRESS Microsoft Access 97 Step by Step ISBN 1-57231-316-1 
+- MSPRESS Microsoft Word for Windows 95 Step by Step ISBN 1-55615-828-9 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play one of the Microsoft Camcorder files from the Microsoft
+Press Web site, you may experience one or more of the following problems:
+
+- The movie appears in its own window with a dark gray or black screen.
+
+- Your entire screen appears to be black except for the pointer, the Stop
+  window displayed by the Camcorder, and a thin strip at the bottom of the
+  screen.
+
+CAUSE
+=====
+
+These problems occur when you play the movie on a computer with an incompatible
+video driver, such as the Cirrus Logic (CL-GD7548) or the NeoMagic video driver.
+
+WORKAROUND
+==========
+
+Movie Appears In Its Own Window with Black Screen
+-------------------------------------------------
+
+If the movie appears in its own window with a dark gray or black screen,
+following these steps:
+
+1. Click the Start button and click Run. In the Open box, type
+
+  " System.ini " (without the quotation marks)
+
+  then click OK.
+
+2. On the Search menu, click Find. Type the following
+
+  " dvideo.dll " (without the quotation marks)
+
+  and then click Find Next. Click Cancel. You should see
+
+  VIDS.DRAW=DVIDEO.DLL
+
+  In the [Drivers32] section.
+
+3. Insert a semicolon (;) at the beginning of this line to change this statement
+  to a remark.
+
+4. On the File menu, click Save, and then click Exit.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q161467 OFF97: Camcorder .Avi Plays With Gray or Black Screen
+
+Entire Screen Is Black While Movie Plays
+----------------------------------------
+
+If while the movie is playing the entire screen appears to be black except for
+the pointer and a thin strip at the bottom of the screen, switch to a different
+video driver.
+
+To switch to a different video driver, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Click Display and on the Settings tab click Advanced Properties.
+
+3. click to select Adapter, and then click Change.
+
+4. Click to select Show All Devices. In the Manufacturers list, click Standard
+  Display Types. In the Models list, click Standard Display Adapter and then
+  click OK.
+
+5. Click OK to close the windows that you have opened.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q170636 OFF97: Camcorder Movies May Not Work with NeoMagic Video
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: press ms_press bookbug 1-57231-317-X 1-57231-313-7 1-57231-314-5 1-57231-564-4 1-57231-316-1 1-57231-563-6 1-57231-627-6 1- 57231-382-X 1-57231-217-3 1-57231-703-5
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

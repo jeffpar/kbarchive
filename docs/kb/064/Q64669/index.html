@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64669: SoftRIP Error Message in Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64669: SoftRIP Error Message in Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64669/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64669/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64669/","publisher":null,"image":null,"headline":"Q64669: SoftRIP Error Message in Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64669-softrip-error-message-in-windows-30">Q64669: SoftRIP Error Message in Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64669
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A SoftRIP error message is an indication of depleted or insufficient resources
+(most likely GDI) that usually occurs when you try to print a complex image.
+
+Even though the Program Manager may show a lot of available resources, it cannot
+accurately report how much of each kind of resource is available. As a result,
+you cannot use the percentage of resources available as an indication of whether
+a specific action is possible or will produce a SoftRIP failure. (The RIP
+portion of the term SoftRIP stands for "raster imaging program.")
+
+MORE INFORMATION
+================
+
+When this error occurs, the workaround is to take the same steps you would
+normally take for any reduced resources problem. The following is a list of
+things you can do to increase the amount of resources available. Where the
+action suggested requires making modifications to an .INI file, be sure to make
+a backup copy of the .INI file before making any changes.
+
+1. Reduce the number of resources being consumed by the application by closing
+  open windows, eliminating custom menu bars and commands, turning off resource
+  consuming options (that is, in Word for Windows, don't display the Ruler or
+  Ribbon because of the many icons they contain).
+
+2. If the application allows you to print the same image from different views,
+  print from a view that consumes fewer resources (that is, in PowerPoint for
+  Windows, try printing from the Title Sorter view).
+
+3. Reduce the number of applications running concurrently.
+
+4. Reduce the number of icons being used by the Program Manager (eliminate
+  groups by removing the appropriate line(s) in the PROGMAN.INI file and
+  restart Windows).
+
+5. Remove the unused screen fonts from your WIN.INI [FONTS] section, and restart
+  Windows.
+
+6. Remove the unused soft fonts from your WIN.INI printer section and restart
+  Windows.
+
+7. Reduce the complexity of the image or document.
+
+A common situation that can produce this error message is printing a complex
+image to a device that has no internal memory. As a result, the entire image
+must be rendered in the computer's memory and then sent to the device as a
+bitmap (raster imaging program - RIP). A common device of this type is the
+Hewlett-Packard (HP) PaintJet.
+
+The measure of an image's complexity is the number of graphics primitives that
+must be used to render that image. An image that may not seem too complex, might
+actually consume a great deal of resources. Typically images that contain ovals
+with gradient fills or shading require far more resources to render than
+rectangular objects.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

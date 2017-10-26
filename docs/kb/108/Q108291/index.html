@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108291/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108291/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108291/","publisher":null,"image":null,"headline":"Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108291-fix-cannot-add-new-member-variables-with-viewex-sample">Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108291
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC kbVC100bug kbVC150fix kbVC200fix kbWndw kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+From the Visual C++ Workbench, open the VIEWEX sample. To do this, select the
+Project menu and choose Open. The sample is under the Visual C++ directory in
+MFC\SAMPLES\VIEWEX\VIEWEX.MAK.
+
+Using App Studio, add an edit control (or any type of control) to the
+IDD_INPUTFORM dialog box used for the CFormView in this sample. Give it an ID of
+ID_MYNEWEDIT. Now start Class Wizard with CTRL+W. (You may need to choose to
+associate the CInputView class with the dialog box resource.) Select the
+CInputView class if it's not already selected. Choose the Edit Variables button
+or Member Variables tab depending on the version of Visual C++. The ID_MYNEWEDIT
+ID will not show up in the Control IDs list, and thus cannot be automatically
+associated with a member variable.
+
+CAUSE
+=====
+
+There is a line of code missing in the declaration of the CInputView class in
+the INPUTVW.H file. The class definition in this file has a section as follows:
+
+     // Form Data
+     public:
+        //{{AFX_DATA(CInputView)
+        CString m_strData;
+        int     m_iColor;
+        //}}AFX_DATA
+
+This section of code is missing a line that Class Wizard needs in order to
+identify the controls available to set up as edit variables. This line is the
+enum line, which is normally automatically added by Class Wizard when creating
+CDialog derived classes.
+
+RESOLUTION
+==========
+
+Modify the above code as follows:
+
+     //{{AFX_DATA(CInputView)
+     enum { IDD = IDD_INPUTFORM };
+     CString m_strData;
+     int     m_iColor;
+     //}}AFX_DATA
+     //{{ AFX_DATA(CInputView
+
+This will work around the problem. With such an enum line, Class Wizard is able
+to determine the dialog box template to examine for available controls.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed
+above. This problem was fixed in Microsoft Visual C++, 32-bit Edition, version
+2.0.
+
+Additional query words: kbNoUpdate
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC kbVC100bug kbVC150fix kbVC200fix kbWndw kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

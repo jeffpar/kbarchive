@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274806: Browser Loops When User Password Expires | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274806: Browser Loops When User Password Expires" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274806/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274806/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274806/","publisher":null,"image":null,"headline":"Q274806: Browser Loops When User Password Expires","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274806-browser-loops-when-user-password-expires">Q274806: Browser Loops When User Password Expires</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274806
+Product(s): Internet Information Server
+Version(s): 2.0,5.0
+Operating System(s): 
+Keyword(s): kbenv kbtool kbOSWin2000
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user's password expires, and the user tries to access a Uniform Resource
+Locator (URL) through a secured server that is running Microsoft Proxy Server
+(MPS) 2.0, the browser goes into a loop instead of redirecting the user to the
+IISADMPWD virtual folder to allow them to change their user password.
+
+CAUSE
+=====
+
+This behavior occurs if you are running MPS 2.0 under Internet Information
+Services (IIS) 5.0, and if you are using proxy authentication to validate user
+access. There is a functionality change in IIS 5.0 in how IIS handles password
+expiration notification: an HTTP 302 redirect message is sent back to the
+client.
+
+
+The redirect path that is sent back to the client is the one that is specified in
+the metabase. By default, this is specified as a relative path. For example, the
+path that is sent back to the client when you are using secure password changes
+is /IISADMPWD/Aexp.htr; therefore, the client tries to reconnect by appending
+the redirect path to the originally requested URL. Because the server will then
+check the logon credentials (which have expired) another HTTP 302 redirect call
+is made, and this continues to occur, which causes the browser request to enter
+into a loop.
+
+RESOLUTION
+==========
+
+To resolve this behavior, change the relative path that is specified in the
+metabase to an absolute path. Use the Mdutil.exe utility that is included with
+the Windows NT 4.0 Service Pack 6a (SP6a) source files, to set the appropriate
+value in the metabase.
+
+NOTE: Do not use the version that is included in the Windows NT Option Pack 4.0.
+Also, this utility is not included in Windows 2000.
+
+Change the appropriate metabase value based on whether you have set up the
+computer to allow secured password changes or unsecured password changes. If you
+are using secured password change pages, run the following command:
+
+  mdutil.exe SET w3svc/AuthExpiredUrl
+  "http://&lt;servername&gt;/iisadmpwd/aexp.htr"
+
+If you are using unsecured password change pages, run the following command
+
+  mdutil.exe SET w3svc/AuthExpiredUnsecureUrl
+  "http://&lt;servername&gt;/iisadmpwd/aexp3.htr"
+
+where &lt;servername&gt; is the computer name of your proxy server or a Fully
+Qualified Domain Name (FQDN) of the proxy server.
+
+NOTE: The quotation marks in these commands are not optional; they are used to
+set a string value in the metabase.
+
+After you have set the appropriate value, restart the IIS services by running the
+Iisreset.exe command-line utility on the server.
+
+Additional query words: iis 5 proxy iisadmpwd loop
+
+======================================================================
+Keywords          : kbenv kbtool kbOSWin2000 
+Technology        : kbiisSearch kbAudDeveloper kbiis500 kbProxyServSearch kbProxyServ200
+Version           : :2.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

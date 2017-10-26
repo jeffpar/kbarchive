@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152659: XADM: Importing Exchange Accounts from Another Organization | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152659: XADM: Importing Exchange Accounts from Another Organization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152659/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152659/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152659/","publisher":null,"image":null,"headline":"Q152659: XADM: Importing Exchange Accounts from Another Organization","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152659-xadm-importing-exchange-accounts-from-another-organization">Q152659: XADM: Importing Exchange Accounts from Another Organization</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152659
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can connect two Microsoft Exchange Server messaging systems that are in
+different Microsoft Exchange Server Organizations by using the Dynamic RAS or
+X.400 connectors. The drawback to this is that no directory information is
+replicated. To send mail to users in the other Organization, you need to create
+custom recipients for each account. This article explains how to create these
+custom recipients.
+
+MORE INFORMATION
+================
+
+To create custom recipients for accounts in another Organization, follow these
+steps (Microsoft Exchange Server 1 and 2 are just examples):
+
+1. Extract the users on Microsoft Exchange Server 1 by starting the Microsoft
+  Exchange Administrator program and on the Tools menu, clicking Directory
+  Export.
+
+2. Edit the CSV file that you just created and change the Obj-Class column from
+  Mailbox to Remote.
+
+3. Start Microsoft Excel, and open the CSV file in it. On the Data menu, click
+  Text to Columns.
+
+4. In the Convert Text to Columns Wizard - Step 1 of 3 dialog box, click
+  Delimited, and then click Next.
+
+5. In the Convert Text to Columns Wizard - Step 2 of 3 dialog box, in the
+  Delimiters area, click to clear all the check boxes except the Other check
+  box, click to select the Other check box, and in the space provided, type "%"
+  (without the quotation marks), and then click Next.
+
+6. In the Convert Text to Columns Wizard - Step 3 of 3 dialog box, for each
+  address class except the X.400 address, click "Do not import column (skip)"
+  and then click Finish. You now have a column labeled E-mail Addresses that
+  contains the X.400 addresses of all your users.
+
+7. Cut and paste the addresses under the column labeled E-mail Address.
+
+8. Remove the E-Mail Addresses column from the CSV file.
+
+9. Import this file into Microsoft Exchange Server 2 by starting the Microsoft
+  Exchange Server Administrator program, and on the Tools menu, clicking
+  Directory Import.
+
+Additional query words: Import Export XSRVAdm
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

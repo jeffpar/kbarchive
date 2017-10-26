@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253233/","publisher":null,"image":null,"headline":"Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253233-info-ndisquerymapregistercount-is-obsolete-on-windows-2000">Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253233
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbnetwork kbDDK kbNDIS kbOSWin2000 kbDSupport kbGrpDSNTDDK
+Last Modified: 24-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The NdisQueryMapRegisterCount function does not provide useful information on a
+Windows 2000-based computer.
+
+MORE INFORMATION
+================
+
+On a Microsoft Windows NT 4.0-based computer, busmaster NIC miniports call the
+NdisQueryMapRegisterCount function and obtain information about the total number
+of available map registers on the system. This information can assist a driver
+to make decisions about how many map registers to attempt to allocate with the
+NdisMAllocateMapRegisters function. Regardless of this information, driver
+writers have had to work within the restriction that they must operate with less
+than the desired number of map registers.
+
+Under Windows 2000, the NdisQueryMapRegisterCount function does not always return
+the total number of map registers available in the system; the function may
+return an invalid value. Driver writers should not use this function.
+
+Here is an example of how driver writers can allocate map registers. Driver
+writers can call the NdisMAllocateMapRegisters function in a loop, reducing the
+number of map registers requested from the ultimate desired number to the
+minimum number acceptable in each iteration until the function succeeds or the
+loop terminates. If the minimum is not available, the driver should write an
+event log entry and return an appropriate error code from the MiniportInitialize
+handler.
+
+Driver writers should also refer to the NdisMInitializeScatterGatherDma function
+for an alternative DMA approach, where the miniport driver does not have to
+manage map registers:
+
+  Adapter-&gt;MapRegisters = MAX_MAP_REGISTERS_NEEDED;
+
+        while(Adapter-&gt;MapRegisters &gt; (MIN_MAP_REGISTERS_NEEDED - 1))
+        {
+               Status = NdisMAllocateMapRegisters(
+                              Adapter-&gt;AdapterHandle,   // handle input to MiniportInitialize.
+                              0,
+                              NDIS_DMA_32BITS,          // address size that the NIC uses for DMA operations
+                              Adapter-&gt;MapRegisters,    // maximum number of map registers
+                              MAX_PHYSICAL_MAPPINGS);   // maximum number of bytes that the NIC can
+                                                        // transfer in a single DMA operation
+
+                // If Call succeeded, Maximum number of map registers
+                // requested have been allocated... else the requested number
+                // of map registers could not be allocated due to system
+                // resource constraints.
+
+                if(Status == NDIS_STATUS_SUCCESS)
+                {
+                      break;
+                }
+
+                // Else Reduce the request size and try again till you succeed or are out of resources.
+                Adapter-&gt;MapRegisters--;
+        }
+
+REFERENCES
+==========
+
+NdisMAllocateMapRegisters() NdisMInitializeScatterGatherDma()
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbDDK kbNDIS kbOSWin2000 kbDSupport kbGrpDSNTDDK 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

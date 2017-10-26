@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236811: XWEB: How to Set Up OWA for Specific Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236811: XWEB: How to Set Up OWA for Specific Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236811/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236811/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236811/","publisher":null,"image":null,"headline":"Q236811: XWEB: How to Set Up OWA for Specific Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236811-xweb-how-to-set-up-owa-for-specific-users">Q236811: XWEB: How to Set Up OWA for Specific Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236811
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to limit the use of Outlook Web Access (OWA) or how
+to grant permission to select individuals or to groups of individuals to use
+OWA.
+
+MORE INFORMATION
+================
+
+By default, you must grant "Log on locally" permission on the server where OWA
+is installed to users who use OWA. You can limit which users can gain access to
+OWA with the "Log on locally" permission.
+
+The procedure that you use to grant "Log on locally" permission depends on the
+version of Microsoft Windows and the role of the server where OWA is installed.
+Use the appropriate procedure for your server configuration.
+
+Windows NT 4.0 Member Server
+----------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  User Manager.
+
+2. Click the Policies tab, and then click User Rights.
+
+3. Select "Log on locally" from the Right list, and then click Add. The Add
+  Users and Groups dialog box is displayed.
+
+4. Remove the Everyone group, and then add the group or users who will have
+  access to OWA.
+
+5. Click OK.
+
+Windows 2000 Member Server
+--------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Local Security Policy.
+
+2. Click Security Settings, click Local Policies, and then click User Rights
+  Assignment.
+
+3. In the Details pane, double-click "Log on locally", remove the Everyone
+  group, and then add the group or users who will have access to OWA.
+
+4. Close the Local Security Policy window.
+
+5. Click Start, click Run, type "secedit /refreshpolicy machine_policy" (without
+  the quotation marks), and then click OK.
+
+Windows 2000 Domain Controller
+------------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Domain Controller Security Policy.
+
+2. Click Security Settings, click Local Policies, and then click User Rights
+  Assignment.
+
+3. In the Details pane, double-click "Log on locally", remove the Everyone
+  group, and then add the group or users who will have access to OWA.
+
+4. Close the Domain Controller Security Policy window.
+
+5. Click Start, click Run, type "secedit /refreshpolicy machine policy" (without
+  the quotation marks), and then click OK.
+
+Users or groups that have "Log on locally" permissions can log on to OWA. Users
+or groups that do not have "Log on locally" permissions are prompted for
+credentials after they enter their alias at the Logon screen. They will be
+prompted three times, and then get the "401.1 Unauthorized" error message. This
+behavior is by design.
+
+The user has three opportunities to type the correct password information.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

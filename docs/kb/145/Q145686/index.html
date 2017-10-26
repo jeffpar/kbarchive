@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145686/","publisher":null,"image":null,"headline":"Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145686-prb-cdaorecordview-bookmark-members-invalid-after-requery">Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145686
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 4.0, 4.1, 4.1b, 4.2, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some cases, when you use CDaoRecordView, added records will not show up in
+the result set after calling Requery() on the CDaoRecordset.
+
+CAUSE
+=====
+
+CDaoRecordView uses Jet engine bookmarks to determine when you are on the first
+or last record of the related CDaoRecordset. Jet engine bookmarks are not
+guaranteed to be valid following a Requery().
+
+RESOLUTION
+==========
+
+To avoid the problem, re-initialize the CDaoRecordView bookmark members to
+indicate that they are not valid bookmark values following any Requery() on the
+related CDaoRecordset. The following example shows how this might be done in a
+CDaoRecordView-derived class's OnMove() function:
+
+     BOOL CMyRecordView::OnMove(UINT nIDMoveCommand)
+     {
+        CDaoRecordset* pRecordset = OnGetRecordset();
+        if (m_bAddMode)
+        {
+           if (!UpdateData())
+              return FALSE;
+           try
+           {
+              pRecordset-&gt;Update();
+           }
+           catch (CDaoException* e)
+           {
+              AfxMessageBox(e-&gt;m_pErrorInfo-&gt;m_strDescription);
+              e-&gt;Delete();
+              return FALSE;
+           }
+
+           pRecordset-&gt;Requery();
+
+           m_varBookmarkCurrent = 1L;   // &lt;&lt;- re-initialize
+           m_varBookmarkFirst =         // &lt;&lt;- the bookmark
+              m_varBookmarkLast = 0L;   // &lt;&lt;- member variables!
+
+           UpdateData(FALSE);
+           m_bAddMode = FALSE;
+           return TRUE;
+        }
+        else
+        {
+           return CDaoRecordView::OnMove(nIDMoveCommand);
+        }
+     }
+
+If you call Requery() in any other case from your CDaoRecordView-derived class,
+you should also perform this re-initialization.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

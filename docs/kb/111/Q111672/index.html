@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111672: How to Use a Portion of a Memo Field in a List Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111672: How to Use a Portion of a Memo Field in a List Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111672/","publisher":null,"image":null,"headline":"Q111672: How to Use a Portion of a Memo Field in a List Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111672-how-to-use-a-portion-of-a-memo-field-in-a-list-box">Q111672: How to Use a Portion of a Memo Field in a List Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111672
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to effectively use a portion of a memo field in a
+list box object that is part of a user-defined screen.
+
+MORE INFORMATION
+================
+
+To illustrate how to use a portion of a memo field in a list box object, suppose
+that the first 40 characters of the memo field are needed for the list box.
+
+If a list box object is created using the Screen Builder and the List Items From
+Field option is selected, then a reasonable expression to enter in the field
+expression dialog window is:
+
+  LEFT(&lt;memo field name&gt;,40)
+
+This expression will work well as long as all the first lines of all the memo
+fields in each record are at least 40 characters. If this is not the case, for
+example, if some of the memo fields have first lines that are less than 40
+characters, the above statement will return the carriage return (CR) and
+linefeed (LF) characters and display them in the list box. Since this is not a
+desirable side-effect, the following two expressions will correct this
+situation.
+
+NOTE: Although the first expression works well, the second expression provides a
+more concise solution.
+
+  LEFT(&lt;memo field name&gt;,IIF(AT(CHR(13), &lt;memo field name&gt;);
+  &lt;40,AT(CHR(13),&lt;memo field name&gt;)-1,40))
+
+  -or-
+
+  LEFT(MLINE(&lt;memo field name&gt;,1),40)
+
+The second expression works because the MLINE() function is going to return the
+characters for the first line of the memo field, up to but not including the
+CR/LF characters.
+
+The only thing to watch out for concerning the second expression is the current
+SET MEMOWIDTH value (the default line length is 50 characters). If the MEMOWIDTH
+is less than 40, no error will result, but only the number of characters
+corresponding to the MEMOWIDTH value will be returned. For example, if the
+MEMOWIDTH value is 35, only 35 characters will be returned from the second
+expression.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin listbox
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

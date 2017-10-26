@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312946/","publisher":null,"image":null,"headline":"Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312946-using-services-for-unix-to-synchronize-passwords-with-nis-domain">Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312946
+Product(s): Microsoft Windows NT
+Version(s): 2.0,2.1 OEM Only,2.2 OEM Only,2.3 OEM Only,3.0
+Operating System(s): 
+Keyword(s): w2000sfu
+Last Modified: 21-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Services for UNIX, versions 2.0, 2.1 OEM Only, 2.2 OEM Only, 2.3 OEM Only, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can us Password Synchronization to provide one-way (Windows-to-UNIX) and
+two-way password synchronization between Windows-based domains and Network
+Information Service (NIS) domains. You can do this whether the master server of
+the NIS domain is running on UNIX or is running Windows (Server for NIS).
+
+MORE INFORMATION
+================
+
+If the NIS master server is running UNIX, you can provide one-way
+synchronization by following these steps:
+
+1. Install Password Synchronization on all of the Windows-based computers (such
+  as the domain controllers) from which you want to synchronize passwords.
+
+2. Install the single-sign-on daemon (SSOD) on the NIS master server.
+
+3. Edit the sso.conf file on the NIS master server as follows:
+
+  a. Set USE_NIS to 1.
+
+  b. Set NIS_UPDATE_PATH to specify the location of the NIS makefile file.
+
+This instructs the SSOD to run the makefile file and to push the changed maps
+when a password-change request is received from the Windows-based domain.
+If Server for NIS is acting as the master server for the NIS domain, you do not
+have to do anything to provide one-way password synchronization. When a Windows
+user changes his or her password, Server for NIS automatically updates the UNIX
+password for NIS clients. If you also want to synchronize passwords with UNIX
+computers that are not part of the NIS domain, you can install Password
+Synchronization on the Windows-based domain controllers and configure the UNIX
+computers as described earlier in this article.
+
+Providing UNIX-to-Windows synchronization is similar for both types of NIS
+domains. To do this:
+
+1. If the NIS master server is running UNIX, configure it for one-way
+  synchronization as described earlier in this article.
+
+2. Install Password Synchronization on all domain controllers. If the NIS master
+  server is a UNIX computer, configure Password Synchronization on Windows for
+  two-way synchronization with the master server. Add each NIS client to the
+  list of computers that Password Synchronization synchronizes with. Make sure
+  to turn on UNIX-to-Windows synchronization and to turn off Windows-to-UNIX
+  synchronization. Windows-to-UNIX synchronization must be turned on only for
+  the NIS master.
+
+3. Install the Password Synchronization pluggable authentication module (PAM) on
+  each NIS client, and then copy the sso.conf file from the master server to
+  the /etc folder on those clients.
+
+4. If the NIS master server is a Windows-based computer that runs Server for
+  NIS, copy the Sso.cfg file to one of the NIS clients. Set SYNC_HOSTS to
+  specify the computer that is running Server for NIS as the Windows-based
+  computer with which to synchronize passwords, and then copy that file to the
+  other UNIX clients.
+
+5. Configure each UNIX computer to allow users to use the yppasswd command to
+  change their passwords. To do this, replace the yppasswd binary file on the
+  UNIX computer with a link to the passwd binary file, and then edit the
+  /etc/nsswitch.conf file to replace the passwd and shadow lines with the
+  following lines:
+
+  passwd: files [NOTFOUND=continue] nis
+  shadow: files [NOTFOUND=continue] nis
+
+After you do this, when a user runs the yppasswd command to change his or her
+password, the passwd binary file is run to change the password. If the user's
+passwd entry is not found in the local passwd and shadow files, the NIS password
+is changed instead.
+
+Additional query words: SFU sync sso.conf solar coaster solarcoaster interix
+
+======================================================================
+Keywords          : w2000sfu 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch kbWinServiceUNIX300 kbWinServiceUNIX210OEM kbWinServiceUNIX220OEM
+Version           : :2.0,2.1 OEM Only,2.2 OEM Only,2.3 OEM Only,3.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

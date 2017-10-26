@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207931: HOWTO: Pass Arrays Between Visual Basic and C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207931: HOWTO: Pass Arrays Between Visual Basic and C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207931/","publisher":null,"image":null,"headline":"Q207931: HOWTO: Pass Arrays Between Visual Basic and C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207931-howto-pass-arrays-between-visual-basic-and-c">Q207931: HOWTO: Pass Arrays Between Visual Basic and C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207931
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbATL kbDLL kbVBp kbVBp500 kbVBp600 kbVC kbVC500 kbVC600 kbGrpDSVB kbDSupport
+Last Modified: 11-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses some aspects related to passing data in arrays between
+Microsoft Visual Basic and C functions. It compares the Standard C array and the
+SAFEARRAY data types, and discusses the different scenarios when calling C
+functions from Visual Basic or writing functions in C.
+
+The following scenarios are discussed:
+
+- Scenario 1: Passing an array from Visual Basic to a function expecting a
+  pointer.
+
+- Scenario 2: Writing a function in C/C++ to receive a SAFEARRAY.
+
+- Scenario 3: Declaring SAFEARRAYs in Component Object Model (COM) DLLs written
+  in C.
+
+In the "More Information" section there are some code samples that illustrate the
+scenarios discussed.
+
+NOTE: The code samples use a one-dimensional array as an example. If you pass
+multi-dimensional arrays, you need to keep in mind that SAFEARRAY is
+column-major, while the array in C is row-major.
+
+MORE INFORMATION
+================
+
+In Microsoft Visual Basic an array is stored as a SAFEARRAY. In C it is
+basically a pointer to the first element of the array. While a SAFEARRAY
+provides information on the array size, dimensions, and so forth, the C way of
+using just a pointer leaves all the responsibility of controlling the data to
+the programmer. You will find a more detailed explanation about SAFEARRAYs in
+Scenario 2.
+
+Scenario 1: Passing an Array from Microsoft Visual Basic to a Function Expecting a Pointer
+------------------------------------------------------------------------------------------
+
+It is common to call from Microsoft Visual Basic a function in a DLL not
+specifically intended for Visual Basic, such as Windows API functions. Since the
+C function expects the address of the first element of the array, you can
+accomplish this in Visual Basic by passing the first element of the array by
+reference.
+
+For example, the following is the prototype of a C function that returns the sum
+of long integers in an array. The first parameter is a pointer to the array and
+the second provides the number of elements in the array.
+
+  long AddLongs_Pointer(long *plArrayOfLongs, long lElements);
+
+The Visual Basic version of the function declaration looks like this:
+
+     Declare Function AddLongs_Pointer Lib "MyDll.dll" (FirstElement As Long,
+     ByVal lElements As Long) As Long
+
+To call the function, use the following code:
+
+     Dim MyArrayOfLongs(0 to 10) as Long
+     Dim lTotal as Long
+     ' Insert code here to initialize the elements of the array
+     ' Calling the function
+     lTotal = AddLongs_Pointer (MyArrayOfLongs(0), UBound(MyArrayOfLongs) + 1)
+
+LIMITATIONS: See the "Important Considerations" topic.
+
+Scenario 2: Writing a Function in C to Receive a SAFEARRAY
+----------------------------------------------------------
+
+To write a function in C to receive or return an array from or to Visual Basic,
+you need to use SAFEARRAY as the parameter type. You will be able to call the
+function naturally within Visual Basic, as if it were written in Visual Basic.
+You will also be able to check if enough memory was allocated and if the
+dimensions are adequate. In some circumstances, you will even be able to resize
+the dimension of the array.
+
+SAFEARRAY is basically a structure that provides important information about an
+array, including a pointer to the actual elements of the array. SAFEARRAY is
+defined in the OLEAUTO.H header. This header also includes prototypes for a set
+of API functions used to manipulate SAFEARRAYs.
+
+In Win32, after replacing all typedefs and conditionals included in its
+declaration, this is what SAFEARRAY looks like:
+
+     struct SAFEARRAY
+     {
+        WORD cDims; // number of dimensions
+        WORD fFeatures; // bitfield indicating attributes of a particular
+                        // array
+        DWORD cbElements; // size of an element of the array
+        DWORD cLocks; // lock counter
+        Void * pvData; // pointer to the array's elements (use only if
+                       // cLocks&gt;0)
+        SAFEARRAYBOUND rgsabound[1]; // structure containing information for
+                                     // each dimension
+     };
+
+The SAFEARRAYBOUND member is also a structure and looks like the following:
+
+     struct SAFEARRAYBOUND
+     {
+        DWORD cElements; // number of elements on a given dimension
+        long lLbound; // lower boundary on a given dimension
+     };
+
+It is beyond the scope of this article to describe in detail how to operate a
+SAFEARRAY in C or C++. You can find this information in the references provided.
+The purpose here is to show you how to prototype your function in C to make it
+work correctly with Visual Basic.
+
+The following example demonstrates how to create a function that takes an array
+of longs as a parameter:
+
+     Declare Function AddLongs_SafeArray Lib "MyDll.dll" (FirstElement() As
+     Long, lSum As Long) As Long
+
+The C declaration will need to look like this:
+
+     long AddLongs_SafeArray(SAFEARRAY **psaArray, long *plSum);
+
+Note that now the function does not need a parameter to show how many elements
+are in the array. This information is included in the SAFEARRAY structure.
+
+LIMITATIONS: See the "Important Considerations" topic.
+
+Scenario 3: Declaring SAFEARRAYS in COM DLLs Written in C
+---------------------------------------------------------
+
+To use Type libraries or COM DLLs, you should always declare SAFEARRAY parameters
+as [in,out] for it to work correctly in Visual Basic. This is how your
+declaration should look:
+
+     STDMETHOD(AddLongs)(/*[in,out]*/ SAFEARRAY ** psaMyArray, /*[in,out]*/ 
+     long *plSum);
+
+The .idl file contains the following declaration:
+
+     [id(1), helpstring("method AddLongs")] HRESULT AddLongs([in,out]
+     SAFEARRAY (long) * psaMyArray, [in,out] Long *plSum);
+
+Important Considerations
+------------------------
+
+- The solutions described in Scenarios 1 and 2 cannot be used with arrays of
+  strings or User Defined Types (UDTs) containing strings. This is due to the
+  intrinsic UNICODE/ANSI conversion performed by Visual Basic when calling DLL
+  functions. However, this limitation does not apply to functions defined in
+  Type libraries, so the solution described in Scenario 3 is valid for arrays
+  of strings or UDTs containing strings.
+
+- Microsoft Visual Basic version 5.0 and earlier versions of Visual Basic
+  cannot handle SAFEARRAY as return values. In Microsoft Visual Basic version
+  6.0, this is possible and the C prototype would be something like this:
+
+     STDMETHOD(ReturnAnArray) (/*[out,retval]*/SAFEARRAY **psaArray);
+
+Sample Code
+-----------
+
+Here are some code samples that demonstrate the concepts described in this
+article. The first sample has two functions, the first (AddLongs_Pointer)
+related to Scenario 1 and the second (AddLongs_SafeArray) related to Scenario 2.
+The second sample has only one function (AddLongs) and is related to Scenario
+3.
+
+Sample 1:
+
+This sample calculates the sum of an array of long integers using two functions
+in a Win32 DLL. The first function expects a pointer to a standard C array and
+the second one uses a SAFEARRAY. Both should return the same value.
+
+1. Create a Win32 DLL in Visual C named MyStDll.
+
+2. Add a new header file and paste the following code into it:
+
+      /* prototypes */ 
+      #include &lt;windows.h&gt;
+      #include &lt;oleauto.h&gt;
+
+      long __declspec (dllexport) __stdcall AddLongs_Pointer(long
+      *plArrayOfLongs, long lElements);
+
+      long __declspec (dllexport) __stdcall AddLongs_SafeArray(SAFEARRAY
+      **psaArray, long *plSum);
+
+3. Add a new source code file with the following code:
+
+     /* functions */ 
+     #include "MyDll.h" // use here the name of your header file
+
+     /*========================================================
+      AddLongs_Pointer - a function to add all elements of an array passed
+      as a pointer (long *)
+      returns the sum of the elements
+     ==========================================================*/ 
+
+     long __declspec (dllexport) __stdcall AddLongs_Pointer(
+     long *plArrayOfLongs, // the array's pointer
+     long lElements) // number of elements to add
+     {
+        long lSum;
+        long i;
+
+        lSum = 0;
+
+        if(lElements &gt; 0)
+        {
+           for (i=0; i &lt; lElements; i++)
+              lSum = lSum + plArrayOfLongs[i];
+        }
+        // returning
+        return(lSum);
+     }
+
+     /*===============================================================
+     AddLongs_SafeAray - a function to add all elements of an one-dimensional
+     array of longs
+     return codes: 0 - Success
+                   &gt;0 - Failure
+     =================================================================*/ 
+     long __declspec (dllexport) __stdcall AddLongs_SafeArray(
+        SAFEARRAY **psaArray, // the array to use
+        long *plSum) // returns the sum of all elements of the array
+     {
+        long lElements; // number of elements in the array
+        long iCount;
+        HRESULT lResult; // return code for OLE functions
+        long *pArrayElements; // pointer to the elements of the array
+
+        // initializing the output
+        *plSum=0;
+
+        // checking if it is an one-dimensional array
+        if ( (*psaArray)-&gt;cDims != 1 ) return(1);
+
+        // checking if it is an array of longs
+        if ( (*psaArray)-&gt;cbElements != 4 ) return(2);
+
+        // how many elements are there in the array
+        lElements=(*psaArray)-&gt;rgsabound[0].cElements;
+
+        // locking the array before using its elements
+        lResult=SafeArrayLock(*psaArray);
+        if(lResult)return(3);
+
+        // using the array
+        pArrayElements=(long*) (*psaArray)-&gt;pvData;
+        for (iCount=0; iCount &lt; lElements; iCount++)
+           *plSum = *plSum + pArrayElements[iCount];
+
+        // releasing the array
+        lResult=SafeArrayUnlock(*psaArray);
+        if (lResult) return(4);
+
+        // returning
+        return(0);
+     }
+
+4. Add a .def file to your project and paste in the following code:
+
+  EXPORTS
+     AddLongs_Pointer @1
+     AddLongs_SafeArray @2
+
+5. Press F7 to build the DLL.
+
+6. In Visual Basic create a new Standard EXE project. Form1 is created by
+  default.
+
+7. Place a command button named Command1 on Form1 and paste the following code
+  into Form1's code window:
+
+     Option Explicit
+
+     Private Declare Function AddLongs_Pointer Lib "MyStDll.dll" _
+     (FirstElement As Long, ByVal lElements As Long) As Long
+
+     Private Declare Function AddLongs_SafeArray Lib "MyStDll.dll" _
+     (FirstElement() As Long, lSum As Long) As Long
+
+     Private Sub Command1_Click()
+        Dim ArrayOfLongs(2) As Long
+        Dim lSum As Long
+        Dim k As Long
+
+        ArrayOfLongs(0) = 1
+        ArrayOfLongs(1) = 2
+        ArrayOfLongs(2) = 3
+
+        lSum = AddLongs_Pointer(ArrayOfLongs(0), UBound(ArrayOfLongs)+1)
+        MsgBox "Result with C array = " &amp; Str$(lSum)
+
+        k = AddLongs_SafeArray(ArrayOfLongs(), lSum)
+        If k = 0 Then
+           MsgBox "Result with Safearray = " &amp; Str$(lSum)
+        Else
+           MsgBox "Call with Safearray failed"
+        End If
+     End Sub
+
+8. Press F5 to run this project.
+
+9. Click Command1. You should see two message boxe. The first one displays the
+  returned value of the first function and passes a pointer to the array. The
+  second one displays the result returned from the second function that used
+  the SAFEARRAY. Both functions return number 6.
+
+Sample 2:
+
+This sample calculates the sum of long integers in a SAFEARRAY using a function
+in an ActiveX DLL created with the ActiveX Template Library (ATL) wizard.
+
+1. In Visual C create an ATL DLL using the ATL COM AppWizard. Name it MyAtlDll.
+
+2. From the Insert menu, select New ATL Object. Highlight Objects in the
+  category list and select Simple Object in the Objects list. Click Next. Type
+  in MyClass in the Short Name field, and then click the Attributes tab. Check
+  the following options and then click OK:
+
+  Threading Model: Apartment
+  Interface: Dual
+  Aggregation: Yes
+
+3. On the ClassView pane in the workspace, right-click IMyClass and select Add
+  Method. Type AddLongs in the Method Name text box and type the following in
+  the Parameters text box:
+
+  [in,out] SAFEARRAY (long) *psaMyArray, [in,out] long *plSum
+
+Note for Visual C version 6.0: If you are using Visual C version 6.0 you may
+receive the following error message:
+
+  Unable to create the function because the header or the implementation file
+  could not be found.
+
+This is a known issue in the wizard of Visual C version 6.0. You can by pass this
+error by manually changing the parameters for the AddLongs method in the header,
+source and .idl files as explained here:
+
+In the Parameters list type in:
+
+  [in,out] long *psaMyArray, [in,out] long *plSum
+
+On the FileView tab in the workspace, expand MyAtlDll files. Under the header
+files double-click the MyClass.h header file. At the very end of this file you
+will find the declaration of your method:
+
+  STDMETHOD(AddLongs)(/*[in,out]*/ long *psaMyArray, /*[in,out]*/ long *plSum);
+
+Change it to the following:
+
+  STDMETHOD(AddLongs)(/*[in,out]*/ SAFEARRAY **psaMyArray, /*[in,out]*/ long *plSum);
+
+Under the Source Files list double-click MyClass.cpp. Here you will find the
+implementation of your method. Change the following line:
+
+  STDMETHODIMP CMyClass::AddLongs(long *psaMyArray, long *plSum)
+
+to:
+
+  STDMETHODIMP CMyClass::AddLongs(SAFEARRAY **psaMyArray, long *plSum)
+
+Also, under the Source Files list, double-click the .idl file (the only one with
+an .idl extension) and locate the following line:
+
+  [id(1), helpstring("method AddLongs")] HRESULT AddLongs([in,out] long *psaMyArray, [in,out] long *plSum);
+
+Change it to:
+
+  [id(1), helpstring("method AddLongs")] HRESULT AddLongs([in,out] SAFEARRAY(long) *psaMyArray, [in,out] long *plSum);
+
+1. Double-click the implementation file, MyClass.cpp, under the Source Files
+  list. In the implementation file add the following code to your function:
+
+     STDMETHODIMP CMyClass::AddLongs(SAFEARRAY * * psaArray, long * plSum)
+     {
+
+        // TODO: Add your implementation code here
+        long lElements; // number of elements in the array
+        long iCount;
+        HRESULT lResult; // return code for OLE functions
+        long *pArrayElements; // pointer to the elements of the array
+
+        // initializing the output
+        *plSum=0;
+
+        // checking if it is a one-dimensional array
+        if ( (*psaArray)-&gt;cDims != 1 ) return(E_FAIL);
+
+        // checking if it is an array of longs
+        if ( (*psaArray)-&gt;cbElements != 4 ) return(E_FAIL);
+
+        // how many elements are there in the array
+        lElements=(*psaArray)-&gt;rgsabound[0].cElements;
+
+        // locking the array before using its elements
+        lResult=SafeArrayLock(*psaArray);
+        if(lResult)return(lResult);
+
+        // using the array
+        pArrayElements=(long*) (*psaArray)-&gt;pvData;
+        for (iCount=0; iCount&lt;lElements; iCount++)
+           *plSum = *plSum + pArrayElements[iCount];
+
+        // releasing the array
+        lResult=SafeArrayUnlock(*psaArray);
+        if (lResult) return(lResult);
+
+        return S_OK;
+     }
+
+2. Build the DLL by pressing the F7 key.
+
+3. In Visual Basic, create a new Standard EXE project. Form1 is created by
+  default.
+
+4. Place a command button named Command1 on Form1.
+
+5. Select References from the Project menu and add a reference to the ActiveX
+  DLL created previously (MyAtlDll).
+
+6. Paste the following code into the Click event of Command1:
+
+     Private Sub Command1_Click()
+        Dim MyObj As New MYATLDLLLib.MyClass
+        Dim ArrayOfLongs(3) As Long
+        Dim lSum As Long
+
+        ArrayOfLongs(0) = 1
+        ArrayOfLongs(1) = 2
+        ArrayOfLongs(2) = 3
+
+        MyObj.AddLongs ArrayOfLongs, lSum
+        MsgBox "Result from ATL dll = " &amp; Str$(lSum)
+     End Sub
+
+7. Press F5 to run your project.
+
+8. Click Command1. You should see a message box that displays the value 6
+  returned from the AddLongs method.
+
+REFERENCES
+==========
+
+MSDN Library: Platform SDK; COM and ActiveX Object Services; Automation;
+Conversion and Manipulation Functions; Array Manipulation API Functions
+
+MSDN Library: Technical Articles; Visual Tools; Visual Basic; Extending Visual
+Basic with C++ DLLs.
+
+VB5Dll.doc: This file is located on your Microsoft Visual Basic 5.0 installation
+CD, in the \Tools\Docs directory.
+
+For additional informationabout the 'Note for Visual C version 6.0' section
+mentioned previously, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q198017 BUG: Unexpected Error Using ATL Interface Wizard to Add Methods
+
+
+For additional informationon working with Visual C++ DLLs from Visual Basic,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+  Q188541 INFO: Visual Basic Requirements for Using Exported DLLs
+
+  Q171583 HOWTO: Fill a 32-bit VBA Array of UDType via a Visual C++ DLL
+
+  Q194609 HOWTO: Pass Array of UDTs with Variable Length Strings to C/C++
+
+  Q177218 HOWTO: Return Array to VB from VC++ DLL or OLE Server
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbDLL kbVBp kbVBp500 kbVBp600 kbVC kbVC500 kbVC600 kbGrpDSVB kbDSupport 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

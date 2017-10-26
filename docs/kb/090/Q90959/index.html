@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90959/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90959/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90959/","publisher":null,"image":null,"headline":"Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90959-info-using-index-on-tag-unique-to-create-unique-index">Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90959
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:1.0,1.01,1.02,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a,5.0,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+- Microsoft FoxPro for MS-DOS, versions 1.0, 1.01, 1.02, 2.0, 2.5, 2.5a 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+- Microsoft FoxBASE+ for MS-DOS, version 2.1 
+-------------------------------------------------------------------------------
+
+The "INDEX ON &lt;field&gt; TO &lt;idx_file&gt; | TAG &lt;tagname&gt; UNIQUE" command
+creates an index in which only one record appears for each key value
+in the database.
+
+The UNIQUE qualifier specifies that only the first record with a
+particular index key is included in an IDX or CDX index tag. You can
+use a UNIQUE index to prevent access or display of duplicate records
+because all subsequent records with the same index keys are excluded
+from the index file.
+
+Using the UNIQUE qualifier in the INDEX command has the same effect as
+issuing the SET UNIQUE ON command before issuing the INDEX or REINDEX
+command. If a key is deleted, it is removed from the index, even if
+the file contains other occurrences of the deleted key.
+
+SUMMARY
+=======
+
+
+
+Additional query words: VFoxWin FoxDos FoxWin 1.00 fox base tag
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbFoxBASE210DOS kbFoxBASESearch kbVFP500 kbVFP600
+Version           : MS-DOS:1.0,1.01,1.02,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

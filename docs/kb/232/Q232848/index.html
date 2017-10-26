@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232848: How to Create a WinMSD Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232848: How to Create a WinMSD Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232848/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232848/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232848/","publisher":null,"image":null,"headline":"Q232848: How to Create a WinMSD Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232848-how-to-create-a-winmsd-report">Q232848: How to Create a WinMSD Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232848
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Diagnostics, also known as WinMSD, is a utility used to gather
+detailed configuration information about computers running Windows NT. It can be
+beneficial for Microsoft Support Professionals to use this information to
+troubleshoot issues. End users can also use this utility to record current
+configuration information on each of their computers for archival purposes.
+WinMSD can be run from the graphical user interface (GUI) or at an MS-DOS
+command prompt.
+
+MORE INFORMATION
+================
+
+WinMSD usage:
+
+winmsd [\\computername] [/a /s /f /p]
+/a  Causes a complete system report to be generated
+/s  Causes a summary system report to be generated
+/f  Causes the system report to be sent to a file
+/p  Causes the system report to be send to the current printer
+
+If you run the utility from the command prompt without switches, a GUI appears,
+which has multiple tabs that allow you to view specific information. The default
+tab is the Version tab, which indicates the version, service pack, and serial
+number.
+
+WinMSD can be run from a command prompt or from the Start Menu.
+
+For troubleshooting purposes, a common command would be:
+
+  "winmsd /a /f " (without the quotation marks)
+
+This queries the local computer and creates a text file (computername.txt) in the
+current directory.
+
+Another common usage is:
+
+  "winmsd \\computername /a /f" (without the quotation marks)
+
+This queries a remote computer (computername) and creates a text file
+(Computername.txt) in the current directory.
+
+To use the GUI version:
+
+1. From the Start menu, point to Programs, point to Administrative Tools, and
+  then click Windows NT Diagnostics.
+
+2. Click Print.
+
+3. Set the following option:
+
+  Scope = All Tabs, Detail Level = Complete, Destination = File
+
+4. You can name and locate the file anywhere you wish.
+
+Additional query words: winnt 4.0 winmsd msd windows diagnostic report
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

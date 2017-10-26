@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95973: Using the Toshiba T5100 with Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95973: Using the Toshiba T5100 with Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95973/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95973/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95973/","publisher":null,"image":null,"headline":"Q95973: Using the Toshiba T5100 with Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95973-using-the-toshiba-t5100-with-windows">Q95973: Using the Toshiba T5100 with Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95973
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Toshiba DOS 5.0 and Microsoft Windows 3.1 on the Toshiba T5100
+laptop, you may experience the following problems:
+
+- The machine reboots when trying to run Windows.
+
+- The machine stops responding (hangs) when entering Windows.
+
+CAUSE
+=====
+
+You are using the Windows versions of HIMEM.SYS and SMARTDRV.SYS.
+
+RESOLUTION
+==========
+
+The Toshiba version of HIMEM.SYS and SMARTDRV.EXE have been modified for the
+T5100 and other Toshiba systems and should be used in place of the Windows 3.1
+versions.
+
+MORE INFORMATION
+================
+
+According to Toshiba technical support, these problems can be corrected as
+follows:
+
+1. Use the HIMEM.SYS driver that ships with Toshiba DOS 5.0 (rather than the one
+  that comes with Windows).
+
+2. Following steps 1 through 3 in the "T5100 and Windows 3.0" section below.
+
+T5100 and Windows 3.0
+---------------------
+
+You may receive either a
+
+  Violated System Integrity
+
+or
+
+  Parity Error 2
+
+message on a Toshiba T5100 when you run non-Windows-based applications in 386
+enhanced mode of Windows 3.0. Disabling the T5100 Fast ROM option may eliminate
+these messages.
+
+To disable Fast ROM, do the following:
+
+1. Run the file TEST3.EXE from the MS-DOS command prompt. This program is on the
+  Diagnostics disk included with the T5100.
+
+2. After running TEST3.EXE, choose zero for Setup. Select Expanded Memory, then
+  use the down arrow keys to select All Extended No Expanded Memory.
+
+3. Choose Negative for the Fast ROM option.
+
+Using the Windows Select Feature
+--------------------------------
+
+To properly use the Select feature on the T5100 with Windows 3.0, you need to
+select a 101-key keyboard. The Select feature (SHIFT+ARROW, SHIFT+HOME,
+SHIFT+END, SHIFT+PGUP, SHIFT+PGDN) allows you to select large blocks of text in
+Windows-based applications.
+
+To enable this feature on a T5100, do the following:
+
+1. Set up the machine for a 101-key keyboard by running TEST3.EXE on the Toshiba
+  Diagnostics disk.
+
+2. Choose 0 for SETUP and change the keyboard from 84 to 101 keys.
+
+3. Exit and save the changes.
+
+4. Install Windows and choose "Enhanced 101- or 102-key US and Non-US keyboards"
+  as the keyboard type.
+
+NOTE: If you have already installed Windows, run the Windows Setup program and
+select "Enhanced 101- or 102-key US and Non-US keyboards" as the keyboard type.
+
+For additional information, contact Toshiba technical support.
+
+The T5100 computer is manufactured by Toshiba, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 2.x 3.10 3.11 3.00 3.00a lap top lap-top 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:2.x,3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

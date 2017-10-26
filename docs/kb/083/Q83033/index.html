@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83033: Novell NetWare: Error Message on Printer Reconnections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83033: Novell NetWare: Error Message on Printer Reconnections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83033/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83033/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83033/","publisher":null,"image":null,"headline":"Q83033: Novell NetWare: Error Message on Printer Reconnections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83033-novell-netware-error-message-on-printer-reconnections">Q83033: Novell NetWare: Error Message on Printer Reconnections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83033
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.1 has a feature called persistent network
+connections. When you start Windows, it attempts to reestablish the network
+connections that were in use when you closed your last Windows session. This
+applies to both network servers and printers.
+
+When you have persistent printer connections and are running Novell NetWare, if
+the print queue no longer exists, you receive an error message when Windows
+starts up. The NetWare driver is attempting to reconnect your system to a print
+queue that no longer exists. You continue to be presented with this error
+message every time Windows is started until the port in question is connected to
+another network print queue.
+
+There are three solutions to this problem; see below for more details.
+
+MORE INFORMATION
+================
+
+Resolve the problem with one of the following methods.
+
+Method 1: Making Permanent Connections
+--------------------------------------
+
+By making your new connections permanent, you will overwrite the information for
+the nonexistent print queue in the WIN.INI file with your new permanent
+connection information. Next time you start Windows, it will reconnect you to
+your new printer connections and not display error messages.
+
+Method 2: Connecting from the MS-DOS Prompt
+-------------------------------------------
+
+If you do not want to create a permanent printer queue connection in Windows, you
+can connect all the LPT ports to a NetWare print queue from the MS-DOS prompt
+before entering Windows.
+
+If you do this, the next time you start Windows the NetWare driver will prompt
+you to find out if you want to override the existing connection with the
+connection as specified in the WIN.INI file (which is invalid). This message
+occurs because the printer connection definitions in the WIN.INI file are
+invalid (no print queue by that name exists), and the associated LPT port has
+already been redirected (in MS-DOS prior to starting Windows). Choose the No
+button.
+
+You will then be prompted with another message:
+
+  Do you want to remove this printer connection definition from WIN.INI?
+
+Choose the Yes button. This removes the invalid entry from your WIN.INI file. The
+next time you start Windows, you won't get any error messages about your invalid
+print queues.
+
+Method 3: Editing the WIN.INI File
+----------------------------------
+
+You can edit the WIN.INI file with an MS-DOS-based text editor or with Notepad to
+remove the invalid information and replace it with valid information.
+
+
+Additional query words: 3.10 3.11 kbnetwork net ware novell
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183270/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183270/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183270/","publisher":null,"image":null,"headline":"Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183270-xcon-x400-address-replaces-smtp-address-when-resending-message">Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183270
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a message is sent to a Simple Mail Transfer Protocol (SMTP) recipient and
+is then sent back to the message originator non-delivered, an X.400 address of
+the message recipient may be displayed when attempting to resend the message.
+
+An example would be when sending a message to user@domain.com from the Exchange
+client. The message goes to the Internet Mail Service connector and then is sent
+back because the domain, domain.com, was not found. When attempting to resend
+the message, the TO line will contain the following:
+
+   c=us;a= ;p=Microsoft;o=Site;dda:SMTP=user@domain.com
+
+The message can be sent again, however, and will only be sent back if the same
+condition that prevented its original delivery persists.
+
+CAUSE
+=====
+
+This problem will occur when a message originates on an Exchange Server computer
+(XS1) that has an X.400 Connector or Site Connector to another Exchange Server
+computer (XS2) where the actual Internet Mail Service connector resides.
+
+The message leaves XS1 and goes to XS2 to be placed in the outbound queue for the
+Internet Mail Service. As the message traverses the X.400 Connector or Site
+Connector, it is encapsulated in an X.400 address in order to be handled by the
+Exchange Server message transfer agent (MTA). After the message reaches the
+Internet Mail Service on XS2, the X.400 address is stripped down to just the
+basic SMTP address of user@domain.com.
+
+When the message is undeliverable by the Internet Mail Service, it sends the
+message back to the originator (on XS2) by re-encapsulating the message to an
+X.400 address for both the originator and the recipient. The result is the X.400
+address appears in the TO field when the client attempts to resend the message.
+
+WORKAROUND
+==========
+
+This problem is mostly cosmetic in nature. When the client sends a message to
+user@domain.com, after it leaves the Outbox, Exchange Server immediately
+encapsulates the raw SMTP address to the X.400 address.
+
+When the client goes to resend the message with the encapsulated X.400 address,
+the message will still be sent back to the Internet Mail Service for processing
+because the X.400 address shows the proper route back to the Internet Mail
+Service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server 5.0 and 5.5.
+
+Additional query words: imc ndr send again
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

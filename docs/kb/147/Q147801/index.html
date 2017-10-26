@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147801/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147801/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147801/","publisher":null,"image":null,"headline":"Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147801-ppt7-differences-between-powerpoint-versions-70a-and-70b">Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147801
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0,7.0b
+Operating System(s): 
+Keyword(s): kbusage kbdta
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, versions 7.0, 7.0b 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+This article contains a summary of the differences between PowerPoint for
+Windows 95, versions 7.0 and 7.0b.
+
+NOTE: PowerPoint 7.0b was released only as part of Office 7.0b and the
+stand-alone International versions of PowerPoint.
+
+MORE INFORMATION
+================
+
+New Interactive Settings
+------------------------
+
+Hyperlink support is now available in Interactive Settings. PowerPoint 7.0b
+supports the following protocols through the interactive settings feature:
+
+- Http:
+
+- FTP:
+
+- MailTo:
+
+- File:
+
+Can't Open Previous Version Files
+if Login is Different from Install
+--------------------------------------------------------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+PowerPoint 7.0 uses a key in HKEY_CURRENT_USER to find the translator for
+converting files from previous versions. If a different user logs on, that user
+has a different HKEY_CURRENT_USER profile and, therefore, that user doesn't have
+the correct information to get to the key. PowerPoint 7.0b puts this key in
+HKEY_LOCAL_MACHINE.
+
+
+For additional information please see the following article in the Microsoft
+Knowledge Base:
+
+  Q136974 PPT7: Error Opening Earlier Version Presentation
+
+Pure Black and White Print Command Added
+----------------------------------------
+
+PowerPoint 7.0 does not have a Print Pure Black and White command unless you
+install an optional add-in. There is a Print Pure Black and White check box in
+the PowerPoint 7.0b Print dialog box.
+
+For additional information please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q135745 PPT7: Objects Displayed in Grayscale in Black &amp; White View
+
+  Q85342 WT1249: Pure Black and White Printing Add-in
+
+PowerPoint Makes Read/Write Call to
+Windows NT Registry; Violates C2 Security
+-----------------------------------------------------------------------------
+
+PowerPoint 7.0 tries to open some registry keys with read/write privileges, when
+it needs only read access. Users may not have write access, which causes
+PowerPoint to fail. PowerPoint 7.0b makes the registry call read-only.
+
+For additional information please see the following article in the Microsoft
+Knowledge Base:
+
+  Q139150 PowerPoint Missing Features Under Windows NT
+
+Organization Chart Is Now Installed
+with a Typical installation of Office
+-------------------------------------------------------------------------
+
+If you do a Typical or Compact installation of PowerPoint or Office, Microsoft
+Organization Chart is not installed.
+
+In Office 7.0b, Organization Chart is installed with the Typical installation.
+
+For additional information please see the following article in the Microsoft
+Knowledge Base:
+
+  Q141139 Organization Chart Not Installed with Typical or Compact Setup
+
+Windows NT 4.0: PowerPoint Calls Iclose
+on Something That Is Not a Valid File Handle
+------------------------------------------------------------------------------------
+
+If you run a version of Windows NT later than 3.51, you may have trouble opening
+or saving a presentation repeatedly, or you may have trouble adding images to
+the ClipArt Gallery. This is because PowerPoint 7.0 makes a call to an invalid
+file handle.
+
+PowerPoint 7.0b makes the correct call.
+
+Applying a Template Under Windows NT at
+VGA (640x480x16) May Turn Slides Black
+------------------------------------------------------------------------------
+
+This happens if your presentation contains a shaded fill.
+
+This is fixed in the Far East versions of PowerPoint 7.0 and in PowerPoint 7.0b.
+
+PowerPoint 7.0 Crashes on Bullet Font Mixed Selection
+-----------------------------------------------------
+
+PowerPoint 7.0 may crash if you click Bullets on the Format menu if you have two
+or more paragraphs with different bullets selected. This has been fixed in
+PowerPoint 7.0b.
+
+Additional query words: 7.00b powerpt w_powerpt ppt95 ppt7
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search kbPowerPt95b
+Version           : WINDOWS:7.0,7.0b
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

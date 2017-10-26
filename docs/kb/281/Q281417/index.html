@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281417/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281417/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281417/","publisher":null,"image":null,"headline":"Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281417-howtolog-on-to-terminal-server-session-programmatically-from-vb">Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281417
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,6.0
+Operating System(s): 
+Keyword(s): kbCtrl kbService kbVBp kbVBp600 kbGrpDSVB kbDSupport kbTermServ
+Last Modified: 12-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Terminal Services Advanced Client, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Terminal Services ActiveX client control does not expose the
+ImsTscNonScriptable interface. However, this interface can be used to configure
+automatic log on for a Terminal Services Session programmatically, which enables
+the programmer to log a user on to a Terminal Services Session without receiving
+the Windows Logon prompt. This is demonstrated in the sample in the "More
+Information" section.
+
+MORE INFORMATION
+================
+
+To run this program, configure your Terminal Server computer as follows:
+
+1. Log on to the Terminal Server locally as an administrator.
+
+2. On the Start button, click Programs, click Administrative Tools, and then
+  click Terminal Services Configuration.
+
+3. Click on Connections.
+
+4. In the right pane, right-click RDP-Tcp, and then choose Properties.
+
+5. Click on the Logon Settings tab.
+
+6. Deselect Always prompt for password, and then click OK.
+
+NOTE: For security reasons, Microsoft recommends that you do not implement this
+scenario without extreme care and a clear understanding of Microsoft Windows
+security.
+
+Sample Code
+-----------
+
+1. Start a new Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, click to select Components, select Microsoft Terminal
+  Services Control(redist), and then click OK. If this control is not
+  available, see the "References" section of this article for information on
+  how to download and install it.
+
+3. Add one Terminal Services Control to Form1, making sure it is big enough to
+  handle the display of the session.
+
+4. Add three Label controls, three TextBox controls, and one CommandButton
+  control to Form1. Make sure that Lable1 and Text1 are on the same line, and
+  that Label2, Text2, Label3, and Text3 are on the same line.
+
+5. Paste the following code into the General Declarations of Form1:
+
+  ' This code only works when you set the configuration on the Server-side.
+  ' Log on to the Terminal Server as an administrator
+  ' Start\Programs\Administrative Tools\Terminal Services Configuration
+  ' Click on Connections
+  ' On the Right Pane, right-click on RDP-Tcp and choose Properties
+  ' Click on the "Logon Settings" Tab
+  ' Uncheck "Always prompt for password" and click OK
+
+  Option Explicit
+
+  Private Obj As IMsTscNonScriptable
+
+  Private Sub Form_Load()
+    Text1.Text = ""
+    Text2.Text = ""
+    Text3.Text = ""
+    Label1.Caption = "Server"
+    Label2.Caption = "UserName"
+    Label3.Caption = "Password"
+    Command1.Caption = "Connect"
+    Text3.PasswordChar = "*"
+  End Sub
+
+  Private Sub Command1_Click()
+    Set Obj = MsTscAx1.Object
+    MsTscAx1.Server = Text1.Text
+    MsTscAx1.UserName = Text2.Text
+    Obj.ClearTextPassword = Text3.Text
+    MsTscAx1.Connect
+  End Sub
+
+6. Save the project, press the F5 key to run it, and note that after you supply
+  your username, password, and server name, you are not prompted for a logon
+  screen at the server. Microsoft recommends that you enlarge the Terminal
+  Server .ocx file so that you are able to manipulate the Shut Down dialog box.
+
+REFERENCES
+==========
+
+For more information about downloading and installing the Terminal Server
+Advanced Client, see the following Microsoft Web site at:
+
+  http://www.microsoft.com/WINDOWS2000/downloads/recommended/TSAC/tsac.asp
+
+For Frequently Asked Questions (FAQ) about the Terminal Server Advanced Client,
+see the following Microsoft Web site at:
+
+  http://www.microsoft.com/windows2000/techinfo/administration/terminal/tsacfaq.asp
+
+For additional information, see the following Microsoft Web site at:
+
+  http://www.microsoft.com/windows2000/techinfo/administration/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCtrl kbService kbVBp kbVBp600 kbGrpDSVB kbDSupport kbTermServ 
+Technology        : kbNTTermServSearch kbVBSearch kbAudDeveloper _IKkbbogus kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbTermServAdvClient
+Version           : :1.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

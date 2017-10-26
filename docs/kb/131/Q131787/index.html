@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131787/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131787/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131787/","publisher":null,"image":null,"headline":"Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131787-sli_open-hang-when-inappropriate-lua_init_type-is-used">Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131787
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprogramming sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An SLI_OPEN call may hang when it is issued on an SNA Server client machine and
+the lua_init_type specified in the SLI_OPEN is not appropriate for the host's
+session startup behavior. For example, if SLI_OPEN is called using an
+lua_init_type of LUA_INIT_TYPE_PRIM, and the host doesn't send an BIND message
+when the session is started, the SLI_OPEN will hang.
+
+MORE INFORMATION
+================
+
+The SLI_OPEN call handles the SNA session startup with the host. Because the
+host may be configured to support different session startup methods, the
+SLI_OPEN call allows the following lua_init_type options to be used to
+accommodate this:
+
+  LUA_INIT_TYPE_SEC_IS: Secondary with INITSELF command.
+  LUA_INIT_TYPE_SEC_LOG: Secondary with an unformatted LOGON message
+  LUA_INIT_TYPE_PRIM: Primary waiting for a BIND command
+  LUA_INIT_TYPE_PRIM_SSCP: Primary with SSCP access
+
+These options are described in the Microsoft SNA Server LUA Programmer's Guide.
+
+If the host sends a message on the SSCP-LU session but does not send a BIND, the
+SLI_OPEN call will hang if the LUA_INIT_TYPE_PRIM is used.
+
+There are several possible solutions to this problem:
+
+- The application could issue the type of SLI_OPEN that gives access to the
+  SSCP-LU session (such as LUA_INIT_TYPE_PRIM_SSCP). Then, the application
+  could write the logon message, and see the host's response. It could then
+  parse the host's response, and act according to what it sees.
+
+  -or-
+
+- The application could be written to use the LUA RUI interface instead of SLI.
+  This would give it access to all the flows to and from the host.
+
+  -or-
+
+- The application could implement a timer and cancel the SLI_OPEN if it does
+  not complete after a certain time. However, this will not tell you why the
+  SLI_OPEN may have hung.
+
+If you believe the application is using the correct lua_init_type, although it is
+continuing to exhibit SLI_OPEN hang problems, the following SNA Server trace
+information should be provided to SNA Server support personnel:
+
+- SNA Application internal, LUA API and 3270 message traces, (enabled where the
+  SLI application is running).
+
+- SNA Server DLC and 3270 message tracing (on the server)
+
+SNA Server DLC and 3270 message tracing can be dynamically enabled and disabled
+using SNATRACE. Trace files are generated in text format in
+&lt;SNAROOT&gt;\TRACES\*.TRC.
+
+If you are using a Win32 application under Windows NT, SNATRACE can also be used
+to capture SNA Application tracing.
+
+If you are using a Win16 application, see Q123256 for instructions on enabling
+SNA Server Win16 client tracing.
+
+Additional query words: prodsna SLI_OPEN
+
+======================================================================
+Keywords          : kbnetwork kbprogramming sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158469/","publisher":null,"image":null,"headline":"Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158469-info-time-difference-in-checking-out-vs-getting-file-in-source">Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158469
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,4.0a,5.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbGrpDSMDAC kbDSupport
+Last Modified: 18-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe operates more slowly when it checks out a file than when it
+gets a file. This is especially evident in the Visual SourceSafe integration
+with other products.
+
+MORE INFORMATION
+================
+
+Following are the steps that Visual SourceSafe goes through when it checks out a
+file. The order of the steps depends on the system configuration and the user's
+actions, so these steps may not occur in this exact order:
+
+1. Your user rights are verified to make sure that you have the proper access
+  rights for the operation.
+
+2. Visual SourceSafe checks to see if the file is currently checked out by you
+  or any other user.
+
+3. If someone has the file checked out already, the multiple checkouts setting
+  is selected. (This applies only to text files because binary files cannot be
+  set up for multiple checkouts.) If the other user currently has the file
+  checked out and is checking the file out again to the same directory, the
+  operation fails. If the other user currently has the file checked out and is
+  checking the file out again to a different directory, the operation works.
+
+4. If Visual SourceSafe verifies that you can check the file out, then the log
+  file is written with a checkout record for you.
+
+5. The Status.dat file is updated.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q130270 BUG: SourceSafe Reports a Date/Time of 1/1/70
+
+
+6. Visual SourceSafe looks for a Replace_Writable variable and, depending on
+  that setting, will skip the file, replace the file, or merge the file.
+
+7. A GET happens.
+
+This procedure causes the checkout operation to go much slower than when
+SourceSafe gets a file. Following are the steps that Visual SourceSafe goes
+through when it gets a file:
+
+1. Your user rights are checked to see if you have the proper access rights for
+  the operation.
+
+2. Visual SourceSafe looks for a Replace_Writable variable and, depending on
+  that setting, skips the file, replaces the file, or merges the file.
+
+3. A GET happens.
+
+Most users of Visual SourceSafe are running over a local area network; the
+network file I/O and data transfer slow down the checkout operation even more.
+Note that users of Microsoft Visual FoxPro see a larger delay due to the
+intermediate text files that are generated from the FoxPro binary files. This
+step does not occur in Visual Basic or Visual C++.
+
+Additional query words: kbdss
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbGrpDSMDAC kbDSupport 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,4.0a,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

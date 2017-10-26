@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239419: MapPoint: How to Create Shaded Area Maps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239419: MapPoint: How to Create Shaded Area Maps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239419/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239419/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239419/","publisher":null,"image":null,"headline":"Q239419: MapPoint: How to Create Shaded Area Maps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239419-mappoint-how-to-create-shaded-area-maps">Q239419: MapPoint: How to Create Shaded Area Maps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239419
+Product(s): Microsoft Automap
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbtool kbui kbimu
+Last Modified: 14-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MapPoint 2000 
+- Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Microsoft MapPoint with Microsoft Excel to
+create shaded area maps based on boundries such as counties, states, or ZIP
+codes.
+
+MORE INFORMATION
+================
+
+To create a shaded area map based on counties, states, or ZIP codes:
+
+1. Start Microsoft Excel.
+
+2. Create a workbook with the following column labels based on the type of map
+  you want to create:
+
+  +------------------------------------------------------+
+  | Map type | County | State | ZIP code | Shading value | 
+  +------------------------------------------------------+
+  | State    | No     | Yes   | No       | Yes           | 
+  +------------------------------------------------------+
+  | County   | Yes    | Yes   | No       | Yes           | 
+  +------------------------------------------------------+
+  | ZIP code | No     | No    | Yes      | Yes           | 
+  +------------------------------------------------------+
+
+  NOTE: Type your data according to the following guidelines.
+
+   - State: Type the full State name or official two-letter abbreviation.
+   - County: Type the full county name
+   - ZIP code: Type the five-digit ZIP code.
+   - Shade: Type a shade value from 1 (lightest) to 8 (darkest).
+
+For example, if you want to create a County map type, add your data to the
+workbook using the following table format:
+
+  
+  +-----------------------------------+
+  | County    | State | Shading value | 
+  +-----------------------------------+
+  | King      | Wa    | 1             | 
+  +-----------------------------------+
+  | Snohomish | Wa    | 2             | 
+  +-----------------------------------+
+  | Pierce    | Wa    | 3             | 
+  +-----------------------------------+
+  | Kitsap    | Wa    | 4             | 
+  +-----------------------------------+
+  | Mason     | Wa    | 5             | 
+  +-----------------------------------+
+  | Thurston  | Wa    | 6             | 
+  +-----------------------------------+
+
+NOTE: King, Kitsap, Mason, Pierce, Snohomish, and Thurston are the names of
+counties in Washington State and "Wa" is the abbreviation for Washington.
+
+3. On the File menu, click Exit. When you are prompted to save the changes,
+  click Yes.
+
+4. Start MapPoint.
+
+5. On the Format menu, click Data Mapping Wizard.
+
+6. Click Shaded Area Map, and then click Next.
+
+7. Click Import, and then click the Excel file that you saved in Step 3.
+
+8. If necessary, click the worksheet that contains your data.
+
+9. In the Data Import Wizard window, verify that the data appears as you expect,
+  and then click Next.
+
+10. Click Finish.
+
+  NOTE: If you want to customize the appearance of your map, click Next.
+
+Additional query words: mp2000 mp2001 multi multi-media media mm coloring colors
+
+======================================================================
+Keywords          : kbinterop kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

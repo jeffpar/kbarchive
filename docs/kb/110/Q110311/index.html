@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110311/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110311/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110311/","publisher":null,"image":null,"headline":"Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110311-reserving-00-mb-on-a-ram-drive-with-doublespace">Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110311
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+Neither the graphical interface of the full-screen DoubleSpace maintenance
+program, nor the DBLSPACE.EXE command-line switches allows you to reserve zero
+(0) bytes of free space on the host drive during the compression of a RAM drive.
+
+WORKAROUND
+==========
+
+To reserve zero bytes of free space on the host drive when you are compressing a
+RAM drive, use the following procedure:
+
+1. Create a new drive or compress an existing drive on the RAM drive using
+  either the full-screen DoubleSpace maintenance program or the MS-DOS command
+  line. For example, at an MS-DOS command prompt, you might type:
+
+  " dblspace /create &lt;d&gt;: /size=1.37 " (without the quotation marks)
+
+  where drive &lt;d&gt; is a 2-megabyte (MB) RAM drive. (This uses 1.37 MB of
+  drive D to create a compressed RAM drive and leaves approximately 0.62 MB
+  free on the drive D.
+
+2. Resize the compressed drive to its maximum size and the host drive to zero
+  with a command similar to the following:
+
+     dblspace /size /reserve=0 &lt;h&gt;:
+
+  where &lt;h&gt; is the drive letter of the compressed RAM drive. To determine
+  the drive letter for the compressed drive, type "dblspace /list" (without the
+  quotation marks) at the MS-DOS command prompt.
+
+MORE INFORMATION
+================
+
+Reserving 0.0 MB on the host drive of the RAM drive ensures that no RAM is
+leftover as unused space on the host drive. The above procedure does not apply
+to the compression of a hard disk drive.
+
+Additional query words: 6.00 6.20 dblspace doublespace manager
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

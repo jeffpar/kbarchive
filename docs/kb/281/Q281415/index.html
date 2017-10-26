@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281415: Systems Management Server Performance Monitor Objects Missing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281415: Systems Management Server Performance Monitor Objects Missing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281415/","publisher":null,"image":null,"headline":"Q281415: Systems Management Server Performance Monitor Objects Missing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281415-systems-management-server-performance-monitor-objects-missing">Q281415: Systems Management Server Performance Monitor Objects Missing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281415
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP2
+Operating System(s): 
+Keyword(s): kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil kbsms200preSP3
+Last Modified: 06-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server (SMS) 2.0 Performance Monitor objects may be missing
+after you perform one of the following tasks:
+
+- A site reset
+
+- You apply SMS 2.0 Service Pack 2 (SP2)
+
+- You change SQL or SMS account passwords with the Administrator tool
+
+
+The missing performance objects may include SMS Discovery Data Manager, SMS
+Inventory Data Loader, and SMS Software Inventory Processor. The remaining
+objects are listed but may provide inaccurate data.
+
+
+CAUSE
+=====
+
+As SMS performance objects are reinstalled, some objects' indices change.
+Programs that cache performance object indices cannot view performance objects
+until the cache is refreshed with the new indices.
+
+WORKAROUND
+==========
+
+To work around this issue:
+
+1. Stop the following SMS services on the site server:
+
+  SMS_SITE_COMPONENT_MANAGER
+  SMS_EXECUTIVE
+  SMS_SQL_MONITOR
+  SMS_NT_LOGON_DISCOVERY_AGENT
+  Windows Management
+  SMS_LICENSE_SERVER
+
+2. Stop any local or remote Performance Monitor tools that are accessing
+  performance data on the site server. When all performance objects are
+  released, the full eight SMS performance objects will be displayed.
+
+3. Restart the SMS services by starting the SMS_SITE_COMPONENT_MANAGER service.
+  This restarts all services automatically.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

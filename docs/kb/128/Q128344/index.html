@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128344: FIX: Error C2593: ‘operator +’ Is Ambiguous | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128344: FIX: Error C2593: ‘operator +’ Is Ambiguous" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128344/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128344/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128344/","publisher":null,"image":null,"headline":"Q128344: FIX: Error C2593: ‘operator +’ Is Ambiguous","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128344-fix-error-c2593-operator--is-ambiguous">Q128344: FIX: Error C2593: ‘operator +’ Is Ambiguous</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128344
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbtool kbCompiler kbCPPonly kbVC kbVC500fix
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When enumerated types are used in some (+-*/|&amp;^%) operator overloads, the
+Microsoft compilers listed above may generate the following message:
+
+  Error C2593: 'operator +' is ambiguous
+
+In Visual C++, 32-bit edition, version 2.1, the following warnings are also
+displayed:
+
+  Warning C4387: 'enum Test __cdecl operator+(enum Test, enum Test)': was
+  considered
+
+  Warning C4388: and built-in global operator was considered
+
+The "Sample Code" section in this article demonstrates this problem.
+
+CAUSE
+=====
+
+Without determining that there is an exact operator overload match, the compiler
+is considering the enumerator types promoted to int type. This causes the C2593
+ambiguous error.
+
+RESOLUTION
+==========
+
+Use one of the following three workarounds:
+
+- With Visual C++ 32-bit Edition, versions 2.x and 4.x, you can work around the
+  problem by using a class template. See the "Sample Code to Work Around
+  Problem" section in this article. This workaround provides a class template
+  that can be used for any enum type. One of the parameters for the overloaded
+  operator needs to be of the class template type and the enums need to be
+  declared as the class type.
+
+-or-
+
+- You can call the overloaded operator using normal function call syntax. For
+  example:
+
+     eTest = operator+( eTest1, eTest2 );
+
+-or-
+
+- You can just use the built-in global operator, and then convert the result
+  back to enum type. For example:
+
+     eTest = Test( (int)eTest1 + eTest2 );
+
+  where eTest, eTest1 and eTest2 are of type enum Test{}.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+     /* Compiler options needed: None.
+     */ 
+
+     enum Test { ONE, TWO, THREE };
+
+     Test operator+(Test eTest, Test eTest2)
+     {
+        Test   eRet = Test(int(eTest) + int(eTest2));
+        return eRet;
+     }
+
+     void main()
+     {
+        Test    eTest=ONE, eTest2=TWO;
+        eTest = eTest + eTest2;     // C2593 error
+     }
+
+Sample Code to Work Around Problem
+----------------------------------
+
+     /* Compiler options needed: None.
+     */ 
+
+     enum Test { ONE=1, TWO, THREE };
+
+     template&lt;class T&gt; class CFix
+     {
+        T m_fix;
+
+      public:
+
+        CFix(T eFix) { m_fix = eFix; }
+
+        operator T() { return  m_fix; }
+     };
+
+     Test operator+(CFix&lt;Test&gt; eTest, Test eTest2)
+     {
+        Test   eRet = Test(int(eTest) + int(eTest2));
+        return eRet;
+     }
+
+     void main()
+     {
+        CFix&lt;Test&gt;  eTest=ONE, eTest2=TWO;
+        eTest = eTest + eTest2;
+     }
+
+REFERENCES
+==========
+
+More information about operator overloading can be found in "The Annotated C++
+Reference Manual (Jan '94)" section 13.4.
+
+Additional query words: kbVC400bug cpp 9.00 8.00 8.00c 10.00 10.10 10.20
+
+======================================================================
+Keywords          : kbcode kbtool kbCompiler kbCPPonly kbVC kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

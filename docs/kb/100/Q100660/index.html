@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100660/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100660/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100660/","publisher":null,"image":null,"headline":"Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100660-info-macros-to-facilitate-porting-applications-to-windows-nt">Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100660
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0,5.0
+Operating System(s): 
+Keyword(s): kbGenInfo kbLangC kbVC kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbDSupport kbArtTypeINF
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many applications written for Windows use variations of C Run-time functions
+which specifically use NEAR or FAR pointers. Applications written for Windows NT
+use the flat memory model, therefore, these function variations are not
+supported. When porting from Windows to Windows NT, calls to these functions
+will need to be modified.
+
+MORE INFORMATION
+================
+
+The following is a list of macros that make the porting of applications to
+Microsoft Windows NT easier:
+
+     // Windows NT Macros
+
+     #if defined(WIN32)
+
+     #define _fmemcpy(x,y,z)    memcpy(x,y,z)
+     #define _fmemcmp(x,y,z)    memcmp(x,y,z)
+     #define _fmemset(x,y,z)    memset(x,y,z)
+     #define _fmemicmp(x,y,z)   memicmp(x,y,z)
+     #define _fmemmove(x,y,z)   memmove(x,y,z)
+
+     #define _fstrcpy(x,y)      strcpy(x,y)
+     #define _fstrcmp(x,y)      strcmp(x,y)
+     #define _fstrcat(x,y)      strcat(x,y)
+     #define _fstrlen(x)        strlen(x)
+     #define _fstricmp(x,y)     stricmp(x,y)
+     #define _fstrstr(x,y)      strstr(x,y)
+     #define _fstrncpy(x,y,z)   strncpy(x,y,z)
+     #define _fstrncmp(x,y,z)   strncmp(x,y,z)
+     #define _fstrupr(x)        strupr(x)
+     #define _fstrlwr(x)        strlwr(x)
+     #define _fstrchr(x,y)      strchr(x,y)
+     #define _fstrrchr(x,y)     strrchr(x,y)
+     #define _fstrnicmp(x,y,z)  strnicmp(x,y,z)
+     #define _fstrpbrk(x,y)     strpbrk(x,y)
+
+     #define _nfree(x)          free(x)
+     #define _nmalloc(x)        malloc(x)
+
+     #define _loadds
+
+     #define NT_GetWndInstance(hwnd) (HINSTANCE)GetWindowLong(hwnd,
+         GWL_HINSTANCE)
+
+     #define NT_GetWndID(hwnd)       (UINT)GetWindowLong(hwnd, GWL_ID);
+
+     #define NT_ParseWM_COMMAND(id, ntfy, hwnd, wPar, lPar) \ 
+         (id = LOWORD(wPar), ntfy = HIWORD(wPar), hwnd = (HWND)lPar)
+
+     #define NT_PostWM_COMMAND(hwnd, id, ntfy, hwndChild) \ 
+
+     PostMessage(hwnd,WM_COMMAND,(UINT)MAKELONG(id,ntfy),(LONG)hwndChild)
+
+     #define NT_SendWM_COMMAND(hwnd, id, ntfy, hwndChild) \ 
+         SendMessage(hwnd,
+     WM_COMMAND,(UINT)MAKELONG(id,ntfy),(LONG)hwndChild)
+
+     #if !defined(LONG2POINT)
+     #define LONG2POINT(l,pt) ((pt).x=(SHORT)LOWORD(l),
+
+        (pt).y=(SHORT)HIWORD(l))
+
+     #endif
+
+     // Windows NT Equivalents for Windows
+
+     #else
+     #define NT_GetWndInstance(hwnd) (HINSTANCE)GetWindowWord(hwnd,
+
+         GWW_HINSTANCE)
+
+     #define NT_GetWndID(hwnd)       (UINT)GetWindowWord(hwnd, GWW_ID);
+
+     #define NT_ParseWM_COMMAND(id, ntfy, hwnd, wPar, lPar) \ 
+         (id = wPar, ntfy = HIWORD(lPar), hwnd = (HWND)LOWORD(lPar))
+
+     #define NT_PostWM_COMMAND(hwnd, id, ntfy, hwndChild) \ 
+         PostMessage(hwnd, WM_COMMAND, (UINT)id, MAKELONG(hwndChild, ntfy))
+
+     #define NT_SendWM_COMMAND(hwnd, id, ntfy, hwndChild) \ 
+         SendMessage(hwnd, WM_COMMAND, (UINT)id, MAKELONG(hwndChild, ntfy))
+
+     #endif
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGenInfo kbLangC kbVC kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbDSupport kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : winnt:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

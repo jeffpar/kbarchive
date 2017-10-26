@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q302573: HOW TO: Back Up and Restore IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q302573: HOW TO: Back Up and Restore IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/302/Q302573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/302/Q302573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/302/Q302573/","publisher":null,"image":null,"headline":"Q302573: HOW TO: Back Up and Restore IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q302573-how-to-back-up-and-restore-iis">Q302573: HOW TO: Back Up and Restore IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q302573
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbAudDeveloper kbHOWTOmaster
+Last Modified: 10-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- Back Up the IIS Configuration
+- Restore the IIS Configuration
+
+   - Restoring the IIS Configuration After an IIS Reinstallation
+
+SUMMARY
+=======
+
+This step-by-step article describes how to back up your Internet Information
+Services (IIS) configuration so that you can easily return to a previous state.
+
+Requirements
+------------
+
+The following items describe the recommended hardware, software, network
+infrastructure, skills and knowledge, and service packs that you will need:
+
+- IIS version 5.0
+
+- Microsoft Internet Explorer 3.x, 4.x, 5.x
+
+Back Up the IIS Configuration
+-----------------------------
+
+To back up your IIS configuration, follow these steps:
+
+1. In the IIS snap-in on the local computer, click the Computer icon under
+  Internet Information Services.
+
+2. Click Action and select Backup/Restore Configuration.
+
+3. Click Create backup, choose a name for your backup file, and then click OK.
+
+NOTE: The default location of the backup is the
+%SystemRoot%\system32\inetsrv\MetaBack folder. If you want to save your backup
+file to another location, you can copy the file from this default location to
+another location. Keep a copy in the default location to allow for an easy
+restoration. Note that by default, C:\Winnt is the %SystemRoot% folder in
+Microsoft Windows 2000.
+
+4. Click Close.
+
+NOTE: This backup method provides a way to restore only your IIS settings, not
+your content files. This backup method does not work if you reinstall your
+operating system. Backup files cannot be used to restore an IIS configuration on
+other computers that are running Windows 2000.
+
+Restore the IIS Configuration
+-----------------------------
+
+The steps to restore a configuration differ depending on whether you removed and
+reinstalled IIS.
+
+NOTE: If you want to restore your IIS configuration and only an older copy or no
+copy of the metabase file exists, see the following Microsoft Knowledge Base
+article:
+
+  Q234429 How to Manually Restore the Metabase When No Backup Exists
+
+Restoring the IIS Configuration Without an IIS Reinstallation:
+
+To restore your IIS configuration if you have not removed and reinstalled IIS,
+follow these steps:
+
+1. In the IIS snap-in on the local computer, click the Computer icon under
+  Internet Information Services.
+
+2. Click Action and select Backup/Restore Configuration.
+
+3. In the Configuration Backup Name dialog box, select a backup file and click
+  Restore. When you are asked if you want to restore your configuration
+  settings, click Yes.
+
+Restoring the IIS Configuration After an IIS Reinstallation:
+
+To restore your IIS configuration after you have removed and reinstalled IIS,
+follow these steps:
+
+1. In the IIS snap-in on the local computer, click the Computer icon under
+  Internet Information Services.
+
+2. Click Action and select Backup/Restore Configuration.
+
+3. In the Configuration Backup Name dialog box, select the backup file that you
+  created and click Restore. Although an error message states that the
+  restoration has failed, a portion of your backed-up configuration is
+  restored.
+
+4. At a command prompt, type the following:
+
+  "cscript.exe X:\InetPub\AdminScripts\Adsutil.vbs enum w3svc" (without the
+  quotation marks)
+
+  where X is the letter of the drive on which IIS is installed. From the listed
+  settings, locate the WamUserName and the associated WAMUserPass value.
+
+  NOTE: To use the Adsutil.vbs utility, you must have Windows Script Host
+  installed.
+
+5. Click Start, point to Settings, click Control Panel, double-click
+  Administrative Tools, and then double-click Computer Management. Click Local
+  User Managers and click Users.
+
+6. Double-click the IWAM_computername user account. Type the WAMUserPass value
+  that you retrieved from the previous step and click OK.
+
+7. In the Configuration Backup Name dialog box, select the backup file that you
+  created and click Restore. This fully restores your configuration.
+
+  NOTE: If you change the identity of your out-of-process applications, those
+  applications revert back to the previous IWAM user name.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudDeveloper kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

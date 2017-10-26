@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160776/","publisher":null,"image":null,"headline":"Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160776-sms-inventory-processor-fails-on-raw-to-mif-conversion">Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160776
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbInventory kbsmsUtil smsinv smsutil
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Machine inventory records do not receive updates in the Systems Management
+Server database. You may be notice this problem after recently distributing a
+custom MIF form to clients.
+
+This problem can also be verified by examining the Invproc.log file, located in
+the Logs directory of the client's site server. A "Compilation failed" entry
+appears immediately after "Processing Machine ISV MIF Files."
+
+CAUSE
+=====
+
+The Systems Management Server Inventory Processor is rejecting RAW files because
+one or more custom MIF attribute names contains a trailing space. This is
+generally caused when you generate the custom MIF form with the Systems
+Management Server MIF Form Generator (MIFGEN), and a space is accidentally added
+to the end of a field name.
+
+You can check whether there is a trailing space character by examining the custom
+MIF file that is output by the MIF Entry Form (MIFWIN). The following sample
+section of a custom MIF output contains a space after the PC Asset Number, and
+would therefore cause the Inventory Processor to fail compilation:
+
+     Start Attribute
+           Name = "PC Asset Number "
+           ID = 1
+           Type = String(35)
+           Storage = Specific
+           Value = "2485798"
+     End Attribute
+
+Other problems with a MIF that will cause a Compilation Failed error include
+having any field name, data or text, that contains a " (quotation mark symbol).
+This will cause INVPROC to produce a "Compilation failed" also.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps:
+
+1. Reload the custom MIF form into the MIFGEN utility.
+
+2. Edit the offending field identified as having trailing spaces in the MIF,
+  typing the item name again, with no trailing space.
+
+3. As a test, place the XNF file in the Ms\Sms\Bin directory of a client. Remove
+  the .sev and .mif files from the Noidmifs directory for the XNF name (if the
+  XNF file was previously distributed to the client).
+
+4. Before redistributing the XNF file to clients, or as part of the distribution
+  process, you must remove the .sev and .mif files for the named XNF from the
+  client's Noidmifs directory. Failure to do so will produce a "Form template
+  file is corrupted" error message from MIFWIN on the client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server versions 1.0, 1.1, and 1.2. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.10 1.20 prodsms compilation
+
+======================================================================
+Keywords          : kbInventory kbsmsUtil smsinv smsutil 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80272/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80272/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80272/","publisher":null,"image":null,"headline":"Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80272-pc-ext-diagnostics-produced-by-the--q2z-parameter-on-external">Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80272
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1b,2.1c,2.1d,2.1e,3.0,3.2,3.5
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1b, 2.1c, 2.1d, 2.1e, 3.0, 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the -Q2z parameter is added on the External.exe command line, additional
+information that is useful when troubleshooting modem problems will be listed.
+
+When External.exe is invoked as follows
+
+  external -q2z
+
+information that is sent or received from the modem will appear on the screen.
+This can help isolate the cause of errors and attribute them to one of the
+following:
+
+- Flow control
+
+- Bad cabling
+
+- Bad phone lines
+
+- Slow network
+
+The Diagnostics categories are Bad STX, Bad Type, Bad Seq, Bad CRC1, Bad CRC2,
+Timeouts, and Rejects, and are described below.
+
+Bad STX
+-------
+
+This error diagnostic occurs if the protocol is looking for a "2" to indicate the
+start of a message block. The protocol scans the input stream until it finds a
+"2". Occurrences of this error diagnostic do not indicate severe problems. For
+example, this problem could be caused by a bad CRC1 occurring, forcing the
+protocol to scan all subsequent packet data bytes for a valid packet header that
+is looking for a "2", followed by the proper packet type, sequence number, etc.
+
+Bad Type
+--------
+
+This error diagnostic occurs if a packet type indicator was received that is not
+recognized by the protocol. The only reason that this problem can currently
+occur is because a "2" is found and assumed to be the start of a packet (STX),
+when it is not.
+
+Bad Seq
+-------
+
+This error diagnostic occurs when a packet is received out of sequence. All
+packets in the protocol are assigned a sequence number and must be sent in the
+proper order. If the previous packet was lost during the transmission, then the
+subsequent packet will be interpreted as being out of sequence.
+
+Bad CRC1 (Cyclic Redundancy Check)
+----------------------------------
+
+This error diagnostic indicates that the packet header was corrupt and rejected;
+that is, characters were lost during the transmission, which can be caused by
+line noise or some other problem.
+
+Bad CRC2
+--------
+
+This error diagnostic is a secondary Cyclic Redundancy Check and also indicates
+that the packet data was corrupt and rejected.
+
+Timeouts
+--------
+
+This error diagnostic occurs when a packet was sent and an acknowledgment was not
+received within the allotted time. The default allotted time is 60 seconds; this
+default can be set by using the -Exxx parameter on the External or Remote
+command line.
+
+This error diagnostic occurs when slow response is encountered on the receiving
+end or if the other end is dead. This problem can also occur when using
+error-correcting modems (Microcom Networking Protocol [MNP]) and the modems are
+taking an unusual amount of time to send valid data between each other. This is
+not a severe problem, but it can cause External to abort the communication link
+if many Timeouts occur.
+
+Rejects
+-------
+
+All of the above error diagnostics will occur only on the receiving end of the
+communications link. Whenever an error is detected on the receiving end, the
+protocol sends a reject packet to the sender. The sender then keeps track of the
+number of reject packets received. The reject count is an indication of the
+number of failures (CRCs, etc.) encountered by the receiver.
+
+Summary of Diagnostics
+----------------------
+
+In any session that has errors, the receiver will get a combination of Bad STXs,
+Bad Types, Bad Seqs, Bad CRCs, and so on, but no Rejects. The sender will get
+Rejects but none of the other diagnostics. In twoway communication sessions, the
+diagnostic counts are cumulative.
+
+Clients generally assume that when they have error-correcting modems (that is,
+Microcom Networking Protocol [MNP] modems) they should not get any detected
+errors. MNP modems do not detect errors that occur between the serial port and
+the modem; they only detect errors that occur between modems.
+
+The communication errors that are detected by our protocol occur between serial
+ports and our External/Remote programs recover from them.
+
+Additional query words: 2.10b 2.10c 2.10d 2.10e 2.10x 2.1x 3.00 debugxcsi q2
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN350 kbMailPCN210b kbMailPCN210c kbMailPCN210d kbMailPCN210e
+Version           : WINDOWS:2.1b,2.1c,2.1d,2.1e,3.0,3.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

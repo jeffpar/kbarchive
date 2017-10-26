@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126393: INFO: SNA Server Configurations that Produce XID Rejections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126393: INFO: SNA Server Configurations that Produce XID Rejections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126393/","publisher":null,"image":null,"headline":"Q126393: INFO: SNA Server Configurations that Produce XID Rejections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126393-info-sna-server-configurations-that-produce-xid-rejections">Q126393: INFO: SNA Server Configurations that Produce XID Rejections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126393
+Product(s): Microsoft SNA Server
+Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,
+Operating System(s): 
+Keyword(s): kbnetwork kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following SNA Server XID rejection events are logged in the application
+event log when you connect to an AS/400:
+
+- Event ID: 56 Event description: Connection &lt;connection_name&gt; failed:
+  XID rejected by remote computer
+
+- Event ID: 230 Event Description: Connection &lt;connection_name&gt; Not
+  responding to XID commands.
+
+The connection goes into a Pending state and users get APPC primary return code:
+0003; secondary return code: 00000005, when attempting to open a 5250 session.
+
+Causes of Event ID 56:
+
+- There is already a controller defined on the AS/400 with the same name as the
+  one defined in SNA Server, but it has a different "LAN remote adapter address
+  (ADPTADR)" associated with it.
+
+- There is already a different controller name defined on the AS/400 with the
+  same "LAN remote adapter address (ADPTADR)" (Autocreate Controller
+  [AUTOCRTCTL] is set to YES in the AS/400 Line Description).
+
+- The "LAN remote adapter address (ADPTADR)" defined on the AS/400 represents
+  the network interface card address of the SNA Server computer. To determine
+  this, type the following at a Windows NT Command Prompt: " c:&gt; net config
+  server" (without the quotation marks)
+
+- The Remote Control Point Name in the SNA Server Administrator Connection
+  Properties dialog box does not match the Local Control Point Name in the
+  AS/400 Network Attributes screen.
+
+Causes of Event ID 230:
+
+- Autocreate controller (AUTOCRTCTL), which is configured in the AS/400 Line
+  Description, is set to No and you are using the incorrect Local Node ID value
+  for the controller you have manually created on the AS/400.
+
+- The Remote SAP Address in the SNA Server connection properties is different
+  than the SSAP address in the AS/400 line description.
+
+  NOTE: The SAP address defined in the SNA Server link service setup does not
+  have to match anything on the AS/400.
+
+- The administrator configured the Remote Network Address using an address that
+  already exists on the LAN (and is bound to the DLC protocol) but it is not
+  the address that the AS/400 administrator is attempting to connect to. For
+  example, an administrator used the SNA Server machine address or other
+  Windows NT machine that has the MS-DLC protocol installed.
+
+Additional query words: prodsna nic adapter admin snafaq
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

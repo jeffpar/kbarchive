@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171272/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171272/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171272/","publisher":null,"image":null,"headline":"Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171272-fix-sql-select-into-array-causes-illegal-operation">Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171272
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbvfp kbvfp500aFIX
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a SQL-SELECT statement to populate an array from a FoxPro 2x table
+containing deleted records with DELETED set on causes the operating system to
+close Visual FoxPro 5.0.
+
+When running under Windows 95, the following error appears:
+
+  This program has performed an illegal operation and will be shut down.
+
+In Windows NT 4.0, the following error appears:
+
+  An application error has occurred and an application error log is being
+  generated.
+  VFP.exe
+  Exception: access violation &lt;error number&gt;, Address: &lt;memory
+  address&gt;.
+
+In both cases, the operating system then closes Visual FoxPro.
+
+RESOLUTION
+==========
+
+Do not issue a SET DELETED ON command and simply rewrite the SQL-SELECT
+statement, as in the following example:
+
+     SELECT * FROM ZTEST INTO ARRAY Zjunk WHERE DELETED()=.F.
+
+-or-
+
+     SELECT * FROM ZTEST INTO ARRAY Zjunk WHERE !DELETED()
+
+Also, the results of the SQL-SELECT statement could be directed to a destination
+other than to an array.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 5.0a and
+does not occur in Visual FoxPro 3.x.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code in a program file or line by line from the Visual
+  FoxPro Command window:
+
+        CLEAR
+        SET SAFETY OFF
+        USE HOME()+"samples\data\customer.dbf" EXCLUSIVE
+        COPY TO HOME()+"Ztest.dbf" TYPE FOX2X
+        SET SAFETY ON
+        CLOSE ALL
+        USE HOME()+"Ztest.dbf"
+        DELETE ALL FOR RECNO() &lt; 10
+        USE
+        SET DELETED ON
+        SELECT * FROM HOME()+"Ztest" INTO ARRAY Zjunk
+        ? ALEN(zjunk)
+        USE
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbvfp kbvfp500aFIX 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

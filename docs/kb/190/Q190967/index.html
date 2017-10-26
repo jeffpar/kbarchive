@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190967/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190967/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190967/","publisher":null,"image":null,"headline":"Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190967-bug-changing-implemented-class-does-not-give-compatibility-erro">Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190967
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Visual Basic Class implements an interface of a referenced dll, then the
+implemented dll is removed and replaced with a different dll which contains the
+same interface names as the first reference, an incompatibility error is not
+generated when recompiling the dll with Binary Compatibility set.
+
+For example, if Project1.dll implements Class1 in MyFirst.dll, then the reference
+to MyFirst.dll is removed and replaced with a reference to MySecond.dll (which
+also contains a Class1), recompiling Project1 does not generate a compatibility
+error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Create a new ActiveX DLL Project in Microsoft Visual Basic. Class1 will be
+  created by default.
+
+2. Select Project Properties from the Project menu.
+
+3. Change the Project Name to "Ref1."
+
+4. Paste the following code into Class1's code window.
+
+        Public Sub Test()
+        End Sub
+
+5. Compile Ref1.Dll by selecting Make Ref1.Dll from the File menu.
+
+6. Return to the Project Properties and change the Project name to "Ref2."
+
+7. In the Project Properties dialog, click on the Component Tab and select No
+  Compatibility.
+
+8. Make Ref2.dll by selecting Make Ref1 from the File menu.
+
+  NOTE: You will need to manually change the dll name from Ref1.dll to Ref2.dll.
+
+9. Create a new ActiveX dll project in Visual Basic.
+
+10. Rename Class1 to "ClassX."
+
+11. Select References from the Project menu, and add a reference to Ref1.
+
+12. Paste the following into ClassX's code window:
+
+        Implements Class1
+
+        Private Sub Class1_Test()
+        End Sub
+
+13. Compile Project1.dll by selecting Make Project1 from the File menu.
+
+14. Select Project Properties from the Project Menu, and then select the
+  component tab. Set Binary Compatibility with Project1.dll.
+
+15. Select References from the Project menu, remove the reference to Ref1, and
+  add a reference to Ref2.
+
+16. Compile as Project2.dll. Note that the project compiles fine, whereas there
+  should be an incompatibility error.
+
+Additional query words: kbDSupport kbVBp600bug kbVBp500bug kbCompiler kbdss kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

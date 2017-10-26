@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131934: ACC: Cannot Reference OLE Control in Datasheet View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131934: ACC: Cannot Reference OLE Control in Datasheet View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131934/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131934/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131934/","publisher":null,"image":null,"headline":"Q131934: ACC: Cannot Reference OLE Control in Datasheet View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131934-acc-cannot-reference-ole-control-in-datasheet-view">Q131934: ACC: Cannot Reference OLE Control in Datasheet View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131934
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0,7.0,97
+Operating System(s): 
+Keyword(s): kberrmsg kbusage
+Last Modified: 05-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 2.0 
+- Microsoft Access for Windows 95, version 7.0 
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+
+SYMPTOMS
+========
+
+When you reference a form's OLE control in an expression or a procedure, you may
+receive the following error message.
+
+In Microsoft Access 97
+----------------------
+
+  Run-time error '2771': The bound or unbound object frame you tried to edit
+  doesn't contain an OLE object.
+
+  Use the Object command on the Insert menu to add an OLE object to the bound or
+  unbound object frame.
+
+In Microsoft Access for Windows 95 version 7.0
+----------------------------------------------
+
+  The unbound or bound object frame you tried to edit doesn't contain an OLE
+  object.
+
+In Microsoft Access version 2.0
+-------------------------------
+
+  Can't obtain this property setting. The property may not be available in this
+  view, or an error may have occurred.
+
+CAUSE
+=====
+
+When a form is open in Datasheet view, you cannot reference the form's unbound
+OLE control.
+
+RESOLUTION
+==========
+
+Do not reference OLE controls in forms that are displayed in Datasheet view.
+
+NOTE: You can check a form's CurrentView property setting to determine whether
+the form is displayed in Datasheet, Form, or Design view.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access 2.0, 7.0, and
+97. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form not based on a table or query.
+
+2. Insert the Calendar Control.
+
+3. In the Properties dialog box, change the name of the Calendar Control to
+  "CalendarCtl" (without the quotation marks).
+
+4. View the form in Datasheet view
+
+5. Open the Debug window (or Immediate window in version 2.0), and type the
+  following line:
+
+  ? Forms!Form1!CalendarCtl.object.value
+
+  Note that you receive an error message because the form that the expression
+  references is open in Datasheet view.
+
+REFERENCES
+==========
+
+For more information about the CurrentView property, search the Help Index for
+"CurrentView Property," or ask the Microsoft Access 97 Office Assistant.
+
+Additional query words: ocx custom control activex run time error 2771
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbAccessSearch kbAccess200 kbAccess97 kbAccess97Search kbAccess95Search kbZNotKeyword3 kbAccess700
+Version           : WINDOWS:2.0,7.0,97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

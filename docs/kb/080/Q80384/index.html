@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80384/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80384/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80384/","publisher":null,"image":null,"headline":"Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80384-prb-span-dependent-value-behavior-changes-in-n-pass-assembly">Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80384
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Microsoft Macro Assembler (MASM) assembles code that depends on the
+difference between the values of two labels (a span-dependent value), the
+results of an assembly by MASM versions 6.0 or later differs from the results
+produces by an earlier version of MASM.
+
+Specifically, the difference occurs when the application uses a span- dependent
+value in one of the following cases:
+
+- In the expression for a preprocessor directive, like IF
+
+- In the expression for a predefined macro, like REPEAT or WHILE
+
+- In the arguments to a MACRO or TEXTEQU statement preceded by % (percent sign)
+
+CAUSE
+=====
+
+MASM versions 5.1 and earlier are two-pass assemblers; MASM versions 6.0 and
+later are N-pass assemblers.
+
+RESOLUTION
+==========
+
+Avoid using a span-dependent value in a preprocessor directive or in a
+predefined macro. If the code requires a span-dependent value, create and review
+a listing file to determine that each span-dependent value is evaluated as
+desired.
+
+Avoid using the % operator with span-dependent values. The assembler evaluates an
+expression containing the % operator on the first pass. In many cases, the
+assembler produces the desired results when you remove the % operator and delay
+expression evaluation to a later pass.
+
+STATUS
+======
+
+This behavior is under review and may or may not change in a future release.
+
+MORE INFORMATION
+================
+
+MASM versions 5.1 and earlier are two-pass assemblers. The source file is read
+twice to determine the size of the instructions and the location of labels.
+
+MASM versions 6.0 and later are N-pass assemblers. The assembler scans the source
+until it can determine the size of all instructions and the location of all
+labels. However, an N-pass assembler must determine certain values on its first
+pass through the application code. These values include expressions in
+preprocessor directives, expressions in predefined macros, and arguments
+preceded by the % operator. If one of these values is based on the difference
+between the values of two labels, the results may differ from those generated by
+MASM versions 5.1 and earlier.
+
+The difference occurs because the assembler evaluates expressions and arguments
+based on the undetermined label locations available during the first assembly
+pass that may change in a subsequent assembly pass. Typically, the value changes
+when a forward reference occurs between the two labels. Because the assembler
+adds padding bytes for the forward reference and removes the padding in
+subsequent assembly passes, the second label has a larger value during the first
+assembly pass than in subsequent passes.
+
+The code example below demonstrates this behavior. Specify the /Fl assembler
+option switch to create a listing file. Review the listing file to see how the
+assembler processes a span-dependent value.
+
+The following information is part of the README.TXT file distributed with MASM
+version 6.1:
+
+  Span-Dependent Expressions used in Macros
+  -----------------------------------------
+
+  MASM 6.1 evaluates macro expressions only on the first pass of assembly,
+  but code and data are reevaluated on subsequent passes. Because of this,
+  macro expressions which depend on the span between two addresses may not
+  evaluate correctly. For example, the following code will not evaluate
+  correctly:
+
+     Label1:
+        JMP Label2
+     Label2:
+        REPEAT Label2 - Label1  ; Evaluates incorrectly
+        INC AX
+     ENDM
+
+  View the listing file to determine if a questionable macro expression
+  was evaluated as desired.
+
+  Span-Dependent Text Equates
+  ---------------------------
+
+  The TEXTEQU operator is evaluated on the first assembly pass. If TEXTEQU
+  is used with an expression that depends on the difference between two
+  addresses, the resulting constant may be incorrect. For example, the
+  following code will not evaluate correctly:
+
+     Label1:
+        JMP Label2
+     Label2:
+        WrongNum TEXTEQU %Label2-Label1 ; WrongNum will be incorrect
+
+Sample Code
+-----------
+
+; Assemble options needed in MASM 6.x: /c /Fl
+
+_text   SEGMENT para public 'CODE'
+       ASSUME cs:_text
+start:
+       jmp SHORT forward
+forward:
+       mov ax, 4C00h
+       int 21h
+_text   ENDS
+
+count = offset forward - offset start
+
+IF count LT 6
+  %OUT two-pass assembler   ; MASM 5.1 and earlier shows this message
+ELSE
+  %OUT n-pass assembler     ; MASM 6.0 and later shows this message
+ENDIF
+
+tst1    SEGMENT para public
+index = 0
+       WHILE index LT count
+         DB 1          ; This will be repeated 10 times in MASM 6.x.
+index = index + 1
+       ENDM
+tst1    ENDS
+
+tst2    SEGMENT para public
+       REPT count      ; This will be repeated 10 times in MASM 6.x,
+         DB 1          ; twice in MASM 5.1.
+       ENDM
+tst2    ENDS
+
+mac3    MACRO arg1
+       macvar = arg1
+       ENDM
+
+tst3    SEGMENT para public
+       mac3 %count     ; This will set macvar to 10 in MASM 6.x
+tst3    ENDS            ; and to 2 in MASM 5.1.
+
+txt4    TEXTEQU %count
+
+tst4    SEGMENT para public
+txtvar  DB txt4         ; This will set txtvar to 10 in MASM 6.x.
+tst4    ENDS
+
+END start
+
+Additional query words: 6.00 6.00a 6.00b 6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b,6.1,6.11,6.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

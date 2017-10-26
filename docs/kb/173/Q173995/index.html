@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173995/","publisher":null,"image":null,"headline":"Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173995-sms-how-to-configure-multiple-shared-apps-to-use-a-single-share">Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q173995</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbusage</span> <span class="n">kbPGC</span> <span class="n">smspgc</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">30</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="k">In</span> <span class="n">some</span> <span class="n">situations</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">want</span> <span class="k">to</span> <span class="n">have</span> <span class="n">multiple</span> <span class="n">shared</span> <span class="n">network</span> <span class="n">applications</span>
+<span class="n">using</span> <span class="n">the</span> <span class="n">same</span> <span class="n">share</span> <span class="k">or</span> <span class="n">drive</span> <span class="n">letter</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">workstation</span><span class="p">.</span> <span class="n">Although</span> <span class="n">you</span> <span class="n">can</span>
+<span class="n">easily</span> <span class="n">accomplish</span> <span class="n">this</span> <span class="k">with</span> <span class="n">a</span> <span class="n">single</span> <span class="n">Sharing</span> <span class="k">package</span><span class="p">,</span> <span class="n">the</span> <span class="n">process</span> <span class="n">becomes</span> <span class="n">more</span>
+<span class="n">complex</span> <span class="n">when</span> <span class="n">multiple</span> <span class="n">packages</span> <span class="n">are</span> <span class="n">involved</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="m">4.</span><span class="n">x</span> <span class="n">sharing</span> <span class="k">package</span> <span class="n">that</span> <span class="n">is</span> <span class="n">created</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span>
+<span class="n">Definition</span> <span class="n">Files</span> <span class="p">(</span><span class="n">PDFs</span><span class="p">)</span> <span class="n">supplied</span> <span class="k">with</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">gives</span> <span class="n">a</span> <span class="n">good</span>
+<span class="n">example</span> <span class="k">of</span> <span class="n">how</span> <span class="k">to</span> <span class="k">set</span> <span class="n">up</span> <span class="n">a</span> <span class="n">single</span> <span class="n">Sharing</span> <span class="k">package</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">multiple</span> <span class="n">applications</span><span class="p">.</span>
+<span class="n">This</span> <span class="n">article</span> <span class="n">concentrates</span> <span class="n">on</span> <span class="n">how</span> <span class="n">you</span> <span class="n">can</span> <span class="n">configure</span> <span class="n">multiple</span> <span class="n">Sharing</span> <span class="n">packages</span>
+<span class="n">delivered</span> <span class="n">by</span> <span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span> <span class="p">(</span><span class="n">PGC</span><span class="p">)</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">network</span> <span class="n">share</span> <span class="k">or</span> <span class="n">drive</span>
+<span class="n">letter</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">As</span> <span class="n">an</span> <span class="n">example</span><span class="p">,</span> <span class="n">this</span> <span class="n">article</span> <span class="n">will</span> <span class="n">configure</span> <span class="n">two</span> <span class="n">applications</span><span class="p">,</span> <span class="n">Solitaire</span> <span class="k">and</span>
+<span class="n">FreeCell</span><span class="p">,</span> <span class="k">as</span> <span class="n">separate</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Sharing</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">will</span> <span class="n">both</span>
+<span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">network</span> <span class="n">share</span><span class="p">.</span> <span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="n">perform</span> <span class="n">the</span> <span class="n">following</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Prepare</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">each</span> <span class="n">application</span><span class="p">.</span>
+
+  <span class="k">To</span> <span class="n">use</span> <span class="n">a</span> <span class="n">common</span> <span class="n">share</span> <span class="n">point</span><span class="p">,</span> <span class="n">the</span> <span class="n">files</span> <span class="n">for</span> <span class="n">each</span> <span class="n">application</span> <span class="n">must</span> <span class="n">be</span> <span class="n">located</span> <span class="k">in</span>
+  <span class="n">a</span> <span class="n">subdirectory</span> <span class="k">of</span> <span class="n">the</span> <span class="n">directory</span> <span class="n">that</span> <span class="n">will</span> <span class="n">be</span> <span class="n">defined</span> <span class="k">as</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span>
+  <span class="n">directory</span><span class="p">.</span> <span class="n">For</span> <span class="n">this</span> <span class="n">example</span><span class="p">,</span> <span class="n">all</span> <span class="n">packages</span> <span class="n">will</span> <span class="n">be</span> <span class="n">located</span> <span class="n">under</span> <span class="n">a</span> <span class="k">Package</span>
+  <span class="n">directory</span> <span class="n">that</span> <span class="n">is</span> <span class="n">also</span> <span class="n">shared</span> <span class="k">as</span> <span class="s2">"Package."</span>
+
+  <span class="n">For</span> <span class="n">Solitaire</span><span class="p">,</span> <span class="n">the</span> <span class="n">files</span> <span class="n">will</span> <span class="n">be</span> <span class="n">located</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Solitaire</span> <span class="n">directory</span><span class="p">,</span> <span class="k">with</span> <span class="n">the</span>
+  <span class="n">following</span> <span class="n">structure</span><span class="p">:</span>
+
+  <span class="k">Package</span><span class="p">\</span><span class="n">App1</span><span class="p">\</span><span class="n">Solitaire</span>
+
+  <span class="n">For</span> <span class="n">FreeCell</span><span class="p">,</span> <span class="n">the</span> <span class="n">files</span> <span class="n">will</span> <span class="n">be</span> <span class="n">located</span> <span class="k">in</span> <span class="n">the</span> <span class="n">FreeCell</span> <span class="n">directory</span><span class="p">,</span> <span class="k">with</span> <span class="n">the</span>
+  <span class="n">following</span> <span class="n">structure</span><span class="p">:</span>
+
+  <span class="k">Package</span><span class="p">\</span><span class="n">App2</span><span class="p">\</span><span class="n">FreeCell</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">Defining</span> <span class="n">the</span> <span class="n">App1</span> <span class="k">and</span> <span class="n">App2</span> <span class="n">directories</span> <span class="k">as</span> <span class="n">subdirectories</span> <span class="k">of</span> <span class="n">the</span> <span class="k">Package</span>
+  <span class="n">directory</span> <span class="n">keeps</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">from</span> <span class="n">combining</span> <span class="n">the</span> <span class="n">source</span>
+  <span class="n">directories</span> <span class="n">for</span> <span class="n">both</span> <span class="n">applications</span> <span class="n">into</span> <span class="n">the</span> <span class="n">same</span> <span class="n">compressed</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span> <span class="n">program</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">Systems</span>
+  <span class="n">Management</span> <span class="n">Server</span> <span class="n">Sharing</span> <span class="k">package</span> <span class="n">for</span> <span class="n">each</span> <span class="n">application</span><span class="p">.</span> <span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="n">perform</span>
+  <span class="n">the</span> <span class="n">following</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="n">For</span> <span class="n">Solitaire</span>
+<span class="p">-------------</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">Define</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="k">as</span> <span class="p">\\&lt;</span><span class="n">server</span><span class="p">&gt;\</span><span class="k">Package</span><span class="p">\</span><span class="n">App1</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="n">Define</span> <span class="n">the</span> <span class="n">common</span> <span class="n">share</span> <span class="n">that</span> <span class="n">each</span> <span class="n">application</span> <span class="n">will</span> <span class="n">use</span><span class="p">:</span> <span class="n">SMS_APPS</span><span class="p">.</span>
+
+  <span class="n">c</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">program</span> <span class="n">item</span> <span class="k">with</span> <span class="n">the</span> <span class="n">following</span> <span class="n">attributes</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Solitaire</span>
+     <span class="k">package</span><span class="p">:</span>
+
+  <span class="n">Description</span><span class="p">:</span> <span class="n">Shared</span> <span class="n">Solitaire</span>
+  <span class="n">Command</span> <span class="n">Line</span><span class="p">:</span> <span class="n">Solitiaire</span><span class="p">\</span><span class="n">Sol</span><span class="p">.</span><span class="n">exe</span>
+  <span class="n">Registry</span> <span class="n">Name</span><span class="p">:</span> <span class="n">solitaire</span>
+  <span class="n">Configuration</span> <span class="n">Command</span> <span class="n">Line</span><span class="p">:</span> <span class="p">&lt;</span><span class="n">optional</span><span class="p">;</span> <span class="k">not</span> <span class="n">needed</span> <span class="n">for</span> <span class="n">Solitaire</span><span class="p">&gt;</span>
+
+     <span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">customize</span> <span class="n">the</span> <span class="n">values</span> <span class="n">defined</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Description</span><span class="p">,</span> <span class="n">Registry</span>
+     <span class="n">Name</span><span class="p">,</span> <span class="k">and</span> <span class="n">Configuration</span> <span class="n">Command</span> <span class="n">Line</span> <span class="k">parameters</span><span class="p">,</span> <span class="n">but</span> <span class="n">you</span> <span class="n">must</span> <span class="n">manually</span>
+     <span class="n">type</span> <span class="n">the</span> <span class="n">correct</span> <span class="n">Command</span> <span class="n">Line</span> <span class="n">parameter</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Solitaire</span> <span class="n">directory</span> <span class="n">before</span>
+     <span class="n">the</span> <span class="n">executable</span> <span class="n">file</span> <span class="n">can</span> <span class="n">be</span> <span class="nf">run</span><span class="p">.</span>
+
+  <span class="n">d</span><span class="p">.</span> <span class="n">Select</span> <span class="n">the</span> <span class="n">desired</span> <span class="n">option</span> <span class="n">for</span> <span class="n">Drive</span> <span class="n">Mode</span><span class="p">.</span> <span class="n">For</span> <span class="n">this</span> <span class="n">example</span><span class="p">,</span> <span class="n">select</span>
+     <span class="n">Requires</span> <span class="n">Specific</span> <span class="n">Drive</span> <span class="n">Letter</span> <span class="k">and</span> <span class="n">type</span> <span class="s2">"P:"</span> <span class="n">for</span> <span class="n">the</span> <span class="n">network</span> <span class="n">drive</span> <span class="n">that</span>
+     <span class="n">the</span> <span class="n">client</span> <span class="n">will</span> <span class="n">use</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">the</span> <span class="n">SMS_APPS</span> <span class="n">share</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Systems</span>
+     <span class="n">Management</span> <span class="n">Server</span> <span class="n">distribution</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">FreeCell</span>
+<span class="p">------------</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">Define</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="k">as</span> <span class="p">\\&lt;</span><span class="n">server</span><span class="p">&gt;\</span><span class="k">Package</span><span class="p">\</span><span class="n">App2</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="n">Define</span> <span class="n">the</span> <span class="n">common</span> <span class="n">share</span> <span class="n">that</span> <span class="n">each</span> <span class="n">application</span> <span class="n">will</span> <span class="n">use</span><span class="p">:</span> <span class="n">SMS_APPS</span><span class="p">.</span>
+
+  <span class="n">c</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">program</span> <span class="n">item</span> <span class="k">with</span> <span class="n">the</span> <span class="n">following</span> <span class="n">attributes</span> <span class="n">for</span> <span class="n">the</span> <span class="n">FreeCell</span>
+     <span class="k">package</span><span class="p">:</span>
+
+  <span class="n">Description</span><span class="p">:</span> <span class="n">Shared</span> <span class="n">Freecell</span>
+  <span class="n">Command</span> <span class="n">Line</span><span class="p">:</span> <span class="n">Freecell</span><span class="p">\</span><span class="n">Freecell</span><span class="p">.</span><span class="n">exe</span>
+  <span class="n">Registry</span> <span class="n">Name</span><span class="p">:</span> <span class="n">freecell</span>
+  <span class="n">Configuration</span> <span class="n">Command</span> <span class="n">Line</span><span class="p">:</span> <span class="p">&lt;</span><span class="n">optional</span><span class="p">,</span> <span class="k">not</span> <span class="n">needed</span> <span class="n">for</span> <span class="n">Freecell</span><span class="p">&gt;</span>
+
+  <span class="n">d</span><span class="p">.</span> <span class="n">Select</span> <span class="n">the</span> <span class="n">desired</span> <span class="n">option</span> <span class="n">for</span> <span class="n">Drive</span> <span class="n">Mode</span><span class="p">,</span> <span class="n">making</span> <span class="n">certain</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span>
+     <span class="n">option</span> <span class="n">that</span> <span class="n">was</span> <span class="n">chosen</span> <span class="n">for</span> <span class="n">the</span> <span class="n">other</span> <span class="k">package</span><span class="p">.</span> <span class="n">Select</span> <span class="n">Requires</span> <span class="n">Specific</span>
+     <span class="n">Drive</span> <span class="n">Letter</span> <span class="k">and</span> <span class="n">type</span> <span class="s2">"P:"</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Use</span> <span class="n">a</span> <span class="n">separate</span> <span class="n">Share</span> <span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">job</span> <span class="n">for</span> <span class="n">both</span> <span class="n">the</span> <span class="n">Solitaire</span> <span class="k">and</span>
+  <span class="n">FreeCell</span> <span class="n">packages</span> <span class="k">to</span> <span class="n">deliver</span> <span class="n">the</span> <span class="n">shared</span> <span class="n">applications</span><span class="p">.</span> <span class="n">This</span> <span class="n">creates</span> <span class="n">the</span>
+  <span class="n">following</span> <span class="n">directory</span> <span class="n">structure</span> <span class="n">on</span> <span class="n">each</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">distribution</span>
+  <span class="n">server</span> <span class="n">defined</span> <span class="k">in</span> <span class="n">the</span> <span class="n">jobs</span><span class="p">:</span>
+
+  <span class="n">Sms_apps</span><span class="p">\</span><span class="n">Freecell</span>
+  <span class="n">Sms_apps</span><span class="p">\</span><span class="n">Solitaire</span>
+
+<span class="m">4.</span> <span class="n">Define</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">groups</span> <span class="n">that</span> <span class="n">includes</span> <span class="n">the</span>
+  <span class="n">program</span> <span class="n">items</span> <span class="n">created</span> <span class="k">with</span> <span class="n">each</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">After</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">client</span><span class="s1">'s desktop has been updated with the
+new icons for the shared applications, starting one of the applications maps the
+network drive P: to the Sms_apps share and runs the application from the
+appropriate subdirectory. The other application will also use the same drive
+when it is run, thus reducing the number of network drives consumed by these
+applications.
+
+NOTE: It is important to consider that a package cannot be updated by Systems
+Management Server if the drive or share is in use at the time Systems Management
+Server attempts to update it. Therefore, use caution when using the steps
+outlined above to configure multiple packages to use the same share.
+
+For example, if you needed to apply an update to Solitaire and there were users
+currently playing FreeCell, the update to Solitaire could not occur without
+first disconnecting all users from the Sms_apps share.
+
+WARNING: If a Remove Package From Server job is sent to remove one of the
+packages defined below the existing common share, all of the packages below the
+existing share will be removed. Therefore, if you need to remove a single
+package from a distribution server, it is recommended that you manually perform
+this procedure.
+
+Additional query words: prodsms PDF
+
+======================================================================
+Keywords          : kbusage kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don’t Match | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don’t Match" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245222/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245222/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245222/","publisher":null,"image":null,"headline":"Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don’t Match","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245222-info-event-id-in-win32_ntlogevent-nt-event-viewer-dont-match">Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don’t Match</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245222
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:; winnt:1.0,1.1,1.5,4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT400 kbOSWin2000 kbWMI100 kbWMI110 kbWMI150
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The value returned by Win32_NTLogEvent.EventIdentifier does not match the event
+ID posted in the Event Viewer.
+
+For example, an event may show event ID=9 under Event Viewer, but WMI reports
+that:
+
+  Win32_NTLogEvent.EventIdentifier=3221487625
+
+Or an event may have event ID=3013 under Event Viewer, but WMI reports:
+
+  Win32_NTLogEvent.EventIdentifier=2147486661
+
+MORE INFORMATION
+================
+
+Event identifiers are 32-bit values. However, Event Viewer only uses the lower
+16 bits in its display.
+
+WMI 1.5 added the EventCode property to the Win32_NTLogEvent class to provide the
+lower 16 bits of the EventIdentifier value.
+
+For earlier versions of WMI, you can mask the value of EventIdentifier with
+0xFFFF to obtain the value shown in Event Viewer.
+
+Additional query words: Win32_NTLogEvent event EventIdentifier "Event ID" WMI WBEM
+
+======================================================================
+Keywords          : kbOSWinNT400 kbOSWin2000 kbWMI100 kbWMI110 kbWMI150 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:; winnt:1.0,1.1,1.5,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

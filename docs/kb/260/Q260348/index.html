@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260348: PRB: Tracking Tab Is Missing with Customer Post Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260348: PRB: Tracking Tab Is Missing with Customer Post Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260348/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260348/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260348/","publisher":null,"image":null,"headline":"Q260348: PRB: Tracking Tab Is Missing with Customer Post Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260348-prb-tracking-tab-is-missing-with-customer-post-form">Q260348: PRB: Tracking Tab Is Missing with Customer Post Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260348
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): kbMsg
+Last Modified: 11-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Routing Wizard sample is included with Microsoft Exchange Server 5.5 SP1. This
+wizard can be used to create routing logic for items posted to a public folder.
+Reviewer approval or rejection information is displayed in a tracking tab of the
+posted message (after the reviewer actions).
+
+If a custom form is used to create the original posted message, a tracking tab
+will not be available. The final approval or rejection information will be
+appended to the body of the item.
+
+CAUSE
+=====
+
+The routing agent created by the Routing Wizard modifies the original message
+posted to the public folder. The MessageClass is changed to IPM.Note, which
+enables Outlook to display the tracking tab. A post that is based on a custom
+form will not be modified by the Routing Wizard agent.
+
+RESOLUTION
+==========
+
+There are two workarounds:
+
+- Use the default post message form built into Outlook to create the items for
+  routing.
+
+- Modify the routing map for your needs.
+
+STATUS
+======
+
+This behavior is by design.
+
+The Routing Wizard provides useful routing logic. It also provides an idea about
+what can be done with Microsoft Exchange Server Routing Objects. However, the
+Routing Wizard is meant as a sample, not as the definitive mechanism to effect
+routing logic. Information on how to modify the routing agent is outside the
+scope of this article. The Microsoft Developer Network (MSDN) is the best source
+of information on that topic.
+
+MORE INFORMATION
+================
+
+This information applies to a public folder with a routing agent installed by
+the Routing Wizard.
+
+The Routing Wizard sample agent processes items posted to the folder where it is
+installed. One or more copies of the item are sent to the reviewers (recipients
+identified in the routing map). The original message itself is changed from a
+post to a message; this is accomplished by changing the MessageClass property
+from IPM.Post to IPM.Note. The IPM.Note class uses the standard message form,
+which has the tracking tab. Post forms do not have the tracking tab.
+
+You can observe this transformation by posting a message to your routing public
+folder. When the routing agent runs (it may take a few minutes), you will see
+that the posted message icon disappears and a new mail item is created.
+
+The tracking tab is actually enabled when the first reviewer either approves or
+rejects the item. If the original posted message was created with a custom form,
+its MessageClass will not be IPM.Post (for instance, it may be
+IPM.Post.MyCustomForm). The routing agent will not change the post to a note;
+this will preserve the custom format of the Post. All other aspects of the
+routing process still occur, and the final results are added to the body of the
+post.
+
+The Routing Wizard sample application illustrates the type of routing tools that
+can be built easily with Microsoft Exchange Routing. With the Routing Wizard,
+you can define and install simple sequential or parallel routing and approval
+logic into Microsoft Exchange Server folders.
+
+REFERENCES
+==========
+
+For additional information, see the Exchange Platform SDK, available in the MSDN
+Library.
+
+Additional query words: Event Scripting Agent, Routing Wizard
+
+======================================================================
+Keywords          : kbMsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

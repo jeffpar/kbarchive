@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259942/","publisher":null,"image":null,"headline":"Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259942-howto-set-where-tmp-files-are-created-with-the-vfp-odbc-driver">Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259942
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:1.0,2.0,3.0,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbODBC kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Visual FoxPro (Build 6.00.8281.00), version 6.0 
+- Microsoft ODBC Driver for Visual FoxPro, versions 1.0, 2.0, 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, when Visual FoxPro tables that are accessed by using the Visual
+FoxPro ODBC driver from a Web page, files with the .tmp extension are created in
+the Microsoft Windows NT System32 or the Microsoft Windows 9x System
+sub-directory on the server. This is usually not the desired directory for these
+files. In order to control this behavior, the System temp environment variable
+needs to be set on the Server computer.
+
+MORE INFORMATION
+================
+
+To set the System temp environment variable, do the following:
+
+1. On your computer desktop, right-click on My Computer.
+
+2. Choose Properties and select the Environment tab.
+
+3. Click an entry in the System Variables list box (the one on top).
+
+4. In the Variable and Value Edit control, type the following:
+
+" Variable = TEMP
+Value = C:\Temp" (without the quotation marks)
+
+5. Click the Set button, and note that TEMP has been added to the list of system
+  variables. Repeat the process for the TMP variable.
+
+6. Log off and restart the computer.
+
+REFERENCES
+==========
+
+For additional information about using Visual FoxPro through the Internet, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q165492 HOWTO: Use ADO with a Visual FoxPro Database
+
+  Q168053 HOWTO: Use VFP Automation Servers with Active Server Pages
+
+  Q150073 How to Query FoxPro Data on the Web Using ODBC
+
+  Q165775 HOWTO: Set up a Visual FoxPro Internet Server
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP100 kbODBCVFP200 kbODBCVFP300 kbODBCVFP400 kbODBCVFP500 kbODBCVFP600828100
+Version           : WINDOWS:1.0,2.0,3.0,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

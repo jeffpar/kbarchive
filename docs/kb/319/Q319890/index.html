@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/319/Q319890/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/319/Q319890/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/319/Q319890/","publisher":null,"image":null,"headline":"Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q319890-path-not-found-error-err-msg-using-cdonts-to-send-mail-via-asp">Q319890: "Path Not Found Error" Err Msg Using CDONTS to Send Mail via ASP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q319890
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you send mail to your Microsoft Exchange Server 5.5 computer from an Active
+Server Pages (ASP) page that uses Collaboration Data Objects for Windows NT
+Server (CDONTS), you may receive the following error message:
+
+  80070003 "Path not found error"
+
+RESOLUTION
+==========
+
+To resolve this issue, make sure that the Exchange Server Internet Mail Service
+is installed and working correctly on your computer. Next, verify that the
+registry settings for Exchange Server are correct. After you verify that the
+registry settings are correct, you may want to reinstall Internet Explorer 4.01,
+and then modify the Internet Information Service (IIS) metafile.
+
+NOTE: Internet Explorer 4.01 is required for the Windows NT Option Pack that
+installs IIS. It adds needed components to IIS. Reinstall Internet Explorer 4.01
+to make sure that all required objects are available in IIS.
+
+Verify that the Internet Mail Service Is Installed
+--------------------------------------------------
+
+To verify that the Internet Mail Service is installed and is working properly,
+follow these steps:
+
+1. Click Start, click Settings, and then click Control Panel.
+
+2. In Control Panel, double-click Services.
+
+3. In the list of Services, locate Microsoft Exchange Internet Mail Service, and
+  then make sure that Status is listed as Started. If nothing appears in the
+  Status column for the Microsoft Exchange Internet Mail Service, click Start
+  to start Internet Mail Service.
+
+4. Click Close.
+
+Verify Exchange Server Registry Settings
+----------------------------------------
+
+To verify the correct Exchange Server registry settings, follow these steps:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "regedt32" (without the quotation marks), and then
+  click OK.
+
+3. In the Registry Editor, locate the following subkey:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Active Messaging\Use Exchange
+
+4. Make sure that this entry is set to a value of "1" (without the quotation
+  marks).
+
+5. In the Registry Editor, locate the following subkey:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Active Messaging
+
+6. On the Security menu, click Permissions.
+
+7. Select Everyone in the Name list in the Registry Key Permissions dialog box,
+  and then click Full Control in the "Type of Access" list.
+
+8. Click OK.
+
+9. In the Registry Editor, locate the following subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters\RootDir
+
+10. Double-click the RootDir value, note the path that appears in the String
+  text box, and then append this value by typing "\pickup" (without the
+  quotation marks) at the end of the path.
+
+11. Click OK.
+
+12. Open Windows Explorer, and then locate the path that you edited in step 10.
+
+13. Make sure that a folder named "Pickup" is located in this path. If no Pickup
+  folder exists, click File, click New, and then click Folder. Type "Pickup"
+  (without the quotation marks) for the folder name, and then press ENTER.
+
+14. Right-click the folder, and then select Properties.
+
+15. In the Properties dialog box, click Security, and then click Permissions.
+
+16. In the Directory Permissions dialog box, Everyone must be listed as having
+  Full Control. If Everyone does not appear, click Add, and then click
+  Everyone in the list of names. In the "Type of Access" drop-down list, click
+  Full Control, and then click OK.
+
+17. In the Directory Permissions dialog box, click to select the Replace
+  Permissions on Subdirectories check box, click OK, and then click Yes in the
+  confirmation dialog box.
+
+18. Click OK.
+
+19. Close Windows Explorer.
+
+20. In the Registry Editor, locate the following subkey in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters
+
+21. On the Security menu, click Permissions.
+
+22. In the Registry Key Permissions dialog box, click Everyone in the Name list,
+  and then in the "Type of Access" list, click Full Control.
+
+23. Click OK.
+
+Reinstall Internet Explorer 4.01 or Later
+-----------------------------------------
+
+1. Run Setup for Internet Explorer 4.01 or later.
+
+2. Follow the on-screen instructions.
+
+3. Restart your computer when Setup is complete.
+
+Use Mdutil to Modify the MetaFile
+---------------------------------
+
+Optionally, you can modify the metafile when you use the Mdutil.exe utility that
+is included in the Windows NT Option Pack.
+
+To use Mdutil.exe, follow these steps:
+
+1. Copy the Mdutil.exe file from either the Windows NT Option Pack CD-ROM or the
+  Windows 2000 CD-ROM to your System32 folder.
+
+2. Click Start, and then click Run.
+
+3. In the Run dialog box, type "cmd" (without the quotation marks), and then
+  press ENTER.
+
+4. In the Command window, type the following command
+
+  mdutil set SmtpSvc/1 -prop 36880 -dtype STRING -value
+  "&lt;drive&gt;:\exchsrvr\imcdata\Pickup" -s gozer
+
+where &lt;drive&gt;:\exchsrvr\imcdata\Pickup is the full path to the Pickup
+directory for your Exchange Server. NOTE: If you need help using the Mdutil.exe
+utility, type "mdutil" (without the quotation marks) in the Command window.
+5. Close the Command window.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q238956 PRB: CDONTS: Error 80070003 "Path not found error"
+
+  Q240225 Description of Adsutil and MetaEdit Utilities Used to Modify the
+  Metabase
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

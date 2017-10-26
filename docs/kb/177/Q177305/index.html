@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177305: Using the Current User Name and Password Option in RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177305: Using the Current User Name and Password Option in RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177305/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177305/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177305/","publisher":null,"image":null,"headline":"Q177305: Using the Current User Name and Password Option in RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177305-using-the-current-user-name-and-password-option-in-ras">Q177305: Using the Current User Name and Password Option in RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177305
+Product(s): Microsoft Windows NT
+Version(s): Winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Dial-up networking gives a user the ability to use the password and the name of
+the current user to connect to a Windows NT Remote Access Server.
+
+On computers running Windows NT Workstation or on stand-alone servers configured
+to use dial-up networking, it is often desirable to use the current user name
+and password for a phonebook entry. This option exists when the phonebook entry
+is configured to accept only Microsoft encrypted authentication.
+
+MORE INFORMATION
+================
+
+The "Use current username and password" option in a phonebook entry has the
+following advantages:
+
+1. It causes the credentials entered at CTRL+ALT+DEL logon to be used for the
+  RAS connection. This eliminates the need for the user to enter logon
+  credentials after either logging on using cached account information, or
+  reconnecting to the domain.
+
+2. This setting eliminates the need to log off and then log on again after you
+  change the domain account password through RAS. With this feature enabled,
+  locally stored account information will be updated, even if the user logged
+  on is using cached account information.
+
+NOTE: You can disable storing locally cached account information.
+
+For more information, see the following article in the Microsoft Knowledge Base:
+
+ARTICLE-ID: Q172931
+TITLE : Cached Logon Information
+
+Assuming a phonebook entry already exists, you can use the following steps to
+enable the feature:
+
+1. Open dial-up networking. With the correct phonebook entry selected, click the
+  More button.
+
+2. Choose Edit entry and modem properties.
+
+3. From the Edit Phonebook Entry screen, select the Security tab.
+
+4. Click Accept only Microsoft encrypted authentication.
+
+5. Place a check in the Use current username and password box.
+
+6. Click OK.
+
+For more information on dial-up networking, see the Windows NT resource kit or
+Windows NT help.
+
+Additional query words: profile howto remote access service
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : Winnt:4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

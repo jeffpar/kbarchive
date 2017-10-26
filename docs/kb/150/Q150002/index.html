@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150002/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150002/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150002/","publisher":null,"image":null,"headline":"Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150002-how-to-sort-schedule-70-contacts-list-using-vb-for-apps">Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150002
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows 95, version 7.0 
+- Microsoft Excel for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Schedule+ stores records in the Contacts list in the order in which you enter
+them. When you sort your contacts in Schedule+, if you have a large number of
+contacts, Schedule+ can be slow to load because it loads your schedule and then
+must perform a sort of the contact list. This article contains a Visual Basic
+for Applications macro you can use to sort the Schedule+ contact list.
+
+MORE INFORMATION
+================
+
+Microsoft provides examples of Visual Basic for Applications procedures for
+illustration only, without warranty either expressed or implied, including, but
+not limited to the implied warranties of merchantability and/or fitness for a
+particular purpose. The Visual Basic procedures in this article are provided 'as
+is' and Microsoft does not guarantee that they can be used in all situations.
+While Microsoft Support professionals can help explain the functionality of a
+particular macro, they will not modify these examples to provide added
+functionality, nor will they help you construct macros to meet your specific
+needs. If you have limited programming experience, you may want to consult one
+of the Microsoft Solution Providers. Solution Providers offer a wide range of
+fee-based services, including creating custom macros. For more information about
+Microsoft Solution Providers, call Microsoft Customer Information Service at
+(800) 426-9400.
+
+The following Visual Basic for Applications macro connects to Schedule+ (which
+must be running before you start the macro), and then copies the Contacts list
+to a Microsoft Excel worksheet. The Contacts list is sorted on the worksheet
+using built-in sort routines. In the below sample, the sort only occurs on the
+first column. The macro deletes the original Contacts list in Schedule+, and
+then writes the data back from the worksheet into the Contacts list.
+
+To enter the macro code, do the following:
+
+1. Start Microsoft Excel.
+
+2. On the Insert menu, point to Macro, and then click Module.
+
+3. Enter the macro code on the module sheet.
+
+In this example, the macro sorts the firstname, surname, and home phone number.
+The macro assumes a contact list similar to the following:
+
+Firstname     Surname     Homephone
+---------     -------     ---------
+   D             D            4
+   B             B            2
+   A             A            1
+   C             C            3
+
+  '====================================================================
+  'Macro SortScheduleContacts
+  'This macro only sorts the firstname, surname, and homephone fields
+  'and will need to be expanded to cover all additional contact fields
+  '====================================================================
+
+     Sub SortScheduleContacts()
+        Dim objSched, objTable, objItem As Object
+        Dim i, j As Integer
+
+        'Create the Schedule+ object
+        Set objSched = CreateObject("scheduleplus.application.7")
+
+        'Creates the contacts database object
+        Set objTable = objSched.ScheduleSelected.Contacts
+
+        'Moves to first row of contact list
+        objTable.Reset
+        For i = 1 To objTable.Rows
+           'Get item in contacts database
+           Set objItem = objTable.Item
+           'Copy contact details to worksheet
+           Cells(i, 1).Value = Format(objItem.FirstName)
+           Cells(i, 2).Value = Format(objItem.lastname)
+           Cells(i, 3).Value = Format(objItem.phonehome)
+           'Go to Next item
+           objTable.skip
+        Next
+
+        'Sorts the contact list on worksheet (sorts on column A)
+        Range("a1").CurrentRegion.Select
+        Selection.Sort Key1:=Range("A1"), Order1:=xlAscending, Header:= _
+        xlGuess, OrderCustom:=1, MatchCase:=False, Orientation:= _
+        xlTopToBottom
+
+        'Deletes all items on schedule contact list
+        objTable.Reset
+        For i = 1 To objTable.Rows
+        Set objItem = objTable.Item
+           objTable.deleteitem (objItem.itemid)
+           objTable.skip
+        Next
+
+        'Copies sorted contact list from worksheet to Schedule+ 95
+        Range("a1").CurrentRegion.Select
+        j = Selection.Rows.Count
+        For i = j To 1 Step -1
+           'Creates a blank new entry in the table
+           Set objItem = objTable.New
+           'Creates new entries in the contacts database
+           objItem.SetProperties FirstName:=Cells(i, 1)
+           objItem.SetProperties lastname:=Cells(i, 2)
+           objItem.SetProperties phonehome:=Cells(i, 3)
+        Next
+
+        'Delete objects
+        Set objItem = Nothing
+        Set objTable = Nothing
+        Set objSched = Nothing
+     End Sub
+
+For more information about programming Schedule+, see the Microsoft Developer
+Network compact disc.
+
+Additional query words: XL7 Contact Sort Schedule MSDN CD-ROM
+
+======================================================================
+Keywords          :  
+Technology        : kbExcelSearch kbExcel95 kbScheduleSearch kbExcel95Search kbZNotKeyword3 kbSchedule700Win95
+Version           : WINDOWS:7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

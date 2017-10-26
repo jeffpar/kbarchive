@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230049/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230049/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230049/","publisher":null,"image":null,"headline":"Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230049-howto-highlight-row-of-multi-column-report-view-clistctrlr">Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230049
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbCtrl kbListView kbMFC kbVC400 kbVC500 kbVC600 kbhowto kbGrpDSMFCATL
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The ListView common control in a multi-column report view mode highlights only
+the first column when a row is selected. This behavior is by design.
+
+MORE INFORMATION
+================
+
+To enable complete row selection, you need to send the
+LVM_SETEXTENDEDLISTVIEWSTYLE message to the control and specify the
+LVS_EX_FULLROWSELECT extended style.
+
+Create a CListCtrl derived class, CMyListCtrl. Using ClassWizard, create a
+handler for the WM_CREATE message for CMyListCtrl. Then, in the definition of
+the handler, copy the code shown below. Now use CMyListCtrl in place of
+CListCtrl in your project.
+
+  int CMyListCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct) 
+  {
+     if (CListCtrl::OnCreate(lpCreateStruct) == -1)
+        return -1;
+
+     DWORD dwStyle = ::SendMessage(m_hWnd,LVM_GETEXTENDEDLISTVIEWSTYLE,0,0);
+     dwStyle |= LVS_EX_FULLROWSELECT;
+     ::SendMessage(m_hWnd,LVM_SETEXTENDEDLISTVIEWSTYLE,0,dwStyle);
+
+  // or you could also use
+
+  // ListView_SetExtendedListViewStyle(
+  //            m_hWnd, 
+  //            ListView_GetExtendedListViewStyle(m_hWnd)
+  //            | LVS_EX_FULLROWSELECT);
+
+  // or you could also use
+
+  // SetExtendedStyle(GetExtendedStyle() | LVS_EX_FULLROWSELECT);
+
+     return 0;
+  }
+
+The code above works only for dynamically created list controls. For controls
+created on the dialog resource, similar code should be placed in the
+OnInitDialog function.
+
+REFERENCES
+==========
+
+1. Q147842 HOWTO: Detect a Mouse Click on Any Column of List View Control
+
+2. LISTHDR: Demonstrates the List View and Header Common Controls
+
+3. Q181440 Add Full Row Select Functionality to a ListView Control
+
+  NOTE: Article Q181440 shows how this could be achived in Visual Basic.
+
+4. Q131788 SAMPLE: OdListVw.exe Highlighs Entire Row in a ListView Control[win32
+  sdk]
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Vidyanand, Microsoft Corporation
+
+
+Additional query words: Select Highlight Report CListCtrl ListView
+
+======================================================================
+Keywords          : kbCmnCtrls kbCtrl kbListView kbMFC kbVC400 kbVC500 kbVC600 kbhowto kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

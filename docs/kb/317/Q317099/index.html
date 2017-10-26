@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317099: PRB: &quot;550 Quoted Name Does Not Match IP Address&quot; SMTP Error Msg | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317099: PRB: &quot;550 Quoted Name Does Not Match IP Address&quot; SMTP Error Msg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317099/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317099/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317099/","publisher":null,"image":null,"headline":"Q317099: PRB: &quot;550 Quoted Name Does Not Match IP Address&quot; SMTP Error Msg","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317099-prb-550-quoted-name-does-not-match-ip-address-smtp-error-msg">Q317099: PRB: "550 Quoted Name Does Not Match IP Address" SMTP Error Msg</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317099
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send e-mail messages to remote Simple Mail Transfer Protocol (SMTP)
+servers, you may receive the following error message:
+
+  550 Quoted name does not match IP Address
+
+On the local SMTP server that sent the e-mail message, a file that has the .rtr
+file name extension and that is associated with the e-mail message contains the
+following lines:
+
+  &lt;username@domainname.com&gt;
+  Remote connection was abruptly disconnected.
+
+In a Network Monitor trace of this scenario, after the local SMTP server
+[sourceIP:3768] sends the EHLO command to the remote SMTP server
+[destinationIP:25], as follows
+
+  EHLO &lt;sourceFQDN&gt;
+
+the remote SMTP server returns the following response to the local SMTP server:
+
+  550 Quoted name does not match IP Address
+
+CAUSE
+=====
+
+On public DNS servers, the A record for the source fully qualified domain name
+(FQDN) does not point to the source IP address that is owned by the source mail
+server.
+
+This kind of problem typically occurs when Network Load Balancing (NLB) or the
+Microsoft Windows NT Load Balancing Service (WLBS) is involved. With NLB or
+WLBS, the FQDN is mapped to the virtual IP address that is used to implement
+load balancing. The remote SMTP server enables a feature to perform reverse DNS
+queries, and rejects the requests from the IP address that does not match the
+FQDN name that it claims. Therefore, the source FQDN of the virtual name does
+not match the real IP address of one node in the NLB or WLBS because it points
+to the virtual IP address of the NLB or WLBS.
+
+RESOLUTION
+==========
+
+To resolve this problem, use either of the following methods:
+
+- On the source server, change the DNS records so that the source FQDN matches
+  the source IP address.
+
+- For NLB or WLBS, follow these steps to create individual DNS records in the
+  DNS server for each node, and then change the FQDN setting for each node to
+  individual the FQDN name in the SMTP service:
+
+  1. In the Microsoft Management Console (MMC), click SMTP Site Properties.
+
+  2. Click the Delivery tab.
+
+  3. Type the proper string in the Fully-qualified domain name box.
+
+  4. Click OK.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words: WLBS NLS IIS SMTP 550
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

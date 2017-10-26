@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98366: Using Print Commands in FoxBASE+/Mac | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98366: Using Print Commands in FoxBASE+/Mac" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98366/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98366/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98366/","publisher":null,"image":null,"headline":"Q98366: Using Print Commands in FoxBASE+/Mac","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98366-using-print-commands-in-foxbasemac">Q98366: Using Print Commands in FoxBASE+/Mac</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98366
+Product(s): Microsoft Fox Miscellaneous Products
+Version(s): MACINTOSH:2.01
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The printing commands ? and @ SAY use different command sets. There are a
+variety of command combinations that affect output to the printer, screen, and
+text files, and there are several options that can affect formatting.
+
+MORE INFORMATION
+================
+
+OUTPUT TO THE PRINTER
+---------------------
+
+To Use ?
+--------
+
+     SET PRINT ON
+     ? "Print String"
+     SET PRINT OFF
+     SET PRINT TO
+
+To Use @ ... SAY
+----------------
+
+     SET DEVICE TO PRINT
+     @ 1,1 SAY "Print String"
+     SET DEVICE TO SCREEN
+     SET PRINT TO
+
+To Use Both
+-----------
+
+     SET PRINT ON
+     SET DEVICE TO PRINT
+     ? "This is a ?"
+     @ 2,1 SAY "@ SAY"
+     SET DEVICE TO SCREEN
+     SET PRINT OFF
+     SET PRINT TO
+
+Notes
+-----
+
+- SET PRINT ON does NOT direct output from @ ... SAY commands.
+
+- SET DEVICE TO PRINT does NOT direct output from ?.
+
+- Output from ? will be printed with the current screen font.
+
+- SET PRINT TO is needed to close the print job. Without it, if there is an
+  error during printing, the Macintosh will remain in a background conversation
+  with the printer.
+
+- The output will be sent to a buffer and will not be released until the SET
+  PRINT TO command is encountered. An EJECT or SET PRINT TO command can be
+  inserted within the print job to force a dump of the buffer and complete the
+  page feed.
+
+- SET CONSOLE OFF will prevent the output from being echoed to the screen.
+
+- SET DEVICE TO PRINT can be issued before SET PRINT ON with the same results.
+  Likewise, the order of SET DEVICE TO SCREEN and SET PRINT OFF is
+  interchangeable.
+
+OUTPUT TO TEXT FILE
+-------------------
+
+To Use ?
+--------
+
+     SET ALTERNATE TO "filename"
+     SET ALTERNATE ON
+     ? "Text String"
+     SET ALTERNATE OFF
+     SET ALTERNATE TO
+
+To Use @ ... SAY
+----------------
+
+     SET PRINTER TO "filename"
+     SET DEVICE TO PRINT
+     @ 1,1 SAY "Text String"
+     SET DEVICE TO SCREEN
+     SET PRINTER TO
+
+Notes
+-----
+
+- If output is not to be echoed to the screen, issue SET CONSOLE OFF. This
+  command does not work in interactive mode. It must be issued from a program.
+
+- The ? command issues a carriage return before outputting, which creates a new
+  line each time ? is issued. To prevent this from occurring, use the ??
+  command.
+
+REFERENCES
+==========
+
+"Commands &amp; Functions," pages 3-2 to 3-15
+
+Additional query words: 2.01 print @say ? alternate FoxBASE+/MAC
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

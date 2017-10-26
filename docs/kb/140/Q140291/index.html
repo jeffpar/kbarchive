@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140291/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140291/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140291/","publisher":null,"image":null,"headline":"Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140291-howto-call-the-graph-wizard--create-a-chart-programmatically">Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140291
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp300b kbvfp500
+Last Modified: 15-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create a Chart in Microsoft Graph from the data in the currently
+selected work area by calling the Graph Wizard programmatically.
+
+MORE INFORMATION
+================
+
+To create a Chart programmatically, use this syntax:
+
+     SELECT &lt;table to be graphed&gt;
+     DO (_GENGRAPH) WITH &lt;parm1&gt; [,&lt;parm2&gt;] [,&lt;parm3&gt;]...[,&lt;parm9&gt;].
+
+NOTE: If DO command listed above causes the error "File does not exist," an
+alternative command is:
+
+      DO HOME() + 'wizards\wzgraph.app' WITH &lt;parm1&gt; [,&lt;parm2&gt;] ... [,&lt;parm9&gt;]
+
+IMPORTANT: this code will not work in an executable run outside of Visual FoxPro.
+The Graph Wizard will always take its data from the currently selected table.
+
+The Graph Wizard application (Wzgraph.app) accepts these parameters:
+
+  parm1 - "AUTOGRAPH" (required)
+  parm2 - chart type (numeric)
+  parm3 - chart subtype (numeric)
+  parm4 - title (character)
+  parm5 - series by row / column (logical)
+  parm6 - has legend (logical)
+  parm7 - use autoformat (logical)
+  parm8 - output DBF (character)
+  parm9 - don't display graph with MODIFY GENERAL (logical)
+
+How the Parameters Interact with Each Other
+-------------------------------------------
+
+Parm1 - "AUTOGRAPH"
+
+If a character string other than "AUTOGRAPH" is specified, Visual FoxPro will
+present either Step 1 (if no table is open) or Step 2 of the interactive Graph
+Wizard. If you use "AUTOGRAPH" and no table is open, the Graph Wizard returns an
+error, if a table is open, the resulting behavior depends on the value of
+parm8.
+
+Parm8 - output DBF
+
+If Parm8 is omitted or empty (for example, " "), you will be prompted for an
+output file name. If you supply the name of an output file, it must be an
+existing .dbf file that contains a General field. If the file does not exist,
+the Graph Wizard returns this error:
+
+  The table you selected is already in use.
+
+WARNING: If the file exists, but does not contain a General field, the file is
+deleted and replaced with a new table of that name containing a single record
+with a single General field that contains the Graph object. Each call to
+(_GENGRAPH) with the same file name in parm8 adds a new record to the table and
+places the generated graph in the General field.
+
+If you are using Visual FoxPro 6.0, the .dbf name must have a .dbf file extension
+because by default the data is saved to a .scx file.
+
+Parm7 - use autoformat
+
+The value of this parameter influences how the numbers passed to parm2 and parm3
+are interpreted.
+
+Parm2 - chart type and parm3 - chart subtype
+
+If parm7 is true (.T.), parm2 will be 1-15 corresponding to the options in the
+Gallery list that is displayed when you click AutoFormat on the Format menu in
+MSGraph. Parm3 will be the number of the selected format displayed for the
+specific Gallery selected.
+
+If parm7 is false (.F.), parm2 will be 1-14 corresponding to the chart types that
+are displayed when you click Chart Type on the Format menu in MSGraph. The first
+1-8 are the 2-D charts (counted from left to right and top to bottom), 9-14 are
+the 3-D chart types. Parm3 will be one of the Subtypes that are displayed when
+you click the Options button in the Chart Type window. Valid numbers depend on
+which Chart Type is specified.
+
+Parm4 - title
+
+This is the title that will appear on the chart. If left empty or omitted, the
+chart will have no title. This is the same as setting the ChartTitle property of
+the chart.
+
+Parm5 - series by row /column
+
+This is the equivalent to clicking either Series in Rows or Series in Columns on
+the Data menu in MSGraph. True (.T.) indicates Series in Rows, and false (.F.)
+indicates Series in Columns. These settings are explained in the Microsoft Graph
+Help file.
+
+Parm6 - has legend
+
+If this is true (.T.), the chart displays a legend. This is the same as setting
+the HasLegend property of the chart.
+
+Parm9 - don't display graph with MODIFY GENERAL
+
+If this is false (.F.) the General field is displayed in a window as though the
+MODIFY GENERAL command had been issued.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp500 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

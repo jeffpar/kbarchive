@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244495/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244495/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244495/","publisher":null,"image":null,"headline":"Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244495-howto-implement-thread-pooled-apartment-model-com-svr-in-atl">Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244495
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbLocalSvr kbService kbThread kbVC600 kbATL300 kbDSupport kbGrpDSMFCAT
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Active Template Library (ATL) allows you to define a pool of STA
+threads in an ATL out of process server with each object created running on its
+own thread. The steps in the "More Information" section of this article shows
+how to do this.
+
+MORE INFORMATION
+================
+
+The following steps are needed to create objects out of a thread pool:
+
+1. Derive your CExeModule or CServiceModule class from:
+
+  CComAutoThreadModule&lt;&gt;
+
+  CExeModule : public CComAutoThreadModule&lt;&gt;
+
+2. Declare DECLARE_CLASSFACTORY_AUTO_THREAD() in each ATL class that can be run
+  on an STA pool thread
+
+3. Declare DECLARE_NOT_AGGREGATABLE() in each ATL class that can be run on an
+  STA pool thread
+
+  DECLARE_NOT_AGGREGATABLE(CMyPooledObject)
+
+4. Change the module CExeModule::Unlock() or CServiceModule::Unlock() method to
+  call:
+
+  CComAutoThreadModule&lt;&gt;::Unlock()
+
+  LONG CExeModule::Unlock()
+  {
+     LONG l = CComAutoThreadModule&lt;&gt;::Unlock();
+     if (l == 0)
+     {
+       bActivity = true;
+       SetEvent(hEventShutdown); // tell monitor that we transitioned to zero
+     }
+     return l;
+  }
+
+If this is being done for a service, you will need to do one more step. Change
+the following code from:
+
+  inline void CServiceModule::Init(_ATL_OBJMAP_ENTRY* p, HINSTANCE h, UINT nServiceNameID, const GUID* plibid)
+  {
+     CComModule::Init(p, h, plibid);
+
+to:
+
+  inline void CServiceModule::Init(_ATL_OBJMAP_ENTRY* p, HINSTANCE h, UINT nServiceNameID, const GUID* plibid)
+  {
+     CComAutoThreadModule&lt;&gt;::Init(p, h, plibid);
+
+By default, ATL creates a pool of four threads per processor. You can change this
+in the _Module.Init() call in the tWinMain() function call by specifying the
+number of threads in the optional forth parameter. By default,
+CComAutoThreadModule uses CComSimpleThreadAllocator as the thread allocator.
+CComSimpleThreadAllocator uses a simple round robin scheme to creating objects
+in the thread pool.
+
+REFERENCES
+==========
+
+For more information lookup DECLARE_CLASS_FACTORY_AUTO_THREAD() and
+CComAutoThreadModule and the Microsoft Developer's Network (MSDN).
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q202128 BUG: ATL EXE Server Based on CComAutoThreadModule May Hang on
+  Registration
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbLocalSvr kbService kbThread kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL kbArchitecture 
+Technology        : kbAudDeveloper kbATLsearch
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

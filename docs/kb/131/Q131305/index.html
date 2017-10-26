@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131305: How To Make a Network Software Component Setup Disk from CD-ROM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131305: How To Make a Network Software Component Setup Disk from CD-ROM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131305/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131305/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131305/","publisher":null,"image":null,"headline":"Q131305: How To Make a Network Software Component Setup Disk from CD-ROM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131305-how-to-make-a-network-software-component-setup-disk-from-cd-rom">Q131305: How To Make a Network Software Component Setup Disk from CD-ROM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131305
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can make a floppy disk that contains an installable network components such
+as TCP/IP or DLC. If you only have the Windows NT CD-ROM disc, and you can only
+install network components from floppy disks, you can make a disk that contains
+network components such as TCP/IP or DLC.
+
+MORE INFORMATION
+================
+
+1. Format a blank disk.
+
+2. Copy all files with an extension of *.S (Server version) or *.W (Workstation)
+  (each are two bytes in size) from the CD-ROM root directory to the disk.
+
+  For Windows NT 4.0, copy a file called: CDROM_S.40 (for Server) or CDROM_W.40
+  (for Workstation) from the CDROM root directory to the disk.
+
+3. Find the INF file which contains the list of files you need to copy from the
+  \I386 directory on the CD-ROM.
+
+     OEMNXPDL.INF for installing DLC protocol
+     OEMNXPTC.INF for TCP/IP protocol
+
+  For additional information on INF files, see the following article in the
+  Microsoft Knowledge Base:
+
+  Q130209 List and Description of Windows NT 3.5 Information Files (*.INF)
+
+  NOTE: The INF files you need exist in compressed form on the distribution
+  media and must be expanded using the EXPAND.EXE utility before you can read
+  them with a text editor. For example:
+
+     EXPAND E:\I386\OEMNXPTC.IN_    A:\OEMNXPTC.INF
+
+4. Open the INF file with a text editor.
+
+5. Search for the section "[FILES-xxx]", where xxx is the component you wish to
+  install. For example:
+
+        [FILES-DLC] and [FILES-DLCAPI] for the DLC protocol
+
+6. Copy all the files listed under the "[FILES-xxx]" section to the disk.
+
+7. The disk now contains the necessary files to install the component listed in
+  the Add Software list box in the Network section of Control Panel.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

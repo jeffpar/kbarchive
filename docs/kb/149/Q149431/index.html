@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149431/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149431/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149431/","publisher":null,"image":null,"headline":"Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149431-prb-cannot-find-entry-point-dll-name-in-the-dll">Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149431
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you declare a Win32 DLL, the following error occurs:
+
+  Cannot find entry point Mydll in the DLL
+
+Mydll is the name of the DLL being called.
+
+CAUSE
+=====
+
+This error occurs because all 32-Bit DLL procedure names are case sensitive.
+
+RESOLUTION
+==========
+
+To avoid this error, copy the function name, description, and parameters from
+the Win32 API function Help file into your Visual FoxPro program file. This
+documents the function in your code and ensures that the correct case is used.
+
+For example, the GetUserName function retrieves the name of the user currently
+logged onto the system:
+
+     BOOL GetUserName(
+
+        LPTSTR  lpBuffer,// address of name buffer
+        LPDWORD  nSize // address of size of name buffer
+       );
+     Parameters
+
+The lpBuffer parameter points to the buffer receiving the null-terminated string
+containing the user's logon name. If this buffer is not large enough to contain
+the entire user name, the function fails.
+
+The nSize parameter points to a DWORD that, on input, specifies the maximum size,
+in characters, of the buffer specified by the lpBuffer parameter. If this buffer
+is not large enough to contain the entire user name, the function fails. If the
+function succeeds, it will place the number of characters copied to the buffer
+into the DWORD to which nSize points.
+
+To call the GetUserName DLL in Visual FoxPro, use this command:
+
+     DECLARE GetUserName in Win32API ;
+        String @mybuffer, Integer @mybuffersize
+
+If the same DLL was declared as:
+
+     DECLARE GetuserName in Win32API ;
+        String @mybuffer, Integer @mybuffersize
+
+the following error message would display:
+
+  Cannot find entry point GetuserName in the DLL.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

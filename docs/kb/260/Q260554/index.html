@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260554/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260554/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260554/","publisher":null,"image":null,"headline":"Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260554-xfor-microsoft-mail-connector-leaks-memory-on-windows-2000">Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260554
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:3.5; winnt:5.5
+Operating System(s): 
+Keyword(s): exc55 kbExchange550preSP4fix kbExchange550sp4Fix
+Last Modified: 20-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5, on platform(s):
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Microsoft Mail Server (MS Mail) and the Microsoft Mail Connector
+with Exchange Server 5.5 on a computer running Windows 2000 Server, the
+Async.exe program in Exchange Server may leak memory if the following conditions
+exist:
+
+- Multiple post offices exist on the computers running MS Mail.
+
+- A local post office exists on Exchange Server.
+
+- Post offices on MS Mail are connecting to Exchange Server 5.5 by using the
+  Microsoft Mail Connector.
+
+- Post offices on MS Mail are configured as remote post offices for each other
+  as follows:
+
+   - The post offices on MS Mail connect to post offices on Exchange Server
+     directly.
+
+   - The post offices on MS MAIL connect to post offices on MS Mail indirectly.
+
+- You send e-mails to some recipients on other post offices on MS Mail.
+
+In Windows 2000 Performance Monitor, the Task List utility, and the Process
+Viewer utility, an increase in memory usage is displayed.
+
+CAUSE
+=====
+
+This issue can occur because the method of memory management in Windows 2000
+Server is different than the method that Microsoft Windows NT 4.0 uses, and the
+Microsoft Mail Connector in Exchange Server 5.5 may not release the memory if it
+is installed on a computer that is running Windows 2000 Server. This causes the
+memory leak.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : WINDOWS:3.5; winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

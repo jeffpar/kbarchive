@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106141/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106141/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106141/","publisher":null,"image":null,"headline":"Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106141-format-and-diskcopy-errors-with-stacker-3x">Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106141
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.2,3.3,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.2, 3.3, 4.0, 4.0a, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running STAC Electronics Stacker version 3.0 or 3.1 on your computer,
+you may receive the following errors when you use the MS-DOS DISKCOPY and FORMAT
+commands on floppy disks:
+
+With DISKCOPY:
+
+  Formatting while copying
+  Drive types or diskette types not compatible
+  Copy process ended
+  Copy another diskette (Y/N)?
+
+With FORMAT:
+
+  Existing format differs from that specified
+  This disk cannot be unformatted.
+  Proceed with format (Y,N)?
+
+  -or-
+
+  Parameter not compatible with fixed disk.
+  Format terminated.
+
+  -or-
+
+  Error reading partition table. Format terminated.
+
+  -or-
+
+  Extended error 21. Format terminated.
+
+CAUSE
+=====
+
+According to STAC Electronics, these problems are caused by Stacker's AutoMount
+feature. If you remove a Stacker-compressed floppy disk and insert an
+uncompressed disk in the same drive, you may be unable to use the MS-DOS
+DISKCOPY and FORMAT commands on the uncompressed disk until the drive is
+unmounted. In addition, a Stacker-compressed disk must first be unmounted before
+it can be formatted with the MS-DOS FORMAT command.
+
+WORKAROUND
+==========
+
+To work around these problems, first unmount the disk drive. This can be done by
+typing "stacker -x:" (without the quotation marks) at the MS-DOS command prompt
+(where &lt;x&gt; is the letter of the floppy disk drive) or by removing the
+compressed floppy disk from the drive and rebooting the computer.
+
+MORE INFORMATION
+================
+
+Stacker 3.0 and 3.1 are manufactured by STAC Electronics, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+REFERENCES
+==========
+
+"Stacker 3.0 for Windows and DOS User's Guide," pages 137 and 274
+
+
+Additional query words: 6.22 6.00 6.20 6.21 6.0 6 msdos format.com diskcopy.com error message 3rdparty stacked
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS320 kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS330 kbMSDOS500a
+Version           : MS-DOS:3.2,3.3,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

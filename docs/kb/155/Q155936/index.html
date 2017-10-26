@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155936: PRB: Closing Table Loses Changes with Table Buffering | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155936: PRB: Closing Table Loses Changes with Table Buffering" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155936/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155936/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155936/","publisher":null,"image":null,"headline":"Q155936: PRB: Closing Table Loses Changes with Table Buffering","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155936-prb-closing-table-loses-changes-with-table-buffering">Q155936: PRB: Closing Table Loses Changes with Table Buffering</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155936
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a CLOSE or USE command to close an open table, and that table uses
+Table Buffering and contains uncommitted changes, Visual FoxPro closes the table
+and does not save the uncommitted changes. Additionally, no error dialog box
+appears when you close the table. This behavior is different from Visual FoxPro
+versions 3.0 and 3.0b, which displays an error dialog box if you attempt to
+close a table with uncommitted changes.
+
+WORKAROUND
+==========
+
+Use the TABLEUPDATE() function to force Visual FoxPro to save the changes before
+closing the table.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following example uses the Customer table in the Visual FoxPro
+Samples\Data\Testdata database:
+
+1. Run the following code from a program:
+
+     *  Start of code example
+
+     LOCAL nI
+     CLOSE DATABASES ALL
+     FOR nI = 1 TO 5
+        USE HOME() + 'samples\data\customer'
+        =CURSORSETPROP('buffering',nI)
+        REPLACE company WITH ALLTR(company) + ' ' + ALLTRIM(STR(nI))
+        SKIP
+        USE          &amp;&amp; Closes table
+        USE HOME() + 'samples\data\customer'
+        BROWSE
+     ENDFOR
+     REPLACE company WITH SUBSTR(company,1,ATC('1',company,1)-1)
+
+     *  End
+
+  Notice the numeral appended after the company name in the first record, and
+  then close the Browse window. Do this for each of the five times the Browse
+  window appears. The numbers 1 through 3 appear, but 4 and 5 do not. Number 1
+  is no buffering, 2 and 3 are Pessimistic and Optimistic Row buffering, and 4
+  and 5 are Pessimistic and Optimistic Table buffering.
+
+2. As a workaround for the above example, modify the above code as follows:
+
+     *  Start of code example
+
+     LOCAL nI
+     CLOSE DATABASES ALL
+     FOR nI = 1 TO 5
+        USE HOME() + 'samples\data\customer'
+        =CURSORSETPROP('buffering',nI)
+        REPLACE company WITH ALLTRIM(company) + ' ' + ALLTRIM(STR(nI))
+        SKIP
+        * The following statement is necessary to prevent errors
+        * with GETNEXTMODIFIED() if table buffering is not used
+        IF CURSORGETPROP('buffering') &gt; 3
+
+          IF GETNEXTMODIFIED(0) &gt; 0    &amp;&amp; Checks for any modified records
+
+            =TABLEUPDATE(1)            &amp;&amp; Or whatever you want to do
+                                       &amp;&amp; before you close the table
+          ENDIF
+        ENDIF
+        USE                            &amp;&amp; Closes table
+        USE HOME() + 'samples\data\customer'
+        BROWSE
+     ENDFOR
+     REPLACE company WITH SUBSTR(company,1,ATC('1',company,1)-1)
+
+     *  End
+
+  The changed record is saved, even when table buffering is used.
+
+REFERENCES
+==========
+
+Visual FoxPro 5.0 Help file; search on: "CURSORSETPROP()," "GETNEXTMODIFIED(),"
+and "TABLEUPDATE()"
+
+Visual FoxPro 5.0 Readme.hlp file; search on: "Using Visual FoxPro," then
+"Closing a Cursor with an Uncommitted Record"
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

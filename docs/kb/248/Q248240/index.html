@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248240: BUG: Using SourceSafe in Multiple Time Zones | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248240: BUG: Using SourceSafe in Multiple Time Zones" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248240/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248240/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248240/","publisher":null,"image":null,"headline":"Q248240: BUG: Using SourceSafe in Multiple Time Zones","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248240-bug-using-sourcesafe-in-multiple-time-zones">Q248240: BUG: Using SourceSafe in Multiple Time Zones</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248240
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbConfig kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Visual SourceSafe in a development environment where users are
+accessing the same database from multiple time zones, Visual SourceSafe does not
+handle the conversion from one time zone to another properly.
+
+CAUSE
+=====
+
+Visual SourceSafe takes the timestamp off the client computer and uses that when
+doing any Visual SourceSafe functions. This time is not converted into anything
+global, like Universal Time Coordinate (UTC). This means that people in
+different time zones, working at the same time, look to Visual SourceSafe as if
+they are working at different times.
+
+RESOLUTION
+==========
+
+Synchronize the Times:
+
+Synchronize the dates and system clocks for all Visual SourceSafe client
+computers with the Visual SourceSafe server. This prevents check-in and
+check-out operations from appearing to happen out of sequence and effects any
+labels that are applied. Synchronizing dates and system clocks is particularly
+important when users from different time zones access the same database.
+
+You can set up a Windows NT Server to act as a Domain Time Source server for
+users to synchronize their local date and time with the network. For additional
+information, see the Knowledge Base article "How to Set Up and Synchronize with
+Domain Time Source Servers" listed below.
+
+SourceOffSite:
+
+There is a third-party utility that allows the timestamp from the server to be
+used for all Visual SourceSafe activity. This allows users to keep their system
+clocks in the proper time zone and Visual SourceSafe functions properly. See the
+"SourceOffSite" link below for more information from their Web site.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+  Q150643 PRB: Setting Wrong System Date Causes Lost Project History
+
+  Q131715 How to Set Up And Synchronize with Domain Time Source Servers
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+SourceOffSite
+
+Additional query words:
+
+======================================================================
+Keywords          : kbConfig kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

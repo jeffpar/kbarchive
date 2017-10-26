@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185697: HOWTO: Use the AddObject Method of the Script Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185697: HOWTO: Use the AddObject Method of the Script Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185697/","publisher":null,"image":null,"headline":"Q185697: HOWTO: Use the AddObject Method of the Script Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185697-howto-use-the-addobject-method-of-the-script-control">Q185697: HOWTO: Use the AddObject Method of the Script Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185697
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 05-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic for Applications version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the AddObject method of the Microsoft Script control and
+discusses object visibility.
+
+MORE INFORMATION
+================
+
+The Microsoft Scripting control provides the AddObject method to allow the host
+application to expose an object model to the script code. Objects added this way
+are implicitly assumed to be safe for scripting and are not affected by the
+UseSafeSubset property.
+
+The AddObject method has the following arguments:
+
+  Name:        The name the script code can use to access the object.
+
+  Object:      The object to be made available (late bound) to the script.
+
+  AddMembers:  This is an optional argument. Default value is False.
+
+               If True, the methods and properties are available as
+               global functions and variables.
+
+               If False, the methods and properties are only available via
+               fully qualified object.member syntax.
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures.
+
+Example
+-------
+
+1. In Visual Basic or Microsoft Access, create a new project and add the
+  following component:
+
+  Microsoft Script Control 1.0
+
+2. Add the Script control (ScriptControl1), a text box (Text1), and a command
+  button (Command1) to a form. In Visual Basic, set the MultiLine property of
+  the text box to TRUE. For ease of use change the size of Text1 so that it
+  accommodates five (5) 60 character lines.
+
+3. Add a Class module (clsLog) with the following code:
+
+        Public Sub Prt (S)
+          Debug.Print S
+        End Sub
+
+4. Add the following code to Form1:
+
+        Private Sub Command1_Click()
+        Dim L as clsLog
+          Set L = New clsLog
+          With ScriptControl1
+            .Language = "VBScript"
+            .AllowUI = True
+            .AddObject "LoadLog", L, True
+            ' True = expose Prt as global Sub
+            ' "Loadlog" is executed immediately when Addcode loads the code.
+            Debug.Print "Adding the code"
+            .AddCode Text1.Text
+            Debug.Print "Finished adding the code"
+            .AddObject "RunLog", L
+            .Run "Test"
+          End With
+        End Sub
+
+5. Run the form and open the Debug window.
+
+6. Type the following script into the text box:
+
+        Sub Test
+          RunLog.Prt "RunLog is available after Load"
+          Prt "LoadLog exposes Prt as a global method"
+        End Sub
+        LoadLog.Prt "LoadLog is available during Load"
+
+7. Click the command button. You will get the following output:
+
+  Adding the code
+  LoadLog is available during Load
+  Finished adding the code
+  RunLog is available after Load
+  LoadLog exposes Prt as a global method
+
+REFERENCES
+==========
+
+Sct10en.exe is the executable file that contains the MSScript.ocx. When the
+executable is run MSScript.ocx is installed. The Scriptcontrol can be downloaded
+from the following Web site:
+
+  http://www.microsoft.com/scripting/
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Malcolm
+Stewart, Microsoft Corporation
+
+
+Additional query words: kbDSupport kbdse kbVBp400 kbVBp500 kbVBp600 kbVBA500 kbVBp kbActiveX 
+kbAccess97 kbAccess700
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVBASearch kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

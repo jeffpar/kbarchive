@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129985: Type 1 Font Converter Does Not Convert Some Fonts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129985: Type 1 Font Converter Does Not Convert Some Fonts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129985/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129985/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129985/","publisher":null,"image":null,"headline":"Q129985: Type 1 Font Converter Does Not Convert Some Fonts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129985-type-1-font-converter-does-not-convert-some-fonts">Q129985: Type 1 Font Converter Does Not Convert Some Fonts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129985
+Product(s): Microsoft Windows NT
+Version(s): 3.50
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.5 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This error message appears when you attempt to convert a complex Type 1 font to
+a TrueType equivalent using the Fonts applet in Control Panel:
+
+  Could not create "C:\&lt;%systemroot%&gt;\system\&lt;name of .TTF file&gt;"
+  file. Error reading input file "A:\&lt;name of .PFB file&gt;" or "A:\&lt;name
+  of .PFM file&gt;".
+
+However, the input files in question are not corrupt, and the font is a valid
+Type 1 font.
+
+
+WORKAROUND
+==========
+
+To work around this problem, install the font as a Type 1 font without
+converting it to TrueType. Note that this provides a printer font without a
+TrueType equivalent, so you will not have a matching screen font. Also, the font
+will only be available for printing on PostScript print devices.
+
+To install a Type 1 font without converting it to TrueType, follow these
+instructions:
+
+1. Start the Fonts component of Control Panel
+
+2. Choose the Add button
+
+3. Specify the Type 1 font you wish to install
+
+4. Choose the OK button
+
+  This may produce a copyright warning message. The warning only applies when
+  you convert Type 1 fonts to TrueType. If you follow these steps you will not
+  convert the font, and the warning will not apply.
+
+5. Clear the Convert Type 1 Font to TrueType check box. Make sure the Install
+  Type 1 Font Files for Use on a PostScript Printer option is selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+problem was corrected in Windows NT version 3.51.
+
+
+Additional query words: prodnt Adobe Post Script Type1 Type-1
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

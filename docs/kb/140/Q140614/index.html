@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140614: PRB: SYS(2004) Returns Incorrect Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140614: PRB: SYS(2004) Returns Incorrect Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140614/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140614/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140614/","publisher":null,"image":null,"headline":"Q140614: PRB: SYS(2004) Returns Incorrect Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140614-prb-sys2004-returns-incorrect-directory">Q140614: PRB: SYS(2004) Returns Incorrect Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140614
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SYS(2004) returns incorrect information. According to the online Help file,
+SYS(2004) should return the name of the directory or folder from which Visual
+FoxPro was started. However, if you are running several instances of Visual
+FoxPro, the SYS(2004) function returns only the directory from which the first
+instance was started.
+
+CAUSE
+=====
+
+Executable files created in Visual FoxPro are not standalone applications. They
+rely on the Vfp300.esl as a runtime library. The SYS(2004) function returns the
+location of this file during run time. Even if you have multiple copies of this
+run-time library, the operating system will not load several instances into
+memory; it only opens one copy. That is why the SYS(2004) function only reports
+the location of the first one that was started.
+
+RESOLUTION
+==========
+
+You can use one of the following alternate methods to obtain the startup
+directory:
+
+- Use the CURDIR() function to retrieve the working directory.
+
+- Store the name of the startup directory in a lookup table.
+
+- Write the location of the directory to an .ini file by using API calls.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For information about an alternative method of obtaining the path to the
+installation, please see the following article in the Microsoft Knowledge Base:
+
+  Q138937 How to Tell Which Directory Holds a Visual FoxPro App's .Exe
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file that contains the following line repeated twice:
+
+     WAIT WINDOW SYS(2004)
+
+2. Add this program to a new project, and build an executable.
+
+3. Create a second, new project and add the same program to it. Create this
+  executable with a different name and save it into a different directory.
+
+4. Copy the Vfp300.esl file into both of the directories, or place the
+  Windows\System directory in your PATH statement.
+
+5. Create icons for each of the executables, and set the working directories to
+  the executable's location.
+
+6. Try running each application separately. The WAIT WINDOW will report the
+  correct directory for each program.
+
+7. Close the executables if they are open.
+
+8. Start one of the executables. While it is waiting for you to press a key,
+  start the other executable. You will now see that the second instance reports
+  the same starting directory as the first one.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

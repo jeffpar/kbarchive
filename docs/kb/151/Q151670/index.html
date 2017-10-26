@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151670/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151670/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151670/","publisher":null,"image":null,"headline":"Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151670-xfor-using-the-mapisendexeutility-with-the-at-scheduler">Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151670
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage exc4
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft BackOffice Resource Kit contains a program, Mapisend.exe, which is
+a 32-bit command line utility to send mail messages and file attachments. This
+program is also available in the Microsoft Mail Resource Kit.
+
+Microsoft Exchange Server Administrators may need to run this program
+automatically, using the AT Scheduler in Windows NT or the Winat.exe program
+that ships in the Windows NT Resource Kit.
+
+This article explains how to send mail using Mapisend.exe and the AT Scheduler.
+
+MORE INFORMATION
+================
+
+Programs scheduled with the Windows NT AT Scheduler are run by the Windows NT
+Schedule service. To send mail to an Exchange mailbox using the Mapisend.exe
+program, the Windows NT Schedule service must start using a domain account. By
+default, the Windows NT Schedule service starts using the LocalSystem account.
+
+To use the Mapisend.exe program with the AT scheduler:
+
+1. Log on to Windows NT with a domain account, for example Domain\User.
+
+2. In Windows NT Control Panel, double-click Services.
+
+3. Click the Schedule tab, and then click Startup.
+
+4. Under Log On As, click This Account, and then click the ellipsis to bring up
+  the list of domain users. Select Domain\User.
+
+5. In the Password and Confirm Password fields, type the password for
+  Domain\User.
+
+6. Under Startup Type, click Automatic. This causes the service to automatically
+  start when the computer is started.
+
+7. Click OK, and then close the Services dialog box.
+
+8. In Windows NT Control Panel, double-click Mail and Fax.
+
+9. Create a profile with the name Sendmail. Add the Exchange Server service to
+  the profile.
+
+10. Make sure that the Windows NT account, Domain\User, that you specified to
+  start the Windows NT Schedule service has permissions to open the Exchange
+  mailbox specified in the profile. Start the Exchange Server Administrator
+  program, and in the mailbox's properties, on the Permissions page, give the
+  mailbox (the mailbox that the profile you created in step 9 points to) Send
+  As permission (or Mailbox Owner permission). On the Tools menu, click
+  Options, and then click the Permissions tab, and make sure you select the
+  correct options so that the Permissions page is displayed for each mailbox
+  object, with the user rights.
+
+11. You can place the following command in a batch file that you can then use
+  with the AT Scheduler service or the Winat.exe program:
+
+  mapisend.exe -u &lt;profile name&gt; -p password -r &lt;recipients&gt; -s
+  &lt;subject&gt;
+
+The &lt;profile name&gt; is the name of the profile you created in step 9,
+Mapisend. Mapisend.exe requires a password. The password specified with the -p
+option is only to prevent Mapisend.exe from failing. It is not used.
+Please refer to the documentation accompanying the Mapisend.exe program for more
+information on all the command line switches available.
+
+NOTE: For the AT Scheduler to successfully run the Mapisend.exe program, you must
+be logged on to Windows NT as a Domain\User. This User must be the account used
+to start the Windows NT Schedule service and must have access to the mailbox
+that Mapisend.exe logs on to.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

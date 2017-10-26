@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147841: Using Microsoft Outlook with MSN Version 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147841: Using Microsoft Outlook with MSN Version 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147841/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147841/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147841/","publisher":null,"image":null,"headline":"Q147841: Using Microsoft Outlook with MSN Version 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147841-using-microsoft-outlook-with-msn-version-20">Q147841: Using Microsoft Outlook with MSN Version 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147841
+Product(s): The Microsoft Network
+Version(s): WINDOWS:2.0,97
+Operating System(s): 
+Keyword(s): kbinteropkbfaq
+Last Modified: 26-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 97 
+- The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+
+
+SYMPTOMS
+========
+
+When you use Microsoft Outlook 97 with MSN, The Microsoft Network, version 2.0
+you may, in rare cases, experience incompatibility problems such as:
+
+- Outlook may stop responding (hang) on opening.
+
+- You may get a GP Fault on opening Outlook.
+
+- Sending and receiving mail may not work.
+
+- You may have problems with Remote Mail services.
+
+- You may receive a Fatal Exception Error 06 while in a session with MSN or
+  following a session with MSN.
+
+CAUSE
+=====
+
+Microsoft Outlook 97 is designed to work with MSN version 1.3. MSN version 2.0
+was released after Outlook 97.
+
+RESOLUTION
+==========
+
+In some cases, MSN version 2.0 will work with Outlook if it is installed and
+working properly before installing Outlook. Please see the "More Information"
+section later in this article for instructions on how to remove and reinstall
+both products.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+To remove Outlook 97, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click the Add/Remove Programs icon.
+
+3. In the Add/Remove Programs Properties dialog box, click either Microsoft
+  Outlook 97 or Microsoft Office 97.
+
+4. Click the Add/Remove button.
+
+5. If you clicked Outlook, click the Remove All button. If you clicked Office,
+  click the Add/Remove button and click to clear the Microsoft Outlook check
+  box.
+
+6. Click Continue.
+
+7. In the Remove Shared Components box, you can click Keep to retain your
+  current mail settings, or you can click Remove to remove Windows Messaging.
+
+To remove MSN 2.0, follow these steps:
+
+1. From the Help folder on the MSN CD-ROM, run the uninstall program
+  (Uninst.exe) and ignore the Reboot option.
+
+2. In Control Panel, double-click Add/Remove Programs.
+
+3. Remove the MSN components in the following order:
+   - MSN Optional Controls
+
+   - MSN Program Viewer
+
+   - MSN Program Viewer Controls
+
+   - Any other MSN components
+
+4. Restart Windows 95.
+
+Reinstall MSN 2.0 and make sure it is operational. Then reinstall Outlook 97.
+Start Outlook by clicking its icon on the desktop.
+
+If the problem persists, try starting Outlook using the MSN Viewer by clicking
+the MSN icon on the desktop, clicking Communicate, and clicking "start e-mail."
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q161656 OL97: Unexpected Logon Screen When Starting Outlook
+
+  Q161973 OL97: Troubleshooting Outlook Configuration Problems
+
+  Q151708 XCLN: Page Fault in Mprexe.exe When Starting Client
+
+  Q155691 "Fatal Exception Error 06" with Sharp Mebius
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbfaq
+Technology        : kbOutlookSearch kbMSNSearch kbOutlook97Search kbZNotKeyword3 kbMSN200
+Version           : WINDOWS:2.0,97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

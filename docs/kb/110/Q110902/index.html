@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110902: Mac Gen: Summary List of Mail 3.1a Bugs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110902: Mac Gen: Summary List of Mail 3.1a Bugs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110902/","publisher":null,"image":null,"headline":"Q110902: Mac Gen: Summary List of Mail 3.1a Bugs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110902-mac-gen-summary-list-of-mail-31a-bugs">Q110902: Mac Gen: Summary List of Mail 3.1a Bugs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110902
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 3.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, version 3.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of bugs confirmed in version 3.1a of Microsoft Mail for
+AppleTalk Networks. This is not a comprehensive list; this list is current as of
+January 1, 1994.
+
+For more information on the bug listed, query in the Microsoft Knowledge Base on
+the article ID or the bug number.
+
+BUG LISTING FOR VERSION 3.1a
+----------------------------
+
+- Mac Fax: Creating Fax Gateway Account Cover Pages
+
+- Mac Fax: Fax Gateway Cover Pages and Mail Server Application
+
+- Mac Svr Wkst: Compatibility with A/UX
+
+- Mac ARA: AppleLink Gateway Conflicts with ARA
+
+- Mac GW: CNU Needs MultiFinder
+
+- Mac Tool: Errors Saving Enclosures After Rebuild
+
+- Mac Admin: Lost Details of GWRecips in PAB
+
+- Mac Wkst: Enclosed Documents Become Unlocked
+
+- Mac Wkst: Mail Notification Has Stopped Working
+
+- Mac GW: Details Unavailable for Gateway Users
+
+Mac Fax: Creating Fax Gateway Account Cover Pages:
+
+Article ID: Q81342
+
+You can configure the Microsoft Mail for AppleTalk Networks Gateway to Fax to
+send a cover page with each fax transmission. You need to first create a cover
+page using any non-PostScript application that has printing capabilities.
+
+1. Leave the top 2 to 3 inches of the document blank because transmission
+  information is placed at the top of the page when a cover page is used.
+
+2. In the Chooser, select MailSender.
+
+3. Print the document. When the MailSender print dialog opens, click the Save
+  File radio button.
+
+4. When the "Save Image File As" dialog appears, click the Formats button and
+  select "FAXGATE Cover Page" from the list of formats. Save the file and copy
+  it to the master fax gateway server's hard disk where it will be safe from
+  accidental deletion.
+
+5. At the Macintosh serving as the master fax gateway server, sign into Mail as
+  the Network Manager.
+
+6. Choose Gateway Accounts from the Mail menu and click the Modify radio button.
+
+7. Select a gateway account.
+
+8. Click the Cover Page button and select any cover page file that you have
+  previously created. Each gateway account can have a unique cover page
+  assigned to it. Repeat Steps 7 and 8 to set the cover page for other gateway
+  accounts.
+
+Mac Fax: Fax Gateway Cover Pages and Mail Server Application:
+
+Article ID: Q81346
+
+When running the Microsoft Mail server as an application, the Mail for AppleTalk
+Networks Gateway to Fax gateway does not allow you to make changes to cover page
+assignments. Changes to the cover page option are made in the Gateway Accounts
+screen and must be made at the server. Even when sitting at the server, you will
+receive the following error after clicking on the Cover Page button:
+
+  You are not allowed to assign cover pages from a remote machine
+
+To make changes to the cover page option, bring the server up as an INIT, make
+the desired changes, change the server back to an application.
+
+Mac Svr Wkst: Compatibility with A/UX:
+
+Article ID: Q96253
+
+Although the workstation of version 3.1 of Microsoft Mail for AppleTalk Networks
+is compatible with Apple's A/UX environment, the server is not compatible.
+Earlier versions of the Mail workstation are not compatible.
+
+The only known problem with A/UX and the version 3.1 workstation is that the
+chime will only sound once on the arrival of new mail, even if set to 2 or 3
+chimes.
+
+Mac ARA: AppleLink Gateway Conflicts with ARA:
+
+Article ID: Q96275
+
+The communication program in the AppleLink gateway will not function correctly
+with AppleTalk Remote Access (ARA) version 1.0. If ARA is installed on the
+server with an AppleLink master gateway and the communication program in the
+AppleLink gateway tries to initiate a call, the following error message will
+occur:
+
+  Ramsdopen: -97
+
+Mac GW: CNU Needs MultiFinder:
+
+Article ID: Q97956
+
+The Connection Name Utility (CNU) of the Microsoft Mail Connection for PC and
+AppleTalk Networks version 1.0x needs to run on a mail server using System 7 or
+System 6 with MultiFinder enabled. With System 6, operating with Finder only may
+cause errors.
+
+Mac Tool: Errors Saving Enclosures After Rebuild:
+
+Article ID: Q99305
+
+When attempting to save an enclosure attached to a message with version 3.1 of
+Microsoft Mail for AppleTalk Networks, the following error message may be
+displayed:
+
+  Couldn't write file.
+
+It is also possible when transferring the mail message to a local folder for the
+following error message to be displayed:
+
+  Sorry, the server was unable to complete the transfer. Please try again.
+
+Mac Admin: Lost Details of GWRecips in PAB:
+
+Article ID: Q99689
+
+Either of the following messages may be displayed immediately after moving a user
+with the Move User feature of the Mail Network Administrator program with
+version 3.1a of Microsoft Mail for AppleTalk Networks.
+
+- When selecting a gateway recipient from the Personal Address Book and
+  clicking the Details button, the following error message appears:
+
+  Unable to retrieve details for that item
+
+- When mailing to a gateway recipient selected from the Personal Address Book,
+  the message is immediately returned undeliverable with the following
+  message:
+
+  Could not be delivered because the recipient(s) have been removed
+
+Mac Wkst: Enclosed Documents Become Unlocked:
+
+Article ID: Q101445
+
+If a document enclosed within a mail message using version 3.0 or 3.1 of
+Microsoft Mail for AppleTalk Networks has the Locked feature enabled via the Get
+Info box, that document will arrive at the recipient's mail account unlocked.
+
+Mac Wkst: Mail Notification Has Stopped Working:
+
+Article ID: Q101904
+
+In versions 3.0 and 3.1 of Microsoft Mail for AppleTalk Networks, the workstation
+Notifier may stop working. This includes the chime, flashing menu bar, and
+Notifier window.
+
+Mac GW: Details Unavailable for Gateway Users:
+
+Article ID: Q103943
+
+The Details button in the Addressing screen is unavailable (grayed) after a
+gateway recipient has been selected.
+
+Additional query words: 3.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310a
+Version           : :3.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

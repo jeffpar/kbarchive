@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217147: How to Restart Cluster Server After Clusdb Corruption | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217147: How to Restart Cluster Server After Clusdb Corruption" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217147/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217147/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217147/","publisher":null,"image":null,"headline":"Q217147: How to Restart Cluster Server After Clusdb Corruption","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217147-how-to-restart-cluster-server-after-clusdb-corruption">Q217147: How to Restart Cluster Server After Clusdb Corruption</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217147
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbWinNT400sp5fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0, used with:
+   - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Cluster Server (MSCS), under certain circumstances (for
+example, both nodes experience a simultaneous power failure after a relatively
+long period of cluster activity), one of the following may occur:
+
+- The cluster database file (located in the %SystemRoot%\Cluster folder) may
+  become corrupted on both nodes (for example, the Clusdb file contains zero
+  bytes on both nodes).
+
+- The &lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp file may be
+  inconsistent and, if used by MSCS, may result in Clusdb corruption.
+
+- The &lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp file may be
+  outdated as a checkpoint file may not have been written during the interval
+  when the two nodes were up. If the computer's configuration is changed and a
+  recent checkpoint file reflecting this change does not exist, the log files
+  (&lt;quorum_device&gt;:\Mscs\quolog.log and
+  &lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp) may contain
+  inconsistent quorum resource information.
+
+Symptoms you may experience include:
+
+- MSCS cannot be started, and both nodes are able to access and use the Clusdb
+  file, so the cluster cannot be formed.
+
+- MSCS cannot be started with the initial Clusdb file allowed to locate the
+  latest checkpoint file, but its contents are inconsistent. If MSCS loads this
+  file the Clusdb file may become corrupted. If a retry to form the cluster
+  from the other node is done, the second Clusdb file may become corrupt.
+
+
+- MSCS can start, but the cluster starts in an outdated state (for example,
+  during a week of operation no checkpoint was taken, then the next MSCS
+  restart uses the last checkpoint file to restore the configuration, and this
+  file may be outdated).
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows NT 4.0 Service Pack 5.
+
+MORE INFORMATION
+================
+
+To restart the MSCS Cluster under these special conditions:
+
+1. When the %SystemRoot%\Cluster\Clusdb file is corrupted on both nodes, restart
+  from a valid checkpoint file.
+
+2. When the latest checkpoint file is outdated or inconsistent, restart from a
+  valid %SystemRoot%\Cluster\Clusdb file.
+
+NOTE: This article assumes that either the Clusdb file on at least one node is
+valid, or the checkpoint file is valid. If both Clusdb files and the checkpoint
+file are corrupted, start from the most recent backup of the Clusdb file or the
+checkpoint file. As both Clusdb files and checkpoint files are system hives, you
+can view the contents using Regedt32.exe with the LoadHive function. When the
+Cluster Server is running, you can also view the current Clusdb file contents in
+the HKEY_LOCAL_MACHINE\Cluster hive using Regedt32.exe.
+
+In a typical MSCS configuration, including disks on a shared bus:
+
+1. Do not boot both nodes from the Windows NT disaster recovery %SystemRoot%
+  folder where MSCS was not installed.
+
+2. Never boot both nodes from an MSCS %SystemRoot% folder with both nodes having
+  the Clusdisk.sys file startup in manual mode. This may result in the
+  corruption of the NTFS structure of all the disks on the shared bus and may
+  result in major data loss. As a general rule, perform all recovery procedures
+  on the node which forms the cluster and when finished, start the other node
+  to join the cluster.
+
+When the cluster is formed:
+
+1. If the &lt;quorum_device&gt;:\Mscs\Quolog.log file exists and is valid, the
+  cluster is formed from the latest Checkpoint File and the Quolog.log file.
+
+2. If the &lt;quorum_device&gt;:\Mscs files do not exist, the cluster is formed
+  from the %SystemRoot%\Cluster\Clusdb file of the current node.
+
+To start the cluster from a checkpoint file, with Clusdb corruption on both
+nodes, restore the corrupted Clusdb file from a valid checkpoint file. The
+simplest solution is to boot one node (the other node being turned off) from a
+Windows NT disaster recovery %SystemRoot% folder, and then copy the
+&lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp file, or another
+valid checkpoint file, to the &lt;cluster_systemroot&gt;\Cluster\Clusdb file,
+and then restart the cluster. If a Windows NT disaster recovery %SystemRoot%
+folder is not available, do the following:
+
+1. Boot node A to form the cluster (with node B powered-off).
+
+2. Click Start, point to Settings, click Control Panel, and then double-click
+  Devices.
+
+3. Click ClusDisk, click Startup, click to select Manual, click OK, and then
+  click Close.
+
+4. Double-click the Services tool, and then double-click ClusterService.
+
+5. Click to select Manual, click OK, and then click Close.
+
+6. Reboot node A (this starts Windows NT on node A, without loading the
+  Clusdisk.sys file)
+
+7. Copy the latest &lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp
+  file to %SystemRoot%\Cluster\Clusdb.
+
+8. Form the Cluster on node A:
+
+  a. At a command prompt, type "net start clusdisk" (without the quotation
+     marks), and then press ENTER.
+
+  b. At a command prompt, type "net start clussvc" (without the quotation
+     marks), and then press ENTER.
+
+9. Restart node B to join the cluster, and replicate the Clusdb file from the
+  sponsor node A.
+
+10. On node A, after both nodes are running, click Start, point to Settings,
+  click Control Panel, and then double-click Devices.
+
+11. Click ClusDisk, click Startup, click to select System, click OK, and then
+  click Close.
+
+12. Double-click the Services tool, and then double-click ClusterService.
+
+13. Click to select Automatic, click OK, and then click Close.
+
+To start the cluster from the Clusdb file when the latest checkpoint file is
+outdated, you need to rename (or save, and then delete) the
+&lt;quorum_device&gt;:\Mscs folder. The simplest solution is to boot one node
+(the other node being turned off) from a Windows NT disaster recovery
+%SystemRoot% folder and to rename (or save, and then delete) the
+&lt;quorum_device&gt;:\Mscs folder, and then form the cluster starting with the
+node that has a valid Clusdb file.
+
+NOTE: If a Windows NT disaster recovery %SystemRoot% folder is not available,
+both copies of the Clusdb file are required as, during the first system boot,
+the cluster server automatically replicates the outdated checkpoint file on the
+first node's Clusdb. To do this:
+
+1. Boot node A to form the cluster (node B is turned off).
+
+2. At a command prompt, type "net stop clussvc" (without the quotation marks),
+  and then type "cd %SystemRoot% cluster" (without the quotation marks).
+
+3. At a command prompt, type "%SystemRoot%\Cluster\Clussvc -debug
+  -noquorumlogging" (without the quotation marks). This allows you to rename or
+  delete the &lt;quorum_device&gt;:\Mscs folder.
+
+4. Rename (or save, and then delete) the &lt;quorum_device&gt;:\Mscs folder.
+
+5. Shut down node A (do not boot node B before shutting down node A; otherwise,
+  the Clusdb file from node A is replicated to node's B Clusdb).
+
+6. Boot node B to form the cluster from node B's Clusdb, creating a new
+  &lt;quorum_device&gt;:\Mscs folder.
+
+7. Restart node A, join the cluster, and replicate the Clusdb file from the
+  sponsor node B.
+
+
+
+Cluster Server Startup Process
+------------------------------
+
+Cluster Database Management:
+
+Each node participating in a cluster maintains a local copy of the cluster
+database in the %SystemRoot%\Cluster\Clusdb file. When the cluster server starts
+for the first time on a node, an updated copy of the cluster database is created
+and maintained as a registry hive. Subsequent restarts of the cluster server use
+and update the existing cluster hive.
+
+On important events, the cluster server takes a snapshot of the cluster hive, in
+a file located on the quorum resource. The checkpoint file is located in the
+&lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp folder. Every time
+a checkpoint is taken in Windows NT 4 Service Pack 5 and Windows 2000, a
+checksum record is logged to the &lt;quorum_device&gt;:\Mscs\Quolog.log file.
+The following events trigger cluster hive checkpointing (Windows NT 4
+Service3/Service Pack 4 and Windows 2000):
+
+- When the first node forms the cluster (after the quorum resource comes
+  online).
+
+- When a node goes down.
+
+- When the log file (&lt;quorum_device&gt;:\Mscs\Quolog.log) reaches its size
+  limit (default value is 64 KB).
+
+- In Windows NT 4 Service Pack 5 and Windows 2000, a new registry value allows
+  to trigger periodic checkpointing, based on a time interval specified as a
+  REG_DWORD value:
+
+  HKEY_LOCAL_MACHINE\Cluster\Quorum\CheckpointInterval (default value is 4
+  hours).
+
+Cluster Log Management:
+
+The Cluster Server uses quorum logging to record changes to the cluster database,
+when the Global Update Manager cannot propagate database changes to all the
+nodes. Quorum logging is:
+
+- Turned on, every time a node goes down and a checkpoint is taken.
+
+- Turned off, every time all cluster nodes are running.
+
+- The Quolog.log file is located in the &lt;quorum_device&gt;:\Mscs folder
+
+The default behavior, when the cluster is formed, is to use:
+- The latest &lt;quorum_device&gt;:\Chk&lt;sequential_number&gt;.tmp file to
+  load the cluster database.
+
+- The &lt;quorum_device&gt;:\Mscs\quolog.log file to apply all the changes to
+  the cluster database since the last checkpoint. This algorithm applies even
+  if the node was down for period of time.
+
+Cluster Server Startup:
+
+The order of operations during the cluster server startup process is:
+
+1. If the HKEY_LOCAL_MACHINE\Cluster hive is not available, load the initial
+  cluster database from the %SystemRoot%\Cluster\Clusdb file to locate the
+  nodes, networks and the quorum resource or use the existing
+  HKEY_LOCAL_MACHINE\Cluster hive.
+
+2. Try to join the cluster by looking for a sponsor using IP addresses and
+  NetBIOS names.
+
+3. If join is successful:
+
+  a. Get the latest database from the sponsor, update the Clusdb file, and then
+     reload the HKEY_LOCAL_MACHINE\Cluster hive.
+
+  b. Create and initiate owned groups and resources defined by the updated
+     HKEY_LOCAL_MACHINE\Cluster hive and bring them online.
+
+4. If the join is not successful, try to form a cluster by arbitrating for the
+  quorum resource and, if successful, bring the cluster online.
+
+5. If the &lt;quorum_device&gt;\Mscs\quolog.log file exists and is valid (no
+  "tombstone" file present), locate the latest
+  &lt;quorum_device&gt;:\Mscs\Chk&lt;sequential_number&gt;.tmp file and test
+  for consistency using the checksum record from the Quolog.log file.
+
+6. If the checkpoint file is valid, update the cluster database (Clusdb), roll
+  up changes from the &lt;quorum_device&gt;:\Mscs\Quolog.log file recorded
+  since the latest checkpoint was taken.
+
+7. Write a new checkpoint file and the associated checksum record in the
+  Quolog.log file.
+
+8. Create and initiate owned groups and resources defined by the updated
+  HKEY_LOCAL_MACHINE\Cluster hive and bring them online.
+
+9. If the &lt;quorom_device&gt;:\Mscs\Quolog.log file does not exist or the
+  checkpoint file does not pass the consistency check:
+
+  a. Use the HKEY_LOCAL_MACHINE\Cluster or the current Clusdb file as the new
+     HKEY_LOCAL_MACHINE\Cluster hive.
+
+  b. Create the &lt;quorum_device&gt;:\Mscs\Quolog.log file.
+
+  c. Write a new checkpoint file and the associated checksum record in the
+     Quolog.log file.
+
+  d. Create and initiate owned groups and resources defined by the updated
+     HKEY_LOCAL_MACHINE\Cluster hive and bring them online.
+
+NOTE: The checkpoint file consistency verification, using the checksum mechanism
+described, is supported in Windows NT 4.0 Service Pack 5. No separate hotfix is
+available for any version before Windows NT 4.0 Service Pack 5. Periodic
+checkpointing is supported in Windows NT 4.0 Service Pack 5. No separate hotfix
+is available before Windows NT 4.0 Service Pack 5.
+
+If the &lt;quorum_device&gt;:\Mscs\Quolog.log file exists and the latest
+checkpoint file is valid, the cluster will be formed from the checkpoint file
+and the Quolog.log file. If the &lt;quorum_device&gt;:\Mscs files do not exist,
+or the latest checkpoint file is inconsistent, the cluster is formed from the
+%SystemRoot%\Cluster\Clusdb of the current node.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

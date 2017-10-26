@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196019/","publisher":null,"image":null,"headline":"Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196019-adding-windows-nt-40-computers-to-domain-before-sysprep">Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196019
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the new System Preparation tool, Sysprep, it is now possible to use disk
+image duplication software such as Symantec's Norton Ghost, Altiris's
+RapiDeploy, and Micro House's ImageCast. The Sysprep tool changes the SID of the
+cloned Windows NT Workstation so that it is unique. Questions have come up as to
+whether computers that are to be cloned can be added to a Windows NT domain
+before the Sysprep tool is run.
+
+The focal point of this article is to discuss how SIDs are related to Sysprep and
+what precautions to take when using the Sysprep tool (that is, assigning local
+permissions, adding workstations to the domain, and so on).
+
+MORE INFORMATION
+================
+
+The Sysprep utility is used to change the SID of the cloned workstation so that
+it is unique in the domain. Only local workstation SIDs are affected by this
+tool. For this reason, it is important not to assign any local permissions on
+the workstation before running Sysprep.
+
+If local permissions are set prior to running Sysprep, they will not be valid
+when the local SID is changed after Sysprep is run. This is only true for local
+permissions. Domain permissions can be set for users prior to Sysprep running
+because these SIDs are stored on the domain controllers and will not be affected
+by the local SID that is being changed.
+
+It is also recommended to clone workstations while they are members of a
+workgroup rather than a domain. The reason for this has to do with machine
+account names and not necessarily SIDs. If a Sysprep source computer is created
+with a computer name, that same computer name will be duplicated when the
+computer is cloned. Windows NT domains use the machine account name to establish
+trust relationships between the domain controllers and the workstations. If
+computers are added to the domain prior to being cloned, the computer name will
+need to be changed after the clone procedure is complete for this workstation to
+be able to participate in the domain. For this reason, it is best to prepare the
+computer as a workgroup member and then perform the clone procedure. After the
+installation is verified as successful and Sysprep has been run, the workstation
+can be added to the domain with a unique machine account name.
+
+Sysprep can be combined with Netdom.exe, a powerful command-line utility from the
+Windows NT Server 4.0 Resource Kit, to script joining a domain, manage computer
+accounts for members and BDCs, reset secure channels, establish trust
+relationships, and manage resource domain computer accounts.
+
+For additional information about parameters for the Unattend.txt file, please see
+the following articles in the Microsoft Knowledge Base:
+
+  Q180546 Automating Updates to Local Groups on Member Servers
+
+  Q173529 Using Batch Files to Automate Networking Tasks
+
+REFERENCES
+==========
+
+For additional information about System Preparation tools and other deployment
+information, please see:
+
+  http://www.microsoft.com/ntworkstation/
+
+Additional query words: sysprep SID domain workgroup permission NTFS deploy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

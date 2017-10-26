@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303701/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303701/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303701/","publisher":null,"image":null,"headline":"Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303701-configuring-incomingoutgoing-connections-for-iis-smtp-server">Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303701
+Product(s): Internet Information Server
+Version(s): 2000,5.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- Configure Incoming and Outgoing Connections for an IIS SMTP Server
+
+SUMMARY
+=======
+
+This step-by-step guide describes how to configure incoming and outgoing
+connections for an Internet Information Services (IIS) SMTP server.
+
+Requirements
+------------
+
+- Windows 2000 Professional, Windows 2000 Server, or Windows 2000 Advanced
+  Server
+- IIS 5.0 with SMTP services installed
+
+Configure Incoming and Outgoing Connections for an SMTP Server
+--------------------------------------------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Internet Services Manager.
+
+2. In the Internet Information Services console tree (left pane), click the
+  server that contains the SMTP virtual server that you want to configure, and
+  then expand the server node by clicking the plus sign (+) next to the server
+  name.
+
+3. Right-click the SMTP virtual server that you want to configure, and then
+  click Properties.
+
+4. On the General tab, click Connection to open the Connections dialog box.
+
+5. In the SMTP Virtual Server property sheet, under Incoming, click the Limit
+  Connections to: check box to enable this setting (the default is no limit),
+  and then set the following options:
+
+   - In the Limit connections to: text box, type the maximum number of incoming
+     connections allowed by the SMTP server. The default is 1,000 connections.
+     The minimum is 1.
+
+   - In the Time-out: text box, type the maximum number of minutes that an
+     incoming connection can remain inactive before the server closes the
+     connection.
+
+6. In the SMTP Virtual Server property sheet, under Outgoing, click the Limit
+  connections to: check box to enable this setting (the default is no limit),
+  and then set the following options:
+
+   - In the Limit connections to: text box, type the maximum number of outbound
+     connections allowed to all remote domains. The default setting is 1,000
+     connections and the minimum is 1.
+
+   - In the Time-out: text box, type the maximum number of minutes that an
+     outgoing connection can remain inactive before the server closes the
+     connection.
+
+7. In the SMTP Virtual Server property sheet, under Outgoing, select Limit
+  connections per domain to: to enable this setting (the default is no limit).
+  In the text box provided, type the number of concurrent outgoing connections
+  that each domain is allowed to have.
+
+8. In the TCP Port: text box, type the port to be used by the SMTP server for
+  outgoing connections.
+
+You have now configured the incoming and outgoing connections for your SMTP
+server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbiis500 kbWinAdvServSearch
+Version           : :2000,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

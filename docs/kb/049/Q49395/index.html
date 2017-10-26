@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q49395: Example of Passing Numerics from BASIC to MASM by Value | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q49395: Example of Passing Numerics from BASIC to MASM by Value" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/049/Q49395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/049/Q49395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/049/Q49395/","publisher":null,"image":null,"headline":"Q49395: Example of Passing Numerics from BASIC to MASM by Value","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q49395-example-of-passing-numerics-from-basic-to-masm-by-value">Q49395: Example of Passing Numerics from BASIC to MASM by Value</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q49395
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom H_MASM S_QuickASM | mspl13_basic
+Last Modified: 10-AUG-1990
+
+The two programs below demonstrate how a Microsoft BASIC program
+passes standard numeric types to assembly language by value.
+
+This information about interlanguage calling applies to QuickBASIC
+versions 4.00, 4.00b, and 4.50 for MS-DOS, to Microsoft BASIC Compiler
+versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS and MS OS/2.
+
+For more information about passing other types of parameters between
+BASIC and MASM, search in the Software/Data Library for the following
+word:
+
+   BAS2MASM
+
+Code Example
+------------
+
+The following BASIC program is BNUMVAL.BAS, which passes two standard
+numeric types to assembly language by value:
+
+   DECLARE SUB ValInt(BYVAL i%)
+   DECLARE SUB ValLong(BYVAL l&amp;)
+   i% = ASC("A")
+   l&amp; = ASC("B") * 65536 + ASC("C")
+   CLS
+   CALL ValInt(i%)
+   CALL ValLong(l&amp;)
+   END
+
+The following program is ANUMVAL.ASM, which gets two standard numeric
+types by value and prints them out:
+
+; The following handy .MODEL MEDIUM,BASIC directive is found in MASM
+; 5.10 but not in earlier versions:
+.MODEL MEDIUM, BASIC
+.CODE
+        PUBLIC ValInt, ValLong
+ValInt  PROC
+        push bp
+        mov bp, sp            ; set stack frame
+        mov dx, [bp+6]        ; get integer
+        mov ah, 02            ; DOS interrupt to print character
+        int 21h
+        pop bp
+        ret 2
+ValInt  ENDP
+
+ValLong PROC
+        push bp
+        mov bp, sp            ; set stack frame
+        mov dx, [bp+6]        ; get first part of long
+        mov ah, 02            ; DOS interrupt to print character
+        int 21h
+        mov dx, [bp+8]        ; get second part of long
+        int 21h               ; print it
+        pop bp
+        ret 4
+ValLong ENDP
+        END
+
+To demonstrate these programs from an .EXE program, compile and link
+as follows:
+
+   BC BNUMVAL.BAS;
+   MASM ANUMVAL.ASM;
+   LINK BNUMVAL ANUMVAL;
+
+BNUMVAL.EXE produces the following output:
+
+   ABC
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

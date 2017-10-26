@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58954: &quot;R6002 - Floating Point Not Loaded&quot; Without Math Coprocessor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58954: &quot;R6002 - Floating Point Not Loaded&quot; Without Math Coprocessor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58954/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58954/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58954/","publisher":null,"image":null,"headline":"Q58954: &quot;R6002 - Floating Point Not Loaded&quot; Without Math Coprocessor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58954-r6002---floating-point-not-loaded-without-math-coprocessor">Q58954: "R6002 - Floating Point Not Loaded" Without Math Coprocessor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58954
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900215-15 | mspl13_basic
+Last Modified: 27-FEB-1990
+
+A BASIC PDS 7.00 program gives "run-time error R6002 - Floating point
+not loaded" on a machine WITHOUT a coprocessor when the BASIC run-time
+library or .EXE program is created with coprocessor-only support.
+Coprocessor-only support means that the BASIC run-time routines
+require an 80x87 (8087, 80287, or 80387) math coprocessor to run.
+
+The R6002 error is an initialization error that cannot be trapped in a
+BASIC program.
+
+Implementing coprocessor-only support in an .EXE program depends upon
+whether you compile with or without the BC /O (stand-alone .EXE)
+option, as follows:
+
+1. If you compile WITHOUT BC /O, BASIC programs require a run-time
+   module (BRT70xxx.EXE) to be present at run time. If you want to
+   build a BASIC run-time module and BRT70xxx.LIB file with
+   coprocessor-only support, you must invoke the BUILDRTM.EXE utility
+   with the /FPi87 switch. For example:
+
+      BUILDRTM /LR /FPi87 /DEFAULT
+
+   (See Page 611 of "Microsoft BASIC 7.0: Language Reference" for an
+   explanation of the options of the BUILDRTM.EXE utility.) You can
+   then link with your new coprocessor-only run-time module, as
+   follows:
+
+      BC test;
+      LINK IMPORT+test,test,,{newlibname} /NOE;
+
+2. If you compile WITH the BC /O (stand-alone .EXE) option, you can
+   directly link your BASIC .OBJ file with the 87.LIB stub file. For
+   example:
+
+      BC test /O;
+      LINK test+87.LIB /NOE;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

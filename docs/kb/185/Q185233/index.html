@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185233/","publisher":null,"image":null,"headline":"Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185233-wd97-error-setting-transparent-color-in-headerfooter-picture">Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185233
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kberrmsg kbdta word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to set the color transparency of a selected picture in the
+document's header or footer (click Set Transparent Color on the Picture
+toolbar), positioning your mouse pointer over the picture causes Word to stop
+responding, and the following error message appears:
+
+In Windows 95 and Windows 98
+----------------------------
+
+  This program has performed an illegal operation and will be shut down.
+
+  If the problem persists, contact the program vendor.
+
+When you click Details, Word displays the following message:
+
+  WINWORD caused an invalid page fault in module MSO97.DLL at &lt;address&gt;.
+
+In Windows NT 4.0
+-----------------
+
+  An application error has occurred and an application error log is being
+  generated.
+
+  Winword.exe
+
+  Exception: access violation (0xc0000005), Address: &lt;address&gt;
+
+  -or-
+
+  The instruction at "&lt;address&gt;" referenced memory at "0x00000000".
+
+  The memory could not be "read".
+
+CAUSE
+=====
+
+This error message appears if you inserted the picture with the "Float over
+text" option selected.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Clear the "Float over Text" Check Box
+-----------------------------------------------
+
+Before setting the transparent color for the picture, clear the "Float over text"
+check box. To do this, follow these steps:
+
+1. Click to select the inserted picture.
+
+2. On the Format menu, click Picture.
+
+3. On the Position tab, click to clear the "Float over text" check box and click
+  OK.
+
+Method 2: Set Color Transparency Prior to Inserting Picture
+-----------------------------------------------------------
+
+Set the transparent color prior to inserting the picture into the header or
+footer. To do this, follow these steps:
+
+1. Insert your picture into the main body of your document.
+
+2. Click to select your picture.
+
+3. If the Picture toolbar is not visible, on the View menu, point to Toolbars,
+  and then click Picture.
+
+4. On the Picture toolbar, click Set Transparent Color.
+
+5. On your picture, click the color that you want to make transparent.
+
+6. While the picture is selected, click Cut on the Edit menu.
+
+7. On the View menu, click Header And Footer.
+
+8. Place the insertion point where you want the picture in the header or footer,
+  and then click Paste on the Edit menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+
+Additional query words: bombs crash crashes crashing crashed quit quitting quits fail fails failing failed break hang hangs hanging hung SR1 release1 graphic image gif jpg jpeg
+
+======================================================================
+Keywords          : kberrmsg kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87621: PC Win: Running Microsoft Mail Windows Client from the Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87621: PC Win: Running Microsoft Mail Windows Client from the Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87621/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87621/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87621/","publisher":null,"image":null,"headline":"Q87621: PC Win: Running Microsoft Mail Windows Client from the Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87621-pc-win-running-microsoft-mail-windows-client-from-the-network">Q87621: PC Win: Running Microsoft Mail Windows Client from the Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87621
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is addressed to the network administrator and outlines the
+procedure for setting up version 3.0 of Microsoft Mail when Mail is run from the
+network using the Windows client, and no Mail files are stored locally on the
+users' workstations. The first section tells how to set up Mail 3.0 when
+Microsoft Windows and Mail are run entirely from the network. The second section
+tells how to set up Mail 3.0 when Windows is run locally and Mail 3.0 is run
+from the network.
+
+NOTE: Mail version 3.0 was not designed to be run directly from the network.
+Because the file I/O that normally occurs on the local workstation is being
+handled by the network, running Mail from the network may decrease Mail's
+performance.
+
+              RUNNING WINDOWS AND MAIL FROM THE NETWORK
+-----------------------------------------
+
+Definitions:
+
+- &lt;MAILEXE&gt; refers to the Microsoft Mail executables directory.
+
+- &lt;WINSHARE&gt; refers to the shared location of the network installation of
+  Windows.
+
+- &lt;WINTEMP&gt; refers to a temporary directory for a temporary installation
+  of Windows.
+
+- &lt;MYDIR&gt; refers to the user's network directory where the user stores
+  his or her own Windows files (this will include the *.INI and *.GRP files).
+
+INSTALLATION STEPS
+------------------
+
+To set up the Mail 3.0 shared files:
+
+1. Install the Windows client in the &lt;MAILEXE&gt; directory, as described in
+  the "Microsoft Mail Administrator's Guide," page 10.
+
+2. Create the &lt;WINTEMP&gt; directory on the server or a local workstation and
+  run SETUP /N from the &lt;WINSHARE&gt; directory to create a new installation
+  of Windows in the &lt;WINTEMP&gt; directory.
+
+3. Run Windows from &lt;WINTEMP&gt;. From the MAILEXE directory in the Windows
+  File Manager, start Setup by double-clicking SETUP.EXE. When Setup prompts
+  for the Microsoft Mail directory, type &lt;WINSHARE&gt; as the location. For
+  example, type "L:\WINDOWS" (without quotation marks) if this is the location
+  of the network version of Windows. This will install all the Mail for Windows
+  program files in the same directory as Windows.
+
+4. Copy MSSPELL.DLL and MSSP_AM.LEX from the &lt;WINTEMP&gt;\MSAPPS\PROOF
+  directory to &lt;WINSHARE&gt;.
+
+5. Copy SCHEDMSG.DLL from &lt;MAILEXE&gt; to &lt;WINSHARE&gt;.
+
+6. Set all files in &lt;WINSHARE&gt; to Read-Only. For Novell(R) networks, set
+  the files to Shareable and Read-Only.
+
+7. Modify the MSMAIL.INI file in &lt;WINTEMP&gt; with any custom settings you
+  want all your users to have (for example, ServerPath). For additional
+  settings that may be included, see pages 52-55 in the "Microsoft Mail
+  Administrator's Guide."
+
+8. In &lt;MAILEXE&gt;, create the directory \MAILINI.
+
+9. Copy the following files to &lt;MAILEXE&gt;\MAILINI:
+
+  &lt;WINTEMP&gt;\MSMAIL.INI
+  &lt;WINTEMP&gt;\MSMAILPV.INI
+  &lt;WINTEMP&gt;\MSMAIL\MSMAIL\FILES.INI
+
+10. Remove &lt;WINTEMP&gt; (including all files, subdirectories, and the
+  directory).
+
+To set up a user for Mail 3.0:
+
+1. In the &lt;MYDIR&gt; directory, create the following directories:
+
+  " \MSMAIL
+  \MSMAIL\MSMAIL " (without the quotation marks)
+
+2. Copy the following files from &lt;MAILEXE&gt;\MAILINI:
+
+     Copy          To
+     ----          --
+
+     MSMAIL.INI    \&lt;MYDIR&gt;
+     MSMAILPV.INI  \&lt;MYDIR&gt;
+     FILES.INI     \&lt;MYDIR&gt;\MSMAIL\MSMAIL
+
+3. In the Windows Program Manager, create a Mail 3.0 icon with the following
+  properties:
+
+     Description:       Microsoft Mail
+     Command Line:      &lt;WINSHARE&gt;\MSMAIL.EXE
+     Working Director:  &lt;WINSHARE&gt;
+     Shortcut Key:      None
+     Run Minimized:     Not checked
+
+4. Modify the WIN.INI file to include the following settings:
+
+        [Extensions]
+        dcx=&lt;WINSHARE&gt;\faxview.exe ^.dcx
+        scr=&lt;WINSHARE&gt;\faxview.exe ^.scr
+        mmf=&lt;WINSHARE&gt;\msmail.exe
+
+        [Sounds]
+        MailBeep=
+
+        [mail]
+        mapi=1
+
+        [MS Proofing Tools]
+        Spelling (Mail) 1033,0=msspell.dll,mssp_am.lex
+        Custom Dict 1=&lt;MYDIR&gt;\custom.dic
+
+5. Modify the WINFILE.INI file to include the following setting. The [AddOns]
+  section makes it possible for the user to send a file directly from within
+  File Manager.
+
+        [AddOns]
+        Mail File Manager Extension=sendfile.dll
+
+6. Run Registration Editor (REGEDIT.EXE) and add the following file type to the
+  Registration Database:
+
+     Identifier:   MicrosoftMail
+     File Type:    Microsoft Mail
+     Action:       Open
+     Command:      &lt;WINSHARE&gt;\MSMAIL.EXE
+     Uses DDE:     Not checked
+
+7. Verify that the &lt;WINSHARE&gt; directory is in the MS-DOS search path for
+  each user.
+
+  RUNNING WINDOWS LOCALLY AND MAIL FROM THE NETWORK
+  -------------------------------------------------
+
+Definitions:
+
+- &lt;WINDIR&gt; refers to an individual user's locally installed Windows
+  directory.
+
+- &lt;MAILEXE&gt; refers to the Microsoft Mail executables directory.
+
+- &lt;EXCELDIR&gt; refers to the directory where Microsoft Excel 3.0 has been
+  previously installed.
+
+INSTALLATION STEPS
+------------------
+
+To set up the Mail 3.0 shared files:
+
+1. Install the Windows client in the &lt;MAILEXE&gt; directory as described in
+  the "Microsoft Mail Administrator's Guide," page 10.
+
+2. Modify MSMAIL.INI in &lt;MAILEXE&gt; with the following settings and add any
+  additional custom settings you want all your users to have (for example,
+  ServerPath). For additional settings that can be included, see pages 52-55 in
+  the "Microsoft Mail Administrator's Guide."
+
+        [Microsoft Mail]
+        DemosEnabled=1
+
+        [MS Proofing Tools]
+        Spelling=Spelling (Mail) 1033,0
+        Custom Dict=Custom Dict 1
+
+To set up a user for Mail 3.0:
+
+1. Create the following directories in &lt;WINDIR&gt;:
+
+  " &lt;WINDIR&gt;\MSMAIL
+  &lt;WINDIR&gt;\MSMAIL\MSMAIL " (without the quotation marks)
+
+2. Copy the following files from &lt;MAILEXE&gt;:
+
+     Copy               To
+     ----               --
+
+     MSMAIL.INI         \&lt;WINDIR&gt;
+     MSMAILPV.INI       \&lt;WINDIR&gt;
+     FILES.INI          \&lt;WINDIR&gt;\MSMAIL\MSMAIL
+
+3. In the Windows Program Manager, create a Mail 3.0 icon with the following
+  properties:
+
+     Description:       Microsoft Mail
+     Command Line:      &lt;MAILEXE&gt;\MSMAIL.EXE
+     Working Director:  &lt;MAILEXE&gt;
+     Shortcut Key:      None
+     Run Minimized:     Not checked
+
+4. Modify the WIN.INI file to include the following settings:
+
+        [Extensions]
+        dcx=&lt;MAILEXE&gt;\faxview.exe ^.dcx
+        scr=&lt;MAILEXE&gt;\faxview.exe ^.scr
+        mmf=&lt;MAILEXE&gt;\msmail.exe
+
+        [Sounds]
+        MailBeep=
+
+        [mail]
+        mapi=1
+
+        [MS Proofing Tools]
+        Spelling (Mail) 1033,0=msspell.dll,mssp_am.lex
+        Custom Dict 1=&lt;WINDIR&gt;\custom.dic
+
+5. Modify the WINFILE.INI file to include the following setting. The [AddOns]
+  section makes it possible for the user to send a file directly from within
+  File Manager.
+
+        [AddOns]
+        Mail File Manager Extension=sendfile.dll
+
+6. Run Registration Editor (REGEDIT.EXE) and add the following file type to the
+  Registration Database:
+
+     Identifer:    MicrosoftMail
+     File Type:    Microsoft Mail
+     Action:       Open
+     Command:      &lt;MAILEXE&gt;\MSMAIL.EXE
+     Uses DDE:     Not checked
+
+7. If you have version 3.0 of Microsoft Excel for Windows, copy SMI.XLA to
+  &lt;EXCELDIR&gt;\XLSTART.
+
+  If you have version 2.0 or later of Microsoft Word for Windows, load
+  SMIAUTO.DOC from &lt;MAILEXE&gt;. The SendMail macro will install itself and
+  exit Word for Windows.
+
+8. Place the &lt;MAILEXE&gt; directory in the MS-DOS search path for each user.
+
+  NOTE: If you are using Windows version 3.0, you must replace the following
+  files in your &lt;WINDIR&gt; directory with the copies found in
+  &lt;MAILEXE&gt; for Mail Help to operate properly:
+
+  WINHELP.EXE Windows 3.1 Help engine
+  WINHELP.HLP Windows 3.1 Help file for help
+
+Additional query words: 3.00 install setup
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

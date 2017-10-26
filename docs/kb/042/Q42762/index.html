@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42762: Patches of Floating-Point Instructions at Run Time Are Normal | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42762: Patches of Floating-Point Instructions at Run Time Are Normal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42762/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42762/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42762/","publisher":null,"image":null,"headline":"Q42762: Patches of Floating-Point Instructions at Run Time Are Normal","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42762-patches-of-floating-point-instructions-at-run-time-are-normal">Q42762: Patches of Floating-Point Instructions at Run Time Are Normal</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42762
+Product(s): See article
+Version(s): 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# G890217-12193 | mspl13_c
+Last Modified: 30-MAY-1989
+
+Question:
+
+I have noticed that memory overwrites occur in the library routine
+i8_input. While debugging the program under CodeView with the
+assembler listing, I noticed that after executing into the code, the
+first 2 bytes of each instruction beginning with a hex CD are
+overwritten. The C statement that generated the assembler code with
+the problem in it was an "fscanf" function call.
+
+Below is an listing example of what is occurring:
+
+Before
+------
+
+7E1F:4266 CD35C0       INT 35 ; FLD     ST(0)
+7E1F:4269 CD35E1       INT 35 ; FABS
+7E1F:426C CD372E7425   INT 37 ; FLD     TByte Ptr [__chbuf+5C (2574)]
+
+After
+-----
+
+7E1F:4266 90           NOP
+7E1F:4267 D9C0         FLD      ST(0)
+7E1F:4269 90           NOP
+7E1F:426A D9E1         FABS
+7E1F:426C 90           NOP
+7E1F:426D DB2E7425     FLD      TByte Ptr [__chbuf+5C (2574)]
+
+Response:
+
+The behavior you describe is quite normal and nothing to worry about.
+Our floating-point package works by generating the INT instructions
+you noticed. When these instructions are executed, the routine they
+call replaces the INT instructions with the either library calls to
+the emulator library or the actual 80 x 87 floating-point
+instructions, depending on whether or not a coprocessor is installed.
+
+When the instructions are executed again, there is no overhead for
+determining whether on not a coprocessor is installed: the proper
+instructions have been patched into place already. This patching
+occurs even if the -FPi87 option has been selected.
+
+You can force in-line 8087 instructions to be put into your code.
+For information on this technique, query on the following keywords:
+
+   in-line 8087 instructions
+
+There is no need to do this if your code is going to run under DOS or
+OS/2. Although this article mainly discusses FORTRAN, it applies to C
+as well because the two languages use the same floating-point library.
+
+This code modification occurs only under DOS. Under OS/2, coprocessor
+instructions (such as in the second listing) are always generated. If a
+coprocessor is not present at execution, the instructions cause
+exceptions that are handled by the floating-point emulator software.
+
+Note: Such code modification is impossible under OS/2 because there is
+no way to dynamically change a code segment under OS/2, although it is
+possible to cause a data segment to be executed.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

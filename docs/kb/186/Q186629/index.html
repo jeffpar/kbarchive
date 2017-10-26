@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186629: INFO: Terminal Server Unattended Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186629: INFO: Terminal Server Unattended Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186629/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186629/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186629/","publisher":null,"image":null,"headline":"Q186629: INFO: Terminal Server Unattended Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186629-info-terminal-server-unattended-installation">Q186629: INFO: Terminal Server Unattended Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186629
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbOPK kbSBK
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The unattended installation process with Terminal Server is the same as the
+process for Windows NT Server with three exceptions. The answer file has a new
+option for the number of client licenses and whether to install Internet
+Explorer 4.0, and Sysdiff needs to be run in Terminal Server's Installation
+Mode.
+
+MORE INFORMATION
+================
+
+Answer file
+-----------
+
+Here is a sample answer file for unattended setup. Note that this file would need
+to be modified for your environment (for example, computer name, paths, license
+numbers).
+
+     [Unattended]
+     OemPreinstall = yes
+     NoWaitAfterTextMode = 1
+     NoWaitAfterGUIMode = 1
+     FileSystem = LeaveAlone
+     ExtendOEMPartition = 0
+     ConfirmHardware = no
+     NtUpgrade = no
+     Win31Upgrade = no
+     TargetPath = WTSUAS
+     OverwriteOemFilesOnUpgrade = no
+
+     [UserData]
+     FullName = "BVT Bench"
+     OrgName = "MS"
+     ComputerName = BRADG-UNATTEND
+
+     [GuiUnattended]
+     OemSkipWelcome = 1
+     OEMBlankAdminPassword = 1
+     TimeZone = "(GMT-08:00) Pacific Time (US &amp; Canada); Tijuana"
+     AdvServerType = SERVERNT
+
+     [LicenseFilePrintData]
+     AutoMode = PerServer
+     AutoUsers = 9999
+
+     [TerminalServerDesktops]
+     Quantity = 5
+
+     [InternetExplorer]
+     InstallIE4 = yes
+
+     [Display]
+     ConfigureAtLogon = 0
+     BitsPerPel = 8
+     XResolution = 640
+     YResolution = 480
+     VRefresh = 60
+     AutoConfirm = 1
+
+     [Network]
+     DetectAdapters = ""
+     InstallProtocols = ProtocolsSection
+     InstallServices = ServicesSection
+     InstallInternetServer = InternetParamSection
+     JoinDomain = ntwksta
+     CreateComputerAccount = ntwksta, ntwksta
+
+     [ProtocolsSection]
+     NBF = NBFParamSection
+     TC = TCParamSection
+     NWLNKIPX = NWLNKIPXParamSection
+
+     [NBFParamSection]
+
+     [TCParamSection]
+     DHCP=yes
+
+     [NWLNKIPXParamSection]
+
+     [ServicesSection]
+
+     [InternetParamSection]
+     InstallDir = C:\Inetsrv
+     InstallINETSTP = 1
+     InstallWWW = 1
+     WWWRoot = C:\Inetsrv\WWWRoot
+     InstallGOPHER = 1
+     GopherRoot = C:\Inetsrv\GopherRoot
+     InstallFTP = 1
+     FTPRoot = C:\Inetsrv\FTPRoot
+     InstallADMIN = 1
+     InstallW3SAMP = 1
+     InstallHTMLA = 1
+
+Applications and Sysdiff
+------------------------
+
+If you are preloading software and plan to use Sysdiff, the only difference
+between usage in Windows NT and Terminal Server is that, with Terminal Server,
+you should install applications and run Sysdiff in Installation Mode.
+
+To enter Installation Mode, do one of the following:
+
+- Type the following command at an MS-DOS command prompt:
+
+  "Change User /Install" (without the quotation marks)
+
+- Install applications through the Control Panels Add/Remove Programs tool.
+
+Applications should be tested for full client functionality before using the
+Terminal Server as a template for other servers. You can run applicable
+application compatibility scripts, register .dll files, modify application
+compatibility flags, and so on before using the server as a template.
+
+Additional query words: Unattended Setup
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

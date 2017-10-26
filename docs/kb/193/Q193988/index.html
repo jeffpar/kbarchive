@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193988/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193988/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193988/","publisher":null,"image":null,"headline":"Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193988-appccpic-application-may-fail-when-using-remote-appc-lu-name">Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193988
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+Operating System(s): 
+Keyword(s): kbfixlist
+Last Modified: 20-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An Advanced Program-to-Program Communication (APPC) application may display the
+following error message when attempting to allocate multiple conversations at
+the same time:
+
+  primary_rc = AP_COMM_SUBSYSTEM_NOT_LOADED (0xF004)
+  secondary_rc = 0xF0000002
+
+A Common Programming Interface for Communications (CPIC) application may receive
+Error 20, or CM_PRODUCT_SPECIFIC_ERROR.
+
+This error has been observed in the following scenario:
+
+- If an APPC application specifies a NULL Local APPC LU alias in TP_STARTED,
+  and a fully qualified Remote APPC LU name (instead of a Remote APPC LU alias)
+  in [MC_]ALLOCATE. Or, if a CPIC application specifies a fully qualified
+  Remote APPC LU name prior to calling CMALLC (Allocate).
+
+- If the APPC or CPIC application attempts to allocate up to 10 concurrent
+  requests within a second.
+
+- If the APPC or CPIC application is running on an SNA Server Windows NT or
+  Windows 95/98 client machine and there are several SNA Servers in the
+  subdomain, where some of the servers may not be configured to support the
+  Remote LU name being requested.
+
+
+NOTE: There are many more common scenarios that can cause the above APPC or CPIC
+return codes. For more information, please see the following Microsoft Knowledge
+Base articles:
+
+  Q148359 SNA Server APPC Error: F004 AP_COMM_SUBSYSTEM_NOT_LOADED
+
+
+  Q132720 SNA Server CPIC Allocate Error 20(CM_PRODUCT_SPECIFIC_ERROR)
+
+
+CAUSE
+=====
+
+When an APPC or CPIC application specifies a null Local LU alias, null Remote
+APPC LU alias, and a fully qualified Remote APPC LU name, the SNA Server client
+is not optimized to locate the appropriate SNA Server(s), so the SNA client
+tries all SNA Servers in the subdomain. However, when the application attempts
+to allocate multiple conversations at the same instant, the SNA client "server
+resource location" may fail in some cases to try all servers, and return an
+error to one or more of the allocation requests.
+
+This problem does not occur when the application specifies a Local or Remote APPC
+LU alias, because the SNA client determines which servers support the request,
+and only tries those servers. This improvement has been implemented since the
+release of SNA Server 2.11 Service Pack 2, but did not cover the case where only
+the fully qualified Remote APPC LU name is specified by the APPC or CPIC
+application.
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0 and 4.0
+SP1. This problem was corrected in the latest SNA Server version 4.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+WORKAROUND
+==========
+
+The APPC or CPIC application can solve this problem by specifying a Remote APPC
+LU alias within the [MC_]ALLOCATE or CMALLC request.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0SP1,
+3.0SP2, 3.0SP3, 4.0, and 4.0SP1. This problem was first corrected in SNA Server
+3.0 Service Pack 4.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfixlist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

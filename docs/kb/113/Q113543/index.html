@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113543/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113543/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113543/","publisher":null,"image":null,"headline":"Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113543-err-msg-after-installing-ms-dos-621-wrong-dblspacebin">Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113543
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SYMPTOMS
+========
+
+After you install MS-DOS 6.21 Upgrade on your MS-DOS 6.0 system, you receive the
+following error message when you start your computer:
+
+  Wrong DBLSPACE.BIN version
+
+In addition, DBLSPACE.SYS may display the following message:
+
+  You cannot access any DoubleSpace drives because DBLSPACE.BIN is not loaded.
+  (DBLSPACE.BIN is the portion of MS-DOS that provides access to
+  DoubleSpace-compressed drives.)
+
+If you have compressed any drives using DoubleSpace, you cannot access the data
+on those drives.
+
+CAUSE
+=====
+
+This problem occurs when MS-DOS 6.21 Upgrade Setup is unable to patch your
+DBLSPACE.BIN, DBLSPACE.EXE, and DBLSPACE.SYS files.
+
+The Upgrade Setup program can patch your DBLSPACE.* files only if you are running
+MS-DOS 6.0 at the time you run Setup. If you boot from the MS-DOS 6.21 disk
+before running Setup, the DBLSPACE.* files cannot be patched.
+
+RESOLUTION
+==========
+
+To correct this problem, boot your system from your Uninstall disk and restore
+your system to MS-DOS version 6.0. Then boot your computer from the hard disk
+drive using MS-DOS 6.0 and rerun MS-DOS 6.21 Upgrade Setup.
+
+If you do not have your Uninstall disk, boot from your MS-DOS 6.0 Disk 1, press
+F3 to exit the Setup program, and then rerun MS-DOS 6.21 Upgrade Setup.
+
+If you do not have your Uninstall disk and your MS-DOS 6.0 Disk 1 does not fit in
+drive A, insert your MS-DOS 6.0 Disk 1 in drive B and run B:\SETUP /F. Follow
+the instructions on the screen to create an MS-DOS 6.0 startup floppy disk in
+drive A. After completing the SETUP /F, boot from the Startup disk and rerun
+MS-DOS 6.21 Upgrade Setup.
+
+Additional query words: 6.22 6.20 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622
+Version           : MS-DOS:6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

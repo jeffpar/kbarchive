@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/286/Q286189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/286/Q286189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/286/Q286189/","publisher":null,"image":null,"headline":"Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q286189-howto-invoke-ole-db-data-link-properties-dialog-box-in-vb-code">Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q286189
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0,6.0 SP3,6.0 SP4
+Operating System(s): 
+Keyword(s): kbOLEDB kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbADOsearch kbATM kbmdac270 kbad
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, 6.0 SP3, 6.0 SP4 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft OLE DB, versions 2.0, 2.1, 2.5, 2.6 
+- ActiveX Data Objects (ADO), versions 2.0, 2.01, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The OLE DB Data link properties dialog box is commonly used to define or edit
+ActiveX Data Object (ADO) connection string attributes for ADO Data controls,
+Visual Basic 6.0 DataEnvironment connection objects, and Universal Data Link
+(UDL) files. This article documents a code sample that demonstrates how to
+programmatically invoke and use this dialog box in a Visual Basic application to
+construct the connection string for an ADO Connection object at run time by
+using a graphical user interface (GUI) driver interface. This is a useful
+feature to implement in applications and tools that might require users to
+specify an ADO connection string at run time.
+
+MORE INFORMATION
+================
+
+The OLE DB Service Component 1.0 Type Library (oledb32.dll) that is installed by
+Microsoft Data Access Components (MDAC) implements an object named DataLinks
+whose PromptEdit and PromptNew methods can invoke and use the OLE DB Data Link
+properties dialog box to define or edit ADO connection strings.
+
+The following steps set up a Visual Basic sample that demonstrates how to use the
+DataLinks object of the OLE DB Service Component 1.0 Type Library to edit the
+connection string properties of an ADO connection object:
+
+1. Open a new Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. On the Project menu, set references to the Microsoft ActiveX Data Objects 2.x
+  Library and the OLE DB Service Component 1.0 Type Library.
+
+3. Drag-and-drop a CommandButton on Form1 and make the caption Define
+  Connection.
+
+4. Copy and paste the following code into Form1's code module:
+
+  Dim cn As ADODB.Connection
+
+  Private Sub Command1_Click()
+
+  Dim MSDASCObj As MSDASC.DataLinks
+  Set MSDASCObj = New MSDASC.DataLinks
+
+  Set cn = New ADODB.Connection
+  MSDASCObj.PromptEdit cn
+
+  cn.Open
+  MsgBox "Connection opened successfully"
+  cn.Close
+  End Sub
+
+5. Save the project and run it.
+
+6. Click Define Connection, and note that the code in the Click event procedure
+  of the CommandButton creates an instance of the MSDASC.DataLinks object and
+  executes its PromptEdit method to display the OLE DB Data Link Properties
+  dialog box. This dialog box is displayed as a modal window. As a result,
+  subsequent code that follows the call to the PromptEdit method is not
+  executed until the Data link properties dialog box is dismissed.
+
+7. Select a suitable OLEDB provider in the Providers tab, and then specify the
+  other connection attributes to establish a connection to one of your
+  databases (Access, SQL Server, Oracle, and so forth).
+
+8. Click Test Connection in the Data link properties dialog box to test the
+  connection. Note that you receive a Test Connection succeeded message box if
+  the connection is successful. Dismiss the dialog box by clicking OK.
+
+The remaining code in the Click event procedure of the CommandButton is now
+executed. The ConnectionString property of the ADO Connection object that was
+passed as a parameter to the PromptEdit method is initialized based on the
+settings that you selected in the Data link properties dialog box.
+
+The statements that follow the call to the PromptEdit method of the
+MSDASC.DataLinks object open and close an ADO Connection by using the ADO
+Connection object that is initialized by the call to the PromptEdit method. This
+verifies that the ADO Connection object's ConnectionString property was set
+correctly according to the options that are selected in the Data Link properties
+dialog box. If you click Cancel in the Data Link properties dialog box, the
+cn.Open statement in the Visual Basic code generates a run-time error to
+indicate that it could not establish a connection by using the uninitialized
+ConnectionString.
+
+NOTE: You can check the connection's ConnectionString to see if it is empty ("")
+and catch the Cancel before the connection.open statement.
+
+Additional query words: PromptEdit MSDASC Data Link
+
+======================================================================
+Keywords          : kbOLEDB kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbADOsearch kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO201 kbADO200 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbOLEDBSearch kbOLEDB200 kbOLEDB210 kbOLEDB250 kbOLEDB260 kbVB600SP3 kbVB600SP4 kbADO270
+Version           : :2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0,6.0 SP3,6.0 SP4
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

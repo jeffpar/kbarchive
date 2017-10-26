@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138395: PRB: Visual FoxPro Gives @…GET a Default Caption | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138395: PRB: Visual FoxPro Gives @…GET a Default Caption" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138395/","publisher":null,"image":null,"headline":"Q138395: PRB: Visual FoxPro Gives @…GET a Default Caption","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138395-prb-visual-foxpro-gives-get-a-default-caption">Q138395: PRB: Visual FoxPro Gives @…GET a Default Caption</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138395
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the @...GET command to create a check box, option button, or command
+button, Visual FoxPro gives the controls a default prompt. The following list
+shows the default prompts Visual FoxPro assigns:
+
+  check box        'check1'
+  command button   'command1'
+  option button    'option1'
+
+RESOLUTION
+==========
+
+Here are three possible resolutions to this issue:
+
+1. Create a form using the form designer. For each of the controls, set the
+  caption property to spaces.
+
+2. Define a class based on the Visual FoxPro form class. Add the controls to the
+  form, and set the Caption property to "". The following code demonstrates
+  this method:
+
+      *** Start Program ***
+     *
+     * The first five lines instantiate a form named 'newform' and add
+     * the command button, option button, and check box controls to the form.
+     *
+     ***
+
+     PUBLIC newform
+     newform = CREATEOBJECT("FORM")
+     newform.Addobject("Command1","CommandButton")
+     newform.Addobject("Check1","CheckBox")
+     newform.Addobject("Option1","Optionbutton")
+
+     *
+     * The next few lines set properties for the controls.
+     *
+
+     newform.Check1.Top = 20
+     newform.Option1.Top = 40
+
+     newform.setall('Caption', "")
+     newform.setall('Visible',.T.)
+
+     newform.show     &amp;&amp;Shows the form
+
+     ***End Program ***
+
+3. Use a SHOW GET command in the WHEN clause of the READ, for example;
+
+     *** Start Program ***
+     *
+     DEFINE WINDOW window1 FROM 1,10 TO 40,40 FLOAT CLOSE
+     ACTIVATE WINDOW window1
+
+     @ 5,5 GET command1 ;
+          PICTURE "@*HN" ;
+          DEFAULT 1
+     @ 8,5 GET option1 ;
+          PICTURE "@*RVN" ;
+          DEFAULT 1
+     @ 11,5 GET check1 ;
+          PICTURE "@*C" ;
+          DEFAULT 1
+
+     READ CYCLE WHEN do_when()
+     RELEASE WINDOW window1
+
+     PROCEDURE do_when
+     SHOW GET command1,1 PROMPT SPACE(0)
+     SHOW GET option1, 1 PROMPT SPACE(0)
+     SHOW GET check1,1 PROMPT SPACE(0)
+     *
+     *** End Program ***
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code:
+
+     DEFINE WINDOW window1 FROM 1,10 TO 40,40 FLOAT CLOSE
+     ACTIVATE WINDOW window1
+     @ 5,5 GET command1 ;
+          PICTURE "@*HN" ;
+          SIZE 1,10 ;
+          DEFAULT 1
+     @ 8,5 GET option1 ;
+          PICTURE "@*RVN" ;
+          SIZE 1, 10;
+          DEFAULT 1
+     @ 11,5 GET check1 ;
+          PICTURE "@*C" ;
+          SIZE 1, 10;
+          DEFAULT 1
+
+     READ CYCLE
+     RELEASE WINDOW window1
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

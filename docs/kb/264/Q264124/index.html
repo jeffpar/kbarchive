@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264124: XADM: How to Use Userdump to Monitor Information Store | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264124: XADM: How to Use Userdump to Monitor Information Store" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264124/","publisher":null,"image":null,"headline":"Q264124: XADM: How to Use Userdump to Monitor Information Store","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264124-xadm-how-to-use-userdump-to-monitor-information-store">Q264124: XADM: How to Use Userdump to Monitor Information Store</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264124
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+By default, Drwtsn32.exe is invoked by the operating system (Microsoft Windows
+NT or Microsoft Windows 2000) to capture unhandled user mode exceptions. This
+behavior can be altered by installing advanced debuggers (like Windbg.exe or
+Cdb.exe) but can always be reset by running the following at the command line:
+
+C:\&gt;drwtsn32 -i
+
+It may become necessary, under the recommendations of Microsoft Product Support
+Services, to specify an alternate default user mode exception handling
+mechanism. In cases where multiple processes stop responding simultaneously and
+multiple invocations of Drwtsn32.exe are overwriting needed data contained in
+user dumps, or if Drwtsn32.exe is having difficulty identifying certain modules
+loaded in the process address space typically identified as mod#.dll (where # is
+a number), Userdump.exe can be used to monitor individual processes for
+exceptions and create user dumps for each process or provide more thorough
+interrogation of the system to provide module identification.
+
+Userdump.exe can be installed as part of the Platform Software Developers Kit
+(SDK), Windows debuggers, or as a stand-alone application and can be downloaded
+as part of the Windows debuggers package from the Microsoft Download Center. The
+following file is available for download from the Microsoft Download Center:
+
+  http://www.microsoft.com/downloads/release.asp?ReleaseID=18937
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+MORE INFORMATION
+================
+
+The download contains the full Windows debugger package, and can easily be
+installed on any computer that is running Windows NT or Windows 2000, which will
+present the user with an icon for User Dump Setup in the Debugging Tools group.
+
+WARNING: Installing the Windows debuggers package may alter the default user mode
+exception handler, and drwtsn32 may need to be reregistered as the default using
+the command line.
+
+c:\&gt;drwtsn32 -i
+
+Although this article is a brief description that focuses primarily on monitoring
+the information store (Store.exe), it applies to the directory (Dsamain.exe) as
+well as any other user mode process. More detailed documentation is in the
+userdocs.doc file, which is located in the default directory "C:\Program
+Files\Debuggers\bin\kanalyze" after installation.
+
+The only question you are asked during setup is whether you want to install or
+remove the utility. The option to remove is available only if setup determines
+that Userdump is currently installed. After you confirm your choice, files are
+added or removed, and services are installed or removed as appropriate. Setup
+offers to open Control Panel to allow advanced configuration. Note that a fresh
+installation of Userdump does not require you to restart the computer. However
+if it is already installed on a computer, removing it or reinstalling (that is,
+upgrading) may require you to restart the computer.
+
+The last action in the setup routine asks if you would like to open Control Panel
+to configure Userdump. You can answer yes to this or you can configure Userdump
+at a later time. You must have administrator privileges to do so.
+
+After the Process Dump tool is started, you are presented with two tabs:
+Exception Monitoring and Hot Keys. To configure Userdump to handle exceptions in
+the information store, simply click the New button on the Exception Monitoring
+tab. Type store.exe (or the image name of any process you wish to monitor) in
+the resulting dialog box and click OK. There is some overhead associated with
+using the Exception Monitor to handle a process, but this is negligible for most
+users.
+
+Userdump creates user dump files named with the prefix of the image name and the
+file extension replaced with dmp (so Store.exe would produce a Store.dmp file).
+These dump files are created by default in the Winnt directory. You can override
+the target directory by creating the following registry key:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\udmpsvc\Parameters
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+  Value Name: DumpPath
+  Data Type: REG_SZ
+  Value: &lt;Fully-qualified path to a local directory&gt;
+
+4. Quit Registry Editor.
+
+The value is expected to be a fully-qualified Win32 path to a local directory,
+which must already exist. Remote directories will not work, even if a drive
+letter is redirected to a remote share point.
+
+Userdump is quite versatile and can be invoked from the command line. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q250509 XADM: How to Use Userdump.exe to Capture the State of the Information
+  Store
+
+It also has several uses including:
+
+- Process self-dumping. Userdump supports a feature whereby an application can
+  cause itself to be dumped, for example, in an exception handler block or a
+  top-level unhandled exception filter.
+
+- Hot-Key Process Snapshot. A single keystroke can be associated with an image
+  binary and can trigger a dump similar to the command line noted above.
+
+For additional information about on drwtsn32 and its configuration, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q188296 How to Disable Dr. Watson for Windows NT
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

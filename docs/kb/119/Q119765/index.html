@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119765: INFO: Example DDX Routine for Access Memo Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119765: INFO: Example DDX Routine for Access Memo Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119765/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119765/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119765/","publisher":null,"image":null,"headline":"Q119765: INFO: Example DDX Routine for Access Memo Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119765-info-example-ddx-routine-for-access-memo-fields">Q119765: INFO: Example DDX Routine for Access Memo Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119765
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbODBC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An application, using the ODBC database classes of the Microsoft Foundation
+Classes, can create a CRecordset derived class object which associates a CString
+or a CLongBinary member variable with a memo field within an Access database.
+
+Technote #45, "MFC/Database Support for Long Varchar/Varbinary," available in the
+MFC Tech Notes helpfile in your Visual C++ program group discusses this.
+
+There are some limitations to using a CString object associated with a memo
+field, as opposed to a CLongBinary, though:
+
+1. In the 16-bit versions of the Microsoft Foundation Classes, a CString object
+  can only hold up to 32K of data, while a CLongBinary object can hold much
+  more than 64K if needed.
+
+2. The initial size allocation of the CString buffer is determined by the size
+  of the memo field. Because the memo field isn't a fixed length, the length
+  may be zero for a new record or may be very small in some cases. This can
+  cause problems when using AddNew()/Edit() and Update(). As the user assigns
+  data to the CString, the size of the CString buffer may change and the buffer
+  for the CString will be re-allocated causing an assertion.
+
+3. CStrings terminate with NULL characters and it is possible that memo fields
+  may contain any binary data including NULLs.
+
+There is, however, no explicit DDX routine to read the data from a CLongBinary in
+a recordset and copy it to an edit control, or to read the contents of the edit
+control back into the CLongBinary. (Or a similar control, as 16-bit edit
+controls are limited to 64K.)
+
+This article gives one example of such a DDX routine which reads data from a
+CLongBinary into an edit control and back.
+
+NOTE: A bug exists when using the 16-bit Access ODBC driver which is included
+with Visual C++ 1.52 which does not allow mapping of CLongBinary objects to Memo
+fields. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q130438 BUG: Program Crashes When Memo Field Mapped to ClongBinary
+
+MORE INFORMATION
+================
+
+NOTE: The sample code below must explicitly call SetFieldNull() and
+SetFieldDirty() to set the field as NOT Null and as dirty when reading data from
+the control. Without both of these calls, the field will not be updated in the
+database.
+
+The DDX routine shown, will need to be explicitly called in your CFormView or
+CRecordView derived class's DoDataExchange() member function outside of the
+AFX_DATA_MAP section. For example the following code associates a CRecordset
+member variable CLongBinary m_lbMemo with an edit control with the ID
+IDC_EDIT_MEMO:
+
+     void CSampView::DoDataExchange(CDataExchange* pDX)
+     {
+        CRecordView::DoDataExchange(pDX);
+        //{{AFX_DATA_MAP(CSampView)
+        DDX_FieldText(pDX, IDC_EDIT_TITLE, m_pSet-&gt;m_strTitle, m_pSet);
+        DDX_FieldText(pDX, IDC_EDIT_AREA, m_pSet-&gt;m_strArea, m_pSet);
+        //}}AFX_DATA_MAP
+
+        DDX_FieldMemo( pDX, IDC_EDIT_MEMO, m_pSet-&gt;m_lbMemo, m_pSet );
+     }
+
+REFERENCES
+==========
+
+MFC Tech Notes (helpfile icon in your Visual C++ program group)
+
+- Tech note #26, "DDX and DDV Routines" has additional information on working
+  with DDX routines.
+
+- Tech note #45, "MFC/Database Support for Long Varchar/Varbinary" has
+  additional information on working with large data, CLongBinary, CByteArray,
+  and CString.
+
+Sample Code
+-----------
+
+     /* Compile options needed:  Default MFC application project options
+     */ 
+
+     void DDX_FieldMemo( CDataExchange * pDX,
+                         int nIDEdit, CLongBinary &amp; lbMemo,
+                         CRecordset * pRecordset )
+     {
+         ASSERT_VALID( pRecordset );
+
+         UINT nLen;
+         HGLOBAL hGlob;
+         LPSTR lpStr;
+         char * pStrWithNull;
+         HWND hWndCtrl = pDX-&gt;PrepareEditCtrl(nIDEdit);
+
+         if ( !hWndCtrl )
+         {
+             ASSERT(FALSE);
+             return;
+         }
+
+         if (pDX-&gt;m_bSaveAndValidate)
+         {
+             nLen = ::GetWindowTextLength(hWndCtrl);
+
+             if ( nLen )
+             {
+                 hGlob = GlobalAlloc( GPTR | GMEM_SHARE, (DWORD)nLen );
+                 if ( !hGlob )
+                 {
+                     AfxThrowMemoryException();
+                 }
+                 lpStr = (LPSTR)GlobalLock( hGlob );
+                 if ( !lpStr )
+                 {
+                     GlobalFree( hGlob );
+                     AfxThrowMemoryException();
+                 }
+                 // Allocate space for the '\0' string terminator
+                 // Throws exception if needed
+                 pStrWithNull = new char[nLen+1];
+
+                 ::GetWindowText(hWndCtrl, pStrWithNull, nLen+1);
+                 // Cut off the null
+                 #ifndef _WIN32
+                         _fmemcpy( lpStr, pStrWithNull, nLen );
+                 #else
+                     memcpy( lpStr, pStrWithNull, nLen );
+                 #endif
+
+                 delete [] pStrWithNull;
+
+                 GlobalUnlock( hGlob );    // Don't leave it locked.
+             }
+             else // Empty
+             {
+                 nLen = 0;
+                 hGlob = NULL;
+             }
+
+             // Free memory we are replacing
+             GlobalUnlock( lbMemo.m_hData );
+             GlobalFree( lbMemo.m_hData );
+
+             // Put in new data
+             lbMemo.m_dwDataLength = (DWORD) nLen;
+             lbMemo.m_hData = hGlob;
+
+             if (nLen == 0)
+             {
+                 if ( pRecordset-&gt;IsFieldNullable(&amp;lbMemo) )
+                     pRecordset-&gt;SetFieldNull( &amp;lbMemo, TRUE);
+             }
+             else
+             {
+                 // It is required that we explicitly set it Dirty
+                 // and NOT Null
+                 pRecordset-&gt;SetFieldNull( &amp;lbMemo, FALSE );
+                 pRecordset-&gt;SetFieldDirty( &amp;lbMemo, TRUE );
+             }
+         }
+         else    // Reading data from recordset into control
+         {
+             nLen = (UINT)lbMemo.m_dwDataLength;
+             if ( nLen )
+             {
+                 lpStr = (LPSTR)GlobalLock( lbMemo.m_hData );
+
+                 // Throws exception if needed
+                 pStrWithNull = new char[nLen+1];
+
+                 #ifndef _WIN32
+                         _fmemcpy( pStrWithNull, lpStr, nLen );
+                 #else
+                     memcpy( pStrWithNull, lpStr, nLen );
+                 #endif
+
+                 pStrWithNull[nLen] = 0;    // Set '\0' at end of string
+
+                 SetWindowText( hWndCtrl, pStrWithNull );
+
+                 delete [] pStrWithNull;
+                 GlobalUnlock( lbMemo.m_hData );
+             }
+             else
+             {
+                 SetWindowText( hWndCtrl, "" );
+             }
+         }
+     }
+
+Additional query words: SQL_LONGVARCHAR SQL_LONGVARBINARY MfcDatabase kbMFC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbVC600
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSODBC 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

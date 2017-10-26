@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160593/","publisher":null,"image":null,"headline":"Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160593-prb-setup-from-setup-wizard-may-install-ocx-in-wrong-folder">Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160593
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kbsetup kbvfp500 kbvfp600
+Last Modified: 09-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Setup program created by the Setup Wizard you may receive the
+following error message:
+
+  &lt;control.ocx&gt; was unable to Register itself in the System Registry
+
+CAUSE
+=====
+
+The .ocx files that the application needs were placed in a subdirectory of the
+distribution directory.
+
+WORKAROUND
+==========
+
+Make sure all .ocx files that your application needs are placed in the root
+distribution directory.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For more information on distributing applications and the Setup Wizard please
+see chapters 25 and 26 in the Developer's Guide.
+
+The following Steps to Reproduce Behavior assume that you have already created an
+application that uses .ocx controls.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the following Directory structure:
+
+   MyApp
+    |
+    |--Controls
+
+2. Place your .exe in the MyApp folder.
+
+3. Place the .ocxs your application uses in the Controls folder.
+
+4. Run the Setup Wizard.
+
+5. Use the MyApp folder for the Distribution Tree Directory in Step 1 of the
+  Setup Wizard.
+
+6. On Step 6 make sure the .ocxs show WinSysDir as the TargetDir and that the
+  OLE check box is selected.
+
+7. When the Setup Wizard finishes installing the application on a machine that
+  does not have Visual FoxPro or your .ocxs installed on it.
+
+The Setup program installs all the files and just before it finishes trying to
+update the system files you get the following error message:
+
+  &lt;control.ocx&gt; was unable to Register itself in the System Registry
+
+If you look at the Windows\System folder you will see a folder under it named
+Controls. Inside the Controls folder is the .ocx files. Setup is looking for the
+.ocx files in the System folder, and when it does not find them there, it can't
+register them.
+
+Additional query words: vfoxwin ocx activeX kbdsd
+
+======================================================================
+Keywords          : kbsetup kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : 5.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

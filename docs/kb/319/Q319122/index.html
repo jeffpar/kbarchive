@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q319122: Slow Network Performance, and Event ID 3013 Is Logged | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q319122: Slow Network Performance, and Event ID 3013 Is Logged" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/319/Q319122/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/319/Q319122/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/319/Q319122/","publisher":null,"image":null,"headline":"Q319122: Slow Network Performance, and Event ID 3013 Is Logged","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q319122-slow-network-performance-and-event-id-3013-is-logged">Q319122: Slow Network Performance, and Event ID 3013 Is Logged</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q319122
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience the following behavior on your Windows NT 4.0-based
+computer:
+
+- Network performance is slow. For example, a file copy or backup operation
+  takes a long time to complete.
+
+  -and-
+
+- The following event is recorded in the System log:
+
+  Event ID: 3013
+  Event Type: Error
+  Event Source: Rdr
+  Description: The redirector has timed out a request to &lt;ComputerName&gt;.
+
+CAUSE
+=====
+
+This behavior may occur if the duplex settings that are configured for the
+network adapter on the computer are incorrect.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure the correct duplex settings for the network
+adapter. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. Click the Adapters tab, and then click Properties.
+
+4. Configure the link speed and duplex setting that you want, and then click OK
+  two times.
+
+5. On the File menu, click Close to quit Control Panel.
+
+NOTE: Make sure that you have the latest driver that is available for your
+network adapter. Contact the hardware manufacturer for more information about
+how to obtain and install the latest drivers for the network adapter. For
+information about how to contact your hardware manufacturer, click the
+appropriate article number in the following list to view the article in the
+Microsoft Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+MORE INFORMATION
+================
+
+For additional information about how to troubleshoot other Event ID 3013-related
+issues, click the article numbers below to view the articles in the Microsoft
+Knowledge Base:
+
+  Q148426 Troubleshooting Event ID 3013
+
+  Q252332 Event ID 3013 When You Copy Files to a Server That Is Under Disk
+  Stress
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221613: FIX: Clicking Page Tab Executes Container Click Event | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221613: FIX: Clicking Page Tab Executes Container Click Event" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221613/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221613/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221613/","publisher":null,"image":null,"headline":"Q221613: FIX: Clicking Page Tab Executes Container Click Event","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221613-fix-clicking-page-tab-executes-container-click-event">Q221613: FIX: Clicking Page Tab Executes Container Click Event</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221613
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A form's Click event fires when both it and the Click event of individual pages
+of a pageframe contain code. The page's Click event should be the only event
+that fires.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program that contains the following code:
+
+  frmMyForm = CREATEOBJECT("mytestform")
+  frmMyForm.SHOW(1)
+
+  DEFINE CLASS mytestform AS FORM
+  	CAPTION= "Click on the Page Tabs"
+
+  	ADD OBJECT pageframe1 AS PAGEFRAME WITH ;
+  		PAGECOUNT = 3, ;
+  		page1.CAPTION = "Page1", ;
+  		Page2.CAPTION = "Page2"
+
+  	PROCEDURE pageframe1.page1.CLICK
+  		WAIT WINDOW "Page 1" 
+  	ENDPROC
+
+  	PROCEDURE pageframe1.Page2.CLICK
+  		WAIT WINDOW "Page 2" 
+  	ENDPROC
+
+  	PROCEDURE pageframe1.page3.CLICK
+  		WAIT WINDOW "Page 3" 
+  	ENDPROC
+
+  	PROCEDURE CLICK
+  		WAIT WINDOW "Form Click" NOWAIT
+  	ENDPROC
+
+  ENDDEFINE
+
+2. Run the program.
+
+3. Click from tab to tab.
+
+  In Visual FoxPro 6.0, occasionally the form's Click event fires even though
+  you click on the pages of the pageframe. In Visual FoxPro 5.0a, the form's
+  Click event seems to fire much more often.
+
+  In Visual FoxPro 5.0, if the pageframe resides in a container object, then you
+  see similar behavior: the Click event of the container object fires. This
+  particular behavior does not seem to occur as often when running a form with
+  that configuration in Visual FoxPro 6.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

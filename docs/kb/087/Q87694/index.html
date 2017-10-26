@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87694: PRB: Menu Appears, Then Application Exits to Operating System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87694: PRB: Menu Appears, Then Application Exits to Operating System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87694/","publisher":null,"image":null,"headline":"Q87694: PRB: Menu Appears, Then Application Exits to Operating System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87694-prb-menu-appears-then-application-exits-to-operating-system">Q87694: PRB: Menu Appears, Then Application Exits to Operating System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87694
+Product(s): Microsoft FoxPro
+Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft FoxPro menu program works in the development version of FoxPro.
+However, if you are using the distribution version of the files (a stand-alone
+executable), the menu appears, then the application exits to the main operating
+system environment, either MS-DOS, Windows or the Macintosh desktop.
+
+CAUSE
+=====
+
+When a menu is generated, running the .MPR file does not put you in an event
+loop or a wait state.
+
+RESOLUTION
+==========
+
+Incorporate a Foundation READ command into the application.
+
+NOTE: Although the Foundation READ can be used in Visual FoxPro, the preferred
+method is to incorporate a READ EVENT.
+
+MORE INFORMATION
+================
+
+Foundation READ
+---------------
+
+To incorporate a foundation READ command in an application, do the following:
+
+1. In FoxPro 2.x, in the Setup section of the menu or program, include the
+  following code:
+
+        PUBLIC m.xxx
+        m.xxx = .F.
+
+  In Visual FoxPro, in the Cleanup section of the menu or program, include the
+  following code prior to any other code:
+
+                READ EVENTS
+
+2. In FoxPro 2.x, in the Cleanup section of the menu or program, include the
+  following code prior to any other code:
+
+        READ VALID m.xxx
+
+3. In FoxPro 2.x, execute the following code when the user chooses the Quit menu
+  option:
+
+        m.xxx = .T.
+        CLEAR READ ALL
+
+  In Visual FoxPro, execute the following code when the user chooses the Quit
+  menu option:
+
+                CLEAR EVENTS
+
+For additional information, see the EX1.PJX example in the GOODIES\FNDATION
+subdirectory and the section on the READ command in the FoxPro version 2.0
+"Commands &amp; Functions" or the FoxPro version 2.5 "Language Reference"
+manual.
+
+REFERENCES
+==========
+
+FoxPro for Windows Distribution Kit "User's Guide," page 12. FoxPro for MS-DOS
+Distribution Kit "User's Guide," page 10.
+
+Additional query words: VFoxMac FoxDos FoxWin FoxMac VFoxWin 2.50 2.50a kbvfp300 kbvfp500 kbvfp600 2.50b 2.50c 2.60 dos prompt .exe dk
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300bMac kbVFP300 kbVFP500 kbVFP600
+Version           : 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

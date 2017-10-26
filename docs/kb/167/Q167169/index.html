@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167169/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167169/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167169/","publisher":null,"image":null,"headline":"Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167169-fix-coledatetimeformat-throws-a-coleexceptionscodee_fail">Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167169
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
+Operating System(s): 
+Keyword(s): kbcode kbole kbCOMt kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600fix kbGrpDSMFCATL kbNo
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.0a, 4.1, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use COleDateTime(DWORD, LCID) to extract the Date or Time
+value, an exception with scode = E_FAIL occurs.
+
+CAUSE
+=====
+
+A bug in the Operating System causes this problem.
+
+RESOLUTION
+==========
+
+This problem only occurs if the LCID argument in the Format function is set to
+anything other than English (United States), or if the Regional Settings in
+WinNT/Win95 Control Panel is set to something other than English (United
+States).
+
+You can workaround the problem by using the "%x" or "%X" formatting codes. The
+"%x" gives the Date representation and "%X" gives the Time representation. For
+example:
+
+     CString str = dt.Format("%x");
+
+  - or -
+
+     CString str = dt.Format("%X");
+
+However, they only give the Date format in the US style.
+
+To get the date in the user-default locale, use the code in the MORE INFORMATION
+section of this article. Wrap the call to Format as shown below:
+
+     ...
+     #include "locales.h"
+     ...
+
+        CString str;
+        {
+           CSetLocale l(LC_TIME);
+           str = dt.Format("%x");
+           str = dt.Format("%X");
+        }
+
+     ...
+
+If you want the date in a particular LCID, then use the following to construct
+the CSetLocale object:
+
+     LCID LCIDVALUE = &lt;set it to the required value&gt;;
+     CSetLocale l(LC_TIME, LCIDVALUE);
+
+This code makes sure that the runtime locale is set to the correct locale before
+the call to Format is made. The locale is reset to the previous locale once the
+CSetLocale object is destroyed.
+
+STATUS
+======
+
+This problem was corrected in Visual C++ version 6.0 for Windows.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+This sample code for class CSetLocale can be used to set the runtime locale to
+the user-default locale or to any other locale using LCID. The class resets the
+runtime locale back to the original locale when the object is destroyed. The
+first argument to the constructor takes the same values as the category argument
+to setlocale function. The second argument is any valid LCID.
+
+     // Locales.h: interface for the CSetLocale class.
+     // 
+     ////////////////////////////////////////////////////////////////////// 
+
+     #if  \ 
+     !defined(AFX_LOCALES_H__C6C7DD22_B292_11D0_89B4_00AA00B92B2E__INCLUDED_)
+     #define AFX_LOCALES_H__C6C7DD22_B292_11D0_89B4_00AA00B92B2E__INCLUDED_
+
+     #include &lt;locale.h&gt;
+
+     #if _MSC_VER &gt;= 1000
+     #pragma once
+     #endif // _MSC_VER &gt;= 1000
+
+     class CSetLocale
+     {
+     private:
+        int m_category;
+        CString m_lastLocale;
+     public:
+        CSetLocale(int category = LC_ALL, LCID lcid = LOCALE_USER_DEFAULT);
+        virtual ~CSetLocale();
+     };
+
+     #endif
+
+     // Locales.cpp: implementation of the CSetLocale class.
+     // 
+     ////////////////////////////////////////////////////////////////////// 
+
+     #include "stdafx.h"
+     #include "Locales.h"
+
+     #ifdef _DEBUG
+     #undef THIS_FILE
+     static char THIS_FILE[]=__FILE__;
+     #define new DEBUG_NEW
+     #endif
+
+     ////////////////////////////////////////////////////////////////////// 
+     // Construction/Destruction
+     ////////////////////////////////////////////////////////////////////// 
+
+     CSetLocale::CSetLocale(int category, LCID lcid) : m_category(category)
+     {
+        TCHAR* buf;
+
+        CString locale;
+
+        m_lastLocale = CString(_tsetlocale(m_category, NULL));
+
+        // get the language
+
+        int len = GetLocaleInfo(lcid, LOCALE_SENGLANGUAGE , NULL, 0);
+
+        buf = new TCHAR[len + 1];
+
+        if (!buf)
+           return;
+        buf[len] = NULL;
+        len = GetLocaleInfo(lcid, LOCALE_SENGLANGUAGE , buf, len);
+        locale = CString(buf) + _T("_");
+        delete []buf;
+
+        // Get the country.
+        len = GetLocaleInfo(lcid,  LOCALE_SENGCOUNTRY, NULL, 0);
+        buf = new TCHAR[len + 1];
+        if (!buf)
+           return;
+        buf[len] = NULL;
+        len = GetLocaleInfo(lcid,  LOCALE_SENGCOUNTRY, buf, len);
+        locale +=buf;
+        delete []buf;
+
+        _tsetlocale(m_category, locale);
+
+     }
+
+     CSetLocale::~CSetLocale()
+     {
+        _tsetlocale(m_category, m_lastLocale);
+     }
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the Control Panel, double-click the Regional Settings icon to open the
+  Regional Setting dialog box.
+
+2. In the Regional Settings dialog box, select a country other than English
+  (United States) in the Regional Settings tab.
+
+3. Create a default MFC AppWizard application.
+
+4. Add the following code to any function:
+
+        COleDateTime today = COleDateTime::GetCurrentTime();
+        CString m_Date = today.Format(VAR_DATEVALUEONLY);
+        TRACE("Date : %s\n", (LPCTSTR)m_Date);
+
+5. Set a breakpoint on the function above and you will see that this throws a
+  COleException error with an SCODE of E_FAIL($80004005).
+
+Additional query words: COleDateTime Format mfcole
+
+======================================================================
+Keywords          : kbcode kbole kbCOMt kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

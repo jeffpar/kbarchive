@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158621: STL Sample for vector::(size, capacity, and so on) Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158621: STL Sample for vector::(size, capacity, and so on) Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158621/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158621/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158621/","publisher":null,"image":null,"headline":"Q158621: STL Sample for vector::(size, capacity, and so on) Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158621-stl-sample-for-vectorsize-capacity-and-so-on-functions">Q158621: STL Sample for vector::(size, capacity, and so on) Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158621
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following sample code illustrates how to use the vector::reserve,
+vector::max_size, vector::resize, and vector::capacity STL functions in Visual
+C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;vector&gt;
+
+Prototypes
+----------
+
+     template&lt;class _TYPE, class _A&gt;
+     void vector::reserve(size_type _N);
+
+     template&lt;class _TYPE, class _A&gt;
+     size_type vector::max_size() const;
+
+     template&lt;class _TYPE, class _A&gt;
+     void vector::resize(size_type _N, _TYPE _X = _TYPE());
+
+     template&lt;class _TYPE, class _A&gt;
+     size_type vector::capacity() const;
+
+     template&lt;class _TYPE, class _A&gt;
+     size_type vector::size() const;
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The sample declares an empty vector of integers. It adds a single integer element
+to the vector, and then shows information about the vector's size, maximum size,
+and capacity. It reserves storage for 1000 elements and displays the same
+information about the vector. Finally, it resizes the vector to 2000 elements,
+and then displays the information.
+
+Sample Code
+-----------
+
+NOTE: The first line in the sample code section says:
+
+  // Compile options needed: /GX
+
+In VC++ .NET, /EHsc is set by default and is equivalent to /GX.
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  //    Remax.cpp: Illustrates vector::reserve, vector::max_size,
+  //               vector::resize, vector::resize, and vector::capacity.
+  // 
+  // Functions:
+  // 
+  //    vector::max_size - Returns maximum number of elements vector could
+  //                       hold.
+  // 
+  //    vector::capacity - Returns number of elements for which memory has
+  //                       been allocated.
+  // 
+  //    vector::size - Returns number of elements in the vector.
+  // 
+  //    vector::resize - Reallocates memory for vector, preserves its
+  //                     contents if new size is larger than existing size.
+  // 
+  //    vector::reserve - Allocates elements for vector to ensure a minimum
+  //                      size, preserving its contents if the new size is
+  //                      larger than existing size.
+  // 
+  //    vector::push_back - Appends (inserts) an element to the end of a
+  //                        vector, allocating memory for it if necessary.
+  // 
+  // Written by Tom Campbell
+  // of Microsoft Corporation
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  // The debugger can't handle symbols more than 255 characters long.
+  // STL often creates symbols longer than that.
+  // When symbols are longer than 255 characters, the warning is disabled.
+
+  #pragma warning(disable:4786)
+
+  // disable warning C4267: possible loss of data,
+  // okay to ignore
+
+  #pragma warning(disable: 4267)
+
+  #include &lt;iostream&gt;
+  #include &lt;vector&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef vector&lt;int, allocator&lt;int&gt; &gt; INTVECTOR;
+
+  void main()
+
+  {
+
+      // Dynamically allocated vector begins with 0 elements.
+      INTVECTOR theVector;
+
+      // Add one element to the end of the vector, an int with the value 42.
+      theVector.push_back(42) ;
+
+      // Show statistics about vector.
+      cout &lt;&lt; "theVector's size is: " &lt;&lt; theVector.size() &lt;&lt; endl;
+      cout &lt;&lt; "theVector's maximum size is: " &lt;&lt; theVector.max_size()
+           &lt;&lt; endl;
+      cout &lt;&lt; "theVector's capacity is: " &lt;&lt; theVector.capacity() &lt;&lt; endl;
+
+      // Ensure there's room for at least 1000 elements.
+      theVector.reserve(1000);
+      cout &lt;&lt; endl &lt;&lt; "After reserving storage for 1000 elements:" &lt;&lt; endl;
+      cout &lt;&lt; "theVector's size is: " &lt;&lt; theVector.size() &lt;&lt; endl;
+      cout &lt;&lt; "theVector's maximum size is: " &lt;&lt; theVector.max_size()
+           &lt;&lt; endl;
+      cout &lt;&lt; "theVector's capacity is: " &lt;&lt; theVector.capacity() &lt;&lt; endl;
+
+      // Ensure there's room for at least 2000 elements.
+      theVector.resize(2000);
+      cout &lt;&lt; endl &lt;&lt; "After resizing storage to 2000 elements:" &lt;&lt; endl;
+      cout &lt;&lt; "theVector's size is: " &lt;&lt; theVector.size() &lt;&lt; endl;
+      cout &lt;&lt; "theVector's maximum size is: " &lt;&lt; theVector.max_size()
+           &lt;&lt; endl;
+      cout &lt;&lt; "theVector's capacity is: " &lt;&lt; theVector.capacity() &lt;&lt; endl;
+
+  }
+
+Program Output
+--------------
+
+theVector's size is: 1
+theVector's maximum size is: 1073741823
+theVector's capacity is: 1
+
+After reserving storage for 1000 elements:
+theVector's size is: 1
+theVector's maximum size is: 1073741823
+theVector's capacity is: 1000
+
+After resizing storage to 2000 elements:
+theVector's size is: 2000
+theVector's maximum size is: 1073741823
+theVector's capacity is: 2000
+
+REFERENCES
+==========
+
+Visual C++ Books Online: Visual C++ Books; C/C++; Standard C++ Library Reference
+
+Additional query words: STL STLSample
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

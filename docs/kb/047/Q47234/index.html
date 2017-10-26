@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47234: BSEARCH Does Not Find the First Occurrence of Key in the Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47234: BSEARCH Does Not Find the First Occurrence of Key in the Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47234/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47234/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47234/","publisher":null,"image":null,"headline":"Q47234: BSEARCH Does Not Find the First Occurrence of Key in the Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47234-bsearch-does-not-find-the-first-occurrence-of-key-in-the-array">Q47234: BSEARCH Does Not Find the First Occurrence of Key in the Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47234
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | docerr S_QuickC | mspl13_c
+Last Modified: 31-AUG-1989
+
+The run-time library function bsearch() is documented on Page 147 in
+the "Microsoft C for the MS-DOS Operating System: Run-Time Library
+Reference" as returning a pointer to the first occurrence of key in
+the array pointed to by base. This may not be true when multiple
+elements of the array match the key. In the case where multiple
+elements match the key, bsearch returns a pointer to the first element
+that it finds, not necessarily the first element of the array that
+matches the key. This is the proper action for bsearch to take. The
+documentation should read as follows:
+
+   Return Value:
+
+   The bsearch function returns a pointer to the occurrence of key in
+   the array pointed to by base. If there is more than one occurrence
+   of key, the pointer returned by bsearch may point to any of them.
+   If key is not found, the function returns NULL.
+
+The behavior occurs because of the nature of the binary search
+algorithm. If you need to find the first matching element, use the
+lfind() (linear find) function instead of bsearch(). Note: Linear
+finds are much slower than binary searches.
+
+Below is a sample program that demonstrates this behavior:
+
+#include &lt;search.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdio.h&gt;
+
+int qcompare();  /* declare a function for qsort's compare   */
+int bcompare();  /* declare a function for bsearch's compare */
+
+main (argc, argv)
+int argc;
+char **argv;
+{
+    char **result;
+    char *key = "Brad";
+    int i;
+
+    /* Sort using Quicksort algorithm: */
+
+    qsort((char *) argv, argc, sizeof(char *), qcompare);
+    for (i = 0; i&lt;argc; ++i)                        /* Output sorted list */
+        printf("%s\n", argv[i]);
+
+    /* Find item that begins with "Brad" using a binary search algorithm: */
+
+    result = (char **) bsearch((char *) &amp;key, (char *) argv, argc,
+        sizeof(char *), bcompare);
+    if (result)
+        printf("%s found\n", *result);
+    else
+        printf("PATH not found !\n");
+}
+
+int qcompare (arg1, arg2)
+char **arg1, **arg2;
+{                      /* Compare all of both strings: */
+    return (strcmp(*arg1, *arg2));
+}
+
+int bcompare (arg1, arg2)
+char **arg1, **arg2;
+{                      /* Compare to length of key: */
+    return (strncmp(*arg1, *arg2, strlen(*arg1)));
+}
+
+The program sorts the command line args and then compares them with
+the key "Brad". If you enter the command line arguments, Brad1 Brad2
+Doug, you find that the bsearch routine returns Brad2. Note: The
+number is not checked because the bcompare function checks only the
+first four characters.
+
+Since BSEARCH cuts the array section being searched in half with each
+check, it finds Brad2 before Brad1. Instead of continuing to search
+for the first occurrence of Brad (as is documented), it immediately
+returns with a pointer to Brad2 (which is the proper action).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

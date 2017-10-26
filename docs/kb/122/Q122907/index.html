@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122907: Declaring Variables in FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122907: Declaring Variables in FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122907/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122907/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122907/","publisher":null,"image":null,"headline":"Q122907: Declaring Variables in FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122907-declaring-variables-in-foxpro">Q122907: Declaring Variables in FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122907
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Ths article describes how variables are defined (declared) in FoxPro. A variable
+in FoxPro can have one of three attributes: Public, Private, or Hidden.
+
+MORE INFORMATION
+================
+
+Public Variables
+----------------
+
+Public variables, also known as global variables, are variables that may be used
+and modified by any FoxPro program and any of its sub-programs for the duration
+of the FoxPro session or until the variable is cleared from memory.
+
+Public variables are declared in one of two ways:
+
+1. Create a variable in the Command window. Any variable created in the Command
+  window is automatically declared public. For example, from the Command
+  window, type X=1000. The variable X is now public to all applications.
+
+2. Within a program, declare a variable as public by using the PUBLIC command.
+  In all programs, you must declare the variable as public before assigning it
+  a value, as in this example code:
+
+     PUBLIC var1
+     var1=1000
+
+Private Variables
+-----------------
+
+Private variables are declared within programs or procedures and can be used and
+manipulated within that program or procedure and any of its sub-programs.
+
+Private variables are declared one of three ways:
+
+1. Create a variable inside a program or procedure without declaring is as
+  public. The variable then becomes private to the program or procedure in
+  which it is declared.
+
+  For example, in the program MYPRG.PRG, declare var2 as private with this
+  command:
+
+        var2=2500
+
+  Now var2 is declared as private to MYPRG.PRG. It is available to all
+  procedures called by MYPRG.PRG.
+
+2. Include the variable on a PARAMETERS statement. This automatically causes the
+  variable to become private to that program or procedure.
+
+3. Use the PRIVATE command on variables declared previously. This makes the
+  previously declared variable and its contents hidden. The new private
+  variable becomes private to the current program or procedure. The PRIVATE
+  command does not initially declare anything, a variable must already exist
+  before PRIVATE can be used on it successfully.
+
+Hidden Variables
+----------------
+
+Variables may not be declared hidden, but variables that were previously declared
+as Public or Private may become hidden. By hiding variables created in higher
+programs, you can enable variables of the same name to be manipulated in the
+current program without affecting the values of the hidden variables.
+
+Once the program or procedure containing the private variables completes
+execution, all memory variables and arrays that were subsequently hidden are
+again available.
+
+Variables are hidden in one of two ways:
+
+1. If a variable has already been declared, use the PRIVATE command followed by
+  the variable name to hide the existing variable and create a new PRIVATE
+  variable.
+
+2. Use a variable of the same name in a PARAMETERS statement. If a newly
+  declared variable shares the same name as a variable previously declared, the
+  previously declared variable becomes hidden and a new private variable is
+  created for the current program or procedure.
+
+To check the status of a variable, use the DISPLAY MEMORY command. DISPLAY MEMORY
+provides information about user-defined variables -- whether they are public,
+private, or hidden, and where (which program or procedure) they were declared.
+
+REFERENCES
+==========
+
+Language Reference, version 2.5 pages L3-751, L3-764
+
+Additional query words: VFoxWin FoxWin 2.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

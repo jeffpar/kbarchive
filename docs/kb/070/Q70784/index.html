@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/070/Q70784/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/070/Q70784/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/070/Q70784/","publisher":null,"image":null,"headline":"Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q70784-info-data-may-be-lost-during-fflush-if-write-is-unsuccessful">Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q70784
+Product(s): Microsoft C Compiler
+Version(s): MS- DOS:5.1,6.0,6.00a,6.00ax,7.0;WIN3X:1.0,1.5;WINNT:1.0,2.0,2.1,4.0,5.0;
+Operating System(s): 
+Keyword(s): kbCRT kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Because of the way the fflush() function clears the stream buffer, data may be
+lost after a failed write. This may become apparent when setting up a critical
+error handler for a file that uses stream I/O [for example, fopen(), fclose(),
+fwrite(), and so on]. To work around this situation, turn buffering off [with
+the setvbuf() function] or use low-level I/O routines instead [for example,
+open(), close(), write(), and so on].
+
+MORE INFORMATION
+================
+
+When using stream I/O, input and output is buffered. This can provide
+significant performance benefits because data is read and written in larger
+"chunks." The file buffer is 512 bytes by default but can be adjusted with the
+setvbuf() function.
+
+When fflush() is called, either explicitly or implicitly through fclose(), the
+data still in the stream is written to the file by an implicit call to write().
+Once that is done, the current location pointer is reset to the start of the
+stream buffer and the buffer's character count is set to zero. Unfortunately,
+this occurs whether or not the write() was successful.
+
+In an environment where a critical error handler has been installed, the
+application will usually try to rectify the error (that is, request that the
+user close the disk drive door, turn on the printer, insert a formatted disk,
+and so on), and then retry the operation. For example:
+
+  IOStatus = FAIL;
+  while(IOStatus == FAIL)
+  {
+     fflush(FilePtr);
+     IOStatus = CriticalErrorChk();
+  }
+
+However, the second time fflush() is called, the stream has already been cleared
+of data and the data is effectively "lost." Calling setvbuf() with the
+mode-parameter of _IONBF eliminates this problem by unbuffering the stream, but
+file I/O will be slower.
+
+Note that this fflush() behavior is compatible with the ANSI standard. As
+required by ANSI, fflush() does return EOF to indicate there was a problem with
+flushing the file.
+
+The Help for fflush() in Microsoft C/C++ versions 7.0 and Visual C++ gives the
+following information:
+
+  Note: If fflush returns EOF, data may have been lost because of a failed
+  write. When setting up a critical error handler, it is safest to turn
+  buffering off with the setvbuf function or to use low-level I/O routines such
+  as _open, _close, and _write instead of the stream I/O functions.
+
+Additional query words: _harderr _hardrtn _hardresume
+
+======================================================================
+Keywords          : kbCRT kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS- DOS:5.1,6.0,6.00a,6.00ax,7.0;WIN3X:1.0,1.5;WINNT:1.0,2.0,2.1,4.0,5.0;
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

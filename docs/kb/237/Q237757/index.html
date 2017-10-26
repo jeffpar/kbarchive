@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237757: INFO: Leaking Handles When Creating COM Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237757: INFO: Leaking Handles When Creating COM Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237757/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237757/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237757/","publisher":null,"image":null,"headline":"Q237757: INFO: Leaking Handles When Creating COM Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237757-info-leaking-handles-when-creating-com-objects">Q237757: INFO: Leaking Handles When Creating COM Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237757
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Visual Basic application creates COM objects that are instantiated in an
+out-of-process server, observe the number of handles shown in the performance
+tab of the NT task manager. You might see the number of handles increasing,
+without returning to its initial level when the objects are released.
+
+Although this behavior appears to be a leak, it is not. This behavior is by
+design.
+
+MORE INFORMATION
+================
+
+Visual Basic does not release the handles it creates immediately after it uses
+them; it caches them. When the number of handles reaches a given level, they are
+released and new allocations start again when they are needed. All handles are
+recovered when the client application is closed.
+
+This is the expected behavior. Visual Basic is just optimizing the
+creation/release of handles internally.
+
+You can observe this behavior by doing the following under Windows NT or Windows
+2000:
+
+1. Create a Visual Basic ActiveX EXE project. Class1 is created by default.
+
+2. On the Project menu, click Project1 Properties. Set the contents of the
+  Project Name field to MyServer.
+
+3. Add the following Code to the General Declarations section of Class1:
+
+  Public Function GetLong()
+      GetLong=1
+  End Function
+
+4. Save the project and compile it.
+
+5. Create a new Visual Basic Standard EXE project. Form1 is created by default.
+
+6. From the Project menu, select References and add a reference to the server
+  you just created.
+
+7. Place a CommandButton on Form1.
+
+8. Place a label beside the button and clear the Caption property.
+
+9. Add the following code to the General Declarations section of Form1:
+
+  Private Sub Command1_Click()
+     Dim i As Long
+     Dim MyObj As MyServer.Class1
+     Label1.Caption = "Creating..."
+     Form1.Refresh
+     For i = 1 To 200
+        Set MyObj = CreateObject("MyServer.Class1")
+        Set MyObj = Nothing
+     Next i
+     Label1.Caption = "Done"
+  End Sub
+
+10. Save the project and compile it.
+
+11. Close the Visual Basic Design Environment (IDE).
+
+12. Open the NT or Windows 2000 task manager and click on the Performance tab.
+
+13. Run the compiled client.
+
+14. Click the button and observe the number of handles. It will grow and will
+  not come back down after creating the objects.
+
+15. Wait until the label displays "Done," indicating all objects were created.
+
+16. Repeat this by clicking the button several times. You will see that after
+  the third or fourth time the number of handles drops to a lower value. (This
+  does not occur in Windows 2000.)
+
+17. You could also do the same with 1000 iterations, by changing the code in the
+  button's click event (for i=1 to 1000) and observe the number of handles
+  while these 1000 objects get created. You should see the number of handles
+  going up and down.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

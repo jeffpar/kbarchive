@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214731/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214731/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214731/","publisher":null,"image":null,"headline":"Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214731-prb-appwizard-bug-when-altering-activedoc-child-window-styles">Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214731
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveDocs kbActiveX kbCOMt kbMFC kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating an MDI Active Document Server using the AppWizard if any of the
+Child Frame window styles are adjusted (using the Advanced button in the wizard)
+a set of style flags will be generated for the CChildFrame class which includes
+the WS_VISIBLE flag. This causes problems when documents created by this
+application are loaded in an Active Document Container, such as Internet
+Explorer. If the ActiveDoc Server application is running when one of its
+documents is loaded into a container, such as Internet Explorer, the loaded
+document will also be visible in the server application. Otherwise, if the
+server application is not running and a document is loaded into a container, the
+server application will continue as a process after the document, or even the
+container, is unloaded.
+
+CAUSE
+=====
+
+The cause is the WS_VISIBLE flag addition to the Child Frame. Active Document
+Server child windows should not have this flag because their visibility is
+controlled by the manner in which they are instantiated.
+
+RESOLUTION
+==========
+
+Remove the WS_VISIBLE flag from the style group in
+CChildFrame::PreCreateWindow().
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information when it
+becomes available
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the AppWizard to create an MDI application.
+
+2. In step 3 of the AppWizard specify Both Container and Server and select
+  Active Document Server.
+
+3. In step 4 of the AppWizard click Advanced and then click the Window Styles
+  tab.
+
+4. Change any of the MDI child frame styles.
+
+5. Be sure to provide a file extension on the Document Template Strings tab.
+
+6. Complete the AppWizard and compile the application.
+
+7. Save a document from the application.
+
+Following are the two primary scenarios in which an error will occur once the
+application has been generated and a document created:
+
+- Run the application and keep it running. Start Internet Explorer 4 and load a
+  document saved by the application. The document will load in Internet
+  Explorer, but will also be displayed in the ActiveDoc Server application. In
+  addition, there is no way to activate the application while the document is
+  displayed in Internet Explorer unless Internet Explorer is minimized. Even
+  then, the situation is unstable because closing the document will cause an
+  error.
+
+- Do not run the application. Start Internet Explorer 4 and load a document
+  saved by the application. After closing the document, or even after closing
+  Internet Explorer, the ActiveDoc Server is still running as a process.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveDocs kbActiveX kbCOMt kbMFC kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

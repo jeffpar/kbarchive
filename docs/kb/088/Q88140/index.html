@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88140/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88140/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88140/","publisher":null,"image":null,"headline":"Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88140-docerr-guide-to-programming-dll-example-incorrect">Q88140: DOCERR: "Guide to Programming" DLL Example Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88140
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the "Guide to Programming" manual included with version 3.1 of the Microsoft
+Windows Software Development Kit (SDK), the dynamic-link library (DLL) example
+in Chapter 20 contains some errors. The text below lists these errors and the
+steps to correct them.
+
+MORE INFORMATION
+================
+
+Pages 475 and 480 discuss the Windows exit procedure (WEP) that must be present
+in every DLL. The code on page 475 implies that the source code for the WEP
+function belongs in the same file as the source code for the other functions in
+the DLL. This implication is incorrect. Because the segment containing the WEP
+must be marked PRELOAD FIXED and the other segments of the DLL should be marked
+MOVEABLE DISCARDABLE, the source code for the WEP should be in a separate file,
+for example, WEP.C.
+
+To correct this problem, name the code segment that contains the WEP by
+specifying the -NT option switch for the Microsoft C Compiler. The following
+compiles the code in the WEP.C file and places the resulting code into a code
+segment named WEP_SEG:
+
+     cl -c -AMw -Gsw -NT WEP_SEG -Os -W3 wep.c
+
+Place a SEGMENTS statement in the module definition (.DEF) file to specify the
+attributes for the code segment that contains the WEP. The .DEF file should also
+include a CODE statement that specifies the default attributes for the code
+segments not listed in a SEGMENTS statement. The SEGMENTS statement is as
+follows:
+
+     SEGMENTS
+        WEP_SEG PRELOAD FIXED
+
+On page 481, the .DEF file names the library using a combination of uppercase and
+lowercase letters. Naming a library with lowercase letters causes problems if
+the DLL is used with version 3.0 of the Microsoft Windows graphical environment.
+These problems have been corrected in Windows 3.1.
+
+
+Also on page 481, the HEAPSIZE statement in the .DEF file does not reserve any
+space for a heap for the DLL. This is incorrect. The DLL must have at least a
+minimal heap available for the functions in the C run-time library. Modify the
+HEAPSIZE statement to reserve 1024 bytes for the heap.
+
+On pages 482 and 483, the small memory model is incorrectly specified in the C
+compiler command line. On pages 483 and 484, medium memory model libraries are
+correctly specified to link the DLL.
+
+To correct this problem, modify the compiler command line to use the medium
+memory model libraries by replacing the -ASw option switch with the -AMw option
+switch.
+
+To reflect the changes listed in this article, replace the .DEF file on page 481
+with the following:
+
+    LIBRARY MINDLL
+     DESCRIPTION 'MinDLL -- Minimum Code Required for DLL.'
+     EXETYPE WINDOWS
+     STUB 'WINSTUB.EXE'
+
+     CODE MOVEABLE DISCARDABLE
+     DATA MOVEABLE SINGLE
+     SEGMENTS
+        WEP_SEG PRELOAD FIXED
+
+     HEAPSIZE 1024
+
+     EXPORTS
+        MinRoutine @1
+        WEP        @2 RESIDENTNAME
+
+To reflect the changes listed in this article, replace the makefile on pages 482
+and 483 with the following:
+
+     all: mindll.dll
+
+     mindll.obj: mindll.c
+        cl -c -AMw -Gsw -Os -W3 mindll.c
+
+     wep.obj: wep.c
+        cl -c -AMw -Gsw -NT WEP_SEG -Os -W3 wep.c
+
+     mindll.dll: mindll.obj wep.obj
+        link mindll.obj libentry.obj wep.obj, mindll.dll, \ 
+           mindll.map/map, mdllcew.lib libw.lib/noe/nod, mindll.def
+        mapsym mindll.map
+        implib mindll.lib mindll.def
+        rc mindll.dll
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

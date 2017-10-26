@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156114: XCLN: How to Print an Exchange Form with Graphics | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156114: XCLN: How to Print an Exchange Form with Graphics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156114/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156114/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156114/","publisher":null,"image":null,"headline":"Q156114: XCLN: How to Print an Exchange Form with Graphics","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156114-xcln-how-to-print-an-exchange-form-with-graphics">Q156114: XCLN: How to Print an Exchange Form with Graphics</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156114
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 14-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows 95/98 client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When you print a form in the Microsoft Exchange client, you only print a
+"textized" copy of the form; the printout does not have the graphical look of
+the form. This is by product design. However, a Microsoft Exchange Form can be
+extended very easily in Visual Basic 4.0 16-bit to include an option button or
+another control to allow you to print the graphical form.
+
+MORE INFORMATION
+================
+
+To extend a Microsoft Exchange Form so that you can print a graphical view of
+the form:
+
+1. Create a form in Electronic Form Designer (EFD) and install the form, then
+  open the VBP file in Visual Basic 4.0 16-bit. (For more information on
+  extending a form see Chapter 9 of the "Application Designer's Guide.")
+
+2. Add a button control to your form and add the following code to this button
+  control:
+
+        Me.PrintForm
+
+  This allows the user to click this button to print the graphical form.
+
+3. Now you need to re-compile the code in Visual Basic 4.0 16-bit, and then
+  install the form using the Forms Manager in the Microsoft Exchange client.
+
+When you run the form in the Microsoft Exchange client, you will be able to click
+this button to print a graphical view of this form.
+
+NOTE: When you print the form by clicking Print on button on the toolbar of the
+message, or by clicking Print on the File menu, you will still get a textized
+version of the form. Only the button you just created allows you to print the
+graphical form.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

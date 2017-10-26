@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152000/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152000/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152000/","publisher":null,"image":null,"headline":"Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152000-prb-appearance-property-uses-windows-40-ws_ex_clientedge">Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152000
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbCtrlCreate kbMFC KbUIDesign kbVC400 kbVC410 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MFC Controls support a set of standard properties. One of these properties is
+Appearance (DISPID_APPEARANCE). Appearance is implemented to give a control a
+3-D look. If the control is used on a version of Windows or Windows NT less than
+4.0, the Appearance property will not affect the appearance of the control at
+run time.
+
+CAUSE
+=====
+
+At run time, the Appearance property is implemented in an MFC control by setting
+an extended window style WS_EX_CLIENTEDGE. This window style is not supported on
+versions of Windows or Windows NT less than 4.0.
+
+RESOLUTION
+==========
+
+It is possible to supply your own implementation of the Appearance property
+although this technique will not work for subclassed Windows controls.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Using the Class Wizard, add the stock Appearance property but choose Get/Set
+methods rather that accepting the stock implementation. In the control, declare
+a member variable of type BOOL to represent the Appearance property. The stock
+Get/Set functions can be copied and changed slightly to manipulate this variable
+as well as handle the property binding requirements. In the Draw function, draw
+a 3-D border depending on the value of this variable.
+
+Sample Code
+-----------
+
+     // these get and set functions are the same as the original with a minor
+     // change (noted in the code)
+
+     short CTestAppearanceCtrl::GetAppearance()
+     {
+         return m_MyAppearance;
+     }
+
+     void CTestAppearanceCtrl::SetAppearance(short nNewValue)
+     {
+         if (nNewValue != 0 &amp;&amp; nNewValue != 1)
+             ThrowError(CTL_E_INVALIDPROPERTYVALUE,
+                        AFX_IDP_E_INVALIDPROPERTYVALUE);
+
+         // Is the property changing?
+         if (m_MyAppearance == nNewValue)
+             return;
+
+         if (!BoundPropertyRequestEdit(DISPID_APPEARANCE))
+             SetNotPermitted();
+
+     // changed from original
+         // do not use the WS_EX_CLIENTEDGE style
+         //ASSERT((m_hWnd == NULL) ||
+         //  ((GetExStyle() &amp; WS_EX_CLIENTEDGE) == (DWORD)(m_sAppearance ?
+         //      WS_EX_CLIENTEDGE : 0)));
+
+         m_MyAppearance = nNewValue;
+         SetModifiedFlag();
+
+         //ToggleAppearance(this);
+     // end of changes
+
+         OnAppearanceChanged();
+
+         BoundPropertyChanged(DISPID_APPEARANCE);
+     }
+
+     void CTestAppearanceCtrl::OnDraw(
+                 CDC* pdc, const CRect&amp; rcBounds, const CRect&amp; rcInvalid)
+     {
+         // TODO: Replace the following code with your own drawing code.
+         pdc-&gt;FillRect(rcBounds,
+              CBrush::FromHandle((HBRUSH)GetStockObject(WHITE_BRUSH)));
+         pdc-&gt;Ellipse(rcBounds);
+
+         // draw as 3D if m_appearance is set
+
+         if(m_appearance)
+         {
+             CRect rect(rcBounds);
+             pdc-&gt;DrawEdge(rect, EDGE_SUNKEN, BF_RECT | BF_ADJUST);
+         }
+     }
+
+Additional query words: 4.00 4.10 DISPID_APPEARANCE
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbCtrlCreate kbMFC KbUIDesign kbVC400 kbVC410 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

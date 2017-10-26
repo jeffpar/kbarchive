@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38818: Error L2029 Unresolved Externals | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38818: Error L2029 Unresolved Externals" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38818/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38818/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38818/","publisher":null,"image":null,"headline":"Q38818: Error L2029 Unresolved Externals","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38818-error-l2029-unresolved-externals">Q38818: Error L2029 Unresolved Externals</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38818
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | s_pascal h_fortran h_masm s_quickc s_link s_error | mspl13_c
+Last Modified: 11-JAN-1990
+
+The following error is from "Linker Error Messages" in the manual
+"CodeView and Utilities", Section C.2, Page 368, and in the "Microsoft
+QuickC Compiler Programmer's Guide," Section D.4, Page 373:
+
+L2029       unresolved externals
+
+            One or more symbols were declared to be external in one or
+            more modules, but they were not publicly defined in any of
+            the modules or libraries. A list of the unresolved
+            external references appears after the message, as shown in
+            the following example:
+
+            EXIT in file(s):
+             MAIN.OBJ (main.for)
+            OPEN in file(s):
+             MAIN.OBJ (main.for)
+
+            The name that comes before in file(s) is the unresolved
+            external symbol. On the next line is a list of object
+            modules that have made references to this symbol. This
+            message and the list are also written to the map file, if
+            one exists.
+
+Nonfatal errors indicate problems in the executable file. LINK
+produces the executable file. Nonfatal error messages have the
+following format:
+
+   location : error L2xxx: messagetext
+
+In these messages, location is the input file associated with the
+error, or LINK if there is no input file. If the input file is an OBJ
+or LIB file and has a module name, the module name is enclosed in
+parentheses.
+
+This linker error message means that a reference to a function or
+procedure was made, but the actual routine to that reference was never
+found (in either a library or in another object module). This message
+is not in regards to inclusion or exclusion of include files in a C
+program. (Include files in a C program usually do not contain
+functions, but rather function prototypes.) If this error message
+should occur, check the following:
+
+1. Make sure the command line used to invoke the linker or the
+   compiler/linker is correct.
+
+2. Check that you have specified all libraries that are needed by
+   the program (e.g. graphics.lib, a third-party library).
+
+3. Check the spelling of the procedure or function name in the
+   program and make sure it corresponds to how the function is
+   actually declared.
+
+4. Make a listing of the libraries that are being linked with to
+   see if the missing procedure or function is indeed in the library.
+   This process will require the use of LIB.EXE.
+
+5. If you are in QuickC and this message occurs, check to see if
+   the function that is being called is contained in the core library.
+   If it isn't, you need to set a Program List in the QuickC editor.
+
+6. Check the name that the linker can't resolve. If the name is
+   preceded by two underscores, then most likely it is either an
+   internal routine for startup or other internal functions or the
+   library was built with an incorrect version of LIB.
+
+Make sure a main() has been declared and/or a function in C wasn't
+preceded with an undesired underscore. This error can also occur if a
+C program is being mixed with an assembler routine and the assembler
+routine was not assembled with the /MX and /ML options to preserve the
+case of the functions, or the function in the assembler program didn't
+have an underscore in front of its name to make it compatible with the
+C naming convention.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

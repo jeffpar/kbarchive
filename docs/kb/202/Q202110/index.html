@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/202/Q202110/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/202/Q202110/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/202/Q202110/","publisher":null,"image":null,"headline":"Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q202110-prb-deleting-atl-dialog-causes-assert-in-atlwinh-line-2281">Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q202110
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbATLWC kbDlg kbMMC kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL
+Last Modified: 14-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Deleting the C++ object associated with an ATL dialog box by calling "delete
+this" in the WM_NCDESTROY handler or OnFinalMessage() results in an assert in
+Atlwin.h, line 2281.
+
+CAUSE
+=====
+
+Line 2281 of Atlwin.h is:
+
+  ATLASSERT(pThis-&gt;m_pCurrentMsg == &amp;msg);
+
+The object being referred to by "pThis" has already been deleted. Consider ATL's
+default dialog box procedure:
+
+  template &lt;class TBase&gt;
+  LRESULT CALLBACK CDialogImplBaseT&lt; TBase &gt;::DialogProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+  {
+  	CDialogImplBaseT&lt; TBase &gt;* pThis = (CDialogImplBaseT&lt; TBase &gt;*)hWnd;
+  	// set a ptr to this message and save the old value
+  	MSG msg = { pThis-&gt;m_hWnd, uMsg, wParam, lParam, 0, { 0, 0 } };
+  	const MSG* pOldMsg = pThis-&gt;m_pCurrentMsg;
+  	pThis-&gt;m_pCurrentMsg = &amp;msg;
+  	// pass to the message map to process
+  	LRESULT lRes;
+  	BOOL bRet = pThis-&gt;ProcessWindowMessage(pThis-&gt;m_hWnd, uMsg, wParam, lParam, lRes, 0);
+  	// restore saved value for the current message
+  	ATLASSERT(pThis-&gt;m_pCurrentMsg == &amp;msg);
+  	pThis-&gt;m_pCurrentMsg = pOldMsg;
+  	// set result if message was handled
+  	if(bRet)
+  	{
+  		switch (uMsg)
+  		{
+  		case WM_COMPAREITEM:
+  		case WM_VKEYTOITEM:
+  		case WM_CHARTOITEM:
+  		case WM_INITDIALOG:
+  		case WM_QUERYDRAGICON:
+  		case WM_CTLCOLORMSGBOX:
+  		case WM_CTLCOLOREDIT:
+  		case WM_CTLCOLORLISTBOX:
+  		case WM_CTLCOLORBTN:
+  		case WM_CTLCOLORDLG:
+  		case WM_CTLCOLORSCROLLBAR:
+  		case WM_CTLCOLORSTATIC:
+  			return lRes;
+  			break;
+  		}
+  		::SetWindowLong(pThis-&gt;m_hWnd, DWL_MSGRESULT, lRes);
+  		return TRUE;
+  	}
+  	if(uMsg == WM_NCDESTROY)
+  	{
+  		// clear out window handle
+  		HWND hWnd = pThis-&gt;m_hWnd;
+  		pThis-&gt;m_hWnd = NULL;
+  		// clean up after dialog is destroyed
+  		pThis-&gt;OnFinalMessage(hWnd);
+  	}
+  	return FALSE;
+  }
+
+Typically, you will be calling DestroyWindow()/EndDialog() in a WM_CLOSE or a
+WM_COMMAND handler. Here's the sequence of events when you close a dialog box:
+
+1. DialogProc() is called with WM_CLOSE.
+
+2. ProcessWindowMessage() calls your WM_CLOSE handler.
+
+3. In your WM_CLOSE handler, you call DestroyWindow().
+
+4. This ends up calling DialogProc again with WM_NCDESTROY.
+
+5. ProcessWindowMessage() calls your WM_NCDESTROY handler.
+
+6. You call "delete this" in your WM_NCDESTROY handler.
+
+RESULTS: When you come back from ProcessWindowMessage(), because the C++ class
+has been deleted, pThis no longer points to a valid object, and therefore the
+assert is returned.
+
+The following is another possible scenario (note that the first four steps are
+the same as above):
+
+1. DialogProc has a case for WM_NCDESTROY and calls OnFinalMessage().
+
+2. You call "delete this" in OnFinalMessage().
+
+3. The stack unwinds to the original DialogProc call (with a WM_CLOSE).
+
+RESULTS: Same problem. After the call to ProcessWindowMessage, try to use pThis,
+but it no longer points to valid memory.
+
+RESOLUTION
+==========
+
+Notify DialogProc when the dialog box class has been deleted; this can be
+accomplished by adding a member variable called m_bAutoDelete to the dialog box
+class. Setting this to TRUE causes the dialog box class to delete itself when
+the window is destroyed. Use the following code:
+
+  // Constant value used to determine if we should delete ourselves later.
+  #define DEFERDELETE 2
+  class CMyDlg : public CAxDialogImpl&lt;CMyDlg&gt;
+  {
+  public:
+     // Variable that tells us if we want to auto-delete ourselves.
+     BYTE m_bAutoDelete;
+     // Set m_bAutoDelete to TRUE to automatically delete ourselves.
+     CMyDlg() : m_bAutoDelete (TRUE)
+     {
+     }
+     // Override GetDialogProc to provide our own DialogProc.
+     WNDPROC GetDialogProc()
+     {
+        return MyDialogProc;
+     }
+     // Our own dialog procedure that is mostly copied from
+     // CDialogImplBaseT&lt;&gt;::DialogProc() in Atlwin.h.
+     static LRESULT CALLBACK MyDialogProc(HWND hWnd, UINT uMsg,
+                                          WPARAM wParam, LPARAM lParam)
+     {
+        CMyDlg* pThis = (CMyDlg*)hWnd;
+        // Set a ptr to this message and save the old value.
+        MSG msg = { pThis-&gt;m_hWnd, uMsg, wParam, lParam, 0, { 0, 0 } };
+        const MSG* pOldMsg = pThis-&gt;m_pCurrentMsg;
+        pThis-&gt;m_pCurrentMsg = &amp;msg;
+        // Pass to the message map to process.
+        LRESULT lRes;
+        BOOL bRet = pThis-&gt;ProcessWindowMessage(pThis-&gt;m_hWnd, uMsg, wParam,
+                                                lParam, lRes, 0);
+        // If window has been destroyed and this is the last message,
+        // then delete ourselves.
+        if (DEFERDELETE == pThis-&gt;m_bAutoDelete &amp;&amp; pOldMsg == NULL)
+        {
+           delete pThis;
+           return FALSE;
+        }
+        // Restore saved value for the current message.
+        ATLASSERT(pThis-&gt;m_pCurrentMsg == &amp;msg);
+        pThis-&gt;m_pCurrentMsg = pOldMsg;
+        // Set result if message was handled.
+        if(bRet)
+        {
+           switch (uMsg)
+           {
+              case WM_COMPAREITEM:
+              case WM_VKEYTOITEM:
+              case WM_CHARTOITEM:
+              case WM_INITDIALOG:
+              case WM_QUERYDRAGICON:
+              case WM_CTLCOLORMSGBOX:
+              case WM_CTLCOLOREDIT:
+              case WM_CTLCOLORLISTBOX:
+              case WM_CTLCOLORBTN:
+              case WM_CTLCOLORDLG:
+              case WM_CTLCOLORSCROLLBAR:
+              case WM_CTLCOLORSTATIC:
+                 return lRes;
+                 break;
+           }
+           ::SetWindowLong(pThis-&gt;m_hWnd, DWL_MSGRESULT, lRes);
+           return TRUE;
+        }
+        if(uMsg == WM_NCDESTROY)
+        {
+           // Clear out window handle.
+           HWND hWnd = pThis-&gt;m_hWnd;
+           pThis-&gt;m_hWnd = NULL;
+           // Clean up after dialog box is destroyed.
+           pThis-&gt;OnFinalMessage(hWnd);
+           // If we want to automatically delete ourselves...
+           if (pThis-&gt;m_bAutoDelete)
+           {
+              // If no outstanding messages to process in call stack,
+              // m_pCurrentMsg will be NULL so we can delete ourselves.
+              if (pThis-&gt;m_pCurrentMsg == NULL)
+                 delete pThis;
+              // Else set a flag so we can delete ourselves later.
+              else
+                 pThis-&gt;m_bAutoDelete = DEFERDELETE;
+           }
+        }
+        return FALSE;
+     }
+     ...
+  };
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In CDialogImplBaseT&lt;&gt;::DialogProc(), m_pCurrentMsg is set so you can call
+GetCurrentMessage() to retrieve the current message from any method in your
+dialog class. This problem and solution applies to any CWindowImplRoot-derived
+class.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation Samson Tanrena, All Rights Reserved. Contributions by
+1999, Microsoft Corporation.
+
+
+Additional query words: mmc snapin snap-in OnNcDestroy
+
+======================================================================
+Keywords          : kbATLWC kbDlg kbMMC kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

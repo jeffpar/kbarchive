@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192745/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192745/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192745/","publisher":null,"image":null,"headline":"Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192745-howto-use-createobject-with-visual-c-com-objects">Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192745
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use CreateObject with COM/ActiveX components
+created in Visual C++. The CreateObject programming syntax used to create an
+instance of a component created in Visual Basic may not work with a VC++
+component, even though the object can be created using the New method. For
+example, assume you have an component named "neuLib" referenced in a Visual
+Basic project. The component has one createable object (Interface) named
+"myclass." The following code will work if the ActiveX component was created
+using either Visual Basic or Visual C++:
+
+     Dim objNeu as neuLib.myclass
+     Set objNeu =  New neuLib.myclass
+
+However, the code below will work only for a component created using Visual
+Basic:
+
+     Dim objNeu as neuLib.myclass
+     Set objNeu = CreateObject("neuLib.myclass")
+
+If this is a VC++-created component, you will receive the error message:
+
+  "Error 429. ActiveX component can't create object."
+
+The reason CreateObject works with a Visual Basic component and not with a Visual
+C++ component can be explained and resolved by examining the different way in
+which Visual Basic and Visual C++ create program IDs (ProgID.) When you use
+CreateObject, the argument you provide is a ProgID. Visual Basic and Visual C++
+assign a name to the ProgID differently. Visual Basic uses the original name,
+Visual C++ does not. In a Visual Basic component, the ProgID for this example is
+"neuLib.myclass." In a Visual C++ component, the ProgID would be
+"myclass.myclass.1," which requires the (correct) syntax:
+
+     Dim objNeu as neuLib.myclass
+     Set objNeu = CreateObject("myclass.myclass.1")
+
+MORE INFORMATION
+================
+
+There are two ways to determine the ProgID that you need to specify when using
+CreateObject for the VC object.
+
+
+1. Use the OLE/Com Viewer. If you have this utility installed, start it and open
+  the Visual C++ component. From the View menu, select Expert Mode. Select "All
+  Objects" from the list in the left portion of the window. Scroll until you
+  find the name of the class, then and click it. The detail window on the right
+  should display the information about the class; the ProgID will be listed
+  with this information, and will look like:
+
+        ProgID = myclass.myclass.1
+
+2. Use the Registry Editor (Regedit.exe). Click on the Start button and select
+  Run. Type "Regedit" and click OK. From the Edit menu in Regedit, choose Find.
+  Enter the name of the class, and make sure that "Data" is the only check box
+  selected. Click OK.
+
+  It is difficult to provide exact instructions for searching the Registry. The
+  entry you are looking for will probably be the second one that is found
+  (press the F3 key to resume searching.) When the data for the key is found,
+  look in the window on the left half of the Regedit screen. If the tree node
+  that is open says "ProgID," and the data in the window on the right contains
+  the class name, then this is the value you want to use as the argument for
+  CreateObject.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp500 kbVBp600 kbCtrl kbActiveX kbCOMt
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

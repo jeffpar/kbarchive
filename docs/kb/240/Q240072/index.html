@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240072: Cannot Open Setup.log File Installing Terminal Server SP4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240072: Cannot Open Setup.log File Installing Terminal Server SP4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240072/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240072/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240072/","publisher":null,"image":null,"headline":"Q240072: Cannot Open Setup.log File Installing Terminal Server SP4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240072-cannot-open-setuplog-file-installing-terminal-server-sp4">Q240072: Cannot Open Setup.log File Installing Terminal Server SP4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240072
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP4
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP4, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Service Pack 4 (SP4) for Windows NT Server 4.0,
+Terminal Server Edition, you may receive the following error message:
+
+  Service Pack Setup Error:
+  Service Pack Setup cannot open or modify your SETUP.LOG file.
+
+CAUSE
+=====
+
+This error message can occur if Update.exe in SP4 Setup cannot gain access to
+the %SystemRoot%\Repair\Setup.log file. The default location for this file is
+the C:\WTSRV\Repair folder.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Verify the existence of the Setup.log file in the %SystemRoot%\Repair folder.
+  If this file does not exist, you must perform an Upgrade installation of
+  Windows NT Server 4.0, Terminal Server Edition, to re-create the Setup.log
+  file.
+
+2. Verify that the account that you are using to install SP4 has access to the
+  Setup.log file. To do this, try to open the file with Notepad.exe. If you are
+  unable to open the Setup.log file, use Windows NT Explorer to change the
+  file-level permissions on the file. Grant the user account you are using
+  appropriate permissions to open and modify the file.
+
+3. Verify that the following lines are present in the Setup.log file:
+
+  [Files.WinNt]
+  \%SystemRoot%\system32\hal.dll = "halapic.dll","%11xxx%"
+
+  For example: \WTSRV\system32\hal.dll = "halapic.dll","14fbb")
+
+If these lines are not present or the path is incorrect, add the appropriate
+lines and make any necessary changes to the path to the Hal.dll file.
+
+Note that %SystemRoot% and %11xxx% are variables, and the values vary from one
+computer to another.
+
+
+MORE INFORMATION
+================
+
+For additional informationrelated topics, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+  Q215465 Installing Service Packs from Terminal Server Client Sessions
+
+Additional query words: WTS
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400sp4 kbNTTermServSearch
+Version           : :4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

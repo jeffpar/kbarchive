@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247375/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247375/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247375/","publisher":null,"image":null,"headline":"Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247375-inetinfoexe-ends-with-mts-event-4097-using-ms-odbc-for-db2">Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247375
+Product(s): Microsoft SNA Server
+Version(s): 4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When stress-testing an Active Server Page configured to retrieve DB2 table data
+using the Microsoft ODBC Driver for DB2 (included in SNA Server 4.0 Service Pack
+3), the IIS process (Inetinfo.exe) may end unexpectedly and log the following
+event:
+
+  Event ID: 4097
+  Source: Transaction Server
+  Description: The run-time environment has detected an inconsistency in its
+  internal state and has terminated the process. Please contact Microsoft
+  Product Support Services to report this error. Error 80040154 from
+  CoCreateInstance of CLSID_MultiThreadedAptHelper (Microsoft Transaction
+  Server Internals Information: File: d:\viper\src\runtime\mtxex\vipthrd.cpp,
+  Line: 382) Data: 80040154
+
+Although the provider has been registered properly, the 80040154 error indicates
+REGDB_E_CLASSNOTREG, or "class not registered."
+
+WORKAROUND
+==========
+
+To prevent this failure, use the native Microsoft OLE DB Provider for DB2
+(DB2OLEDB) in the Active Server Page, instead of the Microsoft ODBC Driver for
+DB2. Using the native DB2OLEDB interface is also much faster, because the
+Microsoft ODBC Driver for DB2 automatically communicates through the DB2OLEDB
+Provider.
+
+The following is an example of some VBScript commands that use the DB2OLEDB
+Provider:
+
+  sub CnnSetup(cnn)
+  cnn.ConnectionTimeout = 60
+  cnn.CommandTimeout = 60
+  cnn.Open "Provider=DB2OLEDB;Password=TESTPW;User ID=TESTUSR;Initial
+  Catalog=OLYMPIA;APPC Remote LU Alias=OLYMPIA;APPC Local LU Alias=LOCAL;APPC
+  Mode Name=QPCSUPP;Network Transport Library=SNA;Host CCSID=37;PC Code
+  Page=1252;Package Collection=WNW3XX;Default Schema=WNW3XX;Default Isolation
+  Level=NC;Auto Commit Mode=False;Process Binary as Character=False;Read
+  Only=False"
+
+  CnnSetup(ENotesData)
+
+  Dim RS
+  Dim strSQL
+  Dim dbErrCount
+  Dim strDest
+  Dim numEditBtn
+  Dim numDeleteBtn
+
+  strSQL = "SELECT std_comment_seq_no,std_comment_dest,std_comment,
+  SubStr(std_comment,1,250) FROM wnw3xx.erovstdc ORDER BY std_comment_dest ASC,
+  4 ASC"
+  Set RS = ENotesData.Execute(strSQL)
+
+WARNING: If the DB2OLEDB provider is using SNA connectivity from an SNA Server
+client through an SNA Server located on another computer over TCP/IP, large
+numbers of concurrent client requests will cause a large traffic load between
+the client and server computer. This is fine, although the SNA Server or client
+may encounter the "MaxPendingWrites" limit while writing data on the LAN
+session, causing the SNA Server or client to drop the LAN session, indicated
+when SNA Server logs event 706. To prevent this, override the MaxPendingWrites
+registry key, and increase it to 300 or more. For additional information, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q142037 SNA Server Fails to Release Memory in SNA TCP/IP Interface DLL
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server 4.0 Service
+Pack 3.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+
+1. Configure an Active Server Page, which retrieves DB2 data using the Microsoft
+  ODBC Driver for DB2.
+
+2. Using an Internet Server stress tool, such as the Microsoft Web Application
+  Stress Tool (Homer), generate a large number of client browser requests
+  against the Active Server Page.
+
+Result: Within a minute, the INETINFO process ends abnormally and the event 4097
+is logged.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP2 kbSNAServ400SP3
+Version           : :4.0 SP2,4.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

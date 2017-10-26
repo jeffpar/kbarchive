@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162489/","publisher":null,"image":null,"headline":"Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162489-server-fails-w-sna-server-event-624-and-snabase-event-686">Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162489
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server may fail suddenly with the following errors logged to the Windows NT
+Application Event log:
+
+  Event: 624
+  Source: SNA Server
+  Description: Creating dump file C:\SNA\traces\snadump.log for
+  Snaservr.exe
+
+NOTE: The failure may also occur in Snabase.exe.
+
+  Event: 686
+  Source: SnaBase
+  Description: SNA Server Internal buffer pool error.
+  Reason = Invalid Owner Id
+  Module = C:\SNA\system\SNABASE.EXE
+  Process = 241
+  Pool = TRUSTED ELTS
+  Details = Current Owner Id B4H, Correct ID 15EA15EAH
+
+  Event: 4097
+  Source: DrWatson
+
+In addition, the &lt;Ntroot&gt;\Drwtsn32.log indicates the entry summarized
+below:
+
+  Application exception occurred:
+        App: snaservr.DBG (pid=&lt;process ID&gt;)
+        When: &lt;date and time&gt;
+        Exception number: c0000005 (access violation)
+
+ State Dump for Thread Id &lt;thread ID&gt;
+
+  function: CopyToSnapsBuffers
+    [...]
+          00b639ca 8bca             mov     ecx,edx
+          00b639cc c1e902           shr     ecx,0x2
+  FAULT -&gt;00b639cf f3a5            rep  movsd ds:4a9c1ffe=????????
+
+NOTE: The failure has been observed in other routines as well, since buffer pool
+corruption can cause a number of random access violations in any SNA component
+(for example, Snaservr.exe, Snabase.exe, Snalink.exe, Snaadmin.exe, and so on).
+
+CAUSE
+=====
+
+A 3270 emulator sends an invalid 3270 Emulator Interface (EIS) message to SNA
+Server, which SNA Server is not properly rejecting. This problem can occur if a
+3270 emulator sends an EIS message where
+
+- the startd and endd were both larger than the actual message size
+
+  and
+
+- endd was set larger than startd.
+
+This problem can occur over any SNA Server client-server interface (that is,
+named pipes, TCP/IP sockets, Netware IPX/SPX, or Banyan IP).
+
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 Service Pack 1 is available for SNA Server. This
+update enhances verification checking on incoming messages from 3270 client
+emulators, to protect the server from encountering an access violation. With
+this update applied, if such an invalid message is received from a 3270 client,
+the following process occurs:
+
+- invalid messages detected
+
+- an Event 631 is logged in the Windows NT application event log and the
+  address of the offending client is indicated
+
+- the message is dropped (that is, is not processed), possibly causing the
+  client to hang, but preventing a server-side access violation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.0, 2.1,
+2.11, and 2.11 Service Pack 1. This problem does not occur with SNA Server 3.0.
+This problem was corrected in the latest SNA Server version 2.11 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: Dr. Watson prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

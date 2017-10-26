@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193414/","publisher":null,"image":null,"headline":"Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193414-bug-setall-not-refreshing-text-boxes-in-grid-when-sparse-f">Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193414
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a grid that contains a column or columns, with their Sparse property set
+to .F., and then using the SetAll() method to set a text box property like
+BackColor, causes the updated property not to appear in the grid text boxes
+until the grid is refreshed or gets focus.
+
+RESOLUTION
+==========
+
+As a workaround, use one of the following three methods to force the grid to be
+repainted:
+
+- Call the form's Refresh() method.
+
+  -or-
+
+- Call the grid's SetFocus() method.
+
+  -or-
+
+- Set the value of the grid's scroll bars to itself.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The SetAll() method of an object sets a specific property of all the objects it
+contains. You can also specify a specific base class to be affected. The
+controls can also be contained within other objects within the object whose
+SetAll is called. In this case, we are affecting text boxes within columns in a
+grid control by the form's SetAll() method.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+        CREATE TABLE testtab (f1 c(5), f2 c(5))
+        FOR lni = 1 TO 5
+           INSERT INTO testtab (f1, f2)  ;
+              VALUES (PADL(ALLTR(STR(lni)),5, '0'), ;
+              SUBSTR(SYS(3), 4, 5))
+        ENDFOR
+        GO TOP
+
+        PUBLIC oForm
+
+        oForm = CREATEOBJECT('form')
+        oForm.ADDOBJECT('grid1','grid')
+        oForm.grid1.COLUMNCOUNT = 2
+        oForm.grid1.VISIBLE = .T.
+
+        oForm.ADDOBJECT('text1','textbox')
+        oForm.text1.TOP = 225
+        oForm.text1.VISIBLE = .T.
+        oForm.text1.TABINDEX = 1
+        oForm.ADDOBJECT('text2','textbox')
+        oForm.text2.TOP = 225
+        oForm.text2.LEFT = 150
+        oForm.text2.VISIBLE = .T.
+        oForm.text2.TABINDEX = 2
+        oForm.SHOW
+
+        oForm.SETALL("sparse",.F.)
+        WAIT WINDOW "Textboxes in Grid will not be refreshed" TIMEOUT 1
+        oForm.SETALL("backcolor",RGB(255,0,0),"textbox")
+
+The grid text boxes do not display the correct red BackColor, while the text
+boxes on the form do.
+
+If you add any one of the following lines of code to the end of the preceding
+program, it causes the correct BackColor to display.
+
+     oForm.Refresh()
+
+     oForm.grid1.SetFocus()
+
+     oForm.grid1.ScrollBars = oForm.grid1.ScrollBars
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp300bbug kbVFp500abug kbVFp600bug kbOOP kbContainer kbCtrl
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

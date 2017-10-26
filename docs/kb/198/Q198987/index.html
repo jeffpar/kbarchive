@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198987/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198987/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198987/","publisher":null,"image":null,"headline":"Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198987-smsinst-sms-installer-dialog-box-does-not-display-all-text">Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198987
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:2.0; winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsmsInst
+Last Modified: 03-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 2.0 
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When inserting the script item "Radio Button" dialog box in the Systems
+Management Server Installer Script Editor, it employs an existing dialog box
+template. The Radio Button dialog box settings window will allow you to insert
+more text than the default templates can display. If you need a custom dialog
+box to display a long string of text you can create a new Custom Dialog Box or
+you can copy and modify the existing templates.
+
+MORE INFORMATION
+================
+
+Create your own custom dialog boxes and copy and modify any of the nineteen
+Installer dialog box templates. The Installation Expert uses eleven of these
+templates to create the installation wizards. The others are used by various
+script items such as the Radio Button Dialog Box. You can find Installer
+templates in the \dialogs\template directory of your main Installer directory.
+
+If you copy the templates to another directory, you must change the Dialogs
+Directory on the Installation Properties Settings page. This tells the compiler
+where to get the templates, if you edit the templates in the \dialogs\template
+directory, then back up the files to another directory for recovery. If you edit
+the templates in the \dialogs\template directory, then back up the files to
+another directory for recovery.
+
+NOTE: The list of templates found when you select Dialog Templates from the Edit
+menu is a static list that does not represent the current contents of the
+\dialogs\template directory or the Dialogs Directory on the Installation
+Properties Settings page.
+
+To create or edit a custom dialog box in the Installer Script Editor select the
+Custom Dialog script item to launch the Custom Dialog Editor. Within the editor
+you can open an existing dialog template as a *.dlg file or create a new one and
+save it as a *.dlg file to use again.
+
+To edit a Custom Dialog template follow the preceding procedures or within the
+Installer Script Editor and select Dialog Templates from the Edit Menu.
+
+REFERENCES
+==========
+
+For more information on Dialog Box controls see Custom Dialog Editor in the
+Systems Management Server Installer on-line Help.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms200 kbsmsInst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : WINDOWS:2.0; winnt:2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

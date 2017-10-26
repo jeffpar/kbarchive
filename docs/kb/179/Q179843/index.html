@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179843: OFF97: Compile Error Using the Visible Property of UserForms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179843: OFF97: Compile Error Using the Visible Property of UserForms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179843/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179843/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179843/","publisher":null,"image":null,"headline":"Q179843: OFF97: Compile Error Using the Visible Property of UserForms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179843-off97-compile-error-using-the-visible-property-of-userforms">Q179843: OFF97: Compile Error Using the Visible Property of UserForms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179843
+Product(s): Word 97 for Windows
+Version(s): 97
+Operating System(s): 
+Keyword(s): kbProgramming kbwordvba word97
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Excel 97 for Windows 
+- Microsoft PowerPoint 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to set or change the Visible property of a UserForm, you
+receive the following error message:
+
+  Compile error:
+  Wrong number of arguments or invalid property assignment.
+
+CAUSE
+=====
+
+This error occurs when you attempt to modify a read-only property. For example,
+the following sample Microsoft Visual Basic for Applications code generates the
+error:
+
+     Sub HideForm()
+        UserForm1.Visible = False ' Generates a Compile error.
+     End Sub
+   
+     Sub ShowForm()
+        UserForm1.Visible = True  ' Generates a Compile error.
+     End Sub
+
+RESOLUTION
+==========
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The Visible property is designed to let you check the Visible state of a specific
+form, but not modify it. To modify the Visible state of a form, use the Hide and
+Show methods to change the form's Visible property.
+
+NOTE: The following code samples assume your form is named UserForm1. Replace
+UserForm1 with the name of your form or a reference to your form.
+
+How to Use the Show and Hide Methods
+------------------------------------
+
+The following sample Visual Basic code hides a UserForm:
+
+     Sub HideForm()
+        UserForm1.Hide
+     End Sub
+
+The following sample Visual Basic code shows a UserForm:
+
+     Sub ShowForm()
+        UserForm1.Show
+     End Sub
+
+How to Use the Visible Property
+-------------------------------
+
+The following sample Visual Basic code checks the Visible property of a form:
+
+     Sub CheckFormState()
+
+        ' Determine whether the form is visible.
+        If UserForm1.Visible = True Then
+           ' Do something when the form is visible.
+        End If
+
+        ' Determine whether the form is hidden.
+        If UserForm1.Visible = False Then
+            ' Do something when the form is hidden.
+        End If
+
+     End Sub
+
+STATUS
+======
+
+This behavior is by design. Microsoft welcomes suggestions or comments about
+changes in functionality and product design. You are invited to submit
+suggestions by filling out the form at the following Microsoft Web site:
+
+  http://www.microsoft.com/regwiz/regwiz.asp
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: wordcon dialog box dialogs hidden invisible custom
+
+======================================================================
+Keywords          : kbProgramming kbwordvba word97 
+Technology        : kbWordSearch kbExcelSearch kbPowerPtSearch kbWord97 kbWord97Search kbPowerPt97 kbZNotKeyword2 kbExcel97Search kbPowerPt97Search kbZNotKeyword3 kbExcelWinSearch
+Version           : :97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

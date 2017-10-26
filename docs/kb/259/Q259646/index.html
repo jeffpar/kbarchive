@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259646/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259646/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259646/","publisher":null,"image":null,"headline":"Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259646-vfp-60-sample-shows-how-to-use-the-datetimepicker-control">Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259646
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DTPicker.exe is a sample that shows how to use the ActiveX DateTimePicker
+control.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  DTPicker.exe
+  (http://download.microsoft.com/download/vfox60/vfpdtpic/60/w9x2k/en-us/DTPicker.exe)
+
+Release Date: Apr-26-2000
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+The DTPicker.exe file contains the following files:
+
++----------------------+
+| File name    | Size  | 
++----------------------+
+| ReadMe.txt   | 3560  | 
++----------------------+
+| DTPicker.scx | 4630  | 
++----------------------+
+| DTPicker.sct | 19897 | 
++----------------------+
+
+About the DateTimePicker Control
+--------------------------------
+
+The DateTimePicker control enables you to provide a formatted datetime field that
+allows easy date or time selection. In addition, users can select a date from a
+drop-down calendar interface similar to the MonthView control.
+
+The DateTimePicker control operates in two modes:
+
+- Drop-down Calendar mode (default) ? enables the user to display a drop-down
+  calendar that can be used to select a date.
+- Time Format mode ? enables the user to select a field in the date display
+  (such as, the month, day, year, and so forth), and press the UP or DOWN arrow
+  to the right of the control to set its value.
+
+You can navigate to the control by using either the keyboard or the mouse. The
+drop-down calendar has two buttons that enable you to scroll the months in and
+out of view.
+
+NOTE: The DateTimePicker control is part of a group of ActiveX controls that are
+found in the Mscomct2.ocx file. To use the DateTimePicker control in your
+application, you must add the Mscomct2.ocx file to the project. When you
+distribute your application, install the Mscomct2.ocx file in the user's
+Microsoft Windows System or System32 directory.
+
+About This Sample
+-----------------
+
+This sample provides a form containing the DateTimePicker control along with
+additional controls that allow you to manipulate the various properties on the
+control and see the results. A number of the controls are set up as read-only
+because the property they represent from the DateTimePicker control is
+write-only. You can access the current date/time value from the Object.Value
+property on the control or from the properties that correspond to the various
+parts of a datetime value (Year, Month, Day, Hour, Minute, Second, and so
+forth).
+
+With the DateTimePicker control you are able to specify a valid range of
+datetimes as well as the format of the datetime value displayed in the control.
+The formats available are Long Date (0), Short Date (1), Time (2), and Custom
+(3). If the Custom format is specified, you can use the format characters
+supported by the DateTimePicker control to customize the format to your needs.
+
+NOTE: The CustomFormat property is case-sensitive. While the M and MM formats
+refer to Months, the lower-case values m and mm refer to minutes. You also need
+to note that h, hh, H, and H refer to hours; the lower case values h and hh
+refer to hours in the twelve hour format, while the upper case H and HH refer to
+hours in the twenty-four hour format.
+
+As mentioned earlier, the DateTimePicker is able to operate in one of two modes
+(Drop-Down Calendar or Time Format). This is controlled by the UpDown property.
+When the UpDown property is set to True (.T.), the control is in Time Format
+mode. This is evident by the appearance of the spinner-like buttons on the far
+right of the control. In this mode, the user is able to select a part of the
+datetime value (Month, Day, Year, Hour, Minute, and so forth) and spin through
+the values until the desired datetime has been reached. When the UpDown property
+is set to False (.F.) the control is in Drop-Down Calendar mode. This is evident
+by the appearance of a drop-down button on the far right of the control. In this
+mode, the time portion of the datetime value will not be changed.
+
+NOTE: When the Format of the DateTimePicker control is set to Time (2), the
+UpDown property is ignored and the control is in Time Format mode.
+
+The DateTimePicker control can have a checkbox enabled in the control. When this
+checkbox is clear (de-selected), the date and time values that are returned from
+the control are .NULL. values.
+
+REFERENCES
+==========
+
+For more information about the DateTimePicker control, please see that topic in
+the Windows Controls Help file, CMCTL298.CHM, located where you have installed
+your MSDN Library.
+
+For additional information on the B&gt;DateTimePicker control, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q253588 PRB: OLE Error with Empty or NULL ControlSource with DT Picker
+
+  Q253785 PRB: Error When Setting DateTimePicker Control Programmatically
+
+  Q186424 INFO: DateTimePicker CustomFormat Is Case-Sensitive
+
+  Q187233 BUG: DateTimePicker's CustomFormat May Be Ignored
+
+  Q191550 BUG: DateTimePicker Won't Scroll Full Text in Visible Combo Area
+
+For more information on how to add an ActiveX control to a project, see "Adding
+Controls to a Project" in the Programmer's Guide.
+
+Additional query words: DTPicker
+
+======================================================================
+Keywords          : kbfile kbSample kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

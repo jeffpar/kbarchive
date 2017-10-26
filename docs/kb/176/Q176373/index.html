@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176373/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176373/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176373/","publisher":null,"image":null,"headline":"Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176373-fatal-exception-after-hardcore-visual-basic-2nd-ed-setup">Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176373
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop
+Last Modified: 21-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Hardcore Visual Basic, Second Edition ISBN 1-57231-422-2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing the files from the companion disc, you may see a blue screen
+with the following error:
+
+  A fatal exception 0E has occurred at 0137:bff9a3c0
+
+This error may also occur if you use Windows Explorer to view the \Code folder on
+the "Hardcore Visual Basic, Second Edition" companion disc, or after a reboot of
+your computer.
+
+CAUSE
+=====
+
+The \Code folder of the companion disc contains a .URL file that points to an
+incorrect icon file. If you are using Microsoft Internet Explorer 4.0 without
+the Active Desktop features installed, and if you are using Microsoft Windows 95
+or Microsoft Windows 95 OEM Service Release 2, this error will cause Windows to
+stop responding.
+
+RESOLUTION
+==========
+
+This problem has been corrected in Microsoft Internet Explorer 4.01 and in the
+second printing of "Hardcore Visual Basic, Second Edition." Please upgrade to
+Microsoft Internet Explorer 4.01 before installing CD-ROM "Hardcore Visual
+Basic, Second Edition" or use one of the workarounds provided below.
+
+WORKAROUND
+==========
+
+Before using the "Hardcore Visual Basic, Second Edition" companion disc, install
+the Microsoft Internet Explorer 4.0 Active Desktop.
+
+-or-
+
+Use the following steps to install the companion disc and then modify the .URL
+file to correct this problem:
+
+1. Click the Start button, click Run. Type "D:\Setup" (without the quotation
+  marks) and press ENTER. Change the drive letter to the letter of your CD-ROM
+  drive if necessary.
+
+2. Follow the directions on the screen to install the Hardcore Visual Basic,
+  Second Edition files.
+
+3. When installation is complete, you will receive the blue screen error
+  described at the beginning of this article. Press CTRL+ALT+DELETE to restart
+  your computer.
+
+4. When you see the "Starting Windows 95..." message on your screen, press the
+  F8 key. (It is OK to press the F8 key several times.)
+
+5. On the Startup menu, click Command Prompt Only.
+
+6. At the command prompt, type the following command:
+
+  " EDIT C:\HARDCO~1\HARDCO~2.URL " (without the quotation marks)
+
+  The following text file should appear:
+
+     [InternetShortcut]
+     URL=http://www.pobox.com/HardcoreVB
+     IconFile=c:\vb5\cooljoe.ico
+     IconIndex=0
+
+7. Edit this text file as follows:
+
+     [InternetShortcut]
+     URL=http://www.pobox.com/HardcoreVB
+     IconFile=c:\hardcore2\joehackr.ico
+     IconIndex=0
+
+8. Save your changes and exit the editor, and then restart the computer.
+
+9. After the Windows desktop appears, using Windows Explorer, open the
+  C:\Hardcore2 folder.
+
+10. Rename "Hardco~2.url" to "Hardcore Visual Basic on the Web.url".
+
+11. Restart your computer.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in "Hardcore Visual Basic,
+Second Edition" and Microsoft Internet Explorer 4.0. This problem has been
+corrected in Microsoft Internet Explorer 4.01 and in the second printing of
+"Hardcore Visual Basic, Second Edition."
+
+MORE INFORMATION
+================
+
+This error affects only systems where all of the following is true:
+
+- the operating system is Microsoft Windows 95 or Windows 95 OEM Service Pack 2
+
+- Microsoft Internet Explorer 4.0 is installed without the Active Desktop
+
+Microsoft Windows NT systems are not affected by this problem.
+
+
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. On a system with the configuration given above, open My Computer.
+
+2. Open the Hardcore Visual Basic, Second Edition companion disc.
+
+3. Open the \Code folder. The blue screen error given above will appear.
+
+Additional query words: press ms_press bookbug 1-57231-422-2 ie40 win95
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

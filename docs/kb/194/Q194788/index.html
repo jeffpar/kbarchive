@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194788: Windows NT Service Pack 4 and Client Certificates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194788: Windows NT Service Pack 4 and Client Certificates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194788/","publisher":null,"image":null,"headline":"Q194788: Windows NT Service Pack 4 and Client Certificates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194788-windows-nt-service-pack-4-and-client-certificates">Q194788: Windows NT Service Pack 4 and Client Certificates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194788
+Product(s): Internet Information Server
+Version(s): WINNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Internet Explorer and attempt to connect to a Web server that
+requires Client Certificates, the browser may not display applicable Client
+Certificates. However, the Client Certificates are visible in the Authorities
+area of Internet Explorer Options.
+
+If you use Internet Information Server (IIS) 4.0 with Secure Sockets Layer (SSL)
+and you have installed a root certifying authority certificate (other than those
+issued by well-known third parties, such as VeriSign, Thawte Consulting, or
+Microsoft), you may need to reinstall the affected root certifying authority
+certificates after you install SP4. You need to do this if you are using
+Microsoft Certificate Server 1.0, which shipped with the Windows NT Option Pack.
+
+CAUSE
+=====
+
+Internet Information Server 4.0 has Windows NT Service Pack 4 installed, which
+includes an updated Capi32.dll.
+
+This behavior is by design.
+
+RESOLUTION
+==========
+
+The Iisca.exe program that resolved this issue prior to this service pack is no
+longer functional after you install Service Pack 4.
+
+The following changes must made to the Internet Information Server computer, not
+the browser computer.
+
+To reinstall the root certifying authority certificate:
+
+1. Open Internet Explorer 4.0.
+
+2. Browse to the root certifying authority certificate that you want to add. For
+  example, for Microsoft Certificate Server, go to
+  http://server/certsrv/CertEnroll/cacerts.htm and click the root certifying
+  authority certificate you want.
+
+3. Select "Save this file to disk."
+
+4. Close the browser.
+
+5. Right-click on the downloaded certificate and choose Install.
+
+6. After the Certificate Manager Import wizard has started, click Next.
+
+7. Choose to place all certificates into the following store.
+
+8. Click Browse, and then click "Show physical stores."
+
+9. Expand Trusted Root Certification Authorities, select Local Computer, and
+  then click OK.
+
+10. Click Next, and then click Finish.
+
+11. Reboot your Web server computer.
+
+NOTE: If you choose Open in step 3 instead of "Save this file to disk," the
+process may not resolve the issue.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

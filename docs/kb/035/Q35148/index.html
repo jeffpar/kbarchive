@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35148: Underline, Reverse, Intense, Blinking in Monochrome SCREEN 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35148: Underline, Reverse, Intense, Blinking in Monochrome SCREEN 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35148/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35148/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35148/","publisher":null,"image":null,"headline":"Q35148: Underline, Reverse, Intense, Blinking in Monochrome SCREEN 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35148-underline-reverse-intense-blinking-in-monochrome-screen-0">Q35148: Underline, Reverse, Intense, Blinking in Monochrome SCREEN 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35148
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom B_GWBasicI | mspl13_basic
+Last Modified: 16-DEC-1989
+
+On the Hercules Graphics Adapter (HGA) or the IBM Monochrome Display
+Adapter (MDA), the foreground and background arguments of the COLOR
+statement support underlined, reverse-video (highlighted), blinking,
+or high-intensity characters. Reverse/underline and intense/reverse
+combinations are not supported by HGA or MDA.
+
+The following 11 combinations of COLOR statement foreground and
+background values are available on monochrome, SCREEN 0 (text)
+displays:
+
+   FORMAT                  COLOR Statement       ATTRIBUTE
+
+White on black (normal)       COLOR 7,0              7
+Black on black (no display)   COLOR 0,0              0
+Black on white (reverse)      COLOR 0,7            112
+Underline                     COLOR 1,0              1
+Intense                       COLOR 10,0            10
+Blinking                      COLOR 18,0           130
+Reverse blinking              COLOR 16,7           240
+Intense underline             COLOR 9,0              9
+Intense blinking              COLOR 26,0           138
+Underline blinking            COLOR 17,0           129
+Intense blinking underline    COLOR 25,0           137
+
+This information applies to the following products:
+
+1. Microsoft QuickBASIC Compiler Versions 4.00, 4.00b, 4.50
+
+2. Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and
+   MS OS/2
+
+3. Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2
+
+4. Microsoft GW-BASIC Interpreter Versions 3.20, 3.22, and later
+
+In SCREEN 0 with a color card (CGA, EGA, or VGA), the COLOR statement
+is used to change the foreground and background colors that are
+displayed. The COLOR statement also lets you select intense or
+blinking options for the foreground color. Underlining is not
+supported on color monitors.
+
+In text mode (SCREEN 0), two consecutive bytes are used to store each
+character in screen memory. One byte contains the ASCII value of a
+character, and the following byte contains ATTRIBUTE information for
+that character. Attributes can be calculated with the following
+formula:
+
+ATTRIBUTE = 128*(FOREGROUND\16)+BACKGROUND*16+(FOREGROUND MOD 16)
+
+[Note: The backslash character (\) is the integer division operator.]
+
+See Pages 79-81 of "The Peter Norton Programmer's Guide to the IBM PC"
+(published by Microsoft Press, 1985) for more information about
+attributes.
+
+The following book from Microsoft Press describes video details more
+completely:
+
+   "Programmer's Guide to PC &amp; PS/2 Video Systems," by Richard Wilton
+   (1987). Chapter 3 describes the alphanumeric video modes.
+
+The following is a code example:
+
+'This program will display all of the character formats resulting from
+'each of the 32 foreground colors available for any of the 8
+'recognized background colors with a monochrome card in SCREEN 0 (text
+'mode).
+
+   DEFINT A-Z
+5  CLS
+   LOCATE 20, 15
+   COLOR 7, 0
+   liner = 0
+   INPUT "background="; back
+   FOR fore = 0 TO 31
+        IF liner = 16 THEN
+                liner = 0
+        END IF
+        liner = liner + 1
+        LOCATE liner, 1 + (20 * (fore \ 16))
+        PRINT fore; back;
+        COLOR fore, back
+        PRINT "A"
+        COLOR 7, 0
+   NEXT fore
+   WHILE INKEY$ = "": WEND
+   GOTO 5
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

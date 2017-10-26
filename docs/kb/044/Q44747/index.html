@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44747: Differences between Quick Assembler and Macro Assembler | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44747: Differences between Quick Assembler and Macro Assembler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44747/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44747/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44747/","publisher":null,"image":null,"headline":"Q44747: Differences between Quick Assembler and Macro Assembler","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44747-differences-between-quick-assembler-and-macro-assembler">Q44747: Differences between Quick Assembler and Macro Assembler</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44747
+Product(s): See article
+Version(s): 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_masm
+Last Modified: 26-JUN-1989
+
+The following article lists the major changes between the Microsoft
+Quick Assembler Versions (Qasm) 2.01 and the Macro Assembler.
+
+1. Quick Assembler Supports Only Real Mode 286
+
+   Qasm supports all Intel assembly instructions that lie within
+   the scope of real mode 80286. This means the directives .386,
+   .386p, .387, and .286p will be recognized; however, they produce
+   one of the following two errors:
+
+      A2119:    80386 processor not supported.
+      A2120:    Privileged instructions not supported.
+
+2. .MODEL TINY Is Supported to Allow for .COM Files
+
+   The Tiny model is now supported by the Quick Assembler and the
+   linker shipped with Qasm. This means that EXE2BIN is not needed for
+   .COM file production.
+
+3. .MODEL Changes and Additional Features
+
+   To assist you in writing code that can be easily switched between
+   memory models, a new predefined equate, @MODEL, is available. This
+   equate has the following values:
+
+      1 = TINY.  2 = SMALL. 3 = MEDIUM.
+      4 = COMPACT. 5 = LARGE.  6 = HUGE.
+
+   The following code fragment shows how this equate can be used to
+   switch between small and tiny models:
+
+.model    &lt;specified model&gt;
+.data
+.code
+
+start:
+          if @MODEL NE 1      ; if not TINY model
+          mov  ax, @data
+          mov  ds, ax
+          endif
+          .
+          .
+
+4. FAR_STACK and LOCAL_STACK attributes to .MODEL
+
+      .Model Small, c, FAR_STACK
+      .Model Small, c, LOCAL_STACK
+
+   LOCAL_STACK is the default and directs .MODEL and .STACK to behave
+   as they have done in the past, i.e., set up the segments for an
+   SS = DS environment.
+
+   FAR_STACK instructs Qasm to perform the correct setup for a
+   SS!= DS environment.
+
+5. New Directive .STARTUP
+
+   .STARTUP expands to the correct code for the given model and
+   FAR/LOCAL_STACK value. This expansion includes initializing DS,
+   SS, and SP when necessary. It also defines a start address
+   label and directs the END directive to use this start label.
+
+   This directive is designed only for stand-alone programs. It should
+   not be used for code that is mixed with higher-level languages such
+   as C, FORTRAN, etc., because it conflicts with their startup
+   code.
+
+   Likewise, this directive should be used for stand-alone DOS
+   programs. The load conditions for OS/2 are different.
+
+   6. /P1 switch Implies a One-Pass Assembly
+
+   Qasm supports a one-pass assembly run as well as the standard
+   two-pass assembly run.
+
+   A listing cannot be produced when the single-pass option is chosen,
+   i.e., /Fl and /a are not tolerated when the /P1 option is given).
+
+7. Screen-Oriented Listing File
+
+   /Se is a new option that instructs Qasm to generate a listing
+   file that is oriented to the screen rather than a disk file. Use of
+   this option implies the following:
+
+   a. No page headers or formfeeds will be inserted.
+
+   b. The first argument to the PAGE command will have no effect.
+
+   c. The default PAGE's second argument will be 255.
+
+   d. TITLE and SUBTTL directives will be ignored.
+
+8. /Sp Is the Counter Option to /Se
+
+   /Sp produces a printer-oriented listing file.
+
+9. Object Code Improvements
+
+   Near JMPs and CALLs to nonexternal labels used to have associated
+   FIXUPs generated. Qasm now calculates the relative displacement
+   internally, rather than having the linker do it. This process
+   saves 7 bytes per JMP/CALL in terms of .obj size.
+
+   Shorthand fixup forms are now used. If the frame is equal to the
+   target, a frame=target form of fixup is used, and the frame datum
+   is not needed. Similarly, if the frame is equal to the location,
+   the frame=location form is used.
+
+   Threads are now defined, and thread fixups are used where possible.
+
+All of these changes should decrease the size of the resultant object.
+Savings in size should range from 5 to 20 percent.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

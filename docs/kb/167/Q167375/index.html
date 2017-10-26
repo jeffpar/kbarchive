@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167375/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167375/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167375/","publisher":null,"image":null,"headline":"Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167375-err-msg-error-opening-modeminf-file-in-the-ras-directory">Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167375
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbhw dun kbHardware kbDialUp
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to configure Remote Access Services (RAS) using the Network tool in
+Control Panel, you may receive the following error messages:
+
+  Error opening Modem.inf file in the RAS directory.
+
+  Failed to initialize device list. Error opening Modem.inf file in the RAS
+  directory.
+
+  Dial-Up Networking Setup encountered an unknown failure and will terminate
+  now. Please contact your administrator to determine the cause of the problem.
+
+Dialing out using Dial-Up Networking may work fine, however.
+
+CAUSE
+=====
+
+The Modem.inf file in the %SystemRoot%\System32\Ras folder is missing or
+damaged.
+
+RESOLUTION
+==========
+
+Expand a new copy of the Modem.inf file from the Windows NT 4.0 CD-ROM to the
+%SystemRoot%\System32\Ras folder using the following steps:
+
+1. If a Modem.inf file already exists in the %SystemRoot%\System32\Ras folder,
+  rename it to Modem.old.
+
+2. Place the Windows NT 4.0 CD-ROM in the CD-ROM drive.
+
+3. Type the following line at a command prompt:
+
+  expand d:\i386\modem.in_ c:\winnt\system32\ras\modem.inf
+
+  NOTE: This command assumes that Windows NT is installed in the Winnt folder on
+  drive C and that drive D is the CD-ROM drive. If this is not the case, adjust
+  the command as necessary.
+
+MORE INFORMATION
+================
+
+Windows NT 4.0 does not use the Modem.inf file for Dial-Up Networking. However,
+the Modem.inf file is required for the setup and configuration of modem devices
+in RAS properties. If the file is missing or damaged, RAS cannot display the
+list of devices.
+
+Additional query words: information
+
+======================================================================
+Keywords          : kberrmsg kbhw dun kbHardware kbDialUp 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

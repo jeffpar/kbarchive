@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With? | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154753/","publisher":null,"image":null,"headline":"Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154753-info-what-are-the-cc-libraries-my-program-would-link-with">Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154753
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0
+Operating System(s): 
+Keyword(s): kbCompiler kbGenInfo kbLangCPP kbVC420 kbVC500 kbVC600 kbArtTypeINF
+Last Modified: 28-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the default libraries LIBC[D].LIB, LIBCMT[D].LIB,
+LIBCI[D].LIB, LIBCIMT[D].LIB, LIBCP[D].LIB, LIBCPMT[D].LIB, MSVCRT[D].LIB,
+MSVCIRT[D].LIB, and MSVCPRT[D].LIB that a program will link with when built
+using Visual C++.
+
+MORE INFORMATION
+================
+
+When you build a release (or debug) version of your project in Visual C++, one
+of the basic C Runtime libraries (LIBC[D].LIB, LIBCMT[D].LIB, and MSVCRT[D].LIB)
+is linked by default, depending on the compiler option you choose
+(single-threaded &lt;ML[d]&gt;, multithreaded &lt;MT[d]&gt;, or multithreaded
+DLL&lt;MD[d]&gt;). A library from the Standard C++ Library or one from the old
+iostream library may also be linked depending on the headers you use in your
+code. For example, consider the following cases:
+
+Case 1: Sample program test1.cpp
+--------------------------------
+
+  // test1.cpp
+  void main()
+  {
+  }
+
+- If you build test.cpp using the /ML (or /MLd, for a debug build) compiler
+  option, your program will link with LIBC.LIB (or LIBCD.LIB, for debug build),
+  in addition to other libraries.
+
+- If you build test.cpp using the /MT (or /MTd, for a debug build) compiler
+  option, your program will link with LIBCMT.LIB (or LIBCMTD.LIB, for debug
+  build), in addition to other libraries.
+
+- If you build test.cpp using the /MD (or /MDd, for a debug build)compiler
+  option, your program will link with MSVCRT.LIB (or MSVCRTD.LIB, for debug
+  build), in addition to other libraries. In this case, your program will be
+  dependent on MSVCRT.DLL (or MSVCRTD.DLL for debug build).
+
+Case 2: Sample program test2.cpp
+--------------------------------
+
+     // test2.cpp
+     #include &lt;iostream&gt;
+     void main()
+     {
+     }
+
+- If you build test.cpp using the /ML (or /MLd, for a debug build) compiler
+  option, your program will link with LIBC.LIB (or LIBCD.LIB, for debug build)
+  and LIBCP.LIB (or LIBCPD.LIB, for debug build), in addition to other
+  libraries.
+
+- If you build test.cpp using the /MT (or /MTd, for a debug build) compiler
+  option, your program will link with LIBCMT.LIB (or LIBCMTD.LIB, for debug
+  build) and LIBCPMT.LIB (or LIBCPMTD.LIB, for debug build), in addition to
+  other libraries.
+
+- If you build test.cpp using the /MD (or /MDd, for a debug build) compiler
+  option, your program will link with MSVCRT.LIB (or MSVCRTD.LIB, for debug
+  build) and MSVCPRT.LIB (or MSVCPRTD.LIB, for debug build), in addition to
+  other libraries. For Visual C++ 6.0, your program will be dependent on
+  MSVCRT.DLL and MSVCP60.DLL (or MSVCRTD.DLL and MSVCP60D.DLL for debug build).
+  For Visual C++ 5.0, your program will be dependent on MSVCRT.DLL and
+  MSVCP50.DLL (or MSVCRTD.DLL and MSVCP50D.DLL for debug build). For Visual C++
+  4.2, your program will be dependent on MSVCRT.DLL (or MSVCRTD.DLL for debug
+  build) and MSVCPRT.LIB (or MSVCPRTD.LIB, for debug build).
+
+Case 3: Sample program test3.cpp
+--------------------------------
+
+  // test.cpp
+  #include &lt;iostream.h&gt;
+  void main()
+  {
+  }
+
+- If you build test.cpp using the /ML (or /MLd, for a debug build) compiler
+  option, your program will link with LIBC.LIB (or LIBCD.LIB, for debug build)
+  and LIBCI.LIB (or LIBCID.LIB, for debug build), in addition to other
+  libraries.
+
+- If you build test.cpp using the /MT (or /MTd, for a debug build) compiler
+  option, your program will link with LIBCMT.LIB (or LIBCMTD.LIB, for debug
+  build) and LIBCIMT.LIB (or LIBCIMTD.LIB, for debug build), in addition to
+  other libraries.
+
+- If you build test.cpp using the /MD (or /MDd, for a debug build) compiler
+  option, your program will link with MSVCRT.LIB (or MSVCRTD.LIB, for debug
+  build) and MSVCIRT.LIB (or MSVCIRTD.LIB, for debug build) in addition to
+  other libraries. In this case, your program will be dependent on MSVCRT.DLL
+  (or MSVCRTD.DLL for debug build) and MSVCIRT.DLL (or MSVCIRTD.DLL for debug
+  build).
+
+Headers determine whether the Standard C++ libraries, old iostream libraries, or
+neither will be linked. Compiler options (/ML[d], /MT[d], /MD[d]) determine
+which version of the libraries single-threaded, multithreaded, or multithreaded
+DLL is to be linked by default.
+
+NOTE: It may seem that headers without the ".h" extension are Standard C++
+headers and that headers with the ".h" extension are C Runtime headers or old
+iostream headers. This is not true. As explained below, the files
+&lt;useoldio.h&gt; and &lt;use_ansi.h&gt; determine the libraries your
+application will link with.
+
+Actually, there are two header files, &lt;useoldio.h&gt; and &lt;use_ansi.h&gt;,
+that contain #pragmas. The #pragmas force either the old iostream library or the
+Standard C++ library to be linked in by default.
+
+The header file &lt;useoldio.h&gt; contains #pragma statements, which force the
+old iostream library to be linked in. All old iostream headers include
+&lt;useoldio.h&gt;. So, if you include any old iostream header in your
+application, the old iostream library will be linked by default. The following
+table lists all the header files that include &lt;useoldio.h&gt;.
+
+  Old iostream Headers
+  --------------------
+
+  FSTREAM.H   IOMANIP.H
+  IOS.H       IOSTREAM.H
+  ISTREAM.H   OSTREAM.H
+  STDIOSTR.H  STREAMB.H
+  STRSTREA.H
+
+The header file &lt;use_ansi.h&gt; contains #pragma statements that force the
+Standard C++ Library to be linked in. All Standard C++ Headers include
+&lt;use_ansi.h&gt;. So if you include any Standard C++ header in your
+application, the Standard C++ library will be linked by default. The following
+table lists all the header files that include &lt;use_ansi.h&gt;.
+
+  Standard C++ Headers
+  ------------------------------------------------------
+
+  ALGORITHM    BITSET     COMPLEX    DEQUE
+  FSTREAM    FUNCTIONAL   IOMANIP    IOS
+  IOSFWD      IOSTREAM    ISTREAM    ITERATOR
+  LIMITS      LIST        LOCALE     MAP
+  MEMORY      NUMERIC     OSTREAM    QUEUE
+  SET         SSTREAM     STACK      STDEXCEPT
+  STREAMBUF   STRING      STRSTREAM  TYPEINFO
+  UTILITY     VALARRAY    VECTOR     XIOSBASE
+  XLOCALE     XLOCINFO    XLOCMON    XLOCNUM
+  XLOCTIME    XMEMORY     XSTRING    XTREE
+  XUTILITY    YMATH.H
+
+You cannot mix calls to the old iostream library and the new Standard C++ Library
+in Visual C++ 4.2.
+
+                     Summary Table
+
+------------------------------------------------------------------
+| Compile   Old        New IOStream   Libraries                  |
+| Option    IOStream   or STL         Linked With                |
+|================================================================|
+| /ML       No         No             LIBC.LIB                   |
+|----------------------------------------------------------------|
+| /MLd      No         No             LIBCD.LIB                  |
+|----------------------------------------------------------------|
+| /MT       No         No             LIBCMT.LIB                 |
+|----------------------------------------------------------------|
+| /MTd      No         No             LIBCMTD.LIB                |
+|----------------------------------------------------------------|
+| /MD       No         No             MSVCRT.LIB                 |
+|----------------------------------------------------------------|
+| /MDd      No         No             MSVCRTD.LIB                |
+|----------------------------------------------------------------|
+| /ML       No         Yes            LIBC.LIB,    LIBCP.LIB     |
+|----------------------------------------------------------------|
+| /MLd      No         Yes            LIBCD.LIB,   LIBCPD.LIB    |
+|----------------------------------------------------------------|
+| /MT       No         Yes            LIBCMT.LIB,  LIBCPMT.LIB   |
+|----------------------------------------------------------------|
+| /MTd      No         Yes            LIBCMTD.LIB, LIBCPMTD.LIB  |
+|----------------------------------------------------------------|
+| /MD       No         Yes            MSVCRT.LIB,  MSVCPRT.LIB   |
+|----------------------------------------------------------------|
+| /MDd      No         Yes            MSVCRTD.LIB, MSVCPRTD.LIB  |
+|----------------------------------------------------------------|
+| /ML       Yes        No             LIBC.LIB,    LIBCI.LIB     |
+|----------------------------------------------------------------|
+| /MLd      Yes        No             LIBCD.LIB,   LIBCID.LIB    |
+|----------------------------------------------------------------|
+| /MT       Yes        No             LIBCMT.LIB,  LIBCIMT.LIB   |
+|----------------------------------------------------------------|
+| /MTd      Yes        No             LIBCMTD.LIB, LIBCIMTD.LIB  |
+|----------------------------------------------------------------|
+| /MD       Yes        No             MSVCRT.LIB,  MSVCIRT.LIB   |
+|----------------------------------------------------------------|
+| /MDd      Yes        No             MSVCRTD.LIB, MSVCIRTD.LIB  |
+------------------------------------------------------------------
+
+         Summary Table for CRT DLLs Used
+---------------------------------------------------
+| Import Library   DLLs Used        DLLs Used     |
+| Linked With      (VC 5.0|6.0)         (VC 4.2)  |
+|=================================================|
+| MSVCRT.LIB       MSVCRT.DLL       MSVCRT.DLL    |
+|-------------------------------------------------|
+| MSVCRTD.LIB      MSVCRTD.DLL      MSVCRTD.DLL   |
+|-------------------------------------------------|
+| MSVCPRT.LIB      MSVCP5(5|6)0.DLL               |
+|-------------------------------------------------|
+| MSVCPRTD.LIB     MSVCP5(5|6)0D.DLL              |
+|-------------------------------------------------|
+| MSVCIRT.LIB      MSVCIRT.DLL      MSVCIRT.DLL   |
+|-------------------------------------------------|
+| MSVCIRTD.LIB     MSVCIRTD.DLL     MSVCIRTD.DLL  |
+---------------------------------------------------
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q154419 INFO: Standard C++ Library Frequently Asked Questions
+
+Additional query words: MSVCRT.DLL MSVCIRT.DLL MSVCPRT.LIB LIBCI.LIB LIBCIMT.LIB LIBCP.LIB LIBCPMT.LIB
+
+======================================================================
+Keywords          : kbCompiler kbGenInfo kbLangCPP kbVC420 kbVC500 kbVC600 kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.2,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

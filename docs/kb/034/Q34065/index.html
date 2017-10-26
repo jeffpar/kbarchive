@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34065: setvbuf with Buffer Greater than 32K Causes fwrite Failure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34065: setvbuf with Buffer Greater than 32K Causes fwrite Failure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34065/","publisher":null,"image":null,"headline":"Q34065: setvbuf with Buffer Greater than 32K Causes fwrite Failure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34065-setvbuf-with-buffer-greater-than-32k-causes-fwrite-failure">Q34065: setvbuf with Buffer Greater than 32K Causes fwrite Failure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34065
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 11-AUG-1988
+
+The sample program below works correctly if the buffer size of the
+file is under 32K.  When the buffer size of the file is set higher
+than 32K (using setvbuf), the fwrite statement will fail and write
+"fwrite failed" to the screen. This problem occurs in Microsoft C
+Versions 5.00 and 5.10.
+   Page 538 of the "Microsoft C 5.1 Optimizing Compiler Run Time
+Library Reference" manual indicates that the legal values for the size
+parameter are greater than zero and less than the maximum integer
+value (which is 32K). Therefore, even though the type for the
+size parameter is of type size_t (unsigned integer) only values
+less than 32K are correct for the size parameter to setvbuf().
+   However, setvbuf should return an error for invalid size values.
+Microsoft is researching this problem and will post new information
+as it becomes available.
+
+   The following sample code demonstrates this behavior:
+
+#include &lt;stdio.h&gt;
+
+char buf[35000] ;   /* size of file buffer */
+FILE *stream ;
+long result ;
+int err ;
+char i[10] = "abcdefghij" ;
+
+main() {
+    stream = fopen("data1", "w+b") ;
+    if ( err = setvbuf( stream, buf, _IOFBF, sizeof(buf) ) != 0)
+        printf("failed to set buffer\n") ;
+    else
+        for ( result = 0; result &lt; 5000; result++ )
+            if (err = fwrite( i, sizeof(i), 1, stream )  != 1 ) {
+                printf("fwrite failed\n" ) ;
+                exit(-1) ;
+                }
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

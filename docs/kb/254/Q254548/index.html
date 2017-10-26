@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254548/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254548/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254548/","publisher":null,"image":null,"headline":"Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254548-xcln-connecting-windows-ce-handheld-pcs-to-exchange-server">Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254548
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2.0,3.0,3.0 Professional Edition,5.0,5.5; winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 20-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Active Server Components, version 5.0 
+- Microsoft Outlook Web Access, version 5.5 
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- the operating system: Microsoft Windows CE, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes several methods that you can use to connect Windows CE PC
+companion devices to Exchange Server. The easiest method uses a browser to
+connect to Exchange Server by using a Web interface. To use this method, the
+Outlook Web Access (OWA) component of Exchange Server must be installed on
+either the Exchange Server computer itself or on another computer. You can also
+connect to Exchange Server by using standard Internet protocols, such as Post
+Office Protocol version 3 (POP3) and Internet Message Access Protocol, Version
+4rev1 (IMAP4).
+
+This article does not describe third-party methods to connect Windows CE PC
+companion devices to Microsoft Exchange Server. This article only describes the
+"out of the box" solutions to connect these devices to Exchange Server. Also,
+this article does not describe how to synchronize your device by using a desktop
+personal computer; synchronize your device by using the software that is
+included with your device.
+
+MORE INFORMATION
+================
+
+Connecting to Exchange Server By Using a Browser
+------------------------------------------------
+
+
+Windows CE version 2.1 (Windows CE Pro) contains a browser that supports frames
+and scripting, as well as secure links and 128-bit security. This browser can
+connect to a standard OWA server and is the recommended method to connect
+devices that are running Windows CE 2.1 to Exchange Server. It requires the
+least amount of resources from the device that is running Windows CE. For more
+information about how to install OWA, see the Exchange Server 5.5
+documentation.
+
+Connecting to Exchange Server By Using POP3 or IMAP4
+----------------------------------------------------
+
+Windows CE 2.0 provides an Internet Mail Service (POP3 only) that you can
+configure to connect to Exchange Server.
+
+IMPORTANT: This service can only make serial, dial-up, or infrared connections to
+the POP3 server. This service is not compatible with Ethernet network
+connections.
+
+Windows CE 2.1 (Windows CE Pro) includes a POP3 service and an IMAP4 service.
+POP3 allows you to connect to only the Inbox; you cannot open any other folders.
+If you use the IMAP4 protocol, you can open folders other than the Inbox. Also,
+both of these protocols can use an Ethernet connection as well as serial,
+dial-up, or infrared connections.
+
+Serial connections require that you have the Windows CE synchronization software
+and a connecting cable installed directly on the Exchange Server computer.
+Likewise, an infrared connection requires the Exchange Server computer to be
+fitted with a compatible infrared device. Serial and infrared connections also
+require the Exchange Server computer to be physically available to the Windows
+CE users. Because of these requirements, it is unlikely that a serial or
+infrared connection would be made from a Windows CE PC companion device directly
+to an Exchange Server computer. For more information about how to configure one
+of these types of connections, see the Windows CE help files on how to create
+the connection on the device.
+
+A dial-up connection to the Exchange Server computer is the type of connection
+most likely to be used for remote connectivity. A compatible dial-up server must
+be configured either on the same computer that Exchange Server is installed on,
+or on another server that has connectivity to the Exchange Server computer.
+Microsoft Windows NT Remote Access Service (RAS) or Routing and Remote Access
+Service (RRAS) provide this capability. For additional information, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q174800 Documentation Location for Routing and Remote Access Service
+
+An Ethernet connection is the fastest method available to connect Windows CE PC
+companion devices to Exchange Server. If you use a compatible Personal Computer
+Memory Card International Association (PCMCIA) card or CompactFlash Ethernet
+card with a device that is running Windows CE, you can make a direct connection
+to a desktop personal computer for synchronization. Handheld PCs that are
+running Windows CE Pro can also make POP3 or IMAP4 connections to Exchange
+Server computers that are available on the local area network (LAN). For more
+information about how to configure one of these types of connections, see the
+Windows CE help files about how to create the connection on the device. For
+additional information, refer to the FAQ located at the following Web site:
+
+  http://www.cewindows.net/wce/20/ethernet.htm
+
+If you use any of these services with Exchange Server 5.5 you can connect
+directly to your server by using POP3 or IMAP4. However, to send mail by using
+SMTP, you must ensure that the server that you want to connect to has the
+Internet Mail Service configured and running. This can be a separate server, or
+the same server that contains your mailbox. For additional information, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q169462 XFOR: Configuring POP3 Client for Remote Mail Configuration
+
+Resources
+---------
+
+The Microsoft Windows CE home page:
+
+  http://www.microsoft.com/windowsce/
+
+The resource guide for PC Companions:
+
+  http://windowsce.resourceguide.net/
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q240079 ActiveSync 3.0 Readme
+
+  Q195517 Windows CE Services Version 2.2 Readme.txt File (1 of 2)
+
+  Q195513 Windows CE Services Version 2.2 Readme.txt File (2 of 2)
+
+  Q158178 Description of Windows CE
+
+  Q220905 XFOR: Error Retrieving Mail by IMAP4 on Exchange Server with Windows
+  CE Inbox
+
+  Q185846 How to Send E-mail from an H/PC or P/PC Using a Desktop Computer
+
+  Q186100 Known Issues in Pocket Outlook on a Handheld PC or Palm-size PC
+
+  Q237961 XFOR: IMAP4 and POP3 Users Cannot Retrieve Messages
+
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbOWASearch kbOWA550 kbOSWinCE200 kbOSWinCE300 kbZnotKeyword7 kbExchangeActiveServComp500 kbOSWinCESearch
+Version           : WINDOWS:2.0,3.0,3.0 Professional Edition,5.0,5.5; winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

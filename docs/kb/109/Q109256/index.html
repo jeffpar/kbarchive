@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109256/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109256/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109256/","publisher":null,"image":null,"headline":"Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109256-conn-changing-mail-connection-proxy-network--postoffice">Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109256
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During installation of version 3.2 of the Microsoft Mail Connection for PC and
+AppleTalk Networks, the Mail for PC Networks administrator is asked to define
+the proxy network and postoffice names that will be used to represent the Mail
+for AppleTalk Networks system. If the administrator accepts the default values
+during installation, the proxy network and postoffice names will be
+MACNET/MACPO.
+
+Below are instructions for changing the proxy network and postoffice names from
+the default values.
+
+NOTE: DO NOT change the proxy network and postoffice names by editing the
+MACGATE.INI file.
+
+
+To change the proxy network/postoffice name on the gateway postoffice
+---------------------------------------------------------------------
+
+WARNING: Changing your proxy network or postoffice name invalidates all Mail for
+AppleTalk Networks addresses that have been added to global groups, Mail for PC
+Networks users' Personal Address Books (PABs), personal groups, and Remote
+client address lists.
+
+1. Remove all Mail for AppleTalk Networks addresses from Mail for PC Networks by
+  choosing Remove Mac Names From PC from the Connection Name Utility's
+  (CNU[ASCII 146]s) File menu. The Mail for AppleTalk Networks addresses are
+  automatically removed from all Mail for PC Networks postoffices that
+  participate in Directory Synchronization (Dir-Sync) after the next Dir-Sync
+  cycle. Do not continue until the Mail for AppleTalk Networks addresses have
+  been removed from Mail for PC Networks.
+
+2. Disable the Mail for PC Networks side of the gateway (terminate the
+  MACGATE.EXE program).
+
+3. Run the Mail Connection 3.2 PC Setup program and select Modify MS Mail
+  Connection On A Gateway/Downstream Postoffice. Enter the path to your
+  MAILDATA and MAILEXE directories and change the proxy network and postoffice
+  names.
+
+  NOTE: You must enter a unique network name for the proxy network.
+
+4. Remove the old proxy network/postoffice requestor record from the Dir- Sync
+  server postoffice and add the new proxy network and postoffice as a Dir-Sync
+  requestor:
+
+  a. Run the Mail for PC Networks Administrator utility on the Dir-Sync server
+     postoffice.
+
+  b. Select Config, Dir-Sync, Server, Requestor, Delete to delete the old
+     requestor record.
+
+  c. Select Config Dir-Sync, Server, Requestor, Create to define the new proxy
+     network and postoffice as a Dir-Sync requestor.
+
+  NOTE: Make sure you enter the same password that was used for the old proxy
+  network/postoffice requestor record.
+
+5. Log in to the Mail for AppleTalk Networks gateway server as the Network
+  Manager. From the Mail menu, choose Gateway, then Configuration. Confirm that
+  the new proxy network and postoffice names appear on the Mail connection
+  gateway configuration screen and click the Update button to continue.
+
+  NOTE: You MUST click the Update button to update the internal Mail for
+  AppleTalk Networks gateway configuration record after changing your proxy
+  network or postoffice name.
+
+  Export the complete Mail for AppleTalk Networks directory to the Mail for PC
+  Networks Dir-Sync server postoffice by means of the CNU. From the CNU File
+  menu, choose Export Directory, then click the Complete Directory button.
+
+6. Start the PC side of the gateway by executing the MACGATE.EXE program.
+
+7. The Mail for AppleTalk Networks addresses should reappear in the Global
+  Address List (GAL) and under the new proxy network/postoffice list after the
+  next Dir-Sync cycle is completed.
+
+  NOTE: The Dir-Sync server postoffice reports this error message during the
+  first Dir-Sync cycle after the proxy network or postoffice name change. You
+  can disregard it.
+
+  Error [138] Server sync does not exist anymore (22)
+
+To change the proxy network/postoffice name on downstream postoffices
+---------------------------------------------------------------------
+
+1. Disable any Mail for PC Networks Externals or gateways that process mail on
+  the downstream postoffice.
+
+2. Run the Mail Connection 3.2 PC Setup program and Select Modify MS Mail
+  Connection On A Gateway/Downstream Postoffice. The Setup program prompts you
+  to enter the path to your MAILDATA directory, your current (old) proxy
+  network and postoffice names, and the network and postoffice name of the
+  gateway postoffice. Then enter your new proxy network and/or postoffice
+  names.
+
+  NOTE: The proxy network and postoffice names on the downstream postoffice must
+  match the proxy network and postoffice names on the gateway postoffice.
+
+3. Restart any Mail for PC Networks Externals or gateways you disabled in step
+  1.
+
+4. Request a complete directory import with Dir-Sync by running the Mail for PC
+  Networks Administrator program (ADMIN.EXE) and selecting Config, Dir-Sync,
+  Requestor, Import.
+
+5. The Mail for AppleTalk Networks addresses should reappear in the GAL and
+  under the new proxy network/postoffice list after the next Dir-Sync cycle is
+  completed.
+
+To update Remote client address lists
+-------------------------------------
+
+WARNING: Changing the proxy network or postoffice name invalidates all Mail for
+AppleTalk Networks addresses for Remote client users.
+
+Regenerate the default directory view for Remote client users by running the Mail
+for PC Networks Administrator program and selecting Remote, Regenerate.
+
+The Remote client users should download the new directory during their next
+on-line session.
+
+
+Note that this article is referred to by the GTWAY article "How to Reset the Mail
+Queue for Mail Connection 3.2" Q134378. If you modify or delete this article,
+please make corresponding changes in that article.
+
+Note that this article is referred to by the GTWAY article "CONN: Setup Error
+Indicates Duplicate Gateway" Q141583. If you modify or delete this article,
+please make corresponding changes in that article.
+
+Additional query words: 3.20 FFAPI DirSync Dirsynch Admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216391: BUG: VSS History Not Updated for Modified Word Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216391: BUG: VSS History Not Updated for Modified Word Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216391/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216391/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216391/","publisher":null,"image":null,"headline":"Q216391: BUG: VSS History Not Updated for Modified Word Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216391-bug-vss-history-not-updated-for-modified-word-documents">Q216391: BUG: VSS History Not Updated for Modified Word Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216391
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:2000,6.0,97
+Operating System(s): 
+Keyword(s): kbinterop wordnt word97 ntword kbSSafe600bug
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 6.0, used with:
+   - Microsoft Word 97 for Windows 
+   - Microsoft Word 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The file history is not updated when a Word document is checked out, modified,
+and checked into Visual SourceSafe.
+
+RESOLUTION
+==========
+
+To work around the problem, you can do either of the following:
+
+- From the Word Tools menu, select Options, and click the Save tab. Clear the
+  Allow Fast Saves option. Click OK.
+
+  -or-
+
+- From the Visual SourceSafe Tools menu, select Options, and click the General
+  tab. Make sure "Check-In unchanged files" is set to Check In.
+
+  -or-
+
+- From the Visual SourceSafe, Tools menu, select Options, and click the Local
+  Files tab. Make sure "Compare files by:" is set to anything other than
+  Checksum.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the Visual SourceSafe Tools menu, select Options. On the General tab,
+  set "Check-In unchanged files" to Undo Check Out. On the Local Files tab, set
+  Compare files by: to Checksum.
+
+2. Add a Word document to a project in Visual SourceSafe.
+
+3. Check out the Word document and specify a working folder if necessary.
+
+4. Open the document in Word.
+
+5. From the Word Tools menu, select Options, and click the Save tab when the
+  Options dialog box appears.
+
+6. Select the Allow Fast Saves option if it is cleared, and click OK.
+
+7. Make changes to the document.
+
+8. Save the document by going to the File menu and clicking Save.
+
+9. Close the document in Word.
+
+10. Go the Visual SourceSafe Explorer and check in the Word document.
+
+11. Right-click the Word document and select the Show History option. The
+  history will display one version. This is the version created when the file
+  was added to Visual SourceSafe.
+
+REFERENCES
+==========
+
+For more information, see the following articles in the Microsoft Knowledge
+Base:
+
+  Q192480 WD97: Frequently Asked Questions About "Allow Fast Saves
+
+  Q71999 WD97: How to Disable the FastSave Option in Word for Windows
+
+Additional query words: version fast save checksum
+
+======================================================================
+Keywords          : kbinterop wordnt word97 ntword kbSSafe600bug 
+Technology        : kbSSafeSearch kbAudDeveloper
+Version           : WINDOWS:2000,6.0,97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

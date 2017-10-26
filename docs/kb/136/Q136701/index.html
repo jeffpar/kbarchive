@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136701/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136701/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136701/","publisher":null,"image":null,"headline":"Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136701-works-95-cannot-enter-cd-key-during-works-40-setup">Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136701
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 09-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Works Windows 95 and Bookshelf 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to enter the 10-digit CD Key during setup of Works or
+Bookshelf from the Works 4.0 for Windows 95 &amp; Bookshelf 95 compact disc.
+
+When you try to enter the key during setup, you may be able to enter the first
+digit, and then nothing else after that. The cursor may move but no numbers
+appear in the CD Key dialog box on the screen, or the cursor may skip to the
+second part of the dialog box, where you can only enter part of the CD Key.
+
+If you try to continue Setup without the full 10-digit key entered, you will
+receive the error message:
+
+  Invalid Key Value.
+
+RESOLUTION
+==========
+
+Try one of the following two resolutions:
+
+Method 1
+--------
+
+If this problem occurs, you can run the Works Setup from the Msworks directory on
+the compact disc as follows:
+
+1. Click Start and click Run.
+
+2. Type the following:
+
+  &lt;drive letter&gt;:\msworks\setup /K"&lt;CD Key Value&gt;"
+
+  where &lt;drive letter&gt; is the letter designated for your compact disc
+  drive and &lt;CD Key Value&gt; is the 10-digit CD Key from the yellow sticker
+  on the back of your compact disc case, without any dashes or other characters
+  entered.
+
+For example, if your CD Key was 123-4567890, and your compact disc drive is drive
+D, you would type the following:
+
+  D:\msworks\setup /K"1234567890"
+
+NOTE: You must include the quote marks around the Key number.
+
+Setup records the CD Key that you entered and doesn't prompt you with a dialog
+box for the CD Key.
+
+If you are having the same problem with Bookshelf 1995 setup, use the same syntax
+from step 2, but run Setup from the Books95 folder on the compact disc.
+
+Method 2
+--------
+
+This problem can be caused by a missing or corrupt MS Sans Serif font. Add the MS
+Sans Serif font to your fonts folder or fix a corrupted font, as follows:
+
+1. Click Start, point to Settings, then click Control Panel.
+
+2. Open the Fonts folder and click Details on the View menu of the Fonts folder.
+
+3. If MS Sans Serif is not displayed in the Fonts folder, proceed to step 5 to
+  reinstall it. If MS Sans Serif is in the Fonts folder, it may be corrupted
+  and must be removed (see step 4 below).
+
+4. Select MS Sans Serif and click Delete on the File menu.
+
+  MS Sans Serif is now removed. Continue with the following steps to reinstall
+  the font.
+
+5. On the File menu in the Fonts folder, click Install New Font.
+
+6. In the Add Fonts dialog box, change the folder to the Windows fonts folder
+  and click OK.
+
+7. From the list of fonts, select MS Sans Serif and click OK. If MS Sans Serif
+  is listed twice (VGA and 8514), select the appropriate version for the output
+  device you are using. If you are unsure, about the type of output device you
+  are using, select both versions of MS Sans Serif.
+
+  NOTE: If the MS Sans Serif font is not listed, you will need to extract the MS
+  Sans Serif font files from the Windows 95 disk or compact disc, and place the
+  files in the Windows\Fonts folder and repeat Steps 5-7.
+
+  The MS Sans Serif font files are located in the Win95_06.cab file on disk 6 of
+  the Windows 95 DMF disk set, or in the Win95_05.cab file in the Win95 folder
+  on the Windows 95 compact disc. The files are Sserife.fon for VGA resolution
+  or Sseriff.fon for 8514 resolution.
+
+  To extract these files, use the following syntax with the Extract utility at
+  the command prompt
+
+  extract /L &lt;destination&gt; &lt;source&gt; &lt;filename&gt;
+
+  where &lt;destination&gt; is the folder where you want the font file placed,
+  &lt;source&gt; is the cabinet file that contains the font file, and
+  &lt;filename&gt; is the name of the font file.
+
+  For example, if you are using the Windows 95 DMF disk set and your floppy
+  drive is drive A, you would type the following at the command prompt:
+
+  extract /L C:\windows\fonts win95_06.cab sseriff.fon
+
+  For additional information on using the Extract utility, see the following
+  article in the Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+8. Once you have installed the MS Sans Serif font, restart Windows and re-run
+  the Works setup.
+
+Additional query words: 4.00 w_works CD-Key cdrom disc disk cd cd-rom cdkey numbers ID money Q138459 can't plus ms
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbHomeProdSearch kbWorksSearch kbHomeMMsearch kbBookshelfSearch kbWorks400
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

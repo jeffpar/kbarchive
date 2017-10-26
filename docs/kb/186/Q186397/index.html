@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186397/","publisher":null,"image":null,"headline":"Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186397-sms-national-language-support-message-maker---nlsmsgexe">Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186397
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Nlsmsg.exe, available in the Microsoft BackOffice Resource Kit, displays
+National Language Support (NLS) messages from logon scripts at run-time. This
+approach allows a single Systems Management Server logon server to support
+clients that use multiple languages. NLSMSG was created to replace echo and
+choice with something that can be localized and is language- independent.
+
+MORE INFORMATION
+================
+
+NLSMSG runs on x86 hardware.
+
+NLSMSG Syntax
+-------------
+
+     nlsmsg message_ID [/f file_name] [/m default_message] [/c choices
+     [/t c,nn] [/n NT_lang_ID] [/w Win_lang_ID] [/d DOS_country_code]
+     [/p path] [/v]
+
+NOTE: In most cases, only message_ID, and the /m, /c, and /t options are used.
+However, in this case, NLSMSG looks for the Nlsres.ini file in the directory
+that contains Nlsmsg*.exe. Nlsres.ini specifies which resource dynamic-link
+library (DLL) to use for the current language. The current language DLL is
+opened, and the string corresponding to message_ID is retrieved and displayed on
+the monitor.
+
+The /n, /w, and /d options override the default language. Because NLSMSG attempts
+to determine the current language setting automatically, these options are
+usually not needed.
+
+message_ID
+----------
+
+Identifies the message ID of an NLS string and refers to the string table ID in a
+resource-only DLL. By default, NLSMSG uses Nls_ls.dll from the appropriate
+language subdirectory. For example, X86.bin\00000409\Nls_ls.dll.
+
+/f file_name
+------------
+
+Specifies a DLL file to search for the message specified by message_ID. This
+option enables you to use a different DLL to be used instead of the default:
+NLS_LS.DLL -- an approach that can be useful if you want to create your own
+language-independent scripts.
+
+/m default_message
+------------------
+
+Specifies a message that appears if there is an error finding the message
+specified by message_ID.
+
+/c choices
+----------
+
+Specifies allowable user-response keys, such as Y or N. (This option behaves
+identically to /c for the choice command.)
+
+/t c,nn
+-------
+
+Specifies a default choice, c, after nn seconds with no user response. (This
+option behaves identically to /t for the choice command.)
+
+/n NT_lang_ID
+-------------
+
+Specifies a Windows[ASCII 160]NT language ID to use; for example, U.S. English is
+0x0409.
+
+/w Win_lang_ID
+--------------
+
+Specifies a Windows language ID to use; for example, U.S. English is ENU.
+
+/d DOS_country_code
+-------------------
+
+Specifies an MS-DOS country code to use; for example, United States is 1.
+
+/p path
+-------
+
+Specifies a path to NLS files that overrides the default location, which is the
+same directory as the one containing Nlsmsg.exe.
+
+/v
+--
+
+Verbose mode. More output is displayed on the screen.
+
+/?
+--
+
+Provides a usage statement.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

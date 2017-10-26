@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238513/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238513/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238513/","publisher":null,"image":null,"headline":"Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238513-prb-opening-a-combobox-prevents-timer-event-code-from-executing">Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238513
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Event code in a timer object is not executed at the interval specified in the
+timer object's Interval property.
+
+CAUSE
+=====
+
+This behavior occurs when the timer interval of the timer object is set to an
+extremely low value.
+
+RESOLUTION
+==========
+
+Set the timer object's Interval property to a higher value.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file named Timedemo.prg using the following code:
+
+  PUBLIC xForm
+  xForm=CREATEOBJECT("TimerForm")
+  xForm.SHOW()
+
+  DEFINE CLASS TimerForm AS FORM
+      ncount=0
+      starttime=TIME()
+      ADD OBJECT Combo1 AS COMBOBOX WITH;
+          STYLE=2,;
+          FONTSIZE=8,;
+          HEIGHT=22,;
+          BOUNDTO=.T.,;
+          ROWSOURCETYPE=5
+
+      ADD OBJECT TextBox1 AS TEXTBOX WITH;
+          TOP=0,;
+          LEFT=150
+
+      ADD OBJECT Timer1 AS TIMER WITH;
+          INTERVAL=1,;
+          ENABLED=.T.
+
+      DIMENSION aArray(1)
+      ncount=0
+
+      PROCEDURE INIT
+          LOCAL tmpi,tmpnlen
+          tmpnlen=100
+          FOR tmpi=1 TO tmpnlen
+              DIMENSION THIS.aArray(tmpi)
+              THIS.aArray(tmpi)=tmpi
+          ENDFOR
+          THIS.Combo1.ROWSOURCE="thisform.aArray"
+          THIS.Combo1.REQUERY()
+          THIS.Combo1.LISTINDEX=1
+          THIS.Combo1.LEFT=5
+          THIS.starttime=TIME()
+      ENDPROC
+
+      PROCEDURE Timer1.TIMER
+          THISFORM.ncount=THISFORM.ncount+1
+          IF THISFORM.ncount=5*(1000/THISFORM.Timer1.INTERVAL)
+              THISFORM.CALCTIME()
+              THISFORM.ncount=0
+              THISFORM.starttime=TIME()
+          ENDIF
+      ENDPROC
+
+      PROCEDURE calctime
+          started=THISFORM.starttime
+          stoptime=TIME()
+          current_space=SELECT()
+          rec_count=RECCOUNT()
+          SELECT 0
+          IF LEN(ALLTRIM(started))=20
+              startda=VAL(LEFT(started,2))
+              STARTMO=VAL(SUBSTR(started,4,2))
+              startyr=VAL(SUBSTR(started,7,2))
+              IF UPPER(RIGHT(started,2))="PM"
+                  starthr=VAL(SUBSTR(started,10,2))+12
+              ELSE
+                  starthr=VAL(SUBSTR(started,10,2))
+              ENDIF
+              startmin=VAL(SUBSTR(started,13,2))
+              startsec=VAL(SUBSTR(started,16,2))
+          ELSE
+              starthr=VAL(LEFT(started,2))
+              startmin=VAL(SUBSTR(started,4,2))
+              startsec=VAL(RIGHT(started,2))
+          ENDIF
+
+          IF LEN(ALLTRIM(stoptime))&gt;8
+              stopda=VAL(LEFT(stoptime,2))
+              stopmo=VAL(SUBSTR(stoptime,4,2))
+              stopyr=VAL(SUBSTR(stoptime,7,2))
+              IF UPPER(RIGHT(stoptime,2))="PM"
+                  stophr=VAL(SUBSTR(stoptime,10,2))+12
+              ELSE
+                  stophr=VAL(SUBSTR(stoptime,10,2))
+              ENDIF
+              stopmin=VAL(SUBSTR(stoptime,13,2))
+              stopsec=VAL(SUBSTR(stoptime,16,2))
+          ELSE
+              stophr=VAL(LEFT(stoptime,2))
+              stopmin=VAL(SUBSTR(stoptime,4,2))
+              stopsec=VAL(RIGHT(stoptime,2))
+          ENDIF
+          IF startsec&gt;stopsec
+              stopsec=stopsec+60
+              stopmin=stopmin-1
+          ENDIF
+          IF startmin&gt;stopmin
+              stopmin=stopmin+60
+              stophr=stophr-1
+          ENDIF
+          elapsedtime=REPLICATE("0",2-LEN(ALLTRIM(STR(stophr-starthr)))) + ;
+              ALLTRIM(STR(stophr-starthr)) + ":" + ;
+              REPLICATE("0",2-LEN(ALLTRIM(STR(stopmin-startmin)))) + ;
+              ALLTRIM(STR(stopmin-startmin)) + ":" + ;
+              REPLICATE("0",2-LEN(ALLTRIM(STR(stopsec-startsec)))) + ;
+              ALLTRIM(STR(stopsec-startsec))
+          IF !FILE('TIMETRAP.DBF')
+              CREATE TABLE timetrap (elapsed c(8), tinterval i)
+          ENDIF
+          INSERT INTO timetrap ;
+              VALUES (elapsedtime, THISFORM.Timer1.INTERVAL)
+          USE
+          SELECT (current_space)
+          THISFORM.TextBox1.VALUE=elapsedtime
+          THISFORM.TextBox1.REFRESH
+      ENDPROC
+
+  ENDDEFINE
+
+2. From the Command window, type:
+
+  "DO Timedemo" (without the quotation marks)
+
+3. Observe that the value "00:00:05" appears in the text box after approximately
+  five seconds.
+
+4. Click the combobox, move the mouse pointer down the center of the combobox
+  and position the mouse pointer over the number 7.
+
+5. Hold the mouse pointer over the number 7 for approximately 45 seconds.
+
+6. Move the mouse away from the combobox and click on the form. Note the value
+  displayed in the text box. The value is something other than 00:00:05. This
+  value is greater than five seconds. The value may appear in the text box
+  before you actually click on the form.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

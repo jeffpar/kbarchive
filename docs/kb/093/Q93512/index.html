@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93512: Reading LOGSHOW Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93512: Reading LOGSHOW Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93512/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93512/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93512/","publisher":null,"image":null,"headline":"Q93512: Reading LOGSHOW Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93512-reading-logshow-information">Q93512: Reading LOGSHOW Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93512
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+LOGSHOW is a utility that displays information about disk adapters, disk drives,
+CD-ROM drives, and tape drives installed on the system. LOGSHOW resides in the
+C:\OS2\SUPPORT directory.
+
+MORE INFORMATION
+================
+
+The general format of an error log entry displayed by LOGSHOW is as follows:
+
+  devnam cccc mm/dd/yy hh:mm:ss - meaning of code
+         additional information
+
+The following are the standard error log entry displays:
+
+devnam 000a mm/dd/yy hh:mm:ss-Informational:Real ESDI inquiry data follows:
+           00 00 00 00 00 00 00 00 GENERIC ESDI DISK TYPEnn
+
+        Where       Is
+        ------      --
+
+        devnam      Normally DEVINQ, which is the temporary device name
+                    used while the device is being configured
+
+        mm          The disk type code specified during setup of the PC
+
+devnam ffff mm/dd/yy hh:mm:ss - Informational: configure physical disk AOK
+
+      Apparent Geometry: ggggg hhhhhhhhh iiiiii jjjj kkkk llll
+        Actual Geometry: ggggg hhhhhhhhh iiiiii jjjj kkkk mmmmm
+              Media BPB: ggggg nnn ppppp qqq rrrrr sssss tt uuuuu
+                         vvvvv wwwww xxxxxxxxx yyyyyyyyy
+           Recommnd BPB: ggggg nnn ppppp qqq rrrrr sssss tt uuuuu
+                         vvvvv wwwww xxxxxxxxx yyyyyyyyy
+
+        Where       Is
+        -----       --
+
+        devnam      The name of the physical disk drive that has just
+                    been configured
+
+        ggggg       Sector size in bytes
+
+        hhhhhhhhh   The number of sectors on the physical volume
+
+        iiiiii      The number of cylinders in the physical volume
+
+        jjjj        The number of data heads accessing the physical
+                    volume
+
+        kkkk        The number of sectors per track
+
+        llll        Flags, in hex, that show how the geometry data was
+                    generated:
+
+           0x8000      Apparent geometry was already set by the time that
+                       the TSD first gained control.
+
+           0x4000      Actual geometry was already set by the time that
+                       the TSD first gained control
+
+           0x2000      Actual geometry was set from the apparent geometry
+                       by the TSD because the actual geometry was null
+
+           0x1000      Apparent geometry was set from the ROM data (INT 13
+                       function 8) by the TSD
+
+           0x0800      Apparent geometry was set from the BPB in the
+                       primary partition boot record by the TSD
+
+           0x0400      Media BPB was initialized by the TSD
+
+           0x0200      Recommended BPB was initialized by the TSD
+
+           0x0100      Recommended BPB was set from the BPB in the primary
+                       partition boot record by the TSD
+
+           0x0080      Geometry set from ROM by BID
+
+           0x0040      Geometry set from internal disk characteristics
+                       table by BID
+
+           0x0020      Geometry set using values determined through auto-
+                       configuration by BID
+
+           0x0010      Geometry set using values from INT 41 or INT 46 by
+                       BID
+
+           0x0008      Apparent and actual geometry set by BID
+
+        mmmmm       The cylinder number from which write precompensation
+                    is to be used
+
+        nnn         The cluster size
+
+        ppppp       The number of reserved sectors
+
+        qqq         The number of FATs
+
+        rrrrr       The number of directory entries
+
+        sssss       The number of sectors in the partition, if less than
+                    65,536 sectors
+
+        tt          The media descriptor, in hex
+
+        uuuuu       The number of sectors used by each FAT
+
+        vvvvv       The number of sectors per track
+
+        wwwww       The number of heads
+
+        xxxxxxxxx   The number of hidden sectors
+
+        yyyyyyyyy   The number of sectors in the partition, if more than
+                    65,535 sectors
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

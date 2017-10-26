@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139603: PRB: C2061 Errors When Compiling for Macintosh Target | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139603: PRB: C2061 Errors When Compiling for Macintosh Target" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139603/","publisher":null,"image":null,"headline":"Q139603: PRB: C2061 Errors When Compiling for Macintosh Target","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139603-prb-c2061-errors-when-compiling-for-macintosh-target">Q139603: PRB: C2061 Errors When Compiling for Macintosh Target</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139603
+Product(s): Microsoft C Compiler
+Version(s): MACINTOSH:2.0
+Operating System(s): 
+Keyword(s): kbsetup kbHWMAC kbVC kbprb
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a project for a Macintosh target, the following error messages
+occur:
+
+  C:\MSVC20\MFC\INCLUDE\afxwin.h(1908) : error C2061: syntax error : identifier
+  'LPSCROLLINFO'
+
+  C:\MSVC20\MFC\INCLUDE\afxwin.h(1910) : error C2061: syntax error : identifier
+  'LPSCROLLINFO'
+
+  C:\MSVC20\MFC\INCLUDE\afxwin1.inl(20) : fatal error C1903: unable to recover
+  from previous error(s); stopping compilation
+
+CAUSE
+=====
+
+The identifier LPSCROLLINFO is not defined in the Afxwin.h file in version 3.2
+of the Microsoft Foundation classes.
+
+RESOLUTION
+==========
+
+Run the provided Setupmfc.exe program, and add a path for the MFC 3.0 include
+directory to the INCLUDE environment variable in the development environment.
+More details follow.
+
+The Visual C++ 2.2 Setup program installs a program called Setupmfc.exe in the
+Msvc20\Bin directory and installs an "MFC 3.0 Source Setup" icon for it in the
+Microsoft Visual C++ 2.0 program group. To see the icon, you need to have the
+Macintosh add-on installed before you install Visual C++ 2.2. Here are the
+necessary steps:
+
+1. Use Setupmfc.exe to reinstall MFC 3.0 source code. Make sure you use the
+  Visual C++ 2.0 compact disc when the program asks for the MFC 3.0 source
+  directory. Using the Visual C++ 2.2 compact disc will not work.
+
+2. Open the Visual C++ development environment. On the Tools menu, click
+  Directories. Under Platform, click Macintosh. Under Show Directories for,
+  click Include files. Remove the existing header file directory for MFC 3.2.
+  Click the Add button, and add a path for the MFC 3.0 include directory. For
+  example:
+
+  C:\Msvc20\Mfc30\Include
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 2.20 2.2 2.00
+
+======================================================================
+Keywords          : kbsetup kbHWMAC kbVC kbprb 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev200Mac
+Version           : MACINTOSH:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

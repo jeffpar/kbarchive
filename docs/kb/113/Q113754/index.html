@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113754/","publisher":null,"image":null,"headline":"Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113754-syntax-error-when-verifying-udf-in-report-writer">Q113754: "Syntax Error" When Verifying UDF() in Report Writer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113754
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.1,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 09-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+- Microsoft FoxBASE+ for MS-DOS, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are verifying an user-defined function (UDF) in the Expression Builder,
+a "Syntax Error" appears. The "Syntax Error" message occurs because the
+Expression Builder cannot evaluate UDFs and expects instead to find an internal
+function.
+
+However, if the UDF() function exists as a stand-alone .PRG file and has
+previously been tested, the function will operate properly in a report when the
+report is previewed or printed.
+
+MORE INFORMATION
+================
+
+A UDF is a program routine that must always return a value of some type. It can
+be created in two forms: external and internal. An internal function is a
+subroutine within a .PRG file, and its name must be preceded with the FUNCTION
+statement. An external function is a single .PRG file, with a maximum of eight
+characters for its name.
+
+The external form must be used so that the Report Writer can find it as a
+stand-alone .PRG file in the default directory or SET PATH list (SET PROCEDURE
+TO is not evaluated).
+
+Once you have created the function, you can test the function by invoking it from
+the Command window or from within a program. In the following example, a
+function to print a time stamp (minute resolution) on each record is needed. To
+do this, create the file STAMP.PRG, which contains this single line:
+
+     RETURN LTRIM(STR(SECONDS()/60))+':'+LTRIM(STR(SECONDS()%60,10,3))
+
+This function returns the number of seconds since midnight divided by 60 to show
+the number of minutes (no decimals), concatenated with the modulus of SECONDS to
+show the remainder of seconds and hundredths of seconds. To test this function,
+type the following commands in the Command window:
+
+     SET TALK ON  &amp;&amp; if not on already
+     ? Stamp()
+
+FoxPro should return a character string consisting of the minutes, a colon, the
+seconds, a decimal point, and the hundredths of seconds. Although the function
+name is STAMP, it must be invoked as STAMP() to cause FoxPro to look for an
+internal function of the same name. When it cannot be found, FoxPro will then
+look externally for a file with the same name.
+
+After the function has been successfully tested, you can use it in the report. To
+use the function, create a field on the report and enter the name of the
+function followed by a left and right parentheses, as shown in the test above.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c 2.60 calculate report variable RWriter
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxBASE210DOS kbFoxBASESearch kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.1,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

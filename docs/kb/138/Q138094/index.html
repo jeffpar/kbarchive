@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138094: How to Create Updatable Views by Using SQL Passthrough | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138094: How to Create Updatable Views by Using SQL Passthrough" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138094/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138094/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138094/","publisher":null,"image":null,"headline":"Q138094: How to Create Updatable Views by Using SQL Passthrough","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138094-how-to-create-updatable-views-by-using-sql-passthrough">Q138094: How to Create Updatable Views by Using SQL Passthrough</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138094
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp600
+Last Modified: 06-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create an updateable view cursor using SQL Passthrough by setting
+properties with the CURSORSETPROP() function.
+
+MORE INFORMATION
+================
+
+Remote views provide the most common and easiest way to gain access to and
+update remote data. You can also use SQL passthrough technology to send SQL
+statements directly to a server. By default, a SQL passthrough query always
+returns a non-updateable snapshot of remote data, which is stored in an active
+view cursor. You can make the cursor updateable by setting properties with the
+CURSORSETPROP() function. An updateable remote view, in contrast, usually does
+not require that you set properties before you can update remote data.
+
+To update remote data, use the CURSORSETPROP() function to set the following five
+properties:
+
+- Tables
+
+- KeyFieldList
+
+- UpdateNameList
+
+- UpdatableFieldList
+
+- SendUpdates
+
+The update properties in a view definition (set by using DBSETPROP() function)
+and an active cursor vary slightly. The table on page 60 in the Visual FoxPro
+Professional Features Guide outlines the differences.
+
+The following program is an example of how to create an updateable view Cursor.
+
+Sample Code
+-----------
+
+  ************************** Beginning of code ******************
+
+     ** This example is using SQL Server as the back-end.
+     ** Your back-end server may vary.
+     Handle = SQLCONNECT("SQL421","sa","")
+     IF handle&lt;0
+       WAIT WINDOW "connection not made"
+       CANCEL
+     ELSE
+       =SQLEXEC(Handle, "select * from authors")
+       =CURSORSETPROP("Tables", "authors")
+       ** The next property must include every remote field matched with the
+       ** view cursor field.
+       =CURSORSETPROP("UpdateNameList", "au_id authors.au_id, au_lname;
+         authors.au_lname, au_fname authors.au_fname, phone;
+         authors.phone, address authors.address,;
+         city authors.city, state authors.state,;
+         zip authors.zip, contract authors.contract")
+       =CURSORSETPROP("KeyFieldList", "au_id")
+       ** The next property specifies which fields can be updated.
+       =CURSORSETPROP("UpdatableFieldList", "au_lname, au_fname, phone,;
+         address, city, state, zip, contract")
+       ** The next property enables you to send updates.
+       =CURSORSETPROP("SendUpdates", .T.)
+
+       BROWSE
+       USE
+       =SQLDISCONNECT(handle)
+     ENDIF
+     ************************* End of code ******************************
+
+Any changes made to the data in the Browse window will update the table on the
+remote server.
+
+
+NOTE: If you are unsure of how to set the above properties you can create a
+remote view. Please refer to the REFERENCES section for information on creating
+a remote view.
+
+When you run the view, use the CURSORGETPROP() function in the Debug Window to
+determine what the five properties are set to. For example, put
+CURSORGETPROP("UpdateNameList") in the Debug window to see how the property is
+set in the CURSORSETPROP() function.
+
+
+REFERENCES
+==========
+
+For more information about creating an updateable remote view, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q130413 How to Create an Updatable Cursor (View) to Update Table
+
+Additional query words: VFoxMac VFoxWin pass-through
+
+======================================================================
+Keywords          : kbvfp300 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP600
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

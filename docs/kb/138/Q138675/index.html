@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138675: How to Create Raised Text Boxes in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138675: How to Create Raised Text Boxes in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138675/","publisher":null,"image":null,"headline":"Q138675: How to Create Raised Text Boxes in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138675-how-to-create-raised-text-boxes-in-visual-foxpro">Q138675: How to Create Raised Text Boxes in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138675
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro, a text box can have a recessed look to it by setting the
+SpecialEffect property to 3D-Effect. There is no setting to make the text box
+have a raised look. However, by using lines with contrasting colors on each side
+of the text box, you can give the text box a raised look on the form. The best
+colors for making a text box have a raised look are light gray for the left and
+top sides and dark gray for the bottom and right sides. Below are the steps to
+create a raised text box.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. Create a form and add a text box to it. Change the SpecialEffect property of
+  the text box to 1 - Plain.
+
+2. Select the Line tool from the Form Controls toolbar. Draw a line equal to the
+  length of the text box. You can press SHIFT+RIGHT ARROW or SHIFT+LEFT ARROW
+  to make it easy to adjust the line length.
+
+3. After making the line equal to the length of the text box, make a copy of it
+  by pressing CTRL+C and then pressing CTRL+V.
+
+4. Repeat steps 2 and 3 to create two lines equal to the width of the text box.
+
+5. Click the first long line, and change the Border Color property in the
+  Properties sheet to 192,192,192. Using the mouse or arrow keys, overlap this
+  line to the top border line of the text box.
+
+6. Repeat Step 5 for the first width line, using the mouse or arrow key to
+  overlap this line to the left border line of the text box.
+
+7. Click the second long line, changing the Border Color property in the
+  Properties sheet to 128,128,128 and the BorderWidth property to 2. Using the
+  mouse or arrow keys, place this line directly under the bottom border line of
+  the text box. Do not overlap the border line of the text box.
+
+8. Repeat Step 7 for the second width line, placing it just outside of the right
+  border line of the text box.
+
+9. Select another text box and place it on the form. The SpecialEffect property
+  should be set to 0 - 3D by default.
+
+Run the form, and note that the first text box has a raised look while the second
+textbox has a recessed look.
+
+If a darker shadow is desired on the raised textbox, change the Border Color
+property of the bottom and right lines in the Properties sheet to 75,75,75.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

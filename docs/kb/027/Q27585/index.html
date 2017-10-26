@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/027/Q27585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/027/Q27585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/027/Q27585/","publisher":null,"image":null,"headline":"Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q27585-info-specifying-windows-bounding-box-coordinates">Q27585: INFO: Specifying Windows "Bounding Box" Coordinates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q27585
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+   - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+GDI functions, such as Rectangle, Ellipse, RoundRect, Chord, and Pie, have
+parameters that specify the coordinates of a "bounding box" into which the
+figure is drawn. Windows draws the figure up to, but not including, the right
+and bottom coordinates.
+
+MORE INFORMATION
+================
+
+Suppose the following call is made:
+
+     Rectangle(hDC, 1, 1, 5, 3)
+
+Assuming that the device context is using the MM_TEXT mapping mode (in which case
+logical units map directly to physical pixels), the resulting rectangle will be
+4 pixels wide and 2 pixels tall. The following diagram shows which pixels are
+affected:
+
+           ---0-----1-----2-----3-----4-----5-----6-
+           |     |     |     |     |     |     |
+           0     |     |     |     |     |     |
+           |-----|-----|-----|-----|-----|-----|----
+           |     |     |     |     |     |     |
+           1     |  X  |  X  |  X  |  X  |     |
+           |-----|-----|-----|-----|-----|-----|----
+           |     |     |     |     |     |     |
+           2     |  X  |  X  |  X  |  X  |     |
+           |-----|-----|-----|-----|-----|-----|----
+           |     |     |     |     |     |     |
+           3     |     |     |     |     |     |
+           |-----|-----|-----|-----|-----|-----|----
+           |     |     |     |     |     |     |
+           4     |     |     |     |     |     |
+
+It may be helpful to think of the display as a grid, with each pixel contained in
+a grid cell. The X1, Y1, X2, and Y2 parameters to the Rectangle function specify
+an imaginary "bounding box" drawn on the grid. The rectangle is drawn within the
+bounding box.
+
+The height, width, and area of the resulting rectangle have the following useful
+properties:
+
+  Height = X2 - X1
+  Width  = Y2 - Y1
+  Area   = Height * Width
+
+Additional query words: 3.00 3.10 3.50 4.00 win16sdk
+
+======================================================================
+Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

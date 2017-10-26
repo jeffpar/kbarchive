@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98745: How to Emulate a READ Inside Another READ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98745: How to Emulate a READ Inside Another READ" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98745/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98745/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98745/","publisher":null,"image":null,"headline":"Q98745: How to Emulate a READ Inside Another READ","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98745-how-to-emulate-a-read-inside-another-read">Q98745: How to Emulate a READ Inside Another READ</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98745
+Product(s): Microsoft Fox Miscellaneous Products
+Version(s): MACINTOSH:2.01
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The code example below shows one method of emulating a READ inside a READ.
+Occasionally, you may need to bring up a new screen with GETs or a new GET field
+dependent upon the information entered in the original GET. Because FoxBASE+/Mac
+does not allow nested READs, the original READ must be terminated before a new
+GET with a READ is issued.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+expressed or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+Code Example
+------------
+
+     *This is an example of how to create a READ inside a READ.
+     SET PROCEDURE TO readread &amp;&amp; This file is named READREAD.PRG.
+     SET TALK Off
+     SET BELL Off
+     * Create memory variable for the GETs.
+     STORE space(10) to b,c,d
+     STORE 0 to a
+     * Create two public variables, one that will act as a flag
+     * to terminate the read and execute the "multiple read," and
+     * the other that will contain the information input for the
+     * GET inside the second READ.
+     Store .F. to flag
+     Store Space(10) to mvar
+
+     DO WHILE .T.
+       SCREEN 1 TYPE 0 HEADING "This is it!" AT 20,2 SIZE 286,492;
+         PIXELS FONT "Geneva",12 COLOR 0,0,0,-1,-1,-1 TOP
+       CLEAR
+       @ PIXELS 72,122 GET a PICTURE "@^ First;Second;Third";
+          VALID udf(a)
+       @ PIXELS 72,89 SAY "A" STYLE 0 FONT "Helvetica",270;
+          COLOR 0,0,0,-1,-1,-1
+       @ PIXELS 108,98 SAY "B" STYLE 0 FONT "Helvetica",270;
+          COLOR 0,0,0,-1,-1,-1
+       @ PIXELS 153,116 SAY "C" STYLE 0 FONT "Helvetica",270;
+          COLOR 0,0,0,-1,-1,-1
+       @ PIXELS 189,134 SAY "D" STYLE 0 FONT "Helvetica",270;
+          COLOR 0,0,0,-1,-1,-1
+       * There is nothing in it now so it will appear blank. The
+       * information will appear after input and the call to the UDF
+       * procedure is complete.
+       @ PIXELS 108,145 SAY mvar STYLE 0 FONT "Helvetica",14;
+          SIZE 14,121 COLOR 0,0,0,-1,-1,-1
+       @ PIXELS 153,158 GET c STYLE 0 FONT "Helvetica",14;
+          SIZE 14,121 COLOR 0,0,0,-1,-1,-1
+       @ PIXELS 189,173 GET d STYLE 0 FONT "Helvetica",14;
+          SIZE 14,121 COLOR 0,0,0,-1,-1,-1
+       READ
+       * This must be in the loop so it will come back to the READ
+       * when it is done.
+       IF Flag
+         DO inside
+       ENDIF
+     ENDDO
+
+     * This is the procedure called upon from the popup menu.
+     PROCEDURE udf
+     PARAMETER pram
+       DO CASE
+       * This portion of the code needs to be modified. This is
+       * just a shell of what must be used. The two commands
+       * (STORE and KEYBOARD) must be present.
+       CASE a=1
+         STORE .T. to Flag      &amp;&amp; Set flag to true.
+         KEYBOARD CHR(23)       &amp;&amp; Cause the READ to terminate.
+       CASE a=2
+         STORE .T. to Flag      &amp;&amp; Set flag to true.
+         KEYBOARD CHR(23)       &amp;&amp; Cause the READ to terminate.
+       CASE a=3
+         STORE .T. to Flag      &amp;&amp; Set flag to true.
+         KEYBOARD CHR(23)       &amp;&amp; Cause the READ to terminate.
+       ENDCASE
+     RETURN .T.                 &amp;&amp; Return to the DO loop.
+
+     * This is the procedure that emulates a READ inside a READ.
+     PROCEDURE inside
+       @ PIXELS 108,145 GET mvar STYLE 0 FONT "Helvetica",14;
+          SIZE 14,121 COLOR 0,0,0,-1,-1,-1
+       READ
+       STORE .F. to flag    &amp;&amp; Make flag false again to not come back
+                            &amp;&amp; to this procedure.
+       KEYBOARD CHR(9)      &amp;&amp; TAB to the next field.
+       RETURN               &amp;&amp; Return to the DO WHILE...ENDDO loop.
+     *End program.
+
+Additional query words: 2.01
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

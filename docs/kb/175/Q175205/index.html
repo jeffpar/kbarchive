@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175205: Printout Truncated When Printing to Plotter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175205: Printout Truncated When Printing to Plotter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175205/","publisher":null,"image":null,"headline":"Q175205: Printout Truncated When Printing to Plotter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175205-printout-truncated-when-printing-to-plotter">Q175205: Printout Truncated When Printing to Plotter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175205
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.00
+Operating System(s): 
+Keyword(s): kbprint
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing to a plotter printer under from a computer running Windows NT 4.0,
+the printout might shift down and to the left, and might truncate text or
+graphics at the bottom and on the right side of the page. All text and graphics
+might print as expected on a computer running Windows NT 3.51.
+
+-or-
+
+If a user attempts to format a document with no (zero) margins on a computer
+running Windows NT 3.51, applications such as Write allow the settings and will
+not return any error message. On computers running Windows NT 4.0, the following
+(or a similar) message is returned when no (zero) margin is requested:
+
+  
+
+  Current printer cannot print outside these margins:
+  Left: 0.71 Right: 0.7
+  Top: 0.24 Bottom: 0.24
+
+CAUSE
+=====
+
+When you set document margins to all zeros in an application, a check is made to
+determine minimum margins for the selected print device. A routine contained
+within plotter.dll checks the manufacturer- supplied "plotter characterization
+data" (PCD) file. This file supplies the hardware minimum margin values for the
+print device. Minimum margin values are not always correctly enforced because of
+an error in Windows NT 3.51.
+
+Minimum margin values are correctly enforced in Windows NT 4.0. A request for a
+zero margin setting (or a value less than the PCD margin minimum) returns an
+error message that shows the minimum values. In some cases in Windows NT 4.0,
+printer manufacturers increased minimum margins to guarantee that print data is
+contained within the device printable areas.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+This behavior is by design in Windows NT 4.0.
+
+RESOLUTION
+==========
+
+To resolve this problem, in Windows NT 4.0, create a custom form that is
+slightly larger than the actual page size you are using. For example, if the
+area to be printed on the plotter paper is 8.5" x 11", and the unprintable
+region is .24" on the top and bottom, and .7" on the left and the right, create
+a form with dimensions of at least 9.9" x 11.48".
+
+For more information on how to create custom forms, please see the following
+Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q157172
+TITLE : How to Create Custom Forms in Windows NT 4.0
+
+Additional query words: sheet-fed media sheet-feed hp DesignJet 600c 650c printable area margin
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.00
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

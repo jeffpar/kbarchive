@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190006/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190006/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190006/","publisher":null,"image":null,"headline":"Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190006-odbc-drivers-error-80004005-when-browsing-asp-pages">Q190006: "ODBC Drivers Error 80004005" When Browsing ASP Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190006
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When browsing an ASP page, the following error may occur:
+
+  OLE DB Provider error for ODBC Drivers error 80004005
+  [Microsoft] [ODBC Driver Manager] Data Source Name not found and no default
+  driver specified.
+
+CAUSE
+=====
+
+The Global.asa file is not located in the root directory of the application.
+
+WORKAROUND
+==========
+
+To determine if a directory is designated as an application root and verify that
+it also contains the Global.asa file, perform the following steps:
+
+1. In the Internet Service Manager (ISM), verify that the node is configured as
+  an application.
+
+  To do this, verify that the node displays the package icon in the ISM. To
+  further verify, view the property sheet for that node. On the Virtual
+  Directory tab, under Application Settings, an active name should be listed
+  for the application. If the name is "Default Application" and it appears
+  dimmed, the node is NOT an application.
+
+2. Verify that the Global.asa file is located in the root directory of the
+  application.
+
+  To determine the root directory of the application, view the property sheet
+  for the application. Check the Local Path setting on the Virtual Directory
+  tab.
+
+MORE INFORMATION
+================
+
+This error is known to occur after you have used Visual InterDev to create a
+sample ASP page, which works. However, when you try to incorporate that sample
+ASP code in your application, the error occurs.
+
+For more information about the Global.asa file, see the Windows NT Option Pack
+Product Documentation. On the Index tab, type "GLOBAL.ASA" (without the
+quotation marks), and then select the "Global.asa File Reference (IIS)" topic.
+
+For more information about creating applications, open the following topic in the
+Product Documentation:
+
+- Microsoft Internet Information
+
+- Server Administration
+
+- Configuring Applications
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: mmc vid akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

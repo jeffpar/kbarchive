@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87494/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87494/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87494/","publisher":null,"image":null,"headline":"Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87494-bug-bitblt-bitmap-on-vga-display-causes-gp-fault">Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87494
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbOSWin310 _IK kbSDKWin16
+Last Modified: 14-JUL-1999
+
+3.10
+WINDOWS
+kbprg kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application for the Microsoft Windows environment calls BitBlt() to copy
+a large (640 x 480) bitmap to the VGA screen, the application experiences a
+General Protection (GP) fault.
+
+RESOLUTION
+==========
+
+Increase the size of the bitmap to store one additional scan line. Use the
+BitBlt function to copy only the desired portion of the bitmap to the screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+There are two methods for increasing the size of the bitmap. If the contents of
+the bitmap are fixed, Microsoft Paintbrush or a similar image- editing tool can
+be used to add or remove a scanline from the bitmap.
+
+If the image changes, the following eight steps add a scanline to a bitmap under
+program control and copy the bitmap to the screen. The handle to the original
+bitmap is stored in the hBMPOriginal variable.
+
+1. Declare variables.
+
+     HBITMAP hBMPCompatible, hBMPOld1, hBMPOld2;
+     HDC hDCMem1, hDCMem2, HDCScreen;
+
+2. Retrieve a Display Context (DC) for the screen.
+
+     hDCScreen = GetDC(NULL);
+
+3. Create a bitmap compatible with the screen that contains one more scanline
+  than the original bitmap.
+
+     hBMPCompatible = CreateCompatibleBitmap(hDCScreen, 640, 481);
+
+4. Create two memory DCs compatible with the screen.
+
+        hDCMem1 = CreateCompatibleDC(hDCScreen);
+        hDCMem2 = CreateCompatibleDC(hDCScreen);
+
+5. Select the original bitmap into one of the DCs. Select the new bitmap into
+  the other.
+
+     hBMPOld1 = SelectObject(hDCMem1, hBMPOriginal);
+     hBMPOld2 = SelectObject(hDCMem2, hBMPCompatible);
+
+6. Use the BitBlt function to copy the original bitmap into the compatible
+  bitmap. The function does not fill the bottom scanline because the bottom
+  scanline is not copied to the screen.
+
+        BitBlt(hDCMem2, 0, 0, 640, 480, hDCMem1, 0, 0, SRCCOPY);
+
+7. Copy the compatible bitmap to the screen.
+
+        BitBlt(hDCScreen, 0, 0, 640, 480, hDCMem2, 0, 0, SRCCOPY);
+
+8. Free resources. Note that the code below deletes the compatible bitmap. If
+  the bitmap is required later in the program, defer deleting the bitmap until
+  just before the application closes.
+
+     hBMPCompatible = SelectObject(hDCMem2, hBMPOld2);
+     DeleteObject(hBMPCompatible);
+     hBMPOriginal = SelectObject(hDCMem1, hBMPOld1);
+     DeleteDC(hDCMem1);
+     DeleteDC(hDCMem2);
+     ReleaseDC(NULL, hDCScreen);
+
+Additional query words: buglist3.10 3.10 scan line
+
+======================================================================
+Keywords          : kbOSWin310 _IK kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193728/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193728/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193728/","publisher":null,"image":null,"headline":"Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193728-prb-set-collate-to-command-causes-inconsistent-comparisons">Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193728
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Comparing the equality of alphabetic characters using the UPPER() and LOWER()
+functions with the collation sequence set to Czech or Hungarian, produces
+incorrect results with some or all of the comparisons.
+
+RESOLUTION
+==========
+
+One workaround is to use the double equal operator (==) when making string
+comparisons.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Codepage 1250 or 852 works for a collation sequence of either Hungarian or
+Czech.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Config.fpw file, set the codepage to 1250 as follows and restart
+  Visual FoxPro:
+
+  Codepage=1250
+
+2. Create a program containing the following code and run the program. This code
+  compares the lower case letters of the alphabet:
+
+     MODIFY WINDOW SCREEN FONT "Courier New",10
+     CLEAR
+     *SET COLLATE TO "MACHINE"
+     SET COLLATE TO "CZECH" &amp;&amp; or "Hungary" with codepage of 1250
+    
+     ? space(2)+"Lower to Upper"+space(14)+"Upper to Lower"+space(13) ;
+       +"ASC() Values"
+
+     ? space(2)+REPLICATE("-",14)+space(14)+REPLICATE("-",14)+space(13);
+       +REPLICATE("-",12)
+     FOR i = 1 TO 26
+        DO test WITH CHR(96 + i)
+     ENDFOR
+
+     PROCEDURE test (s)
+
+     ? s, "Lower("+s+") to Upper("+s+"):", LOWER(s) = UPPER(s), ;
+       "  Upper("+s+") to Lower("+s+"):", UPPER(s) = LOWER(s),;
+       ASC(s), "=", ASC(UPPER(s)), "?"
+
+  Comparisons using lower case letters always produce incorrect results when
+  comparing values returned from the LOWER() to the UPPER() functions (?
+  LOWER(s)=UPPER(s)). All of the UPPER() to LOWER() comparisons with lower case
+  letters (? UPPER(s)=LOWER(s)) are incorrect except for the following
+  letters:
+
+   Letter   Decimal
+   ----------------
+
+   b        98
+   f        102
+   g        103
+   h        104
+   j        106
+   k        107
+   m        109
+   p        112
+   q        113
+   v        118
+   w        119
+   x        120
+
+  NOTE: The lower case "g" evaluates incorrectly when comparing UPPER() to
+  LOWER() under the Hungary collation sequence.
+
+3. Create another program and add the following code to compare the upper case
+  letters of the alphabet:
+
+     MODIFY WINDOW SCREEN FONT "Courier New",10
+     CLEAR
+     *SET COLLATE TO "MACHINE"
+     SET COLLATE TO "CZECH" &amp;&amp; or "Hungary" with codepage of 1250
+     
+     ? space(2)+"Lower to Upper"+space(14)+"Upper to ;
+       Lower"+space(13)+"ASC() Values"
+
+     ? space(2)+REPLICATE("-",14)+space(14)+REPLICATE("-",14)+space(13);
+       +REPLICATE("-",12)
+     FOR i = 1 TO 26
+        DO test WITH CHR(64 + i)
+     ENDFOR
+
+     PROCEDURE test (s)
+
+     ? s, "Lower("+s+") to Upper("+s+"):", LOWER(s) = UPPER(s), ;
+       "  Upper("+s+") to Lower("+s+"):", UPPER(s) = LOWER(s),;
+       ASC(s), "=", ASC(UPPER(s)), "?"
+
+  Comparisons using upper case letters always produce incorrect results when
+  comparing values returned from the LOWER() to the UPPER() functions (?
+  LOWER(S)=UPPER(S)). All of the UPPER() to LOWER() comparisons with upper case
+  letters (? UPPER(S)=LOWER(S)) are incorrect except for the following
+  letters:
+
+   Letter   Decimal
+   ----------------
+
+   B        66
+   F        70
+   G        71
+   H        72
+   J        74
+   K        75
+   M        77
+   P        80
+   Q        81
+   V        86
+   W        87
+   X        88
+
+  NOTE: The upper case "G" evaluates incorrectly when comparing UPPER() to
+  LOWER() under the Hungary collation sequence.
+
+4. Remove the CodePage= command from the Config.sys and change the SET COLLATE
+  TO command to MACHINE. Now all the comparisons between UPPER() and LOWER()
+  and LOWER() and UPPER() values are correct.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q176884 PRB: Problems with SET COLLATE and Queries with Integer Fields
+
+  Q181085 SET COLLATE &amp; Queries - Additional Problem Scenarios
+
+Additional query words: kbVFp500a kbVFp500 kbVFp600 kbXBase KbDBFDBC kbDatabase kbdse kbcode
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

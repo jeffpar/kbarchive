@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104685: How to Retrieve Hidden/System Files Using Dir[$]() Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104685: How to Retrieve Hidden/System Files Using Dir[$]() Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104685/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104685/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104685/","publisher":null,"image":null,"headline":"Q104685: How to Retrieve Hidden/System Files Using Dir[$]() Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104685-how-to-retrieve-hiddensystem-files-using-dir-function">Q104685: How to Retrieve Hidden/System Files Using Dir[$]() Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104685
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to use the Dir[$]() function in conjunction
+with the GetAttr() function to retrieve read-only, hidden, or system files.
+
+MORE INFORMATION
+================
+
+The Dir[$] functions take a filespec and an attrmask as optional arguments.
+
+If the attrmask argument specifies the volume label, the Dir[$] functions ignores
+all other attributes. If the attrmask argument is ATTR_HIDDEN, ATTR_SYSTEM, or
+ATTR_DIRECTORY, the functions also return the files that do not have any special
+attributes.
+
+If the filespec argument is used, the functions return files that do not have any
+hidden, system, or directory attributes and meet the filespec requirements.
+
+To retrieve only read-only, hidden, or system files, use the Dir[$]() functions
+in conjunction with the GetAttr() function. The following shows by example how
+to retrieve only hidden files (files that have the HIDDEN or
+ATTR_HIDDEN+ATTR_ARCHIVE attributes) by using the Dir() function in conjunction
+with the GetAttr() function.
+
+Step-by-Step Example
+--------------------
+
+1. Start Visual Basic or begin a new project if Visual Basic is already running.
+  Form1 is created by default.
+
+2. Place the following code in the general declarations area for Form1:
+
+     Const ATTR_NORMAL = 0
+     Const ATTR_READONLY = 1
+     Const ATTR_HIDDEN = 2
+     Const ATTR_SYSTEM = 4
+     Const ATTR_VOLUME = 8
+     Const ATTR_DIRECTORY = 16
+     Const ATTR_ARCHIVE = 32
+
+3. Add a List box and a command button to Form1.
+
+4. Add the following code to the command button's click event procedure:
+
+     Sub Command1_Click ()
+        Dim filename As String
+        Dim attr As Integer
+        ' retrieve hidden and normal files
+        filename = Dir$("c:\", ATTR_HIDDEN)
+        Do Until filename = ""
+           attr = GetAttr("c:\" &amp; filename)
+           ' if the file has the hidden attribute
+           If (attr And ATTR_HIDDEN) Then
+              ' select it
+              List1.AddItem filename
+           End If
+           filename = Dir$
+        Loop
+
+     End Sub
+
+5. Run the program and click the command button to see any existing hidden files
+  in the root directory.
+
+Additional query words: 2.00 3.00 Dir Dir$ GetAttr docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB300Search kbVB300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

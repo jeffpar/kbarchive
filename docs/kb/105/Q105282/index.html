@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105282/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105282/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105282/","publisher":null,"image":null,"headline":"Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105282-incorrect-source-routing-bit-causes-netbeui-network-storm">Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105282
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-FEB-2002
+
+SYMPTOMS
+========
+
+Receiving a frame on an Ethernet with the source routing bit enabled can cause a
+machine running NetBEUI to propagate a network storm: entering a loop of
+transmitting invalid frames to other machines on the net. This seems to occur
+mostly with 3Com Etherlink3 network interface cards (NICs).
+
+CAUSE
+=====
+
+NOTE: SABME and UA are defined below.
+
+When a link is established and the SABME frame has the source routing bit set
+erroneously, the routing length field is accounted for in the link table entry
+as well as in the original routing header info.
+
+This causes all subsequent frames on this link (including the following UA) to
+contain the original source routing info, but the source routing bit is ignored
+on the receive end, causing the frame to be misinterpreted. When the original
+frame contains a SABME with the source routing bit set incorrectly, the two
+machines enter a loop broadcasting SABME frames back and forth.
+
+STATUS
+======
+
+A fix has been made to NetBEUI, causing it to refuse to accept frames containing
+source routing information when operating on an Ethernet network.
+
+
+DEFINITIONS
+-----------
+
+- SABME stands for "set asynchronous balanced mode extended." It is a frame
+  sent from one logical link control (LLC) layer to another requesting
+  establishment of a link connection between them.
+
+- UA stands for "unnumbered acknowledgment." It is a frame sent in response to
+  a SABME that accepts the request and establishes the link connection.
+
+Additional query words: 2.20 2.2 multicast
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

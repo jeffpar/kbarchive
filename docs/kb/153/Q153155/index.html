@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153155: How To Use New Undocumented Foxtools Function JustCSName() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153155: How To Use New Undocumented Foxtools Function JustCSName()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153155/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153155/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153155/","publisher":null,"image":null,"headline":"Q153155: How To Use New Undocumented Foxtools Function JustCSName()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153155-how-to-use-new-undocumented-foxtools-function-justcsname">Q153155: How To Use New Undocumented Foxtools Function JustCSName()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153155
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use a new Foxtools function that returns the file
+name portion of a complete path and file name and preserves the case of the
+letters in the file name. It is called the JustCSName() function.
+
+MORE INFORMATION
+================
+
+JustCSName() returns the file name portion of a complete path and file name
+while preserving the case of the letters in the file name as they appear in the
+Macintosh Finder.
+
+The syntax is:
+
+  JustCSName(cFilename)
+
+where cFilename Specifies the name (including path) of the file for which you
+want only the case-sensitive name.
+
+JustCSName returns a character string.
+
+The JustCSName function is similar to the JustFName() function already documented
+in Foxtools.hlp. The Foxtools.hlp file documents other Foxtools.cfm (or
+Foxtools.slm) functions. It is located in the Microsoft Visual FoxPro:Tools
+folder.
+
+Step-by-Step Example
+--------------------
+
+In the Visual FoxPro Command window, type in the following commands to see how
+JustCSName() works in relation to JustFName() and the GETFILE() functions. The
+Visual FoxPro screen should be visible so the results of the ? commands are
+visible:
+
+  ? GETFILE()
+
+  *Choose any file, preferably one that has upper- and lower-case letters
+  *when viewed in Finder.
+
+  SET LIBRARY TO HOME()+"Foxtools.cfm"
+  ? JustFName(GETFILE())
+
+  *The first of these two commands loads the Foxtools library. Choose
+  *the same file as above when GETFILE() is issued and the JustFName()
+  *function will strip off the path and return just the file name.
+
+  ? JustCSName(GETFILE())
+
+  *This command will return a result similar to the JustFName() function,
+  *except the case of the letters in the file name will be preserved.
+
+Additional query words: VFoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/307/Q307628/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/307/Q307628/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/307/Q307628/","publisher":null,"image":null,"headline":"Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q307628-xfor-routing-to-multiple-domains-with-a-single-smtp-proxy-addr">Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q307628
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure the Internet Mail Service in Exchange
+Server 5.5 to reroute Simple Mail Transfer Protocol (SMTP) messages for multiple
+e-mail domains by using a single SMTP proxy address.
+
+MORE INFORMATION
+================
+
+The Exchange Server 5.5 Internet Mail Service can rewrite the SMTP headers of
+e-mail messages so that you can reroute an e-mail message that is sent to a
+recipient by using the e-mail address &lt;user&gt;@&lt;domain&gt;.com to another
+SMTP address &lt;user&gt;2@&lt;domain&gt;2.com without configuring this
+destination recipient with both SMTP proxy addresses. This article describes a
+method to accomplish this in which the mailbox in Exchange Server 5.5 only needs
+the primary SMTP address on the mailbox.
+
+For additional information about how to configure the Internet Mail Service in
+Exchange Server 5.5 to route SMTP messages for multiple domains by adding
+secondary SMTP proxy addresses to each mailbox, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q264557 XFOR: Configuring the Internet Mail Service to Route SMTP Messages
+  for Multiple Domains
+
+In Microsoft Exchange 2000 Server, the functionality to reroute SMTP messages for
+multiple e-mail domains by using a single SMTP proxy address (which this article
+describes) does not exist. In Exchange 2000, if you either use recipient
+policies or add one address at a time to the individual mailbox, you must still
+configure the user with all of the SMTP proxy addresses that you want the user
+to receive e-mail messages for.
+
+In Exchange Server 5.5, users on your Exchange Server 5.5 computer might have
+multiple SMTP e-mail addresses on the Internet; these users have only a single
+SMTP e-mail address defined on Exchange Server, but these users need to receive
+all of the e-mail that is sent to the users' alternate SMTP addresses on this
+same Exchange Server 5.5 computer. You can configure the Internet Mail Service
+to route SMTP mail for these multiple e-mail domains to a single e-mail domain.
+
+The mail exchange (MX) records for these other e-mail domains must first be set
+up to point to your server before you configure the Internet Mail Service.
+
+To configure the Internet Mail Service on Exchange Server 5.5 to reroute e-mail
+messages for multiple e-mail domains to a single e-mail domain, use the
+configuration in the following example.
+
+In this example, the Exchange Server organization is adatum.com, and the only
+SMTP e-mail address that is defined for a user in this organization is
+administrator@adatum.com. However, this user has other valid e-mail addresses on
+the Internet that are not defined in Exchange Server: administrator@cpandl.net,
+administrator@cpandl.org, and administrator@internal.adatum.com.
+
+To reroute all of the messages that are sent to any of these e-mail addresses to
+the administrator@adatum.com address without defining additional SMTP addresses
+for the administrator on the administrator's mailbox, in the Internet Mail
+Service Configuration properties, click the Routing tab, and then configure
+rerouting as follows.
+
++----------------------------------+
+| Sent to             | Route to   | 
++----------------------------------+
+| adatum.com          | inbound    | 
++----------------------------------+
+| cpandl.net          | adatum.com | 
++----------------------------------+
+| cpandl.org          | adatum.com | 
++----------------------------------+
+| internal.adatum.com | adatum.com | 
++----------------------------------+
+
+After you change the configuration, send a test message to
+administrator@cpandl.net. This message is rerouted to administrator@adatum.com.
+Send another test message for both administrator@cpandl.org and
+administrator@internal.adatum.com; the message is also rerouted to
+adminstrator@adatum.com.
+
+NOTE: You can also use this configuration for communication between Exchange
+Server sites by means of the Internet Mail Service and between Exchange Server
+organizations by means of the Internet Mail Service.
+
+A limitation of this procedure (and also of the procedure that is described in
+Microsoft Knowledge Base article Q264557) is that there can be only one reply
+address. When a user replies to a message that was sent to any of the users'
+e-mail addresses that are configured in the Internet Mail Service, if the
+address is not the primary SMTP address, the reply address is still be placed in
+the outgoing mail, not the secondary address that is configured in the Internet
+Mail Service.
+
+The method that this article describes to reroute SMTP messages for multiple
+e-mail domains by using a single SMTP proxy address is quite different from
+routing mail messages on Exchange Server based on e-mail addresses. For
+additional information about routing mail messages on Exchange Server based on
+e-mail addresses in Exchange Server 5.5, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q251124 XFOR: How to Configure Alias Table Functionality in Exchange Server
+
+
+Additional query words: Alias Table SMTP IMS intersite
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

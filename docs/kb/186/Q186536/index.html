@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186536: Terminal Server Performance Monitor Objects and Counters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186536: Terminal Server Performance Monitor Objects and Counters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186536/","publisher":null,"image":null,"headline":"Q186536: Terminal Server Performance Monitor Objects and Counters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186536-terminal-server-performance-monitor-objects-and-counters">Q186536: Terminal Server Performance Monitor Objects and Counters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186536
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A number of Performance Monitor objects and counters have been added to Terminal
+Server. This article describes all the new objects and counters and what they
+mean.
+
+MORE INFORMATION
+================
+
+OBJECT: Process (Existing Object)
+---------------------------------
+
+ID Logon: Citrix-supplied process SessionID represents a unique logon occurrence
+because a given account may have multiple logon instances simultaneously. All
+processes related to a specific logon occurrence have the same SessionID.
+
+ID USER: Process owners Security ID. This information relates the process to a
+specific account in the system's security database. An account may have multiple
+occurrences (SessionIDs) active on the system at a time.
+
+OBJECT: Session (New Object)
+----------------------------
+
+The instances available for the object counters are the currently running
+sessions on the Terminal Server computer (both active and disconnected).
+
+% Privileged Time: Privileged Time is the percentage of elapsed time that this
+process's threads have spent executing code in privileged mode. When a Windows
+NT system service is called, the service will often run in privileged mode to
+gain access to system-private data. Such data is protected from access by
+threads executing in user mode. Calls to the system may be explicit, or they may
+be implicit such as when a page fault or an interrupt occurs. Unlike some early
+operating systems, Windows NT uses process boundaries for subsystem protection
+in addition to the traditional protection of user and privileged modes. These
+subsystem processes provide additional protection. Therefore, some work done by
+Windows NT on behalf of your application may appear in other subsystem processes
+in addition to the Privileged Time in your process.
+
+% Processor Time: Processor Time is the percentage of elapsed time that all of
+the threads of this process used the processor to execute instructions. An
+instruction is the basic unit of execution in a computer, a thread is the object
+that carries out instructions, and a process is the object created when a
+program is run. Code carried out to handle certain hardware interrupts or trap
+conditions may be counted for this process.
+
+% User Time: User Time is the percentage of elapsed time that this process's
+threads have spent running code in user mode. Applications run in user mode, as
+do subsystems like the Window Manager and the graphics engine. Code carried out
+in user mode cannot damage the integrity of the Windows NT Executive, Kernel,
+and device drivers. Unlike some early operating systems, Windows NT uses process
+boundaries for subsystem protection in addition to the traditional protection of
+user and privileged modes. These subsystem processes provide additional
+protection. Therefore, some work done by Windows NT on behalf of your
+application may appear in other subsystem processes in addition to the
+Privileged Time in your process.
+
+Bitmap Hit Ratio: A higher hit ratio means better performance because data
+transmissions are reduced. Low hit ratios are caused by the screen updating with
+new information that is either not reused, or is not used within the number of
+bytes available for the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Bitmap Hits: This is the number of bitmap hits from the cache. A higher hit ratio
+means better performance because data transmissions are reduced. Low hit ratios
+are caused by the screen updating with new information that is either not
+reused, or is not used within the number of bytes configured in the client
+cache. Increasing the size of the client cache may help for certain
+applications.
+
+Bitmap Reads: This is the number of bitmap references of the cache.
+
+Brush Hit Ratio: A higher hit ratio means better performance because data
+transmissions are reduced. Low hit ratios are caused by the screen updating with
+new information that is either not reused, or is not used within the number of
+bytes available for the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Brush Hits: A higher hit ratio means better performance because data
+transmissions are reduced. Low hit ratios are caused by the screen updating with
+new information that is either not reused, or is not used within the number of
+bytes configured in the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Brush Reads: This is the number of brush references to the cache.
+
+Elapsed Time: The total elapsed time (in seconds) this process has been running.
+
+Glyph Hit Ratio: A higher hit ratio means better performance because data
+transmissions are reduced. Low hit ratios are caused by the screen updating with
+new information that is either not reused, or is not used within the number of
+bytes available for the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Glyph Hits: A higher hit ratio means better performance because data
+transmissions are reduced. Low hit ratios are caused by the screen updating with
+new information that is either not reused, or is not used within the number of
+bytes configured in the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Glyph Reads: This is the number of Glyph references to the cache.
+
+ID Process: ID Process is the unique identifier of this process. ID Process
+numbers are reused, so they only identify a process for the lifetime of that
+process.
+
+Input Async Frame Error: Number of input async framing errors. These can be
+caused by a noisy transmission line. Using a smaller packet size may help in
+some cases.
+
+Input Async Overflow: Number of input async overflow errors. These can be caused
+by a lack of buffer space available on the host.
+
+Input Async Overrun: Number of input async overrun errors. These errors can be
+caused by the baud rate being faster than the computer can handle or a non-16550
+serial line being used. Overruns can also occur if too many high- speed serial
+lines are active at one time for the processors' power. Look at the System
+Object percent processor time, as well as the number of interrupts per second
+rate. Use of intelligent multiport boards can reduce the number of interrupts
+that the host must service per second, cutting down on CPU overhead.
+
+Input Async Parity Error: Number of input async parity errors. These erros can be
+caused by a noisy transmission line.
+
+Input Bytes: Number of bytes input on this Session that includes all protocol
+overhead.
+
+Input Compress Flushes: Number of input compression dictionary flushes. When the
+data can not be compressed, the compression dictionary is flushed so that newer
+data has a better chance of being compressed. Some causes of data not
+compressing includes transferring compressed files over Client Drive Mapping.
+
+Input Compressed Bytes: Number of bytes input after compression. This number
+compared with the Total Bytes input is the compression ratio.
+
+Input Compression Ratio: Compression ratio of the server input data stream.
+
+Input Errors: Number of input errors of all types. For example, some input errors
+are lost ACK's, badly formed packets, and so forth.
+
+Input Frames: Number of frames (packets) input on this session.
+
+Input Timeouts: This is the total number of timeouts on the communication line as
+seen from the client side of the connection. These are typically the result of a
+noisy line. On some high-latency networks, this could be the result of the
+protocol timeout being too short. Increasing the protocol timeout on these types
+of lines will improve performance by reducing needless retransmissions.
+
+Input Waitforoutbuf: This is the number of times that a wait for an available
+send buffer was done by the protocols on the client side of the connection. This
+is an indication that not enough memory buffers have been allocated for the
+specific protocol stack configuration. Better performance on high-latency
+networks can be achieved by specifying enough protocol buffers so that this
+count remains low.
+
+Input Wdbytes: Number of bytes input on this session after all protocol overhead
+has been removed.
+
+Input Wdframes: This is the number of frames input after any additional
+protocol-added frames have been removed. If Input Frames is a multiple of this
+number, then a protocol driver is breaking requests up into multiple frames for
+transmission. You may want to use a smaller protocol buffer size.
+
+Output Async Frame Error: Number of output async framing errors. This could be
+caused by a hardware or line problem.
+
+Output Async Overflow: Number of output async overflow errors.
+
+Output Async Overrun: Number of output async overrun errors.
+
+Output Bytes: Number of bytes output on this session that includes all protocol
+overhead.
+
+Output Compress Flushes: Number of output compression dictionary flushes. When
+the data can not be compressed, the compression dictionary is flushed so that
+newer data has a better chance of being compressed. Some causes of data not
+compressing includes transferring compressed files over Client Drive Mapping.
+
+Output Compressed Bytes: Number of bytes output after compression. This number
+compared with the Total Bytes output is the compression ratio.
+
+Output Compression Ratio: Compression ratio of the server output data stream.
+
+Output Errors: Number of output errors of all types. For example, some output
+errors are lost ACK's, badly formed packets, and so forth.
+
+Output Frames: Number of frames (packets) output on this session.
+
+Output Parity Errors: Number of output async parity errors. These can be caused
+by a hardware or line problem.
+
+Output Timeouts: This is the total number of timeouts on the communication line
+from the host side of the connection. These are typically the result of a noisy
+line. On some high-latency networks, this could be the result of the protocol
+timeout being too short. Increasing the protocol timeout on these types of lines
+will improve performance by reducing needless retransmissions.
+
+Output Waitforoutbuf: This is the number of times that a wait for an available
+send buffer was done by the protocols on the host side of the connection. This
+is an indication that not enough memory buffers have been allocated for the
+specific protocol stack configuration. Better performance on high-latency
+networks can be achieved by specifying enough protocol buffers so that this
+count remains low.
+
+Output Wdbytes: Number of bytes output on this session after all protocol
+overhead has been removed.
+
+Output Wdframes: This is the number of frames output before any additional
+protocol frames have been added. If Output Frames is a multiple of this number,
+then a protocol driver is breaking requests up into multiple frames for
+transmission. You may want to use a smaller protocol buffer size.
+
+Page Faults/Sec: Page Faults/sec is the rate of Page Faults by the threads
+running in this process. A page fault occurs when a thread refers to a virtual
+memory page that is not in its working set in main memory. This will not cause
+the page to be fetched from disk if it is on the standby list and, hence,
+already in main memory, or if it is in use by another process with whom the page
+is shared.
+
+Page File Bytes: Page File Bytes is the current number of bytes this process has
+used in the paging file(s). Paging files are used to store pages of memory used
+by the process that are not contained in other files. Paging files are shared by
+all processes, and lack of space in paging files can prevent other processes
+from allocating memory.
+
+Page File Bytes Peak: Page File Bytes Peak is the maximum number of bytes this
+process has used in the paging file(s). Paging files are used to store pages of
+memory used by the process that are not contained in other files. Paging files
+are shared by all processes, and lack of space in paging files can prevent other
+processes from allocating memory.
+
+Pool Nonpaged Bytes: Pool Nonpaged Bytes is the number of bytes in the Nonpaged
+Pool, a system memory area where space is acquired by operating system
+components as they accomplish their appointed tasks. Nonpaged Pool pages cannot
+be paged out to the paging file, but instead remain in main memory as long as
+they are allocated.
+
+Pool Paged Bytes: Pool Paged Bytes is the number of bytes in the Paged Pool, a
+system memory area where space is acquired by operating system components as
+they accomplish their appointed tasks. Paged Pool pages can be paged out to the
+paging file when not accessed by the system for sustained periods of time.
+
+Priority Base: The current base priority of this process. Threads within a
+process can raise and lower their own base priority relative to the process's
+base priority.
+
+Private Bytes: Private Bytes is the current number of bytes this process has
+allocated that cannot be shared with other processes.
+
+Save Screen Bitmap Hit Ratio: A higher hit ratio means better performance because
+data transmissions are reduced. Low hit ratios are caused by the screen updating
+with new information that is either not reused, or is not used within the number
+of bytes available for the client cache. Increasing the size of the client cache
+may help for certain applications.
+
+Save Screen Bitmap Hits: Save screen bitmap hits. A higher hit ratio means better
+performance because data transmissions are reduced. Low hit ratios are caused by
+the screen updating with new information that is either not reused, or is not
+used within the number of bytes configured in the client cache. Increasing the
+size of the client cache may help for certain applications.
+
+Save Screen Bitmap Reads: This is the number of save screen bitmap references to
+the cache.
+
+Thread Count: The number of threads currently active in this process. An
+instruction is the basic unit of execution in a processor, and a thread is the
+object that carries out instructions. Every running process has at least one
+thread.
+
+Total Async Frame Error: Total number of async framing errors. These can be
+caused by a noisy transmission line. Using a smaller packet size may help in
+some cases.
+
+Total Async Overflow: Total number of async overflow errors. These can be caused
+by a lack of buffer space available on the host.
+
+Total Async Overrun: Total number of async overrun errors. These can be caused by
+the baud rate being faster than the computer can handle, or a non- 16550 serial
+line is used. Overruns can also occur if too many high-speed serial lines are
+active at one time for the processors power. Look at the System Object percent
+processor time, as well as the number of interrupts per second rate. Use of
+intelligent multiport boards can reduce the number of interrupts that the host
+must service per second, cutting down on CPU overhead.
+
+Total Async Parity Error: Total number of async parity errors. These can be
+caused by a noisy transmission line.
+
+Total Bytes: Total number of bytes on this session that includes all protocol
+overhead.
+
+Total Compress Flushes: Total number of compression dictionary flushes. When the
+data can not be compressed, the compression dictionary is flushed so that newer
+data has a better chance of being compressed. Some causes of data not
+compressing includes transferring compressed files over Client Drive Mapping.
+
+Total Compressed Bytes: Total number of bytes after compression. This number
+compared with the total bytes is the compression ratio.
+
+Total Compression Ratio: Total compression ratio of the server data stream for
+this session.
+
+Total Errors: Total number of errors of all types. For example, some errors are
+lost ACK's, badly formed packets, and so forth.
+
+Total Frames: Total number of frames (packets) on this session.
+
+Total Protocol Hit Ratio: This is the overall hit ratio of all protocol objects.
+A higher hit ratio means better performance because data transmissions are
+reduced. Low hit ratios are caused by the screen updating with new information
+that is either not reused, or is not used within the number of bytes available
+for the client cache. Increasing the size of the client cache may help for
+certain applications.
+
+Total Protocol Hits: Total protocol cache hits. The protocol caches windows
+objects that are likely to be reused to avoid having to re-send them on the
+transmission line. For example, objects are Windows icons, brushes, and so
+forth. Hits in the cache represent objects that did not need to be resent.
+
+Total Protocol Hits/Sec: Total protocol cache hits per second. The protocol
+caches windows objects that are likely to be reused to avoid having to re-send
+them on the transmission line. For example, objects are Windows icons, brushes,
+and so forth. Hits in the cache represent objects that did not need to be
+resent.
+
+Total Protocol Interval Hit Ratio: This is the overall hit ratio of all protocol
+objects in the last sample interval. A higher hit ratio means better performance
+because data transmissions are reduced. Low hit ratios are caused by the screen
+updating with new information that is either not reused, or is not used within
+the number of bytes available for the client cache. Increasing the size of the
+client cache may help for certain applications.
+
+Total Protocol Reads: This represents the total protocol references to the
+cache.
+
+Total Protocol Reads/Sec: This represents the total protocol references to the
+cache per second.
+
+Total Waitforoutbuf: This is the number of times that a wait for an available
+send buffer was done by the protocols on both the host and client sides of the
+connection. This is an indication that not enough memory buffers have been
+allocated for the specific protocol stack configuration. Better performance on
+high latency networks can be achieved by specifying enough protocol buffers so
+that this count remains low.
+
+Total Wdbytes: Total number of bytes on this session after all protocol overhead
+has been removed.
+
+Total Wdframes: This is the total number of frames input and output before any
+additional protocol frames have been added. If Total Frames is a multiple of
+this number, then a protocol driver is breaking requests up into multiple frames
+for transmission. You may want to use a smaller protocol buffer size.
+
+Virtual Bytes: Virtual Bytes is the current size in bytes of the virtual address
+space the process is using. Use of virtual address space does not necessarily
+imply corresponding use of either disk or main memory pages. Virtual space is
+however finite, and by using too much, the process may limit its ability to load
+libraries.
+
+Virtual Bytes Peak: Virtual Bytes Peak is the maximum number of bytes of virtual
+address space the process has used at any one time. Use of virtual address space
+does not necessarily imply corresponding use of either disk or main memory
+pages. Virtual space is however finite, and by using too much, the process may
+limit its ability to load libraries.
+
+Working Set: Working Set is the current number of bytes in the Working Set of
+this process. The Working Set is the set of memory pages touched recently by the
+threads in the process. If free memory in the computer is above a threshold,
+pages are left in the Working Set of a process even if they are not in use. When
+free memory falls below a threshold, pages are trimmed from Working Sets. If
+they are needed, they will then be soft- faulted back into the Working Set
+before they leave main memory.
+
+Working Set Peak: Working Set Peak is the maximum number of bytes in the Working
+Set of this process at any point in time. The Working Set is the set of memory
+pages touched recently by the threads in the process. If free memory in the
+computer is above a threshold, pages are left in the Working Set of a process
+even if they are not in use. When free memory falls below a threshold, pages are
+trimmed from Working Sets. If they are needed, they will then be soft-faulted
+back into the Working Set before they leave main memory.
+
+OBJECT: SYSTEM (Existing Object)
+--------------------------------
+
+Active Session: This is the total number of active (logged on) sessions.
+
+Inactive Session: This is the total number of inactive (not logged on) sessions.
+
+Total Protocol Bytes/Sec: This is the total number of bytes transferred in the
+system as result of session communications.
+
+OBJECT: USER (New Object)
+-------------------------
+
+The instances available for the object counters are the current sessions' logged
+on users plus System and Idle.
+
+% Privileged Time: Privileged Time is the percentage of elapsed time that this
+process's threads have spent carrying out code in privileged mode. When a
+Windows NT system service is called, the service will often run in privileged
+mode to gain access to system-private data. Such data is protected from access
+by threads executing in user mode. Calls to the system may be explicit, or they
+may be implicit such as when a page fault or an interrupt occurs. Unlike some
+early operating systems, Windows NT uses process boundaries for subsystem
+protection in addition to the traditional protection of user and privileged
+modes. These subsystem processes provide additional protection. Therefore, some
+work done by Windows NT on behalf of your application may appear in other
+subsystem processes in addition to the Privileged Time in your process.
+
+% Processor Time: Processor Time is the percentage of elapsed time that all of
+the threads of this process used the processor to carry out instructions. An
+instruction is the basic unit of execution in a computer, a thread is the object
+that carries out instructions, and a process is the object created when a
+program is run. Code carried out to handle certain hardware interrupts or trap
+conditions may be counted for this process.
+
+% User Time: User Time is the percentage of elapsed time that this process's
+threads have spent running code in user mode. Applications run in user mode, as
+do subsystems like the Window Manager and the graphics engine. Code running in
+user mode cannot damage the integrity of the Windows NT Executive, Kernel, and
+device drivers. Unlike some early operating systems, Windows NT uses process
+boundaries for subsystem protection in addition to the traditional protection of
+user and privileged modes. These subsystem processes provide additional
+protection. Therefore, some work done by Windows NT on behalf of your
+application may appear in other subsystem processes in addition to the
+Privileged Time in your process.
+
+Elapsed Time: The total elapsed time (in seconds) this process has been running.
+
+ID Process: ID Process is the unique identifier of this process. ID Process
+numbers are reused, so they only identify a process for the lifetime of that
+process.
+
+Page Faults/Sec: Page Faults/sec is the rate of Page Faults by the threads
+executing in this process. A page fault occurs when a thread refers to a virtual
+memory page that is not in its working set in main memory. This will not cause
+the page to be fetched from disk if it is on the standby list and, hence,
+already in main memory, or if it is in use by another process with whom the page
+is shared.
+
+Page File Bytes: Page File Bytes is the current number of bytes this process has
+used in the paging file(s). Paging files are used to store pages of memory used
+by the process that are not contained in other files. Paging files are shared by
+all processes, and lack of space in paging files can prevent other processes
+from allocating memory.
+
+Page File Bytes Peak: Page File Bytes Peak is the maximum number of bytes this
+process has used in the paging file(s). Paging files are used to store pages of
+memory used by the process that are not contained in other files. Paging files
+are shared by all processes, and lack of space in paging files can prevent other
+processes from allocating memory.
+
+Pool Nonpaged Bytes: Pool Nonpaged Bytes is the number of bytes in the Nonpaged
+Pool, a system memory area where space is acquired by operating system
+components as they accomplish their appointed tasks. Nonpaged Pool pages cannot
+be paged out to the paging file, but instead remain in main memory as long as
+they are allocated.
+
+Pool Paged Bytes: Pool Paged Bytes is the number of bytes in the Paged Pool, a
+system memory area where space is acquired by operating system components as
+they accomplish their appointed tasks. Paged Pool pages can be paged out to the
+paging file when not accessed by the system for sustained periods of time.
+
+Priority Base: The current base priority of this process. Threads within a
+process can raise and lower their own base priority relative to the process's
+base priority.
+
+Private Bytes: Private Bytes is the current number of bytes this process has
+allocated that cannot be shared with other processes.
+
+Thread Count: The number of threads currently active in this process. An
+instruction is the basic unit of execution in a processor, and a thread is the
+object that carries out instructions. Every running process has at least one
+thread.
+
+Virtual Bytes: Virtual Bytes is the current size in bytes of the virtual address
+space the process is using. Use of virtual address space does not necessarily
+imply corresponding use of either disk or main memory pages. Virtual space is
+however finite, and by using too much, the process may limit its ability to load
+libraries.
+
+Virtual Bytes Peak: Virtual Bytes Peak is the maximum number of bytes of virtual
+address space the process has used at any one time. Use of virtual address space
+does not necessarily imply corresponding use of either disk or main memory
+pages. Virtual space is however finite, and by using too much, the process may
+limit its ability to load libraries.
+
+Working Set: Working Set is the current number of bytes in the Working Set of
+this process. The Working Set is the set of memory pages touched recently by the
+threads in the process. If free memory in the computer is above a threshold,
+pages are left in the Working Set of a process even if they are not in use. When
+free memory falls below a threshold, pages are trimmed from Working Sets. If
+they are needed, they will then be soft- faulted back into the Working Set
+before they leave main memory.
+
+Working Set Peak: Working Set Peak is the maximum number of bytes in the Working
+Set of this process at any point in time. The Working Set is the set of memory
+pages touched recently by the threads in the process. If free memory in the
+computer is above a threshold, pages are left in the Working Set of a process
+even if they are not in use. When free memory falls below a threshold, pages are
+trimmed from Working Sets. If they are needed, they will then be soft-faulted
+back into the Working Set before they leave main memory.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

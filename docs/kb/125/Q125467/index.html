@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125467/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125467/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125467/","publisher":null,"image":null,"headline":"Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125467-frank-lloyd-wright-no-sound-but-sound-ok-in-other-programs">Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125467
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0,3.x
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft The Ultimate Frank Lloyd Wright for Windows, version 1.0 
+- the operating system: Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Ultimate Frank Lloyd Wright when running on Windows 3.x , you may
+not be able to hear the sounds in the program.
+
+Note that although you cannot hear sounds in Ultimate Frank Lloyd Wright, Wave
+Form Audio (.WAV) files may be played normally through Media Player; therefore,
+applications capable of playing .WAV files will play sounds as expected.
+
+CAUSE
+=====
+
+Ultimate Frank Lloyd Wright sends sound to the driver specified by the wave=
+line in the [drivers] section of the SYSTEM.INI file. Other applications may use
+the Sound Mapper settings, which allow a choice among several installed wave
+devices. Therefore, it is possible for sounds to work in programs that use Sound
+Mapper, but not in Ultimate Frank Lloyd Wright, which bypasses Sound Mapper.
+
+RESOLUTION
+==========
+
+To verify that the wave= line in the SYSTEM.INI [drivers] section is pointing to
+the correct wave driver, do the following:
+
+1. In a text editor, such as Windows Notepad, open the SYSTEM.INI file (this
+  file is located in the Windows directory).
+
+2. In the SYSTEM.INI file, locate the [drivers] section. If the [drivers]
+  section includes the following lines:
+
+        wave=speaker.drv
+        wave1=&lt;driver&gt;
+
+  where &lt;driver&gt; is the wave driver for your sound card, the Ultimate
+  Frank Lloyd Wright will send sound to the PC-Speaker driver (SPEAKER.DRV).
+  This driver cannot play all types of audio.
+
+3. To correct this problem, modify the lines to read:
+
+        wave=&lt;driver&gt;
+        wave1=speaker.drv
+
+4. Exit Windows and restart Windows.
+
+The Ultimate Frank Lloyd Wright should play sounds correctly.
+
+MORE INFORMATION
+================
+
+The currently installed devices are specified by the following entries in your
+SYSTEM.INI file
+
+  wave=
+  wave1=
+  wave2=
+
+Note that any wave&lt;n&gt;= entry (where &lt;n&gt; is a number) is a valid
+SYSTEM.INI entry.
+
+For more information on audio problems, refer to the Ultimate Frank Lloyd Wright
+README.TXT file, or the documentation that came with your sound card.
+
+
+Additional query words: multi media multimedia multi-media mmtitles flw
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWinSearch kbZNotKeyword6 kbGamesSearch kbZNotKeyword kbUltimateFLW kbOSWin310 kbOSWin311 kbOSWin300 kbOSWin300a
+Version           : WINDOWS:1.0,3.x
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

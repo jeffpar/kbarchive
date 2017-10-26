@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247095/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247095/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247095/","publisher":null,"image":null,"headline":"Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247095-xcln-outlook-98-batch-mode-setup-switches-for-odk">Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q247095</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">98</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">5.5</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="k">to</span> <span class="n">control</span> <span class="n">how</span> <span class="n">both</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="k">and</span>
+<span class="n">Outlwzd</span><span class="p">.</span><span class="n">exe</span> <span class="n">files</span> <span class="n">are</span> <span class="nf">run</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="k">to</span>
+<span class="n">choose</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">mode</span><span class="p">,</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">quiet</span> <span class="n">mode</span> <span class="p">(</span><span class="n">which</span> <span class="n">removes</span> <span class="k">or</span> <span class="n">reduces</span> <span class="n">the</span>
+<span class="n">prompts</span> <span class="n">the</span> <span class="n">user</span> <span class="n">receives</span><span class="p">),</span> <span class="k">or</span> <span class="n">control</span> <span class="n">whether</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">is</span> <span class="n">restarted</span> <span class="n">after</span>
+<span class="n">installation</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">users</span> <span class="n">click</span> <span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">the</span> <span class="n">CD</span> <span class="n">folder</span> <span class="k">of</span> <span class="n">the</span> <span class="n">customized</span> <span class="k">package</span><span class="p">,</span> <span class="n">it</span>
+<span class="n">initiates</span> <span class="n">the</span> <span class="n">Autorun</span> <span class="n">screen</span><span class="p">.</span> <span class="n">The</span> <span class="n">Autorun</span> <span class="n">screen</span> <span class="n">starts</span> <span class="n">the</span> <span class="n">appropriate</span>
+<span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="n">file</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Language</span><span class="p">\</span><span class="n">Packages</span> <span class="n">folder</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">for</span> <span class="n">English</span><span class="p">,</span> <span class="n">it</span>
+<span class="n">starts</span> <span class="n">CD</span><span class="p">\</span><span class="n">EN</span><span class="p">\</span><span class="n">Packages</span><span class="p">\</span><span class="n">Setup</span><span class="p">.</span><span class="n">exe</span><span class="p">).</span> <span class="n">When</span> <span class="n">Packages</span><span class="p">\</span><span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="n">runs</span><span class="p">,</span> <span class="n">it</span> <span class="n">self</span><span class="p">-</span><span class="n">extracts</span>
+<span class="k">and</span> <span class="n">runs</span> <span class="n">the</span> <span class="n">Outlwzd</span><span class="p">.</span><span class="n">exe</span> <span class="n">tool</span> <span class="k">with</span> <span class="n">the</span> <span class="n">custom</span> <span class="n">settings</span> <span class="n">that</span> <span class="n">you</span> <span class="n">defined</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">wizard</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">To</span> <span class="n">use</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="k">with</span> <span class="n">Setup</span><span class="p">.</span><span class="n">exe</span><span class="p">,</span> <span class="n">use</span> <span class="n">Wextract</span><span class="p">,</span> <span class="n">an</span> <span class="n">extraction</span> <span class="n">utility</span>
+<span class="n">based</span> <span class="n">on</span> <span class="n">Internet</span> <span class="n">Express</span> <span class="n">technology</span><span class="p">.</span> <span class="n">The</span> <span class="n">following</span> <span class="n">are</span> <span class="n">frequently</span> <span class="n">used</span> <span class="n">Wextract</span>
+<span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span><span class="p">:</span>
+
+  <span class="p">/</span><span class="n">Q</span> <span class="p">-</span> <span class="n">Quiet</span> <span class="n">mode</span>
+
+  <span class="p">/</span><span class="n">QU</span> <span class="p">-</span> <span class="n">User</span><span class="p">-</span><span class="n">quiet</span> <span class="n">mode</span><span class="p">,</span> <span class="n">which</span> <span class="n">presents</span> <span class="n">some</span> <span class="n">dialog</span> <span class="n">boxes</span> <span class="k">to</span> <span class="n">the</span> <span class="n">user</span>
+
+  <span class="p">/</span><span class="n">QA</span> <span class="p">-</span> <span class="n">Administrator</span><span class="p">-</span><span class="n">quiet</span> <span class="n">mode</span><span class="p">,</span> <span class="n">which</span> <span class="n">does</span> <span class="k">not</span> <span class="n">present</span> <span class="n">any</span> <span class="n">dialog</span> <span class="n">boxes</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">user</span><span class="p">.</span>
+
+  <span class="p">/</span><span class="n">C</span><span class="p">:&lt;&gt;</span> <span class="p">-</span> <span class="n">Path</span> <span class="k">and</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Setup</span> <span class="p">.</span><span class="n">inf</span> <span class="k">or</span> <span class="p">.</span><span class="n">exe</span> <span class="n">file</span>
+
+  <span class="p">/</span><span class="n">R</span><span class="p">:</span><span class="n">N</span> <span class="p">-</span> <span class="n">Never</span> <span class="n">restart</span>
+
+  <span class="p">/</span><span class="n">R</span><span class="p">:</span><span class="n">A</span> <span class="p">-</span> <span class="n">Always</span> <span class="n">restart</span>
+
+  <span class="p">/</span><span class="n">R</span><span class="p">:</span><span class="n">S</span> <span class="p">-</span> <span class="n">Silent</span> <span class="n">restart</span>
+
+  <span class="p">/</span><span class="n">T</span><span class="p">:&lt;</span><span class="n">directory</span> <span class="n">path</span><span class="p">&gt;</span> <span class="p">-</span> <span class="n">Target</span> <span class="n">folder</span> <span class="n">for</span> <span class="n">extracting</span> <span class="n">files</span>
+
+<span class="n">A</span> <span class="n">second</span> <span class="n">group</span> <span class="k">of</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="n">are</span> <span class="n">used</span> <span class="k">with</span> <span class="n">the</span> <span class="n">Outlwzd</span><span class="p">.</span><span class="n">exe</span> <span class="n">tool</span><span class="p">.</span>
+
+  <span class="p">/</span><span class="n">Q</span> <span class="p">-</span> <span class="n">Specifies</span> <span class="n">a</span> <span class="n">quiet</span> <span class="s2">"hands-free"</span> <span class="n">mode</span><span class="p">.</span> <span class="n">The</span> <span class="n">user</span> <span class="n">is</span> <span class="n">prompted</span> <span class="n">for</span>
+  <span class="n">information</span> <span class="n">that</span> <span class="n">isn</span><span class="s1">'t specified.
+
+  /Q:A - Specifies a quiet mode with no user prompts.
+
+  /Q:C - Specifies a quiet mode with the Cancel button not displayed, so the
+  user cannot cancel Setup. This switch is used by the wizard if the "Install
+  package silently" option is selected.
+
+  /M:[0|1|2|3...] - Specifies the installation mode. For customized ODK
+  packages, 0 refers to the first installation choice, 1 refers to the second
+  choice, and so on (for example, 0=minimal, 1=standard, 2=full).
+
+  /I:[Y/N] - Indicates whether or not to install the Windows Desktop Update. The
+  default is N.
+
+  /S:""#e"" - Designates the source path of the Setup.exe file. The ""#e""
+  refers to the full path and name of the .exe file.
+
+  /U:""&lt;path&gt;"" - Specifies the path (file or network in Universal Naming
+  Convention format) for installation cabinet (.cab) files.
+  Do not use /U for CD-ROM installations.
+
+  /R:N - Suppresses restarting after installation. If you suppress restarting,
+  your program should take care of restarting the computer; Outlook will not be
+  properly configured until the computer is restarted.
+
+  /D - Specifies that you want to download only the files for the current
+  operating system.
+
+  /D:1 - Specifies that you want to download files for Microsoft Windows and
+  Windows NT operating systems.
+
+  /G: - Runs specified installation sections in the Outsetup.inf file. Separate
+  the sections with commas.
+
+  /X - Installs Outlook without the shell, icons, or links. This option is
+  useful for hosting controls in your own application.
+
+IMPORTANT: The /S switch is required with the Outlwzd.exe tool (without this
+switch, users will go into Web Install Mode rather than CD, and they will not
+get the correct product identification code information).
+
+Also, if you use Outlwzd.exe switches, you need to run Setup.exe with the /C
+switch. Within the /C switch, you can then specify switches to run with the
+Outlwzd.exe tool.
+
+Sample Scenarios:
+
+The following expression runs the third installation option:
+
+  "setup.exe /C:"outlwzd.exe /S:""#e"" /M:2"" (without the quotation marks)
+
+The following expression performs a quiet installation, with no user prompts and
+no restarting afterward:
+
+  "setup.exe /Q:A /C:"outlwzd.exe /S:""#e"" /Q /R:N" " (without the quotation
+  marks)
+
+Note that the placement of quotation marks is important, and that the path is
+surrounded with two pairs of double quotation marks. For additional information,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q193114 XCLN: How to Generate a User-Specific Profile w/IExpress and ODK
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:98
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102466: How to Update a Character Field from a Popup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102466: How to Update a Character Field from a Popup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102466/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102466/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102466/","publisher":null,"image":null,"headline":"Q102466: How to Update a Character Field from a Popup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102466-how-to-update-a-character-field-from-a-popup">Q102466: How to Update a Character Field from a Popup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102466
+Product(s): Microsoft Fox Miscellaneous Products
+Version(s): MACINTOSH:2.01
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following code example demonstrates one method of replacing a character
+field with a numeric selection from a popup. Occasionally, you may need to store
+a character string choice made from a popup to a character field.
+
+Normally, a popup must be assigned to a numeric database field and as a result,
+the numeric value indicating which bar of the popup was selected is placed in
+the database. This example actually places the character selection string in a
+character field of the database.
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN RISK.
+Microsoft provides this code "as is" without warranty of any kind, either
+expressed or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+     SET PROCEDURE TO dbf.prg  &amp;&amp; The name of this program
+     SET TALK OFF
+     CLEAR
+
+     ** Initialize variables and open database
+     mchoice = 0
+     ok = 0
+     USE ":foxbase:tutorial:faculty.dbf"
+
+     ** Main program body
+     DO WHILE ok=0  &amp;&amp; Continue until the OK button is not pressed
+     SCREEN 1 TYPE 0 LOCK HEADING "Update a DBF" ;
+       AT 0,0 SIZE 224,366 PIXELS FONT "Times",14 TOP
+     @PIXELS 27,16 GET mchoice STYLE 0 FONT "Chicago",12 ;
+       PICTURE "@^ Edit;View;Browse;Change" SIZE 19,68
+     @PIXELS 18,98 SAY "The selection from a popup returns a " STYLE 65536
+     @PIXELS 33,98 SAY "numeric value. This numeric value is" STYLE 65536
+     @PIXELS 48,98 SAY "stored in the database which can be" STYLE 65536
+     @PIXELS 63,98 SAY "difficult to read." STYLE 65536
+     @PIXELS 87,98 SAY "In this example, the value stored to" STYLE 65536
+     @PIXELS 102,98 SAY "the database is the actual character" STYLE 65536
+     @PIXELS 117,98 SAY "string and not the number it " STYLE 65536
+     @PIXELS 140,98 SAY "represents. " STYLE 65536
+     @PIXELS 155,98 SAY "As you can see, the database" STYLE 65536
+     @PIXELS 170,98 SAY "field reads "+faculty-&gt;id+"and not the" ;
+        STYLE 65536
+     @PIXELS 185,98 SAY "selection number from the popup." STYLE 65536
+     @PIXELS 168,19 GET ok STYLE 1 FONT "Chicago",12 ;
+        PICTURE "@*V OK" SIZE 2066,35
+
+     READ
+     DO xchange WITH mchoice &amp;&amp; The popup was selected, now update the DBF
+     ENDDO
+
+     SCREEN 1 OFF
+     SET PROCEDURE TO
+
+     PROCEDURE xchange
+     PARAMETERS choice &amp;&amp; The selection from the popup
+     DO CASE
+      CASE choice=1 &amp;&amp; The first choice from the popup
+        REPLACE id WITH "EDIT"
+      CASE choice=2 &amp;&amp; The second choice from the popup
+        REPLACE id WITH "VIEW"
+      CASE choice=3 &amp;&amp; The third choice from the popup
+        REPLACE id WITH "BROWSE"
+      CASE choice=4 &amp;&amp; The fourth choice from the popup
+        REPLACE id WITH "CHANGE"
+     ENDCASE
+     RETURN
+
+Additional query words: 2.01 example screen pop up FoxBASE+/Mac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242018/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242018/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242018/","publisher":null,"image":null,"headline":"Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242018-howto-copy-a-section-of-a-bitmap-to-the-clipboard">Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242018
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbBitmap kbClipboard kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to select a region of a bitmap from a picture box and
+then copy only the selected region to the clipboard. This article assumes that
+you select from the top-left to the bottom-right with the mouse.
+
+MORE INFORMATION
+================
+
+Step by Step Example
+--------------------
+
+1. Start a new Visual Basic Standard Exe project. Form1 is created by default.
+
+2. On the Project menu, select Add Module to add a new module to the existing
+  project.
+
+3. Add two Picture Boxes to the form, name one "Pic_Edit" (without the quotation
+  marks) (the target), and name the other "Pic_Dest" (without the quotation
+  marks) (the destination.)
+
+4. Set the Picture property of Pic_Edit to a bitmap from which you want to
+  select a region.
+
+5. Set the AutoRedraw property of Pic_Dest to True.
+
+6. Add the following code to Module1:
+
+  Public Const INVERSE = 6
+  Public Const DOT = 2
+  Public Const SOLID = 0
+
+  Public OrigX As Long
+  Public OrigY As Long
+  Public DestX As Long
+  Public DestY As Long
+
+  Public Sub Draw_Selection_Rectangle()
+   
+      ' Set drawing mode to INVERSE since this routine also used to erase
+      ' the selection rectangle by simply drawing over the currently 
+      ' displayed rectangle
+      
+      With Editor.Pic_Edit
+          .DrawMode = INVERSE
+          .DrawStyle = DOT
+          Editor.Pic_Edit.Line (OrigX, OrigY)-(DestX, DestY), , B
+          .DrawStyle = SOLID
+      End With
+
+  End Sub
+
+  Public Sub Copy_Rectangle()
+      With Editor.Pic_Dest
+          .Cls
+          .Visible = True
+          .Height = DestY - OrigY
+          .Width = DestX - OrigX
+          .PaintPicture Editor.Pic_Edit, 0, 0, (DestX - OrigX), _
+              (DestY - OrigY), OrigX, OrigY, (DestX - OrigX), _
+              (DestY - OrigY), vbSrcCopy
+      End With
+      
+      ' Make sure the clipboard is clear, then copy the image:
+      Clipboard.Clear
+      Clipboard.SetData Editor.Pic_Dest.Image
+  End Sub
+
+7. Add the following code to Form1:
+
+  Private Sub Pic_Edit_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+      If Button = 1 Then Pic_Edit.Refresh
+      Pic_Dest.Visible = False
+      OrigX = X
+      OrigY = Y
+      DestX = OrigX
+      DestY = OrigY
+      Call Module1.Draw_Selection_Rectangle
+  End Sub
+
+  Private Sub Pic_Edit_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+         
+      If Button = 1 Then
+          DestX = X
+          DestY = Y
+          Pic_Edit.Refresh
+          Call Module1.Draw_Selection_Rectangle
+      End If
+  End Sub
+
+  Private Sub Pic_Edit_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
+      ' Check to see if mouse moved or goes the "wrong" way:
+      If DestX &lt;= OrigX Or DestY &lt;= OrigY Then
+          Pic_Edit.Refresh
+          Exit Sub
+      End If
+      
+      If Button = 1 Then Call Copy_Rectangle
+  End Sub
+
+8. Start the application and select an area of the bitmap with the mouse. When
+  you release the mouse button, Pic_Dest appears with the selected region.
+
+NOTE: If you open up MS Paint, MS Word, or any other application that can take a
+pasted bitmap image, you are able to paste the selected portion of the image to
+that application. You can also view the contents of the clipboard by using the
+Clipboard Viewer.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q71488 How to Create Rubber-Band Lines/Boxes in Visual Basic
+
+Additional query words:
+
+======================================================================
+Keywords          : kbBitmap kbClipboard kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

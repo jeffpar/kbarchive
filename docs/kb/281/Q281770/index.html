@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281770/","publisher":null,"image":null,"headline":"Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281770-how-to-perform-clean-boot-troubleshooting-for-windows-2000">Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281770
+Product(s): Microsoft Windows NT
+Version(s): 2000
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbsetup kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many issues that are experienced while running the Windows operating system
+occur because of the use of an incompatible or corrupt program that you are
+running simultaneously. To help determine if this is the case, you have to
+either perform a "clean boot", or restart Windows without these programs
+starting.
+
+This article describes how to perform clean-boot troubleshooting to determine if
+the problem in question is with the core operating system or with a program
+loading in the Windows environment.
+
+MORE INFORMATION
+================
+
+To perform clean-boot troubleshooting, it is necessary to make changes and
+restart the computer several times to determine if the problem is with something
+in the operating system environment and, if this is the case, what specific
+component.
+
+The overall structure of clean-boot troubleshooting that is presented in this
+article is categorized in the following way:
+
+1. Safe Mode or Safe Mode with Networking Support
+
+2. Removing Unsigned Drivers
+
+3. Removing Registry Entries
+
+4. Testing User Profiles
+
+5. Disabling Third-Party Services
+
+6. Uninstalling Programs
+
+Safe Mode or Safe Mode with Networking Support
+----------------------------------------------
+
+The first step to troubleshoot potential environmental issues is to boot into
+Safe mode or Safe mode with networking support. If the issue is with a program
+that does not depend on network connectivity, Safe mode is appropriate. If the
+issue is with a network program and you are are using a network adapter to
+connect to a network, Safe mode with networking support may enable you to test
+the networking program, including browser issues.
+
+Note: You cannot use Safe mode with networking support when using a modem or PC
+Card connection to a network, since modem drivers and PC Card drivers do not
+load in Safe mode or Safe mode with networking support.
+
+If you boot into Safe mode or Safe mode with networking support and you can
+perform an operation normally, one with which you were previously experiencing
+issues, the issue is most likely due to an issue with the environment. Refer to
+the "Removing Registry Entries" section in this article for information about
+how to determine what program components may be causing the issue.
+
+Note: You may not be able to test some operations in Safe mode because not all
+services and devices load in Safe mode or Safe mode with networking support. For
+example, you cannot test multimedia issues that involve sound, or suspend or
+hibernate issues in Safe mode. Also, any network programs that rely on the
+Remote Procedure Call Subsystem (RpcSS) do not work because the RpcSS service
+does not load in Safe mode with networking support.
+
+If you boot into Safe mode or Safe mode with networking support and the issue
+still occurs, there may still be an environmental issue; many Function or Filter
+drivers installed by third-party software may still load in Safe mode.
+
+Therefore, it may be necessary to take an additional step to test and remove
+third-party drivers in Safe mode.
+
+Removing Unsigned Drivers
+-------------------------
+
+All the drivers that are included with Windows 2000 use digital signatures to
+verify that they have been tested by the Windows Hardware Quality Labs (WHQL).
+Many third-party programs are written for Windows 2000 that need to install
+additional drivers, but which have not been tested by WHQL, so they do not
+receive a digital signature.
+
+Note: Some third-party vendors have tools that they can use that generate a valid
+digital signature and yet were not tested by WHQL. The following procedure
+cannot be used to determine if these drivers are installed.
+
+Windows 2000 includes the File Signature Verification tool (Sigverif.exe). You
+can use this tool to find all files on your computer that are not digitally
+signed. For the purposes of Windows 2000 clean-boot troubleshooting, only the
+files in the %Windir%\System32\Drivers folder need to be tested.
+
+To use Sigverif.exe:
+
+1. Click Start, click Run, type "sigverif" (without the quotation marks), and
+  then click OK.
+
+2. Click Advanced, click "Look for other files that are not digitally signed",
+  navigate to the Winnt\System32\Drivers folder, and then click OK.
+
+3. Click Start.
+
+After Sigverif.exe is finished, a list of all unsigned drivers installed on your
+computer are displayed.
+
+Note: Many video drivers are not digitally signed. The following steps may cause
+problems with using your video resolution and in some cases may cause you to be
+unable to boot.
+
+The list of all signed and unsigned drivers found by Sigverif.exe can be found in
+the Sigverif.txt file in the %Windir% folder, typically the Winnt or Windows
+folder. All unsigned drivers are noted as "Unsigned".
+
+When you determine what drivers are unsigned, create a folder in which to place
+the unsigned drivers. Typically, SysDriversBak is an easy folder name to
+remember.
+
+Restart your computer without presence the unsigned drivers in the
+Winnt\System32\Drivers folder and test your program or other functionality to
+see if the same error messages or issues occur.
+
+Note: Because most driver files are associated with registry entries that have
+not yet been changed, you receive the following error message:
+
+  At least one driver or service failed to start...
+
+If the issue no longer occurs, the issue was due to a third-party unsigned filter
+or function driver. A function driver is a driver to load a specific device that
+uses one of the computer buses. A filter driver loads at a level above or below
+a function driver to add or alter the behavior of the function driver.
+
+To determine which unsigned driver is at fault, use one of the following
+techniques:
+
+- Place drivers that are related to the same program or device back together in
+  the same test.
+
+- Place the top half of the drivers back in the same test.
+
+The first technique is generally better to determine the cause of an issue, but
+it may not be possible to determine related drivers, so either technique should
+work.
+
+After you determine the particular driver that is causing the issue, you can
+either uninstall the driver or program, or disable the driver or service.
+To disable a service:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Administrative Tools, and then double-click Services.
+
+3. Double-click the service, click Disabled in the Select Startup Type drop-down
+  box, and then click OK.
+
+4. Restart your computer.
+
+Check for drivers or other program updates or replace the software or driver with
+a program or driver that is written specifically for Windows 2000.
+
+To disable a driver:
+
+1. Right-click My Computer, click Manage, and then click Device Manager.
+
+2. Double-click the device, select Disable from Device Usage, and then click OK.
+
+3. Look for an updated driver for the device from the vendor.
+
+Note: Not all devices and services are listed in user interface for Windows
+2000.
+
+If the device or service is not available in the Windows 2000 interface, use the
+Recovery Console to disable the driver or service. For additional information
+about the use of Recovery Console, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q229716 Description of the Windows 2000 Recovery Console
+
+Removing Registry Entries
+-------------------------
+
+If you no longer encounter problems running programs in Safe mode, the issue is
+mostly likely due to programs that are loading while the Windows 2000 computer
+is booting.
+
+Programs that are a part of the boot process for Windows 2000 are generally added
+to one of the following locations:
+
+- The Startup folder under the Programs menu.
+
+- The Run line for all users in the registry.
+
+- The Run line for particular users in the registry.
+
+- The "load" entry for all users in the registry.
+
+Note: Because the registry is the location for all computer and program settings
+for Windows 2000, it is necessary to make a backup of the registry and
+particular registry entries in case you are no longer able to boot after editing
+the registry.
+
+To back up the Windows 2000 registry:
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+  and then click Backup.
+
+2. On the General tab, click Emergency Repair Disk and follow the provided
+  directions.
+
+The Startup folder icons are loaded from two locations. To remove these entries:
+
+1. Click Start, point to Settings, and then click "Taskbar and Start Menu
+  Properties".
+
+2. On the Advanced tab, click Advanced.
+
+3. Open the Startup folder for the user account with which you logged on, and
+  then click Cut on the Edit menu.
+
+4. Create a SysDriversBak folder, create a UserStartup folder under the folder,
+  open the UserStartup folder, and then click Paste.
+
+5. Repeat steps 1 through 2 and navigate to the All Users\Start
+  Menu\Programs\Startup folder.
+
+6. Click Cut on the Edit menu, navigate to the SysDriversBak folder, create an
+  AllUsersStartup folder, and then click Paste.
+
+To remove values for the Run line in the registry for all users:
+
+1. Click Start, click Run, type "regedit" (without the quotation marks), and
+  then click OK.
+
+2. Navigate to the following registry key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+3. Open the Run key and note the entries on the right pane.
+
+4. For each value except for the Default value, click the value, click Export
+  Registry File on the Registry menu, navigate to the SysDriversBak folder, and
+  then save the file using the following naming convention
+
+  HKLMRun_(&lt;valuename&gt;)
+
+  where (&lt;valuename&gt;) is the name of the value that you are exporting.
+
+5. Click Delete on the Edit menu.
+
+6. Repeat these steps for each value under the Run key.
+
+7. Check the related RunOnce and RunOnceEx keys to see if a program was not
+  completely installed and repeat steps 3 through 5, except that you need to
+  change the naming convention to reflect RunOnce or RunOnceEx.
+
+To remove values for the Run line in the registry for the user account with which
+you are logged on as:
+
+1. Click Start, click Run, type "regedit" (without the quotation marks), and
+  then click OK.
+
+2. Navigate to the following registry key:
+
+  HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+3. Open the Run key.
+
+4. Highlight the first value below "Default (value not set)", click the value,
+  click Export Registry File on the Registry menu, navigate to the
+  SysDriversBak folder, and then save the file using the following naming
+  convention:
+
+  HKCURun_(&lt;valuename&gt;)
+
+  where (&lt;valuename&gt;) is the name of the value that you are exporting.
+
+5. Click Delete on the Edit menu.
+
+6. Repeat these steps for each value under the Run key.
+
+7. Check the related RunOnce key to see if a program was not completely
+  installed and repeat steps 3 through 5, except that you need to change the
+  naming convention to reflect RunOnce.
+
+To remove value data under "load":
+
+1. Click Start, click Run, type "regedit" (without the quotation marks), and
+  then click OK.
+
+2. Navigate to the following registry key:
+
+  HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+
+3. If the value "load" (without quotation marks) has any value data, click
+  Export Registry File on the Registry menu, navigate to the SysDriversBak
+  folder and save the file as "HKCUload" (without the quotation marks).
+
+4. Double-click the "load" value and clear the value data.
+
+5. When you have completed these steps, restart your computer, and test.
+
+If the problem no longer occurs, then you should merge the values in the
+following suggested order:
+
+1. Startup icons from both the All Users group and the user account with which
+  you log on
+
+2. HKCURun_ values
+
+3. HKLMRun_ values
+
+4. HKCUload
+
+To add the icons for the Startup menu:
+
+1. Click Start, point to Programs, point to Accessories, and then click Windows
+  Explorer.
+
+2. Navigate to the SysDriversBak folder that you created earlier, open the
+  AllUsersStartup folder, click Select All, and then click Copy on the Edit
+  menu.
+
+3. Navigate to the following folder, and then click Paste:
+
+  \Documents and Settings\All Users\Start Menu\Programs\Startup
+
+4. Navigate to SysDriversBak\UserStartup folder, and then click Copy on the Edit
+  menu.
+
+5. Navigate to the following folder, and then click Paste:
+
+  \Documents and Settings\&lt;username&gt;\Start Menu\Programs\Startup
+
+  where &lt;username&gt; is the name of the user that you have logged on as.
+
+6. Restart your computer and test.
+
+Testing User Profiles
+---------------------
+
+Sometimes, a user's specific information may be corrupted, but other users on the
+same computer may have no problem. To determine if this is the case, log on as a
+new user or create a new user account, and then test it.
+
+Note: Sometimes, a program may work correctly when you log on with the default
+Administrator account only. Older programs may have this problem.
+
+If the default Administrator profile becomes corrupt, you need to reinstall
+Windows 2000 to correct this problem.
+
+All user-specific configuration information (which is displayed in Registry
+Editor as HKEY_CURRENT_USER) is stored in the Ntuser.dat file in the \Documents
+and Settings\&lt;username&gt; folder.
+
+Disabling Third-Party Services
+------------------------------
+
+It is sometimes necessary to disable third-party services that are installed to
+eliminate problems. Safe mode and Safe mode with Networking do not load
+third-party services, so if Safe mode works, the problem may be due to a
+third-party service that is loading.
+
+The following table is a partial list of core operating system services that
+load; however, this varies according to the services that are installed and the
+version of Windows 2000 that is in use:
+
++------------------------------------------------------------------------------+
+| Service           | Description                                 | Start Mode | 
++------------------------------------------------------------------------------+
+| Alerter           | Alerter                                     | Automatic  | 
++------------------------------------------------------------------------------+
+| AppMgmt           | Application Management                      | Manual     | 
++------------------------------------------------------------------------------+
+| ClipSrv           | Clipbook                                    | Manual     | 
++------------------------------------------------------------------------------+
+| EventSystem       | COM+ Event System                           | Manual     | 
++------------------------------------------------------------------------------+
+| Browser           | Computer Browser                            | Automatic  | 
++------------------------------------------------------------------------------+
+| DHCP              | DHCP Client                                 | Automatic  | 
++------------------------------------------------------------------------------+
+| Dfs               | Distributed File System                     | Automatic  | 
++------------------------------------------------------------------------------+
+| TrkWks            | Distributed Link Tracking Client            | Automatic  | 
++------------------------------------------------------------------------------+
+| TrkSrv            | Distributed Link Tracking Server            | Manual     | 
++------------------------------------------------------------------------------+
+| MSDTC             | Distributed Transaction Coordinator         | Automatic  | 
++------------------------------------------------------------------------------+
+| DNSCache          | DNS Client                                  | Automatic  | 
++------------------------------------------------------------------------------+
+| EventLog          | Event Log                                   | Automatic  | 
++------------------------------------------------------------------------------+
+| Fax               | Fax Service                                 | Disabled   | 
++------------------------------------------------------------------------------+
+| NtFrs             | File Replication                            | Manual     | 
++------------------------------------------------------------------------------+
+| IISADMIN          | IIS Admin Service                           | Automatic  | 
++------------------------------------------------------------------------------+
+| cisvc             | Indexing Service                            | Manual     | 
++------------------------------------------------------------------------------+
+| SharedAccess      | Internet Connection Sharing (Firewall)      | Manual     | 
++------------------------------------------------------------------------------+
+| PolicyAgent       | IPSEC Policy Agent(IPSEC Service)           | Automatic  | 
++------------------------------------------------------------------------------+
+| LicenseService    | License Logging Service                     | Automatic  | 
++------------------------------------------------------------------------------+
+| dmserver          | Logical Disk Manager                        | Automatic  | 
++------------------------------------------------------------------------------+
+| dmadmin           | Logical Disk Manager Administrative Service | Manual     | 
++------------------------------------------------------------------------------+
+| Messenger         | Messenger                                   | Automatic  | 
++------------------------------------------------------------------------------+
+| mspadmin          | Microsoft Proxy Server Administration       | Automatic  | 
++------------------------------------------------------------------------------+
+| wspsrv            | Microsoft Winsock Proxy Service             | Automatic  | 
++------------------------------------------------------------------------------+
+| Netlogon          | Net Logon                                   | Automatic  | 
++------------------------------------------------------------------------------+
+| mnmsrvc           | NetMeeting Remote Desktop Sharing           | Manual     | 
++------------------------------------------------------------------------------+
+| Netman            | Network Connections                         | Manual     | 
++------------------------------------------------------------------------------+
+| NetDDE            | Network DDE                                 | Manual     | 
++------------------------------------------------------------------------------+
+| NetDDEdsdm        | Network DDE DSDM                            | Manual     | 
++------------------------------------------------------------------------------+
+| NtLmSsp           | NT LM Security Support Provider             | Automatic  | 
++------------------------------------------------------------------------------+
+| OnlBroad          | On-Line Presentation Broadcast              | Manual     | 
++------------------------------------------------------------------------------+
+| SysmonLog         | Performance Logs and Alerts                 | Manual     | 
++------------------------------------------------------------------------------+
+| PlugPLay          | Plug and Play                               | Automatic  | 
++------------------------------------------------------------------------------+
+| Spooler           | Print Spooler                               | Automatic  | 
++------------------------------------------------------------------------------+
+| ProtectedStorage  | Protected Storage                           | Automatic  | 
++------------------------------------------------------------------------------+
+| mailalrt          | Proxy Alert Notification Service            | Automatic  | 
++------------------------------------------------------------------------------+
+| RSVP              | QoS RSVP                                    | Manual     | 
++------------------------------------------------------------------------------+
+| RasAuto           | Remote Access Auto Connection Manager       | Manual     | 
++------------------------------------------------------------------------------+
+| RasMan            | Remote Access Connection Manager            | Automatic  | 
++------------------------------------------------------------------------------+
+| RpcSs             | Remote Procedure Call (RPC)                 | Automatic  | 
++------------------------------------------------------------------------------+
+| RPCLOCATOR        | Remote Procedure Call (RPC) Locator         | Manual     | 
++------------------------------------------------------------------------------+
+| RemoteRegistry    | Remote Registry Service                     | Automatic  | 
++------------------------------------------------------------------------------+
+| NtmsSvc           | Removable Storage                           | Automatic  | 
++------------------------------------------------------------------------------+
+| seclogon          | RunAs Service                               | Automatic  | 
++------------------------------------------------------------------------------+
+| SamSs             | Security Accounts Manager                   | Automatic  | 
++------------------------------------------------------------------------------+
+| lanmanserver      | Server                                      | Automatic  | 
++------------------------------------------------------------------------------+
+| ScardSvr          | Smart Card                                  | Manual     | 
++------------------------------------------------------------------------------+
+| ScardDrv          | Smart Card Helper                           | Manual     | 
++------------------------------------------------------------------------------+
+| SNMP              | SNMP Service                                | Automatic  | 
++------------------------------------------------------------------------------+
+| SNMPTRAP          | SNMP Trap Service                           | Manual     | 
++------------------------------------------------------------------------------+
+| SENS              | System Event Notification                   | Automatic  | 
++------------------------------------------------------------------------------+
+| Schedule          | Task Scheduler                              | Automatic  | 
++------------------------------------------------------------------------------+
+| LmHosts           | TCP/IP NetBIOS Helper Service               | Automatic  | 
++------------------------------------------------------------------------------+
+| TapiSrv           | Telephony                                   | Manual     | 
++------------------------------------------------------------------------------+
+| W3svc             | World Wide Web Publishing Service           | Automatic  | 
++------------------------------------------------------------------------------+
+| LanmanWorkstation | WorkStation                                 | Automatic  | 
++------------------------------------------------------------------------------+
+
+Additional services that could be installed:
+
+- Asc
+
+- AsynMac
+
+- Beep
+
+- Diskperf
+
+- Fastfat
+
+- Fsrec
+
+- Ftdisk
+
+- Gpc
+
+- Ismserv
+
+- Mountmgr
+
+- MSFTPSVC
+
+- MSIServer
+
+- MSKSSRV
+
+- MSPCQ
+
+- NDIS
+
+- NdisTapi
+
+- NdisWan
+
+- NDProxy
+
+- NetBIOS
+
+- NetBT
+
+- NetDetect
+
+- PartMgr
+
+- ParVdm
+
+- RCA
+
+- Schedule
+
+- SchedulingAgent
+
+- TermService
+
+- TlntSrv
+
+- TrkSrv
+
+- UPS
+
+- UtilMan
+
+- W32Time
+
+- WinMgmt
+
+- WMI
+
+If none of these steps resolve your issue, you need to begin uninstalling
+programs from the Add/Remove Programs tool in Control Panel, restart your
+computer and then test.
+
+If these steps still do not resolve your issue, you need to contact Microsoft
+Technical Support or reinstall the operating system and your programs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbtool 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : :2000
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

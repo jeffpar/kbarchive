@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113752/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113752/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113752/","publisher":null,"image":null,"headline":"Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113752-howto-create-a-table-using-foxpro-connectivity-kit">Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113752
+Product(s): Microsoft FoxPro
+Version(s): 2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 24-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for MS-DOS, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By using the FoxPro Connectivity Kit's DBExec() command, you can create a table
+on the native platform that you are connecting to.
+
+MORE INFORMATION
+================
+
+Using the standard SQL CREATE TABLE command with the Connectivity Kit's DBExec()
+command, you can create a new table on the native platform. "Native platform"
+refers to the DBMS that you are connecting to. In the example below, the source
+is SQL Server and the code example creates a table called testtab in the pubs
+database on the SQL Server machine.
+
+With minor modifications, this same code can be used to create a new table called
+testtab on an Oracle server or on any other data source that may be in use.
+
+Code Sample for FoxPro 2.x
+--------------------------
+
+     *****SET THE LIBRARY AND INITIALIZE VARS
+     IF _DOS
+        SET LIBRARY TO SYS(2004)+"fpsql.plb"
+     ELSE
+        SET LIBRARY TO SYS(2004)+"fpsql.fll"
+     ENDIF
+
+     PUBLIC errval
+     PUBLIC errmsg
+     PUBLIC handle
+     PUBLIC do_more
+
+     errval=0
+     errmsg=' '
+     do_more=.T.
+
+     *****SOURCE INFORMATION
+     sourcename= 'test'
+     user= 'sa'
+     passwd=''
+
+     *****CONNECT
+
+     handle=DBConnect(sourcename,user,passwd)
+     IF handle &gt; 0
+        WAIT WINDOW 'Successfully Connected'
+     ELSE
+        error=DBError(0,@errmsg,@errval)
+        WAIT WINDOW STR(error)+' '+STR(errval)+' '+errmsg
+        do_more=.F.
+     ENDIF
+
+     IF do_more=.T.
+        *****SET SESSION DEFAULTS
+
+        =DBSetOpt(handle,'Asynchronous',0)
+        =DBSetOpt(handle,'BatchMode',1)
+        =DBSetOpt(handle,'ConnTimeout',0)
+        =DBSetOpt(handle,'Transact',1)
+        =DBSetOpt(handle,'UseTable',0)
+
+        *****USE THE PUBS DATABASE ON SQL SERVER; On SQL Server
+        *****it is necessary to open an existing database (pubs)
+        *****in order to create a table.  In other words, databases
+        *****on SQL Server contain tables and we are creating a table
+        *****that will be part of the pubs database.
+
+        err=DBExec(handle,'use pubs')
+        DO errhand WITH err,'USE PUBS'
+
+        *****CREATE_IT--CREATES TESTTAB TABLE ON SQL SERVER
+        *****IN THE PUBS DATABASE.
+
+        DO create_it
+
+        *****DISCONNECT
+
+        err=DBDisconn(handle)
+        DO errhand with err,"DBDisconn()"
+        SET LIBRARY TO
+        CLOSE ALL
+     ENDIF
+
+     *****Simple Error Handler Program
+     PROCEDURE errhand
+     PARAMETERS err,command
+        IF err &gt; 0
+           WAIT WINDOW ALLTRIM(UPPER(command))+" Completed Successfully"
+        ELSE
+           ? UPPER(ALLTRIM(command))+" NOT Completed Successfully"
+           error=DBError(handle,@errmsg,@errval)
+           ? ALLTRIM(STR(error))+" "+ALLTRIM(STR(errval))+" " ;
+             +ALLTRIM(errmsg)
+        ENDIF
+     RETURN
+
+     *****THE DBExec() FUNCTION IS USED TO CREATE A TABLE
+     PROCEDURE create_it
+        createcomm= "CREATE TABLE testtab "+ ;
+           "(ID char(4), NAME char(45), STATE char(2), ZIP char(10))"
+        err=DBExec(handle,createcomm)
+        DO errhand WITH err,"DBExec(handle,"+createcomm+")"
+        IF err &gt; 0
+           WAIT WINDOW 'THE CREATE Command Worked.'
+        ENDIF
+
+     RETURN
+     * End of Code
+
+Code Sample for Visual FoxPro
+-----------------------------
+
+     *****SET THE LIBRARY AND INITIALIZE VARS
+     PUBLIC errval
+     PUBLIC errmsg
+     PUBLIC handle
+     PUBLIC do_more
+
+     errval=0
+     errmsg=' '
+     do_more=.T.
+
+     *****SOURCE INFORMATION
+     sourcename= 'test'
+     user= 'sa'
+     passwd=''
+
+     *****CONNECT
+
+     handle=sqlConnect(sourcename,user,passwd)
+     IF handle &gt; 0
+        WAIT WINDOW 'Successfully Connected'
+     ELSE
+        if !(type('aTemp')="U")
+        release aTemp
+        endif
+        aerror(aTemp)
+        errval=aTemp(1,1)
+        errmsg=aTemp(1,2)
+        WAIT WINDOW STR(errval)+': '+errmsg
+        do_more=.F.
+     ENDIF
+
+     IF do_more=.T.
+
+        *****USE THE PUBS DATABASE ON SQL SERVER; On SQL Server
+        *****it is necessary to open an existing database (pubs)
+        *****in order to create a table.  In other words, databases
+        *****on SQL Server contain tables and we are creating a table
+        *****that will be part of the pubs database.
+
+        err=sqlexec(handle,'use pubs')
+        DO errhand WITH err,'USE PUBS'
+
+        *****CREATE_IT--CREATES TESTTAB TABLE ON SQL SERVER
+        *****IN THE PUBS DATABASE.
+
+        DO create_it
+
+        *****DISCONNECT
+
+        err=SQLDisconnect(handle)
+        DO errhand with err,"SQLDisconnect()"
+        CLOSE ALL
+     ENDIF
+
+     *****Simple Error Handler Program
+     PROCEDURE errhand
+     PARAMETERS err,command
+        IF err &gt; 0
+           WAIT WINDOW ALLTRIM(UPPER(command))+" Completed Successfully"
+        ELSE
+           ? UPPER(ALLTRIM(command))+" NOT Completed Successfully"
+  *         error=SQLError(handle,@errmsg,@errval)
+  *         ? ALLTRIM(STR(error))+" "+ALLTRIM(STR(errval))+" " ;
+  *           +ALLTRIM(errmsg)
+
+        if !(type('aTemp')="U")
+        release aTemp
+        endif
+        aerror(aTemp)
+        errval=aTemp(1,1)
+        errmsg=aTemp(1,2)
+        WAIT WINDOW STR(errval)+': '+errmsg
+        do_more=.F.
+       ENDIF
+     RETURN
+
+     *****THE SQLExec() FUNCTION IS USED TO CREATE A TABLE
+     PROCEDURE create_it
+        createcomm= "CREATE TABLE testtab "+ ;
+           "(ID char(4), NAME char(45), STATE char(2), ZIP char(10))"
+        err=SQLExec(handle,createcomm)
+        DO errhand WITH err,"SQLExec(handle,"+createcomm+")"
+        IF err &gt; 0
+           WAIT WINDOW 'The CREATE Command Worked.'
+        ENDIF
+
+     RETURN
+     * End of Code
+
+Additional query words: VFoxWin FoxDos FoxWin 2.50 2.50a 2.50b 2.60 ODBC CK
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbVFP300
+Version           : :2.5x,2.6x,3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137049: Save As Command May Overwrite Full System Backup Set File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137049: Save As Command May Overwrite Full System Backup Set File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137049/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137049/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137049/","publisher":null,"image":null,"headline":"Q137049: Save As Command May Overwrite Full System Backup Set File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137049-save-as-command-may-overwrite-full-system-backup-set-file">Q137049: Save As Command May Overwrite Full System Backup Set File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137049
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Save As on the File menu in Backup, the name displayed in the
+File Name field is "Full System Backup.Set," which is the name of the default
+file set installed with Backup. If you click OK to save your current file set
+with this name, you overwrite the default file set, and you cannot perform a
+backup of your entire system.
+
+RESOLUTION
+==========
+
+To recover the original "Full System Backup.Set" file, you must reinstall
+Backup. To do so, follow these steps:
+
+1. In Control Panel, double-click the Add/Remove Programs icon.
+
+2. On the Windows Setup tab, click Disk Tools, and then click Details.
+
+3. Click the Backup check box to clear it, and then click OK.
+
+4. Click OK.
+
+5. Repeat steps 1-2.
+
+6. Click the Backup check box to select it, and then click OK.
+
+7. Click OK.
+
+NOTE: This procedure overwrites the current "Full System Backup.Set" file in the
+Program Files\Accessories folder. If this file represents a custom backup set
+that you want to keep, rename the file to another name before you follow the
+steps above. To do so, follow these steps:
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+  System Tools, and then click Backup.
+
+2. On the File menu, click Open File Set.
+
+3. Click the "Full System Backup.Set" file, and then click Open. Note that this
+  file is installed by default in the Program Files\Accessories folder.
+
+4. On the File menu, click Save As.
+
+5. Type a new name in the File Name field, and then click OK.
+
+6. Quit Backup.
+
+MORE INFORMATION
+================
+
+The "Full System Backup.Set" file set is designed to back up your entire system.
+This file set is configured to include all the registry files that are necessary
+for your system to work properly when you restore the files. You should not use
+this file set for incremental or partial backups.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

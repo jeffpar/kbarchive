@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61610: Behavior of /Oa and /Ow Safer in C 6.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61610: Behavior of /Oa and /Ow Safer in C 6.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61610/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61610/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61610/","publisher":null,"image":null,"headline":"Q61610: Behavior of /Oa and /Ow Safer in C 6.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61610-behavior-of-oa-and-ow-safer-in-c-600">Q61610: Behavior of /Oa and /Ow Safer in C 6.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61610
+Product(s): See article
+Version(s): 6.00   | 6.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 25-JUL-1990
+
+The detection of common aliasing practices has been improved in the
+Microsoft C version 6.00 code generator. The primary difference is
+that the compiler now tries to detect when the address of a variable
+has been taken and then to protect against aliasing corruption of that
+variable even when the /Oa option is selected. If no options are
+selected that invoke the global optimizer (/Oe, /Og, /Ol), the
+optimizer depends on the preprocessor marking all variables that have
+had their address taken (&amp;).
+
+With global optimization, the optimizer itself does the necessary data
+flow analysis to determine if an address has been taken. This makes
+/Oa safer when used in conjunction with global optimization because it
+can detect addresses being taken even in the absence of the address-of
+operator (&amp;).
+
+Aliasing is defined as being when more than one expression refers to a
+single memory location, as in the following example:
+
+int x,*p,a[3];
+
+void main(void)
+{
+   p=&amp;x; // Now *p and x are aliases to the same memory location.
+
+   x=5;  // There are now two ways to assign values to that memory.
+   *p=4;
+
+   a[2]=myfunc(p);
+ // Passing aliases to functions can cause problems when using /Oa.
+
+   p=a;
+ // Arrays also can be aliased; now *p and a[0] are common aliases.
+}
+
+Common aliasing problems can occur when the compiler causes one of
+these aliases to be stored in a register to speed up code execution.
+If both aliases subsequently are used to change the same memory
+location, one may change the register value and the other the actual
+in-memory value. Furthermore, when the register variable is finally
+unloaded, its value will overwrite whatever changes may have been made
+to memory.
+
+There are two places where variables stored in registers can become
+corrupted through aliasing problems. One place is across function
+calls where functions are assumed to not corrupt the value. The other
+place is by assignments through pointer variables. The following
+paragraphs and table summarize the susceptibility of different types
+of data to the above mentioned corruption:
+
+Local Variables
+---------------
+
+Because of their restricted scope, local variables are assumed by the
+compiler to be safe from aliasing problems. Therefore, locals are
+prime candidates for register storage and if for some reason aliasing
+occurs, they are prone to common aliasing problems both over function
+calls and through pointer assignment.
+
+Global Variables
+----------------
+
+Because of their extensive scope, global variables can often
+accumulate multiple aliases. Therefore, the code generator causes them
+to be unloaded from registers before function calls to preserve their
+value. However, globals are still prone to aliasing problems through
+pointer assignment with /Oa and/or /Ow.
+
+*p
+--
+
+*p represents a pointer variable accessed primarily to change its
+associated memory location. *p as a variable can be stored in a
+register, and therefore, can be affected by common aliasing problems.
+It is protected under default optimizations by the code generator.
+Under /Ow, it is protected across function calls but not from
+assignment through another pointer (for example, a *x). Under /Oa, *p
+is not protected as a separate symbol at all.
+
+Address Taken
+-------------
+
+If a variable's address has been taken, the C code generator will
+protect it from common aliasing pitfalls in all but one case involving
+the /Oa switch. If a local variable's address is taken and passed to a
+function, the local variable's value can then be changed within the
+function through an alias without protection from common aliasing
+problems.
+
+The following two further limitations apply to the above rule:
+
+1. If global optimization is not invoked, the code generator does not
+   always recognize if an address is taken without the use of the
+   address-of operator (&amp;). This is only an issue for arrays because
+   they are the only object whose address can be taken without the
+   operator. What this means is that given - int *p,a[4]; p=&amp;a[0] is
+   compatible with /Oa, but p=a is not protected.
+
+2. The checking is done only on a procedure-by-procedure basis, so if
+   the address of a global is taken outside of the current procedure,
+   it won't be detected.
+
+The following interference table summarizes the effects of the code
+generator in the various circumstances described above:
+
+   Var Type   Effect of Function Call   Effect of Assign Thru Pointer
+   --------   -----------------------   -----------------------------
+
+              /O    /Ow   /Oa           /O   /Ow   /Oa
+   local       N     N     N             N    N     N
+   global      Y     Y     Y             Y    N     N
+   *p          Y     Y     N             Y    N     N
+   addr-taken  Y     Y     N             Y    Y     Y
+
+   N - Variable in register not protected from common aliasing problems.
+   Y - Variable unloaded from registers to memory (protected).
+
+For more information see the "Microsoft C Advanced Programming
+Techniques" manual, Pages 13-15.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

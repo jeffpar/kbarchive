@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268500/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268500/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268500/","publisher":null,"image":null,"headline":"Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268500-advertisement-rescheduling-may-fail-due-to-improper-apm-code">Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268500
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbSoftwareDist kbsms200preSP3fix kbsms200SP3f
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have set your computer system's connection limit to a fixed number of
+distribution points. This prevents the overload of the distribution servers when
+a large number of clients attempt to run an advertisement at the same time.
+Clients can attach to the distribution point until the connection limit is
+reached. Any additional clients that attempt to attach to a connection-limited
+distribution point are denied access and an error message is recorded in the
+SMSAPM32 log indicating the failed connection. The clients can retry the
+connection every 10 minutes.
+
+In rare circumstances, the Advertisement Program Manager (APM) displays a
+non-normal error code that does not allow the client to enter the Retry mode and
+the advertisement cannot run.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+WORKAROUND
+==========
+
+To work around this issue, create a new program for the failed package and a new
+advertisement that targets the clients that failed to run the package.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+The SMSAPM32 log contains the following types of messages when the error occurs
+and the job is not rescheduled automatically as it should be:
+
+  
+
+  SCHED DATA  : Return code = 0x80070047; No more connections can be made to this remote computer at this time because there are already as many connections as the computer can accept.~~; Could not enable program 'test1.bat'.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.804 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  IPC PIPE    : HANDLE 0x234 IPC Close Event signaled SMS_CLIENT_EVENT_PEA32_CLOSE~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.834 2000&gt;&lt;thread=532 (0x214)&gt;
+  IPC PIPE    : CAPPipe::SmartReadFile - Shutdown Signaled _SMS_SMARTFILE_CLIENT_SEMAP_630.1~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.834 2000&gt;&lt;thread=532 (0x214)&gt;
+  IPC PIPE    : ---&gt; Client has disconnected. Shutting down this IPC thread. &lt;--~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.834 2000&gt;&lt;thread=532 (0x214)&gt;
+  IPC PIPE    : CAPPipe :: BlockingListen - Setting NOT_CONNECTED~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.834 2000&gt;&lt;thread=532 (0x214)&gt;
+  IPC PIPE    : Shutdown In Progress on call to CAPPipe::WaitOnEvent~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.844 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  IPC PIPE    : ERROR: BlockingSendMessage DID NOT RECEIVE REPLY TO MESSAGE. Message Type = 0x4000008  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.844 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  IPC SERVER  : CAPPipeServer :: Release - Refcount now 1~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.844 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Reporting status : APA_JOB_STATUS_UNKNOWN~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.844 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Setting job status to 0xd.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Program completed unsuccessfully.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Handling an error condition (0x80070047) for program Run test1.bat in package Test batch file #1.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Beginning with a job run status set to APA_RUNSTATUS_NOT_RUNNING.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : *** UNRECOGNISED JOB COMPLETION RETURN CODE. ASSUMING UNSUCCESSFUL EXECUTION~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : The error requires that some type of reschedule action be taken.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Attempting to get action for failure condition 0x80070047.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHEDULER   : The monitor has indicated that a countdown dialog is not required before executing a scheduled program.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.854 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : The job failed or some unknown error has occurred.  Get the Job Failed Action from the registry.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.864 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Returning action code 2.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.864 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : Determining whether to unschedule or schedule this job based on its current settings.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.884 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHED DATA  : For program Run test1.bat in package Test batch file #1 compiling all offers in order to get its schedule time and attributes.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.894 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHEDULER   : Determining whether to unschedule or schedule the next time the program will run ...~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.894 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+  SCHEDULER   : Unscheduling program Run test1.bat in package Test batch file #1 for &lt;ANY USER&gt;.~  $$&lt;APM&gt;&lt;Tue May 16 13:17:10.894 2000&gt;&lt;thread=1512 (0x5E8)&gt;
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbSoftwareDist kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS120 kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :1.2,2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

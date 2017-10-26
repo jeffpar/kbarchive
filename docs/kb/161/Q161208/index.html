@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161208: HOWTO: Create a Default Property For a User Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161208: HOWTO: Create a Default Property For a User Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161208/","publisher":null,"image":null,"headline":"Q161208: HOWTO: Create a Default Property For a User Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161208-howto-create-a-default-property-for-a-user-control">Q161208: HOWTO: Create a Default Property For a User Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161208
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbusage kbCtrlCreate kbVBp500 kbVBp600 kbGrpDSVB kbCtrlCreat
+Last Modified: 01-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create a default property for your User Control. A default property is
+the property selected when you select the control in design mode. For example,
+when you select a Label, the highlighted property is Caption. Therefore, Caption
+is the default property for the Label. This article will explain how to create a
+default property for a User Control that you create.
+
+MORE INFORMATION
+================
+
+To create a default property, first you must create the property by doing the
+following:
+
+1. Start a new ActiveX Control project in Visual Basic.
+
+2. From the View menu, select Code to open the control's code window.
+
+3. From the Tools menu, select Add Procedure.
+
+4. In the Add Procedure dialog box, enter the property name, and check the
+  Property option in the Type frame.
+
+5. Click OK.
+
+After the property is created, follow these steps to make the property the
+default property:
+
+1. From the Tools menu, select Procedure Attributes.
+
+2. In the Procedure Attributes dialog box, select the property name you
+  previously created.
+
+3. Add a Description, if desired, and select Advanced&gt;&gt;.
+
+4. Select the User Interface Default check box in the Attributes frame.
+
+5. Click OK.
+
+When using the User Control in designing a Visual Basic form, the default
+property will be highlighted when the User Control is selected.
+
+You can only have one default property for each control. Therefore, you can only
+select the "User Interface Default" checkbox for one property. If you select
+this checkbox for another property, it will ask you if you want to make the
+newly-selected property the default property.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q161156 How to Create a Default Event for a UserControl
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbCtrlCreate kbVBp500 kbVBp600 kbGrpDSVB kbCtrlCreat 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVB500 kbVB600 kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

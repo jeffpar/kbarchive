@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150003: FIX: __vfptr Elements Are Not Properly Displayed in Debugger | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150003: FIX: __vfptr Elements Are Not Properly Displayed in Debugger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150003/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150003/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150003/","publisher":null,"image":null,"headline":"Q150003: FIX: __vfptr Elements Are Not Properly Displayed in Debugger","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150003-fix-__vfptr-elements-are-not-properly-displayed-in-debugger">Q150003: FIX: __vfptr Elements Are Not Properly Displayed in Debugger</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150003
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbDebug kbide kbVC500fix
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Integrated Debugger, used with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the theApp variable in an AppWizard-generated MFC application, the
+element values of __vfptr are not properly displayed in the debugger. For an
+example, please see the "More Information" section of this article.
+
+RESOLUTION
+==========
+
+Drag the address of __vfptr into the memory window, view the data in long-hex
+format, and notice that the addresses to which the __vfptr variable points
+appear.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Example
+-------
+
+1. Create a default AppWizard MFC application. In the InitInstance(), view the
+  theApp variable in the watch window.
+
+2. Expand the theApp variable to view the following tree structure:
+
+     theApp
+      CWinApp
+       CWinThread
+        CCmdTarget
+         CObject
+           __vfptr = 0x00405118   // This is correct
+
+Under Windows NT:
+
+            [0] CXX0030: Error: expression cannot be evaluated
+            [1] CXX0030: Error: expression cannot be evaluated
+            [2] CXX0030: Error: expression cannot be evaluated
+            [3] CXX0030: Error: expression cannot be evaluated
+            [4] CXX0030: Error: expression cannot be evaluated
+
+Under Windows 95 (All values are incorrect):
+
+            [0] 0xf000e681
+            [1] 0xf000ff47
+            [2] 0xf000ff47
+            [3] 0xf000ff47
+            [4] 0xf000ff47
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

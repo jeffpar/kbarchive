@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138571/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138571/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138571/","publisher":null,"image":null,"headline":"Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138571-netbios-name-resolution-through-dns-fails-using-tcpip-32">Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138571
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11,3.11a,3.11b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a NetBIOS name to be resolved is not in the local DNS, and you are using
+TCP/IP-32 for Windows for Workgroups 3.11, the NetBIOS name may not traverse up
+on the Domain name hierarchy and therefore may not be resolved.
+
+NOTE: Ping, Telnet, and FTP, which uses Host name (Non-NetBIOS names) resolution,
+work fine.
+
+
+RESOLUTION
+==========
+
+Obtain the fix mentioned below.
+
+The search order is now as follows:
+
+Assume the computer is named "yourcomputer", and it's DNS domain is configured to
+be "group1.company1.com." Also, two extra domain suffixes are configured,
+"company2.com" and "company3.com"
+
+Now if you type NET VIEW \\YOURCOMPUTER, dns queries will be tried in the
+following order until one works:
+
+- yourcomputer.group1.company1.com
+
+- yourcomputer.company1.com
+
+- yourcomputer.com
+
+- yourcomputer.company2.com
+
+- yourcomputer.company3.com
+
+If none of these succeed, then Error 53 appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 for Windows for
+Workgroups version 3.11b. A fix is in development, but has not been
+regression-tested and may be destabilizing in production environments. Microsoft
+does not recommend implementing this fix at this time. Contact Microsoft Product
+Support Services for more information on the availability of this fix.
+
+
+Additional query words: 3.11 wfw wfwg prodtcp32
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

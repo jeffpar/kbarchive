@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132891: INFO: The Meaning of v.# for User Name in SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132891: INFO: The Meaning of v.# for User Name in SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132891/","publisher":null,"image":null,"headline":"Q132891: INFO: The Meaning of v.# for User Name in SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132891-info-the-meaning-of-v-for-user-name-in-sourcesafe">Q132891: INFO: The Meaning of v.# for User Name in SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132891
+Product(s): Microsoft SourceSafe
+Version(s): MS-DOS:3.04,3.1; WINDOWS:3.04,3.1; winnt:3.04,3.1
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 20-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+- Microsoft SourceSafe for Windows NT, versions 3.04, 3.1 
+- Microsoft SourceSafe for MS-DOS, versions 3.04, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may see the characters v.# (where # is an integer) appear to the right of a
+filename in the SourceSafe interface (the 'v.#' is visible in the column where
+the user name of the person who has the file checked out normally appears). The
+presence of these characters indicates the file has been shared at the specific
+version indicated by the number.
+
+Sharing at an explicit version makes the indicated version the current version in
+the file. When a file is shared at an explicit version you cannot checkout the
+file. If you wish to make modifications to the older version of the file you
+could either:
+
+- Separate the file(s) to a new project at an older version and make the
+  modifications in the new project.
+
+-or-
+
+- Roll back the file to the older version. This is permanently destroys any
+  changes you have made to the file since this version and is therefore not
+  recommended.
+
+To get back to the latest version of the file:
+
+1. Select the file.
+
+2. Do a history of the file.
+
+3. Select the latest version of the file.
+
+4. Select the 'Share' button.
+
+You will get the prompt "Always use the latest version &lt;filename&gt;?". Select
+Yes. At this point, you can check out the file from the project again.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304DOS kbSSafe310 kbSSafe310DOS kbSSafe304NT kbSSafe310NT
+Version           : MS-DOS:3.04,3.1; WINDOWS:3.04,3.1; winnt:3.04,3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

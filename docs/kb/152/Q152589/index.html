@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152589/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152589/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152589/","publisher":null,"image":null,"headline":"Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152589-netscape-201-clients-hang-while-getting-ssl-pages-w-graphics">Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152589
+Product(s): Internet Information Server
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a Netscape Navigator 2.01 client to view a SSL protected web page
+with graphics on Internet Information Server (IIS), the Netscape client may
+appear to hang. However, after 15 minutes of inactivity, the client will
+suddenly display the entire page with all the graphics.
+
+CAUSE
+=====
+
+Netscape Navigator 2.01 clients do not support HTTP Keep-Alives over SSL
+connections.
+
+WORKAROUND
+==========
+
+Disable HTTP Keep Alives on the IIS computer by doing the following:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. With Registry Editor, go to the following registry key
+
+     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters
+
+
+2. Click Add Value on the Edit menu. Add the following:
+
+     Value Name: SslNoKeepAlive
+     Data Type:  REG_DWORD
+     Data:    1
+
+
+3. Stop and restart all of the IIS services.
+
+Notes:
+
+- Unfortunately, disabling HTTP Keep Alives has severe performance implications
+  as it disables HTTP Keep Alives completely, even for non-SSL pages.
+
+- Microsoft has changed IIS to only use HHTP Keep Alives over SSL with browsers
+  known to be compliant, currently the only known compliant browser is
+  Microsoft Internet Explorer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 1.0. This problem was corrected in the latest Microsoft Internet
+Information Server U.S. Service Pack.
+
+The service pack for IIS 1.0b systems using 64-bit SSL keys is available from
+Microsoft's World Wide Web at the following location:
+
+  http://www.microsoft.com/Infoserv/iisservpack.htm.
+
+If you require information on obtaining the domestic version of the service pack
+(support for 128-bit keys), consult the Readme.htm file located at
+http://www.microsoft.com/infoserv/readme.htm.
+
+This problem was also corrected in the latest Windows NT 3.51 U.S. Service Pack.
+For information on obtaining the Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: ssl netscape internet browser hang freeze post method form navigator prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

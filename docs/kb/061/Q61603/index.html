@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61603: TEXT.C Can Cause a Protection Violation Under OS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61603: TEXT.C Can Cause a Protection Violation Under OS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61603/","publisher":null,"image":null,"headline":"Q61603: TEXT.C Can Cause a Protection Violation Under OS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61603-textc-can-cause-a-protection-violation-under-os2">Q61603: TEXT.C Can Cause a Protection Violation Under OS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q61603</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">See</span> <span class="n">article</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.00</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span>
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">ENDUSER</span> <span class="p">|</span> <span class="n">buglist6</span><span class="m">.00</span> <span class="p">|</span> <span class="n">mspl13_c</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">29</span><span class="p">-</span><span class="n">MAY</span><span class="p">-</span><span class="m">1990</span>
+
+<span class="k">If</span> <span class="n">the</span> <span class="n">example</span> <span class="n">file</span> <span class="n">TEXT</span><span class="p">.</span><span class="n">C</span> <span class="p">(</span><span class="n">obtained</span> <span class="k">from</span> <span class="n">the</span> <span class="n">C</span> <span class="n">Compiler</span> <span class="k">version</span> <span class="m">6.00</span>
+<span class="n">online</span> <span class="n">help</span><span class="p">)</span> <span class="n">is</span> <span class="n">compiled</span> <span class="n">using</span> <span class="n">the</span> <span class="n">large</span> <span class="n">memory</span> <span class="k">model</span> <span class="k">and</span> <span class="n">the</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span>
+<span class="n">protected</span> <span class="n">mode</span> <span class="n">libraries</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">operating</span> <span class="nf">system</span> <span class="n">error</span> <span class="n">may</span>
+<span class="n">occur</span><span class="p">:</span>
+
+   <span class="n">SYS1943</span><span class="p">:</span> <span class="n">A</span> <span class="n">program</span> <span class="n">caused</span> <span class="n">a</span> <span class="n">protection</span> <span class="n">violation</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">reproduce</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">cut</span> <span class="n">the</span> <span class="n">example</span> <span class="n">program</span> <span class="n">out</span> <span class="k">of</span> <span class="n">the</span> <span class="n">online</span>
+<span class="n">help</span> <span class="k">and</span> <span class="n">save</span> <span class="n">it</span> <span class="k">to</span> <span class="n">a</span> <span class="n">file</span> <span class="n">named</span> <span class="n">TEXT</span><span class="p">.</span><span class="n">C</span><span class="p">.</span> <span class="k">Then</span> <span class="nf">compile</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">following</span> <span class="nf">command</span> <span class="n">line</span><span class="p">:</span>
+
+   <span class="n">cl</span> <span class="p">/</span><span class="n">AL</span> <span class="p">/</span><span class="n">Zp</span> <span class="n">text</span><span class="p">.</span><span class="n">c</span> <span class="n">grtextp</span><span class="p">.</span><span class="n">lib</span>
+
+<span class="n">Upon</span> <span class="n">invoking</span> <span class="n">TEXT</span><span class="p">.</span><span class="n">EXE</span><span class="p">,</span> <span class="n">the</span> <span class="n">SYS1943</span> <span class="n">message</span> <span class="n">will</span> <span class="n">be</span> <span class="n">displayed</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">program</span> <span class="n">will</span> <span class="k">exit</span><span class="p">.</span>
+
+<span class="n">Due</span> <span class="k">to</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">with</span> <span class="n">the</span> <span class="n">_outtext</span><span class="p">()</span> <span class="k">function</span><span class="p">,</span> <span class="n">compiling</span> <span class="n">this</span> <span class="n">program</span>
+<span class="k">in</span> <span class="n">large</span> <span class="n">memory</span> <span class="k">model</span> <span class="n">produces</span> <span class="n">the</span> <span class="n">protection</span> <span class="n">violation</span><span class="p">.</span>
+
+<span class="k">As</span> <span class="n">a</span> <span class="n">workaround</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="nf">compile</span> <span class="n">the</span> <span class="n">program</span> <span class="k">with</span> <span class="n">the</span> <span class="n">small</span> <span class="n">memory</span>
+<span class="k">model</span> <span class="p">(/</span><span class="k">AS</span><span class="p">),</span> <span class="n">the</span> <span class="n">program</span> <span class="n">will</span> <span class="nf">run</span> <span class="n">properly</span><span class="p">.</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">with</span> <span class="n">the</span> <span class="n">C</span> <span class="n">Compiler</span>
+<span class="k">version</span> <span class="m">6.00</span><span class="p">.</span> <span class="n">We</span> <span class="n">are</span> <span class="n">researching</span> <span class="n">this</span> <span class="n">problem</span> <span class="k">and</span> <span class="n">will</span> <span class="n">post</span> <span class="n">new</span>
+<span class="n">information</span> <span class="n">here</span> <span class="k">as</span> <span class="n">it</span> <span class="n">becomes</span> <span class="n">available</span><span class="p">.</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

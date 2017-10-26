@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166509: BUG: Column Name Greater Than 128 Characters Cause Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166509: BUG: Column Name Greater Than 128 Characters Cause Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166509/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166509/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166509/","publisher":null,"image":null,"headline":"Q166509: BUG: Column Name Greater Than 128 Characters Cause Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166509-bug-column-name-greater-than-128-characters-cause-error">Q166509: BUG: Column Name Greater Than 128 Characters Cause Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166509
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS: 3.0,3.0b,6.0
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfpkbbuglist
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changing a column's name to a value greater than 128 characters can cause the
+operating system to return a memory violation error while modifying the
+structure of the table. The error occurs after changing the column name of a
+table with the ALTER TABLE command. This command allows you to programmatically
+assign a column a name greater than 128 characters in length. The dialog boxes
+available through the interface, such as those invoked with the MODIFY STRUCTURE
+command, do not allow a name greater than 128 characters.
+
+One of the following system error appears depending on the version of the
+operating system:
+
+- In Windows 95, the following error appears:
+
+  This program has performed an illegal operation and will be shut down.
+
+  Clicking Details reveals the following message:
+
+  VFP caused an invalid page fault in module KERNEL32.DLL at &lt;memory
+  address&gt;.
+
+- In Windows NT 4.0, the following error appears:
+
+  An application error has occurred and an application error log is being
+  generated.
+
+  VFP.exe
+  Exception: access violation &lt;error number&gt;, Address: &lt;memory
+  address&gt;.
+
+- Finally, the Macintosh operating system reports:
+
+  Sorry, a system error occurred.
+  "Microsoft Visual FoxPro"
+  error type 11
+
+In each case that error may or may not be preceded by an "Internal consistency"
+error.
+
+This error does not occur in Visual FoxPro 5.0 for Windows.
+
+RESOLUTION
+==========
+
+When using the ALTER TABLE command, do not create field names longer than 128
+characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Visual FoxPro Help file topic entitled "Visual FoxPro Naming Rules" states:
+
+  Use 1 to 254 characters, except for field names in free tables and index tags
+  - they can be 10 characters at most.
+
+However, the operating system shuts down Visual FoxPro 3.0 if you attempt
+modifications to a table containing a field name greater than 128 characters
+from within the Table Designer window.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the Customer table located in the \Samples\Data folder.
+
+2. Issue the following command in the Command window:
+
+        COPY TO Home()+"Ztest.dbf"
+        CLOSE ALL
+        CREATE DATABASE Ztest.dbc
+        MODIFY DATA
+
+3. Select Add Table from the Database menu.
+
+4. From the Open dialog box double-click Ztest.dbf to add it to the database
+  container.
+
+5. Bring the Command window forward by pressing CTRL+F2.
+
+6. In the Command window, type the following command:
+
+        ALTER TABLE Ztest RENAME COLUMN Title to Verylongname...longname
+
+  Where Verylongname is a long string of letters greater than 128 characters in
+  length.
+
+7. Click on the Ztest table window in the database container window, then select
+  Modify from the Database menu.
+
+8. Click at several locations and type in the comments Editbox of the Table
+  Designer window, then navigate between tabs, and click OK to close the
+  window. At this point or earlier the error occurs.
+
+Additional query words: kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS: 3.0,3.0b,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

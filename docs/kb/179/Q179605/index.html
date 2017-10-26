@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179605/","publisher":null,"image":null,"headline":"Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179605-prb-cannot-quit-vfp-when-previewing-report-in-a-desktop-window">Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179605
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a report preview to a window defined with the DESKTOP clause that
+is larger than the FoxPro desktop, the preview data does not appear and you are
+unable to quit Visual FoxPro.
+
+RESOLUTION
+==========
+
+If the contents of a preview must be sent to a defined window, do not use the
+DESKTOP clause when creating the window.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+WARNING: After running this code you will be unable to close Visual FoxPro
+through normal means. Use Task Manager in Windows NT or the Close Program dialog
+box in Windows 95 to close Visual FoxPro. Before running this code, close all
+running applications and save your data. To close all open applications, press
+the CTRL+ALT+Delete keys to open the Windows Task Manager or Close Program
+dialog box, and then close all the other applications you have running. Note
+that following the steps below may produce lost allocation units, lost clusters,
+or cross-linked files.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a quick report named Ztest based on any table.
+
+2. Create a program called Zprevtest that contains the following code:
+
+        MODIFY WINDOW SCREEN FROM 0,0 TO 35, 110 FONT "Arial", 14
+        DEFINE WINDOW Ztest IN DESKTOP FROM 0,0 TO 35, 138 FONT "Arial", ;
+        14 TITLE "On Top"
+        ACTIVATE WINDOW Ztest
+        REPORT FORM Ztest.frx PREVIEW WINDOW Ztest
+        RELEASE WINDOW Ztest
+
+3. Run the program. The window on top now takes up the entire Visual FoxPro
+  desktop and the report preview never appears. Note that there is no way to
+  close the screen. Invoke the Close Program dialog box in Windows 95 or the
+  Task Manager in Windows NT 4.0 and select End Task.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

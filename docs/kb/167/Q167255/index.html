@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167255/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167255/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167255/","publisher":null,"image":null,"headline":"Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167255-wd97-html-tags-nested-incorrectly-after-saving-word-97-file">Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167255
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbhtml
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you look at your HTML document in a Web browser, the HTML document appears
+to be formatted incorrectly. For example, all of the text appears to be
+formatted with the same font formatting.
+
+NOTE: This problem may not be evident in all Web browsers.
+
+CAUSE
+=====
+
+When you save a Word 97 document in HTML format, Word may incorrectly nest the
+HTML markup if one paragraph ends with the same text formatting as the
+subsequent paragraph. Although some browsers ignore the nesting error, other
+browsers may not be able to interpret and display the HTML markup correctly.
+
+WORKAROUND
+==========
+
+To work around this problem, open the HTML document in a text editor, such as
+Notepad, and correct the nesting order of the HTML code.
+
+NOTE: If you modify the document using Word 97 and then save your changes, Word
+saves the HTML code incorrectly. To correct the problem you need to re-edit the
+document in a text editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+This problem was corrected in Microsoft Word 2000.
+
+MORE INFORMATION
+================
+
+To correctly nest tags in HTML, the last tag that you open is the first tag that
+you close.
+
+The following is an example of how Word 97 incorrectly nests the HTML code.
+Notice that the bold
+
+&lt;B&gt;
+
+end tag appears in the second paragraph
+
+&lt;P&gt;
+
+element after the text "Verse 1":
+
+  &lt;B&gt;&lt;I&gt;&lt;U&gt;&lt;FONT FACE="Arial"&gt;
+
+  &lt;P ALIGN="JUSTIFY"&gt;Test Pattern&lt;/P&gt;
+
+  &lt;/I&gt;&lt;/U&gt;&lt;/FONT&gt;
+
+  &lt;FONT FACE="Arial" SIZE=2&gt;
+
+  &lt;P ALIGN="JUSTIFY"&gt;&lt;A NAME="C"&gt;&lt;/A&gt;Verse 1&lt;/B&gt;: The quick brown
+
+  fox jumped over the lazy dog's back.
+
+  &lt;B&gt;Verse 2&lt;/B&gt;: The quick brown fox jumped over the lazy 
+dog's back.&lt;/P&gt;&lt;/FONT&gt;
+
+
+To correct this sample markup, move the bold
+
+&lt;B&gt;
+
+open tag in front of the text "Verse 1":
+
+  &lt;I&gt;&lt;U&gt;&lt;FONT FACE="Arial"&gt;
+
+  &lt;P ALIGN="JUSTIFY"&gt;&lt;B&gt;Test Pattern&lt;/B&gt;&lt;/P&gt;
+
+  &lt;/FONT&gt;&lt;/U&gt;&lt;/I&gt;
+
+  &lt;FONT FACE="Arial" SIZE=2&gt;
+
+  &lt;P ALIGN="JUSTIFY"&gt;&lt;A NAME="C"&gt;&lt;/A&gt;&lt;B&gt;Verse 1&lt;/B&gt;: The quick brown
+
+  fox jumped over the lazy dog's back.
+
+  &lt;B&gt;Verse 2&lt;/B&gt;: The quick brown fox jumped over the lazy dog's
+
+  back.&lt;/P&gt;&lt;/FONT&gt;
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q157086 WD97: Limitations of Converting from Word Format to HTM
+
+Additional query words: 8.0 communicator navigator display wrong
+
+======================================================================
+Keywords          : kbhtml 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140202/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140202/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140202/","publisher":null,"image":null,"headline":"Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140202-sample-mfcarray-using-safe-arrays-in-mfc-automation">Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140202
+Product(s): Microsoft C Compiler
+Version(s): 3.5,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbAutomation kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbVC400 kbVC500 kbVC
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft OLE Libraries, used with:
+   - Microsoft Windows NT Server versions 3.5, 4.0 
+   - Microsoft Windows NT Workstation versions 3.5, 4.0 
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MFCArray is an MFC OLE Automation server application that demonstrates the use
+of safe arrays. The array is passed to and returned from automation methods in a
+VARIANT.
+
+Microsoft Visual C++ 5.0 was used to create the automation server. Vb.vbp and
+Vb.frm in the sample are Visual Basic 5.0 files that can be used to control the
+automation server.
+
+The following file is available for download from the Microsoft Download Center:
+
+  MFCArray.exe
+  (http://download.microsoft.com/download/ole/mfcarray/2000/WIN98/EN-US/MFCArray.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+After downloading the file, use the following command to extract the sample and
+build the appropriate directory structure:
+
+  MFCArray.exe -d
+
+MORE INFORMATION
+================
+
+MFCArray implements the following methods:
+
+- SlowSort: Sorts an input safearray of BSTRs and returns the sorted array and
+  the time required for the sort. The array is passed by reference because it
+  needs to be modified by the sort. SlowSort uses SafeArrayGetElement and
+  SafeArrayPutElement to gain access to the array elements.
+
+- FastSort: Sorts an input safearray of BSTRs as does SlowSort but uses
+  SafeArrayAccessData to get a pointer to the array elements. This allows
+  direct access to the array elements instead of using SafeArrayGetElement and
+  SafeArrayPutElement. This accounts for the speed improvement over SlowSort.
+
+- Average: Finds the average of an input safe array of integers. The array is
+  not passed by reference.
+
+- GetArray: Creates and returns a safe array of BSTRs.
+
+REFERENCES
+==========
+
+For an example of referencing the values that are in a VARIANT that contains a
+SAFEARRAY in an MFC client, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q167668 HOWTO: Pass a SafeArray of Strings in a VARIANT
+
+Additional query words: MFCArray
+
+======================================================================
+Keywords          : kbfile kbSample kbAutomation kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbVC400 kbVC500 kbVC600 kbOSWin95 kbGrpDSCom kbDSupport kbOLE200 
+Technology        : kbVCsearch kbAudDeveloper kbOLESearch kbVC32bitSearch
+Version           : :3.5,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

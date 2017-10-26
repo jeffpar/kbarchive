@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164960: XFOR: Exchange Store Stops While Converting SMTP Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164960: XFOR: Exchange Store Stops While Converting SMTP Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164960/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164960/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164960/","publisher":null,"image":null,"headline":"Q164960: XFOR: Exchange Store Stops While Converting SMTP Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164960-xfor-exchange-store-stops-while-converting-smtp-message">Q164960: XFOR: Exchange Store Stops While Converting SMTP Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164960
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Information Store service may terminate unexpectedly when
+processing incoming SMTP messages with a transport-neutral encapsulation format
+(TNEF) body part.
+
+The Drwtsn32.log may show a failure of Store.exe with an entry similar to the
+example in the "More Information" section of this article.
+
+CAUSE
+=====
+
+This will only occur when processing incoming messages with a TNEF body part.
+The TNEF body part may contain invalid named properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The Dr Watson log may include information similar to the following example.
+
+Application exception occurred:
+
+  App: store.dbg (pid=117)
+  When: 8/29/1997 @ 16:1:58.640
+  Exception number: c0000005 (access violation)
+
+Stack trace:
+
+0b8af33c  0074bfc9  STORE!EcFindJtabNameid+0x44
+0b8af364  0074d2ba  STORE!EcGetJtabIDFromName+0x59(0x01422DD4, 0x00000000)
+0b8af39c  0074e950  STORE!MDB::EcGetIDsFromNames+0xfa(0x0AD8463C,
+0x00000002, 0x00000001, 0x0B8AF4B0, 0x0B8AF414, 0x0B8AF448)
+0b8af3d0  0084d777  STORE!OMSG::EcGetIDsFromNames+0x60(0x0AD8463C,
+0x00000002, 0x00000001, 0x0B8AF4B0, 0x0B8AF414, 0x0B8AF448)
+0b8af418  00855b57  STORE!CVTOMSG::HrGetIDsFromNames+0x37(0x00000002,
+0x00000001, 0x0B8AF4B0, 0x0B8AF448)
+0b8af44c  00876b9a  STORE!CMDBMessage::GetIDsFromNames+0x87(0x01432E74,
+0x00000001, 0x0B8AF4B0, 0x00000002)
+0b8af480  00881110  STORE!CMAPIMessage::GetIDsFromNames+0x3a(0x0ADC6204,
+0x00000001, 0x0B8AF4B0, 0x00000002)
+0b8af4dc  0059fc56  STORE!HrDecodeNamedPropTag+0x220(0xfc40fcf1,
+0x0B8AF50C)
+0b8af514  005f04bb  STORE!HrDecodePropVal+0xb6(0x00000000, 0x0040A630,
+0x00000000, 0x0ADBCDEC, 0x0B8AF5EC, 0x0B8AF578)
+0b8af580  005e0c94  STORE!HrDecodeEncapsulation+0xdb(0x00000000,
+0x000045fc, 0x00000000, 0x0040A630, 0x0B8AF5EC, 0x0B8AF5FC, 0x0B8AF614,
+0x00000000)
+0b8af620  005e0473  STORE!HrExtractProperties+0x7d4(0xffffffff, 0x00000000,
+0x0040A630, 0x00000000)
+0b8af648  005f2ecd  STORE!TNEF_ExtractProps+0x233(0x0ADC62E4, 0x00000002,
+0x0040A630, 0x00000000)
+0b8af69c  005c5794  STORE!CmnBptMessage::hrExtractTNEF+0x1cd(0x0AD7DF94,
+0x0AD7F99C)
+0b8af6d8  005a8b35  STORE!CmcvtrBptEnd::hrExtract+0x2e4(0x0AD7DF94,
+0x0AD7F99C, 0x0AD70644, 0x00000000, 0x0B8AF708)
+0b8af714  005c549c  STORE!CINETextr::hrExtract+0x185(0x0B8AF73C,
+0x00000000, 0x0B8AF73C)
+0b8af740  005c541c  STORE!CConvertStream::HrFlush+0x3c(...)
+0b8af770  005c51c8  STORE!CConvertStream::Commit+0xbc(0x01432754)
+0b8af7a0  004f9a5b  STORE!CSTREAM::HrCommit+0x68(0x00000000, 0x00000000)
+0b8af7dc  004f98f8  STORE!EcCommitStreamOp+0x12b
+0b8af800  00429602  STORE!EcCommitStream+0x78(0x00000001, 0x00000018)
+0b8af8c0  00427900  STORE!EcRpc+0x1bf2(0x0B8AF924, 0x00007800)
+0b8af928  77e11841  STORE!EcDoRpc+0x90(0x00172E48, 0x0ADB00AC, 0x0017B53A,
+0x7800)
+0b8af948  77e52265
+RPCRT4!?AllocateCCall@WMSG_CASSOCIATION@@QAEJPAPAVWMSG_CCALL@@PAU_RPC_CLIEN
+T_INTERFACE@@@Z+0x27
+0b8af964  77e52236  RPCRT4!NdrClientCall2+0x265
+0b8afc28  77e51f9e  RPCRT4!NdrClientCall2+0x236
+0b8afc7c  77e11122  0x77e4ef9e
+0b8afcd0  77e112fb
+RPCRT4!?ClearThreadSecurityContext@SCONNECTION@@IAEPAVSSECURITY_CONTEXT@@PA
+VMUTEX@@@Z+0x2b
+0b8afcd0  77e112fb
+RPCRT4!?DispatchToStub@RPC_INTERFACE@@QAEJPAU_RPC_MESSAGE@@IPAJ@Z+0x4f
+0b8afcf0  77e119cf
+RPCRT4!?DispatchToStub@RPC_INTERFACE@@QAEJPAU_RPC_MESSAGE@@IPAJ@Z+0x4f
+0b8afd38  77f64b1c
+RPCRT4!?FreeCCall@WMSG_CASSOCIATION@@QAEHPAVWMSG_CCALL@@@Z+0xb
+0b8afd74  77f7e485  NTDLL!LdrpResolveDllName+0x142
+0b8afdf4  77f64d10  NTDLL!CPropertySetStream___PatchSectionOffsets+0x57
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

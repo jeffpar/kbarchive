@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238989: PRB: RichEdit Control in Applications That Call OleInitialize() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238989/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238989/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238989/","publisher":null,"image":null,"headline":"Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238989-prb-richedit-control-in-applications-that-call-oleinitialize">Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238989
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveDocs kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbRichEdit kbVC500 kbVC600 kbDSu
+Last Modified: 14-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SYMPTOMS
+========
+
+When using the RichEdit control in an application that calls OleInitialize, if
+the control is destroyed during a Component Object Model (COM) call, then OLE
+will not be uninitialized correctly.
+
+CAUSE
+=====
+
+The problem occurs because the RichEdit control, by default, calls OleInitialize
+when it is initialized, and calls OleUninitialize when it is destroyed. If the
+application is in the context of a COM call when it destroys the RichEdit
+window, then OleUninitialize will not run correctly, because OleUninitialize
+ends up calling CoUninitialize, and CoUninitialize will return immediately if
+the thread is in the context of another COM call. This results in an unbalanced
+call to CoInitialize, and therefore the OLE libraries are not uninitialized
+correctly.
+
+Please note this problem applies only to RichEdit 1.0.
+
+
+A known issue with this problem is if the RichEdit control is used in an Active
+Document Server, and the server destroys the RichEdit control within the context
+of the IOleObject::Close call. This happens in MFC when the RichEdit control is
+destroyed when the view, or the document, is being destroyed.
+
+RESOLUTION
+==========
+
+To work around this issue, the RichEdit control should be created so that it
+will not call OleInitialize and OleUninitialize. To do this, set the
+ES_EX_NOCALLOLEINIT style during the WM_NCCREATE message, before the RichEdit
+control handles this message.
+
+The following steps describe how to do this in MFC:
+
+1. Create a class that is derived from CRichEditCtrl:
+
+  class CMyRichEdit : public CRichEditCtrl
+  {
+  	DECLARE_DYNCREATE(CMyRichEdit)
+  public: 
+  	CMyRichEdit(){};
+  	~CMyRichEdit(){};
+
+  	//{{AFX_MSG(CMyRichEdit)
+  	afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
+  	//}}AFX_MSG
+  	DECLARE_MESSAGE_MAP()
+
+  };
+
+2. Add the message map and entries as follows in the *.cpp file for the class:
+
+  IMPLEMENT_DYNCREATE(CMyRichEdit, CRichEditCtrl)
+
+  BEGIN_MESSAGE_MAP(CMyRichEdit, CRichEditCtrl)
+  	//{{AFX_MSG_MAP(CMyRichEdit)
+  	ON_WM_NCCREATE()
+  	//}}AFX_MSG_MAP
+  END_MESSAGE_MAP()
+
+3. Handle the OnNcCreate function as follows:
+
+  BOOL CMyRichEdit::OnNcCreate(LPCREATESTRUCT lpCreateStruct) 
+  {
+  	LONG gwlEx = ::GetWindowLong(m_hWnd, GWL_EXSTYLE);
+  	gwlEx |= ES_EX_NOCALLOLEINIT;
+
+  	gwlEx = ::SetWindowLong(m_hWnd, GWL_EXSTYLE, gwlEx);
+  	
+  	if (!CRichEditCtrl::OnNcCreate(lpCreateStruct))
+  		return FALSE;
+  	
+  	return TRUE;
+  }
+
+Use GetWindowLong and SetWindowLong to add the ES_EX_NOCALLOLEINIT style to the
+control. This method must be used because the RichEdit control does not pay
+attention to this extended style when creating the control through
+CreateWindowEx.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use AppWizard to create an MFC MDI Active Document Container.
+
+2. Build the Active Document Container.
+
+3. Use AppWizard to create an MFC Active Document Server.
+
+4. Make sure that AfxOleInit is called in the InitInstance function in the
+  Active Document Server's CWinApp-derived class.
+
+5. Add the following member variable declaration to the CView-derived class of
+  the server:
+
+  CRichEditCtrl m_RichEdit;
+
+6. Use class wizard to add a message handler for WM_CREATE in the CView-derived
+  class of the server.
+
+7. Add the following code to the OnCreate message handler added above:
+
+  m_RichEdit.Create(ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_MULTILINE | ES_NOHIDESEL | ES_SAVESEL
+  		, CRect(0,0,1,1), this, 2001);	
+
+8. Add the following code to the destructor of the CView-derived class:
+
+  m_RichEdit.DestroyWindow();
+
+9. Build the Active Document Server.
+
+10. Run the Active Document Container and insert the Active Document Server.
+
+11. Close the MDI Child window that the server is in.
+
+12. Close the Active Document Container.
+
+Notice that the container process is still running.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveDocs kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbRichEdit kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

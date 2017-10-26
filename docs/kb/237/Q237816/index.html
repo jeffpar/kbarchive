@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237816/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237816/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237816/","publisher":null,"image":null,"headline":"Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237816-bug-msflexgrid-prints-as-black-box-after-installing-vs-sp3">Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237816
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0,6.0 SP3,6.0 SP5
+Operating System(s): 
+Keyword(s): kbprint kbActiveX kbOSWinNT400 kbOSWin2000 kbPrinting kbVBp kbVBp600 kbVS600sp3bug
+Last Modified: 17-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Visual Studio versions 6.0 SP3, 6.0 SP5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the PrintForm method of the Form object, if the Form contains a
+Microsoft FlexGrid (MSFlexGrid) control, the MSFlexGrid control prints as a
+black box. This only occurs on Windows NT and Windows 2000. The control prints
+correctly on Windows 95 and Windows 98.
+
+RESOLUTION
+==========
+
+To work around this problem, use the Microsoft Hierarchical FlexGrid
+(MSHFlexGrid) control, which appears as "Microsoft Hierarchical FlexGrid Control
+(SP3) (OLEDB)" in the Components dialog box. Switching to this control should
+not require coding changes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual Basic 6.0 running in
+Visual Studio 6.0 Service Pack 3 (SP3) or SP5 under Windows NT 4.0 and Windows
+2000.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, click Components.
+
+3. In the Components dialog box, click "Microsoft FlexGrid Control 6.0 (SP3)".
+  The name of the control is Msflexgrid.ocx. Click OK. Notice that a new icon
+  is added to your toolbox for the FlexGrid control.
+
+4. Double-click the FlexGrid icon in the toolbox to add the control to Form1.
+
+5. In the General Declarations section of Form1, add the following code:
+
+  Private Sub Form_Load()
+     Me.PrintForm
+  End Sub
+
+6. Make sure that you have a default printer set up, and then press the F5 key
+  to run the project. On the printout, notice that a solid black box appears
+  where the FlexGrid should appear.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbActiveX kbOSWinNT400 kbOSWin2000 kbPrinting kbVBp kbVBp600 kbVS600sp3bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0,6.0 SP3,6.0 SP5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

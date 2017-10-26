@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172177: PRB: Alpha Platform Not Available When Adding Configurations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172177: PRB: Alpha Platform Not Available When Adding Configurations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172177/","publisher":null,"image":null,"headline":"Q172177: PRB: Alpha Platform Not Available When Adding Configurations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172177-prb-alpha-platform-not-available-when-adding-configurations">Q172177: PRB: Alpha Platform Not Available When Adding Configurations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172177
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbdocerr kbide kbVC kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you move a project from the Intel platform to the Alpha RISC platform and
+attempt to add a new Alpha configuration (for example, by selecting
+Build|Configurations...|Add... from the Developer Studio menu) Developer Studio
+does not provide an option to choose "Win32(Alpha)" in the platform combo box.
+
+CAUSE
+=====
+
+Visual C++ RISC Edition is not a cross-development environment, but rather a
+native-development environment and is, therefore, not presented as a unique
+configuration platform. Additional platforms are only available in the Platforms
+combo box if they produce code that runs on a platform other than the native
+environment. Examples of this are the Visual C++ development environments for
+Apple Macintosh and Windows CE. These platform types must be built on the Intel
+platform, but they produce code that only runs on their respective platform
+architectures.
+
+RESOLUTION
+==========
+
+In native Visual C++ development environments, simply add a "Win32" platform and
+use the configuration name to identify the platform. For example, you might use
+the names "AlphaRelease" and "AlphaDebug" on the Alpha platform.
+
+MORE INFORMATION
+================
+
+Under Visual C++ version 4.0 RISC Edition, the Win32 platform name is displayed
+as "Win32 (platform)". For example, "Win32 (MIPS)", "Win32 (ALPHA)", etc.
+
+The Visual C++ 5.0 documentation incorrectly implies that the platforms will be
+presented in a similar manner.
+
+An existing 4.x project that contains the Win32 (platform) form of the
+configuration name will retain this name when migrated to Visual C++ version
+5.0.
+
+REFERENCES
+==========
+
+The following section is located in the Visual C++ Professional RISC Edition
+online documentation:
+
+  Port Visual C++ Applications Between Intel-Based and RISC Platforms (Alpha or
+  PowerPC)
+
+  InfoViewer Location (Visual C++, version 5.0):
+
+  mk:@ivt:vccore/F3/D6/S4D143.HTM
+
+  HTML Help Location (Visual C++, version 6.0):
+
+  mk:@MSITStore:[Enter Full Path to vccore.chm Here]::/
+  html/_core_port_visual_c.2b2b_.applications_between_
+  intel.2d.based_and_risc_platforms.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbide kbVC kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Hardware          : ALPHA
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

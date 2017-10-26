@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231834/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231834/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231834/","publisher":null,"image":null,"headline":"Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231834-prb-ado-to-sql-w-odbc-not-supporting-adasyncfetchnonblocking">Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231834
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1 SP2,2.5,2.6,2.7,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO260fix kbADO210sp2 kbADO250 kbMDAC26
+Last Modified: 24-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- ActiveX Data Objects (ADO), versions 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to use ActiveX Data Objects (ADO) to access SQL Server databases
+through the ODBC provider (MSDASQL), you will receive the following error if you
+specify adAsyncFetchNonBlocking with Server-side cursors:
+
+  -2147217890 lRowsOffset would position you past either end of the rowset,
+  regardless of the cRows value specified; cRowsObtained is 0.
+
+The following error is returned from ADO 2.5:
+
+  -2147217890 No rows were returned because the offset value moves the position
+  before the beginning or after the end of the rowset.
+
+NOTE: If you are using the SQLOLEDB provider you will not see this error message.
+However, fetching is still not supported for the cursor and it is blocked until
+the cursor is fully populated.
+
+CAUSE
+=====
+
+The adAsyncFetchNonBlocking recordset option is not supported with a Server
+cursor. Additional enhancements would be required for the server and client in
+order to implement this feature. The two way communication necessary to support
+adAsyncFetchNonBlocking with a server cursor is not available at this time.
+
+RESOLUTION
+==========
+
+adAsyncFetchNonBlocking is only supported with a Client cursor when you use 2.5
+or earlier versions of MDAC.
+
+STATUS
+======
+
+MDAC 2.6 supports adAsyncFetchNonBlocking for server side cursors. Earlier
+versions of MDAC do not support this.
+
+MORE INFORMATION
+================
+
+Step to Reproduce Behavior
+--------------------------
+
+1. Paste the following code into SQL Server's ISQL_w or Query Analyzer Utility.
+  Select a database with at least 2.5 MB of free space and execute the code.
+  This code creates the test table and populates it with data.
+
+  create table adoAsyncTest
+  (
+  	col1 int identity(1,1) primary key,
+  	col2 varchar(255),
+  	col3 varchar(255)
+  )
+  go
+  set nocount on
+  declare @iCnt int
+  select @iCnt=1
+  while @iCnt &lt; 5001
+  begin
+  	insert into adoAsyncTest values('my test data col1', 'my test data col2')
+  	select @iCnt = @iCnt + 1
+  end
+
+2. Open Visual Basic and create a new Standard EXE Project. Form1 is created by
+  default.
+
+3. Add a reference to the Microsoft ActiveX Data Objects 2.x Library.
+
+4. Paste the following code into the General Declarations section of the form:
+
+  Option Explicit
+
+  Private WithEvents adoCn As ADODB.Connection
+  Private WithEvents adoRs As ADODB.Recordset
+  Private adoErr As Errors
+
+  Private Sub Form_Load()
+
+  Dim strConnect As String
+  strConnect = "Driver={SQL Server};Server=&lt;ServerName&gt;;User ID=&lt;UserID&gt;;Password=&lt;Password&gt;;Initial Catalog=&lt;Database&gt;"
+
+  Set adoCn = New ADODB.Connection
+  With adoCn
+      '.Provider = "SQLOLEDB"
+      .ConnectionString = strConnect
+      .Open
+  End With
+
+  Set adoRs = New ADODB.Recordset
+  With adoRs
+      Set .ActiveConnection = adoCn
+      .CursorLocation = adUseServer 'adUseClient
+      .CursorType = adOpenStatic
+      .LockType = adLockReadOnly
+      .Open "SELECT * FROM adoAsyncTest", , , , (adCmdText + adAsyncFetchNonBlocking)
+  End With
+
+  Debug.Print "Executing Async..."
+
+  End Sub
+
+  Private Sub adoCn_ExecuteComplete(ByVal RecordsAffected As Long, ByVal pError As ADODB.Error, adStatus As ADODB.EventStatusEnum, ByVal pCommand As ADODB.Command, ByVal pRecordset As ADODB.Recordset, ByVal pConnection As ADODB.Connection)
+
+  Debug.Print "---------Execute Complete---------"
+  Debug.Print "RecordCount = " &amp; adoRs.RecordCount
+
+  End Sub
+
+  Private Sub adoRs_FetchComplete(ByVal pError As ADODB.Error, adStatus As ADODB.EventStatusEnum, ByVal pRecordset As ADODB.Recordset)
+
+  Debug.Print "---------Fetch Complete---------"
+
+  End Sub
+
+  Private Sub adoRs_FetchProgress(ByVal Progress As Long, ByVal MaxProgress As Long, adStatus As ADODB.EventStatusEnum, ByVal pRecordset As ADODB.Recordset)
+
+  Debug.Print "Fetch Progress = " &amp; pRecordset.RecordCount
+
+  End Sub
+
+5. Run the project. Do not step through the project, as stepping will change the
+  behavior.
+
+6. Change the CursorLocation to adUseClient to resolve the error.
+
+NOTE: You can use adAsyncExecute with a Server cursor, which enhances the
+responsiveness of your application. Using adAsyncExecute enables your
+application to perform other tasks while waiting on the server cursor to
+populate. However, you will not be able to use the recordset until an
+ExecuteComplete event fires, which indicates the server cursor is fully
+populated. With a Client cursor, you get more flexibility in async mode and you
+can check the Fetch progress of the cursor population as the rows are fetched to
+the client cursor.
+
+REFERENCES
+==========
+
+For more information, see the following article in the Microsoft Knowledge
+Base:
+
+  Q190606 PRB: QueryTimeout Event Not Available
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO260fix kbADO210sp2 kbADO250 kbMDAC260 kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbADO270
+Version           : :2.1 SP2,2.5,2.6,2.7,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

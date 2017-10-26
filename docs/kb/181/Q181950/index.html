@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181950/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181950/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181950/","publisher":null,"image":null,"headline":"Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181950-xfor-how-to-use-the-internet-mail-connector-in-console-mode">Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181950
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.50
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.50 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+The Internet Mail Service (Internet Mail Connector in version 4.0) has a command
+line option that allows the service to run in a console window. This can be
+useful when you are troubleshooting the Internet Mail Service because the option
+provides statistics and message processing sequence, logged directly to the
+console window.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+WARNING: Running the IMC in console mode is for testing purposes only not for
+productive environments. There is a potential problem running the IMC when the
+registry key DisplayErrsOnConsole has been added, specifically, the IMC stops
+silently. If all three of the following conditions are met the IMC can silently
+stop:
+
+- The registry key DisplayErrsOnConsole exists.
+
+- An outbound message contains "%Z" (without the quotation marks) in the
+  subject.
+
+- If the message is submitted from a non-MAPI client the registry key
+  RerouteViaStore is set to 1.
+
+To resolve this behavior, remove the registry key DisplayErrsOnConsole.
+
+To run the Internet Mail Service in a console window, do the following:
+
+1. Run the Registry Editor (Regedt32.exe).
+
+2. Go to the following registry key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters
+
+3. From the Edit menu, select "Add Value".
+
+4. In the AddValue dialog box, type the following key name:
+
+  DisplayErrsOnConsole
+
+5. From the "Data Type" box, click REG_DWORD.
+
+6. In the "DWORD Editor DATA" field, type "100" (without the quotation marks)
+  (or any value over 10), and then in "Data Type", click Hex.
+
+7. In Control Panel, double-click Services and confirm that the Internet Mail
+  Service is stopped.
+
+8. Open a command window, and change directories to the &lt;Exchange Install
+  Directory&gt; (usually exchsrvr)\Connect\MSExcImc\Bin.
+
+9. Start the Internet Mail Service with the following command and switch:
+
+  "MSEXCIMC -console" (without the quotation marks)
+
+You can also increase the frequency of the statistical updates to the console by
+decreasing the value for this key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters\ConsoleStatFrequency
+
+It is set to 14 by default; lower this to a rate that suits you.
+
+Additional query words: IMC IMS
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.50
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

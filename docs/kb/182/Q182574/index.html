@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182574/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182574/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182574/","publisher":null,"image":null,"headline":"Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182574-sna-server-stops-forwarding-fmh-5-attach-messages">Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182574
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Server may unexpectedly stop forwarding FMH-5 Attach messages to a specific
+branch-based SNA Server client computer (where the invokable transaction program
+[TP] is registered or running). When this occurs, SNA Server reports an Event 60
+(DLOAD timeout) in the server's application log. For example:
+
+  Event ID: 60
+  Source:   SNA Server
+  Description: Failed to invoke APPC TP &lt;tpname&gt;, sense
+  data = 084C0000
+
+084C0000 refers to AP_TRANS_PGM_NOT_AVAIL_NO_RETRY.
+
+On the client computer, the APPC or CPIC invokable TP may never be invoked, or if
+it is running, the TP's call to CMAPPC or RECEIVE_ALLOCATE will not complete. To
+recover from this problem, the SnaBase service on the Windows NT client computer
+must be stopped and restarted.
+
+CAUSE
+=====
+
+This problem can occur when the SNA Server client's sponsor connection (LAN
+session) to the server-side SnaBase service is lost. This problem occurs when
+the client-end of the client end of the LAN connection fails first.
+
+If the SNA Server client's sponsor fails and reconnects to the SnaBase before
+SnaBase is notified of the LAN session failure, a timing window exists where
+client invokable TP's are deregistered even though the client has reconnected.
+This problem has also been observed if the client is connecting against two or
+more SNA Servers, where its client sponsor reconnects against another server
+after a sponsor connection failure.
+
+This problem has been observed when an SNA Server Windows NT client is connecting
+to an SNA Server over TCP/IP sockets, although it may occur with other LAN
+interfaces.
+
+WORKAROUND
+==========
+
+To work around this problem, determine and correct the cause of the underlying
+LAN session failure between the SNA Server client and the server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, 3.0 SP2, 3.0 SP3, and 4.0. This problem was corrected in the latest SNA
+Server version 4.0 U.S. Service Pack. For information on obtaining this Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

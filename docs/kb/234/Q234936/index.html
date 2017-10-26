@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234936: XCLN: Support Boundaries of MAPI Provider Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234936: XCLN: Support Boundaries of MAPI Provider Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234936/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234936/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234936/","publisher":null,"image":null,"headline":"Q234936: XCLN: Support Boundaries of MAPI Provider Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234936-xcln-support-boundaries-of-mapi-provider-services">Q234936: XCLN: Support Boundaries of MAPI Provider Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234936
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,8.0,8.1,8.2,8.2.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Outlook 2000 
+- Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1, 8.2, 8.2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Messaging Application Programming Interface (MAPI) provider service is used
+with MAPI clients such as Outlook (in Corporate/Workgroup mode) or the Exchange
+Client Inbox. MAPI provider services are broken down into three basic
+categories; transport providers, address book providers, and message store
+providers. These categories of provider services are used in combination to make
+a MAPI profile. These clients use a MAPI profile to connect to a given
+information system.
+
+NOTE: Although you can configure more than one transport provider in a given
+profile, this configuration may create unexpected results and is not supported.
+However, the use of multiple address book providers or message store providers
+with a single transport provider is fully supported.
+
+If you use multiple MAPI profiles with a single installation of one of these
+clients, you can gain access to a wide variety of information and messaging
+systems. Typically, you gain access to MAPI profiles in Control Panel by
+double-clicking either Mail or Mail and Fax, as applicable. There is also a
+representation of MAPI on the desktop: the icon for either Outlook or the Inbox.
+You can also gain access to your MAPI profiles by opening the properties of this
+MAPI icon (Outlook or Inbox). You can configure the client to use a specific
+profile by clicking Show Profiles in the MAPI properties. A use this profile
+list is displayed at the bottom of the dialog box.
+
+MORE INFORMATION
+================
+
+This article lists all the currently available MAPI provider services from
+Microsoft and those MAPI provider services' supported configurations. The
+provider services may work if you use any configuration other than the
+configuration that is described in this article; however, unsupported
+configurations have proven to be problematic.
+
+MAPI Provider Services
+----------------------
+
+Microsoft Exchange Server:
+
+- Emsabp32.dll - Microsoft Exchange Server address book provider dynamic-link
+  library (DLL)
+
+- Emsmdb32.dll - Microsoft Exchange Server information store service provider
+
+- Emsui32.dll - Microsoft Exchange Server configuration library
+
+The Microsoft Exchange Server service is a unique blend because the Microsoft
+Exchange Server service combines a transport provider, an address book provider,
+and a message store provider into one service. MAPI clients exclusively use the
+Microsoft Exchange Server service to connect to Exchange Server computers. You
+do not need to use any other transport provider services in the same profile to
+connect to an Exchange Server computer. You can configure delivery for the
+Exchange Server information store or a local .pst file.
+
+NOTE: This service is only supported in a profile without any other transport
+provider services. Although you can configure this service with some other
+transport provider services in the same profile, this configuration may provide
+unexpected results and is not supported.
+
+Microsoft Mail:
+
+- Msfs32.dll - MAPI 1.0 service providers for Microsoft Mail
+
+The Microsoft Mail service is a transport provider. The Microsoft Mail service is
+used only to connect to Microsoft Mail or workgroup post offices.
+
+IMPORTANT: This provider service requires that the personal folder (.pst) message
+store provider service be used for the delivery location. The use of the
+Exchange Server information store as this provider's delivery location is not
+supported.
+
+Internet E-Mail (Previously the Internet Enhancement Patch for Outlook):
+
+- Inetab32.dll - MAPI 1.0 service providers for Internet mail
+
+- Minet32.dll - Microsoft MAPI service provider for Internet mail (Simple Mail
+  Transfer Protocol [SMTP] and Post Office Protocol version 3 [POP3])
+
+The Internet Mail service is a transport provider. You can use the Internet Mail
+service to connect to any POP3, Internet Message Access Protocol, Version 4rev1
+(IMAP4), or SMTP provider, such as an Exchange Server computer or an Internet
+service provider (ISP).
+
+IMPORTANT: This provider service requires that the Personal Folders service
+message store provider be used for the delivery location. The use of the
+Exchange Server information store as this provider's delivery location is not
+supported. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q245446 XCLN: You Cannot Use the Exchange Server and Internet E-mail Services
+  in the Same Profile
+
+NOTE: If you use this service to connect to an Exchange Server computer, you
+cannot use all the features that are provided with the Exchange Server service.
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q169462 XFOR: Configuring POP3 Client for Remote Mail Configuration
+
+Microsoft LDAP Directory:
+
+- Bjablr32.dll - Lightweight Directory Access Protocol (LDAP) support resources
+
+- Emablt32.dll - LDAP support provider
+
+The Microsoft LDAP Directory service is an address book provider. This service
+may be used to connect to an LDAP server for directory lookups.
+
+NOTE: You can use this service with any transport provider, and this service does
+not require any delivery location.
+
+Microsoft Outlook Support for Lotus cc:Mail:
+
+- Ccmab32.dll - Lotus cc:Mail address book provider
+
+- Ccmxp32.dll - Lotus cc:Mail transport provider
+
+- Mapivm32.dll - Lotus cc:Mail service provider
+
+Microsoft Outlook Support for Lotus cc:Mail combines a transport provider, an
+address book provider, and a message store provider into one service. This
+service is used exclusively to connect to cc:Mail post offices.
+
+IMPORTANT: This provider service requires that the Personal Folder service
+message store provider be used for the delivery location. The use of the
+Exchange Server information store as this provider's delivery location is not
+supported.
+
+Outlook Address Book:
+
+- Contab32.dll - Outlook Address Book service
+
+The Outlook Address Book service is an address book provider. This service allows
+you to use Outlook Contact folders as Exchange Server address books for
+addressing purposes. After you add this service, designated Outlook Contact
+folders are available in the list of the Exchange Address Book dialog box.
+
+NOTE: You can use this service with any transport provider, and this service does
+not require any delivery location.
+
+Personal Address Book:
+
+- Mspst32.dll - Microsoft personal folder and address book service provider
+
+The Personal Address Book service is an address book provider. This service
+enables the use of personal address book (.pab) files. After you add this
+service, addresses that are contained in the .pab file are available in the list
+of the Exchange Address Book dialog box.
+
+NOTE: You can use this service with any transport provider, and this service does
+not require any delivery location.
+
+Personal Folders:
+
+- Mspst32.dll - Microsoft personal folder and address book service provider
+
+The Personal Folders service is a message store provider. This service enables
+the use of personal folder (.pst) files and creates a delivery location for the
+transport provider services that are listed earlier in this article. The .pst
+file acts as a local store where you can create folders and store items. This
+service is also used for the Outlook auto-archive feature.
+
+NOTE: Any transport provider can use this service, and there can even be multiple
+instances of this service in a single profile. However, you can only set
+delivery to one .pst file or (if you use Exchange Server) the server's
+information store. Any remaining .pst files in the current profile are
+available, but delivery only occurs in the selected location.
+
+Additional Resources
+--------------------
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q195478 OL2000: (CW) User Profiles and Information Services
+
+  Q195435 OL2000: (CW) What Are Offline Folders and How Do You Use Them?
+
+  Q197651 OL2000: Changing from Local Delivery to Server and Offline
+
+  Q148271 XCLN: .Pst and .Pab Files Not Interchangeable
+
+  Q140432 Problems Sending Fax from MAPI-Aware Programs
+
+  Q245446 XCLN: No Transport Provider Was Available
+
+  Q169462 XFOR: Configuring POP3 Client for Remote Mail Configuration
+
+Additional query words: outbox stuck exchange
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlookMacSearch kbExchange400NT kbExchange500NT kbOutlook800Mac kbOutlook810Mac kbOutlook820Mac kbOutlook821Mac kbExchange400Win95 kbExchange500Win95
+Version           : :4.0,5.0,8.0,8.1,8.2,8.2.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

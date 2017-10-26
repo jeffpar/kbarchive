@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130056: Writing Code that Works with Different International Formats | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130056: Writing Code that Works with Different International Formats" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130056/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130056/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130056/","publisher":null,"image":null,"headline":"Q130056: Writing Code that Works with Different International Formats","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130056-writing-code-that-works-with-different-international-formats">Q130056: Writing Code that Works with Different International Formats</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130056
+Product(s): Miscellaneous Software Development Kits
+Version(s): 3.1; WINDOWS:1.2,3.5
+Operating System(s): 
+Keyword(s): kbIntl kbNLS kbIntlDev
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) for Windows version 3.1 
+- Microsoft Win32 Software Development Kit (SDK), version 3.5 
+- Microsoft Win32s version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some European coutries like Germany use a different floating point format that
+doesn't include the decimal point (.). This has caused problems whtn the actual
+numbers use the decimal point format (xxx.xx) and the German version of
+Microsoft Excel is expecting a comma (xxx,xx).
+
+Some developers have made the mistake of hard-coding formats or searching for all
+periods and replacing them with commas. This is not good programming practice.
+
+Microsoft Excel uses the Control Panel Number Format for its separators. So,
+regardless of what language version of Windows it runs on, it always uses the
+correct separators. Microsoft recommends that you use the same approach. Always
+use the separators defined in the number format of control panel.
+
+MORE INFORMATION
+================
+
+All the international information is stored in the WIN.INI file under the [intl]
+heading. The application should look for the value of "sDecimal." It can query
+this value using the GetProfileString API. If the application uses this
+approach, it will have the correct separator for all countries.
+
+To avoid potential problems, never make assumptions about number formats,
+currency formats (that is, don't hard-code the dollar symbol), date formats, or
+time formats. These are different for different countries. Use the settings from
+the Control Panel.
+
+If an application does any text processing, such as sorting or upper/lowercase
+conversions, it should use the Windows APIs and not supply its own conversion
+tables and functions. For example, if an application use APIs such as AnsiLower,
+it will work regardless of language because it obtains the data from the
+language DLL.
+
+To output floating point numbers in Windows, Microsoft recommends that you use
+wsprintf. The concept of an "international format string" only has meaning when
+the string is output to the user. Internal to the computer, for all calculations
+and manipulations, the concept does not apply. Thus the application can keep its
+floats in the native format and only convert to strings before calling the
+wsprintf function.
+
+There is no need to load conversions from float to string, and vice versa. In
+other words, there is no need to write any functions such as
+InterStringToFloat(), InterFloatToString(), and so on.
+
+Here's a simple algorithm you could use.
+
+1. Convert your float to a string by using the _fcvt or _gcvt standard C
+  functions.
+
+2. Get the sThousand and sDecimal separators from the WIN.INI file by using the
+  GetProfileString API.
+
+3. Call wsprintf to output the converted string, using sThousand and sDecimal in
+  the formatting string.
+
+The following is an example of a mistake made by a developer who was not thinking
+internationally:.
+
+     if language=English
+
+        Output_English_Float ()
+
+     else
+
+        Output_International_Float ()
+
+This is not correct. Think of English as just another language and write a single
+Output_Float() function that covers all languages.
+
+Also, for ease of localization, a developer should place all strings in the
+resource file. This avoids having to search through all the C files looking for
+strings to translate.
+
+Additional query words: 1.20 3.10 3.50 localization kbinf foreign
+
+======================================================================
+Keywords          : kbIntl kbNLS kbIntlDev 
+Technology        : kbWin32SDKSearch kbAudDeveloper kbWin3xSearch kbSDKSearch kbWin32sSearch kbWin32SDK350 kbWin32s120 kbWinSDKSearch kbWinSDK310
+Version           : :3.1; WINDOWS:1.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

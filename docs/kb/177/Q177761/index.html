@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177761: XADM: ESE97 Error Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177761: XADM: ESE97 Error Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177761/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177761/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177761/","publisher":null,"image":null,"headline":"Q177761: XADM: ESE97 Error Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177761-xadm-ese97-error-codes">Q177761: XADM: ESE97 Error Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177761
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbusage exc55
+Last Modified: 05-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following table lists the ESE97 error codes, with the following columns:
+
+- Error Number (in decimal and hexadecimal)
+
+- Error Message
+
+- Description (from source code comments)
+
+- Decimal Equivalent
+
+
+MORE INFORMATION
+================
+
+Dec   Hex         Error Message                  Description                        Decimal from Hex
+----------------------------------------------------------------------------------------------------
+SUCCESS
+0    0x00000000  JET_errSuccess                 Successful Operation
+
+ERRORS
+-1   0xFFFFFFFF  JET_wrnNyi                     Function Not Yet Implemented       4294967295
+
+SYSTEM errors
+-100 0xFFFFFF9C  JET_errRfsFailure              JET_errRfsFailure                  4294967196
+-101 0xFFFFFF9B  JET_errRfsNotArmed             JET_errRfsFailure                  4294967195
+-102 0xFFFFFF9A  JET_errFileClose               Could not close DOS file           4294967194
+-103 0xFFFFFF99  JET_errOutOfThreads            Could not start thread             4294967193
+-105 0xFFFFFF97  JET_errTooManyIO               System busy due to too many IOs    4294967191
+
+BUFFER MANAGER errors
+ 200 0x000000C8  wrnBFCacheMiss                 page latch caused a cache miss     200
+-201 0xFFFFFF37  errBFPageNotCached             page is not cached                 4294967095
+-202 0xFFFFFF36  errBFLatchConflict             page latch conflict                4294967094
+-250 0xFFFFFF06  errBFIPageEvicted              page evicted from the cache        4294967046
+-251 0xFFFFFF05  errBFIPageCached               page already cached                4294967045
+-252 0xFFFFFF04  errBFIOutOfOLPs                out of OLPs                        4294967044
+-253 0xFFFFFF03  errBFIOutOfBatchIOBuffers      out of Batch I/O Buffers           4294967043
+-254 0xFFFFFF02  errBFINoBufferAvailable        no buffer available for immediate  
+                                                use                                4294967042 
+-255 0xFFFFFF01  JET_errDatabaseBufferDependenciesCorrupted                        
+                                                buffer dependencies were 
+                                                improperly set                     4294967041 
+
+VERSION STORE errors
+ 275 0x00000113  wrnVERRCEMoved                 RCE was moved instead of being     
+                                                cleaned                            275
+
+DIRECTORY MANAGER errors
+-300 0xFFFFFED4  errPMOutOfPageSpace            Out of page space                  4294966996
+-301 0xFFFFFED3  errPMItagTooBig                Itag too big XXX -- to be deleted  4294966995
+-302 0xFFFFFED2  errPMRecDeleted                Record deleted XXX -- to be deleted  4294966994
+-303 0xFFFFFED1  errPMTagsUsedUp                Tags used up XXX -- to be deleted  4294966993
+ 304 0x00000130  wrnBMConflict                  conflict in BM Clean up            304
+-305 0xFFFFFECF  errDIRNoShortCircuit           No Short Circuit Avail             4294966991
+-306 0xFFFFFECE  errDIRCannotSplit              Cannot horizontally split FDP      4294966990
+-307 0xFFFFFECD  errDIRTop                      Cannot go up                       4294966989
+ 308 0x00000134  errDIRFDP                      On an FDP Node                     308
+-309 0xFFFFFECB  errDIRNotSynchronous           May have left critical section     4294966987
+ 310 0x00000136  wrnDIREmptyPage                Moved through empty page           310
+-311 0xFFFFFEC9  errSPConflict                  Device extent being extended       4294966985
+ 312 0x00000138  wrnNDFoundLess                 Found Less                         312
+ 313 0x00000139  wrnNDFoundGreater              Found Greater                      313
+ 314 0x0000013A  wrnNDNotFoundInPage            for smart refresh                  314
+-312 0xFFFFFEC8  errNDNotFound                  Not found                          4294966984
+-314 0xFFFFFEC6  errNDOutSonRange               Son out of range                   4294966982
+-315 0xFFFFFEC5  errNDOutItemRange              Item out of range                  4294966981
+-316 0xFFFFFEC4  errNDGreaterThanAllItems       Greater than all items             4294966980
+-317 0xFFFFFEC3  errNDLastItemNode              Last node of item list             4294966979
+-318 0xFFFFFEC2  errNDFirstItemNode             First node of item list            4294966978
+ 319 0x0000013F  wrnNDDuplicateItem             Duplicated Item                    319
+-320 0xFFFFFEC0  errNDNoItem                    Item not there                     4294966976
+ 321 0x00000141  JET_wrnRemainingVersions       Some versions couldn't be cleaned  321
+-322 0xFFFFFEBE  JET_errPreviousVersion         Version already existed            4294966974
+-323 0xFFFFFEBD  JET_errPageBoundary            Reached Page Boundary              4294966973
+-324 0xFFFFFEBC  JET_errKeyBoundary             Reached Key Boundary               4294966972
+-325 0xFFFFFEBB  errDIRInPageFather             sridFather in page to free         4294966971
+-326 0xFFFFFEBA  errBMMaxKeyInPage              used by OLC to avoid cleanup of    
+                                                parent pages                       4294966970
+-327 0xFFFFFEB9  JET_errBadPageLink             next/previous page link page does  
+                                                not point back to source           4294966969
+-328 0xFFFFFEB8  JET_errBadBookmark             bookmark has no corresponding      
+                                                address in database                4294966968
+ 329 0x00000149  wrnBMCleanNullOp               BMClean returns this on            
+                                                encountering a page                329 deleted MaxKeyInPage
+                                                                                      [but there was no
+                                                                                       conflict]
+-330 0xFFFFFEB6  errBTOperNone                  Split with no accompanying         4294966966 insert/replace
+-331 0xFFFFFEB5  errSPOutOfAvailExtCacheSpace   unable to make update to AvailExt 
+                                                tree since                         4294966965 in-cursor space
+                                                                                              cache is depleted
+-332 0xFFFFFEB4  errSPOutOfOwnExtCacheSpace     unable to make update to OwnExt 
+                                                tree since                         4294966964 in-cursor space 
+                                                                                              cache is depleted
+ 333 0x0000014D  wrnBTMultipageOLC              needs multipage OLC operation      333
+-334 0xFFFFFEB2  JET_errNTSystemCallFailed      can not get OS version             4294966962
+ 335 0x0000014F  wrnBTShallowTree               BTree is only one or two levels 
+                                                deep                               335
+-336 0xFFFFFEB0  errBTMergeNotSynchronous       Multiple threads attempting to 
+                                                perform merge/split on same page 
+                                                (likely OLD vs. RCEClean)          4294966960
+
+RECORD MANAGER errors
+ 400 0x00000190  wrnFLDKeyTooBig                Key too big (truncated it)         400
+-401 0xFFFFFE6F  errFLDTooManySegments          Too many key segments              4294966895
+ 402 0x00000192  wrnFLDNullKey                  Key is entirely NULL               402
+ 403 0x00000193  wrnFLDOutOfKeys                No more keys to extract            403
+ 404 0x00000194  wrnFLDNullSeg                  Null segment in key                404
+ 405 0x00000195  wrnFLDNotPresentInIndex                                           405
+ 406 0x00000196  JET_wrnSeparateLongValue       Separated long value               406
+ 407 0x00000197  wrnRECLongField                Separated long value               407
+                 JET_wrnRecordFoundGreater
+                 JET_wrnRecordFoundLess
+                 JET_errColumnIllegalNull
+ 408 0x00000198  wrnFLDNullFirstSeg             Null first segment in key          408
+-408 0xFFFFFE68  JET_errKeyTooBig               Key with column truncation still 
+                                                truncated                          4294966888
+
+LOGGING/RECOVERY errors
+-500 0xFFFFFE0C  JET_errInvalidLoggedOperation  Logged operation cannot be redone  4294966796
+-501 0xFFFFFE0B  JET_errLogFileCorrupt          Log file is corrupt                4294966795
+-502 0xFFFFFE0A  errLGNoMoreRecords             Last log record read               4294966794
+-503 0xFFFFFE09  JET_errNoBackupDirectory       No backup directory given          4294966793
+-504 0xFFFFFE08  JET_errBackupDirectoryNotEmpty The backup directory is not empty  4294966792
+-505 0xFFFFFE07  JET_errBackupInProgress        Backup is active already           4294966791
+-506 0xFFFFFE06  JET_errRestoreInProgress       Restore in progress                4294966790
+-509 0xFFFFFE03  JET_errMissingPreviousLogFile  Missing the log file for check 
+                                                point                              4294966787
+-510 0xFFFFFE02  JET_errLogWriteFail            Fail when writing to log file      4294966786
+-514 0xFFFFFDFE  JET_errBadLogVersion           Version of log file is not 
+                                                compatible with Jet version        4294966782
+-515 0xFFFFFDFD  JET_errInvalidLogSequence      Timestamp in next log does not 
+                                                match expected                     4294966781
+-516 0xFFFFFDFC  JET_errLoggingDisabled         Log is not active                  4294966780
+-517 0xFFFFFDFB  JET_errLogBufferTooSmall       Log buffer is too small for 
+                                                recovery                           4294966779
+-518 0xFFFFFDFA  errLGNotSynchronous            retry to LGLogRec                  4294966778
+-519 0xFFFFFDF9  JET_errLogSequenceEnd          Exceed maximum log file number     4294966777
+-520 0xFFFFFDF8  JET_errNoBackup                No backup in progress              4294966776
+-521 0xFFFFFDF7  JET_errInvalidBackupSequence   Backup call out of sequence        4294966775
+-523 0xFFFFFDF5  JET_errBackupNotAllowedYet     Cannot do backup now               4294966773
+-524 0xFFFFFDF4  JET_errDeleteBackupFileFail    Could not delete backup file       4294966772
+-525 0xFFFFFDF3  JET_errMakeBackupDirectoryFail Could not make backup temp 
+                                                directory                          4294966771
+-526 0xFFFFFDF2  JET_errInvalidBackup           Cannot incremental backup when 
+                                                circular logging enabled        4294966770
+-527 0xFFFFFDF1  JET_errRecoveredWithErrors     For repair, restored with errors   4294966769
+-528 0xFFFFFDF0  JET_errMissingLogFile          current log file missing           4294966768
+-529 0xFFFFFDEF  JET_errLogDiskFull             log disk full                      4294966767
+-530 0xFFFFFDEE  JET_errBadLogSignature         bad signature for a log file       4294966766
+-531 0xFFFFFDED  JET_errBadDbSignature          bad signature for a db file        4294966765
+-532 0xFFFFFDEC  JET_errBadCheckpointSignature  bad signature for a checkpoint 
+                                                file                               4294966764
+-533 0xFFFFFDEB  JET_errCheckpointCorrupt       checkpoint file not found or 
+                                                corrupt                            4294966763
+-534 0xFFFFFDEA  JET_errMissingPatchPage        patch file page not found during 
+                                                recovery                           4294966762
+-535 0xFFFFFDE9  JET_errBadPatchPage            patch file page is not valid       4294966761
+-536 0xFFFFFDE8  JET_errRedoAbruptEnded         Redo abruptly ended due to sudden 
+                                                failure in reading logs from log file  4294966760
+-550 0xFFFFFDDA  JET_errDatabaseInconsistent    database is in inconsistent state  4294966746
+-551 0xFFFFFDD9  JET_errConsistentTimeMismatch  database last consistent time 
+                                                unmatched                          4294966745
+-552 0xFFFFFDD8  JET_errDatabasePatchFileMismatch  patch file is not generated 
+                                                   from this backup                4294966744
+-553 0xFFFFFDD7  JET_errEndingRestoreLogTooLow  the starting log number too low 
+                                                for the restore                    4294966743
+-554 0xFFFFFDD6  JET_errStartingRestoreLogTooHigh  the starting log number too 
+                                                   high for the restore            4294966742
+-555 0xFFFFFDD5  JET_errGivenLogFileHasBadSignature  Restore log file has bad 
+                                                     signature                     4294966741
+-556 0xFFFFFDD4  JET_errGivenLogFileIsNotContiguous  Restore log file is not 
+                                                     contiguous                    4294966740
+-557 0xFFFFFDD3  JET_errMissingRestoreLogFiles  Some restore log files are missing 4294966739
+558 0x0000022E  JET_wrnExistingLogFileHasBadSignature  Existing log file has bad 
+                                                       signature                   558
+ 559 0x0000022F  JET_wrnExistingLogFileIsNotContiguous  Existing log file is not
+                                                        contiguous                 559
+-560 0xFFFFFDD0  JET_errMissingFullBackup       The database miss a previous full 
+                                                backup befor incremental backup    4294966736
+-561 0xFFFFFDCF  JET_errBadBackupDatabaseSize   The backup database size is not 
+                                                in 4k                              4294966735
+-562 0xFFFFFDCE  JET_errDatabaseAlreadyUpgraded Attempted to upgrade a database 
+                                                that is already current            4294966734
+-563 0xFFFFFDCD  JET_errDatabaseIncompleteUpgrade  Attempted to use a database 
+                                                   which was only partially converted to the current format ? 
+                                                   must restore from backup        4294966733
+ 564 0x00000234  JET_wrnSkipThisRecord          Skip this record, used by convert, 
+                                                internal only                      564
+-900 0xFFFFFC7C  JET_errInvalidGrbit            Grbit is not valid in the context 
+                                                of this API call                   4294966396
+-1000 0xFFFFFC18  JET_errTermInProgress         Termination in progress            4294966296
+-1001 0xFFFFFC17  JET_errFeatureNotAvailable    API not supported                  4294966295
+-1002 0xFFFFFC16  JET_errInvalidName            Invalid name                       4294966294
+-1003 0xFFFFFC15  JET_errInvalidParameter       Invalid API parameter              4294966293
+ 1004 0x000003EC  JET_wrnColumnNull             Column is NULL-valued              1004
+ 1006 0x000003EE  JET_wrnBufferTruncated        Buffer too small for data          1006
+ 1007 0x000003EF  JET_wrnDatabaseAttached       Database is already attached       1007
+-1008 0xFFFFFC10  JET_errDatabaseFileReadOnly   Attach a readonly database file  
+                                                for read/write operations          4294966288
+ 1009 0x000003F1  JET_wrnSortOverflow           Sort does not fit in memory        1009
+-1010 0xFFFFFC0E  JET_errInvalidDatabaseId      Invalid database id                4294966286
+-1011 0xFFFFFC0D  JET_errOutOfMemory            Out of Memory                      4294966285
+-1012 0xFFFFFC0C  JET_errOutOfDatabaseSpace     Maximum database size reached      4294966284
+-1013 0xFFFFFC0B  JET_errOutOfCursors           Out of table cursors               4294966283
+-1014 0xFFFFFC0A  JET_errOutOfBuffers           Out of database page buffers       4294966282
+-1015 0xFFFFFC09  JET_errTooManyIndexes         Too many indexes                   4294966281
+-1016 0xFFFFFC08  JET_errTooManyKeys            Too many columns in an index       4294966280
+-1017 0xFFFFFC07  JET_errRecordDeleted          Record has been deleted            4294966279
+-1018 0xFFFFFC06  JET_errReadVerifyFailure      Read verification error            4294966278
+-1019 0xFFFFFC05  JET_errPageNotInitialized     Repair Only: Read an unused page   4294966277
+-1020 0xFFFFFC04  JET_errOutOfFileHandles       Out of file handles                4294966276
+-1022 0xFFFFFC02  JET_errDiskIO                 Disk IO error                      4294966274
+-1023 0xFFFFFC01  JET_errInvalidPath            Invalid file path                  4294966273
+-1024 0xFFFFFC00  JET_errInvalidSystemPath      Invalid system path                4294966272
+-1025 0xFFFFFBFF  JET_errInvalidLogDirectory    Invalid log directory              4294966271
+-1026 0xFFFFFBFE  JET_errRecordTooBig           Record larger than maximum size    4294966270
+-1027 0xFFFFFBFD  JET_errTooManyOpenDatabases   Too many open databases            4294966269
+-1028 0xFFFFFBFC  JET_errInvalidDatabase        Not a database file                4294966268
+-1029 0xFFFFFBFB  JET_errNotInitialized         JetInit not yet called             4294966267
+-1030 0xFFFFFBFA  JET_errAlreadyInitialized     JetInit already called             4294966266
+-1031 0xFFFFFBF9  JET_errInitInProgress         JetInit is underway                4294966265
+-1032 0xFFFFFBF8  JET_errFileAccessDenied       Cannot access file                 4294966264
+-1034 0xFFFFFBF6  JET_errQueryNotSupported      Query support unavailable  XXX ? 
+                                                to be deleted                      4294966262
+-1035 0xFFFFFBF5  JET_errSQLLinkNotSupported    SQL Link support unavailable  
+                                                XXX -- to be deleted               4294966261
+-1038 0xFFFFFBF2  JET_errBufferTooSmall         Buffer is too small                4294966258
+ 1039 0x0000040F  JET_wrnSeekNotEqual           SeekLE or SeekGE didn't find exact 
+                                                match                              1039
+-1040 0xFFFFFBF0  JET_errTooManyColumns         Too many columns defined           4294966256
+-1043 0xFFFFFBED  JET_errContainerNotEmpty      Container is not empty             4294966253
+-1044 0xFFFFFBEC  JET_errInvalidFilename        Filename is invalid                4294966252
+-1045 0xFFFFFBEB  JET_errInvalidBookmark        Invalid bookmark                   4294966251
+-1046 0xFFFFFBEA  JET_errColumnInUse            Column used in an index            4294966250
+-1047 0xFFFFFBE9  JET_errInvalidBufferSize      Data buffer doesn't match column 
+                                                size                               4294966249
+-1048 0xFFFFFBE8  JET_errColumnNotUpdatable     Cannot set column value            4294966248
+-1051 0xFFFFFBE5  JET_errIndexInUse             Index is in use                    4294966245
+-1052 0xFFFFFBE4  JET_errLinkNotSupported       Link support unavailable           4294966244
+-1053 0xFFFFFBE3  JET_errNullKeyDisallowed      Null keys are disallowed on index  4294966243
+-1054 0xFFFFFBE2  JET_errNotInTransaction       Operation must be within a 
+                                                transaction                        4294966242
+ 1055 0x0000041F  JET_wrnNoErrorInfo            No extended error information      1055
+ 1058 0x00000422  JET_wrnNoIdleActivity         No idle activity occurred          1058
+-1059 0xFFFFFBDD  JET_errTooManyActiveUsers     Too many active database users     4294966237
+-1061 0xFFFFFBDB  JET_errInvalidCountry         Invalid or unknown country code    4294966235
+-1062 0xFFFFFBDA  JET_errInvalidLanguageId      Invalid or unknown language id     4294966234
+-1063 0xFFFFFBD9  JET_errInvalidCodePage        Invalid or unknown code page       4294966233
+ 1067 0x0000042B  JET_wrnNoWriteLock            No write lock at transaction 
+                                                level 0                            1067
+ 1068 0x0000042C  JET_wrnColumnSetNull          Column set to NULL-value           1068
+-1069 0xFFFFFBD3  JET_errVersionStoreOutOfMemory  lMaxVerPages exceeded 
+                                                  (XJET only)                      4294966227
+-1070 0xFFFFFBD2  JET_errCurrencyStackOutOfMemory lCSRPerfFUCB * lMaxCursors exceeded 
+                                                                 (XJET only)       4294966226
+-1071 0xFFFFFBD1  JET_errCannotIndex            Cannot index escrow column         4294966225
+-1072 0xFFFFFBD0  JET_errRecordNotDeleted       Record has not been deleted        4294966224
+-1101 0xFFFFFBB3  JET_errOutOfSessions          Out of sessions                    4294966195
+-1102 0xFFFFFBB2  JET_errWriteConflict          Write lock failed due to 
+                                                outstanding write lock             4294966194
+-1103 0xFFFFFBB1  JET_errTransTooDeep           Xactions nested too deeply         4294966193
+-1104 0xFFFFFBB0  JET_errInvalidSesid           Invalid session handle             4294966192
+-1105 0xFFFFFBAF  JET_errWriteConflictPrimaryIndex  update attempted on 
+                                                    uncommitted primary index      4294966191
+-1108 0xFFFFFBAC  JET_errInTransaction          Operation not allowed within a 
+                                                transaction                        4294966188
+-1109 0xFFFFFBAB  JET_errRollbackRequired       Must rollback current transaction ? 
+                                                cannot commit or begin a new one   4294966187
+-1201 0xFFFFFB4F  JET_errDatabaseDuplicate      Database already exists            4294966095
+-1202 0xFFFFFB4E  JET_errDatabaseInUse          Database in use                    4294966094
+-1203 0xFFFFFB4D  JET_errDatabaseNotFound       No such database                   4294966093
+-1204 0xFFFFFB4C  JET_errDatabaseInvalidName    Invalid database name              4294966092
+-1205 0xFFFFFB4B  JET_errDatabaseInvalidPages   Invalid number of pages            4294966091
+-1206 0xFFFFFB4A  JET_errDatabaseCorrupted      non-db file or corrupted db        4294966090
+-1207 0xFFFFFB49  JET_errDatabaseLocked         Database exclusively locked        4294966089
+-1208 0xFFFFFB48  JET_errCannotDisableVersioning  Cannot disable versioning for 
+                                                  this database                    4294966088
+-1209 0xFFFFFB47  JET_errInvalidDatabaseVersion   Database engine is incompatible 
+                                                  with database                    4294966087
+-1210 0xFFFFFB46  JET_errDatabase200Format      The database is in 200 format      4294966086
+-1211 0xFFFFFB45  JET_errDatabase400Format      The database is in 400 format      4294966085
+-1212 0xFFFFFB44  JET_errDatabase500Format      The database is in 500 format      4294966084
+ 1301 0x00000515  JET_wrnTableEmpty             Open an empty table                1301
+-1302 0xFFFFFAEA  JET_errTableLocked            Table is exclusively locked        4294965994
+-1303 0xFFFFFAE9  JET_errTableDuplicate         Table already exists               4294965993
+-1304 0xFFFFFAE8  JET_errTableInUse             Table is in use, cannot lock       4294965992
+-1305 0xFFFFFAE7  JET_errObjectNotFound         No such table or object            4294965991
+-1307 0xFFFFFAE5  JET_errDensityInvalid         Bad file/index density             4294965989
+-1308 0xFFFFFAE4  JET_errTableNotEmpty          Cannot define clustered index      4294965988
+-1310 0xFFFFFAE2  JET_errInvalidTableId         Invalid table id                   4294965986
+-1311 0xFFFFFAE1  JET_errTooManyOpenTables      Cannot open any more tables 
+                                                (cleanup already attempted)        4294965985
+-1312 0xFFFFFAE0  JET_errIllegalOperation       Oper. not supported on table       4294965984
+-1314 0xFFFFFADE  JET_errObjectDuplicate        Table or object name in use        4294965982
+-1316 0xFFFFFADC  JET_errInvalidObject          object is invalid for operation    4294965980
+-1317 0xFFFFFADB  JET_errCannotDeleteTempTable  use CloseTable instead of 
+                                                DeleteTable to delete temp table   4294965979
+-1318 0xFFFFFADA  JET_errCannotDeleteSystemTable  illegal attempt to delete a 
+                                                  system table                     4294965978
+-1319 0xFFFFFAD9  JET_errCannotDeleteTemplateTable  illegal attempt to delete a 
+                                                    template table                 4294965977
+-1320 0xFFFFFAD8  errFCBTooManyOpen             Cannot open any more FCBs 
+                                               (cleanup not yet attempted)         4294965976
+-1321 0xFFFFFAD7  errFCBAboveThreshold          Can only allocate FCB above 
+                                                preferred threshold (cleanup not 
+                                                yet attempted)                     4294965975
+-1322 0xFFFFFAD6  JET_errExclusiveTableLockRequired Must have exclusive lock 
+                                                    on table.                      4294965974
+-1323 0xFFFFFAD5  JET_errFixedDDL               DDL operations prohibited on 
+                                                this table                         4294965973
+-1324 0xFFFFFAD4  JET_errFixedInheritedDDL      On a derived table, DDL operations 
+                                                are prohibited on inherited portion 
+                                                of DDL                             4294965972
+-1325 0xFFFFFAD3  JET_errCannotNestDDL          Nesting of hierarchical DDL is not 
+                                                currently supported.               4294965971
+-1326 0xFFFFFAD2  JET_errDDLNotInheritable      Tried to inherit DDL from a table
+                                                not marked as a template table.    4294965970
+ 1327 0x0000052F  JET_wrnTableInUseBySystem     System cleanup has a cursor open 
+                                                on the table                       1327
+-1328 0xFFFFFAD0  JET_errInvalidSettings        System parameters were set 
+                                                improperly                         4294965968
+-1329 0xFFFFFACF  JET_errClientRequestToStopJetService Client has requested stop 
+                                                       service                     4294965967
+-1401 0xFFFFFA87  JET_errIndexCantBuild         Index build failed                 4294965895
+-1402 0xFFFFFA86  JET_errIndexHasPrimary        Primary index already defined      4294965894
+-1403 0xFFFFFA85  JET_errIndexDuplicate         Index is already defined           4294965893
+-1404 0xFFFFFA84  JET_errIndexNotFound          No such index                      4294965892
+-1405 0xFFFFFA83  JET_errIndexMustStay          Cannot delete clustered index      4294965891
+-1406 0xFFFFFA82  JET_errIndexInvalidDef        Illegal index definition           4294965890
+-1409 0xFFFFFA7F  JET_errInvalidCreateIndex     Invalid create index description   4294965887
+-1410 0xFFFFFA7E  JET_errTooManyOpenIndexes     Out of index description blocks    4294965886
+-1411 0xFFFFFA7D  JET_errMultiValuedIndexViolation Non-unique inter-record index 
+                                                   keys generated for a multivalued 
+                                                   index                           4294965885
+-1412 0xFFFFFA7C  JET_errIndexBuildCorrupted    Failed to build a secondary index 
+                                                that properly reflects primary 
+                                                index                              4294965884
+-1413 0xFFFFFA7B  JET_errPrimaryIndexCorrupted  Primary index is corrupt ? defrag 
+                                                required                           4294965883
+-1414 0xFFFFFA7A  JET_errSecondaryIndexCorrupted  Secondary index is corrupt ? 
+                                                  defrag required                  4294965882
+ 1415 0x00000587  JET_wrnCorruptIndexDeleted    Out of date index of the attached 
+                                                db is removed                      1415
+-1501 0xFFFFFA23  JET_errColumnLong             Column value is long               4294965795
+-1502 0xFFFFFA22  JET_errColumnNoChunk          no such chunk in long value        4294965794
+-1503 0xFFFFFA21  JET_errColumnDoesNotFit       Field will not fit in record       4294965793
+-1504 0xFFFFFA20  JET_errNullInvalid            Null not valid                     4294965792
+-1505 0xFFFFFA1F  JET_errColumnIndexed          Column indexed, cannot delete      4294965791
+-1506 0xFFFFFA1E  JET_errColumnTooBig           Field length is &gt; maximum          4294965790
+-1507 0xFFFFFA1D  JET_errColumnNotFound         No such column                     4294965789
+-1508 0xFFFFFA1C  JET_errColumnDuplicate        Field is already defined           4294965788
+-1510 0xFFFFFA1A  JET_errColumnRedundant        Second autoincrement or version 
+                                                column                             4294965786
+-1511 0xFFFFFA19  JET_errInvalidColumnType      Invalid column data type           4294965785
+ 1512 0x000005E8  JET_wrnColumnMaxTruncated     Max length too big, truncated      1512
+-1514 0xFFFFFA16  JET_errTaggedNotNULL          No non-NULL tagged columns         4294965782
+-1515 0xFFFFFA15  JET_errNoCurrentIndex         Invalid w/o a current index        4294965781
+-1516 0xFFFFFA14  JET_errKeyIsMade              The key is completely made         4294965780
+-1517 0xFFFFFA13  JET_errBadColumnId            Column Id Incorrect                4294965779
+-1518 0xFFFFFA12  JET_errBadItagSequence        Bad ItagSequence for tagged column 4294965778
+-1519 0xFFFFFA11  JET_errColumnInRelationship   Cannot delete, column participates 
+                                                in relationship                    4294965777
+ 1520 0x000005F0  JET_wrnCopyLongValue          Single instance column bursted     1520
+-1521 0xFFFFFA0F  JET_errCannotBeTagged         AutoIncrement and Version cannot be 
+                                                tagged                             4294965775
+ 1522 0x000005F2  wrnLVNoLongValues             Table does not have a long value 
+                                                tree                               1522
+ 1523 0x000005F3  JET_wrnTaggedColumnsRemaining   RetrieveTaggedColumnList ran out 
+                                                  of copy buffer before retrieving 
+                                                  all tagged columns               1523
+-1524 0xFFFFFA0C  JET_errDefaultValueTooBig     Default value exceeds maximum size 4294965772
+-1601 0xFFFFF9BF  JET_errRecordNotFound         The key was not found              4294965695
+-1602 0xFFFFF9BE  JET_errRecordNoCopy           No working buffer                  4294965694
+-1603 0xFFFFF9BD  JET_errNoCurrentRecord        Currency not on a record           4294965693
+-1604 0xFFFFF9BC  JET_errRecordPrimaryChanged   Primary key may not change         4294965692
+-1605 0xFFFFF9BB  JET_errKeyDuplicate           Illegal duplicate key              4294965691
+-1607 0xFFFFF9B9  JET_errAlreadyPrepared        Already copy/clear current         4294965689
+-1608 0xFFFFF9B8  JET_errKeyNotMade             No call to JetMakeKey              4294965688
+-1609 0xFFFFF9B7  JET_errUpdateNotPrepared      No call to JETPrepareUpdate        4294965687
+ 1610 0x0000064A  JET_wrnDataHasChanged         Data has changed                   1610
+-1611 0xFFFFF9B5  JET_errDataHasChanged         Data has changed, operation aborted  4294965685
+ 1618 0x00000652  JET_wrnKeyChanged             Moved to new key                   1618
+-1619 0xFFFFF9AD  JET_errLanguageNotSupported   Windows NT installation does not 
+                                                support language                   4294965677
+-1701 0xFFFFF95B  JET_errTooManySorts           Too many sort processes            4294965595
+-1702 0xFFFFF95A  JET_errInvalidOnSort          Invalid operation on Sort          4294965594
+-1803 0xFFFFF8F5  JET_errTempFileOpenError      Temp file could not be opened      4294965493
+-1805 0xFFFFF8F3  JET_errTooManyAttachedDatabases Too many open databases          4294965491
+-1808 0xFFFFF8F0  JET_errDiskFull               No space left on disk              4294965488
+-1809 0xFFFFF8EF  JET_errPermissionDenied       Permission denied                  4294965487
+-1811 0xFFFFF8ED  JET_errFileNotFound           File not found                     4294965485
+ 1813 0x00000715  JET_wrnFileOpenReadOnly       Database file is read only         1813
+-1850 0xFFFFF8C6  JET_errAfterInitialization    Cannot restore after init.         4294965446
+-1852 0xFFFFF8C4  JET_errLogCorrupted           Logs could not be interpreted      4294965444
+-1906 0xFFFFF88E  JET_errInvalidOperation       invalid operation                  4294965390
+-1907 0xFFFFF88D  JET_errAccessDenied           access denied                      4294965389
+ 1908 0x00000774  JET_wrnIdleFull               idle registry full                 1908
+-1909 0xFFFFF88B  JET_errTooManySplits          Infinite split. Call PSS           4294965387
+-1910 0xFFFFF88A  JET_errSessionSharingViolation  Multiple threads are using the 
+                                                  same session                     4294965386
+-1911 0xFFFFF889  JET_errEntryPointNotFound     An entry point in a DLL we require 
+                                                could not be found                 4294965385
+ 2000 0x000007D0  JET_wrnDefragAlreadyRunning   Online defrag already running on 
+                                                specified database                 2000
+ 2001 0x000007D1  JET_wrnDefragNotRunning       Online defrag not running on 
+                                                specified database                 2001
+
+Additional query words: ESE97 error code JET_err
+
+======================================================================
+Keywords          : kbusage exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

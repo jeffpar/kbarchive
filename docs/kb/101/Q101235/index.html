@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101235: TN3270 Server Now Supports Client-Side Hot Backup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101235: TN3270 Server Now Supports Client-Side Hot Backup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101235/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101235/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101235/","publisher":null,"image":null,"headline":"Q101235: TN3270 Server Now Supports Client-Side Hot Backup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101235-tn3270-server-now-supports-client-side-hot-backup">Q101235: TN3270 Server Now Supports Client-Side Hot Backup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101235
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If all the resources are in use on the SNA Server 2.11 TN3270 server the
+Hot-Backup feature of some TN3270 emulators does not work.
+
+The Hot-Backup feature, implemented in some TN3270 emulators, allows you to
+specify the IP addresses of several TN3270 Servers for the emulator to attempt
+to connect to. If access is denied it attempts to connect to the next IP address
+specified.
+
+CAUSE
+=====
+
+The SNA Server TN3270 Server always listens on a socket, allowing an emulator to
+connect (that is, it fails to deny the socket connection), even if all of the
+configured resources on the server are in use causing it not be able to service
+that connection. When the emulator successfully opens a socket connection to one
+of the addresses, in this case the address of the SNA Server TN3270 Server, the
+emulator is locked into that address and cannot try another IP address specified
+with the Hot-Backup feature.
+
+RESOLUTION
+==========
+
+Microsoft has enhanced the SNA Server 2.11 files, TN3SERVR.EXE and TN3NTMSG.DLL,
+to fully support the Hot-Backup feature of TN3270 emulators.
+
+This update supports the option to stop listening once all of the configured SNA
+resources are in use, and to start listening again once some become available.
+This feature is turned on by setting the following registry entry under the
+HKEY_LOCAL_MACHINE subtree under the following subkey:
+
+  \CurrentControlSet\Services\TN3270\Parameters\CloseListenSocket
+
+Type:  RG_EXPAND_SZ
+Value: YES
+
+In SNA Server 3.0 (and future SNA Server 2.11 service packs beyond SP1), the
+CloseListenSocket option must be set to "ON". The administration tool has been
+updated to support configuration of this parameter, so manual adjustment of the
+registry is not necessary. If this setting is not configured or is set to any
+other value, then the TN3270 Server does not stop listening.
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211
+Version           : WINDOWS:2.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

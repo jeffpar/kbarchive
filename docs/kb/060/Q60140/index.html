@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60140: Location of Keyboard Buffer Area in MS-DOS; BASIC PEEK, POKE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60140: Location of Keyboard Buffer Area in MS-DOS; BASIC PEEK, POKE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60140/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60140/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60140/","publisher":null,"image":null,"headline":"Q60140: Location of Keyboard Buffer Area in MS-DOS; BASIC PEEK, POKE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60140-location-of-keyboard-buffer-area-in-ms-dos-basic-peek-poke">Q60140: Location of Keyboard Buffer Area in MS-DOS; BASIC PEEK, POKE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60140
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900326-109 b_basiccom pss | mspl13_basic
+Last Modified: 12-NOV-1990
+
+The actual location of the keyboard buffer on the IBM PC or PS/2 is
+variable, but by default, the buffer is a 32-byte area located at
+segment 0, offset 1054 (41E hex). Because many applications assume
+that this is the default location, please be careful if you change its
+address or size.
+
+The buffer is composed of 16 2-byte entries. It holds up to 16
+keystrokes until they are read via the BIOS services through interrupt
+22 (16 hex). Because this is a circular queue buffer, two pointers
+indicate the head and tail of the queue. It is usually best to
+manipulate the pointers rather than the actual data.
+
+This information is taken from "The New Peter Norton Programmer's
+Guide To The IBM PC and PS/2" on pages 56-60, published by Microsoft
+Press (1988).
+
+There are other adjacent memory locations that are used in conjunction
+with the keyboard buffer. The most important of these are listed
+below. All of these addresses are in segment 0.
+
+Offset 1050 (41A hex)
+---------------------
+
+A 2-byte address that points to the current head of the BIOS keyboard
+buffer at offset 1054.
+
+Offset 1052 (41C hex)
+---------------------
+
+A 2-byte address that points to the current tail of the BIOS keyboard
+buffer at offset 1054.
+
+Note: One interesting way to clear the keyboard buffer is to set the
+head of the queue equal to the tail. To do this in BASIC, simply PEEK
+the two bytes at 1052 and POKE them into location 1050.
+
+Offset 1152 (480 hex)
+---------------------
+
+A 2-byte word pointing to the start of the keyboard buffer area.
+
+Offset 1154 (482 hex)
+---------------------
+
+A 2-byte word pointing to the end of the keyboard buffer area.
+
+Note: Be careful if you choose to change the addresses at 1152 or 1154
+because many applications may not check these memory locations to
+determine the keyboard buffer area. These applications will assume the
+default configuration.
+
+References:
+
+For more articles about reading from and writing to the keyboard
+buffer, search in this Knowledge Base for the following words:
+
+   interrupt AND keyboard AND buffer
+
+Keyboard scan codes are documented in Appendix D of "Microsoft
+QuickBASIC 4.5: Programming in BASIC"; in Appendix A of "Microsoft
+QuickBASIC 4.0: Language Reference" for 4.00 and 4.00b; in Appendix A
+of "Microsoft BASIC Compiler 6.0: Language Reference" for 6.00 and
+6.00b; and in Appendix A of "Microsoft BASIC 7.0: Language Reference"
+manual for BASIC PDS versions 7.00 and 7.10.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

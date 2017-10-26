@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148889/","publisher":null,"image":null,"headline":"Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148889-desktop-appearance-changes-after-installing-corel-draw-60">Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148889
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Corel Draw 6.0 and restart your computer, you may see several
+different font styles on the desktop.
+
+CAUSE
+=====
+
+When you install Corel Draw 6.0, you can choose to install up to 1029 fonts to
+the Windows\Fonts folder. This is approximately the limit for the number of
+fonts you can install in Windows 95. If you had fonts installed before you
+installed Corel Draw 6.0, the resulting number of installed fonts may exceed the
+limit.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q131943 TrueType Font Limits in Windows 95.
+
+RESOLUTION
+==========
+
+To remove the excess fonts and restore the Windows 95 fonts, follow these
+steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then choose Command Prompt Only from the Startup menu.
+
+2. Type the following lines, pressing ENTER after each line:
+
+  " cd &lt;windows&gt;
+  smartdrv.exe
+  deltree ttfcache
+  md fonttemp
+  attrib -r -s -h c:\&lt;windows&gt;\fonts\*.ttf
+  move c:\&lt;windows&gt;\fonts\*.ttf c:\&lt;windows&gt;\fonttemp " (without the
+  quotation marks)
+
+  where &lt;windows&gt; is your Windows folder.
+
+3. Restart your computer. When you see the "Starting Windows 95" message, press
+  the F5 key.
+
+4. Rebuild the Font registry key. For information about doing so, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q133732 Missing TrueType Fonts in Fonts Folder
+
+  NOTE: You need to follow only the first two steps in this article, and then
+  quit Registry Editor.
+
+5. Restart your computer normally.
+
+6. In Windows Explorer or My Computer, sort the fonts in the Fonttemp folder by
+  date. Move all non-Corel fonts from the Fonttemp folder to the Windows\Fonts
+  folder. Windows 95 fonts have a date of 7/11/95 and a time of 9:50 A.M.
+
+7. Selectively copy the Corel fonts to the Windows\Fonts folder, making sure not
+  to exceed 1000 installed fonts in the Windows\Fonts folder. You may want to
+  copy only those fonts you expect to use.
+
+8. Delete the Fonttemp folder, or keep it as a storage place for extra fonts.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+For additional information about this behavior, please contact Corel Corporation.
+
+Additional query words: distorted graphics marlett.ttf
+
+======================================================================
+Keywords          : kb3rdparty kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

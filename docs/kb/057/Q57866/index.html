@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57866: BASIC PDS 7.00 Supports Short-Circuit Boolean Expressions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57866: BASIC PDS 7.00 Supports Short-Circuit Boolean Expressions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57866/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57866/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57866/","publisher":null,"image":null,"headline":"Q57866: BASIC PDS 7.00 Supports Short-Circuit Boolean Expressions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57866-basic-pds-700-supports-short-circuit-boolean-expressions">Q57866: BASIC PDS 7.00 Supports Short-Circuit Boolean Expressions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57866
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | B_QuickBas SR# S890703-44 | mspl13_basic
+Last Modified: 20-JAN-1990
+
+Microsoft BASIC Professional Development System (PDS) Version 7.00
+supports "short-circuit" optimization of Boolean expressions, as
+described below. To take advantage of this speed optimization in
+complex IF, WHILE, DO LOOP WHILE, or DO LOOP UNTIL statements, the
+quickest Boolean conditions should appear first.
+
+Microsoft QuickBASIC Versions 1.00, 1.01, 1.02, 2.00, 2.01, 3.00,
+4.00, 4.00b, and 4.50 and Microsoft BASIC Compiler Versions 6.00 and
+6.00b DON'T support short-circuit Boolean expressions.
+
+Boolean expressions are those expressions in BASIC that evaluate to
+true or false. In BASIC, the IF, WHILE, and DO LOOP {WHILE | UNTIL}
+statements all require Boolean expressions as part of their syntax.
+
+A "short-circuit" Boolean expression is a unique kind of Boolean
+expression. If a Boolean expression consists of more than one part,
+not all the parts may be evaluated. The evaluation of the expression
+may stop, or "short circuit," partway through. Consider the following
+two-part Boolean expression:
+
+   IF &lt;condition1&gt; AND &lt;condition2&gt; THEN
+
+If &lt;condition1&gt; evaluates to false, it isn't necessary to evaluate
+&lt;condition2&gt;, because "false" AND "anything else" is still false.
+Therefore, we can short circuit the expression and not evaluate
+&lt;condition2&gt;.
+
+The same rule applies to the following expression:
+
+   IF &lt;condition1&gt; OR &lt;condition2&gt; THEN
+
+If &lt;condition1&gt; is true, we do not need to evaluate &lt;condition2&gt;
+because "true" OR "anything else" always evaluates to true.
+
+Short-circuit Boolean expressions are desirable for two reasons.
+First, they allow you to optimize code by evaluating only as much of
+the Boolean expression as necessary. This can generate faster, more
+efficient code. In the examples above, if &lt;condition2&gt; were very
+complex, a short-circuit Boolean might speed up program execution by
+evaluating the whole expression only when absolutely necessary.
+Second, short-circuit Booleans can be used to prevent error
+conditions. In the code example below, BASIC PDS 7.00 prevents the
+"Division by zero" error in .EXE programs since it supports
+short-circuit Booleans. QBX.EXE programs in BASIC 7.00, and QB.EXE and
+.EXE programs in QuickBASIC 4.00, 4.00b, and 4.50, give the "Division by
+zero" error.
+
+BASIC 7.00 will short circuit IF expressions as long as doing so does
+not change the semantics of the statement. The following is an
+example:
+
+   IF (a% &lt; b%) OR (c! &lt; d!) THEN PRINT
+
+The compiler compares a% and b%. If a% is less than b%, the compiler
+skips the floating-point comparison. On the other hand, consider the
+following statements:
+
+   DECLARE FUNCTION Foo! (p!)
+   IF (a% &lt; b%) OR (c! &lt; Foo!(d!)) THEN PRINT
+
+The compiler avoids the floating-point comparison when a% is less
+than b%, but it still calls the function Foo. This is because existing
+programs may rely on the side effects of the function Foo.
+
+This feature affects the best way to write code in BASIC PDS 7.00.
+Specifically, in complex IF, WHILE, DO LOOP WHILE, or DO LOOP UNTIL
+conditions, the quickest conditions should appear first.
+
+Code Example
+------------
+
+The following program determines if a compiler supports short-circuit
+Boolean optimization for an IF statement. Since it supports
+short-circuit Booleans, BASIC PDS Version 7.00 prevents the "Division
+by zero" error in the .EXE program. QBX.EXE programs in BASIC 7.00,
+and QB.EXE and .EXE programs in QuickBASIC 4.00, 4.00b, and 4.50, give
+the "Division by zero" error.
+
+DEFINT A-Z
+ON ERROR GOTO errorhandle
+a = 1
+b = 1
+c = 0
+CLS
+LOCATE 10, 10
+
+' In the following IF statement, b / c is not executed if
+' short-circuit Booleans are supported because a = 1 evaluates to
+' true, and therefore, the whole expression is true. This is
+' because (true OR &lt;anything&gt;) evaluates to true.
+
+IF (a = 1 OR ((b / c) = 1)) THEN
+   ' If this PRINTs, then short-circuit Booleans are supported.
+   PRINT "This compiler supports short-circuit Booleans"
+END IF
+terminate:
+PRINT "End of program reached"
+END
+errorhandle:
+   IF ERR = 11 THEN PRINT "Division by zero, Error="; ERR
+   LOCATE 11, 10
+   PRINT "This compiler does not support short-circuit Booleans"
+   RESUME terminate     ' End the program.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

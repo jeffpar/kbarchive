@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q278444: XCON: MTA Queue Building Up with No Association Opening | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q278444: XCON: MTA Queue Building Up with No Association Opening" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/278/Q278444/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/278/Q278444/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/278/Q278444/","publisher":null,"image":null,"headline":"Q278444: XCON: MTA Queue Building Up with No Association Opening","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q278444-xcon-mta-queue-building-up-with-no-association-opening">Q278444: XCON: MTA Queue Building Up with No Association Opening</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q278444
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55 kbExchange550preSP5fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Messages may loop in a site when high-priority messages are sent. Message loops
+result in non-delivery reports (NDRs).
+
+CAUSE
+=====
+
+This problem can occur because of the way that high-priority messages are
+handled. The sequence of events is as follows:
+
+- High-priority messages are submitted on a server with a local X.400 connector
+  to the destination site. A new association is opened for each message; as a
+  result, nine associations are opened between the two sites.
+
+- When the next message arrives, the server tries again to open a new
+  association. The attempt does not work; it is rejected by the remote end
+  because the limit has been reached (the remote server logs a 57 event). If
+  there are other servers in the site that have equal-cost X.400 connectors to
+  the remote site, the message transfer agent (MTA) relays new high-priority
+  messages to a second bridgehead server. A similar process occurs; up to nine
+  associations are made between this second server and the remote site.
+
+- After all these associations are used, messages are relayed to a third
+  server.
+
+- After all the associations have been used on the third server, messages are
+  relayed back to the first. The first server now generates an NDR for the
+  message with a loop detect. The loop is detected by using the internal trace
+  information for each message extension.
+
+- After all the associations are open, even normal priority messages start to
+  loop.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server version 5.5 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: MTA
+
++----------------------------+
+| Dbserver.sch | 5.5.2654.38 | 
++----------------------------+
+| Dcprods.cat  | 5.5.2654.38 | 
++----------------------------+
+| Emsmta.exe   | 5.5.2654.38 | 
++----------------------------+
+| Ems_rid.dll  | 5.5.2654.38 | 
++----------------------------+
+| Mtacheck.exe | 5.5.2654.38 | 
++----------------------------+
+| Infoplog.cfg | 5.5.2654.38 | 
++----------------------------+
+| Mtamsg.dll   | 5.5.2654.38 | 
++----------------------------+
+| Mtaperf.dll  | 5.5.2654.38 | 
++----------------------------+
+| P42.tpl      | 5.5.2654.38 | 
++----------------------------+
+| P772.tpl     | 5.5.2654.38 | 
++----------------------------+
+| P2.xv2       | 5.5.2654.38 | 
++----------------------------+
+| X400om.dll   | 5.5.2654.38 | 
++----------------------------+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+
+Additional query words: looping fails
+
+======================================================================
+Keywords          : exc55 kbExchange550preSP5fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

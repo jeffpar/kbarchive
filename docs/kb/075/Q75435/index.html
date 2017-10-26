@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q75435: INFO: Windows, Code Pages, and Character Sets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q75435: INFO: Windows, Code Pages, and Character Sets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/075/Q75435/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/075/Q75435/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/075/Q75435/","publisher":null,"image":null,"headline":"Q75435: INFO: Windows, Code Pages, and Character Sets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q75435-info-windows-code-pages-and-character-sets">Q75435: INFO: Windows, Code Pages, and Character Sets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q75435
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKWin16
+Last Modified: 26-JUN-1999
+
+3.00
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ASCII (American Standard Code for Information Interchange) character set
+defines a mapping of the letters, numerals, and specified punctuation and
+control characters to the numbers from zero to 127. The term "code page" is used
+to refer to extensions of the ASCII character set that also map specified
+symbols to the numbers from 128 through 255.
+
+This article discusses how Windows deals with code pages and warns against some
+of the pitfalls that applications can encounter.
+
+MORE INFORMATION
+================
+
+The ANSI (American National Standards Institute) character set maps the letters
+and numerals in the same manner as ASCII. However, ANSI does not support control
+characters and it maps many symbols, including accented letters, that are not
+mapped in standard ASCII. All Windows fonts are defined in the ANSI character
+set.
+
+An Original Equipment Manufacturer (OEM) code page is built into the computer
+hardware. There are a number of OEM code pages, each defined for a particular
+language. These code pages are referred to by a number; for example, code page
+437 is installed in the original IBM PC computer.
+
+MS-DOS uses code pages to change the available character set, depending on user
+preference. A code page change is implemented by programming a new character set
+into the video display hardware. By changing to the code page for a particular
+language, the accented characters appropriate to that language are made
+available. Each code page is limited to 256 symbols.
+
+For each code page, MS-DOS maintains a mapping table to map lowercase characters
+to and from uppercase. Because all string parameters to MS-DOS (filenames) are
+implicitly coded in the current code page, when the table is changed, filenames
+that were accessible under one case mapping may not be available under another.
+However, the common code pages were designed to combat this problem.
+
+Windows runs as an extension to MS-DOS. There is a mapping layer that translates
+between the ANSI character set and an OEM character set. When Windows is
+installed, the Setup program determines the installed character set and installs
+the corresponding ANSI-OEM translation tables and Windows OEM fonts.
+
+If the user changes the current MS-DOS code page, Windows does not change its
+ANSI-OEM mapping tables automatically. It is necessary to run the Windows Setup
+program to modify these tables and to load the corresponding fonts.
+
+Windows-based applications must use the Windows functions AnsiToOem() and
+OemToAnsi() when transferring information to and from MS-DOS. In addition,
+applications must use the correct character set when creating filenames.
+
+There is no one-to-one mapping between the ANSI and OEM character sets. Applying
+the AnsiToOem() function followed by the OemToAnsi() function to a given string
+will not always result in the original string. A file that has been named with
+one of these strings cannot be accessed by any Windows-based application. The
+filename must be changed by the user from outside of Windows.
+
+The following two scenarios may have differing results.
+
+SCENARIO 1
+----------
+
+A lowercase ANSI string is passed to the AnsiToOem() function. The result is
+passed to MS-DOS, which maps the string to uppercase.
+
+SCENARIO 2
+----------
+
+An uppercase ANSI string is passed to the AnsiToOem() function. The string is
+passed to MS-DOS.
+
+This is caused by the fact that the MS-DOS lowercase to uppercase conversion
+mapping and the Windows ANSI case conversion do not match. To avoid this
+problem, use the AnsiUpper() function to convert the ANSI string to uppercase
+before passing it to the AnsiToOem() function. Also note, this is only a problem
+with extended characters. These problems are often overlooked until your
+customers call to complain.
+
+Keep in mind that both ANSI and OEM are 8-bit character sets. In applications,
+always use the "unsigned char" type instead of "signed char" for character
+variables. Problems that result from using "signed char" are very hard to
+track.
+
+The SYSTEM.ini file contains entries that relate to code pages. In the [boot]
+section, the OEMFONTS.fon line specifies the file that contains the OEM stock
+font. In the [keyboard] section, the OEMANSI.bin line specifies the ANSI-OEM
+translation table. If this line is blank, Windows uses the default table built
+into the keyboard driver. In the [enh] section, the *WOA.fon lines specify the
+fonts used in an MS-DOS window at various resolutions.
+
+Windows does not provide any mechanism for an application to work with data that
+is not in the current MS-DOS code page, nor does Windows recognize changing the
+OEM code page in an MS-DOS window. However, an application is free to provide
+its own translation tables and provide a data format that includes the code
+page.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          : kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

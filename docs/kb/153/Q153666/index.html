@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153666: Updated TCP/IP Printing Components for Windows NT 3.51 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153666: Updated TCP/IP Printing Components for Windows NT 3.51" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153666/","publisher":null,"image":null,"headline":"Q153666: Updated TCP/IP Printing Components for Windows NT 3.51","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153666-updated-tcpip-printing-components-for-windows-nt-351">Q153666: Updated TCP/IP Printing Components for Windows NT 3.51</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153666
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51
+Operating System(s): 
+Keyword(s): kbprint kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Windows NT TCP/IP printing support has been modified to encompass greater
+functionality then what was available with prior releases. Modifications were
+made in three separate areas:
+
+- Improved System V support
+
+- Support for multiple data files per control file
+
+- Improved TCP/IP output when spooling a high number of jobs
+
+MORE INFORMATION
+================
+
+Improved System V Support
+-------------------------
+
+Windows NT version 3.5x supported TCP/IP printing as documented in RFC1179.
+However, this RFC "describes an existing print server protocol widely used on
+the Internet for communicating between line printer daemons," and does not
+specify an Internet standard. Different implementations support different
+options, so due to popular demand, enhancements were added for Windows NT.
+
+Support for Multiple Data Files per Control File
+------------------------------------------------
+
+Windows NT supports multiple data files per control file, and when used in "print
+through" mode as an intermediate spooler, it correctly passes the hostname
+parameter through the Windows printing subsystem.
+
+Improved TCP/IP Output When Spooling a High Number of Jobs
+----------------------------------------------------------
+
+Prior to Windows NT 3.51 Service Pack (SP) 5, all TCP/IP print jobs sent from a
+Windows NT computer were sourced from TCP ports 721 through 731, and if many
+jobs were sent in quick succession the ports could be "used up," causing a pause
+in printing until one of them passed through the TCP TIME_WAIT state. This has
+been modified for Service Pack 5, and now line printer remote (LPR) jobs are
+sourced from any available reserved port between 512 and 1023.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+
+Additional query words: prodnt sp5
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

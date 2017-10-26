@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156090/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156090/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156090/","publisher":null,"image":null,"headline":"Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156090-bug-locate-next-n-or-locate-rest-fail-if-started-from-bof">Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156090
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aBUG kbvfp260aBUGkbbuglist
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the LOCATE REST or LOCATE NEXT n commands are used at the beginning of a
+file (BOF), and if the first record matches the FOR condition, the FOUND()
+function returns .F., and the record pointer cannot be moved off the BOF.
+
+WORKAROUND
+==========
+
+Do not use the LOCATE REST or the LOCATE NEXT n commands when at BOF.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+    * Start of code example
+     *
+     CLEAR
+     CREATE TABLE test (field1 c(40))
+     INSERT INTO test VALUES ('test 1')
+     INSERT INTO test VALUES ('test 2')
+     GO TOP
+     SKIP -1                         &amp;&amp; Moves to BOF
+     ? 'BOF() after SKIP -1:', BOF()
+     LOCATE REST FOR !EMPTY(field1)
+     ? 'FOUND():', FOUND()           &amp;&amp; Incorrectly returns .F.
+     ? 'RECNO():' + STR(RECNO(),2)   &amp;&amp; Returns 1 even if BOF() = .T.
+     ? 'BOF():', BOF()               &amp;&amp; Should return .F. - should have gone
+                                     &amp;&amp; to record 1
+     GO TOP
+     ? 'BOF() after GO TOP:', BOF()
+     LOCATE REST FOR !EMPTY(field1)
+     ? 'FOUND():', FOUND()           &amp;&amp; Correctly returns .T.
+     ? 'RECNO():' + STR(RECNO(),2)   &amp;&amp; Returns 1
+     ? 'BOF():', BOF()               &amp;&amp; Returns .F. as expected
+     *
+     * End of code example
+
+2. The first FOUND() function returns .F., although for the first record, field1
+  is not Empty. The BOF() function returns .T., though the record pointer
+  should have been moved by the LOCATE() function.
+
+NOTES:
+
+- The LOCATE NEXT n command behaves the same way as the LOCATE REST command.
+  The LOCATE RECORD, LOCATE ALL, and LOCATE commands with no scope clause work
+  properly.
+
+- If the first record does not satisfy the FOR condition, as long as another
+  record matches the FOR condition, the record pointer is moved and the FOUND()
+  and the BOF() functions are updated correctly.
+
+- If no record satisfies the FOR condition, both the BOF() and the EOF()
+  functions return .T.
+
+Additional query words: kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp260aBUG kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

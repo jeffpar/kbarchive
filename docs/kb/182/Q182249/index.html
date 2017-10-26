@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182249/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182249/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182249/","publisher":null,"image":null,"headline":"Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182249-fix-chrtran-chrtranc-and-fullpath-may-cause-gpf-errors">Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182249
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro 5.0x produces random General Protection Faults or other memory
+related errors in the development or run-time environment and in Visual FoxPro
+OLE Automation Servers. Often, these errors are random and difficult, if not
+impossible, to reproduce consistently.
+
+CAUSE
+=====
+
+In certain circumstances the CHRTRAN(), CHRTRANC(), and FULLPATH() functions are
+reading past the allocated buffer in memory.
+
+RESOLUTION
+==========
+
+Use another string manipulation function to replace CHRTRAN(), CHRTRANC() or
+FULLPATH(). Check the Help file topic of each of the three functions and press
+the "See Also" jump for alternate functions that may be helpful.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+These functions do not produce errors each time they are used. Often, a
+programmer can rely on these functions to work without causing a problem. The
+success or failure of these functions depends on how memory is allocated in
+Visual FoxPro at a given time. Therefore, one application may work fine while
+another produces memory errors. Since Visual FoxPro's internal memory allocation
+depends on many factors that the programmer does not control, the problem may
+appear intermittently.
+
+This problem occurs most frequently when Visual FoxPro 5.0x runs on Windows NT
+4.0 computers. However, this behavior may also occur on Windows 95 computers.
+Anytime you experience random memory problems that are difficult to reproduce,
+remove any occurrences of the FULLPATH(), CHRTRANC(), and CHRTRAN() functions
+and retest the application.
+
+Currently, we do not have a programmatic scenario that reliably reproduces the
+behavior. If you develop a code example that duplicates this behavior, please
+contact Microsoft Product Support Services.
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on: "FULLPATH()"; "CHRTRAN()"; "CHRTRANC()"
+
+Additional query words: crash GPF internal consistency error hang kbvfp600fix kbvfp500
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

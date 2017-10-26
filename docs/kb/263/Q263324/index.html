@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263324: Create Shortcut Command Truncates Source Path Folder Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263324: Create Shortcut Command Truncates Source Path Folder Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263324/","publisher":null,"image":null,"headline":"Q263324: Create Shortcut Command Truncates Source Path Folder Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263324-create-shortcut-command-truncates-source-path-folder-names">Q263324: Create Shortcut Command Truncates Source Path Folder Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263324
+Product(s): Microsoft Systems Management Server
+Version(s): 1.0,2.0,2000,4.0
+Operating System(s): 
+Keyword(s): kbtool kbui kbsms200preSP3
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Professional 
+- Microsoft Systems Management Server Installer versions 1.0, 2.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create shortcuts and specify a long file name in the target path, the
+path is truncated if the hard disk for the target does not exist. For example,
+create a shortcut with the following target:
+
+J:\Mydirectory\Myapplication.exe
+
+If drive J does not exist, the path is truncated to:
+
+J:\Mydirect\Mypplica.exe
+
+CAUSE
+=====
+
+This problem can occur because the shell cannot determine whether the hard disk
+supports long file names, so the path is truncated to be acceptable to all file
+systems.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem may be observed when you use any of the following methods to create
+shortcuts:
+
+- The Systems Management Server (SMS) Installer Create Shortcut Method
+
+- The VBScript Create Shortcut Method
+
+- The IShellLink Interface Method
+
+The SMS Installer Create Shortcut Method
+----------------------------------------
+
+An extract from an SMS Installer .ipf file that demonstrates the problem:
+
+item: Create Shortcut
+ Source English=X:\Pw32\Alongdirectory\Blongdirectory\Longfilename.exe
+ Destination English=C:\Winnt\Shortcut123.lnk
+ Key Type English=1536
+ Flags=00000001
+end
+
+If you compile a script with this extract and you run it after you have ensured
+that drive X does not exist, you can observe that the shortcut is created, but
+the target path is truncated to:
+
+X:\Pw32\Alongdir\Blongdir\Longfile.exe
+
+If you connect drive X to a share or use a subst command to point to a local
+drive and you run the script again, the shortcut is created with the correct
+target path:
+
+X:\Pw32\Alongdirectory\Blongdirectory\Longfilename.exe
+
+This problem is not caused by the SMS Installer. This problem occurs because the
+SMS Installer uses the IShellLink interface (refer to "The IShellLink Interface
+Method") to create shortcuts. The SMS Installer passes the full correct path
+name to the IShellLink interface, but the path is truncated when the
+IShellLink::SetPath operation is performed.
+
+The VBScript Create Shortcut method
+-----------------------------------
+
+A sample VBScript that demonstrates the problem:
+
+  set WshShell = WScript.CreateObject("WScript.Shell")
+  set oShellLink = WshShell.CreateShortcut("d:\" &amp; "\Long filename Shortcut .lnk")
+  oShellLink.TargetPath = "j:\my long directory\myapplication.exe"
+  oShellLink.WindowStyle = 1
+  oShellLink.Hotkey = "CTRL+SHIFT+F"
+  oShellLink.Description = "Long Filename Shortcut"
+  oShellLink.Save
+
+When you run this script and drive J does not exist, you can observe the created
+shortcut, but the target path is:
+
+J:\My_long_\Myapplic.exe
+
+NOTE: Any characters that are not normally supported by file systems that do not
+want long file names, such as the space character, are replaced by the
+underscore symbol "_".
+
+To work around this problem, you can use the subst command to point drive J to a
+local hard disk:
+
+  set WshShell = WScript.CreateObject("WScript.Shell")
+  Dim ret
+  'subst a drive to make the mapping work
+  ret = WshShell.Run ("cmd /c subst j: c:\", 0, TRUE)
+  set oShellLink = WshShell.CreateShortcut("d:\" &amp; "\Long filename Shortcut .lnk")
+  oShellLink.TargetPath = "j:\my long directory\myapplication.exe"
+  oShellLink.WindowStyle = 1
+  oShellLink.Hotkey = "CTRL+SHIFT+F"
+  oShellLink.Description = "Long Filename Shortcut"
+  oShellLink.Save
+  'remove the subst
+  ret = WshShell.Run ("cmd /c subst j: /d", 0, TRUE)
+
+This command points drive J to drive C. If drive C supports long file names, the
+command creates a shortcut with the following target path:
+
+J:\My long directory\Myapplication.exe
+
+You can also use WshNetwork.MapNetworkDrive to connect drive J to a known share,
+create the shortcut as outlined in the preceding steps, and then remove drive J
+by using WshNetwork.RemoveNetworkDrive.
+
+The IShellLink Interface Method
+-------------------------------
+
+An extract of code that demonstrates the problem by using the IShellLink
+interface in Microsoft Visual C++:
+
+  HRESULT hres; 
+
+  IShellLink* psl; 
+   
+      // Get a pointer to the IShellLink interface. 
+      hres = CoCreateInstance(CLSID_ShellLink, NULL, 
+          CLSCTX_INPROC_SERVER, IID_IShellLink, (LPVOID *) &amp;psl); 
+      if (SUCCEEDED(hres)) { 
+          IPersistFile* ppf; 
+   
+          // Set the path to the shortcut target and add the 
+          // description. 
+          hres = psl-&gt;SetPath("X:\\azertyuiop\\azertyuiop.exe");
+
+You must use IPersistFile::Save to write the shortcut to disk. This action
+results in a target path of:
+
+X:\Azertyui\Azertyui.exe
+
+This problem occurs on all versions of Windows NT 4.0 and Windows 2000.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbui kbsms200preSP3 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbSMSSearch kbSMSI100 kbSMSI200
+Version           : :1.0,2.0,2000,4.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

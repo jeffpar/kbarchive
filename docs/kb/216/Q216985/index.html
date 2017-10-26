@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216985/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216985/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216985/","publisher":null,"image":null,"headline":"Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216985-bug-scrollbars-not-seen-if-objects-placed-past-some-coordinates">Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216985
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp kbvfp600bug kbGrpDSFox
+Last Modified: 20-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After placing objects on a form that has scrollbars, the objects will not be
+seen and the scrollbars will disappear when the form is run. This happens when
+the objects have been placed too far vertically or horizontally down or across
+the form.
+
+CAUSE
+=====
+
+Visual FoxPro 6.0's forms were designed to have scrollbars that only scroll
+approximately twice the length or width of the computer's video resolution.
+Placing any objects past this point will result in the scrollbars disappearing
+from the form.
+
+RESOLUTION
+==========
+
+Do not set the Top and Left properties of any objects past the formula described
+in the MORE INFORMATION section below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+By design, objects should not be placed beyond the coordinates (video resolution
+* 2 - object height or width) in a form.For example, if the video resolution is
+800x600, then placing a command button's Top property to 1173 (600 * 2 - 27) on
+a form with vertical scrollbars will allow the user to scroll down the form and
+select that command button at run-time. If the command button's Top property is
+set to 1174, then the scrollbars will disappear and the command button cannot be
+accessed. This number is based on the vertical resolution being 600, and the
+height of the command button being 27.
+
+The same situation occurs if the command button is positioned on a form with
+horizontal scrollbars. Setting the Left property of the command button to 1516
+(800 * 2 - 84) would allow the user to scroll across the form and select the
+command button. Any number higher than that will make the scrollbars disappear
+on the form.
+
+This can be a problem if the form is run on another computer with a lower
+resolution setting. For example, if a form is created on a computer with
+1024x768 resolution and then run on a computer with 800x600 resolution, the
+scrollbars will not be visible at the lower resolution. To ensure that the
+scrollbars are visible at all resolutions, any objects placed on the form would
+have to be set to the above formula using 640x480 as the base for the video
+resolution.
+
+It is not by design that the scrollbars disappear if an object is placed past
+these points: the scrollbars should stay active, but the user would not be able
+to scroll to any object that has been placed past these coordinates.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code. It creates a form with vertical and horizontal
+  scrollbars that will have a command button in the bottom-right corner when
+  both scrollbars are scrolled all the way down and right:
+
+       scr_horizontal=SYSMETRIC(1) * 2 - 84 &amp;&amp; Add one to the width or height
+       scr_vertical=SYSMETRIC(2) * 2 - 27   &amp;&amp; and the scrollbars will disappear.
+       ? scr_horizontal
+       ? scr_vertical
+       DO get_form with scr_horizontal, scr_vertical
+
+       PROCEDURE get_form
+
+       PARAMETERS but_width, but_height
+       PUBLIC oform1
+       oform1=NEWOBJECT("form1")
+       oform1.Show
+       RETURN
+
+       ****************************************
+       DEFINE CLASS form1 AS form
+                Top = 0
+                Left = 0
+                Height = 241
+                Width = 209
+                ScrollBars = 3
+                DoCreate = .T.
+                Caption = "Form1"
+                Name = "Form1"
+
+                       ADD OBJECT command1 AS commandbutton WITH ;
+                              Top = 0, ;
+                              Left = 0, ;
+                              Height = 27, ;
+                              Width = 84, ;
+                              Caption = "Command1", ;
+                              Name = "Command1"
+
+                         PROCEDURE Init
+                               Thisform.Command1.Left = but_width
+                               Thisform.Command1.Top = but_height
+                        ENDPROC
+       ENDDEFINE
+
+2. Increase the values of either the scr_horizontal or scr_vertical variable by
+  one (1) and note that the scrollbars disappear.
+
+REFERENCES
+==========
+
+For additional information about Scrollbars on forms, please see the following
+article in the Microsoft Knowledge Base:
+
+Q193749 PRB: Setting Scrollbars &gt; 0 Changes Height and Width Property
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp kbvfp600bug kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66395: Windows-Based Application Installation Sample Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66395: Windows-Based Application Installation Sample Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66395/","publisher":null,"image":null,"headline":"Q66395: Windows-Based Application Installation Sample Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66395-windows-based-application-installation-sample-code">Q66395: Windows-Based Application Installation Sample Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66395
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbOSWinNT350 kbOSWinNT351 kbOSWin95
+Last Modified: 08-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WINSET2 is a file in the Microsoft Software Library that contains the source
+code necessary to create a Windows-based application installation program. This
+program does the following:
+
+1. Prompts the user for a directory into which to install the application.
+
+2. Checks for available disk space.
+
+3. Creates directories as needed.
+
+4. Copies the files from the installation source (the program will expand
+  compressed files during the copy process, if necessary).
+
+5. Adds icons to a Program Manager group if the Program Manager is the current
+  shell program.
+
+This program does not detect system hardware, and is designed to install
+applications on an already existing Windows system.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Winset2.exe
+  (http://download.microsoft.com/download/platformsdk/sample93/3.1/W31/EN-US/WINSET2.EXE)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The WINSET2 file contains an internal directory structure. The PKware file
+extraction utility has a -D option switch that creates the corresponding
+directory structure on the destination disk.
+
+The following files are part of WINSET2:
+
+BINCODE Directory
+
+  BINCODE : Debug build NMAKE file (Microsoft C version 6.0)
+  BINCODE.C : BINXZ main code
+  BINCODE.DEF : DEF file for BINXZ
+  BINCODE.DLG : Dialog templates
+  BINCODE.H : BINXZ header file
+  BINCODE.ICO : Setup icon
+  BINCODE.MAK : Debug build MAKE file (Microsoft C version 5.1)
+  BINCODE.RC : Resource template
+  BINCODE1.H : BINXZ header file (describes resources)
+  BINRET : Retail build NMAKE file (Microsoft C version 6.0)
+  BINRET.MAK : Retail build MAKE file (Microsoft C version 5.1)
+  DIALOGS.C : Dialog box routines
+  DOS.ASM : Low-level MS-DOS routines in ASM
+  EXPAND.LRG : File decompression module, large model
+  EXPAND.MED : File decompression module, medium model
+  EXPAND.SML : File decompression module, small model
+  GASGAUGE.C : Gas gauge code file
+  GASGAUGE.H : Gas gauge header file
+  IO.C : Low-level MS-DOS routines in C
+  PARSE.C : INF file parser
+  PROGDDE.C : Program Manager dynamic-data exchange (DDE) routines
+  SETUP.INF : Sample SETUP.INF file
+
+NOTE: Due to U.S. Government rules regarding the exporting of encryption
+technologies, EXPAND.C cannot be distributed.
+
+COMPEPND Directory
+
+  COMPRESS.EXE: MS-DOS-based file compressor
+  EXPAND.EXE : MS-DOS-based file uncompressor
+
+NOTE: It is a good idea to provide the EXPAND utility with the installed
+application. This allows users to access the files on the distribution disks.
+
+SETUP Directory
+
+  SETUP : NMAKE file (Microsoft C version 6.0)
+  SETUP.C : Setup stub loader source
+  SETUP.DEF : DEF file
+  SETUP.MAK : MAKE file (Microsoft C version 5.1)
+
+The following tools are required to build and use WINSET2:
+
+- Windows Software Development Kit version 3.0 or later
+
+- Windows version 3.0 or later
+
+- Microsoft C version 6.0 or later
+
+- Microsoft Macro Assembler version 5.1 or later
+
+- MS-DOS version 3.1 or later
+
+The Contents of a Release Setup Disk
+------------------------------------
+
+The Setup program has two components, SETUP.EXE and BINXZ.EXE. Setup spawns
+BINXZ, which actually performs the installation. If Setup determines that it is
+running from a floppy disk, it will copy BINXZ to the Windows directory on the
+user's hard disk. BINXZ will run itself from the hard disk and delete itself
+when done. (BINXZ deletes itself only if it is copied by Setup. If the file is
+already on the hard disk, it will remain.)
+
+Because Setup copies BINXZ to the hard disk, the program can use traditional
+Windows programming methods (using movable, discardable segments) and still
+allow the user to change disks in Drive A without disrupting the process.
+
+The first disk must contain files as follows:
+
+  A:\SETUP.EXE
+  A:\SETUP.INF
+  A:\BIN\BINXZ.EXE
+
+If Setup will be run from a hard disk or from a network, preserve the contents of
+the BIN directory. Setup will run from a network or a hard disk.
+
+All files involved with the installation must be in subdirectories of the "root"
+installation directory. This is done to prevent the user from running the
+application(s) directly from the Setup disk.
+
+The Contents of an Example Sample Disk
+--------------------------------------
+
+  A:\SETUP.EXE
+  A:\SETUP.INF
+  A:\BIN\BINXZ.EXE
+  A:\BIN\SOL.EXE
+  A:\BIN\REVERSI.EXE
+  A:\DLL\SOL.DLL
+  A:\DLL\REVERSI.DLL
+  A:\HLP\SOL.HLP
+  A:\HLP\README.TXT
+
+The SOL.* files comprise one application. The user has the option to install
+these files. The REVERSI.* files comprise a second application. The user has the
+option to install these files. The README.TXT file is required; the user does
+not have the option to omit installing this file.
+
+Setup shields the user from manually selecting SOL.EXE, SOL.DLL, and SOL.HLP.
+Instead, the user chooses "Solitaire Game" and the system does the necessary
+mapping to install the following three files:
+
+  \BIN\SOL.EXE
+  \DLL\SOL.DLL
+  \HLP\SOL.HLP
+
+The "nn" field in the [apps] section of SETUP.INF provides the mechanism to do
+this. Arbitrarily choose one of the three files, for example SOL.EXE, to be the
+"main" file. The other two files are marked to depend on the main file. When the
+user chooses to install the main file, Setup copies all three files to the hard
+disk. In this example, the "nn" field for SOL.EXE would be 02, to indicate that
+the next two files depend on SOL. These files must be listed sequentially in the
+SETUP.INF file.
+
+When the Solitaire application is installed, Setup can create an icon for it in
+the Program Manager. Each icon must reside in a group. Because an application
+cannot request the list of active groups from the Program Manager using
+dynamic-data exchange (DDE), the Setup program always creates a new group. The
+following lines in SETUP.INF define a group called "A":
+
+   [progman]
+      "A","Solitaire Application","SOL.GRP"
+
+The "Ic" field in the [apps] section specifies the group where the icon will be
+placed. "IA" places the SOL.EXE icon into group "A."
+
+Because the user has the option to install SOL.EXE, the "D" flag in the [apps]
+section is also specified. In the "complex" version of Setup, this flag adds the
+application to the Select list box and allows the user to choose to install the
+application.
+
+Each file must be associated with three of strings: the icon title, the
+application's description (often the same as the icon title), and a comment
+string (approximately 70 characters long). These fields are appended to the
+description of SOL.EXE in the [apps] section. Finally, the sizes of SOL.EXE,
+SOL.DLL, and SOL.HLP sum to 70 kilobytes. This is indicated by the "70" size
+field at the end of the description.
+
+The Solitaire entry in [apps] section of SETUP.INF will resemble the following:
+
+  "0","02DIA","0","BIN","SOL.EXE","Solitaire","Solitaire","The most _
+  tested application ever!","70"
+  "0","",     "0","DLL","SOL.DLL"
+  "0","",     "0","HLP","SOL.HLP"
+
+For an uncompressed file, the line in the [apps] section is as follows:
+
+   X   flags   Y    Z   filename  icon title app title
+   v  /     \  v  /   \ /       \ /       \  /        \ 
+  "0","02DIA","0","BIN","SOL.EXE","Solitaire","Solitaire","The most _
+  tested application ever!","70"
+                         \  / 
+                         size
+
+  The "X" field contains the source disk number.
+  The "Y" field contains the destination directory number.
+  The "Z" field contains the source and destination directory names.
+
+A compressed file is very similar, adding a "C" to the flags field, as follows:
+
+  "0","C02DIA","0","BIN","SOL.EXE","Solitaire","Solitaire","The most _
+  tested application ever!","70"
+
+The information for REVERSI.EXE is similar to that used above. However, because
+REVERSI does not receive a Program Manager icon, the "IA" flag is not
+specified.
+
+Because the README.TXT file is required, its line resembles the following:
+
+  "0","R","0","HLP","README.TXT","Read Me","Read Me","","1"
+
+The Remainder of the SETUP.INF File
+-----------------------------------
+
+There are three other sections in the INF file: [setup], [disks], and
+[directories]. The following sections provide some tips regarding these
+sections.
+
+The [setup] section provides additional information about the Setup program.
+
+"PACKAGENAME","Solitaire"
+  SETUP refers to the application it is installing by using the
+  PACKAGENAME variable. This variable should contain the name of the
+  product as it is listed on the packaging.
+
+"CAPTIONNAME","Solitaire Setup"
+  This caption is used by the Setup program in all of its dialogs.
+  This variable usually contains the PACKAGENAME followed by "Setup."
+
+The [disks] section provides information about the Setup source disks.
+
+"0","A:\","SOL Setup Disk #1"
+  This line indicates that disk #0 is called "SOL Setup Disk #1," and
+  that it will be located in Drive A, by default. If Setup cannot
+  find any files, it will also check the directory from which Setup
+  was run (a network drive, a hard disk, or Drive B, as
+  appropriate). After searching this drive, if Setup is still unable
+  to find the file, it will prompt the user to insert "SOL Setup Disk
+  #1."
+
+The [directories] section provides information about the destination
+directories.
+
+"0","C:\SOL","Solitaire App Dir"
+  This line specifies the "main" directory. This line must be present
+  in the SETUP.INF file. This directory is presented as the default
+  when Setup prompts the user where files should be installed. This
+  must be directory "0."
+
+"A","\CHILD1","Solitaire Directory Child 1"
+  Setup builds child directories from the "main" directory. Valid
+  child directory names are "A"-"Z."
+
+Comments about the Source Code
+------------------------------
+
+The Setup program is designed to provide the maximum flexibility with minimum
+modifications to the source code. However, many applications require special
+functionality and some features that this code does not provide. Some useful
+features that this code does not provide include the following:
+
+- Modifying the AUTOEXEC.BAT, CONFIG.SYS, or profile (INI) files. The code to
+  implement this functionality can be modeled on the code in PARSE.C, which
+  retrieves information from the SETUP.INF file. The process of adding a new
+  data structure to the SETUP.INF file for this additional data should be quite
+  straightforward.
+
+- Determining system hardware. Setup is meant to be run on an installed copy of
+  Windows. It does not install Windows. Therefore, standard Windows calls such
+  as the GetSystemMetrics function should be used to determine the system
+  hardware.
+
+Additional query words: softlib WINSET2.EXE setup kbfile installation share invalid media
+
+======================================================================
+Keywords          : kbfile kbOSWinNT350 kbOSWinNT351 kbOSWin95 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

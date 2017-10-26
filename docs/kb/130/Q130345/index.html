@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130345: How to Retreive Database Properties in a Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130345: How to Retreive Database Properties in a Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130345/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130345/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130345/","publisher":null,"image":null,"headline":"Q130345: How to Retreive Database Properties in a Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130345-how-to-retreive-database-properties-in-a-program">Q130345: How to Retreive Database Properties in a Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130345
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro introduces several database properties available to databases.
+These properties include comments and stored procedures. This article describes
+how to determine database properties from a Visual FoxPro program.
+
+MORE INFORMATION
+================
+
+The DISPLAY DATABASE and LIST DATABASE commands can view several database
+properties at once. These commands can direct output to the console, to a
+printer, or to a text file. The example in this article retrieves individual
+components of a database.
+
+Comment
+-------
+
+A database comment can be obtained by using the DBGETPROP() function. The
+following example shows how to return the comment of a database by using
+DBGETPROP():
+
+     cResult=DBGETPROP('mydata', 'DATABASE', 'Comment')
+
+The parameters are:
+
+- mydata is the table name.
+
+- DATABASE specifies that the property is a database property.
+
+- Comment is the property desired.
+
+Version
+-------
+
+The version number of a database can be obtained by using DBGETPROP() function.
+The following example shows how to return the version number of a database by
+using DBGETPROP():
+
+     cResult=DBGETPROP('mydata', 'DATABASE', 'Version')
+
+The parameters are:
+
+- mydata is the table name.
+
+- DATABASE specifies that the property is a database property.
+
+- Version is the property desired.
+
+Path
+----
+
+The path to the database can be obtained by using the DBC() function. The
+following example shows how to return the path of a database by using DBC():
+
+     SET DATABASE TO alldata        &amp;&amp;Assumes a database named "alldata"
+     cResult=DBC()
+
+Stored Procedures
+-----------------
+
+Stored procedures contained within a database can be obtained by using the
+DISPLAY PROCEDURES or COPY PROCEDURES command. There is no way to store the
+contents of stored procedures in a memory variable. DISPLAY and COPY PROCEDURES
+can both be used to copy stored procedures to a text file or to the printer. The
+following example uses COPY PROCEDURES to copy the stored procedures to a file
+named STORCODE.TXT:
+
+     OPEN DATABASE alldata
+     COPY PROCEDURES TO storcode.txt
+
+Tables
+------
+
+A list of tables contained within a database can be obtained by using the DISPLAY
+TABLES or LIST TABLES command to display the list to the console, a printer, or
+a text file. Here's an example:
+
+     OPEN DATABASE alldata
+     LIST TABLES TO FILE tblfile.txt NOCONSOLE
+
+Views
+-----
+
+A list of views contained within a database can be obtained by using the DISPLAY
+VIEWS or LIST VIEWS command to display the list to the console, a printer, or a
+text file. Here's an example:
+
+     OPEN DATABASE alldata
+     LIST VIEWS TO FILE viewfile.txt NOCONSOLE
+
+Named Connections
+-----------------
+
+A list of named connections contained within a database can be obtained by using
+the DISPLAY CONNECTIONS or LIST CONNECTIONS command to display the list to the
+console, a printer, or a text file. Here's an example:
+
+     OPEN DATABASE alldata
+     LIST CONNECTIONS TO FILE connfile.txt NOCONSOLE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96947/","publisher":null,"image":null,"headline":"Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96947-how-to-using-a-netware-drive-without-a-login-script-in-wfwg">Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96947
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you troubleshoot a problem involving Novell NetWare, you may need to load
+Windows for Workgroups without the Novell User or System login scripts and yet
+still have access to a NetWare network drive(s).
+
+It is possible to have access to the Novell network resources by using the Attach
+option in File Manager. This may help you troubleshoot problems caused by
+incorrect or outdated drivers located in mapped or search directories. The
+advantage of this procedure is that you can exit to an MS-DOS command prompt and
+type "set" (without the quotation marks) to display environment variables
+without changing the path. (Some Novell login scripts may significantly alter
+the path.)
+
+MORE INFORMATION
+================
+
+To use a NetWare network drive without running a login script, use the following
+procedure:
+
+NOTE: This is NOT an automatic login procedure. In fact, it bypasses the Novell
+login procedure entirely.
+
+1. With MSIPX.COM and NETX.COM loaded normally, start Windows for Workgroups
+  without going to the NetWare login drive (Q) and logging on.
+
+2. Start File Manager. (The NetWare login drive is the only available NetWare
+  network drive.)
+
+3. From the File menu, choose Disk, choose the Connect Network Drive button.
+
+4. In the Connect Network Drive dialog box, select the NetWare button.
+
+5. In the Network Drive Connections dialog box, the default NetWare drives are
+  displayed. The only NetWare network drive available should be Q (depending on
+  the LASTDRIVE= statement in your CONFIG.SYS file). Choose the Browse button.
+
+6. In the Browse Connections dialog box, choose the Attach button.
+
+7. In the Attach File Server dialog box, select a server and then enter your
+  User Name and Password (if required). Choose the OK button.
+
+8. The OK button is unavailable when you return to the Browse Connections dialog
+  box. This is normal behavior; choose the Cancel button, then choose the
+  Browse button again.
+
+
+9. In the Browse Connections dialog box, select the server in the
+  Servers/Volumes box. The available directories are then displayed in the
+  Directories box. Select a directory and then choose the OK button or press
+  ENTER.
+
+10. In the Network Connections dialog box, select an available drive letter,
+  choose the Map button, then choose the Close button.
+
+11. When you return to File Manager, the new mapped drive is displayed as a
+  network drive icon.
+
+Additional query words: 3.1 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

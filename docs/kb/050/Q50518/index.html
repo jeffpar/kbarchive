@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50518: BX Register Is Popped Twice for a C Interrupt Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50518: BX Register Is Popped Twice for a C Interrupt Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50518/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50518/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50518/","publisher":null,"image":null,"headline":"Q50518: BX Register Is Popped Twice for a C Interrupt Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50518-bx-register-is-popped-twice-for-a-c-interrupt-function">Q50518: BX Register Is Popped Twice for a C Interrupt Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50518
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | S_QuickC S_QuickAsm 2.00 2.01 | mspl13_c
+Last Modified: 21-MAR-1990
+
+The interrupt keyword is used to designate specific C functions as
+interrupt service routines and instructs the compiler to generate
+appropriate entry and exit instructions.
+
+If you compile code with the /G1 or /G2 options (80186 or 80286 code
+generation) then the compiler produces pusha and popa instructions
+that save and restore all vital registers.
+
+However, if you compile with the default /G0 (8086 code generation)
+then the registers are each explicitly pushed and popped. One
+difference in this code, which may at first appear to be a bug, is
+that the BX register is popped twice, but the SP register is not
+popped at all.
+
+This is not a problem. The SP register is saved in the following
+instruction sequence:
+
+   mov     bp, sp
+   .
+   .       ISR code
+   .
+   mov     sp, bp
+
+The peculiar double popping of BX can be explained by the following:
+
+   The registers are pushed AX, CX, DX, BX, SP, BP, SI, DI, DS, ES
+   (left to right)
+
+   The registers are popped AX, CX, DX, BX, BX, BP, SI, DI, DS, ES
+   (right to left)
+
+Notice that ES receives the old ES; DS the old DS, but BX receives the
+old SP, then BX receives the old BX.
+
+The first pop of SP to BX is necessary to remove the previous value of
+SP from the stack. The second pop of BX is necessary to restore the
+old BX value.
+
+The old value of SP was restored in the "MOV  SP,BP" instruction,
+which immediately proceeds the popping of all the registers.
+
+This ensures that the state of the registers are saved and then
+restored in the Interrupt Service Routine.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

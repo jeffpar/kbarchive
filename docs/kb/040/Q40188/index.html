@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40188: FRE(-2) Returns Fixed Lowest Value Even After Stack Shrinks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40188: FRE(-2) Returns Fixed Lowest Value Even After Stack Shrinks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40188/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40188/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40188/","publisher":null,"image":null,"headline":"Q40188: FRE(-2) Returns Fixed Lowest Value Even After Stack Shrinks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40188-fre-2-returns-fixed-lowest-value-even-after-stack-shrinks">Q40188: FRE(-2) Returns Fixed Lowest Value Even After Stack Shrinks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40188
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.00 buglist4.00b buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 20-SEP-1990
+
+The FRE(-2) function returns in bytes the amount of unused stack space
+available for the program.
+
+However, when the stack-space allocation decreases, the value returned
+by FRE(-2) stays fixed at the smallest size that was unused by the
+stack up to that point of program execution. In other words, the
+values successively returned by FRE(-2) never increase -- they either
+decrease or stay the same.
+
+Microsoft has confirmed this to be a problem in QuickBASIC in versions
+4.00, 4.00b, and 4.50; in Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS-DOS and MS OS/2 (buglist6.00, buglist6.00b); and in
+Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10 for MS-DOS and MS OS/2 (buglist7.00, buglist7.10). We are
+researching this problem and will post new information here as it
+becomes available.
+
+The sample program below demonstrates this behavior. The example given
+is a recursive subprogram that reports the value of FRE(-2) on the way
+down and back up through 10 levels of subprogram recursion. As the
+stack space increases with the level of recursion, the value of
+FRE(-2) decreases as expected. However, as the stack space decreases
+with lower levels of recursion, the value reported by FRE(-2) stays
+"bottomed out" at the lowest value reached during recursion.
+
+The only way to reset the "bottomed-out" value returned by FRE(-2) is
+to end the program or execute a CLEAR statement. Note: CLEAR erases
+all variables and closes all files. In some cases, as shown in Example
+2, adding an INPUT statement before the FRE(-2) allows FRE(-2) to go
+back up. Adding INPUT does not help Example 1.
+
+Example 1
+---------
+
+The following code example demonstrates a case in which FRE(-2) goes
+down and stays down:
+
+   DECLARE SUB test (num)
+   CLS
+   PRINT "Before any calls, FRE(-2):"; FRE(-2)
+   CALL test(0)
+   END
+   SUB test (num)
+     PRINT "Call number"; num; "on the way DOWN, FRE(-2):"; FRE(-2)
+     IF num &lt; 9 THEN
+       CALL test(num + 1)
+     ELSE
+       PRINT "Bottom of recursion reached."
+     END IF
+     PRINT "Call number"; num; "on the way UP, FRE(-2):"; FRE(-2)
+   END SUB
+
+Example 2
+---------
+
+The following example demonstrates a case in which adding an INPUT
+statement lets the value returned by FRE(-2) go back up:
+
+   DECLARE SUB foo ()
+   DEFINT A-Z
+   CLS
+   'INPUT k   ' Adding this INPUT statement makes FRE(-2) go back up.
+   PRINT FRE(-2)
+   a$ = "Test string"
+   CALL foo
+   PRINT FRE(-2)
+   END
+
+   SUB foo
+   SHARED a$
+   PRINT "hello "; a$
+   END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

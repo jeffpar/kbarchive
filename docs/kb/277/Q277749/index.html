@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277749/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277749/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277749/","publisher":null,"image":null,"headline":"Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277749-howto-set-a-pushpin-in-mappoint-2001-using-automation">Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277749
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbVBp kbVBp500 kbVBp600 kbDSupport kbCodeSnippet
+Last Modified: 14-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use MapPoint 2001 to find an address and set a
+pushpin at that address.
+
+MORE INFORMATION
+================
+
+To find an address and set a pushpin at that address:
+
+1. On a computer with MapPoint 2001 installed, create a new Visual Basic
+  Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, click References.
+
+3. Click to select the Microsoft MapPoint Object Library 8.0 (North America)
+  check box, and then click OK.
+
+4. On Form1, add a Command button.
+
+5. In the code window of Form1, paste the following code:
+
+  Option Explicit
+
+  Dim objApp As MapPoint.Application
+  Dim objMap As MapPoint.Map
+  Dim objLoc As MapPoint.Location
+  Dim objPushpin as MapPoint.Pushpin
+
+  Private Sub Command1_Click()
+  ' Automate MapPoint.
+  ' Start MapPoint 2001.
+  Set objApp = CreateObject("mappoint.application")
+  ' Get the currently displayed map.
+  Set objMap = objApp.ActiveMap
+  ' Find an address.
+  Set objLoc = objMap.FindAddress("One Microsoft Way", "Redmond", "Washington", "98052", geoCountryUnitedStates)
+  ' Set a pushpin at the address.
+  Set objPushpin = objMap.AddPushpin(objLoc, "Microsoft")
+  ' Browse to the pushpin.
+  objPushpin.GoTo
+  ' Highlight the pushpin.
+  objPushpin.Highlight = True
+  ' Show MapPoint.
+  objApp.Visible = True
+  End Sub
+
+  Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+  ' Clear the variables before you unload the form.
+  Set objMap = Nothing
+  Set objApp = Nothing
+  Set objLoc = Nothing
+  Set objPushpin = Nothing
+  End Sub
+
+6. Run the project.
+
+7. Click Command1.
+
+A pushpin in MapPoint marks the address you specified.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q236615 HOWTO: Automate MapPoint 2000 from Visual Basic
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbVBp kbVBp500 kbVBp600 kbDSupport kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbHomeProdSearch kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbMapptSearch kbMapPoint2001
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

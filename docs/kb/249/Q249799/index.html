@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249799/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249799/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249799/","publisher":null,"image":null,"headline":"Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249799-slow-network-performance-with-service-pack-4-5-6-or-6a">Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249799
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP4,4.0 SP5,4.0 SP6
+Operating System(s): 
+Keyword(s): kbWinNT400PreSP7Fix
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Terminal Server Edition 
+- Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6 
+- Microsoft Windows NT Workstation versions 4.0 SP4, 4.0 SP5, 4.0 SP6 
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0 SP4, 4.0 SP5, 4.0 SP6 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+Network performance may be sluggish after you apply Windows NT 4.0 Service Pack
+4, 5, 6, or 6a.
+
+CAUSE
+=====
+
+A change was made to the Rdr.sys file in Windows NT 4.0 Service Pack 4 to fix an
+issue with a handle being invalidated when a dismount occurs. This may cause
+additional network traffic, which may degrade performance.
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time                 Size    File name     Platform
+  -------------------------------------------------------------
+  12/23/1999  04:25p             265,104 rdr.sys       Intel
+  12/23/1999  04:24p             509,392 rdr.sys       Alpha 
+
+
+NOTE: You must install the latest Windows NT Service Pack (SP6a) to use this
+hotfix. Windows NT SP6 is required by Rdr.sys dependencies on SP6, which means
+that Rdr.sys cannot be fixed for any previous Service Pack version.
+
+Using the hotfixed version of Rdr.sys that resolves this problem with any other
+service pack is not supported.
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0.
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 Service Packs 4
+and 5. This problem was first corrected in Windows NT Server 4.0, Terminal
+Server Edition Service Pack 6.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Dismounting is something we do at the file system level after we've performed
+direct input and output operations on, or retrieve information about, a floppy
+disk drive, hard disk drive, tape drive, or CD-ROM drive.
+
+The default behavior has been changed to the behavior that existed before Windows
+NT 4.0 Service Pack 4 for network activity. If this fix causes an issue, you can
+change the new default behavior by following these steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rdr\Parameters
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+  Value Name: FileSystemControlFilter
+  Data Type: REG_DWORD
+  Value: 0 or 1
+
+Note that a setting of 0 disables the filter, which is the old behavior. A
+setting of 1 filters FSCTL_IS_VOLUME_MOUNTED, which is the new behavior and is
+the default.
+
+4. Quit Registry Editor.
+
+
+Additional query words: rdr.sys
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbNTTermServSearch kbWinNTW400sp6
+Version           : :4.0 SP4,4.0 SP5,4.0 SP6
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

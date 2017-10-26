@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165231: WD97: Fax Wizard Leaves .tmp Files Behind | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165231: WD97: Fax Wizard Leaves .tmp Files Behind" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165231/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165231/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165231/","publisher":null,"image":null,"headline":"Q165231: WD97: Fax Wizard Leaves .tmp Files Behind","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165231-wd97-fax-wizard-leaves-tmp-files-behind">Q165231: WD97: Fax Wizard Leaves .tmp Files Behind</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165231
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbother winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click the File menu to view the most recently used (MRU) list, there
+may be a file listed that resembles the following:
+
+  C:\...\~$CovSht@13-03-97,10-01-03.tmp
+
+Note: The numbers in the file name will differ from the example. The numbers are
+actually the date and time the file was created.
+
+CAUSE
+=====
+
+This file was created and left on the system by the Fax Wizard.
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps to reset the MRU list:
+
+1. On the Tools menu, click Options.
+
+2. Click the General tab.
+
+3. Clear the "Recently Used File List" check box, and click OK.
+
+4. On the Tools menu, click Options.
+
+5. Click the General tab.
+
+6. Click to select the Recently Used File List check box and click OK.
+
+For additional information about resetting MRU lists in Word, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q161631 WD97: How to Reset Word 97 MRU Lists
+
+MORE INFORMATION
+================
+
+The Fax Wizard helps you create a cover sheet and fax a document to someone. You
+can use the Fax Wizard to send a fax, to mail merge to a fax, or to print a
+cover sheet to send from a fax machine.
+
+In the Fax Wizard, there is an opportunity to enter the recipients names and
+their fax numbers. The Fax Wizard creates a Word document with a table
+containing these names and numbers for use during the fax process. Each time the
+Fax Wizard is run, a new file is created. Each of these files are approximately
+20 kilobytes (KB) in size. Once the process is complete, Word does not remove
+these files from your computer or reuse the information from the file in the Fax
+Wizard.
+
+
+There is no way to prevent the Fax Wizard from creating these files, or to have
+the Fax Wizard delete the file when it has finished. You will have to manually
+search for and delete these files from your computer.
+
+Note: Deleting these files will not remove them from the MRU list.
+
+The documents are named similar to other temporary files created by Windows
+programs and are stored in the Temp folder. The Temp folder in Windows 95 is
+usually C:\Windows\Temp, but may be different on your computer.
+
+You may want to check the Autoexec.bat file, if one exists, for the location of
+the Temp folder. You may want to delete these files from your computer
+periodically by using the following steps:
+
+To Remove Temporary Files
+-------------------------
+
+1. Quit all Windows programs.
+
+2. On the Start menu, point to Find, and then click "Files or Folders".
+
+3. Click the Name &amp; Location tab.
+
+4. In the Named: box, type "~*.*" (without the quotation marks).
+
+5. Make sure the Look in: box displays the correct drive (for example, your hard
+  disk drive - usually Drive C:), and the Include subfolders check box is
+  selected. Click Find Now.
+
+6. If any files are found, do the following:
+
+  a. On the Edit menu, click Select All.
+
+  b. On the File menu, click Delete.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

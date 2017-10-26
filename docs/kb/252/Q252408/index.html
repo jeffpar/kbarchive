@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252408: Unable to Shut Down the W3SVC Service Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252408: Unable to Shut Down the W3SVC Service Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252408/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252408/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252408/","publisher":null,"image":null,"headline":"Q252408: Unable to Shut Down the W3SVC Service Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252408-unable-to-shut-down-the-w3svc-service-properly">Q252408: Unable to Shut Down the W3SVC Service Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252408
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to stop the W3SVC service using the Services in the Control Panel,
+the following error message occurs:
+
+  The World Wide Web Publishing Service service could not be stopped
+
+You may also see this error if you attempt to use the command line command "net
+stop w3svc" (without the quotation marks):
+
+  Error 2186: The service is not responding to the control function
+
+In the task list, you can see that the Inetinfo.exe process still exists. You
+cannot restart W3SVC without stopping the InetInfo.exe process first.
+
+CAUSE
+=====
+
+When shutting down, the W3SVC service first tries to close all existing TCP/IP
+client sessions. For each pending connection, the W3SVC shutdown code waits
+until the "active" user requests are finished. When all TCP/IP sessions have
+been closed, W3SVC can then shut down all running ISAPI applications.
+
+If a Web client has a file download in progress and does not read the entire
+server response, then the TCP connection cannot be closed quickly and the W3SVC
+cannot shut down in the timeframe registered with the Windows NT Service Control
+Manager (SCM). This time is 120 seconds by default. The Windows NT SCM then
+displays the error message.
+
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Windows NT service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time    Version       Size    File name     Platform
+  -------------------------------------------------------------
+  01/21/00  22:20   4.2.0738      185,760 Infocomm.dll  x86
+  01/21/00  22:19   4.2.0738       47,936 Isatq.dll     x86
+  01/21/00  22:21   4.2.0738       38,256 Ssinc.dll     x86
+  01/21/00  22:21   4.2.0738       25,360 Sspifilt.dll  x86
+  01/21/00  22:20   4.2.0738      228,480 W3svc.dll     x86
+  01/21/00  22:20   4.2.0738       87,520 Wam.dll       x86
+  01/21/00  22:20   4.2.0738      304,400 Infocomm.dll  alpha
+  01/21/00  22:19   4.2.0738       82,704 Isatq.dll     alpha
+  01/21/00  22:21   4.2.0738       60,176 Ssinc.dll     alpha
+  01/21/00  22:21   4.2.0738       39,696 Sspifilt.dll  alpha
+  01/21/00  22:21   4.2.0738      383,760 W3svc.dll     alpha
+  01/21/00  22:20   4.2.0738      150,288 Wam.dll       alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+
+MORE INFORMATION
+================
+
+The fix forces the closure of the TCP/IP sockets when the W3SVC service is
+ending. However, because IIS 4.0 allows an ISAPI application to process a
+request on an arbitrary thread, there is no way to notify these threads to shut
+down. The new registry parameter "mSecWAMTimeoutLoop" has been added to allow
+these threads to finish their work properly. The parameter below must be
+manually added to the following registry key:
+
+  
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3svc\Parameters
+  Value name    : mSecWAMTimeoutLoop (ms)
+  Value type    : REG_DWORD
+  Default value : 200 ms
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+If some ISAPI requests are still executing, WAM shutdown will wait a maximum of
+10*mSecWAMTimeoutLoop milliseconds before shutting down.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

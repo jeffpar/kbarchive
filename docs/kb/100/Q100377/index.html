@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100377/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100377/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100377/","publisher":null,"image":null,"headline":"Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100377-fix-f1001-confoldc-line-253-negative-integer-exponent">Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100377
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a
+Operating System(s): 
+Keyword(s): kberrmsg kbCompiler kbFL32 kbFortranPS
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to compile an application fails and Microsoft FORTRAN PowerStation
+version 1.0 for MS-DOS displays the following message:
+
+  fatal error F1001: INTERNAL COMPILER ERROR
+  (compiler file '@(#)confold.c:1.144', line 253)
+  Contact Microsoft Product Support Services
+
+FORTRAN PowerStation version 1.0a for MS-DOS displays the following error
+message:
+
+  fatal error F1001: INTERNAL COMPILER ERROR
+  (compiler file '@(#)confold.c:1.144', line 254)
+  Contact Microsoft Product Support Services
+
+CAUSE
+=====
+
+The command line specifies the /Ox optimization and the code contains an
+expression that computes a negative integer power of a constant integer or of an
+integer expression. The error above occurs when the compiler processes the unary
+minus operator in an integer exponentiation expression.
+
+RESOLUTION
+==========
+
+There are two methods to work around this problem:
+
+- Modify the compiler command line to specify the /Oxp compiler option switch.
+
+- Modify the source code to remove the unary minus operator from integer
+  expressions used as exponents. Assign the exponent to a temporary variable
+  and negate the value. Then specify the temporary as the exponent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was fixed in FORTRAN PowerStation
+32, version 4.0.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates this problem:
+
+Sample Code #1
+--------------
+
+  c Compiler options needed: /Ox
+
+        program test
+        integer j
+        real    x
+
+        j = 1
+        x = 2**(-j)
+        print *, x
+        end
+
+The following sample code demonstrates one method to work around this problem:
+
+Sample Code #2
+--------------
+
+  c Compile options needed: /Ox
+
+        program test
+        integer j
+        real    x
+
+        j = 1
+        j = -j      ! Negation occurs here.
+        x = 2**(j)
+        print *, x
+        end
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : kberrmsg kbCompiler kbFL32 kbFortranPS 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

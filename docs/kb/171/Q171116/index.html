@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171116/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171116/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171116/","publisher":null,"image":null,"headline":"Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171116-howto-enable-vss-integration-with-frontpage-and-visual-interdev">Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171116
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0,6.0,97
+Operating System(s): 
+Keyword(s): kbinterop kbFrontPage kbSSafe400 kbSSafe500 kbSSafe600 kbVisID100 kbVisID600 kbGrpDSASP
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+- Microsoft FrontPage 97 for Windows 
+- Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FrontPage and Visual InterDev integration with Visual SourceSafe differs from
+how other integrated applications, such as Visual Basic and Visual C++ integrate
+with Visual SourceSafe. This article briefly describes how FrontPage and Visual
+InterDev perform Visual SourceSafe operations, and the resulting steps necessary
+to enable the integration.
+
+This article covers the most common scenarios and configurations. In some cases
+additional steps might be necessary. If you experience any difficulty, please
+contact Microsoft Technical Support.
+
+
+MORE INFORMATION
+================
+
+Before going into the detailed steps necessary to enable the integration, this
+article will explore the following factors:
+
+- How FrontPage and Visual InterDev Work with Visual SourceSafe.
+
+- Which Visual SourceSafe Database Is Used?
+
+- Local vs. Remote Visual SourceSafe Database.
+
+- The Anonymous User.
+
+How FrontPage and Visual InterDev Work with Visual SourceSafe
+-------------------------------------------------------------
+
+The FrontPage Server Extensions use OLE automation to connect to and interact
+with Visual SourceSafe.
+
+All Visual SourceSafe operations are performed by FrontPage Server Extensions on
+the Web server itself, not client machines. The Web server can be Internet
+Information Server (IIS) or Personal Web Server using the DCOM extensions. This
+article relates mainly to IIS.
+
+Which Visual SourceSafe Database Is Used?
+-----------------------------------------
+
+FrontPage Server Extensions must find a Srcsafe.ini file to perform Visual
+SourceSafe operations through OLE automation.
+
+- Visual SourceSafe 5.0 usually uses the following Registry key:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe\SCCServerPath
+
+While this key points to the Ssscc.dll in the VSS\Win32 directory, FrontPage
+Server Extensions will use the SrcSafe.ini in the VSS directory.
+
+- Visual SourceSafe 6.0 normally uses the SrcSafe.ini in the Web server's
+  installation of Visual SourceSafe. If there multiple VSS installations, it
+  will use the one most recently installed.
+
+
+Local vs. Remote Visual SourceSafe Database
+-------------------------------------------
+
+A local database is one that is on the same machine as the Web server and is
+accessed through local paths only. A remote database is one that either resides
+on a separate computer, or on the same one as the Web server, but it is accessed
+as if it were a network location.
+
+To illustrate this, if you are using Visual SourceSafe 5.0 and the local path to
+Ssscc.dll is as follows:
+
+  C:\vss\win32\ssscc.dll
+
+But the registry points to one of the following:
+
+  \\mymachine\vss_share\win32\ssscc.dll
+
+  X:\vss\win32\ssscc.dll
+
+Even though this may be the same physical location on the Web server computer, if
+it is accessed as a UNC path or a logical drive, it is considered a remote
+database.
+
+You can also use the Data_Path ini variable in the Srcsafe.ini file to point to
+remote data. By default the setting is as follows:
+
+  Data_Path  = data
+
+However, users can modify this to point to different locations.
+
+The Anonymous User
+------------------
+
+In the steps necessary to enable integration, several references are made to the
+Anonymous user. These steps should only be when "Allow Anonymous" is enabled in
+the IIS Web Service Properties.
+
+- For FP, the Anonymous user always has to be configured correctly.
+
+- In Visual InterDev, if the Anonymous user has either Browse and Author, or
+  Browse Author and Administer permissions to the web, Visual InterDev will
+  also require the Anonymous user to be configured correctly, but the more
+  appropriate resolution is to give the Anonymous user either Browse only, or
+  no permissions to the Web.
+
+The following section describes the steps you need to perform to enable the
+integration.
+
+Steps Necessary with both Local and Remote Databases
+----------------------------------------------------
+
+There are four components that you must configure correctly:
+
+- The Visual SourceSafe Installation on the Web Server
+
+- Permissions to the Visual SourceSafe Directory Structure
+
+- Accounts in the Visual SourceSafe Administrator
+
+- The Anonymous Account (if applicable)
+
+The VSS Installation on the Web Server:
+
+To enable OLE automation with VSS, the file Ssapi.dll must be registered (that
+is, in the Windows Registry) on the Web server. While it is possible to do this
+manually using Regsvr32.exe, the preferred method is to install either the VSS
+server or client components on the Web server. With VSS5 select Custom setup,
+and make sure that the Enable Visual SourceSafe Integration check box is
+selected.
+
+Permissions to the Visual SourceSafe Directory Structure:
+
+To view Directory permissions, right-click the Directory in the Windows NT
+Explorer, click Properties, click the Security tab, and then click Permissions.
+To view Share permissions, right-click the shared Directory in the Windows NT
+Explorer, click Properties, click the Sharing tab, and then click Permissions.
+
+Assign CHANGE permissions to all Visual SourceSafe logon accounts for all files
+and subdirectories under the Visual SourceSafe server installation directory.
+
+It is assumed that the Administrators and System accounts will be granted Full
+Control to the entire Visual SourceSafe directory hierarchy. Although tighter
+file restrictions might be possible, full Visual SourceSafe functionality might
+be jeopardized by tighter restriction.
+
+Accounts in the Visual SourceSafe Administrator:
+
+Add the actual FrontPage or Visual InterDev user(s) (password optional). Under
+the Tools menu, click Options, click the General tab, and make sure that "Use
+network name for automatic user log in" is selected.
+
+The Anonymous Account (if applicable):
+
+Do the following on the computer running IIS:
+
+1. Ensure that the anonymous account has Log On Locally privileges. Use the
+  following steps to do this: a. Run the User Manager For Domains. b. On the
+  Web server machine select "User Rights..." from the Policies menu. c. From
+  the right drop-down list, select "Log on locally." Make sure that the
+  anonymous account is listed either individually or as a member of one of the
+  groups.
+
+2. Check that that the anonymous account has the same password in both IIS
+  Service Manager and User Manager For Domains. You might have to re-enter the
+  password in both these places. The following are two potential pitfalls: a.
+  In User Manager For Domains the password always appears padded out to 14
+  characters. This can be confusing if you have entered a shorter password. b.
+  After changing the password in IIS you should stop and restart the
+
+service to clear out any password caching.
+
+1. Make sure that the anonymous account can log on automatically to the Web
+  server. In User Manager For Domains make sure that the "User Must Change
+  Password at Next Logon" and "Account Disabled" check boxes are not selected.
+  NOTE: If you are uncertain about what your computer's anonymous user should
+  be, go to the IIS configuration utility, and look in the properties for the
+  WWW service.
+
+2. In the Visual SourceSafe admin, add the anonymous account as a user with no
+  password.
+
+3. Make sure that the Anonymous account has permissions to the Visual SourceSafe
+  directories as in the "Permissions to the VSS Directory Structure" section of
+  this article.
+
+Additional Steps Necessary for Remote Databases
+-----------------------------------------------
+
+1. On the computer running IIS, set the correct properties for the WWW service
+  in IIS. In the Service Properties for the WWW service, the three check boxes
+  for Password Authentication should appear as follows:
+
+     Allow Anonymous - Optional.
+     Basic (Clear Text) - selected.
+     Windows NT Challenge/Response - not selected.
+
+  Windows NT Challenge/Response is also referred to as NTLM. Because this
+  setting is not selected, users have to enter their user name and domain
+  password when they open a Web. Use the format "domainname\username" for the
+  user's name when working with multiple domains.
+
+2. If Allow Anonymous is enabled, do the following on the computer with the
+  Visual SourceSafe Database: a. In User Manager For Domains, add the Web
+  server's anonymous account. For example, if the anonymous account on the Web
+  server is IUSR_WEBSRV, add that user as a local account. b. Give IUSR_WEBSRV
+  the same password as it has on the Web server. c. Make sure that IUSR_WEBSRV
+  has logon locally permissions.
+
+3. Directory and share permissions to the Visual SourceSafe directory structure
+  must be set correctly as the "Permissions to the VSS Directory Structure"
+  section of this article.
+
+Troubleshooting
+---------------
+
+NOTE: If the server computer is running Windows 95, make sure that a user remains
+logged onto Window 95. Users often leave the server at the login prompt. The
+integration between Visual SourceSafe and Visual InterDev will not work when
+there is no one logged onto the server.
+
+The Windows NT Event Viewer on the IIS server often contains information that can
+help locate the cause of a problem if integration is not working. These log
+errors usually come in pairs, the later (topmost) of which usually contains an
+error number and the one below it a short description of the error. Double-click
+a log entry to view its details.
+
+NOTE: Visual InterDev usually reports errors encountered in an error message,
+whereas FrontPage suppresses the errors. To ensure that FrontPage Server
+Extensions writes errors to the Windows NT event log, refer to:
+
+  Q191289 HOWTO: Enable Event Error Logging for FrontPage 98 and SourceSafe
+
+The errors might differ depending on exactly how the components are configured.
+Following is a list of possible errors might that appear in the Application Log
+and their causes:
+
+- Error: Source Control System failure: File "Srcsafe.ini" not found. Cause:
+  Visual SourceSafe integration is not enabled. In the case of Visual
+  SourceSafe 5.0 this usually happens when there is no SCCServerPath in the
+  registry of the Web server computer.
+
+- Error: Source Control System failure: User "" not found. Cause: "Use Network
+  name for automatic login is not selected in the Visual SourceSafe
+  Administrator.
+
+- Error: Source Control System failure: User &lt;username&gt; not found. Cause:
+  The user &lt;username&gt; has not been added to the Visual SourceSafe
+  database.
+
+- Error: Source Control System failure: Could not find VSS resource DLL Cause:
+  The anonymous or user accounts do not have the correct NTFS file permissions.
+
+- Error: Source Control System failure: Access to file "&lt;path&gt;
+  \srcsafe.ini" denied. Cause: IIS and the Visual SourceSafe database are on
+  different computers and NTLM is enabled.
+
+- Error: Source Control System failure: Access to file "&lt;path&gt; \um.dat "
+  denied. Cause: IIS and the Visual SourceSafe database are on different
+  computers and NTLM is enabled.
+
+- Error: Source Control System failure: Invalid handle. Cause: IIS and the
+  Visual SourceSafe database are on different computers and the anonymous
+  account has a different password on the two computers, or does not have Log
+  on locally permissions on the Visual SourceSafe computer.
+
+- Error: [ASCII 147]The SourceSafe database path does not exist. Please select
+  another database" Cause: User has insufficient permissions to the VSS
+  directory. For troubleshooting purposes give all users Full control to the
+  VSS directories, then selectively start restricting access.
+
+Errors that appear in the System Log:
+
+- Error: The server was unable to logon the Windows NT account &lt;anonymous
+  user account&gt; due to the following error: unknown user name or bad
+  password. Cause: On the IIS computer, the anonymous account either does not
+  have Log on locally permissions, or the account's password in IIS and User
+  Manager differ.
+
+- Error: The server was unable to logon the Windows NT account &lt;anonymous
+  user account&gt; due to the following error: unknown user name or bad
+  password. Cause: The anonymous user account has been disabled in User
+  Manager.
+
+REFERENCES
+==========
+
+General Integration Information:
+
+For general information on Visual InterDev integration, see the online
+documentation in the User's Guide, Authoring Web Content, Using Visual
+SourceSafe With your Web.
+
+Troubleshooting:
+
+For more information on troubleshooting FrontPage or Visual InterDev integration,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q160766 VSS Source Control Project Box Does Not Appear in FrontPage
+
+IIS Security and the Anonymous Account:
+
+For general information on IIS security and the anonymous account, see Chapter 5
+of the online documentation for IIS (Inetdocs.htm).
+
+For more information on developing Web-based solutions for Internet Explorer,
+please see the following Web sites:
+
+  http://msdn.microsoft.com/workshop/default.asp
+
+  http://msdn.microsoft.com/ie/
+
+  http://support.microsoft.com/highlights/iep.asp?FR=0&amp;SD=MSDN
+
+For additional information on directory and share permissions, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q131022 INFO: Required Network Rights for the Visual SourceSafe Directories
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbFrontPage kbSSafe400 kbSSafe500 kbSSafe600 kbVisID100 kbVisID600 kbGrpDSASP _IK 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage97 kbZNotKeyword4 kbZNotKeyword2 kbFrontPage97Search kbFrontPage98Search kbZNotKeyword3 kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0,97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

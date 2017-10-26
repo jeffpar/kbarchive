@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190021/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190021/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190021/","publisher":null,"image":null,"headline":"Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190021-xadm-messages-sitting-in-ims-inbound-queue-waiting-delivery">Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190021
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On an Exchange Server computer that hosts a working Internet Mail Service
+(Internet Mail Connector in version 4.0), after changing the "forward all
+messages to host" IP address in the Connections\Message Delivery property page
+of the IMS, inbound mail may start to sit in the Inbound Waiting Delivery queue
+of the IMS and the administrator may start receiving the following
+notifications:
+
+  Internal processing error 4115. Message from the spool file J9QXJV0J
+  (J9ZffVLD) seems to be looping through the routing extension of the
+  Internet Mail Service (IMS). Please check that the routing DLL is
+  configured properly.
+
+The Administrator account, specified in the Internet Mail property page of the
+Internet Mail Service, gets the following notification:
+
+ From: System Administrator &lt;postmaster@example.microsoft.com &gt;
+    To: Administrator &lt;Administrator@example.microsoft.com &gt;
+    Subject: Notification: Inbound Mail Failure
+    Date: Wednesday, April 30, 1997 1:25 PM
+ 
+  The following recipients did not receive the attached mail. Reasons are
+  listed with each recipient:
+
+  &lt;administrator@example.microsoft.com &gt;
+       administrator@example.microsoft.com
+  MSEXCH:IMS:Org Name:Site Name:Server Name 0 (00120270) Too Many Hops
+  &lt;ddatsomo@example.microsoft.com &gt; ddatsomo@example.microsoft.com
+  MSEXCH:IMS:Org Name:Site Name:Server Name 0 (00120270) Too Many Hops
+
+In Event Viewer, you might find the following error:
+
+  Unable to submit, send, or transfer out a message. Check
+     pr_recipient_number,
+     pr_recipient_type, pr_report_time. From MSExchangeIS private.
+
+Enabling and inspecting the SMTP protocol logging shows that the inbound messages
+were successfully received.
+
+CAUSE
+=====
+
+The Internet Mail Service may be configured to route mail to its own server.
+There are two ways to work around this incorrect configuration.
+
+WORKAROUND
+==========
+
+- If you are selecting "Reroute incoming SMTP mail using POP3" in the Internet
+  Mail Service Routing property page, then you must remove your own domain name
+  from the routing table in this property page. Also you must stop both the
+  Internet Mail Service and the MTA services, or better yet, restart the
+  server. If you do not stop these two services and restart them, the SMTP
+  routing changes will not take effect.
+
+  If there are no POP3 clients connected to this Exchange Server computer,
+  select the other option, "Do not route."
+
+- Check the Connected sites tab within the Property page of the IMS and remove
+  any entries in this property page if this Internet Mail Service is not
+  connecting to another Exchange Server site.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

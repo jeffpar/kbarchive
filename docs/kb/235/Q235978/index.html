@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235978/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235978/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235978/","publisher":null,"image":null,"headline":"Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235978-xgen-helpful-tips-and-suggestions-for-applying-exchange-sps">Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235978
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 30-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides general information about applying service packs for
+Microsoft Exchange Server. This information can help you avoid problems that may
+arise during the installation process and help make the installation process as
+smooth as possible. The following topics are discussed:
+
+- Before applying a service pack
+- Applying a service pack
+
+MORE INFORMATION
+================
+
+Before Applying a Service Pack
+------------------------------
+
+Before you apply a service pack for Exchange Server:
+
+- Stop all Exchange Server services. To stop a service:
+
+  1. In Control Panel, double-click Services.
+
+  2. Click the service you want to stop, and then click Stop. If a dialog box
+     appears stating that additional services will be stopped, click OK.
+     Otherwise, click Yes.
+
+  NOTE: The Exchange Server services are normally stopped automatically while
+  the service pack is being applied. However, in some cases, the Update program
+  is unable to stop one or more services. Stopping the services before you
+  apply the service pack may prevent this problem from occurring.
+
+- Verify that the server is not being monitored using Performance Monitor. The
+  server may be monitored by an instance of Performance Monitor running on the
+  same server, or on a different server on the network. If the server is being
+  monitored, quit Performance Monitor.
+
+- Verify that the server is not being monitored using a server monitor. If the
+  server is being monitored, stop the server monitor.
+
+- End any other connections to the server, such as Simple Network Management
+  Protocol (SNMP) connections or connections made by e-mail clients,
+  uninterruptible power supply (UPS) programs, or the Windows NT User Manager.
+
+Applying a Service Pack
+-----------------------
+
+While you are applying a service pack, you may be prompted to overwrite an
+existing file on your hard disk. When this occurs, you should only overwrite the
+existing file if the new file is a later version. If the new file is not a later
+version, you should not overwrite the existing file.
+
+In addition, a message may be displayed indicating that the Update program could
+not copy a file to your hard disk because an existing file is already open. When
+this occurs, you may be able to work around the problem by renaming the existing
+file on your hard disk, and then clicking Retry.
+
+
+For information about problems that may occur if the server is being monitored
+using a server monitor while you are applying a service pack, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q177221 XADM: Errors Occur During Exchange Service Pack Upgrade
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196879: WD97: Ampersand in File Name Not Included When Added to Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196879: WD97: Ampersand in File Name Not Included When Added to Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196879/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196879/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196879/","publisher":null,"image":null,"headline":"Q196879: WD97: Ampersand in File Name Not Included When Added to Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196879-wd97-ampersand-in-file-name-not-included-when-added-to-menu">Q196879: WD97: Ampersand in File Name Not Included When Added to Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196879
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you add a file name that contains an ampersand (&amp;) to a menu in
+Microsoft Word, the ampersand does not appear.
+
+For example, a file named "Jack&amp;Jill" appears as "JackJill" on the menu.
+
+CAUSE
+=====
+
+This behavior is by design. The ampersand is used in a menu to designate which
+character of the menu item name to underline. This underlined character is used
+as a shortcut to choose the menu item when you use the keyboard.
+
+WORKAROUND
+==========
+
+To display a file name that contains an ampersand, save the file with a second
+ampersand in front of the first before you add the file name to your menu, for
+example:
+
+  Jack&amp;&amp;Jill
+
+When you add this file name to a menu, the name appears correctly, as:
+
+  Jack&amp;Jill
+
+MORE INFORMATION
+================
+
+To add a file name to a Word menu, follow these steps:
+
+1. In Word, open the file you want to appear on your Word menu.
+
+2. On the Tools menu, click Customize.
+
+3. On the Toolbars tab, under Toolbars, click to select the Menu Bar check box.
+
+  NOTE: In Word 97, the Menu Bar check box is already selected by default.
+
+4. Click to select the Commands tab.
+
+5. Under Categories, click to select All Commands.
+
+6. Under Commands, click to select FileOpenFile. In the FileOpenFile box, ensure
+  that your document name appears in the box. If you have multiple documents
+  open, each file is listed in the drop-down list box.
+
+7. Under Commands, drag the FileOpenFile command to the Word menu where you want
+  it to appear, and then click Close to close the Customize dialog box.
+
+Additional query words: missing ampersand &amp; filename file name menu fileopenfile
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

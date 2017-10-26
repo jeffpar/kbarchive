@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176453: XCON: Problems with Attachments Using Boldon James Encoding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176453: XCON: Problems with Attachments Using Boldon James Encoding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176453/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176453/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176453/","publisher":null,"image":null,"headline":"Q176453: XCON: Problems with Attachments Using Boldon James Encoding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176453-xcon-problems-with-attachments-using-boldon-james-encoding">Q176453: XCON: Problems with Attachments Using Boldon James Encoding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176453
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message that contains an attachment over a 1984 X.400 connection
+to a foreign message transfer agent (MTA) that uses Boldon James manifest
+encoding, the attachment name may not appear in the message when it is received.
+The attachment itself is transferred successfully, but the attachment's name,
+date, and time are not. When you receive a message over this connection, the
+attachment name may be changed to Att.dat or a similar generic name.
+
+CAUSE
+=====
+
+By default, Microsoft Exchange Server does not create Boldon James manifests for
+attachments. When you send a message that contains an attachment over an X.400
+connection that uses this type of encoding, information about the attachment is
+not encoded into a manifest. Therefore, the foreign MTA does not receive this
+information.
+
+In addition, by default, Microsoft Exchange Server does not decode and apply
+attachment information in Boldon James manifests when receiving messages from
+foreign MTAs. As a result, attachment names may be changed to generic names such
+as Att.dat.
+
+STATUS
+======
+
+This is a design limitation of the 1984 X.400 specification that Boldon James
+manifest encoding is designed to overcome. Although the creation and decoding of
+manifests are not officially supported by the X.400 specification, Microsoft has
+enhanced the Microsoft Exchange Server 5.0 MTA to support this feature.
+
+This feature is included in the latest U.S. Service Pack for Microsoft Exchange
+Server version 5.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The 1984 X.400 specification provides poor support for encoding attachment
+information, resulting in multiple proprietary attachment encoding schemes.
+Boldon James manifest encoding is a method of encoding attachments in which an
+additional attachment, referred to as a manifest, is included with the message.
+The manifest provides information about the original attachment, including the
+attachment name.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

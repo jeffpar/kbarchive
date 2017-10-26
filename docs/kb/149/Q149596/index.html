@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149596: XCLN: Configuring Mac Client for TCP/IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149596: XCLN: Configuring Mac Client for TCP/IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149596/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149596/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149596/","publisher":null,"image":null,"headline":"Q149596: XCLN: Configuring Mac Client for TCP/IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149596-xcln-configuring-mac-client-for-tcpip">Q149596: XCLN: Configuring Mac Client for TCP/IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149596
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If MacTCP is not configured correctly, an error is displayed when you try to
+check a name using a Transmission Control Protocol/Internet Protocol (TCP/IP)
+connection type.
+
+The following errors may be generated:
+
+  The name could not be resolved. Network problems are preventing connection to
+  the Microsoft Exchange Server computer. Contact your system administrator if
+  this condition persists.
+
+  The name could not be resolved. The action could not be completed.
+
+WORKAROUND
+==========
+
+1. Verify the account name using the Microsoft Exchange Administrator program.
+
+2. From the Mac workstation, ensure the Microsoft Exchange Server and name are
+  entered correctly. Do not use the Appletalk name if it is different from the
+  Microsoft Exchange Server name.
+
+  NOTE: The Appletalk name is setup through MacFile control panel on the Windows
+  NT Server.
+
+3. Ensure MacTCP Ping can successfully ping the Microsoft Exchange server. If
+  not, MacTCP is not correctly set up on the workstation or TCP/IP is not
+  correctly set up on the Microsoft Exchange Server computer.
+
+4. If Appletalk routing is enabled, check the Appletalk Connection option
+  instead of TCP/IP. If the name can be resolved, then the behavior is a MacTCP
+  or DNS (hosts) issue.
+
+5. If MacTCP is using DNS, ensure MacTCP has the correct IP addresses in the DNS
+  configuration. Ensure a default DNS has been selected. Also, verify that the
+  DNS has the correct name resolution entered for the Microsoft Exchange Server
+  (appropriate A and MX records).
+
+6. If a local Mac hosts file is used, a CNAME and A record must be entered.
+  "Hosts" file is located in the "System folder" by default (and should be
+  located in the System sub-directory to use with MacTCP).
+
+  Mac hosts file format:
+
+  &lt;&lt;Exchange server name&gt;&gt; CNAME &lt;&lt;IP domain name&gt;&gt;
+  &lt;&lt;IP domain name&gt;&gt; A &lt;&lt;corresponding IP address&gt;&gt;
+
+  For Example:
+
+  EXCH1 CNAME exch1.business.com.
+  exch1.business.com. A 157.54.16.157
+
+  NOTE: If the Exchange Server name resolves to a name other than the name in
+  the hosts file, change the Exchange Server name in the hosts file to match
+  the resolved name. If the user is not sure about the Internet Protocol (IP)
+  domain name, they can run IPConfig at a command prompt on the server and find
+  the domain suffix. The IP domain name should consist of the server name with
+  the domain suffix (as in the example above). All domain names should end with
+  a period (or dot).
+   - Using the earlier example, create hosts files.
+
+   - Navigate to Apple (menu), Control Panels, and then TCP/IP
+
+   - Navigate to Edit (menu), and then User Mode. Select Advanced, and click
+     OK.
+
+   - Click "Select Hosts File"; highlight the hosts file already created, and
+     then click Open.
+
+   - Close the TCP/IP Control Panel, and then click Save when prompted.
+
+   - Restart the computer.
+
+
+MORE INFORMATION
+================
+
+- Microsoft Exchange uses name resolution to check the name.
+
+- Microsoft recommends you use the DNS setup instead of a local Hosts file for
+  ease of administration, setup, and troubleshooting.
+
+NOTE: Apple File Protocol defaults to port 548.
+
+
+Additional query words: MacTCP IP TCP/IP DNS networking problems Mac Client TCPIP exclnfaq outlook ol97 ol98
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : :4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

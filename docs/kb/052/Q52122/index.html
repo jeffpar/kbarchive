@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q52122: Calling a User-Written Function from an ISR | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q52122: Calling a User-Written Function from an ISR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/052/Q52122/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/052/Q52122/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/052/Q52122/","publisher":null,"image":null,"headline":"Q52122: Calling a User-Written Function from an ISR","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q52122-calling-a-user-written-function-from-an-isr">Q52122: Calling a User-Written Function from an ISR</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q52122
+Product(s): See article
+Version(s): 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 15-JAN-1990
+
+It is possible to call a user-written function from an Interrupt
+Service Routine (ISR). However, there a few caveats, as shown below:
+
+1. Do not make any calls to stack checking routines.
+
+2. Do not assume DS=SS.
+
+There are other considerations that must be taken into account, such
+as which stack a program is running on, availability of space on the
+stack, etc. Because of these restrictions, there is a limit as to
+which C run-time functions can be used.
+
+Recommended reading for ISR programming is the "Microsoft Systems
+Journal," September 1988, Volume 3, Number 5. This issue of the MS
+Systems Journal contains an article for writing TSR (terminate and
+stay resident) programs with Microsoft C and covers such issues as
+stack considerations and program size. Also, see the Microsoft "MS-DOS
+Encyclopedia," Article 11, for more information.
+
+The following code provides a demonstration of an ISR calling a
+user-written function. The code revectors the keyboard interrupt (INT
+9H) and then waits for a hotkey to be pressed. If the hotkey is
+pressed, a message is displayed. Because of the above restrictions,
+the printf() family cannot be used. Therefore, a user-written
+function must be called to write the string.
+
+Note: The sample program does not go TSR because this would complicate
+the code. If the you want to modify it for TSR usage, please read the
+above articles.
+
+Sample Code
+-----------
+
+/* Compile with /Gs /Au */
+
+#include &lt;dos.h&gt;
+#include &lt;bios.h&gt;
+
+union REGS inregs, outregs;
+
+void (interrupt far *oldint9)();
+
+/* HOTKEY is CTRL+W */
+
+#define HOTKEY_CODE 0x11
+#define HOTKEY_STAT 0x4
+#define KEYPORT 0x60
+
+#define DOS_INT 0x21
+#define KEYSVC_INT 0x9
+#define DOS_PRINTSTRING 0x9
+
+void dos_puts( char *msg);
+void interrupt far newint9(void);
+
+void dos_puts( char *msg )
+{
+
+   (void) _bios_keybrd( _KEYBRD_READ );
+
+   inregs.h.ah = DOS_PRINTSTRING; /* DOS INT 21 Function 9h is    */
+                                  /*    Display String            */
+
+   inregs.x.dx = (int)msg; /* inregs.x.dx gets the segment        */
+                           /* value of string to be output to crt */
+
+   intdos( &amp;inregs, &amp;outregs );   /* INT 21 call to output string */
+}
+
+void interrupt far newint9(void)
+{
+   static unsigned char keycode;
+   static char active = 0;
+
+   if (active)
+      _chain_intr(oldint9);
+
+   keycode = inp(KEYPORT);        /* Check for key at keyboard    */
+
+   if (keycode != HOTKEY_CODE )   /* If key isn't HOTKEY,         */
+      _chain_intr(oldint9);       /* pass to old handler          */
+
+   if ( _bios_keybrd(_KEYBRD_SHIFTSTATUS) &amp; HOTKEY_STAT )
+   {
+      active = 1;
+      (*oldint9)();
+      dos_puts("HOTKEY was pressed\r\n$");
+      active = 0;
+   }
+   else
+      _chain_intr(oldint9);
+}
+
+void main(void)
+{
+   long x;
+                                  /* Save old keyboard ISR */
+   oldint9 = _dos_getvect( KEYSVC_INT );
+                                  /* Set new keyboard ISR */
+   _dos_setvect( KEYSVC_INT, newint9 );
+                                  /* Loop awhile to let program run */
+   for(x=0L; x &lt;= 200000L; x++)
+                                  /* Restore old ISR and exit */
+      _dos_setvect( KEYSVC_INT, oldint9 );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

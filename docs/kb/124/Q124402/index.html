@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124402: Calling a User-Defined Function (UDF) from SQL SELECT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124402: Calling a User-Defined Function (UDF) from SQL SELECT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124402/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124402/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124402/","publisher":null,"image":null,"headline":"Q124402: Calling a User-Defined Function (UDF) from SQL SELECT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124402-calling-a-user-defined-function-udf-from-sql-select">Q124402: Calling a User-Defined Function (UDF) from SQL SELECT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124402
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to add functionality to a Structured Query
+Language (SQL) SELECT command by calling a user-defined function (UDF) from the
+SELECT.
+
+MORE INFORMATION
+================
+
+Assume that you want to create a query that will produce three or fewer records
+for each state in the customer table.
+
+Using the customer table in the tutorial directory and the code from the "Sample
+Code" section of this article, you can specify how many records from each state
+are to be included in the resulting query. The variable max_match is set to 3,
+but as not all states have 3 or more records, the resulting query won't have
+3*49 records. This example will produce 116 records.
+
+When max_match is set to 2, the result contains 86 records. When set to 1, the
+result contains 49 records, which is the same number of records the 'GROUP BY
+state' clause returns.
+
+Step-by-Step Example
+--------------------
+
+1. Create a file that contains the code listed in the "FoxPro 2.x Sample Code"
+  or Visual FoxPro Sample Code sections of this article, and save it as
+  MAIN.PRG.
+
+2. From the FoxPro command line, type "DO main" without the quotation marks.
+  Then press ENTER to see the results.
+
+FoxPro 2.x Sample Code
+----------------------
+
+  CLEAR
+  CLEAR ALL
+  SET DEFAULT TO SYS(2004)+"tutorial"
+  match=0
+  max_match=3
+  prev_state="None"
+  first_call=.T.
+
+  SELECT state FROM customer ORDER BY state INTO CURSOR tmp1
+  SELECT state FROM tmp1 WHERE mycount()
+
+  FUNCTION mycount
+
+  DO CASE
+
+  CASE first_call                                   &amp;&amp; Condition  1
+    first_call = .F.
+  CASE (state = prev_state) AND (match &lt; max_match) &amp;&amp; Condition  2
+    match = match + 1
+  CASE state != prev_state                          &amp;&amp; Condition  3
+    prev_state = state
+    match = 1
+  CASE match &gt;= max_match                           &amp;&amp; Condition  4
+    RETURN .F.
+  OTHERWISE
+    WAIT WINDOW "Untested condition occurred, result may not be correct!"
+  ENDCASE
+  RETURN .T.
+
+Visual Foxpro Sample Code
+-------------------------
+
+     CLEAR
+     CLEAR ALL
+     SET DEFAULT TO SYS(2004)+"Samples\Data"
+     match=0
+     max_match=3
+     prev_to_country="None"
+     first_call=.T.
+
+     SELECT to_country FROM orders ORDER BY to_country INTO CURSOR tmp1
+     SELECT to_country FROM tmp1 WHERE mycount()
+
+     FUNCTION mycount
+
+     DO CASE
+
+     CASE first_call                                         &amp;&amp; Condition  1
+       first_call = .F.
+     CASE (to_country=prev_to_country) AND (match&lt;max_match) &amp;&amp; Condition  2
+       match = match + 1
+     CASE to_country != prev_to_country                      &amp;&amp; Condition  3
+       prev_to_country = to_country
+       match = 1
+     CASE match &gt;= max_match                                 &amp;&amp; Condition  4
+       RETURN .F.
+     OTHERWISE
+       WAIT WINDOW "Untested condition occurred, result may not be correct!"
+     ENDCASE
+     RETURN .T.
+
+What the Code Does
+------------------
+
+The first few lines in the Main program clear the environment and initialize a
+few global variables to be used in the mycount() UDF. The first SELECT command
+creates a sorted CURSOR (tmp1) for the second SELECT command to use. The
+mycount() UDF is called once for each of the records in the tmp1 CURSOR. Each
+time the UDF returns TRUE, the current record in tmp1 is included in the
+resulting query.
+
+There are four conditions in the UDF:
+
+1. The first condition is only used once. It allows the first record in the tmp1
+  CURSOR to be tested. Without this condition, the first record in tmp1 would
+  be ignored.
+
+2. The second condition allows the second and third records for each state to be
+  included.
+
+3. The third condition allows the first record for each new state to be
+  included. Please note that for this condition to work correctly, the table
+  must be sorted.
+
+4. The fourth condition causes the current record in tmp1 to be skipped. Please
+  note that this condition is only checked when all the previous conditions
+  evaluate to false. The Else is added for error checking.
+
+Additional query words: VFoxWin FoxWin 2.50
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

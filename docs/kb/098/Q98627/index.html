@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98627/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98627/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98627/","publisher":null,"image":null,"headline":"Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98627-sample-advanced-alc_-sample-and-showkeyboard-sample">Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98627
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Alckey.exe is a Windows for Pen Computing sample that demonstrates how to use
+the ALC values (defined in Windows for Pen Computing) to set how an hedit (or
+bedit) control filters its input.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Software
+Library:
+
+  Alckey.exe
+  (http://support.microsoft.com/download/support/mslfiles/Alckey.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+ALC values can be set to define what values are recognized in a pen edit control
+(either hedit or bedit). For example, by setting ALC_NUMERIC, only numeric
+values are recognized in that particular control. Using ALC values allows
+developers greater freedom to customize how their application responds to ink.
+By defining a small subset of only the types of values wanted in an edit
+control, recognition of those values increases.
+
+The AlcKey sample has two edit controls, hedit and bedit. By selecting the ALC
+flags desired via the ALC dialog box, the hedit control is set to those values.
+The bedit control is not altered, allowing the developer to view the difference
+between the settings of the two controls.
+
+The AlcKey sample also demonstrates the use of the ShowKeyboard() application
+programming interface (API), including the recommended way of interfacing to the
+virtual keyboard via a "keyboard" button; which is OwnerDraw. Note that the
+virtual keyboard always stays on top, but never has the focus. The output of the
+keyboard is directed to the last control that had the focus. Note also that the
+virtual keyboard in Windows for Pen Computing version 1.0 is not affected by the
+filtering effects of the ALC values. Only recognized ink is affected; the
+keyboard does not involve inking, so it bypasses this step.
+
+Additional query words: 0 softlib ALCKEY.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

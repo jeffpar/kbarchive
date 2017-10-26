@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159684: Configuring Routing and Remote Access Dial-Up Interfaces | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159684: Configuring Routing and Remote Access Dial-Up Interfaces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159684/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159684/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159684/","publisher":null,"image":null,"headline":"Q159684: Configuring Routing and Remote Access Dial-Up Interfaces","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159684-configuring-routing-and-remote-access-dial-up-interfaces">Q159684: Configuring Routing and Remote Access Dial-Up Interfaces</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159684
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article will explain general configuration and usage of dial up links with
+Routing and Remote Access Service Update.
+
+MORE INFORMATION
+================
+
+When a Routing and Remote Access Service router connects to another Routing and
+Remote Access router as a demand-dial router, both routers will obtain an IP
+address for their local WAN interface from the distant router. To establish this
+two-way address assignment, the interfaces need to be configured correctly.
+
+When adding a demand-dial interface, the username, configured from the Interface
+Credentials screen, must match the name of the interface that you will be
+dialing into and be a valid RAS user account on that system or domain. If the
+username does not match the name of the interface, you will connect as a client
+and not as demand-dial. To verify the type of connection, click Active Ports and
+Connections in the tree view and look in the type column in the list view on
+both routers. The type will be client for normal PPP clients or demand-dial for
+Routing and Remote Access Service routers. The router's connections must show up
+as demand-dial for the routing protocols to run over the connection. The router
+being called also needs the appropriate interface credentials. The calling
+router will also try to validate the router being called. This mutual
+authentication can be turned on or off from the Security tab for the demand dial
+interface.
+
+For example, you have a router in Portland and a router in Seattle. Both sides
+want the ability to demand-dial the other location. You could make one interface
+named PORT_SEATTLE on both routers. The username would also be PORT_SEATTLE for
+both routers. The username could be PORT_SEATTLE of the Portland Domain and
+PORT_SEATTLE of the Seattle Domain, or it could be a valid dial-in account on
+the local routers. In other words, even though the username is the same, it is
+not actually the exact same account.
+
+Additional query words: prodnt 4.00 rras steelhead
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

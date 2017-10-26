@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277477: FP: Sample DHTML to Compare Two Passwords | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277477: FP: Sample DHTML to Compare Two Passwords" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277477/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277477/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277477/","publisher":null,"image":null,"headline":"Q277477: FP: Sample DHTML to Compare Two Passwords","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277477-fp-sample-dhtml-to-compare-two-passwords">Q277477: FP: Sample DHTML to Compare Two Passwords</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277477
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 2002 
+- Microsoft FrontPage 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft FrontPage, when you use the HTML password text box to input data on
+a form, the text is not displayed to the browser. For example, in Microsoft
+Internet Explorer, asterisks appear in place of each character that you type.
+This can make it impossible to verify if the information entered is correct.
+
+In addition, in FrontPage, the built-in form validation does not allow you to
+compare two text boxes to allow you to enter the same password twice to confirm
+a match.
+
+You can use Dynamic HTML (DHTML) to compare the information typed in two password
+text boxes before you submit a form. This article provides sample DHTML code
+that checks the values in two password fields, displays a message box if the
+fields do not match, and prevents you from submitting the form results if they
+don't match.
+
+NOTE: This article includes custom DHTML that may not be available in all
+browsers. For more information about compatibility with other browsers, click
+Microsoft FrontPage Help on the Help menu, type "compatibility" (without the
+quotation marks) in the Office Assistant or the Answer Wizard, and then click
+Search to view the topic.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: You may receive an error message if you copy and paste the examples
+directly from this article to FrontPage. The angle brackets ("<span class="nt">&lt;</span><span class="err">"</span> <span class="na">and</span> <span class="err">"</span><span class="nt">&gt;</span>")
+may appear as escaped HTML code ("<span class="ni">&amp;lt;</span>" and "<span class="ni">&amp;gt;</span>"). To work around this
+behavior, paste the script in a blank Notepad document, and then copy it from
+Notepad before you paste it into FrontPage.
+
+1. In FrontPage, open a Web on a Web server.
+
+2. Open a new page.
+
+3. Switch to HTML view and remove all the existing HTML.
+
+4. Type the following HTML code:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Password Test<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"javascript"</span><span class="nt">&gt;</span>
+  <span class="o">&lt;!--</span>
+  <span class="kd">function</span> <span class="nx">checkMe</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">myForm</span><span class="p">.</span><span class="nx">PWD1</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="nb">document</span><span class="p">.</span><span class="nx">myForm</span><span class="p">.</span><span class="nx">PWD2</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">myForm</span><span class="p">.</span><span class="nx">PWD</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">myForm</span><span class="p">.</span><span class="nx">PWD1</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">myForm</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">"Passwords do not match!"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="c1">//--&gt;</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>Please enter your user name and password.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">name=</span><span class="s">"myForm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"PWD"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Name<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"UID"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Password<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"PWD1"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Repeat Password<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"PWD2"</span> <span class="na">size=</span><span class="s">"20"</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">onClick=</span><span class="s">"checkMe()"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+5. Switch back to Normal View.
+
+  You should see a form with three text boxes.
+
+6. Right-click the form and then click Form Properties on the menu that appears.
+
+7. In the Form Properties dialog box, click Send to, and then click Options.
+
+8. Click the File Results tab. In the File Name box, type "_private/results.htm"
+  (without the quotation marks).
+
+9. Click the Saved Fields tab. In the Form fields to save box, type "UID"
+  (without the quotation marks) and "PWD" (without the quotation marks). Click
+  OK.
+
+10. Click OK again to quit the Form Properties dialog box.
+
+11. Save the page to your Web and preview it in your Web browser.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPage2000Search kbFrontPage2002Search kbZNotKeyword5
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

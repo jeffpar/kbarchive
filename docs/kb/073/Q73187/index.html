@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73187: Using Huge Memory Model and Huge Arrays in MASM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73187: Using Huge Memory Model and Huge Arrays in MASM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73187/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73187/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73187/","publisher":null,"image":null,"headline":"Q73187: Using Huge Memory Model and Huge Arrays in MASM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73187-using-huge-memory-model-and-huge-arrays-in-masm">Q73187: Using Huge Memory Model and Huge Arrays in MASM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q73187</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Macro</span> <span class="n">Assembler</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span><span class="m">5.0</span><span class="p">,</span><span class="m">5.10</span><span class="p">,</span><span class="m">5.10</span><span class="n">a</span><span class="p">,</span><span class="m">6.0</span><span class="p">,</span><span class="m">6.0</span><span class="n">a</span><span class="p">,</span><span class="m">6.0</span><span class="n">b</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">MAY</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Macro</span> <span class="n">Assembler</span> <span class="p">(</span><span class="n">MASM</span><span class="p">),</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">5.10</span><span class="p">,</span> <span class="m">5.10</span><span class="n">a</span><span class="p">,</span> <span class="m">6.0</span><span class="p">,</span> <span class="m">6.0</span><span class="n">a</span><span class="p">,</span> <span class="m">6.0</span><span class="n">b</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Macro</span> <span class="n">Assembler</span> <span class="p">(</span><span class="n">MASM</span><span class="p">)</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">5.1</span><span class="p">,</span> <span class="m">5.1</span><span class="n">a</span><span class="p">,</span> <span class="m">6.0</span><span class="p">,</span> <span class="m">6.0</span><span class="n">a</span><span class="p">,</span> <span class="k">and</span>
+<span class="m">6.0</span><span class="n">b</span> <span class="n">allow</span> <span class="n">you</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">huge</span> <span class="n">memory</span> <span class="k">model</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="s2">".model huge"</span>
+<span class="n">directive</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">this</span> <span class="n">is</span> <span class="n">essentially</span> <span class="n">the</span> <span class="n">same</span> <span class="k">as</span> <span class="n">specifying</span> <span class="n">the</span> <span class="n">large</span> <span class="n">memory</span>
+<span class="k">model</span> <span class="k">with</span> <span class="s2">".model large"</span><span class="p">.</span> <span class="n">The</span> <span class="n">actual</span> <span class="n">handling</span> <span class="k">of</span> <span class="n">huge</span> <span class="n">arrays</span> <span class="n">must</span> <span class="n">be</span> <span class="n">performed</span>
+<span class="n">by</span> <span class="n">the</span> <span class="n">programmer</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Huge</span> <span class="k">model</span> <span class="n">is</span> <span class="n">provided</span> <span class="n">for</span> <span class="n">code</span> <span class="n">documentation</span> <span class="k">and</span> <span class="n">consistency</span> <span class="k">with</span> <span class="n">high</span><span class="p">-</span><span class="n">level</span>
+<span class="n">languages</span><span class="p">.</span> <span class="n">The</span> <span class="n">symbol</span> <span class="p">@</span><span class="n">DataSize</span> <span class="n">is</span> <span class="n">defined</span> <span class="k">as</span> <span class="m">1</span> <span class="n">under</span> <span class="n">the</span> <span class="n">large</span> <span class="k">model</span> <span class="k">and</span> <span class="k">as</span> <span class="m">2</span>
+<span class="n">under</span> <span class="n">the</span> <span class="n">huge</span> <span class="k">model</span><span class="p">.</span> <span class="n">Also</span><span class="p">,</span> <span class="n">under</span> <span class="n">MASM</span> <span class="m">6.0</span><span class="p">,</span> <span class="p">@</span><span class="k">Model</span> <span class="n">is</span> <span class="n">defined</span> <span class="k">as</span> <span class="m">5</span> <span class="n">under</span> <span class="n">large</span>
+<span class="k">model</span> <span class="k">and</span> <span class="k">as</span> <span class="m">6</span> <span class="n">under</span> <span class="n">huge</span> <span class="k">model</span><span class="p">.</span>
+
+<span class="n">Pages</span> <span class="m">84</span> <span class="k">and</span> <span class="m">85</span> <span class="k">of</span> <span class="n">the</span> <span class="s2">"Microsoft Macro Assembler Programmer's Guide"</span> <span class="n">for</span> <span class="n">MASM</span>
+<span class="n">versions</span> <span class="m">5.0</span> <span class="k">and</span> <span class="m">5.1</span> <span class="n">describes</span> <span class="n">the</span> <span class="n">memory</span> <span class="n">models</span> <span class="n">that</span> <span class="n">are</span> <span class="n">used</span> <span class="n">by</span> <span class="n">Microsoft</span>
+<span class="n">high</span><span class="p">-</span><span class="n">level</span> <span class="n">languages</span><span class="p">.</span> <span class="n">Huge</span> <span class="k">model</span> <span class="n">is</span> <span class="n">described</span> <span class="k">as</span> <span class="n">a</span> <span class="k">model</span> <span class="n">where</span><span class="p">:</span>
+
+  <span class="n">Both</span> <span class="n">code</span> <span class="k">and</span> <span class="n">data</span> <span class="n">may</span> <span class="n">be</span> <span class="n">greater</span> <span class="n">than</span> <span class="m">64</span><span class="n">K</span><span class="p">.</span> <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">data</span> <span class="n">arrays</span> <span class="n">may</span> <span class="n">be</span>
+  <span class="n">larger</span> <span class="n">than</span> <span class="m">64</span><span class="n">K</span><span class="p">.</span> <span class="n">Both</span> <span class="n">code</span> <span class="k">and</span> <span class="n">data</span> <span class="n">are</span> <span class="n">far</span><span class="p">,</span> <span class="k">and</span> <span class="n">pointers</span> <span class="k">to</span> <span class="n">elements</span> <span class="n">within</span>
+  <span class="n">an</span> <span class="k">array</span> <span class="n">must</span> <span class="n">also</span> <span class="n">be</span> <span class="n">far</span><span class="p">.</span> <span class="n">Segments</span> <span class="n">are</span> <span class="n">the</span> <span class="n">same</span> <span class="n">for</span> <span class="n">large</span> <span class="k">and</span> <span class="n">huge</span> <span class="n">models</span><span class="p">.</span>
+
+<span class="n">Page</span> <span class="m">41</span> <span class="k">of</span> <span class="n">the</span> <span class="s2">"Microsoft Macro Assembler Programmer's Guide"</span> <span class="n">shipped</span> <span class="k">with</span> <span class="n">MASM</span>
+<span class="k">version</span> <span class="m">6.0</span> <span class="n">discusses</span> <span class="n">the</span> <span class="n">limitations</span> <span class="k">of</span> <span class="n">huge</span> <span class="k">model</span> <span class="k">in</span> <span class="n">assembly</span> <span class="n">language</span><span class="p">:</span>
+
+  <span class="n">Huge</span> <span class="k">model</span> <span class="nf">implies</span> <span class="n">individual</span> <span class="n">data</span> <span class="n">items</span> <span class="n">larger</span> <span class="n">than</span> <span class="n">a</span> <span class="n">single</span> <span class="n">segment</span><span class="p">,</span> <span class="n">but</span>
+  <span class="n">the</span> <span class="n">implementation</span> <span class="k">of</span> <span class="n">huge</span> <span class="n">data</span> <span class="n">items</span> <span class="n">must</span> <span class="n">be</span> <span class="n">coded</span> <span class="n">by</span> <span class="n">the</span> <span class="n">programmer</span><span class="p">.</span> <span class="n">Since</span>
+  <span class="n">the</span> <span class="n">assembler</span> <span class="n">provides</span> <span class="n">no</span> <span class="n">direct</span> <span class="n">support</span> <span class="n">for</span> <span class="n">this</span> <span class="n">feature</span><span class="p">,</span> <span class="n">huge</span> <span class="k">model</span> <span class="n">is</span>
+  <span class="n">essentially</span> <span class="n">the</span> <span class="n">same</span> <span class="k">as</span> <span class="n">large</span> <span class="k">model</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">two</span> <span class="n">sample</span> <span class="n">programs</span> <span class="n">below</span> <span class="n">demonstrate</span> <span class="n">the</span> <span class="n">creation</span> <span class="k">of</span> <span class="n">a</span> <span class="n">huge</span> <span class="k">array</span> <span class="k">and</span> <span class="n">how</span> <span class="k">to</span>
+<span class="n">handle</span> <span class="n">incrementing</span> <span class="n">a</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">the</span> <span class="k">array</span> <span class="n">under</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">and</span> <span class="n">OS</span><span class="p">/</span><span class="m">2.</span> <span class="n">The</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+<span class="n">program</span> <span class="n">allocates</span> <span class="n">a</span> <span class="n">huge</span> <span class="n">data</span> <span class="n">item</span> <span class="k">of</span> <span class="m">100000</span> <span class="n">bytes</span> <span class="k">and</span> <span class="n">loads</span> <span class="n">every</span> <span class="m">10000</span><span class="n">th</span>
+<span class="p">(</span><span class="n">ten</span><span class="p">-</span><span class="n">thousandth</span><span class="p">)</span> <span class="n">element</span> <span class="n">into</span> <span class="n">the</span> <span class="n">DL</span> <span class="n">register</span><span class="p">.</span> <span class="n">The</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">program</span> <span class="n">allocates</span> <span class="n">a</span> <span class="n">huge</span>
+<span class="n">data</span> <span class="n">item</span> <span class="k">and</span> <span class="n">sets</span> <span class="n">every</span> <span class="m">10000</span><span class="n">th</span> <span class="n">element</span> <span class="k">to</span> <span class="m">1.</span> <span class="n">Viewing</span> <span class="n">the</span> <span class="n">execution</span> <span class="k">in</span> <span class="n">CodeView</span>
+<span class="n">provides</span> <span class="n">the</span> <span class="n">best</span> <span class="n">understanding</span> <span class="k">of</span> <span class="n">the</span> <span class="n">process</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">are</span> <span class="n">the</span> <span class="n">basic</span> <span class="n">steps</span> <span class="n">used</span> <span class="k">in</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">programs</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span> <span class="n">Statically</span> <span class="n">declare</span> <span class="n">multiple</span><span class="p">,</span> <span class="n">adjacent</span> <span class="n">segments</span> <span class="n">using</span> <span class="n">full</span> <span class="n">segment</span>
+  <span class="k">declarations</span><span class="p">.</span> <span class="n">This</span> <span class="n">example</span> <span class="n">needs</span> <span class="n">one</span> <span class="n">full</span> <span class="m">64</span><span class="n">K</span> <span class="n">segment</span> <span class="k">and</span> <span class="n">another</span> <span class="n">segment</span> <span class="n">for</span>
+  <span class="n">the</span> <span class="n">remainder</span> <span class="k">of</span> <span class="n">the</span> <span class="m">10000</span> <span class="n">bytes</span><span class="p">.</span> <span class="n">The</span> <span class="n">huge</span> <span class="k">array</span> <span class="n">has</span> <span class="n">been</span> <span class="n">declared</span> <span class="k">in</span> <span class="n">two</span>
+  <span class="n">portions</span><span class="p">.</span> <span class="n">These</span> <span class="n">portions</span> <span class="n">can</span> <span class="n">be</span> <span class="n">treated</span> <span class="k">as</span> <span class="n">a</span> <span class="n">single</span> <span class="k">array</span><span class="p">.</span> <span class="p">(</span><span class="k">To</span> <span class="k">do</span> <span class="k">dynamic</span>
+  <span class="n">allocation</span> <span class="n">instead</span><span class="p">,</span> <span class="n">use</span> <span class="n">int</span> <span class="m">21</span><span class="n">h</span> <span class="k">function</span> <span class="m">48</span><span class="n">h</span> <span class="k">to</span> <span class="n">request</span> <span class="n">a</span> <span class="n">block</span> <span class="n">the</span> <span class="n">desired</span>
+  <span class="n">size</span> <span class="k">and</span> <span class="n">receive</span> <span class="n">a</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">beginning</span> <span class="k">of</span> <span class="n">the</span> <span class="n">allocated</span> <span class="n">area</span><span class="p">).</span>
+
+  <span class="n">OS</span><span class="p">/</span><span class="m">2</span><span class="p">:</span> <span class="n">Use</span> <span class="n">the</span> <span class="k">function</span> <span class="n">DosAllocHuge</span><span class="p">()</span> <span class="k">to</span> <span class="n">dynamically</span> <span class="n">allocate</span> <span class="n">a</span> <span class="n">huge</span> <span class="k">array</span><span class="p">.</span>
+  <span class="p">(</span><span class="k">To</span> <span class="k">do</span> <span class="n">static</span> <span class="n">allocation</span> <span class="n">instead</span><span class="p">,</span> <span class="n">use</span> <span class="n">multiple</span><span class="p">,</span> <span class="n">adjacent</span> <span class="n">segments</span> <span class="n">using</span> <span class="n">full</span>
+  <span class="n">segment</span> <span class="k">declarations</span> <span class="k">as</span> <span class="k">in</span> <span class="n">the</span> <span class="n">DOS</span> <span class="n">example</span><span class="p">).</span>
+
+<span class="m">2.</span> <span class="n">The</span> <span class="n">segment</span> <span class="k">and</span> <span class="n">offset</span> <span class="k">of</span> <span class="n">the</span> <span class="n">first</span> <span class="n">element</span> <span class="n">are</span> <span class="n">placed</span> <span class="k">in</span> <span class="n">ES</span> <span class="k">and</span> <span class="n">BX</span><span class="p">,</span>
+  <span class="n">respectively</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">offset</span> <span class="n">is</span> <span class="n">incremented</span> <span class="k">to</span> <span class="n">advance</span> <span class="k">to</span> <span class="n">another</span> <span class="n">element</span><span class="p">,</span> <span class="n">the</span> <span class="n">program</span>
+  <span class="n">must</span> <span class="n">handle</span> <span class="n">the</span> <span class="k">case</span> <span class="n">where</span> <span class="n">it</span> <span class="n">wraps</span> <span class="n">at</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">a</span> <span class="n">segment</span><span class="p">.</span> <span class="n">That</span> <span class="n">is</span><span class="p">,</span> <span class="n">when</span>
+  <span class="n">the</span> <span class="n">offset</span> <span class="n">value</span> <span class="n">exceeds</span> <span class="n">FFFFh</span><span class="p">.</span>
+
+  <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span> <span class="n">The</span> <span class="n">segment</span> <span class="n">must</span> <span class="n">be</span> <span class="n">incremented</span> <span class="n">by</span> <span class="m">4096</span> <span class="n">when</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span> <span class="n">offset</span>
+  <span class="n">sets</span> <span class="n">the</span> <span class="n">carry</span> <span class="n">flag</span><span class="p">.</span> <span class="n">The</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">segment</span> <span class="n">is</span> <span class="n">shifted</span> <span class="m">4</span> <span class="n">bits</span> <span class="k">and</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">offset</span> <span class="k">to</span> <span class="n">produce</span> <span class="n">a</span> <span class="m">20</span><span class="p">-</span><span class="n">bit</span> <span class="n">address</span><span class="p">.</span> <span class="n">The</span> <span class="n">maximum</span> <span class="n">value</span> <span class="n">that</span> <span class="n">the</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span>
+  <span class="n">offset</span> <span class="n">can</span> <span class="n">hold</span> <span class="n">is</span> <span class="n">FFFFh</span><span class="p">.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">offset</span> <span class="n">wraps</span><span class="p">,</span> <span class="n">the</span> <span class="n">carry</span> <span class="n">should</span> <span class="n">be</span> <span class="n">added</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">bit</span> <span class="k">of</span> <span class="n">the</span> <span class="n">segment</span> <span class="n">that</span> <span class="n">would</span> <span class="n">line</span> <span class="n">up</span> <span class="k">with</span> <span class="n">the</span> <span class="m">17</span><span class="n">th</span> <span class="n">bit</span> <span class="k">of</span> <span class="n">the</span> <span class="nb">true</span>
+  <span class="m">20</span><span class="p">-</span><span class="n">bit</span> <span class="n">address</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">bit</span> <span class="m">12</span> <span class="k">of</span> <span class="n">the</span> <span class="n">segment</span><span class="p">.</span> <span class="n">Since</span> <span class="m">2</span> <span class="k">to</span> <span class="n">the</span> <span class="n">power</span> <span class="k">of</span> <span class="m">12</span> <span class="n">is</span>
+  <span class="m">4096</span><span class="p">,</span> <span class="n">you</span> <span class="n">add</span> <span class="m">4096</span> <span class="k">to</span> <span class="n">the</span> <span class="n">segment</span> <span class="n">when</span> <span class="n">the</span> <span class="n">offset</span> <span class="n">wraps</span><span class="p">.</span>
+
+  <span class="n">OS</span><span class="p">/</span><span class="m">2</span><span class="p">:</span> <span class="n">The</span> <span class="n">segment</span> <span class="n">register</span> <span class="n">is</span> <span class="n">actually</span> <span class="n">a</span> <span class="n">selector</span> <span class="n">into</span> <span class="n">a</span> <span class="n">descriptor</span> <span class="n">table</span><span class="p">.</span> <span class="n">The</span>
+  <span class="n">descriptor</span> <span class="n">contains</span> <span class="n">segment</span> <span class="n">access</span> <span class="n">rights</span><span class="p">,</span> <span class="n">the</span> <span class="n">segment</span> <span class="n">base</span> <span class="n">address</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span>
+  <span class="n">segment</span> <span class="n">limit</span><span class="p">.</span> <span class="n">The</span> <span class="n">physical</span> <span class="n">address</span> <span class="n">is</span> <span class="n">computed</span> <span class="k">from</span> <span class="n">the</span> <span class="n">segment</span> <span class="n">base</span> <span class="n">address</span>
+  <span class="k">and</span> <span class="n">the</span> <span class="n">offset</span><span class="p">.</span> <span class="n">Since</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="n">actual</span> <span class="n">address</span><span class="p">,</span> <span class="n">you</span>
+  <span class="n">cannot</span> <span class="n">modify</span> <span class="n">bit</span> <span class="m">17</span> <span class="n">when</span> <span class="n">the</span> <span class="n">offset</span> <span class="n">overflows</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">provides</span> <span class="n">a</span>
+  <span class="n">mechanism</span> <span class="k">to</span> <span class="n">get</span> <span class="n">a</span> <span class="n">new</span> <span class="n">selector</span> <span class="k">to</span> <span class="n">the</span> <span class="k">next</span> <span class="n">segment</span><span class="p">:</span> <span class="n">the</span> <span class="n">DosGetHugeShift</span><span class="p">()</span>
+  <span class="n">API</span> <span class="k">function</span><span class="p">.</span> <span class="n">You</span> <span class="n">shift</span> <span class="n">the</span> <span class="n">number</span> <span class="m">1</span> <span class="n">left</span> <span class="n">by</span> <span class="n">the</span> <span class="n">value</span> <span class="n">returned</span> <span class="k">from</span>
+  <span class="n">DosGetHugeShift</span><span class="p">()</span> <span class="k">in</span> <span class="n">order</span> <span class="k">to</span> <span class="n">get</span> <span class="n">the</span> <span class="n">amount</span> <span class="k">of</span> <span class="n">the</span> <span class="n">increment</span> <span class="n">for</span> <span class="n">subsequent</span>
+  <span class="n">selectors</span><span class="p">.</span> <span class="n">That</span> <span class="n">increment</span> <span class="n">amount</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">original</span> <span class="n">selector</span> <span class="n">value</span> <span class="n">will</span>
+  <span class="n">give</span> <span class="n">you</span> <span class="n">the</span> <span class="n">selector</span> <span class="n">for</span> <span class="n">the</span> <span class="n">segment</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">rest</span> <span class="k">of</span> <span class="n">the</span> <span class="k">array</span><span class="p">.</span>
+  <span class="p">(</span><span class="n">For</span> <span class="n">further</span> <span class="n">details</span><span class="p">,</span> <span class="n">see</span> <span class="n">page</span> <span class="m">128</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Press</span> <span class="n">book</span> <span class="s2">"Inside OS/2"</span>
+  <span class="n">by</span> <span class="n">Gordon</span> <span class="n">Letwin</span><span class="p">.)</span>
+
+<span class="n">Sample</span> <span class="n">Code</span> <span class="p">(</span><span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">)</span>
+<span class="p">--------------------</span>
+
+  <span class="p">;</span> <span class="n">Huge</span> <span class="k">array</span> <span class="n">example</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+  <span class="p">;</span> <span class="n">Data</span> <span class="n">is</span> <span class="n">declared</span> <span class="n">statically</span><span class="p">;</span> <span class="n">every</span> <span class="m">10000</span><span class="n">th</span> <span class="n">element</span> <span class="n">is</span> <span class="n">loaded</span> <span class="n">into</span> <span class="n">dl</span>
+
+      <span class="p">.</span><span class="k">model</span> <span class="n">huge</span>
+      <span class="p">.</span><span class="n">stack</span>
+
+  <span class="n">huge_data1</span> <span class="n">segment</span> <span class="n">para</span> <span class="k">public</span> <span class="s1">'fardata'</span>  <span class="p">;</span> <span class="n">segment</span> <span class="n">size</span> <span class="n">is</span> <span class="m">64</span><span class="n">K</span>
+      <span class="n">huge_array1</span> <span class="n">db</span>  <span class="m">65535</span> <span class="n">dup</span><span class="p">(</span> <span class="m">1</span> <span class="p">)</span>        <span class="p">;</span> <span class="n">can</span><span class="s1">'t dup 65536 elements
+                  db  1     dup( 1 )        ;   since max word is 65535
+  huge_data1 ends
+
+  huge_data2 segment para public '</span><span class="n">fardata</span><span class="s1">'
+      huge_array2 db  34464 dup( 2 )        ; remainder of 100000 bytes
+  huge_data2 ends
+
+      .code
+
+  Start:
+      mov ax, huge_data1
+      mov es, ax
+      mov bx, offset huge_array1        ; start at element 1
+      mov cx, 10                        ; do this 10 times
+      sub dx, dx
+  again:
+      mov dl, es:[bx]           ; es:[bx] is the array element
+      add bx, 10000             ; skip 10000 elements
+      jnc testcx                ; test for wrap of offset
+      mov ax, es                ; add 4096 to seg if offset wrapped
+      add ax, 4096
+      mov es, ax
+  testcx:
+      loop again
+
+      mov ax, 4c00h             ; terminate program
+      int 21h
+
+      end Start
+
+Sample Results (MS-DOS)
+-----------------------
+
+The following is a summary of execution (as viewed from CodeView):
+
+  CX   ES:[BX]     ADDRESS
+  =========================
+  A       1       67E8:0000    ; values from huge_array1
+  9       1       67E8:2710    ;
+  8       1       67E8:4E20    ;        .
+  7       1       67E8:7530    ;        .
+  6       1       67E8:9C40    ;        .
+  5       1       67E8:C350    ;
+  4       1       67E8:EA60    ;
+  3       2       77E8:1170    ; values from huge_array2
+  2       2       77E8:3880    ;        .
+  1       2       77E8:5F90    ;        .
+
+Sample Code (OS\2)
+------------------
+
+  ; Huge array example for OS/2
+  ; Data is declared dynamically; every 10000th element is set to 1
+  ; Elements of the code are specific to MASM 6.0 for readability.
+
+      .model huge, pascal, OS_OS2
+      .286
+
+  INCL_BASE  equ    1              ; include kernel, keyboard, video
+                                   ;   and mouse definitions
+  include    os2.inc
+  includelib os2.lib
+
+      .stack
+      .data
+      i           word     1
+      selector    SEL      ?       ; SEL is defined in include file
+      ShiftCount  ushort   ?
+      .code
+      .startup
+
+      invoke DosAllocHuge,         ; call DosAllocHuge
+             1,                    ;   # of full segments
+             34464,                ;   # of bytes in last segment
+             addr selector,        ;   ptr to var for allocated selector
+             0,                    ;   max segments to be reallocated
+             SEG_NONSHARED         ;   sharable/discardable flag
+      invoke DosGetHugeShift,      ; call DosGetHugeShift
+             addr ShiftCount       ;   ptr to var for shift count
+      mov cx, ShiftCount
+      shl i, cl                    ; i contains value to inc selector
+      mov ax, selector
+      mov es, ax
+      mov bx, 0                    ; start at element 1
+      mov cx, 1
+      sub dx, dx
+      mov dl, 1
+
+      .while cx &lt;= 10              ; set every 10000th element to 1
+          mov es:[bx], dl          ; es:[bx] is the array element
+          add bx, 10000            ; skip 10000 elements
+          inc cx
+          jnc testcx               ; test for wrap of offset
+          mov ax, es
+          add ax, i                ; add i to selector
+          mov es, ax
+      testcx:
+      .endw
+  .exit 0
+  end
+
+Sample Results (OS/2)
+---------------------
+
+The following is a summary of execution (as viewed from CodeView):
+
+  CX   ES:[BX]     ADDRESS
+  =========================
+  1       1       0147:0000    ; Values from 1st segment
+  2       1       0147:2710    ;
+  3       1       0147:4E20    ;           .
+  4       1       0147:7530    ;           .
+  5       1       0147:9C40    ;           .
+  6       1       0147:C350    ;
+  7       1       0147:EA60    ;
+  8       1       0167:1170    ; Value from 2nd segment
+  9       1       0167:3880    ;           .
+  A       1       0167:5F90    ;           .
+
+Additional query words: kbinf 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM500 kbMASM600a kbMASM600b
+Version           : MS-DOS:5.0,5.10,5.10a,6.0,6.0a,6.0b
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

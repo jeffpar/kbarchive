@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113238: WFWG Err Msg: Error 58: The Network Has Responded Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113238: WFWG Err Msg: Error 58: The Network Has Responded Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113238/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113238/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113238/","publisher":null,"image":null,"headline":"Q113238: WFWG Err Msg: Error 58: The Network Has Responded Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113238-wfwg-err-msg-error-58-the-network-has-responded-incorrectly">Q113238: WFWG Err Msg: Error 58: The Network Has Responded Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113238
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-SEP-1999
+
+3.11
+
+WINDOWS
+
+kbnetwork kberrmsg kbenv
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using NET START NETBEUI with Microsoft Windows for Workgroups 3.11 causes the
+computer to stop responding (hang) while loading Windows for Workgroups or
+causes the following error message when Windows loads:
+
+  Error 58: The network has responded incorrectly.
+
+CAUSE
+=====
+
+This error message occurs if you run NET START NETBEUI before loading Windows
+for Workgroups with the "IPX/SPX Compatible Transport with NetBIOS" and NetBEUI
+protocols installed.
+
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+- Use NET START without the NetBEUI parameter.
+
+  -or-
+
+- Remove the "IPX/SPX Compatible Transport with NetBIOS" protocol.
+
+  -or-
+
+- Type "net stop netbeui" (without the quotation marks) before loading Windows
+  for Workgroups. (This unloads the real-mode NetBEUI protocol.)
+
+MORE INFORMATION
+================
+
+Some NetBIOS applications require the use of NET START NETBEUI to access NetBIOS
+under Windows for Workgroups 3.1. Most NetBIOS applications do not require this
+under Windows for Workgroups 3.11.
+
+For example, Delrina WinFax Pro 3.0 for Networks requires NET START NETBEUI in
+order for its real-mode drivers to load. Since NET START NETBEUI disables file
+and print sharing in Windows for Workgroups, and can cause the above error
+message, run NET START NETBEUI, load the WinFax real-mode drivers, and then run
+NET STOP NETBEUI before loading Windows for Workgroups.
+
+KBCategory: kbnetwork kberrmsg kbenv
+KBSubcategory: wfw wfwg
+
+Additional query words: 3.11 hangs crash hung
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

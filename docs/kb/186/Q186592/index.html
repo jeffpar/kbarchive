@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186592: Terminal Server Commands: QUERY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186592: Terminal Server Commands: QUERY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186592/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186592/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186592/","publisher":null,"image":null,"headline":"Q186592: Terminal Server Commands: QUERY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186592-terminal-server-commands-query">Q186592: Terminal Server Commands: QUERY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186592
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+QUERY replaces QUSER, QPROCESS, QOBJECT, QAPPSERV, QWINSTA from Citrix
+Winframe.
+
+The query utilities are used to display current information about the system such
+as the current allocation of resources and system status. The query command can
+invoke any one of the query utilities. The command line format is:
+
+query [appservers | object | process | session | user] [/?]
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Syntax
+------
+
+Query Appservers:
+
+  Displays the available application servers on the network.
+
+Query appservers [servername] [/domain:domainname] [/address] [/continue] [/?]
+
+Parameters
+----------
+
+servername
+
+  Identifies an application server.
+
+/domain:domainname
+
+  Displays application server information for the specified domainname.
+  Defaults to the current domain.
+
+/address
+
+  Displays the network and node addresses for each server.
+
+/continue
+
+  Pauses after each screen of information until a key is pressed.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Query Appservers -- Additional Notes
+------------------------------------
+
+Query Appservers searches the network for all attached application servers and
+returns the following information:
+
+The servername. The network and node address (if the /address option is used).
+
+The following is an example for query appservers:
+
+  C:\&gt;query appserversAPPLICATION SERVERfast_eddieengineeringaccess_1
+  *brand_x
+
+The asterisk (*) indicates the current servername. APPLICATION SERVER identifies
+the servername.
+
+Query Appservers -- Examples
+----------------------------
+
+To display information about all application servers found on the network, type:
+
+  "query appservers" (without the quotation marks)
+
+To display information about the fasteddie application server, type:
+
+  "query appservers fasteddie" (without the quotation marks)
+
+To display information about all application servers in domain SYSTEM, type:
+
+  "query appservers /domain:system" (without the quotation marks)
+
+To display the network and node address for the NABBY application server, type:
+
+  "query appservers NABBY /address" (without the quotation marks)
+
+Syntax
+------
+
+Query Object:
+
+  Displays information about the system's Object Manager Namespace.
+
+query object [Objectname] [/device] [/?]
+
+Parameters
+----------
+
+Objectname
+
+  Identifies the object type to query.
+
+/device
+
+  Displays devices in the \DosDevices namespace in a modified format.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Query Object -- Examples
+------------------------
+
+To display information about the objects that are in the \Driver namespace,
+type:
+
+  "query object \Driver" (without the quotation marks)
+
+To display information about the objects that are in the \DosDevices namespace in
+a modified format, type:
+
+  "query object /device" (without the quotation marks)
+
+Syntax
+------
+
+Query Process:
+
+  Displays information about processes.
+
+query process [processID] [/server:servername] [/system] [/?]
+query process[username] [/server:servername] [/system] [/?]
+query process[sessionname] [/server:servername] [/system] [/?]
+query process[/ID:sessionID] [/server:servername] [/system] [/?]
+query process[programname] [/server:servername] [/system] [/?]
+query process[*] [/system] [/server:servername] [/?]
+
+Parameters
+----------
+
+processID
+
+  Identifies a process.
+
+username
+
+  Identifies the name of the user whose processes you want to display.
+
+sessionname
+
+  Identifies the name of the session. The name was created by the system
+  administrator when the session was configured.
+
+/ID:sessionID
+
+  Identifies the session whose processes you want to display.
+
+programname
+
+  Identifies the name of the program whose processes you want to display. The
+  .exe extension is required.
+
+/server:servername
+
+  The Terminal Server to be queried. Otherwise, the current Terminal Server is
+  used.
+
+/system
+
+  Displays process information for system processes.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Security Restrictions
+---------------------
+
+Query process is used to query only those processes belonging to the current
+user, unless the current user has sufficient security classification to query
+processes belonging to other users. Administrators have full access to all query
+process functions.
+
+Query Process -- Additional Notes
+---------------------------------
+
+If no process or session is specified, query process queries all processes
+belonging to the current user. If a session is specified, it must identify an
+active session. You can use wildcards to identify the process. If a single
+wildcard is present (*), all processes in the system are identified.
+
+Query process returns the following information:
+
+ The user that owns the process.
+ The session that owns the process.
+ The ID of the session.
+ The process name.
+ The process state.
+ The ID of the process.
+
+The following is an example for query process:
+
+  C:&gt;query process
+  USERNAME SESSION ID STATE PID
+  &gt;edj rdp-tcp#002 0 wait 353 progman.exe
+  &gt;edj rdp-tcp#002 0 wait 49 cmd.exe
+  &gt;edj rdp-tcp#002 0 wait 139 query.exe
+  &gt;edj rdp-tcp#002 0 run 375 qprocess.exe
+
+The &gt; character identifies the current user. Session identifies the session
+where the user is logged on the system. ID specifies the ID of the session.
+
+State indicates the state of the process. PID identifies the processID of the
+program that follows.
+
+Query Process -- Examples
+-------------------------
+
+To display information about process 8, type:
+
+  "query process 8" (without the quotation marks)
+
+To display information about all processes for user EDDIEJ, type:
+
+  "query process EDDIEJ" (without the quotation marks)
+
+To display information about all processes in session rdp-tcp#002, type:
+
+  query process rdp-tcp#002
+
+To display information about all processes in session 4, type:
+
+  query process /id:4
+
+To display information about the process Netclient.exe, type:
+
+  "query process Netclient.exe" (without the quotation marks)
+
+To display information about all processes in the system, type:
+
+  "query process *" (without the quotation marks)
+
+To displays information about all processes on the system, including system
+processes, type:
+
+  "query process * /system" (without the quotation marks)
+
+Syntax
+------
+
+Query Session:
+
+  Displays information about sessions.
+
+Query session [sessionname] [/server:servername] [/mode] [/flow] [/connect] [/?]
+Query session[username] [/server:servername] [/mode] [/flow] [/connect] [/?]
+Query session[sessionID] [/server:servername] [/mode] [/flow] [/connect] [/?]
+
+Parameters
+----------
+
+sessionname
+
+  Identifies the name of the session. The name was created by the system
+  administrator when the session was configured.
+
+username
+
+  Identifies the user of the session.
+
+sessionID
+
+  Specifies the ID of the session.
+
+/server:servername
+
+  The Terminal Server to be queried. Otherwise, the current Terminal Server is
+  used.
+
+/mode (session mode)
+
+  Displays the current line settings.
+
+/flow (flow control)
+
+  Displays the current flow control settings.
+
+/connect (connect settings)
+
+  Displays the current connect settings.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Security Restrictions
+---------------------
+
+A user can always query the session where the user is currently logged on. The
+user must have Query Information access permission to query other sessions.
+
+Query Session -- Additional Notes
+---------------------------------
+
+If no session is specified, query session displays all active sessions in the
+system. Otherwise, the session must identify an active session.
+
+The following is an example for query session:
+
+  C:&gt;query session
+  SESSION USERNAME ID STATE TYPE DEVICE
+  &gt;console administrator 0 active
+  rdp-tcp#003 eddiej 1 active
+  rdp-tcp 2 listen
+  rdp-tcp 3 listen
+  rdp-tcp 4 idle 5 idle
+
+The &gt; character identifies the current session. Session specifies the session
+name. Username identifies the name of the user connected at the session, if any.
+ID identifies the ID of the session connected to the system, if any. State
+provides information on the current state of the session and can be any of the
+following:
+
+  Active. The session is connected and active.
+  Conn. The session is connected. No user is logged on.
+  ConnQ. The session is in the process of connecting. If this state
+       continues, it indicates a problem with the connection.
+  Shadow. The session is shadowing another session.
+  Listen. The session is ready to accept a client connection.
+  Disc. The session is disconnected.
+  Idle. The session is initialized.
+  Down. The session is down, indicating the session failed to initialize correctly.
+  Init. The session is initializing.
+
+Type indicates the session type. Device is the device name assigned to the
+session (not present for the console or network-connected sessions). The comment
+following the session information is from the profile.
+
+A session initially configured as disabled does not show up in the query session
+list until it is enabled.
+
+Query Session -- Examples
+-------------------------
+
+To display information about all active sessions on server ACCTG, type:
+
+  "query session /server:ACCTG" (without the quotation marks)
+
+To display information about session MODEM02, if it is active, type:
+
+  "query session MODEM02" (without the quotation marks)
+
+Syntax
+------
+
+Query User:
+
+  Displays information about users who are logged on the system.
+
+query user [username] [/server:servername] [/?]
+query user[sessionname] [/server:servername] [/?]
+query user[sessionID] [/server:servername] [/?]
+
+Parameters
+----------
+
+username
+
+  Identifies the user.
+
+sessionname
+
+  Identifies the name of the session. The name was created by the system
+  administrator when the session was configured.
+
+sessionID
+
+  Specifies the ID of the session.
+
+/server:servername
+
+  The Terminal Server to be queried. Otherwise, the current Terminal Server is
+  used.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Security Restrictions
+---------------------
+
+A user must have Query Information access permission to query other users.
+
+Query User -- Additional Notes
+------------------------------
+
+Displays information about users who are logged on the system. Users who are not
+logged on the system are not included.
+
+If no user or session is specified, query user displays all users who are logged
+on the system. The session must identify an active session.
+
+Query user returns the following information:
+
+  The name of the user
+  The name of the session
+  The ID that identifies the session
+  The state of the session (active or disconnected)
+  The idle time-the time since a keystroke or mouse movement was received
+   at the session
+  The logon time, when the user logged on the system
+
+The following is an example for query user:
+
+  C:\&gt;query user
+  USERNAME SESSION ID STATE IDLE TIME LOGON TIME
+  admin console 0 active 55 10/07/94 17:30
+  &gt;edj rdp-tcp#004 4 active 10/10/94 09:03
+
+The &gt; character indicates the current user. Username identifies the user.
+Session identifies the session where the user is logged on the system. ID
+identifies the session. Idle time is a measure of interaction between the user
+and the system by indicating the time in minutes since the last keystroke or
+mouse movement. A dot (.) indicates that the time is less than a minute. Logon
+time is the time when the user logged on the system.
+
+Query User -- Examples
+----------------------
+
+To display information about all users logged on the system, type:
+
+  "query user" (without the quotation marks)
+
+To display information about the user EDJ on server WF06, type:
+
+  "query user EDJ /server:WF06" (without the quotation marks)
+
+To display information about the user at session rdp-tcp#001, type:
+
+  "query user rdp-tcp#001" (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198880: FIX: Cannot Simultaneously Set DTPicker’s MinDate And MaxDate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198880: FIX: Cannot Simultaneously Set DTPicker’s MinDate And MaxDate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198880/","publisher":null,"image":null,"headline":"Q198880: FIX: Cannot Simultaneously Set DTPicker’s MinDate And MaxDate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198880-fix-cannot-simultaneously-set-dtpickers-mindate-and-maxdate">Q198880: FIX: Cannot Simultaneously Set DTPicker’s MinDate And MaxDate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198880
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbAPI kbCtrl kbGrpDSUser kbVBp kbVBp600bug kbGrpDSVB kbVS600sp2 kbVS600SP
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you programmatically set the DateTimePicker's MinDate property, any current
+setting for the MaxDate property is lost. Conversely, setting the MaxDate
+property causes a loss of the MinDate's setting.
+
+CAUSE
+=====
+
+When an attempt is made to set either the MinDate or MaxDate properties, a
+SendMessage API call is made to send the "DTM_SETRANGE" message to the control
+to inform it of the new date range settings. This message can be used to set the
+date range in one of three ways:
+
+- Establish a minimum date with no maximum date.
+
+- Establish a maximum date with no minimum date.
+
+- Establish both a minimum and maximum date.
+
+The MinDate and MaxDate properties that are exposed to the Visual Basic
+programmer correspond directly to the first two methods. The DateTimePicker
+control does not offer any property that directly corresponds to the third
+method, thus leaving no way to set both a MinDate and a MaxDate at the same time
+through the control's object model.
+
+This problem does not affect setting the MinDate and MaxDate properties at design
+time.
+
+RESOLUTION
+==========
+
+Because there is no exposed property or method for setting MinDate and MaxDate
+at the same time, a direct call to the SendMessage API must be made to manually
+send the "DTM_SETRANGE" message with the appropriate information.
+
+The parameters for this message consist of setting wParam to represent the
+part(s) of the date range you are setting; "GDTR_MIN" for the minimum date,
+"GDTR_MAX" for the maximum date, or the combination of both constants for
+setting the minimum and maximum dates at the same time. The lParam must be set
+to point to a two element array of SYSTEMTIME structures. The first element is
+for specifying the minimum date information and the second element is for the
+maximum date information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. From the Project menu, choose References, select "Microsoft Windows Common
+  Controls - 2 6.0", and then click OK.
+
+3. Add a DTPicker control to Form1.
+
+4. Add five command buttons to Form1.
+
+5. Paste the following code into Form1's Code window:
+
+     Option Explicit
+
+     Private Sub Command1_Click()
+        ' Set DTPicker MinDate through normal means.
+        Me.DTPicker1.MinDate = "1/10/99"
+     End Sub
+
+     Private Sub Command2_Click()
+        'Set DTPicker MaxDate through normal means.
+        Me.DTPicker1.MaxDate = "1/17/99"
+     End Sub
+
+     Private Sub Command3_Click()
+        Dim TimeArray(1) As SYSTEMTIME
+        Dim result As Long
+
+        ' Define first element of SYSTEMTIME Array to be minimum date.
+        TimeArray(0).wDay = 10
+        TimeArray(0).wMonth = 1
+        TimeArray(0).wYear = 1999
+
+        ' Call API to send message to control to set MinDate.
+        result = SendMessage(Me.DTPicker1.hwnd, DTM_SETRANGE, _
+           GDTR_MIN, TimeArray(0))
+     End Sub
+
+     Private Sub Command4_Click()
+        Dim TimeArray(1) As SYSTEMTIME
+        Dim result As Long
+
+        ' Define second element of SYSTEMTIME Array to be maximum date.
+        TimeArray(1).wDay = 17
+        TimeArray(1).wMonth = 1
+        TimeArray(1).wYear = 1999
+
+        ' Call API to send message to control to set MaxDate.
+        result = SendMessage(Me.DTPicker1.hwnd, DTM_SETRANGE, _
+           GDTR_MAX, TimeArray(0))
+     End Sub
+
+     Private Sub Command5_Click()
+        Dim TimeArray(1) As SYSTEMTIME
+        Dim result As Long
+
+        ' Define first element of SYSTEMTIME Array to be minimum date.
+        TimeArray(0).wDay = 10
+        TimeArray(0).wMonth = 1
+        TimeArray(0).wYear = 1999
+
+        ' Define second element of SYSTEMTIME Array to be maximum date.
+        TimeArray(1).wDay = 17
+        TimeArray(1).wMonth = 1
+        TimeArray(1).wYear = 1999
+
+        ' Call API to send message to control to set MinDate and MaxDate.
+        result = SendMessage(Me.DTPicker1.hwnd, DTM_SETRANGE, _
+           GDTR_MIN + GDTR_MAX, TimeArray(0))
+     End Sub
+
+     Private Sub Form_Load()
+        Me.Command1.Caption = "Set DTPicker MinDate Normally"
+        Me.Command2.Caption = "Set DTPicker MaxDate Normally"
+        Me.Command3.Caption = "Set DTPicker MinDate Via API"
+        Me.Command4.Caption = "Set DTPicker MaxDate Via API"
+        Me.Command5.Caption = "Set DTPicker Min and MaxDate Via API"
+     End Sub
+
+6. From the Project menu, choose Add Module and add a standard Module to the
+  project.
+
+7. Paste the following code into the module:
+
+        Option Explicit
+
+        Public Type SYSTEMTIME
+           wYear As Integer
+           wMonth As Integer
+           wDayOfWeek As Integer
+           wDay As Integer
+           wHour As Integer
+           wMinute As Integer
+           wSecond As Integer
+           wMilliseconds As Integer
+        End Type
+
+        Public Declare Function SendMessage Lib "user32" Alias _
+           "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, _
+           ByVal wParam As Long, lParam As Any) As Long
+
+        Public Const DTM_SETRANGE = &amp;H1004&amp;
+        Public Const GDTR_MIN = 1
+        Public Const GDTR_MAX = 2
+
+8. Save and run the sample.
+
+9. Try each button (based on their captions) and attempt to select a date
+  outside the specified range.
+
+When setting a minimum date, the command buttons use the date "1/10/99" and
+"1/17/99" is used when setting a maximum date.
+
+The first two command buttons allow you to set either the MinDate or MaxDate but
+not both concurrently. The third and fourth buttons perform the same as the
+first two but they demonstrate how to set the MinDate or MaxDate using the API
+instead of the properties. The last command button demonstrates using the API to
+set both the MinDate and MaxDate at the same time.
+
+Additional query words: Minimum Maximum Range kbcode
+
+======================================================================
+Keywords          : kbservicepack kbAPI kbCtrl kbGrpDSUser kbVBp kbVBp600bug kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

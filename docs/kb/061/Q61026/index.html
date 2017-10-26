@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61026: WD97: Unable to Remove Gap Between Heading and Following Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61026: WD97: Unable to Remove Gap Between Heading and Following Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61026/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61026/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61026/","publisher":null,"image":null,"headline":"Q61026: WD97: Unable to Remove Gap Between Heading and Following Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61026-wd97-unable-to-remove-gap-between-heading-and-following-text">Q61026: WD97: Unable to Remove Gap Between Heading and Following Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61026
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you type a heading in a very large point size, a large space is left under
+the letters for descending characters. Any text on subsequent lines is forced
+down below this descender space, regardless of the line spacing you choose.
+
+If you set the line spacing to an absolute number by typing a negative number in
+the Spacing box of the Paragraph dialog box, the space that is limited is on the
+top of the text, not the space left for descenders of that text.
+
+WORKAROUND
+==========
+
+To solve this problem, use the Table feature. By using a table to reduce the
+size of the descender area, you can place text immediately under characters with
+large point sizes.
+
+To reduce the size of the descender area, follow these steps
+
+1. On the Table menu, click Insert Table to create a one-column table with two
+  rows.
+
+2. Place the large heading in the first row and the smaller type in the second
+  row.
+
+3. Click in the first cell and click Cell Height And Width on the Table menu.
+
+4. Click to select the Row tab and set the Height Of Row to Exactly.
+
+5. In the At box, type the number of the font size in the selected row, and then
+  click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+When you enter information into the table, the cells resemble the following:
+
+  ------------------------------
+  |       40-point type        |
+  |  (large descender space)   |
+  ------------------------------
+  |        9-point type        |
+  ------------------------------
+
+After you change the minimum row height for the top cell in this example to -40,
+the cells resemble the following:
+
+  ------------------------------
+  |       40-point type        |
+  ------------------------------
+  |        9-point type        |
+  ------------------------------
+
+The descender space will be removed, and the 9-point type appears immediately
+under the 40-point type.
+
+Additional query words: talbes
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

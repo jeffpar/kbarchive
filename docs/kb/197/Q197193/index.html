@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197193: FIX: Application Error in Locals Window with Specific Variables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197193: FIX: Application Error in Locals Window with Specific Variables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197193/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197193/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197193/","publisher":null,"image":null,"headline":"Q197193: FIX: Application Error in Locals Window with Specific Variables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197193-fix-application-error-in-locals-window-with-specific-variables">Q197193: FIX: Application Error in Locals Window with Specific Variables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197193
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kbMiscTools kbvfp500aBUG kbvfp600fix kbXBase
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you do the following:
+
+1. Run a program that uses several variables consisting of single alpha
+  character names.
+
+2. Release a form.
+
+3. Scroll the Debugger Locals window to look at some of the variable values.
+
+Windows displays an application error message, and Visual FoxPro is terminated.
+
+The message displayed depends on the operating system:
+
+- Under Windows NT, an error message similar to the following appears:
+
+  An application error has occurred and an application error log is being
+  generated.
+
+  vfp.exe
+  Exception: access violation (0xc0000005), Address 0x0043e8db
+
+- Under Windows 9x, an error message similar to the following appears:
+
+  This program has performed an illegal operation and will be shut down. If the
+  problem persists, contact the program vendor.
+
+  If you click Details in the dialog box, a message similar to the following
+  appears:
+
+  VFP caused an invalid page fault in module VFP.EXE at 0137:0044940e.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+        SET STEP ON
+        CLEAR DEBUGGER
+        STORE .t. to a,b,c,d,e,f,g,h
+        KEYBOARD "{enter}"
+
+        TheForm=CreateObject("aForm")
+        TheForm.show
+        READ events
+        RETURN
+
+        DEFINE class aForm as form
+           ADD object aButton as commandbutton
+           PROCEDURE aButton.click
+              thisform.release
+           ENDPROC
+        ENDDEFINE
+
+2. Switch to the debugger by pressing ALT+Tab.
+
+3. Scroll down in the Locals Window to the last item by clicking on the down
+  arrow in the Locals Window scroll bar.
+
+4. The Locals window scroll bar must be visible for this behavior to occur. If
+  you do not see the error, you can make the Locals window shorter by resizing
+  it with the mouse, and repeating the steps.
+
+RESULT: You will receive an application error that will vary depending on the
+operating system. See the SYMPTOMS section above for details. The addresses may
+vary depending on operating system version or Visual FoxPro 5 build number.
+
+This only happens with these specific variable names. If you modify the STORE
+command in the program above to read as follows, the behavior does not occur:
+
+     STORE .t. to aa,bb,cc,dd,ee,ff,gg,hh
+
+As a rule, it is a good idea to avoid the letters "A" through "N", uppercase or
+lowercase, for variable, field, or table names. Visual FoxPro uses these as
+default alias names for tables when tables are opened and their names are
+already in use.
+
+Example:
+
+     USE table1
+     USE table1 AGAIN IN 0
+
+The second table1 will be used under the alias A.
+
+This error does not occur if you do not scroll in the Locals window.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp500aBUG kbvfp600fix kbXBase 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105176/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105176/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105176/","publisher":null,"image":null,"headline":"Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105176-pc-win-lotus-1-2-3-wysiwyg-attachments">Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105176
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attach a Lotus 1-2-3 file to a mail message, the formatted WYSIWYG file
+is not automatically attached. If both files are attached to a version 3.0,
+3.0b, or 3.2 Microsoft Mail for Windows message and you start the Lotus 1-2-3
+file, the WYSIWYG file is not automatically invoked.
+
+MORE INFORMATION
+================
+
+Versions of Lotus 1-2-3 earlier than version 4.0 use either an add-in module
+(WYSIWYG) or Allways to generate the enhanced formatting of the spreadsheet
+file. These enhancements are stored in a separate file. Because Allways and
+WYSIWYG perform in the same manner, this article will refer to the WYSIWYG .FM3
+file extension. All references to Lotus 1-2-3 are for file formats earlier than
+version 4.0.
+
+When you start up a Lotus 1-2-3 file and WYSIWYG is invoked, the program searches
+for both a .WKx file and a .FM3 file in the same directory. If the program finds
+both, it opens the .WKx file and then starts WYSIWYG to bring up the enhanced
+formatting. There is no form of coupling between the files, and the spreadsheet
+file is completely unaware of the existence of the formatting file. To "see" the
+special formatting, the sender must attach both the spreadsheet file and the
+format file. The receiver must save both attachments to the same subdirectory,
+start Lotus 1-2-3, and then open the spreadsheet file in that subdirectory.
+
+With Lotus 1-2-3 version 4.0, a new file format (.WK4) has been introduced. Like
+Microsoft Excel, the graphics/formatting information is contained in the
+spreadsheet file. However, in an environment where there are several versions of
+Lotus 1-2-3, separate format and spreadsheet files are created for the older
+versions and, thus, the original problem occurs again.
+
+This behavior is independent of Microsoft Mail and has been confirmed with Lotus
+Technical Support. The same results can be achieved from the Windows Program
+Manager by placing the format file in a separate subdirectory from the
+spreadsheet file and then double-clicking the spreadsheet file.
+
+Lotus 1-2-3 and Allways are manufactured by Lotus Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

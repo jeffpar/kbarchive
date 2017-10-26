@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166111: Asynchronous MFC ODBC Database Processing Using Threads | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166111: Asynchronous MFC ODBC Database Processing Using Threads" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166111/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166111/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166111/","publisher":null,"image":null,"headline":"Q166111: Asynchronous MFC ODBC Database Processing Using Threads","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166111-asynchronous-mfc-odbc-database-processing-using-threads">Q166111: Asynchronous MFC ODBC Database Processing Using Threads</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166111
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbProgramming kbSample kbDatabase kbMFC kbODBC kbThread kbVC kbVC420 kbVC500 kbV
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This sample shows how to provide asynchronous database processing by running a
+database query on a secondary thread.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Mtdb.exe
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+NOTE: Use the -d option when running MTDB.EXE to decompress the file and re-
+create the proper directory structure.
+
+
+MORE INFORMATION
+================
+
+Beginning with version 4.2 of the MFC database classes, the ability to set the
+processing mode to asynchronous using CDatabase::SetSynchronousMode() has become
+obsolete. The MFC ODBC classes now use only synchronous processing.
+
+The following functions, which were used with asynchronous processing in versions
+before 4.2, are also obsolete: CDatabase::InWaitForDataSource(),
+CDatabase::OnWaitForDataSource() and CRecordset::OnWaitForDataSource().
+
+One way to implement asynchronous database processing with MFC 4.2 and above is
+to run your database query on a secondary worker thread. The MTDB sample
+illustrates this by having each document open the corresponding recordset on a
+new worker thread. When the user presses the "Cancel Query" button, the primary
+thread cancels processing on the secondary thread.
+
+As with any multi-threaded database application, each component must be
+thread-safe. Specifically, you must be using a thread-safe ODBC driver, such as
+the Microsoft SQL Server ODBC driver, for this application to work correctly.
+
+This sample uses the Student Registration database, which can be created for SQL
+Server using the STDREG sample program that is included with Visual C++.
+
+Additional query words: Mtdb
+
+======================================================================
+Keywords          : kbfile kbProgramming kbSample kbDatabase kbMFC kbODBC kbThread kbVC kbVC420 kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.2,5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143177: FTP Server MIB Definitions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143177: FTP Server MIB Definitions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143177/","publisher":null,"image":null,"headline":"Q143177: FTP Server MIB Definitions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143177-ftp-server-mib-definitions">Q143177: FTP Server MIB Definitions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143177
+Product(s): Internet Information Server
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The File Transfer protocol MIB (FTP.MIB) for Internet Information Server (IIS)
+contains 16 objects specifically designed to support computers running IIS on
+Windows NT 3.51. This article lists the FTP MIB objects and description.
+
+MORE INFORMATION
+================
+
+The following lists the FTP MIB objects and a description of each object:
+
+FTP Server Statistics:
+
+- TotalBytesSent_HighWord      This is the high 32-bits of the total
+                               number of BYTEs sent by the FTP Server.
+
+- TotalBytesSent_LowWord       This is the low 32-bits of the total
+                               number of BYTEs sent by the FTP Server.
+
+- TotalBytesReceived_HighWord  This is the high 32-bits of the total
+                               number of BYTEs received by the FTP Server.
+
+- TotalBytesReceived_LowWord   This is the low 32-bits of the total number
+                               of BYTEs received by the FTP Server.
+
+- TotalFilesSent               This is the total number of files sent by
+                               this FTP Server.
+
+- TotalFilesReceived           This is the total number of files received
+                               by this FTP Server.
+
+- CurrentAnonymousUsers        This is the number of anonymous users
+                               currently connected to the FTP Server.
+
+- CurrentNonAnonymousUsers     This is the number of non-anonymous users
+                               currently connected to the FTP Server.
+
+- TotalAnonymousUsers          This is the total number of anonymous users
+                               that have ever connected to the FTP Server.
+
+- TotalNonAnonymousUsers       This is the total number of non-anonymous
+                               users that have ever connected to the FTP
+                               Server.
+
+- MaxAnonymousUsers            This is the maximum number of anonymous
+                               users simultaneously connected to the FTP
+                               Server.
+
+- MaxNonAnonymousUsers         This is the maximum number of non-anonymous
+                               users simultaneously connected to the FTP
+                               Server.
+
+- CurrentConnections           Current number of connections to the FTP
+                               Server.
+
+- MaxConnections               The maximum number of simultaneous
+                               connections to the FTP Server.
+
+- ConnectionAttempts           Number of connection attempts made to the
+                               FTP Server.
+
+- LogonAttempts                The number of logon attempts that have been
+                               made to the FTP Server.
+
+The FTP.MIB file is available in the IIS CD-ROM in the SDK directory.
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

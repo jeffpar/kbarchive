@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97821: How Encrypted Passwords Are Validated from Workstations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97821: How Encrypted Passwords Are Validated from Workstations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97821/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97821/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97821/","publisher":null,"image":null,"headline":"Q97821: How Encrypted Passwords Are Validated from Workstations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97821-how-encrypted-passwords-are-validated-from-workstations">Q97821: How Encrypted Passwords Are Validated from Workstations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97821
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article explains how passwords are validated during logon from a
+workstation using an encryption service. Security is preserved because the
+password never goes out onto the net: all encryption/decryption services are
+performed on the workstation.
+
+MORE INFORMATION
+================
+
+Here is the process for password validation for a user on a workstation with an
+encryption service:
+
+1. When a user logs on, workstation software encrypts the plain text password
+  that the user enters with a standard text key. The key is known to both the
+  workstation and the server. The encryption scheme is a Microsoft standard.
+  The standard text used as a key is the same text that was used as a key at
+  the time the user's account was created on that server. If someone knows the
+  standard text and finds the encryption scheme in memory, it still is (for all
+  practical purposes) mathematically impossible to reverse the encryption
+  scheme.
+
+  So far in the logon process, nothing has been sent to the network.
+
+2. When the workstation tries to establish a session with the server, the server
+  creates a challenge by using the same encryption standard, the same standard
+  text, but server time as the key. That challenge is sent to the workstation.
+  No passwords cross the network.
+
+3. When the workstation receives the challenge, it uses the same encryption
+  scheme to encrypt the challenge, and uses the encrypted workstation
+  pseudo-password created in step 1 as the key. It sends this encrypted
+  challenge response back to the server. Again no passwords.
+
+4. The server receives the challenge response. The server expects to get an
+  encrypted version of its original challenge using the server stored encrypted
+  password as the key and of course using the same encryption scheme. If these
+  match, the user must have typed the right plain text password.
+
+No passwords ever cross the network. The most important thing going across the
+network is the challenge that is created at random using server time as the key.
+The key to the response is the same if the user types the right text password
+because the standard text and encryption scheme are the same today as they were
+when the account was set up. No passwords need to cross the network.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

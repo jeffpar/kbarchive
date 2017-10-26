@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58437: Accessing Child Process Exit Code from Parent Process | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58437: Accessing Child Process Exit Code from Parent Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58437/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58437/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58437/","publisher":null,"image":null,"headline":"Q58437: Accessing Child Process Exit Code from Parent Process","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58437-accessing-child-process-exit-code-from-parent-process">Q58437: Accessing Child Process Exit Code from Parent Process</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58437
+Product(s): See article
+Version(s): 5.00 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc s_quickasm | mspl13_c
+Last Modified: 9-FEB-1990
+
+Question:
+
+I am using the spawn() function and I want to be able to find out
+whether or not the child program terminated normally or by entry of
+CTRL+C. Is there anyway I can get the system exit code from the child
+process?
+
+Response:
+
+There is no C run-time function that will return the system exit code
+from a child process. However, Interrupt 21h SubFunction 4Dh can be
+used to return it.
+
+Immediately after a child process terminates, the child exit code and
+the system exit code are in the AL and AH registers respectively.
+
+Example:
+
+                    _________________________
+                    |           |           |
+      AX Register   |     |     |     |     |
+                    |           |           |
+                    -------------------------
+                         AH     |    AL
+                         /            \
+                        /              \
+         System Exit Code               Child Exit Code
+
+When the spawn() family of functions is called with a mode flag of
+P_WAIT, only the child exit code is returned. To read the system exit
+code, a call to Interrupt 21h SubFunction 4Dh is needed.
+
+It is important to get and store the return codes immediately upon
+returning from the child process, since another function may modify
+them.
+
+The following code samples demonstrate how to get the exit code from
+the child process within the parent process with C Version 5.10 and
+QuickC Versions 2.00 and 2.01.
+
+Code Example 1
+--------------
+
+/* Call this prog1.c  */
+#include &lt;dos.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;process.h&gt;
+
+union REGS inregs, outregs, tempreg;
+int retcode;
+unsigned char syscode;
+
+void main (void)
+{
+   printf ("In program I\n");
+   retcode = spawnl (P_WAIT, "sp2.exe", "sp2", NULL);
+
+   /* Call int 21h function 4Dh to obtain exit codes */
+
+   inregs.h.ah = 0x4d;
+   intdos (&amp;inregs, &amp;outregs);
+
+   /* System Exit Code will be in AH. */
+
+   syscode = outregs.h.ah;
+
+   printf ("Child exit code: %d\n", retcode);
+   printf ("Child process ");
+   switch (syscode)
+   {
+      case 0 : printf ("terminated normally\n");
+               break;
+      case 1 : printf ("exit with a Control-C\n");
+               break;
+      case 2 : printf ("exit with a hard error\n");
+               break;
+      case 3 : printf ("exit as a TSR program\n");
+               break;
+   }
+}
+
+Code Example 2
+--------------
+
+/* Call this sp2.c */
+#include &lt;stdio.h&gt;
+
+void main (void)
+{
+   printf ("In program II\n");
+   exit (77);
+}
+
+Since QuickC 2.00 and QuickAssembler 2.01 have the feature of using
+inline assembly, the AX register can be access directly without using
+any interrupts. The following line of code can be used in place of the
+interrupt call:
+
+_asm mov syscode, ah
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

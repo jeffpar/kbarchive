@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190686: FIX: ATL Server Registration May Fail for Non-Administrators | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190686: FIX: ATL Server Registration May Fail for Non-Administrators" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190686/","publisher":null,"image":null,"headline":"Q190686: FIX: ATL Server Registration May Fail for Non-Administrators","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190686-fix-atl-server-registration-may-fail-for-non-administrators">Q190686: FIX: ATL Server Registration May Fail for Non-Administrators</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190686
+Product(s): Microsoft C Compiler
+Version(s): 2.1,3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbATL210bug kbCOMt kbRegistry kbVC500bug kbVC600bug kbATL300bug kbNoUpdate
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.1, 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Registration or unregistration of ATL servers may fail on a machine if the
+logged-on user doesn't have appropriate registry access rights. In-process
+servers may fail and display the following message:
+
+  DllRegisterServer in projectname.dll failed. Return code was:
+  0x80020009.
+
+Debug EXE servers, linked statically to the registrar code and run in the
+debugger, may display the following trace messages:
+
+  Failed to register, cleaning up!
+  The thread 0xnn has exited with code -2147352567 (0x80020009).
+
+CAUSE
+=====
+
+CRegKey is a class used by ATL for manipulating the registry. It's Open() and
+Create() methods have a REGSAM argument that specifies the security access to
+the particular registry key.
+
+The REGSAM argument defaults to KEY_ALL_ACCESS. In several places in the ATL
+code, Open() and Create() are called without specifying the REGSAM, which means
+it defaults to KEY_ALL_ACCESS. KEY_ALL_ACCESS is a combination of other flags
+including WRITE_DAC and WRITE_OWNER.
+
+For a non-administrator, you may not have WRITE_DAC and WRITE_OWNER permissions,
+which causes registration to fail.
+
+RESOLUTION
+==========
+
+In ATLBASE.H, change the default REGSAM for CRegKey::Create() and
+CRegKey::Open() to KEY_READ|KEY_WRITE:
+
+     class CRegKey
+     {
+        ...
+        LONG Create(HKEY hKeyParent, LPCTSTR lpszKeyName, LPTSTR lpszClass =
+           REG_NONE, DWORD dwOptions = REG_OPTION_NON_VOLATILE,
+           REGSAM samDesired = KEY_READ | KEY_WRITE, // changed REGSAM
+           LPSECURITY_ATTRIBUTES lpSecAttr = NULL,
+           LPDWORD lpdwDisposition = NULL);
+        LONG Open(HKEY hKeyParent, LPCTSTR lpszKeyName,
+           REGSAM samDesired = KEY_READ | KEY_WRITE);  // changed REGSAM
+        ...
+     };
+
+You need to link statically to the registrar. Building for ReleaseMinDependency
+will statically link to the registrar. Debug builds link dynamically to the
+registrar via Atl.dll. You need to add _ATL_STATIC_REGISTRY to the list of
+Preprocessor definitions. You can do this on the Project menu by clicking
+Settings. Click the C/C++ tab and select General under Category.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q166717 DOC: Instructions for Statically Linking to Registrar Code.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+REFERENCES
+==========
+
+Other articles related to ATL registration:
+
+  Q166217 PRB: ATL EXE Server Built On Windows 95 Errors While Registering
+
+  Q167927 BUG: Building ATL Service Project Does Not Register the Service
+
+  Q179688 PRB: ATL Servers Do Not Unregister Their Type Library
+
+  Q185677 BUG: ATL Service with Space in Name Is Not Registered Correctly
+
+  Q186391 BUG: ATL Controls Don't Remove CLSID Key During Unregistration
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Samson
+Tanrena, Microsoft Corporation
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Samson Tanrena, Microsoft Corporation
+
+
+Additional query words: kbDSupport user poweruser administration nonadministrator rights
+
+======================================================================
+Keywords          : kbActiveX kbATL210bug kbCOMt kbRegistry kbVC500bug kbVC600bug kbATL300bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :2.1,3.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

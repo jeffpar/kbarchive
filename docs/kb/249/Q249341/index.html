@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249341: HOWTO: Create Layered Window in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249341: HOWTO: Create Layered Window in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249341/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249341/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249341/","publisher":null,"image":null,"headline":"Q249341: HOWTO: Create Layered Window in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249341-howto-create-layered-window-in-visual-basic">Q249341: HOWTO: Create Layered Window in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249341
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbForms kbGrpDSVB kbDSupp
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows 2000 has the ability to create translucent windows. These
+windows are called layered windows. This article describes how to create a
+layered window by using Visual Basic.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+  Private Declare Function GetWindowLong Lib "user32" Alias _
+    "GetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long) As Long
+  Private Declare Function SetWindowLong Lib "user32" Alias _
+    "SetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long, _
+    ByVal dwNewLong As Long) As Long
+  Private Declare Function SetLayeredWindowAttributes Lib "user32" _
+    (ByVal hwnd As Long, ByVal crey As Byte, ByVal bAlpha As Byte, _
+    ByVal dwFlags As Long) As Long
+
+  Private Const GWL_EXSTYLE = (-20)
+  Private Const WS_EX_LAYERED = &amp;H80000
+  Private Const WS_EX_TRANSPARENT = &amp;H20&amp;
+  Private Const LWA_ALPHA = &amp;H2&amp;
+
+  Option Explicit
+
+  Private Sub Form_Load()
+      Dim lOldStyle As Long
+      Dim bTrans As Byte ' The level of transparency (0 - 255)
+
+      bTrans = 128
+      lOldStyle = GetWindowLong(Me.hWnd, GWL_EXSTYLE)
+      SetWindowLong Me.hWnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED
+      SetLayeredWindowAttributes Me.hWnd, 0, bTrans, LWA_ALPHA
+  End Sub
+
+3. Run the example program by pressing the F5 key. The form should look like a
+  normal Visual Basic window. However, windows that are lower in the Z order
+  should be partially visible through the window.
+
+It is also possible to make mouse events go through to the lower windows by
+changing the preceding code line
+
+  SetWindowLong Me.hwnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED
+
+to:
+
+  SetWindowLong Me.hwnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED Or WS_EX_TRANSPARENT
+
+However, the form does not remain topmost if another form is activated. See the
+"Reference" section for information on how to create a form that remains on
+top.
+
+REFERENCES
+==========
+
+For additional information how to create a topmost window, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q184297 HOWTO: Create a Form That Always Stays on Top
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbForms kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

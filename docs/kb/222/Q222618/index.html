@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222618: Using ASP and User Names with Posting Acceptor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222618: Using ASP and User Names with Posting Acceptor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222618/","publisher":null,"image":null,"headline":"Q222618: Using ASP and User Names with Posting Acceptor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222618-using-asp-and-user-names-with-posting-acceptor">Q222618: Using ASP and User Names with Posting Acceptor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222618
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Posting Acceptor is a server add-on component of the Windows NT Option
+Pack (NTOP) that enables the use of HTTP Post (RFC 1867) to publish content to
+your Web site. Web administrators and authors using Posting Acceptor in
+conjunction with Microsoft Active Server Pages (ASP) can automate document
+publishing by using the logged-on user's name to store files in a virtual
+directory of the same name.
+
+MORE INFORMATION
+================
+
+The following steps show how to install Posting Acceptor from the NTOP.
+
+Install Posting Acceptor using one of the following two methods:
+
+   - During the initial NTOP installation
+
+  -OR-
+
+- Running the NTOP setup in maintenance mode and specifying Add/Remove
+
+In either of the above scenarios, specify the installation of Posting Acceptor by
+following these steps:
+
+1. Select Microsoft Site Server Express 2.0.
+
+2. Click Show Subcomponents.
+
+3. Select Publishing - Posting Acceptor.
+
+4. Click OK to continue the wizard.
+
+5. Verify that the Cpshost.dll file is in your Scripts folder.
+
+These next steps will walk you through creating a virtual directory to upload
+files to based on a user name. For this example, "Administrator" account is
+used; however, any valid user account may be used.
+
+1. Log on to your Windows NT server as "Administrator."
+
+2. Create a new folder on an NTFS drive such as "X:\ADMIN", where X is your
+  drive letter.
+
+3. Open the security settings for the new folder.
+
+4. Grant NTFS Full Control permissions to the "Administrator" and "System"
+  accounts.
+
+5. Remove all other users and groups.
+
+6. Create a new virtual directory that points to the new folder.
+
+7. Open the Internet Services Manager in the MMC.
+
+8. Right-click your default Web site.
+
+9. Click New, and then select Virtual Directory from the pop-up menu.
+
+10. Click Next to start the wizard.
+
+11. Enter "administrator" for the alias and click Next.
+
+12. Browse to the ADMIN folder from earlier and click Next.
+
+13. Select only Read and Write, and then click Next.
+
+14. Click Finish to complete the wizard.
+
+Next, copy the following ASP code and save it to your SCRIPTS folder as
+"Postlogon.asp." This ASP code is actually two HTML form examples on one page.
+
+- The first form uses a form text field that is populated with the user's name,
+  but allows the field's contents to be changed.
+
+- The second form uses a hidden form field that will also be populated with the
+  user's name, but prevents the field's contents from being changed.
+
+  <span class="nt">&lt;</span><span class="err">%@</span><span class="na">LANGUAGE=</span><span class="s">"VBScript"</span><span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">check</span> <span class="na">to</span> <span class="na">see</span> <span class="na">if</span> <span class="na">the</span> <span class="na">user</span> <span class="na">has</span> <span class="na">logged</span> <span class="na">on</span> <span class="na">at</span> <span class="na">all</span>
+    <span class="na">If</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">LOGON_USER</span><span class="err">")</span> <span class="err">=</span> <span class="err">""</span> <span class="na">Then</span>
+      <span class="err">'</span> <span class="na">force</span> <span class="na">authentication</span> <span class="na">if</span> <span class="na">not</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Clear</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Status =</span><span class="err"> </span><span class="s">"401 Access Denied"</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">End</span>
+    <span class="na">Else</span>
+      <span class="err">'</span> <span class="na">store</span> <span class="na">the</span> <span class="na">client</span><span class="err">'</span><span class="na">s</span> <span class="na">user</span> <span class="na">name</span> <span class="na">ins</span> <span class="na">a</span> <span class="na">session</span> <span class="na">variable</span>
+      <span class="na">strLogonUser =</span><span class="err"> </span><span class="s">Request.ServerVariables("LOGON_USER")</span>
+      <span class="err">'</span> <span class="na">is</span> <span class="na">this</span> <span class="na">an</span> <span class="na">NT</span> <span class="na">domain</span> <span class="na">logon</span><span class="err">?</span>
+      <span class="na">If</span> <span class="na">InStr</span><span class="err">(</span><span class="na">strLogonUser</span><span class="err">,"\")</span> <span class="na">then</span>
+        <span class="err">'</span> <span class="na">strip</span> <span class="na">out</span> <span class="na">an</span> <span class="na">NT</span> <span class="na">domain</span> <span class="na">from</span> <span class="na">the</span> <span class="na">user</span> <span class="na">name</span> <span class="na">if</span> <span class="na">present</span>
+        <span class="na">strLogonUser =</span><span class="err"> </span><span class="s">Mid(strLogonUser,InStr(strLogonUser,"\")+1)</span>
+      <span class="na">End</span> <span class="na">If</span>
+    <span class="na">End</span> <span class="na">If</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>Logged On User Posting Acceptor Example<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;hr&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span> <span class="na">action=</span><span class="s">"/scripts/cpshost.dll?PUBLISH"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;center&gt;&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">align=</span><span class="s">"center"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Using Visible Form Field<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>File to upload<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;&lt;input</span> <span class="na">name=</span><span class="s">"file"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">size=</span><span class="s">"30"</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>Destination URL<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"TargetURL"</span> <span class="na">value=</span><span class="s">"/&lt;%=strLogonUser%&gt;/"</span> <span class="na">size=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"Submit"</span> <span class="na">value=</span><span class="s">"Upload..."</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;&lt;/center&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;hr&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span> <span class="na">action=</span><span class="s">"/scripts/cpshost.dll?PUBLISH"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"TargetURL"</span> <span class="na">value=</span><span class="s">"/&lt;%=strLogonUser%&gt;/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;center&gt;&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">align=</span><span class="s">"center"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Using Hidden Form Field<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>File to upload<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;&lt;input</span> <span class="na">name=</span><span class="s">"file"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">size=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"Submit"</span> <span class="na">value=</span><span class="s">"Upload..."</span><span class="nt">&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;&lt;/center&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;hr&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q184352 HOWTO: Upload files to the Internet Information Server
+
+  Q189651 SAMPLE: Uploading a File to IIS Using a Browser
+
+  Q189272 Upload Folders with Write and Execute Access Are Vulnerable
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139308: How to Simulate a Spinner Control for Character Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139308: How to Simulate a Spinner Control for Character Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139308/","publisher":null,"image":null,"headline":"Q139308: How to Simulate a Spinner Control for Character Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139308-how-to-simulate-a-spinner-control-for-character-values">Q139308: How to Simulate a Spinner Control for Character Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139308
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The current Spinner control only displays numeric Values. This article shows by
+example how to simulate a character- or text-based Spinner control. The examples
+show continuous looping of the values to be displayed. As an example, when
+decrementing from the letter A, the letter Z is displayed rather than not
+allowing the Spinner value to move beyond what would normally be a stop point.
+
+MORE INFORMATION
+================
+
+Code Sample
+-----------
+
+  *Start of Program **************************
+
+  frmSpinners = CREATEOBJECT("frmTextSpinner")
+  frmSpinners.show
+  READ EVENTS
+
+  DEFINE CLASS frmTextSpinner AS Form
+
+       Top      = 42
+       Left     = 36
+       Height   = 90
+       Width    = 182
+       DoCreate = .T.
+       Caption  = "Text Spinners"
+       Name     = "Form1"
+
+       ADD OBJECT spnSpinner1 AS Spinner WITH ;
+            Alignment        = 1, ;
+            BackColor        = RGB(192,192,192), ;
+            ForeColor        = RGB(192,192,192), ;
+            Height           = 25, ;
+            Left             = 143, ;
+            Margin           = 0, ;
+            SpecialEffect    = 1, ;
+            SpinnerHighValue = 91.00, ;
+            SpinnerLowValue = 64.00, ;
+            Top             = 8, ;
+            Width           = 15, ;
+            Value           = 65.00, ;
+            Name            = "spnSpinner1"
+
+       ADD OBJECT txtText1 AS Textbox WITH ;
+            BorderStyle = 1, ;
+            Value       = "A", ;
+            Height      = 25, ;
+            Left        = 120, ;
+            Top         = 8, ;
+            Width       = 23, ;
+            Name        = "txtText1"
+
+       ADD OBJECT spnSpinner2 AS Spinner WITH ;
+            Alignment        = 1, ;
+            BackColor        = RGB(192,192,192), ;
+            ForeColor        = RGB(192,192,192), ;
+            Height           = 25, ;
+            Left             = 46, ;
+            Margin           = 0, ;
+            SpecialEffect    = 1, ;
+            SpinnerHighValue = 91.00, ;
+            SpinnerLowValue  = 64.00, ;
+            Top              = 8, ;
+            Width            = 15, ;
+            Value            = 65.00, ;
+            Name             = "spnSpinner2"
+
+       ADD OBJECT Label1 AS Label WITH ;
+            Alignment   = 2, ;
+            BorderStyle = 1, ;
+            Caption     = "A", ;
+            Height      = 25, ;
+            Left        = 24, ;
+            Top         = 8, ;
+            Width       = 23, ;
+            Name        = "Label1"
+
+       ADD OBJECT spnSpinner3 AS Spinner WITH ;
+            Alignment        = 1, ;
+            BackColor        = RGB(192,192,192), ;
+            ForeColor        = RGB(192,192,192), ;
+            Height           = 25, ;
+            Left             = 142, ;
+            Margin           = 0, ;
+            SpecialEffect    = 1, ;
+            SpinnerHighValue =   8.00, ;
+            SpinnerLowValue  =   0.00, ;
+            Top   = 49, ;
+            Width = 15, ;
+            Value = 1.0, ;
+            Name  = "spnSpinner3"
+
+       ADD OBJECT Label2 AS Label WITH ;
+            BorderStyle = 1, ;
+            Caption     = "Monday", ;
+            Height      = 25, ;
+            Left        = 23, ;
+            Top         = 49, ;
+            Width       = 120, ;
+            Name        = "Label2"
+
+       PROCEDURE spnSpinner1.InteractiveChange
+            DO CASE
+                 CASE This.Value=91
+                      This.Value=65 &amp;&amp; Goes a "A" from "Z"
+                 CASE This.Value=64
+                      This.Value=90 &amp;&amp; Goes a "Z" from "A"
+            ENDCASE
+
+            ThisForm.txtText1.Value=CHR(This.Value)
+            ThisForm.txtText1.SetFocus
+       ENDPROC
+
+       PROCEDURE spnSpinner2.InteractiveChange
+            DO CASE
+                 CASE This.Value=91
+                      This.Value=65 &amp;&amp; Goes a "A" from "Z"
+                 CASE This.Value=64
+                      This.Value=90 &amp;&amp; Goes a "Z" from "A"
+            ENDCASE
+
+            ThisForm.Label1.Caption=CHR(This.Value)
+       ENDPROC
+
+       PROCEDURE spnSpinner3.InteractiveChange
+            IF This.Value=8
+                 This.Value=1 &amp;&amp; Goes from "Sunday" to "Monday"
+            ENDIF
+            IF This.Value=0
+                 This.Value=7 &amp;&amp; Goes from "Monday" to "Sunday"
+            ENDIF
+
+            DO CASE
+            CASE This.Value = 1
+                 ThisForm.Label2.Caption="Monday"
+            CASE This.Value = 2
+                 ThisForm.Label2.Caption="Tuesday"
+            CASE This.Value = 3
+                 ThisForm.Label2.Caption="Wednesday"
+            CASE This.Value = 4
+                 ThisForm.Label2.Caption="Thursday"
+            CASE This.Value = 5
+                 ThisForm.Label2.Caption="Friday"
+            CASE This.Value = 6
+                 ThisForm.Label2.Caption="Saturday"
+            CASE This.Value = 7
+                 ThisForm.Label2.Caption="Sunday"
+            ENDCASE
+       ENDPROC
+  ENDDEFINE
+  *End of Program **************************************
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

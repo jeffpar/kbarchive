@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158451/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158451/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158451/","publisher":null,"image":null,"headline":"Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158451-howto-how-to-call-automation-methods-with-variable-argument-lis">Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q158451</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">C</span> <span class="n">Compiler</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">4.0</span><span class="p">,</span><span class="m">4.1</span><span class="p">,</span><span class="m">4.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbole</span> <span class="n">kbActiveX</span> <span class="n">kbAutomation</span> <span class="n">kbCOMt</span> <span class="n">kbMFC</span> <span class="n">kbVC400</span> <span class="n">kbVC420</span> <span class="n">kbGrpDSMFCATL</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">04</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Foundation</span> <span class="n">Classes</span> <span class="p">(</span><span class="n">MFC</span><span class="p">),</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">C</span><span class="p">++,</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span> <span class="n">Editions</span><span class="p">,</span> <span class="n">versions</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">4.1</span> 
+   <span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">C</span><span class="p">++,</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span> <span class="n">Enterprise</span> <span class="n">Edition</span><span class="p">,</span> <span class="k">version</span> <span class="m">4.2</span> 
+   <span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">C</span><span class="p">++,</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span> <span class="n">Professional</span> <span class="n">Edition</span><span class="p">,</span> <span class="k">version</span> <span class="m">4.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">OLE</span> <span class="n">Automation</span> <span class="n">allows</span> <span class="n">you</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">methods</span> <span class="n">on</span> <span class="n">your</span> <span class="n">server</span> <span class="n">that</span> <span class="n">can</span> <span class="n">take</span> <span class="n">a</span>
+<span class="n">variable</span><span class="p">-</span><span class="n">length</span> <span class="k">list</span> <span class="k">of</span> <span class="n">arguments</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">simple</span> <span class="k">procedure</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">.</span>
+<span class="n">However</span><span class="p">,</span> <span class="n">there</span> <span class="n">are</span> <span class="n">special</span> <span class="n">considerations</span> <span class="n">when</span> <span class="n">you</span> <span class="n">call</span> <span class="n">such</span> <span class="n">a</span> <span class="n">method</span> <span class="k">from</span> <span class="n">a</span>
+<span class="n">client</span> <span class="n">written</span> <span class="k">in</span> <span class="n">C</span><span class="p">/</span><span class="n">C</span><span class="p">++.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Visual</span> <span class="n">Basic</span>
+<span class="p">------------</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">method</span> <span class="n">on</span> <span class="n">your</span> <span class="n">OLE</span> <span class="n">Automation</span> <span class="n">server</span> <span class="n">that</span> <span class="n">takes</span> <span class="n">a</span> <span class="n">variable</span><span class="p">-</span>
+<span class="n">length</span> <span class="k">list</span> <span class="k">of</span> <span class="n">arguments</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+     <span class="k">Function</span> <span class="n">MyFunc1</span><span class="p">(</span><span class="n">ByVal</span> <span class="n">p1</span> <span class="k">As</span> <span class="n">Long</span><span class="p">,</span> <span class="n">ParamArray</span> <span class="n">p2</span><span class="p">())</span> <span class="k">As</span> <span class="k">String</span>
+
+     <span class="n">myfunc1</span> <span class="p">=</span> <span class="s2">"String returned"</span>
+     <span class="k">End</span> <span class="k">Function</span>
+
+<span class="n">The</span> <span class="n">ParamArray</span> <span class="n">parameter</span> <span class="n">p2</span> <span class="n">allows</span> <span class="n">the</span> <span class="n">caller</span> <span class="k">of</span> <span class="n">this</span> <span class="k">function</span> <span class="k">to</span> <span class="n">pass</span> <span class="n">any</span> <span class="n">number</span>
+<span class="k">of</span> <span class="k">parameters</span> <span class="k">in</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span> <span class="n">required</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">p1</span><span class="p">.</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">retrieves</span>
+<span class="n">additional</span> <span class="k">parameters</span> <span class="n">by</span> <span class="n">locating</span> <span class="n">the</span> <span class="k">array</span> <span class="k">of</span> <span class="n">VARIANTS</span> <span class="n">contained</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">variable</span> <span class="n">p2</span><span class="p">.</span> <span class="n">The</span> <span class="n">type</span> <span class="n">information</span> <span class="n">generated</span> <span class="n">by</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">the</span> <span class="n">MyFunc1</span>
+<span class="k">function</span> <span class="n">will</span> <span class="n">look</span> <span class="n">like</span> <span class="n">this</span><span class="p">:</span>
+
+     <span class="p">[</span><span class="n">id</span><span class="p">(</span><span class="m">0x60030020</span><span class="p">),</span> <span class="n">vararg</span><span class="p">]</span>
+     <span class="n">HRESULT</span> <span class="n">_stdcall</span> <span class="n">MyFunc1</span><span class="p">(</span>
+                     <span class="p">[</span><span class="k">in</span><span class="p">]</span> <span class="n">long</span> <span class="n">p1</span><span class="p">,</span>
+                     <span class="p">[</span><span class="k">in</span><span class="p">,</span> <span class="n">out</span><span class="p">]</span> <span class="n">SAFEARRAY</span><span class="p">(</span><span class="n">VARIANT</span><span class="p">)*</span> <span class="n">p2</span><span class="p">,</span>
+                     <span class="p">[</span><span class="n">retval</span><span class="p">]</span> <span class="n">BSTR</span><span class="p">*</span> <span class="p">);</span>
+
+<span class="n">The</span> <span class="n">vararg</span> <span class="n">attribute</span> <span class="k">in</span> <span class="n">the</span> <span class="n">type</span> <span class="n">information</span> <span class="n">for</span> <span class="n">the</span> <span class="n">MyFunc1</span> <span class="k">function</span> <span class="n">tells</span>
+<span class="n">callers</span> <span class="n">that</span> <span class="n">it</span> <span class="n">accepts</span> <span class="n">a</span> <span class="n">variable</span><span class="p">-</span><span class="n">length</span> <span class="k">list</span> <span class="k">of</span> <span class="n">arguments</span> <span class="n">for</span> <span class="n">this</span> <span class="k">function</span><span class="p">.</span>
+<span class="n">The</span> <span class="p">[</span><span class="k">in</span><span class="p">,</span> <span class="n">out</span><span class="p">]</span> <span class="n">SAFEARRAY</span><span class="p">(</span><span class="n">VARIANT</span><span class="p">)*</span> <span class="n">p2</span> <span class="n">parameter</span> <span class="n">tells</span> <span class="n">callers</span> <span class="n">that</span> <span class="n">a</span> <span class="n">SAFEARRAY</span>
+<span class="n">pointer</span><span class="p">,</span> <span class="n">representing</span> <span class="n">an</span> <span class="k">array</span> <span class="k">of</span> <span class="n">variants</span><span class="p">,</span> <span class="n">must</span> <span class="n">be</span> <span class="n">passed</span> <span class="k">to</span> <span class="n">this</span> <span class="k">function</span><span class="p">.</span> <span class="n">The</span>
+<span class="k">array</span> <span class="k">of</span> <span class="n">variants</span> <span class="n">is</span> <span class="n">the</span> <span class="k">list</span> <span class="k">of</span> <span class="n">optional</span> <span class="k">parameters</span> <span class="n">that</span> <span class="n">will</span> <span class="n">be</span> <span class="n">passed</span> <span class="n">into</span>
+<span class="n">this</span> <span class="k">function</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">your</span> <span class="n">Automation</span> <span class="n">client</span> <span class="n">is</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">client</span><span class="p">,</span> <span class="k">then</span> <span class="n">the</span> <span class="n">call</span> <span class="n">is</span> <span class="n">made</span> <span class="n">by</span>
+<span class="n">passing</span> <span class="n">however</span> <span class="n">many</span> <span class="k">parameters</span> <span class="n">the</span> <span class="n">caller</span> <span class="n">wishes</span> <span class="k">to</span> <span class="n">pass</span> <span class="n">beyond</span> <span class="n">the</span> <span class="n">one</span>
+<span class="n">required</span> <span class="n">parameter</span><span class="p">.</span> <span class="n">The</span> <span class="n">following</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span> <span class="k">of</span> <span class="n">a</span> <span class="n">call</span> <span class="k">to</span> <span class="n">MyFunc1</span> <span class="k">in</span> <span class="n">Visual</span>
+<span class="n">Basic</span><span class="p">:</span>
+
+     <span class="n">MyObj</span><span class="p">.</span><span class="n">MyFunc1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="s2">"Some String"</span><span class="p">,</span><span class="n">q</span><span class="p">);</span>
+
+<span class="k">In</span> <span class="n">this</span> <span class="n">example</span><span class="p">,</span> <span class="n">x</span> <span class="n">is</span> <span class="n">passed</span> <span class="k">as</span> <span class="n">the</span> <span class="n">required</span> <span class="n">parameter</span> <span class="k">to</span> <span class="n">MyFunc1</span><span class="p">.</span> <span class="n">All</span> <span class="n">other</span>
+<span class="k">parameters</span> <span class="n">are</span> <span class="n">packaged</span> <span class="n">into</span> <span class="n">an</span> <span class="k">array</span> <span class="k">of</span> <span class="n">variants</span> <span class="n">internally</span> <span class="n">by</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">.</span>
+<span class="n">This</span> <span class="k">array</span> <span class="n">is</span> <span class="k">then</span> <span class="n">passed</span> <span class="k">to</span> <span class="n">the</span> <span class="n">automation</span> <span class="n">method</span><span class="p">.</span>
+
+<span class="n">C</span> <span class="k">or</span> <span class="n">C</span><span class="p">++</span>
+<span class="p">--------</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">calling</span> <span class="n">this</span> <span class="n">method</span> <span class="k">from</span> <span class="n">a</span> <span class="n">C</span> <span class="k">or</span> <span class="n">C</span><span class="p">++</span> <span class="n">client</span><span class="p">,</span> <span class="n">more</span> <span class="n">work</span> <span class="n">is</span> <span class="n">necessary</span> <span class="k">to</span>
+<span class="k">package</span> <span class="n">the</span> <span class="n">call</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">calling</span> <span class="n">this</span> <span class="k">function</span> <span class="k">from</span> <span class="n">an</span> <span class="n">MFC</span> <span class="n">client</span>
+<span class="n">application</span> <span class="k">and</span> <span class="n">you</span> <span class="n">use</span> <span class="n">ClassWizard</span> <span class="k">to</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">wrapper</span> <span class="n">class</span> <span class="n">for</span> <span class="n">the</span>
+<span class="n">automation</span> <span class="n">object</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">MyFunc1</span><span class="p">,</span> <span class="n">ClassWizard</span> <span class="n">will</span> <span class="k">not</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">wrapper</span>
+<span class="k">function</span> <span class="n">for</span> <span class="n">MyFunc1</span> <span class="k">or</span> <span class="n">any</span> <span class="k">function</span> <span class="n">that</span> <span class="n">takes</span> <span class="n">a</span> <span class="n">variable</span><span class="p">-</span><span class="n">length</span> <span class="k">list</span> <span class="k">of</span>
+<span class="n">arguments</span><span class="p">.</span> <span class="n">This</span> <span class="n">behavior</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">the</span> <span class="n">MFC</span> <span class="n">implementation</span> <span class="k">of</span>
+<span class="n">COleDispatchDriver</span><span class="p">,</span> <span class="n">which</span> <span class="n">is</span> <span class="n">responsible</span> <span class="n">for</span> <span class="n">packaging</span> <span class="k">and</span> <span class="n">invoking</span> <span class="n">automation</span>
+<span class="n">calls</span><span class="p">,</span> <span class="n">does</span> <span class="k">not</span> <span class="n">understand</span> <span class="n">how</span> <span class="k">to</span> <span class="k">package</span> <span class="n">the</span> <span class="n">SAFEARRAY</span> <span class="n">type</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span> <span class="n">bug</span><span class="p">,</span>
+<span class="n">but</span> <span class="n">rather</span> <span class="n">an</span> <span class="n">MFC</span> <span class="n">limitation</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">use</span> <span class="n">ClassWizard</span> <span class="k">to</span> <span class="n">generate</span> <span class="n">a</span>
+<span class="n">wrapper</span> <span class="n">class</span> <span class="n">for</span> <span class="n">an</span> <span class="n">automation</span> <span class="n">object</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">a</span> <span class="n">method</span> <span class="k">with</span> <span class="n">a</span>
+<span class="n">variable</span><span class="p">-</span><span class="n">length</span> <span class="k">list</span> <span class="k">of</span> <span class="k">parameters</span><span class="p">,</span> <span class="n">you</span> <span class="n">have</span> <span class="k">to</span> <span class="nb">write</span> <span class="n">the</span> <span class="n">wrapper</span> <span class="k">to</span> <span class="n">invoke</span> <span class="n">that</span>
+<span class="k">function</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">Visual</span> <span class="n">C</span><span class="p">++</span> <span class="k">function</span> <span class="n">shows</span> <span class="n">how</span> <span class="k">to</span> <span class="n">invoke</span> <span class="n">the</span> <span class="n">MyFunc1</span> <span class="n">automation</span>
+<span class="n">method</span><span class="p">:</span>
+
+     <span class="n">CString</span> <span class="n">_Class1</span><span class="p">::</span><span class="n">InvokeMyFunc1</span><span class="p">(</span><span class="n">long</span> <span class="n">p1</span><span class="p">,</span><span class="n">VARIANT</span> <span class="p">*</span><span class="n">pVar</span><span class="p">,</span><span class="n">int</span> <span class="n">cElems</span><span class="p">)</span>
+     <span class="p">{</span>
+         <span class="p">//</span><span class="n">pVar</span> <span class="n">is</span> <span class="n">an</span> <span class="k">array</span> <span class="k">of</span> <span class="n">variants</span><span class="p">.</span>
+         <span class="p">//</span><span class="n">cElems</span> <span class="n">is</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">variants</span> <span class="k">in</span> <span class="n">pVar</span><span class="p">.</span>
+         <span class="p">//</span><span class="n">p1</span> <span class="n">is</span> <span class="n">a</span> <span class="n">required</span> <span class="n">long</span> <span class="n">parameter</span><span class="p">.</span>
+         <span class="n">HRESULT</span> <span class="n">hr</span><span class="p">;</span>
+
+         <span class="n">VARIANT</span> <span class="n">returnval</span><span class="p">;</span>
+         <span class="n">EXCEPINFO</span> <span class="n">Excepinfo</span><span class="p">;</span>
+         <span class="n">unsigned</span> <span class="n">int</span> <span class="n">uArgErr</span><span class="p">;</span>
+         <span class="n">DISPPARAMS</span> <span class="n">dp</span><span class="p">;</span>
+
+         <span class="n">VariantInit</span><span class="p">(&amp;</span><span class="n">returnval</span><span class="p">);</span>
+
+         <span class="p">//</span><span class="n">Create</span> <span class="n">the</span> <span class="n">rgvarg</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">DISPPARAMS</span> <span class="n">struct</span><span class="p">.</span>
+         <span class="p">//</span><span class="n">Make</span> <span class="n">it</span> <span class="n">big</span> <span class="n">enough</span> <span class="k">to</span> <span class="n">hold</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">VARIANTS</span> <span class="k">in</span> <span class="n">the</span>
+         <span class="p">//</span><span class="n">pVar</span> <span class="k">array</span> <span class="p">+</span> <span class="n">an</span> <span class="n">extra</span> <span class="n">variant</span> <span class="k">to</span> <span class="n">hold</span> <span class="n">the</span> <span class="n">required</span> <span class="n">parameter</span><span class="p">.</span>
+          <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span> <span class="p">=</span> <span class="n">new</span> <span class="n">VARIANTARG</span><span class="p">[</span><span class="n">cElems</span><span class="p">+</span><span class="m">1</span><span class="p">];</span>
+
+         <span class="p">//</span><span class="n">Because</span> <span class="n">the</span> <span class="n">variable</span> <span class="n">length</span> <span class="n">parameter</span> <span class="k">list</span> <span class="n">is</span> <span class="n">the</span> <span class="n">last</span> <span class="n">argument</span>
+         <span class="p">//</span><span class="k">to</span> <span class="n">the</span> <span class="k">function</span><span class="p">,</span> <span class="n">it</span> <span class="n">gets</span> <span class="n">copied</span> <span class="k">to</span> <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span> <span class="n">first</span><span class="p">.</span>
+         <span class="n">memcpy</span><span class="p">(</span><span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span><span class="p">,</span><span class="n">pVar</span><span class="p">,</span><span class="n">sizeof</span><span class="p">(</span><span class="n">VARIANT</span><span class="p">)*</span><span class="n">cElems</span><span class="p">);</span>
+
+         <span class="p">//</span><span class="n">Add</span> <span class="n">the</span> <span class="n">required</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">p1</span><span class="p">)</span> <span class="k">to</span> <span class="n">the</span> <span class="k">array</span><span class="p">.</span>
+         <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span><span class="p">[</span><span class="n">cElems</span><span class="p">].</span><span class="n">vt</span> <span class="p">=</span> <span class="n">VT_I4</span><span class="p">;</span>
+         <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span><span class="p">[</span><span class="n">cElems</span><span class="p">].</span><span class="n">lVal</span> <span class="p">=</span> <span class="n">p1</span><span class="p">;</span>
+
+         <span class="p">//</span><span class="k">Set</span> <span class="n">cArgs</span> <span class="k">to</span> <span class="n">the</span> <span class="n">total</span> <span class="n">number</span> <span class="k">of</span> <span class="n">arguments</span> <span class="n">passed</span><span class="p">.</span>
+         <span class="n">dp</span><span class="p">.</span><span class="n">cArgs</span> <span class="p">=</span> <span class="n">cElems</span><span class="p">+</span><span class="m">1</span><span class="p">;</span>
+         <span class="n">dp</span><span class="p">.</span><span class="n">cNamedArgs</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+
+         <span class="p">//</span><span class="n">Make</span> <span class="n">the</span> <span class="n">call</span><span class="p">.</span>
+         <span class="n">hr</span> <span class="p">=</span> <span class="n">m_lpDispatch</span><span class="p">-&gt;</span><span class="n">Invoke</span><span class="p">(</span><span class="m">0x6003001C</span><span class="p">,</span>
+                             <span class="n">IID_NULL</span><span class="p">,</span>
+                             <span class="n">LOCALE_SYSTEM_DEFAULT</span><span class="p">,</span>
+                             <span class="n">DISPATCH_METHOD</span><span class="p">,</span>
+                             <span class="p">&amp;</span><span class="n">dp</span><span class="p">,</span>
+                             <span class="p">&amp;</span><span class="n">returnval</span><span class="p">,</span>
+                             <span class="p">&amp;</span><span class="n">Excepinfo</span><span class="p">,&amp;</span><span class="n">uArgErr</span><span class="p">);</span>
+         <span class="p">//</span><span class="n">Delete</span> <span class="n">the</span> <span class="n">memory</span> <span class="n">you</span> <span class="n">allocated</span> <span class="n">above</span> <span class="n">for</span> <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span><span class="p">.</span>
+          <span class="n">delete</span><span class="p">[]</span> <span class="n">dp</span><span class="p">.</span><span class="n">rgvarg</span><span class="p">;</span>
+
+         <span class="p">//</span><span class="n">Return</span> <span class="n">the</span> <span class="k">string</span> <span class="k">as</span> <span class="n">a</span> <span class="n">Cstring</span><span class="p">.</span>
+         <span class="n">CString</span> <span class="n">strRet</span><span class="p">(</span><span class="n">returnval</span><span class="p">.</span><span class="n">bstrVal</span><span class="p">);</span>
+         <span class="n">VariantClear</span><span class="p">(&amp;</span><span class="n">returnval</span><span class="p">);</span>
+         <span class="n">return</span> <span class="n">strRet</span><span class="p">;</span>
+     <span class="p">}</span>
+
+<span class="n">Although</span> <span class="n">the</span> <span class="n">type</span> <span class="n">information</span> <span class="n">for</span> <span class="n">the</span> <span class="n">MyFunc1</span> <span class="k">function</span> <span class="n">specifies</span> <span class="n">that</span> <span class="n">a</span>
+<span class="n">SAFEARRAY</span><span class="p">*</span> <span class="n">be</span> <span class="n">passed</span> <span class="k">in</span><span class="p">,</span> <span class="n">a</span> <span class="n">SAFEARRAY</span> <span class="n">was</span> <span class="k">not</span> <span class="n">created</span> <span class="k">and</span> <span class="n">passed</span> <span class="k">to</span> <span class="n">the</span> <span class="n">invoke</span>
+<span class="n">call</span> <span class="n">by</span> <span class="n">the</span> <span class="n">caller</span><span class="p">.</span> <span class="n">The</span> <span class="n">caller</span> <span class="n">passes</span> <span class="n">an</span> <span class="k">array</span> <span class="k">of</span> <span class="n">variants</span> <span class="n">along</span> <span class="k">with</span> <span class="n">the</span> <span class="n">one</span>
+<span class="n">required</span> <span class="n">parameter</span> <span class="k">and</span> <span class="n">the</span> <span class="n">total</span> <span class="k">count</span> <span class="k">of</span> <span class="n">all</span> <span class="n">arguments</span> <span class="k">in</span> <span class="n">the</span> <span class="n">DISPARAMS</span>
+<span class="n">structure</span><span class="p">.</span> <span class="n">The</span> <span class="n">implementation</span> <span class="k">of</span> <span class="n">Invoke</span> <span class="k">in</span> <span class="n">the</span> <span class="n">server</span> <span class="n">will</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">SAFEARRAY</span><span class="p">,</span>
+<span class="k">package</span> <span class="n">the</span> <span class="n">passed</span><span class="p">-</span><span class="k">in</span> <span class="k">array</span> <span class="k">of</span> <span class="n">variants</span> <span class="n">into</span> <span class="n">the</span> <span class="n">SAFEARRAY</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">pass</span> <span class="n">the</span>
+<span class="n">SAFEARRAY</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span><span class="s1">'s method. Therefore, the responsibility for
+creating the SAFEARRAY to pass to MyFunc1 does not fall on the caller. The
+caller needs to package all of the extra parameters it wishes to pass in a flat
+array (contained in the DISPARAMS struct) and invoke the method.
+
+Additional query words: 4.00 4.10 4.20 kbdsi ParamArray
+
+======================================================================
+Keywords          : kbole kbActiveX kbAutomation kbCOMt kbMFC kbVC400 kbVC420 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

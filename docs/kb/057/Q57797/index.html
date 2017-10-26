@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57797: Problems Using BASIC 7.00 with Novell Advanced NetWare 2.15 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57797: Problems Using BASIC 7.00 with Novell Advanced NetWare 2.15" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57797/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57797/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57797/","publisher":null,"image":null,"headline":"Q57797: Problems Using BASIC 7.00 with Novell Advanced NetWare 2.15","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57797-problems-using-basic-700-with-novell-advanced-netware-215">Q57797: Problems Using BASIC 7.00 with Novell Advanced NetWare 2.15</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57797
+Product(s): See article
+Version(s): 7.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900112-81 | mspl13_basic
+Last Modified: 1-AUG-1990
+
+Microsoft BASIC Professional Development System (PDS) version 7.00 has
+not been fully tested under nor is it guaranteed to run under any
+version of Novell NetWare. Below are some confirmed and unconfirmed
+cases of problems using BASIC PDS 7.00 programs with Novell NetWare.
+
+Confirmed QBX.EXE Hanging Report
+--------------------------------
+
+1. Microsoft Product Support Services performed one test that showed
+   that QBX.EXE may hang under Novell Advanced NetWare version 2.15
+   revision C. This test was performed on an IBM AT with a 16-bit
+   Ungermann Bass network card. The test was run on a nondedicated
+   Novell server. The QBX.EXE editor screen comes up, but at this
+   point, the machine hangs and requires a cold reboot.
+
+   This information applies to the QBX.EXE editor that comes with
+   Microsoft BASIC Professional Development System (PDS) version 7.00
+   for MS-DOS.
+
+Unconfirmed QBX.EXE Hanging Reports
+-----------------------------------
+
+1. A customer reported that QBX.EXE can hang under the following
+   configuration:
+
+      COMPAQ 386/20 or ALR 386/33 computer
+      Version 2.15 Novell Advanced NetWare
+      Micom Interland board NI52100TP-8
+      Microsoft Mouse 7.00
+
+   When the customer booted without the Novell drivers, or with the
+   Novell drivers and without the Microsoft Mouse 7.00 driver, QBX.EXE
+   worked correctly without hanging. Microsoft has not confirmed this
+   information.
+
+2. A customer reported that QBX.EXE can hang under the following
+   configuration:
+
+      IBM PS/2 Model 50z computer
+      Version 2.15 revision C Novell SFT network
+
+3. A customer reported that a BASIC PDS 7.00 program using the
+   OPEN COM statement may hang on a workstation connected to Novell
+   Advanced NetWare version 2.15 revision A. When a Quarterdeck QEMM
+   version 5.00 expanded memory driver was installed, the machine
+   would not hang, but instead, QEMM would return an "Exception 12"
+   error. When the software for the Novell Network was removed, the
+   computer would not hang, nor would it generate an Exception 12
+   error with the QEMM driver loaded. Microsoft has not confirmed this
+   problem. The customer reported the problem on the following
+   configuration:
+
+      Dell System 310
+      Novell Advanced NetWare version 2.15 revision A
+      DOS version 3.30
+      80387 math coprocessor
+      4 MB extended memory
+      Video Seven VGA video card
+      Phoenix 80386 ROM BIOS Plus version 1.10 A05
+      Western Digital EtherCard Plus 16, or 3Com EtherLink card
+
+4. A customer reported that QBX.EXE hangs on the following
+   configuration (customer did not test same program run from .EXE):
+
+      Novell NetWare 2.15 SFT revision C
+      Everex Step 386
+      Version 3 AMI BIOS
+      MS-DOS version 4.01
+
+5. A customer reported that QBX.EXE hangs on the following
+   configuration (customer did not test same program run from .EXE):
+
+    Novell SFT NetWare 286 version 2.15 revision B
+    Uknown name AT 286
+    1 MB RAM
+    MDI Graphics Card (Hercules-compatible)
+    MF-II keyboard
+    MS-DOS 3.30
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

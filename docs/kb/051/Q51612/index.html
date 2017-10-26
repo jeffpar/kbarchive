@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51612: QuickC 1.0x and the CL= and LINK= Environment Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51612: QuickC 1.0x and the CL= and LINK= Environment Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51612/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51612/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51612/","publisher":null,"image":null,"headline":"Q51612: QuickC 1.0x and the CL= and LINK= Environment Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51612-quickc-10x-and-the-cl-and-link-environment-settings">Q51612: QuickC 1.0x and the CL= and LINK= Environment Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51612
+Product(s): See article
+Version(s): 1.00 1.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 17-JAN-1990
+
+You can add QCL command-line options to the default options that the
+QuickC Versions 1.00 and 1.01 environments use when building a program
+by setting an environment variable called CL at the DOS prompt. For
+example, if at the DOS prompt you type
+
+   set cl=/FPi87
+
+the QuickC compiler will generate floating point instructions and
+select an 8087/80287/80387 library. Similarly, you can set linker
+options by setting the LINK= variable at the DOS prompt. If you type
+
+   set link=/M
+
+each time you execute the QuickC linker, it will create a linker map
+for your source file that contains all global symbols in your source
+code. Now, if you type
+
+   link foo.obj
+
+the linker will actually add the /M flag to its list of options for
+this execution. The linker will now do the same things it would do if
+you had typed the following:
+
+   link /M foo.obj
+
+However, there are a few situations when the QuickC environment does
+not react as you might expect to setting environment variables. Three
+of these software limitations are described below:
+
+1. The CL= variable is not checked if there are multiple modules in
+   the program list.
+
+2. You will not receive an error message if you have an invalid
+   setting for the CL= variable with or without a program list.
+
+3. Settings for the LINK= environment variable are ignored entirely by
+   the environment.
+
+All of these limitations have been corrected in QuickC Versions 2.00
+and 2.01. In each of these cases, the environment variable settings
+are found correctly in QuickC Versions 2.00 and later.
+
+1. CL= not checked in multiple-module programs.
+
+   QuickC Versions 1.00 and 1.01 fail to look at the environment table
+   for a CL environment variable if there is more than one source
+   module in the program list. Even if you edit the makefile to add
+   the option to the list of QCL options, QuickC will not look at the
+   changed options, but will compile with the default options in the
+   original makefile.
+
+   The following sequence of events will demonstrate this limitation.
+   These steps will attempt to force QuickC to use the MLIBC7.LIB
+   library. If this library is in your LIB subdirectory, temporarily
+   rename it so that QuickC cannot find it. Also rename the MLIBCE.LIB
+   file so that you are prompted for it at link time.
+
+   a. At the DOS prompt, type the following:
+
+         set cl=/FPi87
+
+   b. Create one source code module as follows:
+
+         /* FOO.C */
+         #include &lt;stdio.h&gt;
+         void other(void);
+         void main(void)
+         {
+              printf("Executing main procedure.\n");
+              other();
+         }
+
+   c. Create another source module as follows:
+
+         /* OTHER.C */
+         #include &lt;stdio.h&gt;
+         void other(void)
+         {
+              printf("Executing other module.\n");
+         }
+
+   d. Set a program list for FOO.C that contains FOO.C and OTHER.C.
+
+   e. Build the program from the environment.You are prompted for the
+      MLIBCE.LIB library instead of MLIBC7.LIB, as you would expect.
+      QuickC has ignored the CL= environment variable.
+
+2. Environment ignores invalid flag.
+
+   If you set the CL= variable to an invalid option, the QuickC
+   environment ignores the flag even if you are in a single module
+   program.
+
+   a. Type the following line at the DOS prompt:
+
+         set cl=/JUNK
+
+   b. Create the following file:
+
+         /* HELLO.C */
+         #include &lt;stdio.h&gt;
+         void main(void)
+         {
+              printf("Hello?!\n");
+         }
+
+   c. Build the program from within the environment. The environment
+      should give you an error concerning the invalid switch, but it
+      does not.
+
+3. Environment ignores LINK= flag.
+
+   a. Type the following line at the DOS prompt:
+
+         set link=/M
+
+   b. Build HELLO.C (above) from within the environment.
+
+   c. Exit to DOS and notice that there is no HELLO.MAP file created.
+      You can also set the LINK= variable to a junk setting and notice
+      that you still receive no invalid flag errors.
+
+   Notice that these errors occur only when you build a new program in
+   the environment. If you compile and link at the DOS prompt, the
+   environment settings are found correctly.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q30285: C Extension to Make Psearch Prompt for an Input in M.EXE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q30285: C Extension to Make Psearch Prompt for an Input in M.EXE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/030/Q30285/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/030/Q30285/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/030/Q30285/","publisher":null,"image":null,"headline":"Q30285: C Extension to Make Psearch Prompt for an Input in M.EXE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q30285-c-extension-to-make-psearch-prompt-for-an-input-in-mexe">Q30285: C Extension to Make Psearch Prompt for an Input in M.EXE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q30285
+Product(s): See article
+Version(s): 1.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 23-MAY-1988
+
+Question:
+   I wish to emulate the Brief Psearch (Plus Search) with the M.EXE
+editor. I want Psearch to prompt me to enter a search string. Can this
+be done with a macro or do I have to use a Microsoft C extension?
+
+Response:
+    This emulation cannot be done with macros. However, it can be done
+with Microsoft C extensions.
+    The following is an example of how to do so in a Microsoft C
+extension:
+
+    1. Use DoMessage() to output a string saying something similar to
+the following:
+
+    "Please enter the search string:"
+
+    2. Use KbUnHook() to disable M.EXE's "logical keyboard." This
+gives you the "focus" of the keyboard so that keyboard input is no
+longer read by the editor, thus freeing you to input a string from the
+user.
+    3. Parse the keyboard input and then process it appropriately by
+invoking the Psearch function.
+    4. Use KbHook() to reenable the logical keyboard in M.
+
+    The following is an alternate method:
+
+    Use "ReadChar()" instead of "KbUnHook()" and "KbHook()."
+(Mentioned in steps two and four above.)
+
+    For more information on the functions available for writing C
+extensions, please read the files EXT.DOC and EXT.H that are included
+with the Microsoft Editor Version 1.00.
+    For general information on programming C extensions, please
+consult Chapter 8 of the "Microsoft Editor User's Guide."
+    Appendix A of the "Microsoft Editor User's Guide" provides a
+comprehensive list of editing functions such as Psearch.
+    Psearch searches forward for the previously defined string or
+pattern. Msearch (Minus Search) searches backward for the previously
+defined string or pattern.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

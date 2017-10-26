@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137277: PPT7: Playlists Don’t Work in PowerPoint 7.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137277: PPT7: Playlists Don’t Work in PowerPoint 7.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137277/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137277/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137277/","publisher":null,"image":null,"headline":"Q137277: PPT7: Playlists Don’t Work in PowerPoint 7.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137277-ppt7-playlists-dont-work-in-powerpoint-70">Q137277: PPT7: Playlists Don’t Work in PowerPoint 7.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137277
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbviewer
+Last Modified: 16-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to use a playlist (.lst) file in Microsoft PowerPoint you may
+receive the following error message:
+
+  PowerPoint can't read &lt;file name of playlist file&gt; because the .lst
+  file format is no longer supported. For more information about showing
+  multiple presentations, see PowerPoint Help.
+
+CAUSE
+=====
+
+Playlist (.lst) files are not supported in PowerPoint; they are only supported
+in PowerPoint Viewer.
+
+RESOLUTION
+==========
+
+If you want to run a series of presentations as slide shows in PowerPoint, you
+can use a batch file. To create the batch file, follow these steps:
+
+1. In a text editor, such as Notepad, create a list of the presentations you
+  want to run. To do this, use the following syntax:
+
+  start &lt;path&gt;\powerpnt.exe /s &lt;path&gt;\&lt;presentation.ppt&gt;
+
+  For example, if you have two presentations, Myfile1.ppt and Myfile2.ppt,
+  create your list so that it looks similar to this example:
+
+  start c:\powerpnt\powerpnt.exe /s c:\powerpnt\myfile1.ppt
+  start c:\powerpnt\powerpnt.exe /s c:\powerpnt\myfile2.ppt
+
+  NOTE: If your path, including the presentation file name, does not follow the
+  MS-DOS 8.3 naming convention (in other words, it is long or contains spaces),
+  enclose the path and file name inside quotation marks, like this:
+
+  start "c:\ppt 95\powerpnt.exe" /s "c:\my documents\file 1.ppt"
+
+  NOTE: You do not need to enclose a path that follows the MS-DOS 8.3 naming
+  convention in quotation marks. Doing so may cause the batch file to fail.
+
+2. Save this file with a .bat extension.
+
+3. Start Windows Explorer. Right-click the file and then click Properties on the
+  menu that appears.
+
+4. Click the Program tab. From the Run list, click Minimized.
+
+5. Click to select the Close On Exit check box.
+
+6. Click OK.
+
+NOTE: This procedure creates a shortcut to your batch file. You can move this
+shortcut to your desktop or put it on your Start menu.
+
+To run the batch file, double-click it in My Computer or Explorer, or
+double-click the shortcut.
+
+The result is very similar to a playlist; the presentations play in order. The
+only difference is that you will see your desktop for a moment between
+presentations.
+
+Additional query words: 7.00 winppt ppt95 ppt7 w_powerpt powerpnt play lists .LST ppview32.exe
+
+======================================================================
+Keywords          : kbviewer 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

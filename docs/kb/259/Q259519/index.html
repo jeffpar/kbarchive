@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259519: PRB: Image Control Invisible When Visible Property Set to True | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259519: PRB: Image Control Invisible When Visible Property Set to True" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259519/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259519/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259519/","publisher":null,"image":null,"headline":"Q259519: PRB: Image Control Invisible When Visible Property Set to True","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259519-prb-image-control-invisible-when-visible-property-set-to-true">Q259519: PRB: Image Control Invisible When Visible Property Set to True</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259519
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB kbDSupport kbOSWinCE300
+Last Modified: 20-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you place an Image control on a form and set its Visible property to True,
+the control seems to stay invisible after you run the application in emulation
+and on the device.
+
+CAUSE
+=====
+
+The problem occurs because the Form and the Image control have the same default
+background color. The Visible property of the Image control is actually working.
+
+RESOLUTION
+==========
+
+To resolve the problem, change the background color of the Form. However, this
+solution only works for the Palm-size PC and the Handheld PC/Pro. On the Pocket
+PC, if you change the background color of the Form, it still does not show the
+Image control although its Visible property is actually True. To solve this, you
+can assign its Picture property to a bitmap and the Image control then becomes
+visible.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new eMbedded Visual Basic project. Form1 is created by default.
+
+2. On the Project menu, select Components, and then select Microsoft CE Image
+  Control 3.0.
+
+3. Add an Image control (ImageCtl1) to the form and set its Visible property to
+  False.
+
+4. Add the following code:
+
+  Private Sub Form_Click()
+     MsgBox ImageCtl1.Visible 
+     ImageCtl1.Visible = True
+     MsgBox ImageCtl1.Visible 
+  End Sub
+
+5. Run the project in emulation. Click the Form, and note that the first message
+  box displays False, and the second message box displays True. However, the
+  Image control stays invisible.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVB kbDSupport kbOSWinCE300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

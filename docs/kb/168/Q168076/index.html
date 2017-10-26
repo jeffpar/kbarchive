@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168076: WINS Fails to Converge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168076: WINS Fails to Converge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168076/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168076/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168076/","publisher":null,"image":null,"headline":"Q168076: WINS Fails to Converge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168076-wins-fails-to-converge">Q168076: WINS Fails to Converge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168076
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbWinNT400sp4fix
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+All domain controllers register their domain name with &lt;1c&gt; as the
+sixteenth character of the NetBIOS name. For each domain, a domain
+name&lt;1C&gt; record will exist on a Windows Internet Name Service (WINS)
+server that contains a list of IP addresses of all the domain controllers in
+that domain.
+
+When several domain controllers register the &lt;1C&gt; name with different WINS
+servers, a replication problem prevents the replication partners from having an
+entire list of IP addresses for this record. This may result in client logon
+problems or uneven load on the domain controllers.
+
+NOTE: This problem happens only when different domain controllers, belonging to
+the same domain, register with different WINS servers, and the replication model
+is NOT a hub and spoke model.
+
+CAUSE
+=====
+
+By design, WINS cannot increment the version ID of a replica record (record
+owned by another WINS server). Only the owner of the record is allowed to
+increment the version ID of the record. A stalemate situation can occur where an
+updated replica &lt;1C&gt; record may not be replicated because of the above
+design rules.
+
+MORE INFORMATION
+================
+
+Consider the following scenario:
+
+  WINS1 &lt;--&gt; WINS2 &lt;--&gt; WINS3 &lt;--&gt; WINS4
+
+  Primary Domain Controller (PDC) 1 - x.x.x.221
+  Backup Domain Controller (BDC) 1 - x.x.y.60
+
+1. PDC registers with WINS1;
+
+  WINS1 now has:
+  domain&lt;1c&gt; version id 505,
+  contains ip x.x.x.221,
+  owner is wins1.
+
+2. BDC registers with WINS4
+
+  WINS4 now has:
+  domain&lt;1c&gt; version id 254
+  contains ip x.x.y.60
+  owner is WINS4
+
+3. WINS1 &lt;--replicates with---&gt;WINS2
+
+  both WINS1 and WINS2 now have:
+  domain&lt;1c&gt; version id 505
+  contains ip x.x.x.221
+  owner is WINS1
+
+4. WINS2 &lt;--replicates with --&gt; WINS3
+
+  WINS1 WINS2 and WINS3 now have:
+  domain&lt;1c&gt; version id 505
+  contains ip x.x.x.221
+  owner is WINS1
+
+5. WINS3 &lt;-replicates-&gt; WINS4
+
+  WINS4 now has :
+  domain&lt;1c&gt; newer version id 255 (or more)
+  contains: ip x.x.x.221;ip x.x.y.60;
+  owner WINS4
+
+  WINS3 now has:
+  domain&lt;1c&gt; SAME version id 505
+  contains: ip x.x.x.221;ip x.x.y.60;
+  owner WINS1
+
+NOTE: Version number is not incremented for this record because this is a replica
+record and is owned by WINS1.
+
+6. WINS2&lt;--replicates with--&gt;WINS3
+
+  domain&lt;1c&gt; record on WINS2 is not
+  updated containing only ip x.x.x.221
+
+RESOLUTION
+==========
+
+The resolution is to give ownership to the WINS Server that merges the
+&lt;1c&gt; record. In other words, a replication partner can take ownership for
+a 1C record, if it receives a replica 1C record from a second replication
+partner.
+
+In the above scenario the behavior will be:
+
+(Steps 1-4 are the same)
+
+5. WINS3 &lt;-replicates-&gt; WINS4
+
+  WINS4 now has :
+  domain&lt;1c&gt; version id 255 (wins4's highest id number)
+  contains: ip x.x.x.221;ip x.x.y.60;
+  owner WINS4
+
+  WINS3 now has:
+  domain&lt;1c&gt; version id 2000(wins3's highest number)
+  contains: ip x.x.x.221;ip x.x.y.60;
+  ****owner WINS3 &lt;&lt;&lt;&lt;&lt;&lt;NOTE
+
+6. WINS2&lt;--replicates with--&gt;WINS3
+
+  WINS2 now has:
+  domain&lt;1c&gt; version id 442&lt;&lt;wins2's highest number&gt;
+  contains ip x.x.x.221;ip x.x.y.60;
+  ***owner WINS2 &lt;&lt;&lt;&lt;&lt;&lt;NOTE
+
+7. WINS1&lt;--replicates with--&gt;WIN2
+
+  WINS1 now has:
+  domain&lt;1c&gt; version id 506 &lt;WINS1's highest number at that time&gt;
+  contains ip x.x.x.221;ip x.x.y.60;
+  owner WINS1
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A
+supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: prodnt fails 1bh groupname
+
+======================================================================
+Keywords          : kbnetwork kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

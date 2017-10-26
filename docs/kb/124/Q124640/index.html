@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124640/","publisher":null,"image":null,"headline":"Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124640-windows-nt-35-setup-err-msg-setup-has-recognized-the">Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124640
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT from a compact disc using WINNT.EXE (with or without
+the /B switch), the following message appears during the search for mass storage
+devices:
+
+  Setup has recognized the following mass storage devices in your computer:
+  &lt;none&gt;.
+
+If you are running WINNT without any parameters, and you choose Continue, Setup
+continues and then asks for disk number four. Because disk number four does not
+exist, Setup cannot continue.
+
+If you are running WINNT /B, and you choose Continue, Setup completes. When you
+try to install the Future Domain 800-series device driver the following error
+message appears:
+
+  Error: Unable to open the file D:\i386\fd8xx.sys.
+
+CAUSE
+=====
+
+This problem occurs when the J3 jumpers on your STB Powergraph video accelerator
+card is in the 16-bit BIOS position.
+
+RESOLUTION
+==========
+
+Set the J3 jumper to the 8-bit BIOS position. If you were running WINNT without
+any parameters to install Windows NT, you should now be able to reinstall it.
+
+For more information, contact STB Systems Inc. at (800) 234-4334.
+
+MORE INFORMATION
+================
+
+The J3 jumper is used to configure the card for 8-bit or 16-bit BIOS data
+transfers. The 16-bit BIOS setting is designed for real-mode (MS-DOS) software.
+The 8-bit BIOS setting is designed for non-real mode software.
+
+The STB product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt 8xx 4 #4 cd cdrom cd-rom unconf power graph adapter
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189486/","publisher":null,"image":null,"headline":"Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189486-howto-expose-an-mfc-ole-container-to-vba-automation">Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189486
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbcode kbole kbAutomation kbCOMt kbContainer KbVBA kbVC500 kbGrpDSMFCATL
+Last Modified: 21-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Visual Basic for Applications Container property returns a pointer
+to the container's dispatch interface. However, the MFC OLE container
+implementation does not support this behavior. When you attempt to access this
+property, you get the following Visual Basic for Applications error:
+
+  Run-time error 430, Class does not support automation.
+
+This occurs even if automation support has been added to the container.
+
+For example, in Microsoft Word, the Visual Basic for Applications code
+ThisDocument.Container should return the dispatch pointer of the container.
+Instead, when run while embedded inside an MFC container application, the above
+error is returned.
+
+Support for this property is necessary for Visual Basic for Applications to have
+access to automation objects that might be exposed by your MFC OLE container
+application.
+
+MORE INFORMATION
+================
+
+Steps to Expose a Dispatch Interface From an MFC OLE Container Application
+--------------------------------------------------------------------------
+
+1. Add automation to your container application. If you created your container
+  with the AppWizard and you included automation support, this is already done.
+  If you need to add automation support, see "ClassWizard: Automation Support"
+  in the Visual C++ documentation.
+
+2. Implement IServiceProvider. Since Visual Basic for Applications queries the
+  container via COleClientItem for IServiceProvider, this interface should be
+  implemented as a nested class of your COleClientItem derived class. (See code
+  below.)
+
+  Place the following code in the header file of your derived COleClientItem
+  class:
+
+        class CSomeClientItem : public COleClientItem
+        {
+        ...
+        BEGIN_INTERFACE_PART(OleServiceProvider, IServiceProvider)
+           INIT_INTERFACE_PART(CSomeClientItem, OleServiceProvider)
+            STDMETHOD(QueryService)
+            (REFGUID guidService, // Unique identifier for the requested
+                                  // service.
+            REFIID riid,    //Unique identifier for the requested interface.
+            void** ppv);    //Address of output variable.
+        END_INTERFACE_PART(OleServiceProvider)
+        DECLARE_INTERFACE_MAP()
+        ...
+        };
+
+  Place the following code in the .cpp file of your derived ColeClientItem
+  class:
+
+        BEGIN_INTERFACE_MAP(CSomeClientItem, COleClientItem)
+        INTERFACE_PART(CSomeClientItem,IID_IServiceProvider,
+                       OleServiceProvider)
+        END_INTERFACE_MAP()
+
+        STDMETHODIMP_(ULONG) CSomeClientItem::XOleServiceProvider::AddRef()
+        {
+           METHOD_PROLOGUE_EX(CSomeClientItem, OleServiceProvider)
+           return pThis-&gt;ExternalAddRef();
+        }
+
+        STDMETHODIMP_(ULONG) CSomeClientItem::XOleServiceProvider::Release()
+        {
+           METHOD_PROLOGUE_EX(CSomeClientItem, OleServiceProvider)
+           return pThis-&gt;ExternalRelease();
+        }
+
+        STDMETHODIMP CSomeClientItem::XOleServiceProvider::QueryInterface(
+        REFIID iid, LPVOID* ppvObj)
+        {
+           METHOD_PROLOGUE_EX(CSomeClientItem, OleServiceProvider)
+           return pThis-&gt;ExternalQueryInterface(&amp;iid, ppvObj);
+        }
+
+        STDMETHODIMP CSomeClientItem::XOleServiceProvider::QueryService(
+        REFGUID guidService, REFIID riid, void** ppv)
+        {
+           METHOD_PROLOGUE_EX(CSomeClientItem, OleServiceProvider)
+           if ((guidService == SID_SContainerDispatch)&amp;&amp;(IID_IDispatch ==
+                                                         riid))
+           {
+           // In this example, automation support has been added to
+           // the document.
+           if (*(ppv) = (LPVOID) pThis-&gt;GetDocument()-&gt;GetIDispatch(TRUE))
+              return S_OK;
+           else
+              return E_FAIL;
+           }
+           return E_FAIL;
+        }
+
+3. Return dispatch interface in the IServiceProvider::QueryService() call.
+  IServiceProvider::QueryService is called requesting the
+  SID_SContainerDispatch service and the IID_IDispatch interface. The dispatch
+  interface to your automation class should be returned in this call. (See
+  CSomeClientItem::XOleServiceProvider::QueryService in the previous code.)
+
+REFERENCES
+==========
+
+Visual C++ Programmer's Guide: search on "Automation Support, ClassWizard"
+
+Microsoft Foundation Class Reference: MFC Technical Notes; TN038: MFC/OLE
+IUnknown Implementation
+
+Platform SDK: search on: IServiceProvider
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+Francis, Microsoft Corporation
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Mike Francis, Microsoft Corporation
+
+
+Additional query words: IServiceProvider QueryService 430 Container Office Automation
+
+======================================================================
+Keywords          : kbcode kbole kbAutomation kbCOMt kbContainer KbVBA kbVC500 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

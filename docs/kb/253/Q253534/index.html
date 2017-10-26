@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253534: Gathering System Information Without GUI Interaction | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253534: Gathering System Information Without GUI Interaction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253534/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253534/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253534/","publisher":null,"image":null,"headline":"Q253534: Gathering System Information Without GUI Interaction","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253534-gathering-system-information-without-gui-interaction">Q253534: Gathering System Information Without GUI Interaction</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253534
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2000; winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kbtoolkbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to gather system information without Graphical User
+Interface (GUI) interaction, so that Microsoft Support Professionals can
+troubleshoot configuration problems on a computer that is running Windows NT 4.0
+or Windows 2000.
+
+MORE INFORMATION
+================
+
+The basic tool that is used to gather system information in Windows NT 4.0 is
+Winmsd.exe. This utility does not exist in Windows 2000; the Msinfo32.exe tool
+has replaced it. It is located in the &lt;System_drive&gt;:\Program Files\Common
+Files\Microsoft Shared\MSInfo folder. There is no path to this folder by
+default, so you must start Msinfo32.exe by using the full path. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q229798 Msinfo32.exe Starts When You Try to Start Winmsd
+
+In addition to a more detailed graphical view of a local or remote computer's
+configuration, Msinfo32.exe supports additional command-line switches to
+generate text-based system information files about the software and hardware
+configuration from a local or remote computer. This is also true for Windows NT
+4.0-based computers, with minor restrictions.
+
+If you cannot use Winmsd.exe locally or do not have an appropriate tool to gather
+system information on a Windows NT 4.0-based computer, a remote output from
+Msinfo32.exe might be sufficient.
+
+If a remote Console service is installed on the Windows NT 4.0-based computer,
+you can use the following command to create a text-based system information
+file:
+
+  winmsd.exe /report path:\report.log
+
+Msinfo32.exe supports the following command-line switches to generate a local or
+remote system information file:
+
++----------------------------------------------------------------------+
+| Switch       | Description                                           | 
++----------------------------------------------------------------------+
+| /?           | Display this Help                                     | 
++----------------------------------------------------------------------+
+| /msinfo_file | Open the specified .nfo or .cab file                  | 
++----------------------------------------------------------------------+
+| /nfo or /s   | Outputs an .nfo file with the specified file name     | 
++----------------------------------------------------------------------+
+| /report      | Outputs a text-format file to the specified file name | 
++----------------------------------------------------------------------+
+| /computer    | Connects to the specified computer                    | 
++----------------------------------------------------------------------+
+| /categories  | Displays or outputs the specified categories          | 
++----------------------------------------------------------------------+
+| /category    | Set focus to a specific category at startup           | 
++----------------------------------------------------------------------+
+
+Note that the generation of the text file can take some time, depending on the
+complexity of the system.
+
+Additional query words: winmsd reomte system configuration msinfo32
+
+======================================================================
+Keywords          : kbenv kbtool kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro
+Version           : WINDOWS:2000; winnt:4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158765/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158765/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158765/","publisher":null,"image":null,"headline":"Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158765-info-nodualinterface-entry-is-placed-in-registry-by-vfp-50">Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158765
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbsetup kbvfp500 kbvfp600
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some ActiveX controls can support early binding, that is, where the control
+supports a dual interface (a combination of an IDispatch and a Vtable
+interface). If an ActiveX control registers itself incorrectly as supporting a
+dual interface, then it might produce incorrect error messages. These errors may
+include Invalid Page Fault errors under Windows 95 or Access Violation errors
+under Windows NT.
+
+MORE INFORMATION
+================
+
+Some ActiveX controls might be incorrectly registered as supporting Vtable
+binding. This might cause an error when you use an ActiveX control. Visual
+FoxPro 5.0 addresses this error in the development environment by adding the
+"NoDualInterface" key to the registry. This key lists three known controls that
+can register themselves as supporting Vtable binding. Note that there may be
+other Activex controls that register themselves as supporting Vtable binding
+when, in fact, they do not. If you add them to this list, they function
+properly.
+
+When Visual FoxPro is used to build an .exe file, it does not add the
+NoDualInterface key to the registry file upon installation. If an ActiveX
+control does not perform correctly, use the SYS(2333) function to enable or
+disable dual-interface support of an ActiveX control.
+
+You can also build a .reg file and run it as a post-executable when you install
+the .exe file. This adds the "NoDualInterface" key to the registry.
+
+Or, you can write a program in Visual FoxPro that updates the registry.
+
+REFERENCES
+==========
+
+For more information about how to write a program in Visual FoxPro to update the
+registry, please see the following article in the Microsoft Knowledge Base:
+
+  Q135398 How To Write to the Windows Registry Using API Calls
+
+For more information about early binding, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q138138 Three Binding Types (Late, ID, Early) Possible in VB for Apps
+
+Currently, Visual FoxPro 5.0 is the only Microsoft product that supports the
+early Vtable binding of an ActiveX control. To disable dual-interface
+functionally of an ActiveX control, use the SYS(2333) function.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93620: PRB: Cannot Find Transport Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93620: PRB: Cannot Find Transport Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93620/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93620/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93620/","publisher":null,"image":null,"headline":"Q93620: PRB: Cannot Find Transport Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93620-prb-cannot-find-transport-program">Q93620: PRB: Cannot Find Transport Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93620
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 02-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for MS-DOS, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to open a label, screen, or report fails and FoxPro displays one of
+the following messages on the screen:
+
+In FoxPro 2.x for Windows:
+
+  Cannot find the transport program
+
+  -or-
+
+  File \TRANSPRT.PRG not found
+
+In Visual FoxPro for Windows:
+
+  File 'convert.app' does not exist.
+
+CAUSE
+=====
+
+A file created on one FoxPro platform or prior version has been transported to
+another or Visual FoxPro for Windows, and FoxPro cannot locate the conversion
+utility.
+
+RESOLUTION
+==========
+
+To solve the problem, do the following:
+
+1. Make sure that the conversion utility is installed on your machine.
+
+2. If the conversion utility is installed in a directory other then the main
+  FoxPro directory or has a name other than TRANSPRT.PRG (FoxPro 2.x) or
+  CONVERT.APP (Visual FoxPro for Windows), specify the path to the conversion
+  utility in the _TRANSPORT (FoxPro 2.x) or _CONVERTER (Visual FoxPro for
+  Windows) system variable in the FoxPro configuration file (CONFIG.FP for
+  FoxPro for MS-DOS or CONFIG.FPW for FoxPro for Windows). For example, one of
+  the following:
+
+     _TRANSPORT="C:\FOXPROW\TEST\TRANSPRT.FXP"  &amp;&amp; FoxPro 2.x
+
+  -or-
+
+     _CONVERTER="C:\VFP\CONVERT.APP"            &amp;&amp; Visual FoxPro
+
+MORE INFORMATION
+================
+
+By default, the transport utility is named TRANSPRT.PRG in FoxPro 2.x, and
+CONVERT.APP in Visual FoxPro for Windows. FoxPro runs the conversion utility for
+a label, screen, or report under the following circumstances:
+
+- When a file developed in FoxPro 2.0 for MS-DOS is run with FoxPro 2.5x for
+  Windows
+
+- When a file developed in FoxPro 2.0 for MS-DOS is run with FoxPro 2.5x, or
+  2.6x for MS-DOS
+
+- When a file developed in FoxPro 2.5x or 2.6x for MS-DOS is run with FoxPro
+  2.x for Windows
+
+- When a file developed in FoxPro 2.x for Windows is run with FoxPro 2.5x or
+  2.6x for MS-DOS
+
+- When a file developed in FoxPro 2.x (any platform) is opened in Visual
+  FoxPro.
+
+Additional query words: XPlatForm VFoxWin FoxDos FoxWin 2.50 2.50a 2.50b errmsg err msg converter
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbVFP300
+Version           : MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

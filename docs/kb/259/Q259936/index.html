@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259936/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259936/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259936/","publisher":null,"image":null,"headline":"Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259936-mmc-cannot-administer-iis-40-through-terminal-server-client">Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259936
+Product(s): Internet Information Server
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT version 4.0 Option Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Management Console (MMC) cannot administer Microsoft Internet
+Information Server (IIS) through a Windows NT 4.0 Terminal Server client.
+
+If you attempt to do so, DCOM error messages appear in the System log when you
+try to expand the IIS and Microsoft Transaction Server (MTS) snap-ins. Two error
+messages appear in the System log:
+
+  Event ID: 10100 Source DCOM User: &lt;Domain Name&gt;\Administrator The
+  server {A9E69610-B80D-11D0-B9B9-00A0C922E750} did not register with DCOM
+  within the required timeout.
+
+  Event ID 10100 Source: DCOM User: &lt;Domain Name&gt;\Administrator The
+  server {182C40F0-32E4-11D0-818B-00A0C9231C29} did not register with DCOM
+  within the required timeout.
+
+CAUSE
+=====
+
+This issue is caused by the IIS server security context and the remote
+communication mode through the Terminal Server client. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q217144 INFO: Difficulties Using Net APIs in ISAPI and ASP COM Objects
+
+WORKAROUND
+==========
+
+There is no workaround for this issue. IIS is not intended for use on Windows NT
+Server 4.0, Terminal Server Edition, and is not supported. Microsoft recommends
+that customers running IIS 4.0 on Windows NT Server 4.0, Terminal Server
+Edition, protect their systems by uninstalling IIS 4.0.
+
+This issue does not exist in Microsoft Windows 2000 Server with Internet
+Information Services.
+
+MORE INFORMATION
+================
+
+CLSID {A9E69610-B80D-11D0-B9B9-00A0C922E750} refers to the IISADMIN object;
+{182C40F0-32E4-11D0-818B-00A0C9231C29} refers to the MTS Catalog object.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q190157 Support for Windows NT 4.0 Option Pack on Terminal Server
+
+Additional query words: tse ntop mmc mtx catalog
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNT400OptionPack
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

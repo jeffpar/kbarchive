@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141121: Converting FAT to NTFS Fails Using BusLogic Controller | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141121: Converting FAT to NTFS Fails Using BusLogic Controller" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141121/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141121/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141121/","publisher":null,"image":null,"headline":"Q141121: Converting FAT to NTFS Fails Using BusLogic Controller","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141121-converting-fat-to-ntfs-fails-using-buslogic-controller">Q141121: Converting FAT to NTFS Fails Using BusLogic Controller</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141121
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kbhw kbHardware
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT and try to convert a File Allocation Table (FAT)
+partition to Windows NT File System (NTFS) either by running the Setup program
+upon final boot after installing Windows NT 3.51 or by using the CONVERT
+command, the following error message appears on a blue screen during boot:
+
+  Insufficient memory, could not check partition for errors, did not convert to
+  NTFS
+
+You are still able to boot up your computer, but the file system will only be in
+FAT format. Windows NT then checks for errors on the disk, and you will get the
+following error message:
+
+  The type of file system is FAT. Volume serial number is
+  &lt;serial_number&gt;. Insufficient Memory.
+
+The system log has the following error entries:
+
+  Event ID: 11
+  Source: Buslogic
+  Description:
+
+  The driver detected a controller error on \Device\ScsiPort0.
+
+CAUSE
+=====
+
+Your computer has a hard drive with a capacity of over 2 gigabytes (GB) attached
+to a BusLogic SCSI card.
+
+RESOLUTION
+==========
+
+To correct this problem, download the new BUSLOGIC.SYS driver for Windows NT
+3.51 from the BusLogic BBS.
+
+Please contact Bus Logic technical support at (408) 970-1414 to obtain the new
+driver and to confirm the firmware and BIOS versions on your SCSI controllers.
+There may be firmware and BIOS dependencies of the BusLogic SCSI adapters for
+the new driver to function correctly.
+
+
+MORE INFORMATION
+================
+
+To install the new driver:
+
+1. Copy the new driver (Buslogic.sys, 16384 bytes, 10-20-95, 1:26P) into the
+  C:\WINNT35\SYSTEM32\DRIVERS sub-directory.
+
+2. Reboot the system.
+
+3. At a command prompt, type "CHKDSK C: /f /r" (without the quotation marks to
+  ensure the volume is clean prior to converting the volume to NTFS.
+
+  If errors persist after you issue the CHKDSK.EXE command several times, you
+  will need to reformat the drive and reinstall Windows NT. This is because the
+  older driver damaged the volume at the sector level which cannot be repaired
+  by CHKDSK.EXE.
+
+4. To convert the file system from FAT to NTFS, type:
+
+  convert c: /fs:ntfs
+
+5. Clear the event log of previous error messages.
+
+6. Reboot.
+
+7. Run chkdsk to make sure no errors are present.
+
+
+Additional query words: prodnt convert.exe
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

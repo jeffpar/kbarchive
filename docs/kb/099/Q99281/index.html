@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99281: Device Drivers and TSRs That Cannot Be Loaded High | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99281: Device Drivers and TSRs That Cannot Be Loaded High" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99281/","publisher":null,"image":null,"headline":"Q99281: Device Drivers and TSRs That Cannot Be Loaded High","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99281-device-drivers-and-tsrs-that-cannot-be-loaded-high">Q99281: Device Drivers and TSRs That Cannot Be Loaded High</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99281
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MemMaker increases your conventional memory by loading device drivers and
+terminate-and-stay-resident (TSR) programs into upper memory. Sometimes a device
+driver or TSR program cannot be loaded into upper memory because of its design.
+
+Since MemMaker is not aware of every device driver or TSR that cannot be loaded
+high, your system may stop responding (hang) when you run MemMaker. To recover
+from this situation, refer to the section titled "Your computer stops responding
+while MemMaker is loading a program or device driver other than EMM386" in
+Chapter 6 of the "User's Guide."
+
+MORE INFORMATION
+================
+
+During the beta test of MS-DOS 6 Upgrade, Microsoft found several programs that
+could not be loaded high. These programs are listed in the MEMMAKER.INF file.
+
+The following device drivers and TSRs cannot be loaded into upper memory and are
+not currently listed in the MEMMAKER.INF file:
+
+  Device Driver or TSR    Function
+  --------------------------------
+  ATDOSHC.SYS             Quantum Hard Card EZ driver
+  DEVSWAP                 SuperStor Pro device driver
+  DOSCFG.EXE              Iomega OAD driver for Bernoulli drives
+  GAI.SYS                 APPIAN Rendition IIe video card device driver
+  I82593.DOS              Zenith Data System Z-Note portable computer
+                          Windows for Workgroups device driver
+  NET                     PC-NFS device driver
+  SSTORDRV                SuperStor Pro device driver
+  STAT4L.EXE              Hewlett-Packard device driver for HP 4L
+  WD80X3.EXE              Wollongong Networking Software device driver
+  PRO4.DOS                Proteon ProNet P1347 device driver
+  MC.SYS                  Memory Commander TSR
+  MCIN.EXE                Memory Commander TSR
+  SK                      Older versions (1.x) of SideKick
+  HPLANE.DOS              HP Ethertwist EISA device driver
+  NETWORK.EXE             Webs Network TSR
+  PRO16EUI.SYS            Proteon ProNet 16/4 TokenRing device driver
+  NANSI.SYS               ANSI.SYS replacement Supplied with various
+                          video cards
+  FDCD.SYS                Version 2.01 SCSI driver for NEC CD-ROM drive
+                          (currently ships with SoundBlaster compatible
+                          Aria sound card).
+
+ ADTSR.EXE                After Dark for DOS version 1.0
+
+
+WORKAROUND
+==========
+
+To avoid having to specifically exclude a device driver or TSR program each time
+you run MemMaker, add the filename to the MEMMAKER.INF file. For example, if
+GAI.SYS is causing your system to hang, edit the MEMMAKER.INF file with a text
+editor (such as MS-DOS Editor) to add the following line:
+
+  *GAI
+
+Device Drivers and TSR Programs Ignored by MemMaker
+---------------------------------------------------
+
+The following device drivers and TSR programs are listed in the MEMMAKER.INF file
+and therefore are not loaded high:
+
+  *ASPI4DOS
+  *AUTOMENU
+  *BOOT
+  *DOSEDIT
+  *DRAGON
+  *NDD
+  *NETBIOS
+  *PROTMAN
+  *RP
+  *SCREATE
+  *SMARTDRV /DOUBLE_BUFFER
+  *SMARTDRV /L
+  *SSWAP
+  *STRETCH
+  *VANSI
+  *VDEFEND
+  *VRESUME
+  *VT
+
+Additional query words: 6.00 uma umb devicehigh load high loadhigh lh hardcard hang rtr4lm.dos MSIPX Related Device Driver protman.dos smartdrv.exe aspi4dos.sys ndd.com ndd.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

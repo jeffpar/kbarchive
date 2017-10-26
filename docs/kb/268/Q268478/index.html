@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268478/","publisher":null,"image":null,"headline":"Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268478-prb-_cliptext-loses-line-feeds-ascii-10">Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268478
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 09-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing information that is pasted to the Windows Clipboard through the
+_CLIPTEXT system variable, line feed (ASCII 10) characters are removed. Also,
+when assigning a value to the _CLIPTEXT system variable, line feed characters
+converted to carriage return (ASCII 13) characters.
+
+CAUSE
+=====
+
+Visual FoxPro is expecting carriage returns (ASCII 13) to be used for end-of-row
+or end-of-line terminators and, therefore, replaces lines feeds (ASCII 10) with
+carriage returns (ASCII 13) when assigning a value to the _CLIPTEXT system
+variable.
+
+NOTE: No other ASCII characters are affected in this manner.
+
+RESOLUTION
+==========
+
+When access to the original text pasted in the Clipboard is required and the
+loss of line feeds causes problems, you may retrieve the same information
+through the FoxTools Library GETCLIPDAT() function, as follows:
+
+  Local lcClipText
+  Set Library To (Home()+"FoxTools.Fll")
+  If OpenClip(0)
+      lcClipText = GetClipDat(1)
+      CloseClip()
+  Else
+      lcClipText = Space(0)
+  Endif
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file called "MAKE_IT.prg" (without the quotation marks),
+  paste the following code into the program, and then run the program:
+
+  lnHandle = FCreate("Test.txt",0)
+  =FWrite(lnHandle,"Line 1" + CHR(9) + "2" + CHR(9) + "3" + CHR(9) + "4" + CHR(10))
+  =FWrite(lnHandle,"Line 2" + CHR(9) + "6" + CHR(9) + "7" + CHR(9) + "8" + CHR(10))
+  =FWrite(lnHandle,"Line 3" + CHR(9) + "10" + CHR(9) + "11" + CHR(9) + "12" + CHR(10))
+  =FFlush(lnHandle)
+  =FClose(lnHandle)
+
+2. Create a program file called "TEST_IT.prg" (without the quotation marks),
+  paste the following code into the program, and then save the program.
+
+  NOTE: Do not run this program until the next step has been completed.
+
+  Set Library To (Home()+"FoxTools.Fll")
+  If OpenClip(0)
+      y = GetClipDat(1)
+      ? "From GetClipDat: ", y
+      ? "From _ClipText: ", _ClipText
+      ? "GetClipDat = _ClipText: ", (y=_ClipText)
+      CloseClip()
+  Endif
+  Set Library To
+
+3. Open file named TEST.txt (created by the program in step 1) in Notepad,
+  select all of the text, and then copy it to the Clipboard.
+
+4. In the Command window, enter the following command:
+
+  DO TEST_IT.prg
+
+5. Observe the output from the second program:
+
+   - Data From GetClipDat - observe that a new line is started after the 4 and
+     the 8.
+
+   - Data From _ClipText - observe that '4Line 2' and '8Line 3' run together.
+
+   - GetClipDat = _ClipText returns .F. (false), indicating that the values
+     from GetClipDat() and _ClipText are not the same.
+
+REFERENCES
+==========
+
+For additional information about the FoxTools Library, please refer to the Help
+file located where you have Visual FoxPro installed, in the Tools folder. The
+Help file name is FOXTOOLS.CHM.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

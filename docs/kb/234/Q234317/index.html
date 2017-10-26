@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234317/","publisher":null,"image":null,"headline":"Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234317-fix-html-truncated-with-vs-sp3-webclass-run-time-in-vb-ide">Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234317
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbVBp600 kbWebClasses kbGrpDSASP kbVS600sp3bug kbDSupport kbVS600sp4fix
+Last Modified: 06-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use tag replacement within a WebClass template, you may notice that,
+after upgrading to Visual Studio 6.0 Service Pack 3, not all of the tag text and
+HTML template text gets sent back to the browser. To determine if this problem
+is occurring, right-click on the resulting HTML page in your browser and select
+View Source. If you do not see an end &lt;/HTML&gt; tag, then most likely you
+are encountering this problem.
+
+This occurs only under one of the following scenarios:
+
+- You are running the WebClass in the Visual Basic 6.0 IDE.
+
+- You are running the WebClass in production if the template cache is turned
+  off (the template cache is turned on by default, so this is not a likely
+  scenario).
+
+This behavior does not occur if you have a pre-existing WebClass site and you
+upgrade the server to the new runtime. This is because the template cache is
+turned on by default. Upgrade to the new run time by installing Visual Studio
+Service Pack 3.
+
+RESOLUTION
+==========
+
+You need to roll back to the previous version of the WebClass run time on
+computers where you use the Visual Basic 6.0 IDE while running your WebClasses.
+Follow these steps to do so:
+
+1. Unregister Mswcrun.dll version 6.00.8450 by running the following command in
+  the Run dialog box on the Start menu:
+
+  regsvr32.exe /u "&lt;driveletter&gt;:\Program Files\Common Files\Designer\mswcrun.dll"
+
+2. Replace Mswcrun.dll version 6.00.8450 with version 6.00.8169. You can find
+  the 6.00.8169 version of the WebClass runtime on Disk 1 in the Os\System
+  folder of your Visual Studio 6.0 or Visual Basic 6.0 CDs.
+
+  NOTE: If you get a sharing violation when replacing the WebClass run time,
+  stop and start the iisadmin service before attempting to replace the file.
+
+3. Register Mswcrun.dll version 6.00.8169 by running the following command in
+  the Run dialog box on the Start menu:
+
+  regsvr32.exe "&lt;driveletter&gt;:\Program Files\Common Files\Designer\mswcrun.dll"
+
+If you aren't running your WebClass application in the Visual Basic 6.0 IDE (on a
+production computer), you do not need to rollback to the previous version of the
+WebClass run time unless you are planning to turn the template cache off. The
+template cache is turned on by default with a default value of 65 (hex) or 101
+(decimal).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the next service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+  Visual Studio Product Updates
+  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+REFERENCES
+==========
+
+Please see the following article in the Microsoft Knowledge Base for more
+information regarding the new WebClass template cache feature:
+
+  Q234344 INFO: Template Cache Added in WebClasses for Visual Studio Service
+  Pack 3
+
+Additional query words: TagContents ProcessTag sp4
+
+======================================================================
+Keywords          : kbVBp600 kbWebClasses kbGrpDSASP kbVS600sp3bug kbDSupport kbVS600sp4fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

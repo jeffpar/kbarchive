@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260174: Special Pool Feature Prevents Creation of Memory Dump | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260174: Special Pool Feature Prevents Creation of Memory Dump" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260174/","publisher":null,"image":null,"headline":"Q260174: Special Pool Feature Prevents Creation of Memory Dump","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260174-special-pool-feature-prevents-creation-of-memory-dump">Q260174: Special Pool Feature Prevents Creation of Memory Dump</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260174
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 10-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+- Microsoft Windows NT Workstation versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you turn on the special pool feature, the system may reboot to a bugcheck.
+This may occur upon every reboot and at any phase of the reboot process,
+preventing access to the system and the ability to complete a successful memory
+dump. Common memory access stop codes include, but are not limited to: Stop
+0x00000050, Stop 0x0000001E, Stop 0x0000001A and Stop 0x0000000A.
+
+CAUSE
+=====
+
+When the special pool features are used to isolate pool damage, the system
+bugchecks immediately if a driver attempts to corrupt the pool. If the driver
+attempts to corrupt the pool during the boot process, the system bugchecks. If a
+driver consistently attempts to corrupt the pool during boot, the system is not
+able to boot with the special pool feature turned on.
+
+RESOLUTION
+==========
+
+Use the following technique to allow the system to boot and complete the memory
+dump. In some situations you may have to start by removing the pool tags as in
+step 6, or by manually editing the registry and then proceeding with step 1.
+
+1. Verify that the crash recovery options are set correctly to ensure successful
+  capture of the memory dump.
+
+For additional information on memory dump, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q235496 How to Enable a Memory.dmp File Capture Using the Graphical User
+  Interface or the Registry
+
+2. Turn on (or in some cases, turn on again) the special pool as necessary.
+
+3. Restart the computer and do not log on.
+
+4. Let the computer crash and complete the dump of contents from memory to the
+  pagefile. You will see this on the screen.
+
+  Once this is complete, restart the computer. The computer will restart
+  automatically if set to do so in the crash recovery settings.
+
+5. When the computer restarts, use the "last known good" configuration option to
+  start the computer.
+
+This will remove the registry changes set by the special pool feature, restore
+the computer to its previous state, and allow the computer to complete the
+startup process. This should allow the pagefile write operation to complete and
+result in a successful memory dump.
+
+MORE INFORMATION
+================
+
+To use the "last known good" configuration, follow these steps:
+
+1. Start the computer and select the proper boot menu entry on the OS Loader
+  screen.
+
+  You will see the following message displayed on the screen for a few seconds:
+  "NTDETECT V4.0 Checking Hardware".
+
+2. Press the SPACEBAR when you see the next message, "Press spacebar NOW to
+  invoke Hardware Profile/Last Known Good menu." This will bring you to the
+  default Configuration menu, which allows you to select different hardware
+  profiles.
+
+3. Press L to switch to the "last known good" configuration menu.
+
+  Original Configuration is selected by default.
+
+4. Press ENTER.
+
+For more information on how control sets and last known good configuration are
+handled by the registry, see the "Windows NT Workstation Resource Kit," Chapter
+36, Pages 1051 - 1053.
+
+REFERENCES
+==========
+
+For additional information on this issue, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q188831 How to Use the Special Pool Feature to Isolate Pool Damage
+
+  Q250453 Determining Special Pool Tagging Options When Debugging
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbWinNTW400sp6 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

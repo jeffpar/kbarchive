@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243342: IISSYNC Returns a Status of 214598801 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243342: IISSYNC Returns a Status of 214598801" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243342/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243342/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243342/","publisher":null,"image":null,"headline":"Q243342: IISSYNC Returns a Status of 214598801","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243342-iissync-returns-a-status-of-214598801">Q243342: IISSYNC Returns a Status of 214598801</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243342
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the IISSYNC utility to synchronize the IIS 4.0 settings between
+nodes on a computer running Microsoft Cluster Server version 1.0, IISSYNC
+returns a status of 214598801.
+
+Error number 214598801 refers to the following error:
+
+  (80110411 = The component's CLSID is missing or corrupt.)
+
+CAUSE
+=====
+
+A component in the Transaction Server IIS In-Process Applications Package does
+not have a corresponding AppWamClsid value in the IIS metabase.
+
+RESOLUTION
+==========
+
+Use the following steps to resolve this issue:
+
+1. Output the contents of the W3SVC key in the metabase to a file. To do this,
+  use the Mdutil.exe utility. This utility file is located on the Windows NT
+  Option Pack CD. Copy the Mdutil.exe file to the Inetsrv directory on your
+  primary Web server node, and then type the following:
+
+  mdutil enum_all w3svc &gt; output.txt
+
+2. Print the Output.txt file.
+
+3. Search through the Output.txt file for the AppPackageID Clsid String metabase
+  entry. Take note of the CLSID set for the AppPackageID, because it is needed
+  in the next step. The AppPackageID will look similar to the following:
+
+  AppPackageID :[W] (STRING) "{3D14228C-FBE1-11d0-995D-00C04FD919C1}
+
+4. Output the Transaction Server IIS In-Process Applications Package Key from
+  the registry. To do this, open the Registry Editor, and then locate the
+  following key:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Transaction
+  Server\Packages\&lt;AppPackageID Clsid String&gt;
+
+  From the Registry menu, choose Save Subtree As. Type the file name
+  "Packages.Txt" (without the quotation marks), change the Save as Type to
+  Text, and then click Save.
+
+5. In the Output.txt file, scan through and look for entries named AppWamClsid.
+  Highlight each of these AppWamClsid entries. The AppWamClsid will look
+  similar to the following:
+
+  AppWamClsid :[IW] (STRING) "{60735342-438C-11D4-A35F-00C04F765674}"
+
+  Note: Each Web site and virtual or physical directory that is configured as an
+  application in the Internet Service Manager will have a unique AppWamClsid
+  associated with it.
+
+6. Take each AppWamClsid string you find in the Output.txt file and compare them
+  one at a time against the contents of the Packages.txt file. Each component
+  listed in the Packages.txt files has three entries for each individual
+  AppWamClsid. For example, if you have an AppWamClsid similar to the one shown
+  in the item above {60735342-438C-11D4-A35F-00C04F765674}, then there will be
+  three entries in the Packages.txt file that would look as follows:
+
+  Key Name: SOFTWARE\Microsoft\Transaction
+  Server\Packages\{3D14228C-FBE1-11d0-995D-00C04FD919C1}\Components\{60735342-438C-11D4-A35F-00C04F765674}\Interfaces
+  Class Name: &lt;NO CLASS&gt;
+  Last Write Time: 6/16/00 - 10:13 AM
+
+  Key Name: SOFTWARE\Microsoft\Transaction
+  Server\Packages\{3D14228C-FBE1-11d0-995D-00C04FD919C1}\Components\{60735342-438C-11D4-A35F-00C04F765674}\RoleMembership
+  Class Name: &lt;NO CLASS&gt;
+  Last Write Time: 6/16/00 - 10:13 AM
+
+  Key Name: SOFTWARE\Microsoft\Transaction
+  Server\Packages\{3D14228C-FBE1-11d0-995D-00C04FD919C1}\Components\{6073535D-438C-11D4-A35F-00C04F765674}
+  Class Name: &lt;NO CLASS&gt;
+  Last Write Time: 6/16/00 - 10:38 AM
+
+  Value 0
+  Name: Authentication
+  Type: REG_DWORD
+  Data: 0x4
+
+  Value 1
+  Name: SecurityEnabled
+  Type: REG_SZ
+  Data: Y
+
+7. Cross out the three entries in the Packages.txt file associated with each
+  individual AppWamClsid that you highlighted in the Output.txt file. When you
+  finish eliminating the individual AppWamClsids from the Packages.txt file,
+  the remaining entry, or possibly remaining entries, left in the Packages.txt
+  file are component entries in Transaction Server that do not have
+  corresponding application entries in the metabase.
+
+Now that you have determined which component CLSID does not have a matching
+AppWamClsid entry in the metabase, you can use the following steps to properly
+delete the component from Transaction Server, so that you can get a successful
+synchronization using IISSYNC.
+
+1. Determine the components ProgID name based on the CLSID. To do this, locate
+  the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Transaction
+  Server\Components\&lt;Offending Component Clsid String&gt;
+
+2. There is a registry value labeled ProgID that has an entry with a descriptive
+  name. Write down that name. For example:
+
+  ProgID:REG_SZ:IISWAM6_ROOT_MY-VDIR
+
+3. To delete the IISWAM6_ROOT_MY-VDIR Component from Transaction Server, do the
+  following:
+
+  a. Open the Internet Service Manager.
+
+  b. Double-click Microsoft Transaction Server.
+
+  c. Double-click the Computers folder.
+
+  d. Double-click My Computer.
+
+  e. Double-click the Packages Installed folder.
+
+  f. Double-click the IIS In-Process Applications Package.
+
+  g. Double-click the Components folder.
+
+  h. In the list of all the Transaction Server Components (Web Applications)
+     currently configured to run In-Process in IIS, you will find the ProgID
+     name of the offending component, which you previously isolated. Highlight
+     the ProgID name you want to delete. Right-click the ProgID name and choose
+     Delete.
+
+  i. In the Confirm Item Delete window choose "YES."
+
+  Note: If there are multiple components without matching AppWamClsids, repeat
+  this step to delete each one.
+
+At this point, each AppWamClsid should have a corresponding Transaction Server
+IIS In-Process Applications Component ID and each Transaction Server IIS
+In-Process Applications Component should have a matching AppWamClsid.
+
+Additional query words: IIS 4.0 Cluster Server MSCS 1.0
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbClustServSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

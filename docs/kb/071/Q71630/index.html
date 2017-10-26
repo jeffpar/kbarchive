@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71630: Running an Application May Change MODE Setting of 43 or 50 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71630: Running an Application May Change MODE Setting of 43 or 50" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71630/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71630/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71630/","publisher":null,"image":null,"headline":"Q71630: Running an Application May Change MODE Setting of 43 or 50","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71630-running-an-application-may-change-mode-setting-of-43-or-50">Q71630: Running an Application May Change MODE Setting of 43 or 50</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71630
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can set the number of lines on a display by using the following MS-DOS MODE
+command
+
+  mode con lines = &lt;n&gt;
+
+where &lt;n&gt; is the number of lines on the display. Valid n values are 25, 43,
+and 50. If this command is used with n=43 or n=50, and another application is
+started, the number of lines may default back to 25 when the application is
+terminated.
+
+NOTE: This problem does not occur with Microsoft MS-DOS version 6.0.
+
+MORE INFORMATION
+================
+
+For example, this behavior occurs with the execution of MS-DOS Shell. When
+&lt;n&gt; is set to 43 and Shell is started, the number of lines on the screen
+changes to 25 within Shell. After Shell is ended and control is given back to
+MS-DOS, the number of display lines remains at 25 instead of returning to 43,
+which was set by the MODE command.
+
+This behavior may occur with certain applications because the application does
+not save the video state prior to starting the application. Thus, when the
+application is terminated, the MS-DOS line display state used may be the same as
+in the application or reset back to the default line number value of 25.
+
+A simple batch file with the following command lines can correct this occurrence
+(where &lt;x&gt; is the MODE line setting, such as 43 or 50):
+
+  test.bat &lt;x&gt;
+
+  &lt;executable program&gt;
+  mode con lines = %1
+
+The "%1" parameter will receive the &lt;x&gt; value of TEST.BAT.
+
+Additional query words: 4.0 4.00 4.01 5.0 5.00 5.0a 5.00a 6.00 6.20 6.21 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

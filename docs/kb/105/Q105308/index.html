@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105308/","publisher":null,"image":null,"headline":"Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105308-windows-nt-may-cause-apc-smart-ups-battery-to-discharge">Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105308
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbhw kbHardware
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows NT is booted, if an American Power Conversions (APC) Smart UPS is
+installed, its battery may be discharged or the UPS function may be shutdown.
+
+CAUSE
+=====
+
+During the boot sequence, Windows NT writes configuration/detection code to the
+COM Port to determine baud rate, FIFO information, and for mouse detection. The
+string written to the port may contain the letter "D," which the Smart UPS
+interprets as a command to discharge the battery. The string may also contain
+the letter "S," which will cause the Smart UPS to shutdown.
+
+The Smart UPS interprets the string incorrectly only if it has already been
+placed in the "Smart Mode" prior to starting Windows NT. The user must have
+already placed the UPS in the Smart Mode using the software supplied by American
+Power Conversions; otherwise the Smart UPS will be unaffected by the signal
+Windows NT sends to the COM Ports.
+
+RESOLUTION
+==========
+
+The Smart UPS can be used successfully by temporarily disconnecting the cable
+from the COM Port during the Windows NT boot sequence. The user can also reset
+(power off, then on) the UPS to return to the default UPS mode. NOTE: This also
+has the effect of interrupting power to the computer.
+
+
+American Power Conversions is currently working on a Windows NT driver that will
+take full advantage of the Smart UPS unit's capabilities.
+
+The Smart UPS is manufactured by American Power Conversions, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+products' performance or reliability.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

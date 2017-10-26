@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192142/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192142/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192142/","publisher":null,"image":null,"headline":"Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192142-prb-update-after-addnew-using-oracle-driver-generates-an-error">Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192142
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft ODBC Driver for Oracle (Build 2.06325), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Remote Data Objects (RDO) ADDNEW and UPDATE method to create and commit
+new records with the Microsoft Oracle ODBC driver may result in the following
+error:
+
+  Run-time error '40002':
+  S1C00: [Microsoft][ODBC driver for Oracle]Driver not capable.
+
+CAUSE
+=====
+
+Microsoft Oracle ODBC Driver version 2.00.06325 does not support this
+functionality in conjunction with certain CursorDrivers.
+
+RESOLUTION
+==========
+
+Choose a CURSORDRIVER of either rdUseClientBatch or rdUseODBC if Microsoft
+Oracle ODBC Driver version 2.00.06325 is used.
+
+Otherwise, obtain the latest version of Microsoft ODBC driver for Oracle that is
+shipped with Microsoft Data Access Components (MDAC) 1.5c or MDAC 2.0. The
+current version of the Oracle ODBC driver is 2.573.2927 and it supports this
+functionality.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic 5.0 Enterprise Edition.
+
+2. Create a new Standard EXE. Form1 is created by default.
+
+3. Add "Microsoft Remote Data Objects 2.0" to the Project References.
+
+4. Add the following code to the new form's Load method:
+
+        Dim rs As rdoResultset
+        Dim cn As New rdoConnection
+        cn.CursorDriver = rdUseClientBatch
+        cn.Connect = "dsn=&lt;dsn&gt;;uid=&lt;uid&gt;;pwd=&lt;pwd&gt;"
+        cn.EstablishConnection
+        cn.Execute "CREATE TABLE temp1 (id int, name char(20))"
+        cn.Execute "CREATE UNIQUE INDEX temp1_id on temp1 (id)"
+        cn.Execute "GRANT ALL ON temp1 TO PUBLIC"
+        cn.Close
+
+        On Error GoTo Erh
+
+        For i = rdUseIfNeeded To rdUseClientBatch
+           cn.CursorDriver = i
+           cn.EstablishConnection
+           Set rs = cn.OpenResultset("select * from temp1", rdOpenKeyset, _
+           rdConcurRowVer)
+           rs.AddNew
+           rs(0) = i
+           rs(1) = "Also works fine"
+           rs.Update   '&lt;-- Errors occur here
+           cn.Close
+        Next
+           cn.EstablishConnection
+           cn.Execute "DROP TABLE temp1"
+        End
+
+        Erh:
+           sterr = Error &amp; Chr(13) &amp; "With CursorDriver "
+           Select Case cn.CursorDriver
+              Case rdUseServer
+                 sterr = sterr &amp; "rdUseServer"
+              Case rdUseOdbc
+                 sterr = sterr &amp; "rdUseOdbc"
+              Case rdUseNone
+                 sterr = sterr &amp; "rdUseNone"
+              Case rdUseIfNeeded
+                 sterr = sterr &amp; "rdUseIfNeeded"
+              Case rdUseClientBatch
+                 sterr = sterr &amp; "rdUseClientBatch"
+              Case Else
+           End Select
+           MsgBox sterr
+           Resume Next
+        End Sub
+
+5. Run the Project and note that the Update fails with the error mentioned
+  earlier.
+
+Additional query words: kbVBp500 kbOracle kbODBC kbRDO kbdse kbDSupport KbVBp kbDatabase kbDriver
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword kbZNotKeyword2 kbVB500Search kbODBCSearch kbVB500 kbODBCOracle206325 kbODBCOracle100Search
+Version           : :1.0,5.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

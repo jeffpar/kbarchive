@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224460/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224460/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224460/","publisher":null,"image":null,"headline":"Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224460-err-msg-error-connecting-to-servername-the-rpc-service">Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224460
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you attempt to remotely administer a multihomed IIS 4.0 computer from the
+Microsoft Management Console (MMC) on a local computer, the following error
+messages may occur:
+
+  Error connecting to &lt;servername&gt; The RPC service is not available
+
+When you click OK, you may see a few additional errors similar to the following:
+
+  Unable to administer IIS "unable to connect to target machine"
+
+CAUSE
+=====
+
+This problem only occurs when you are trying to remotely administer a multihomed
+IIS 4.0 computer from the MMC on a local computer. The MMC uses the default DCOM
+protocol for remote communications. By default, DCOM uses the ncadg_ip_udp DCOM
+protocol for connections instead of ncacn_ip_tcp. Due to a problem with the
+ncadg_ip_udp DCOM protocol in Windows NT Service Pack 3, if the destination IIS
+computer is multihomed, ncadg_ip_udp causes the binding IP address to become
+corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT version
+4.0. For additional information, please see the following article(s) in the
+Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+WORKAROUND
+==========
+
+If you have not yet implemented Windows NT Service Pack 4 in your environment,
+you can edit the registry to change the DCOM protocols that are used.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+Follow these steps exactly on the multihomed remote Web server:
+
+1. Back up the following registry key using Regedt32.exe (not Regedit.exe):
+
+  HKEY_Local_Machine\Software\Microsoft\RPC
+
+  To do this, highlight the RPC key and choose Registry, and the choose Save
+  Key.
+
+2. In the RPC key, edit the DCOM Protocols setting by double-clicking on it.
+  Change the values to reflect a different order by removing the ncadg_ip_udp
+  protocol and moving ncacn_ip_tcp to the top of the list. Here is what it will
+  look like before and after the change:
+
+  Before
+
+  ncadg_ip_udp
+  ncadg_ipx
+  ncacn_ip_tcp
+  ncacn_spx
+  ncacn_nb_nb
+  ncacn_nb_ipx
+
+  Remove ncadg_ip_udp and move ncacn_ip_tcp to the top of the list.
+
+  After
+
+  ncacn_ip_tcp
+  ncadg_ipx
+  ncacn_spx
+  ncacn_nb_nb
+  ncacn_nb_ipx
+
+3. After the changes are made, close Registry Editor and restart the computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was first corrected in Windows NT 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+For additional information about network connection delays, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q288886 PRB: Delayed DCOM Activation on Multihomed Computers
+
+Below is an example of how the binding fails.
+
+Note: Binding Vector[4] has the incorrect IP addresses in the binding handle. In
+this example, it combines both IP addresses from both NICs, thus corrupting the
+IP address format, and the connection fails.
+
+Display STRING representation for each binding handle in Binding Vector
+
+  Binding Handle Count: 7
+  Binding Vector[0]: ncacn_np:\\\\ServerName[\\pipe\\000000B4.001]
+  Binding Vector[1]: ncalrpc:ServerName[WMSG000000B4.00000001]
+  Binding Vector[2]: ncacn_ip_tcp:157.61.239.61[1038]
+  Binding Vector[3]: ncacn_ip_tcp:157.61.239.5[1038]
+  Binding Vector[4]: ncadg_ip_udp:157.61.239.61157.61.239.5[1039]
+  Binding Vector[5]: ncadg_ip_udp:157.61.239.5[1039]
+  Binding Vector[6]: ncacn_nb_tcp:ServerName[106]
+
+If you use network sniffers, such as Network Monitor, you can see the incorrect
+IP addresses as in the above example for Binding Vector[4].
+
+Additional query words: mmc, ntop, iis, dcom, rpc, multi-homed, multi, homed sp hot fix qfe
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

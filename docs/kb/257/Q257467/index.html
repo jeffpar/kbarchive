@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257467/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257467/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257467/","publisher":null,"image":null,"headline":"Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257467-howto-remove-ftm-code-added-by-atl-object-wizard">Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257467
+Product(s): Microsoft C Compiler
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbATL kbCOMt kbDSupport kbGrpDSMFCATLkbfaq
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to remove the Free Threaded Marshaler support from
+an Active Template Library (ATL) component.
+
+MORE INFORMATION
+================
+
+When you create an ATL component using the New ATL Object option from the Insert
+menu, then the Free Threaded Marshaler option can be selected by the user in the
+Attributes tab. To remove this Free Threaded Marshaler support from an ATL
+component after the fact, add the following code sample. Note that all of these
+changes go in to the component's header file and the lines need to be commented
+as shown below, that is marked with // **.
+
+  class ATL_NO_VTABLE CIFTMTEst2 : 
+  	public CComObjectRootEx&lt;CComSingleThreadModel&gt;,
+  	public CComCoClass&lt;CIFTMTEst2, &amp;CLSID_IFTMTEst2&gt;,
+  	public IDispatchImpl&lt;IIFTMTEst2, &amp;IID_IIFTMTEst2, &amp;LIBID_SHAYLib&gt;
+  {
+  public:
+  	CIFTMTEst2()
+  	{
+  // ** Because you don't need this variable, then you don't need to initialize it.
+  // **		m_pUnkMarshaler = NULL;
+  	}
+
+  DECLARE_REGISTRY_RESOURCEID(IDR_IFTMTEST2)
+  DECLARE_GET_CONTROLLING_UNKNOWN()
+
+  DECLARE_PROTECT_FINAL_CONSTRUCT()
+
+  BEGIN_COM_MAP(CIFTMTEst2)
+  	COM_INTERFACE_ENTRY(IIFTMTEst2)
+  	COM_INTERFACE_ENTRY(IDispatch)
+  // ** Remove the entry for IMarshal, because it was only there for the Free Threaded
+  // ** Marshaler.
+  // ** COM_INTERFACE_ENTRY_AGGREGATE(IID_IMarshal, m_pUnkMarshaler.p)
+  END_COM_MAP()
+  	HRESULT FinalConstruct()
+  	{
+  // ** Comment out the Free Threaded Marshaler creation.
+  // **        return CoCreateFreeThreadedMarshaler(
+  // **			GetControllingUnknown(), &amp;m_pUnkMarshaler.p);
+
+  // ** Replace with a standard HRESULT, S_OK, or return an appropriate 
+  // ** HRESULT depending on any other calls that you make in 
+  // ** FinalConstruct().
+               return S_OK;
+  	}
+
+  	void FinalRelease()
+  	{
+  // ** Comment out the Release of the Free Threaded Marshaler.
+  // **		m_pUnkMarshaler.Release();
+  	}
+   
+  // ** You don't need this variable holding the Free Threaded Marshaler
+  // ** reference:
+  // **	CComPtr&lt;IUnknown&gt; m_pUnkMarshaler;
+
+REFERENCES
+==========
+
+- For additional information, click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q256217 INFO: FTM usage
+
+- ActiveX Q&amp;A Microsoft Systems Journal September, 1997 - Apartment
+  Neutrality: The Free Threaded Marshaler and the Global Interface Table
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbCOMt kbDSupport kbGrpDSMFCATL kbfaq
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271630: Encarta 2001: Quick Define Does Not Work as Expected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271630: Encarta 2001: Quick Define Does Not Work as Expected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271630/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271630/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271630/","publisher":null,"image":null,"headline":"Q271630: Encarta 2001: Quick Define Does Not Work as Expected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271630-encarta-2001-quick-define-does-not-work-as-expected">Q271630: Encarta 2001: Quick Define Does Not Work as Expected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271630
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kbFAQ
+Last Modified: 14-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+- Microsoft Encarta Reference Suite 2001 
+- Microsoft Encarta World English Dictionary 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install any of the Microsoft Encarta 2001 programs listed at the
+beginning of this article, the Quick Define feature of Microsoft Word and
+Microsoft Excel queries the Encarta Online Web site rather than the local CD-ROM
+drive.
+
+In previous versions of Encarta, when you right-click a word in either Microsoft
+Word or Excel, and then click Define, the Quickbooks feature looks up the word
+from the Microsoft Bookshelf or Microsoft Encarta World English Dictionary
+CD-ROM.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To alter this behavior so that the Quick Define feature searches the local
+installation of Encarta World English Dictionary, run the Maxoff.reg file
+located in the Support folder on the Encarta Disc 1: Installation &amp;
+Resources CD-ROM.
+
+NOTE: The Maxoff.reg file alters the Quick Define feature to point to the local
+CD-ROM drive, or to your hard disk if Encarta World English Dictionary has been
+copied to the hard disk.
+
+When you install the Maxoff.reg file, the Quick Define feature is pointed to the
+default location of Encarta World English Dictionary
+
+  C:\Program Files\Microsoft Encarta\Encarta World English Dictionary 2001
+
+or to the CD-ROM drive with a drive letter of D.
+
+NOTE: If you did not install the Encarta Reference Suite 2001 or Encarta World
+English Dictionary 2001 in the default folder, in order for Maxoff.reg to work
+as designed, you will need to uninstall the Encarta program and reinstall it in
+the default folder.
+
+This workaround only applies if your CD-ROM drive is drive D. If your CD-ROM
+drive letter is any other letter, this workaround will not apply.
+
+There is no option provided to change the Define functionality except where the
+Dictionary is installed to the C: drive.
+
+Rather than using the right-click Define tool, you may use the QuickShelf tool.
+Simply click or highlight a word, then click the Dictionary Quickshelf icon in
+the Taskbar area. Quickshelf accesses the CD-ROM and can be used with any word
+processor. For more information on QuickShelf, see the application's Help
+topic.
+
+
+To configure this feature to use the original online folders, double-click the
+Maxon.reg file located in the Support folder on the Encarta Disk 1: Installation
+&amp; Resources CD-ROM.
+
+
+Additional query words: multi multi-media media mm eedlx ers ewed integrate integration patch download
+
+======================================================================
+Keywords          : kbFAQ 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaReference2001 kbEncartaWorldEngDict2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

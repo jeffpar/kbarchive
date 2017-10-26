@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181254/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181254/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181254/","publisher":null,"image":null,"headline":"Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181254-inf-how-to-use-sql_c_numeric-data-type-with-numeric-data">Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181254
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ODBC 3.0 introduces a new ODBC C data type, identified by SQL_C_NUMERIC, which
+allows applications to directly handle numeric data. The C buffer used has the
+type definition of SQL_NUMERIC_STRUCT, and is a structure with fields for
+storing the precision, scale, sign, and value of the numeric data. The value
+itself is stored as a scaled integer with the least significant byte beginning
+in the leftmost position.
+
+Additional information regarding the format and use of SQL_NUMERIC_STRUCT is
+available in the ODBC 3.0 Programmer's Reference, in Appendix D (Data Types) in
+the "C Data Types" section.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+The following sample program illustrates the use of SQL_C_NUMERIC by inserting
+123.45 into a table defined with a column whose data type is numeric or decimal,
+precision 5 and scale 2. Comments are embedded in the code to explain the key
+points. The ODBC driver used to run this program must support ODBC 3.0
+functionality.
+
+  #include &lt;windows.h&gt;
+  #include &lt;sql.h&gt;
+  #include &lt;sqlext.h&gt;
+
+  void main() {
+
+     SQLHENV     henv = NULL;
+     SQLHDBC     hdbc = NULL;
+     SQLHSTMT   hstmt = NULL;
+
+     SQL_NUMERIC_STRUCT     NumStr;
+     SQLINTEGER                     cbNumStr = sizeof (NumStr);
+
+     SQLAllocHandle(SQL_HANDLE_ENV, NULL, &amp;henv);
+
+     /* Set the ODBC behavior version. */ 
+     SQLSetEnvAttr(henv,
+           SQL_ATTR_ODBC_VERSION,
+           (SQLPOINTER) SQL_OV_ODBC3,
+           SQL_IS_INTEGER);
+
+     SQLAllocHandle(SQL_HANDLE_DBC, henv, &amp;hdbc);
+
+     /* Substitute your own connection information */ 
+     SQLConnect(hdbc,
+        (SQLCHAR *) "MyDSN", 5,
+        (SQLCHAR *) "UserID", 6,
+        (SQLCHAR *) "Password", 8);
+
+     SQLAllocHandle(SQL_HANDLE_STMT, hdbc, &amp;hstmt);
+
+     /*
+        Set up the SQL_NUMERIC_STRUCT, NumStr, to hold "123.45".
+
+        First, we need to scale 123.45 to an integer: 12345
+        One way to switch the bytes is to convert 12345 to Hex:  0x3039
+        Since the least significant byte will be stored starting from the
+        leftmost byte, "0x3039" will be stored as "0x3930".
+
+        The precision and scale fields are not used for input to the driver,
+        only for output from the driver. The precision and scale will be set
+        in the application parameter descriptor later.
+     */ 
+
+     NumStr.sign = 1;   /* 1 if positive, 2 if negative */ 
+
+        memset (NumStr.val, 0, 16);
+     NumStr.val [0] = 0x39;
+     NumStr.val [1] = 0x30;
+
+     /* SQLBindParameter needs to be called before SQLSetDescField */ 
+     SQLBindParameter(hstmt,
+            1,
+            SQL_PARAM_INPUT,
+            SQL_C_NUMERIC,
+            SQL_NUMERIC,
+            5,
+            2,
+            &amp;NumStr,
+            0,
+            (SQLINTEGER *) &amp;cbNumStr);
+
+     /* Modify the fields in the implicit application parameter descriptor */ 
+     SQLHDESC   hdesc = NULL;
+
+     SQLGetStmtAttr(hstmt, SQL_ATTR_APP_PARAM_DESC, &amp;hdesc, 0, NULL);
+     SQLSetDescField(hdesc, 1, SQL_DESC_TYPE, (SQLPOINTER) SQL_C_NUMERIC, 0);
+     SQLSetDescField(hdesc, 1, SQL_DESC_PRECISION, (SQLPOINTER) 5, 0);
+     SQLSetDescField(hdesc, 1, SQL_DESC_SCALE, (SQLPOINTER) 2, 0);
+     SQLSetDescField(hdesc, 1, SQL_DESC_DATA_PTR, (SQLPOINTER) &amp;NumStr, 0);
+
+     SQLExecDirect(hstmt,
+           (SQLCHAR *) "INSERT INTO table (numeric_column) VALUES (?)",
+           SQL_NTS);
+
+     SQLFreeHandle(SQL_HANDLE_STMT, hstmt);
+
+     SQLDisconnect (hdbc);
+
+     SQLFreeHandle(SQL_HANDLE_DBC, hdbc);
+     SQLFreeHandle(SQL_HANDLE_ENV, henv);
+  }
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

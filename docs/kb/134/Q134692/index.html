@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134692: PRB: Visual C++ Setup Was Unable to Copy a File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134692: PRB: Visual C++ Setup Was Unable to Copy a File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134692/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134692/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134692/","publisher":null,"image":null,"headline":"Q134692: PRB: Visual C++ Setup Was Unable to Copy a File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134692-prb-visual-c-setup-was-unable-to-copy-a-file">Q134692: PRB: Visual C++ Setup Was Unable to Copy a File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134692
+Product(s): Microsoft C Compiler
+Version(s): 2.20
+Operating System(s): 
+Keyword(s): kb3rdparty kbprb
+Last Modified: 02-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing Visual C++, you may get the following error immediately after
+clicking the Visual C++ 2.2 button in the "Visual C++ Master Setup" dialog box:
+
+  Visual C++ Setup was unable to copy files necessary to continue
+  running setup to your hard drive.
+
+This error will terminate the setup process.
+
+CAUSE
+=====
+
+During the beginning of Setup \MSVC20\VCSETUP.BIN is copied from the CD-ROM
+drive to the directory specified as your TEMP directory. The file is named
+~vc##.tmp, where ## represents a number. This file is in turn spawned by
+SETUP.EXE. SETUP.EXE is unable to copy ~vc##.tmp correctly to the hard drive.
+The problem is caused by an inability of the CD-ROM driver to copy the
+VCSETUP.BIN file.
+
+RESOLUTION
+==========
+
+Use one of the following five methods to resolve this problem:
+
+Method One
+----------
+
+Problems have been reported when running Windows NT version 3.50 on Zeos P5-90
+Pantera computers using dual- or quad-speed Mitsumi CD-ROM drives that are
+configured to run on IRQ 15 address 0x170. The error presents itself when using
+the default ATAPI.SYS file that ships with Windows NT, which is dated 9-4-94 and
+is 9,328 bytes.
+
+To fix this:
+
+1. Dial the Zeos International BBS at (612) 362-1219, and log on.
+
+2. Select 1) File Exchange from the 3) Group menu.
+
+3. Select 1. See list of File Exchange Areas.
+
+4. Select 7 Multi_Media.
+
+5. Select 6 Mitsumi_CDROM,
+
+6. Download 11 ntatapi.exe, "21 Secondary Controller fix for ATAPI and NT 3.5."
+  NTATAPI.EXE is a self extracting executable file that contains ATAPI.SYS,
+  which is dated 12-14-94 and is 9,520 bytes.
+
+7. Replace \WINNT\SYSTEM32\DRIVERS\ATAPI.SYS with this file and reboot.
+
+If you are using a different system you may wish to consult with your vendor.
+
+Method Two
+----------
+
+From a Windows NT command prompt:
+
+1. Copy the [CD-ROM Drive]\MSVC20\VCSETUP.BIN file to:
+
+  [Local hard drive]VCSETUP.EXE
+
+2. Run VCSETUP.EXE:
+
+  vcsetup /s:[CD Drive]\MSVC20
+
+For example where E: == CD-ROM drive and C: == Local hard drive:
+
+  xcopy e:\msvc20\vcsetup.bin c:\vcsetup.exe /v&lt;Enter&gt;
+  vcsetup /s:e:\msvc20&lt;Enter&gt;
+
+NOTE: If you have trouble copying the file in step 1, be sure to try the copy via
+File Manager from Windows NT as well as from MS-DOS. If you have a dual boot
+operating system (such as Windows For Workgroups), try copying the file from the
+other operating system. If you change operating systems in order to perform the
+copy, be sure to boot back to your original operating system prior to completing
+step 2.
+
+Method Three
+------------
+
+If you have a dual boot operating system boot into it, and try the steps in
+"Method Two" (or their equivalents).
+
+Method Four
+-----------
+
+If you have access to a network, you may be able to share a CD-ROM drive from
+another computer, and run SETUP normally from that CD-ROM drive.
+
+Method Five
+-----------
+
+Using a network, you may be able to copy the contents of the CD-ROM drive to a
+network share, and run setup from the share.
+
+Additional query words: 2.20
+
+======================================================================
+Keywords          : kb3rdparty kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbVC220
+Version           : 2.20
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

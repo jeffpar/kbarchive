@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226850: SMS: Software Metering Server Installation Generates Error 997 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226850: SMS: Software Metering Server Installation Generates Error 997" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226850/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226850/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226850/","publisher":null,"image":null,"headline":"Q226850: SMS: Software Metering Server Installation Generates Error 997","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226850-sms-software-metering-server-installation-generates-error-997">Q226850: SMS: Software Metering Server Installation Generates Error 997</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226850
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsmsMeter
+Last Modified: 16-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After enabling a site system as a software metering server under the following
+hierarchy
+
+  Systems Management Server
+    Site Database (site code - site name)
+       Site Hierarchy
+          site code - site name
+             Site Settings 
+                Site Systems 
+
+the Software Metering Server installation stops responding and generates the
+following status messages:
+
+  Message ID: 9399
+  Component:SMS_LICENSE_SERVER_MANAGER
+  Description:
+  The software metering server manager failed to install the service
+  "INSTALL_ODBC" on "SERVER1".
+
+  Message ID: 9405
+  Component:SMS_LICENSE_SERVER_MANAGER
+  Description:
+  The software metering server manager could not start the ODBC installation
+  service on "SERVER1".
+
+Further investigation of the licsvcfg.log reveals the following:
+
+  Attempting to install the service INSTALL_ODBC. 
+  (Binary=c:\swmtr\odbc\i386\InOdbcSv.Exe,    DisplayName=(null),Account=SWMAccount) 
+  Starting the service INSTALL_ODBC on SHINER-BOCK  
+  Error while starting the service INSTALL_ODBC. 
+  NT Service Exception: 997 The service INSTALL_ODBC could not be started. 
+  System message: OverlappedI/O operation is in progress. 
+
+CAUSE
+=====
+
+This behavior occurs because of an incorrect password set on the Service account
+when you create the Software Metering server.
+
+WORKAROUND
+==========
+
+To work around this issue, ensure that the correct Service account password is
+used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

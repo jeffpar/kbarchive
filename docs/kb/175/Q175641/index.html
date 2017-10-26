@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175641: LMCompatibilityLevel and Its Effects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175641: LMCompatibilityLevel and Its Effects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175641/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175641/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175641/","publisher":null,"image":null,"headline":"Q175641: LMCompatibilityLevel and Its Effects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175641-lmcompatibilitylevel-and-its-effects">Q175641: LMCompatibilityLevel and Its Effects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175641
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows for Workgroups 
+- Microsoft Windows 95 
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Exchange Windows NT client 
+- Microsoft Outlook 97, on platform(s):
+   - Microsoft Windows 95 
+   - Microsoft Windows 98 
+   - Microsoft Windows 98 Second Edition 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to down-level clients on a computer running Windows for
+Workgroups and Windows 95, you may receive the error message:
+
+  \\&lt;Server&gt;\&lt;Share&gt; is not accessible.
+
+-or-
+
+  System Error 50 has occurred.
+
+  The Network Request is not supported.
+
+This message appears when you connect to a Windows 95 computer that has been set
+up to use User Level Access Control and when you connect to a share that has a
+password (Read or Full Control) set on it.
+
+Setting LMCompatibilityLevel to 2 prevents a Microsoft Exchange Server 4.0 and
+5.0 client from gaining access to a Microsoft Exchange Server versions 4.0 and
+5.0 from the Inbox with one of the following error messages:
+
+  Microsoft Exchange Server
+
+  Your Microsoft Exchange Server is unavailable.
+
+  You can retry connecting to the server using the network, or work offline and
+  connect using dial-up networking.
+
+  Network problems are preventing connection to the Microsoft Exchange Server
+  computer. Contact your system administrator is this condition persists.
+
+-or-
+
+  Microsoft Exchange Server
+
+  The logon credentials supplied were incorrect. Make sure your username and
+  domain are correct then type your password again.
+
+
+CAUSE
+=====
+
+If LMCompatibilityLevel is set to 2, Windows NT will never send a LANMAN
+challenge/response, and Windows NT will be unable to connect to clients that
+require it.
+
+MORE INFORMATION
+================
+
+To increase password security, Windows NT 4.0 allows you to restrict the sending
+of LANMAN challenge/response passwords over the network. This may, however, make
+Windows NT unable to connect to down-level clients and Exchange 4.0 and 5.0
+clients.
+
+For additional information on preventing the sending of LANMAN passwords, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q147706 How to Disable LM Authentication on Windows NT
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+click the following article number to view the article in the Microsoft
+Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+Additional query words: wfw inbox win95
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch kbOutlookSearch kbAudDeveloper kbWin95search kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbOutlook97Search kbWFWSearch kbZNotKeyword3
+Version           : :4.0,5.0,5.5
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

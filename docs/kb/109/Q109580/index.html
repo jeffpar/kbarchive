@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109580: Causes of Common SELECT - SQL Error Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109580: Causes of Common SELECT - SQL Error Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109580/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109580/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109580/","publisher":null,"image":null,"headline":"Q109580: Causes of Common SELECT - SQL Error Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109580-causes-of-common-select---sql-error-messages">Q109580: Causes of Common SELECT - SQL Error Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109580
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 2.50b 3.00 | 2.00 2.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 18-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following error messages can be produced by improper usage of the SELECT
+statement:
+
+  SQL column &lt;field&gt; not found &lt;field&gt; is not a memory variable
+  Alias &lt;alias&gt; not found
+
+The code sample below illustrates some possible causes of these error messages
+and explains why they occur.
+
+MORE INFORMATION
+================
+
+The following code sample executes a variety of SELECT statements. If the SELECT
+statement produces an error message, the reasoning behind the error message is
+explained.
+
+     CREATE TABLE customer (company C(20),state C(2))
+     INSERT INTO customer (company,state) VALUES ;
+      ("ABC Company","WA")
+     INSERT INTO customer (company,state) VALUES ;
+      ("Main Street Store ","NY")
+
+     CLOSE ALL
+
+     USE customer ALIAS test
+
+     SELECT customer.company FROM test WHERE customer.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * customer.company does not exist. The table is aliased as 'test'.
+      * This should be: "test.company"
+      * customer.state does not exist. The table is aliased as 'test'.
+      * "customer.state" should be "test.state"
+
+     SELECT customer.company FROM test WHERE test.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * customer.company does not exist. The table is aliased as 'test'.
+      * "customer.company" should be "test.company"
+
+     SELECT test.company FROM test WHERE customer.state = "WA"
+
+      * Produces Error: 'STATE' is not a memory variable
+      * customer.state does not exist. The table is aliased as 'test'.
+      * "customer.state" should be "test.state"
+
+     SELECT test.company FROM test WHERE test.state = "WA"
+
+      * OK.  This is a valid SELECT statement.
+
+     SELECT customer.company FROM customer WHERE customer.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * Since the customer table is already open, FoxPro will try
+      * to use it. It won't go to disk to open the table. But
+      * the table is aliased as 'test' so the fields should be
+      * aliased as 'test'.
+      * customer.company does not exist. The table is aliased as 'test'.
+      * "customer.company" should be "test.company"
+
+     SELECT customer.company FROM customer WHERE test.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * Since the customer table is already open, Fox will try
+      * to use it. It won't go to disk to open the table. But
+      * the table is aliased as 'test' so the fields should be
+      * aliased as 'test'.
+      * customer.company does not exist. The table is aliased as 'test'.
+      * "customer.company" should be "test.company"
+
+     SELECT test.company FROM customer WHERE customer.state = "WA"
+
+      * Produces Error: 'STATE' is not a memory variable
+      * Since the customer table is already open, FoxPro will try
+      * to use it. It won't go to disk to open the table. But
+      * the table is aliased as 'test' so the fields should be
+      * aliased as 'test'.
+      * customer.state does not exist. The table is aliased as 'test'.
+      * "customer.state" should be "test.state"
+
+     SELECT test.company FROM customer WHERE test.state = "WA"
+
+      * OK. This is a valid SELECT statement.
+
+     CLOSE ALL
+
+     USE customer ALIAS customer
+
+     SELECT customer.company FROM customer WHERE customer.state = "WA"
+
+      * OK. This is a valid SELECT statement.
+
+     SELECT customer.company FROM customer WHERE test.state = "WA"
+
+      * Produces Error: Alias 'TEST' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.state" should be "customer.state"
+
+     SELECT test.company FROM customer WHERE customer.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.company" should be "customer.company"
+
+     SELECT test.company FROM customer WHERE test.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.company" should be "customer.company"
+
+     CLOSE ALL
+
+     SELECT customer.company FROM customer WHERE customer.state = "WA"
+
+      * OK.  This is a valid SELECT statement.
+
+     SELECT customer.company FROM customer WHERE test.state = "WA"
+
+      * Produces Error: Alias 'TEST' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.state" should be "customer.state"
+
+     SELECT test.company FROM customer WHERE customer.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.company" should be "customer.company"
+
+     SELECT test.company FROM customer WHERE test.state = "WA"
+
+      * Produces Error: SQL column 'COMPANY' not found
+      * There is no table named test.
+      * No table is opened with a alias of test.
+      * "test.company" should be "customer.company"
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : 2.50 2.50a 2.50b 3.00 | 2.00 2.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

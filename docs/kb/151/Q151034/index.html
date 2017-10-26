@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151034/","publisher":null,"image":null,"headline":"Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151034-prb-mfc-control-panel-applet-shows-odbc-icon-in-control-panel">Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151034
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbnokeyword kbDatabase kbMFC kbODBC kbVC400
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MFC Control Panel applet displays the ODBC icon on the Control Panel with
+the functionality of the ODBC data source setup Control Panel applet. The
+NTCPLAPP MSDN sample exhibits this behavior.
+
+CAUSE
+=====
+
+The applet entry-point function, CPlApplet(), exported by the MFC control
+applet, is resolved to the function exported from ODBCCP32.LIB rather than the
+function exported from the project.
+
+RESOLUTION
+==========
+
+If you are not using any of the functions exported by ODBCCP32.LIB, then select
+the Input category in the Project Settings for the linker, and specify
+"odbccp32.lib" in the "ignore libraries" field. This is equivalent to adding
+/nodefaultlib:"odbccp32.lib" in the linker command line.
+
+However, if you have to link in the ODBCCP32.LIB file, then close the workspace,
+open the .mak file for the project as text, and add "odbccp32.lib" to the linker
+dependency line as shown in the example below. In the case of the NTCPLAPP
+sample, you should see lines similar to the following:
+
+     "$(OUTDIR)\MyCplApp.cpl" : "$(OUTDIR)" $(DEF_FILE)$(LINK32_OBJS)
+         $(LINK32) @&lt;&lt;
+       $(LINK32_FLAGS) $(LINK32_OBJS)
+
+These lines are the linker dependency and command line. Each target has these
+lines. Modify the last line as follows:
+
+     $(LINK32_FLAGS) $(LINK32_OBJS)odbccp32.lib
+
+This ensures that functions exported by the ODBCCP32.LIB file are searched last
+while linking. The CPlApplet is resolved to the one in your code because the
+.OBJ files are searched prior to the import libraries. If there are multiple
+targets, the modification needs to be made for all the targets.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Every Control Panel application must export the standard entry-point function
+CPlApplet that is called by Control Panel in various situations. When you
+include AFXDB.H in your project, MFC pulls in the ODBCCP32.LIB file through a
+#pragma comment(). This is the import library for the ODBC installation DLL that
+also exports CPlApplet. The linker resolves the CPlApplet function from the
+ODBCCP32.LIB rather than from your object files. Since CPlApplet resolves to the
+one in ODBCCP32.LIB, your Control Panel applet acts as another ODBC Control
+Panel applet.
+
+This behavior occurs in an Control Panel applet based on an appwizard- generated
+regular DLL project that includes AFXDB.H in STDAFX.H by default.
+
+REFERENCES
+==========
+
+Visual C++ Books Online and the Windows SDK documentation.
+
+Additional query words: 4.00 4.10 ODBCCP32 NTSERVCTRL
+
+======================================================================
+Keywords          : kbnokeyword kbDatabase kbMFC kbODBC kbVC400 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

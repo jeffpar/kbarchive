@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/227/Q227812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/227/Q227812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/227/Q227812/","publisher":null,"image":null,"headline":"Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q227812-only-tcpip-can-be-bound-to-virtual-network-adapter-in-wlbs-host">Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q227812
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2000; winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork
+Last Modified: 21-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Windows Load Balancing Service (WLBS) hosts that are operating in Unicast
+mode are connected directly to a switch, WLBS hides the virtual media access
+control (MAC) address by default so that the switch does not map the MAC address
+to a port. This is necessary because traffic to the virtual IP (VIP) address
+must reach all WLBS cluster hosts.
+
+As indicated in the WLBS configuration documentation, only TCP/IP should be bound
+to the virtual network adapter. If another protocol is bound to the virtual
+network adapter, the other protocol may send frames out through the network
+adapter, not giving the WLBS driver a chance to mask the virtual MAC address.
+
+MORE INFORMATION
+================
+
+The Network Load Balancing (NLB) driver in Windows 2000 Advanced Server and
+Datacenter Server is implemented as a filter and other protocols are not able to
+bypass it. NLB is then able to mask the virtual MAC address.
+
+For additional information, please click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q193602 Configuration Options for WLBS Hosts Connected to a Layer 2 Switches
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Component         : WLBS
+Technology        : kbWinNTsearch kbWinNT400xsearch kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : WINDOWS:2000; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

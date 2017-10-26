@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138206/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138206/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138206/","publisher":null,"image":null,"headline":"Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138206-why-a-is-not-the-same-as-a">Q138206: Why "A"="" Is Not the Same as ""="A"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138206
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the single equal sign (=) to test for a match between a string
+variable and an empty string, different results are obtained depending on which
+side of the equal sign the empty string ("") is placed. This is unlike string
+comparison routines that do not test first for length, such as the double equal
+sign (==) operator in Visual FoxPro.
+
+MORE INFORMATION
+================
+
+The code that follows is an example of how a string comparison routine might be
+written in the C programming language. Although this is not the exact code used
+by the architects of Visual FoxPro, it has been written in order to explain why
+a comparison between a string to an empty or null string might result in a true
+or false, depending on which side of the equal sign the null string appears.
+
+  #include &lt;stdio.h&gt;
+  #include &lt;string.h&gt;
+  int mycompare( char *, char * );        /* declare compare function  */ 
+
+  main()
+     {
+     char a1[]="Test", a2[]="";   /* data to compare */ 
+
+     /* Call the compare function    */ 
+     printf("%c\n", mycompare(a1,a2)?'T':'F' );
+
+     /* Call the compare function, switching the addresses of the data */ 
+     printf("%c\n", mycompare(a2,a1)?'T':'F' );
+     }  /* end of main program */ 
+
+     mycompare( char * c1, char * c2)
+     {
+     /* This is an example of C source code to compare two 'strings'   */ 
+     /* in memory. The starting addresses of the two strings already   */ 
+     /* in memory is passed to this function and assigned to local     */ 
+     /* variables designated by "star" (meaning 'pointer to' or        */ 
+     /* 'address of') c1 and "star" c2                                 */ 
+
+     /* Create a local variable to hold the length of the string, loop */ 
+     /* counter, and the result                                        */ 
+     int iLen, iCounter, iResult;
+
+     /* get the size of the string being compared to the primary string*/ 
+     iLen = strlen( c2 );
+
+     /* initially set the result to true (non-zero)                    */ 
+     iResult = 1;
+
+     for ( iCounter=0; iCounter &lt; iLen; iCounter++)
+     /* A standard C 'for' loop. The first element of any C array is    */ 
+     /* element zero, not element one, so you start the counter at zero.*/ 
+     /* Now, the array in memory actually contains the 'string' plus    */ 
+     /* an additional ASCII zero terminating character. You must        */ 
+     /* subtract one from the length to get the actual length of the    */ 
+     /* string being compared, thus iLen-1. Even so, because the loop   */ 
+     /* counter begins at zero and the strlen function returns the      */ 
+     /* actual length of the string, you loop as long as the counter    */ 
+     /* is less than the length.                                        */ 
+        {
+        if ( *(c1+iCounter) != *(c2+iCounter) )
+           if (iResult)
+              iResult = 0;
+        }
+
+     /* This code goes through and compares both strings character     */ 
+     /* by character until the end of string 2, pointed to by          */ 
+     /* *(c2+iCounter, is reached. During this time, if the characters */ 
+     /* do not match and the result is not already false, the result   */ 
+     /* is set to false.                                               */ 
+
+     /* But what happens if iLen-1 is already zero because the string  */ 
+     /* is empty?  You never enter the loop and iResult remains set    */ 
+     /* to 1 (true). This is returned by the function, thus            */ 
+     /* "Test"="" is true. However, when you reverse the data, iLen-1  */ 
+     /* contains the length of the string being compared. You enter    */ 
+     /* the For loop and iResult is set to false when comparing the    */ 
+     /* first character.                                               */ 
+
+     return iResult;
+     }  /* end of mycompare() function */ 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

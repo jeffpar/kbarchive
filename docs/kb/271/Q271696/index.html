@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271696/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271696/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271696/","publisher":null,"image":null,"headline":"Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271696-sms-smsapm32-creates-large-complete-job-files-on-clients">Q271696: SMS: Smsapm32 Creates Large "Complete" Job Files on Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271696
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms200fix kbSoftwareDist kbsms200preSP3fix kbsms200SP3fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computers that have the Systems Management Server (SMS) Advertised Programs
+client agent installed may experience sluggish performance, with a lot of memory
+allocated to Smsapm32.exe (as viewed by using Performance Monitor or Task
+Manager). Files in the &lt;Windows&gt;\Ms\Sms\Clicomp\Apa\Data\Complete folder
+may be large (larger than 10 KB) and contain repeated instances of inactive
+advertisements.
+
+CAUSE
+=====
+
+This problem occurs if both of the following conditions exist:
+
+- A specific program has more than one Advertisement.
+
+- One or more of the advertisements has expired.
+
+The Advertised Programs client agent (Smsapm32) improperly writes information
+about the expiration of an advertised program repeatedly to files in the
+Complete folder. Smsapm32 uses the information from the files in this folder to
+identify which advertisements have already run or expired. As the files grow
+larger, more memory is allocated to track the associated data, and client
+performance may be reduced.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+WORKAROUND
+==========
+
+To work around this issue, do not create multiple advertisements of the same
+package/program combination and then subsequently expire one or more of them.
+Instead, if an advertisement is expired, delete it before creating a new
+advertisement for the same program.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+Smsapm32 writes a Complete file to the
+&lt;Windows&gt;\Ms\Sms\Clicomp\Apa\Data\Complete folder when it has successfully
+run a program from an advertisement. The Complete file is an indicator that the
+program ran; it prevents the program from run again. Smsapm32 reads the contents
+of the Complete folder to determine if the offers available to the client have
+been run.
+
+Below is a sample instance of inactive advertisement list exhibiting the problem
+of duplicates, resulting in excessive memory use and processor utilization by
+SMSAPM32.EXE. Note the duplication of instance data:
+
+  
+
+  {
+    instance of Advertisement
+    {
+         AdvertID = "AAA20009";
+         ODP = "System";
+         Site = "AAA";
+    };
+    instance of Advertisement
+    {
+         AdvertID = "AAA20009";
+         ODP = "System";
+         Site = "AAA";
+    };
+    instance of Advertisement
+    {
+         AdvertID = "AAA20009";
+         ODP = "System";
+         Site = "AAA";
+    };
+    instance of Advertisement
+    {
+         AdvertID = "AAA20009";
+         ODP = "System";
+         Site = "AAA";
+    };
+    ...
+
+In addition, we may also get multiple ODPKey instances. The following is an
+excerpt from a complete file with this problem:
+
+  
+
+  instance of Active Advert List
+  {
+       PackageId = "MS000176";
+       instance of ODPKeyList
+       {
+               instance of ODPKey
+               {
+                       ODP = "System";
+                       Site = "MS0";
+               };
+               instance of ODPKey
+               {
+                       ODP = "System";
+                       Site = "MS0";
+               };
+               instance of ODPKey
+               {
+                       ODP = "System";
+                       Site = "MS0";
+               };
+
+Note that the multiple instances of ODPKey may also cause high CPU utilization on
+the client from the SMSAPM32.EXE process, and large amounts of network traffic.
+
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200fix kbSoftwareDist kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP2
+Version           : :2.0,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

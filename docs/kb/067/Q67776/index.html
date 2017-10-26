@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67776: NMK.COM Will Execute PWB.SHL If it Exists | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67776: NMK.COM Will Execute PWB.SHL If it Exists" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67776/","publisher":null,"image":null,"headline":"Q67776: NMK.COM Will Execute PWB.SHL If it Exists","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67776-nmkcom-will-execute-pwbshl-if-it-exists">Q67776: NMK.COM Will Execute PWB.SHL If it Exists</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67776
+Product(s): See article
+Version(s): 1.00 1.11
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_C S_PWB S_QUICKC S_NMK | mspl13_basic
+Last Modified: 28-DEC-1990
+
+NMK.COM will execute the PWB.SHL file if it exists in the subdirectory
+specified by the TMP environment variable. After spawning NMAKE to
+parse the desired makefile, PWB.SHL will be executed as a batch file
+with the commands listed in reverse order.
+
+This is expected behavior since NMK actually spawns NMAKE with the /z
+option. This instructs NMAKE to preprocess the makefile, writing out
+the commands to be performed into the file PWB.SHL, which is placed in
+the directory pointed to by the TMP environment variable. After NMAKE
+is finished, NMK reads the PWB.SHL file and executes the required
+commands. Once it is finished, the PWB.SHL file is set to 0 bytes or
+deleted.
+
+To see this behavior, create a file and name it PWB.SHL, placing the
+following two lines in it:
+
+   type listing.txt
+   dir &gt; listing.txt
+
+Place this file in the subdirectory pointed to by the TMP environment
+variable. The following command will spawn NMAKE /z in an attempt to
+parse PROGRAM.MAK, and then execute PWB.SHL:
+
+   nmk /f program.mak
+
+PWB.SHL will be set to 0 bytes or deleted after all commands have been
+executed.
+
+If PROGRAM.MAK does not exist, NMAKE will report an error informing
+you of that fact, and then NMK will proceed to execute PWB.SHL as
+described above.
+
+If you do not have a TMP environment variable, PWB.SHL will be
+executed if it exists in the current subdirectory.
+
+A side effect to be aware of is the following scenario. If you have
+shelled out of the Programmer's WorkBench to run your program (from
+the Execute selection on the Run menu) and your program hangs, forcing
+you to reboot, a PWB.SHL file will be left in your TMP subdirectory.
+If, after rebooting, you happen to run NMK before going into PWB, NMK
+will find the PWB.SHL file in the TMP subdirectory and execute it,
+causing PWB to be invoked even though you had not explicitly invoked
+PWB since the reboot.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

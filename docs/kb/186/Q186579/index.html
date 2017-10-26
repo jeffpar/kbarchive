@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186579/","publisher":null,"image":null,"headline":"Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186579-xcln-message-attachment-may-be-hidden-in-english-winnt-client">Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186579
+Product(s): Microsoft Exchange
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows NT client, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the English Microsoft Exchange client version 5.0 for Windows NT is used to
+view a message containing an attachment, the Exchange client may fail to display
+the attachment. The attachment is still included in the message and can be
+selected if the user double-clicks in the appropriate location.
+
+WORKAROUND
+==========
+
+There are several ways to work around this problem.
+
+- Select the entire message body and change the font. The attachment will then
+  become visible.
+
+- Set WordMail to be the default e-mail editor. WordMail can be configured as
+  follows:
+
+  1. Install the Exchange client.
+
+  2. Install Microsoft Word with the WordMail option selected.
+
+  3. Start the Exchange client and select WordMail Options from the Compose
+     menu.
+
+  4. Make sure to select the "Enable Word as e-mail editor" option.
+
+- Install and use the English Outlook client on computers running Windows NT
+  Workstation.
+
+- Install and use the Exchange Windows 95 client on a computer running Windows
+  95.
+
+- Install and use a non-English double-byte character set (DBCS) Exchange
+  Windows NT client (such as Kanji) on a localized version of Windows NT.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the English version of the
+Microsoft Exchange Windows NT client, version 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+MORE INFORMATION
+================
+
+This problem does not occur if the same message is viewed using the English
+Exchange Windows 95 client version 5.0, the Kanji Exchange Windows NT client
+version 5.0, or Microsoft Outlook. The English Outlook client does not exhibit
+this problem because Outlook uses Riched20.dll instead of Riched32.dll, which
+the Exchange client uses.
+
+The English Exchange Windows NT client is not the only application that displays
+this problem. If the message is saved as an RTF file and viewed within WordPad,
+the attachment's icon remains hidden.
+
+This problem occurs most often when a message is composed with unusual fonts on a
+double-byte character set (DBCS) workstation and is sent to recipients using
+non-DBCS workstations.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange500NT
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

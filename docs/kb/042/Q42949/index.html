@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42949: Example of Buffered Keyboard Input Using QuickBASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42949: Example of Buffered Keyboard Input Using QuickBASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42949/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42949/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42949/","publisher":null,"image":null,"headline":"Q42949: Example of Buffered Keyboard Input Using QuickBASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42949-example-of-buffered-keyboard-input-using-quickbasic">Q42949: Example of Buffered Keyboard Input Using QuickBASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42949
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890319-6 B_BasicCom | mspl13_basic
+Last Modified: 15-DEC-1989
+
+The following is a program example of buffered keyboard input with
+Microsoft QuickBASIC. Buffered input allows input from the screen, but
+limits the total number of characters that can be input and typed. It
+is a standard form of input for business applications. Microsoft
+QuickBASIC does not offer this as a built-in form of input. It must be
+programmed with a combination of other BASIC statements and functions.
+
+Note that BASIC does allow input into a fixed-length string, but will
+read only up to the maximum length for that string. However, this does
+not prevent you from typing any number of characters, which is
+undesirable when doing formatted screen input. This example shows only
+one way to do this. An added feature would be the addition of a
+cursor.
+
+This information applies to Microsoft QuickBASIC Versions 2.00, 2.01,
+3.00, 4.00, 4.00b, and 4.50 for MS-DOS, to Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
+PDS Version 7.00 for MS-DOS and MS OS/2.
+
+Code Example
+------------
+
+DECLARE SUB BufInput (StringVar$, Limit%)
+'NOTE: The DECLARE statement is not supported under Microsoft
+'      QuickBASIC Version 3.00 or earlier, and can be removed.
+
+CLS
+Limit% = 10 'Number of characters to input
+
+'Prompt for the input string.
+LOCATE 10, 5
+PRINT "PLEASE INPUT A STRING OF TEN CHARACTERS: ";
+COLOR 0, 7: PRINT SPACE$(Limit%)
+LOCATE 10, 46
+
+'Input a buffered string
+CALL BufInput(a$, Limit%)
+
+COLOR 7, 0
+CLS
+
+' Print out the result
+LOCATE 10, 10
+PRINT "THE STRING YOU INPUT WAS: ";
+COLOR 0, 7
+PRINT a$
+COLOR 7, 0
+
+END
+
+SUB BufInput (StringVar$, Limit%)
+BackSp$ = CHR$(8)
+Enter$ = CHR$(13)
+Length% = 0
+
+'Loop waiting for input. ENTER terminates the routine.
+WHILE char$ &lt;&gt; Enter$
+char$ = INKEY$
+   IF char$ &lt;&gt; "" THEN
+     IF (Length% &lt; Limit%) OR (char$ = BackSp$) THEN
+        SELECT CASE char$
+        CASE " " TO "~"  ' Input printable characters only
+           StringVar$ = StringVar$ + char$
+           PRINT char$;
+           Length% = Length% + 1
+        CASE BackSp$  'If BackSpace is pressed, erase.
+          IF Length% &lt;&gt; 0 THEN
+             Length% = Length% - 1
+             StringVar$ = LEFT$(StringVar$, Length%)
+             CurrX% = CSRLIN
+             CurrY% = POS(0) - 1
+             LOCATE CurrX%, CurrY%
+             PRINT " "
+             LOCATE CurrX%, CurrY%
+          END IF
+        END SELECT
+     ELSE
+        PLAY "o1AL32"
+     END IF
+   END IF
+WEND
+
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

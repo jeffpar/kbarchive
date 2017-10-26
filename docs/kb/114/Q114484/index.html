@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114484/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114484/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114484/","publisher":null,"image":null,"headline":"Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114484-wd97-delivery-point-bar-code-option-unavailable-envelope-merge">Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114484
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbprint kbdta kbenvelope word97 kbmerge kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you create envelopes as part of a mail merge operation, the Delivery Point
+Bar Code and FIM-A Courtesy Reply Mail options are unavailable (appear dimmed).
+
+CAUSE
+=====
+
+The Barcode option on the envelope dialog may appear dimmed if a country other
+than United States is selected in the International (Regional Settings in
+Windows 95 or later) dialog box in Control Panel.
+
+WORKAROUND
+==========
+
+When you create an envelope mail merge in Word 97 with the FIM-A option enabled
+and you choose any data source, the FIM-A barcode will not be added to the mail
+merge main document.
+
+To work around this problem, manually add the FIM-A barcode to the mail merge
+main document. To do this, follow these steps:
+
+1. Using the Drawing toolbar, add a text box to the envelope in the approximate
+  location and size for the FIM-A barcode.
+
+2. Place the insertion point inside the text box.
+
+3. Type the following field code, where Postal_Code is the name of the field
+  containing the zip codes in your data file. (To create the curly braces,
+  press CTRL+F9):
+
+  {BARCODE "{Mergefield Postal_Code}" \u \f "a" \* mergeformat}
+
+4. Press ALT+F9, if necessary, to view the FIM-A.
+
+5. Drag the text box if necessary, to adjust the position of the FIM-A.
+
+6. Proceed with the mail merge.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+The FIM (Facing Identification Mark) identifies the front side of the envelope.
+
+There are two situations where the FIM-A feature is used: when you create a
+single envelope outside of a mail merge, and when you perform an envelope mail
+merge. To add the FIM-A to your envelopes, use the appropriate method for your
+situation.
+
+Single Envelope
+---------------
+
+1. On the Tools menu, click Envelopes And Labels.
+
+2. On the Envelopes tab, click Options.
+
+3. On the Envelope Options tab, click to select the Delivery Point Barcode check
+  box. The "FIM-A courtesy reply mail" check box becomes available.
+
+4. Click to select the "FIM-A courtesy reply mail" check box.
+
+Envelope Mail Merge
+-------------------
+
+1. On the Tools menu, click Mail Merge.
+
+2. Under Main Document, click Create and then click Envelopes.
+
+3. Click New Main Document to create a new document for the envelopes.
+
+4. Under Data Source, click Get Data to attach a data file or to create a new
+  data file.
+
+5. After you have attached the data file, click Set Up Main Document.
+
+6. In the Envelope Options dialog box, click OK.
+
+7. In the Envelope Address dialog box, click "Insert Postal Bar Code."
+
+8. In the "Merge field with ZIP code" list, click the field name that contains
+  the ZIP code.
+
+9. Click to select the "FIM-A courtesy reply mail" check box, which is now
+  available.
+
+NOTE: If your data source is the Personal Address Book, selecting the FIM-A check
+box will not generate a FIM-A on the main document for the envelope mail merge.
+
+REFERENCES
+==========
+
+For additional information about barcodes please see the following articles in
+the Microsoft Knowledge Base.
+
+  Q107789 Mail Merge Attached Envelope Does Not Create Barcode
+
+  Q105576 WD: Position of Bar Codes Is Certified by U.S. Postal Service
+
+Or, click the Office Assistant, type "barcodes" (without the quotation marks),
+click Search, and then click the "Field codes: Barcode field" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: FIM-A dim dimmed grey greyed gray grayed out not available disabled barcode label fima personal address book
+
+======================================================================
+Keywords          : kbprint kbdta kbenvelope word97 kbmerge kbPrinting 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

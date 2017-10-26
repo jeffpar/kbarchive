@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241320: LU Has Blank Status after Connection Move to Another SNA Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241320: LU Has Blank Status after Connection Move to Another SNA Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241320/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241320/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241320/","publisher":null,"image":null,"headline":"Q241320: LU Has Blank Status after Connection Move to Another SNA Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241320-lu-has-blank-status-after-connection-move-to-another-sna-server">Q241320: LU Has Blank Status after Connection Move to Another SNA Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241320
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+Last Modified: 08-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A 3270 or LUA LU (Logical Unit) may show a "Blank" status in SNA Server Manager
+after the host connection it is associated with is moved to another SNA Server
+computer. Usually, the "Blank" LU status is only seen on instances of SNA Server
+Manager other than the one where the connection move was performed. On the
+computer where the connection move was performed, the connection and its LUs
+will have the same status as they had prior to the connection move, which may
+also be an incorrect status.
+
+This can also occur when a connection and its associated LUs are moved from one
+SNA Server service to another SNA Server service on the same SNA Server
+computer. A computer running SNA Server 4.0 (or later) can support up to four
+SNA Server services.
+
+CAUSE
+=====
+
+The Manage components associated with a connection and its LUs are not moved
+when the connection is moved to another SNA Server computer. Also, moving a
+connection between SNA Server services on the same SNA Server 4.0 (or later)
+computer results in the Manage components being duplicated. This can cause LU
+status updates to be sent to the incorrect Manage objects, which results in
+incorrect an LU status in SNA Server Manager.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The following example demonstrates how this problem occurs when you move
+connections between SNA Servers and SNA Server services on the same SNA Server
+system:
+
+Configuration:
+
+  Primary SNA Server 4.0 SP2 system
+  Backup SNA Server 4.0 SP2 system
+
+Connections moved using the drag-and-drop operation in SNA Server Manager:
+
+  TEST1 - Originally on the primary SNA Server service on the Primary SNA
+  Server (PRIMARY)
+  TEST2 - Originally on the primary SNA Server service on the Backup SNA Server
+  (BACKUP)
+
+Each connection had one 3270 LU defined.
+
+TEST1 is configured for On Demand startup.
+TEST2 is configured for On Server Startup.
+
+1. Open SNA Server Manager on both SNA Server computers.
+
+2. The primary SNA Server service on both SNA Server computers is Active, as is
+  the secondary SNA Server service on BACKUP.
+
+3. Use the drag-and-drop operation to move TEST1 from Primary SNA Server
+  (PRIMARY) to primary SNA Server service on Backup SNA Server (BACKUP). Assign
+  a link service (SNADEMO1) to the connection.
+
+4. Use the drag-and-drop operation to move TEST2 from primary SNA Server service
+  on BACKUP to secondary SNA Server service on BACKUP. Assign a link service
+  (SNADEMO2) to the connection.
+
+5. Save the configuration.
+
+6. SNA Server Manager, where the connection moves were performed, shows the
+  following status:
+
+  Connection LU
+
+  TEST1(Active) Available
+  TEST2 (Active) Available
+
+  This is incorrect because a connection moved to a new SNA Server service
+  cannot be active and the LU cannot be Available.
+
+7. Other instances of SNA Server Manager that are open show the following when
+  the configuration is refreshed:
+
+  Connection LU
+
+  TEST1 (Offline) Blank
+  TEST2 (Offline) Blank
+
+8. The SNA Server services on the backup SNA Server (BACKUP) are "Out of Date"
+  as expected. Restarting the SNA Server services corrects the status problem
+  in SNA Server Manager on the primary SNA server (PRIMARY) where the moves
+  were performed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

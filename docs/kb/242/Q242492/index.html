@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242492/","publisher":null,"image":null,"headline":"Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242492-sms-lsm-can-deinstall-domain-if-pdc-connectivity-lost">Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242492
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms200sp2fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When multiple Systems Management Server (SMS) sites share the same Microsoft
+Windows NT domain, Windows clients may begin to deinstall the SMS client
+software after performing Windows Networking Logon Client Installation or
+Discovery. This problem can be sporadic, with clients appearing to reinstall the
+SMS client during a future logon.
+
+When you check the primary domain controller's Smslogon share, the
+Sites\&lt;Sitecode&gt; folder for one or a number of sites that share the logon
+point may be missing or empty. Additionally, the Sitescfg folder on the logon
+point is missing the &lt;Sitecode&gt;_cfg.lcf files for one or more sites.
+
+These symptoms are more likely to occur on a Windows NT domain in which domain
+controllers exist across slow links.
+
+CAUSE
+=====
+
+During an SMS_NT_LOGON_SERVER_MANAGER polling interval performed by one of the
+sites sharing the SMS Logon Point, connectivity to the domain's primary domain
+controller (PDC) was lost for a short period. During the period of
+communications loss, the SMS site server was unable to read the configuration
+files in the PDC's Smslogon\Sitecfg folder. This can cause a site server that is
+not currently the senior site to assume the role of the senior site, and perform
+a domain deinstallation of all sites for which it is unable to find a
+&lt;Sitecode&gt;_cfg.lcf file.
+
+You can consider the domain deinstallation process performed by Logon Server
+Manager to be the same as if Windows Networking Logon Installation or Windows
+Networking Logon had been disabled for some sites in the domain. As part of this
+process, the Sites\&lt;Sitecode&gt; folder on the SMS Logon Point is removed
+from the PDC and the Logon Point configuration is replicated to all other domain
+controllers in the domain. Any clients that run the SMS logon script for any of
+the deleted sites are unable to find the configuration files for the site on the
+SMS Logon Point. The SMS client, being unable to determine the site boundary
+from the site's Netconf.ncf file, begins the deinstallation process.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To install the hotfix:
+
+1. Copy the Q242492.exe file from the disk on which you received it to a share
+  on your network. This is an SMS Installer file that updates specific files on
+  your site server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the SMS Administrator console.
+
+4. Run the executable file that you copied in step 1 and follow the directions
+  in the wizard.
+
+Additional query words: prodsms LSM
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200SP1
+Version           : winnt:2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

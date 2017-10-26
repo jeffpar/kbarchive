@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/220/Q220905/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/220/Q220905/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/220/Q220905/","publisher":null,"image":null,"headline":"Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q220905-xfor-error-retrieving-mail-by-imap4-on-exchange-wwindows-ce">Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q220905
+Product(s): Microsoft Exchange
+Version(s): 3.0,3.0 Professional Edition,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- the operating system: Microsoft Windows CE, versions 3.0 Professional Edition, 3.0 
+- Microsoft Windows CE 3.0 for the Handheld PC 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to retrieve mail from a Microsoft Exchange Server computer
+version 5.5 mailbox by means of Internet Message Access Protocol 4 (IMAP4) using
+the Inbox client included with the Windows CE Handheld PC Professional Edition,
+Windows Pocket PC with Windows CE, or Windows CE for the Handheld PC 2000, you
+may receive the following error message:
+
+  ! You can send messages but not receive them. Unable to log on. Please check
+  user name and password.
+
+In addition, the following events may appear in the application event log:
+
+  Event ID: 1300
+  Type: Information
+  Source: MSExchange IMAP4
+  Description:
+  An unauthenticated IMAP4 client IP_address issued the following command:
+  01be5f80bfb95780 AUTHENTICATE NTLM.
+
+  Event ID: 13004
+  Type: Error
+  Source: MSExchange IMAP4
+  Description:
+  Logon attempt from IP_address has failed: AcceptSecurityContext() call failed
+  with error Access denied.
+
+CAUSE
+=====
+
+You are attempting to access a mailbox that requires a clear-text password with
+Windows NT Challenge/Response (NTLM) authentication enabled.
+
+Or, you are using ANSI characters in your password.
+
+RESOLUTION
+==========
+
+To resolve this issue, you have one of two options:
+
+- Configure the Windows CE Inbox client's IMAP4 service wizard (on page 1 of 3)
+  to use only clear-text passwords. To do this, you need to leave the Domain
+  field in the Optional section blank, and populate the User ID field using the
+  following syntax:
+
+  &lt;Windows_NT_Domain&gt;/&lt;Windows_NT_account&gt;/&lt;Exchange_mailbox_alias&gt;
+
+  For example: If the Windows NT domain is Domain1 Windows NT account is User1
+  and the Exchange mailbox alias is U1, then the User ID field would be similar
+  to the following:
+
+  Domain1/User1/U1
+
+  -or-
+
+- Request your network or e-mail administrator to change the Exchange mailbox
+  alias to match your Windows NT account.
+
+Do not use ANSI characters in your password. An example of such an invalid
+password occurs when you combine certain key strokes to use characters in the
+ASCII extended character set, for example, when you hold down the ALT key while
+you type 23456 on the numeric keypad of your keyboard.
+
+
+MORE INFORMATION
+================
+
+When the optional Domain field on page 1 of the Windows CE Inbox IMAP4 service
+wizard is populated, it forces the client to use Windows NT Challenge/Response
+authentication. By leaving this field blank, the client uses a clear-text
+password.
+
+This article also applies to the Windows CE Inbox POP3 service wizard, although
+the errors and event IDs may differ.
+
+
+STATUS
+
+This is by design.
+
+Additional query words: pMail IMAP clear text wince hardware hp journada jornada nec mobilpro mobilepro compaq aero airo arrow vadim clio cleo
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbWinCESearch kbWinCE300HPC2000 kbOSWinCE300 kbZnotKeyword7 kbOSWinCESearch
+Version           : :3.0,3.0 Professional Edition,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

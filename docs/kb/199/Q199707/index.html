@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199707/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199707/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199707/","publisher":null,"image":null,"headline":"Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199707-prb-some-vb-50-programs-do-not-run-on-multiprocessor-pcs">Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199707
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbDLL kbKernBase kbVBp500
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Visual Basic 5.0 application attempts to load a 32-bit generic thunking
+DLL, it might not run properly on a multiprocessor computer.
+
+The term "32-bit generic thunking DLL" describes any 32-bit DLL that links with
+WOW32.DLL to provide 16-bit code with access to 32-bit code. This type of DLL is
+loaded by a 16-bit program through the LoadLibraryEx32W() API.
+
+CAUSE
+=====
+
+For a 32-bit program to map a 32-bit generic thunking DLL into its address
+space, you must also map the Windows NT Virtual DOS Machine (NTVDM.EXE) into the
+address space. The Visual Basic 5.0 Runtime Library, MSVBVM50.DLL, collides with
+NTVDM.EXE. Both MSVBVM50.DLL and NTVDM.EXE are based at 0x0F000000.
+
+On a uniprocessor computer, the operating system successfully relocates NTVDM.EXE
+and the program runs correctly. However, on a multiprocessor computer, NTVDM.EXE
+cannot be relocated. For additional information, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q199671 Relocation of NTVDM.EXE fails on multiprocessor machines
+
+RESOLUTION
+==========
+
+A 32-bit generic thunking DLL should be loaded by a 16-bit program only. The
+loading of a 32-bit thunking DLL into the address space of a 32-bit process is
+unsupported.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When a Visual Basic 5.0 application makes a call to a function in a 32-bit
+generic thunking DLL on a multiprocessor computer, the call fails. A query of
+Err.LastDllError returns the error code 998 "Invalid access to memory location"
+(ERROR_NOACCESS).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDLL kbKernBase kbVBp500 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

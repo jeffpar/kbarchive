@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q309135: Games: Using GOS Switches for Troubleshooting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q309135: Games: Using GOS Switches for Troubleshooting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/309/Q309135/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/309/Q309135/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/309/Q309135/","publisher":null,"image":null,"headline":"Q309135: Games: Using GOS Switches for Troubleshooting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q309135-games-using-gos-switches-for-troubleshooting">Q309135: Games: Using GOS Switches for Troubleshooting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q309135
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Crimson Skies 
+- Microsoft Links 2001 
+- Microsoft MechWarrior 4: Black Knight 
+- Microsoft MechWarrior 4: Vengeance 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use GOS switches to customize the startup process for the game and to
+resolve certain issues you may encounter when you attempt to start or play the
+game. For example, the game may stop responding (hang), quit unexpectedly
+(crash) or generate an error message.
+
+
+MORE INFORMATION
+================
+
+To manually add GOS switches to the command line in the game shortcut, follow
+these steps:
+
+1. Insert the game CD into the CD-ROM drive. Press and hold the SHIFT key as you
+  insert the CD-ROM to prevent the program from starting automatically.
+
+2. Right-click Start, and then click "Open" or "Open All Users".
+
+3. Double-click the Programs folder.
+
+4. Double-click the Microsoft Games folder.
+
+5. Double-click the game folder.
+
+6. Right-click the game shortcut icon, and then click Properties.
+
+7. On the Shortcut tab, in the Target box, press END, press SPACEBAR, and then
+  type the GOS switch that you want to use. If you want to use an additional
+  GOS switch, press SPACEBAR, and then type the next parameter.
+
+  For example, to add the GOS switch to MechWarrior Vengeance, type:
+   - MechWarrior 4: Vengeance:
+
+  "&lt;drive&gt;:\Program Files\Microsoft Games\MechWarrior
+  Vengeance\MW4.exe/gosnovideo" (without the quotation marks)
+
+   - MechWarrior 4: Black Knight
+
+  "&lt;drive&gt;:\Program Files\Microsoft Games\MechWarrior
+  Vengeance\MW4x.exe/gosnovideo" (without the quotation marks)
+
+  NOTE: GOS Switches are not case sensitive.
+
+8. Click "Apply" or "OK".
+
+The following table lists the GOS switches you can use to start MechWarrior 4.
+
+Parameter             Description
+--------------------------------------------------------------------------- 
+/gosUseHW             Overrides all checks and forces the use of 3-D 
+                     acceleration. 
+
+/gosNoDialogs         All PAUSE dialog boxes will run automatically but 
+                     will never be displayed. 
+
+/gosNoJoystick        Disables joystick enumeration and use. 
+
+/gosNoForceFeedback   Disables force feedback joysticks from using forces. 
+                     You can still use them as joysticks. 
+
+/gosNoMemory          Disables the GameOS memory manager. 
+
+/gosNoBlade           Disables the Blade software rasterizer and uses the 
+                     D3D RGB rasterizer instead. 
+
+/gosCheckMemory       Checks for memory overwrites/reads on all allocated 
+                     memory blocks. 
+
+/gosAllSymbols        All modules loaded with MechWarrior 4 will have their 
+                     .PDBs loaded and will display symbols in any stack 
+                     walks. 
+
+/gosInfo "fred.txt"   Writes machine information to the Fred.txt file and 
+                     exits without doing anything else. /gosInfo on its 
+                     own writes to the Debuglog.txt file. 
+
+If the /gosNoSound switch resolved the issue, click the article number below to
+view article in the Microsoft Knowledge Base:
+
+  Q263047 Games: How to Troubleshoot Sound Related Issues
+
+Q If the /gosNoVideo switch resolved the issue, click the article number below to
+view article in the Microsoft Knowledge Base:
+
+  Q133365 Windows 95/98: Troubleshooting Problems with Compressed Audio
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbLinkGolfSearch kbGamesSearch kbGolfSearch kbCrimsonSkiesSearch kbCrimsonSkies kbLinks2001
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

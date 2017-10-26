@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69110: QB 4.x Program Example to Create or Remove Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69110: QB 4.x Program Example to Create or Remove Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69110/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69110/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69110/","publisher":null,"image":null,"headline":"Q69110: QB 4.x Program Example to Create or Remove Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69110-qb-4x-program-example-to-create-or-remove-directory">Q69110: QB 4.x Program Example to Create or Remove Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69110
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S910123-221 | mspl13_basic
+Last Modified: 6-FEB-1991
+
+In Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10, the statement to make a directory is MKDIR(Directory$), and
+the statement to remove a directory is RMDIR(Directory$). Because
+QuickBASIC versions 4.00, 4.00b, and 4.50 do not have these
+statements, two alternative ways of creating and removing directories
+are listed below.
+
+The following information applies to Microsoft QuickBASIC versions
+4.00, 4.00b, and 4.50 for MS-DOS.
+
+The first method to either create or remove directories is simple, but
+requires more memory and is slower. This first method requires using
+the SHELL statement.
+
+Directory$ = "Dir1"   ' Put the new directory name to create here.
+Sh$ = "MKDIR "+ Directory$
+SHELL Sh$             ' Creates a directory named Dir1.
+
+You could substitute "RMDIR " for "MKDIR " above to remove the
+directory.
+
+Method two below uses a CALL INTERRUPT statement to make and remove
+directories. This method uses less memory and is faster because it
+does not do a SHELL. It also returns a code to tell you whether or not
+the operation was successful.
+
+' MRDIR.BAS
+' Example program to Make or Remove DIRectories.
+'
+' To run this program in QB.EXE, type the following at the DOS prompt:
+'      QB MRDIR /L
+' Type in the program, and run it (SHIFT+F5).
+DECLARE FUNCTION MakeDir% (Directory$)
+DECLARE FUNCTION RemoveDir% (Directory$)
+' $INCLUDE: 'QB.BI'
+CLS
+PRINT "1. Make a Directory"
+PRINT "2. Remove a Directory"
+DO
+      C$ = INKEY$
+LOOP UNTIL C$ = "1" OR C$ = "2"
+IF C$ = "1" THEN
+      INPUT "Enter the name of the new directory ", Directory$
+      x = MakeDir(Directory$)
+ELSE
+      INPUT "Enter the name of the directory to be removed ",
+Directory$
+      x = RemoveDir(Directory$)
+END IF
+IF x = 0 THEN PRINT "Successful" ELSE PRINT "Unsuccessful"
+
+' The following function creates a new subdirectory in the current
+' directory. This function returns 0 if the directory was created
+' successfully, or returns 1 if the directory could not be created.
+FUNCTION MakeDir% (Directory$)
+      DIM inreg AS RegType, outreg AS RegType
+      IF RIGHT$(Directory$, 1) &lt;&gt; CHR$(0) THEN
+         Directory$ = Directory$ + CHR$(0)
+      END IF
+      inreg.ax = &amp;H3900     'Function 39 hex of interrupt 21 hex.
+      inreg.dx = SADD(Directory$)   'Offset of string variable.
+      CALL INTERRUPT(&amp;H21, inreg, outreg)
+      MakeDir% = (outreg.flags AND 1)   'Return success flag.
+END FUNCTION
+
+' The following function deletes an existing subdirectory from the
+' current directory. This function returns 0 if the directory was
+' deleted successfully, or returns 1 if the directory could not be
+' deleted.
+FUNCTION RemoveDir% (Directory$)
+      DIM inreg AS RegType, outreg AS RegType
+      IF RIGHT$(Directory$, 1) &lt;&gt; CHR$(0) THEN
+         Directory$ = Directory$ + CHR$(0)
+      END IF
+      inreg.ax = &amp;H3A00       'Function 3A hex of interrupt 21 hex.
+      inreg.dx = SADD(Directory$)  'Offset of string variable.
+      CALL INTERRUPT(&amp;H21, inreg, outreg)
+      RemoveDir% = (outreg.flags AND 1)  'Return success flag.
+END FUNCTION
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

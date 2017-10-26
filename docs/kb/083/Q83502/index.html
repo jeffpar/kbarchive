@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83502: SETUP.TXT from Windows 3.1 Part A | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83502: SETUP.TXT from Windows 3.1 Part A" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83502/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83502/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83502/","publisher":null,"image":null,"headline":"Q83502: SETUP.TXT from Windows 3.1 Part A","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83502-setuptxt-from-windows-31-part-a">Q83502: SETUP.TXT from Windows 3.1 Part A</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83502
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Microsoft Windows operating system
+version 3.1 SETUP.TXT file. This article contains Setup notes and machine and
+video notes.
+
+MORE INFORMATION
+================
+
+This file contains information about problems that may occur while
+running Windows Setup and describes problems that can occur when using
+terminate-and-stay-resident (TSR) programs or drivers with Windows or
+Windows Setup. If you are using a TSR or if you encounter problems
+setting up Windows version 3.1, read this document BEFORE running
+Setup again.
+
+General Setup Notes
+====================
+This section includes notes on specific system configurations that may
+prevent Setup from installing Windows successfully. A solution to each
+problem is provided.
+
+If you are using a hardware or software product listed here, follow
+the proposed recommendations before running Setup.
+
+MS-DOS Screen Savers
+---------------------
+If you are using an MS-DOS screen saver, you should disable it before
+running Setup. These screen savers can cause problems when running
+Setup.
+
+COMPAQ Computer with MS-DOS Version 5.0 and EGA or VGA
+---------------------------------------------------------
+If you are using the upgrade version of Microsoft MS-DOS 5.0, check
+your CONFIG.SYS file to make sure the following drivers appear in this
+order:
+
+   HIMEM.SYS
+   EMM386.EXE
+   ANSI.SYS
+
+Note: If you are using the COMPAQ version of MS-DOS 5.0,
+     HIMEM.EXE is used in place of HIMEM.SYS and CEMM.EXE
+     is used in place of EMM386.EXE.
+
+If ANSI.SYS is loaded before HIMEM.SYS or EMM386.EXE (or if you are
+using COMPAQ MS-DOS 5.0 before HIMEM.EXE or CEMM.EXE), Setup may
+restart your system before Windows is installed. Also, if you are
+using the DOS=HIGH,UMB command line to load MS-DOS into upper memory,
+loading EMM386.EXE (or CEMM.EXE) before loading ANSI.SYS will create
+the maximum amount of upper memory space on a COMPAQ computer.
+
+AT&amp;T Safari Computer
+--------------------
+If you have an AT&amp;T Safari computer, you cannot maintain two versions
+of Windows (version 3.0 and version 3.1) on your system. You must
+upgrade over version 3.0. If you set up Windows 3.1 in its own
+directory, Windows will not use the special drivers required for it to
+run on the Safari computer.
+
+Using the TIGA Display Driver
+-------------------------------
+If you are using the TIGA display driver, you must load the TIGACD.EXE
+MS-DOS driver manually before running Setup to upgrade Windows.
+Otherwise, Windows will not upgrade your system properly.
+
+After successfully setting up Windows, you can increase the amount of
+conventional memory available to non-Windows applications when Windows
+is running in 386 enhanced mode by loading TIGACD.EXE from the
+WINSTART.BAT file. The WINSTART.BAT file runs only in 386 enhanced
+mode. If you want to run Windows in standard mode, you must load
+TIGACD.EXE manually. For more information, see the README.WRI online
+document.
+
+Displays That Are Incompatible with Windows Version 3.1
+-------------------------------------------------------
+Certain display adapters can cause problems with Windows version 3.1.
+The most serious problem is a system failure while running Windows
+Setup. If you encounter this problem, run Custom Setup, and then
+select one of the standard display types, such as VGA, provided with
+Windows version 3.1.
+
+With other display drivers, Windows may be set up successfully but
+TrueType fonts may not appear correctly on your screen. An updated
+driver may be available in the Windows Driver Library or from your
+display vendor or manufacturer. For information about obtaining the
+Windows Driver Library, see "Getting Started with Microsoft Windows."
+
+The following display adapters may cause problems:
+
+-  ATI Graphics Ultra and Vantage
+
+  NOTE: These adapters are 8514/a-compatible and run well
+        with the 8514/a driver provided with Windows 3.1.
+
+- All DGIS display adapters (Direct Graphics Interface Standard)
+ from Graphic Software Systems, including the following:
+       NEC MultiSynch Graphics Engine (MGE)
+       Zenith Z-649
+       HP IGC-10, IGC-20
+       GSS 1000 Series
+
+  NOTE: Some DGIS-based adapters are TIGA-compatible and
+        run well when used with the appropriate TIGACD.EXE
+        MS-DOS driver and with the TIGA driver provided with
+        Windows 3.1.
+
+- HP Ultra VGA
+- IBM Image Adapter/A
+- Matrox MG Series/M-WIN Series
+- Palettized VGA 640x480, 16-color (provided with Windows
+ Multimedia Extensions version 1.0)
+- Radius SVGA MultiView
+
+- All RGDI (Renaissance Graphics Device Interface) display
+ adapters from Appian, Inc., including the following:
+      Appian Rendition II, IIe, II/XE, and III
+      Appian GV1024
+      Decpc 433
+
+- All S3 adapters, including the following:
+     Orchid Fahrenheit 1280
+     STB WIND/X
+     Diamond Stealth VRAM
+
+Using Stacker
+-------------
+If you are using Stacker to compress your hard disk, there are certain
+steps you need to take before setting up Windows.
+
+*  If you want to use a swap file with Windows, you must
+  set up the swap file on the uncompressed drive. When
+  setting up Stacker, you can leave at least 1 megabyte (MB)
+  of disk space uncompressed for storing system files. To
+  leave enough space for the swap file, it is recommended
+  that the amount of uncompressed disk space equal at least
+  twice the amount of system memory. For example, if your
+  system has 4 MB of memory, you should leave at least 8 MB
+  of disk space uncompressed.
+
+  If Stacker is already set up on your system and there is not
+  enough uncompressed disk space for a swap file, you can run
+  the STAC utility provided with Stacker to increase the amount
+  of uncompressed disk space. For more information, see your
+  Stacker documentation.
+
+*  If you are using Stacker version 2.0 or later, Windows Setup
+  modifies your CONFIG.SYS and AUTOEXEC.BAT files. When Setup
+  is finished making the modifications, it displays a message
+  at the end of the Windows portion of Setup notifying you of
+  the modifications. If you have used Stacker to swap your
+  startup drive, when you restart your system Stacker will
+  ask whether you want to update to the new version of the
+  CONFIG.SYS or AUTOEXEC.BAT file. It is recommended that you
+  update.
+
+  If you are using a version of Stacker earlier than 2.0, you
+  may need to modify your CONFIG.SYS and AUTOEXEC.BAT files
+  yourself. For more information, see "Modifying Your CONFIG.SYS
+  and AUTOEXEC.BAT Files Yourself," following this topic.
+
+*  For best performance, do not use SMARTDrive to cache the
+  compressed drive. You only need to cache the uncompressed
+  drive. You can include options on the SMARTDRV.EXE line of
+  the CONFIG.SYS file to specify which drives to cache.
+
+  For example, if the Stacker swap utility swaps drives C and
+  D so that C is compressed and D is uncompressed, you would
+  include the following line in your CONFIG.SYS file:
+
+       device=\windows\smartdrv.exe C- D+
+
+For more information about swap files and using SMARTDrive, see
+Chapter 14, "Optimizing Windows," in the "Microsoft Windows User's
+Guide."
+
+Modifying Your CONFIG.SYS and AUTOEXEC.BAT Files Yourself
+---------------------------------------------------------
+When you set up Windows, Setup usually places the HIMEM.SYS,
+SMARTDRV.EXE, and EMM386.EXE files in the Windows directory. If the
+Windows directory is on a disk that is not available when you start
+your computer, such as a removable or nonlocal disk, or if Setup
+detects one of the following conditions, Setup does not modify the
+CONFIG.SYS or AUTOEXEC.BAT file:
+
+- Your boot drive has been modified by a disk-compression
+ utility.
+
+- Your CONFIG.SYS file contains references to block device
+ drivers.
+
+- There is not enough available space on your hard disk to
+ copy the files.
+
+- The files are already installed on your system and Setup
+ cannot overwrite them (they are read-only).
+
+Instead, Setup writes proposed changes to the CONFIG.WIN and
+AUTOEXEC.WIN or the CONFIG.00x and AUTOEXEC.00x files. In this case,
+you must either move the HIMEM.SYS, SMARTDRV.EXE, and EMM386.EXE files
+to a drive that is available when you start your computer, or use a
+text editor to modify your CONFIG.SYS or AUTOEXEC.BAT file so that any
+references to HIMEM.SYS, SMARTDRV.EXE, and EMM386.EXE appear after the
+device= command line used to load the drivers for your disk drives.
+Refer to the CONFIG.WIN and AUTOEXEC.WIN or the CONFIG.00x and
+AUTOEXEC.00x files for the proposed changes.
+
+Setting Up XGA on a PS/2 Model 75 or 90
+-----------------------------------------------------
+If you have a PS/2 model 75 or 90 with an XGA, Windows Setup will
+configure the display adapter for 16-color, 640x480 resolution. Do not
+change this configuration during Setup. Specifying a different XGA
+configuration while setting up Windows may cause Setup to fail.
+
+After you have successfully installed Windows, you can configure your
+XGA to use a different resolution or 256 colors, if your monitor
+supports it. For more information on how to do this, see the topic
+"IBM XGA" in the README.WRI online document.
+
+If you are using the plasma screen on the PS/2 model 75, use ONLY the
+640x480, 16-color configuration. If you change this configuration, you
+will be returned to the MS-DOS prompt when you try to start Windows.
+
+Correcting the "Out of Environment Space" Error Message
+-------------------------------------------------------
+If you receive an "out of environment space" message when starting
+Windows, you can either:
+
+*  Increase the size of your environment by adding the SHELL=
+  command line to your CONFIG.SYS file. See your MS-DOS
+  documentation for more information about the SHELL command
+  and modifying your CONFIG.SYS file.
+
+*  Move the SET commands in your AUTOEXEC.BAT file
+  to the beginning of the file so that they run before the
+  commands that load terminate-and-stay-resident (TSR)
+  programs or drivers, such as SMARTDrive.
+
+If Windows Setup Does Not Detect Your Network
+---------------------------------------------
+If you have a network installed and Setup specifies "No Network" in
+the System-Information screen, Setup is not able to detect your
+network. For Setup to detect certain networks, the directory that
+contains the network program files must be included in your path.
+
+This is a known problem with these networks: 3Share, 3Open, LAN
+Manager, and MSNet. If your path does not include the directory where
+the network files are located, you can either:
+
+*  Add the directory to the PATH line in your AUTOEXEC.BAT
+  file.
+
+*  Run Custom Setup and specify the full path for your
+  network in the System-Information screen.
+
+The products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.1 tsr win31
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

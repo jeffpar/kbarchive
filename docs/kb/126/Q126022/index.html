@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126022/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126022/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126022/","publisher":null,"image":null,"headline":"Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126022-contents-of-fontmaptxt-for-ultimate-haunted-house">Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126022
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+1.00
+WINDOWS
+kbreadme kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Haunted House for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the text of the FONTMAP.TXT for The Ultimate Haunted House.
+
+; Copyright 1994, Macromedia, Inc.  All Rights Reserved.
+;
+;=================================================================
+;
+; Default Font Mapping Table for Director 4.0 Macintosh and Windows.
+;
+; This file provides a font mapping table for Director 4.0 for Windows
+; and Director 4.0.3 for Macintosh.
+;
+; If a copy of this file is in the same folder or directory as the
+; Director application, Director will automatically include this font
+; mapping table in every new movie you create.
+;
+; To add this font mapping table to an existing movie, choose Movie Info
+; from the File menu.  Then click Load from File.  Use the dialog box
+; that appears to locate this file.
+;
+; Note: In this file, a semicolon at the beginning of a line indicates
+; a comment.
+;
+;=================================================================
+;
+; FONT MAPPINGS
+;
+; Font mappings specify which font and size substitutions to make when
+; moving a movie from one platform to another.
+;
+; The format for font mapping definitions is:
+;
+; Platform:FontName =&gt; Platform:FontName [MAP NONE] [oldSize =&gt; newSize]
+;
+;    Specifying MAP NONE turns off character mapping for this font.
+;    If you specify size mappings, they apply for THAT FONT ONLY.
+;
+; Here are some typical mappings for the standard Macintosh fonts:
+;
+
+Mac:Chicago       =&gt; Win:System
+Mac:Courier       =&gt; Win:"Courier New"
+Mac:Geneva        =&gt; Win:"MS Sans Serif"
+Mac:Helvetica     =&gt; Win:Arial
+Mac:Monaco        =&gt; Win:Terminal
+Mac:"New York"    =&gt; Win:"MS Serif"
+Mac:Symbol        =&gt; Win:Symbol  Map None
+Mac:Times         =&gt; Win:"Times New Roman" 14=&gt;12 18=&gt;14 24=&gt;18 30=&gt;24
+;
+; Here are some typical mappings for the standard Windows fonts:
+;
+Win:Arial             =&gt; Mac:Helvetica
+Win:"Courier"         =&gt; Mac:Courier
+Win:"Courier New"     =&gt; Mac:Courier
+Win:"MS Serif"        =&gt; Mac:"New York"
+Win:"MS Sans Serif"   =&gt; Mac:Geneva
+Win:Symbol            =&gt; Mac:Symbol  Map None
+Win:System            =&gt; Mac:Chicago
+Win:Terminal          =&gt; Mac:Monaco
+Win:"Times New Roman" =&gt; Mac:"Times" 12=&gt;14 14=&gt;18 18=&gt;24 24=&gt;30
+; Note: When mapping from Windows to Macintosh, Courier and Courier New
+; map onto Courier.  When coming back to Windows only Courier New
+; will be used.
+; Japanese Font Mappings
+;
+; The Macintosh Japanese Osaka font is mapped to a Windows font, and
+; all Windows fonts are mapped to Macintosh's Osaka.  Map None is used
+; because only Roman fonts need upper-ASCII characters mapped.  To prevent
+; mapping of any additional Japanese fonts, add them to this list.
+;
+; Note: If you do not have a Japanese system, the font names below
+; will appear to be unreadable.
+Mac:Osaka=&gt;Win:"W?SVbN" Map None
+Win:"lr SVbN"=&gt;Mac:Osaka Map None
+Win:"lr -3/4'(c)"=&gt;Mac:Osaka Map None
+Win:"W?SVbN"=&gt;Mac:Osaka Map None
+Win:"W?-3/4'(c)"=&gt;Mac:Osaka Map None
+Win:"-3/4'(c)"=&gt;Mac:Osaka Map None
+;=================================================================
+;
+; CHARACTER MAPPINGS
+;
+; Character mapping ensures that characters such as bullets,
+; quote marks, and accented characters always appear correctly
+; when text is moved from one platform to another.  When a
+; character is mapped, a different ASCII value is substituted
+; in order to preserve the appearance of the character.
+;
+; Character mappings are used for all fonts EXCEPT those declared
+; above as Map None.
+;
+; The format for character mappings is:
+;
+; Platform: =&gt; Platform:  oldChar =&gt; oldChar ...
+;
+; The following table provides a full set of bi-directional
+; mappings for all ASCII values between 128 and 255.
+;
+; Note: Some characters are not available in both character sets.
+; However, the bi-directional mapping table below preserves these
+; characters even if they are mapped to a different platform and
+; later re-mapped back to the original platform.
+Mac: =&gt; Win: 128=&gt;196 129=&gt;197 130=&gt;199 131=&gt;201 132=&gt;209 133=&gt;214 134=&gt;220
+Mac: =&gt; Win: 135=&gt;225 136=&gt;224 137=&gt;226 138=&gt;228 139=&gt;227 140=&gt;229 141=&gt;231
+Mac: =&gt; Win: 142=&gt;233 143=&gt;232 144=&gt;234 145=&gt;235 146=&gt;237 147=&gt;236 148=&gt;238
+Mac: =&gt; Win: 149=&gt;239 150=&gt;241 151=&gt;243 152=&gt;242 153=&gt;244 154=&gt;246 155=&gt;245
+Mac: =&gt; Win: 156=&gt;250 157=&gt;249 158=&gt;251 159=&gt;252 160=&gt;134 161=&gt;190 162=&gt;162
+Mac: =&gt; Win: 163=&gt;163 164=&gt;167 165=&gt;149 166=&gt;182 167=&gt;223 168=&gt;174 169=&gt;169
+Mac: =&gt; Win: 170=&gt;153 171=&gt;180 172=&gt;168 173=&gt;141 174=&gt;198 175=&gt;216 176=&gt;144
+Mac: =&gt; Win: 177=&gt;177 178=&gt;143 179=&gt;142 180=&gt;165 181=&gt;181 182=&gt;240 183=&gt;221
+Mac: =&gt; Win: 184=&gt;222 185=&gt;254 186=&gt;138 187=&gt;170 188=&gt;186 189=&gt;253 190=&gt;230
+Mac: =&gt; Win: 191=&gt;248 192=&gt;191 193=&gt;161 194=&gt;172 195=&gt;175 196=&gt;131 197=&gt;188
+Mac: =&gt; Win: 198=&gt;208 199=&gt;171 200=&gt;187 201=&gt;133 202=&gt;160 203=&gt;192 204=&gt;195
+Mac: =&gt; Win: 205=&gt;213 206=&gt;140 207=&gt;156 208=&gt;173 209=&gt;151 210=&gt;147 211=&gt;148
+Mac: =&gt; Win: 212=&gt;145 213=&gt;146 214=&gt;247 215=&gt;215 216=&gt;255 217=&gt;159 218=&gt;158
+Mac: =&gt; Win: 219=&gt;164 220=&gt;139 221=&gt;155 222=&gt;128 223=&gt;129 224=&gt;135 225=&gt;183
+Mac: =&gt; Win: 226=&gt;130 227=&gt;132 228=&gt;137 229=&gt;194 230=&gt;202 231=&gt;193 232=&gt;203
+Mac: =&gt; Win: 233=&gt;200 234=&gt;205 235=&gt;206 236=&gt;207 237=&gt;204 238=&gt;211 239=&gt;212
+Mac: =&gt; Win: 240=&gt;157 241=&gt;210 242=&gt;218 243=&gt;219 244=&gt;217 245=&gt;166 246=&gt;136
+Mac: =&gt; Win: 247=&gt;152 248=&gt;150 249=&gt;154 250=&gt;178 251=&gt;176 252=&gt;184 253=&gt;189
+Mac: =&gt; Win: 254=&gt;179 255=&gt;185
+
+Win: =&gt; Mac: 128=&gt;222 129=&gt;223 130=&gt;226 131=&gt;196 132=&gt;227 133=&gt;201 134=&gt;160
+Win: =&gt; Mac: 135=&gt;224 136=&gt;246 137=&gt;228 138=&gt;186 139=&gt;220 140=&gt;206 141=&gt;173
+Win: =&gt; Mac: 142=&gt;179 143=&gt;178 144=&gt;176 145=&gt;212 146=&gt;213 147=&gt;210 148=&gt;211
+Win: =&gt; Mac: 149=&gt;165 150=&gt;248 151=&gt;209 152=&gt;247 153=&gt;170 154=&gt;249 155=&gt;221
+Win: =&gt; Mac: 156=&gt;207 157=&gt;240 158=&gt;218 159=&gt;217 160=&gt;202 161=&gt;193 162=&gt;162
+Win: =&gt; Mac: 163=&gt;163 164=&gt;219 165=&gt;180 166=&gt;245 167=&gt;164 168=&gt;172 169=&gt;169
+Win: =&gt; Mac: 170=&gt;187 171=&gt;199 172=&gt;194 173=&gt;208 174=&gt;168 175=&gt;195 176=&gt;251
+Win: =&gt; Mac: 177=&gt;177 178=&gt;250 179=&gt;254 180=&gt;171 181=&gt;181 182=&gt;166 183=&gt;225
+Win: =&gt; Mac: 184=&gt;252 185=&gt;255 186=&gt;188 187=&gt;200 188=&gt;197 189=&gt;253 190=&gt;161
+Win: =&gt; Mac: 191=&gt;192 192=&gt;203 193=&gt;231 194=&gt;229 195=&gt;204 196=&gt;128 197=&gt;129
+Win: =&gt; Mac: 198=&gt;174 199=&gt;130 200=&gt;233 201=&gt;131 202=&gt;230 203=&gt;232 204=&gt;237
+Win: =&gt; Mac: 205=&gt;234 206=&gt;235 207=&gt;236 208=&gt;198 209=&gt;132 210=&gt;241 211=&gt;238
+Win: =&gt; Mac: 212=&gt;239 213=&gt;205 214=&gt;133 215=&gt;215 216=&gt;175 217=&gt;244 218=&gt;242
+Win: =&gt; Mac: 219=&gt;243 220=&gt;134 221=&gt;183 222=&gt;184 223=&gt;167 224=&gt;136 225=&gt;135
+Win: =&gt; Mac: 226=&gt;137 227=&gt;139 228=&gt;138 229=&gt;140 230=&gt;190 231=&gt;141 232=&gt;143
+Win: =&gt; Mac: 233=&gt;142 234=&gt;144 235=&gt;145 236=&gt;147 237=&gt;146 238=&gt;148 239=&gt;149
+Win: =&gt; Mac: 240=&gt;182 241=&gt;150 242=&gt;152 243=&gt;151 244=&gt;153 245=&gt;155 246=&gt;154
+Win: =&gt; Mac: 247=&gt;214 248=&gt;191 249=&gt;157 250=&gt;156 251=&gt;158 252=&gt;159 253=&gt;189
+Win: =&gt; Mac: 254=&gt;185 255=&gt;216
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbKidsSearch kbHauntedHouse
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

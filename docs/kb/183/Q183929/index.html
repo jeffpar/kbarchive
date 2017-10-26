@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183929/","publisher":null,"image":null,"headline":"Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183929-xcln-err-msg-not-a-full-exchange-system-cannot-continue">Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183929
+Product(s): Microsoft Exchange
+Version(s): 4.0,4.0 SP3,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 22-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Exchange Server, versions 4.0 SP3, 5.5 
+- Microsoft Exchange, version 4.0 
+- Microsoft Exchange Server, version 5.0 Service Packs 1, 2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to apply any of the above service packs, the following error
+message appears:
+
+  Not a full Exchange system. Cannot continue with update.
+
+CAUSE
+=====
+
+The Microsoft Exchange Windows 95 or Windows NT client is actually the installed
+Windows Messaging client rather than the retail version of the Exchange client.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the Exchange Windows 95 or Windows NT
+Messaging client completely and install the retail version of the Microsoft
+Exchange client by following the steps below:
+
+NOTE: These steps are for installing Service Pack 3 on the Microsoft Exchange
+client version 4.0. You must make adjustments for installing other versions and
+service packs.
+
+1. Go to Add/Remove Programs in Control Panel.
+
+2. Select the Windows 95 Setup tab or the Windows NT Setup tab.
+
+3. Select the Windows Messaging option in the Component List.
+
+4. Click the Details button.
+
+5. Clear the Windows Messaging option check box.
+
+6. Click OK to confirm your selection.
+
+7. Click OK on the Add/Remove Programs Property page to finalize the changes.
+
+8. Install the retail version of the Exchange client.
+
+9. Install Service Pack 2, following instructions in the Exchange Service Pack
+  Readme.txt file.
+
+10. Install Service Pack 3, following instructions in the Exchange Service Pack
+  Readme.txt file.
+
+MORE INFORMATION
+================
+
+If the Exchange Windows 95 or Windows NT client does not completely uninstall,
+see the following Microsoft Knowledge Base article:
+
+  Q165961 How to Fully Remove the Exchange Windows 95 and Exchange Windows NT
+  Client
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbZNotKeyword8 kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange500SP1 kbExchange400SP3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : :4.0,4.0 SP3,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

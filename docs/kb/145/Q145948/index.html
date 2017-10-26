@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145948: Intermittent Logons To NetWare and FPNW Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145948: Intermittent Logons To NetWare and FPNW Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145948/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145948/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145948/","publisher":null,"image":null,"headline":"Q145948: Intermittent Logons To NetWare and FPNW Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145948-intermittent-logons-to-netware-and-fpnw-servers">Q145948: Intermittent Logons To NetWare and FPNW Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145948
+Product(s): Microsoft Windows NT
+Version(s): 3.51 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NetWare client computers (using NCP) on one side (Side A) of a bridge are able
+to log on to NetWare servers and File and Print Services for NetWare (FPNW)
+servers on both sides of the bridge. However, NetWare client computers (using
+NCP) on the other side (Side B) of the bridge are able to log on to NetWare
+servers and FPNW servers on Side B only.
+
+CAUSE
+=====
+
+This problem occurs if the bridge is configured to forward RIP broadcasts one
+way only - Side A to Side B. When a NetWare client attempts to log on to a
+server, a RIP broadcast for the internal IPX network number of the server is
+sent. The server then sends a direct response to the client, and the logon
+process continues. If the bridge is configured to only forward RIP broadcasts
+from Side A to Side B, the request from a client on side B does not reach the
+servers on Side A. The client may re-try sending the RIP broadcasts several
+times, which eventually returns an error.
+
+If the server on Side A sends periodic RIP broadcasts (possibly once a minute) to
+Side B during the re-try period, the client on Side B will detect the broadcast
+because all packets sent or received after the initial broadcast are direct. In
+this case, the client on Side B is able to log on to servers on Side A.
+
+RESOLUTION
+==========
+
+To correct this problem, configure the bridge to send RIP broadcasts in both
+directions.
+
+Additional query words: fpnw
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+Version           : 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173663/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173663/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173663/","publisher":null,"image":null,"headline":"Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173663-fp97-how-to-use-microsoft-personal-web-server-on-different-port">Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173663
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbusage kbdta
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+While the Microsoft Personal Web Server for Windows 95 is designed to run on the
+standard HyperText Transport Protocol (HTTP) port 80, it is sometimes more
+desirable to run the Web server on a non-standard port such as 8080. This
+article describes how to change the port for the Microsoft Personal Web Server.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. If the FrontPage Server Extensions have been installed to port 80, uninstall
+  them by following these steps:
+  a. On the Windows Start menu, click Run.
+
+  b. In the Run box, type the following (including the quotation marks):
+
+  "C:\Program Files\Microsoft FrontPage\bin\fpsrvwin.exe"
+
+     NOTE: Change the path if you installed FrontPage to a folder other than the
+     default folder shown in this example.
+
+  c. In the Select Port Number box, click 80.
+
+  d. Click Uninstall.
+
+2. Stop the Microsoft Personal Web Server using these steps:
+  a. On the Windows Start menu, point to Settings, and then click Control
+     Panel.
+
+  b. Double-click the Personal Web Server icon.
+
+  c. Click the Startup tab.
+
+  d. Click Stop.
+
+  e. Click OK.
+
+3. Determine the correct hexadecimal value to use. To do this, follow these
+  steps:
+  a. Start Microsoft Calculator by pointing to Programs on the Windows Start
+     menu, pointing to Accessories, and then clicking Calculator.
+
+  b. On the View menu, click Scientific.
+
+  c. Enter the number you want to convert.
+
+  d. Click Hex.
+
+  e. Write down the value that the hexadecimal number is converted to.
+
+     NOTE: A valid port address is a 16-bit value, or 0 through 65535 decimal.
+     However, when using the Microsoft Personal Web Server and FrontPage 97,
+     keep this value below 32768.
+
+4. Start the Registry Editor using these steps:
+  a. On the Windows Start menu, click Run.
+
+  b. In the Run box, type "regedit" (without the quotation marks) and then
+     click OK.
+
+5. In the Registry Editor, do the following:
+  a. Select the following registry key:
+
+      HKEY_LOCAL_MACHINE\System\CurrentControlSet\control\ServiceProvider
+      \ServiceTypes\W3Svc
+
+  b. In the right pane, click TcpPort.
+
+     This is the TCP/IP port that the Microsoft Personal Web Server listens to
+     in Hexadecimal (Base 16).
+
+     NOTE: Hexadecimal (Base 16) notation is comprised of the numbers 0 through
+     9 and the letters A through F. The counting sequence is 0, 1, 2, 3, ....
+     9, A, B, D, E, F, 10, ...., where 10 is actually the decimal value 16.
+     Single-byte (8-bit) values are represented by the hexadecimal numbers 00
+     through FF; and two-byte (32-bit) values are represented by the
+     hexadecimal numbers 0000 through FFFF. Often when working with
+     hexadecimal, values are entered in a reverse- order, or low byte-high byte
+     format. That is to say, if the true value in hexadecimal was 1122 you
+     would enter the value in reverse- order as 2211. When working with the
+     Microsoft Personal Web Server you will need to enter two-byte values in
+     this fashion.
+
+6. Double-click "TcpPort" in the right pane.
+
+7. In the Edit Binary Value dialog box, enter the hexadecimal value you
+  identified in step 3. Make sure to enter the value in reverse-order format if
+  it is a 16-bit value, and then close the Registry Editor. For example, if you
+  want to use port 8080, which is 901F in hexadecimal, type this value in the
+  Edit Binary Value dialog box:
+
+  901F
+
+8. On the Registry menu, click Exit.
+
+9. Start the Microsoft Personal Web Server, using these steps:
+  a. On the Windows Start menu, click Start, point to Settings, and then click
+     Control Panel.
+
+  b. Double-click the Personal Web Server icon.
+
+  c. Click the Startup tab.
+
+  d. Click Start.
+
+  e. Click OK.
+
+10. Install the FrontPage Server Extensions, using these steps:
+  a. On the Windows Start menu, click Run.
+
+  b. In the Run box, type the following (including the quotation marks):
+
+  "C:\Program Files\Microsoft FrontPage\bin\fpsrvwin.exe"
+
+     NOTE: Change the path if you installed FrontPage to a folder other than the
+     default folder shown in this example.
+
+  c. Click Install.
+
+  d. When you are prompted to confirm the server port, verify that the port
+     value is the value you converted to hexadecimal in step 3. If it is not,
+     click Cancel and repeat steps 2 through 10 again.
+
+You may now install or reinstall the FrontPage Server Extensions. When you are
+prompted by the "Confirmation Dialog" screen, verify that the "Server Port:"
+value is the same port value that you converted to hexadecimal earlier. If it is
+not, click the "Cancel" button and repeat steps 2 through 8 again.
+
+Additional query words: 97 port MSPWS
+
+======================================================================
+Keywords          : kbinterop kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

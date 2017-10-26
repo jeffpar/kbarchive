@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274569/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274569/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274569/","publisher":null,"image":null,"headline":"Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274569-fix-mts-or-iis-w-odbc-connection-pooling-hangs-if-db-unavail">Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274569
+Product(s): Internet Information Server
+Version(s): WINDOWS:2.1 SP2; winnt:2.0,4.0
+Operating System(s): 
+Keyword(s): kbWinNT4sp6fix
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Transaction Server 2.0 
+- Microsoft Data Access Components version 2.1 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When ODBC connection pooling is enabled, if database servers are down or
+unavailable due to network connectivity issues, Internet Information Server
+(IIS) or Microsoft Transaction Server (MTS) may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior is caused by a bug in the resource dispenser (Mtxdm.dll). The
+threads that perform connection pooling wait for the ODBC thread that is trying
+to perform an ODBC call, which results in a deadlock condition.
+
+
+RESOLUTION
+==========
+
+The resource dispenser has been modified to resolve this problem. To obtain the
+corrected version of Mtxdm.dll, install Microsoft Data Access Components (MDAC)
+version 2.5 or later from the following Microsoft Web Site:
+
+  http://www.microsoft.com/data (http://www.microsoft.com/data)
+
+You can also obtain this fix by installing Microsoft Windows NT 4.0 Service Pack
+6a or later. For more information, see the following Web site:
+
+  http://www.microsoft.com/ntserver/ (http://www.microsoft.com/ntserver/)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in MDAC version 2.5 and later, and in Windows NT
+4.0 Service Pack 6a and later.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT4sp6fix 
+Technology        : kbMTSsearch kbiisSearch kbAudDeveloper kbiis400 kbMDACSearch kbMDAC210SP2 kbMTS200
+Version           : WINDOWS:2.1 SP2; winnt:2.0,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

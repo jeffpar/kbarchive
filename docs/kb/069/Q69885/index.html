@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69885: DOC: SetBkColor() Does Not Support Dithered Colors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69885: DOC: SetBkColor() Does Not Support Dithered Colors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69885/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69885/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69885/","publisher":null,"image":null,"headline":"Q69885: DOC: SetBkColor() Does Not Support Dithered Colors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69885-doc-setbkcolor-does-not-support-dithered-colors">Q69885: DOC: SetBkColor() Does Not Support Dithered Colors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69885
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr kbOSWinNT350 kbOSWinNT351 kbOSWin95 kbSDKWin16
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Windows NT Server versions 3.5, 3.51 
+   - Microsoft Windows NT Workstation versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The syntax for the SetBkColor function is documented in the Microsoft Windows
+Software Development Kit (SDK) as follows:
+
+     DWORD SetBkColor(HDC hDC, COLORREF crColor);
+
+SetBkColor sets the current background color of the specified Device Context (DC)
+to the color that the crColor parameter references, or to the nearest physical
+color if the device cannot represent the RGB color value that the crColor
+parameter specifies. In other words, SetBkColor cannot be used to set the
+background to a dithered color and defaults to the physical color that is
+closest to the requested crColor value.
+
+MORE INFORMATION
+================
+
+This behavior can cause unexpected results for an application that changes the
+background color of a control to a color that cannot be represented by a color
+provided by the display device.
+
+Specifically, when an application specifies a dithered color for the background
+of an edit control, and specifies the same color for the text background,
+Windows paints the control in two distinct colors.
+
+For example, using the standard VGA display driver, the following call, in which
+COLOR_INACTIVEBORDER is a green/gray specified by RGB(64, 128, 128), sets the
+background color to gray (RGB(128, 128, 128)) rather than the dithered
+green/gray that is desired:
+
+     SetBkColor(wParam, GetSysColor(COLOR_INACTIVEBORDER));
+
+To illustrate, if the application uses the function call while processing the
+WM_CTLCOLOR message to change the color of an edit control, the window
+background is painted green/gray, and the text background defaults to the
+nearest physical color, which is gray. This produces a gray rectangle inside a
+green/gray rectangle rather than the desired green/gray for the entire edit
+control.
+
+This behavior can also occur with other controls such as option buttons and list
+boxes. However, an application can avoid this problem by using the SetBkMode
+function to set the background mode to TRANSPARENT. This allows the dithered
+brush pattern to show through beneath the text to achieve the desired results.
+That solution is not practical with a multiline edit control because if text is
+inserted, and the background mode has been set to TRANSPARENT, the text that is
+pushed to the right by the inserted text leaves its image behind. The result is
+text superimposed on top of other text, which quickly becomes unreadable.
+
+To partially work around this situation for a multiline edit control, use the
+GetNearestColor function to determine the nearest physical color to the desired
+color, as in the code fragment below. In this case, the entire edit control is
+gray:
+
+     case WM_CREATE:
+        {
+        HDC hDC;
+        hDC = GetDC(hWnd);
+        hGrayBrush = CreateSolidBrush(GetNearestColor(hDC,
+              RGB(64, 128, 128)));
+        ReleaseDC(hWnd, hDC);
+        hWndEdit = CreateWindow( ... ES_MULTILINE ... );
+        }
+        break;
+
+     case WM_CTLCOLOR:
+           if (HIWORD(lParam) == CTLCOLOR_EDIT)
+           // Use the following line instead of the two above for
+           // 32-bit Windows
+           // case WM_CTLCOLOREDIT:
+           {
+           // The following call creates the nearest physical
+           // color; therefore, it will be the same as the
+           // hGrayBrush created above.
+           SetBkColor(wParam, RGB(64, 128, 128));
+           SetTextColor(wParam, RGB(255, 0, 0)); // red text
+           return (DWORD)hGrayBrush;
+           }
+        else
+          return DefWindowProc(hWnd, identifier, wParam, lParam);
+        break;
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbOSWinNT350 kbOSWinNT351 kbOSWin95 kbSDKWin16 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

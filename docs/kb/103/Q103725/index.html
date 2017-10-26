@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103725: HOWTO: Pass Common C Types to MASM by Reference | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103725: HOWTO: Pass Common C Types to MASM by Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103725/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103725/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103725/","publisher":null,"image":null,"headline":"Q103725: HOWTO: Pass Common C Types to MASM by Reference","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103725-howto-pass-common-c-types-to-masm-by-reference">Q103725: HOWTO: Pass Common C Types to MASM by Reference</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103725
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,5.0,6.0,7.0
+Operating System(s): 
+Keyword(s): kbcode kbLangC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+Last Modified: 13-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for MS-DOS 
+- Microsoft C for OS/2 
+- Microsoft C/C++ for MS-DOS, version 7.0 
+- Microsoft Visual C++, versions 1.0, 1.5, 2.0, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following sample code demonstrates how to pass variables of type char,
+short, and long from a Microsoft C program to a Microsoft Macro Assembler (MASM)
+program by reference.
+
+MORE INFORMATION
+================
+
+The following sample includes one C file and three different assembly files. The
+three assembly files demonstrate how to pass variables by reference in small and
+large model for MS-DOS and in flat model for Windows NT. Link only the
+appropriate assembly module to the C module.
+
+Note that MASM 6.1 or later and the C/C++ version 8.0 32-bit compiler that ships
+with Visual C++, 32-bit Edition, are required to build the flat model Windows NT
+version.
+
+Sample Code
+-----------
+
+     // Filename: CMAIN.C
+     // Compile options needed: /c (and /AL for large model)
+
+     #include &lt;stdio.h&gt;
+     extern void  MasmSub (char *, short *, long *);
+
+     char charvar = 'a';
+     short shortvar = 1;
+     long longvar = 32768L;
+
+     void main (void)
+     {
+        printf ("%c %d %ld\n", charvar, shortvar, longvar);
+        MasmSub (&amp;charvar, &amp;shortvar, &amp;longvar);
+        printf ("%c %d %ld", charvar, shortvar, longvar);
+     }
+
+Sample Code for MS-DOS Small Model Version
+------------------------------------------
+
+     ; Filename: MASMSUB.ASM
+     ; Assemble options needed for MASM: /MX
+     ; Assemble options needed for ML: /c /Cx
+
+     .MODEL small, C      ;.MODEL ... C tells the assembler that
+     .286                ; parameters are pushed from right to left.
+     .CODE
+
+     MasmSub PROC uses si, \ 
+
+        pchar:PTR, \ 
+        pshort:PTR, \ 
+        plong:PTR
+
+        mov si, pchar      ;Load SI with the address of the char variable.
+        mov BYTE PTR [si], "z"
+        mov si, pshort      ;Load SI with the address of the short variable.
+        add WORD PTR [si], 9
+        mov si, plong      ;Load SI with the address of the long variable.
+        add WORD PTR [si], 1  ;Increment the low word of the long variable
+                              ;by 1.
+        adc WORD PTR [si+2],0 ;Increment the high word.
+        ret
+
+     MasmSub ENDP
+     END
+
+Sample Code for MS-DOS Large Model Version
+------------------------------------------
+
+     ; Filename: MASMSUB.ASM
+     ; Assemble options needed for MASM: /MX
+     ; Assemble options needed for ML: /c /Cx
+
+     .MODEL large, C      ;.MODEL ... C tells the assembler that
+     .286                ; parameters are pushed from right to left.
+     .CODE
+
+     MasmSub PROC uses es si, \ 
+
+        pchar:PTR, \ 
+        pshort:PTR, \ 
+        plong:PTR
+
+        les si, pchar      ;Load ES:SI with the address of the char variable.
+        mov BYTE PTR es:[si], "z"
+        les si, pshort      ;Load ES:SI with the address of the short
+                            ;variable.
+        add WORD PTR es:[si], 9
+        les si, plong      ;Load ES:SI with the address of the long variable.
+        add WORD PTR [si], 1  ;Increment the low word of the long variable
+                              ;by 1.
+        adc WORD PTR [si+2],0 ;Increment the high word.
+        ret
+
+     MasmSub ENDP
+     END
+
+Sample Code for Windows NT Flat Model Version
+---------------------------------------------
+
+     ; Filename: MASMSUB.ASM
+     ; Assemble options needed for ML: /c /Cx /coff
+
+     .386                ;.MODEL ... C tells the assembler that
+     .MODEL flat, C      ; parameters are pushed from right to left.
+     .CODE
+
+     MasmSub PROC uses esi, \ 
+
+        pchar:PTR, \ 
+        pshort:PTR, \ 
+        plong:PTR
+
+        mov esi, pchar      ;Load ESI with the address of the char variable.
+        mov BYTE PTR [esi], "z"
+        mov esi, pshort      ;Load ESI with the address of the short
+                             ;variable.
+        add WORD PTR [esi], 9
+        mov esi, plong      ;Load ESI with the address of the long variable.
+        inc DWORD PTR [esi]      ;Increment the long variable by 1.
+        ret
+
+     MasmSub ENDP
+     END
+
+The following is the output of the program:
+
+a 1 32768
+z 10 32769
+
+Additional query words: 8.00 9.00 mixed language
+
+======================================================================
+Keywords          : kbcode kbLangC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbCVC700DOS kbVC500 kbVC600 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,4.0,5.0,6.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

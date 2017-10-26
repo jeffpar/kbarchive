@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154120: Debugging User Profiles and System Policies in Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154120: Debugging User Profiles and System Policies in Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154120/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154120/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154120/","publisher":null,"image":null,"headline":"Q154120: Debugging User Profiles and System Policies in Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154120-debugging-user-profiles-and-system-policies-in-windows-nt-40">Q154120: Debugging User Profiles and System Policies in Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154120
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The checked version of Userenv.dll, in conjunction with a registry entry,
+creates a log file useful in troubleshooting and debugging problems with roaming
+profiles and system policies on Microsoft Windows NT version 4.0 clients.
+
+MORE INFORMATION
+================
+
+To enable the log file:
+
+1. Rename the Userenv.dll file in the %Windir%\System32 directory to Usernv.orig
+  or the unique name of your choice.
+
+2. Copy the checked version of Userenv.dll to the %Windir%\System32 directory of
+  the client computer that you want to debug. The checked version of the
+  Userenv file must match the version of the operating system being used.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Regedt32 and locate the following path:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon
+
+2. Create a new value called UserEnvDebugLevel as a reg_dword. Assign the value
+  10002 in hexadecimal format.
+
+3. Restart the computer with the .dll and registry changes in place.
+
+For Microsoft Windows NT Server version 4.0 and Microsoft Windows NT Server
+version 4.0 Terminal Server Edition SP4 and earlier, log information will be
+recorded in c:\userenv.log and can be viewed with Notepad, WordPad, or the text
+editor of your choice. For Microsoft Windows NT Server version 4.0 Terminal
+Server Edition SP5 and SP6, log information will be recorded in
+%systemroot%\system32\userenv.log.
+
+
+Information displayed in the log includes: Profile Path, Profile Type, System
+Policy Path (useful to determine which server the Ntconfig.pol file was pulled
+from), whether the profile was successfully loaded and unloaded at the client,
+and if the remote profile is newer than the local profile.
+
+A sample Userenv.log based on the following information is shown below.
+
+  Username = profile
+  Profile path defined in User Manager =
+     PDCServerName\Profiles\%username%
+  Domain Controller = PDCServerName
+  System Policy Path: PDCServerName\Netlogon
+
+NOTE: The response to the seventeenth line.
+
+  Profile is not reachable, error = 2
+
+A check is made for the existence of a mandatory profile path being defined in
+User Manager for Domains (Servername\Sharename\%Username%.man). Mandatory
+profiles were not used in this example, so the test fails.
+
+--------------------------------------------------------------------------
+LoadUserProfile: Entering, hToken = &lt;0xa8&gt;, lpProfileInfo = 0x12f4e8
+LoadUserProfile: lpProfileInfo-&gt;dwFlags = &lt;0x2&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpUserName = &lt;profile&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpProfilePath =
+&lt;\\PDCServerName\profiles\profile&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpDefaultPath =
+&lt;\\PDCServerName\netlogon\Default User&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpServerName = &lt;\\PDCServerName&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpPolicyPath =
+&lt;\\PDCServerName\netlogon\ntconfig.pol&gt;
+ParseProfilePath: Entering, lpProfilePath =
+&lt;\\PDCServerName\profiles\profile&gt;
+ParseProfilePath: Tick Count = 60
+ParseProfilePath: FindFirstFile found something with attributes &lt;0x10&gt;
+ParseProfilePath: Found a directory
+LoadUserProfile: ParseProfilePath returned a directory of
+&lt;\\PDCServerName\profiles\profile&gt;
+RestoreUserProfile:  Entering
+RestoreUserProfile:  Profile path = &lt;\\PDCServerName\profiles\profile&gt;
+RestoreUserProfile:  User is a Admin
+IsCentralProfileReachable:  Entering
+IsCentralProfileReachable:  Testing
+&lt;\\PDCServerName\profiles\profile\ntuser.man&gt;
+IsCentralProfileReachable:  Profile is not reachable, error = 2
+IsCentralProfileReachable:  Testing
+&lt;\\PDCServerName\profiles\profile\ntuser.dat&gt;
+IsCentralProfileReachable:  Found a user profile.
+RestoreUserProfile:  Central Profile is reachable
+RestoreUserProfile:  Central Profile is floating
+GetLocalProfileImage:  Found entry in profile list for existing local
+profile
+GetLocalProfileImage:  Local profile image filename =
+&lt;%SystemRoot%\Profiles\profile&gt;
+GetLocalProfileImage:  Expanded local profile image filename =
+&lt;C:\WINNT\Profiles\profile&gt;
+GetLocalProfileImage:  Found local profile image file ok
+&lt;C:\WINNT\Profiles\profile\ntuser.dat&gt;
+Local profile is reachable
+Local profile name is &lt;C:\WINNT\Profiles\profile&gt;
+RestoreUserProfile:  About to call UpdateToLatestProfile
+UpdateToLatestProfile: Entering.  Central =
+&lt;\\PDCServerName\profiles\profile&gt;
+Local = &lt;C:\WINNT\Profiles\profile&gt;
+UpdateToLatestProfile:  Central and local profile times match.
+RestoreUserProfile:  About to Leave.  Final Information follows:
+Profile was successfully loaded.
+lpProfile-&gt;szCentralProfile = &lt;\\PDCServerName\profiles\profile&gt;
+lpProfile-&gt;szLocalProfile = &lt;C:\WINNT\Profiles\profile&gt;
+lpProfile-&gt;dwInternalFlags = 0x112
+RestoreUserProfile:  Leaving.
+UpgradeProfile: Entering
+UpgradeProfile: Build numbers match
+UpgradeProfile: Leaving Successfully
+ApplyPolicy: Entering
+ApplyPolicy:  PolicyPath is: &lt;\\PDCServerName\netlogon\ntconfig.pol&gt;.
+ReconcileFile: \\PDCServerName\netlogon\ntconfig.pol ==&gt;
+C:\WINNT\Profiles\Policy\ntconfig.pol  [OK]
+ApplyPolicy:  Local PolicyPath is:
+&lt;C:\WINNT\Profiles\Policy\ntconfig.pol&gt;.
+ApplyPolicy:  Leaving succesfully.
+LoadUserProfile: Leaving with a value of 1.  hProfile = &lt;0x90&gt;
+--------------------------------------------------------------------------
+
+Below is a successful logoff and update by the client of the server-
+based roaming profile.
+
+--------------------------------------------------------------------------
+UnloadUserProfile: Entering, hProfile = &lt;0xe0&gt;
+UnloadUserProfile:  Succesfully unloaded profile
+UnloadUserProfile:  Copying profile back to
+\\PDCServerName\profiles\profile
+CopyProfileDirectory: Entering, lpSourceDir = &lt;C:\WINNT\Profiles\profile&gt;,
+lpDestinationDir = &lt;\\PDCServerName\profiles\profile&gt;, dwFlags = 0x32
+ReconcileFile: C:\WINNT\Profiles\profile\NTUSER.DAT ==&gt;
+\\PDCServerName\profiles\profile\NTUSER.DAT  [OK]
+ReconcileFile: C:\WINNT\Profiles\profile\ntuser.dat.LOG ==&gt;
+\\PDCServerName\profiles\profile\ntuser.dat.LOG  [OK]
+CopyProfileDirectory: Leaving with a return value of 1
+UnloadUserProfile: Leaving with a return value of 1
+--------------------------------------------------------------------------
+
+NOTE: The checked version of userenv.dll can be obtained by contacting Microsoft
+Product Support Services.
+
+
+Additional query words: ntfaqdom
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

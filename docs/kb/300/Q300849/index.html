@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/300/Q300849/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/300/Q300849/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/300/Q300849/","publisher":null,"image":null,"headline":"Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q300849-xadm-error-messages-occur-when-you-run-the-exmerge-utility">Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q300849
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 12-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5, used with:
+   - Microsoft Windows NT Server version 4.0 
+   - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+   - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the ExMerge utility on an Exchange Server computer, you may receive
+any of the following error messages:
+
+  ExMerge.exe - Ordinal Not Found
+
+  The ordinal 6601 could not be located in the dynamic link library MFC42.DLL.
+
+  -or-
+
+  ExMerge.exe - Unable To Locate DLL
+
+  The dynamic link library ACTIVEDS.dll could not be found in the specified
+  path.
+
+  -or-
+
+  ExMerge
+
+  EXMERGE.EXE cannot run on this version of your operating system. The program
+  requires Windows 2000 or higher to run.
+
+  -or-
+
+  ExMerge.exe - Ordinal Not Found
+
+  The ordinal 6883 could not be located in the dynamic link library MFC42.DLL.
+
+CAUSE
+=====
+
+This issue can occur if you try to run ExMerge version 6.0.x on a computer that
+is running Windows NT 4.0. This version of ExMerge requires that you use
+Microsoft Windows 2000.
+
+NOTE: The last error message listed in the "Symptoms" section has a different
+cause. You may receive that error message if the version of the Mfc42.dll file
+on the local computer is out of date. Versions 2.60 and later of ExMerge uses an
+updated version of the Mfc42.dll file. The version of the updated .dll must be
+6.00 or later.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain a previous version of the ExMerge utility that you
+can use with Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+The ExMerge utility 6.0.x requires that you use Windows 2000 as your operating
+system; however, you can run this utility against either Exchange Server 5.5 or
+Exchange 2000 databases.
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : :4.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

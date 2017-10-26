@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147596: HOWTO: Create a Form that Resizes Based on Resolution | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147596: HOWTO: Create a Form that Resizes Based on Resolution" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147596/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147596/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147596/","publisher":null,"image":null,"headline":"Q147596: HOWTO: Create a Form that Resizes Based on Resolution","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147596-howto-create-a-form-that-resizes-based-on-resolution">Q147596: HOWTO: Create a Form that Resizes Based on Resolution</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147596
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+Last Modified: 13-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Screens developed under one resolution might not look the way you want them to
+look when you run the screens on systems with different screen resolutions. One
+solution is to develop several different screens under different resolutions,
+and run the screen that is the same as the current resolution.
+
+However, in Visual FoxPro, it is possible to dynamically resize the screen and
+reposition objects on it based on the current resolution. This article shows by
+example how to do this.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new form while under 640x480 resolution. Add some controls such as
+  text boxes, command buttons, and labels to the form.
+
+2. Place the following code in the Init event of the form and in the Init event
+  of any container objects such as a page on a pageframe that are on the form:
+
+  ** Assumes a screen built at 640x480
+  LOCAL lnHeight, lnWidth, lnHeightdiff, lnWidthdiff
+
+  lnHeight = 480   &amp;&amp; The height of the original resolution
+  lnWidth = 640    &amp;&amp; The width of the original resolution
+  lnHeightdiff = 0 &amp;&amp; Variable to hold the height difference
+  lnWidthdiff = 0  &amp;&amp; Variable to hold the width difference
+
+  IF SYSMETRIC(2) &lt;&gt; lnHeight &amp;&amp; If this is not 640x480 resolution
+     lnHeightDiff = SYSMETRIC(2) / lnHeight
+     lnWidthDiff = SYSMETRIC(1) / lnWidth
+
+  ** You need to remark out the code down to, but not including the,
+  ** ENDIF line of code if this is in the Init of a container object
+  ** such as a page on a pageframe, or any other non-form container
+  ** object that has a Controls and ControlsCount property.
+
+     This.Height = This.Height * lnHeightDiff
+     This.Width = This.Width * lnWidthDiff
+     This.Top = This.Top * lnHeightDiff
+     This.Left = This.Left * lnHeightDiff
+
+  ** The code goes through each object, resizes and
+  ** repositions it.
+
+     FOR i = 1 TO This.ControlCount
+        WITH This.Controls(i)
+           .Height = .Height * lnHeightdiff
+           .Width = .Width * lnWidthdiff
+           .Top = .Top * lnHeightdiff
+           .Left = .Left * lnWidthdiff
+
+  ** You could also resize the font at this point
+  ** by changing the FontSize property, perhaps to
+  ** IF TYPE(".FontSize") # "U"
+  **    &amp;&amp; The IF ensures the control has a FontSize property
+  **    .FontSize = .FontSize * ((.5 * lnWidthdiff) + (.5 * lnHeightdiff))
+  ** ENDIF
+  ** However, some higher screen resolutions can change
+  ** the appearance of fonts considerably, so testing is
+  ** advised before trying that step.
+
+        ENDWITH
+     ENDFOR
+  ENDIF
+
+  ThisForm.Refresh()
+
+3. Run the form in a different resolution. Observe the automatic changes that
+  are made.
+
+Additional query words: page frame
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : :3.0,3.0b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

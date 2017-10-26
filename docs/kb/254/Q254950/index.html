@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254950/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254950/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254950/","publisher":null,"image":null,"headline":"Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254950-shortcuts-and-lnk-files-do-not-work-in-windows-nt-workstation">Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254950
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+There are several locations in the registry that are responsible for causing
+shortcuts to work correctly. If any of these keys becomes corrupted or is
+missing, shortcuts may not work or may work erratically.
+
+CAUSE
+=====
+
+These problems can be caused by shutting down Windows improperly, or by a
+third-party program that modifies the registry.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Create a text file with the following contents. Save the text file with a .reg
+extension (not the default .txt extension for text files). Double-clicking this
+file will restore the default registry key settings for .lnk files. When you
+double-click the file, you are prompted to verify that you want to make the
+changes to the registry. Click Yes.
+
+Contents of the .reg File
+-------------------------
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00021401-0000-0000-C000-000000000046}]
+@="Shortcut"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00021401-0000-0000-C000-000000000046}\InProcServer32]
+@="shell32.dll"
+"ThreadingModel"="Apartment"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00021401-0000-0000-C000-000000000046}\ProgID]
+@="lnkfile"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00021401-0000-0000-C000-000000000046}\shellex]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00021401-0000-0000-C000-000000000046}\shellex\MayChangeDefaultMenu]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]
+
+"{500202A0-731E-11D0-B829-00C04FD706EC}"="LNK file thumbnail interface delegator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Shell.ThumbnailExtract.Lnk.1]
+@="LNK file thumbnail interface delegator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Shell.ThumbnailExtract.Lnk.1\CLSID]
+@="{500202A0-731E-11D0-B829-00C04FD706EC}"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}]
+@="LNK file thumbnail interface delegator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\InprocServer32]
+@="C:\\WINNT\\System32\\thumbvw.dll"
+"ThreadingModel"="Apartment"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\ProgID]
+@="Shell.ThumbnailExtract.Lnk.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\VersionIndependentProgID]
+@="Shell.ThumbnailExtract.Lnk.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile]
+@="Shortcut"
+"EditFlags"=hex:01,00,00,00
+"IsShortcut"=""
+"NeverShowExt"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\CLSID]
+@="{00021401-0000-0000-C000-000000000046}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\ContextMenuHandlers]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\ContextMenuHandlers\{00021401-0000-0000-C000-000000000046}]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\DropHandler]
+@="{00021401-0000-0000-C000-000000000046}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\IconHandler]
+@="{00021401-0000-0000-C000-000000000046}"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lnk]
+@="lnkfile"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lnk\ShellEx]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lnk\ShellEx\{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1}]
+@="{500202A0-731E-11d0-B829-00C04FD706EC}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lnk\ShellNew]
+"Command"="RunDLL32 AppWiz.Cpl,NewLinkHere %1"
+
+[HKEY_CLASSES_ROOT\Shell.ThumbnailExtract.Lnk.1]
+@="LNK file thumbnail interface delegator"
+
+[HKEY_CLASSES_ROOT\Shell.ThumbnailExtract.Lnk.1\CLSID]
+@="{500202A0-731E-11D0-B829-00C04FD706EC}"
+
+[HKEY_CLASSES_ROOT\lnkfile]
+@="Shortcut"
+"EditFlags"=hex:01,00,00,00
+"IsShortcut"=""
+"NeverShowExt"=""
+
+[HKEY_CLASSES_ROOT\lnkfile\CLSID]
+@="{00021401-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\lnkfile\shellex]
+
+[HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers]
+
+[HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\{00021401-0000-0000-C000-000000000046}]
+
+[HKEY_CLASSES_ROOT\lnkfile\shellex\DropHandler]
+@="{00021401-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\lnkfile\shellex\IconHandler]
+@="{00021401-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00021401-0000-0000-C000-000000000046}]
+@="Shortcut"
+
+[HKEY_CLASSES_ROOT\CLSID\{00021401-0000-0000-C000-000000000046}\InProcServer32]
+@="shell32.dll"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00021401-0000-0000-C000-000000000046}\ProgID]
+@="lnkfile"
+
+[HKEY_CLASSES_ROOT\CLSID\{00021401-0000-0000-C000-000000000046}\shellex]
+
+[HKEY_CLASSES_ROOT\CLSID\{00021401-0000-0000-C000-000000000046}\shellex\MayChangeDefaultMenu]
+
+[HKEY_CLASSES_ROOT\.lnk]
+@="lnkfile"
+
+[HKEY_CLASSES_ROOT\.lnk\ShellEx]
+
+[HKEY_CLASSES_ROOT\.lnk\ShellEx\{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1}]
+@="{500202A0-731E-11d0-B829-00C04FD706EC}"
+
+[HKEY_CLASSES_ROOT\.lnk\ShellNew]
+"Command"="RunDLL32 AppWiz.Cpl,NewLinkHere %1"
+
+[HKEY_CLASSES_ROOT\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}]
+@="LNK file thumbnail interface delegator"
+
+[HKEY_CLASSES_ROOT\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\InprocServer32]
+@="C:\\WINNT\\System32\\thumbvw.dll"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\ProgID]
+@="Shell.ThumbnailExtract.Lnk.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{500202A0-731E-11D0-B829-00C04FD706EC}\VersionIndependentProgID]
+@="Shell.ThumbnailExtract.Lnk.1"
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

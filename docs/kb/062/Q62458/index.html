@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62458: How to Find All Available Logical Drives in BASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62458: How to Find All Available Logical Drives in BASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62458/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62458/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62458/","publisher":null,"image":null,"headline":"Q62458: How to Find All Available Logical Drives in BASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62458-how-to-find-all-available-logical-drives-in-basic">Q62458: How to Find All Available Logical Drives in BASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62458
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900521-38 B_BasicCom | mspl13_basic
+Last Modified: 29-JAN-1991
+
+A BASIC program can call interrupts to find out which logical drives
+are available. The interrupts used are 21Hex, function 0EHex (Select
+disk) and 21Hex, function 19Hex (Get current disk). The method
+involves circulating through each possible logical drive (A-Z) and
+calling the interrupt to select that drive. If this is successful,
+subsequently calling the interrupt to get the current drive should
+return that same drive. If it isn't the same, the drive wasn't
+successfully selected and therefore isn't available.
+
+This information applies to Microsoft QuickBASIC Compiler versions
+4.00, 4.00b, and 4.50 for MS-DOS, Microsoft BASIC Compiler versions
+6.00 and 6.00b for MS-DOS, and Microsoft BASIC Professional
+Development System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+Function 0EH of interrupt 21H (Select disk) requires input from the
+following registers:
+
+   AH (upper byte of AX) = 0EH
+   DL (lower byte of DX) = drive code (0=A, 1=B, etc.)
+
+When called, it makes the drive passed in DL current, if possible. If
+that drive is not available, the interrupt does not return an error.
+That is why function 19H of interrupt 21H (Get current disk) must be
+called to see if function 0EH was successful. Function 19H requires
+the following registers for input:
+
+   AH (upper byte of AX) = 19H
+
+It returns the following:
+
+   AL (lower byte of AX) = current drive code (0=A, 1=B, etc.)
+
+For more information on interrupt 21H, functions 0EH and 19H, see
+Pages 355 and 367 (respectively) of "Advanced MS-DOS Programming,
+Second Edition," by Ray Duncan (Microsoft Press, 1988).
+
+The following program displays all the available logical drives:
+
+'Remember to invoke QB.EXE (or QBX.EXE) with the /L switch) because
+'support for CALL Interrupt is in QB.QLB (or QBX.QLB).
+
+'$INCLUDE: 'qb.bi'                    'Use 'qbx.bi' for QBX.EXE.
+DIM Regs AS RegType                   'Holds register values.
+
+PRINT "The following logical drives are available:";
+
+FOR Drive% = 0 TO 25                  'Circulate through drives A-Z.
+
+   Regs.ax = &amp;HE00                    'Function 0EH (AH = 0EH).
+   Regs.dx = Drive%
+   CALL Interrupt(&amp;H21, Regs, Regs)   'Select a drive, if it's there.
+
+   Regs.ax = &amp;H1900                   'Function 19H (AH = 19H).
+   CALL Interrupt(&amp;H21, Regs, Regs)   'Get currently selected drive.
+
+   IF (Regs.ax AND &amp;HFF) = Drive% THEN  '(Regs.ax AND &amp;HFF) = AL.
+      PRINT " "; CHR$(Drive% + 65);   'If current drive = last drive
+   END IF                             'selected, drive is available.
+
+NEXT Drive%
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

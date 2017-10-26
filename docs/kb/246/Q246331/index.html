@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246331/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246331/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246331/","publisher":null,"image":null,"headline":"Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246331-sms-crc-checking-and-installation-of-client-side-hotfixes">Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246331
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbClient kbsms200
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 verifies that Windows NT clients are running
+the correct versions of the client components. The SMS Client service does this
+by comparing the cyclical redundancy check (CRC) values of the client components
+on the client with the CRC values of the same programs in the site server's
+&lt;Sms_root_folder&gt;\Bin\&lt;Platform&gt; folder.
+
+The CRC values of the site server's copy of the client files are stored in the
+following registry key on the clients:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Verification
+  Data
+
+The purpose of this security checking is to provide the client with added
+protection against "trojan horses." Because the SMS Client service (Clisvcl) in
+Windows NT runs in a higher security context than the user, anything started by
+it also runs with greater rights on the client.
+
+To determine which client programs are CRC checked, search the Install.map file
+for "client application." The current list is:
+
+   PROPERTY &lt;Bin\i386\Ccim32.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Clisvcl.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;1&gt;
+   PROPERTY &lt;Bin\i386\Smscq_32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Cqmgr32.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Chksnmp.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Abnwcli.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\i386\Falclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\i386\Mslmclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\i386\Bindclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\i386\Ndsclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\i386\Smsapm32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Odpsys32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;3&gt;
+   PROPERTY &lt;Bin\i386\Odpusr32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;1&gt;
+   PROPERTY &lt;Bin\i386\Sinv32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Rcclicfg.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Rcclic16.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Hinv32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\i386\Wuser.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Ccim32.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Clisvcl.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;1&gt;
+   PROPERTY &lt;Bin\alpha\Smscq_32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Cqmgr32.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Chksnmp.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Abnwcli.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\alpha\Falclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\alpha\Mslmclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\alpha\Bindclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\alpha\Ndsclin.dll&gt;&lt;Client Application&gt;&lt;&gt;&lt;4&gt;
+   PROPERTY &lt;Bin\alpha\Smsapm32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Odpsys32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;3&gt;
+   PROPERTY &lt;Bin\alpha\Odpusr32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;1&gt;
+   PROPERTY &lt;Bin\alpha\Sinv32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Rcclicfg.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+   PROPERTY &lt;Bin\alpha\Hinv32.exe&gt;&lt;Client Application&gt;&lt;&gt;&lt;2&gt;
+
+Note that this version checking does not occur for Microsoft Windows 95-based or
+Microsoft Windows 98-based clients because there is no concept of Clisvc95
+running with higher security rights than the logged-on user.
+
+MORE INFORMATION
+================
+
+Manually Installing Client-Side Hotfixes
+----------------------------------------
+
+1. Stop the SMS_EXECUTIVE and SMS_SITE_COMPONENT_MANAGER services on the site
+  server.
+
+2. Copy the updated components to the appropriate
+  &lt;Sms_root_folder&gt;\Inboxes\Clicomp.src\&lt;Component&gt;\&lt;Platform&gt;
+  folders.
+
+3. Copy the updated Compver.ini files to the appropriate
+  &lt;Sms_root_folder&gt;\Inboxes\Clicomp.src\&lt;component&gt; folders.
+
+4. Copy the files for the CRC-checked programs (see the list above) to the
+  &lt;Sms_root_folder&gt;\Bin\&lt;Platform&gt; folder.
+
+5. Start the SMS_SITE_COMPONENT_MANAGER and SMS_EXECUTIVE services. This causes
+  the CIDM thread in SMS Executive to regenerate the CRC list (it is encrypted
+  within the Cli_inst.cfg and Clibase.cfg files).
+
+6. Wait for the following files to be updated on the SMS logon points:
+
+  SMSLOGON\Sites\&lt;Site code&gt;\Cli_inst.cfg
+  SMSLOGON\ALPHA.Bin\Clicore.exe (if Clicore.exe was upgraded)
+  SMSLOGON\x86.bin\Clicore.exe (if Clicore.exe was upgraded)
+
+7. Wait for the following files to be updated on the SMS client access points
+  (CAPs):
+
+  CAP_&lt;sitecode&gt;\Clidata.box\Cli_inst.cfg
+  CAP_&lt;sitecode&gt;\Clidata.box\Clibase.cfg
+
+8. Depending on whether Client Configuration Installation Manager (CCIM) is
+  running on the clients, use the appropriate method:
+
+   - CCIM is running: Use any of the SMS tools to trigger CCIM to get the
+     latest configuration (Setevnt, Cliutils, or the Update Configuration
+     button on the Sites tab in the Systems Management tool in Control Panel),
+     or wait for CCIM's 23-hour maintenance cycle.
+
+   - CCIM is not running: Run logon scripts or Smsman for the site that has the
+     new configuration. The secured program information from the site is
+     downloaded to the client's registry, and the SMS Client service picks it
+     up the next time it wakes up and is able to start CCIM.
+
+Mismatched Client Program Files
+-------------------------------
+
+If the calculated CRC value of a program that is installed on the client does not
+match the stored CRC value for the same program on the site server, you see the
+following types of error messages in the client component log files:
+
+Example 1: Clisvc.log:
+
+Client Configuration Installation Manager - (LAUNCH_CONTINUOUS_START)~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.112 1999&gt;&lt;thread=52 (0x34)&gt;
+Client Configuration Installation Manager - Attempting to launch application ~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.190 1999&gt;&lt;thread=52 (0x34)&gt;
+Verifying application [C:\WINNT\MS\SMS\core\Bin\ccim32.dll]~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.190 1999&gt;&lt;thread=52 (0x34)&gt;
+#$#$#$#$#$ ERROR: The Client Service is not authorised to run this application! (5)~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.253 1999&gt;&lt;thread=52 (0x34)&gt;
+*** Client Configuration Installation Manager - Error launching (#0x5)  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.253 1999&gt;&lt;thread=52 (0x34)&gt;
+!!!WARNING: Problem starting App (5). Doing App Verify.  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Mon Nov 15 16:54:10.253 1999&gt;&lt;thread=52 (0x34)&gt;
+
+Example 2: Clisvc.log:
+
+Verifying application [C:\WINNT\MS\SMS\clicomp\hinv\hinv32.exe]~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Fri Oct 22 00:43:51.093 1999&gt;&lt;thread=161 (0xA1)&gt;
+#$#$#$#$#$ ERROR: The Client Service is not authorised to run this application! (5)~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Fri Oct 22 00:43:51.125 1999&gt;&lt;thread=161 (0xA1)&gt;
+*** Hardware Inventory Agent - Error launching (#0x5)  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Fri Oct 22 00:43:51.125 1999&gt;&lt;thread=161 (0xA1)&gt;
+!!!WARNING: Problem starting App (5). Doing App Verify.  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Fri Oct 22 00:43:51.125 1999&gt;&lt;thread=161 (0xA1)&gt;
+**ERROR: AppVerify(Hardware Inventory Agent) returned 232~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\CLISVCL.EXE&gt;&lt;Fri Oct 22 00:43:51.140 1999&gt;&lt;thread=161 (0xA1)&gt;
+
+If you experience these error messages after installing a client-side hotfix,
+update the site server's copy of the program by using steps 1 and 4 through 8
+above.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

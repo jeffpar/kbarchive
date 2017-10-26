@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97833/","publisher":null,"image":null,"headline":"Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97833-restoring-previous-version-of-ms-dos-after-uninstall-fails">Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97833
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses restoring a previous version of MS-DOS when the Uninstall
+disk does not work. The following situations are covered:
+
+- You Have Not Removed DoubleSpace
+
+- You Have Already Removed DoubleSpace But Cannot Use Uninstall
+
+- How to Return to MS-DOS 5.0 If Uninstall Fails
+
+- How to Return to a Version of MS-DOS Earlier Than MS-DOS 5.0
+
+MORE INFORMATION
+================
+
+You Have Not Removed DoubleSpace
+--------------------------------
+
+If you have not removed DoubleSpace, carry out the procedure in section 7.6 of
+the README.TXT file or query on the following words in the Microsoft Knowledge
+Base to find an article with instructions for removing DoubleSpace and
+preserving your files:
+
+  " remove and doublespace and preserve " (without the quotation marks)
+
+You Have Already Removed DoubleSpace But Cannot Use Uninstall
+-------------------------------------------------------------
+
+If you have already removed DoubleSpace but cannot use the Uninstall program, you
+may still have some hidden DoubleSpace files in the root directory of drive C.
+To remove these files type "deltree /y c:\dblspace.*" (without the quotation
+marks) at the MS-DOS command prompt and then press ENTER. Also, use MS-DOS
+Editor to remove any DEVICEHIGH=C:\DOS\DBLSPACE.SYS /MOVE commands from the
+CONFIG.SYS file. After doing so, restart the computer with the Uninstall disk in
+drive A.
+
+How to Return to MS-DOS 5.0 If Uninstall Fails
+----------------------------------------------
+
+If you have not installed DoubleSpace, carry out the procedure on page 179 of the
+"Microsoft MS-DOS 6 User's Guide" to restore MS-DOS 5.0. If this procedure does
+not work, or if you have installed DoubleSpace, carry out the following
+procedure:
+
+NOTE: Use this procedure only if you are restoring MS-DOS 5.0. If your previous
+version of MS-DOS is earlier than 5.0, do not use this procedure.
+
+1. To remove DoubleSpace and save your files, carry out the procedure in section
+  7.6 of the README.TXT file, which is in the directory that contains your
+  MS-DOS files (usually C:\DOS).
+
+2. Use the SETVER command to specify to the Setup program that your computer
+  uses MS-DOS 5.0. For example, type the following at the MS-DOS command
+  prompt:
+
+  " setver setup.exe 5.00 " (without the quotation marks)
+
+3. Remove the read-only attribute from the COMMAND.COM file on drive C by typing
+  "attrib c:\command.com -r" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+4. Restart your computer by pressing CTRL+ALT+DEL.
+
+5. Run the MS-DOS 5.0 Setup program.
+
+How to Return to a Version of MS-DOS Earlier Than MS-DOS 5.0
+------------------------------------------------------------
+
+To return to a version of MS-DOS earlier than MS-DOS 5.0, carry out the following
+procedure:
+
+1. If you have repartitioned your hard disk drive, you may be unable to see your
+  partitions when you start your computer with a previous version of MS-DOS. If
+  this is the case, you must do the following:
+
+  a. Back up your data.
+
+  b. Repartition your drive(s).
+
+  c. Format your drives. Be sure to use the /S parameter when you format drive
+     C.
+
+  d. Restore your data.
+
+2. If you did not repartition your drive(s) after you installed MS-DOS 6.0,
+  restart your computer with a system disk from your previous version of MS-DOS
+  in drive A.
+
+3. If you can see all your partitions (using the DIR command), use the SYS
+  command to transfer the MS-DOS system files to drive C. For example, type
+  "sys a: C:" (without the quotation marks) at the MS-DOS command prompt and
+  then press ENTER.
+
+4. If the SYS command fails because it cannot find room on drive C, you can do
+  the following:
+
+   - Use a third-party utility (such as Norton Utilities by Symantec) to make
+     drive C bootable.
+
+  -or-
+
+   - Use the FORMAT command with the /S parameter to reformat drive C and
+     transfer the MS-DOS system files. For example, type "format c: /s"
+     (without the quotation marks) at the MS-DOS command prompt and then press
+     ENTER.
+
+  WARNING: Using the FORMAT command erases all the files on drive C. If you back
+  up your hard disk prior to formatting it, be sure to use a backup utility
+  that is compatible with your earlier version of MS-DOS.
+
+5. Copy all the MS-DOS program files from the original MS-DOS disks to the
+  directory that contains your MS-DOS files (usually \DOS).
+
+Additional query words: 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102450/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102450/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102450/","publisher":null,"image":null,"headline":"Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102450-windows-nt-uses-dlc-for-ibm-connectivity-and-network-printing">Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102450
+Product(s): Microsoft Windows NT
+Version(s): 2000,3.1,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows NT Workstation versions 3.1, 4.0 
+- Microsoft Windows NT Server versions 3.1, 4.0 
+- Microsoft Windows NT Advanced Server, versions 3.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Data link control (DLC) is a transport protocol defined by IBM. It is mainly
+used to communicate with IBM mainframes and minicomputers, typically model 3270
+or AS/400 machines. In addition, Windows NT also uses DLC to communicate with
+network printers such as the Hewlett-Packard (HP) LaserJet 4 Si.
+
+MORE INFORMATION
+================
+
+DLC works with Token Ring (802.5) or Ethernet (802.3) NDIS (network driver
+interface specification) MAC (media access control) drivers.
+
+DLC is available to 32-bit Windows NT-based programs and 16-bit MS-DOS-based and
+Windows-based programs. Since there are few 32-bit 3270 emulators available, DLC
+is typically by 16-bit 3270 and 5250 (AS/400) emulators. These are
+character-mode or graphics-mode MS-DOS-based programs or Windows-based programs
+that communicate with an IBM mainframe using 3270 terminal emulation.
+
+The following 16-bit 3270 and 5250 emulation programs should work normally with
+Windows NT:
+
+For IBM 3270:
+
+  AttachMate Extra! for Windows v 3.3, 3.4 and 3.5
+  AttachMate Extra! for MS-DOS v 2.23
+  IBM PC/3270 v 2.0 for Windows
+  IBM PC/3270 v 2.0 for MS-DOS
+  IBM PC/3270 v 3.0 for Windows
+  IBM PC/3270 v 3.0 for MS-DOS
+  Eicon Access for Windows v 3.11, 3.14
+  Dynacomm Elite/3270
+
+For IBM 5250:
+
+  IBM PCS v 2.0
+  NSA Elite/400
+
+Windows NT also uses DLC to communicate with network printers, such as the HP
+LaserJet 4 Si. Such printers have a network interface card (NIC) that contains a
+MAC and a DLC protocol stack. Print jobs are sent to these printers as DLC-level
+frames over the network, instead of over the parallel port. The advantages of
+such printer setups are increased print job download speed and the ability to
+have the printer physically distant from its server. Note that even though the
+printer has the ability to receive print jobs over the network, with Windows NT,
+it is usually controlled by a print server that has sole control of the network
+connection to the printer (meaning that other computers cannot connect to the
+printer, even if they know the network address of the printer). This is because
+DLC uses service access points (SAPs) and only one is available for connections.
+Once a remote computer has connected to the SAP, subsequent connect requests are
+denied at the printer.
+
+Additional query words: adapter prodnt PROT005
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ400 kbWinNTAdvServ310 kbwin2000ServSearch kbwin2000Search kbWinNTS310search kbWinNT310Search kbWinNTW310Search kbWinAdvServSearch
+Version           : :2000,3.1,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

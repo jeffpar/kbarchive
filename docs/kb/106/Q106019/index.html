@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106019/","publisher":null,"image":null,"headline":"Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106019-soundscapes-playing-sounds-from-any-directory-using-wss-10x">Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106019
+Product(s): Miscellaneous Windows Products
+Version(s): 1.00 1.00a
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 20-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 9 of the "Windows Sound System Software Specifications: SoundScapes"
+(Revision 1.04) states that SoundScapes should play waveform files from any
+directory by adding the following path in the [SndScape.&lt;environment
+name&gt;] section of the CONTROL.INI file
+
+  Path=&lt;Pathname&gt;
+
+where &lt;Pathname&gt; is the directory where the waveform files not located in
+the SoundScape default directory are found.
+
+SoundScapes plays only waveform files in the SoundScapes default directory
+specified in the CONTROL.INI file. The workaround is described below.
+
+MORE INFORMATION
+================
+
+Windows Sound System uses the CONTROL.INI file in the Windows directory to store
+information about SoundScapes. The Path= statement in the [SoundScapes] section
+indicates the SoundScapes default directory. All the [SndScape.&lt;soundscape
+name&gt;] sections have SoundXX=" statements (where "X" stands for a single
+digit) to indicate the waveform files to use for that SoundScapes sound.
+
+To play a waveform file for a SoundScapes sound, Windows Sound System
+concatenates the default SoundScapes path with the name of the waveform file. If
+this does not produce a valid path and waveform file combination, no sound is
+played. If the waveform files are in the default SoundScapes directory, this
+works because the waveform file has no other path attached to it.
+
+WORKAROUND
+==========
+
+Do the following:
+
+1. Open the CONTROL.INI file in the Windows directory.
+
+2. Delete any entry in the Path= statement in the [SoundScapes] section. (That
+  is, the statement should be "Path=". Nothing should be after the equal [=]
+  sign on the Path= line).
+
+3. Change all the Sound&lt;sound number&gt;= statements in the
+  [SndScape.&lt;soundscape name&gt;] section to include the path to the
+  appropriate file. For example, change "Sound00=tada.wav" to
+  "Sound00=c:\windows\tada.wav".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Sound System versions
+1.0 and 1.0a. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+For more information about this topic, query on the following word in the
+Microsoft Knowledge Base:
+
+  SoundScapes
+
+Additional query words: 1.00 1.00a multi media multimedia multi-media system sound snd scape soundscape sound scape .wav wav wave
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+Version           : 1.00 1.00a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102871: Callback Functions in Multiple Instance Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102871: Callback Functions in Multiple Instance Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102871/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102871/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102871/","publisher":null,"image":null,"headline":"Q102871: Callback Functions in Multiple Instance Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102871-callback-functions-in-multiple-instance-applications">Q102871: Callback Functions in Multiple Instance Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102871
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are some requirements for callback functions in multiple instance
+applications when compiling with Microsoft C version 7.0 or C version 8.0 for
+protected-mode-only Win16:
+
+- Callback functions must be branded with the "__export" keyword. The compiler
+  switches -GA -GEf force all far functions in a module to be __export. The
+  optimum method is to add the __export keyword to the particular callback
+  function and not use the -GEf switch. Example:
+
+        BOOL CALLBACK __export CallBackProc
+
+- Callback functions called via MakeProcInstance() must load DS from the value
+  in AX. Use the compiler switch -GA with the -GEa switch to generate prolog
+  code to load DS from the value in AX on all __export functions. The default
+  for -GA is load DS from SS, which is not a valid assumption in callbacks. The
+  code when loaded into memory should have three NOPs instructions at __export
+  function entry points. Check with your favorite debugger that can show
+  mixed/asm view once the module is loaded into memory.
+
+- Callback functions must have an export record in the EXE header. The classic
+  method is to list the function in the EXPORTS section of the module's .DEF
+  file. The callback's module can be built with the - GA -GEe switches to place
+  an export record in the .OBJ at compile time for all __export functions.
+
+- Callback functions must assume SS != DS, DS not loaded on function entry.
+  Compile with -Aw memory model customizer to have correct code generated.
+
+- Callback functions must not call C Run-time library code contained in the
+  application (xLIBCyW.LIB) libraries. They assume SS == DS.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

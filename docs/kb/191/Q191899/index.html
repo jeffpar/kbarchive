@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191899/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191899/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191899/","publisher":null,"image":null,"headline":"Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191899-xcln-how-to-deploy-exchange-55-sp1-kms-client-fixes-with-odk">Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q191899</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">5.5</span> <span class="n">SP1</span><span class="p">,</span><span class="m">98</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">28</span><span class="p">-</span><span class="n">SEP</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">5.5</span> <span class="n">SP1</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">Deployment</span> <span class="n">Kit</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">self</span><span class="p">-</span><span class="n">extracting</span> <span class="n">file</span> <span class="n">for</span> <span class="n">deploying</span> <span class="n">the</span>
+<span class="n">required</span> <span class="n">client</span> <span class="n">hotfixes</span> <span class="n">which</span> <span class="n">will</span> <span class="n">allow</span> <span class="n">an</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">client</span> <span class="k">to</span> <span class="n">participate</span> <span class="k">in</span>
+<span class="n">Advanced</span> <span class="n">Security</span> <span class="k">with</span> <span class="n">an</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="p">(</span><span class="n">SP1</span><span class="p">)</span> <span class="n">Key</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">KMS</span><span class="p">).</span> <span class="n">This</span> <span class="n">file</span> <span class="n">may</span> <span class="n">be</span> <span class="n">deployed</span> <span class="k">with</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="n">Deployment</span>
+<span class="n">Kit</span> <span class="p">(</span><span class="n">ODK</span><span class="p">),</span><span class="k">or</span> <span class="k">as</span> <span class="n">a</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="n">executable</span> <span class="p">(.</span><span class="n">exe</span><span class="p">)</span> <span class="n">file</span><span class="p">.</span>
+
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">client</span> <span class="n">hotfixes</span> <span class="n">were</span> <span class="n">released</span> <span class="k">with</span> <span class="n">the</span> <span class="n">SP1</span> <span class="n">release</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Olcsp128</span><span class="p">.</span><span class="n">exe</span>
+
+<span class="p">-</span> <span class="n">Ol98qfe</span><span class="p">.</span><span class="n">exe</span>
+
+<span class="n">The</span> <span class="n">Olcsp128</span><span class="p">.</span><span class="n">exe</span> <span class="n">hotfix</span> <span class="n">updates</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">S</span><span class="p">/</span><span class="n">MIME</span> <span class="n">security</span> <span class="n">feature</span> <span class="k">to</span> <span class="n">work</span>
+<span class="k">with</span> <span class="n">the</span> <span class="n">new</span> <span class="n">V3</span> <span class="n">certificates</span> <span class="n">available</span> <span class="k">in</span> <span class="n">the</span> <span class="n">latest</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Key</span>
+<span class="n">Management</span> <span class="n">Server</span><span class="p">,</span> <span class="m">5.5</span> <span class="n">SP1</span><span class="p">.</span> <span class="n">It</span> <span class="n">also</span> <span class="n">addresses</span> <span class="n">the</span> <span class="n">issue</span> <span class="k">with</span> <span class="n">renewing</span> <span class="n">Security</span>
+<span class="n">Keys</span> <span class="n">after</span> <span class="n">changing</span> <span class="n">enrollment</span> <span class="n">settings</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">change</span> <span class="n">the</span> <span class="n">settings</span> <span class="n">on</span> <span class="n">the</span>
+<span class="n">Enrollment</span> <span class="n">property</span> <span class="n">page</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Certificate</span> <span class="n">Authority</span> <span class="n">object</span> <span class="k">to</span> <span class="n">allow</span> <span class="n">X</span><span class="m">.509</span> <span class="n">V3</span>
+<span class="n">certificates</span> <span class="k">to</span> <span class="n">be</span> <span class="n">issued</span> <span class="k">to</span> <span class="n">users</span> <span class="k">of</span> <span class="n">Advanced</span> <span class="n">Security</span><span class="p">,</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">users</span> <span class="n">cannot</span>
+<span class="n">automatically</span> <span class="n">renew</span> <span class="n">their</span> <span class="n">security</span> <span class="n">keys</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">Ol98qfe</span><span class="p">.</span><span class="n">exe</span> <span class="n">hotfix</span> <span class="n">includes</span> <span class="n">many</span> <span class="n">protocol</span> <span class="k">and</span> <span class="n">client</span> <span class="n">connectivity</span> <span class="n">fixes</span>
+<span class="n">required</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">client</span> <span class="k">to</span> <span class="n">work</span> <span class="n">correctly</span> <span class="k">with</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">Advanced</span>
+<span class="n">Security</span> <span class="n">features</span><span class="p">.</span> <span class="n">One</span> <span class="k">of</span> <span class="n">these</span> <span class="n">fixes</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">issue</span> <span class="n">where</span> <span class="n">messages</span> <span class="n">sent</span> <span class="k">to</span>
+<span class="n">multiple</span> <span class="n">recipients</span> <span class="n">using</span> <span class="n">S</span><span class="p">/</span><span class="n">MIME</span> <span class="n">encryption</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">decrypted</span> <span class="n">by</span> <span class="n">recipients</span>
+<span class="n">using</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="k">and</span> <span class="n">Outlook</span> <span class="n">Express</span> <span class="m">4.01</span><span class="p">.</span> <span class="n">This</span> <span class="n">problem</span> <span class="n">usually</span> <span class="n">occurs</span> <span class="n">when</span>
+<span class="n">there</span> <span class="n">are</span> <span class="n">more</span> <span class="n">than</span> <span class="m">15</span> <span class="n">recipients</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">update</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="nf">run</span> <span class="k">in</span> <span class="n">a</span> <span class="n">quiet</span> <span class="n">mode</span> <span class="n">by</span> <span class="n">running</span> <span class="n">ol98qfe</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">q</span> <span class="k">from</span> <span class="n">a</span>
+<span class="nf">command</span> <span class="n">line</span><span class="p">.</span> <span class="n">This</span> <span class="n">installation</span> <span class="n">mode</span> <span class="n">will</span> <span class="k">not</span> <span class="n">show</span> <span class="n">any</span> <span class="n">warnings</span> <span class="n">unless</span> <span class="n">a</span> <span class="k">version</span>
+<span class="k">of</span> <span class="n">inetcomm</span><span class="p">.</span><span class="n">dll</span> <span class="n">earlier</span> <span class="n">than</span> <span class="m">4.72.2106.0</span> <span class="n">is</span> <span class="n">present</span> <span class="n">on</span> <span class="n">the</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">error</span> <span class="n">message</span> <span class="n">can</span> <span class="n">be</span> <span class="n">generated</span> <span class="k">if</span> <span class="n">the</span> <span class="n">above</span> <span class="n">security</span> <span class="n">patches</span> <span class="n">are</span>
+<span class="k">not</span> <span class="n">installed</span><span class="p">:</span>
+
+  <span class="s2">"This message could not be secured using the selected security settings.
+  Your e-mail address may not match the e-mail address on the certificate,
+  or some other problem exists with the certificate. Do you want to
+  proceed with the message without security?"</span>
+
+<span class="n">The</span> <span class="n">ODK</span> <span class="n">includes</span> <span class="n">a</span> <span class="n">program</span> <span class="n">called</span> <span class="n">IExpress</span> <span class="n">that</span> <span class="n">allows</span> <span class="n">you</span> <span class="k">to</span> <span class="n">bundle</span> <span class="n">several</span>
+<span class="n">programs</span> <span class="n">together</span> <span class="n">under</span> <span class="n">one</span> <span class="n">name</span><span class="p">.</span> <span class="k">With</span> <span class="n">this</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">bundle</span> <span class="n">several</span> <span class="n">programs</span>
+<span class="n">together</span> <span class="n">that</span> <span class="n">will</span> <span class="n">execute</span> <span class="k">as</span> <span class="n">one</span> <span class="n">at</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">Outlook</span> <span class="n">setup</span><span class="p">.</span> <span class="n">It</span> <span class="n">will</span> <span class="n">be</span>
+<span class="n">necessary</span> <span class="k">to</span> <span class="k">do</span> <span class="n">this</span> <span class="n">when</span> <span class="n">deploying</span> <span class="n">the</span> <span class="n">ODK</span> <span class="k">in</span> <span class="n">silent</span> <span class="n">mode</span> <span class="n">because</span> <span class="n">you</span> <span class="n">can</span> <span class="n">add</span>
+<span class="n">only</span> <span class="n">one</span> <span class="n">custom</span> <span class="k">package</span> <span class="k">to</span> <span class="n">the</span> <span class="n">ODK</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">example</span> <span class="n">will</span> <span class="n">show</span> <span class="n">how</span> <span class="k">to</span> <span class="n">bundle</span> <span class="n">the</span> <span class="n">necessary</span> <span class="n">files</span> <span class="k">to</span> <span class="n">add</span> <span class="n">hotfixes</span>
+<span class="k">to</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">generate</span> <span class="n">the</span> <span class="k">package</span> <span class="n">successfully</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">two</span> <span class="n">steps</span> <span class="n">are</span> <span class="n">necessary</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">that</span> <span class="n">lists</span> <span class="n">the</span> <span class="n">files</span> <span class="k">to</span> <span class="n">copy</span> <span class="k">and</span> <span class="n">the</span> <span class="n">commands</span> <span class="k">to</span> <span class="n">execute</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Bundle</span> <span class="n">the</span> <span class="n">files</span> <span class="n">together</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">executable</span><span class="p">,</span> <span class="n">using</span> <span class="n">the</span> <span class="n">IExpress</span>
+  <span class="n">Wizard</span><span class="p">.</span>
+
+<span class="n">Creating</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">File</span> <span class="n">for</span> <span class="n">Use</span> <span class="k">with</span> <span class="n">the</span> <span class="n">IExpress</span> <span class="n">Wizard</span>
+<span class="p">-------------------------------------------------------</span>
+
+<span class="k">To</span> <span class="n">execute</span> <span class="n">multiple</span> <span class="n">programs</span> <span class="n">at</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="n">setup</span><span class="p">,</span> <span class="n">a</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">is</span>
+<span class="n">needed</span><span class="p">.</span> <span class="n">The</span> <span class="n">purpose</span> <span class="k">of</span> <span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="k">to</span> <span class="n">indicate</span> <span class="n">which</span> <span class="n">files</span> <span class="n">should</span> <span class="n">be</span> <span class="n">copied</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">user</span><span class="s1">'s hard drive, and which programs should be executed. The list of
+programs can also contain any necessary command-line switches.
+
+For this example, the .inf file will look similar to the following to copy the
+files necessary to run the custom package. Note, in this example, the .inf file
+is named Odk.inf.
+
+     ; INF file to use with the IExpress Wizard.
+
+     [Version]
+     Signature="$Chicago$"
+     ; Enter the name of your .INF file on the line below.
+     LayoutFile=ODK.inf
+     AdvancedINF=2.0
+
+     [DefaultInstall]
+     CopyFiles=install.files
+     RunPostSetupCommands=RunPostSetupCommandsSection
+
+     [DestinationDirs]
+     install.files=30,IDKTemp
+
+     [install.files]
+     ; List the files that need to be copied to the local hard drive.
+     ; This should be the same list of files that are added in the
+     ; "Packaged Files" section of the IExpress Wizard.
+
+     OLCSP128.EXE
+     OL98QFE.EXE
+     ODK.INF
+
+     ; The current .INF file needs to be saved and included in this section.
+
+     [RunPostSetupCommandsSection]
+     ; List the programs you wish to run and the order in which
+     ; you wish them to be executed.
+     ; Include any command line switches or parameters that are necessary.
+
+     OLCSP128.EXE
+     OL98QFE.EXE
+     OL98QFE2.EXE /Q
+
+     [SourceDisksNames]
+     1="default",,1
+
+Combining Multiple Files Using the IExpress Wizard
+--------------------------------------------------
+
+To bundle several programs together under one name using the IExpress utility,
+follow these steps:
+
+1. Start IExpress 2.0. The default location and filename are:
+
+  C:\Program Files\ODK\Tools\Iexpress.exe
+
+2. In the Welcome To IExpress 2.0 dialog box, choose "Create new self extraction
+  directive file," and then click Next.
+
+3. In the Package Purpose dialog box, click the "Extract files and run an
+  installation command" option , and click Next. In Package Title, enter a name
+  such as "Hotfixes," and then click Next.
+
+4. At Confirmation Prompt, click No Prompt, and click Next. At License
+  Agreement, select "Do not display a license," and click Next. These options,
+  although not necessary, may be used.
+
+5. In Packaged Files, click Add to add the components you wish to be bundled
+  into the self-extracting executable. For our example, you would locate the
+  files:
+
+  Olcsp128.exe
+  Ol98qfe.exe
+  Odk.inf
+
+  And then click Add. Once you have selected the components, click Next.
+
+  NOTE: Odk.inf is the file that was created in the section above.
+
+6. For "Installation Program to Launch," specify the name of the .inf file you
+  wish to use that lists the names of the executables to call and in what
+  order. For our example, this is Odk.Inf.
+
+  The Post Install command should stay as None. When you have created and
+  specified the .inf file, click Next.
+
+7. In Show Window, accept the default settings, and click Next. In Finish
+  Message, you can choose to have a display pop-up indicating that the packages
+  have run; however, this is not required. Click Next.
+
+8. In "Package Name and Options," type the name of your package, providing the
+  directory location, and click Next. In Configure Reboot, choose the option
+  for No Reboot after your packages have been installed, and then click Next.
+
+NOTE: If you are deploying this package using the ODK, you must select No Reboot
+if you are going to deploy the package as a stand-alone .exe file.
+
+1. The Save Self-Extraction Directive dialog box asks where you want to save the
+  .sed file. This file will allow you go back into the package configuration
+  and change the components you have bundled together. To be safe, create a
+  .sed file, and click Next.
+
+2. When the Create Package confirmation dialog box appears, click Next, and the
+  package will be built. This will be turned into one .exe file, with the name
+  you specified, that can be included into the Outlook Deployment Kit as your
+  single custom package.
+
+3. The final screen confirms the creation of your package. It will display
+  information such as how much compression the files received, how many bytes
+  the package is, and how long it took. Click Finish to exit the Wizard.
+
+The bundled, self-extracting executable is now ready to be deployed through the
+ODK or as a stand-alone .exe file.
+
+For additional information on using IExpress and the ODK users should download
+the IExpress Deployment Kit for Outlook 98 available at the following location:
+
+  ftp.microsoft.com/softlib/mslfiles/odkidk98.exe
+
+  and
+
+  http://support.microsoft.com/support/downloads/dp3384.asp
+
+Additional query words: prfadmin prf admin odkidk98.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3 kbOutlookDeployKitSearch kbOutlook98DeployKit kbExchange550SP1
+Version           : :5.5 SP1,98
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129940: PRB: Out of Stack Space Error Caused by Property Procedure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129940: PRB: Out of Stack Space Error Caused by Property Procedure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129940/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129940/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129940/","publisher":null,"image":null,"headline":"Q129940: PRB: Out of Stack Space Error Caused by Property Procedure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129940-prb-out-of-stack-space-error-caused-by-property-procedure">Q129940: PRB: Out of Stack Space Error Caused by Property Procedure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129940
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a non-reserved Visual Basic keyword within a Property Procedure of the
+same name creates a recursive call to that Property statement resulting in this
+error:
+
+  Out of Stack Space Error.
+
+CAUSE
+=====
+
+Visual Basic allows you to define Properties and Methods that have the same name
+as non-reserved keywords because many keywords (such as Left) in previous
+versions of Visual Basic are used frequently by OLE servers. If you take
+advantage of this in your own Class, an "Out of Stack Space error" can occur in
+a Property Get Procedure when both of the following conditions are met:
+
+- A call to the non-reserved keyword with the same name as the Property is
+  located within a Property Get Procedure.
+
+- The Property Get Procedure returns a Variant or Object.
+
+RESOLUTION
+==========
+
+Typically, if one of the following conditions is true, Visual Basic can
+determine whether to call the Property Get procedure or the non-reserved
+keyword:
+
+- The Property Get procedure doesn't return a Variant or Object.
+
+-or-
+
+- The call to the non-reserved keyword takes a different number of parameters
+  then the Property Get procedure takes.
+
+For example, given the following Property Get Property procedure, the Visual
+Basic Left function would be called instead of the Property Get procedure:
+
+     Property Get Left() as String
+        Left = Left("Hello World",10)  ' Visual Basic Left function called
+     End Property
+
+Because the Property Get Procedure expects 0 parameters and the Visual Basic
+function expects 2, the Visual Basic Left function is called.
+
+If, however, the Property Get Procedure returns either a Variant or an Object,
+the Property Get Procedure is called, regardless of the number of Parameters the
+Property Procedure expects. This occurs because Objects, which are now supported
+in Variants, can have a default property, which can take parameters themselves.
+When you call a function that returns a Variant or Object, and you pass the
+incorrect number of parameters, Visual Basic realizes that you intended to pass
+the parameters to the default property of the Object, so it generates a call to
+the default property with those parameters. In this case, the "Incorrect Number
+of Parameters" message is not generated because it is not necessarily known how
+many parameters are expected by the default property.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a Command Button (Command1) to Form1.
+
+3. Add the following code to the Command1_Click procedure:
+
+     Sub Command1_Click()
+        Dim clsClass1 As New Class1
+        MsgBox clsClass1.Left
+     End Sub
+
+4. Insert a Class Module (Class1) by choosing Class Module from the Insert Menu
+  (ALT, I, C).
+
+5. Add the following code to the Class1 module:
+
+     Property Get Left() ' This returns a Variant by default
+        Const cTempStr = "Summer"
+        Left = Left(cTempStr, 3)
+     End Property
+
+6. Press the F5 key to run the program.
+
+7. Click the Command1 button. An 'Out of Stack Space' Error message appears at
+  this point, where you might expect to see a Message Box with the phrase
+  "Sum."
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

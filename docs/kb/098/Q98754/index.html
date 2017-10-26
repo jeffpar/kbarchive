@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98754: How to Prevent Recursion Within ON KEY LABEL Routines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98754: How to Prevent Recursion Within ON KEY LABEL Routines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98754/","publisher":null,"image":null,"headline":"Q98754: How to Prevent Recursion Within ON KEY LABEL Routines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98754-how-to-prevent-recursion-within-on-key-label-routines">Q98754: How to Prevent Recursion Within ON KEY LABEL Routines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98754
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 3.00 | 1.02 2.00 2.50
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+- Microsoft FoxPro for MS-DOS, versions 1.02, 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a key that is assigned to an ON KEY LABEL procedure is pressed while that
+same procedure is executing, an undesirable recursive condition will be created.
+If this same key is accidentally held down, the typematic function of MS-DOS
+(the rate at which MS-DOS repeats a character when you hold down a key) may fill
+the keyboard buffer with as many as 31 keystrokes.
+
+After attempting to DO the procedure as many times as possible, the program will
+abort with the message "DO nesting too deep."
+
+RESOLUTION
+==========
+
+To work around this problem, turn off the key trap at the beginning of the
+procedure, then set it back on again as the procedure is exited. The sample
+program below demonstrates this workaround.
+
+MORE INFORMATION
+================
+
+The simplest method of disabling an ON KEY LABEL trap is to assign the asterisk
+(*) to the same key label that originally called the currently executing
+procedure. This assignment should be the very first line of the procedure,
+provided there are no parameters to be passed, in which case it should
+immediately follow the PARAMETERS statement.
+
+After the routine has completed its operation, the key can be reassigned to its
+previous command to DO the procedure. This reassignment should be the last line
+in the procedure before the (implied or written) RETURN statement.
+
+
+     *** XYZ.PRG
+     PUSH KEY CLEAR  &amp;&amp; Clears and saves current ON KEY LABEL settings
+     ON KEY LABEL F5 DO abc   &amp;&amp; original assignment in main program
+
+     &amp;&amp;
+     &amp;&amp; body of main program
+     &amp;&amp;
+
+     * (To run this code as a stand-alone program, place a READ CYCLE
+     * command here).
+
+     * Place the POP KEY command immediately before the RETURN (if one
+     * exists) or the end of the main program.
+     POP KEY  &amp;&amp; Restores ON KEY LABEL settings
+
+     PROCEDURE abc
+     ON KEY LABEL F5 *   &amp;&amp; reassigns F5 to a comment
+     *... other code
+     WAIT WINDOW "pressing F5 now won't call this procedure again"
+     *... more code
+     ON KEY LABEL F5 DO abc   &amp;&amp; reassigns F5 to its original trap
+
+
+NOTE: While this method prevents recursive calls from within a procedure, on some
+very fast machines this method will not prevent the procedure call stack from
+overflowing. The "DO nesting too deep" error cannot be trapped by an ON ERROR
+routine, as the ON ERROR routine must place its call on the same stack.
+
+
+Additional query words: VFoxWin FoxDos FoxWin OKL clear typeahead hotkey hot type ahead tshoot
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : 2.50 2.50a 3.00 | 1.02 2.00 2.50
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

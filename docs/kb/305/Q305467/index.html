@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305467: Microsoft Windows Script Host 2.0 Developer’s Guide Comments and | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305467: Microsoft Windows Script Host 2.0 Developer’s Guide Comments and" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305467/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305467/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305467/","publisher":null,"image":null,"headline":"Q305467: Microsoft Windows Script Host 2.0 Developer’s Guide Comments and","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305467-microsoft-windows-script-host-20-developers-guide-comments-and">Q305467: Microsoft Windows Script Host 2.0 Developer’s Guide Comments and</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305467
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 02-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows Script Host 2.0 Developer's Guide ISBN 0-7356-0931-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Windows Script Host 2.0
+Developer's Guide, ISBN 0-7356-0931-4.
+
+The following topics are covered:
+
+- CD-ROM: Code Error In ErrorTest2.js Sample
+
+- Page 31: WSH File Extension Should Be WSF
+
+- Page 66: 0011 Decimal Should Be 0011 Binary
+
+- Page 216: Invalid Element In Code Sample
+
+- Page 289: Incorrect Reference To RegDel Method
+
+MORE INFORMATION
+================
+
+CD-ROM: Code Error In ErrorTest2.js Sample
+------------------------------------------
+
+The sample file ErrorTest2.js found in the \WSHDevGuide\Chapter02 directory of
+the companion CD contains an error. This error prevents the debugger from
+starting at the debugger statement. Change line 22 from:
+"WScript.Quit(); ' Quit the script"
+
+To:
+"WScript.Quit();"
+
+The apostrophe was a comment character in the original VBScript, but is
+understood as an opening quotation mark by the JScript interpreter. Since there
+is no closing quotation mark, a syntax error occurs before the debugger
+statement is executed.
+
+
+Page 31: WSH File Extension Should Be WSF
+-----------------------------------------
+
+There is an error in step 3 at the top of page 31.
+
+Change:
+"3. Repeat step 2, and add DWORD values for js and wsh."
+
+To:
+"3. Repeat step 2, and add DWORD values for js and wsf."
+
+
+Page 66: 0011 Decimal Should Be 0011 Binary
+-------------------------------------------
+
+There is an error at the top of page 66.
+
+Change:
+"...value 3 is equivalent to 0011 decimal,"
+
+To:
+"...value 3 is equivalent to 0011 binary,"
+
+
+Page 216: Invalid Element In Code Sample
+----------------------------------------
+
+The code sample on page 216 includes an invalid element.
+
+The "&lt;/hr&gt;" element should be completely removed from the bottom of the
+page.
+
+
+Page 289: Incorrect Reference To RegDel Method
+----------------------------------------------
+
+There is an incorrect reference to the DelReg method on page 289.
+
+Change:
+"To delete a value or a key, you can use the RegDel method with ..."
+
+To:
+"To delete a value or a key, you can use the RegDelete method with ..."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: DEVBOOK 0-7356-0931-4
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

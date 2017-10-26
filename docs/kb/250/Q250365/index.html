@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250365/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250365/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250365/","publisher":null,"image":null,"headline":"Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250365-bug-system-menu-gets-corrupted-when-file-dropped-onto-a-mdi-app">Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250365
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbprint kbGDI kbMenu kbMFC kbPrinting KbUIDesign kbDSupport kbGrpDSMFCATL
+Last Modified: 22-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- The Microsoft Foundation Classes (MFC) 
+- Microsoft Windows XP Home Edition 
+- Microsoft Windows XP Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open a file from Windows Explorer or use a drag-and-drop
+operation to move the file while the file's associated MFC MDI application is in
+Print Preview mode, one of the following symptoms are observed:
+
+- If the child window for which Print Preview is being shown is not maximized
+  then the menu for the new child window is created on the top of the Print
+  Preview window.
+
+- If the MDI child window is maximized and in Print Preview mode then the two
+  sets of the system menu and the Minimize/Maximize/Close buttons are seen.
+
+CAUSE
+=====
+
+The application is supposed to close the print preview window and switch to the
+MDI child window that was created for opening this file. But the application is
+not able to switch to the associated view.
+
+RESOLUTION
+==========
+
+One way to work around this problem is to close the Print Preview window before
+creating a new window for the file being opened or dropped. The following code
+shows how this can be done:
+
+- Add the following line of code to the Stdafx.h file:
+
+  #include &lt;afxpriv.h&gt;
+
+- Create a handler for the WM_DROPFILES message in your CMainFrame class and
+  copy the following code in there.
+
+  void CMainFrame::OnDropFiles(HDROP hDropInfo) 
+  {
+  	CView* pView = GetActiveView();
+  	if (pView  &amp;&amp; pView-&gt;IsKindOf(RUNTIME_CLASS(CPreviewView))) 
+  	{
+  		CPreviewView* pView = (CPreviewView *)GetActiveView();
+  		SendMessage(WM_COMMAND, AFX_ID_PREVIEW_CLOSE);
+  	}
+
+  	CMDIFrameWnd::OnDropFiles(hDropInfo);
+  }
+
+- Override the OnDDECommand virtual function in your application class and copy
+  the following code there:
+
+  BOOL CQ250365App::OnDDECommand(LPTSTR lpszCommand) 
+  {
+  	CMainFrame* pFrame = (CMainFrame *)AfxGetMainWnd();
+  	CView* pView = pFrame-&gt;GetActiveView();
+  	if (pView  &amp;&amp; pView-&gt;IsKindOf(RUNTIME_CLASS(CPreviewView))) 
+  	{
+  		CPreviewView* pView = (CPreviewView *)pFrame-&gt;GetActiveView();
+  		pFrame-&gt;SendMessage(WM_COMMAND, AFX_ID_PREVIEW_CLOSE);
+  	}
+  	return CWinApp::OnDDECommand(lpszCommand);
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The WM_DROPFILES message is sent when the user drops a file on the window of an
+application that has registered itself as a recipient of dropped files.
+
+The CWinApp::OnDDECommand method is called by the framework when the main frame
+window receives a DDE execute message. The default implementation checks whether
+the command is a request to open a document and, if so, then opens the specified
+document. The Windows File Manager usually sends such DDE command strings when
+the user double-clicks a data file.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run AppWizard to create an MFC AppWizard (exe).
+
+2. Generate an MFC AppWizard (exe) as MDI type.
+
+3. At step 4 of 6, click Advanced set a file extension in the Advanced Options
+  dialog box to .xxx. The rest of the selections can be default.
+
+4. Build and run the application.
+
+5. Save the document as Test.xxx (where .xxx is a file extension).
+
+6. Close the application and run it again.
+
+7. Maximize the MDI child window and select Print Preview from the menu.
+
+8. Drag the test file from explorer into the application or double-click the
+  file to open it.
+
+9. You should see two sets of system menus and Minimize/Maximize/Close buttons.
+
+10. If you do the above tests with the child window in a normal state (not
+  maximized), you should see a menu on top of print preview window.
+
+REFERENCES
+==========
+
+For more information go to MSDN Help and search on OnDropFiles and
+OnDDECommand.
+
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Sreedhar Pelluru, Microsoft Corporation
+
+
+Additional query words: system menu print preview drop file
+
+======================================================================
+Keywords          : kbprint kbGDI kbMenu kbMFC kbPrinting KbUIDesign kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbWinXPHome kbWinXPPro kbAudDeveloper kbMFC kbVC600 kbVC32bitSearch kbWinXPProSearch kbWinXPHomeSearch kbWinXPSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

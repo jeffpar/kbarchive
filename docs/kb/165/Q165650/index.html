@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165650: Command Line Configuration Fixes for SNA Server 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165650: Command Line Configuration Fixes for SNA Server 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165650/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165650/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165650/","publisher":null,"image":null,"headline":"Q165650: Command Line Configuration Fixes for SNA Server 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165650-command-line-configuration-fixes-for-sna-server-30">Q165650: Command Line Configuration Fixes for SNA Server 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165650
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+1. SNA Server Did Not Support the Local LU Syncpoint Option
+
+
+2. "Use Client/Server Encryption" Not Supported Using /Print Option
+
+
+3. Session Level Security Settings Not Supported
+
+
+4. MaxSendRU is Displayed Three Times When Using Mode Option
+
+
+5. Deleting User Without DomainName May Delete Wrong User
+
+
+6. SNACFG Connection Command Problems
+
+
+7. SNACFG Doesn't Support Different LOCAL Network Name and Control Point Name
+  for Each Connection
+
+
+SYMPTOMS
+========
+
+1. SNA Server Did Not Support the Local LU Syncpoint Option
+
+  SYMPTOMS
+
+  SNACFG does not support "Use Client/Server Encryption" flag for Local APPC
+  LUs.
+
+  RESOLUTION
+
+  A fix is available to correct this problem. The syntax is:
+
+  SNACFG [#configpath] User &lt;username&gt; /add /syncpoint: yes | no
+
+  It also works with /print.
+
+
+2. "Use Client/Server Encryption" Not Supported Using /Print Option
+
+  SYMPTOMS
+
+  The following command does not display the "Use Client/Server Encryption" flag
+  for users or user groups:
+
+  SNACFG [#configpath] User &lt;username&gt; /Print
+
+  RESOLUTION A fix is available to correct this problem.
+
+
+3. Session Level Security Settings Not Supported
+
+  SYMPTOMS
+
+  SNACFG does not support the APPCRLU session-level security options.
+
+  RESOLUTION
+
+  A fix is available to correct this problem. The following is the syntax:
+
+  SNACFG APPCRLU /SECURITY:{ None,text | Hex,text | Char,text }
+
+  It also works with /print.
+
+
+4. MaxSendRU is Displayed Three Times When Using Mode Option
+
+  SYMPTOMS
+
+  The following command will display the MaxSendRU value three times in error:
+
+  c:&gt; snacfg mode &lt;modename&gt; /print
+
+  RESOLUTION A fix is available to correct this problem.
+
+
+5. Deleting User Without DomainName May Delete Wrong User
+
+  SYMPTOMS
+
+  Snacfg.exe allows the deletion of users without specifying the domainname. The
+  following command deletes the first user named Fred that it finds:
+
+  c:&gt; snacfg user Fred /delete
+
+  RESOLUTION A fix is available to correct this problem.
+
+
+6. SNACFG Connection Command Problems
+
+  SYMPTOMS
+
+  When using the connection option of SNACFG, you have the following results:
+
+   - The XID parameter is not output by /PRINT.
+
+   - If a connection is set to use XID0, restoring the config via SNACFG will
+     set it to XID3.
+
+   - The remote end parameter is not preserved. The /PRINT converts peer to
+     host. After restoring the config, downstream is converted to peer.
+
+  RESOLUTION A fix is available to correct this problem.
+
+
+7. SNACFG Doesn't Support Different LOCAL Network Name and Control Point Name
+  for Each Connection
+
+  SYMPTOMS
+
+  SNACFG doesn't support different LOCAL Network Name and Control Point Name for
+  each connection.
+
+  RESOLUTION
+
+  A fix is available to correct this problem.
+
+  The following command allows a Local Network Name and Control Point Name to be
+  added for each connection:
+
+  c:&gt; snacfg [#configpath] connection &lt;connectionname&gt; /netname
+  /cpname
+
+
+STATUS
+======
+
+Microsoft has confirmed these to be problems in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

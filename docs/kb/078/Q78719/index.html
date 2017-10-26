@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78719: Default Device Drivers in SETVER Table | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78719: Default Device Drivers in SETVER Table" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78719/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78719/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78719/","publisher":null,"image":null,"headline":"Q78719: Default Device Drivers in SETVER Table","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78719-default-device-drivers-in-setver-table">Q78719: Default Device Drivers in SETVER Table</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78719
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SETVER.EXE device driver included with Microsoft MS-DOS 5 Upgrade contains a
+table of default entries. This article contains a list of the default entries
+for SETVER.EXE.
+
+If SETVER.EXE is used to reference a device driver, SETVER must be entered before
+the specified device driver in the CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+If a device driver is loaded in the CONFIG.SYS file and is referenced in the
+SETVER table, that device driver must be loaded after SETVER.EXE in CONFIG.SYS.
+
+The following is an example of loading the device driver SSTDRIVE.SYS in
+CONFIG.SYS after SETVER.EXE:
+
+  device=c:\dos\setver.exe
+  device=c:\sstdrive.sys
+
+The default SETVER table as supplied in MS-DOS 5.0 contains the following
+entries:
+
+  WIN200.BIN 3.40
+  WIN100.BIN 3.40
+  WINWORD.EXE 4.10
+  EXCEL.EXE 4.10
+  HITACHI.SYS 4.00
+  MSCDEX.EXE 4.00
+  REDIR4.EXE 4.00
+  NET.EXE 4.00
+  NET.COM 3.30
+  NETWKSTA.EXE 4.00
+  DXMA0MOD.SYS 3.30
+  BAN.EXE 4.00
+  BAN.COM 4.00
+  MSREDIR.EXE 4.00
+  METRO.EXE 3.31
+  IBMCACHE.SYS 3.40
+  REDIR40.EXE 4.00
+  DD.EXE 4.01
+  DD.BIN 4.01
+  LL3.EXE 4.01
+  REDIR.EXE 4.00
+  SYQ55.SYS 4.00
+  SSTDRIVE.SYS 4.00
+  ZDRV.SYS 4.01
+  ZFMT.SYS 4.01
+  TOPSRDR.EXE 4.00
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3rdparty 5.00 IMAGE setver dos 5.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

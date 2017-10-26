@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191503: FIX: Unexpected Results Display With Input Mask | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191503: FIX: Unexpected Results Display With Input Mask" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191503/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191503/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191503/","publisher":null,"image":null,"headline":"Q191503: FIX: Unexpected Results Display With Input Mask","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191503-fix-unexpected-results-display-with-input-mask">Q191503: FIX: Unexpected Results Display With Input Mask</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191503
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When typing a new value, such as 5.25, into a blank text box that has an input
+mask similar to 999,999.99, an extra zero is added between the decimal and the
+last digit entered before the decimal.
+
+CAUSE
+=====
+
+This problem occurs when an input mask contains one or more commas and the
+number of digits entered before the decimal does not fill out the number of
+places to the left of the commas.
+
+RESOLUTION
+==========
+
+This problem only occurs in Visual FoxPro 5.x. Visual FoxPro 3.x and 6.0 do not
+exhibit this problem. Therefore, upgrading to Visual FoxPro 6.0 is a possible
+resolution.
+
+Here are two possible resolutions you can use for Visual FoxPro 5.x:
+
+- Do not use an input mask with numeric data. If the ControlSource of the text
+  box is a numeric field in a table, you will not be able to enter alphabetic
+  data into the text box, with or without an input mask. The drawback to this
+  method is that commas will not show when you enter large numbers.
+
+- Instead of a Numeric type field in the table, use a Double type field. Then
+  use the K format code in the Format property of the text box along with the
+  input mask.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+The InputMask property of fields and controls restricts or dictates the format
+of user input. In Visual FoxPro 5.x, if a text box has a numeric field in a
+table as a ControlSource and the InputMask property of the text box is set to
+999,999.99, entering a number with three or less digits to the left of the
+decimal causes an additional zero to remain immediately to the left of the
+decimal point. Entering numbers with four or more digits to the left of the
+decimal point do not cause the problem with the extra zero.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Enter the following code into a program file and save the program:
+
+        PUBLIC oform1
+        CREATE TABLE xjunkpr FREE (f1 N(10,2))
+        oform1=CREATEOBJECT("form1")
+        oform1.Show
+        RETURN
+
+        **************************************************
+        *-- Form:         form1
+        *-- ParentClass:  form
+        *-- BaseClass:    form
+        *
+        DEFINE CLASS form1 AS form
+
+           Top = 0
+           Left = 0
+           DoCreate = .T.
+           Caption = "Form1"
+           Name = "Form1"
+
+        ADD OBJECT command1 AS commandbutton WITH ;
+           Top = 168, ;
+           Left = 240, ;
+           Height = 73, ;
+           Width = 121, ;
+           Caption = "Quit", ;
+           TabIndex = 5, ;
+           Name = "Command1"
+
+        ADD OBJECT command2 AS commandbutton WITH ;
+           Top = 24, ;
+           Left = 240, ;
+           Height = 73, ;
+           Width = 121, ;
+           Caption = "New Record", ;
+           TabIndex = 1, ;
+           Name = "Command2"
+
+        ADD OBJECT text1 AS textbox WITH ;
+           ControlSource = "xjunkpr.f1", ;
+           Format = "", ;
+           Height = 25, ;
+           InputMask = "999,999.99", ;
+           Left = 24, ;
+           TabIndex = 2, ;
+           Top = 24, ;
+           Width = 168, ;
+           Name = "Text1"
+
+        ADD OBJECT command3 AS commandbutton WITH ;
+           Top = 168, ;
+           Left = 24, ;
+           Height = 49, ;
+           Width = 73, ;
+           Caption = "Prior", ;
+           TabIndex = 4, ;
+           Name = "Command3"
+
+        ADD OBJECT command4 AS commandbutton WITH ;
+           Top = 168, ;
+           Left = 120, ;
+           Height = 49, ;
+           Width = 73, ;
+           Caption = "Next", ;
+           TabIndex = 3, ;
+           Name = "Command4"
+
+        PROCEDURE command1.Click
+           Thisform.Release
+        ENDPROC
+
+        PROCEDURE command2.Click
+           APPEND BLANK
+           Thisform.Refresh
+        ENDPROC
+
+        PROCEDURE command3.Click
+           SKIP -1
+           IF BOF()
+              GO TOP
+           ENDIF
+           Thisform.Refresh
+        ENDPROC
+
+        PROCEDURE command4.Click
+           SKIP 1
+           IF EOF()
+              GO BOTTOM
+           ENDIF
+           Thisform.Refresh
+        ENDPROC
+
+        ENDDEFINE
+        *
+        *-- EndDefine: form1
+        **************************************************
+
+2. Run the program.
+
+3. Click (or press ENTER) the New Record button to add a new record to the
+  table.
+
+4. Press Tab once to move the cursor to the text box.
+
+5. Enter a number with a decimal point, for example, enter "5.25" (without the
+  quotes).
+
+6. Note that once the first digit it entered, 0.00 appears at the right end of
+  the text box. Then when the decimal is entered, the digit and leading zero
+  remain and the insertion point moves to the right of the decimal.
+
+Additional query words: kbVFp600fix kbOOP kbvfp500
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

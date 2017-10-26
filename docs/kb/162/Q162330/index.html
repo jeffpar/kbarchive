@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162330: Err Msg: Windows NT Could Not Start… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162330: Err Msg: Windows NT Could Not Start…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162330/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162330/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162330/","publisher":null,"image":null,"headline":"Q162330: Err Msg: Windows NT Could Not Start…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162330-err-msg-windows-nt-could-not-start">Q162330: Err Msg: Windows NT Could Not Start…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162330
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows NT, the following error message may be displayed:
+
+  Windows NT could not start because of a computer hardware configuration
+  problem.
+
+  Could not read from the selected boot disk. Check boot path and disk
+  hardware.
+
+  Please check the Windows NT(TM) documentation about hardware disk
+  configuration and your hardware reference manuals for additional information.
+
+CAUSE
+=====
+
+This behavior can occur if any part of the arcpath statement in the Boot.ini
+file uses all uppercase charcters. For example:
+
+  MULTI(0)DISK(0)RDISK(0)PARTITION(1)\NT40="Windows NT Workstation
+  Version 4.00"
+
+RESOLUTION
+==========
+
+Change the arcpath statement to use lowercase letters. For example:
+
+  multi(0)disk(0)rdisk(0)partition(1)\NT40="Windows NT Workstation
+  Version 4.00"
+
+If the computer uses the FAT file system, boot from a bootable MS-DOS floppy disk
+and perform the following steps:
+
+1. Type the following line:
+
+  attrib -s -h -r c:\boot.ini
+
+2. Use any text editor to edit the Boot.ini file. Make the appropriate changes
+  to the arcpath statement.
+
+3. Save and then close the Boot.ini file.
+
+4. Type the following line:
+
+  attrib +s +h +r c:\boot.ini
+
+If the type of file system is NTFS, you can use the Emergency Repair procedure to
+fix this, choosing only the options to Inspect startup environment and Inspect
+Boot Sector (unchecking the other two options).
+
+To start the Emergency Repair procedure, insert your Windows NT setup floppy disk
+#1 into your floppy drive and reboot your machine. Follow the instructions on
+the screen, and press "R" for Repair when prompted.
+
+Note that you do not need to have recently updated your Emergency Repair
+information when choosing only the options to Inspect startup environment and
+Inspect Boot Sector.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

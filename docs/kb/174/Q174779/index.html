@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174779: Require Secure SSL Channel Not Available | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174779: Require Secure SSL Channel Not Available" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174779/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174779/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174779/","publisher":null,"image":null,"headline":"Q174779: Require Secure SSL Channel Not Available","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174779-require-secure-ssl-channel-not-available">Q174779: Require Secure SSL Channel Not Available</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174779
+Product(s): Internet Information Server
+Version(s): WINNT:2.0,3.0
+Operating System(s): 
+Keyword(s): kbtshoot
+Last Modified: 30-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use Key Manager to install a new key for use with Secure Sockets Layer
+(SSL) security, the option to enable SSL for a specific virtual directory or a
+home directory remains unavailable (grayed out).
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+The following are troubleshooting steps you can take to ensure availability of
+SSL functionality:
+
+1. Is the key complete and usable?
+
+  In Key Manager, select the key and verify that is has been installed
+  correctly. If the key has not been installed correctly or is not complete and
+  usable, backup the current keyset by selecting Key, select Export Key and
+  click Backup File. Select the key and delete it.
+
+  To import the key from the original key or the backup set files, select Key,
+  Import, and click Keyset Files or Backup File. Always choose Servers and
+  click Commit Changes Now when you change the Key Manager configuration.
+
+2. Once the key is complete and usable, choose Servers and click Commit Changes
+  Now. Exit Key Manager.
+
+3. The registry entry for the Sspifilt.dll file that is required for SSL
+  functionality has the following location:
+
+     Hkey_Local_Machine/System/CurrentControlSet/Services/W3svc/Parameters
+
+
+  Within the Parameters key, there is a string; the value of which is comma
+  delimited and should specify the path for the Sspifilt.dll file. (for
+  example, C:\Winnt\System32\Inetsrv\Sspifilt.dll).
+
+  Other Isapi filters may appear in this value as well. Verify that no spaces
+  exist in this value. If spaces exist, you will need to specify a different
+  physical path, without spaces, for the isapi filter dll path. (for example,
+  C:\Program Files\Isapi.dll needs to change to C:\Winnt\System32\Isapi.dll or
+  some valid path without spaces.
+
+  If the Sspifilt.dll file does not exist in the registry value, add it to the
+  value by double-clicking the FILTER DLLS registry value and use the String
+  editor.
+
+  NOTE: Use a comma with no spaces to separate isapi filter entries.
+
+4. Restart the computer.
+
+5. Verify that the Require Secure SSL Channel option is available in the
+  Directories Properties page in the WWW service.
+
+Additional query words: greyed grey connection cannot be established
+
+======================================================================
+Keywords          : kbtshoot 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : WINNT:2.0,3.0
+Hardware          : ALPHA x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

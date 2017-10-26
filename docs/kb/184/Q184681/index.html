@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184681/","publisher":null,"image":null,"headline":"Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184681-xfor-kanji-outlook-ms-mail-users-get-ndrs-sending-to-exchange">Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184681
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0,5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 10-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Messages sent from Microsoft Mail to Exchange through the Microsoft Mail
+Connector interchange (MSMI) using a Japanese Outlook client fail to be
+delivered to their destination. The sender receives a non-delivery report (NDR)
+similar to the following:
+
+  Your Message
+
+    To:      'someone@microsoft.com'
+       Subject:  Test Message From Kanji Outlook/MSMail
+
+  Was not delivered for the following reasons:
+
+       Delivery failed to MS:MICROSOFT/DOGHOUSE/SOMEONE
+       Reason: 0 (transfer failed)
+       diagnostic: -1 (no diagnostic).
+       MSEXCH:MSExchangeMTA:DogHouse:PAUL11.
+
+  Original message body follows...
+
+The following events are logged in the event log when the message results in an
+NDR:
+
+       Event ID:   2025
+       Source:     MSExchangeIS Private
+       Description:
+       The delivery of a message failed due to error 80004005. A non-
+       delivery report is being sent to the message's originator.
+
+       Event ID:   270
+       Source:     MSExchangeMTA
+       Description:
+       A permanent error has occurred with Entity
+       /O=MICROSOFT/OU=DOGHOUSE/CN=CONFIGURATION/CN=SERVERS/CN=PAUL11
+       /CN=MICROSOFT PRIVATE MDB.  Entity is a Message  Object is a
+       Normal Priority Message. Object: 06000050. Message ID: C=US;A=
+       ;P=Microsoft;L=MICROSOFT-DOGHOUSE-00000287  Content length:
+       1235, External Trace information (first 100 bytes) =
+       3080638061801302555300006280130120000013094D6963726F736F667400
+       00318080113938303332303135353330302D30383030820100830206000000
+       0000,  PDU dump reference 5 [MTA SUBMIT 17 74] (14)
+
+       Event ID:   290
+       Source:     MSExchangeMTA
+       Description:
+       A non-delivery report (reason code transfer-failure and
+       diagnostic code Omit any diagnostic code) is being generated
+       for message C=US;A= ;P=Microsoft;L=MICROSOFT-DOGHOUSE-
+       00000287. It was originally destined for
+       DN:/o=Microsoft/ou=DogHouse/cn=Recipients/cn=Someone&lt;A7&gt;
+       (recipient number 1), and was to be redirected to . [MTA
+       DISP:RESULT 20 136] (12)
+
+CAUSE
+=====
+
+This problem occurs when the Microsoft Exchange information store receives the
+message from the MTA and detects that there are two MAPI Properties for strings
+within the message that have conflicting code page IDs. The information store
+sends an NDR on the message because the discrepancy was encountered.
+
+This problem does not occur if the Kanji Exchange client is used instead of the
+Kanji Outlook client. This is because the Kanji Outlook client includes four
+additional MAPI Properties for the TNEF portion of the message, one of which is
+an additional string property containing a code page ID.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Exchange Server 5.0
+-------------------
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange versions 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Exchange Server 5.5
+-------------------
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange versions 5.5.
+This problem was first corrected in Exchange Server 5.5 Service Pack 2.
+
+
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

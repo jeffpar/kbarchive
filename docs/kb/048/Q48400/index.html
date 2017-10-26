@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48400: Using BASIC to Perform Serial Communications in MS OS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48400: Using BASIC to Perform Serial Communications in MS OS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48400/","publisher":null,"image":null,"headline":"Q48400: Using BASIC to Perform Serial Communications in MS OS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48400-using-basic-to-perform-serial-communications-in-ms-os2">Q48400: Using BASIC to Perform Serial Communications in MS OS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48400
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 7.10
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# S890801-2 | mspl13_basic
+Last Modified: 17-JAN-1991
+
+This article contains a sample BASIC module that calls API routines in
+MS OS/2 protected mode to perform serial communications through
+communications port COM1, COM2, COM3, or COM4.
+
+You must link NOCOM.OBJ (which requires BC /O) with this module before
+attempting to use this module's routines.
+
+This information applies to Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS OS/2 (in protected mode only) and to Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for MS
+OS/2 (in protected mode only).
+
+The following steps must be taken to use the COMPORT.BAS module
+(farther below):
+
+1. Create a program called COM.BAS that makes calls to the routines
+   found in COMPORT.BAS and compile the program.
+
+2. Compile COMPORT.BAS. Ensure that COMPORT.BI (shown below) and
+   BSEDOSFL.BI (included with BASIC compiler 6.00/6.00b and BASIC
+   PDS 7.00/7.10) are in a directory that is in the $INCLUDE
+   statement's explicit path.
+
+3. Link your program to COMPORT.OBJ in addition to NOCOM.OBJ.
+
+The following is a sample file that, when used as input for the MAKE
+utility, compiles and links a program called COM.BAS that uses the
+COMPORT module:
+
+#----------------------
+# MAKE file for COM.BAS
+#----------------------
+comport.obj : comport.bas comport.bi
+     BC /LP /Z /O /D COMPORT.BAS;
+com.obj : com.bas comport.bi
+     BC /LP /Z /O /D COM.BAS;
+com.exe : com.obj comport.obj
+     link /EX com comport nocom;
+
+COMPORT.BI
+----------
+
+' parameter buffer for DosDevIOCtrl Function 41H
+TYPE F41Info
+    BaudRate AS INTEGER
+END TYPE
+
+' parameter buffer for DosDevIOCtrl Function 42H
+TYPE F42Info
+    DataBits AS STRING * 1
+    Parity AS STRING * 1
+    StopBits AS STRING * 1
+END TYPE
+
+' data buffer for DosDevIOCtrl Function 68H
+TYPE F68Info
+    NumChars AS INTEGER   ' Number of characters waiting in
+                          '   device queue
+    QueueSize AS INTEGER  ' Size of queue
+END TYPE
+
+DECLARE FUNCTION InitComPort% (ComPort$, Baud%, Parity%,_
+                               DataBit%,StopBit%)
+DECLARE SUB WriteCom (Handle%, ToCom$, BytesWritten%)
+DECLARE SUB PrintCom (Handle%, ToCom$, BytesWritten%)
+DECLARE SUB ReadCom (Handle%, FromCom$, BytesToRead%,_
+                     BytesRead%)
+DECLARE SUB ComSize (Handle%, Size%)
+DECLARE SUB CloseCom (Handle%)
+
+COMPORT.BAS
+-----------
+
+' $INCLUDE: 'COMPORT.BI'
+' $INCLUDE: 'BSEDOSFL.BI'
+' Note:
+'       These routines call OS/2 system functions
+' that always return a value indicating whether or not an
+' error has occurred. In this module, ReturnErr% always
+' contains this value. A return value of 0 means no error
+' occurred. This module does no error checking. This would
+' have to be added using the values in ReturnErr%.
+'       For added flexibility in configuring the port, use
+' DosDevIOCtrl Function 53H.
+'       All of the routines in this module (except
+' InitComPort%) need a Handle% as one of the parameters.
+' This Handle% is obtained from InitComPort%
+
+'***********************************************************
+' InitComPort% returns a handle to the comport specified in
+' the parameter ComPort$ (must be in the form: "COMn" where
+' n is a number between 1 and 4.) Before the handle to the
+' port is returned, the port is configured to the correct
+' baud rate (110 to 19200), parity, data bit, and stop bit.
+'***********************************************************
+FUNCTION InitComPort% (ComPort$, Baud%, Parity%, DataBit%,_
+                       StopBit%)
+    DIM F42 AS F42Info
+    DIM F41 AS F41Info
+    DIM Temp AS STRING * 5 'Temp holds string of form "COMn"+null byte
+    Temp = ComPort$
+    F41.BaudRate = Baud%
+    F42.DataBits = CHR$(DataBit%)
+    F42.Parity = CHR$(Parity%)
+    F42.StopBits = CHR$(StopBit%)
+
+    ReturnErr% = DosOpen% (VARSEG(Temp), VARPTR(Temp),_
+                           Handle%,_
+                           Action%,_
+                           0,_
+                           0,_
+                           1,_
+                           &amp;H12,_
+                           0)
+    IF (ReturnErr% = 0) THEN
+        ReturnErr% = DosDevIOCtl%(0, 0,_
+                                  VARSEG(F41), VARPTR(F41),_
+                                  &amp;H41,_
+                                   1,_
+                                   Handle%)
+        ReturnErr% =  DosDevIOCtl%(0, 0,_
+                                   VARSEG(F42),VARPTR(F42),_
+                                   &amp;H42,_
+                                   1,_
+                                   Handle%)
+    END IF
+    InitComPort% = Handle%
+END FUNCTION
+
+'***********************************************************
+' WriteCom writes a string (ToCom$) to the port associated
+' with Handle%. BytesWritten% will contain the actual
+' number of bytes written after the call to WriteCom.
+'***********************************************************
+SUB WriteCom (Handle%, ToCom$, BytesWritten%)
+    DIM Temp AS STRING * 512
+    Temp = ToCom$
+    Length = LEN(ToCom$)
+    ReturnErr% = DosWrite%(Handle%,_
+                           VARSEG(Temp), VARPTR(Temp),_
+                           Length,_
+                           BytesWritten%)
+END SUB
+
+'***********************************************************
+' PrintCom Prints a string (ToCom$) to the port associated
+' with Handle%. The string is written and an additional CR
+' and LF. BytesWritten% will contain the actual number of
+' bytes written after the call to PrintCom.
+'***********************************************************
+SUB PrintCom (Handle%, ToCom$, BytesWritten%)
+    ToCom$ = ToCom$ + CHR$(13) + CHR$(10)
+    DIM Temp AS STRING * 512
+    Temp = ToCom$
+    Length = LEN(ToCom$)
+    ReturnErr% = DosWrite%(Handle%,_
+                           VARSEG(Temp), VARPTR(Temp),_
+                           Length,_
+                           BytesWritten%)
+END SUB
+
+'***********************************************************
+' ReadCom reads BytesToRead% number of bytes from the port
+' associated with Handle%. The bytes read are placed in
+' FromCom$, and the number of bytes read will be placed in
+' BytesRead%.
+'***********************************************************
+SUB ReadCom (Handle%, FromCom$, BytesToRead%, BytesRead%)
+    DIM Temp AS STRING * 512
+    ReturnErr% = DosRead%(Handle%,_
+                          VARSEG(Temp), VARPTR(Temp),_
+                          BytesToRead%,_
+                          BytesRead%)
+    FromCom$ = MID$(Temp,1,BytesRead%)
+END SUB
+
+'***********************************************************
+' ComSize returns the number of bytes waiting to be read at
+' the port associated with Handle%. The number of bytes
+' waiting is placed in Size%.
+************************************************************
+SUB ComSize (Handle%, Size%)
+    DIM F68 AS F68Info
+    DIM FileInfo AS FILESTATUS
+    ReturnErr% = DosDevIOCtl%(VARSEG(F68), VARPTR(F68),_
+                              0, 0,_
+                              &amp;H68,_
+                              1,_
+                              Handle%)
+    Size% = F68.NumChars
+END SUB
+
+'***********************************************************
+' CloseCom closes the port associated with Handle%. This
+' should be called before the end of the program.
+'***********************************************************
+SUB CloseCom (Handle%)
+    ReturnErr% = DosClose% (Handle%)
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152073/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152073/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152073/","publisher":null,"image":null,"headline":"Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152073-prb-wrapper-class-for-automation-object-may-be-incomplete">Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152073
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1
+Operating System(s): 
+Keyword(s): kbole kbAutomation kbCOMt kbMFC kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An automation object may support a statement and function with the same name
+even though the statement and function will most likely have different
+behaviors. Class Wizard will not recognize both the statement and function.
+However, when generating a new class from the object's type library, the Class
+Wizard will generate a function and prototype for a single function. This
+generated function will not give you the ability to call both the function and
+the statement.
+
+CAUSE
+=====
+
+The similarly-named function and statement will share a single entry in the .odl
+file for the object and a single entry in the type library. The Class Wizard
+does the best job it can and generates a single function and prototype based on
+this entry.
+
+RESOLUTION
+==========
+
+Given adequate documentation for the statement and function, it is possible to
+modify the wrapper class by hand so that the statement or function may be
+called. If the parameter list for the statement and function vary, which may be
+the case if optional parameters are used, the wrapper function can be
+overridden. Otherwise, the wrapper for the statement and function will need
+different names.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+An example of this problem is WordBasic's Bold. The Bold statement turns the
+bold character formatting on and off just as selecting the Bold Toolbar button
+in Word does. The Bold() function returns a short indicating whether all, some,
+or none of the characters in a selection are formatted as bold. Visual Basic
+will call the function if a return value is assigned to the Bold() call.
+Otherwise, it will call the Bold statement.
+
+The .odl statement for Bold is as follows:
+
+     [id(0x00008048), helpstring("Makes the selection bold (toggle)"),
+     helpcontext(0x00001d48)] short Bold([in, optional] VARIANT On);
+
+The Class Wizard will generate the following function and prototype using this
+information:
+
+     short Bold(const VARIANT&amp; On);
+
+     short WordBasic::Bold(const VARIANT&amp; On)
+     {
+         short result;
+         static BYTE parms[] =
+             VTS_VARIANT;
+         InvokeHelper(0x8048, DISPATCH_METHOD, VT_I2, (void*)&amp;result, parms,
+             &amp;On);
+         return result;
+     }
+
+Using this function will result in the WordBasic Bold() function being called. In
+order to call the statement, you could define BoldStatement() and BoldFunction()
+functions. In this case, however, because there is no reason to pass a parameter
+to the Bold() function, the parameter lists vary and it is possible to overload
+the wrapper functions as follows:
+
+     void Bold(const VARIANT&amp; On);
+     short Bold();
+
+     void WordBasic::Bold(const VARIANT&amp; On)
+     {
+         static BYTE parms[] =
+             VTS_VARIANT;
+         InvokeHelper(0x8048, DISPATCH_METHOD, VT_EMPTY, NULL, parms,
+             &amp;On);
+     }
+
+     short WordBasic::Bold()
+     {
+         short result;
+         static BYTE parms[] =
+             VTS_VARIANT;
+         InvokeHelper(0x8048, DISPATCH_METHOD, VT_I2, (void*)&amp;result, NULL);
+         return result;
+     }
+
+REFERENCES
+==========
+
+Microsoft Office Developer's Kit - PART 2 Word Basic Reference, Statements and
+Functions.
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10 automation variant
+
+======================================================================
+Keywords          : kbole kbAutomation kbCOMt kbMFC kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:2.0,2.1,2.2,4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

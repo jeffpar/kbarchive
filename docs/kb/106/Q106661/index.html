@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106661: How to Determine the Shape of the Mouse Cursor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106661: How to Determine the Shape of the Mouse Cursor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106661/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106661/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106661/","publisher":null,"image":null,"headline":"Q106661: How to Determine the Shape of the Mouse Cursor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106661-how-to-determine-the-shape-of-the-mouse-cursor">Q106661: How to Determine the Shape of the Mouse Cursor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106661
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 26-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro for Windows, the cursor (mouse pointer) can change shape depending on
+where it is located on the screen. There isn't a function in FoxPro that tells
+you the current shape of the cursor. The code example below shows one method of
+determining the cursor's shape.
+
+MORE INFORMATION
+================
+
+Several functions in the Microsoft Windows Software Development Kit (SDK) can be
+used to control and get information about the current Windows cursor. The two
+that this program (IBEAM.PRG) uses are LoadCursor() and GetCursor(). The REGFN()
+and CALLFN() routines within FOXTOOLS.FLL are used to call the SDK cursor
+functions.
+
+     * IBEAM.PRG starts here:
+
+     #DEFINE idc_arrow       (32512)
+     #DEFINE idc_ibeam       (32513)
+     #DEFINE idc_wait        (32514)
+     #DEFINE idc_cross       (32515)
+     #DEFINE idc_uparrow     (32516)
+     #DEFINE idc_size        (32640)
+     #DEFINE idc_icon        (32641)
+     #DEFINE idc_sizenwse    (32642)
+     #DEFINE idc_sizenesw    (32643)
+     #DEFINE idc_sizewe      (32644)
+     #DEFINE idc_sizens      (32645)
+
+     SET LIBRARY TO SYS(2004)+'foxtools.fll'
+
+     * Register the LoadCursor function to find out the resource
+     * number for IDC_IBEAM.
+
+     fnhand=regfn('LoadCursor',"IL","I")
+     cursor_res=callfn(fnhand,0,idc_ibeam)
+
+     * Find out what the current cursor resource number is.
+
+     fn2hand=regfn('GetCursor',"","I")
+     CURSOR=callfn(fn2hand)
+
+     * Test to see if the current cursor resource number equals
+     * that of IDC_IBEAM (or whatever we change it to).
+
+     IF cursor_res = CURSOR
+        WAIT WINDOW "That's the I-Beam Cursor!"
+     ELSE
+        WAIT WINDOW "That's not an I-Beam Cursor!"
+     ENDIF
+
+To run IBEAM.PRG, type the following line in the Command window. When you press
+F4, IBEAM.PRG will be called and will tell you whether the cursor is in the
+I-beam shape or not, depending on the position of the mouse.
+
+  ON KEY LABEL F4 DO IBEAM.PRG
+
+REFERENCES
+==========
+
+Microsoft Windows SDK "Programmer's Reference, Volume 2: Functions"
+
+FOXTOOLS.WRI in the FoxPro version 2.5 for Windows FOXPROW\GOODIES\FOXTOOLS
+directory
+
+Additional query words: VFoxWin FoxWin 2.50 arrow foxtools foxtools.fll
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

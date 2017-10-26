@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169683/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169683/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169683/","publisher":null,"image":null,"headline":"Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169683-xfor-new-ims-routing-functionality-in-exchange-server-50-sp2">Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169683
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 21-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Microsoft Exchange Server version 5.0, the Internet Mail Service has the
+added ability to reroute Internet mail. To configure this feature, you have to
+specify any domain(s) that will be handled by Exchange Server. When you specify
+a domain in the Routing tab of the Internet Mail Service, a subdomain match is
+implied.
+
+In Exchange Server 5.0 Service Pack 2 (SP2), you now have the ability to specify
+an exact domain match in the routing list.
+
+MORE INFORMATION
+================
+
+In Exchange Server 5.0 and Exchange Server 5.0 Service Pack 1 (SP1), if you
+specify
+
+  ms.com     host1.ms.com
+
+in the routing list, then this implies that you also want other subdomains (for
+example, sales.ms.com) to be rerouted to host1.ms.com.
+
+The rerouting capabilities have been modified in Exchange Server 5.0 SP2 to allow
+you to specify an exact domain match instead of always doing subdomain matches.
+
+To do this you must add a pound sign (#) in front of any domains you want exact
+matches for. A domain with a pound sign prefix indicates that domain must
+exactly match the destination domain (the domain in user@domain) to trigger the
+associated routing action.
+
+For example, take the following list:
+
+  Sent To     Route To
+  =======     ========
+  ms.com      host1.ms.com
+  #ms.com     &lt;inbound&gt;
+  x.ms.com    &lt;inbound&gt;
+
+Mail should be routed as follows:
+
+  User@ms.com ===&gt; routed inbound
+  User@sales.ms.com ===&gt; routed to host1.ms.com
+  User@x.ms.com ===&gt; routed inbound
+  User@pms.com ===&gt; routed to pms.com
+  User@abc.x.ms.com ===&gt; routed inbound
+
+The matches are done in the following order:
+
+1. Check for a match in the exact match list.
+
+2. Check for best match among the non-exact match list.
+
+3. If no match, reroute to the destination domain.
+
+This feature is included in the latest U.S. Service Pack for Microsoft Exchange
+Server version 5.0. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

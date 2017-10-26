@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317208: Cannot Download Microsoft Office Documents from IIS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317208: Cannot Download Microsoft Office Documents from IIS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317208/","publisher":null,"image":null,"headline":"Q317208: Cannot Download Microsoft Office Documents from IIS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317208-cannot-download-microsoft-office-documents-from-iis-server">Q317208: Cannot Download Microsoft Office Documents from IIS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317208
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.1 
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Explorer version 6 for Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to download Microsoft Office documents from a server running
+Internet Information Services (IIS) to a client using Microsoft Internet
+Explorer version 6, you may receive the following error messages:
+
+  Internet Explorer cannot download &lt;File.doc&gt; from &lt;ServerName&gt;.
+
+  Internet Explorer was not able to open this Internet Site. The requested site
+  is either unavailable or cannot be found. Please try again later."
+
+Note:This problem is not reproducible with any other known file types.
+
+CAUSE
+=====
+
+This behavior occurs when the Content Expiration option in the Hypertext
+Transfer Protocol (HTTP) Headers, within IIS, is set to Expire Immediately.
+Internet Explorer must save any Microsoft Office file to the local cache
+directory, and then use the associated application to open the file. If you set
+Content Expiration to Expire Immediately, the Office documents are not cached
+locally and the operation fails.
+
+RESOLUTION
+==========
+
+When you configure the HTTP Headers within IIS for the Virtual Directory (or for
+the Directory) that contains Office documents, do not set Content Expiration to
+Expire Immediately.
+
+MORE INFORMATION
+================
+
+This is a known cause of slow performance on a Web server running IIS.
+This is not a best practice.
+
+Additional query words: iis 5 internet explorer 6 content expiration expire immediate immediately
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbOSWin2000 kbiisSearch kbIEsearch kbIE600Search kbiis500 kbIE2000Search kbIE600Win2000 kbiis510
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

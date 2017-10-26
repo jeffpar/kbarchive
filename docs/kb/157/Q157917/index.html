@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157917/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157917/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157917/","publisher":null,"image":null,"headline":"Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157917-sms-pcm-windows-95-setup-error-corrupt-cab-file">Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157917
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:95; winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork kbPCM smspcm
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you distribute a Windows 95 upgrade package, the following dialog box
+appears when setup is 15 percent through the copy list:
+
+  Setup has detected a corrupt setup (CAB) file.
+  Setup cannot continue.
+  Click OK to continue.
+
+After the message, an error reading disk 2 is reported.
+
+WORKAROUND
+==========
+
+If you must use a custom INF, make a backup copy of the Systems Management
+Server Win95.inf, and save your INF file as Win95.inf. Make sure the
+installation works completely without Systems Management Server before
+disturbing the Windows 95 install package.
+
+Systems Management Server expects to find the Win95.inf file in the &lt;Systems
+Management Server root&gt;\Logon.srv\Mstest directory. If the INF file is not in
+this location, setup will not be able to find and use it.
+
+MORE INFORMATION
+================
+
+The Systems Management Server 1.1 FAQ and the Systems Management Server 1.2
+documentation discuss in greater detail when to use Win95.inf, Win95min.inf or
+Msbatch.inf. Depending on whether you created the package source by running
+NETSETUP or by simply copying the CAB files, you must use the Win95.inf file as
+a parameter to the setup process. A NETSETUP install does not allow you to
+provide INF files with alternative names, and will produce the error described
+above if a custom INF file name is supplied. The default Windows 95
+configuration file is Msbatch.inf.
+
+Additional query words: prodsms win95 w95 command manager cabinet
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : WINDOWS:95; winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

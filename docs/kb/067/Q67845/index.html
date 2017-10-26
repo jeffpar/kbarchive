@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67845/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67845/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67845/","publisher":null,"image":null,"headline":"Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67845-calling-a-dll-written-for-windows-from-a-tsr-for-ms-dos">Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67845
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A TSR (terminate-and-stay-resident) program running under MS-DOS can call a
+dynamic-link library (DLL) written for the Microsoft Windows environment. This
+is possible by using the Interrupt 2Fh services provided by Windows and the
+MS-DOS Protected Mode Interface (DPMI).
+
+MORE INFORMATION
+================
+
+To call the TSR program, an application can use the DPMI Simulate Real Mode
+Interrupt function or the DPMI Call Real Mode Procedure function with a FAR
+return frame.
+
+To call a DLL from a TSR, perform the following four steps:
+
+1. Design the function to be called from the TSR similar to an interrupt service
+  routine (ISR), and put it into a DLL. The module definition (DEF) file for
+  the DLL must contain the statement CODE PRELOAD FIXED. Here is a code
+  fragment for a callback function:
+
+      ; My callback code in a CODE PRELOAD FIXED Windows DLL
+     ;
+     ; Note:  The real mode CS:IP in the real mode CallStruct must
+     ;        be fixed up for IRET to work correctly, as shown below:
+
+     My_Call_Back:                         ; The real mode callback entry
+
+        ;==========================================================
+        ; On entry to this routine:
+        ;
+        ;   DS:SI -&gt; Real mode SS:SP
+        ;   ES:DI -&gt; Real mode call structure
+        ;   Interrupts disabled
+        ;
+        ; On exit:
+        ;   ES:DI -&gt; Real mode call structure
+        ;==========================================================
+
+        call     Do_It                     ; Function that handles
+                                           ; the callback
+
+        cld
+        lodsw                              ; Get real mode IP from stack
+        mov      WORD PTR es:[di+2Ah], ax  ; Store IP in call struc
+        lodsw                              ; Get real mode CS from stack
+        mov      WORD PTR es:[di+2Ch], ax  ; Store CS in call struc
+        add      WORD PTR es:[di+2Eh], 4   ; Bump real mode SP past CS:IP
+
+        iret                               ; Exit My_Call_Back
+
+2. Use the DPMI Allocate Real Mode callback function to set up a callback
+  address to the function, as follows:
+
+       mov      ax, 0303h               ; Allocate real mode callback
+                                         ; address
+        push     ds
+        push     cs
+        pop      ds
+        mov      si, OFFSET My_Call_Back
+        pop      es
+        mov      di, OFFSET MyRMCS       ; Offset of real mode call
+                                         ;   structure, used for DPMI
+                                         ;   translation services
+                                         ;   (see Chapter 11 of the
+                                         ;   INTEL DPMI Spec. v 0.9)
+
+        int      31h                     ; Call DPMI
+
+        jc       CB_Error                ; If carry set, call failed
+        jmp      Set_CB_Addr
+
+     CB_Error:
+        mov      ax, 1
+        jmp      Set_CB_Exit
+
+     Set_CB_Addr:
+        mov      WORD PTR CB_Addr+2, cx   ; Store SEG:OFF of callback
+        mov      WORD PTR CB_Addr, dx     ;   address in local variable
+
+     Set_CB_Exit :                        ; Exit
+
+3. Pass the real mode callback address, returned from the code above, to the TSR
+  and store it, as follows:
+
+     ; Call the TSR, passing the real mode callback in BX:CX
+
+     Notify_TSR:
+
+        mov      bx, WORD PTR CB_Addr+2    ; Real mode callback seg
+        mov      cx, WORD PTR CB_Addr      ; Real mode callback off
+        mov      ax, 8F00h                 ; ID and function number
+        int      TSR_Int_No
+
+        cmp      al, 00h
+        jz       Notify_Success
+
+     Notify_Failure:
+        mov      al, 1                     ; Return failure in AL
+
+     Notify_Success:
+
+4. When it is time for the TSR to call the DLL, use Interrupt 2Fh to determine
+  whether the current virtual machine (VM) is VM 1 (the Windows VM). If it is,
+  use the assembly language statement CALL DWORD PTR dwCallBackAddr to call the
+  real mode callback address. If the current VM is not VM 1, use the Interrupt
+  2Fh service Switch VMs and Callback (Function 1685h). Specify the real mode
+  callback address stored in the TSR in step 3 above for the ES:BX value in the
+  call.
+
+     ;
+     ; Code in TSR, which is loaded before Windows
+     ;
+
+     Call_DLL_Entry:
+
+        mov      ax, 1683h                 ; Windows Interrupt 2Fh
+        int      2Fh                       ;    (Get Current VM)
+
+        cmp      bx, 1                     ; Windows is always VM 1
+                                           ; (version 3.0 *ONLY*)
+        jz       Call_DLL                  ; We're in Windows VM
+
+     Switch_VMs_And_Call_DLL:              ; We're not in Windows VM
+
+        mov      ax, 1685h                 ; Windows Interrupt 2Fh
+                                           ;   switch VMs and callback
+        mov      bx, 1                     ; Windows 3.0 is always VM 1
+        mov      cx, 0                     ; All flags off
+        mov      dx, 0                     ; Priority boost not required
+        mov      si, 0                     ;
+        mov      di, seg SwitchProc        ; Segment of switch procedure
+        mov      es, di                    ;
+        mov      di, offset SwitchProc     ; Offset of switch procedure
+        int      2Fh                       ;
+
+        jnc      My_1685h_Success
+
+     My_1685h_Error:
+
+        ; AX = error code:   1 = Invalid VM ID
+        ;                    2 = Invalid priority boost
+        ;                    3 = Invalid flags
+
+        .
+        .
+        .
+
+        jmp      Call_DLL_Exit
+
+     My_1685h_Success:
+
+          mov     ax, 0
+          jmp     Call_DLL_Exit
+
+     Call_DLL:
+
+        Call     DWORD PTR CB_Addr          ; FAR CALL to real mode
+                                            ;   callback
+
+     Call_DLL_Exit:
+
+        .
+        .
+        .
+
+        iret                               ; return to caller or
+                                           ;   hardware interrupt
+
+     SwitchProc proc
+
+        pusha
+        push    ds
+        push    es
+
+        call    DWORD PTR CB_Addr          ; FAR CALL to real mode
+                                           ;   callback
+        pop     es
+        pop     ds
+        popa
+
+        iret                               ; Switches back to VM from
+                                           ;   which it was called
+
+     SwitchProc endp
+
+The four steps above allocate a unique procedure callback address and pass it to
+the TSR, which stores the address. When the TSR calls the DLL, if the Windows
+virtual machine (VM) is running, the TSR calls the callback address directly.
+Otherwise, the TSR calls the Switch VMs and Callback function to schedule the
+Windows virtual machine. One parameter for this function is the address to call
+once the requested VM is running.
+
+In this case, the Windows scheduler switches VMs, then it calls the SwitchProc
+function in the TSR. When SwitchProc calls the routine in the DLL that
+corresponds to the allocated real mode callback address, the DLL receives
+control to perform its processing.
+
+Once the DLL completes its processing, it executes an IRET instruction to return
+control to the SwitchProc. Then SwitchProc itself executes an IRET instruction.
+At this point, the Windows scheduler switches back to the VM from which it was
+called.
+
+All Interrupt 2Fh functions are documented in Appendix C of the "Microsoft
+Windows Device Driver Kit: Device Driver Adaptation Guide" for Windows 3.1 and
+in Appendix D of the "Microsoft Windows Device Development Kit Virtual Device
+Adaptation Guide" for Windows 3.0.
+
+DPMI (Interrupt 31h) services are documented in the Intel document "MS-DOS
+Protected Mode Interface Specification." A paper copy of the DPMI specification
+is available free of charge from Intel Literature. In the United States, contact
+Intel at (800) 548-4725. Outside the US, contact the Intel distributor for your
+country.
+
+Additional query words: 3.00 3.10 DDKDPMI DDKTSR
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

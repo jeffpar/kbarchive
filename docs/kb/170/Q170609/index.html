@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170609/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170609/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170609/","publisher":null,"image":null,"headline":"Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170609-fix-putfile-command-to-drive-a-without-a-floppy-causes-fault">Q170609: FIX: PUTFILE Command to Drive "A" Without a Floppy Causes Fault</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170609
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kberrmsg kbvfp
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a PUTFILE command to Drive "A" without having a floppy disk in that
+drive causes an Invalid Page Fault in Visual FoxPro 5.0 and 5.0a.
+
+RESOLUTION
+==========
+
+Do not specify a drive letter in the PUTFILE command and allow the drive to be
+selected from the SAVE AS dialog box.
+
+NOTE: This is not the best remedy for this problem but it does prevent the
+Invalid Page Fault and subsequent closing of Visual FoxPro. The Invalid Page
+Fault does not occur in Visual FoxPro 3.0b.
+
+A better alternative to receiving the Invalid Page Fault is to verify whether the
+floppy drive has a disk in it prior to issuing the PUTFILE command. The
+following code is a function to which you pass to drive letter that is checked.
+The function returns a True (.T.) if there is a disk in the drive and a False
+(.F.) if the drive is empty.
+
+     **********************************************************
+     * FUNCTION isdiskin
+     **********************************************************
+     *
+     * Passed  - drive root specification, such as "A:\", "B:\", etc
+     * Returns - logical .T., .F. depending on whether drive exists
+     *
+     * Usage -
+     * ? isdiskin("A:\")
+     *
+     * Any drive formatted with an MS operating system &gt; DOS 3.3 will
+     * have a nonzero volume serial number. If the specified drive
+     * doesn't exist, it will return a 0 volume serial number. So,
+     * GetVolumeInformation() can function as a  replacement
+     * for the old IsDiskIn.Bin that used to ship with FoxPro for DOS.
+      PARAMETERS m.rootpath
+
+     DECLARE GetVolumeInformation IN win32api STRING, STRING @, ;
+         INTEGER, INTEGER @, INTEGER @, INTEGER @, STRING @, INTEGER
+
+     m.volname = SPACE(255)
+     m.volnamelen = LEN(m.volname)
+     m.volumeserialnumber = 0
+     m.maxfilenamelen = 0
+     m.filesystemflags = 0
+     m.filesystemname = SPACE(255)
+     m.fsnamelen = LEN(m.filesystemname)
+
+     =GetVolumeInformation(m.rootpath, @m.volname, m.volnamelen, ;
+         @m.volumeserialnumber, @m.maxfilenamelen, ;
+         @m.filesystemflags, @m.filesystemname, m.fsnamelen)
+      IF m.volumeserialnumber = 0
+        RETURN .F.
+     ELSE
+        RETURN .T.
+     ENDIF
+
+
+Another resolution to the Invalid Page Fault problem is to issue a
+DISKSPACE("A"). This command returns a -1 if there is no disk in Drive "A" and
+returns some number greater than -1 if there is a disk in Drive "A."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro 5.x, if the following code is issued and there is no floppy
+disk in the "A" drive, an Invalid Page Fault occurs and Visual FoxPro closes:
+
+     ? PUTFILE("Label File","A:\test","dbf")
+
+The following error message appears in Windows 95:
+
+  This program has performed an illegal operation and will be shut down.
+
+Clicking Details reveals the following message:
+
+  VFP caused an invalid page fault in module &lt;module name&gt; at &lt;memory
+  address&gt;.
+
+In Windows NT 4.0, the following error appears:
+
+  An application error has occurred and an application error log is being
+  generated.
+  VFP.exe
+  Exception: access violation &lt;error number&gt;, Address: &lt;memory
+  address&gt;.
+
+The operating system then closes Visual FoxPro.
+
+If the PUTFILE function is issued without specifying a drive letter, the Invalid
+Page Fault does not occur. A "SAVE AS" dialog box appears and if the "A" drive
+is selected and does not contain a floppy disk, the following non-fatal error
+message is issued:
+
+  A:\ is not accessible. The device is not ready.
+
+REFERENCES
+==========
+
+Visual FoxPro Help
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

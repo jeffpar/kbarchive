@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131938/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131938/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131938/","publisher":null,"image":null,"headline":"Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131938-adt2-adt-setup-errors-caused-by-invalid-application-name">Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131938
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 25-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you run the Microsoft Access Developer's Toolkit (ADT) Setup Wizard to
+create a custom Setup program, you may encounter one of the following problems:
+
+- The Setup Wizard (SETUPWIZ.MDB) does not create your distribution disks and
+  you receive the following error message:
+
+  convertReference: Unable to find
+
+- The Setup program (SETUP.EXE) does not install your application and you
+  receive the following three consecutive error messages:
+
+   - 
+
+  Bad Setup version field.
+
+   - 
+
+  Processing Top Level information failed.
+
+   - 
+
+  Setup was not completed successfully.
+
+- The Setup program (SETUP.EXE) truncates the bottom line of your application
+  name in the "Welcome to" information that appears on the first Setup screen.
+
+CAUSE
+=====
+
+In the Setup Wizard's "What is the name of your application?" box, you included
+an exclamation point (!), a quotation mark ("), or a comma (,), or your
+application name is approximately 30 characters long. The Setup Wizard does not
+alert you that you are entering invalid characters or that your application name
+may be truncated.
+
+NOTE: Although the application name can be up to 30 characters long, when the
+application is set up on a computer (computer 1) whose font size is larger than
+the font size of the computer (computer 2) on which the application was created,
+or if the monitor resolution of computer 1 is lower than the monitor resolution
+of computer 2, the application name may be truncated.
+
+RESOLUTION
+==========
+
+To work around this problem, in the Setup Wizard, enter an application name with
+fewer characters or enter an application name that does not contain invalid
+characters. A valid application name can be up to approximately 30 characters
+long (see the note in the "Cause" section) and can consist of letters, numbers,
+and all punctuation marks except the exclamation point (!), the comma (,) and
+the quotation mark (").
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access version 2.0.
+This problem no longer occurs in Microsoft Access for Windows 95 version 7.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the ADT Setup Wizard to create your custom Setup program.
+
+2. When you reach the "What is the name of your application?" box, type the
+  following name:
+
+  "Test ! Character" (without the quotation marks)
+
+3. Continue through the Setup Wizard. Note that when the Setup Wizard begins to
+  create the distribution disks, you receive the following error message:
+
+  convertReference: Unable to find
+
+4. Run the Setup Wizard again, but this time type the following name in the
+  "What is the name of your application?" box:
+
+  " Test " Character" (without the quotation marks)
+
+5. Continue through the Setup Wizard and create the distribution disks.
+
+6. Run the Setup program for you custom application. Note that you receive the
+  following three consecutive error messages:
+
+   - 
+
+  Bad Setup version field
+
+   - 
+
+  Processing Top Level information failed.
+
+   - 
+
+  Setup was not completed successfully.
+
+REFERENCES
+==========
+
+Microsoft Access Developer's Toolkit "Advanced Topics," version 2.0, Chapter 2,
+"Creating a Custom Setup Program," pages 19-31
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

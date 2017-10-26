@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q29843: C 5.10 MTDYNA.DOC: Creating an MTDYNA Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q29843: C 5.10 MTDYNA.DOC: Creating an MTDYNA Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/029/Q29843/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/029/Q29843/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/029/Q29843/","publisher":null,"image":null,"headline":"Q29843: C 5.10 MTDYNA.DOC: Creating an MTDYNA Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q29843-c-510-mtdynadoc-creating-an-mtdyna-library">Q29843: C 5.10 MTDYNA.DOC: Creating an MTDYNA Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q29843
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 15-JAN-1991
+
+The following information is from "Section 5: Creating Dynamic-Link
+Libraries" of the Microsoft C version 5.10 MTDYNA.DOC file.
+
+5.2.2   Creating a Multiple-Thread Dynamic-Link Library
+
+The process of creating a multiple-thread dynamic-link library is
+outlined below. The process of creating a multiple-thread dynamic-link
+library is also contained in the file CDLLOBJS.CMD.
+
+1. Create a definition file that specifies the exports from the C
+   run-time library for the dynamic-link library. The file
+   CDLLOBJS.DEF, which is included in this release, is a sample
+   definition file that includes all of the C run-time functions
+   currently supported.
+
+2. Link the special start-up file CRTLIB.OBJ with CDLLOBJS.LIB,
+   DOSCALLS.LIB, and the definition file (CDLLOBJS.DEF) from step 1.
+   This creates a customized C run-time dynamic-link library file
+   (named CRTLIB.DLL). The following files are linked together:
+
+      crtlib.obj     Start-up code for library files
+      cdllobjs.lib   C run-time library objects
+      doscalls.lib   OS/2 support library
+      cdllobjs.def   Definition module from step 1
+      crtlib.dll     Output from LINK
+
+The command to accomplish this is shown below:
+
+link crtlib.obj,crtlib.dll/noi,,cdllobjs.lib doscalls.lib/nod/noe,cdllobjs.de
+
+3. Run IMPLIB on the definition file from step 1 to create a
+   customized library file (CRTLIB.LIB) containing the exported
+   functions. The command is shown below:
+
+      implib crtlib.lib cdllobjs.def
+
+4. Use the Microsoft Library Manager (LIB) to append CDLLSUPP.LIB to
+   the customized library created in step 3. The file CDLLSUP.LIB
+   contains a few small routines that cannot be dynamically linked
+   because they are called near. The LIB program automatically creates
+   a back-up file (with a .BAK extension), which can be deleted. The
+   command for this step is shown below:
+
+      lib crtlib.lib+cdllsupp.lib;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

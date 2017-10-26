@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77463: ‘INVALID PATH’ Message Following ‘DISK IS FULL’ Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77463: ‘INVALID PATH’ Message Following ‘DISK IS FULL’ Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77463/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77463/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77463/","publisher":null,"image":null,"headline":"Q77463: ‘INVALID PATH’ Message Following ‘DISK IS FULL’ Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77463-invalid-path-message-following-disk-is-full-message">Q77463: ‘INVALID PATH’ Message Following ‘DISK IS FULL’ Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77463
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the MS-DOS Shell COPY command to copy a file or files to a disk,
+the following message may be displayed:
+
+  DISK IS FULL
+
+This message indicates that the destination disk is full. If you replace the disk
+with a new disk and then continue the COPY operation, the following error
+message is displayed:
+
+  INVALID PATH
+
+This message is located in the Copy File window. This window also gives the
+following options:
+
+- Skip this file or directory and continue.
+
+-or-
+
+- Try this file or directory again.
+
+This message persists if you make any attempt to copy other file(s) to the new
+disk.
+
+WORKAROUND
+==========
+
+1. Record which file(s) was not copied and CANCEL the operation. You can then
+  recopy the recorded file(s) (that is, the file(s) that was not copied
+  previously) onto the new disk.
+
+2. If you want to copy all the files in a certain subdirectory, do the
+  following:
+
+  a. Cancel the operation and return to MS-DOS.
+
+  b. Use the ATTRIB command to add the archive attribute to all the files
+     located in the specific directory. For example:
+
+  attrib +a *.*
+
+  c. Use the XCOPY command (with the /M switch) to copy all the files in the
+     specific subdirectory to the destination disk. For example:
+
+  xcopy *.* /m &lt;destination&gt;
+
+     where &lt;destination&gt; identifies the destination disk.
+
+  The XCOPY /M command copies all of the files with the archive attribute to the
+  destination disk. As the files are copied, archive attributes are removed, so
+  the original and copied file do not have the archive attribute.
+
+  NOTE: The reason this can be an effective workaround is because as XCOPY
+  copies the files from the subdirectory to the destination disk, it removes
+  the archive attribute, so when the destination disk becomes full and the
+  "Disk is Full" message occurs, you simply need to reenter the XCOPY *.* /M
+  &lt;destination&gt; command. This command only copies those files that still
+  have the archive attribute, (that is, those files in the subdirectory that
+  have not yet been copied to the destination disk).
+
+
+Additional query words: 5.00 5.00a 6.00 errmsg err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

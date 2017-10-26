@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295398: PRB: Error in Remote View Wizard When Connecting to DB2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295398: PRB: Error in Remote View Wizard When Connecting to DB2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295398/","publisher":null,"image":null,"headline":"Q295398: PRB: Error in Remote View Wizard When Connecting to DB2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295398-prb-error-in-remote-view-wizard-when-connecting-to-db2">Q295398: PRB: Error in Remote View Wizard When Connecting to DB2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295398
+Product(s): Microsoft FoxPro
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbwizard kbDatabase kbvfp kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport
+Last Modified: 12-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Visual FoxPro Remote View Wizard to connect to a DB2 database
+using the DB2 Run-time Client driver version 7.01, the following error message
+may appear after choosing the DB2 ODBC data source:
+
+  The Remote View Wizard was unable to obtain column information for this
+  remote table. This may be the result of an ODBC error or the remote table may
+  not be owned by the current user or the table doesn't have columns.
+
+Note that this error may also occur with the 7.01 versions of the Administration
+Client and the Application Development Client driver.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following three options:
+
+- Create the remote view using the View Designer.
+
+- Create the remote view using SQLPassThrough code.
+
+- Use the 6.01 version of the DB2 driver.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install version 7.01 of the DB2 Run-time ODBC driver.
+
+2. Create a database container. Choose New Remote View from the Database menu
+  pad.
+
+3. In the New Remote View dialog box, click View Wizard.
+
+4. In the Available Data Sources list box, select the ODBC data source for your
+  DB2 Server and click Next.
+
+The error listed in the "Symptoms" section appears. Although the Remote View
+Wizard continues to step 2, clicking any field causes the error to reappear.
+
+REFERENCES
+==========
+
+For additional information on creating a remote view using SQL passthrough,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q138094 How to Create Updatable Views by Using SQL Passthrough
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbDatabase kbvfp kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

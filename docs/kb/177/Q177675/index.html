@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177675: SMS: Inventory Based on String Value at Offset Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177675: SMS: Inventory Based on String Value at Offset Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177675/","publisher":null,"image":null,"headline":"Q177675: SMS: Inventory Based on String Value at Offset Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177675-sms-inventory-based-on-string-value-at-offset-incorrect">Q177675: SMS: Inventory Based on String Value at Offset Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q177675</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms120</span> <span class="n">kbsms120bug</span> <span class="n">kbInventory</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">specifying</span> <span class="n">a</span> <span class="k">string</span> <span class="n">pattern</span> <span class="n">at</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">offset</span> <span class="n">for</span> <span class="n">a</span> <span class="n">file</span> <span class="n">that</span> <span class="n">is</span> <span class="n">being</span>
+<span class="n">inventoried</span><span class="p">,</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Software</span> <span class="n">Inventory</span> <span class="n">Agent</span> <span class="n">counts</span> <span class="n">a</span>
+<span class="k">package</span> <span class="k">as</span> <span class="n">inventory</span> <span class="n">even</span> <span class="k">if</span> <span class="n">the</span> <span class="n">specified</span> <span class="k">string</span> <span class="n">pattern</span> <span class="n">does</span> <span class="k">not</span> <span class="n">match</span> <span class="n">at</span> <span class="n">the</span>
+<span class="n">offset</span> <span class="n">specified</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">file</span> <span class="nb">exists</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">is</span> <span class="n">still</span> <span class="n">counted</span> <span class="k">as</span>
+<span class="n">inventory</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">A</span> <span class="n">supported</span> <span class="n">fix</span> <span class="n">is</span> <span class="n">now</span> <span class="n">available</span> <span class="k">from</span> <span class="n">Microsoft</span><span class="p">,</span> <span class="n">but</span> <span class="n">it</span> <span class="n">is</span> <span class="n">only</span> <span class="n">intended</span> <span class="k">to</span>
+<span class="n">correct</span> <span class="n">the</span> <span class="n">problem</span> <span class="n">that</span> <span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span> <span class="n">Only</span> <span class="n">apply</span> <span class="n">it</span> <span class="k">to</span> <span class="n">systems</span>
+<span class="n">that</span> <span class="n">are</span> <span class="n">experiencing</span> <span class="n">this</span> <span class="n">specific</span> <span class="n">problem</span><span class="p">.</span> <span class="n">This</span> <span class="n">fix</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">additional</span>
+<span class="n">testing</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">are</span> <span class="k">not</span> <span class="n">severely</span> <span class="n">affected</span> <span class="n">by</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">Microsoft</span>
+<span class="n">recommends</span> <span class="n">that</span> <span class="n">you</span> <span class="nf">wait</span> <span class="n">for</span> <span class="n">the</span> <span class="k">next</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">service</span> <span class="n">pack</span>
+<span class="n">that</span> <span class="n">contains</span> <span class="n">this</span> <span class="n">fix</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span> <span class="n">immediately</span><span class="p">,</span> <span class="n">contact</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span>
+<span class="k">to</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">fix</span><span class="p">.</span> <span class="n">For</span> <span class="n">a</span> <span class="n">complete</span> <span class="k">list</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span>
+<span class="n">phone</span> <span class="n">numbers</span> <span class="k">and</span> <span class="n">information</span> <span class="n">about</span> <span class="n">support</span> <span class="n">costs</span><span class="p">,</span> <span class="n">visit</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span>
+<span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">support</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">default</span><span class="p">.</span><span class="n">aspx</span><span class="p">?</span><span class="n">scid</span><span class="p">=</span><span class="n">fh</span><span class="p">;</span><span class="n">EN</span><span class="p">-</span><span class="n">US</span><span class="p">;</span><span class="n">CNTACTMS</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">In</span> <span class="n">special</span> <span class="n">cases</span><span class="p">,</span> <span class="n">charges</span> <span class="n">that</span> <span class="n">are</span> <span class="n">ordinarily</span> <span class="n">incurred</span> <span class="n">for</span> <span class="n">support</span> <span class="n">calls</span>
+<span class="n">may</span> <span class="n">be</span> <span class="n">canceled</span> <span class="k">if</span> <span class="n">a</span> <span class="n">Microsoft</span> <span class="n">Support</span> <span class="n">Professional</span> <span class="n">determines</span> <span class="n">that</span> <span class="n">a</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="n">will</span> <span class="n">resolve</span> <span class="n">your</span> <span class="n">problem</span><span class="p">.</span> <span class="n">The</span> <span class="n">usual</span> <span class="n">support</span> <span class="n">costs</span> <span class="n">will</span> <span class="n">apply</span> <span class="k">to</span>
+<span class="n">additional</span> <span class="n">support</span> <span class="n">questions</span> <span class="k">and</span> <span class="n">issues</span> <span class="n">that</span> <span class="k">do</span> <span class="k">not</span> <span class="n">qualify</span> <span class="n">for</span> <span class="n">the</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="k">in</span> <span class="n">question</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">English</span> <span class="k">version</span> <span class="k">of</span> <span class="n">this</span> <span class="n">fix</span> <span class="n">should</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">file</span> <span class="n">attributes</span> <span class="k">or</span>
+<span class="n">later</span><span class="p">:</span>
+
+  <span class="n">Date</span>     <span class="n">Time</span>        <span class="n">Size</span>            <span class="n">File</span> <span class="n">name</span>      <span class="n">Platform</span>
+  <span class="p">------------------------------------------------------------</span>
+  <span class="m">3</span><span class="p">/</span><span class="m">2</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">03</span><span class="n">PM</span>      <span class="m">283</span><span class="p">,</span><span class="m">104</span> <span class="n">bytes</span>   <span class="n">Inv32cli</span><span class="p">.</span><span class="n">exe</span>   <span class="n">Intel</span>
+  <span class="m">3</span><span class="p">/</span><span class="m">1</span><span class="p">/</span><span class="m">99</span>   <span class="m">7</span><span class="p">:</span><span class="m">08</span><span class="n">PM</span>      <span class="m">296</span><span class="p">,</span><span class="m">368</span> <span class="n">bytes</span>   <span class="n">Invwin32</span><span class="p">.</span><span class="n">exe</span>   <span class="n">Intel</span>
+
+  <span class="m">3</span><span class="p">/</span><span class="m">2</span><span class="p">/</span><span class="m">99</span>   <span class="m">1</span><span class="p">:</span><span class="m">06</span><span class="n">PM</span>      <span class="m">866</span><span class="p">,</span><span class="m">576</span> <span class="n">bytes</span>   <span class="n">Inv32cli</span><span class="p">.</span><span class="n">exe</span>   <span class="n">Alpha</span>
+  <span class="m">3</span><span class="p">/</span><span class="m">1</span><span class="p">/</span><span class="m">99</span>   <span class="m">7</span><span class="p">:</span><span class="m">18</span><span class="n">PM</span>      <span class="m">882</span><span class="p">,</span><span class="m">960</span> <span class="n">bytes</span>   <span class="n">Invwin32</span><span class="p">.</span><span class="n">exe</span>   <span class="n">Alpha</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Due</span> <span class="k">to</span> <span class="n">file</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">the</span> <span class="n">most</span> <span class="n">recent</span> <span class="n">hotfix</span> <span class="k">or</span> <span class="n">feature</span> <span class="n">that</span> <span class="n">contains</span>
+<span class="n">the</span> <span class="n">above</span> <span class="n">files</span> <span class="n">may</span> <span class="n">also</span> <span class="n">contain</span> <span class="n">additional</span> <span class="n">files</span><span class="p">.</span>
+
+
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="k">do</span> <span class="k">not</span> <span class="n">use</span> <span class="n">the</span> <span class="k">string</span> <span class="n">property</span> <span class="k">in</span> <span class="n">a</span> <span class="k">package</span><span class="s1">'s
+inventory rules. Use other properties instead to determine package inventory,
+such as file date, size, or checksum.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug kbInventory 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

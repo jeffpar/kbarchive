@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180028: PRB: DBC With Stored Procedure Produces Error When Opened | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180028: PRB: DBC With Stored Procedure Produces Error When Opened" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180028/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180028/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180028/","publisher":null,"image":null,"headline":"Q180028: PRB: DBC With Stored Procedure Produces Error When Opened","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180028-prb-dbc-with-stored-procedure-produces-error-when-opened">Q180028: PRB: DBC With Stored Procedure Produces Error When Opened</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180028
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp kbvfp500 kbvfp500a kbvfp600
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a database container (dbc) that contains stored
+procedures, the following error can occur:
+
+  Object file c:\&lt;dbcname&gt;.dbc was compiled in a previous version of
+  FoxPro.
+
+RESOLUTION
+==========
+
+1. Duplicate the database container copying all the files into a new database
+  container in another folder. This includes files with a .dbc, .dct, and .dcx
+  extension.
+
+2. On the development computer used for building executable files for remote
+  sites, open the new database container with the newer version of Visual
+  FoxPro. The database container now converts automatically.
+
+3. Run the program named Gendbc.prg located in the \Vfp\Tools\Gendbc folder.
+  Select the .dbc file in question and remember the name and location of the
+  output .prg file it creates.
+
+4. Open the .prg file created by Gendbc.prg and copy the code that resembles the
+  code below.
+
+  NOTE: In the following code Test.krt and Test.dbc should be replaced with the
+  name that you gave the .prg file and the .dbc file.
+
+        ********* Procedure Re-Creation *********
+        IF !FILE([Test.krt])
+           ? [Warning! No Procedure File Found!]
+        ELSE
+           CLOSE DATABASE
+           USE 'test.dbc'
+           g_SetSafety = SET('SAFETY')
+           SET SAFETY OFF
+           LOCATE FOR Objectname = 'StoredProceduresSource'
+              IF FOUND()
+                 APPEND MEMO Code FROM [Test.krt] OVERWRITE
+                 REPLACE Code WITH SUBSTR(Code, 70, 66)
+              ENDIF
+           LOCATE FOR Objectname = 'StoredProceduresObject'
+              IF FOUND()
+                 APPEND MEMO Code FROM [Test.krt] OVERWRITE
+                 REPLACE Code WITH SUBSTR(Code, 136)
+              ENDIF
+        SET SAFETY &amp;g_SetSafety
+        USE
+        OPEN DATABASE [Test.dbc]
+        ENDIF
+
+5. Make a project and then create a .prg file within the project and paste the
+  code copied from step 4 into the .prg file.
+
+6. Build an executable making sure that the file with the .krt extension, which
+  was created by the Gendbc program, is placed in the folder with the database
+  container that needs to be converted.
+
+7. When you run the executable in the folder where the old database container is
+  located, the executable places the code from the .krt file into the memo
+  field of the database container that needs conversion. When you run the
+  executable that opens the database container, the .dbc file should open
+  correctly.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This error occurs when the database container contains stored procedure code and
+you attempt to open the database container with an executable that was created
+with a version of Visual FoxPro older than the version used to create the
+database container.
+
+The newer version of Visual FoxPro must compile the stored procedure code in the
+database container. This allows the database container to open properly. If the
+database container does not have any stored procedure code, it can be opened
+without an error because conversion is not needed.
+
+If you open the database container in the development environment of the newer
+version of Visual FoxPro, then the stored procedure code is compiled
+automatically and the error does not occur.
+
+The error can be eliminated by opening the database container in the development
+environment of the newer version of Visual FoxPro. However, this presents a
+problem for database containers that are at a remote site where a newer version
+of a Visual FoxPro run-time executable is shipped. Since the development
+environment of Visual FoxPro is not available, the executable cannot
+automatically compile the stored procedure code and the COMPILE DATABASE command
+returns a "Feature not available" error message when used.
+
+You can create a separate executable to convert the database container by
+following the steps in the RESOLUTION section.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a database container in Visual FoxPro 3.x by typing the following in
+  the FoxPro Command window:
+
+        CREATE DATABASE old_vfp
+
+2. Next, in the Command window type:
+
+        MODIFY DATA
+
+3. Click the right mouse button (called right-click) while the mouse pointer is
+  in the database container. Select the New Table menu option to build a new
+  table called OLD_TABLE in the database container.
+
+4. Add a couple of fields to the table, save the table, and then add a couple of
+  records to the table.
+
+5. From the Visual FoxPro menu bar, select the Database menu option and choose
+  the Edit Stored Procedures menu bar. Type the following:
+
+        PROCEDURE my_proc
+        WAIT WINDOW "In my Stored Procedure"
+
+6. Create a project in the newer version of Visual FoxPro and add a .prg file
+  with the following code:
+
+        OPEN DATABASE old_vfp
+        USE old_table
+        BROWSE
+
+7. Select the Build button on the project to create an executable file. Place
+  the executable file in the same folder that contains the database container
+  and run the program outside the Visual FoxPro environment.
+
+  The error "Feature not available" appears.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

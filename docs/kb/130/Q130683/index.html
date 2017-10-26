@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130683: How to Create a General Purpose Reusable Navigation Toolbar | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130683: How to Create a General Purpose Reusable Navigation Toolbar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130683/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130683/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130683/","publisher":null,"image":null,"headline":"Q130683: How to Create a General Purpose Reusable Navigation Toolbar","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130683-how-to-create-a-general-purpose-reusable-navigation-toolbar">Q130683: How to Create a General Purpose Reusable Navigation Toolbar</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130683
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create and use a general-purpose navigational
+Toolbar that has VCR-like icons on its buttons.
+
+MORE INFORMATION
+================
+
+Use the Visual Class Designer tool to create a general-purpose navigational
+Toolbar by creating a visual class based on the Toolbar base class. Then you
+need only add code to the individual buttons of this class, drop the class on a
+formset, and then run the formset upon starting Visual FoxPro to make the
+Toolbar accessible.
+
+Steps to Create Custom Toolbar
+------------------------------
+
+1. Choose New from the File menu, and select Visual Class as the file type.
+
+2. Use the Visual Class Designer to create a new class based on the Toolbar base
+  class. To this class, add four command buttons. Change the caption property
+  for each button to &lt;&lt;, &lt;, &gt;, and &gt;&gt;.
+
+3. Add the following code to the click method of each command button as
+  indicated:
+
+     Command1.Click (&lt;&lt;):
+
+        GO TOP
+
+     Command2.Click (&lt;):
+
+        SKIP -1
+        IF BOF()
+           GO TOP
+        ENDIF
+
+     Command3.Click (&gt;):
+
+        SKIP +1
+        IF EOF()
+           GO TOP
+        ENDIF
+
+     Command4.Click (&gt;&gt;):
+
+        GO BOTTOM
+
+4. Save this new class.
+
+5. Create a new form, and set the Visible property of the form to false (.F.).
+  If the visible property on the form is set to true (.T.), meaning that the
+  toolbar will be used as a navigation toolbar to move through records in a
+  form, add the command _SCREEN.ACTIVEFORM.REFRESH to the code of each one of
+  the command button's click events as the last line of code. Add the Toolbar
+  class you just created and save the form. Choose Yes when prompted to create
+  a formset. Confirm that the Visible property of the toolbar is set to true
+  (.T.).
+
+6. In the destroy procedure for the toolbar, place the following code to release
+  the Toolbar and Formset memory when the Toolbar is closed:
+
+     RELEASE THISFORMSET
+
+7. Run the form.
+
+The Toolbar should come up. Open a table, and note the record number in the
+status bar. Click the various buttons, and note where the record pointer moves
+by the watching the indicator on the status bar. The Toolbar can also be moved
+and docked.
+
+To open this Toolbar automaticaly when FoxPro starts, place the following line in
+the CONFIG.FPW file:
+
+     command= DO FORM &lt;PATH\FORM NAME&gt;
+
+Where PATH is the path to the location of this form and FORM NAME is the name of
+the form when saved. This will allow the Toolbar to be used with any open table.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

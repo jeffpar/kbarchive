@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95092: EMM386 Err Msg: Unable to Create Page Frame | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95092: EMM386 Err Msg: Unable to Create Page Frame" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95092/","publisher":null,"image":null,"headline":"Q95092: EMM386 Err Msg: Unable to Create Page Frame","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95092-emm386-err-msg-unable-to-create-page-frame">Q95092: EMM386 Err Msg: Unable to Create Page Frame</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95092
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:4.0,4.01,4.01a,4.0a,5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 4.0, 4.0a, 4.01, 4.01a, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If EMM386 is unable to find 64 kilobytes (K) of contiguous memory in the upper
+memory area, it cannot create an expanded memory page frame and displays the
+following error message:
+
+  Unable to create page frame
+
+WORKAROUND
+==========
+
+If do not want expanded memory for your system, you can substitute the NOEMS
+switch for the RAM switch in your EMM386 DEVICE command in CONFIG.SYS.
+
+However, if you do want expanded memory, you can try establishing a page frame in
+a portion of the upper memory area not normally used by EMM386. You can try
+putting the page frame in the E000 memory block by following these steps:
+
+Note: Do not try the following procedure if you have an IBM model PS/2 computer.
+
+1. To create a startup floppy disk, insert a floppy disk in drive A and type the
+  following:
+
+  " sys c: a:
+  copy c:\config.sys a:
+  copy c:\autoexec.bat a: " (without the quotation marks)
+
+  NOTE: If you are using MS-DOS 4.x you must also copy COMMAND.COM to drive a.
+  For example, type "copy c:\command.com a:" (without the quotation marks) at
+  the MS-DOS command prompt and then press ENTER.
+
+2. Edit your CONFIG.SYS file and modify the EMM386 DEVICE command to look like
+  this:
+
+  device=c:\dos\emm386 m9 ram
+
+3. Remove the floppy disk from drive A and restart your computer.
+
+Your computer should restart normally, and you should no longer receive the page
+frame error message. If you have problems starting your computer, insert the
+startup floppy in drive A, restart your computer and copy the CONFIG.SYS file
+from drive A to drive C.
+
+Additional query words: err msg 4.00 4.00a 5.00 5.00a 4.0 4.0a 4.01 4.01a
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:4.0,4.01,4.01a,4.0a,5.0,5.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

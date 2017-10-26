@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93114: DOCERR: HELP_PARTIALKEY Doesn’t List Topics in Dialog Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93114: DOCERR: HELP_PARTIALKEY Doesn’t List Topics in Dialog Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93114/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93114/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93114/","publisher":null,"image":null,"headline":"Q93114: DOCERR: HELP_PARTIALKEY Doesn’t List Topics in Dialog Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93114-docerr-help_partialkey-doesnt-list-topics-in-dialog-box">Q93114: DOCERR: HELP_PARTIALKEY Doesn’t List Topics in Dialog Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93114
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 20-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 987 of the Windows SDK "Programmer's Reference, Volume 2: Functions" manual
+incorrectly describes the HELP_PARTIALKEY command for the WinHelp API as:
+
+  Displays the topic found in the keyword list that matches the keyword passed
+  in the dwData parameter if there is one exact match. If there is more than
+  one match, displays the Search dialog box with the topics found listed in the
+  Go To list box.
+
+This statement is not correct.
+
+MORE INFORMATION
+================
+
+If the HELP_PARTIALKEY command is specified when calling the WinHelp API and
+more than one match exists, or if there is one exact match for the keyword but
+the keyword is defined for more than one topic, then the search dialog box is
+displayed. The Go To list box found in the Search dialog box does not display
+the topics as the documentation states.
+
+The first keyword that matches the dwData parameter is selected in the keyword
+combo box. If the keyword is an exact match, then the user should choose the
+Show Topics button to display the topics in the Go To list box. If there are
+multiple matches, then the user should decide which keyword is correct, select
+that keyword, and choose Show Topics in order to fill up the Go To list box.
+
+For example, if a Help file contains the following keywords
+
+  Rectangle
+  Stack
+  Stand
+  Start
+  Stop
+  Triangle
+
+and WinHelp is called using the HELP_PARTIALKEY command, with dwData pointing to
+a string containing "st", the Search dialog box will be displayed with the
+keyword "Stack" selected in the keyword combo box. The user must determine which
+of the keywords beginning with "st" is correct, select that keyword, and choose
+the Show Topics button, which causes the Go To list box to be filled.
+
+In this same example, if Stack is passed as a keyword, there is one exact match.
+If only one topic has Stack for a keyword, then that topic will be displayed in
+the Help engine. If multiple topics have Stack as a keyword, then the Search
+dialog box will be displayed with Stack selected in the keyword combo box, but
+the Go To list box will remain empty until the user chooses the Show Topics
+button. When this button is chosen, the Go To list box will be filled with the
+titles of the topics marked with the keyword Stack.
+
+Additional query words: 3.10 hc hcp listbox docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

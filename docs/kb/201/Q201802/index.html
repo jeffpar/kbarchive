@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201802/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201802/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201802/","publisher":null,"image":null,"headline":"Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201802-sms-supported-naming-conventions-for-nds-logon-point-creation">Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201802
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbNDS kbOSNovell
+Last Modified: 21-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For a Systems Management Server 2.0 site to successfully create a client access
+point (CAP) and logon point on a NetWare Directory Services (NDS) volume, there
+are certain naming conventions that must be followed. This article documents the
+required naming conventions.
+
+MORE INFORMATION
+================
+
+Tree Names
+----------
+
+The following apply to tree names:
+
+- The NDS tree can contain up to 32 ASCII characters. Accepted characters are
+  a-z, A-Z, 0-9, hyphen ("-"), and the underscore ("_").
+
+- The NDS tree can NOT start or end with an underscore character, nor can it
+  contain two consecutive underscores (__).
+
+- The NDS tree name can NOT contain any spaces.
+
+Container and Volume Names
+--------------------------
+
+The following apply to container and volume names:
+
+- They may not contain any of the following:
+
+   - Slashes ("/")
+
+   - Backslashes ("\")
+
+   - Colons (":")
+
+   - Commas (",")
+
+   - Asterisks ("*")
+
+   - Question marks ("?")
+
+- Object names are NOT case-sensitive.
+
+Distinguished Names
+-------------------
+
+The following apply to distinguished names:
+
+- Distinguished names MUST contain an Organization (O); this is the top level
+  of the Systems Management Server tree.
+
+- Use of the Country (C) in distinguished names is optional. If the C is used,
+  it cannot be longer than two characters.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodsms nwroles
+
+======================================================================
+Keywords          : kbNDS kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

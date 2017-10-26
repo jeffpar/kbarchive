@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316311/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316311/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316311/","publisher":null,"image":null,"headline":"Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316311-how-to-configure-a-mirror-set-on-windows-nt-server-40">Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q316311</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">4.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbenv</span> <span class="n">kbhw</span> <span class="n">kbtool</span> <span class="n">kbAudITPro</span> <span class="n">kbHOWTOmaster</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">10</span><span class="p">-</span><span class="n">APR</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+
+<span class="k">IN</span> <span class="n">THIS</span> <span class="n">TASK</span>
+<span class="p">------------</span>
+
+<span class="p">-</span> <span class="n">SUMMARY</span>
+
+   <span class="p">-</span> <span class="k">Requirements</span>
+<span class="p">-</span> <span class="n">Configuring</span> <span class="n">a</span> <span class="n">Mirror</span> <span class="k">Set</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="m">4.0</span> <span class="n">Computer</span>
+
+<span class="p">-</span> <span class="n">REFERENCES</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">step</span><span class="p">-</span><span class="n">by</span><span class="p">-</span><span class="n">step</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">mirror</span> <span class="k">set</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span>
+<span class="n">NT</span> <span class="n">Server</span> <span class="m">4.0</span> <span class="n">computer</span><span class="p">.</span> <span class="n">A</span> <span class="n">mirror</span> <span class="k">set</span> <span class="n">is</span> <span class="n">a</span> <span class="k">set</span> <span class="k">of</span> <span class="n">two</span> <span class="n">equal</span><span class="p">-</span><span class="n">sized</span> <span class="n">partitions</span> <span class="n">that</span>
+<span class="n">are</span> <span class="n">exact</span> <span class="n">duplicates</span> <span class="k">of</span> <span class="n">each</span> <span class="n">other</span><span class="p">,</span> <span class="k">and</span> <span class="n">which</span> <span class="n">are</span> <span class="n">located</span> <span class="n">on</span> <span class="n">two</span> <span class="n">separate</span>
+<span class="n">physical</span> <span class="n">disks</span><span class="p">.</span> <span class="n">When</span> <span class="n">data</span> <span class="n">is</span> <span class="n">written</span> <span class="k">to</span> <span class="n">the</span> <span class="n">mirror</span> <span class="k">set</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">written</span> <span class="k">to</span> <span class="n">both</span>
+<span class="n">partitions</span><span class="p">.</span> <span class="n">Mirror</span> <span class="n">sets</span> <span class="n">can</span> <span class="n">be</span> <span class="n">very</span> <span class="n">useful</span> <span class="n">because</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">very</span> <span class="n">high</span> <span class="n">level</span> <span class="k">of</span>
+<span class="n">fault</span> <span class="n">tolerance</span><span class="p">.</span>
+
+<span class="k">Requirements</span>
+<span class="p">------------</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">computer</span> <span class="p">(</span><span class="n">that</span> <span class="n">meets</span> <span class="n">the</span> <span class="k">requirements</span> <span class="n">listed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Hardware</span> <span class="n">Compatibility</span>
+  <span class="k">List</span><span class="p">)</span> <span class="n">on</span> <span class="n">which</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="m">4.0</span> <span class="n">is</span> <span class="n">installed</span><span class="p">.</span>
+<span class="p">-</span> <span class="n">One</span> <span class="n">blank</span> <span class="n">hard</span> <span class="n">disk</span><span class="p">,</span> <span class="n">that</span> <span class="n">is</span> <span class="n">at</span> <span class="n">least</span> <span class="k">as</span> <span class="n">large</span> <span class="k">as</span> <span class="n">the</span> <span class="n">partition</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span>
+  <span class="n">mirror</span><span class="p">,</span> <span class="n">must</span> <span class="n">be</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">computer</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">configuring</span> <span class="n">a</span> <span class="n">mirror</span>
+  <span class="k">set</span> <span class="k">of</span> <span class="n">the</span> <span class="n">boot</span> <span class="n">partition</span><span class="p">,</span> <span class="n">the</span> <span class="n">disk</span> <span class="n">should</span> <span class="n">be</span> <span class="n">identical</span> <span class="p">(</span><span class="n">same</span> <span class="n">manufacturer</span><span class="p">,</span>
+  <span class="k">model</span> <span class="n">number</span><span class="p">,</span> <span class="k">and</span> <span class="n">size</span><span class="p">)</span> <span class="k">to</span> <span class="n">the</span> <span class="n">disk</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">boot</span> <span class="n">partition</span><span class="p">.</span>
+
+<span class="n">Configuring</span> <span class="n">a</span> <span class="n">Mirror</span> <span class="k">Set</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="m">4.0</span> <span class="n">Computer</span>
+<span class="p">------------------------------------------------------------</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">mirror</span> <span class="k">set</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span>
+<span class="m">4.0</span><span class="p">-</span><span class="n">based</span> <span class="n">computer</span><span class="p">.</span> <span class="n">Any</span> <span class="n">partition</span> <span class="n">can</span> <span class="n">be</span> <span class="n">mirrored</span> <span class="k">to</span> <span class="n">another</span> <span class="n">disk</span> <span class="k">of</span> <span class="n">equal</span> <span class="k">or</span>
+<span class="n">larger</span> <span class="n">size</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">be</span> <span class="n">logged</span> <span class="n">on</span> <span class="k">as</span> <span class="n">an</span> <span class="n">administrator</span><span class="p">,</span> <span class="k">or</span> <span class="k">as</span> <span class="n">a</span> <span class="n">user</span> <span class="n">that</span> <span class="n">has</span>
+<span class="n">administrator</span> <span class="n">privileges</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">mirror</span> <span class="k">set</span><span class="p">.</span> <span class="k">To</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">mirror</span> <span class="k">set</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Administrative</span> <span class="n">Tools</span> <span class="p">(</span><span class="n">Common</span><span class="p">),</span> <span class="k">and</span>
+  <span class="k">then</span> <span class="n">click</span> <span class="n">Disk</span> <span class="n">Administrator</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">a</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">appears</span><span class="p">,</span> <span class="n">indicating</span> <span class="n">that</span> <span class="n">this</span> <span class="n">is</span> <span class="n">the</span> <span class="n">first</span>
+  <span class="n">time</span> <span class="n">that</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">has</span> <span class="n">been</span> <span class="nf">run</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">a</span> <span class="n">Confirm</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">appears</span><span class="p">,</span> <span class="n">click</span> <span class="n">Yes</span> <span class="k">to</span> <span class="nb">write</span> <span class="n">a</span> <span class="n">signature</span> <span class="k">to</span> <span class="n">the</span> <span class="n">disk</span><span class="p">.</span>
+  <span class="k">If</span> <span class="n">additional</span> <span class="n">Confirm</span> <span class="n">dialog</span> <span class="n">boxes</span> <span class="n">appear</span><span class="p">,</span> <span class="n">click</span> <span class="n">Yes</span> <span class="k">in</span> <span class="n">each</span> <span class="n">one</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">partition</span> <span class="n">that</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span>
+  <span class="n">mirror</span><span class="p">.</span> <span class="n">Press</span> <span class="k">and</span> <span class="n">hold</span> <span class="n">CTRL</span> <span class="k">while</span> <span class="n">you</span> <span class="n">click</span> <span class="n">the</span> <span class="n">area</span> <span class="n">that</span> <span class="n">is</span> <span class="n">marked</span> <span class="n">Free</span>
+  <span class="n">Space</span> <span class="n">on</span> <span class="n">the</span> <span class="n">additional</span> <span class="n">disk</span> <span class="n">that</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="n">for</span> <span class="n">the</span> <span class="n">mirror</span> <span class="k">set</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span>
+  <span class="n">release</span> <span class="n">the</span> <span class="n">CTRL</span> <span class="n">key</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">click</span> <span class="n">Establish</span> <span class="n">Mirror</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Fault</span>
+  <span class="n">Tolerance</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">a</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">is</span> <span class="n">displayed</span><span class="p">,</span> <span class="n">indicating</span> <span class="n">that</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span>
+  <span class="n">mirror</span> <span class="k">set</span> <span class="k">of</span> <span class="n">the</span> <span class="n">boot</span> <span class="n">partition</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">click</span> <span class="n">Commit</span> <span class="n">Changes</span> <span class="n">Now</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">Partition</span> <span class="n">menu</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Confirm</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">click</span> <span class="n">Yes</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">another</span> <span class="n">Confirm</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">is</span> <span class="n">displayed</span><span class="p">,</span> <span class="n">click</span> <span class="n">Yes</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Disk</span>
+  <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">another</span> <span class="n">Disk</span> <span class="n">Administrator</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">is</span> <span class="n">displayed</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span> <span class="k">to</span> <span class="n">shut</span> <span class="n">down</span>
+  <span class="k">and</span> <span class="n">restart</span> <span class="n">your</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Because</span> <span class="n">your</span> <span class="n">computer</span><span class="s1">'s disk configuration has changed, it is recommended
+  that you use the Rdisk.exe utility to create a new Emergency Repair disk.
+
+  In addition, if you have mirrored the partition that contains your Windows NT
+  Server 4.0 system files (sometimes called the "boot partition"), it is
+  recommended that you create a fault-tolerance boot disk.
+
+REFERENCES
+==========
+
+For additional information about how to use Rdisk.exe to create a new Emergency
+Repair disk, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q158866 How to Manually Create an Emergency Repair Disk
+
+For additional information about how to create a fault-tolerance boot disk, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119467 How to Create a Bootable Disk for an NTFS or FAT Partition
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbhw kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

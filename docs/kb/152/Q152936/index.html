@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152936: XADM: Admin Doesn’t Browse for Exchange Server Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152936: XADM: Admin Doesn’t Browse for Exchange Server Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152936/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152936/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152936/","publisher":null,"image":null,"headline":"Q152936: XADM: Admin Doesn’t Browse for Exchange Server Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152936-xadm-admin-doesnt-browse-for-exchange-server-computers">Q152936: XADM: Admin Doesn’t Browse for Exchange Server Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152936
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork kbusage exc4 exc5 exc55
+Last Modified: 30-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You install the Exchange Server Administrator program on a computer that is not
+running Exchange Services. When you press the Browse button, the following error
+message may be returned if no Exchange Server name is provided.
+
+  Microsoft Exchange Administrator
+
+  The list of Microsoft Exchange Server computers is not available because no
+  Microsoft Exchange Server computer could be located.
+
+  Microsoft Exchange Administrator
+  ID no c10312c8
+
+CAUSE
+=====
+
+The most common reason for this error message is that the primary domain
+controller (PDC) for the domain the computer is a member of is not in the same
+network segment as an Exchange server.
+
+WORKAROUND
+==========
+
+To ensure reliable browsing, do one of the following:
+
+- Provide a default server name before pressing the Browse button.
+
+  -OR-
+
+- Locate an Exchange Server computer on the same network segment as the PDC.
+
+MORE INFORMATION
+================
+
+When the Browse button is pressed, Microsoft Exchange Administrator performs the
+following actions in an effort to return the Exchange Organization hierarchy.
+
+- If a server name was specified in the Administrator program's Connect to
+  Server dialog box before the Browse button was pressed, the Administrator
+  program attempts to use this server name.
+
+- If no server name was specified, the Administrator program tries to find the
+  Exchange Server computer on the local system.
+
+- If it fails to find the Exchange Server computer on the local system, the
+  Administrator program tries the default server name in the registry (if one
+  was entered previously through the Administrator program user interface).
+
+- The Administrator program then tries the RPC Locator service, requesting that
+  it "find" an Exchange Server computer.
+
+The RPC Locator takes the following actions in an effort to find the requested
+RPC service (Exchange). The following behavior is for Windows NT 4.x.
+
+- The RPC Locator looks in the local RPC Locator cache to see if it has already
+  successfully performed this lookup for an Exchange Server computer. If it
+  has, The RPC Locator returns the answer from cache.
+
+- If the local computer is a Windows NT Workstation in a Windows NT domain, the
+  RPC Locator then finds a Windows NT domain controller (DC). It looks for a
+  PDC first, and then for backup domain controllers (BDCs).
+
+  1. If a DC is found, the RPC Locator asks it to find an Exchange Server
+     (consult step 3 to see how a DC finds Exchange Server computer). If the DC
+     returns a success, the RPC Locator adds the response to the RPC Locator
+     cache. The RPC Locator returns the response from the DC (success or
+     failure) to the requesting application (the Exchange Server Administrator
+     program).
+
+  2. If no DC is found, the RPC Locator issues a local broadcast looking for
+     any Exchange Server computers. If any responses are returned from the
+     network, the RPC Locator adds them to the cache and returns the answer to
+     the requesting application.
+
+- If the local computer is a Windows NT Domain Controller, or a Windows NT
+  Workstation in a Workgroup, the RPC Locator issues a local broadcast looking
+  for any Exchange Server computers. If any responses are returned from the
+  network, the RPC Locator adds them to the cache and returns the answer to the
+  Exchange Server Administrator program (or the Windows NT Workstation if this
+  request came from a Windows NT Workstation in a Windows NT domain).
+
+When the Exchange Server Administrator program fails to find any Exchange Server
+computers to obtain the Exchange Organization Hierarchy, it is usually because
+the PDC is located on a network segment where no Exchange servers exist. Because
+the Locator Service uses a broadcast-based discovery mechanism, routable
+protocols such at TCP/IP fail to discover Exchange Server computers unless they
+are on the same network segment. To ensure reliable browsing, a default server
+name should be provided prior to hitting the browse button, or an Exchange
+server should be located on the same network segment as the PDC.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

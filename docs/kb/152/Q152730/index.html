@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152730: XGEN: How to Make Disks From the Select CD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152730: XGEN: How to Make Disks From the Select CD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152730/","publisher":null,"image":null,"headline":"Q152730: XGEN: How to Make Disks From the Select CD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152730-xgen-how-to-make-disks-from-the-select-cd">Q152730: XGEN: How to Make Disks From the Select CD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152730
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbsetup kbusage
+Last Modified: 28-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Select CD includes a copy of Exchange Server Standard Edition.
+This article explains the procedure for creating the connector disks for the
+Standard Edition of Exchange from the Select CD.
+
+MORE INFORMATION
+================
+
+There are two ways to create disks from the Select CD.
+
+Using Cdselect.exe:
+
+The Select CD includes a program that gives the customer a graphical interface
+for creating disk images, Cdselect.exe. This program is located on the Server
+Pool PC Server 1 CD. Insert this CD and run Cdselect.exe. This program will run
+on Windows 3.x, Windows for Workgroups 3.x, Windows 95, and Windows NT.
+
+NOTE: When you insert this CD on Windows 95, Autorun, if enabled, will
+automatically start Cdselect.exe.
+
+When the program starts, choose the connector you want, click the Make Disk
+button and follow the prompts.
+
+Using the DOS utilities
+
+These utilities below can be found in the \Dostools directory on the Server Pool
+PC Server 1 CD. This is an excerpt from the Readme.txt file. The path to the
+.img or .dmf file can be found in the Select CD documentation.
+
+DSKIMAGE.EXE. Writes floppy diskettes from an *.IMG image file.
+
+Syntax:
+
+  dskimage img-file drive [/f]
+
+Parameters:
+
+img-file: The full pathname of the *.IMG disk image file. drive. Drive letter of
+the destination floppy disk drive.
+
+Switches:
+
+  /F Usually used when the floppy disk in the drive is unformatted. Using /f
+  causes the floppy disk in the target drive to be formatted before the disk is
+  written. If the disk is already formatted, /f will re-format the disk anyway.
+  If the /f switch is omitted and the disk in the drive is unformatted,
+  dskimage will fail.
+
+Example:
+
+  dskimage \us\word.win\disk1.img b: /f
+
+Limitations:
+
+- Will not work on *.DMF images.
+
+- Will not work on 360K image files while running under Windows 95. Under
+  Windows 95, use Icopy.exe, or start Cdselect.exe and choose Make Disk. Or run
+  under Windows 3.x or Window for Workgroups 3.x.
+
+Dmfwrite.exe. Writes Microsoft DMF (Distribution Media Format) floppy diskettes
+from a *.DMF image file.
+
+Syntax:
+
+  dmfwrite dmf-file drive [/u] [/w]
+
+Parameters:
+
+dmf-file: The full pathname of the *.DMF disk image file.
+drive: Drive letter of the destination floppy disk drive.
+
+Switches:
+
+  /U Don't prompt to insert diskette.
+  /W Prompt before exiting.
+
+Example:
+
+  dmfwrite \us\office.win\disk2.dmf a: /u
+
+Limitations:
+
+- Will not work on *.IMG image files
+
+ICOPY.EXE. Extracts all files out of an *.IMG image file and copies them to a
+floppy disk or hard disk. The subdirectory structure is maintained, as well as
+time and date stamps on files. Hidden and System files are copied as well.
+
+Syntax:
+
+  icopy img-file drive
+
+Parameters:
+
+img-file: The full pathname of the *.IMG disk image file.
+
+drive: Drive letter of the destination drive. The drive can be either a floppy
+disk drive, or a local or a networked hard disk.
+
+Example:
+
+  icopy \us\word.win\disk1.img d:\word
+
+To expand all image files into a single directory, use:
+
+  icopy \us\word.win\disk1.img x:\word
+  icopy \us\word.win\disk2.img x:\word
+
+To expand each image file into a subdirectory, use:
+
+  icopy \us\word.win\disk1.img x:\word\disk1
+  icopy \us\word.win\disk2.img x:\word\disk2
+
+Limitations:
+
+- Will not work on *.DMF image files
+
+MAKEDISK.BAT. Creates a floppy disk set from disk%.IMG or disk%.DMF files. Some
+products do not allow disk sets to be made, e.g. CD-ROM versions.
+
+Syntax:
+
+  makedisk source destination [start]
+
+Parameters:
+
+source: The full pathname of the directory containing the images to be copied.
+
+destination: Drive letter of the destination drive. Must be either floppy disk
+drive a: or b:.
+
+Switches
+
+start: The first disk you want to create. Default is 1.
+
+Example:
+
+  makedisk d:\us\word.win a:
+  makedisk d:\us\excel.win a: 2
+
+Limitations:
+
+- Will not work on a product that has no disk image (*.IMG or *.DMF) files
+  provided on the Select CD.
+
+- Will not work on 360K image files while running under Windows 95. Under
+  Windows 95, use Icopy.exe, or start Cdselect.exe and choose Make Disk. Or run
+  under Windows 3.x or Window for Workgroups 3.x.
+
+Additional query words: XGENeral imc x.400 x400
+
+======================================================================
+Keywords          : kbsetup kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190710/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190710/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190710/","publisher":null,"image":null,"headline":"Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190710-xfor-how-to-use-internet-mail-service-to-reroute-messages">Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190710
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Administrators of Microsoft Exchange server 5 and higher have the ability to
+reroute internet mail messages with the originating 821 header intact, or
+rewritten to the site associated to the host where the IMS is homed.
+
+MORE INFORMATION
+================
+
+To reroute by rewriting the RFC-821 RCPT TO: header, follow these steps:
+
+1. Open the Properties page on the Internet Mail Service.
+
+2. Click the Routing tab.
+
+3. Click the "Reroute incoming SMTP mail" option.
+
+4. Click Add.
+
+5. After the Add E-mail Domain page opens, type the domain that you are
+  rerouting for into the "E-mail sent to this domain:" box.
+
+6. Select the "Should be rerouted to this domain:" option, and then type the
+  domain you want to route to.
+
+7. Click OK when you finish.
+
+Example: If you want everything destined for "test.com" (user@test.com) to be
+rerouted to "example.com", and you want the headers rewritten to
+user@example.com, follow these steps:
+
+1. On the Routing tab, select &lt;Add...&gt;, and then type "test.com" (without
+  the quotation marks).
+
+2. Select the "Should be routed to this domain"" button, and then type
+  "example.com" (without the quotation marks).
+
+To reroute while maintaining the RFC-821 RCPT TO: header, follow these steps:
+
+1. Open the Properties page on the Internet Mail Service.
+
+2. Select the Connections tab, and then click the &lt;E-mail Domain&gt; button.
+
+3. Select Add.
+
+4. After the "Add E-Mail Domain" page opens, type the domain that you are
+  rerouting for into the E-Mail Domain: box.
+
+5. Select the "Forward all messages for this domain to host:" option. Type the
+  domain (or IP address) you want to route to.
+
+6. Click OK when you finish.
+
+NOTE: Do not add to the Routing page.
+
+Example: If you want everything destined for "test.com" (user@test.com) to be
+rerouted to "example.com" (or the IP address for "example.com") and you want the
+headers to remain user@test.com, follow these steps:
+
+1. On the Connections tab, select the &lt;E-Mail Domain&gt; domain button, and
+  then add a new entry for "test.com."
+
+2. Type the host name or IP address for the mail exchanger at "example.com" in
+  "Forward all messages for this domain to host:".
+
+Additional query words: routing forwarding rcpt to: rfc-821
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

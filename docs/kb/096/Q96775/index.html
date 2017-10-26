@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96775/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96775/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96775/","publisher":null,"image":null,"headline":"Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96775-doublespace-err-msg-doublespace-did-not-find-any-drives">Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96775
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for
+commands and file names.
+
+SYMPTOMS
+========
+
+You receive the following error message if you attempt to create a new
+DoubleSpace drive by typing DBLSPACE /COMPRESS on a drive that has more than 512
+megabytes (MB) of data:
+
+  Drive C contains too much data to compress. To compress a drive, it cannot
+  contain more than 512 MB of data.
+
+If you type DBLSPACE under the same conditions, you receive the following error
+message:
+
+  DoubleSpace did not find any drives that can be compressed. To compress a
+  disk, first make sure it is formatted and does not contain over 512 MB of
+  data.
+
+WORKAROUND
+==========
+
+To work around this problem, you can delete unnecessary files so that you have
+less than 512 MB of data or follow the procedure outlined below.
+
+MORE INFORMATION
+================
+
+To work around this problem without reducing the volume of data on your hard
+drive, manually create a new DoubleSpace drive and move data to the new
+compressed drive. Once the uncompressed drive contains less than 512 MB of data,
+you can then compress that drive.
+
+To manually create a new DoubleSpace drive:
+
+1. Copy the DBLSPACE.BIN file from the DOS directory to the root directory. For
+  example, if the DOS directory is on drive C, type the following at the MS-DOS
+  command prompt and then press ENTER:
+
+  " copy c:\dos\dblspace.bin c:\" (without the quotation marks)
+
+2. Set the file attributes on DBLSPACE.BIN to read-only, hidden, and system. To
+  do this, use the ATTRIB command as in the following example:
+
+  " attrib c:\dblspace.bin +r +s +h" (without the quotation marks)
+
+3. Create a DBLSPACE.INI file using the COPY CON command. To do this, type the
+  following at the MS-DOS command prompt and then press ENTER:
+
+  " copy con c:\dblspace.ini" (without the quotation marks)
+
+4. Press ENTER twice.
+
+5. Press CTRL+Z and then press ENTER to close and save the file.
+
+6. Restart your computer by pressing CTRL+ALT+DEL.
+
+7. Run DoubleSpace by typing DBLSPACE at the MS-DOS command prompt and pressing
+  ENTER.
+
+8. From the Tools menu, choose Options.
+
+9. Increase the "Last drive reserved for DoubleSpace's use:" setting five
+  letters. For example, if the current letter for Last Drive Reserved For
+  DoubleSpace's Use is D, increase that setting to I.
+
+10. Press ENTER to save your changes and then press ENTER when you are prompted
+  to "Restart Your Computer Now."
+
+  After the computer has restarted, you should have a complete DBLSPACE.INI
+  file.
+
+11. You can now run DoubleSpace and create a new compressed drive. To do this,
+  type DBLSPACE at the MS-DOS command prompt, press ENTER, and then choose
+  Create New Drive from the Compress menu.
+
+After you create the new DoubleSpace drive, you can move data from your
+uncompressed drive to your new drive. If you reduce the data on the uncompressed
+drive to less than 512 MB, you can run DoubleSpace to compress that drive.
+
+NOTE: If you move Microsoft Windows or Windows-based applications to the new
+drive, adjust your .INI files and run Registration Editor to reflect the new
+drive location of your files. If you move system files or network files to the
+compressed drive, adjust your CONFIG.SYS and AUTOEXEC.BAT file accordingly.
+
+Additional query words: 6.00 6.20 6.21 6.22 DBLSPACE double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

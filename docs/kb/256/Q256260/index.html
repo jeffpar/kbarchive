@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256260/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256260/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256260/","publisher":null,"image":null,"headline":"Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256260-mappoint-2001-how-to-prepare-data-for-importing-or-linking">Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256260
+Product(s): Microsoft Automap
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbtool kbui kbimukbfaq
+Last Modified: 07-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MapPoint 2001 
+- Microsoft Streets and Trips 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to prepare data for importing or linking to a map in
+Microsoft MapPoint 2001.
+
+MORE INFORMATION
+================
+
+To prepare data for importing or linking to a map in MapPoint 2001:
+
+- Make sure that at least one column of data (the same field in each record)
+  contains location information, such as city, state, or ZIP Code information.
+
+  When you map data in MapPoint 2001, the program searches for a column of data
+  that contains location information, and then, based on this location
+  information, the program maps your data.
+
+  For example, if one field contains the name of a county, and another field
+  contains the average income of residents in each county, MapPoint 2001 first
+  locates the column of county names (the location information), and then maps
+  the average income of residents in each county to each county that is listed
+  in the County column.
+
+- Make sure that the data is entered in a consistent fashion.
+
+  For example, if you import a set of addresses, make sure that the street
+  address for each record is in the same field throughout the data set.
+
+- Select or create relevant column headings for each field.
+
+  The Link Data Wizard and the Import Data Wizard in MapPoint 2001 recognize
+  certain standard column headings, such as Address1, City, Information, Total
+  Sales, and ZIP Code. When you use a standard column heading, you ensure that
+  MapPoint 2001 can identify your data correctly.
+
+- Make sure that your address data is as complete as possible.
+
+  For example, if you include the name of the state in the address information,
+  MapPoint 2001 requires less time to map your data.
+
+- Organize your data so that each field or column is designated as a discrete
+  category of information, such as street address, city, ZIP/Postal Code,
+  state/province, or country. Do not place more than one category of
+  information into a single field.
+
+  For example, do not include an entire address in a single field.
+
+- If your data contains different types of location information, create a
+  different data file for each type of location information, and then link or
+  import the data from each data file to your MapPoint 2001 map.
+
+  For example, if your data contains records with complete addresses and records
+  with only ZIP Codes, create two separate data files, one file for complete
+  addresses and the other for ZIP Codes. Then link or import the data from each
+  data file to your MapPoint 2001 map.
+
+- Use the "Information" column heading for a field in which you want the
+  field's data to be displayed in either the information balloon of the
+  record's corresponding pushpin, or in the shaded or sized circles that you
+  may use to identify a point on the map.
+
+- Use the "Name1" or the "Name2" column heading for a field in which you want
+  the field's data to be displayed in either the gray area of the information
+  balloon of the record's corresponding pushpin, or in the shaded or sized
+  circles that you may use to identify a point on the map.
+
+- If the data that you want to link or import to a MapPoint 2001 map contains
+  the name of more than one country, make sure that the data includes a Country
+  field or column.
+
+- If you want to link or import data to a MapPoint 2001 map, your data must
+  contain a field that serves as a "primary key."
+
+  A primary key is database term for a field that uniquely identifies each
+  record in a data set. The primary key makes it possible to
+  identify and update a record, even if you change the name of the record. For
+  data that you want to import or link to MapPoint 2001, the primary key can be
+  a name, an address, or another category of information that serves as a
+  unique identifier.
+
+  If your data does not contain a primary key, add a field or a column to your
+  data, and then enter a unique number in each field.
+
+  To conveniently enter a primary key in a Microsoft Access database, create a
+  field for this purpose, and then format the field as AutoNumber.
+
+  To conveniently enter a primary key in a Microsoft Excel spreadsheet, select a
+  column for this purpose, and then use the Autofill feature to automatically
+  enter unique numbers in each cell in that column.
+
+  NOTE: Avoid five-digit primary keys, because MapPoint 2001 identifies
+  five-digit numeric data as ZIP Codes.
+
+- If your data file is a text (*.txt, *.csv, *.asc, or *.tab) file, use the TAB
+  key, a semicolon, or a comma to separate each field in your data.
+
+- When you import data from an Excel spreadsheet in which cells in a certain
+  column are formatted as currency, you must format the entire column as
+  currency.
+
+Additional query words: mp2001 st2001 map point preparation mapping formats
+
+======================================================================
+Keywords          : kbinterop kbtool kbui kbimu kbfaq
+Technology        : kbHomeProdSearch kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2001
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

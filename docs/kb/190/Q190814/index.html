@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190814/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190814/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190814/","publisher":null,"image":null,"headline":"Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190814-howto-display-a-readme-file-at-the-end-of-a-custom-setup">Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190814
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbVBp kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to modify the Setup Toolkit project (Setup1.vbp)
+to display a text file, such as a ReadMe.Txt, at the end of an application's
+setup.
+
+NOTE: Microsoft Technical Support does not support the modification of the setup
+process or any of the setup files. Support is provided for the Package and
+Deployment Wizard on an "as is" basis only.
+
+MORE INFORMATION
+================
+
+Follow these steps to modify the Setup Toolkit project to display a text file at
+the end of Setup:
+
+Step-by-Step Example
+--------------------
+
+NOTE: This example assumes that NotePad is already installed on the end user's
+computer, and it is located in the same folder as Windows.
+
+1. Create a text file named ReadMe.txt.
+
+2. Make a backup copy of the VB98\Wizards\PDWizard\Setup1 folder.
+
+3. Open VB98\Wizards\PDWizard\Setup1\Setup1.vbp.
+
+4. Open the basSetup1 module, and go to the ExitSetup Sub procedure.
+
+5. At the beginning of Sub ExitSetup, add the following statement:
+
+        Dim vRetVal As Variant
+
+6. Locate the following statement in Sub ExitSetup:
+
+        If IsWindowsNT4WithoutSP2() Then
+
+  ABOVE this statement, add the following statement:
+
+        vRetVal = Shell(gstrWinDir &amp; "NotePad.exe " &amp; gstrDestDir &amp; _
+           "ReadMe.txt", 1)
+
+7. Save the project, and make Setup1.exe.
+
+  NOTE: Save Setup1.exe in the VB98\Wizards\PDWizard folder. When you save
+  setup1.exe in this folder, you will be bounced back to
+  VB98\Wizards\PDWizard\Setup1 unless you click the original setup1.exe in that
+  folder to overwrite it explicitly
+
+8. Use the Package and Deployment Wizard to create a Standard Setup Package for
+  a simple project, such as Calc.vbp. In the Included Files screen, add the
+  ReadMe.txt file you created earlier.
+
+9. Run Setup.exe from the file distribution set you created in step 8. If the
+  application's Setup completes successfully, NotePad displays the ReadMe.txt
+  file at the end of Setup.
+
+10. Restore the original Setup Toolkit files before using the Package and
+  Deployment Wizard to distribute applications that do not have a ReadMe file.
+
+REFERENCES
+==========
+
+"Programmer's Guide," "Distributing Your Applications" chapter, "The Setup
+Toolkit" section
+
+Additional query words: PDW
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbVBp kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192044/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192044/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192044/","publisher":null,"image":null,"headline":"Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192044-xadm-setting-up-x509v3-certs-on-exch-55-sp1-kms-local-cert-srv">Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192044
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article details how to set up X.509 V3 certificate support on an Exchange
+Server 5.5 Service Pack 1 (SP1) Key Management Server (KMS) computer that also
+has Microsoft Certificate Server installed.
+
+Before you proceed with the KMS Setup, consult the following Microsoft Knowledge
+Base article, which details how to properly update Certificate Server to version
+5.00.1671.200.
+
+  Q184695 : Readme Notes for Certificate Server Update
+
+
+The updated files can be obtained from the following location:
+
+  ftp://ftp.microsoft.com/bussys/IIS/iis-public/fixes/usa/certserv/
+
+NOTE: It is important that the Microsoft Exchange Service account has at least
+READ-ONLY privileges on the shared CERT directory of the Microsoft Certificate
+server computer.
+
+If the KMS is not installed, please consult the README file on the Exchange
+Server 5.5 SP1 installation disk on how to install the service.
+
+NOTE: Once the KMS is installed, you will need to reapply SP1 for Exchange Server
+5.5 or you may experience problems gaining access to some of the CA Object's
+property pages, specifically the "Certificate Trust List".
+
+MORE INFORMATION
+================
+
+To enable X.509 V3 certificates on the Exchange Server 5.5 Service Pack 1 KMS,
+perform the following steps:
+
+1. The Expolicy.dll file must first be registered to the Certificate Server
+  computer. This file in located on the Exchange Server 5.5 SP1 installation
+  disk in the following location:
+
+  Server\Support\Kms\Expolicy\&lt;Cputype&gt;
+
+  To register this file, go to an MS-DOS command prompt, change to the above
+  directory, and then type the following:
+
+  REGSVR32 EXPOLICY.DLL
+
+2. After the notification that the DLL is registered is displayed, type the
+  following from a command prompt:
+
+  NET STOP CERTSVC
+
+3. After the service is stopped, type the following at a command prompt to
+  restart the Certificate server:
+
+  NET START CERTSVC
+
+4. Open the Microsoft Exchange Server Administrator program. Go to the Site
+  Configuration container, and select properties for the CA object. Click on
+  the Enrollment tab.
+
+5. In the Microsoft Exchange 4.0/5.0 compatibility section, there are three
+  choices. By default, the "Issue X.509 V1 certificates only" check box is
+  selected. Select either of the remaining options to issue X.509 V3
+  certificates (either "Issue both V1 and V3 certificates" or "Issue X.509 V3
+  certificates only").
+
+  A dialog box will then prompt you to select the Certificate Authority. Verify
+  that the local Certificate Server computer is selected and continue. The
+  Exchange Server KMS computer will now be properly configured to use the
+  locally installed Certificate Server.
+
+For more information on how to implement KMS in an Exchange Server organization,
+consult the Exchange Server 5.5 README file.
+
+Additional query words: security km server s/mime smime
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1
+Version           : :5.5,5.5 SP1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

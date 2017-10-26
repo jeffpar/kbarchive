@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149238: XADM: Information Store Fails To Start With 1011 Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149238: XADM: Information Store Fails To Start With 1011 Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149238/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149238/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149238/","publisher":null,"image":null,"headline":"Q149238: XADM: Information Store Fails To Start With 1011 Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149238-xadm-information-store-fails-to-start-with-1011-error">Q149238: XADM: Information Store Fails To Start With 1011 Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149238
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 09-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Information Store service fails to start and Event 2048
+or 1087 is reported in the application log, along with one or more of the
+following error messages:
+
+  Unable to start the Microsoft Exchange Information Store. Error 0x3f3.
+
+  -or-
+
+  The Information Store was restored from an off-line backup. Run ISINTEG
+  -PATCH before restarting the Information Store.
+
+  -or-
+
+  Windows could not start the Microsoft Exchange Information Store on Local
+  Computer. For more information, review the System Event Log. If this is a
+  non-Microsoft service, contact the service vendor, and refer to
+  service-specific error code 1011.
+
+  -or-
+
+  The Microsoft Exchange Information Store service could not be started. A
+  service specific error occurred: 1011.
+
+CAUSE
+=====
+
+This error occurs because the Globally Unique Identifiers (GUIDs) used by the
+restored information store are old, and matching GUIDs may already exist. The
+GUIDs for this restored information store need to be replaced to ensure that
+they are unique.
+
+RESOLUTION
+==========
+
+This is by design. You need to patch the information store to replace the GUIDs
+used by the restored information store by running Isinteg - patch. Isinteg in
+patch mode will run against the entire Information Store (both the Pub.edb and
+Priv.edb files). It will generate new GUIDs and also patch replication
+information to prevent incorrect backfilling.
+
+To run Isinteg -patch:
+
+1. Ensure that the Directory and System Attendant Services are running. If
+  either of these services are not running, Isinteg will fail with a
+  DS_COMMUNICATIONS_ERROR message.
+
+2. Change to the Exchsrvr\Bin directory, and type Isinteg -patch. The GUIDs will
+  be replaced, and Isinteg will report that the Information Store has been
+  updated successfully.
+
+3. Restart the Information Store service.
+
+MORE INFORMATION
+================
+
+The Windows NT Backup utility will automatically patch the Information Store
+when it is restored from an online backup only. If the Information Store is
+restored from an offline Windows NT Backup, you must run Isinteg.exe.
+
+Isinteg.exe run in patch mode performs no integrity checks of the database. To
+check database integrity, please see pages 617 and 618 of the Microsoft Exchange
+Administrator's Guide. Running Isinteg.exe with no parameters will print a help
+screen describing command line switches and syntax.
+
+
+Additional query words: exfaq -1011
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

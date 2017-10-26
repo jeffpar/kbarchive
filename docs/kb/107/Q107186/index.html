@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107186: Contents of the Windows Sound System 1.0 README.TXT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107186: Contents of the Windows Sound System 1.0 README.TXT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107186/","publisher":null,"image":null,"headline":"Q107186: Contents of the Windows Sound System 1.0 README.TXT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107186-contents-of-the-windows-sound-system-10-readmetxt">Q107186: Contents of the Windows Sound System 1.0 README.TXT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107186
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the complete text of the README.TXT file for Windows Sound
+System 1.0. The file is contained on disk 1 of the Windows for Sound System
+disks.
+
+=====================================================================
+MICROSOFT WINDOWS SOUND SYSTEM (Version 1.0)
+Copyright (C) 1991-1992 Microsoft Corporation
+
+This document contains information that supplements the "Microsoft
+Windows Sound System User's Guide" and accompanying software.
+
+CONTENTS
+
+I.    Before you run the Microsoft Windows Sound System (WSS) Setup
+
+      1. Other sound boards
+      2. Switching to Windows Program Manager
+
+II.   Troubleshooting
+
+III.  Voice Pilot
+
+IV.   ProofReader
+
+      1. Multiple instances
+      2. Installation sequence
+      3. Removing or reinstalling ProofReader
+
+V.    Compatibility issues
+
+      1. WSS and other boards
+      2. WSS and MIDI sequencing software
+
+VI.   Modifications to the WSS User's Guide information
+
+VII.  Removing WSS from your system
+
+I. Before you run the Microsoft Windows Sound System Setup
+
+1. Other sound boards
+
+Before installing the Microsoft Windows Sound System, open the
+Windows Control Panel icon and double-click the Drivers icon.
+If the list of installed drivers includes the Ad Lib,
+Sound Blaster, or Pro Audio Spectrum drivers, we suggest
+that you remove them by selecting the driver and clicking the Remove
+button.
+
+2. Switching to Windows Program Manager:
+
+If you run out of disk space during Setup and need to delete some
+files, you can switch to Windows Program Manager without exiting
+Setup in two ways:
+
+a.) Press Alt+Tab and choose the Windows Program Manager icon;
+
+b.) Press Ctrl+Esc, select Program Manager from the task list and
+click the Switch To button.
+
+Follow step a or b again to switch from Program Manager back to
+WSS Setup.
+
+II. Troubleshooting
+
+1. If you get a continuous sound repeated over and over again when you
+choose the Check option and click the Sound Check button in
+Setup, one of two things could be wrong:
+
+a.) You did not remove the Ad Lib driver as described in section I.1.
+above.
+
+b.) You have one or more conflicting interrupts (IRQ). From WSS
+Setup, choose the Board option and change the interrupt (IRQ) value
+for your board.
+
+2. If you do not hear any sound in Sound Finder or in the Guided Tour,
+or if Music Box does not find your CD-ROM drive, make sure you have
+the following entries:
+
+a.) In your WIN.INI file in your Windows 3.1 directory:
+
+   [MCI extensions]
+   wav=waveaudio
+   mid=sequencer
+   rmi=sequencer
+
+b.) In your SYSTEM.INI file in your Windows 3.1 directory:
+
+   [MCI]
+   CDAudio=mcicda.drv
+   WaveAudio=mciwave.drv
+   Sequencer=mciseq.drv
+
+c.) Make sure that you have the following files in your Windows 3.1
+   system directory:
+
+   MCICDA.DRV
+   MCIWAVE.DRV
+   MCISEQ.DRV
+
+3. If you're running a shared installation of Windows over a network,
+you won't be able to play MIDI files.
+
+III. Voice Pilot
+
+You can improve recognition results by changing the
+recording level in the Windows Sound System Recording Control
+application.  If the level is too high, recognition will be poor.
+You can access Recording Control through the Input Level
+button in the Options dialog box.
+
+As a keyboard alternative to clicking the Microphone button, press
+Ctrl+Alt.
+
+If stray noises are frequently recognized as words, you can increase
+the recognition threshold by using the Sounds Must Match Words
+slider control in the Options dialog box.
+
+As a shortcut for training, editing, or deleting an item, click
+the item in the Active Words list, and then choose a command from the
+pop-up menu.
+
+To move quickly to a word in the list in the Vocabulary dialog box, first
+click the list, and then type the first letter of the word.
+Continue typing the same letter until the highlight reaches the
+desired word.
+
+Voice Pilot can have difficulty recognizing shorter words, even after
+training. If this happens, you can add longer words or phrases to the
+vocabulary which perform the same actions.
+
+IV. ProofReader
+
+1. Multiple instances:
+
+If you run more than one instance of Microsoft Excel or Lotus 1-2-3
+for Windows, only the first instance of it will contain the ProofReader.
+
+2. Installation sequence:
+
+You must install your Windows spreadsheet package before you run the
+WSS Setup program to install the ProofReader.
+
+3. Removing or reinstalling ProofReader:
+
+To remove or reinstall ProofReader from Microsoft Excel, please
+follow your Microsoft Excel documentation on how to remove or install
+the "ProofReader For Excel" add-in.
+
+To remove or reinstall ProofReader for Lotus 1-2-3 for Windows,
+please follow your Lotus 1-2-3 for Windows documentation on how to
+remove or install the "123RDR" add-in.
+
+V. Compatibility issues
+
+1. The Microsoft Windows Sound System board may not work with other
+sound boards. We recommend that you remove all other sound drivers
+from the Windows Control Panel Drivers application and remove other
+sound boards from your machine.
+
+The synthesis chip on the WSS board can conflict with those on other
+sound boards.
+
+If you use multiple sound boards and drivers, you can encounter
+interrupt (IRQ), I/O address, and/or DMA channel conflicts which
+can cause your system to hang or repeat sounds.
+
+2. Using MIDI Sequencing Software with your WSS Board:
+
+There are some known incompatibilities with certain Musical
+Instrument Digital Interface (MIDI) sequencing software packages.
+
+The WSS Sound Finder cannot play a file with an extension of
+.MID or .RMI while a sequencing program is open, regardless of
+whether a file is actually loaded into the sequencer. In this
+situation, you can play the file through the Windows Sound
+System board using either your sequencing program or Sound
+Finder. If you would like to use Sound Finder to browse MIDI
+files and additional file types as well, close your sequencer before
+using Sound Finder. You should find that Sound Finder now plays MIDI
+files without a problem.
+
+If you experience difficulties using your MIDI sequencer with
+your WSS board:
+
+    i.)    Consult the WSS documentation to ensure you have properly
+           installed and configured both the board and the software.
+
+    ii.)   Consult your sequencer's documentation for additional
+           assistance.
+
+    iii.)  If you are still experiencing problems, contact Microsoft
+           Product Support Services.
+
+VI. Modifications to the WSS User's Guide information
+
+1. When you double-click on a file in Windows File Manager, the
+file is not loaded into Sound Finder. Instead, the file is loaded into
+Quick Recorder.
+
+2. After performing a Paste Mix command in Quick Recorder, the Undo command
+works correctly.
+
+VII. Removing WSS from your system
+
+If you ever want to remove everything associated with the Windows
+Sound System from your machine, there is a file called DEINSTAL.TXT
+in your WSS directory (c:\sndsys by default) which documents every
+file installed, its location, and how to remove it from
+your system.
+
+Additional query words: 1.00 read me text file
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

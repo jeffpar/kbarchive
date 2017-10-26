@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118378: BUG: Cannot Update More Than 64K of Long Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118378: BUG: Cannot Update More Than 64K of Long Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118378/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118378/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118378/","publisher":null,"image":null,"headline":"Q118378: BUG: Cannot Update More Than 64K of Long Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118378-bug-cannot-update-more-than-64k-of-long-data">Q118378: BUG: Cannot Update More Than 64K of Long Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118378
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCDBASE: 2125 (1.01.1928)
+
+SYMPTOMS
+========
+
+When using SQLPutData in chunks to update SQL_LONGVARBINARY o SQL_LONGVARCHAR
+data to 64K or greater with the ODBC Desktop Database drivers, the following
+message is received:
+
+  
+  SQLState 22001 [Microsoft][ODBC Single Tier Driver] Maximum SQLPutData length
+  exceeded
+
+WORKAROUND
+==========
+
+Because inserts work but updates fail with the above operation, the only
+workaround is to make a copy of the row to updated, delete that row, and then
+insert the row again, along with the SQL_LONGVARCHAR or SQL_LONGVARBINARY data
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC Desktop Database
+Drivers versions 1.01.1928 and 1.01.2115. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+MORE INFORMATION
+================
+
+According to the ODBC specification, SQLPutData can be used in chunks smaller
+than 64K to insert and update long data to the maximum limit set by that data
+source. This works for inserts with the Desktop Drivers, but fails for updates.
+
+For instance, if SQLBindParamter is used to set the length of the total data to
+be sent during execution time at 96K and SQLPutData is called to send data in
+32K chunks, the second call to SQLPutData will fail with the above message.
+
+Additional query words: 1.01.1928 1.01.2115 DDD Visual C++ Word Excel
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194337: XADM: Information Store Crashes Processing HTML Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194337: XADM: Information Store Crashes Processing HTML Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194337/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194337/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194337/","publisher":null,"image":null,"headline":"Q194337: XADM: Information Store Crashes Processing HTML Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194337-xadm-information-store-crashes-processing-html-message">Q194337: XADM: Information Store Crashes Processing HTML Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194337
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 28-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an incoming Internet mail message is being processed during normal
+operation, the Microsoft Exchange Server information store may terminate
+unexpectedly and display an access violation error message. If the correct
+Windows NT and Exchange Server debug symbols are installed, the resulting Dr.
+Watson log may display a stack dump similar to the following:
+
+  FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+  0c65f458  0086e7c4  0ba14234 0ba14208 ffffffd9 MSVCRT!memcpy+0x3a
+  0c65f4ac  0089b942  0ba14234 00000400 00003d68 STORE!MdURLCombine+0x944
+  0c65f514  00879284  00000008 00000000 00000000
+   STORE!ScHandleAHref+0x302
+  0c65f5cc  008740d5  0ba140fc 00000000 0ba130b0
+   STORE!HTMLRTF::ScNInterpret+0x17b4
+  0c65f5e0  00871ef1  0ba140fc 77f126d1 0b97d940
+   STORE!HTMLRTF::ScInterpret+0x15
+  0c65f600  00872363  0c65f628 0081a682 0b97d940
+   STORE!INPUSH::ScRunConversion+0xe1
+  0c65f608  0081a682  0b97d940 00000000 0ba175c0
+   STORE!INPUSH::Commit+0x33
+  0c65f628  00831c56  0ba00ee8 001708b0 00000000
+   STORE!CmnBpt::hrCommitBpt+0x72
+  0c65f670  00805bac  0ba00ee8 0b98cad8 0ba07b28
+   STORE!CmcvtrBptEnd::hrExtract+0x426
+  0c65f6ac  0083e4b9  0c65f6c8 00000000 0c65f6c8
+   STORE!CINETextr::hrExtract+0x16c
+  0c65f6cc  0083e2ce  0ba23088 00003d68 00401cb0
+   STORE!CConvertStream::HrFlush+0x39
+  0c65f6fc  005ae66a  0b941020 00000000 00000000
+   STORE!CConvertStream::Commit+0x9e
+  0c65f71c  005a79ee  0ba231b8 00003a12 00000000
+   STORE!CSTREAM::HrCommit+0x5a
+  0c65f758  0045c442  00003a12 0ba231b8 0c65f784
+   STORE!EcWriteStreamOp+0x16e
+  0c65f788  0044ed99  00000001 00000057 00000001 STORE!EcWriteStream+0xc2
+  0c65f894  0046638d  0c65f90c 00003e00 0c65f92c STORE!EcRpc+0x1e79
+  0c65f928  77e11841  001714a0 0ba23088 0017cd90 STORE!EcDoRpc+0xdd
+  0c65f948  77e52265  004662b0 0c65fb3c 00000004 RPCRT4!Invoke+0x28
+  0c65f964  77e52236  004662b0 0c65fb3c 00000004
+   RPCRT4!NdrCallServerManager+0x15
+  0c65fc28  77e51f9e  00000000 00000000 0c65fe08 0x77e52236
+  0c65fc40  77e1134f  0c65fe08 0c65fe08 0016f008
+   RPCRT4!NdrServerCall+0x19
+  0c65fc7c  77e11122  008c071a 0c65fe08 0c65fdc4
+   RPCRT4!DispatchToStubInC+0x34
+
+CAUSE
+=====
+
+Processing an incoming Internet Mail message in Hypertext Markup Language (HTML)
+format, the information store processes each hypertext reference (HREF) in the
+message to determine whether it is an absolute or relative Uniform Resource
+Locator (URL). As a part of this process to determine whether the HREF is
+relative or absolute, the information store initially sets two pointers (one for
+relative and one for absolute) and expects them to be equal at a latter point in
+the process. In this case, a leading white space was part of the HREF and the
+information store stripped it off the value pointing to the relative reference
+only. This renders the values of the two pointers different and causes the
+information store to skip a part of the processing needed to properly handle
+this HREF. Because of skipping this part of the processing, the information
+store overwrites portions of other pointers leading to an access violation error
+and the process terminating abnormally.
+
+The information store now sets a flag to ensure these pointers are the same
+before modifying the value of the relative pointer in any way.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: Information Store
+
+  File Name    Version
+  -----------------------
+  Gapi32.dll   5.5.2425.0
+  Mdbmsg.dll   5.5.2425.0
+  Store.exe    5.5.2425.0
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words: crash hang GPF
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

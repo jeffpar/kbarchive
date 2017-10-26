@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274751/","publisher":null,"image":null,"headline":"Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274751-sms-netware-clients-may-lose-mapped-drives-after-connection-att">Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274751
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 26-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After logging on to Novell NetWare, and running the Systems Management Server
+(SMS) script, clients may lose any mapped drives that the logon script may have
+established. This behavior can occur if you configured SMS to use Novell NetWare
+4.x or 5.x servers as Bindery servers (Bindery Emulation), and the users log on
+to NetWare by using NetWare Directory Services (NDS) connections.
+
+CAUSE
+=====
+
+The network abstraction layer (NAL) on the client makes a Bindery connection to
+the Bindery Client Access Point (CAP) because it does not recognize any existing
+Bindery connection. This is because the client has an NDS connection to the
+tree. NAL then detaches from the CAP when it is finished, and this logs the user
+off of the tree.
+
+NAL operates in a manner specific to the type of network operating systems (NOS).
+It is not possible to support a situation where a client logs in under NDS, but
+makes a Bindery connection to an SMS system role (Logon Point, Distribution
+Point, and CAP).
+
+The same problem would arise if you configured SMS to create NDS-based system
+roles, and the clients authenticate by using a Bindery connection.
+
+WORKAROUND
+==========
+
+To work around this issue, follow these steps to make sure that the
+NetWare-based SMS system roles match that of the client connection type:
+
+- Switch the client redirector to authenticate in the same manner in which SMS
+  created the NetWare server role. Microsoft recommends that you have the CAP
+  in the same container, depending on which version of redirector is being
+  used.
+
+  -or-
+
+- When creating the NetWare-based SMS server role (Logon Point, Distribution
+  Point, CAP), make sure to add it as the same connection type that the clients
+  will be using to connect to that NetWare resource. For example, if the
+  clients log on and authenticate to a NetWare 4.x or 5.x tree as an NDS
+  connection, configure SMS to only create NDS system roles, and not Bindery
+  system roles.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

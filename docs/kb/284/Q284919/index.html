@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/284/Q284919/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/284/Q284919/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/284/Q284919/","publisher":null,"image":null,"headline":"Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q284919-drwatson-error-occurs-with-dfsadminexe-importing-csv-file">Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q284919
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsgkbfaq
+Last Modified: 23-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to import a .csv file that is exactly 4,096 bytes in size (or a
+multiple of 4,096 bytes), an application exception may occur. When this occurs,
+an entry that is similar to the following entry may be recorded in the
+Drwtsn32.log file:
+
+  Application exception occurred:
+  App: exe\dfsadmin.dbg (pid=101)
+  When: 12/29/2000 @ 15:7:41.106
+  Exception number: c0000005 (access violation)
+
+  (Some details have been omitted for clarity.)
+
+  function: FindNextLine
+  01005c2b 803900 cmp byte ptr [ecx],0x0 ds:00c71000=??
+  01005c2e 7410 jz FindNextLine+0x19 (01005c40)
+  01005c30 8a01 mov al,[ecx] ds:00c71000=??
+  01005c32 3c0d cmp al,0xd
+  01005c34 740a jz FindNextLine+0x19 (01005c40)
+  01005c36 3c0a cmp al,0xa
+  01005c38 7406 jz FindNextLine+0x19 (01005c40)
+  01005c3a 41 inc ecx
+  01005c3b 803900 cmp byte ptr [ecx],0x0 ds:00c71000=??
+  01005c3e 75f0 jnz FindNextLine+0x9 (01005c30)
+  FAULT -&gt;01005c40 8a01 mov al,[ecx] ds:00c71000=??
+  01005c42 3c0d cmp al,0xd
+  01005c44 7404 jz FindNextLine+0x23 (01005c4a)
+  01005c46 3c0a cmp al,0xa
+  01005c48 7503 jnz FindNextLine+0x26 (01005c4d)
+  01005c4a 41 inc ecx
+  01005c4b ebf3 jmp FindNextLine+0x19 (01005c40)
+  01005c4d b800000000 mov eax,0x0
+  01005c52 803901 cmp byte ptr [ecx],0x1 ds:00c71000=??
+  01005c55 83d0ff adc eax,0xff
+  01005c58 23c1 and eax,ecx
+  01005c5a c20400 ret 0x4
+
+WORKAROUND
+==========
+
+To work around this problem, import a .csv file that is not 4,096 bytes in size
+(or a multiple of 4,096).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: dfs
+
+======================================================================
+Keywords          : kberrmsg kbfaq
+Component         : NetworkMgmtTool
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

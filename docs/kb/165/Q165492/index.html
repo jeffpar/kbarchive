@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165492: HOWTO: Use ADO with a Visual Foxpro Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165492: HOWTO: Use ADO with a Visual Foxpro Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165492/","publisher":null,"image":null,"headline":"Q165492: HOWTO: Use ADO with a Visual Foxpro Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165492-howto-use-ado-with-a-visual-foxpro-database">Q165492: HOWTO: Use ADO with a Visual Foxpro Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165492
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbDatabase kbODBC kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSuppor
+Last Modified: 21-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+This article assumes that you are familiar with Microsoft Internet
+Information Server (IIS) and with creating Active Server Pages (ASP)
+applications using the programming tools provided with Microsoft Internet
+Information Server or Microsoft Visual InterDev. Additionally, it assumes
+that you are familiar with HTML. For more information on Microsoft
+Information Server and Active Server Pages please see the following Web
+site:
+
+  http://www.microsoft.com/iis/default.asp
+
+SUMMARY
+=======
+
+This article describes how to use ActiveX Data Objects (ADO) on an Active Server
+Page (ASP) to access data in a Visual FoxPro database.
+
+MORE INFORMATION
+================
+
+In order to run Active Server Pages, you must have access to a computer running
+Microsoft Internet Information Server version 3.0. If you currently have IIS
+2.0, you can download IIS 3.0 from the following Web site:
+
+  http://www.microsoft.com/iis/default.asp
+
+In order to access a Visual FoxPro database through ADO, you must have the latest
+Visual FoxPro ODBC driver. To obtain it, go to:
+
+  http://www.microsoft.com/data/
+
+and download the Microsoft Data Access Components, version 2.1.2.4202.3 (GA) or
+later. For more information about obtaining this driver, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q157767 PATCH: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0
+
+There are three ways to set up ODBC to access your database over the Internet
+Information Server:
+
+1. Create a System Data Source on the IIS Server computer that points to the
+  database.
+
+2. Create a File Data Source that points to the database. If you create this
+  Active Server Page in a Database Project in Visual InterDev Studio, if you
+  add a connection that uses a file data source, it includes the data source
+  information in the Global.asa file. This can then be distributed with the
+  Active Server Page.
+
+3. When creating the connection object through VBScript, include the connect
+  string when running the Open method (example below).
+
+Limitations
+-----------
+
+Recordsets, or cursors, generated by Visual FoxPro through the Visual FoxPro ODBC
+Driver must be of type STATIC, or READONLY. The Visual FoxPro ODBC driver does
+not support the KEYSET, or DYNAMIC cursor types.
+
+Example
+-------
+
+This example does not use a specific data source. The connect string is being
+specified in the connection object's Open method. If you do wish to create and
+use a Data source, ensure it is a System Data Source on the Microsoft Internet
+Information Server computer.
+
+Please Remember
+---------------
+
+Change the SourceDB setting to reflect the Tastrade.dbc on the test system.
+Ensure the Visual FoxPro ODBC driver version 6.0.8440.01 is installed on the
+Microsoft Information Server where this Active Server Page is stored. Please see
+article reference above for availability options of this driver.
+
+Contents of the ASP Page
+------------------------
+
+  &lt;%@ LANGUAGE="VBSCRIPT" %&gt;
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;TITLE&gt;VFP ASP ADO Test&lt;/TITLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+  &lt;H3&gt;ActiveX Data Object (ADO)&lt;/H3&gt;
+  &lt;%
+  Set Conn = Server.CreateObject("ADODB.connection")
+  ConnStr= "Driver=Microsoft Visual Foxpro Driver; " + _
+  "UID=;SourceType=DBC;SourceDB=C:\VFP\Samples\Tastrade\Data\Tastrade.dbc"
+  Conn.Open ConnStr   'This can be a datasource name or a connect string
+  Set cmdTemp = Server.CreateObject("ADODB.Command")
+  Set rs = Server.CreateObject("ADODB.Recordset")
+  SQLText="Select Distinct Products.Product_ID,Products.Product_Name,"+ _
+     "Products.English_Name,Products.Unit_Price, " + _
+     "Products.Quantity_In_Unit from Tastrade!Products"
+  cmdTemp.CommandText = SQLText
+  cmdTemp.CommandType = 1 'SQL statement
+  Set cmdTemp.ActiveConnection = Conn
+  rs.CacheSize = 10
+  rs.Open cmdTemp,,adopenstatic
+  %&gt;
+  &lt;P&gt;
+  &lt;TABLE BORDER=1&gt;
+  &lt;TR&gt;
+  &lt;% For i = 0 to RS.Fields.Count - 1 %&gt;
+       &lt;TD&gt;&lt;B&gt;&lt;% = RS(i).Name %&gt;&lt;/B&gt;&lt;/TD&gt;
+  &lt;% Next %&gt;
+  &lt;/TR&gt;
+  &lt;% Do While Not RS.EOF %&gt;
+       &lt;TR&gt;
+       &lt;% For i = 0 to RS.Fields.Count - 1 %&gt;
+            &lt;TD VALIGN=TOP&gt;&lt;% = RS(i) %&gt;&lt;/TD&gt;
+       &lt;% Next %&gt;
+       &lt;/TR&gt;
+       &lt;%
+       RS.MoveNext
+  Loop
+  RS.Close
+  Conn.Close
+  %&gt;
+  &lt;/TABLE&gt;
+  &lt;BR&gt;
+  &lt;BR&gt;
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+REFERENCES
+==========
+
+Additional information on Active Data Object can be found in the following
+sources:
+
+- ADO Web page, http://www.microsoft.com/data/ado/
+- Visual InterDev online documentation; search on ADO
+- Visual InterDev online documentation; search on Active Server Pages
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbDatabase kbODBC kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

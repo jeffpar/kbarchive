@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152424: XFOR: Exchange Requestor Drops Users After Dirsync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152424: XFOR: Exchange Requestor Drops Users After Dirsync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152424/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152424/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152424/","publisher":null,"image":null,"headline":"Q152424: XFOR: Exchange Requestor Drops Users After Dirsync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152424-xfor-exchange-requestor-drops-users-after-dirsync">Q152424: XFOR: Exchange Requestor Drops Users After Dirsync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152424
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage exc4
+Last Modified: 27-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft Exchange Server acts as a directory synchronization (dir-sync)
+requestor, it may drop custom recipients from its Global Address List (GAL).
+This occurs when it processes specific transactions that have been inserted into
+dir-sync through a manual import file.
+
+CAUSE
+=====
+
+Users are dropped when transactions are received that follow the alternative
+format suggested in the "Microsoft Mail Administrator's Guide," for versions 3.2
+and 3.5. On page 328(page 330 of the 3.5 manual), the following example is given
+for modification of a user's template information:
+
+  M George Jones
+   - Title:/Sales Rep
+   - Local:/3423
+   - Department:/Sales
+
+Microsoft Exchange will respond unpredictably when it processes a transaction in
+this format. One effect often seen is that it drops the user from the GAL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of Microsoft
+Exchange Server. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+WORKAROUND
+==========
+
+To make template modifications without encountering this problem, construct the
+input file using modify transactions similar to the following:
+
+  M George Jones                   PCM:ABC/TESTING/GJONES
+    George Jones                   PCM:ABC/TESTING/GJONES
+   - Title:/Sales Rep
+   - Local:/3423
+   - Department:/Sales
+
+Notice the extra line added beneath the line beginning with M. Microsoft Exchange
+expects transactions in this two-line format.
+
+If users have been dropped from the GAL due to this problem, request a full
+import and the users will be restored on the next dir-sync cycle. To request a
+full import on Microsoft Exchange, start the Microsoft Exchange Administrator
+program and view the properties of the Dir-Sync Requestor object. On the
+Settings property page, select the Import on Next Cycle checkbox.
+
+MORE INFORMATION
+================
+
+See Appendix A of the Microsoft Exchange Administrator's Guide for additional
+information regarding the import program and its use with an import file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

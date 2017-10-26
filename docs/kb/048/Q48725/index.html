@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48725: &quot;Illegal Number&quot; Using -2147483648&amp; in Long Integer Notation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48725: &quot;Illegal Number&quot; Using -2147483648&amp; in Long Integer Notation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48725/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48725/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48725/","publisher":null,"image":null,"headline":"Q48725: &quot;Illegal Number&quot; Using -2147483648&amp; in Long Integer Notation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48725-illegal-number-using--2147483648-in-long-integer-notation">Q48725: "Illegal Number" Using -2147483648&amp; in Long Integer Notation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48725
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890824-44 B_BasicCom | mspl13_basic
+Last Modified: 20-DEC-1989
+
+BC.EXE, QB.EXE, and QBX.EXE do not allow the "&amp;" character on the end
+of the smallest (negative) constant allowed for a long integer,
+-2147483648. To enter the smallest long integer constant in your
+source code, you must use either (-2147483647&amp; - 1&amp;) or -2147483648#.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
+for MS-DOS and MS OS/2.
+
+The BC.EXE compiler reports an "Illegal type character in numeric
+constant" error, and the QB.EXE and QBX.EXE editors report an "Illegal
+number" error for the following statement:
+
+   A&amp; = -2147483648&amp;
+
+The error may have surprised you since -2147483648&amp; is within the
+allowed range for long integers (-2147483648&amp; to +2147483647&amp;).
+
+However, this is not a software problem. Both the BASIC compiler and
+the QB and QBX interpreters parse -2147483648&amp; as follows:
+
+   - (2147483648&amp;)
+
+In other words, "take a large long integer and negate it." This means
+that the number is first parsed as a positive long integer and then it
+is negated before it is assigned to the number. However, the largest
+positive long integer is 2147483647 (one fewer than the largest
+negative number), making 2147483648&amp; an illegal number, and therefore,
+causing an error.
+
+You must use one of the following instead:
+
+   A&amp; = (-2147483647&amp; - 1&amp;)
+or
+   A&amp; = -2147483648#
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42595: VARSEG Incorrect for COMMON String Array Passed Through CHAIN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42595: VARSEG Incorrect for COMMON String Array Passed Through CHAIN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42595/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42595/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42595/","publisher":null,"image":null,"headline":"Q42595: VARSEG Incorrect for COMMON String Array Passed Through CHAIN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42595-varseg-incorrect-for-common-string-array-passed-through-chain">Q42595: VARSEG Incorrect for COMMON String Array Passed Through CHAIN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42595
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom buglist4.50 | mspl13_basic
+Last Modified: 7-FEB-1990
+
+The programs shown below demonstrate that VARSEG does not return the
+correct segment address of a string array passed in a COMMON block
+through a CHAIN.
+
+Microsoft has confirmed this to be a problem in QuickBASIC Version
+4.50 for MS-DOS and in Microsoft BASIC Compiler Version 6.00b
+(buglist6.00b) for MS-DOS and MS OS/2. This problem was corrected in
+Microsoft BASIC Professional Development System (PDS) Version 7.00 for
+MS-DOS and MS OS/2 (fixlist7.00).
+
+The following program is TEST.BAS, which dimensions the string array
+and passes it in COMMON:
+
+   COMMON a$()
+   DIM a$(4)
+   CHAIN "test2"
+   END
+
+The following separately compiled program is TEST2.BAS, which
+dimensions another string array and passes both to the C routine. The
+second string array is used for comparison.
+
+   DECLARE SUB crot CDECL (BYVAL plo AS INTEGER, BYVAL pls AS INTEGER)
+   COMMON a$()
+   DIM b$(1)
+   a$(0) = "a0" + chr$(0)
+   b$(0) = "b0" + chr$(0)
+   print varseg(a$(0))
+   print varseg(b$(0))
+   CALL crot(VARPTR(a$(0)), VARSEG(a$(0)))
+   CALL crot(VARPTR(b$(0)), VARSEG(b$(0)))
+
+The following is the C routine CR.C, which should print out the first
+string in each array:
+
+   #include &lt;stdio.h&gt;
+   struct struct_string {
+       int length;
+       char *address;
+                        };
+    void crot(struct struct_string far *string)
+    {
+         printf("%s\n", string-&gt;address);
+    }
+
+To demonstrate the problem from .EXE programs, compile and link as
+follows:
+
+     BC TEST.BAS ;
+     LINK TEST.OBJ ;
+
+     BC TEST2.BAS ;
+
+     CL /AM /c CR.C ;
+
+     LINK /NOE TEST2.OBJ CR.OBJ ;
+
+When TEST.EXE is run, the first line prints garbled, while the second
+prints correctly, as shown below:
+
+   $#lkds
+   b0
+
+Note: If the C routine is changed so that near addressing is used, the
+routine works correctly, as follows:
+
+   #include &lt;stdio.h&gt;
+   struct struct_string {
+       int length;
+       char *address;
+                        };
+   void crot(struct struct_string *string) /* changed to near pointer */
+    {
+         printf("%s\n", string-&gt;address);
+    }
+
+Making the above change correctly displays the following:
+
+   a0
+   b0
+
+This change works because with near addressing, the C routine ignores
+the VARSEG part of the address. This only works if the array a$ lies
+within the default data segment.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

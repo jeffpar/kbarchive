@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168093: SMS: Group Class Is Not Re-Created After Being Deleted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168093: SMS: Group Class Is Not Re-Created After Being Deleted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168093/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168093/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168093/","publisher":null,"image":null,"headline":"Q168093: SMS: Group Class Is Not Re-Created After Being Deleted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168093-sms-group-class-is-not-re-created-after-being-deleted">Q168093: SMS: Group Class Is Not Re-Created After Being Deleted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168093
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbDatabase kbDataLoader kbInventory smsinv smsdatabase smsdataloaderkbfaq
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you delete a group from the Personal Computer Architecture using Systems
+Management Server Database Manager, then attempt to re-create the group by
+reloading the MIF, the attributes for that group do not reappear in the Personal
+Computer Properties window, even if you quit and restart the Systems Management
+Server Administrator program as required. Inventory is reported, but the group
+and its attributes never reappear.
+
+CAUSE
+=====
+
+The Inventory Dataloader does not re-create the group class in the Systems
+Management Server database.
+
+You can diagnose this problem by monitoring the Datalodr.log file for activity
+similar to the following:
+
+     Waiting for a MIF...
+     Processing a machine...
+     Requesting license for client S0100001
+     CMachine::FindMachine - Searching for matching SMS Unique IDs
+     Defining attributes for group GROUPTEST|MYTEST|1.0...
+     CGroupMap::AddColumnToSpecificTable - couldn't add column to table
+     CDefinedArchitecture::InsertDefinedAttribute - could not add column
+     CGroup::DefineAttributes - couldn't defined attribute
+     CGroup::DefineGroupAndAttributes - couldn't define attributes for
+     GROUPTEST|MYTEST|1.0
+     finished processing current machine.
+     SQL problem detected, terminating the thread.
+     SQL problem detected, terminating MIF processing thread.
+
+The Systems Management Server Executive service caches Defined Architecture in
+memory. When Dataloader receives a MIF that contains a group that existed the
+last time the Systems Management Server Executive was initialized, it sees the
+table(s) defined for this group class in cache, even though it has been deleted
+using Database Manager. Instead of re-creating the group class, it attempts to
+add to it. This results in the failure noted in the log example above. The MIF
+is not placed in the Badmifs subdirectory.
+
+WORKAROUND
+==========
+
+Stop and start the SMS_Executive service on the site server. Doing this flushes
+and reinitializes the cache. Inventory Dataloader will then be able to correctly
+process the MIF and re-create the group class. It may also be necessary to force
+inventory or remove the appropriate computer history file for the data to appear
+immediately.
+
+
+Additional query words: prodsms dbclean dbclean.exe
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbDataLoader kbInventory smsinv smsdatabase smsdataloader kbfaq
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

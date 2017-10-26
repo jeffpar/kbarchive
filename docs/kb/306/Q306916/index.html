@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/306/Q306916/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/306/Q306916/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/306/Q306916/","publisher":null,"image":null,"headline":"Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q306916-prb-vbscript-type-mismatch-error-when-field-type-is-adnumeric">Q306916: PRB: VBScript "Type Mismatch" Error When Field Type Is adNumeric</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q306916
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 1.5,2.0,2.5,2.6,2.7
+Operating System(s): 
+Keyword(s): kbnokeyword kbGrpDSVBDB
+Last Modified: 15-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Data Access Components versions 1.5, 2.0, 2.5, 2.6, 2.7 
+- Microsoft Active Server Pages 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Visual Basic Scripting Edition (VBScript) to perform a numeric
+comparison or calculation on an adNumeric (131) field type, you may receive the
+following error messages:
+
+  Microsoft VBScript runtime error '800a000d'
+  Type mismatch
+
+  -and-
+
+  Microsoft VBScript runtime error '800a01ca'
+  Variable uses an Automation type not supported in VBScript
+
+CAUSE
+=====
+
+These error messages occur because VBScript cannot properly convert adNumeric
+values to a valid numeric type.
+
+RESOLUTION
+==========
+
+You can use either of the following two possible workarounds:
+
+- Use the CDbl or CInt function to convert the adNumeric field.
+
+- Use JScript, which does not exhibit this behavior.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+You can reproduce this behavior in an Active Server Pages (ASP) page or through a
+simple Visual Basic Script (.vbs) file. The following steps demonstrate how to
+reproduce the problem in a simple .vbs file.
+
+Create the Oracle Table:
+
+Run the following script on your Oracle server to create the sample table:
+
+  DROP TABLE Cust;
+
+              CREATE TABLE Cust
+               (CustID     NUMBER(22,6) PRIMARY KEY,
+                Name   VARCHAR2(50));
+
+              INSERT INTO Cust VALUES(222,'Kent');
+
+              INSERT INTO Cust VALUES(333,'Sally');
+
+      COMMIT;
+     / 
+
+Create the VBS file:
+
+1. In Notepad, create a new text document named Test.vbs, and paste the
+  following code into Test.vbs:
+
+       Set oConn = CreateObject("ADODB.Connection")
+       oConn.open "Provider=MSDAORA;user id=User;" &amp; _
+       "password=password;data source=Oracle816Server;"
+
+       set oRS = oConn.Execute("Select CustID FROM Cust")
+       MsgBox "Numeric field type is 131." &amp; vbcrlf &amp; _
+       "Field Type = " &amp; ors.fields("CustID").type 
+
+       MsgBox "Numeric field * 100 = " &amp; oRS("CustID") * 100
+      'MsgBox "Numeric field * 100 = " &amp; cdbl(oRS("Custid")) * 100
+
+2. Modify the connection string so it points to your Oracle server and provides
+  a valid user name and password.
+
+3. Save Test.vbs to your desktop. You should receive a warning that changing the
+  extension may make the file unstable. Click OK to continue. If you do not see
+  this warning, you may want to ensure that you are showing extensions for
+  known file types.
+
+4. Close Test.vbs.
+
+5. On your desktop, double-click Test.vbs to run the code. You receive the "Type
+  Mismatch" error message.
+
+Workaround
+----------
+
+6. Uncomment the following line of code, which converts the adNumeric field to a
+  double data type:
+
+      'MsgBox "Numeric field * 100 = " &amp; cdbl(oRS("Custid")) * 100
+
+7. Comment the following line of code:
+
+      MsgBox "Numeric field * 100 = " &amp; oRS("CustID") * 100
+
+8. Close and save Test.vbs.
+
+9. On your desktop, double-click Test.vbs to run the code again. Notice that you
+  receive two message boxes and no error messages.
+
+Additional query words: 800a000d 800a01ca
+
+======================================================================
+Keywords          : kbnokeyword kbGrpDSVBDB 
+Technology        : kbAudDeveloper kbASPsearch kbMDACSearch kbMDAC150 kbMDAC200 kbMDAC250 kbMDAC260 kbMDAC270
+Version           : :1.5,2.0,2.5,2.6,2.7
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

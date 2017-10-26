@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172082/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172082/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172082/","publisher":null,"image":null,"headline":"Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172082-howto-handle-rdo-20-asynchronous-processing-withevents">Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172082
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+RDO 2.0 gives you the ability to handle asynchronous processing more elegantly
+than RDO 1.0. Because Visual Basic allows objects to be dimensioned WithEvents,
+you can use the events of the object as if it were a visual control, such as a
+textbox, rather than constantly referring to properties such as StillExecuting.
+
+MORE INFORMATION
+================
+
+This project is an example of dimensioning object's WithEvents using the events
+of RDO 2.0's rdoConnection object. Be sure to change the connect string and
+query string to correctly connect to and query your database.
+
+The sample establishes an asynchronous connection to the database and runs an
+asynchronous query. When the asynchronous calls are made, the CommandButton on
+the form is disabled. The cbton is then re-enabled in the rdoConnection's
+QueryComplete and Connect event. This code is more elegant than using a timer to
+monitor the StillExecuting property repeatedly.
+
+In the code below, note that the rdoConnection object variable MyConn is treated
+almost like a visual control. From the code window, the MyConn object variable
+is available from the dropdown list of available objects.
+
+Step-by-Step Example
+--------------------
+
+1. Begin by opening a new project and adding a reference to the Microsoft Remote
+  Data Object 2.0. To add a reference, select References from the Project menu.
+
+2. Place a CommandButton on the form and set its Name property to
+  cmdOpenResultset.
+
+3. Add the following code to the form. Be sure to modify the gstrConnect
+  constant accordingly to ensure that RDO will connect to your database:
+
+        Const gstrConnect As String = "DRIVER={SQL Server};" &amp; _
+                                      "SERVER=YourServer;" &amp; _
+                                      "DATABASE=pubs;" &amp; _
+                                      "UID=sa;" &amp; _
+                                      "PWD=;"
+        Const gstrSQL As String = "SELECT * FROM Authors"
+
+        Dim WithEvents MyConn As rdoConnection
+        Dim MyRS As rdoResultset
+
+        Private Sub Form_Load()
+            Set MyConn = New rdoConnection
+            MyConn.Connect = gstrConnect
+            MyConn.CursorDriver = rdUseOdbc
+            MyConn.EstablishConnection rdDriverNoPrompt, _
+                                       False, _
+                                       rdAsyncEnable
+            cmdOpenResultset.Enabled = False
+            Caption = "Opening Connection..."
+        End Sub
+
+        Private Sub cmdOpenResultset_Click()
+            Set MyRS = MyConn.OpenResultset(gstrSQL, _
+                                            rdOpenStatic, _
+                                            rdConcurReadOnly, _
+                                            rdExecDirect + rdAsyncEnable)
+            cmdOpenResultset.Enabled = False
+            Caption = "Running Query..."
+        End Sub
+
+        Private Sub MyConn_Connect(ByVal ErrorOccurred As Boolean)
+            If ErrorOccurred Then
+                Caption = "Error Occurred!"
+            Else
+                Caption = "Connection Established!"
+                cmdOpenResultset.Enabled = True
+            End If
+        End Sub
+
+        Private Sub MyConn_QueryComplete(ByVal Query As RDO.rdoQuery, _
+                                         ByVal ErrorOccurred As Boolean)
+            IF ErrorOccured Then
+                Caption = "Error Occurred!"
+            Else
+                Caption = "Query Complete!"
+                cmdOpenResultset.Enabled = True
+            End IF
+        End Sub
+
+4. Run the project.
+
+REFERENCES
+==========
+
+For more information on RDO 2.0's new functionality or on dimensioning objects
+WithEvents, please refer to the Visual Basic Help files or to Books Online.
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+
+Contributions by David Sceppa, Microsoft Corporation
+
+Additional query words: WithEvents kbdse kbDSupport kbVBp kbVBp500 kbVBp600 KbVS97 kbRDO
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

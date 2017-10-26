@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162925/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162925/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162925/","publisher":null,"image":null,"headline":"Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162925-adtode-setup-does-not-create-certain-shortcuts">Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162925
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbusage
+Last Modified: 16-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+
+SYMPTOMS
+========
+
+If you install an ODE run-time application to a folder that contains parentheses
+() in the folder name, any shortcut that points to the installation folder will
+not be created.
+
+NOTE: This behavior occurs only with a Microsoft Access Developer's Toolkit
+(ADT), version 7.0 or a Microsoft Office Developer Edition Tools (ODE) run-time
+application being installed on Microsoft Windows NT, version 3.51.
+
+CAUSE
+=====
+
+This behavior is caused by a problem with the ACME Setup utility used by the ADT
+and the ODE.
+
+RESOLUTION
+==========
+
+On Windows NT 3.51, do not use installation folders that contain parentheses.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Developer
+Edition Tools.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start the Setup Wizard.
+
+2. Add the Northwind sample database set as the Application's Main File and a
+  custom workgroup file that can be created by copying the system.mdw from the
+  Windows\System folder to custom.mdw set as Workgroup File.
+
+3. Create the following three shortcuts with the file to open being the
+  Northwind sample database file:
+
+   - One with the run-time option (wizard-provided command line)
+
+   - One with the workgroup option (wizard-provided command line)
+
+   - One with a user specified Command Line with wrkgadm.exe as the executable
+
+4. Click Next to go to the Registry Entries page of the Setup Wizard, and click
+  Next again.
+
+5. Make sure that Microsoft Access Run-time Version and Workgroup Administrator
+  are selected on the next page, and click Finish to generate the disk images.
+
+6. Run Setup from the disk images folder under the Setup Wizard folder to
+  install the run-time application. Change the installation folder to
+  c:\sample(sample).
+
+  Note that you receive the following error message for the run-time shortcut
+  and the wrkgrp shortcut:
+
+  Setup was unable to create an item in the Program Manager group
+  '&lt;application name&gt;', item: ' "&lt;shortcut
+  name&gt;",,0,0,0,"C:\sample(sample)",0,0,0'
+
+However, the Workgroup Administrator shortcut is created and Setup is completed
+"successfully."
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

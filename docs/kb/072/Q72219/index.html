@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72219/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72219/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72219/","publisher":null,"image":null,"headline":"Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72219-info-context-sensitive-help-in-a-dialog-box-through-f1">Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72219
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): _IK kb16bitonly kbDlg kbSDKPlatform kbGrpDSUser kbUser
+Last Modified: 10-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an application developed with Windows version 3.0 and later, to implement the
+ability to request context-sensitive help by pressing the F1 key in a dialog
+box, it is necessary to install a message filter.
+
+This article describes how to install the message filter. In particular, it
+describes code that you can add to the Generic sample application (included with
+the Windows Software Development Kit) to install a message filter that would
+detect F1 keystrokes in the About Generic modal dialog box.
+
+MORE INFORMATION
+================
+
+Detecting F1 Keystrokes in a Dialog Box
+---------------------------------------
+
+Normally, the child control windows in a dialog box do not pass keystroke
+messages on to the dialog box window. To detect F1 keystrokes in a dialog box,
+it is necessary to install a message filter.
+
+Installing a Filter Function
+----------------------------
+
+Page 1-65 of the "Microsoft Windows Software Development Kit Reference, Volume 1"
+for version 3.0 of the Windows SDK and page 70 of "Programmer's Reference,
+Volume 1, Overview" for version 3.1 of the Windows SDK describe the method for
+installing a filter function for Windows.
+
+Sample Code
+-----------
+
+Perform the following six steps to add code to the Generic sample application to
+provide context-sensitive help in the About Generic modal dialog box:
+
+1. Define a private message that the filter function can post to the
+  application. For example:
+
+     #define PM_CALLHELP  WM_USER+1000
+                                    // wParam and lParam can be used to
+                                    // pass context information
+
+2. Define global variables:
+
+     FARPROC lpfnFilterProc;        // Our filter function
+        HHOOK hHook;                   // hook handle
+
+3. Add a filter function to the C-language source file. For example:
+
+     /*--------------------------    FilterFunc -------------------------*/ 
+     // 
+     //   PARAMETERS:
+     // 
+     //      nCode : Specifies the type of message being processed. It will
+     //              be either MSGF_DIALOGBOX, MSGF_MENU, or less than 0.
+     // 
+     //      wParam: specifies a NULL value
+     // 
+     //      lParam: a FAR pointer to a MSG structure
+     // 
+     // 
+     //   GLOBAL VARIABLES USED:
+     // 
+     //      hHook
+     // 
+     // 
+     //   NOTES:
+     // 
+     //     If (nCode &lt; 0), return CallNextHookEx IMMEDIATELY.
+     // 
+     //     If (MSGF_DIALOGBOX==nCode), set the local variable ptrMsg to
+     //     point to the message structure. If this message is an F1
+     //     keystroke, ptrMsg-&gt;hwnd will contain the HWND for the dialog
+     //     control that the user wants help information on. Post a private
+     //     message to the application, then return 1L to indicate that
+     //     this message was handled.
+     // 
+     //     When the application receives the private message, it can call
+     //     WinHelp. WinHelp must NOT be called directly from the
+     //     FilterFunc() routine.
+     // 
+     //     In this example, post a private PM_CALLHELP message to the
+     //     dialog box. wParam and lParam can be used to pass context
+     //     information.
+     // 
+     //     If the message is not an F1 keystroke, or if nCode is
+     //     MSGF_MENU, we return 0L to indicate that we did not process
+     //     this message.
+     // 
+     // 
+
+     DWORD CALLBACK FilterFunc(nCode, wParam, lParam)
+     int   nCode;
+     WORD  wParam;
+     DWORD lParam;
+     {
+        MSG FAR * ptrMsg;
+
+        if (nCode &gt;= 0)                         // MUST return CallNextHookEx
+        {
+           if (MSGF_DIALOGBOX == nCode)
+           {
+              ptrMsg = (MSG FAR *)lParam;
+
+              if ((WM_KEYDOWN == ptrMsg-&gt;message)
+                     &amp;&amp; (VK_F1 == ptrMsg-&gt;wParam))
+              {
+                 // Use PostMessage here to post an application-defined
+                 // message to the application. Here is one possible call:
+                 PostMessage(GetParent(ptrMsg-&gt;hwnd),
+                                        PM_CALLHELP, ptrMsg-&gt;hwnd, 0L);
+                 return 1L;                       // Handled it
+              }
+           }
+        }
+        return CallNextHookEx(hHook, nCode, wParam, lParam);
+     }
+     /*--------------------- end FilterFunc  ----------------------------*/ 
+
+4. Export the filter function in the module definition file.
+
+5. Before calling DialogBox(), set the hook. After DialogBox() returns, unhook
+  the hook. For example, the About Generic dialog box could be called as
+  follows:
+
+     case IDM_ABOUT:
+       lpProcAbout    = MakeProcInstance(About, hInst);
+       lpfnFilterProc = MakeProcInstance(FilterFunc, hInst);
+       hHook    = SetWindowsHookEx(WH_MSGFILTER,
+                                         lpfnFilterProc,
+                                         hInst,
+                                         NULL);
+
+       DialogBox(hInst, "AboutBox", hWnd, lpProcAbout);
+
+       UnhookWindowsHookEx(hHook);
+       FreeProcInstance(lpfnFilterProc);
+       FreeProcInstance(lpProcAbout);
+
+       break;
+
+6. Make the application respond to the private message by calling WinHelp.
+
+REFERENCES
+==========
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kb16bitonly kbDlg kbSDKPlatform kbGrpDSUser kbUser 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

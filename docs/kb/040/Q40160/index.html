@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40160/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40160/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40160/","publisher":null,"image":null,"headline":"Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40160-prb-c2001-newline-in-constant-for-a-string-on-multiple-lines">Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40160
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbCompiler kbprb
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+   - Microsoft C for OS/2, versions 6.0, 6.0a 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.50, 1.51 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If program contains a string literal that is incorrectly split over multiple
+lines the following error will occur:
+
+  error C 2001: newline in constant
+
+Several other errors may be caused by this also. This sample will also give
+errors C2065, C2121, C2143, and C2198 as a result of the newline errors.
+
+CAUSE
+=====
+
+This is a common programming mistake. Special considerations must be taken to
+split a constant string over several lines.
+
+RESOLUTION
+==========
+
+The best method is to change the format string, as in the following example
+(this works because strings separated only by spaces, tabs, and/or newlines are
+concatenated as specified by the ANSI standard):
+
+     printf("\n %s"
+            " %s"
+            " %s",
+            "this", "is", "it");
+
+The older and less-preferred method is to use continuation lines by typing a
+backslash followed by a carriage return at the end of a line, as in the
+following example:
+
+     printf("\n %s\ 
+            %s\ 
+            %s",
+            "this", "is", "it");
+
+This is not as good as the previous example because the spaces at the beginning
+of the continuation line become part of the string, unlike the first example.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  #include &lt;stdio.h&gt;
+  void main()
+  {
+     printf("\n %s"
+            " %s"
+            " %s",
+            "this", "is", "it");
+  }
+
+
+Additional query words: 1.00 1.50 2.00 2.10 6.00 6.00a 6.00ax 7.00 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbCompiler kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

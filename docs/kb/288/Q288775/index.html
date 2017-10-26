@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288775/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288775/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288775/","publisher":null,"image":null,"headline":"Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288775-prb-authentication-dialog-box-when-exchange-accessed-with-mapi">Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288775
+Product(s): Microsoft Exchange
+Version(s): 1.0,1.21,4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbCDO kbMAPI kbMsg kbGrpDSMsg kbDSupport kbExchange2000SP1Fix
+Last Modified: 12-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Extended Messaging Application Programming Interface (MAPI), version 1.0 
+- Microsoft Exchange 2000 Server 
+- Collaboration Data Objects (CDO), version 1.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use MAPI or CDO to log on to an Exchange server, a dialog box prompts
+you for credentials. This dialog box has the caption "Enter Password" and fields
+for "User Name", "Domain Name", and "Password".
+
+CAUSE
+=====
+
+The account that the code is running under is in a domain that is not trusted by
+the Exchange Server's domain, or is not logged on to a domain at all.
+
+RESOLUTION
+==========
+
+MAPI and CDO rely on the Exchange Message Store (EMS) provider to communicate
+with Exchange. The EMS provider uses the credentials of the user that is
+currently logged on to establish a remote procedure call (RPC) connection with
+the Exchange server. If these credentials are insufficient to establish the RPC
+connection, the provider prompts the user for additional credentials. There is
+no way to pass credentials to the provider programmatically.
+
+There are three ways to avoid this dialog box:
+
+- Join the domain in which the Exchange server is operating. In other words,
+  run the code under an account that is in the Exchange server's domain.
+
+- Establish a trust relationship between the domain that your computer is
+  running in and the domain of the other computer. If the two domains trust
+  each other, they can exchange authentication information.
+
+- Use the SendKeys method or a similar method to fill in the blanks on the
+  credentials dialog box. Note that this method is not recommended, because a
+  subtle change in the layout of the dialog box may break it.
+
+The last option is the equivalent of manually filling out the credentials dialog
+box. Note that because no authentication has yet taken place, there is no way to
+encrypt this information; therefore, it is transmitted as plain text to the
+Exchange Server.
+
+Additional query words: MAPILogon MAPILogonEx Session logon box authentication
+
+======================================================================
+Keywords          : kbCDO kbMAPI kbMsg kbGrpDSMsg kbDSupport kbExchange2000SP1Fix 
+Technology        : kbAudDeveloper kbCDOsearch kbMAPISearch kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword kbZNotKeyword2 kbExchange2000Search kbCDO121 kbExchange2000Serv kbMAPIExt
+Version           : :1.0,1.21,4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

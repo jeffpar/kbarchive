@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245058: XADM: Information Store Service Specific Error 4294966264 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245058: XADM: Information Store Service Specific Error 4294966264" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245058/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245058/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245058/","publisher":null,"image":null,"headline":"Q245058: XADM: Information Store Service Specific Error 4294966264","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245058-xadm-information-store-service-specific-error-4294966264">Q245058: XADM: Information Store Service Specific Error 4294966264</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245058
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 24-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you start the Information Store service by using Services in Control Panel,
+the following error message may be displayed:
+
+  The Microsoft Information Store service returned service specific error
+  4294966264
+
+The following events are logged in the application event log:
+
+  Event ID: 145
+  Source: ESE97
+  Category: General
+  Type: Error
+  Description:
+  MSExchangeIS The database engine could not access the file call "directory
+  path"\EDB.chk
+
+  Event ID: 145
+  Source: ESE97
+  Category: General
+  Type: Error
+  Description:
+  MSExchangeIS The database engine could not access the file call "directory
+  path"\EDB.log
+
+  Event ID: 1120
+  Source: MSExchangeIS
+  Category: General
+  Type: Error
+  Description:
+  Error 0xfffffbf8 initializing the Microsoft Exchange Information Store
+  database
+
+  Event ID: 5000
+  Source: MSExchangeIS
+  Category: General
+  Type: Error
+  Description:
+  Unable to initialize the Microsoft Exchange Information Store database Error
+  0xfffffbf8
+
+This issue can also happen if the PRIV.EDB is marked with a read-only attribute.
+
+
+CAUSE
+=====
+
+This issue can occur if the Exchange Server service account does not have Write
+permission to the Priv.edb file. The ability to write to this file can be
+restricted by insufficient NTFS file system (NTFS) rights to the PRIV.EDB file,
+or by a read-only file attribute applied to the PRIV.EDB file.
+
+RESOLUTION
+==========
+
+To resolve this issue, give full access rights to the Exchange Server service
+account for the directory that the Priv.edb file is in:
+
+1. Start Windows NT Explorer.
+
+2. Right-click the Exchsrvr\Mdbdata folder, and then click Properties.
+
+3. Click the Security tab, and then click Permissions.
+
+4. Click either the group Everyone or "Exchange service account".
+
+5. In the list, select Full Control.
+
+6. Click to select the "Replace Permissions on Subdirectories" check box and the
+  "Replace Permissions on Existing Files" check box.
+
+7. Click OK, and then click Yes.
+
+8. Verify that PRIV.EDB file has not been marked "Read Only".
+
+9. Navigate into the Exchsrvr\Mdbdata folder.
+
+10. Right-click the PRIV.EDB file, and then click Properties.
+
+11. On the General tab, ensure that the "Read Only" attribute is not checked.
+
+12. Click OK to close the Properties dialog box.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

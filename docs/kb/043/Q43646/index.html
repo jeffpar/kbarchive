@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43646: INFO: What Causes the Startup Code to Be Included | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43646: INFO: What Causes the Startup Code to Be Included" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43646/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43646/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43646/","publisher":null,"image":null,"headline":"Q43646: INFO: What Causes the Startup Code to Be Included","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43646-info-what-causes-the-startup-code-to-be-included">Q43646: INFO: What Causes the Startup Code to Be Included</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43646
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The object modules created by the Microsoft C Compiler versions 5.1 and earlier
+contain a reference to the variable _acrtused. This variable causes the linker
+to bring in the C startup code. To not link the C startup code, it is necessary
+to define _acrtused as follows:
+
+     int _acrtused = 0;
+
+Object modules created with the Microsoft C Compiler for MS-DOS, version 6.0,
+6.0a, or 6.0ax only have a reference to the _acrtused variable if the source
+file contains a function called main(). In addition, C/C++ versions 7.0 and 8.0
+for MS-DOS generate the reference for files containing a WinMain() or LibMain()
+function.
+
+For 32-bit targets, __acrtused is not used. Instead, the linker must be told what
+entry point name to use. The Visual C++ for Windows NT linker picks the name
+based on the executable type. With the Windows Software Development Kit (SDK)
+linker, the correct entry point must be specified in the makefile or on the
+command line. The three entry points are:
+
+  Executable Type     Entry Point     Entry Point Name
+  ----------------------------------------------------
+  Console             main()          _mainCRTStartup
+  Windows             WinMain()       _WinMainCRTStartup
+  DLL                 DllMain()       _DllMainCRTStartup@12
+
+MORE INFORMATION
+================
+
+With Visual C++ 2.x and above, if a DLL project specifies an entry point and
+attempts to call a CRT function, the linker issues error LNK2001 because it is
+looking for main(). To successfully link the DLL, remove the project setting for
+entry point. As mentioned in the SUMMARY, _DllMainCRTStartup is the correct
+entry point.
+
+Additional query words: MFC AFXDLL AFXEXT extension acrtused kbvc100 kbvc150 kbvc1.51 kbvc152 kbvc200 kbvc210 kbvc400 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbCRT kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:1.0,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

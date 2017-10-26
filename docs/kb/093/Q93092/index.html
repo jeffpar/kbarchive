@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93092/","publisher":null,"image":null,"headline":"Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93092-novell-netware-windows-for-workgroups-and-arcnet-cards">Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93092
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you choose the Novell NetWare option in the Networks dialog box of Control
+Panel and you are using an ArcNet network interface card (NIC), you receive the
+following error message:
+
+  The network Novell NetWare cannot be added because Windows for Workgroups
+  does not support this network with your ArcNet adapter.
+
+CAUSE
+=====
+
+Using an ArcNet NIC to connect to your Novell NetWare network from a Windows for
+Workgroups workstation is not supported in the current version of Windows for
+Workgroups. This is because Windows for Workgroups and Novell NetWare handle
+ArcNet data packets somewhat differently.
+
+MORE INFORMATION
+================
+
+Windows for Workgroups is implemented to fully support Novell NetWare
+connectivity. You can upgrade a Novell NetWare client workstation to a Windows
+for Workgroups workstation, or configure a Windows for Workgroups workstation to
+access a Novell NetWare server. Windows for Workgroups supports the Microsoft
+network transport protocol (NetBEUI) and the Novell network transport protocol
+(IPX) on the same network adapter card by including a Novell-compatible
+protocol, MSIPX.
+
+MSIPX supports Token Ring and Ethernet MAC* header formats, but not token-passing
+bus network header formats, such as ArcNet. When you use an ArcNet NIC with
+Windows for Workgroups, the ArcNet NDIS (MAC-level) driver emulates Ethernet
+protocol and uses Ethernet header formats. That is how Windows for Workgroups
+recognizes data packets sent along the ArcNet network.
+
+NOTE: *MAC is the Media Access Control layer, a sublayer of the data-link level
+in the OSI model. The MAC layer communicates directly with the network adapter
+card.
+
+Novell NetWare's IPX protocol handles ArcNet data packets by "fragmenting" them
+at the sending end, and then reconstructing them at the receiver end. NetWare
+does this because ArcNet protocol creates packets that are smaller than the
+minimum size that NetWare protocol supports.
+
+The problem occurs when you use an ArcNet card with Windows for Workgroups over a
+Novell NetWare network. The Novell network protocol expects to see a fragmented
+ArcNet data packet; however, since the ArcNet NDIS driver encapsulates data
+packets in an Ethernet-type header so that Windows for Workgroups can read them,
+the Novell NetWare network no longer recognizes them.
+
+Additional query words: 3.10 arcnet
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

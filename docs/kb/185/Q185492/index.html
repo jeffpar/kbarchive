@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185492/","publisher":null,"image":null,"headline":"Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185492-golf-9899-invalid-page-fault-err-msg-or-hang-starting-game">Q185492: Golf 98/99: "Invalid Page Fault" Err Msg or Hang Starting Game</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185492
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kburl kbtlc kbimu msgame golf98kbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf 1998 Edition, version 1.0 
+- Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Golf, you may experience one of the following
+symptoms:
+
+- You receive an error message similar to one of the following:
+
+  - Golf9&lt;x&gt; caused an invalid page fault in module Findstuff.dll.
+
+  - Golf9&lt;x&gt; caused an invalid page fault in module Dibeng.dll.
+
+- The program quits unexpectedly.
+
+- The program stops responding (hangs) at the startup screen.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+- The display resolution setting is incorrect.
+
+- The Color Palette display setting is incorrect.
+
+- The monitor setting is incorrect.
+
+- One of more of the DirectX files is missing or damaged.
+
+- Multiple instances of a device are loaded when you start Windows.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Color Palette or Colors box, click High Color (16 bit).
+
+5. Move the Desktop Area or Screen Area slider to the 800 x 600 setting.
+
+6. Click OK. If you are prompted to restart the computer, do so.
+
+  NOTE: If you are unable to change the resolution setting to 800 x 600, verify
+  that the correct monitor is selected and that the monitor supports a
+  resolution setting of 800 x 600.
+
+If the display resolution is 800 x 600 or higher and the color palette is already
+set to High Color (16-bit) or greater, reinstall the necessary DirectX files. To
+do this, follow these steps:
+
+1. Insert the Golf CD-ROM into the CD-ROM drive. Press and hold down the SHIFT
+  key when you insert the Golf CD-ROM to prevent Golf from starting
+  automatically.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following line and then click OK
+
+  &lt;drive&gt;:\
+
+  where &lt;drive&gt; is the drive letter of the CD-ROM drive.
+
+4. Right-click the DirectX folder, and then click Copy.
+
+5. Close the CD-ROM drive window.
+
+6. Right-click on the desktop, and then click Paste.
+
+7. Restart the computer in Safe mode. To do this, use the appropriate method for
+  your version of Microsoft Windows:
+
+  Microsoft Windows 95
+  --------------------
+
+  Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then choose Safe Mode from the Startup menu.
+
+  Microsoft Windows 98
+  --------------------
+
+  Restart the computer, press and hold down the CTRL key after the computer
+  completes the Power On Self Test (POST), and then choose Safe Mode from the
+  Startup menu.
+
+8. When Windows starts in Safe mode, click OK, and then double-click the DirectX
+  folder on the desktop.
+
+9. Double-click the Dxsetup.exe file, and then follow the instructions on the
+  screen to reinstall DirectX.
+
+10. When you are prompted to restart the computer, click Yes.
+
+If the problem continues, download and install the latest version of DirectX from
+the following Microsoft Web site:
+
+  http://www.microsoft.com/directx
+
+For more information about how to obtain the latest version of DirectX, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q179113 How to Download and Install DirectX
+
+If you continue to receive the error message, verify that no duplicate devices
+are loaded when you start Windows. For information about how to check for and
+disable multiple devices, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q187916 Game Stops Responding or Quits Unexpectedly
+
+Additional query words: golf98 msgame ghosted dx dx6 direct-x
+
+======================================================================
+Keywords          : kbenv kberrmsg kburl kbtlc kbimu msgame golf98 kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf98 kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

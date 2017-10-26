@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168380/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168380/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168380/","publisher":null,"image":null,"headline":"Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168380-bug-incorrect-evaluation-of-static-member-functions-in-debugge">Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168380
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbtool kbDebug kbide kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbvfp600bug
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Integrated Debugger, used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Function evaluation of static member functions cannot be done in the Watch or
+the QuickWatch window of the debugger. You a wrong value, or get the following
+error message:
+
+  Error:cannot display value
+
+CAUSE
+=====
+
+The expression evaluator in the debugger does not properly distinguish between
+static and non-static methods. The first case listed above appears to be an
+evaluation of a method without a "this" pointer, hence, we get an "Error:cannot
+display value" message. The second case occurs because the debugger is not
+properly distinguishing between static and non-static member functions. The
+"this" pointer is pushed onto the stack to evaluate the static member function,
+which is incorrect.
+
+RESOLUTION
+==========
+
+There is no workaround. Do not attempt to evaluate static member functions from
+within the debugger, either in the watch or quick watch window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Use the following sample code and build it with debug information:
+
+      class A
+      {
+        public:
+        static int bar (int i) {return i;}
+      };
+
+      void main ()
+      {
+        A  f;
+        int j = A::bar(200);
+        int i = f.bar(100);
+      }
+
+Start the debugger by stepping into (F11 key) function "main." In the Watch or
+QuickWatch window, type A::bar(200) and you will get the error message described
+in the SYMPTOMS section. Typing f.bar(100) produces a wrong value.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbDebug kbide kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbvfp600bug 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

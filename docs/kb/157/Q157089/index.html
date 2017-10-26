@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157089/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157089/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157089/","publisher":null,"image":null,"headline":"Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157089-wd97-limitations-of-converting-from-wordperfect-6x-to-word-97">Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157089
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbconversion word97kbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Word 97, you can use the WordPerfect 6.x converter to open
+WordPerfect 6.x for Windows or MS-DOS documents.
+
+NOTE: You cannot save a Word 97 document in WordPerfect 6.x format. However, you
+can save the Word 97 document in WordPerfect 5.x format and then open the
+WordPerfect 5.x document in WordPerfect 6.x.
+
+For additional information on the limitations of converting between Word 97 and
+WordPerfect 5.x, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q157085 Limitations of Converting from Word 97 to WordPerfect 5.x
+
+MORE INFORMATION
+================
+
+The following table lists features that are partially supported, are not
+supported, or that require some comment.
+
+Yes             The feature converted from WordPerfect 6.x to Word 97.
+
+Not Supported   The feature is not supported in one of the products.
+
+See Comment     The feature is partially supported. Refer to the Comments
+               for additional information.
+
+                    WordPerfect 6.x
+  Feature           to Word 97           Comments
+  ------------------------------------------------------------------------
+
+  Strikeout         Yes                  Strikeout becomes strikethrough
+  and redlining                          formatting in Word; redlining
+                                         becomes tracked changes in Word
+
+  Kerning           Yes
+
+  Word and          Not supported
+  letter spacing
+
+  Hidden text       Yes
+
+  [Center],         Yes                  Center and Flush Right codes
+                                         convert
+
+  [Flsh Rgt] codes                       to center- and right-aligned tabs
+
+  Back tabs         See comment          Back tabs that are preceded by
+                                         text are not converted
+
+  Default tabs      See comment          Trailing default tabs at the ends
+                                         of lines are not converted
+
+  Tab leaders       See comment          Dot, dash, and underscore tab
+                                         leaders are converted to the same
+                                         tab leaders in Word. All other
+                                         tab leaders become dot leaders in
+                                         Word
+
+  Keep Text         Yes
+  Together
+  properties
+
+  Leading           Not supported
+  adjustment
+  between lines,
+  baselines
+
+  Paragraph         Yes                  Paragraph margins are converted
+                                         to margins left and right
+                                         paragraph indents in Word
+
+  Spacing between   Yes                  Spacing between paragraphs
+                                         becomes paragraphs Spacing After
+                                         paragraph format in Word
+
+  Styles            See comment          From WordPerfect to Word, styles
+                                         containing paragraph formatting
+                                         codes convert to paragraph
+                                         styles. WordPerfect styles
+                                         containing only character
+                                         formatting convert to character
+                                         styles in Word. Text contained in
+                                         a style is converted as normal
+                                         text
+
+  Advance           Yes                  Advance codes are converted to
+                                         ADVANCE fields in Word. Advance
+                                         codes that move text upward on a
+                                         page cannot be fully emulated in
+                                         Word
+
+  Bookmarks         Yes
+
+  Borders and fill  Not supported
+  (for column and
+  page)
+
+  Captions          Not supported
+
+  Chapter and       Not supported
+  volume numbers
+
+  Comments          Yes                  Word does not retain comments in
+                                         headers, footers, footnotes, and
+                                         endnotes
+
+  Cross-references  Not supported        Retained as plain text in
+  and hypertext                          Word
+  links
+
+  Descriptive Name  Not Supported        To retain the Descriptive Name,
+                                         use the WordPerfect 5.x converter
+                                         which will save the Descriptive
+                                         Name into the Title field of the
+                                         document properties.
+
+  Drop caps         Not supported
+
+  Equations         See comment          Equations are converted as
+                                         editable equation objects.
+                                         Equation fields are not converted
+
+  Footnotes         Yes                  Custom footnote marks are
+                                         converted to automatically
+                                         numbered marks. If the numbering
+                                         format of notes is changed in a
+                                         document, the notes numbered with
+                                         the new format are converted as
+                                         custom notes
+
+  Indexes and       Not supported        Indexes and lists are retained as
+  lists                                  plain text in Word.
+
+  Insert Filename   Yes
+
+  Labels and        Not supported        Text of labels is retained in
+  barcodes                               Word
+
+  Line numbers      Not supported
+
+  Macros            Not supported
+
+  Margins           Yes                  WordPerfect margins are measured
+                                         from the top and bottom edge of
+                                         the page to the top of the header
+                                         and bottom of the footer,
+                                         respectively. Word margins are
+                                         measured from the paper's edge to
+                                         body text. The conversion adjusts
+                                         the margins to preserve page
+                                         layout. If margins do not convert
+                                         correctly, click Page Setup on
+                                         the File menu, click the Margins
+                                         tab, select the options you want,
+                                         and then click OK.
+
+  Master            Yes
+  documents,
+  subdocuments
+
+  Merge codes       Not supported        Merge constructs and macros are
+                                         lost when converting to Word
+
+  Outline,          Yes                  All are converted to numbers in
+  paragraph                              Word
+  Numbering
+
+  Page features     See comment          Center page and page binding are
+  (center page,                          supported
+  page binding,
+  and subdivide
+  pages)
+
+  Parallel columns  See comment          Parallel columns convert to
+                                         tables
+
+  Table vertical    Yes
+  cell merge and
+  cell alignment
+
+  Text boxes/lines  See comment          Some text boxes and lines convert
+                                         to Word drawing layer objects.
+                                         Drawing layer objects are visible
+                                         only in page layout view, print
+                                         preview, and when printed.
+                                         Graphics boxes that are anchored
+                                         to a page or paragraph, have
+                                         wrap-around text, and are
+                                         located in tables, parallel
+                                         columns, or headers/footers are
+                                         converted to boxes with wrap
+                                         through in Word (may appear to be
+                                         be text boxes with text
+                                         overlapping. In most cases,
+                                         these boxes become drawing layer
+                                         objects in Word. Graphic lines
+                                         become solid lines. Text that is
+                                         tight-wrapped around a graphic
+                                         becomes square-wrapped. Note:
+                                         there may be a combination of
+                                         attributes that cause
+                                         inconsistent conversion.
+
+  Watermarks        Yes
+
+  WordPerfect       Yes                  If the WordPerfect fonts
+  characters                             containing the characters are
+                                         available on the system, all the
+                                         characters are converted. If one
+                                         or more of these fonts are not
+                                         available, some characters may
+                                         not be converted.
+
+Additional query words: conversion converts converting transferred transferring transfers import export textconv WordPerfect wpft 6.x 5.2 5.1 5.0 5.x
+
+======================================================================
+Keywords          : kbdta kbconversion word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

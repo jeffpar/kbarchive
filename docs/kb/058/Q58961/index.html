@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58961: If .DLL Is Linked with CRTLIB, Then .EXE Must Be Linked, Too | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58961: If .DLL Is Linked with CRTLIB, Then .EXE Must Be Linked, Too" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58961/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58961/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58961/","publisher":null,"image":null,"headline":"Q58961: If .DLL Is Linked with CRTLIB, Then .EXE Must Be Linked, Too","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58961-if-dll-is-linked-with-crtlib-then-exe-must-be-linked-too">Q58961: If .DLL Is Linked with CRTLIB, Then .EXE Must Be Linked, Too</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58961
+Product(s): See article
+Version(s): 5.10
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 6-MAR-1990
+
+When you write a program that uses a DLL that has been linked with
+CRTLIB.DLL, then the program itself must also link with CRTLIB.DLL.
+The diagram and text in Section 5.2 of MTDYNA.DOC explain this close
+relationship in detail.
+
+Also in MTDYNA.DOC, the table in Section 6 is very useful for
+identifying which components to use for which type of output file
+(.EXE or .DLL). The following is a diagram of the library
+relationships in the table:
+
+               +---------+       |                    +---------+
+           /   | xLIBCyP |       |                /   | LLIBCDLL|
+       single  +---------+       |            single  +---------+
++-----+/  thread                 |     +-----+/  thread
+| EXE |                          |     | DLL |
++-\---+\                         |     +-----+\
+  multiple                       |           multiple
+    thread     +---------+       |             thread +---------+
+     \      \  | LLIBCMT |       |                \   | CRTLIB  |
+      \ (or)   +---------+       |                    +---------+
+       \ ________________________________________________/
+
+As long as the .EXE is independent of any DLLs, it links with either
+xLIBCyP.LIB or LLIBCMT.LIB, depending on whether the .EXE is single or
+multithreaded. When the .EXE uses a DLL, the .EXE links with either
+xLIBCyP.LIB or CRTLIB.LIB, depending on whether the DLL is single or
+multithreaded.
+
+Additional .OBJs and .LIBs are linked for multithreaded .EXEs and for
+single and multithreaded DLLs. You can find complete detailed
+information about compiling and linking multithreaded programs and
+dynamic link libraries in MTDYNA.DOC, which is provided on the C 5.10
+disks.
+
+For further information, query on the following words:
+
+   CRTLIB and DLL
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

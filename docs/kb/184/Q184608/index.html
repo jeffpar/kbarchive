@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184608/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184608/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184608/","publisher":null,"image":null,"headline":"Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184608-howto-programmatically-create-a-dsn-for-sql-server-with-vb">Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184608
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVBDB
+Last Modified: 21-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to programmatically create a Data Source Name
+(DSN) for SQL Server using Visual Basic. The technique discussed in this article
+uses Windows Application Programming Interface (API) functions to create and
+manipulate entries in the Windows Registry.
+
+MORE INFORMATION
+================
+
+DSNs are usually created through the ODBC Data Source Administrator window,
+which is accessible from the Windows Control Panel (or Administrator Tools in
+Windows 2000). Other techniques that provide access to ODBC-compliant databases
+include using RegisterDatabase (a Data Access Object (DAO) method), using the
+SQLConfigDataSource ODBC API function, or using a DSN-less connection string.
+
+However, it is possible to establish a new DSN by manually creating and
+manipulating values in the Windows Registry. The following technique uses the
+RegCreateKey, RegSetValueEx, and RegCloseKey API functions to create a system
+DSN for a SQL Server database.
+
+Step-by-Step Procedures
+-----------------------
+
+1. Open a new Visual Basic project. Form1 is created by default. Put a
+  CommandButton on Form1 (Command1), and put the following code in the General
+  Declarations section of the code for Form1:
+
+      Option Explicit
+
+      Private Const REG_SZ = 1    'Constant for a string variable type.
+      Private Const HKEY_LOCAL_MACHINE = &amp;H80000002
+
+      Private Declare Function RegCreateKey Lib "advapi32.dll" Alias _
+         "RegCreateKeyA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+         phkResult As Long) As Long
+
+      Private Declare Function RegSetValueEx Lib "advapi32.dll" Alias _
+         "RegSetValueExA" (ByVal hKey As Long, ByVal lpValueName As String, _
+         ByVal Reserved As Long, ByVal dwType As Long, lpData As Any, ByVal _
+         cbData As Long) As Long
+
+      Private Declare Function RegCloseKey Lib "advapi32.dll" _
+         (ByVal hKey As Long) As Long
+
+2. Place the following code in the click event of the Command1 button on Form1:
+
+  Change the values of the DataSourceName, DatabaseName, Description,
+  DriverPath, LastUser, and Server variables as appropriate for your
+  environment. Any of the drivers listed on the ODBC Drivers tab of the ODBC
+  Data Source Administrator window can be used as part of the DriverPath
+  variable. All of these drivers can be found in C:\Windows\System for Windows
+  95 or Windows 98 machines and C:\Winnt\System32 for Windows NT.
+
+     Private Sub Command1_Click()
+
+     Dim DataSourceName As String
+     Dim DatabaseName As String
+     Dim Description As String
+     Dim DriverPath As String
+     Dim DriverName As String
+     Dim LastUser As String
+     Dim Regional As String
+     Dim Server As String
+
+     Dim lResult As Long
+     Dim hKeyHandle As Long
+
+     'Specify the DSN parameters.
+
+     DataSourceName = "&lt;the name of your new DSN&gt;"
+     DatabaseName = "&lt;name of the database to be accessed by the new DSN&gt;"
+     Description = "&lt;a description of the new DSN&gt;"
+     DriverPath = "&lt;path to your SQL Server driver&gt;"
+     LastUser = "&lt;default user ID of the new DSN&gt;"
+     Server = "&lt;name of the server to be accessed by the new DSN&gt;"
+     DriverName = "SQL Server"
+
+     'Create the new DSN key.
+
+     lResult = RegCreateKey(HKEY_LOCAL_MACHINE, "SOFTWARE\ODBC\ODBC.INI\" &amp; _
+          DataSourceName, hKeyHandle)
+
+     'Set the values of the new DSN key.
+
+     lResult = RegSetValueEx(hKeyHandle, "Database", 0&amp;, REG_SZ, _
+        ByVal DatabaseName, Len(DatabaseName))
+     lResult = RegSetValueEx(hKeyHandle, "Description", 0&amp;, REG_SZ, _
+        ByVal Description, Len(Description))
+     lResult = RegSetValueEx(hKeyHandle, "Driver", 0&amp;, REG_SZ, _
+        ByVal DriverPath, Len(DriverPath))
+     lResult = RegSetValueEx(hKeyHandle, "LastUser", 0&amp;, REG_SZ, _
+        ByVal LastUser, Len(LastUser))
+     lResult = RegSetValueEx(hKeyHandle, "Server", 0&amp;, REG_SZ, _
+        ByVal Server, Len(Server))
+
+     'Close the new DSN key.
+
+     lResult = RegCloseKey(hKeyHandle)
+
+     'Open ODBC Data Sources key to list the new DSN in the ODBC Manager.
+     'Specify the new value.
+     'Close the key.
+
+     lResult = RegCreateKey(HKEY_LOCAL_MACHINE, _
+        "SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources", hKeyHandle)
+     lResult = RegSetValueEx(hKeyHandle, DataSourceName, 0&amp;, REG_SZ, _
+        ByVal DriverName, Len(DriverName))
+     lResult = RegCloseKey(hKeyHandle)
+
+     End Sub
+
+3. Run the project and click on the Command1 command button. Then open up the
+  ODBC Data Source Administrator from the Control Panel (or Administrator Tools
+  in Windows 2000). Your new DSN will appear along with the other system DSNs
+  that you have already created.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q166392 HOWTO: Use "DSN-Less" ODBC Connections with RDO
+
+  Q147875 HOWTO: Use "DSN-Less" ODBC Connections with RDO and DAO
+
+  Q171146 HOWTO: Create and Remove a DSN in Visual Basic
+
+  Q123008 HOWTO: Set Up ODBC Data Sources When Distributing Apps
+
+Additional query words: kbVBp500 kbVBp kbWinOS98 kbDSupport kbdse kbODBC kbVBp600
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

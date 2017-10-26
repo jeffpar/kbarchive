@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105155: Explanation of Seed Router Roles in AppleTalk Internets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105155: Explanation of Seed Router Roles in AppleTalk Internets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105155/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105155/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105155/","publisher":null,"image":null,"headline":"Q105155: Explanation of Seed Router Roles in AppleTalk Internets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105155-explanation-of-seed-router-roles-in-appletalk-internets">Q105155: Explanation of Seed Router Roles in AppleTalk Internets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105155
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-FEB-2002
+
+SUMMARY
+=======
+
+The AppleTalk world includes different kinds of routers, all of which forward
+data from one physical network to another. Seed routers provide a unique
+additional service: they initialize and broadcast information about one or more
+physical networks that tells other routers where to send each packet of data.
+Each physical network must have at least one seed router, and it must be started
+first in the network to assure that all other routers are initialized
+correctly.
+
+MULTIPLE SEED ROUTERS
+---------------------
+
+A LocalTalk network can have more than one seed router, and in some cases
+multiples are recommended. For one thing, multiple seed routers increase network
+reliability. For another, administrators for wide area networks (WANs) can
+install several seed routers and make them independent so that users in one area
+don't have to wait for seed routers in remote areas to start.
+
+Multiple seed routers must have identical seeding information. If a Windows NT
+Advanced Server seed router at startup detects another network seed router with
+different information, the first router's information is used to seed the
+network, and the second router is referenced in an "Invalid network range" event
+written in the Windows NT Advanced Server event log. LAN Manager Services for
+Macintosh does not inform you of this; the Apple Internet router simply refuses
+to start and reports that there is another seed router with different
+information.
+
+SEEDING INFORMATION
+-------------------
+
+There are three types of seeding information:
+
+- A network number or range associated with each physical network. A network
+  number is a unique identifier for an AppleTalk physical network (any number
+  from 1 through 65,279) which routers use to send incoming data to the correct
+  physical network. It is highly recommended that you plan your AppleTalk
+  Internet first. For information on how, see Chapter 3 of "Windows NT Advanced
+  Server Services for Macintosh" or Chapter 2 of the "LAN Manager Services for
+  Macintosh Installation Guide."
+
+- The zone list associated with each physical network. A zone is a logical
+  group of networks that allows the Internet to be controlled in segments,
+  rather than as a single entity. LAN Manager and Windows NT domains are groups
+  of users; AppleTalk zones are groups of machines. In LocalTalk networks, each
+  physical network can be associated with only one zone. AppleTalk Phase 2 does
+  not observe a strict relationship between zone names and network numbers, so
+  two nodes in different zones can have the same network number.
+
+- The default zone for the network, into which all AppleTalk devices fall if
+  they do not specify otherwise. Each Macintosh can select which zone to belong
+  to. The KB article "How to Enable Seed and Non-Seed Routing" explains how to
+  set up zone assignments properly.
+
+Remember: seed routers must be started (booted) before any other Internet routers
+and ALL of the above seeding information must be the same for all seed routers
+in the Internet.
+
+Additional query words: sfm 1.0a appletalk osi concepts seed router
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

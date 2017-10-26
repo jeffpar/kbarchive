@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39852: Error C2086: Redefinition Caused by Forward Reference | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39852: Error C2086: Redefinition Caused by Forward Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39852/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39852/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39852/","publisher":null,"image":null,"headline":"Q39852: Error C2086: Redefinition Caused by Forward Reference","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39852-error-c2086-redefinition-caused-by-forward-reference">Q39852: Error C2086: Redefinition Caused by Forward Reference</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39852
+Product(s): See article
+Version(s): 1.00 1.01 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 24-JAN-1989
+
+When compiled with any version of the QuickC compiler, the program
+below will produce (at warning level 0) the fatal error.
+
+     C2086:
+     'foo': redefinition.
+
+This error will occur if foo() is typed as being of any class other
+than int, the default return type.
+
+The following program demonstrates this situation:
+
+    main()
+        {
+        int i;
+        i = foo();
+        }
+
+    static int foo()
+        {
+        return(1);
+        }
+
+This is expected behavior for the following reason. The following
+information is from the ANSI draft standard (13 May 1988):
+
+    I. If the declaration of an identifier for an object or a function
+       contains the storage class specifier "extern", the identifier
+       has the same linkage as any _visible_ declaration of the
+       identifier with file scope.
+
+   II. If the declaration of an identifier for a function has no
+       storage class specifier (as is the case with implicit [first
+       use] function uses), its linkage is determined exactly as if it
+       were declared with the storage class specifier "extern".
+
+  III. If the declaration of an identifier for an object or a function
+       has file scope and contains the storage class specifier
+       "static", the identifier has internal linkage.
+
+   IV. If, within a translation unit, the same identifier appears with
+       both internal and external linkage, the behavior is undefined.
+
+A forward reference to a function not yet visible to the compiler will
+be treated as of type EXTERN because the compiler is unaware of its
+storage class. Because it is of type EXTERN, it has external linkage,
+i.e., it is an identifier associated with a function defined
+outside the current module. When the compiler then encounters the
+definition of this function with the STATIC storage class, it
+interprets it as a redefinition of that function. Code has already
+been generated treating it as EXTERN; now it has been declared as
+STATIC. Being STATIC, it then has internal linkage. At this point, the
+identifier has both internal and external linkage and behavior is,
+according to the draft standard, undefined.
+
+The following information is also from the draft standard:
+
+   Undefined behavior - behavior, upon use of a nonportable or
+   erroneous construct of erroneous data, or of indeterminately-valued
+   objects for which the standard imposes no requirements.
+   Permissible undefined behavior ranges from ignoring the situation
+   completely with unpredictable results, to behaving during
+   translation or program execution in a documented manner
+   characteristic of the environment (with or without the issuance of
+   a diagnostic message), to terminating a translation or execution
+   (with the issuance of a diagnostic message).
+
+QuickC's behavior conforms precisely to this guideline. Page 172 of
+the "Microsoft C Language Reference Guide" states that a function
+definition without a storage class specifier defaults to EXTERN.
+QuickC issues a diagnostic message and terminates translation (fatal
+compiler error). Being a one-pass compiler, QuickC has no way of
+determining the storage class of a forward-referenced function,
+unlike C Versions 5.x, and thus deals with it in the manner described.
+
+This behavior also applies to QuickC Version 2.00.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

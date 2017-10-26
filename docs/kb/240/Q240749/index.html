@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240749: BUG: WM_LBUTTONUP Message May Not Fire | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240749: BUG: WM_LBUTTONUP Message May Not Fire" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240749/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240749/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240749/","publisher":null,"image":null,"headline":"Q240749: BUG: WM_LBUTTONUP Message May Not Fire","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240749-bug-wm_lbuttonup-message-may-not-fire">Q240749: BUG: WM_LBUTTONUP Message May Not Fire</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240749
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbVBp600bug kbWndwMsg kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the validate event of a TextBox displays a MessageBox, shifting the focus to
+another control using the mouse causes the MessageBox to display. It also causes
+the WM_LBUTTONUP message for the control receiving the focus to be lost.
+
+For example, if the control that is receiving the focus is a CommandButton, the
+Click event is not fired. If the control that is receiving the focus is a
+TextBox, notice that it appears to be in the selection state as if the
+left-mouse button is pressed.
+
+CAUSE
+=====
+
+When the message box is displayed, the focus moves to the message box, so the
+control that gets the focus does not get the WM_LBUTTONUP message.
+
+RESOLUTION
+==========
+
+To solve the problem, you can send a WM_LBUTTONUP message programmatically to
+the control that gets the focus.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project. Form1 is created by default.
+
+2. Add two TextBoxes and one CommandButton to Form1.
+
+3. Add the following code to the code window of Form1:
+
+  Option Explicit
+
+  Private Sub Text1_Validate(Cancel As Boolean)
+      MsgBox "Text1 Validate Message"
+  End Sub
+
+  Private Sub Text2_MouseDown(Button As Integer, Shift As Integer, _
+                              X As Single, Y As Single)
+      Debug.Print "Text2 Mouse Down"
+  End Sub
+
+  Private Sub Text2_MouseUp(Button As Integer, Shift As Integer, _
+                            X As Single, Y As Single)
+      Debug.Print "Text2 Mouse Up"
+  End Sub
+
+  Private Sub Command1_MouseDown(Button As Integer, Shift As Integer, _
+                                 X As Single, Y As Single)
+      Debug.Print "Command1 Mouse Down"
+  End Sub
+
+  Private Sub Command1_MouseUp(Button As Integer, Shift As Integer, _
+                               X As Single, Y As Single)
+      Debug.Print "Command1 Mouse Up"
+  End Sub
+
+  Private Sub Command1_Click()
+      MsgBox "Command1 Click"
+  End Sub
+
+4. Run the application. Move the focus to Text1 and then either select Text2 or
+  click Command1. Observe the debug output in the immediate window and notice
+  that the MouseUp event does not fire. You can also observe the other behavior
+  described in the SYMPTOMS section.
+
+Steps to Work Around the Behavior
+---------------------------------
+
+To work around the problem, you can send the WM_LBUTTONUP message in the GotFocus
+event handler of all the controls that may affect the behavior of your project
+if WM_LBUTTONUP is lost, or you can send WM_LBUTTONUP message to all the
+controls on the form. The example here uses the second method.
+
+1. Building on the sample above, add the following code to the code window of
+  Form1:
+
+  Private Const WM_LBUTTONUP = &amp;H202
+
+  Private Declare Function PostMessage Lib "user32" _
+      Alias "PostMessageA" _
+      (ByVal hwnd As Long, ByVal wMsg As Long, _
+      ByVal wParam As Long, ByVal lParam As Long) As Long
+
+  Private Sub ForceMouseUp()
+      Dim ctl As Control
+      For Each ctl In Me.Controls
+          PostMessage ctl.hwnd, WM_LBUTTONUP, 0, ByVal 0
+      Next
+  End Sub
+
+2. Change the Text1_Validate event handler to be:
+
+  Private Sub Text1_Validate(Cancel As Boolean)
+      MsgBox "Text1 Validate Message"
+      ForceMouseUp
+  End Sub
+
+3. Run the application and you can see the correct behavior.
+
+NOTE: You only need to call the ForceMouseUp when you do not want to set Cancel
+to True.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600bug kbWndwMsg kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

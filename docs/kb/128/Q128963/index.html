@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128963: PC MAPI: How To Determine if a Mail Session Already Exists | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128963: PC MAPI: How To Determine if a Mail Session Already Exists" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128963/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128963/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128963/","publisher":null,"image":null,"headline":"Q128963: PC MAPI: How To Determine if a Mail Session Already Exists","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128963-pc-mapi-how-to-determine-if-a-mail-session-already-exists">Q128963: PC MAPI: How To Determine if a Mail Session Already Exists</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128963
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a you use the Microsoft Mail for PC Networks Simple Messaging Application
+Programming Interface (Simple MAPI), you can fairly reliably determine if an
+Microsoft Mail for Windows session is currently established. This information is
+helpful due to the design of the Windows client and the inability to have
+multiple simultaneous logins.
+
+When it is largely unknown to the developer if a session will currently be
+running, the following Microsoft Visual Basic version 3.0 code logic can be
+helpful in reducing login errors.
+
+MORE INFORMATION
+================
+
+The following code fragment is just one example of how to optimize a successful
+login, without user intervention. This should be helpful for developers who want
+to maximize their applications ability to login successfully.
+
+NOTE: The message box calls are merely for clarity.
+
+  Sub Form_Load ()
+  ' ***                         ***
+  ' *** Start sample login code ***
+  ' ***                         ***
+
+  rc&amp; = MAPILogon(0&amp;, "", "", 0&amp;, 0&amp;, lhSession&amp;)
+  If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+    MsgBox "Login Error or session does not exist = " + Str(rc&amp;)
+    ' No session exists so lets pass info to create one
+    rc&amp; = MAPILogon(0&amp;, "admin", "password", 0&amp;, 0&amp;, lhSession&amp;)
+    If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+      MsgBox "Failure to login at all"
+      End
+    Else
+      MsgBox "Successfully logged in as admin"
+      ' Send important message
+      rc&amp; = MAPILogoff(lhSession&amp;, 0&amp;, 0&amp;, 0&amp;)
+      End
+    End If
+
+  Else
+    MsgBox "Mail session currently established"
+    ' Send important message
+    rc&amp; = MAPILogoff(lhSession&amp;, 0&amp;, 0&amp;, 0&amp;)
+  End If
+
+  End
+  End Sub
+  '*** end code fragment ***'
+
+Additional query words: 3.00 3.20 MS Mail Technical Reference
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

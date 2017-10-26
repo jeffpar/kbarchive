@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264111: XCON: Internet Mail Service Requires Domain Name System Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264111: XCON: Internet Mail Service Requires Domain Name System Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264111/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264111/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264111/","publisher":null,"image":null,"headline":"Q264111: XCON: Internet Mail Service Requires Domain Name System Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264111-xcon-internet-mail-service-requires-domain-name-system-name">Q264111: XCON: Internet Mail Service Requires Domain Name System Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264111
+Product(s): Microsoft Exchange
+Version(s): 2000,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3, on platform(s):
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to install the Internet Mail Service on a Windows 2000-based
+computer that is running Exchange Server 5.5 Service Pack 3, you may receive the
+following error message:
+
+  The Internet Mail Service requires the DNS domain name to be configured on
+  &lt;server_name&gt;. To configure the domain name, use the Network icon in
+  the Control Panel on &lt;server_name&gt;, or select another server.
+
+CAUSE
+=====
+
+This behavior can occur if the primary Domain Name System (DNS) suffix entry for
+this computer is missing. When a Windows 2000-based computer is installed as a
+member server in a Microsoft Windows NT Server version 4.0 domain or a Windows
+2000 domain, this entry is often blank. This behavior does not occur on a
+Windows 2000 domain controller.
+
+RESOLUTION
+==========
+
+To resolve this issue, add the primary DNS suffix entry for the Windows 2000
+member server:
+
+1. Right-click My Computer, and then click Properties.
+
+2. Click the Network Identification tab, and then click Properties.
+
+3. In the Identification Changes dialog box, click More.
+
+4. In the "Primary DNS suffix of this computer" box, type the name of the domain
+  to which the member server belongs. You do not need to type the fully
+  qualified domain name (FQDN) because the computer name is automatically
+  appended to the domain name that you type here to create the FQDN for DNS.
+
+  NOTE: If the "Primary DNS suffix of this computer" box is not empty, you are
+  not experiencing the problem that is described in this article.
+
+5. Click OK.
+
+6. You must restart the computer for these changes to take effect.
+
+After you restart the computer, you can install the Internet Mail Service and the
+error message in the "Symptoms" section of this article is not displayed.
+
+Additional query words: IMS
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : :2000,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

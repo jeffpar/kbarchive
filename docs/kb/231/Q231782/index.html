@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231782/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231782/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231782/","publisher":null,"image":null,"headline":"Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231782-sms-smsmon32-andor-odpwin9x-may-cause-windows-9598-to-hang">Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231782
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbenv kbClient kbConfig kbsms200
+Last Modified: 10-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft Windows 95-based or Microsoft Windows 98-based computer running
+the Systems Management Server (SMS) 2.0 client is running the client software
+distribution agents, SMS Available Programs Monitor (Smsmon32.exe) and/or SMS
+Offer Data Provider (Odpwin9x components) may cause the client computer to stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior occurs because the Netapi.dll network redirector file is
+out-of-date or is not located in the %WinDir%\System folder.
+
+WORKAROUND
+==========
+
+If the Netapi.dll file is not in the %WinDir%\System folder, copy the file to
+that folder and restart the computer.
+
+The Netapi.dll files with the following date stamps are confirmed to cause this
+behavior:
+
+  Netapi.dll  2,432 bytes  03/14/96
+  Netapi.dll  2,432 bytes  08/16/96
+
+The following versions of the Netapi.dll file resolve this behavior:
+
+  Netapi.dll  106,960 bytes   08/24/96   version 4.00.950
+  Netapi.dll  106,704 bytes   11/25/99   version 4.10.1998
+
+NOTE: Later versions of this file may also resolve the problem.
+
+MORE INFORMATION
+================
+
+This problem can also occur because of a version of the Netapi.dll file that is
+included with some versions of the Banyan Vines redirector for Windows 95.
+
+
+Additional query words: prodsms hung freeze lock up win95 win98
+
+======================================================================
+Keywords          : kbenv kbClient kbConfig kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

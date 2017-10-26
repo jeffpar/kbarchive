@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119284: HOWTO: Distribute a Large Database with an Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119284: HOWTO: Distribute a Large Database with an Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119284/","publisher":null,"image":null,"headline":"Q119284: HOWTO: Distribute a Large Database with an Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119284-howto-distribute-a-large-database-with-an-application">Q119284: HOWTO: Distribute a Large Database with an Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119284
+Product(s): Microsoft FoxPro
+Version(s): 3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbvfp300 kbvfp500 kbvfp600
+Last Modified: 01-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is often desirable to ship large databases with applications. However, the
+Setup Wizard is not designed to split large files and may not be able to
+compress large database files, possibly resulting in the error message
+"Incorrect number of bytes written to disk - source file or destination disk may
+be corrupted - use ChkDsk."
+
+To work around the size limitations of the Setup Wizard, you can use a number of
+third-party compression utilities, such as PKZIP, LHARC, StuffIt, and so on, to
+compress large database files. Many of these compression utilities are available
+on bulletin board services.
+
+This article demonstrates how to use one of these utilities, PKZIP, to compress a
+large database so that it can be shipped with an application.
+
+MORE INFORMATION
+================
+
+To ship a large database with your application, compress the database file,
+convert it to a self-extracting executable file, and then execute some code to
+expand (decompress) the compressed file.
+
+For example, suppose you want to compress the files PICFILES.DBF and
+PICFILES.FPT. If you are using PKWare's PKZIP utility, you can compress these
+files into a self-extracting executable file named PICDBF.EXE by typing the
+following commands at the MS-DOS command prompt:
+
+     PKZIP picdbf picfiles.dbf
+     PKZIP picdbf picfiles.fpt
+     ZIP2EXE picdbf
+
+Move the newly-created PICDBF.EXE file to your source files directory. Do NOT put
+the PICFILES.DBF or PICFILES.FPT file in this directory.
+
+Add the following code to the first program in your project:
+
+     * This code assumes the data file to be extracted is named
+     * PICFILES.DBF. The example tested for this article was over 5 MB,
+     * and compressed to 1.3 MB. The K value of 240 used in the RUN
+     * command is an empirical value that has proven successful in our
+     * tests, but your results may vary. A lower value may be possible.
+
+     IF !FILE('picfiles.dbf') OR !FILE('picfiles.fpt')
+
+        * The data is shipped as a self-extracting executable with the
+        * name PICDBF.EXE. It may be wise to include the -o parameter to
+        * overwrite files when extracting databases.
+
+        RUN /240 picdbf.exe -o
+
+        * The WAIT window below will keep FoxPro from continuing in
+        * multithreaded operating systems such as Microsoft Windows NT.
+
+        DO WHILE !FILE('picfiles.fpt')
+           WAIT WINDOW 'Extracting files...' TIMEOUT 5
+        ENDDO
+
+     ENDIF
+
+IMPORTANT: The compression software that you decide to use may require additional
+licensing for distribution in a commercial application. Contact the compression
+vendor for licensing details.
+
+The file-compression utilities mentioned above are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : :3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

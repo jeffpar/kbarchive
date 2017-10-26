@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/283/Q283271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/283/Q283271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/283/Q283271/","publisher":null,"image":null,"headline":"Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q283271-xadm-how-to-give-users-permissions-to-create-mail-enabled-users">Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q283271
+Product(s): Microsoft Exchange
+Version(s): 2000,5.5 SP3,5.5 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5 SP3, 5.5 SP4 
+- Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to give a user or designated group of users the
+minimum permissions to create a mail-enabled user account in Active Directory.
+
+NOTE: This article describes how to change permissions in the Windows 2000
+version of the Active Directory Connector (ADC) only.
+
+MORE INFORMATION
+================
+
+To complete the procedures described in this section, you must have a
+functioning two-way Connection Agreement between the Exchange Server 5.5
+computer and Windows 2000 Active Directory.
+
+First, give the user or group read-only permissions on the Microsoft Exchange
+container:
+
+1. Log on as a domain administrator, and then start the Active Directory Sites
+  and Services snap-in.
+
+2. Click Show Services on the View menu.
+
+3. Click to expand Services, and then click Microsoft Exchange.
+
+4. Open the properties of the Microsoft Exchange object, and then click the
+  Security tab.
+
+5. Click Add, click the user or group that you want to give permissions to,
+  click OK, and then click OK.
+
+Next, give the user or group the appropriate permissions to access the Active
+Directory Connections container:
+
+1. Open the properties of the Active Directory Connections container.
+
+2. Click the Security tab, click Add, click the user or group that you gave
+  read-only permissions to in the preceding procedure, and then click OK.
+
+3. Click Advanced on the Security tab.
+
+4. Find the user or group that you gave read-only permissions to, click
+  View/Edit, and then click "This object and all child objects" in the Apply
+  Onto box.
+
+5. Click OK, click OK, and then click OK.
+
+Finally, make the user or group a member of the Account Operators Built-in group
+so that they can create user accounts:
+
+1. Start the Active Directory Users and Computers snap-in.
+
+2. Click to expand your domain, and then click the Built-in container.
+
+3. Double-click the Account Operators group, and then click the Members tab.
+
+4. Click Add, click the user or group that you want to make a member of this
+  group, click OK, and then click OK.
+
+Additional query words: ADC AD win2k
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbExchangeSearch kbZNotKeyword2 kbExchange550SP3 kbExchange550SP4
+Version           : :2000,5.5 SP3,5.5 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41159: INFO: rewind(stdin) Clears Keyboard Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41159: INFO: rewind(stdin) Clears Keyboard Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41159/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41159/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41159/","publisher":null,"image":null,"headline":"Q41159: INFO: rewind(stdin) Clears Keyboard Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41159-info-rewindstdin-clears-keyboard-buffer">Q41159: INFO: rewind(stdin) Clears Keyboard Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41159
+Product(s): Microsoft C Compiler
+Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC6
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To clear the keyboard buffer in Microsoft C use the function rewind() with the
+stream STDIN, which is associated with the keyboard by default. The function
+fflush() clears the buffers that C programs use for stream level I/O. It does
+not clear the device buffer.
+
+MORE INFORMATION
+================
+
+The following is an example that shows what happens when the keyboard buffer is
+not cleared, and then how to clear it:
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;stdio.h&gt;
+
+  void main(void)
+  {
+     int ch ;
+
+     puts( "Input two or more chars. One is read now." );
+     ch = getchar();
+     putchar( ch );
+     putchar( '\n' );
+
+     puts( "The next char is taken from stdin." );
+     ch = getchar( );
+     putchar( ch );
+     putchar( '\n' );
+
+     rewind( stdin );
+     puts( "Input two or more chars. One is read now." );
+     ch = getchar();
+     putchar( ch );
+     putchar( '\n' );
+
+     rewind( stdin );
+     puts( "You must enter another char because of the rewind(stdin)" );
+     ch = getchar( );
+     putchar( ch );
+     putchar( '\n' );
+  }
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

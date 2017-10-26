@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174758: XADM: Steps Performed During Knowledge Consistency Check | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174758: XADM: Steps Performed During Knowledge Consistency Check" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174758/","publisher":null,"image":null,"headline":"Q174758: XADM: Steps Performed During Knowledge Consistency Check","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174758-xadm-steps-performed-during-knowledge-consistency-check">Q174758: XADM: Steps Performed During Knowledge Consistency Check</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174758
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to explain the steps you perform when you run a
+knowledge consistency check (KCC) on a Microsoft Exchange Server computer.
+
+MORE INFORMATION
+================
+
+When you run a KCC either automatically or from the directory service general
+page of a Microsoft Exchange Server computer, perform the following checks and
+steps:
+
+1. Bind to the local server.
+
+2. Determine the names of other Exchange Server computers in the local server's
+  site.
+
+3. Bind to another server in the site.
+
+4. Check whether this second server has the same server name as any that were
+  obtained in Step 2. If not, synchronize the Configuration naming contexts in
+  both directions, and repeat with another server until they are all done or
+  one of the server names matches.
+
+5. Search the local server for all the writable naming contexts (NC).
+
+6. For each NC, check that there are Reps-to and Reps-from values for each
+  server in the site. Fix any missing links.
+
+7. Search the local directory under the local site's directory-replication
+  container for connectors.
+
+8. For each connector found, determine whether there is a corresponding remote
+  connector locally. In other words, see whether there is a replica of the
+  connector in the other site that points back to your local site.
+
+9. If there is a local copy of the remote connector, update the inbound sites on
+  the local connector to match the remote connector's outbound sites.
+
+10. Go through the local connectors and construct a list of all sites replicated
+  in from all the connectors.
+
+11. Go through the connectors and ensure that they all replicate out all of the
+  inbound sites, plus your local site, minus the sites coming in on that
+  connector.
+
+12. Search the local directory service for non-writable replicas.
+
+13. Check that you have all the replicas described by the local connectors, add
+  any that are missing, and remove any that you should not have.
+
+14. Search the local directory service for authorizations.
+
+15. Verify that you have all the authorizations as described by the connectors,
+  and remove any that you should not have.
+
+16. Check that for each intersite replica that you replicate to this directory
+  service, you replicate on to all other servers in the site. Remove any
+  replicas to non-existent servers.
+
+17. Take replication responsibility for objects last modified by servers that
+  have been removed from the site. This is done on a random basis to avoid all
+  the servers in the site adopting the same server's objects at the same time.
+
+Additional query words: KCC
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

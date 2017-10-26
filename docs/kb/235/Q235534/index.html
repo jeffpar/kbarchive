@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235534: XCON: MTA Logs Errors 2124, 2175 on Invalid X.400 Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235534: XCON: MTA Logs Errors 2124, 2175 on Invalid X.400 Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235534/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235534/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235534/","publisher":null,"image":null,"headline":"Q235534: XCON: MTA Logs Errors 2124, 2175 on Invalid X.400 Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235534-xcon-mta-logs-errors-2124-2175-on-invalid-x400-message">Q235534: XCON: MTA Logs Errors 2124, 2175 on Invalid X.400 Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235534
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55 EXC55SP3Fix
+Last Modified: 30-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In some cases, a third-party X.400 message transfer agent (MTA) may send an
+invalid message to Exchange Server. Depending on the amount of corruption, the
+following events may be written to the Windows NT Server application event log:
+
+  Event ID: 200
+  Description:
+  X.400 Service Event, severity 14
+  (MTA XFER-IN(12) Proc 102)
+  Transfer-In failure, error in received APDU
+  Syntax server error code 0
+  Error detected at offset 0
+  Internal qualifier 0
+  Node label
+  PDU dump reference 14
+
+NOTE: Event ID 200 indicates a corrupted field in the X.400 P1 message header.
+You can use the PDU dump reference given in this event to identify the corrupted
+message in the Bf0.log log file.
+
+  Event ID: 2124
+  Description:
+  Internal Operating System Error, severity 14
+  (DB Server XFER-IN(12) Proc 98)
+  Object Data file causing I/O error
+  Object id 06000091
+  Operating system error 131
+  File operation READ
+  File offset -2133778432
+  Filename
+  Referenced object 00000000 (00000000 =&gt; N/A)
+  Referenced object error 0
+
+  Event ID: 2175
+  Description:
+  Internal Processing Error, severity 14
+  (DB Server XFER-IN(12) Proc 72)
+  Error getting length of attribute
+  Called from MTA Proc 28492
+  Database error code ODXOBJEC - I/O Error on object file
+  Object at fault 06000091
+  Attribute identifier 71
+  Value number 2
+  Referenced object 00000000 (00000000 =&gt; N/A)
+  Referenced object error 0
+
+After this, the Exchange Server MTA may run at a very high CPU time for a long
+time and occasionally it may not be possible to stop the Exchange Server MTA.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Message Transfer Agent (MTA)
+
++---------------------------+
+| File name    | Version    | 
++---------------------------+
+| Dbserver.sch | N/A        | 
++---------------------------+
+| Dcprods.cat  | N/A        | 
++---------------------------+
+| Ems_rid.dll  | 5.5.2641.0 | 
++---------------------------+
+| Emsmta.exe   | 5.5.2641.0 | 
++---------------------------+
+| Info4log.cfg | N/A        | 
++---------------------------+
+| Infoblog.cfg | N/A        | 
++---------------------------+
+| Infodlog.cfg | N/A        | 
++---------------------------+
+| Infollog.cfg | N/A        | 
++---------------------------+
+| Infoplog.cfg | N/A        | 
++---------------------------+
+| Infotlog.cfg | N/A        | 
++---------------------------+
+| Mtacheck.exe | 5.5.2641.0 | 
++---------------------------+
+| Mtamsg.dll   | 5.5.2641.0 | 
++---------------------------+
+| P2.xv2       | N/A        | 
++---------------------------+
+| X400om.dll   | 5.5.2641.0 | 
++---------------------------+
+| X400omv1.dll | 5.5.2641.0 | 
++---------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+
+Additional query words: hang stop kill
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

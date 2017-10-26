@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102692/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102692/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102692/","publisher":null,"image":null,"headline":"Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102692-fix-fp-emulator-converts-real-to-integer-incorrectly">Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102692
+Product(s): Microsoft Fortran Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application developed in Microsoft FORTRAN PowerStation runs on a
+computer that does not have a math coprocessor installed, the code may convert a
+REAL variable or expression to an INTEGER variable incorrectly, resulting in
+incorrect results.
+
+CAUSE
+=====
+
+When an application immediately converts the results of a REAL calculation to an
+INTEGER value, the code does not remove the results from the coprocessor
+emulator stack. The numeric conversion routine __ftol (float to long) uses this
+extended coprocessor-stack-based value instead of the truncated contents stored
+in the variable. The __ftol function incorrectly rounds down the
+extended-precision result.
+
+RESOLUTION
+==========
+
+To work around this problem, use the NINT (round to nearest integer) intrinsic
+function to explicitly convert the expression or variable to an INTEGER.
+
+The /Ox optimization compiler option switch may resolve this error. Among other
+optimizations, the /Ox switch calculates constant expressions at compile time.
+These calculations may correctly convert the REAL number to an INTEGER while the
+run-time calculation produces the incorrectly rounded result.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerStation versions 1.0 and
+1.0a for MS-DOS. This problem has been resolved with FORTRAN PowerStation
+maintenance release version 1.0a for MS-DOS.
+
+FORTRAN Powerstation version 1.0 can be differentiated from the maintenance
+release version 1.0a by invoking the linker. Typing "link32 | more" from the
+\f32\BIN directory will show version 2.8 for FORTRAN Powerstation version 1.0,
+and it will show 1.0f for the maintenance release version 1.0a.
+
+MORE INFORMATION
+================
+
+The FORTRAN PowerStation floating-point emulator is a virtual dynamic- link
+library (DLL) in the Phar Lap MS-DOS extender. To duplicate this problem on a
+computer with a math coprocessor installed, type the following at the MS-DOS
+command prompt:
+
+  SET TNT=-FPEM
+
+This statement causes the MS-DOS extender to ignore the math coprocessor and use
+the emulator code for all math operations.
+
+The following code example prints the word "Failed" when it runs with the
+floating-point emulator:
+
+Sample Code 1
+-------------
+
+C Compiler options needed: none
+
+     x =  3.0
+     z = -3. ** x
+     i =  z
+     if (i .ne. -27) then
+       print *, 'Failed'
+     else
+       print *, 'OK'
+     end if
+     end
+
+The following code example demonstrates using the NINT intrinsic function to
+avoid this error. This code prints the word "OK" even when a math coprocessor is
+not available.
+
+Sample Code 2
+-------------
+
+C Compiler options needed: none
+
+        x =  3.0
+        z = -3. ** x
+        i =  nint(z)
+        if (i .ne. -27) then
+          print *, 'Failed'
+        else
+          print *, 'OK'
+        end if
+        end
+
+Additional query words: 1.00 Phar Lap DOSXMSF.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

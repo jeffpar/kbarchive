@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89788: SMARTDRV /S Output Defined | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89788: SMARTDRV /S Output Defined" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89788/","publisher":null,"image":null,"headline":"Q89788: SMARTDRV /S Output Defined","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89788-smartdrv-s-output-defined">Q89788: SMARTDRV /S Output Defined</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89788
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SMARTDrive 4.0, which is included with Windows 3.1, is able to report
+information about the performance of SMARTDrive. Typing in the command SMARTDRV
+/S reports cache hits, misses, element size, and disk caching status. This
+information indicates the effectiveness of SMARTDrive.
+
+MORE INFORMATION
+================
+
+Loading SMARTDrive (SMARTDRV.EXE) at the command line by typing
+
+  smartdrv.exe 2048 2048
+
+and then typing
+
+  smartdrv /s
+
+provides information similar to the following:
+
+  Room for 256 elements of 8,192 bytes each
+  There have been 8,980 cache hits
+  and 1,966 cache misses
+
+  Cache size: 2,097,152 bytes
+  Cache size while running Windows: 2,097,152 bytes
+
+              Disk Caching Status
+  drive   read cache   write cache   buffering
+  --------------------------------------------
+  A:       yes          no            no
+  B:       yes          no            no
+  C:       yes          yes           no
+
+DEFINITIONS
+-----------
+
+The following information defines the output of each line in SMARTDRV /S.
+
+Room for 256 Elements of 8,192 Bytes Each
+-----------------------------------------
+
+The number of elements is modified depending upon the specified cache size and
+the element size. In this case, 2,097,152 (the specified cache size) divided by
+8,192 (the element size) is 256 (the number of elements). Therefore, there are
+256 elements, each containing 8,192 bytes. Element size is the number of bytes
+that will be moved at one time by SMARTDrive.
+
+The number of elements reported can only be modified by changing the element size
+or the cache size. The number of elements cannot be modified directly.
+Information on how to change the cache size and element size can be found on
+page 539 of the "Microsoft Windows User's Guide" for version 3.1.
+
+There Have Been 8,980 Cache Hits and 1,966 Cache Misses
+-------------------------------------------------------
+
+The number of hits indicates how many times an element has been found in the
+cache before going to the hard disk. The number of misses indicates the element
+was not found in the read cache and a hard disk access occurs.
+
+Generally a larger specified cache size results in a higher hit-to-miss ratio,
+although this depends on the type of usage. Because the cache size is larger,
+more data will be found in the cache and should result in a higher amount of
+hits. Note that allocating too much memory to SMARTDrive can cause memory
+problems because there may not be adequate memory for other programs.
+
+Cache Size: 2,097,152 Bytes, Cache Size While Running
+
+Windows: 2,097,152 Bytes
+------------------------
+
+Cache size is determined by the number of elements multiplied by the number of
+bytes in each element. In the above example, 256 (elements) multiplied by 8,192
+(number of bytes in each element) is 2,097,152.
+
+Disk Caching Status
+-------------------
+
+This reports the caching status of each drive (read cache, write cache). It also
+reports buffering of each drive. For each drive that is being cached, it can
+have one of three values in the buffering column:
+
+  yes, no, or -
+
+"Yes" indicates that double buffering is needed. "No" indicates that buffering is
+not needed. "-" indicates that SMARTDrive has not yet determined the necessity
+of double buffering. If the buffering column has all no's in it, the
+double-buffer driver is unneeded.
+
+In most cases, double buffering is not needed. If it is determined that double
+buffering is needed and Windows 3.1 Setup did not install it, see page 541 of
+the "Microsoft Windows User's Guide" for information about installing SMARTDrive
+in the CONFIG.SYS file with double buffering.
+
+For more information about SMARTDrive, see page 537 of the "Microsoft Windows
+User's Guide" and page 252 of the "Microsoft Windows Resource Kit" manual.
+
+Additional query words: 3.10 3.11 optimize smart drive SMARTDRV
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

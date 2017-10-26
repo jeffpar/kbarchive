@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123092/","publisher":null,"image":null,"headline":"Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123092-fix-duplicate-source-files-cause-breakpoint-failures">Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123092
+Product(s): Microsoft C Compiler
+Version(s): 2.00 2.10 4.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the same source file (or a copy with the same name in a different
+directory) is included in both a DLL and its calling application, the debugger
+can become confused about which module in memory to set breakpoints in. For
+example, a breakpoint set in the source file belonging to the DLL may be hit in
+the DLL or in the application's copy of the source file, and the module in which
+the breakpoint is hit may change from one debugging session to another.
+
+WORKAROUND
+==========
+
+The best solution is to not use source files that have the same name in the DLL
+and in its calling application. If you can't avoid it, try using the context
+operator to resolve the breakpoint conflict. To do this, specify both the source
+file and the EXE or DLL name in the breakpoint location field of the Breakpoints
+dialog box using this syntax:
+
+     {,source.cpp,target.exe} .line_number
+
+-or-
+
+     {,source.cpp,target.dll} .line_number
+
+Here line_number is the actual decimal line number in the source code. You may
+need to use full path names when specifying the source and the EXE or DLL
+names.
+
+NOTE: This workaround may not always be successful. If it doesn't work, you must
+either rename one of the source file copies or live with the errant breakpoint
+behavior.
+
+MORE INFORMATION
+================
+
+For additional information on the purpose and use of the context operator, refer
+to the "Using Breakpoints" section in the "Using the Debugger" chapter of the
+Visual C++ Books Online "Visual C++ User's Guide." Specifically, in Visual C++
+2.0, refer to the "General Syntax for Breakpoint Locations" entry in the "Using
+Breakpoints" section; in Visual C++ 4.0, refer to the "Advanced Breakpoint
+Syntax" entry of the "Using the Breakpoints Dialog Box" in the "Using
+Breakpoints" section.
+
+Additional query words: 2.00 2.10 4.00 VWB IDE
+
+======================================================================
+Keywords          :  
+Version           : 2.00 2.10 4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

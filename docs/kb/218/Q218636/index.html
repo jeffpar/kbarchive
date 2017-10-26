@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218636: DHCP Options Not Set by SBS Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218636: DHCP Options Not Set by SBS Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218636/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218636/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218636/","publisher":null,"image":null,"headline":"Q218636: DHCP Options Not Set by SBS Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218636-dhcp-options-not-set-by-sbs-setup">Q218636: DHCP Options Not Set by SBS Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218636
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0a,4.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Small Business Server (SBS) clients are unable to find the SBS server or any
+resources registered with WINS, especially if there is a router on the LAN
+between the clients and the SBS server.
+
+CAUSE
+=====
+
+The SBS automated setup program configures the DHCP scope with the address range
+of 10.0.0.x with a subnet mask of 255.255.255.0.
+
+No other supporting options, such as the addresses of WINS servers, the DNS
+domain name, and the router (default gateway) address, are set.
+
+RESOLUTION
+==========
+
+To work around this problem, use the DHCP Options menu in DHCP Manager to add
+the following options to the default DHCP scope for improved functionality.
+Except for router all other options can be added as global options; the router
+option is added as a Scope option.
+
+NOTE: Global options apply to all subnets. Scope options apply to the particular
+scope for which they are configured.
+
+- Option 003 Router: Add the address of the SBS server's internal network
+  interface card (NIC). Default is 10.0.0.2.
+
+- Option 015 Domain Name: Specify the Internet registered domain name, if you
+  have one.
+
+- Option 044 Wins/NBNS servers: Add the SBS server's internal NIC's address two
+  times. Default is 10.0.0.2.
+
+- Option 046 WINS/NBT Node Type: Set this to your preferred node type, usually
+  0x8 (h-node) or 0x4 (m-node).
+
+You do not need to restart your computer after adding these options. They are
+provided when an IP address is leased or when a existing lease is renewed.
+
+To force clients to renew their IP information, do the following, depending on
+the client's operating system.
+
+- Windows 95 or Windows 98 clients:
+
+  a. Run Winipcfg.exe.
+
+  b. Select the network adapter, and then click Renew.
+
+  c. Click More Info To verify that all the new information has been received
+     by the client computer.
+
+- Windows NT clients:
+
+  a. At a command prompt, type "IPCONFIG /renew" (without the quotation marks).
+
+  b. To check if the new information was received, type "IPCONFIG /all | MORE"
+     (without the quotation marks).
+
+MORE INFORMATION
+================
+
+These changes should be made if there will be RAS clients on your network.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a kbSBServ450
+Version           : winnt:4.0,4.0a,4.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

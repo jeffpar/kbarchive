@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191453/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191453/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191453/","publisher":null,"image":null,"headline":"Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191453-bug-conversion-from-os390-packed-to-decimal-and-numeric-fails">Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191453
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:1.0,4.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft OLE DB Provider for AS/400 and VSAM, version 1.0, included with:
+   - Microsoft SNA Server, version 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to display an IBM OS/390 packed decimal record field as converted to
+the DECIMAL or NUMERIC automation type results in errors. The first
+manifestation, generally, is that there is no data to display, for example, in a
+Visual Basic text box.
+
+WORKAROUND
+==========
+
+Packed decimal fields can be converted to a string (DBTYPE_STR, CHAR)
+successfully.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the OLE DB Provider for AS/400
+and VSAM component of Microsoft SNA Server version 4.0 SP1.
+
+MORE INFORMATION
+================
+
+An attempt to convert an IBM OS/390 packed decimal record field to either the
+NUMERIC (DBTYPE_NUMERIC) or DECIMAL (DBTYPE_DECIMAL) automation types results in
+the following error manifestations. They are seen when running a Visual Basic
+consumer in debug mode.
+
+1. A watch is added for the ADO recordset, and the value of the numeric field is
+  set to "Errors occurred".
+
+2. When an immediate statement to view the numeric field s executed, for
+  example, "? RS.Fields(10).Value&lt;enter&gt;," the following message box
+  appears:
+
+  
+
+           Title Bar: Microsoft Visual Basic
+           Description: HRESULT 80040e21 (-2147217887)
+                        Errors occurred.
+
+3. An attempt to display this field/column in a text box yields either blanks or
+  nothing.
+
+4. Issuing an ADO GetRows results in an error being returned from OLE DB
+  Provider with the same HRESULT, -2147217887 (0x80040e21) and the description
+  "Automation error."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvSearch
+Version           : WINDOWS:1.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183902: Dead Gateway Detection Is Not Triggered During Logon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183902: Dead Gateway Detection Is Not Triggered During Logon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183902/","publisher":null,"image":null,"headline":"Q183902: Dead Gateway Detection Is Not Triggered During Logon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183902-dead-gateway-detection-is-not-triggered-during-logon">Q183902: Dead Gateway Detection Is Not Triggered During Logon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183902
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows 95-based or Windows NT-based computer that is configured with multiple
+default gateways may be unable to connect to its logon server when the computer
+starts.
+
+CAUSE
+=====
+
+If the first default gateway is unavailable, the logon process does not trigger
+dead gateway detection. Without a domain controller on the local network
+segment, you are unable to log on to the domain.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods:
+
+- Install and configure a domain controller on the local network segment.
+
+- Install a routing protocol on your Windows NT-based computer, such as Routing
+  Information Protocol (RIP) for Transmission Control Protocol/Internet
+  Protocol (TCP/IP) on Windows NT Server or Silent RIP for Windows NT
+  Workstation. For more information, please see the following articles in the
+  Microsoft Knowledge Base:
+
+  Q172514 Silent RIP for IP Available for Windows NT Workstation
+
+  Q169161 Registry Parameters for RIP for IP version 1
+
+  NOTE: Silent RIP is not available for Windows 95.
+
+
+- For Windows NT, Windows 95, and Windows 98-based computers, you can enable
+  the Internet Control Message Protocol (ICMP) Internet Router Discovery
+  Protocol (IRDP) packets on all of your routers. The following text is an
+  excerpt from Request for Comments (RFC) 1256:
+
+     The ICMP router discovery messages are called "Router
+     Advertisements" and "Router Solicitations. " Each router
+     periodically multicasts a Router Advertisement from each of its
+     multicast interfaces, announcing the IP address(es) of that
+     interface. Hosts discover the addresses of their neighboring
+     routers simply by listening for advertisements.
+
+  This is one way of testing for dead gateways. This solution requires that
+  routers be configured to send IRDP packets, but currently has not been
+  implemented in Windows NT 4.0. Windows 95 requires a Windows Socket update 2,
+  while Windows 98 natively supports IRDP.
+
+
+  For additional information, please see the following article(s) in the
+  Microsoft Knowledge Base:
+
+  Q182108 Availability of Windows Sockets 2.0 for Windows 95
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q223756 IRDP Client Support Added to Windows NT 4.0
+
+MORE INFORMATION
+================
+
+Switching to the second gateway occurs only if there is already an existing
+connection-oriented TCP session over the route to the first configured gateway.
+Connectionless datagram-based traffic such as an ICMP or Network Basic
+Input/Output System (NetBIOS) packet does not trigger the change to a secondary
+gateway.
+
+For more information, please see the following articles in the Microsoft
+Knowledge base:
+
+  Q128978 Dead Gateway Detection in TCP/IP for Windows NT
+
+  Q171564 TCP/IP Dead Gateway Detection Algorithm Updated for Windows NT
+
+You can obtain additional information from RFC 816, "Fault Isolation and
+Recovery."
+
+For information about obtaining RFCs, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q185262 How to Obtain Request for Comments Documents from the Internet
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

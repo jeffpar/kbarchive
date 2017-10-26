@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170400/","publisher":null,"image":null,"headline":"Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170400-unauthorized-program-can-be-installed-and-run-on-zak-workstation">Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170400
+Product(s): Microsoft Windows NT
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup
+Last Modified: 21-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be able to install and run some programs on a Windows NT Zero
+Administration Kit (ZAK) client workstation, even though you should be
+restricted from doing so. You may be able to do this by installing programs to
+and running them from the folder defined in the TEMP user variable (the
+temporary folder). In a ZAK client workstation, the default temporary folder is
+C:\Temp.
+
+CAUSE
+=====
+
+The temporary folder is not restricted on ZAK client workstations because many
+programs, including Microsoft Office, do not function properly if the temporary
+folder is restricted.
+
+RESOLUTION
+==========
+
+To work around this issue, you can configure the policy file for the ZAK client
+workstation to allow only specific programs to run. The policy file resides on
+the ZAK server and can be modified by using the following steps:
+
+1. Log on to the ZAK server (this is the primary domain controller for the
+  network) as the domain administrator.
+
+2. Start Policy Editor (Poledit.exe), and then open the Ntconfig.pol file in the
+  following folder:
+
+     %SystemRoot%\System32\Repl\Import\Scripts
+
+3. Double-click the user icon for the ZAK client user, double-click System, and
+  then double-click Restrictions. Click the Run Only Allowed Windows
+  Applications check box to select it.
+
+4. Click Show, click Add, type the executable file name of the program you want
+  to allow the ZAK client user to run, and then click OK. Repeat this procedure
+  for every program you want the user to be able to run.
+
+  For example, to allow the ZAK client to run Microsoft Word, type "winword.exe"
+  (without the quotation marks) as the allowed program. To determine the
+  executable file names, view the shortcuts on the Start menu of the ZAK client
+  in the Netapps folder on the ZAK server.
+
+
+5. Click OK, and then click OK.
+
+6. Save the file, and then quit Policy Editor.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+
+Additional query words: unattend sysdiff deploy directory environment
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

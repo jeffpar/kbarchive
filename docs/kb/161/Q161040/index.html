@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161040/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161040/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161040/","publisher":null,"image":null,"headline":"Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161040-host-initiated-bind-is-rejected-with-a-bind--rsp-sense0815">Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161040
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Terminating a 3270 session abruptly may result in a situation where a new VTAM
+or host signon screen is not sent to the 3270 session. This problem was observed
+in one case where a 3270 session was ended by pressing the SYSREQ key.
+
+When this problem occurs, SNA Server may log the following message in the Windows
+NT Application Event log:
+
+  Event ID: 21
+  Source: SNA Server
+  Description: X'1124' Negative Response Sent on Connection &lt;connection
+  name&gt;
+              (SENSE = 0815)
+
+This problem does not occur in SNA Server 3.0.
+
+CAUSE
+=====
+
+Normally, a Host is not entitled to send a BIND request for a new session until
+it receives an UNBIND response. However, when a host sends an UNBIND Type '0x0F'
+(UNBIND Cleanup) or any UNBIND type in the range of '0x07' to '0x7F,' it is
+allowed to reset its half-session immediately. If the UNBIND is one of these
+types, the host can send a BIND request before it receives the UNBIND response.
+
+SNA Server is not able to handle the receipt of a BIND request for a session
+before it has sent an UNBIND response for that session. Therefore, SNA Server
+rejects the new BIND request with a BIND -RSP because it has not yet received a
+response from the emulator to the Close(PLU) request that generates the UNBIND
+response that will be sent to the host.
+
+RESOLUTION
+==========
+
+There are no current workarounds for SNA Server versions 2.0, 2.1, 2.11, or 2.11
+SP1. A 2.11 SP1 hotfix is under investigation.
+
+This problem does not occur with SNA Server 3.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 2.11 SP1.
+This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The Sense Data section of the IBM SNA Formats Guide (GA27-3136) describes Sense
+Code 0815xxxx as:
+
+  Function Active: A request to activate a network element or procedure
+  was received, but the element or procedure was already active.
+
+  Bytes 2 and 3 following the sense code contain sense code specific
+  information.
+
+Additional query words: sscp msg10 prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137581/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137581/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137581/","publisher":null,"image":null,"headline":"Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137581-problems-with-multiple-sessions-over-tcpip-using-netsoft-elite">Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137581
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you open multiple 3270 sessions with NetSoft Elite 3.5 over a SNA Server
+2.11 Windows 3.1 or Windows for Workgroups client configured to use TCP/IP
+sockets to communicate with multiple SNA Servers, NetSoft Elite displays the
+following errors and hangs:
+
+  Error 2574: LU or LU Group not found in configuration
+  Error 87: SSCP connection already open
+  Error 85 No LU in group free
+
+If you have a session already open, you may lose that session when you open a
+second session.
+
+NOTE: The above errors are returned by the SNA Server client interface. These
+errors normally occur under the following conditions. For example:
+
+- Error 2574 can occur if you open a specific 3270 LU session when the SNA
+  Server supporting that session is currently not active.
+
+- Error 85 can occur if another user already has the specific LU open.
+
+- Error 87 can occur if a pooled LU session is requested, though all LUs in the
+  pool are already in use.
+
+However, the symptoms above occur even though the SNA Server(s) and LUs being
+requested are available.
+
+CAUSE
+=====
+
+There are two separate causes.
+
+First, when multiple sessions are opened using NetSoft Elite, the NetSoft 3270
+emulator submits multiple Open (SSCP) requests at the same time. However, the
+SNA client interface can only accept one Open (SSCP) request at a time from a
+given windows process.
+
+Secondly, the SNA Server Windows and Windows for Workgroups TCP/IP DLL file is
+not handling the receipt of data on one TCP/IP socket while attempting to
+connect to an SNA Server over a second socket, for example, when a second
+session is opened. This leads to a lost client session error (or Path error)
+that is returned to the emulator on the session that had been working.
+
+
+RESOLUTION
+==========
+
+Microsoft has updated the following files to correct this problem:
+
+  Path and File name           Description
+  --------------------------------------------------------------------
+  &lt;WINROOT&gt;\SYSTEM\WDMOD.DLL   SNA Server Win 3.x client module
+  &lt;WINROOT&gt;\SYSTEM\IPCLI.DLL   SNA Server Win 3.x TCP/IP interface
+                               module
+  &lt;sna.win&gt;\WNAP.EXE           SNA Server Win 3.x client moduleSTATUS
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+NetSoft Elite 3.5 is manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodsna 2.10 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

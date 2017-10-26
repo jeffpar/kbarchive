@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196503/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196503/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196503/","publisher":null,"image":null,"headline":"Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196503-wd97-word-link-to-microsoft-excel-shows-unexpected-information">Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196503
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbfield winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you link information from Microsoft Excel into Word, and then you insert rows
+or columns in or near the linked area in Excel, Word may not show the expected
+results.
+
+For example, if you copy the following material from Excel:
+
+  a    b    c
+  d    e    f
+  g    h    i
+
+and you link it into a Word document, Word shows the expected text.
+
+However, if you insert a row above the copied area in Excel, so that the
+information in Excel looks like this:
+
+  new text
+  a    b    c
+  d    e    f
+  g    h    i
+
+then Word shows the new row but not the last row:
+
+  new text
+  a    b    c
+  d    e    f
+
+CAUSE
+=====
+
+By design, a Word link always refers to the same area in Excel. If the cell
+range you originally linked from Excel includes cells B2 through F5, Word always
+refers to this same range, regardless of where you add rows or columns. You can
+see which part of the worksheet Word is referring to by choosing Links from the
+Edit menu.
+
+WORKAROUND
+==========
+
+If you want to add rows above or below the linked area, or if you want to add a
+column to either side, you must redo the link from Excel to Word.
+
+However, if you want to add rows or columns inside the linked area in Excel, you
+can work around this problem by using a range name in Excel. A range in Excel
+expands if rows or columns are added inside its boundaries. To name a range in
+Excel, follow these steps:
+
+1. Select the cells that you want to link.
+
+2. On the Insert menu, click Name.
+
+3. Click Define.
+
+4. In the Names In Workbook area, type the name you want to give this area, such
+  as "Sales" or "Earnings" (without the quotation marks).
+
+5. Click OK.
+
+When you copy this area and link it in Word, Word always shows any new rows or
+columns that have been added inside the boundaries of the named range.
+
+Additional query words: paste
+
+======================================================================
+Keywords          : kbfield winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148999/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148999/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148999/","publisher":null,"image":null,"headline":"Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148999-bug-on-error-not-called-when-update-conflict-occurs-in-grid">Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148999
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use row or table buffering in a form, an update conflict could occur if
+a user attempts to make changes to data that has already been updated by another
+user. In this situation, Visual FoxPro will display a standard update conflict
+error message, which allows the user to revert their changes. You can use an ON
+ERROR routine to trap for this error to more gracefully handle potential update
+conflicts. However, when you use an ON ERROR routine to trap for these update
+conflicts, the error routine will not be called correctly if the error occurs
+while interacting with a grid. This is a bug.
+
+WORKAROUND
+==========
+
+Using the Valid event of the text box object in the columns of a grid, you can
+check for potential update conflicts before actually performing the updates.
+Place the following code in the Valid event of the text box in every column of a
+grid:
+
+     IF InList(GetFldState(This.ControlSource),2,4) AND ;
+        OldVal(This.ControlSource)&lt;&gt;CurVal(This.ControlSource)
+          WAIT WINDOW 'Value has been changed by another user.'
+          =TableRevert(.t.)
+          RETURN 0
+     ENDIF
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form. Add a table to the data environment of the form and set
+  the BufferModeOverride property to 3. Drag the table from the data
+  environment to the form to create a grid. Save the form as Test.scx.
+
+2. Create a new program that contains the following code:
+
+     SET EXCLUSIVE OFF
+     ON ERROR WAIT WINDOW 'This is my error handler'
+     DO FORM Test
+
+3. Save and run the program.
+
+4. Start a second instance of Visual FoxPro, and run the program under this
+  second instance of Visual FoxPro.
+
+5. Make a change to a field on the first record in the grid, and move off that
+  record to update the table.
+
+6. Switch back to the first instance of Visual FoxPro.
+
+7. Make a change to the same field on the first record of the grid, and move off
+  that record to update the table. Note that the standard update conflict error
+  appears instead of the WAIT WINDOW.
+
+REFERENCES
+==========
+
+For more information about the grid and the ON ERROR command, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q130131 PRB: ON ERROR Not Called When Trigger Fails in Browse or Grid
+
+Additional query words: multiuser kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbnetwork kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

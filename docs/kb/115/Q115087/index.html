@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115087: HOWTO: Change the Background Color of a Common Dialog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115087: HOWTO: Change the Background Color of a Common Dialog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115087/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115087/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115087/","publisher":null,"image":null,"headline":"Q115087: HOWTO: Change the Background Color of a Common Dialog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115087-howto-change-the-background-color-of-a-common-dialog">Q115087: HOWTO: Change the Background Color of a Common Dialog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115087
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,4.0
+Operating System(s): 
+Keyword(s): kbATL kbMFC KbUIDesign kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbFAQ
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The common dialog-box classes provided by MFC can be used to modify the
+background color for common dialog boxes such as the File Open dialog box and
+the Print dialog box. It is necessary to derive a class from one of the MFC
+common dialog classes then override the OnCtlColor() and OnDestroy() member
+functions.
+
+MORE INFORMATION
+================
+
+The sample code below uses the CFileDialog common dialog-box class to
+demonstrate the process. Class Wizard was used to a generate message- handling
+function for the WM_CTLCOLOR message. The function called is
+"CMyDlg::OnCtlColor()".
+
+Sample Code
+-----------
+
+     // mydlg.h : header file
+     // 
+     #include &lt;dlgs.h&gt;
+     ////////////////////////////////////////////////////////////////////// 
+     // CMyDlg dialog
+
+     class CMyDlg : public CFileDialog
+     {
+     // Construction
+     public:
+         CMyDlg(CWnd* pParent = NULL);   // standard constructor
+
+         // Add a CBrush pointer to store the new background brush
+         CBrush m_pBkBrush;
+
+     // Dialog Data
+         //{{AFX_DATA(CMyDlg)
+         enum { IDD = FILEOPENORD };
+             // NOTE: the ClassWizard will add data members here
+         //}}AFX_DATA
+
+     // Implementation
+     protected:
+         virtual void DoDataExchange(CDataExchange* pDX);  // DDX/DDV support
+
+         // Generated message map functions
+         //{{AFX_MSG(CMyDlg)
+         afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+         //}}AFX_MSG
+         DECLARE_MESSAGE_MAP()
+     };
+
+     // mydlg.cpp : implementation file
+     // 
+     #include "stdafx.h"
+     #include &lt;afxdlgs.h&gt;
+     #include "mydlg.h"
+
+     #ifdef _DEBUG
+     #undef THIS_FILE
+     static char BASED_CODE THIS_FILE[] = __FILE__;
+     #endif
+
+     ////////////////////////////////////////////////////////////////////// 
+     // CMyDlg dialog
+
+     CMyDlg::CMyDlg(CWnd* pParent /*=NULL*/)
+         : CFileDialog(TRUE, NULL, NULL, OFN_HIDEREADONLY)
+     {
+         //{{AFX_DATA_INIT(CMyDlg)
+             // NOTE: the ClassWizard will add member initialization here
+         //}}AFX_DATA_INIT
+     }
+
+     void CMyDlg::DoDataExchange(CDataExchange* pDX)
+     {
+         CDialog::DoDataExchange(pDX);
+         //{{AFX_DATA_MAP(CMyDlg)
+             // NOTE: the ClassWizard will add DDX and DDV calls here
+         //}}AFX_DATA_MAP
+     }
+
+     BEGIN_MESSAGE_MAP(CMyDlg, CFileDialog)
+         //{{AFX_MSG_MAP(CMyDlg)
+         ON_WM_CTLCOLOR()
+         //}}AFX_MSG_MAP
+     END_MESSAGE_MAP()
+
+     ////////////////////////////////////////////////////////////////////// 
+     // CMyDlg message handlers
+
+     HBRUSH CMyDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+     {
+         switch (nCtlColor) {
+
+         case CTLCOLOR_STATIC:
+             // Set the static text to white on blue.
+             pDC-&gt;SetTextColor(RGB(255, 255, 255));
+             pDC-&gt;SetBkColor(RGB(0, 0, 255));
+             // Drop through to return the background brush.
+
+         case CTLCOLOR_DLG:
+             return (HBRUSH)(m_pBkBrush.GetSafeHandle());
+
+         default:
+              return CFileDialog::OnCtlColor(pDC, pWnd, nCtlColor);
+         }
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbMFC KbUIDesign kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbFAQ 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

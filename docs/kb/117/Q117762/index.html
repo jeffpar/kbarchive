@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117762: PC MAPI: README: Messaging Applications Development Tools Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117762: PC MAPI: README: Messaging Applications Development Tools Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117762/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117762/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117762/","publisher":null,"image":null,"headline":"Q117762: PC MAPI: README: Messaging Applications Development Tools Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117762-pc-mapi-readme-messaging-applications-development-tools-disk">Q117762: PC MAPI: README: Messaging Applications Development Tools Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117762
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+The following is the text of the Readme from the Messaging Application
+Tools Development Disk.
+
+CUSTOM COMMAND AND MESSAGE TYPE INFORMATION
+-------------------------------------------
+
+Saving and Printing Behavior for Custom Message Types:
+
+The description of a custom message type declaration on page 31 of the
+Microsoft Mail Technical Reference manual states that array positions 5 and
+6 in the "operation map" parameter control the 'Print' and 'Save'
+operations, respectively. This feature is not available in this version of
+Microsoft Mail, and the values entered in array positions 5 and 6 are
+ignored. The message is always printed or saved as if it were a standard
+note message.
+
+If you desire this functionality, you can include a button or a menu
+command in your custom message form that allow the user to Print or Save
+the message using code you've written.
+
+Using APPEXEC.DLL:
+
+The APPEXEC.DLL file described in the sections on installing custom
+commands and custom message types expects some additional tokens to be
+supplied in the "command line" parameter of a custom message declaration.
+See the APPEXEC.H file in the MAILEXTS\APPEXEC directory for complete
+information on the APPEXEC tokens.
+
+APPEXEC.DLL also exports some callback functions that must be called by the
+launched executable to implement a custom message type. See the APPEXEC.H
+file in the MAILEXTS\APPEXEC directory for complete information on the
+APPEXEC callback functions. The HELPREQ.C file in the MAILEXTS\HELPREQ
+directory provides a source code example of how the APPEXEC.DLL call back
+functions are used.
+
+MAPI Information
+----------------
+
+Using MAPI in Visual Basic Environments (BMAPI.DLL):
+
+Page 90 of the Technical Reference manual describes BMAPI.DLL as a windows
+DLL necessary for running Visual Basic applications which use Simple MAPI.
+Due to a design change after the Technical Reference manual went to press,
+BMAPI.DLL is no longer required and is not shipped with Microsoft Mail.
+Now, a Visual Basic application needs to use only the declarations in
+MAPI.BAS and the support code in MAPIVB.BAS with Simple MAPI functions. The
+reference to the BMAPI.DLL file should be ignored.
+
+Using MAPISaveMail with Messages in Shared Folders:
+
+Due to a bug in the implementation of Simple MAPI for shared folders, the
+ID of the saved message is invalidated after the call to MAPISaveMail.
+Custom form programmers should make sure that all message processing is
+complete before calling MAPISaveMail.
+
+Using MAPI_BCC with Microsoft Mail:
+
+The Microsoft Mail transport does not support the MAPI_BCC definition. On
+pages 86 and 133, the Technical Reference manual implies that the
+MAPI_E_BAD_RECIPTYPE error is returned when attempting to send a message
+with Microsoft Mail whose recipient type is set to MAPI_BCC. Due to a bug,
+MAPISendMail and MAPIReadMail will not return an error and will not send a
+message whose recipient type is set to MAPI_BCC.
+
+Using MAPIMessage with Large Subject Strings:
+
+Pages 46 and 94 of the Technical Reference manual state that the subject of
+a message is limited to 256 characters or less. While this is true of
+messages sent using MAPISendMail, messages saved with MAPISaveMail are not
+limited to 256 characters.
+
+Using MAPIFindNext with the MAPI_GUARANTEE_FIFO Flag:
+
+Pages 60 and 108 of the Technical Reference manual state that the value of
+MAPI_GUARANTEE_FIFO is 256 (0x200 hex). The correct value is 128 (0x100
+hex). The correct value is used in the MAPI.H file included on the
+Messaging Application Development Tools disk.
+
+Using MAPIReadMail with the MAPI_SUPPRESS_ATTACH flag:
+
+Pages 68 and 115 of the Technical Reference manual state that the value of
+MAPI_SUPPRESS_ATTACH is 128 (0x100 hex). The correct value is 1024 (0x800
+hex). The correct value is used in the MAPI.H file included on the
+Messaging Application Development Tools disk.
+
+The MapiMessage Structure:
+
+Pages 46 of the Technical Reference manual fails to describe the
+lpOriginator field of the MapiMessage structure. The description should be
+as follows:
+
+  A pointer to a MapiRecipDesc structure that describes the originator of the
+  message.
+
+  Similarly, page 94 fails to describe the Originator field of the Visual Basic
+  MapiMessage type. The description should be as follows:
+
+  A MapiRecip type that describes the originator of the message.
+
+The MAPIFreeBuffer Function:
+
+Page 62 of the Technical Reference manual erroneously states the list of
+return values as being the list of return values for the MAPILogoff
+function. The return values listed on page 62 are in fact correct for the
+MAPIFreeBuffer function.
+
+Additional query words: 3.00 README.TXT
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

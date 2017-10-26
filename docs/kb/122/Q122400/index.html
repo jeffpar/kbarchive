@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122400: Using SMS to Share Document Files with PGC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122400: Using SMS to Share Document Files with PGC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122400/","publisher":null,"image":null,"headline":"Q122400: Using SMS to Share Document Files with PGC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122400-using-sms-to-share-document-files-with-pgc">Q122400: Using SMS to Share Document Files with PGC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122400
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1
+Operating System(s): 
+Keyword(s): kbnetwork kbPGC smspgc
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server version 1.0 was not designed to share
+documents that were associated with Systems Management Server shared
+applications. For example, by current design, a Systems Management Server shared
+version of Microsoft Word (MSWord) cannot open a Systems Management Server
+shared document. The following error message usually appears in this situation:
+
+  Unable to open file &lt;filename&gt;.
+
+This happens whenever a drive letter is required. With Windows NT systems, using
+the Runs With UNC Name attribute allows the document to load properly.
+
+MORE INFORMATION
+================
+
+Any Systems Management Server shared program item requires the Appstart utility
+(APPSTART) to be ran. If a shared program item has a command line like
+SHAREME.DOC, and Requires Drive Letter is specified, Systems Management Server
+is unable to open the document file.
+
+This is because APPSTART is ran twice during the process; first to launch
+SHAREME.DOC, and second to launch MSWord. APPSTART then quits the first instance
+of itself and continues. This removes the first environment and the associated
+drive letter assigned to the SHAREME.DOC path.
+
+For example, APPSTART assigns a driver letter &lt;G:&gt;, and runs
+G:\SHAREME.DOC. Windows then associates the *.DOC file with MSWord and attempts
+to launch it. If a Systems Management Server version of MSWord is installed on
+the system, Windows then launches APPSTART a second time to start the shared
+version of MSWord. APPSTART detects that it is already running and shuts down
+the first instance, removing the drive connection to SHAREME.DOC. APPSTART then
+connects a new drive letter &lt;H:&gt; for MSWord and runs the command line
+H:\WINWORD.EXE G:\SHAREME.DOC. Because drive G has been disconnected by
+APPSTART, MSWord generates an error message that the file could not be opened.
+
+A partial workaround is to configure the shared document with the Runs With UNC
+Name attribute, and distribute to Windows NT and Windows 95 clients only. Like
+the above scenario, the second instance of APPSTART quits the first instance,
+removing the drive location. However, Windows NT and Windows 95 allow universal
+naming convention (UNC) network path names, and when MSWord runs, the command
+line is:
+
+  H:\WINWORD \\&lt;SMS Server&gt;\SHAREME.DOC.
+
+This forces Windows NT and Windows 95 to open a new UNC connection to the
+SHAREME.DOC.
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

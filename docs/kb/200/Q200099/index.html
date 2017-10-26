@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200099/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200099/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200099/","publisher":null,"image":null,"headline":"Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200099-prb-owner-drawn-list-control-in-68k-app-crashes-macintosh">Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200099
+Product(s): Microsoft C Compiler
+Version(s): MACINTOSH:4.0b
+Operating System(s): 
+Keyword(s): kbHWMAC kbVC kbDSupportkbbuglist
+Last Modified: 06-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, version 4.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When displaying an owner-drawn ListView control in report view on a 68K
+Macintosh, the Macintosh system crashes displaying the following message:
+
+  Sorry, a system error occurred.
+  "application name"
+  divide by zero
+
+If the program is executed under the debugger, Developer Studio displays the
+following message:
+
+  Exception in xxx.exe: 0x00000004: Divide by Zero
+
+CAUSE
+=====
+
+A bug with the height initialization of the ListView item for the control causes
+the internal call to ShowWindow to perform a divide-by-zero operation.
+
+RESOLUTION
+==========
+
+Set the height of the ListView control item to an appropriate value in the
+parent window's WM_MEASUREITEM handler for the ListView control. This can be
+done through the itemHeight field of the LPMEASUREITEMSTRUCT structure pointer
+provided.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The workaround involves setting the itemHeight data member of the
+LPMEASUREITEMSTRUCT structure pointer before the control is displayed. This can
+be done only in the parent window's WM_MEASUREITEM handler. It is not necessary
+to initially create the control without the WS_VISIBLE flag.
+
+The code below shows an example for an owner-drawn ListView control in a form
+view. The default height of a ListView control item on the Macintosh is 14
+pixels.
+
+  BEGIN_MESSAGE_MAP(CMyView, CFormView)
+      ON_WM_MEASUREITEM()
+      ...
+  END_MESSAGE_MAP()
+
+  // WM_MEASUREITEM is sent to parent of list control
+  void CMyView::OnMeasureItem(int nIDCtl,
+      LPMEASUREITEMSTRUCT lpMeasureItemStruct)
+  {
+      if (nIDCtl == IDC_LIST1) {
+
+          // Calculate appropriate font height.
+          int newHeight = 0;
+          CFont* pFont = (CFont*)GetFont();
+          if (pFont) {
+              LOGFONT lf;
+              pFont-&gt;GetLogFont(&amp;lf);
+              newHeight = (lf.lfHeight &gt; 0) ? lf.lfHeight : -lf.lfHeight;
+          }
+
+          // Set new itemHeight, use 14 as default height.
+          lpMeasureItemStruct-&gt;itemHeight = newHeight ? newHeight : 14;
+      }
+      CFormView::OnMeasureItem(nIDCtl, lpMeasureItemStruct);
+  }
+
+IDC_LIST1 is the ID of the owner-drawn ListView control.
+
+NOTE: This problem does NOT appear on Visual C++ for the Macintosh version 4.0.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Adam Kim,
+Microsoft Corporation.
+
+
+Additional query words: ownerdrawn ownerdraw CListCtrl list view WLM 4.0 4.1 4.2 owner-draw
+
+======================================================================
+Keywords          : kbHWMAC kbVC kbDSupport kbbuglist
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400bMac
+Version           : MACINTOSH:4.0b
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228715/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228715/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228715/","publisher":null,"image":null,"headline":"Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228715-xfor-notes-connector-crashes-when-converting-trace-messages">Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228715
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix exc55
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Exchange Notes Connector stops responding and cannot be restarted.
+
+CAUSE
+=====
+
+The Exchange Notes Connector is not able to process a trace message sent by a
+Lotus Notes user.
+
+NOTE: A trace message is generated whenever a Notes user selects the Trace Entire
+Path option in the message Delivery Options.
+
+RESOLUTION
+==========
+
+To resolve this problem, apply Service Pack 2 (SP2) for Exchange Server version
+5.5.
+
+WORKAROUND
+==========
+
+For a temporary workaround if SP2 cannot be immediately applied, locate the
+trace message in the Exchange Notes Connector queue, and delete it. The trace
+message is easily identified because it does not have an originator address in
+the From field. After you delete the trace message, restart the Exchange Notes
+Connector service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+This problem has been corrected in the latest U.S. service pack for Exchange
+Server version 5.5. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+In addition to the behavior described in the "Symptoms" section, the Exchange
+Connectivity Administrator log will contain the following information:
+
+1998/09/11 13:12:11-        LME-NOTES-NTSMEX(02b8) 3 00504:LME-NOTES-NTSMEX started &gt;&gt; stdmain(883)
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 41351:Message is missing an originator &gt;&gt; ntshcm(2546
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 54004:Error {Invalid format}: Cannot parse Notes message &gt;&gt; nts2mex(2452)
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 41301:Notes returned code: b0 (hex) &gt;&gt; ntshcint(1008)
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 41300:Notes Package ID: Main (MAIN). Extended Reason String: None &gt;&gt; ntshcint(1025
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 41355:Error purging Notes Mail item &gt;&gt; ntshcm(2832
+
+1998/09/11 13:12:27-        LME-NOTES-NTSMEX(02b8) 2 41389:Dequeue of Notes message failed &gt;&gt; nts2mex(2461
+
+Additional query words: messages queued
+
+======================================================================
+Keywords          : exc55sp2fix exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88192/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88192/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88192/","publisher":null,"image":null,"headline":"Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88192-info-wm_painticon-message-removed-from-windows-sdk-docs">Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88192
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKPlatform kbWndw kbWndwMsg
+Last Modified: 11-JUN-1999
+
+3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The WM_PAINTICON message is not listed in the "Programmer's Reference, Volume 3:
+Messages, Structures, and Macros" for version 3.1 of the Microsoft Windows
+Software Development Kit (SDK). The text below explains this decision and
+provides source code that enables an application to paint its own icon.
+
+MORE INFORMATION
+================
+
+When an application for the Microsoft Windows operating system registers a
+window class, it specifies a handle to an appropriate icon in the hIcon member
+of the WNDCLASS data structure. This can be an application-specific icon loaded
+from the application's resources or the default application icon provided with
+Windows.
+
+If the application includes its own icon, Windows sends a WM_PAINTICON message
+when the user minimizes the application. If the application passes the
+WM_PAINTICON message to the DefWindowProc function, Windows paints the icon in
+the appropriate location.
+
+If the application specifies the default icon or no icon, Windows does not send a
+WM_PAINTICON message when the user minimizes the application; instead, it sends
+a WM_PAINT message. When the application receives the WM_PAINT message, it can
+either pass the message to DefWindowProc so that Windows will paint the default
+icon, or the application can paint the icon dynamically.
+
+Because the application cannot process the WM_PAINTICON message, except to pass
+it to DefWindowProc, it has been removed from the documentation for version 3.1
+of the Windows SDK.
+
+The following code demonstrates how to process the WM_PAINT message to paint the
+icon. Given a window handle, the IsIconic function indicates whether the window
+is an icon:
+
+     case WM_PAINT:
+
+     {
+     PAINTSTRUCT ps;
+
+     BeginPaint(hWnd, &amp;ps);
+     if (IsIconic(hWnd))
+        {
+        SendMessage(hWnd, WM_ICONERASEBKGND, (WORD)ps.hdc, 0);
+        DrawIcon(ps.hdc, 0, 0, hIcon);
+        }
+        EndPaint(hWnd, &amp;ps);
+      }
+      break;
+
+When the application processes the WM_QUERYDRAGICON message by returning the
+handle to its icon, Windows converts the icon to a cursor when the user drags
+the icon window with the mouse.
+
+     case WM_QUERYDRAGICON:
+
+     return hIcon;
+
+Because the application paints the icon background when it processes the WM_PAINT
+message, the following code prevents the screen from flashing:
+
+     case WM_ERASEBKGND:
+
+     if (IsIconic(hWnd))
+        return TRUE;
+     else
+        return DefWindowProc(...);
+     break;
+
+DefWindowProc erases the background.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbWndw kbWndwMsg 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

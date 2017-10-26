@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182576/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182576/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182576/","publisher":null,"image":null,"headline":"Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182576-prb-nt-client-does-not-support-dynamic-def-of-invokable-tps">Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182576
+Product(s): Microsoft SNA Server
+Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot dynamically define invokable Advanced Program-to-Program
+Communication or Common Programming Interface for Communications (APPC/CPIC)
+transaction programs (TPs) on an SNA Server Windows NT client. When a new
+invokable TP is defined in the registry, you must stop and restart the SnaBase
+process to recognize the presence of the new TP.
+
+NOTE: The SNA Server Windows 95 client has supported this feature since SNA
+Server version 3.0.
+
+CAUSE
+=====
+
+The SNA Server Windows NT client was not originally designed to support the
+dynamic definition of new invokable TPs.
+
+RESOLUTION
+==========
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack.
+
+For additional information and to download this service pack, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+After you apply this update, any Windows NT program may notify the SnaBase
+service that a new TP has been installed on the computer by signaling the
+SNABASE_NEWTP_EVENT event. When this event is signaled, SnaBase re-reads the
+local registry to find the newly installed, invokable TPs.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

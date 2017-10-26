@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/319/Q319560/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/319/Q319560/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/319/Q319560/","publisher":null,"image":null,"headline":"Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q319560-cannot-install-ieak-user-rights-deployment-build-with-msi-20">Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q319560
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP6a
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup kbtool
+Last Modified: 12-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP6a 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP6a 
+- Microsoft Windows NT Workstation version 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience a problem when you install Internet Explorer by using the
+Internet Explorer Administration Kit (IEAK) with the User Rights Deployment
+component. The installation may not work if both of the following conditions
+exist:
+
+- A non-administrator user logs on to the computer to complete the Internet
+  Explorer installation.
+
+- The initial installation was started by an administrator.
+
+When the non-administrator logs on, the following two error messages are
+generated:
+
+  
+
+- Windows Update: The previous installation of an application has not been
+  completed.
+
+- Logon with an administrator account to complete the installation.
+
+If the non-administrator closes these error message dialog boxes, the
+non-administrator is immediately logged off the computer. The non-administrator
+cannot then log back on until an administrator logs on to the computer to
+complete the Internet Explorer installation.
+
+CAUSE
+=====
+
+This problem may be caused if MSI 2.0 is installed on the client computer before
+the IEAK User Rights Deployment installation started.
+
+RESOLUTION
+==========
+
+NOTE: No fix is currently available for Windows XP.
+
+Windows 2000
+------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+Windows NT 4.0
+--------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem. This fix may receive
+additional testing. Therefore, if you are not severely affected by this problem,
+Microsoft recommends that you wait for the next that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The typical support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date         Time       Size     File name
+  --------------------------------------------
+  27-Jun-2002  10:37      139,786  Msimain.sdb
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+This problem was first corrected in Windows 2000 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400sp6 kbWinNTS400search kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0 SP6a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

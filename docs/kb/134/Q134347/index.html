@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134347/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134347/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134347/","publisher":null,"image":null,"headline":"Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134347-info-troubleshooting-visual-c-setup-problems-under-windows-9">Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134347
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbsetup kbtshoot
+Last Modified: 18-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows you how to troubleshoot problems that may arise as you are
+setting up Visual C++ under Windows 95. The majority of setup troubles are going
+to have their root in one of three things:
+
+- Hardware incompatibility
+- Hardware failure
+- Device driver conflict (the most likely)
+
+The goal of this article is to help you get Visual C++ installed, build a sample
+program, and run the sample from within the IDE (internal development
+environment).
+
+If you run into a problem or receive an error along the way, the cause and the
+steps to take are pretty much the same regardless of whether the error occurs
+during the installation or after the installation as you try to build programs.
+
+MORE INFORMATION
+================
+
+Step-by-Step Troubleshooting
+----------------------------
+
+1. Determine which hardware device or device driver is causing the problem. To
+  isolate the culprit, first look in the Device Manager. To find the Device
+  Manager, point to the My Computer icon on your desktop, and click the right
+  mouse button. Click Properties on the menu, and then select the Device
+  Manager Tab. Be sure the View Devices by Type option is selected. This
+  displays a tree control of the various hardware devices you have. Opening a
+  given device on the tree control (by double-clicking it or by selecting it
+  and clicking the the Properties button) shows the property sheet for the
+  driver currently managing the device.
+
+2. Open each device's property sheet. For each driver, check the device status
+  message; you should see "Device is functioning properly." If the property
+  sheet has a Driver tab, click it, and note the name of the driver file. If
+  there is no Driver tab, the device driver is a standard driver, which is
+  loaded internally by Windows 95. If you find a device driver that is
+  malfunctioning and has a driver file, remove this driver and try again. If
+  you find a standard device driver (no Driver tab on the property sheet) that
+  is malfunctioning, check with the device's manufacturer to be sure there no
+  third-party driver is required. Take careful note of whether or not your hard
+  disk or CD-ROM uses third-party driver files, and what those file names are.
+
+3. Start Windows 95 in a safe mode - that is with only those third-party drivers
+  that are absolutely required for the computer to run and install Visual C++.
+
+  a. Shut down your computer, and then restart it.
+
+  b. When the screen says "Starting Windows 95 ..." press the F8 key to display
+     the Windows 95 start-up menu.
+
+  c. Select Safe Mode or Safe Mode With Network Support. This will boot Windows
+     95 into plain VGA mode, with no third-party drivers loaded. If you are
+     installing from a local CD-ROM drive to a local hard-disk drive, select
+     Plain Safe Mode, even if you are on a network.
+
+      - If your problem is an unsuccessful installation, re-do the installation
+        at this point. If this installation is successful, there is a good
+        chance you can restart in standard configuration and build a sample
+        successfully. If standard configuration builds fail, restart in safe
+        mode and see if you can build a program. If you can build in safe mode,
+        proceed to step 4 as though your original problem was a successful
+        installation, but you cannot build programs.
+
+      - If your problem is a successful installation, but you can't build
+        programs, try building a sample under safe mode. If you can build the
+        sample, then your task in step 4 will be to re-add drivers one at a
+        time until you find the one that breaks the build process. Once
+        discovered, you can contact the author to see if there are updates, or
+        you can disable that driver when doing Visual C++ builds.
+
+      - If your CD-ROM or hard-disk drive was previously using a third- party
+        driver, there is a good chance you will not be able to install in safe
+        mode due to an inability to access either your CD-ROM or hard-disk
+        drive. If that is the case, proceed to step #4 for step-by-step clean
+        boot instructions to load only the hard- disk driver or CD-ROM driver
+        file and no others.
+
+4. Arriving at this step probably means one of two things. You have installed
+  and can build in safe mode, but cannot build in your regular configuration,
+  or you could not access your hard-disk drive or CD-ROM in safe mode. In this
+  step, you will clean boot again, but with step-by- step confirmation for each
+  driver being loaded.
+
+  a. Rename your System.ini file to something else, such as System.org (avoid
+     .bak as a suffix). Second, copy (do not rename) System.cb to System.ini.
+     The System.cb file is the "clean" System.ini that safe mode uses to boot
+     your computer.
+
+     NOTE: If you find that your mouse is not working when you boot using
+     system.cb, adding the following may correct the problem:
+
+           [boot]
+           drivers=mmsystem.dll
+           mouse.drv=mouse.drv
+   
+           [enh386]
+           mouse=*vmouse
+      
+
+  b. Shut down your computer, and then restart it. When the screen says
+     "Starting Windows95 ...," press the F8 key for the windows 95 start-up
+     menu.
+
+  c. Select Step-by-Step Confirmation, then follow these steps:
+
+     1. Answer Y to process the system registry.
+
+     2. Answer Y to create a start-up log file. The log file can be helpful in
+        diagnosing problems, such as VxD's that can't load.
+
+     3. Answer Y to process your start-up device drivers (Config.sys). You will
+        not be asked this question if Config.sys is not found.
+
+     4. Answer Y or N to each driver as appropriate (answer Y to Himem.sys,
+        Emm386.sys, Ifshlp.sys).
+
+     5. Answer Y to process Autoexec.bat, or Y to load the Windows graphical
+        user interface. You will be asked the first question if Autoexec.bat is
+        not found, and the second question if it is.
+
+     6. Answer Y to load all Windows Drivers. These are the internal Windows
+        system drivers and are required.
+
+  If you are at this step (step 4) because of an inability to access your CD-ROM
+  or your Hard-disk drive in safe mode, attempt to complete the installation if
+  it is not already complete, and build a program. If you still cannot build or
+  install, then the conflict is probably with the very driver you need to
+  access your hard-disk or CD-ROM drive. Note the name of the driver file
+  involved, the date and time of the file, and the size in bytes. You may also
+  be able to get a revision number by clicking the right button when the file
+  is selected in the Windows Explorer and selecting Properties. With this
+  information, contact your hardware vendor to see if they have an update or a
+  patch you can acquire.
+
+  A common symptom of CD-ROM or hard-disk drive drivers conflicting or failing
+  is files becoming corrupt during what appears to be a successful installation
+  of Visual C++. To verify the integrity of the files copied from the CD-ROM to
+  the Hard-disk drive, use FC.exe; for information on how to do this, please
+  see the following article in the Microsoft Knowledge Base:
+
+  Q94653 Using FC.EXE to Verify CD-ROM File System Drivers
+
+
+  NOTE: For Visual C++ 2.x, there are two files, Msvcshl.dll and Spyxx.exe, in
+  the Bin subdirectory that Fc.exe will report as different. These two files
+  are modified as part of the installation process, and are therefore expected
+  to be different. For Visual C++ 4.0, there are three files that are
+  different: Msdev.exe, Msvccpp.pkg and Spyxx.exe. If any other files are found
+  to differ, simply copying them from the CD-ROM drive may fix the problem.
+
+  If setup is still failing, the CD-ROM driver is the one that is conflicting,
+  and it is impossible to download a new CD-ROM device driver, there is a last
+  resort that sometimes works. Boot to a plain MS- DOS mode. Copy the entire
+  Msvc20 directory to a temporary directory on the computer's hard drive by
+  using XCOPY. Then install from the temporary directory. Run "setup.exe /f"
+  from the CD-ROM afterwards to set the Help file paths and other paths
+  correctly. Finally, delete the temporary directory. Of course this "solution"
+  requires that the computer have plenty of extra disk space available.
+
+  If you are at step 4 because you can build in safe mode, but not in standard
+  mode, begin adding the drivers you weren't loading, one by one, until the
+  process breaks. If all drivers get loaded and the program still builds, your
+  video driver may be at fault, or it may be a combination of two or more
+  drivers being loaded simultaneously (and conflicting with each other) that is
+  causing the problem. Once the culprit is found, again note the date and time,
+  size in bytes, and possibly the revision number of the driver. Then contact
+  the driver's manufacturer for an update or patch.
+
+Creating a Hardware Profile
+---------------------------
+
+If you have to manipulate driver files individually, it may be useful to create a
+Hardware Profile, with only certain specified drivers loaded (sort of a custom
+clean boot). Hardware Profiles may be created and saved as follows:
+
+1. Click My Computer using the right mouse button. Click the Hardware Profile
+  tab, highlight Original Profile in the list box, and click the Copy Button,
+  naming the new profile as you wish. This hardware profile is now an exact
+  copy of your original or default configuration.
+
+2. Click the Device Manager tab, and open up the property sheet for each device
+  driver. Note the section called Device Usage. Clear the check box next to
+  your new profile for each device driver you don't want to load when booting
+  under your new profile.
+
+If you have more than one profile, Windows 95 will prompt you for which profile
+you wish to boot under at start-up.
+
+Additional query words: Windows win95
+
+======================================================================
+Keywords          : kbsetup kbtshoot 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC200 kbVC210
+Version           : :2.0,2.1,2.2,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

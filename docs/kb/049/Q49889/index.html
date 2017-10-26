@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q49889: PUTting a CONST to a RANDOM File Hangs QB.EXE 4.50 Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q49889: PUTting a CONST to a RANDOM File Hangs QB.EXE 4.50 Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/049/Q49889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/049/Q49889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/049/Q49889/","publisher":null,"image":null,"headline":"Q49889: PUTting a CONST to a RANDOM File Hangs QB.EXE 4.50 Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q49889-putting-a-const-to-a-random-file-hangs-qbexe-450-editor">Q49889: PUTting a CONST to a RANDOM File Hangs QB.EXE 4.50 Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q49889
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 27-FEB-1990
+
+Using a CONSTant as the third argument of a PUT statement when writing
+to a RANDOM file hangs QB.EXE at run time and during the Make EXE File
+command, leaving the word "Binding..." in the lower-left corner of the
+screen. This problem occurs only within the QuickBASIC Version 4.50
+editor.
+
+Microsoft has confirmed this to be a problem in QuickBASIC Version
+4.50 for MS-DOS. We are researching this problem and will post new
+information here as it becomes available.
+
+When compiled outside the environment, BC.EXE correctly flags the
+error with the message "Variable required," displaying the PUT
+statement with a caret pointing to the offending CONSTant. The third
+argument of the PUT statement requires a variable, and CONSTants are
+not allowed.
+
+This problem does not occur in the QBX.EXE environment of Microsoft
+BASIC Professional Development System (PDS) Version 7.00 for MS-DOS
+and MS OS/2. Within QBX.EXE, the error "Variable required" is flagged
+and the offending constant is highlighted.
+
+Code Example
+------------
+
+The QuickBASIC editor hangs, displaying the message "Binding..." in
+the lower-left corner of the screen, when you run (by pressing
+SHIFT+F5) or compile (by using the Make EXE File command on the Run
+menu) the following program:
+
+   CONST a = 1
+   OPEN "test.dat" FOR RANDOM AS #1
+   PUT #1, 1, a
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

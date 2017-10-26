@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271602: SMS: MSI Packages May Not Work When Distributed by SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271602: SMS: MSI Packages May Not Work When Distributed by SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271602/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271602/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271602/","publisher":null,"image":null,"headline":"Q271602: SMS: MSI Packages May Not Work When Distributed by SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271602-sms-msi-packages-may-not-work-when-distributed-by-sms">Q271602: SMS: MSI Packages May Not Work When Distributed by SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q271602</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">2.0</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms200bug</span> <span class="n">kbAdvertisement</span> <span class="n">kbPackage</span> <span class="n">kbSoftwareDist</span> <span class="n">kbsms200preSP3</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">23</span><span class="p">-</span><span class="n">OCT</span><span class="p">-</span><span class="m">2000</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">2.0</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">SMS</span><span class="p">)</span> <span class="n">Advertised</span> <span class="k">Package</span> <span class="n">Manager</span> <span class="p">(</span><span class="n">APM</span><span class="p">)</span>
+<span class="n">attempts</span> <span class="k">to</span> <span class="n">start</span> <span class="n">a</span> <span class="n">local</span> <span class="n">Microsoft</span> <span class="n">Installer</span> <span class="p">(</span><span class="n">MSI</span><span class="p">)</span> <span class="k">package</span> <span class="n">installation</span> <span class="n">on</span> <span class="n">a</span>
+<span class="n">Windows</span> <span class="m">2000</span> <span class="n">Professional</span><span class="p">-</span><span class="n">based</span> <span class="n">client</span> <span class="n">computer</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">program</span> <span class="n">that</span> <span class="n">starts</span> <span class="n">is</span>
+<span class="n">local</span> <span class="k">to</span> <span class="n">the</span> <span class="n">client</span> <span class="k">and</span> <span class="n">the</span> <span class="n">source</span> <span class="n">files</span> <span class="n">are</span> <span class="n">on</span> <span class="n">a</span> <span class="n">distribution</span> <span class="n">point</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">program</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span> <span class="n">installed</span> <span class="n">successfully</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">This</span> <span class="n">issue</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">the</span> <span class="n">working</span> <span class="n">folder</span> <span class="p">(</span><span class="n">source</span> <span class="n">file</span> <span class="n">location</span><span class="p">)</span> <span class="n">is</span> <span class="n">at</span> <span class="n">a</span>
+<span class="n">remote</span> <span class="n">location</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">is</span> <span class="n">launched</span> <span class="k">from</span> <span class="n">a</span> <span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span> <span class="n">Msiexec</span><span class="p">.</span><span class="n">exe</span>
+<span class="n">file</span> <span class="n">that</span> <span class="n">is</span> <span class="n">located</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">computer</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">file</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">retrieve</span> <span class="n">files</span>
+<span class="k">from</span> <span class="n">a</span> <span class="n">distribution</span> <span class="n">point</span><span class="p">,</span> <span class="n">the</span> <span class="n">connection</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span> <span class="n">available</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">installation</span> <span class="k">then</span> <span class="n">does</span> <span class="k">not</span> <span class="n">succeed</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">indicates</span> <span class="n">how</span> <span class="n">MSI</span> <span class="n">packages</span> <span class="n">work</span><span class="p">:</span>
+
+  <span class="n">c</span><span class="p">:\</span><span class="n">winnt</span><span class="p">\</span><span class="n">msiexec</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">i</span> <span class="p">\\</span><span class="n">svr001</span><span class="p">\</span><span class="n">sms</span><span class="p">$\</span><span class="n">smspkg</span><span class="p">\</span><span class="k">package</span><span class="p">.</span><span class="n">msi</span> <span class="p">/</span><span class="n">qr</span>
+
+<span class="n">Msiexec</span><span class="p">.</span><span class="n">exe</span> <span class="n">is</span> <span class="n">stored</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">computer</span> <span class="n">under</span> <span class="n">the</span> <span class="n">C</span><span class="p">:\</span><span class="n">Winnt</span> <span class="n">folder</span> <span class="n">by</span>
+<span class="n">default</span><span class="p">.</span> <span class="n">This</span> <span class="n">program</span> <span class="n">file</span> <span class="n">is</span> <span class="n">called</span> <span class="n">on</span> <span class="k">in</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="n">MSI</span>
+<span class="k">package</span> <span class="n">that</span> <span class="n">the</span> <span class="n">file</span> <span class="k">then</span> <span class="n">installs</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">files</span> <span class="n">are</span> <span class="n">located</span> <span class="k">in</span> <span class="n">a</span> <span class="n">remote</span>
+<span class="n">location</span><span class="p">,</span> <span class="n">the</span> <span class="n">APM</span> <span class="n">drops</span> <span class="n">the</span> <span class="n">connection</span> <span class="k">to</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">after</span> <span class="n">it</span> <span class="n">starts</span>
+<span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">program</span> <span class="n">file</span> <span class="n">locally</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">computer</span><span class="p">.</span> <span class="n">The</span> <span class="n">MSI</span> <span class="k">then</span>
+<span class="n">generates</span> <span class="n">error</span> <span class="n">messages</span> <span class="k">with</span> <span class="n">an</span> <span class="n">error</span> <span class="n">code</span> <span class="m">1619</span> <span class="n">that</span> <span class="n">state</span> <span class="n">that</span> <span class="n">the</span> <span class="n">MSI</span> <span class="n">could</span>
+<span class="k">not</span> <span class="n">access</span> <span class="n">the</span> <span class="k">package</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">Because</span> <span class="n">MSI</span> <span class="p">(</span><span class="n">Msiexec</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span> <span class="n">resolves</span> <span class="k">to</span> <span class="n">a</span> <span class="n">local</span> <span class="n">path</span><span class="p">,</span> <span class="n">the</span> <span class="n">APM</span> <span class="n">does</span> <span class="k">not</span> <span class="n">maintain</span> <span class="n">the</span>
+<span class="n">connection</span> <span class="k">to</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">point</span><span class="p">.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">connection</span> <span class="k">to</span> <span class="n">the</span> <span class="n">distribution</span>
+<span class="n">point</span> <span class="n">is</span> <span class="n">released</span><span class="p">,</span> <span class="n">the</span> <span class="n">working</span> <span class="n">folder</span> <span class="n">is</span> <span class="n">no</span> <span class="n">longer</span> <span class="n">accessible</span> <span class="k">and</span> <span class="n">the</span> <span class="n">APM</span> <span class="n">does</span>
+<span class="k">not</span> <span class="n">succeed</span><span class="p">.</span>
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">issue</span><span class="p">,</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">the</span> <span class="n">connection</span> <span class="n">remains</span> <span class="k">and</span> <span class="n">runs</span> <span class="n">properly</span><span class="p">.</span>
+<span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">point</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span> <span class="n">by</span> <span class="n">using</span> <span class="n">a</span>
+<span class="n">custom</span> <span class="n">share</span> <span class="n">point</span> <span class="k">or</span> <span class="n">by</span> <span class="n">manually</span> <span class="n">specifying</span> <span class="n">the</span> <span class="n">complete</span> <span class="n">path</span> <span class="n">including</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">identification</span> <span class="p">(</span><span class="n">ID</span><span class="p">)</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">products</span> <span class="n">that</span> <span class="n">are</span>
+<span class="n">listed</span> <span class="n">at</span> <span class="n">the</span> <span class="n">beginning</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span>
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsms200bug</span> <span class="n">kbAdvertisement</span> <span class="n">kbPackage</span> <span class="n">kbSoftwareDist</span> <span class="n">kbsms200preSP3</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS200</span> <span class="n">kbSMS200SP1</span> <span class="n">kbSMS200SP2</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">2.0</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbbug</span>
+<span class="n">Solution</span> <span class="n">Type</span>     <span class="p">:</span> <span class="n">kbnofix</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

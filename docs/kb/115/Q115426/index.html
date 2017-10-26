@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115426: Indexing on a Character and Numeric Field Together | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115426: Indexing on a Character and Numeric Field Together" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115426/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115426/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115426/","publisher":null,"image":null,"headline":"Q115426: Indexing on a Character and Numeric Field Together","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115426-indexing-on-a-character-and-numeric-field-together">Q115426: Indexing on a Character and Numeric Field Together</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115426
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is sometimes desirable to create an index on combined fields. Doing this
+becomes more difficult when one of the fields is numeric, and may contain
+negative numbers. The following example shows how this may be accomplished.
+
+MORE INFORMATION
+================
+
+NOTE: This can also be accomplished by using the SQL SELECT command with its
+ORDER clause.
+
+The following table is in physical order. The CHAR field is a character field
+with a length of 10, and the NUM field is a numeric field with a width of 5.
+
+  CHAR                         NUM
+  ---------------------------------
+
+  Apple                        -299
+  Apple                        -298
+  Zebra                        3900
+  Yankee                         -9
+  Octopus                       237
+  Frank                        -222
+  Yankee                          1
+  Zebra                       -4000
+  Apple                        2200
+  Apple  a                     2200
+
+The difficulty here is how to index on a string negative number. In a
+character-based ascending index scheme, -004 doesn't come before -003. FoxPro
+orders the data using the ASCII equivalents. To have the numbers appear in
+ascending order, the numeric value must first be added to the largest possible
+value for that field (99999 in this example) and then converted to a string. For
+example, the following INDEX command creates a compound index named COMBO that
+is in ascending order when the numeric field is five spaces wide:
+
+     INDEX ON Char+STR(99999+Num) TAG Combo
+
+The following table contains the same data as above. However, it is now in
+ascending order based on the COMBO index:
+
+  CHAR                         NUM
+  ---------------------------------
+
+  Apple                        -299
+  Apple                        -298
+  Apple                        2200
+  Apple  a                     2200
+  Frank                        -222
+  Octopus                       237
+  Yankee                         -9
+  Yankee                          1
+  Zebra                       -4000
+  Zebra                        3900
+
+Additional query words: VFoxWin FoxDos FoxWin 2.50 2.50a 2.50b 2.50c 2.60 sort alphabetical combination
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

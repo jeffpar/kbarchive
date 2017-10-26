@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59890: Minimum Extended Memory (384K) Causes CV 3.00 to Use Extra RAM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59890: Minimum Extended Memory (384K) Causes CV 3.00 to Use Extra RAM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59890/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59890/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59890/","publisher":null,"image":null,"headline":"Q59890: Minimum Extended Memory (384K) Causes CV 3.00 to Use Extra RAM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59890-minimum-extended-memory-384k-causes-cv-300-to-use-extra-ram">Q59890: Minimum Extended Memory (384K) Causes CV 3.00 to Use Extra RAM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59890
+Product(s): See article
+Version(s): 3.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr HIMEM | mspl13_basic
+Last Modified: 27-SEP-1990
+
+Real-mode CodeView (CV) Version 3.00 is documented as being able to
+run in extended memory as long as there is at least 384K of extended
+memory available. This 384K minimum is accurate as far as CV being
+able to utilize the extended memory, but it is not enough for CodeView
+to remove all of itself from conventional RAM. In fact, a system
+configuration with only 384K extended memory will result in LESS
+memory being available for the debuggee (the program being debugged)
+than if no extended memory is utilized at all.
+
+The CodeView 3.00 documentation states that "if HIMEM.SYS or another
+extended-memory driver is installed, all but 16K of CodeView, plus all
+of the symbolic information for the program you are debugging, are
+placed in extended memory." But, for CodeView to truly work with this
+16K "footprint" in conventional memory, a minimum of approximately
+600K extended memory must be available.
+
+When no extended memory is available, CodeView normally utilizes
+overlays to keep as much of itself out of memory as possible, so that
+the debuggee can have more space to load. (The new /Dnnn option
+actually allows you to specify the size of the overlays -- a bigger
+overlays means CV runs faster, but a smaller overlays mean a bigger
+program can be loaded for debugging.)
+
+Once CodeView detects extended memory, it assumes that overlays are no
+longer needed, since CV itself and the debuggee's symbolic information
+will both (supposedly) be loaded into extended memory. However, the
+result may be that CodeView seems to get bigger because what Codeview
+can't fit into extended memory is loaded into conventional memory.
+
+Since no overlays are used, this can result in a much larger
+footprint. For instance, if the minimum of 384K extended memory is all
+that is available, then the footprint will be well over 200K.
+Obviously, as the amount of extended memory is increased from 384K,
+the footprint will shrink accordingly.
+
+The /X command-line option instructs CodeView to use extended memory.
+However, CV will automatically detect extended memory and use it if it
+is available. Consequently, if the /X option is not specified, CodeView
+will still use extended memory.
+
+Thus, if you have a limited amount of extended memory and decide to
+run CodeView in conventional RAM only, you have two options. You can
+explicitly specify /D (for example, /D16) to tell CodeView to use
+overlays, or you can remove (or comment out) the line in your
+CONFIG.SYS file that loads the extended memory driver (HIMEM.SYS) and
+reboot.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

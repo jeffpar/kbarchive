@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135031/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135031/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135031/","publisher":null,"image":null,"headline":"Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135031-smtp-unable-to-send-smtp-mail-messages-from-downstream-po">Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135031
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Downstream postoffices (PO) with the SMTP Access Component installed can not
+send SMTP messages; the mail messages are still in the SMTP queue and have not
+been picked up by the External Mail program. However, Microsoft Mail messages
+are sent successfully in both directions from the downstream postoffice to the
+gateway postoffice, and incoming SMTP mail is successfully routed to the
+Downstream postoffice. No errors are listed in the SESSION.LOG, and mail is not
+returned with an error.
+
+CAUSE
+=====
+
+After you install the SMTP Access Component on the downstream postoffice, the
+gateway postoffice is deleted from the External-Admin option in ADMIN.EXE. Then
+it is added back (one reason would be for troubleshooting purposes).
+
+The NETWORK.GLB file was not updated to show the correct hex value for the
+gateway postoffice's MBG and KEY files. When a user on the downstream postoffice
+sends SMTP mail, it is being put into the SMTP &lt;hexid&gt;.MBG and
+&lt;hexid&gt;.KEY files; however, the External Mail program does not know what
+postoffice to send the SMTP Mail to. As a result, it ignores the mail.
+
+ADMIN.EXE should recognize that the gateway postoffice is a hub postoffice, but
+it does not and subsequently allows the administrator to delete it.
+
+RESOLUTION
+==========
+
+NOTE: Debugging the NETWORK.GLB file and changing the hex value to the correct
+hex value (matching the gateway postoffice's hex value in the XTN file) does NOT
+fix this problem and is NOT recommended.
+
+When the SMTP gateway postoffice reference is deleted from a downstream
+postoffice with the SMTP Access Component installed, you must run the following
+to remove the SMTP Access Component from the downstream PO:
+
+  install -r
+
+Then run INSTALL to put the files back again and to update the NETWORK.GLB and
+other files.
+
+This information may also apply to other gateways.
+
+Additional query words: pcmailfaq
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP320
+Version           : MS-DOS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

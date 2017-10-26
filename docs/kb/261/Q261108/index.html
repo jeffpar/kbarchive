@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261108/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261108/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261108/","publisher":null,"image":null,"headline":"Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261108-howto-use-ado-in-vfp-interactively-with-the-ado-control">Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261108
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.6,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbADO kbCtrl kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbCodeSnippet kbMDAC2
+Last Modified: 21-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft Data Access Components version 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Normally, when using ActiveX Data Objects (ADO) in Visual FoxPro, code is
+written to make a call to an ODBC driver, which then retrieves the data. The
+same result can be accomplished interactively in a Visual FoxPro form by using
+the ADO Data control to access a table using an ODBC driver. You may display the
+results by using the DataGrid control.
+
+NOTE: The DataGrid control has not been tested with and is not supported by
+Microsoft Visual FoxPro.
+
+MORE INFORMATION
+================
+
+Even though the ADO control is not visible when the form runs, it has properties
+that allow the user to change the table and/or datasource interactively. These
+controls are shipped with Visual FoxPro 6.0.
+
+1. Create a form, select the OLE ActiveX (Olecontrol) button from the Form
+  Controls toolbar, and then click on the form.
+
+2. Select the Insert Control button, and then scroll down and select Microsoft
+  ADO Data, version 6.0.
+
+3. After deciding which ODBC datasource and table that you want to access, go to
+  the properties sheet of the form and change the following properties on
+  Olecontrol1:
+
+CommandType - "2 - Table Command"
+ConnectionString - DSN=&lt;your datasource&gt;
+RecordSource - &lt;table name&gt;
+
+Make sure that DSN= is in front of your datasource name.
+
+4. From the Form Controls toolbar, select the OLE ActiveX (Olecontrol) button to
+  create a second olecontrol. After clicking on your form, select the Insert
+  Control button and choose Microsoft DataGrid Control, version 6.0.
+
+5. Add the following code to the Init event of the form and run the form:
+
+       Thisform.Olecontrol2.DataSource = Thisform.Olecontrol1.Object
+
+After the form runs, the grid is populated with data from the table.
+
+6. If the user wants to change the data in the DataGrid control interactively,
+  then change the table name and/or datasource of the ADO Data control. For
+  example, drop a Command button on the form and add the following code to the
+  click event:
+
+       Thisform.Olecontrol1.ConnectionString='DSN=&lt;your datasource'
+       Thisform.Olecontrol1.RecordSource='&lt;table name&gt;'
+       Thisform.Olecontrol2.DataSource=Thisform.Olecontrol1.Object
+       Thisform.Refresh
+
+7. Click the Command button, and note that the grid is populated with data from
+  the other table.
+
+REFERENCES
+==========
+
+For additional information on ActiveX controls supported in Visual FoxPro 6.0,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q191222 INFO: ActiveX Controls Supported by Visual FoxPro 6.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbADO kbCtrl kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbCodeSnippet kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC260 kbVFP600
+Version           : WINDOWS:2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

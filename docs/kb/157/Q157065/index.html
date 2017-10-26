@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157065: STL Sample for deque::size and deque::resize Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157065: STL Sample for deque::size and deque::resize Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157065/","publisher":null,"image":null,"headline":"Q157065: STL Sample for deque::size and deque::resize Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157065-stl-sample-for-dequesize-and-dequeresize-functions">Q157065: STL Sample for deque::size and deque::resize Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157065
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the deque::size, deque::resize,
+deque::max_size, deque::end, and deque::begin STL functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;deque&gt;
+
+Prototype
+---------
+
+     size_type size() const;
+     void resize(size_type n, T x = T());
+     size_type max_size() const;
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The member function size returns the length of the controlled sequence.
+
+The member function resize ensures that size() henceforth returns n. If it must
+make the controlled sequence longer, it appends elements with value x. If no
+value is supplied, the default value depends upon the type. For example, if it
+is a deque of chars, the default is a blank. If it is a deque of ints, the
+default is zero.
+
+The member function max_size returns the length of the longest sequence that the
+object can control.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: -GX
+  // 
+  // deque.cpp :
+  // 
+  // Functions:
+  // 
+  //    size
+  //    resize
+  //    max_size
+  //    begin
+  //    end
+  // 
+  // Written by Bobby Mattappally
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  /* Compile options needed:-GX
+  */ 
+  #include &lt;iostream&gt;
+  #include &lt;deque&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef deque&lt;char, allocator&lt;char&gt; &gt;  CHARDEQUE;
+
+  void print_contents (CHARDEQUE  deque, char*);
+
+  void main()
+
+  {
+
+      //create a  with  A, B, C and D
+      CHARDEQUE  a;
+      a.push_back('A');
+      a.push_back('B');
+      a.push_back('C');
+      a.push_back('D');
+
+      //print out the contents
+
+      print_contents (a,"a");
+      cout &lt;&lt;"max_size of a is " &lt;&lt;a.max_size() &lt;&lt;endl;
+      cout &lt;&lt;"size of a is " &lt;&lt;a.size() &lt;&lt;endl;
+
+      //let us increase the size to 10
+      // and set the new elements to be 'X'
+      a.resize(10,'X');
+      print_contents (a,"a");
+      cout &lt;&lt;"size of a is " &lt;&lt;a.size() &lt;&lt;endl;
+
+      //let us resize it to 5
+
+      a.resize(5);
+      print_contents (a,"a");
+      cout &lt;&lt;"size of a is " &lt;&lt;a.size() &lt;&lt;endl;
+      cout &lt;&lt;"max_size of a is still " &lt;&lt;a.max_size() &lt;&lt;endl;
+
+      }
+
+  //function to print the contents of deque
+  void print_contents (CHARDEQUE  deque, char *name)
+
+  {
+
+      CHARDEQUE::iterator pdeque;
+
+      cout &lt;&lt;"The contents of "&lt;&lt; name &lt;&lt;" : ";
+
+          for(pdeque = deque.begin();
+          pdeque != deque.end();
+          pdeque++)
+      {
+          cout &lt;&lt; *pdeque &lt;&lt;" " ;
+      }
+          cout&lt;&lt;endl;
+
+  }
+
+Program Output is:
+
+The contents of a : A B C D
+max_size of a is 4294967295
+size of a is 4
+The contents of a : A B C D X X X X X X
+size of a is 10
+The contents of a : A B C D X
+size of a is 5
+max_size of a is still 4294967295
+
+NOTE: With Visual C++ 4.2, the max_size value is misleading because a sequence
+this long cannot be created. See the following Microsoft Knowledge Base article
+for further information:
+
+  Q160017 BUG: Access Violation Using deque class
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample deque size resize max_size begin end kbSTL kbTemplate
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

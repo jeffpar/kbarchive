@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119248/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119248/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119248/","publisher":null,"image":null,"headline":"Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119248-fix-error-during-compression-splitting-a-file-a-second-time">Q119248: FIX: "Error During Compression" Splitting a File a Second Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119248
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0; :2.5x,2.6
+Operating System(s): 
+Keyword(s): kberrmsg kbvfp kbvfp500fix kbvfp250bug KBQ
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows Distribution Kit, versions 2.5x, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running the FoxPro for Windows Setup Wizard, the error message
+"Error During Compression" appears when the wizard is splitting a large file a
+second time.
+
+
+CAUSE
+=====
+
+The disk images directory path is too long. The path, with the filename, is
+limited to 50 characters including "\COMPRESS\FILENAME.XXX", which is added on
+to the disk image path given in the Disk Images Directory box in the Setup
+Wizard. This is a limitation of the compression utility used by the Setup
+Wizard.
+
+For example, if the disk images directory is
+
+  C:\FOXAPPS.WIN\DISTRIB\VER_300
+
+the entire path to the location of the compressed files is:
+
+  C:\FOXAPPS.WIN\DISTRIB\VER_300\COMPRESS\FILENAME.XXX
+
+NOTE: The Setup Wizard cannot create a directory that is three levels deep;
+instead, it will generate the error message "Could not create directory
+c:\level1\level2\level3." Therefore, the directory must already exist on the
+hard disk drive in order for the above problem to occur.
+
+You can also get this error if the destination directory for the disk images is a
+diskette drive (A or B diskette drive)
+
+RESOLUTION
+==========
+
+Change the disk images directory to a shorter path (for example, C:\IMAGES).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+Additional query words: 2.50 2.50a 2.50b 2.60 SetupWizard dk cpsrname interrupted
+
+======================================================================
+Keywords          : kberrmsg kbvfp kbvfp500fix kbvfp250bug KBQ 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxProDK250xSearch kbFoxProDKSearch kbVFP300
+Version           : WINDOWS:3.0; :2.5x,2.6
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

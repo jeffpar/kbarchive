@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99164/","publisher":null,"image":null,"headline":"Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99164-mac-srv-serial-numbers-in-retail-and-upgrade-servers">Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99164
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:3.0,3.1,3.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1, 3.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 3.0 and 3.1 of Microsoft Mail for AppleTalk Networks provide two
+different kinds of servers: retail and upgrade. Both versions are identical
+except that the retail version of the server contains a unique serial number and
+has the ability to create a new data file. The upgrade server does not contain a
+serial number and does not have the ability to create a new data file. Both
+servers, however, can upgrade an existing data file.
+
+MORE INFORMATION
+================
+
+When installing Microsoft Mail, the Microsoft Mail Server program checks for a
+valid Microsoft Mail Data file in the System Folder.
+
+If such a file does not exist, and if you are using a retail version of the
+server program, the installation program creates a new Microsoft Mail Data file
+and assigns the serial number of the Mail Server program. You cannot change the
+serial number of a mail server once the number has been written to the data
+file.
+
+If a data file does not exist, and if you are using upgrade version of the server
+program, the following message appears:
+
+  The Microsoft Mail Server could not be loaded because Update servers may only
+  be used with an existing "Microsoft Mail Data" file.
+
+In both cases (if you are using either a retail version or an upgrade version),
+if a data file already exists, the Microsoft Mail Server will update its own
+internal serial number using the information contained within the data file.
+
+Because Microsoft Mail uses the serial number contained within the data file when
+it communicates with other servers, it is possible to replace the Microsoft Mail
+Server file and maintain serial number integrity.
+
+NOTE: The Microsoft Mail server must be an extension in order to get a serial
+number. If the Microsoft Mail Server is running as an application, it will use
+the Microsoft Mail Data file's serial number for operation, but it will not
+change its internal serial number to match. This is important if the Microsoft
+Mail Server is an upgrade because it will not allow for a new datafile to be
+created at a later date.
+
+
+Additional query words: 3.00 3.10 3.10a datafile
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN310a
+Version           : WINDOWS:3.0,3.1,3.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

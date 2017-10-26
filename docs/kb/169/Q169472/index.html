@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169472/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169472/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169472/","publisher":null,"image":null,"headline":"Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169472-file-and-printer-sharing-for-microsoft-networks-is-unavailable">Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169472
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbenv kbnetwork 3rdpartynet msnets kb3rdPartyNetClient
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you use the right mouse button to click a drive, folder, or printer, there
+may be no Sharing command on the menu that appears even though the "File and
+printer sharing for Microsoft Networks" component is installed in Network
+properties.
+
+CAUSE
+=====
+
+The Nwserver.vxd file may be loading even though the "File and printer sharing
+for NetWare Networks" component is not installed in Network properties.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+Method 1
+--------
+
+If the Microsoft Client for NetWare Networks is installed on your computer and
+you do not connect to a NetWare server, remove the client from Network
+properties. To remove the Microsoft Client for NetWare Networks, follow these
+steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click Client For NetWare Networks.
+
+3. Click Remove, and then click OK.
+
+4. Restart your computer when you are prompted to do so.
+
+Method 2
+--------
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+If sharing is still not available, determine if the Nwserver.vxd file is loading
+by following these steps:
+
+1. Click the Start button, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type:
+
+  " nwserver.vxd " (without the quotation marks)
+
+3. Click Find Now.
+
+4. If the file is found, use the right mouse button to click the Nwserver.vxd
+  file, and then click Rename on the menu that appears.
+
+5. Rename the file to Nwserver.xxx, and then press ENTER.
+
+6. Shut down and restart your computer. If you receive the following error
+  message when you computer starts, the Nwserver.vxd file is being called from
+  the registry:
+
+  Cannot find a device necessary to run Windows. Nwserver.vxd
+
+  If you receive this error message, sharing should now be available.
+
+7. To remove the reference to Nwserver.vxd in the registry, use Registry Editor
+  to delete the StaticVxD value in the NWServer subkey under the following
+  registry entry:
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\NWServer
+
+MORE INFORMATION
+================
+
+The Nwserver.vxd file provides file and printer sharing for NetWare networks in
+Windows 95; the Vserver.vxd file provides file and printer sharing for Microsoft
+networks. These two components cannot function simultaneously in Windows 95.
+
+Additional query words: cannot share installed
+
+======================================================================
+Keywords          : kbenv kbnetwork 3rdpartynet msnets kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

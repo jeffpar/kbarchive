@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69994/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69994/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69994/","publisher":null,"image":null,"headline":"Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69994-using-argv-and-envp-variables-in-a-lan-manager-200-service">Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69994
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+Question:
+
+I have written a LAN Manager version 2.00 service that tries to launch
+a second process (that is, run another .EXE file). However, the
+DosExecPgm() call keeps returning ERROR_FILE_NOT_FOUND, even though
+the .EXE I'm trying to start exists in the same directory as my service
+.EXE. Why isn't my second .EXE being found?
+
+Response:
+
+When LAN Manager 2.00 launches a service (for example, in response to
+the Net Start command), it passes to the service no explicit arguments
+and no environment variables [the argument and environment pointers in
+the DosExecPgm() call are both set to NULL]. This results in the new
+process inheriting the environment established by CONFIG.SYS. If the
+.EXE for your new process cannot be found in the PATH listed in
+CONFIG.SYS, your DosExecPgm() call will fail. The following are four
+possible solutions:
+
+1. Insist that your users place your .EXEs in the same directory and hard code
+  the full pathname.
+
+2. As part of the installation of your service, have the user add the location
+  of your .EXEs to the CONFIG.SYS PATH variable.
+
+3. Extract from the argv[0] variable, passed to your service by OS/2, the path
+  of your first .EXE and use it to build the full pathname for the .EXE you're
+  attempting to launch. This will only work if all of your .EXEs exist in the
+  same directory.
+
+4. Add a keyword to LANMAN.INI for your service that supplies the necessary
+  path.
+
+Of these three solutions, solutions 1 and 2 place unreasonable
+restrictions on the user. The second solution can also cause problems
+if there are other .EXEs with the same name as yours in the path. The
+fourth solution is good if your service needs to create temporary
+files or other files that the user may not want in the same directory
+as the .EXEs (since the user may have read/execute-only privileges on
+that directory). Although it is probably best to keep all of your
+.EXEs together, it is not the best solution when attempting to start
+child processes.
+
+The third solution is the best and is used for standard LAN Manager
+2.00 services to launch child processes. Argv[0] can be safely used to
+determine your services "home" directory, since it always contains the
+full pathname of the .EXE that was started. This is guaranteed by how
+LAN Manager issues the DosExecPgm() call. Because the user must keep
+all of his or her .EXEs in a single directory, this also places the
+least number of restrictions on the user.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

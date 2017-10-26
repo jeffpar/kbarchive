@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160064/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160064/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160064/","publisher":null,"image":null,"headline":"Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160064-howto-convert-vba-to-foxpro-for-ole-automation">Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160064
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp300 kbvfp500 kbvfp600
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to perform OLE Automation with an application that uses Visual Basic
+for Applications (VBA), it is important to understand how to convert the VBA
+syntax for each command or function into a syntax that may be used in Visual
+FoxPro. Below is a list of a few of the most common Visual Basic for
+Applications (VBA) commands that may be used to perform OLE Automation from
+Visual FoxPro to Microsoft Excel or Microsoft Word along with the appropriate
+syntax for use in Visual FoxPro.
+
+Since this list is very limited, it may be helpful to understand some of the
+points of converting VBA to FoxPro:
+
+1. Use parentheses to surround the list of parameters.
+
+2. Do not use Named parameters. Instead, just pass the value of the parameter in
+  its specified position in the list.
+
+3. You may use FoxPro variables and fields as parameters just as you would in
+  FoxPro commands, as long as they are of the correct type.
+
+4. If you are having problems getting a statement or method to work, make
+
+sure that it works as written from within a module of the application (Microsoft
+Excel or Microsoft Word). If it is available, you may also want to try the
+statement from Visual Basic.
+
+For a description of the methods and statements listed, along with information
+about the use of specific parameters, please see the respective Visual Basic
+Reference file for Microsoft Word or Microsoft Excel.
+
+MORE INFORMATION
+================
+
+General Notes
+-------------
+
+Variables and parameters are prefixed by a single character indicating the type
+of the variable or parameter as follows:
+
+- c Character
+
+- n Numeric
+
+- o Object
+
+- l Logical
+
+Some portions of certain commands may be optional. These portions are enclosed by
+brackets [].
+
+VBA has many built-in constants that may be used. However, FoxPro does not know
+the values of these constants. To use them in FoxPro, you need to define them as
+constants in the scope of your FoxPro program or form, or replace them with
+their appropriate values.
+
+Object Variables
+----------------
+
+oWord is the variable used to reference Microsoft WordBasic objects, created with
+the following command:
+
+     oWord = CREATEOBJECT("Word.Basic")
+
+oXL is the variable used to reference Microsoft Excel application objects,
+created with the following command:
+
+     oXL = CREATEOBJECT("Excel.Application")
+
+oXLSheet is the variable used to reference Microsoft Excel worksheet objects,
+created with one of the following commands:
+
+     oXLSheet = CREATEOBJECT("Excel.Sheet")
+
+-or-
+
+     oXLSheet = oXL.ActiveSheet
+
+oXLBooks is the variable used to reference Microsoft Excel Workbooks Collection
+objects, created with the following command:
+
+     oXLBooks = oXL.Workbooks
+
+oXLWkBook is the variable used to reference Microsoft Excel workbook objects,
+created with the following command:
+
+     oXLWkBook = oXL.ActiveWorkBook
+
+Directory/File Management Statements
+------------------------------------
+
+Add Method (Microsoft Excel)
+
+  Syntax:
+
+  oXLBooks.Add([cTemplate])
+  oXLSheet.Add([cBefore [, cAfter [,nCount [, nType]]]])
+  oXLSheet.Add([oBefore [, oAfter [,nCount [, nType]]]])
+
+Cells Method (Microsoft Excel)
+
+  Syntax:
+
+  oXL.Cells([nRowIndex [, nColumnIndex]])
+  oXLSheet.Cells([nRowIndex [, nColumnIndex]])
+
+ChDir Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.ChDir(cPath)
+
+  Example:
+
+  oWord.ChDir("C:\MY DOCUMENTS")
+
+Close Method (Microsoft Excel)
+
+  Syntax:
+
+  oXLBooks.Close()
+  oXLWkBook.Close([lSaveChanges [, cFileName [, lRouteWorkbook]]])
+
+FileClose Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.FileClose([nSave])
+
+FileCloseAll Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.FileCloseAll([nSave])
+
+FileNew Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.FileNew([cTemplate [, nNewTemplate]])
+
+  Example:
+
+  oWord.FileNew("C:\MY DOCUMENTS\MYTEMPLATE.DOT")
+
+FileNewDefault Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.FileNewDefault()
+
+FileOpen Method (Microsoft Word)
+
+  Syntax:
+
+  oWord.FileOpen(cName [, nConfirmConversions [, nReadOnly ;
+     [, nAddToMru [, cPasswordDoc [, cPasswordDot [, nRevert ;
+     [, cWritePasswordDoc [, cWritePasswordDot]]]]]]]])
+
+  Example:
+
+  oWord.FileOpen("C:\MY DOCUMENTS\MYWORD.DOC")
+
+Open Method (Microsoft Excel)
+
+  Syntax:
+
+  oXLBooks.Open(cFileName [, nUpdateLinks [, lReadOnly [, nFormat ;
+     [, cPassword [, cWriteResPassword [, lIgnoreReadOnlyRecommended ;
+     [, nOrigin [, cDelimiter [, lEditable [, lNotify ;
+     [, nConverter]]]]]]]]]]])
+
+  Example:
+
+  oXLBooks.Open("C:\MY DOCUMENTS\MYSHEET.XLS")
+
+Value Property (Microsoft Excel)
+
+  Syntax:
+
+  object.Value = NewValue
+
+  Example:
+
+  oXL.ActiveWindow.ActiveCell.Value = "Hello"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

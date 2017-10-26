@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175018/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175018/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175018/","publisher":null,"image":null,"headline":"Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175018-howto-acquire-and-install-the-microsoft-oracle-odbc-driver">Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175018
+Product(s): Open Database Connectivity (ODBC)
+Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202
+Operating System(s): 
+Keyword(s): kbsetup kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbMDAC200 kbMDAC210
+Last Modified: 10-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.5, versions Build 2.573.2927, Build 2.573.3513, Build 2.573.3711, Build 2.573.4202 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the procedures for acquiring and installing the Microsoft
+Oracle ODBC Driver version 2.5, which is a component of the Microsoft Data
+Access Components (MDAC) version 2.0 and higher.
+
+MORE INFORMATION
+================
+
+The Microsoft Oracle ODBC Driver version 2.5 is part of the Microsoft Data
+Access Components version 2.0 and 2.1. You will need to download this "stack"
+from the Microsoft Web site and install them. The Microsoft Oracle ODBC Driver
+version 2.5 is available with Visual Studio 6.0, MDAC 2.0 and 2.1, and the Data
+Access Software Development Kit (SDK) 2.0.
+
+NOTE: There is no way to acquire the Microsoft Oracle ODBC Driver v2.0 outside of
+the MDAC stack. The driver was developed and tested with the components in the
+stack and that is the best way to install and use the driver.
+
+Step-by-Step Example
+--------------------
+
+1. Go to the Microsoft Universal Data Access Web site located at the following
+  Web URL:
+
+  http://www.microsoft.com/data/
+
+2. On the Web site, click the Downloads link listed under the UDA Contents on
+  the left of the page. This displays a page that lists the available free
+  downloads.
+
+3. Click the link titled "Download MDAC 2.1.1.4202.3 (GA)" to open the download
+  page for the MDAC 2.1 SP2 stack. Please read through the information on this
+  page pertaining to system and software requirements.
+
+4. Follow the on download intructions given on the website.
+
+5. Click on the link titled "Download the Microsoft Data Access SDK version 2.0
+  and the Microsoft Data Access Components version 2.0".
+
+6. Once the MDAC 2.1 SP2 installation is complete, you should see the Microsoft
+  Oracle ODBC Driver version 2.5 listed under the Drivers tab of your ODBC
+  Manager as follows:
+
+     NAME:      Microsoft ODBC for Oracle
+
+     VERSION:   2.573.4202
+
+     COMPANY:   Microsoft Corporation
+
+     FILE:      MSORCL32.DLL
+
+     DATE:      6/4/99
+
+For information about setting up a data source name (DSN) for the Microsoft
+Oracle ODBC Driver version 2.5, please consult the Help file for the driver. The
+Help file for the driver was installed in the appropriate SYSTEM directory (i.e.
+SYSTEM for Windows 95 and Windows 98, and SYSTEM32 for NT) along with the driver
+DLL. The name of the Help file is MSORCL32.HLP.
+
+REFERENCES
+==========
+
+For more information on how to use this driver with RDO version 2.0,please see
+the following articles in the Microsoft Knowledge Base:
+
+  Q167225 HOWTO: Access an Oracle Database Using RDO
+
+  Q174679 HOWTO: Retrieve Resultsets from Oracle Stored Procedures
+
+  Q174981 "HOWTO: Retrieve Typical Resultsets From Oracle Stored Procedures
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Sam Carpenter, Microsoft Corporation
+
+
+Additional query words: oracle odbc driver mdac mdac1.5 ado rds
+
+======================================================================
+Keywords          : kbsetup kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbMDAC200 kbMDAC210 
+Technology        : kbAudDeveloper kbODBCSearch kbODBCOracle25732927 kbODBCOracle25733513 kbODBCOracle25733711 kbODBCOracle25734202 kbODBCOracle250Search
+Version           : :Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

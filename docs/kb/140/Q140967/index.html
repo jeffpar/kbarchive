@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140967: Changing Password in User Manager Does Not Permit Logon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140967: Changing Password in User Manager Does Not Permit Logon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140967/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140967/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140967/","publisher":null,"image":null,"headline":"Q140967: Changing Password in User Manager Does Not Permit Logon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140967-changing-password-in-user-manager-does-not-permit-logon">Q140967: Changing Password in User Manager Does Not Permit Logon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140967
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist kbfixlist
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you change a user's password in User Manager, logon attempts by this user
+using the new password may fail with the following error dialog being
+displayed:
+
+  The system could not log you on. Make sure your user name and domain are
+  correct, then type your password again. Letters in passwords must be typed
+  using the correct case. Make sure that Caps Lock is not accidentally on.
+
+If the old password is known, you can still log on using the old password.
+
+This condition persists for a period of time, then corrects itself. After a
+while, logon attempts succeed if the new password is used, and fail if the old
+password is used, as expected.
+
+CAUSE
+=====
+
+This error occurs when the following conditions apply:
+
+- "User Must Change Password At Next Logon" was checked when the password was
+  changed in User Manager (this option becomes checked by default when changing
+  the passwords of users who are not Administrators.)
+
+- The workstation authenticates with a Backup Domain Controller (rather than
+  the Primary Domain Controller) before the new password has been replicated
+  from the PDC to the authenticating BDC.
+
+  In this situation the BDC does not recognize the new password and refers the
+  logon request to the PDC. The PDC recognizes the new password, but returns a
+  status of 0xC0000224 (STATUS_PASSWORD_MUST_CHANGE).
+
+  This indicates a valid logon, but the BDC was incorrectly treating this as a
+  failed logon and erroneously returning a status of 0xC000006A
+  (STATUS_BAD_PASSWORD) back to the workstation.
+
+
+MORE INFORMATION
+================
+
+During startup, a workstation establishes a secure channel with a Domain
+Controller for the purposes of logon validation. The secure channel may be
+established with any Domain Controller (the PDC or any BDC.) Once the secure
+channel is established with a domain controller, it stays connected to the same
+domain controller until the workstation is shut down and restarted. If there are
+many BDCs, the secure channel will most likely be with a BDC rather than the
+PDC.
+
+When a user's password is changed via User Manager, the password change is
+recorded on the PDC only. The change is not replicated immediately to the BDCs.
+The change is only replicated at the next scheduled replication time, or when an
+administrator manually requests synchronization of one or more BDCs, or the
+entire domain, from Server Manager.
+
+Prior to replication, the BDC is unaware of the new password so if a logon is
+attempted with the new password the BDC treats it as a bad password. The BDC
+does not reject the bad password immediately. Instead it passes the logon
+request to the PDC, on the assumption that the password is a new password known
+to the PDC but not yet been replicated to the BDC.
+
+When "User Must Change Password At Next Logon" is in effect, the PDC returns a
+status of 0xC0000224 (STATUS_PASSWORD_MUST_CHANGE) to the BDC. This indicates a
+successful logon. However, in response to this status, the BDC was erroneously
+returning a status of 0xC000006A (STATUS_BAD_PASSWORD) back to the workstation.
+
+
+If the logon with the new password succeeds and the logon with the old password
+fails, this is most likely due to SAM database synchronization occurring
+automatically while trying to reproduce the problem. Check the System event log
+on the BDC for recent NETLOGON events number 5715. This indicates successful
+partial synchronization of the SAM database, including the new password, which
+masks the problem. If this is the case, run the sequence again before the next
+automatic synchronization occurs.
+
+RESOLUTION
+==========
+
+Use one of the following to resolve this problem:
+
+- Synchronize the entire domain using Server Manager.
+
+- Synchronize the appropriate BDC with the PDC using Server Manager.
+
+- Wait for the password change to be replicated automatically.
+
+- Apply the Hotfix described below to all Domain Controllers.
+
+The Hotfix modifies the BDC's status handling code to pass a PDC status of
+0xC0000224 (STATUS_PASSWORD_MUST_CHANGE) through to the workstation that
+submitted the logon request. The workstation then recognizes a successful logon
+and prompts the user to change their password.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A
+supported fix is now available, but is not fully regression-tested and should be
+applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the next Service Pack that contains this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+Additional query words: prodnt 3.51 4.00
+
+======================================================================
+Keywords          : kbnetwork kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

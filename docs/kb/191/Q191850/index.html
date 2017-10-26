@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191850: Convert Reports Cannot Create Elementary File System Structures | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191850: Convert Reports Cannot Create Elementary File System Structures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191850/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191850/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191850/","publisher":null,"image":null,"headline":"Q191850: Convert Reports Cannot Create Elementary File System Structures","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191850-convert-reports-cannot-create-elementary-file-system-structures">Q191850: Convert Reports Cannot Create Elementary File System Structures</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191850
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Conversion from FAT to NTFS fails and the following error message appears:
+
+  Cannot create the elementary file system structures.
+  The conversion failed
+  C: was not converted to ntfs
+
+This error occurs on Alpha systems when performing an unattended installation
+using the following options in the Unattend.txt file:
+
+     [Unattended]
+     OemPreinstall = yes
+     FileSystem = ConvertNTFS
+     ExtendOemPartition = 1
+
+CAUSE
+=====
+
+This problem only occurs if you apply the Alpha-based hotfix referenced in the
+following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q185773
+  TITLE : NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition
+
+The ExtendOEMPartition option extends the partition to the maximum size of the
+drive. The above hotfix enables this feature so that it works correctly on
+drives exceeding 4 GB in size. There is a BIOS limitation on x86-based computers
+that limit the maximum size of a partition to 7.8 GB. Because this limitation
+does not exist on Alpha systems, the byte offset may exceed 32 bits. A problem
+in Fastfat.sys fails any disk access that calculated a byte offset exceeding 32
+bits.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+
+NOTE: This fix applies to both x86 and Alpha platforms and supercedes the hotfix
+referenced in the following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q185773
+  TITLE : NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition
+
+NOTE: In addition to the above file, the following additional files must be
+obtained from the latest Windows NT 4.0 Service Pack. The service pack should be
+of the same language as that being installed:
+
+  x86           Alpha
+  --------------------------
+  Gdi32.dll     Gdi32.dll
+  Hal.dll       Halgammp.dll
+  Hal486c.dll   Halpinna.dll
+  Halapic.dll   Halrawmp.dll
+  Halast.dll    Halsabmp.dll
+  Halcbus.dll   Kernel32.dll
+  Halcbusm.dll  Ntdll.dll
+  Halmca.dll    Ntkrnlmp.exe
+  Halmps.dll    Ntoskrnl.exe
+  Halmpsm.dll   User32.dll
+  Haloli.dll    Win32k.sys
+  Halsp.dll     Winsrv.dll
+  Halwyse7.dll
+  Kernel32.dll
+  Ntdll.dll
+  Ntkrnlmp.exe
+  Ntoskrnl.exe
+  User32.dll
+  Win32k.sys
+  Winsrv.dll
+
+Perform the following steps to successfully install this hotfix:
+
+1. Start the computer in MS-DOS mode and prepare the drive for Windows NT
+  unattended installation as usual. This includes copying the .\I386 or .\Alpha
+  folder from the Windows NT CD to the install directory on drive C.
+
+2. Copy the fixed files into a temporary folder.
+
+3. Apply the fixed files and required service pack dependency files to the
+  install directory on drive C. The service pack CD should be that of the same
+  language as that being installed. Because the service pack CDs are in Windows
+  NT Unicode format, they cannot be read directly from MS-DOS. The service pack
+  files may need to be transferred from a Windows NT system capable of reading
+  the service pack CD or the service pack files can be read directly using
+  MS-DOS from the Enterprise Server CD in the "\SP3\i386" or "\SP3\Alpha"
+  directory. The service pack dependency files are listed above. This step can
+  be performed automatically using the Oemsetup.bat batch file if you have the
+  dependency files in an MS-DOS readable format. Otherwise, you must perform
+  this step manually:
+
+  Manual Instructions for the Intel Platform
+  ------------------------------------------
+
+  Batch File Option:
+
+  From the temporary folder, run Oemsetup.bat, specifying both the source
+  service pack folder and the target install folder. For example (assume D: is
+  a service pack folder and C:\I386 is the install folder):
+
+  OEMSETUP D:\SP3\I386 C:\I386
+
+  This copies the necessary files to the I386 and C:\I386\System32 folders on
+  drive C where the installation folder is located.
+
+  Manual Option:
+
+  You can also perform this step manually by first copying Fastfat.sys from the
+  fix to the C:\I386 install folder, and then copy the following files from the
+  latest Windows NT 4.0 service pack to the C:\I386 and C:\I386\System32
+  folders as denoted below:
+
+     Fastfat.sys     -&gt; ..\I386
+     Hal.dll         -&gt; ..\I386
+     Hal486c.dll     -&gt; ..\I386
+     Halapic.dll     -&gt; ..\I386
+     Halast.dll      -&gt; ..\I386
+     Halcbus.dll     -&gt; ..\I386
+     Halcbusm.dll    -&gt; ..\I386
+     Halmca.dll      -&gt; ..\I386
+     Halmps.dll      -&gt; ..\I386
+     Halmpsm.dll     -&gt; ..\I386
+     Haloli.dll      -&gt; ..\I386
+     Halsp.dll       -&gt; ..\I386
+     Halwyse7.dll    -&gt; ..\I386
+     Ntdll.dll       -&gt; ..\I386 and  -&gt; ..\I386\SYSTEM32
+     Ntoskrnl.exe    -&gt; ..\I386
+     Ntkrnlmp.exe    -&gt; ..\I386
+     Win32k.sys      -&gt; ..\I386
+     User32.dll      -&gt; ..\I386
+     Kernel32.dll    -&gt; ..\I386
+     Gdi32.dll       -&gt; ..\I386
+     Winsrv.dll      -&gt; ..\I386
+
+  Then remove the compressed versions of these files from the C:\I386 and
+  C:\I386\System32 folders. Compressed files are identified by the last
+  character of the file type containing an underscore (_). For example, delete
+  Fastfat.Sy_, Hal.dl_, Ntdll.dl_, Ntoskrnl.ex_, and so on.
+
+  Manual Instructions for the Alpha Platform
+  ------------------------------------------
+
+  Batch File Option:
+
+  From the temporary folder, run Oemsetup.bat specifying both the source service
+  pack folder and the target install folder. For example (assume D: is a
+  service pack folder and C:\Alpha is the install folder):
+
+  OEMSETUP D:\SP3\Alpha C:\Alpha
+
+  This copies the necessary files to the Alpha and C:\Alpha\System32 folders on
+  drive C where the installation folder is located.
+
+  Manual Option:
+
+  You can also perform this step manually by first copying Fastfat.sys from the
+  fix to the C:\Alpha install folder then copy the following files from the
+  latest Windows NT 4.0 service pack to the C:\Alpha and C:\Alpha\System32
+  folders as denoted below:
+
+     Fastfat.sys     -&gt; ..\Alpha
+     Halgammp.dll    -&gt; ..\Alpha
+     Halpinna.dll    -&gt; ..\Alpha
+     Halrawmp.dll    -&gt; ..\Alpha
+     Halsabmp.dll    -&gt; ..\Alpha
+     Ntdll.dll       -&gt; ..\Alpha and  -&gt; ..\Alpha\SYSTEM32
+     Ntoskrnl.exe    -&gt; ..\Alpha
+     Ntkrnlmp.exe    -&gt; ..\Alpha
+     Win32k.sys      -&gt; ..\Alpha
+     User32.dll      -&gt; ..\Alpha
+     Kernel32.dll    -&gt; ..\Alpha
+     Gdi32.dll       -&gt; ..\Alpha
+     Winsrv.dll      -&gt; ..\Alpha
+
+  Then remove the compressed versions of these files from the C:\Alpha and
+  C:\Alpha\System32 folders. Compressed files are identified by the last
+  character of the file type containing an underscore (_). For example, delete
+  Fastfat.Sy_, Halgammp.dl_, Ntdll.dl_, Ntoskrnl.ex_, and so on.
+
+4. Run Winnt.exe as usual to complete the Windows NT installation.
+
+5. When the Windows NT installation is complete, apply the latest service pack
+  immediately. This eliminates inconsistent releases of system files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+Additional query words: corrupt user domain
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

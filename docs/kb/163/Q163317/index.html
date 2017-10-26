@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163317/","publisher":null,"image":null,"headline":"Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163317-ms-dos-compatibility-mode-when-booting-from-removable-disk">Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163317
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbhw osr1 diskmem win95 kbHardware kbDiskMemory
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 95 OEM Service Release, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your computer is configured to boot from a removable disk, the Performance
+tab in System properties may show that the computer is using MS- DOS
+Compatibility mode for virtual memory. This problem is known to occur with
+Iomega Zip drives, Iomega Jazz drives, and SyQuest EZ drives, and may also occur
+with other IDE or SCSI removable disk drives.
+
+
+Note that this behavior can also occur if you are using a laptop computer with a
+removable or "swappable" hard disk and the Removable check box is selected in
+the drive's properties.
+
+RESOLUTION
+==========
+
+To work around this problem, configure Windows 95 so that the Windows swap file
+is located on a non-removable disk. To do so, follow these steps:
+
+1. In Control Panel, double-click System.
+
+2. Click the Performance tab, and then click Virtual Memory.
+
+3. Click "Let me specify my own virtual memory settings," click a non-removable
+  disk in the Hard Disk box, click OK, and then click OK again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95 and Windows 95 OEM
+Service Release 1. This problem does not occur with Windows 95 OEM Service
+Release 2.
+
+======================================================================
+Keywords          : kbhw osr1 diskmem win95 kbHardware kbDiskMemory 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

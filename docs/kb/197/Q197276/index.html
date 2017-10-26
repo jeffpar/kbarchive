@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197276/","publisher":null,"image":null,"headline":"Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197276-prb-closing-top-level-form-with-docked-toolbar-leaves-image">Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197276
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbOOP kbvfp500 kbvfp500a kbvfp600
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A phantom image of a form is left on the screen after you have closed it. You
+cannot close or move this image of the form, and it stays on the Windows
+taskbar. After you click on the taskbar button on the Windows taskbar, the image
+of the form might disappear but the taskbar button does not close.
+
+CAUSE
+=====
+
+This can be occur when you use a docked toolbar that has code in one of the
+toolbar buttons to close a top-level form. Top-level forms are also known as SDI
+forms.
+
+RESOLUTION
+==========
+
+Undock the toolbar before using a button on the toolbar to close the form.
+
+You can undock the toolbar by copying the following code into the Click event of
+the Exit button on the toolbar:
+
+     IF This.Parent.Docked
+        This.Parent.Dock(-1)
+     ENDIF
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code into a new program file and save it:
+
+        PUBLIC oform1
+        oform1=CREATEOBJECT("form1")
+        oform1.Show
+        RETURN
+
+        **************************************************
+        *-- Form:         form1
+        *-- ParentClass:  form
+        *-- BaseClass:    form
+        *
+        DEFINE CLASS form1 AS form
+
+           ShowWindow = 2
+           DoCreate = .T.
+           AutoCenter = .T.
+           Caption = "SDI Form With Toolbar"
+           Name = "Form1"
+           tool = .F.
+
+           PROCEDURE Activate
+              WITH THIS
+                 IF TYPE(".tool")!='O' AND !ISNULL(.TOOL)
+                    .TOOL = CREATE("MTOOL")
+                    .TOOL.SHOW()
+                 ENDIF
+              ENDWITH
+           ENDPROC
+
+           PROCEDURE QueryUnload
+              THIS.TOOL.cmdEXIT.CLICK()
+           ENDPROC
+
+        ENDDEFINE
+        *-- EndDefine: form1
+        **************************************************
+
+        **************************************************
+        *-- Class:        mtool
+        *-- ParentClass:  toolbar
+        *-- BaseClass:    toolbar
+        *
+        DEFINE CLASS mtool AS toolbar
+
+           Caption = "Toolbar1"
+           Height = 36
+           Left = 104
+           Top = 22
+           Width = 47
+           ControlBox = .F.
+           ShowWindow = 1
+           Name = "mtool"
+
+              ADD OBJECT cmdexit AS commandbutton WITH ;
+                AutoSize = .T., ;
+                Top = 5, ;
+                Left = 5, ;
+                Height = 27, ;
+                Width = 37, ;
+                Caption = "Exit", ;
+                Name = "cmdEXIT"
+
+              PROCEDURE cmdexit.Click
+                 *!*IF THIS.PARENT.DOCKED
+                 *!*   THIS.PARENT.DOCK(-1)
+                 *!*ENDIF
+                 oform1.RELEASE
+              ENDPROC
+        ENDDEFINE
+        *
+        *-- EndDefine: mtool
+        **************************************************
+
+2. Run the program. The toolbar with the Exit button should appear on top of the
+  form. Note that the ShowWindow property of the form in the code above is 2,
+  which means it is a top-level form. Click Exit to close the form and toolbar.
+
+3. Run the program again. This time drag the toolbar to one of the sides of the
+  form and dock it. Click Exit. The toolbar closes, but the form does not
+  close. Try closing the form or moving it. Neither method works. Close Visual
+  FoxPro to clear out the form.
+
+4. To see the resolution to this problem, uncomment the following lines from the
+  cmdexit.Click Procedure in the program code:
+
+        IF THIS.PARENT.DOCKED
+           THIS.PARENT.DOC(-1)
+        ENDIF
+
+5. Run the program, dock the toolbar, and click Exit. You might be able to see
+  the toolbar undock before the form closes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

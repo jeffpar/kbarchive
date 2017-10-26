@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181435: WD97: Programs Missing from Default Picture Editor List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181435: WD97: Programs Missing from Default Picture Editor List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181435/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181435/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181435/","publisher":null,"image":null,"headline":"Q181435: WD97: Programs Missing from Default Picture Editor List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181435-wd97-programs-missing-from-default-picture-editor-list">Q181435: WD97: Programs Missing from Default Picture Editor List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181435
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbgraphic
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Some graphics programs may not appear in the Picture Editor list; therefore, you
+cannot select them as the default program for editing imported graphics in
+Microsoft Word for Windows. (To display the Picture Editor list, click Options
+on the Tools menu and click the Edit tab.)
+
+CAUSE
+=====
+
+Word for Windows lists a graphics application in the Picture Editor list only if
+the registration information has been written to the Windows registry.
+
+
+If a graphics program does not add both of the registration settings to Reg.dat,
+Word does not list the program in the Picture Editor list. These settings tell
+Word that the graphics program can edit metafiles as OLE objects.
+
+WORKAROUND
+==========
+
+Microsoft does not recommend that you manually edit your Reg.dat file to add
+these missing registration settings. (If you add the settings, the application
+appears in the Picture Editor list, but you may be unable to edit the drawing in
+the graphics application.) The graphics application must register this
+information when you install it.
+
+If you want to select an unlisted graphics application as your default picture
+editor in Word, first reinstall the software. If this workaround is
+unsuccessful, contact the manufacturer of the graphics application for
+instructions on how to successfully install and register their application in
+Windows 95 to work with Word 97.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+To change the default program for editing imported graphics, follow these
+steps:
+
+1. On the Tools menu, click Options, and then click the Edit tab.
+
+2. In the Picture editor box, click the program you want to use to modify
+  imported graphics, and then OK.
+
+Additional query words: default docerr office ole server container winword CorelDraw! Corel Draw 4.0 Micrografx Designer 3.1 word6 3.0 HiJaak Pro 2.0 Paintbrush Microsoft MSPhotoEd MS PhotoEd Photo Editor Powerpoint
+
+======================================================================
+Keywords          : kbgraphic 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

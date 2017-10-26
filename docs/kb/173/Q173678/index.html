@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173678: WD97: Incorrect Results When Undo Dragging of Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173678: WD97: Incorrect Results When Undo Dragging of Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173678/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173678/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173678/","publisher":null,"image":null,"headline":"Q173678: WD97: Incorrect Results When Undo Dragging of Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173678-wd97-incorrect-results-when-undo-dragging-of-objects">Q173678: WD97: Incorrect Results When Undo Dragging of Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173678
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you undo the dragging of an AutoShape or Text Box object from one document
+to another (shown as Move Object in the list of actions you can undo), you can
+receive unexpected results.
+
+Case 1: Dragging an AutoShape
+-----------------------------
+
+When you click Undo, the AutoShape reappears in the original document but does
+not disappear from the second document.
+
+Case 2: Dragging a Text Box
+---------------------------
+
+When you click Undo, the Text Box disappears from the second document but does
+not reappear in the original document.
+
+WORKAROUND
+==========
+
+To work around this problem, click Undo in both documents. To do this, follow
+these steps.
+
+1. Immediately after dragging the object, click the Undo button on the Standard
+  toolbar.
+
+2. Click the mouse pointer in the other document to make that document active.
+
+3. Click the Undo button on the Standard toolbar.
+
+The object reappears in the original document and disappears from the second
+document.
+
+RESOLUTION
+==========
+
+To prevent this problem from occurring, drag the paragraph that the object is
+anchored to instead of just dragging the object. To do this, follow these
+steps.
+
+NOTE: If you need to show both documents, click Arrange All on the Window menu.
+
+1. Select the text (including the paragraph mark) of the paragraph that contains
+  the object's anchor.
+
+  NOTE: Make sure there are at least two paragraphs in the document, and that
+  you select the correct paragraph mark. To show paragraph marks, press the
+  Show/Hide button on the Standard toolbar.
+
+2. Drag the text to the second document. Both the text and AutoShape object are
+  moved.
+
+The Undo button now makes the object reappear in the original document and
+disappear from the second document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+
+For additional information about the Undo feature, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q172542 OFF97: Using the Undo Feature with Inserted Objects
+
+  Q142751 How To Disable the Undo Function in Word
+
+  Q118987 WD: How to Clear the Undo Stack
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

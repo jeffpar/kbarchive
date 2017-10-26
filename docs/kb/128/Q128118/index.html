@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128118/","publisher":null,"image":null,"headline":"Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128118-sna-server-win3x-client-setup-err-msg-no-windows-network">Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128118
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run SNA Server Win3.x Client Setup the following error message
+appears:
+
+  No Windows network Installed
+
+CAUSE
+=====
+
+Setup has failed to detect your network.
+
+MORE INFORMATION
+================
+
+SNA Server Win3.x Client Setup uses the following methods to check for various
+LAN interfaces on Win3.x clients:
+
+Named Pipes
+-----------
+
+If you are running Windows for Workgroups, Setup checks the SYSTEM.INI file for
+the following:
+
+  [boot]
+  ...
+  network.drv=wfwnet.drv
+
+
+If you are running Microsoft LAN Manager or IBM LAN Requester, Setup looks for
+LANMAN.INI or DOSLAN.INI, respectively. If both are found, Setup uses the
+LANMAN.INI file. If either is found, Setup loads NETAPI.DLL and calls
+NetWkstaGetInfo() to get the version information.
+
+NetWare IPX/SPX
+---------------
+
+Setup calls LoadLibrary( "nwipxspx.dll" ). If that fails, Setup calls
+LoadLibrary( "a:\nwipxspx.dll" ). If that succeeds, Setup tries to call
+SPXInitialize() in that library.
+
+
+SPXInitialize call fails if SPX is disabled. Some users disable SPX for memory
+savings. The IPXODI /A command eliminates SPX support, causing the error message
+to appear even if NWIPXSPX.DLL is installed.
+
+TCP/IP Sockets
+--------------
+
+NOTE: The following text does not apply to SNA Server version 2.0 as it does not
+include support for TCP/IP sockets.
+
+Setup calls into WINSOCK.DLL to check for its presence. It needs to support
+Windows Sockets version 1.1.
+
+Banyan IP
+---------
+
+NOTE: The following text does not apply to SNA Server version 2.0 as it does not
+include support for Banyan IP.
+
+Setup calls LoadLibrary( "VNSAPI.DLL" ). If that succeeds, Setup considers Banyan
+to be installed. Setup then calls VnsGetUserName() from that library to get the
+default StreetTalk group name.
+
+
+Additional query words: prodsna wfw wfwg street talk
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

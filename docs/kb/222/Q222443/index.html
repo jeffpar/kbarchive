@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222443: Using Cascading Style Sheets Features with ASP Forms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222443: Using Cascading Style Sheets Features with ASP Forms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222443/","publisher":null,"image":null,"headline":"Q222443: Using Cascading Style Sheets Features with ASP Forms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222443-using-cascading-style-sheets-features-with-asp-forms">Q222443: Using Cascading Style Sheets Features with ASP Forms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222443
+Product(s): Internet Information Server
+Version(s): 3.0,4.0,5,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Explorer versions 4.0, 5 for Windows NT 4.0 
+- Microsoft Internet Information Server versions 3.0, 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Explorer versions 4.0 and later provide a rich set of text layout
+features to Web authors through cascading style sheets functionality. Among its
+other benefits, this functionality permits you to change the display attributes
+of form fields. This article describes how to use this functionality to create
+forms with better visual layout by using style sheet tags.
+
+MORE INFORMATION
+================
+
+The following Active Server Pages (ASP) code samples use the style="" attribute,
+which can be applied to any HTML tag. For example, the following HTML code
+creates a paragraph with red text:
+
+  <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"color: red"</span><span class="nt">&gt;</span>This is red text.<span class="nt">&lt;/p&gt;</span>
+
+Certain cascading style sheets properties can be extremely useful to Web page
+authors who construct Web pages with forms. The <span class="nt">&lt;input&gt;</span>, <span class="nt">&lt;textarea&gt;</span>,
+and <span class="nt">&lt;select&gt;</span> HTML tags have simple and dissimilar parameters for modifying
+their respective display properties. By using the style="" attribute (with its
+common syntax for all fields), authors have greater flexibility over the display
+of these form fields.
+
+For example, the following code creates a simple form where each field has the
+same width:
+
+  <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"txtBox1"</span> <span class="na">style=</span><span class="s">"width: 200"</span><span class="nt">&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"txtBox2"</span> <span class="na">style=</span><span class="s">"width: 200"</span><span class="nt">&gt;&lt;/textarea&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"txtBox3"</span> <span class="na">style=</span><span class="s">"width: 200"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Choice 1<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Choice 2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Choice 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">style=</span><span class="s">"width: 200"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+The following ASP page is a more advanced example that uses the user-defined
+function MakeCSS that takes the following arguments and returns a properly
+formatted style="" attribute:
+
+- Font-family: The font style to use.
+
+- Width: The width in pixels of the item to modify.
+
+- Height: The height in pixels of the item.
+
+- Background: The background color for the item.
+
+- Color: The color for the item.
+
+To use this sample page, copy the code, save it as "Cssform.asp" in a Web folder
+with Script access enabled, and then open it by using Internet Explorer version
+4.0 or later:
+
+  <span class="nt">&lt;</span><span class="err">%@</span><span class="na">Language=</span><span class="s">"VBSCRIPT"</span><span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;</span>Stylesheet Form Examples<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">Function</span> <span class="na">MakeCSS</span><span class="err">(</span><span class="na">fnt</span><span class="err">,</span><span class="na">wdt</span><span class="err">,</span><span class="na">hgt</span><span class="err">,</span><span class="na">bck</span><span class="err">,</span><span class="na">clr</span><span class="err">)</span>
+      <span class="na">MakeCSS =</span><span class="err"> </span><span class="s">"style="</span> <span class="err">&amp;</span> <span class="na">Chr</span><span class="err">(</span><span class="na">34</span><span class="err">)</span>
+      <span class="na">If</span> <span class="err">(</span><span class="na">fnt</span><span class="err">&lt;</span><span class="nt">&gt;</span>"") Then MakeCSS = MakeCSS <span class="err">&amp;</span> "font-family: " <span class="err">&amp;</span> fnt
+      If (wdt<span class="nt">&lt;&gt;</span>"") Then MakeCSS = MakeCSS <span class="err">&amp;</span> "; width: " <span class="err">&amp;</span> wdt
+      If (hgt<span class="nt">&lt;&gt;</span>"") Then MakeCSS = MakeCSS <span class="err">&amp;</span> "; height: " <span class="err">&amp;</span> hgt
+      If (bck<span class="nt">&lt;&gt;</span>"") Then MakeCSS = MakeCSS <span class="err">&amp;</span> "; background: " <span class="err">&amp;</span> bck
+      If (clr<span class="nt">&lt;&gt;</span>"") Then MakeCSS = MakeCSS <span class="err">&amp;</span> "; color: " <span class="err">&amp;</span> clr
+      MakeCSS = MakeCSS <span class="err">&amp;</span> Chr(34)
+    End Function
+  %&gt;
+  <span class="nt">&lt;body</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","","#</span><span class="na">ffffff</span><span class="err">","#</span><span class="na">000000</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+
+  <span class="nt">&lt;h3&gt;</span>Stylesheet Form Examples<span class="nt">&lt;/h3&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">If</span> <span class="na">LCase</span><span class="err">(</span><span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">REQUEST_METHOD</span><span class="err">"))</span> <span class="err">=</span> <span class="err">"</span><span class="na">get</span><span class="err">"</span> <span class="na">Then</span> <span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"&lt;%=Request.ServerVariables("</span><span class="na">URL</span><span class="err">")%</span><span class="nt">&gt;</span>" method="POST"&gt;
+
+  <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","","</span><span class="na">black</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Name<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">"Enter Your Name"</span> <span class="na">name=</span><span class="s">"txtName"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">arial</span><span class="err">","</span><span class="na">300</span><span class="err">","","#</span><span class="na">ccccff</span><span class="err">","#</span><span class="na">000000</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Address<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;textarea</span> <span class="na">name=</span><span class="s">"txtAddress"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">arial</span><span class="err">","</span><span class="na">300</span><span class="err">","</span><span class="na">100</span><span class="err">","#</span><span class="na">ffcccc</span><span class="err">","#</span><span class="na">000000</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;Enter Your Address<span class="nt">&lt;/textarea&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Airport<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"txtAirport"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">arial</span><span class="err">","</span><span class="na">300</span><span class="err">","","#</span><span class="na">ccffcc</span><span class="err">","#</span><span class="na">000000</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"ORD"</span><span class="nt">&gt;</span>Chicago O'Hare, IL<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"LAX"</span><span class="nt">&gt;</span>Los Angeles International, CA<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"JFK"</span><span class="nt">&gt;</span>New York JFK, NY<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"SEA"</span><span class="nt">&gt;</span>Seattle/Tacoma, WA<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Send Data"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">courier</span><span class="err">","</span><span class="na">150</span><span class="err">","</span><span class="na">30</span><span class="err">","</span><span class="na">darkred</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset Form"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">courier</span><span class="err">","</span><span class="na">150</span><span class="err">","</span><span class="na">30</span><span class="err">","</span><span class="na">darkgreen</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;/form&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">Else</span> <span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","","</span><span class="na">black</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+    <span class="nt">&lt;tr</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","</span><span class="na">30</span><span class="err">","</span><span class="na">black</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+      <span class="nt">&lt;td&gt;</span>Name<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;</span><span class="err">%=</span><span class="na">Request</span><span class="err">.</span><span class="na">Form</span><span class="err">("</span><span class="na">txtName</span><span class="err">")%</span><span class="nt">&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","</span><span class="na">100</span><span class="err">","</span><span class="na">black</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+      <span class="nt">&lt;td&gt;</span>Address<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;</span><span class="err">%=</span><span class="na">Request</span><span class="err">.</span><span class="na">Form</span><span class="err">("</span><span class="na">txtAddress</span><span class="err">")%</span><span class="nt">&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="err">&lt;%=</span><span class="na">MakeCSS</span><span class="err">("</span><span class="na">verdana</span><span class="err">","","</span><span class="na">30</span><span class="err">","</span><span class="na">black</span><span class="err">","</span><span class="na">white</span><span class="err">")%</span><span class="nt">&gt;</span>&gt;
+      <span class="nt">&lt;td&gt;</span>Airport Code<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">style=</span><span class="s">"width:300"</span><span class="nt">&gt;&lt;</span><span class="err">%=</span><span class="na">Request</span><span class="err">.</span><span class="na">Form</span><span class="err">("</span><span class="na">txtAirport</span><span class="err">")%</span><span class="nt">&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">End</span> <span class="na">If</span> <span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+For more information about scripting, visit the following Microsoft Developer
+Network (MSDN) Web site:
+
+  Windows Script
+  http://msdn.microsoft.com/scripting
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbIEsearch kbiis500 kbiis400 kbiis300 kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE400WinNT400 kbIE500WinNT400
+Version           : :3.0,4.0,5,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

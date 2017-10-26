@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86101: PC Win: MSMAIL.INI Entries in [MMF] | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86101: PC Win: MSMAIL.INI Entries in [MMF]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86101/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86101/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86101/","publisher":null,"image":null,"headline":"Q86101: PC Win: MSMAIL.INI Entries in [MMF]","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86101-pc-win-msmailini-entries-in-mmf">Q86101: PC Win: MSMAIL.INI Entries in [MMF]</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86101
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists and explains all the entries in the Microsoft Mail for
+Windows private profile, MSMAIL.INI, that are contained in the [MMF] section.
+
+MORE INFORMATION
+================
+
+[MMF]
+-----
+
+Most entries in this section affect automatic compression of the Mail message
+file. By default, message files have the extension .MMF. When enabled, automatic
+compression uses idle time on your computer to recover disk space freed by
+deleting messages and return that space to the file system.
+
+AutoDisconnectInterval=&lt;number of minutes&gt;:
+
+This entry sets the amount of system idle time before a Mail file not stored
+locally is closed. Any system activity reopens a closed Mail file automatically.
+Closing Mail files that are stored on the Mail server ensures that they can be
+backed up when your system administrator backs up the Mail server. If your Mail
+file is stored locally, you should back it up using the Mail Backup command. If
+this entry is set to 0 (zero), your Mail file is closed only when you exit and
+sign out of Mail. This setting should be larger than the Secs_Till_Fast_Compress
+setting to give Mail time to compress the Mail file before it is closed.
+
+The default value is 60 minutes of system inactivity.
+
+CelemMax=&lt;number&gt;:
+
+This entry specifies the maximum number of messages Mail will allow to be placed
+in a folder. It is for debugging purposes only.
+
+The default value is 5400, which is the maximum in all cases.
+
+Kb_Free_Start_Compress=&lt;number of kilobytes&gt;:
+
+The message store manager's background compression algorithm will kick in when it
+detects at least this much recoverable space in your message file. Both this
+entry and Percent_Free_Start_Compress are always active; the first one to
+trigger starts compression.
+
+The default value is 300K.
+
+Kb_Free_Stop_Compress=&lt;number of kilobytes&gt;:
+
+The message store manager's background compression algorithm will shut off when
+there is less than this much recoverable space in your message file. This avoids
+extensive compression trying to recover the last little bit of free space. Both
+this entry and Percent_Free_Stop_Compress are always active; the last one to
+trigger stops compression.
+
+The default value is 100K.
+
+No_Compress=&lt;0/1&gt;:
+
+Set this entry to 1 to entirely disable background compression of the message
+store.
+
+The default value is 0 (background compression is enabled).
+
+Percent_Free_Start_Compress=&lt;number&gt;:
+
+Background compression will start when the amount of recoverable space rises
+above this percentage of the total file size. Both this entry and
+Kb_Free_Start_Compress are always active; the first one to trigger starts
+compression.
+
+The default value is 10 (ten percent).
+
+Percent_Free_Stop_Compress=&lt;number&gt;:
+
+Background compression will stop when the amount of recoverable space falls below
+this percentage of the total .MMF file size. Both this entry and
+Kb_Free_Stop_Compress are always active; the last one to trigger stops
+compression.
+
+The default value is 5 (5 percent).
+
+Secs_Till_Fast_Compress=&lt;number of seconds&gt;:
+
+The background compression algorithm has a "fast mode" and a "slow mode." It
+begins in slow mode, trying to avoid impacting system response time. After a
+number of seconds of system inactivity, defined by this entry, it will switch to
+fast mode. Any user activity will switch it back into slow mode.
+
+The default value is 600 seconds (ten minutes) of system inactivity.
+
+Additional query words: 3.00 3.00b 3.20 MMF
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : :3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

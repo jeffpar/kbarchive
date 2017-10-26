@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129077: How to Use the NODATA and NOREQUERY Clauses of USE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129077: How to Use the NODATA and NOREQUERY Clauses of USE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129077/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129077/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129077/","publisher":null,"image":null,"headline":"Q129077: How to Use the NODATA and NOREQUERY Clauses of USE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129077-how-to-use-the-nodata-and-norequery-clauses-of-use">Q129077: How to Use the NODATA and NOREQUERY Clauses of USE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129077
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The NOQUERY and NODATA clauses of the USE command are used with local and remote
+views. A view is an updatable set of records that is stored in a database. Once
+a view is created, you can open it with the USE command. This article provides
+an example that illustrates the use of the NODATA and NOQUERY clauses.
+
+MORE INFORMATION
+================
+
+The NOQUERY and NODATA clauses allow you to open a query without [ downloading
+the data. They can be useful when you have a large set of records, and you want
+to verify the structure of the result set before you download the data. The
+NOREQUERY clause is used in conjunction with the USE &lt;view&gt; AGAIN command.
+It prevents FoxPro from re-querying the data if you open the view in another
+work area. Use the REQUERY() function when you need to retrieve the data.
+
+The following example illustrates how to use the NODATA and NOREQUERY clauses on
+a local view. A parameterized view is created with the CREATE SQL VIEW command
+and opened with a USE...NODATA command. No records are displayed. Then the same
+view is opened in another work area with the USE.. AGAIN NOREQUERY command. Note
+that it is not updated until the REQUERY() function is executed. To run this
+example, copy and paste the following code into a program file, and then run
+it.
+
+     LOCAL nViews, cCity
+
+     OPEN DATA SYS(2004) + 'samples\data\testdata'
+     * Creates an array that holds the names of all the views in the database
+     nViews = ADBOBJECTS(a_View, 'VIEW')
+     IF nViews &gt; 0
+        IF ASCAN(a_View, 'COMPANY_VIEW') &gt; 0
+           DELETE VIEW Company_view
+        ENDIF
+     ENDIF
+
+     cCity = 'London'
+     CREATE SQL VIEW Company_view AS ;
+        SELECT cust_id, company, city ;
+        FROM customer ;
+        WHERE city = ?cCity
+
+     IF USED('Company_view')
+        USE IN Company_view
+     ENDIF
+
+     * Open the view without downloading the data:
+     SELECT 0
+     USE Company_view NODATA
+     BROWSE NOWAIT
+     =MESSAGEBOX(IIF(RECCOUNT() = 0, 'No data yet.', 'Now we have data'))
+
+     * Download the data:
+     ?REQUERY()
+     SHOW WINDOW Company_View REFRESH
+     =MESSAGEBOX(IIF(RECCOUNT() = 0, 'No data yet.', 'Now we have data'))
+
+     * Modify the value of the parameter:
+     cCity="Paris"
+     SELECT 0
+     USE Company_view AGAIN NOREQUERY
+     BROWSE NOWAIT
+     =MESSAGEBOX("City is "+cCity+chr(13)+"Query is not updated")
+     ?REQUERY()
+     =MESSAGEBOX("City is "+cCity+chr(13)+"Query is updated")
+
+REFERENCES
+==========
+
+Visual FoxPro for Windows "Developer's Guide," version 3.0, Chapter 8, "Creating
+Multi-Table Views."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

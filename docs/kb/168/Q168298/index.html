@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168298/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168298/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168298/","publisher":null,"image":null,"headline":"Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168298-howto-ddp_text-not-implemented-for-coledatetime-and-colecurrenc">Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168298
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbcode kbfile kbole kbSample kbCOMt kbDlg kbMFC kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DDP_Text functions for COleCurrency and COleDateTime are not implemented in MFC.
+However, code that uses these functions is added to DoDataExchange when
+ClassWizard is used to associate a CURRENCY or DATE property with a control on a
+property page. This results in the following compilation errors.
+
+For CURRENCY property:
+
+  &lt;filename(lineno)&gt; : error C2665: 'DDP_Text' : none of the 9 overloads
+  can convert parameter 3 from type 'class COleCurrency'
+
+For DATE property:
+
+  &lt;filename(lineno)&gt; : error C2665: 'DDP_Text' : none of the 9 overloads
+  can convert parameter 3 from type 'class COleDateTime'
+
+You must implement the DDP functions for COleCurrency and COleDateTime in order
+to associate a control on a property page with a property of one of these
+types.
+
+The DdpText.exe sample extracts a Visual C++ 5.0 ActiveX control project; it
+contains code for overrides of DDP_Text for COleCurrency and COleDateTime.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+DdpText.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+
+When you associate CURRENCY and DATE properties with edit controls on a property
+page, ClassWizard adds the following member variables to the COlePropertyPage
+derived class:
+
+     COleCurrency m_Currency;
+     COleDateTime m_Date;
+
+It adds the following to the DoDataExchange for the property page:
+
+     DDP_Text(pDX, IDC_CURRENCY, m_Currency, _T("CurrencyProp") );
+     DDX_Text(pDX, IDC_CURRENCY, m_Currency);
+     DDP_Text(pDX, IDC_DATE, m_Date, _T("DateProp") );
+     DDX_Text(pDX, IDC_DATE, m_Date);
+
+This results in a compile error because the compiler cannot find overrides of
+DDP_TEXT for COleCurrency and COleDateTime.
+
+To use the code in the sample, it is necessary to derive your code from
+CMyOlePropertyPage instead of COlePropertyPage. The project also has code for
+CMyOlePropertyPage.
+
+MyPropPg.h and MyPropPg.cpp have the code required to add code for DDP_Text to
+your project. Add these files to your project.
+
+Use ClassWizard to associate properties with controls on your property page. Now
+modify the property page class so that it is derived from CMyOlePropertyPage.
+The following steps are required:
+
+1. Add the following line to your property page header file:
+
+        #include "MyPropPg.h"
+
+2. Replace all instances of COlePropertyPage in the header and .CPP file for
+  your project with CMyOlePropertyPage.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Sridhar S.
+Madhugiri, Microsoft Corporation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbfile kbole kbSample kbCOMt kbDlg kbMFC kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

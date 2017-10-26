@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101046: How to Create a Dynamic SELECT Statement in an .EXE File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101046: How to Create a Dynamic SELECT Statement in an .EXE File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101046/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101046/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101046/","publisher":null,"image":null,"headline":"Q101046: How to Create a Dynamic SELECT Statement in an .EXE File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101046-how-to-create-a-dynamic-select-statement-in-an-exe-file">Q101046: How to Create a Dynamic SELECT Statement in an .EXE File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101046
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A compiler cannot be accessed either in a stand-alone or compact executable
+file, so the Relational Query By Example (RQBE) screen is not available for the
+user to modify a query. However, the user can use macro substitution to modify
+an SQL SELECT statement as needed within an executable file.
+
+This technique will work in FoxPro for Windows with some modification. FoxPro for
+Windows does not create stand-alone executable files, but is capable of
+providing stand-alone applications. However, the query builder is not available
+in executable files built with the FoxPro for Windows Distribution Kit because
+it is intended to be used in interactive mode.
+
+MORE INFORMATION
+================
+
+This code example below uses the Clients table found in the
+\Sample\Organize\dbfs folder of FoxPro 2.x. The code assumes the Clients table
+resides in the current folder. If you use this code with Visual FoxPro, then it
+is assumed that the Clients table from FoxPro 2.x was copied into the current
+folder.
+
+The following program, which can be compiled into a stand-alone executable file,
+allows the user to dynamically change the SQL SELECT statement as needed:
+
+     USE CLIENTS.DBF
+     GETEXPR to x
+     GETEXPR to y
+     SELECT * FROM clients WHERE &amp;x HAVING &amp;y INTO CURSOR Test
+     BROWS
+   
+     PROCEDURE notcalled
+     SELECT * FROM clients WHERE state="CA" HAVING city="Los Angeles"
+
+When the .EXE file is run, two expression boxes appear in succession.
+
+1. In the first, choose STATE from the Field Names box.
+
+2. Type the following, and choose OK.
+
+  " ="TX"" (without the quotation marks)
+
+3. In the next expression box, choose CITY from the Field Names box.
+
+4. Type the following, and choose OK.
+
+  " ="Lubbock"" (without the quotation marks)
+
+This query will produce one record.
+
+NOTE: Because macro substitution is used, the stand-alone executable file may not
+have the proper code included to perform the required function so an error may
+occur. To avoid this problem, the notcalled procedure includes code for an SQL
+SELECT statement. When the executable file is compiled, FoxPro will include the
+necessary source code to execute the macro substitution. The notcalled procedure
+is not executed by the program.
+
+
+REFERENCES
+==========
+
+"Developer's Guide," version 2.0, page D16-11
+"Commands &amp; Functions," version 2.0, page C3-10
+"Language Reference," version 2.5, page L3-9
+"Developer's Guide," version 2.5, page 14-11
+
+Additional query words: VFoxWin FoxDos FoxWin 2.x standalone memvar memory variable variables replaceable replacement
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168733: WD97: Template Layout Changes When Opened in Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168733: WD97: Template Layout Changes When Opened in Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168733/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168733/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168733/","publisher":null,"image":null,"headline":"Q168733: WD97: Template Layout Changes When Opened in Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168733-wd97-template-layout-changes-when-opened-in-word">Q168733: WD97: Template Layout Changes When Opened in Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168733
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbusage kbtemplate
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Word 97, when you open a template created in an earlier version of Word, the
+template will look different from the way it looked in previous versions of
+Word. Specifically, document formatting (for example, character spacing, line
+spacing, and page breaks) is not displayed or printed the way that it is in
+earlier versions of Word.
+
+CAUSE
+=====
+
+Unlike previous versions of Microsoft Word, Word 97 does not rely on printer
+information (metrics) to lay out the document. Word 97 uses a new
+printer-independent layout scheme controlled by the "Use printer metrics to lay
+out document" compatibility option. In Word 97, this option is turned off by
+default.
+
+WORKAROUND
+==========
+
+To use printer metrics to lay out the document (and simulate the behavior of
+earlier versions of Word), do the following:
+
+1. On the Tools menu, click Options.
+
+2. Click the Compatibility tab.
+
+3. In the Recommended Options For list, click Microsoft Word 97.
+
+4. Click to select the "Use printer metrics to layout document" check box.
+
+The template will then use the layout scheme based on the current printer
+metrics.
+
+NOTE: This is a document-specific setting and only affects the current document
+unless you click the Default button. If you click the Default button, all the
+currently selected options on the selected tab will become the defaults for all
+new documents based on the current template. If you click the Default button,
+the Recommended Options For list changes to Custom.
+
+MORE INFORMATION
+================
+
+This behavior does not occur if the document or template contains printer fonts.
+If the document or template contains printer fonts, the document formatting will
+be the same regardless of whether you open it in Word 97 or in an earlier
+version of Word.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbusage kbtemplate 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

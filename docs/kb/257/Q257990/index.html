@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257990/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257990/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257990/","publisher":null,"image":null,"headline":"Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257990-howto-obtain-list-of-pinned-files-from-ole-automation-in-vc">Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257990
+Product(s): Microsoft SourceSafe
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual SourceSafe OLE Automation does not directly expose any pinning
+functionality. Because of this, there is no direct way to tell if a file it
+pinned from OLE Automation. The following sample code shows how to work around
+this problem and obtain this information from a Visual C++ program.
+
+NOTE: This sample code assumes that you reference the Visual SourceSafe OLE
+Automation by using the following:
+
+  #import "path to ssapi.dll" no_namespace
+
+MORE INFORMATION
+================
+
+The following code assumes that you have a Visual Basic project and, when you
+want to get the path information, that you call the CheckPaths function. It
+could easily be modified to take a project as a parameter and also to do
+something different with the results.
+
+  void CheckPaths()
+  {
+     // Reference to the VSS objects
+     IVSSDatabasePtr   objVSSDatabase;
+     IVSSItemPtr       objItem;
+     IVSSItemsPtr      objItems;
+     IVSSItemPtr       vssItem;
+     IUnknownPtr       lpunk;
+     IEnumVARIANTPtr   ppvobj;
+     ULONG             fetched;
+     VARIANT           st;
+
+     try {
+        // Create the database object and open a connection to our database
+        objVSSDatabase.CreateInstance(__uuidof(VSSDatabase));
+        objVSSDatabase-&gt;Open(L"C:\\Program Files\\Microsoft Visual Studio\\Common\\VSS60a\\srcsafe.ini", L"Admin", L"");
+
+        // Create the Item object and set it to be $/ (the root project)
+        objItem = objVSSDatabase-&gt;GetVSSItem("$/", false);
+
+        // Check for pinned files in this project
+        Links(objItem);
+
+        // Get the items for this project
+        objItems = objItem-&gt;GetItems(false);
+
+        // Prepare to loop through the items
+        lpunk = objItems-&gt;_NewEnum();
+        lpunk.QueryInterface(IID_IEnumVARIANT, (void **)&amp;ppvobj);
+
+        // Loop through the items
+        do {
+           ppvobj-&gt;Next( 1UL, &amp;st, &amp;fetched );
+           if( fetched != 0 ) {
+              // Try to get the item
+              if(!FAILED(st.punkVal-&gt;
+                 QueryInterface(__uuidof(IVSSItem), (void**)&amp;vssItem))) {
+                 // If the item is a project, call the function to check if there
+                 // are subprojects in this project
+                 if (vssItem-&gt;GetType() == 0)
+                    CheckSubProjects(vssItem);
+              }
+              st.punkVal-&gt;Release();
+           }
+        } while (fetched != 0);
+
+        ppvobj-&gt;Release();
+        lpunk-&gt;Release();
+
+        // Inform the user that you are finished
+        AfxMessageBox("All Done!");
+
+     } catch (_com_error e) {
+        // Some error handlers
+     }
+  }
+
+  void CheckSubProjects(IVSSItemPtr objVSSProject)
+  {
+     // Reference to the VSS objects
+     IVSSItemsPtr     objItems;
+     IVSSItemPtr      vssItem;
+     IUnknownPtr      lpunk;
+     IEnumVARIANTPtr  ppvobj;
+     ULONG            fetched;
+     VARIANT          st;
+
+     try {
+        // Check for pinned files in this project
+        Links(objVSSProject);
+
+        // Get the items for this project
+        objItems = objVSSProject-&gt;GetItems(false);
+
+        // Prepare to loop through the items
+        lpunk = objItems-&gt;_NewEnum();
+        lpunk.QueryInterface(IID_IEnumVARIANT, (void **)&amp;ppvobj);
+
+        // Loop through the items
+        do {
+           ppvobj-&gt;Next( 1UL, &amp;st, &amp;fetched );
+           if( fetched != 0 ) {
+              // Try to get the item
+              if(!FAILED(st.punkVal-&gt;
+                 QueryInterface(__uuidof(IVSSItem), (void**)&amp;vssItem))) {
+                 // If the item is a project, call the function to check if there
+                 // are subprojects in this project
+                 if (vssItem-&gt;GetType() == 0)
+                    CheckSubProjects(vssItem);
+              }
+              st.punkVal-&gt;Release();
+           }
+        } while (fetched != 0);
+
+        ppvobj-&gt;Release();
+        lpunk-&gt;Release();
+     } catch (_com_error e) {
+        // Some error handlers
+     }
+  }
+
+  void Links(IVSSItemPtr objVSSFile)
+  {
+     // Reference to the VSS objects
+     IVSSVersionsPtr   objVersions;
+     IVSSVersionPtr    objVersion;
+     CString           UnpinArray[40];
+     CString           vssAction;
+     IUnknownPtr       lpunk;
+     IEnumVARIANTPtr   ppvobj;
+     ULONG             fetched;
+     VARIANT           st;
+     int               i, j, found;
+
+     try {
+        // Initialize variables
+        found = i = j = 0;
+
+        // Get the items for this project
+        objVersions = objVSSFile-&gt;GetVersions(0L);
+
+        // Prepare to loop through the items
+        lpunk = objVersions-&gt;_NewEnum();
+        lpunk.QueryInterface(IID_IEnumVARIANT, (void **)&amp;ppvobj);
+
+        // Loop through the items
+        do {
+           ppvobj-&gt;Next( 1UL, &amp;st, &amp;fetched );
+           if( fetched != 0 ) {
+              // Try to get the item
+              if(!FAILED(st.punkVal-&gt;
+                 QueryInterface(__uuidof(IVSSVersion), (void**)&amp;objVersion))) {
+                 // See what the event is that you are looking at
+                 vssAction = (LPCTSTR) objVersion-&gt;GetAction();
+                 // If it is a pin, check if you already have an unpin for this file
+                 if (vssAction.Left(6) == "Pinned") {
+                    for (j = 0; j &lt;= i; j++) {
+                       if ((!UnpinArray[j].IsEmpty()) &amp;&amp; (vssAction.Find(UnpinArray[j], 0) != -1)) {
+                          // Set found to 1, the file is not pinned.
+                          found = 1;
+                          break;
+                       }
+                    }
+
+                    // If you found it, print it out
+                    if (found == 0)
+                       OutputDebugString(vssAction);
+
+                 } else if (vssAction.Left(8) == "Unpinned") {
+                    UnpinArray[i] = vssAction.Right(vssAction.GetLength() - 10);
+                    i++;
+                 }
+              }
+              st.punkVal-&gt;Release();
+           }
+        } while (fetched != 0);
+
+        ppvobj-&gt;Release();
+        lpunk-&gt;Release();
+     } catch (_com_error e) {
+        // Some error handlers
+     }
+  }
+
+REFERENCES
+==========
+
+For more information, see the Visual SourceSafe 6.0 Automation topic on the
+following MSDN Web site at:
+
+  http://msdn.microsoft.com/library/techart/vssauto.htm
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q257989 HOWTO: Pin and Unpin Files in SourceSafe from OLE Automation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

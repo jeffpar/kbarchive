@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127919: PC Ext: Err Msg: [002] Mail Was Received…Unknown Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127919: PC Ext: Err Msg: [002] Mail Was Received…Unknown Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127919/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127919/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127919/","publisher":null,"image":null,"headline":"Q127919: PC Ext: Err Msg: [002] Mail Was Received…Unknown Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127919-pc-ext-err-msg-002-mail-was-receivedunknown-addresses">Q127919: PC Ext: Err Msg: [002] Mail Was Received…Unknown Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127919
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.20 3.20a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With version 3.2.11, 3.2.12, 3.2.13, and 3.2.14 of External.exe, if mail is
+received at a postoffice with an unknown address, the following error message is
+displayed:
+
+  [002] Mail was received that was addressed to unknown addresses.
+
+The unknown addresses of the original mail message will not be added to the
+report in the System.log. Versions earlier than 3.2.11 of External.exe would
+include the invalid addresses as part of the report.
+
+Also, the non-delivery report mailed back to the sender would not include the
+invalid addresses. In version earlier than 3.2.11, the addresses were included.
+
+CAUSE
+=====
+
+Revisions to the External program in version 3.2.11 resulted in this behavior.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.2.11, 3.2.12, 3.2.13,
+and 3.2.14 of External.exe. This problem was corrected in External.exe version
+3.2.15 (or later).
+
+For version 3.2.15 (or later) of the MS-DOS version of External.exe, you can find
+Extupd.exe, a self-extracting file, on the following services:
+
+- Microsoft's World Wide Web Site on the Internet On the www.microsoft.com home
+  page, click the Support icon. Click Knowledge Base, and select the product.
+  Enter kbfile EXTUPD.EXE, and click GO! Open the article, and click the button
+  to download the file.
+
+- Internet (anonymous FTP) ftp ftp.microsoft.com Change to the Softlib/Mslfiles
+  folder. Get EXTUPD.EXE
+
+- The Microsoft Network On the Edit menu, click Go To, and then click Other
+  Location. Type "mssupport" (without the quotation marks). Double-click the MS
+  Software Library icon. Find the appropriate product area. Locate and Download
+  EXTUPD.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+For version 3.2.15 (or later) of the OS/2 version of External.exe, you need
+Application Note WA0975 "Microsoft Mail External.exe Update for OS/2 Mail
+Multitasking MTA." You can only obtain this Application Note from Microsoft
+Product Support Services.
+
+MORE INFORMATION
+================
+
+Here are examples of correct and incorrect reports.
+
+Correct reporting:
+
+NOTE: The example was created with version 3.2.1 of External.exe. The mail item
+was sent to an unknown address.
+
+Message data:
+
+  From: Administrator Date: 05-21-94 Time: 11:26 Subject: test message
+
+  [002] Mail was received that was addressed to unknown addresses. Mail item
+  was not delivered to:
+
+  Allen, Angelia
+
+Incorrect reporting:
+
+NOTE: The example was created with version 3.2.11 of External.exe. The mail item
+was sent to an unknown address.
+
+Message data:
+
+  From: Administrator Date: 11-29-94 Time: 06:38 Subject: test message
+
+  [002] Mail was received that was addressed to unknown addresses. Mail item
+  was not delivered to:
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : 3.20 3.20a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

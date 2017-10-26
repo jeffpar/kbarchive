@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141868: INFO: Visual FoxPro Language Tips and Tricks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141868: INFO: Visual FoxPro Language Tips and Tricks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141868/","publisher":null,"image":null,"headline":"Q141868: INFO: Visual FoxPro Language Tips and Tricks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141868-info-visual-foxpro-language-tips-and-tricks">Q141868: INFO: Visual FoxPro Language Tips and Tricks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141868
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600
+Last Modified: 09-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article briefly describes some of the changes found in Visual FoxPro 3.0
+and how to use the new features.
+
+MORE INFORMATION
+================
+
+_SCREEN and activeControl Property
+----------------------------------
+
+In previous versions of FoxPro, you may have used the FoxPro system variable
+_CUROBJ to refer to the object that currently had the focus. Although the
+_CUROBJ variable has been retained for backward compatibility, Microsoft
+recommends that you now refer to an object or control on a form by using the
+_SCREEN reference and activeControl property. To return the name of the control
+that has the focus use this code:
+
+     _SCREEN.activeform.activecontrol.name
+
+  -or-
+
+      thisform.activecontrol.name
+
+  -or- (if the form is part of a formset)
+
+      thisformset.thisform.activecontrol.name
+
+To return the name of the current control, use this code:
+
+     CurControl=_SCREEN.activeform.activecontrol.name or
+
+  -or-
+
+     CurControl=thisform.activecontrol.name
+
+  -or- (if the form is part of a formset)
+
+     thisformset.CurControl=thisform.activecontrol.name
+
+To set the caption of the current control, use this code:
+
+     _SCREEN.activeform.activecontrol.caption="my caption"
+
+  -or-
+
+     thisform.activecontrol.caption="my caption"
+
+  -or- (if the form is part of a formset)
+
+     thisformset.thisform.activecontrol.caption="my caption"
+
+To move the cursor to a control, use this code:
+
+     _screen.activeform.&lt;controlname&gt;.setfocus
+
+  -or-
+
+     thisform.&lt;controlname&gt;.setfocus
+
+  -or- (if the form is part of a formset)
+
+     thisformset.thisform.&lt;controlname&gt;.setfocus
+
+NOTE: &lt;controlname&gt; is the name of the control you wish to become active.
+
+/N Parameter on the RUN Command
+-------------------------------
+
+The RUN command is available on the Windows platform only. The RUN command in
+FoxPro for Windows has a /N parameter that allows you to launch a Windows-based
+application. In fact, FoxPro for Windows introduced the /N option for executing
+windows-based applications from FoxPro. This functionality is retained in Visual
+FoxPro. The following command launches Word for Windows, and opens the readme
+document.
+
+     RUN /N &lt;drive&gt;&lt;path&gt;WINWORD.EXE README.DOC
+
+The Microsoft Windows Control Panel contains many utilities that you can use in
+your applications. You can also call these utilities using the RUN command:
+
+     RUN /N CONTROL COLOR
+     RUN /N CONTROL PRINTERS
+     RUN /N CONTROL DESKTOP
+
+You can include an optional numeric value immediately after /N to specify how the
+Windows-based application is opened. Do not include any spaces between /N and
+the numeric value. The following table lists the numeric value you can include
+and describes the state of the Windows-based application when opened.
+
+Value   Application attributes
+------------------------------------------------
+1       Active and normal size
+2       Active and minimized
+3       Active and maximized
+4       Inactive and normal (won't work with Windows 95)
+7       Inactive and minimized
+
+Drives and Directories
+----------------------
+
+Several FoxPro functions can be used to obtain information about drives and
+directories. Compare the returned values after issuing the command SET DEFAULT
+TO C:\VFP.
+
+Drive:
+
+  SYS(5) returns C:
+  SET('DEFAULT') returns C:
+
+Directories:
+
+  CURDIR()returns \VFP\ 
+  SYS(2003) returns \VFP
+  FULL(SET('DEFA')) returns C:\VFP\ 
+
+You can also use the ADIR() function to see if a specific directory exists. The
+following example returns 0 only if the path name does not exist. Remember that
+the path to a network server may not exist if the network connection is broken.
+
+   ? ADIR(temparr,'C:\VFP\*.*','D')
+   returns 0
+
+USE Command
+-----------
+
+You can run the USE IN 0 command to open a table or .dbf file in the first
+available work area. This command does not select that work area in which it
+opened the table or .dbf file. You must use the SELECT command to do this. You
+can issue the command USE IN &lt;alias&gt; to close a table or .dbf file without
+selecting its work area.
+
+A new SHARED clause for the USE command allows you to open a table or .dbf file
+for shared use without using the SET EXCLUSIVE command. For more information
+about the USE command, refer to the USE topic in the Help file.
+
+Cross-Tab Output to Spreadsheets
+--------------------------------
+
+Genxtab has been replaced by the Fpxtab program and is called from the code
+created by the Query Wizard. After running the Query Wizard select the Cross-Tab
+Wizard from the first screen, and follow the instructions to create a table that
+can then be exported or copied to spreadsheets.
+
+Custom Messages
+---------------
+
+You can display custom messages in the FoxPro status bar. To do this, type the
+following in the Command window:
+
+     SET TALK OFF
+     SET MESSAGE TO &lt;expC&gt;
+
+Where &lt;expC&gt; is the message. (You can pass a null string to display
+nothing.) SET MESSAGE TO without a parameter will restore the status bar to its
+normal functionality.
+
+Preprocessor Directives
+-----------------------
+
+Do not use _WINDOWS, _DOS, _MAC, or _UNIX with preprocessor directives (that is,
+#IF...#ENDIF). These are designed to be runtime variables. For example the
+following will NOT work:
+
+     #define _DOS .t.
+     #define _WINDOWS .f.
+
+     * For code compiled in MS-DOS, the following would not work:
+
+     DO CASE
+         CASE _DOS
+             ? "Running in MS-DOS"
+         CASE _WINDOWS
+             ? "Running in Windows"
+     ENDCASE
+
+This code would not work because _DOS would be changed to .T. and _WINDOWS would
+be changed to .F. so that the code could never work properly again. Instead use
+the following:
+
+     #if "Win" $ VERS()
+     #define WINDOWS_CODE .t.
+     #elif "Mac" $ VERS()
+     #define MAC_CODE .t.
+     #elif "Unix" $ VERS()
+     #define UNIX_CODE .t.
+     #else
+     #define DOS_CODE .t.
+     #ENDIF
+
+     #if WINDOWS_CODE
+     ? "Compiled under WINDOWS"
+     #elif DOS_CODE
+     ? "Compiled under MS-DOS"
+     #ENDIF
+
+Preprocessor Substitution in Text Strings
+-----------------------------------------
+
+In FoxPro 2.6, #define prevented preprocessor substitution in text strings. This
+has been remedied in Visual FoxPro. The following code will work as expected
+returning the text 'test' from the function call. In FoxPro 2.x this would have
+resulted in a 'NOSUB not found error' message. This is because of the way the
+'[]' characters were evaluated.
+
+  #DEFINE nosub 1
+
+     DECLARE an_array(3)
+     an_array(nosub)='test'
+
+     ? afunc[an_array[nosub]]
+
+     FUNCTION afunc
+     PARAMETER x
+     RETURN x
+
+Development Tools
+-----------------
+
+The Foxtools.fll file, which is located in your FoxPro for Windows root
+directory, contains a variety of functions you can use to enhance your
+applications. Many of these functions provide access to API routines and
+Microsoft Windows functions. You can view these by using the DISPLAY STATUS
+command (after you use SET LIBRARY TO foxtools). Use of the window API routines
+is also supported through the use of the DECLARE statement.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

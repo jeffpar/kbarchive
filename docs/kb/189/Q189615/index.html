@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189615: Incorrect Server License Setup During Reinstall | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189615: Incorrect Server License Setup During Reinstall" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189615/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189615/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189615/","publisher":null,"image":null,"headline":"Q189615: Incorrect Server License Setup During Reinstall","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189615-incorrect-server-license-setup-during-reinstall">Q189615: Incorrect Server License Setup During Reinstall</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189615
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Microsoft SNA Server must be reinstalled, client license information
+concerning the previous installation is ignored.
+
+MORE INFORMATION
+================
+
+During setup of Microsoft SNA Server 4.0, client license information must be
+selected. A choice of Per Server or Per Seat is indicated. If you select Per
+Seat, you must use the License Manager to add client licenses when Setup is
+complete.
+
+You can access License Manager through Control Panel or through the Start menu.
+
+In the event that Microsoft SNA Server is removed through the Setup program, the
+license information in License Manager is not removed. This information can be
+viewed in License Manager following the removal of Microsoft SNA Server.
+
+During any subsequent setup of Microsoft SNA Server, a dialog is presented asking
+for Per Server or Per Seat client license information. The default is Per Server
+for zero concurrent connections. Information in License Manager does not take
+precedence over the license information selected during setup.
+
+After completion of setup and configuration of Microsoft SNA Server, client
+connection attempts receive the following error message: "There are no SNA
+Servers running in your domain" [F004] [010000F0]. The Application Event Log on
+the SNA Server will log an event 597 indicating:
+
+  User limit of zero exceeded: client connection rejected
+
+The solution is to start License Manager on the SNA Server and select "Server
+Browser." Locate the SNA Server and select "Microsoft SNA Server." Double-click
+"Microsoft SNA Server" and change the licensing mode to Per Seat. The client
+license information contained in License Manager is then available to Microsoft
+SNA Server, and client access will be allowed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

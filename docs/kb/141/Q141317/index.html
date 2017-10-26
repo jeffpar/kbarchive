@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141317: How to Change the Color of Edit Boxes on a Wizard Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141317: How to Change the Color of Edit Boxes on a Wizard Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141317/","publisher":null,"image":null,"headline":"Q141317: How to Change the Color of Edit Boxes on a Wizard Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141317-how-to-change-the-color-of-edit-boxes-on-a-wizard-form">Q141317: How to Change the Color of Edit Boxes on a Wizard Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141317
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After Creating a form with the Screen Wizard, you may want to change the colors
+of text boxes and edit boxes. The colors displayed by the text boxes can be
+changed by editing the backcolor, forecolor, disabledbackcolor, and
+disabledforecolor properties on the property sheet. However, edit boxes are not
+disabled and enabled by the edit button as are text boxes. The Readonly property
+of the edit box is changed when the edit/revert or add/save buttons are clicked.
+
+MORE INFORMATION
+================
+
+Edit box colors can be changed by adding code to the Click events of the
+add/save and edit/revert buttons as in the following example:
+
+1. Use the employee table, and build a wizard form using the last_name field and
+  the notes memo field.
+
+2. Add the following code to the Click event of the edit/revert button:
+
+   TXTBTNS.CMDEDIT::CLICK   &amp;&amp; scope resolution operator
+                              &amp;&amp; to make sure Wizstyle.vcx code is executed
+     If !THISFORM.notes1.READONLY
+       THISFORM.notes1.FORECOLOR= THISFORM.last_name1.FORECOLOR
+       THISFORM.notes1.backcolor= THISFORM.last_name1.BACKCOLOR
+     ELSE
+       THISFORM.notes1.FORECOLOR= THISFORM.last_name1.DISABLEDFORECOLOR
+       THISFORM.notes1.BACKCOLOR= THISFORM.last_name1.DISABLEDBACKCOLOR
+     ENDIF
+
+  In this code, the edit box is called notes1 and the text box is called
+  last_name1.
+
+3. Place the same code in the add/save button. Replace cmdEdit with cmdAdd. This
+  code will allow the edit box colors to stay in sync with the text box colors.
+  Alternate colors may be used by specifying RGB colors in the code instead of
+  forecolor, backcolor, disabledforecolor, or disabledbackcolor.
+
+4. If you changed the disabled colors of the text boxes in the Property sheet,
+  add the following two lines of code to the Init event of the form:
+
+     THISFORM.notes1.FORECOLOR= THISFORM.last_name1.DISABLEDFORECOLOR
+     THISFORM.notes1.BACKCOLOR= THISFORM.last_name1.DISABLEDBACKCOLOR
+
+Additional query words: VFoxwin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149846: RPC Program Fails When Server Run Down Occurs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149846: RPC Program Fails When Server Run Down Occurs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149846/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149846/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149846/","publisher":null,"image":null,"headline":"Q149846: RPC Program Fails When Server Run Down Occurs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149846-rpc-program-fails-when-server-run-down-occurs">Q149846: RPC Program Fails When Server Run Down Occurs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149846
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork kbProgramming win95 kbAPI kbRPC kbSDKPlatform kbGrpDSNet
+Last Modified: 25-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a multithreaded program that uses the RPC (Remote Procedure Call)
+API, or multiple RPC programs concurrently, one of the following error messages
+may occur:
+
+  - Invalid Handle
+
+  - RPC Failure
+
+When these error messages occur, the connection to the RPC server is lost.
+
+CAUSE
+=====
+
+These errors may occur when all the following conditions exist:
+
+- The RPC server is a DCE (Distributed Computing Environment) server running a
+  non-Microsoft operating system such as OS/2 or UNIX.
+
+- There are multiple RPC sockets (threads) being opened, either by a
+  multithreaded RPC client program, or by multiple RPC client programs.
+
+- At least one of the RPC threads has been idle long enough for the RPC server
+  to time out and automatically terminate (run down) the thread.
+
+Under these conditions, the Windows 95 RPC run-time libraries do not properly
+shut down the RPC connection when the server times out and calls its rundown
+procedures. Subsequent attempts to create a new RPC connection or access an
+existing connection fail, generating one of the error messages listed above.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+Note that this symptom does not occur if Microsoft Windows NT is used as the RPC
+server, because Windows NT does not time out and call rundown procedures on the
+RPC connection as described above.
+
+A similar update for this issue also exists for Windows NT RPC clients. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q151714 NT RPC Client May Fail Against DCE Server
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbProgramming win95 kbAPI kbRPC kbSDKPlatform kbGrpDSNet 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

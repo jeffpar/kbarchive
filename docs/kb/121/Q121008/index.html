@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121008: Microsoft Diagnostic Utility: Definition of SXMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121008: Microsoft Diagnostic Utility: Definition of SXMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121008/","publisher":null,"image":null,"headline":"Q121008: Microsoft Diagnostic Utility: Definition of SXMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121008-microsoft-diagnostic-utility-definition-of-sxms">Q121008: Microsoft Diagnostic Utility: Definition of SXMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121008
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Microsoft Diagnostic Utility (MSD) to examine memory when
+Windows is not active, you may notice a reference to "Available SXMS" or
+"Largest Free SXMS." SXMS is also known as Super XMS or Super Extended Memory.
+
+MORE INFORMATION
+================
+
+MS-DOS-based programs running under Microsoft Windows or Microsoft Windows for
+Workgroups can access XMS version 2.0 memory only, even if an extended memory
+manager (XMM) is providing XMS version 3.0 memory at the MS-DOS level. This is
+because WIN386.EXE is responsible for allocating extended memory to programs
+running in Windows, and it is designed to implement XMS version 2.0 only.
+
+However, when Windows is not running, these same MS-DOS-based programs can access
+XMS version 3.0 memory as provided by an XMM. This version of the Extended
+Memory Specification implements changes that are intended to provide support for
+extended memory pools of up to 4 gigabytes in size. (The current application
+programming interface [API] uses 16-bit values to specify block sizes and
+therefore is limited to a maximum block size of 64 megabytes.) This extended
+memory provided under XMS version 3.0 is known as SXMS, regardless of whether it
+is above or below the previous limit of 64 megabytes.
+
+Support for XMS 3.0 is implemented through extensions to those same functions
+that were available under version 2.0. One such extension is to the function
+Query Any Free Extended Memory (Function 88h).
+
+This function now uses 32-bit values to return the size of available memory, thus
+allowing returns of up to 4 gigabytes. As with XMS 2.0, this function also
+returns the highest known physical memory address, or the physical address of
+the last byte of memory. Two important points must be made while considering the
+values returned by Function 88h:
+
+- If less than 64 MB of RAM is present on the system, Function 88h returns the
+  same value for available memory when run under XMS version 2.0 or version
+  3.0. As a result, MSD reports the same values for XMS memory in Windows and
+  SXMS memory at the MS-DOS level on such a system.
+
+- There may be discontinuities in the memory map below the highest known
+  physical memory address returned by Function 88h.
+
+Additional query words:
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

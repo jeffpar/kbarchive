@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247382/","publisher":null,"image":null,"headline":"Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247382-prb-tooltips-for-controls-in-activex-document-server-are-hidden">Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247382
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveDocs kbCmnCtrls kbCOMt kbContainer kbMFC kbToolTip kbVC500 kbVC600 kbDSupport k
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To add ToolTips for controls in the ActiveX Document server, you can use the
+Microsoft Foundation Classes (MFC) default implementation by calling the
+EnableToolTips function, which works correctly. However, for more flexible
+functionality of the ToolTip, you can also use the CTooltipCtrl class to create
+your own ToolTip control object. If the ToolTips are created by using the
+CTooltipCtrl class, it is not shown in the ActiveX Document Container.
+
+CAUSE
+=====
+
+When the user calls the server from the document container, the main frame
+window is the container's frame window, (that means that the window procedure is
+a different window procedure). Thus, it mixes up the z-order of the windows.
+However, although the ToolTip window is actually being shown, it is hidden
+behind the window of the server.
+
+RESOLUTION
+==========
+
+To work around the problem, set the z-order of the ToolTips to the topmost level
+after creating the ToolTips. This sample code illustrates the workaround:
+
+  void CTestView::OnInitialUpdate()
+  {
+  	CFormView::OnInitialUpdate();
+  	ResizeParentToFit();
+
+  	CButton * mButton = (CButton *)GetDlgItem(IDC_BUTTON1);
+
+  	if( !m_tooltip.Create(this,TTS_ALWAYSTIP))
+  		TRACE(_T("Unable to Create ToolTip"));
+  	else if( !m_tooltip.AddTool( mButton, "Show the tooltips"))
+  		 TRACE(_T("Unable to add tip for the control window"));
+  	else
+  	{
+  	    m_tooltip.SetWindowPos(&amp;wndTopMost,0,0,0,0,SWP_SHOWWINDOW|
+                                      SWP_NOSIZE |SWP_NOMOVE);    
+  	    m_tooltip.Activate(TRUE);
+  	}	
+  }
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the MFC AppWizard to generate an ActiveX Document Server application.
+  That is, at step 3 of 6, under the category "What compound document support
+  would you like to include?", select Full-server and check Active Document
+  Server. At step 6, select CFormView as the base class of the view.
+
+2. Add a button, IDC_BUTTON1, to the form view's resource template.
+
+3. Add a private member variable to the view class, as shown here:
+
+  CToolTipCtrl m_tooltip; 
+
+4. In the OnInitialUpdate function of the view class, insert the following code
+  snippet to create the ToolTip for the button.
+
+  CButton * mButton = (CButton *)GetDlgItem(IDC_BUTTON1);
+
+  if( !m_tooltip.Create(this,TTS_ALWAYSTIP))
+  	TRACE(_T("Unable to Create ToolTip"));
+  else if( !m_tooltip.AddTool( mButton, "Show the tooltips"))
+          TRACE(_T("Unable to add tip for the control window"));
+  else
+       m_tooltip.Activate(TRUE);
+
+5. Override the PreTranslateMessage function of the view class and add the
+  following code to it:
+
+  if(pMsg-&gt;message== WM_LBUTTONDOWN ||
+     pMsg-&gt;message== WM_LBUTTONUP || 
+     pMsg-&gt;message== WM_MOUSEMOVE)
+  	
+     m_tooltip.RelayEvent(pMsg);	
+
+6. Build the application and run it once as a stand alone application. Move the
+  pointer over the button. Note that the ToolTip is shown correctly.
+
+7. Now use the MFC AppWizard to generate an ActiveX Document Container
+  application. That is, at step 3 of 6, under the category "What compound
+  document support would you like to include?", select Container and check
+  Active Document Container. Choose the default settings similar the other
+  steps except exclude step 3.
+
+8. Build and run the container application. Under the menu item select Edit and
+  Insert New Object. Choose the name of your server from the Insert Object
+  dialog box and click OK
+
+9. Move the pointer over the button. Notice that the ToolTip is not visible.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Yana Wang, Microsoft Corporation
+
+
+Additional query words: CTooltipCtrl SetWindowPos
+
+======================================================================
+Keywords          : kbActiveDocs kbCmnCtrls kbCOMt kbContainer kbMFC kbToolTip kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142781: XCLN: Mailing to Recipients Hidden from the Address Book | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142781: XCLN: Mailing to Recipients Hidden from the Address Book" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142781/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142781/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142781/","publisher":null,"image":null,"headline":"Q142781: XCLN: Mailing to Recipients Hidden from the Address Book","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142781-xcln-mailing-to-recipients-hidden-from-the-address-book">Q142781: XCLN: Mailing to Recipients Hidden from the Address Book</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142781
+Product(s): Microsoft Exchange
+Version(s): 4.0 5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 12-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Exchange MS-DOS client, versions 4.0, 5.0 
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use the Microsoft Exchange Server Administrator program, you can hide a
+recipient mailbox from the Address Book. If this is done, the mailbox will not
+show up in any Microsoft Exchange database table. This means the mailbox will
+not appear in the Global Address List, in any hierarchy container, as a member
+of a Distribution List, or as a manager or direct report. Also, except in the
+case when the Distinguished Name (DN) of the mailbox is used, the mailbox will
+not be suggested as a possible Ambiguous Name Resolution match.
+
+MORE INFORMATION
+================
+
+The only way to select a hidden mailbox is to use the Distinguished Name (DN)
+for that mailbox. The DN is an address that is unique in the entire
+organization. The following is an example of a DN:
+
+  /o=EXCHNG_ORG/ou=EXCHNG_SITE/cn=Container1/cn=Container2/cn=Alias
+
+In the above example:
+
+- EXCHNG_ORG is the Exchange Organization Name.
+
+- EXCHNG_SITE is the Exchange Site Name.
+
+- Container1 and Container2 are Container names with Container2 being a
+  subcontainer of Container1.
+
+- Alias is the mailbox alias name and is present in Container2.
+
+The DN can be constructed if the above pieces of information are known.
+
+The DN for a mailbox can also be obtained from the Raw Properties of the
+mailbox.
+
+WARNING: Using the Microsoft Exchange Administrator program in raw mode should
+only be done under the direction of a Microsoft Exchange Support Engineer.
+Incorrectly configuring the Administrator properties in raw mode can cause
+serious, system-wide problems that may require you to reinstall Microsoft
+Exchange Server to correct them. Microsoft cannot guarantee that any problems
+resulting from the incorrect use of the Administrator program in raw mode can be
+solved. Use this tool at your own risk.
+
+To obtain the Raw Properties, follow the steps below:
+
+1. Run the Exchange Administrator Program using the /raw command line option.
+
+2. Select the mailbox whose Raw Properties you want to obtain and then choose
+  the Raw Properties command from the File menu. This will bring up a dialog
+  box displaying the Raw Properties for that mailbox.
+
+3. From the Object Attributes listbox, select the item called Obj-Dist-Name.
+
+4. The DN for that mailbox should now be displayed in the field labeled
+  Attribute Value.
+
+Mailing to a Hidden Recipient
+-----------------------------
+
+In the Compose New Message To: box, type the DN for the recipient of the message.
+On the Tools menu, click Check Names (or press CTRL+K). If the DN corresponds to
+a valid mailbox, the DN will be replaced by the underlined Display Name of the
+mailbox.
+
+To add this address to the Personal Address Book, double-click the underlined
+Display Name. This will bring up the Properties of the mailbox in question. On
+the General Page of the Properties, click Personal Address Book, which will add
+the address to the Personal Address Book. In the future, the address can be
+selected from the Personal Address Book, instead of typing in the DN for the
+mailbox.
+
+The above procedure can also be used when you create an Inbox Assistant or Public
+Folder rule involving a mailbox hidden from the Address Book.
+
+Additional query words: hidden names
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange500DOS kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : 4.0 5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

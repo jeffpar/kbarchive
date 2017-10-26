@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183046: FP97: Cannot Use Search Component With Active Server Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183046: FP97: Cannot Use Search Component With Active Server Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183046/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183046/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183046/","publisher":null,"image":null,"headline":"Q183046: FP97: Cannot Use Search Component With Active Server Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183046-fp97-cannot-use-search-component-with-active-server-pages">Q183046: FP97: Cannot Use Search Component With Active Server Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183046
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 26-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194284.
+
+SYMPTOMS
+========
+
+When you click the Search button on an Active Server Page (ASP), the results of
+your search are returned, but the ASP script on your page does not execute. In
+some cases, the following error message appears in your Web browser:
+
+  FrontPage Error. User: please report details to this site's webmaster.
+
+  Webmaster:
+  please see the server's application event log for more details.
+
+The Uniform Resource Locator (URL) in the Address box in Internet Explorer
+resembles this
+
+  http://&lt;myserver&gt;/&lt;myfile&gt;.asp/_vti_bin/shtml.dll/&lt;myfile&gt;.asp.
+
+where &lt;myserver&gt; is the location of your Web and &lt;myfile&gt; is the name
+of the file you are previewing.
+
+CAUSE
+=====
+
+You can not use the Search Form on an Active Server Page.
+
+When an ASP page is requested on a server, Asp.dll parses it. It finds any script
+specified to run on the server, executes it, and displays the results.
+
+When you conduct a search using the Search Form, Shtml.dll parses the search page
+and the results of the search are expanded into the search file and displayed in
+the browser.
+
+When a search is performed using the Search Form on an ASP page, Shtml.dll cannot
+parse the file because Asp.dll is already parsing it. Because Shtml.dll fails,
+it outputs the message described in the "Symptoms" section.
+
+When using Microsoft Index Server, the Search Form does not use Shtml.dll.
+
+Instead, the action for the form points to the .idq file associated with the
+file.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods
+
+Method 1: Install Microsoft Index Server
+----------------------------------------
+
+Install Microsoft Index Server on the Web server hosting your Web. For more
+information about obtaining and installing Microsoft Index Server, please see
+the following Microsoft World Wide Web site:
+
+  http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp
+
+For additional information about using Index Server with FrontPage, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q166357 FP: How to Use FrontPage with Microsoft Index Server
+
+Method 2: Use .htm or .html pages rather than .asp pages with Search Form
+-------------------------------------------------------------------------
+
+Do not use Active Server Pages with the Search Form. Use .htm or .html pages
+only.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: run time search index
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

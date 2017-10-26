@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85624: How to Disable FaceLift 2.0 in Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85624: How to Disable FaceLift 2.0 in Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85624/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85624/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85624/","publisher":null,"image":null,"headline":"Q85624: How to Disable FaceLift 2.0 in Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85624-how-to-disable-facelift-20-in-windows">Q85624: How to Disable FaceLift 2.0 in Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85624
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article outlines methods to turn off, totally disable, or partially disable
+version 2.0 of Bitstream FaceLift for Windows.
+
+MORE INFORMATION
+================
+
+There are four possible ways to modify the performance of FaceLift 2.0 with
+Windows 3.0, 3.0a, and 3.1.
+
+To Turn FaceLift Completely Off
+-------------------------------
+
+1. Choose the FaceLift icon.
+
+2. Select the On/Off/Disabled button until it says Off.
+
+3. Restart Windows.
+
+FaceLift will not be available for the screen or printer, and the FaceLift shell
+drivers for the screen and printer won't load. Any changes made to the WIN.INI
+and SYSTEM.INI files when FaceLift was active are set back to the normal
+settings (or to the settings prior to when FaceLift was loaded).
+
+To Disable FaceLift
+-------------------
+
+1. Choose the FaceLift icon.
+
+2. Select the Disabled option from the On/Off/Disabled button.
+
+The FaceLift screen and printer drivers are still loaded, but FaceLift doesn't
+provide fonts for the screen or printer. The shell drivers will still be listed
+in the WIN.INI and SYSTEM.INI files. Windows does not need to be restarted for
+these changes to take effect.
+
+To Disable FaceLift for a Certain Printer
+-----------------------------------------
+
+1. Choose the FaceLift icon.
+
+2. Choose Printers.
+
+3. Select the printer for which you want to disable FaceLift.
+
+4. Clear the Print With FaceLift check box. If this box isn't selected, Windows
+  print jobs go directly to the Windows printer driver. The FaceLift fonts will
+  not be available for a printer if this box is cleared.
+
+  Disabling FaceLift for a certain printer may be helpful in determining if
+  there is a conflict between FaceLift and the printer driver. You do not need
+  to restart Windows after exiting FaceLift.
+
+To Manually Disable FaceLift
+----------------------------
+
+FaceLift's installation program modifies the SYSTEM.INI and the WIN.INI files. To
+manually disable FaceLift, you must use a text editor, such as Notepad, to
+change the following entries in these files:
+
+SYSTEM.INI
+----------
+
+Change the following entry
+
+  DISPLAY.DRV=SHELLSCR.DRV
+
+to
+
+  DISPLAY.DRV=system display
+
+where "system display" is your display driver. To determine what your display
+driver is, see the DISPLAY.ORG= entry, which indicates what the "original"
+display driver was before FaceLift modified the DISPLAY.DRV= entry.
+
+Change the following entry
+
+  DISPLAY.ORG=system display
+
+to:
+
+  ;DISPLAY.ORG=system display
+
+NOTE: The semicolon (;) comments out the line (that is, it causes Windows to
+ignore the line).
+
+WIN.INI
+-------
+
+The section named [TYPEFACES] should be commented out with semicolons.
+
+For example:
+
+  ;[Typefaces]
+  ;Active=1
+  ;CacheFonts=8
+  ;...and so on
+  ;BTFont1=c:\BTFONTS\CE0630.TDF,C:\BTFONTS\BX000630.SPD
+  ;...and so on
+
+For more information on FaceLift, call Bitstream Technical Support.
+
+FaceLift is manufactured by Bitstream, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 3.10 Face lift Fonts win31 unchecked checked 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

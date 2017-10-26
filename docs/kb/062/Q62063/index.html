@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62063: Mac Hyp: Reading an Enclosed File from a Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62063: Mac Hyp: Reading an Enclosed File from a Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62063/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62063/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62063/","publisher":null,"image":null,"headline":"Q62063: Mac Hyp: Reading an Enclosed File from a Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62063-mac-hyp-reading-an-enclosed-file-from-a-message">Q62063: Mac Hyp: Reading an Enclosed File from a Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62063
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following syntax reads the enclosed file contained in the specified message
+from the Mail server:
+
+     msmail(getEnclosure, messageRef [,fileName] [,replace] [,index])
+     =&gt; fileName
+
+MORE INFORMATION
+================
+
+The file is saved under the name "fileName". "fileName" can be a complete path
+or a partial path as explained under addEnclosure. If no name is provided, the
+standard Macintosh Save File dialog box is displayed, allowing the user to
+specify a name.
+
+"messageRef" is a reference to a selected message obtained by making a call to
+the msmail function using a parameter that returns a message reference.
+
+If the "replace" flag is true and a file with the name "fileName" already exists
+on your system, it will be overwritten. If "replace" is false, then "#n" (where
+"n" is a number) will be appended to the filename before it is saved so that the
+existing file is not overwritten. The "replace" flag is ignored if "fileName" is
+not specified.
+
+The optional "index" parameter allows multiple enclosures to be extracted from a
+message. Since this feature was not implemented in Microsoft Mail 2.00, passing
+anything other than 0 (zero) in Mail 2.00 returns an error (0 is the default).
+
+Note: The "index" parameter changed in Mail 3.00. The "index" parameter can be
+from 1 to the number of enclosed files. Updated scripts that were used with Mail
+2.00 should be modified if they used the optional 0 index. Otherwise, a "Bad
+Index error" will be returned in MailResultText. The default in Mail 3.00 is 1.
+
+In all cases, the name (not path) that the file was successfully saved with is
+returned.
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

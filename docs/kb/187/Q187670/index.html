@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187670/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187670/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187670/","publisher":null,"image":null,"headline":"Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187670-howto-use-rdo-and-odbc-text-driver-to-open-a-delimited-text">Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187670
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+RDO may be used with the ODBC Text driver to open and browse a delimited text
+file.
+
+MORE INFORMATION
+================
+
+The Text ODBC driver relies on the Microsoft Jet 32-bit IISAM driver
+(MSText35.dll) that provides the services required for accessing text files. You
+can either link/attach to a Microsoft Access database or directly open text
+files. Because RDO must use Jet to access the text file, you will incur the
+additional overhead associated with loading Jet.
+
+NOTE: This requires a Schema.ini file in the same path as the delimited text
+file. You must change the columns in the Schema.ini file to correspond to your
+delimited file. Also, you must change the path in the connect string to the
+correct path for your file.
+
+To create a schema.ini file, use a simple text editor such as Notepad. Below are
+the schema.ini entries for the SAMPLE2.TXT file listed at the bottom of this
+article:
+
+     [SAMPLE2.TXT]
+     ColNameHeader = False
+     Format = CSVDelimited
+     CharacterSet = ANSI
+     Col1=ProductID short
+     Col2=ProductName char width 30
+     Col3=QuantityPerUnit char width 30
+     Col4=UnitPrice currency
+     Col5=Discontinued bit
+
+For more information on Schema.ini, see the REFERENCES section of this article.
+
+Step-by-Step Example
+--------------------
+
+1. Open Visual Basic, and create a new Project. Form1 is created by default.
+
+2. Set a reference to Microsoft Remote Data Object 2.0 with the
+  Project-References menu selection.
+
+3. Paste the following code in the Form-Load event:
+
+        Dim cn As New RDO.rdoConnection
+        Dim en As RDO.rdoEnvironment
+        Dim rs As RDO.rdoResultset
+        Dim fld As RDO.rdoColumn
+
+        Set en = rdoEngine.rdoEnvironments(0)
+
+        With cn
+            .CursorDriver = rdUseOdbc
+            'The DBQ parameter below, is the path to your
+            'Comma Delimited file(s). You may open multiple files
+            'on the same connection in this path.
+            .Connect = "DRIVER={Microsoft Text Driver (*.txt;" &amp; _
+                    " *.csv)};DBQ=E:\Samples\Text\CommaDelimited;"
+            .EstablishConnection rdDriverNoPrompt, False
+        End With
+
+        'Jet uses '.' internally as an identifier for table names,
+        'such as database.table. Jet eliminates ambiguity by mapping '#'
+        'as the delimiter for external files.
+        Set rs = cn.OpenResultset("select * from [sample2#txt]")
+
+        While Not rs.EOF
+            For Each fld In rs.rdoColumns
+                Debug.Print fld.Name &amp; "=" &amp; fld.Value
+            Next fld
+            rs.MoveNext
+        Wend
+
+NOTE: In the example above, DBQ is not a valid parameter of the RemoteData
+control or the rdoConnection object's Connect property. It is supported by the
+Microsoft Jet database engine, and not by the ODBC driver.
+
+You could copy and paste the following delimited file example into Notepad and
+save it as Sample2.txt. You could then modify the DBQ path, above, to point to
+the comma delimited file Sample2.txt.
+
+1,Chai,10 boxes x 20 bags,$18.00,False
+2,Chang,24 - 12 oz bottles,$19.00,False
+3,Aniseed Syrup,12 - 550 ml bottles,$10.00,False
+4,Chef Anton's Cajun Seasoning,48 - 6 oz jars,$22.00,False
+5,Chef Anton's Gumbo Mix,36 boxes,$21.35,True
+6,Grandma's Boysenberry Spread,12 - 8 oz jars,$25.00,False
+7,Uncle Bob's Organic Dried Pears,12 - 1 lb pkgs.,$30.00,False
+
+(This will give you seven records to test with in the sample code.)
+
+NOTE: Make sure when you paste it in Notepad that you do not leave any blank
+lines at the top of the file.
+
+You may choose an alternative to the comma delimiter by indicating the delimiter
+in the Schema.ini file e.g. Format = Delimited(*). You can use any character for
+the delimiter except the double (") quotation mark.
+
+This same technique can be applied to fixed-width files by indicating
+'FixedLength' for the Format, such as Format = FixedLength.
+
+REFERENCES
+
+"Working with Text Files", MSDN
+
+"Using DAO to Connect to ODBC Data Sources", MSDN.
+
+"RDO Compared to Microsoft Jet/DAO", MSDN.
+
+"Text Data Source Initialization Settings", MSDN.
+
+"External ISAM Driver Components", MSDN.
+
+"Understanding Schema.ini Files", MSDN.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q155512 : ACC: How to Create a Schema.ini File Programmatically.
+
+
+Additional query words: kbdse kbDSupport kbVBp500 kbvbp kbRDO kbODBC kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

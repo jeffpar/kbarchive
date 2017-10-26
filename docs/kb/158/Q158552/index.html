@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158552/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158552/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158552/","publisher":null,"image":null,"headline":"Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158552-prb-cpropertysheetdomodal-or-create-causes-an-exception">Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158552
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbMFC KbUIDesign kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling CPropertySheet::DoModal() or CPropertySheet::Create() in Windows 95 may
+cause an exception. The Output window displays a message that says the
+following:
+
+  First-chance exception in &lt;program.exe&gt; (Comctl32.dll): 0xC0000005:
+  Access Violation.
+
+Newer versions (version 4.70) of the Comctl32.dll do not have this problem.
+
+CAUSE
+=====
+
+The CommCtl32.dll tries to modify the resources for the pages. Since the
+resources are normally in read-only sections this throws an Exception that can
+be caught in the application. However, if the application does not catch this
+exception then the OS will handle this exception correctly.
+
+RESOLUTION
+==========
+
+The first-chance exception can be ignored because it is safely handled by the
+operating system.
+
+One way to prevent the exception from being thrown is to make the resources
+read/write. You can do this by adding a linker setting of "/SECTION:.rsrc,rw."
+
+A second way to prevent the exception being thrown is to change the font of the
+pages so they are not "MS Sans Serif". MFC checks the dialog template font for
+the page. If it is not "MS Sans Serif" then it makes a copy of the resource in
+read/write memory, modifies the font and passes this to the C mCtl32.dll. So
+when the dll writes to the template for the page it is writing to read/write
+memory and hence exception is not thrown.
+
+Another way to prevent the exception from affecting your application is not to
+have the call for creating the property sheet in a try/catch(...) block. Instead
+catch particular exceptions in the catch block.
+
+If the property sheet is part of an OLE Automation Server that can be invoked
+through a method of the server then you have to make the resources read/write,
+using either of the first two methods described above, since OLE catches the
+exception.
+
+NOTE: Making the resources Read/Write can cause the resources to be written to a
+page file.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     /* Compile options needed: default
+     */ 
+
+     /***** this code will cause unpredictable results *****/ 
+     try
+     {
+         sheet.DoModal();
+     }
+     catch(...)
+     {
+     }
+
+     /***** this code is OK *****/ 
+     try
+     {
+         if (0 == sheet.DoModal())
+             throw "DoModal() failed!";
+     }
+     catch(char * str)
+     {
+         TRACE ("Exception thrown: %s\n", str);
+     }
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q126630 Resource Sections are Read-only
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbMFC KbUIDesign kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

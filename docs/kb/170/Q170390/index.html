@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170390: Changing Security Options on MIPS System Results in 4116 Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170390: Changing Security Options on MIPS System Results in 4116 Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170390/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170390/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170390/","publisher":null,"image":null,"headline":"Q170390: Changing Security Options on MIPS System Results in 4116 Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170390-changing-security-options-on-mips-system-results-in-4116-error">Q170390: Changing Security Options on MIPS System Results in 4116 Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170390
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 (all versions)
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following error is displayed when trying to exit the SNA Server Admin
+Security options under SNA Server 2.11 when it is running on a MIPS system.
+
+  Error: 4116
+
+  An error occurred at the server in attempting to process your request.
+  Your changes may not have been applied.
+
+This problem occurs on both the Japanese and U.S. versions of SNA Server 2.11
+when running on a MIPS system.
+
+CAUSE
+=====
+
+This problem is caused because of a structure member alignment problem with SNA
+Server 2.11 when running on a MIPS system. Because the structure member is
+passed across the network, it could not be aligned correctly. The result is that
+a new security structure is allocated and the misaligned member structure is
+copied into it before the Windows NT security call is made. This results in the
+4116 error.
+
+
+RESOLUTION
+==========
+
+The security component of the SnaBase service has been updated to correct this
+problem. In addition, ACL caching is no longer done when SNA Server 2.11 is used
+on a MIPS system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+
+MORE INFORMATION
+================
+
+To reproduce this problem, follow these steps:
+
+1. Log on to Windows NT on MIPS system using the Administrator account.
+
+2. Install SNA Server and start SNA Server Admin.
+
+3. Click Permissions on the Security menu in SNA Server Admin.
+
+4. Click OK after adding some users or groups, or only choose OK.
+
+5. The error 4116 popup message is displayed.
+
+  - or -
+
+1. Log on to Windows NT on MIPS system using the Administrator account.
+
+2. Install SNA Server and start SNA Server Admin.
+
+3. Click Owner on the Security menu in SNA Server Admin.
+
+4. Click the Take Ownership button.
+
+5. The error 4116 popup message is displayed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1 kbSNAServ211SP2
+Version           : WINDOWS:2.11 (all versions)
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

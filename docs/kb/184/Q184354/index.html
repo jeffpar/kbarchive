@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184354: BUG: Working Folder for Subproject Not Inherited from Parent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184354: BUG: Working Folder for Subproject Not Inherited from Parent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184354/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184354/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184354/","publisher":null,"image":null,"headline":"Q184354: BUG: Working Folder for Subproject Not Inherited from Parent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184354-bug-working-folder-for-subproject-not-inherited-from-parent">Q184354: BUG: Working Folder for Subproject Not Inherited from Parent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184354
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500bug kbSSafe600bug
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Subprojects are not inheriting the working folder setting from the parent
+project as expected.
+
+CAUSE
+=====
+
+You have overridden the normal behavior by explicitly setting the working folder
+for subproject(s). This results in a Dir= variable being set under the
+subproject section header in your Ss.ini file.
+
+RESOLUTION
+==========
+
+To restore the working folder inheritance, you need to edit the user's
+..Vss\Users\&lt;username&gt;\Ss.ini file and completely remove the Dir variable
+under the appropriate subproject section header.
+
+For example, you may have something that looks similar to the following in your
+Ss.ini file:
+
+  [$/Project1]
+     Dir(PC) = c:\Project1
+
+     ;Setting the working folder then deleting it from the GUI leaves the Dir
+     variable, but the value will be blank.
+     [$/Project1/Sub1]
+     Dir(PC) =
+
+     [$/Project1/Sub2]
+     Dir(PC) = c:\temp
+
+Default working folder propagation works again only after the "Dir(PC)" lines
+under each subproject section header are completely removed and the Ss.ini file
+saved.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When setting the working folder of a top-level Visual SourceSafe (VSS) project,
+by default all subprojects assume a working folder based on a mirror of the
+project's directory structure on disk.
+
+For example, suppose you have the following project structure in VSS:
+
+  $/Project1
+
+               /Sub1
+                    /SubofSub1
+               /Sub2
+
+Setting the working folder for $/Project1 to C:\Project1 implicitly sets the
+working folder of the subprojects to C:\Project1\Sub1,
+C:\Project1\Sub1\SubofSub1 and C:\Project1\Sub1\Sub2, respectively.
+
+If you explicitly set the working folder of a subproject, you are essentially
+telling VSS, "Don't assume a working folder for this subproject", which in some
+cases may be desired. VSS accomplishes this by adding the Dir variable under the
+subproject's header section in the Ss.ini file.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a project structure in VSS similar to the one above.
+
+2. Explicitly set the working folder for the subproject /Sub1 by highlighting it
+  and choosing Set Working Folder from the File menu.
+
+3. Choose a folder and click OK.
+
+4. Now open the Set Working Folder dialog box again, and delete the chosen
+  folder setting from the Name text box, then click OK. These steps remove the
+  working folder for /Sub1 and create the Dir()=&lt;blank&gt; in your Ss.ini
+  file after you exit the VSS explorer.
+
+5. Now set the working folder for $/Project1. $/Project1/Sub1, or any of its
+  subprojects, will not have its working folder set, but $/Project1 and
+  $/Project1/Sub2 will have the working folder set.
+
+NOTE: To maintain the default behavior of working folder inheritance, avoid
+setting the working folders for subprojects explicitly.
+
+REFERENCES
+==========
+
+Visual SourceSafe Help, search on: "Working Folder", Topic: "Setting the Working
+Folder for SS.INI"
+
+Additional query words: propagate
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbSSafe600bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

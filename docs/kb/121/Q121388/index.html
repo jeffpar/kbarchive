@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121388: Controlling LM and NT Logon Script Configurations with SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121388: Controlling LM and NT Logon Script Configurations with SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121388/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121388/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121388/","publisher":null,"image":null,"headline":"Q121388: Controlling LM and NT Logon Script Configurations with SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121388-controlling-lm-and-nt-logon-script-configurations-with-sms">Q121388: Controlling LM and NT Logon Script Configurations with SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121388
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbSCMan kbsmsAdmin smsadmin smssiteconfigman
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to Microsoft LAN Manager and Windows NT products only.
+For information on NetWare script modifications, refer to other articles in the
+Microsoft Knowledge Base.
+
+Selecting the Automatically Configure Logon Scripts option in Systems Management
+Server Administrator causes Systems Management Server to attempt modifications
+to both user account profiles and existing logon scripts for those users. To
+prevent these modifications from happening to selected accounts, the
+administrator can alter the behavior of Systems Management Server to accommodate
+the needs of network users.
+
+MORE INFORMATION
+================
+
+1. The Systems Management Server Site Configuration Manager will only attempt to
+  modify a users profile if it is blank (no logon script specified), or if it
+  already contains the SMSLS script name.
+
+  If an existing script is detected that is not SMSLS, Systems Management Server
+  then performs several operations:
+
+  a. Systems Management Server first makes a copy of the script as it exists in
+     the REPL$\SCRIPTS directory using a temporary name. The temporary file
+     will be opened and the following two (start and end) encapsulation comment
+     strings will be looked for:
+
+      - Systems Management Server 1.0:
+
+              REM Microsoft Systems Management Server (start)
+
+              REM SMS Build &lt;xxx&gt;
+              if "%OS%" == "Windows_NT" call smsls
+              if "%OS%" == "" call %0\..\smsls
+
+              REM Microsoft Systems Management Server (end)
+
+      - Systems Management Server 1.1:
+
+              REM Microsoft Systems Management Server (start)
+
+              REM SMS Build 692
+
+              call %0\..\smsls
+
+              REM Microsoft Systems Management Server (end)
+
+  b. If the start and end strings are present, the file will not be modified
+     (allowing the administrator to edit the changes between them and preserve
+     them). If these strings are not present they will be added in, either at
+     the top of the script or appended to the bottom of the script depending on
+     the selections made in Systems Management Server Administrator (&lt;Site
+     Properties&gt;&lt;Clients&gt;). The modified file will then replace the
+     actual script file and the original script file will be saved with a
+     sequentially numbered extension like "000".
+
+2. If the script specified does not include either a .BAT or .CMD file
+  extension, Systems Management Server will ignore this script and will not
+  attempt items 1a or 1b above. This is by design for Systems Management Server
+  version 1.0 to provide the administrator with the capability of bypassing
+  certain user accounts from the Systems Management Server logon script
+  automatic configuration. This feature is under review and will be considered
+  for inclusion in a future release.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbSCMan kbsmsAdmin smsadmin smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131122: INFO: Report Writer Enhancements in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131122: INFO: Report Writer Enhancements in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131122/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131122/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131122/","publisher":null,"image":null,"headline":"Q131122: INFO: Report Writer Enhancements in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131122-info-report-writer-enhancements-in-visual-foxpro">Q131122: INFO: Report Writer Enhancements in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131122
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300 kbvfp500 kbvfp600
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro Report Designer has been updated to include many new features.
+These new features can be incorporated into new reports created in Visual FoxPro
+as well as into reports created in any previous version of FoxPro.
+
+The following new features have been added to the Visual FoxPro Report Designer:
+
+- Private data session
+
+- Drag and drop
+
+- On Entry and On Exit report band expressions
+
+- System toolbars
+
+- Report output to an ASCII text file
+
+MORE INFORMATION
+================
+
+Private Data Session
+--------------------
+
+By choosing Private Data Session from the Report menu, you can initialize a
+separate record pointer for the databases used in the report. This feature
+allows the report to be called from a form or program without affecting the
+record pointer for that session.
+
+Drag and Drop
+-------------
+
+As with many other areas of the Visual FoxPro interface, the Report Designer now
+supports drag and drop. Fields or entire tables can be dragged from the data
+environment and dropped on the appropriate band on the report to create the
+report expressions. Likewise, fields or tables can be dragged from the Project
+Manager to achieve the same results.
+
+On Entry and On Exit Report Band Expressions
+--------------------------------------------
+
+The report band expressions provide a way to call a user-defined function at a
+specific time while the report is running. There is an On Entry and an On Exit
+band expression for each band in the report. Each expression is called once for
+every page in the report. As expected, the On Entry executes as the report
+processing enters a particular band while the On Exit executes as the report
+processing leaves a particular band. The band expressions for a given report
+band can be accessed by double-clicking the desired band.
+
+System Toolbars
+---------------
+
+The Visual FoxPro Report Designer uses several system toolbars for creating
+reports. There are four system toolbars that relate to the Report Designer.
+
+- The Report Designer toolbar helps you to create data groupings quickly and
+  access the other three toolbars (Report Controls, Layout, and Color Palette).
+
+- The Report Controls toolbar gives you quick access to the various controls
+  that can be added to a report.
+
+- The Layout toolbar enables you to adjust the layout of the various objects on
+  the report. You can use it to center, align, and size the objects.
+
+- The Print Preview toolbar helps you navigate through the pages of a report
+  while previewing the report.
+
+These toolbars can be activated and deactivated by choosing Toolbars from the
+View menu or by right-clicking any of the system toolbars.
+
+Report Output to an ASCII text file
+-----------------------------------
+
+The REPORT FORM command has been updated to include a new ASCII clause. This
+clause, used with the TO FILE clause, can be added to the report command to send
+the output to an ASCII text file devoid of printer-specific control codes or
+escape sequences. For example:
+
+     REPORT FORM MYREPORT.FRX TO FILE MYFILE.TXT ASCII
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbvfp kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

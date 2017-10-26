@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43052: Windows Does Not Support OS/2 Family API Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43052: Windows Does Not Support OS/2 Family API Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43052/","publisher":null,"image":null,"headline":"Q43052: Windows Does Not Support OS/2 Family API Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43052-windows-does-not-support-os2-family-api-calls">Q43052: Windows Does Not Support OS/2 Family API Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43052
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows and Windows 95 do not support 16-bit Windows-based applications coded
+with OS/2 Family API (FAPI) calls.
+
+MORE INFORMATION
+================
+
+FAPI works in the following manner:
+
+1. The code contains references to OS/2 FAPI calls (such as DosOpen, DosRead,
+  and so on).
+
+2. When the program is loaded into OS/2 protected mode, the system loader
+  dynamically links the FAPI calls to the OS/2 system-services DLLs
+  (Dynamic-Link Libraries).
+
+3. When the program is loaded into real mode (MS-DOS or OS/2 compatibility box),
+  what actually gets loaded is a small program called the "FAPI Loader and
+  Linker." It is this program that loads the real code; it dynamically links
+  the FAPI calls to a special library of support routines that translate FAPI
+  calls into 80x86 code and MS-DOS interrupts (INT 21H Function xx).
+
+This process is also described on Page 251 of Gordon Letwin's book titled "Inside
+OS/2" (Microsoft Press, 1988).
+
+FAPI works well for programs that need to run in MS-DOS and OS/2 protected mode.
+The problem is that Windows uses the "New EXE Format" for programs, bypassing
+the standard MS-DOS entry point. For example, if a Windows program is run
+outside of Windows (in MS-DOS), the following message appears, and the program
+terminates:
+
+  This program requires Microsoft Windows
+
+MS-DOS is not responsible for this message; the Windows program itself is
+responsible. The way the Windows program works is very similar to OS/2: it uses
+dual entry points into the .EXE file. In MS-DOS, a short program that prints the
+above message runs; however, in Windows, a true Windows-based application runs
+using the other entry point in the .EXE file.
+
+Therefore, the problem is narrowed down to the following: if the FAPI Loader and
+Linker program is run using the standard MS-DOS .EXE file entry point, and
+Windows starts an application using a different entry point, the dynamic linking
+of the FAPI routines will not occur.
+
+Therefore, FAPI calls cannot be used in Windows-based applications.
+
+To avoid this problem, do the following:
+
+Instead of using low-level MS-DOS calls (INT 21H Function xx) in a Windows-based
+application and OS/2 API calls (DosRead, DosOpen, and so on) in a Presentation
+Manager (PM) application, use the C run-time I/O routines for all of these
+applications.
+
+This will work because the Microsoft C Compiler and the run-time libraries supply
+versions of the libraries that work in both OS/2 and MS-DOS. By moving C code to
+PM and to Windows, it will not be necessary to rewrite it, and the appropriate
+conversion routines will be supplied at link time.
+
+Be sure not to use high-level (stream) I/O routines in C with Windows; just use
+the low-level (handles) versions. This topic is discussed in Charles Petzold's
+book titled "Programming Windows" (Microsoft Press, 1988), and in other articles
+in the Microsoft Knowledge Base.
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

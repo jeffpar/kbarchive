@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q308175: DOC: Broken Links in ASP Help Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q308175: DOC: Broken Links in ASP Help Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/308/Q308175/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/308/Q308175/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/308/Q308175/","publisher":null,"image":null,"headline":"Q308175: DOC: Broken Links in ASP Help Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q308175-doc-broken-links-in-asp-help-files">Q308175: DOC: Broken Links in ASP Help Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q308175
+Product(s): Internet Information Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 10-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you click the following links on the following IIS Help pages, the expected
+page does not appear in the browser:
+
+Page                              Link
+-----------------------------------------------------------
+Installable Components for ASP    Logging Utility Component
+Response Object                   CodePage
+Response Object                   LCID
+ASP Tutorial                      IIS snap-in
+
+MORE INFORMATION
+================
+
+The following four files are missing from the Winnt/Help/Iishelp/Iis/Htm/Asp
+directory:
+
+- Comp6i5w.htm
+
+- Vbob150l.htm
+
+- Vbob055w.htm
+
+- Iisbuti.htm
+
+To resolve this problem, paste the data for each of the missing files in Notepad,
+and then name the files as specified.
+
+Page 1: Installable Components for ASP:
+
+- Page: Installable Components for ASP
+
+- Link: Logging Utility Component
+
+- Directory and file name: Winnt/Help/Iishelp/Iis/Htm/Asp/Comp6i5w.htm
+
+Paste the following code in Notepad, name the file Comp6i5w.htm, and then save
+the file in the Winnt/Help/Iishelp/Iis/Htm/Asp directory:
+
+  <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span>
+  <span class="nt">&lt;HTML</span> <span class="na">DIR=</span><span class="s">"LTR"</span><span class="nt">&gt;&lt;HEAD&gt;</span>
+  <span class="nt">&lt;META</span> <span class="na">HTTP-EQUIV=</span><span class="s">"Content-Type"</span> <span class="na">Content=</span><span class="s">"text/html; charset=Windows-1252"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TITLE&gt;</span>Logging Utility Component<span class="nt">&lt;/TITLE&gt;</span>
+  <span class="nt">&lt;style&gt;</span><span class="k">@import</span> <span class="sx">url(coua.css)</span><span class="p">;</span><span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">disabled</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"cocss.css"</span><span class="nt">&gt;&lt;META</span> <span class="na">NAME=</span><span class="s">"DESCRIPTION"</span> <span class="na">CONTENT=</span><span class="s">"Internet Information Services reference information"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/HEAD&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">topmargin=</span><span class="s">0</span> <span class="na">id=</span><span class="s">"bodyID"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbarshade"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;&lt;a</span> <span class="na">name=</span><span class="s">"top"</span><span class="nt">&gt;&lt;/a&gt;&lt;TR&gt;&lt;TD&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbartable"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TR</span> <span class="na">ID=</span><span class="s">"hdr"</span><span class="nt">&gt;&lt;TD</span> <span class="na">CLASS=</span><span class="s">"runninghead"</span><span class="nt">&gt;</span>Platform<span class="ni">&amp;#xa0;</span>SDK:<span class="ni">&amp;#xa0;</span>Internet<span class="ni">&amp;#xa0;</span>Information<span class="ni">&amp;#xa0;</span>Services<span class="err">&amp;</span>nbsp5.1<span class="nt">&lt;/TD&gt;&lt;/TR&gt;</span>
+  <span class="nt">&lt;/TABLE&gt;</span>
+
+  <span class="nt">&lt;H1&gt;&lt;A</span> <span class="na">NAME=</span><span class="s">"_logging_utility_component"</span><span class="nt">&gt;&lt;/A&gt;</span>Logging Utility Component<span class="nt">&lt;/H1&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The IIS Log component is used to create an <span class="nt">&lt;B&gt;</span>IISLog <span class="nt">&lt;/B&gt;</span>object, which enables your applications to read from the IIS log. 
+  This component allows you to quickly create, for example, ASP scripts or VB components that programmatically walk through 
+  daily log files so that certain types of information can be extracted.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;&lt;B&gt;&lt;B&gt;</span>Important<span class="nt">&lt;/B&gt;&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;</span>The user accessing the ASP script that instantiates the <span class="nt">&lt;B&gt;</span>IISLog<span class="nt">&lt;/B&gt;</span> component must be authenticated as an 
+  Administrator or Operator on the server on which IIS is running. If the user is only Anonymous, the IIS Log component will not 
+  function properly.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>File Names<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+  <span class="nt">&lt;table&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Logscrpt.dll<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>The Logging Utility component<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Syntax<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE</span> <span class="na">class=</span><span class="s">"syntax"</span><span class="nt">&gt;&lt;B&gt;</span>Set <span class="nt">&lt;/B&gt;&lt;I&gt;</span>oIISLog<span class="nt">&lt;/I&gt;&lt;B&gt;</span> = Server.CreateObject( MSWC.IISLog ) <span class="nt">&lt;/B&gt;</span>
+  <span class="nt">&lt;B&gt;</span> <span class="nt">&lt;/B&gt;&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Parameters<span class="nt">&lt;/B&gt;</span>
+
+  <span class="nt">&lt;DL&gt;</span>
+  <span class="nt">&lt;DT&gt;&lt;I&gt;</span>oIISLog<span class="nt">&lt;/I&gt;&lt;/DT&gt;</span>
+
+  <span class="nt">&lt;DD&gt;</span>Specifies the name that can be used as a reference to the <span class="nt">&lt;B&gt;</span>IISLog <span class="nt">&lt;/B&gt;</span>component.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;/DL&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Methods<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+  <span class="nt">&lt;table&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp4rzb.htm"</span><span class="nt">&gt;</span>AtEndOfLog<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates whether all records have been read from the log file.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp5dtf.htm"</span><span class="nt">&gt;</span>CloseLogFiles<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Closes all open log files.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp6hnp.htm"</span><span class="nt">&gt;</span>OpenLogFile<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Opens a log file for reading or writing.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp1cqa.htm"</span><span class="nt">&gt;</span>ReadFilter<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Filters records from the log file by date and time.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp6jms.htm"</span><span class="nt">&gt;</span>ReadLogRecord<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Reads the next available log record from the current log file.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp4290.htm"</span><span class="nt">&gt;</span>WriteLogRecord<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Writes a log record to the current log file.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Properties<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+  <span class="nt">&lt;table&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp6xt0.htm"</span><span class="nt">&gt;</span>BytesReceived<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the bytes received.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp7dv8.htm"</span><span class="nt">&gt;</span>BytesSent<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the bytes sent.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp4d2o.htm"</span><span class="nt">&gt;</span>ClientIP<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the client's host name.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp8wf9.htm"</span><span class="nt">&gt;</span>Cookie<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the client's cookie.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp7k37.htm"</span><span class="nt">&gt;</span>CustomFields<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates an array of custom headers<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp5smd.htm"</span><span class="nt">&gt;</span>DateTime<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the date and time in GMT.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp0xpg.htm"</span><span class="nt">&gt;</span>Method<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the operation type.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp735f.htm"</span><span class="nt">&gt;</span>ProtocolStatus<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the protocol status.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp0g8e.htm"</span><span class="nt">&gt;</span>ProtocolVersion<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the version string.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp3epe.htm"</span><span class="nt">&gt;</span>Referer<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the referrer page.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp7ohc.htm"</span><span class="nt">&gt;</span>ServerIP<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the server's IP address.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp4dk5.htm"</span><span class="nt">&gt;</span>ServerName<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the server name.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp6ulw.htm"</span><span class="nt">&gt;</span>ServerPort<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the port number.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp32g5.htm"</span><span class="nt">&gt;</span>ServiceName<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the service name.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp052m.htm"</span><span class="nt">&gt;</span>TimeTaken<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the total processing time.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp254p.htm"</span><span class="nt">&gt;</span>URIQuery<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates any parameters passed with the request.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp3u7h.htm"</span><span class="nt">&gt;</span>URIStem<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the target URL.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp20hg.htm"</span><span class="nt">&gt;</span>UserAgent<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the user agent string.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp2vc5.htm"</span><span class="nt">&gt;</span>UserName<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the user's name.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+
+  <span class="nt">&lt;TR</span> <span class="na">VALIGN=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"comp6yer.htm"</span><span class="nt">&gt;</span>Win32Status<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD</span> <span class="na">width=</span><span class="s">50%</span><span class="nt">&gt;</span>Indicates the Win32 status code.<span class="nt">&lt;/TD&gt;</span>
+  <span class="nt">&lt;/TR&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;&lt;B&gt;&lt;B&gt;</span>Note<span class="nt">&lt;/B&gt;&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;</span>The following steps are necessary to use the IIS Log component effectively:
+
+  <span class="nt">&lt;UL&gt;</span>
+  	<span class="nt">&lt;LI&gt;</span>Use the OpenLogFile method to specify from which log file or files the IISLog component should read.<span class="nt">&lt;/li&gt;</span>
+
+  	<span class="nt">&lt;LI&gt;</span>Use the ReadLogRecord to read the appropriate log records.<span class="nt">&lt;/li&gt;</span>
+
+  	<span class="nt">&lt;LI&gt;</span>Use the IIS Log component properties to retrieve specific information from the log records.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/UL&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;&lt;B&gt;&lt;B&gt;</span>Important<span class="nt">&lt;/B&gt;&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P</span> <span class="na">class=</span><span class="s">indent</span><span class="nt">&gt;</span>Only log files created by logging modules that support log file reading will be accessible through this component. 
+  The four built-in logging modules that come with IIS support log-file reading, but if you are using a custom or third-party 
+  logging module, you will need to enhance the logging module. See <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"logg40mr.htm"</span><span class="nt">&gt;</span>Extending IIS Logging Capabilities<span class="nt">&lt;/A&gt;</span> 
+  for more information.<span class="nt">&lt;/P&gt;</span>
+  <span class="c">&lt;!-- Info Task Footer --&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itfBorder"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"tiny.gif"</span> <span class="na">WIDTH=</span><span class="s">"1"</span> <span class="na">HEIGHT=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itf"</span><span class="nt">&gt;&lt;B&gt;</span>Platform SDK Release: <span class="nt">&lt;FONT</span> <span class="na">COLOR=</span><span class="s">"#ddaa00"</span><span class="nt">&gt;</span>January 2002<span class="nt">&lt;/FONT&gt;&lt;/B&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CELLPADDING=</span><span class="s">"0"</span> <span class="na">CELLSPACING=</span><span class="s">"0"</span><span class="nt">&gt;&lt;TR&gt;&lt;TD</span> <span class="na">WIDTH=</span><span class="s">"43%"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"sendfdbk.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span> 
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;</span>Contact Platform SDK<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;IMG</span> <span class="na">SRC=</span><span class="s">"download.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> 
+  <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>Order a Platform SDK CD Online<span class="nt">&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;P&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/P&gt;</span>
+  <span class="nt">&lt;/BODY&gt;</span>
+  <span class="nt">&lt;/HTML&gt;</span>
+
+Page 2: Response Object:
+
+- Page: Response Object
+
+- Link: CodePage
+
+- Directory and file name: Winnt/Help/Iishelp/Iis/Htm/Asp/Vbob150l.htm
+
+Paste the following code in Notepad, name the file Vbob150l.htm, and then save
+the file in the Winnt/Help/Iishelp/Iis/Htm/Asp directory:
+
+  <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span>
+  <span class="nt">&lt;HTML</span> <span class="na">DIR=</span><span class="s">"LTR"</span><span class="nt">&gt;&lt;HEAD&gt;</span>
+  <span class="nt">&lt;META</span> <span class="na">HTTP-EQUIV=</span><span class="s">"Content-Type"</span> <span class="na">Content=</span><span class="s">"text/html; charset=Windows-1252"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TITLE&gt;</span>CodePage<span class="nt">&lt;/TITLE&gt;</span>
+  <span class="nt">&lt;style&gt;</span><span class="k">@import</span> <span class="sx">url(coua.css)</span><span class="p">;</span><span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">disabled</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"cocss.css"</span><span class="nt">&gt;&lt;META</span> <span class="na">NAME=</span><span class="s">"DESCRIPTION"</span> <span class="na">CONTENT=</span><span class="s">"Internet Information Services reference information"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/HEAD&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">topmargin=</span><span class="s">0</span> <span class="na">id=</span><span class="s">"bodyID"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbarshade"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;&lt;a</span> <span class="na">name=</span><span class="s">"top"</span><span class="nt">&gt;&lt;/a&gt;&lt;TR&gt;&lt;TD&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbartable"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TR</span> <span class="na">ID=</span><span class="s">"hdr"</span><span class="nt">&gt;&lt;TD</span> <span class="na">CLASS=</span><span class="s">"runninghead"</span><span class="nt">&gt;</span>Platform<span class="ni">&amp;#xa0;</span>SDK:<span class="ni">&amp;#xa0;</span>Internet<span class="ni">&amp;#xa0;</span>Information<span class="ni">&amp;#xa0;</span>Services<span class="err">&amp;</span>nbsp5.1<span class="nt">&lt;/TD&gt;&lt;/TR&gt;</span>
+  <span class="nt">&lt;/TABLE&gt;</span>
+
+  <span class="nt">&lt;H1&gt;&lt;A</span> <span class="na">NAME=</span><span class="s">"_response_codepage"</span><span class="nt">&gt;&lt;/A&gt;</span>CodePage<span class="nt">&lt;/H1&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The <span class="nt">&lt;B&gt;</span>CodePage<span class="nt">&lt;/B&gt;</span> property specifies how strings are encoded in the intrinsic objects. A codepage is a character set that 
+  can include numbers, punctuation marks, and other glyphs. Codepages are not the same for each language. Some languages such as 
+  Japanese and Hindi have multi-byte characters, while others like English and German only need one byte to represent each 
+  character. The <span class="nt">&lt;B&gt;</span>CodePage<span class="nt">&lt;/B&gt;</span> property is read/write.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Syntax<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE</span> <span class="na">class=</span><span class="s">"syntax"</span><span class="nt">&gt;&lt;B&gt;</span>Response.CodePage <span class="nt">&lt;/B&gt;</span>[<span class="nt">&lt;B&gt;</span>=<span class="nt">&lt;/B&gt;</span> <span class="nt">&lt;I&gt;</span>CodePageID <span class="nt">&lt;/I&gt;</span>]
+  <span class="nt">&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Parameters<span class="nt">&lt;/B&gt;</span>
+
+  <span class="nt">&lt;DL&gt;</span>
+  <span class="nt">&lt;DT&gt;&lt;I&gt;</span>CodePageID<span class="nt">&lt;/I&gt;&lt;/DT&gt;</span>
+  <span class="nt">&lt;/DL&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>An integer representing the character formatting codepage. You can find codepage integers at 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://go.microsoft.com/fwlink/?LinkId=1756"</span> <span class="na">target=</span><span class="s">_blank</span><span class="nt">&gt;&lt;b&gt;</span>MSDN Web Workshop<span class="nt">&lt;/b&gt;&lt;/a&gt;</span> 
+  under the column for FamilyCodePage.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Notes<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>Setting Response.CodePage explicitly affects a single page, where Session.CodePage affects all responses in a session. <span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If Response.CodePage is not explicitly set in a page, it is implicitly set by Session.CodePage, if sessions are enabled. 
+  If sessions are not enabled, Response.CodePage is set by @CodePage, if @CodePage is present in the page. If there is no 
+  @CodePage in the page, Response.CodePage is set by the AspCodePage metabase property. If the AspCodePage metabase property is 
+  not set, or set to 0, Response.CodePage is set by the system ANSI codepage.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>There can be only one codepage per response body, otherwise incorrect characters are displayed. If you set the codepage 
+  explicitly in two pages where one is called by the other with #include, Server.Execute, or Server.Transfer, usually the parent 
+  page decides the codepage. The only exception is if Response.CodePage is explicitly set in the parent page of a Server.Execute call. 
+  In that case, an @CodePage command in the child page overrides the parent codepage.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>Literal strings in a script are still encoded using @CodePage (if present) or the AspCodePage metabase value (if set), 
+  or the system ANSI codepage. If you set Response.CodePage or Session.CodePage explicitly, do so before sending 
+  non-literal strings to the client. If you use literal and non-literal strings in the same page, make sure the codepage of 
+  @CodePage matches the codepage of Response.CodePage, or the literal strings are encoded differently from the non-literal strings 
+  and display incorrectly.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If the codepage of your Web page matches the system defaults of the Web client, you do not need to set a codepage in your Web page. 
+  However, setting the value is recommended.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If the codepage is set in a page, then <span class="nt">&lt;B&gt;</span>Response.Charset<span class="nt">&lt;/B&gt;</span> should also be set. The codepage value tells IIS how to encode 
+  the data when building the response, and the charset value tells the browser how to decode the data when displaying the 
+  response. The <span class="nt">&lt;I&gt;</span>CharsetName<span class="nt">&lt;/I&gt;</span> of Response.Charset must match the codepage value, or mixed characters will be displayed 
+  in the browser. Lists of <span class="nt">&lt;I&gt;</span>CharsetNames<span class="nt">&lt;/I&gt;</span> and matching codepage values can be found at 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://go.microsoft.com/fwlink/?LinkId=1756"</span> <span class="na">target=</span><span class="s">_blank</span><span class="nt">&gt;&lt;b&gt;</span>MSDN Web Workshop<span class="nt">&lt;/b&gt;&lt;/a&gt;</span> under the columns for Preferred 
+  Charset Label and FamilyCodePage.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The file format of a Web page must be the same as the @CodePage used in the page. Notepad.exe allows you to save files in 
+  UTF-8 format or in the system ANSI format. For example, if @CodePage is set to 65001 indicating UTF-8, the Web file must be 
+  saved in UTF-8 format. If @CodePage is set to 1252 indicating English or German, the Web file must be saved in ANSI format 
+  on an English or German system. If you want to save a page in the ANSI format for a language other than your system language, 
+  you can change your default System Locale in Regional Options from the Control Panel. For example, once you change your system 
+  locale to Japanese, any files you save in ANSI format are saved using the Japanese codepage and are only readable from a Japanese 
+  System Locale.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If you are writing and testing Web pages that use different codepages and character sets (for example, creating a multi-lingual 
+  Web site), remember that your test client-computer must have the language packs installed for each language you wish to display. You 
+  can install language packs from Regional Options in the Control Panel.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Example<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The following example shows the home page of a multi-lingual site. The home page is saved in UTF-8 format so characters from all 
+  languages can be shown. The home page redirects the client to a page of their language by using the ServerVariable HTTP_ACCEPT_LANGUAGE 
+  to discern the language of the client.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>--- Default.asp ---<span class="nt">&lt;/P&gt;</span> 
+  <span class="nt">&lt;PRE&gt;&lt;</span><span class="err">%@</span> <span class="na">CodePage=</span><span class="s">65001</span> <span class="na">Language=</span><span class="s">"VBScript"</span><span class="err">%</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">%</span>
+  <span class="err">'</span> <span class="na">Default</span><span class="err">.</span><span class="na">asp</span>
+  <span class="err">'</span> <span class="na">This</span> <span class="na">file</span> <span class="na">is</span> <span class="na">saved</span> <span class="na">in</span> <span class="na">UTF-8</span> <span class="na">format</span><span class="err">.</span>
+  <span class="err">'</span> <span class="na">The</span> <span class="na">codepage</span> <span class="na">of</span> <span class="na">the</span> <span class="na">system</span> <span class="na">doesn</span><span class="err">'</span><span class="na">t</span> <span class="na">matter</span> <span class="na">because</span>
+  <span class="err">'</span> <span class="na">you</span> <span class="na">are</span> <span class="na">setting</span> <span class="err">@</span><span class="na">CodePage</span><span class="err">,</span> <span class="na">Response</span><span class="err">.</span><span class="na">CodePage</span><span class="err">,</span> <span class="na">and</span> <span class="na">Response</span><span class="err">.</span><span class="na">Charset</span><span class="err">.</span>
+  <span class="err">'</span> <span class="na">Otherwise</span><span class="err">,</span> <span class="na">the</span> <span class="na">system</span> <span class="na">codepage</span> <span class="na">of</span> <span class="na">the</span> <span class="na">server</span> <span class="na">would</span> <span class="na">be</span> <span class="na">the</span> <span class="na">default</span><span class="err">.</span>
+
+  <span class="na">Response</span><span class="err">.</span><span class="na">CodePage =</span><span class="err"> </span><span class="s">65001</span>
+  <span class="na">Response</span><span class="err">.</span><span class="na">CharSet =</span><span class="err"> </span><span class="s">"utf-8"</span>
+
+  <span class="err">'</span> <span class="na">Redirect</span> <span class="na">to</span> <span class="na">the</span> <span class="na">correct</span> <span class="na">home</span> <span class="na">page</span> <span class="na">based</span> <span class="na">on</span> <span class="na">the</span> <span class="na">client</span> <span class="na">language</span><span class="err">.</span>
+  <span class="na">Select</span> <span class="na">Case</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">HTTP_ACCEPT_LANGUAGE</span><span class="err">")</span>
+
+    <span class="na">Case</span> <span class="err">"</span><span class="na">en-us</span><span class="err">",</span> <span class="err">"</span><span class="na">en</span><span class="err">",</span> <span class="err">"</span><span class="na">fr</span><span class="err">",</span> <span class="err">"</span><span class="na">fr-fr</span><span class="err">",</span> <span class="err">"</span><span class="na">es</span><span class="err">",</span> <span class="err">"</span><span class="na">es-es</span><span class="err">",</span> <span class="err">"</span><span class="na">zh</span><span class="err">",</span> <span class="err">"</span><span class="na">zh-cn</span><span class="err">",</span> <span class="err">"</span><span class="na">zh-tw</span><span class="err">"</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Redirect</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">HTTP_ACCEPT_LANGUAGE</span><span class="err">")</span> <span class="err">&amp;</span> <span class="err">"</span><span class="na">Start</span><span class="err">.</span><span class="na">asp</span><span class="err">"</span>
+
+    <span class="na">Case</span> <span class="na">Else</span>
+      <span class="err">%</span><span class="nt">&gt;</span>
+      Welcome.  Click <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"enStart.asp"</span><span class="nt">&gt;</span>here<span class="nt">&lt;/a&gt;</span> to go to the English Web site.<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>
+      Bienvenue. Cliquetez <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"frStart.asp"</span><span class="nt">&gt;</span>ici<span class="nt">&lt;/a&gt;</span> pour aller au Web site francais.<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>
+      Recepcion. Haga clic <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"esStart.asp"</span><span class="nt">&gt;</span>aqui<span class="nt">&lt;/a&gt;</span> para ir al Web site espanol.<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>
+      [Chinese characters with a link]<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>
+      [Chinese - Taiwan characters with a link]<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>
+      <span class="nt">&lt;</span><span class="err">%</span>
+
+  <span class="na">End</span> <span class="na">Select</span>
+
+  <span class="err">%</span><span class="nt">&gt;&lt;/PRE&gt;</span>
+  <span class="nt">&lt;P&gt;</span>--- En-usStart.asp ---<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE&gt;&lt;</span><span class="err">%@</span> <span class="na">Language=</span><span class="s">"VBScript"</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">Response</span><span class="err">.</span><span class="na">Redirect</span> <span class="err">"</span><span class="na">enStart</span><span class="err">.</span><span class="na">asp</span><span class="err">"</span> <span class="err">%</span><span class="nt">&gt;&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>--- EnStart.asp ---<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE&gt;&lt;</span><span class="err">%@</span> <span class="na">CodePage=</span><span class="s">1252</span> <span class="na">Language=</span><span class="s">"VBScript"</span><span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span> 
+  <span class="err">'</span> <span class="na">enStart</span><span class="err">.</span><span class="na">asp</span>
+  <span class="err">'</span> <span class="na">This</span> <span class="na">file</span> <span class="na">is</span> <span class="na">saved</span> <span class="na">in</span> <span class="na">ANSI</span> <span class="na">format</span> <span class="na">on</span> <span class="na">US</span> <span class="na">English</span> <span class="na">system</span> <span class="na">locale</span><span class="err">.</span>
+  <span class="err">'</span> <span class="na">The</span> <span class="na">language</span> <span class="na">of</span> <span class="na">the</span> <span class="na">system</span> <span class="na">doesn</span><span class="err">'</span><span class="na">t</span> <span class="na">matter</span>
+  <span class="err">'</span>  <span class="na">because</span> <span class="na">you</span> <span class="na">are</span> <span class="na">setting</span> <span class="err">@</span><span class="na">CodePage</span> <span class="na">and</span> <span class="na">Response</span><span class="err">.</span><span class="na">CodePage</span><span class="err">.</span>
+  <span class="err">'</span> <span class="na">Otherwise</span><span class="err">,</span> <span class="na">the</span> <span class="na">system</span> <span class="na">codepage</span> <span class="na">of</span> <span class="na">the</span> <span class="na">server</span> <span class="na">would</span> <span class="na">be</span> <span class="na">the</span> <span class="na">default</span><span class="err">.</span>
+
+  <span class="na">Response</span><span class="err">.</span><span class="na">CodePage =</span><span class="err"> </span><span class="s">1252</span>
+  <span class="na">Response</span><span class="err">.</span><span class="na">CharSet =</span><span class="err"> </span><span class="s">"windows-1252"</span> 
+
+  <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">H1</span> <span class="na">align=</span><span class="s">center</span><span class="nt">&gt;</span>News for Today<span class="nt">&lt;/H1&gt;</span>"
+  %&gt;
+
+  You can insert more content here, possibly using the <span class="nt">&lt;BR&gt;</span>
+  IIS Content Linking component, the <span class="nt">&lt;BR&gt;</span>
+  IIS Content Rotator component, or the <span class="nt">&lt;BR&gt;</span>
+  IIS Ad Rotator component.<span class="nt">&lt;BR&gt;&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Applies To<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"vbob5sj8.htm"</span><span class="nt">&gt;&lt;B&gt;</span>Response<span class="nt">&lt;/B&gt;</span> Object<span class="nt">&lt;/A&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>See Also<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"vbob7fw4.htm"</span><span class="nt">&gt;&lt;B&gt;</span>Charset<span class="nt">&lt;/B&gt;&lt;/A&gt;</span>, <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"eadg4o37.htm"</span><span class="nt">&gt;</span>Accommodating International Clients<span class="nt">&lt;/A&gt;&lt;/P&gt;</span>
+  <span class="c">&lt;!-- Info Task Footer --&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itfBorder"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"tiny.gif"</span> <span class="na">WIDTH=</span><span class="s">"1"</span> <span class="na">HEIGHT=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itf"</span><span class="nt">&gt;&lt;B&gt;</span>Platform SDK Release: <span class="nt">&lt;FONT</span> <span class="na">COLOR=</span><span class="s">"#ddaa00"</span><span class="nt">&gt;</span>January 2002<span class="nt">&lt;/FONT&gt;&lt;/B&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CELLPADDING=</span><span class="s">"0"</span> <span class="na">CELLSPACING=</span><span class="s">"0"</span><span class="nt">&gt;&lt;TR&gt;&lt;TD</span> <span class="na">WIDTH=</span><span class="s">"43%"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"sendfdbk.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span> 
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;</span>Contact Platform SDK<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;IMG</span> <span class="na">SRC=</span><span class="s">"download.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> 
+  <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>Order a Platform SDK CD Online<span class="nt">&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;P&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/P&gt;</span>
+  <span class="nt">&lt;/BODY&gt;</span>
+  <span class="nt">&lt;/HTML&gt;</span>
+
+Page 3: Response Object:
+
+- Page: Response Object
+
+- Link: LCID
+
+- Directory and file name: Winnt/Help/Iishelp/Iis/Htm/Asp/Vbob055w.htm
+
+Paste the following code in Notepad, name the file Vbob055w.htm, and then save
+the file in the Winnt/Help/Iishelp/Iis/Htm/Asp directory:
+
+  <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span>
+  <span class="nt">&lt;HTML</span> <span class="na">DIR=</span><span class="s">"LTR"</span><span class="nt">&gt;&lt;HEAD&gt;</span>
+  <span class="nt">&lt;META</span> <span class="na">HTTP-EQUIV=</span><span class="s">"Content-Type"</span> <span class="na">Content=</span><span class="s">"text/html; charset=Windows-1252"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TITLE&gt;</span>LCID<span class="nt">&lt;/TITLE&gt;</span>
+  <span class="nt">&lt;style&gt;</span><span class="k">@import</span> <span class="sx">url(coua.css)</span><span class="p">;</span><span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">disabled</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"cocss.css"</span><span class="nt">&gt;&lt;META</span> <span class="na">NAME=</span><span class="s">"DESCRIPTION"</span> <span class="na">CONTENT=</span><span class="s">"Internet Information Services reference information"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/HEAD&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">topmargin=</span><span class="s">0</span> <span class="na">id=</span><span class="s">"bodyID"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbarshade"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;&lt;a</span> <span class="na">name=</span><span class="s">"top"</span><span class="nt">&gt;&lt;/a&gt;&lt;TR&gt;&lt;TD&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CLASS=</span><span class="s">"buttonbartable"</span> <span class="na">CELLSPACING=</span><span class="s">0</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;TR</span> <span class="na">ID=</span><span class="s">"hdr"</span><span class="nt">&gt;&lt;TD</span> <span class="na">CLASS=</span><span class="s">"runninghead"</span><span class="nt">&gt;</span>Platform<span class="ni">&amp;#xa0;</span>SDK:<span class="ni">&amp;#xa0;</span>Internet<span class="ni">&amp;#xa0;</span>Information<span class="ni">&amp;#xa0;</span>Services<span class="err">&amp;</span>nbsp5.1<span class="nt">&lt;/TD&gt;&lt;/TR&gt;</span>
+  <span class="nt">&lt;/TABLE&gt;</span>
+
+  <span class="nt">&lt;H1&gt;&lt;A</span> <span class="na">NAME=</span><span class="s">"_response_lcid"</span><span class="nt">&gt;&lt;/A&gt;</span>LCID<span class="nt">&lt;/H1&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The <span class="nt">&lt;B&gt;</span>LCID<span class="nt">&lt;/B&gt;</span> property specifies how dates, times, and currencies are formatted. LCIDs are not the same for each geographical 
+  locale. Some locales format dates as YY-MM-DD and some format dates as MM-DD-YYYY. The <span class="nt">&lt;B&gt;</span>LCID<span class="nt">&lt;/B&gt;</span> property is read/write.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Syntax<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE</span> <span class="na">class=</span><span class="s">"syntax"</span><span class="nt">&gt;&lt;B&gt;</span>Response.lcid <span class="nt">&lt;/B&gt;</span>[<span class="nt">&lt;B&gt;</span>=<span class="nt">&lt;/B&gt;</span> <span class="nt">&lt;I&gt;</span>LocaleID <span class="nt">&lt;/I&gt;</span>]
+  <span class="nt">&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Parameters<span class="nt">&lt;/B&gt;</span>
+
+  <span class="nt">&lt;DL&gt;</span>
+  <span class="nt">&lt;DT&gt;&lt;I&gt;</span>LocaleID<span class="nt">&lt;/I&gt;&lt;/DT&gt;</span>
+  <span class="nt">&lt;/DL&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>An integer representing the geographical locale. You can find locale integers at <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://go.microsoft.com/fwlink/?LinkId=1754"</span> 
+  <span class="na">target=</span><span class="s">_blank</span><span class="nt">&gt;&lt;b&gt;</span>MSDN Library<span class="nt">&lt;/b&gt;&lt;/a&gt;</span>.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Notes<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>Setting Response.LCID explicitly affects a single page, where Session.LCID affects all responses in a session. <span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If Response.LCID is not explicitly set in a page, it is implicitly set by Session.LCID, if sessions are enabled. If sessions are 
+  not enabled, Response.LCID is set by @LCID, if @LCID is present in the page. If there is no @LCID in the page, Response.LCID is 
+  set by the AspLCID metabase property. If the AspLCID property is not set, or set to 0, Response.LCID is set by the default system 
+  locale.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>Response.LCID can be set multiple times in one Web page and used to format data each time. Some locales need the matching 
+  codepage to be set to display characters properly. For example, to display dates and times in several locales on one page, the 
+  codepage must be set to UTF-8 (65001) to show all the characters.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If you set Response.LCID or Session.LCID explicitly, do so before displaying formatted output. Setting Response.LCID 
+  changes the locale for both the ASP application and the scripting engine.  Using the VBScript function <span class="nt">&lt;B&gt;</span>setLocale()<span class="nt">&lt;/B&gt;</span> only 
+  changes the locale for the scripting engine.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If the locale of your Web page matches the system defaults of the Web client, you do not need to set a locale in your Web page. 
+  However, setting the value is recommended.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If the locale is set in a page, and the codepage is set to display the characters properly, then <span class="nt">&lt;B&gt;</span>Response.Charset<span class="nt">&lt;/B&gt;</span> should 
+  also be set. The codepage value tells IIS how to encode the data when building the response, and the charset value tells the 
+  browser how to decode the data when displaying the response. The <span class="nt">&lt;I&gt;</span>CharsetName<span class="nt">&lt;/I&gt;</span> of Response.Charset must match the 
+  codepage value, or mixed characters are displayed in the browser. Lists of <span class="nt">&lt;I&gt;</span>CharsetNames<span class="nt">&lt;/I&gt;</span> and matching codepage values can 
+  be found at <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://go.microsoft.com/fwlink/?LinkId=1756"</span> <span class="na">target=</span><span class="s">_blank</span><span class="nt">&gt;&lt;b&gt;</span>MSDN Web Workshop<span class="nt">&lt;/b&gt;&lt;/a&gt;</span> under the 
+  columns for Preferred Charset Label and FamilyCodePage.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>If you are writing and testing Web pages that use different locales, codepages, and character sets (for example, creating 
+  a multi-lingual Web site), remember that your test client computer must have the language packs installed for each language 
+  you wish to display. You can install language packs from Regional Options in the Control Panel.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Example<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>The following example displays the date, time, an amount of money, and a decimal value in different locales. The codepage is set to 
+  UTF-8 to display all the characters properly.<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;</span>--- Response_LCID.asp ---<span class="nt">&lt;/P&gt;</span>
+
+  <span class="nt">&lt;PRE&gt;&lt;</span><span class="err">%</span>
+  <span class="err">'</span> <span class="na">This</span> <span class="na">file</span> <span class="na">does</span> <span class="na">not</span> <span class="na">need</span> <span class="err">@</span><span class="na">LCID</span> <span class="na">or</span> <span class="err">@</span><span class="na">CODEPAGE</span> <span class="na">and</span>
+  <span class="err">'</span>  <span class="na">it</span> <span class="na">does</span> <span class="na">not</span> <span class="na">need</span> <span class="na">to</span> <span class="na">be</span> <span class="na">saved</span> <span class="na">in</span> <span class="na">UTF-8</span> <span class="na">format</span> <span class="na">because</span> 
+  <span class="err">'</span>  <span class="na">there</span> <span class="na">are</span> <span class="na">no</span> <span class="na">literal</span> <span class="na">strings</span> <span class="na">that</span> <span class="na">need</span> <span class="na">formatting</span> <span class="na">or</span> <span class="na">encoding</span><span class="err">.</span>
+
+  <span class="na">Response</span><span class="err">.</span><span class="na">Codepage =</span><span class="err"> </span><span class="s">65001</span>
+  <span class="na">Response</span><span class="err">.</span><span class="na">Charset =</span><span class="err"> </span><span class="s">"utf-8"</span>
+
+  <span class="err">'</span> <span class="na">See</span> <span class="na">what</span> <span class="na">happens</span> <span class="na">when</span> <span class="na">you</span> <span class="na">uncomment</span> <span class="na">the</span> <span class="na">lines</span> <span class="na">below</span><span class="err">.</span>
+  <span class="err">'</span><span class="na">Response</span><span class="err">.</span><span class="na">Codepage =</span><span class="err"> </span><span class="s">1252</span>
+  <span class="err">'</span><span class="na">Response</span><span class="err">.</span><span class="na">Charset =</span><span class="err"> </span><span class="s">"windows-1252"</span>
+
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1033</span><span class="err">,</span> <span class="err">"</span><span class="na">North</span> <span class="na">America</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1041</span><span class="err">,</span> <span class="err">"</span><span class="na">Japan</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1049</span><span class="err">,</span> <span class="err">"</span><span class="na">Russia</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1031</span><span class="err">,</span> <span class="err">"</span><span class="na">Germany</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1025</span><span class="err">,</span> <span class="err">"</span><span class="na">Saudi</span> <span class="na">Arabia</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1081</span><span class="err">,</span> <span class="err">"</span><span class="na">India</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">2052</span><span class="err">,</span> <span class="err">"</span><span class="na">China</span><span class="err">"</span>
+  <span class="na">ShowDateTimeCurrency</span> <span class="na">1042</span><span class="err">,</span> <span class="err">"</span><span class="na">Korea</span><span class="err">"</span>
+
+  <span class="na">Sub</span> <span class="na">ShowDateTimeCurrency</span><span class="err">(</span><span class="na">iLCID</span><span class="err">,</span> <span class="na">sLocale</span><span class="err">)</span>
+    <span class="na">Response</span><span class="err">.</span><span class="na">LCID =</span><span class="err"> </span><span class="s">iLCID</span>
+    <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">B</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> sLocale <span class="err">&amp;</span> "<span class="nt">&lt;/B&gt;&lt;BR&gt;</span>"
+    Response.Write FormatDateTime(Date, 1) <span class="err">&amp;</span> "<span class="nt">&lt;BR&gt;</span>"
+    Response.Write FormatDateTime(Time, 3) <span class="err">&amp;</span> "<span class="nt">&lt;BR&gt;</span>"
+    Response.Write FormatCurrency(1000) <span class="err">&amp;</span> "<span class="nt">&lt;BR&gt;</span>"
+    Response.Write FormatNumber(50, 3, 0, 0, -1) <span class="err">&amp;</span> " <span class="err">&amp;</span> " <span class="err">&amp;</span> FormatNumber(.02, 3, 0, 0, -1) <span class="err">&amp;</span> "<span class="nt">&lt;BR&gt;&lt;BR&gt;</span>"
+  End Sub
+  %&gt;
+  <span class="nt">&lt;/PRE&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>Applies To<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"vbob5sj8.htm"</span><span class="nt">&gt;&lt;B&gt;</span>Response<span class="nt">&lt;/B&gt;</span> Object<span class="nt">&lt;/A&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;B&gt;</span>See Also<span class="nt">&lt;/B&gt;&lt;/P&gt;</span>
+
+  <span class="nt">&lt;P&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"vbob7fw4.htm"</span><span class="nt">&gt;&lt;B&gt;</span>Charset<span class="nt">&lt;/B&gt;&lt;/A&gt;</span>, <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"vbob150l.htm"</span><span class="nt">&gt;&lt;B&gt;</span>CodePage<span class="nt">&lt;/B&gt;&lt;/A&gt;</span>, <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"eadg4o37.htm"</span><span class="nt">&gt;</span>Accommodating International Clients<span class="nt">&lt;/A&gt;&lt;/P&gt;</span>
+  <span class="c">&lt;!-- Info Task Footer --&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itfBorder"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"tiny.gif"</span> <span class="na">WIDTH=</span><span class="s">"1"</span> <span class="na">HEIGHT=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;DIV</span> <span class="na">CLASS=</span><span class="s">"itf"</span><span class="nt">&gt;&lt;B&gt;</span>Platform SDK Release: <span class="nt">&lt;FONT</span> <span class="na">COLOR=</span><span class="s">"#ddaa00"</span><span class="nt">&gt;</span>January 2002<span class="nt">&lt;/FONT&gt;&lt;/B&gt;</span>
+  <span class="nt">&lt;TABLE</span> <span class="na">CELLPADDING=</span><span class="s">"0"</span> <span class="na">CELLSPACING=</span><span class="s">"0"</span><span class="nt">&gt;&lt;TR&gt;&lt;TD</span> <span class="na">WIDTH=</span><span class="s">"43%"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;&lt;IMG</span> <span class="na">SRC=</span><span class="s">"sendfdbk.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span> 
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"mailto:sdkfdbk@microsoft.com?subject=TITLE:%20The%20COM%20Library;%20RELEASE:%20June%202001;%20URL:%20com_1fuh.htm"</span> 
+  <span class="na">Title=</span><span class="s">"Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"</span><span class="nt">&gt;</span>Contact Platform SDK<span class="nt">&lt;/A&gt;&lt;/TD&gt;</span>
+  <span class="nt">&lt;TD&gt;&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;IMG</span> <span class="na">SRC=</span><span class="s">"download.gif"</span> <span class="na">BORDER=</span><span class="s">"0"</span><span class="nt">/&gt;&lt;/A&gt;</span><span class="ni">&amp;#xa0;</span>
+  <span class="nt">&lt;A</span> <span class="na">HREF=</span><span class="s">"http://developerstore.com/devstore/toolboxselect.asp"</span> <span class="na">TARGET=</span><span class="s">"_blank"</span> 
+  <span class="na">TITLE=</span><span class="s">"Order a CD online."</span><span class="nt">&gt;</span>Order a Platform SDK CD Online<span class="nt">&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;/DIV&gt;</span>
+  <span class="nt">&lt;P&gt;</span><span class="ni">&amp;#xa0;</span><span class="nt">&lt;/P&gt;</span>
+  <span class="nt">&lt;/BODY&gt;</span>
+  <span class="nt">&lt;/HTML&gt;</span>
+
+Page 4: ASP Tutorial:
+
+- Page: ASP Tutorial
+
+- Link: IIS snap-in
+
+- Directory and file name: Winnt/Help/Iishelp/Iis/Htm/Asp/Iisbuti.htm
+
+Paste the following code in Notepad, name the file Iisbuti.htm, and then save the
+file in the Winnt/Help/Iishelp/Iis/Htm/Asp directory:
+
+  <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;</span>
+  <span class="nt">&lt;html</span> <span class="na">xmlns:IIS</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>IIS snap-in<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">language=</span><span class="s">"Javascript"</span> <span class="na">src=</span><span class="s">"iisAuthor.js"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"iisAuthor.css"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;meta</span>  <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"Conceptual information on the Internet Information Services snap-in utilities used to administer your server."</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;style </span><span class="na">title=</span><span class="s">"FPRevisionMarks"</span><span class="nt">&gt;</span>
+  <span class="o">&lt;!</span><span class="nt">--</span>
+  	<span class="nc">.FPRevisionDel</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">line-through</span><span class="p">;}</span>
+  	<span class="nc">.FPRevisionIns</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;}</span>
+  	<span class="nc">.FPRevisionDelHighlight</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span> <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">line-through</span><span class="p">;</span> <span class="nl">background</span><span class="p">:</span> <span class="no">black</span><span class="p">;}</span>
+  	<span class="nc">.FPRevisionInsHighlight</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span> <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span> <span class="nl">background</span><span class="p">:</span> <span class="no">black</span><span class="p">;}</span>
+  	<span class="nc">.FPRevisionImgDel</span> <span class="p">{</span><span class="nl">border</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">dashed</span> <span class="m">#FF0000</span><span class="p">;}</span>
+  	<span class="nc">.FPRevisionImgDelHighlight</span> <span class="p">{</span><span class="nl">border</span><span class="p">:</span> <span class="m">8px</span> <span class="nb">solid</span> <span class="m">#000000</span><span class="p">;}</span>
+  <span class="nt">--</span><span class="o">&gt;</span>
+  <span class="nt">&lt;/style&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">name=</span><span class="s">"Options"</span><span class="nt">&gt;</span>IIS Snap-in<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>The Internet Information
+  Services (IIS) snap-in for the Microsoft Management Console (MMC) is a graphical 
+  interface for configuring your Web, FTP, SMTP, or NNTP sites. You can configure 
+  IIS security, performance, and reliability featues. You can add or delete sites; 
+  start, stop, and pause sites; backup and restore server configurations; and 
+  create virtual directories for better managing content, to name only a few of 
+  the administrative capabilities.<span class="ni">&amp;#xa0;</span> In previous releases of IIS, this tool 
+  was called the Internet Service Manager. <span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;p&gt;&lt;b&gt;</span>To launch the IIS snap-in<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>From the <span class="nt">&lt;b&gt;</span>
+  Start<span class="nt">&lt;/b&gt;</span> menu, click <span class="nt">&lt;b&gt;</span>Programs<span class="nt">&lt;/b&gt;</span>, <span class="nt">&lt;b&gt;</span>Administrative Tools<span class="nt">&lt;/b&gt;</span>, and then 
+  <span class="nt">&lt;b&gt;</span>Internet Information Services<span class="nt">&lt;/b&gt;</span>. The IIS snap-in appears.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span> To launch the snap-in from the <span class="nt">&lt;b&gt;</span>Run<span class="nt">&lt;/b&gt;</span> dialog box:<span class="nt">&lt;/P&gt;</span>
+  <span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>From the <span class="nt">&lt;b&gt;</span>
+  Start<span class="nt">&lt;/b&gt;</span> menu, click <span class="nt">&lt;b&gt;</span>Run<span class="nt">&lt;/b&gt;</span>. The Run dialog box
+  appears.<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>In the <span class="nt">&lt;b&gt;</span>Open<span class="nt">&lt;/b&gt;</span> text
+  box, type <span class="nt">&lt;b&gt;</span>inetmgr<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"text-decoration: none"</span><span class="nt">&gt;</span>.<span class="nt">&lt;/span&gt;&lt;/b&gt;&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>Press ENTER. The IIS snap-in appears.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>You can also access IIS
+  from the Computer Management Window. Accessing IIS in this way does
+  not give you the range of administration options offered by the IIS
+  snap-in; however, it does offer quick access and limited management
+  options for your Web sites. <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Click <span class="nt">&lt;b&gt;</span>
+  Start<span class="nt">&lt;/b&gt;</span>, right-click <span class="nt">&lt;b&gt;</span>My Computer<span class="nt">&lt;/b&gt;</span>, and click
+  <span class="nt">&lt;b&gt;</span>Manage<span class="nt">&lt;/b&gt;</span> from the drop-down list. The <span class="nt">&lt;b&gt;</span>Computer
+  Management<span class="nt">&lt;/b&gt;</span> window appears.<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>In the left pane, expand
+  the <span class="nt">&lt;b&gt;</span>Services and Applications<span class="nt">&lt;/b&gt;</span> tree.<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>Click <span class="nt">&lt;b&gt;</span>Internet
+  Information Services<span class="nt">&lt;/b&gt;</span>. The names and states of your Web sites
+  appear in the right pane. Expand the <span class="nt">&lt;b&gt;</span>Internet Information Services<span class="nt">&lt;/b&gt;</span>
+  tree in the left pane and any subsequent Web site trees to see a
+  list of directories and virtual directories for that Web
+  page.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>For more information on using the IIS snap-in and administering IIS, see the 
+
+  <span class="nt">&lt;IIS:singlesource</span> <span class="na">class=</span><span class="s">"server"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"sa_serveradmin.htm"</span><span class="nt">&gt;</span>Server Administration Guide<span class="nt">&lt;/a&gt;&lt;/IIS:singlesource&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+Additional query words: iis, 5.1, online, documentation, xp
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117428: INFO: GetProcAddress(), Function Pointers, and C++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117428: INFO: GetProcAddress(), Function Pointers, and C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117428/","publisher":null,"image":null,"headline":"Q117428: INFO: GetProcAddress(), Function Pointers, and C++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117428-info-getprocaddress-function-pointers-and-c">Q117428: INFO: GetProcAddress(), Function Pointers, and C++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117428
+Product(s): Microsoft C Compiler
+Version(s): 1.0,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbLangCPP kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When porting code that uses GetProcAddress() from C to C++, the C++ compiler for
+MS-DOS can return the following error message:
+
+  error C2564: formal/actual parameters mismatch in call through pointer to
+  function
+
+The error message that is returned with the 32-bit compiler is:
+
+  error C2197: 'int (__stdcall *)(void )' : too many actual parameters
+
+MORE INFORMATION
+================
+
+In a traditional C application, use GetProcAddress() to obtain the address of a
+function to be called. Declare a variable of type FARPROC, initialize the
+pointer with the value returned from GetProcAddress(), and then call the
+function through a pointer as shown:
+
+  void func1(void)
+  {
+     HINSTANCE       hLib;
+     FARPROC         lpfnDLLProc;
+     UINT            param1 = 1;
+     int             param2;
+
+     hLib = LoadLibrary ("dll1.dll");
+     if (hLib)
+     {
+        lpfnDLLProc = GetProcAddress (hLib, "DLLProc");
+        (*lpfnDLLProc) (param1, (LPINT)&amp;param2);
+        FreeLibrary (hLib);
+     }
+  }
+
+When not compiling with STRICT, FARPROC is defined in the WINDOWS.H file as
+follows:
+
+  typedef int (CALLBACK* FARPROC)();
+
+When the sample code above is converted to C++, a type-mismatch error occurs
+because C and C++ have a fundamental difference in the way they interpret empty
+parentheses in function declarations. In C, a function declared as follows:
+
+  int (*funcptr)();
+
+declares a function that accepts an unknown number of arguments. In C++, the same
+declaration represents a function that accepts no arguments. In other words, in
+C++, the statement is equivalent to:
+
+  int (*funcptr)(void);
+
+Because of this difference, when a pointer of type FARPROC is used to call a
+function with parameters in C, no error occurs. In C++, when the function being
+passed to GetProcAddress() has parameters, the formal/actual-parameter-mismatch
+error occurs because the function of type FARPROC is defined as a function that
+has void parameters rather than as a function that accepts parameters.
+
+To eliminate the error, define the function pointer as a pointer to a function
+with the correct number of parameters and then typecast the return value from
+GetProcAddress() to the appropriate type:
+
+  typedef void (CALLBACK *ULPRET)(UINT,LPINT);
+
+  void func1(void)
+  {
+     HINSTANCE       hLib;
+     ULPRET          lpfnDLLProc;
+     UINT            param1 = 1;
+     int             param2;
+
+     hLib = LoadLibrary ("dll1.dll");
+     if (hLib)
+     {
+        lpfnDLLProc = (ULPRET) GetProcAddress (hLib,"DLLProc");
+        (*lpfnDLLProc) (param1, (LPINT)&amp;param2);
+        FreeLibrary (hLib);
+     }
+  }
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbLangCPP kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

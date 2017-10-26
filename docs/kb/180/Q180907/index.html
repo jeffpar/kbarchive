@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180907: XFOR: Unable to Send Bitmap in Body of Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180907: XFOR: Unable to Send Bitmap in Body of Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180907/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180907/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180907/","publisher":null,"image":null,"headline":"Q180907: XFOR: Unable to Send Bitmap in Body of Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180907-xfor-unable-to-send-bitmap-in-body-of-message">Q180907: XFOR: Unable to Send Bitmap in Body of Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180907
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 27-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message with a large bitmap in the body of the message from
+Exchange Server 5.5 to Lotus Notes 4.5, using the Exchange Notes Connector, when
+the message reaches the Notes user, the pasted bitmap is missing from the body
+of the message. In the Notes Inbox, the message shows a paper clip indicating an
+attachment, but the attachment is nowhere to be found.
+
+The following eight errors are logged in the Browse Log of the Exchange
+Connectivity Administrator:
+
+  Message Number: 31500
+  Message: Sender: Test User - Exchange, size 160152, Message ID: c=US; a=
+  ;p=Microsoft;l=PIANO-980115190234Z-410 1998/01/15 14:02:34 NOTES
+  Transform
+
+  Message Number: 41301
+  Message:  Notes returned code: 13b (hex)
+
+  Message Number 41300
+  Message: Notes Package ID: Operating System (OS); Extended Reason
+  String:
+  Memory allocation request exceeded 65,000 bytes.
+
+  Message Number: 41412
+  Message: Unable to create OLE2 object in Notes. Please verify version of
+  Notes Client used by NMC.  Downgrading object to OLE1.
+
+  Message Number 41301
+  Message: Notes returned code 109 (hex)
+
+  Message Number: 41300
+  Message: Notes Package ID: Operating System (OS); Extended Reason
+  String: File Truncated - file may have been damaged.
+
+  Message Number: 41360
+  Message: Error {Invalid syntax}; adding COMPOSITE BODY item to Notes
+  message failed.
+
+  Message Number 41360
+  Message: Error {Invalid syntax}; adding COMPOSITE BODY item to Notes
+  Message failed.
+
+CAUSE
+=====
+
+The problem is the result of a previous version of Lotus Notes API being exposed
+to a store OLE2 object that was less than 64 KB. If you attach small bitmaps in
+the body of the message, then you will not experience the problem.
+
+This problem is fixed in the Lotus Notes Client version 4.5.2 and later.
+
+
+WORKAROUND
+==========
+
+To work around this problem, upgrade the Lotus Notes client on the Exchange
+Connector server to version 4.5.2 or later. It is also recommended that you
+upgrade the workstation Notes client to version 4.5.2 or later.
+
+
+Additional query words: XFOR NOTES bitmap
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180415/","publisher":null,"image":null,"headline":"Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180415-sense-code-in-fmh-7-message-is-not-returned-to-appc-application">Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180415
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 14-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There may be certain cases where an APPC or CPI-C application does not receive
+an error message sent to it by a remote application or host. LU 6.2 errors are
+generally reported across an LU 6.2 session or conversation by FMH-7 messages.
+If the error being reported is an IBM Sense Code not defined in the FMH-7
+handling code that is part of the SNA Server APPC library, the error message
+will not be sent up to the application.
+
+In the reported instance of this problem, the host had sent an FMH-7 message to
+an application containing a sense code of X'0809'. SNA Server sent this FMH-7
+message to the client as shown here:
+
+  PVI   --------------------------------------------------------------
+  PVI   030242B2-&gt;181F0001 LU 6.2
+  PVI                      MSGID:RDAT   MSGTYP:FMH7
+  PVI
+  PVI   ---- Header  at address 01EF40A4, 1 elements ----
+  PVI   01070000 00000078 01020000 0100DC00     &lt;.......x........&gt;
+  PVI
+  PVI   ---- Element at address 01F73EDC, start 13, end 19 ----
+  PVI   07070809 097A80                         &lt;.....z.         &gt;
+
+Bytes 2 and 3 of the Element data are the bytes that contain the IBM sense code
+of X'0809'.
+
+NOTE: This message was captured in a SNA Server LU 6.2 message trace using the
+SNA Server Trace Program.
+
+The application had a RECEIVE_AND_WAIT call posted at this point. Normally, an
+error will be reported in the RECEIVE_AND_WAIT call. In this case, the
+RECEIVE_AND_WAIT never completed because the X'0809' sense code was never passed
+to the application by the APPC library.
+
+The visible symptoms of this problem may vary. If the application has a timeout,
+the application will eventually time out. If the application does not have a
+timeout, it may stop responding until it is stopped and restarted.
+
+CAUSE
+=====
+
+The FMH-7 handling code that is part of the SNA Server APPC library does not
+contain some of the more obscure IBM sense codes. If the APPC library receives
+an FMH-7 message containing one of these unrecognized sense codes, it never
+passes the error information to the application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11, 2.11
+SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, and 4.0.
+
+This problem was corrected in the latest SNA Server versions 3.0 and 4.0 U.S.
+Service Packs. For information on obtaining these Service Packs, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The fix updates the FMH-7 handling code of the APPC library to handle obscure
+sense codes by generating a protocol error that contains the sense code received
+in the FMH-7 message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

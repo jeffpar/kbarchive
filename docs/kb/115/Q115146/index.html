@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115146: WD97: &quot;Too Many Data Fields&quot; Managing Mail Merge in Source View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115146: WD97: &quot;Too Many Data Fields&quot; Managing Mail Merge in Source View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115146/","publisher":null,"image":null,"headline":"Q115146: WD97: &quot;Too Many Data Fields&quot; Managing Mail Merge in Source View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115146-wd97-too-many-data-fields-managing-mail-merge-in-source-view">Q115146: WD97: "Too Many Data Fields" Managing Mail Merge in Source View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115146
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In a mail merge main document, if you click the Edit Data Source button on the
+Mail Merge toolbar, click the View Source button, click the Manage Fields button
+on the Database toolbar, and then click OK, one of the following error messages
+may occur:
+
+  Record 1 contained too many data fields.
+
+  -or-
+
+  Record 1 contained too few data fields.
+
+These errors only occur if you switch to source view. They do not occur if you
+modify your data source in data form view.
+
+CAUSE
+=====
+
+This happens if you are using a separate header source. When you click the
+Manage Fields button on the Database toolbar, Word opens the data source file
+rather than the header source file and treats the first data row as the header
+row.
+
+Word stores any changes you make in the data source instead of the header source
+file. Then, when you click OK to close the Manage Fields dialog box, Word
+displays the "...too many data fields" error message.
+
+The same error message also occurs each time you open your data source; for
+example, it occurs when you click the View Merged Data button on the Mail Merge
+toolbar and switch from one record to another.
+
+NOTE: If you notice that the first record in your data source contains field
+names instead of data, you may have edited your data file in Source view, or you
+may not have a separate header source file attached after all.
+
+WORKAROUND
+==========
+
+NOTE: Once you receive the error message, the data file will not be usable
+unless you open the file and compare the number of columns to the number of
+columns in your data header file. More than likely, the number of columns in the
+data source will be greater than the number of columns in the header file. You
+will need to delete the columns from the data file that should not be there, and
+you will need to make sure that the column information matches up with the
+column information from the data header source. Otherwise, you will need to
+create a new data file.
+
+When you use a mail merge header source file, perform all your data management
+tasks in Data Form view, not in Source view. In other words, do not click the
+View Source button in the Data Form dialog box.
+
+If you want to manage your mail merge data source in Source view, you cannot use
+a separate header source file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the versions of Word listed at
+the beginning of this article.
+
+
+Additional query words: disappeared records switched gone
+
+======================================================================
+Keywords          : word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183906: BUG: Drag From FileListBox Includes Extra Backslash | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183906: BUG: Drag From FileListBox Includes Extra Backslash" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183906/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183906/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183906/","publisher":null,"image":null,"headline":"Q183906: BUG: Drag From FileListBox Includes Extra Backslash","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183906-bug-drag-from-filelistbox-includes-extra-backslash">Q183906: BUG: Drag From FileListBox Includes Extra Backslash</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183906
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCtrl kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport kbControl
+Last Modified: 27-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a file is dragged from the FileListBox control, and that file is located in
+the root directory, Visual Basic includes an extra backslash (\) in the file
+path. This may cause one of the following errors on Windows 95, Windows 98, or
+Windows Me:
+
+  Cannot copy file. File System Error (1026)
+
+-or-
+
+  Cannot copy &lt;filename&gt;. Cannot find the specified file. Make sure you
+  specify the correct path and filename.
+
+While no error occurs under Windows NT or Windows 2000, the erroneous backslash
+is still present.
+
+RESOLUTION
+==========
+
+As a workaround, add the following code to your form. The code will intercept
+the Drag operation and remove the extra backslash character. This code assumes
+that the name of the FileListBox is File1:
+
+        Private Sub File1_OLEStartDrag(Data As DataObject, _
+                                           AllowedEffects As Long)
+        Dim FileNames As New Collection
+        Dim vFn As Variant
+
+        'Retrieve current set of files from the file control
+        For Each vFn In Data.Files
+           FileNames.Add vFn
+        Next vFn
+
+        'Clear the list in the data object, and add the corrected files back
+        Data.Files.Clear
+        For Each vFn In FileNames
+           Data.Files.Add RemoveExtraBackslash(vFn)
+        Next vFn
+     End Sub
+
+     Private Function RemoveExtraBackslash(ByVal str$) As String
+        While True
+           Dim i%
+           i = InStr(str, "\\")
+           If i &gt; 0 Then
+              str = Left$(str, i - 1) &amp; Mid$(str, i + 1)
+           Else
+              RemoveExtraBackslash = str
+              Exit Function
+          End If
+        Wend
+     End Function
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a FileListBox and a DirListBox to Form1.
+
+3. Add the following code to Form1:
+
+        Private Sub Dir1_Change()
+           File1.Path = Dir1.Path
+        End Sub
+
+4. Change OLEDragMode property of the FileListBox to 1-Automatic.
+
+5. Start the program and change the path of the DirListBox to C:\.
+
+6. Start Windows Explorer.
+
+7. If you are running Windows 95, Windows 98, or Windows Me, drag one of the
+  files from the FileListBox to any directory in Windows Explorer. You should
+  see an error dialog as described earlier.
+
+8. Drag one of the files from the FileListBox to the Start...Run dialog window.
+  You should see the incorrect path with the extra backslash.
+
+9. Copy the workaround code from the RESOLUTION section into your project and
+  run it again. Drag one of the files from the FileListBox to the Start...Run
+  dialog window. You should see the correct path displayed.
+
+Additional query words: back slash listbox file list box
+
+======================================================================
+Keywords          : kbCtrl kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport kbControl 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

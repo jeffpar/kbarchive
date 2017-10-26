@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135266/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135266/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135266/","publisher":null,"image":null,"headline":"Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135266-prb-converting-2x-screen-does-not-allow-adjustable-pageframe">Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135266
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select the Functional Conversion option when converting a screen from an
+earlier version of FoxPro, and then add a PageFrame control to the converted
+form, you will see two pages and the PageCount property cannot be modified.
+
+CAUSE
+=====
+
+When you convert a screen from an earlier version of FoxPro, the converter
+dialog box appears asking if you would like to convert the screen via a
+Functional Conversion or a Visual Conversion. The Functional Conversion provides
+immediate FoxPro 2.x READ compatibility so you can use forms in Visual FoxPro
+without making a lot of manual changes to the converted screen. The Visual
+Conversion creates images of forms and all controls, but it copies the code from
+the original FoxPro 2.x screen to a .prg file. If you choose the Functional
+Conversion, the newly converted form will not allow the PageCount property of a
+PageFrame control to be modified when a PageFrame is added to the form.
+
+RESOLUTION
+==========
+
+To be able to modify the PageCount, you must set the Windowtype property to
+Modal or Modeless.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem Behavior
+-----------------------------------
+
+1. Convert a version 2.x screen, choosing the Functional Conversion option.
+
+2. Add a page frame to the newly converted form.
+
+3. Note that the PageCount property is in italics, which means it cannot be
+  changed.
+
+4. Change the Windowtype property of the form to Modal or Modeless.
+
+5. Note that the PageCount property of the page frame can now be changed.
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

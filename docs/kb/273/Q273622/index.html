@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273622/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273622/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273622/","publisher":null,"image":null,"headline":"Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273622-reader-error-message-stgopenstorage-failed-with-0x80030005">Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273622
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.5
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbimu
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Reader, version 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Reader, you may receive the following error message:
+
+  StgOpenStorage failed with 0x80030005
+
+  Access is Denied 0x80038005
+
+  Microsoft Reader cannot access the My Library directory. Please make sure that
+  you have read/write access to this folder.
+
+NOTE: You may receive this error message even if you attempt to open a LIT file
+to which you have write access.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+- You do not have write access to the My Library folder that is installed by
+  Microsoft Reader.
+
+- The My Library folder has become corrupted.
+
+RESOLUTION
+==========
+
+To resolve this issue, make sure that you have write access to the My Library
+folder.
+
+NOTE: If you use a Microsoft Windows NT 4.0-based computer, you need to log on to
+the computer with administrative rights or contact your system administrator.
+
+If the above steps do not work, perform the following steps to backup any .lit
+files, uninstall Reader, delete the My Library folder, and then reinstall
+Reader. You may need to back up any .lit files stored in your My Library folder,
+however do not backup the Litpath.lpt file.
+
+Backup .lit Files
+-----------------
+
+Backup .lit files. These files are stored in the My Library folder.
+
+1. Double-click My Computer.
+
+2. Right-click the My Library folder, and then click Copy on the menu that
+  appears.
+
+3. Close My Computer.
+
+4. Right-click the Desktop and then click Paste on the menu that appears.
+
+Uninstall Microsoft Reader
+--------------------------
+
+To uninstall Microsoft Reader:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Double-click Microsoft Reader.
+
+4. Follow the instructions on the screen to uninstall Microsoft Reader.
+
+Delete the My Library Folder
+----------------------------
+
+To delete the My Library folder:
+
+1. Double-click My Computer.
+
+2. Right-click the My Library folder, and then click Delete on the menu that
+  appears.
+
+3. Click Yes to delete this folder.
+
+Install Microsoft Reader
+------------------------
+
+Connect to the following Microsoft Web site to download and install Microsoft
+Reader:
+
+  http://www.microsoft.com/reader
+
+After you download the Microsoft Reader setup, double-click the file to install
+Microsoft Reader.
+
+Additional query words: msreader
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbReaderSearch kbReader150
+Version           : :1.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

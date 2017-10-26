@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135117/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135117/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135117/","publisher":null,"image":null,"headline":"Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135117-prb-unable-to-modify-tables-in-database-flagged-as-read-only">Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135117
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The tables in a database cannot be modified. Stored Procedures cannot be edited.
+Referential integrity cannot be accessed. Tables cannot be added or removed.
+Table indexes cannot be added or modified. In parentheses next to the name of
+the database it says "Read Only."
+
+CAUSE
+=====
+
+The database has been opened as SHARED not as EXCLUSIVE.
+
+RESOLUTION
+==========
+
+Use either of the following resolutions:
+
+- Use the CLOSE ALL command followed by SET EXCLUSIVE ON command. Then re-open
+  the database.
+
+-or-
+
+- Close the database. Then on the Tools menu, click Options. Click the Data
+  tab, and select the Open Exclusive check box. Then re-open the database.
+
+STATUS
+======
+
+This behavior is by design. The Help file information for MODIFY DATABASE states
+that a database must be opened exclusively before it can be modified. To open a
+database for exclusive use, include EXCLUSIVE in the OPEN DATABASE command, or
+select the Open Exclusive check box in the Data tab of the Options dialog box.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. On the Tools menu, click Options. Click the Data tab, and clear the Open
+  Exclusive check box.
+
+2. Open the Tastrade database in the Samples\Data directory.
+
+3. Notice that it says "Read Only" next to the name of the database. Also note
+  that most choices under the Database menu item are grayed out (unavailable).
+  If click a table using the right mouse button, you will also see that the
+  Delete and Modify choices are grayed out (unavailable) as well.
+
+Additional query words: 3.00 VFoxWin dbc environment
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

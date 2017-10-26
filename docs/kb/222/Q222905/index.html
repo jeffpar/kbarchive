@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222905: HOWTO: Display a Context Menu for CTreeCtrl | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222905: HOWTO: Display a Context Menu for CTreeCtrl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222905/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222905/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222905/","publisher":null,"image":null,"headline":"Q222905: HOWTO: Display a Context Menu for CTreeCtrl","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222905-howto-display-a-context-menu-for-ctreectrl">Q222905: HOWTO: Display a Context Menu for CTreeCtrl</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222905
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbCtrl kbMenu kbMFC kbTreeView KbUIDesign kbVC kbGrpDSMFCATL
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to display a context menu for a tree control in MFC.
+
+MORE INFORMATION
+================
+
+On Windows platforms, the windowing subsystem encourages the developer to handle
+context menu requests in top level windows. The traditional Windows programming
+paradigm therefore concentrates the code for handling all of the context menu
+requests in a few window and dialog procedures. However, with the advent of
+object oriented programming a different solution can be embraced; that is to
+handle the WM_CONTEXTMENU message within the control itself thereby creating
+self-contained entities and objects. This method allows reuse of the control in
+more than just one parent window and dialog.
+
+In the case of a tree view control, the drag-and-drop functionality that it
+embeds requires that special steps be taken in order to obtain independence from
+the containing window. After the tree view control receives a WM_RBUTTONDOWN
+message, messages are not forwarded by the control until a WM_RBUTTONUP message
+is received. The control decides if a drag-and-drop operation was or was not
+initiated.
+
+- If the user did initiate a drag-and-drop operation, then USER32 generates a
+  WM_CONTEXTMENU message and sends it to the tree view control. If the tree
+  view control does not handle this message then the default window procedure
+  forwards it to the control's parent window.
+
+- If the user did not initiate a drag-and-drop operation then the control's
+  window procedure sends a WM_NOTIFY (code NM_RCLICK) message and then a
+  WM_CONTEXTMENU message to the parent window.
+
+Consequently, consider the following three cases:
+
+- When SHIFT+F10 is pressed and the control has the focus, a WM_CONTEXTMENU
+  message is sent to the tree view control.
+
+- When the user performs a drag-and-drop operation a WM_CONTEXTMENU message is
+  sent to the tree view control.
+
+- When the user right-clicks, a WM_NOTIFY (code NM_RCLICK) message is sent by
+  the tree control to the control's parent. If you handle the reflected
+  notification as shown below, the control displays the context menu in all
+  situations.
+
+To implement a context menu for a tree view control it is recommended that
+message handlers for both the WM_CONTEXTMENU and reflected WM_NOTIFY (NM_RCLICK)
+messages be implemented by the control. For example:
+
+  BEGIN_MESSAGE_MAP(CMyTreeCtrl, CTreeCtrl)
+  	//{{AFX_MSG_MAP(CMyTreeCtrl)
+  	ON_NOTIFY_REFLECT(NM_RCLICK, OnRClick)
+  	ON_WM_CONTEXTMENU()
+  	//}}AFX_MSG_MAP
+  END_MESSAGE_MAP()
+
+  void CMyTreeCtrl::OnRClick(NMHDR* pNMHDR, LRESULT* pResult) 
+  {
+  	TRACE0("CMyTreeCtrl::OnRClick()\n");
+  	// Send WM_CONTEXTMENU to self
+  	SendMessage(WM_CONTEXTMENU, (WPARAM) m_hWnd, GetMessagePos());
+  	// Mark message as handled and suppress default handling
+  	*pResult = 1;
+  }
+
+  void CMyTreeCtrl::OnContextMenu(CWnd* pWnd, CPoint ptMousePos) 
+  {
+  	// if Shift-F10
+  	if (ptMousePos.x == -1 &amp;&amp; ptMousePos.y == -1)
+  		ptMousePos = (CPoint) GetMessagePos();
+
+  	ScreenToClient(&amp;ptMousePos);
+
+  	UINT uFlags;
+  	HTREEITEM htItem;
+  	
+  	htItem = HitTest( ptMousePos, &amp;uFlags );
+
+  	if( htItem == NULL )
+  		return;
+  	
+  	m_hActiveItem = htItem;
+
+  	CMenu menu;
+  	CMenu* pPopup;
+
+  	// the font popup is stored in a resource
+  	menu.LoadMenu(IDR_TREEITEM_CONTEXTMENU);
+  	pPopup = menu.GetSubMenu(0);
+  	ClientToScreen(&amp;ptMousePos);
+  	pPopup-&gt;TrackPopupMenu( TPM_LEFTALIGN, ptMousePos.x, ptMousePos.y, this );
+  }
+
+Additional query words: CTreeView popup menu context
+
+======================================================================
+Keywords          : kbCmnCtrls kbCtrl kbMenu kbMFC kbTreeView KbUIDesign kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

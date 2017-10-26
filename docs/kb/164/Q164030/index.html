@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164030: WD97: Define and Lookup Reference Unavailable in Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164030: WD97: Define and Lookup Reference Unavailable in Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164030/","publisher":null,"image":null,"headline":"Q164030: WD97: Define and Lookup Reference Unavailable in Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164030-wd97-define-and-lookup-reference-unavailable-in-word">Q164030: WD97: Define and Lookup Reference Unavailable in Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164030
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop kbsetup word97
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Define and Lookup Reference menu commands are not available in Word 97 after you
+run Setup to add Microsoft Bookshelf Basics.
+
+NOTE: Define should be located on the shortcut menu when you right-click a word,
+while "Look Up Reference" should be located on the Tools menu.
+
+CAUSE
+=====
+
+Microsoft Word 97 for Windows may not detect the Bsh32.wll when Microsoft
+Bookshelf Basics is installed during maintenance mode Setup.
+
+WORKAROUND
+==========
+
+Rename the Office 97 Setup Table File (.stf) (Off97pro.stf) and then reinstall
+Microsoft Office 97. The .stf file should be located in the following folder:
+
+  C:\Program Files\Microsoft Office\Office\Setup
+
+NOTE: When you run the Office 97 Setup, be sure to click the Custom button when
+prompted for the type of Setup you want to perform. Then, ensure that Microsoft
+Bookshelf Basics is selected.
+
+WARNING: This modification may not be supported by Microsoft. Microsoft support
+professionals will support some modifications to a BACKUP copy of the .stf file.
+Note also that while support professionals may help customers modify specific
+lines of an .stf, we will not rewrite the entire file in order to achieve a
+desired configuration. As a general rule, support is limited to options that can
+normally be changed by a user during a standard installation of the
+application.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Bsh32.wll is the file that gives Word the ability to function seamlessly with
+Microsoft Bookshelf Basics by adding the Define and Lookup Reference menu
+commands. It is and is located in the "\Program Files\Microsoft Office\Office"
+folder.
+
+Additional query words: 8.0 off97 missing
+
+======================================================================
+Keywords          : kbinterop kbsetup word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

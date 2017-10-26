@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195686: Explanation of ICMP Redirect Behavior | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195686: Explanation of ICMP Redirect Behavior" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195686/","publisher":null,"image":null,"headline":"Q195686: Explanation of ICMP Redirect Behavior","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195686-explanation-of-icmp-redirect-behavior">Q195686: Explanation of ICMP Redirect Behavior</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195686
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The assumption on IP internetworks is that the IP hosts (nonrouters) only need
+minimal routing information and can rely on IP routers having knowledge of the
+topology of the internetwork and all of the best routes. Therefore, IP hosts are
+typically only configured with an IP address of a default router (also called a
+default gateway). Any remote traffic from the IP host is forwarded to the
+default IP router. While this makes it easier to configure the IP hosts, in IP
+internetworks where there are multiple routers on a given network, the behavior
+of sending all remote traffic to the same router can produce non-optimal host
+routing. To prevent the perpetuation of non-optimal host routing, IP routers can
+update the routing tables of hosts using an ICMP Redirect message.
+
+MORE INFORMATION
+================
+
+The ICMP Redirect message is only sent in the following situation:
+
+1. Host A is sending a packet to Host B. Host A's default IP router is router
+  R1. Because Host B is a remote host, Host A forwards the packet destined for
+  Host B to its default router R1.
+
+2. R1 checks its routing table and finds that the next hop for the route to the
+  network for Host B is router R2.
+
+3. If Host A and R2 are on the same network that is also directly attached to
+  R1, an ICMP Redirect message is sent to Host A informing it that R2 is the
+  better route when sending to Host B.
+
+4. Router R1 then forwards the IP datagram to R2.
+
+5. Host A adds a host route to its routing table for Host B's IP address with
+  router R2's IP address as the forwarding address. Subsequent datagrams from
+  Host A to Host B are forwarded by means of router R2.
+
+An ICMP Redirect message is not sent for IP datagrams with IP source route
+options even if there is a better route to the ultimate destination than the
+next address in the source route.
+
+In the ICMP Redirect message:
+
+  Type - Set to 5.
+  Code - Set to 0 - 3 (details below).
+
+Router IP Address - The IP address of the router corresponding to the better
+route as determined by the router originally sent the IP datagram. The sending
+host uses this information to update its routing table to include this new
+route.
+
+IP Header and First 64 Bits of Original IP Payload - To identify the forwarded
+packet for the source, the IP header and 64 bits of the IP payload are
+encapsulated and sent back to the source. Included in the encapsulated IP header
+is the IP Identification field uniquely identifying a specific IP packet as sent
+by the source and the destination IP address. Between the destination IP address
+stored here and the router IP address field in the ICMP header, a routing table
+entry is made.
+
+Code Value  Meaning
+----------  -------
+
+0           Redirected datagrams for the network (obsolete).
+1           Redirected datagrams for the host.
+2           Redirected datagrams for the Type of Service and the network.
+3           Redirected datagrams for the Type of Service and the host.
+
+Windows NT Specifics:
+
+A host route learned by means of an ICMP Redirect will be added to the route
+table for 10 minutes, after which time it is removed and must be relearned
+through another ICMP Redirect.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192824/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192824/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192824/","publisher":null,"image":null,"headline":"Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192824-sms-winnt-clients-not-supported-under-netware-logon-servers">Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192824
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbsetup kbConfig smssetup smsconfig
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server version 1.2, Windows NT clients must report by
+means of Windows NT logon servers. Windows NT-based clients depend on Windows NT
+logon servers to receive the Windows NT and Systems Management Server client
+component services.
+
+MORE INFORMATION
+================
+
+Windows NT logon servers have the SMS_CLIENT_CONFIG_MANAGER service installed.
+This service is responsible for remotely installing and configuring the Windows
+NT client-side services on Systems Management Server client computers running
+Windows NT. The SMS_CLIENT_CONFIG_MANAGER service on each Windows NT logon
+server writes a log of this activity to the SMS\Logs\Clicfg.log file on the
+Windows NT logon server.
+
+Because Novell NetWare is not service-based, this service cannot be installed on
+logon servers running Novell NetWare. Therefore, NetWare logon servers cannot
+properly configure Windows NT clients for Systems Management Server operation.
+
+For more information on Windows NT client installation, see chapter 3 of the SMS
+Resource Guide, Back Office Resource Kit Part I page, 98-100.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+REFERENCES
+==========
+
+For additional information, see the following:
+
+- SMS Getting Started book P. 197
+
+- SMS Resource Guide, Back Office Resource Kit Part I, page 98-100
+
+
+Additional query words: prodsms bindery NDS smsls novel
+
+======================================================================
+Keywords          : kbsetup kbConfig smssetup smsconfig 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

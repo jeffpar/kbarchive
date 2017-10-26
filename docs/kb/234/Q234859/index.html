@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234859/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234859/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234859/","publisher":null,"image":null,"headline":"Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234859-prb-windows-desktop-update-is-required-for-product-resiliency">Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234859
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:95; winnt:4.0
+Operating System(s): 
+Keyword(s): kbAppSetup kbide kbMSI kbFAQ kbGrpDSTools kbvc600faq
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Windows Installer-based applications, the shortcuts that populate the
+Start menu display the Missing Shortcut dialog box with the "searching
+flashlight," and fail to find the target path of the shortcut.
+
+CAUSE
+=====
+
+This problem can occur in situations where the application is damaged, or when
+the application is assigned in the Active Directory and the user attempts to
+start the application by using the shortcut. The Windows Installer is attempting
+to repair the installation or install new features.
+
+This problem occurs because the shell update in Internet Explorer 4.01 or higher
+is necessary to allow the Windows Installer to create the correct shortcut to
+enable the Windows Installer to perform application repair and assignments for
+the application's features.
+
+RESOLUTION
+==========
+
+Verify that the Shell32.dll version is 4.72.3110 or greater. Shell32.dll is
+found in the %systemroot%\System32 folder. Right-click the file and click
+Properties, and then click the Version tab. The version entry should be viewable
+on the File version: line.
+
+If the version number is less than 4.72.3110, install the Windows Desktop Update
+that ships with Internet Explorer 4.01 Service Pack 1 (SP1).
+
+STATUS
+======
+
+This is by design of the Windows Installer and the Windows Desktop Update.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbide kbMSI kbFAQ kbGrpDSTools kbvc600faq 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

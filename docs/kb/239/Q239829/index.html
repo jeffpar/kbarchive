@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239829: How to Automate Uninstalling the DLC Protocol | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239829: How to Automate Uninstalling the DLC Protocol" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239829/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239829/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239829/","publisher":null,"image":null,"headline":"Q239829: How to Automate Uninstalling the DLC Protocol","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239829-how-to-automate-uninstalling-the-dlc-protocol">Q239829: How to Automate Uninstalling the DLC Protocol</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239829
+Product(s): Microsoft Windows NT
+Version(s): NT:4.0,4.5
+Operating System(s): 
+Keyword(s): kbenv kbsetup
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server versions 4.0, 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can uninstall the data link control (DLC) protocol only by using the
+graphical user interface (GUI). This method is not efficient or flexible if you
+want to uninstall the DLC protocol on many computers. However, you can automate
+the uninstallation using the Setup.exe file located in the %SystemRoot%\System32
+folder.
+
+MORE INFORMATION
+================
+
+To uninstall the DLC protocol, you must first uninstall the protocol and then
+update the bindings using the following steps:
+
+1. Create a batch or script file and give it a name (for example, Unistdlc.bat).
+
+2. Make sure the Oemnxpdl.inf file is available in the %SystemRoot%\System32
+  folder.
+
+3. Type the following commands into the batch file:
+
+  cd %SystemRoot%
+  setup.exe /f /i%SystemRoot%\system32\ncpashel.inf /t NTN_InstallMode =
+  deinstall /t NTN_Origination = deinstall /t NTN_Infname =
+  %SystemRoot%\system32\oemnxpdl.inf /t NTN_SRCPATH = %SystemRoot%\system32 /T
+  NTN_Infoption = DLC
+
+NOTE: The command line that begins with "Setup.exe" must be on one line without a
+carriage return (CR) or line feed (LF). It is wrapped in this article for
+readability purposes.
+
+4. Save and close the batch file.
+
+5. Run the batch file to uninstall the DLC protocol.
+
+6. Update the bindings by running the Runncpa.exe tool from Microsoft BackOffice
+  SNA Server at a command prompt.
+
+
+7. Restart your computer.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400 kbBackOfficeServ450
+Version           : NT:4.0,4.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

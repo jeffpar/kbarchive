@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186516: Terminal Server Commands: FLATTEMP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186516: Terminal Server Commands: FLATTEMP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186516/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186516/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186516/","publisher":null,"image":null,"headline":"Q186516: Terminal Server Commands: FLATTEMP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186516-terminal-server-commands-flattemp">Q186516: Terminal Server Commands: FLATTEMP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186516
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FLATTEMP enables or disables flat temporary directories.
+
+NOTE: When you enable this utility, it changes the permissions on the TEMP
+directory to:
+
+Logged on user FC
+Administrator FC
+System FC
+
+No other accounts will be in the ACL and the "Everyone" and "Creator/Owner"
+groups are removed. All users will need to modify their environment variables,
+for TEMP and TMP, to point to their home directory. If users do not change their
+variables, they will not have access to the TEMP directory.
+
+Syntax
+------
+
+flattemp [/query] [/enable] [/disable] [/?]
+
+Parameters
+----------
+
+none
+
+/query
+
+  Queries the current setting.
+
+/enable
+
+  Enables flat temporary directories.
+
+/disable
+
+  Disables flat temporary directories.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Security Restrictions
+---------------------
+
+Only administrators can run flattemp.
+
+FLATTEMP -- Additional Notes
+----------------------------
+
+The default method of creating temporary directories for multiple users (usually
+pointed to by the TEMP and TMP environment variables) is to create
+subdirectories in the TEMP directory, using the logon ID as the subdirectory
+name. For example, if the TEMP environment variable points to the directory
+C:\TEMP, the temporary directory assigned to the user logon ID 4 is C:\TEMP\4.
+
+Use the flattemp command to prevent subdirectories from being created and to
+point directly to the TEMP directory. This is useful when you want the users'
+temporary directories to be contained in their home directories, whether on a
+Terminal Server's local drive or on a network share drive. You should use this
+command only when each user has a unique home directory.
+
+To configure a unique home directory for each user, follow these steps:
+
+1. Log on as the user.
+
+2. Start the System application in Control Panel.
+
+3. Set the user's environment variables, TEMP and TMP, to a TEMP directory in
+  the user's home directory; for example, X:\Users\Bobw\Temp.
+
+After each user has a unique TEMP directory, use flattemp /enable to enable flat
+temporary directories.
+
+WARNING: You may encounter application errors if the user's temporary directory
+is on a network drive. This happens when the network share momentarily becomes
+inaccessible over the network. No disk corruption happens, but because the
+application's temporary files are either inaccessible or out of synchronization,
+the application responds as if the disk has crashed. Therefore, moving the
+temporary directory to a network drive is not recommended. The default is to
+keep the temporary directories on the local hard disk. If you experience strange
+behavior or disk corruption errors with certain applications, stabilize your
+network or move the temporary directories back to the local hard disk.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

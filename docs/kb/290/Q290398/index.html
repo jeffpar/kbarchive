@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q290398: PRB: Access Denied When You Try to Start DCOM Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q290398: PRB: Access Denied When You Try to Start DCOM Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/290/Q290398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/290/Q290398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/290/Q290398/","publisher":null,"image":null,"headline":"Q290398: PRB: Access Denied When You Try to Start DCOM Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q290398-prb-access-denied-when-you-try-to-start-dcom-server">Q290398: PRB: Access Denied When You Try to Start DCOM Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q290398
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbDCOM kbDebug kbGrpDSASP kbDSupport kbiis400 kbiis500
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One of the following events appear in the System log on a server that is running
+Internet Information Server (IIS):
+
+  Event Type: Error
+  Event Source: DCOM
+  Event Category: None
+  Event ID: 10002
+  Date: 2/22/2001
+  Time: 2:11:52 PM
+  User: &lt;ComputerName&gt;\IWAM_&lt;ComputerName&gt;
+  Computer: &lt;ComputerName&gt;
+  Description: Access denied attempting to launch a DCOM Server. The server is:
+  {0C0A3666-30C9-11D0-8F20-00805F2CD064} The user is
+  IWAM_&lt;ComputerName&gt;/&lt;ComputerName&gt;
+
+  -or-
+
+  Event Type: Error
+  Event Source: DCOM
+  Event Category: None
+  Event ID: 10003
+  Date: 2/22/2001
+  Time: 2:56:32 PM
+  User: &lt;ComputerName&gt;\IWAM_&lt;ComputerName&gt;
+  Computer: &lt;ComputerName&gt;
+  Description: Access denied attempting to launch a DCOM Server using
+  DefaultLaunchPermssion. The server is: {0C0A3666-30C9-11D0-8F20-00805F2CD064}
+  The user is IWAM_&lt;ComputerName&gt;/&lt;ComputerName&gt;
+
+CAUSE
+=====
+
+The Distributed Component Object Model (DCOM) server that is failing to launch
+is Machine Debug Manager (0C0A3666-30C9-11D0-8F20-00805F2CD064). This occurs
+because Machine Debug Manager lacks sufficient DCOM permissions.
+
+By default, Machine Debug Manager is not set up to use custom DCOM permissions;
+thus, it uses the default, computer-level DCOM permissions. For security
+reasons, the default DCOM permissions are tight. Blank access permissions mean
+that only the system and the identity of the client that is same as the server
+can access DCOM server. If the client's identity differs from the server's, the
+client receives the "Access denied" error.
+
+RESOLUTION
+==========
+
+
+To resolve this problem, follow these steps:
+
+1. At a command prompt, type the following command to open Distributed COM
+  Configuration Properties:
+
+  "dcomcnfg.exe" (without the quotation marks)
+
+2. On the Applications tab, in the list of DCOM servers, browse to the Machine
+  Debug Manager entry. If this entry does not exist, type the following command
+  at a command prompt to add the entry:
+
+  "mdm.exe /regserver" (without the quotation marks)
+
+3. Re-open Distributed COM Configuration Properties, click Machine Debug
+  Manager, and then click Properties.
+
+4. On the Security tab, click "Use custom access permissions", and then click
+  Edit.
+
+5. Add the appropriate users to the access permissions for Machine Debug
+  Manager. Microsoft recommends that you allow access permissions for at least
+  the following users:
+
+  Interactive
+  System
+  Administrators
+  IWAM_&lt;ComputerName&gt;
+
+  Click OK twice to return to the Security tab.
+
+6. On the Security tab, click "Use custom launch permissions", and then click
+  Edit.
+
+7. Add the appropriate users to the launch permissions for Machine Debug
+  Manager. Microsoft recommends that you allow launch permissions for at least
+  the following users:
+
+  Interactive
+  System
+  Administrators
+  IWAM_&lt;ComputerName&gt;
+
+  Click OK twice to return to the Security tab.
+
+8. On the Identity tab, click The interactive user to set the user account
+  identity of Machine Debug Manager. If no one will be logged onto the
+  computer, click This user, and then type the user name and password of a user
+  in the Administrators group.
+
+9. Close all instances of Mdm.exe, or restart your computer, so that these
+  changes take effect.
+
+MORE INFORMATION
+================
+
+Internet Information Server and Microsoft Visual Studio use Machine Debug
+Manager (Mdm.exe) to provide application debugging. Machine Debug Manager is
+initialized whenever IIS is started.
+
+When IIS is running in-process (Inetinfo.exe), the System account starts and
+accesses Machine Debug Manager. In addition, the System account allows the
+operating system components, such as RPC Endpoint Mapper (RPCSS), access to the
+DCOM server.
+
+When IIS is running out-of-process (Mtx.exe or Dllhost.exe), typically the
+IWAM_&lt;ComputerName&gt; account starts and accesses Machine Debug Manager.
+
+REFERENCES
+==========
+
+For additional information about using the Distributed COM Configuration
+Properties utility, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+  Q176799 INFO: Using DCOM Config (DCOMCNFG.EXE) on Windows NT
+
+  Q246054 INFO: DCOMCNFG and AppID\.exe Mapping and Implications
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbDCOM kbDebug kbGrpDSASP kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

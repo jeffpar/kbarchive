@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180437/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180437/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180437/","publisher":null,"image":null,"headline":"Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180437-bug-text-is-aligned-too-far-left-and-up-in-textbox">Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180437
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp kbVBp500 kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB
+Last Modified: 21-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+- Microsoft Windows CE Toolkit for Visual Basic 5.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Text is aligned too close to the upper-left edge of a TextBox control if the
+TextBox Appearance property is set to "1 - 3D." When the TextBox receives the
+focus, the cursor overwrites the upper-left TextBox border, leaving a white
+space when the TextBox loses focus.
+
+NOTE: This occurs only in the emulation environment and not on the Handheld PC
+device.
+
+RESOLUTION
+==========
+
+To avoid losing a portion of the border after the TextBox has lost focus, put
+the following code in the LostFocus event of the TextBox to refresh the
+TextBox:
+
+  Text1.Refresh
+
+Although this does not solve the minor problem of the text being too close to the
+edges, it does solve the cosmetic problem caused by the cursor erasing the
+border.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE (HPC) Project in Visual Basic. Form1 is created by
+  default.
+
+2. Add two TextBoxes to Form1 and ensure that the Appearance property of each is
+  set to "1 - 3D."
+
+3. Leave the default text in the TextBoxes.
+
+4. Press the F5 key to run the project.
+
+5. Tab between the two TextBoxes and note that when the cursor is in a TextBox,
+  it covers part of the black border. After exiting the TextBox, that part of
+  the border has been erased.
+
+Additional query words: wince vbce vbce5 vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp kbVBp500 kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB500
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100991: Microsoft SoundBits Browser Does Not Show Collections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100991: Microsoft SoundBits Browser Does Not Show Collections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100991/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100991/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100991/","publisher":null,"image":null,"headline":"Q100991: Microsoft SoundBits Browser Does Not Show Collections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100991-microsoft-soundbits-browser-does-not-show-collections">Q100991: Microsoft SoundBits Browser Does Not Show Collections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100991
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0; MACINTOSH:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Sound Bits (Hanna-Barbara) version 1.0 
+- Microsoft Sound Bits (Movie Clips) version 1.0 
+- Microsoft SoundBits, Musical Instruments, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SoundBits Browser will not show any of the installed collections if
+the MBROWSER.INI file is either missing or corrupt.
+
+MORE INFORMATION
+================
+
+Reinstalling SoundBits usually corrects this problem. However if the problem
+continues, the MBROWSER.INI file can be manually reconstructed. In the following
+example of the file, all three collections are installed; however, any one of
+the three lines under [Collections] can be removed, depending on which
+collection(s) you do not have.
+
+Note there should be only three lines under [Collections]; however, due to the
+length of the lines, they are wrapped in this article.
+
+MBROWSER.INI FILE
+-----------------
+
+[Collections]
+MUSIC.MBR=MICROSOFT,C:\WINDOWS\SNDBITS\MUSIC\MUSIC.MBR,MUSIC.DIB, "SoundBits:
+Musical Sounds","Musical Sounds Disk 1"
+MOVIES.MBR=MICROSOFT,C:\WINDOWS\SNDBITS\MOVIES\MOVIES.MBR,MOVIES.DIB, "SoundBits:
+Hollywood Movies","SoundBits Hollywood Movies Disk"
+HB.MBR=MICROSOFT,C:\WINDOWS\SNDBITS\HB\HB.MBR,HB.DIB,
+"SoundBits:Hanna-Barbera","Hanna-Barbera Disk 1"
+
+[MBROWSER]
+DefaultSrc=MOVIES.MBR
+
+Additional query words: Sound bits multi media multimedia multi- blank empty HB movie 1.00
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbZNotKeyword kbSoundBitsSearch kbSoundBits
+Version           : :1.0; MACINTOSH:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35143: Using GOSUB, GOTO, ON Event GOSUB, ON ERROR GOTO in Modules | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35143: Using GOSUB, GOTO, ON Event GOSUB, ON ERROR GOTO in Modules" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35143/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35143/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35143/","publisher":null,"image":null,"headline":"Q35143: Using GOSUB, GOTO, ON Event GOSUB, ON ERROR GOTO in Modules","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35143-using-gosub-goto-on-event-gosub-on-error-goto-in-modules">Q35143: Using GOSUB, GOTO, ON Event GOSUB, ON ERROR GOTO in Modules</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35143
+Product(s): See article
+Version(s): Ox2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 16-DEC-1989
+
+A normal GOSUB Label or GOTO Label statement must be at the same level
+of code as the label. For example, if a GOSUB Label statement occurs
+inside a SUB...END SUB (or FUNCTION...END FUNCTION) procedure block,
+the label must also occur within that block.
+
+This information applies to Microsoft QuickBASIC Versions 4.00 4.00b
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
+for MS-DOS and MS OS/2.
+
+Only the BASIC compiler 7.00 has an enhanced form of local error
+trapping in which the label may be local to the current SUB or
+FUNCTION, as the following example shows:
+
+SUB SUB1
+     ON LOCAL ERROR GOTO errorhandler
+
+EXIT SUB
+errorhandler:
+     RESUME NEXT
+END SUB
+
+However, the following statements must have their labels at the module
+level:
+
+   ON ERROR GOTO Label
+   ON Event GOSUB Label (where "Event" may be COM, KEY, PEN, PLAY,
+                        STRIG, or TIMER)
+
+The "module level" is defined as the area in a source file that is
+outside all subprogram or FUNCTION procedure blocks.
+
+Once the ON Event GOSUB Label and Event ON statements are executed,
+event trapping continues until an Event OFF is executed (where "Event"
+may be COM, KEY, PEN, PLAY, STRIG, or TIMER).
+
+In QuickBASIC Versions 2.00, 2.01, 3.00, and 4.00, the ON ERROR GOTO
+Label statement must be established for each module; otherwise, an
+error occurring in that module will not be trapped, and the program
+will stop.
+
+In contrast to earlier versions, QuickBASIC Versions 4.00b and 4.50
+and Microsoft BASIC Compiler Versions 6.00, 6.00b, and 7.00 for MS-DOS
+and MS OS/2 offer global handling of ON ERROR (as explained in the
+UPDATE.DOC disk file). With global error-handling, an ON ERROR handler
+in the main program handles errors occurring in separate modules when
+those modules do not have their own ON ERROR handlers.
+
+For related information query on the following words:
+
+   subprogram and module and error and resume and QuickBASIC
+
+The following is a code example:
+
+' MODULE 1
+DECLARE SUB mod2sub2 ()
+DECLARE SUB mod1sub1 ()
+DECLARE SUB mod2sub1 ()
+ON ERROR GOTO errhand1  ' Sets first error handler in main module
+KEY 15, CHR$(0) + CHR$(1)  ' Sets up trapping of ESCAPE key.
+KEY(15) ON                 ' Turns on trapping of ESCAPE key.
+ON KEY(15) GOSUB lower     ' "lower" label is at module level
+PRINT "in main"
+GOSUB lower    ' You may GOSUB or GOTO a label in this module
+               ' only at the level of the main module.
+CALL mod1sub1
+CALL mod2sub1  ' Establishes an error handler for mod2
+CALL mod2sub2
+ERROR 3
+END
+lower:
+  PRINT "This gosub/label can be reached";
+  PRINT " only from main level mod1 or"
+  PRINT "by pressing the ESCAPE key the";
+  PRINT " first time in mod2 sub1": PRINT
+  RETURN
+errhand1:
+  PRINT "take care of error on main level mod 1": PRINT
+  RESUME NEXT
+SUB mod1sub1
+    GOSUB localLabel  ' localLabel must be local to the subroutine
+    GOTO done:
+  localLabel:
+    PRINT "I am here in mod1 sub1 simulating error in mod1 subprog1"
+    ERROR 1    'this error is handled ok
+    RETURN
+  done:
+END SUB
+
+' MODULE 2
+mod2: PRINT "this does not get activated/ mod2 main "
+mod2main:
+  PRINT "simulating error in nextmod mod2 main called from subprog2"
+  ERROR 1
+  RETURN
+errhand2:
+  PRINT " took care of the error in mod2 top level":PRINT
+  RESUME NEXT
+SUB mod2sub1
+   ON ERROR GOTO errhand2
+'  Must get new direction once per module in
+'  QuickBASIC 3 AND 4. However, in QuickBASIC
+'  4.00b and BASIC Compiler 6.00, errhand1 will still trap the error
+'  but RESUME NEXT resumes at the END SUB.
+   PRINT "simulating an error "
+   ERROR 1
+   PRINT "press escape"    ' ESCAPE here causes jump
+   FOR i = 1 TO 10000: NEXT ' to routine defined in main
+   ON KEY(15) GOSUB mod2main ' but after this
+   PRINT "press escape again" ' ESCAPE now causes jump
+   FOR i = 1 TO 10000: NEXT    ' to nextmod
+END SUB
+SUB mod2sub2
+   ERROR 2  'this is ok if mod2sub1 is called first
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

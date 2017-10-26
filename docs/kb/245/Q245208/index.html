@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245208: Problem with added SMTP service through Add/Remove | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245208: Problem with added SMTP service through Add/Remove" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245208/","publisher":null,"image":null,"headline":"Q245208: Problem with added SMTP service through Add/Remove","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245208-problem-with-added-smtp-service-through-addremove">Q245208: Problem with added SMTP service through Add/Remove</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245208
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you add the Microsoft SMTP service through Add/Remove Programs after you
+install the Windows NT Option Pack (NTOP), the SMTP service may not work
+immediately, if the initial NTOP installation was on a non-default path. The
+following error message may occur in the event log:
+
+  Event ID 7000 Source: Service Control manager. "Microsoft SMTP service.
+  Service failed to start due to the following error: the system cannot find
+  the file specified
+
+CAUSE
+=====
+
+Although the NTOP was installed to a customer selected non-default path, the
+SMTP service is still installed to the default location for Inetinfo
+(Winnt\System32\Inetsrv), which causes the problems to occur. For example, if
+IIS is installed in Inetsrv directory instead of the Winnt\System32\Ineterv
+directory , Add/Remove Programs still attempts to put the SMTP service in to the
+Winnt\System32\Inetsrv directory instead of the current location of
+Inetinfo.exe.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Verify which folder is the current working directory for IIS by searching for
+  Inetinfo.exe (for example: d:\inetsrv).
+
+2. Copy the following SMTP related DLLs from the Winnt\System32\Inetsrv
+  directory to the location where Inetinfo.exe is currently located:
+
+  Jpudll.dll
+  Mboxapi.dll
+  Seo.dll
+  Seos.dll
+  Smtpadm.dll
+  Smtpkey.dll
+  Smtpread.txt
+  Smtpsnap.dll
+  Smtpsvc.dll
+
+3. Run Regedit.
+
+  Note: Before you modify the registry, export the current registry first as a
+  backup.
+
+  Search for the following DLLs in the registry:
+
+  Seo.dll
+  Seos.dll
+  Smtpadm.dll
+  Smtpsnap.dll
+  Smtpsvc.dll
+
+4. Change the default path to the current working directory for IIS (to
+  d:\Inetsrv).
+
+5. In the registry, change the Inetinfo.exe image path to map to the current
+  working directory:
+
+  [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMTPSVC]
+  ImagePath=Changed Image Path to point to the real path for Inetinfo.exe
+
+  \PARAMETERS
+  InstallPath=Changed Image Path to point to the real path for Inetinfo.exe
+
+  [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMTPSVC\Enum]
+  0="Root\\LEGACY_SMTPSVC\\0000"
+  Count=dword:00000001
+  NextInstance=dword:00000001
+
+6. Try to start the SMTP service in the Control Panel, or restart the computer.
+
+Additional query words: IIS NTOP SMTP
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

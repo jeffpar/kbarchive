@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152075: FIX: Control Container Support Only Works in Primary Thread | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152075: FIX: Control Container Support Only Works in Primary Thread" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152075/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152075/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152075/","publisher":null,"image":null,"headline":"Q152075: FIX: Control Container Support Only Works in Primary Thread","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152075-fix-control-container-support-only-works-in-primary-thread">Q152075: FIX: Control Container Support Only Works in Primary Thread</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152075
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbole kbMFC kbThread kbVC400 kbVC400bug kbVC410 kbDSupport kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the ActiveX control container support built into MFC, controls should
+only be created and used in the primary thread. The primary thread is the thread
+created automatically for you during startup of the MFC program. Starting other
+threads and trying to use MFC's built-in control container support will cause
+unpredictable and erratic behavior of the primary thread and any other threads
+that attempt to display ActiveX controls. This problem will occur whether you
+use a UI thread or a worker thread.
+
+CAUSE
+=====
+
+This situation appears to occur because the afxOccManager is stored as a process
+local variable.
+
+RESOLUTION
+==========
+
+There is no reliable workaround for this issue at this time. If your program
+uses ActiveX controls, make sure they are displayed in the primary thread only.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 32- bit Edition
+version 4.2.
+
+MORE INFORMATION
+================
+
+This situation can be reproduced by creating an Appwizard generated app that
+supports ActiveX control containment. Create a dialog in the first thread that
+displays an ActiveX control. Add a class to your project derived from CWinThread
+that will create a secondary thread. Also, add another dialog to the project
+that contains an ActiveX control that will be created as a modeless dialog by
+the secondary thread when the secondary thread starts up. This can be done in
+the CWinThread's InitInstance method. Build the app. When the app is run, if you
+show the dialog that contains the ActiveX control in the first thread, the
+second thread will no longer be able to create ActiveX controls. Conversely, if
+the second thread shows its dialog first, the primary thread will not be able to
+create ActiveX controls. If you attempt to create ocx controls in more than one
+thread, you will also get an access violation in OLE32.dll when the program
+terminates.
+
+Additional query words: 4.00 4.10 4.20 ocx vcfixlist420 kbole MfcOLE kbSweptVC600
+
+======================================================================
+Keywords          : kbole kbMFC kbThread kbVC400 kbVC400bug kbVC410 kbDSupport kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

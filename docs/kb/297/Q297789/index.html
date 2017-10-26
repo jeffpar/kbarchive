@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q297789: How to Disable the Computer Browser Service Throughout a Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q297789: How to Disable the Computer Browser Service Throughout a Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/297/Q297789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/297/Q297789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/297/Q297789/","publisher":null,"image":null,"headline":"Q297789: How to Disable the Computer Browser Service Throughout a Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q297789-how-to-disable-the-computer-browser-service-throughout-a-domain">Q297789: How to Disable the Computer Browser Service Throughout a Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q297789
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the set of batch files that you can run from a central
+location to stop and disable the Computer Browser service on all Windows NT
+Workstations and Windows NT-based member servers in a domain.
+
+MORE INFORMATION
+================
+
+In addition to three batch files, you need the following utilities from the
+Windows NT Server Resource Kit:
+
+- Netdom.exe
+
+- Nnetsvc.exe
+
+- Rreg.exe
+
+How to Stop the Computer Browser Service
+----------------------------------------
+
+1. Create a Member.bat, Stopbrow.bat, and Stopbrow2.bat batch file.
+
+Code for the Member.bat File:
+
+  @ECHO OFF
+  NETDOM MEMBER &gt; MEMBER.TXT
+  FOR /F "skip=6 tokens=4" %%i IN (MEMBER.TXT) DO ECHO %%i &gt;&gt; SERVERS.TXT
+
+Code for the Stopbrow.bat File:
+
+  @ECHO OFF
+  FOR /F "tokens=1" %%i IN (SERVERS.TXT) DO call stopbrow2.bat %%i
+
+Code for the Stopbrow2.bat File:
+
+  @echo off
+  echo Processing computer %1 &gt;&gt; output.txt
+  NETSVC /STOP %1 BROWSER &gt;&gt; output.txt
+  REG UPDATE HKLM\System\CurrentControlSet\Services\Browser\Start=4 %1 &gt;&gt; output.txt
+
+2. Place the three preceding batch files and resource kit utilities into a
+  folder, and then place the folder on the computer that is to run the batch
+  files. This computer must be a member of the domain where you want to disable
+  the Computer Browser service.
+
+3. Run the Member.bat file, which creates two text files: Member.txt and
+  Servers.txt. The Servers.txt file includes a list of all of the workstations
+  and member servers in the domain. This file can serve as the list of targets
+  for the Stopbrow.bat batch file.
+
+4. Run the Stopbrow.bat file. This file examines the list of computers that are
+  listed in the Servers.txt file, and then calls the Stopbrow2.bat file to
+  stop, and then disable the Computer Browser service on each computer. The
+  results of this process are logged to the Output.txt file, which can be
+  reviewed to determine the computers that had been successfully processed.
+
+For additional information about automating tasks with batch files in Windows NT
+4.0, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q173529 Using Batch Files to Automate Networking Tasks
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

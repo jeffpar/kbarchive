@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37242: A General Tutorial on the Various Forms of Memory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37242: A General Tutorial on the Various Forms of Memory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37242/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37242/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37242/","publisher":null,"image":null,"headline":"Q37242: A General Tutorial on the Various Forms of Memory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37242-a-general-tutorial-on-the-various-forms-of-memory">Q37242: A General Tutorial on the Various Forms of Memory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37242
+Product(s): Microsoft Disk Operating System
+Version(s): 2.11,3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 06-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 2.11, 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a general description of the different forms of memory
+available in the MS-DOS environment on PC and PS/2 systems. It also discusses
+what kinds of software use these different areas, and what drivers are needed to
+create and control some of these areas.
+
+The first section of this article, "The Memory Map," shows a memory map that
+outlines the layout of these different forms of memory. The next section, "Types
+of Memory," discusses the major forms of memory, and their physical and logical
+components and drivers. The "Equations" section gives some handy equations for
+showing how these areas of memory can be used or emulated. After this is the
+"Memory Drivers" section, which gives a brief description of the memory
+management device drivers mentioned in this article. The last section, "Further
+Reading," gives additional reading material for more information on some of
+these forms of memory.
+
+MORE INFORMATION
+================
+
+There are many forms of memory: conventional, extended, EMS, XMA, and XMS. Below
+is a description of each form of memory, and how they relate; because there are
+many relationships, you may have to read the following material twice to
+eliminate any references to undefined terms.
+
+The Memory Map
+--------------
+
+The following is an illustration that shows the various components of memory that
+are available (please note that it is a very general map):
+
+   32M +--------------------------------------------+
+       |                                            |
+       | expanded memory board                      | ----+
+       |                                            |     |
+     0 +--------------------------------------------+     |
+                                                          |
+                                                          |
+       +------------------------------------------- +     |
+       |                                            |     |
+       | built-in memory                            |     |
+       |                                            |     |
+   nM* +--------------------------------------------+     |
+       |                                            |     |
+       | extended memory (1M-nM*)                   |     |
+       |                                            |     |
+       +- - - - - - - - - - - - - - - - - - - - - - +     |
+       |                                            |     |
+       | high memory area (FFFF:0010-FFFF:FFFFh)    |     |
+       |                                            |     |
+    1M +--------------------------------------------+     |
+       |                                            |     |
+       | upper memory area (640K-1M)                |     |
+       |                                            |     |
+       +- - - - - - - - - - - - - - - - - - - - - - +     |
+       |                                            |     |
+       | expanded memory page frame (64K)           | &lt;---+
+       |                                            |
+       +- - - - - - - - - - - - - - - - - - - - - - +
+       |                                            |
+  640K +--------------------------------------------+
+       |                                            |
+       | extended BIOS data area (1K)               |
+       |                                            |
+  639K +- - - - - - - - - - - - - - - - - - - - - - +
+       |                                            |
+       | conventional memory (0K-640K)              |
+       |                                            |
+     0 +--------------------------------------------+
+
+       +--------------------------------------------+
+       |                                            |
+       | IBM expanded memory adapter (XMA)          |
+       |                                            |
+       +--------------------------------------------+
+
+* nM = 16 MB on an 80286, 4 gigabytes on an 80386
+
+Types of Memory
+---------------
+
+- Conventional Memory
+
+  Intel 8086 systems can address 1 MB of memory. (Later systems can address
+  more, in other modes.) On PC and PS/2 systems, this is divided into the
+  conventional memory area and the upper memory area (UMA).
+
+  The conventional memory area is the 0K-640K section of "normal" memory. This
+  area of memory is used by MS-DOS and normal application software.
+
+  The UMA is the 640K-1 MB section of memory that normally contains video
+  adapter buffers, network card buffers, and other buffers and work areas for
+  peripherals and the ROM BIOS. It is also normally used on EMS systems to
+  store the expanded memory page frame. This area of memory is normally used by
+  the ROM BIOS and peripherals, such as the expanded memory manager.
+
+- Extended Memory
+
+  The extended memory area is an area of memory that is available only on 80286
+  and 80386 systems. This memory begins at 1 MB. On 80286 systems, the upper
+  limit is 16 MB; on 80386 systems, the upper limit is 4 gigabytes. This memory
+  is only addressable while in protected mode. It is normally used by systems
+  software (RAMDrive, SMARTDrive, VDISK, EMM386.SYS, XMAEM.SYS, and
+  HIMEM.SYS).
+
+  Built-in memory (BIM) is a form of memory that exists on Compaq and some other
+  80386 OEM systems. These systems have 1 MB of conventional memory on their
+  motherboard, and this extra 384K of "built-in memory" is mapped to the top of
+  extended memory, because the UMA already occupies the upper 384K of
+  conventional memory. This area of memory is normally used by systems
+  software. HIMEM.SYS uses this memory and includes it in its extended memory
+  blocks, if it is available. (Other OEM systems also have 384K of otherwise
+  unused memory on their motherboard. A common place for this memory to be
+  mapped into is the first section of extended memory.)
+
+- EMS Memory
+
+  An expanded memory board is a separate board that contains EMS memory of up to
+  32 MB, which can be addressed on any Intel 80x86 system by paging 16K
+  portions of memory into the expanded memory page frame, located in the UMA.
+
+  The expanded memory page frame, normally located in the UMA, is a collection
+  of 16K physical pages from which an application program accesses expanded
+  memory. These page frames are memory frames paged in from the expanded memory
+  board. This area of memory is controlled exclusively by the expanded memory
+  manager (such as EMM386.SYS), which is in turn called by systems software
+  (such as Buffers/X, Fastopen/X, SMARTDrive, RAMDrive, VDISK, MSCDEX, and
+  Windows) and applications software (such as Excel and the Programmer's
+  Library).
+
+  Alternatively, 80386 systems can use 80386-specific features to emulate EMS
+  memory by paging 16K portions of memory into the expanded memory page frame,
+  as always located in the UMA. EMM386, QEMM, and 386MAX are examples of this
+  software.
+
+- XMA Memory
+
+  An IBM expanded memory adapter (XMA) is a separate board that contains IBM (or
+  compatible) XMA memory, which can be addressed as either expanded memory or
+  extended memory, with the appropriate software drivers.
+
+- XMS Memory
+
+  XMS memory is the collection of the UMA and the extended memory area, and is
+  controlled by an extended memory manager (XMM) such as HIMEM.SYS. The
+  extended memory area is only available on 80286 and 80386 systems. The
+  extended memory area is broken up into two logical areas by the XMM: the high
+  memory area (HMA) and extended memory blocks. Thus, XMS memory consists of
+  the UMA, the HMA, and the extended memory area.
+
+  The HMA is 64K of memory located at the beginning of the extended memory area.
+  It exists only on 80286 and 80386 systems with extended memory. This area
+  only exists in a controlled, easily accessible manner when HIMEM.SYS or
+  another XMS driver is installed. This area of memory is controlled
+  exclusively by the extended memory manager (such as HIMEM.SYS), which is in
+  turn called by systems software (such as Windows) and applications software.
+
+  Upper memory blocks (UMBs) are blocks of memory that are available on some
+  80286 and 80386 systems, and are located in the UMA. The number, size, and
+  location of these blocks vary widely, depending upon the types of hardware
+  adapter cards installed in the machine. The XMS specification creates these
+  abstract data types. (HIMEM.SYS does not implement UMBs; in MS-DOS 5.0 and
+  later, EMM386.EXE does.)
+
+  Extended memory blocks (EMBs) are blocks of extended memory. The XMS
+  specification creates these abstract data types. This area can only be used
+  for data storage (that is, they cannot be used to store code). EMBs exist to
+  allow systems and applications software to allocate extended memory, which is
+  otherwise very difficult to address and manipulate in a controlled manner.
+
+Equations
+---------
+
+The following are some rules and "equations" for combining, modifying, and
+emulating memory to make it useful:
+
+ &lt;XMS memory&gt; = &lt;extended memory&gt; + HIMEM.SYS
+
+  &lt;XMS memory including UMBS&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; +
+                  HIMEM.SYS + EMM386.EXE (version 4.33.06x or later)
+
+  &lt;XMA memory&gt; = proprietary memory adapter of IBM
+
+  &lt;EMS memory&gt; = usable by MS-DOS and applications
+
+  &lt;extended memory&gt; = usable by some applications
+
+  &lt;XMA memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; + XMAEM.SYS
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; +
+                 EMM386.SYS (version 4.0)
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; + HIMEM.SYS +
+                 EMM386.SYS or EMM386.EXE (version 4.10.0419 or later)
+
+This means the two-stage system needed by IBM PC-DOS owners to convert their
+80386 extended memory into EMS memory is as follows:
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; + XMAEM.SYS +
+                 XMA2EMS.SYS
+
+The one state processed is needed by Microsoft MS-DOS users to convert their
+80386 systems to EMS memory is as follows:
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; +
+                 EMM386.SYS (version 4.0)
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; + HIMEM.SYS +
+                 EMM386.SYS (version 4.10.0419)
+
+  &lt;EMS memory&gt; = &lt;80386 system&gt; + &lt;extended memory&gt; + HIMEM.SYS +
+                 EMM386.EXE (version 4.20.06x)
+
+If you have an 80386 system, extended memory, and MS-DOS, you can use EMM386.SYS
+to obtain EMS memory. If you have the same system and memory with IBM PC-DOS,
+you must use two drivers, XMAEM.SYS and XMA2EMS.SYS, to achieve EMS memory.
+
+If you have an 80286 system and want to use your extended memory as EMS memory,
+you will not be able to use the existing drivers included with MS-DOS. Some of
+these extended memory boards come with EMS emulators, which can be used.
+
+Memory Drivers
+--------------
+
+The Microsoft driver HIMEM.SYS takes over 80286 and 80386 extended memory,
+converting it to the extended memory area of the XMS specification. It also
+takes the first 64K of this extended memory area and converts it into the HMA.
+
+The IBM PC-DOS version 4.0 driver XMAEM.SYS takes IBM PS/2 Model 80 80386
+extended memory and uses it to emulate IBM XMA memory. (Used in conjunction with
+the XMA2EMS.SYS driver, it is possible to use this memory as EMS memory.)
+
+The IBM PC-DOS version 4.0 driver XMA2EMS.SYS takes IBM XMA memory (or the
+emulated XMA memory created by the XMAEM.SYS driver) and uses it to emulate
+LIM/EMS memory.
+
+The Microsoft MS-DOS version 4.0 driver EMM386.SYS takes 80386 extended memory
+and uses it to emulate LIM/EMS memory.
+
+REFERENCES
+==========
+
+For more information on LIM/EMS memory, refer to the official specification, the
+"Lotus/Intel/Microsoft Expanded Memory Specification Version 4.0," available
+free from Intel by calling (800) 538-3373.
+
+For more information on XMS memory, refer to the official specification, the
+"eXtended Memory Specification Version 3.0," available free from Microsoft. To
+obtain the specification, see the "Instructions for Downloading" section below.
+
+For more information on the extended BIOS data area of IBM PS/2 and compatible
+OEM systems, refer to the "IBM PS/2 and PC BIOS Interface Technical Reference,"
+part number 68X2260, available from IBM by calling (800) IBM-PCTB. (Another
+reference that contains similar material is the Microsoft Press book
+"Programmer's Quick Reference Series: IBM ROM BIOS," by Ray Duncan, ISBN
+1-55615-135-7.)
+
+For more information on Compaq built-in memory (BIM), refer to the "Compaq
+DeskPro 386(TM) Personal Computer Technical Reference Guide," available from
+Compaq.
+
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a kbMSDOS211
+Version           : :2.11,3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

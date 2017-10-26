@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273884: XADM: How to Stop Address Book View Intersite Replication | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273884: XADM: How to Stop Address Book View Intersite Replication" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273884/","publisher":null,"image":null,"headline":"Q273884: XADM: How to Stop Address Book View Intersite Replication","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273884-xadm-how-to-stop-address-book-view-intersite-replication">Q273884: XADM: How to Stop Address Book View Intersite Replication</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273884
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to change the replication schedule of the Address
+Book view Naming Context so that it never replicates automatically.
+
+MORE INFORMATION
+================
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+To modify the replication schedule of the Address Book view container:
+
+1. Type the following command at a command prompt to start the Microsoft
+  Exchange Server Administrator program in raw mode:
+
+  "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. Click the Address Book view container, and then click Raw Properties on the
+  File menu.
+
+3. Click the General tab, and then click the Period-Rep-Synch-Times attribute
+  from the Object attributes list.
+
+4. Click Editor, and then click Schedule.
+
+5. Click the Schedule tab, clear the entire schedule, and then click OK.
+
+6. Click Set to commit the changes, and then click OK.
+
+If you use this procedure to prevent Address Book view replication, you may
+experience unexpected behavior. If replication occurred with multiple sites, the
+following issues may occur:
+
+- Multiple Address Book views
+
+- Address Book view storms
+
+- Orphaned Address Book views
+
+If you follow this procedure, replication is not prevented if you manually force
+replication. Replication is forced when you click the Update Now button on the
+server's Directory Service object. When you do so, the schedule is bypassed
+completely, and the Address Book view Naming Context is requested.
+
+If you created an Address Book view for each site in an Exchange Server
+organization, and you configure the Address Book view to prevent replication,
+after one Directory Replication cycle, you see as many Address Book views as you
+have sites. This behavior can cause high Dsamain.exe central processing unit
+(CPU) symptoms at those sites.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q251054 High Dsmain.exe CPU Usage When Populating Address Book Views
+
+Instead of using the Update Now button to manually force replication, it is
+recommended that you change the schedule to Always for a short time and wait up
+to 15 minutes for replication to occur.
+
+Additional query words: ABV Dirrep
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

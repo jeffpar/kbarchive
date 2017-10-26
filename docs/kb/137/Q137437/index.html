@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137437/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137437/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137437/","publisher":null,"image":null,"headline":"Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137437-how-sna-server-manages-send-and-receive-window-sizes-on-sdlc">Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137437
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server Admin does not support configuration of the SDLC send and receive
+window sizes, as the 802.2 connection does with the Unacknowledged Send Limit
+and Receive Ack Threshold parameters. This article describes how SNA Server
+determines the send and receive window sizes on SDLC connections.
+
+NOTE: Do not confuse these send and receive window sizes with the send and
+receive pacing counters configured on an APPC mode entry, or with the send and
+receive window sizes negotiated on a BIND exchange when establishing an LU-LU
+session.
+
+MORE INFORMATION
+================
+
+The SDLC send window is defined as the number of frames that SNA Server sends
+before setting the P/F bit requesting an acknowledgment. By default, the SDLC
+send window is set to 7. You can override the SDLC send window value in SNA
+Server by modifying the value in byte 27 of Format 3 XID frames sent from the
+remote system. This is the field in which the XID sender specifies the receive
+window size. SNA Server then takes that value in the Format 3 XID exchange and
+uses it for the SNA Server send window size.
+
+
+NOTE: The XID format is documented in the IBM SNA Formats Guide (IBM part number
+GA27-3136).
+
+The SNA Server SDLC receive window is the number of frames which the SNA Server
+link service can receive before requiring an acknowledgement. For SNA Server
+SDLC connections there is no configured receive windows. The receive window is
+actually a function of the Credit messages that flow between the SNA Server SDLC
+link service and the SNA Server service. These Credit messages manage the
+internal flow control between the link service and the server and determine the
+receive window size at any given instant.
+
+
+Additional query words: prodsna pacing
+
+======================================================================
+Keywords          : kbnetwork sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

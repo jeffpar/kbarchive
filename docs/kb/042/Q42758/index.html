@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42758: Savecur and Restcur Save Relative Position in File, on Screen | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42758: Savecur and Restcur Save Relative Position in File, on Screen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42758/","publisher":null,"image":null,"headline":"Q42758: Savecur and Restcur Save Relative Position in File, on Screen","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42758-savecur-and-restcur-save-relative-position-in-file-on-screen">Q42758: Savecur and Restcur Save Relative Position in File, on Screen</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42758
+Product(s): See article
+Version(s): 1.00   | 1.00
+Operating System(s): MS-DOS | OS2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 17-MAY-1989
+
+The Microsoft Editor functions Savecur and Restcur save the current
+cursor position relative to the file and the screen. Therefore, the
+screen will be restored exactly as it appeared when the Savecur
+function was invoked.
+
+The following macros were intended to scroll the screen up and down
+while leaving the cursor position relative to the terminal screen to
+be stationary:
+
+ReposDown:=Savecur Meta Up Up Restcur
+ReposDown:Ctrl+Down
+
+ReposUp:=Savecur Meta Down Down Restcur
+ReposUp:Ctrl+Up
+
+Because Savecur and Restcur preserve and restore the cursor position
+relative to the screen, the macros appear to do nothing. But actually,
+each executes correctly. For example, the ReposDown does the following:
+
+1. Savecur : saves the current position relative to the file and the
+             screen
+
+2. Meta Up : moves the cursor to the top of the screen
+
+3. Up      : moves the cursor up one line, (thus scrolling the screen
+             down one line)
+
+4. Restcur : restores the screen to the original configuration
+             (appears as if nothing had happened)
+
+One way to achieve the desired result is to use the Mark function. The
+Mark function saves the current location in the file. The relative
+screen position is not preserved, whereas the Savecur and Restcur
+functions do save the relative screen position.
+
+The following macros give the desired result:
+
+ReposDown:=Arg Arg "tag" Mark Meta Up Up Arg "tag" Mark Up
+ReposDown:Ctrl+Up
+
+ReposUp:=Arg Arg "tag" Mark Meta Down Down Arg "tag" Mark Down
+ReposUp:Ctrl+Down
+
+The word "tag" is an arbitrary tagname for the Mark function.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150767/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150767/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150767/","publisher":null,"image":null,"headline":"Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150767-howto-redirect-standard-io-of-a-console-app-using-batch-file">Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150767
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbVBp400 kb32bitOnly
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A 32-bit Visual Basic application launches another Win32 process by using either
+the Visual Basic Shell command or the CreateProcess Win32 API. If the new
+process is a console application that reads its input from the standard input
+(STDIN) or writes its results to the standard output (STDOUT), you can redirect
+its input and output from the parent Visual Basic application. This article
+describes how to use a batch file (.BAT) to redirect the standard input and
+output of the spawned console process. To build the sample code in this article,
+you need the 32-bit edition of Visual Basic and any development tools, such as
+Visual C++ version 2.0 and above, that build Win32 console applications.
+
+MORE INFORMATION
+================
+
+After the parent Visual Basic application spawns the child console process, the
+parent Visual Basic application provides input to the child's STDIN and receives
+the output from the child's STDOUT. By using a batch file, the parent Visual
+Basic application provides the child's STDIN through a disk file and collects
+the child's STDOUT through another disk file.
+
+Step-by-Step Example
+--------------------
+
+1. Create a console application, CONSOL.EXE, that expects an integer as its
+  STDIN and sends a text string out as its STDOUT, using the following C code:
+
+        #include &lt;stdio.h&gt;
+
+        void main(void)
+        {
+              int i;
+              scanf("%d", &amp;i);
+              printf("\nSTDIn is %d!\n", i);
+        }
+
+2. Create a batch file, named REDIRECT.BAT, that contains only the following
+  command line:
+
+  type stdin.txt | consol.exe &gt; stdout.txt
+
+3. Create a new text file using Notepad or any text editor. Enter an integer and
+  press the ENTER key. Save the file as "stdin.txt."
+
+4. Start a new project in Visual Basic. Form1 is created by default.
+
+5. Add the following code to the General Declarations section of Form1:
+
+        Private Declare Function OpenProcess Lib "kernel32.dll" (ByVal _
+           dwAccess As Long, ByVal fInherit As Integer, ByVal hObject _
+           As Long) As Long
+
+        Private Declare Function CloseHandle Lib "kernel32" (ByVal _
+           hObject As Long) As Long
+
+        Private Declare Function WaitForSingleObject Lib "kernel32" (ByVal _
+         hHandle As Long, ByVal dwMilliseconds As Long) As Long
+
+        Const SYNCHRONIZE = &amp;H100000
+        Const NORMAL_PRIORITY_CLASS = &amp;H20&amp;
+        Const INFINITE = -1&amp;
+
+6. Add the following code to the Form1_Click event:
+
+        ProcessID&amp; = Shell("test.bat", vbNormalFocus)
+        ProcessHandle&amp; = OpenProcess(SYNCHRONIZE, True, ProcessID&amp;)
+        WaitForSingleObject ProcessHandle&amp;, -1&amp;
+        CloseHandle ProcessHandle&amp;
+
+7. Save Form1 and Project1 to the same directory as REDIRECT.BAT and CONSOL.EXE.
+  Press the F5 key to run the program. Click Form1. A console window is
+  displayed briefly and closes itself. The STDOUT.TXT file is then created in
+  the same directory.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

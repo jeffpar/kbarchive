@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163808/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163808/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163808/","publisher":null,"image":null,"headline":"Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163808-wd97-picture-is-pasted-as-float-over-text-not-as-inline">Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163808
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta kbdtacode kbmacroexample word97kbfaq
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you choose to paste a picture from the Clipboard to a document, Word pastes
+the picture as a floating object (Float Over Text).
+
+CAUSE
+=====
+
+By design, Word pastes the picture as a floating object (Float Over Text).
+
+This article includes a macro that changes this default behavior, so that an
+object is pasted as an inline object rather than a floating object.
+
+WORKAROUND
+==========
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The following macro changes the default behavior in Word so that pasted objects
+are pasted as inline rather than floating objects.
+
+NOTE: Office Art objects are converted to pictures and pasted inline.
+
+     Sub EditPasteObject()
+        On Error GoTo ErrHandler ' Error will occur if object is Office Art.
+        ActiveWindow.View.Type = wdPageView
+        Selection.PasteSpecial Placement:=wdInLine
+        ' If the object is not text, then convert it.
+        If Selection.Type = wdSelectionShape Then
+             Selection.ShapeRange.ConvertToInlineShape
+        End If
+     ErrHandler:
+        If Err &lt;&gt; 0 Then
+           ' If the object is Office Art, paste it as an inline picture
+           ActiveDocument.Undo
+           Selection.PasteSpecial DataType:=wdPasteMetafilePicture,
+           Placement:=wdInLine
+        End If
+     End Sub
+
+Copy the picture to the clipboard. If you want to paste the picture as an inline
+object, run this macro. If you want to paste the object normally (as a floating
+object), use the Paste command on the Edit menu.
+
+
+MORE INFORMATION
+================
+
+Inline objects are treated as characters and are positioned as characters within
+a line of text. In versions of Word earlier than Word 97 for Windows and Word 98
+Macintosh Edition, all pictures are treated as inline objects.
+
+Floating objects are anchored to a range of text but can be positioned anywhere
+on the page.
+
+For more information about inline objects, click the Office Assistant, type
+"InlineShape," click Search, and then click to view "InlineShape Object."
+
+For more information about floating objects, in the Visual Basic Editor, click
+the Office Assistant, type "Shape," click Search, and then click to view "Shape
+Object."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: vb vba vbe
+
+======================================================================
+Keywords          : kbdta kbdtacode kbmacroexample word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

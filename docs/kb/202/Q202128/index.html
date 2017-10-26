@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/202/Q202128/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/202/Q202128/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/202/Q202128/","publisher":null,"image":null,"headline":"Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q202128-fix-atl-exe-server-on-ccomautothreadmodule-hang-on-registration">Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q202128
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbLocalSvr kbThread kbVC600bug kbATL300bug kbGrpDSMFCATLkbbuglist
+Last Modified: 10-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An ATL EXE server based on CComAutoThreadModule&lt;&gt; can hang when being
+registered or unregistered.
+
+CAUSE
+=====
+
+CComAutoThreadModule&lt;&gt;::Init() called in WinMain() creates a thread pool
+(by default 4 threads). The destructor of global CComAutoThreadModule makes
+certain these threads terminate before the process terminates. This happens by
+posting a WM_QUIT message to each of the threads in the thread pool and calling
+WaitForSingleObject() on the thread handle. The threads are scheduled such that
+the threads in the pool may not have called GetMessage() and so the message
+queue is not created. This causes the PostThreadMessage() to fail. Hence, the
+threads in the pool do not terminate and WaitForSingleObject() waits infinitely
+for the threads to terminate.
+
+RESOLUTION
+==========
+
+In the Altcom.h file, inside the vc98\atl\include directory of destructor in the
+CComAutoThreadModule function replace the following code:
+
+     ::PostThreadMessage(m_pApartments[i].m_dwThreadID, WM_QUIT, 0, 0);
+
+with this code:
+
+     while (::PostThreadMessage(m_pApartments[i].m_dwThreadID, WM_QUIT,
+        0, 0) == 0) ::Sleep(100);
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+1. Use Appwizard to create an ATL EXE.
+
+2. Insert any type of ATL object in the project.
+
+3. In Stdafx.h, replace CComModule with
+  CComAutoThreadModule&lt;CComSimpleThreadAllocator&gt;.
+
+4. Build the project.
+
+  NOTE: There is a chance that the server may hang at this point since the
+  custom build step registers the server.
+
+5. In the Project Settings menu under the Debug tab type "/RegServer" in the
+  Program Arguments dialog box.
+
+6. Run the server in the debugger.
+
+  NOTE: If it does not hang the first time, repeat this step. Since this is
+  timing related, the problem may not reproduce on certain machines.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbLocalSvr kbThread kbVC600bug kbATL300bug kbGrpDSMFCATL kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

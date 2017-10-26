@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136708: PC Cards (PCMCIA) Related Terms and Definitions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136708: PC Cards (PCMCIA) Related Terms and Definitions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136708/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136708/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136708/","publisher":null,"image":null,"headline":"Q136708: PC Cards (PCMCIA) Related Terms and Definitions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136708-pc-cards-pcmcia-related-terms-and-definitions">Q136708: PC Cards (PCMCIA) Related Terms and Definitions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136708
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes terms related to PCMCIA cards (also known as PC Cards).
+
+MORE INFORMATION
+================
+
+Host Bus Adapter (HBA):
+
+A chip that protects the PCMCIA bus from dependence on a given hardware
+Architecture by translating between PCMCIA and that architecture.
+
+Socket Services:
+
+The BIOS layer of the PCMCIA software architecture. It handles communication with
+host bus adapters and provides a core API for client drivers.
+
+Card Services:
+
+The layer of the PCMCIA software architecture that sits between Socket Services
+and client drivers. It provides API commands for client drivers and arbitrates
+client-driver access to system resources.
+
+
+Card Information Structure (CIS):
+
+A data structure within non-volatile memory in each PC Card that contains key
+identification and configuration information. Card and Socket Services examines
+the CIS to determine what resources a given card needs.
+
+Driver Stack:
+
+The Card Services, Socket Services, and various client drivers necessary to
+support PC Card devices.
+
+Point Enabler:
+
+A utility that configures a PC Card and HBA to be available to the system at a
+particular IRQ and I/O port address combination. If your PC Card comes with a
+point enabler, you can use this utility rather than full Card and Socket
+Services, though at some cost in convenience. If your computer does not have
+Card and Socket Service (CSS), the PC card can use the point enabler to manage
+system resources. When you are using the point enabler instead of CSS, you may
+experience conflicts with the memory manager installed in your computer. To
+avoid memory manager conflicts, you need to exclude the memory range that the PC
+card is to use. For example, edit the line in CONFIG.SYS file:
+
+  DEVICE = C:\DOS\EMM386.EXE X=DF00H-DFFFH
+
+Tuple:
+
+Tuple is the configuration information built into PCMCIA devices. This
+configuration information consists of items such as the device name, device
+type, default I/O address, voltage requirements, function id and other
+information based on the type of PCMCIA device.
+
+Reference
+---------
+
+"Windows Sources," March 1995, "The Primer (Getting Along with PCMCIA)," page
+148.
+
+Additional query words: prodnt 3.10 4.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

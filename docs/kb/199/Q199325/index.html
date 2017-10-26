@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199325: XCON: MTA Size Restrictions Affect Local Delivery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199325: XCON: MTA Size Restrictions Affect Local Delivery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199325/","publisher":null,"image":null,"headline":"Q199325: XCON: MTA Size Restrictions Affect Local Delivery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199325-xcon-mta-size-restrictions-affect-local-delivery">Q199325: XCON: MTA Size Restrictions Affect Local Delivery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199325
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3kbfaq
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+After you enable the Message Journaling feature of Exchange Server version 5.5
+Service Pack 1, if you send large messages to other users on your local Exchange
+Server computer, you receive non-delivery reports (NDRs) similar to the
+following:
+
+  Your message did not reach some or all of the intended recipients.
+
+  Subject: MSG Sent: 8/11/98 11:14 AM
+
+  The following recipient(s) could not be reached:
+
+  Exchange User on 8/11/98 11:16 AM Either the message size exceeds the maximum
+  allowed for the recipient or transport, or you have exceeded the storage
+  limit on your mailbox.
+
+  MSEXCH:MSExchangeIS:Site:SERVER
+
+MORE INFORMATION
+================
+
+This occurs when size limits are set on the Exchange Server message transfer
+agent (MTA). Before you enable the Message Journaling feature, only messages
+that you send to users on another Exchange Server computer go to the MTA, and
+these are sent back if the size limit is exceeded. After you enable the Message
+Journaling feature, messages that are sent to local users also go to the MTA
+and, therefore, the size restriction is invoked.
+
+Part of the Message Journaling feature, first introduced in Exchange Server 5.5
+Service Pack 1, is to send all messages to the MTA for submission to the journal
+recipient. This in turn causes the local messages to be subject to the MTA size
+restriction. To verify if Message Journaling is enabled for messages destined
+for recipients local to the server in question, check for the following registry
+value:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersSystem\No
+  Local Delivery
+
+NOTE: The No Local Delivery value is a DWORD type value.
+
+If this value is non-zero, journaling is enabled for all messages submitted to
+local recipients and is subject to any size restrictions that may be enabled for
+the local MTA.
+
+Additional query words: journal content too long mta
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 kbfaq
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : winnt:5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

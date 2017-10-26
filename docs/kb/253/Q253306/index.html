@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253306/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253306/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253306/","publisher":null,"image":null,"headline":"Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253306-xcln-ccmail-mailbox-receives-mail-after-migration-to-exchange">Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253306
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Migration Wizard to migrate all users from cc:Mail to Microsoft
+Exchange Server, the cc:Mail mailboxes remain in the cc:Mail post office. When a
+cc:Mail user sends a message to a user whose mailbox has been migrated, the
+message goes to the cc:Mail mailbox instead of to the mailbox on Exchange
+Server.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Migration Wizard does not remove mailboxes and their contents from the
+cc:Mail system but copies them to Exchange Server and creates a mailbox for the
+migrated recipient. When the migration is complete, custom recipients that are
+associated with the cc:Mail mailbox for the same user are deleted. The new
+Exchange mailbox now has two cc:Mail addresses:
+
+- The primary address, displayed in bold formatting, is the user's Exchange
+  Server address in cc:Mail format.
+
+- The secondary address is the user's old cc:Mail address.
+
+This allows mail addressed to the user from an outdated personal address book to
+be successfully delivered.
+
+To allow for recovery in case of a migration failure, the cc:Mail address for the
+user is not deleted from the mail directory. No changes are made to the cc:Mail
+data, and the old mailbox is not deleted from the cc:Mail post office.
+
+After you confirm that the mailboxes are migrated successfully, manually remove
+or delete the user from the cc:Mail post office. During the next directory
+synchronization cycle, dirsync reports that a new Exchange user is created. Then
+Import.exe creates an entry for the migrated user in the cc:Mail directory, and
+mail is now delivered to the new Exchange Server mailbox.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

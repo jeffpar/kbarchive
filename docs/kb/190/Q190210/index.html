@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190210/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190210/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190210/","publisher":null,"image":null,"headline":"Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190210-prb-passing-activex-control-to-component-gives-type-mismatch">Q190210: PRB: Passing ActiveX Control to Component Gives "Type Mismatch"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190210
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pass an ActiveX control to another ActiveX component in Visual Basic, a
+Type Mismatch error might occur. The problem does not occur on your development
+computer, but it does occur after the control is installed on another computer.
+This problem occurs even if you used the Setup Wizard to install the .ocx and
+the .ocx has been properly registered.
+
+CAUSE
+=====
+
+ActiveX controls are private objects that belong to the form class and they
+should not be passed out to external components. By design, Visual Basic wraps
+each .ocx in an extended control, which provides the basic services offered by
+the container to the programmer. When you pass a control object to another
+component, you are in fact passing the Extender object. If your component
+expects an interface pointer that is early bound as the base control, a type
+mismatch error occurs because the interface IDs of the base control and the
+Extender object do not match.
+
+For example, if you pass a TreeView control as a method to another control and
+attempt to set it to a variable declared as TreeView, an error occurs when the
+control is executed on a non-development computer.
+
+RESOLUTION
+==========
+
+If possible, do not pass ActiveX controls to other components in your project.
+If the component needs a specific control to function correctly, include that
+control as part of the component. Microsoft does not recommend that you pass
+private objects to components outside of the current project.
+
+If you must pass ActiveX controls to your component, do not attempt to use early
+binding, use late binding instead. If you pass the control as a variable of type
+Object, any late bound calls to the base control will succeed since the extender
+is designed to forward unrecognized property or method calls to the internal
+base control.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX Control project in Visual Basic. UserControl1 is created
+  by default.
+
+2. From the Project menu, click Components and select Microsoft Windows Common
+  Controls.
+
+3. Add the following code to the UserControl:
+
+        Dim m_tree As TreeView
+        Public Property Set tree(obj As Object)
+          ' You must use obj as a late bound object.
+          ' The next line causes the error.
+           Set m_tree = obj
+        End Property
+
+4. Change the project name to PassTree.
+
+5. From the File menu, click Make PassTree.ocx.
+
+6. Start a new Standard EXE project. Form1 is created by default.
+
+7. From the Project menu, click Components and select Microsoft Windows Common
+  Controls.
+
+8. Select PassTree, and click OK. PassTree is added to the Toolbox.
+
+9. Add an instance of the TreeView control and the PassTree control to Form1.
+
+10. Add a CommandButton to Form1. Insert the following code in the
+  Command1_Click event:
+
+        Set Me.UserControl11.Tree = Treeview1
+
+11. Run the project and click the CommandButton. Note that you should not see an
+  error message.
+
+12. Copy the PassTree.ocx to another computer that has Visual Basic installed.
+
+13. Register the OCX on the second computer. The command line is similar to the
+  following:
+
+  Regsvr32.exe &lt;path&gt;\PassTree.ocx
+
+14. Repeat steps 6 through 11 on the second computer.
+
+15. You should see:
+
+  Error 13: Type Mismatch error.
+
+REFERENCES
+==========
+
+Visual Basic Help, version 6.0; topic: Data Types Allowed in Properties and
+Methods
+
+Visual Basic 5.0 Books Online: Data Types Allowed in Properties and Methods
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

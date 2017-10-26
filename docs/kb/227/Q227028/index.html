@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/227/Q227028/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/227/Q227028/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/227/Q227028/","publisher":null,"image":null,"headline":"Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q227028-sms-lsm-fails-to-update-the-pdc-in-a-large-domain-mult-sites">Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q227028
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a domain controlled by many Systems Management Server sites, Logon Server
+Manager on the site servers may consistently fail to update its own Logon
+Configuration File (LCF) on the primary domain controller (PDC).
+
+One LCF file exists for each site that controls the domain:
+Smslogon\Sitescfg\&lt;Sitecode&gt;_cfg.lcf. To update its LCF file, Logon Server
+Manager must gain exclusive access to the PDC by exclusively opening the
+Nt_logon.tok file, located in the Smslogon\Sitescfg directory.
+
+Logon Server Manager logs the following error in its Nt_logon.log file each time
+it fails to open the Nt_logon.tok file on the PDC:
+
+  ~Warning Unable to get sole access to domain skipping
+  $$&lt;SMS_NT_LOGON_SERVER_MANAGER&gt;
+
+This failure prevents the Logon Server Manager from updating its LCF file. If a
+Systems Management Server site server is unable to update its LCF file within
+the polling interval plus four hours, the Systems Management Server site is
+marked with 'inactive' in its LCF file. If the Systems Management Server site
+server is still unable to update its LCF file after the polling interval plus
+seven days, then the Systems Management Server site is marked 'dead' and its
+directories on the logon points are removed.
+
+If at some point the Systems Management Server site server is able to get access
+to the PDC and updates its LCF file, its directories on the logon points will be
+re-created. However, the directories will be deleted if Logon Server Manager
+consistently fails to get access to the PDC again. This can result in excessive
+traffic if you have slow links.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsms lcf sole access token login
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

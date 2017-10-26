@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245649: SMS: License Server Manager Causes Full Synchronization Requests | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245649: SMS: License Server Manager Causes Full Synchronization Requests" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245649/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245649/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245649/","publisher":null,"image":null,"headline":"Q245649: SMS: License Server Manager Causes Full Synchronization Requests","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245649-sms-license-server-manager-causes-full-synchronization-requests">Q245649: SMS: License Server Manager Causes Full Synchronization Requests</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245649
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbtool kbsms200 kbsms200bug kbsms200sp2fixkbfixlist
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server (SMS) License Server Manager (a thread of the SMS
+Executive), is responsible for maintaining Software Metering Servers on a
+reoccurring basis. If the following conditions exist, License Server Manager
+causes Microsoft Windows NT-based Backup Domain Controllers (BDCs) to request
+full synchronizations of the SAM, BUILTIN, and LSA databases every 15 minutes:
+
+- The SMS Site Server is a Windows NT-based BDC.
+
+- The SMS Site Server is configured as a Software Metering Server.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, remove the SMS Software Metering role from your
+Windows NT-based BDCs. Note that if Software Metering is desired in a site, you
+can configure a member server for that role and specify a local account on that
+member server in place of a domain account.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To install the hotfix, use the appropriate method.
+
+Using the Hotfix Installer
+--------------------------
+
+NOTE: This method is only for I386-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Q245649.exe is a
+  Microsoft Windows Installer file that updates specific files on your site
+  server.
+
+2. Log on to your site server by using an account with administrative
+  privileges.
+
+3. On the site server, quit the Systems Management Server Administrator console.
+
+4. Run Q245649.exe, and then follow the instructions in the wizard. You can run
+  the file in Quiet mode by using the /s switch.
+
+Manual Installation
+
+-------------------
+
+1. Quit the Systems Management Server Administrator console and stop all SMS
+  services.
+
+2. Replace the Licsvcfg.dll file in the
+  &lt;sms_root_directory&gt;\bin\&lt;platform_name&gt; folder on your site
+  server with the version obtained from the hotfix, where
+  &lt;sms_root_directory&gt; is your SMS root directory, and
+  &lt;platform_name&gt; is the appropriate platform.
+
+3. Restart the SMS services.
+
+Additional query words: prodsms license full sync bdc
+
+======================================================================
+Keywords          : kbnetwork kbtool kbsms200 kbsms200bug kbsms200sp2fix kbfixlist
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

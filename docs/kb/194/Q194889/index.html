@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194889: Sgcinst.exe is Available for Download | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194889: Sgcinst.exe is Available for Download" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194889/","publisher":null,"image":null,"headline":"Q194889: Sgcinst.exe is Available for Download","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194889-sgcinstexe-is-available-for-download">Q194889: Sgcinst.exe is Available for Download</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194889
+Product(s): Internet Information Server
+Version(s): 3.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sgcinst.exe is a command-line tool that is used when installing Server Gated
+Cryptography certificates into Microsoft Internet Information Server (IIS).
+Sgcinst.exe converts vendors' Server-Gated Cryptography certificates into a
+format that can be imported into IIS.
+
+Sgcinst.exe is available at the following Internet location:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/misc/sgcinst/
+
+MORE INFORMATION
+================
+
+Installing an SGC Certificate with current versions of IIS may require a two
+step process. Verisign and other Certificate Authorities (CAs) currently issuing
+server identification Certificates return the server Certificate as a base-64
+encoded x.509v3 Certificate. The released version of IIS Key Manager is designed
+to accept these and install them for IIS use.
+
+To more effectively control issuance of the SGC Certificates, Verisign has
+created an intermediate, or issuing, CA for SGC Certificates. This requires a
+Certificate chain be returned to the IIS computer. This chain includes both the
+SGC server Certificate and the intermediate CA Certificate in a base-64 encoded
+PKCS-7 data structure. With current IIS releases, this must be pre-processed
+prior to installing the SGC server Certificate using IIS Key Manager.
+
+The program Sgcinst.exe performs the required pre-processing. It accepts a
+base-64 encoded PKCS-7 data structure, installs the intermediate CA Certificate,
+and creates a base-64 encoded x.509v3 Certificate file containing only the SGC
+server Certificate. This output file may then be loaded for IIS using Key
+Manager.
+
+The process for installing an SGC server Certificate from Verisign, or other CA
+returning a PKCS-7 Certificate chain, is as follows:
+
+1. Retrieve the PKCS-7 Certificate chain from the CA and save it to a temporary
+  folder on the IIS computer. It is recommended this be saved with a .pk7
+  extension.
+
+2. Run the Sgcinst.exe program with the PKCS-7 Certificate chain file as the
+  inputfile and a filename to hold the base-64 encoded x.509v3 SGC server
+  Certificate as the outputfile.
+
+  To do this, open a Command Prompt window on the Windows NT server computer, go
+  to the folder containing the Certificate files, and then enter the following
+  command:
+
+     sgcinst inputfile -i -o outputfile
+
+  where:
+
+     inputfile  = file containing the base-64 encoded PKCS-7 Certificate
+                  chain
+     outputfile = file which will hold the base-64 encoded x.509v3 SGC
+                  server Certificate
+
+  If the CA Certificate chain had been saved to a file named Sgccert.pk7, then
+  the SGCINST command would be:
+
+     sgcinst sgccert.pk7 -i -o sgccert.cer
+
+  If the inputfile is not a properly formatted base-64 encoded PKCS-7, the
+  program will return the following error message:
+
+  Error in reading input file: inputfile
+
+3. Install the base-64 encoded x.509v3 SGC server Certificate using the IIS Key
+  Manager. See your IIS documentation if you need assistance with this
+  operation.
+
+For more information on the Server Gated Cryptography (SGC), please go to the
+following Microsoft web site:
+
+  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnmag00/html/websecureside.asp
+
+Additional query words: schannel.dll crypto
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : :3.0,4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

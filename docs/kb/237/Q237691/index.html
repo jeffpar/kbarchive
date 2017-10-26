@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237691/","publisher":null,"image":null,"headline":"Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237691-windows-98-dial-up-networking-security-upgrade-release-notes">Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237691
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbreadme kbtool dun osr2 win95 win98 kbDialUp
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Windows 98 Dial-Up
+Networking Security Upgrade Release Notes (Dun40.doc) included with the virtual
+private network Update for Microsoft Windows 98 and Dialup Networking 1.3 that
+was released in July, 1999.
+
+For additional information about this release, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q191540 VPN Update for Microsoft Windows 98 and Dialup Networking 1.3
+  Available
+
+NOTE: This document includes several updates to the original version that was
+included in the Windows 98 Dial-up Networking Security Upgrade that was released
+in August, 1998.
+
+For additional information about this release, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q189771 Windows 98 Dial-Up Networking Security Upgrade Release Notes (August
+  1998)
+
+MORE INFORMATION
+================
+
+Microsoft Windows 98 Dial-Up Networking Security Upgrade 
+Release Notes
+-----------------------------------------------------------------------
+
+1.                Introduction:
+
+This security upgrade for Windows 98 Dial-up Networking is designed to enhance
+the protection of both dial-up and VPN connections by strengthening several
+aspects of password management and data encryption.
+
+1.1        Installation Notes:
+
+Execute the Install file and follow the instructions it displays. At the end of
+the installation process you will be required to reboot your PC.
+
+1.2       MSCHAP V2:
+
+A new MSCHAP secure mode (MSCHAP V2) has been implemented, providing mutual
+authentication, stronger initial data encryption keys, and different encryption
+keys for the transmit and receive paths.
+
+To minimize the risk of password compromise during MSCHAP exchanges, MSCHAP V2
+drops support for the MSCHAP password change V1, and will not transmit the LM
+password response.
+
+For VPN connections, a Windows NT 4.0 server (updated as described below) will
+negotiate MSCHAP V2 before negotiating the original MSCHAP. An updated Windows
+98 client will accept this offer and use MSCHAPV2 as the authentication method.
+To ensure that no VPN clients authenticate using MSCHAP, the server can be set
+to require MSCHAP V2. This will prevent legacy clients from presenting their
+credentials in an MSCHAP or PAP or CHAP exchange, and is a likely configuration
+for networks that require the most secure authentication method.
+
+1.3       Secure VPN Mode:
+
+If there are special circumstances in which you wish to ensure that your PC uses
+only the new MSCHAP V2 for all VPN connection attempts, a new client-side
+registry flag, SecureVPN, can be used to force this behavior. When this flag is
+set, your PC will only accept MSCHAP V2 authentication for any VPN connections.
+In addition, this flag will require data encryption for all VPN connections.
+Dial-up connections are not affected.
+
+  NOTE: Most users will not need to use the Secure VPN flag. This flag should
+  be used with care because it will affect the behavior of all VPN connections
+  from your machine. In general, the required use of MSCHAP V2 and data
+  encryption can be enforced more easily on the server.
+
+The registry setting which will force a Windows 98 client to use only the new
+MSCHAP V2 secure mode and require data encryption for PPTP connections is
+defined below. By default, this registry variable is absent, meaning "do not
+force secure mode on PPTP connections". The value of this variable is checked
+just before a connection is attempted.
+
+  HKLM\System\CurrentControlSet\Services\RemoteAccess
+  Default: 0x00000000
+
+  DWORD: SecureVPN
+  Value: 0x00000001 == Force secure mode (MSCHAP V2 plus data encryption) on all
+  PPTP connections
+  Value: 0x00000000 == Do not force secure mode on PPTP connections
+
+1.4       LM Response Suppression:
+
+This release also provides a new registry variable which prevents the client from
+sending the LM response to a legacy MSCHAP challenge, as defined below. By
+default, this variable is absent, meaning that the client should send the LM
+response (in order to maintain compatibility with legacy servers). This variable
+affects both dial-up and VPN connections; its value is checked just before a
+connection is attempted.
+
+  NOTE: Most users will not need to use this registry variable. The new secure
+  mode MSCHAP V2 will not send the LMHash response, so this registry value is
+  most useful when connecting to older access servers which use the original
+  MSCHAP. Setting this variable on a Windows 98 client will prevent the client
+  from connecting to a Windows 95 or Windows 98 server.
+
+  HKLM\System\CurrentControlSet\Services\RemoteAccess
+
+  DWORD: UseLmPassword
+  Default: 0x00000001
+
+  0x00000000 = Do not send LM challenge response (send only NT challenge
+  response)
+  0x00000001 = Send LM challenge response
+
+1.5        Forcing Strong Encryption:
+
+Windows 98 Dial-up Networking already supports a checkbox to require encryption
+for a specific connection. Clients which support 128-bit encryption will accept
+any level of encryption (128-bit or 40-bit) offered by the server. This upgrade
+provides a new registry flag, ForceStrongEncryption. When set, this flag will
+require 128-bit encryption for any connection which has already been set to
+require encryption. (In other words, setting the new registry flag essentially
+changes the meaning of the existing checkbox from "require encryption" to
+"require strong encryption".)
+
+  NOTE: As originally installed, Windows 98 Dial-up Networking supports 40-bit
+  encryption. An optional upgrade will be available to users in North America
+  which adds the ability to support 128-bit encryption as well.
+
+The registry flag which forces strong encryption is defined below. By default,
+the flag is absent. The value of this flag is checked just before a connection
+is attempted.
+
+  HKLM\System\CurrentControlSet\Services\RemoteAccess
+
+  DWORD: ForceStrongEncryption
+  Default: 0x00000000
+
+  0x00000000 = No effect; does not force strong encryption
+  0x00000001 = Requires 128-bit encryption for any connection which already
+  requires encryption
+
+1.6        Server Updates:
+
+This upgrade is fully compatible with legacy Dial-up and PPTP systems. However,
+in order to benefit from MSCHAP V2, both the client and server must support this
+new mode. Server support for MSCHAPV2 will be included in Windows NT 4.0 Service
+Pack 4. For installations which require these features before general
+availability of Service Pack 4, a hotfix for Service Pack 3 has been created.
+This can be found on the Microsoft FTP site at
+ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/pptp3-fix.
+Servers running the Routing and Remote Access Upgrade should first apply the
+above, and then also apply rras30-fix from the same location.
+
+  NOTE: RAS and PPTP servers must be maintained to current Windows NT Service
+  Pack levels. A Windows 98 client machine may not connect to a Windows NT
+  Server that has not been updated to Service Pack 3 or above.
+
+1.7        Other Changes:
+
+The details section of the connection status display has been modified to
+identify the specific form of CHAP that was used in the connection. Standard
+CHAP is displayed as "Challenge Authentication Protocol"; legacy MSCHAP is
+displayed as "Microsoft Challenge Authentication Protocol"; and MSCHAP V2 is
+displayed as "Microsoft Mutual Challenge Authentication Protocol".
+
+1.8        Removing this Update:
+
+This security upgrade does not provide its own uninstall program. If you wish to
+remove the upgrade, you can accomplish this by removing and re-installing
+Dial-up Networking as a whole. If you installed Windows 98 as an upgrade, this
+process may ask for your original Windows 98 CD. If you have defined connections
+in the Dial-up Networking folder, these will not be lost. However, all
+information regarding ISDN devices (including switch type and spid) will be
+lost, so you should record this information before proceeding. (ISDN information
+can be created or reviewed by running the ISDN Setup Wizard which can be found
+in the Start -&gt; Programs -&gt; Accessories -&gt; Communications menu.) To
+uninstall Dial-up Networking, use the Windows Setup tab of the "Add/Remove
+Programs" application in the control panel. Select Communications, then click on
+the Details button to see individual components. Note the communications
+features which had previously been enabled so that you can restore them later.
+Deselect Dial-up Networking and click on OK for this dialog and the Windows
+Setup dialog. You may receive a warning that removing Dial-up Networking will
+also remove other features which depend on it. Make a note of these features for
+later use, and click OK. To reinstall the original Windows 98 Dial-up Networking
+without this security upgrade, return to the Windows Setup tab of the
+"Add/Remove Programs" application in the control panel. Select Communications,
+and again click on the Details. Select Dial-up Networking and each of the
+communications features which had previously been enabled. Then click OK to this
+dialog and the Windows Setup dialog.
+
+  NOTE: As Windows restores Dial-up Networking and the associated components,
+  you will receive warnings that the installer has found that that a file which
+  it is about to write is older than the one already present on your machine.
+  In most situations, you would keep the newer file. However, in this case, the
+  correct response is to write the older file to your PC.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbreadme kbtool dun osr2 win95 win98 kbDialUp 
+Technology        : kbWin95search kbWin98search kbOPKSearch kbZNotKeyword3 kbWin98 kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155412/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155412/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155412/","publisher":null,"image":null,"headline":"Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155412-dbweb-how-to-install-dbweb-10-with-microsoft-iis">Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155412
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:1.0; winnt:1.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 24-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft dbWeb, version 1.0 
+- Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install Microsoft dbWeb version 1.0 if you use
+Microsoft Internet Information Server (IIS) as your web server software.
+
+The dbWeb version 1.0 Setup program does not provide for automatic installation
+with Microsoft IIS. A dialog box that appears during setup prompts you for the
+name of your web server software. The list of web servers does not include IIS.
+
+MORE INFORMATION
+================
+
+The following steps walk you through installing dbWeb version 1.0 using IIS as
+your web server. These steps assume that IIS is already installed on your
+server.
+
+Gathering Information About IIS
+-------------------------------
+
+1. Start IIS Internet Service Manager, and click the computer name that appears
+  on the same line as the WWW service.
+
+2. On the Properties menu, click Service Properties.
+
+3. Click the Directories tab. Note the CGI script and HTML document directories,
+  and the alias associated with each. You will need this information to install
+  dbWeb 1.0.
+
+  The default IIS CGI script directory is C:\Inetsrv\Scripts, and its alias is
+  /scripts. The default HTML document directory is C:\Inetsrv\wwwroot, and its
+  alias is &lt;Home&gt;. The alias represents the relative path you need to
+  type in a web browser to view documents in that directory. For example:
+
+   Directory                Alias          Browser URL
+   -----------------------------------------------------------------------
+   C:\Inetsrv\Scripts       /scripts       http://servername/scripts/ 
+   C:\Inetsrv\wwwroot       &lt;Home&gt;         http://servername/ 
+   C:\Inetsrv\Scripts\dbWeb /scripts/dbWeb http://servername/scripts/dbWeb
+   C:\Inetsrv\wwwroot\dbWeb /dbWeb/        http://servername/dbWeb/ 
+
+Installing dbWeb 1.0
+--------------------
+
+1. Insert Disk 1 of the dbWeb 1.0 disks into a floppy drive on your computer.
+
+2. In Windows NT 3.51, click Run on the File menu of Program Manager or File
+  Manager; in Windows NT 4.0, click the Start button, and then click Run.
+
+3. Type a command to run the dbWeb 1.0 Setup program, for example:
+
+  "a:\setup" (without the quotation marks)
+
+4. In the Welcome box, click Next.
+
+5. In the "Enter your product key" box, type your Product Key, and then click
+  Next. The Product Key is inside the cover of the Microsoft dbWeb 1.0 Getting
+  Started manual. You must type the Product Key in capital letters.
+
+6. In the "Choose Destination Location" box, type the directory where you want
+  to install dbWeb 1.0 main components, and then click Next. The default
+  directory is C:\dbWeb.
+
+7. In the "Select components to install" box, click each of the four components,
+  and then click Next.
+
+8. In the "Web Server Selection" box, click "Other web server," and then click
+  Next.
+
+9. In the "Select your web server directory" box, click the Browse button to
+  locate the IIS directory, and then click Next. The default directory for IIS
+  is C:\Inetsrv.
+
+10. In the "Select physical CGI path" box, click the Browse button to locate the
+  IIS CGI scripts directory, and then click Next. You identified the CGI
+  scripts directory in step 3 of "Gathering Information About IIS" earlier in
+  this article.
+
+11. In the "Enter relative CGI path" box, type the relative path for dbWeb CGI
+  scripts, and then click Next. For example, if /scripts is the relative path
+  (alias) for the IIS CGI script directory, type /scripts/dbWeb.
+
+12. In the "Select physical HTML path" box, click the Browse button to locate
+  the IIS HTML directory, and then click Next. You identified the HTML
+  directory in step 3 of "Gathering Information About IIS" earlier in this
+  article.
+
+13. In the "Enter relative HTML path" box, type the relative path for dbWeb
+  auxiliary files, and then click Next. For example, if &lt;Home&gt; is the
+  relative path (alias) for the IIS HTML directory, type /dbWeb/.
+
+14. The dbWeb 1.0 Setup program copies files to your computer.
+
+15. Choose a program group that you want to use for dbWeb 1.0 program icons, and
+  then click Next.
+
+16. When you see a message stating that installation is complete, click OK.
+
+17. Set up your ODBC Data Sources. There is an ODBC icon in the dbWeb 1.0
+  program group and in Control Panel.
+
+18. Start the dbWeb Service, using the Services icon in Control Panel.
+
+REFERENCES
+==========
+
+For more information about setting up ODBC Data Sources, search for "ODBC
+setup," and then "Installing and Configuring ODBC" using the Microsoft dbWeb 1.0
+Help menu.
+
+For more information about starting the dbWeb Service, search for "dbWeb
+service," and then "Installing and Starting the dbWeb Service" using the
+Microsoft dbWeb 1.0 Help menu.
+
+Additional query words: setup
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbAudDeveloper kbiis100 kbdbWebSearch kbdbWeb100
+Version           : WINDOWS:1.0; winnt:1.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

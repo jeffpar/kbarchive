@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/204/Q204054/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/204/Q204054/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/204/Q204054/","publisher":null,"image":null,"headline":"Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q204054-prb-errmsg-35603-invalid-key-wtreeview-or-listview-control">Q204054: PRB: ErrMsg 35603 "Invalid Key" w/TreeView or ListView Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q204054
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbListView kbTreeView kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 10-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you add a ListItem to a ListView control or a node to a TreeView control when
+the value being assigned to the key is numeric or is a string that evaluates to
+a number (such as "123"), the following error message is raised:
+
+  Run-time error '35603':
+
+  Invalid key
+
+CAUSE
+=====
+
+Keys are restricted to non-numeric values for compatibility with the Visual
+Basic for Applications (VBA) Collection Object. Although collections allow
+numeric keys, an error could occur if an item in a collection was accessed using
+exclamation (!) syntax with a numeric key.
+
+RESOLUTION
+==========
+
+Append a non-numeric character to numeric keys.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. On the Project menu, click to select Components, check Microsoft Windows
+  Common Controls, and then click OK.
+
+3. Add a ListView control, a TreeView control, and a CommandButton control to
+  Form1.
+
+4. Add the following code to the Declarations section of Form1:
+
+  Option Explicit
+
+  Private Sub Command1_Click()
+  ' Uncomment either of the following lines to raise the error
+  ' ListView1.ListItems(1).Key = "123"
+  ' TreeView1.Nodes(1).Key = "123"
+  End Sub
+
+  Private Sub Form_Load()
+   ListView1.ListItems.Add , , "Test1"
+   TreeView1.Nodes.Add , , , "Node1"
+
+  ' Uncomment either of the following lines to raise the error
+  ' ListView1.ListItems.Add , "123", "Test2"
+  ' TreeView1.Nodes.Add , , "123", "Node2"
+  End Sub
+
+5. Uncomment any of the commented lines of code in the Form_Load event and run
+  the project. Note that the error message in the "Symptoms" section appears
+  immediately. Clicking the Debug button selects the uncommented line.
+
+6. Stop the project and comment the line again.
+
+7. Uncomment either line of code in the Command1_Click event, run the project,
+  and click on Command1. The error message in the "Symptoms" section appears.
+  Clicking the Debug button selects the uncommented line.
+
+Additional Notes
+----------------
+
+- You can use the IsNumeric function to test values before you use them as
+  keys.
+
+- The use of white space (such as spaces) as the only non-numeric characters or
+  appending only a single Alpha character may fail, depending on the language
+  selected in Regional Settings.
+
+Additional query words: comctl32 mscomctl 35603
+
+======================================================================
+Keywords          : kbCmnCtrls kbListView kbTreeView kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

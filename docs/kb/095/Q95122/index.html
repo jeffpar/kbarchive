@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95122: Manual Installation of Golf for Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95122: Manual Installation of Golf for Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95122/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95122/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95122/","publisher":null,"image":null,"headline":"Q95122: Manual Installation of Golf for Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95122-manual-installation-of-golf-for-windows">Q95122: Manual Installation of Golf for Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95122
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-1999
+
+kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The files on the Microsoft Golf disks are compressed using the standard Windows
+compression method. They can be extracted by typing the following at the MS-DOS
+command prompt and pressing ENTER (For information about how to get to the
+MS-DOS command prompt under Windows 95, see your printed Windows documentation
+or online Help.)
+
+  expand &lt;drive1:&gt;filename.ex_ &lt;drive2:&gt;\msgolf\filename.ext
+
+where "drive" is your floppy disk drive, "filename.ex_" is the compressed file,
+"drive2" is your hard disk drive, and the "filename.ext" is the expanded file.
+For example, type the following command to expand the Torrey Pines course from
+drive A into the MSGOLF directory on drive C:
+
+  expand a:torrey_p.cr_ c:\msgolf\torrey_p.crs
+
+Note that with the 720K disks, the TORREY_P.CRS file is actually split between
+Disks 2 and 3. In this case, it is necessary to combine the files first. This
+can be done typing the following command:
+
+  copy torrey_p.c1_ /b + torrey_p.c2_ /b torrey_p.cr_
+
+The /b switch specifies a binary copy operation. Once this has been done, the
+file can be expanded normally. The underscore on the filename's extension
+indicates that the file is compressed.
+
+If you are installing Golf into a shared Windows configuration, or when there are
+other problems during installation, this may be the only way to install the
+program.
+
+MORE INFORMATION
+================
+
+When you run the SETUP.EXE program on Disk 1 of Microsoft Golf, the necessary
+files are distributed as follows (under default conditions).
+
+The following files are installed in the C:\MSGOLF directory:
+
+  C:\MSGOLF\README.TXT
+  C:\MSGOLF\TORREY_P.CRS
+  C:\MSGOLF\GSDZ.DLL
+  C:\MSGOLF\RSWAV.DLL
+  C:\MSGOLF\GOLFFC14.RAD
+  C:\MSGOLF\GOLFFP14.RAD
+  C:\MSGOLF\GOLFMC14.RAD
+  C:\MSGOLF\GOLFMP14.RAD
+  C:\MSGOLF\GOLFFC18.RAD
+  C:\MSGOLF\GOLFMC18.RAD
+  C:\MSGOLF\MSGOLF.EXE
+  C:\MSGOLF\GOLFFP18.RAD
+  C:\MSGOLF\GOLFMP18.RAD
+  C:\MSGOLF\GOLFFD14.RAD
+  C:\MSGOLF\GOLFMD14.RAD
+  C:\MSGOLF\GPALETTE.DLL
+  C:\MSGOLF\GOLFFC24.RAD
+  C:\MSGOLF\GOLFFD18.RAD
+  C:\MSGOLF\RADANI.DLL
+  C:\MSGOLF\GOLFMC24.RAD
+  C:\MSGOLF\GOLFMD18.RAD
+  C:\MSGOLF\GOLFFP24.RAD
+  C:\MSGOLF\GOLFMP24.RAD
+  C:\MSGOLF\GOLFFC28.RAD
+  C:\MSGOLF\GOLFMC28.RAD
+  C:\MSGOLF\GOLFFP28.RAD
+  C:\MSGOLF\GOLFMP28.RAD
+  C:\MSGOLF\GOLFFD24.RAD
+  C:\MSGOLF\GOLFMD24.RAD
+  C:\MSGOLF\MSGOLF.HLP
+  C:\MSGOLF\GOLFFD28.RAD
+  C:\MSGOLF\GOLFMD28.RAD
+  C:\MSGOLF\PRACTICE.SPC
+  C:\MSGOLF\GLFMOD2.EXE
+
+The following files are installed in the C:\MSGOLF\SOUNDS directory:
+
+  C:\MSGOLF\SOUNDS\CHIP.WAV
+  C:\MSGOLF\SOUNDS\PUTT.WAV
+  C:\MSGOLF\SOUNDS\PINHIT.WAV
+  C:\MSGOLF\SOUNDS\SHORTSWG.WAV
+  C:\MSGOLF\SOUNDS\SPLASH.WAV
+  C:\MSGOLF\SOUNDS\QUACK2.WAV
+  C:\MSGOLF\SOUNDS\PRACTICE.WAV
+  C:\MSGOLF\SOUNDS\TREE.WAV
+  C:\MSGOLF\SOUNDS\B04.WAV
+  C:\MSGOLF\SOUNDS\B11.WAV
+  C:\MSGOLF\SOUNDS\B03.WAV
+  C:\MSGOLF\SOUNDS\B05.WAV
+  C:\MSGOLF\SOUNDS\B10.WAV
+  C:\MSGOLF\SOUNDS\RATTLE.WAV
+  C:\MSGOLF\SOUNDS\SWING.WAV
+  C:\MSGOLF\SOUNDS\B09.WAV
+  C:\MSGOLF\SOUNDS\B07.WAV
+  C:\MSGOLF\SOUNDS\B08.WAV
+  C:\MSGOLF\SOUNDS\B02.WAV
+  C:\MSGOLF\SOUNDS\B06.WAV
+  C:\MSGOLF\SOUNDS\B01.WAV
+  C:\MSGOLF\SOUNDS\SITDOWN.WAV
+  C:\MSGOLF\SOUNDS\GETTHERE.WAV
+  C:\MSGOLF\SOUNDS\NICEBIRD.WAV
+  C:\MSGOLF\SOUNDS\GREATPT.WAV
+  C:\MSGOLF\SOUNDS\THATPLAY.WAV
+  C:\MSGOLF\SOUNDS\CRUSHED.WAV
+  C:\MSGOLF\SOUNDS\NICEPT.WAV
+  C:\MSGOLF\SOUNDS\NICEPAR.WAV
+  C:\MSGOLF\SOUNDS\BECLUB.WAV
+  C:\MSGOLF\SOUNDS\THATSWET.WAV
+  C:\MSGOLF\SOUNDS\YES.WAV
+  C:\MSGOLF\SOUNDS\NICEEAGL.WAV
+  C:\MSGOLF\SOUNDS\QUACK1.WAV
+  C:\MSGOLF\SOUNDS\GOTAHOLD.WAV
+  C:\MSGOLF\SOUNDS\HITTREE.WAV
+  C:\MSGOLF\SOUNDS\NICESHOT.WAV
+
+In the C:\WINDOWS directory, a Program Manager Group file is added when the icon
+is created. This file is not located on any of the Golf disks:
+
+  C:\WINDOWS\MICROSOF.GRP
+
+The following files are installed in the C:\WINDOWS\SYSTEM directory:
+
+  C:\WINDOWS\SYSTEM\VRSD.386
+
+In the SYSTEM.INI file, the following line is added to the [386Enh] section:
+
+    DEVICE=VRSD.386
+
+This totals 73 files and 2 directories created on the destination disk.
+
+Remember that Golf was designed to be installed using the Setup program, not by
+manual installation. The procedure outlined above is to be used as a last
+resort.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

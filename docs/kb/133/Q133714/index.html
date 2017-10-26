@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133714: PRB: &quot;Not Enough Space on Drive x&quot; Error During Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133714: PRB: &quot;Not Enough Space on Drive x&quot; Error During Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133714/","publisher":null,"image":null,"headline":"Q133714: PRB: &quot;Not Enough Space on Drive x&quot; Error During Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133714-prb-not-enough-space-on-drive-x-error-during-installation">Q133714: PRB: "Not Enough Space on Drive x" Error During Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133714
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Microsoft Visual FoxPro setup, you may be presented with a dialog
+box that contains the following error message where drive X is the drive on
+which Windows is installed:
+
+  Not Enough Space on Drive X
+
+CAUSE
+=====
+
+When Visual FoxPro is installed, various Windows support components are
+installed into the WINDOWS\SYSTEM subdirectory. Visual FoxPro requires a minimum
+amount of space for these support components.
+
+RESOLUTION
+==========
+
+Based on the information presented in the dialog box, you can selectively remove
+some of the components and decrease the disk resources required in the
+\WINDOWS\SYSTEM subdirectory, or you can free up disk space to meet the minimum
+disk space requirements as shown in the dialog box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Visual FoxPro has three installation options:
+
+- Complete
+
+- Custom
+
+- Laptop
+
+When you choose the Complete installation option, Visual FoxPro requires 6680K of
+free disk space on the drive where Windows is installed. Without sufficient disk
+space, the product can not be installed.
+
+When you choose the Laptop installation option, Visual FoxPro requires less than
+4000K of free disk space in the \WINDOWS\SYSTEM subdirectory.
+
+When you choose the Custom option, Visual FoxPro requires as much as 6680K of
+free disk space (depending on the number of components installed) on the drive
+where Windows is installed.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Set up a computer with a C drive that has fewer than seven megabytes free and a D
+drive where Visual FoxPro will be installed. Given these two conditions (or
+similar ones), the behavior noted above will occur.
+
+Additional query words: VFoxWin install
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

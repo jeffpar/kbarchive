@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/302/Q302863/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/302/Q302863/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/302/Q302863/","publisher":null,"image":null,"headline":"Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q302863-xfor-how-to-use-the-imc-queue-dump-utility-imcdumpexe">Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q302863
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the IMC Queue Dump utility (Imcdump.exe).
+Imcdump.exe is included with Exchange Server versions 4.0, 5.0, and 5.5. For
+Exchange Server 5.5, Imcdump.exe is located in the root of the CD-ROM in the
+Server\Support\Utils\&lt;Platform&gt; folder, where &lt;Platform&gt; is either
+Alpha or I386. For Exchange Server, versions 4.0 and 5.0, Imcdump.exe is located
+on the root of the CD-ROM in the Support\Utils\&lt;Platform&gt; folder.
+
+MORE INFORMATION
+================
+
+Imcdump.exe displays information about the internal representation of the
+Internet Mail Service queues that is stored in the Queue.dat file of the Imcdata
+folder.
+
+How to Use Imcdump.exe
+----------------------
+
+Usage: imcdump &lt;heap-path&gt;
+INBOUND|OUTBOUND|FREELIST|HEAP|&lt;queuename&gt;
+
+The &lt;heap-path&gt; is the path to the Queue.dat file including the file name.
+By default, the path is &lt;Homedrive&gt;\Exchsrvr\Imcdata\Queue.dat.
+
+For example, to dump the INBOUND queue for the Queue.dat file that is located in
+the default location, run the following command from a command prompt (start
+from the same folder where the Imcdump.exe file is located):
+
+  "imcdump &lt;homedrive&gt;\exchsrvr\imcdata\queue.dat inbound" (without the
+  quotation marks)
+
+When you run this command, the output is displayed in the window. To dump the
+output to a file, run the following command:
+
+  "imcdump &lt;homedrive&gt;\exchsrvr\imcdata\queue.dat
+  inbound&gt;c:\imcdump.txt" (without the quotation marks)
+
+Troubleshooting
+---------------
+
+This section describes potential errors, their causes and resolutions.
+
+- Possible issue:
+
+   - Symptoms: You receive either of the following error messages:
+
+  Failed to open C:\Exchsrvr\Imcdata\Queue.dat Error=-2147483616
+
+  -or-
+
+  Failed to open C:\Exchsrvr\Imcdata\Queue.dat Error=80000020
+
+   - Cause: The Microsoft Exchange Internet Mail Service (MSExchangeIMC)
+     service is started.
+
+   - Resolution: Stop the MSExchangeIMC service in the Services Control Panel.
+
+- Possible issue:
+
+   - Symptoms: You receive the following error message:
+
+  Failed to open C:\Exchsrvr\Imcdata\ Error=-2147483645
+
+   - Cause: The incorrect path is specified.
+
+   - Resolution: Enter the correct path to the Queue.dat file. Make sure to
+     include the Queue.dat file in the path.
+
+
+Additional query words: Microsoft Exchange Internet Mail Connector service readme.rtf readme.doc
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

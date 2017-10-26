@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/225/Q225210/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/225/Q225210/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/225/Q225210/","publisher":null,"image":null,"headline":"Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q225210-prb-outlook-form-code-not-added-when-using-html-form-converter">Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q225210
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:1.2,1.21,5.5
+Operating System(s): 
+Keyword(s): kbCDO120 kbCDO121 kbMsg kbGrpDSMsg kbDSupport
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Collaboration Data Objects (CDO), versions 1.2, 1.21 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you convert a Microsoft Outlook form to a Hypertext Markup Language (HTML)
+form using the HTML Form Converter, any code that was linked to buttons on the
+original Microsoft Outlook form will not be placed onto the converted active
+server pages (ASP) page for the HTML form. The code that was in the previous
+Microsoft Outlook form will be placed in the file Script.txt located in the same
+directory as the newly created ASP files.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following steps demonstrate how to add code to a button that was created on
+the original Microsoft Outlook form:
+
+1. Create a Microsoft Outlook form that has one command button on the form with
+  the name of "cmdDisplay". Use the HTML forms converter to change the form to
+  a HTML form.
+
+2. Go to the respective directory that the form is created in, as follows:
+
+  Drive\(Exchange Server Directory)\WEBDATA\USA\FORMS\IPM\NOTE\(Form Name)
+
+  Here is an example of the path that would be used:
+
+  C:\Exchsrvr\WebData\USA\FORMS\IPM\NOTE\Equipment_20Request
+
+  Where the actual name of the Microsoft Outlook form is Equipment Request.
+
+3. Open the ASP file that displays the main form. Search for the name of the
+  button that is being modified. In the following example:
+  cmdDisplay_46_0_g is the converted name for the cmdDisplay button on the
+  original Microsoft Outlook form.
+
+  The prior listed item pertains to a control. The name of the control is in the
+  form named "a_b_c_d"
+
+  Where:
+	a = control's Outlook name
+	b, c, d = other info necessary to guarantee uniqueness
+
+  &lt;!-- UniqueID=cmdDisplay_46_0_g Property= PropertyType= PropertyFormat= --&gt;
+  &lt;input type='button' name='cmdDisplay_46_0_g' value="Display"_
+      style='width:120;height:32;font-face:Tahoma;font-size:8;color:000000;
+  background:c0c0c0;text-decoration:;' OnClick="rtn=push_me()"&gt;
+
+  This is the same name that appears in the ToDo.txt.
+
+4. Create a new function called "push_me()" or whatever the name is in the
+  OnClick= statement for the HTML button. The function can be added at the
+  beginning of the current ASP that the generated HTML resides in.
+
+5. Cut and paste the respective code from the ToDo.txt file that corresponds to
+  this button. There are a few things that you need to be aware of when adding
+  this code:
+   - This is client-side script, so to keep cross-browser compatiblity, you
+     should use Javascript.
+
+   - The script is also running in an ASP, so you may not have the Microsoft
+     Outlook client installed, so you should rewrite any code that uses the
+     Microsoft Outlook Object Model to use CDO instead.
+
+  For example, the following code corresponds to the prior HTML button and
+  launches a msgbox upon execution (This code was placed at the begining of the
+  HTML section of the ASP):
+
+     &lt;SCRIPT LANGUAGE="JavaScript"&gt;
+     var rtn=false
+     function push_me()
+     {
+  	var msg1="This is a sample message from the HTML form."
+  	alert(msg1)
+  	return true
+     }
+     &lt;/SCRIPT&gt;
+
+6. Save the ASP file and launch the form using your browser. The button on the
+  form should display a message box.
+
+REFERENCES
+==========
+
+For additional information on the HTML forms converter query on the following
+keywords in MSDN or the Knowledge Base:
+
+  forms converter
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCDO120 kbCDO121 kbMsg kbGrpDSMsg kbDSupport 
+Technology        : kbOutlookSearch kbAudDeveloper kbCDOsearch kbExchangeSearch kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3 kbCDO120 kbCDO121
+Version           : WINDOWS:1.2,1.21,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

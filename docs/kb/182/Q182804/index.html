@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182804: XADM: Edbutil /d Fails with Error -1811 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182804: XADM: Edbutil /d Fails with Error -1811" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182804/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182804/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182804/","publisher":null,"image":null,"headline":"Q182804: XADM: Edbutil /d Fails with Error -1811","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182804-xadm-edbutil-d-fails-with-error--1811">Q182804: XADM: Edbutil /d Fails with Error -1811</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182804
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 04-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Edbutil with the /d option, the following error message may
+appear:
+
+  Operation terminated with error -1811
+
+Additionally, you may see the following errors in the event log:
+
+  Event ID 63
+  Source Edb
+  Description:
+  Unable to write a shadowed header for file x:\exchsrvr\bin\temp.edb
+
+  Event ID 50
+  Source Edb
+  Description:
+  The database engine could not access the file called
+  x:\exchsrvr\bin\temp.edb
+
+NOTE: This has also been seen in Edbutil /mh.
+
+CAUSE
+=====
+
+This error can be caused by not having the proper permissions on the bin
+directory when the hard disk drive is formatted as NTFS.
+
+WORKAROUND
+==========
+
+To work around this problem, set the permissions on the bin directory to full
+control for the administrators group, or explicitly set permissions for the user
+needing to run this utility.
+
+MORE INFORMATION
+================
+
+The file permissions are set as follows:
+
+1. Go to the bin directory via Windows Explorer.
+
+2. Get Properties of the directory.
+
+3. Go to the Security tab and select Permissions.
+
+4. Click Add and select the administrators group or the person required to run
+  this utility.
+
+5. Change the Access type to full control, and click OK. You should now be able
+  to run this utility without getting the -1811 error.
+
+
+Additional query words: edbutil operation terminated; error -1811
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

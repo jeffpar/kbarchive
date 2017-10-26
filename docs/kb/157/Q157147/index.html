@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157147/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157147/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157147/","publisher":null,"image":null,"headline":"Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157147-fp-tcpip-test-fails-but-other-internet-programs-run">Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157147
+Product(s): Word Front Page
+Version(s): ; WINDOWS:1.0,1.1
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork kbusage kbdta
+Last Modified: 04-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q205466.
+
+For a Microsoft FrontPage 98 version of this article, see Q194353.
+
+SYMPTOMS
+========
+
+When you run the Network Test (FrontPage 97) or the TCP/IP Test (FrontPage 1.1),
+"No" is returned on one or more tests even though other Internet applications
+run without error. The FrontPage 1.0 TCP/IP Test returns:
+
+  "Fail" under similar circumstances.
+
+CAUSE
+=====
+
+This problem occurs because FrontPage uses more of the Winsock features than
+most Internet applications. Unlike most Internet applications, FrontPage not
+only browses and retrieves files via Winsock, it also requires your computer to
+act as a Web server.
+
+Not every third party TCP/IP stack includes all of the industry standard Winsock
+API calls. Therefore, if the TCP/IP test fails, FrontPage will be unable to work
+with that particular stack.
+
+MORE INFORMATION
+================
+
+When the TCP/IP Test or Network Test begins, it loads the Wsock32.dll and then
+it looks for clear entry points. If the test does not locate any clear entry
+points, the test calls the WSAStartup startup routine, which is one of the entry
+points found, and it requests version 1.1 or higher of the Winsock API.
+
+The TCP/IP test or Network Test then attempts to execute the following Winsock
+API calls:
+
+  WSACleanup
+  socket
+  inet_addr
+  inet_ntoa
+  bind
+  listen
+  getsockname
+  connect
+  accept
+  send
+  recv
+  closesocket
+  gethostname
+  gethostbyname
+
+FrontPage will work only with third-party TCP/IP stacks that properly support all
+of these API calls.
+
+For more information about the Microsoft TCP/IP stack, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q122928 Description of the WINSOCK.DLL File
+
+
+  Q138789 How to Connect to the Internet in Windows 95
+
+
+Winsock is the common name for the Windows Sockets Interface Specification. This
+specification defines a network programming interface for Microsoft Windows
+which is based on the "socket" paradigm popularized in the Berkeley Software
+Distribution (BSD) from the University of California at Berkeley. It encompasses
+both Berkeley socket style routines and a set of Windows specific extensions
+designed to allow a programmer to take advantage of the message-driven nature of
+Windows.
+
+Additional query words: frontpg 97
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : :; WINDOWS:1.0,1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

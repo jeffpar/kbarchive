@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103624: Err Msg: Winlogon.exe-Drive Not Ready | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103624: Err Msg: Winlogon.exe-Drive Not Ready" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103624/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103624/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103624/","publisher":null,"image":null,"headline":"Q103624: Err Msg: Winlogon.exe-Drive Not Ready","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103624-err-msg-winlogonexe-drive-not-ready">Q103624: Err Msg: Winlogon.exe-Drive Not Ready</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103624
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.5
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Windows NT, when the static Drive Letter in Disk Administrator is
+changed on the logical drive that Windows NT is presently installed on, you will
+receive one of the following error messages, or a combination of the messages:
+
+  Winlogon.exe-Drive not ready
+  The drive is not ready for use; its door may be open. Please check drive [C:]
+  and make sure that a disk is inserted and that the drive door is closed.
+
+  -or-
+
+  Winlogin.exe-No Disk
+  There is no disk in the drive. Please insert a disk into drive [C:]
+
+  -or-
+
+  System Error
+  Cannot read from drive [C:]
+
+WORKAROUND
+==========
+
+Change the drive letter in Disk Administrator back to it's original logical
+drive letter assignment.
+
+MORE INFORMATION
+================
+
+Assignment of drive letters affects only the way the device drivers assign drive
+letters to disks attached to the system. It does not remap any existing
+references to drive letters. Additionally, there may be active system processes
+that cannot be stopped in order to change the drive letter references.
+
+Static drive letter assignment is useful in the following cases:
+
+- To snapshot the existing drive letter assignments, so that new disks can be
+  added to the system without changing the drive letter assignments of the
+  existing disks.
+
+- To assign a particular drive letter to an existing volume. The former case
+  allows the user to add new disks without having to change environment
+  variables, page file location, .INI files, or application initialization data
+  stored in the registry. However, in the second case, the user (who must be an
+  administrator) is responsible for updating all references to the drive.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+  virtual and drive
+
+Additional query words: prodnt sticky
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

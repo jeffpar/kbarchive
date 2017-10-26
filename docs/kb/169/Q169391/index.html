@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169391: Error Messages After Opening Add/Remove Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169391: Error Messages After Opening Add/Remove Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169391/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169391/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169391/","publisher":null,"image":null,"headline":"Q169391: Error Messages After Opening Add/Remove Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169391-error-messages-after-opening-addremove-programs">Q169391: Error Messages After Opening Add/Remove Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169391
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbui
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience one or more of the following problems in Windows NT:
+
+- After you open Control Panel and click the Windows NT Setup tab in the
+  Add/Remove Programs properties window, an error message occurs. The error is
+  a small dialog box with a header information of "E". Inside the dialog box is
+  a red X and the letter S.
+
+- Internet Explorer 3.02 Setup may fail with the following error message:
+
+  Installation failed. An error occurred while trying to open the Ohrome.inf
+  file.
+
+- When you click the Appearance tab in the Display Properties window, no fonts
+  are available for text-based items. For example, if you click Active Title
+  Bar in the Item list, no fonts appear in the Font list.
+
+- When you click the Pointers tab in the Mouse Properties window, no schemes
+  are listed in the Scheme list.
+
+- When you attempt to add a SCSI device, you receive the following error
+  message:
+
+  Error occurred getting driver list from INF file Err=0.
+
+- When you try to install a device that uses an .inf file, nothing happens. For
+  example, when you try to configure a modem, nothing happens.
+
+- When you try to add a printer, you receive the following error message:
+
+  Printer operation cannot continue due to lack of resources.
+
+  Also, no printers are available.
+
+CAUSE
+=====
+
+These problems may occur for any of the following reasons:
+
+- Setupapi.dll is corrupted.
+
+- Setupapi.dll was replaced by a third-party version and is not functioning
+  properly with Windows NT.
+
+- The Plug and Play service is not set to an automatic startup type.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the appropriate method:
+
+Expand Setupapi.dll File
+------------------------
+
+Expand the Setupapi.dll file from the Windows NT 4.0 CD-ROM. To do so:
+
+1. Make sure Control Panel is closed.
+
+2. In Windows NT Explorer or My Computer, rename Setupapi.dll to Setupapi.old.
+  Setupapi.dll is in the %SystemRoot%\System32 folder.
+
+3. Click the Start button, point to Programs, and then click Command Prompt.
+
+4. Go to the i386 folder on the Windows NT 4.0 compact disc.
+
+5. Type the following command to expand the compressed .dll file:
+
+  expand setupapi.dl_ %SystemRoot%\system32\setupapi.dll
+
+
+Configure the Plug and Play Service to an Automatic Startup Type
+----------------------------------------------------------------
+
+To do so, use the following steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Services.
+
+2. Click the Plug And Play service, and verify that the Status is Started, and
+  that the Startup is Automatic. If they are not, configure them appropriately,
+  and then click OK.
+
+Additional query words: resources
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118969: X400: Err Msg: Error Malformed Address:Typ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118969: X400: Err Msg: Error Malformed Address:Typ" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118969/","publisher":null,"image":null,"headline":"Q118969: X400: Err Msg: Error Malformed Address:Typ","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118969-x400-err-msg-error-malformed-addresstyp">Q118969: X400: Err Msg: Error Malformed Address:Typ</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118969
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Microsoft Mail Gateway to X.400 is processing outgoing messages from
+Microsoft Mail for Appletalk Networks, this error may be generated:
+
+  ERROR 3 (creating P1 originator address): Malformed address: type &lt;2&gt;
+
+  NETWORK/POSTOFFICE/USERID
+
+  14:59:26 Extracting message from local message store: 0000043B 14:59:26 ERROR
+  3 (creating P1 originator address): Malformed address:
+  type &lt;2&gt; MACNET/MACPO/1F0001MF
+  14:59:26 ERROR 3 (converting PC mail message to X.400): No Originator Found
+  14:59:26 ERROR 3 (converting PC mail message to X.400): local form to X400
+  conversion
+  14:59:26 ERROR -18 (processing mail bound for X.400): Receive from local
+  message store Failed
+  14:59:26 WARNING -1 (processing mail bound for X.400): FROM:
+  MACNET/MACPO/1F0001MF
+  14:59:26 WARNING -1 (processing mail bound for X.400): SUBJECT: Test
+  14:59:26 ERROR -1 (collecting mail from local message store): ProcessMail()
+  14:59:26 WARNING -1 (receiving message): Failed receiving message
+
+CAUSE
+=====
+
+This error indicates that no address conversion exists for the sending
+network/postoffice.
+
+RESOLUTION
+==========
+
+Follow these steps to add a new entry:
+
+1. Go into the X.400 3.2 Admin program.
+
+2. Select "Addressing Conversion" in the Addressing section.
+
+3. Type in the Mail Connection Proxy Network name: "MACNET" (without the
+  quotation marks).
+
+4. Fill in the X.400 addressing fields appropriate to your system.
+
+5. Select Add.
+
+6. Restart the X400 Gateway to so it reads in this information.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

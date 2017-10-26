@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130346: How to Manipulate DateTime Fields in a Browse | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130346: How to Manipulate DateTime Fields in a Browse" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130346/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130346/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130346/","publisher":null,"image":null,"headline":"Q130346: How to Manipulate DateTime Fields in a Browse","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130346-how-to-manipulate-datetime-fields-in-a-browse">Q130346: How to Manipulate DateTime Fields in a Browse</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130346
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual FoxPro introduces a new data type, DateTime, that allows a date
+and time value to be stored in a single field. By default, Visual FoxPro
+displays the data stored to DateTime fields in a MM/DD/YY HH:MM:SS XM format.
+This article describes how to display just the date or just the time portion of
+a DateTime field in a Browse window.
+
+MORE INFORMATION
+================
+
+Visual FoxPro does not offer a command or function that automatically retrieves
+just the Date or just the Time portion of a DateTime field. The code provided
+below creates two functions GETDATE() and GETTIME(). The BROWSE command will use
+those functions to display just the date and just the time of a Datetime field.
+
+Code Sample
+-----------
+
+  *
+  * Begin Program
+  *
+  * This program assumes a table already exists with a DateTime field named
+  * tField.
+  *
+
+  BROWSE FIELDS date=getdate(tField), time=gettime(tField)
+
+  *
+  * The BROWSE command passes tField to the functions getdate()
+  * and gettime(). Each function returns to the BROWSE the values of
+  * justdate and justtime.
+  *
+
+  FUNCTION getdate
+  PARAMETERS tField
+  justdate = SUBSTR(TTOC(tField),1,8)
+  RETURN justdate
+  ENDFUNC
+
+  FUNCTION gettime
+  PARAMETERS tField
+  justtime = SUBSTR(TTOC(tField),10)
+  RETURN justtime
+  ENDFUNC
+
+  * NOTE: The justdate and justtime fields will be read-only at run time.
+  *
+  * End Program
+  *
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

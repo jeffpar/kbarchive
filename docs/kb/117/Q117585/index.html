@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117585/","publisher":null,"image":null,"headline":"Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117585-using-supra-fax-modem-v32bis-144i-with-windows-nt-ras">Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117585
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to use your Supra Fax Modem V.32bis 144i to run Windows NT or
+Windows for Workgroups remote access services (RAS), the modem fails to
+initialize.
+
+CAUSE
+=====
+
+This happens because the RAS MODEM.INF file contains commands that are not
+compatible with the Supra Fax Modem V32bis 144i.
+
+RESOLUTION
+==========
+
+To get your modem to work with RAS, use the following procedure:
+
+1. Open the MODEM.INF file in the SYSTEM32\RAS sub-directory in a text editor
+  such as Notepad.
+
+2. In the [Supra Fax Modem V32bis] and [Supra Fax Modem V32] sections of the
+  MODEM.INF file, make the following changes:
+
+  1. Change "&lt;protocol_on&gt;=\\N3" to "&lt;protocol_on&gt;=\\N".
+
+  2. Change "&lt;compression_on&gt;=%C1" and "&lt;compression_off&gt;=%C0" to
+     "&lt;compression_on&gt;=%E" and "&lt;compression_off&gt;=%E1".
+
+  3. If you are using auto-answer mode, change
+     "COMMAND_INIT=AT&amp;F2&amp;C1&amp;D2 S7=55 &lt;cr&gt;" to
+     "COMMAND_INIT=AT&amp;F2&amp;C1&amp;D0 S7=55 &lt;cr&gt;".
+
+     NOTE: If you are using Windows for Workgroups RAS, after this step, the
+     modem may not relenquish control of the telephone line after disconnecting
+     the remote server. (This may be a problem when the modem is used on a line
+     that is also used for voice.)
+
+Additional query words: wfw wfwg prodnt 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbAudDeveloper kbWinNT310Search kbWinNTW310Search kbWFWSearch kbWFW311
+Version           : :3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

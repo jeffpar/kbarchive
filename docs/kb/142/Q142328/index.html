@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142328: Windows 95 - How to Change International Dialing Access Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142328: Windows 95 - How to Change International Dialing Access Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142328/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142328/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142328/","publisher":null,"image":null,"headline":"Q142328: Windows 95 - How to Change International Dialing Access Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142328-windows-95---how-to-change-international-dialing-access-codes">Q142328: Windows 95 - How to Change International Dialing Access Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142328
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 13-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The international dialing access code is the number you dial to access
+international long distance from a particular country/region. This number is
+dialed automatically by Windows 95-based communications programs that use the
+telephony dialing rules. If the international access code for a country/region
+changes, you must modify the Telephon.ini file for Windows 95 to dial it. For
+example, Singapore recently changed its international access code from 005 to
+001.
+
+MORE INFORMATION
+================
+
+To change an international access code in Windows 95, add a [CountryOverrides]
+section to the Telephon.ini file in the Windows folder. For example, to change
+Singapore's international access code from 005 to 001, add the following lines
+to the Telephon.ini file:
+
+  [CountryOverrides]
+  Country65=65,66,"Singapore","G","","001EFG"
+
+Localized versions of Windows 95 (for languages other than English) need the same
+entries in the Telephon.ini file. The only part of the entry that is localized
+is the name of the country/region (in this example, Singapore).
+
+The following sections describe the above entry:
+
+- [CountryOverrides] is the section header to be added to the Telephon.ini
+  file.
+
+- "Country65" is the country/region being modified. 65 is the country/region
+  code for Singapore. If you needed to change the access code for the United
+  States, you would use "Country1."
+
+- The "65" to the right of the equal sign is the country/region code for
+  Singapore. "66" is the next number in the sequence of country/region codes.
+  This second number may or may not be contiguous, but it must be correct.
+
+- "Singapore" is the country/region name in this example.
+
+- "G" is the local dialing rules. This indicates that local dialing requires
+  only the local number.
+
+- "" represents the long distance dialing rules. In Singapore, there are no
+  long distance calls; therefore, there are no dialing rules for long distance.
+  In the United States, this would be "1FG" indicating a 1, the area code, and
+  a local number.
+
+- "001EFG" represents the dialing rules for international dialing. 001 is the
+  international dialing access number for the country/region. "EFG" represents
+  the country/region code, area code, and local number for the number being
+  dialed.
+
+There have been changes to international dialing access codes for several
+countries/regions since the release of Windows 95. The following
+[CountryOverrides] section shows the current list of international dialing
+access codes, including all the currently known changes. Due to the manner in
+which Windows 95 reads the list of countries/regions, we recommend that you
+place this entire list in the Telephon.ini file, not just parts of it. This
+ensures appropriate behavior.
+
+NOTE: You should type the following lines all on one line. They will not work if
+entered wrapped as shown.
+
+  [CountryOverrides]
+  Country1=1,101,"United States of America","G"," 1FG","011EFG"
+  Country101=1,102,"Anguilla","G"," 1FG","011EFG"
+  Country102=1,103,"Antigua","G"," 1FG","011EFG"
+  Country103=1,104,"Bahamas","G"," 1FG","011EFG"
+  Country104=1,105,"Barbados","G"," 1FG","011EFG"
+  Country105=1,106,"Bermuda","G"," 1FG","011EFG"
+  Country106=1,107,"British Virgin Islands","G"," 1FG","011EFG"
+  Country107=1,108,"Canada","G"," 1FG","011EFG"
+  Country108=1,109,"Cayman Islands","G"," 1FG","011EFG"
+  Country109=1,110,"Dominica","G"," 1FG","011EFG"
+  Country110=1,111,"Dominican Republic","G"," 1FG","011EFG"
+  Country111=1,112,"Grenada","G"," 1FG","011EFG"
+  Country112=1,113,"Jamaica","G"," 1FG","011EFG"
+  Country113=1,114,"Montserrat","G"," 1FG","011EFG"
+  Country114=1,115,"Nevis","G"," 1FG","011EFG"
+  Country115=1,116,"St. Kitts","G"," 1FG","011EFG"
+  Country116=1,117,"St. Vincent and the Grenadines","G"," 1FG","0EFG"
+  Country117=1,118,"Trinidad and Tobago","G"," 1FG","011EFG"
+  Country118=1,120,"Turks and Caicos Islands","G"," 1FG","0EFG"
+  Country120=1,121,"Barbuda","G"," 1FG","011EFG"
+  Country121=1,122,"Puerto Rico","G"," 1FG","011EFG"
+  Country122=1,123,"Saint Lucia","G"," 1FG","011EFG"
+  Country123=1,124,"United States Virgin Islands","G"," 1FG","011EFG"
+  Country124=1,20,"Guam","G"," 1FG","011EFG"
+  Country 20=20,212,"Egypt","G","0FG","00EFG"
+  Country212=212,213,"Morocco","G","0FG","00EFG"
+  Country213=213,216,"Algeria","G","0FG","00,EFG"
+  Country216=216,218,"Tunisia","G","0FG","00EFG"
+  Country218=218,220,"Libya","G","0FG","00EFG"
+  Country220=220,221,"Gambia","G","","00EFG"
+  Country221=221,222,"Senegal Republic","G","","00EFG"
+  Country222=222,223,"Mauritania","G","","00EFG"
+  Country223=223,224,"Mali","G","","00EFG"
+  Country224=224,225,"Guinea","G","","00EFG"
+  Country225=225,226,"Cote d'Ivoire","G","","00EFG"
+  Country226=226,227,"Burkina Faso","G","","00EFG"
+  Country227=227,228,"Niger","G","","00EFG"
+  Country228=228,229,"Togo","G","","00EFG"
+  Country229=229,230,"Benin","G","","00EFG"
+  Country230=230,231,"Mauritius","G","","00EFG"
+  Country231=231,232,"Liberia","G","","0EFG"
+  Country232=232,233,"Sierra Leone","G","IG","00EFG"
+  Country233=233,234,"Ghana","G","","00EFG"
+  Country234=234,235,"Nigeria","G","0FG","009EFG"
+  Country235=235,236,"Chad","G","","15EFG"
+  Country236=236,237,"Central African Republic","G","","19EFG"
+  Country237=237,238,"Cameroon","G","","00EFG"
+  Country238=238,239,"Cape Verde Islands","G","","0EFG"
+  Country239=239,240,"Sao Tome and Principe","G","","00EFG"
+  Country240=240,241,"Equatorial Guinea","G","","00EFG"
+  Country241=241,242,"Gabon","G","","00EFG"
+  Country242=242,243,"Congo","G","","00EFG"
+  Country244=244,245,"Angola","G","0FG","00EFG"
+  Country245=245,246,"Guinea-Bissau","G","","099EFG"
+  Country246=246,247,"Diego Garcia","G","","00EFG"
+  Country247=247,248,"Ascension Island","G","","01EFG"
+  Country248=248,249,"Seychelle Islands","G","","00EFG"
+  Country249=249,250,"Sudan","G","0FG","00EFG"
+  Country250=250,251,"Rwanda","G","","00EFG"
+  Country251=251,252,"Ethiopia","G","0FG","00EFG"
+  Country252=252,253,"Somalia","G","","19,EFG"
+  Country253=253,254,"Djibouti","G","","00EFG"
+  Country254=254,255,"Kenya","G","0FG","000EFG"
+  Country255=255,256,"Tanzania","G","0FG","0900EFG"
+  Country256=256,257,"Uganda","G","0FG","00EFG"
+  Country257=257,258,"Burundi","G","","90EFG"
+  Country258=258,260,"Mozambique","G","","00EFG"
+  Country260=260,261,"Zambia","G","0FG","00EFG"
+  Country261=261,262,"Madagascar","G","","16EFG"
+  Country262=262,263,"Reunion Island","G","","19EFG"
+  Country263=263,264,"Zimbabwe","G","1FG","110EFG"
+  Country264=264,265,"Namibia","G","0FG","09EFG"
+  Country265=265,266,"Malawi","G","","101EFG"
+  Country266=266,267,"Lesotho","G","","00EFG"
+  Country267=267,268,"Botswana","G","0FG","00EFG"
+  Country268=268,269,"Swaziland","G","","00EFG"
+  Country269=269,2691,"Mayotte Island","G","","10EFG"
+  Country2691=269,27,"Comoros","G","","10EFG"
+  Country27=27,290,"South Africa","G","0FG","09EFG"
+  Country290=290,291,"St. Helena","G","","01EFG"
+  Country291=291,297,"Eritrea","G","0FG","00EFG"
+  Country297=297,298,"Aruba","G","","00EFG"
+  Country298=298,299,"Faeroe Islands","G","","009EFG"
+  Country299=299,30,"Greenland","G","","009EFG"
+  Country30=30,31,"Greece","G","0FG","00EFG"
+  Country31=31,32,"Netherlands","G","0FG","00EFG"
+  Country32=32,33,"Belgium","G","0FG","00EFG"
+  Country33=33,34,"France","0FG","0FG","00EFG"
+  Country34=34,350,"Spain","G","FG","07,EFG"
+  Country350=350,351,"Gibraltar","G","","00EFG"
+  Country351=351,352,"Portugal","G","0FG","00EFG"
+  Country352=352,353,"Luxembourg","G","","00EFG"
+  Country353=353,354,"Ireland","G","0FG","00EFG"
+  Country354=354,355,"Iceland","G","0FG","00EFG"
+  Country355=355,356,"Albania","G","0FG","00EFG"
+  Country356=356,357,"Malta","G","","00EFG"
+  Country357=357,358,"Cyprus","G","0FG","00EFG"
+  Country358=358,359,"Finland","G","0FG","00EFG"
+  Country359=359,36,"Bulgaria","G","0FG","00EFG"
+  Country36=36,370,"Hungary","G"," 06,FG","00EFG"
+  Country370=370,371,"Lithuania","G"," 8WFG","8W10EFG"
+  Country371=371,372,"Latvia","G"," 8,FG","00EFG"
+  Country372=372,373,"Estonia","G"," 8,2IG","8,00EFG"
+  Country373=373,374,"Moldova","G"," 8WFG","8W10EFG"
+  Country374=374,375,"Armenia","G"," 8,IG","8,10EFG"
+  Country375=375,376,"Belarus","G"," 8WFG","8W10EFG"
+  Country376=376,377,"Andorra","G","","00EFG"
+  Country377=377,378,"Monaco","G","","00EFG"
+  Country378=378,379,"San Marino","G","0IG","00EFG"
+  Country379=39,380,"Vatican City","G","0FG","00EFG"
+  Country380=380,381,"Ukraine","G"," 8WFG","8W10EFG"
+  Country381=381,385,"Yugoslavia","G","0FG","99EFG"
+  Country385=385,386,"Croatia","G","0FG","00EFG"
+  Country386=386,387,"Slovenia","G","0FG","00EFG"
+  Country387=387,389,"Bosnia and Herzegovina","G","0FG","00EFG"
+  Country389=389,39,"F.Y.R.O.M. (Former Yugoslav Republic of Macedonia)",
+   "G","0FG","99EFG"
+  Country39=39,40,"Italy","0FG","0FG","00EFG"
+  Country40=40,41,"Romania","G"," 0FG","00EFG"
+  Country41=41,4175,"Switzerland","G","0FG","00EFG"
+  Country4175=4175,420,"Liechtenstein","G","0FG","00EFG"
+  Country420=420,421,"Czech Republic","G","0FG","00EFG"
+  Country421=421,43,"Slovak Republic","G","0FG","00EFG"
+  Country43=43,44,"Austria","G","0FG","00EFG"
+  Country44=44,45,"United Kingdom","G","0FG","00EFG"
+  Country45=45,46,"Denmark","G","","00EFG"
+    Before September 11, 1999:
+  Country46=46,47,"Sweden","G","0FG","009EFG"
+    After September 11, 1999:
+  Country46=46,47,"Sweden","G","0FG","00EFG"
+  Country47=47,48,"Norway","G","","00EFG"
+  Country48=48,49,"Poland","G","0FG","00EFG"
+  Country49=49,500,"Germany","G","0FG","00EFG"
+  Country500=500,501,"Falkland Islands (Islas Malvinas)","G","","0EFG"
+  Country501=501,502,"Belize","G","0FG","00EFG"
+  Country502=502,503,"Guatemala","G","0FG","00EFG"
+  Country503=503,504,"El Salvador","G","","0EFG"
+  Country504=504,505,"Honduras","G","","00EFG"
+  Country505=505,506,"Nicaragua","G","0FG","00EFG"
+  Country506=506,507,"Costa Rica","G","","00EFG"
+  Country507=507,508,"Panama","G","","00EFG"
+  Country508=508,509,"St. Pierre and Miquelon","G","","19,EFG"
+  Country509=509,51,"Haiti","G","","00EFG"
+  Country51=51,52,"Peru","G","0FG","00EFG"
+  Country52=52,53,"Mexico","G"," 00FG","01EFG"
+  Country53=53,5399,"Cuba","G","0FG","119EFG"
+  Country5399=53,54,"Guantanamo Bay","G","0FG","00EFG"
+  Country54=54,55,"Argentina","G","0FG","00EFG"
+  Country55=55,56,"Brazil","G","0FG","00EFG"
+  Country56=56,57,"Chile","G","0FG","00EFG"
+  Country57=57,58,"Colombia","G","9FG","90EFG"
+  Country58=58,590,"Venezuela","G","0FG","00EFG"
+  Country590=590,5901,"Guadeloupe","G","","19,EFG"
+  Country5901=590,591,"French Antilles","G","","19,EFG"
+  Country591=591,592,"Bolivia","G","0FG","00EFG"
+  Country592=592,593,"Guyana","G","0FG","001EFG"
+  Country593=593,594,"Ecuador","G","0FG","00EFG"
+  Country594=594,595,"French Guiana","G","","19,EFG"
+  Country595=595,596,"Paraguay","G","0FG","00EFG"
+  Country596=596,597,"Martinique","G","","19,EFG"
+  Country597=597,598,"Suriname","G","","00EFG"
+  Country598=598,599,"Uruguay","G","0FG","00EFG"
+  Country599=599,60,"Netherlands Antilles","G","0FG","00EFG"
+  Country60=60,61,"Malaysia","G","0FG","00EFG"
+  Country61=61,6101,"Australia","G","0FG","0011EFG"
+  Country6101=61,62,"Cocos-Keeling Islands","G"," 0FG","00EFG"
+  Country62=62,63,"Indonesia","G","0FG","001EFG"
+  Country63=63,64,"Philippines","G","0FG","00EFG"
+  Country64=64,65,"New Zealand","G","0FG","00EFG"
+  Country65=65,66,"Singapore","G","","001EFG"
+  Country66=66,670,"Thailand","G","0FG","001EFG"
+  Country670=670,6701,"Saipan Island","G"," 1FG","011EFG"
+  Country6701=670,6702,"Rota Island","G"," 1FG","011EFG"
+  Country6702=670,672,"Tinian Island","G"," 1FG","011EFG"
+  Country672=672,6721,"Christmas Island","G","0FG","00EFG"
+  Country6721=672,6722,"Australian Antarctic Territory","G","0FG","00EFG"
+  Country6722=672,673,"Norfolk Island","G","","0101EFG"
+  Country673=673,674,"Brunei","G","0FG","00EFG"
+  Country674=674,675,"Nauru","G","","115EFG"
+  Country675=675,676,"Papua New Guinea","G","","05EFG"
+  Country676=676,677,"Tonga","G","","00EFG"
+  Country677=677,678,"Solomon Islands","G","","00EFG"
+  Country678=678,679,"Vanuatu","G","","00EFG"
+  Country679=679,680,"Fiji Islands","G","","05EFG"
+  Country680=680,681,"Palau","G","","00EFG"
+  Country681=681,682,"Wallis and Futuna Islands","G","","19,EFG"
+  Country682=682,683,"Cook Islands","G","","00EFG"
+  Country683=683,684,"Niue","G","","00EFG"
+  Country684=684,685,"American Samoa","G","","00EFG"
+  Country685=685,686,"Samoa","G","","0EFG"
+  Country686=686,687,"Kiribati Republic","G","","00EFG"
+  Country687=687,688,"New Caledonia","G","","00EFG"
+  Country688=688,689,"Tuvalu","G","","00EFG"
+  Country689=689,690,"French Polynesia","G","","00EFG"
+  Country690=690,691,"Tokelau","G","","00EFG"
+  Country691=691,692,"Micronesia, Federated States of","G","","011EFG"
+  Country692=692,7,"Marshall Islands","G","0FG","00EFG"
+  Country7=7,705,"Russia","G"," 8WFG","8W10EFG"
+  Country705=7,706,"Kazakhstan","G"," 8WFG","8W10EFG"
+  Country706=7,708,"Kyrgyz Republic","G"," 8WFG","00EFG"
+  Country708=7,711,"Tajikistan","G"," 8WFG","8W10EFG"
+  Country711=7,800,"Uzbekistan","G"," 8WFG","8W10EFG"
+  Country800=800,81,"International Freephone Service","",",""
+  Country81=81,82,"Japan","G","0FG","001EFG"
+  Country82=82,84,"Korea (Republic of)","G","0FG","001EFG"
+  Country84=84,850,"Vietnam","G","0FG","00EFG"
+  Country850=850,852,"Korea (North)","G","","00EFG"
+  Country852=852,853,"Hong Kong SAR","G","","001EFG"
+  Country853=853,855,"Macau SAR","G","","00EFG"
+  Country855=855,856,"Cambodia","G","0FG","00EFG"
+  Country856=856,86,"Laos","G","","14EFG"
+  Country86=86,870,"China","G","0FG","00EFG"
+  Country870=870,871,"INMARSAT","00EFG#","00EFG#","00EFG#"
+  Country871=871,872,"INMARSAT (Atlantic-East)","00EFG#","00EFG#",
+   "00EFG#"
+  Country872=872,873,"INMARSAT (Pacific)","00EFG#","00EFG#","00EFG#"
+  Country873=873,874,"INMARSAT (Indian)","00EFG#","00EFG#","00EFG#"
+  Country874=874,880,"INMARSAT (Atlantic-West)","00EFG#","00EFG#",
+   "00EFG#"
+  Country880=880,886,"Bangladesh","G","0FG","00EFG"
+  Country886=886,90,"Taiwan","G","0FG","002EFG"
+  Country90=90,91,"Turkey","G","0FG","00EFG"
+  Country91=91,92,"India","G","0FG","00EFG"
+  Country92=92,93,"Pakistan","G","0FG","00EFG"
+  Country93=93,94,"Afghanistan","G","0FG","00EFG"
+  Country94=94,95,"Sri Lanka","G","0FG","00EFG"
+  Country95=95,960,"Myanmar","G","","0EFG"
+  Country960=960,961,"Maldives","G","","00EFG"
+  Country961=961,962,"Lebanon","G","0FG","00EFG"
+  Country962=962,963,"Jordan","G","FG","00EFG"
+  Country963=963,964,"Syria","G","0FG","00EFG"
+  Country964=964,965,"Iraq","G","FG","00EFG"
+  Country965=965,966,"Kuwait","G","0FG","00EFG"
+  Country966=966,967,"Saudi Arabia","G","0FG","00EFG"
+  Country967=967,968,"Yemen","G","0FG","00EFG"
+  Country968=968,971,"Oman","G","","00EFG"
+  Country971=971,972,"United Arab Emirates","G","0FG","00EFG"
+  Country972=972,973,"Israel","G","0FG","00EFG"
+  Country973=973,974,"Bahrain","G","","0EFG"
+  Country974=974,975,"Qatar","G","","0EFG"
+  Country975=975,976,"Bhutan","G","","00EFG"
+  Country976=976,977,"Mongolia","G","0FG","00EFG"
+  Country977=977,98,"Nepal","G","","00EFG"
+  Country 98=98,993,"Iran","G","FG","00EFG"
+  Country993=993,994,"Turkmenistan","G"," 8WFG","8W10EFG"
+  Country994=994,995,"Azerbaijan","G"," 8WFG","8W10EFG"
+  Country995=995,0,"Georgia","G"," 8WFG","8W10EFG"
+
+NOTE: Toll-free calls use a "98 &lt;XXXX&gt;" (without the quotation marks)
+format, where &lt;XXXX&gt; is any four digits.
+
+For information about changing the international access codes in Windows or
+Windows for Workgroups 3.1 or 3.11, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q155887 How to Change International Dialing Access Codes
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

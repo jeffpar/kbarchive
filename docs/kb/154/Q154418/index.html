@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154418/","publisher":null,"image":null,"headline":"Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154418-cannot-upgrade-windows-95-to-windows-nt-workstation-40">Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154418
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 4.0 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can automatically upgrade to Windows NT Workstation version 4.0 from MS-DOS
+version 6.x, Windows or Windows for Workgroups version 3.x, or Windows NT
+Workstation version 3.x. If you install Windows NT Workstation 4.0 in the same
+folder as your existing installation of Windows or Windows for Workgroups 3.x,
+your existing installation of Windows is preserved so you can dual-boot between
+both versions.
+
+However, you cannot upgrade to Windows NT Workstation 4.0 from Windows 95. In
+addition, you cannot install Windows NT Workstation 4.0 in the same folder as an
+existing Windows 95 installation. To install Windows NT Workstation 4.0 on a
+computer running Windows 95, you must install it in a new folder. After doing
+so, you can dual-boot Windows 95 and Windows NT, but you must reinstall your
+Windows-based programs for them to function properly in Windows NT. In addition,
+any custom settings that are present in Windows 95 will not be present in
+Windows NT.
+
+The inability to upgrade an existing Windows 95 installation is a known
+limitation of Windows NT Workstation 4.0 that will be addressed in a later
+version of Windows NT Workstation.
+
+MORE INFORMATION
+================
+
+There are two primary reasons that Windows NT Workstation 4.0 cannot upgrade
+Windows 95:
+
+- The registry structure is not identical in Windows 95 and Windows NT
+  Workstation 4.0. This causes many programs to store settings in one location
+  when you install the program in Windows 95 and store the settings in a
+  different location when you install the program in Windows NT. Therefore,
+  when you install Windows NT Workstation 4.0 over Windows 95, the Windows NT
+  Setup program is unable to transfer the settings from the Windows 95 registry
+  to the Windows NT registry.
+
+- The Windows NT Workstation 4.0 Setup program cannot determine which devices
+  Windows NT Workstation 4.0 does not support. In addition, Windows 95 supports
+  more devices than Windows NT Workstation 4.0, so it is possible for a device
+  that is not supported by Windows NT Workstation 4.0 to be installed and
+  functioning properly in Windows 95.
+
+  Because the Setup program cannot determine which devices Windows NT
+  Workstation 4.0 does not support, it cannot prevent the installation process
+  from proceeding on a computer that contains an unsupported device. This may
+  cause the installation process to fail, or may cause the device to fail or
+  other problems to arise after the installation process is finished.
+
+To install Windows NT Workstation 4.0 on a computer running Windows 95, follow
+these steps:
+
+1. Check to see if the devices installed in your computer and the programs that
+  you currently use in Windows 95 are supported by Windows NT Workstation 4.0.
+
+2. Install Windows NT Workstation 4.0 in a new folder, and then verify that you
+  are able to successfully dual-boot between Windows NT and Windows 95. Note
+  that installing Windows NT Workstation on the same drive on which Windows 95
+  is installed is not recommended.
+
+3. Reinstall any Windows-based programs that you want to use in Windows NT
+  Workstation 4.0. If the program you are reinstalling has separate Windows 95
+  and Windows NT versions, be sure to install the Windows NT version of the
+  program instead of reinstalling the Windows 95 version. The Windows NT
+  version of the program should not be installed in the same folder in which
+  the Windows 95 version is installed.
+
+4. If you do not want to run Windows 95 after installing Windows NT Workstation
+  4.0, manually remove the Windows 95 folder.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbZNotKeyword3
+Version           : 4.0 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

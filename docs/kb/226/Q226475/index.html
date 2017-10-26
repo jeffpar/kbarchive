@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226475/","publisher":null,"image":null,"headline":"Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226475-setup-choices-vary-depending-on-previous-installation-of-iisnto">Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226475
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The choices displayed during the setup of the Windows NT 4.0 Option Pack (NTOP),
+which includes Internet Information Server (IIS) 4.0, vary depending upon
+whether IIS is already installed on the computer, and if so, which version is
+installed.
+
+MORE INFORMATION
+================
+
+IIS is not installed
+--------------------
+
+If IIS is not installed, the choices presented by the Setup program are as
+follows:
+
+- Minimum: Requires the least amount of disk space. Provides the basic
+  functionality to deploy Web site.
+
+- Typical: The recommended configuration. Includes all of the Minimum
+  components, along with the basic documentation and additional components to
+  allow you to build and deploy Web applications.
+
+- Custom: For advanced Web site developers. Provides the option to choose and
+  customize all components. All options included in the Typical installation
+  are pre-selected.
+
+Existing IIS version is 3.0 or earlier
+--------------------------------------
+
+If IIS version 3.0 or earlier is already installed, the choices presented by the
+Setup program are as follows:
+
+- Upgrade Only: Choose "Upgrade Only" to upgrade existing components only.
+
+- Upgrade Plus: Choose "Upgrade Plus" to upgrade existing components and to add
+  new components.
+  Note: the previously installed components will remain unchecked, you are not
+  allowed to uncheck them.
+
+IIS version 4.0 is already installed
+------------------------------------
+
+If IIS 4.0 is already installed, the choices presented by the Setup program are
+as follows:
+
+- Add/Remove: Add new components or remove installed components from the
+  current installation.
+
+- Remove All: Remove all previously installed components.
+
+Additional query words: nt4op ntop setup set up install installation buttons akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162491: SNA Server Performance Degrades with Event 631 Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162491: SNA Server Performance Degrades with Event 631 Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162491/","publisher":null,"image":null,"headline":"Q162491: SNA Server Performance Degrades with Event 631 Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162491-sna-server-performance-degrades-with-event-631-errors">Q162491: SNA Server Performance Degrades with Event 631 Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162491
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,3.0
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA client response is slow, and at the same time SNA Server or SnaBase reports
+multiple Event 631 errors (from 10-30 per second) in the Windows NT application
+event log:
+
+  Event: 631
+  Source: SNA Server (or SnaBase)
+  Description: Invalid message received across the LAN:
+  remote: &lt;client IP address:port&gt; msgid 0x0 incorrect or msgtype 1
+  too high (max 33)
+
+All Event 631 errors are reported from the same client address and client port
+number.
+
+CAUSE
+=====
+
+Event 631 is logged by SNA Server (or SnaBase) whenever it receives an
+improperly formatted message from an SNA Server client emulator over an existing
+client TCP/IP socket. The cause of this client behavior is under investigation.
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 SP1 and SNA Server 3.0 changes the way that invalid
+client messages are handled. Instead of reporting an Event 631 on each invalid
+message, this update causes SNA Server (or SnaBase) to:
+
+- report a single Event 631 for this client port, and
+
+- close the TCP/IP socket to this client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11, 2.11
+SP1 and 3.0.
+
+
+A supported fix for SNA Server 2.11 SP1 and 3.0 is now available, but has not
+been fully regression-tested and should be applied only to systems experiencing
+this specific problem. Unless you are severely impacted by this specific
+problem, Microsoft recommends that you wait for the next Service Pack that
+contains this fix. Contact Microsoft Technical Support for more information.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

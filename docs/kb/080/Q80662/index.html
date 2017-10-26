@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80662/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80662/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80662/","publisher":null,"image":null,"headline":"Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80662-mac-wkst-hayes-smartmodem-9600-modification-for-msmail-dial-in">Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80662
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:3.0,3.0a,3.0b,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.0a, 3.0b, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Hayes Smartmodem 9600 comes from the factory with error checking on by
+default (AT&amp;Q5). Error checking must be disabled for the Hayes Smartmodem
+9600 to work correctly with the MSMail Dial-In Control Panel device.
+
+To disable error checking permanently for Dial-In use, issue the following
+commands, using a communications program such as DynaComm, or any other
+communications program that will echo back entered modem commands. (NOTE: You
+CANNOT use the Dial-In program to perform this action.)
+
+  AT&amp;Q0 (Write back to ACTIVE PROFILE)
+  OK
+  AT&amp;W0 (Write back to STORED PROFILE 0)
+  OK
+  AT&amp;W1 (Write back to STORED PROFILE 1)
+  OK
+
+The &amp;W command writes the change back to the modem, and saves it in non-
+volatile RAM for all future Dial-In modem sessions. The modem also has two
+default profiles, numbered 0 and 1, that can be called up for use.
+
+The W0 command writes the change back to stored profile 0. The W1 command writes
+back to stored profile 1. By writing back to both stored profiles, this ensures
+that no problems will arise if another profile is used for data transfer.
+
+The OKs are the result of typing in each of the above AT commands. If an error
+message is returned after issuing any of the above commands, there may be a
+problem with the modem, and you should contact Hayes Technical Support.
+
+The Hayes SmartModem is manufactured by Hayes Microcomputer Products, Inc., and
+DynaComm is manufactured by Future Soft Engineering, Inc., vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.00 3.00a 3.00b 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN300a kbMailATN300b kbMailATN310
+Version           : WINDOWS:3.0,3.0a,3.0b,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

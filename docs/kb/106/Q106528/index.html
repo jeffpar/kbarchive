@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106528/","publisher":null,"image":null,"headline":"Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106528-bug-error-in-winteepif-causes-start-up-directory-not-found">Q106528: BUG: Error in WINTEE.PIF Causes "Start-Up Directory Not Found"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106528
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an attempt is made to build or debug an application from the Visual
+Workbench, a dialog box with the following message may appear:
+
+  Start-up directory not found
+  Check the application's PIF
+
+CAUSE
+=====
+
+The entry for the startup directory in the WINTEE.PIF is always \F32\BIN even if
+the product was installed in another directory. This causes an error when an
+application is built, if the Visual Workbench is started with /v option to make
+WINTEE.EXE visible.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Run the Windows PIF Editor.
+
+2. Open the file \F32\BIN\WINTEE.PIF.
+
+3. Correct the startup directory (it will probably show the default directory).
+
+4. Save changes in the PIF Editor.
+
+5. Compiling should work fine now (there is no need to restart Windows or the
+  Visual Workbench).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation versions
+1.0 and 1.0a for MS-DOS.
+
+This is not a problem in FORTRAN PowerStation 32.
+
+MORE INFORMATION
+================
+
+The /v option when invoking the Visual Workbench makes WINTEE MS-DOS box
+visible.
+
+Additional query words: VWB nofpsnt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

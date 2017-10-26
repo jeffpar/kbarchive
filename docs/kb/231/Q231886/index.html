@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231886/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231886/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231886/","publisher":null,"image":null,"headline":"Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231886-bug-misleading-error-0x8004d021-when-import-transaction-fails">Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231886
+Product(s): Microsoft Windows NT
+Version(s): 1.0,1.5
+Operating System(s): 
+Keyword(s): kbCOMPlus kbDTC kbOSWin2000bug kbGrpDSCom kbDSupport
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM+, versions 1.0, 1.5 
+- the operating system: Microsoft Windows 2000 
+- the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Bring Your Own Transaction (BYOT), the import transaction may fail
+with XACT_E_TIP_PULL_FAILED. The following message may be logged in event
+viewer:
+
+  The BYOT Gateway failed to import the transaction using Transaction Internet
+  Protocol (TIP). Make sure that the installed DTC supports the TIP protocol.
+
+  Server Application ID : {A20B779B-03F6-11D3-926A-00C04F8EF295}
+  Server Application Name : server_name
+  Error Code = 0x8004d021 :
+  COM+ Services Internals Information :
+  File: .\byotex.cpp, Line: 105
+
+CAUSE
+=====
+
+This error is misleading because import transaction can fail even if Microsoft
+Distributed Coordinator (MS DTC) supports Transaction Internet Protocol (TIP).
+
+This error is returned when a PULLED command is sent to the Transaction Manager
+(TM), and the TM sends back a NOTPULLED token. Any TM that is TIP-compliant can
+send a NOTPULLED token. A TM can return this token if for any reason the Pull
+relationship is not established. For additional information, see the "More
+Information" section to follow.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+MS DTC returns a NOTPULLED token under the following circumstances:
+
+- The Transaction identifier (TrID) that is included in the PULL command is not
+  valid. TIP specification does not define a format for TrID. Each TM defines
+  its own TrID. For MS DTC, the valid TrID should comply with the following
+  format:
+
+  oletx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+  which is 43 characters long (including terminal NULL).
+
+- The application was badly designed. The transaction was committed before the
+  complete transaction tree was set up.
+
+- The specified TrID is not in the list for the active transactions. As a
+  result, the transaction is stopped or timed out.
+
+Additional query words: error 0x8004d021
+
+======================================================================
+Keywords          : kbCOMPlus kbDTC kbOSWin2000bug kbGrpDSCom kbDSupport 
+Technology        : kbOSWin2000 kbAudDeveloper kbOSWinSearch kbOSWinXP kbCOMPlusSearch kbZNotKeyword3 kbCOMPlus100 kbOSWinXPSearch
+Version           : :1.0,1.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

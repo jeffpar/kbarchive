@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100993/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100993/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100993/","publisher":null,"image":null,"headline":"Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100993-howto-create-additional-views-with-createnewframe-function">Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100993
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpD
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1, 5.0, 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CDocTemplate::CreateNewFrame() function creates additional views of a
+document in a multiple document interface (MDI) application written using the
+Microsoft Foundation Class Library. The prototype of the CreateNewFrame()
+function is as follows:
+
+        CFrameWnd * CDocTemplate::CreateNewFrame(CDocument *, CFrameWnd *)
+
+To call this function, specify a pointer to a CDocument object (the document for
+which the function will create a view) and a pointer to a frame window that has
+properties to duplicate. Typically, the second parameter of the function is
+NULL.
+
+When an application calls CreateNewFrame(), the function creates a new frame
+window and a view in the frame window. The frame window type and view type
+depend on the document template (CDocTemplate) associated with the document
+specified in the CreateNewFrame() call.
+
+MORE INFORMATION
+================
+
+To better understand how to use CreateNewFrame(), it might be useful to review
+two examples.
+
+The first example is the WINMDI.CPP file in the Microsoft Foundation Class
+Library source code. WINMDI.CPP defines the function CMIDFrameWnd::OnWindowNew()
+that calls CreateNewFrame() to add an additional frame and view for a specified
+document. The application calls OnWindowNew() each time the user selects New
+from the MDI application's Windows menu.
+
+The OnWindowNew() function contains two significant lines of code, as follows:
+
+        CFrameWnd * pFrame =
+              pTemplate-&gt;CreateNewFrame(pDocument, pActiveChild);
+        pTemplate-&gt;InitialUpdateFrame(pFrame, pDocument);
+
+This code creates and displays the new frame window and document view.
+
+The other example is the DOCMULTI.CPP file, also in the Microsoft Foundation
+Class Library source code. The CMultiDocTemplate::OpenDocumentFile() function
+includes the following code:
+
+        CFrameWnd * pFrame = CreateNewFrame(pDocument, NULL);
+
+NOTE: The second parameter is NULL because the design of the OpenDocumentFile()
+function assumes that the programmer is not interested in duplicating any of the
+other frames that contain views of this document.
+
+The CHKBOOK sample also demonstrates creating additional frames and views for
+documents. In CHKBOOK.CPP, the CChkBookApp::OpenDocumentFile() function includes
+the following code:
+
+        CChkBookDoc * pDoc =
+              (CChkBookDoc*)CWinApp::OpenDocumentFile(lpszFileName);
+
+        if (pDoc == NULL)
+               return NULL;
+
+        CMDIChildWnd * pframe =
+              ((CMDIFrameWnd *)AfxGetApp()-&gt;m_pMainWnd)-&gt;MDIGetActive();
+
+        CFrameWnd * pNewFrame =
+              m_pCheckViewTemplate-&gt;CreateNewFrame(pDoc, NULL);
+        if (pNewFrame == NULL)
+           return pDoc;
+        m_pCheckViewTemplate-&gt;InitialUpdateFrame(pNewFrame, pDoc);
+
+Here are two points to consider when you use the CreateNewFrame():
+
+- The source code for CDocTemplate::CreateNewFrame() is in DOCTEMPL.CPP. It
+  includes the following code:
+
+        if (!pFrame-&gt;LoadFrame(m_nIDResource,
+             WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, // default frame styles
+             NULL, &amp;context)
+
+  Because this code creates the frame window with a NULL parent window, the
+  Microsoft Foundation Class Library uses the application's main window as the
+  parent window.
+
+- CreateNewFrame() creates both a frame and a view; not only a view.
+
+If, for some reason, CreateNewFrame() does not quite address your situation, the
+source code for CreateNewFrame() is quite useful to demonstrate the steps
+required to create frames and views.
+
+Additional query words: change view
+
+======================================================================
+Keywords          : kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

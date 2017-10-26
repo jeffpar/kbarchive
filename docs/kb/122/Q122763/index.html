@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122763: PC Win: Structure of the Address Book | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122763: PC Win: Structure of the Address Book" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122763/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122763/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122763/","publisher":null,"image":null,"headline":"Q122763: PC Win: Structure of the Address Book","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122763-pc-win-structure-of-the-address-book">Q122763: PC Win: Structure of the Address Book</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122763
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail for Windows Address Book can contain the global address list,
+Personal Address Book, postoffice list, other postoffices, and gateway address
+list. This article provides the structure of a open directory that contains
+these address lists and their order.
+
+MORE INFORMATION
+================
+
+When choosing the Address Book from the Mail menu or selecting the Address
+button from the compose window, you are presented with a list displaying the
+default directory view. If you select the Open Directory button, a listing of
+other addresses becomes available. This list might contain two or more of the
+following entries:
+
+  Personal Address Book &lt;- Personal Address Book (PAB)
+  Global address list   &lt;- Global address list (GAL), if participating in
+                           directory synchronization (Dir-Sync)
+  Postoffice list       &lt;- Postoffice Address List (POL)
+  Other Postoffices
+    NETWORKEXT          &lt;- Externally defined network name(s)
+      POSTOFFICE        &lt;- Externally defined postoffice address list(s)
+    NETWORKLOC          &lt;- Your postoffice's local network name
+      POSTOFFICE        &lt;- Other postoffice address list(s) defined with
+                           the same network name as your local postoffice.
+  Gateway
+    X.400               &lt;- gateway address list(s)
+
+This list may vary depending on the address lists enabled or disabled by the Mail
+administrator. For example, using the Mail Administrator program (ADMIN.EXE),
+the administrator can disable or enable the GAL.
+
+
+For additional information, please see the Microsoft Mail for Windows and
+Presentation Manager "User's Guide," page 20.
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172313/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172313/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172313/","publisher":null,"image":null,"headline":"Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172313-fix-using-odbcdirect-transactions-and-oracle-causes-hang">Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172313
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbDriver kbODBC kbOracle kbVS kbODBC200fix kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDACNoS
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When connecting to an Oracle database using DAO and ODBCDirect, the application
+hangs when an Insert statement is within a Begin/Commit Transaction and that
+procedure is called the second time.
+
+CAUSE
+=====
+
+This is caused by a known problem in the Microsoft ODBC Driver for Oracle,
+Msorcl10.dll, version 1.0.
+
+RESOLUTION
+==========
+
+To work around this problem the QueryTimeout property of the Connection object
+must be set to zero (0). Uncomment the following line of code to make the
+example run without error:
+
+     Cn.QueryTimeout = 0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft ODBC Driver for
+Oracle, Msorcl10.dll. This issue has been resolved with the 2.0, or higher,
+version of the Microsoft Oracle ODBC Driver. This driver can be obtained in
+Visual Studio 5.0 and higher, MDAC 1.5 or higher, and the Data Access Software
+Development Kit (SDK).
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project with two Command Buttons on the new Form.
+
+2. Add this code to the General Declarations section:
+
+        Option Explicit
+        Dim Ws As Workspace
+        Dim Cn As Connection
+        '
+        ' Note that the parameters in the connection string must be changed
+        ' to match your configration.
+
+        Private Sub Command1_Click()
+           On Error Resume Next
+           MousePointer = vbHourglass
+           Cn.Execute "DROP TABLE CODETEST"
+           Cn.Execute "CREATE TABLE CODETEST(CODE VARCHAR2(10) NULL)"
+           MousePointer = vbNormal
+           MsgBox "Table Created"
+        End Sub
+
+        Private Sub Command2_Click()
+        Dim strSQL As String
+        Dim Qd As QueryDef
+        Dim txtValue As String
+
+        txtValue = "abc"
+           Ws.BeginTrans
+
+           strSQL = "insert into codetest (code) values ('" &amp; txtValue &amp; "')"
+           Set Qd = Cn.CreateQueryDef("", strSQL)
+           Qd.Execute  'Fails here the second time
+           If (Err.Number &lt;&gt; 0) Then
+               MsgBox ("[cmdExecute_Click] - " + Err.Description)
+           Else
+               Qd.Close
+           End If
+
+          Ws.CommitTrans
+
+        MsgBox "Click me again and I will crash"
+
+        End Sub
+
+        Private Sub Form_Load()
+        Dim strConn As String
+           Command1.Caption = "Create Table"
+           Command2.Caption = "Enter Data"
+
+           'Replace &lt;data source name&gt;, &lt;user ID&gt;, and &lt;password&gt; with the
+           'DSN, user ID, and password for your Oracle system.
+
+           strConn = "odbc;dsn=&lt;data source name&gt;; _
+           uid=&lt;user ID&gt;;pwd=&lt;password&gt;"
+           Set Ws = CreateWorkspace("", "admin", "", dbUseODBC)
+           Set Cn = Ws.OpenConnection("", dbDriverNoPrompt, False, strConn)
+
+          'Cn.QueryTimeout = 0 ' This is the workaround line of code
+
+        End Sub
+
+        Private Sub Form_Unload(Cancel As Integer)
+           Cn.Close
+           Ws.Close
+        End Sub
+
+3. Change the &lt;data source name&gt;, &lt;user ID&gt;, and &lt;password&gt; in
+  the connect string (strConn) to the DSN, user ID, and password for your
+  Oracle system.
+
+4. Save the Project.
+
+5. Run the Project by pressing F5.
+
+6. Click on the Create Table button (The user database may have to be changed in
+  the code to match your setup).
+
+7. Click on the Enter Data button. The first time one record is inserted.
+  Clicking on the "Enter Data" button the second time will hang the
+  application. Go into the Task Manager (CNTL, ALT, DELETE) to Exit the app.
+
+Additional query words: kbODBC kbOracle kbDatabase kbDriver kbVB kbDAO
+
+======================================================================
+Keywords          : kbDriver kbODBC kbOracle kbVS kbODBC200fix kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

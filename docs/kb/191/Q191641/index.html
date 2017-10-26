@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191641/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191641/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191641/","publisher":null,"image":null,"headline":"Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191641-bug-deleted-event-does-not-fire-when-deleting-programmatically">Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191641
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A grid's Deleted event does not fire when a record is programmatically deleted.
+However, the event does fire if you interactively delete a record in a grid.
+
+RESOLUTION
+==========
+
+Call the grid's Deleted event explicitly using code. For the sample code in the
+MORE INFORMATION section, see step 3 for further instructions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program (.prg) file that contains the following code and run the
+  program:
+
+        CREATE TABLE Ztest (A c(1), B c(1))
+        INSERT INTO Ztest (A,B) VALUES ('A', 'B')
+
+        USE 'Ztest'
+
+        F1 = CREATE('oForm')
+        F1.SHOW
+        * F1.gridcontrol.Deleted  &amp;&amp; Remove comment to see grid's Deleted
+                                  &amp;&amp; event fire.
+        READ EVENTS
+
+        DEFINE CLASS oForm AS FORM
+           ADD OBJECT GRIDcontrol AS myGRID
+           PROC INIT
+              DELETE
+           PROC DESTROY
+              CLEAR EVENTS
+        ENDDEFINE
+
+        DEFINE CLASS myGRID AS GRID
+           RECORDSOURCE='Ztest'
+           RECORDSOURCETYPE=1
+           PROC DELETED
+              LPARAMETERS nRecNo
+              WAIT WIND "Deleted Event Fired"
+        ENDDEFINE
+
+2. Notice that the record is marked as deleted in the grid, but the grid's
+  Deleted event never fired. Now, double-click the deletion marker in the grid
+  (the black rectangle to left of the first field in the grid) and note that
+  the grid's deleted event fires as expected.
+
+3. Remove the asterisk from the commented line of code in the example so that is
+  reads as follows:
+
+        F1.gridcontrol.Deleted
+
+  Run the example again. Note that the grid's Deleted event fires when
+  explicitly called with code.
+
+
+Additional query words: kbVFp600bug kbVFp500abug kbVFp300bbug kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

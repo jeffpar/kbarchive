@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147629: PRB: Problems If ODBC or DAO in DLL’s InitInstance or DLLMain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147629: PRB: Problems If ODBC or DAO in DLL’s InitInstance or DLLMain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147629/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147629/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147629/","publisher":null,"image":null,"headline":"Q147629: PRB: Problems If ODBC or DAO in DLL’s InitInstance or DLLMain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147629-prb-problems-if-odbc-or-dao-in-dlls-initinstance-or-dllmain">Q147629: PRB: Problems If ODBC or DAO in DLL’s InitInstance or DLLMain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147629
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:2.5; winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbprogramming kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVC400 kbVC410 kbVC42
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use ODBC or DAO in the InitInstance or DLLMain functions of a DLL, your
+application may fail with an "Access Violation" or display some other
+unanticipated behavior. This can occur when you use the MFC Database Classes
+(ODBC-based or DAO-based), the ODBC API, or the dbDao classes provided with the
+DAO SDK.
+
+CAUSE
+=====
+
+The reason for this behavior is that ODBC drivers, DAO, or any of their
+underlying components may spawn multiple threads. Creating threads during
+initialization of a Win32 DLL can leave Windows in an undefined state.
+
+When a Win32 DLL is loaded, Windows calls the DLL's DllMain function with a
+reason for calling of DLL_PROCESS_ATTACH.
+
+When a new thread is created in Win32, each DLL in the process space will have
+its DllMain function called by Windows. Windows signals that a new thread has
+been created by passing a reason for calling of DLL_THREAD_ATTACH.
+
+For a regular DLL that uses MFC, MFC supplies a DllMain that calls InitInstance.
+If you call a function in InitInstance that directly or indirectly creates one
+or more threads, you may experience unexpected behavior. This is because your
+application is within the context of DllMain (in InitInstance) with a
+DLL_PROCESS_ATTACH call, and creating a thread will result in Windows needing to
+call your DllMain again with a DLL_THREAD_ATTACH. The behavior resulting from
+this action is undefined.
+
+If you are writing an extension DLL, you must supply your own implementation of
+the DllMain function. If you directly or indirectly create threads within this
+DllMain function, you will also experience this problem.
+
+RESOLUTION
+==========
+
+Do not create threads explicitly or implicitly within the context of DllMain.
+
+Provide a function in your DLL for complex initialization that you can call
+outside of the scope of DllMain.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Currently the behavior described in this article is exhibited when using the
+Microsoft Access version 3 ODBC driver, using the ODBC SDK, or using MFC
+ODBC-based database classes. It can also occur when instantiating instances of
+MFC DAO-based database classes or the dbDao classes.
+
+This behavior is not limited to a specific ODBC driver, DAO, or ODBC in general.
+You may experience this type of behavior with any API that creates threads.
+
+If you suspect that this might be the cause of failure in your application, you
+can verify it by putting a breakpoint in the DllMain function and examining how
+many times it is called and by examining the dwReason parameter that is passed
+to it. If this is a regular DLL that uses MFC, set the breakpoint in MFC's
+DllMain function.
+
+Sample Code
+-----------
+
+The following code is for MFC ODBC-based database classes but applies equally
+well to MFC DAO-based database classes, or the dbDao classes.
+
+     // This code should reproduce the problem for a regular DLL that uses
+     // MFC.
+
+     BOOL CMyDllApp::InitInstance()
+     {
+       CDatabase db;
+       if(db.Open("MyDataSource")) //Open Microsoft Access 3 ODBC datasource
+         db.Close();
+       ...
+     }
+
+     // To fix the problem, put the code in your own initialize function
+     // that you call explicitly from your application.
+
+     BOOL CMyDllApp::MyInitFunction()
+     {
+       CDatabase db;
+       if(db.Open("MyDataSource")) //Open an Access 3 ODBC datasource
+         db.Close();
+       ...
+     }
+
+REFERENCES
+==========
+
+"Advanced Windows" (Chapter 11) by Jeffery Richter, ISBN 1-55615-677-4.
+
+For more information, please see the following related articles in the Microsoft
+Knowledge Base:
+
+  Q138812 Calls to an OLE Object Should Not Be Done from DllMain
+
+  Q142243 PRB: Cannot Create an MFC Thread During DLL Startup
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbprogramming kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSVCDB kbMDAC250 
+Technology        : kbAudDeveloper kbMFC
+Version           : WINDOWS:2.5; winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260526/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260526/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260526/","publisher":null,"image":null,"headline":"Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260526-prb-using-top-clause-returns-no-data-from-sql-702000-table">Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260526
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbODBC kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbSQLServ650 kbSQLServ700 k
+Last Modified: 17-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the TOP clause in a SQL SELECT statement that is retrieving data from
+a table in a SQL Server 7.0 or SQL Server 2000 database, no data is returned to
+Visual FoxPro.
+
+CAUSE
+=====
+
+The TOP clause is new to SQL Server 7.0 and SQL Server 2000. The reason that no
+data is being returned is that the compatibility mode on the database from which
+the data is being retrieved is set to 6.5.
+
+RESOLUTION
+==========
+
+Change the compatibility mode of the database to 7.0 or 8.0 (for SQL Server
+2000). This allows the correct data to be returned. The different modes for
+SP_DBCMPTLEVEL are 60, 65, 70, 80; see SP_DBCMPTLEVEL in SQL Server Books Online
+for more information.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The compatibility of a SQL Server 7.0 or SQL Server 2000 database can be changed
+by using the SP_DBCMPTLEVEL command. For example, you can issue the command
+SP_DBCMPTLEVEL pubs, 70 in the SQL Server 7.0 Query Analyzer window, or send it
+through the Visual FoxPro ODBC driver using the SQLEXEC command.
+
+Create a program (.prg) file and run the following code, changing the database
+name to your database wherever necessary:
+
+  *!* Make changes to the connect string, adding your server, database,
+  *!*      login, and password.
+  MyConnect_Str = 'DRIVER={SQL Server}; SERVER=YourServer;' + ;
+                  'DATABASE=YourDatabase;UID=sa;PWD='
+  *!* Connects to SQL Server using the connect string.
+  MyHandle = SQLSTRINGCONN(MyConnect_Str)
+  IF MyHandle &gt; 0
+  *!* Comment out the next line and uncomment the line after to return data.
+      Change_Ver = SQLEXEC(MyHandle, "SP_DBCMPTLEVEL pubs, 65") &amp;&amp;Returns Error
+  *!* Change_Ver = SQLEXEC(MyHandle, "SP_DBCMPTLEVEL pubs, 70") &amp;&amp;Returns Top 5
+     MyExec = SQLEXEC(MyHandle, "SELECT  TOP 5 * FROM authors")
+        IF MyExec &lt; 1
+           WAIT WINDOW "SELECT statement failed!"
+        ELSE
+           BROWSE
+           USE	
+        ENDIF
+  ELSE
+        WAIT WINDOW "Connection failed!"
+  ENDIF 
+
+REFERENCES
+==========
+
+For additional information on determining SQL Server Compatibility Levels, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q233508 HOWTO: Determine Compatibility Level of a SQL Server 7 Database
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbSQLServ650 kbSQLServ700 kbGrpDSFox kbDSupport kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

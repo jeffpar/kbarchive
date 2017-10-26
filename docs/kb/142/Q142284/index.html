@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142284/","publisher":null,"image":null,"headline":"Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142284-howto-use-gaerrors-to-find-out-why-a-trigger-failed">Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142284
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A trigger fails when its expression or function returns False. When this occurs
+the "Trigger Failed" error message appears. However, this does not explain why
+it failed. The Referential Integrity Builder code is no different in this
+respect. However, the RI Builder does provide a means of finding out exactly why
+it did fail. This is done through the Public array gaErrors[].
+
+MORE INFORMATION
+================
+
+gaErrors[] is a public array defined by the Trigger code created by the RI
+Builder. The RI Builder also creates its own ON ERROR routine. When an error
+occurs, the Trigger's RIERROR routine is called. Look in the Stored Procedures
+of a Database where the RI Builder has been run, this is where the RIERROR
+routine can be found. The RIERROR routine is passed four arguments:
+
+  Error Number: tnError - ERROR()
+  Error Message: tcMessage - MESSAGE()
+  line of code that caused the error: tcCode - MESSAGE(1)
+  program name in which the error occurred: tcProgram - PROGRAM()
+
+The first three are stored into the gaErrors[] array, in columns one through
+three. The fourth column does not solely hold tcProgram; it holds the Program
+Chain from which the error occurred. For example, it may contain a string like
+this one:
+
+     ",FORM1.COMMAND1.CLICK,__RI_INSERT_ParentTable,RIERROR".
+
+The gaErrors[] array also holds the following information:
+
+  Parent Table's Name - pcParentDBF
+  current record of the Parent Table when the error occurred - pnParentRec
+  Parent's Primary Key value at the time of the error - pcParentID
+  The Field name the Primary Key index is based on - pcParentExpr
+
+The equivalent Child Table's information is also added to gaErrors[]:
+
+  Child Table's Name - pcChildDBF
+  current record of the Child Table when the error occurred - pnChildRec
+  Child's Primary Key value at the time of the error - pcChildID
+  The Field name the Primary Key index is based on - pcChildExpr
+
+Use this information within a custom ON ERROR routine to allow an application to
+better handle failed triggers and present users with better choices to resolve
+the conflict. The code in a "SAVE" button where the triggers would be invoked
+may look something like this:
+
+   IF .NOT. TABLEUPDATE(.T.,.T.)
+        =TABLEREVERT(.T.) &amp;&amp;Revert the change
+        IF TYPE('gaErrors[1,1]') &lt;&gt; 'L'
+           =MESSAGEBOX('Trigger Failed - '+gaErrors[1,2],0,;
+             'Data Entry Error/Trigger Failed')
+        ENDIF
+        GO TOP
+     ENDIF
+     THISFORM.REFRESH
+
+The array gaErrors[] can be seen by setting up some Referential Integrity Rules
+with the RI Builder and then performing some operation on those tables that
+would violate the rules. After the operation fails, type the following commands
+in the Command window:
+
+     _SCREEN.SHOW()
+     DISPLAY MEMORY LIKE gaErrors
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

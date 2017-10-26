@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174273: How to Copy Files and Maintain NTFS and Share Permissions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174273: How to Copy Files and Maintain NTFS and Share Permissions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174273/","publisher":null,"image":null,"headline":"Q174273: How to Copy Files and Maintain NTFS and Share Permissions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174273-how-to-copy-files-and-maintain-ntfs-and-share-permissions">Q174273: How to Copy Files and Maintain NTFS and Share Permissions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174273
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The procedure in this article outlines a method for copying NTFS files or
+directory structures while maintaining NTFS permissions and restoring Share
+Level permissions. This method includes copying between partitions, hard drives,
+or computers.
+
+MORE INFORMATION
+================
+
+Copying multiple files and/or directory structures using the Windows NT Server
+4.0 Resource Kit utilities Scopy.exe and PermCopy.exe in combination with each
+other, allows for maintaining NTFS permissions and the restoring of Share Level
+permissions. This procedure applies to the copying of directories and files
+between NTFS partitions only. This procedure can be used for copying files and
+directories across partitions, drives, or computers.
+
+SCopy is a command-line utility used to copy files and folders from NTFS
+partitions with their security intact. This utility can be found in the Windows
+NT Server Resource Kit. Scopy syntax and available switches are listed as
+follows:
+
+  Scopy [source] [destination] [/o] [/a] [/s]
+
+  Where: [source] specifies the source for files to be copied.
+         [destination] specifies where to copy files to.
+
+  Switches:
+
+     /o     copies owner security information.
+     /a     copies security auditing information.
+     /s     copies all files in sub-folders.
+     /?     shows all command-line options.
+
+Scopy tries to use the following user privileges in these cases:
+
+- The backup files and folders privilege allows you to copy files when
+  ordinarily your access is restricted at the source.
+
+- The restore files and folders privilege is needed to use the /o switch to
+  copy files that are not your own (/o switch copies ownership information).
+
+- The manage auditing and the security log privilege is needed to use the /a
+  switch (the /a switch copies security auditing information).
+
+NOTE: To copy your own files, you do not require any special user privileges. To
+use the /o or /a switches (or to copy other users' files that you do not
+ordinarily have access to), you must be logged on as a member of the
+Administrators group. You must be logged on to both the computer you are copying
+the files from and the computer you are copying the files to. Further
+information may be found in the Windows NT Server 4.0 Resource Kit.
+
+PermCopy is a command-line utility that copies share-level permissions (access
+control lists [ACLs]) from one share to another. This utility can be found in
+the Windows NT Server 4.0 Resource Kit. Syntax is as follows:
+
+  Permcopy \\[source computer] [share] \\[destination computer] [share]
+
+NOTE: Copying permissions to an administrative share located on an x86 computer
+will cause Services.exe to crash. This notice and further information may be
+found in the Windows NT Server 4.0 Resource Kit.
+
+Procedure
+---------
+
+1. Use the command-line utility Scopy.exe with the /s switch (other switches
+  optional) to copy all sub-directories and files from the root directory to
+  the target directory on the new partition. Verify that all directories were
+  copied correctly. Depending on the number of directories and files, the
+  results are printed in the command prompt window.
+
+2. The shares are not created or copied using SCopy. The shares must be
+  recreated on the new directories before the share level permissions can be
+  copied from the old share.
+
+NOTE: If the entire directory structure is being restored to another server,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q141589 How to Restore Share Definitions to Another Server
+
+3. You can create shares remotely using File Manager (Run: winfile).
+
+  a. Open File Manager, click Disk on the title bar, and then Connect Network
+     Drive.
+
+  b. After you map a drive to the target computer, select the file, click Disk
+     on the title bar, and then click Share As.
+
+  c. Create the desired share and sharename.
+
+4. Step three above is repeated for each share that needs to be restored.
+
+5. Using the command-line utility Permcopy.exe, copy the share permissions of
+  each original share to each new target share.
+
+Additional problems may result when copying between domains. For more
+information, please see the following Microsoft Knowledge Base article:
+
+  Q168470 SCopy Copies Local Domain Group to Other Domains.
+
+NOTE: XCopy replaced SCopy in later versions of Resource Kits. Customers with
+newer Resource Kits should search for XCopy instead of SCopy.
+
+Additional query words: acl xcopy prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256013: Problems Deleting Package While Package Share Changes Occur | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256013: Problems Deleting Package While Package Share Changes Occur" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256013/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256013/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256013/","publisher":null,"image":null,"headline":"Q256013: Problems Deleting Package While Package Share Changes Occur","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256013-problems-deleting-package-while-package-share-changes-occur">Q256013: Problems Deleting Package While Package Share Changes Occur</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256013
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbtool kbsms200 kbsms200bug kbSoftwareDist
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can use Systems Management Server (SMS) version 2.0 to specify a
+distribution point share name other than the default name, SMSPKGx$. Normally,
+using a non-default share name on a distribution point is not a problem. After
+the non-default share name has been specified and the share has been created, it
+is possible to change the name of the share by entering a different share name.
+When the share name is changed, the process to implement the change starts
+immediately. If the package for which the change is being made is deleted while
+the system is processing the share name change, you may experience the following
+symptoms:
+
+- The package is deleted from the Packages panes in the SMS Administrator
+  Console, but the share name for the package on the hard disk may not be
+  deleted. Instead, it may remain as the original share name or be re-created
+  as the new share name, and this is dependant on what point during the process
+  the deletion is triggered in the SMS Administrator Console.
+
+- When you view the "Under System Status\Package Status" object, the package
+  name is not deleted.
+
+- Distribution Manager may begin to generate error messages about an inability
+  to delete this package.
+
+CAUSE
+=====
+
+This problem can occur when the package is deleted while a change is being made
+to the package share name. When this occurs, SMS may not delete all of the
+references to the package because modifications continue to be written even
+after the package has been deleted in the SMS Administrator Console.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+WARNING: When you edit the SQL database directly, you must use caution because
+improper editing may result in a site that is not usable. As with all procedures
+of this type, Microsoft recommends that you create a backup of the databases
+before proceeding.
+
+Open the SMSPACKAGES table through ISQL/w (SQL 6.5) or Query Analyzer (SQL 7.0),
+and then manually remove the row that contains the old package ID by using the
+following SQL command:
+
+NOTE: Verify that the focus is on the SMS database before you run this command.
+
+  Delete from SMSPackages where PkgID = &lt;your package ID&gt;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbtool kbsms200 kbsms200bug kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

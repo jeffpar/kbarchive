@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173091: HOWTO: Programmatically Register and Unregister .OCX Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173091: HOWTO: Programmatically Register and Unregister .OCX Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173091/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173091/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173091/","publisher":null,"image":null,"headline":"Q173091: HOWTO: Programmatically Register and Unregister .OCX Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173091-howto-programmatically-register-and-unregister-ocx-files">Q173091: HOWTO: Programmatically Register and Unregister .OCX Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173091
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 02-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to programmatically register and unregister ActiveX
+controls (.OCXs).
+
+Microsoft Visual Basic ships with several ActiveX controls (.OCX files). These
+files are automatically registered by the Visual Basic setup program during
+installation. Developers often desire to register or unregister these and/or
+their own controls at will. This can be accomplished by using a tool such as
+RegSvr32.EXE or it can be done programmatically through Visual Basic code.
+
+The ActiveX control framework supports the DllRegisterServer and
+DllUnregisterServer entry points. These entry points can be declared as
+functions in your Visual Basic code and then called to register and unregister
+the ActiveX control.
+
+MORE INFORMATION
+================
+
+The following example demonstrates how to write a code module that can be used
+to register and unregister an ActiveX control, specifically the Microsoft
+Windows Common Controls found in ComCtl32.OCX.
+
+Step-by-Step Example
+--------------------
+
+1. Create a new Standard Exe project in Visual Basic.
+
+2. Add a Module (Module1) to the project.
+
+3. Add the following code to the General Declarations section of Module1:
+
+        Public Declare Function RegComCtl32 Lib "ComCtl32.OCX" _
+           Alias "DllRegisterServer" () As Long
+
+        Public Declare Function UnRegComCtl32 Lib "ComCtl32.OCX" _
+           Alias "DllUnregisterServer" () As Long
+
+        Public Const S_OK = &amp;H0
+
+        Sub RegisterComCtl32()
+           On Error GoTo Err_Registration_Failed
+           If RegComCtl32 = S_OK Then
+              MsgBox "Registered Successfully"
+           Else
+              MsgBox "Not Registered"
+           End If
+        Exit Sub
+        Err_Registration_Failed:
+           MsgBox "Error: " &amp; Err.Number &amp; " " &amp; Err.Description
+        End Sub
+
+        Sub UnRegisterComCtl32()
+           On Error GoTo Err_Unregistration_Failed
+           If UnRegComCtl32 = S_OK Then
+              MsgBox "Unregistered Successfully"
+           Else
+              MsgBox "Not Unregistered"
+           End If
+        Exit Sub
+        Err_Unregistration_Failed:
+           MsgBox "Error: " &amp; Err.Number &amp; " " &amp; Err.Description
+        End Sub
+
+4. View the Immediate Window (CTRL+G) and type:
+
+  "UnRegisterComCtl32" (without the quotation marks)
+
+  Press the ENTER key to unregister ComCtl32.OCX, and then type:
+
+  "RegisterComCtl32" (without the quotation marks)
+
+  and press the ENTER key to register the control.
+
+These functions can now be called to register and unregister the ActiveX control,
+programmatically providing functionality similar to that of RegSvr32.EXE. You
+can test these functions by right-clicking on the ToolBox and selecting
+Components from the pop-up menu. An entry for the Microsoft Windows Common
+Controls 5.0 will be displayed on the Controls tab of the Components dialog if
+ComCtl32.OCX is registered and no entry will be displayed if ComCtl32.OCX is not
+registered.
+
+Please note the following:
+
+- "RegComCtl32" and "UnRegComCtl32" are user-defined names and may be changed
+  to suit your needs.
+
+- The Step-by-Step Example above assumes that ComCtl32.OCX is located in the
+  Windows\System folder of the local hard drive. If it is not located there,
+  you must specify the complete path to the .OCX file in the Declare statement.
+
+- "DllRegisterServer" and "DllUnregisterServer" are case-sensitive. It is
+  important that the correct case be used when declaring these functions.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Version           : :5.0,6.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69897: Using Variable Argument Lists in DLL Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69897: Using Variable Argument Lists in DLL Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69897/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69897/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69897/","publisher":null,"image":null,"headline":"Q69897: Using Variable Argument Lists in DLL Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69897-using-variable-argument-lists-in-dll-functions">Q69897: Using Variable Argument Lists in DLL Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69897
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using variable argument lists in functions in Windows dynamic-link libraries
+(DLLs) immediately suggests problems because the current data segment is not the
+same as the current stack segment (DS != SS). However, it is possible to create
+functions declared with the C calling convention (_cdecl) that can properly
+access variable argument lists from Windows DLLs using the Windows SDK version
+3.0 or later.
+
+MORE INFORMATION
+================
+
+In the STDARG.H file included with the Windows SDK, macros are defined to
+manipulate variable argument lists. Because DS != SS in DLLs containing code and
+data segments, the standard macros will not perform properly in small-model or
+medium-model DLLs. The standard macros assume that the stack segment (SS) and
+data segment (DS) are equal for far-data models and use NEAR pointers to access
+the arguments. However, small-model and medium-model DLLs containing code and
+data segments use the calling application's SS and the DLL's DS. The standard
+macros fail to account for this case.
+
+If the DLL is a code-only DLL where DS == SS (using the DATA NONE declaration),
+or if the DLL is large-model, the standard macros will work properly.
+
+One way to overcome the problems with the standard macros is to define a new set
+of macros for use with Windows' DLLs. For example:
+
+  //****************************************************************
+   *
+   *      File:  wstdarg.h
+   *
+   *   Remarks:  Macro definitions for variable argument lists
+   *             used in DLLs
+   *
+   ****************************************************************/ 
+
+  typedef char _far *wva_list ;
+
+  #define wva_start( ap, v )  (ap = (wva_list) &amp;v + sizeof( v ))
+  #define wva_arg( ap, t )    (((t _far *)(ap += sizeof( t )))[-1])
+  #define wva_end( ap )       (ap = NULL)
+
+  /****************************************************************
+   *  End of File: wstdarg.h
+   ****************************************************************/ 
+
+When these macros are compiled, the stack segment is properly selected to access
+the arguments.
+
+Please note the following caveats concerning the use of variable argument lists
+in DLLs:
+
+1. When passing arguments by reference, always use FAR pointer declarations. The
+  compiler will synthesize FAR pointers by pushing the DS and the offset of the
+  memory location on to the stack. This will provide the DLL will the proper
+  information to access the application's data segment.
+
+  Also note: If the application under development will be run under real mode,
+  avoid calling functions that will yield control from the DLL. If yielding
+  occurs, the data segment could be moved. Movement would result in invalid
+  pointers.
+
+2. Because functions with variable arguments are defined using _cdecl, all
+  pointer arguments not declared in the parameter list must be typecast in the
+  function call. If this casting is not done, unpredictable results will occur
+  due to the lack of the function parameter prototype. For example:
+
+     void FAR _cdecl DebugPrint( LPSTR lpStr, LPSTR lpFmt, ... )
+
+      ...
+
+      DebugPrint( szValue, "%s, value passed: %d\r\n",
+                  (LPSTR) "DebugPrint() called", (int) 10 ) ;
+
+3. When the function is exported or imported, it must be declared with an
+  underscore (_) prefix in the .DEF file. It is also necessary to preserve
+  uppercase and lowercase letters in the function name.
+
+  Here is the declaration for the function above:
+
+      EXPORTS
+         WEP          @1   RESIDENTNAME
+         _DebugPrint  @2
+
+4. Variable argument C run-time library functions such as vsprintf() and
+  vfprintf() do not take into account that DS != SS. These functions are not
+  available in DLLs.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

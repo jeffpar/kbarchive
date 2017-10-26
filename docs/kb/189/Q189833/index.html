@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189833/","publisher":null,"image":null,"headline":"Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189833-bug-visual-basic-does-not-create-an-exe-file-after-compiling">Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189833
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An EXE file is not created even though no errors are produced after compiling a
+Visual Basic application that includes a resource file.
+
+CAUSE
+=====
+
+This will occur when including a resource file which contains a "Version"
+resource.
+
+RESOLUTION
+==========
+
+Remove the "Version" information from the resource file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Creating the Resource File:
+
+Create a resource file that includes a "Version" resource using a text editor and
+resource compiler, such as those provided with Microsoft Visual C++. The
+compiled resource file will have a .res file name extension.
+
+One method of generating a .res file to reproduce this bug would be to use
+Microsoft Visual C++ 5.0 while following these steps:
+
+1. Start Visual C++ 5.0 and create a new MFC AppWizard (EXE) project named Res1.
+
+2. Click OK, Finish, and then the OK button again.
+
+3. Under the Build menu, select Build Res1.exe.
+
+  A "Res1.res" file should be generated in the Debug directory under the Res1
+  project Directory. By default, this directory would be "C:\program
+  files\DevStudio\my projects\Res1\debug."
+
+Create the Visual Basic Application:
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Select Add Files from the Project menu, then add the "Res1.res" file created
+  above.
+
+3. Select Make Project1.exe from the File menu.
+
+  At this point, Visual Basic will compile and appear to write an EXE file. No
+  EXE file is actually generated because the resource file contains a "Version"
+  resource. To alleviate this problem, remove the "Version" resource from the
+  .res file by using Visual C++ 5.0. Rebuild the "Res1" project and add the new
+  resource file to the Visual Basic project.
+
+Additional query words: kbDSupport kbVC500 kbVBp500bug kbVBp kbMFC kbWizard kbVBp600bug kbdss
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

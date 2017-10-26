@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168718/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168718/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168718/","publisher":null,"image":null,"headline":"Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168718-xcln-win95-nw-clients-disconnected-from-mail-on-novell-server">Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168718
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 03-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click on a folder, you may receive the following error message:
+
+  The command you specified could not be carried out. The file
+  &lt;path&gt;\mailbox.pst could not be accessed because another workstation
+  has
+  modified it. Close and then restart all mail-enabled applications.
+
+This error message indicates that the connection between the client and the
+server was lost after a certain period of time. This error was found to be
+associated with specific types of Windows clients.
+
+When you leave open, for an extended period of time, a Microsoft Exchange client
+that uses a personal store file (PST) and runs on Novell Internetware Client 32
+(NW 32), the client loses connection to the Microsoft Mail for PC Networks (MS
+Mail PC) on a Novell server or connection to Exchange Server. The only way to
+restore the connection is to log off and log back on to the network.
+
+This problem happens in the earlier and the new versions of the NW 32 client.
+This problem is not encountered when you use only the Microsoft Client for
+Netware that ships with Windows 95. Some users need to use the NW 32 client in
+order to run Novell's 4.x Netware Admin utility, to support Novell's Netware
+Directory Services (NDS), and a few other things.
+
+WORKAROUND
+==========
+
+To work around this problem, perform one of the three following procedures:
+
+- Reinstall the Novell 32 Client for Netware by doing the following: The
+  default is to upgrade the network driver interface specification (NDIS) to NW
+  ODI. Instead, you should clear this check box so the client remains as NDIS.
+  With this setup, the problem of losing connection to the PST file, placed on
+  a Novell server, may not occur.
+
+- If you move the PST file to a local drive, the problem should disappear. This
+  may not be an acceptable solution, however, because the administrator may be
+  running roving users and dial-up access, but it is sufficient proof that it
+  is a network problem.
+
+- Create an Exchange profile for the same user on a Microsoft Windows 95
+  computer. This probably will eliminate the problem. If the problem
+  disappears, then the problem is associated only with the Netware clients and
+  not with the Exchange Server computer or the Exchange client.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+Version           : 4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

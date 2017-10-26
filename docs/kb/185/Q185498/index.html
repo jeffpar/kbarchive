@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185498/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185498/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185498/","publisher":null,"image":null,"headline":"Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185498-vfphtmlexe-demonstrates-html-help-in-vfp-30-and-50">Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185498
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbfile kbsample kbHTMLHelp kbvfp300 kbvfp500
+Last Modified: 24-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Vfphtml.exe is a file that demonstrates how to implement an HTML help file
+within Visual FoxPro 3.0x and 5.0x.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  Vfphtml.exe
+  (http://download.microsoft.com/download/vfox50/Demo/1/W9XNT4/EN-US/Vfphtml.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Vfphtml.exe contains three files: Hhctrl.ocx, Test.chm, and Htmlhelp.prg. The
+example is dependent on the version of the Hhctrl.ocx file. These files allow
+one to implement an HTML-style Help file within Visual FoxPro 3.0x or 5.0x. To
+setup the files, use the following steps:
+
+1. Unzip the self-extracting VfpHtml.exe file into a folder named Test.
+
+2. Register the Hhctrl.ocx file following the instructions in the Microsoft
+  Knowledge Base article listed in the REFERENCES section.
+
+3. Modify the program and change the values of the lcSampleHelp and lcHhctrl
+  variables. These variables contain the locations of the Test.chm and
+  Hhctrl.ocx files respectively. These files can reside in different folders as
+  long as the variables contain the correct file locations.
+
+4. Start Visual FoxPro 3.0x or 5.0x and run the program.
+
+5. The HTML-style help appears on the screen.
+
+REFERENCES
+==========
+
+For information on registering the .ocx control, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q146219 HOWTO: Register an ActiveX Control (.ocx) Manually
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbHTMLHelp kbvfp300 kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

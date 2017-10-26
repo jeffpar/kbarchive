@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101302/","publisher":null,"image":null,"headline":"Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101302-how-to-prevent-source-is-out-of-date-error-message">Q101302: How to Prevent "Source Is out of Date" Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101302
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 3.00| 2.00 2.50 2.50a
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The error message "Source is out of date" indicates that the source program has
+been changed, but not recompiled or generated. This error can also occur if an
+"old" version of a program is found in a different subdirectory than the current
+version.
+
+FoxPro first creates and then runs a compiled version of a program file. This
+compiled version is called an object file and runs faster than a noncompiled
+version. This feature cannot be disabled.
+
+To eliminate this error, regenerate the program by opening the source file and
+choosing Generate from the Program menu.
+
+If the program is part of a project, open the project and select the Build
+option. Then select the Rebuild Project and the Rebuild All options. Rebuild the
+project and re-create the application.
+
+If this doesn't work, scan all the subdirectories for occurrences of the source
+and object code. Delete the extra files and regenerate the program.
+
+MORE INFORMATION
+================
+
+To prevent further occurrences of this error, issue the SET DEVELOPMENT ON
+command. If you have issued this command and the source code is more current
+than its compiled object program, FoxPro will recompile the source code before
+it executes the program, thus ensuring that the most current version of a
+program is executed.
+
+If the "Source is out of date" error message still occurs, scan all
+subdirectories for occurrences of the source and object code. Compiled files in
+FoxPro will have the following extensions:
+
+  .FXP - Compiled version of source code program with .PRG extension.
+  .APP - Compiled application program.
+  .QPX - Compiled version of source code program with .QPR extension.
+  .MPX - Compiled version of source code program with .MPR extension.
+  .SPX - Compiled version of source code program with .SPR extension.
+  .PRX - Compiled version of source code program with .FMT extension.
+
+You can scan for these extensions by using the Find option in the Filer, or, if
+you have MS-DOS version 5.0 or later, by typing the following DIR command at the
+MS-DOS prompt:
+
+     dir &lt;filename&gt; /s
+
+If duplicate filenames are found, remove the incorrect versions of the files, or
+change the FoxPro SET PATH command to ignore the directories where the duplicate
+files are found.
+
+Additional query words: VFoxWin FoxDos FoxWin errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : 2.50 2.50a 3.00| 2.00 2.50 2.50a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

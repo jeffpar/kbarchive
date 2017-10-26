@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178719/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178719/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178719/","publisher":null,"image":null,"headline":"Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178719-howto-plot-xy-coordinate-values-on-a-scatter-chart">Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178719
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS Chart control can create an XY Scatter chart that you can use to plot X/Y
+coordinate data. This article shows you how to create a sample program that
+displays X/Y coordinate data on a Scatter chart using the MS Chart control.
+
+MORE INFORMATION
+================
+
+You can create an XY Scatter chart by treating your data points as a two-
+dimensional grid. This grid comprised one or more data series. Each data series
+in the grid takes two columns and as many rows as you have data points. For
+example, the first and second columns make up the X and Y coordinates of the
+first data series. The third and fourth columns make up the X and Y coordinates
+of the second data series, and so on. The following shows a sample grid. In this
+grid, the first data series is made up of the following 10 data points:
+
+  1,2  2,4  3,6  4,8  5,10  6,12  7,14  8,16  9,18  10,20
+
+The second data series is made up of the following 10 data points:
+
+  3,4  6,8  9,12  12,16  15,20  18,24  21,28  24,32  27,36  30,40
+
+First    Second
+Series   Series
+X   Y    X   Y
+-----------------
+01  02   03  04
+02  04   06  08
+03  06   09  12
+04  08   12  16
+05  10   15  20
+06  12   18  24
+07  14   21  28
+08  16   24  32
+09  18   27  36
+10  20   30  40
+
+To fill the chart's data grid, you can use the Row and Column properties to
+specify a cell in the grid and then use the Data property to plot that
+coordinate:
+
+  MSChart1.Column = 1
+  MSChart1.Row = 1
+  MSChart1.Data = 1000
+
+The next section shows how to create a sample project that demonstrates plotting
+X/Y coordinate data on a scatter chart.
+
+Step-by-Step Example
+--------------------
+
+This project assumes you added the MS Chart Component to the project. The project
+will plot the previously described data.
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a Chart control and a CommandButton to Form1.
+
+3. In the MS Chart property window, click the Custom property ellipses button to
+  display the property pages. On the Chart Tab, check XY (Scatter) for the
+  Chart type.
+
+4. Copy the following code to the Code window of Form1:
+
+        Private Sub Command1_Click()
+           Dim x As Integer, y As Integer
+
+           MSChart1.RowCount = 10
+           MSChart1.ColumnCount = 4
+
+           For y = 1 To 4
+               MSChart1.Column = y
+               For x = 1 To 10
+                   MSChart1.Row = x
+                   MSChart1.Data = x * y
+               Next x
+           Next y
+        End Sub
+
+5. Press the F5 key to run the program. Click the CommandButton and the data is
+  plotted.
+
+Additional query words: XY-Scatter x y kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

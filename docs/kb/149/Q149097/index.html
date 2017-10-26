@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149097/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149097/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149097/","publisher":null,"image":null,"headline":"Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149097-bug-data-control-validate-event-not-fired-on-unloading-form">Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149097
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00 | 4.00
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A form containing a bound Data Control disables the Validate event when the form
+is unloaded.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following are steps to reproduce this behavior. The Cancel property is set
+to true in the Unload event of the form to prevent the form from unloading. When
+you edit a record and then unload the form, the validate event, containing a
+beep instruction, executes only one more time.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start 16-bit or 32-bit Visual Basic 4.0, or if it is already running, click
+  New Project on the File menu.
+
+2. Add the following controls and set the following properties:
+
+     Control              Default Name   Property              Value
+     --------------------------------------------------------------------
+
+     Data Control            Data1       Database Name         BIBLIO.MDB
+                                         RecordSource          Authors
+
+     TextBox Control         Text1       DataSource            Data1
+                                         DataField             Author
+
+     Command Button          Command1
+
+3. Copy the following code to the Code window of the Form1 form:
+
+        Option Explicit
+
+        Private Sub Command1_Click()
+           Unload Me
+        End Sub
+
+        Private Sub Data1_Validate(Action As Integer, Save As Integer)
+           Beep
+        End Sub
+
+        Private Sub Form_Unload(Cancel As Integer)
+           'The next line stops the form from being unloaded
+           Cancel = True
+        End Sub
+
+4. On the Run menu, click Start or press the F5 key to start the program. Scroll
+  through the records and click the command button. Note that a beep occurs
+  with each action.
+
+5. Edit a record and click the command button. Scroll through the records and
+  note the a beep occurs only once. Scrolling through the records or clicking
+  the command button does not execute the Validate event.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00 | 4.00
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

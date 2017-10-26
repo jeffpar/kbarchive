@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131735: How to Create Windows NT Boot Floppy Disks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131735: How to Create Windows NT Boot Floppy Disks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131735/","publisher":null,"image":null,"headline":"Q131735: How to Create Windows NT Boot Floppy Disks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131735-how-to-create-windows-nt-boot-floppy-disks">Q131735: How to Create Windows NT Boot Floppy Disks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131735
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0,4.0 SP4,4.0 SP5
+Operating System(s): 
+Keyword(s): kbsetup kbusagekbfaq
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft BackOffice Small Business Server version 4.0 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Microsoft Windows NT version 3.51 or 4.0, you can use the Winnt.exe or
+Winnt32.exe file located in the /I386 installation directory on the CD-ROM to
+create a set of Windows NT boot floppy disks.
+
+MORE INFORMATION
+================
+
+Both Winnt.exe and Winnt32.exe allow you to create boot floppy disks for
+installing Windows NT, or for using the Emergency Repair Disk (ERD).
+
+Use the /O switch to create a set of boot floppy disks that can be used to
+perform either a Winnt.exe or Winnt32.exe installation. These disks are
+identical to the set created by a regular Winnt.exe or Winnt32.exe installation.
+Using this switch allows you to create the floppy disks without installing
+Windows NT.
+
+Use the /OX switch to create a set of boot floppy disks to perform a CD- ROM or
+floppy disk installation. These disks are identical to the disks included with
+Windows NT in either the CD-ROM or floppy disk format.
+
+The only difference between these two sets of disks is the Winnt.sif file on the
+second disk that is created when you use the /O switch. The Winnt.sif file
+contains an MsDosInitiated= entry. This is set to 1 when you use the /O switch.
+Deleting the file, or setting the value to 0, makes the set of disks equivalent
+to using the /OX switch. If the Winnt.sif file exists, and MsDosInitiated= is
+set to 1, Windows NT Setup looks for the installation files in the \$WIN_NT$.~LS
+temporary folder. If Winnt.sif does not exists, or MsDosInitiated= is set to 09,
+Windows NT Setup checks the CD-ROM drive, and then the floppy disk drive, for
+the installation files.
+
+NOTE: Windows NT Small Business server (SBS) version 4.0 and 4.0a requires you to
+copy the Winnt.sif file from the first SBS CD-ROM \SUPPORT directory to the
+second installation diskette. Once this has been completed, the three diskettes
+are identical to the original diskettes that came in the SBS box. SBS 4.5
+automatically copies this file to floppy disk 2.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbsetup kbusage kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServSearch kbWinNTS351search kbAudDeveloper kbSBServSearch kbSBServ400
+Version           : winnt:3.51,4.0,4.0 SP4,4.0 SP5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

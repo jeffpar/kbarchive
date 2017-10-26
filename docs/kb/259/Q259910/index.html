@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259910: How to Use Session Request Types to Control Access to TN3270 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259910: How to Use Session Request Types to Control Access to TN3270" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259910/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259910/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259910/","publisher":null,"image":null,"headline":"Q259910: How to Use Session Request Types to Control Access to TN3270","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259910-how-to-use-session-request-types-to-control-access-to-tn3270">Q259910: How to Use Session Request Types to Control Access to TN3270</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259910
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can control the access to TN3270 resources (LUs and/or Pools) when you
+configure which TCP/IP addresses, subnets, or workstation names that have access
+to the resources. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q190446 Restricting Access to TN3270 LUs
+
+An alternative method is available that allows administrators to set up a
+"default" TN3270 resource for TN3270 clients, while they control access to the
+resource without the use of the methods described in the referenced article.
+
+MORE INFORMATION
+================
+
+The TN3270 server, included with SNA Server, supports the following two types of
+session requests:
+
+- Generic
+
+- Specific
+
+If a TN3270 client specifies a blank device name, the TN3270 server views this as
+a "generic" request. Generic session requests are satisfied by any of the
+display LUs/Pools that are assigned to the TN3270 server as "generic displays."
+LUs/Pools configured to be generic displays constitute the TN3270 server's
+default pool of display LUs/Pools. Resources assigned to the TN3270 server are
+configured as generic resources by default.
+
+Display LUs/Pools assigned to the TN3270 server can be configured as "specific
+displays." Resources configured as "specific" are accessed by TN3270 clients
+that explicitly request the resources by name.
+
+ITN3270 clients that specify an invalid TN3270 LU/Pool name cannot connect to any
+TN3270 session. The TN3270 clients that specify an invalid TN3270 LU/Pool name
+cannot connect to any TN3270 session.
+
+NOTE: This information also applies to printer sessions assigned to the TN3270
+server. Printers can be "associated printers." Associated printers are print
+sessions associated with a display session. (This means that a TN3270 client is
+allocated the print session at the same time they are it is allocated the
+display session.)
+
+Configuring TN3270 LUs/Pools as specific or generic to control access is used in
+environments where some TN3270 clients (for example, managed clients) require
+the use of specific TN3270 resources, while other clients (for example,
+unmanaged clients), should connect to "default" TN3270 resources.
+
+The following is a method to configure TN3270 resources to control access though
+the use of specific and generic LU types:
+
+- Assign the managed users' resources to the TN3270 server as "specific
+  displays," either individually assigned or grouped together into pools of
+  interchangeable resources. The managed users' TN3270 emulators are configured
+  to specify their required device name (for example, LU/Pool name).
+
+- Assign the un-managed users' resources to the TN3270 server as "generic
+  displays" (for example, the Default Pool). Un-managed users who do not know
+  or care which resource they should use, can leave the device name blank in
+  their TN3270 emulator when connecting to the TN3270 server.
+
+TN3270 clients that enter an invalid device name are not allowed access to any
+TN3270 resources.
+
+TN3270 clients that enter a valid device name are allowed access to the specified
+TN3270 resource whether the resource is configured as specific or generic.
+TN3270 clients can access generic resources either when entering a valid device
+name or when leaving the device name blank.
+
+The following steps describe how to check or change the session type for TN3270
+sessions:
+
+1. Open the SNA Server Manager.
+
+2. Select the TN3270 folder under the appropriate SNA Server.
+
+3. Right-click, and then select Properties on a resource assigned to the TN3270
+  server.
+
+4. Select the TN3270 tab.
+
+5. Select the appropriate display or printer type in the Type section of the
+  TN3270 session properties.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

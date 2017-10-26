@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163157: WD97: Pleading Wizard Uses Negative Margins | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163157: WD97: Pleading Wizard Uses Negative Margins" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163157/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163157/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163157/","publisher":null,"image":null,"headline":"Q163157: WD97: Pleading Wizard Uses Negative Margins","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163157-wd97-pleading-wizard-uses-negative-margins">Q163157: WD97: Pleading Wizard Uses Negative Margins</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163157
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbtemplate word97 kblayout
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The top and bottom margins of a document created by using the Pleading Wizard
+are a negative measurement.
+
+CAUSE
+=====
+
+This functionality is by design. The top and bottom margins are set to a
+negative measurement to prevent changes in the header and footer from causing
+alignment problems with the body text and the line numbers. The negative
+measurement prevents the header or footer area from growing.
+
+MORE INFORMATION
+================
+
+Word normally sets a positive measurement for the header or footer area. If the
+footer content expands outside of the footer area--the distance between the edge
+of the page and the measurement defined for the footer-- then as the bottom
+margin increases, the body text area decreases. This would negatively affect
+line numbering.
+
+When you use a standard bottom margin, and the footer content exceeds the margin
+size, the bottom margin increases in size, allowing for a smaller text area.
+This smaller text area may cause problems with the line numbers in the body of
+the document. For example, if the bottom margin is increased, the body area
+decreases allowing for fewer line numbers.
+
+If you have margins that are set to negative values, Word defines the footer to
+be a certain size. If the footer contents exceed the bottom margin size, the
+footer contents are clipped if they exceed the size of the bottom margin and
+Word does not change the size of the body area. That way the line numbers are
+not disturbed.
+
+In most pleading documents, the footer size is not as important as the line
+numbers. If the footer content is truncated, you modify the footer content
+rather than trying to adjust the line numbers (modifying the footer content is
+easier than adjusting the line numbers).
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q181365 WD97: Pleading Wizard Font Point Size Is Too Small or Too Large
+
+  Q181384 WD97: Text, Line Numbering Don't Line Up in Pleading File
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

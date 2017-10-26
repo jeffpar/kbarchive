@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137475/","publisher":null,"image":null,"headline":"Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137475-smc-8416-etherez-card-does-not-allow-reconfiguration">Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137475
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51 95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+-------
+
+When you use an SMC 8416 EtherEZ network card, you can only use default
+values of the card. When you change the configuration by running Control
+Panel, choosing Network, and then Configure, or if you use the
+configuration program that ships with the adapter, your configuration
+attempt fails.
+
+CAUSE
+=====
+
+This is caused by the Plug and Play (PNP) capabilities of the card and the Plug
+and Play BIOS of the computer.
+
+RESOLUTION
+==========
+
+The following information has been provided by Standard Microsystems technical
+support and is not guaranteed to be correct by Microsoft Corporation.
+
+To resolve this problem, turn off the PNP capabilities of the adapter. Some
+computer CMOS programs allow you to turn off the PNP capability of the BIOS but
+this can have unexpected results on other adapters.
+
+Depending on the operating system running on your computer, use one of the
+following procedures with EZSETUP.EXE to disable the PNP capabilities of the
+network card:
+
+- If your computer is configured for dualboot, for example, MS-DOS and Windows
+  NT, boot to MS-DOS and type "EZSETUP -nopnp" (without the quotation marks).
+
+  -or-
+
+- If your computer is running Windows NT or Windows 95, boot with an MS-DOS
+  bootable floppy with EZSETUP.EXE on the floppy and type "EZSETUP -nopnp"
+  (without the quotation marks).
+
+You can obtain EZSETUP.EXE by downloading the self-extracting executable
+GEZ121.EXE from the SMC BBS at (516) 434-3162 or from the following Internet
+site:
+
+  http://www.smc.com/ftpdocs/nics.html#nics/latest
+
+For more information contact Standard Micro Systems technical support at (800)
+992-4762.
+
+The SMC 8416 EtherEZ network card is manufactured by Standard Micro Systems, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: prodnt win95
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : 3.50 3.51 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

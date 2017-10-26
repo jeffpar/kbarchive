@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131989: PRB: PreCreateWindow() Not Called for CFormView | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131989: PRB: PreCreateWindow() Not Called for CFormView" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131989/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131989/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131989/","publisher":null,"image":null,"headline":"Q131989: PRB: PreCreateWindow() Not Called for CFormView","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131989-prb-precreatewindow-not-called-for-cformview">Q131989: PRB: PreCreateWindow() Not Called for CFormView</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131989
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1
+Operating System(s): 
+Keyword(s): kbnokeyword kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbprb kbGrpDSMFCATL
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+PreCreateWindow() for a CFormView derived class does not get called by the MFC
+framework during the creation process of a formview.
+
+CAUSE
+=====
+
+This is by design. During the creation of the view, the view's Create() function
+is called by the framework. This then calls CWnd::Create for all the views
+except CFormView. The CFormView class has its own Create, which calls
+::CreateDialog to create the view. CWnd::Create has a call to PreCreateWindow
+while CFormView::Create does not. As a result, PreCreateWindow( ) for a
+CFormView derived class does not get called.
+
+RESOLUTION
+==========
+
+To change the initial size and location, override the frame window's
+PreCreateWindow(). To make other changes, override the virtual function,
+CFormView::Create().
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+PreCreateWindow() is generally used to alter the default values of the
+CREATESTRUCT structure before the window is created. This structure contains
+fields that determine the initial size, location, style, and class among other
+properties for the window. For CView derived objects, the size, location, and
+some of the style bits have no effect when modified. In general, the
+encapsulating frame window's PreCreateWindow() should be overridden and used
+instead. However, if you need to change the view's CREATESTRUCT, you can
+override PreCreateWindow() for the view, except for the CFormView (and
+CRecordView) class.
+
+CFormView (and CRecordView) uses the dialog template to initialize most of its
+window properties. As a result, CFormView::Create() calls ::CreateDialog(),
+passing it the dialog template resource as one of its parameters. CView,
+CEditView, and CScrollView call CWnd::Create() which calls CWnd::CreateEx()
+where the CREATESTRUCT structure is filled and PreCreateWindow() is called
+before ::CreateWindowEx().
+
+Typically, there is very little flexibility in changing the default construction
+parameters for a CFormView after the creation process has started. Some of the
+parameters that can be modified by PreCreateWindow for other views, like the
+class name, are ignored in the case of CFormView. See the implementation of
+CFormView::Create in the Viewform.cpp file for more details.
+
+NOTE: Starting with MFC version 4.0, included with Visual C++ version 4.0,
+CFormView::Create() calls its PreCreateWindow() to get the prefered extended
+style. This is done before the modeless dialog is created.
+
+REFERENCES
+==========
+
+For more information, please see the MFC source library and Online Books.
+
+Additional query words: 1.00 1.50 2.00 2.10
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbprb kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

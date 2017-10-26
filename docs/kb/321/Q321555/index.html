@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321555: Types of Encryption Included with SNA Server and HIS 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321555: Types of Encryption Included with SNA Server and HIS 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321555/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321555/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321555/","publisher":null,"image":null,"headline":"Q321555: Types of Encryption Included with SNA Server and HIS 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321555-types-of-encryption-included-with-sna-server-and-his-2000">Q321555: Types of Encryption Included with SNA Server and HIS 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321555
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the three types of data encryption that are included with
+SNA Server and Host Integration Server 2000:
+
+- Server-to-server
+
+- Client sponsor connection
+
+- Client-to-server application
+
+MORE INFORMATION
+================
+
+About Data Encryption
+---------------------
+
+- Data encryption with SNA Server and Host Integration Server is implemented by
+  using the Security Support Provider Interface (SSPI).
+
+- The supported data encryption levels are 40-bit, 56-bit, and 128-bit.
+
+- The level of encryption that is used is determined by the operating system
+  (OS), not by either the SNA or Host Integration Server client or by the SNA
+  or Host Integration Server application.
+
+- The level of encryption is determined by the maximum encryption strength that
+  is possible over the Secure Sockets Layer (SSL). For example, if a client
+  supports 40-bit encryption and the server supports 128-bit encryption, the
+  negotiated encryption level will be at the 40-bit level.
+
+Any third-party emulator or application that is written to use the SNA Server or
+Host Integration Server client application programming interface (API) will
+automatically benefit if encryption is enabled.
+
+Server-to-Server Data Encryption
+--------------------------------
+
+Encryption of data is possible between two computers that are running SNA Server
+or Host Integration Server when you use the Distributed Link Service (DLS). You
+can use DLS encryption to provide secure communications across your network, the
+Internet, or any other wide area network (WAN).
+
+When you use DLS, consider whether or not trust exists between the two Windows NT
+or Windows 2000 domains.
+
+If trust does exist, note that for pass-through authenticaton to work, the branch
+(remote) SNA Server/Host Integration Server computer must run under a domain
+user account that can be authenticated by the domain where the central (remote)
+SNA Server/Host Integration Server computer resides. For example, the branch
+server's link service would be SNAREMx, that is,
+&lt;\\Central_Server\SnaDlcx&gt;.
+
+If no Trust exists between the domains, the user account and password that the
+branch (remote) server is running under (for example, SNAREMx, that is,
+&lt;\\Central_Server\SnaDlcx&gt;) must also exist in the central (remote)
+accounts domain for authentication to occur.
+
+Also note that you cannot encrypt data by running the SNAREMx service under the
+local system account.
+
+For more information about the Distributed Link Service, visit the following
+TechNet Web site:
+
+  SNA Open Gateway Architecture
+  (http://www.microsoft.com/technet/treeview/default.asp?url=/TechNet/prodtechnol/host/proddocs/hisdoc/getstrt/dep_sna_open_gateway_architecture.asp)
+
+Client Sponsor Connection Data Encryption
+-----------------------------------------
+
+When an SNA or Host Integration Server client connects to a SNA Server or Host
+Integration Server computer over the sponsor connection, various messages are
+sent to the client. When you add the SecureSponsor registry parameter on the
+server that is running SNA Server or HIS, all sponsor connection data is
+encrypted.
+
+For additional information about how to use the SecureSponsor registry parameter,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q159351 SecureSponsor Disables SNA 3.0 Win 3.x Password Change Feature
+
+For additional information about the sponsor connection, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q160849 How the SNA Server Client Chooses a "Sponsor" SNA Server
+
+  Q317805 Sponsor Connection Changes in Host Integration Server 2000
+
+Client-to-Server Application Data Encryption
+--------------------------------------------
+
+Client-to-server encryption prevents information from being sent in clear text
+between an SNA or Host Integration Server client and an SNA Server or Host
+Integration Server computer. You can enable client/server encryption on either a
+group or user-by-user basis.
+
+To configure users for client-server encryption, follow these steps:
+
+1. In the SNA Server Manager console tree, double-click Configured Users.
+
+2. Right-click the user or group that you want to configure, and then click
+  Properties.
+
+3. On the Properties tab, click to select the Use Client/Server Encryption check
+  box, and then click OK.
+
+4. In the Action list, click Save configuration.
+
+5. Restart the computer that is running SNA Server or Host Integration Server
+  for the changes to take effect.
+
+NOTE: SSL support is not available for TN3270 and TN5250. Therefore, encryption
+is not available when you use either of these TN services with SNA Server or
+HIS.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

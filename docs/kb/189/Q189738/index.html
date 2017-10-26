@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189738: HOWTO: Run Setup1.vbp in the Design Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189738: HOWTO: Run Setup1.vbp in the Design Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189738/","publisher":null,"image":null,"headline":"Q189738: HOWTO: Run Setup1.vbp in the Design Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189738-howto-run-setup1vbp-in-the-design-environment">Q189738: HOWTO: Run Setup1.vbp in the Design Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189738
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can customize the installation program created by the Setup Wizard (renamed
+Package and Deployment Wizard, or PDW, in Visual Basic 6.0) by modifying the
+Setup1.vbp project, also known as the Setup Toolkit. However, you cannot run or
+debug this project in the Visual Basic Design Environment unless you emulate the
+behavior of the compiled setup routine.
+
+NOTE: Microsoft Technical Support does not support the modification of the setup
+process or any of the setup files. Support is provided for the Setup Wizard on
+an "as is" basis only.
+
+MORE INFORMATION
+================
+
+Before you can run the Visual Basic portion of setup, the Setup.exe program must
+copy certain files to their destination directories. Setup.exe also creates an
+uninstall log file that is used by Setup1.exe for 32-bit applications, and it
+copies Setup1.lst to the \Windows directory so it will not be swapped out.
+
+Setup.exe invokes Setup1.exe (Setup132.exe using Visual Basic 4 32-bit) with
+certain command-line arguments. In order to run the Setup1 project in the Visual
+Basic Design Environment, these arguments must be set. Do this by launching the
+Visual Basic Design Environment from the Setup program and specifying your
+modified Setup1.vbp as a command-line argument.
+
+Step-by-Step Example
+--------------------
+
+1. Run the Application Setup Wizard or PDW, and follow the steps to produce the
+  default setup distribution set in a folder.
+
+2. Edit the Setup.lst file in a text editor, such as Notepad. Use the method
+  described below for the version of Visual Basic installed, making changes
+  where noted:
+
+  Visual Basic 4.0 16-bit
+
+  Locate:
+
+  Setup=setup1.exe
+
+  Replace it with:
+
+  Setup=c:\vb\vb.exe c:\vb\setupkit\setup1\setup1.vbp /cmd
+
+  Visual Basic 4.0 32-bit
+
+  Locate:
+
+  Setup=setup132.exe
+
+  Replace it with:
+
+  Setup=c:\vb\vb32.exe c:\vb\setupkit\setup1\setup1.vbp /cmd
+
+  Visual Basic 5.0
+
+  Locate:
+
+  Setup=setup1.exe
+
+  Replace it with:
+
+  Setup="c:\program files\devstudio\vb\vb5.exe"
+        "c:\program files\devstudio\vb\setupkit\setup1\setup1.vbp" /cmd
+
+  NOTE: The entry should be on one line only, with necessary quotation marks
+  depending on long file name usage.
+
+  Visual Basic 6.0
+
+  Locate:
+
+  Spawn=setup1.exe
+
+  Replace it with:
+
+  Spawn=C:\PROGRA~1\MICROS~1\VB98\VB6.exe 
+  C:\PROGRA~1\MICROS~1\VB98\Wizards\PDWizard\Setup1\Setup1.vbp /cmd
+
+  NOTE: The entry should be on one line only. Your path may vary depending upon
+  where you installed Visual Basic 6.0. Please change the path in the example
+  above as needed, using short file names (8.3).
+
+  Modify the paths as appropriate. Save Setup.lst when this step is complete.
+
+3. Start the installation by running Setup.exe.
+
+  After Setup.exe finishes, it will start the Visual Basic Design Environment
+  with the Setup Toolkit (Setup1.vbp) project loaded, the correct files in the
+  correct places, the uninstall log already created, and with the command-line
+  arguments set properly. This is the function of the /cmd argument. It allows
+  Visual Basic to pick up the command-line arguments that Setup.exe sends to
+  the second portion of the installation process, Setup1.exe (Setup132.exe
+  using Visual Basic 4.0).
+
+4. Add the desired break points. Press the F5 or F8 key to run the project.
+
+  Note that if you click the "Exit Setup" button at any time while running the
+  project, or if the program runs to the end either successfully or by a
+  trapped error, the log file (setup.lst) and the uninstall program are
+  deleted. Conversely, if you run repeated tests of your version of Setup
+  Toolkit, multiple copies of the log file (StXunst.000, StXunst.001, and so
+  on) are copied into your \Windows directory, where "X" is the version of
+  Visual Basic being used. These may be safely deleted after you exit the
+  Visual Basic Design Environment.
+
+Additional query words: command line parameters IDE
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

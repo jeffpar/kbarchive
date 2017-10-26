@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156182/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156182/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156182/","publisher":null,"image":null,"headline":"Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156182-xcln-changing-windows-nt-40-password-in-microsoft-exchange">Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156182
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,8.0,8.1,8.2,8.2.1,8.2.2
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 30-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+- the operating system: Microsoft Windows NT 4.0 
+- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+- Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1, 8.2, 8.2.1, 8.2.2 
+- Microsoft Outlook 2001 for Mac 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT 4.0 password cannot be changed from the Microsoft Exchange
+Macintosh client. The scenario is as follows (this is the same for Banyan Vines
+TCP/IP clients):
+
+You are using the Microsoft Exchange Macintosh client and attempting to change
+the Windows NT password by clicking Options on the Tools menu. On the Exchange
+Server tab, you click Password. After you type all the information and click OK,
+the following message appears:
+
+  Please enter the AppleTalk Zone of your Microsoft Windows NT Primary
+  Domain Controller.
+
+After you enter the Apple-Talk zone and click OK, the following message appears:
+
+  The Windows NT Domain password could not be changed. A required action was
+  not successful due to an unspecified error.
+
+As a result, the password is not changed.
+
+RESOLUTION
+==========
+
+In order for the Microsoft Exchange Macintosh client to change the Windows NT
+domain password, the registry must be modified as follows:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows NT. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+1. On the Windows NT Primary Domain Controller (PDC), start Registry Editor,
+  regedt32.exe (regedit.exe in Windows NT 4.0 will not work) to edit the PDC's
+  Registry.
+
+2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+     SYSTEM\CurrentControlSet\Control\Lsa
+
+3. Select Lsa to highlight it.
+
+4. On the Edit menu, click Add Value.
+
+5. Make one of the changes listed below, depending on whether AppleTalk or
+  TCP\IP protocol will be used:
+
+  For password support using AppleTalk protocol, enter:
+
+     Value Name:  AppletalkClientSupport
+     Data Type:  REG_DWORD
+     DWORD Editor Data: 1
+
+  -OR-
+
+  For password support using TCP/IP protocol, enter:
+
+     Value Name:  TCPIPClientSupport
+     Data Type:  REG_DWORD
+     DWORD Editor Data: 1
+
+6. Restart the primary domain controller (PDC).
+
+7. From Windows NT User Manager for Domains, select a user account of a
+  Microsoft Exchange Macintosh client user. On the Policies menu, click
+  Account. At the bottom of the Account Policy dialog box is the check box
+  "Users must log on in order to change password". Make sure this check box is
+  cleared.
+
+8. If using TCP/IP as connecting protocol, the client must have a hosts file or
+  Domain Name Service (DNS) with entries for both Microsoft Exchange Server and
+  the Windows NT PDC. (The A and CNAME records)
+
+With the above configuration in place, you can now change the Windows NT domain
+password using the Microsoft Exchange Macintosh Client as follows:
+
+1. On the Tools menu, click Options.
+
+2. On the Exchange Server tab, click the Password button.
+
+3. Type the information and click OK. A message appears stating:
+
+     Your password has been changed.
+
+  Future log on process(es) to domain resources will use the new password.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q127943 Mac Client Can't Logon Because Password Has Expired
+
+  Q153213 XCLN: Can't Change Windows NT 3.51 Password w/ AppleTalk
+
+  Q140641 Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients
+
+
+
+Additional query words: chooser AppleShare Mac BDC
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbOSWinSearch kbOSWinNT400 kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbOutlook2001Search kbZNotKeyword3 kbOutlookMacSearch kbOSWinNTSearch kbExchange500Mac kbExchange400Mac kbOutlook800Mac kbOutlook810Mac kbOutlook820Mac kbOutlook821Mac kbOutlook822Mac
+Version           : :4.0,5.0,8.0,8.1,8.2,8.2.1,8.2.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

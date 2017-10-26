@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q31785: &quot;Overflow&quot; Error in Intermediate Integer Calculation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q31785: &quot;Overflow&quot; Error in Intermediate Integer Calculation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/031/Q31785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/031/Q31785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/031/Q31785/","publisher":null,"image":null,"headline":"Q31785: &quot;Overflow&quot; Error in Intermediate Integer Calculation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q31785-overflow-error-in-intermediate-integer-calculation">Q31785: "Overflow" Error in Intermediate Integer Calculation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q31785
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 17-JAN-1991
+
+Microsoft BASIC compilers make certain compile-time assumptions about
+the numerical types of intermediate results in mathematical
+expressions. These assumptions can sometimes lead to an "overflow"
+error at run time.
+
+The information below applies to QuickBASIC versions 4.00, 4.00b, and
+4.50 for MS-DOS, to Microsoft BASIC Compiler versions 6.00 and 6.00b
+for MS-DOS and MS OS/2, and to Microsoft BASIC Professional
+Development System (PDS) versions 7.00 and 7.10 for MS-DOS and MS
+OS/2.
+
+As an example of this behavior, if you run the following program in
+QuickBASIC, you might expect the output to be 36,000; however, an
+"overflow" error displays instead:
+
+   x&amp; = 6 * 6000
+   PRINT x&amp;
+
+QuickBASIC sees that the "6" and the 6000 are both short integers
+(that is, integers between -32,768 and +32,767), so it assumes that
+the intermediate multiplication result should also be a short integer.
+However, an "Overflow" error results because 36,000 is not in the
+range of short integers.
+
+To force the intermediate expression to be calculated as a long
+integer, make the constants into long integers in the first
+calculations performed in that expression. For example, the following
+two statements work without any error:
+
+   x&amp; = 1&amp; * 6 * 6000   ' 1. &amp; suffix makes a constant a long integer.
+   x&amp; = CLNG(6) * 6000  ' 2. CLNG forces type to be long integer.
+
+Using 1&amp; in the multiplication of 1&amp; * 6 creates an intermediate long
+integer variable that forces the subsequent multiplication (* 6000) to
+be done using long integer.
+
+Note that 6 * 6000 * 1&amp; fails with an "overflow" because the first
+multiplication is done as short integer. The calculation 6 * (6000 *
+1&amp;) avoids this "Overflow" error by changing the order of calculation
+so that a long integer intermediate variable is created before
+multiplying by the 6.
+
+Integer Data Type Notation Standards for BASIC
+----------------------------------------------
+
+Note that the number 6 is the same as 6%, and 6000 is the same as
+6000% in BASIC's short integer notation. Appending the percent (%)
+symbol to a constant makes it explicitly a short integer. Appending
+the ampersand symbol (&amp;) to a constant makes it explicitly a long
+integer. Constants whose types are not explicitly declared will
+default as shown in Chapter 2, "Data Types," of the BASIC language
+reference manual for QuickBASIC versions 4.00 and 4.00b, and Microsoft
+BASIC Compiler version 6.00 and 6.00b for MS-DOS and MS OS/2. This
+information is also found in Appendix B of the "Microsoft BASIC 7.0:
+Programmer's Guide" manual for BASIC PDS 7.00 and 7.10.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114256: How to Duplicate Varying Number of Labels Per Record | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114256: How to Duplicate Varying Number of Labels Per Record" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114256/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114256/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114256/","publisher":null,"image":null,"headline":"Q114256: How to Duplicate Varying Number of Labels Per Record","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114256-how-to-duplicate-varying-number-of-labels-per-record">Q114256: How to Duplicate Varying Number of Labels Per Record</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114256
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 09-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While article Q106030, "How to Print Multiple Copies of the Same Label",
+describes a method to produce a fixed number of duplicate labels, this article
+addresses those situations where the number of times each label is to be
+duplicated must vary.
+
+MORE INFORMATION
+================
+
+This example uses the following files:
+
+  XLABEL.DBF - label data records with an additional count field (DUP)
+  DUPLIX.DBF - database that holds the duplicated records; recreated each
+               session
+  DUPLABEL.LBX (and .LBT) - label layout form referencing DUPLIX fields
+  DUPLABEL.PRG - program that fills DUPLIX database with duplicates
+
+To set up the files:
+
+1. Create (or modify) the data file (XLABEL.DBF) structure to contain a numeric
+  field (DUP) that will hold the number that indicates how many times each
+  label is to be copied.
+
+2. To create DUPLIX, issue this command:
+
+        CREATE duplix
+
+  DUPLIX contains those fields from XLABEL.DBF that will be used by the label
+  form. If you want all the fields, issue the following commands, and then
+  remove the count field DUP from the DUPLIX structure:
+
+        USE XLABEL
+        COPY STRUCTURE to DUPLIX
+
+3. Issue the following command, using the fields found in DUPLIX:
+
+        CREATE LABEL DUPLABEL
+
+  In Visual FoxPro, add the DUPLIX table to the Data Environment of the label.
+
+4. Issue the MODIFY COMMAND DUPLABEL command, and then enter the following
+  code:
+
+        SET TALK OFF
+
+        * Open databases.
+        IF USED('DUPLIX')
+           SELECT duplix
+        ELSE
+           USE duplix
+        ENDIF
+        SELECT 0
+        IF USED('XLABEL')
+           SELECT xlabel
+        ELSE
+           USE xlabel
+        ENDIF
+
+        * Create blank merge file.
+        SET SAFETY OFF
+        SET TEXTMERGE TO hold
+        SET SAFETY ON
+        SET TEXTMERGE ON NOSHOW
+
+        * Cycle through labels, outputting each to the HOLD file
+        * for the number of times stated in XLABEL.DUP field.
+        SCAN
+           FOR i=1 TO xlabel.dup
+              \\&lt;&lt;xlabel.co&gt;&gt;&lt;&lt;xlabel.contact&gt;&gt;&lt;&lt;xlabel.addr&gt;&gt;
+              \ 
+           ENDFOR
+        ENDSCAN
+        * NOTE: The double backslash prevents an initial carriage return,
+        * which would result in the first label being blank when printed.
+
+        * Close the merge file.
+        SET TEXTMERGE OFF
+        SET TEXTMERGE TO
+
+        * Prepare the DUPLIX database to receive the new labels.
+        SELECT duplix
+        SET SAFETY OFF
+        ZAP
+        SET SAFETY ON
+
+        * Add in the new labels to the blank DUPLIX database.
+        APPEND FROM hold.txt TYPE SDF
+
+        * Send out the labels.
+        LABEL FORM duplabel PREVIEW
+
+NOTE: The PREVIEW option can be replaced by or used with TO PRINT to send the
+labels to the printer.
+
+Additional query words: VFoxWin FoxDos FoxWin repeat
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

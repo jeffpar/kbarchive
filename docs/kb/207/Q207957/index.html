@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207957: Broken Trust Between Domains Results in Unsuccessful Logon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207957: Broken Trust Between Domains Results in Unsuccessful Logon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207957/","publisher":null,"image":null,"headline":"Q207957: Broken Trust Between Domains Results in Unsuccessful Logon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207957-broken-trust-between-domains-results-in-unsuccessful-logon">Q207957: Broken Trust Between Domains Results in Unsuccessful Logon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207957
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0,4.5
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft BackOffice Server versions 4.0, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on to a Windows NT server, workstation, or domain
+controller using account credentials from a trusted domain, you may receive the
+following error:
+
+  The system cannot log you on to this domain because the trust relationship
+  between the primary domain and the trusted domain failed.
+
+CAUSE
+=====
+
+This problem will occur if the trust was broken at the accounts domain
+(trusted), but not the resource domain (trusting).
+
+NOTE: You can use the Microsoft Windows NT 4.0 resource kit utility Netdom.exe
+file to check both the status of the trust and re-create the trust.
+
+RESOLUTION
+==========
+
+Break the trust in both the account and resource domains, and then re-establish
+it on both sides.
+
+Break the Trust Relationship
+----------------------------
+
+1. To break the trust on the primary domain controller (PDC) in the &lt;resource
+  domain&gt;, click Start, point to Programs, point to Administrative Tools,
+  and then double-click User Manager for Domains.
+
+2. On the Policies menu, click Trust Relationships.
+
+3. Select the &lt;accounts domain&gt; from the Trusted Domains list box and
+  click Remove.
+
+4. When prompted to complete the removal, click Yes
+
+5. At the PDC in the &lt;accounts domain&gt;, click Start, point to Programs,
+  point to Administrative Tools, and then double-click User Manager for
+  Domains.
+
+6. On the Policies menu, click Trust Relationships.
+
+7. Select the &lt;resource domain&gt; from the Trusting Domains list box and
+  click Remove.
+
+8. When prompted to complete the removal, click Yes
+
+Re-establish the Trust Relationship
+-----------------------------------
+
+1. On the PDC in the &lt;accounts domain&gt;, click Start, point to Programs,
+  point to Administrative Tools, and then double-click User Manager for
+  Domains.
+
+2. On the Policies menu, click Trust Relationships, and then click Add next to
+  the Trusting Domains list box.
+
+3. In the Add Trusting Domain dialog box, type in the &lt;resource domain&gt;
+  name. Enter a &lt;password&gt; that you will use for the resource domain to
+  access the accounts domain, retype the &lt;password&gt; in the Confirmation
+  field, and then click OK.
+
+4. On the PDC in the &lt;resource domain&gt;, click Start, point to Programs,
+  point to Administrative Tools, and then double-click User Manager for
+  Domains.
+
+5. On the Policies menu, click Trust Relationships, and then click Add next to
+  the Trusted Domains list box.
+
+6. In the Add Trusted Domain dialog box, type in the &lt;accounts domain&gt;
+  name and the &lt;password&gt; that you supplied in step 3.
+
+7. Click OK in the "Trust Relationship With &lt;accounts domain&gt; Successfully
+  Established" dialog box.
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400 kbBackOfficeServ450
+Version           : winnt:3.51,4.0,4.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

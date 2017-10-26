@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96718: PC Win: Description and Use of Inbox Shadowing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96718: PC Win: Description and Use of Inbox Shadowing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96718/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96718/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96718/","publisher":null,"image":null,"headline":"Q96718: PC Win: Description and Use of Inbox Shadowing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96718-pc-win-description-and-use-of-inbox-shadowing">Q96718: PC Win: Description and Use of Inbox Shadowing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96718
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail for Windows has a feature named Inbox Shadowing. This feature is
+enabled in Mail for Windows when you choose Options from the Mail menu, choose
+the Server button, select the Copy Inbox on Postoffice for Dialin Access option
+and choose OK. The Copy Inbox option instructs Mail for Windows to synchronize
+its inbox with each other client's inbox.
+
+When you complete the procedure above, Mail displays the following message on the
+screen:
+
+  Please Wait - Synchronizing Inbox
+
+During this process, Mail might display the following message:
+
+  Mail cannot copy some messages to the postoffice. Close all messages and
+  check disk space.
+
+This message appears if an inbox message is open when you turn on Inbox
+Shadowing. To correct this situation, close all messages and repeat the steps to
+turn on Inbox Shadowing.
+
+Use Inbox Shadowing if you use more than one Mail client or if you access mail
+remotely and also use Mail for Windows.
+
+When Inbox Shadowing is active, Mail displays the following message each time you
+log into Mail for Windows:
+
+  Please Wait - Synchronizing Inbox
+
+Mail marks each inbox message once as synchronized. When you delete a message
+from the Mail for Windows inbox, it will be deleted from the inbox for each
+other client. However, if you delete a message from the inbox of another client,
+it remains in the Mail for Windows inbox because the other clients cannot access
+the .MMF file. To synchronize the Mail for Windows inbox, deselect and reselect
+the Copy Inbox on Postoffice for Dialin Access option. When you exit from Mail
+for Windows, it resynchronizes the inbox.
+
+MORE INFORMATION
+================
+
+When you send a mail message, Microsoft Mail adds a header to the recipient's
+.MBG file that includes a pointer to the corresponding .MAI file. The .MBG file
+is the inbox for MS-DOS and Macintosh clients. Inbox Shadowing is necessary
+because Mail for Windows moves all messages in an individual's .MBG file into
+his .MMF file. If Inbox Shadowing is not active, when Mail for Windows moves a
+message into the .MMF file, it flags the headers in the .MBG file as if the
+message was deleted and it deletes the corresponding .MAI files. In this case,
+the inbox for the MS-DOS and Macintosh clients are empty.
+
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

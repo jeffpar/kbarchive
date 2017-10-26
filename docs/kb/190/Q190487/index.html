@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190487/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190487/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190487/","publisher":null,"image":null,"headline":"Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190487-prb-mfc-debug-dlls-are-not-compatible-between-versions">Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190487
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDebug kbDLL kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Various errors or asserts can occur when you attempt to run a debug version of
+an MFC application with the MFC debug DLLs of another version. Possible errors
+include:
+
+   - Ordinal could not be found.
+
+   - Access violation.
+
+This occurs if you attempt to debug an MFC application built with Visual C++ 5.0
+in Visual C++ 6.0 and vice versa. This can also occur if you run your MFC debug
+application on a machine that does not have the corresponding debug DLLs
+installed.
+
+CAUSE
+=====
+
+Debug versions of MFC are not binary compatible with previous versions. However,
+this problem does not occur with release builds because they are binary
+compatible between versions.
+
+RESOLUTION
+==========
+
+To debug an MFC project built with Visual C++ 5.0 in Visual C++ 6.0, you must
+rebuild the project. To run a debug version of an MFC project on a machine that
+does not have Visual C++ installed, make sure the proper version of the MFC
+debug DLLs are installed. Note that redistribution of MFC debug DLLs is a
+violation of the Visual C++ license agreement.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Build a DEBUG Build MFC application with Visual C++ 5.0.
+
+2. Copy the .exe file to a machine with Visual C++ 6.0 installed.
+
+3. Run the .exe file.
+
+  RESULT: Runtime errors such as:
+
+  The ordinal 3255 could not be located in the dynamic link library
+  MFCO42D.DLL
+
+  -or-
+
+  Unhandled exception in thisisatest.exe: 0xC0000005: Access Violation.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+Francis, Microsoft Corporation.
+
+
+Additional query words: 0xC0000005
+
+======================================================================
+Keywords          : kbDebug kbDLL kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

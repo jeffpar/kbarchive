@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83325: SMARTDrive and 32-Bit Disk Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83325: SMARTDrive and 32-Bit Disk Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83325/","publisher":null,"image":null,"headline":"Q83325: SMARTDrive and 32-Bit Disk Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83325-smartdrive-and-32-bit-disk-access">Q83325: SMARTDrive and 32-Bit Disk Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83325
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbtool win31
+Last Modified: 20-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+                            INTRODUCTION
+                            ============
+
+Microsoft Windows operating system version 3.1 has a number of
+enhancements over previous versions that improve both its usability
+and its performance. Foremost among these enhancements are Windows
+3.1's improved features for accessing and utilizing the hard drive of
+your PC.
+
+                      SMARTDRIVE 4.0 DISK CACHE
+                      =========================
+
+Microsoft's first release of the Windows graphical environment
+included a disk caching program called SMARTDrive 3.03. SMARTDrive has
+been improved with each subsequent release of Windows and has been
+entirely redesigned in Windows version 3.1. SMARTDrive 4.0 in Windows
+3.1 provides faster and more intelligent disk caching that takes
+better advantage of the revolutionary way that Windows and Windows-
+based applications use extended memory.
+
+SMARTDrive 4.0 gives Windows 3.1:
+
+   - Improved performance by speeding up hard disk and RAM access.
+   - Improved stability in 386 enhanced mode by double buffering data
+     when needed.
+
+The remainder of this section compares the performance of SMARTDrive
+4.0 to SMARTDrive 3.x and illustrates how SMARTDrive 4.0 works at a
+more technical level.
+
+WHAT IS SMARTDRIVE?
+===================
+
+SMARTDrive is a disk caching program that intercepts system calls to
+the hard disk to control read/write access to the disk. SMARTDrive
+intercepts any calls to the hard disk and loads the needed data into a
+cache it establishes in RAM. (Unless specified otherwise, SMARTDrive
+automatically determines a reasonable cache size based on the amount
+of free extended memory available when it initially loads; the maximum
+amount it will take is around 2 MB.) Subsequent calls to the hard disk
+are intercepted by SMARTDrive, which scans the cache for the requested
+data. If the data is already present in the cache, SMARTDrive can
+access it directly in RAM. If the data is not in the cache, SMARTDrive
+accesses the hard disk and loads the necessary data into the cache.
+The least recently used data residing in RAM is cached back to the
+hard disk to make room for the new data. By loading blocks of data
+from the hard disk into RAM, SMARTDrive helps decrease the number of
+calls to the hard disk. This can dramatically speed up applications
+that repeatedly access the hard disk for data because accessing the
+hard disk is considerably slower than accessing RAM. Essentially,
+SMARTDrive attempts to maintain information in RAM that an application
+needs at any given time from the hard disk.
+
+SMARTDRIVE 3.X
+==============
+
+To understand why SMARTDrive needed to be redesigned, lets look at
+how SMARTDrive 3.x works and examine some of the shortcomings of its
+design. First, SMARTDrive 3.x is a read-only track cache, which means
+that it caches on a track basis and for read operations only. This
+means that the internal data structures of the SMARTDrive program are
+tied to the logical geometry of the disk (that is, what MS-DOS sees).
+In the diagram below, you can see that SMARTDrive 3.x caches at the
+ROM BIOS INT13 level and uses the BIOS-specified disk geometry to
+decide the size of its caching element (that is, track size). INT13 is
+the most common method for interacting with hard disks (and has
+evolved into the industry standard). SMARTDrive under Windows 3.0 can
+be loaded into either extended memory or expanded memory.
+
+         Application
+      (Read/Write INT21)
+             |
+- - - - - - - - - - - - - - - - -
+             |
+          MS-DOS
+      Call HD Driver
+             |
+         HD Driver
+          INT 13
+             |
+             ---------&gt;  SMARTDrive 3.x
+                          Chains INT13
+             ---------&lt;
+             |
+         ROM BIOS
+             |
+
+        Hard Drive
+
+SMARTDRIVE 4.0
+==============
+
+SMARTDrive 4.0 is designed as a block-oriented disk cache. It hooks
+into the system at the MS-DOS device driver level rather than at the
+ROM BIOS INT13 level (as with SMARTDrive 3.x). Each block device
+driver on the MS-DOS device driver chain is "front-ended" by a
+SMARTDrive 4.0 module that provides the actual caching. This new
+design yields the following benefits:
+
+   - It is independent of the INT13 interface.
+   - It is independent of disk geometry.
+
+        Application
+    (Read/Write INT21)
+             |
+- - - - - - - - - - - - - - -
+             |
+          MS-DOS
+       Call HD Driver
+             |
+             ---------&gt;  SMARTDrive 4.0
+                          HOOKS Driver
+             ---------&lt;
+             |
+          HD Driver
+          INT 13
+             |
+         ROM BIOS
+             |
+
+        Hard Drive
+
+Independent of INT13 Interface
+------------------------------
+
+Many device drivers do not use the INT13 (BIOS) interface (for
+example, Bernoulli drives, some hard cards, and many SCSI and WORM
+drives). This means that SMARTDrive 4.0 can cache these devices,
+whereas SMARTDrive 3.x cannot. SMARTDrive 4.0 can cache any disk
+controller that uses an MS-DOS block device driver.
+
+Independent of Disk Geometry
+----------------------------
+
+Some disk managers and disk controllers use a disk geometry mapping
+scheme that causes the logical geometry to be different from the
+physical geometry (for example, many PS/2 systems, Ontrack's Disk
+Manager, and several disk controllers). The INT13-based disk caches
+are sensitive to this and often have problems. For example, some disk
+management software actually changes the ROM BIOS-specified disk
+geometry, which confuses INT13-based disk caches (including SMARTDrive
+3.x).
+
+There usually is an interface to determine the true geometry, but this
+requires detection of the specific disk manager driver and generally
+complicates the disk cache software. Often, logical tracks actually
+cross physical track boundaries, causing the track caches to incur
+performance penalties (intertrack seeks and rotational latencies, for
+example). To get around the ROM BIOS 1024-cylinder limitation, disk
+managers and controllers sometimes fold multiple tracks into one
+logical track. This results not only in problems with the physical
+track boundaries as noted above, buts forces track caches to have a
+very large track buffer as well. In some cases, this buffer can be as
+large as 31.5K and must reside in conventional memory. The design of
+SMARTDrive 4.0 eliminates this geometry mismatch problem.
+
+OTHER SMARTDRIVE 4.0 FEATURES
+=============================
+
+Write-Behind Cache
+------------------
+
+SMARTDrive 4.0 is a write-behind cache, also known as lazy write. A
+write-behind cache adds significant performance improvements wherever
+files are being written to disk. For example, an application writes
+data to what it thinks is the hard disk. SMARTDrive takes this data
+and places it in the cache, rather than physically writing it to the
+disk. This write-behind data stays in the cache until one of the
+following occurs:
+
+1. The cache fills up. The oldest block in the cache is freed up, and
+  if it is write-behind data, physically written to the disk.
+
+2. The system goes idle. SMARTDrive writes the oldest write-behind
+  data block to the physical disk. As long as the system is idle,
+  SMARTDrive continues to write to the disk until all the write-
+  behind data is written. This write-behind data also comes from
+  Windows-based and MS-DOS-based applications that are idle.
+
+3. SMARTDrive detects that you have pressed CTRL+ALT+DEL. When you
+  restart by pressing CTRL+ALT+DEL, SMARTDrive writes all write-
+  behind data to the physical disk. This is a synchronous operation--
+  SMARTDrive does not give up control until all data is written.
+
+4. A block is older than five seconds. If a block is older than five
+  seconds, it is written to the physical disk.
+
+Shrink Algorithm
+----------------
+
+Similar to SMARTDrive 3.x, SMARTDrive 4.0 implements a shrink
+algorithm that frees memory for Windows (that is, the cache set up by
+SMARTDrive is removed from memory). The difference is that SMARTDrive
+4.0 watches for the Windows startup broadcast while SMARTDrive 3.x
+provides an IOCTL interface. The net effect is identical, but the
+SMARTDrive 4.0 code is much simpler. Upon exiting Windows, the process
+is reversed and the memory is reacquired by SMARTDrive 4.0.
+
+Automatic Load High
+-------------------
+
+When an upper memory block (UMB) provider (such as EMM386.EXE) is
+loaded, SMARTDrive 4.0 (SMARTDRV.EXE) automatically attempts to load
+itself high. Unlike the Windows 3.0 SMARTDrive, SMARTDrive 4.0 can
+only be loaded into extended memory.
+
+DOUBLE BUFFERING AND BUS MASTERING
+==================================
+
+The second major benefit of SMARTDrive 4.0 is the protection it
+provides through double buffering. Double buffering is a response to
+bus mastering, which is supported by certain (usually older) disk
+controllers. Bus mastering refers to a situation in which the hard
+disk controller takes over the bus to directly transfer data to or
+from system RAM, bypassing the CPU entirely. A problem occurs when
+Windows 3.x virtual machines and/or popular memory managers (such as
+EMM386.EXE and QEMM.SYS) are running in virtual 8086 mode. The read or
+write address that is passed to MS-DOS from the bus master controller
+is often not the same as the actual physical memory address. This can
+cause data to be read from the wrong location, or worse, can cause
+data to be written to the wrong RAM address, resulting in erratic
+system behavior and potential file corruption.
+
+When paging is enabled on an 80386 or faster processor, it is possible
+for the physical address (the actual location of the memory) to be
+different from the virtual address (the address that programs are
+using to access memory). Paging is enabled by all device drivers that
+can provide load high capability and by Windows in 386 enhanced
+mode. For example, say SMARTDrive wants to write to an area of memory
+that has a virtual address in conventional memory, but a physical
+address in extended memory. When the hard drive controller takes over
+the bus and transfers data from the UMB to the disk, the controller
+does not use the CPU, so there is no address translation, resulting in
+the wrong data being written to disk. To avoid this problem, double
+buffering copies the data into a buffer in conventional memory and
+then passes the information to the hard disk controller. So, the
+virtual address always equals the physical address when using devices
+that only recognize conventional memory.
+
+Installing Double Buffering
+---------------------------
+
+To install the SMARTDrive double-buffering feature, add the following
+line to your CONFIG.SYS file:
+
+  device=c:\windows\smartdrv.exe /double_buffer
+
+Including this line does not install the cache, only the double-
+buffering driver. The cache must be installed from the AUTOEXEC.BAT
+file or MS-DOS command line.
+
+Most disk controllers do not need double buffering. These include all
+MFM, RLL, and IDE controllers as well as many ESDI and SCSI devices.
+The Setup program in Windows 3.1 will install the double buffer in the
+following cases:
+
+1. If the computer has an 80386 or faster processor
+
+2. If 32-Bit Disk Access was not installed in the SYSTEM.INI file (see
+  next section)
+
+You should install the double buffer in these cases in the interest of
+added safety. Another new feature of SMARTDrive 4.0 that helps you
+determine if double buffering is necessary is the smartdrv command.
+Once your system is running with SMARTDrive loaded, type "smartdrv"
+(without the quotation marks) at the MS-DOS prompt and press ENTER.
+Information similar to the following is displayed:
+
+    Microsoft SMARTDrive Disk Cache version 4.0
+    Copyright 1991, 1992 Microsoft Corp.
+    Cache size: 1,048,576 bytes
+    Cache size while running Windows: 1,048,576 bytes
+
+                  Disk Caching Status
+
+    drive    read cache    write cache    buffering
+    ---------------------------------------------------
+    A:       yes           no             no
+    B:       yes           no             no
+    C:       yes           yes            yes
+    D:       yes           yes            ---
+
+    For help, type "Smartdrv /?".
+
+Note the column labeled "buffering." For each drive that is being
+cached, one of three values is displayed--"yes," indicating that
+double buffering is needed; "no," indicating that double buffering is
+not needed; or "---," indicating that SMARTDrive has not yet
+determined the necessity of double buffering. If the buffering column
+displays a "no" for each drive, the double buffer driver is
+unnecessary, and you can safely remove it from your CONFIG.SYS file.
+
+Setting Up SMARTDrive 4.0
+-------------------------
+
+The Setup program in Microsoft Windows 3.1 automatically installs
+SMARTDrive (SMARTDRV.EXE) in the first line of your AUTOEXEC.BAT file.
+In general, you should let the Setup program configure SMARTDrive's
+cache size for you. However, please note it is critical that
+SMARTDRV.EXE load after any block devices that reside on your system,
+such as:
+
+   - Hard disk partitioning software (for example, DMDRVR.BIN and
+     SSTOR.SYS)
+   - Hard disk drivers (for example, SCSI drives, hard cards, and
+     Bernoulli drives)
+   - Data encryption software (for example, Stacker and DoubleDisk)
+
+The configuration of SMARTDRV.EXE is controlled by command-line
+parameters. Most configuration options can be modified without
+restarting; however, without the Windows Resource Kit utility
+SMARTDrive Monitor (SMARTMON.EXE), the configuration cannot be altered
+while running Windows. Also note that SMARTDrive:
+
+   - Needs a minimum cache size of 16K.
+   - Creates a cache size of 16K by default if you supply an invalid
+     cache size.
+   - Gives you benefits up to a cache size of 2 MB, whereupon the
+     benefits typically plateau.
+
+                         32-BIT DISK ACCESS
+                         ==================
+
+Another new feature of Windows 3.1 is its use of 32-Bit Disk Access.
+32-Bit Disk Access is not a program but rather a term used to refer to
+a system of Windows components working together. The main purpose of
+these components is to allow Windows to interact directly with the
+hard disk, bypassing the BIOS, which is normally used for
+communicating with the hard disk. Under 386 enhanced mode Windows,
+where 32-Bit Disk Access is supported, you get the following benefits:
+
+   - Faster hard disk access
+   - Ability to run more MS-DOS-based applications
+   - Faster overall system response, even when running MS-DOS-based
+     applications in the background
+   - More powerful off-the-shelf disk utilities to choose from, since
+     independent software vendors (ISVs) are writing programs that
+     take advantage of this new set of services
+
+WHAT IS 32-BIT DISK ACCESS?
+===========================
+
+   - A SYSTEM OF WINDOWS COMPONENTS. Some of these components are
+     called 32-Bit Disk Access devices, but they are useless without
+     the rest of the components to support them. Each of these
+     components is discussed below.
+
+   - A REPLACEMENT FOR THE HARD DISK BIOS. 32-Bit Disk Access serves
+     as a device driver that interacts with the hard disk controller.
+     32-Bit Disk Access watches for INT13H calls and handles them if
+     they are for the disk it represents; otherwise, it passes the
+     calls on to the BIOS in the usual way, as if 32-Bit Disk Access
+     were not available.
+
+   - AN EXACT MATCH FOR THE HARD DISK CONTROLLER (NOT THE SPECIFIC
+     HARD DISK). There are some standards for hardware communication
+     that work on many different controllers. The most widely adopted
+     standard is that introduced by Western Digital in its 1003
+     controllers. This is the standard supported by Windows 3.1 and
+     more than 90 percent of hard disk controllers, with the
+     exception of ESDI and SCSI controllers.
+
+   - AN OPEN STANDARD FOR CERTAIN CONTROLLERS. 32-Bit Disk Access is
+     an open standard that is being promoted to all manufacturers of
+     hard disk controllers. This means that every manufacturer has
+     the opportunity to write a device driver that supports 32-Bit
+     Disk Access functionality for its hardware. Many hardware
+     manufacturers are writing 32-Bit Disk Access device drivers that
+     will be available at the time Windows 3.1 ships or shortly
+     thereafter.
+
+   - AN OPTION, NOT A SYSTEM REQUIREMENT. Without the 32-Bit Disk
+     Access device driver installed, you lose the hardware-access
+     benefits provided by 32-Bit Disk Access, but your system is
+     otherwise unaffected. Windows 3.1 without 32-Bit Disk Access has
+     the same disk access capabilities of Windows 3.0.
+
+DISK ACCESS UNDER MS-DOS
+========================
+
+The 32-Bit Disk Access feature bypasses the system BIOS to more
+directly control hard disk access. It acts, in a sense, as the hard
+disk controller. Before discussing how disk access has changed under
+Windows 3.1, let's look at how MS-DOS handles calls to the hard disk.
+
+In the MS-DOS-based PC, when an application wants to read from the
+disk, it tracks the following sequence:
+
+                                        H/W
+        INT21H          INT13H          I/O
+       ------&gt;           -----&gt;        -----&gt;
+-----           ------           ----          ----------     -----
+| APP |         |MS-DOS|         |BIOS|        |Controller| -&gt;|Drive|
+-----           ------           ----          ----------     -----
+
+1. The application makes an INT21H call to MS-DOS.
+
+2. MS-DOS locates the requested part of the file on the hard disk.
+
+3. MS-DOS issues an INT13H call to talk to the hard disk BIOS. The
+  BIOS contains a program to control each device in the system.
+
+4. The BIOS driver talks directly to the hard disk controller. Each
+  hard disk controller requires its own BIOS driver, but these BIOS
+  drivers are usually not specific to the hard disk itself, but
+  rather to the controller board (or adapter) that connects the hard
+  disk to the rest of the system.
+
+This system works well, because MS-DOS is able to identify the files
+and directories and keep track of their locations, regardless of the
+type of hard disk MS-DOS is accessing. But, on the other hand, the
+system BIOS is wholly linked to the hard disk, which provides disk
+independence for the applications but does not allow the BIOS to
+differentiate between a call from MS-DOS or a program such as
+SMARTDrive.
+
+But remember that not all disk device drivers reside in ROM. If you
+purchase an off-the-shelf disk drive and install it, your computer's
+ROM BIOS may not know how to communicate with it. If this is the case,
+you must install a device driver that is specific to your new hard
+disk. This additional device driver is usually installed in your
+CONFIG.SYS file when you install the software that comes with your
+hard disk. With some devices, such as a CD-ROM drive, a device driver
+that provides the BIOS interface and INT13H interface to the CD-ROM
+drive appears in your AUTOEXEC.BAT file. This type of device driver
+traps INT13H calls to the hard disk and makes sure the calls are
+understood by the hard disk. Usually, the device driver handles any
+attempts to access the hard disk; the calls never get passed on to the
+real ROM BIOS. If the call is not for the device that the device
+driver represents, then the INT13H call is passed on to the BIOS,
+where it is handled in the usual way. 32-Bit Disk Access represents a
+way for Windows to provide a BIOS that better suits customers' device
+support needs.
+
+32-BIT DISK ACCESS SPEEDS UP DISK ACCESS
+========================================
+
+On many machines, the resident hard disk BIOS is slow and inefficient.
+Since 32-Bit Disk Access is specific to devices, it is often more
+efficient, leading to very impressive performance increases. 32-Bit
+Disk Access also allows Windows 3.1 to handle BIOS requests in
+protected mode, rather than in real mode, which may also speed up disk
+access. The following diagram charts the flow of calls under Windows
+in standard mode:
+
+                                        H/W
+        INT21H          INT13H          I/O
+       ------&gt;           -----&gt;        -----&gt;
+-----           ------           ----          ----------     -----
+| APP |         |MS-DOS|         |BIOS|        |Controller| -&gt;|Drive|
+-----           ------           ----          ----------     -----
+
+Under 386 enhanced mode Windows, the flow of calls is more
+complicated:
+
+        -------------------------------------------------
+       |         Enhanced Mode Virtual Devices           |
+        -------------------------------------------------
+Protected   / \          /    \ 
+ Mode     /   \        /      \ 
+----------/-----\------/--------\-----------------------------------
+Virtual  /       \    /          \ 
+Mode   /         \  /            \ 
+  -----   INT21H  ------   INT13H ----    H/W   ----------     -----
+ | APP |         |MS-DOS|        |BIOS|   I/O  |Controller|--&gt;|Drive|
+  -----           ------          ----  -----&gt;  ----------     -----
+
+Windows 3.1 and Windows applications run in protected mode. Windows
+has to switch back into real mode (or virtual 8086 mode) to run older
+code (for MS-DOS and the BIOS calls, for example). Switching modes is
+very time consuming. For example, when a non-Windows application
+running under 386 enhanced mode tries to read from a file, the
+following occurs:
+
+  Windows starts out in virtual mode running the application. Windows
+  makes an INT21H call to read from the file. 386 enhanced mode traps
+  this interrupt and switches to protected mode, where a number of
+  virtual device drivers look at the call and try to qualify it. If
+  none of the device drivers intercepts the call, the call is
+  accepted and is subsequently handed off to MS-DOS.
+
+  Windows then switches back to virtual mode to let MS-DOS handle the
+  call. MS-DOS reads a particular location on the disk and then
+  generates an INT13H call to talk to the BIOS. Windows in 386
+  enhanced mode then traps the call again and switches to protected
+  mode to perform certain tasks, hands the call back to the real
+  BIOS, and switches back to virtual mode.
+
+  The BIOS handles the call and accesses the hard disk controller to
+  set the physical read in motion. Once the BIOS reads the call,
+  Windows goes back to protected mode to perform more tasks and then
+  returns to virtual mode to let MS-DOS see the returned call.
+  Windows returns the INT21H call, switches to protected mode to
+  perform yet more tasks, and then finally switches back to virtual
+  mode to communicate with the application that issued the call to
+  begin with.
+
+All this mode switching takes time but is necessary due to the nature
+of the 80386 processor, MS-DOS, and the PC BIOS. With a 32-Bit Disk
+Access device installed, Windows can start trapping INT13H calls and
+handling them entirely in protected mode. With 32-Bit Disk Access, the
+call diagram now looks like this:
+
+  ----------------------------     H/W     ----------     -----
+ |Enhanced Mode   |32-Bit Disk|    I/O    |Controller| -&gt;|Drive|
+ |Virtual Devices |     Access|  -----&gt;    ----------     -----
+  -----------------------------
+Protected    /   \           / 
+ Mode      /     \         / 
+-----------/-------\-  ----/---------------------------------------
+Virtual   /         \     / 
+Mode    /           \   / 
+     -----   INT21H  ------  INT13H   ----
+    | APP |         |MS-DOS|         |BIOS|
+     -----           ------           ----
+
+With 32-Bit Disk Access, Windows no longer has to go through two mode
+transitions--one mode to get to the BIOS and the other mode to get
+back. Only two mode switches per INT13H call, rather than four, are
+now being performed.
+
+32-BIT DISK ACCESS SUPPORT FOR NON-WINDOWS APPLICATIONS
+=======================================================
+
+Sometimes Windows shows an adequate amount of free memory and large
+Windows-based applications run just fine, yet an "Out of Memory"
+message is generated when a non-Windows application is started. Also,
+in spite of the available memory, Windows-based applications may slow
+down and constantly access the hard disk after a non-Windows
+application is started.
+
+These discrepancies occur because of the difference between virtual
+memory (which is often large) and physical memory (RAM, which is
+usually limited). On a given machine, virtual memory might be four
+times the size of RAM. But, while virtual memory works well for
+Windows-based applications, it doesn't always meet all the system's
+memory needs for MS-DOS-based applications.
+
+Because each non-Windows application runs in its own virtual machine,
+each application takes up 640K or more of virtual memory. When the
+virtual machine is actually running, all of the program code needs to
+occupy RAM. Parts of the non-Windows application cannot be paged out
+while keeping other parts in RAM, as is the case with Windows-based
+applications. The virtual machine in which the non-Windows application
+runs must be treated as a single block. This is true even if the
+application is currently inactive in the background.
+
+With Windows-based applications, most of the program remains resident
+on the hard disk, while only the parts that are actually being used
+are loaded in RAM. Problems occur when Windows tries to do this with
+non-Windows-based applications.
+
+If a part of the application that is not currently being used--a data
+buffer, for example--is paged out, it can always be read back in
+whenever the application needs to access it. However, if the
+application makes a call to MS-DOS to read some data from the disk
+into a buffer, MS-DOS starts handling the call by making a call to
+INT13H to talk to the BIOS, which in turn talks to the hard disk
+controller, resulting in the transfer of data into the buffer. So when
+the application needs to transfer the page into the buffer, which is
+currently out on disk, the application tries to call MS-DOS to read
+the page.
+
+Because MS-DOS is already occupied, the application can't call MS-DOS;
+and MS-DOS is not reentrant, so the second call from the application
+fails. Nor can the application have the page read by calling the BIOS,
+because the BIOS is also in the middle of a call, so it can't be
+reentered either. This situation results in a type of deadlock: the
+application can't let the current call finish until the page is put in
+the buffer, but the page cannot be placed in the buffer until the
+current call finishes.
+
+The only way to ensure that this deadlock situation does not occur is
+to make sure that Windows never has to page anything in while the
+application is in the middle of an MS-DOS or BIOS call. Because
+Windows cannot predict ahead of time what the application will try to
+access, the only way to be 100-percent safe from deadlocking is to
+make sure everything the application might try to access is already in
+RAM (that is, never paged out to disk). In other words, all 640K-plus
+of the virtual machine in which the non-Windows application is running
+has to remain resident in RAM, thereby using up a lot of physical
+memory. Running several non-Windows-based applications at once uses
+large amounts of RAM, so you may soon end up with only a small amount
+of free RAM left for everything else you're trying to do, such as run
+Windows-based applications. When you check the Program Manager About
+dialog box (from the Help menu), it shows that you have plenty of
+memory--virtual memory--and you do. But if you try to start another
+non-Windows application, which requires yet another 640K of RAM, the
+application won't start. So, Windows starts running sluggishly and/or
+may generate the "Out of Memory" message.
+
+So how does 32-Bit Disk Access help? Windows 3.0 offered a contiguous
+paging file (which is created with Swapfile) for any pages using the
+INT13H BIOS calls. Windows 3.1 handles the same task by making calls
+to the 32-Bit Disk Access system. Unlike MS-DOS or the BIOS, the 32-
+Bit Disk Access system can queue up multiple requests and is
+completely reentrant. Windows no longer needs to rely on MS-DOS or the
+BIOS; so regardless of what the application is doing, Windows can
+always page calls in from the hard disk. Free from a potential
+deadlock situation, Windows 3.1 can now make the virtual machines that
+are running completely pageable. Non-Windows-based applications no
+longer need to take up so much RAM, since they can now use virtual
+memory the way Windows-based applications do. When Windows needs some
+RAM space, it can now page out pieces of these virtual machines.
+
+With Windows 3.1 and 32-Bit Disk Access, you can run multiple non-
+Windows-based applications and Windows-based applications without
+generating an "Out of Memory" message. When the About box tells you
+that you have 14 MB of memory, you can actually use all 14 MB for
+running your applications, whether they are Windows or non-Windows.
+
+Improved Performance for Non-Windows Applications Under Windows
+---------------------------------------------------------------
+
+In the previous example, we saw how 32-Bit Disk Access in Windows can
+page non-Windows-based applications to free up enough RAM for those
+applications when they need to use it. The 32-Bit Disk Access feature
+also improves Windows performance all around, making the system run
+much more quickly.
+
+Switching between non-Windows-based applications by pressing ALT+TAB
+is faster with 32-Bit Disk Access. Without 32-Bit Disk Access, a non-
+Windows application can only be swapped out to disk if it is
+configured to not run in the background. This means when you press
+ALT+TAB to switch to such an application, Windows has to read the
+entire program into RAM, causing the task switching to take a long
+time. When Windows is paging using 32-Bit Disk Access, Windows can
+load in just the small amount of information that the application is
+actually using, so task switching becomes almost instant. And, since
+only a small part of the application needs to be in RAM at one time,
+Windows may not have to access the hard disk at all.
+
+THE COMPONENTS OF THE 32-BIT DISK ACCESS SYSTEM
+===============================================
+
+The 32-Bit Disk Access system is composed of the following 386
+enhanced mode virtual devices:
+
+   - WDCTRL, which is the 32-Bit Disk Access device that talks to
+     standard Western Digital 1003 or ST506 hard disk controllers
+     (about 90 percent of the installed base). WDCTRL is only
+     installed if Setup detects a compatible hard disk controller.
+
+   - BlockDev, which coordinates calling block I/O services between
+     devices and the 32-Bit Disk Access devices that provide those
+     services for specific hard disk controllers. BlockDev is always
+     installed.
+
+   - PageFile, which handles the virtual memory paging file and calls
+     through BlockDev if any 32-Bit Disk Access devices are
+     available. PageFile is always installed.
+
+   - INT13, which traps and emulates INT13H BIOS calls by calling
+     BlockDev. INT13 is only installed if at least one 32-Bit
+     Disk Access device is present.
+
+Because WDCTRL is the only 32-Bit Disk Access device included in the
+Windows box, the standard Windows components only support 32-Bit Disk
+Access for Western Digital-standard controllers. When you run Setup,
+it automatically detects these controllers and adds the following
+lines to the [386Enh] section of your SYSTEM.INI file:
+
+    device=*int13
+    device=*wdctrl
+
+If you want to disable 32-Bit Disk Access, start the Control Panel and
+choose the 386 Enhanced icon, or comment the lines out of your system
+by placing a semicolon (;) at the beginning of both lines. You do not
+need to delete any files from your hard disk, as the 32-Bit Disk
+Access devices are contained within the file WIN386.EXE.
+
+32-BIT DISK ACCESS AND HARD DISK PROTECTION
+===========================================
+
+Microsoft identified machines where the use of WDCTRL can stop the
+system. Usually, this is caused by hard disk controllers that appear
+to be Western Digital 1003 compatible but are really not. WDCTRL has
+been put though rigorous testing to make sure it is as safe as
+possible, and is designed with a built-in safety measure--every time
+it starts, it performs elaborate tests to make sure it can communicate
+in the same language as the hard disk controller before it attempts to
+read and write data. WDCTRL starts testing by taking a peripheral look
+at some data on the hard disk for tell-tale traces of a Western
+Digital 1003-compatible controller. If the controller passes that
+test, WDCTRL then starts calling up larger pieces of data to try to
+elicit the correct response. Finally, after much redundant checking,
+WDCTRL tries actually reading data from the disk. If it is able to
+read data, WDCTRL then tries to write data and read it back. Only
+after the read/write test is passed does WDCTRL continue and start
+Windows, reassured that it will not cause any catastrophic errors on
+the hard disk.
+
+However, there are still a few exceptions. There are drives that
+appear to be WD1003 compatible but are not, and which cannot be
+detected by WDCTRL. In addition, there can be problems even with
+compatible controllers on some portable computers, specifically those
+that power down the hard disk to conserve power without telling the
+running software. If the disk is powered down and then back up while
+it is being tracked by WDCTRL, the tracking information will be
+incorrect, and serious damage can result. For these reasons, 32-Bit
+Disk Access is not turned on by default. When you install Windows, 32-
+Bit Disk Access is disabled until you make the decision to enable it
+through Control Panel. Only original equipment manufacturers (OEMs)
+who preinstall Windows 3.1 on a 100-percent-compatible system can turn
+32-Bit Disk Access on before the user receives the system without
+jeopardizing the user's hard disk.
+
+When something does go wrong, WDCTRL may do different things,
+depending on where it is in its verification code. The initial tests
+have reported WDCTRL as extremely safe. The controllers that WDCTRL
+fails with are considered incompatible with 32-Bit Disk Access, so
+WDCTRL simply does not load when it senses these unsupported
+controllers. This procedure is invisible to the user; he or she just
+won't receive the benefits of 32-Bit Disk Access. If WDCTRL fails a
+test after it is installed, Windows displays an error message that
+warns that something is wrong, most likely that the hard disk might
+have been damaged, and advises to restart the machine (so that WDCTRL
+does not load, and 32-Bit Disk Access is disabled).
+
+THIRD-PARTY 32-BIT DISK ACCESS DEVICES
+======================================
+
+Windows 3.1 ships with only one 32-Bit Disk Access device--WDCTRL.
+However, Microsoft is working with most of the major hardware and
+software vendors to help them design 32-Bit Disk Access devices for
+their products. Concerns regarding distribution and quality of testing
+for these third-party devices are currently being addressed.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kbtool win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

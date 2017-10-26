@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172456: How to Automatically Replace Files In Use by Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172456: How to Automatically Replace Files In Use by Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172456/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172456/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172456/","publisher":null,"image":null,"headline":"Q172456: How to Automatically Replace Files In Use by Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172456-how-to-automatically-replace-files-in-use-by-windows-95">Q172456: How to Automatically Replace Files In Use by Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172456
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to automatically replace a file that is in use by
+Windows 95 without booting to MS-DOS mode.
+
+MORE INFORMATION
+================
+
+You can replace files in use by Windows 95 by using an .inf file. The following
+sample .inf file demonstrates this method:
+
+  ; Replace.inf
+  ; This is a Setup information file to replace a driver or file that is
+  ; in use by Windows 95.
+  ; Copyright 1993-1997 Microsoft Corporation
+
+  [DefaultInstall]
+  CopyFiles=NewFile.copy.sys
+
+  [version]
+  signature="$CHICAGO$"
+  AdvancedINF=2.0
+
+  [DestinationDirs]
+  NewFile.copy.sys=11
+
+  [NewFile.copy.sys]
+  Old.exe, New.exe, Tempfile.exe
+
+  [SourceDisksNames]
+  55="My Very Own File Update.","",1
+
+  [SourceDisksFiles]
+  New.exe=55
+
+  ; End of this .inf file.
+
+This sample file assumes that a file named Old.exe is located in the Windows
+folder and is currently running. When you run the .inf file, the following
+actions occur:
+
+The New.exe file is copied to the C:\Windows\System folder. This location is
+specified in the [DestinationDirs] section of the .inf file. In addition to
+being copied, the file is renamed to Tempfile.exe. This temporary name is
+specified in the [NewFile.copy.sys] section of the .inf file.
+
+The computer must be rebooted for the changes to take effect. During the boot
+process, the temporary file is renamed from the temporary name to the
+appropriate name on the hard disk before the original file is loaded and locked
+open. This functionality is defined in the [rename] section of the Wininit.ini
+file.
+
+Once the file rename has occurred, the Wininit.ini file is renamed to Wininit.bak
+so you can see the last action that took place with the Wininit.ini file.
+
+To process an .inf file, you can either right-click the file and then click
+Install, or use the following command:
+
+  c:\windows\rundll.exe setupx.dll,InstallHinfSection DefaultInstall 130
+  &lt;path to file&gt;.inf
+
+This line should be typed as a single line. It has been wrapped in this article
+for readability purposes. When you run this command, you are prompted to restart
+the computer.
+
+
+REFERENCES
+==========
+
+For additional information about .inf files and their parameters, see Appendix C
+in the Microsoft Windows 95 Resource Kit.
+
+For more information about the Wininit.ini file, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q140570 HOWTO: Moving Files That Are Currently in Use
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150978/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150978/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150978/","publisher":null,"image":null,"headline":"Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150978-sfm-optimizing-polling-rate-for-macintosh-clients-for-pcmail">Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150978
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail for PC Networks ships with a client designed to run on Macintosh
+workstations. By default that client checks the postoffice Inbox every 30
+seconds. Administrators may want to adjust the polling rate to optimize it for
+the number of users and bandwidth of the server.
+
+MORE INFORMATION
+================
+
+Adjusting the Inbox polling value can ease server and network overhead in large
+installations. When considering a new polling rate, administrators should
+consider several factors:
+
+1. Total number of users connected to the postoffice.
+
+2. Total network traffic.
+
+3. The overhead of providing multiple server services.
+
+4. Processor utilization (Windows NT; for more detailed information on
+  optimizing your Windows NT Server, please see the book "Optimizing Windows
+  NT" in the Windows NT Resource Kit).
+
+Users can adjust the polling rate by performing the following procedure:
+
+1. Open the Macintosh client. If you need to locate it, press Command+F to open
+  the Apple File Finder. Type Microsoft Mail in the search field and choose
+  Find.
+
+2. Sign in and select the Inbox.
+
+3. Select the File menubar item and choose Get Info or type Command+I.
+
+4. Look for Check New Mail (Secs) and enter a new number for the polling rate.
+
+Adjusting the value for refreshing the inbox for mail will benefit not only the
+Macintosh user but also the mail server you are using. When considering a new
+polling rate, the user or administrator must consider several factors, such as
+how busy the traffic is on the network, whether the server providing other
+services such as File and Print sharing resources, and whether the processor
+time is close to 100 percent utilization.
+
+The default polling rate for a Microsoft Windows user using PCMail is every five
+minutes.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

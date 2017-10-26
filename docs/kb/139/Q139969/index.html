@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139969: FIX: File Extension Lost if Save As Option is Used in Win95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139969: FIX: File Extension Lost if Save As Option is Used in Win95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139969/","publisher":null,"image":null,"headline":"Q139969: FIX: File Extension Lost if Save As Option is Used in Win95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139969-fix-file-extension-lost-if-save-as-option-is-used-in-win95">Q139969: FIX: File Extension Lost if Save As Option is Used in Win95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139969
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp400bug kbOSWin95 kbOSWin98fix kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When file extensions are hidden under Microsoft Windows 95, saving a project or
+file in Visual Basic with the Save As option may cause the file extension to be
+lost. In this case, Windows 95 loses the ability to recognize the type of the
+Visual Basic file or even to associate the file with Visual Basic.
+
+RESOLUTION
+==========
+
+Either of the following methods can be used to resolve this problem:
+
+In the Windows Explorer, click Options on the View menu. Then uncheck the "Hide
+MS-DOS file extensions for file types that are registered" option. When this
+option is used, the display in the Windows Explorer always shows any file
+extensions, and it also changes the default behavior of the file common dialog
+boxes. With this option unchecked, the Save As dialog box shows the Visual Basic
+file extension by default, and all files are saved and associated properly.
+
+- or -
+
+If you would like to keep the behavior offered by this option, you can work
+around this problem by manually adding the relevant file extension to each file
+and project you save with the Save As command. You must remember to append the
+correct extension to every file and project that is saved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of the article. This problem has been fixed in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Windows Explorer.
+
+2. On the Windows Explorer's View menu, click Options.
+
+3. Make sure the "Hide MS-DOS file extensions for file types that are
+  registered" option is checked and click OK.
+
+4. Start Visual Basic (32-bit) running under Windows 95.
+
+5. On the Visual Basic File menu, click Open Project.
+
+6. Switch to the Samples\CallDLLs subdirectory and open the CallDLLs project.
+
+7. On the File menu, click Save File As.
+
+8. Switch to a different directory and click OK to save the selected form from
+  the CallDLLs sample application.
+
+9. In the Windows Explorer, change to and view the directory you just saved the
+  form to. A file now exists with the correct name, but it does not exhibit the
+  correct icon for a Visual Basic Form file, nor does it show the correct Type
+  in its Properties dialog box. Turning off the Explorer option and saving the
+  file again fixes the problem (note that the old saved file is not deleted and
+  no message appears asking if it is OK to overwrite the original file because
+  as far as Windows 95 is concerned, the two files are completely different
+  entities).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp400bug kbOSWin95 kbOSWin98fix kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

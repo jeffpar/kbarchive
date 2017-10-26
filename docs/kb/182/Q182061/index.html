@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182061: How to Populate a List or Combo Box with Recordset Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182061: How to Populate a List or Combo Box with Recordset Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182061/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182061/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182061/","publisher":null,"image":null,"headline":"Q182061: How to Populate a List or Combo Box with Recordset Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182061-how-to-populate-a-list-or-combo-box-with-recordset-data">Q182061: How to Populate a List or Combo Box with Recordset Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182061
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3; winnt:
+Operating System(s): 
+Keyword(s): kbfile kbSample kbDAOsearch kbDatabase kbMFC kbODBC KbUIDesign kbVC
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC) 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 5.0sp1, 5.0sp2, 5.0sp3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DaoDDX.exe sample demonstrates how to populate list and combo boxes with a
+column from a CDaoRecordset. The information this sample supplies can be used to
+provide the same functionality for Crecordset based objects. This sample uses
+two DDX functions to provide data exchange between the recordsets and the list
+and combo boxes.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+DaoDDX.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+This sample contains two DDX functions DDX_BindTextFieldListBoxToColumn() and
+DDX_BindTextFieldComboBoxToColumn() to link a particular column from a recordset
+to a list or combo box. These functions take the following parameters:
+
+- A CDataExchange object
+
+- The resource ID of the control to bind to
+
+- The name of the column to bind to
+
+- A CDaoRecordset object to use to retrieve the information.
+
+These functions also take the following two optional parameters (both of which
+default to false):
+
+- Whether or not to update the column when saving
+
+- Whether or not to allow repeated values in the control
+
+When viewing records, these functions first save the current position in the
+recordset passed in. This position is treated as the current value of the
+current record, and is selected when the population is complete. Then the
+function iterates through all the records in the recordset, either adding the
+current value to the control, or rejecting the current value if it cannot be
+converted to a string or it is a duplicate value and duplicate values are not
+being accepted. The function finishes by restoring the original position of the
+recordset and then selecting that entry.
+
+When saving, if the optional parameter to update the column is set, the function
+takes the current record, and updates the field in the column passed in with the
+currently selected item (or the modified text in a combo box situation). This
+method would be used in tables where the choices being given are not a foreign
+key. In the foreign key situation, which is the method used in the example, a
+second DDX function would be used to tie the selected value for that particular
+control to a field in the result set given.
+
+The function CDaoDDXView::PositionRecordsets() moves through the foreign
+recordsets, positioning each on the record denoted by the key value in the
+CDaoDDXView::m_pEnrollmentSet object. This allows the proper item to be selected
+in each of the controls, because the selection is based on the current record.
+
+REFERENCES
+==========
+
+For more information on how to write custom DDX and DDV functions, see technical
+note 26 in the Visual C++ documentation.
+
+For more information on using the CDaoRecordset and CRecordset classes, see the
+CDaoRecordset and CRecordset entries in the Visual C++ Class Library Reference.
+
+Additional query words: CComboBox ClistBox combobox listbox
+
+======================================================================
+Keywords          : kbfile kbSample kbDAOsearch kbDatabase kbMFC kbODBC KbUIDesign kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbMFC kbVC500 kbVC32bitSearch kbVC500SP1 kbVC500SP2 kbVC500SP3 kbVC500Search
+Version           : WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3; winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

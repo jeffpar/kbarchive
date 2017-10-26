@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248052/","publisher":null,"image":null,"headline":"Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248052-xgen-installing-encryption-on-exchange-server-w-french-setting">Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248052
+Product(s): Microsoft Exchange
+Version(s): 5.5,8.03,8.5,9.0
+Operating System(s): 
+Keyword(s): kbFEA exc55 kbExchange550SP4Fea
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Outlook 97, version 8.03, used with:
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+- Microsoft Outlook 2000, version 9.0, used with:
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+- Microsoft Outlook 98, version 8.5, used with:
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Because of French encryption regulations, Microsoft Exchange Server version 5.5
+Key Management server (KM server) advanced security was previously unavailable
+in France, so the installation program did not install KM server.
+Encryption-based security was also disabled in Exchange Server clients, such as
+Outlook 98 and Outlook 2000, if they were used in France.
+
+As a result of government approval of Microsoft Exchange Server 5.5 KM server
+advanced security (and Outlook 98 and Outlook 2000 clients encryption-based
+security) for distribution and use in France, a new Microsoft Exchange Server
+5.5 installation program is available that installs KM server in France. For
+Exchange Server clients (Outlook 98 and Outlook 2000), you must activate
+encryption-based security through the application of a security patch.
+
+For additional information about the latest service pack for Exchange Server 5.5,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q191014 XGEN: How to Obtain the latest the latest Exchange Server 5.5 Service
+  Pack
+
+MORE INFORMATION
+================
+
+The new Exchange Server 5.5 installation program and client security patch are
+available separately as part of this feature.
+
+
+Requirements for Client and Server
+----------------------------------
+
+The following are the requirements for clients and servers:
+
+- Microsoft Windows NT 4.0 Service Pack 6a
+
+- Microsoft Windows 98 Second Edition
+
+- Internet Explorer 5.01
+
+Server
+------
+
+To use the new KM server installation program and install Exchange Server 5.5 KM
+server advanced security in France:
+
+1. Copy the Exchange Server 5.5 retail CD-ROM to a server share.
+
+2. Copy one of the following files, as applicable, to this installation point:
+
+   - Srvmin.exe (for an Exchange Server Standard Edition computer)
+
+   - Srvmax.exe (for an Exchange Server Enterprise Edition computer)
+
+3. For the French version, rename the file that you copied in the previous step
+  to Install.exe.
+
+4. Run the Install.exe program.
+
+5. Apply the latest Exchange Server service pack.
+
+6. Add the following keys and values to the registry:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+  a. Start Registry Editor (Regedt32.exe).
+
+  b. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults
+
+  c. On the Edit menu, click Add Key, and then add the following registry
+     value:
+
+  Value Name: CheckInfo
+  Class:
+
+  d. Select the following new key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults\CheckInfo
+
+  e. On the Edit menu, click Add Value, and then add the following registry
+     value:
+
+  Value Name: Mask
+  Data Type: REG_DWORD
+  Value: 3
+
+  f. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults\Provider\Microsoft
+  Exchange Cryptographic Provider v1.0
+
+     NOTE: The above registry key is one path; it has been wrapped for
+     readability.
+
+  g. On the Edit menu, click Add Value, and then add the following registry
+     value:
+
+  Value Name: FrenchEncryptionPermissions
+  Data Type: REG_SZ
+  Value: {8c7e4f00-20fc-11d2-9c60-0060979387ea}
+
+     NOTE: The parentheses are part of the string.
+
+  h. Quit Registry Editor.
+
+Client
+------
+
+- To install encryption security for Outlook 97 or Outlook 2000, add the same
+  registry keys that are added in the "Server" section of this article.
+
+- To install encryption security for Outlook 98, add the following registry
+  keys and values:
+
+  a. Start Registry Editor (Regedt32.exe).
+
+  b. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults
+
+  c. On the Edit menu, click Add Key, and then add the following registry
+     value:
+
+  Value Name: CheckInfo
+  Class:
+
+  d. Select the following new key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults\CheckInfo
+
+  e. On the Edit menu, click Add Value, and then add the following registry
+     value:
+
+  Value Name: Mask
+  Data Type: REG_DWORD
+  Value: 3
+
+  f. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Office\8.0\Outlook
+
+  g. On the Edit menu, click Add Key, and then add the following registry
+     value:
+
+  Value Name: Security
+  Class:
+
+  h. Select the following new key in the registry:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Office\8.0\Outlook\Security
+
+  i. On the Edit menu, click Add Value, and then add the following registry
+     value:
+
+  Value Name: FrenchEncryptionPermissions
+  Data Type: REG_SZ
+  Value: {C62A69F0-16DC-11CE-9E98-00AA00574A4F}
+
+     NOTE: The parentheses are part of the string.
+
+  j. Quit Registry Editor.
+
+Additional query words: KMS OL98 OL97 OL2K OL2000
+
+======================================================================
+Keywords          : kbFEA exc55 kbExchange550SP4Fea 
+Technology        : kbOutlookSearch kbExchangeSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : :5.5,8.03,8.5,9.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

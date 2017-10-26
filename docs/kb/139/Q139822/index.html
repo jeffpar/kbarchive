@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139822: How to Restore a Backup to Computer with Different Hardware | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139822: How to Restore a Backup to Computer with Different Hardware" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139822/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139822/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139822/","publisher":null,"image":null,"headline":"Q139822: How to Restore a Backup to Computer with Different Hardware","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139822-how-to-restore-a-backup-to-computer-with-different-hardware">Q139822: How to Restore a Backup to Computer with Different Hardware</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139822
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.00
+Operating System(s): 
+Keyword(s): kbenv kbhw kbusage kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.00 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.00 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how you can restore a tape backup from one computer to
+another computer with different hardware, and maintain user accounts and working
+environment. This procedure may be needed if there is no backup domain
+controller or fault tolerance implementation on the network and the primary
+domain controller is down for some time.
+
+A backup set is intended to be used as a disaster recovery utility to maintain
+your system by backing it up and restoring it to the same, not a different
+computer. When you restore to a different computer you may encounter problems,
+due to hardware differences between the two computers.
+
+This procedure is not recommended by Microsoft and therefore is not supported.
+Microsoft makes no warranty, implied or otherwise, regarding the performance,
+stability or reliability of this procedure.
+
+MORE INFORMATION
+================
+
+NOTE: If you need to only change the primary hard disk and controller while
+maintaining user accounts and desktop settings, please see the following
+article(s) in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q112019
+  TITLE : Changing Primary Disk System After Installation
+
+If you want to restore a Windows NT backup from one computer to a similar
+computer, please see the following article in the Microsoft Knowledge Base:
+
+  Q130928 Restoring a Backup of Windows NT to Another Computer
+
+To restore a tape backup from one computer to another computer with different
+hardware, and maintain user accounts and working environment:
+
+1. From the original computer you need a tape backup of the registry and all
+  other files you want to transfer.
+
+2. Partition and drive information should be set up the same as the original
+  computer. However, the primary partition should be a FAT partition and
+  initially Windows NT should be installed onto a FAT partition (it can be
+  converted later). Use the same computer name and domain name as the computer
+  that is being replaced.
+
+3. Create a directory off the root called CNFGTEST. From the backup set restore
+  the Registry (%SystemRoot%\system32\config directory) to C:\CNFGTEST on the
+  hard drive.
+
+4. Delete SYSTEM.* and *.EVT files from C:\CNFGTEST.
+
+  NOTE: These files must be deleted in order to remove hardware specific
+  information.
+
+5. Boot to DOS and copy the remaining files from C:\CNFGTEST to the current
+  %SystemRoot%\system32\config directory.
+
+  NOTE: You cannot replace SAM or Security hives while Windows NT is running.
+
+6. Reboot the computer and make sure that everything is functioning in Windows
+  NT. When you restart user accounts should be in place.
+
+7. If you use TCP/IP with DHCP and/or WINS, you can restore the
+  %SystemRoot%\SYSTEM32\DHCP and the %SystemRoot%\SYSTEM32\WINS directories. It
+  may be necessary to reestablish the DHCP scope.
+
+8. The %SystemRoot%\SYSTEM32\SPOOL and %SystemRoot%\SYSTEM32\REPL directories
+  can now be restored. If you were using TCP/IP printing, printer queues will
+  have to be re-created and IP addresses reassigned.
+
+9. Convert to NTFS if the original install was NTFS. To replace data with
+  permissions you must convert to NTFS. To convert the file system to NTFS,
+  type the following from the MS-DOS Command Prompt:
+
+  convert &lt;drive letter&gt; fs:ntfs"
+
+  Next, restore the user data.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv kbhw kbusage kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

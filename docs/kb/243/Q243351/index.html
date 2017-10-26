@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243351/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243351/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243351/","publisher":null,"image":null,"headline":"Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243351-bug-za-compiler-option-causes-c2248-compiler-error">Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243351
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC600 kbVC600bug
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling code with the /Za compiler option (Disable Microsoft Language
+extensions) you may get the following error:
+
+  error C2248: 'member' : cannot access private 'member' declared in class
+  'class'
+
+For details, please look in the "More Information" section.
+
+CAUSE
+=====
+
+The compiler is unable to defer the access checking until it determines the use
+of a private member as a return type. The C++ Standard, Section 11 Paragraph 5
+states the following:
+
+"The access control for names used in the definition of a class member that
+appears outside of the member's class definition is done as if the entire member
+definition appeared in the scope of the member's class. In particular, access
+controls apply as usual to member names accessed as part of a function return
+type, even though it is not possible to determine the access privileges of that
+use without first parsing the rest of the function declarator."
+
+RESOLUTION
+==========
+
+There are two workarounds for this problem.
+
+1. Define the private function within the class definition itself.
+
+2. Define a public typedef for the return type.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce the problem, compile the following piece of code with the /Za
+option.
+
+  //compiler options : cl /Za
+
+  // #define WORKAROUND 
+  // Uncomment the above line for workaround 2.
+
+  class A
+  {
+  private :
+  	struct inner {};
+  	inner PrivFunc();
+
+  public:
+      A(){}
+
+  #ifdef WORKAROUND
+  		typedef inner INNER; 
+  #endif
+  		
+
+  };
+
+  #ifndef WORKAROUND
+  A::inner A::PrivFunc()
+  {
+  	return inner();
+  }
+  #else
+  A::INNER A::PrivFunc()
+  {
+  	return INNER();
+  }
+  #endif
+
+  void main(void)
+  {
+
+  }
+
+The use of A::inner is well formed here because A::inner is a member of class A.
+This implies that the access checking for the first use of A::inner must be
+deferred until it is determined that this use of A::inner is as the return type
+of a member of class A.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC600 kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

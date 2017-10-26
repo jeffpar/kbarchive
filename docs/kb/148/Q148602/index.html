@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148602: Running SNA Server 2.11 on the Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148602: Running SNA Server 2.11 on the Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148602/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148602/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148602/","publisher":null,"image":null,"headline":"Q148602: Running SNA Server 2.11 on the Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148602-running-sna-server-211-on-the-windows-nt-40">Q148602: Running SNA Server 2.11 on the Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148602
+Product(s): Microsoft SNA Server
+Version(s): 2.11
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This article lists six known problems and their workarounds for SNA Server 2.11
+running on Windows NT 4.0 (Build 1381 - Final Release).
+
+STATUS
+======
+
+Microsoft has confirmed these problems in SNA Server version 2.11 and 2.11
+Service Pack 1. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+1. The SNA Server Administrator program will encounter an application exception
+  when using the Select Domain dialog to change focus to another domain when
+  running on the Windows NT 4.0.
+
+  Another possible symptom of this problem is a series of LAN Manager error
+  messages that appear after selecting the Select Domain option in the SNA
+  Server Administrator program.
+
+  To work around this problem, rename the following SNA Administrator file:
+
+  rename &lt;snaroot&gt;\system\snasfd.dll snasft.211
+
+
+2. SNA Server 2.11 overwrites an older version of license manager (Liccpa.cpl)
+  on Windows NT 4.0, causing new Windows NT 4.0 license system features (such
+  as replication and support for secure certificates) to be disabled.
+
+  To resolve this problem, reapply the Windows NT 4.0 version of Liccpa.cpl to
+  the &lt;winntroot&gt;\System32 directory.
+
+3. Eicon WAN Services from SNA Server 2.11 SP1 only works on Windows NT 3.51.
+  SNA Server 2.11 Service Pack 1 includes Eicon WAN Services v3r3, though this
+  version only works on Windows NT 3.51.
+
+  Contact Eicon for an update to Eicon WAN Services to use on Windows NT 4.0.
+
+4. On the Help menu, when you click About SNA Server, the following incorrect
+  information is diplayed:
+
+  Microsoft SNA Server for Windows NT
+  December Server Beta
+
+  Administration Program
+  Version 2.0.0.0
+
+  Copyright 1992 Microsoft Corp
+
+This does NOT indicate that an old version of SNA Server is being used and should
+be ignored. To determine the actual revision level of SNA Server, run the
+"SNAVER" command, click Browse and select the
+&lt;snaroot&gt;\system\SNAADMIN.EXE program. If SNA Server 2.11 SP1 is being
+used, the lower portion of the message box will show:
+
+  SNAADMIN.EXE Version 2.11.0.309.
+
+5. Server-to-server communication over IP routers fails if WINS is used.
+
+  See the following knowledge base article for more information on this
+  problem.
+
+  Q155883 NT 4.0 Breaks SNA Server 2.x Server Communication over IP
+
+  This article documents the availability of a Windows NT hotfix for this
+  problem, available through Microsoft product support.
+
+6. When you invoke SNARAS connection, Windows NT STOP screen 0x0000001E
+  appears.
+
+  When using the SNA Server 2.11 SP1 SNARAS feature on top of Windows NT 4.0,
+  the following STOP screen will occur:
+
+  STOP 0x1E (unhandled kernel exception)
+  Parameters: c0000005 80111391 00000000 8014bec0
+
+  This problem is fixed in Windows NT 4.0 Service Pack 2. This problem does not
+  occur when running SNA Server 2.11 SP1 SNARAS on Windows NT 3.51.
+
+
+Microsoft SNA Server 2.11 is supported on Microsoft Windows NT 4.0. This article
+will be updated as problems are found and as updates or workarounds are
+determined. It is recommended that the latest SNA Server 2.11 service pack be
+applied if running on Windows NT 4.0. Microsoft SNA Server 2.0 and 2.1 are not
+supported on Windows NT 4.0.
+
+Additional query words: prodsna SUR
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : :2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

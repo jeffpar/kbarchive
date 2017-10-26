@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169716: XCON: Exchange MTA Generates Event ID 37 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169716: XCON: Exchange MTA Generates Event ID 37" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169716/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169716/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169716/","publisher":null,"image":null,"headline":"Q169716: XCON: Exchange MTA Generates Event ID 37","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169716-xcon-exchange-mta-generates-event-id-37">Q169716: XCON: Exchange MTA Generates Event ID 37</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169716
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Server message transfer agent (MTA) may fail to deliver
+messages between servers that are connected via a schedulable connector (such as
+X.400 or Dynamic RAS), and in turn generate the following Event Ids in the
+Application Event Log:
+
+  MSExchangeMTA Event ID: 37
+  Type: Warning
+  Category: Security
+  The
+  /O=OrganizationName/OU=SiteName/CN=Configuration/CN=Connections/CN=Conne
+  ct orName (Adjacent-MTA) entity attempted to open an association while
+  suspended. [MTA XFER-IN 22 35] (14)
+
+  MSExchangeMTA Event ID: 1293
+  Type: Warning
+  Category: X.400 Service
+  A remotely-initiated association from
+  /O=OrganizationName/OU=SiteName/CN=Configuration/CN=Connections
+  /CN=ConnectorName was refused. The failure reason provider is 0 and the
+  reason is 0. Control block index 1. Type 1. [PLATFORM KERNEL 26 128]
+  (12)
+
+CAUSE
+=====
+
+If the Event ID 37 is generated, it is an indication that a schedulable
+connector on the Exchange Server computer that logged the event is currently
+configured for a connection schedule of "Never," which indicates that the
+connector will neither accept nor initiate a connection to another Exchange
+Server computer. Therefore, when another MTA attempts to make a connection to
+this Exchange Server computer, it is refused because the current schedule set
+for this connector is configured as "Never." The Exchange Server computer
+attempting to initiate the connection with the Exchange Server computer where
+the connector is currently configured for a connection schedule of "Never" will
+typically log one or more of the following events upon failure of the attempted
+connection:
+
+  MSExchangeMTA Event ID: 1290
+  Type: Warning
+  Category: X.400 Service
+  A locally initiated association to
+  /O=OrganizationName/OU=SiteName/CN=Configuration/CN=Connections
+  /CN=ConnectorName was refused. The failure reason provider was 0 and the
+  reason was 0. Control block index 202. Type 1. [PLATFORM KERNEL 20 130]
+  (12)
+
+  MSExchangeMTA Event ID: 289
+  Type: Warning
+  Category: X.400 Service
+  A connection to
+  /O=OrganizationName/OU=SiteName/CN=Configuration/CN=Connections/CN=Conne
+  ctorName could not be opened. [MTA XFER-IN 17 26] (12)
+
+  MSExchangeMTA Event ID: 1294
+  Type: Warning
+  Category: X.400 Service
+  An association with entity
+  /O=OrganizationName/OU=SiteName/CN=Configuration
+  /CN=Connections/CN=ConnectorName ended abnormally. [198 1 0 1 PLATFORM
+  KERNEL 20 130] (10)
+
+WORKAROUND
+==========
+
+In order for the MTAs to communicate successfully via a configured connector,
+each connector involved must be configured for a connection schedule other than
+"Never". The Schedule tab on the connector's property page provides control over
+when the connector is available.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

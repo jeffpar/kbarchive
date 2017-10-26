@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148305/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148305/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148305/","publisher":null,"image":null,"headline":"Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148305-prb-afxfindresourcehandle-fails-w-icons-cursors--strings">Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148305
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbcode kbCursor kbDLL kbIcon kbMFC kbResource kbString kbVC150 kbVC200 kbVC400 kbGrpDSM
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+AfxFindResourceHandle() fails when searching for icon (RT_ICON), cursor
+(RT_CURSOR), and string resources (RT_STRING).
+
+CAUSE
+=====
+
+This occurs because of how the Windows API function FindResource, which is
+called by AfxFindResourceHandle(), is designed.
+
+RESOLUTION
+==========
+
+For icons and cursors, use the RT_GROUP_ICON or RT_GROUP_CURSOR resource type
+with AfxFindResourceHandle() to return the EXE or DLL instance where the
+resource is located, and then call ::LoadIcon() or ::LoadCursor() to load the
+resource.
+
+For string resources, call CString::LoadString(). It will search the EXE and MFC
+extension DLLs for the string resource, and load it into the CString.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+AfxFindResourceHandle is an _AFXDLL-specific API for walking the resource list
+to look for a given match. It takes the name and type of a resource and returns
+the resource handle where it was first found (or NULL). It is documented in MFC
+Technote TN033: DLL Version of MFC.
+
+Sample Code
+-----------
+
+The following sample code shows successful uses of RT_GROUP_ICON and
+RT_GROUP_CURSOR:
+
+  // This sample code can be placed in any MFC application or DLL
+  // that links with the DLL version of MFC. Create an icon with ID
+  // IDI_ICON1 and a cursor with ID IDC_CURSOR1. Call TestLoadIconCursor
+  // from CWinApp::Initinstance().
+
+  HICON MyLoadIcon( LPCTSTR  lpIconName )
+  {
+      return ::LoadIcon(AfxFindResourceHandle(lpIconName, RT_GROUP_ICON),
+                        lpIconName);
+  }
+
+  HCURSOR MyLoadCursor ( LPCTSTR  lpCursorName )
+  {
+      return ::LoadCursor(AfxFindResourceHandle(lpCursorName,
+                          RT_GROUP_CURSOR),
+                          lpCursorName);
+  }
+
+  void TestLoadIconCursor(void)
+  {
+      HICON   hIcon;
+      HCURSOR hCur;
+      LPCTSTR lpcszRes;
+
+      lpcszRes = MAKEINTRESOURCE(IDI_ICON1);
+      hIcon = MyLoadIcon( lpcszRes );
+      ASSERT (hIcon != NULL);
+
+      lpcszRes = MAKEINTRESOURCE(IDC_CURSOR1);
+      hCur = MyLoadCursor( lpcszRes );
+      ASSERT (hCur != NULL);
+  }
+
+Additional query words: 2.5 2.50 2.51 2.52 3.0 3.00 3.1 3.10 3.2 3.20 AfxFindResourceHandle FindResource
+
+======================================================================
+Keywords          : kbcode kbCursor kbDLL kbIcon kbMFC kbResource kbString kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

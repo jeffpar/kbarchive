@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163240: STOP 0x0000006B Process1_Initialization_Failed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163240: STOP 0x0000006B Process1_Initialization_Failed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163240/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163240/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163240/","publisher":null,"image":null,"headline":"Q163240: STOP 0x0000006B Process1_Initialization_Failed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163240-stop-0x0000006b-process1_initialization_failed">Q163240: STOP 0x0000006B Process1_Initialization_Failed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163240
+Product(s): Microsoft Windows NT
+Version(s): WINNT:3.51 4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0. 
+- Microsoft Windows NT Server versions 3.51, 4.0. 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When it restarts, a computer running Windows NT may get the following Blue
+Screen STOP message:
+
+  Stop 0x0000006B (0xC0000034, 0x00000002, 0x00000000, 0x00000000)
+  Process1_Inialization_Failed.
+  CPUID : Genuine Intel IRQL:0 SYSVER 0xF0000xxx
+
+The first parameter in the STOP code, 0XC0000034, means:
+
+  STATUS_OBJECT_NAME_NOT_FOUND
+
+  Object name not found.
+
+CAUSE
+=====
+
+This error is caused by a missing system file (usually Ntdll.dll in the
+%systemRoot%\system32 directory.
+
+RESOLUTION
+==========
+
+To resolve the problem, do either of the following:
+
+- If Windows NT is installed on a FAT partition, start the computer into MS-DOS
+  and copy the Ntdll.dll from the Windows NT compact disc.
+
+- If Windows NT is installed on an NTFS partition, you can do either of the
+  following:
+
+   - Perform a parallel installation and copy the Ntdll.dll file from the
+     Windows NT compact disc.
+
+     -or-
+
+  1. Restart your computer with the three Windows NT Setup disks.
+
+     NOTE: To perform a system repair, you must copy a fixed version of the
+     Setupdd.sys file from Windows NT 4.0 Service Pack 2 or later to setup disk
+     two.
+
+  2. Select "R" to repair your Windows NT installation.
+
+  3. Select only Verify Windows NT System Files and then continue.
+
+  4. After you replace the Ntdll.dll file with the a copy from the Windows NT
+     compact disc, press F3 to exit Repair. Restart the computer and also
+     restart Windows NT.
+
+     NOTE: If the Ntdll.dll file was corrupted due to a bad block, you must
+     rename the file before copying the new version of the file.
+
+  5. If the restart results in the same error, repeat the above procedure, but
+     repair ALL files when asked during the repair process.
+
+Additional query words: prodnt 0x6B diskette reboot
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WINNT:3.51 4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

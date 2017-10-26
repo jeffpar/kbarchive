@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186546: Terminal Server Error Messages: 3300 to 3699 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186546: Terminal Server Error Messages: 3300 to 3699" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186546/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186546/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186546/","publisher":null,"image":null,"headline":"Q186546: Terminal Server Error Messages: 3300 to 3699","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186546-terminal-server-error-messages-3300-to-3699">Q186546: Terminal Server Error Messages: 3300 to 3699</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186546
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Terminal Server error messages 3300 to 3699.
+
+MORE INFORMATION
+================
+
+Error 3301
+----------
+
+  Remote IPC
+
+Error 3302
+----------
+
+  Remote Admin
+
+Error 3303
+----------
+
+  Logon server share
+
+Error 3304
+----------
+
+  A network error occurred.
+
+Error 3400
+----------
+
+  There is not enough memory to start the Workstation service.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The computer does
+not have enough memory available to start the Workstation service.
+
+Action: Stop other applications that are running on the computer, and then start
+the Workstation service again.
+
+Error 3401
+----------
+
+  An error occurred when reading the NETWORKS entry in the LANMAN.INI file.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. LAN Manager could
+not read the entries in the [networks] section of the LANMAN.INI file.
+
+Action: Be sure that the Lanman.ini file exists (in the LANMAN directory). Check
+the format of the entries in the [networks] section.
+
+Error 3402
+----------
+
+  This is an invalid argument: ***.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The listed variable
+or option (from an entry in the [networks] section of the Lanman.ini file) is
+invalid.
+
+Action: Check the format of the entries in the [networks] section of the
+Lanman.ini file.
+
+Error 3403
+----------
+
+  The *** NETWORKS entry in the LANMAN.INI file has a syntax error and will be
+  ignored.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The listed entry in
+the [networks] section of the Lanman.ini file has a syntax error.
+
+Action: Check the format of the listed entry.
+
+Error 3404
+----------
+
+  There are too many NETWORKS entries in the LANMAN.INI file.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The Lanman.ini file
+cannot have more than 12 entries in the [networks] section.
+
+Action: Remove entries from the [networks] section until 12 or fewer remain.
+
+Error 3406
+----------
+
+  An error occurred when opening network device driver *** = ***.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The listed device
+driver could not be installed.
+
+Action: Check that the listed entry in the [networks] section of the Lanman.ini
+file is valid. In the Config.sys file, check the DEVICE entry that loads this
+device driver -- the parameters of that entry may not be correct. Also check
+that the DEVICE entry specifies the correct path of the device driver.
+
+Error 3407
+----------
+
+  Device driver *** sent a bad BiosLinkage response.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The device driver
+specified is incorrect. It may be incompatible with the network adapter card, or
+it may be out-of-date.
+
+Action: Use a different device driver.
+
+Error 3408
+----------
+
+  The program cannot be used with this operating system.
+
+Explanation: Your computer has an incorrect version of the operating system.
+
+Action: Upgrade your computer to the latest version of Windows NT.
+
+Error 3409
+----------
+
+  The redirector is already installed.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The redirector is
+already installed.
+
+Action: No action is needed.
+
+Error 3410
+----------
+
+  Installing NETWKSTA.SYS Version ***.***.*** (***)
+
+Error 3411
+----------
+
+  There was an error installing NETWKSTA.SYS. Press ENTER to continue.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The LAN Manager
+device driver Netwksta.sys could not be installed.
+
+Action: Another error message that contains a more detailed explanation of the
+error, should have been displayed prior to this message. See that message for
+the cause of the problem.
+
+Error 3412
+----------
+
+  Resolver linkage problem.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. An internal error
+occurred.
+
+Action: Contact technical support.
+
+Error 3413
+----------
+
+  Your logon time at *** ends at ***. Please clean up and log off.
+
+Error 3414
+----------
+
+  You will be automatically disconnected at ***.
+
+Error 3415
+----------
+
+  Your logon time at *** has ended.
+
+Error 3416
+----------
+
+  Your logon time at *** ended at ***.
+
+Error 3417
+----------
+
+  WARNING: You have until *** to logoff. If you have not logged off at this
+  time, your session will be disconnected, and any open files or devices you
+  have open may lose data.
+
+Error 3418
+----------
+
+  WARNING: You must log off at *** now. You have two minutes to log off, or you
+  will be disconnected.
+
+Error 3419
+----------
+
+  You have open files or devices, and a forced disconnection may cause you to
+  lose data.
+
+Error 3420
+----------
+
+  Default Share for Internal Use
+
+Error 3421
+----------
+
+  Messenger Service
+
+Error 3500
+----------
+
+  The command completed successfully.
+
+Error 3501
+----------
+
+  You used an invalid option.
+
+Explanation: You typed an invalid command option.
+
+Action: To see a list of options for this command, type:
+
+  "NET HELP command" (without the quotation marks)
+
+NOTE: When typing commands, remember that most options must be preceded with a
+slash, as in /DELETE.
+
+Error 3502
+----------
+
+  System error *** has occurred.
+
+Explanation: The specified system error occurred.
+
+Action: Correct the problem and retype the command.
+
+Error 3503
+----------
+
+  The command contains an invalid number of arguments.
+
+Explanation: The command has an invalid number of options or variables.
+
+Action: To see the syntax of this command, type:
+
+  "NET HELP command" (without the quotation marks)
+
+Error 3504
+----------
+
+  The command completed with one or more errors.
+
+Explanation: The command tried to perform multiple tasks and some of them could
+not be completed.
+
+Action: No action is needed.
+
+Error 3505
+----------
+
+  You used an option with an invalid value.
+
+Explanation: You typed an incorrect value for a command option.
+
+Action: To see the syntax of this command and its options, type:
+
+  "NET HELP command /OPTIONS" (without the quotation marks)
+
+Error 3506
+----------
+
+  The option *** is unknown.
+
+Explanation: The specified option is invalid.
+
+Action: Check the spelling of the option you typed. To see a list of options for
+this command, type:
+
+  "NET HELP command" (without the quotation marks)
+
+Error 3507
+----------
+
+  Option *** is ambiguous.
+
+Explanation: The specified option can be confused with other options.
+
+Action: Type enough letters of the option so that it is unambiguous. If the
+command has two options that both begin with /OPT, such as /OPT and /OPTION, you
+must type at least four letters to designate the second option. To see a list of
+options for this command, type:
+
+  "NET HELP command" (without the quotation marks)
+
+Error 3510
+----------
+
+  A command was used with conflicting switches.
+
+Explanation: You typed a command with two options that conflict, such as /YES and
+/NO.
+
+Action: Retype the command without contradictory options.
+
+Error 3511
+----------
+
+  Could not find subprogram ***.
+
+Explanation: The specified program file could not be found.
+
+Action: Check that the program is in the same directory as NET.EXE, which is
+usually in your system directory.
+
+Error 3512
+----------
+
+  The software requires a newer version of the operating system.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The software you
+are attempting to run requires a more recent version of the operating system.
+
+Action: Run the software using a more recent version of the operating system.
+
+Error 3513
+----------
+
+  More data is available than can be returned by Windows NT.
+
+Explanation: Windows NT could not display all available data.
+
+Action: The action required depends on the command that returned the error.
+Contact your network administrator.
+
+Error 3514
+----------
+
+  More help is available by typing NET HELPMSG ***.
+
+Error 3515
+----------
+
+  This command can be used only on a Windows NT Domain Controller.
+
+Explanation: This command can be used only on a Windows NT Server system.
+
+Action: Redo the operation on a Windows NT Server system.
+
+Error 3520
+----------
+
+  These Windows NT services are started:
+
+Error 3521
+----------
+
+  The *** service is not started.
+
+Error 3522
+----------
+
+  The *** service is starting.
+
+Error 3523
+----------
+
+  The *** service could not be started.
+
+Error 3524
+----------
+
+  The *** service was started successfully.
+
+Error 3525
+----------
+
+  Stopping the Workstation service also stops the Server service.
+
+Error 3526
+----------
+
+  The workstation has open files.
+
+Error 3527
+----------
+
+  The *** service is stopping.
+
+Error 3528
+----------
+
+  The *** service could not be stopped.
+
+Error 3529
+----------
+
+  The *** service was stopped successfully.
+
+Error 3530
+----------
+
+  The following services are dependent on the *** service. Stopping the ***
+  service will also stop these services.
+
+Error 3533
+----------
+
+  The service is starting or stopping. Please try again later.
+
+Explanation: This task cannot be performed while the service is starting or
+stopping.
+
+Action: Try the task later.
+
+Error 3534
+----------
+
+  The service did not report an error.
+
+Explanation: The service did not report an error.
+
+Action: Try the task later. If the problem persists, contact your network
+administrator.
+
+Error 3535
+----------
+
+  An error occurred controlling the device.
+
+Error 3536
+----------
+
+  The *** service was continued successfully.
+
+Error 3537
+----------
+
+  The *** service was paused successfully.
+
+Error 3538
+----------
+
+  The *** service failed to resume.
+
+Error 3539
+----------
+
+  The *** service failed to pause.
+
+Error 3540
+----------
+
+  The *** service continue is pending
+
+Error 3541
+----------
+
+  The *** service pause is pending.
+
+Error 3542
+----------
+
+  *** was continued successfully.
+
+Error 3543
+----------
+
+  *** was paused successfully.
+
+Error 3544
+----------
+
+  The *** service has been started by another process and is pending.
+
+Error 3547
+----------
+
+  A service specific error occurred: ***.
+
+Explanation: A service-specific error occurred.
+
+Action: Refer to the Help or documentation for that service to determine the
+problem.
+
+Error 3660
+----------
+
+  These workstations have sessions on this server:
+
+Error 3661
+----------
+
+  These workstations have sessions with open files on this server:
+
+Error 3666
+----------
+
+  The message alias is forwarded.
+
+Error 3670
+----------
+
+  You have these remote connections:
+
+Error 3671
+----------
+
+  Continuing will cancel the connections.
+
+Error 3675
+----------
+
+  The session from *** has open files.
+
+Error 3676
+----------
+
+  New connections will be remembered.
+
+Error 3677
+----------
+
+  New connections will not be remembered.
+
+Error 3678
+----------
+
+  An error occurred while saving your profile. The state of your remembered
+  connections has not changed.
+
+Error 3679
+----------
+
+  An error occurred while reading your profile.
+
+Error 3680
+----------
+
+  An error occurred while restoring the connection to ***.
+
+Error 3682
+----------
+
+  No network services are started.
+
+Error 3683
+----------
+
+  There are no entries in the list.
+
+Error 3688
+----------
+
+  Users have open files on ***. Continuing the operation will force the files
+  closed.
+
+Error 3689
+----------
+
+  The Workstation service is already running. Windows NT will ignore command
+  options for the workstation.
+
+Error 3691
+----------
+
+  There are open files and/or incomplete directory searches pending on the
+  connection to ***.
+
+Error 3693
+----------
+
+  The request will be processed at the primary domain controller for domain
+  ***.
+
+Error 3694
+----------
+
+  The shared queue cannot be deleted while a print job is being spooled to the
+  queue.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. You attempted to
+delete an active printer.
+
+Action: After the current job has finished spooling, either print or delete the
+job. Then delete the printer.
+
+Error 3695
+----------
+
+  *** has a remembered connection to ***.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

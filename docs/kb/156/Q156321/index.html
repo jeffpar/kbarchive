@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156321/","publisher":null,"image":null,"headline":"Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156321-info-stl-sample-for-predicate-version-of-adjacent_find-function">Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156321
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): _IK
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the predicate version of
+adjacent_find STL function in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+  &lt;algorithm&gt;
+   
+
+Prototype
+---------
+
+     template&lt;class ForwardIterator, class BinaryPredicate&gt; inline
+        ForwardIterator adjacent_find(ForwardIterator first,
+                                             ForwardIterator last,
+                                             BinaryPredicate binary_pred) ;
+
+NOTE: The class/parameter names in the prototype do not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The adjacent_find algorithm finds consecutive pairs of matching elements in a
+sequence. adjacent_find returns an iterator referencing the first consecutive
+matching element in the range [first, last), or last if there are no such
+elements.
+
+Comparison is done using the binary_pred function in this version of the
+algorithm. The binary_pred function can be any user-defined function. You could
+also use one of the binary function objects provided by STL.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // adfind.cpp : Illustrates how to use the predicate version of
+  //              adjacent_find function.
+  // 
+  // Functions:
+  // 
+  //   adjacent_find  - Locate a consecutive sequence in a range.
+  // 
+  // Written by Kalindi Sanghrajka
+  // of Microsoft Product Support Services,
+  // Software Core Developer Support.
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  // disable warning C4786: symbol greater than 255 character,
+  // okay to ignore
+  #pragma warning(disable: 4786)
+
+  #include &lt;iostream&gt;
+  #include &lt;algorithm&gt;
+  #include &lt;functional&gt;
+  #include &lt;string&gt;
+  #include &lt;vector&gt;
+  using namespace std;
+
+  void main()
+  {
+      const int VECTOR_SIZE = 5 ;
+
+      // Define a template class vector of strings
+      typedef vector&lt;string, allocator&lt;string&gt; &gt; StringVector ;
+
+      //Define an iterator for template class vector of strings
+      typedef StringVector::iterator StringVectorIt ;
+
+      StringVector NamesVect(VECTOR_SIZE) ;   //vector containing names
+
+      StringVectorIt location ;   // stores the position for the
+                                   // first pair of matching
+                                   // consecutive elements.
+
+      StringVectorIt start, end, it ;
+
+      // Initialize vector NamesVect
+      NamesVect[0] = "Aladdin" ;
+      NamesVect[1] = "Jasmine" ;
+      NamesVect[2] = "Mickey" ;
+      NamesVect[3] = "Minnie" ;
+      NamesVect[4] = "Goofy" ;
+
+      start = NamesVect.begin() ;   // location of first
+                                    // element of NamesVect
+
+      end = NamesVect.end() ;       // one past the location
+                                    // last element of NamesVect
+
+      // print content of NamesVect
+      cout &lt;&lt; "NamesVect { " ;
+      for(it = start; it != end; it++)
+          cout &lt;&lt; *it &lt;&lt; ", " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+
+      // Find the first name that is lexicographically greater
+      // than the following name in the range [first, last + 1).
+      // This version performs matching using binary predicate
+      // function greater&lt;string&gt;
+      location = adjacent_find(start, end, greater&lt;string&gt;()) ;
+
+      // print the first pair of strings such that the first name is
+      // lexicographically greater than the second.
+      if (location != end)
+          cout &lt;&lt; "(" &lt;&lt; *location &lt;&lt; ", " &lt;&lt; *(location + 1) &lt;&lt; ")"
+          &lt;&lt; " the first pair of strings in NamesVect such that\n"
+          &lt;&lt; "the first name is lexicographically greater than"
+          &lt;&lt; "the second\n" &lt;&lt; endl ;
+      else
+          cout &lt;&lt; "No consecutive pair of strings found such that\n"
+          &lt;&lt; "the first name is lexicographically greater than "
+          &lt;&lt; "the second\n" &lt;&lt; endl ;
+
+  }
+
+Program Output is:
+
+NamesVect { Aladdin, Jasmine, Mickey, Minnie, Goofy, }
+
+(Minnie, Goofy) the first pair of strings in NamesVect such that the first name
+is lexicographically greater than the second
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL adjacent_find kbdss
+
+======================================================================
+Keywords          : _IK 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

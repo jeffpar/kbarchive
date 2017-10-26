@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q287717: SMS: Secondary Site Installation Stops Responding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q287717: SMS: Secondary Site Installation Stops Responding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/287/Q287717/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/287/Q287717/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/287/Q287717/","publisher":null,"image":null,"headline":"Q287717: SMS: Secondary Site Installation Stops Responding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q287717-sms-secondary-site-installation-stops-responding">Q287717: SMS: Secondary Site Installation Stops Responding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q287717
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsetup kbConfig kbMMC kbServer kbsms200 kbHMan kbsmsAdmin
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install a secondary site from a parent site, the installation
+may stop responding (hang) for various reasons and it may take a long time for
+the parent site to report the unsuccessful installation. If the secondary site
+is purged from the Systems Management Server (SMS) Administrator console of the
+parent site before the problem is reported, jobs that are trying to install the
+secondary site may continue uninterrupted.
+
+CAUSE
+=====
+
+This behavior may occur for various reasons, including, but not limited to,
+network issues, disk space issues, and so forth.
+
+WORKAROUND
+==========
+
+To work around this behavior, manually stop the secondary site installation.
+
+NOTE: it is important to remove any old information from the installation.
+
+To perform the manual cleanup:
+
+1. For each secondary site, delete the secondary site address from Site
+  Settings\Addresses in the Administrator console.
+
+2. For each secondary site, run the preinst /delsite command from a command
+  prompt on the SMS parent site to purge the failed secondary site from the
+  database. The PREINST tool is located in the \Support directory on the SMS
+  CD, and you must run it from the site server. Use preinst /? to receive the
+  exact syntax for this utility.
+
+For additional information about how to use the PREINST utility, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q212978 SMS: Description of Preinst.exe for SMS 2.0
+
+3. For each secondary site, run the preinst /deljob command to have the tool
+  remove any pending or active jobs to those sites.
+
+4. Verify that the secondary sites are completely removed. To ensure that the
+  computer is clean of the unsuccessful SMS installation:
+
+  a. Verify that no SMS or Winmgmt services are running on the computer,
+     including the SMSBootstrap service. If they are, stop them, and then set
+     the startup type to manual.
+
+  b. Verify that the following SMS registry keys were removed:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft/SMS
+  HKEY_LOCAL_MACHINE/Software/Microsoft/NAL
+  HKEY_LOCAL_MACHINE/Software/Microsoft/WBEM
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/WMI
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/SMS_Executive
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/SMS_NT_Logon_Discovery_Agent
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/SMS_Site_Config_Manager
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/SMS_Bootstrap
+  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/CLISVC
+
+  c. Verify that the following directories were removed where &lt;X&gt; is the
+     SMS installation drive:
+
+  &lt;X&gt;:\SMS
+  &lt;X&gt;:\SMSBootstrap.log
+  C:\SMSSetup.log
+  %Winnt%\MS\SMS
+
+     NOTE: You may need to restart the computer in order to remove some of these
+     directories.
+
+  d. View the client access points (CAPs) and distribution points (DPs) for the
+     site and verify that the CAP_&lt;xxx&gt; SMS_PKG shares were deleted, and
+     that the directories were removed (where &lt;xxx&gt; is the sitecode of
+     the secondary site).
+
+  e. If you used Logon Installation or Discovery during the installation, make
+     sure that the specific sitecode directory is removed from the
+     SMSLOGON\Sites directory of the primary domain controller in the domain.
+
+  f. With User Manager, make sure that any site specific accounts were deleted.
+     At a minimum, this includes the SMSClient_&lt;xxx&gt; and
+     SMSServer_&lt;xxx&gt; accounts (where &lt;xxx&gt; is the sitecode of the
+     secondary site.) After you complete this, you can complete the secondary
+     site installation by using the same sitecode.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbConfig kbMMC kbServer kbsms200 kbHMan kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

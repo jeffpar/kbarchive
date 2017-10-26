@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150753/","publisher":null,"image":null,"headline":"Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150753-how-to-create-a-windows-type-incremental-search-box-in-vfp">Q150753: How to Create a "Windows-type" Incremental Search Box in VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150753
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although the default List Box control has basic incremental search capabilities,
+the list box must have focus for the function to work. Its functionality differs
+from the implementation found in other Windows applications, such as the Search
+option of Help, where the string to be searched for is entered into a text box
+above a list box that displays the first matching item as each character is
+entered.
+
+This article describes how to create a technique that allows a list box to
+searched incrementally, regardless of its RowSource type.
+
+MORE INFORMATION
+================
+
+1. Create a new form in Form Designer.
+
+2. In the Data Environment, add Samples\Data\Customer.DBF.
+
+3. In the form, add a text box, and below it, add a list box.
+
+4. Set the list box RowSource Type as 6-Fields, RowSource as Company.
+
+5. In the InteractiveChange event of the text box, enter the following:
+
+     LOCAL nIndex, oList      &amp;&amp; prevent conflict with other variables
+     oList = thisform.List1   &amp;&amp; create object reference to list box
+
+     FOR nIndex = 1 TO oList.ListCount   &amp;&amp; loop through each item
+
+        * compare the item in the list with the string entered
+        IF UPPER( oList.ListItem(nIndex) ) = UPPER( ALLTRIM( this.Value ) )
+           oList.ListIndex = nIndex   &amp;&amp; select this item if matched
+           EXIT               &amp;&amp; drop out of loop
+        ENDIF
+
+     ENDFOR
+
+     oList.Refresh       &amp;&amp; update the display to show selected item
+
+Make corrections by backspacing over the incorrect characters, or by positioning
+the pointer in front of the character to be edited with the mouse. The list box
+then displays the item that contains the remaining characters within the text
+box.
+
+NOTE: Performance is effected by the number of records and the position of the
+item to be found within the list. Performance is improved by dividing the list
+into portions and substituting variables in the FOR statement which lowers the
+number of items to compare the text string with. In this example, the list is
+divided into quarters:
+
+     LOCAL cVal, cLen, c1st, c2nd, c3rd, n1st, n2nd, n3rd, nTop, nEnd, ;
+           nMax, oList
+     oList = Thisform.List1
+     * 1st = 1 to n2nd-1
+     nMax = oList.ListCount
+     n1st = INT( nMax * .25 ) &amp;&amp; 1st quarter
+     n2nd = INT( nMax * .50 ) &amp;&amp; 2nd quarter
+     n3rd = INT( nMax * .75 ) &amp;&amp; 3rd quarter
+     c1st = UPPER( oList.ListItem[ n1st ] )   &amp;&amp; avoids case sensitivity
+     c2nd = UPPER( oList.ListItem[ n2nd ] )   &amp;&amp;   when list contains
+     c3rd = UPPER( oList.ListItem[ n3rd ] )   &amp;&amp;   mixed case entries
+     cVal = ALLTRIM( UPPER( this.Value ) )    &amp;&amp; first character caps
+     cLen = LEN( cVal )
+
+     DO CASE
+       CASE cVal &lt;= LEFT( c1st, cLen )
+         nTop = 1
+         nEnd = n1st
+       CASE cVal &lt;= LEFT( c2nd, cLen )
+         nTop = n1st + 1
+         nEnd = n2nd
+       CASE cVal &lt;= LEFT( c3rd, cLen )
+         nTop = n2nd + 1
+         nEnd = n3rd
+       OTHERWISE
+         nTop = n3rd + 1
+         nEnd = nMax
+     ENDCASE
+
+     FOR nIndex = nTop TO nEnd   &amp;&amp; loop through each item within range
+        IF UPPER( oList.ListItem[ nIndex ] ) = cVal
+           oList.ListIndex = nIndex   &amp;&amp; select this item if matched
+           EXIT                  &amp;&amp; drop out of loop
+        ENDIF
+     ENDFOR
+
+     oList.Refresh               &amp;&amp; update the display to show selected item
+
+If the list is extensive and requires a large number of divisions, create an
+array as a property of the form, and assign the character and numeric division
+boundaries once in the Init event of the form instead of each time in the
+InteractiveChange event of the form. In the following example, the list is
+divided into sections:
+
+  Create the following two new Form properties: cLimit[9] and nLimit[9]
+  In the Init event of the form, enter:
+
+        LOCAL nDx, nMax
+        oLst = this.List1  &amp;&amp; object reference to this form''''''''s list box
+        nMax = oLst.ListCount     &amp;&amp; divide into tenths
+
+     FOR nDx = 1 TO 9
+
+        * assign number at each tenth boundary (used as index into list)
+        this.nLimit[ nDx ] = INT( nMax * ( .10 * nDx ) )
+
+        * assign list item found at this position in the list
+        this.cLimit[ nDx ] = UPPER( oLst.ListItem[ this.nLimit[ nDx ] ] )
+
+     ENDFOR
+
+  In the InteractiveChange event of the text box, enter:
+
+     LOCAL cVal, cLen, nTop, nEnd, nIdx, nDex, oLst
+     oLst = thisform.list1
+     cVal = ALLTRIM( UPPER( this.Value ) )
+     cLen = LEN( cVal )
+
+     * if not found in the sections checked, default to the last section
+     nTop = thisform.nLimit[ 9 ] + 1  &amp;&amp; i.e., one past the end of the 9th
+     nEnd = oLst.ListCount            &amp;&amp;    section to the end of the list
+
+     IF cVal &lt;= LEFT( thisform.cLimit[ 1 ], cLen ) &amp;&amp; compare to 1st element
+        nTop = 1
+        nEnd = thisform.nLimit[1]
+     ELSE
+        FOR nIdx = 2 TO 9  &amp;&amp; loop through the remaining section limits
+           IF cVal &lt;= LEFT( thisform.cLimit[ nIdx ], cLen )
+              nTop = thisform.nLimit[ nIdx - 1 ] + 1 &amp;&amp; previous end plus 1
+              nEnd = thisform.nLimit[ nIdx ]  &amp;&amp; limit of current section
+              EXIT      &amp;&amp; drop out of loop since section is found
+           ENDIF
+        ENDFOR
+     ENDIF
+
+     * the remaining code is the same structure as in the previous example
+     FOR nDex = nTop TO nEnd   &amp;&amp; loop through each item with range
+
+        IF UPPER( oLst.ListItem[ nDex ] ) = cVal
+           oLst.ListIndex = nDex
+           EXIT
+        ENDIF
+     ENDFOR
+
+     oLst.Refresh
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS:3.0,3.0b,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

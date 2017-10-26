@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191629/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191629/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191629/","publisher":null,"image":null,"headline":"Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191629-howto-create-an-mts-component-that-works-with-foxisapi">Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191629
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro 6.0 contains many server improvements including those that allow
+better integration with Microsoft Transaction Server (MTS). There may be
+situations where you want to use an MTS component with FoxIsapi.
+
+MORE INFORMATION
+================
+
+FoxIsapi is an Internet Server Application Programming Interface (ISAPI)
+extension that allows for Visual FoxPro (VFP) servers to be used with Internet
+Information Server to generate server-side HTML Web pages. The URL includes the
+VFP server, which is instantiated, and the associated method to be invoked. The
+method returns HTML to be rendered by the Web browser.
+
+There are no specific requirements for VFP servers used with FoxIsapi, however,
+best results are often obtained with use of Local EXE servers since it is easier
+to protect global data. The FoxIsapi sample uses a form so that it can obtain a
+private data session.
+
+One of the benefits of FoxIsapi is its built-in Pool Manager, which lets you
+manage multiple running servers pooled together for maximum scalability. One can
+efficiently use FoxIsapi to handle Web sites that need to respond to hundreds of
+thousands of Web hits a day.
+
+With all the nice features offered by MTS, one could easily use MTS along with
+FoxIsapi. While the improved scalability offered by MTS would not necessarily be
+taken advantage because of the FoxIsapi architecture, the Pool Manager support
+may provide an even better alternative. One of the nice advantages of using MTS
+is its automatic security and transaction support. These are reasons to consider
+using MTS with FoxIsapi. Remember, MTS components must be In-Process DLLs
+(marked as Multi-Use). One should not need to perform any other special tasks in
+order to get these servers to work under FoxIsapi. In addition, one can call
+other MTS servers directly within your FoxIsapi servers since these all exist
+within same MTS activity.
+
+The Pool Manager controls how servers scale, and how many instances can run
+simultaneously. Make sure you test various Pool Manager scenarios to get optimal
+results. You can also setup load balancing across multiple computers to make
+further scalability improvements. Strategies such as DNS Round Robin schemas are
+options to consider for load balancing.
+
+REFERENCES
+==========
+
+Microsoft Transaction Server Help; search on: "COM Components"
+
+Additional query words: PGFest600 kbVFp600 kbISAPI kbMTS
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

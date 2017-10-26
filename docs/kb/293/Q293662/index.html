@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/293/Q293662/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/293/Q293662/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/293/Q293662/","publisher":null,"image":null,"headline":"Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q293662-sms-your-user-account-may-be-repeatedly-locked-out-in-a-domain">Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q293662
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 01-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use your user account in a domain, you may repeatedly be
+locked out.
+
+CAUSE
+=====
+
+This problem can occur if a computer that is running Microsoft Windows 95,
+Microsoft Windows 98, or Microsoft Windows Millennium Edition (Me) is logged on
+to the network with a domain account whose password had been changed on a
+different computer. The Windows 95-based, Windows 98-based, or Windows Me-based
+computer is still using the previous account information when it attempts to
+perform Systems Management Server (SMS) tasks, such as, when it checks for new
+software distributions or transfers inventory information.
+
+The use of the previous password can cause the domain account to lock out a user
+account. The user that has logged on to the computer is using the password that
+the user had originally used to log on to the computer, not the new password
+that had been changed on another computer. The SMS client computer continues
+with its normal SMS processes and can continually lock out the user account
+until the client is logged off from the computer.
+
+WORKAROUND
+==========
+
+To work around this problem, go to the original computer (the logged-on computer
+that is locking out the user account) and log off from the computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem is a limitation of the Windows 95, Windows 98, and Windows Me
+platform: To only perform network activity in the context of the logged-on user.
+The Microsoft Windows NT and Microsoft Windows 2000 platforms do not have this
+limitation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbWinMEsearch kbSMSSearch kbWin95search kbWin98search kbZNotKeyword3 kbWin98 kbWinME kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

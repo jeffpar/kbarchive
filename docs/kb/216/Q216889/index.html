@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216889/","publisher":null,"image":null,"headline":"Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216889-fix-dcom95-12-or-dcom98-causes-data-corruption-in-rpc-calls">Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216889
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbRPC kbOSWin95fix kbOSWin95sp1fix
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows 95 with DCOM95 1.2 update or Windows 98 with DCOM98 update, if you
+have a pointer to conformant structure as a field of a complex structure, the
+unmarshaling side receives uninitialized data. If the data structure is an [in]
+parameter, the server manager routine sees the corruption. If it is an [out]
+parameter, the client sees the corruption.
+
+The same problem appears if your RPC application is running on Windows NT 4.0
+with Service Pack 4 as documented in the following article in the Microsoft
+Knowledge Base:
+
+  Q216766 FIX: Windows NT 4.0 w/ SP4 Causes Data Corruption in RPC Calls
+
+Data Structure:
+
+  typedef struct tagConformantStruct 
+  {
+     unsigned long        size;
+     [size_is(size)] char data[];
+  } ConformantStruct;
+
+  typedef enum tagColor
+  {
+     Red, Blue, Green
+  } Color;
+
+  typedef union tagMyUnion switch (Color type) u
+  {
+     case Red :  long  longArm;
+     case Blue:  short shortArm;
+     case Green: char  charArm;
+  } MyUnion;
+
+  typedef struct tagComplexStruct
+  {
+     unsigned long numUnions;
+     ConformantStruct* pConfStruct; // PROBLEM! pointer to conformant struct.
+     [size_is(numUnions)] MyUnion myUnions[]; // Makes the struct complex.
+  } ComplexStruct;
+
+CAUSE
+=====
+
+A defect in the rpcrt4.dll shipped with Windows NT 4.0 Service Pack 4, (DCOM95
+1.2) and DCOM98 prevents the conformant part of the conformant structure to be
+marshaled. The unmarshaling side expects the conformant part and unmarshals from
+a possibly uninitialized part of the RPC buffer. This causes data corruption.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next update that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+  File name   Version     Date       Time     Size
+  --------------------------------------------------------
+  RPCRT4.DLL  4.71.3116   03-04-99   7:16a   321,296
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in DCOM for Microsoft Windows 95,
+version 1.2, and DCOM98 for Windows 95 and Windows 98 (included with Microsoft
+Visual Studio 6). The fix described in the resolution section should not be
+applied to systems which do not have one of these products installed.
+
+MORE INFORMATION
+================
+
+For additional information about Windows 98 and Windows 98 Second Edition
+hotfixes, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q206071 General Information About Windows 98 and Windows 98 Second Edition
+  Hotfixes
+
+For additional information about Windows 95 hotfixes, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q161020 Implementing Windows 95 Updates
+
+Additional query words: conformant complex
+
+======================================================================
+Keywords          : kbRPC kbOSWin95fix kbOSWin95sp1fix 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

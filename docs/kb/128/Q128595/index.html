@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128595: Default Wavemix.ini from Arcade 1.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128595: Default Wavemix.ini from Arcade 1.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128595/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128595/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128595/","publisher":null,"image":null,"headline":"Q128595: Default Wavemix.ini from Arcade 1.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128595-default-wavemixini-from-arcade-10">Q128595: Default Wavemix.ini from Arcade 1.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128595
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): win31
+Last Modified: 08-NOV-2001
+
+kbusage kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is the default WAVEMIX.INI file installed by Microsoft
+Arcade. This file is copied into the Windows directory by Setup. This text has
+not been modified and appears as is.
+
+WAVEMIX.INI FILE
+
+[general]
+; if ShowDevices exists and is non-zero then will display wave out
+devices and other stuff
+;
+; ShowDevices=0  : default
+; ShowDevices=1    : show output from waveOutGetDevCaps
+ShowDevices=0
+
+; if WaveOutDevice exists it should be between zero and one less num
+; devices
+
+; the default is WAVE_MAPPER
+;
+; WaveOutDevice=0 : use the first device (default)
+; WaveOutDevice=1 : use the second device
+; WaveOutDevice=-1: use WAVE_MAPPER (will use [Unknow Device] setttings)
+;
+;
+WaveOutDevice=0
+
+; Wavemix will detect if it is running on a 286 and not use any 386
+instructions
+; you can force it to use the 286 only code on a 386 by setting cmixit=1
+; cmixit=0 (default)
+; cmixit=1 uses only 286 code (even on a 386 or &gt;)
+
+[default]
+; Remix=1 = ResetRemix()
+; Remix=2 = NoResetRemix()
+; default=1
+Remix=1
+
+; GoodWavePos=0 = uses timeGetTime() (default)
+; GoodWavePos=1 = uses waveOutGetPosition()
+GoodWavePos=0
+
+; WaveBlocks=#  (2&lt;=#&lt;=6) the number of ping pong buffers to use
+; default=3
+WaveBlocks=3
+
+; WaveBlockLen=#  min = 512 max = 4096
+;   if a number is not specified Wavemix.dll will try to determine a size
+;
+
+; SamplesPerSec=11 (11.025 Khz) (default)
+;              =22 (22.04  KHz)
+;              =44 (44.1   KHz)
+SamplesPerSec=11
+
+[Windows Sound System Playback]
+; Need to set do11khzmce=FALSE in system.ini-&gt;[sndsys.drv] if want to
+use Remix=1 and SamplesPerSec=11
+Remix=1
+GoodWavePos=1
+WaveBlocks=3
+SamplesPerSec=22
+;WaveBlockLen=
+
+[MultiSound Wave Out]
+Remix=2
+GoodWavePos=1
+WaveBlocks=3
+;WaveBlockLen=
+
+[SB16 Wave Out]
+Remix=1
+GoodWavePos=0
+WaveBlocks=5
+SamplesPerSec=22
+;WaveBlockLen=
+
+[SBPro Wave Out]
+Remix=1
+GoodWavePos=0
+WaveBlocks=5
+;WaveBlockLen=
+
+[Media Vision Waveform Output]
+Remix=1
+GoodWavePos=0
+WaveBlocks=3
+;WaveBlockLen=
+
+[not compatible]
+; sound drivers that are not compatible with wavemix.dll can be added here
+; (the =1 is necessary).  One of the major conflicts occur with the PC
+Speake
+r
+; drivers.  The wavemix.dll will only work with devices that support
+asynchronous
+; operation - most of the pc speaker drivers are synchronous.  The
+name of the devices
+; can be easily seen by setting ShowDevices=1 in the [general]
+section and then running
+; a program which uses the wavemixer.
+
+Wave driver for PC Speaker=1
+
+Additional query words: 1.00 Sound Blaster Mediavision w_arcade
+
+======================================================================
+Keywords          : win31 
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcade
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

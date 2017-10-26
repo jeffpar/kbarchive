@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/306/Q306957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/306/Q306957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/306/Q306957/","publisher":null,"image":null,"headline":"Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q306957-xadm-mail-sent-to-exchange-server-with-cdonts-asp-not-delivered">Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q306957
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbIIS exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+- Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+In Microsoft Exchange Server, when you attempt to send Simple Mail Transport
+Protocol (SMTP) mail by using Collaborative Data Objects for NTS (CDONTS) with
+Active Server Pages (ASP), the mail may remain in the Exchange Server or
+Internet Information Server (IIS) pickup folder instead of being delivered.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this behavior, check the values of the relevant registry settings, and
+then make sure that your anonymous Web account on the Imcdata folder has Add
+permissions. Follow these steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the Active Messaging Use Exchange value under the following key in the
+  registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Active Messaging Use Exchange
+  = 0x00000001 (1)
+
+This key indicates that Active Messaging programs should use Exchange Server.
+
+3. Make sure that the data for this value is as shown. If it does not, correct
+  the data.
+
+4. Locate the RootDir value under the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters\RootDir
+  = C:\exchsrvr\imcdata
+
+This key shows the location of the Exchange Server IMC Pickup folder. This value
+depends on the specific configuration.
+
+5. Write down the location of the Imcdata folder.
+
+6. Quit Registry Editor.
+
+7. In Windows Explorer, go to the \Exchsrvr\Imcdata\Pickup folder.
+
+8. Right-click the folder, and then click Properties.
+
+9. Click the Security tab, and then click Permissions.
+
+10. In the Directory Permissions dialog box, add your anonymous Web account if
+  it is not already listed. Unless you configure it otherwise, this account is
+  listed as &lt;ComputerName\IUSR_ComputerName&gt;.
+
+11. Give the anonymous Web account Add permissions
+
+Additional query words:
+
+======================================================================
+Keywords          : kbIIS exc5 exc55 
+Technology        : kbiisSearch kbExchangeSearch kbExchange500 kbExchange550 kbiis500 kbiis400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

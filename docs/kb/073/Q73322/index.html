@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73322: Backfill for EMM386.EXE Cannot Be Disabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73322: Backfill for EMM386.EXE Cannot Be Disabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73322/","publisher":null,"image":null,"headline":"Q73322: Backfill for EMM386.EXE Cannot Be Disabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73322-backfill-for-emm386exe-cannot-be-disabled">Q73322: Backfill for EMM386.EXE Cannot Be Disabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73322
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x; WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a 
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use EMM386.EXE on an 80386 machine with less than 640 kilobytes (K) of
+conventional memory and an expansion memory card configured for extended memory,
+conventional memory may be backfilled to 640K.
+
+If you try to run Microsoft Windows in 386 enhanced mode on such a machine, the
+following error message may be displayed:
+
+  Unable to start enhanced mode windows due to base memory backfill
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in EMM386.EXE version 4.20 (which
+is provided with MS-DOS 5.0) and version 4.33 (which is provided with MS-DOS
+5.00a). This problem does not occur with later versions of EMM386.EXE.
+
+CAUSE
+=====
+
+Backfilling uses memory from the expansion card to fill the empty conventional
+memory area up to 640K. EMM386.EXE redirects the empty conventional memory
+addresses up to 640K to the chips on the expansion card. This means that there
+are no physical memory chips on the motherboard at these addresses; rather, the
+addresses are used for memory chips on the expansion card.
+
+There is no way to disable the backfilling that EMM386.EXE performs. The /X
+switch excludes only within the range from 640K to 1024K. The /B switch raises
+the base only for the backfill up to 256K, which is not useful here because it
+does not extend to 640K. Effectively, this means that there is no way to change
+the way EMM386.EXE handles memory between 256K and 640K.
+
+For a machine running Windows, this means that you cannot run Windows in 386
+enhanced mode, because the backfilling interferes with the operation of the
+Windows memory managers. When you type "win" (without the quotation marks) at
+the command prompt on such a machine, Windows returns an error message stating
+that the memory from xxxK to 640K has been backfilled and that the backfilling
+must be disabled to run Windows in 386 enhanced mode.
+
+WORKAROUND
+==========
+
+To work around this problem, use EMM386.EXE version 4.44 or later (Windows 3.1
+contains version 4.44). Later versions do not backfill as the previous two
+versions that shipped with MS-DOS 5.0 and 5.0a did (versions 4.20 and 4.33
+respectively).
+
+There is no other workaround for this problem other than to not use EMM386.EXE,
+or to upgrade the motherboard so that it can provide conventional memory up to
+640K.
+
+Additional query words: 5.00 5.00a err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x; WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

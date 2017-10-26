@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175250: Extra Modem Settings U-Z for Connecting to MSN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175250: Extra Modem Settings U-Z for Connecting to MSN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175250/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175250/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175250/","publisher":null,"image":null,"headline":"Q175250: Extra Modem Settings U-Z for Connecting to MSN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175250-extra-modem-settings-u-z-for-connecting-to-msn">Q175250: Extra Modem Settings U-Z for Connecting to MSN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175250
+Product(s): The Microsoft Network
+Version(s): WINDOWS:1.3,2.0,2.5
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 1.3, 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may be unable to connect, or have difficulty remaining connected to MSN, The
+Microsoft Network. Some modems may require extra settings or specific
+configurations to connect to MSN.
+
+The following table lists extra modem settings and configurations that may help
+specific modems connect to MSN.
+
+NOTE: Rockwell settings may work for any modem that uses the Rockwell chipset,
+including Boca, Zoltrix, and Zoom 14.4 modems.
+
+MORE INFORMATION
+================
+
+Manufacturer/Model      Extra Settings    Status       Configuration
+--------------------------------------------------------------------------
+
+U.S. Robotics 28.8      &amp;N13              UNCONFIRMED  USR 28.8 modems
+                                                      with a firmware
+                                                      revision prior to
+                                                      4/18/95 have known
+                                                      problems. Obtain a
+                                                      firmware revision
+                                                      dated 4/18/95
+                                                      or later from
+                                                      the manufacturer.
+                                                      Once updated, the
+                                                      modem speed is
+                                                      limited to 26,400
+                                                      bps; this allows
+                                                      for slower MSN
+                                                      connection speeds.
+
+U.S. Robotics           None              CONFIRMED    Error Control off.
+Sportster 14.4si
+
+U.S. Robotics           AT&amp;F1&amp;K3&amp;N13&amp;D0   CONFIRMED    Error Control
+Sportster 28.8 Vi                                      off. Install as a
+Internal                                               USR Sportster 28.8
+                                                      internal.
+
+U.S. Robotics           AT&amp;F1&amp;K3&amp;N13      CONFIRMED    None, or (ATI3=
+                                                      Sportster V6.0);
+                                                      Check for BIOS date
+                                                      on V6.0 (Check
+                                                      ATI7 response).
+                                                      Supervisor date
+                                                      should be 4/18/95
+                                                      or later, if not,
+                                                      contact the
+                                                      manufacturer for
+                                                      BIOS update; the
+                                                      old BIOS cannot
+                                                      handle the 32-bit
+                                                      drivers. Error
+                                                      Control off.
+
+U.S. Robotics           AT&amp;F1             CONFIRMED    If the UART is an
+Sportster WinModem                                     8250, remove FIFO
+28.8 Fax RS                                            buffers (requires
+                                                      a 16550 compatible
+                                                      UART).
+
+U.S. Robotics 14.4      AT&amp;F              CONFIRMED    Error Control off.
+PCMCIA
+
+U.S. Robotics 28.8      S56=144 S27=48    CONFIRMED    Error Control off.
+PCMCIA
+
+U.S. Robotics 33.6      AT&amp;Ns58=1s11=50   CONFIRMED    Install a Standard
+Courier V Everything,                                  28.8 driver on the
+Upgradeable to 56K                                     same port and set
+                                                      as the default if
+                                                      the manufacturer's
+                                                      drivers are not
+                                                      available.
+
+US Robotics             AT&amp;F1s11=50       CONFIRMED    Error Control off;
+Sportster 14.4                                         maximum speed to
+                                                      57600. You may have
+                                                      to install as a
+                                                      Standard 28.8.
+
+US Robotics             AT&amp;F1             UNCONFIRMED  Verify the UART is
+Sportster WinModem                                     a 16550; if it is
+28.8 Fax RS                                            an 8250, clear the
+                                                      Use FIFO Buffers
+                                                      check box in the
+                                                      Advanced Port
+                                                      Settings dialog
+                                                      box in the modem's
+                                                      property sheet.
+                                                      (A driver update
+                                                      is available for
+                                                      this modem; refer
+                                                      the customer to
+                                                      the manufacturer
+                                                      if they have not
+                                                      yet contacted them
+                                                      about this issue.)
+
+US Robotics             S54=192 S56=0     UNCONFIRMED  None.
+Sportster 33.6          S37=11
+
+US Robotics             AT&amp;F1S27=32S33=32 UNCONFIRMED  Error control off.
+Sportster 33.6                                         (Need to have the
+                                                      USR Sportster 33.6
+                                                      driver installed;
+                                                      if so, add S32=16
+                                                      to Extra Settings.)
+
+US Robotics 33.6        Unknown           UNCONFIRMED  Error Control off.
+                                                      Need to install the
+                                                      USR 1433VHD driver.
+                                                      (Refer customer to
+                                                      the manufacturer
+                                                      for installation
+                                                      of this driver.)
+                                                      All Sportster 33.6
+                                                      modems with a TI
+                                                      chipset revision
+                                                      date of January
+                                                      11th until May of
+                                                      1996 are defective.
+
+Viking PCMCIA 33.6      AT&amp;F              CONFIRMED    None.
+
+WiseCom VoiceView 28.8  AT&amp;F              UNCONFIRMED  (ATI3=copyright
+                                                      1996 SSC V2.2
+                                                      BO2-01/0)
+                                                      Maximum speed to
+                                                      38400. In Dial-Up
+                                                      Networking use IP
+                                                      Header Compression
+                                                      off.
+
+Xircom 28.8 PCMCIA      Unknown           UNCONFIRMED  Error Control off.
+
+XPM 33.6I               AT&amp;F1 S32=16      UNCONFIRMED  None.
+
+Zoltrix 28.8            &amp;K3               UNCONFIRMED  Install as a
+                                                      Standard 28.8
+                                                      internal.
+
+Zoltrix 14.4            &amp;K3+H3S95=1       CONFIRMED    Error Control off.
+
+Zoom ComStar 28.8       None              CONFIRMED    Install as a Hayes
+                                                      Optima 28.8 V.34 +
+                                                      Data/Fax/Voice
+
+To add an extra setting or to change the Use Error Control or Compress Data
+options, use the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Modems.
+
+3. Click the modem you are using, and then click Properties.
+
+4. On the Connection tab, click Advanced.
+
+5. In the Extra Settings box, type the appropriate extra settings.
+
+6. Enable or disable the Use Error Control and Compress Data options as
+  appropriate.
+
+7. Click OK or Close until you return to Control Panel.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

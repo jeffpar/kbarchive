@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90322: Persistent Connections and Windows for Workgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90322: Persistent Connections and Windows for Workgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90322/","publisher":null,"image":null,"headline":"Q90322: Persistent Connections and Windows for Workgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90322-persistent-connections-and-windows-for-workgroups">Q90322: Persistent Connections and Windows for Workgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90322
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 1.0,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+- Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If resource connections are persistent in Windows for Workgroups or Workgroup
+Connections, connecting to and disconnecting from resource connections in
+Windows for Workgroups and Workgroup Connections changes the list of persistent
+connections.
+
+MORE INFORMATION
+================
+
+Disconnecting from a network drive is permanent, and removes it from the list of
+persistent connections. There is no one-time-only disconnect feature, although
+you can replace a persistent connection for one session with a temporary
+connection. This can only be done in Windows for Workgroups through the Connect
+Network and Connect Network Printer dialog boxes.
+
+To use a resource for one session, without disrupting the persistent connection
+list, clear the selection of the Reconnect At Startup check box when connecting
+to that resource.
+
+The CONNECT.DAT file contains a list of persistent connections. When starting the
+network, either from Windows Connections or Windows for Workgroups, this list is
+used to keep track of the connections. These connections are established when
+you either log on to the network in Windows Connections, or when Windows for
+Workgroups is started.
+
+For example, if a persistent printer resource is set in Windows for Workgroups
+and is then disconnected from Windows Connections by using the NET command, the
+resource will not automatically reconnect when starting Windows for Workgroups.
+
+Novell Users
+------------
+
+You must log on to Novell before starting Windows for Workgroups for persistent
+connections to be established when starting Windows for Workgroups.
+
+Additional query words: 1.00 3.10 LAN Manager LANman 3.11 wc 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : :1.0,3.1,3.11
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

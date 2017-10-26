@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263700: SMS: APM Can’t Start Dep Program If 1st Prog Returns Non-Zero | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263700: SMS: APM Can’t Start Dep Program If 1st Prog Returns Non-Zero" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263700/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263700/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263700/","publisher":null,"image":null,"headline":"Q263700: SMS: APM Can’t Start Dep Program If 1st Prog Returns Non-Zero","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263700-sms-apm-cant-start-dep-program-if-1st-prog-returns-non-zero">Q263700: SMS: APM Can’t Start Dep Program If 1st Prog Returns Non-Zero</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263700
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200sp2fix
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An advertised program that uses the option "Run another program first" may fail
+to run if the program that it is dependent on returns a non-zero exit code.
+
+CAUSE
+=====
+
+The program specified in "Run another program first" executes correctly and
+requires that the user restart the computer. To indicate this requirement, it
+returns a non-zero exit code. The System Management Sever (SMS) Client
+interprets this non-zero exit code as an error condition, reports a status
+message indicating such, and removes the execution of the dependent program from
+the schedule because of this perceived failure.
+
+WORKAROUND
+==========
+
+To avoid this behavior, do not use programs that return a successful non-zero
+exit code as the program specified in a dependent program's "Run another program
+first" option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+Special cases have been added for the following return codes:
+
+- 3010 - ERROR_SUCCESS_REBOOT_REQUIRED
+
+- 3011 - ERROR_SUCCESS_RESTART_REQUIRED
+
+- 1641 - ERROR_SUCCESS_REBOOT_INITIATED
+
+- 1604 - ERROR_INSTALL_SUSPEND
+
+If a program returns one of these error codes, Smsapm32.exe generates a
+preliminary status message of 10022. Upon restart, Smsapm32.exe generates an
+additional standard 10008 success message to indicate completion of the
+program's requirements for a restart. At that time, a dependent program is also
+able to run. Other non-zero return codes, in the absence of a status Management
+Information Format (MIF), are still reported as a failure.
+
+This change was implemented to accommodate programs such as the installation for
+the Windows Installer service, which may require a restart to replace in-use
+files.
+
+Note: The 10022 status messages does not appear when choosing the option to Show
+Messages--&gt;Program Success in the Advertisement Status summary. Use Show
+Messages--&gt;All or a custom status message to view 10022 status messages.
+
+Advertise Program Manager (APM) views the MSI return code of a dependant program
+as a failure.
+
+For example:
+
+Microsoft Office 2000 SR1 ships and installs MSI 1.1 that requires a restart.
+After the installation, the following informational message appears:
+
+  The requested operation is successful. Changes will not be effective until
+  the system is rebooted.
+
+Therefore, you may want to be selective in the type of programs you distribute
+with System Management Server 2.0. Any program you create with the following
+criteria may produce the same symptoms:
+
+- Create ProgramA that restarts the computer, which, prior to the restart,
+  returns an exit code of 3010 (or any other MSI return code, as they are all
+  handled the same)
+
+- Create ProgramB which depends on ProgramA
+
+- Advertise ProgramB to the clients
+
+- Run ProgramB on the clients
+
+Additional query words: prodsms smsapm32.exe
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS120 kbSMS200 kbSMS200SP1
+Version           : :1.2,2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162609: HOWTO: Create a Printer Device Context (DC) in MFC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162609: HOWTO: Create a Printer Device Context (DC) in MFC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162609/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162609/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162609/","publisher":null,"image":null,"headline":"Q162609: HOWTO: Create a Printer Device Context (DC) in MFC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162609-howto-create-a-printer-device-context-dc-in-mfc">Q162609: HOWTO: Create a Printer Device Context (DC) in MFC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162609
+Product(s): Microsoft C Compiler
+Version(s): 1.52,2.0,2.1,2.2,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbprint kbMFC kbPrinting kbVC kbVC200 kbVC400 kbVC420 kbGrpDSMFCATL
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a printer device context (DC) in Windows SDK programming, an
+application must retrieve ::CreateDC()'s parameters (such as driver name, device
+name and output port) from either a Win.ini file (16-bit) or a Windows registry
+(32-bit). In Microsoft Foundation Classes, this can be done via a call to
+functions CWinApp::GetPrinterDeviceDefaults() and
+CPrintDialog::CreatePrinterDC().
+
+This article shows you a way to create a printer device context using the default
+selected printer without displaying the Print dialog box. To create a printer
+device context for a non-default printer, please refer to Chapter 15 of
+"Programming Windows 3.1" by Charles Petzold.
+
+MORE INFORMATION
+================
+
+The CWinApp::GetPrinterDeviceDefaults() expects a PRINTDLG structure to be
+passed in such a way that the data retrieved can be stored in the DEVMODE and
+DEVNAMES handles of the structure. Those data are then used to create a printer
+DC in the CPrintDialog::CreatePrinterDC() function.
+
+Since CreatePrinterDC() and m_pd (a PRITNDLG variable) are member function and
+member variable of the CPrintDialog class, a CPrintDialog variable is defined
+and used in the following sample code.
+
+Sample Code
+-----------
+
+  // Instantiate a CPrintDialog object.
+  CPrintDialog dlg(FALSE);
+
+  // Retrieve the current printer defaults from the Windows .ini file
+  // as necessary, or uses the last printer configuration set by the
+  // user in Print Setup.
+  CWinApp* app = AfxGetApp();
+  if (!app-&gt;GetPrinterDeviceDefaults(&amp;dlg.m_pd))
+      {
+      // Fails to create a printer device context for printing because
+      // no printer is being installed. Bring up dialog box to alert the
+      // users that they need to install a printer.  This step is optional.
+      if (app-&gt;DoPrintDialog(&amp;dlg) != IDOK)
+         return ;
+      }
+
+  // Creates a printer DC from the DEVMODE and DEVNAMES structures.
+  if (dlg.CreatePrinterDC() == NULL)
+      return ;
+
+  // A printer device context (DC) has been created.
+  // Attach it to a CDC object. The DC is deleted when the CDC
+  // object goes out of scope.
+  CDC PrintDC;
+  PrintDC.Attach(dlg.m_pd.hDC);
+
+  // ADD YOUR CODE HERE.
+
+REFERENCES
+==========
+
+"Programming Windows 3.1," Charles Petzold, Chapter 15, Microsoft Press, 1992
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10 4.20 1.50 1.51 1.00 2.50 2.51 2.52 3.00 3.10 3.20
+
+======================================================================
+Keywords          : kbcode kbprint kbMFC kbPrinting kbVC kbVC200 kbVC400 kbVC420 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.52,2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

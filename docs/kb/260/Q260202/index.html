@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260202/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260202/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260202/","publisher":null,"image":null,"headline":"Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260202-xadm-blackberry-pager-software-changes-auto-naming-generation">Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260202
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 28-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Research In Motion Limited (RIM) BlackBerry Enterprise Server,
+a two-way text paging software, on an Exchange Server-based computer, the Auto
+Naming generation rules (on the Tools menu, click Options, and then click Auto
+Naming) in the Exchange Administration program are changed and any new
+recipients are created with the display name and alias name in the wrong
+format.
+
+For example, the Auto Naming feature for display name generation may have
+originally been set to "Last, First (Smith, John)" which shows as "%Last,
+%First" in the "Custom" section. After you install the BlackBerry Enterprise
+Server, the same generation type, "Last, First (Smith, John), is selected in the
+Administration program, but the "Custom" section defaults to "%First %Last" for
+display name, and "%First%1Last" for the alias name. All new recipients use this
+"custom" format to generate display and alias names.
+
+CAUSE
+=====
+
+The Auto Naming generation information is not server-specific. This information
+is set in a user's Microsoft Windows NT profile, the Ntuser.dat file. The
+Ntuser.dat file is started as a registry hive called HKEY_CURRENT_USER every
+time that a user logs on to a Windows NT computer.
+
+After you install the BlackBerry Enterprise Server and you start the Exchange
+Administration program against a server in the site where BlackBerry Enterprise
+Server is installed, the following registry values are modified in the user's
+profile or registry:
+
+  HKEY_CURRENT_USER\Software\Microsoft\Exchange
+
+  Values:
+  ANGAutotextFormat
+  DNGAutotextFormat
+
+The "ANG" acronym stands for Alias Name Generation and the "DNG" acronym stands
+for Display Name Generation. This change only occurs the first time that you
+start the Exchange Administration program against the server after you install
+BlackBerry Enterprise Server. Also, if you start the Administration program
+against another server in the site other than the server where you installed
+BlackBerry Enterprise Server, you must replicate the BlackBerry Enterprise
+Server extensions to the Site\Configuration\Add-Ins container on that server
+before the problem occurs. The names of these extensions are BBMailboxExt and
+BBServerExt.
+
+RESOLUTION
+==========
+
+To resolve this problem, change the Auto Naming generation feature back to the
+previous setting. This must be performed on each computer on which you have
+started the Exchange Administrator program against one of the servers in the
+site.
+
+WORKAROUND
+==========
+
+The owner of this product, RIM, is aware of this issue. For more information
+about this problem, please contact RIM at the following RIM Web site:
+
+  http://www.blackberry.net/home/main.shtml
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q259577 XADM: Exchange Administrator Settings Are Windows NT Profile-Specific
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

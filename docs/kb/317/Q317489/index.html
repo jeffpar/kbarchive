@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317489/","publisher":null,"image":null,"headline":"Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317489-fix-exclude-property-not-refreshed-when-file-excludedincluded">Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317489
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbProjManager kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 kbVFP700sp1fix
+Last Modified: 10-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Exclude property of the File object is not refreshed when a file is either
+included or excluded with the user interface of Visual FoxPro 7.0. If you
+programmatically include or exclude the file, this property reflects the current
+status of the file.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows 7.0.
+
+This problem was first corrected in Visual FoxPro for Windows 7.0 Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior:
+
+1. Paste the following code in a program (.prg) file named Test.prg, and then
+  run the program from the Command window:
+
+  CLOSE ALL
+  IF !FILE("Prog1.PRG")
+  	STRTOFILE("X=1","Prog1.prg")
+  	STRTOFILE("X=1","Prog2.prg")
+  ENDIF
+  MODI PROJ Test NOWAIT
+  _VFP.ACTIVEPROJECT.FILES.ADD(ADDBS(JUSTPATH(SYS(16))) + "Prog1.prg")
+  _VFP.ACTIVEPROJECT.FILES.ADD(ADDBS(JUSTPATH(SYS(16))) + "Prog2.prg")
+  MOVE WINDOW "Project Manager - Test" to 4,40
+  _SCREEN.ADDOBJECT("cmd1","MyButton1")
+  _SCREEN.ADDOBJECT("cmd2","MyButton2")
+  _SCREEN.cmd2.Left = 125
+  _SCREEN.cmd1.VISIBLE = .T.
+  _SCREEN.cmd2.VISIBLE = .T.
+
+  @ 2,0 SAY "When done, hit CTRL+T to clean-up"
+  ON KEY LABEL CTRL+T CleanUp()
+
+  *~~~~~~~~
+  DEFINE CLASS MyButton1 AS COMMANDBUTTON
+  	CAPTION = "Is Prog2 Excluded?"
+  	WIDTH = 120
+  	HEIGHT = 25
+
+  	PROCEDURE CLICK
+  		_VFP.ACTIVEPROJECT.REFRESH()
+  		MESSAGEBOX(TRANS(_VFP.ACTIVEPROJECT.FILES(2).EXCLUDE))
+  	ENDPROC
+  ENDDEFINE
+
+  DEFINE CLASS MyButton2 AS COMMANDBUTTON
+  	CAPTION = "Exclude/Include Prog2 Programmatically"
+  	WIDTH = 225
+  	HEIGHT = 25
+
+  	PROCEDURE CLICK
+  		_VFP.ACTIVEPROJECT.Files(2).Exclude = !_VFP.ACTIVEPROJECT.Files(2).Exclude
+  		MESSAGEBOX("Prog2.Exclude = " + TRANS(_VFP.ACTIVEPROJECT.FILES(2).EXCLUDE))
+  	ENDPROC
+  ENDDEFINE
+
+  FUNCTION CleanUp
+  	ACTIVATE SCREEN
+  	CLEAR
+  	ON KEY LABEL CTRL+T
+  	_SCREEN.REMOVEOBJECT("cmd1")
+  	_SCREEN.REMOVEOBJECT("cmd2")
+  	RELEASE ALL
+  	CLEAR ALL
+  	CLOSE ALL
+
+2. Use the Project menu to exclude Prog2.prg from the project.
+
+3. On the desktop, click Is Prog2 Excluded?. A value of False appears in a
+  message box even though the file is excluded.
+
+4. Use the Project menu to include Prog2.prg.
+
+5. On the desktop, click Is Prog2 Excluded?. A value of False appears in a
+  message box.
+
+6. Click Exclude/Include Prog2 Programmatically twice to switch the property of
+  the file object between included and excluded. Note that the correct value
+  appears in the message box.
+
+7. Press CTRL+T to end the program.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProjManager kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 kbVFP700sp1fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

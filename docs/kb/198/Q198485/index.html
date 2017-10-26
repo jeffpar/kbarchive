@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198485/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198485/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198485/","publisher":null,"image":null,"headline":"Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198485-howto-sql-server-7-distributed-query-using-atl-oledb-consumer">Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198485
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0,7.0
+Operating System(s): 
+Keyword(s): kbATL kbDatabase kbDTL kbOLEDB kbSQLServ kbVC600 kbDSupport
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft SQL Server version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample below is an OLE DB Consumer Application that demonstrates how to
+perform a distributed query with Visual C++ version 6.0 ATL Consumer templates
+to retrieve data from SQL Server (using SQLOLEDB Provider) and Microsoft Access
+Database (using Jet OLEDB Provider) by joining the two NorthWind databases.
+
+The application extracts the PRODUCT ID and PRODUCT NAME from a Products table
+stored in NorthWind Jet database, joins it with the Products table stored in
+NorthWind Microsoft SQL Server 7.0 Database, and applies SQL Server ORDER BY to
+sort the final results.
+
+Briefly, create a .cpp file using the code given below in Visual C++ 6.0 and
+compile/build from the Build menu (it will prompt for creating a new
+workspace--this should build and run without adding new code). Change the
+initialization properties to connect to your SQL 7.0 server. In the OpenRoswset
+call, change the path to point to NorthWind ("nwind.mdb") sample database on
+your machine. The sample database is installed by OLE DB SDK, Access, and Visual
+Basic.
+
+MORE INFORMATION
+================
+
+Microsoft SQL Server version 7.0 provides the ability to perform queries against
+OLE DB providers. This is done by using the OpenQuery or OpenRowset Transact-SQL
+functions or by using a query with four-part names including a linked-server
+name. For example,
+
+  sp_addlinkedserver 'mylinkedserver', 'product_name', 'myoledbprovider',
+  'data_source','location', 'provider_string', 'catalog'
+
+  SELECT * FROM OPENQUERY(mylinkedserver, 'select * from table1')
+
+The SELECT statement performs the SQL statement against the OLE DB Provider.
+
+The following sample code is an OLE DB Consumer Application that uses OLE DB
+Consumer Template classes. It uses OpenRowset Transact-SQL function and does not
+require a linked server definition.
+
+Sample Code
+-----------
+
+     #include &lt;iostream&gt;
+     using namespace std ;
+
+     #include &lt;atlbase.h&gt;
+     #include &lt;atlimpl.cpp&gt;
+
+     CComModule _Module;
+     #define DBINITCONSTANTS
+
+     #include &lt;atlcom.h&gt;
+     #include &lt;atldbcli.h&gt;
+     #include &lt;msdaguid.h&gt;
+
+     //Accessor Class
+     class CProductsAccessor
+     {
+     public:
+        LONG m_ProductID;
+        TCHAR m_ProductName[41];
+
+     //output binding map
+     BEGIN_COLUMN_MAP(CProductsAccessor)
+        COLUMN_ENTRY(1, m_ProductID)
+        COLUMN_ENTRY(2, m_ProductName)
+     END_COLUMN_MAP()
+
+     };
+
+     void main()
+     {
+        HRESULT hr ;
+
+        //Initialize COM
+        hr = CoInitialize(NULL);
+
+        CDataSource connection ;
+        CSession session ;
+        CCommand&lt;CAccessor&lt;CProductsAccessor&gt; &gt; product ;
+
+        // Open connection and session
+        // ===================================================
+        // Setting OLE DB Initialization Properties
+        // ===================================================
+        CDBPropSet propset(DBPROPSET_DBINIT);
+        propset.AddProperty(DBPROP_INIT_DATASOURCE, L"myServer");
+        propset.AddProperty(DBPROP_INIT_CATALOG, L"NorthWind");
+        propset.AddProperty(DBPROP_AUTH_USERID, L"sa");
+        hr = connection.Open("SQLOLEDB", &amp;propset);
+
+        // Open a session.
+        hr = session.Open(connection) ;
+
+        // Perform a distributed join using OpenRowset T-SQL function.
+        //Note the drive C:\ referenced in the query resides on the server.
+
+        hr = product.Open(session, "select P1.ProductID, P1.ProductName
+        from NorthWind..Products P1,
+        OpenRowset('Microsoft.Jet.OLEDB.4.0','c:\\Program Files\\Microsoft
+           Visual Studio\\VB98\\nwind.mdb';
+        'admin';'', 'select ProductID, ProductName from products
+        where UnitsInStock between 1 and 5')P2
+        where P1.ProductID = P2.ProductID order by P1.ProductName");
+
+        //Get data from the rowset.
+        while(product.MoveNext() == S_OK)
+        {
+           cout &lt;&lt; product.m_ProductID &lt;&lt; " ";
+           cout &lt;&lt; product.m_ProductName &lt;&lt; endl ;
+        }
+     }
+
+REFERENCES
+==========
+
+For more details on setting up and using Distributed Queries, please see
+"sp_addlinkedserver", "OpenQuery", "OpenRowset", and related topics in SQL
+Server 7.0 Books Online.
+
+To learn more about the Accessor used in the code above, run the ATL Consumer
+Wizard on SQL Server 7 NorthWind database, Products Table.
+
+For additional information that describes the requirements to add OLE DB template
+support to Visual C++ projects, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q190959 PRB: OLE DB Consumer Template Wizard Requires ATL Project
+
+For additional information, see the Support WebCast at the following location:
+
+  http://support.microsoft.com/servicedesks/webcasts/wc102699/WC102699.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbDatabase kbDTL kbOLEDB kbSQLServ kbVC600 kbDSupport 
+Technology        : kbVCsearch kbSQLServSearch kbAudDeveloper kbSQLServ700 kbVC600 kbVC32bitSearch
+Version           : winnt:6.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

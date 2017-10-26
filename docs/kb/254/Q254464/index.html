@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254464: PRB: Can’t Add T-SQL Debugger to the Visual Basic Add-in Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254464: PRB: Can’t Add T-SQL Debugger to the Visual Basic Add-in Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254464/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254464/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254464/","publisher":null,"image":null,"headline":"Q254464: PRB: Can’t Add T-SQL Debugger to the Visual Basic Add-in Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254464-prb-cant-add-t-sql-debugger-to-the-visual-basic-add-in-manager">Q254464: PRB: Can’t Add T-SQL Debugger to the Visual Basic Add-in Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254464
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbTSQL kbVBp600 kbGrpDSVBDB kbDSupport
+Last Modified: 09-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After Installing Visual Basic 6.0 Enterprise Edition and the Enterprise Tools,
+the T-SQL Debugger may not be listed as an available add-in in the Visual Basic
+Add-in Manager.
+
+CAUSE
+=====
+
+The current user is not logged in as the same user who installed Visual Basic.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The typical (default) installation of the Visual Studio/Visual Basic 6.0
+Enterprise edition installs the TSQL Debugger client-side components. These
+components, however, are not installed if the Enterprise Tools option is cleared
+when you perform a custom installation. The T-SQL Debugger client-side
+components and .dll files are installed in the following folder:
+
+  drive:\Microsoft Visual studio installation directory\VB98\TSQL
+
+If the T-SQL Debugger entry is not listed in the Add-in Manager after you install
+Visual Basic and the Enterprise Tools, verify that the add-in components have
+been installed correctly:
+
+1. Make sure that the following files are present in the TSQL folder:
+
+   - Vbsdiadd.dll
+
+   - Vbsdidb.dll
+
+   - Vbsdicli.exe
+
+  If you do not see the TSQL folder or the mentioned files in your Visual Basic
+  installation directory, then rerun the Visual Basic (or Microsoft Visual
+  Studio) installation program. Be sure to select custom from the installation
+  dialog box, and then choose Select All for the Enterprise Tools selection.
+
+  After completing the installation, restart the system and check to see if the
+  Visual Basic Add-in Manager lists the T-SQL Debugger.
+
+2. If the TSQL folder and the listed files are there, then try reregistering the
+  Vbsdiadd.dll and Vbsdidb.dll files, and then check to see if the T-SQL
+  Debugger add-in is listed in the Visual Basic Add-in Manager.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q190212 Add-Ins Only Visible to the User Who Installs VB
+
+Additional query words:
+
+======================================================================
+Keywords          : kbTSQL kbVBp600 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

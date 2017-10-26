@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94594: Windows Sound System and Berkeley Systems’ Screen Savers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94594: Windows Sound System and Berkeley Systems’ Screen Savers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94594/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94594/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94594/","publisher":null,"image":null,"headline":"Q94594: Windows Sound System and Berkeley Systems’ Screen Savers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94594-windows-sound-system-and-berkeley-systems-screen-savers">Q94594: Windows Sound System and Berkeley Systems’ Screen Savers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94594
+Product(s): Miscellaneous Windows Products
+Version(s): 1.00 1.00a, 2.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using Star Trek: The Screen Saver and After Dark version 2.0 screen savers may
+cause a change in the volume level of waveform (.WAV) files played by the
+Windows Sound System.
+
+MORE INFORMATION
+================
+
+The change in volume is caused by the way that After Dark versin 2.0 and similar
+screen savers control sound output. On the Windows Sound System, adjusting the
+volume for a particular screen saver module not only changes the volume of
+output for that module, it also changes the Windows Sound System's waveform file
+output level for as long as that module is active.
+
+This only occurs if After Dark version 2.0 Sound Setup has been configured to use
+Multimedia Windows Sound as its output device.
+
+
+WORKAROUND
+==========
+
+Set up After Dark version 2.0 to use the computer's internal speaker as its
+output device. For information about how to do this, see the After Dark
+documentation.
+
+-or-
+
+- Set all After Dark screen savers to the same volume level and use Volume
+  Control's Master volume slider bar to adjust the volume level.
+
+-or-
+
+- Upgrade to After Dark for Windows, version 3.0.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. While After Dark is running, run the Windows Sound System Volume Control
+  application. Set the Wave output level (visible only in Expanded View) to the
+  lowest possible level.
+
+2. Activate After Dark. Select the Starry Night module.
+
+3. Lower Starry Night's volume level to the lowest possible level.
+
+4. Arrange After Dark and Volume Control so that they are both visible at the
+  same time.
+
+5. In After Dark, increase Starry Night's volume level one level at a time. As
+  the level increases, the Wave slider bar in Volume Control should also rise,
+  eventually reaching the maximum volume level when Starry Night reaches its
+  maximum volume level.
+
+The Star Trek and After Dark screen savers are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For more information about the Windows Sound System, query on the following word
+in the Microsoft Knowledge Base:
+
+  windows and sound and system
+
+Additional query words: 1.00 1.00a 2.00 1.0 3.10 3.1 afterdark
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+Version           : 1.00 1.00a, 2.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296096: Source Code for Global.asa Is Displayed in Browser | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296096: Source Code for Global.asa Is Displayed in Browser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296096/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296096/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296096/","publisher":null,"image":null,"headline":"Q296096: Source Code for Global.asa Is Displayed in Browser","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296096-source-code-for-globalasa-is-displayed-in-browser">Q296096: Source Code for Global.asa Is Displayed in Browser</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296096
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 4.0, 5.0 
+- Microsoft Active Server Pages 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you explicitly request the Global.asa file (for example, when you request
+http://payroll/global.asa), the browser displays the source code for the
+Global.asa file instead of the expected HTTP 500-15 status code.
+
+CAUSE
+=====
+
+This behavior occurs after you remove the script mapping for the .asa file type
+and is by design. When application types are not mapped to a specific Internet
+Server Application Programming Interface (ISAPI) application (such as Asp.dll or
+Ssinc.dll), IIS returns the requested content to the browser with a
+Content-Type: application/octet-stream header. This header indicates that the
+browser should render the data as text, so the source code of the Global.asa
+file is displayed in the browser.
+
+RESOLUTION
+==========
+
+To prevent the display of source code for Global.asa files, add the application
+mapping (sometimes referred to as script mapping) for the .asa extension back to
+the Web application or applications that return source code. To do this, follow
+these steps:
+
+1. Click Start, click Run, type "inetmgr" (without the quotation marks), and
+  then click OK to open the Internet Service Manager (ISM) Microsoft Management
+  Console (MMC).
+
+2. Expand the nodes under Internet Information Server to display the Web
+  application that is returning source code for the Global.asa file.
+
+3. Right-click the Web application, and then click Properties.
+
+4. On the Home Directory tab, click Configuration.
+
+5. On the App Mappings tab, click Add.
+
+6. Type the following information in the Add/Edit Application Extension Mapping
+  dialog box that appears:
+
+  Executable: C:\WINNT\System32\inetsrv\asp.dll
+  Extension: .asa
+  Limit to: GET,HEAD,POST,TRACE
+  Script engine: checked
+
+NOTE: The path for the executable file may be different if %windir% is not in the
+default location of C:\Winnt.
+
+MORE INFORMATION
+================
+
+This problem is not unique to the .asa file type, and can occur for any
+script-mapped ISAPI application (including .asp file types). However, the
+effects may be less noticeable with other file types such as .asp because many
+browsers do not render content that is in the server-side script tags. The
+Global.asa file requires server-side script to be included in &lt;SCRIPT&gt;
+tags, which render in the browser. The following .asp code sample is likely to
+display only the word "World" in the browser, even though "&lt;%
+Response.Write("Hello")%&gt;" is visible when you view the source of the .asp
+document in the browser:
+
+  &lt;% Response.Write("Hello") %&gt; World
+
+NOTE: If Application or Session variables are not initialized in a Web
+application, the .asa extension may not be properly mapped to Asp.dll. Without
+the application mapping, the Global.asa file does not execute when requests are
+made to the specified Web application.
+
+
+Additional query words: scriptmap script-map appmap app-map
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbZNotKeyword6 kbiis500 kbiis400 _IKkbZNotKeyword4 kbZNotKeyword5
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

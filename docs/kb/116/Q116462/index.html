@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116462: BUG: Screen Corruption Can Occur with _setvideomode() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116462: BUG: Screen Corruption Can Occur with _setvideomode()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116462/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116462/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116462/","publisher":null,"image":null,"headline":"Q116462: BUG: Screen Corruption Can Occur with _setvideomode()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116462-bug-screen-corruption-can-occur-with-_setvideomode">Q116462: BUG: Screen Corruption Can Occur with _setvideomode()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116462
+Product(s): Microsoft Programming Utilities
+Version(s): 4.0,4.01,4.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS, versions 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the CodeView video mode is set to be the same as the current MS-DOS video
+mode, calls to _setvideomode(_DEFAULTMODE) can cause screen corruption.
+
+RESOLUTION
+==========
+
+To work around the problem, start CodeView in a different mode than the one
+MS-DOS is using.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug with CodeView for MS-DOS. We are
+researching this problem and will post new information in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The sample code below demonstrates the problem. Build a debug version and follow
+these steps:
+
+1. Install the ANSI.SYS driver. If ANSI.SYS is not already installed, you have
+  to reboot your computer to install it. To install ANSI.SYS, add the following
+  line to your CONFIG.SYS file:
+
+  " DEVICE=C:\DOS\ANSI.SYS " (without the quotation marks)
+
+2. Enter "mode co80, 50" (without the quotation marks) at the MS-DOS prompt.
+
+3. Enter "CV /50 VIDEO" (without the quotation marks) to debug the VIDEO.EXE
+  file in CodeView.
+
+4. Type "t3" (without the quotation marks) in the CodeView command window.
+
+There should now be a green border around the whole screen that does not go away
+when you exit CodeView. You may also experience a certain amount of text loss in
+the CodeView windows.
+
+NOTE: Reissuing the mode command with different mode values at the MS-DOS prompt
+restores the screen.
+
+In step 2 above, using "CV /43 video" (without the quotation marks) or "CV /25
+video" (without the quotation marks) prevents this problem from occurring.
+
+Sample Code
+-----------
+
+  /* Compile options needed: Zi /Od
+  */ 
+
+  /* VIDEO.C */ 
+
+     #include &lt;graph.h&gt;
+
+     void main(void)
+     {
+      _setvideomode(_DEFAULTMODE);
+     }
+
+Additional query words: 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView400DOS kbCodeView401DOS kbCodeView410DOS
+Version           : :4.0,4.01,4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122179: Systems Management Server Event Log Codes 200 Through 249 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122179: Systems Management Server Event Log Codes 200 Through 249" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122179/","publisher":null,"image":null,"headline":"Q122179: Systems Management Server Event Log Codes 200 Through 249","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122179-systems-management-server-event-log-codes-200-through-249">Q122179: Systems Management Server Event Log Codes 200 Through 249</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122179
+Product(s): Microsoft Systems Management Server
+Version(s): 1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbsetup kbInventory kbSCMan smssetup smsinv smssiteconfigman
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+This article details Systems Management Server event log codes 200 through
+249.
+
+Event Log Codes 200 - 249
+-------------------------
+
+Code   Description
+----   -----------
+
+200    The registry is not set up properly for Inventory Agent to run.
+
+201    The registry is not set up properly for an instruction to execute.
+
+202    Insufficient memory to execute an instruction. Close one or more
+      other applications and restart.
+
+203    The registry is not set up properly for a system job instruction to
+      execute.
+
+204    Insufficient memory to execute a system job instruction. Close one
+      or more other applications and restart.
+
+205    The registry in [X] is not set up properly for the instruction to
+      execute.
+
+206    Failed to store the master package from X to Y.
+
+207    Alerter: An alert has been generated.
+
+208    Insufficient memory to configure or watchdog this site. Close one or
+      more other applications and restart the Site Configuration Manager.
+      Possible NT error: (X)
+
+209    The SMS Identification section in the NT registry (X) is not set up
+      correctly for the Site Configuration Manager. For a new site, this
+      may be due to the Site Configuration Manager not receiving a site
+      control file within the first (Y) minutes. For an existing site,
+      this may be due to an invalid or missing SiteCode (3 alphanumeric
+      characters) or Install Directory (full DOS pathname not at root of
+      drive). Another attempt will be made every (Z) seconds. Possible NT
+      error: (N)
+
+210    Cannot find the directory (X) for site control files. The SMS
+      installation directory may have been deleted. Another attempt will
+      be made every (Y) seconds. Possible NT error: (Z)
+
+211    Error reading site control file (X). This file may be corrupted or
+      the data may not be valid. Check to make sure that this site has
+      been completely de-installed if this is a new or re-installation.
+      The invalid site control file has been renamed to (Y). Include a
+      copy of this file with your bug report. Possible NT error: (Z)
+
+212    An error occurred while writing the User Group delta-MIF file for
+      this site. This may be due to one or more inactive domains. Ignore
+      this error if it occurred during an unsuccessful setup attempt.
+      Another attempt to write this file will be made after the next Site
+      Properties change or after (X) minutes. Possible NT error: (Y)
+
+213    An error occurred while writing the site control file (X). Verify
+      that the disk drive on this server has sufficient free disk space.
+      Another attempt to write this file will be made after the next Site
+      Properties change or after (Y) minutes. Possible NT error: (Z)
+
+214    An error occurred while creating the system job to send a site
+      control file to the parent site (X). The site control file has been
+      renamed to (Y). Verify that the disk drive on this server has
+      sufficient free diskspace and that the installation of this site
+      succeeded. Another attempt will be made after the next Site
+      Properties change or after (Y) minutes. Possible NT error: (Z)
+
+215    Cannot find Windows NT server (X) on the network. The server may be
+      down (inactive) or the server's domain may be down or not part of
+      this SMS site. Component (Y) will be started on the SMS site server.
+      Verify the server's status independent of SMS. Verify the spelling
+      of the servername in the Site Properties -&gt; Services dialog in the
+      Systems Management Server UI. This server must be an NT server in an
+      active NT domain that is part of this SMS site. This server must
+      either be automatically detected or included in the server list for
+      this domain.
+
+216    An error occurred while copying the logon script file(s) (A) to
+      server (B) in domain (C). Windows NT directory replication must be
+      enabled for server (D) with server (E) as the export server for
+      replicating SMS logon script files. Verify server (F) has a SCRIPTS
+      directory under the REPL$ share and the SMS service account has
+      access privileges to this share and directory. Users' logon script
+      paths will not be modified until the logon script files have been
+      successfully copied. Possible NT error: (G)
+
+217    An attempt to verify the domain type failed for domain (X). The
+      domain controller may be down (inactive). If the domain controller
+      for this domain is an NT or LAN Manager server, the NetLogon service
+      may not be running. If the domain controller for this domain is a
+      LAN Manager or LANServer server, this may be due to the OS/2 session
+      limit being exceeded, and if so, the Site Configuration Manager will
+      recover from this after one or more sessions to this server are
+      dropped. This may also be due to the SMS service account having
+      expired for this domain. The domain status is changed to inactive.
+      Verify the domain's status independent of SMS. Verify the domain
+      type and the spelling of the domain name in the Site Properties -&gt;
+      Domains dialog in the Systems Management Server UI. Possible NT
+      error: (Y)
+
+218    Cannot find domain (X) on the network to enumerate servers. This may
+      be due to the Computer Browser service not running on the SMS site
+      server. If this is a NetWare domain, this may be due to the Gateway
+      Service for NetWare not running on the SMS site server. If this is
+      an NT or LAN Manager domain, this may be due to the Computer Browser
+      service not running on any NT server in this domain. If this is a
+      LAN Manager domain, you may need to add this domain to the list of
+      other domains for the Computer Browser. This is done using the
+      Control Panel Network applet -&gt; Computer Browser -&gt; Configure on the
+      primary domain controller for the SMS site server's domain. The
+      domain status is changed to inactive. Verify the domain's status
+      independent of SMS. Possible NT error: (Y)
+
+219    Cannot find NT server (A) on the network for outbox (B). Server (C)
+      or the server's domain may be down (inactive) or not part of this
+      SMS site. Outbox (D) will be unavailable until the server is up and
+      detected during the next watchdogging cycle. Check earlier event
+      messages fromthe Site Configuration Manager for this domain and
+      server. Verify the server's status independent of SMS. Check the
+      spelling of the servername in the Systems Management Server UI.
+      This server must be in anactive NT domain that is part of this SMS
+      site. Possible NT error: (E)
+
+220    Cannot create a shared directory on server (A) for outbox (B). This
+      may be due to the SMS service account having insufficient privileges
+      on this server or the server (C) or server's domain (D) being down
+      (inactive). Verify that the SMS service account has Administrator or
+      Supervisor equivalent access privileges on this server and that the
+      account has not expired. Check earlier event messages from the Site
+      Configuration Manager for this domain and server. Also verify that
+      the drive letter for this outbox exists and this drive has
+      sufficient free disk space. Possible NT error: (E)
+
+221    Cannot find server (A) on the network. The server or the server's
+      domain (B) may be down (inactive) or the SMS service account may not
+      have access privileges to this server. If this is a NetWare domain,
+      this may be due to the Gateway Service for NetWare not running on
+      the SMS site server. If this is an NT domain, this server must be a
+      Windows NT server. If this is a LAN Manager or LAN Server domain,
+      this server must be a primary domain controller or backup domain
+      controller. The server status is changed to inactive. Verify the
+      server's status independent of SMS. Check the spelling of the server
+      name in the Site Properties -&gt; Domains dialog in the Systems
+      Management Server UI. The SMS service account must have
+      Administrator or Supervisor equivalent access privileges on this
+      server, an identical password to the SMS site server service
+      account, and must not have expired. Possible NT error: (C)
+
+222    Cannot enumerate shares for  server (A) in domain (B). This may be
+      due to the Computer Browser service not running on the SMS site
+      server. If this is a NetWare domain, this may be due to the Gateway
+      Service for NetWare not running on the SMS site server. If this is
+      an NT or LAN Manager domain, this may be due to the Computer Browser
+      service not running on any NT server in this domain. Possible NT
+      error: (C)
+
+223    Cannot create shared directories on server (A) in domain (B) for
+      inboxes(C). This may be due to the SMS service account having
+      insufficient access privileges to connect to this server, to create
+      a directory or share, or to set directory and share access
+      permissions. Verify that the SMS service account has Administrator
+      or Supervisor equivalent access privileges on this server and has
+      not expired. Check if this server has sufficient free disk space.
+      Possible NT error: (D)
+
+224    Cannot find a drive or volume with sufficient free disk space on
+      server (A) in domain (B). This may be due to the SMS service
+      account having insufficient access privileges to determine the
+      available drives or volumes for this server. If this is a Netware
+      server, this may be due to the server having no available user
+      connections at this time. The volume or drive must have a minimum of
+      (C) MB free. This server will be marked inactive. Another attempt to
+      install this server will be made after the next Site Properties
+      change or during the next watchdog cycle.
+
+225    Cannot install or start component (A) on server (B) in domain (C).
+      This may be due to the SMS service account having insufficient
+      access privileges to install or start this component on this server.
+      This may also be due to one or more missing, incorrectly copied, or
+      out-of-date executable files on this server that are required by
+      this component. Verify that the SMS service account has not expired.
+      This account must be in the Domain Admins global user group for
+      domain (D) and have the Logon As Service user right in this domain
+      or on this server. Also check for the existence of the system map
+      file (E) on the SMS site server. Another attempt to install or start
+      this component will be made after the next Site Properties change or
+      during the next watchdog cycle. Possible NT error: (F)
+
+226    The parent site code (A) specified in the site control file does not
+      match the previous parent site code (B) that is stored in the
+      Identification section of the SMS registry. The parent site will now
+      change to (C).
+
+227    Cannot find previously detected server (A) on the network. This
+      server or the server's domain (B) may be down (inactive). The server
+      status is changed to inactive. Verify the server's status
+      independent of SMS. Another attempt to detect this server will be
+      made after the next Site Properties change or during the next
+      watchdog cycle. If this server stays inactive for more than C days,
+      it will be removed from the Domains section for domain (D) in the
+      SMS registry even though it has not been de-installed. Possible NT
+      error: (E)
+
+228    Cannot find a logon server in domain (A) to use as the export server
+      for logon script files. There must be at least one active domain
+      controller in this domain for SMS to use as the export server for NT
+      directory replication. Users'logon script paths will not be modified
+      until the logon script files have been successfully copied to an
+      export server's REPL$\SCRIPTS directory. Possible NT error: (B)
+
+229    The following user accounts in domain (A) were altered to automate
+      SMS logon scripts: (B). This involved changing the Logon Script Path
+      for each user account from blank to (C).
+
+230    The following user accounts in domain (A) could not be altered to
+      automate SMS logon scripts: (B). This may be due to the SMS service
+      account having insufficient access privileges for modifying user
+      accounts in this domain. Possible NT error: (C)
+
+231    The system logon scripts for the following servers in domain (A)
+      were altered to automatic SMS logon scripts: (B).
+
+232    The system logon scripts for the following servers in domain (A)
+      could not be altered to automatic SMS logon scripts: (B). This error
+      may be caused by the system logon script files not existing or the
+      SMS service account having insufficient access privileges for
+      modifying files on these servers. Possible NT error: (C)
+
+233    Cannot create shared directory (A) on server (B) to store executable
+      files for SMS component (C). This may be due to the SMS service
+      account having insufficient access privileges to connect to this
+      server, to create a directory or share, or to set directory and
+      share access permissions. Verify that the SMS service account has
+      Administrator equivalent access privileges on this server and has
+      not expired. Check if this server has sufficient free disk space.
+      Possible NT error: (D)
+
+234    Cannot copy the following executable files for SMS component (A) on
+      server (B): (C). This may be due to the SMS service account having
+      insufficient access privileges to connect to this server or to
+      create or write files. This may also be due to the files being
+      locked because the component isrunning. Verify that the SMS service
+      account has Administrator equivalent access privileges on this
+      server and has not expired. Check if this server has sufficient free
+      disk space. The Upgrade mode of the Systems Management Server Setup
+      UI can be usedto refresh the files on the SMS site server and
+      initiate a site shutdown of all components followed by a re-copying
+      of all component executable files to all servers. Possible NT error:
+      (D)
+
+235    No active servers were found for domain (A). This may be due to all
+      servers in this domain being down (inactive) or a Computer Browser
+      error enumerating the servers in this domain. The domain status is
+      changed to inactive. Verify in a manner independent of SMS that at
+      least one server is active. Another attempt to detect servers in
+      this domain will be made after the next Site Properties change or
+      during the next watchdog cycle. Possible NT error: (B)
+
+236    Cannot install to server (A) in domain (B). The share (C) on this
+      server was previously created for SMS site (D). This may be due to
+      an attempt to install two sites in domain (E) with at least one not
+      having Use Specified Servers for this domain as a Domain Property in
+      the Systems Management Server UI. This may also be due to specifying
+      this server (F) as part of a domain in two sites or this server
+      being previously part of a different SMS site that was not
+      successfully de-installed. The status of this server is changed to
+      inactive for this site. Possible NT error: (G)
+
+237    Cannot open or successfully read the system map file (A). Check for
+      the existence of the system map file (B) on the SMS Site Server.
+      Verify that it is identical to the released system map file, or if
+      modified, that all changes are syntactically correct. Possible NT
+      error: (C)
+
+238    The service account and password has been successfully changed for
+      all SMS services. The new service account is (A).
+
+239    The SQLServer account, password, and server name has been
+      successfully changed for SMS. The new SQL account for server (A) is
+      (B).
+
+240    Cannot change the service account and password for SMS component (A)
+      on server (B) in domain (C). This may be due to the new account not
+      existing in this domain. Another attempt to change the service
+      account will be made after the next Site Properties change or during
+      the next watchdog cycle. Possible NT error: (D)
+
+241    Cannot save the next available SMS Unique ID (A) in file (B)
+      for this site. This may be due to this file being locked by another
+      application. The purpose of saving this ID is to prevent duplicate
+      SMS Unique IDs from being generated if this site is re-installed
+      with the same site code. This entry can be added by hand to the (C)
+      file on the SMS site server by adding this line to the file in the
+      [D] section:  =  Possible NT error:  (E)
+
+242    Cannot start site configuration until a site control file is
+      received. If this is a new site, this may be due to the user pausing
+      the Systems Management Server Setup UI or some other delay in the
+      delivery of the site control file. If this is an existing site,
+      this may be due to the SMS registry being corrupted. Verify that the
+      section in the SMS registry is correct. The master site control file
+      (A) in directory (B) can be used to force an update ofthe registry
+      by copying this file to a new file with a (C) file entension.
+      Possible NT error: (D)
+
+243    Could not get a SQL connection.
+
+244    The SQL connection has been reestablished.
+
+245    A MIF could not be processed and has been moved to file X.
+
+246    Failed to access registry section.
+
+247    Cannot find file X to continue the current operation.
+
+248    Failed to write to file X, verify there is enough disk space on the
+      machine and there is no process that locked the file.
+
+249    Cannot open outbox X. Verify the server is up and the outbox
+      directory exists.
+
+Additional query words: config sms prodsms 1.0 1.1 1.2
+
+======================================================================
+Keywords          : kbsetup kbInventory kbSCMan smssetup smsinv smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

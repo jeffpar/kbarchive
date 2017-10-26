@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254718: IIS &quot;Bytes Sent&quot; (Sc-bytes) Logging Property is 0 for ASP Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254718: IIS &quot;Bytes Sent&quot; (Sc-bytes) Logging Property is 0 for ASP Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254718/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254718/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254718/","publisher":null,"image":null,"headline":"Q254718: IIS &quot;Bytes Sent&quot; (Sc-bytes) Logging Property is 0 for ASP Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254718-iis-bytes-sent-sc-bytes-logging-property-is-0-for-asp-files">Q254718: IIS "Bytes Sent" (Sc-bytes) Logging Property is 0 for ASP Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254718
+Product(s): Internet Information Server
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 05-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+For ASP files, the Sc-bytes extended logging property is always zero.
+
+CAUSE
+=====
+
+ASP buffering is enabled.
+
+WORKAROUND
+==========
+
+If both the logic of the ASP file and the display of the page allow buffering to
+be disabled, then turn off ASP buffering.
+
+For additional information about turning off buffering in IIS 5.0, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q245198 Response.Buffer is ON by Default in IIS 5.0
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior in IIS 5
+------------------------------------
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+  Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click a Web site that contains at least one .asp file, and then click
+  Properties on the Context menu.
+
+3. On the Web Site tab, verify that Enable Logging has a check mark, and then
+  click Properties.
+
+4. Click the Extended Properties tab, and then click check the "Bytes Sent (
+  sc-bytes )" check box.
+
+5. Click OK to return to the Properties dialog box, and then click the Home
+  Directory tab.
+
+6. In the Application Settings section, click Configuration.
+
+7. Click the App Options tab, and verify that the Enable buffering check box has
+  a check mark.
+
+8. Click OK twice to return to the IIS snap-in.
+
+9. Browse to a .asp file on the Web site.
+
+10. Open the log file for the Web site (typically located in the
+  %WinDir%\System32\LogFiles directory), and note that the sc-bytes property,
+  shows "0" bytes.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: iis 5 4 empty not recorded Server - Client bytes active pages akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176988/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176988/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176988/","publisher":null,"image":null,"headline":"Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176988-programs-folder-empty-in-windows-nt-40-with-system-policies">Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176988
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it
+if a problem occurs. For information on how to do this, view the "Restoring
+the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+Key" online Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After you implement System Policies for Windows NT 4.0, you find that your
+Programs Folder is empty or shows the wrong contents when viewed from the Start
+Menu. This may also be the case with your Startup Folder, Desktop, Start Menu,
+or Network Neighborhood folders.
+
+CAUSE
+=====
+
+The registry entry or entries that point(s) to the proper location is either
+incorrect or missing.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+Delete Information in the Registry" and "Edit Registry Data" online Help topics
+in Regedt32.exe. Note that you should back up the registry before you edit it.
+
+Go to the following location in the Registry and verify the data for each of the
+following values. The default values are listed below:
+
+\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion
+\Explorer\User Shell Folders
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+Name: Desktop
+Type: REG_EXPAND_SZ
+Data: %USERPROFILE%\Desktop
+
+Name: NetHood
+Type: REG_EXPAND_SZ
+Data: %USERPROFILE%\NetHood
+
+Name: Programs
+Type: REG_EXPAND_SZ
+Data: %USERPROFILE%\Start Menu\Programs
+
+Name: Start Menu
+Type: REG_EXPAND_SZ
+Data: %USERPROFILE%\Start Menu
+
+Name: Startup
+Type: REG_EXPAND_SZ
+Data: %USERPROFILE%\Start Menu\Programs\Startup
+
+MORE INFORMATION
+================
+
+If this problem persists, remove your system policy and repeat the above
+procedure.
+
+
+Additional query words: editor remove uncheck un-check clear poledit spe
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

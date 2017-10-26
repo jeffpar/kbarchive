@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244523: XCLN: Unable to Open Your Default E-Mail Folders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244523: XCLN: Unable to Open Your Default E-Mail Folders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244523/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244523/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244523/","publisher":null,"image":null,"headline":"Q244523: XCLN: Unable to Open Your Default E-Mail Folders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244523-xcln-unable-to-open-your-default-e-mail-folders">Q244523: XCLN: Unable to Open Your Default E-Mail Folders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244523
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork exc55
+Last Modified: 04-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on to another user's mailbox while you are logged on to
+the Microsoft Windows NT domain with an account that does not have permissions
+for the other user's mailbox, you may receive the following error messages (even
+though you enter valid credentials for the other user's mailbox when you are
+prompted):
+
+   - Unable to open your default e-mail folders. You do not have permission to log
+  on.
+
+   - Would you like to open your default File System folder instead?
+
+For example, User A is logged on to the Windows NT domain as User A, but wants to
+access User B's mailbox. User A does not have permissions for User B's mailbox.
+When User A is prompted for credentials, User A enters User B's Windows NT
+account, domain, and password, but cannot access User B's mailbox.
+
+CAUSE
+=====
+
+This problem can occur if named pipes (ncacn_np) is used as the Microsoft
+Exchange Client remote procedure call (RPC) protocol.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+- Remove the static mapping for either the Exchange Server directory service or
+  information store service, as applicable.
+
+- Statically map the ports for either the Exchange Server directory service or
+  information store service, as applicable, to a port that is not in use.
+  Microsoft recommends that you map to a port outside the ephemeral range (the
+  ephemeral port range is from port 1024 to port 5000, including port 1024 and
+  port 5000).
+
+- Run the net use command to the IPC$ share on the Exchange Server computer and
+  use the credentials of the user whose mailbox you want to access.
+
+MORE INFORMATION
+================
+
+RPC that uses named pipes (ncacn_np) establishes its security identity by using
+the credentials of the user who is logged on to the Windows NT domain. Because
+named pipe connections are established by the redirector to the server, the
+security identity is established before RPC communication. As a result, RPC uses
+the security context that is established by the redirector, and the dialog boxes
+generated by Microsoft Outlook that request security credentials do not override
+this security context. Because the user who is logged on does not have
+permissions for the target mailbox, the logon process to that mailbox does not
+work.
+
+You can specify the ncacn_np protocol sequence by modifying the RPC_Binding_Order
+registry value. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q163576 XGEN: Changing the RPC Binding Order
+
+Occasionally the named pipes protocol sequence is used because other protocol
+sequences did not work.
+
+Other protocol sequences in the RPC_Binding_Order value may not work if either
+the Exchange Server directory service or information store service is configured
+to use a static IP address that is in use at the time that the service starts.
+This prevents the service from binding to that port, which essentially disables
+that protocol for use with that service.
+
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q194952 XADM: Statically Mapped Port Limitations for Exchange Server
+
+  Q155831 XADM: Setting TCP/IP Ports for Exchange and Outlook Client
+  Connections Through a Firewall
+
+  Q148732 XADM: Setting TCP/IP Port Numbers for Internet Firewalls
+
+  Q176466 XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135908/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135908/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135908/","publisher":null,"image":null,"headline":"Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135908-fix-hot-keys-do-not-work-if-tabstop-is-set-to-false">Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135908
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Assigning access keys (hot keys) to a command button in Visual FoxPro is done by
+placing the "\&lt;" characters in front of the character that is in the name of
+the caption name property of the command button. When the form is run, you can
+press the ALT key and the access key character to activate the command button.
+This works as long as the TabStop property of the command button is set to the
+default of True. If the TabStop property is set to False, pressing ALT+access
+key doesn't activate the command button.
+
+WORKAROUND
+==========
+
+If TabStop property must be set to false, place the following command in the
+form's Init event procedure to make the access key work:
+
+     ON KEY LABEL ALT + U _SCREEN.ACTIVEFORM.COMMAND2.CLICK
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form in Visual FoxPro.
+
+2. Add a text box and two command buttons to the form.
+
+3. In the Caption property of the first command button, type "\&lt;Button1"
+  (without the quotation marks). In the command button's Click event procedure,
+  add this code:
+
+     WAIT WINDOW "Button1"
+
+4. In the Caption property of the second command button, type "B\&lt;utton"
+  (without the quotation marks), and change the TabStop property to False. In
+  the command button's Click event procedure, add this code:
+
+     WAIT WINDOW "Button2"
+
+5. Run the form. Press the TAB key several times, and note that the mouse
+  pointer is never positioned on the second command button. Press ALT+B and a
+  wait window box appears. Pressing ALT+U will not display a wait window as it
+  should. If either command button is clicked, the wait window for each is
+  displayed.
+
+6. Modify the form to change the TabStop property to True on the second command
+  button. Now you can press ALT+U to display the wait window, but it also
+  allows tabbing to the second command button.
+
+Additional query words: 3.00 3.00b
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

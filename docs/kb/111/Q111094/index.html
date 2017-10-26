@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111094/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111094/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111094/","publisher":null,"image":null,"headline":"Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111094-ras-errmsg-netbios-error-640-a-netbios-error-has-occurred">Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111094
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): kbdisplay kbnetwork
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you dial in from Windows for Workgroups 3.11 Remote Access Services (RAS)
+client to a RAS server, the following error message is displayed:
+
+  NETBIOS error 640: a netbios error has occurred (with failed code 0x5)
+
+NOTE: This problem may occur with some modems and not with others.
+
+CAUSE
+=====
+
+The "NETBIOS error 640" message can be caused by the following conditions:
+
+- The connection speed is too fast for the current line quality.
+
+- The correct modem has not been selected from the Configuration menu.
+
+- The cable being used does not support all the pinouts needed for RAS.
+
+- Your modem is not fully compatible with the Microsoft RAS compression.
+
+- You are loading PC Anywhere virtual device drivers (AW5VCD.386 and
+  VPCAW5.386) from the [386Enh] section of your SYSTEM.INI file. Comment out
+  these drivers and add DEVICE=*VCD to the same section of the SYSTEM.INI file.
+
+- You logged on to the domain you are trying to connect to before connecting
+  with RAS.
+
+- Microsoft LAN Manager OS/2 RAS server has NetBiosRetries set too high.
+
+- The Windows NT server is low on available memory.
+
+- There is an incompatibility with your third-party video driver.
+
+
+RESOLUTION
+==========
+
+
+If you receive the "NETBIOS error 640" message several seconds after connecting
+to the RAS server, use the following procedure to determine what is causing the
+error. After each step, try to establish a RAS connection.
+
+1. Choose Setup and ensure RAS is configured for the correct modem.
+
+2. Make sure you are using the correct cabling. For more information, run RAS
+  and check online Help.
+
+3. Make sure you are not logged on to the domain you are trying to connect to
+  before connecting with RAS.
+
+4. Make sure you are not using a 9-to-25-pin converter that was supplied with a
+  mouse. Many 9-to-25-pin converters supplied with mouse hardware do not carry
+  modem signals.
+
+5. Disable hardware flow control and lower the connection speed as follows:
+
+  a. Edit the RAS phone book and select Modem from the Advanced options.
+
+  b. Clear the Enable Hardware Flow Control check box.
+
+  c. Change the connection speed to the lowest setting.
+
+  If the connection is successful, try increasing the connection speed until the
+  maximum throughput of the line is found.
+
+6. If RAS software compression is enabled, disable it.
+
+7. Try using the standard Windows for Workgroups VGA video driver.
+
+8. If you are trying to connect to a Microsoft LAN Manager OS/2 RAS server, make
+  sure NetBiosRetries is not set too high. For example, some Microsoft
+  customers have reported this problem when NetBiosRetries is set to 6. To
+  correct this problem, lower the LAN Manager server NetBiosRetries value in
+  the [NetBEUI] section of the PROTOCOL.INI file.
+
+9. If you are trying to connect to a Microsoft Windows NT server, make as much
+  memory available as possible on the server.
+
+
+Additional query words: err msg errmsg vxd vxds 4 8
+
+======================================================================
+Keywords          : kbdisplay kbnetwork 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240017/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240017/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240017/","publisher":null,"image":null,"headline":"Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240017-fix-selecting-multiple-resourceview-controls-causes-vc-to-fail">Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240017
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): _IK920 kbEditor kbide kbVC500 kbVC500bug kbVC600 kbVC600bug kbDSupport kbGrpDSTools kbN
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Selecting multiple controls in the ResourceView and changing their language will
+cause Visual C++ to crash.
+
+RESOLUTION
+==========
+
+Select the controls individually and change the language option one at a time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project called Test using the MFC(EXE) AppWizard. In Step 1 of the
+  MFC(EXE) AppWizard, select Multiple Documents and then click Finish.
+
+2. Click the ResourceView tab.
+
+3. Expand the Test Resources folder and then expand the Menu folder.
+
+4. Select IDR_MAINFRAME and IDR_TESTTYPE, then right-click and select Properties
+  from the pop-up menu.
+
+5. In the Multiple Selection Properties window, change the language using the
+  Language combo box. For example, if it is currently set to English (U.S.),
+  change it to English (U.K.). Visual C++ may crash when you try to change the
+  language.
+
+6. Press ENTER or select the Condition edit window, and Visual C++ will crash.
+
+Because of this crash, Visual C++ isn't removed from memory so you will have to
+end the Msdev.exe process using Task Manager or you will get error messages when
+you try to open the Test workspace in another instance of Visual C++.
+
+REFERENCES
+==========
+
+For more information on Visual C++ resource editors see the following topic in
+the MSDN Online Libraries:
+
+  Visual C++ Documentation; Using Visual C++; Visual C++ User's Guide; Resource
+  Editors
+  (http://msdn.microsoft.com/library/devprods/vs6/visualc/vcug/_asug_Home_Page.3a_.Resource_Editors.htm)
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK920 kbEditor kbide kbVC500 kbVC500bug kbVC600 kbVC600bug kbDSupport kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

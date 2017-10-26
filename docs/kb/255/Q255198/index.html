@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255198/","publisher":null,"image":null,"headline":"Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255198-cannot-change-dcom-call-timeouts-in-windows-nt-40">Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255198
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Distributed Component Object Model (DCOM) calls may take a long time to time out
+if the network is down, or if the server is unavailable.
+
+CAUSE
+=====
+
+This behavior occurs because DCOM does not give access to the underlying remote
+procedure call (RPC) binding handle, which makes it difficult to configure the
+RPC timeout.
+
+RESOLUTION
+==========
+
+To work around this behavior, use the following method:
+
+When you develop code that uses DCOM on Microsoft Windows NT 4.0, Microsoft
+Windows 95, or Microsoft Windows 98, you can make use of multithreading to give
+up on a DCOM call before the default timeout. You can spawn another thread that
+makes the DCOM call, and have the original thread wait for the desired amount of
+time. The original thread can 'give up' on the spawned thread, and proceed as if
+the call had timed out. There are a few things to consider when implementing
+this solution:
+
+- If the original thread wants to really 'forget' about the thread that is
+  making the DCOM call, it must close the handle to the thread, so that when
+  the original thread ends, the thread object is deleted.
+
+- The original thread might give up and proceed as if the call did not succeed,
+  but then network conditions might improve so that the call does succeed. If
+  the call modifies the state of the server, this can be a problem. It might be
+  possible for the background thread to 'clean up' if it has been abandoned.
+  This type of solution is best for calls that do not modify the state of the
+  server.
+
+- Even though the original thread gives up on the thread that made the DCOM
+  call, the thread is still running until the DCOM call times out. This means
+  that the process cannot end normally because it will wait for the thread to
+  end. You can use TerminateThread in this situation, but it is not
+  recommended.
+
+MORE INFORMATION
+================
+
+The actual DCOM timeout depends on a number of factors, including which network
+protocol DCOM is using and whether the server or network went down before or
+during the call. DCOM makes use of RPC, and although RPC does allow some amount
+of control over call timeout, the programmer cannot normally take advantage of
+it because DCOM does not give access to the underlying RPC binding handle.
+
+DCOM on Microsoft Windows 2000 addresses this problem by providing features such
+as asynchronous calls and call cancelling. If you want to cancel DCOM calls in
+Windows NT 4.0, Windows 95 or Windows 98, you can try using 'apartment model'
+threading and implementing IMessageFilter; however, this does not work well for
+all cases and is not recommended.
+
+These timeouts apply to DCOM in various situations when it is using the User
+Datagram Protocol (UDP):
+
+- If the network or server is down before the start of a call, the call will
+  time out in 32 seconds.
+
+- If the network or server goes down during a call, the timeout depends on how
+  long the call lasted. The maximum timeout is between 64 and 96 seconds.
+
+- Timeouts are longer when DCOM is using Transmission Control Protocol/Internet
+  Protocol (TCP/IP).
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

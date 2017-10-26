@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216711/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216711/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216711/","publisher":null,"image":null,"headline":"Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216711-after-sdlc-outage-sna-server-takes-5-10-seconds-to-recover">Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216711
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Operating System(s): 
+Keyword(s): kbsna300sp4fix kbsna400sp3fix
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+IMPORTANT: This article contains information about modifying the registry.
+Before you modify the registry, make sure to back it up and make sure that you
+understand how to restore the registry if a problem occurs. For information
+about how to back up, restore, and edit the registry, click the following
+article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+After receiving an outage (connection failure) from the IBM SDLC link service,
+SNA Server takes from 5 to 10 seconds before posting a CLOSE(LINK), and
+subsequent new OPEN(LINK) to retry connection activation. During this time, the
+host may stop retrying the PU, and may set the PU to an inactive status,
+requiring manual host intervention to recover the SDLC connection.
+
+CAUSE
+=====
+
+SNA Server intentionally delays SDLC connection recovery to ensure that the SNA
+Server DACTPU reply has an opportunity to be sent by the link service to the
+host. However, in a certain customer environment, this 5 to 10 second delay
+exceeded the host's SDLC connection recovery time period.
+
+RESOLUTION
+==========
+
+SNA Server 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 (SP1-SP3) and SNA
+Server 4.0 (SP1-SP2). This problem was first corrected in SNA Server version 3.0
+Service Pack 4 and SNA Server version 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+After this hotfix is applied, the NoSDLCOutageTimer registry parameter must be
+added to eliminate the SDLC connection recovery period. Follow these steps to
+add this registry value:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaServr\Parameters\
+ 
+
+  NOTE: The above registry key is one path; it has been wrapped for readability.
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+     Value Name: NoSDLCOutageTimer
+     Data Type:  REG_SZ
+     Value:      &lt;any value&gt; (the presence of the registry key enables support)
+ 
+
+4. Quit Registry Editor.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp4fix kbsna400sp3fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

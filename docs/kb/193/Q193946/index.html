@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193946/","publisher":null,"image":null,"headline":"Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193946-howto-demo-of-ado-addnew-update-delete-find-and-filter">Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193946
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCtrl kbDatabase kbMDAC kbSQL kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbA
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.1 SP2, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ActiveX Data Objects (ADO) implements record manipulation commands analogous to
+those found in the native FoxPro language.
+
+The AddNew method adds a new, blank record to the end of the current Recordset.
+You use the Update method to write data to the Recordset. The Delete method
+removes the current record from the Recordset.
+
+The Find and Filter methods allow you to search the Recordset for specific field
+values. Both methods support compound expressions.
+
+MORE INFORMATION
+================
+
+The following example instantiates a Recordset from the AUTHORS table in the SQL
+Server PUBS sample database. The example demonstrates the AddNew and Update
+methods by adding a new record to the Recordset, uses the Find method to locate
+the new record and the Delete method to remove the new record. It then adds the
+same record again and uses the Filter property to locate and remove the record.
+
+NOTE: Substitute the SERVER, UID and PWD parameters appropriate to your SQL
+Server installation in the Recordset.Open method.
+
+In order to use this example, you must have Microsoft Data Access Components
+(MDAC) version 2.x or later installed, which is included in the data components
+of Visual Studio 6.0 or can be downloaded from the following Web address:
+
+  http://www.microsoft.com/data/
+
+Sample Code
+-----------
+
+  * Demonstrate the ADO AddNew, Update, Find,
+     * Filter and Delete functions.
+
+     #DEFINE adOpenDynamic 2
+     #DEFINE adLockOptimistic 3
+     oRecordSet = CREATEOBJECT("ADODB.Recordset")
+
+     * SQL Server driver defaults to server-side cursor,
+     * this would otherwise be necessary to use adOpenDynamic.
+     oRecordSet.OPEN("select * from authors", ;
+        "DRIVER={SQL Server};"+;
+        "SERVER=YourServerName;"+;
+        "DATABASE=pubs;"+;
+        "UID=YourUserName;"+;
+        "PWD=YourPassword",;
+        adOpenDynamic, adLockOptimistic)
+
+     =AddRec()
+     * Now the record is added - find it and delete it.
+     oRecordSet.FIND("au_id = '987-65-4321'")
+     IF NOT oRecordSet.EOF
+        oRecordSet.DELETE
+        =MESSAGEBOX("Record deleted")
+     ENDIF
+
+     * Remove comment to display the AU_IDs in the RecordSet.
+     * =ShowRS()
+
+     * Add it again, this time, use a compound Filter to find
+     * and delete it.
+     =AddRec()
+     oRecordSet.FILTER = ("au_id = '987-65-4321' and au_lname = 'Smith'")
+     IF NOT oRecordSet.EOF
+        oRecordSet.DELETE
+        =MESSAGEBOX("Record deleted")
+     ENDIF
+
+     * Remove comment to display the AU_IDs in the RecordSet
+     * =ShowRS()
+
+     * Remove the filter.
+     oRecordSet.FILTER = ""
+
+     * Function ShowRS:
+     * Display all the au_ids in the RecordSet.
+     FUNCTION ShowRs
+
+     CLEAR
+     oRecordSet.MoveFirst
+     ? oRecordSet.RecordCount
+     * print the au_id field values
+     DO WHILE ! oRecordSet.EOF
+        ?oRecordSet.FIELDS("au_id").VALUE
+     oRecordSet.MoveNext
+     ENDDO
+
+     * Function AddRec:
+     * Add a new record to the authors table.
+     FUNCTION AddRec
+
+     oRecordSet.AddNew
+     oRecordSet.FIELDS("au_id")= '987-65-4321'
+     oRecordSet.FIELDS("au_lname") = "Smith"
+     oRecordSet.FIELDS("au_fname") = "John"
+     oRecordSet.FIELDS("phone") = 9999999999
+     oRecordSet.FIELDS("address") = "123 4th Street"
+     oRecordSet.FIELDS("city") = "New York"
+     oRecordSet.FIELDS("state") = "NY"
+     oRecordSet.FIELDS("zip") = "99999"
+     oRecordSet.FIELDS("contract") = .T.
+     oRecordSet.UPDATE
+     =MESSAGEBOX("Record added")
+
+Additional query words: Update AddNew Find Filter Delete ADO Recordset kbVFp600 kbActiveX kbADO kbSQL kbCtrl kbMDAC
+
+======================================================================
+Keywords          : kbActiveX kbCtrl kbDatabase kbMDAC kbSQL kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC250 kbADO250 kbMDAC260 kbATM kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC210SP2 kbMDAC250 kbMDAC260 kbVFP600
+Version           : WINDOWS:2.1 SP2,2.5,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

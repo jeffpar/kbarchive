@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85663: Description of Windows for Pen Computing Pens | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85663: Description of Windows for Pen Computing Pens" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85663/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85663/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85663/","publisher":null,"image":null,"headline":"Q85663: Description of Windows for Pen Computing Pens","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85663-description-of-windows-for-pen-computing-pens">Q85663: Description of Windows for Pen Computing Pens</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85663
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 1.0,1.0a; WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, versions 1.0, 1.0a 
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two types of pens used in the Windows for Pen operating system:
+tethered, and untethered. They act similarly in every respect; the only
+difference is that one is attached to the machine and the other is tethered by a
+small cable.
+
+Pen input devices must have an installable device driver, similar to a mouse
+driver, in the SYSTEM.INI file to communicate with the system. There are several
+distinct differences between mouse and pen drivers:
+
+- Pen drivers must report x,y coordinate location information at much higher
+  resolutions than mice. Pens must record at least 120 events per second and
+  have a resolution of at least 200 spots per inch. Pen data is reported to the
+  Pen device driver (PENWIN.DLL) at .0001 inch resolution. Though this
+  resolution is not fully used at this time, it allows for subsequent
+  improvements in pen hardware.
+
+- Pen drivers may also report pressure, angle of rotation, or other pen state
+  information.
+
+- Pen drivers use a private interface to manage the high data rate, thus
+  avoiding a large amount of useless information.
+
+In addition to the differences above, some pen device drivers have a feature
+known as proximity sensing. This detects the x,y coordinate of the pen without
+actually touching the tablet or screen.
+
+Working in conjunction with the Pen device driver, Windows for Pen also uses a
+special display driver that communicates with the Pen device driver. This is
+required to allow a close interaction between the use of the pen and the display
+of electronic ink on the screen.
+
+Additional query words: 3.10 PENWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311 kbWinPen100 kbWinPen100a
+Version           : :1.0,1.0a; WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43914: C: Text Modes Don’t Return Pixel Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43914: C: Text Modes Don’t Return Pixel Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43914/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43914/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43914/","publisher":null,"image":null,"headline":"Q43914: C: Text Modes Don’t Return Pixel Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43914-c-text-modes-dont-return-pixel-information">Q43914: C: Text Modes Don’t Return Pixel Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43914
+Product(s): See article
+Version(s): 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 11-JAN-1990
+
+After a call to _getvideoconfig () from text modes, the structure
+videoconfig contains zero (0) for numxpixels, numypixels, and
+bitsperpixel. This is expected behavior because only the graphics
+modes return pixel information.
+
+Both text and graphics modes return information about the number of
+text columns and rows.
+
+The following example demonstrates the absence of pixel information
+in text modes. The name of each text mode begins with "_TEXT."
+
+#include stdio.h
+#include graph.h
+
+struct videoconfig vc;  /* variable vc of type videoconfig */
+
+/* define an array of video modes and mode names
+   since the numbers are not continuous */
+
+int modes[12] = {_TEXTBW40, _TEXTC40, _TEXTBW80, _TEXTC80,
+    _MRES4COLOR, _MRESNOCOLOR, _HRESBW, _TEXTMONO,
+    _MRES16COLOR, _HRES16COLOR, _ERESNOCOLOR, _ERESCOLOR};
+
+char *modenames[] = {"TEXTBW40", "TEXTC40", "TEXTBW80",
+                      "TEXTC80", "MRES4COLOR", "MRESNOCOLOR",
+                      "HRESBW", "TEXTMONO", "MRES16COLOR",
+                      "HRES16COLOR", "ERESNOCOLOR", "ERESCOLOR"};s0
+main()
+{
+
+   int i;
+   /* test all video modes */
+   for (i=0; i&lt;= 11; i++) {
+       _setvideomode (modes[i]);
+       _getvideoconfig (&amp;vc);
+       printf ("\n video mode: \t%s\n",modenames[i]);
+       printf (" x pixels: \t%d\n",vc.numxpixels);
+       printf (" y pixels: \t%d\n",vc.numypixels);
+       printf (" text columns: \t%d\n",vc.numtextcols);
+       printf (" text rows: \t%d\n",vc.numtextrows);
+       printf (" # of colors: \t%d\n",vc.numcolors);
+       printf (" bits/pixel: \t%d\n",vc.bitsperpixel);
+       printf (" video pages: \t%d\n",vc.numvideopages);
+       printf (" Hit return for next video mode");
+       getchar();
+       _clearscreen (_GCLEARSCREEN);
+   }
+   _setvideomode (_DEFAULTMODE);
+}
+
+The definition of structure videoconfig and the arguments to
+_setvideomode() are contained in the include file graph.h. The
+arguments for _setvideomode() are also present on Page 539 of the
+"Microsoft C for the MS-DOS Operating System: Run-Time Library
+Reference."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

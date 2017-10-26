@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258241/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258241/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258241/","publisher":null,"image":null,"headline":"Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258241-bug-sys1271-used-in-property-of-a-class-crashes-visual-foxpro">Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258241
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp500a kbvfp600 kbvfp600bug kbXBase kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 14-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the SYS(1271) function in the property of a class causes Visual FoxPro to
+crash with the following error message:
+
+  The instruction at "memory address" referenced memory at "memory address".
+  The memory could not be "written".
+
+CAUSE
+=====
+
+The SYS(1271) function requires that a parameter be passed that references the
+form of which a specified instantiated object is a member. If the parameter
+syntax, when used outside the SYS(1271) function as follows:
+
+  &lt;ClassProperty&gt; = ThisForm
+
+produces the following error:
+
+  Data type is invalid for this property.
+
+then use of the preceding syntax as a parameter within the SYS(1271) function can
+cause Visual FoxPro to crash.
+
+RESOLUTION
+==========
+
+The purpose of the SYS(1271) function is to return the name of the .scx file in
+which the specified instantiated object is stored. Due to the order of object
+instantiation, the SYS(1271) function is unable to return its expected value
+until the form itself is fully instantiated. Therefore, using the SYS(1271)
+function directly within a property, whether that of an object or of the form
+itself, does not produce its intended result.
+
+The proper use of the SYS(1271) function is to call it from within a method. If
+you want to store the name of the instantiated object's host .scx file to a
+property, that can be done from the Init Event of the class as demonstrated in
+the following example:
+
+1. Create a new class based on Custom, name it "MyCustom" (without the quotation
+  marks), and then store it in Class Library MyClass.
+
+2. Add a new property to the MyCustom class called "MyProperty" (without the
+  quotation marks).
+
+3. Add the following code to the Init Event of the MyCustom class:
+
+  This.MyProperty = SYS(1271,ThisForm)
+
+4. Close and save the MyCustom class.
+
+5. Create a new form.
+
+6. Add a command button to the form.
+
+7. From the View Classes interface of the Form Controls toolbar, add the MyClass
+  Visual Class Library.
+
+8. Add the MyCustom class to the form.
+
+9. Add the following code to the click event of the command button:
+
+  WAIT WINDOW ThisForm.MyCustom1.MyProperty
+
+10. Run the form, saving it as whatever you wish.
+
+11. Click the Command1 command button, and note that it produces a WAIT WINDOW
+  message that contains the name and full path of the form.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+In order to avoid losing unsaved work or data, take the the following steps in a
+new session of Microsoft Visual FoxPro:
+
+1. Create a new class based on any class.
+
+2. Add a new property to the class.
+
+3. In the newly added property, add the following code:
+
+  =SYS(1271,ThisForm)
+
+This produces the following error message:
+
+  The instruction at "memory address" referenced memory at "memory address".
+  The memory could not be "written".
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp500a kbvfp600 kbvfp600bug kbXBase kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

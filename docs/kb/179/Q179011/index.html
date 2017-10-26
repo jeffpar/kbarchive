@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179011/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179011/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179011/","publisher":null,"image":null,"headline":"Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179011-ode-running-microsoft-ode97-on-a-computer-with-ie-40">Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179011
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbdta
+Last Modified: 24-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SUMMARY
+=======
+
+You can install and run Microsoft Office 97 Developer Edition Tools (ODE) on a
+computer that has Microsoft Access 97 and Microsoft Internet Explorer 4.0.
+However, you should be aware of the following issues when you develop Microsoft
+Access 97 applications:
+
+- Setup Can't Register Comcat.dll
+
+- Internet Explorer 3.x Breaks When You Install Your Application
+
+- You Can't Install Internet Explorer After Install of ODE Application
+
+
+MORE INFORMATION
+================
+
+Setup Can't Register Comcat.dll
+-------------------------------
+
+When you install your application on a computer that is not running Microsoft
+Internet Explorer 4.0, you receive the following error message:
+
+  Comcat.dll was unable to register itself in the system registry.
+
+When you click OK, you receive another message:
+
+  &lt;App Name&gt; Setup was not completed successfully.
+
+When you click OK again, the setup of your application quits.
+
+If you plan to distribute your application so that it can be installed on
+computers that are not running Microsoft Internet Explorer 4.0, run the ODE
+Setup Wizard on a computer that does not have Internet Explorer 4.0 installed.
+
+NOTE: If you build your disk images on a computer that does not have Internet
+Explorer 4.0 installed, the setup of your application runs successfully on a
+computer that has Internet Explorer 4.0 installed.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q174217 ODE: Comcat.dll Can't be Registered during Run-time install
+
+Microsoft Internet Explorer 3.x Breaks When You Install Your Application
+------------------------------------------------------------------------
+
+When you build your application on a computer running Microsoft Internet Explorer
+4.0 and then install it on a computer running Internet Explorer 3.x, Internet
+Explorer 3.x breaks on the target computer. Two of the files installed with your
+application are not compatible with Internet Explorer 3.x and must be replaced.
+Alternatively, you can build your disk images on a computer that does not have
+Internet Explorer 4.0 installed as described in the section "Setup Can't
+Register Comcat.dll."
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q174508 ODE: Installing Run-Time Application Breaks IE 3.x
+
+You Can't Install Internet Explorer After Install of ODE Application
+--------------------------------------------------------------------
+
+After you install an ODE application that was built on a computer running
+Microsoft Internet Explorer 4.0, you are unable to install any version of
+Internet Explorer on the target computer. The updated files Urlmon.dll and
+Wininet.dll that were installed by your ODE application prevent the installation
+of Internet Explorer.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q174867 Errors Installing Internet Explorer
+
+
+Additional query words: comcat dll was unable to register itself in the system registry Preview Platform 2 fail browser setup can t register comcat dll
+
+======================================================================
+Keywords          : kberrmsg kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Version           : :
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

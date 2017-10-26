@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182145/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182145/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182145/","publisher":null,"image":null,"headline":"Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182145-sms-error-in-prodspecini-in-winnt-40-kor-and-cht-versions">Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182145
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2 SP3,4.0
+Operating System(s): 
+Keyword(s): kbInventory smsinv
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 SP3 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+The correct version of the Prodspec.ini file will be included in the next
+service pack update to Windows NT.
+
+SYMPTOMS
+========
+
+A computer running inventory on the Korean (KOR) or Traditional Chinese (CHT)
+versions of Windows NT and Systems Management Server cannot differentiate
+between Windows NT Workstation and Windows NT Server. Specifically, the
+inventory rule in the NT40srv.pdf and NT40wks.pdf files cannot tell the
+difference between a computer running Windows NT Workstation 4.0 and Windows NT
+Server 4.0.
+
+CAUSE
+=====
+
+Windows NT 4.0 includes a file named Prodspec.ini. This file is used for Systems
+Management Server inventory to identify Windows NT 4.0 and differentiate between
+Windows NT Server and Windows NT Workstation. However, Korean and Traditional
+Chinese versions of Windows NT 4.0 include the same Prodspec.ini file
+(specifically, the Windows NT Workstation 4.0 version of Prodspec.ini is used
+for both). Therefore, the inventory rule in the NT40srv.pdf and NT40wks.pdf
+files cannot tell the difference between a computer running Windows NT
+Workstation 4.0 and Windows NT Server 4.0.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. Locate the Prodspec.ini file in the Smssetup\Common\&lt;Langdir&gt;
+  directory, where &lt;Langdir&gt; is Korean or TChinese, depending on whether
+  you are using the Korean or Traditional Chinese version of Systems Management
+  Server 1.2 Service Pack 3.
+
+2. Create a job to distribute this file to your computers running Windows NT
+  Server 4.0 (using other hardware inventory data for the query). Make sure the
+  file is placed in the %Winroot%\System32 directory.
+
+At this point, the software inventory rule in the NT40srv.pdf file that comes
+with Systems Management Server 1.2 Service Pack 3 will be able to correctly
+detect Korean or Traditional Chinese Windows NT Server 4.0 computers.
+
+Additional query words: prodsms TChinese sp sp3 HW
+
+======================================================================
+Keywords          : kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120SP3
+Version           : :1.2 SP3,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

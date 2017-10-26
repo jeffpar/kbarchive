@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262231/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262231/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262231/","publisher":null,"image":null,"headline":"Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262231-sms-site-server-installation-on-windows-2000-terminal-server">Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262231
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 20-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Prior to Systems Management Server (SMS) 2.0 Service Pack 2, you could not
+install an SMS site server on a server with Microsoft Windows 2000 Terminal
+Server installed.
+
+With Service Pack 2 or later, you are now able to install an SMS primary site, or
+secondary site on a server with Windows 2000 Terminal Server installed. This
+capability does not include support for Microsoft Windows NT Server 4.0,
+Terminal Server Edition.
+
+MORE INFORMATION
+================
+
+If you configure Terminal Services for Application Server mode, it is necessary
+to place the server in Install mode prior to running SMS Setup. To accomplish
+this, simply start the SMS Setup program from the Add/Remove Programs tool in
+Control Panel, or use the "change user" command from the command prompt. Because
+of this, you cannot install a secondary site in Application Server mode, on a
+server with Windows 2000 Terminal Server installed, by initiating the
+installation from the primary site. In this situation, you must install the
+secondary site directly from an SMS installation location.
+
+If you configured Terminal Services for Remote Administration mode, it is not
+necessary to take any additional steps to configure the server prior to
+installing the site server.
+
+Prior to installing a new site server, it might be necessary to prepare the SMS
+installation files by updating them with the SMS service pack files. See the
+Readme.1st file that is supplied with the SMS service pack for more details.
+
+For more information about the supported features on a system that is running
+Terminal Services, please see the following Microsoft Web site:
+
+  http://www.microsoft.com/smsmgmt/deployment/wincompat.asp
+
+Additional query words: prodsms terminal server install
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

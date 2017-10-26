@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89836/","publisher":null,"image":null,"headline":"Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89836-system-hangs-with-aspi4dossys-version-30-or-earlier">Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89836
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Adaptec's ASPI4DOS.SYS driver versions 3.0 or earlier, you may
+experience problems executing File Manager within Microsoft Windows for
+Workgroups or Microsoft Windows 3.1. After you start File Manager, the cursor
+may remain as an hourglass and the system may subsequently stop responding
+(hang).
+
+Your system may also stop (hang) when you attempt to save files.
+
+CAUSE
+=====
+
+Adaptec's 1542B SCSI controller card requires ASPI4DOS.SYS driver version 3.0a
+or later to operate correctly with version 3.1 of Microsoft Windows or Windows
+for Workgroups.
+
+ASPI4DOS.SYS, version 3.0, works correctly with Microsoft Windows version 3.0.
+
+RESOLUTION
+==========
+
+You need to obtain an updated driver from Adaptec. Contact Adaptec to obtain the
+latest driver.
+
+MORE INFORMATION
+================
+
+If you attempt to share a CD-ROM drive on a Windows for Workgroups machine, and
+you experience frequent system hangs, VSERVER errors or general protection (GP)
+faults, check your ASPI4DOS.SYS driver. It may be too new for your system BIOS.
+
+ASPI4DOS.SYS drivers dated 6/91 or earlier do not work with MS-DOS versions
+greater than 3.0.
+
+
+For more information on ASPI4DOS.SYS, contact Adaptec technical support.
+
+The Adaptec product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: gpf 3.10 3.11 lockup hang 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135857/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135857/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135857/","publisher":null,"image":null,"headline":"Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135857-err-msg-invalid-parameter-specified-after-configuring-emm386">Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135857
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure memory for a Windows remoteboot workstation using EMM386.EXE
+as stated in page 136 of the Windows NT Server Installation Guide for both
+Windows NT 3.5 and 3.51, the following error message appears:
+
+  Invalid parameter specified.
+
+RESOLUTION
+==========
+
+To correct this problem, manually determine and reconfigure the lowest
+acceptable memory range for the remoteboot workstation.
+
+For example, if the MS-DOS MEM.EXE reports that you have 512,000 bytes of
+available conventional memory, the hexadecimal value is 7D00. However, when you
+exclude the range from 7D00 to 9FFF, the above error message appears. After
+further testing, you determine that the lowest acceptable value is 516,096 bytes
+of available conventional memory. The hexadecimal equivalent value is 7E00. The
+memory range that you must use is different for each network interface card.
+
+MORE INFORMATION
+================
+
+Page 136 of the Windows NT Server Installation Guide for Windows NT Server 3.5
+and 3.51 states the following:
+
+1. Find out how much conventional memory the workstation has (in decimal terms)
+  by typing mem at the MS-DOS prompt.
+
+2. Convert this number to hexadecimal format and drop the rightmost digit. To
+  convert, you can use the dectohex command in the
+  \systemroot\RPL\RPLFILES\BINFILES\BINR directory.
+
+3. Edit the device=EMM386.EXE line in the CONFIG.SYS file:
+
+  a. Remove the REM designation at the beginning of the line. Check that the
+     path specified for the file is the root (C:\) directory, not the C:\DOS
+     directory.
+
+  b. Use the remaining four digits of the hexadecimal value for the first x=
+     value. (The second x= value is 9FFF and should not be changed.)
+
+     For example, if conventional memory is 598016, the hexadecimal value is
+     92000. In this case, use x=9200-9FFF.
+
+Additional query words: prodnt win3x remote boot rpl
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

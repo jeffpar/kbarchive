@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142703/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142703/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142703/","publisher":null,"image":null,"headline":"Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142703-setting-ms-dos-client-30-to-automatically-log-on-to-domain">Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142703
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.0,3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In certain situations it may be necessary for a computer running MS-DOS
+Networking Client 3.0 that is connecting to a Windows NT Server Domain to be
+able to provide all user identification and password without the user being
+present to enter this information at the system. This can be accomplished by
+using a command line utility, several switches and a text file passed to the
+utility.
+
+MORE INFORMATION
+================
+
+The command line utility in the MS-DOS Networking Client 3.0 is the NET LOGON
+command. In certain situations where power to an MS-DOS client is terminated
+ungracefully, it may be desirable to configure the MS-DOS client to
+automatically reconnect to the Windows NT domain with no user interaction or
+where a user may be unavailable to interact with the system.
+
+WARNING: The following set of procedures allows the MS-DOS client to basically
+bypass normal Windows NT Domain USERID/PASSWORD security. User IDs and passwords
+for this client are maintained in plain-text format and are accessible to anyone
+who has direct access to the MS-DOS client. Therefore, it may be necessary,
+depending upon your situation, to restrict this particular user's access to the
+domain and its resources by implementing strict share level controls, group
+controls, and/or limit this user's logon to the Medium Access Control (MAC)
+address defined on the MS- DOS client's network interface board.
+
+Configuring an MS-DOS Networking Client to Log On to Domain Automatically
+-------------------------------------------------------------------------
+
+1. On a Windows NT Domain Controller Server in User Manager create a user
+  account to be used by the MS-DOS client. Provide password, group membership,
+  home directory, logon times, logon script, logon location and other account
+  information as deemed necessary.
+
+2. Setup your MS-DOS 3.0 Networking Client system to automatically logon to your
+  domain. This is done, if you used defaults values, by running SETUP.EXE from
+  the C:\NET subdirectory on your client's hard drive. This setup program can
+  be set to automatically run the network client at startup. It does this by
+  adding NET commands to the AUTOEXEC.BAT file or by allowing you to use the
+  NET commands in another batch file that can be called at startup (or when
+  executed by a user). We will be editing this batch file in the next step.
+
+3. At the MS-DOS client, run your text editor and remark out (REM) the NET START
+  command.
+
+  For example, this NETSTART.BAT is the batch file used on a client with the
+  TCP/IP protocol:
+
+     C:\NET\net initialize
+     C:\NET\netbind.com
+     C:\NET\umb.com
+     C:\NET\tcptsr.exe
+     C:\NET\tinyrfc.exe
+     C:\NET\nmtsr.exe
+     C:\NET\emsbfr.exe
+     rem C:\NET\net start
+
+  This keeps the network redirector from starting and allows us to start it with
+  the options that are entered in the next line you see here:
+
+  C:\NET\net logon {userid} {localpassword} /domain:{ntdomainname} /yes
+        /savepw:no &lt; C:\NET\password.txt
+
+  NOTE: Make sure that you do NOT enter a hard return at the end of this line.
+  Let the line wrap as you type it and then finish it with a hard return. The
+  finished batch file looks like this:
+
+     C:\NET\net initialize
+     C:\NET\netbind.com
+     C:\NET\umb.com
+     C:\NET\tcptsr.exe
+     C:\NET\tinyrfc.exe
+     C:\NET\nmtsr.exe
+     C:\NET\emsbfr.exe
+     rem C:\NET\net start
+  C:\NET\net logon {userid} {localpassword} /domain:{ntdomainname} /yes
+     /savepw:no &lt; C:\NET\password.txt
+
+4. Save your batch file and create a new text file with the user account's
+  password on the first line (the password is case sensitive) followed by a
+  hard return. Save the file in the C:\NET subdirectory with the name
+  PASSWORD.TXT.
+
+5. Try running the batch file. If it does not work make sure that the the user
+  and domain information are correct, then check to make sure that the MS-DOS
+  client is initializing the network board and loading the protocols properly.
+
+Additional query words: prodnt 3.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0,3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176881/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176881/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176881/","publisher":null,"image":null,"headline":"Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176881-wd97-err-msg-fields-are-nested-too-deeply-in-mail-merge">Q176881: WD97: Err Msg: "Fields Are Nested Too Deeply" in Mail Merge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176881
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbfield winword word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a nested IF field in a Word mail merge, the following error message
+may appear:
+
+  Fields are nested too deeply
+
+NOTE: This error message may also appear when you use an INCLUDETEXT field as
+part of a mail merge main document to insert (include) a document containing a
+nested IF field, even when the nested IF field does not contain more than 20
+levels.
+
+CAUSE
+=====
+
+This functionality is by design. Word supports field nesting only to 20 levels.
+
+NOTE: If you use an INCLUDETEXT field to insert a subdocument (containing nested
+IF fields) in a mail merge main document, the nested IF fields are nested
+several levels deeper than you may expect and may result in the error message
+described in the "Symptoms" section of this article.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following: Use a nested IF field of
+20 or fewer levels.
+
+  -or-
+
+Do not use an INCLUDETEXT field to include a subdocument in a mail merge main
+document. Instead, make the subdocument containing the nested IF fields the mail
+merge main document.
+
+MORE INFORMATION
+================
+
+IF (If...Then...Else...) fields print information only if a condition you've
+specified is met. For example, you can use an IF field to create a form letter
+that goes only to clients who live within a particular ZIP Code area.
+
+IF fields perform one of two alternative actions, depending on a condition you
+specify. For example, the statement "If the weather is sunny, we'll go to the
+park; if not, we'll go to the movies" specifies a condition that must be met
+(sunny weather) for a certain action to take place (going to the park). If the
+condition is not met, an alternative action occurs (going to the movies).
+
+The following is an example of nesting MERGEFIELD fields 20 levels deep:
+
+  {IF {MERGEFIELD FIELD1} &lt;&gt; "" "{IF {MERGEFIELD FIELD2} &lt;&gt; ""
+  "{IF
+  {MERGEFIELD FIELD3} &lt;&gt; "" "{IF {MERGEFIELD FIELD4} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD5} &lt;&gt; "" "{IF {MERGEFIELD FIELD6} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD7} &lt;&gt; "" "{IF {MERGEFIELD FIELD8} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD9} &lt;&gt; "" "{IF {MERGEFIELD FIELD10} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD11} &lt;&gt; "" "{IF {MERGEFIELD FIELD12} &lt;&gt; "" {IF
+  {MERGEFIELD FIELD13} &lt;&gt; "" "{IF {MERGEFIELD FIELD14} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD15} &lt;&gt; "" "{IF {MERGEFIELD FIELD16} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD17} &lt;&gt; "" "{IF {MERGEFIELD FIELD18} &lt;&gt; "" "{IF
+  {MERGEFIELD FIELD19} &lt;&gt; "" "{IF {MERGEFIELD FIELD20} &lt;&gt; "" "True"
+  "False"}" "False"}" "False"}" "False"}" "False"}" "False"}" "False"}"
+  "False"}" "False"}" "False"}" "False"}" "False"}" "False"}" "False"}"
+  "False"}" "False"}" "False"}" "False"}" "False"}" "False"}
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q90393 WD: How to Use Nested IF Fields in a Print Merge Document
+
+For more information about conditional Word fields, click the Office Assistant,
+type "nesting if fields," click Search, and then click to view "Customize
+documents created with mail merge."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: mailmerge printmerge
+
+======================================================================
+Keywords          : kbfield winword word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295812/","publisher":null,"image":null,"headline":"Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295812-xfor-messages-from-exchange-to-ccmail-remain-queued">Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295812
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbExchange550
+Last Modified: 16-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send messages from Exchange Server to Lotus cc:Mail by using the
+Microsoft Exchange Connector for Lotus cc:Mail, the Connector for cc:Mail
+Service starts but the messages may remain queued in the
+\Exchsrvr\Ccmcdata\Submit folder instead of going to the Lotus cc:Mail users. No
+error message appears in the Application Event log.
+
+CAUSE
+=====
+
+This behavior can occur if the \Exchsrvr\Ccmcdata\Import folder is damaged.
+
+WORKAROUND
+==========
+
+To work around this behavior, recreate the subfolders and .ini files that are in
+the \Exchsrvr\Ccmcdata folder:
+
+1. Under Services in Control Panel, stop the Connector for cc:Mail Service, and
+  then move all of the subfolders and files from the \Exchsrvr\Ccmcdata folder
+  to a temporary folder.
+
+2. Under Services in Control Panel, restart the Connector for cc:Mail Service to
+  recreate all of the subfolders and .ini files that are in the
+  \Exchsrvr\Ccmcdata folder.
+
+3. Stop the Connector for cc:Mail Service again, and then move all of the files
+  from the temporary folder back to the \Exchsrvr\Ccmcdata\Submit folder.
+
+4. Restart the Connector for cc:Mail Service to send the files that are in the
+  Submit folder to the cc:Mail post office.
+
+MORE INFORMATION
+================
+
+When the Connector for cc:Mail finishes the conversion process, the messages are
+written to the \Exchsrvr\Ccmcdata\Submit folder. The cc:Mail Import program then
+writes the files to the \Exchsrvr\Import folder. However, if the
+\Exchsrvr\Import folder is damaged, the messages remain queued in the
+\Exchsrvr\Ccmcdata\Submit folder.
+
+Additional query words: ccmail stuck directory
+
+======================================================================
+Keywords          : kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

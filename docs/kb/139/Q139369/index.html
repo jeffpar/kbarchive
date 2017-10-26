@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139369/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139369/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139369/","publisher":null,"image":null,"headline":"Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139369-pc-mmta-err-msg-failure-to-initialize-the-modem-session">Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139369
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run the OS/2 Multitasking MTA (MMTA) using serial
+communications, the following error may occur in the SESSION.LOG:
+
+  Failure to initialize the modem session.
+
+CAUSE
+=====
+
+The OS/2 operating system requires the device driver COMMxx.SYS to be loaded in
+the CONFIG.SYS file before it will enable and recognize the communications port.
+
+RESOLUTION
+==========
+
+You can use the serial communications port by setting up the appropriate device
+driver. Before you set up a device driver for a communications port, choose the
+driver that works with your hardware.
+
+Refer to the following list to find the driver that matches your hardware:
+
+Driver         Hardware
+----------------------------------------------------------------------
+COM01.SYS      IBM PC/AT or compatible computer
+COM02.SYS      IBM PS/2
+
+To direct COM01.SYS to load from the OS2 directory on drive C, add the following
+line to the CONFIG.SYS file before any Microsoft LAN Manager settings:
+
+     device=c:\os2\com01.sys
+
+When this driver is loaded, OS/2 and MS-DOS programs can use the serial
+communications ports on IBM PC/AT (or compatible) computers.
+
+To use a communications port, set up the port in addition to specifying the
+device driver. To set up a port in OS/2, use the MODE utility.
+
+To display the status of a serial device, type MODE followed by the name of the
+asynchronous port. For example, to see the status of the device that is
+connected to COM2, type the following:
+
+  "MODE com2" (without the quotation marks)
+
+To set the operating arguments for a serial port, type MODE followed by a
+combination of the following options:
+
+Option         Purpose
+----------------------------------------------------------------------
+
+com#           Specifies the number of the asynchronous
+              communications (COM) port.
+
+baud           Specifies the transmission rate. Valid rates are 110,
+              150, 300, 600, 1200, 1800, 2400, 3600, 4800, 7200,
+              9600, and 19,200. The first two digits specify the
+              transmission rate.
+
+parity         Specifies the parity. Valid values are N(none), O
+              (odd), E (even), M (mark; the parity equals 1), os S
+              (space; the parity equals zero). The default value is
+              E.
+
+databits       Specifies the number of databits. Valid values are 5,
+              6, 7, or 8. The default is 7.
+
+stopbits       Specifies the number of stop bits. Valid values are 1,
+              1.5, and 2. The default value is 1.
+
+The baud option must be set; all other arguments are optional.
+
+For example,
+
+  MODE com1: 9600,N,8,1
+
+For more information regarding this procedure, please refer to the OS/2 "User's
+Guide," pages 399-403 and 466-467.
+
+Additional query words: 3.20 mta lan man
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

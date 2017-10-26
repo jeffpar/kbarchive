@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160000/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160000/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160000/","publisher":null,"image":null,"headline":"Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160000-sms-dos4gwexe-causes-memory-inventory-inaccuracy">Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160000
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv kbinterop kbusage smsgeneral kbArtTypeINF
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MS-DOS clients that run the DOS extender Dos4gw.exe before Systems Management
+Server hardware inventory is collected may result in unlikely extended memory
+values in client inventory. For example, an MS-DOS client with 32 MB of memory
+that runs Dos4gw.exe in the Autoexec.bat (before hardware inventory is
+collected) may report 64 MB of extended memory in client inventory.
+
+CAUSE
+=====
+
+Memory inventory is incorrect because Dos4gw.exe is not closing high memory area
+(HMA) handles it uses to access XMS memory. Dos4gw.exe opens HMA handles to
+access XMS memory managed by the resident A20 handler (such as Himem.sys).
+
+Systems Management Server memory inventory is collected by summing the total
+amount of memory in use by the available HMA memory handles. In this case,
+Dos4gw.exe is not closing some HMA handles when it quits, leaving two handles
+still allocated. In the 32 MB client example Dos4gw.exe opens a handle for 516K,
+and another for 30,440K. When Dos4gw.exe exits, it does not close its HMA
+handles; when Systems Management Server inventory sums them with the default
+handles in use (totaling 31,680K), the extended memory value is reported
+incorrectly as 62,636K.
+
+WORKAROUND
+==========
+
+To work around this problem, run Dos4gw.exe after the Systems Management Server
+hardware inventory has been collected.
+
+STATUS
+======
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+MORE INFORMATION
+================
+
+The following table is the combined results of a test application, showing
+Dos4gw.exe failing to close HMA handles 11 and 12 after closing:
+
+Before Dos4gw     After Dos4gw
+Handle  0 = 344   Handle 0 = 344
+Handle  1 = 1     Handle 1 = 1
+Handle  2 = 8     Handle 2 = 8
+Handle  3 = 7     Handle 3 = 7
+Handle  4 = 10    Handle 4 = 10
+Handle  5 = 5     Handle 5 = 5
+Handle  6 = 6     Handle 6 = 6
+Handle  7 = 12    Handle 7 = 12
+Handle  8 = 6     Handle 8 = 6
+Handle  9 = 65    Handle 9 = 65
+Handle 10 = 31216 Handle 10 = 31216
+Handle 11 = 0     Handle 11 = 516
+Handle 12 = 0     Handle 12 = 30440
+Handle 13 = 0     Handle 13 = 0
+Handle 14 = 0     Handle 14 = 0
+Handle 15 = 0     Handle 15 = 0
+Handle 16 = 0     Handle 16 = 0
+Handle 17 = 0     Handle 17 = 0
+Handle 18 = 0     Handle 18 = 0
+Handle 19 = 0     Handle 19 = 0
+Handle 20 = 0     Handle 20 = 0
+Handle 21 = 0     Handle 21 = 0
+Handle 22 = 0     Handle 22 = 0
+Handle 23 = 0     Handle 23 = 0
+Handle 24 = 0     Handle 24 = 0
+Handle 25 = 0     Handle 25 = 0
+Handle 26 = 0     Handle 26 = 0
+Handle 27 = 0     Handle 27 = 0
+Handle 28 = 0     Handle 28 = 0
+Handle 29 = 0     Handle 29 = 0
+Handle 30 = 0     Handle 30 = 0
+Handle 31 = 0     Handle 31 = 0
+Total     = 31680 Total     = 62636
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbinterop kbusage smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

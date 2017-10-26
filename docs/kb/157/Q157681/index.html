@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157681: SMS: IP Address Missing from Client Inventory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157681: SMS: IP Address Missing from Client Inventory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157681/","publisher":null,"image":null,"headline":"Q157681: SMS: IP Address Missing from Client Inventory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157681-sms-ip-address-missing-from-client-inventory">Q157681: SMS: IP Address Missing from Client Inventory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157681
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:3.11; winnt:1.2
+Operating System(s): 
+Keyword(s): kbInventory smsinv
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Systems Management Server Inventory Agent fails to report an IP address for
+Windows for Workgroups 3.11 client and the following error is logged in the
+Invdos.log file located on the client in the Ms\Sms\Logs directory:
+
+  Executing command: C:\MS\SMS\BIN\ipconfig.exe &gt;
+  C:\MS\SMS\TEMP\ipconfig.sms IP address information not found in output file
+
+CAUSE
+=====
+
+Invdos.exe does not detect TCP/IP inventory while the SMS_P environment variable
+is present. SMS_P is a temporary variable set in Runsms.bat or Smsls.bat, and is
+used for storing path detail, during client setup. The variable is then reset
+during termination of the respective batch file.
+
+MORE INFORMATION
+================
+
+The absence of TCP/IP inventory causes Remote Control using IP sockets to fail.
+The following message appears during inventory (if it is run in verbose mode by
+setting SMSLS=1 prior to execution):
+
+  Looking for TCP/IP stack
+  Looking for Wolverine stack
+  Performing TCP/IP detection
+  &lt;drive&gt;:\MS\SMS\BIN\IPCONFIG.EXE &gt;
+  &lt;drive&gt;:\MS\SMS\TEMP\IPCONFIG.SMS "IP address information not found in
+  output file"
+
+WORKAROUND
+==========
+
+To work around this problem, do the following to Runsms.bat (which resides at
+\SMS\SITE.SRV\MAINCFG.BOX\CLIENT.SRC) or Smsls.bat (which resides at
+\SMS\SITE.SRV\MAINCFG.BOX):
+
+1. Add an additional variable (for example: SMS_P2) to the :START section. For
+  example:
+
+        :START
+
+        REM Check to see if we can save path and reserve the necessary
+        environment
+        REM space before continuing.
+        set SMS_P=%PATH%
+        set SMS_P2=%PATH%
+        set SMS_TEMP=123456789012345678901234567890123456789012345
+        if "%SMS_TEMP%"=="123456789012345678901234567890123456789012345" goto
+        FIND_OS
+        goto LOW_ENV
+
+2. Reset the SMS_P variable prior to execution of Invdos.exe in the :RUN_DOS
+  section. For example:
+
+        :RUN_DOS
+        if not exist %0\..\%SMS_BIN%\setls%SMS_OS%.exe goto NOPATHARG0
+
+        setls%SMS_OS% -m:E -i -p:%SMS_BIN%\CLI_DOS.EXE -pa:/p:%%SMS_UNC%%\ -
+           pa:%SMS_VERBOSE% %SMS_VERBOSE%
+        set SMS_P=
+        setls%SMS_OS% -m:E -i -p:%SMS_BIN%\INVDOS.EXE  -pa:/l:%%SMS_UNC%%\ -
+           pa:/i -pa:%SMS_VERBOSE% %SMS_VERBOSE%
+        goto RESTORE
+
+3. Restore the path from the new variable (SMS_P2) by changing the path line in
+  the :RESTORE section. For example:
+
+        :RESTORE
+        REM Restore the previous path setting.
+        PATH=%SMS_P2%
+        goto END
+
+4. Reset the new variable, instead of SMS_P in the :END section. For example:
+
+        :END
+        set SMS_P2=
+        set SMS_OS=
+
+        set SMS_BIN=
+        set SMS_VERBOSE=
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.2. This problem has been corrected in the latest U.S. Service
+Pack for Systems Management Server version 1.2. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base:
+
+  " SERVPACK" (without the quotation marks)
+
+Additional query words: prodsms sms inventory automatic ip tcp/ip tcpip configuration enabled
+
+======================================================================
+Keywords          : kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120
+Version           : WINDOWS:3.11; winnt:1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

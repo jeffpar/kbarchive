@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128996: HOWTO: Assign Database Location Generically in Data Env | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128996: HOWTO: Assign Database Location Generically in Data Env" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128996/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128996/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128996/","publisher":null,"image":null,"headline":"Q128996: HOWTO: Assign Database Location Generically in Data Env","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128996-howto-assign-database-location-generically-in-data-env">Q128996: HOWTO: Assign Database Location Generically in Data Env</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128996
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnokeyword kbvfp300 kbvfp500 kbvfp600
+Last Modified: 09-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Data Environment contains information about all the tables, views, and
+relationships that interact with a form. In the Form Designer, when a table is
+added to the data environment, the database property of a cursor is updated with
+the location and name of the DataBase container (.DBC), and the path written in
+the DataBase property is set by default as an absolute path.
+
+If the database cannot be found when the form is opened, the error "Error
+instantiating cursor object. Cannot find ..&lt;database&gt;" is displayed.
+
+The sample code provided in this article modifies the path information written in
+the Database property to fit your needs.
+
+MORE INFORMATION
+================
+
+When a table is added to the Data Environment in the Form Designer, a cursor
+object is created. If the table belongs to a DBC, the DataBase property of the
+cursor is updated with the full path name to the DBC. However, the absolute path
+to a DBC might need to be modified in a distributed application. For example,
+multiple users can open databases with the same name that are placed in
+different locations.
+
+If you need to reference a different database than the one specified in the
+Database property of the Cursor object, you can use the SET PATH command, before
+the program calls the form, to set a path to the location of the database. If
+the database specified in the DATABASE property of the Cursor cannot be found,
+Visual FoxPro will search along the path.
+
+Another alternative is to update the DATABASE property at runtime. The following
+example adds flexibility to your code by updating the path information in the
+Database property of the cursor object. This code can update the location of
+different databases referenced in the Data Environment. As this sample only
+references one directory, you will need to modify it if you need to open
+databases in several directories.
+
+To use this example:
+
+1. Create two variables that will be available to the form - Data_Drive. This
+  variable contains the drive letter and a colon.
+
+  Data_Drive = "C:"
+
+  - Data_Path. This variable contains the relative path with a backslash as the
+  last character.
+
+  Data_Path = "\VFP\SAMPLES\DATA\"
+
+2. Place the following code in the BeforeOpenTables Event of the
+  DataEnvironment. The WAIT WINDOW commands are for illustrating purposes, and
+  you can remove them.
+
+        IF !EMPTY(DATA_PATH) and !EMPTY(DATA_DRIVE)
+          * Make a list of all the cursors in the Data Environment
+           =AMEMBERS(A_Cursors,THISFORM.dataenvironment,1)
+           =ASORT(A_Cursors, 2)
+           nStartpos=ASUBSCRIPT(A_Cursors, ASCAN(A_Cursors, "Object"),1)
+           FOR I = nstartpos TO ALEN(A_cursors,1)
+             IF A_Cursors(i,2) = "Object"
+              cObjClass = "THISFORM.DATAENVIRONMENT."+a_cursors(i,1)+".class"
+                IF EVAL(cObjClass)="Cursor"
+                 cObjName="THISFORM.DATAENVIRONMENT." ;
+                      + A_Cursors(i,1)+".DATABASE"
+                 WAIT WINDOW cObjName
+                 Data_Name=EVAL(cObjName)
+                 WAIT WINDOW "This is Data_Name : "+ Data_Name
+                 * Modify the path to the database
+                 NewDataPath=ALLTRIM(data_drive)+ ALLTRIM(data_path) ;
+                      + ALLTRIM(SUBSTR(Data_Name, RAT("\",Data_Name)+1))
+                 WAIT WINDOW newdatapath
+                 * Evaluate the cursor object
+                 oRef = EVAL( "THISFORM.DATAENVIRONMENT."+a_cursors(i,1) )
+                 *Modify the Database property with the new path
+                 oRef.Database = newdatapath
+
+                ENDIF
+                ELSE
+                 EXIT
+             ENDIF
+           ENDFOR
+        ENDIF
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

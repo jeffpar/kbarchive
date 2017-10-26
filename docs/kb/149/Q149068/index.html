@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149068: FIX: Reprint Group Header on Each Page Malfunctions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149068: FIX: Reprint Group Header on Each Page Malfunctions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149068/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149068/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149068/","publisher":null,"image":null,"headline":"Q149068: FIX: Reprint Group Header on Each Page Malfunctions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149068-fix-reprint-group-header-on-each-page-malfunctions">Q149068: FIX: Reprint Group Header on Each Page Malfunctions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149068
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a report with two or more data groupings with "Reprint Group
+Header on Each Page" selected for all data groupings, the groupings will print
+in incorrect order on the first page and on subsequent pages when a new outer
+grouping starts on a new page.
+
+WORKAROUND
+==========
+
+Follow steps 1-7 in the "Steps to Reproduce Problem" section of this article.
+Then create and run the following program:
+
+     STORE .T. TO lFlag1
+     REPORT FORM myreport TO PRINT &amp;&amp; or PREVIEW
+
+     PROCEDURE PgHead
+     lFlag1 = .T.
+
+     PROCEDURE Grp1
+     lFlag1 = .F.
+
+Now make the following changes to the report:
+
+1. Double-click the Page Header bar, and in the Page Header dialog box, type the
+  following as the On Entry expression:
+
+  " PgHead() " (without the quotation marks)
+
+2. Double-click the Group Header 1 bar, and in the Group Header dialog box, type
+  the following as the On Exit expression:
+
+  " Grp1() " (without the quotation marks)
+
+3. For every object in Group Header 2, add the following expression in the Print
+  When dialog box:
+
+  " lFlag1 = .F. " (without the quotation marks)
+
+4. Select the "Remove Line If Blank" check box.
+
+It is possible to expand on this technique. For example if you have three data
+groupings and you want to reprint the group header on each page, make the
+following changes to the program:
+
+1. Modify the first line of the program to:
+
+     STORE .T. TO lFlag1, lFlag2
+
+2. Add the following line to the PgHead procedure:
+
+     lFlag2 = .T.
+
+3. Add a procedure:
+
+     PROCEDURE Grp2
+     lFlag2 = .F.
+
+4. Modify the report, adding Grp2() as the On Exit expression for Group Header
+  2. Then for every object in the third group, add the following as the "Print
+  Only When Expression Is True" condition:
+
+     lFlag1 = .F. AND lFlag2 = .F.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open Orders.dbf from the Testdata database located in the Samples\Data
+  subdirectory.
+
+2. Create a new index tag named cust_emp on the expression:
+
+     cust_id + emp_id
+
+3. Create a new report, and add the Orders table to the Data Environment.
+
+4. In the properties sheet of the Data Environment, in the Data tab of the
+  Cursor object, set the Order property to cust_emp.
+
+5. Add two Data Groupings to the report, the first (outer) being cust_id and the
+  second (inner) being emp_id. In both cases, select the "Reprint Group Header
+  on Each Page" check box.
+
+6. Add a label "outer group" to Group Header 1 and "inner group" to Group Header
+  2.
+
+7. Save the report as myreport.
+
+8. Preview the report.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

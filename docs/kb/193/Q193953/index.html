@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193953: PRB: COM .Dll In MTS ‘Sharing’ Datasessions Between Instances | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193953: PRB: COM .Dll In MTS ‘Sharing’ Datasessions Between Instances" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193953/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193953/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193953/","publisher":null,"image":null,"headline":"Q193953: PRB: COM .Dll In MTS ‘Sharing’ Datasessions Between Instances","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193953-prb-com-dll-in-mts-sharing-datasessions-between-instances">Q193953: PRB: COM .Dll In MTS ‘Sharing’ Datasessions Between Instances</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193953
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Moving the record pointer of a table in one object instance of a Component
+Object Model (COM) .dll file created in Visual FoxPro, moves the record pointer
+in all instances of that object when running in Microsoft Transaction Server
+(MTS).
+
+CAUSE
+=====
+
+Using a table outside the data environment causes the cursor to be public to all
+instances of that object.
+
+
+RESOLUTION
+==========
+
+Open and access the table that uses a cursor object in a data environment with
+the DataSession property set to two (2) Private.
+
+In the example provided in the Steps To Reproduce Behavior section, change the
+SERVER CODE to the following.
+
+NOTE: After rebuilding the COM .dll, make sure to delete the Component object
+from the MTS Package, then add it back using the Add Component/Add New Component
+menu options.
+
+     ***************Server Code With Dataenvironment******************
+     DEFINE CLASS MTSData AS FORM OLEPUBLIC
+        DATAENVIRONMENT=.NULL.
+        DATASESSION=2 &amp;&amp;PRIVATE
+        PROCEDURE LOAD
+           SET DEFAULT TO "c:\MTSTest"
+           THIS.DATAENVIRONMENT=CREATEOBJECT("MTSDataEnv")
+        ENDPROC
+        PROCEDURE movenext
+           SKIP 1
+        ENDPROC
+        PROCEDURE moveprev
+           SKIP -1
+        ENDPROC
+        PROCEDURE movefirst
+           GO TOP
+        ENDPROC
+        PROCEDURE movelast
+           GO BOTTOM
+        ENDPROC
+        PROCEDURE returnrec
+           LPARAMETER MyArray
+           EXTERNAL ARRAY MyArray
+           MyArray(1,1)=fld1
+           MyArray(2,1)=fld2
+           MyArray(3,1)=fld3
+        ENDPROC
+     ENDDEFINE
+
+     DEFINE CLASS MTSDataEnv AS DATAENVIRONMENT
+        ADD OBJECT cursor1 AS MTScursor
+        PROCEDURE INIT
+           THIS.OPENTABLES
+        ENDPROC
+     ENDDEFINE
+      DEFINE CLASS MTScursor AS CURSOR
+        PROCEDURE INIT
+           OPEN DATABASE MTSData SHARED
+           THIS.EXCLUSIVE=.F.
+           THIS.ALIAS="MTSTest"
+           THIS.DATABASE="c:\MTSTest\MTSData.dbc"
+           THIS.CURSORSOURCE="MTSTest"
+        ENDPROC
+     ENDDEFINE
+     ****************End Server Code With Dataenvironment**************
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+NOTE: This happens with any COM server created in Microsoft Visual FoxPro where
+multiple instantiations of a single object reside in the same process, and the
+DataSession property is set to 1 - Default Datasession. The variations where
+this happens are below:
+
+- Multi-Use Local (.exe) COM Server.
+- Multi-Use In Process (.dll) Server called twice in one session.
+- Multi-Use In Process (.dll) Server in a MTS Package called twice from one
+  session, or once from multiple sessions.
+
+The code in the Steps To Reproduce Behavior section requires a database with a
+table. You can run the following code to create the database and table:
+
+NOTE: Make sure to change the SET DEFAULT TO line in the SERVER CODE to point to
+the directory that contains the database.
+
+     CREATE DATABASE MTSData
+     CREATE TABLE MTSTest (fld1 c(10) PRIMARY KEY,fld2 N(5,2),fld3 T)
+     FOR i=1 TO 4
+        INSERT INTO MTSTest VALUES (STR(i),i,DATETIME()+ (i*60))
+     ENDFOR
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Build the Server Code into a COM .dll named MTSData.
+
+2. Import the MTSData.dll and the MTSData.tlb as a component into a MTS Package.
+  Be sure to mark the component as "Requires A New Transaction".
+
+3. Place the Client Code in a program file.
+
+4. Run the ClientCode.prg in two instances of Visual FoxPro.
+
+5. Issue the following commands in the Command window of the first instance of
+  Visual FoxPro:
+
+  
+
+        x.MoveNext
+        x.ReturnRec(@aMTSRecord)
+        DISPLAY MEMORY LIKE aMTSRecord
+
+6. Issue the following commands in the second instance of Visual FoxPro noting
+  that the x.MoveNext command in the first instance moved the record pointer in
+  this instance also.
+
+  
+
+        x.ReturnRec(@aMTSRecord)
+        DISPLAY MEMORY LIKE aMTSRecord
+
+        ********************Server Code********************************
+        DEFINE CLASS MTSData AS FORM OLEPUBLIC
+           PROCEDURE INIT
+              SET DEFAULT TO "C:\MTSTest"
+
+              OPEN DATABASE MTSData SHARED
+              USE MTSTest SHARED
+           ENDPROC
+           PROCEDURE movenext
+              SKIP 1
+           ENDPROC
+           PROCEDURE moveprev
+              SKIP -1
+           ENDPROC
+           PROCEDURE movefirst
+              GO TOP
+           ENDPROC
+           PROCEDURE movelast
+              GO BOTTOM
+           ENDPROC
+           PROCEDURE returnrec
+              LPARAMETER MyArray
+              EXTERNAL ARRAY MyArray
+              MyArray(1,1)=fld1
+              MyArray(2,1)=fld2
+              MyArray(3,1)=fld3
+           ENDPROC
+        ENDDEFINE
+        ********************End Server Code****************************
+
+        ********************Client Code********************************
+        PUBLIC x
+        PUBLIC aMTSRecord(3,1)
+        x=CREATEOBJECT("MTSData.MTSData")
+        COMARRAY(x,11) &amp;&amp;Sets the arrays passed to object X as 1 based
+                       &amp;&amp;passed by reference.
+        x.movenext
+        x.returnrec(@aMTSRecord)
+        DISPLAY MEMORY LIKE aMTSRecord
+        ********************End Client Code****************************
+
+Additional query words: kbVFp kbVFp600 kbCOMt kbMTS200 kbDatabase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

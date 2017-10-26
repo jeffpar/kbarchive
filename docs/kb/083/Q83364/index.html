@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83364/","publisher":null,"image":null,"headline":"Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83364-flsheditexe-demonstrates-flashing-an-edit-control">Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83364
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbGrpDSUser kbOSWin310 kbWndw kbWndwMsg kbWndwProp kbOSWin3
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If an application window or dialog box has a number of edit controls, the user
+can lose track of the control that has the input focus. FlshEdit.exe is a sample
+in the Microsoft Download Center that demonstrates how to make an edit control
+flash to indicate that the control has the input focus. The technique used by
+FLSHEDIT is similar to calling the FlashWindow function. FlashWindow flashes the
+caption bar on a window to gain the user's attention.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  FlshEdit.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The FLSHEDIT sample contains a dialog box with four edit controls. The
+application uses one timer, which is used to flash whichever edit control has
+the focus. The application sets the timer each time an edit control receives the
+input focus (an EN_SETFOCUS message). The timer is destroyed when an edit
+control loses the input focus (an EN_KILLFOCUS message) or when the context of
+the edit control changes (an EN_CHANGE message).
+
+When the specified time elapses and the application receives a WM_TIMER message,
+the application invalidates the contents of the edit control and specifies the
+new text and background colors. Then Windows redraws the control using the new
+colors.
+
+Therefore, a control stops flashing when either of the following events take
+place:
+
+- The user takes the input focus away from the control.
+
+- The user changes the text contents of the control.
+
+The FLSHEDIT application provides an option to stop the flashing and to change
+the color of the flashing.
+
+In addition to flashing, the FLSHEDIT sample changes the text in an edit control
+to indicate that the control has the input focus. However, if the user changes
+the contents of an edit control, the changed text remains even after the user
+moves the input focus to another control. If the user changes the text to an
+empty string, the edit control regains its default contents.
+
+Windows 3.0 does not properly change the background color of a single-line edit
+control.
+
+
+FLSHEDIT incorporates the first method provided by this Knowledge Base article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbGrpDSUser kbOSWin310 kbWndw kbWndwMsg kbWndwProp kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

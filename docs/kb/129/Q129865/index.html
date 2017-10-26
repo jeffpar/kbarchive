@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129865: Limitations of the AINSTANCE Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129865: Limitations of the AINSTANCE Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129865/","publisher":null,"image":null,"headline":"Q129865: Limitations of the AINSTANCE Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129865-limitations-of-the-ainstance-function">Q129865: Limitations of the AINSTANCE Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129865
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The AINSTANCE function places all instances of a class into a memory variable
+array. The function also returns the number of instances of a class. The
+function does not, however, report information about "member objects" added by
+the ADD OBJECT method. "Member objects" are not, in themselves, instances; they
+are a part (member) of a container.
+
+This article provides an explanation of this function to clarify what the
+AINSTANCE function does and does not do.
+
+MORE INFORMATION
+================
+
+The AINSTANCE function places all instances of a class into a memory variable
+array:
+
+     =AINSTANCE(aMyArray,"Form") &amp;&amp;  Places all instances of the base class
+                                 &amp;&amp;  Form into an array called "aMyArray"
+
+In the following example, AINSTANCE places all "created" instances into an array.
+The WAIT WINDOWS will show how many "created" instances exist. The list box will
+show "0" because it is added to the Form by the ADD OBJECT method and is not
+"created." As an alternative to the AINSTANCE function, you can use the AMEMBERS
+function to return information about whether or not an object exists. The
+AMEMBERS function is used to populate the list box in the following example:
+
+     &amp;&amp; Start of the Example:
+
+     frmMyForm=CREATEOBJECT("FORM")
+        WITH frmMyForm
+            .Left = 200
+            .Top  = 100
+        ENDWITH
+
+     cmdMyQuitButton=CREATEOBJECT("cmdQuitButton")
+
+     &amp;&amp; If the above line is changed to a comment, the form and button
+     &amp;&amp; still work the same but the AINSTANCE function will not
+     &amp;&amp; return information for the commandbutton.
+
+     frmMyForm.ADDOBJECT("cmdMyQuitButton", "cmdQuitButton")
+     frmMyform.ADDOBJECT("cmdMyButton","commandbutton")
+     &amp;&amp;The above button will not be visible on the Form
+
+     frmMyForm.ADDOBJECT("lstMyList","ListBox")
+
+     frmMyForm.SHOW
+
+     nMvar=AINSTANCE(aMyArray,"Form")
+     WAIT WINDOW "Forms = "+ALLTRIM(str(nMvar))
+
+     nMvar=AINSTANCE(aMyArray,"cmdQuitButton")
+     WAIT WINDOW "QuitButtons = "+ALLTRIM(str(nMvar))
+
+     nMvar=AINSTANCE(aMyArray,"lstMyList")
+     WAIT WINDOW "List Boxes = "+ALLTRIM(str(nMvar))
+
+     =AMEMBERS(aMarray,frmMyForm,1)
+
+     nX=ASUBSCRIPT(aMarray,(ASCAN(aMarray,"Object")),1)
+
+     nMPos   = 1
+     nMySize = 2
+
+     FOR i = 1 to ALEN(aMarray)*2
+        nMPos    = ASCAN(aMarray,"Object",nMPos)
+        IF nMPos = 0
+            EXIT
+        ELSE
+            DIMENSION aMarray2(nMySize/2,2)
+        ENDIF
+
+        WAIT WINDOW aMarray(ASUBSCRIPT(aMarray,;
+        (ASCAN(aMarray,"Object",nMPos)),1),1)+"  "+;
+        aMarray(ASUBSCRIPT(aMarray,;
+        (ASCAN(aMarray,"Object",nMPos)),1),2)
+
+        =ACOPY(aMarray,aMarray2,nMPos-1,2,nMySize-1)
+
+        nMPos   = nMPos+1
+        nMySize = nMySize+2
+
+     ENDFOR
+
+     WAIT WINDOW "No Other Objects Found"
+
+     &amp;&amp; The list box displays the members of the Form or rather the objects
+     &amp;&amp; that are contained on the Form.
+
+     WITH frmMyForm.lstMyList
+          .visible = .T.
+          .width   = 300
+          .height  = 150
+          .top     = 30
+          .left    = 30
+          .rowsourcetype = 5
+          .rowsource     = "aMarray2"
+          .columncount   = 2
+          .columnwidths  = "150"
+     ENDWITH
+
+     READ EVENTS
+
+     DEFINE CLASS cmdQuitButton AS CommandButton
+        PROCEDURE Click
+           RELEASE ThisForm
+           CLEAR EVENTS
+        ENDPROC
+
+        Visible = .T.
+        Caption = "Quit"
+
+        Top    = 200
+        Left   = 300
+        Width  = 60
+        Height = 30
+     ENDDEFINE
+
+     &amp;&amp; End of the Example.
+
+The AINSTANCE function returns object information only on those objects that have
+been instantiated programmatically by the CREATEOBJECT function or through the
+interface, even though the object is a member of a defined class. The AINSTANCE
+function can not return object information on "member objects."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

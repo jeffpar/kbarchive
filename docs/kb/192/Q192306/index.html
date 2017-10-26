@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192306: XADM: Access Directory Through LDAP When Search Control is Set | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192306: XADM: Access Directory Through LDAP When Search Control is Set" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192306/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192306/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192306/","publisher":null,"image":null,"headline":"Q192306: XADM: Access Directory Through LDAP When Search Control is Set","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192306-xadm-access-directory-through-ldap-when-search-control-is-set">Q192306: XADM: Access Directory Through LDAP When Search Control is Set</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192306
+Product(s): Microsoft Exchange
+Version(s): winnt:2.5,5.5
+Operating System(s): 
+Keyword(s): kbADSI
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Active Directory Service Interfaces, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Lightweight Directory Access Protocol (LDAP) client querying the Exchange
+directory using LDAP may fail with an access denied error when the search
+control is set to restrict access to the Global Address List as described in the
+following article in the Microsoft Knowledge Base:
+
+  Q182902 XADM: How to Set Up Container Level Search Control
+
+This can happen even though the LDAP client authentication method appears to be
+correct, using either Windows NT LAN Manager (NTLM) or simple authentication
+(cn=&lt;nt account&gt;, cn=&lt;nt domain&gt;), and the Exchange Server computer
+is configured to accept those LDAP authentication methods.
+
+When you try to access the Exchange Server directory with Outlook Express using
+the LDAP protocol, you get the following error message:
+
+  The specified Directory Service has denied access. Check the Properties
+  for this Directory Service and verify that your Authentication Type
+  settings and parameters are correct.
+
+On the server you see the event:
+
+  Event ID: 1354
+  Source: MSExchangeDS
+  Description: "LDAP search request failed with error: 50."
+
+CAUSE
+=====
+
+This happens because your LDAP client tries to connect to the directory using a
+search base for which you don't have permissions.
+
+MORE INFORMATION
+================
+
+To access through LDAP a directory with search control enabled, perform the
+following steps:
+
+1. Set the search rights and Address Book views in the Exchange Server directory
+  according to the Knowledge Base article Q182902, "XADM: How To Setup
+  Container Level Search Control."
+
+2. Set the search base in your LDAP client to match the Address Book view you
+  have access to. For example, if you create an Address Book view named "By
+  City," in the organization Microsoft, the search base will be:
+
+  "Cn=By City,ou=_ABVIEWS_,o=Microsoft" (or
+  "LDAP://SERVER:389/Cn=By City,ou=_ABVIEWS_,o=Microsoft" using ADSI)
+
+  For Outlook Express, the search base is configured in the advanced properties
+  of the directory account.
+
+3. If the simple authentication method is chosen, you will have to add the
+  account which has the search control at the organization level into the
+  Windows NT global group, Domain Admin.
+
+NOTE: Simple rights modifications in the directory take effect immediately, but
+you will have to stop and start the directory service if something has been
+changed in the Windows NT security database, which is the case when you add the
+account with the search control in the Windows NT global group, Domain Admin.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADSI 
+Technology        : kbAudDeveloper kbExchangeSearch kbADSISearch kbExchange550 kbZNotKeyword2 kbADSI250
+Version           : winnt:2.5,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

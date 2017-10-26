@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141278/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141278/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141278/","publisher":null,"image":null,"headline":"Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141278-err-msg-incompatible-parameters-sector-size-adjusted">Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141278
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): diskmem win95 kbDiskMemory
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use Ramdrive.sys with a sector size of 128 or 256 bytes, you
+receive the following error message when Ramdrive.sys is loaded:
+
+  Incompatible Parameters: Sector Size Adjusted
+
+The sector size for the RAM drive is then set to 512 bytes.
+
+CAUSE
+=====
+
+The version of Ramdrive.sys included with Windows 95 does not support a sector
+size of 128 or 256 bytes.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Copy the Ramdrive.sys file from an earlier version of MS-DOS to the Windows
+  folder on the hard disk.
+
+2. Type the following command at a command prompt
+
+  " setver &lt;hdisk&gt;:\&lt;windows&gt; ramdrive.sys &lt;ms-dos version&gt; "
+  (without the quotation marks)
+
+  where &lt;hdisk&gt; is the hard disk, &lt;windows&gt; is the Windows folder,
+  and &lt;ms-dos version&gt; is the 3-digit version of MS-DOS from which you
+  copied the Ramdrive.sys file.
+
+  For example, if Windows 95 is installed in the Windows folder on drive C, and
+  you copied the Ramdrive.sys file from version 6.2 of MS-DOS, type the
+  following line:
+
+  " setver c:\windows ramdrive.sys 6.20 " (without the quotation marks)
+
+3. Modify the Config.sys file so that Setver.exe is loaded before Ramdrive.sys.
+
+4. Restart your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

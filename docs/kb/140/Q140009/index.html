@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140009: Microsoft Exchange Printout Is Titled &quot;Unknown&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140009: Microsoft Exchange Printout Is Titled &quot;Unknown&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140009/","publisher":null,"image":null,"headline":"Q140009: Microsoft Exchange Printout Is Titled &quot;Unknown&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140009-microsoft-exchange-printout-is-titled-unknown">Q140009: Microsoft Exchange Printout Is Titled "Unknown"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140009
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an e-mail message from Microsoft Exchange, the printout may be
+titled "Unknown."
+
+CAUSE
+=====
+
+This problem can occur if the following situations exists:
+
+- The Microsoft Network Online Service is the only service in the current
+  profile.
+
+- You have no service provider selected, and the current profile contains only
+  a personal address book (.pab file) and a personal information store (.pst
+  file).
+
+  NOTE: In both cases above, you are not prompted for user information when the
+  profile is created, so the registry entry for the profile does not contain
+  the user data required for the printout title.
+
+- You have The Microsoft Network Online Service installed in the current
+  profile along with other message services.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods.
+
+Method 1
+--------
+
+If the Microsoft Network Online Service is the only service in your profile, add
+another service to the profile. For example, add the Microsoft Fax service. This
+service requires a user name, which is printed as the message title.
+
+To use the Microsoft Fax service, you must first add the Microsoft Fax component
+in Windows 95, which adds the Microsoft Fax service to Microsoft Exchange as an
+option.
+
+To add the Microsoft Fax component in Windows 95, follow these steps:
+
+1. In Control Panel, double-click the Add/Remove Programs icon.
+
+2. Click the Windows Setup tab.
+
+3. In the Components box, click the Microsoft Fax check box to select it, and
+  then click OK.
+
+To add the Microsoft Fax service to your profile, follow these steps:
+
+1. In Microsoft Exchange, click Services on the Tools menu.
+
+2. Click Add.
+
+3. Click Microsoft Fax, and then click OK.
+
+4. Supply the information required by Microsoft Exchange when you are prompted.
+
+5. Click OK.
+
+Method 2
+--------
+
+If no service provider is included in your profile, add one (other than the
+Microsoft Network Online Service).
+
+Method 3
+--------
+
+Remove The Microsoft Network Online Service from the profile, then add it back
+again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: inbox
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

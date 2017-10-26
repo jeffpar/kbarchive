@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248107: Creating Server Certificates Using Certificate Services Web Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248107: Creating Server Certificates Using Certificate Services Web Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248107/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248107/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248107/","publisher":null,"image":null,"headline":"Q248107: Creating Server Certificates Using Certificate Services Web Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248107-creating-server-certificates-using-certificate-services-web-form">Q248107: Creating Server Certificates Using Certificate Services Web Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248107
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 02-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you enable secure communications (SSL and TLS) on an Internet Information
+Services (IIS) 5.0 computer, you must first obtain a server certificate. With
+the integration of certificates in Windows 2000 and the new additions to IIS
+5.0, there are several ways to obtain a server certificate.
+
+MORE INFORMATION
+================
+
+Usually, you would use the Web Server Certificate Wizard to perform this task;
+however, you can also use the Web forms that are included with Certificate
+Services 2.0 to create a key pair that is signed by your CA without having to
+use the Web Server Certificate Wizard. This can save time if you do not already
+have a site configured, but already know the information needed to create the
+certificate for the site.
+
+To create a server certificate, perform the following steps:
+
+NOTE: You must be an administrator to complete the following steps.
+
+1. On the computer where the Web site will reside, browse to your certificate
+  server's Web pages (usually located at http://servername/certsrv, where
+  servername is the name of the server hosting IIS and the certificate server).
+
+2. Choose Request a Certificate, and then click Next.
+
+3. Choose Advanced Request, and then click Next.
+
+4. Choose Submit a Certificate Request to This CA Using a Form, and then click
+  Next.
+
+5. Under Identifying Information, in the Name field, choose a common name for
+  the Web site.
+
+  For example, if users will type "https://server" into their browser, then the
+  common name would be "server." However, if the user will contact your site
+  using "https://www.server.com," then the common name will need to reflect
+  this by using "www.server.com" as the server name.
+
+6. For the rest of the information under Identifying Information, follow the
+  instructions for e-mail, company, and so on.
+
+7. In the Intended Purpose section, choose Server Authentication Certificate
+  from the drop-down list.
+
+8. In the Key Options section, leave everything at the defaults, but click to
+  enable the Use Local Machine Store option.
+
+9. Be sure to enable the Mark Private Key as Exportable check box if you want to
+  backup this key pair later (recommended). If you do not do this, you will not
+  have the option to export the private key at a later time (only the public
+  key).
+
+10. Click Submit.
+
+11. When you are prompted to Install the Certificate, do so. This adds the
+  certificate to your certificate store (the local computer store).
+
+Now that you have a certificate in the local computer store, in order to use it
+in IIS, do the following:
+
+1. Open the Internet Services Manager (or custom MMC containing IIS) and
+  navigate to the site where you want to enable secure communications.
+
+2. Right-click on the Web site and choose Properties.
+
+3. On the properties page for the site, click the Directory Security tab.
+
+4. Click Server Certificate.
+
+5. When the Web Server Certificate Wizard appears, click Next.
+
+6. Choose Assign an Existing Certificate, and then click Next.
+
+7. In the list, choose the certificate that you added to the store using the
+  Certificate Web Forms, and then click Next.
+
+8. When the summary screen appears, showing you the certificate you are about to
+  bind to the Web site, make sure the information is correct. If everything
+  looks good, click Next.
+
+9. Click Finish to close the wizard.
+
+10. Test your site to make sure you can access it using an https request (for
+  example, https://common name).
+
+For more information, see the Internet Information Services 5.0 online
+documentation, which can be found at http://localhost/IISHelp (the default
+path).
+
+Additional query words: iis 5 certificate wizard forms server authentication
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

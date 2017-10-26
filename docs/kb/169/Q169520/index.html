@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169520/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169520/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169520/","publisher":null,"image":null,"headline":"Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169520-xfor-installing-the-proxy-address-generator-for-exchange-ovvm">Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169520
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a multiple-site environment, sites other than the site where LinkAge Message
+Exchange is installed need the proxy generator and the address template to send
+and receive mail with the connected systems.
+
+The following instructions identify the steps necessary to install the proxy
+generator and the address template for the LinkAge Exchange-OV/VM Connector on a
+site separate from the site where the connector is installed.
+
+1. The following files are required for these steps, and can be obtained from
+  the C:\Linkage\Install directory on the currently installed LinkAge
+  connector:
+
+   - Mexitmpl.exe
+
+   - Exiaddr.exe
+
+   - Ibmpxgen.dll
+
+   - Ibmscr.blt
+
+   - Ibmadt.blt
+
+   - Ibmadt.hlp
+
+2. Create a C:\Linkage\Install directory on the Exchange Server computer in the
+  site where the proxy generator and the address template are to be installed,
+  and copy the above files to this directory.
+
+3. Create the following directory where the PROFS proxy address generator will
+  exist:
+
+     \\MEXServerName\Address\PROFS\I386
+
+4. Copy the following file into the directory created in step 3:
+
+  Ibmpxgen.dll
+
+5. Run the following command from the C:\Linkage\Install directory to install
+  the PROFS address template on the Exchange Server computer:
+
+        mexitmpl "/org=MEXOrganization" "/site=MEXSite"
+        "/Server=MEXServerName" /ADDRTYPE=PROFS
+        /SYNTAX=c:\linkage\install\ibmscr.blt
+        /ADDRESS_DT=c:\linkage\install\ibmadt.blt
+        /LANGUAGE=409 /FILE=c:\linkage\install\ibmadt.hlp
+        /DATA16=c:\linkage\install\ibmadt.hlp
+        /DATA32=c:\linkage\install\ibmadt.hlp /SF
+
+6. Check the following files to see if any errors occurred with the above
+  command:
+
+   - Lmeistat.txt
+
+   - Lmeilog.txt
+
+7. Run the following command from the C:\Linkage\Install directory to install
+  the proxy address rule and to optionally generate proxy addresses:
+
+        mexiaddr "/org=MEXOrganization" "/site=MEXSite"
+        /Server=MEXServerName"  /ADDRTYPE=PROFS
+        /MACHINE=I386 "/PROXYRULE=PROFS:nodeid(&amp;m)"
+        /PROXYDLL=c:\linkage\install\ibmpxgen.dll  /SF
+
+  Replace nodeid with the node ID assigned to the connector.
+
+  If proxy addresses are NOT to be generated, then insert /NOGENADDR before the
+  /SF
+
+8. Check the following file to see if any errors occurred with the above
+  command:
+
+   - Lmeistat.txt
+
+   - Lmeilog.txt
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

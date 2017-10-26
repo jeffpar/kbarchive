@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156358: How to Manually Add Support for a Second Processor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156358: How to Manually Add Support for a Second Processor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156358/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156358/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156358/","publisher":null,"image":null,"headline":"Q156358: How to Manually Add Support for a Second Processor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156358-how-to-manually-add-support-for-a-second-processor">Q156358: How to Manually Add Support for a Second Processor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156358
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to change Windows NT from single processor support to
+multiprocessor support or from multiprocessor support to single processor
+support.
+
+MORE INFORMATION
+================
+
+Before you start, make sure that you have a complete, working backup of the
+system files and the registry, and that you have a current Emergency Repair Disk
+(ERD). To create an updated ERD, run Rdisk.exe from a command prompt, and then
+select Update Repair Info.
+
+To add support in Windows NT for an additional processor, follow these steps:
+
+NOTE: Some Compaq computers require a different HAL -- Halsp.dll. Refer to the
+latest Compaq Software Support Disk SSD for details.
+
+1. Install Windows NT to a separate folder on your hard disk, and then restart
+  your computer to the new installation of Windows NT.
+
+2. In the %SystemRoot%\system32 folder of your original Windows NT installation,
+  rename the following files to alternate names:
+
+  Ntoskrnl.exe
+  Hal.dll
+  Kernel32.dll
+  Ntdll.dll
+  Winsrv.dll
+  Win32k.sys (additional file in Windows NT 4.0 only)
+
+3. Determine which multiprocessor HAL your computer requires using the following
+  list:
+
+     Halast.dll    = "AST Manhattan SMP"
+     Halsp.dll     = "Compaq SystemPro Multiprocessor or 100% Compatible"
+     Halcbus.dll   = "Corollary C-bus Architecture"
+     Halmca.dll    = "IBM PS/2 or other Micro Channel-based PC"
+     halmpsm.dll   = "Micro Channel Multi Processor PC"
+     Halapic.dll   = "MPS Uniprocessor PC"
+     Halmps.dll    = "MPS Multiprocessor PC"
+     Halncr.dll    = "NCR System 3000 Model 3360/3450/3550"
+     Haloli.dll    = "Olivetti LSX5030/40"
+     Hal.dll       = "Standard PC"  (single processor HAL)
+     Hal486c.dll   = "Standard PC with C-Step i486"
+     Halwyse7.dll  = "Wyse Series 7000i Model 740MP/760MP"
+
+4. NOTE: The Ntkrnlmp.exe and appropriate HAL file need to be the same version
+  as that of the NT installation. Failure to get files from the appropriate
+  service pack will result in system instability and error message on blue
+  screens. This also applies for files that require manual expansion with the
+  Expand.exe tool that need to be obtained from the service pack cd or
+  directory location.
+
+  Copy the Ntkrnlmp.exe file and the appropriate HAL file from the Windows NT
+  CD-ROM to the %SystemRoot%\system32 folder of your original Windows NT
+  installation. If a service pack has been installed to the system, copy the
+  files from the current service pack version cd or install location to the
+  %SystemRoot%\system32 folder of your original Windows NT installation. Once
+  the files are in place, rename them to Ntoskrnl.exe and Hal.dll,
+  respectively.
+
+5. Copy the Ntdll.dll file from the original Windows NT CD-ROM
+  %SystemRoot%\system32 folder of your original Windows NT installation. If a
+  service pack has been installed to the system, copy the files from the
+  current service pack version cd or install location to the
+  %SystemRoot%\system32 folder of your original Windows NT installation.
+
+6. From a command prompt, expand the Kernel32.dll and Winsrv.dll files from the
+  Windows NT CD-ROM or installed service pack to the %SystemRoot%\system32
+  folder of your original Windows NT installation. For example, type the
+  following commands:
+
+  expand kernel32.dl_ %systemroot%\system32\kernel32.dll
+  expand winsrv.dl_ %systemroot%\system32\winsrv.dll
+
+NOTE: To properly expand files from the Windows NT CD-ROM, you must use the
+Expand.exe utility included with Windows NT. The Windows NT Expand.exe utility
+can only be run from a command prompt in a 32-bit environment such as Microsoft
+Windows 95 or Windows NT.
+
+NOTE: In Windows NT 4.0, the Win32k.sys file is also required. Expand it from the
+original Windows NT CD-ROM or the installed service pack.
+
+7. Restart your computer.
+
+8. When the Windows NT kernel loads, ensure that it displays "Multiprocessor
+  kernel" during startup.
+
+Support for the second processor is now installed and is ready for use. To return
+to single processor support, restore the old files to the original names in the
+%System Root%\System32 folder, and then restart the computer.
+
+NOTE: The files located on the Window NT CD-ROM and in the service packs are
+multiprocessor-aware. To return to a single processor, you must install Windows
+NT on a single-processor computer, install any applicable service packs, and
+then copy the associated files from that computer to the computer you want to
+return to a single processor. You should also update the Setup.log file in the
+$SystemRoot%\Repair folder to reflect the correct state of your computer in
+order for future service packs and the repair process to function properly. To
+update the Setup.log file you must manually enter the correct file and checksum
+value. For a listing of the correct values, see the following article in the
+Microsoft Knowledge Base:
+
+  Q168132 After Applying Service Pack NT Reports Single Processor
+
+For additional information, see the following articles in the Microsoft Knowledge
+Base:
+
+  ARTICLE-ID: Q124541
+  TITLE : Use UPTOMP.EXE to Upgrade Single-Processor to Multiprocessor
+
+  ARTICLE-ID: Q148245
+  TITLE : Upgrading from Uni- to Multi-Processor Requires Service Pack
+
+  ARTICLE-ID: Q142660
+  TITLE : Upgrade from Uni- to Multiprocessor (Uptomp.exe)and Win32k.sys
+
+NOTE: When you change to or from single or multiple processors, if you are using
+Proxy 2.0 server on the same computer, you also need to replace the Ipfltdrv.sys
+driver as well (%SystemRoot%\system32\drivers). The single- processor version is
+36 KB in size and is located on the Proxy 2.0 CD-ROM in the
+Msproxy\I386\Routing\Up folder. The multiple-processor version is 34 KB in size
+and is located on the Proxy 2.0 CD-ROM in the Msproxy\I386\Routing folder.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

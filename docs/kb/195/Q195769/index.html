@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195769/","publisher":null,"image":null,"headline":"Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195769-events-38-and-92-logged-when-closing-5250-applet-session">Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195769
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following events are logged in the Windows NT Application Event Log after
+disconnecting a 5250 display session in the 5250 Applet included with SNA
+Server:
+
+Event ID: 92
+  Source: SNA APPC Application
+  Description: APPC TP detected abend of SNA subsystem
+
+  Event ID: 38
+  Source: SNA Server
+  Description: APPC session deactivated abnormally
+
+     Qualifier = 0005
+     Connection = &lt;connection name&gt;
+     LU alias = &lt;Local APPC LU Alias&gt;
+     PLU alias = &lt;Remote APPC LU Alias&gt;
+     Mode name = QPCSUPP
+     Session ID = &lt;session ID&gt;
+     LFSID = &lt;LFSID&gt;
+     Client Domain = &lt;client's domain&gt;
+     Client User = &lt;User ID&gt;
+     Client Machine = &lt;TCP/IP Address/NetBIOS name&gt;
+
+These events are logged even though the 5250 display session is properly
+disconnected using the Session Disconnect option.
+
+NOTE: Although this has only been observed with SNA Server's 5250 Applet, it
+could occur with any APPC application that calls the TEST_RTS_AND_POST verb to
+detect direction change for the conversation being used.
+
+CAUSE
+=====
+
+The 5250 Applet included with SNA Server 3.0 Service Pack 2 was modified to use
+the APPC TEST_RTS_AND_POST verb to detect change of direction for its APPC
+conversation. This was done as a performance enhancement. After this change was
+made, disconnecting a 5250 session in the 5250 Applet causes the
+TEST_RTS_AND_POST verb to be cancelled. The mechanism used to cancel this
+outstanding verb causes the Event 92 and 38 to be logged.
+
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 SP2, 3.0
+SP3, 4.0, and 4.0 SP1. We are researching this problem in SNA Server version 3.0
+and will post more information here in the Knowledge Base as it becomes
+available.
+
+This problem was corrected in the latest Microsoft SNA Server version 4.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+In this case, the event 38 and 92 messages are benign and do not indicate a
+problem. However, these events may be logged for other reasons that do indicate
+a problem. The following is a more detailed explanation of the Event 38
+Qualifier 0005 event:
+
+SNA Server sent an UNBIND(Cleanup) message on this session to the remote system
+in order to clean up the session.
+
+CAUSE: This problem can be caused by any one of the following:
+
+- The SNA Server client computer (where the 5250 emulator or APPC/CPIC
+  application is running) has lost its network session to the SNA Server.
+
+- The 5250 emulator or APPC/CPIC application issued a TP_ENDED(HARD) to cause
+  the LU6.2 session to be ended.
+
+- The 5250 emulator or APPC/CPIC application failed abnormally or was ended by
+  the user while in the middle of a conversation.
+
+ACTION:
+If a 5250 user is losing their emulation session unexpectedly (because of the
+client's network session being lost to the SNA Server), capture SNA Server
+client internal trace, a LU6.2 message trace, and an APPC API trace of the
+problem, along with a matching sniffer or Network Monitor trace showing the lost
+network session, and provide them to Microsoft support personnel.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

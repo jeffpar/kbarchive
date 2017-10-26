@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/229/Q229579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/229/Q229579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/229/Q229579/","publisher":null,"image":null,"headline":"Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q229579-prb-ce-activex-control-is-not-in-list-of-insertable-controls">Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q229579
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): _IK920 kbATL kbCtrlCreate kbMFC kbVC600 kbOSWinCEsearch kbCompGallery kbGrpDSMFCATL
+Last Modified: 18-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After building and registering a CE ActiveX control, there is no way to insert
+it onto a dialog box in the Resource Editor. The control does not appear in the
+"Insert ActiveX Control" dialog box. The control also does not appear in the
+list of controls in the "Components and Controls Gallery."
+
+CAUSE
+=====
+
+The Resource Editor and Components and Controls Gallery only recognize desktop
+ActiveX controls.
+
+RESOLUTION
+==========
+
+A desktop/Win32 version of the control must be created and registered, as
+follows:
+
+1. Using the project wizards, create a Win32 version of the control project in a
+  separate directory using the same name as the CE project (for ATL projects,
+  you also need to insert the control via the ATL Object Wizard).
+
+2. Close the project.
+
+3. Delete all files except for the .dsw and .dsp files.
+
+4. Rename Xxx.dsw to Xxx_win32.dsw, and Xxx.dsp to Xxx_win32.dsp.
+
+5. Copy the .dsw and .dsp files to the project directory of the CE ActiveX
+  control.
+
+6. Open Xxx_win32.dsw as a text file and find the reference to Xxx.dsp. Change
+  Xxx.dsp to Xxx_win32.dsp.
+
+7. Open Xxx_win32.dsw as a project workspace.
+
+8. If there are files in the CE project that are not Wizard-generated, you need
+  to add them by clicking Add To Project on the Project menu, and then clicking
+  Files.
+
+9. Build the project. The Win32 version of the control will automatically be
+  registered and available for inserting in the Resource Editor or Component
+  Gallery.
+
+The Win32 version of the control is only required at design time. A
+platform-specific build of the control will be used at run time (for example, in
+emulation, a version of the control built with x86em will be used).
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+"Converting a Windows CE ActiveX Control to a Windows Desktop Version" in
+"C:\Program Files\Windows CE Tools\Rlnvcce6.htm". This file comes with the CE
+Toolkit for Visual C++ 6.0.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q221083 BUG: Can't Insert CE ActiveX Control onto a Dialog Box in the
+  Resource Editor
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK920 kbATL kbCtrlCreate kbMFC kbVC600 kbOSWinCEsearch kbCompGallery kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

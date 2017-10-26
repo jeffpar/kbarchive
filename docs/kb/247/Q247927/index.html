@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247927/","publisher":null,"image":null,"headline":"Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247927-xcln-error-message-unable-to-update-public-freebusy-data">Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247927
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000,97,98
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Any of the following situations may occur when you work in Microsoft Outlook:
+
+- Outlook may try to write updated free and busy data to the Exchange Server
+  computer, based on the time interval that is set in Outlook.
+
+- You may quit and log off from Outlook.
+
+- You may start Outlook.
+
+When any of these situations occur, the following error message may be
+displayed:
+
+  Unable to update public free/busy data. You do not have sufficient
+  permissions to perform this operation on this object. See the folder contact
+  or your system administrator.
+
+CAUSE
+=====
+
+The default permissions have been changed to None on the Schedule+ Free Busy
+public folder object on the Exchange Server computer. The default permissions
+are set to Editor permissions during installation.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. At the Exchange Server computer, start the Exchange Server Administrator
+  program.
+
+2. Click to expand Folders.
+
+3. Click to expand System Folders.
+
+4. Click to expand Schedule+ Free/Busy.
+
+5. Click the folder for the server or site that is in question, and on the File
+  menu, click Properties.
+
+6. Click the General tab, and then click Client Permissions.
+
+7. Under Default, click Role of Editor, and then click OK.
+
+8. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:2000,97,98
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

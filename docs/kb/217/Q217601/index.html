@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217601: XADM: Incorrect Time Appears After Directory Is Modified | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217601: XADM: Incorrect Time Appears After Directory Is Modified" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217601/","publisher":null,"image":null,"headline":"Q217601: XADM: Incorrect Time Appears After Directory Is Modified","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217601-xadm-incorrect-time-appears-after-directory-is-modified">Q217601: XADM: Incorrect Time Appears After Directory Is Modified</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217601
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5,5.5 SP1,5.5 SP2
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 EXC55SP3Fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you modify an object in the directory, the directory may indicate that the
+object was modified at a different time. The time appears in Greenwich mean
+time, rather than the time zone in which you are located.
+
+For example, if you are located in the Pacific time zone and you modify an object
+in the directory at 2:00 P.M., the directory incorrectly indicates that the
+object was modified at 10:00 P.M. The eight-hour difference is the same as the
+difference between the Pacific time zone and Greenwich mean time.
+
+CAUSE
+=====
+
+This problem is known to occur when Microsoft Visual C++ version 6.0 is
+installed on the Exchange Server computer. The problem may also occur with other
+programs that install an updated version of the Msvcrt.dll file.
+
+
+This problem occurs because later versions of the Msvcrt.dll file reset the time
+zone information differently.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Directory
+
++--------------------------+
+| File name   | Version    | 
++--------------------------+
+| Dsamain.exe | 5.5.2504.0 | 
++--------------------------+
+
+This hotfix has been posted to the following Internet location as Psp2diri.exe
+(x86) and Psp2dira.exe (Alpha):
+
+  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/eng/Exchg5.5/PostSP2/DIR-fix/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+This problem was first corrected in Exchange Server 5.5 Service Pack 3.
+
+
+Additional query words: time stamp
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2
+Version           : winnt:5.5,5.5 SP1,5.5 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

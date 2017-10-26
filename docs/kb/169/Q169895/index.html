@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169895: Enabling 128-bit Encryption for Routing and Remote Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169895: Enabling 128-bit Encryption for Routing and Remote Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169895/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169895/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169895/","publisher":null,"image":null,"headline":"Q169895: Enabling 128-bit Encryption for Routing and Remote Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169895-enabling-128-bit-encryption-for-routing-and-remote-access">Q169895: Enabling 128-bit Encryption for Routing and Remote Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169895
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP3
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you upgrade a Remote Access Service (RAS) server that uses 128-bit encryption
+to Routing and Remote Access Service, you will have only 40-bit demand-dial and
+RAS encryption. The following information explains how to restore 128-bit
+encryption with Routing and Remote Access Service.
+
+MORE INFORMATION
+================
+
+If you have the North American version of Windows NT Server version 4.0 Service
+Pack 3 it is possible to enable strong encryption (128-bit) for Routing and
+Remote Access Services.
+
+Use the following steps to determine which version of encryption that is actually
+installed:
+
+1. Start Windows NT Explorer and find the %Systemroot%\System32\Drivers
+  directory.
+
+2. Right-click on the file Ndiswan.sys, point to Properties, and then click.
+
+3. Click the Version tab from the Properties sheet and look at the Description
+  field.
+
+  The Description of the 40-bit version is:
+
+  MS WAN Wrapper Network Driver (Export Version)
+
+The Description of the 128-bit version is:
+
+  MS WAN Wrapper Network Driver (Domestic Use Only)
+
+To allow for the use of strong encryption in Routing and Remote Access:
+
+1. Apply the North American version of Service Pack 3.
+
+2. Install Routing and Remote Access Services.
+
+3. In the %SystemRoot%\System32\Drivers directory, rename the 40-bit Ndiswan.sys
+  file to Ndiswan.old.
+
+4. Copy the 128-bit Ndiswan.sys file from the North American Service Pack 3 to
+  the %SystemRoot%\System32\Drivers directory.
+
+5. Restart your computer.
+
+
+NOTE: If you install a network adapter or service after you have installed
+Routing and Remote Access Service, and if the adapter or service requires you to
+reinstall Service Pack 3, you must then update Routing and Remote Access
+Service. To update Routing and Remote Access, go to Control Panel, Network,
+Services, select Routing and Remote Access, and then click Update. Type the path
+to the Routing and Remote Access files. When you do this you will have to
+re-copy the 128-bit version of Ndiswan.sys from the service pack.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q174474 Installing RRAS Disables 128-bit RAS Encryption
+
+Additional query words: rras
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search kbWinNTS400
+Version           : :4.0,4.0 SP3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

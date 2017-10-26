@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216318/","publisher":null,"image":null,"headline":"Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216318-fix-slow-performance-of-remote-views-w-sql-server-text-fields">Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216318
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.6,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbvfp kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox kbGrpDSMDAC kbD
+Last Modified: 20-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Data Access Components versions 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Application performance gradually degrades when inserting records into a remote
+view of a Microsoft SQL Server table containing text fields. The performance
+degradation becomes more evident as the table grows in size.
+
+CAUSE
+=====
+
+With the 3.60 version of the Microsoft SQL Server ODBC driver (SQLSVR32.DLL),
+INSERTing data into remote views of SQL Server tables that contain one or more
+text fields initiates a table scan on the server.
+
+With SQL Server ODBC driver (SQLSRV32.DLL) version 3.70 and later, INSERTing data
+into remote views of SQL Server tables that contain one or more text fields
+initiates a table scan on the server under the following conditions:
+
+- A connection is being made to SQL Server 6.5.
+
+- The compatibility level of the driver has been set to SQL Server 6.5.
+
+RESOLUTION
+==========
+
+This issue has been addressed in Visual Studio 6.0 Service Pack 3.
+
+For earlier versions of Visual FoxPro, depending on the version of SQL Server
+that is being accessed, there are multiple workarounds for this problem:
+
+- If connecting to SQL Server 7.0, use SQL Server ODBC Driver (version 3.70 or
+  later) set to SQL Server 7.0 compatibility mode.
+
+- If connecting to SQL Server 6.5, use one of the 2.xx.xxxx versions of the SQL
+  Server ODBC Driver.
+
+- Use SQL Pass Through as shown here:
+
+  lcConnStr="DRIVER={SQL Server};SERVER=My_Server;DATABASE=PUBS;UID=sa;PWD="
+  gnConnHandle=SQLSTRINGCONN(lcConnStr)
+  IF gnConnHandle&gt;0
+     m.starting_value=SECONDS()
+     for i=1 to 2000
+        SQLCommand="Insert into test_1 values ('"+ ;
+        ALLTRIM(STR(i))+"','"+REPLICATE('ABCDE ',10)+"')"
+        test=SQLEXEC(gnConnHandle,SQLCommand)
+        IF test &lt; 0 then
+           AERROR(myerr)
+           DISP MEMO LIKE myerr
+           RETURN
+        ENDIF
+     NEXT
+     m.ending_value=SECONDS()
+     ? m.ending_value-m.starting_value
+     =SQLDISCONN(gnConnHandle)
+  ENDIF
+
+- Use an ADO RecordSet as shown here:
+
+  lcConnStr="DRIVER={SQL Server};SERVER=My_Server;DATABASE=PUBS;UID=sa;PWD="
+  oConnection=CREATEOBJECT("ADODB.Connection")
+  oConnection.ConnectionString = lcConnStr
+  oConnection.CursorLocation   = 3
+  oConnection.OPEN
+  lcSQL="select * from test_1"
+  rs=CREATEOBJECT("ADODB.Recordset")
+  rs.activeconnection         = oConnection
+  rs.CursorLocation           = 3
+  rs.cursortype               = 1
+  rs.LockType                 = 3
+  rs.OPEN(lcSQL)
+  m.starting_value=SECONDS()
+  for i=1 to 2000
+     rs.addnew
+     rs.FIELDS(0).VALUE=ALLTRIM(STR(i))
+     rs.FIELDS(1).VALUE=REPLICATE('ABCDE ',10)
+     rs.UPDATE
+  NEXT
+  m.ending_value=SECONDS()
+  ? m.ending_value-m.starting_value
+  rs.CLOSE
+
+STATUS
+======
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. If using SQLSRV32.DLL version 3.70 or later, set the compatibility level of
+  the SQL Server ODBC driver for Visual FoxPro to 6.5 compatibility mode.
+
+2. Create a program file named Testsql.prg using the following code:
+
+NOTE: This program creates a new SQL Server table in the database that the DSN
+specifies as the default and necessitates appropriate permissions.
+
+  SET SAFETY OFF
+  SET EXCLUSIVE ON
+  SET MULTILOCKS ON
+  gnConnHandle=SQLCONNECT('MYDSN','sa','')
+  =sqltables(gnConnHandle,'TABLE')
+  SELECT SQLRESULT
+  IsFound=.F.
+  LOCA
+  SCAN FOR UPPER(ALLTRIM(TABLE_NAME))="TEST_1"
+      IsFound=.T.
+      EXIT
+  ENDSCAN
+  IF IsFound
+      SQLCommand="DELETE FROM TEST_1"
+  ELSE
+      SQLCommand="CREATE TABLE TEST_1 (VAR1 CHAR(10) NULL, VAR2 TEXT NULL)"
+  ENDIF
+  testval=SQLEXEC(gnConnHandle,SQLCommand)
+  CREATE DATABASE testa &amp;&amp; CREATE a DATABASE
+  CREATE CONNECTION test1 CONNSTRING "DRIVER={SQL Server};" + ;
+      "SERVER=MY_SERVER;DATABASE=PUBS;UID=sa;PWD="
+  CREATE SQL VIEW testb REMOTE CONNECTION test1 ;
+      AS SELECT * FROM dbo.test_1 test_1
+  =DBSETPROP('TEST1','Connection','DispLogin', 3)
+  =DBSETPROP('TEST1','Connection','Asynchronous', .T.)
+  =DBSETPROP('TEST1','Connection','DispWarnings', .T.)
+  =DBSETPROP('TEST1','Connection','BatchMode', .F.)
+  =DBSETPROP('TEST1','Connection','Transactions', 2)
+  =DBSETPROP('TEST1','Connection','PacketSize',8192)
+  =DBSETPROP('TEST1','Connection','Comment', 'Comment Added')
+  =DBSETPROP('TEST1','Connection','ConnectTimeOut', 10)
+  =DBSETPROP('TEST1','Connection','IdleTimeOut', 0)
+  =DBSETPROP('TEST1','Connection','QueryTimeOut', 0)
+  =DBSETPROP('TEST1','Connection','WaitTime',100)
+  =DBSETPROP("TESTB",'View','SendUpdates',.T.)
+  =DBSETPROP("TESTB",'View','UpdateType',1)
+  =DBSETPROP("TESTB",'View','WhereType',3)
+  =DBSETPROP("TESTB",'View','BatchUpdateCount',1)
+  =DBSETPROP("TESTB",'View','UseMemoSize',255)
+  =DBSETPROP("TESTB",'View','FetchSize',100)
+  =DBSETPROP("TESTB",'View','FetchMemo',.T.)
+  =DBSETPROP("TESTB",'View','MaxRecords',-1)
+  =DBSETPROP("TESTB",'View','Tables','dbo.test_1')
+  =DBSETPROP("TESTB",'View','Prepared',.T.)
+  =DBSETPROP("TESTB",'View','CompareMemo',.T.)
+  =DBSETPROP("TESTB",'View','FetchAsNeeded',.F.)
+  USE testb
+  =AFIELDS(viewflds)
+  FOR i=1 TO ALEN(viewflds,1)
+      fld_name=viewflds[i,1]
+      viewfield=ALLTRIM("TESTB")+"."+ALLTRIM(fld_name)
+      IF i=1
+          =DBSETPROP(viewfield,'Field','KeyField',.T.)
+      ELSE
+          =DBSETPROP(viewfield,'Field','KeyField',.F.)
+      ENDIF
+      =DBSETPROP(viewfield,'Field','Updatable',.T.)
+      update_field="dbo.test_1."+alltrim(fld_name)
+      =DBSETPROP(viewfield,'Field','UpdateName',update_field)
+  NEXT
+  m.starting_value=SECONDS()
+  FOR i=1 TO 2000
+      INSERT INTO testb VALUES ;
+          (ALLTRIM(STR(RECCOUNT()+1)), ;
+          REPLICATE('ABCDE ',10))
+  NEXT
+  m.ending_value=SECONDS()
+  ? m.ending_value-m.starting_value
+  CLOSE ALL
+  =SQLDISCONN(gnConnHandle)
+  CLEAR ALL
+  RETURN
+
+3. Run the program file and note the elapsed time.
+
+4. Run the SQL Pass Through code from above and note the elapsed time.
+
+5. Run the ADO sample code from above and note the elapsed time.
+
+6. If using SQLSRV32.DLL version 3.70 or later, reset the compatibility level of
+  the SQL Server ODBC driver for Visual FoxPro to the original value.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information setting the compatibility level of the SQL Server
+ODBC Driver for a specific application, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q231812 HOWTO: Programmatically Set the Compatibility Level of the SQL Server
+  ODBC Driver
+
+For additional information restoring the compatibility level of the SQL Server
+ODBC Driver to SQL 7.0 compatibility for a specific application, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q233539 HOWTO: Programmatically Reset the Compatibility Level Setting of SQL
+  Server ODBC Driver Version 3.70
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbMDAC260 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,2.6,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

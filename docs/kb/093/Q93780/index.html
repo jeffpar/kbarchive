@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93780: Installing WinLogin with Windows for Workgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93780: Installing WinLogin with Windows for Workgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93780/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93780/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93780/","publisher":null,"image":null,"headline":"Q93780: Installing WinLogin with Windows for Workgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93780-installing-winlogin-with-windows-for-workgroups">Q93780: Installing WinLogin with Windows for Workgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93780
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 1.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+- Microsoft WinLogin, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To install Microsoft WinLogin with Windows for Workgroups, you must follow the
+procedures in this article for all computers that will be running the WinLogin
+application.
+
+NOTE: These procedures only work with a Windows for Workgroups network or
+Microsoft LAN Manager network, as they can connect through the MS-DOS level
+before starting Windows for Workgroups.
+
+MORE INFORMATION
+================
+
+Make the following changes for each computer that will be running Windows for
+Workgroups and WinLogin:
+
+1. From your Windows for Workgroups Disk 3 (either 5.25-inch or 3.5-inch disks),
+  expand a copy of the MSNET.DR_ file and place this file in the WINDOWS\SYSTEM
+  directory.
+
+  Type the following command at the MS-DOS command prompt to expand the file:
+
+  expand x:\MSNET.DR_ c:\windows\system\msnet.drv
+
+  where x is the floppy drive that contains the MSNET.DR_ file.
+
+2. In the [BOOT] section of the SYSTEM.INI file, change the following line:
+
+       NETWORK.DRV=WFWNET.DRV
+
+  to:
+
+       NETWORK.DRV=MSNET.DRV
+
+3. In the [386Enh] section of the SYSTEM.INI file, comment out the following
+  line:
+
+        NETWORK=VNETBIOS.386,VNETSUP.386,VREDIR.386,VSERVER.386,
+        VBROWSE.386,VWC.386
+
+  by placing a semicolon (;) as the first character, as follows:
+
+        ;NETWORK=VNETBIOS.386,VNETSUP.386,VREDIR.386,VSERVER.386,
+        VBROWSE.386,VWC.386
+
+4. Add the following line to the [386Enh] section of the SYSTEM.INI file:
+
+  NETWORK=*VNETBIOS,*DOSNET
+
+5. (Optional) To keep the WinLogin application transparent to users, you may
+  want to add the following as the last line in the AUTOEXEC.BAT file:
+
+  net start enhanced
+
+  This starts the MS-DOS redirector without any intervention from the user, and
+  after the computer is started, the user needs to type a user name and
+  password only. The user can then start Windows for Workgroups (along with the
+  WinLogin application).
+
+6. To install the WinLogin Client Software, you must first log in at the MS-DOS
+  level and connect to the server\share locations where WinLogin is installed
+  before you start Windows for Workgroups.
+
+7. Start Windows for Workgroups. You will receive an error message stating that
+  you do not have network connections because you are using the MSNET.DRV
+  driver.
+
+8. Start File Manager. You will not have Network options; however, you will see
+  the network drives that you connected to before starting.
+
+9. Install the Client software from either a disk drive or network drive.
+
+Once the software is installed, you must do one of the following to have all
+Windows for Workgroups functionality returned:
+
+- Edit the SYSTEM.INI file in the users directory and remove the remarks from
+  steps 2, 3, and 4 above.
+
+  -or-
+
+- Using the INI Editor, add to the WinLogin database the lines in SYSTEM.INI
+  that reflect Windows for Workgroups entries (steps 2, 3, and 4 above).
+
+Once the changes have been made, you have full functionality of both WinLogin and
+Windows for Workgroups. You can share resources as well as connect to shared
+resources.
+
+It is not necessary to create a persistent connection to the server containing
+the WinLogin database because the WinLogin application can connect and
+disconnect as necessary.
+
+Additional query words: 3.10 1.0 win login
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWinLoginSearch kbWFW310 kbWinLogin100
+Version           : :1.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

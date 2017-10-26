@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243444/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243444/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243444/","publisher":null,"image":null,"headline":"Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243444-bug-cstdlib-does-not-define-the-namespace-std">Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace "STD"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243444
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompilerkbbuglist
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to reference a function from the STD C++ library header
+&lt;cstdlib&gt; using the namespace STD (for example, std::exit(0)) causes the
+compiler to emit a C2653 or a C2039 (depending upon whether or not namespace
+"STD" is defined at the point where the error is emitted).
+
+CAUSE
+=====
+
+&lt;cstdlib&gt; does not define the namespace "STD". This is contrary to the
+VC++ documentation, which says:
+
+  "Include the standard header &lt;cstdlib&gt; to effectively include the
+  standard header &lt;stdlib.h&gt; within the std namespace."
+
+RESOLUTION
+==========
+
+To work around the problem, place the "#include &lt;cstdlib&gt;" in the
+namespace "STD".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Attempting to compile the following will cause the compiler to display the
+following error:
+
+  "error C2653: 'std' : is not a class or namespace name"
+
+  // Compile Options:  /GX
+  #include &lt;cstdlib&gt;
+
+  void main()
+  {
+       std::exit(0);
+  }
+
+However, attempting to compile the following causes the compiler to display the
+following error:
+
+  "error C2039: 'exit' : is not a member of 'std'"
+
+  // Compile Options:  /GX
+  #include &lt;vector&gt;
+  #include &lt;cstdlib&gt;
+
+  void main()
+  {
+       std::exit(0);
+  }
+
+In the first case, the C2653 is displayed, because the namespace "STD" has not
+been defined. In the second case, the C2039 is displayed, because the namespace
+"STD" has been defined (in the header &lt;vector&gt;), but the function exit is
+not part of that namespace. To work around the problem in either case, simply
+enclose the "#include &lt;cstdlib&gt;" in the namespace "STD", as follows:
+
+  // Compile Options:  /GX
+  namespace std {
+  #include &lt;cstdlib&gt;
+  };
+
+  void main()
+  {
+       std::exit(0);
+  }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompiler kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

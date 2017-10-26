@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153619/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153619/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153619/","publisher":null,"image":null,"headline":"Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153619-windows-nt-40-configures-pc-card-hard-disk-as-drive-c">Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153619
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you run Windows NT on a computer with two IDE adapters (for example, Dual
+channel EIDE) and a PC-Card (PCMCIA) controller with a type III slot (suitable
+for hard disks), you may encounter the following problem.
+
+When you boot Windows NT with a PC-Card hard disk, your internal fixed disk is no
+longer configured as drive C. This drive letter is assigned to the PC-Card disk
+instead.
+
+Because the drive letters of your internal hard disk have changed, most of your
+applications will stop working.
+
+CAUSE
+=====
+
+When configuring the PC-Cards, Pcmcia.sys detects that there is an IDE hard disk
+in the slot and tries to find an available IDE adapter configuration. If the
+primary and secondary adapter are in use (for example, one disk and one CD-ROM,
+each on its own bus) it will configure the PC-Card as a third adapter on IO port
+0x160.
+
+Later during the startup process, when the ATDISK driver starts up it will search
+for possible IO ports, it will find the interface of the PC-Card first and
+configure the PC-Card hard disk as hard disk 0.
+
+If there is no manual drive letter configuration in the registry, hard disk 0
+will be configured as drive C and the drive letters of the other volumes will be
+changed.
+
+WORKAROUND
+==========
+
+To regain your original drive letter assignment you need to create a manual
+configuration for your drive letters as follows:
+
+1. Log in with an administrative account and, using Disk Administrator,
+  configure your CD-ROM drive to a high drive letter such as Z.
+
+2. Shut down Windows NT, turn off the computer and remove the PC-Card hard disk.
+
+3. Turn on the computer, boot Windows NT and log on as an administrator.
+
+4. Quit all applications and stop and disable unneeded services, for example
+  server service, so you have maximum number of unlocked volumes. Volumes
+  containing Windows NT and a page file cannot be unlocked.
+
+NOTE: For more information on locked volumes, please see the following article in
+the Microsoft Knowledge Base:
+
+Q136425Err Msg: The Drive Cannot Be Locked for Exclusive Use
+
+1. Start Disk Administrator and write down the current drive letter assignments.
+
+2. Reassign all drive letters of your hard disk to some high drive letter
+  starting with the high drive letters, for example, assign F to Y, E to X and
+  so on.
+
+3. If a drive is locked you have to restart to make the change effective. On
+  restart you might get a message stating that you do not have a proper page
+  file. You can ignore this until you are finished with the process.
+
+4. Continue the change as described in step 6. You may have to repeat step 4
+  after the restart to unlock volumes.
+
+5. When all drive letters are changed and there is no drive C after restart, you
+  can start to move the drive letters back to their original assignment. You
+  may have to restart here too because of locked volumes.
+
+6. When all drive letters are on their original place, shut down Windows NT,
+  turn off the computer, and insert the PC-Card hard disk into the slot.
+
+7. Turn on the computer again, start Windows NT and log on as an administrator.
+
+8. The PC-Card hard disk should use the first available drive letter. At this
+  point you can take care of your page file and enable the services you
+  disabled in step 4.
+
+9. Do not forget to save the current configuration to a floppy disk in Disk
+  Administrator and to run RDISK. You can use this information to import drive
+  letter assignments in other Windows NT installations on this computer, for
+  example if you have to reinstall for some reason.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.51 prodnt kbbug3.51
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

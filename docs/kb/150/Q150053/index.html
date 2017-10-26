@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150053/","publisher":null,"image":null,"headline":"Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150053-erratic-domain-logon-from-windows-95-dial-up-networking">Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150053
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.51,4.0,95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Remote connection to a Windows NT domain fails using the Windows 95 Dial-Up
+Networking (DUN) client. Your logon scripts will not run, and you get the
+following error message:
+
+  No domain server was available to validate your password. You may not be able
+  to gain access to some network resources.
+
+Following this error you may be prompted with the domain logon dialog box
+requesting your user name, password, and domain name. In most cases you will
+eventually be able to connect but without domain validation.
+
+CAUSE
+=====
+
+This problem occurs when you use a portable computer that was once connected
+locally to a LAN through a network interface card (NIC). The computer's NIC was
+not removed or disabled, and the first two octets of the DHCP-assigned subnetted
+class B IP address are the same for both the NIC and the dial-up adapter.
+
+WORKAROUND
+==========
+
+Create a hardware profile for remote connections that does not include the NIC
+as part of the installed hardware.
+
+NOTE: After you have configured more than one hardware profile for a computer
+running Windows 95, a menu automatically appears during the booting process
+listing all available hardware profiles as numbered choices. The user may choose
+only one per computing session.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows 95.
+
+A potential fix for this issue is documented in the following article in the
+Microsoft Knowledge Base:
+
+  Q154434 Err Msg: No Domain Controller Was Available to Validate...
+
+
+MORE INFORMATION
+================
+
+This problem was reported by corporate users who normally connect their portable
+computers to a corporate LAN when at the office. When they travel, they use a
+Windows 95 DUN connection to access their company's network resources.
+
+The problem usually appears under the following circumstances:
+
+- A portable computer running Windows 95 is connected to a local LAN using
+  TCP/IP. The laptop NIC gets a DHCP-assigned, subnetted class B address.
+
+- Later, the computer is physically disconnected from the LAN, but the NIC
+  remains in the computer.
+
+- From a remote location, the user attempts to dial in to an NT RAS server that
+  allows access to the company's LAN.
+
+- The NT RAS server uses DHCP to assign an IP address to the remote DUN client.
+
+- If the first two octets of the subnetted class B address are the same for the
+  client's NIC as for the PPP connection through the dial-up adapter, then the
+  access problem may appear.
+
+Additional query words: remote access service dial-up win95 timeout
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin95search kbZNotKeyword3
+Version           : :3.51,4.0,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

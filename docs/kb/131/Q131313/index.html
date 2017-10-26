@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131313/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131313/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131313/","publisher":null,"image":null,"headline":"Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131313-howto-create-32-bit-import-libraries-without-objs-or-source">Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131313
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,4.0,5.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbcode kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Library Manager (LIB.EXE), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 5.0, used with:
+      - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to create an import library given a .DLL for which you
+have no source code or object modules. There is no 32-bit utility that can
+create an import library from a .DLL, as there was with 16-bit versions of
+Visual C++.
+
+NOTE: This method may not work with DLLs generated with non-Microsoft development
+tools.
+
+MORE INFORMATION
+================
+
+Normally, when building a .DLL or any target that exports functions or data
+items, an import library (and exports file) is generated as part of the linking
+process. But in the case of a third-party .DLL that does not ship with an import
+library, you may need to generate an import library in order to use the .DLL
+successfully using load-time dynamic linking. An import library is not needed
+for run-time dynamic linking.
+
+There are two ways to create an import library given a .DLL:
+
+- Create a .DEF file for use with the LIB /DEF: command.
+
+- Stub out functions, and use the .OBJ files created to mimic the import/export
+  relationships. Then use the LIB /DEF: command to create the import library.
+
+Creating a .DEF file
+--------------------
+
+The only time you can use a .DEF file to create an import library from a .DLL for
+which you do not have the source code or object modules is if the .DLL exports
+functions via a C interface. Specifically, the functions need to have been
+declared to use the C calling convention. This is specified by the _cdecl
+attribute, normally used in the prototype for the function. Note that if no
+attribute is specified, _cdecl is the default when /Gz (_stdcall is the default)
+or /Gr (_fastcall is the default) is not specified on the CL command line. The
+reason for this limitation is based on an assumption made by the LIB utility
+that all names are automatically exported without a leading underscore. This is
+only true for _cdecl function names.
+
+Given a .DLL with functions exported via a C interface, you can create an import
+library by following these steps:
+
+1. Use DUMPBIN /EXPORTS &lt;.DLL file name&gt; to obtain the list of exported
+  symbols for the .DLL in question. The symbols appear in the "name" column of
+  the table whose headings are "ordinal hint name."
+
+2. Create a .DEF file that contains an EXPORTS section with the names of the
+  functions listed in the "name" column of the DUMPBIN output.
+
+3. For _cdecl functions, the symbol appears just as it would when used in the
+  calling program. Just place this symbol in the EXPORTS section of the .DEF
+  file.
+
+4. Use LIB /DEF:&lt;.DEF file name&gt; to generate the import library and
+  exports file. The base name of the import library will be the base name of
+  the .DEF file. Use /OUT: to control the output library name.
+
+Stubbing Out Functions
+----------------------
+
+For exported functions that use calling conventions other than C, the situation
+is a little more complex. This is especially true when you consider C++
+functions and the more complex name decoration schemes involved. To use this
+method, you must at least have the header file that describes the .DLL's
+interface.
+
+To create stubbed functions from prototypes in a header file:
+
+1. When "__declspec(dllimport)" is used in a prototype or declaration, change it
+  to "__declspec(dllexport)."
+
+2. For functions that do not return a value, for C functions in C source, and
+  for C functions in C++ source code (used with the 'extern "C"' construct),
+  replace the semicolon that terminates the function prototype with a matched
+  pair of curly braces ("{}").
+
+3. For C++ functions (global or member) that return a value, you must create a
+  dummy body for the function, and return a dummy value of the proper type.
+  (Not having a return statement in the function is illegal.) This goes for
+  class member functions, as well. Keep in mind that the purpose of this
+  procedure is to trick the LIB utility into generating the correct import
+  library, so these dummy bodies have no effect.
+
+4. For C++ classes, you can stub out the member functions by using the
+  prototypes in the class declaration, as long as you disable function inlining
+  when you compile.
+
+5. Function arguments are usually just specified by type in a header file. For
+  example, Geta(int). A dummy argument identifier must be specified when adding
+  the dummy function body Geta(int x). Otherwise the error C2055 is generated.
+
+Example
+-------
+
+If the header file that describes MYDLL.DLL looks like:
+
+  // mydll.H
+
+  extern "C" __declspec(dllimport) void _stdcall Function(void);
+
+  class __declspec(dllimport) CMyClass {
+       int a;
+       long b;
+  public:
+       int Geta(int);
+       long Getb();
+       CMyClass();
+  };
+
+The dummy source file you use to build the import library should look like:
+
+   // mydll.CPP
+
+   extern "C" __declspec(dllexport) void _stdcall Function(void) {}
+
+   class __declspec(dllexport) CMyClass {
+        int a;
+        long b;
+   public:
+        int Geta(int x) {return 111;}
+        long Getb() {return 111;}
+        CMyClass() {}
+   };
+
+Once the functions are stubbed out, all you need to do is compile the source file
+into an .OBJ file:
+
+  CL /c /Ob0 mydll.CPP
+
+NOTE: Disabling function inlining is required to force generation of symbols for
+the functions defined in CMyClass. If function inlining were enabled, the
+compiler would notice that there are no references to the member functions in
+the translation unit, so it would discard the function bodies. See the
+discussion on inline function expansion under Optimizations in the Visual C++ CL
+Command line reference.
+
+Once you have .OBJ files, you can use LIB /DEF: to create the import library
+(.LIB) and exports file (.EXP):
+
+  LIB /DEF: mydll.OBJ
+
+For more information on the LIB command, consult the "LIB Reference" in the
+Visual C++ Books Online.
+
+Also, see the following article in the Microsoft Knowledge Base:
+
+  Q140485 Exporting PASCAL-Like Symbols in 32-bit DLLs
+
+Additional query words: 2.50 2.55 LINK /LIB
+
+======================================================================
+Keywords          : kb3rdparty kbcode kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbLibSearch
+Version           : :2.0,2.1,4.0,5.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

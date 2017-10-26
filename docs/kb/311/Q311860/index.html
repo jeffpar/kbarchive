@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311860: The HP NTLock Services Do Not Start After Installing the SRP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311860: The HP NTLock Services Do Not Start After Installing the SRP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311860/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311860/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311860/","publisher":null,"image":null,"headline":"Q311860: The HP NTLock Services Do Not Start After Installing the SRP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311860-the-hp-ntlock-services-do-not-start-after-installing-the-srp">Q311860: The HP NTLock Services Do Not Start After Installing the SRP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q311860
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP6a
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg
+Last Modified: 28-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP6a 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP6a 
+- Microsoft Windows NT Workstation version 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the post-Windows NT 4.0 Service Pack 6a (SP6a) Security Rollup
+Package (SRP) on a Hewlett-Packard computer with Hewlett-Packard NTLock
+installed, you may receive any of the following error messages when you reboot
+the computer:
+
+  STOP c000021a
+
+  winlogon.exe - DLL Initialization Failed
+  Initialization of the dynamic link library C:\WINNT\System32\HPSmartF.dll
+  failed. The process is terminating abnormally.
+
+  HPolLock.exe - DLL Initialization Failed
+  Initialization of the dynamic link library C:\WINNT\System32\HPSmartF.dll
+  failed. The process is terminating abnormally.
+
+  WIxInitialize
+  HP Gina specific initialization failed: Disable ALL HP Lock features.
+
+If you uninstall NTLock properly before you install the SRP, the computer boots
+correctly and remains stable. However, the HPGate service does not start
+properly and you receive repeated "failed service" notifications every time you
+start the computer. If you then install the latest NTLock software, the computer
+does not boot properly and you may receive any of the error messages.
+
+CAUSE
+=====
+
+The SRP exposes an issue with Hewlett-Packard Entlk 2.2a and earlier versions of
+NTLock (Hpgate.sys) that is available from any of the following Hewlett-Packard
+sources:
+
+- The Hewlett-Packard Web site: Hewlett-Packard NTLock Software and Drivers
+  (http://www.support.vectra.hp.com/vectrasupport/indexes/Driver622.html)
+
+- The Hewlett-Packard recovery CD-ROM
+
+RESOLUTION
+==========
+
+To prevent this problem from occurring, use these steps:
+
+1. If Hewlett-Packard TopTools is installed, make sure that you have installed
+  the latest version. The latest versions of TopTools (TopTools 5.0 and 5.5)
+  are available from the following Hewlett-Packard Web site:
+
+  http://www.hp.com/toptools/
+
+2. If TopTools is not installed, install the updated version of NTLock before
+  you install the SRP. The updated version of NTLock is available from the
+  following Hewlett-Packard Web site:
+
+  http://www.support.vectra.hp.com/vectrasupport/indexes/Driver622.html
+
+MORE INFORMATION
+================
+
+For additional information about the SRP, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: blue screen crash hang
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400sp6 kbWinNTS400search kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

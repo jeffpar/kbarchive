@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85221/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85221/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85221/","publisher":null,"image":null,"headline":"Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85221-how-to-debug-a-dynamic-link-library-dll-in-windows">Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85221
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbHOWTOma
+Last Modified: 14-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Visual Workbench Integrated Debugger, used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The process of developing a dynamic-link library (DLL) with Visual C++ usually
+includes debugging. To do so, you must build a debugging version of the DLL and
+call it from an application. However, it is not necessary to build the debugging
+version of the calling application or to build the caller with Visual C++. The
+following five steps demonstrate debugging a DLL. Note that it is not within the
+scope of this article to provide detailed instructions for building the DLL.
+
+1. Build the DLL with debugging information.
+
+2. Specify the fully-qualified path to the calling application. In Visual C++
+  for Windows and Visual C++ 32-bit Edition version 1.0, choose Debug from the
+  Options menu and enter the information under Calling Program. In Visual C++
+  2.x and 5.0, choose Settings from the Project menu; in Visual C++ 4.0, choose
+  Settings from the Build menu. Select the Debug tab, and enter the information
+  under Executable For Debug Session.
+
+3. Set a breakpoint in the source code of the DLL function to debug. To do this,
+  place the cursor on the line in the source code to contain the breakpoint and
+  press F9.
+
+4. Choose Restart from the Debug menu. If the calling program does not contain
+  debugging information, a dialog box appears asking you to confirm your
+  choice. Choose OK and the program starts execution.
+
+5. After you perform the necessary steps to execute the function that contains
+  the breakpoint, execution stops on the specified line of code.
+
+Additional query words: symbolic
+
+======================================================================
+Keywords          : kbDebug kbide kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbHOWTOmaster 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

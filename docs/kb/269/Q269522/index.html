@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q269522: BUG: Data Doesn’t Revert to Original Value After CancelUpdate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q269522: BUG: Data Doesn’t Revert to Original Value After CancelUpdate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/269/Q269522/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/269/Q269522/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/269/Q269522/","publisher":null,"image":null,"headline":"Q269522: BUG: Data Doesn’t Revert to Original Value After CancelUpdate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q269522-bug-data-doesnt-revert-to-original-value-after-cancelupdate">Q269522: BUG: Data Doesn’t Revert to Original Value After CancelUpdate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q269522
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC210 kbMDAC210SP2 kbMDAC250 kbMDAC260
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0, used with:
+   - Microsoft Data Access Components versions 2.1, 2.1 (GA), 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, used with:
+   - Microsoft Data Access Components versions 2.1, 2.1 (GA), 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you update a bound text box by setting its text property in code, and then
+you call a CancelUpdate method, the value in the field does not revert to its
+original value.
+
+RESOLUTION
+==========
+
+Instead of setting the text property of the bound text box, set the value of the
+underlying recordset field directly, as follows:
+
+  Adodc1.Recordset!LastName = "Smith"
+
+The bound text box should update itself after you run the code. Subsequent calls
+to the CancelUpdate method then work as expected, and change the text box
+contents back to its original value.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Data Project in Microsoft Visual Basic. Form1 is created by
+  default.
+
+2. From the Project menu, click Components, and then click Microsoft ADO Data
+  Control from the list to load the ADO Data Control into the toolbox.
+
+3. Insert a Microsoft ActiveX Data Objects (ADO) data control, two text boxes,
+  and two command buttons on to Form1.
+
+4. Set the ConnectionString property of the ADO Data Control to:
+
+  Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\Microsoft Visual Studio\VB98\NWIND.MDB
+
+5. Set the Caption property of the first command button to "Copy" and set the
+  Caption property of the second command button to "Cancel Update".
+
+6. In the Click event of the command button labeled "Cancel Update", enter the
+  following code:
+
+  Adodc1.Recordset.CancelUpdate
+  Adodc1.Recordset.MoveNext
+  Adodc1.Recordset.MovePrevious
+
+7. In the Click event of the command button labeled "Copy", enter the following
+  code:
+
+  Text1.Text = Text2.Text
+
+8. Set the Recordsource property of the ADO data control to:
+
+  SELECT * FROM Employees
+
+9. Set the DataSource property of the Text1 text box to "adodc1", and set the
+  DataField property to "LastName".
+
+10. Run the project. You should see "Davolio" display in the bound text box, and
+  the text "text2" display in the unbound text box.
+
+11. Make a change to the name in Text1, and then click the Cancel command
+  button. The name "Davolio" reappears in the bound text box.
+
+12. Click the Copy command button. The value in the bound text box changes to
+  "text2".
+
+13. Click the Cancel command button. Nothing happens. The value in the
+  underlying recordset is permanently changed by the MoveNext method call and
+  the update is not cancelled.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC210 kbMDAC210SP2 kbMDAC250 kbMDAC260 kbMDAC250SP1 kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

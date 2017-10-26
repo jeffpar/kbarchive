@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/212/Q212937/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/212/Q212937/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/212/Q212937/","publisher":null,"image":null,"headline":"Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q212937-lan-sender-continually-tries-to-connect-to-deleted-child-site">Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q212937
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbScheduler kbSender kbsmsUtil kbsms200sp2fix kbSMSSender
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+LAN Sender and Scheduler may continue to attempt to connect to a deleted child
+site, delaying other requests. The following status message may be displayed:
+
+  ID 3400 SMS Scheduler does not have an address defined at site &lt;primary
+  site&gt; for site &lt;deleted sitecode&gt;. Files cannot be sent from site
+  &lt;primary site&gt; to site &lt;deleted sitecode&gt; until an address is
+  defined.
+
+.
+
+CAUSE
+=====
+
+When you remove a secondary site, Hierarchy Manager attempts to delete all jobs
+for the deleted site. However, jobs may still be sent to the deleted child site.
+SMS Executive contains many components or threads that can all function
+simultaneously. While Hierarchy Manager is deleting all jobs for the child site,
+Replication Manager, Distribution Manager, or Offer Manager may still be
+creating jobs for the deleted site. If the site has been deleted, these jobs are
+sent for a week (seven days), and then stop.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+WORKAROUND
+==========
+
+To work around this behavior:
+
+1. Run the preinst /delsite and preinst /deljob commands from a command prompt
+  at the parent site. The Preinst.exe tool is available in the
+  Support\Reskit\Bin\&lt;Platform&gt;\Dbmain folder on the Systems Management
+  Server (SMS) CD-ROM.
+
+2. Examine the Sched.log file in the &lt;Drive&gt;:\SMS\Logs folder on the
+  parent site. Look for recent entries with "Send Request" at the beginning of
+  the line, the deleted site code, and a "Pending" state.
+
+3. Locate and delete the referenced file in the SMS\Inboxes\Schedule.box folder
+  or its subfolders.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Systems Management
+Server version 2.0. This problem was first corrected in Systems Management
+Server version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+Scheduler and LAN Sender are thread components of SMS Executive. Scheduler
+manages data transfer between sites, based on user-defined addresses and sending
+schedules.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbScheduler kbSender kbsmsUtil kbsms200sp2fix kbSMSSender 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

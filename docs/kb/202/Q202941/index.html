@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q202941: SMS: Systems Management Server International Client Packs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q202941: SMS: Systems Management Server International Client Packs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/202/Q202941/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/202/Q202941/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/202/Q202941/","publisher":null,"image":null,"headline":"Q202941: SMS: Systems Management Server International Client Packs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q202941-sms-systems-management-server-international-client-packs">Q202941: SMS: Systems Management Server International Client Packs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q202941
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200preSP3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes International Client Packs (ICPs) for Systems Management
+Server (SMS).
+
+MORE INFORMATION
+================
+
+General Description
+-------------------
+
+An ICP is a bundle of SMS client installation files in various languages. ICPs
+are targeted for installation on English-language SMS site servers only. The
+languages supported in each ICP are cumulative. When you install an ICP, all of
+the languages contained in the ICP are installed; you cannot select a specific
+language. The ICP installation bundles are then distributed to the clients via
+the Client Access Points (CAPs) and the appropriate language files are installed
+on the client systems.
+
+ICPs Available by Product Version and Service Pack
+--------------------------------------------------
+
+- SMS 1.2: ICP1, ICP2
+
+- SMS 2.0: ICP1, ICP2, ICP3, ICP4, ICP5
+
+- SMS 2.0 Service Pack 1: ICP1, ICP4, ICP5
+
+- SMS 2.0 Service Pack 2: will have ICP1, ICP4, ICP5
+
+
+Separate ICPs for Each Service Pack
+-----------------------------------
+
+You must match service pack and ICP releases (for example, SMS 2.0 SP1 can use
+only SP1 ICPs, not SMS 2.0 ICPs).
+
+Languages Included in ICPs
+--------------------------
+
+See the Release Notes on the ICP CD-ROM for detailed information about supported
+languages. The ICPs and supported languages include:
+
+- ICP1:
+  English, French, German, Spanish, and Japanese
+  (Japanese was added to ICP1 for SMS 2.0 SP2)
+
+- ICP2:
+  ICP1 languages plus Dutch, Italian, and Swedish
+
+- ICP3:
+  ICP2 languages plus Brazilian, Danish, Finnish, Norwegian, and Portuguese
+
+- ICP4:
+  ICP3 languages plus Czech, Greek, Hungarian, Polish, Russian, Turkish, Korean,
+  Simplified Chinese, and Traditional Chinese
+
+- ICP5:
+  ICP4 languages plus Arabic and Hebrew
+
+ICP Languages Are Cumulative
+----------------------------
+
+The SMS ICPs are cumulative. Any client language that exists in a previous ICP
+also exists in all subsequent releases. For example, ICP5 includes all client
+languages that are included with ICP1 and ICP4, in addition to the languages
+introduced in ICP5 itself.
+
+Determining If an ICP Is Installed on the SMS Site
+--------------------------------------------------
+
+You can determine if an ICP is installed by checking for the language folders
+(for example, the 00000409 folder for English and the 00000407 folder for
+German) on the site server. There should be a folder for each client languages
+supported by that ICP. Check for the I386\&lt;language_id&gt;\smsman.exe)
+folders.
+
+Removing an Installed ICP
+-------------------------
+
+Currently, SMS does not support removing installed ICPs on the site. Microsoft
+recommends that you create a full backup of the site before installing an ICP.
+
+Installing an ICP on a Secondary Site
+-------------------------------------
+
+In SMS 2.0 and 2.0 SP1, you can install ICPs on secondary sites only by using the
+Upgrade Secondary Site Wizard.
+
+In SMS 2.0 SP2, you can install ICPs from the CD-ROM, remotely (by advertisement
+or by using Remote control), or by using Courier Sender.
+
+Multiple-Site Hierarchy and ICP Installation
+--------------------------------------------
+
+In a hierarchy that has two regional child primary sites running ICP4 (for
+example), both reporting to a central site server that runs the English-language
+version, the central site server does not need to be running SP4.
+
+Multiple-User Interface (MUI) Support on Windows 2000 SMS Clients
+-----------------------------------------------------------------
+
+For additional information about MUI support on Windows 2000-based SMS clients,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q259447 SMS: System Management Server 2.0 Service Pack 2 Includes Limited MUI
+  Support for Windows 2000 Clients
+
+Additional Information
+----------------------
+
+See the Microsoft BackOffice Resource Kit, Chapter 3, "Using SMS 2.0 in a
+Multilingual Environment" for more information about ICPs and SMS.
+
+Also, see the ICP Release Notes for each ICP for additional information.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS120 kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :1.2,2.0,2.0 SP1,2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

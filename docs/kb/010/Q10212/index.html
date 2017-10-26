@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q10212: INFO: Definition of a Region | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q10212: INFO: Definition of a Region" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/010/Q10212/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/010/Q10212/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/010/Q10212/","publisher":null,"image":null,"headline":"Q10212: INFO: Definition of a Region","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q10212-info-definition-of-a-region">Q10212: INFO: Definition of a Region</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q10212
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbSDKWin32 kbSDKWin16
+Last Modified: 19-JUN-1999
+
+3.00 3.10
+WINDOWS
+kbprg kbref kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The term "region" is used throughout the Windows documentation; however, the
+term is not defined. This article explains regions, how they are used, and how a
+region is defined or specified.
+
+MORE INFORMATION
+================
+
+Unlike most graphics packages that can manipulate only simple geometric
+structures (usually rectilinear), The Windows Graphics Device Interface (GDI)
+has the unique ability to gather an arbitrary set of spatially coherent points
+into a structure called a region, and perform complex yet rapid manipulations
+and calculations on such structures. This feature not only makes standard
+programs simpler and faster, it also allows operations to be performed that
+would otherwise be nearly impossible (for example, it is fundamental to the
+implementation of the Windows user interface).
+
+Although most GDI function parameters are given in logical units and then are
+converted to device units, region function parameters are given in device
+units.
+
+A region is defined by defining lines, shapes (such as rectangles and ellipses),
+or other regions. The outline of a region should be one or more closed loops. A
+region can be concave or convex, can consist of one area or many disjoint areas,
+and can have "holes" in the middle.
+
+Many calculations can be performed on regions. For example, given any two
+regions, GDI can find their union, intersection, difference, and exclusive.
+There is a set of graphic operations on regions to draw them on the screen.
+
+When a region is selected into a Device Context (DC), a new clipping area is
+created. Any graphics sent to that DC will be clipped to the region created.
+Regions are defined using CreateRectRgn(), CreateEllipticRgn(), and
+CreatePolygonRgn().
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kbSDKWin32 kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

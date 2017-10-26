@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102726: Overview of MacPrint Services for Windows NT Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102726: Overview of MacPrint Services for Windows NT Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102726/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102726/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102726/","publisher":null,"image":null,"headline":"Q102726: Overview of MacPrint Services for Windows NT Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102726-overview-of-macprint-services-for-windows-nt-server">Q102726: Overview of MacPrint Services for Windows NT Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102726
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.5 3.51 4.0
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+This article describes all features and characteristics of the Print
+Server for Macintosh (also called MacPrint) and Macintosh printing.
+
+All PostScript printers supported by Windows NT are also supported by
+MacPrint.
+
+MacPrint prints jobs from Macintosh clients with LaserWriter Chooser
+version 5.2 or later. Because of compatibility problems with
+PostScript dictionaries that use the EXITSERVER command, some printers
+do not support jobs from Macintoshes using Chooser versions 5.2 or
+6.0. The official client requirements for Services for Macintosh on
+the client side are Apple System Software version 6.08 or later, which
+installs supported versions of the LaserWriter driver.
+
+Jobs from LaserWriter Chooser versions earlier than 7.0 are played
+through the PostScript to GDI converter regardless of the driver
+specified for the Windows NT printer. If the Windows NT printer driver
+is PostScript, and the job is from a version 7.0 or later LaserWriter
+Chooser, then the PostScript will be played to the printer in RAW
+mode.
+
+MacPrint does not cache PostScript dictionaries as it was done in
+Chooser version 1.0. This was a complex process that did not work with
+all client types and did not provide clear performance enhancements.
+
+What Happened to the PPD Files?
+-------------------------------
+
+Unlike version 1.0, this version of MacPrint does not require PPD
+files describing the various PostScript printers used by the server.
+Instead, Windows NT version 3.1 provides a mechanism to query for the
+same information provided by PPD files.
+
+Why Doesn't it Display Job Information?
+---------------------------------------
+
+The Windows NT Print Manager displays numerous pieces of information
+about print jobs, including the name of the document, document owner,
+and the number of pages. Adobe's Document Structuring Conventions
+allow the Macintosh client to include this information in the print
+job. If the information is included in the print job, MacPrint gives
+it to the Windows NT 3.1 Print Manager; otherwise, the Document Name
+defaults to "Macintosh Document," the owner defaults to "MacPrint,"
+and the number of pages is not specified.
+
+About Printer Messages
+----------------------
+
+The Windows NT Print Manager provides clients who submit print jobs
+messages about print job status (for example, Print Job Complete).
+These messages are NOT provided for Macintosh clients in this release.
+
+What About Security?
+--------------------
+
+The MacPrint service runs under the security context of the MacPrint
+user account. It is therefore possible to protect a Windows NT 3.1
+Printer from Macintosh clients as a group by restricting access to the
+MacPrint user account. See your "Administrator's Guide" for complete
+information on setting up the MacPrint user account.
+
+Additional query words: sfm prodnt MacPrint
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+Version           : 3.1 3.5 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

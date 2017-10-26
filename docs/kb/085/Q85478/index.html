@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85478: INFO: Error C2593 When Archiving an Enumerated Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85478: INFO: Error C2593 When Archiving an Enumerated Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85478/","publisher":null,"image":null,"headline":"Q85478: INFO: Error C2593 When Archiving an Enumerated Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85478-info-error-c2593-when-archiving-an-enumerated-type">Q85478: INFO: Error C2593 When Archiving an Enumerated Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85478
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbcode kberrmsg kbCompiler kbCPPonly kbVC
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In ANSI C, enumerated types are synonyms for "int"; however, in C++, enumerated
+types are distinct integral types but are not integers themselves. Therefore, if
+e is an enumerated type and archive is of type CArchive, compiling these
+statements
+
+     archive &lt;&lt; e;
+     archive &gt;&gt; e;
+
+results in the following error messages from Microsoft C/C++ versions 7.0 and
+8.0:
+
+  error C2593: 'operator &lt;&lt;' is ambiguous
+
+  error C2593: 'operator &gt;&gt;' is ambiguous
+
+The compiler cannot choose which operator to use, because the enumerated type
+could be promoted to match any integral type. The programmer must specify which
+integral type the operator should use.
+
+MORE INFORMATION
+================
+
+The following are the prototypes taken from AFX.H. These are the functions that
+the compiler chooses from when it compiles the statement "archive &lt;&lt; e;"
+
+    CArchive&amp; operator&lt;&lt;( BYTE by );
+     CArchive&amp; operator&lt;&lt;( WORD w );
+     CArchive&amp; operator&lt;&lt;( LONG l );
+     CArchive&amp; operator&lt;&lt;( DWORD dw );
+
+where BYTE, WORD, LONG, and DWORD are defined in AFX.H as follows:
+
+     typedef unsigned char    BYTE;   // 8-bit unsigned entity
+     typedef unsigned short   WORD;   // 16-bit unsigned number
+     typedef long             LONG;   // 32-bit signed number
+     typedef unsigned long    DWORD;  // 32-bit unsigned number
+
+Therefore, the following statements compile without error:
+
+     archive &lt;&lt; (WORD) e;
+     archive &gt;&gt; (WORD&amp;) e;
+
+-or-
+
+     archive &lt;&lt; (unsigned short) e;
+     archive &gt;&gt; (unsigned short&amp;) e;
+
+NOTE: The following statements do not compile because they are also ambiguous:
+
+     archive &lt;&lt; (int) e;
+     archive &gt;&gt; (int&amp;) e;
+
+In these cases, the compiler cannot choose which operator to use, because the int
+could be promoted to match any integral type. Again, the programmer must specify
+which integral type the compiler should use.
+
+The following is a complete example demonstrating how to store and load an
+enumerated type:
+
+Sample Code
+-----------
+
+     /* Compile options needed: none
+     */ 
+
+     #define _DOS
+     #include &lt;afx.h&gt;
+
+     enum DAY
+     {
+        sunday, monday, tuesday, wednesday, thursday, friday, saturday
+     };
+
+     void main( void );
+
+     void main( )
+     {
+        CFile myFile;
+
+     // Open the file for writing and associate an archive object with it.
+
+        myFile.Open( "testfile", CFile::modeWrite, NULL );
+        CArchive archiveOut( &amp;myFile, CArchive::store );
+
+        enum DAY today = tuesday;
+
+     // Use the insertion operator to store the enumerated value
+     //    archiveOut &lt;&lt; today;
+     // will generate an error
+
+        archiveOut &lt;&lt; (WORD) today;
+
+        archiveOut.Close();
+        myFile.Close();
+
+     // Open the file for reading and associate an archive object with it.
+
+        myFile.Open( "testfile", CFile::modeRead, NULL );
+        CArchive archiveIn( &amp;myFile, CArchive::load );
+
+     // Use the extraction operator to load the enumerated value
+     // "archiveIn &gt;&gt; today;" would generate an error
+
+        archiveIn &gt;&gt; (WORD&amp;) today;
+
+        archiveIn.Close();
+     }
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbcode kberrmsg kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

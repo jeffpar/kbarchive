@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221766: Registry Permissions Not Inherited Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221766: Registry Permissions Not Inherited Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221766/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221766/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221766/","publisher":null,"image":null,"headline":"Q221766: Registry Permissions Not Inherited Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221766-registry-permissions-not-inherited-properly">Q221766: Registry Permissions Not Inherited Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221766
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After securing the registry with C2Config, subkeys created in the
+HKEY_LOCAL_MACHINE\SOFTWARE, HKEY_LOCAL_MACHINE\SOFTWARE\Classes,
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft, and HKEY_LOCAL_MACHINE\SOFTWARE\Secure
+keys do not inherit the expected permissions.
+
+CAUSE
+=====
+
+C2Config sets the inherited permissions separately from the object permissions.
+The permissions to be set are defined in the C2RegACL.inf file, and it does not
+include the permissions to be inherited by subkeys.
+
+RESOLUTION
+==========
+
+To resolve this problem you should add the permissions to be inherited to the
+C2RegACL.inf file.
+
+Example:
+
+Section of C2RegACL.inf before modifications:
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE]
+  BUILTIN\Administrators = FULL
+  CREATOR OWNER =  FULL
+  SYSTEM = FULL
+  Everyone = QV, SV, CS, ES, NT, DE, RC
+
+Section of C2RegACL.inf after adding inherited permissions:
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE]
+  BUILTIN\Administrators = FULL
+  BUILTIN\Administrators = INHERIT, FULL
+  CREATOR OWNER =  FULL
+  CREATOR OWNER =  INHERIT, FULL
+  SYSTEM = FULL
+  SYSTEM = INHERIT, FULL
+  Everyone = QV, SV, CS, ES, NT, DE, RC
+  Everyone = INHERIT, QV, SV, CS, ES, NT, DE, RC
+
+Note the INHERIT entry in the permissions. This is the option that sets the
+permissions that will be inherited by subkeys.
+
+Additional query words: SECURITY CONFIGURATION EDITOR
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

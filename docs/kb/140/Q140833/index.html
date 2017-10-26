@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140833/","publisher":null,"image":null,"headline":"Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140833-appc-allocation-error-running-multithreaded-random--bounce-tp">Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140833
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run 4 to 5 copies of the Random &amp; Bounce transaction program (TP)
+with 8 threads each, the APPC Allocate() verb fails with error:
+
+  
+
+- Primary Return Code: 0003: AP_ALLOCATION_ERROR
+- Secondary Return Code: 084C0000: AP_TRANS_PGM_NOT_AVAIL_NO_RETRY
+
+The APPC return codes are logged after about 500,000 APPC verbs are executed.
+
+This problem was found using test applications and only under very heavy stress,
+when invoking a TP over 65000 times, therefore, this symptom rarely occurs.
+
+CAUSE
+=====
+
+When the invoked TP issues the Receive_Allocate() verb and the
+Receive_Allocate() verb decrements the semaphore counter, the decrement of the
+semaphore counter (WaitForSingleObject())is done only when there are no pending
+Allocate()s waiting, instead of every time a Receive_Allocate() is processed.
+
+Each time a dload (Incoming Allocate ()) is processed by SnaBase a semaphore
+counter is increased (ReleaseSemaphore()) by one. After the semaphore counter
+has reached 65535, the ReleaseSemaphore() call fails with the following error:
+
+  Error 289: ERROR_TOO_MANY_POSTS
+
+The SnaBase that processes the incoming Allocate() does not log any errors.
+However, the SnaServer who sent the Allocate() request, logs the following error
+in the Event Viewer:
+
+  Event ID: 60
+
+  Failed to invoke APPC TP &lt;value&gt; (value), sense data = 084C0000
+
+  EXPLANATION: An attempt to invoke the APPC TP shown has failed.
+
+The most common cause of this error (084c0000) is due to configuration problems
+where the invokable TP is not registered properly on an SNA Server in the
+domain.
+
+RESOLUTION
+==========
+
+The semaphore counter is now decremented every time a Receive_Allocate() is
+processed.
+
+Also, the SnaBase that processes the incoming Allocate(), logs a new error:
+
+  Error 703 subcode 1015 - ReleaseSemaphore() failed.
+
+There following six subcodes describe other possible allocate errors:
+
+  1010 - The server who sent the dload message was not found in the local
+         service table.
+  1011 - The TP to be invoked was not found in the service table.
+  1012 - DMOD failed to create a new service table entry for the
+         Non-Queued TP.
+  1013 - DMOD failed to create a new service table entry for the Queued
+         TP.
+  1014 - OpenSemaphore() failed.
+  1016 - DMOD failed to start the TP (NT service or application).
+
+Microsoft has an update for the following Windows 95 client files only:
+
+  &lt;Win95_root&gt;\SYSTEM\DMODAPPC.DLL
+  &lt;Win95_root&gt;\SYSTEM\SNADMOD.DLL
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

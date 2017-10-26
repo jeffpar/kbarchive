@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161195/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161195/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161195/","publisher":null,"image":null,"headline":"Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161195-otherservers-parameter-fails-on-sna-server-211-sp1-clients">Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161195
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server 2.11 Service Pack 1 clients cannot connect to SNA Servers outside of
+their SNA subdomain, even though the OtherServers parameter is configured.
+
+The SNA Server 3270 applet returns the following error message when this problems
+occurs:
+
+  No SNA Server found in domain.
+
+The SNA Server 5250 applet returns the following error message when this problem
+occurs:
+
+  SNA Server has not been started. Contact System Administrator.
+
+  Primary Return Code = F004
+  Secondary Return Code = 010000F0
+
+NOTE: This problem does not occur with the SNA Server 2.1 or 2.11 clients.
+
+CAUSE
+=====
+
+SNA Server 2.11 Service Pack 1 improved the resource location algorithm that SNA
+Server clients use to locate an available LU/Pool for both APPC and EIS/3270
+applications. The changes made to the resource location algorithm caused a
+problem in which SNA Server 2.11 Service Pack 1 clients do not attempt to
+connect to SNA Servers configured with the OtherServers parameter. SNA Server
+Service Pack 1 clients only try to connect to the computer running SNA Server in
+the client's SNA subdomain that are returned by the Sponsor server in the Get
+Server List RPC response.
+
+NOTE: This problem only occurs if the LU/Pool that is trying to be accessed by
+the client is explicitly configured in the emulator/application. For 3270
+emulators, the LU/Pool always has to be specified, so the problem occurs
+consistently. For 5250/APPC applications, the problem does not occur if the
+Local LU Alias is left blank.
+
+RESOLUTION
+==========
+
+Microsoft has updated the following files to correct this problem:
+
+  Windows 3.x Client: &lt;winroot&gt;\system\wdmod.dll
+  Windows 95 Client: &lt;snaroot&gt;\system\snadmod.dll
+  Windows NT Client: &lt;snaroot&gt;\system\snadmod.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+Pack 1. This problem was corrected in the latest Microsoft SNA Server 2.11 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Please see one of the following references for more details on the OtherServers
+parameter:
+
+- Appendix C of the SNA Server Reference Guide
+
+- The Microsoft Knowledge Base
+
+  Q128244 SNA Server Load Balancing and Hot Backup
+
+Please refer to the following article in the Microsoft Knowledge Base for more
+details on the resource location algorithm used by SNA Server 2.11 Service Pack1
+clients:
+
+  Q138834 Improvements for EIS/3270 and APPC Resource Location
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211SP1
+Version           : WINDOWS:2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

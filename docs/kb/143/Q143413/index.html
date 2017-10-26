@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143413/","publisher":null,"image":null,"headline":"Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143413-msmail32-error-occurs-when-data-is-cached-across-bad-link">Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143413
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a mail message using MSMAIL32.EXE in Windows NT, the following
+error message appears:
+
+  [023] Message was not delivered: message file was corrupted.
+
+CAUSE
+=====
+
+This problem occurs due if the following conditions are met:
+
+- The Windows NT redirector write-behind caching mechanism is enabled.
+
+- The network connection is across an inconsistent WAN link.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (REGEDT32.EXE) and locate the following Registry subkey
+  in the HKEY_LOCAL_MACHINE subtree:
+
+  \SYSTEM\CurrentControlSet\Services\Rdr\Parameters
+
+2. From the Edit menu, select Add Value.
+
+3. Enter the following:
+
+  Value Name: UseWriteBehind
+  Data Type: REG_DWORD
+  String: 0
+
+4. Choose OK and quit the Registry Editor.
+
+5. Shut down and restart Windows NT.
+
+MORE INFORMATION
+================
+
+If the Windows NT caching mechanism is enabled and a file is open with read and
+write privileges, the Windows NT redirector and Windows NT Cache Manager
+performs a file write-behind caching. During this process, data is copied from
+the buffer to the local cache and the application (MSMAIL32) is notified that
+the writing is complete. When Cache Manager flushes the cached data (after 1 to
+3 seconds), the redirector uses the data to write Server Message Block (SMB)
+requests.
+
+The redirector sends the write-behind cached data if one of the following
+conditions are met:
+
+- The application closes the file
+
+- The file can no longer be cached
+
+- The application calls the FlushFileBuffers command
+
+- The redirector uses 3 write-behind buffers for the file
+
+When the MSMAIL32 sends mail across an inconsistent WAN link, the following
+occurs:
+
+1. MSMAIL32 locks the local mailbag file.
+
+2. MSMAIL32 reads the local key and *.MBG file.
+
+3. MSMAIL32 opens the remote INQUEUE3.MBG and INQUEUE3.KEY files.
+
+4. MSMAIL32 writes to the remote Postoffice file.
+
+5. MSMAIL32 updates INQUEUE3.MBG and INQUEUE3.KEY and closes them.
+
+6. MSMAIL32 updates the local *.KEY and *.MBG files.
+
+7. MSMAIL32 removes locks for the local mailbag file.
+
+Since the redirector uses the write-behind-cached data, it returns to application
+before the data is completely written to the remote postoffice file. This closes
+the remote INQUEUE3.KEY file, which enables the remote MSMAIL32 application to
+check for new mail. However, the postoffice file is still open due to the
+incomplete transfer of data. This occurs when there is an inconsistent WAN link.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

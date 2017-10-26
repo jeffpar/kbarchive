@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111050: ScanDisk Does Not Correct Clusters Marked as Bad | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111050: ScanDisk Does Not Correct Clusters Marked as Bad" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111050/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111050/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111050/","publisher":null,"image":null,"headline":"Q111050: ScanDisk Does Not Correct Clusters Marked as Bad","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111050-scandisk-does-not-correct-clusters-marked-as-bad">Q111050: ScanDisk Does Not Correct Clusters Marked as Bad</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111050
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+If ScanDisk finds clusters that are marked as "bad" in the file allocation table
+(FAT) while performing a surface scan, it designates them with a "B" in the
+surface-scan map. However, it does not correct or repair the bad clusters. This
+is by design and applies when you scan both compressed and uncompressed drives.
+Additionally, ScanDisk never marks a cluster as bad on a DoubleSpace-compressed
+drive.
+
+MORE INFORMATION
+================
+
+By design, ScanDisk does not attempt to repair clusters marked as bad because
+there are instances in which these clusters are marked bad for a valid reason.
+In these situations, removing the bad cluster marking (FFF7h or FF7h in the FAT)
+could cause problems.
+
+NOTE: FF7h is used to mark bad clusters on drives with a 12-bit FAT, while a
+16-bit FAT uses FFF7h. MS-DOS determines the FAT size based on the number of
+clusters (allocation units) on the host drive. If there are 4085 or fewer
+clusters, a 12-bit FAT is used. If there are 4086 or more clusters, a 16-bit FAT
+is used.
+
+Below are some examples of how repairing a cluster marked as bad could cause
+problems:
+
+- Some applications (such as copy-protected software) mark a cluster as bad and
+  store data in this cluster. Removing the bad cluster marking could cause
+  problems with these applications.
+
+- Clusters marked as bad in the FAT may indicate media defects on the physical
+  disk surface. In this situation, the bad cluster markings in the FAT were
+  probably put there by a surface-scan utility. Bad cluster markings due to
+  physical media defects should only appear on uncompressed drives.
+
+  A cluster that is unreadable on a DoubleSpace-compressed drive most likely
+  does not indicate a media defect on the disk's surface. ScanDisk never marks
+  a cluster on a compressed drive as bad. If ScanDisk finds an unreadable
+  cluster on a compressed drive, it will erase the Microsoft DoubleSpace FAT
+  (MDFAT) entry for that cluster, and the portion of the file that was using
+  that cluster is changed to zero bytes in length. The sectors previously being
+  used by the unreadable cluster are marked as free and can be used again.
+
+  ScanDisk marks bad clusters only on the host drive. These bad clusters
+  correspond to physical defects on the disk's surface.
+
+- A disk utility program that is not DoubleSpace-aware may mark a cluster as
+  bad on a DoubleSpace drive if it is unable to read data from the compressed
+  cluster. Contact the manufacturer of that disk utility program for
+  information on why the cluster is marked as bad and how to resolve this
+  issue.
+
+  NOTE: Microsoft does not support running third-party disk utilities on
+  DoubleSpace-compressed drives. Use only those utilities included with MS-DOS
+  6.2 (ScanDisk, Defrag, and so forth) on compressed drives, or contact the
+  manufacturer of your disk utility software for information on DoubleSpace
+  compatibility.
+
+
+REFERENCES
+==========
+
+"The MS-DOS Encyclopedia," published by Microsoft Press
+
+Additional query words: 6.20 6.2 Scanfix fix bad sector
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

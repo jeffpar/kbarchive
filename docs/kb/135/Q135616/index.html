@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135616: How to Remove Records from a Table Without Using Delete/Pack | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135616: How to Remove Records from a Table Without Using Delete/Pack" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135616/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135616/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135616/","publisher":null,"image":null,"headline":"Q135616: How to Remove Records from a Table Without Using Delete/Pack","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135616-how-to-remove-records-from-a-table-without-using-deletepack">Q135616: How to Remove Records from a Table Without Using Delete/Pack</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135616
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.6, 2.6a 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the DELETE or PACK commands to remove records can be very time consuming.
+ZAP is very fast, but removes all the records. With FoxPro's low-level file I/O,
+you can quickly remove a select number of unwanted records from the end of a
+table.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. Open a program file, name it Lowlevel.prg, and type the following function
+  code:
+
+     FUNCTION ZAPLAST
+     PARAMETER lnY
+     IF USED()
+       lnZ=RECCOUNT()
+       IF lnY&lt;=lnZ
+         lcFILENAME=DBF()
+         USE
+         lnHANDLE=FOPEN(lcFILENAME,2)
+         IF lnHANDLE&gt;0
+           lcBYTE=FREAD(lnHANDLE,32)
+           lnFLD_SIZE=ASC(SUBSTR(lcBYTE,11,1))+;
+              (ASC(SUBSTR(lcBYTE,12,1))*256)
+           lnFILESIZE=FSEEK(lnHANDLE,0,2)
+           lnX=lnZ-lnY
+           lcBYTE8=CHR(INT(lnX/(256*256*256)))
+           lcBYTE7=CHR(INT(lnX/(256*256)))
+           lcBYTE6=CHR(INT(lnX/256))
+           lcBYTE5=CHR(MOD(lnX,256))
+           lcBYTE=SUBSTR(lcBYTE,1,4)+lcBYTE5+;
+              lcBYTE6+lcBYTE7+lcBYTE8+SUBSTR(lcBYTE,9)
+           =FSEEK(lnHANDLE,0)
+           =FWRITE(lnHANDLE,lcBYTE)
+           =FCHSIZE(lnHANDLE,lnFILESIZE+(lnFLD_SIZE*lnX))
+           =FCLOSE(lnHANDLE)
+         ENDIF
+         USE &amp;lcFILENAME
+       ENDIF
+     ENDIF
+
+2. Save and close Lowlevel.prg
+
+3. Test the function by removing a single record from a table. For this example,
+  use the Customer.dbf table - but back up the table first. Records that are
+  deleted with ZAPLAST() cannot be recovered.
+
+  a. In the Command window, type:
+
+        SET PROCEDURE TO LOWLEVEL.PRG
+        USE C:\FPW26\TUTORIAL\CUSTOMER EXCLUSIVE
+
+  b. Take note of how many records are in the table. For this example, there
+     are 500 records.
+
+  c. In the Command window, type:
+
+        =ZAPLAST(1)
+
+  d. Note that there is one less record in the database. Originally there were
+     500 records; now there are only 499.
+
+4. Any number of records can be deleted. For example, to delete 27 records,
+  change step 3.c. to =ZAPLAST(27)
+
+NOTE: Only records at then end of the table can be deleted with ZAPLAST().
+ZAPLAST() will not recognize index orders or Visual FoxPro triggers.
+
+Additional query words: VFoxWin FoxWin FoxDos
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

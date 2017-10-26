@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271131: Use the DRDA_VB Sample for DB2OLEDB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271131: Use the DRDA_VB Sample for DB2OLEDB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271131/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271131/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271131/","publisher":null,"image":null,"headline":"Q271131: Use the DRDA_VB Sample for DB2OLEDB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271131-use-the-drda_vb-sample-for-db2oledb">Q271131: Use the DRDA_VB Sample for DB2OLEDB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271131
+Product(s): Microsoft SNA Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDSupport kbsna
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to test drive the OLE DB Provider for DB2 feature of
+Host Integration Server 2000 by using the demonstration host link services.
+
+MORE INFORMATION
+================
+
+The following steps are necessary to test drive the OLE DB Provider for DB2
+feature of Host Integration Server 2000 by using the demonstration host link
+services:
+
+1. From the Microsoft SNA Manager, add a new DEMO SDLC Link Service, by choosing
+  the DB2OLEDB script file.
+
+2. From the Microsoft SNA Manager, right-click the server name and click AS/400
+  Wizard on the All Tasks menu. Configure a new connection as follows:
+
+   - SNA Service: (Select server name.)
+
+   - Connection Name: DRDADEMO
+
+   - Link Service: (Select Link Service created in step 1.)
+
+   - Network Name: APPN
+
+   - Control Point Name: DRDADEMO
+
+   - SDLC settings: (Leave as default.)
+
+3. From the Microsoft SNA Manager, right-click the "Local APPC LUs" folder under
+  the server name, and then click Local LU on the New menu. Configure the new
+  Local LU as follows:
+
+   - LU Alias: LOCAL
+
+   - Network Name: APPN
+
+   - LU Name: LOCAL
+
+4. From the Action menu in Microsoft SNA Manager, click Save Configuration, and
+  then start the SNA Service. The newly-created DRDADEMO connection should go
+  to On Demand status.
+
+5. From the Run line of the Start menu, type "drda_vb" (without the quotation
+  marks), and then click OK to load the ADO Microsoft Visual Basic consumer
+  sample application.
+
+  a. Click Connect to use the ADO Connection.Open method. This action
+     establishes an APPC session between the OLE DB Provider for DB2 computer
+     and the demonstration AS/400.
+
+  b. When you are prompted to use an existing data link file, click Yes. When
+     you are prompted to enter the path to the data link file, use the
+     following, and then click OK:
+
+  "c:\program files\common files\system\ole db\data links\drdademo.udl"
+  (without the quotation marks)
+
+     (This path may vary depending on the system.)
+
+  c. Click Open RS to use the ADO Recordset.Open method.
+
+  d. In the Open dialog box, enter "SELECT * FROM PUBS.AUTHORS" (without the
+     quotation marks), and then click OK to continue.
+
+     The recordset is composed of the records in the "AUTHORS" DB2/400 table in
+     the DB/400 collection "PUBS", sorted by the first column AU_ID. The sample
+     DB/400 data is based on the authors table from the Microsoft SQL Server
+     pubs sample database.
+
+  e. Click Next to sequentially access all of the records in the table.
+
+  f. Click Close RS to close the host file by using the ADO Recordset.Close
+     method.
+
+  g. Click Disconnect to end the APPC session by using the ADO Connection.Close
+     method.
+
+  h. Exit the ADO consumer sample application.
+
+The current off-line script can be used to demonstrate a simple Visual Basic
+application, Active Server Page application, or Visual Basic component. It also
+works with well-known tools such as RowsetViewer. Unfortunately, the off-line
+demonstration script playback capabilities are insufficient to support
+demonstrating complex consumers such as SQL Server Data Transformation Services
+or Distributed Query Processing.
+
+Additional query words: VB ASP OLEDB SNA DTS DQP
+
+======================================================================
+Keywords          : kbDSupport kbsna 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

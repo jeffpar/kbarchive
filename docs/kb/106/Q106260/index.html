@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106260: PC WSPlus: Adding Sharp Wizard Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106260: PC WSPlus: Adding Sharp Wizard Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106260/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106260/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106260/","publisher":null,"image":null,"headline":"Q106260: PC WSPlus: Adding Sharp Wizard Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106260-pc-wsplus-adding-sharp-wizard-options">Q106260: PC WSPlus: Adding Sharp Wizard Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106260
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0a
+Operating System(s): 
+Keyword(s): kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, version 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft provides a file, WIZARD.DLL, that is required for exporting and
+importing Microsoft Schedule+ information to and from the Sharp Wizard.
+
+For complete information about obtaining and installing the WIZARD.DLL file, see
+the following sections:
+
+- To download the utility
+
+- To add the Sharp Wizard option
+
+MORE INFORMATION
+================
+
+To Download the Updated File
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Wizard.exe now
+  (http://download.microsoft.com/download/splus10win/Utility/1/WIN/EN-US/Wizard.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+After you download WIZARD.EXE to a clean directory, run it (by typing "wizard" at
+the MS-DOS prompt) to extract the contents of the file. You should receive the
+following files:
+
+  WIZARD.DLL  (12,272 bytes, dated 10-05-92, 12:00 A.M.)
+  README.TXT
+
+To Add the Sharp Wizard Option to the Export File Format menu in Schedule+
+--------------------------------------------------------------------------
+
+1. At the MS-DOS command prompt, type the following and press ENTER
+
+  copy &lt;path&gt;:\wizard.dll &lt;destination&gt;
+
+  where &lt;path&gt; is the drive and directory where you ran the self-
+  extracting WIZARD.EXE file and &lt;destination&gt; is the drive and directory
+  where you want the WIZARD.DLL file to reside. For example, if you ran the
+  self-extracting file from the TEST directory on drive D, and you want your
+  WIZARD.DLL file to be located in the WINDOWS directory on drive C, type the
+  following command:
+
+  copy a:\wizard.dll c:\windows
+
+2. Add the following lines to the SCHDPLUS.INI file residing in the WINDOWS
+  directory, then restart Schedule+.
+
+  [Microsoft Schedule+ Importers]
+  key1=C:\WINDOWS\WIZARD.DLL
+
+  [Microsoft Schedule+ Exporters]
+  key1=C:\WINDOWS\WIZARD.DLL
+
+Additional query words: schedule plus 1.00a wga
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbScheduleSearch kbSchedule100a
+Version           : WINDOWS:1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

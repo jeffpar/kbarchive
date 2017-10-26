@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301290/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301290/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301290/","publisher":null,"image":null,"headline":"Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301290-fp-from-address-not-same-as-reply-to-in-results-sent-to-e-mail">Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301290
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 10-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 2000 
+- Microsoft FrontPage 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you receive the results of a Microsoft FrontPage form that is configured to
+send the results to an e-mail recipient, the From address does not match the
+Reply-to address you designated in the Form Properties dialog box.
+
+CAUSE
+=====
+
+This behavior occurs because you can only configure the Reply-to address in the
+Form Properties dialog box and the From address on the Web server.
+
+WORKAROUND
+==========
+
+To work around this behavior, ask the Web server administrator to configure the
+From address mail setting on the Web server using FrontPage Server Extensions.
+For additional information about how to do this, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q201526 How to Specify Mail Settings in the Microsoft Management Console
+
+MORE INFORMATION
+================
+
+In FrontPage, when you set up options for form results to be sent to an e-mail
+recipient, you can specify a To address and a Reply-to address in the Form
+Properties dialog box.
+
+A Web adminstrator can configure the From and Reply-to addresses or the Web
+servers mail and Contact addresses for FrontPage 2000 Server Extensions or
+FrontPage Server Extensions 2002, respectively. All of this information
+populates different fields in the message header when the message is sent,
+similar to this:
+
+  Date: 01 Jan 2001 09:00:00 -0500
+  From: &lt;someone@microsoft.com&gt;
+  To: &lt;msbob@microsoft.com&gt;
+  Content-Transfer-Encoding: 8bit
+  Content-Type: Text/plain; charset=windows-1252
+  Subject: This is a test
+  MIME-Version: 1.0
+  Reply-to: example@microsoft.com
+
+When you receive the form results in e-mail, the message appears to be from the
+e-mail address specified in the From field, and the reply should go to the
+address designated in the Reply-to field when you defined the form's properties
+in FrontPage.
+
+Both Microsoft Outlook and Microsoft Outlook Express support the Reply-to field
+in e-mail messages. Other messaging programs may not support this field. For
+more information, see the documentation for your e-mail client.
+
+To view the message header in Outlook 2002 or Outlook Express 5.5, use the
+appropriate method for your situation.
+
+Outlook 2002:
+
+1. Start Outlook 2002 and locate the message for which you want to view the
+  header information.
+
+2. Right-click the message and then click Options on the menu that appears.
+
+3. In the Internet headers box, view the header information for the selected
+  message.
+
+Outlook Express 5.5:
+
+1. Start Outlook Express 5.5 and locate the message for which you want to view
+  the header information.
+
+2. Right-click the message and then click Properties on the menu that appears.
+
+3. Click the Details tab.
+
+4. In the "Internet headers for this message" box, view the header information
+  for the selected message.
+
+REFERENCES
+----------
+
+For more information about the headers used in e-mail messages, please see the
+following Requests For Comments (RFC) documents:
+
+  RFC 822 - Standard For The Format Of ARPA Internet Text Messages
+
+  RFC 1203 - Interactive Mail Access Protocol
+
+  RFC 2821 - Simple Mail Transfer Protocol
+
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPage2000Search kbFrontPage2002Search kbZNotKeyword5
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

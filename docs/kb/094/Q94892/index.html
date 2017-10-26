@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94892/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94892/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94892/","publisher":null,"image":null,"headline":"Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94892-fix-gpf-when-making-exe-file-if-forms-saved-as-binary">Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94892
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 2.0, a general protection (GP) fault can occur when you replace text
+boxes originally created in version 1.0 with the new version 2.0 Masked Edit
+Text boxes, and then use the existing code. The GP fault occurs in version 2.0
+when you try to turn the Visual Basic project into an executable (.EXE) program.
+
+WORKAROUND
+==========
+
+To work around the problem, save the project's forms and code in Text format
+rather than the default Binary format.
+
+Use the following steps to save the code in Text format:
+
+1. Select each form one by one from the Project window.
+
+2. With each form, go to a code window of that form by double-clicking the form
+  or by pressing the F7 key.
+
+3. From the File menu, choose Save Text... to save each form's code as a .TXT
+  file. Then from the File menu, choose Load Text... and highlight the .TXT
+  file just created; then choose the Replace button.
+
+4. After completing steps 1 through 3 for each form in the project, restart
+  Visual Basic and load the project by choosing Open Project... from the File
+  menu.
+
+5. From the File menu, choose Make Exe...
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Visual Basic version 2.0
+for Windows. This problem was corrected in Microsoft Visual Basic version 3.0
+for Windows.
+
+Additional query words: buglist2.00 fixlist3.00 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

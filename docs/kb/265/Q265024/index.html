@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265024/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265024/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265024/","publisher":null,"image":null,"headline":"Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265024-wd97-blank-page-printed-inserting-odd-even-page-section-break">Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265024
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 word97 kblayout
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you insert an odd page section break or an even page section break, a new
+blank page may appear in print preview and when you print the document.
+
+In addition, you may observe the following problems:
+
+- If your Word document contains page numbers, the page numbers may skip a page
+  number.
+
+- The page number in your document may appear higher than you expect.
+
+- If your Word document contains a total number of pages field (a NUMPAGES
+  field), the total number of pages shown is greater than you expect.
+
+- The page number on the status bar may skip a page number when you page
+  through the document.
+
+- The total number of pages on the status bar may indicate a greater number of
+  pages than you expect.
+
+
+CAUSE
+=====
+
+This functionality is by design in Microsoft Word. When you insert an odd page
+section break on an odd-numbered page, or an even page section break on an
+even-numbered page, Word cannot move the following text to the next physical
+page. Instead, Word moves the text that follows the section break to the next
+appropriate odd page or even page of the document. To do this, Word has to
+insert a blank page after the section break.
+
+NOTE: The blank page that is inserted contains no header or footer. In addition,
+it may appear that you cannot type text on the blank page.
+
+RESOLUTION
+==========
+
+To prevent the blank page when you view the document in print preview, to allow
+the page numbers to be printed correctly for each page, and to use the page for
+additional text in the document, do one of the following:
+
+Method 1: Type Text or Press ENTER
+----------------------------------
+
+On the page that precedes the odd page section break or even page section break,
+move the insertion point to the end of the text on that page. Either type
+additional text to fill out that page and continue onto the blank page, or press
+ENTER until the insertion point is on the blank page. Then type the additional
+text that you want on the page.
+
+Method 2: Insert a Page Break
+-----------------------------
+
+Insert a page break immediately before the odd page section break or even page
+section break. To do this, follow these steps:
+
+1. On the View menu, click Normal.
+
+2. Move the insertion point to the end of the text that precedes the Section
+  Break (Odd Page) or Section Break (Even Page).
+
+3. Do one of the following:
+
+   - Press CTRL+ENTER to insert a manual (hard) page break.
+
+     -or-
+
+   - On the Insert menu, click Break. In the Break dialog box, click to select
+     "Page break", and then click OK.
+
+     -or-
+
+   - On the Insert menu, click Break. In the Break dialog box, click to select
+     Next Page (listed under "Section breaks"), and then click OK.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q198592 WD97: Blank Page Is Printed with Different Even and Odd Headers and
+  Footers
+
+  Q195331 WD97: General Information About Section Breaks
+
+Additional query words: extra more pages empty
+
+======================================================================
+Keywords          : kbdta word8 word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

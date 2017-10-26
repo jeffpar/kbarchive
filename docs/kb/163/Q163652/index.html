@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163652/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163652/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163652/","publisher":null,"image":null,"headline":"Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163652-ode97-error-msg-isam-unable-to-register-itself-in-custom-app">Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163652
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 01-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+If your custom application includes any of the ISAM components from the "Add
+redistributable components" screen of the Setup Wizard, you may receive the
+following error message when you run your Setup program on a computer that does
+not have the Microsoft Jet database engine version 3.5 installed:
+
+  &lt;ISAM File&gt; is unable to register itself in the System Registry
+
+CAUSE
+=====
+
+The ISAM drivers require the Jet database engine in order to register themselves
+during setup.
+
+RESOLUTION
+==========
+
+If you want to include ISAM drivers with your custom application, and you are
+not sure if all users who run your Setup program will have Microsoft Access 97
+or another application that uses the Jet database engine, include the Microsoft
+Access run-time version component with your setup files when you run the Setup
+Wizard.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Microsoft Office 97 Developer Edition Tools Setup Wizard.
+
+2. Click Next on the first wizard screen to create a new set of setup options.
+
+3. On the "Add the files" screen of the Setup Wizard, add the sample database
+  Northwind.mdb, and click to select the "Set As Application's Main File" check
+  box. Click Next.
+
+4. Click Next on the "Add the shortcuts" screen.
+
+5. Click Next on the "Add the Registry values" screen.
+
+6. On the "Add components" screen, click Xbase ISAM, and then click Finish. You
+  do not need to save the Setup template.
+
+7. After the setup image has been created, run the Setup program for this
+  application on a computer that does not have Microsoft Access 97 or another
+  application that uses the Jet database engine installed. Note that you
+  receive the error message before Setup is finished.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: Lotus 1 2 3 123 Xbase Paradox Text Foxpro
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137682/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137682/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137682/","publisher":null,"image":null,"headline":"Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137682-prb-record-validation-rule-is-violated-error-in-a-form">Q137682: PRB: "Record validation rule is violated" Error in a Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137682
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Moving off a record that has row-level validation and invalid entries causes the
+form to produce this error message:
+
+  Record validation rule is violated
+
+CAUSE
+=====
+
+Issuing a SKIP or SKIP-1 while positioned on a record that has invalid entries
+fires an implicit TABLEUPDATE() function call, which tries to write your invalid
+data to the table.
+
+RESOLUTION
+==========
+
+Incorporate buffering in the form, and control the use of the TABLEUPDATE()
+function and navigation buttons. For example, remove the asterisk from the code
+in steps 7 and 12 in the "Steps to Reproduce Behavior" section of this article
+to resolve the problem.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Use the following steps to create a form that appends a record to a table using
+a row-level validation rule entered in the Table Designer.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. On the File menu, click New. Then select the Table check box, and click New
+  File. Create a new Table called Table1 that has this structure:
+
+  Field Name   Type       Width
+  -----------------------------
+  FLD1         Character  10
+  FLD2         Character  10
+
+2. On the File menu, click New. Select the Database check box, and click New
+  File. Create a new Database called Data1. Right-click inside the gray
+  DataBase Designer window. Click Add Table, and select Table1.
+
+3. Right-click Table1, which was just added to the database, and click Modify.
+  Click the Table Properties button located in the top-right corner of the
+  Table Designer dialog box. In the Validation Rule field, type "! EMPTY(fld1)"
+  (without the quotation marks). In the Validation Text field, type "FLD1 must
+  have a value." (without the quotation marks)
+
+4. Click OK, and then click OK in the Table Designer dialog box. Click Yes to
+  make structure changes permanent. Double-click the top-left corner of the
+  DataBase Designer window to close it.
+
+5. On the File menu, click New, select the Form check box, and then click New
+  File. Right-click the form, and then click Data Environment. Right-click the
+  gray Data Environment window, click Add. Then in the Add Table or View dialog
+  box, click Other, and then select Table1.dbf.
+
+6. When the table has been added to the data environment, drag both fields from
+  the data environment onto the form. Double-click the top-left corner of the
+  gray Data Environment window to close it.
+
+7. Double-click the form, and place the following code in the form's Activate
+  event:
+
+     APPEND BLANK
+     * THISFORM.Command1.Enabled=.F.
+     * THISFORM.Command2.Enabled=.F.
+     * THISFORM.Command3.Enabled=.F.
+     OPEN DATABASE data1.dbc EXCLUSIVE
+
+8. Place the following code in the form's Load event:
+
+     SET MULTILOCKS ON
+     =CURSORSETPROP("Buffering",2)
+
+9. Place first of four command buttons (Command1) on the form. Set its Caption
+  property to Next, and place the following code in its Click event:
+
+     SKIP
+     THISFORM.Refresh
+
+10. Place another command button (Command2) on the form. Set its Caption
+  property to Previous, and place the following code in its Click event:
+
+      SKIP -1
+      THISFORM.Refresh
+
+11. Place a third command button (Command3) on the form. Set its Caption
+  property to Quit, and place the following code in its Click event:
+
+      RELEASE THISFORM
+
+12. Place a fourth command button (Command4) on the form. Set its Caption
+  property to Write, and place the following code in its Click event:
+
+      lsuccess=TABLEUPDATE(.T.)
+      IF ! lsuccess
+         =AERROR(aErrors)
+         DO CASE
+            CASE aErrors[1,1] = 1583
+               SELECT table1
+               cRuleText=dbgetprop("table1","TABLE","RuleText")
+               =MESSAGEBOX(cRuleText,48)
+         ENDCASE
+      ELSE
+         *   THISFORM.Command1.Enabled=.T.
+         *   THISFORM.Command2.Enabled=.T.
+         *   THISFORM.Command3.Enabled=.T.
+      ENDIF
+
+13. Run the form, and click the Previous button.
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q129537 APPEND BLANK Fires Field-Level Validation
+
+Additional query words: VFoxWin akz
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

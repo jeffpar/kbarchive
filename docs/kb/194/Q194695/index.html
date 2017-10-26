@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194695: How to Configure Host Security for a Multi-Domain Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194695: How to Configure Host Security for a Multi-Domain Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194695/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194695/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194695/","publisher":null,"image":null,"headline":"Q194695: How to Configure Host Security for a Multi-Domain Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194695-how-to-configure-host-security-for-a-multi-domain-environment">Q194695: How to Configure Host Security for a Multi-Domain Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194695
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SNA Server Host Account Synchronization Integration process has several
+services that must be installed and operational for password synchronization
+and/or single sign on to work properly. The Windows NT Password Synchronization
+service, the Host Account Cache, and the Host Account Synchronization service
+all must run under a single user account, therefore what account and what domain
+the account is to reside is important in multi-domain environments. Note that
+all SNA Servers that require access to these services should run under this
+account as well. In all cases Host Account Synchronization service will be
+installed on the same machine as SNA Server via the SNA setup process. The
+Windows NT Password Synchronization service and Host Account Cache service have
+a separate install from that of the Host Account Synchronization service. The
+separate setup process is necessary because depending on the domain and SNA
+Server environment these services may not necessary be running on the SNA Server
+machine. This article outlines where these services should be installed within a
+single domain and multi-domain environment.
+
+NOTE: For additional information and an explanation of how these services inter
+operate please reference the SNA Server online help "How Does SNA Server Host
+Security Integration Work?" and Q175063 Host Security Integration Setup and
+Architectural Overview.
+
+Single Domain Model
+-------------------
+
+In a single domain model the Windows NT Password Synchronization service and the
+Host Account Cache should be installed on the Primary Domain Controller (PDC) of
+the domain. During installation the Windows NT Password Synchronization service
+setup will ask for a Host Security domain name. This should be the same as the
+domain in which the service is being installed.
+
+NOTE: All services should use a single account within this domain.
+
+Multiple Trust Domain Model
+---------------------------
+
+In a domain model in which one domain trusts another the Windows NT Password
+Synchronization service must be installed on the PDC that contains the user
+accounts (trusted domain)that are to utilize SNA Server's Host Security
+Integration. The Host Account Cache will be installed on the PDC of the trusted
+domain.
+
+Assume Domain A (trusted domain) is trusted by Domain B (trusting domain) where
+Domain A contains the user accounts of the users that will access the SNA
+Server(s) that reside in Domain B. The Windows NT Password Synchronization
+service will be installed on the PDC of Domain A. During installation the
+Windows NT Password Synchronization service setup will ask for a Host Security
+domain name. This should be the name of Domain B. The Host Account Cache will be
+installed on the PDC of Domain B.
+
+NOTE: Given the example above, all services should use a single account in Domain
+A.
+
+Master Domain Model
+-------------------
+
+In a domain model in which one domain acts as an accounts domain and one or more
+resource domains trust this domain, the Windows NT Password Synchronization
+service must be installed on the PDC of the accounts domain. The Host Account
+Cache service will be installed on each PDC within a resource domain that
+contain SNA Servers that are to utilize Host Security Integration. During
+installation the Windows NT Password Synchronization service setup will ask for
+a Host Security domain name. This should be the names of all resource domains in
+which the Host Account Cache is to be installed.
+
+NOTE: For more information about adding Host Security Domains after the Windows
+NT Password Synchronization service has been installed, please refer to: Q194633
+How to Add Additional Host Security Domains.
+
+Assume an accounts domain (trusted domain), Domain A , trusts the resource
+Domains (trusting domains), Domain B and Domain C, where Domain A contains the
+user accounts of the users that will access the SNA Server(s) that reside in
+Domain B and Domain C. The Windows NT Password Synchronization service will be
+installed on the PDC of Domain A. During installation the Windows NT Password
+Synchronization service setup will ask for Host Security domain names. These
+should be the names of Domain B and Domain C. The Host Account Cache will be
+installed on the PDC of Domain B and Domain C.
+
+NOTE: Given the example above, all services should use a single account in Domain
+A.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299422: No Check Mark Next to Site Name When User Signs Out | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299422: No Check Mark Next to Site Name When User Signs Out" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299422/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299422/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299422/","publisher":null,"image":null,"headline":"Q299422: No Check Mark Next to Site Name When User Signs Out","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299422-no-check-mark-next-to-site-name-when-user-signs-out">Q299422: No Check Mark Next to Site Name When User Signs Out</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299422
+Product(s): Microsoft Developer Network
+Version(s): 1.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, version 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A check mark does not appear next to my site's name when a user signs out of my
+site.
+
+CAUSE
+=====
+
+This problem occurs when the expire-cookie page does not specify the content
+type correctly or there is a problem deleting the Passport cookies.
+
+MORE INFORMATION
+================
+
+Cookies may not be deleted from a site for one of several reasons. Test the
+following items to isolate the cause of the issue:
+
+- Does your cookie-delete page actually return an image?
+
+- Does your cookie-delete page attempt to send any content other than the image
+  to the client browser?
+
+- Is the content type in the header being set to something other than
+  "image/gif" or "image/jpeg"?
+
+Your cookie-delete page should always return an image unless there is some reason
+why the cookie-delete operation has failed or should fail. Your cookie-delete
+page is called as an image source (not as a file include) when it is integrated
+into the Passport network-wide sign-out page that is actually connected to when
+a user clicks a Sign Out link. This page deletes cookies as served by all
+Passport participant sites that the user signed in to during that session.
+
+If you believe the problem is caused by a failure to delete the Passport cookies,
+see the following article in the Microsoft Knowledge Base:
+
+  Q299353 Passport Cookies Are Not Deleted When a User Signs Out
+
+REFERENCES
+==========
+
+For more information on Passport sign-out problems, see the following Microsoft
+Passport Software Development Kit (SDK) Web site:
+
+  Passport Sign-Out Problems
+  http://www.passport.com/sdkdocuments/sdk14/tshoot/tshoot5.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassportSearch
+Version           : :1.4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

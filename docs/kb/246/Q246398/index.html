@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246398: Help Screens Do Not Display in Compass | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246398: Help Screens Do Not Display in Compass" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246398/","publisher":null,"image":null,"headline":"Q246398: Help Screens Do Not Display in Compass","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246398-help-screens-do-not-display-in-compass">Q246398: Help Screens Do Not Display in Compass</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246398
+Product(s): Microsoft Windows NT
+Version(s): 2.1; WINDOWS:2000
+Operating System(s): 
+Keyword(s): kberrmsg kbtool kbui
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services 2.1 
+- Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Help button to display the help screen or click the right
+side of a form in Compass, you receive the following error message:
+
+  Proxy Report:
+  11001 Host was not found
+
+CAUSE
+=====
+
+This issue occurs because the MMS Help uses URLs to locate the help files. This
+is an example of a URL that could be called:
+
+  http://server_name.domain.com:8080/resource/help/admin
+
+This error message is generated when a Proxy Server is configured for Microsoft
+Internet Explorer and your MMS directory structure has an Internet type name
+such as server_name.domain_name.com.
+
+RESOLUTION
+==========
+
+To work around this issue, obtain access to the Internet by using a proxy
+server:
+
+1. In Internet Explorer, click Internet Options on the Tools menu, and then
+  click the Connections tab.
+
+2. Click Lan Settings, click to select the "Use a proxy server" check box, and
+  then click Advanced.
+
+3. Add the follow exception to the "Do not use proxy server for addresses
+  beginning with" box under Exceptions
+
+  http://&lt;server name&gt;.&lt;domain name&gt;.com
+
+  where &lt;server name&gt; is the server name, and &lt;domain name&gt; is the
+  domain name.
+
+  NOTE: To verify you are using the correct URL that the help file is trying to
+  contact, right-click the form where the proxy error is displayed, and then
+  click Properties. The General tab contains the address, copy the information
+  up to the port number. For example:
+
+  http://&lt;server name&gt;.&lt;domain name&gt;.com:8080/resource/help/admin
+
+This information would be the exception.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool kbui 
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbMMSSearch kbMMS210
+Version           : :2.1; WINDOWS:2000
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

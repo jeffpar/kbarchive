@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169459/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169459/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169459/","publisher":null,"image":null,"headline":"Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169459-xfor-nntp-users-cannot-use-exchange-server-newsgroups">Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169459
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 23-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Network News Transfer Protocol (NNTP) newsreader users cannot use Exchange
+Server newsgroups. Attempts to log on to Exchange Server return an error message
+of "no permission".
+
+CAUSE
+=====
+
+Exchange Server newsgroups can be configured to require authenticated access. If
+the Exchange Server computer is configured to require authenticated access, NNTP
+readers who connect to the Exchange Server computer must use clear text or NTLM
+authentication before access to any newsgroup will be allowed. An easy way to
+find out whether the Exchange Server computer has been configured to require
+authenticated access is to use Telnet.
+
+Before proceeding with the workaround, you must test whether this is the cause of
+the problem.
+
+To test with Telnet to see whether the Exchange Server computer has been
+configured to require authenticated access, do the following:
+
+1. On Windows NT or Windows 95, open a command prompt.
+
+2. At the command prompt, type "telnet &lt;machine name&gt; 119" where machine
+  name is the machine name of the Exchange Server computer. You should get a
+  connection to the Exchange Server computer. The server will issue a greeting
+  banner. If the first number in the banner is 201, then the server requires
+  authenticated access. If the first number is 200, anonymous access is
+  allowed. The banner for an Exchange Server computer looks like this:
+
+     201 Microsoft Exchange Internet News Service Version 5.0.1457.10 (no
+     posting)
+
+After you have determined that the Exchange Server computer requires
+authenticated access, find out whether the user ID and password that the NNTP
+newsreader is using will be accepted by the Exchange Server computer.
+
+Again, an easy way to test this is to use Telnet. The section below outlines how
+a sample Telnet session looks. In this sample, lines starting with "S&gt;" are
+sent by the server, and lines starting with "C&gt;" are sent by the client
+(Telnet):
+
+  S&gt; 201 Microsoft Exchange Internet News Service Version 5.0.1457.10
+  C&gt; authinfo user ALIAS
+  S&gt; 381 more authentication required
+  C&gt; authinfo pass PASSWORD
+  S&gt; 502 no permission
+
+The 502 error occurs because the user's Exchange Server mailbox alias and Windows
+NT domain account ID do not match. For example, this happens if a user's
+Exchange Server alias is "TESTUSER" and the primary Windows NT account is
+"TUSER".
+
+WORKAROUND
+==========
+
+There are two ways to work around this problem:
+
+- Enter the primary Windows NT domain account ID as the parameter to the
+  "authinfo user" command. An example of this approach is:
+
+     S&gt; 201 Microsoft Exchange Internet News Service Version 5.0.1457.10
+     C&gt; authinfo user TUSER
+     S&gt; 381 more authentication required
+     C&gt; authinfo pass PASSWORD
+     S&gt; 281 authentication accepted
+
+- Specify the complete Windows NT domain, the Windows NT account ID, and the
+  Exchange Server mailbox alias, separated by a slash (for example,
+  DOMAIN\TUSER\TESTUSER). You can use a forward slash or a backslash as the
+  separator.
+
+    S&gt; 201 Microsoft Exchange Internet News Service Version 5.0.1457.10
+    C&gt; authinfo user DOMAIN\TUSER\TESTUSER
+    S&gt; 381 more authentication required
+    C&gt; authinfo pass PASSWORD
+    S&gt; 281 authentication accepted \
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

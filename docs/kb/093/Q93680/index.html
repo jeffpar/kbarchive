@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93680/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93680/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93680/","publisher":null,"image":null,"headline":"Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93680-how-when-and-why-to-use-monoumb-and-monoumb2386">Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93680
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-SEP-1999
+
+3.10     | 6.00 6.20 6.21
+WINDOWS  | MS-DOS
+kbusage kbdisplay
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21 
+- Microsoft Windows 3.1 
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the MONOUMB virtual device drivers (MONOUMB.386 and
+MONOUMB2.386) and the differences between them.
+
+MORE INFORMATION
+================
+
+The MONOUMB virtual device drivers (VxDs) work around problems with Windows
+video display drivers (VDDs) written for Windows 3.0 with the Windows 3.0 Device
+Development Kit (DDK). Windows 3.0 VDD VxDs always claim the B000-B7FF memory
+region, even when they don't use it.
+
+Windows checks the installed expanded memory manager (EMM) and loads a "VDD_2"
+VxD if it's present; this allows Windows to use the B000-B7FF region. 386Max and
+BlueMax both contain the VDD_2 VxD. However, because they don't implement VDD_2
+correctly, they require MONOUMB2.386 to patch it.
+
+QEMM and EMM386 do not contain the VDD_2 VxD, and therefore require MONOUMB.386
+(the complete VDD_2 VxD).
+
+Using MONOUMB.386 or MONOUMB2.386
+---------------------------------
+
+If you are using a Windows 3.0 VDD under Windows 3.1, you get the following error
+message when you start Windows:
+
+  Windows cannot set up an upper memory block at segment B000. Exclude this
+  address space by using the syntax of your memory manager. For more
+  information, see the README.WRI file. Type WIN /S to start Windows in
+  standard mode and choose the Read Me icon.
+
+If the VDD is not using the B000-B7FF range, you can install MONOUMB.386 or
+MONOUMB2.386 to make more memory available to Windows.
+
+If you are using QEMM or EMM386.EXE, add the following line to the [386enh]
+section of your SYSTEM.INI file:
+
+  device=c:\dos\monoumb.386
+
+If you are using 386Max or BlueMax, add the following line to the [386enh]
+section of your SYSTEM.INI file:
+
+  device=c:\dos\monoumb2.386
+
+Where to find MONOUMB.386 and MONOUMB2.386
+------------------------------------------
+
+MONOUMB.386 is provided with Windows version 3.1 and MS-DOS versions 6.0, 6.2,
+and 6.21. MONOUMB2.386 is provided with Windows version 3.1 and Windows for
+Workgroups version 3.1. Windows version 3.11 and Windows for Workgroups version
+3.11 do not include either MONOUMB.386 or MONOUMB2.386.
+
+Additional query words: 6.00 6.20 msdos EMM386.EXE 386 max blue
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWFW310 kbMSDOSSearch kbMSDOS621 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21; WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

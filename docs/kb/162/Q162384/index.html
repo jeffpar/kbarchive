@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162384: XCON: How to Troubleshoot MTA Starting Failures | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162384: XCON: How to Troubleshoot MTA Starting Failures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162384/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162384/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162384/","publisher":null,"image":null,"headline":"Q162384: XCON: How to Troubleshoot MTA Starting Failures","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162384-xcon-how-to-troubleshoot-mta-starting-failures">Q162384: XCON: How to Troubleshoot MTA Starting Failures</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162384
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This article is intended to be an aide in determining the root cause of failure
+when the Microsoft Exchange Message Transfer Agent [MTA] fails to start. This
+article assumes that the other core Microsoft Exchange Services are operational;
+for example, the System Attendant (SA), Directory service (DS) and Information
+Store (IS).
+
+Steps
+-----
+
+1. Verify that there is at least 10 megabytes of FREE disk space on the hard
+  disk drive that contains the Exchsrvr\mtadata directory. Inspect the Windows
+  NT Event log for an error similar to the following:
+
+     3/10/9710:08:43 AMMSExchangeMTAErrorField Engineering
+     9411N/ALAUREL The MTA is terminating because the disk where MTADATA is
+     located has less then 10MB of space, or an error occurred while trying
+     to check for free space on the disk. If disk space is low, free up some
+     disk space and restart the MTA. NT Error code returned: 0 (non-zero
+     indicates an error while checking for free space) [BASE IL MAIN BASE 1]
+     (16) 3
+
+2. Verify that the files in the MTADATA directory are not read only. To do
+  this:
+
+  a. Start the Windows NT File Manager.
+
+  b. From the View menu, select All File Details. The attribute field is last.
+
+  The only attribute that should appear is 'A', the archive bit. Inspect the
+  Windows NT Event log for an error similar to the following:
+
+  3/10/9711:41:39 AMMSExchangeMTAErrorField Engineering
+  9405N/ALAURELAn unexpected error has occurred which may cause the MTA to
+  terminate. Error: Unable to create file EV0.LOG, return code 110.
+  [BASE MAIN BASE 1] (16)
+
+3. Verify that the Windows NT User Account used to start each Microsoft Exchange
+  service is correct. To do this:
+
+  a. Start the Microsoft Exchange Administration program.
+
+  b. Highlight the Configuration object.
+
+  c. From the File menu, select Properties.
+
+  d. Select the Service Account Tab and record the Account name.
+
+  e. From Control Panel - Services, select one of operational services.
+
+  f. Click the Startup button and check the NT User Account used to start the
+     service. This should match the entry recorded in step d.
+
+  g. Select the Microsoft Exchange Message Transfer Agent.
+
+  h. Click the Startup button and check the NT User Account used to start the
+     service. This account should match the entry recorded in step d.
+
+  This should not be the system account. If there is any doubt or Discrepancy,
+  enter the correct service account and enter the password in the required
+  dialog boxes.
+
+4. Ensure that the registry entries corresponding to the MTA are set correctly.
+
+  a. Verify and record the Directory Name of the Organization, Site, and Server
+     by selecting the appropriate object in the Microsoft Exchange
+     Administrator and from the 'File' menu, selecting 'Properties'.
+
+  b. Start Regedt32.exe for Windows NT 3.51 and 4.0 or Regedit.exe for Windows
+     NT 4.0.
+
+  c. Select HKEY_LOCAL_MACHINE, SYSTEM, CurrentControlSet, Services,
+     MSExchangeMTA, and Parameters.
+
+  d. Select X500 DN VALUE.
+
+  e. Verify that the X500 DN value:
+
+        o=&lt;organization_name&gt;/ou=&lt;site_name&gt;/cn=Configuration/cn=Servers
+        /cn=&lt;server_name&gt;/cn=Microsoft MTA
+   
+
+     is an exact match with the Organization, Site, and Server object Directory
+     Name as displayed in Microsoft Exchange Administrator.
+
+
+  f. Verify that the value for the HKEY_LOCAL_MACHINE, SYSTEM,
+     CurrentControlSet, Services, MSExchangeMTA, Parameters, MTA Database path
+     corresponds to the drive location where the DAT files are located;
+     typically Exchsrvr\mtadata\.
+
+  g. Verify that the value for the HKEY_LOCAL_MACHINE, SYSTEM,
+     CurrentControlSet, Services, MSExchangeMTA, Parameters, MTA Run Directory
+     corresponds to drive location where the MTA core support Files are
+     located. These files have the following extensions; aat, buf, cat, cfg,
+     env, inp, log, mta, out, sch, tpl, and xv2. These files are typically
+     located in the same exchsrvr\mtadata\ directory where the DAT files are
+     located. The following is an example of a typical Mtadata directory.
+
+     Directory of C:\exchsrvr\MTADATA
+
+     07/15/96 12:30a 41,043 ACSE.TPL
+     07/15/96 12:30a 35,707 ACSE.XV2
+     07/15/96 12:30a 5,894 ADMIN.XV2
+     03/10/97 11:36a 0 AP0.LOG
+     03/10/97 11:36a 0 AP1.LOG
+     03/10/97 11:39a 0 APD.LOG
+     07/15/96 12:30a 2,219 BASEFILE.OUT
+     03/10/97 11:36a 0 BF0.LOG
+     03/10/97 11:36a 0 BF1.LOG
+     03/10/97 11:36a 0 BFD.LOG
+     07/15/96 12:30a 7,574 BIND.TPL
+     03/10/97 11:39a 21,953 CALLS.OUT
+     07/15/96 12:30a 4,500 COMMON.TPL
+     07/15/96 12:30a 4,415 COMMON.XV2
+     02/26/97 11:22a 8,192 DB000001.DAT
+     03/10/97 11:39a 8,192 DB000002.DAT
+     07/15/96 12:30a 2,048 DB000003.DAT
+     07/15/96 12:30a 8,192 DB000004.DAT
+     07/15/96 12:30a 8,192 DB000005.DAT
+     07/15/96 12:30a 8,192 DB000006.DAT
+     07/15/96 12:30a 8,192 DB000007.DAT
+     07/15/96 12:30a 2,048 DB000008.DAT
+     07/15/96 12:30a 2,048 DB000009.DAT
+     07/15/96 12:30a 2,048 DB00000A.DAT
+     07/15/96 12:30a 8,192 DB00000B.DAT
+     07/15/96 12:30a 2,048 DB00000C.DAT
+     07/15/96 12:30a 8,192 DB00000D.DAT
+     07/15/96 12:30a 2,048 DB00000E.DAT
+     07/15/96 12:30a 2,048 DB00000F.DAT
+     07/15/96 12:30a 2,048 DB000010.DAT
+     07/15/96 12:30a 2,048 DB000011.DAT
+     07/15/96 12:30a 2,048 DB000012.DAT
+     07/15/96 12:30a 8,192 DB000013.DAT
+     07/15/96 12:30a 2,048 DB000014.DAT
+     07/15/96 12:30a 8,192 DB000015.DAT
+     07/15/96 12:30a 2,048 DB000016.DAT
+     07/15/96 12:30a 2,048 DB000017.DAT
+     07/15/96 12:30a 2,048 DB000018.DAT
+     07/15/96 12:30a 2,048 DB000019.DAT
+     07/15/96 12:30a 2,048 DB00001A.DAT
+     07/15/96 12:30a 2,048 DB00001B.DAT
+     07/15/96 12:30a 2,048 DB00001C.DAT
+     07/15/96 12:30a 8,192 DB00001D.DAT
+     07/15/96 12:30a 2,048 DB00001E.DAT
+     07/15/96 12:30a 2,048 DB00001F.DAT
+     03/10/97 11:39a 8,192 DB000020.DAT
+     07/15/96 12:30a 8,192 DB000021.DAT
+     07/15/96 12:30a 8,192 DB000022.DAT
+     07/15/96 12:30a 8,192 DB000023.DAT
+     07/15/96 12:30a 8,192 DB000024.DAT
+     03/10/97 11:39a 8,192 DB000025.DAT
+     03/10/97 11:39a 8,192 DB000026.DAT
+     03/10/97 11:39a 8,192 DB00002B.DAT
+     03/10/97 11:39a 66,048 DBBITMP.DAT
+     07/15/96 12:30a 10,438 DBFILE.OUT
+     07/15/96 12:30a 46,865 DBSERVER.SCH
+     07/15/96 12:30a 160,146 DCPRODS.CAT
+     07/15/96 12:30a 364 DCTERMF.DAT
+     07/15/96 12:30a 15,606 DIRECTRY.AAT
+     07/15/96 12:30a 7,245 DIRECTRY.BUF
+     07/15/96 12:30a 559 DIRECTRY.OUT
+     07/15/96 12:30a 88,436 DSADAP.XV2
+     07/15/96 12:30a 91,573 EAI.TPL
+     07/15/96 12:30a 32,862 EDI.XV2
+     03/10/97 11:39a 348 EV0.LOG
+     03/10/97 11:36a 0 EV1.LOG
+     03/10/97 11:36a 0 EV2.LOG
+     03/10/97 11:36a 0 EVD.LOG
+     03/10/97 11:36a 193 GWART0.MTA
+     03/10/97 11:27a 193 GWART1.MTA
+     07/15/96 12:30a 23,188 INFO4LOG.cfg
+     07/15/96 12:30a 53,872 INFOBLOG.cfg
+     07/15/96 12:30a 84,661 INFODLOG.cfg
+     07/15/96 12:30a 63,093 INFOILOG.cfg
+     07/15/96 12:30a 91,598 INFOLLOG.cfg
+     07/15/96 12:30a 129,059 INFOPLOG.cfg
+     07/15/96 12:30a 16,858 INFORLOG.cfg
+     07/15/96 12:30a 236,899 INFOTLOG.cfg
+     07/15/96 12:30a 80,828 INFOXLOG.cfg
+     03/06/97 11:56a 329 MORFTRAC.OUT
+     07/15/96 12:30a 18,785 MSGFILE
+     03/10/97 11:42a &lt;DIR&gt; MTACHECK.OUT
+     03/10/97 03:01p 0 mtadata.txt
+     07/15/96 12:30a 33,864 MTAFILE.OUT
+     07/15/96 12:30a 65,365 OXZBOOT.env
+     07/15/96 12:30a 18,814 P1.TPL
+     07/15/96 12:30a 19,100 P1.XV2
+     07/15/96 12:30a 36,294 P2.TPL
+     07/15/96 12:30a 48,444 P2.xv2
+     07/15/96 12:30a 24,020 P3.TPL
+     07/15/96 12:30a 27,161 P3.XV2
+     07/15/96 12:30a 45,751 P7.TPL
+     07/15/96 12:30a 55,958 P7.XV2
+     07/15/96 12:30a 37,895 P772.TPL
+     07/15/96 12:30a 8,872 P772.XV2
+     07/15/96 12:30a 2,043 P7EDI.XV2
+     07/15/96 12:30a 13,841 P7IM.XV2
+     07/15/96 12:30a 24,761 PLATFILE.OUT
+     07/15/96 12:30a 6,310 POP4FILE.OUT
+     03/10/97 11:36a 262,158 RAMDUMP0.LOG
+     03/10/97 11:36a 262,158 RAMDUMP1.LOG
+     03/10/97 11:36a 262,158 RAMDUMP2.LOG
+     03/10/97 11:36a 262,158 RAMDUMP3.LOG
+     07/15/96 12:30a 1,732 RANDFILE.OUT
+     07/15/96 12:30a 23,230 RDI.TPL
+     07/15/96 12:30a 22,937 RDI.XV2
+     03/10/97 02:34p 31,744 REPLAY.exe
+     07/15/96 12:30a 10,808 ROSE.TPL
+     07/15/96 12:30a 5,193 ROSE.XV2
+     07/15/96 12:30a 1,760 RTSE.TPL
+     07/15/96 12:30a 3,960 SCT.INP
+     03/10/97 11:36a 53,413 TERM.LOG
+     07/15/96 12:30a 7,176 TRCEFILE
+     07/15/96 12:30a 9,256 TRCEFILE.cfg
+     07/15/96 12:30a 24,525 WIRE.TPL
+     07/15/96 12:30a 24,124 X400COM.TPL
+     07/15/96 12:30a 28,815 X400COM.XV2
+     07/15/96 12:30a 2,143 X500.TPL
+     07/15/96 12:30a 4,100 X500.XV2
+     07/15/96 12:30a 12,164 X500ATTR.TPL
+     07/15/96 12:30a 7,336 X500AUTH.TPL
+     07/15/96 12:30a 7,470 X500AUTH.XV2
+     07/15/96 12:30a 7,263 X500BDCP.XV2
+     07/15/96 12:30a 31,462 X500DAP.TPL
+     07/15/96 12:30a 3,525 X500DSP.TPL
+     07/15/96 12:30a 7,383 X500DSP.XV2
+     07/15/96 12:30a 22,339 X500DSP2.XV2
+     07/15/96 12:30a 2,705 X500INFO.TPL
+     07/15/96 12:30a 9,673 X500INFO.XV2
+     07/15/96 12:30a 956 X500LCLP.XV2
+     07/15/96 12:30a 2,419 X500MDUP.XV2
+     07/15/96 12:30a 22,965 XAPIFILE
+     07/15/96 12:30a 19,185 XAPIFILE.OUT
+     07/15/96 12:30a 16,875 XV2FILE.OUT
+
+5. If the previous steps do not reveal the error, check for possible corruption
+  in the core support files required to start the Microsoft Exchange MTA
+  Services.
+
+  a. Copy new core support files to the MTADATA directory by selecting the core
+     support files from the Microsoft Exchange Server compact disk or Microsoft
+     Exchange Server installation point. From the Microsoft Exchange Server
+     compact disk or installation point, copy all the files except the DAT
+     files from the \setup\&lt;processor type&gt;\mtadata directory to the
+     &lt;drive&gt;\exchsrvr\mtadata directory for the production Server.
+
+6. If the problem persists, the core DAT files may be corrupt or missing. Locate
+  the directory that contains the DAT files. By default, it is the same
+  directory as your directory which has the core support files;
+  exchsrvr\mtadata\. The location may vary depending on the locations selected
+  if and when the Microsoft Exchange Performance Optimizer was executed. View
+  the contents of the MTADATA directory and verify that Db000001.dat through
+  Db000026.dat files exist.
+
+   - If these files are present, run the MTACHECK utility. For information on
+     how to run this utility, refer the the following article in the Microsoft
+     Knowledge Base:
+
+  Q149017 XCON: MTACHECK Event IDs and Command Line Syntax
+
+     If this does not resolve the problem, proceed to step 7.
+
+7. If the MTA fails to start after completing all the above steps, contact
+  Microsoft Technical Support for assistance.
+
+
+CAUSE
+=====
+
+The Microsoft Exchange MTA checks the registry, static files, and DAT files
+located in the MTADATA directory during initialization and start up.
+
+MORE INFORMATION
+================
+
+For more troubleshooting about the MTA not starting, please refer to the
+following article in the Microsoft Knowledge Base:
+
+  Q147704 XCON: Troubleshooting Tips for Exchange MTA Not Starting
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

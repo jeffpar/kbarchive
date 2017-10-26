@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198550: SP4 Changes DNS Name Resolution | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198550: SP4 Changes DNS Name Resolution" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198550/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198550/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198550/","publisher":null,"image":null,"headline":"Q198550: SP4 Changes DNS Name Resolution","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198550-sp4-changes-dns-name-resolution">Q198550: SP4 Changes DNS Name Resolution</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198550
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0a
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After applying Windows NT 4.0 Service Pack 4 (SP4), the DNS resolver (DNR)
+changes how it uses DNS servers to resolve names.
+
+MORE INFORMATION
+================
+
+With previous versions of Windows NT 4.0, the DNR sends a DNS request to the
+first DNS server address listed in the DNS server search order in the TCP/IP DNS
+Properties dialog box. If no response is received within 5 seconds, it then
+sends a DNS request to the second DNS server address configured. The total delay
+for DNS name resolution to timeout is typically 45 seconds or more.
+
+After Windows NT 4.0 SP4 is installed, the DNR sends a DNS query to the first DNS
+server(s) address configured in all of three possible lists. If no response is
+received within 1 second, the DNR requeries the first DNS server(s) and sends
+the same query to all other DNS server addresses configured on the client. If
+the DNS resolver does not get a response from any DNS server within 2 seconds,
+it resends the query to all DNS servers configured and waits for 4 seconds. If
+no response is received, the DNR resends the request again to all DNS servers
+configured and waits for 8 seconds. The total delay for DNS name resolution
+timeout is now 15 seconds.
+
+Depending on the name being resolved, it may repeat the process adding the domain
+name configured on the client and devolving the specified domain name two labels
+deep. Also if DNS fails and NetBIOS name resolution is used an additional 3
+seconds can be used.
+
+The DNS server(s) queried from these 3 possible DNS Server lists:
+
+- Static (configured through Control Panel)
+
+- DHCP (obtained through all DHCP-enabled Adapters)
+
+- RAS (obtained through dial-up networking)
+
+
+If you have multiple adapters of the same type, the above order is further
+controlled by the adapter binding order, controllable through the Bindings tab.
+
+A new (post SP4) version of the client DNR, which adds a 0.5 second delay between
+querying different DNS servers, is available. This allows strict adherence to
+the DNS search order, but adds (&lt;N&gt;-1)*.5 seconds to the overall timeout
+delay, where &lt;N&gt; is total number of DNS name servers configured on the
+client. With this fix the total time spent on DNS name timeout useS the
+following algorythm:
+
+Depending on the configuration the total timeouts for a particular query can vary
+from (1+2+4+8=15) seconds to at worst
+(0.5+0.5+1+0.5+0.5+2+0.5+0.5+4+0.5+0.5+8=19) seconds. For additional
+information, please see the following article in the Microsoft Knowledge Base:
+
+  Q195611 DNS Client Does Not Try All Servers in DNS Service List
+
+This fix also helpS in instances of nonconvergent namespace; that is, some name
+servers authoritative for the zone do not contain zone information and are
+replying with NX domain.
+
+Additional query words: smallbiz sp4
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : :4.0,4.0a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

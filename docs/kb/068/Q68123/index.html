@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68123: 7.10 &quot;Subscript Out of Range,&quot; WindowDo with No Open Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68123: 7.10 &quot;Subscript Out of Range,&quot; WindowDo with No Open Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68123/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68123/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68123/","publisher":null,"image":null,"headline":"Q68123: 7.10 &quot;Subscript Out of Range,&quot; WindowDo with No Open Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68123-710-subscript-out-of-range-windowdo-with-no-open-windows">Q68123: 7.10 "Subscript Out of Range," WindowDo with No Open Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68123
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S901228-57 | mspl13_basic
+Last Modified: 17-JAN-1991
+
+If a WindowDo statement is executed before any windows are opened, a
+"Subscript out of range" error will occur. This article explains why
+the error happens and gives two ways of correcting the error.
+
+This information applies to the User Interface (UI) ToolBox provided
+with Microsoft BASIC Professional Development System (PDS) versions
+7.00 and 7.10 for MS-DOS.
+
+The problem is caused by WindowInit incorrectly initializing the
+variable GloStorage.currMenu to -1 instead of 0 (zero). WindowDo
+checks to see if currMenu is 0 (zero) to determine if there are no
+open windows, and WindowDo generates the error when it tries to access
+window number -1.
+
+To work around this problem, do one of the following:
+
+1. Open a window and then immediately close it. This will set currMenu
+   back to 0 (zero). For example:
+
+      WindowInit
+      WindowOpen 1,6,5,12,25,0,7,0,7,15,FALSE,FALSE,FALSE,FALSE,0,""
+      WindowClose 1
+      WindowDo 0,0
+
+2. To correct the problem permanently, modify WINDOW.BAS:
+
+   a. Load the WINDOW.BAS module into QBX.EXE.
+
+   b. Push F2 to view the subprograms and then move to WindowInit.
+
+   c. Locate the line that reads "GloStorage.currMenu = -1", and change
+      it to "GloStorage.currMenu = 0".
+
+   d. Save the new copy of WINDOW.BAS. Then follow the instructions at
+      the beginning of GENERAL.BAS to create a new LINK library (.LIB)
+      and Quick library (.QLB).
+
+Code Sample
+-----------
+
+When the following program is run in the QBX.EXE environment, it will
+generate a "Subscript out of range in Quick library module: WINDOW"
+error.
+
+' QBX must be started with "QBX /L UITBEFR" to load the UI ToolBox
+' Quick library
+
+'$INCLUDE: 'general.bi'
+'$INCLUDE: 'mouse.bi'
+'$INCLUDE: 'menu.bi'
+'$INCLUDE: 'window.bi'
+COMMON SHARED /uitools/ GloMenu           AS MenuMiscType
+COMMON SHARED /uitools/ GloTitle()        AS MenuTitleType
+COMMON SHARED /uitools/ GloItem()         AS MenuItemType
+COMMON SHARED /uitools/ GloWindow()       AS windowType
+COMMON SHARED /uitools/ GloButton()       AS buttonType
+COMMON SHARED /uitools/ GloEdit()         AS EditFieldType
+COMMON SHARED /uitools/ GloStorage        AS WindowStorageType
+COMMON SHARED /uitools/ GloWindowStack()  AS INTEGER
+COMMON SHARED /uitools/ GloBuffer$()
+DIM GloTitle(MAXMENU)           AS MenuTitleType
+DIM GloItem(MAXMENU, MAXITEM)   AS MenuItemType
+DIM GloWindow(MAXWINDOW)        AS windowType
+DIM GloButton(MAXBUTTON)        AS buttonType
+DIM GloEdit(MAXEDITFIELD)       AS EditFieldType
+DIM GloWindowStack(MAXWINDOW)   AS INTEGER
+DIM GloBuffer$(MAXWINDOW + 1, 2)
+WindowInit
+WindowDo 0,0
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

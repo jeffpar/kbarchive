@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169754/","publisher":null,"image":null,"headline":"Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169754-xadm-how-to-set-up-batch-auto-forward-rules-using-exchange">Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169754
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc5 exc55
+Last Modified: 11-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use a directory import\directory export file (.csv
+file) to configure all mailboxes with Alternate Recipients instead of manually
+configuring each mailbox separately.
+
+MORE INFORMATION
+================
+
+The following steps present a method to adds alternate recipient to mailboxes
+using the .csv files.
+
+1. Export the recipients (mailboxes) to a .csv file.
+
+2. Edit the .csv file and insert a column named "Alternate Recipient." Beneath
+  the "Alternate Recipient" field, insert the Distinguished Name (DN) of the
+  recipient that the mail will be forwarded to.
+
+3. If you would like to use the "Deliver to Both" option, you can insert a new
+  column named "Deliver to both". If you want the messages to be delivered to
+  both mailboxes of the original and the "Alternate Recipient", type the number
+  1 in this new field; otherwise type a 0.
+
+4. Save this file in .csv formats and close it.
+
+5. Import this .csv file into the Exchange Server. If you receive an error when
+  importing the .csv file to Exchange Server, see the Microsoft Knowledge Base
+  article referenced below in the "More Information" section.
+
+6. Confirm that the recipients who were specified as the "Alternate Recipients"
+  actually received the messages that were addressed to the original mailbox.
+
+The following is a sample comma-delimited header of the .csv file used in this
+process to setup these Delivery Options:
+
+     Obj-Class,Mode,Directory Name,Alternate Recipient,Deliver to both,
+     Mailbox,modify,Admin,/o=Microsoft/ou=HARLEM/cn=Recipients/cn=SueW,1,
+     Mailbox,modify,Beth,/o=Microsoft/ou=HARLEM/cn=Recipients/cneT,0,
+
+NOTE: The Exchange Server Administrator program provides a method that manually
+adds alternate recipient to a mailbox. This manual method has to be done to
+every mailbox individually. It uses the Delivery Options tab of the mailbox's
+property pages to modify the mailbox and select the Alternate recipient.
+
+If you receive an error message when importing the .csv file to Exchange Server
+(step 5 above), see the following article.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q155743 XADM: Directory Import Error: Unable to Process Object
+
+Additional query words: bulk export
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

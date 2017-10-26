@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126275/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126275/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126275/","publisher":null,"image":null,"headline":"Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126275-dinosaurs-hangs-during-setup-with-ati-mach32-driver">Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126275
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Dinosaurs on a computer that has the ATI Mach32 video
+driver version 2.3 installed, your computer may stop responding (hang) when the
+CD-ROM is checking system performance.
+
+The installation screen will display the status message:
+
+  Checking system and testing CD-ROM performance.
+  This may take a few minutes.
+
+NOTE: This problem does not occur with Windows 95.
+
+RESOLUTION
+==========
+
+1. Double-click the Windows Setup icon located in the Main group.
+
+2. From the Options menu, choose Change System Settings.
+
+3. Click the down arrow button in the Display box, and scroll the list until you
+  see VGA. Click VGA and choose OK.
+
+  If the installation program cannot find the necessary files to install the VGA
+  display driver, you will see a message similar to:
+
+  Please insert the Microsoft Windows Disk, or a disk that contains the
+  file...
+
+  If the files on this disk can be found at a different location, for example,
+  on another drive, type a new path to the file below.
+
+  The message may vary depending upon the version of Microsoft Windows installed
+  on the system. Follow the instructions displayed to install the standard VGA
+  video driver.
+
+  If the VGA driver is currently installed on the system, a Change System
+  Settings dialog box appears with the message:
+
+  A driver for this display is already on the system. Do you want to use the
+  currently installed driver or install a new driver?
+
+4. Select Current.
+
+  NOTE: If you choose New, you will be prompted to insert the Windows disks as
+  noted in the message above.
+
+5. Restart Windows when prompted.
+
+6. Run Dinosaurs Setup.
+
+7. Change the display back to the Mach32 Driver by following steps 1 through 5
+  (and replacing VGA with ATI Mach32 Driver in step 3).
+
+MORE INFORMATION
+================
+
+When you switch back to the ATI Mach32 driver and restart Windows, you may get
+an error message stating:
+
+  A device has been specified more than once in the SYSTEM.INI file, or a
+  device specified in SYSTEM.INI conflicts with a device which is being loaded
+  by an MS-DOS device driver or application. Remove the duplicate entry from
+  the SYSTEM.INI file, and then restart Windows.
+
+  Device Duplicated: Mach32 Driver
+
+If the error occurs, edit the SYSTEM.INI file after exiting Windows, and remove
+the duplicate device driver entry.
+
+1. At an MS-DOS command prompt, type the following and press ENTER
+
+  "edit &lt;drive&gt;:\&lt;windows&gt;\system.ini" (without the quotation
+  marks)
+
+  where &lt;drive&gt; is your hard drive and &lt;windows&gt; is your Windows
+  directory. For example:
+
+  "edit c:\windows\system.ini" (without the quotation marks)
+
+2. Locate the [386enh] section and remove the duplicate device=Mach32 entry.
+
+3. Restart Windows.
+
+4. Dinosaurs should run properly.
+
+NOTES
+-----
+
+The Microsoft Dinosaurs README file, dated June 28, 1993 states:
+
+ATI PROBLEMS
+------------
+
+Microsoft Dinosaurs is incompatible with some advanced features used by some
+video cards such as the Mach32 chip set running the ATI drivers.
+
+For Dinosaurs to run on the ATI driver, the "256 color palette" control in the
+"Advanced features" of the "ATI Control Panel" needs to be set to ON. See your
+video card documentation for more information.
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+ATI Technologies Inc.: (905) 882-2626.
+
+The third-party products discussed here are manufactured by ATI Technologies
+Inc., a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding these products' performance or reliability.
+
+Additional query words: multi media multimedia multi-media mmtitleshangs hanging hanged crashed crash crashes freeze frozen locked locked-up lock hang bombed bomb down
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

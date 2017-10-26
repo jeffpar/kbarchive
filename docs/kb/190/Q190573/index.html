@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190573: Jetpack/WINADMIN Create Maintenance Files in System32 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190573: Jetpack/WINADMIN Create Maintenance Files in System32" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190573/","publisher":null,"image":null,"headline":"Q190573: Jetpack/WINADMIN Create Maintenance Files in System32","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190573-jetpackwinadmin-create-maintenance-files-in-system32">Q190573: Jetpack/WINADMIN Create Maintenance Files in System32</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190573
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Windows Internet Name Service (WINS) Server may start to accumulate log
+files (J50.log or J50.chk) in various directories other than the
+%SystemRoot%\System32\WINS directory, and may keep the WINS service from
+starting. It is normal for these files to be present in the
+%SystemRoot%\System32\WINS directory, but should not appear in any other
+directories.
+
+CAUSE
+=====
+
+This issue can be caused by either of the following:
+
+- Running Jetpack.exe from the wrong directory.
+
+  The Jetpack executable resides in the %SystemRoot%\System32 directory. It is a
+  common mistake to run this utility from the %SystemRoot%\System32 directory
+  as follows:
+
+  c:\winnt\system32\Jetpack.exe winnt\system32\WINS\WINS.MDB TMP.MDB
+
+  Jetpack.exe, in this instance, will place its logs in the
+  %SystemRoot%\System32 directory.
+
+  For additional information on running Jetpack.exe, please see the following
+  article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q145881
+  TITLE : How to Use Jetpack.exe to Compact a WINS or DHCP Database
+
+- In WINS Administrator, the Enable Logging check box is not selected.
+
+  If the Enable Logging configuration option has been cleared in WINS Manager,
+  when the WINS service starts, it will create the J*.log files in the
+  %SytemRoot%\System32 directory and will not allow the files to be removed.
+
+RESOLUTION
+==========
+
+To resolve this issue, perform on of the following series of steps:
+
+- If the WINS service is not starting, move the offending files to the
+  %SystemRoot%\System32\WINS directory, and then restart the WINS service.
+
+  -or-
+
+- If the service is using the files and you cannot delete them:
+
+  1. Click on Start, go to settings, and click Control Panel.
+
+  2. Double-click the Services icon.
+
+  3. Select the Windows Internet Name Service and click the Stop Button.
+
+  4. Back up the WINS data using the Backup Database function in WINS Manager.
+
+  5. Remove any offending files and restore data back into directory.
+
+  6. Run Jetpack.exe from within the %SytsemRoot%\System32\WINS directory.
+
+  7. Restart the WINS service.
+
+  8. In WINS Manager, click Server, select Configuration, and then click
+     Advanced.
+
+  9. Click to select the Logging Enabled check box.
+
+     NOTE: If the Logging Enabled check box is cleared, automatic backup will
+     not occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server version 4.0.
+We are researching this problem and will post additional information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q165915
+  TITLE : Explanation of Jet Database for Windows NT 4.0
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

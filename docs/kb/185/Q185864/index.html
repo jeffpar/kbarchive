@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185864/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185864/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185864/","publisher":null,"image":null,"headline":"Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185864-prb-access-violation-in-odbc-cursor-library-in-mfc-application">Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185864
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDACNoSweep
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An MFC application that uses Open Database Connectivity (ODBC) may crash
+randomly on a PUSH DWORD PTR instruction in ODBC Cursor Library version
+3.50.36.9. The application error is:
+
+  The instruction at "0x6a9b7c1a" referenced memory at "0x026a6000".
+  The memory could not be "read".
+
+When stepping through the assembly code in the debugger, the access violation is
+on a PUSH DWORD PTR instruction in Odbccr32.dll. This access violation occurs at
+random times.
+
+
+CAUSE
+=====
+
+An internal Cursor Library (Odbccr32.dll) function is performing a PUSH DWORD
+PTR instruction instead of acquiring a byte. As a result three more bytes are
+being read than necessary. This occurs as parsing is performed on the SQL string
+that was passed to the cursor library.
+
+RESOLUTION
+==========
+
+If you use the MFC database classes, there are two possible workarounds:
+
+- Do not use the cursor library.
+
+- Override the MFC code to add three spaces to the end of each SQL statement
+  before calling the ODBC SQLPrepare() function.
+
+It might not be necessary to use the ODBC Cursor Library. If you mainly add,
+update, or delete records then you should use dynasets because dynasets do not
+use the Cursor Library and they give the best performance for these scenarios.
+If you are fetching data frequently, then you can use snapshots without using
+the Cursor Library. You can avoid using the Cursor Library by specifying FALSE
+for the last argument (bUseCursorLib) of CDatabase::Open(), or use the
+CDatabase::OpenEx() member function which doesn't load the Cursor Library by
+default.
+
+Use the Cursor Library where you need to modify records and need the fetching
+advantages of a snapshot. To use the Cursor Library, you must override the two
+areas in MFC where SQLPrepare() is called. You need to add three spaces to the
+end of the SQL string that gets passed to SQLPrepare. To do this, create a new
+CRecordset-derived class and perform the following steps:
+
+1. Copy the code in the CRecordset class (present in dbcore.cpp) for the
+  following member functions into your new CRecordset-derived class:
+
+        CRecordset::Open()
+        CRecordset::Update()
+        CRecordset::PrepareAndExectue()
+        CRecordset::BuildUpdateSQL()
+        CRecordset::UpdateInsertDelete()
+        CRecordset::Delete()
+
+2. Make the following modifications to BuildUpdateSQL() and PrepareAndExecute()
+  in the new CRecordset class.
+
+  a. For BuildUpdateSQL(), replace this statement:
+
+   
+           AFX_ODBC_CALL(::SQLPrepare(m_hstmtUpdate,
+               (UCHAR*)T2A((LPTSTR)(LPCTSTR)(m_strUpdateSQL), SQL_NTS));
+        
+
+     with this code:
+
+           AFX_ODBC_CALL(::SQLPrepare(m_hstmtUpdate,
+               (UCHAR*)T2A((LPTSTR)(LPCTSTR)(m_strUpdateSQL+"   ")),
+               SQL_NTS));
+       
+
+     This adds three spaces to the SQL statement.
+
+  b. For PrepareAndExectue(), replace this statement:
+
+   
+           LPCSTR lpszWSQL = T2CA(m_strSQL);
+       
+
+     with this code:
+
+   
+           CString strSQLTmp = m_strSQL + "   "; // Added three spaces.
+           LPCSTR lpszWSQL = T2CA(strSQLTmp);
+       
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+
+Additional query words: gpf general protection fault snapshot VC++ VC kbDatabase kbODBC kbMFC kbVC500 kbDSupport
+
+======================================================================
+Keywords          : kberrmsg kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

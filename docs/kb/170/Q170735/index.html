@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170735/","publisher":null,"image":null,"headline":"Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170735-wd97-word-hangs-after-inserting-outlook-address-book-address">Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170735
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop kbenvelopekbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you quit Word, the program stops responding (hangs). This problem occurs
+when you quit Word any time after inserting an address from the Outlook Address
+Book.
+
+
+CAUSE
+=====
+
+This problem occurs because you have WinFax Pro version 8.0 or 8.01 installed on
+your computer, and you have the WinFax Pro service in your default Windows
+Messaging Profile.
+
+WORKAROUND
+==========
+
+To prevent Word from hanging, remove the WinFax Pro service from the profile by
+following these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Mail And Fax.
+
+3. On the Services tab, click the WinFax Pro service.
+
+4. Click Remove, click Yes, and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The WinFax Pro service in the profile is only used to view the WinFax logs from
+a folder inside of either Microsoft Outlook or Microsoft Exchange. These logs
+can be viewed through the normal WinFax Pro interface. They will not affect the
+functionality of WinFax Pro.
+
+For additional information about inserting Outlook Address Book information,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q141874 WD: Some Contact List Fields Not Available to Word
+
+  Q134901 WD: How to Modify the Layout of an Address Book Entry
+
+  Q167770 OL97: Field Differences Between Outlook and Word Mail Merge
+
+  Q171043 OL98: (CW) Microsoft Fax Does Not Process Dialing Properties
+
+
+Additional query words: 8.0 ol ol97
+
+======================================================================
+Keywords          : kbinterop kbenvelope kbfaq
+Technology        : kbWordSearch kbOutlookSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

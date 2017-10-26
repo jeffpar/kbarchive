@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178118: XADM: Inbound Unicode 2.0 Messages Not Decoded Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178118: XADM: Inbound Unicode 2.0 Messages Not Decoded Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178118/","publisher":null,"image":null,"headline":"Q178118: XADM: Inbound Unicode 2.0 Messages Not Decoded Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178118-xadm-inbound-unicode-20-messages-not-decoded-properly">Q178118: XADM: Inbound Unicode 2.0 Messages Not Decoded Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178118
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to receive a message that contains Unicode 2.0 characters, the
+Internet Mail Service may generate an event in the event log that indicates that
+it was unable to decode the message. This problem is known to occur when you
+attempt to receive messages from the Netscape e-mail client, but it also occurs
+when you attempt to receive messages from any e- mail client that uses Unicode
+2.0 encoding.
+
+CAUSE
+=====
+
+When you install Microsoft Exchange Server, the Multipurpose Internet Mail
+Extensions (MIME) database entries needed to properly decode Unicode 2.0
+messages are not added to the database automatically.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.0. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+The fix causes the installation program to modify the following registry keys
+and values:
+
+  Key: HKEY_CLASSES_ROOT\MIME\Database\Codepage\65000
+  Value name: BodyCharSet
+  Value data: utf-7
+
+  Key: HKEY_CLASSES_ROOT\MIME\Database\Codepage\65001
+  Value name: BodyCharSet
+  Value data: utf-8
+
+After you obtain this fix or a Service Pack that contains this fix, you should
+reinstall Microsoft Exchange Server. If you do not want to reinstall Microsoft
+Exchange Server, you can modify the registry as described above manually, but
+this is not recommended.
+
+Additional query words: dbcs double-byte character set ims internet mail connector imc
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

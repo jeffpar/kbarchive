@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131736/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131736/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131736/","publisher":null,"image":null,"headline":"Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131736-tcpip-load-balancing-vs-distributed-network-sessions">Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131736
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 19-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have a multihomed computer, the Windows NT implementation of TCP/IP will
+help to distribute the number of connections, or sessions among the adapters
+according to a randomizing algorithm. However, truly balancing the network
+throughput among multiple network interface cards (NICs) has no current
+practical implementation on PC networks.
+
+MORE INFORMATION
+================
+
+Perfect load balancing, meaning even network bandwidth on all NICs, is not
+possible. It would necessitate connection oriented network traffic to be
+dynamically switched between NICs.
+
+However, Windows NT is able to distribute connections from clients across
+multiple NICs. This helps to spread out the network traffic.
+
+Examples Without WINS
+---------------------
+
+Case 1:
+
+You have multiple NICs in a computer which are connected to separate segments.
+These segments are not connected by any routers or bridges. No load balancing or
+distribution of connections takes place at all.
+
+Case 2:
+
+You have a multihomed server, and all of the clients have equal access through
+the network to any of the NICs in the server. Configure each NIC in the server
+for its own subnet and distribute the clients among those same subnets. Again,
+the load balancing achieved here is by virtue of physically distributing the
+clients across multiple subnets since IP traffic from the clients will be sent
+to the NIC which has the same subnet address as the client.
+
+Case 3:
+
+In this case, all clients have equal network access to any of the NICs on the
+multihomed computer. Let all of the client's and server's NICs be on the same
+subnet. A client sends out a broadcast name query. This request will be received
+by all of the server's adapters. All of the server's adapters will respond to
+the client's query and each server adapter's response will contain only one
+returned address: its own. The client connects with the first adapter to respond
+and the client drops response packets from the server's other adapters.
+
+Case 4:
+
+Assume that you have the same setup as case 3. Clients have equal access to all
+of the server's NICs, and all clients and server NICs are on the same subnet.
+Here you can help to distribute the client connections between the server NICs
+by enabling the RandomAdapter in the Registry. In this way, each NIC will still
+respond to the name query, but each NIC will choose the IP address randomly from
+all the NICs on the server. This helps to distribute network sessions among the
+NICs, but does not necessarily balance the load since network traffic may vary
+greatly between the sessions.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To do this, you will need to add the parameter RandomAdapter under the following
+subkey:
+
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netbt\Parameters
+
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q120642 TCP/IP and NBT Configuration Parameters for Windows 2000 or Windows
+  NT
+
+Examples with WINS Enabled
+--------------------------
+
+Case 1:
+
+All your clients are running Windows NT, Windows for Workgroups with TCP/IP- 32,
+or Windows 95.
+
+Assume all clients and all NICs for the multihomed computer are on the same
+subnet, and let all clients have equal access to any NIC on the server. Assume a
+WINS server exists on the network and the WINS server is not the multihomed
+server.
+
+In this case the multihomed computer has registered each of its NIC addresses
+under the same NetBIOS name with the WINS server. That is, it registered itself
+as a multihomed computer. When a WINS client sends a name query, it goes to the
+WINS server, and the WINS server returns a list of all IP addresses registered
+for the multihomed computer. The WINS client chooses from this list of multiple
+IP addresses according to the following algorithm:
+
+1. Match the NIC's subnet address with the client's address.
+
+2. Or, if step 1 fails, match the network address of the NIC with the client's
+  network address.
+
+3. If both steps 1 and 2 fail, choose randomly from the server's list of all
+  adapter IP addresses. If both steps 1 and 2 result in multiple matches,
+  choose randomly from the matching list.
+
+NOTE: The RandomAdapter parameter has no effect for these WINS clients.
+
+Case 2:
+
+You have clients on the WINS network which are not WINS aware or which do not
+have the WINS feature enabled. These clients respond to the RandomAdapter
+parameter set on the multihomed computer in the same way as Case 4 above. In
+fact, the RandomAdapter flag only applies for broadcast name queries from
+non-WINS aware or non-WINS enabled clients (for example, a Windows NT computer
+with WINS turned off).
+
+Additional Notes
+----------------
+
+Employing multiple NICs may not actually improve network throughput in some
+cases. Suppose, for example, that multiple NICs are configured to contend for
+traffic on the same segment or wire. The improved efficiency of today's NICs are
+such that slow downs may occur because of lack of bandwidth on the wire before a
+single NIC loses efficiency in handling the load. Today's standard ethernet wire
+transfer data at 10 MB/sec, but bandwidth for current NIC technology far exceeds
+this rate. A more effective way to improve throughput may be to connect a single
+ethernet NIC to a 100 MB/sec ethernet link.
+
+
+Additional query words: prodnt TCP
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

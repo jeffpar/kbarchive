@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86813: FIX: Macros w/ Different Case Can’t Be Assigned to Each Other | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86813: FIX: Macros w/ Different Case Can’t Be Assigned to Each Other" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86813/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86813/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86813/","publisher":null,"image":null,"headline":"Q86813: FIX: Macros w/ Different Case Can’t Be Assigned to Each Other","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86813-fix-macros-w-different-case-cant-be-assigned-to-each-other">Q86813: FIX: Macros w/ Different Case Can’t Be Assigned to Each Other</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86813
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.11,1.12,1.13,1.2; OS/2:1.11,1.12,1.13
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft NMAKE Utility for MS-DOS, versions 1.11, 1.12, 1.13, 1.2 
+- Microsoft NMAKE Utility for OS/2, versions 1.11, 1.12, 1.13 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NMAKE version 1.11, 1.12, 1.13, or 1.2 macros that are the same but have a
+different case cannot be assigned to one another. This kind of macro assignment
+results in nothing being assigned. For example, the sample makefile below
+displays
+
+  upper and
+
+when the output should be as follow:
+
+  upper and lowercase
+
+RESOLUTION
+==========
+
+Even though NMAKE macros are case sensitive, this type of assignment is not
+successful. Two workarounds are:
+
+- Use a temporary MACRO to perform the assignment. For example,
+
+       target= file.exe;
+       TEMP = $(target)
+       TARGET = $(TEMP)
+
+-or-
+
+- Give each macro a unique name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in NMAKE versions 1.11, 1.12, 1.13,
+and 1.2 for MS-DOS and versions 1.11, 1.12, and 1.13 for OS/2. This problem was
+corrected in NMAKE version 1.3.
+
+Sample Makefile
+---------------
+
+  target = lowercase
+  TARGET = upper and $(target)
+
+  ALL:
+
+     @echo $(TARGET)
+
+Additional query words: 1.11 1.12 1.13 1.20 buglist1.11 buglist1.12 buglist1.13 buglist1.20 fixlist1.30
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111DOS kbNMAKE112DOS kbNMAKE113DOS kbNMAKE120DOS kbNMAKE111OS2 kbNMAKE112OS2 kbNMAKE113OS2
+Version           : MS-DOS:1.11,1.12,1.13,1.2; OS/2:1.11,1.12,1.13
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

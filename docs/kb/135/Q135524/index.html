@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135524/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135524/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135524/","publisher":null,"image":null,"headline":"Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135524-diskeeper-version-10-uninstall-causes-windows-nt-351-to-hang">Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135524
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Executive Software Diskeeper 1.0 uninstall feature after you
+upgrade Windows NT 3.5 to 3.51 and restart your computer, you receive an entry
+point error in NTDLL.DLL and Windows NT hangs and becomes unbootable.
+
+NOTE: Diskeeper for Windows NT is a disk defragmentation program for Windows NT
+3.5.
+
+CAUSE
+=====
+
+Diskeeper version 1.0 is not designed to run under Windows NT 3.51.
+
+When you install Diskeeper on Windows NT 3.5, Diskeeper replaces the following
+Windows NT system files with its own versions of these files: NTDLL.DLL,
+NTOSKRNL.EXE, FASTFAT.SYS, and NTFS.SYS. If you use the Diskeeper uninstall
+feature after you upgrade to Windows NT 3.51, Diskeeper replaces the Windows NT
+3.51 versions of these files with the Windows NT 3.5 versions. These do not work
+with Windows NT 3.51.
+
+RESOLUTION
+==========
+
+Run the emergency repair disk (ERD) to recover your Windows NT 3.51 boot and
+system files. Do not run Diskeeper version 1.0 under Windows NT 3.51.
+
+To prevent this problem when you upgrade from Windows NT 3.5 to 3.51, uninstall
+Diskeeper before you start the upgrade.
+
+Diskeeper 1.01, which works with windows NT 3.51, is now available from Executive
+Software from the following locations:
+
+  Compuserve- GO EXECSOFT
+  wwearthlink.net\execsoft
+
+MORE INFORMATION
+================
+
+This problem can also occur in NT 4.0 server and workstation. It is strongly
+recommended that customers read the Product Alert on ExecSoft's web site which
+is located at http://www.execsoft.com/pas/pa091796.htm.
+
+The latest version of Diskeeper is version 2.0 for NT 4.0.
+
+
+For additional information, contact Executive Software at:
+
+  Executive Software
+  701 North Brand Blvd., 6th Floor
+  Glendale, California, USA 91203-1242
+
+  Technical Support: (818) 547-2050
+  FAX: (818) 545-8801
+
+Diskeeper is manufactured by Executive Software, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: prodnt defrag utility defragmenter
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

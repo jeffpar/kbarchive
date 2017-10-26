@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118324/","publisher":null,"image":null,"headline":"Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118324-choosing-network-icon-hangs-system-with-access-11-installed">Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118324
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the Network icon in Control Panel, your system stops
+responding (hangs).
+
+CAUSE
+=====
+
+This problem can occur if Microsoft Access version 1.1 has been installed after
+Windows for Workgroups version 3.11.
+
+Microsoft Access 1.1 ships with an older version of the WFWNET.DRV file (dated
+5/28/93), which replaces the Windows for Workgroups WFWNET.DRV file during the
+Access Setup. This version does not support the dialog boxes used in Windows for
+Workgroups 3.11.
+
+RESOLUTION
+==========
+
+Follow the steps below to reinstall the Windows for Workgroups 3.11 version of
+the WFWNET.DRV file.
+
+1. Exit Windows for Workgroups.
+
+2. At the MS-DOS prompt, change to the Windows SYSTEM subdirectory.
+
+3. Use the MS-DOS RENAME command to rename the WFWNET.DRV file dated 5/28/93 to
+  WFWNET.OLD:
+
+  rename wfwnet.drv wfwnet.old
+
+4. Use the MS-DOS or Windows for Workgroups EXPAND.EXE command to expand the
+  Windows for Workgroups WFWNET.DR_ file to the Windows SYSTEM subdirectory.
+  (WFWNET.DR_ is located on Disk 7 of the 3.5-inch disk set and Disk 8 of the
+  5.25-inch disk set.) For example, if the disk containing WFWNET.DR_ is in
+  drive A and drive C contains your Windows directory, type the following
+  command:
+
+  expand a:\wfwnet.dr_ c:\windows\system\wfwnet.drv
+
+Additional query words: icon hourglass freeze freezes froze frozen hung hangs 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

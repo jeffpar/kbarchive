@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139291/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139291/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139291/","publisher":null,"image":null,"headline":"Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139291-howto-change-the-backcolor-of-a-toolbar-when-it-is-docked">Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139291
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbToolbar kbvfp kbvfp300
+Last Modified: 07-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro, the BackColor of a custom toolbar is set to grey by default.
+This article describes how to use the Windows API to ensure that your toolbar
+BackColor is the same as the color of the docking area of your application
+window.
+
+MORE INFORMATION
+================
+
+The background color of the docking area is controlled by the Button Face color
+in Windows 3.1 and by the 3D Objects color in Windows 95. To ensure that your
+toolbar BackColor matches the background color of the docking area of your
+application window, use the Windows API to get the current color of the docking
+area, and then set the BackColor of your toolbar to the color returned.
+
+To get the 3D Objects color in Windows 95 or the Button Face color in Windows
+3.1, add the following code to the AfterDock event in your ToolBar or ToolBar
+class:
+
+  DECLARE INTEGER GetSysColor in User32.dll Integer
+     This.BackColor = GetSysColor(15)
+
+The GetSysColor() API function can use the following list of color constants.
+These constants were obtained from the Winuser.h header file that is shipped
+with Microsoft Visual C++. This list can be placed in a header file and used
+with the formset that is associated with the toolbar. Using the actual Winuser.h
+header file as an include file with a form might cause Visual FoxPro to stop
+responding.
+
+Here is the list of color constants:
+
+  #define CTLCOLOR_MSGBOX             0
+  #define CTLCOLOR_EDIT               1
+  #define CTLCOLOR_LISTBOX            2
+  #define CTLCOLOR_BTN                3
+  #define CTLCOLOR_DLG                4
+  #define CTLCOLOR_SCROLLBAR          5
+  #define CTLCOLOR_STATIC             6
+  #define CTLCOLOR_MAX                7
+  #define COLOR_SCROLLBAR             0
+  #define COLOR_BACKGROUND            1
+  #define COLOR_ACTIVECAPTION         2
+  #define COLOR_INACTIVECAPTION       3
+  #define COLOR_MENU                  4
+  #define COLOR_WINDOW                5
+  #define COLOR_WINDOWFRAME           6
+  #define COLOR_MENUTEXT              7
+  #define COLOR_WINDOWTEXT            8
+  #define COLOR_CAPTIONTEXT           9
+  #define COLOR_ACTIVEBORDER         10
+  #define COLOR_INACTIVEBORDER       11
+  #define COLOR_APPWORKSPACE         12
+  #define COLOR_HIGHLIGHT            13
+  #define COLOR_HIGHLIGHTTEXT        14
+  #define COLOR_BTNFACE              15
+  #define COLOR_BTNSHADOW            16
+  #define COLOR_GRAYTEXT             17
+  #define COLOR_BTNTEXT              18
+  #define COLOR_INACTIVECAPTIONTEXT  19
+  #define COLOR_BTNHIGHLIGHT         20
+  #if("4" $ OS())
+  #define COLOR_3DDKSHADOW           21
+  #define COLOR_3DLIGHT              22
+  #define COLOR_INFOTEXT             23
+  #define COLOR_INFOBK               24
+  #define COLOR_DESKTOP           COLOR_BACKGROUND
+  #define COLOR_3DFACE            COLOR_BTNFACE
+  #define COLOR_3DSHADOW          COLOR_BTNSHADOW
+  #define COLOR_3DHIGHLIGHT       COLOR_BTNHIGHLIGHT
+  #define COLOR_3DHILIGHT         COLOR_BTNHIGHLIGHT
+  #define COLOR_BTNHILIGHT        COLOR_BTNHIGHLIGHT
+  #endif
+
+To create a header file out of the constants listed above:
+
+1. Either copy and paste the code or type the code into a new text file in
+  Visual FoxPro.
+
+2. Save the text file as Colors.h or any other valid file name with a .h
+  extension.
+
+3. Open a form in the Visual FoxPro Form Designer and select the Include file
+  command from the Form menu. Click the name of the header file created in step
+  2.
+
+4. Use the constant names in the GetSysColor() API function.
+
+Additional query words: API GetSysColor
+
+======================================================================
+Keywords          : kbToolbar kbvfp kbvfp300 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

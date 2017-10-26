@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156934: INFO: Visual C++ 4.2b Patch | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156934: INFO: Visual C++ 4.2b Patch" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156934/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156934/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156934/","publisher":null,"image":null,"headline":"Q156934: INFO: Visual C++ 4.2b Patch","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156934-info-visual-c-42b-patch">Q156934: INFO: Visual C++ 4.2b Patch</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156934
+Product(s): Microsoft C Compiler
+Version(s): 4.2
+Operating System(s): 
+Keyword(s): kbenv kbfile kbinterop kbole kbtool kbnokeyword kbMFC kbVC420 kbWinsock kbGrpDSMFCATL k
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This is a technology update for Visual C++ 4.2, which updates Visual C++ 4.2
+retail installation to work with the final release of the Win32 and ActiveX
+SDKs. In addition, AppWizard, ClassWizard and BSCMAKE.EXE have also been
+updated. For a list of details on what exactly has been updated, please see MORE
+INFORMATION section below or read the README.TXT file included in the patch.
+
+If you downloaded the Visual C++ 4.2a patch from the Microsoft Web site, you will
+need to upgrade to Visual C++ 4.2b, using the 42bb1b2.EXE file shown below.
+
+There are four self-extracting files available. These files contain different
+combinations of the patch. You should download the proper self- extracting files
+that best suit your needs. Following is a brief description of these four
+files:
+
+VC42B.EXE
+---------
+
+This file includes all components of the patch. It updates:
+
+1. The Win32 and ActiveX SDKs to the final release.
+
+2. MFC headers and libraries to sync up with the SDKs.
+
+3. AppWizard, ClassWizard and BSCMAKE.EXE.
+
+  If you would like to patch all components in Visual C++ 4.2, you should
+  download this file. Following is a list of files included in this self-
+  extracting file:
+
+  readme.txt - Release notes for the patch.
+  install.txt - Patch install instructions.
+  patch-nt.exe - The executable which runs the patch script.
+  patchw32.dll - Support dll for patch-nt.exe.
+  vc42b.rtp - The patch file for the \msdev tree.
+  dll42b.rtp - The patch file for the MFC dlls in the \windows\system or
+  \windows\system32 directory.
+
+  For the MFC-only or SDK-only patch, please see the descriptions for
+  MSDEV42B.EXE and SDK42B.EXE below.
+
+42BB1B2.EXE
+-----------
+
+Use this patch instead of VC42b.EXE if you have downloaded and applied the Visual
+C++ 4.2a patch. This file only updates files modified by the Visual C++ 4.2a
+patch. Following is a list of files included in this self- extracting file:
+
+  readme.txt - Release notes for the patch.
+  install.txt - Patch install instructions.
+  patch-nt.exe - The executable which runs the patch script.
+  patchw32.dll - Support dll for patch-nt.exe.
+  vc42b2.rtp - The patch file for the \msdev tree.
+  dll42b2.rtp - The patch file for the MFC dlls in the \windows\system or
+  \windows\system32 directory.
+
+Note that when running this patch, it assumes you have the MFCCLSWZ.DLL from VC
+4.2 installed in the MSDEV\BIN directory. You can copy the original MFCCLSWZ.DLL
+from Visual C++ 4.2 CD under the \msdev\bin\mfcclswz.dll directory.
+
+MSDEV42B.EXE
+------------
+
+This file doesn't update the SDK components. You must have received the final
+Win32 and ActiveX SDK files elsewhere. This file only patches MFC to sync up
+with the release version of the Win32 and ActiveX SDKs. The patch also updates
+AppWizard, ClassWizard and BSCMAKE.EXE. Following is a list of files included in
+this self-extracting file:
+
+  readme.txt - Release notes for the patch.
+  install.txt - Patch install instructions.
+  patch-nt.exe - The executable which runs the patch script.
+  patchw32.dll - Support dll for patch-nt.exe.
+  msdev42b.rtp - The patch file for the \msdev\mfc tree.
+  dll42b.rtp - The patch file for the MFC dlls in the \windows\system or
+  \windows\system32 directory.
+
+For the SDK patch, please download SDK42B.EXE.
+
+SDK42B.EXE
+----------
+
+This file patches Win32 and ActiveX SDKs in \msdev\include and \msdev\lib
+directories. It also patches AppWizard, ClassWizard and BSCMAKE.EXE. However, it
+doesn't patch MFC include and library files. If you haven't downloaded the MFC
+patch yet, you should do so, if your applications are MFC based. This file
+includes:
+
+  readme.txt - Release notes for the patch.
+  install.txt - Patch install instructions.
+  patch-nt.exe - The executable which runs the patch script.
+  patchw32.dll - Support dll for patch-nt.exe.
+  sdk42b.rtp - The patch file for the \msdev\include and \msdev\lib directories.
+
+For the MFC patch, please download MSDEV42B.EXE.
+
+For a list of files the patch updates, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q160491 Information on Files Modified by VC42b Patch: Part 1 of 4
+
+  Q160496 Information on Files Modified by VC42b Patch: Part 2 of 4
+
+  Q160505 Information on Files Modified by VC42b Patch: Part 3 of 4
+
+  Q160506 Information on Files Modified by VC42b Patch: Part 4 of 4
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Vc42b.exe
+
+42bb1b2.exe (http://support.microsoft.com/download/support/mslfiles/42bb1b2.exe)
+
+Msdev42b.exe
+(http://support.microsoft.com/download/support/mslfiles/Msdev42b.exe)
+
+Sdk42b.exe
+
+
+This patch updates MFC files, as well as AppWizard, ClassWizard and BSCMAKE.EXE,
+and, optionally, the Win32 SDK and ActiveX SDK components.
+
+MFC4.2 has support for the new ActiveX technologies in the ActiveX SDK. However,
+the support was based on a beta version of the SDK and some changes were
+necessary to make MFC work properly with the final versions of the ActiveX
+components. These components ship with Internet Explorer version 3.0 and the
+ActiveX SDK.
+
+In addition to these changes, a number of problems were also fixed in MFC, OLE
+Control and Winsock support and are covered in the MORE INFORMATION section
+below.
+
+Also, there was a minor code change necessary for MFC ActiveX Document support;
+the code generated by AppWizard has been updated as well.
+
+There are three fixes in ClassWizard:
+
+1. Performance improvement for projects with a large number of classes (100 or
+  more). Previously, ClassWizard was slow to appear, and there was a
+  significant delay when switching tabs.
+
+2. Data members are now saved without closing ClassWizard. Previously, if you
+  added data members and did not immediately close ClassWizard, the data
+  members were not saved. Therefore, switching among the pages in ClassWizard
+  caused the newly-added data members to be lost.
+
+3. Member functions are now saved without editing the source code. Previously,
+  if you added member functions and did not edit the code immediately after
+  adding the member functions, the member functions were not saved. Therefore,
+  switching among the pages in ClassWizard caused the newly-added member
+  functions to be lost.
+
+We have updated BSCMAKE.EXE to fix a crashing problem on Windows NT and also to
+correct a problem with the .BSC file being corrupted on Windows 95.
+
+The MFC 4.2 Reference also needs to be updated. Below is a summary of the
+changes.
+
+1. COleDateTime - two-digit dates are no longer valid. You must specify a date
+  of 100 or greater.
+
+2. CInternetSession::OpenURL - two new flags added, INTERNET_FLAG_TRANSFER_ASCII
+  and INTERNET_FLAG_TRANSFER_BINARY, to open files in text mode or binary mode.
+
+3. CAsyncMonikerFile changes - new member function CreateBindStatusCallback
+  default binding changed from data-pull mode to data-push mode in GetBindInfo.
+
+4. To implement asynchronous monikers in ClassWizard, choose BSTR from the Add
+  Property type list, not OLE_DATAPATH. OLE_DATAPATH still exists as a type
+  choice, but you should not use it because it is no longer defined in the
+  headers.
+
+MORE INFORMATION
+================
+
+Below is a description of the bugs fixed in Visual C++ 4.2b patch. This
+information is also available in the README.TXT included in the patch. In each
+category, bugs that fit the general category are followed by bugs specific to a
+particular class in the MFC Library, in alpha order by class affected.
+
+ActiveX Controls
+----------------
+
+- The implementation of the global function PX_DataPath passed a CString
+  instead of a reference to a CString. This caused an access violation in a
+  DoPropExchange call. This has been corrected.
+
+
+- An incorrectly defined constant (OLEMISC_WANTSTOMENUMERGE) in one of the OLE
+  header files caused menu merging between MFC ActiveX controls and OLE
+  containers based on the latest SDK header files to be handled incorrectly.
+  The value assigned to this constant has been corrected.
+
+
+- Changes made to the implementation of MFC ActiveX controls in MFC 4.2 caused
+  Borland Delphi ActiveX containers to malfunction. Events sent by MFC ActiveX
+  controls were not being received properly by Delphi. Subsequent changes to
+  the MFC implementation have worked around this problem and the MFC ActiveX
+  controls now function properly inside Delphi containers.
+
+
+- MFC ActiveX controls that use a sub-classed button control (such as the
+  sample BUTTON control) did not correctly detect single-click events. A small
+  change to the implementation of CWnd::OnXButtonUp fixes this bug.
+
+
+- During quick activation of an ActiveX control, a missing call to
+  IViewObject::SetAdvise prevented controls from repainting correctly in some
+  containers. This call has been added and the bug is fixed.
+
+
+- ActiveX controls created with MFC caused invalid ASSERTs in some OLE control
+  containers. This bug has been fixed and the ActiveX controls should behave as
+  expected.
+
+
+COleControl Bugs
+----------------
+
+- A bug in the implementation of COleControl caused a memory leak if no
+  property pages existed for an ActiveX control. This behavior has been fixed.
+
+
+- Code in the COleControl in-place deactivation implementation was
+  inadvertently reactivating the control. This bug has been fixed.
+
+
+- A bug in COleControl::GetDataSource caused an ASSERT to fire because the
+  module state was not being set for an AppWizard-generated MFC ActiveX
+  control. This problem has been fixed.
+
+
+- A regression in MFC 4.2 in the COleControl::SetClientSite implementation
+  caused MFC ActiveX controls to malfunction. This bug has been fixed and the
+  pointer to the ambient property interface is now released correctly.
+
+
+Database
+--------
+
+- A small change to CDaoRecordset::Open fixed an inappropriate ASSERT that
+  checks the nOpenType parameter. This ASSERT now correctly checks for the
+  dbOpenTable type.
+
+
+Internet
+--------
+
+- The header file, DATAPATH.H, has been dropped from the Internet SDK.
+  Appropriate changes to the MFC header files have been made, and the changes
+  are transparent to existing MFC applications.
+
+
+- The ISAPIVERIFY macro was incorrectly defined in the header file, which
+  caused the macro to not function in release builds. This bug has been fixed.
+
+
+AfxParseURL Bugs
+----------------
+
+- A small error in the implementation of the services table for the global
+  function AfxParseURL has been corrected. This change does not affect the
+  documentation.
+
+
+- AfxParseURL no longer hangs if the URL has white space. A fix to the
+  implementation checks the string and correctly handles this condition.
+
+
+- The implementation of AfxParseURL has been updated so that it correctly
+  interprets the "file://" prefix for a URL.
+
+
+CAsyncMoniker Bugs
+------------------
+
+- An uncaught exception in the call to member function CAsyncMonikerFile::Close
+  could cause the program to crash. This bug has been fixed, and the open
+  CAsyncMonikerFile closes correctly.
+
+
+- The implementation of CAsyncMoniker::Close was improperly calling
+  IBinding::Abort. The implementation has been fixed.
+
+
+- The implementation of CAsyncMonikerFile did not properly release the IBinding
+  interface. This bug has been fixed by adding the missing call.
+
+
+- The implementation of CAsyncMonikerFile now uses the data-push model by
+  default instead of the data-pull model as documented in
+  CAsyncMonikerFile::GetBindInfo.
+
+
+- Binding synchronously in a CAsyncMonikerFile object caused an invalid ASSERT.
+  A correction has been made to the implementation of CAsyncMonikerFile::Attach
+  to fix this bug.
+
+
+- As in the previous bug, the incorrect module state was set when releasing
+  IBindStatusCallback in a CAsyncMoniker file. The bug has been fixed and the
+  URL moniker DLL also released at the proper time.
+
+
+CHttpConnection Bug
+-------------------
+
+- In the CHttpConnection::OpenRequest member function, if a value other than 1
+  was assigned for the dwContext parameter, an incorrect value was set to
+  m_dwContext by the function. This behavior has been corrected.
+
+
+CHttpFile Bugs
+--------------
+
+- The implementation of CHttpFile::GetFileURL was incorrectly building the URL.
+  This bug has been fixed.
+
+
+- A bug in the implementation of CHttpFile::GetObject caused the return value
+  to be an empty string instead of a file name. This error has been fixed.
+
+
+CHttpServer Bug
+---------------
+
+- Code has been added to the implementation of CHttpServer::HttpExtensionProc
+  to correctly handle ISAPI result code 302 (URL Redirect).
+
+
+CInternetException Bug
+----------------------
+
+- CInternetException wasn't properly exported from DLL version of MFC and its
+  use in a project could sometimes cause the linker to report unresolved
+  externals.
+
+
+CInternetFile Bugs
+------------------
+
+- The diagnostic function, CInternetFile::AssertValid, was implemented without
+  allowing for all of the valid handle types included for FTP and GOPHER files.
+  Any one of several handle types are valid in response to a request received
+  for a file handle. The AssertValid member function has been corrected to
+  include all valid handle types for these files.
+
+
+- The implementation of member function CInternetFile::ReadString failed if no
+  buffer size was set prior to calling the function. This has been fixed.
+
+
+- A bug in the implementation of CInternetFile::SetReadBufferSize caused errors
+  in reading the buffer for copy operations. This bug has been fixed.
+
+
+- A bug in the implementation of CInternetFile::Seek caused this member
+  function to not work correctly if a read buffer was set. A new ASSERT warns
+  if this condition exists.
+
+
+- A redundant call to the member function Flush has been removed from the
+  implementation of CInternetFile::Seek. This change is transparent to users.
+
+
+- A small change to the implementation of CInternetFile::Read now corrects a
+  problem in handling the read buffer when the number of bytes to be read was
+  greater than the buffer size.
+
+
+- A bug in the implementation of the CInternetFile constructor incorrectly
+  managed an internal data structure, and this could cause MFC to crash when
+  processing status callbacks for CInternetSession objects related to the file
+  object. This bug has been fixed.
+
+
+CInternetSession Bugs
+---------------------
+
+- An additional flag parameter has been added for the CInternetSession::OpenURL
+  member function. For a full description, please see the README.TXT file.
+
+
+- A change in CInternetSession::OpenURL assures that this member function and
+  CHttpConnection both work correctly with secured HTTP sites. There is a new
+  override of CHttpConnection::GetHttpConnection documented in the README.TXT.
+
+
+- The client-side MFC Internet classes are now thread-safe due to a change to
+  the implementation of CInternetSession.
+
+
+CMonikerFile Bugs
+-----------------
+
+- The CMonikerFile::Attach member function was not correctly handling the
+  pointer to the IStream interface. This bug has been fixed, and CMonikerFile
+  objects behave as expected.
+
+
+- The implementation of CMonikerFile::Detach in MFC 4.2 did not properly detach
+  from the COleStreamFile object and caused an exception. A separate
+  implementation of CMonikerFile::Flush has corrected the problem.
+
+
+- A memory leak was detected in the implementation of CMonikerFile::Attach.
+  Fixing this bug frees the memory allocated for the URL.
+
+
+MFC APIs
+--------
+
+- The template helper CopyElements had a code error that caused CArray::Copy
+  and CArray::Append to malfunction. The error has been corrected and these two
+  member functions should behave as expected.
+
+
+- The length of a string allocated for CException::ReportError has been
+  increased to accommodate longer error messages.
+
+
+- An error in the implementation of CFileFind::GetFileTitle caused this member
+  function to return the file extension as well as the file title. This bug has
+  been fixed.
+
+
+- A bug in the implementation of CMemFile also affected class COleControlSite.
+  This bug has been fixed and the memory errors it caused have been eliminated.
+
+
+- An error in the implementation of CRichEditView::FindTextSimple prevented
+  text containing multibyte characters from being located by the text search.
+  This bug has been fixed and text search now works correctly.
+
+
+- A call to CString::Empty instead of the CString destructor in the
+  implementation of CStatusBar caused the status bar to display incorrectly.
+  This call has been changed to use the destructor and the status bar now
+  behaves as expected.
+
+
+- An error in the implementation of CView::OnEndPrintPreview caused an invalid
+  ASSERT when the print preview window closed. This bug has been fixed.
+
+
+- Earlier bug fixes in MFC 4.2 caused a regression in the implementation of
+  CWinApp::ProcessShellCommand in MFC 4.2. Correcting the code now permits an
+  SDI application's main window to come up initially maximized.
+
+
+- A bug in the macro ON_REGISTERED_THREAD_MESSAGE prevented both this macro and
+  the CWinThread::PostThreadMessage from working properly. The error has been
+  corrected and threading messages should behave as expected.
+
+
+- The implementation of CWinThread::PreTranslateMessage in MFC 4.2 was
+  preventing timer callback functions from being called. A small change to the
+  implementation now correctly detects and routes the WM_TIMER messages.
+
+
+- A value passed in the LPARAM of the WM_MOVE message was being incorrectly
+  propagated by CWnd::OnMove. This bug has been fixed and OnMove behaves as
+  expected.
+
+
+MFC Sockets
+-----------
+
+- A blocking CSocket call would occasionally hang when a timer message was
+  active. This occurred because the checking of timer message in
+  CSocket::PumpMessages was occurring before a check for the socket
+  notification message. This bug has been fixed and applications that use this
+  code should see an overall improvement in speed.
+
+
+- Calls to CSocket::Accept would not block properly when accepting a connecting
+  socket. The error code returned from the Accept call was being reset by
+  another function that is part of the Accept implementation. This bug has been
+  fixed and CSocket::Accept now blocks as expected.
+
+
+OLE
+---
+
+- An ambiguous TRACE message that appears in Debug mode after an OLE object is
+  created has been removed from the implementation of class COleClassFactory.
+  This message no longer applies given the changes to MFC's OLE apartment model
+  threading implementation.
+
+
+- MFC occasionally caused Windows to deadlock while unloading DLLs that
+  implement OLE objects. This error has been fixed in the implementation of
+  class CWinThread.
+
+OLE Document Objects
+--------------------
+
+- MFC DocObject servers were not displaying correctly in an HTML page when used
+  in Internet Explorer 3.0 because in-place activation had not been
+  implemented. This bug has been fixed, and DocObject servers now behave
+  correctly inside Internet Explorer 3.0.
+
+
+- The merging of the Help menu for activated DocObjects was not functioning
+  correctly. This bug has been fixed and the Help menu for the DocObject now
+  appears on a submenu along with the name of the object.
+
+
+- In the global function ON_OLECMD, sending the OLECMDID_PRINTPREVIEW flag to
+  an embedded DocObject server caused an assertion in MFC's Print Preview
+  implementation. This bug has been fixed.
+
+
+- An AppWizard-generated application with OLE Server/Container functionality
+  did not properly handle an AppWizard-generated server application that had
+  ActiveX document server support because the document object DLL was not
+  registered. Such container applications now in place activate the ActiveX
+  servers correctly.
+
+CDocObjectServerItem Bugs
+-------------------------
+
+- A bug in the implementation of DocObjects in MFC caused the
+  CDocObjectServerItem::OnShow member function to fail. This bug has been fixed
+  and DocObjects now activate correctly.
+
+
+- Additional code in the implementation of CDocObjectServerItem::OnShow now
+  verifies that the pointer to a document is a DocObject before activating it.
+  This corrects unexpected behavior with non-DocObject servers in Internet
+  Explorer 3.0.
+
+
+CDocObjectServer Bugs
+---------------------
+
+- The implementation for the IPrint OLE object in class CDocObjectServer has
+  been corrected, and printing from DocObjects should function correctly.
+
+
+- The implementation of CDocObjectServer had an incorrect return value for its
+  out-of-bounds calls to IOleCommandTarget::QueryStatus. The bug has been
+  fixed.
+
+
+- The implementation of CDocObjectServer also had an incorrect return value for
+  its call to IOleCommandTarget::Exec to display help for a DocObject. This bug
+  has been fixed.
+
+
+- Better allocation of memory in the implementation of CDocObjectServer has
+  corrected a potential memory leak when printing from a DocObject.
+
+
+- The implementation of CDocObjectServer now checks for the correct text flags
+  before handling UPDATE_UI message for COleCmdUI objects.
+
+
+- The implementation of CDocObjectServer also checks for status flags before
+  routing COMMAND_UPDATE_UI notifications to the frame window.
+
+
+COleServerDoc Bug
+-----------------
+
+- A fix to COleServerDoc::GetDocObjectServer correctly returns a handle to the
+  current DocObject server instead of automatically creating a new one.
+
+
+COleCmdUI Bug
+-------------
+
+- A change in the implementation of COleCmdUI::DoUpdate corrects the command
+  handling for DocObjects.
+
+
+Resource Editor
+---------------
+
+- A regression in MFC 4.2 in the COleControl::SetClientSite implementation
+  caused MFC ActiveX controls to malfunction. Viewing the properties of one of
+  these controls using the resource editor caused Devstudio96 to crash.
+
+
+Additional query words: 4.20a 4.20b
+
+======================================================================
+Keywords          : kbenv kbfile kbinterop kbole kbtool kbnokeyword kbMFC kbVC420 kbWinsock kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : :4.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

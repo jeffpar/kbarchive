@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183748/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183748/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183748/","publisher":null,"image":null,"headline":"Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183748-prb-error-message-dllregisterserver-in-file-namedll-failed">Q183748: PRB: Error Message "DllRegisterServer in &lt;File name&gt;.dll Failed"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183748
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,97sp2,97sp3
+Operating System(s): 
+Keyword(s): kberrmsg kbVBp500 kbGrpDSVB
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message displays when you attempt to register an ActiveX
+.dll file with RegSvr32.exe on another computer:
+
+  DllRegisterServer in &lt;File name&gt;.dll failed.
+
+The ActiveX .dll file was created with Visual Basic 5.0 and Visual Studio 97
+Service Pack 2 or 3.
+
+CAUSE
+=====
+
+The computer receiving the ActiveX DLL contains a version of the file
+MSVBVM50.DLL that is different from the computer that was used to create the
+ActiveX .dll file.
+
+RESOLUTION
+==========
+
+Install MSVBVM50.DLL version 5.00.4319(sp2) on all computers that use your
+ActiveX .dll file. Version 5.00.4319 of MSVBVM50.DLL is shipped with Visual
+Studio 97 Service Pack 2 and 3. With this version of MSVBVM50.DLL installed, you
+should be able to successfully register your ActiveX .dll using RegSvr32.exe.
+
+MORE INFORMATION
+================
+
+To reproduce this problem using the steps below, you will need two computers.
+The first computer has Visual Basic 5.0 and Visual Studio 97 Service Pack 2 or
+3. Verify that the file MSVBVM50.DLL has the following properties:
+
+Filename: MSVBVM50.DLL
+Size    : 1.28Mb (1,347,344 bytes)
+Created : July 19, 1997
+Version : 5.00.4319(sp2)
+
+The second computer has Visual Basic 5.0 without Service Packs installed. Verify
+that the file MSVBVM50.DLL has the following properties:
+
+Filename: MSVBVM50.DLL
+Size    : 1.27Mb (1,334,032 bytes)
+Created : January 24, 1997
+Version : 5.00.3724
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Using the first computer, start a new ActiveX .dll project in Visual Basic.
+
+2. Copy the following code to the Code window of the Class1 Module:
+
+        Option Explicit
+
+        Public Sub Method1()
+           MsgBox "From the ActiveX dll."
+        End Sub
+
+3. From the File menu, click Make Project1.dll. The Make Project dialog box
+  appears. Type Project1.dll in the File name text box and click OK.
+
+4. Copy the newly-created Project1.dll file to the System folder of the second
+  computer. If the second computer is running Windows NT, copy the .dll to the
+  System32 folder.
+
+5. From the Start menu of the second computer, click Run. The Run dialog box
+  appears. Type the following command line and click OK:
+
+  Regsvr32 C:\Windows\System\Project1.dll
+
+  Result: The error message appears. To work around this problem, copy
+  MSVBVM50.DLL version 5.00.4319 to the second computer. Repeat step 5. The
+  .dll file is successfully registered.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0,97sp2,97sp3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

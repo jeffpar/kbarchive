@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178995/","publisher":null,"image":null,"headline":"Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178995-fix-visual-c-wizards-ignore-insert-spaces-in-tabs-option">Q178995: FIX: Visual C++ Wizards Ignore "Insert Spaces" in Tabs Option</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178995
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbCodeGen kbide kbMFC kbVC400 kbVC500 kbVC600 kbClassWizard kbGrpDSTools
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+AppWizard and ClassWizard always generate code indented with tabs, regardless of
+the "Insert Spaces" setting.
+
+RESOLUTION
+==========
+
+Visual C++ 5.0 and 6.0
+----------------------
+
+To remove all undesired tab characters from text displayed in Visual C++
+Developer Studio, use the Untabify feature. To "untabify" a set of lines:
+
+1. Select the line(s) containing the undesired tab characters. To select the
+  entire document, click Select All on the Edit menu.
+
+2. Click Advanced on the Edit menu, then click Untabify Selection. Spaces
+  replace tab characters. The selected text's visible formatting does not
+  change. All tab characters are correctly replaced by an appropriate number of
+  spaces.
+
+Visual C++ 4.x
+--------------
+
+To remove undesired tab characters from text displayed in Visual C++ versions
+earlier than 5.0, use the Replace feature. Follow these steps:
+
+1. Determine your tab expansion setting. Click Options on the Tools menu, then
+  click Tabs on the dialog box. Note the setting labeled Tab size.
+
+2. Select the line(s) containing the undesired tab characters. To remove tabs
+  from the entire document, see step 4.
+
+3. Click Replace on the Edit menu. In the Find what field, type a number of
+  spaces corresponding to the "Tab size" setting. In the Replace with field,
+  type in the same number of spaces.
+
+4. In the Replace in section, select either Selection or Whole file. Click
+  OK.[ASCII 148] Leading and full-width tabs are now replaced with spaces.
+
+5. To remove tabs whose effective widths do not correspond to the Tab size
+  setting (tabs between text), repeat replacing as in steps 3 and 4 but with
+  one less space each time in the Find what and Replace with fields. After
+  replacing all single spaces with single spaces, there will be no remaining
+  tabs in the selection.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Visual C++ Developer Studio offers options to control how the editor processes
+tab keystrokes. If the Insert Spaces option is selected for the current file
+type, the editor embeds spaces instead of tab characters into source code
+whenever the user presses the TAB key.
+
+Some earlier text editors and utility programs automatically expand tabs to a
+fixed setting, which the user cannot configure (usually eight characters). The
+text formatting that they display will not properly represent code written with
+tab expansion set to a different value (four is the default in Developer
+Studio). For this and other reasons, some users may prefer to have their code
+formatted with spaces only.
+
+However, AppWizard and ClassWizard always generate code indented with tabs,
+regardless of the Insert Spaces setting. This behavior may annoy those users who
+prefer spaces.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual C++ 5.0.
+
+2. Click Options on the Tools menu and choose the Tabs section.
+
+3. Select Insert Spaces. Save the setting by clicking OK.
+
+4. Create a new project with any of the AppWizards, and open one or more of its
+  files.
+
+5. Click Advanced on the Edit menu, then click View Whitespace (not available in
+  VC++ 4.x). The caret symbol (^) will appear where tab characters exist.
+  Verify that indented lines contain tab characters.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbCodeGen kbide kbMFC kbVC400 kbVC500 kbVC600 kbClassWizard kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

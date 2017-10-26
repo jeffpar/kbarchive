@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97352: Palette Utilization Demonstration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97352: Palette Utilization Demonstration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97352/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97352/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97352/","publisher":null,"image":null,"headline":"Q97352: Palette Utilization Demonstration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97352-palette-utilization-demonstration">Q97352: Palette Utilization Demonstration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97352
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbfile kbSample kb16bitonly kbSDKWin16
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses basic palette awareness, such as what it takes for an
+application to use palettes correctly in the Microsoft Windows graphical
+environment, by covering these areas:
+
+- Responding to palette-related messages
+
+- Managing palette-based bitmaps
+
+- Managing multiple palettes in one application
+
+- Using the Clipboard with palettes
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Software
+Library:
+
+  ~ PALAWARE.EXE
+  (http://support.microsoft.com/download/support/mslfiles/PALAWARE.EXE)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+The reader should be familiar with basic palette use for painting operations.
+This article is not about the Palette Manager, and the level of detail is
+limited to the very basics of the palette managing process. A sample
+application, MULTIPAL, is included on the Microsoft Developer Network CD to
+illustrate the use of multiple palettes in a single application.
+
+MULTIPAL is also included with the PALAWARE technical article located in the
+Microsoft Software Library.
+
+MULTIPAL is a Multiple Document Interface (MDI) extension to the DIBIT sample
+program that accompanies the "Using DIBs with Palettes" technical article.
+MULTIPAL allows you to display multiple DIBs with multiple palettes and handles
+palette messaging from both the system perspective and the application
+perspective. The MDI skeleton is taken from the BLANDMDI program that is
+included in the Microsoft(R) Windows(TM) version 3.1 Software Development Kit
+(SDK). MULTIPAL achieves device independence by using palettes at all times,
+regardless of the type of device being used.
+
+To see the application in action, open several color-intensive 8-bit
+device-independent bitmaps (DIBs) at the same time and change the active DIB
+window. To see the application's interaction with the rest of the system, run
+another application that uses palettes (another instance of MULTIPAL will do).
+
+Additional query words: 3.10 softlib MULTIPAL.EXE
+
+======================================================================
+Keywords          : kbfile kbSample kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

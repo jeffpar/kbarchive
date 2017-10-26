@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131941: PRB: Class Browser Does Not Recognize Inheritance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131941: PRB: Class Browser Does Not Recognize Inheritance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131941/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131941/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131941/","publisher":null,"image":null,"headline":"Q131941: PRB: Class Browser Does Not Recognize Inheritance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131941-prb-class-browser-does-not-recognize-inheritance">Q131941: PRB: Class Browser Does Not Recognize Inheritance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131941
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Class Browser (Browser.app) displays only the methods, properties, and
+members that were added directly to the class. What you do not see are any
+methods, properties, or members that the class inherited from a parent class.
+
+For example, you create a text box class &lt;parent class&gt; and add a new
+method to the class. Then you creast a new class based on &lt;parent class&gt;
+and a method is added to this &lt;subclass&gt;. In the properties sheet under
+the Method tab, you can see that the inherited method from the &lt;parent
+class&gt; is shown with the method added in the &lt;subclass&gt;. However, when
+you run the Class Browser and select the &lt;subclass&gt;, the Class Browser
+displays only the method added directly to the &lt;subclass&gt;.
+
+STATUS
+======
+
+This behavior is by design. The class browser only shows members of the
+immediate class, not of any parent classes.
+
+There are two reasons for this:
+
+- It would be difficult, slow, and possibly problematic to open every
+  associated .VCX file of all parent classes when scrolling through the class
+  list to find all the inherited methods.
+
+- The inherited members can be displayed in the Class Designer by using either
+  the Properties sheet or the Class Info dialog box.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a class called testparent based on a text box, and store the class in
+  Test.vcx.
+
+2. Add a new method to the testparent class called test1. Save the class by
+  clicking Save on the File menu.
+
+3. Create a new class called testsub based on testparent, and store the new
+  class in Test.vcx.
+
+4. Add a new method to the testsub class called test2. Save the class by
+  clicking Save on the File menu.
+
+5. Open the Properties sheet with testsub open, and click the Method tab. Look
+  at the bottom of the method list to verify the existence of two additional
+  methods (test1 and test2).
+
+6. Close the Class Designer, and start the Class Browser.
+
+7. Open the Test.vcx library when prompted.
+
+8. Click the testsub class in the class hierarchy tree.
+
+9. In the list under the All tab, the only item showing is 'm ~ test2'. If it is
+  not showing, make sure the Empty button is depressed. The testsub class did
+  inherit the test1 method but it is not displayed in the Class Browser.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

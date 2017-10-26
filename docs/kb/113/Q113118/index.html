@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113118/","publisher":null,"image":null,"headline":"Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113118-bug-c2061-c2062-c2226-c2039-occur-when-using-enum-types">Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113118
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,7.0
+Operating System(s): 
+Keyword(s): kbVC100bug kbVC150bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 4.0, 4.1, 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compilers listed above may misinterpret a combination of an enumerated type,
+a default parameter, and a constructor or function notation cast as a syntax
+error and may incorrectly generate one of the following:
+
+  error C2226: syntax error : unexpected type '&lt;type&gt;'
+
+-or-
+
+  error C2062: syntax error : unexpected type '&lt;type&gt;'
+
+-or-
+
+  error C2039: '&lt;class&gt;' : is not a member of '&lt;class2&gt;'
+
+-or-
+
+  error C2061: syntax error : identifier 'identifier'
+
+CAUSE
+=====
+
+The C++ compiler incorrectly parses declarations in which an enumerated type is
+used as a parameter to either a constructor or a function notation cast in a
+default parameter list. If there are other syntax errors in the declaration line
+in question, then it is possible that an erroneous error other than the ones
+listed might occur. The sample code shown below gives examples of how to
+generate these errors.
+
+This problem occurs only if an explicit construction [for example, A(A::FALSE)]
+or function notation cast [that is, int(FALSE)] is called with an enumerated
+type as an argument. If the compiler is allowed to do an implicit conversion,
+the error will not occur:
+
+     void Func(int i = FALSE) { printf("%d\n",i); };
+     B(A a = A::FALSE);
+
+RESOLUTION
+==========
+
+In most cases (such as the examples below), the construction or function
+notation cast is not explicitly needed, in which case it can be removed. If this
+is not the case, the type cast (as opposed to function notation cast) syntax for
+the function should be used instead. For example, the above functions would be
+modified to:
+
+     void Func(int i = (int) FALSE) { printf("%d\n",i); };
+     B(A a = (A) A::FALSE);
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Sample Code
+-----------
+
+TEST1.CPP
+---------
+
+     /* The following code generates error C2061 or error C2226: */ 
+     /* Compiler options needed: none */ 
+
+     enum tagBool {FALSE,TRUE};
+
+     class A
+     {
+     public:
+
+       A(tagBool tc);
+
+     };
+
+     void Func(A a = A(FALSE));
+
+TEST2.CPP
+---------
+
+     /* The following code generates error C2061 or error C2062. */ 
+     /* Compiler options needed: none */ 
+
+     enum tagBool {FALSE,TRUE};
+
+     void Func(int i = int(FALSE)) { printf("%d\n",i); };
+
+TEST3.CPP
+---------
+
+     /* The following code generates the C2039 error. */ 
+     /* Using Visual C++ 4.0 and later, the following code compiles */ 
+     /* correctly. Compiler options needed: none */ 
+
+     class A
+     {
+     public:
+
+       enum tagBool {FALSE,TRUE};
+       A(tagBool tc);
+
+     };
+
+     class B
+     {
+     public:
+
+       B(A a = A(A::FALSE));
+
+     };
+
+Additional query words: 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbVC100bug kbVC150bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,4.0,4.1,4.2,5.0,7.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

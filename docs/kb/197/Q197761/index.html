@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197761: WD97: View Merged Data Doesn’t Suppress Blank Lines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197761: WD97: View Merged Data Doesn’t Suppress Blank Lines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197761/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197761/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197761/","publisher":null,"image":null,"headline":"Q197761: WD97: View Merged Data Doesn’t Suppress Blank Lines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197761-wd97-view-merged-data-doesnt-suppress-blank-lines">Q197761: WD97: View Merged Data Doesn’t Suppress Blank Lines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197761
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In a label mail merge main document, Word may not suppress blank lines when you
+view merged data (on the Mail Merge toolbar, click View Merged Data).
+
+NOTE: The blank lines are correctly suppressed when the document is merged to a
+new document or merged to printer.
+
+CAUSE
+=====
+
+When a MERGEFIELD is followed by a end-of-cell marker in labels or a Word table,
+Word cannot suppress a blank line when the MERGEFIELD is blank. However, Word
+will suppress a blank line when the MERGEFIELD is followed by a paragraph mark.
+
+NOTE: To view paragraph marks and end-of-cell markers, do one of the following:
+
+- On the Tools menu, click Options. On the View tab, click to select the All
+  check box (listed under "Non-printing characters") and then click OK.
+
+  -or-
+
+- On the Standard toolbar, click Show/Hide.
+
+WORKAROUND
+==========
+
+To allow Word to suppress blank lines when you use View Merged Data, in your
+mail merge main document, position the insertion point immediately after the
+MERGEFIELD in a label or table cell and press ENTER to create a paragraph mark.
+Do this for each of the labels or table cells that contain MERGEFIELDS.
+
+MORE INFORMATION
+================
+
+NOTE: In the following examples, &lt;P&gt; represents a paragraph mark and []
+represents a label (table) end-of-cell marker.
+
+In the following example, Word will not suppress blank lines correctly when the
+result of a MERGEFIELD is blank:
+
+     {Mergefield Name}&lt;P&gt;
+     {Mergefield Number}[]
+
+In the following example, Word will suppress blank lines correctly when the
+result of a MERGEFIELD is blank:
+
+     {Mergefield Name}&lt;P&gt;
+     {Mergefield Number}&lt;P&gt;
+     []
+
+Additional query words: suppression 8.0 8.00
+
+======================================================================
+Keywords          : word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

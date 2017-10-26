@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE* As Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE* As Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241862/","publisher":null,"image":null,"headline":"Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE* As Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241862-bug-classwizard-omits-methods-with-byte-or-byte-as-parameters">Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE* As Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241862
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbCOMt kbCtrl kbMFC kbVC400bug kbVC500bug kbVC600bug kbClassWizard kbCompG
+Last Modified: 02-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- The Component Gallery, included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When generating wrapper classes for a COM server that has methods that take a
+BYTE or BYTE* as a parameter, the MFC wizards do not generate code for these
+methods. The wizard does place a comment in the wrapper class header file that
+states that the method was not emitted due to an invalid return type or
+parameter type. Following is the exact text:
+
+  // Operations
+  public:
+  // method 'PassByte' not emitted because of invalid return type or parameter type
+
+BYTE and BYTE* are both OLE Automation compatible data types, thus this message
+can be somewhat confusing.
+
+CAUSE
+=====
+
+This is due to bugs in ClassWizard and Component Gallery not recognizing BYTE
+and BYTE* as valid OLE Automation data types.
+
+RESOLUTION
+==========
+
+You can add the methods that were omitted manually. For example, given a method
+PassByte that takes a single BYTE parameter and another method PassBytePointer
+that takes a single BYTE* parameter, you could add the following code to the
+wrapper class in the wrapper class header file as follows:
+
+  // Operations
+  public:
+  // method 'PassByte' not emitted because of invalid return type or parameter type
+     void PassByte(BYTE byteVal);
+
+  // method 'PassBytePointer' not emitted because of invalid return type or parameter type
+     void PassBytePointer(BYTE *pbyteVal);
+
+Next, you need to add the code to the wrapper class source file. Given the
+example above, it should look like the following:
+
+  #define MY_VTS_UI1 "\x11"
+  //Do NOT use VTS_UI1. It has a value of "0x0F" which is incorrect.
+  //The correct value for VT_UI1 is 17 or 0x11
+
+  #define MY_VTS_PUI1 "\x51"
+  //Do NOT use VTS_PUI1. It has a value of "0x4F" which is incorrect.
+  //The correct value for VT_PUI1 is 81 or 0x51
+
+  void C_UserControl1::PassByte(BYTE byteVal)
+  {
+   static BYTE parms[] = MY_VTS_UI1; //please note that this is not VTS_UI1
+
+   DISPID dispid = 0x60030000;
+   InvokeHelper(dispid, DISPATCH_METHOD, VT_EMPTY, NULL, parms, byteVal);
+  }
+
+  void C_UserControl1::PassBytePointer(BYTE *pbyteVal)
+  {
+   static BYTE parms[] = MY_VTS_PUI1; //please note that this is not VTS_PUI1
+
+   DISPID dispid = 0x60030001; //notice that this is different!
+   InvokeHelper(dispid, DISPATCH_METHOD, VT_EMPTY, NULL, parms, pbyteVal);
+  }
+
+It is important to note that you need to get the DISPIDs for the omitted methods
+using a type library viewing tool. OLE/COM Object Viewer is one such tool. You
+can access this tool from the Tools menu in Visual C++. In OLE/COM Object
+Viewer, select the File menu and the View Typelib menu item. Next, find the .tlb
+or .ocx file for the COM server and click Open. This opens a new window with a
+tree control on the left side. Select the topmost item in the tree control and
+you will see all of the methods on the right with their corresponding DISPID's.
+
+A second important point is that VTS_UI1 and VTS_PUI1 are not used above. For
+additional informationon this bug, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q242588 VTS_U1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h Header File
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic ActiveX control.
+
+2. Add one method that takes a BYTE parameter. For example:
+
+  Public Sub PassByte(ByVal b as Byte)
+  End Sub
+
+3. Build the control.
+
+4. Create a new MFC Dialog based application.
+
+5. Add the Visual Basic control that was generated in step 3 using Component
+  Gallery. Do this by going to the Project menu, select Add Components and
+  Controls, and then selecting Registered ActiveX Controls.
+
+6. After you select the Visual Basic control and click OK, Component Gallery
+  presents the Confirm Classes dialog. Click OK on the Confirm Classes dialog
+  box to generate the wrapper code.
+
+To see the missing method, open up the generated wrapper class header file. You
+should see the text that states the method PassByte was not emitted because of
+invalid return type or parameter type.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q242588 VTS_U1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h Header File
+
+In MSDN documentation, refer to CWnd::InvokeHelper and
+COleDispatchDriver::InvokeHelper for more information on the parameters for
+these functions.
+
+Additional query words: automation wrapper wizard code
+
+======================================================================
+Keywords          : kbAutomation kbCOMt kbCtrl kbMFC kbVC400bug kbVC500bug kbVC600bug kbClassWizard kbCompGallery kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

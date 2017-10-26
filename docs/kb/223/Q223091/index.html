@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/223/Q223091/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/223/Q223091/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/223/Q223091/","publisher":null,"image":null,"headline":"Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q223091-fix-bad-codebase-parameter-made-by-vb6-pdw-for-dhtml-projects">Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q223091
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbcode kbservicepack kbActiveDocs kbActiveX kbCAB kbDownload kbInfoDelivery kbInternet
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ActiveX controls or documents packaged using the Package and Deployment Wizard
+(PDW) do not upgrade to newer versions.
+
+CAUSE
+=====
+
+The HTML file created by the PDW does not have the correct object tag. The
+object tag created did not put a "=" between Version and the version number.
+This causes the page not to upgrade the ActiveX control.
+
+For example:
+
+  &lt;OBJECT codebase=MyControl.CAB#Version1,0,0,6
+  classid="clsid:123D5234-3798-11D2-BA53-0020AFD51B12"&gt;&lt;/object&gt;
+
+RESOLUTION
+==========
+
+Install Visual Studio Service Pack 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this bug, follow these steps:
+
+1. Start an ActiveX DLL project in Visual Basic 6.0.
+
+2. Add a DHTML Page to the project.
+
+3. Save the project and compile it into a DLL.
+
+4. From the Add-ins menu, start the Package and Deployment Wizard.
+
+5. Package the project.
+
+  a. When prompted, choose an Internet Package.
+
+  b. Choose the default setting for the options on subsequent screens of the
+     wizard.
+
+6. Open the HTML file that was created in the Package directory.
+
+  Result: The source contains a codebase parameter similar to the one decribed
+  above in the OBJECT tag if you do not have Visual Studio Service Pack 3
+  installed.
+
+REFERENCES
+==========
+
+For more information on how to debug issues related to Package and Deployment
+Wizard, please see the following article in the Microsoft Knowledge Base:
+
+Q194296 HOWTO: Debug PDW Internet Deployment Issues
+
+For other issues related to Package and Deployment of Visual Basic Project,
+please see:
+
+Personal Online Support: Deploying Visual Basic Applications
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Heidi Housten, Microsoft Corporation
+
+
+Additional query words: PDW VBD Download
+
+======================================================================
+Keywords          : kbcode kbservicepack kbActiveDocs kbActiveX kbCAB kbDownload kbInfoDelivery kbInternet kbVBp600fix kbCodeDownload kbGrpDSInet kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbInetDev 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

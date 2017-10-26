@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246674: XADM: How to Install and Configure Link Monitor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246674: XADM: How to Install and Configure Link Monitor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246674/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246674/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246674/","publisher":null,"image":null,"headline":"Q246674: XADM: How to Install and Configure Link Monitor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246674-xadm-how-to-install-and-configure-link-monitor">Q246674: XADM: How to Install and Configure Link Monitor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246674
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 30-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Link monitors are message-based and are used to verify the efficient routing of
+test messages. The test messages are called ping messages and are sent every
+polling interval; a ping message is sent to every server chosen. This article
+explains the various options available in configuring a link monitor.
+
+NOTE: If a target custom recipient matches the link monitor's requested
+nonexistent custom recipient, the link monitor doesn't receive an NDR and
+reports that the link is unavailable.
+
+For additional, detailed information please see the Microsoft Exchange Books
+Online.
+
+MORE INFORMATION
+================
+
+Link Monitor Configuration
+--------------------------
+
+To configure link monitor:
+
+1. In the Exchange Server Administrator program, click Monitors.
+
+2. On the File menu, click New Other, and then click Link Monitor.
+
+General Properties Dialog Box
+-----------------------------
+
+Use the General Properties dialog box to define a directory name and a display
+name, create log files, and set polling intervals.
+
+- Directory name: A maximum of 64 alphanumeric characters, which can include
+  spaces and special characters. If no name is provided, the system prompts for
+  a value. The name cannot be changed.
+
+- Display name: A maximum of 256 alphanumeric characters. The syntax of this
+  field is Unicode, which understands all languages and their special
+  characters. If no name is provided, the system prompts for a value. The name
+  can be modified at any time.
+
+- Creating Log Files: Type or click the directory and file name for the log
+  file, and then click Save. If no directory and file name are specified, a log
+  file is not created.
+
+- Setting Polling Intervals: Use polling intervals to indicate how often the
+  link monitor sends ping messages to check connections.
+
+   - Normal: Indicate how often to send a ping message. The default is 15
+     minutes.
+
+   - Critical sites: Indicate how often to send a ping message to servers or
+     systems that are in a warning or alert state. The default is 5 minutes.
+
+Permissions Property Page
+-------------------------
+
+Use the Permissions property page to indicate which Microsoft Windows NT accounts
+can modify the specified monitor. Permissions are necessary when a connection is
+being modified but are not necessary to start a link monitor.
+
+NOTE: By default, the Permissions property page is hidden. To view it, click
+Options from the Tools menu.
+
+Notification Property Page
+--------------------------
+
+Use the Notification property page to specify how to notify administrators when a
+connection is in a warning state or an alert state. Notifications can be
+delivered as pager programs, mail messages, or network alerts. Notifications are
+also sent when connections are restored.
+
+How to Configure to Start a Process:
+
+1. Click New; a New Notification dialog box opens.
+
+2. Click Launch a Process, and then click OK.
+
+3. In the Time delay box, type the amount of time after entering an alert state
+  that you want the notification process to begin. Click either Seconds,
+  Minutes, or Hours.
+
+4. Click File to browse for a process to start.
+
+5. In the Command line parameters box, type any command parameters.
+
+6. Click Test to verify that the process is correct.
+
+How to Configure Mail Messages:
+
+1. Click New; a New Notification dialog box opens.
+
+2. Click Mail Message, and then click OK.
+
+3. In the Time delay box, type the amount of time after entering an alert state
+  that you want the notification process to begin. Click Seconds, Minutes, or
+  Hours.
+
+4. Click to select the Alert Only check box to send notification only if the
+  monitor is in an alert state. Click to clear the Alert Only check box to send
+  notification in both the warning and alert states.
+
+5. Click Recipient if you want to choose a name from a list of recipients. This
+  recipient will receive an e-mail notification of an alert. The recipient's
+  name appears in the Mailbox to notify field.
+
+6. Click Test to verify that the process is correct.
+
+How to Configure Network Alerts:
+
+1. Click New; a New Notification dialog box opens.
+
+2. Click Windows NT Alert, and then click OK.
+
+3. In the Escalation Editor dialog box, type the amount of time after entering
+  an alert state that you want the notification process to begin. Click
+  Seconds, Minutes, or Hours.
+
+4. Click to select the Alert Only check box to send notification only if the
+  monitor is in an alert state. Click to clear the Alert Only check box to send
+  notification in both the warning and alert states.
+
+5. In the Computer to Alert field, type the NetBIOS name of the computer to
+  receive the alert message.
+
+6. Click Test to verify that the process is correct.
+
+Servers Property Page
+---------------------
+
+Link monitoring within an organization uses the Servers property page to specify
+which servers should receive ping messages from your Exchange Server computer.
+The servers must be in your organization but can be in different sites.
+
+Choosing Servers to Monitor:
+
+1. In the Servers box, click a server you want to monitor.
+
+Click Add, to add the selected server to the list of monitored servers.
+
+Removing Servers from the List:
+
+If you no longer need to monitor a server, you can remove it from the list:
+
+1. Click the Servers tab.
+
+2. In the Monitored Servers box, click a server, and then click Remove.
+
+Recipients Property Page
+------------------------
+
+To monitor outside of an organization, use the Recipients property page to
+configure a link monitor that checks connections to other organizations or
+foreign systems (such as Lotus Notes, Novell GroupWise, SendMail). The link
+monitor checks for replies. When you test a connection using a link monitor,
+specify a recipient that does not exist so you will be sent a non-delivery
+report (NDR) message. When an NDR is returned, it signifies that the link is
+working correctly.
+
+NOTE: The NDR does not contain the name of the recipient that sent it, so the NDR
+may be sent from a system anywhere along the connection path.
+
+Message Subject Returned from Option :
+
+You can specify a recipient that responds with the original subject in the
+subject line. Using the "Message subject returned from" option saves time
+because the body of the message does not need to be opened.
+
+1. Under Message subject returned from, click Modify.
+
+2. Click the names of the recipients, and then click Add.
+
+Message Subject or Body Returned from Option:
+
+You can specify a recipient that responds with the original subject in either the
+subject line or the message body. Use the "Message subject or body returned
+from" option if you don't know whether the recipient returns the subject in the
+subject line or in the message body.
+
+1. Under "Message subject or body returned from", click Modify.
+
+2. Click the names of the recipients, and then click Add.
+
+Bounce Property Page
+--------------------
+
+Use the Bounce property page to set the warning and alert durations for each link
+monitor. One set of durations is used for all recipients and servers. A bounce
+duration is the longest acceptable round-trip time for a message to travel
+between the monitor's home server and another server or foreign system. You
+determine the value based on tests you have performed previously. An alert state
+indicates a more serious connection problem than a warning state.
+
+Bounce Message Return Time  :
+
+In the Enter warning state after box, type a number, and then click Seconds,
+Minutes, or Hours. The default is 30 minutes.
+
+Specifying an Alert State Duration:
+
+An alert state duration is the length of time after which the returned ping
+message should be considered very late. In the Enter alert state after box, type
+a number, and then click Seconds, Minutes, or Hours. The default is 60 minutes.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

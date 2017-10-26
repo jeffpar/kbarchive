@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183265/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183265/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183265/","publisher":null,"image":null,"headline":"Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183265-ol98-cw-enabling-outlook-automatic-upgrade">Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183265
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:98
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+NOTE: These procedures only apply if you have installed Outlook with the
+Corporate Workgroup/Other option. This option allows you to use Messaging
+Application Programming Interface (MAPI) services. To determine your
+installation type, on the Help Menu click About Microsoft Outlook. In About
+Microsoft Outlook you should see "Corporate" if you have the Corporate
+Workgroup installation.
+
+SUMMARY
+=======
+
+The Microsoft Outlook automatic upgrade feature will upgrade Microsoft Windows
+95 and Microsoft Windows NT clients to the latest version of Outlook, if the
+version of Outlook installed on the computer is older than the one at the
+installation point. This article provides information on enabling this feature
+using the Wizard in the Microsoft Outlook Deployment Kit.
+
+MORE INFORMATION
+================
+
+If users install Microsoft Outlook 98 from a shared installation point, the
+automatic upgrade feature can be enabled by adding the following Registry value
+to the client workstation:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\8.0\Outlook\UpgradePath
+
+  Value Name: ServerPath
+  Data Type:  REG_SZ (String)
+  Value Data: &lt;path&gt;
+
+Where &lt;path&gt; is the directory on the server that contains the Outlook.stf
+file. This file is located in the CD\En\Packages directory of the Outlook 98
+installation point.
+
+NOTE: Do not add a trailing backslash to the path. The path can be a mapped drive
+(X:\, for example) or a UNC (\\servername\share) path.
+
+Adding the Registry Entry through the ODW
+-----------------------------------------
+
+1. Start the ODW and go to the Add Registry Entries screen in Stage 5.
+
+2. Select the Add button.
+
+3. Type the following values in the Add/Edit Registry Value dialog box:
+
+     Root:         HKEY_LOCAL_MACHINE
+     Data type:    SZ
+     Key:          Software\Microsoft\Office\8.0\Outlook\UpgradePath
+     Value name:   ServerPath
+     Value data:   &lt;path to OUTLOOK.STF in Outlook 98 install point&gt;
+
+4. Select OK and complete the ODW installation.
+
+5. Run Setup from the install point to install the Outlook client on a
+  workstation.
+
+The automatic upgrade feature performs the following actions at startup to
+determine whether a new version is available:
+
+- Reads the UpgradePath Registry entry on the user's local workstation to
+  determine the location of the OUTLOOK.STF file. If found, OUTLOOK.STF is
+  opened and the version number is obtained from the "App Version" string on
+  the second line of the file.
+
+- Compares the version number to the version number extracted from the local
+  Outlook.stf file, which was placed on the user's computer during setup. If
+  the version number at the installation point is greater than the version
+  number in the local file, Outlook opens a dialog box informing the user that
+  a new version is available, and allows them to install it.
+
+The automatic upgrade feature has the following limitations:
+
+- This feature only works with standalone installations of Outlook. It does not
+  work with versions of Outlook that are included with Microsoft Office 97.
+
+- Microsoft Schedule+ does not support the automatic upgrade feature. In
+  addition, if Schedule+ is started before Microsoft Exchange, the user will
+  never be prompted for an automatic upgrade.
+
+- If the user starts Microsoft Exchange while not connected to the network, and
+  then connects after Microsoft Exchange is running, the user will not be
+  prompted for an automatic upgrade.
+
+- After the auto-upgrade process has completed, the Outlook.stf file is not
+  updated to reflect the new version just installed. Therefore, the user will
+  be prompted again that a newer version is available and the process starts
+  over again. To work around this behavior, the administrator will need to copy
+  an updated Outlook.stf file to the user's local computer. For example, this
+  can be done through a custom component (using an IExpress package or batch
+  file) specified in the ODW.
+
+Additional query words: 98 Update new
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbOutlookSearch kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:98
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

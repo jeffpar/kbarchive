@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191201: BUG: Cannot Edit User Defined Type in Watch Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191201: BUG: Cannot Edit User Defined Type in Watch Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191201/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191201/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191201/","publisher":null,"image":null,"headline":"Q191201: BUG: Cannot Edit User Defined Type in Watch Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191201-bug-cannot-edit-user-defined-type-in-watch-window">Q191201: BUG: Cannot Edit User Defined Type in Watch Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191201
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbcode kbDebug kbVBp600bug
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Watch window to modify values for User Defined types,
+you cannot modify the values.
+
+RESOLUTION
+==========
+
+Although a you cannot modify a User Defined type using the Watch window, you can
+modify it by using either of the following options:
+
+- Immediate window
+
+- Locals window
+
+- Modify the variable through code during the execution of the application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps have been divided into two parts: creating the test ActiveX
+DLL, and modifying the user defined type in a Standard EXE application.
+
+Creating a Test ActiveX DLL
+---------------------------
+
+1. Start Microsoft Visual Basic and create an ActiveX DLL project. Class1 is
+  created by default.
+
+2. Add the following code to Class1:
+
+        Public Type MyTest
+           x as Integer
+           y as Variant
+        End Type
+
+3. From the Project menu, click Project1 Properties. On the General tab, enter
+  MyServer in the Project Name box, and click OK.
+
+4. From the File menu, click Make MyServer.dll.
+
+5. From the File menu, click Save Project, if desired.
+
+Using the Watch Window
+----------------------
+
+1. From the File Menu, click Add Project, and then double-click on Standard EXE.
+  Form1 is created by default.
+
+2. From the Project menu, click References. In the Available References list,
+  select MyServer and click OK.
+
+3. Add the following code to the Load event of Form1:
+
+     Private Sub Form_Load()
+        Dim f as MyTest, v
+        f.y = f
+        v = f
+        Stop
+     End Sub
+
+4. Press F5 to run the application. Once the application enters debug mode,
+  highlight the "v" in the line of code immediately above the Stop command.
+
+5. From the Debug menu, click Add Watch, and then click OK.
+
+6. In the Watch window, expand the expression "v".
+
+7. Change the Value for "y" to 5. This change is allowed by the Watch window.
+
+8. Attempt to modify the value of "v" to 5 in the Watch window. The change is
+  not allowed.
+
+NOTE: You can change the value of "v" in the Immediate window using the
+expression "v=5". However, once this change occurs, "v" is no longer of type
+MyTest.
+
+REFERENCES
+==========
+
+Microsoft Visual Basic, version 6.0 Books Online
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbDebug kbVBp600bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

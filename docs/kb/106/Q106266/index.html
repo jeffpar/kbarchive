@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106266: System Slows After 32-Bit File Access Is Enabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106266: System Slows After 32-Bit File Access Is Enabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106266/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106266/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106266/","publisher":null,"image":null,"headline":"Q106266: System Slows After 32-Bit File Access Is Enabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106266-system-slows-after-32-bit-file-access-is-enabled">Q106266: System Slows After 32-Bit File Access Is Enabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106266
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-SEP-1999
+
+3.11
+
+WINDOWS
+
+kbtool kbtshoot kbfile
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your system seems slower after you enable 32-bit file access.
+
+CAUSE
+=====
+
+Enabling 32-bit file access can result in slower system performance in the
+following situations:
+
+- VFAT is unable to mount.
+
+  This can happen as a result of one or more of the following problems (note
+  that the numbers below correspond to the numbered steps in the "VFAT is
+  Unable to Mount" subsection of this article):
+  1. The real-mode network redirector has been loaded into memory.
+
+  2. A memory-resident program or device driver has a file open while Windows
+     loads.
+
+  3. The drive is involved in a SUBST, ASSIGN, or JOIN action. Because of the
+     way they alter apparent disk characteristics, the SUBST.EXE, ASSIGN.COM,
+     and JOIN.EXE programs are not compatible with installable file systems
+     (IFS), such as 32-bit file access. These utilities can't be used if 32-bit
+     file access is enabled.
+
+  4. The cache size selected is too large or invalid.
+
+  5. Required components are missing, corrupted, or not in the specified
+     directory.
+
+- Windows for Workgroups version 3.11 is in a low-memory situation after
+  enabling VFAT.
+
+  Running VFAT/VCACHE with SMARTDrive may place Windows for Workgroups into a
+  low-memory situation because memory used by SMARTDrive is not available to
+  VCACHE.386 and vice-versa. Since VCACHE.386 provides the caching on
+  VFAT-enabled drives and network drives, while SMARTDrive caches CD-ROM drives
+  and floppy disk drives, it is possible that systems with too large a
+  percentage of memory allocated to caching have some performance reduction.
+
+WORKAROUND
+==========
+
+Low-Memory Situation
+--------------------
+
+If you are in a low-memory situation (that is, you are running both SMARTDrive
+and VFAT), make sure that the amount of memory allocated to SMARTDrive's
+WinCacheSize and the cache size allocated to VCACHE.386 do not exceed roughly 30
+percent of total system RAM.
+
+For example, on a machine with 4 megabytes (MB) RAM, if you have allocated 1024
+kilobytes (K) to VCACHE, set the SMARTDrive WinCacheSize to 128K. To do this,
+use a command similar to the following
+
+  c:\windows\smartdrv.exe &lt;1024&gt; &lt;128&gt;
+
+where &lt;1024&gt; is the InitCacheSize (the cache size at MS-DOS) and
+&lt;128&gt; is the size of the cache in Windows.
+
+VFAT Is Unable to Mount
+-----------------------
+
+If VFAT is unable to mount, try the following:
+
+1. You can unload the real-mode network redirector by typing "net stop" (without
+  the quotation marks) at the MS-DOS command prompt before starting Windows for
+  Workgroups.
+
+2. To ensure that no device driver or terminate-and-stay-resident (TSR) program
+  has any files open upon entering Windows for Workgroups, clean start the
+  machine.
+
+  For more information on clean start configurations for Windows for Workgroups
+  version 3.11, query on the following words in the Microsoft Knowledge Base:
+
+  wfw and clean and start
+
+3. Do not use the SUBST, ASSIGN, or JOIN utilities with 32-bit file access
+  enabled. If you must use one of these utilities, disable 32-bit access first.
+
+4. Verify that the cache size selected is valid. For more information, see the
+  "Low-Memory Situation" section above.
+
+5. The components used by VFAT vary depending on the system's hard disk drive
+  (HD) controller type and whether or not disk compression (such as
+  DoubleSpace, DriveSpace, or Stac Electronics Stacker) is used. If you suspect
+  the components are missing, corrupted, or not in the specified directory,
+  verify the components files sizes, or re-expand them from your original
+  Windows for Workgroups version 3.11 disks.
+
+  File              Size
+  ----              ----
+  IOS.386           28,352
+  RMM.D32           11,894
+  RMM.D32           11,473  (updated version of RMM.D32)
+  VCACHE.386         9,862
+  VFAT.386          32,925
+  VXDLDR.386         5,678
+
+  NOTE: VFAT cannot load on a volume compressed with MS-DOS 6.0 DoubleSpace.
+  This problem was resolved in MS-DOS 6.2 and later.
+
+  IMPORTANT: The SYSTEM.INI file entries shown in the examples below are made by
+  Control Panel and do not require manual editing. These examples are provided
+  to show the component files involved and to aid in troubleshooting. You
+  should avoid manually editing your SYSTEM.INI file.
+
+  Example 1: Uncompressed WD 1003 Compatible Drive
+
+  Western Digital 1003 or ST506 compatible drives without compression require
+  the following entries in the [386Enh] section of the SYSTEM.INI file:
+
+        [386Enh]
+        device=*BLOCKDEV
+        device=*PAGEFILE
+        device=*int13
+        device=*wdctrl
+        device=vcache.386
+        device=vfat.386
+
+  All entries marked with an asterisk (*) are contained in the WIN386.EXE file.
+  All files should be located in your Windows SYSTEM subdirectory unless
+  otherwise noted.
+
+  Example 2: Compressed or Not WD 1003-Compatible Drive
+
+  If the drive is compressed, or if another hard disk in the machine is not WD
+  1003 compatible, then the line "device=*BLOCKDEV" should be replaced with the
+  following:
+
+        device=IOS.386
+        device=VXDLDR.386.
+
+  In addition, the real mode mapper (RMM.D32) must exist in the Windows SYSTEM
+  subdirectory.
+
+  Example 3: Not WD 1003-Compatible Drive
+
+  If 32-bit disk access cannot be used by a particular hard disk controller
+  (because it is not WD 1003 compatible), the VFAT entries for the SYSTEM.INI
+  file's [386Enh] section should include the following:
+
+        [386Enh]
+        device=*PAGEFILE
+        device=vcache.386
+        device=vfat.386
+        device=IOS.386
+        device=VXDLDR.386
+
+  Again, RMM.D32 must exist in the Windows SYSTEM directory.
+
+MORE INFORMATION
+================
+
+VFAT is a 32-bit virtual MS-DOS file allocation table (FAT) file system and can
+only mount on hard disk volumes. If 32-bit disk access drivers are not available
+for a particular hard disk controller, additional handling of INT 13h calls is
+required. The IOS.386, VXDLDR.386, and RMM.D32 files provide this functionality
+and allow VFAT/VCACHE to work on these drives. (Drives affected include most
+SCSI and ESDI drives, a few IDE drives, and compressed volumes residing on any
+type of hard disk.)
+
+32-bit disk access drivers may also be provided by an original equipment
+manufacturer (OEM) to work with a specific hard disk controller, replacing
+Microsoft's *WDCTRL. As a troubleshooting step, these drivers should be
+temporarily disabled and IOS.386, VXDLDR.386, and RMM.D32 should be used
+instead.
+
+Additional query words: dblspace wfw wfwg 3.11 fastdisk slow slower slows tshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169102/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169102/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169102/","publisher":null,"image":null,"headline":"Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169102-bug-requery-problem-with-private-datasessions-sharing-a-table">Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169102
+Product(s): Microsoft FoxPro
+Version(s): 5.0 5.0a
+Operating System(s): 
+Keyword(s): kbvfp
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a multi-user application, if you have two forms with private DataSessions
+that include cursors that are based on the same table, the REQUERY() function
+returns old data on a form opened after the update of data on another session of
+the application.
+
+CAUSE
+=====
+
+The problem is in the buffering of data, and the fact that REQUERY() is not
+overriding the SET REFRESH timing. If the form is creating a second DataSession
+with a cursor pointing to the same table as the first DataSession, the new
+DataSession uses the data from the existing cursor.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: This is a multi-user test. References to User1 and User2 indicate two
+separate instances of Visual FoxPro. This can be on separate machines, or two
+sessions of Visual FoxPro on the same machine.
+
+In a project with at least one table ('Table1' in this example), create the
+following:
+
+1. Two local views based on Table1.
+
+2. Filter the views to return one record. Ensure it is the same record in both
+  views.
+
+3. Create two forms: Form1 and Form2.
+
+4. Place one view in the DataEnvironment of Form1.
+
+5. Place the second view in the DataEnvironment of Form2.
+
+6. Place two or three text boxes on each form bound to fields in the respective
+  views
+
+7. Set the DATASESSION property to Private on both forms.
+
+8. Set the BUFFERMODE of each form to anything but None.
+
+9. On Form1, create a command button with the following code:
+
+        TABLEUPDATE()
+        FLUSH
+
+10. Create a second command button on Form1 with the following code:
+
+        DO FORM FORM2
+
+11. Create a command button on Form2 with the following code:
+
+        REQUERY(THISFORM.DATAENVIRONMENT.CURSOR1.ALIAS)
+        THISFORM.REFRESH
+
+12. User1: Run Form1.
+
+13. User2: Run Form1.
+
+14. User1: Modify the data in Field1, and click the TableUpdate button.
+
+15. User2: Click the Form2 button on Form1, and click the Requery button.
+
+Notice that it does not update with the updated information from User1. Waiting
+more than 5 seconds, assuming the REFRESH is set to the default '0,5', then
+clicking the Requery button populates the fields with the updated information.
+
+Additional query words: Multi-User Requery Refresh
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : 5.0 5.0a
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

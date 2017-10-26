@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221911/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221911/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221911/","publisher":null,"image":null,"headline":"Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221911-fix-memory-leak-in-visual-c-integrated-debugger">Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221911
+Product(s): Microsoft C Compiler
+Version(s): 2000,6.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbOSWin2000 kbVC600bug kbVS600 kbNoUpdate
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0, used with:
+   - the operating system: Microsoft Windows NT 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT Task Manager shows an increase in memory usage every time the
+Visual C++ integrated debugger is started using F5 and then stopped. When the
+system exhausts the virtual memory limit, the application and debugger crashes
+displaying the following 3 message boxes:
+
+   - Microsoft Visual C++ "Could not execute: Path not found (win 32 error3)"
+
+- Microsoft Visual C++ "DM0025: Error attaching to Process"
+
+- Sample.exe- Application Error "The application failed to initialize properly
+  (0xc000012d)
+  Click on OK to terminate the application"
+
+RESOLUTION
+==========
+
+The memory can be freed before the system runs out of virtual memory by closing
+the Visual C++ IDE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a default MFC application using the AppWizard and build it.
+
+2. Start Windows NT Task Manager, click the Performance tab and watch MEM Usage.
+
+3. Start the integrated debugger by pressing F5.
+
+4. Note MEM Usage.
+
+5. Stop the debugger.
+
+6. Repeat steps 3-5.
+
+NOTE: Mem Usage has increased by quite some amount. If the virtual memory limit
+is reached then the errors messages described above are seen.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Vidyanand
+N. Rajpathak, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide kbOSWin2000 kbVC600bug kbVS600 kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :2000,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

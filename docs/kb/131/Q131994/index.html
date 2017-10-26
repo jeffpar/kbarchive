@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131994/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131994/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131994/","publisher":null,"image":null,"headline":"Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131994-howto-how-to-use-mfc-to-step-through-child-windows-of-the-mdicl">Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131994
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbDocView kbMDI kbMFC kbVC kbGrpDSMFCATL
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can iterate through all the MDI child windows in an MDI application without
+specifically activating them in turn. These CMDIChildWnd objects are managed by
+the MDIClient window, which covers the client area of the main frame window in
+an MDI application. Although this window does not have a corresponding MFC
+object, you can attach it to a CWnd object and use the features of the CWnd
+class to access each of the MDI child windows.
+
+MORE INFORMATION
+================
+
+In MFC, each CMDIChildWnd created by the framework is managed as a child window
+of the MDIClient window. This MDIClient window is a child of the mainframe
+window and fills its client area. For MDI applications, the mainframe window is
+encapsulated by the CMDIFrameWnd class. This class has a public embedded HWND
+member (m_hWndMDIClient), which is the handle to the MDIClient window. For MDI
+applications, AppWizard derives the CMainFrame class from CMDIFrameWnd.
+
+The MDIClient maintains an internal list of child windows. In an MFC application,
+these child windows are either a CMDIChildWnd object or an internal window used
+to display the title of an iconized window. Note that this is an internal list
+controlled by Windows; don't make assumptions about the ordering of children in
+the list after an API function is called.
+
+How to Step Through the MDIClient's Child Window List
+-----------------------------------------------------
+
+1. To access the MDIClient window in MFC, attach a CWnd derived class to
+  m_hWndMDIClient as shown in the sample code. Another option is to subclass
+  the MDIClient discussed in the following article in the Microsoft Knowledge
+  Base:
+
+  Q103786 Changing Window Background Color with Foundation Classes
+
+2. Implement the GetNextMDIChildWnd() function as defined below. This custom
+  member of the CMDIFrameWnd-derived object uses another custom member,
+  m_pWndCurrentChild, to store the current child window between calls.
+
+3. Implement the GetCountCMDIChildWnds() function as defined below. Another
+  custom member of the CMDIFrameWnd-derived object, this function calls
+  GetNextMDIChildWnd() to get the count of CMDIChildWnd objects maintained by
+  the MDIClient.
+
+NOTE: You can derive a class from CMDIChildWnd to customize the behavior of the
+MDI child windows in your application. For example, you can add information to
+further differentiate between the CMDIChildWnd derived classes.
+
+
+Sample Code
+-----------
+
+  //**mainfrm.h***************************************************
+  class CMainFrame : public CMDIFrameWnd
+  {
+  ...
+  public:
+     CWnd  m_wndMDIClient;
+     CWnd* m_pWndCurrentChild;
+     CMDIChildWnd* GetNextMDIChildWnd();
+     int GetCountCMDIChildWnds();
+  ...
+  }
+
+  //**mainfrm.cpp**************************************************
+  CMainFrame::CMainFrame():m_pWndCurrentChild(NULL)
+  {
+    //.................
+  }
+
+  CMainFrame::~CMainFrame()
+  {
+    m_wndMDIClient.Detach();
+    //.................
+  }
+
+  int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
+  {
+    if (CMDIFrameWnd::OnCreate(lpCreateStruct) == -1)
+      return -1;
+
+      if (m_wndMDIClient.Attach(m_hWndMDIClient) == 0)
+      {
+          TRACE0("Failed to attach MDIClient.\n");
+          return -1;      // fail to create
+      }
+    //.................
+  }
+
+  //----------------------------------------------------------------
+  // This function finds the CMDIChildWnd in the list of windows
+  // maintained by the application's MDIClient window following the
+  // one pointed to by the member variable m_pWndCurrentChild. If no
+  // further CMDIChildWnds are in the list, NULL is returned.
+  //----------------------------------------------------------------
+
+  CMDIChildWnd* CMainFrame::GetNextMDIChildWnd()
+  {
+     if (!m_pWndCurrentChild)
+       {
+        // Get the first child window.
+        m_pWndCurrentChild = m_wndMDIClient.GetWindow(GW_CHILD);
+       }
+     else
+       {
+        // Get the next child window in the list.
+          m_pWndCurrentChild=
+             (CMDIChildWnd*)m_pWndCurrentChild-&gt;GetWindow(GW_HWNDNEXT);
+       }
+
+     if (!m_pWndCurrentChild)
+       {
+        // No child windows exist in the MDIClient,
+        // or you are at the end of the list. This check
+        // will terminate any recursion.
+        return NULL;
+       }
+
+    // Check the kind of window
+      if (!m_pWndCurrentChild-&gt;GetWindow(GW_OWNER))
+        {
+          if (m_pWndCurrentChild-&gt;
+                             IsKindOf(RUNTIME_CLASS(CMDIChildWnd)))
+            {
+                   // CMDIChildWnd or a derived class.
+                   return (CMDIChildWnd*)m_pWndCurrentChild;
+            }
+          else
+            {
+                   // Window is foreign to the MFC framework.
+                   // Check the next window in the list recursively.
+                   return GetNextMDIChildWnd();
+            }
+        }
+      else
+        {
+            // Title window associated with an iconized child window.
+            // Recurse over the window manager's list of windows.
+            return GetNextMDIChildWnd();
+        }
+  }
+
+  //-----------------------------------------------------------------
+  // This function counts the number of CMDIChildWnd objects
+  // currently maintained by the MDIClient.
+  //-----------------------------------------------------------------
+
+  int CMainFrame::GetCountCMDIChildWnds()
+  {
+   int count = 0;
+
+   CMDIChildWnd* pChild = GetNextMDIChildWnd();
+   while (pChild)
+    {
+      count++;
+      pChild = GetNextMDIChildWnd();
+    }
+   return count;
+  }
+
+Additional query words: kbinf 1.00 1.50 1.10 2.00 2.10 2.50 2.51 2.52 3.10 4.00
+
+======================================================================
+Keywords          : kbDocView kbMDI kbMFC kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

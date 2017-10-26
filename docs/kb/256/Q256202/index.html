@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256202/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256202/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256202/","publisher":null,"image":null,"headline":"Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256202-sms-upgrading-sql-server-may-not-succeed-when-running-sms">Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256202
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbDatabase kbsms200 kbsms200bug
+Last Modified: 03-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SQL servers that host the Systems Management Server (SMS) database may
+experience error messages when you are upgrading SQL Server from one version to
+another or from one service pack level to another. This behavior may also occur
+when you attempt to perform an upgrade to the SQL servers by using Smssetup and
+the integrated SQL installation methodology.
+
+Note that this behavior may occur with any program that requires SQL connectivity
+and is not disabled before you run a SQL upgrade.
+
+CAUSE
+=====
+
+When the SQL upgrade starts, SQL services are stopped and then restarted in
+Single User mode for the upgrade. If the SMS services (or other software that
+actively accesses SQL) are not stopped before you start the upgrade, SMS may
+continue to make requests for SQL connections while the SQL service is stopped.
+When the SQL service is restarted in Single User mode, SMS may have queued a
+request for a SQL connection. At startup, SQL services have a slight delay
+before requesting a connection to SQL. Because of this delay, SMS (or other SQL
+programs) may have already taken the connection; SQL will not be able to connect
+to the database to perform the requested upgrade.
+
+When you perform an upgrade to SQL Server, always disable any program (including
+SMS) that relies upon SQL Server. Use the following steps as a general guideline
+to make sure that SMS (or other programs or services) does not cause a problem
+with a SQL upgrade:
+
+1. Copy the SQL upgrade image locally (that is, do not upgrade over the
+  network).
+
+2. Stop all processes and services not directly related to Microsoft Windows NT
+  or SQL.
+
+3. For SMS 2.0, stop and disable Windows Management so that no other process can
+  restart it.
+
+4. Remove the computer from the network.
+
+5. Run the SQL upgrade from a local CD-ROM or a locally copied image.
+
+6. Put the computer back on the network.
+
+7. Restart Windows Management and reconfigure it for an automatic start.
+
+8. Reboot the computer to ensure a typical startup sequence for all programs and
+  services.
+
+WORKAROUND
+==========
+
+If you have experienced this behavior, stop all services as described earlier,
+and then run the SQL Setup program again to allow the installation to run
+correctly.
+
+MORE INFORMATION
+================
+
+Note that the integrated SQL Setup feature in SMS Setup only supports clean
+installations of SQL. Using this feature to upgrade existing installations of
+SQL is not supported.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

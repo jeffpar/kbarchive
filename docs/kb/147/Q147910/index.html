@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147910: Network Printing Options with the Tektronix Phaser | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147910: Network Printing Options with the Tektronix Phaser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147910/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147910/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147910/","publisher":null,"image":null,"headline":"Q147910: Network Printing Options with the Tektronix Phaser","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147910-network-printing-options-with-the-tektronix-phaser">Q147910: Network Printing Options with the Tektronix Phaser</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147910
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use a Tektronix Phaser product over a network, you can obtain output from
+Windows NT using several different mechanisms. This article explains how to set
+up the printer under Windows NT.
+
+MORE INFORMATION
+================
+
+The following Tektronix Color Printer drivers are shipped with Windows NT 3.51:
+
+Tektronix Phaser 140
+Tektronix Phaser 200e
+Tektronix Phaser 200I
+Tektronix Phaser 220e
+Tektronix Phaser 220I
+Tektronix Phaser 300I
+Tektronix Phaser 340
+Tektronix Phaser 440
+Tektronix Phaser 480
+Tektronix Phaser 540
+Tektronix Phaser II PXi
+Tektronix Phaser II Pxe
+Tektronix Phaser II PX
+Tektronix Phaser III Pxi
+Tektronix Phaser IISD
+Tektronix Phaser IISDX
+Tektronix Phaser Pxi
+Tektronix Phaser PX
+
+CONNECTION OPTIONS
+------------------
+
+Depending on the model, you should have the following Network options:
+
+Parallel
+Serial
+*TCP/IP Printing (LPD)
+Apple Talk
+
+*NOTE: Not all Tektronix Phaser devices have TCP/IP enabled. It may be necessary
+to contact Tektronix for Authorization codes to enable features within the
+device.
+
+TCP/IP:
+
+To install this option, follow the steps below:
+
+Windows NT 3.5 and 3.51 includes network software called "TCP/IP print services
+(lpr print services)." Refer to the Windows NT manual for instructions on how to
+install this network software. After you have installed TCP/IP print services,
+do the following:
+
+1. Open Print Manager, create a new printer, and select the appropriate printer
+  driver. If there is no driver for your printer, follow the steps in the
+  previous section, "Installing a Windows NT PostScript Driver", to install the
+  proper printer driver.
+
+2. Select 'Print to Other' for the Device Port. For Other Device select 'lpr.'
+
+3. For name or address of host providing lpd, enter your printer's IP address
+  (or Host name if known to the network).
+
+4. For the name of the printer on that machine, type in one of the following:
+
+  AUTO: Autoselect, Postscript, HPGL or ASCII Text
+  PS: Postscript Only
+  PSTEXT: ASCII text only
+  HPGL: HPGL files only
+  - (If you are unsure, choose AUTO)
+
+  Click OK to complete the installation.
+
+AppleTalk:
+
+Windows NT 3.5 and 3.51 includes network software called "Services for
+Macintosh." Refer to the Windows NT manual for instructions on how to install
+this network software. After you have installed it, perform the following
+steps:
+
+1. Open Print Manager, create a new printer, and select the appropriate printer
+  driver.
+
+2. Select 'Print to Other' for the Device Port. For Other Device select
+  'AppleTalk Printing Devices.'
+
+3. Windows NT will then search the network for zones or Available AppleTalk
+  Printing Devices.
+
+4. Select the appropriate zone.
+
+5. Windows NT will search the network again for Available AppleTalk Printing
+  Devices within that zone. (This is similar to Chooser on the Mac.)
+
+6. Select your Tektronix printer.
+
+7. At the prompt "Do you want to capture this AppleTalk Printing Device?", if
+  you click Yes, you will hide the printer from regular Mac users, forcing them
+  to use Windows NT Server as a spooler, as long as NT Server allows sharing of
+  this printer.
+
+For Additional information refer to the following:
+
+Tektronix     (800) 835-6100  Technical support
+Tektronix     (503) 627-7111  Main number
+HAL (FaxBack) (503) 682-7450  (direct)or 1-800-835-6100
+
+             Request Document #9506
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: printing tek
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45653: Making Your Own Key File with the MKKEY.EXE Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45653: Making Your Own Key File with the MKKEY.EXE Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45653/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45653/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45653/","publisher":null,"image":null,"headline":"Q45653: Making Your Own Key File with the MKKEY.EXE Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45653-making-your-own-key-file-with-the-mkkeyexe-program">Q45653: Making Your Own Key File with the MKKEY.EXE Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45653
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 26-JUN-1989
+
+The following information is from the Version 2.00 "Microsoft QuickC
+Up And Running" manual, Page 31:
+
+   The MKKEY program allows you to make your own key file. You must
+   use three options: -c, -i, and -o. The first (-c) specifies the
+   type of conversion: ASCII to binary (ab) or binary to ASCII (ba).
+   The two others specify the input file (-i) and the output file
+   (-o).
+
+   To modify the default QC.KEY file, you must first convert it to an
+   editable ASCII file:
+
+      MKKEY -c ba -i QC.KEY -o MYEDITOR.TXT
+
+   You may use any other editor (including QuickC's) to edit the file
+   named MYEDITOR.TXT, which lists the keystrokes that perform certain
+   actions. For example, you press CTRL+G to delete a character. The
+   line in MYEDITOR.TXT looks like this:
+
+      Del: CTRL+G
+
+   You could change that command to any other keystroke (CTRL+D, say),
+   as long as the key isn't already assigned to another function.
+   Elsewhere in the file, CTRL+D is assigned to CharRight, so you'd
+   have to delete or change that line if you wanted to use CTRL+D for
+   the Del function.
+
+   When you're satisfied with the new functions, you must convert the
+   ASCII file to binary, so that it can be loaded into the QuickC editor:
+
+      MKKEY -c ab -i MYEDITOR.TXT -o MYEDITOR.KEY
+
+   Finally, to load the new key file, use the /k: option.
+
+The /k: option is used on the QuickC command line to specify a new
+.KEY file, as follows:
+
+   QC /k:myeditor.key &lt;filename&gt;
+
+The "Up and Running" appendix lists the editor functions by name and
+shows their default assignments in the supplied .KEY files. Any of
+these may be remapped using the MKKEY utility. Menu options, which have
+key equivalents, may not be remapped (e.g. Exit).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

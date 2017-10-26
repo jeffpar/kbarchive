@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255230/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255230/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255230/","publisher":null,"image":null,"headline":"Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255230-fix-memory-leak-in-ole-automation-for-visual-sourcesafe">Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255230
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbSSafe600fix kbDSupport kbGrpDSSSafe kbSSafe600qfe
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call Get (GetVSSItem function) from the Visual SourceSafe OLE
+Automation interface, there is memory that is not released.
+
+CAUSE
+=====
+
+The reason for this problem is that there is a memory leak in the VSSItem::Get
+function.
+
+RESOLUTION
+==========
+
+A supported fix for Visual SourceSafe 6.0 that corrects this problem is now
+available from Microsoft, but it has not been fully regression tested and should
+be applied only to systems that experience this specific problem.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please view the following Web
+address:
+
+http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix has the following file attributes or later:
+
++-------------------------------------------------------------------------+
+| Name         | Size      | Date      | Time     | Version    | Platform | 
++-------------------------------------------------------------------------+
+| Analyze.exe  | 211,968   | 2/16/2000 | 7:24 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ddconv.exe   | 311,296   | 2/16/2000 | 6:51 PM  | none       | x86      | 
++-------------------------------------------------------------------------+
+| Ddupd.exe    | 443,392   | 2/16/2000 | 6:54 PM  | none       | x86      | 
++-------------------------------------------------------------------------+
+| Readme.txt   | 5,454     | 2/23/2000 | 12:00 PM | none       | x86      | 
++-------------------------------------------------------------------------+
+| Ss.exe       | 416,256   | 2/16/2000 | 6:44 PM  | none       | x86      | 
++-------------------------------------------------------------------------+
+| Ssapi.dll    | 591,360   | 2/16/2000 | 6:48 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ssarc.exe    | 528,896   | 2/16/2000 | 6:59 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ssgui.dll    | 1,564,672 | 2/16/2000 | 7:39 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ssrestor.exe | 526,848   | 2/16/2000 | 7:01 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ssscc.dll    | 1,501,696 | 2/16/2000 | 7:35 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+| Ssus.dll     | 480,768   | 2/16/2000 | 7:39 PM  | 06.00.8777 | x86      | 
++-------------------------------------------------------------------------+
+
+The following file is contained in a self-extracting EXE.
++-----------------------------------------------------------+
+| Name        | Size      | Date      | Time     | Platform | 
++-----------------------------------------------------------+
+| VSS8777.EXE | 2,853,320 | 2/23/2000 | 12:00 PM | x86      | 
++-----------------------------------------------------------+
+
+
+NOTE: If this product was already installed on your computer when you purchased
+it from the Original Equipment Manufacturer (OEM), and you need this fix, please
+call the Pay Per Incident number listed in the above Web address. If you contact
+Microsoft to obtain this fix, a fee may be charged. This fee is refundable if it
+is determined that you only require the fix you requested. However, this fee is
+non-refundable if you request additional technical support, if your no-charge
+technical support period has expired, or if you are not eligible for standard
+no-charge technical support.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in a hotfix for Visual SourceSafe 6.0.
+
+REFERENCES
+==========
+
+Visual SourceSafe 6.0 Automation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbSSafe600fix kbDSupport kbGrpDSSSafe kbSSafe600qfe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

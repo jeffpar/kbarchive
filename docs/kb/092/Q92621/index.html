@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92621: Err Msg: There Are One or More User or Voice Data Files… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92621: Err Msg: There Are One or More User or Voice Data Files…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92621/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92621/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92621/","publisher":null,"image":null,"headline":"Q92621: Err Msg: There Are One or More User or Voice Data Files…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92621-err-msg-there-are-one-or-more-user-or-voice-data-files">Q92621: Err Msg: There Are One or More User or Voice Data Files…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92621
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows Sound System, if a vocabulary file or user file is missing or
+corrupted you may receive the following error message:
+
+  There are one or more user (*.usr) or voice (*.vcb) data files in the
+  VOICEPIL.INI that cannot be found. The Voice Pilot will resort to using the
+  default file as a substitute.
+
+MORE INFORMATION
+================
+
+If you start Voice Pilot and the above error message is displayed, a vocabulary
+file (.VCB) or a user file (.USR) has been deleted or is missing from the
+Windows Sound System directory and no modification has been made to the
+VOICEPIL.INI file.
+
+To correct the error message, use the following steps:
+
+1. Look at the Windows Sound System directory and note the user .USR and .VCB
+  data files that are listed.
+
+2. Edit the VOICEPIL.INI file in the WINDOWS directory.
+
+3. Delete any lines under the [USER] and [APPS] section headings that did not
+  appear in the directory listings for .VCB and .USR.
+
+4. Save the VOICEPIL.INI file, then run Voice Pilot again.
+
+You will also get the above error message if a user or vocabulary file is
+corrupted.
+
+If a &lt;.VCB&gt; file is corrupted and you get the above error message you can
+continue using Voice Pilot. Voice Pilot will use the DEFAULT vocabulary file
+instead of the corrupted one.
+
+One way to determine which &lt;.VCB&gt; file is corrupted is when you run Voice
+Pilot and the vocabulary that comes up for the application in use is the default
+vocabulary and not your modified or custom made version for that application.
+Voice Pilot will use the DEFAULT vocabulary for any Windows application that
+does not have a custom made vocabulary. There is no way to fix a corrupted
+vocabulary file.
+
+If a &lt;*.USR&gt; file is corrupted you will also get the above error message
+when you run Voice Pilot. You can continue using Voice Pilot since it will
+simply ignore the corrupted &lt;*.USR&gt; file. The corrupted user file will
+still show up as a user in the user list. One way to test for a corrupted user
+file is to try to set it as the active user, if it is corrupted Voice Pilot will
+show the following error message:
+
+  Corrupt voicepil.ini file. Voice Pilot cannot make requested user name
+  active. Please reinstall the Voice Pilot.
+
+To correct the problem you need to remove the corrupted user file either by
+removing the user entry from VOICEPIL.INI or deleting the user from the user
+list in Voice Pilot. There is no way to fix a corrupted user file, you will lose
+all the training for that user. If you have a back up file for that user simply
+replace it to keep the user listed under Voice Pilot.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

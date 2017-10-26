@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119102: Dangerous Creatures: Manual Installation Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119102: Dangerous Creatures: Manual Installation Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119102/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119102/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119102/","publisher":null,"image":null,"headline":"Q119102: Dangerous Creatures: Manual Installation Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119102-dangerous-creatures-manual-installation-instructions">Q119102: Dangerous Creatures: Manual Installation Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119102
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following describes how to manually set up Dangerous Creatures.
+
+CAUTION: If you are using Windows 95 or Windows NT, when copying files, DO NOT
+overwrite ANY existing files. Allowing the system files to be overwritten in
+Windows 95 or Windows NT may cause improper system performance.
+
+These directions assume the following:
+
+- The hard disk drive is drive C.
+
+- Windows is installed in C:\WINDOWS.
+
+- The CD-ROM drive is drive X.
+
+MORE INFORMATION
+================
+
+1. Create a directory called C:\MSDANGER on your hard disk (drive C).
+
+2. Copy the following files from the X:\XFILES\APP directory on the CD-ROM to
+  the C:\MSDANGER directory on your hard disk:
+
+      PIDHOLDR.DLL
+      MSDANGER.THE
+      README.TXT
+      EXPLORE.EXE
+      MSDANGER.DLL
+      MSDANGER.EXE
+
+3. Copy the following file from the X:\XFILES\SYSTEM directory on the CD-ROM to
+  the C:\WINDOWS\SYSTEM directory on the hard disk:
+
+      ACMCMPRS.DLL
+      AVICAP.DLL
+      AVIFILE.DLL
+      COMPOBJ.DLL
+      DISPDIB.DLL
+      DVA.386
+      ICCVID.DRV
+      IMAADPCM.ACM
+      INDEOV.DRV
+      IR21_R.DLL
+      IR32.DLL
+      MAP_WIN.HLP
+      MCIAVI.DRV
+      MCIMMP.DRV
+      MCIOLE.DLL
+      MMP.DLL
+      MSACM.DLL
+      MSACM.DRV
+      MSADPCM.ACM
+      MSRLE.DRV
+      MSVIDC.DRV
+      MSVIDEO.DLL
+      OLE2.DLL
+      OLE2CONV.DLL
+      OLE2DISP.DLL
+      OLE2NLS.DLL
+      OLE2PROX.DLL
+      STDOLE.TLB
+      STORAGE.DLL
+      TYPELIB.DLL
+      VBRUN200.DLL
+      VER.DLL
+      VSHARE.386
+
+4. Copy the following file from the X:\XFILES\SYSTEM directory on the CD-ROM to
+  the C:\WINDOWS directory on the hard disk:
+
+      MPLAYER.EXE
+      MPLAYER.HLP
+      INDEO.INI
+
+5. Modify and/or add the following sections to the SYSTEM.INI file:
+
+  NOTE: Do not delete any information from these sections.
+
+      [Drivers]
+      WAVEMAPPER=MSACM.DRV
+      VIDC.MSVC=MSVIDC.DRV
+      VIDC.CVID=ICCVID.DRV
+      VIDC.RT21=INDEOV.DRV
+      VIDC.YVU9=INDEOV.DRV
+      VIDC.IV32=IR32.DLL
+      VIDC.IV31=INDEOV.DRV
+
+      [MSACM]
+      INSTALL=MSADPCM.ACM
+
+      [MCI]
+      AVIVIDEO=MCIAVI.DRV
+
+6. Modify and/or add the following sections to the WIN.INI file:
+
+      [MCI EXTENSIONS]
+      AVI=AVIVIDEO
+
+7. Create a file named MSDANGER.INI with the following entries:
+
+      [MICROSOFT DANGEROUS CREATURES]
+      CD=X:
+      DIRECTORY=C:\MSDANGER\ 
+      DISABLESOUNDEFFECTS=0
+      VIDEOINWINDOW=0
+      FIRSTVIDEOINWINDOW=0
+      DISABLENARRATION=0
+      PRINTHIGHQUALITY=1
+      PRINTPORTRAIT=0
+      COMMAND=C:\MSDANGER\MSDANGER.THE
+      WINDOW=195,134
+      DEMO=0
+
+  Save the file MSDANGER.INI to the C:\WINDOWS directory.
+
+8. Register OLE information.
+
+  a. From the File menu in the Program Manager, choose Run.
+
+  b. Type the following command lines, and choose OK after each line.
+
+         regedit x:\xfiles\system\mplayer.reg
+         regedit x:\xfiles\system\ole2.reg
+         regedit x:\xfiles\system\cleanup.reg
+
+     NOTE: If the operation is successful, the following message appears:
+
+  Registration Info Editor Information in X:\XFILES\SYSTEM\*.REG has been
+  successfully registered in the registration database.
+
+     Choose OK.
+
+9. Create a new program group called "Microsoft Multimedia."
+
+  a. From the File menu in Program Manager, choose New.
+
+  b. Select New Program Group and choose OK.
+
+  c. Enter " Microsoft Multimedia " (without the quotation marks) in the
+     Description box and choose OK.
+
+10. Add the following new program item to this group.
+  a. From the File menu in Program Manager, choose New and choose OK to add a
+     new Program Item.
+
+  b. Enter the following description and command line for the program item:
+
+         Description: Dangerous Creatures
+         Command Line: C:\MSDANGER\MSDANGER.EXE
+         Working Directory: C:\MSDANGER
+
+  c. Choose OK to accept the information.
+
+11. Restart Windows for the system changes to take affect.
+
+Additional query words: kbhowto 1994multi media multimedia multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbDangerousCreatures
+Version           : 1.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

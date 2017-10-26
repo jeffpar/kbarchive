@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154174/","publisher":null,"image":null,"headline":"Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154174-invalid-icmp-datagram-fragments-hang-windows-nt-windows-95">Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154174
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.51,4.0
+Operating System(s): 
+Keyword(s): kbfile kbnetwork kbWinNT400sp4fix kbgraphxlinkcritical
+Last Modified: 21-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Computers running Windows NT or Windows 95 may stop responding (hang) when they
+receive corrupted Internet Control Message Protocol (ICMP) datagram fragments
+from a client.
+
+
+RESOLUTION
+==========
+
+Microsoft has updated the TCP/IP protocol stack to correct this problem.
+Instructions for installing it are available from Microsoft support channels or
+directly from the Internet locations below.
+
+NOTE: This hotfix was originally posted on July 7, 1997. A subsequent fix was
+completed on January 9, 1998 to address another nearly identical attack and this
+hotfix has replaced the original one. The original hotfix is included in Windows
+NT 4.0 Service Pack 3. The most recent hotfix is not; however, it is available
+from the following Internet locations:
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+For your convenience, the English version of this post-SP3 hotfix has been posted
+to the following Internet location. However, Microsoft recommends that you
+install Windows NT 4.0 Service Pack 4 to correct this problem.
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/teardrop2-fix
+
+NOTE: Service Pack 3 must be applied to Windows NT 4.0 prior to applying this
+fix.
+
+Windows NT 3.51
+---------------
+
+NOTE: Service Pack 5 must be applied to Windows NT 3.51 prior to applying this
+fix.
+
+This fix should have the following time stamp:
+
+  01/14/98  12:04p               123,824 Tcpip.sys   (Intel)
+  01/14/98  12:00p               216,848 Tcpip.sys   (Alpha)
+
+This hotfix has been posted to the following Internet location:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/hotfixes-postSP5/teardrop2-fix
+
+Windows 95
+----------
+
+This issue is resolved by the following updated file for Windows 95 and OSR2, and
+later versions of this file:
+
+  Vip.386  version 4.0.958  dated 1/14/98 9:58am  66,734 bytes
+
+This file is included in the self-extracting Vipup11.exe file.
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Vipup11.exe now
+  (http://download.microsoft.com/download/win95upg/tcpip/1/WIN98/EN-US/vipup11.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The following files are installed by Vipup11.exe:
+
+  File name  Version    Date/Time        Size     Destination folder
+  ------------------------------------------------------------------
+  Vip.386    4.00.958   1/14/98 9:58am   66,734   Windows\System
+
+STATUS
+======
+
+Microsoft has confirmed this problem could result in some degree of security
+vulnerability in Windows NT version 4.0. This problem was first corrected in
+Windows NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server
+Edition Service Pack 4.
+
+
+Microsoft has confirmed this problem could result in some degree of security
+vulnerability in Windows NT version 3.51. A fully supported fix is now
+available, but it has not been fully regression tested and should only be
+applied to systems determined to be at risk of attack. Please evaluate your
+system's physical accessibility, network and Internet connectivity, and other
+factors to determine the degree of risk to your system. If your system is
+sufficiently at risk, Microsoft recommends you apply this fix. Otherwise, wait
+for the next Windows NT service pack, which will contain this fix. Please
+contact Microsoft Technical Support for more information.
+
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 and OEM
+Service Release 2 (OSR2). An update to address this problem is now available,
+but is not fully regression tested and should be applied only to computers
+experiencing this specific problem. Unless you are severely impacted by this
+specific problem, Microsoft does not recommend implementing this update at this
+time. Contact Microsoft Technical Support for additional information about the
+availability of this update.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbnetwork kbWinNT400sp4fix kbgraphxlinkcritical 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWin95search kbZNotKeyword3
+Version           : :3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

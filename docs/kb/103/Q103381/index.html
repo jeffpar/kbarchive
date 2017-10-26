@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103381: PC Forms: Installing Forms Designer with Non-English Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103381: PC Forms: Installing Forms Designer with Non-English Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103381/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103381/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103381/","publisher":null,"image":null,"headline":"Q103381: PC Forms: Installing Forms Designer with Non-English Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103381-pc-forms-installing-forms-designer-with-non-english-mail">Q103381: PC Forms: Installing Forms Designer with Non-English Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103381
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:1.0,3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Electronic Forms Designer, version 1.0, used with:
+   - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Non-English versions of Microsoft Mail for Windows must be updated with new
+libraries to correctly support the development and use of electronic forms
+(E-forms). Disk 2 of the version 1.0 Microsoft Electronic Forms Designer disks
+contains updated versions of MAILSPL.EXE, MSSFS.DLL, and MAPI.DLL for the German
+and French versions of Microsoft Mail. Updated versions of these files for other
+languages will be available from your local Microsoft subsidiary.
+
+The files on Disk 2 are in compressed format. The French version of the updated
+files are in the INTL\FRN directory of Disk 2. The German version are in the
+INTL\GER directory.
+
+MORE INFORMATION
+================
+
+To install the updated Forms Designer files for French or German Microsoft Mail,
+perform the following steps:
+
+1. Use the Designer Setup program to install the Electronic Forms Designer, by
+  following the instructions in the Microsoft Electronic Forms Designer
+  "Developer's Guide."
+
+2. Exit Windows.
+
+3. Insert Disk 2 of the Electronic Forms Designer into your floppy disk drive
+  and at the MS-DOS prompt, select your floppy disk drive.
+
+4. To install the French version of the files, type the following:
+
+  "cd a:\intl\frn" (without the quotation marks)
+
+  To install the German version of the files, type the following:
+
+  "cd a:\intl\ger" (without the quotation marks)
+
+5. Change the current drive to the drive that contains your Windows directory.
+  If your Windows directory is not in your path, copy the EXPAND.EXE program
+  from your Windows directory to your Windows SYSTEM directory.
+
+6. Change the current directory to your Windows system directory. For example,
+  if your Windows system directory is on drive C and is called WINDOWS\SYSTEM,
+  type the following:
+
+  "cd c:\windows\system" (without the quotation marks)
+
+7. Type the following commands to copy and decompress the updated Microsoft Mail
+  files into your Windows system directory:
+
+  "expand a:mailspl.ex_ mailspl.exe
+  expand a:mssfs.dl_ mssfs.dll
+  expand a:mapi.dl_ mapi.dll" (without the quotation marks)
+
+To install the updated files for access by E-form users with French or German
+Microsoft Mail, perform the following steps:
+
+1. Use the Electronic Forms Designer Server Setup program to install the E-form
+  run-time files into the shared extensions directory by following the
+  instructions in the Microsoft Electronic Forms Designer "Developer's Guide."
+
+2. Follow steps 2 through 4 in the procedure listed above, but instead of
+  decompressing and copying the updated files into the Windows SYSTEM
+  directory, copy and decompress the files into the EFORMS\RUNTIME directory
+  created by the Server Setup program.
+
+This procedure replaces the English versions of the libraries created by the User
+Setup program with the French or German version of the library files, so that
+when users run the User Setup program, the correct language version is installed
+on their machines.
+
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

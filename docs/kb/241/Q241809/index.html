@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241809: XWEB: Installing OWA Only Using Unattended Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241809: XWEB: Installing OWA Only Using Unattended Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241809/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241809/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241809/","publisher":null,"image":null,"headline":"Q241809: XWEB: Installing OWA Only Using Unattended Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241809-xweb-installing-owa-only-using-unattended-setup">Q241809: XWEB: Installing OWA Only Using Unattended Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241809
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5; winnt:5.5,5.5 SP1,5.5 SP2
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2
+Last Modified: 01-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2 
+- Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to install Active Server Components (Outlook Web Access
+Components) using unattended setup (setup /q [batchfile]), you may receive the
+following error message :
+
+  There is something wrong with the INI file. Make sure the command line
+  specifies a full path to a valid INI file.
+
+MORE INFORMATION
+================
+
+You receive the preceding error message when you attempt to install only Active
+Server Components using the Setup.ini file. The Setup.ini file you use may look
+similar to the one below:
+
+  ;To run this batch setup file, type SETUP /Q[path to this
+  file]\SETUP.INI.;ex. SETUP /QD:\SETUP1.INI
+  [Product ID]
+  ;Your product ID. This field is required, and batch setup will fail if it
+  ;is not included, unless this copy of Microsoft Exchange was received under
+  ;the Microsoft Select Agreement.
+  ;Product IDs are of the format: xxx-xxxxxxx
+  cdkey=123-4567890
+
+  [Paths]
+  ;Where the server will be installed.
+  ServerDest=c:\exchsrvr
+
+  ;Where Admin will be installed if selected.
+  ;AdminDest=c:\exchsrvr
+
+  [Components]
+  ;Whether to install the server services.
+  Services=FALSE
+
+  ;Whether to install Administrator program.
+  Administrator=FALSE
+
+  ;Whether to install MS Mail Connector.
+  MSMailConnector=FALSE
+
+  ;Whether to install the Connector for cc:Mail.
+  cc:Mail=FALSE
+
+  ;Whether to install the X.400 Connector.
+  X400=FALSE
+
+  ;Whether to install the Active Server Components.
+  Active Server Components=TRUE
+
+  ;Whether to install the Sample Applications.
+  Sample Applications=FALSE
+
+  ;Whether to install online documentation.
+  Books Online=FALSE
+
+  ;Whether to install the Event Service
+  Event Service=FALSE
+
+  [Site]
+  ;If the server is joining an existing Site, server in that Site.
+  ExistingServerName=UKMSGBE01
+
+  [ServiceAccount]
+  ;The service account password.
+  ;AccountPassword=password
+
+  [Licensing]
+  ;Whether to setup licensing on a Per Seat basis.
+  ;PerSeat=TRUE
+
+The option to install only Active Server Components on a Microsoft Internet
+Information Server (IIS) computer without installing the core Exchange Server
+services is not supported. Although you can specify "Existing Server Name" in
+the Setup.ini file, this parameter is only used by Setup when joining an
+existing site. It does not indicate the name of an Exchange Server computer to
+be used by Outlook Web Access.
+
+REFERENCES
+==========
+
+For additional information on installing Exchange Server in batch mode, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q188625 XADM: Unattended Exchange Server 5.5 Setup
+
+Additional query words: OWA UNATTENDED INI
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550 kbExchange550SP1 kbExchange550SP2
+Version           : WINDOWS:5.5; winnt:5.5,5.5 SP1,5.5 SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

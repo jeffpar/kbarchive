@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102913: Scenes 1.0: Adding Pictures to Default PICSETS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102913: Scenes 1.0: Adding Pictures to Default PICSETS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102913/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102913/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102913/","publisher":null,"image":null,"headline":"Q102913: Scenes 1.0: Adding Pictures to Default PICSETS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102913-scenes-10-adding-pictures-to-default-picsets">Q102913: Scenes 1.0: Adding Pictures to Default PICSETS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102913
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can add a picture from one set of Microsoft Scenes pictures (picset) to
+another.
+
+MORE INFORMATION
+================
+
+To add a picture, do the following:
+
+1. Copy the picture to the appropriate directory (for example, from
+  C:\Scenes\Space to C:\Scenes\Impress).
+
+2. Edit the Picset.ini file in the directory in which you just copied the
+  picture(s). For more information about how to perform this task in Windows,
+  see your Windows printed documentation or online Help.
+
+3. Change the PICTURECOUNT line to read 48 plus the number of pictures you are
+  adding to the PICSET. For example, if you are adding one picture, change the
+  PICTURECOUNT line to 49.
+
+4. Add the name of the picture(s) that you are adding to the end of the
+  Picset.ini file. The lines should be similar to the following:
+
+        [49]
+        Action=1
+        1.Input=&lt;picset&gt;\*.jpg
+
+  The &lt;picset&gt; is set to the default picset directory.
+
+5. Continue adding the other pictures following the lines above, but
+  incrementing the number in brackets.
+
+6. Edit the Enu.ini file in the original PICSET directory. Look for the number
+  that corresponds to the first two numbers of the file(s) you copied over.
+  Write this information down, then delete the lines that correspond to the
+  pictures you copied.
+
+7. Go to the new directory and edit the Enu.ini file. Locate the
+  "48=&lt;description&gt;" line, then add the following information for each
+  picture you copied:
+
+  "49=&lt;description&gt;
+  50=&lt;description&gt; " (without the quotation marks)
+
+  where &lt;description&gt; is the same description used in step 6.
+
+8. Save all files and then exit Scenes.
+
+9. Restart Scenes to enable the changes.
+
+NOTE: When you change the wallpaper in Scenes, the new picture(s) do not appear.
+These pictures are stored in .cat files and cannot be changed.
+
+Additional query words: msscenes screen saver screensaver wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186276/","publisher":null,"image":null,"headline":"Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186276-prb-invalid-parameter-number-error-calling-rdo-batchupdate">Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186276
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVBp kbVBp500 kbVBp600 kbDSupport
+Last Modified: 17-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When calling the RDO Resultset BatchUpdate method to a Microsoft SQL Server
+database and setting the Resultset BatchSize property to a large value, the
+following error may occur:
+
+  Run time error '40002': S1093: [Microsoft][ODBC SQL Server Driver]
+  Invalid Parameter Number
+
+The BatchSize property controls the number of rows updated/inserted/deleted in a
+single round trip.
+
+CAUSE
+=====
+
+This error occurs because there is a limit to the number of parameters that can
+be called within a single batch statement. That limit is 500 for the current
+version of SQLSVR32.DLL, the SQL server ODBC driver. The version tested is
+3.50.0305. The limit of 500 is a factor of the number of parameters in the SQL
+statement multiplied by the number of rows in the batch update. What occurs is
+that ODBC is sending out the SQL statement that contains parameters for the new
+values, the PK value, and the old values. This SQL statement is repeated for the
+number of rows to be updated up to the value of the BatchSize property value. As
+an example in the code that follows, the UPDATE statement that is sent to SQL
+Server looks like this:
+
+     UPDATE tblBatchUpdate SET fldValue=? WHERE ID=? AND fldValue=?;
+
+Note that there are three parameters that give the number of parameters in the
+batch when multiplied by the BatchSize property value. If this number exceeds
+the parameter limit of 500, you will get the error "Invalid Parameter Number."
+
+RESOLUTION
+==========
+
+The only way to avoid this problem is to lower the value of the BatchSize
+property.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps create an application to reproduce the error. Create a SQL
+Server table in the pubs database by clicking the Make Table button. Fill the
+table with 200 records by clicking the Fill Table button. Click the "Batch
+Update" button to produce the error.
+
+1. Open a new project in Visual Basic. Form1 is created by default.
+
+2. Place three CommandButtons on Form1.
+
+3. From the Project menu, select References, and then select Microsoft Remote
+  Data Objects 2.0.
+
+4. Place the following code in the General Declarations section of Form1. You
+  will need to alter the database connection information in the
+  EstablishConnection procedure:
+
+        Option Explicit
+            Dim Cn As New rdoConnection
+            Dim Rs As rdoResultset
+
+        Private Sub Form_Load()
+           EstablishConnection
+           Command1.Caption = "Create Table"
+           Command2.Caption = "Fill Table"
+           Command3.Caption = "Batch Update"
+           Command2.Enabled = False
+           Command3.Enabled = False
+        End Sub
+
+        Private Sub Command1_Click()
+            Dim strCreateTable As String
+            Dim Response As Integer
+            strCreateTable = "CREATE TABLE dbo.tblBatchUpdate (" _
+                &amp; "ID int IDENTITY (1, 1) NOT NULL PRIMARY KEY," _
+                &amp; "fldValue int NULL)"
+            Debug.Print strCreateTable
+
+            If Not Cn.rdoTables("tblBatchUpdate").Updatable Then
+                  'table exists
+                Response = MsgBox("Table exists" &amp; vbCrLf &amp; _
+                "Do you what to delete it?", vbYesNo)
+            End If
+
+            If Response = vbYes Then
+                Cn.Execute ("Drop table tblBatchUpdate")
+                Debug.Print "Creating new table..."
+                Cn.Execute strCreateTable
+            End If
+
+            Command2.Enabled = True
+            Command3.Enabled = True
+
+        End Sub
+
+        Private Sub Command2_Click()
+            Dim i As Integer
+            Dim strSQLInsert As String
+            MousePointer = vbHourglass
+
+            For i = 1 To 200
+                strSQLInsert = "INSERT tblbatchupdate (fldValue) " _
+                &amp; "VALUES (" &amp; i &amp; ")"
+                Cn.Execute (strSQLInsert)
+            Next i
+
+            MousePointer = vbNormal
+        End Sub
+
+        Private Sub Command3_Click()
+            RefreshRS
+            MousePointer = vbHourglass
+            If Rs.RowCount &gt; 0 Then
+                Rs.MoveFirst
+                Do While Not Rs.EOF
+                    Rs.Edit
+                        Rs(1) = Rs(1) + 1
+                    Rs.Update
+                    Rs.MoveNext
+                Loop
+                Rs.BatchUpdate
+            End If
+            MousePointer = vbNormal
+        End Sub
+
+        Private Sub EstablishConnection()
+            With Cn
+               .Connect = "UID=sa; PWD=; Database=pubs;" _
+                &amp; "Server=MySQLServer;Driver={SQL Server}"
+               .CursorDriver = rdUseClientBatch
+               .EstablishConnection rdDriverNoPrompt, False
+            Debug.Print Cn.Connect
+            End With
+        End Sub
+
+        Private Sub RefreshRS()
+           Dim Sql As String
+           Dim rdoQuery1 As rdoQuery
+
+           Sql = "SELECT ID, fldValue FROM tblbatchupdate;"
+           Set rdoQuery1 = Cn.CreateQuery("sql", Sql)
+           rdoQuery1.RowsetSize = 1000
+
+           Set Rs = rdoQuery1.OpenResultset( _
+                             Type:=rdOpenKeyset, LockType:=rdConcurBatch)
+
+           Rs.rdoColumns(0).KeyColumn = True
+           Rs.BatchSize = 167   'Value of 166 works and 167 fails
+           'Reason - 166 * 3 = 497 -Works and
+           '167 * 3 = 501 - Fails
+           'Because - this is the update statement sent out -
+           '"UPDATE tblbatchupdate SET fldValue=? WHERE ID=? AND fldValue=?;"
+           'Notice 3 parameters.  No. of parameters * no. of rows cannot
+           'exceed 500.
+           '
+           Rs.UpdateCriteria = rdCriteriaUpdCols
+
+        End Sub
+
+        Private Sub Form_Unload(Cancel As Integer)
+            Cn.Close
+        End Sub
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Ron Nelson, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp kbVBp500 kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

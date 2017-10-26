@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169132: Print Server Application Exception in S3POHPOP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169132: Print Server Application Exception in S3POHPOP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169132/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169132/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169132/","publisher":null,"image":null,"headline":"Q169132: Print Server Application Exception in S3POHPOP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169132-print-server-application-exception-in-s3pohpop">Q169132: Print Server Application Exception in S3POHPOP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169132
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The SNA Server Host Print service may generate an application exception that
+creates a Drwtsn32.log in the Windows NT directory when configured for 3270 host
+printing. The Windows NT Application Event Log will contain a message similar to
+the following when this occurs:
+
+  Event ID: 4097
+  Source: DrWatson
+  Description: The application, exe\snaprint.DBG, generated an application
+  error.
+  The error occurred on &lt;date&gt; @ &lt;time&gt;. The exception generated
+  was
+  c0000005 at address 60d8c72b (s3pohpop).
+
+CAUSE
+=====
+
+The application exception can be caused if the Host Print service accesses a
+buffer after sending it to the SNA Server service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+When this error occurs, the Drwtsn32.log will contain information similar to the
+following:
+
+  Application exception occurred:
+     App: exe\snaprint.DBG (pid=&lt;process id&gt;)
+     When: &lt;date&gt; @ &lt;time&gt;
+     Exception number: c0000005 (access violation)
+
+  function: s3pohpop
+     60d8c706 66894d58         mov     [ebp+0x58],cx      ss:01539eb7=????
+     60d8c70a 6a03             push    0x3
+     60d8c70c 668b4e0c         mov     cx,[esi+0xc]
+        ds:0c0a6fcb=????
+     60d8c710 68b007da60       push    0x60da07b0
+     60d8c715 66890d0074da60   mov     [tracevar (60da7400)],cx
+        ds:60da7400=0000
+     60d8c71c 6a04             push    0x4
+     60d8c71e 6a5f             push    0x5f
+     60d8c720 6a12             push    0x12
+     60d8c722 e8994cffff       call    gw_trace (60d813c0)
+     60d8c727 8b542410         mov     edx,[esp+0x10]
+        ss:0df9e92f=????????
+  FAULT -&gt;60d8c72b 0fbf4a04         movsx   ecx,word ptr [edx+0x4]
+  ds:0b743d43=????
+     60d8c72f 8a441112         mov     al,[ecx+edx+0x12]
+  ds:0b743d43=??
+     60d8c733 8b4c2428         mov     ecx,[esp+0x28]
+  ss:0df9e92f=????????
+     60d8c737 88410c           mov     [ecx+0xc],al
+  ds:0144f807=??
+     60d8c73a 0fbf4204         movsx   eax,word ptr [edx+0x4]
+  ds:0b743d43=????
+     60d8c73e 03c2             add     eax,edx
+     60d8c740 660fb65020       movzx   dx,byte ptr [eax+0x20]
+  ds:0121ea3c=??
+     60d8c745 66c1e208         shl     dx,0x8
+     60d8c749 660fb64021       movzx   ax,byte ptr [eax+0x21]
+  ds:0121ea3c=??
+     60d8c74e 6603d0           add     dx,ax
+     60d8c751 66895108         mov     [ecx+0x8],dx
+  ds:0144f808=????
+     60d8c755 8b542410         mov     edx,[esp+0x10]
+  ss:0df9e92f=????????
+
+  *----&gt; Stack Back Trace &lt;----*
+
+  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+  0cd7ff54 60d8babb 0cd7ff73 60da2e28 0ae885c4 001696a0 ppd3270!s3pohpop
+  0cd7ff70 60d8ef23 77f67570 001696a0 60d9a9dc 0001000b ppd3270!s3pohp
+  0cd7ff7c 60d9a9dc 0001000b 00000020 0ae885c4 001696a0 ppd3270!s3poproc
+  0cd7ffa4 60d86efd 0cd7ffec 1000fb84 01b5fb84 60da2e28 ppd3270!s3psproc
+  0cd7ffb8 77f04f32 60da2e28 1000fb84 01b5fb84 60da2e28 ppd3270!s3pmain
+  0cd7ffec 00000000 60d86df0 60da2e28 00000000 00000007 kernel32!lstrcmpiW
+  00000000 00000000 00000000 00000000 00000000 00000000
+  snaprint!&lt;nosymbols&gt;
+
+The 3270 print provider for SNA Server 3.0 has been updated to correct this
+problem.
+
+Additional query words: trap
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

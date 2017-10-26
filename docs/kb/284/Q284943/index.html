@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q284943: How to Create a Windows 95 Startup Disk in MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q284943: How to Create a Windows 95 Startup Disk in MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/284/Q284943/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/284/Q284943/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/284/Q284943/","publisher":null,"image":null,"headline":"Q284943: How to Create a Windows 95 Startup Disk in MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q284943-how-to-create-a-windows-95-startup-disk-in-ms-dos">Q284943: How to Create a Windows 95 Startup Disk in MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q284943
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 1,2,2.1,2.5
+Operating System(s): 
+Keyword(s): osr2 win95
+Last Modified: 29-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a Windows 95 Startup disk in MS-DOS.
+
+This article is based on the assumption that the system files on the hard drive
+are in good condition, and are not corrupted, or that you have access to a
+functioning Windows 95-based computer.
+
+MORE INFORMATION
+================
+
+1. Restart the computer. When you see the "Starting Windows 95" message, press
+  F8, and then choose Command Prompt Only on the Startup menu, or open an
+  MS-DOS window inside of Windows 95.
+
+2. Insert a blank, non-write protected floppy disk in the floppy disk drive (if
+  you use a disk that has any data on it, the data will be lost).
+
+3. Type the following commands, pressing ENTER after each command. Do not
+  include the comments that are included in parentheses.
+
+  "format a: /s" (without the quotation marks) (this will copy over
+  Command.com, IO.sys, Msdos.sys, and if the hard drive is compressed,
+  Drvspace.bin)
+
+  "copy c:\windows\command\attrib.exe a:" (without the quotation marks)
+
+  "copy c:\windows\command\chkdsk.exe a:" (without the quotation marks)
+
+  "copy c:\windows\command\debug.exe a:" (without the quotation marks)
+
+  "copy c:\windows\command\edit.com a:" (without the quotation marks)
+
+  "copy c:\windows\command\fdisk.exe a:" (without the quotation marks)
+
+  "copy c:\windows\command\format.com a:" (without the quotation marks)
+
+  "copy c:\windows\command\scandisk.exe a:" (without the quotation marks)
+
+  "copy c:\windows\command\scandisk.ini a:" (without the quotation marks)
+
+  "copy c:\windows\command\sys.com a:" (without the quotation marks)
+
+  "copy c:\windows\command\drvspace.bin a:" (without the quotation marks)
+  (format /s will copy this over if the drive is compressed)
+
+  "copy c:\windows\regedit.exe a:" (without the quotation marks)
+
+4. Uninstal.exe is found in the Win95_02.cab file, and it must be extracted.
+  This file is only needed if you are planning on uninstalling Windows 95.
+
+For additional information about how to extract files, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+5. Ebd.sys is an empty file that is included on the EBD made by Windows, but it
+  is not necessary.
+
+For additional information about the contents of the Windows 95 Startup disk,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q142943 Contents of Windows 95 and Microsoft Plus! Startup Disks
+
+Additional query words: ebd emergency boot disk
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95 kbWin95OPKOSR2 kbWin95OPKOSR25 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1,2.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

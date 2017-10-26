@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135485/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135485/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135485/","publisher":null,"image":null,"headline":"Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135485-windows-95-cd-rom-msdosdrvtxt-file-2-of-2">Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135485
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a partial copy of the information in the Msdosdrv.txt file
+from the Windows 95 CD-ROM. This article is the second of two articles.
+
+MORE INFORMATION
+================
+
+----------------------------------------------------------------------
+        Microsoft Windows 95 README for MS-DOS Device Drivers
+                              August 1995
+----------------------------------------------------------------------
+
+              (c) Copyright Microsoft Corporation, 1995
+
+This document provides complementary or late-breaking information to
+supplement the Microsoft Windows 95 documentation.
+
+DBLBUFF.SYS -- Double Buffering
+===============================
+
+Loads the Dblbuff.sys device driver to perform double buffering.
+Double buffering provides compatibility for certain hard-disk
+controllers that cannot work with memory provided by EMM386 or Windows
+running in 386 Enhanced mode.
+
+If Windows Setup determined that your system may need double-
+buffering, it will add a DoubleBuffer=1 entry to the [Options] section
+of Msdos.sys, which will automatically load Dblbuff.sys. To manually
+enable double-buffering, you can either add the above entry to
+Msdos.sys, or add a DEVICE command in your CONFIG.SYS file.
+
+Syntax
+
+   DEVICE=[drive:][path]DBLBUFF.SYS [/D+]
+
+Parameters
+
+[drive:][path]
+  Specifies the location of the Dblbuff.sys file.
+
+/D+
+  Instructs Dblbuff.sys to double-buffer all disk I/O all the time.
+  By default, it will only double-buffer I/O to UMBs, and it will
+  automatically stop double-buffering if it appears to be
+  unnecessary.
+
+DISPLAY.SYS
+===========
+
+Enables you to display international character sets on EGA, VGA, and
+LCD monitors. This device driver must be loaded by a DEVICE or
+DEVICEHIGH command in your CONFIG.SYS file.
+
+Syntax
+
+   DEVICE=[drive:][path]DISPLAY.SYS CON[:]=(type[,[hwcp][,n]])
+
+   DEVICE=[drive:][path]DISPLAY.SYS CON[:]=(type[,[hwcp][,(n,m)]])
+
+Parameters
+
+[drive:][path]
+   Specifies the location of the DISPLAY.SYS file.
+
+type
+  Specifies the display adapter in use. Valid values include EGA and
+  LCD. The EGA value supports both EGA and VGA display adapters. If
+  you omit the type parameter, DISPLAY.SYS checks the hardware to
+  determine which display adapter is in use. You can also specify CGA
+  and MONO as values for type, but they have no effect because
+  character-set switching is not enabled for these devices.
+
+hwcp
+  Specifies the number of the character set that your hardware
+  supports. The following list shows the character sets that MS-DOS
+  supports and the country or language for each:
+
+    437    United States
+    850    Multilingual (Latin I)
+    852    Slavic (Latin II)
+    860    Portuguese
+    863    Canadian-French
+    865    Nordic
+
+  Additional character sets are supported by the EGA2.CPI and
+  EGA3.CPI files.
+
+n
+  Specifies the number of character sets the hardware can support in
+  addition to the primary character set specified for the hwcp
+  parameter.
+  Valid values for n are in the range 0 through 6. This value depends
+  on your hardware. For EGA display adapters, the maximum value for n
+  is 6; for LCD display adapters, the maximum value for n is 1.
+
+m
+  Specifies the number of subfonts the hardware supports for each
+  code page. The default value is 2 if type is EGA, and 1 if type is
+  LCD.
+
+DRVSPACE.SYS, DBLSPACE.SYS
+==========================
+
+Determines the final memory location of DRVSPACE.BIN or DBLSPACE.BIN,
+the part of MS-DOS that provides access to your compressed drives.
+
+DxxSPACE.SYS loads the real-mode driver into upper memory blocks. This
+can save 60K of conventional memory when you run Windows 95 in real
+mode, and can save 100K or more if you use Microsoft Plus! for
+Windows.
+
+When you start your computer, Windows loads DRVSPACE.BIN or
+DBLSPACE.BIN along with other operating-system functions, before
+carrying out the commands in your CONFIG.SYS and AUTOEXEC.BAT files.
+DxxSPACE.BIN initially loads in conventional memory because it loads
+before device drivers that provide access to upper memory.
+
+When you use DriveSpace or DoubleSpace to create a compressed drive on
+your computer, the program adds a command for DxxSPACE.SYS to your
+CONFIG.SYS file.
+
+In the following syntax, for DxxSPACE type the filename for the
+program you are using.
+
+Syntax
+
+  DEVICE=[drive:][path]DxxSPACE.SYS /MOVE [/NOHMA] [/LOW]
+
+  DEVICEHIGH=[drive:][path]DxxSPACE.SYS /MOVE [/NOHMA] [/LOW]
+
+Switches
+
+/MOVE
+  Moves DxxSPACE.BIN to its final location in memory.
+
+  Initially, DxxSPACE.BIN loads at the top of conventional memory.
+  After Windows finishes carrying out the commands in the CONFIG.SYS
+  file, it moves DxxSPACE.BIN to the bottom of conventional memory.
+  When DxxSPACE.SYS is loaded by using the DEVICE command, it moves
+  DxxSPACE.BIN from the top of conventional memory to the bottom.
+  This can be useful for avoiding conflicts with programs that are
+  loaded from the CONFIG.SYS file and require access to the top of
+  conventional memory.
+
+  When DxxSPACE.SYS is loaded by using the DEVICEHIGH command,
+  DxxSPACE.BIN moves to upper memory, if available. Moving
+  DxxSPACE.BIN to upper memory makes more conventional memory
+  available.
+
+/NOHMA
+  Prevents DxxSPACE.SYS from moving a portion of DxxSPACE.BIN to the
+  high memory area (HMA).
+
+  If MS-DOS is loaded into the HMA, DxxSPACE.SYS moves a  portion of
+  DxxSPACE.BIN to the HMA (if there is enough room in the HMA). Use
+  this switch if you do not want DxxSPACE.BIN to use the HMA.
+
+/LOW
+  Prevents DxxSPACE.SYS from loading at the top of conventional
+  memory. Use this switch if you have an MS-DOS-based program that
+  does not support DriveSpace or DoubleSpace at the top of
+  conventional memory. Note that use of this switch will prevent
+  Windows from reusing the memory occupied by DxxSPACE.sys.
+
+Parameter
+
+[drive:][path]
+  Specifies the location of the DxxSPACE.SYS file.
+
+EGA.SYS
+=======
+
+Saves and restores the display when the MS-DOS Shell Task Swapper is
+used with EGA monitors. If you have an EGA monitor, you must install
+the EGA.SYS device driver before using Task Swapper. This device
+driver must be loadedby a DEVICE or DEVICEHIGH command in your
+CONFIG.SYS file.
+
+Syntax
+
+  DEVICE=[drive:][path]EGA.SYS
+
+Parameters
+
+[drive:][path]
+  Specifies the location of the EGA.SYS file.
+
+EMM386.EXE
+==========
+
+Provides access to the upper memory area and uses extended memory to
+simulate expanded memory. This device driver must be loaded by a
+DEVICE command in your CONFIG.SYS file and can be used only on
+computers with an 80386 or higher processor.
+
+EMM386 uses extended memory to simulate expanded memory for programs
+that can use expanded memory. EMM386 also makes it possible to load
+programs and device drivers into upper memory blocks (UMBs).
+
+Syntax
+
+   DEVICE=[drive:][path]EMM386.EXE [ON|OFF|AUTO] [memory] [MIN=size]
+   [W=ON|W=OFF] [Mx|FRAME=address|/Pmmmm] [Pn=address] [X=mmmm-nnnn]
+   [I=mmmm-nnnn] [B=address] [L=minXMS] [A=altregs] [H=handles]
+[D=nnn]
+   [RAM=mmmm-nnnn] [NOEMS] [NOVCPI] [HIGHSCAN] [VERBOSE] [WIN=mmmm-
+nnnn]
+   [NOHI] [ROM=mmmm-nnnn] [NOMOVEXBDA] [ALTBOOT] [NOBACKFILL]
+
+Parameters
+
+[drive:][path]
+  Specifies the location of the EMM386.EXE file.
+
+[ON|OFF|AUTO]
+  Activates the EMM386 device driver (if set to ON), or suspends the
+  EMM386 device driver (if set to OFF), or places the EMM386 device
+  driver in auto mode (if set to AUTO). Auto mode enables expanded-
+  memory support and upper memory block support only when a program
+  calls for it. The default value is ON. Use the EMM386 command to
+  change this value after EMM386 has started.
+
+memory
+  Specifies the maximum amount of extended memory (in kilobytes) that
+  you want EMM386 to provide as expanded/Virtual Control Program
+  Interface (EMS/VCPI) memory. This amount is in addition to the
+  memory used for UMBs and EMM386 itself. Values for memory are in
+  the range 64 through the lesser of either 32768 or the amount of
+  extended memory available when EMM386 is loaded. The default value
+  is the amount of free extended memory. If you specify the NOEMS
+  switch, the default value is 0. EMM386
+  rounds the value down to the nearest multiple of 16.
+
+Switches
+
+MIN=size
+  Specifies the minimum amount of EMS/VCPI memory (in kilobytes) that
+  EMM386 will provide, if that amount of memory is available. EMM386
+  reserves this amount of extended memory for use as EMS/VCPI memory
+  when EMM386 is loaded by the DEVICE=EMM386.EXE command in your
+  CONFIG.SYS file. EMM386 may be able to provide additional EMS/VCPI
+  memory (up to the amount specified by the MEMORY parameter) if
+  sufficient XMS memory is available when a program requests EMS/VCPI
+  memory. Values are in the range 0 through the value specified by
+  the MEMORY parameter. The default value is 256. If you specify the
+  NOEMS switch, the default value is 0. If the value of MIN is
+  greater than the value of MEMORY, EMM386 uses the value specified
+  by MIN.
+
+W=ON|W=OFF
+  Enables or disables support for the Weitek co-processor. The
+  default setting is W=OFF.
+
+Mx
+  Specifies the address of the page frame. Valid values for x are in
+  the range 1 through 14. The following list shows each value and its
+  associated base address in hexadecimal format:
+
+          1 =&gt; C000h     8 =&gt; DC00h
+          2 =&gt; C400h     9 =&gt; E000h
+          3 =&gt; C800h    10 =&gt; 8000h
+          4 =&gt; CC00h    11 =&gt; 8400h
+          5 =&gt; D000h    12 =&gt; 8800h
+          6 =&gt; D400h    13 =&gt; 8C00h
+          7 =&gt; D800h    14 =&gt; 9000h
+
+  Values in the range 10 through 14 should be used only on computers
+  that have 512K of memory.
+
+FRAME=address
+  Specifies the page-frame segment base directly. To specify a
+  specific segment-base address for the page frame, use the FRAME
+  switch, and specify the address you want. Valid values for address
+  are in the ranges 8000h through 9000h and C000h through E000h, in
+  increments of 400h. To provide expanded memory and disable the page
+  frame, you can specify FRAME=NONE; however, this may cause some
+  programs that require expanded memory to work improperly.
+
+/Pmmmm
+  Specifies the address of the page frame. Valid values for mmmm are
+  in the ranges 8000h through 9000h and C000h through E000h, in
+  increments of 400h.
+
+Pn=address
+  Specifies the segment address of a specific page, where n is the
+  number of the page you are specifying and address is the segment
+  address you want. Valid values for n are in the range 0 through
+  255. Valid values for address are in the ranges 8000h through 9C00h
+  and C000h through EC00h, in increments of 400h. The addresses for
+  pages 0 through 3 must be contiguous in order to maintain
+  compatibility with version 3.2 of the Lotus/Intel/Microsoft
+  Expanded Memory Specification (LIM EMS). If you use the Mx switch,
+  the FRAME switch, or the /Pmmmm switch, you cannot specify the
+  addresses for pages 0 through 3 for the /Pmmmm switch.
+
+X=mmmm-nnnn
+  Prevents EMM386 from using a particular range of segment addresses
+  for an EMS page or for UMBs. Valid values for mmmm and nnnn are in
+  the range A000h through FFFFh and are rounded down to the nearest
+  4-kilobyte boundary. The X switch takes precedence over the I
+  switch if the two ranges overlap.
+
+I=mmmm-nnnn
+  Specifies a range of segment addresses to be used (included) for an
+  EMS page or for UMBs. Valid values for mmmm and nnnn are in the
+  range A000h through FFFFh and are rounded down to the nearest 4-
+  kilobyte boundary. The X switch takes precedence over the I switch
+  if the two ranges overlap.
+
+B=address
+  Specifies the lowest segment address available for EMS "banking"
+  (swapping of 16KB pages). Valid values are in the range 1000h
+  through 4000h. The default value is 4000h.
+
+l=minXMS
+  Ensures that the specified amount (in kilobytes) of extended memory
+  will still be available after EMM386 is loaded. The default value
+  is 0.
+
+A=altregs
+  Specifies how many fast alternate register sets (used for
+  multitasking) you want to allocate to EMM386. Valid values are in
+  the range 0 through 254. The default value is 7. Every alternate
+  register set adds about 200 bytes to the size in memory of EMM386.
+
+H=handles
+  Specifies how many handles EMM386 can use. Valid values are in the
+  range 2 through 255. The default value is 64.
+
+D=nnn
+  Specifies how many kilobytes of memory should be reserved for
+  buffered direct memory access (DMA). Discounting floppy disk DMA,
+  this value should reflect the largest DMA transfer that will occur
+  while EMM386 is active. Valid values for nnn are in the range 16
+  through 256. The default value is 32.
+
+RAM=mmmm-nnnn
+  Specifies a range of segment addresses to be used for UMBs and also
+  enables EMS support. If you do not specify a range, EMM386 uses all
+  available adapter space to create UMBs and a page frame for EMS.
+
+NOEMS
+  Provides access to the upper memory area but prevents access to
+  expanded memory.
+
+NOVCPI
+  Disables support for VCPI programs. This switch must be used with
+  the NOEMS switch. If you specify the NOVCPI switch without
+  specifying the NOEMS switch, EMM386 does not disable VCPI support.
+  If you specify both switches, EMM386 disregards the MEMORY
+  parameter and the MIN switch. Disabling support for VCPI programs
+  reduces the amount of extended memory allocated.
+
+HIGHSCAN
+  Specifies that EMM386 use an additional check to determine the
+  availablity of upper memory for use as UMBs or EMS windows. On some
+  computers, specifying this switch may have no effect or cause
+  EMM386 to identify upper memory areas as available when they are
+  not. As a result, your computer might stop responding.
+
+VERBOSE
+  Directs EMM386 to display status and error messages while loading.
+  By default, EMM386 displays messages only if it encounters an error
+  condition. You can abbreviate VERBOSE as V. (To display status
+  messages without adding the VERBOSE switch, press and hold down the
+  ALT key while EMM386 starts and loads.)
+
+WIN=mmmm-nnnn
+  Reserves a specified range of segment addresses for Windows instead
+  of for EMM386. Valid values for mmmm and nnnn are in the range
+  A000h through FFFFh and are rounded down to the nearest 4-kilobyte
+  boundary. The X switch takes precedence over the WIN switch if the
+  two ranges overlap. The WIN switch takes precedence over the RAM,
+  ROM, and I switches if their ranges overlap.
+
+[NOHI]
+  Prevents EMM386 from loading into the upper memory area. Normally,
+  a portion of EMM386 is loaded into upper memory. Specifying this
+  switch decreases available conventional memory and increases the
+  upper memory area available for UMBs.
+
+[ROM=mmmm-nnnn]
+  Specifies a range of segment addresses that EMM386 uses for shadow
+  RAM--random-access memory used for read-only memory (ROM). Valid
+  values for mmmm and nnnn are in the range A000h through FFFFh and
+  are rounded down to the nearest 4-kilobyte boundary. Specifying
+  this switch may speed up your system if it does not already have
+  shadow RAM.
+
+[NOMOVEXBDA]
+  Prevents EMM386 from moving the extended BIOS data from
+  conventional memory to upper memory.
+
+[ALTBOOT]
+  Specifies that EMM386 use an alternate handler to restart your
+  computer when you press CTRL+ALT+DEL. Use this switch only if your
+  computer stops responding or exhibits other unusual behavior when
+  EMM386 is loaded and you press CTRL+ALT+DEL.
+
+[NOBACKFILL]
+  When EMM386 is configured to provide upper memory blocks (by using
+  the NOEMS or RAM switches), EMM386 will also automatically backfill
+  conventional memory if there is less than 640k, in order to bring
+  total conventional memory up to 640k.  However, because Windows
+  does not support backfilled conventional memory, use the NOBACKFILL
+  switch if your computer has less than 640K of conventional memory.
+
+HIMEM.SYS
+=========
+
+HIMEM is an extended-memory manager--a program that coordinates the
+use of your computer's extended memory, including the high memory area
+(HMA), so that no two programs or device drivers use the same memory
+at the same time.
+
+You install HIMEM by adding a DEVICE command for HIMEM.SYS to your
+CONFIG.SYS file. The HIMEM.SYS command line must come before any
+commands that start programs or device drivers that use extended
+memory; for example, the HIMEM.SYS command line must come before the
+EMM386.EXE command line.
+
+Syntax
+
+DEVICE=[drive:][path]HIMEM.SYS [/A20CONTROL:ON|OFF]
+[/CPUCLOCK:ON|OFF][/EISA] [/HMAMIN=m] [/INT15=xxxx] [/MACHINE:xxxx]
+[/NOABOVE16] [/NOEISA][/NUMHANDLES=n] [/SHADOWRAM:ON|OFF]
+[/TESTMEM:ON|OFF] [/VERBOSE] [/X]
+
+In most cases, you won't need to specify command-line options. The
+default values for HIMEM.SYS are designed to work with most hardware.
+
+Parameter
+
+[drive:][path]
+  Specifies the location of the HIMEM.SYS file. HIMEM.SYS should
+  always be located on the same drive that contains your MS-DOS
+  files. If the HIMEM.SYS file is in the root directory of your
+  startup drive, you don't need to include a path. However, you must
+  always include the complete filename (HIMEM.SYS).
+
+Switches
+
+/A20CONTROL:ON|OFF
+  Specifies whether HIMEM is to take control of the A20 line even if
+  A20 was on when HIMEM was loaded. The A20 handler gives your
+  computer access to the HMA. If you specify /A20CONTROL:OFF, HIMEM
+  takes control of the A20 line only if A20 was off when HIMEM was
+  loaded. The default setting is /A20CONTROL:ON.
+
+/CPUCLOCK:ON|OFF
+  Specifies whether HIMEM is to affect the clock speed of your
+  computer. If your computer's clock speed changes when you install
+  HIMEM, specifying /CPUCLOCK:ON may correct the problem; however,
+  enabling this option slows down HIMEM. The default setting is
+  /CPUCLOCK:OFF.
+
+/EISA
+  Specifies that HIMEM should allocate all available extended memory.
+  This switch is necessary only on an EISA (Extended Industry
+  Standard Architecture) computer with more than 16 MB of memory; on
+  other computers, HIMEM automatically allocates all available
+  extended memory.
+
+/HMAMIN=m
+  Specifies how many kilobytes of memory a program must require for
+  HIMEM to give that program use of the HMA. Only one program can
+  use the HMA at a time; HIMEM allocates the HMA to the first program
+  that meets the memory-use requirements set by this option. You can
+  specify a value from 0 to 63.
+
+  Set /HMAMIN to the amount of memory required by the program that
+  uses the most HMA memory.
+
+  The /HMAMIN option is not required; the default value is zero.
+  Omitting this option (or setting it to zero) specifies that HIMEM
+  allocate the HMA to the first program that requests it, regardless
+  of how much of the HMA the program is going to use.
+
+  The /HMAMIN option has no effect when Windows is running in 386
+  Enhanced mode.
+
+/INT15=xxxx
+  Allocates the amount of extended memory (in kilobytes) to be
+  reserved for the Interrupt 15h interface. Some older programs use
+  the Interrupt 15h interface to allocate extended memory rather than
+  using the XMS (eXtended-Memory Specification) method provided by
+  HIMEM. If you use these programs, you can ensure enough memory is
+  available to them by setting xxxx to 64 KB larger than the amount
+  required by the program.
+
+  You can specify a value from 64 to 65535; however, you cannot
+  specify more memory than your system has available. If you specify
+  a value less than 64, the value becomes 0. The default value is 0.
+
+/MACHINE:xxxx
+  Specifies what type of computer you are using. Usually, HIMEM can
+  detect your computer type successfully; however, there are a few
+  computers that HIMEM cannot detect. On such systems, HIMEM uses the
+  default system type (IBM AT or compatible). You might need to
+  include the /MACHINE option if your computer is a type that HIMEM
+  cannot detect and if HIMEM does not work properly on your system by
+  using the default system type.
+
+  Currently, systems that require this option include Acer 1100,
+  Wyse, and IBM 7552.
+
+  The value for xxxx can be any of the codes or their equivalent
+  numbers listed in the following table.
+
+Code         Number  Computer type
+----------------------------------------------------------------------
+
+at           1       IBM AT or 100% compatible
+
+ps2          2       IBM PS/2
+
+ptlcascade   3       Phoenix Cascade BIOS
+
+hpvectra     4       HP Vectra (A &amp; A+)
+
+att6300plus  5       AT&amp;T 6300 Plus
+
+acer1100     6       Acer 1100
+
+toshiba      7       Toshiba 1600 &amp; 1200XE
+
+wyse         8       Wyse 12.5 Mhz 286
+
+tulip        9       Tulip SX
+
+zenith       10      Zenith ZBIOS
+
+at1          11      IBM PC/AT (alternative delay)
+
+at2          12      IBM PC/AT (alternative delay)
+
+css          12      CSS Labs
+
+at3          13      IBM PC/AT (alternative delay)
+
+philips      13      Philips
+
+fasthp       14      HP Vectra
+
+ibm7552      15      IBM 7552 Industrial Computer
+
+bullmicral   16      Bull Micral 60
+
+dell         17      Dell XBIOS
+
+/NOABOVE16
+  Specifies not to use INT 15h (ax==E801h) Compaq Bigmem support to
+  scan for extended memory.
+
+/NOEISA
+  Specifies that HIMEM should not do EISA scanning for extended
+  memory.
+
+/NUMHANDLES=n
+  Specifies the maximum number of extended-memory block (EMB) handles
+  that can be used simultaneously. You can specify a value from 1 to
+  128; the default value is 32. Each additional handle requires an
+  additional 6 bytes of memory.
+
+  The /NUMHANDLES option has no effect when Windows is running in 386
+  Enhanced mode.
+
+/SHADOWRAM:ON|OFF
+  Specifies whether to disable shadow RAM (SHADOWRAM:OFF) or to leave
+  the ROM code running from RAM (SHADOWRAM:ON).
+
+  Some computers make ROM code run faster by "shadowing" it in RAM--
+  that is, by copying the ROM code into faster RAM memory at startup,
+  which uses some extended memory. On computers that use shadow RAM
+  and have less than 2 MB of RAM, HIMEM usually attempts to disable
+  shadow RAM to recover additional extended memory for Windows to
+  use. (HIMEM can disable shadow RAM only on certain types of
+  systems.) When HIMEM disables shadow RAM, the ROM code runs in the
+  slower ROM instead of RAM; therefore, your computer might run
+  slightly slower than it did before.
+
+/TESTMEM:ON|OFF
+  Determines whether HIMEM performs a memory test when your computer
+  starts. By default, HIMEM tests the reliability of your computer's
+  extended memory each time your computer starts. This test can
+  identify memory that is no longer reliable; unreliable memory can
+  cause system instability or loss of data. HIMEM's memory test is
+  more thorough than the standard power-up memory test performed by
+  most computers. To prevent HIMEM from performing the memory test,
+  specify /TESTMEM:OFF. Disabling the memory test will shorten the
+  startup process. (The default setting is /TESTMEM:ON.)
+
+/VERBOSE
+  Directs HIMEM to display status and error messages while loading.
+  By default, HIMEM does not display any messages unless it
+  encounters an error. You can abbreviate /VERBOSE as /V. (To display
+  status messages without adding the /VERBOSE switch, press and hold
+  the ALT key while HIMEM starts and loads.)
+
+/X
+  Specifies not to use INT 15h (ax==E820h), the latest extended
+  memory support API.
+
+RAMDRIVE.SYS
+============
+
+Uses part of your computer's random-access memory (RAM) to simulate a
+hard disk drive. This device driver must be loaded by a DEVICE or
+DEVICEHIGH command in your CONFIG.SYS file.
+
+RAM drives are much faster than hard disk drives because your computer
+can read information faster from memory than from a hard disk. A RAM
+drive appears to be a normal hard disk drive; you can use it just as
+you would any hard disk drive. The most important difference between a
+real disk drive and a RAM drive is that because it exists only in
+memory, information on a RAM drive is lost when you turn off or
+restart your computer. You can set up as many RAM drives as you want,
+up to the amount of memory your computer has. To do this, add one
+RAMDRIVE.SYS line to your CONFIG.SYS file for each additional RAM
+drive you want.
+
+Syntax
+
+DEVICE=[drive:][path]RAMDRIVE.SYS [DiskSize SectorSize [NumEntries]]]
+[/E | /A]
+
+Parameters
+
+[drive:][path]
+  Specifies the location of the RAMDRIVE.SYS file.
+
+DiskSize
+  Specifies how many kilobytes of memory you want to use for the RAM
+  drive. For example, to create a 640K RAM drive, specify 640. If you
+  don't specify an amount, RAMDrive will create a 64K RAM drive. You
+  can specify a value from 4 to 32767. However, you cannot specify
+  more memory than your system has available.
+
+SectorSize
+  Specifies the disk sector size in bytes. The size can be 128, 256,
+  or 512 bytes. (If you include a SectorSize value, you must also
+  include a value for DiskSize.)
+
+  Generally, you should use the default sector size of 512 bytes.
+
+NumEntries
+  Limits the number of files and directories you can create in the
+  RAM drive's root directory. The limit can be from 2 to 1024
+  entries; the limit you specify is rounded up to the nearest sector
+  size boundary. If you do not specify a limit, you can create up to
+  64 entries in the RAM drive's root directory. (If you include a
+  value for NumEntries, you must also include values for DiskSize and
+  SectorSize.)
+
+  If there is not enough memory to create the RAM drive as specified,
+  RAMDrive will try to create it with a limit of 16 directory
+  entries.
+  This may result in a RAM drive with a different limit from the one
+  you specified.
+
+Switches
+
+/E
+  Creates the RAM drive in extended memory.
+
+  For RAMDrive to use extended memory, your system must be configured
+  so that it provides extended memory, and a DEVICE command for the
+  extended-memory manager (such as HIMEM.SYS) must appear in your
+  CONFIG.SYS file before the DEVICE command for RAMDRIVE.SYS. In
+  general, it is best to create a RAM drive in extended memory if
+  your system has extended memory.
+
+/A
+  Creates the RAM drive in expanded memory.
+
+  For RAMDrive to use expanded memory, your system must be configured
+  so that it provides expanded memory, and the DEVICE command for the
+  expanded-memory manager (such as EMM386, 386MAX, CEMM, or QEMM)
+  must appear in your CONFIG.SYS file before DEVICE command for
+  RAMDRIVE.SYS.
+
+SETVER.EXE
+==========
+Loads the MS-DOS version table into memory. This device driver must be
+loaded by a DEVICE or DEVICEHIGH command in your CONFIG.SYS file.
+
+SETVER.EXE loads into memory the MS-DOS version table, which lists
+names of programs and the number of the MS-DOS version with which each
+program is designed to run.
+
+Syntax
+
+   DEVICE=[drive:][path]SETVER.EXE
+
+Parameters
+
+[drive:][path]
+  Specifies the location of the SETVER.EXE file.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

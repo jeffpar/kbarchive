@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231210/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231210/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231210/","publisher":null,"image":null,"headline":"Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231210-sms-smsmanexe-is-unable-to-start-the-removal-process">Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231210
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbClient kbServer kbsms200 kbsms200bug kbsmsUtil
+Last Modified: 12-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Systems Management Server (SMS) 2.0 Installation
+Wizard (Smsman.exe) to remove SMS components from a Microsoft Windows NT or
+Windows 2000 client, you receive the following error message:
+
+  Systems Management was unable to start the removal process.
+
+After you click OK to close the error message, you receive the following
+message:
+
+  No changes have been made to your system. If you need assistance, contact
+  your SMS administrator.
+
+CAUSE
+=====
+
+This behavior can occur if the original SMS client component installation was
+not successfully completed. The removal process requires one of the components
+(Clicore.exe) to be successfully installed.
+
+WORKAROUND
+==========
+
+The SMS client components can be forcibly removed by using the 20CliCln.bat
+utility that is included with the SMS 2.0 Service Pack 2 Support Tools package.
+Updated support tools are available from the following Microsoft Web site:
+
+  http://www.microsoft.com/smsmgmt
+
+To install SMS 2.0 supportability files and run the Client Cleaner utility,
+follow these steps:
+
+1. Run Support\Support.exe from the SMS 2.0 installation compact disc or Web
+  site download on the site server or a network server.
+
+2. Share the SMS 2.0 Supportability Files folder for read-only access.
+
+3. Connect to the SMS 2.0 Supportability Files share from the Windows NT or
+  Windows 2000 client.
+
+4. Start Reskit\Bin\I386\Cleancli\20clicln.bat.
+
+NOTE: You must have Administrator rights on the client computer when using this
+tool. Otherwise, some SMS 2.0 files and registry settings will not be removed.
+
+The Client Cleaner utility can also be copied to run locally on the client
+computer. The following files must be copied to the new location for the utility
+to operate successfully:
+
+- 20CliCln.bat
+
+- Hammer.exe
+
+- Kill.exe
+
+- SetEvnt.exe
+
+Client Cleaner Syntax:
+
+  20clicln.bat [/SCRUB]
+
+  /SCRUB
+
+This causes the Smscfg.ini file to be deleted from the directory indicated by
+%SMS_LOCAL_DIR%; it represents a more thorough cleanup because the Smscfg.ini
+file may contain the previous SMS identifier used by the client.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbServer kbsms200 kbsms200bug kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

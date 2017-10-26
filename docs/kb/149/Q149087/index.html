@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149087: HOWTO: Using CDaoRecordset::Seek | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149087: HOWTO: Using CDaoRecordset::Seek" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149087/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149087/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149087/","publisher":null,"image":null,"headline":"Q149087: HOWTO: Using CDaoRecordset::Seek","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149087-howto-using-cdaorecordsetseek">Q149087: HOWTO: Using CDaoRecordset::Seek</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149087
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbDAOsearch kbDatabase kbMFC kbVC400 kbVC500 kbVC600
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use CDaoRecordset::Seek. Seek enables high-
+performance indexed searching on table-type recordsets. You can call Seek to
+find the first record that satisfies the specified criteria for the current
+index and make that record the current record. There are two versions of the
+Seek member function that you can use to locate a record in an indexed
+table-type recordset object. This article explains both.
+
+MORE INFORMATION
+================
+
+There are two versions of Seek, one works with indexes that are comprised of up
+to three fields and the other handles indexes comprised of more than three
+fields. You must set the current index by calling SetCurrentIndex before calling
+Seek. If you do not, an exception will be thrown, as MFC does not specify a
+default index when a recordset is opened. If the index identifies a non-unique
+key, Seek locates the first record that satisfies the criteria.
+
+NOTE: If you are not creating a UNICODE recordset, any character string
+COleVariant objects must be explicitly declared ANSI. This can be done by using
+the COleVariant::COleVariant( lpszSrc, vtSrc ) form of constructor with vtSrc
+set to VT_BSTRT (ANSI) or by using the COleVariant function SetString( lpszSrc,
+vtSrc ) with vtSrc set to VT_BSTRT. SetString() is only available in MFC Version
+4.1 or later.
+
+Here are the declarations for Seek:
+
+     BOOL Seek( LPCTSTR lpszComparison,
+                COleVariant* pKey1,
+                COleVariant* pKey2 = NULL,
+                COleVariant* pKey3 = NULL );
+
+     BOOL Seek (LPCTSTR lpszComparison,
+                COleVariant* pKeyArray,
+                WORD nKeys );
+
+When you call Seek, you pass one or more key values and a comparison operator
+(&lt;, &lt;=, =, &gt;=, or &gt;). Seek searches through the current index and
+locates the first record that satisfies the criteria specified by lpszComparison
+and the key values passed to it. Once found, Seek returns a nonzero value and
+makes that record current. If Seek fails to locate a match, Seek returns zero
+and the current record is undefined.
+
+If the current index is a multiple-field index, then the key values for Seek must
+be in the same order as the fields in the index. In this case, trailing key
+values can be omitted. You can leave off any number of key values from the end
+of the list of key values but not from the beginning or middle. If you do choose
+to leave off trailing key values, Microsoft recommends that you use the &gt;=
+operator instead of the = operator. The missing key values will be treated as
+NULL, which probably won't match the values in your table.
+
+NOTE: The Microsoft Jet database engine, and therefore the Seek method, does not
+perform case-sensitive searches.
+
+The easiest way to create an index object is from within Microsoft Access.
+
+Steps to Create an Index Object
+-------------------------------
+
+1. Start Microsoft Access.
+
+2. Open the database file (.mdb) to be targeted.
+
+3. Open the target table in Design View.
+
+4. Invoke the Index Dialog by choosing Indexes on the View menu.
+
+5. Decide on a name for your index object, and then type it into the Index Name
+  field of the Index Dialog.
+
+6. Type the field names of the fields you want tied to the index object into the
+  Field Name field of the Index Dialog.
+
+Sample Code
+-----------
+
+     // Using the first version of Seek specifying the
+     // first field in the index:
+
+     void CMyDaoRecordset::FindCourse()
+     {
+        m_pSet-&gt;SetCurrentIndex( _T("PrimaryKey") );
+
+        COleVariant varCourse ( _T("MATH202"), VT_BSTRT );
+
+        if( m_pSet-&gt;Seek( _T( "=" ), &amp;varCourse ) )
+        // then you have found the record and it is now
+        // the current record
+
+     // Using the first version of Seek specifying the
+     // first two fields in the index:
+     void CMyDaoRecordset::FindCourse()
+     {
+        m_pSet-&gt;SetCurrentIndex( _T("PrimaryKey") );
+
+        COleVariant varCourse ( _T("MATH202"), VT_BSTRT );
+        COleVariant varSection( _T( "2"     ), VT_BSTRT );
+
+        if( m_pSet-&gt;Seek( _T( "=" ), &amp;varCourse, &amp;varSection ) )
+        // then you have found the record and it is now
+        // the current record
+
+The first version of Seek may be used with up to three fields. If an index has
+more than three fields and you need to specify more than three fields, use the
+second version of Seek. An array of COleVariants will be passed.
+
+     // Using the second version of Seek, specifying the first four
+     // fields of the index:
+
+     void CMyDaoRecordset::FindCourse()
+     {
+        m_pSet-&gt;SetCurrentIndex( _T("Secondary") );
+
+        COleVariant varCourse    ( _T( "MATH202"  ), VT_BSTRT );
+        COleVariant varSection   ( _T( "2"        ), VT_BSTRT );
+        COleVariant varInstructor( _T( "ROGERSN"  ), VT_BSTRT );
+        COleVariant varRoomNo      ( _T( "KEN-12"   ), VT_BSTRT );
+
+        // Now create an array and let the assignment
+        // operator of COleVariant populate the array
+        COleVariant rgVariant[4];
+
+        rgVariant[0] = varCourse;
+        rgVariant[1] = varSection;
+        rgVariant[2] = varInstructor;
+        rgVariant[3] = varRoomNo;
+
+        if( m_pSet-&gt;Seek( _T( "=" ), &amp;rgVariant[0], 4 ) )
+        // then you have found the record and it is now
+        // the current record
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q140599 PRB: MFC DAO Functions Accepting COleVariant Strings May Fail
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbDAOsearch kbDatabase kbMFC kbVC400 kbVC500 kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

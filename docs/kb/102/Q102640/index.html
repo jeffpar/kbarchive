@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102640: The &quot;Segment Load Failure&quot; Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102640: The &quot;Segment Load Failure&quot; Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102640/","publisher":null,"image":null,"headline":"Q102640: The &quot;Segment Load Failure&quot; Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102640-the-segment-load-failure-error-message">Q102640: The "Segment Load Failure" Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102640
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Running an application in the Microsoft Windows operating environment may
+produce a system modal dialog box containing the following error message:
+
+  Segment Load Failure
+
+The error occurs inconsistently due to the cached file handle mechanism of
+Windows version 3.1.
+
+MORE INFORMATION
+================
+
+During the life of a Windows-based application, Windows may need to load
+discarded code or resource segments or LOADONCALL segments for the first time.
+To load the segment, Windows uses file I/O functions to read the information
+from the .EXE file. If Windows has any errors opening the .EXE file, it will
+produce the error message:
+
+  Segment Load Failure
+
+The following are possible reasons opening the .EXE file fails, but this list is
+not exhaustive:
+
+- The filename was changed, deleted, or otherwise corrupted since the
+  application was first started.
+
+- The .EXE file resides on a shared drive and is opened exclusively or in
+  compatibility mode by another workstation running the application.
+
+- The .EXE file resides on a shared drive and is opened exclusively or in
+  compatibility mode by another application for some purpose other than running
+  the .EXE.
+
+- The system has run out of available file handles.
+
+The error message may occur inconsistently or not at all due to the mechanism
+used by Windows for caching file handles. The .EXE file is referred to by a file
+handle. By default, Windows caches 12 file handles for the most recently used
+files. If Windows subsequently opens more files than what the cache can hold,
+the cache closes the least recently used file handles. The error does not occur
+if Windows uses a cached file handle to refer to the file, but will occur if the
+file handle is no longer in the cache.
+
+The file handle cache is a system-wide mechanism and not a per-application
+mechanism. The number of cached file handles can be changed by the
+CachedFileHandles switch in the [boot] section of the SYSTEM.INI file. For more
+information regarding CachedFileHandles, see the SYSINI.WRI file in the
+Microsoft Windows Resource Kit.
+
+
+Additional query words: no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

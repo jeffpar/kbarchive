@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169097: FP: How to Create Invisible Frames in FrontPage | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169097: FP: How to Create Invisible Frames in FrontPage" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169097/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169097/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169097/","publisher":null,"image":null,"headline":"Q169097: FP: How to Create Invisible Frames in FrontPage","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169097-fp-how-to-create-invisible-frames-in-frontpage">Q169097: FP: How to Create Invisible Frames in FrontPage</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169097
+Product(s): Word Front Page
+Version(s): windows:1.1,97; macintosh:1.0
+Operating System(s): 
+Keyword(s): kbusage kbdta
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows 1.1 
+- Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q196125.
+
+For a Microsoft FrontPage 98 version of this article, see Q194152.
+
+SUMMARY
+=======
+
+The Microsoft FrontPage Frames Wizard does not provide a way to create frames
+that are invisible or have no border. This article describes how to create an
+invisible frame in FrontPage Editor.
+
+MORE INFORMATION
+================
+
+FrontPage 97
+------------
+
+To create an invisible frame, follow these steps:
+
+1. Start FrontPage Editor.
+
+2. On the File menu, click New.
+
+3. In the Template Or Wizard list, click Frames Wizard, and then click OK.
+
+4. Click Next on each panel of the wizard, until the last panel. On the last
+  panel, click Finish.
+
+5. In FrontPage Explorer, right-click the page you created in steps 1 through 4,
+  and then click Open With.
+
+6. In the Editor list, click FrontPage Editor, and then click OK.
+
+7. On the View menu, click HTML.
+
+8. In the HTML box, locate the &lt;FrameSet&gt; tag, and add the FrameBorder and
+  FrameSpacing attributes so that the tag looks something like this:
+
+  &lt;FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0"&gt;
+
+9. On the File menu, click Save.
+
+FrontPage 1.1
+-------------
+
+Open the Web page in a text editor, such as Notepad, and insert the
+&lt;FrameSet&gt; tag. For example, insert this code:
+
+  &lt;FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0"&gt;
+
+NOTE: If you reopen your Web page in FrontPage Editor, FrontPage deletes the
+FrameBorder and FrameSpacing attributes.
+
+FrontPage for the Power Macintosh
+---------------------------------
+
+To create an invisible frame, follow these steps:
+
+1. Start FrontPage Editor.
+
+2. On the File menu, click New.
+
+3. In the Template Or Wizard list, click Frames Wizard, and then click OK.
+
+4. Click Next on each panel of the wizard, until the last panel. On the last
+  panel, click Finish.
+
+5. In FrontPage Explorer, hold down the CONTROL key and click the page you
+  created in steps 1 through 4.
+
+6. Click Open With.
+
+7. In the Editor list, click FrontPage Editor, and click OK.
+
+8. On the View menu, click HTML.
+
+9. In the HTML box, locate the &lt;FrameSet&gt; tag, and add the FrameBorder and
+  FrameSpacing attributes so that the tag looks something like this:
+
+  &lt;FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0"
+
+  Click OK.
+
+10. On the File menu, click Save.
+
+Additional query words: 97 borderless none no border without
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

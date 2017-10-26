@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q279428: XADM: Can’t Modify Meeting Request Originating from Deleted User | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q279428: XADM: Can’t Modify Meeting Request Originating from Deleted User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/279/Q279428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/279/Q279428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/279/Q279428/","publisher":null,"image":null,"headline":"Q279428: XADM: Can’t Modify Meeting Request Originating from Deleted User","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q279428-xadm-cant-modify-meeting-request-originating-from-deleted-user">Q279428: XADM: Can’t Modify Meeting Request Originating from Deleted User</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q279428
+Product(s): Microsoft Exchange
+Version(s): 2000,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Outlook 2000, used with:
+   - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you delete a user mailbox from an Exchange Server computer, you cannot cancel
+or modify meeting requests of which this user is the originator.
+
+When you attempt to accept or decline the meeting that resides on your calendar,
+you may receive a non-delivery report (NDR) similar to the following one:
+
+  Your message did not reach some or all of the intended recipients.
+
+  Subject: Declined: Meeting Subject
+  Sent: 2/13/2001 12:00 PM
+  The following recipient(s) could not be reached:
+
+  /O=ORGANIZATION/OU=FIRST ADMINISTRATIVE GROUP/CN=RECIPIENTS/CN=DeletedUser on
+  2/13/2001 12:00 PM
+
+  The e-mail account does not exist at the organization this message was sent
+  to. Check the e-mail address, or contact the recipient directly to find out
+  the correct address.
+
+  &lt;server.domain.com #5.1.1&gt;
+
+RESOLUTION
+==========
+
+Cancel the Meeting Request from the Originating User's Mailbox
+--------------------------------------------------------------
+
+Before deleting a user's mailbox from the Exchange Server computer, cancel all
+pending meeting requests of which the user is the originator.
+
+Change the Primary Microsoft Windows NT Account of the Mailbox:
+
+1. In the Exchange Administrator program, open the property page of the mailbox
+  that contains the meeting requests to be canceled.
+
+2. From General/Primary Windows NT Account, click "Select an existing Windows NT
+  account", click OK, and then add the Administrator account.
+
+3. Close the mailbox property page.
+
+Cancel the Meeting Requests:
+
+1. In Outlook, open the calendar. On the View menu, point to Current View, and
+  then click Active Appointments.
+
+2. On the View menu, point to Current View, and then click Customize Current
+  View.
+
+3. In View Summary, click Filter.
+
+4. On the Advanced tab, under "Define more criteria", click Field.
+
+5. Point to All Appointment Fields, and then click Meeting Status.
+
+6. Under Condition, click to select the equals check box.
+
+7. Under Value, click to select the Meeting Organizer check box.
+
+8. Click "Add to List", and then click OK twice.
+
+9. All meeting requests of which the user was the meeting organizer are now
+  displayed in the Active Appointments view. Open each meeting request, click
+  Action, and then click Cancel Meeting.
+
+Manually Remove the Meeting Request From Invitee Calendars
+----------------------------------------------------------
+
+If you have already deleted the originating user's mailbox from the Exchange
+Server computer, you must manually remove any meeting requests that were
+generated by that user from the calendar of each invitee.
+
+1. In Outlook, open the calendar. On the View menu, point to Current View, and
+  then click Active Appointments.
+
+2. On the View menu, point to Current View, and then click Customize Current
+  View.
+
+3. In View Summary, click Fields.
+
+4. Under "Select available fields from", click to select the "All Appointment
+  fields" check box.
+
+5. Under "Available fields", click to select the Organizer check box. Click Add,
+  and then click OK twice.
+
+6. Click the Organizer column header to sort the view.
+
+7. In the sorted view, locate all meeting requests where the organizer is the
+  individual that no longer has a mailbox on the Exchange Server computer, and
+  then delete those items from the calendar.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q217619 XCLN: Error Deleting Updated Meeting Request
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbZNotKeyword2 kbOutlook2000Search kbZNotKeyword3
+Version           : :2000,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

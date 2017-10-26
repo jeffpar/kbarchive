@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193939: HOWTO: Use a Project and File Object’s SCC PEMs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193939: HOWTO: Use a Project and File Object’s SCC PEMs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193939/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193939/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193939/","publisher":null,"image":null,"headline":"Q193939: HOWTO: Use a Project and File Object’s SCC PEMs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193939-howto-use-a-project-and-file-objects-scc-pems">Q193939: HOWTO: Use a Project and File Object’s SCC PEMs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193939
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbSSafe600 kbvfp600
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how you can use the various source code control related
+properties and methods of the project and the file object.
+
+MORE INFORMATION
+================
+
+All of the source code control properties and methods are associated with the
+file object and only one property, read only, is associated with the project
+object. You can get access to all the source control functionality through the
+file object.
+
+Presently, using the current set of project object properties, events, and
+methods (PEM's), a project cannot be added to SCC programmatically. This
+operation has to be done visually using the "Add project to source control"
+option from the project menu.
+
+The source control property associated with the project object is SCCProvider,
+which contains an empty string if the project is not under source control.
+Otherwise, the source control property contains the name of the source control
+provider associated with the project. This property is read only at run and
+design time and is automatically updated by Visual FoxPro whenever a project is
+added to or removed from source control. The following is an example of using
+the SCCProvider property to find out whether or not a project is under source
+control:
+
+  curProj = _VFP.ActiveProject
+     IF EMPTY(curProj.SCCProvider)
+        MESSAGEBOX("Project is not under SourceCode Control"+;
+                 chr(13)+space(18)+"Unable to proceed")
+
+     ELSE
+        MESSAGEBOX("Project is under SourceCode Control")
+
+     ENDIF
+     RETURN
+
+Following are examples of how to use the file object SCC properties and methods.
+
+Properties
+----------
+
+SCCSTATUS:
+
+This property is read only at design and run time. It contains a numeric
+representation of the source control status of a file as follows:
+
+  No.   Source Control Status
+  --------------------------------------------------------------------
+
+  0     File is not Source Controlled (SCCFILE_NOTCONTROLLED)
+  1     File is Source Controlled and Checked In (SCCFILE_NOTCHECKEDOUT)
+  2     File Checked Out to Current User (SCCFILE_CHECKEDOUTCU)
+  3     File Checked Out to Other than Current User (SCCFILE_CHECKEDOUTOU)
+  4     File has Merge Conflict (SCCFILE_MERGECONFLICT)
+  5     File Merged without conflict (SCCFILE_MERGE)
+  6     File Checked Out to Multiple Users (SCCFILE_CHECKEDOUTMU)
+
+You can use the status property to make sure that a source control operation can
+or should be performed on a specific file. To check the contents of the property
+for a file, you can use the following sample code:
+
+     FUNCTION gSCCStat
+     PARAMETERS fName
+     CurProj = _VFP.ActiveProject
+     FOR i = 1 to CurProj.Files.Count
+        IF UPPER(fname) $ UPPER(CurProj.Files(i).Name)
+           IF CurProj.Files(i).SCCStatus = 0
+              MESSAGEBOX("File "+fname+" Is not Source Controlled")
+              fSCCStatus=0
+           ELSE
+              fSCCStatus = CurProj.Files(i).SCCStatus
+           ENDIF
+        ENDIF
+     ENDFOR
+     RETURN fSCCStatus
+
+Methods:
+
+When you invoke any of the following methods, the source control dialog box for
+the specific source control function comes up. The dialog box enables you to
+perform the function on a single or multiple files. The source control methods
+do not work if the project is not under source control.
+
+  Function: Description
+  ---------------------------------------------------------
+
+  AddToSCC: Adds file(s) to Source Control
+     Example: _VFP.ActiveProject.Files(1).AddToSCC
+
+  RemoveFromSCC: Removes file(s) from Source Control
+     Example: _VFP.ActiveProject.Files(1).RemoveFromSCC
+
+  CheckIn: Allows CheckIn of file(s)
+     Example: _VFP.ActiveProject.Files(1).CheckIn
+
+  CheckOut: Allows CheckOut of file(s)
+     Example: _VFP.ActiveProject.Files(1).CheckOut
+
+  UndoCheckOut: Allows Undo CheckOut for file(s)
+     Example: _VFP.ActiveProject.Files(1).UndoCheckOut
+
+  GetLatestVersion: Gets the Latest version of file(s)
+     Example: _VFP.ActiveProject.Files(1).GetLatestVersion
+
+In the examples above, the file represented by FILES(1) is selected in the source
+control dialog file list if the function can be performed on the file.
+Otherwise, the very first file in the list will be selected. In the dialog box,
+you can select to perform the function on one or multiple files.
+
+REFERENCES
+==========
+
+Visual FoxPro Help: Project Object/File Object
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbvfp600 
+Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP600 kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

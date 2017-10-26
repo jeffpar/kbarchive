@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163346: ACC97: Linked Table Manager Doesn’t Prompt You to Check Out Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163346: ACC97: Linked Table Manager Doesn’t Prompt You to Check Out Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163346/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163346/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163346/","publisher":null,"image":null,"headline":"Q163346: ACC97: Linked Table Manager Doesn’t Prompt You to Check Out Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163346-acc97-linked-table-manager-doesnt-prompt-you-to-check-out-data">Q163346: ACC97: Linked Table Manager Doesn’t Prompt You to Check Out Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163346
+Product(s): Microsoft SourceSafe
+Version(s): 97
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop
+Last Modified: 15-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+If you use the Linked Table Manager to refresh the link to a table that is under
+Source Code Control, and you do not have Data and Misc. Objects checked out,
+Microsoft Access does not prompt you to check it out. When you do check out Data
+and Misc. Objects, if the data to which the table was originally linked is not
+available, you receive two error messages for each linked table:
+
+  Couldn't find file '&lt;Database Name&gt;' An error occurred while trying to
+  create the linked table '&lt;Table Name&gt;'
+
+After you click OK on the last error message, the linked tables are deleted.
+
+NOTE: If the data to which the table was originally linked is still available
+when you check out Data and Misc. Objects, the table will revert to the original
+link.
+
+This article assumes that you are familiar with using the client-side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or Help available from the
+Visual SourceSafe Help menu.
+
+CAUSE
+=====
+
+Changes to objects that are not checked out are not saved. When you check out a
+linked table, Microsoft Access tries to refresh the link. If the data to which
+the table is linked is unavailable or has been moved to another location, the
+link cannot be refreshed and the linked table is removed.
+
+RESOLUTION
+==========
+
+Check out Data and Misc. Objects before you use the Linked Table Manager to
+modify the linked tables.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access 97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+NOTE: Any time you use Visual Basic for Applications code to modify an object in
+a database that is under Source Code Control, you are not prompted to check out
+the object. This behavior is by design; however wizards that modify objects
+through code should prompt you to check out the object.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new database called VssTest.mdb.
+
+2. On the Tools menu, point to SourceSafe, and then click "Add Database to
+  SourceSafe."
+
+3. Check out Data and Misc. Objects from SourceSafe.
+
+4. Link to the Customers table in the sample database Northwind.mdb.
+
+5. Check in Data and Misc. Objects, which now contains the linked table.
+
+6. Quit Microsoft Access 97.
+
+7. Locate Northwind.mdb and change its name to Northwind1.mdb.
+
+8. Start Microsoft Access and open VssTest.mdb.
+
+9. Refresh the link to the Customers table by pointing to Add-Ins on the Tools
+  menu, and then clicking Linked Table Manager.
+
+10. Check out Data and Misc. Objects from SourceSafe.
+
+11. Click OK on both error messages and note that the linked table no longer
+  appears in the Database window.
+
+REFERENCES
+==========
+
+For more information about using Microsoft Access 97 with Source Code Control,
+search the Help Index for "Source Code Control," or ask the Microsoft Access 97
+Office Assistant.
+
+For more information about using the Linked Table Manager Add-in in Microsoft
+Access 97, search the Help Index for "Linked Table Manager," or ask the
+Microsoft Access 97 Office Assistant.
+
+Additional query words: ACCSCC VSS SCC attach
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbAccessSearch kbAccess97 kbAccess97Search
+Version           : 97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

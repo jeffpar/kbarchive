@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163846: SID Values For Default Windows NT Installations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163846: SID Values For Default Windows NT Installations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163846/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163846/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163846/","publisher":null,"image":null,"headline":"Q163846: SID Values For Default Windows NT Installations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163846-sid-values-for-default-windows-nt-installations">Q163846: SID Values For Default Windows NT Installations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163846
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many User Accounts, Local Groups, and Global Groups have a default Security
+Identifier (SID) or Relative Identifier (RID) value across all installations of
+Windows NT. These values can be displayed by using the utility Getsid.exe from
+the Windows NT Resource Kit.
+
+MORE INFORMATION
+================
+
+The following information was taken from a Domain Controller named DomainName.
+The default groups differ on a Windows NT Workstation or Server installation,
+and if they are not a member of a domain, then the computer name would be
+considered the authority.
+
+The values below that have a full SID value will differ on all installations, but
+the RID value at the end of the SID is the same across all installations.
+
+NOTE: The values in parentheses is the hexadecimal values of the RID.
+
+Built-In Users
+--------------
+
+DOMAINNAME\ADMINISTRATOR
+S-1-5-21-917267712-1342860078-1792151419-500     (=0x1F4)
+
+DOMAINNAME\GUEST
+S-1-5-21-917267712-1342860078-1792151419-501     (=0x1F5)
+
+Built-In Global Groups
+----------------------
+
+DOMAINNAME\DOMAIN ADMINS
+S-1-5-21-917267712-1342860078-1792151419-512     (=0x200)
+
+DOMAINNAME\DOMAIN USERS
+S-1-5-21-917267712-1342860078-1792151419-513     (=0x201)
+
+DOMAINNAME\DOMAIN GUESTS
+S-1-5-21-917267712-1342860078-1792151419-514     (=0x202)
+
+Built-In Local Groups
+---------------------
+
+BUILTIN\ADMINISTRATORS     S-1-5-32-544          (=0x220)
+BUILTIN\USERS              S-1-5-32-545          (=0x221)
+BUILTIN\GUESTS             S-1-5-32-546          (=0x222)
+BUILTIN\ACCOUNT OPERATORS  S-1-5-32-548          (=0x224)
+BUILTIN\SERVER OPERATORS   S-1-5-32-549          (=0x225)
+BUILTIN\PRINT OPERATORS    S-1-5-32-550          (=0x226)
+BUILTIN\BACKUP OPERATORS   S-1-5-32-551          (=0x227)
+BUILTIN\REPLICATOR         S-1-5-32-552          (=0x228)
+
+Special Groups
+--------------
+
+\CREATOR OWNER             S-1-3-0
+\EVERYONE                  S-1-1-0
+NT AUTHORITY\NETWORK       S-1-5-2
+NT AUTHORITY\INTERACTIVE   S-1-5-4
+NT AUTHORITY\SYSTEM        S-1-5-18
+NT AUTHORITY\authenticated users   S-1-5-11 *
+
+* For Windows NT 4.0 Service Pack 3 and later only
+
+Additional query words: credentials trust
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

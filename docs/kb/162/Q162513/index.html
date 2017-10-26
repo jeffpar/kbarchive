@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162513: Non-Activation XID Produces Event ID 23 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162513: Non-Activation XID Produces Event ID 23" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162513/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162513/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162513/","publisher":null,"image":null,"headline":"Q162513: Non-Activation XID Produces Event ID 23","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162513-non-activation-xid-produces-event-id-23">Q162513: Non-Activation XID Produces Event ID 23</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162513
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The SNA Server connection will go pending and the following event will be logged
+to the application event log:
+
+  Event ID: 23
+
+  Connection &lt;value&gt; using Link Service &lt;value&gt; failed.
+
+  Qualifier: AF
+
+CAUSE
+=====
+
+The DLC Link service incorrectly identifies non-activation XID 3s as normal
+XIDs, and generates an outage on the connection.
+
+RESOLUTION
+==========
+
+Apply the fix referenced below. This fix corrects the DLC link service and
+causes non-activation XIDs to be passed up to the SNA Server service intact.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 2.11, 2.11 Service
+Pack 1 (SP1).
+
+
+A supported fix is now available for 2.11 SP1, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+
+MORE INFORMATION
+================
+
+The following is a sample Level2 trace showing the link service reading the
+non-activation XID. Byte 8-9 of the format 3 XID is 0x10 and 0x8E respectively.
+Bit 12-13 of this byte sequence is '11,' which is nonactivation exchange:
+
+TR     ---------------------------------------------- 10:06:55.33
+TR     READ               OK
+TR     ---- DLC API control block at address 73000----
+TR     00310000 00000000 00000000 1C300700     &lt;.1...........0..&gt;
+TR     68000000 00000000 0000AF00              &lt;h...........    &gt;
+TR
+TR     00000000 80006F00 40000000 00042008     &lt;......o.@..... .&gt;
+TR     3F00CC00 00000000 0E031840 0001FA16     &lt;?..........@....&gt;
+TR     C4454000 30001010 00000000 00000000     &lt;DE@.0...........&gt;
+TR     00000000 00000000 00000404 BFAE0000     &lt;................&gt;
+TR     346FFFFF FFFC0000 108E4000 00000000     &lt;4o........@.....&gt;
+TR     00010B50 00413800 00000004 000E0FF4     &lt;...P.A8........4&gt;
+TR     C3C8C2C3 E5C4F0F0 4BD4F1F2 F1F20E06     &lt;CHBCVD00KM1212..&gt;
+TR     F1D5C3D7 F5F21037 00161101 130011F3     &lt;1NCP52.7.......3&gt;
+TR     F7F4F5F1 F7F0F5F7 F0F0F7F2 F4F6F620     &lt;745170570072466 &gt;
+TR     11040E02 F5F6F8F8 F2F3F1F0 F0F3F0F2     &lt;....568823100302&gt;
+TR     0804F0F6 F0F3F040 07099601 620814       &lt;..06030@..o.b.. &gt;
+&lt;/CODE&gt;
+
+When the link service processes the above XID, it inappropriately deems it
+an error condition and reports it to the SNA Server service in the
+following message:
+&lt;CODE&gt;&lt;![CDATA[
+DLC    ---------------------------------------------- 10:06:55.42
+DLC    01160000-&gt;03020100 DLCST OUTG
+DLC                       Outage: 0xAF UPTYPE:0 UPCNTR:0 COUNT:0
+DLC
+DLC    ---- Header  at address 00D14828, 0 elements ----
+DLC    18AF0000 00000000 00008800 01003000     &lt;..........h...0.&gt;
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

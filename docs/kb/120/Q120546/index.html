@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120546: Artist: Saved Documents Are Black | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120546: Artist: Saved Documents Are Black" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120546/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120546/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120546/","publisher":null,"image":null,"headline":"Q120546: Artist: Saved Documents Are Black","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120546-artist-saved-documents-are-black">Q120546: Artist: Saved Documents Are Black</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120546
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0,1.1,1.1a
+Operating System(s): 
+Keyword(s): kbdisplay kbusage kbimukbfaq
+Last Modified: 27-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a picture Fine Artist and then open it, the picture may be solid
+black.
+
+CAUSE
+=====
+
+This behavior can occur if the display color palette is set to High Color
+(16-bit) or True Color (24-bit or 32-bit).
+
+NOTE: In Microsoft Windows 3.1x, a High Color driver may also be labeled as a
+32,768 (32k) color or a 65536 (64k or 65k) color driver, and a True Color driver
+may also be labeled as a 16.7 million color driver.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the display color palette to 256 colors. To do so,
+use the appropriate method for your version of Microsoft Windows.
+
+Windows 95/98
+-------------
+
+To change the display color palette to 256 colors in Microsoft Windows 98, follow
+these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. In the Colors box on the Settings tab, click 256 Colors.
+
+4. Click OK.
+
+5. When you are prompted to restart the computer, click Yes.
+
+Windows 95
+----------
+
+To change the display color palette to 256 colors in Microsoft Windows 95, follow
+these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. In the Color Palette box on the Settings tab, click 256 Colors.
+
+4. Click OK.
+
+5. When you are prompted to restart the computer, click Yes.
+
+Windows 3.1x
+------------
+
+To change the display color palette to 256 colors in Windows 3.1x, follow these
+steps:
+
+1. Make a copy of the SYSTEM.INI file. This file is located in the Windows
+  folder. To do so, follow these steps:
+  a. In the Main group in Program Manager, double-click MS-DOS Prompt.
+
+  b. At the MS-DOS prompt, type "copy system.ini system.mts" (without the
+     quotation marks), and then press ENTER.
+
+  c. At the MS-DOS prompt, type "exit" (without the quotation marks), and then
+     press ENTER.
+
+2. In the Main group in Program Manager, double-click Windows Setup.
+
+3. On the Display line, note the current video driver.
+
+4. On the Options menu, click Change System Settings.
+
+5. In the list of video drivers, click the 256 color version of the driver you
+  noted in step 3, and then click OK.
+
+6. Follow the directions on the screen to install the new video driver.
+
+7. When you are prompted to restart Windows, do so.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q127913 Artist: Saved Documents Are Black with ATI Mach 64
+
+MORE INFORMATION
+================
+
+To restore a picture that appears on your monitor in solid black, use the Vacuum
+too in Fine Artist to remove the black color.
+
+
+Additional query words: 1.00 1.10 1.10a win mskids white background kids mczee millions 16M 16 million maggie save
+
+======================================================================
+Keywords          : kbdisplay kbusage kbimu kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword2 kbFineArtist100 kbFineArtist110 kbFineArtist110a
+Version           : WINDOWS:1.0,1.1,1.1a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

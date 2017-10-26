@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117440/","publisher":null,"image":null,"headline":"Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117440-novell-netware-312-and-40-support-in-windows-311">Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117440
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): win31
+Last Modified: 27-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 3.11 includes all necessary Windows support files to use with Novell
+NetWare versions 3.12 and 4.0. The "Novell NetWare (Shell Versions 4.0 and
+above)" option in Windows Setup supports both NetWare 3.12 and 4.0 using Shell
+versions 4.0 and above (VLM).
+
+To enable NetWare 3.12 or 4.0 functionality in Windows 3.11, verify that you have
+all the necessary MS-DOS-level drivers already working (for example, the new VLM
+redirector). You can obtain the MS-DOS-level drivers by installing the client
+software for NetWare 3.12 or 4.0. The latest version of this software is
+available in the Novell forum on CompuServe.
+
+You should be able to log on and attach to a NetWare server before installing
+Windows 3.11 support for NetWare. If you can log on to your NetWare server at
+MS-DOS, use the following steps to enable NetWare functionality in Windows
+3.11:
+
+1. In the Main group, run Windows Setup.
+
+2. From the Options menu, choose Change System Settings.
+
+3. Select "Novell NetWare (Shell Versions 4.00 and above)" for Network.
+
+Windows then prompts you for the appropriate disks and makes changes to your
+Windows configuration to support NetWare Shell versions 4.0 and above.
+
+MORE INFORMATION
+================
+
+The following changes are made when you set up Windows 3.11 for Novell NetWare
+Shell versions 4.0 and above.
+
+NOTE: Some files have different names on the distribution disks than what they
+are expanded to by Setup. This is necessary to differentiate the Windows support
+files for NetWare 3.x, 3.12, and 4.0. If you need to manually expand a NetWare
+support file from the Windows 3.11 distribution disks, note the filename on the
+distribution disks and the expanded filename below.
+
+Setup expands the following files to the Windows directory:
+
+  NWCALLS.DLL
+  NWNET.DLL
+  NWIPXSPX.DLL
+  NWLOCALE.DLL
+  NWPSRV.DLL
+  TASKID.COM
+  TBMI240.CO_   expands to    TBMI2.COM
+
+Setup expands the following files into the Windows SYSTEM subdirectory:
+
+  NW40.DR_      expands to    NETWARE.DRV
+  VIPX40.38_    expands to    VIPX.386
+  NW40.HL_      expands to    NETWARE.HLP
+  VNW40.38_     expands to    VNETWARE.386
+  NWPOP40.EX_   expands to    NWPOPUP.EXE
+
+Setup creates a Windows NLS subdirectory and expands the following files to it:
+
+  UNI_1252.001
+  1252_UNI.001
+  UNI_MON.001
+  UNI_COL.001
+
+Setup creates a Windows NLS\ENGLISH subdirectory and expands the following files
+to it:
+
+  TASKID.MSG
+  TBMI2.MSG
+  NW40.HL_     expands to NETWARE.HLP
+
+Also, the following changes are made to the SYSTEM.INI and WIN.INI files:
+
+SYSTEM.INI
+----------
+
+     [Boot]
+     Network.drv=Netware.drv
+
+     [386Enh]
+     Network=*vnetbios,vnetware.386, vipx.386
+     OverlappedIO=off
+     TimerCriticalSection=10000
+     ReflectDOSInt2A=True
+     UniqueDOSPSP=True
+     PSPIncrement=5
+
+WIN.INI
+-------
+
+  Load=nwpopup.exe
+
+Additional query words: 3.11 3.10 3.1 4.00 vlm
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

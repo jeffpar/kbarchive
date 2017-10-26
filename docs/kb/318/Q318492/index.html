@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/318/Q318492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/318/Q318492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/318/Q318492/","publisher":null,"image":null,"headline":"Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q318492-xadm-access-denied-err-msg-occurs-starting-exchange-admin">Q318492: XADM: "Access Denied" Err Msg Occurs Starting Exchange Admin</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q318492
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you start the Microsoft Exchange Server 5.5 Administrator program, you may
+receive the following error message:
+
+  Window Title: Microsoft Exchange Administrator
+  Access denied.
+  Microsoft Windows NT ID no: 0xc0020005
+
+However, you can start the Exchange Server 5.5 Administrator program from other
+computers on the network.
+
+CAUSE
+=====
+
+This behavior can occur if the account that you are using to run the Exchange
+Server 5.5 Administrator program does not have at least Read permissions on the
+following registry key:
+
+  "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Setup"
+
+Microsoft recommends that the Everyone group (or the Authenticated Users group)
+at least have Read permission on all subkeys of the following key:
+
+  "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange"
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this behavior:
+
+1. At a command prompt, start Registry Editor (Regedt32.exe).
+
+2. Locate, and then click the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Setup
+
+3. On the Security menu, click Permission.
+
+4. Grant Read permission to the account that you want to use to start the
+  Exchange Server 5.5 Administrator program.
+
+To prevent future problems, grant Read access to the Everyone group (or to the
+Authenticated Users group).
+
+MORE INFORMATION
+================
+
+For additional information about the "Access Denied" error message when you
+start the Exchange Server 5.5 Administrator program, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q170472 XADM: Access Denied Error When Starting Exchange Administrator
+
+Additional query words: 0xc0020005 kbexchangesearch exch2kp2w
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

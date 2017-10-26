@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207724: Urban Assault: Game Hangs When You Load Last Saved Game | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207724: Urban Assault: Game Hangs When You Load Last Saved Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207724/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207724/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207724/","publisher":null,"image":null,"headline":"Q207724: Urban Assault: Game Hangs When You Load Last Saved Game","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207724-urban-assault-game-hangs-when-you-load-last-saved-game">Q207724: Urban Assault: Game Hangs When You Load Last Saved Game</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207724
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbui kbimu msgame
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Last Saved on the Single Player screen in Urban Assault, the
+program may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+- You last saved the game when you were on a level that contained an activated
+  Stoudson bomb.
+
+- You last saved the game when you were in the host station turret.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart your computer, and then modify your last saved
+game file. To do this, follow these steps:
+
+1. Restart your computer
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following line (with quotation marks), and then
+  click OK
+
+  "&lt;drive&gt;:\program files\microsoft games\urban assault
+  \save\&lt;user&gt;\user.txt "
+
+  where &lt;drive&gt; is the drive letter of the hard disk on which Urban
+  Assault is installed, and &lt;user&gt; is the user name for the player (by
+  default, &lt;user&gt; is "sdu7").
+
+4. When you are prompted to use WordPad instead of Notepad to open the file,
+  click Yes.
+
+5. On the Edit menu, click Find.
+
+6. In the Find What box, type "begin_robo = 56" (without the quotation marks),
+  and then click Find Next.
+
+7. Click Cancel.
+
+8. Under the "begin_robo = 56" line, change the "viewer=" line and the "user="
+  line to match the following two lines:
+
+      viewer = yes
+      user = yes
+
+9. On the Edit menu, click Find.
+
+10. In the Find What box, type "begin_extraviewer" (without the quotation
+  marks), and then click Find Next.
+
+11. Click Cancel.
+
+12. Delete the following four lines:
+
+  begin_extraviewer
+      kind = robogun
+      number = 0
+  end
+
+13. On the File menu, click Exit. When you are prompted to save the changes,
+  click Yes.
+
+14. Start Urban Assault.
+
+15. On the startup screen, click Single Player.
+
+16. On the Single Player screen, click Last Saved.
+
+To prevent this issue from occuring, exit the turret before you save the game if
+you are on a level that contains an activated Stoudson bomb.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Urban Assault,
+version 1.0.
+
+Additional query words: 1.00 msgame ua crash freeze lockup
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbGamesSearch kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

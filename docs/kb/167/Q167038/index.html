@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167038: RAS Clients Run Winsock and RPC Applications Slowly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167038: RAS Clients Run Winsock and RPC Applications Slowly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167038/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167038/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167038/","publisher":null,"image":null,"headline":"Q167038: RAS Clients Run Winsock and RPC Applications Slowly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167038-ras-clients-run-winsock-and-rpc-applications-slowly">Q167038: RAS Clients Run Winsock and RPC Applications Slowly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167038
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbWinNT400sp4fix kbAPI kbSDKPlatform kbWinsock kbGrpDSNet
+Last Modified: 22-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Remote Access Server (RAS) clients experience delays when Winsock or RPC
+applications attempt to connect to remote resources.
+
+
+CAUSE
+=====
+
+The RAS Server or Routing and Remote Access Service (RRAS) Server has provided a
+Domain Name Service (DNS) IP address to the client that is unreachable. This
+causes Winsock and RPC applications (over TCP/IP) to fail DNS name lookups.
+
+By default, RAS or RRAS Servers project any DNS IP addresses they are configured
+with to RAS clients using TCP/IP. If the RAS or RRAS Server has a DNS IP address
+that cannot be reached by the RAS client, the RAS client experiences delays
+whenever an application attempts to query the DNS name servers. The RAS or RRAS
+Server may be unreachable because the DNS server is not responding or because
+the RAS or RRAS Server is multihomed and the DNS server is on a network not
+accessible to the RAS client.
+
+
+RESOLUTION
+==========
+
+Perform one of the following steps to resolve this problem:
+
+Windows NT RAS Server
+---------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+Windows NT RRAS Server
+----------------------
+
+Obtain the Routing &amp; Remote Access Service Hotfix Update mentioned below.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Microsoft has confirmed this to be a problem in Routing and Remote Access Update
+for Windows NT Server version 4.0. This problem was corrected in the Routing
+&amp; Remote Access Service Hotfix Update. You can obtain this update from
+Microsoft's World Wide Web Site on the Internet at the following location:
+
+  http://www.microsoft.com/ntserver/commserv/exec/feature/routing.asp
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+  http://www.microsoft.com/
+
+
+MORE INFORMATION
+================
+
+Microsoft has added a new registry value to the RAS service that allows an
+administrator the option of preventing all DNS IP addresses from being projected
+to RAS clients.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To enable this feature to prevent the RAS or RRAS Server from sending DNS Server
+IP address(es) to RAS clients, perform the following steps:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess\ 
+  Parameters\IP
+
+3. On the Edit menu, click Add Value and use the following entry:
+
+     Value Name: SuppressDNSNameServers
+     Data Type:  REG_DWORD
+     Value:      1 or 0 (default=0, value of 1 prevents RAS Server from
+                 sending the DNS Server address(es) to RAS clients)
+
+4. Exit the Registry Editor and restart the computer for the change to take
+  effect.
+
+
+Additional query words: slow delayed Exchange client socket application RPC Remote Procedure Call DNS RAS Access Service ntrouter rras
+
+======================================================================
+Keywords          : kbnetwork kbWinNT400sp4fix kbAPI kbSDKPlatform kbWinsock kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

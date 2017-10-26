@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182033/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182033/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182033/","publisher":null,"image":null,"headline":"Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182033-howto-use-beforenavigate2-in-vb-to-get-an-event-from-html">Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182033
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbVBp400 kbVBp500 kbhowto kb32bitOnly
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an HTML page displayed in the WebBrowser control, you can trigger an event in
+the Visual Basic application by using the BeforeNavigate2 event in the
+WebBrowser control. For example, you can have a command button in the HTML page
+that closes the Visual Basic application when clicked.
+
+MORE INFORMATION
+================
+
+1. Create a Standard EXE project from Visual Basic. Form1 is created by default.
+  Add Microsoft Internet Controls to your Project Components.
+
+2. Add a WebBrowser Control from to Form1.
+
+3. Add code for Form1 Load event as follows:
+
+        Private Sub Form_Load()
+            WebBrowser1.Navigate "c:\mytest.htm"
+        End Sub
+
+4. Add code for WebBrowser1 BeforeNavigate2 event as follows:
+
+        Private Sub WebBrowser1_BeforeNavigate2(ByVal pDisp As Object, _
+             URL As Variant, Flags As Variant, _
+             TargetFrameName As Variant, PostData As Variant, _
+             Headers As Variant, Cancel As Boolean)
+
+            Dim Ev As String
+
+            If UCase$(Left$(URL, 6)) = "EVENT:" Then
+                'this is our event, process it and cancel navigation
+                Ev = UCase$(Mid$(URL, 7))
+                Select Case Ev
+                    Case "HELLO"
+                        MsgBox "Hello from VB App"
+                        'set a field on HTML page
+                        WebBrowser1.Document.All("field1").Value = _
+                            "Hello from VB"
+
+                    Case "CLOSE"
+                        If MsgBox("Are you sure you want to exit?", _
+                    vbYesNo) = vbYes Then
+                            End
+                        End If
+                End Select
+                Cancel = True
+            End If
+        End Sub
+
+5. From Notepad, type in the following text and save it as c:\mytest.htm or
+  another location (be sure to use the same location in step 3):
+
+      &lt;HTML&gt;&lt;BODY&gt;
+
+        &lt;INPUT type=text name=field1&gt;&lt;p&gt;
+        &lt;INPUT type=button name=Hello value="Hello World"&gt;
+        &lt;INPUT type=button name=Close value="Close App"&gt;
+
+        &lt;SCRIPT LANGUAGE="VBScript"&gt;
+        Sub Close_OnClick()
+           location.href = "Event:Close"
+        End Sub
+
+        Sub Hello_OnClick()
+           location.href = "Event:Hello"
+        End Sub
+        &lt;/SCRIPT&gt;
+        &lt;/BODY&gt;&lt;/HTML&gt;
+
+6. Run your project from Visual Basic.
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbhowto kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

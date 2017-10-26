@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131014: How to Instantiate a Templated Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131014: How to Instantiate a Templated Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131014/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131014/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131014/","publisher":null,"image":null,"headline":"Q131014: How to Instantiate a Templated Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131014-how-to-instantiate-a-templated-function">Q131014: How to Instantiate a Templated Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131014
+Product(s): Microsoft C Compiler
+Version(s): 2.00 2.10 4.00
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbCPPonly kbVC
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is no built-in way to create an explicit instantiation of a templated
+function. Normally, an instantiation is created when the function is called the
+first time with a specific type. Subsequent calls to the function with the same
+type use the same piece of the code generated before. However, if you want to
+instantiate the function without actually calling it, you must use one of the
+methods in this article.
+
+MORE INFORMATION
+================
+
+The best method to use with function templates is to place the function
+definition in a header file, and include that header file in all of the source
+files.
+
+If this is not an option then try one of these alternatives:
+
+- In the source file where the function is defined, explicitly reference the
+  function by taking the address of the function.
+
+-or-
+
+- In the source file where the function is defined, add a dummy function that
+  makes a call to the templated function. The dummy function itself does not
+  need to be called.
+
+NOTE: With both of these alternative methods, a prototype still needs to be
+provided for all source files that might call the templated function.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  /********** Source File One **********/ 
+  void func1(void);
+  template &lt; class T&gt; T SwapTemplate(T Source) {
+     return Source;
+  }
+  void Dummy(void) {                            // Option One
+     char a = 'a', b;
+     b = SwapTemplate(a);
+  }
+
+  void main() {
+     int (*pfunc)(int) = SwapTemplate;     // Option Two
+     func1();
+  }
+
+  /********** Source File Two **********/ 
+
+  template &lt; class T&gt; T SwapTemplate(T Source); // Prototype
+
+  void func1(void) {
+     int  a = 5, b;
+     char c = 'c', d;
+     b = SwapTemplate( a );
+     d = SwapTemplate( c );
+  }
+
+Additional query words: kbinf 9.00 9.0 9.1 9.10 2.00 2.10 4.00
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 2.00 2.10 4.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

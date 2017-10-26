@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180901/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180901/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180901/","publisher":null,"image":null,"headline":"Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180901-howto-create-categorized-table-in-word-97-w-ole-automation">Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180901
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0,Service Release 1 (SR-1)
+Operating System(s): 
+Keyword(s): kbcode kbinterop kbvfp500 kbvfp600 kbWord
+Last Modified: 18-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+- Microsoft Word 97 for Windows, version Service Release 1 (SR-1) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to create and format a table in Microsoft Word 97
+from Visual FoxPro for Windows 5.0 and later using OLE automation. The table
+contains a grouping field, for instance, a state, company or customer sales ID.
+This example groups by country or region. The data for the Word document will be
+gathered using an SQL query into a temporary cursor.
+
+MORE INFORMATION
+================
+
+For this code to work correctly, the first field in the query must be the group
+field used in the Word 97 report. For instance, if it is necessary to use all
+fields in a table for the report, but the field that is to be the group field is
+not the first field in the source table, then issue a query similar to this:
+
+  SELECT state,* FROM Customer GROUP BY state, custid INTO CURSOR category
+
+This forces the group field, state in this example, to be the first field in the
+queried result.
+
+NOTE: This code only works with the Service Release-1 for Word 97. Using prior
+versions of Word 97 causes a "Type Mismatch" and other OLE errors.
+
+Create a program and enter the code given below. When the code is executed, the
+user will see two prompts. These prompts ask the user how the Word document
+should be formatted. The first prompt asks whether the user wants to have each
+grouping on its own page or not. The second question asks if the user wants
+underlines between the rows of the table or not. These questions are merely for
+viewing preferences and to show how the programmer may format the table in Word
+with these and other preferences.
+
+Here is the sample code:
+
+      */ Begin program code /*
+         CLEAR
+         SET TALK OFF
+         SET CONSOLE OFF
+         ctempfield = ""               &amp;&amp; Variable to hold group category.
+         headings_added = .F.
+         newgrouppage = .F.
+
+     * Make sure the FIRST field in the SELECT is the field the report
+     * is categorized by. The Customer table is located in the
+     * \VFP\Samples\Data folder. In Visual FoxPro 6.0, the Customer table is
+     * in the Microsoft Visual Studio\Common\Samples\Data folder.
+
+     SELECT country, company, contact, title,maxordamt,phone;
+     FROM HOME()+"Samples\Data\testdata!customer" GROUP BY;
+        country,cust_id INTO CURSOR category
+
+     IF _TALLY &gt; 0
+        oWord = CREATEOBJECT("Word.Application")
+        oWord.Documents.Add
+        owRange = oWord.Activedocument.Range(0,0)
+        numcols = FCOUNT()-1   &amp;&amp; Get number of fields for detail section
+        oWord.Activedocument.Tables.Add(owRange, 1, numcols)
+
+        * First prompt, separate pages for each group.
+        nanswer = messagebox("Put each group on a new page?",36,;
+           "Sepatate Pages")
+        DO CASE
+           CASE nanswer = 6         &amp;&amp; Yes
+              newgrouppage = .T.
+           CASE nanswer = 7         &amp;&amp; No
+              headings_added = .F.
+        ENDCASE
+
+        WAIT WINDOW "Please wait while the data is formatted in Word.";
+           + CHR(13)+"This may take several minutes..." NOWAIT
+
+        DO WHILE !EOF()
+           ctempfield = EVAL(FIELD(1)) &amp;&amp; Set 1st field in table as category
+           WITH oWord
+              .Selection.Font.Reset
+              .Selection.TypeText(EVAL(FIELD(1)))
+              .Selection.SelectRow
+              .Selection.ParagraphFormat.Alignment = 1
+              .Selection.Font.Name = "Arial"
+              .Selection.Font.Size = 16
+              .Selection.Font.Bold = .T.
+              .Selection.SelectRow
+              .Selection.Cells.Merge
+              .Selection.MoveRight(12)
+              .Selection.Cells.Split(1,numcols)
+
+              IF NOT headings_added &amp;&amp; Put at least one heading in document
+                 .Selection.MoveRight(12)
+                 FOR i = 2 TO FCOUNT()
+                    .Selection.Font.Italic = .T.
+                    .Selection.ParagraphFormat.Alignment = 1
+                    .Selection.Font.Name = "Times New Roman"
+                    .Selection.Font.Size = 8
+                    .Selection.TypeText((FIELD(i)))
+                    .Selection.MoveRight(12)
+                    headings_added = .T.
+                 ENDFOR
+              ENDIF
+
+              FOR i = 2 TO FCOUNT()
+                 curfield = EVAL(FIELD(i))
+     * Check data type. Does not check Double, Float, Integer, General, Memo.
+                 IF TYPE((FIELD(i)))&lt;&gt;"C"
+                 DO CASE
+                    CASE TYPE((FIELD(i))) = "D"         &amp;&amp; Date field
+                       curfield = DTOC((FIELD(i)))
+                    CASE TYPE((FIELD(i))) = "N"         &amp;&amp; Numerical
+                       curfield = STR((FIELD(i)))
+                    CASE TYPE((FIELD(i))) = "Y"         &amp;&amp; Currency
+                       curfield = STR(EVAL(FIELD(i)),8,2)
+                    CASE TYPE((FIELD(i))) = "L"         &amp;&amp; Logical
+                       IF curfield
+                          curfield = "True"
+                       ELSE
+                          curfield = "False"
+                       ENDIF
+                    CASE TYPE((FIELD(i))) = "T"         &amp;&amp; DateTime
+                       curfield = TTOC(EVAL(FIELD(i)))
+                    ENDCASE
+                    .Selection.Font.Reset
+                    .Selection.TypeText(curfield)
+                 ELSE
+                    .Selection.Font.Reset
+                    .Selection.TypeText(curfield)
+                 ENDIF
+                 .Selection.Font.Reset
+                 .Selection.MoveRight(12)
+              ENDFOR
+              SKIP
+           ENDWITH
+
+           DO WHILE ctempfield = EVAL(FIELD(1))   &amp;&amp; Get other like records.
+              WITH oWord
+                 FOR i = 2 TO FCOUNT()
+                    curfield = EVAL(FIELD(i))
+                    IF TYPE((FIELD(i)))&lt;&gt;"C"
+                       DO CASE
+                       CASE TYPE((FIELD(i))) = "D"
+                          curfield = DTOC((FIELD(i)))
+                       CASE TYPE((FIELD(i))) = "N"
+                          curfield = STR((FIELD(i)))
+                       CASE TYPE((FIELD(i))) = "Y"
+                          curfield = STR(EVAL(FIELD(i)),8,2)
+                       CASE TYPE((FIELD(i))) = "L"
+                          IF curfield
+                             curfield = "True"
+                          ELSE
+                             curfield = "False"
+                          ENDIF
+                       CASE TYPE((FIELD(i))) = "T"
+                          curfield = TTOC(EVAL(FIELD(i)))
+                       ENDCASE
+                       .Selection.TypeText(curfield)
+                    ELSE
+                       .Selection.TypeText(curfield)
+                    ENDIF
+                       .Selection.MoveRight(12)
+                    ENDFOR
+              ENDWITH
+              SKIP
+           ENDDO
+
+           IF RECNO() &gt; RECCOUNT()   &amp;&amp; Prevents an empty table/cells.
+              EXIT
+           ELSE
+              IF newgrouppage
+                 headings_added = .F.    &amp;&amp; False: add headings to each page.
+                 oWord.Selection.InsertBreak(2)  &amp;&amp; Page break each category.
+              ENDIF
+           ENDIF
+        ENDDO
+
+        oWord.Selection.SelectRow   &amp;&amp; Ensures no extra rows in the table.
+        oWord.Selection.Rows.Delete
+
+        * This section underlines or turns off all lines in the table.
+        nanswer = MESSAGEBOX("Turn off underlines Y/N",36,;
+           "No underlines in the table?")
+        DO CASE
+        CASE nanswer = 6       &amp;&amp; Yes, turn off all underlines.
+           WAIT WINDOW 'Formating table with no underlines in the table.';
+              NOWAIT
+           WITH oWord
+              For Each aTable In .ActiveDocument.Tables &amp;&amp; Format all tables.
+                 aTable.Borders(-1).LineStyle = 0         &amp;&amp; Top border.
+                 aTable.Borders(-2).LineStyle = 0         &amp;&amp; Left
+                 aTable.Borders(-3).LineStyle = 0         &amp;&amp; Bottom
+                 aTable.Borders(-4).LineStyle = 0         &amp;&amp; Right
+                 aTable.Borders(-5).LineStyle = 0         &amp;&amp; Horizontal
+                 aTable.Borders(-6).LineStyle = 0         &amp;&amp; Vertical
+                 aTable.Borders.Shadow = 0
+              ENDFOR
+           ENDWITH
+        CASE nanswer = 7         &amp;&amp; Number just underlines.
+           WITH oWord
+              WAIT WINDOW 'Formating table with underlines between records.';
+                 NOWAIT
+              For Each aTable In .ActiveDocument.Tables &amp;&amp; Format each table.
+                 aTable.Borders(-1).LineStyle = 0         &amp;&amp; Top border
+                 aTable.Borders(-2).LineStyle = 0         &amp;&amp; Left
+                 aTable.Borders(-3).LineStyle = 1         &amp;&amp; Bottom
+                 aTable.Borders(-4).LineStyle = 0         &amp;&amp; Right
+                 aTable.Borders(-5).LineStyle = 1         &amp;&amp; Horizontal
+                 aTable.Borders(-6).LineStyle = 0         &amp;&amp; Vertical
+                 aTable.Borders.Shadow = 0
+              ENDFOR
+           ENDWITH
+           oWord.ActiveWindow.View.TableGridlines = .F. &amp;&amp; No table gridlines
+        ENDCASE
+
+     * Get the number of pages in the Word report. The code adds the report
+     * headings to the document header when the user chooses not to have the
+     * report categories print on separate pages. Makes viewing groups
+     * headings easier on other pages.
+        numpages = oWord.ActiveDocument.ComputeStatistics(2)
+        IF numpages &gt; 1 AND NOT newgrouppage
+           WITH oWord
+              .Selection.MoveDown
+              .ActiveWindow.ActivePane.View.Type = 3 &amp;&amp; Put Word in Page view
+              .ActiveWindow.ActivePane.View.SeekView = 9      &amp;&amp; Open header.
+              .Selection.ParagraphFormat.TabStops.ClearAll   &amp;&amp; Clear tabs.
+
+              * Printed header width is computed by subtracting margins
+              * from page width. The margins are divided by 72. Word stores
+              * these values as points; i.e. 72points/inch.
+              pagewidth = 8.5-(.ActiveDocument.PageSetup.RightMargin+;
+              .ActiveDocument.PageSetup.LeftMargin)/72
+              tabspace = (pagewidth/(numcols))*72 &amp;&amp; Convert inches to points
+              tabstops = tabspace
+              FOR i = 2 TO FCOUNT()
+                 .Selection.Font.Italic = .T.   &amp;&amp; Format heading captions.
+                 .Selection.ParagraphFormat.Alignment = 1
+                 .Selection.Font.Name = "Times New Roman"
+                 .Selection.Font.Size = 8
+                 .Selection.TypeText((FIELD(i)))
+                 .Selection.TypeText(chr(9)) &amp;&amp; Tab to set the next heading.
+                 .Selection.ParagraphFormat.TabStops.Add(tabstops) &amp;&amp; Tab
+                 tabstops = tabstops+tabspace
+              ENDFOR
+           ENDWITH
+        ENDIF
+        WITH oWord
+           .ActiveWindow.View.Type = 3 &amp;&amp; Switch to page view. Normal view=1
+           .ActiveWindow.ActivePane.View.SeekView = 0 &amp;&amp; Open main document.
+           .Selection.Homekey(6)               &amp;&amp; Go to top of document.
+           .Visible = .T.                     &amp;&amp; Make Word visible.
+           .Application.Activate               &amp;&amp; Bring Word forward.
+           .WindowState = 0    &amp;&amp; Show Word in normal state. Maximized=1
+           .ActiveWindow.ActivePane.View.ShowAll = 0 &amp;&amp; No nonprinting items.
+        ENDWITH
+     ELSE
+        =MESSAGEBOX("There were no records in the query.",16,;
+           "Empty Query")
+     ENDIF
+     */ End program code /*
+
+REFERENCES
+==========
+
+For more information about obtaining Word for Windows 97 Service Release - 1,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q172475 HOWTO: Obtain and Install MS Office 97 SR-1
+
+
+Microsoft Word Visual Basic Help
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbinterop kbvfp500 kbvfp600 kbWord 
+Technology        : kbWordSearch kbVFPsearch kbAudDeveloper kbWord97 kbWord97Search kbZNotKeyword2 kbWord97SR1 kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0,Service Release 1 (SR-1)
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

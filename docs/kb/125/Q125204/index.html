@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125204/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125204/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125204/","publisher":null,"image":null,"headline":"Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125204-err-msg-mciavi-requires-a-newer-version-of-msvideodll">Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125204
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbimukbfaq
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Ancient Lands for Windows, version 1.0 
+- Microsoft Bookshelf '95 for Windows 95 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Encarta 97 Encyclopedia for Windows 
+- Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+- Microsoft Encarta 96 Encyclopedia for Windows 
+- Microsoft Encarta 96 World Atlas for Windows 
+- Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+- Microsoft How the Leopard Got His Spots, version 1.0 
+- Microsoft Multimedia Schubert for Windows, version 1.0 
+- Microsoft Multimedia Strauss for Windows, version 1.0 
+- Microsoft Music Central for Windows, 1996, 1997 edition 
+- Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+- Microsoft World of Flight for Windows, version 1.0 
+- Microsoft Explorapedia series: World of People for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the programs listed in the applies to section
+of this article, or play an audio video interleave (.avi) file, you may receive
+the following error message:
+
+  MCIAVI requires a newer version of MSVIDEO.DLL. Please reinstall your video
+  software.
+
+CAUSE
+=====
+
+This behavior can occur if the versions of the Mciavi.drv and Msvideo.dll files
+are mismatched.
+
+RESOLUTION
+==========
+
+To resolve this issue, copy both the Mciavi.Drv and Msvideo.Dll files from the
+program to the Windows\System folder. This ensures that both files are of the
+same version.
+
+NOTE: Microsoft Windows 95 and Microsoft Windows 98 use even newer versions of
+these files. If you receive this error message in Windows 95/98, you can find
+the Mciavi.drv and Msvideo.dll files in the Windows\Sysbckup folder.
+
+LOCATION AND VERSION OF MCIAVI.DRV AND MSVIDEO.DLL FILES
+--------------------------------------------------------
+
+  Product                    Location on CD-ROM         Version
+  -------------------------------------------------------------
+  Ancient Lands 1.0          XFILES\SYSTEM              1.1
+  Bookshelf 1994             SYS\MCIAVI.DRV             1.1
+  Bookshelf 1995             AAMSSTP\SYSTEM             1.1
+  Bookshelf 1996             AAMSSTP\SYSTEM16           1.0
+  Cinemania 1994             DRIVERS                    1.0
+  Cinemania 1995             AAMSSTP\SYSTEM             1.1
+  Complete Baseball 1994     ZZSYSTEM                   1.1
+  Complete Basketball 1994   ZZSYSTEM                   1.1
+  Dangerous Creatures 1.0    XFILES\SYSTEM              1.1
+  Dinosaurs 1.0              XFILES\DRIVERS             1.0
+  Encarta 1994               ENCARTA                    1.0
+  Encarta 1995               AAMSSTP\SYSTEM             1.1
+  Encarta 1997 Standard      AAMSSTP\SYSTEM16           1.1
+  Encarta 1997 Deluxe        AAMSSTP\SYSTEM16(Disk 1)   1.1
+  Explorapedia Nature        NATURE\WINSYS              1.1
+  Explorapedia People        PEOPLE\WINSYS              1.1
+  Leopard Spots              LEOPARD\SYSTEM             1.1
+  MSB Earth                  MSBEARTH\SETUP16\VFW       1.1
+  MSB Ocean                  VFW                        1.1
+  MSB Solar System           MSBSOLAR\SYSTEM            1.1
+  Schubert 1.0               SCHUBERT\MSSTP\SYSTEM      1.1
+  Strauss 1.0                STRAUSS\MSSTP\SYSTEM       1.1
+
+NOTE: This behavior also can occur if you have more than one copy of the
+Msvideo.dll file installed on your computer. If a copy of the Msvideo.dll file
+installed on your computer is NOT located inside the Windows\System or the
+Windows\Sysbckup folders on your hard disk, delete this file.
+
+
+Additional query words: kbmm multi media multimedia multi-media mmtitles kbimu
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbBookshelfSearch kbBaseballSearch kbEncartaEncycSearch kbAncientLands kbMMStrauss kbMMSchubert kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCompleteBaseball1994 kbDangerousCreatures kbDinosaurs100 kbExplorapediaNature100 kbExplorapediaPeople100 kbMusicCentral kbPJLeopard kbWorldofFlight kbScholasticOcean kbScholasticSolar kbScholasticEarth kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaWorldAtlas1996 kbMusicCentral1996 kbMusicCentral1997 kbMSBSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

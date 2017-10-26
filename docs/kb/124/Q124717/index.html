@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124717/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124717/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124717/","publisher":null,"image":null,"headline":"Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124717-how-to-use-the-fxalert-function-in-foxtoolsmlb">Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124717
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.6a,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FXALERT() function in FOXTOOLS.MLB (FOXTOOLS.CFM or FOXTOOLS.SLM in Visual
+FoxPro for Macintosh), displays an alert and waits for a user response. One of
+three icons can be displayed in the alert dialog box based on the type of alert
+chosen &lt;expN1&gt;. FXALERT returns a value representing the user exit action.
+Because of the presence of the function, the user can take advantage of the
+Macintosh system interface and pause the execution of an application without
+requiring an additional READ level.
+
+MORE INFORMATION
+================
+
+Sample Code - Example Syntax for FXALERT Function
+-------------------------------------------------
+
+The following code is an example of the syntax required to use the FXALERT
+function.
+
+  The following code is an example of the syntax required to use the FXALERT
+  function.
+
+  *** Begin Code ***
+   * ***************************************************************
+     * The sample program named MY_ALERT.PRG uses the FOXTOOLS     *
+     * Library function FXALERT. The program prompts the user to   *
+     * enter a message or stop to quit the program. If the user    *
+     * enters a message other than "stop," the program requests an *
+     * icon value of 0=Caution, 1=Stop, or 2=Note. After the user  *
+     * chooses an icon, the program displays the selected icon and *
+     * entered message in an alert dialog box. Once the FXALERT    *
+     * function is activated, the user is allowed to choose either *
+     * Yes or No. After the user selects the push button prompt in *
+     * the dialog, the screen is cleared and a message is          *
+     * displayed as a wait window displaying the choice made. The  *
+     * cycle continues until stop is entered in the message area.  *
+     * NOTE: No READ CYCLE was required for the push button prompts*
+     * or the FXALERT dialog interface.                            *
+     * *************************************************************
+  * WARNING: Make sure all work is saved before running this code.
+
+     SET LIBRARY TO SYS(2004)+"FOXTOOLS.MLB" ADDITIVE
+     * Use the following line with FoxPro for Macintosh
+     * SET LIBRARY TO SYS(2004)+"FOXTOOLS.CFM" ADDITIVE
+     ACTIVATE WINDOW SCREEN  &amp;&amp; refresh main FoxPro window
+     flag = .t.                   &amp;&amp; Set Flag for DO WHILE
+     DO WHILE flag
+        CLEAR
+        ACCEPT "Please Enter a Message or Stop --&gt;" TO msg
+        If UPPER(msg) = "STOP"
+           EXIT
+        ELSE
+          INPUT " 0 = Caution, 1 = Stop, 2 = Note --&gt;" TO fx_icon
+          reply = FXALERT((fx_icon),259,-1,-1,(msg))
+          If reply = 1                       &amp;&amp; Determine button pressed
+              WAIT WINDOW "(Yes) was Pressed" TIMEOUT 3
+          Else
+             WAIT WINDOW "(No) was Pressed" TIMEOUT 3
+          ENDIF
+        ENDIF
+     ENDDO
+     SET LIBRARY TO          &amp;&amp; Close FOXTOOLS.MLB Library.
+     CLEAR                   &amp;&amp; Clear Screen
+  *** End Code ***
+
+The following information describes the syntax and parameters for the FXALERT
+function. It is an excerpt from the FoxTools ReadMe file.
+
+FXALERT() Syntax
+----------------
+
+  Syntax:  FXALERT(&lt;expN1&gt;, &lt;expN2&gt;, &lt;expN3&gt;, &lt;expN4&gt;[, &lt;expC1&gt;]
+  [, &lt;expC2&gt;][, &lt;expC3&gt;][, &lt;expC4&gt;])
+
+NOTE: If the FOXTOOLS.MLB is not referenced the following Program Error is
+generated "File &lt;Name&gt; Does Not Exist."
+
+  &lt;expN1&gt;
+     Specifies a number that indicates the icon to be displayed on the
+     alert. 0=CAUTION; 1=STOP; 2=NOTE.
+
+  &lt;expN2&gt;
+     Specifies the resource number. FOXTOOLS contains the same twelve
+     alerts provided in the FOXUSER file of FoxBASE+ for Macintosh. In
+     FOXTOOLS, the resource numbers are 257 through 268 instead of 1
+     through 12 as in FoxBASE+ for Macintosh. An alert contains different
+     possible push button combinations which you can choose. For example,
+     resource number 259 contains the push buttons "Yes" and "No" with the
+     focus initially on the "Yes" push button.
+
+  &lt;expN3&gt;, &lt;expN4&gt;
+     Specify the coordinates, measured in pixels from the top left of
+     the screen, at which the alert will be placed. Use a value of -1 for
+     &lt;expN3&gt; and/or &lt;expN4&gt; to accept the default position. The default
+     position is centered.
+
+NOTE: Regardless of the coordinates specified in &lt;expN3&gt; and/or
+&lt;expN4&gt;, the alert will always come up centered on the screen.
+
+  [, &lt;expC1&gt;][, &lt;expC2&gt;][, &lt;expC3&gt;][, &lt;expC4&gt;]
+      Specify text that will appear on the alert.
+
+The following table shows the push buttons displayed on each of the twelve alerts
+with the default focus push button shown in parentheses.
+
+Res#   Button 1     Button 2    Button 3   Note
+----------------------------------------------------------------
+257    (Continue)
+258    (OK)
+259    (Yes)         No
+260     Yes         (No)
+261    (Yes)         No         Cancel
+262     Yes         (No)        Cancel
+263    (Continue)                          Bigger alert than 257
+264    (OK)                                Bigger alert than 258
+265    (Yes)         No                    Bigger alert than 259
+266     Yes         (No)                   Bigger alert than 260
+267    (Yes)         No         Cancel     Bigger alert than 261
+268     Yes         (No)        Cancel     Bigger alert than 262
+
+REFERENCES
+==========
+
+FoxTools Readme file in FoxPro:Goodies:Misc folder for FoxPro for Macintosh
+versions 2.x.
+
+FoxTools Help file in the Visual FoxPro:Goodies folder for Visual FoxPro for
+Macintosh version 3.0.
+
+Additional query words: vFoxMac FoxMac msgbox messagebox box message alert
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.6a,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

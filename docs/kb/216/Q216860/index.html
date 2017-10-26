@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216860/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216860/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216860/","publisher":null,"image":null,"headline":"Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216860-prb-chat-server-hangs-when-extension-filter-is-installed">Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216860
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbExchange550 kbMsg kbGrpDSMsg kbDSupport
+Last Modified: 18-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you add an Extension Filter to Microsoft Chat Server version 5.5 and
+later, the server may stop responding when commands are issued to the Extension
+Filter.
+
+CAUSE
+=====
+
+You may have created the Extension Filter as a Single Threaded Apartment (STA)
+COM object. The Extension Filter registers various callback routines with the
+Chat Server. If a callback routine invokes methods on the COM objects that the
+routine is given as parameters, a second callback may be generated. If the
+second callback routine attempts to reference any of the COM objects that it is
+passed (by getting properties, invoking methods, and so on), it can cause the
+server to lock.
+
+Because all attempts to access STA objects are serialized by COM, the same thread
+is used to handle all callback routines. The first callback routine waits for
+the return of the method that triggered the second callback routine. The second
+callback cannot return until it finishes manipulating the COM object, which is
+waiting for the first callback routine to release the synchronization lock.
+
+Both callback routines are blocked on the same synchronization object, which
+results in a deadlock condition. Because the same thread is used for all access
+to the Extension Filter object, any subsequent requests also block, which causes
+the server to appear to stop responding (hang).
+
+RESOLUTION
+==========
+
+There are two ways to avoid this problem:
+
+- Do not create the Extension Filter as a STA COM object.
+
+-or-
+
+- Do not generate a second callback.
+
+  A callback is not typically generated when you get and set properties to the
+  passed COM objects. If you invoke methods on the COM objects, however, a
+  callback can be generated.
+
+  For example, if the Close method is invoked on the IChatUser object during a
+  callback, the OnCloseUser callback routine (if registered) is generated. This
+  may lead to a deadlock if, during the OnCloseUser callback, one of the passed
+  COM objects is referenced.
+
+Microsoft strongly recommends that you do not create Chat Server Extension
+Filters as STA COM objects. You run the risk of deadlock as described above, and
+you may incur a severe performance penalty because all requests are serialized
+through a single COM object, which negates any benefit of concurrency by having
+a multithreaded server.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code sample, if it is a part of an Extension Filter that is created
+as a STA COM object, can lead to a deadlock condition:
+
+  STDMETHODIMP CMyExtension::OnConfigureExtension(IChatUser *pUser, 
+                                                  BSTR bstrCommand) 
+  {
+     pUser-&gt;Close(NULL, L"Bye, bye");
+  }
+
+  STDMETHODIMP CMyExtension::OnCloseUser(IChatUser* pUser)
+  {
+     BSTR  szName = NULL;
+
+     pUser-&gt;get_Nick(&amp;szName);
+
+     // Do something with the nickname....
+  }
+
+In the code above, during the OnConfigureExtension callback, a second callback,
+OnCloseUser, is generated by explicitly closing the session for the IChatUser
+object. During the second callback, the extension attempts to retrieve the
+nickname of the IChatUser object.
+
+The first callback routine has already obtained the synchronization object to the
+IChatUser object and is waiting for the second callback to return. The second
+callback routine, however, is waiting for the synchronization object to be
+released, so a deadlock condition is produced.
+
+REFERENCES
+==========
+
+- Microsoft Exchange Chat Server Extensibility Software Development Kit (SDK).
+
+- Microsoft Exchange Chat Server Online Documentation.
+
+Additional query words: Chat server
+
+======================================================================
+Keywords          : kbExchange550 kbMsg kbGrpDSMsg kbDSupport 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

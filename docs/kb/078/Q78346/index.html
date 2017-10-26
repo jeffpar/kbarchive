@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78346/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78346/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78346/","publisher":null,"image":null,"headline":"Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78346-windows-maximum-valid-size-for-regdat-and-ini-files">Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78346
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The maximum valid size for a REG.DAT or .INI file is 64 kilobytes (K). In some
+instances, however, problems occur when these files are greater than 32K.
+
+MORE INFORMATION
+================
+
+If an application uses the standard Windows application program interface (API)
+calls to access the .INI files, the limit is 64K. Examples of these standard API
+calls are GetPrivateProfileString() and WritePrivateProfileString().
+
+If, for example, the WIN.INI file exceeds 64K, the information beyond 64K is
+ignored, and Windows may behave unpredictably--system configuration changes may
+not be implemented, fonts may be missing, printer information may be missing,
+and default information from applications may not be saved.
+
+If an application uses a SIGNED INT instead of an UNSIGNED INT to point to the
+file size, the size limit for these files is 32K. Some third-party applications
+may be unable to read .INI files, including the WIN.INI file, if they are larger
+than 32K.
+
+NOTE: Page 89 of the "Microsoft Windows Resource Kit" (WRK) for version 3.0
+incorrectly states that the maximum size of the WIN.INI file is 32K.
+
+
+SysEdit
+-------
+
+The Microsoft Windows SysEdit program provided with Windows cannot correctly edit
+a file larger than 30,000 bytes. If SysEdit does load a file larger than 30,000
+bytes, you can delete text, but you cannot type any text until you reduce the
+file size to 29,999 bytes or fewer.
+
+The largest file SysEdit can load is between 30,000 bytes and 53K, depending on
+your system. If you load a file large than 30,000 bytes, you may receive the
+following error message:
+
+  &lt;Filename&gt;
+  Cannot open this file.
+
+If the large file you are trying to open is the WIN.INI file, only part of it may
+load, and you may receive the following two error messages:
+
+  C:\CONFIG.SYS
+  Cannot open this file
+
+  C:\AUTOEXEC.BAT
+  Cannot open this file
+
+Additional query words: 3.00 3.00a 3.0 3.0a 3.10 3.1 3.11 documentation error docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

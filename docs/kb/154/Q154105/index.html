@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154105/","publisher":null,"image":null,"headline":"Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154105-prb-c2664-compiler-error-in-afxtemplh-using-vc-42">Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154105
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2
+Operating System(s): 
+Keyword(s): kbMFC kbVC420 kbGrpDSMFCATL kbCollectionClass
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using MFC-templated type safe collection classes, such as
+CTypedPtrArray, CTypedPtrList, CTypedPtrMap classes or any classes derived from
+these classes in MFC4.2, and you have a forward declaration of the base classes
+that are stored as elements in these collection classes, you may get compiler
+errors similar to the ones listed below depending on which classes are used in
+the application:
+
+  
+
+  c:\msdev\mfc\include\afxtempl.h(1561) : error C2664:
+    'struct __POSITION *CObList::AddHead(class CObject *)' :
+    cannot convert parameter 1 from 'class X *' to 'class CObject *'
+    (new behavior; please see help)
+
+- or -
+
+  
+
+  c:\msdev\mfc\include\afxtempl.h(1587) : error C2664:
+  'SetAt' : cannot convert parameter 2 from 'class X *' to
+            'class CObject *' (new behavior; please see help)
+
+See the More Information section below for a reproducible case.
+
+CAUSE
+=====
+
+The MFC-templated type safe collection classes provided in MFC4.0 and MFC4.1 are
+not fully type safe. MFC4.2 added more wrapper functions to these classes to
+make them fully type safe. For example, in MFC4.2 the CTypedPtrList class now
+contains the following additional wrapper functions that were not in MFC4.0 or
+MFC4.1:
+
+       // Add a new element before head or after tail of the list
+       POSITION AddHead( TYPE newElement );
+       POSITION AddTail( TYPE newElement );
+
+       // Add another list of elements before head or after tail
+       void AddHead( CTypedPtrList&lt;BASE_CLASS,TYPE&gt; *pNewList );
+       void AddTail( CTypedPtrList&lt;BASE_CLASS,TYPE&gt; *pNewList );
+
+       // Modify an element at a given position
+       void SetAt( POSITION pos, TYPE newElement );
+
+The implementation of some of these newly-added functions makes calls to their
+base class' implementation. For example, CTypedPtrList::AddHead(TYPE newElement)
+calls BASE_CLASS::AddHead(newElement) where newElement is expected to be a
+pointer to CObject. (BASE_CLASS can be either CObList, CPtrList, or any classes
+derived from these two classes for a CTypedPtrList.)
+
+The BASE_CLASS must be derived from CObject or you will get the compiler error
+C2664.
+
+Because there is only a forward declaration of the base class, before
+instantiating the MFC templated type safe collection class, the compiler has no
+way to tell if the base class is derived from CObject directly or indirectly,
+hence the compiler error C2664.
+
+RESOLUTION
+==========
+
+Define the base class before instantiating the type safe collection classes.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem:
+
+Sample Code
+-----------
+
+     #include &lt;afxtempl.h&gt;
+
+     class X;
+     class Y
+     {
+       public:
+         CTypedPtrArray&lt;CObArray, X*&gt; m_TextArray;
+     };
+
+     class X : public CObject
+     {
+       ......
+     };
+
+You can also reproduce the problem by building step 2 of the Scribble tutorial
+from Visual C++ 4.1 using Visual C++ 4.2.
+
+For a full list of newly-added functions in classes CTypedPtrList, CTypedPtrArray
+and CTypePtrMap, please refer to the following Microsoft Knowledge Base
+article:
+
+  Q154482 FIX: Undocumented Functions in Type Safe Collection Classes
+
+Additional query words: 4.00 4.10 4.20
+
+======================================================================
+Keywords          : kbMFC kbVC420 kbGrpDSMFCATL kbCollectionClass 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

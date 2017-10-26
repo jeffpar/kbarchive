@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157738/","publisher":null,"image":null,"headline":"Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157738-dev-intl-sftwre-win-95win-nt-corrections-and-comments">Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157738
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 11-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Developing International Software ISBN 1-55615-840-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information on known errors
+relating to the Microsoft Press book "Developing International Software for
+Windows 95 and Windows NT."
+
+The following topics are covered:
+
+- Page 8: Far Eastern Languages No Longer Require Separate SDK
+
+- Page 46: szString2 Parameter Missing In szString[cbMaxSize]
+
+- Page 65: Lead-Byte Ranges Incorrect
+
+- Page 80: Delete Ref To "hantsu" And "kangxi"
+
+- Page 318: Code Page 936 Incomplete
+
+- Page 484: Update CP1257
+
+- Page 501: Add CP864 (Dos-Arabic) To Appendix H
+
+- Page 565: Update For Windows NT 3.51 Availability Dates
+
+- Page 706: Czech Republic Subsidiary Info Out Of Date
+
+- Appendix B: Characters u acute and AE are omitted
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, each entry in this document
+might also include sections labeled "Correction" and "Comments." Please note
+that the "Correction" section is worded for correcting the book and does not
+necessarily address the problem introduced by the book error. The "Comments"
+section contains specific information for working around the problem.
+
+Far Eastern Languages No Longer Require Separate SDK
+----------------------------------------------------
+
+The chart on page 8, in the "Far Eastern" language row, suggests that Far Eastern
+languages require the use of a separate Windows SDK/DDK. This is no longer
+correct. Far Eastern languages now use the Windows SDK and DDK International
+supplement, as do European, Middle Eastern, and Thai languages.
+
+
+Page 46: szString2 Parameter Missing In szString[cbMaxSize]
+-----------------------------------------------------------
+
+Page 46:
+
+Change
+
+      char szString[cbMaxSize] = ConcatenateFourStrings(szString1, szCommand,
+      szFilename, ".");
+
+to
+
+      char szString[cbMaxSize] = ConcatenateFiveStrings(szString1, szCommand,
+      szString2, szFilename, ".");
+
+Page 65: Lead-Byte Ranges Incorrect
+-----------------------------------
+
+Page 65, figure 3-5:
+Change lead byte range as follows:
+Chinese (Simplified): 0x81-0xfe
+
+Note that for 16-bit Windows the lead byte ranges of Chinese and Korean are
+different. The correct lead byte ranges for 16-bit Windows are:
+
+  CP936 (CHS - GB) 0xa1-0xfe
+  CP949 (KOR - Wansung) 0xa1-0xfe
+  CP950 (CHT - Big Five) x81-0xfe
+
+
+Page 80:  Delete Ref To "hantsu" And "kangxi"
+---------------------------------------------
+
+*hanzi* and *hantsu* are two different romanizations that represent the same
+pronunciation. *kangxi* is not an alternate pronunciation for *hanzi*, but
+rather is the name of the second Qing Emperor Kangxi
+
+Correction:
+Page 80: Remove reference to "hantsu" and "kangxi."
+
+Page 318: Code Page 936 Incomplete
+----------------------------------
+
+After the publication of "Developing International Software for Windows 95 and
+Windows NT," code page 936 was extended to include all Unicode CJK ideographs.
+The new code page 936 is the new standard used in Windows 95 and Windows NT
+editions sold in the People's Republic of China.
+
+The new code page 936 can be found on the CD accompanying "The Unicode Standard,
+Version 2.0" in:
+
+  \DOS\MAPPINGS\VENDORS\MICSFT\WINDOWS\CP936.TXT
+
+
+Page 484:  Update CP1257
+------------------------
+
+On page 484, the Baltic code page 1257 needs to be updated.
+
+Here is a more recent version of code page 1257 (as of 7 September 1995):
+
+  0x00 - 0x0000 - ;Null
+  0x01 - 0x0001 - ;Start Of Heading
+  0x02 - 0x0002 - ;Start Of Text
+  0x03 - 0x0003 - ;End Of Text
+  0x04 - 0x0004 - ;End Of Transmission
+  0x05 - 0x0005 - ;Enquiry
+  0x06 - 0x0006 - ;Acknowledge
+  0x07 - 0x0007 - ;Bell
+  0x08 - 0x0008 - ;Backspace
+  0x09 - 0x0009 - ;Horizontal Tabulation
+  0x0a - 0x000a - ;Line Feed
+  0x0b - 0x000b - ;Vertical Tabulation
+  0x0c - 0x000c - ;Form Feed
+  0x0d - 0x000d - ;Carriage Return
+  0x0e - 0x000e - ;Shift Out
+  0x0f - 0x000f - ;Shift In
+  0x10 - 0x0010 - ;Data Link Escape
+  0x11 - 0x0011 - ;Device Control One
+  0x12 - 0x0012 - ;Device Control Two
+  0x13 - 0x0013 - ;Device Control Three
+  0x14 - 0x0014 - ;Device Control Four
+  0x15 - 0x0015 - ;Negative Acknowledge
+  0x16 - 0x0016 - ;Synchronous Idle
+  0x17 - 0x0017 - ;End Of Transmission Block
+  0x18 - 0x0018 - ;Cancel
+  0x19 - 0x0019 - ;End Of Medium
+  0x1a - 0x001a - ;Substitute
+  0x1b - 0x001b - ;Escape
+  0x1c - 0x001c - ;File Separator
+  0x1d - 0x001d - ;Group Separator
+  0x1e - 0x001e - ;Record Separator
+  0x1f - 0x001f - ;Unit Separator
+  0x20 - 0x0020 - ;Space
+  0x21 - 0x0021 - ;Exclamation Mark
+  0x22 - 0x0022 - ;Quotation Mark
+  0x23 - 0x0023 - ;Number Sign
+  0x24 - 0x0024 - ;Dollar Sign
+  0x25 - 0x0025 - ;Percent Sign
+  0x26 - 0x0026 - ;Ampersand
+  0x27 - 0x0027 - ;Apostrophe
+  0x28 - 0x0028 - ;Left Parenthesis
+  0x29 - 0x0029 - ;Right Parenthesis
+  0x2a - 0x002a - ;Asterisk
+  0x2b - 0x002b - ;Plus Sign
+  0x2c - 0x002c - ;Comma
+  0x2d - 0x002d - ;Hyphen-Minus
+  0x2e - 0x002e - ;Full Stop
+  0x2f - 0x002f - ;Solidus
+  0x30 - 0x0030 - ;Digit 0
+  0x31 - 0x0031 - ;Digit 1
+  0x32 - 0x0032 - ;Digit 2
+  0x33 - 0x0033 - ;Digit 3
+  0x34 - 0x0034 - ;Digit 4
+  0x35 - 0x0035 - ;Digit 5
+  0x36 - 0x0036 - ;Digit 6
+  0x37 - 0x0037 - ;Digit 7
+  0x38 - 0x0038 - ;Digit 8
+  0x39 - 0x0039 - ;Digit 9
+  0x3a - 0x003a - ;Colon
+  0x3b - 0x003b - ;Semicolon
+  0x3c - 0x003c - ;Less-Than Sign
+  0x3d - 0x003d - ;Equals Sign
+  0x3e - 0x003e - ;Greater-Than Sign
+  0x3f - 0x003f - ;Question Mark
+  0x40 - 0x0040 - ;Commercial At
+  0x41 - 0x0041 - ;A
+  0x42 - 0x0042 - ;B
+  0x43 - 0x0043 - ;C
+  0x44 - 0x0044 - ;D
+  0x45 - 0x0045 - ;E
+  0x46 - 0x0046 - ;F
+  0x47 - 0x0047 - ;G
+  0x48 - 0x0048 - ;H
+  0x49 - 0x0049 - ;I
+  0x4a - 0x004a - ;J
+  0x4b - 0x004b - ;K
+  0x4c - 0x004c - ;L
+  0x4d - 0x004d - ;M
+  0x4e - 0x004e - ;N
+  0x4f - 0x004f - ;O
+  0x50 - 0x0050 - ;P
+  0x51 - 0x0051 - ;Q
+  0x52 - 0x0052 - ;R
+  0x53 - 0x0053 - ;S
+  0x54 - 0x0054 - ;T
+  0x55 - 0x0055 - ;U
+  0x56 - 0x0056 - ;V
+  0x57 - 0x0057 - ;W
+  0x58 - 0x0058 - ;X
+  0x59 - 0x0059 - ;Y
+  0x5a - 0x005a - ;Z
+  0x5b - 0x005b - ;Left Square Bracket
+  0x5c - 0x005c - ;Backslash
+  0x5d - 0x005d - ;Right Square Bracket
+  0x5e - 0x005e - ;Circumflex
+  0x5f - 0x005f - ;Low Line
+  0x60 - 0x0060 - ;Grave
+  0x61 - 0x0061 - ;a
+  0x62 - 0x0062 - ;b
+  0x63 - 0x0063 - ;c
+  0x64 - 0x0064 - ;d
+  0x65 - 0x0065 - ;e
+  0x66 - 0x0066 - ;f
+  0x67 - 0x0067 - ;g
+  0x68 - 0x0068 - ;h
+  0x69 - 0x0069 - ;i
+  0x6a - 0x006a - ;j
+  0x6b - 0x006b - ;k
+  0x6c - 0x006c - ;l
+  0x6d - 0x006d - ;m
+  0x6e - 0x006e - ;n
+  0x6f - 0x006f - ;o
+  0x70 - 0x0070 - ;p
+  0x71 - 0x0071 - ;q
+  0x72 - 0x0072 - ;r
+  0x73 - 0x0073 - ;s
+  0x74 - 0x0074 - ;t
+  0x75 - 0x0075 - ;u
+  0x76 - 0x0076 - ;v
+  0x77 - 0x0077 - ;w
+  0x78 - 0x0078 - ;x
+  0x79 - 0x0079 - ;y
+  0x7a - 0x007a - ;z
+  0x7b - 0x007b - ;Left Curly Bracket
+  0x7c - 0x007c - ;Vertical Line
+  0x7d - 0x007d - ;Right Curly Bracket
+  0x7e - 0x007e - ;Tilde
+  0x7f - 0x007f - ;Delete
+  0x80 - 0x0080
+  0x81 - 0x0081
+  0x82 - 0x201a - ;Low Single Comma Quotation Mark
+  0x83 - 0x0083 - ;Not Used
+  0x84 - 0x201e - ;Low Double Comma Quotation Mark
+  0x85 - 0x2026 - ;Horizontal Ellipsis
+  0x86 - 0x2020 - ;Dagger
+  0x87 - 0x2021 - ;Double Dagger
+  0x88 - 0x0088
+  0x89 - 0x2030 - ;Per Mille Sign
+  0x8a - 0x008a
+  0x8b - 0x2039 - ;Left Pointing Single Guillement
+  0x8c - 0x008c
+  0x8d - 0x00a8 - ;Diaeresis
+  0x8e - 0x02c7 - ;Hacek
+  0x8f - 0x00b8 - ;Cedilla
+  0x90 - 0x0090
+  0x91 - 0x2018 - ;Left Single Quotation Mark
+  0x92 - 0x2019 - ;Right Single Quotation Mark
+  0x93 - 0x201c - ;Left Double Quotation Mark
+  0x94 - 0x201d - ;Right Double Quotation Mark
+  0x95 - 0x2022 - ;Bullet
+  0x96 - 0x2013 - ;En Dash
+  0x97 - 0x2014 - ;Em Dash
+  0x98 - 0x0098 - ;Not Used
+  0x99 - 0x2122 - ;Trade Mark Sign
+  0x9a - 0x009a
+  0x9b - 0x203a - ;Right Pointing Single Guillement
+  0x9c - 0x009c
+  0x9d - 0x00af - ;Macron
+  0x9e - 0x02db - ;Ogonek
+  0x9f - 0x009f
+  0xa0 - 0x00a0 - ;No-Break Space
+  0xa1 - 0xf8fc - ;Undefined -&gt; EUDC
+  0xa2 - 0x00a2 - ;Cent Sign
+  0xa3 - 0x00a3 - ;Pound Sign
+  0xa4 - 0x00a4 - ;Currency Sign
+  0xa5 - 0xf8fd - ;Undefined -&gt; EUDC
+  0xa6 - 0x00a6 - ;Broken Bar
+  0xa7 - 0x00a7 - ;Section Sign
+  0xa8 - 0x00d8 - ;O Stroke
+  0xa9 - 0x00a9 - ;Copyright Sign
+  0xaa - 0x0156 - ;R Cedilla
+  0xab - 0x00ab - ;Left Pointing Guillement
+  0xac - 0x00ac - ;Not Sign
+  0xad - 0x00ad - ;Soft Hyphen
+  0xae - 0x00ae - ;Registered Sign
+  0xaf - 0x00c6 - ;AE
+  0xb0 - 0x00b0 - ;Degree Sign
+  0xb1 - 0x00b1 - ;Plus-Minus Sign
+  0xb2 - 0x00b2 - ;Superscript 2
+  0xb3 - 0x00b3 - ;Superscript 3
+  0xb4 - 0x00b4 - ;Acute
+  0xb5 - 0x00b5 - ;Micro Sign
+  0xb6 - 0x00b6 - ;Pilcrow Sign
+  0xb7 - 0x00b7 - ;Middle Dot
+  0xb8 - 0x00f8 - ;o Stroke
+  0xb9 - 0x00b9 - ;Superscript 1
+  0xba - 0x0157 - ;r Cedilla
+  0xbb - 0x00bb - ;Right Pointing Guillement
+  0xbc - 0x00bc - ;Fraction 1/4
+  0xbd - 0x00bd - ;Fraction 1/2
+  0xbe - 0x00be - ;Fraction 3/4
+  0xbf - 0x00e6 - ;ae
+  0xc0 - 0x0104 - ;A Ogonek
+  0xc1 - 0x012e - ;I Ogonek
+  0xc2 - 0x0100 - ;A Macron
+  0xc3 - 0x0106 - ;C Acute
+  0xc4 - 0x00c4 - ;A Diaeresis
+  0xc5 - 0x00c5 - ;A Ring Above
+  0xc6 - 0x0118 - ;E Ogonek
+  0xc7 - 0x0112 - ;E Macron
+  0xc8 - 0x010c - ;C Hacek
+  0xc9 - 0x00c9 - ;E Acute
+  0xca - 0x0179 - ;Z Acute
+  0xcb - 0x0116 - ;E Dot Above
+  0xcc - 0x0122 - ;G Cedilla
+  0xcd - 0x0136 - ;K Cedilla
+  0xce - 0x012a - ;I Macron
+  0xcf - 0x013b - ;L Cedilla
+  0xd0 - 0x0160 - ;S Hacek
+  0xd1 - 0x0143 - ;N Acute
+  0xd2 - 0x0145 - ;N Cedilla
+  0xd3 - 0x00d3 - ;O Acute
+  0xd4 - 0x014c - ;O Macron
+  0xd5 - 0x00d5 - ;O Tilde
+  0xd6 - 0x00d6 - ;O Diaeresis
+  0xd7 - 0x00d7 - ;Multiplication Sign
+  0xd8 - 0x0172 - ;U Ogonek
+  0xd9 - 0x0141 - ;L Stroke
+  0xda - 0x015a - ;S Acute
+  0xdb - 0x016a - ;U Macron
+  0xdc - 0x00dc - ;U Diaeresis
+  0xdd - 0x017b - ;Z Dot Above
+  0xde - 0x017d - ;Z Hacek
+  0xdf - 0x00df - ;Sharp ss
+  0xe0 - 0x0105 - ;a Ogonek
+  0xe1 - 0x012f - ;i Ogonek
+  0xe2 - 0x0101 - ;a Macron
+  0xe3 - 0x0107 - ;c Acute
+  0xe4 - 0x00e4 - ;a Diaeresis
+  0xe5 - 0x00e5 - ;a Ring Above
+  0xe6 - 0x0119 - ;e Ogonek
+  0xe7 - 0x0113 - ;e Macron
+  0xe8 - 0x010d - ;c Hacek
+  0xe9 - 0x00e9 - ;e Acute
+  0xea - 0x017a - ;z Acute
+  0xeb - 0x0117 - ;e Dot Above
+  0xec - 0x0123 - ;g Cedilla
+  0xed - 0x0137 - ;k Cedilla
+  0xee - 0x012b - ;i Macron
+  0xef - 0x013c - ;l Cedilla
+  0xf0 - 0x0161 - ;s Hacek
+  0xf1 - 0x0144 - ;n Acute
+  0xf2 - 0x0146 - ;n Cedilla
+  0xf3 - 0x00f3 - ;o Acute
+  0xf4 - 0x014d - ;o Macron
+  0xf5 - 0x00f5 - ;o Tilde
+  0xf6 - 0x00f6 - ;o Diaeresis
+  0xf7 - 0x00f7 - ;Division Sign
+  0xf8 - 0x0173 - ;u Ogonek
+  0xf9 - 0x0142 - ;l Stroke
+  0xfa - 0x015b - ;s Acute
+  0xfb - 0x016b - ;u Macron
+  0xfc - 0x00fc - ;u Diaeresis
+  0xfd - 0x017c - ;z Dot Above
+  0xfe - 0x017e - ;z Hacek
+  0xff - 0x02d9 - ;Dot Above
+
+Page 501: Add CP864 (Dos-Arabic) To Appendix H
+Arabic code page 864 should be added to appendix H.
+--------------------------------------------------------------------------------------------------
+
+Microsoft Press is working to include this code page in future editions of this
+book.
+
+Page 565: Update For Windows NT 3.51 Availability Dates
+Update to appendix P (pages 565-566):
+---------------------------------------------------------------------------------------------
+
+Below is updated information regarding localized Microsoft Windows NT 3.51
+Workstation and Server availability:
+
+LANGUAGE              NTW 3.51      NTS 3.51
+==================    ========      ========
+English
+(floppies)            05/30/95      05/30/95
+(CD's)                05/31/95      05/31/95
+
+German                06/09/95      06/09/95
+French                06/26/95      06/26/95
+Spanish               06/27/95      06/27/95
+Italian               07/14/95      07/11/95
+Dutch                 07/24/95      07/24/95
+Swedish               07/27/95      07/27/95
+Norwegian             08/14/95      English only
+Finnish               English +90   English only
+Danish                English +90   English only
+Brazilian             English +90   English +90
+
+Japanese              WIN95J +30    WIN95J +30
+Chinese (Taiwan)      3.51J +60     3.51J +60
+Korean                3.51J +90     3.51J +90
+Chinese (PRC)         3.51J +90     3.51J +90
+
+Page 706: Czech Republic subsidiary info out of date
+----------------------------------------------------
+
+On the chart of Microsoft Subsidiaries, page 706, the entry for the Czech
+Republic is now out of date. The subsidiaries for the Czech Republic and
+Slovakia are now different offices. Their international dialing codes have also
+changed.
+
+The new entries are
+
+  Microsoft s.r.o.
+  Eltodo Centrum
+  Novodvorska 1010/14 B
+  142 00 Praha 4
+  CZECH REPUBLIC
+
+  Phone (420)(2) 611 97 111
+  Fax (420)(2) 611 97 100
+
+  Microsoft Slovakia s.r.o.
+  Vidlicova 9
+  P.O. Box 88
+  830 00 Bratislava
+  Slovakia
+
+  Microsoft s.r.o. Phone (421) (7) 37 63 02
+  Microsoft s.r.o. Fax (421) (7) 37 66 17
+
+
+Appendix B: Characters u acute and AE are omitted
+-------------------------------------------------
+
+Appendix B, page 266:
+The characters u acute and AE need to be included in the Icelandic listing.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

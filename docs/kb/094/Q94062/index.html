@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94062: Creating an OS/2 LAN Manager Boot Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94062: Creating an OS/2 LAN Manager Boot Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94062/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94062/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94062/","publisher":null,"image":null,"headline":"Q94062: Creating an OS/2 LAN Manager Boot Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94062-creating-an-os2-lan-manager-boot-disk">Q94062: Creating an OS/2 LAN Manager Boot Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94062
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+You can create a floppy disk configuration enabling you to boot from a floppy
+disk under OS/2 and start the LAN Manager workstation service on the
+workstation.
+
+MORE INFORMATION
+================
+
+This procedure requires two 1.44 MB disks to set up. The first disk is the
+bootable OS/2 disk and contains all necessary operating system files and LAN
+Manager drivers. The second disk contains all necessary LAN Manager files for
+starting the redirector.
+
+Below are the listings of the files and directories required for the first and
+second disks. The disk loads the drivers for a DEC DEPCA network card and loads
+the UBXNS protocol. If you want a different card and protocol, substitute the
+appropriate files and directories required for the card to be used in the
+LANMAN\DRIVERS subdirectory and modify CONFIG.SYS accordingly. The HPFS Recovery
+disk was used as a model for the bootable DISK1.
+
+The easiest way to build the boot disk (DISK1) is to DISKCOPY the HPFS recovery
+disk and modify the CONFIG.SYS, LANMAN.INI, and PROTOCOL.INI files as shown
+below. The easiest way to make the second disk (DISK2) is to use an existing LAN
+Manager OS/2 workstation and set up the configuration you want with the SETUP
+program and copy the required files to the second disk as shown below.
+
+Once the disks are built, boot from DISK1. When booting is complete, insert DISK2
+and type the following command:
+
+  " NET START WORKSTATION" (without the quotation marks)
+
+to start the redirector. This gives you access to the network. The volume in
+drive A is DISK1.
+
+Directory of A:\ 
+
+LANMAN       &lt;DIR&gt;     08-20-92   1:46p
+OS2KRNL         293530 11-15-91  12:00a
+OS2LDR           18432 11-14-91  12:00p
+HPFS     386    260608 11-15-91  12:00a
+ABIOS    BID     15053 11-15-91  12:00a
+DELL001  BID      5904 11-15-91  12:00a
+ESDI-506 BID     10946 11-15-91  12:00a
+KEYBOARD DCP      5177 11-15-91  12:00a
+VTBL850  DCP     10478 11-15-91  12:00a
+ANSICALL DLL      3349 11-15-91  12:00a
+BKSCALLS DLL      6509 11-15-91  12:00a
+BVHINIT  DLL      8116 11-15-91  12:00a
+BVSCALLS DLL     21697 11-15-91  12:00a
+DOSCALL1 DLL     12943 11-15-91  12:00a
+KBDCALLS DLL      7721 11-15-91  12:00a
+MOUCALLS DLL      4844 11-15-91  12:00a
+MSG      DLL      5244 11-15-91  12:00a
+NLS      DLL      4023 11-15-91  12:00a
+QUECALLS DLL      9626 11-15-91  12:00a
+SESMGR   DLL     24052 11-15-91  12:00a
+VIOCALLS DLL     16087 11-15-91  12:00a
+CMD      EXE     88160 11-15-91  12:00a
+HPFS386  IFS     35354 11-15-91  12:00a
+OSO001   MSG    108095 11-15-91  12:00a
+CONFIG   OLD       327 11-15-91  12:00a
+SYSLEVEL OS2       169 11-15-91  12:00a
+DISK0    SCD      1082 11-15-91  12:00a
+ABIOS    SYS        11 11-15-91  12:00a
+BASEDD01 SYS     35274 11-15-91  12:00a
+CONFIG   SYS       841 08-20-92   4:17p
+COUNTRY  SYS     24466 11-15-91  12:00a
+FLOPPY01 SYS     18036 11-14-91  12:00p
+IOCFG01  SYS      4607 11-15-91  12:00a
+IORUN    SYS      1359 11-15-91  12:00a
+IOS1X    SYS     15289 11-15-91  12:00a
+DISK     TSD      9066 11-15-91  12:00a
+      38 file(s)    1088015 bytes
+
+Directory of A:\LANMAN
+
+.            &lt;DIR&gt;     08-20-92   1:46p
+..           &lt;DIR&gt;     08-20-92   1:46p
+DRIVERS      &lt;DIR&gt;     08-20-92   1:46p
+NETPROG      &lt;DIR&gt;     08-20-92   2:06p
+NETLIB            3111 11-15-91  12:00a
+LANMAN   INI      1870 08-20-92   4:57p
+PROTOCOL INI       908 08-20-92   3:35p
+       7 file(s)       5889 bytes
+
+Directory of A:\LANMAN\DRIVERS
+
+.            &lt;DIR&gt;     08-20-92   1:46p
+..           &lt;DIR&gt;     08-20-92   1:46p
+ETHERNET     &lt;DIR&gt;     08-20-92   2:03p
+PROTMAN      &lt;DIR&gt;     08-20-92   1:47p
+PROTOCOL     &lt;DIR&gt;     08-20-92   2:04p
+       5 file(s)          0 bytes
+
+Directory of A:\LANMAN\DRIVERS\ETHERNET
+
+.            &lt;DIR&gt;     08-20-92   2:03p
+..           &lt;DIR&gt;     08-20-92   2:03p
+DEC          &lt;DIR&gt;     08-20-92   2:03p
+       3 file(s)          0 bytes
+
+Directory of A:\LANMAN\DRIVERS\ETHERNET\DEC
+
+.            &lt;DIR&gt;     08-20-92   2:03p
+..           &lt;DIR&gt;     08-20-92   2:03p
+DEPCA    OS2     15924 01-21-91   2:25p
+       3 file(s)      15924 bytes
+
+Directory of A:\LANMAN\DRIVERS\PROTMAN
+
+.            &lt;DIR&gt;     08-20-92   1:47p
+..           &lt;DIR&gt;     08-20-92   1:47p
+PROTOCOL INI        36 11-15-91  12:00a
+PROTMAN  OS2     17974 11-15-91  12:00a
+       4 file(s)      18010 bytes
+
+Directory of A:\LANMAN\DRIVERS\PROTOCOL
+
+.            &lt;DIR&gt;     08-20-92   2:04p
+..           &lt;DIR&gt;     08-20-92   2:04p
+NETBEUI      &lt;DIR&gt;     08-20-92   2:05p
+UBXNS        &lt;DIR&gt;     08-20-92   2:05p
+       4 file(s)          0 bytes
+
+Directory of A:\LANMAN\DRIVERS\PROTOCOL\NETBEUI
+
+.            &lt;DIR&gt;     08-20-92   2:05p
+..           &lt;DIR&gt;     08-20-92   2:05p
+       2 file(s)          0 bytes
+
+Directory of A:\LANMAN\DRIVERS\PROTOCOL\UBXNS
+
+.            &lt;DIR&gt;     08-20-92   2:05p
+..           &lt;DIR&gt;     08-20-92   2:05p
+1A       LC       2832 03-03-89  10:56a
+UBLOOP   OS2      8346 09-26-91   4:24p
+UBXPS    OS2     60900 05-16-91   4:42p
+       5 file(s)      72078 bytes
+
+Directory of A:\LANMAN\NETPROG
+
+.            &lt;DIR&gt;     08-20-92   2:06p
+..           &lt;DIR&gt;     08-20-92   2:06p
+NETBIOS  OS2     10058 11-15-91  12:00a
+NETWKSTA SYS    169088 11-15-91  12:00a
+RDRHELP  SYS      8257 11-15-91  12:00a
+       5 file(s)     187403 bytes
+
+Total files listed:
+      76 file(s)    1387319 bytes
+                      52736 bytes free
+
+Note: You must have the appropriate .BID files loaded for this disk to boot.
+
+You must have the PROTOCOL.INI and LANMAN.INI files on this disk for the drivers
+to load (in the above listing, the NETBUI directory is since the NETBUI protocol
+is not loaded).
+
+Below is the directory listing of the files required for the second disk:
+
+Volume in drive A is DISK2
+
+Directory of A:\ 
+
+LANMAN       &lt;DIR&gt;     08-20-92   5:51p
+OSO001   MSG    108095 11-14-91  12:00p
+       3 file(s)     111167 bytes
+
+Directory of A:\LANMAN
+
+.            &lt;DIR&gt;     08-20-92   5:51p
+..           &lt;DIR&gt;     08-20-92   5:51p
+NETLIB       &lt;DIR&gt;     08-20-92   5:51p
+NETPROG      &lt;DIR&gt;     08-20-92   5:51p
+SERVICES     &lt;DIR&gt;     08-20-92   5:51p
+LANMAN   INI      1851 08-20-92   6:09p
+LMUSER   INI        28 07-13-92   1:09p
+PROTOCOL INI       908 08-20-92   3:35p
+      8 file(s)       4562 bytes
+
+Directory of A:\LANMAN\NETLIB
+
+.            &lt;DIR&gt;     08-20-92   5:51p
+..           &lt;DIR&gt;     08-20-92   5:51p
+NETAPI   DLL    340532 11-15-91  12:00a
+NETSPOOL DLL      7162 11-15-91  12:00a
+       4 file(s)     347694 bytes
+
+Directory of A:\LANMAN\NETPROG
+
+.            &lt;DIR&gt;     08-20-92   5:51p
+..           &lt;DIR&gt;     08-20-92   5:51p
+NET      EXE    146000 11-15-91  12:00a
+NET      MSG    113569 11-15-91  12:00a
+       4 file(s)     259569 bytes
+
+Directory of A:\LANMAN\SERVICES
+
+.            &lt;DIR&gt;     08-20-92   5:51p
+..           &lt;DIR&gt;     08-20-92   5:51p
+WKSTA    EXE     36788 11-15-91  12:00a
+WKSTAHLP EXE      8297 11-15-91  12:00a
+       4 file(s)      45085 bytes
+
+Below is the CONFIG.SYS file on the boot disk:
+
+IFS=HPFS386.IFS /C:256 A:\HPFS.386
+PROTSHELL=CMD.EXE
+LIBPATH=a:\lanman\netlib;a:\lanman\drivers\protocol;\;
+SET PATH=a:\lanman\netprog;\;\ 
+SET DPATH=a:\lanman\netprog;\;
+SET PROMPT=$i[$p]
+BUFFERS=12
+MEMMAN=NOSWAP,MOVE
+PROTECTONLY=YES
+DEVINFO=KBD,US,KEYBOARD.DCP
+DEVINFO=SCR,EGA,VTBL850.DCP
+
+REM ====== LANMAN 2.1 === DO NOT MODIFY BETWEEN THESE LINES ===
+LANMAN 2.1 ===
+DEVICE=a:\LANMAN\DRIVERS\PROTMAN\PROTMAN.OS2 /i:A:\LANMAN
+DEVICE=a:\LANMAN\Drivers\Ethernet\DEC\DEPCA.OS2
+DEVICE=a:\LANMAN\Drivers\Protocol\UBXNS\UBXPS.OS2
+DEVICE=a:\LANMAN\Drivers\Protocol\UBXNS\UBLoop.OS2
+DEVICE=a:\LANMAN\NETPROG\RDRHELP.SYS
+IFS=a:\LANMAN\NETPROG\NETWKSTA.SYS /i:A:\LANMAN
+REM ====== LANMAN 2.1 === DO NOT MODIFY BETWEEN THESE LINES ===
+LANMAN 2.1
+
+Below are examples of the LANMAN.INI and the PROTOCOL.INI files on the
+disks. Note that the LANMAN.INI and PROTOCOL.INI files are required on
+both disks.
+
+LANMAN.INI
+
+;*****************************************************************;
+;**                  Microsoft LAN Manager                      **;
+;**            Copyright(c) Microsoft Corp., 1991               **;
+;*****************************************************************;
+
+;  LAN Manager initialization file, for server configuration.
+
+[networks]
+; This info is read by redir at device init time.  It is available to
+; apps via NetBiosEnum.
+ net1 = XNS$0,0
+
+[workstation]
+ computername = floppyws
+ domain = bcvdomain
+ othdomains = lc3com
+ wrkheuristics = xx0xxxxxxx0xxxxxxxxxxxxxxxxxxxxx0xx
+ wrkservices =
+ wrknets = net1
+[messenger]
+
+[netshell]
+ refresh = 15
+ remote =
+ username =
+
+ autorestore = NO
+ saveconnections = NO
+
+[version]
+ lan_manager = 2.1.0
+
+[server]
+
+[alerter]
+
+[netrun]
+ runpath =
+
+[replicator]
+ logon = user
+ password =
+ replicate = import
+ tryuser = yes
+
+[ups]
+ batterytime = 60
+ recharge = 100
+ signals = 100
+ voltlevels = 100
+ cmdfile =
+
+[netlogon]
+
+[remoteboot]
+
+[remoteaccess]
+
+[services]
+; Correlates name of service to pathname of service program.
+; The pathname must be either:
+;       1) an absolute path (including the drive specification)
+;                       OR
+;       2) a path relative to the LanMan root
+
+ workstation = services\wksta.exe
+ server = services\netsvini.exe
+ messenger = services\msrvinit.exe
+ netpopup = services\netpopup.exe
+ alerter = services\alerter.exe
+ netrun = services\runservr.exe
+ replicator = services\replicat.exe
+ ups = services\ups.exe
+ netlogon = services\netlogon.exe
+ remoteboot = services\rplservr.exe
+ timesource = services\timesrc.exe
+ remoteaccess = services\raserver.exe
+
+If any workstation services are to be loaded by means of the wrkservices entry,
+the executable file must be located in the LANMAN\SERVICES subdirectory.
+
+PROTOCOL.INI:
+
+[PROTMAN]
+ DRIVERNAME = PROTMAN$
+
+[UBLOOP]
+ BINDINGS = "DE16DNA_NIF"
+
+   DriverName = UBLoop$
+
+[UBXNS]
+
+   DriverName = XNS$0
+   Bindings = "UBLoop"
+   LCFile = a:\LANMAN\Drivers\Protocol\UBXNS\1A.LC
+   VCReceiveLarge = 40
+   VCSends = 400
+   VCs = 115
+   RcvWindow = 8
+   SendWindow = 8
+
+[UBLOOP]
+ BINDINGS = "DE16DNA_NIF"
+
+   DriverName = UBLoop$
+
+[UBXNS]
+
+   DriverName = XNS$0
+   Bindings = "UBLoop"
+   LCFile = a:\LANMAN\Drivers\Protocol\UBXNS\1A.LC
+   VCReceiveLarge = 40
+   VCSends = 400
+   VCs = 115
+   RcvWindow = 8
+   SendWindow = 8
+
+[UBNXDS1A_XIF]
+[UBLOOP]
+ BINDINGS = "DE16DNA_NIF"
+
+   DriverName = UBLoop$
+
+[UBXNS]
+
+   DriverName = XNS$0
+   Bindings = "UBLoop"
+   LCFile = a:\LANMAN\Drivers\Protocol\UBXNS\1A.LC
+   VCReceiveLarge = 40
+   VCs = 115
+   RcvWindow = 8
+   SendWindow = 8
+
+[DE16DNA_NIF]
+
+   DriverName = DEPCA$
+
+Additional query words: lm21 2.10 2.1
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

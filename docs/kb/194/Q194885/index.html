@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194885/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194885/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194885/","publisher":null,"image":null,"headline":"Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194885-prb-hiding-and-showing-forms-in-modal-formset-only-works-once">Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194885
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbOOP kbvfp300 kbvfp300b kbvfp500a kbvfp600
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The forms in a modal formset can only be hidden and shown once before the active
+form is all that can be shown.
+
+CAUSE
+=====
+
+This is caused when the Hide() and Show() methods are used to hide and show the
+forms in the formset.
+
+RESOLUTION
+==========
+
+Change the Visible property of the forms directly rather than using the Hide()
+and Show() methods. See steps 7 and 16 in the Steps to Reproduce Behavior
+section below for an example.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Help file for Visual FoxPro 6.0 states the following for the Show() method:
+
+  The Show method sets a form or form set's Visible property to true (.T.) and
+  makes the form the active object. If a form's Visible property is already set
+  to true (.T.), the Show method makes it the active object.
+  ...
+  Forms contained within a form set retain their Visible property setting. If a
+  form's Visible property is set to false (.F.), the Show method for the form
+  set does not show the form.
+
+One item to note in the Help file text is that the Show method sets the form's
+Visible property to true (.T.). Also note that the formset's Show method does
+not set the Visible property of a form within the formset to true. In the sample
+code below, the form's Show method is being used, not the formset's.
+
+The Help file for Visual FoxPro 6.0 states the following for the Hide() method:
+
+  Hides a form, form set, or toolbar by setting the Visible property to false
+  (.F.).
+
+Note that the workaround for this problem is to set the Visible properties of the
+forms directly rather than through the Show and Hide methods.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. From the Form menu pad, choose Create Form Set.
+
+3. Again from the Form menu, choose Add New Form. Position the forms so both can
+  be seen.
+
+4. Add two command buttons to form1.
+
+5. Set the Caption property on one to Quit.
+
+  In the Click event, place the following code:
+
+        Thisformset.Release
+
+6. Copy the Quit command button and paste it onto the other form.
+
+7. Go back to form1. Change the Caption on the other command button to "Show
+  Form 2". In the Click event, place the following code:
+
+        Thisform.Hide
+        Thisformset.Form2.Show
+        * Thisform.Visible=.F.
+        * Thisformset.Form2.Visible=.T.
+
+8. Copy the "Show Form 2" command button and paste it onto form2. Change the
+  caption and code in the Click event to refer to form1 instead of form2.
+
+9. Set the Visible property of form2 to .F.
+
+10. Select the Formset object in the Properties sheet. Set the WindowType
+  property to 1-Modal.
+
+11. Save and run the formset.
+
+12. Click on the Show Form 2 button. Form2 should display.
+
+13. Click on the Show Form 1 button that is on Form2. Form1 should display.
+
+14. Click on the Show Form 2 button that is on Form1. Form2 should not display.
+  This is the problem.
+
+15. Use the Quit button to close the formset.
+
+16. Modify the formset. In the Click event code for the Show Form 1 and Show
+  Form 2 command buttons, comment the Hide and Show commands. Uncomment the
+  commands that set the Visible properties of the forms.
+
+17. Save and run the formset again. Switch between the form. They should be able
+  to be switched between indefinitely.
+
+REFERENCES
+==========
+
+Visual FoxPro Help, version 6.0; search on: "Hide"; topic: Hide method
+Visual FoxPro Help, version 6.0; search on: "Show"; topic: Show method
+
+Additional query words: kbDSupport kbDSE
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbOOP kbvfp300 kbvfp300b kbvfp500a kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

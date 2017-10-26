@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247250/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247250/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247250/","publisher":null,"image":null,"headline":"Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247250-xcln-cannot-remove-signature-from-custom-form-wautosignature">Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247250
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000,97,98
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot remove the AutoSignature from the MESSAGE control of a custom form
+that was created from the default New Message form (Ipm.note) and that has an
+AutoSignature applied to it. Deleting and re-inserting the MESSAGE control puts
+the AutoSignature back in the MESSAGE control. Even when you are using the .oft
+file associated with the form, the same behavior occurs.
+
+CAUSE
+=====
+
+The MESSAGE control is a special control/field combination that cannot be
+modified.
+
+WORKAROUND
+==========
+
+There are two possible workarounds:
+
+- Recreate the form using a new Ipm.note form with AutoSignature disabled.
+
+-or-
+
+- Open the form, delete the AutoSignature text from the message body, and then
+  republish the form with the same name.
+
+MORE INFORMATION
+================
+
+Outlook forms contain both fields and controls. Examples of controls are the
+MESSAGE control, the SUBJECT control, and so on. Controls do not store any data.
+The data is stored in Outlook fields. Consequently, deleting controls (TEXT BOX,
+BUTTON, MESSAGE controls, and so on) doesn't change anything except the visual
+part of the form. If there is a field bound to the control that is deleted, the
+field still exists in the form and still contains its data. You can see this
+data on the All Fields page of the form. With normal TEXT BOX controls, you can
+choose which Outlook field stores the data that is entered into the control. The
+control is just used for entering data into or displaying data from the field.
+If you right-click a control (for example, the SUBJECT control) and click
+Properties, the Value tab shows you which field is currently bound to the
+control.
+
+The MESSAGE control, however, is a special control/field combination and doesn't
+have a Value tab. Most of the controls/fields on a mail item are special MESSAGE
+or RECIPIENT controls that can't really be modified.
+
+
+Additional query words: autosignature, auto-signature
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:2000,97,98
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

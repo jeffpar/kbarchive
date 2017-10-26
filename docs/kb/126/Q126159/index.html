@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126159: Lmscript.pif and the SMSLS Logon Script | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126159: Lmscript.pif and the SMSLS Logon Script" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126159/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126159/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126159/","publisher":null,"image":null,"headline":"Q126159: Lmscript.pif and the SMSLS Logon Script","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126159-lmscriptpif-and-the-smsls-logon-script">Q126159: Lmscript.pif and the SMSLS Logon Script</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126159
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork smshowto
+Last Modified: 09-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMSLS logon script stop responding (hangs) when it is used with some
+computers running Microsoft Windows 3.1 or Microsoft Windows for Workgroups 3.1
+or 3.11.
+
+CAUSE
+=====
+
+When a Windows system logs on to a network, Lmscript.exe is run on the client to
+parse and run the logon script. In some Windows configurations, applications
+that are run from the logon script can cause Lmscript.exe to stop responding.
+This problem usually occurs because of a timing problem with the background and
+foreground processes.
+
+Because Lmscript.exe is an MS-DOS-based program, a Lmscript.pif file is used to
+describe its required environment. Other drivers or processes that are running
+under Windows can take processor cycles away from Lmscript.exe. This can hang
+the Lmscript process or cause applications that are run from within the logon
+script to fail.
+
+RESOLUTION
+==========
+
+You may be able to reduce or eliminate this problem by modifying the
+Windows\System\Lmscript.pif file or by creating a batch file.
+
+Modify the Lmscript.pif File
+----------------------------
+
+1. Run PIF Editor (Pifedit.exe) and open the Windows\System\Lmscript.pif file.
+
+2. Ensure that the Execution Background check box is selected. It should be,
+  because this is the default setting.
+
+3. Select the Execution Exclusive check box.
+
+4. Save your changes and quit PIF editor.
+
+Modify the Process Priorities
+-----------------------------
+
+If the preceding steps do not resolve the problem, perform the following steps to
+modify the process priorities.
+
+1. Run PIF Editor (Pifedit.exe) and open the Windows\System\Lmscript.pif file.
+
+2. Choose Advanced, and then increase the Background Priority and Foreground
+  Priority values.
+
+3. Save your changes and quit PIF editor.
+
+Create a Batch File
+-------------------
+
+Create a batch file called Ntlogon.bat with the following entries:
+
+     Net Time
+     Net Use &lt;network drive&gt;: \\&lt;ServerName&gt;\&lt;SMS Share&gt;
+     &lt;network drive&gt;:
+     SMSLS.BAT  (SMSLS logon script)
+     &lt;local drive C&gt;:
+
+Additional query words: sms prodsms wfw wfwg program information file hang hangs hung
+
+======================================================================
+Keywords          : kbnetwork smshowto 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

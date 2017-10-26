@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174667/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174667/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174667/","publisher":null,"image":null,"headline":"Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174667-howto-subclass-clistbox-and-cedit-inside-of-ccombobox">Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174667
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbComboBox kbCtrl kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While it is simple to directly subclass a combo box control, it is not simple to
+subclass the edit or list box inside a combo box. The problem is that it is
+difficult to get the HWNDs of the child controls in a portable manner.
+
+One safe way to subclass the internal edit and list box controls is to subclass
+them in the WM_CTLCOLORXXX messages. Because Win32 sends separate
+WM_CTLCOLOREDIT and WM_CTLCOLORLISTBOX messages, these messages are safe and
+easy ways to get the HWNDs of the child controls of the combo box.
+
+Below is a CSuperComboBox class, which is an MFC implementation of this method.
+Because MFC routes all the WM_CTLCOLOR messages to OnCtlColor, the subclassing
+takes place there.
+
+MORE INFORMATION
+================
+
+Use ClassWizard to derive a class from CComboBox and add message handlers for
+WM_CTLCOLOR and WM_DESTROY. Then manually edit the header file to add the data
+members, m_edit and m_listbox. Finally, copy the code from the message handlers
+below:
+
+Sample Code
+-----------
+
+     // SuperComboBox.h : header file
+     class CSuperComboBox : public CComboBox
+     {
+     public:
+        CEdit      m_edit;
+        CListBox   m_listbox;
+     protected:
+        afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+        afx_msg void OnDestroy();
+     ...
+     };
+
+     // SuperComboBox.cpp : implementation file
+     HBRUSH CSuperComboBox::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+     {
+        if (nCtlColor == CTLCOLOR_EDIT)
+        {
+           //[ASCII 160][ASCII 160][ASCII 160]Edit control
+           if (m_edit.GetSafeHwnd() == NULL)
+              m_edit.SubclassWindow(pWnd-&gt;GetSafeHwnd());
+        }
+        else if (nCtlColor == CTLCOLOR_LISTBOX)
+        {
+           //ListBox control
+           if (m_listbox.GetSafeHwnd() == NULL)
+              m_listbox.SubclassWindow(pWnd-&gt;GetSafeHwnd());
+        }
+        HBRUSH hbr = CComboBox::OnCtlColor(pDC, pWnd, nCtlColor);
+        return hbr;
+     }
+
+     void CSuperComboBox::OnDestroy()
+     {
+        if (m_edit.GetSafeHwnd() != NULL)
+           m_edit.UnsubclassWindow();
+        if (m_listbox.GetSafeHwnd() != NULL)
+           m_listbox.UnsubclassWindow();
+        CComboBox::OnDestroy();
+     }
+
+Note that for subclassing to occur, the dialog box must be painted at least once.
+There are cases when the dialog box doesn't paint at all (for example, closing
+the dialog box before it is displayed, hidden dialog boxes). This method may not
+be suitable when access to the subclassed windows are needed in these cases.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Kelly Marie
+Ward, Microsoft Corporation
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Kelly Marie Ward, Microsoft Corporation
+
+
+Additional query words: combobox listbox
+
+======================================================================
+Keywords          : kbcode kbComboBox kbCtrl kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

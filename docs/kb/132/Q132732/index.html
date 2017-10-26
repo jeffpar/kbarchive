@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132732: General Windows 95 Setup Questions and Answers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132732: General Windows 95 Setup Questions and Answers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132732/","publisher":null,"image":null,"headline":"Q132732: General Windows 95 Setup Questions and Answers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132732-general-windows-95-setup-questions-and-answers">Q132732: General Windows 95 Setup Questions and Answers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132732
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbfile win95 kbgraphxlinkcritical
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+1. Q. How do I make backup copies of my original Windows 95 disks before I
+  install Windows 95?
+
+  A. Windows 95 disks are Distribution Media Format (DMF) disks and are not
+  compatible with the MS-DOS COPY and DISKCOPY commands. You cannot create
+  backup copies of the Windows 95 disks.
+
+2. Q. What happens if the power fails or if my computer restarts during Setup?
+
+  A. Windows 95 Setup has a feature called Safe Recovery. Depending on where
+  Setup was interrupted, you may be able to simply turn your computer off and
+  back on, run Setup again, and choose Safe Recovery when you are prompted.
+
+3. Q. What do I do if Setup stops responding (hangs) while it is detecting the
+  hardware in my computer?
+
+  A. If Setup hangs while it is detecting the hardware in your computer, turn
+  your computer off and back on, run Setup again, and choose Safe Recovery when
+  you are prompted.
+
+4. Q. Why does Setup tell me I am running virus-protection software when I
+  cannot find any on my computer?
+
+  A. Some computers have built-in virus protection. If virus protection is
+  enabled in your computer's CMOS settings, Setup cannot continue. Please
+  contact your hardware vendor for information about temporarily disabling this
+  feature.
+
+5. Q. How do I install a feature of Windows 95 that I did not install
+  originally?
+
+  A. If you want to add or remove a Windows 95 component, use the Add/Remove
+  Programs tool in Control Panel. On the Windows Setup tab, click the items you
+  want to add or remove.
+
+6. Q. What is Setup doing when I see the "Getting ready to run Windows 95 for
+  the first time" screen?
+
+  A. After Setup restarts your computer, it must complete the installation
+  process. Setup accomplishes the following tasks while the "Getting ready to
+  run Windows 95 for the first time" screen is displayed:
+
+   - Setup processes the Wininit.ini file and combines all the virtual device
+     drivers listed in the [CombineVxDs] section of the file into one file
+     called Vmm32.vxd. Combining these drivers provides faster startup times.
+
+   - Setup renames all the files that were in use during the first portion of
+     Setup. For example, Setup renames the User32.tmp file to User32.exe and
+     renames the Command.new file to Command.com.
+
+   - Setup makes a backup copy of the registry for troubleshooting purposes.
+
+  After these tasks are accomplished, Setup starts the Windows 95 graphical user
+  interface (GUI) and completes the installation process by converting program
+  groups, setting up the Help system, and setting your location and time zone.
+
+7. Q. If I run Setup over an existing Windows 95 installation, I receive the
+  following two options:
+
+   - Restore Windows files that are changed
+
+   - Copy all Windows files again
+
+  Setup seems to take just as long no matter which option I choose. Why?
+
+  A. Both of these options verify the validity of Windows 95 files. Verifying
+  the Windows 95 files takes as long as an original installation because Setup
+  must open each cabinet file to verify the Windows 95 files. Setup uses the
+  Setuplog.txt file to determine which files to check and marks each good file
+  with an "S." This mode also rebuilds the Vmm32.vxd file and recopies any file
+  with a lost long filename.
+
+8. Q. Is there a way to remove Windows 95?
+
+  A. Yes. To do so, you must choose to save your computer's system files on the
+  hard disk during Setup. You cannot store the "uninstall" file on a network
+  drive or floppy disk. To remove Windows 95, use these three steps:
+
+  1. Click the Start button, point to Settings, and then click Control Panel.
+
+  2. Double-click the Add/Remove Programs icon.
+
+  3. On the Install/Uninstall tab, click Windows 95, and then click Remove.
+
+  You can also remove Windows 95 by starting your computer with the Windows 95
+  Startup Disk and then typing "uninstal" (without the quotation marks) at the
+  command prompt.
+
+  NOTE: You are not prompted to save the system files during Setup if any of the
+  following conditions apply:
+
+   - You are installing Windows 95 in an empty directory.
+
+   - You are not running MS-DOS version 5.0 or later.
+
+   - You are reinstalling Windows 95 over itself.
+
+9. Q. I am not having any problems with Windows 95. How do I delete the
+  "uninstall" files created by Setup?
+
+  A. To delete the "uninstall" files and free disk space, use these three
+  steps:
+
+  1. Click the Start button, point to Settings, and then click Control Panel.
+
+  2. Double-click the Add/Remove Programs icon.
+
+  3. On the Install/Uninstall tab, click Old Windows 3.x/MS-DOS System Files,
+     and then click Remove.
+
+  Once you delete these files, you cannot use the Uninstall tool to remove
+  Windows 95.
+
+10. Q. Is there an Administrative Setup for network installations?
+
+  A. The /A and /N Setup switches have been replaced by the Netsetup tool. This
+  tool is available in the CD-ROM version of Windows 95. Network
+  administrators can use this tool to set up a shared copy of Windows 95 that
+  others can use to set up local or shared Windows 95 installations. Users can
+  also create custom scripts to automate the Setup process from the shared
+  copy of Windows 95.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Download Ww1190.exe now
+
+For additional information about how to download Microsoft Support
+files, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available 
+on the date of posting to scan this file for viruses. Once posted, 
+the file is housed on secure servers that prevent any unauthorized 
+changes to the file.
+
+Additional query words: 95 drdos dr-dos dr dos novell
+
+======================================================================
+Keywords          : kbfile win95 kbgraphxlinkcritical 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

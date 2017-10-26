@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40885: Passing a Single-Precision Array to FORTRAN from BASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40885: Passing a Single-Precision Array to FORTRAN from BASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40885/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40885/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40885/","publisher":null,"image":null,"headline":"Q40885: Passing a Single-Precision Array to FORTRAN from BASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40885-passing-a-single-precision-array-to-fortran-from-basic">Q40885: Passing a Single-Precision Array to FORTRAN from BASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40885
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890120-112 B_BasicCom H_Fortran | mspl13_basic
+Last Modified: 31-AUG-1989
+
+This article contains a sample BASIC program that calls a Microsoft
+FORTRAN Version 4.10 subroutine, passing a single-precision array. The
+array is passed to FORTRAN by FAR reference. This allows you to
+compile the FORTRAN subroutines with both medium- and large-memory
+models.
+
+When passing an array to FORTRAN by FAR reference, the BASIC program
+must use the VARSEG and VARPTR functions. The FAR keyword in FORTRAN
+requires that the variable segment (VARSEG) be passed as the first two
+bytes and the offset (VARPTR) as the next two bytes.
+
+The following BASIC program and Microsoft FORTRAN Version 4.10
+subroutine has been tested with QuickBASIC Versions 4.00, 4.00b, and
+4.50 and the BASIC Compiler Versions 6.00 and 6.00b. The BASIC
+compiler Versions 6.00 and 6.00b supports the alternate math (/FPa) in
+addition to the emulation math (/FPi), both of which have been
+successfully tested.
+
+Both QuickBASIC and the BASIC compiler can produce stand-alone
+programs (compiled with the /o option) and programs that require a
+run-time library (compiled without the /o option). The table below has
+been produced to show the results of execution with these options.
+
+Note: An "X" means the product worked correctly, and a "O" means the
+program performed incorrectly, possibly hanging the computer.
+
+   QuickBASIC           4.00      4.00b     4.50
+   ----------           ----      -----     ----
+   Stand-Alone          X         X         X
+   Run-Time Library     O         X         X
+
+   BASIC Compiler       6.00      6.00b
+   --------------       ----      -----
+   /FPa Stand-Alone     X         X
+   /FPa Run-Time        X         X
+   /FPi Stand-Alone     X         X
+   /FPi Run-Time        O         O
+
+The following is a code example:
+
+====== BASIC SOURCE CODE =====
+
+DECLARE SUB forsub (BYVAL segvar%, BYVAL valvar%)
+REM ****
+REM ** Passing the elements BYVAL is required. The first
+REM ** element is the segment and the second element is the
+REM ** offset. Using the integer sign "%" after the variable
+REM ** names ensures that two-bytes of information is being
+REM ** passed, since the FAR keyword is being used in the FORTRAN
+REM ** subroutine.
+REM ****
+
+DIM heap%(2048)
+COMMON SHARED /nmalloc/ heap%()
+REM   ** This is used to increase the amount of heap available to
+REM   ** the FORTRAN subroutine.
+
+DIM PassReal!(10)
+REM   ** Array actually contains elements 0 through 10 which
+REM   ** make 11 values being passed in this example.
+
+RANDOMIZE 32767
+PRINT "BASIC Language"
+PRINT "=============="
+FOR a! = 0 TO 10
+  PassReal!(a!) = RND * 10
+  PRINT PassReal!(a!),
+NEXT a!
+REM   ** Load the array elements with random single-precision numbers
+REM   ** and print these numbers to the screen.
+PRINT
+CALL forsub(VARSEG(PassReal!(0)), VARPTR(PassReal!(0)))
+REM   ** Call the FORTRAN subroutine passing the segment (VARSEG)
+REM   ** and offset (VARPTR) of the first element of the array.
+END
+
+===== FORTRAN SOURCE CODE =====
+
+      subroutine forsub(PassReal)
+      real*4 PassReal [far] (11)
+C     ** Receive the array into a four-byte real array of
+C     ** 11 elements, since the BASIC array was from 0 through 10
+C     ** which makes 11 elements.
+      write (*,*) ' '
+      write (*,*) 'FORTRAN Language'
+      write (*,*) '================'
+      write (*,*) PassReal(1), PassReal(2), PassReal(3)
+      write (*,*) PassReal(4), PassReal(5), PassReal(6)
+      write (*,*) PassReal(7), PassReal(8), PassReal(9)
+      write (*,*) PassReal(10), PassReal(11)
+C     ** Display the 11 elements to the screen to compare with
+C     ** what was displayed by the BASIC program.
+      RETURN
+      END
+
+===== OUTPUT FROM THE PROGRAM =====
+
+BASIC Language
+==============
+ 7.58816       6.704937      2.776845      8.669397      5.541911
+ .6488597      2.955019E-02                2.157865      1.836764
+ 3.983537      5.867804
+
+FORTRAN Language
+================
+       7.588160        6.704937        2.776845
+       8.669397        5.541911    6.488597E-01
+   2.955019E-02        2.157865        1.836764
+       3.983537        5.867804
+
+===== COMPILING INSTRUCTIONS =====
+
+   BC file1;
+   FL /FPi /c /AL file2.for
+   LINK file1 file2 /NOE;
+
+The above compiling instructions assume that FILE1.BAS is the BASIC
+source file, and the FILE2.FOR is the FORTRAN source filename. When
+invoking the FORTRAN compiler in the second step above, the filename
+and extension are used. The FORTRAN subroutine can be compiled with
+the /AM (medium-model) compiler directive.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

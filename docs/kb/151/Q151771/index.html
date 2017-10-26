@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151771: LICREQST.EXE Requesting a License Key from an Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151771: LICREQST.EXE Requesting a License Key from an Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151771/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151771/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151771/","publisher":null,"image":null,"headline":"Q151771: LICREQST.EXE Requesting a License Key from an Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151771-licreqstexe-requesting-a-license-key-from-an-object">Q151771: LICREQST.EXE Requesting a License Key from an Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151771
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.1,5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbSample kbCOMt kbLicensing kbMFC kbVC400 kbVC410 kbVC500 kbVC600 kbFAQ kbGrpDSMF
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The LicReqst sample illustrates how to use the IClassFactory2 interface to
+request an object's License key.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Licreqst.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+NOTE: Use the -d option when running Licrqst.exe to decompress the file and
+recreate the proper directory structure.
+
+MORE INFORMATION
+================
+
+The LicReqst sample is a dialog-based MFC application that illustrates how to
+use the IClassFactory2 interface to request an object's License key. LicReqst
+displays the ProgID of each of the currently registered ActiveX controls in a
+Listbox. When one of the displayed ProgID's is selected, an instance of the
+corresponding control is created and then asked for it's License key. If a valid
+key is returned, LicReqst displays the key and enables the "Copy to Clipboard"
+button that allows the License key to be copied to the Clipboard. The License
+key can then easily be pasted into code that uses the CWnd::CreateControl method
+to dynamically create an instance of the Control.
+
+LicReqst creates a textual version of the License key data in the form of a
+declaration of an array of WCHAR when copying the key to the Clipboard. This is
+done because the License key data could contain non-printable characters. A
+human-readable version of the License key data is also provided for reference
+and is included inside a Comment block in the final string that is copied to the
+Clipboard.
+
+For example, if an object uses the string "Copyright (c) 1994" (without the
+quotes) for its License key, LicReqst would generate the following block of text
+that could be copied to and pasted from the Clipboard:
+
+    /*
+    Copyright (c) 1994
+    */ 
+
+    WCHAR pwchLicenseKey[] =
+    {
+      0x0043,  0x006F,  0x0070,  0x0079,  0x0072,  0x0069,
+      0x0067,  0x0068,  0x0074,  0x0020,  0x0028,  0x0063,
+      0x0029,  0x0020,  0x0031,  0x0039,  0x0039,  0x0034,
+      0x0020
+    }; 
+
+You can use the previous block of text in code that creates an instance of the
+Licensed object, and you can use the pwchLicenseKey variable to specify the
+object's License key.
+
+For example, if MFC code is dynamically creating an instance of a Licensed
+ActiveX Control using the Create method of a Visual C++ Component Gallery
+generated wrapper class, the pwchLicenseKey variable can be used in the Create
+call like this:
+
+     BSTR bstrLicense = ::SysAllocStringLen(pwchLicenseKey,
+         sizeof(pwchLicenseKey)/sizeof(WCHAR));
+
+     m_MyControl.Create(NULL, WS_VISIBLE, CRect(10,10,10,10), this,
+         2, NULL, FALSE, bstrLicense);
+
+     ::SysFreeString(bstrLicense);
+
+Note how a BSTR is created from the pwchLicenseKey variable and how the BSTR is
+then used for the License key parameter in the Create call.
+
+NOTE: The code in this sample that generates the text copied to the Clipboard
+makes the assumption that it is being executed on a little endian system (Intel
+x86-class processors). Because of this, it will not work correctly on big endian
+system. For these systems, it is still possible to use the Helper function used
+internally by the sample to request the License key from an object.
+
+The sample uses a Helper function called RequestLicenseKey() to get the License
+key from an object based on its ProgID. The source code for the
+RequestLicenseKey() function is shown later in the Sample Code section.
+
+To find other locations of interest in the sample source code, use the Find in
+Files feature of the Visual C++ Developer Studio to search for the string named
+SAMPLE CODE. This string has been used to tag each of the modified sections in
+the source code.
+
+NOTE: Running the LicReqst sample on a licensed machine to obtain an object's
+License key, and then distributing that key to allow applications to be
+developed on other non-licensed machines, may be a violation of established
+copyrights. For more information and to determine if an object's License key can
+be legally redistributed, refer to the License Agreement provided with the
+object or contact the creator of the object.
+
+Sample Code
+-----------
+
+  // Compile options needed: none
+
+  /////////////////////////////////////////////////////////////////////// 
+  //  SAMPLE CODE - Implementation of the RequestLicenseKey function
+  // 
+  //  The RequestLicenseKey function uses the IClassFactory2 interface
+  //  to request a License key from an object specified by its ProgID.
+  // 
+  //  Parameters:
+  // 
+  //    [out] BSTR&amp; bstrLicenseKey
+  //          Upon return, this BSTR will contain either a valid
+  //          License key or an error message. It is the caller's
+  //          responsibility to call ::SysFreeString on this BSTR.
+  // 
+  //    [in]  CString strProgID
+  //          Specifies the ProgID of the object from which to request the
+  //          License key.
+  // 
+  // 
+  //  Return Value:
+  // 
+  //    A BOOL specifying success or failure. If TRUE is returned,
+  //    the License key was retrieved successfully and the
+  //    bstrLicenseKey parameter contains a valid License key. If
+  //    FALSE is returned, the License key was not retrieved
+  //    successfully and the bstrLicenseKey parameter contains a
+  //    descriptive error string.
+  // 
+  //    Regardless of the return value, it is the responsibility of
+  //    the caller to call ::SysFreeString on the returned bstrLicenseKey
+  //    parameter.
+  // 
+
+     BOOL RequestLicenseKey(BSTR&amp; bstrLicenseKey, CString strProgID)
+     {
+       USES_CONVERSION;
+
+       LPCLASSFACTORY2 pClassFactory;
+       CLSID clsid;
+       BOOL bValidKeyReturned = FALSE;
+
+       // Get the CLSID of the specified ProgID.
+       if (SUCCEEDED(CLSIDFromProgID(T2OLE(strProgID), &amp;clsid)))
+       {
+         // Create an instance of the object and query it for
+         //  the IClassFactory2 interface.
+         if (SUCCEEDED(CoGetClassObject(clsid, CLSCTX_INPROC_SERVER, NULL,
+           IID_IClassFactory2, (LPVOID *)(&amp;pClassFactory))))
+         {
+           LICINFO licinfo;
+
+           // Check to see if this object has a runtime License key.
+           if (SUCCEEDED(pClassFactory-&gt;GetLicInfo(&amp;licinfo)))
+           {
+             if (licinfo.fRuntimeKeyAvail)
+             {
+               HRESULT hr;
+
+               // The object has a runtime License key, so request it.
+               hr = pClassFactory-&gt;RequestLicKey(0, &amp;bstrLicenseKey);
+
+               if (SUCCEEDED(hr))
+               {
+                 if(bstrLicenseKey == NULL)
+                   bstrLicenseKey = ::SysAllocString(
+                     L"&lt;Object returned a NULL license key&gt;");
+                 else
+                   // You have the license key.
+                   bValidKeyReturned = TRUE;
+               }
+               else
+                 // Requesting the License key failed.
+                 switch(hr)
+                 {
+                   case E_NOTIMPL:
+                     bstrLicenseKey = ::SysAllocString(
+                       L"&lt;The object's class factory does not support"
+                       L" run-time license keys&gt;");
+                     break;
+
+                   case E_UNEXPECTED:
+                     bstrLicenseKey = ::SysAllocString(
+                       L"&lt;An unexpected error occurred when requesting the"
+                       L" run-time license key&gt;");
+                     break;
+
+                   case E_OUTOFMEMORY:
+                     bstrLicenseKey = ::SysAllocString(
+                       L"&lt;The object's class factory was unable to allocate"
+                       L" the license key&gt;");
+                     break;
+
+                   case CLASS_E_NOTLICENSED:
+                     bstrLicenseKey = ::SysAllocString(
+                       L"&lt;The object's class factory supports run-time"
+                       L" licensing, but the current machine\r\nitself is"
+                       L" not licensed. Thus, a run-time key is not"
+                       L" available on this machine&gt;");
+                     break;
+
+                   default:
+                     bstrLicenseKey = ::SysAllocString(
+                       L"&lt;An unknown error occurred when requesting the"
+                       L" license key&gt;");
+                 }
+             }
+             else
+               bstrLicenseKey = ::SysAllocString(
+                 L"&lt;The object has no runtime license key&gt;");
+           }
+           else
+             bstrLicenseKey = ::SysAllocString(
+               L"&lt;Unable to get the licensing capabilities of the object's"
+               L" class factory&gt;");
+
+           // Make sure you release the reference to the class factory.
+           pClassFactory-&gt;Release();
+         }
+         else
+           bstrLicenseKey = ::SysAllocString(
+             L"&lt;Unable to get the IClassFactory2 interface from the"
+             L" specified object&gt;");
+       }
+       else
+         bstrLicenseKey = ::SysAllocString(
+           L"&lt;Unable to get the CLSID of the specified object&gt;");
+
+       // Return a BOOL specifying whether or not you were able to get a
+       // valid license key.
+       return bValidKeyReturned;
+     }
+
+REFERENCES
+==========
+
+For more information, please see:
+
+  OLE Programmer's Reference; search on IClassFactory2 interface;
+  CWnd::CreateControl method.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbSample kbCOMt kbLicensing kbMFC kbVC400 kbVC410 kbVC500 kbVC600 kbFAQ kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC410 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.1,5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

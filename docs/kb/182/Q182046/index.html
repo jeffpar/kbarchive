@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182046: HOWTO: Work Around Bugs in Template Libraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182046: HOWTO: Work Around Bugs in Template Libraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182046/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182046/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182046/","publisher":null,"image":null,"headline":"Q182046: HOWTO: Work Around Bugs in Template Libraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182046-howto-work-around-bugs-in-template-libraries">Q182046: HOWTO: Work Around Bugs in Template Libraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182046
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbATL kbCompiler kbCPPonly kbMFC kbVC500 kbVC600 kbGrpDSVCCompiler
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Occasionally, bugs are found in a template library. Because all the source code
+for the library is available, it is tempting to go into the source code and
+modify the library. This is not advisable because there may be unintended side
+effects from the modifications to the library. In addition, technical support
+staff from the library vendor may decline to support a modified library.
+
+This article describes the following methods to work around bugs in template
+libraries without modifying the library, by using features of the C++ language:
+
+- Specialize the template function that has the bug.
+
+- Specialize the template class member that has the bug.
+
+- Specialize the template class that has the bug.
+
+- Derive from the template class to extend its functionality.
+
+- Use a #define/#undef pair around a #include to change a symbol name in a
+  template header that may be causing a conflict.
+
+MORE INFORMATION
+================
+
+Below are several descriptions of how to work around bugs in a template library.
+One or more of these workarounds may be applicable in any given case.
+
+The first three methods discuss specializing a template. To discover all of the
+specializations required, compile without optimizations (to prevent inlining any
+of these functions). Then either use DUMPBIN /SYMBOLS or use the /MAP linker
+option to generate a map file. In either case, you can find all of the
+specializations of the template class, function, or member used in the
+application. You need to provide a separate template specialization for each of
+these.
+
+Method 1. Specialize the template function that has the bug.
+------------------------------------------------------------
+
+To work around a bug in the template function CopyElements in AfxTempl.h that
+causes a series of elements to be incorrectly copied, you can specialize
+CopyElements for each type used in your program. The template declaration in
+AfxTempl.h is:
+
+  template&lt;class TYPE&gt; inline void AFXAPI
+     CopyElements(TYPE* pDest, const TYPE* pSrc, int nCount)
+     {
+     ...
+     }
+
+Supply a specialization for each object type that is used in CopyElements. For
+example, suppose you use CopyElements for an array of class MyType. Then your
+specialization would look similar to the following:
+
+  template&lt;&gt;
+     inline void AFXAPI
+     CopyElements&lt;MyType&gt;(MyType* pDest, const MyType* pSrc, int nCount)
+     {
+     // You supply the code to copy the elements.
+     }
+
+Method 2. Specialize the template class member that has the bug.
+----------------------------------------------------------------
+
+To work around a bug in the template class member function
+deque&lt;T&gt;::_Buyback(), you can specialize this member function for each
+type of deque in your program. For instance, if you used a deque&lt;MyType&gt;
+in your program, you can specialize _Buyback() as follows:
+
+  template&lt;&gt;
+     void std::deque&lt;MyType&gt;::_Buyback()
+     {
+     // You supply the code.
+     }
+
+Method 3. Specialize the template class that has the bug.
+---------------------------------------------------------
+
+It is usually simpler to specialize class members that contain bugs. However,
+there are some circumstances when the whole class must be specialized. For
+instance, Visual C++ 5.0 doesn't support partial template specialization. This
+means that class iterator_traits&lt;T*&gt; does not exist, which means you can't
+use iterator_traits with a pointer type. In this case, you can specialize
+iterator_traits for each of the pointer types in your program:
+
+  namespace std {
+
+         template&lt;&gt;
+         struct iterator_traits&lt;MyType*&gt; {
+             typedef ptrdiff_t difference_type;
+             typedef MyType value_type;
+             typedef MyType* pointer;
+             typedef MyType&amp; reference;
+             typedef random_access_iterator_tag iterator_category;
+         };
+
+     }
+
+Method 4. Derive from the template class to extend its functionality.
+---------------------------------------------------------------------
+
+Suppose that you need class CComPtr (defined in Atlbase.h) to have additional
+members const operator -&gt;&gt;() const and operator const T*() const. To
+accomplish this, create a template class and derive from it, and provide the
+additional member functions you need:
+
+  template &lt;class T&gt;
+     class CMyComPtr : public CComPtr&lt;T&gt;
+     {
+     public:
+
+         operator const T*() const {return (const T*)p;}
+         const T* operator-&gt;() const {_ASSERTE(p!=NULL);return (const T*)p;}
+
+         // You supply the other required member functions.
+     };
+
+Your derived class should mimic the behavior of the base class as closely as
+possible, with the exception of the added members, to extend the functionality
+of the base class. The derived class does not need to supply an implementation
+of every member of the base class. But pay careful attention to construction and
+copy (assignment operators and copy constructors) so that your derived class can
+be used in the same ways as the base class.
+
+Method 5. Use a #define/#undef pair around a #include to change a symbol
+name in a template header that may be causing a conflict.
+----------------------------------------------------------------------------------------------------------------------------------
+
+For instance, suppose you had a source file MyProg.cpp:
+
+     #include &lt;vector&gt;
+     class MyTest {
+     public:
+         int _Ty;
+         bool operator &lt; (const MyTest&amp;) const;
+         bool operator == (const MyTest&amp;) const;
+     };
+     int main ()
+     {
+         std::vector&lt;MyTest&gt; a;
+         return 1;
+     }
+
+This results in the following error in Visual C++ 5.0:
+
+  error C2300: 'MyTest' : class does not have a destructor called '~Ty'
+
+This is clearly a bug. The cause of the bug is that the template parameter "class
+_Ty" in one of the STL headers conflicts with the data member named "_Ty" in
+class MyTest. To work around the problem, you need to change one of the
+symbols--either "class _Ty" or "int _Ty". Renaming "int _Ty" in MyTest is the
+preferred way to work around this problem. If this is not possible, as a last
+resort you can change the template parameter "class _Ty" to "class _Ty0" without
+modifying the STL library. This can be done by surrounding the include directive
+for the vector header with #define/#undef directives as follows:
+
+     #define _Ty _Ty0
+     #include &lt;vector&gt;
+     #undef _Ty
+
+Additional query words: STL ATL afxtempl.h
+
+======================================================================
+Keywords          : kbATL kbCompiler kbCPPonly kbMFC kbVC500 kbVC600 kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

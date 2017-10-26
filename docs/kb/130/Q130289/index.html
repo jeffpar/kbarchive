@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130289: TN3270 Errors with Telnet Daemon Installed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130289: TN3270 Errors with Telnet Daemon Installed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130289/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130289/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130289/","publisher":null,"image":null,"headline":"Q130289: TN3270 Errors with Telnet Daemon Installed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130289-tn3270-errors-with-telnet-daemon-installed">Q130289: TN3270 Errors with Telnet Daemon Installed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130289
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have installed both a telnet daemon and the SNA Server TN3270 service on
+a computer running SNA Server , the following error message may appear:
+
+  Could not start the TN3270 service on \\servername
+  Error 2140: An internal windows NT error occurred
+
+The following events are recorded in the system log:
+
+  Event 102:   TN3270 Service initialization completed by initialization
+
+  error.
+
+  Explanation: TN3270 Service initialization failed.
+
+  Event 205:   Windows Sockets API call BIND for port 23 failed with
+
+  return code WSAEADDRINUSE.
+
+  Explanation: Port 23 is in use by another Windows NT process.
+
+If the TN3270 Server Service is started before your Telnet daemon, you encounter
+the same problem with a different error message:
+
+  Could not start "Telnet Daemon name" server service on \\servername
+  error 1067: the process terminated unexpectedly.
+
+The following events are recorded in the system log:
+
+  Event 6553:  Telnet daemon name
+  Description: Failed to initialize the "telnet" tcp service
+
+  Event 6553:  Telnet Daemon name
+  Description: Could not create service: telnet; error code 10048
+
+CAUSE
+=====
+
+By default, both services attempt to initialize port 23 as the default port for
+their services.
+
+RESOLUTION
+==========
+
+If you are running both the TN3270 Server service and a Telnet Daemon service,
+create a separate entry for both services in the following file:
+
+  %systemroot%\system32\drivers\etc\services
+
+The service name should be TN3270. You must specify unique port numbers for both
+the Telnet and TN3270 Service entries.
+
+For example, after you edit the SERVICES file it might read:
+
+  # Copyright (c) 1993-1994 Microsoft Corp.
+  #
+  # This file contains port numbers for well-known services as defined by
+  # RFC 1060 (Assigned Numbers).
+  #
+  # Format:
+  #
+  # &lt;service name&gt;  &lt;port number&gt;/&lt;protocol&gt;  [aliases...]   [#&lt;comment&gt;]
+  #
+
+  echo                7/tcp
+  echo                7/udp
+  discard             9/tcp    sink null
+  discard             9/udp    sink null
+  systat             11/tcp
+  systat             11/tcp    users
+  daytime            13/tcp
+  daytime            13/udp
+  netstat            15/tcp
+  qotd               17/tcp    quote
+  qotd               17/udp    quote
+  chargen            19/tcp    ttytst source
+  chargen            19/udp    ttytst source
+  ftp-data           20/tcp
+  ftp                21/tcp
+  telnet             23/tcp
+  tn3270             24/tcp
+  smtp               25/tcp    mail
+  time               37/tcp    timserver
+  time               37/udp    timserver
+  rlp                39/udp    resource      # resource location
+  name               42/tcp    nameserver
+  name               42/udp    nameserver
+  whois              43/tcp    nicname       # usually to sri-nic
+  domain             53/tcp    nameserver    # name-domain server
+  domain             53/udp    nameserver
+  nameserver         53/tcp    domain        # name-domain server
+
+NOTE: The new entry begins with tn3270.
+
+Additional query words: prodnt event viewer prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108924/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108924/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108924/","publisher":null,"image":null,"headline":"Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108924-doc-devmode-dmpapersize-member-documentation-error">Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108924
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
+Operating System(s): 
+Keyword(s): kbdocfix kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin95 _IK
+Last Modified: 12-MAY-2001
+
+3.00 3.10 4.00 | 3.50 3.51
+WINDOWS        | WINDOWS NT
+kbprint kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The dmPaperSize member of the DEVMODE structure is documented incorrectly. The
+documentation states that the dmPaperSize member may be set to zero if the
+length and width of the paper are specified by the dmPaperLength and
+dmPaperWidth members, respectively. However, the correct value to use for
+user-defined paper sizes is DMPAPER_USER.
+
+DMPAPER_USER is correctly listed in the Microsoft Windows 3.1 SDK documentation
+as meaning a user-defined paper size, but is completely omitted from the
+Microsoft Windows 3.0 SDK documentation.
+
+Additional query words: 3.00 3.10 4.00
+
+======================================================================
+Keywords          : kbdocfix kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin95 _IK 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

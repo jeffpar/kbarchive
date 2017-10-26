@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q46738: Mixed-Model Programming and long int Helper Library Routines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q46738: Mixed-Model Programming and long int Helper Library Routines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/046/Q46738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/046/Q46738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/046/Q46738/","publisher":null,"image":null,"headline":"Q46738: Mixed-Model Programming and long int Helper Library Routines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q46738-mixed-model-programming-and-long-int-helper-library-routines">Q46738: Mixed-Model Programming and long int Helper Library Routines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q46738</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">See</span> <span class="n">article</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">5.10</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">ENDUSER</span> <span class="p">|</span> <span class="n">SR</span><span class="p">#</span> <span class="n">G890606</span><span class="p">-</span><span class="m">19866</span> <span class="p">|</span> <span class="n">mspl13_c</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">25</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">1989</span>
+
+<span class="n">Question</span><span class="p">:</span>
+
+<span class="n">I</span> <span class="n">notice</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">C</span> <span class="n">Optimizing</span> <span class="n">Compiler</span> <span class="k">Version</span> <span class="m">5.10</span>
+<span class="n">implicitly</span> <span class="n">generates</span> <span class="n">calls</span> <span class="k">to</span> <span class="s2">"helper"</span> <span class="n">routines</span> <span class="k">in</span> <span class="k">to</span> <span class="n">handle</span> <span class="n">long</span>
+<span class="k">integer</span> <span class="n">arithmetic</span> <span class="n">for</span> <span class="n">operations</span> <span class="n">such</span> <span class="k">as</span> <span class="n">division</span><span class="p">,</span> <span class="n">left</span><span class="p">-</span><span class="n">shift</span><span class="p">,</span>
+<span class="n">right</span><span class="p">-</span><span class="n">shift</span><span class="p">,</span> <span class="n">etc</span><span class="p">.</span>
+
+<span class="n">I</span> <span class="n">see</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">situations</span> <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="n">My</span> <span class="n">program</span> <span class="n">is</span> <span class="n">compiled</span> <span class="k">in</span> <span class="n">small</span> <span class="k">model</span><span class="p">,</span> <span class="n">so</span> <span class="n">all</span> <span class="n">code</span> <span class="k">and</span> <span class="n">data</span> <span class="n">pointers</span>
+<span class="n">are</span> <span class="n">near</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">I</span> <span class="n">explicitly</span> <span class="n">declare</span> <span class="n">a</span> <span class="n">far</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">a</span> <span class="n">long</span>
+<span class="k">integer</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">I</span> <span class="n">perform</span> <span class="n">a</span> <span class="n">left</span><span class="p">-</span><span class="n">shift</span> <span class="n">on</span> <span class="n">this</span> <span class="n">long</span> <span class="k">integer</span><span class="p">.</span>
+
+<span class="n">Won</span><span class="s1">'t the library routines be expecting near pointers to data and,
+therefore, fail?
+
+Response:
+
+The compiler is aware of this mixed-model programming issue and
+generates appropriate calls to ensure that the helper routines don'</span><span class="n">t</span>
+<span class="n">make</span> <span class="n">the</span> <span class="n">wrong</span> <span class="n">assumption</span> <span class="k">as</span> <span class="k">to</span> <span class="n">near</span> <span class="n">versus</span> <span class="n">far</span> <span class="n">pointers</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">demonstrate</span> <span class="n">this</span><span class="p">,</span> <span class="n">consider</span> <span class="n">the</span> <span class="n">following</span> <span class="n">test</span> <span class="n">program</span><span class="p">:</span>
+
+<span class="n">long</span> <span class="n">lNear</span><span class="p">;</span>                     <span class="p">/*</span> <span class="n">this</span> <span class="n">resides</span> <span class="k">in</span> <span class="n">DGROUP</span> <span class="p">*/</span>
+<span class="n">long</span> <span class="n">far</span> <span class="n">lFar</span><span class="p">;</span>                  <span class="p">/*</span> <span class="n">this</span> <span class="n">goes</span> <span class="k">in</span> <span class="n">a</span> <span class="n">FAR_BSS</span> <span class="n">segment</span> <span class="p">*/</span>
+
+<span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">void</span><span class="p">);</span>
+
+<span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">long</span> <span class="n">lStack</span><span class="p">;</span>                <span class="p">/*</span> <span class="n">this</span> <span class="n">goes</span> <span class="k">in</span> <span class="n">SS</span><span class="p">,</span> <span class="n">part</span> <span class="k">of</span> <span class="n">DGROUP</span> <span class="p">*/</span>
+
+    <span class="n">lNear</span> <span class="p">=</span> <span class="m">30000</span><span class="p">;</span>
+    <span class="n">lFar</span>  <span class="p">=</span> <span class="m">15000</span><span class="p">;</span>
+    <span class="n">lNear</span> <span class="p">&lt;&lt;=</span><span class="m">4</span><span class="p">;</span>                 <span class="p">/*</span> <span class="n">force</span> <span class="n">call</span> <span class="k">to</span> <span class="n">helper</span> <span class="n">routines</span> <span class="p">*/</span>
+    <span class="n">lFar</span> <span class="p">&lt;&lt;=</span> <span class="m">4</span><span class="p">;</span>
+    <span class="n">lStack</span> <span class="p">=</span> <span class="n">lNear</span> <span class="p">+</span> <span class="n">lFar</span><span class="p">;</span>
+    <span class="n">lStack</span> <span class="p">&lt;&lt;=</span> <span class="m">4</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">comments</span> <span class="n">point</span> <span class="k">to</span> <span class="n">the</span> <span class="n">salient</span> <span class="n">points</span> <span class="k">of</span> <span class="n">this</span> <span class="n">test</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span>
+<span class="n">three</span> <span class="n">long</span> <span class="n">variables</span><span class="p">,</span> <span class="n">one</span> <span class="k">in</span> <span class="n">DGROUP</span><span class="p">,</span> <span class="n">one</span> <span class="k">in</span> <span class="n">a</span> <span class="n">far</span> <span class="n">segment</span><span class="p">,</span> <span class="k">and</span> <span class="n">one</span> <span class="n">on</span>
+<span class="n">the</span> <span class="n">stack</span><span class="p">.</span> <span class="n">The</span> <span class="n">compiler</span> <span class="n">is</span> <span class="n">asked</span> <span class="k">to</span> <span class="n">left</span><span class="p">-</span><span class="n">shift</span> <span class="n">the</span> <span class="n">near</span> <span class="k">and</span> <span class="n">far</span> <span class="n">longs</span>
+<span class="n">by</span> <span class="m">4</span> <span class="n">bits</span> <span class="k">to</span> <span class="n">force</span> <span class="n">a</span> <span class="n">call</span> <span class="k">to</span> <span class="n">the</span> <span class="n">helper</span> <span class="n">routines</span><span class="p">.</span> <span class="n">Some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">compiled</span>
+<span class="n">code</span> <span class="n">generated</span> <span class="n">by</span> <span class="n">the</span> <span class="n">above</span> <span class="n">source</span> <span class="n">is</span> <span class="n">shown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="p">...</span>
+
+<span class="n">EXTRN</span>   <span class="n">__acrtused</span><span class="p">:</span><span class="n">ABS</span>
+<span class="n">EXTRN</span>   <span class="n">__chkstk</span><span class="p">:</span><span class="n">NEAR</span>
+<span class="n">EXTRN</span>   <span class="n">__aNNalshl</span><span class="p">:</span><span class="n">NEAR</span>
+<span class="n">EXTRN</span>   <span class="n">__aNFalshl</span><span class="p">:</span><span class="n">NEAR</span>
+<span class="n">_BSS</span>      <span class="n">SEGMENT</span>
+<span class="n">COMM</span> <span class="n">NEAR</span>       <span class="n">_lNear</span><span class="p">:</span> <span class="n">BYTE</span><span class="p">:</span>    <span class="m">4</span>
+<span class="n">COMM</span> <span class="n">FAR</span>        <span class="n">_lFar</span><span class="p">:</span>  <span class="n">BYTE</span><span class="p">:</span>    <span class="m">4</span>
+
+<span class="p">...</span>
+
+<span class="p">;|***</span>     <span class="n">lNear</span> <span class="p">&lt;&lt;=</span><span class="m">4</span><span class="p">;</span>
+<span class="p">;</span> <span class="n">Line</span> <span class="m">12</span>
+        <span class="p">***</span> <span class="m">000029</span>      <span class="n">b0</span> <span class="m">04</span>        <span class="n">mov</span>     <span class="n">al</span><span class="p">,</span><span class="m">4</span>
+        <span class="p">***</span> <span class="m">00002</span><span class="n">b</span>      <span class="m">50</span>           <span class="n">push</span>    <span class="n">ax</span>
+        <span class="p">***</span> <span class="m">00002</span><span class="n">c</span>      <span class="n">b8</span> <span class="m">00</span> <span class="m">00</span>     <span class="n">mov</span>     <span class="n">ax</span><span class="p">,</span><span class="n">OFFSET</span> <span class="n">DGROUP</span><span class="p">:</span><span class="n">_lNear</span>
+        <span class="p">***</span> <span class="m">00002f</span>      <span class="m">50</span>           <span class="n">push</span>    <span class="n">ax</span>
+        <span class="p">***</span> <span class="m">000030</span>      <span class="n">e8</span> <span class="m">00</span> <span class="m">00</span>     <span class="n">call</span>    <span class="n">__aNNalshl</span>
+<span class="p">;|***</span>     <span class="n">lFar</span> <span class="p">&lt;&lt;=</span> <span class="m">4</span><span class="p">;</span>
+<span class="p">;</span> <span class="n">Line</span> <span class="m">13</span>
+        <span class="p">***</span> <span class="m">000033</span>      <span class="n">b0</span> <span class="m">04</span>        <span class="n">mov</span>     <span class="n">al</span><span class="p">,</span><span class="m">4</span>
+        <span class="p">***</span> <span class="m">000035</span>      <span class="m">50</span>           <span class="n">push</span>    <span class="n">ax</span>
+        <span class="p">***</span> <span class="m">000036</span>      <span class="n">b8</span> <span class="m">00</span> <span class="m">00</span>     <span class="n">mov</span>     <span class="n">ax</span><span class="p">,</span><span class="n">OFFSET</span> <span class="n">_lFar</span>
+        <span class="p">***</span> <span class="m">000039</span>      <span class="n">ba</span> <span class="m">00</span> <span class="m">00</span>     <span class="n">mov</span>     <span class="n">dx</span><span class="p">,</span><span class="n">SEG</span> <span class="n">_lFar</span>
+        <span class="p">***</span> <span class="m">00003</span><span class="n">c</span>      <span class="m">52</span>           <span class="n">push</span>    <span class="n">dx</span>
+        <span class="p">***</span> <span class="m">00003</span><span class="n">d</span>      <span class="m">50</span>           <span class="n">push</span>    <span class="n">ax</span>
+        <span class="p">***</span> <span class="m">00003</span><span class="n">e</span>      <span class="n">e8</span> <span class="m">00</span> <span class="m">00</span>     <span class="n">call</span>    <span class="n">__aNFalshl</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">even</span> <span class="n">though</span> <span class="n">this</span> <span class="n">program</span> <span class="n">compiled</span> <span class="k">in</span> <span class="n">small</span> <span class="k">model</span><span class="p">,</span> <span class="n">it</span> <span class="n">created</span>
+<span class="n">a</span> <span class="n">far</span> <span class="n">segment</span> <span class="p">(</span><span class="n">FAR_BSS</span><span class="p">),</span> <span class="k">and</span> <span class="n">it</span> <span class="n">put</span> <span class="n">lFar</span> <span class="k">in</span> <span class="n">it</span> <span class="k">with</span> <span class="n">the</span> <span class="n">declaration</span>
+<span class="s2">"COMM FAR _lFar: Byte: 4"</span><span class="p">.</span> <span class="n">Note</span> <span class="n">also</span> <span class="n">the</span> <span class="n">difference</span> <span class="n">between</span> <span class="n">how</span> <span class="n">it</span>
+<span class="n">left</span><span class="p">-</span><span class="n">shifted</span> <span class="n">the</span> <span class="n">lNear</span> <span class="n">variable</span> <span class="p">(</span><span class="n">__aNNalshl</span><span class="p">)</span> <span class="n">versus</span> <span class="n">the</span> <span class="n">way</span> <span class="n">it</span> <span class="n">shifted</span>
+<span class="n">the</span> <span class="n">lFar</span> <span class="n">variable</span> <span class="p">(</span><span class="n">__aNFalshl</span><span class="p">).</span> <span class="n">The</span> <span class="n">routine</span> <span class="n">__aNNalshl</span> <span class="n">is</span> <span class="n">for</span> <span class="n">small</span>
+<span class="k">model</span> <span class="p">(</span><span class="n">near</span> <span class="n">code</span> <span class="n">pointer</span> <span class="n">plus</span> <span class="n">near</span> <span class="n">data</span> <span class="n">pointer</span><span class="p">),</span> <span class="n">whereas</span> <span class="n">__aNFalshl</span>
+<span class="n">is</span> <span class="n">compact</span> <span class="k">model</span> <span class="p">(</span><span class="n">near</span> <span class="n">code</span> <span class="n">pointer</span> <span class="n">plus</span> <span class="n">far</span> <span class="n">data</span> <span class="n">pointer</span><span class="p">);</span> <span class="n">this</span> <span class="n">makes</span>
+<span class="n">complete</span> <span class="n">sense</span> <span class="n">for</span> <span class="n">the</span> <span class="n">mixed</span><span class="p">-</span><span class="k">model</span> <span class="n">program</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">summarize</span><span class="p">,</span> <span class="n">the</span> <span class="n">compiler</span> <span class="n">knows</span> <span class="n">about</span> <span class="n">these</span> <span class="n">near</span><span class="p">/</span><span class="n">far</span> <span class="n">dependencies</span>
+<span class="n">between</span> <span class="n">source</span> <span class="n">code</span> <span class="k">and</span> <span class="n">library</span> <span class="n">routines</span><span class="p">,</span> <span class="k">and</span> <span class="n">puts</span> <span class="k">in</span> <span class="n">requests</span> <span class="n">for</span> <span class="n">the</span>
+<span class="n">appropriate</span> <span class="n">routines</span> <span class="n">even</span> <span class="k">if</span> <span class="n">you</span><span class="s1">'re in a memory model that wouldn'</span><span class="n">t</span>
+<span class="n">normally</span> <span class="n">use</span> <span class="n">them</span> <span class="p">(</span><span class="k">in</span> <span class="n">this</span> <span class="k">case</span><span class="p">,</span> <span class="n">you</span> <span class="n">wouldn</span><span class="s1">'t normally generate a call
+to __aNFalshl in small model).
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

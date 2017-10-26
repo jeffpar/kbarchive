@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301349: PRB: Cannot Install on Server Appliance Via Software Update | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301349: PRB: Cannot Install on Server Appliance Via Software Update" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301349/","publisher":null,"image":null,"headline":"Q301349: PRB: Cannot Install on Server Appliance Via Software Update","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301349-prb-cannot-install-on-server-appliance-via-software-update">Q301349: PRB: Cannot Install on Server Appliance Via Software Update</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301349
+Product(s): Microsoft Windows NT
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Server Appliance Kit (SAK), version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A properly constructed setup/.msi package is created and runs normally. However,
+when packaged as part of a software update-compatible .cab file and then
+uploaded to the server appliance, the package is not installed.
+
+CAUSE
+=====
+
+When the software update is in progress on the server appliance, the entire
+process is being run under the local system account of Windows NT
+AUTHORITY\SYSTEM.
+
+This is not the case when the software update is run in interactive mode by a
+user, and as a result certain switches/parameters must be passed to MSIEXEC for
+proper operation.
+
+The software update feature is designed to be used in a headless environment in
+which a user is not capable of interacting with the setup process. Therefore,
+any part of a software update process that requires interaction from the user
+during installation will cause the setup to stop responding ("hang").
+
+RESOLUTION
+==========
+
+In the software update .inf file, it is important to specify launch conditions
+for the .msi package being used. Specifically, the installation should be run in
+one of the following ways:
+
+- Run the setup in quiet mode. Do not request user input or show pop-up dialog
+  boxes. This can be accomplished by passing the /qn switch to the input. For
+  example:
+
+   - For InstallShield Setup.exe: Setup.exe /V"/qn"
+
+   - For MSIExec .msi files: Msiexec.exe /i default.msi /qn
+
+- Run the setup such that all package information is stored at the system
+  level, rather then a per-user level. This can be done by passing the MSI
+  directive: ALLUSERS = 1. For example:
+
+   - For InstallShield Setup.Exe: Setup.exe /V"ALLUSERS=1"
+
+   - For MSIExec .msi files: Msiexec.exe /i ALLUSERS=1
+
+MORE INFORMATION
+================
+
+The following example is the recommended way to set up the Info.inf file
+included in the software update .cab so that it will work in quiet mode, and
+specify ALLUSERS=1. The example uses an InstallShield-built Setup.exe:
+
+  InstallCommand="&lt;setup.exe&gt; /V""ALLUSERS=1 /qn"""
+
+  where &lt;setup.exe&gt; is the name of the setup executable file being used.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q227091 Command-Line Switches for the Microsoft Windows Installer Tool
+
+Additional query words: sak server appliance kit ALLUSERS
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbSAK200 kbAudDeveloper kbSAKSearch
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316090/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316090/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316090/","publisher":null,"image":null,"headline":"Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316090-bug-fatal-error-c1001-when-you-compile-with-global-optimizer">Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q316090
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbCompilerkbbuglist
+Last Modified: 23-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a program with global optimizer, you receive the following
+error message:
+
+  "fatal error C1001: INTERNAL COMPILER ERROR (compiler file
+  'f:\vs70builds\9466\vc\Compiler\Utc\src\P2\emit.c', line 937)
+  Please choose the Technical Support command on the Visual Help menu, or open
+  the Technical Support help file for more information."
+
+CAUSE
+=====
+
+The behavior occurs because optimizer puts too many instructions in the function
+prolog for a particular optimization (frame pointer omission).
+
+RESOLUTION
+==========
+
+To work around the problem, you must prevent instructions from being scheduled
+in the prolog. To do this, do one of the following:
+
+- Make a function call to an external function that is contained in another
+  object file (may not work when "Whole program optimization" (/GL) is enabled)
+  or DLL.
+
+  -or-
+
+- Use the undocumented _ReadWriteBarrier() intrinsic at the beginning of the
+  affected function. This intrinsic does not generate any code but prevents
+  optimizations across the intrinsic. To do this, add the following declaration
+  to the file:
+
+  void _ReadWriteBarrier();
+  #pragma intrinsic(_ReadWriteBarrier) 
+
+Add the following code at the beginning of the function that causes the C1001
+error:
+
+  #if _MSC_VER==1300
+    _ReadWriteBarrier();
+  #endif
+
+NOTE: The use of undocumented intrinsics is not guaranteed to work in future
+versions of the compiler.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: Og ICE KbCpp KbNative
+
+======================================================================
+Keywords          : kbCompiler kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

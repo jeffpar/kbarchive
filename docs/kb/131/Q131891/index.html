@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131891/","publisher":null,"image":null,"headline":"Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131891-sna-how-to-install-remote-admin-and-focus-on-remote-domains">Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131891
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbusage
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to install SNA Admin for SNA Server 2.x and SNA
+Manager for SNA Server 3.0 and 4.0, and how to use these applications to focus
+on the remote SNA subdomains you want to administer.
+
+NOTE: You can use SNA Admin/SNA Manager to administer a remote SNA Server not
+only over a local area network, but also over a Remote Access Service (RAS)
+link.
+
+MORE INFORMATION
+================
+
+How to Install SNA Admin
+------------------------
+
+To automatically install SNA Admin during the SNA Server Win32 client
+installation (that is, when you install from the SNA 2.x CD-ROM by running
+CLIENTS\WINNT\&lt;processor_type&gt;\SETUP.EXE), select the check box to install
+SNA Admin when prompted.
+
+How to Install SNA Manager
+--------------------------
+
+To automatically install SNA Manager during the SNA Server Win32 client
+installation (that is, when you install from the SNA 3.0 or 4.0 CD-ROM by
+running CLIENTS\WINNT\&lt;processor_type&gt;\SETUP.EXE), select the check box to
+install SNA Server Manager when prompted.
+
+How to Use SNA Admin to Focus On a Remote Domain
+------------------------------------------------
+
+When you run SNA Admin, you can set the focus on a remote domain by choosing the
+Select Domain option from the File menu. In the Select Domain dialog box you can
+type either a remote domain name or a remote computer name:
+
+- If the remote SNA Server is in a Windows NT domain or a SNA Server subdomain
+  (for SNA Server 2.11 or later), enter the domain (or SNA subdomain) name
+  following the Domain prompt:
+
+  "Domain: &lt;remote_domain_name&gt; (for example: Domain: REMOTEDOMAIN)"
+  (without the quotation marks)
+
+  -or-
+
+- If you want to focus on a specific remote computer, type the Windows NT
+  computer name of the remote SNA Server following the Domain prompt:
+
+  "Domain: \\&lt;computer_name&gt; (for example: Domain: \\REMOTESERVER)"
+  (without the quotation marks)
+
+How to Use SNA Manager to Focus On a Remote Domain
+--------------------------------------------------
+
+When you run SNA Manager, you can set the focus on a remote domain by choosing
+the Open Subdomain option from the File menu. In the Open Subdomain dialog box
+you can type either a remote subdomain name or a remote computer name:
+
+- Enter the SNA subdomain name at the Subdomain prompt:
+
+  " Subdomain: &lt;remote_subdomain_name&gt; (for example: Subdomain:
+  REMOTEDOMAIN)" (without the quotation marks)
+
+  -or-
+
+- If you want to focus on a specific remote computer, type the Windows NT
+  computer name of the remote SNA Server following the Subdomain prompt:
+
+  "Subdomain: \\&lt;computer_name&gt; (for example: Subdomain: \\REMOTESERVER)"
+  (without the quotation marks)
+
+NOTE: If you want to connect via TCP/IP sockets to a server in a remote domain,
+you must enter the Windows NT computer name at the Domain or Subdomain prompt,
+since there is no reliable way to dynamically locate remote SNA Servers using
+TCP/IP sockets. In addition, the TCP/IP address for the remote SNA Server can be
+used instead of the computer name (for example: Domain: \\&lt;TCP/IP
+Address&gt;)
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102020: How to Monitor Disk Performance with Performance Monitor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102020: How to Monitor Disk Performance with Performance Monitor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102020/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102020/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102020/","publisher":null,"image":null,"headline":"Q102020: How to Monitor Disk Performance with Performance Monitor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102020-how-to-monitor-disk-performance-with-performance-monitor">Q102020: How to Monitor Disk Performance with Performance Monitor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102020
+Product(s): Microsoft Windows NT
+Version(s): ; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Disk performance counters, the Diskperf service, must be started prior to the
+Performance Monitor in order to monitor disk performance. Disk performance
+counters are disabled by default.
+
+MORE INFORMATION
+================
+
+The impact of the Performance Monitor on the overall performance of a system is
+minimal. However, the counters (which are necessary to monitor disk performance)
+will have a slight impact to the overall system performance. For this reason,
+these counters are not started by default. Therefore, for best system
+performance, they should be started prior to beginning disk performance
+monitoring and then terminated.
+
+To enable the Diskperf service, use either of the following two procedures.
+
+Procedure 1
+-----------
+
+1. Choose the Command Prompt icon in the Main group.
+
+2. At the command prompt, type "DISKPERF -Y" (without the quotation marks) and
+  press ENTER. You will receive the following message:
+
+  Disk performance counters on this system are now set to start at boot. This
+  change will take effect after the system is rebooted.
+
+Procedure 2
+-----------
+
+1. Start Control Panel, choose Devices and change the startup value of Diskperf
+  to Boot.
+
+2. Restart your computer.
+
+Once the system is restarted, disk performance monitoring is enabled. After
+monitoring disk performance, you should turn off the Diskperf service.
+
+Use to following command to disable the Diskperf service:
+
+  DISKPERF -N -- This will set the disk performance counters to never start.
+  For best overall system performance issue this command from the command
+  prompt after completing disk performance monitoring.
+
+Other helpful commands that may be issued from the command prompt to assist in
+disk performance monitoring are:
+
+  DISKPERF /? -- Displays help for the DISKPERF command.
+
+  DISKPERF -- Displays the current status of the disk performance counters
+  along with help for the DISKPERF command.
+
+  Diskperf -YE, the E allows monitoring of all NT Software Fault Tolerant sets
+  that utilize the FTDISK device driver. This does not apply to hardware
+  arrays.
+
+
+Additional query words: prodnt physicaldisk physical disk object counter zero
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :; winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

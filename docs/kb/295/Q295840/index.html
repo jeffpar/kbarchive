@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295840/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295840/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295840/","publisher":null,"image":null,"headline":"Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295840-howto-determine-if-a-service-exists-using-visual-foxpro">Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295840
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 28-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Occasionally, the installation, configuration, or successful execution of a
+custom application written with Visual FoxPro (VFP) is dependent on the
+existence of a particular service. Given a valid computer and service name, the
+code in this article will let you determine if a particular service exists.
+
+MORE INFORMATION
+================
+
+Services are a component of the Microsoft Windows NT and Microsoft Windows 2000
+operating systems. A service is defined as:
+
+  "A program, routine, or process that performs a specific system function to
+  support other programs, particularly at a low (close to the hardware) level."
+
+When executed on a computer running Microsoft Windows NT or Microsoft Windows
+2000, the following VFP code determines if the "IISADMIN" service is present on
+the local computer (regardless of whether it is running or not).
+
+To use this code, follow these steps:
+
+1. Start Visual FoxPro and create a new program.
+
+2. Paste the following code in the program window:
+
+  #DEFINE ThisMachine	SUBSTR(SYS(0),1,ATC(" ",SYS(0))-1)
+
+  ? ServiceExist("IISADMIN",ThisMachine)
+
+  PROCEDURE ServiceExist(lcServiceName, lcMachineName)
+  *~	Prevent this procedure from running
+  *~ 	if we're not on NT/2000.
+  	IF !INLIST(UPPER(OS()),"WINDOWS 5.00","WINDOWS NT 4.00")
+  		RETURN .F.
+  	ENDIF
+
+  	#DEFINE GENERIC_READ	0x80000000
+  	DECLARE INTEGER OpenSCManager IN advapi32.DLL ;
+  		STRING, STRING, INTEGER
+  	DECLARE INTEGER OpenService IN advapi32.DLL ;
+  		INTEGER, STRING, INTEGER
+
+  	LOCAL liSCM, liService
+  	liSCM = OpenSCManager(lcMachineName, NULL, GENERIC_READ)
+  	IF !(liSCM &gt; 0)
+  		RETURN .F.
+  	ENDIF
+  	liService = OpenService(liSCM, lcServiceName, GENERIC_READ)
+
+  	RETURN IIF(liService &gt; 0, .T.,.F.)
+  ENDPROC
+
+3. Save and then run the program.
+
+4. If the IISADMIN service is present on the local computer, a .T. is printed to
+  _SCREEN; if not, a .F. is printed.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Trevor
+Hancock and Mike Stewart, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

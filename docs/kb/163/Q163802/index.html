@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163802/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163802/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163802/","publisher":null,"image":null,"headline":"Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163802-howto-retrieve-contact-names-from-schedule-tasks">Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163802
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbOOP kbvfp300 kbvfp500 kbvfp600
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When processing Schedule+ Tasks via OLE Automation, the only reference to the
+Contact information is the ContactItemID property. This article shows how to
+retrieve the Contact information based on that property.
+
+MORE INFORMATION
+================
+
+The methods below show different ways of processing Schedule+ Tasks. The method
+you use depends on whether you know that all of your tasks have Contacts
+associated with them.
+
+Method 1
+--------
+
+The following works only if every task has a Contact. If you get the error,
+"Function argument value, type, or count is invalid," on the GetRows method
+call, then you know that not every task has a contact, so you have to process
+the tasks row by row instead, as shown in Method 2.
+
+  * BEGIN CODE
+     oSched = CREATEOBJECT("SchedulePlus.Application")
+     oSched.Logon
+     mySched = oSched.ScheduleLogged
+     myTasks = mySched.SingleTasks
+     IF myTasks.Rows &gt; 0  &amp;&amp; Make sure there are tasks to process
+        myContacts = mySched.Contacts
+        aTasks = myTasks.getrows(100,"text","contactitemid")
+        FOR x = 1 TO ALEN(aTasks,1)  &amp;&amp; process the rows in the array
+           * The following line limits the Contacts table to the given
+           * criteria:  ItemId = &lt;contactitemid from the task&gt;
+           myContacts.SetRestriction("itemid",aTasks(x,2),"==")
+           oneContact = myContacts.Item
+           ?"Task Description: ", aTasks(x,1)
+           ?"Contact First Name: ", oneContact.GetProperty("FirstName")
+           ?"Contact Last Name: ", oneContact.GetProperty("LastName")
+        ENDFOR
+     ENDIF
+     oSched.Logoff
+     * END CODE
+
+Method 2
+--------
+
+The following method processes every task in the Schedule+ Task table. It
+verifies that there is a contact associated with the task before attempting to
+retrieve the contact information.
+
+     * BEGIN CODE
+     oSched = CREATEOBJECT("SchedulePlus.Application")
+     oSched.Logon
+     mySched = oSched.ScheduleLogged
+     myTasks = mySched.SingleTasks
+     myContacts = mySched.Contacts
+     DO WHILE !myTasks.IsEndofTable
+        oneTask = myTasks.Item
+        ?"Description: ", oneTask.GetProperty("Text")
+        * We must verify that there is a contact for the task; otherwise,
+        * the GetProperty call will cause an error.
+        IF TYPE('oneTask.GetProperty("ContactItemID")') = "C"
+           * The following line limits the Contacts table to the given
+           * criteria:  ItemId = &lt;contactitemid from the task&gt;
+           myContacts.SetRestriction("itemid",;
+              oneTask.GetProperty("contactitemid"),"==")
+           oneContact = myContacts.Item
+           ?"Contact Name: "
+           ??ALLTRIM(oneContact.GetProperty("FirstName")) + " "
+           ??ALLTRIM(oneContact.GetProperty("LastName"))
+        ELSE
+           ?"Contact Name: No Contact For This Task"
+        ENDIF
+        myTasks.Skip(1)
+     ENDDO
+     oSched.Logoff
+     * END CODE
+
+REFERENCES
+==========
+
+The Microsoft Developer Network Library, January 1997.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbOOP kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

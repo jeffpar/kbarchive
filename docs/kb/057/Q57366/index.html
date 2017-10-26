@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57366: DateSerial# Accepts Values Outside Range for Arguments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57366: DateSerial# Accepts Values Outside Range for Arguments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57366/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57366/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57366/","publisher":null,"image":null,"headline":"Q57366: DateSerial# Accepts Values Outside Range for Arguments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57366-dateserial-accepts-values-outside-range-for-arguments">Q57366: DateSerial# Accepts Values Outside Range for Arguments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57366
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | docerr SR# S891227-47 | mspl13_basic
+Last Modified: 8-JAN-1991
+
+Page 425 of the "Microsoft BASIC 7.0: Language Reference" manual (for
+7.00 and 7.10) states that the DateSerial# function will generate an
+"Illegal function call" if values are specified outside the given
+ranges of the following:
+
+   year%  - A year from 1753 to 2078
+   month% - A month from 1 to 12
+   day%   - A day from 1 to 31
+
+An "Illegal function call" is only generated if the year, month, and
+day arguments generate a serial number outside the valid range of
+-53,688 to 65,380. The corresponding dates for this range are January
+1, 1753, to December 31, 2078.
+
+The README.DOC file provided with Microsoft BASIC Professional
+Development System (PDS) Versions 7.00 and 7.10 notes this
+documentation error.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+The DateSerial# function can return serial numbers for dates in the
+following range, inclusive:
+
+   DATE:     January 1, 1753, to December 31, 2078
+   SERIAL#:           -53688 to 65380
+
+The DateSerial# function generates an "Illegal function call" only if
+the arguments passed to it generate a serial number outside the range
+of -53,688 to 65,380. The following example uses a value outside the
+given range for the "month%" argument, but does not generate an
+"Illegal function call":
+
+   theDate# = DateSerial#(89, 13, 1)
+
+The serial number returned in the above call actually corresponds to
+the date January 1, 1990. A value of 13 logically corresponds to the
+month following December. Since December is the last month of a year,
+the year value is incremented by 1, and the month value is reset to 1,
+which corresponds to January; therefore, the following two calls to
+DateSerial# return the same serial number:
+
+   theDate# = DateSerial#(89, 13, 1)
+   theDate# = DateSerial#(90,  1, 1)
+
+Negative numbers work in the same way. A value of "-1" for the month
+argument refers to the month of November in the previous year. The
+following to calls to DateSerial# return the same serial number:
+
+   theDate# = DateSerial#(90, -1, 1)
+   theDate# = DateSerial#(89, 11, 1)
+
+The following are example calls to DateSerial# that generate the
+"Illegal function call" error message since the resulting serial
+number falls outside the valid range:
+
+   theDate# = DateSerial#(2078, 12, 32)  -&gt;  January   1, 2079
+   theDate# = DateSerial#(2078, 13,  1)  -&gt;  January   1, 2079
+   theDate# = DateSerial#(1753,  0, 31)  -&gt;  December 31, 1752
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167697/","publisher":null,"image":null,"headline":"Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167697-fix-activex-control-in-ie-asserts-in-ctlinplccpp-line-328">Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167697
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbole kbActiveX kbCOMt kbCtrl kbCtrlCreate kbIE300 kbIE301 kbMFC kbVC400bug kb
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.0a, 4.1, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Internet Explorer (Programming) versions 3.0, 3.01, 3.02 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Clicking on an MFC ActiveX control that is hosted in a frame in Internet
+Explorer may cause an assert in CTLINPLC.CPP, line 328.
+
+CAUSE
+=====
+
+The assert is in COleControl::BuildSharedMenu(), where it checks:
+
+     if (m_pUIActiveInfo != NULL)
+     {
+        ASSERT(m_pUIActiveInfo-&gt;m_hSharedMenu != NULL);
+        return TRUE;
+     }
+
+m_pUIActiveInfo-&gt;m_hSharedMenu will always be NULL because you are not doing
+menu merging. m_pUIActiveInfo is set to NULL when the control is UI
+de-activated. In this case, the control is inplace activated when you first
+click on it, so COleControl::OnActivateInPlace() is called. This, in turn, calls
+BuildSharedMenu(). When BuildSharedMenu() returns, but before
+OnActivateInPlace() is exited, Internet Explorer calls
+DoVerb(OLEIVERB_UIACTIVATE) on the control. This causes OnActivateInPlace() to
+be re-entered and BuildSharedMenu() to be called again. Because the control has
+not been UI-de-activated, m_pUIActiveInfo is not NULL.
+
+RESOLUTION
+==========
+
+You need to prevent OnActivateInPlace() from being re-entered by overriding
+OnActivateInPlace() and setting a static boolean flag to determine if it has
+been re-entered. If that is the case, then return the following: "
+
+     HRESULT CTestCtrl::OnActivateInPlace(BOOL bUIActivate, LPMSG pMsg)
+     {
+        static BOOL bInsideFunc = FALSE;
+        if (!bInsideFunc)
+        {
+           bInsideFunc = TRUE;
+           HRESULT hr = COleControl::OnActivateInPlace(bUIActivate, pMsg);
+           bInsideFunc = FALSE;
+           return hr;
+        }
+        return S_OK;
+     }
+
+" (without the quotation marks)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Put an MFC ActiveX control in a frame in Internet Explorer.
+
+2. Click on the control.
+
+3. Click on a different frame.
+
+4. Click back on the control.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbole kbActiveX kbCOMt kbCtrl kbCtrlCreate kbIE300 kbIE301 kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbIE302 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

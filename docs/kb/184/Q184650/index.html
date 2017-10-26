@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184650/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184650/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184650/","publisher":null,"image":null,"headline":"Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184650-info-what-language-features-does-vb-have-that-vbceevb-do-not">Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184650
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB
+Last Modified: 16-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+- Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following language features are available in Visual Basic 5.0 and 6.0, but
+are not available in Windows CE Toolkit for Visual Basic (VBCE) or eMbedded
+Visual Basic (eVB).
+
+Category         Omitted Feature/Keyword and Notes
+--------------------------------------------------
+
+Array Handling   Option Base,
+                Declaring arrays with lower bound &lt;&gt; 0
+
+Collection       Add,
+                Count,
+                Item,
+                Remove,
+                Access to collections using ! character
+                (for example, MyCollection!Item)
+
+Conditional
+Compilation      #Const,
+                #If...Then...#Else,
+                Most uses of the # character, including file access using
+                #filenum (#date# is okay)
+
+Control Flow     DoEvents,
+                GoSub...Return,
+                GoTo,
+                On Error GoTo,
+                On...GoSub,
+                On...GoTo,
+                line numbers,
+                Line labels,
+                With...End With,
+                End,
+                Stop
+                NOTE: Use App.End to end your program.
+                On Error Resume Next is provided for error handling.
+
+Conversion       CVar,
+                CVDate,
+                Str,
+                Val
+
+Data Types       All intrinsic data types except Variant, 
+                Type...End Type,
+                As keyword
+                NOTE: (VBCE and eVB allow the use of Dim ... As ... only for Intellisense help in the design environment.)
+
+Date/Time        Date statement,
+                Time statement,
+                Timer
+
+DDE              All DDE Functions
+
+Debugging        Debug.Assert,
+                Debug.Print,
+                End,
+                Stop
+
+Declaration      Declare,
+                New,
+                Optional,
+                ParamArray,
+                Property Get,
+                Property Let,
+                Property Set,
+                Static
+
+Error Handling   Erl,
+                Error,
+                On Error...Resume,
+                Resume
+
+File
+Input/Output     All traditional Basic file I/O (use Windows CE ActiveX
+                controls for file I/O)
+
+Financial        All financial functions (use Windows CE ActiveX controls
+                for financial functions)
+
+Object
+Manipulation     TypeOf
+
+Operators        Like
+
+Options          Deftype,
+                Option Base,
+                Option Compare,
+                Option Private Module
+
+Select Case      Expressions containing Is keyword or any comparison
+                operators,
+                Expressions containing a range of values using the To
+                keyword
+
+Statements       Beep
+
+Statements with
+a $ Character    Chr$,
+                Command$,
+                Date$,
+                Environ$,
+                Error$,
+                Format$,
+                InputBox$,
+                Lcase$,
+                Left$,
+                Ltrim$,
+                Mid$,
+                Right$,
+                Rtrim$,
+                Space$,
+                Str$,
+                String$,
+                Time$,
+                Trim$,
+                case$
+
+Strings          Fixed-length strings,
+                LSet,
+                RSet,
+                Mid Statement,
+                StrConv
+
+Using Objects    Collection access using !
+
+REFERENCES
+==========
+
+Windows CE Toolkit Help for Visual Basic 6.0
+
+eMbedded Visual Basic Online Help
+
+Additional query words: vbce vbce6 wince evb
+
+======================================================================
+Keywords          : kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

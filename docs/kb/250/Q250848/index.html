@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250848: PRB: STL list::remove Doesn’t Remove All Occurrences of Element | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250848: PRB: STL list::remove Doesn’t Remove All Occurrences of Element" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250848/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250848/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250848/","publisher":null,"image":null,"headline":"Q250848: PRB: STL list::remove Doesn’t Remove All Occurrences of Element","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250848-prb-stl-listremove-doesnt-remove-all-occurrences-of-element">Q250848: PRB: STL list::remove Doesn’t Remove All Occurrences of Element</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250848
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbtemplate kbLangCPP kbSTL kbDSupport kbGrpDSVCCompiler
+Last Modified: 14-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Standard Template Library (STL) list::remove function does not remove all
+the occurrences of an element from the List in a Debug build when an iterator is
+passed as a parameter. However, in a Release build, list::remove does remove all
+the occurrences of an element from the List. Sometimes (with multiprocess
+computers), remove does not erase all occurrences in both Debug and Release
+builds.
+
+CAUSE
+=====
+
+The STL list::remove function is defined as taking a "const T &amp;" argument.
+Passing an iterator means passing the reference to the element that is pointed
+to by the iterator. After the first occurrence of the element is removed,
+list::remove invalidates the iterator address so that the next occurrence of the
+element is not removed in a Debug build.
+
+In a Release build, after the first occurrence of the element is removed, the
+reference to the iterator address is still valid, so all the occurrences of the
+element are removed.
+
+RESOLUTION
+==========
+
+Instead of passing the reference of the element to list::remove, pass the actual
+value of the element.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following example code demonstrates this problem:
+
+  #include &lt;list&gt;
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  typedef list &lt;int&gt; MY_LIST_OF_INT;
+
+  int main()
+  {
+              int elem[6] = {2,1,2,3,2,2}, element;
+  	
+     	MY_LIST_OF_INT		MyList;
+     	MY_LIST_OF_INT::iterator	it_begin, it_temp;
+     	
+     	for(int x = 0; x &lt; 6; x++)
+  		MyList.push_back(elem[x]);
+  	
+     	cout &lt;&lt; "Elements in List before Remove" &lt;&lt; endl;
+     	for(it_begin = MyList.begin(); it_begin != MyList.end(); ++it_begin)
+  		cout &lt;&lt; *it_begin &lt;&lt; " ";
+     	cout &lt;&lt; endl;
+
+  	it_temp = MyList.begin();
+  	MyList.remove(*it_temp);
+
+     	cout &lt;&lt; "Elements in List after Remove " &lt;&lt; endl;
+     	for(it_begin = MyList.begin(); it_begin != MyList.end(); it_begin++)
+  		cout &lt;&lt; *it_begin &lt;&lt; " ";
+     	cout &lt;&lt; endl;
+     	return 1;
+  }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbLangCPP kbSTL kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

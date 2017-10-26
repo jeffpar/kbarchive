@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183009: HOWTO: Enumerate Windows Using the WIN32 API | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183009: HOWTO: Enumerate Windows Using the WIN32 API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183009/","publisher":null,"image":null,"headline":"Q183009: HOWTO: Enumerate Windows Using the WIN32 API","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183009-howto-enumerate-windows-using-the-win32-api">Q183009: HOWTO: Enumerate Windows Using the WIN32 API</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183009
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can list Windows, including Child Windows, using the GetWindow API. However,
+an application that calls GetWindow to perform this task risks being caught in
+an infinite loop or referencing a handle to a window that has been destroyed.
+Using EnumWindows for top-level Windows and EnumChildWindows for Child Windows
+or EnumThreadWindows for all non-child windows associated with a thread is a
+preferred method and is demonstrated in this article.
+
+MORE INFORMATION
+================
+
+EnumWindows enumerates all top-level Windows, but not Child Windows. The
+EnumChildWindows function does not enumerate top-level windows owned by the
+specified window nor does it enumerate any other owned windows. The
+EnumThreadWindows function enumerates all non-child windows associated with a
+thread. This sample uses all three to list the Class and Title of Windows it
+finds. Note that while all Windows have a Class, not all have a Title.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add two CommandButtons and a TextBox.
+
+3. Copy the following code into the Form's module:
+
+        Option Explicit
+
+        Private Sub Command1_Click()
+           Dim lRet As Long, lParam As Long
+           Dim lhWnd As Long
+
+           lhWnd = Me.hwnd  ' Find the Form's Child Windows
+           ' Comment the line above and uncomment the line below to
+           ' enumerate Windows for the DeskTop rather than for the Form
+           'lhWnd = GetDesktopWindow()  ' Find the Desktop's Child Windows
+           ' enumerate the list
+           lRet = EnumChildWindows(lhWnd, AddressOf EnumChildProc, lParam)
+        End Sub
+
+        Private Sub Command2_Click()
+           Dim lRet As Long
+           Dim lParam As Long
+
+           'enumerate the list
+           lRet = EnumWindows(AddressOf EnumWinProc, lParam)
+           ' How many Windows did we find?
+           Debug.Print TopCount; " Total Top level Windows"
+           Debug.Print ChildCount; " Total Child Windows"
+           Debug.Print ThreadCount; " Total Thread Windows"
+           Debug.Print "For a grand total of "; TopCount + _
+           ChildCount + ThreadCount; " Windows!"
+        End Sub
+
+4. Add a Module with the following code:
+
+        Option Explicit
+
+        Type RECT
+           Left As Long
+           Top As Long
+           Right As Long
+           Bottom As Long
+        End Type
+
+        Declare Function GetWindowRect Lib "user32" (ByVal hwnd As Long, _
+           lpRect As RECT) As Long
+
+        Declare Function MoveWindow Lib "user32" (ByVal hwnd As Long, _
+           ByVal x As Long, ByVal y As Long, ByVal nWidth As Long, _
+           ByVal nHeight As Long, ByVal bRepaint As Long) As Long
+
+        Declare Function GetDesktopWindow Lib "user32" () As Long
+
+        Declare Function EnumWindows Lib "user32" _
+           (ByVal lpEnumFunc As Long, ByVal lParam As Long) As Long
+
+        Declare Function EnumChildWindows Lib "user32" (ByVal hWndParent _
+           As Long, ByVal lpEnumFunc As Long, ByVal lParam As Long) As Long
+
+        Declare Function EnumThreadWindows Lib "user32" (ByVal dwThreadId _
+           As Long, ByVal lpfn As Long, ByVal lParam As Long) As Long
+
+        Declare Function GetWindowThreadProcessId Lib "user32" _
+           (ByVal hwnd As Long, lpdwProcessId As Long) As Long
+
+        Declare Function GetClassName Lib "user32" Alias "GetClassNameA" _
+           (ByVal hwnd As Long, ByVal lpClassName As String, _
+           ByVal nMaxCount As Long) As Long
+
+        Declare Function GetWindowText Lib "user32" Alias "GetWindowTextA" _
+           (ByVal hwnd As Long, ByVal lpString As String, _
+           ByVal cch As Long) As Long
+
+        Public TopCount As Integer     ' Number of Top level Windows
+        Public ChildCount As Integer   ' Number of Child Windows
+        Public ThreadCount As Integer  ' Number of Thread Windows
+
+        Function EnumWinProc(ByVal lhWnd As Long, ByVal lParam As Long) _
+           As Long
+           Dim RetVal As Long, ProcessID As Long, ThreadID As Long
+           Dim WinClassBuf As String * 255, WinTitleBuf As String * 255
+           Dim WinClass As String, WinTitle As String
+
+           RetVal = GetClassName(lhWnd, WinClassBuf, 255)
+           WinClass = StripNulls(WinClassBuf)  ' remove extra Nulls &amp; spaces
+           RetVal = GetWindowText(lhWnd, WinTitleBuf, 255)
+           WinTitle = StripNulls(WinTitleBuf)
+           TopCount = TopCount + 1
+           ' see the Windows Class and Title for each top level Window
+           Debug.Print "Top level Class = "; WinClass; ", Title = "; WinTitle
+           ' Usually either enumerate Child or Thread Windows, not both.
+           ' In this example, EnumThreadWindows may produce a very long list!
+           RetVal = EnumChildWindows(lhWnd, AddressOf EnumChildProc, lParam)
+           ThreadID = GetWindowThreadProcessId(lhWnd, ProcessID)
+           RetVal = EnumThreadWindows(ThreadID, AddressOf EnumThreadProc, _
+           lParam)
+           EnumWinProc = True
+        End Function
+
+        Function EnumChildProc(ByVal lhWnd As Long, ByVal lParam As Long) _
+           As Long
+           Dim RetVal As Long
+           Dim WinClassBuf As String * 255, WinTitleBuf As String * 255
+           Dim WinClass As String, WinTitle As String
+           Dim WinRect As RECT
+           Dim WinWidth As Long, WinHeight As Long
+
+           RetVal = GetClassName(lhWnd, WinClassBuf, 255)
+           WinClass = StripNulls(WinClassBuf)  ' remove extra Nulls &amp; spaces
+           RetVal = GetWindowText(lhWnd, WinTitleBuf, 255)
+           WinTitle = StripNulls(WinTitleBuf)
+           ChildCount = ChildCount + 1
+           ' see the Windows Class and Title for each Child Window enumerated
+           Debug.Print "   Child Class = "; WinClass; ", Title = "; WinTitle
+           ' You can find any type of Window by searching for its WinClass
+           If WinClass = "ThunderTextBox" Then    ' TextBox Window
+              RetVal = GetWindowRect(lhWnd, WinRect)  ' get current size
+              WinWidth = WinRect.Right - WinRect.Left ' keep current width
+              WinHeight = (WinRect.Bottom - WinRect.Top) * 2 ' double height
+              RetVal = MoveWindow(lhWnd, 0, 0, WinWidth, WinHeight, True)
+              EnumChildProc = False
+           Else
+              EnumChildProc = True
+           End If
+        End Function
+
+        Function EnumThreadProc(ByVal lhWnd As Long, ByVal lParam As Long) _
+           As Long
+           Dim RetVal As Long
+           Dim WinClassBuf As String * 255, WinTitleBuf As String * 255
+           Dim WinClass As String, WinTitle As String
+
+           RetVal = GetClassName(lhWnd, WinClassBuf, 255)
+           WinClass = StripNulls(WinClassBuf)  ' remove extra Nulls &amp; spaces
+           RetVal = GetWindowText(lhWnd, WinTitleBuf, 255)
+           WinTitle = StripNulls(WinTitleBuf)
+           ThreadCount = ThreadCount + 1
+           ' see the Windows Class and Title for top level Window
+           Debug.Print "Thread Window Class = "; WinClass; ", Title = "; _
+           WinTitle
+           EnumThreadProc = True
+        End Function
+
+        Public Function StripNulls(OriginalStr As String) As String
+           ' This removes the extra Nulls so String comparisons will work
+           If (InStr(OriginalStr, Chr(0)) &gt; 0) Then
+              OriginalStr = Left(OriginalStr, InStr(OriginalStr, Chr(0)) - 1)
+           End If
+           StripNulls = OriginalStr
+        End Function
+
+5. Run the project and click on Command1. This enumerates the Form's child
+  Windows until it finds the TextBox, then doubles the height of the TextBox
+  and moves it to position 0, 0 (upper-left of the Form.)
+
+6. Click on Command2. It now lists the Class and Title (if there is one) for all
+  top-level Windows, for their Child Windows, and any non-child Windows
+  associated with their threads, to the Immediate Window. Note that this can be
+  a very long list and may take a minute to complete.
+
+7. From the Run Menu, choose End, or click the END button to stop the program.
+  Change the code in Sub Command1_Click according to the comments to pass the
+  handle from GetDesktopWindow. Run the project and click on Command1 to
+  enumerate all child Windows of the DeskTop. Note that this procedure can take
+  some time to complete.
+
+REFERENCES
+==========
+
+For more information, please search on the following topics in either the Win32
+Programmer's Reference or the Microsoft Developer Network (MSDN) Library
+CD-ROM:
+
+- EnumWindows
+
+- EnumChildWindows
+
+- EnumThreadWindows
+
+- GetDesktopWindow
+
+- GetClassName
+
+- GetWindowRect
+
+- GetWindowText
+
+- GetWindowThreadProcessId
+
+- MoveWindow
+
+Additional query words: find locate Callback
+
+======================================================================
+Keywords          : kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

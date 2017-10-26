@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113900/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113900/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113900/","publisher":null,"image":null,"headline":"Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113900-fix-dbase--foxpro-memos-corrupted-during-concurrent-addnew">Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113900
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbDatabase kbIISAMkbbuglist
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When two or more programs concurrently edit and/or add new records to the same
+dBASE or FoxPro table and that table contains a memo field, the memo field can
+become corrupted.
+
+CAUSE
+=====
+
+This is not a bug Visual Basic itself, but a bug in the Microsoft Jet Database
+Engine used by Visual Basic.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been corrected in Visual Basic
+version 4.0.
+
+MORE INFORMATION
+================
+
+This problem arises when two or more Edit or Addnew operations are pending on
+the same table at the same time. When the record is updated, whichever program
+updates the memo field last has its memo data written into the memo field of the
+previously updated record.
+
+Steps to Reproduce Problem
+--------------------------
+
+To duplicate this problem, you must already have a dBASE or FoxPro table that has
+a memo field in it.
+
+1. From Visual Basic's Window menu, choose the Data Manager (ALT, W, A).
+
+2. Restore the Data Manager's window to normal by clicking the Restore/Max
+  button (ALT, SPACE, R).
+
+3. Open a dBASE or FoxPro database that contains a table with a memo field (ALT,
+  F, O).
+
+4. Select the table from the Tables list, and choose Open.
+
+5. Repeat steps 1 through 4 to provide a second instance of the Data Manager
+  editing your table.
+
+6. For the first instance, add a new record and edit the data in the memo field
+  to say Instance1.
+
+7. For the second instance, add a new record and edit the data in the memo field
+  to say Instance2.
+
+8. Choose Update and Save the Changes for the first instance. Repeat for the
+  second.
+
+9. Choose Refresh to update the recordset. When you view the records, you'll see
+  that the memo fields in both instances read Instance2.
+
+Additional query words: buglist3.00 3.00 fixlist4.00
+
+======================================================================
+Keywords          : kbDatabase kbIISAM kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

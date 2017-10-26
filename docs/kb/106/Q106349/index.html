@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106349/","publisher":null,"image":null,"headline":"Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106349-pc-wrmt-att-access-plus-folder-conversion-utility">Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106349
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft provides an AT&amp;T Access Plus Folder Conversion utility,
+ATTIMP.EXE, for use with version 3.2 of Microsoft Mail Remote for Windows.
+
+For complete information about obtaining and installing the ATTIMP.EXE file, see
+the following sections:
+
+- To download the updated file
+
+- To install your ATTIMP.EXE file
+
+MORE INFORMATION
+================
+
+The ATTIMP.EXE utility imports mail folders created by the AT&amp;T Access Plus
+products to the Mail message file (MMF) used by Microsoft Mail Remote for
+Windows. You should use this utility only with the AT&amp;T Mail driver. If you
+try to use it with any other driver, you will receive the following error:
+
+  You are not using the AT&amp;T Mail driver. Use the Mail System Selector to
+  select AT&amp;T Mail as the current driver and try again.
+
+For more information about using the Mail System Selector, see the Microsoft Mail
+Remote for Windows "User's Guide."
+
+To download the updated file
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Attimp.exe now
+  (http://download.microsoft.com/download/mail35pcnet/Utility/1/W97/EN-US/Attimp.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+After you download ATTIMP.EXE to a clean directory, run it (by typing "attimp"
+(without the quotation marks) at the MS-DOS prompt) to extract the contents of
+the file. You should receive the following files:
+
+  ATTIMP.EXE (17,808 bytes, dated 06-09-93, 10:29 A.M.)
+  README.TXT
+
+To install your ATTIMP.EXE file
+-------------------------------
+
+1. At the MS-DOS command prompt, type the following and press ENTER
+
+  " copy &lt;path&gt;:\attimp.exe &lt;destination&gt; " (without the quotation
+  marks)
+
+  where &lt;path&gt; is the drive and directory where you ran the self-
+  extracting ATTIMP.EXE file and &lt;destination&gt; is the drive and directory
+  where your ATTIMP.EXE file currently resides. For example, if you ran the
+  self-extracting file from the TEST directory on drive D, and you want to copy
+  ATTIMP.EXE to the MSMAIL directory on drive C, type the following command:
+
+  " copy d:\test\attimp.exe c:\msmail " (without the quotation marks)
+
+2. In the Windows Program Manager, create an AT&amp;T Folder Conversion icon
+  with the following properties:
+
+    -------------------------------------------------
+    |            Program Item Properties            |
+    -------------------------------------------------
+    |  Description          AT&amp;T Folder Conversion  |
+    |                                               |
+    |  Command Line:     C:\MSMAIL\ATTIMP.EXE       |
+    |                                               |
+    |  Working Directory:                           |
+    |                                               |
+    |  Shortcut Key:     None                       |
+    |                                               |
+    -------------------------------------------------
+
+3. Before you run ATTIMP.EXE, use the Microsoft Mail Selector to make sure that
+  the AT&amp;T driver is the current mail driver and that the Access Plus OUT
+  folder is empty.
+
+4. To run ATTIMP.EXE, double-click the AT&amp;T Folder Conversion icon created
+  in step 2.
+
+5. The ATTIMP.EXE utility will first prompt for the path to the Access Plus File
+  Cabinet. It expects to find a directory that contains IN, OUT, and SESSION
+  subdirectories. Except for the IN and WASTE folders, a folder with the same
+  name as the Access Plus folder will be created at the topmost level of the
+  private folders in the MMF. Messages will then be imported to the
+  corresponding folders (these messages are AT&amp;T messages of type MSU, MSG,
+  MSS, MSR, and MSQ). If a folder with the same name already exists, Access
+  Plus messages will be added to it. The WASTE folder will not be imported and
+  messages in the IN folder will be imported into the Inbox folder.
+
+NOTES:
+
+- This utility does not import address directories, nor does it change the
+  personal address book (PAB).
+
+- If you run the utility twice on the same messages, duplicate messages will be
+  imported.
+
+Additional query words: 3.20 wga
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

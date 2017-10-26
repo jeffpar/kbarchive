@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199657/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199657/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199657/","publisher":null,"image":null,"headline":"Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199657-sms-12-and-20-site-server-cannot-share-sql-server-on-12-site">Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199657
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2,2.0
+Operating System(s): 
+Keyword(s): kbinterop kbsms200 kbsms120
+Last Modified: 28-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A System Management Server 1.2 site using a SQL Server that is installed on the
+same computer, cannot also host a Systems Management Server 2.0 database. The
+System Management Server 1.2 site server will not recognize the SMS_SQL_Monitor
+service from the Systems Management Server 2.0 site as a valid component and the
+service will be removed from the registry.
+
+The SMS_SQL_Monitor service is a component that monitors the Systems Management
+Server 2.0 site database on a SQL Server computer for changes and notifies
+related components when a change occurs. When an event occurs, SQL Monitor
+either writes a file to the related Systems Management Server inbox or notifies
+the component by named pipe. SMS_SQL_Monitor is also responsible for executing
+periodic database maintenance. The SMS_SQL_Monitor includes two threads:
+
+- Trigger Monitor notifies Systems Management Server components, such as
+  discovery data manager (DDM), when database events have occurred.
+
+- Task Manager runs scheduled database maintenance tasks.
+
+MORE INFORMATION
+================
+
+SQL Server is used to store and manage the site database. SQL Server can be
+installed on a separate computer running Windows NT Server. If SQL Server is
+installed on a computer other than the version 1.2 site server, SQL Server can
+be used for the site databases for a mix of version 1.2 and version 2.0 sites.
+This SQL Server can also be a client to the version 2.0 site, as well as a full
+participant in any Systems Management Server 2.0 component server roles, as long
+as version 1.2 uses it only for its database storage.
+
+Additional query words: prodsms smsinterop
+
+======================================================================
+Keywords          : kbinterop kbsms200 kbsms120 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

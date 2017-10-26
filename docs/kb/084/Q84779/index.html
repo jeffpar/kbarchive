@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q84779: DOC: Don’t Call Destroy Function on Loaded Cursor or Icon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q84779: DOC: Don’t Call Destroy Function on Loaded Cursor or Icon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/084/Q84779/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/084/Q84779/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/084/Q84779/","publisher":null,"image":null,"headline":"Q84779: DOC: Don’t Call Destroy Function on Loaded Cursor or Icon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q84779-doc-dont-call-destroy-function-on-loaded-cursor-or-icon">Q84779: DOC: Don’t Call Destroy Function on Loaded Cursor or Icon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q84779
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbdocfix kb16bitonly kbCursor kbIcon kbResource kbSDKPlatform
+Last Modified: 11-JUN-1999
+
+3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Microsoft Windows Software Development Kit: Programmer's Reference, Volume
+2: Functions" manual contains an error regarding the proper use of the
+DestroyCursor and DestroyIcon functions. This error is repeated a number of
+times throughout the manual. This article lists the various changes required to
+correct the error.
+
+The manual states that when an application loads a cursor using the LoadCursor
+function, it should delete the cursor using the DestroyCursor function.
+Likewise, the manual states that when an application loads an icon using the
+LoadIcon function, it should delete the icon using the DestroyIcon function.
+These two statements are incorrect. DestroyCursor is used only on cursors
+created with the CreateCursor function and DestroyIcon is used only on icons
+created with the CreateIcon function.
+
+To address this problem, make the following four changes to the "Microsoft
+Windows SDK: Programmer's Reference, Volume 2: Functions" manual:
+
+- On page 216, modify the documentation for the DestroyCursor function to
+  remove the reference to LoadCursor.
+
+- On page 216, modify the documentation for the DestroyIcon function to remove
+  the reference to LoadIcon.
+
+- On page 576, modify the documentation for the LoadCursor function to replace
+  the following line An application should use the DestroyCursor function to
+  destroy any private cursors it loads with the following line:
+
+  An application should use the &lt;B&gt;DestroyCursor&lt;/B&gt; function to destroy
+  any private cursors it creates with the &lt;B&gt;CreateCursor&lt;/B&gt; function.
+
+- On page 577, modify the documentation for the LoadIcon function to replace
+  the following line:
+
+  An application should use the DestroyIcon function to destroy
+  any private icons it loads.
+
+  with the following line:
+
+  An application should use the &lt;B&gt;DestroyIcon&lt;/B&gt; function to destroy
+  any private icons it creates using the &lt;B&gt;CreateIcon&lt;/B&gt; function.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbCursor kbIcon kbResource kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

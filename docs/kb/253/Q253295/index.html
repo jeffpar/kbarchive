@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253295/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253295/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253295/","publisher":null,"image":null,"headline":"Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253295-fix-loadingunloading-form-wmshflexgrid-causes-resource-leak">Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253295
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0,97
+Operating System(s): 
+Keyword(s): kbCtrl kbResource kbVBp kbVBp500bug kbVBp600bug kbVBp600fix kbDevStudio kbGrpDSVB _IK
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form containing an MSHFlexGrid (Msflxgrd.ocx) control is loaded and
+unloaded, a leak in the Graphics Device Interface (GDI) system resource occurs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual Basic 6.0 Service
+Pack 4.
+
+To download Visual Basic 6.0 SP4, see the following Microsoft Web site:
+
+  http://msdn.microsoft.com/vstudio/sp/vs6sp4
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. On a Microsoft Windows NT 4.0 or Microsoft Windows 2000 computer, start a new
+  standard EXE project with a default form (Form1).
+
+2. From the Project menu, add another form (Form2).
+
+3. From the Project menu, select Components, check Microsoft Hierarchical
+  FlexGrid Control 6.0 (SP3) (MSHFLXGD.OCX), and click OK.
+
+4. Add a CommandButton (Command1) to both Form1 and Form2. Place four
+  MSHflexgrid controls on Form2.
+
+5. Add the following code to Form1:
+
+  Private Sub Command1_Click()
+      Form2.Show
+  End Sub
+  Private Sub Form_Load()
+      Command1.Caption = "Show Form2"
+  End Sub
+
+6. Add the following code to Form2:
+
+  Private Sub Command1_Click()
+      Unload Me
+  End Sub
+  Private Sub Form_Load()
+      Command1.Caption = "Unload Me"
+  End Sub
+
+7. Press the F5 key to run the project.
+
+8. Start Task Manager (CTRL+ALT+DELETE), and select the Processes tab.
+
+9. Under the View menu, click on Select Columns, and choose GDI Objects.
+
+10. Click the CommandButtons on Form1 and Form2 to load and unload Form2, and
+  note that for each iteration, there is an increase in one GDI object.
+
+Additional query words: memory
+
+======================================================================
+Keywords          : kbCtrl kbResource kbVBp kbVBp500bug kbVBp600bug kbVBp600fix kbDevStudio kbGrpDSVB _IK 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0,97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

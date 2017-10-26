@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122443: FIX: C2664 When Converting Type Defined Array to Const Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122443: FIX: C2664 When Converting Type Defined Array to Const Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122443/","publisher":null,"image":null,"headline":"Q122443: FIX: C2664 When Converting Type Defined Array to Const Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122443-fix-c2664-when-converting-type-defined-array-to-const-array">Q122443: FIX: C2664 When Converting Type Defined Array to Const Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122443
+Product(s): Microsoft C Compiler
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The C/C++ compiler incorrectly generates a C2664 error when attempting to
+implicitly convert from a typedef non-constant array type to a constant array
+type. The compiler reports an error that indicates a conversion from a constant
+array type to a non-constant array type. The following error message is reported
+by the compiler if a non-constant integer array type is used:
+
+  test.cpp(#): error C2664: 'copy' : cannot convert parameter 1 from 'const
+  int[2]' to 'int[2]'
+
+The # is the line number where the error occured.
+
+RESOLUTION
+==========
+
+To work around the problem, typedef a constant array type instead of using the
+keyword 'const' together with the typedef non-constant array type. An example is
+shown in the Sample Code section in this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  /* -- test.cpp -- */ 
+
+  typedef       int ARRAY[2];
+  typedef const int CONST_ARRAY[2];
+
+  void copy ( const ARRAY src, ARRAY dest );
+  void copy1( CONST_ARRAY src, ARRAY dest );
+
+  class CTest
+  {
+    private:
+      ARRAY pts[2];
+    public:
+      void operator=( const CTest&amp; src );
+  };
+
+  void CTest :: operator=( const CTest&amp; src )
+  {
+    for ( int i=0; i&lt;2; i++ )
+    {
+
+     copy ( src.pts[i], pts[i] );   // Generates C2664
+     copy1( src.pts[i], pts[i] );   // Workaround
+
+    }
+  }
+
+Additional query words: 2.00 9.00 buglist2.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

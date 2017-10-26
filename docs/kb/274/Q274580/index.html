@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274580/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274580/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274580/","publisher":null,"image":null,"headline":"Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274580-creating-supplementary-timestamp-log-in-mms-management-agent-log">Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274580
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the procedure to create a supplementary timestamp log in
+the Microsoft Metadirectory Services Management Agent (MA) logs.
+
+Even though you cannot directly embed timestamps in the Zscript file logs, a
+supplemental log file can be created in the MA control script to contain the
+timestamp messages.
+
+MORE INFORMATION
+================
+
+There are two components that can create a supplemental log file:
+
+- A batch file in the \Zoomserv\Bin directory.
+
+- The corresponding changes in the Zscript file template.
+
+An Example:
+-----------
+
+In this example, the batch file is called Stampit.bat.
+
+Place the batch file in the \Zoomserv\Bin directory, and then place the output
+files in the working directory of the Management Agent. This latter step can be
+accomplished by using the &lt;ZcDsDirectory&gt; variable in the second parameter
+of the calls to the Stampit.bat file in the Zscript file template.
+
+The following commands are used in the program located in
+\Zoomserv\Bin\Stampit.bat:
+
+  echo %2 &gt;&gt; %1
+  date /t &gt;&gt; %1
+  time /t &gt;&gt; %1
+  echo . &gt;&gt; %1
+
+NOTE: Do not use any spaces in the local parameters used in the vset command.
+
+The following commands can be used in the Zscript file template:
+
+  vset timeLogFile = "ThisMATimeLog.txt"
+  vset banner = "************************************"
+  vset message1 = "LDAP_MA_Begins"
+  vset message2 = "LDAP_MA_Ends"
+
+  execute stampit.bat &lt;zcDsDirectory&gt;\&lt;timeLogFile&gt;&lt;A0&gt;&lt;banner&gt;
+  execute stampit.bat
+  &lt;zcDsDirectory&gt;\&lt;timeLogFile&gt;&lt;A0&gt;&lt;message1&gt;
+  execute stampit.bat &lt;zcDsDirectory&gt;\&lt;timeLogFile&gt;&lt;A0&gt;&lt;message2&gt;
+
+The output of the preceding example is:
+
+  ************************************
+  Tues 09/19/2000
+  10:21a
+
+  LDAP_MA_Begins
+  Tues 09/19/2000
+  10:21a
+
+  LDAP_MA_Ends
+  Tues 09/19/2000
+  10:22a
+
+NOTE:
+
+- The use of local variables and the vset command can help minimize the chances
+  of typographical mistakes.
+
+- Local variables can be grouped together at the start of the template.
+
+- The banner helps to easily identify the start of each run.
+
+- The file can continue to grow, run after run, and must be manually
+  maintained.
+
+- The call to the batch program and each line in the batch program is written
+  to the Zscript file log.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

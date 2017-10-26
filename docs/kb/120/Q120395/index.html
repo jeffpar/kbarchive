@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120395/","publisher":null,"image":null,"headline":"Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120395-prb-link-or-cvpack-may-fail-with-ps-10a-objects">Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120395
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a debug version of an application with FORTRAN PowerStation for
+MS-DOS version 1.0 (PS 1.0) and include object modules (.OBJ) compiled with
+FORTRAN PowerStation for MS-DOS version 1.0a (PS 1.0a), the following errors may
+be generated:
+
+  Assertion failed: i != C7FIXUPSYMCNT, file symbols7.c, line 314
+
+-or-
+
+  CVPACK : fatal error CK1010: symbol error in module;
+  contact Microsoft Product Support Services
+
+-or-
+
+  ***** Linker INTERNAL ERROR during EmitCodeView *****
+
+  Command line error D2027 : cannot execute 'C:\F32\BIN\link32.exe'
+
+CAUSE
+=====
+
+The versions of CVPack and Link32 included with PS 1.0 may not be able handle
+the debugging information appended to object modules by the PS 1.0a compiler. PS
+1.0a inserts debug information into the object module when you use the compiler
+options /Zi and /Zd, as expected, but also inserts some debug information when
+you use the /Ox compiler option.
+
+RESOLUTION
+==========
+
+Call Microsoft support, (425) 635-7015, and ask for the free update to Microsoft
+FORTRAN PowerStation for MS-DOS version 1.0a.
+
+While using PS 1.0 do not build in debug mode or do not include object modules
+from PS 1.0a that have debug information.
+
+Re-compile the object modules from PS 1.0a without using options /Ox, /Zi, or
+/Zp.
+
+MORE INFORMATION
+================
+
+Version information
+-------------------
+
+            PS 1.0   PS 1.0a
+  --------------------------
+  Link32      2.8      1.0F
+  CVPack      4.21     4.25
+
+To determine the version of CVPack, type the following at the MS-DOS prompt:
+
+  " CVPACK" (without the quotation marks)
+
+The version number will be displayed.
+
+To determine the version of Link32, type the following at the MS-DOS prompt:
+
+  " link32 | more" (without the quotation marks)
+
+Steps to Reproduce the Problem
+------------------------------
+
+Because the Microsoft IMSL for FORTRAN PowerStation libraries were built with PS
+1.0a using the /Ox option, they include some debugging information and can be
+used to demonstrate the problem.
+
+1. Build one of the samples from the Microsoft IMSL Libraries. For example, move
+  to the C:\MSIMSL32\FORTRAN\EXAMPLES\MATH\DOUBLE directory and type the
+  following at the MS-DOS prompt:
+
+  " fl32 -Zi dlprs_ex.for -link mathd.lib" (without the quotation marks)
+
+  The following error is displayed:
+
+  ***** Linker INTERNAL ERROR during EmitCodeView *****
+
+  Command line error D2027 : cannot execute 'C:\F32\BIN\link32.exe'
+
+2. Modify the makefile so the compiler switch /Zi or /Zd is used.
+
+  The following errors are displayed:
+
+  CVPACK : fatal error CK1010: symbol error in module dlprs_ex.obj; contact
+  Microsoft Product Support Services
+  LINK32 : warning LNK4527: CVPACK error
+  Command line error D2027 : cannot execute 'C:\F32\BIN\link32.exe'
+  NMAKE : fatal error U1077: 'FL32' : return code '0x2'
+  Stop.
+
+Additional query words: 1.00 1.00a compile link failure
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

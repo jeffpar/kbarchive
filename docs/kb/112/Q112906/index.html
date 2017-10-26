@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices… Defined… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices… Defined…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112906/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112906/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112906/","publisher":null,"image":null,"headline":"Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices… Defined…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112906-pc-adm-err-msg-notice-10-no-external-postoffices-defined">Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices… Defined…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112906
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1x,3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you modify external postoffices from the Mail Administrator program
+(ADMIN.EXE), the following error message appears:
+
+  Notice 10
+  No external postoffices have been defined yet
+
+CAUSE
+=====
+
+This error can be caused by incorrect network rights or a missing .XTN file for
+the associated network.
+
+For each network that is defined in the NETWORK.GLB file, there is an associated
+.XTN file. This file contains a series of records, each one defining a different
+postoffice on the network. The purpose of this file is to provide routing,
+naming, and sign-on information for external services and postoffices. When you
+add a new postoffice to a network, the associated .XTN file needs to be opened
+and amended.
+
+RESOLUTION
+==========
+
+Restore the .XTN file from a valid backup copy or create a new, zero-byte .XTN
+file. By examining the NETWORK.GLB file, you can obtain the relevant .XTN file
+for each defined network. The NETWORK.GLB file contains the names of all defined
+external networks. Immediately following the external network name is a
+hexadecimal number; this number is the filename of the associated .XTN file
+(found in the XTN subdirectory).
+
+
+Additional query words: 2.10x 3.00 3.00a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

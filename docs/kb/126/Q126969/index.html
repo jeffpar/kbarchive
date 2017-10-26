@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126969: PRB: Running Genxtab with an Empty Table Causes Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126969: PRB: Running Genxtab with an Empty Table Causes Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126969/","publisher":null,"image":null,"headline":"Q126969: PRB: Running Genxtab with an Empty Table Causes Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126969-prb-running-genxtab-with-an-empty-table-causes-error">Q126969: PRB: Running Genxtab with an Empty Table Causes Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126969
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When GENXTAB.PRG is run from an application, and the current table or cursor
+does not contain any records, GENXTAB.PRG issues one of the following error
+messages:
+
+- Cannot prepare crosstab on empty database.
+
+-or-
+
+- Variable '_WIN' not found.
+
+
+In either case, the error message will appear, and your program will exit.
+
+CAUSE
+=====
+
+Cross tabulation requires that a table or cursor (usually the result of a query)
+with only three fields be open in the selected work area.
+
+RESOLUTION
+==========
+
+Please see the workaround listed in the "More Information" section of this
+article.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy one of the following sections of code, depending on your version of
+  FoxPro, to a PRG file. The SELECT, DO (_GENXTAB), and BROWSE NOMODIFY lines
+  were created using the RQBE and copied to a PRG:
+
+  Code for FoxPro 2.x
+  -------------------
+
+     IF !USED("customer")
+        USE customer
+     ENDIF
+
+     STORE "C:\&lt;FoxPro Directory&gt;\GENXTAB.PRG" TO _GENXTAB
+
+     SELECT Customer.cno, Customer.state, Customer.ytdpurch;
+        FROM Customer;
+        GROUP BY Customer.cno, Customer.state;
+        ORDER BY Customer.cno, Customer.state;
+        WHERE alltrim(upper(state))="JP" INTO CURSOR SYS(2015)
+     DO (_GENXTAB) WITH 'Query'
+     BROWSE NOMODIFY
+     WAIT WINDOW "HELLO WORLD"
+
+  The WHERE clause in the SELECT statement returns an empty cursor. Therefore,
+  the BROWSE and WAIT WINDOW commands after the DO (_GENXTAB) WITH 'Query' will
+  never get executed.
+
+  Code for Visual FoxPro
+  ----------------------
+
+     IF !USED("customer")
+           USE c:\vfp\samples\data\customer
+     ENDIF
+
+     SELECT Customer.cust_id, Customer.company, Customer.maxordamt;
+      FROM customer;
+      WHERE Customer.state = "WJ";
+      GROUP BY Customer.cust_id, Customer.company;
+      ORDER BY Customer.cust_id, Customer.company;
+      INTO CURSOR SYS(2015)
+      DO (_GENXTAB) WITH 'Query1'
+     BROWSE NOMODIFY
+     WAIT WINDOW "HELLO WORLD"
+
+2. Create a new project, and add the program to the project.
+
+3. Build an .EXE or .APP from the project.
+
+4. Run the .EXE or .APP and notice that the BROWSE and WAIT WINDOW commands will
+  not be executed.
+
+WORKAROUND
+==========
+
+1. Replace the program listed above with the following:
+
+     IF !USED("customer")
+          USE customer
+     ENDIF
+
+     STORE "C:\&lt;FoxPro Directory&gt;\GENXTAB.PRG" TO _GENXTAB
+
+     SELECT Customer.cno, Customer.state, Customer.ytdpurch;
+        FROM Customer;
+        GROUP BY Customer.cno, Customer.state;
+        ORDER BY Customer.cno, Customer.state;
+        WHERE alltrim(upper(state))="JP" INTO CURSOR SYS(2015)
+
+     IF _TALLY !=0 &amp;&amp;if results are equal to 0 GENXTAB.PRG WILL NOT EXECUTE
+        DO (_GENXTAB) WITH 'Query'
+        BROWSE NOMODIFY
+     ENDIF
+
+     WAIT WINDOW "HELLO WORLD"
+
+2. Create a new project, and add the program to the project.
+
+3. Build an .EXE or .APP from the project.
+
+4. Run the .EXE or .APP and notice that the WAIT WINDOW command is now executed.
+
+Additional query words: VFoxWin FoxWin FoxDos 2.50c
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+Version           : MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

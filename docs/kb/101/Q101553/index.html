@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101553/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101553/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101553/","publisher":null,"image":null,"headline":"Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101553-bug-bad-result-if-multiple-aggregate-functions-in-sql-stmt">Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101553
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an SQL query statement contains multiple aggregate functions, the result
+set incorrectly contains the same value for all the functions. The result of the
+first aggregate function is duplicated in the result column of all of the other
+functions.
+
+CAUSE
+=====
+
+Aggregate functions typically do not contain explicit column names for
+expressions in the SQL query. In SQL queries containing multiple aggregate
+function calls, the Access database layer does not uniquely identify the return
+columns for any functions past the first. Therefore, it duplicates the result
+column of the first function in the result columns of the succeeding functions
+
+This problem did not occur in Visual Basic version 2.0. In Visual Basic version
+3.0, the Microsoft Access engine was integrated into the data access
+functionality. The Microsoft Access engine tracks the column by name, whereas
+Visual Basic version 2.0 tracks the column by the column offset.
+
+WORKAROUND
+==========
+
+Use aliases for the aggregate functions to solve the problem. Replace the SQL
+statement shown below in the "Steps to Reproduce Problem" section with the
+following SQL statement, which contains the aliases One and Two for the column
+names for the separate SUM expressions:
+
+     Select SUM(PubID) as One, SUM(Au_ID) as Two From Titles
+
+The Alias names can be anything other than the column name and must be unique
+within the statement.
+
+After inserting the aliases, run the SQL statement again and notice that the two
+fields now correctly show the different results.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Visual Basic.
+
+2. From the File menu, choose Open Project (ALT, F, O). Open VISDATA.MAK from
+  the VB\SAMPLES\VISDATA directory.
+
+3. From the Run menu, choose start (ALT, R, S) or press F5 to run the program.
+
+4. From the Visual Data File menu, choose OpenDatabase. From the sub menu choose
+  MS Access.
+
+5. From the Open MS Access Database dialog box, select the BIBLIO.MDB file.
+
+6. For the RecordSet Form Type, select Grid.
+
+7. Enter the following SQL statement in the SQL Statement window:
+
+     Select SUM(PubID), SUM(Au_ID) From Titles
+
+8. Click the Execute SQL command Button.
+
+9. The result shows in a grid window. The two fields have the same value. They
+  should be different.
+
+Additional query words: buglist3.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

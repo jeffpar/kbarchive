@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96772/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96772/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96772/","publisher":null,"image":null,"headline":"Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96772-howto-use-wnetgetuser-in-windows-for-workgroups">Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96772
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.1,3.11
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbSDKPlatform kbOSWin310 kbWNet kbOSWin311 kbGrpDSNet
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) for Windows for Workgroups, versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WNetGetUser() is documented on page 194 in the Microsoft Windows Device Driver
+Kit (DDK) "Device Driver Adaptation Guide" for version 3.1. This function can be
+used to retrieve the current user name of the user logged on to the network
+underlying Windows. However, when using this function in Microsoft Windows for
+Workgroups, WNetGetUser() returns WN_SUCCESS but the user name string is empty.
+Because WFWNET.DRV is a multinet driver, the network that supports WNetGetUser()
+must be activated before using this function.
+
+MORE INFORMATION
+================
+
+Until the release of the Windows for Workgroups SDK, WNetGetUser() was used
+internally by Windows. It is documented in the version 3.1 "Device Driver
+Adaptation Guide" for network device driver developers. Now, the Windows for
+Workgroups SDK allows you to call WNetGetUser() from an application; however,
+when using this function on a system with a multinet driver, the supporting
+network must be activated first using MNetSetNextTarget(). If the target network
+has not been set, the function returns WN_SUCCESS but the returned string for
+the user name is empty. This is documented in the description of
+MNetSetNextTarget() in the Windows for Workgroups SDK.
+
+It is not sufficient to just call MNetSetNextTarget() before WNetGetUser(). The
+current target network may not support WNetGetUser(). To properly set the target
+network to use WNetGetUser(), the networks must be enumerated and WNetGetUser()
+called for each network. If WNetGetUser() does not return WN_SUCCESS, then
+enumerate the next target network and iterate this loop. If the loop iterates
+through all of the networks but WNetGetUser() never returns WN_SUCCESS, then
+none of the target networks support WNetGetUser().
+
+To determine whether a system supports multinet operations, WNetGetCaps() can be
+used with WNNC_NET_TYPE. The return value has the WNNC_NET_MultiNet (0x8000) set
+if the system supports multinet operations.
+
+Sample Code
+-----------
+
+   #include &lt;winnet.h&gt;
+
+     // 
+     // Function:  NetGetCaps
+     // 
+     // Purpose:   Attempts to Call WNetGetCaps from USER.EXE
+     // 
+     // Returns:   See WNetGetCaps.  If the entry point cannot be located,
+     //            returns NULL
+     // 
+
+     WORD NetGetCaps( WORD wCaps )
+     {
+        typedef         WORD (CALLBACK *LPFNWNETGETCAPS)( WORD );
+
+        LPFNWNETGETCAPS lpfnWNetGetCaps;
+        WORD            wNetType = NULL;
+        HINSTANCE       hInst;
+
+        // Get the entry point for WNetGetUser from USER.EXE. USER implements
+        // the function by calling through to the network driver.
+        hInst = LoadLibrary( "USER.EXE" );
+        if ( !( lpfnWNetGetCaps = (LPFNWNETGETCAPS)
+                                  GetProcAddress( hInst, "WNETGETCAPS" )) )
+        {
+           OutputDebugString("Could not locate WNetGetCaps entry point.\n");
+        }
+        else
+           // Make the call
+           wNetType = (*lpfnWNetGetCaps)( wCaps );
+
+        return wNetType;
+     }
+
+     // 
+     // Function:  NetGetUser
+     // 
+     // Purpose:   Attempts to call WNetGetUser from USER.EXE
+     // 
+     // Returns:   TRUE if the function succeeded, otherwise FALSE.
+     // 
+
+     BOOL NetGetUser (LPSTR lpszUserName, int *pcb )
+     {
+        typedef BOOL (CALLBACK *LPFNGETUSER)( LPSTR, int * );
+
+        // Find the entry point for WNetGetUser in USER.EXE
+        HINSTANCE   hInst       = LoadLibrary( "USER.EXE" );
+        LPFNGETUSER lpfnGetUser =
+           (LPFNGETUSER) GetProcAddress( hInst, "WNETGETUSER" );
+
+        if (!lpfnGetUser)
+           return FALSE;
+
+        // See if this computer includes multinet support
+        if ( NetGetCaps( WNNC_NET_TYPE ) &amp; WNNC_NET_MultiNet )
+        {
+           // 
+           // Multinet support found.  Get entry points to the MNet APIs
+           // 
+
+           typedef WORD (CALLBACK *LPFNMNETNETWORKENUM)( HANDLE FAR * );
+           typedef WORD (CALLBACK *LPFNMNETSETNEXTTARGET)( HANDLE );
+
+           LPFNMNETNETWORKENUM   lpfnMNetNetworkEnum;
+           LPFNMNETSETNEXTTARGET lpfnMNetSetNextTarget;
+
+           OutputDebugString("GetUser: WNNC_NET_MultiNet is set.\n");
+
+           // Get the module handle for the network driver
+           hInst = (HINSTANCE) NetGetCaps( 0xFFFF );
+
+           // Get the entry points
+           lpfnMNetNetworkEnum   =
+              (LPFNMNETNETWORKENUM)GetProcAddress(hInst,"MNETNETWORKENUM");
+           lpfnMNetSetNextTarget =
+              (LPFNMNETSETNEXTTARGET)GetProcAddress
+                                                 (hInst,"MNETSETNEXTTARGET");
+
+           // If both entry points were located, use them
+           if ( lpfnMNetNetworkEnum &amp;&amp; lpfnMNetSetNextTarget )
+           {
+              HANDLE hEnum   = NULL;
+              WORD   wResult = lpfnMNetNetworkEnum( &amp;hEnum );
+
+              while ( wResult == WN_SUCCESS )
+              {
+                 lpfnMNetSetNextTarget( hEnum );     // activate that network
+                 wResult = lpfnGetUser( lpszUserName, pcb );
+
+                 if ( wResult == WN_SUCCESS )
+                    return TRUE;
+
+                 OutputDebugString
+                               ("WNetGetUser failed, try next provider.\n");
+
+                 // otherwise, try the next one for WNetGetUser support
+                 wResult = lpfnMNetNetworkEnum( &amp;hEnum );
+              }
+
+              return FALSE;
+           }
+
+           // Entry points for the MNet APIs we need weren't located.
+           // Try calling WNetGetUser anyway. Note: Windows NT 3.51 gives
+           // this behavior
+
+           OutputDebugString("Warning - WFWNET.DRV doesn't contain \ 
+              entry points for MNetNetworkEnum and/or MNetSetNextTarget.\n");
+        }
+
+        WORD wResult = lpfnGetUser( lpszUserName, pcb );
+
+        return (wResult) ? FALSE : TRUE;
+     }
+
+Additional query words: username multi-net
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbOSWin310 kbWNet kbOSWin311 kbGrpDSNet 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK311
+Version           : :3.1,3.11
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119506: Transmitting a BREAK Signal | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119506: Transmitting a BREAK Signal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119506/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119506/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119506/","publisher":null,"image":null,"headline":"Q119506: Transmitting a BREAK Signal","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119506-transmitting-a-break-signal">Q119506: Transmitting a BREAK Signal</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119506
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A BREAK signal is a communications signal that allows two communications devices
+to transmit a "break" in the transmission line. This article discusses how a
+communications program implemented using the Microsoft Windows Communications
+API (Comm API) can send a BREAK signal.
+
+MORE INFORMATION
+================
+
+Despite its name, a BREAK signal may be employed to convey just about any
+special condition as long as the sender and the receiver know the semantics of
+the signal. A BREAK signal, sometimes mistakenly referred to as a BREAK
+character, is any SPACE condition on the communication line that lasts longer
+than a character and its framing bits.
+
+Comm API contains two functions, SetCommBreak() and ClearCommBreak(), to assist
+in sending a BREAK signal. Merely calling these two functions in sequence will
+not cause a BREAK signal to be sent. Use one of the two methods described below
+to transmit the BREAK signal:
+
+Method 1
+--------
+
+The International Consultative Committee for Telephone and Telegraph (CCITT)
+modem recommendations require a break signal to be at least "2m+3" bits long,
+where "m" is the nominal number of bit times in an asynchronous character,
+usually 10; this means that the minimum break time is 23 bits, with no maximum
+specified. Usually, much more than the minimum is sent, such as 100 or 200
+milliseconds (that is, hundreds of bit times at high data rates). The timer
+resolution in a PC is sufficient for sending such "long" BREAK signals, but not
+sufficient to send exactly 23 bit times.
+
+An application can call SetCommBreak() to initiate the BREAK signal. Use
+SetTimer() to set a timer and wait for the recommended duration, and then call
+ClearCommBreak() to terminate the BREAK signal.
+
+NOTE: If an application sends some data and subsequently calls SetCommBreak()
+before that data has had a chance to make its way through the transmit first in,
+first out algorithm (FIFO), the data will actually be overwritten by the
+SetCommBreak() and not get onto the line. To prevent such corruption, it is
+recommended that you pause for a while before the SetCommBreak().
+
+Method 2
+--------
+
+An alternative means of sending a BREAK signal of shorter duration is to
+temporarily change the data rate in the UART to half or 1/4 of the actual line
+speed and then send a single NULL byte. This is more precise than using
+SetCommBreak() and ClearCommBreak(), but it has the disadvantage of corrupting
+received data during the time the BREAK signal is being sent (because the
+received data rate is wrong during that time). An application can change the
+date rate in the UART with a call to SetCommState(). The DCB structure passed to
+SetCommState() specifies the new data rate.
+
+REFERENCES
+==========
+
+For more information on the BREAK signal and the SPACE character, please refer
+to "C Programmer's Guide to Serial Communications," second edition, by Joe
+Campbell, published by SAMS Publishing.
+
+Additional query words: 3.10 COM interrupt
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

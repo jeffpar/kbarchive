@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123479: Password Change to NT Server Returns &quot;Password…too short..&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123479: Password Change to NT Server Returns &quot;Password…too short..&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123479/","publisher":null,"image":null,"headline":"Q123479: Password Change to NT Server Returns &quot;Password…too short..&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123479-password-change-to-nt-server-returns-passwordtoo-short">Q123479: Password Change to NT Server Returns "Password…too short.."</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123479
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): win31 win95
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows for Workgroups 
+- Microsoft Windows 3.1 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to change your Windows NT domain password to a previously used
+password, while logging into a Windows for Workgroups workstation that logs onto
+a Windows NT domain, one of the following error messages appears:
+
+  The password you specified is too short. You must use a longer Password.
+
+-or-
+
+  Unable to change the password for Microsoft Networking because of the
+  following error: The password is shorter than required.
+
+NOTE: This problem can also occur when you connect to a Windows NT 3.5 domain
+controller from the following client computers:
+
+- Microsoft Windows version 3.1 with Microsoft LAN Manager version 2.2b
+
+- Microsoft Windows 95
+
+This problem may also occur when you connect to a Windows NT 3.51 or Windows NT
+4.0 domain controller from the following client computer:
+
+- Microsoft Windows 95
+
+CAUSE
+=====
+
+The Windows NT server, responding as the domain controller, indicates that the
+password is not unique. The Windows for Workgroups workstation does not properly
+interpret the response. This situation occurs when the new password you attempt
+to use duplicates one of your previous passwords.
+
+WORKAROUND
+==========
+
+When the error message noted above appears, use a unique password.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you attempt to change your password at a Windows NT workstation, and your new
+password does not meet the User Manager Account Policy Password Uniqueness
+setting, the following error message appears:
+
+  Your password must be at least &lt;x&gt; characters long. Your new password
+  cannot be the same as any of your previous &lt;y&gt; passwords. Type a
+  password which meets these requirements in both text boxes.
+
+where &lt;x&gt; is the minimum password length and &lt;y&gt; is the number of
+previous password entries checked for password uniqueness.
+
+Additional query words: 3.11 uniqueness prodnt
+
+======================================================================
+Keywords          : win31 win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin3xSearch kbWin95search kbWFWSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:95; winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

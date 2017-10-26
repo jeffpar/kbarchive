@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143155: No Audio with Crystal Audio or SoundBlaster AWE32 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143155: No Audio with Crystal Audio or SoundBlaster AWE32" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143155/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143155/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143155/","publisher":null,"image":null,"headline":"Q143155: No Audio with Crystal Audio or SoundBlaster AWE32","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143155-no-audio-with-crystal-audio-or-soundblaster-awe32">Q143155: No Audio with Crystal Audio or SoundBlaster AWE32</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143155
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbhw kbsound kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You do not receive audio from your Crystal Semiconductor audio chip or Creative
+Labs SoundBlaster AWE32 PnP Wavetable Synthesizer.
+
+CAUSE
+=====
+
+This problem may occur for either of the following reasons:
+
+- You ran PnPISA from the Windows NT 4.0 CD (or any of the Service Packs) and
+  selected "Do not install a driver (Windows NT will not prompt you again)."
+
+- The Creative Labs Advanced Wavetable Effects (AWE) Synthesizer is installed
+  and a Windows NT driver was not available when you were prompted to use the
+  Windows NT default driver. In this scenario, Do Not Install Driver was chosen
+  automatically.
+
+RESOLUTION
+==========
+
+You can resolve this problem by obtaining the Windows NT 4.0 Service Pack 3
+CD-ROM or by downloading Service Pack 3. For information on obtaining the latest
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+Service Pack 3 - CD-ROM Version
+-------------------------------
+
+Using the Windows NT 4.0 Service Pack 3 CD-ROM, perform the following steps to
+correct this problem:
+
+1. Start a command prompt.
+
+2. Go to the folder on the Service Pack 3 CD-ROM for your architecture (for
+  example, i386 for Intel.)
+
+3. Type the following command:
+
+  "devpre devupd.inf" (without the quotation marks)
+
+  NOTE: Devpre does not support UNC paths. You must map a network drive if you
+  are attaching to the Service Pack 3 CD-ROM across a network.
+
+4. A dialog box titled Windows NT Setup reads "Setup is examining your
+  computer's hardware."
+
+5. You may receive a prompt for the path of your audio drivers.
+
+  a. Enter the path name to the Service Pack 3 CD-ROM for the Audio driver.
+
+  b. Click OK on the Select Device screen.
+
+  c. If you are not presented with resource settings, click Set Configuration
+     Manually.
+
+  d. If there are conflicting devices at the bottom of the screen, resolve them
+     first by selecting a basic configuration that allows the selection of
+     resources that do not conflict with devices already installed.
+
+     To change resources, highlight the offending setting in the Resource
+     Settings window, click Change Setting and select a setting that does not
+     conflict with another device, and then click OK. Repeat for any settings
+     that show a conflict.
+
+6. If you receive a prompt for any other functions, follow the previous steps.
+
+7. Restart your computer.
+
+8. Your audio card should be working properly at this point. If you need to
+  change the resources that your card is using, open the Multimedia utility in
+  Control Panel, click the Devices tab, click Properties for the Crystal
+  Semiconductor driver or the Creative Labs SoundBlaster Plug and Play driver,
+  and then click Settings. This opens the same resource dialog box that was
+  invoked when installing the device.
+
+Service Pack 3 - Download Version
+---------------------------------
+
+Because the downloadable version of the Service Pack is in CAB format, you must
+manually extract the files with the /x switch before running DEVPRE. Please see
+the Readme.txt file included with the self-extracting version of Service Pack 3
+for more information.
+
+1. Start a command prompt.
+
+2. Create a temporary folder on your hard disk, copy the Service Pack executable
+  to this folder, and extract the files contained in the Service Pack by typing
+  the name of the executable followed by the /x switch:
+
+  &lt;Filename&gt; /x
+
+3. Type the following command:
+
+  "devpre devupd.inf" (without the quotation marks)
+
+  NOTE: Devpre does not support UNC paths. You must map a network drive if you
+  are attaching to the Service Pack 3 CD-ROM across a network.
+
+4. A dialog box titled Windows NT Setup reads "Setup is examining your
+  computer's hardware."
+
+5. You may receive a prompt for the path of your audio drivers.
+
+  a. Enter the path name to the Service Pack 3 CD-ROM for the Audio driver.
+
+  b. Click OK on the Select Device screen.
+
+  c. If you are not presented with resource settings, click Set Configuration
+     Manually.
+
+  d. If there are conflicting devices at the bottom of the screen, resolve them
+     first by selecting a basic configuration that allows the selection of
+     resources that do not conflict with devices already installed.
+
+     To change resources, highlight the offending setting in the Resource
+     Settings window, click Change Setting and select a setting that does not
+     conflict with another device, and then click OK. Repeat for any settings
+     that show a conflict.
+
+6. If you receive a prompt for any other functions, follow the previous steps.
+
+7. Restart your computer.
+
+8. Your audio card should be working properly at this point. If you need to
+  change the resources that your card is using, open the Multimedia utility in
+  Control Panel, click the Devices tab, click Properties for the Crystal
+  Semiconductor driver or the Creative Labs SoundBlaster Plug and Play driver,
+  and then click Settings. This opens the same resource dialog box that was
+  invoked when installing the device.
+
+Additional query words: prodnt sb
+======================================================================
+Keywords          : kbhw kbsound kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118815/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118815/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118815/","publisher":null,"image":null,"headline":"Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118815-bug-m6101-drawing-a-line-outside-screen-coordinates">Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118815
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program draws a line with an endpoint outside the screen coordinates, the
+line is not clipped and the following error message is generated:
+
+  run-time error M6101: MATH
+  - floating-point error: invalid
+
+CAUSE
+=====
+
+The limit seems to be related to converting to an int. In the sample code below,
+the extent of X in the window coordinates is 1.0, the screen coordinate is 639,
+and the line is drawn to 51.28. For example:
+
+     639 * 51.28 / 1.0 = 32,767.92 &gt; 32,767
+
+In the preceding example, a line drawn to 51.27 succeeds (639 * 51.27 / 1.0 =
+32,761.53 &lt; 32,767).
+
+RESOLUTION
+==========
+
+Do not draw outside the screen coordinates. Clip the endpoints of lines before
+calling the LINETO_W routine. If you clip to values within 10 times the size of
+the window, the code should work in any resolution.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug with Microsoft FORTRAN PowerStation for
+MS-DOS, versions 1.0 and 1.0a.
+
+MORE INFORMATION
+================
+
+To demonstrate this problem, compile the following sample code and run it from a
+full-screen MS-DOS prompt in Windows (not Windows NT) or directly from MS-DOS.
+
+Sample Code
+-----------
+
+  C Compile options needed: none
+        INCLUDE  'FGRAPH.FI'
+        INCLUDE  'FGRAPH.FD'
+        INTEGER*2 status
+        status = SETVIDEOMODE( $VRES16COLOR )
+        status = setwindow(.TRUE.,0D0,1.D0,1.D0,0.D0 )
+        status = LINETO_W( 51.28d0, 0.0d0 )
+        status = SETVIDEOMODE( $DEFAULTMODE )
+        END
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

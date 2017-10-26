@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131006: PRB: Dr Watson Won’t Log Stack Symbols in Visual C++ App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131006: PRB: Dr Watson Won’t Log Stack Symbols in Visual C++ App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131006/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131006/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131006/","publisher":null,"image":null,"headline":"Q131006: PRB: Dr Watson Won’t Log Stack Symbols in Visual C++ App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131006-prb-dr-watson-wont-log-stack-symbols-in-visual-c-app">Q131006: PRB: Dr Watson Won’t Log Stack Symbols in Visual C++ App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131006
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,3.1,3.5,3.51,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbOSWinNT310 kbOSWinNT351 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbOSWinNT350
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Dr. Watson won't log stack information in postmortem debug log if the
+application was built with the Visual C++, versions 2.x and later, default
+settings.
+
+CAUSE
+=====
+
+Dr. Watson can be configured to log debug information into a log file when an
+unhandled user mode exception occurs. For more information about this please see
+the following article in the Microsoft Knowledge Base:
+
+  Q121434 Specifying the Debugger for Unhandled User Mode Exceptions
+
+
+With applications built with Visual C++ version 1.0, the stack information
+includes the symbol information for the functions on the stack frame. With
+applications built with Visual C++ versions 2.x and later this information is no
+longer included. This results in an incomplete log.
+
+This is because Dr. Watson requires that symbol information be in COFF format. By
+default, the Visual C++ version 1.0 link build options included both COFF and
+Microsoft Format debug symbols. However, with Visual C++ versions 2.x and later,
+this has changed; only Microsoft Format style symbols are included.
+
+RESOLUTION
+==========
+
+To build the application with the required symbols for Dr. Watson, the build
+parameters must be changed for the project. Use the following steps from within
+the Visual C++ integrated development environment:
+
+1. Load the desired project.
+
+2. For Visual C++ version 4.0, choose Settings... from the Build menu.
+
+  For Visual C++ version 2.x, choose Settings from the Project menu.
+
+3. Select the Link tab.
+
+4. Select Debug from the Category list box.
+
+5. Select the "Generate Debug Info" check box.
+
+6. Select the "Both Formats" option to include COFF and Microsoft Format
+  symbols.
+
+7. Rebuild the application.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbOSWinNT310 kbOSWinNT351 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbOSWinNT350 
+Technology        : kbVCsearch kbVC400 kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbAudDeveloper kbWinNT310Search kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :2.0,2.1,3.1,3.5,3.51,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

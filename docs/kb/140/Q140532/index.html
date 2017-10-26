@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140532/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140532/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140532/","publisher":null,"image":null,"headline":"Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140532-inf-how-to-use-sqlsetpos-in-updatable-joins-w-sql-server">Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140532
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.5; winnt:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.5 
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, versions 1.52,2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to use an updatable join using SQLSetPos and the SQL
+Server ODBC driver version 2.50.0121.
+
+MORE INFORMATION
+================
+
+An updatable join is what you need when you intend to either update, insert, or
+delete data in the underlying tables on which the join is based. The most
+frequently encountered error with the SQL Server driver when you use an
+updatable join is:
+
+  Invalid column name &lt;column-name&gt;
+
+This error occurs if the application does not set the pcbValue argument in
+SQLBindCol to SQL_IGNORE for columns that will not be updated. For more
+information on SQLSetPos and SQL_IGNORE, please refer to the Microsoft "ODBC 2.0
+Programmer's Reference and SDK Guide."
+
+It is worth noting that you can only update one table of a join in any single
+SQLSetPos operation. Consider a two-table updatable join: If you want to update
+one or more columns in the first table, you must set pcbValue for all the
+columns from the second table to SQL_IGNORE, and do the same for any columns in
+the first table that you do not want to be updated.
+
+Similarly, if you want to update one or more columns in the second table, you
+must set pcbValue for all the columns from the first table to SQL_IGNORE, and do
+the same for any column in the second table that you do not want to be updated.
+If you want to update columns in both tables, you have to use SQLSetPos twice,
+wrapping in a transaction if needed.
+
+The following C code illustrates how to use an updatable join:
+
+Code Sample
+-----------
+
+  /* Before running the following code do this on SQL Server:
+  Create table test1 (col1 int, col2 char(10))
+  Create table test2 (col1 int, col2 int, col3 char(10))*/ 
+
+  void RunTest(void)
+  {
+     HENV       henv;
+     HDBC       hdbc1;
+     HSTMT      hstmt1;
+     RETCODE    retcode;
+     extern HWND       hWnd;
+     SWORD        swStrLen;
+     UCHAR       Col2[50], Info[50], szConnStrOut[30];
+     int       try1=0,try2=0,try3=0;
+     SDWORD    cbCol11 = 4, cbCol12=10, cbCol21=4, cbCol22=4, cbCol23=10;
+     UDWORD r=0;
+     UWORD rgfRowStat;
+
+  // Allocate the ODBC Environment  handle
+     retcode = SQLAllocEnv (&amp;henv);
+
+  // Allocate the Connection  handle
+     retcode = SQLAllocConnect(henv, &amp;hdbc1);
+
+  // SQLDriverConnect that will generate a dialog prompt for the datasource
+     retcode = SQLDriverConnect(hdbc1,hWnd,(UCHAR *)"",12,
+        szConnStrOut,30, &amp;swStrLen,SQL_DRIVER_PROMPT);
+
+  // Allocate the statement handle
+     retcode=SQLAllocStmt(hdbc1, &amp;hstmt1);
+
+  // Set the statement options
+     retcode = SQLSetStmtOption(hstmt1, SQL_CONCURRENCY,
+  SQL_CONCUR_VALUES);
+     retcode = SQLSetStmtOption(hstmt1,
+  SQL_CURSOR_TYPE,SQL_CURSOR_KEYSET_DRIVEN);
+     retcode = SQLSetStmtOption(hstmt1, SQL_ROWSET_SIZE, 1);
+
+  // Perform the join and bind the columns in the result set
+     retcode = SQLExecDirect(hstmt1,(UCHAR *)"select * from
+  test1,test2 where test1.col1=test2.col1",SQL_NTS);
+     retcode = SQLBindCol(hstmt1, 1, SQL_C_LONG, &amp;try1,
+  sizeof(try1), &amp;cbCol11);
+     retcode = SQLBindCol(hstmt1, 2, SQL_C_CHAR, Col2,
+  sizeof(Col2),&amp;cbCol12);
+     retcode = SQLBindCol(hstmt1, 3, SQL_C_LONG, &amp;try2,
+  sizeof(try2),&amp;cbCol21);
+     retcode = SQLBindCol(hstmt1, 4, SQL_C_LONG, &amp;try3,
+  sizeof(try3),&amp;cbCol22);
+     retcode = SQLBindCol(hstmt1, 5, SQL_C_CHAR, Info,
+  sizeof(Info),&amp;cbCol23);
+
+  // Fetch the resultset and position the cursor
+     retcode = SQLExtendedFetch(hstmt1, SQL_FETCH_FIRST, 1, &amp;r,
+  &amp;rgfRowStat);
+
+  // Set the pcbValues so that Col1 of Test1 can be updated.
+  // Notice that all the columns that won't be updated are set to
+  // SQL_IGNORE
+
+     try1=600;
+     cbCol12=SQL_IGNORE;
+     cbCol21=SQL_IGNORE;
+     cbCol22=SQL_IGNORE;
+     cbCol23=SQL_IGNORE;
+
+  // Update the values
+     retcode = SQLSetPos(hstmt1, 1, SQL_UPDATE, SQL_LOCK_NO_CHANGE);
+
+  // Free the handles
+     retcode = SQLFreeStmt(hstmt1, SQL_DROP);
+     retcode = SQLDisconnect(hdbc1);
+     retcode = SQLFreeConnect (hdbc1);
+     retcode = SQLFreeEnv(henv);
+  }
+
+Additional query words: MFC VC++ sql 6.00 2.00 2.10 2.20 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMFC kbODBCSearch
+Version           : WINDOWS:2.5; winnt:
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

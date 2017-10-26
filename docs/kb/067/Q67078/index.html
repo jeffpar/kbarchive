@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67078: Different Warnings Appear Using Different Optimizations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67078: Different Warnings Appear Using Different Optimizations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67078/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67078/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67078/","publisher":null,"image":null,"headline":"Q67078: Different Warnings Appear Using Different Optimizations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67078-different-warnings-appear-using-different-optimizations">Q67078: Different Warnings Appear Using Different Optimizations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67078
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbcode kbCompiler
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+   - Microsoft C for OS/2, versions 6.0, 6.0a 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article is included in the documentation starting with
+Visual C++ 5.0. Look there for future revisions.
+
+In Microsoft C/C++ compiler, different warning messages can appear during
+separate compilations of the same code when different optimizations are used.
+This is normal behavior that occurs because some warnings are found only while
+optimizing.
+
+MORE INFORMATION
+================
+
+If the sample code below is compiled with /W4 (all warnings) and the /Os
+optimization (optimize for space), no warnings are found. However, when the code
+is compiled with /W4 and /Osle (optimize for size, loop, and global-register
+allocation), the following warning is generated:
+
+  file.c(7) : warning C4202: unreachable code
+
+With Visual C++ for Windows NT versions 1.0, 2.0, and 2.1, as well as Visual C++
+for Windows version 1.5 and 1.51, the following warning is generated when
+compiled with /W4 and /O2:
+
+  file.c(7) : warning C4702: unreachable code
+
+There are several other optimizations and code examples that will exhibit this
+type of behavior. Once again, this is normal and serves to notify the developer
+that there MAY be a problem.
+
+Sample Code
+-----------
+
+    #include &lt;stdio.h&gt;
+
+    void main(void)
+    {
+         goto bottom;
+
+         printf("Not used\n");    /* Code that is not used */ 
+
+  bottom:printf("Hello World!");
+    }
+
+Additional query words: 6.00 6.00a 6.00ax 7.00 8.00 8.00c 1.00 1.50 1.51 1.52 2.00 2.10 4.00
+
+======================================================================
+Keywords          : kbcode kbCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

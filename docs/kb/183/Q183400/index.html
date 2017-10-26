@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183400: XADM: Specific Events That ISINTEG Attempts to Fix | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183400: XADM: Specific Events That ISINTEG Attempts to Fix" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183400/","publisher":null,"image":null,"headline":"Q183400: XADM: Specific Events That ISINTEG Attempts to Fix","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183400-xadm-specific-events-that-isinteg-attempts-to-fix">Q183400: XADM: Specific Events That ISINTEG Attempts to Fix</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183400
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Isinteg.exe can be used to detect and attempt to fix specific problems in the
+information store. This article lists Windows NT Application Log events that can
+point to problems in the information store. Each event is followed by a
+description of the event and the test that is used with Isinteg.exe.
+
+MORE INFORMATION
+================
+
+  Event ID: 1025
+  Description: An error occurred. Function name or description of problem:
+  EcGetRestriction. Error: 0x57a
+  Test: -test search
+  
+  Event ID: 1186
+  Description: A database inconsistency (EcSetSpecialRights/ACLID) was
+  encountered while performing an upgrade.
+  Test: -test acllistref
+
+  Event ID: 1186
+  Description: A database inconsistency (2.1A/AMIDRefCt) was encountered
+  while performing an upgrade.
+  Description: A database inconsistency (2.1A/AMIDRef) was encountered
+  while performing an upgrade.
+  Description: A database inconsistency (2.1B/AMID) was encountered while
+  performing an upgrade.
+  Description: A database inconsistency (2.2D/AMID) was encountered while
+  performing an upgrade.
+  Test: -test aclitemref
+
+  Event ID: 1186
+  Description: A database inconsistency (2.1A/ACLID) was encountered while
+  performing an upgrade.
+  Description: A database inconsistency (2.1B/ACLID) was encountered while
+  performing an upgrade.
+  Description: A database inconsistency (2.2D/ACLID) was encountered while
+  performing an upgrade.
+  Description: A database inconsistency (2.1A/ACLRef) was encountered
+  while performing an upgrade.
+  Test: -test acllistref
+
+  Event ID: 1186
+  Description: A database inconsistency (2.1B/cnset) was encountered while
+  performing an upgrade.
+  Test: -test aclitemref
+
+  Event ID: 1198
+  Description: A database inconsistency was encountered while performing
+  an upgrade to version 2.19.
+  FID: &lt;value&gt;
+  MID: &lt;value&gt;
+  INID: &lt;value&gt;
+  Description: A database inconsistency was encountered while performing
+  an upgrade to version 2.2a.
+  FID: &lt;value&gt;
+  MID: &lt;value&gt;
+  INID: &lt;value&gt;
+  Test: -test folder
+
+  Event ID: 7200
+  Description: Background thread FDsWaitTask halted due to error code
+  &lt;value&gt;.
+  Test: -test mailbox
+
+  Event ID: 7200
+  Description: Background thread EcFlushInTransitUserMail halted due to
+  error code &lt;value&gt;.
+  Test: -test folder
+
+  Event ID: 7201
+  Description: Background thread FDoMaintenance encountered a problem.
+  Error code &lt;value&gt;.
+  Test: -test folder,artidx
+
+  Event ID: 7201
+  Description: Background thread FDoPeriodic encountered a problem. Error
+  code &lt;value&gt;.
+  Test: -test rowcounts, dumpsterref
+
+  Event ID: 8500
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while opening an attachment. Internal parent folder ID: &lt;value&gt;, parent
+  message ID: &lt;value&gt;; Error code: &lt;value&gt;.
+  Test: -test message
+
+  Event ID: 8501
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while opening an attachment. Parent folder name: &lt;name&gt;, parent message
+  subject: &lt;subject&gt;; Error code: &lt;value&gt;.
+  Test: -test message
+
+  Event ID: 8502
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while opening an attached message.
+  Internal parent folder ID: &lt;value&gt;, parent message ID: &lt;value&gt;; Error
+  code: &lt;value&gt;.
+  Test: -test message
+
+  Event ID: 8503   Unable to move mailbox &lt;mailbox name&gt;.
+  Description: A problem occurred while opening an attached message.
+  Parent folder name: &lt;value&gt;, parent message subject: &lt;value&gt;; Error
+  code: &lt;value&gt;.
+  Test: -test message*
+
+  Event ID: 8504
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for a folder. Internal folder ID: &lt;value&gt;;
+  Error code: &lt;value&gt;.
+  Test: -test folder*
+
+  Event ID: 8505
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for a folder. Folder name: &lt;value&gt;; Error
+  code: &lt;value&gt;.
+  Test: -test folder*
+
+  Event ID: 8506
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for a message. Internal parent folder ID:
+  &lt;value&gt;; Message ID: &lt;value&gt;; Error code: &lt;value&gt;.
+  Test: -test folder,message*
+
+  Event ID: 8507
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for a message. Parent folder name: &lt;value&gt;;
+  Message subject: &lt;value&gt; Error code: &lt;value&gt;.
+  Test: -test folder,message*
+
+  Event ID: 8508
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for an attachment. Internal parent folder
+  ID: &lt;value&gt;, parent message ID: &lt;value&gt;; Error code: &lt;value&gt;.
+  Test: -test attach
+
+  Event ID: 8509
+  Description: Unable to move mailbox &lt;mailbox name&gt;. A problem occurred
+  while getting the properties for an attachment. Parent folder name:
+  &lt;value&gt;, parent message subject: &lt;value&gt;; Error code: &lt;value&gt;.
+  Test: -test attach
+
+* The problems causing this message to appear may not be related to the integrity
+of the information store.
+
+The events shown above may be, but are not necessarily, a result of a corrupted
+information store. Consequently, in some cases the suggested option does not
+repair the problem associated with the event log ID and description. If the
+suggested test does not resolve the problem, Microsoft Technical Support will
+direct you to other diagnostic methods.
+
+For more information, see the Isinteg.rtf file on the Exchange Server 5.5 CD, in
+the following location:
+
+  Server\Support\Utils\Isinteg.rtf
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

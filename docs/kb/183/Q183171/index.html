@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183171/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183171/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183171/","publisher":null,"image":null,"headline":"Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183171-xadm-internet-mail-service-error-with-55-added-to-site">Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183171
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 05-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you add a computer running Exchange Server 5.5 to an Exchange 4.0 or
+Exchange 5.0 site, using the Administrator program from version 4.0 or 5.0, you
+cannot see all properties for the Internet Mail Service (Internet Mail Connector
+in 4.0). If you double-click on the Internet Mail Service, the following error
+message appears:
+
+  Extension SMTP could not be loaded. The specified Module could not be
+  found.
+
+However, the Internet Mail Service can be administered using the Exchange Server
+5.5 Administrator program.
+
+CAUSE
+=====
+
+During the installation of an Exchange Server 5.5 computer into the Exchange 4.0
+or 5.0 site, not all libraries required for a static link for run-time are
+replicated over to the Exchange Server computers running 4.0 or 5.0, or to any
+computer running the Administrator program from version 4.0 or 5.0.
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. Copy two files from the Exchange Server version 5.5 CD: Mfc42.dll and
+  Msvcrt.dll.
+
+2. Insert those files into the winnt\system32 directory on the computers running
+  the Exchange 4.0 or Exchange 5.0 Administrator program. Because the
+  Msvcrt.dll file is a C-Runtime file used for certain operating system time
+  functions, a file lock will be established at startup.
+
+3. If the computer is using NTFS, you must perform a parallel installation of
+  Windows NT (in other words, install Windows NT into another directory or
+  partition on the same computer). Then copy over the files into their
+  appropriate location. If you are using FAT, go to MS-DOS and copy over the
+  files.
+
+Additional query words: IMC IMS extension SMTP could not be Loaded Module could not be found
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

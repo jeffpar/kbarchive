@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66703: C 6.00/6.00a Online Help Example for _heapwalk() Is Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66703: C 6.00/6.00a Online Help Example for _heapwalk() Is Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66703/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66703/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66703/","publisher":null,"image":null,"headline":"Q66703: C 6.00/6.00a Online Help Example for _heapwalk() Is Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66703-c-600600a-online-help-example-for-_heapwalk-is-incorrect">Q66703: C 6.00/6.00a Online Help Example for _heapwalk() Is Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q66703</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">See</span> <span class="n">article</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.00</span> <span class="m">6.00</span><span class="n">a</span> <span class="p">|</span> <span class="m">6.00</span> <span class="m">6.00</span><span class="n">a</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="p">|</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span>
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">ENDUSER</span> <span class="p">|</span> <span class="n">docerr</span> <span class="n">_heapwalk</span> <span class="p">|</span> <span class="n">mspl13_c</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">28</span><span class="p">-</span><span class="n">JAN</span><span class="p">-</span><span class="m">1991</span>
+
+<span class="n">The</span> <span class="n">program</span> <span class="n">example</span> <span class="n">HEAPWALK</span><span class="p">.</span><span class="n">C</span> <span class="n">that</span> <span class="n">is</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">C</span> <span class="n">versions</span> <span class="m">6.00</span>
+<span class="k">and</span> <span class="m">6.00</span><span class="n">a</span> <span class="n">online</span> <span class="n">help</span> <span class="n">is</span> <span class="n">incorrect</span><span class="p">.</span> <span class="n">Compiling</span> <span class="n">the</span> <span class="n">program</span> <span class="n">under</span> <span class="n">large</span>
+<span class="k">model</span> <span class="k">in</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">causes</span> <span class="n">a</span> <span class="n">general</span> <span class="n">protection</span> <span class="n">error</span><span class="p">.</span> <span class="n">When</span> <span class="n">compiling</span> <span class="n">the</span>
+<span class="n">program</span> <span class="n">without</span> <span class="n">the</span> <span class="n">Quick</span> <span class="nf">Compile</span> <span class="n">option</span> <span class="p">(/</span><span class="n">qc</span><span class="p">)</span> <span class="n">turned</span> <span class="n">on</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">warning</span> <span class="n">message</span> <span class="n">will</span> <span class="n">appear</span> <span class="n">twice</span><span class="p">:</span>
+
+   <span class="n">Warning</span> <span class="n">c4061</span><span class="p">:</span> <span class="n">long</span><span class="p">/</span><span class="n">short</span> <span class="n">mismatch</span> <span class="k">in</span> <span class="n">argument</span><span class="p">:</span> <span class="n">conversion</span> <span class="n">supplied</span>
+
+<span class="n">This</span> <span class="n">warning</span> <span class="n">message</span> <span class="n">is</span> <span class="n">cause</span> <span class="n">by</span> <span class="n">the</span> <span class="n">failure</span> <span class="k">to</span> <span class="n">type</span> <span class="n">cast</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">statement</span>
+
+   <span class="n">heapdump</span><span class="p">(</span><span class="m">254</span><span class="p">);</span>
+
+<span class="k">to</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+   <span class="n">heapdump</span><span class="p">((</span><span class="n">char</span><span class="p">)</span><span class="m">254</span><span class="p">);</span>
+
+<span class="n">The</span> <span class="n">second</span> <span class="s2">"for"</span> <span class="n">loop</span> <span class="k">in</span> <span class="n">the</span> <span class="n">program</span> <span class="n">causes</span> <span class="n">the</span> <span class="n">general</span> <span class="n">protection</span>
+<span class="n">fault</span><span class="p">.</span> <span class="n">The</span> <span class="n">variable</span> <span class="s2">"i"</span> <span class="n">is</span> <span class="k">not</span> <span class="n">initialized</span> <span class="k">to</span> <span class="n">the</span> <span class="n">correct</span> <span class="n">value</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">code</span> <span class="n">currently</span> <span class="n">reads</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+   <span class="n">for</span><span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">--</span> <span class="p">)</span>
+   <span class="p">{</span>
+      <span class="n">free</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">);</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s2">"Deallocating %u at %Fp</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span>
+               <span class="n">_msize</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">),</span> <span class="p">(</span><span class="n">void</span> <span class="n">_far</span> <span class="p">*)</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+   <span class="p">}</span>
+
+<span class="n">It</span> <span class="n">should</span> <span class="nb">read</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+   <span class="n">for</span><span class="p">(</span> <span class="n">i</span><span class="p">=</span><span class="m">9</span><span class="p">;</span> <span class="n">i</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">--</span> <span class="p">)</span>    <span class="p">//</span> <span class="p">&lt;---</span> <span class="n">THIS</span> <span class="n">LINE</span> <span class="n">HAS</span> <span class="n">BEEN</span> <span class="n">CHANGED</span><span class="p">.</span>
+   <span class="p">{</span>
+      <span class="n">free</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">);</span>
+      <span class="n">printf</span><span class="p">(</span> <span class="s2">"Deallocating %u at %Fp</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span>
+              <span class="n">_msize</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">),</span> <span class="p">(</span><span class="n">void</span> <span class="n">_far</span> <span class="p">*)</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">);</span>
+   <span class="p">}</span>
+
+<span class="n">The</span> <span class="n">problem</span> <span class="k">with</span> <span class="n">the</span> <span class="n">loop</span> <span class="n">is</span> <span class="n">that</span> <span class="n">the</span> <span class="n">value</span> <span class="k">of</span> <span class="n">i</span> <span class="n">is</span> <span class="n">equal</span> <span class="k">to</span> <span class="m">10</span> <span class="n">when</span>
+<span class="n">the</span> <span class="n">loop</span> <span class="n">begins</span><span class="p">;</span> <span class="n">it</span> <span class="n">should</span> <span class="n">be</span> <span class="m">9.</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245714/","publisher":null,"image":null,"headline":"Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245714-prb-inserting--than-250k-of-data-in-a-sql-7-image-field-fails">Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245714
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,6.0
+Operating System(s): 
+Keyword(s): kbSQL kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbMDAC250 kbCodeSnippet kbSQLProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Inserting or replacing more than approximately 250K of data in an image field in
+a SQL 7.0 table, using a remote view, causes the tableupdate to fail. The
+following error message appears if you try to browse the table by
+double-clicking it in the remote view:
+
+  Connectivity error: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid
+  locator de-referenced.
+
+RESOLUTION
+==========
+
+Here are two ways to work around this problem:
+
+- Use a TABLEUPDATE(.T.) after the first replace statement. For example use the
+  following code:
+
+  APPEND BLANK
+  REPLACE IID WITH RECCOUNT()+1, VERSIONNUMBER WITH 1, LASTUPDATE WITH DATETIME()
+  ? TABLEUPDATE(.T.)
+  REPLACE  DBCFILE WITH REPLICATE("@", 200000), DCXFILE WITH REPLICATE("@", 250000), DCTFILE WITH REPLICATE("@", 900000)
+  ? TABLEUPDATE(.T.)
+
+-or-
+
+- Set the driver in SQL 6.5 compatibility mode. For more information on how to
+  set the compatibility mode of the SQL driver, see the References section.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ODBC connection to a SQL 7.0 database and name it SQL7INSPROB.
+
+2. Use the following code to create a table in a SQL 7.0 database. This can be
+  copied into the Query Analyzer and executed. Be sure to create the table in
+  the database that you used in the ODBC connection.
+
+  if exists (select * from sysobjects where id = object_id(N'[dbo].[systeminfo]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+  drop table [dbo].[systeminfo]
+  GO
+   
+  CREATE TABLE [dbo].[systeminfo] (
+   [iid] [int] NOT NULL ,
+   [versionnumber] [int] NULL ,
+   [dbcfile] [image] NULL ,
+   [dcxfile] [image] NULL ,
+   [dctfile] [image] NULL ,
+   [bizfile] [image] NULL ,
+   [formfile] [image] NULL ,
+   [dataenvfile] [image] NULL ,
+   [otherfile] [image] NULL ,
+   [generalfile] [image] NULL ,
+   [lastupdate] [datetime] NULL 
+  ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+  GO
+   
+  ALTER TABLE [dbo].[systeminfo] WITH NOCHECK ADD 
+   CONSTRAINT [PK_systeminfo] PRIMARY KEY  NONCLUSTERED 
+   (
+    [iid]
+   )  ON [PRIMARY] 
+  GO
+
+3. Create and open a database in Visual FoxPro by entering the following
+  commands in the Command window:
+
+  CREATE DATABASE MyDatabase
+  OPEN DATABASE MyDatabase
+  MODIFY DATABASE
+
+4. Copy the following code into a program. Run the program to create a remote
+  view in Visual FoxPro:
+
+  ** Start of CODE
+  CREATE SQL VIEW "RV_SYSTEMINFO" ; 
+     REMOTE CONNECT SQL7INSPROB; 
+     AS SELECT * FROM dbo.systeminfo Systeminfo
+   
+  DBSetProp('RV_SYSTEMINFO', 'View', 'UpdateType', 2)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'WhereType', 1)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'FetchMemo', .T.)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'SendUpdates', .T.)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'UseMemoSize', 255)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'FetchSize', 100)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'MaxRecords', -1)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'Tables', 'dbo.systeminfo')
+  DBSetProp('RV_SYSTEMINFO', 'View', 'Prepared', .F.)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'CompareMemo', .T.)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'FetchAsNeeded', .F.)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'FetchSize', 100)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'Comment', "")
+  DBSetProp('RV_SYSTEMINFO', 'View', 'BatchUpdateCount', 1)
+  DBSetProp('RV_SYSTEMINFO', 'View', 'ShareConnection', .T.)
+  *!* Field Level Properties for RV_SYSTEMINFO
+  * Props for the RV_SYSTEMINFO.iid field.
+  DBSetProp('RV_SYSTEMINFO.iid', 'Field', 'KeyField', .T.)
+  DBSetProp('RV_SYSTEMINFO.iid', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.iid', 'Field', 'UpdateName', 'dbo.systeminfo.iid')
+  DBSetProp('RV_SYSTEMINFO.iid', 'Field', 'DataType', "I")
+  * Props for the RV_SYSTEMINFO.versionnumber field.
+  DBSetProp('RV_SYSTEMINFO.versionnumber', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.versionnumber', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.versionnumber', 'Field', 'UpdateName', 'dbo.systeminfo.versionnumber')
+  DBSetProp('RV_SYSTEMINFO.versionnumber', 'Field', 'DataType', "I")
+  * Props for the RV_SYSTEMINFO.dbcfile field.
+  DBSetProp('RV_SYSTEMINFO.dbcfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.dbcfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.dbcfile', 'Field', 'UpdateName', 'dbo.systeminfo.dbcfile')
+  DBSetProp('RV_SYSTEMINFO.dbcfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.dcxfile field.
+  DBSetProp('RV_SYSTEMINFO.dcxfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.dcxfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.dcxfile', 'Field', 'UpdateName', 'dbo.systeminfo.dcxfile')
+  DBSetProp('RV_SYSTEMINFO.dcxfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.dctfile field.
+  DBSetProp('RV_SYSTEMINFO.dctfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.dctfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.dctfile', 'Field', 'UpdateName', 'dbo.systeminfo.dctfile')
+  DBSetProp('RV_SYSTEMINFO.dctfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.bizfile field.
+  DBSetProp('RV_SYSTEMINFO.bizfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.bizfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.bizfile', 'Field', 'UpdateName', 'dbo.systeminfo.bizfile')
+  DBSetProp('RV_SYSTEMINFO.bizfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.formfile field.
+  DBSetProp('RV_SYSTEMINFO.formfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.formfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.formfile', 'Field', 'UpdateName', 'dbo.systeminfo.formfile')
+  DBSetProp('RV_SYSTEMINFO.formfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.dataenvfile field.
+  DBSetProp('RV_SYSTEMINFO.dataenvfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.dataenvfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.dataenvfile', 'Field', 'UpdateName', 'dbo.systeminfo.dataenvfile')
+  DBSetProp('RV_SYSTEMINFO.dataenvfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.otherfile field.
+  DBSetProp('RV_SYSTEMINFO.otherfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.otherfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.otherfile', 'Field', 'UpdateName', 'dbo.systeminfo.otherfile')
+  DBSetProp('RV_SYSTEMINFO.otherfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.generalfile field.
+  DBSetProp('RV_SYSTEMINFO.generalfile', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.generalfile', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.generalfile', 'Field', 'UpdateName', 'dbo.systeminfo.generalfile')
+  DBSetProp('RV_SYSTEMINFO.generalfile', 'Field', 'DataType', "M NOCPTRANS")
+  * Props for the RV_SYSTEMINFO.lastupdate field.
+  DBSetProp('RV_SYSTEMINFO.lastupdate', 'Field', 'KeyField', .F.)
+  DBSetProp('RV_SYSTEMINFO.lastupdate', 'Field', 'Updatable', .T.)
+  DBSetProp('RV_SYSTEMINFO.lastupdate', 'Field', 'UpdateName', 'dbo.systeminfo.lastupdate')
+  DBSetProp('RV_SYSTEMINFO.lastupdate', 'Field', 'DataType', "T")
+  *** End of Code
+
+5. With the database still open, enter the following commands in the Command
+  window or copy them into a program and run the program:
+
+  *** Start of Code
+  USE rv_systeminfo
+  APPEND BLANK
+  REPLACE IID WITH RECCOUNT()+1, VERSIONNUMBER WITH 1, LASTUPDATE WITH DATETIME()
+  REPLACE  DBCFILE WITH REPLICATE("@", 200000), DCXFILE WITH REPLICATE("@", 250000), DCTFILE WITH REPLICATE("@", 900000)
+  * Table update will return false.
+  ? TABLEUPDATE(.T.)
+
+6. If you double-click the remote view in the Database designer, the preceding
+  error message appears.
+
+The following INSERT INTO statement also causes the problem:
+
+  *** Start of Code
+  insert into rv_systeminfo (iid, versionnumber, dbcfile, dcxfile, dctfile) VALUES (reccount()+1, 1, replicate("@", 200000), replicate("@", 250000), replicate("@", 900000))
+  *** End of Code
+
+REFERENCES
+==========
+
+For additional information on how to set the compatibility mode of the SQL
+driver, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q231812 HOWTO: Programmatically Set the Compatibility Level of the SQL Server
+  ODBC Driver
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbSQL kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbMDAC250 kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP600
+Version           : WINDOWS:2.5,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

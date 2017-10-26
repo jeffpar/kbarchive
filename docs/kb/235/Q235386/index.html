@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235386: HOWTO: Trigger a Beep in VBCE Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235386: HOWTO: Trigger a Beep in VBCE Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235386/","publisher":null,"image":null,"headline":"Q235386: HOWTO: Trigger a Beep in VBCE Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235386-howto-trigger-a-beep-in-vbce-applications">Q235386: HOWTO: Trigger a Beep in VBCE Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235386
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB
+Last Modified: 16-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+- Microsoft eMbedded Visual C++ version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Beep statement is not available in eVB/VBCE applications. However, the Beep
+functionality can be implemented using the MessageBeep API call.
+
+MORE INFORMATION
+================
+
+VBCE 6.0 includes the capability to declare and use certain system application
+programming interfaces (APIs). The file WINCEAPI.TXT is provided with the VBCE
+Toolkit and includes sample declare statements, constants, and other useful
+information.
+
+The following code demonstrates this sample:
+
+1. Create a new Windows CE project in either Visual Basic or eMbedded Visual
+  Basic. Form1 is created by default.
+
+2. Place a Command Button on Form1.
+
+3. Paste the following code into the code module of Form1:
+
+  Option Explicit
+     Declare Function MessageBeep Lib "Coredll" (ByVal wType As Long) As Long
+     Const MB_ICONHAND = 16
+     Const MB_ICONQUESTION = 32
+     Const MB_ICONEXCLAMATION = 48
+     Const MB_ICONASTERISK = 64
+     Const MB_ICONINFORMATION = 64   'MB_ICONASTERISK
+     Const MB_ICONSTOP = 16 	        'MB_ICONHAND
+
+     Private Sub Command1_Click()
+        Dim ret
+        ret = MessageBeep(MB_ICONEXCLAMATION)
+        If ret = 0 Then Msgbox "Error occurred"
+     End Sub
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q184650 INFO: What Language Features does VB have that VBCE and eVB Do Not
+
+Additional query words: wince vbce vbce6 eVB
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbVCeMb
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

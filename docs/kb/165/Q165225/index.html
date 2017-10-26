@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165225/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165225/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165225/","publisher":null,"image":null,"headline":"Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165225-ap_tp_name_not_recognized-with-dbcs-and-single-signon">Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165225
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When allocating a 5250 conversation using a double byte character set (DBCS)
+code page and the single signon feature, the following advanced
+program-to-program communications (APPC) return code may result:
+
+  Primary Return Code: 0003 AP_ALLOCATION_ERROR
+  Secondary Return Code: 10086021 AP_TP_NAME_NOT_RECOGNIZED.
+
+The partner LU does not recognize the TP name specified in the allocation
+request.
+
+The following trace excerpt shows the TP name being 0x066F646E:
+
+APPC   ---------------------------------------------- 17:43:27.20
+APPC   MC_ALLOCATE request
+APPC
+APPC   Type:Sync                                  VerbID:00001400
+APPC
+APPC   ---- Verb Parameter Block at address 0210FB54 ----
+APPC   01000100 00000000 00000000 00000000     &lt;................&gt;
+APPC   B86A1A00 08801B00 00000000 00000000     &lt;.j..............&gt;
+APPC   00000000 00000000 53313030 35444341     &lt;........S1005DCA&gt;
+APPC   D8D7C3E2 E4D7D740 066F646E 40404040     &lt;QPCSUPP@.odn@@@@&gt; &lt;-.odn
+APPC   40404040 40404040 40404040 40404040     &lt;@@@@@@@@@@@@@@@@&gt;
+APPC   40404040 40404040 40404040 40404040     &lt;@@@@@@@@@@@@@@@@&gt;
+APPC   40404040 40404040 40404040 40404040     &lt;@@@@@@@@@@@@@@@@&gt;
+APPC   40404040 40404040 02000000 00000000     &lt;@@@@@@@@........&gt;
+APPC   00000000 E2C8E4C9 C3C8C940 4040E2C8     &lt;....SHUICHI@@@SH&gt;
+APPC   E4C9C3C8 C9404040 00000000 00000000     &lt;UICHI@@@........&gt;
+APPC   00000000 00000000 00000000 00000000     &lt;................&gt;
+APPC   00000000 00000000 00000000              &lt;............    &gt;
+
+The following is the return from the remote system after the allocate was sent to
+the AS/400:
+
+APPC   ---------------------------------------------- 17:43:40.25
+APPC   MC_RECEIVE_AND_WAIT response, result = ALLOCATION_ERROR
+APPC
+APPC   Type:Sync                                  VerbID:00004400
+APPC
+APPC   ---- Verb Parameter Block at address 0210FBE0 ----
+APPC   0B000100 00030000 10086021 00000000     &lt;..........`!....&gt;
+APPC   00000000 28FC1002 00000000 00000000     &lt;....(...........&gt;
+
+CAUSE
+=====
+
+This problem occurs when you use WideCharToMultiByte() API on DBCS platforms.
+
+RESOLUTION
+==========
+
+A change was made to Sec400.dll so that the WideCharToMultiByte () API is not
+used to convert the EBCDIC TP name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

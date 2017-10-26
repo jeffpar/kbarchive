@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q229742: WD97: Error Message After You Undo a Deletion of a Section Break | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q229742: WD97: Error Message After You Undo a Deletion of a Section Break" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/229/Q229742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/229/Q229742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/229/Q229742/","publisher":null,"image":null,"headline":"Q229742: WD97: Error Message After You Undo a Deletion of a Section Break","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q229742-wd97-error-message-after-you-undo-a-deletion-of-a-section-break">Q229742: WD97: Error Message After You Undo a Deletion of a Section Break</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q229742
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 word97
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97 for Windows, when you try to do any of the following:
+
+- Print a document.
+
+  -or-
+
+- Perform a mail merge.
+
+  -or-
+
+- Delete the last character in a document.
+
+  -or-
+
+- Scroll through a document.
+
+  -or-
+
+- Select all and press DELETE.
+
+  -or-
+
+- Open a file.
+
+You may receive an error message similar to one of the following:
+
+Windows NT 4.0:
+
+  WINWORD.exe - Application Error
+
+  The instruction at 0x3007ceac referenced memory at 0x001252d1.
+
+  The memory could not be 'read'.
+
+  Click ok to terminate the application.
+
+Windows 95 or Windows 98:
+
+  This program has performed an illegal operation and will be shut down.
+
+  If the problem persists, contact the program vendor.
+
+When you click Details (on Microsoft Windows Millennium Edition, press ALT+D),
+you receive the following message:
+
+  WINWORD caused an invalid page fault in WINWORD.EXE at 0137:301e4f1f.
+
+NOTE: The actual memory address may vary.
+
+
+CAUSE
+=====
+
+You previously deleted a section break and then undid the delete, and the header
+in the section before the deleted section break contains a shape.
+
+Formatting information for shapes in the document header is corrupted. This can
+occur when you undo the deletion of a section break, and the header of the
+previous section contains one or more shapes.
+
+RESOLUTION
+==========
+
+To resolve the problem described in this article, obtain and install the latest
+Microsoft Word 97 update from the following Microsoft Web site:
+
+  http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+
+IMPORTANT NOTE: Microsoft Word 97 post-service release fixes are cumulative. The
+latest update contains all of the fixes since Service Release 2. If you install
+the latest update for Word 97, you do not need to install any other updates
+after Service Release 2.
+
+For additional information about the fixes included in the latest update for Word
+97, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q265374 WD97: Post Service Release Fixes for Word 97
+
+
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, save the document in RTF format, and then open the
+RTF document in Microsoft Word 97.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.&lt;A0&gt;This problem was corrected in Microsoft
+Word 2000.
+
+
+Additional query words: wd97 word97 section break corrupt IPF error errmsg crash
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

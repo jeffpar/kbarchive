@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/284/Q284254/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/284/Q284254/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/284/Q284254/","publisher":null,"image":null,"headline":"Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q284254-xcon-address-space-not-in-gwart-wmultiple-x400-connectors">Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q284254
+Product(s): Microsoft Exchange
+Version(s): 5.5 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the following configuration, when you recalculate routing, the c=* address
+space does not appear in the Gateway Address Resolution Table (GWART), and
+messages to the outside world are not delivered.
+
+Two Exchange Server sites, SiteA and SiteB, are connected by four X.400
+Connectors (each site has two bridgehead servers, and each bridgehead has an
+X.400 Connector to each of the opposing bridgehead servers). The Connected Sites
+tabs are completed, and directory replication is set up between the sites.
+
+SiteA is responsible for the c=* address space (it has another connector to the
+outside world), so both of the connectors in SiteB are configured with the c=*
+address space.
+
+CAUSE
+=====
+
+A code regression was introduced in build 2654.21 of the Ems_rid.dll file.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server version 5.5 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: MTA
+
++----------------------------+
+| File name    | Version     | 
++----------------------------+
+| Emsmta.exe   | 5.5.2654.58 | 
++----------------------------+
+| X400om.dll   | 5.5.2654.58 | 
++----------------------------+
+| Mtamsg.dll   | 5.5.2654.58 | 
++----------------------------+
+| Mtaperf.dll  | 5.5.2654.58 | 
++----------------------------+
+| Ems_rid.dll  | 5.5.2654.58 | 
++----------------------------+
+| Mtacheck.exe | 5.5.2654.58 | 
++----------------------------+
+| Dbserver.sch |             | 
++----------------------------+
+| Dcprods.cat  |             | 
++----------------------------+
+| Infoplog.cfg |             | 
++----------------------------+
+| P42.tpl      |             | 
++----------------------------+
+| P772.tpl     |             | 
++----------------------------+
+| P2.xv2       |             | 
++----------------------------+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 4.
+
+Additional query words: gwart addressspace
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP4
+Version           : :5.5 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

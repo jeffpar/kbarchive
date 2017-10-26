@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230650/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230650/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230650/","publisher":null,"image":null,"headline":"Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230650-xcon-moving-messages-from-one-x400-connector-queue-to-another">Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230650
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following scenario describes the situation for how to move messages from one
+X.400 Connector queue to another:
+
+Server A is in Houston, running Exchange Server 5.5 Service Pack 2, on Windows NT
+4.0 Service Pack 3.
+It has the following X.400 Connectors:
+
+  X.400 Connector to Florida Cost = 1 (connected site only to Florida)
+  X.400 Connector to Arizona Cost = 100 (connected site only to Arizona)
+
+  Houston ------128 Kbps-------Florida-------T-1---------Arizona
+
+  Arizona is the directory replication hub.
+  There is no direct link between Houston and Arizona.
+
+There are messages sitting in the queue of the X.400 Connector to Arizona, and
+they are not getting delivered.
+
+Original:
+For example, If there are messages sitting in the queue to x400 connector to the
+Arizona, and are not getting delivered because of any reason. This article
+presents a way to move these messages to the other X400 connector to Florida
+queue on the same server.
+
+In general, this article presents a way to move messages from one X.400 Connector
+queue to another X.400 Connector queue on the same server, if server has the
+proper routing information.
+
+MORE INFORMATION
+================
+
+There are two approaches you can take:
+
+Method One
+----------
+
+1. On the X.400 Connector from which you want to move messages, change the
+  address space on the X.400 Connector, and make it invalid.
+
+2. Recalculate routing.
+
+3. Stop and restart the Message Transfer Agent (MTA) service.
+
+Method Two
+----------
+
+1. Delete the X.400 Connector from which you want to move messages.
+
+2. Recalculate routing.
+
+3. Stop and restart the MTA service.
+
+CAUTION: If the X.400 Connector is also involved in the directory replication
+topology, you must compensate for it.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

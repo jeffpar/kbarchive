@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247098/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247098/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247098/","publisher":null,"image":null,"headline":"Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247098-how-to-install-and-reload-the-ssl-filter-sspifiltdll">Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247098
+Product(s): Internet Information Server
+Version(s): 3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): kbDSupport kbHOWTOmaster
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 3.0, 4.0 
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Install the Filter
+
+   - IIS 4.0 and 5.0
+- IIS 5.1
+
+- Reload the Filter
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to install or reload the Secure Sockets
+Layer (SSL) filter to turn on SSL for Web sites.
+
+Install the Filter
+------------------
+
+The Web sites must have the Sspifilt.dll file loaded. By default, this filter is
+installed with the Microsoft Windows NT 4.0 Option Pack for Internet Information
+Server (IIS) 4.0, when you install Internet Information Services (IIS) 5.0 on
+Microsoft Windows 2000, and when you install IIS 5.1 on Microsoft Windows XP
+Professional. To find this filter, enumerate the master properties in the
+Microsoft Management Console (MMC).
+
+To verify the status of Sspifilt.dll, follow these steps:
+
+IIS 4.0 and 5.0:
+
+1. In the MMC, under Internet Information Services, right-click
+  &lt;server_name&gt; and then click Properties.
+
+2. In the Master Properties section, click WWW Service, and then click Edit.
+
+3. On the ISAPI Filters tab, notice the direction and color of the arrow:
+
+   - If the arrow is green and pointing up, the filter is loaded correctly.
+
+   - If the arrow is red and pointing down, the filter is not loaded. SSL will
+     not work on this server until this problem is corrected.
+
+IIS 5.1:
+
+1. In the MMC, under Internet Information Services, right-click Web Sites and
+  then click Properties.
+
+2. On the ISAPI Filters tab, notice the direction and color of the arrow:
+
+   - If the arrow is green and pointing up, the filter is loaded correctly.
+
+   - If the arrow is red and pointing down, the filter is not loaded. SSL will
+     not work on this server until this problem is corrected.
+
+If you find that the filter is not loaded, follow the steps in the Reload section
+to correct this problem.
+
+Reload the Filter
+-----------------
+
+To reload the Sspifilt.dll filter, follow these steps:
+
+1. Remove Sspifilt.dll from the master properties. (To access the master
+  properties, see the steps in the Installation section).
+
+2. At a command prompt, type the following command to stop IIS and its dependent
+  services:
+
+  "net stop iisadmin /y" (without the quotation marks)
+
+3. At a command prompt, type the following command to restart IIS and its
+  dependent services:
+
+  "net start w3svc" (without the quotation marks)
+
+4. Open the master properties for the IIS server.
+
+5. On the ISAPI filters tab, click Add. Type "SSPIFILT" (without the quotation
+  marks) for the name and
+  "C:\%&lt;Systemroot&gt;%\System32\Inetsrv\Sspifilt.dll" (without the
+  quotation marks) for the path. By default, the status shows Unknown.
+
+6. Stop and restart IIS and its dependent services (see steps 2 and 3).
+
+If these steps prove unsuccessful, see the steps in the Troubleshooting section.
+
+Troubleshooting
+---------------
+
+1. Check the permissions on the C:\%&lt;Systemroot&gt;%\System32\Intersrv
+  folder. By default, Everyone has Change permissions; the Creator, Owner,
+  Administrators, and System have Full Control permissions.
+
+2. At a command prompt, use the "cd" (without the quotation marks) command to
+  change to the C:\%&lt;systemroot&gt;%\System32\Inetsrv\Adminsamples
+  directory, and then type the following command to check the values that are
+  stored in the metabase:
+
+  "adsutil enum\filters" (without the quotation marks)
+
+The following output is returned:
+
+  
+
+  KeyType               :(String)  "IISFilters"
+  FilterLoadOrder       :(String)  "sspifilt"
+  [/w3svc/filters/sspifilt]
+
+3. If this output is correct, check the values on the specific location,
+  W3svc/Filters/Sspifilt. To do this, type the following command at a command
+  prompt to enumerate the metabase:
+
+  "adsutil enum w3svc/filters/sspifilt" (without the quotation marks)
+
+This returns the following output:
+
+  
+
+  FilterState           :(Integer) 1 (this state shows the filter enabled)
+
+If this procedure is not successful:
+
+For IIS 3.0: Remove and then reinstall IIS 3.0. For additional information, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q184309 How to Install IIS Without Rerunning Windows NT Setup
+
+For IIS 4.0: Remove and then reinstall the Windows NT 4.0 Option Pack. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q187870 HOWTO: How to Remove and Reinstall the Windows NT 4.0 Option Pack
+
+For IIS 5.0 and 5.1: Remove and then reinstall IIS.
+
+
+NOTE: For IIS 4.0, 5.0 and 5.1, you must back up the configuration of IIS before
+you remove it, so that you can restore that configuration after the
+reinstallation. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q302573 HOW TO: Back Up and Restore IIS
+
+REFERENCES
+==========
+
+For additional information about SSL, click the article numbers below to view
+the articles in the Microsoft Knowledge Base:
+
+  Q292296 'Cannot find server' or 'DNS' Errors When Using SSL (Q and A)
+
+  Q289582 HTTPS Connections Fail After You Upgrade to Windows NT 4.0 Option
+  Pack (IIS 4.0) and Enable SSL
+
+  Q197306 How to Troubleshoot SSL in Internet Information Server 4.0
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis510
+Version           : :3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

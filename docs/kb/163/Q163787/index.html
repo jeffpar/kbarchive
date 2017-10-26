@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163787: FIX: Form Wizard Doesn’t Limit Grid Contents to Related Record | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163787: FIX: Form Wizard Doesn’t Limit Grid Contents to Related Record" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163787/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163787/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163787/","publisher":null,"image":null,"headline":"Q163787: FIX: Form Wizard Doesn’t Limit Grid Contents to Related Record","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163787-fix-form-wizard-doesnt-limit-grid-contents-to-related-record">Q163787: FIX: Form Wizard Doesn’t Limit Grid Contents to Related Record</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163787
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbMDAC250kbbuglist
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the One to Many Form Wizard from a remote view, the grid created by
+the Wizard does not limit the contents to the related records.
+
+RESOLUTION
+==========
+
+To work around the problem, add the following line of code, as indicated, to the
+txtbtns.NavRefresh() method in the Visual FoxPro \WIZARDS\WIZSTYLE.VCX:
+
+        CASE THIS.ViewType = 1        &amp;&amp;local views
+           SET FILTER TO &amp;cFiltExpr
+        CASE THIS.ViewType = 2        &amp;&amp;remote views
+           SET FILTER TO &amp;cFiltExpr   &amp;&amp; Add this line to the method
+        ENDCASE
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Issue the following command in the command window:
+
+        MODIFY DATABASE HOME()+'samples\data\testdata'.
+
+2. Create a remote view to the testdata!customer table using the Visual FoxPro
+  ODBC driver.
+
+3. Create a remote view to the testdata!orders table using the Visual FoxPro
+  ODBC driver.
+
+4. Run the One to Many Form Wizard.
+
+5. Add the remote view to customer as the parent and select the Cust_id field.
+
+6. Add the remote view to orders as the child and select all fields.
+
+7. Select Finish and run the form.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbMDAC250 kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

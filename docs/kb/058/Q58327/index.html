@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58327: Windows 3.0 WIN.INI [windows] Section | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58327: Windows 3.0 WIN.INI [windows] Section" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58327/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58327/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58327/","publisher":null,"image":null,"headline":"Q58327: Windows 3.0 WIN.INI [windows] Section","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58327-windows-30-winini-windows-section">Q58327: Windows 3.0 WIN.INI [windows] Section</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58327
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Windows 3.0 WININI.TXT
+online document. The Windows Setup program copies this text file to your Windows
+directory.
+
+MORE INFORMATION
+================
+
+[WINDOWS] SECTION
+-----------------
+
+The [windows] section contains settings that affect the following
+parts of your Windows environment:
+
+* Applications that start with Windows
+* File extensions
+* Keyboard output
+* Mouse output
+* Null communication port
+* Printed output
+* Warning beep
+* Window border width
+
+The [windows] section can contain the following settings:
+
+----------------------------------------------------------------------
+Beep=&lt;yes-or-no&gt;
+Default:   Yes
+Purpose:   If this setting is enabled, Windows sounds a warning beep
+          when you attempt to do something that is not allowed.
+To change: Choose the Sound icon from the Control Panel window.
+----------------------------------------------------------------------
+BorderWidth=&lt;integer&gt;
+Default:   3
+Purpose:   Sets the width of the borders around all the windows on
+          your desktop except those (such as Control Panel) that are
+          fixed. The allowed range is 1 (narrowest) to 49 (widest).
+To change: Choose the Desktop icon from the Control Panel window.
+----------------------------------------------------------------------
+CursorBlinkRate=&lt;milliseconds&gt;
+Default:   530
+Purpose:   Indicates how many milliseconds elapse between each time
+          the cursor blinks (flashes off and on).
+To change: Choose the Desktop icon from the Control Panel window.
+----------------------------------------------------------------------
+Device=&lt;output-device-name, device-driver, port-connection&gt;
+Default:   None
+Purpose:   Defines the default printer. The &lt;output-device-name&gt;
+          value can be any device name given in the [devices]
+          section. An explicit port and driver must be assigned to
+          the device. The &lt;device-driver&gt; value is the filename
+          (without the extension) of the device-driver file. The
+          &lt;port-connection&gt; value is any port name given in the
+          [ports] section.
+To change: Choose the Printers icon from the Control Panel window.
+----------------------------------------------------------------------
+DeviceNotSelectedTimeout=&lt;seconds&gt;
+Default:   15
+Purpose:   Tells Print Manager the number of seconds to wait for a
+          device to be switched on. If the device is not switched on
+          during this time, Print Manager won't print to the device.
+          Note that for some devices, Print Manager immediately posts
+          an error message if the device is not already switched on.
+To change: Choose the Printers icon from the Control Panel window.
+----------------------------------------------------------------------
+Documents=&lt;extensions&gt;
+Default:   None
+Purpose:   Defines which files Windows identifies as documents.
+          Separate each extension name with a space, and do not
+          include periods (for example, TXT).
+To change: Use Notepad to edit the WIN.INI file.
+----------------------------------------------------------------------
+DoubleClickSpeed=&lt;milliseconds&gt;
+Default:   452
+Purpose:   Establishes the maximum amount of time between clicks of
+          the mouse button that the system will permit for one
+          double-click. The lower the value, the less time the user
+          has to click twice in order to effect a double-click.
+To change: Choose the Mouse icon from the Control Panel window.
+----------------------------------------------------------------------
+KeyboardSpeed=&lt;milliseconds&gt;
+Default:   31
+Purpose:   Establishes how much time elapses between repetitions of a
+          character on the display when you hold down a keyboard key.
+To change: Choose the Keyboard icon from the Control Panel window.
+----------------------------------------------------------------------
+Load=&lt;filename(s)&gt;
+Default:   None
+Purpose:   Tells Windows to load a particular application and run it
+          as an icon when Windows is started. This value is a list of
+          one or more application filenames, separated by commas or
+          spaces.
+To change: Use Notepad to edit the WIN.INI file.
+----------------------------------------------------------------------
+MouseSpeed=&lt;speed-option&gt;
+Default:   1
+Purpose:   Establishes the relationship between mouse movement and
+          cursor movement when either the value of MouseThreshold1 or
+          MouseThreshold2 is exceeded. When this occurs, Windows
+          causes cursor movement to accelerate according to the
+          &lt;speed-option&gt; value. If it is 0, there is no acceleration.
+          If it is 1, the cursor is moved twice the normal speed when
+          mouse movement exceeds the value of MouseThreshold1. If it
+          is 2, the cursor is moved twice the normal speed when mouse
+          movement exceeds the value of MouseThreshold1 or four times
+          the normal speed if mouse movement exceeds MouseThreshold2.
+To change: Choose the Mouse icon from the Control Panel window.
+----------------------------------------------------------------------
+MouseThreshold1=&lt;pixels&gt;
+Default:   5
+Purpose:   Establishes the maximum number of pixels that the mouse can
+          move between mouse interrupts before Windows alters the
+          relationship between mouse movement and cursor movement. If
+          the mouse movement exceeds this threshold and MouseSpeed is
+          greater than zero, Windows causes the cursor to move at
+          twice the normal speed.
+To change: Choose the Mouse icon from the Control Panel window.
+----------------------------------------------------------------------
+MouseThreshold2=&lt;pixels&gt;
+Default:   10
+Purpose:   Establishes the maximum number of pixels that the mouse can
+          move between mouse interrupts before Windows alters the
+          relationship between mouse movement and cursor movement. If
+          the mouse movement exceeds this threshold and MouseSpeed is
+          equal to 2, Windows causes the cursor to move at four times
+          the normal speed.
+To change: Choose the Mouse icon from the Control Panel window.
+----------------------------------------------------------------------
+NullPort=&lt;null-portname&gt;
+Default:   None
+Purpose:   Specifies the name used for a null port. This name is used
+          in cases where a device is installed (that is, the device
+          driver is present) but is not connected to any port.
+To change: Use Notepad to edit the WIN.INI file.
+----------------------------------------------------------------------
+Programs=&lt;extensions&gt;
+Default:   COM EXE BAT PIF
+Purpose:   Defines which files Windows regards as applications.
+          Extension names are separated by a space and do not include
+          periods.
+To change: Use Notepad to edit the WIN.INI file.
+----------------------------------------------------------------------
+Run=&lt;filename(s)&gt;
+Default:   None
+Purpose:   Tells Windows to load one or more specified applications
+          and run them in windows when Windows is started. The value
+          is a list of one or more application filenames, separated
+          by commas or spaces.
+To change: Use Notepad to edit the WIN.INI file.
+----------------------------------------------------------------------
+Spooler=&lt;yes-or-no&gt;
+Default:   Yes
+Purpose:   Specifies whether output to the printer is to be sent
+          through Print Manager. The default value is "yes". Setting
+          this value to "no" disables Print Manager.
+To change: Choose the Printers icon from the Control Panel window.
+----------------------------------------------------------------------
+TransmissionRetryTimeout=&lt;seconds&gt;
+Default:   45
+Purpose:   Tells Print Manager the amount of time allowed for
+          attempted transmission retries. If a successful
+          transmission does not occur during this time, Print Manager
+          posts a message box stating that the printer is not
+          receiving characters.
+To change: Choose the Printers icon from the Control Panel window.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

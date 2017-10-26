@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193907/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193907/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193907/","publisher":null,"image":null,"headline":"Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193907-windows-nt-40-sp4-supports-igmp-version-2">Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193907
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP4
+Operating System(s): 
+Keyword(s): kbnetwork kbFEA kbWinNT400sp4fea
+Last Modified: 03-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 SP4 
+- Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 3.51 and later supports Internet Group Management Protocol (IGMP)
+version 1. The Service Pack 4 update for Windows NT 4.0 provides support for
+IGMP version 2.
+
+MORE INFORMATION
+================
+
+IGMP is used by IP hosts to report their host group memberships to any
+immediately-neighboring multicast routers. IGMP messages are encapsulated in IP
+datagrams, with an IP protocol number of 2. Internetwork forwarding of IP
+multicast datagrams is handled by multicast routers. Windows NT currently does
+not support multicast forwarding.
+
+IP multicasting is the transmission of an IP datagram to a "host group," a set of
+zero or more hosts identified by a single IP destination address. The membership
+of a group is dynamic; that is, hosts may join and leave groups at any time.
+
+A permanent group has a well-known, administratively assigned IP address. It is
+the address, not the membership of the group, that is permanent. Host groups are
+identified by class D IP addresses (from 224.0.0.0 to 239.255.255.255).
+224.0.0.0 is guaranteed not to be assigned to any group, and 224.0.0.1 is
+assigned to the permanent group of all IP hosts (including gateways). There is
+no multicast address for all hosts on the total Internet. RFC 1700 has a list of
+permanent Internet multicast addresses.
+
+There are two types of IGMP message of concern to host-router interaction in IGMP
+v1:
+
+- Host Membership Query
+
+- Host Membership Report
+
+Multicast routers send Host Membership Query messages to discover which host
+groups have members on their attached local networks. The multicast router needs
+to know this information because, if there is a host group with no members in a
+segment, it will not forward multicast packets for that group to the segment.
+Queries are addressed to the all-hosts group (address 224.0.0.1).
+
+Hosts respond to a Query by generating Host Membership Reports, reporting each
+host group to which they belong on the network interface from which the Query
+was received. Routers do not know -- and do not need to know -- which hosts
+belong to a group, only that at least one host belongs to a group on a
+particular network. When a host joins a new group, it should immediately
+transmit a Report for that group.
+
+There are three types of IGMP message of concern to the host-router interaction
+in IGMP v2:
+
+- Membership Query
+
+- Version 2 Membership Report
+
+- Leave Group
+
+There is an additional type of message, for backwards-compatibility with IGMP
+v1:
+
+- Version 1 Membership Report
+
+IGMP v2 allows a computer to inform the router that it is leaving a group. This
+update enables the router to determine if there are no more members in a group
+and then runs a command to stop forwarding multicast packets on to the link.
+This update is useful when users are frequently joining and leaving groups.
+
+When a host leaves a multicast group, if it was the last host to reply to a Query
+with a Membership Report for that group, it should send a Leave Group message to
+the all-routers multicast group (224.0.0.2).
+
+An IGMP v2 host may be placed on a subnet where the querying router has not yet
+been upgraded to IGMP v2. The IGMP v1 router will send General Queries with the
+Max Response Time set to 0. This must be interpreted as a value of 100 (10
+seconds). An IGMP v2 host may suppress Leave Group messages on a network where
+the query is using IGMP v1.
+
+An IGMP v2 router may be placed on a subnet where at least one router on the
+subnet has not yet been upgraded to IGMP v2. The query must use IGMP v1. The use
+of IGMP v1 must be administratively configured.
+
+For additional information, check the "IGMPLevel" Windows NT registry parameter
+in the following article in the Microsoft Knowledge Base:
+
+  Q120642 TCP/IP and NBT Configuration Parameters for Windows 2000 or Windows
+  NT
+
+For additional information, also see the following RFCs:
+
+- RFC 1054 - Host Extensions for IP Multicasting
+
+- RFC 1112 - Internet Group Management Protocol, Version 2
+
+Additional query words: IGMP 2.0 4.0
+
+======================================================================
+Keywords          : kbnetwork kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : :4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138398/","publisher":null,"image":null,"headline":"Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138398-prb-release-may-not-remove-ole-objects-from-memory">Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138398
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating an OLE object using the CREATEOBEJCT() function, releasing that
+object does not remove the OLE application session from memory.
+
+RESOLUTION
+==========
+
+For Visual FoxPro to remove certain OLE application session objects from memory,
+the OLE application must be terminated. For example, after running the following
+code, three instances of Microsoft Excel remain in memory:
+
+     FOR i = 1 TO 3
+
+         oObject = CREATEOBJECT('Excel.Application')
+         RELEASE oObject
+
+     ENDFOR
+
+To end each Microsoft Excel session before reentering the FOR loop, the Microsoft
+Excel session must first be terminated. For example:
+
+     FOR i = 1 TO 3
+
+         oObject = CREATEOBJECT('Excel.Application')
+         oObject.Quit
+         RELEASE oObject
+
+     ENDFOR
+
+In this example, Microsoft Excel is told to quit, and then the code releases the
+memory variable in Visual FoxPro by using the oObject.Release command. Quit is a
+method that Microsoft Excel recognizes and can act upon, the actual method for
+your OLE automation application may differ.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The OLE Automation release method is program specific. In the previous example,
+Microsoft Excel was used. Microsoft Excel version 7.0 is designed to remain in
+memory after a OLE object is released. However, other programs may behave
+differently. For example, Microsoft Word version 7.0 terminates with just a
+RELEASE command.
+
+For more information on how your program will handle an OLE Automation RELEASE
+command, please refer to that program's documentation or refer to the vendor of
+that program.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run this code:
+
+     FOR i = 1 TO 3
+        
+         oObject = CREATEOBJECT('Excel.Application')
+         WAIT WINDOW 'Created Excel Object' + STR(i)
+         RELEASE oObject
+
+     ENDFOR
+
+2. View the Windows Task List, and notice that three sessions of Microsoft Excel
+  remain in memory.
+
+Additional query words: VfoxWin kbvfp300 kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

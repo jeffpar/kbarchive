@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q280750: How to Restore Netscape Communicator as the Default Browser | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q280750: How to Restore Netscape Communicator as the Default Browser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/280/Q280750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/280/Q280750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/280/Q280750/","publisher":null,"image":null,"headline":"Q280750: How to Restore Netscape Communicator as the Default Browser","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q280750-how-to-restore-netscape-communicator-as-the-default-browser">Q280750: How to Restore Netscape Communicator as the Default Browser</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q280750
+Product(s): Microsoft Home Miscellaneous Products
+Version(s): 
+Operating System(s): 
+Keyword(s): kb3rdparty kbimu
+Last Modified: 05-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Greetings 2001 
+- Microsoft Picture It! Express 2001 
+- Microsoft Picture It! Photo 2001 
+- Microsoft Picture It! Photo Premium 2001 
+- Microsoft Picture It! Publishing 2001 
+- Microsoft Picture It! Publishing 2001 Gold 
+- Microsoft Picture It! Publishing 2001 Platinum 
+- Microsoft Picture It! Publishing 2001 Silver 
+- Microsoft Works Suite 2000 
+- Microsoft Works Suite 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install any of the programs listed at the beginning of this article,
+Microsoft Internet Explorer is installed as your default browser.
+
+This article describes how to restore Netscape Communicator as your default
+browser.
+
+MORE INFORMATION
+================
+
+To restore Netscape Communicator as your default browser, contact Netscape or
+visit the following Netscape Web site:
+
+  http://home.netscape.com/download/win32_instructions.html
+
+To disable Internet Explorer as your default browser:
+
+1. Start Internet Explorer.
+
+2. Click Tools, and then click Internet Options.
+
+3. Click the Programs tab.
+
+4. Click to clear the "Internet Explorer should check to see whether it is the
+  default browser" box.
+
+5. Click OK, and then quit Internet Explorer.
+
+To configure Netscape Communicator to be the default browser:
+
+1. Start Netscape Communicator.
+
+2. If you are prompted with the following message, click Yes:
+
+  "Navigator is no longer registered to handle Internet Shortcuts. Would you
+  like to register Navigator as your default browser?"
+
+  If you are not prompted with a message, follow these steps:
+
+  a. Quit Netscape Communicator.
+
+  b. Click Start, point to Find, and then click "Files or Folders".
+
+  c. In the Named box, type "prefs.js" (without the quotation marks).
+
+  d. In the "Look in" box, click My Computer.
+
+  e. Click Find Now.
+
+  f. In the list of found files, right-click the Prefs.js file, and then click
+     Open.
+
+NOTE: If you are prompted to select a program with which to open the Prefs.js
+file, click Notepad, click to clear the "Always use this program to open these
+files" check box, and then click OK.
+
+  g. In the Prefs.js file, change the following line from
+
+  user_pref("browser.wfe.ignore_def_check", true);
+
+to:
+
+  user_pref("browser.wfe.ignore_def_check", false);
+
+  h. On the File menu, click Save.
+
+  i. On the File menu, click Exit.
+
+  j. Start Netscape Communicator, and then click Yes when you are prompted with
+     the following message:
+
+  "Navigator is no longer registered to handle Internet Shortcuts. Would you
+  like to register Navigator as your default browser?"
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+The third-party products that are discussed in this article are manufactured by
+companies that are independent of Microsoft. Microsoft makes no warranty,
+implied or otherwise, regarding the performance or reliability of these
+products.
+
+Additional query words: pip2001
+
+======================================================================
+Keywords          : kb3rdparty kbimu 
+Technology        : kbHomeProdSearch kbWorksSearch kbPictureItSearch kbWorks2000 kbZNotKeyword3 kbPictureItPhoto2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

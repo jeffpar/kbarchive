@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236318: Server Connection Account Created in Same Domain as Site Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236318: Server Connection Account Created in Same Domain as Site Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236318/","publisher":null,"image":null,"headline":"Q236318: Server Connection Account Created in Same Domain as Site Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236318-server-connection-account-created-in-same-domain-as-site-server">Q236318: Server Connection Account Created in Same Domain as Site Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236318
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbServer kbsms200
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server 2.0 Service Pack 1, the Server Connection account
+is created in the same domain where the Site Server resides. This account has
+the name SMSServer_&lt;site code&gt; and is used to connect from Remote Site
+Systems to the Site Server.
+
+In Systems Management Server 2.0 (the final released version), this account was
+created in the same domain where the Service Account was created for the Site.
+
+If a Systems Management Server 2.0 (the final released version) Site is upgraded
+to Service Pack 1, the Server Connection account location is unchanged and will
+remain in the same domain where the Service Account was created for the Site.
+
+MORE INFORMATION
+================
+
+In a Master Domain Model where the Systems Management Server 2.0 Site Server
+resides in a Resource Domain and the Service Account is created in the Master
+Accounts Domain, the following behavior is observed in the following scenarios:
+
+A New Systems Management Server 2.0 Service Pack 1 Installation Is Performed
+----------------------------------------------------------------------------
+
+The Server connection account will be created in the same domain as the Site
+Server. In this example, the account will be created in the Resource Domain.
+
+An Upgrade Is Performed on a Current Systems Management Server 2.0 (the final released version) Site
+----------------------------------------------------------------------------------------------------
+
+The Server connection account will remain in the same domain as the Service
+Account. In this example, the account will remain in the Master Accounts
+Domain.
+
+There will be no changes to the location of the Server connection account between
+versions of Systems Management Server 2.0 when in a single domain model.
+
+Additional query words: prodsms smsserver_xxx
+
+======================================================================
+Keywords          : kbServer kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

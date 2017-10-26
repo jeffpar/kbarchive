@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148848: FIX: &quot;Item not found in this collection&quot; Message Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148848: FIX: &quot;Item not found in this collection&quot; Message Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148848/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148848/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148848/","publisher":null,"image":null,"headline":"Q148848: FIX: &quot;Item not found in this collection&quot; Message Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148848-fix-item-not-found-in-this-collection-message-box">Q148848: FIX: "Item not found in this collection" Message Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148848
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbprogramming kbsample kbDAOsearch kbDatabase kbMFC kbVC kbGrpDSVCDBkbbuglist kbfixlist
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to add or update a record by using the MFC DAO Database classes,
+message box may appear with this message:
+
+  Item not found in this collection.
+
+CAUSE
+=====
+
+MFC calls put_Collect() a DAO function in CDaoRecordset::SetFieldValue(). This
+function does not expect square brackets to be included as part of the field
+name. The Visual C++ Wizards place square brackets around the field names of
+your recordset by default in the DoFieldExchange() method of your CDaoRecordset.
+This allows the user to have field names that contain spaces.
+
+Earlier versions of DAO allowed square brackets to be passed with the field name
+used in the put_Collect() call. DAO version 3.000.2504, which is installed by
+some programs such as Microsoft Word 7a, does not allow the square brackets. You
+can check the version of DAO on your computer by looking at the version of
+Dao3032.dll. (Press ALT+ENTER in the Program Manager or look at the properties
+of the DLL.)
+
+RESOLUTION
+==========
+
+In Visual C++ 4.1, MFC DAO has been modified so that it removes brackets from
+field names prior to calling into the DAO DLL. Additionally, the Dao3032.dll
+that ships with Visual C++ 4.1 now tolerates brackets in field names.
+
+To work around the problem in Visual C++ 4.0 applications, intercept MFC and
+strip the square brackets before passing the field name to the put_Collect()
+call. To do this, override CDaoRecordset::SetFieldValue(). See the "Code to
+Strip Square Brackets" section in this article for an example.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 4.1.
+
+MORE INFORMATION
+================
+
+Sample Code to Strip Square Brackets
+------------------------------------
+
+     void CYourRecordSet::SetFieldValue(LPCTSTR lpszName,
+         const COleVariant&amp; varValue)
+     {
+         ASSERT_VALID(this);
+         ASSERT(IsOpen());
+         ASSERT(m_pDAORecordset != NULL);
+
+         LPTSTR lpszModifiedName = NULL;
+
+         if (*lpszName == '[')
+         {
+
+             lpszModifiedName = new TCHAR[_tcslen(lpszName) + 1];
+             StripBrackets(lpszName,lpszModifiedName);
+             lpszName=lpszModifiedName;
+         }
+
+         DAO_CHECK(m_pDAORecordset-&gt;put_Collect(
+             COleVariant(lpszName, VT_BSTRT), varValue));
+
+         delete lpszModifiedName;
+     }
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbsample kbDAOsearch kbDatabase kbMFC kbVC kbGrpDSVCDB kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

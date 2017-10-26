@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158634/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158634/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158634/","publisher":null,"image":null,"headline":"Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158634-xcln-using-exchange-client-with-windows-nt-mandatory-profile">Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158634
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft Exchange Windows NT client on a Windows NT
+Workstation computer using mandatory Windows NT profiles, you are unable to save
+Exchange profile information. You can use the Exchange Profile Wizard to create
+a profile and may be able to access your mail, but once you log off Windows NT
+Workstation, all the Exchange profile settings are lost. Subsequently, when you
+log on to Windows NT Workstation and you start Exchange Client, the Exchange
+Profile Wizard starts.
+
+CAUSE
+=====
+
+On a computer running Windows NT workstation, Exchange profile information is
+kept in the registry. The purpose of mandatory Windows NT profiles is to
+prohibit the user from modifying the registry.
+
+RESOLUTION
+==========
+
+To use mandatory Windows NT profiles with Exchange Client, a unique user profile
+file (.usr) must be created for each Exchange user. This file is kept on the
+Windows NT server in the same location as the mandatory profile. This filename
+must also be referenced in User Manager for Domains within the User Properties
+for the user/Profile/User Profile Path. The user must log on and create an
+Exchange profile and then log off Windows NT; this will save the profile
+information to the registry and to the .usr file.
+
+When the Exchange profile information is saved in the .usr file, the mandatory
+profile can be reinstated. To do this, rename the .usr file to a .man extension
+and reference this file in the User Profile Path described above.
+
+To work around the problem, run the Microsoft Exchange utility Newprof.exe from
+the Windows NT login script with a Default.prf configured with profile
+information, including the Exchange Server name and the user's mailbox.
+Newprof.exe can be placed in the Startup program group, or it can be run from a
+batch file or login script so that a new Exchange profile is created
+automatically each time the user logs on to Windows NT.
+
+NOTE: No specific profile information can be saved by the user as long as
+mandatory profiles are in use.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q148595 XCLN: Creating Roving Users on Win95 and WinNT
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

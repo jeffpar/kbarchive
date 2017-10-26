@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191440: CG4: Animated GIFs Only Animate in Web Browsers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191440: CG4: Animated GIFs Only Animate in Web Browsers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191440/","publisher":null,"image":null,"headline":"Q191440: CG4: Animated GIFs Only Animate in Web Browsers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191440-cg4-animated-gifs-only-animate-in-web-browsers">Q191440: CG4: Animated GIFs Only Animate in Web Browsers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191440
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbgraphic kbhtml
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Clip Gallery 4.0 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you insert an animated GIF (CompuServe Graphics Interchange Format) image
+into a client application's document such as Microsoft Word, Microsoft
+PowerPoint or Microsoft Publisher 98, only the first frame of the animated GIF
+is displayed. However, once the document is converted to HyperText Markup
+Language (HTML) format and displayed in a Web browser capable of playing the
+animation, the frames that comprise the animated GIF play and appear animated.
+
+You can view the animation sequence of an animated GIF by clicking the Play
+button when you are viewing the animated GIF in Clip Gallery 4.0. Although Clip
+Gallery 4.0 allows you to play the animated GIF, Clip Gallery does not provide
+any play capability for the client application.
+
+CAUSE
+=====
+
+The animated GIF is intended for use within a Web browser capable of displaying
+each frame that comprises the animation sequence. Microsoft Clip Gallery 4.0
+provides the capability for displaying the animation to allow you to preview how
+the animation sequence will appear when the GIF is displayed in a Web browser
+capable of playing the frame sequence.
+
+Client applications that provide web authoring capabilities do not contain
+functionality that allows the frames of an animated GIF to be played. Hence,
+they display the first frame of the animated GIF only. Client applications, such
+as Microsoft Word, Microsoft PowerPoint, and Microsoft Publisher as well as
+other programs, are designed to display a static image, which is the first frame
+of an animated GIF.
+
+MORE INFORMATION
+================
+
+Clip Gallery 4.0 is a media cataloging program that works with any application
+that allows the use of an Object Linking and Embedding (OLE) server. However,
+Clip Gallery is intended to provide a means of cataloging clip art, motion, and
+audio content for use within client applications rather than as a mechanism for
+playing animated GIFs or movie formats, such as Audio Video Interleave (AVI).
+
+The CompuServe Graphics Interchange Format version 89a allows a single GIF file
+to contain multiple pictures. If a GIF file contains several pictures, and there
+are only slight changes between each picture, that file is often called an
+"animated GIF."
+
+Many Internet browsers (such as Microsoft Internet Explorer and Netscape
+Navigator) are specially designed so that when they display a GIF file that
+contains multiple pictures, they display the individual pictures in sequence.
+
+Unlike the Microsoft Video for Windows (.avi) and Apple QuickTime Movie formats,
+the GIF format is primarily designed to display static pictures, not for
+animation. The most common reason to create an animated GIF is to provide
+multimedia effects to HTML documents on the World Wide Web. For this reason, the
+only types of programs that display the animation effects fall into one of these
+categories:
+
+- Web browsers
+
+- Animated GIF editing programs (such as Microsoft GIF Animator, which ships
+  with Microsoft FrontPage 98)
+
+- Media cataloging programs (such as Microsoft Clip Gallery 4.0, which ships
+  with Microsoft Publisher 98.)
+
+Very few programs not in one of these categories display animated GIF files as
+animated.
+
+Although Help within the various Microsoft programs discusses the animated GIF to
+some degree, the behavior of the animated GIF within a client program may not be
+specific. For example, there may exist certain computer configurations that
+allow you to preview the animation sequence of a GIF within a client
+application. However, the intended behavior of an animated GIF within a client
+program is to display the first frame of the image rather then playing the
+sequenced frame set.
+
+Please refer to the client program's online documentation to determine how to
+export or save the file as HTML to ensure the animation sequence of an animated
+GIF will display within a Web browser capable of displaying the animation.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q191396 PUB98: Animated GIFs Animate in Programs Supporting Animation
+
+  Q154814 PUB97: Animated GIFs Don't Animate After Exporting as HTML
+
+
+Please refer to your Web browser documentation to determine if your browser is
+capable of playing the animated GIF.
+
+Additional query words: graphics, motion animation GIF GIF89a play frames browser animate OLE server
+
+======================================================================
+Keywords          : kbgraphic kbhtml 
+Technology        : kbWordSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbClipGallerySearch kbClipGallery400 kbHomePubSearch kbPhotoDrawSearch
+Version           : WINDOWS:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

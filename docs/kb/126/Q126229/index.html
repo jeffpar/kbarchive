@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126229/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126229/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126229/","publisher":null,"image":null,"headline":"Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126229-docerr-moving-sender-outbox-in-sms-is-unsupported">Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126229
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1
+Operating System(s): 
+Keyword(s): kbdocerr kbScheduler kbsmsAdmin smsadmin smsdocerr smsscheduler
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Microsoft Systems Management Server Administrator's guide" states the
+following on page 188:
+
+  You can change the name of an outbox or move the outbox to a different server
+  or drive.
+
+Changing the location or the name of the sender outboxes used by the Systems
+Management Server senders has not been tested by Microsoft and is not supported
+in SMS versions 1.0 and 1.1. For more information, refer to section 17 of the
+SMS Release notes (README.TXT).
+
+Note: This restriction also applies to SMS version 1.2.
+
+MORE INFORMATION
+================
+
+Following the instructions on page 189 of the SMS Administrator's guide to move
+the outbox results in errors similar to the following in the LANSEND.LOG file:
+
+  Checking for sending capacity. Used 0 out of 5.
+  Connecting to D:\SMS\Site.srv\sender.box\requests\LAN_DEFA.000
+  No (more) send requests found to process
+  Registry indicates no outbox for the sender to scan.
+
+You may be able to effectively relocate the outbox by initiating three updates to
+the proposed properties (watchdog cycles) by the SMS_Site_Config_Manager:
+
+1. Choose Site Properties.
+
+2. Choose Outboxes
+
+3. Choose Proposed Properties.
+
+4. Choose OK until you are prompted to update the site.
+
+This causes one watchdog cycle to occur. Since three watchdog cycles are required
+to make the requested change take effect, repeat these steps two more times.
+
+These steps are also required to move the outbox back to the original supported
+location. You need to do this if you attempted to move the outbox as explained
+in the "Systems Management Server Administrator's Guide."
+
+REFERENCES
+==========
+
+The SMS release notes are located in the root directory on the SMS CD in
+README.TXT.
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbdocerr kbScheduler kbsmsAdmin smsadmin smsdocerr smsscheduler 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

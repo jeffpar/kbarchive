@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81740/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81740/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81740/","publisher":null,"image":null,"headline":"Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81740-con-switchesk-ansisys-k-and-reading-keyboard-input">Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81740
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS versions 4.x and later read information from extended or enhanced (101
+and 102 key) keyboards differently than from standard (84 key) keyboards. This
+allows, for example, MS-DOS to determine which ENTER key is pressed on enhanced
+keyboards.
+
+Some older terminate-and-stay-resident (TSR) programs that hook into the keyboard
+interrupt don't recognize there are two ways to read from enhanced keyboards. It
+is possible in MS-DOS 4.x and later for TSRs (and other applications) to fail
+because of this change in how MS-DOS reads from enhanced keyboards.
+
+If you encounter problems using the keyboard after upgrading to MS-DOS 4.x or
+later, it may be related to this change. You can force MS-DOS to read from
+enhanced keyboards like standard keyboards. If you are not using ANSI.SYS, use
+the following command in the CONFIG.SYS file:
+
+  switches=/k
+
+If you are using ANSI.SYS, load it using the /K switch. For example:
+
+  device=c:\dos\ansi.sys /k
+
+MORE INFORMATION
+================
+
+The internal MS-DOS CON[sole] device driver is responsible for reading input
+from the keyboard and displaying character output on the screen. Whenever
+possible, MS-DOS operates through the ROM BIOS, and CON is no exception. CON
+uses the ROM BIOS Interrupt 16h service to access the keyboard.
+
+In MS-DOS 1.x, 2.x, and 3.x, CON always uses INT 16h function 0h to read
+characters from the BIOS keyboard buffer and function 1h to check the keyboard
+status.
+
+In MS-DOS 4.x, 5.x, 6.0, and 6.2, MS-DOS uses INT 16h functions 10h and 11h if an
+enhanced keyboard is present. Functions 10h and 11h were added to these versions
+to support enhanced keyboards on ATs and PS/2s.
+
+Enhanced keyboards have two of each of the following keys in addition to ARROW
+keys.
+
+- CTRL
+
+- ALT
+
+- ENTER
+
+- HOME
+
+- END
+
+- INSERT
+
+- PAGE UP
+
+- PAGE DOWN
+
+When using INT 16h functions 0h and 1h to read these keys, they both appear the
+same. When using INT 16h functions 10h and 11h, it is possible to tell which
+ENTER or HOME key is pressed. Functions 10h and 11h also allow MS-DOS to read
+function keys F11 and F12.
+
+The CONFIG.SYS command SWITCHES=/K causes CON to use functions 0h and 1h when
+reading from enhanced keyboards. This is necessary when an application program
+assumes that MS-DOS uses functions 0h and 1h to read input.
+
+ANSI.SYS is an enhanced console device driver that substitutes itself for the
+default CON device driver. When ANSI (or any other substitute console device
+driver) loads, it overrides the default CON device driver by reporting itself as
+"CON" (MEM /D reports device names). Like the default CON driver, ANSI.SYS uses
+functions 10h and 11h in MS-DOS 4.x and later. To force ANSI.SYS to read
+keyboard input using functions 0h and 1h, load ANSI.SYS with the /K switch.
+
+NOTE: Although ANSI.SYS useS functions 10h and 11h when reading from enhanced
+keyboards, to remap the extended keys separately from their 84-key counterparts
+using ANSI escape sequences, you must load ANSI.SYS using the /X switch.
+
+Additional query words: 6.22 4.0 4.0a 4.00 4.00a 4.01 4.01a 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

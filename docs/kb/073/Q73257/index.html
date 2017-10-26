@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73257/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73257/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73257/","publisher":null,"image":null,"headline":"Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73257-manual-installation-of-microsoft-ms-dos-5-upgrade">Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73257
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If the Setup routine for MS-DOS version 5.0 fails, try manually installing
+Microsoft MS-DOS 5 Upgrade as described in this article.
+
+NOTE: The manual installation does not produce an Uninstall disk like the normal
+upgrade; therefore, you cannot easily return to your previous version.
+
+MORE INFORMATION
+================
+
+To manually install Microsoft MS-DOS 5 Upgrade, do the following:
+
+1. Back up all of your current files.
+
+2. Insert the Microsoft MS-DOS 5 Upgrade Disk 1 in drive A and type the
+  following command:
+
+  " a: setup /f" (without the quotation marks)
+
+  This creates a set of bootable MS-DOS 5.0 floppy disks (the procedure requires
+  seven 5.25-inch disks or four 3.5-inch disks).
+
+3. Start the machine with the Startup disk (5.25 inch) or Startup/Support disk
+  (3.5 inch). Check to ensure that all partitions can be accessed and the
+  machine is working correctly.
+
+4. If repartitioning is desired, now is the time to use the MS-DOS 5.0 FDISK
+  command. Insert the disk that contains FDISK.EXE (5.25-inch Startup disk;
+  3.5-inch Startup/Support disk), type "FDISK" (without the quotation marks),
+  and follow the instructions. After you run FDISK, run FORMAT.
+
+5. If you can access all drives, insert the floppy disk that contains SYS.COM
+  (5.25-inch Startup disk; 3.5-inch Startup/Support disk) into drive A and type
+  "SYS C:" (without the quotation marks). This program makes the C: drive boot
+  MS-DOS 5.0.
+
+6. Create an OLDDOS directory and copy all of the files from your current DOS
+  directory to the OLDDOS directory. Then, delete your old MS-DOS files in the
+  DOS directory. For example:
+
+  MD C:\OLDDOS
+  COPY C:\DOS\*.* C:\OLDDOS\*.*
+  ERASE C:\DOS
+
+7. Copy the MS-DOS 5.0 files from the bootable floppy disks to the DOS directory
+  on your hard drive. For example:
+
+  COPY A:*.* C:\DOS\*.*
+
+8. If you are using Microsoft Windows, copy the WINA20.386 file to the root
+  directory of drive C. This file is necessary for Windows 3.0 to work
+  correctly. The WINA20.386 file is located on the Utility disk (5.25-inch) or
+  Basic/Edit/Utility disk (3.5-inch). Insert the disk into your floppy disk
+  drive (for example drive A) and type the following command:
+
+  " copy a:WINA20.386 c:\ " (without the quotation marks)
+
+9. Update your current CONFIG.SYS and AUTOEXEC.BAT files referring to CONFIG.NEW
+  and AUTOEXEC.NEW located on the first floppy disk.
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

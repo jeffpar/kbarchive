@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34273: QB.EXE Visibility, IBM PS/2 Model 50,60,80, Monochrome Monitor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34273: QB.EXE Visibility, IBM PS/2 Model 50,60,80, Monochrome Monitor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34273/","publisher":null,"image":null,"headline":"Q34273: QB.EXE Visibility, IBM PS/2 Model 50,60,80, Monochrome Monitor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34273-qbexe-visibility-ibm-ps2-model-506080-monochrome-monitor">Q34273: QB.EXE Visibility, IBM PS/2 Model 50,60,80, Monochrome Monitor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34273
+Product(s): See article
+Version(s): 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 30-MAY-1990
+
+The problem below was reported by a customer using QuickBASIC version
+4.00b on the IBM PS/2 models 60 and 80 (which have VGA graphics) with
+a monochrome monitor. (This problem probably also applies to the IBM
+PS/2 model 50 with a monochrome monitor.) Another customer reported a
+similar problem in QB.EXE in QuickBASIC version 4.50 and in QBX.EXE in
+Microsoft BASIC Professional Development System (PDS) version 7.00.
+Microsoft is researching this problem and will post new information
+here as it becomes available.
+
+When the QB.EXE version 4.00b editor is started with the /b switch (QB
+/b) on a IBM PS/2 model 60 or 80 with a monochrome monitor, it appears
+to start correctly. However, when a file is OPENed, QuickBASIC ignores
+the /b option and switches to color mode, causing the editor to be
+hindered by visibility problems. Also, when the DOS SHELL command is
+chosen from the File menu in QB.EXE, the text in MS-DOS is highlighted
+and blinking.
+
+To work around this editor visibility problem, execute the MODE BW80
+or MODE 80 command in DOS before running QB /b or QBX /b.
+
+This problem does not occur with QB.EXE version 4.00.
+
+The customer reported the above problem on the following equipment:
+
+   IBM PS/2 models 60 and 80, both with 70-megabyte hard disks,
+   ESDI controllers, and IBM monochrome monitors (type 8503-002)
+
+On the IBM PS/2 models 60 and 80 with the standard IBM PS/2 monochrome
+monitor, programs normally give different gray scales instead of
+color.
+
+For a related article, query on the following words:
+
+   gray and scale and VGA and PS/2
+
+A customer has also reported a slightly different problem on an IBM
+PS/2 Model 70 with VGA graphics and a monochrome monitor. An executed
+program would not terminate when CTRL+BREAK was pressed and instead
+hung the computer. Executing a MODE BW80 command under DOS before
+running QB.EXE or QBX.EXE solved this problem.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172578: HOWTO: Change the SQL Password Using RDO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172578: HOWTO: Change the SQL Password Using RDO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172578/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172578/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172578/","publisher":null,"image":null,"headline":"Q172578: HOWTO: Change the SQL Password Using RDO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172578-howto-change-the-sql-password-using-rdo">Q172578: HOWTO: Change the SQL Password Using RDO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172578
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is an example of how to change the SQL server password from Visual
+Basic using RDO and SQL Server's Stored Procedure - sp_Password. The article
+also gives examples of allowing users to change their passwords and allowing the
+SQL administrator to change the user's password.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. In a new project add two CommandButton to the form.
+
+2. Copy the code in step 4 into the Form's Declaration section.
+
+3. Change the values for the password/username variables.
+
+4. Change the connection properties to match your connection. Note that this
+  example uses a DSN-less connection:
+
+     Private Sub Form_Load()
+       Command1.Caption = "User"
+       Command2.Caption = "Admin"
+     End Sub
+
+     Private Sub Command1_Click()
+     'This procedure is an example of allowing the users to change
+     'their own password.
+
+       On Error GoTo ErrorHandler
+
+       Dim En As rdoEnvironment
+       Dim Cn As rdoConnection
+       Dim Ps As rdoPreparedStatement
+       Dim strConnect As String
+       Dim strSQL As String
+       Dim strOldPassword As String
+       Dim strNewPassword As String
+
+       Command2.Enabled = False
+
+       'Change the following to match your values
+       strOldPassword = "OldPwd"
+       strNewPassword = "NewPwd"
+       Set En = rdoEnvironments(0)
+       En.CursorDriver = rdUseOdbc
+
+       strConnect = "Driver={SQL Server};Server=MyServer;" &amp; _
+          "Database=pubs;Uid=UserID;Pwd=" &amp; Trim(strOldPassword)
+
+       Set Cn = En.OpenConnection(dsName:="", Prompt:=rdDriverNoPrompt, _
+       ReadOnly:=False, Connect:=strConnect)
+      'Note that the above is a DSN-less connection
+
+      'Note: If you don't specify master, you will get this following error:
+      '"An invalid parameter was passed."
+
+       strSQL = "{ ? = call master.dbo.sp_password(?,?) }"
+       Set Ps = Cn.CreatePreparedStatement("", strSQL)
+       Ps.rdoParameters(0).Direction = rdParamReturnValue
+       Ps.rdoParameters(1) = strOldPassword
+       Ps.rdoParameters(2) = strNewPassword
+
+       Ps.Execute
+       Debug.Print Ps.rdoParameters(0).Value
+       If Ps.rdoParameters(0) &lt;&gt; 0 Then
+        MsgBox "Could not change password"
+       Else
+        MsgBox "Password has been changed"
+      End If
+      En.Close
+      Ps.Close
+      Cn.Close
+      Unload Me
+     Exit Sub
+
+     ErrorHandler:
+      MsgBox "Error - Password was not changed" &amp; Chr(10) &amp; Chr(13) &amp; Error$
+      En.Close
+     Unload Me
+
+     End Sub
+
+     Private Sub Command2_Click()
+       'This procedure is an example of the SQL Admin changing
+       'a users password.
+       On Error GoTo ErrorHandler
+
+       Dim En As rdoEnvironment
+       Dim Cn As rdoConnection
+       Dim Ps As rdoPreparedStatement
+       Dim strConnect As String
+       Dim strSQL As String
+       Dim strOldPassword As String
+       Dim strNewPassword As String
+       Dim strUserName As String
+
+       Command1.Enabled = False
+
+     'Change the following to match your values
+       strOldPassword = "OldPwd"
+       strNewPassword = "NewPwd"
+       strUserName = "UserID"
+       Set En = rdoEnvironments(0)
+       En.CursorDriver = rdUseOdbc
+
+       strConnect = "Driver={SQL Server};Server=MyServer;" &amp; _
+        "Database=master;Uid=sa;Pwd="
+
+       Set Cn = En.OpenConnection(dsName:="", Prompt:=rdDriverNoPrompt, _
+          ReadOnly:=False, Connect:=strConnect)
+      'Note that the above is a DSN-less connection
+
+       strSQL = "{ ? = call sp_password(?,?,?) }"
+       Set Ps = Cn.CreatePreparedStatement("", strSQL)
+
+       Ps.rdoParameters(0).Direction = rdParamReturnValue
+       Ps.rdoParameters(1) = strOldPassword
+       Ps.rdoParameters(2) = strNewPassword
+       Ps.rdoParameters(3) = strUserName
+
+       Ps.Execute
+       Debug.Print Ps.rdoParameters(0).Value
+       If Ps.rdoParameters(0) &lt;&gt; 0 Then
+         MsgBox "Could not change password"
+       Else
+        MsgBox "Password has been changed"
+       End If
+       En.Close
+       Ps.Close
+       Cn.Close
+       Unload Me
+       Exit Sub
+
+     ErrorHandler:
+     MsgBox "Error - Password was not changed" &amp; Chr(10) &amp; Chr(13) &amp; Error$
+       En.Close
+       Cn.Close
+       Ps.Close
+       Unload Me
+
+     End Sub
+
+Additional query words: rdoquery CreateQuery kbdse kbDSupport kbVBp kbVBp500 kbVBp600 kbVBp400 kbRDO
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

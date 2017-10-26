@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149044/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149044/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149044/","publisher":null,"image":null,"headline":"Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149044-dns-host-name-substitutes---for-invalid-characters">Q149044: DNS Host Name Substitutes "-" for Invalid Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149044
+Product(s): Microsoft Windows NT
+Version(s): 3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A hypen (minus sign) is substituted whenever you use a percent sign, pound sign,
+or underscore in a computer name during an initial installation of Windows NT.
+For example, %MYNAME, MYNAME#1, and MYNAME_1 become, respectively, -MYNAME,
+MYNAME-1, and MYNAME-1.
+
+It is not possible to add a percent sign, pound sign, or underscore into the DNS
+Host Name even though the Server Installation Guide does not list them as
+invalid characters.
+
+If you try to insert an invalid character, the following error is displayed:
+
+  The parameter is incorrect.
+
+Another symptom occurs when you attempt to connect to a newly created Web server
+with an invalid character in the computer name. You are unable to connect to
+HTTP://SERVER#1, but you can connect to HTTP://SERVER-1.
+
+CAUSE
+=====
+
+The cause of this error message is given in RFC 952, which states:
+
+  A "name" (Net, Host, Gateway, or Domain name) is a text string up to 24
+  characters drawn from the alphabet (A-Z), digits (0-9), minus sign (-), and
+  period (.). Note that periods are only allowed when they serve to delimit
+  components of "domain style names". (See RFC-921, "Domain Name System
+  Implementation Schedule", for background). No blank or space characters are
+  permitted as part of a name. No distinction is made between upper and lower
+  case. The first character must be an alpha character. The last character must
+  not be a minus sign or period. A host which serves as a GATEWAY should have
+  "-GATEWAY" or "-GW" as part of its name. Hosts which do not serve as Internet
+  gateways should not use "-GATEWAY" and "-GW" as part of their names. A host
+  which is a TAC should have "-TAC" as the last part of its host name, if it is
+  a DoD host. Single character names or nicknames are not allowed.
+
+  DOD INTERNET HOST TABLE SPECIFICATION:
+  --------------------------------------
+  This RFC is the official specification of the format of the Internet Host
+  Table. This edition of the specification includes minor revisions to RFC-810
+  which brings it up to date. Distribution of this memo is unlimited.
+
+
+By design, the Microsoft Windows NT DNS Hosts Configuration utility replaces all
+invalid characters in the DNS host name found in the NetBIOS computer name with
+a hyphen. If you want your NetBIOS and DNS host names to match, you must use the
+DNS naming standard outlined in RFC 952 when creating your NetBIOS computer
+name.
+
+WORKAROUND
+==========
+
+In the DNS Configuration dialog box for the TCP/IP Protocol in Control Panel
+Network, change the host name to a valid string of characters.
+For further information on RFC Documents, reference: http://ds.internic.net
+
+Additional query words: prodnt computername hostname IIS
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

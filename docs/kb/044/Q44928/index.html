@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44928: Linker Options /PADDATA and /PADCODE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44928: Linker Options /PADDATA and /PADCODE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44928/","publisher":null,"image":null,"headline":"Q44928: Linker Options /PADDATA and /PADCODE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44928-linker-options-paddata-and-padcode">Q44928: Linker Options /PADDATA and /PADCODE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44928
+Product(s): See article
+Version(s): 4.06
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QuickC docerr | mspl13_basic
+Last Modified: 18-SEP-1989
+
+Question:
+
+I ran the linker Version 4.06 that comes with the Microsoft QuickC
+Compiler Version 2.00 with the /help option as follows:
+
+   LINK /HELP
+
+I noticed two switches for which I couldn't find documentation:
+/PADDATA and /PADCODE. What are these options for?
+
+Response:
+
+The /PADC[ODE]:padsize option causes LINK to add filler bytes to the
+end of each code module. The option is followed by a colon and the
+number of bytes to add. (Decimal radix is assumed, but you can specify
+special octal or hexadecimal numbers by using a C-language prefix.)
+Thus, the following adds an additional 256 bytes to each code module:
+
+   /PADCODE:256
+
+The default size for code-module padding is 0 bytes.
+
+The /PADD[ATA]:padsize option performs a function similar to
+/PADCODE, except that it specifies padding for data segments (or data
+modules, if the program uses small or medium-memory models). Thus,
+the following adds an additional 32 bytes to each data module:
+
+   /PADDATA:32
+
+The default size for data-segment padding is 16 bytes. Note that if
+you specify too large a value for padsize, you may exceed the 64K
+limitation on the size of the default data segment.
+
+These two options are quite useful when used in conjunction with
+QuickC Version 2.00's incremental linking option. Using them correctly
+increases the incremental linking speed of a program.
+
+These two options are documented on Page 64 in the update section of
+the Microsoft C Optimizing Compiler Version 5.10 "CodeView and
+Utilities, Microsoft Editor, Mixed-Language Programming Guide" manual.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216446: Damaged Paging File Results in Stop Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216446: Damaged Paging File Results in Stop Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216446/","publisher":null,"image":null,"headline":"Q216446: Damaged Paging File Results in Stop Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216446-damaged-paging-file-results-in-stop-error-message">Q216446: Damaged Paging File Results in Stop Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216446
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the normal operation of your computer running Microsoft Windows NT, the
+computer may stop responding (hang) and display one of the following error
+messages:
+
+  STOP 0x0000000A: IRQL_NOT_LESS_OR_EQUAL
+
+  STOP 0x0000001E: K_MODE_EXCEPTION_NOT_HANDLED
+
+When you run the Dumpchk.exe utility, the utility may report that the dump file
+is invalid.
+
+CAUSE
+=====
+
+The Pagefile.sys file may be damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click Start, click Run, type "CHKDSK &lt;drive:&gt; /F /R" (without the
+  quotation marks) where &lt;drive:&gt; is the partition containing the
+  Pagefile.sys file, and then click OK.
+
+2. When the Chkdsk.exe utility has completed, set the paging file size to 0.
+
+  a. Click Start, point to Settings, click Control Panel, and then double-click
+     System. Click the Performance tab, click Change, and then point to the
+     partition containing the Pagefile.sys file.
+
+  b. In the Initial Size (MB): box, type "0" (without the quotation marks).
+
+  c. In the Maximum Size (MB): box, type "0" (without the quotation marks).
+
+  d. Click Set, click OK, click Close, and then click Yes when you are prompted
+     to restart the computer.
+
+3. After the computer has restarted, reset the Pagefile.sys file to the correct
+  size.
+
+  a. Click Start, point to Settings, click Control Panel, and then double-click
+     System. Click the Performance tab, click Change, and then point to the
+     partition containing the Pagefile.sys file.
+
+  b. In the Initial Size (MB): box, type a value equal to the amount of random
+     access memory (in megabytes) in your computer plus 11.
+
+  c. In the Maximum Size (MB): box, type a value equal to or less than the
+     amount of disk space available (in megabytes) on the specified partition
+     minus 1.
+
+  d. Click Set, click OK, click Close, and then click Yes when you are prompted
+     to restart the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

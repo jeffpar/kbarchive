@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224388: SMS: Slownet Determines Network Speed at Logon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224388: SMS: Slownet Determines Network Speed at Logon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224388/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224388/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224388/","publisher":null,"image":null,"headline":"Q224388: SMS: Slownet Determines Network Speed at Logon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224388-sms-slownet-determines-network-speed-at-logon">Q224388: SMS: Slownet Determines Network Speed at Logon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224388
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbtool dun kbsms200 kbDialUp
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Slownet.exe is called at logon in SMSLS to determine the network connection
+speed between the client and the logon point. Depending on the client platform,
+the file to which Slownet maps can be any of the following files:
+
+  Slwnt32.exe for Windows NT (Intel) and Windows 95/98 clients
+  Slwnt32a.exe for Windows NT (Alpha)
+  Slwnt16.exe for 16-bit Windows clients
+
+Slownet's calculation of connection speed is a snapshot that varies substantially
+depending on a number of factors including, but not limited to, maximum
+connection speed, line quality, and current network load. The Windows 32
+Slownet.exe uses the Win32 MultinetGetConnectionPerformance API call. This API
+calls asks the transport layer (for example, IP) to tell it how fast the
+connection is. SMS does not have any control over the return value from this API
+call. It could report a significantly slower speed than the actual connection,
+which can frequently be attributed to a slow network (not just a slow RAS
+connection).
+
+If Slownet detects that a connection speed is less than 40 KB, the client
+installation routine is bypassed and the client is not installed.
+
+Slownet can be used for the following tasks:
+
+- Determining the connection speed between a client and its server
+
+- Prompting the user to continue with the client installation despite a slow
+  network connection being detected
+
+- Detecting whether the client is logging on to the network over RAS and
+  bypassing the client installation if RAS is detected at all (similar to the
+  Checkras utility's functionality)
+
+In some circumstances, you may want to change the default threshold that Slownet
+uses to determine whether or not a client will be installed. If the threshold is
+lowered, keep in mind that the client installation may take a long time and may
+cause the user to wait at logon for components to be installed or upgraded.
+
+If it is necessary to force clients to install over a slow link, consider the
+following options:
+
+- Changing the threshold speed specified in the logon script
+
+- Customizing the logon script to prompt the user whether or not to run the SMS
+  client installation (after determining it is a slow link)
+
+- Removing all references to the Slownet.exe and Snboot.exe calls from the
+  logon script
+
+- Adding a custom determination in the logon script (for example, "Is this user
+  a member of the 'remote salespeople' group and therefore should always run
+  SMS")
+
+- Using the Systems Management Installation wizard (Smsman.exe)
+
+- Using alternate discovery and installation methods such as Network Discovery
+  or Windows NT Remote Client Installation
+
+To determine exactly what Slownet is doing, you can run Slownet with the /v
+parameter to print verbose output to the screen.
+
+MORE INFORMATION
+================
+
+Manually Determining the Connection with Slownet
+------------------------------------------------
+
+You can use Slownet as a command-line utility on the client computer. If the
+Slownet.exe file is not already on the client, copy the appropriate
+Slwnt&lt;xx&gt;.exe file to the client computer. Run the following command at a
+command prompt:
+
+  &lt;exename&gt; \\&lt;computername&gt;\&lt;share&gt;&lt;newspeed&gt; /verbose
+
+For example:
+
+  slownet \\siteserver1\share 10000 /v
+
+This command reports your calculated speed and tells you if your link is faster
+or slower than 10 Kbps.
+
+To determine if the calculated speed is faster or slower than 40 Kbps (by
+default, Slownet detects for at least 40 Kbps), run the following command from a
+command prompt:
+
+  slwnt32 \\siteserver1\share /v
+
+Note that if the server or share is not available, Slownet assumes a fast link
+and returns the following message:
+
+  Remote Name is \\siteserver1\c$
+  MultinetGetConnectionPerformance returned error: 2250. Defaulting to RAS
+  Check
+  No RAS connections are present, assuming fast link
+
+Modifing Slownet in the SMSLS Logon Script
+------------------------------------------
+
+If you want to modify the Slownet threshold, back up the Ssmsls.bat file in the
+Sms\Data\Nt_logon folder to Smsls.org. Then, modify the following lines in the
+Sms\Data\Nt_logon directory\Smsls.bat file:
+
+- :OK_TO_PROCEED
+  Replace: %SMS_LOCAL_DIR%\MS\SMS\CORE\BIN\Slownet.exe %0
+  With: %SMS_LOCAL_DIR%\MS\SMS\CORE\BIN\Slownet.exe %0 1000
+
+- :SLOWNETUSER
+  Replace: %SMS_LOCAL_DIR_USER%\MS\SMS\CORE\BIN\Slownet.exe %0
+  With: %SMS_LOCAL_DIR_USER%\MS\SMS\CORE\BIN\Slownet.exe %0 1000
+
+- :SLOWNETTEMP
+  Replace: %TEMP%\Slownet.exe %0
+  With: %TEMP%\Slownet.exe %0 1000
+
+- :SLOWNETSERVER
+  Replace: %0\..\SNBOOT.exe
+  With: %0\..\SNBOOT.exe 1000
+
+NOTE: The server and share names must be in all lowercase letters. This example
+presumes a minimal connection speed of 1000 bps, but this value can be any value
+less than 40,000.
+
+If the Smsls.bat file is changed after the creation of the logon point, copy the
+updated Smsls.bat file to the %Windir%\System32\Repl\Export\Scripts and
+%Windir%\System32\Repl\Import\Scripts folders on the logon server.
+
+Slownet with RAS
+----------------
+
+When you dial in over RAS, the speed Slownet detects may be lower than the
+dial-up status indicator, as indicated in the following table.
+
+  Client modem  RAS server modem  Dial-up reports  Slownet reports
+  ----------------------------------------------------------------
+  USR 33.6      USR 33.6          28.8 to 33.6     3500 
+  IBM 56k       USR 33.6          28.8 to 57.6     3500 to 3800 
+  IBM 56k       USR 56K           57.6 to 115k     11500 to 11600
+
+When a RAS client runs the SMSLS batch file at logon, Slownet.exe is copied to
+the client and run. If it detects that the connection speed is slower than 40
+KB, the client is not installed.
+
+It is possible to use Slownet to only determine whether a client is using a RAS
+connection. To do so, substitute the connection speed with 0. For example:
+
+  slownet \\siteserver1\share 0 /v
+
+If RAS is detected, the return code is 0.
+
+If you want to prevent the client from having any files (including Slownet)
+installed at logon, you can use the Checkras utility included in the BackOffice
+Resource Kit. Checkras.exe checks for RAS connections on the client instead of
+trying to determine the link speed. You can use the Checkras.exe utility in your
+logon script to determine whether or not a user is connected by a RAS
+connection, and then include commands in your logon script based on the results
+returned by Checkras.exe.
+
+The following sample Windows NT domain logon script uses Checkras.exe:
+
+  @echo off
+
+  echo Checking for existence of RAS files
+
+  if exist %windir%\system32\RASAPI32.DLL goto ras_status
+
+  if exist %windir%\system\RASAPI32.DLL goto ras_status
+
+  goto notras
+
+  :ras_status
+
+  echo Checking for existence of Checkras.exe
+
+  if exist %windir%\checkras.exe goto yes_checkras
+
+  copy \\server\netlogon\checkras.exe %windir%
+
+  :yes_checkras
+
+  echo Checking for RAS connection
+
+  %windir%\checkras
+
+  if errorlevel 1 goto ras
+
+  echo This is not a RAS connection
+
+  goto end
+
+  :notras
+
+  echo RAS is not installed on this system
+
+  goto end
+
+  :ras
+
+  echo RAS connection detected
+
+  REM Enter RAS-specific command here.
+
+  :end
+
+NOTE: Windows NT 3.51 clients are not supported with Systems Management Server
+2.0 over RAS. If Windows NT 3.51 clients will be logging in over RAS, Checkras
+must be used to prevent them from installing the SMS client.
+
+For additional information about client installation, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q202338 SMS: Pre-stage Clients To Avoid Bandwidth Contention In Install
+
+Additional query words: prodsms relnote SMS2 netspeed
+
+======================================================================
+Keywords          : kbtool dun kbsms200 kbDialUp 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

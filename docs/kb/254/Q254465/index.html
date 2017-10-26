@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254465/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254465/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254465/","publisher":null,"image":null,"headline":"Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254465-prb-top-level-form-wintellimouse-causes-page-fault-in-explorer">Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254465
+Product(s): Microsoft FoxPro
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbvfp600 kbOSWin98 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 24-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Intellimouse with top-level forms, you may receive
+the following error message:
+
+  Explorer has caused an invalid page fault in module
+  &lt;unknown&gt;0000:0c2c9d90
+
+CAUSE
+=====
+
+This occurs with versions of Point32.exe that shipped before IntelliPoint 3.0.
+
+RESOLUTION
+==========
+
+Download the latest versions of the Microsoft Mouse drivers at the following
+Microsoft Web site:
+
+  http://www.microsoft.com/products/hardware/mouse/driver/
+
+NOTE: It appears that this problem can also be resolved by removing the
+Mswheel.exe file on systems with the older software.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this behavior, you must have Microsoft Windows 98 installed, and a
+version of Point32.exe prior to 3.00.0307. (Note that version 14 is prior to
+3.00.0307.)
+
+1. Create a new project (TopForm.pjx).
+
+2. Paste the following code in a .prg file (TopForm.prg) in TopForm.pjx:
+
+  loForm = CREATEOBJECT("frmTopLevel")
+  loForm.Show()
+  READ EVENTS
+
+  DEFINE CLASS frmTopLevel AS form
+
+     Height = 106
+     Width = 264
+     AutoCenter = .T.
+     Caption = "Top-Level Form"
+     Name = "frmTopLevel"
+     ShowWindow = 2
+
+     ADD OBJECT lblNote AS label WITH ;
+        Caption = "Someone ought to open up a window!", ;
+        Height = 17, ;
+        Left = 36, ;
+        Top = 24, ;
+        Width = 209, ;
+        Name = "lblNote"
+
+     ADD OBJECT cmdExit AS commandbutton WITH ;
+        Top = 60, ;
+        Left = 156, ;
+        Height = 27, ;
+        Width = 84, ;
+        Caption = "Exit", ;
+        Name = "cmdExit"
+
+     PROCEDURE QueryUnload
+        CLEAR EVENTS
+     ENDPROC
+
+     PROCEDURE cmdExit.Click
+        IF ThisForm.QueryUnload()
+           ThisForm.Release()
+        ENDif
+     ENDPROC
+  ENDDEFINE
+
+3. Set TopForm.prg as the Main program, and build an EXE (TopForm.exe).
+
+4. Run TopForm.exe from the Start Menu or Windows Explorer.
+
+You may see the error message mentioned above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbOSWin98 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

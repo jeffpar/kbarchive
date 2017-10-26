@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83034: Reading and Converting Between the Three GDI Resources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83034: Reading and Converting Between the Three GDI Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83034/","publisher":null,"image":null,"headline":"Q83034: Reading and Converting Between the Three GDI Resources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83034-reading-and-converting-between-the-three-gdi-resources">Q83034: Reading and Converting Between the Three GDI Resources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83034
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300
+Last Modified: 06-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Gdirsrcs.exe is a file in the Microsoft Software Library that demonstrates the
+following three techniques:
+
+1. Reading a device independent bitmap (DIB) resource from a file and using that
+  data to create one of the following:
+
+   - A device dependent bitmap (DDB)
+
+   - A cursor
+
+   - An icon
+
+2. Reading a cursor resource from a file and using that data to create one of
+  the following:
+
+   - A device dependent bitmap
+
+   - A device independent bitmap
+
+   - An icon
+
+   - Another cursor
+
+3. Reading an icon resource from a file and using that data to create one of the
+  following:
+
+   - A device dependent bitmap
+
+   - A device independent bitmap
+
+   - A cursor
+
+   - Another icon
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Gdirsrcs.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Reading icon and cursor resources from a file is straightforward. However,
+reading a device independent bitmap resource from a file is not so
+straightforward for the following two reasons:
+
+- The bitmap may be larger than 64K bytes. Therefore, an application must use a
+  custom file-reading function that can deal with the 64K-byte limit.
+
+- The device independent bitmap resource-file header has two different formats:
+  one for OS/2 and another for Windows version 3.x. While the GDIRSRCS sample
+  reads both formats, it stores bitmap information only in the Windows 3.x
+  format.
+
+Creating a Device Dependent Bitmap
+----------------------------------
+
+The process to create a DDB using the information in a DIB is straightforward.
+Call the CreateBitmap() function to create a bitmap, then read the image data
+from the DIB into the DDB.
+
+Creating a DDB from a cursor or from an icon is also straightforward. Note that a
+cursor and an icon each contain two bitmaps (the AND and XOR bit masks) in a
+DIB. Extract the XOR bit mask and use it to create a DDB.
+
+In the GDIRSRCS sample, the functions that create bitmaps are in the BMP.C file.
+
+Creating a Cursor
+-----------------
+
+In the GDIRSRCS sample, the functions that create cursors are in the CUR.C file.
+
+The procedure to create a cursor based on a DIB obtained from a cursor or icon
+resource file has eight steps. While the following discussion describes the
+process of creating a cursor based on a DIB from an icon file, the procedure to
+create a cursor based on a DIB from another cursor is the same.
+
+1. Obtain a pointer to the bits of the device independent bitmap from the icon.
+
+2. Divide the height of the DIB by two because the DIB contains both the AND and
+  XOR masks.
+
+3. Calculate the offset to the AND mask bits.
+
+4. Calculate the offset to the XOR mask bits.
+
+5. Create a device dependent monochrome bitmap with the bits of the XOR mask.
+
+6. Obtain the contents of the device dependent XOR bit mask and store it in
+  memory. The AND bit mask is a monochrome bitmap. Because device independent
+  and device dependent monochrome bitmaps share the same format, there is no
+  need to convert the AND bit mask.
+
+7. Because the image of a DIB is stored from bottom to top, flip the scanlines
+  of the AND bit mask.
+
+8. Create a cursor by calling the CreateCursor() function, specifying the AND
+  and XOR bit masks.
+
+To create a cursor from a bitmap DIB, use the following eight steps:
+
+1. Obtain a handle to the DIB in the bitmap.
+
+2. Call the GetSystemMetrics() function with the SM_CXCURSOR and SM_CYCURSOR
+  indexes to determine the width and height of cursors supported by the
+  installed video driver.
+
+3. Change the size of the bitmap to match the size of the system's cursors.
+
+4. If the bitmap is a color bitmap, convert it to monochrome. (All cursors are
+  monochrome.)
+
+5. Save the XOR mask bits in memory.
+
+6. Create a monochrome bitmap for the AND bit mask. Fill it with any desired
+  pattern.
+
+7. Save the AND mask bits in memory.
+
+8. Create a cursor by calling the CreateCursor() function, specifying the AND
+  and XOR bit masks.
+
+Creating Icons
+--------------
+
+In the GDIRSRCS sample, the functions that create icons are in the ICON.C file.
+
+The process to create an icon from a cursor or from another icon resource file
+has eight steps. While the following discussion describes the process of
+creating an icon based on a cursor, the process to create an icon based on
+another icon is the same.
+
+1. Obtain a pointer to the bits of the DIB in the cursor.
+
+2. Divide the height of the DIB by two because the DIB contains both the AND and
+  XOR bitmaps.
+
+3. Calculate the offset to the AND mask bits.
+
+4. Calculate the offset to the XOR mask bits.
+
+5. Create a device dependent monochrome bitmap with the bits of the XOR mask.
+
+6. Obtain the contents of the device dependent XOR bit mask and store it in
+  memory. The AND bit mask is a monochrome bitmap. Because device independent
+  and device dependent monochrome bitmaps share the same format, there is no
+  need to convert the AND bit mask.
+
+7. Because the image of a DIB is stored from bottom to top, flip the scanlines
+  of the AND bit mask.
+
+8. Create a cursor by calling the CreateCursor() function, and specifying the
+  AND and XOR bit masks.
+
+To create an icon from a bitmap DIB, use the following seven steps:
+
+1. Obtain a handle to the DIB in the bitmap.
+
+2. Call the GetSystemMetrics() function with the SM_CXICON and SM_CYICON indexes
+  to determine the width and height of icons supported by the installed video
+  driver.
+
+3. Change the size of the bitmap to match the size of the system's icons.
+
+4. Save the XOR mask bits in memory.
+
+5. Create a monochrome bitmap for the AND bit mask. Fill it with any desired
+  pattern.
+
+6. Save the AND mask bits in memory.
+
+7. Create an icon by calling the CreateIcon() function, and specifying the AND
+  and XOR bit masks.
+
+Additional query words: softlib GDIRSRCS.EXE
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

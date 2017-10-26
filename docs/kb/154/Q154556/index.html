@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154556: Delegation Requires a Stop and Restart of the DNS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154556: Delegation Requires a Stop and Restart of the DNS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154556/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154556/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154556/","publisher":null,"image":null,"headline":"Q154556: Delegation Requires a Stop and Restart of the DNS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154556-delegation-requires-a-stop-and-restart-of-the-dns-server">Q154556: Delegation Requires a Stop and Restart of the DNS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154556
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Depending on the steps you take to delegate a subzone to a different server by
+means of Domain Name System (DNS) Manager, you may or may not be required to
+stop and restart the DNS service.
+
+MORE INFORMATION
+================
+
+Delegate a Sub-domain: To create and delegate a new subzone for a new domain,
+follow these steps:
+
+1. In the Server List, add the server that will be authoritative for the new
+  subzone.
+
+2. Click this server and create the subzone as a new primary zone.
+
+3. In the Server List, double-click the primary server.
+
+4. If a domain does not exist for the new subzone, right-click the existing
+  zone, click New Domain and add a new domain for the subzone.
+
+5. Right-click the new domain and click New Record.
+
+6. Under Record Type, click NS Record. For Domain Server DNS Name, type the
+  fully qualified domain name (FQDN) of the DNS server that is authoritative
+  for the new subzone.
+
+7. Under Record Type, create an A record for the server that will be
+  authoritative for the new subzone and click OK.
+
+  NOTE: You only need to create an A record if the authoritative server for the
+  new subzone is within the domain of the authoritative zone on the primary
+  server.
+
+  For example, if you are authoritative for ms.com and delegating nt.ms.com to
+  bob.ms.com, you need to create an A record. However, if you are delegating
+  nt.ms.com to bob.otherzone.com, there is no need to create the A record.
+
+Example of Creating and Delegating a New Subzone for a New Domain
+-----------------------------------------------------------------
+
+The following steps create a new domain (nt.ms.com) in the ms.com zone on
+&lt;server 1&gt; and delegate it to nt.ms.com on &lt;server 2&gt;.
+
+1. In the Server List add &lt;server 2&gt;.
+
+2. Right-click &lt;server 2&gt; and create a the new primary zone nt.ms.com.
+
+3. Double-click &lt;server 1&gt;.
+
+4. Right-click the ms.com zone, and then add the domain nt.ms.com.
+
+5. Right-click the new domain, and then create an A record. For Host Name, type
+  &lt;server 2&gt;. For Host IP Address, type the IP address for &lt;server
+  2&gt;.
+
+6. Right-click the new domain again, and then create an NS record. For Domain
+  Server DNS Name, type &lt;server 2&gt;.nt.ms.com.
+
+If you follow the same steps as above, but reverse step 5 and step 6 (create the
+NS record before the A record), you need to restart the DNS server service
+because the delegation is not active until the DNS server service is stopped and
+restarted.
+
+Additional query words: prodnt ntdns
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165119: XCON: Site Connector Configuration Basics | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165119: XCON: Site Connector Configuration Basics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165119/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165119/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165119/","publisher":null,"image":null,"headline":"Q165119: XCON: Site Connector Configuration Basics","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165119-xcon-site-connector-configuration-basics">Q165119: XCON: Site Connector Configuration Basics</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165119
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbother kbsetup kbtshoot
+Last Modified: 17-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article will explain the basics of configuring a Microsoft Exchange Site
+Connector.
+
+MORE INFORMATION
+================
+
+Administrative Account: This account is the user who was logged in during the
+installation of Microsoft Exchange Server. This user will receive Permissions
+Admin for the Organization, Site, and Configuration objects. These are the three
+parent objects and the permission will be propagated to all child objects.
+
+Service Account: This should be a Domain User account made prior to installation
+of the Microsoft Exchange Server. This account will receive a Custom role on the
+Organization object and Service Account Admin on the Site and Configuration
+Objects. This account will be granted rights to Log On as a Service and Restore
+Files and Directories. This account can be changed on a single Server Site, but
+requires modifying the Microsoft Exchange Schema and NT Registry permissions.
+
+Environment: The Windows NT pagefile on Intel based servers should have an
+Initial setting equal to physical memory plus 111 megabytes and a Maximum equal
+to 211 megabytes plus physical memory. RISC based servers should have an Initial
+pagefile equal to 61 megabytes greater than physical memory and a Maximum
+pagefile equal to 111 megabytes plus physical memory.
+
+Memory: Run the Microsoft Exchange Optimizer and configure the Microsoft Exchange
+Server as is appropriate for the server. Limit the amount of memory that
+Microsoft Exchange Server may use. This reserves memory for the operating system
+and has been shown to eliminate erratic behavior in the MTA. The following are
+guidelines for Microsoft Exchange memory use. Determine total physical memory
+installed on the server. Multiply this number by .75. Select the Memory Usage
+check box and enter the result of the previous calculation. The rule of thumb is
+use 75 percent of total physical memory for Microsoft Exchange. This reserves 25
+percent of real memory for Windows NT.
+
+Connector configuration methodology is dependent on the NT Domain model(s)
+involved and the type of server on which Microsoft Exchange is installed.
+Confirm the type of server on which Microsoft Exchange is installed, it is
+important to know if the server is Domain Controller or a Member Server.
+Microsoft Exchange Server requires that at least one server be a domain
+controller for domain validation.
+
+If the servers are in the same domain, It is preferable to use the same service
+account. However, this is not a requirement. Selecting different service
+accounts will require use of the override properties on any Site connector
+between Sites with different service accounts.
+
+As a minimum, assign Admin Permissions for the Site and Configuration Objects to
+the User or Group that will be configuring a Site connector. If the Sites use
+different service accounts, enter the service account for the other Site on the
+Override tab of the Site connector.
+======================================================================
+Keywords          : kbother kbsetup kbtshoot 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

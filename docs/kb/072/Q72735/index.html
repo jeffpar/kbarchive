@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72735/","publisher":null,"image":null,"headline":"Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72735-loading-smartdrvsys-high-with-adaptec-controller-hangs-system">Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q72735</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Disk</span> <span class="n">Operating</span> <span class="nf">System</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">21</span><span class="p">-</span><span class="n">NOV</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="n">operating</span> <span class="nf">system</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="k">If</span> <span class="n">SMARTDRV</span><span class="p">.</span><span class="n">SYS</span> <span class="n">is</span> <span class="n">loaded</span> <span class="n">high</span> <span class="n">on</span> <span class="n">a</span> <span class="nf">system</span> <span class="k">with</span> <span class="n">a</span> <span class="n">Micropolis</span> <span class="m">330</span> <span class="n">MB</span> <span class="n">hard</span> <span class="n">disk</span>
+<span class="k">model</span> <span class="p">#</span><span class="m">1578</span><span class="p">-</span><span class="m">15</span> <span class="k">with</span> <span class="n">Adaptec</span> <span class="n">Controller</span> <span class="k">model</span> <span class="p">#</span><span class="m">1542</span><span class="p">-</span><span class="n">B</span><span class="p">,</span> <span class="k">and</span> <span class="n">it</span> <span class="n">is</span> <span class="n">partitioned</span> <span class="n">into</span>
+<span class="n">a</span> <span class="n">single</span> <span class="n">drive</span><span class="p">,</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">will</span> <span class="n">hang</span><span class="p">.</span>
+
+<span class="n">Loading</span> <span class="n">SMARTDRV</span><span class="p">.</span><span class="n">SYS</span> <span class="n">low</span> <span class="n">before</span> <span class="n">loading</span> <span class="n">anything</span> <span class="n">high</span> <span class="n">solves</span> <span class="n">the</span> <span class="n">problem</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">disk</span> <span class="n">transfers</span> <span class="k">to</span> <span class="n">the</span> <span class="n">upper</span> <span class="n">memory</span> <span class="n">block</span> <span class="p">(</span><span class="n">UMB</span><span class="p">)</span> <span class="n">are</span> <span class="k">not</span> <span class="n">being</span> <span class="n">put</span> <span class="n">at</span> <span class="n">the</span>
+<span class="n">right</span> <span class="n">addresses</span> <span class="n">because</span> <span class="n">the</span> <span class="n">controller</span> <span class="n">is</span> <span class="k">not</span> <span class="n">mapping</span> <span class="n">addresses</span> <span class="n">correctly</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">only</span> <span class="n">workaround</span> <span class="n">available</span> <span class="n">is</span> <span class="k">to</span> <span class="nf">load</span> <span class="n">SMARTDRV</span><span class="p">.</span><span class="n">SYS</span> <span class="n">low</span> <span class="p">(</span><span class="k">in</span> <span class="n">conventional</span> <span class="n">memory</span><span class="p">).</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="m">5.00</span> <span class="n">noupd</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbMSDOSSearch</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

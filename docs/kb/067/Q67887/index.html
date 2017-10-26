@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67887: &quot;Illegal Function Call,&quot; Negative Number to Fractional Power | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67887: &quot;Illegal Function Call,&quot; Negative Number to Fractional Power" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67887/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67887/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67887/","publisher":null,"image":null,"headline":"Q67887: &quot;Illegal Function Call,&quot; Negative Number to Fractional Power","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67887-illegal-function-call-negative-number-to-fractional-power">Q67887: "Illegal Function Call," Negative Number to Fractional Power</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67887
+Product(s): See article
+Version(s): 1.00a 1.00b | 6.00 6.00b 7.00 7.10
+Operating System(s): MACINTOSH | MS-DOS
+Keyword(s): ENDUSER | B_QuickBas B_GWBasicI | mspl13_basic
+Last Modified: 2-JAN-1991
+
+Raising a negative number to a fractional power gives an "Illegal
+function call" in BASIC because the result will be a complex number,
+which is not supported in BASIC. (A complex number is of the form
+x+y*i where x is the real component and y is the imaginary component;
+i is the square root of -1.)
+
+Note: -5^(-Y) is not the same as X^(-Y) when X = -5 because -5^(-Y) is
+actually parsed as -(5^(-Y)). In other words, the exponentiation
+operator (^) has greater precedence than the subtraction (-) operator.
+
+This information applies to most versions of Microsoft BASIC,
+including the following:
+
+1. Microsoft QuickBASIC version 1.00 for the Apple Macintosh.
+2. Microsoft BASIC Compiler version 1.00 for the Apple Macintosh.
+3. Microsoft BASIC Interpreter versions 1.00, 1.01, 2.00, 2.10, and
+   3.00 for the Apple Macintosh.
+4. Microsoft QuickBASIC versions 1.00, 1.01, 1.02, 2.00, 2.01, 3.00,
+   4.00, 4.00b, 4.50 for MS-DOS.
+5. Microsoft BASIC Compiler versions 5.35 and 5.36 for MS-DOS.
+6. Microsoft BASIC Compiler versions 6.00 and 6.00b for MS OS/2 and
+   MS-DOS.
+7. Microsoft BASIC Professional Development System (PDS) versions 7.00
+   and 7.10 for MS-DOS and MS OS/2.
+8. Microsoft GW-BASIC Interpreter versions 3.20, 3.22, 3.23 for
+   MS-DOS.
+
+The first PRINT statement below gives "Illegal function call." Many
+programmers will try debugging this code by substituting an actual
+constant for X, and the PRINT will seem to give the correct result.
+However, upon close examination of the precedence of operators, it
+will be apparent that the exponential symbol takes precedence over the
+minus sign. The expression 5^(-1/6) is parsed first and then the
+negation of this expression is performed. The third PRINT demonstrates
+what is actually happening in the first PRINT statement:
+
+X = -5
+PRINT X ^ (-1 / 6)       ' generates "Illegal function call"
+PRINT -5 ^ (-1 / 6)      ' same as PRINT -(5 ^ (-1 / 6)); no error
+PRINT (-5) ^ (-1 / 6)    ' generates "Illegal function call"
+
+To avoid the "Illegal function call" message, raise the absolute value
+(ABS) of X to the fractional power. If you do this when X is a
+negative number, please remember that you must multiply by i (the
+square root of -1) to get the true mathematical result. Because the
+square root of -1 cannot be represented in BASIC, you must keep track
+of imaginary number results yourself using a flag variable or warning
+message, for example:
+
+   X=-5
+   PRINT ABS(X) ^ (-1 / 6)
+   IF SGN(X) &lt; 0 THEN
+      PRINT "Warning: the resulting root is an imaginary number. This"
+      PRINT "root should be multiplied by i, the square root of -1."
+   END IF
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

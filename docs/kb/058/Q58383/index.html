@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58383/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58383/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58383/","publisher":null,"image":null,"headline":"Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58383-windows-30-systemini-386enh-section">Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58383
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Windows version 3.0
+SYSINI.TXT readme file. The Windows Setup program copies this file to the
+Windows 3.0 directory.
+
+MORE INFORMATION
+================
+
+[386Enh] SECTION
+----------------
+
+The [386Enh] section contains information specific to running Windows
+in 386 enhanced mode, including information used for virtual-memory
+page swapping.
+
+The [386Enh] section can contain the following settings:
+
+----------------------------------------------------------------------
+AllVMsExclusive=&lt;Boolean&gt;
+Default: false
+Purpose: If enabled, this setting forces all applications to run in
+        exclusive mode, overriding all contrary settings in the
+        applications' program information files (PIFs). Enabling this
+        setting might prolong the life of network and memory-resident
+        software that is incompatible with Windows.
+Can change by: Using Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+AltPasteDelay=&lt;seconds&gt;
+Default: .025
+Purpose: Specifies how much time Windows waits before pasting any
+        characters after the ALT key has been pasted. Some
+        applications may require more time for recognition of the ALT
+        keystroke.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+CGANoSnow=&lt;Boolean&gt;
+Default: no
+Purpose: If enabled, causes Windows to do special handling to avoid
+        snow appearing on an IBM CGA display device.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+COM1AutoAssign=&lt;number&gt;
+COM2AutoAssign=&lt;number&gt;
+COM3AutoAssign=&lt;number&gt;
+COM4AutoAssign=&lt;number&gt;
+Default: 2
+Purpose: Indicate the contention detection values for each connected
+        communications port. These values are used by Windows to
+        determine how to arbitrate requests for the use of a device
+        by more than one application, at least one of which is a
+        non-Windows application. If the value is -1, Windows will
+        display a warning message that asks the user which
+        application should be given control of the port. If the value
+        is zero, any application can use the device at any time. If
+        the value is a positive integer less than 1,000, this value
+        represents the number of seconds after an application stops
+        using the device before another application can use the same
+        device.
+To change: Choose the 386 Enhanced icon from the Control Panel window.
+----------------------------------------------------------------------
+COM1Base=&lt;port&gt;
+COM2Base=&lt;port&gt;
+COM3Base=&lt;port&gt;
+COM4Base=&lt;port&gt;
+Default: See purpose.
+Purpose: Specifies the base (first) port for the serial port adapter
+        you are using. The default values are as follows:
+
+         Port       Default
+         ----       -------
+         COM1        3F8h
+         COM2        2F8h
+         COM3        3E8h
+         COM4        2E8h
+
+        Check your hardware documentation for the appropriate value.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+COMBoostTime=&lt;milliseconds&gt;
+Default: 2
+Purpose: Specifies the amount of time (in milliseconds) to allow a
+        virtual machine to process a COM interrupt. If an
+        communications application is losing keyboard characters on
+        the display, you can try increasing this value.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+COM1Irq=&lt;number&gt;
+COM2Irq=&lt;number&gt;
+COM3Irq=&lt;number&gt;
+COM4Irq=&lt;number&gt;
+Default: See purpose.
+Purpose: Specifies which interrupt line is being used by the device on
+        the specified communications port. The default values are as
+        follows:
+
+         Port       Default
+         ----       -------
+         COM1          4
+         COM2          3
+         COM3          4
+         COM4          3
+
+        Check your hardware documentation for the appropriate value.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Device=&lt;filename-or-*devicename&gt;
+Default: none
+Purpose: Specifies which virtual devices are being used with Windows
+        in 386 enhanced mode. This value can appear two ways: either
+        the filename of a specific device driver, or an asterisk (*)
+        followed immediately by the device name. The latter case
+        refers to a virtual device that is in the WIN386.EXE file.
+        Synonyms for device= are display=, keyboard=, network= and
+        mouse=. Multiple device settings are required to run Windows
+        in 386 enhanced mode.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Display=&lt;filename&gt;
+Default: none
+Purpose: Specifies the display device that is being used with Windows
+        in 386 enhanced mode. This setting is a synonym to device=
+        and exists to tell Setup which display device driver you are
+        using.
+To change: Choose the Windows Setup icon from the Main Group window.
+----------------------------------------------------------------------
+DMABufferIn1MB=&lt;Boolean&gt;
+Default: no
+Purpose: Indicates, if enabled, that the DMA buffer memory should be
+        in the first 1 MB of memory in order to be compatible with
+        8-bit bus master cards.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+DMABufferSize=&lt;kilobytes&gt;
+Default: 16
+Purpose: Specifies the amount of memory to be reserved for buffered
+        direct memory access (DMA). Windows in 386 enhanced mode will
+        default to a DMA buffer size that will handle disk access.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+DualDisplay=&lt;Boolean&gt;
+Default: See purpose.
+Purpose: Normally, when running in 386 enhanced mode, the memory
+        between B000:0000 and B7FF:FFFF will be used by the general
+        system unless a secondary display is detected. If this
+        setting is enabled, this memory will be left unused and
+        available for display adapters. If this setting is disabled,
+        the address range will available on EGA systems but not under
+        VGA systems, since the VGA display device supports monochrome
+        modes, which use this address space.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+EMMExclude=&lt;range&gt;
+Default: none
+Purpose: Specifies a range of memory that Windows will not consider
+        using as an EMM page. This has the side effect of turning off
+        the RAM and ROM search code for the range. The range (two
+        paragraph values separated by a hyphen) must be between C000
+        and EFFF. Windows normally scans this area to find unused
+        address space. This scanning can interfere with some adapters
+        that use the same memory area. Values are rounded to a
+        multiple of 16K. For example, you could set
+        EMMExclude=C800-CFFF to prevent Windows from scanning the
+        addresses C800:0000 through CFFF:FFFF. You may specify
+        multiple memory ranges by using this setting more than once.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+EMMInclude=&lt;range&gt;
+Default: none
+Purpose: Specifies a range of memory that Windows will consider using
+        as an EMM page regardless of what may be there. EMMInclude
+        takes precedence over EMMExclude if you specify ranges that
+        overlap. The range (two values separated by a hyphen) must be
+        between C000 and EFFF. Values are rounded to the nearest 16K.
+        You may specify multiple memory ranges by using this setting
+        more than once.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+EMMPageFrame=&lt;address&gt;
+Default: none
+Purpose: Specifies the starting address where the 64K page frame will
+        begin only when Windows in 386 enhanced mode cannot find a
+        suitable page frame. Allows an EMM page frame in an area
+        containing some unused RAM or ROM.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+EMMSize=&lt;number-or-kilobytes&gt;
+Default: -1
+Purpose: Specifies the total amount of memory to be made available for
+        mapping as expanded memory. The default allows all system
+        memory to be allocated as EMM. You should specify a value for
+        this setting if you run an application that allocates all of
+        the available expanded memory. This will be apparent if, when
+        you run the application, you can never create any new virtual
+        machine. If this value is zero, then no expanded memory will
+        be allocated, but the EMM driver will be loaded.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+FileSysChange=&lt;Boolean&gt;
+Default: yes
+Purpose: Indicates whether File Manager will automatically receive
+        messages anytime a non-Windows application creates, renames,
+        or deletes a file. By disabling this setting , a virtual
+        machine can be run exclusively even when it manipulates
+        files.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+global=&lt;device-name&gt;
+Default: (all devices)
+Purpose: Used to define DOS devices loaded in CONFIG.SYS that need to
+        be global to the system. The default setting for all devices
+        is global. But certain virtual devices might specify that a
+        DOS device be local (for example, MS$MOUSE). Use this setting
+        to override that local specification.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+HighFloppyReads=&lt;Boolean&gt;
+Default: yes
+Purpose: Normally, Windows turns a DMA verify to the area
+        E000:0000-EFFF:FFFF into a read. In rare cases, this might
+        cause the system to fail because some software might, as a
+        result, write over the system's shadow RAM if you have it in
+        this area. If this happens, disable this setting and set
+        EMMExclude to E000-EFFF.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+IgnoreInstalledEMM=&lt;Boolean&gt;
+Default: no
+Purpose: Enabling this setting allows Windows to start in 386 enhanced
+        mode even when there is an unknown expanded memory manager
+        (EMM) running. This can cause the system to fail if
+        memory-resident software was using EMM before Windows
+        started. Enable this setting only if no such software is
+        installed or you are sure it will not be active when you are
+        running Windows. Note: This only applies to expanded memory
+        managers servicing physical EMS hardware; Windows will not
+        disable 80386 expanded memory emulators.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+InDOSPolling=&lt;Boolean&gt;
+Default: no
+Purpose: Some memory-resident software needs to be in a critical
+        section to do operations off an INT21 hook. Enabling this
+        setting assures that this will happen by preventing Windows
+        from running other virtual machines when the memory-resident
+        software has the InDOS flag set.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+IRQ9Global=&lt;Boolean&gt;
+Default: no
+Purpose: If enabled, this setting converts IRQ9 masks to global.
+        Enable if you are using software that leaves IRQ9 masks,
+        therefore hanging the system.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Keyboard=&lt;filename&gt;
+Default: none
+Purpose: Tells Setup which keyboard driver is being used with Windows
+        in 386 enhanced mode. This is a synonym to device=.
+To change: Choose the Windows Setup icon from the Main Group window.
+----------------------------------------------------------------------
+KeyBoostTime=&lt;seconds&gt;
+Default: .001
+Purpose: Specifies the amount of time an application gets to run with
+        increased priority when it receives a keystroke. This setting
+        can used to increase the response to keystrokes when several
+        background applications are running.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+KeyBufferDelay=&lt;seconds&gt;
+Default: .2
+Purpose: Specifies the amount of time to delay processing keyboard
+        input after the keyboard buffer is full. Some applications
+        may require a larger value than the default.
+To change: Use Notepad to edit the SYSTEM.INI file.
+---------------------------------------------------------------------
+KeyPasteDelay=&lt;seconds&gt;
+Default: .003
+Purpose: Specifies how much time to wait before pasting any characters
+        after a key has been pasted. Some applications may require
+        more time than the default for recognition of a keystroke.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+KeyPasteTimeout=&lt;seconds&gt;
+Default: 1
+Purpose: Specifies how much time to allow an application to make the
+        necessary BIOS calls after it reads keyboard input before
+        Windows will setting from fast paste to slow paste keyboard
+        input.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Local=&lt;device-name&gt;
+Default: CON
+Purpose: Used to define device drivers that need to be local to each
+        virtual machine. This means a separate copy of the driver
+        will exist in each virtual machine, and each will keep
+        different state information. Most device drivers will not
+        function properly when this setting is used. An exception is
+        CON, the DOS console device, which should be local to avoid
+        filling a buffer with input from multiple virtual machines.
+To change: Use Notepad to edit SYSTEM.INI file.
+----------------------------------------------------------------------
+LPT1AutoAssign=&lt;integer&gt;
+LPT2AutoAssign=&lt;integer&gt;
+LPT3AutoAssign=&lt;integer&gt;
+LPT4AutoAssign=&lt;integer&gt;
+Default: 60
+Purpose: Indicates the contention detection value for each connected
+        port. These values are used by Windows to determine how to
+        arbitrate requests for the use of a device by more than one
+        application, at least one of which is a non-Windows
+        application. If the value is -1, Windows will display a
+        warning message that asks the user which application should
+        be given control of the port. If the value is 0, any
+        application can use the device at any time. If the value is a
+        positive integer less than 1,000, this value represents the
+        number of seconds after an application stops using the device
+        before another application can use the same device.
+To change: Choose the 386 Enhanced icon from the Control Panel window.
+----------------------------------------------------------------------
+MapLargeNetTransfers=&lt;Boolean&gt;
+Default: false
+Purpose: Indicates whether to map a NetBIOS request when there is not
+        enough buffer space to buffer it. Setting this setting to
+        true may be useful if you do not want to use a lot of memory
+        for buffers when running a network application that does
+        large data transfers.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+MapPhysAddress=&lt;range&gt;
+Default: none
+Purpose: Specifies the address range (in MB) in which the memory
+        manager will preallocate physical mappings. Use this setting
+        if you are using a DOS device driver (such as an older
+        version of RAMDrive that uses extended memory) that uses the
+        INT15 MOVEBLOCK service to access memory allocated before
+        Windows in 386 enhanced mode is started. Otherwise, if no
+        memory is available, the MOVEBLOCK call may not be made.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+MaxPagingFileSize=&lt;kilobytes&gt;
+Default: none
+Purpose: Specifies the maximum size for a temporary swap file.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+MinTimeSlice=&lt;milliseconds&gt;
+Default: 20
+Purpose: Specifies the minimum amount of time a virtual machine will
+        be allowed to run before other virtual machines may take
+        over. A smaller value (such as 1 millisecond) will make
+        multitasking appear smoother, but will diminish the overall
+        system performance.
+To change: Choose the 386 Enhanced icon from the Control Panel window.
+----------------------------------------------------------------------
+MinUserDiskSpace=&lt;kilobytes&gt;
+Default: 500
+Purpose: Tells Windows how much disk space to leave free when creating
+        a temporary swap file. You would want to use this setting if
+        your system's paging drive has less available space than
+        Windows can use for paging. This setting has no effect if a
+        permanent swap file exists.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Mouse=&lt;filename&gt;
+Default: none
+Purpose: Specifies the virtual device that handles the mouse hardware
+        in 386 enhanced mode. This setting is a synonym for device=.
+To change: Choose the Windows Setup icon from the Main Group window.
+----------------------------------------------------------------------
+NetAsynchFallback=&lt;Boolean&gt;
+Default: false
+Purpose: When an application issues an asynchronous NetBIOS request,
+        Windows will attempt to allocate space in its global network
+        buffer to receive the data. If there is insufficient space in
+        the global buffer, Windows will normally fail the NetBIOS
+        request. If this setting is enabled, Windows will attempt to
+        save such a request by allocating a buffer in local memory
+        and preventing any other VMs from running until the data is
+        received and the timeout period (defined by NetAsynchTimeout)
+        expires.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+NetAsynchTimeout=&lt;seconds&gt;
+Default: 5.0
+Purpose: Specifies the timeout period (in seconds) when Windows needs
+        to enter a critical section in order to service an
+        asynchronous NetBIOS request. It is used only when
+        NetAsynchFallback is enabled. This value can include a
+        decimal (such as 0.5).
+----------------------------------------------------------------------
+NetDMASize=&lt;kilobytes&gt;
+Default: 32 on Micro Channel machines
+        0 on non-Micro Channel machines
+Purpose: Specifies the DMA buffer size for NetBIOS transport software
+        if a network has been installed. In this case, the buffer
+        size is the larger value between this value and the value of
+        DMABufferSize.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+NetHeapSize=&lt;kilobytes&gt;
+Default: 12
+Purpose: Specifies the size of the buffers that Windows in 386
+        enhanced mode allocates in conventional memory for
+        transferring data over a network. All values are rounded up
+        to the nearest 4K.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Network=&lt;filename&gt;
+Default: none
+Purpose: Tells Setup which type of network you are using. This setting
+        is a synonym for device=.
+To change: Choose the Windows Setup icon from the Main Group window.
+----------------------------------------------------------------------
+NMIReboot=&lt;Boolean&gt;
+Default: no
+Purpose: If enabled, causes a reboot to occur when an NMI interrupt is
+        received.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+NoEMMDriver=&lt;Boolean&gt;
+Default: false
+Purpose: Causes Windows in 386 enhanced mode to not install its
+        expanded memory driver. This differs from setting EMMSize to
+        zero, which does not prevent the EMM driver from being
+        loaded.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+Paging=&lt;Boolean&gt;
+Default: yes
+Purpose: Enables or disables demand paging (virtual memory). You would
+        disable this setting only if you need the disk space normally
+        used for a temporary swap file.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+PagingDrive=&lt;drive-letter&gt;
+Default: (current drive)
+Purpose: Specifies the disk drive where Windows in 386 enhanced mode
+        will allocate a temporary swap file. If the current drive is
+        a network drive, the swap file will be created on the same
+        drive as the SYSTEM.INI file. If both are network drives,
+        paging will be disabled.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+ReflectDosInt2A=&lt;Boolean&gt;
+Default: false
+Purpose: Indicates whether Windows should consume or reflect DOS INT
+        2A signals. The default means Windows will consume these
+        signals and therefore run more efficiently.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+ReservePageFrame=&lt;Boolean&gt;
+Default: true
+Purpose: Tells Windows whether to use up EMS page frame space when it
+        allocates DOS transfer buffers below 640K. Leaving this
+        setting disabled gives a non-Windows application more memory
+        at the expense of EMS page frame space. Enable this setting
+        only for an application that uses an EMS page frame.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SGrabLPT=&lt;port-number&gt;
+Default: (current virtual machine)
+Purpose: Routes all printer input on the specified port to the system
+        virtual machine rather than the current virtual machine.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SystemRomBreakPoint=&lt;Boolean&gt;
+Default: true
+Purpose: Windows in 386 enhanced mode normally searches the ROM
+        address space between F000 and 1 MB to find a special
+        instruction that is used as a system break point. If this
+        address space contains something other than permanently
+        available ROM, you should disable this setting so that
+        Windows will not use this space for a break point.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SystemVMPriority=&lt;number,number&gt;
+Default: 100,50
+Purpose: This setting contains two numbers. The first number specifies
+        the relative amount of processing time (based on the
+        MinTimeSlice setting) given to all Windows applications
+        running in the foreground relative to the time allocated to
+        all non-Windows applications running in the background. The
+        second number specifies the relative amount of processing
+        time given to all Windows applications running in the
+        background when a non-Windows application is running in the
+        foreground. The range of numbers that can be entered is 1
+        through 10000. The important value is the ratio of these
+        settings to the corresponding settings in the program
+        information files (PIFs) of the active non-Windows
+        applications.
+To change: Choose the 386 Enhanced icon from the Control Panel window.
+----------------------------------------------------------------------
+SysVMemsLimit=&lt;kilobytes&gt;
+Default: 0
+Purpose: Specifies how many kilobytes of expanded memory Windows
+        should be permitted to use. Leave this setting at zero to
+        prevent Windows from gaining access to any expanded memory.
+        Set it to -1 to give Windows all the available expanded
+        memory that it requests.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+SysVMemsLocked=&lt;Boolean&gt;
+Default: no
+Purpose: Indicates whether to swap Windows' expanded memory to the
+        hard disk. Locking EMS memory can improve Windows
+        performance, but it slows down the rest of the system.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+SysVMemsRequired=&lt;kilobytes&gt;
+Default: 0
+Purpose: Specifies how many kilobytes of expanded memory must be free
+        in order to start Windows. Leave this setting at zero if no
+        Windows application uses expanded memory.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+SysVMExclusive=&lt;Boolean&gt;
+Default: no
+Purpose: Indicates whether Windows always gets all of the computer's
+        processing time whenever a Windows application is active. If
+        this setting is enabled and a Windows application is in the
+        foreground, no non-Windows applications will run.
+To change: Choose the 386 Enhanced icon from the Control Panel window.
+----------------------------------------------------------------------
+SysVMKBDesired=&lt;number-or-kilobytes&gt;
+Default: -1
+Purpose: Limits the amount of conventional memory Windows can use for
+        itself. The default value indicates that Windows can use as
+        much of this space as it needs. You can try entering a
+        positive value if there is not enough memory to run Windows
+        in 386 enhanced mode.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SysVMKBRequired=&lt;number-or-kilobytes&gt;
+Default: 256
+Purpose: Specifies how much conventional memory (in KB) must be free
+        in order to start Windows. Setting this setting to -1 gives
+        Windows all available conventional memory.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SysVMV86Locked=&lt;Boolean&gt;
+Default: false
+Purpose: Enabling this setting will cause the virtual-mode memory
+        being used in the system VM to remain locked in memory rather
+        that being swappable out to disk. Because Windows handles
+        this process, there is no known reason to enable this
+        setting.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+SysVMxmsLimit=&lt;kilobytes&gt;
+Default: 0
+Purpose: Specifies the maximum amount of memory the XMS driver will
+        allocate to DOS device drivers and memory-resident software
+        in the system virtual machine. Set to -1 to give an
+        application all the available extended memory that it
+        requests.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+SysVMxmsLocked=&lt;Boolean&gt;
+Default: no
+Purpose: Indicates whether to swap the memory allocated by the XMS
+        driver to the hard disk. Locking the XMS memory can improve
+        an application's performance, but it slows down the rest of
+        the system.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+SysVMxmsRequired=&lt;kilobytes&gt;
+Default: 0
+Purpose: Specifies how many kilobytes of extended memory must be
+        reserved by the XMS driver in order to start Windows. Leave
+        this setting at zero if there are no XMS users in the system
+        virtual machine.
+To change: Choose the PIF Editor icon from the Accessories Group
+        window.
+----------------------------------------------------------------------
+TokenRingSearch=&lt;Boolean&gt;
+Default: true
+Purpose: Tells Windows whether to search for a token ring network
+        adapter on AT architecture machines. Disable this setting if
+        you are not using a token ring card and the search disables
+        another device.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+TranslateScans=&lt;Boolean&gt;
+Default: no
+Purpose: Indicates whether Windows will translate a keyboard's scan
+        codes to make them compatible with standard IBM scan codes.
+        This setting is necessary only for keyboards that generate
+        non-standard scan codes. This setting is used only for the
+        Switcher Screen and message boxes.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+TrapFloppyFIFO=&lt;Boolean&gt;
+Default: on for Micro Channel machines
+        off for other machines
+Purpose: Indicates whether to enable port trapping in the VFD. When
+        trapping is enabled, the FIFO is never enabled. FIFO can
+        interfere with DMA. Normally, you should disable this setting
+        if there is a port conflict (port is 03F3h).
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+UniqueDOSPSP=&lt;Boolean&gt;
+Default: false
+Purpose: If enabled, this setting tells Windows in 386 enhanced mode
+        to reserve some paragraphs of memory in each virtual machine
+        (VM) prior to starting an application in the VM. This will
+        usually ensure that each application has a unique PSP
+        (loading address). Some networks use the PSP to identify a
+        process to make sure that two processes do not try to modify
+        a file at the same time. On such networks, running with this
+        setting disabled may result in corrupted files. However,
+        enabling this setting will take memory away from each
+        application.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+UseInstFile=&lt;filename&gt;
+Default: none
+Purpose: Specifies a data file that the DOS Manager device (DOSMGR)
+        should use to determine whether data structures within DOS
+        need to be local. There are two other methods to do this:
+        internal tables within the device, and an INT 2fh call
+        documented in the OEM Adaptation Kit. Both methods are
+        preferred to using this setting; it is provided only for
+        compatibility with Windows/386 Version 2.x.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+VirtualHDIrq=&lt;Boolean&gt;
+Default: on
+Purpose: Allows Windows in 386 enhanced mode to terminate interrupts
+        from hard disk controller, bypassing the ROM routine that
+        handles these interrupts. Some hard drives might require that
+        this setting be disabled in order for interrupts to be
+        processed correctly. If this setting is disabled, the ROM
+        routine handles the interrupts, which slows the system's
+        performance.
+To change: Use Notepad to edit the SYSTEM.INI file.
+----------------------------------------------------------------------
+WindowUpdateTime=&lt;milliseconds&gt;
+Default: 50
+Purpose: Specifies the amount of time Windows takes between updates of
+        the display for a windowed non-Windows application.
+To change: Use Notepad to edit the SYSTEM.INI file.
+
+KBCategory: kbref kbdisplay
+KBSubcategory: win30
+
+Additional query words: Win30 3.00 3.00a \* NOUPD
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : :3.0,3.0a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

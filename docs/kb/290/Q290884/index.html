@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/290/Q290884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/290/Q290884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/290/Q290884/","publisher":null,"image":null,"headline":"Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q290884-howto-determine-which-application-is-running-in-com-or-mts">Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q290884</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbCOMPlus</span> <span class="n">kbMTS</span> <span class="n">kbDSupport</span> <span class="n">kbiis400</span> <span class="n">kbiis500</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">08</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">5.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">4.0</span> <span class="n">Option</span> <span class="n">Pack</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">For</span> <span class="n">different</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">but</span> <span class="n">mainly</span> <span class="n">for</span> <span class="n">troubleshooting</span> <span class="n">purposes</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">want</span> <span class="k">to</span>
+<span class="n">determine</span> <span class="n">which</span> <span class="n">application</span> <span class="n">is</span> <span class="n">running</span> <span class="n">within</span> <span class="n">Microsoft</span> <span class="n">COM</span><span class="p">+</span> <span class="n">under</span> <span class="n">Microsoft</span>
+<span class="n">Windows</span> <span class="m">2000</span> <span class="k">or</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">under</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span><span class="p">.</span> <span class="n">All</span> <span class="n">the</span>
+<span class="n">applications</span> <span class="n">are</span> <span class="n">running</span> <span class="k">in</span> <span class="n">processes</span> <span class="n">that</span> <span class="n">have</span> <span class="n">the</span> <span class="n">same</span> <span class="n">name</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span>
+<span class="n">Dllhost</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">Windows</span> <span class="m">2000</span> <span class="k">and</span> <span class="n">Mtx</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span><span class="p">).</span>
+
+<span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="p">(</span><span class="n">IIS</span><span class="p">)</span> <span class="k">uses</span> <span class="n">these</span> <span class="n">processes</span> <span class="n">extensively</span>
+<span class="n">when</span> <span class="n">it</span> <span class="n">is</span> <span class="n">running</span> <span class="n">Web</span> <span class="n">sites</span> <span class="k">or</span> <span class="n">applications</span> <span class="n">Out</span> <span class="k">Of</span> <span class="n">Process</span> <span class="p">(</span><span class="k">or</span> <span class="n">High</span> <span class="n">Isolation</span><span class="p">).</span>
+<span class="nf">System</span> <span class="n">administrators</span> <span class="k">and</span> <span class="n">developers</span> <span class="n">need</span> <span class="n">a</span> <span class="n">way</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">which</span> <span class="n">Web</span> <span class="n">site</span> <span class="k">or</span>
+<span class="k">package</span> <span class="n">is</span> <span class="n">running</span> <span class="n">inside</span> <span class="n">every</span> <span class="n">process</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Steps</span> <span class="k">to</span> <span class="n">Determine</span> <span class="n">Which</span> <span class="n">Application</span> <span class="n">Is</span> <span class="n">Running</span> <span class="n">Under</span> <span class="n">Every</span> <span class="n">Process</span>
+<span class="p">-------------------------------------------------------------------</span>
+
+<span class="k">In</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span><span class="p">:</span>
+
+<span class="n">The</span> <span class="n">applications</span> <span class="n">under</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="nf">run</span> <span class="n">under</span> <span class="n">the</span> <span class="n">process</span> <span class="n">called</span>
+<span class="n">Mtx</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span> <span class="n">On</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">that</span> <span class="n">has</span> <span class="n">IIS</span> <span class="n">installed</span><span class="p">,</span> <span class="n">one</span> <span class="n">Mtx</span><span class="p">.</span><span class="n">exe</span> <span class="n">process</span> <span class="n">is</span> <span class="n">running</span>
+<span class="n">the</span> <span class="s2">"system"</span> <span class="k">package</span><span class="p">,</span> <span class="k">and</span> <span class="n">one</span> <span class="n">Mtx</span><span class="p">.</span><span class="n">exe</span> <span class="n">process</span> <span class="n">is</span> <span class="n">running</span> <span class="n">for</span> <span class="n">every</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">that</span>
+<span class="n">is</span> <span class="n">running</span> <span class="n">Out</span> <span class="k">of</span> <span class="n">Process</span> <span class="k">or</span> <span class="n">for</span> <span class="n">every</span> <span class="k">package</span> <span class="n">that</span> <span class="n">you</span> <span class="n">created</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">determine</span> <span class="n">which</span> <span class="k">package</span> <span class="n">is</span> <span class="n">running</span> <span class="n">which</span> <span class="n">process</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Emcmd</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span>
+<span class="n">Tlist</span><span class="p">.</span><span class="n">exe</span> <span class="n">utilities</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">obtain</span> <span class="n">Emcmd</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span> <span class="n">Tlist</span><span class="p">.</span><span class="n">exe</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Windows</span>
+<span class="n">debugging</span> <span class="k">package</span><span class="p">,</span> <span class="n">which</span> <span class="n">is</span> <span class="n">available</span> <span class="k">from</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">ddk</span><span class="p">/</span><span class="n">debugging</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">Version</span> <span class="m">3.5</span> <span class="k">of</span> <span class="n">the</span> <span class="n">debuggers</span> <span class="n">has</span> <span class="n">Emcmd</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span> <span class="n">The</span> <span class="n">functionality</span> <span class="k">of</span> <span class="n">Emcmd</span><span class="p">.</span><span class="n">exe</span>
+<span class="n">is</span> <span class="n">rolled</span> <span class="n">into</span> <span class="n">Tlist</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">versions</span> <span class="m">4.0</span> <span class="k">and</span> <span class="n">later</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">above</span>
+<span class="n">utilities</span><span class="p">,</span> <span class="n">type</span> <span class="n">the</span> <span class="n">following</span> <span class="n">commands</span> <span class="n">at</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span>
+<span class="n">utilities</span><span class="p">:</span>
+
+  <span class="s2">"emcmd.exe /p"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span>
+
+<span class="p">-</span><span class="k">or</span><span class="p">-</span>
+
+  <span class="s2">"tlist.exe -k"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span>
+
+<span class="k">In</span> <span class="n">Windows</span> <span class="m">2000</span><span class="p">:</span>
+
+<span class="n">The</span> <span class="n">applications</span> <span class="n">under</span> <span class="n">Microsoft</span> <span class="n">COM</span><span class="p">+</span> <span class="nf">run</span> <span class="n">under</span> <span class="n">the</span> <span class="n">process</span> <span class="n">called</span> <span class="n">Dllhost</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span>
+<span class="n">On</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">that</span> <span class="n">has</span> <span class="n">IIS</span> <span class="n">installed</span><span class="p">,</span> <span class="n">one</span> <span class="n">Dllhost</span><span class="p">.</span><span class="n">exe</span> <span class="n">process</span> <span class="n">is</span> <span class="n">running</span> <span class="n">the</span>
+<span class="s2">"system"</span> <span class="k">package</span><span class="p">,</span> <span class="k">and</span> <span class="n">one</span> <span class="n">Dllhost</span><span class="p">.</span><span class="n">exe</span> <span class="n">process</span> <span class="n">is</span> <span class="n">running</span> <span class="n">for</span> <span class="n">every</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">that</span>
+<span class="n">is</span> <span class="n">running</span> <span class="n">Out</span> <span class="k">of</span> <span class="n">Process</span> <span class="k">or</span> <span class="n">for</span> <span class="n">every</span> <span class="k">package</span> <span class="n">that</span> <span class="n">you</span> <span class="n">created</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">determine</span> <span class="n">which</span> <span class="k">package</span> <span class="n">is</span> <span class="n">running</span> <span class="n">which</span> <span class="n">process</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span> <span class="m">2000</span><span class="p">-</span><span class="n">based</span>
+<span class="n">computer</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Start</span> <span class="n">menu</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Administrative</span> <span class="n">Tools</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span>
+  <span class="n">click</span> <span class="n">Component</span> <span class="n">Services</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Click</span> <span class="k">to</span> <span class="n">expand</span> <span class="n">the</span> <span class="n">Component</span> <span class="n">Services</span><span class="p">,</span> <span class="n">Computers</span><span class="p">,</span> <span class="k">and</span> <span class="n">My</span> <span class="n">Computer</span> <span class="n">nodes</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Click</span> <span class="n">COM</span><span class="p">+</span> <span class="n">Applications</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">View</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Status</span> <span class="n">View</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">The</span> <span class="n">right</span> <span class="n">pane</span> <span class="n">displays</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">every</span> <span class="k">package</span> <span class="n">that</span> <span class="n">is</span> <span class="n">running</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span>
+  <span class="n">also</span> <span class="n">see</span> <span class="n">the</span> <span class="n">Process</span> <span class="n">ID</span> <span class="k">of</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">Dllhost</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">which</span> <span class="n">the</span> <span class="k">package</span>
+  <span class="n">is</span> <span class="n">running</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">numbers</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">articles</span>
+<span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q281434</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Isolate</span> <span class="n">a</span> <span class="n">DLL</span> <span class="n">Into</span> <span class="n">a</span> <span class="n">Separate</span> <span class="n">Process</span> <span class="n">By</span> <span class="n">Using</span> <span class="n">Microsoft</span>
+  <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span>
+
+  <span class="n">Q281335</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Isolate</span> <span class="n">a</span> <span class="n">DLL</span> <span class="n">into</span> <span class="n">a</span> <span class="n">Separate</span> <span class="n">Process</span> <span class="n">By</span> <span class="n">Using</span> <span class="n">Component</span>
+  <span class="n">Services</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">IIS</span> <span class="n">COM</span><span class="p">+</span> <span class="n">MTS</span> <span class="n">emcmd</span> <span class="k">package</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbCOMPlus</span> <span class="n">kbMTS</span> <span class="n">kbDSupport</span> <span class="n">kbiis400</span> <span class="n">kbiis500</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbWinNTsearch</span> <span class="n">kbWinNT400search</span> <span class="n">kbiisSearch</span> <span class="n">kbiis500</span> <span class="n">kbiis400</span> <span class="n">kbWinNT400OptionPack</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

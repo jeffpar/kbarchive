@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131752: PRB: Form Variable Unknown After Running Form Inside App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131752: PRB: Form Variable Unknown After Running Form Inside App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131752/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131752/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131752/","publisher":null,"image":null,"headline":"Q131752: PRB: Form Variable Unknown After Running Form Inside App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131752-prb-form-variable-unknown-after-running-form-inside-app">Q131752: PRB: Form Variable Unknown After Running Form Inside App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131752
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a form and then run that form from the Command window, the
+variable that contains the instance of the form object is, in fact, in memory.
+If the function TYPE('myform') is placed in the Debug window, the value "O" for
+object is displayed. When running the same form in an application, however, the
+variable is not shown when memory is displayed and the function TYPE('myform')
+returns "U" for undefined.
+
+CAUSE
+=====
+
+When you use the DO FORM command, you create both an instance variable and a
+form object.
+
+When you use the DO FORM command from the Command window, the instance variable
+is by default public. That's why you always see it.
+
+When you use the DO FORM command in a program, the instance variable is private
+by default. When control returns to the program to the line following the DO
+FORM command, the variable is out of scope and the TYPE function returns "U."
+
+WORKAROUND
+==========
+
+Set the WindowType property of the form to modal to keep the object in scope, or
+create a public variable, as in this example:
+
+     PUBLIC myform
+     DO FORM myform
+
+Make the program (the .PRG file) the main file in the project, and rebuild the
+application.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+While the scope of the variable created within the application is limited to the
+application, the variable created when the form is run from the Command window
+is global within the Visual FoxPro development environment.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form using the Form Designer.
+
+2. Place the TYPE('myform') function in the Debug window.
+
+3. Run the form. The Debug window shows "O."
+
+4. Display memory, and verify that &lt;myform&gt; is listed as a variable.
+
+5. Add the form to a project.
+
+6. Build an application.
+
+7. Use the CLEAR ALL command to clear memory.
+
+8. Run the application. The Debug window displays "U." Display memory and
+  &lt;myform&gt; is not listed as a variable, although the form is active.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

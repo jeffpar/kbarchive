@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193626/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193626/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193626/","publisher":null,"image":null,"headline":"Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193626-howto-overriding-default-right-click-behavior-in-editor-window">Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193626
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you open an Editor window in Visual FoxPro 5.0 or later, right-clicking in
+the Editor window displays a context menu. You may choose to use the Editor
+window in a run-time application and you may want to override the default menu
+to either not display a menu or to display a custom menu.
+
+MORE INFORMATION
+================
+
+The editor is normally invoked with the MODIFY COMMAND &lt;filename&gt;, MODIFY
+FILE &lt;filename&gt;, or MODIFY MEMO &lt;memo fieldname&gt; command. In a
+run-time application, you are most likely to use MODIFY FILE or MODIFY MEMO.
+
+The way to override the default right-click behavior involves associating a
+command or procedure with an ON KEY LABEL RIGHTCLICK, and issuing a WAIT command
+to remove the right-click and cause the default menu not to display.
+
+Overriding the Default Menu with No Menu
+----------------------------------------
+
+The following code sample demonstrates how to make no menu appear with the
+right-click:
+
+     LOCAL lcFileName
+
+     * Name a temporary text file.
+     lcFileName = SYS(3)+'.txt'
+
+     * Store its contents to the clipboard.
+     _CLIPTEXT = "Line 1"+CHR(13)+"Line 2"+CHR(13)
+     KEYBOARD '{ctrl+v}{ctrl+w}'
+
+     * Paste the contents into the file, then save and close the file.
+     MODIFY FILE (lcFileName)
+
+     * Set the RIGHTMOUSE behavior to the WAIT command to remove right-click.
+     ON KEY LABEL RIGHTMOUSE WAIT ""
+     MODIFY FILE (lcFileName)
+     DELETE FILE (lcFileName)
+
+     * Reset the default RIGHTMOUSE behavior
+     ON KEY LABEL RIGHTMOUSE
+
+Overriding Default Menu With A Custom Menu
+------------------------------------------
+
+The following code sample demonstrates how to make a custom menu appear with the
+right-click. The custom menu contains the normal edit menu functionality of
+Undo, Redo, Copy, Paste, Cut, and Select All.
+
+     LOCAL lcFileName
+
+     * Name a temporary text file.
+     lcFileName = SYS(3)+'.txt'
+
+     * Store its contents to the clipboard.
+     _CLIPTEXT = "Line 1"+CHR(13)+"Line 2"+CHR(13)
+     KEYB '{ctrl+v}{ctrl+w}'
+
+     * Paste the contents into the file, then save and close it.
+     MODIFY FILE (lcFileName)
+
+     * Set the RIGHTMOUSE behavior.
+     ON KEY LABEL RIGHTMOUSE MenuFunction()
+     MODIFY FILE (lcFileName)
+     DELETE FILE (lcFileName)
+
+     * Reset the default RIGHTMOUSE behavior.
+     ON KEY LABEL RIGHTMOUSE
+
+     FUNCTION MenuFunction()
+        WAIT ""  &amp;&amp; This removes the right-click.
+        IF POPUP('shortcut')
+           * Let's make sure we don't display the menu twice.
+           DEACTIVATE POPUP shortcut
+        ELSE
+           DEFINE POPUP shortcut shortcut RELATIVE
+           DEFINE BAR _MED_UNDO OF shortcut PROMPT "\&lt;Undo" ;
+              MESSAGE "Undoes the last command or action"
+           DEFINE BAR _MED_REDO OF shortcut PROMPT "Re\&lt;do" ;
+              MESSAGE "Repeats the last command or action"
+           DEFINE BAR 3 OF shortcut PROMPT "\-"
+           DEFINE BAR _MED_COPY OF shortcut PROMPT "\&lt;Copy" ;
+              MESSAGE "Copies the selection onto the Clipboard"
+           DEFINE BAR _MED_PASTE OF shortcut PROMPT "\&lt;Paste" ;
+              MESSAGE "Pastes the contents of the Clipboard"
+           DEFINE BAR _MED_CUT OF shortcut PROMPT "Cu\&lt;t" ;
+              MESSAGE "Removes the selection and places it on the Clipboard"
+           DEFINE BAR _MED_SLCTA OF shortcut PROMPT "Se\&lt;lect All" ;
+              MESSAGE "Selects all text or items in the current window"
+        ENDIF
+        * Activate it where we clicked.
+        ACTIVATE POPUP shortcut AT MROW(),MCOL()
+        * Deactivate it after we click outside of the menu.
+        DEACTIVATE POPUP shortcut
+        RETURN
+     ENDFUNC
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

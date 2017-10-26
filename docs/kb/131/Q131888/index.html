@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131888: PRB: Transaction Affects When Rules or Triggers Fire | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131888: PRB: Transaction Affects When Rules or Triggers Fire" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131888/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131888/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131888/","publisher":null,"image":null,"headline":"Q131888: PRB: Transaction Affects When Rules or Triggers Fire","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131888-prb-transaction-affects-when-rules-or-triggers-fire">Q131888: PRB: Transaction Affects When Rules or Triggers Fire</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131888
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Rules and triggers defined for a table may not fire at the expected time if a
+combination of buffering and transaction processing is used.
+
+CAUSE
+=====
+
+This is by design. Rules and triggers fire when an attempt is made to write the
+data in the buffer to the disk file.
+
+RESOLUTION
+==========
+
+Please see the sample code listed in this article.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Before running the following samples, open the Tastrade database located in the
+\Vfp\samples\mainsamp\data directory, and set the default to this directory.
+
+All of the samples use the Customer table from Tastrade, which has a validation
+rule on the cust_id field. If preferred, you can use the Orders table instead;
+it has a record validation rule.
+
+Before running any sample, issue a SET MULTILOCKS ON command in the Command
+window. Each sample begins with a TABLEREVERT() command to eliminate any records
+left in the data buffer from previous examples. This may cause an error if
+buffering was not in effect before running the example.
+
+The error displayed when a field fails a validation rule is 1582.
+
+Code Sample One
+---------------
+
+The validation rule on cust_id never fires when you run this code:
+
+     =TABLEREVERT()
+     USE customer
+     =CURSORSETPROP("Buffering",3)
+     APPEND BLANK
+     BEGIN TRANSACTION
+     ROLLBACK
+     =TABLEREVERT()
+
+The rule never fires because the ROLLBACK and TABLEREVERT commands clear the
+buffer. Because the blank record is never written to the disk file, the
+validation rule on cust_id never fires.
+
+Code Sample Two
+---------------
+
+The validation rule fires on the second APPEND BLANK command when you run this
+code:
+
+     =TABLEREVERT()
+     USE customer
+     =CURSORSETPROP("Buffering",3)
+     APPEND BLANK
+     BEGIN TRANSACTION
+     ROLLBACK
+     APPEND BLANK
+
+This behavior occurs because, even though the ROLLBACK command discarded the
+current transaction in progress, the record still existed in the buffer.
+Optimistic row buffering is enabled, and Visual FoxPro automatically attempts to
+write the first appended record to the table when the record pointer is moved by
+the second APPEND BLANK command. To prevent this behavior, a TABLEREVERT()
+should be issued immediately before or after a ROLLBACK command.
+
+Code Sample Three
+-----------------
+
+The validation rule fires once, when the END TRANSACTION command is issued, when
+you run this code:
+
+     =TABLEREVERT()
+     USE customer
+     =CURSORSETPROP("Buffering",3)
+     APPEND BLANK
+     BEGIN TRANSACTION
+     END TRANSACTION
+
+The transaction doesn't commit to the table, and the record still exists in the
+buffer. To prevent this behavior, test for successful execution of a TABLEUPDATE
+command prior to issuing the END TRANSACTION command.
+
+Code Sample Four
+----------------
+
+The validation rule fires twice when you run this code:
+
+     =TABLEREVERT()
+     USE customer
+     =CURSORSETPROP("Buffering",3)
+     APPEND BLANK
+     BEGIN TRANSACTION
+     =TABLEUPDATE()
+     END TRANSACTION
+
+An error is received only after the END TRANSACTION command is issued. The
+validation rule fires once for the TABLEUPDATE command. The TABLEUPDATE command
+fails, but there is no visible indication that the field failed the validation
+rule. The return value from the TABLEUPDATE command was not trapped, and the END
+TRANSACTION command attempts to write invalid data to the table.
+
+The END TRANSACTION command fires the validation rule a second time, which
+results in the error 1582.
+
+Code Sample Five
+----------------
+
+The field validation rule causes the TABLEUPDATE command to fail when you run
+this code:
+
+     =TABLEREVERT()
+     USE customer
+     =CURSORSETPROP("Buffering",3)
+     APPEND BLANK
+     BEGIN TRANSACTION
+     llDidUpdate = TABLEUPDATE()
+     IF llDidUpdate
+        END TRANSACTION
+     ELSE
+        lnRecordsDiscarded=TABLEREVERT()
+        WAIT WINDOW STR(lnRecordsDiscarded) + " Records Discarded"
+        ROLLBACK
+     ENDIF
+
+The memory variable (llDidUpdate) contains false (.F.), which indicates that the
+TABLEUPDATE command failed. The validation error never appears on the screen,
+and a message indicating that one record was discarded appears.
+
+This approach demonstrates the recommended approach to combining buffering and
+transaction processing. The return value from the TABLEUPDATE command should be
+tested, and the END TRANSACTION command issued only if the TABLEUPDATE command
+was successful.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

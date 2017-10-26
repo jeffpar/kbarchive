@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191605: INFO: Incorporating ScriptIt with Unattended Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191605: INFO: Incorporating ScriptIt with Unattended Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191605/","publisher":null,"image":null,"headline":"Q191605: INFO: Incorporating ScriptIt with Unattended Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191605-info-incorporating-scriptit-with-unattended-installation">Q191605: INFO: Incorporating ScriptIt with Unattended Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191605
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbOPK kbSBK
+Last Modified: 05-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The unattended installation process includes several techniques for added
+customization, such as sysdiff and runonce. However, there are limitations with
+these options; for example, installing and configuring a sound card or
+installing a service.
+
+ScriptIt is a freely available, unsupported utility from Microsoft, and is
+approximately 489 KB in size. ScriptIt extends functionally to the Unattend
+process. ScriptIt is a tool for automating interactive software installations
+and system configuration tasks. ScriptIt can be used to start a process, monitor
+the window titles of active processes, and, when appropriate, send a set of
+keystrokes to the correct window. The keystrokes can be predetermined or they
+can be determined at run time. ScriptIt can be configured to differentiate (and
+respond appropriately) between multiple windows that have the same title bar but
+different instructional text.
+
+Note that ScriptIt is not a traditional scripting language and does not offer
+many of the traditional programming language constructs. The ScriptIt command
+must be started by a user with sufficient security privileges to perform the
+designated installation or configuration task.
+
+IMPORTANT: Microsoft does not provide technical support for scripts prepared with
+the ScriptIt tool, but provides this article as information only. Consequently,
+it is important that you test your scripts thoroughly before using them in a
+production environment. Use this utility and information at your own risk.
+
+ScriptIt is a executable that runs in conjunction with a script file. For
+example, the following ScriptIt .ini file launches the Have Disk window under
+Display Properties (further keystrokes can be added to install a specific
+driver, set the resolution, and test the resolution).
+
+     [SCRIPT]
+     run="control.exe desk.cpl"
+     Display Properties=+{TAB}
+     Display Properties={RIGHT 4}
+     Display Properties=!T
+     Display Type=c
+     Change Display=h
+
+For additional information about parameters for the Unattend.txt file, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q155197 Unattended Setup Parameters for Unattend.txt File
+
+For additional information about runonce and other techniques to install
+applications using unattend installs, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q158447 How to Run a Program Only Once After Unattended Setup of WinNT
+
+Runonce can be modified to call ScriptIt and ScriptIt .ini files by performing
+the following steps:
+
+1. Create a $OEM$ directory in the i386 share.
+
+2. Within this directory create a Scriptit directory that resides in a C
+  directory (that is, $OEM$\C\Scriptit).
+
+3. Copy Scriptit.exe and any ScriptIt scripts to the $OEM$\C\Scriptit directory.
+  The contents of the $OEM$\C directory will be copied to the C directory of
+  the target workstation.
+
+4. Create a Batch.cmd file that contains the location of the ScriptIt executable
+  and the .ini file or files:
+
+        c:\scriptit\scriptit.exe c:\scriptit\script.ini
+        %SystemRoot%\System32\rundll32.exe setupapi,InstallHinfSection
+        DefaultInstall 132 %SystemRoot%\System32\cleanup.inf
+
+  NOTE: The last two lines in the above command should be all on one line; the
+  line is wrapped for readability (ensure that word wrap in Notepad has been
+  disabled).
+
+MORE INFORMATION
+================
+
+You can download the ScriptIt.exe utility from the following Microsoft Web
+site:
+
+  http://www.microsoft.com/technet/winnt/
+  (http://www.microsoft.com/technet/winnt/)
+
+For additional information regarding Scriptit, visit the following Microsoft Web
+site:
+
+  http://www.microsoft.com/NTServer/nts/deployment/custguide/scriptit3.asp
+  (http://www.microsoft.com/NTServer/nts/deployment/custguide/scriptit3.asp)
+
+Additional query words: sysdiff runonce unattended scriptit deployment Setup
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262392/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262392/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262392/","publisher":null,"image":null,"headline":"Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262392-sms-network-discovery-returns-fqdns-instead-of-netbios-names">Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262392
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an environment with a Microsoft Windows 2000-based Dynamic Host Configuration
+Protocol (DHCP) server, Network Discovery may return fully qualified domain
+names (FQDNs) instead of NetBIOS names for the resources it discovers through
+DHCP. This could cause duplication of resources in the Systems Management Server
+(SMS) Administrator console.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time    Version        Size   File name   Platform
+  ------------------------------------------------------------
+  05/12/00  3:42pm  2.0.1380.1161  112KB  Ad_adm.dll  Intel
+  05/12/00  3:42pm  2.0.1380.1161  190KB  Ad_adm.dll  Alpha
+
+NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+the above files may also contain additional files.
+
+
+
+NOTE: Before you apply this hotfix, you must delete all resources that are
+reported as FQDNs. To do this, create a collection that is based on a query that
+lists all computers with FQDN NetBIOS names. For example, create a query similar
+to:
+
+  select NetbiosName from SMS_R_System where NetbiosName like
+  "%&lt;domain.com&gt;%"
+
+If you use this sample query, replace &lt;domain.com&gt; with your actual domain
+name.
+
+After you build the collection, use the Delete Special command to delete all of
+the resources.
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+How to Install the Hotfix
+-------------------------
+
+Using the Hotfix Installer:
+
+NOTE: This method is only for Intel-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Q262392.exe is a
+  Microsoft Windows Installer file that updates specific files on your site
+  server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, quit the SMS Administrator console.
+
+4. Run Q262392.exe and follow the directions in the wizard.
+
+Manual Installation:
+
+1. Log on to your site server using an account with administrative privileges.
+
+2. Quit the SMS Administrator console and stop all SMS services, including the
+  Windows Management service.
+
+3. Replace the Ad_adm.dll file in the
+  &lt;Sms_root_folder&gt;\Bin\&lt;Platform&gt; folder with the version you
+  obtained from the hotfix.
+
+4. Restart all SMS services.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

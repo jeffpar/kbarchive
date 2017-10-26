@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113277: BUG: Popup Not Cleared in FoxPro for Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113277: BUG: Popup Not Cleared in FoxPro for Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113277/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113277/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113277/","publisher":null,"image":null,"headline":"Q113277: BUG: Popup Not Cleared in FoxPro for Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113277-bug-popup-not-cleared-in-foxpro-for-windows">Q113277: BUG: Popup Not Cleared in FoxPro for Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113277
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp500aBUG kbvfp260bug kbvfp250bug kbvfp250aBUG kbvfp250bBUGkbbuglist
+Last Modified: 09-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro 2.6 for MS-DOS and in dBASE, the CLEAR command will clear (hide) a
+popup. However, in FoxPro for Windows, the CLEAR command does not clear the
+popup.
+
+RESOLUTION
+==========
+
+See "Workaround" in the "More Information" section below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start FoxPro for Windows.
+
+2. Type the following in the Command window and press ENTER:
+
+        MODIFY COMMAND test
+
+3. Enter the following code in the TEST.PRG window:
+
+        SET COMPATIBLE TO DB4
+        DEFINE POPUP x FROM 10,10
+        DEFINE BAR 1 OF x PROMPT "Hello"
+        DEFINE BAR 2 OF x PROMPT "Bye"
+        ON SELECTION POPUP x DO myx
+        ACTIVATE POPUP x
+        RELEASE POPUP x
+
+        PROCEDURE myx
+        CLEAR
+        *HIDE POPUP x   &amp;&amp; remove asterisk from this line to correct the
+        *problem
+        WAIT WINDOW "Cleared"
+
+4. Press CTRL+W to save TEST.PRG.
+
+5. In the Command window type:
+
+        DO TEST.PRG
+
+Note that the POPUP is not cleared when you press the ENTER key or the SPACEBAR.
+
+WORKAROUND
+==========
+
+Remove the asterisk from the line that reads "*HIDE POPUP X". The line should
+now read as follows:
+
+  HIDE POPUP x
+
+Additional query words: pop-up disappear kbFP250 kbFP260 kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp500aBUG kbvfp260bug kbvfp250bug kbvfp250aBUG kbvfp250bBUG kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126839: HOWTO: Create Special Effects in a Grid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126839: HOWTO: Create Special Effects in a Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126839/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126839/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126839/","publisher":null,"image":null,"headline":"Q126839: HOWTO: Create Special Effects in a Grid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126839-howto-create-special-effects-in-a-grid">Q126839: HOWTO: Create Special Effects in a Grid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126839
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Developers often need to dynamically control attributes of a Grid. A common
+example of this is a ledger, where the odd rows are presented in one color and
+the even rows in another color. Visual FoxPro uses the properties that have the
+prefix 'Dynamic' to achieve this.
+
+MORE INFORMATION
+================
+
+The DynamicBackColor, DynamicForeColor, DynamicFontBold, DynamicFontItalic,
+DynamicFontStrikeThru, DynamicFontUnderline, DynamicFontName, and
+DynamicFontSize properties dynamically specify an attribute of a Column object
+within a grid. As their Dynamic prefix implies, these properties are reevaluated
+each time the Grid control is refreshed, and do not need to be reset manually.
+
+If the properties listed above apply to all of the columns across a row, the
+whole row will be affected. Use the SETALL method to modify one property of all
+of the columns of a row. On the other hand, part of a row will have a different
+display if the Dynamic property only applies to a limited number of columns. The
+two examples that follow illustrate the use of the DynamicBackColor property
+applied to all of the columns and the DynamicFontUnderline property applied to
+one column in the grid.
+
+Staggered List Example
+----------------------
+
+This example displays even rows in red, and odd rows in blue. It uses the
+DynamicBackColor property and the SETALL method to modify the colors of the
+columns.
+
+1. Create a form, and then add SAMPLES\DATA\CUSTOMER to the DataEnvironment
+  (DE).
+
+2. Drag the Customer table by its title bar from the DE to the Form. A grid
+  should automatically be added to the form, and its RecordSource should be set
+  to 'customer'.
+
+3. Place the following code in the Init event-handler of the Grid or the Init of
+  the Form.
+
+        cexpr = "IIF(MOD(RECNO('customer'),2) = 0, RGB(255,0,0), ;
+           RGB(0,255,0))"
+
+        THIS.SetAll('DynamicBackColor', cExpr, 'Column')
+
+  NOTE: This step only works if the records are in natural order. It doesn't
+  work if the table is indexed.
+
+Modifying a Specific Cell Example
+---------------------------------
+
+This example illustrates how to modify the font of a specific cell using the
+DynamicFontUnderline property.
+
+1. Repeat Step 1 and Step 2 from the previous example.
+
+2. In the Property Sheet, select Grid, and set the value of ColumnCount to 3.
+
+3. In the Property Sheet select Column1, and then place the following code in
+  the DynamicFontUnderline property.
+
+        IIF(cust_id="ANTON",.T.,.F.)
+
+When this form is run, the CUST_ID fields with a value of "ANTON" will be
+underlined.
+
+Note that the DynamicColor property takes a character value, whereas the
+DynamicFontUnderline property accepts a logical value.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/267/Q267987/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/267/Q267987/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/267/Q267987/","publisher":null,"image":null,"headline":"Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q267987-xadm-directory-service-stops-and-cannot-restart-with-event-ids">Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q267987
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Exchange Server 5.0, the directory service may stop
+responding, with the following events recorded in the application log of Event
+Viewer:
+
+  Event ID: 32
+  Source: EDB
+  MSExchangeDS 145
+  Unable to create the log. Error -1032.
+
+  Event ID: 1171
+  Source: MSExchangeDS
+  Description: Exception E0010004 has occurred with parameters -510 and Zero.
+  Internal ID of 2080112.
+
+When you check the size of the Directory database (Dir.edb), you may find that
+the size of the file is greatly reduced.
+
+When you attempt to restart the directory service by restarting the Exchange
+Server computer, the directory service may not start and the following event
+appears in the application log of Event Viewer:
+
+  Event ID: 1002
+  Source: MSExchangeDS
+  Description: The microsoft exchange server database (EDB) could not be
+  initialized and returned error -1022. The directory cannot continue.
+
+CAUSE
+=====
+
+This behavior can occur when the Dir.edb file structure is damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, restore the Dir.edb file from a tape backup.
+
+If you do not have a valid backup copy of the Dir.edb file, you can restore the
+file through full disaster recovery of Exchange Server.
+
+MORE INFORMATION
+================
+
+For additional information on restoring the Dir.edb, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q183266 XADM: How To Restore Offline Backup of Dir Svc and Info Store
+
+  Q184186 XADM: Recovering Exchange from a Corrupted Directory
+
+For more complete information about full disaster recovery of Exchange Server,
+see the "Disaster and Recovery Planning" white paper at:
+
+http://www.microsoft.com/exchange/DeployAdmin/DeployAdmin.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : Directory DirectoryServices
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

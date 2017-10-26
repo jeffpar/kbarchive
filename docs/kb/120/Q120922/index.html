@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120922/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120922/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120922/","publisher":null,"image":null,"headline":"Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120922-visual-c-vers-20-readmewri-part-6-internationalization">Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120922
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbreadme kbGenInfo kbVC kbArtTypeINF
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 2.0, on platform(s):
+   - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is based on the Visual C++ version 2.0 README.WRI file:
+
+SDK Requirements for National Language Support
+----------------------------------------------
+
+Visual C++ version 2.0 correctly handles all multibyte-character set (MBCS)
+issues, including use of Input Method Editors (IME). However, to enable MBCS
+behavior for the development environment and build tools, you must develop on
+the appropriate MBCS platform, namely, with Windows NT "Daytona" for Japan,
+Korea, Taiwan, or the People's Republic of China. The Windows NT "Daytona" SDK
+and the Open Database Connectivity (ODBC) SDK included with Visual C++ version
+2.0 do not include MBCS-enabled libraries or header files. To use the
+MBCS-enabled versions of these Windows APIs, you must use the Windows NT SDK and
+ODBC libraries and header files for the appropriate country/region.
+
+Help Files With Japanese DBCS Characters
+----------------------------------------
+
+In order to build help files with Visual C++ version 2.0 that contain Japanese
+double-byte (DBCS) characters, you must replace the installed versions of the
+help file components with those found on the CD-ROM disk in the
+\MSVC20\BIN\HELP.JP directory. Replace the following files:
+
+HC30.EXE
+HC31.EXE
+HC31.ERR
+HC.BAT
+
+NOTE: These help compilers, while DBCS-enabled, do not work on .RTF files created
+with Microsoft Word version 6.0.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          : kbreadme kbGenInfo kbVC kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : winnt:2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

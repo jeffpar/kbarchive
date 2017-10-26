@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247319/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247319/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247319/","publisher":null,"image":null,"headline":"Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247319-prb-public-variables-not-released-from-inprocess-servers-in-asp">Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247319
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbInternet kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Public variables declared in an in-process Microsoft Visual FoxPro OLE
+Automation Server, launched from an ASP page, are not released when the OLE
+Automation Server is released.
+
+CAUSE
+=====
+
+PUBLIC variables declared within an in-process OLE Automation Server are public
+to the thread and any object on the thread. PUBLIC variables are not released
+until the thread has been uninitialized and the client has unloaded the
+in-process server. Setting the instance of the in-process server object to
+"nothing" does not unload the server.
+
+RESOLUTION
+==========
+
+Set the scope of variables used within in-process OLE Automation Servers, used
+with Active Server Pages, to PRIVATE rather than PUBLIC.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project named MTHREAD.
+
+2. Add a new program file to the project, using the following code:
+
+  DEFINE CLASS mthread AS CUSTOM OLEPUBLIC
+
+     FUNCTION PublicHit
+        LPARAMETER lnSecs
+        LOCAL x
+        lnSecs=IIF(EMPTY(lnSecs),0,lnSecs)
+
+        IF lnSecs &gt; 60
+           lnSecs = 61
+        ENDIF
+
+        IF VARTYPE(gnPubValue) = "N"
+           gnPubValue = gnPubValue + 1
+        ELSE
+           PUBLIC gnPubValue
+           gnPubValue = 1
+        ENDIF
+
+        IF VARTYPE(gnPrivValue) = "N"
+           gnPrivValue = gnPrivValue + 1
+        ELSE
+           PRIVATE gnPrivValue
+           gnPrivValue = 1
+        ENDIF
+
+        DECLARE Sleep IN WIN32API INTEGER
+        FOR x=1 TO lnSecs
+           FOR x=1 TO lnSecs
+              Sleep(1000)
+           ENDFOR
+        ENDFOR
+
+        DECLARE INTEGER GetCurrentThreadId IN WIN32API
+        lcHTML = [&lt;p&gt;&lt;table style="background:black;color:white"&gt;] + CHR(13) + ;
+           [&lt;tr&gt;&lt;td style="font:normal normal 14pt Verdana"&gt;] + ;
+           "The request completed in " + TRANS(lnSecs) + " seconds." + [&lt;/td&gt;&lt;/tr&gt;] +CHR(13) +;
+           [&lt;table&gt;] + CHR(13) + ;
+           "The current Thread ID is: " + TRANS(GetCurrentThreadId()) + "&lt;p&gt;"+CHR(13) + ;
+           "The Public Value  (gnPubValue) : = " + TRANS(gnPubValue) + "&lt;br&gt;"+ CHR(13) + ;
+           "The Private Value (gnPrivValue): = " + TRANS(gnPrivValue) + "&lt;br&gt;"
+
+        RETURN lcHTML
+     ENDFUNC
+  ENDDEFINE
+
+3. Click the Build button on the Project Manager, and select either a
+  Single-threaded COM server (dll) or a Multi-threaded COM server (dll).
+
+4. Install the COM Server and run-time files on a computer running Internet
+  Information Server.
+
+5. Register the COM Server.
+
+6. Create an Active Server Page named TEST.ASP in the IIS WWWROOT directory
+  using the following code, and make certain that the directory has execute
+  privileges:
+
+  &lt;%@ Language=VBScript %&gt;
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0"&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+
+  &lt;%
+  Set oVFPApp = Server.CreateObject("mthread.mthread")
+
+  Response.Write oVFPApp.PublicHit
+
+  set oVFPApp = nothing
+
+  %&gt;	
+
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+7. Launch your Web Browser and navigate to the Active Server Page that was
+  created in step 4. Refresh the page several times, and note that the value of
+  gnPubValue is incremented each time the page is refreshed.
+
+8. Close your Web Browser.
+
+9. Launch your Web Browser and navigate to the Active Server Page that was
+  created in step 4. Note that the value of gnPubValue is not 1.
+
+REFERENCES
+==========
+
+  Q156547 HOWTO: Manually Register a Custom OLE Server
+
+  Q156014 HOWTO: Set Up OLE Automation in Visual FoxPro
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbInternet kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

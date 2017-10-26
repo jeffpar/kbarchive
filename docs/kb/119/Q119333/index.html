@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119333/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119333/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119333/","publisher":null,"image":null,"headline":"Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119333-prb-cwinapp-based-dll-gets-assertion-failure-on-win32s">Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119333
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbDLL kbMFC kbVC100 kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ 32-bit Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There is no problem starting a second instance of a Win32-based application that
+uses a CWinApp-based DLL on Windows NT. However, under Win32s, the same
+Win32-based application generates an assertion failure in the file APPCORE.CPP,
+line 193.
+
+CAUSE
+=====
+
+The inability to run two applications that use the same CWinApp-based DLL is
+because of differences in the way Windows NT and Win32s manage memory and the
+fact that the C run-time initializes global data and objects whenever a process
+loads a DLL.
+
+Under Windows NT, each application gets its own copy of the DLL data, including
+the C run-time and MFC data. Under Win32s, all applications that use the DLL
+share the DLL data. When another process loads the DLL, the global objects are
+reinitialized. The assertion is generated because another copy of the CWinApp
+data already exists.
+
+RESOLUTION
+==========
+
+Replace the DLL entry point to work around the limitation. The sample code to do
+this is shown in the "MORE INFORMATION" section. The new entry point checks to
+see whether Win32s is loaded. If the application is running under Win32s, the
+entry point makes sure that the C run-time entry point is called only for the
+first process attach and the last process detach. This problem has been fixed in
+Microsoft Visual C++ 32-bit edition, versions 2.0 and 2.1.
+
+MORE INFORMATION
+================
+
+To use this code as your new entry point, you need to change the entry point of
+your DLL to "NewDLLEntry()".
+
+Sample Code
+-----------
+
+     BOOL WINAPI _DllMainCRTStartup( HINSTANCE, DWORD, LPVOID );
+
+     extern "C" BOOL WINAPI
+     NewDLLEntry( HINSTANCE hInstDLL, DWORD dwReason, LPVOID lpReserved )
+     {
+        BOOL bRet = TRUE;
+        static DWORD dwVer = 0;
+        static int nAttached = 0;
+
+        if( !dwVer )
+           dwVer = GetVersion();
+
+        // Check for Win32s and version &lt; 4.0 (Windows "Chicago").
+        if( ((HIWORD(dwVer) &amp; 0x8000) != 0x8000) || ((dwVer &amp; 0xFF) &gt;= '4') )
+           bRet = _DllMainCRTStartup( hInstDLL, dwReason, lpReserved );
+        else
+        {
+           switch (dwReason)
+           {
+           case DLL_PROCESS_ATTACH:
+              if( nAttached++ == 0 )  // Call CRT entry if first process.
+                 bRet = _DllMainCRTStartup( hInstDLL, dwReason, lpReserved );
+              break;
+
+           case DLL_PROCESS_DETACH:
+              if( --nAttached == 0 )  // Call CRT entry if last process.
+                 bRet = _DllMainCRTStartup( hInstDLL, dwReason, lpReserved );
+              break;
+           }
+        }
+        return bRet;
+     }
+
+You can still run into problems with memory allocation even after you have
+replaced the entry point. Whichever process allocates the memory owns it;
+therefore, when the process goes away, the object is destroyed and no other
+process can use the object. This is a problem for any object shared by multiple
+processes.
+
+Additional query words: 1.00 2.00 2.10 noupdate kbNoUpdate
+
+======================================================================
+Keywords          : kbDLL kbMFC kbVC100 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

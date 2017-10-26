@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142973/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142973/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142973/","publisher":null,"image":null,"headline":"Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142973-prb-distribution-setup-fails-after-visual-foxpro-30b-install">Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142973
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setup Wizard to create a set of distribution disks for your
+application, you may receive the following error:
+
+  Setup Parse Error in Initialization Pass
+  Object Id 37: CopyFile-Like Object: Bad INF Key data value
+
+This error repeats for Object Ids: 39, 40, 52, and 55 and the setup program then
+fails.
+
+CAUSE
+=====
+
+The \Vfp\Distrib directory contains files from an older version of Visual
+FoxPro.
+
+RESOLUTION
+==========
+
+When you install a newer version of Visual FoxPro over an existing version of
+Visual FoxPro, delete the files in the \Distrib directory. As soon as you run
+the Setup Wizard again, the files that Visual FoxPro needs in the \Distrib
+directory are copied into the directory.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This situation occurs when the following circumstances are met:
+
+- A newer version of Visual FoxPro for Windows is installed over an existing
+  installation of an older version of Visual FoxPro for Windows.
+
+- The Setup Wizard was used to create distribution disks while the older
+  version of Visual FoxPro was installed.
+
+- The older version of Visual FoxPro was not removed or the \Distrib directory
+  under Visual FoxPro was not deleted prior to installing the newer version of
+  Visual FoxPro.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Build an .exe in Visual FoxPro for Windows, version 3.0.
+
+2. Run the Setup Wizard, and create a set of distribution disks of the .exe
+  file.
+
+3. Install Visual FoxPro version 3.0b over version 3.0 without deleting the
+  Visual FoxPro directory or removing Visual FoxPro through the Setup program.
+
+4. Rebuild your .exe in Visual FoxPro version 3.0b.
+
+5. Run the Setup Wizard again, and build a new set of distribution disks off the
+  .exe file.
+
+6. Using the distribution disks, run Setup.exe. Setup fails, and the error
+  appears.
+
+NOTE: The Wzsetup.ini file is created when the Setup Wizard is run and retains
+the user's preferences for future uses of the Setup Wizard. Two copies are
+created while running the Setup Wizard -- one in Visual FoxPro's main directory
+and another in the intended distributed application directory. If you intend to
+install a newer version of Visual FoxPro over an older version without first
+removing the existing installation, consider deleting the two copies of
+Wzsetup.ini as new ones are created the first time you run the Setup Wizard
+again. This will ensure that you have a copy of Wzsetup.ini that refers only to
+the new version of the Setup Wizard.
+
+Additional query words: 3.00 VFoxWin parse
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b
+Version           : WINDOWS:3.0b
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

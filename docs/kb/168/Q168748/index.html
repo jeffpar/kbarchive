@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168748/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168748/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168748/","publisher":null,"image":null,"headline":"Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168748-java-applets-cause-ie-302-to-stop-responding-w-sp3">Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168748
+Product(s): Microsoft Windows NT
+Version(s): 3.02,4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Internet Explorer version 3.02 for Windows NT 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Internet Explorer version 3.02 may hang when connecting to a Web link that
+contains a Java application after you have installed Windows NT version 4.0
+Service Pack 3. The application will stop responding only if the Display
+Properties Color Palette is set to True Color.
+
+CAUSE
+=====
+
+In Windows NT version 4.0 Service Pack 3 the GetDIBits API does not fill the bit
+fields when a BI_RGB (uncompressed) DIB is returned on a True Color (32 bpp)
+display. This GDI change was made because the bit fields are not required in
+this case. As a side effect, this change may cause a regression in applications
+that expect a valid RGB mask on a True Color display.
+
+The Java virtual machine included with Internet Explorer 3.02 calls GetDIBits
+when initializing the display palette. The Java virtual machine expects a valid,
+signed RGB mask value larger than 0x80h and, if a value less than 0x80h is
+received, it doubles the mask value in a tight loop until it is larger than
+0x80h. Because Service Pack 3 GetDIBits do not fill the bit fields when a BI_RGB
+is returned, applications that evaluate the RGB mask receive an unlikely result
+that can be negative (for example, 0xffffffe0h.) When the Java virtual machine
+evaluates the RGB mask and receives a negative value, it loops forever and
+causes Internet Explorer to stop responding.
+
+It is important to note that the Java virtual machine should be treating the RGB
+Mask as an unsigned integer. There are some conditions where an ATI video card
+returns a valid RGB Mask value of 0xff000000h causing the Java virtual machine
+to loop forever because it is not treating the mask as an unsigned integer. A
+separate fix for the Java virtual machine issue with ATI video cards in True
+Color will be available in Internet Explorer 4.0. The Java code is licensed from
+Sun Microsystems, Inc.
+
+RESOLUTION
+==========
+
+To work around this problem, do not use the True Color palette in Display
+Properties.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+Win32k.sys was modified to return a valid RGB color mask on True Color display
+systems.
+
+Java-fix has been superseded by Getadmin-fix. For your convenience, the English
+version of this post-SP3 hotfix has been posted to the following Internet
+location. However, Microsoft recommends that you install Windows NT 4.0 Service
+Pack 4 to correct this problem.
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/getadmin-fix
+
+You can find the original hotfix at the following Microsoft ftp site:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/archive/java-fix
+
+WARNING: If you install the original (archived) version of this hotfix AFTER you
+apply the later version, your system may become unusable. Microsoft does not
+recommend you install the original hotfix after applying the later version.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+
+Additional query words: 4.00 ie 3.02 prodnt
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbIEsearch kbZNotKeyword2 kbIENT400Search kbZNotKeyword3 kbIE302WinNT400
+Version           : :3.02,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

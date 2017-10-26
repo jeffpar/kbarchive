@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196048: WD97: Error Message in Place of BARCODE Field | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196048: WD97: Error Message in Place of BARCODE Field" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196048/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196048/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196048/","publisher":null,"image":null,"headline":"Q196048: WD97: Error Message in Place of BARCODE Field","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196048-wd97-error-message-in-place-of-barcode-field">Q196048: WD97: Error Message in Place of BARCODE Field</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196048
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbfield winword word97kbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following error messages may appear in place of the POSTNET (POSTal Numeric
+Encoding Technique) barcode when you use the BARCODE field:
+
+- ZIP Code not valid!
+
+  -or-
+
+- No ZIP Code!
+
+CAUSE
+=====
+
+The BARCODE field generates this result in the following cases.
+
+Case 1
+------
+
+The BARCODE field in the mailing labels or envelopes mail merge main document
+refers to the wrong field.
+
+Case 2
+------
+
+The ZIP Code portion of the mailing address contains invalid characters, such as
+non-breaking hyphens, symbols, extra spaces, or other special characters.
+
+Case 3
+------
+
+The layout of the BARCODE field is incorrect.
+
+WORKAROUND
+==========
+
+Case 1
+------
+
+If the BARCODE field refers to the wrong field for the ZIP Code information, edit
+the BARCODE field and change the MERGEFIELD reference to the correct field name.
+Follow these steps to edit the BARCODE field:
+
+1. Select the "ZIP Code not valid" error.
+
+2. Display the field codes by pressing SHIFT+F9 (or click Options on the Tools
+  menu, click the View tab, select Field Codes, and then click OK). The
+  following field codes appear:
+
+  {BARCODE { MERGEFIELD address1} &lt;P&gt;
+  {MERGEFIELD zipcodefield} \u}
+
+  where "address1" is the field containing the street address or postal box
+  information, "&lt;P&gt;" represents a paragraph mark, and "zipcodefield" is
+  the field containing the ZIP Code information.
+
+3. Ensure that "zipcodefield" is the name of the field that contains the ZIP
+  Code information. If not, select it and replace it with the correct field
+  name.
+
+4. Toggle the field codes off by pressing SHIFT+F9 (or click Options on the
+  Tools menus, click the View tab, clear the Field Codes option box, and then
+  click OK).
+
+Case 2
+------
+
+If the data document contains invalid characters in the ZIP Code field, remove
+the invalid characters and replace them, if necessary, with valid characters.
+The only valid characters allowed in the ZIP Code field are numeric digits
+(arabic numerals) and a hyphen (dash) as the separator for the Zip+4.
+
+Press ALT+F9 to view the barcode field, or click Options on the Tools menu, click
+the View tab, and click to select the Field Codes check box.
+
+Case 3
+------
+
+The BARCODE field must span two lines (it must contain a paragraph mark) and must
+include quotation marks in the right places. If it does not meet these
+requirements, Word changes the last two digits of the barcode to 99.
+
+Incorrect BARCODE field:
+
+  {BARCODE "{ MERGEFIELD address1 } {MERGEFIELD zipcodefield }" \u }
+
+Correct BARCODE field
+
+  {BARCODE "{ MERGEFIELD address1 } &lt;P&gt;
+  {MERGEFIELD zipcodefield }" \u }
+
+where "&lt;P&gt;" represents a paragraph mark.
+
+If the BARCODE field is not formatted correctly, press ENTER to move the second
+half of the field onto the second line, and type the quotation marks.
+
+Press ALT+F9 to view the barcode field, or click Options on the Tools menu, click
+the View tab, and click to select the Field Codes check box.
+
+MORE INFORMATION
+================
+
+ZIP Code information referenced by the BARCODE field must be formatted as five
+numbers followed by a hyphen, followed by four numbers. The "ZIP Code not
+valid!" error occurs if the data does not match the above mentioned format or
+invalid characters are used. The only valid characters are arabic numerals and
+the hyphen character.
+
+NOTE: Since the BARCODE field reads the data from left to right, a space after
+the last digit of the ZIP Code does not generate this error.
+
+To view paragraph marks and other non-printing characters, click the Show/Hide
+button on the Standard Toolbar.
+
+For additional information about adding or creating a postal barcode in Microsoft
+Word or if the barcode produces the incorrect results, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q112252 Word Assigns a Delivery Point Bar Code (DPBC) of 99
+
+  Q126863 Delivery Point Bar Code Uses 99 in Last Two Digits of Address
+
+  Q105576 Position of Bar Codes is Certified by U.S. Postal Service
+
+Additional query words: barcode code mail merge valid zip 8.0 8.00 macword98 how to howto
+
+======================================================================
+Keywords          : kbdta kbfield winword word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

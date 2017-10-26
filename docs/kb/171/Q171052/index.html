@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171052/","publisher":null,"image":null,"headline":"Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171052-software-ft-sets-are-not-supported-in-microsoft-cluster-server">Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171052
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The software fault tolerance contained within Windows NT Server (FTDISK) will
+not be supported in Microsoft Cluster Server (MSCS) 1.0 for cluster disk
+resources on the cluster shared SCSI bus. This will include mirror sets, volume
+sets, and stripe sets with and without parity. FTDISK will continue to be
+supported for local disk resources.
+
+This includes local disk resources on Windows NT Server Enterprise Edition
+servers using MSCS 1.0. Examples of using FTDISK for local disk resources would
+include creating an FTDISK RAID 5 stripe set that is used for non- cluster
+purposes on a server. For example, a customer could choose an FTDISK volume for
+an application that was not used on a cluster. For MSCS disk resources on a
+shared SCSI bus, however, the only RAID supported by Microsoft is hardware level
+RAID.
+
+The two key facts about this situation are:
+
+- MSCS still supports RAID on all disks in a cluster, to protect your data in
+  the event of a disk failure. However, disks on a shared SCSI bus must be
+  protected by hardware RAID, while disks that are local to each server may be
+  protected by either hardware or software RAID.
+
+- Windows NT Server software RAID is still fully supported for all disks
+  connected to a non-clustered server. The technical reasons that prevent
+  Microsoft from supporting software RAID on shared SCSI disks in a cluster are
+  uniquely related to the way MSCS does server failover.
+
+MORE INFORMATION
+================
+
+There are two key technical reasons why FTDISK is not supported on the shared
+SCSI bus in Microsoft Cluster Server 1.0.
+
+The first reason is that RAID metadata cannot be reliably recovered by MSCS in
+all server failover scenarios. FTDISK stores metadata information about all disk
+members in the registry on the local machine. (The location of this information
+is HKEY_LOCAL_MACHINE\System\Disk.) Therefore, the only way to get to the disk
+metadata is to mount the file system on the disk members. This presents no
+difficulty with non-clustered servers because they, by default, always have
+access to local storage devices.
+
+However, within a cluster, based on specific failure and boot sequences, there
+are occasional states where a computer is unable to start with all of the
+volumes necessary for the FTDISK diskset. In such a case, a data set could be
+orphaned or rolled to a previous version, because the information needed to
+identify the disk ownership is contained on the disk that is to be mounted. In a
+cluster it would be theoretically possible for server failures to result in
+unknown states for disks managed by the current FTDISK. The inability to safely
+recover RAID disk state until the disks were already brought back online could
+also expose the disk members to the possibility of data corruption, data loss,
+stale data, and other problems for a given data volume.
+
+The other technical issue preventing support of the current FTDISK for shared
+SCSI disks in a cluster is the lack of a fully automated method of recovery from
+disk problems. For example, in the event of a failover, CHKDSK would need to be
+run on the FT volume to assess the integrity of the volume itself. At this time,
+there is no automatic means of doing this, leaving the responsibility of running
+CHKDSK to the user.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q160963 CHKNTFS.EXE: What You Can Use It For
+
+  Q158675 How to Cancel CHKDSK After It Has Been Scheduled
+
+The above information is only relevant to implementing software fault tolerance
+in Microsoft Cluster Server 1.0. The current FTDISK software RAID remains a
+supported, reliable, and excellent disk protection solution for Windows NT
+Server when running on a single server.
+
+Additional query words: MSCS fault tolerant
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

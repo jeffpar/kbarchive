@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126134/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126134/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126134/","publisher":null,"image":null,"headline":"Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126134-fix-datetime-fields-fail-to-update-when-using-a-dynaset">Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126134
+Product(s): Microsoft C Compiler
+Version(s): 2.00
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbODBC kbVCkbbuglist kbfixlist
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to update a date/time field using a CTime object will fail. The
+CRecordset::RFX_Date() doesn't work correctly, and the date/time field in the
+database table isn't changed. This problem occurs only when passing
+CRecordset::dynaset as the first parameter to the CRecordset::Open() member
+function.
+
+CAUSE
+=====
+
+The RFX_Date() function that takes a CTime object as a parameter fails to
+transfer the CTime data to its TIMESTAMP_STRUCT proxy before performing an
+update.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. In one of the header files, such as the CRecordset's header file, create the
+  following function prototype:
+
+     void RFX_Date2( CFieldExchange* pFX, const char* szName, CTime&amp; value );
+
+2. In the CRecordset's .CPP file or elsewhere, add this RFX_Date2() definition:
+
+     void RFX_Date2(CFieldExchange* pFX, const char *szName,
+        CTime&amp; value)
+     {
+      ASSERT(AfxIsValidAddress(pFX, sizeof(CFieldExchange)));
+
+      if (pFX-&gt;m_nOperation==CFieldExchange::BindFieldForUpdate)
+      {
+              if(pFX-&gt;m_nFieldType == CFieldExchange::param)
+                  return;
+
+              //pFX-m_nFields hasn't been incremented yet so no need to
+              // subtract 1 for indexing m_pvFieldProxy
+              if (pFX-&gt;m_prs-&gt;m_pvFieldProxy[pFX-&gt;m_nFields] != NULL)
+              {
+                  // Fill buffer (expected by SQLSetPos) with new field data
+                  TIMESTAMP_STRUCT* pts;
+                  pts = (TIMESTAMP_STRUCT*)
+                     pFX-&gt;m_prs-&gt;m_pvFieldProxy[pFX-&gt;m_nFields];
+                  pts-&gt;year = (SWORD)value.GetYear();
+                  pts-&gt;month = (UWORD)value.GetMonth();
+                  pts-&gt;day = (UWORD)value.GetDay();
+                  pts-&gt;hour = (UWORD)value.GetHour();
+                  pts-&gt;minute = (UWORD)value.GetMinute();
+                  pts-&gt;second = (UWORD)value.GetSecond();
+                  pts-&gt;fraction = 0;
+              }
+         }
+         RFX_Date(pFX, szName, value);
+     }
+
+3. Modify the DoFieldExchange member function of the CRecordset class, replacing
+  calls to RFX_Date with calls to the RFX_Date2 function described above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++
+version 2.1.
+
+MORE INFORMATION
+================
+
+MFC Technote #43 contains more information about record field exchange (RFX)
+functions and CFieldExchange operations.
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : 2.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

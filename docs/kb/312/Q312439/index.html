@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312439/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312439/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312439/","publisher":null,"image":null,"headline":"Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312439-err-msg-internet-mail-server-requires-dns-to-be-configured">Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312439
+Product(s): Microsoft Exchange
+Version(s): 5.5 SP3
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbExchange550
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Exchange 5.5 Service Pack 3 on a Microsoft Windows 2000 member
+server and the Internet Mail Service (IMS) is not installed correctly, you may
+receive the following error message:
+
+  The Internet Mail Server requires DNS to be configured on
+  &lt;computername&gt;.
+
+The following information may be recorded in the Application log:
+
+  Event ID: 4067
+  Source: MSExchangeIMC
+  Description: The Microsoft Exchange Internet Mail Service cannot start because
+  the TCP/IP domain name was not found during initialization.
+
+  Event ID: 4058
+  Source: MSExchangeIMC
+  Description: The Microsoft Exchange Internet Mail Service cannot start because
+  the name resolver cannot be initialized.
+
+CAUSE
+=====
+
+This behavior can occur if the primary DNS suffix has not been set on the server
+that is running Exchange Server 5.5.
+
+RESOLUTION
+==========
+
+To resolve this behavior, add the primary DNS suffix on the server that is
+running Exchange Server 5.5:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  System.
+
+2. Click the "Network identification" tab, click Properties, and then click
+  More.
+
+3. Type the primary DNS suffix in the "Primary DNS suffix for this computer"
+  box, click OK, click OK again, and then click OK once more.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbExchange550 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

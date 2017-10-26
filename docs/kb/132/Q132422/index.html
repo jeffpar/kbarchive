@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132422: HOWTO: Clear an istream Object During Extraction | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132422: HOWTO: Clear an istream Object During Extraction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132422/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132422/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132422/","publisher":null,"image":null,"headline":"Q132422: HOWTO: Clear an istream Object During Extraction","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132422-howto-clear-an-istream-object-during-extraction">Q132422: HOWTO: Clear an istream Object During Extraction</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132422
+Product(s): Microsoft C Compiler
+Version(s): MS-DOS:7.0;WIN3X:1.0,1.5,1.51,1.52;WINNT:2.0,2.1,4.0,5.0;
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbLangCPP kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbV
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Testing for errors during extraction is important. For example:
+
+     int  n = 0;
+     while (n &lt;= 100) {cin &gt;&gt; n;}
+
+This program is expecting a value greater than 100. If the user inputs a
+non-numeric value, the stream's fail bit is set, and the cin object becomes
+unusable. All subsequent extractions result in an immediate return with no value
+stored. Consequently, the program hangs (stops responding) in the while loop.
+
+MORE INFORMATION
+================
+
+The clear() member function clears the fail bit. However, the istream object is
+still unusable. The sample code below clears the fail bit and extracts the
+unusable characters left in the streambuf object.
+
+Sample Code
+-----------
+
+     /* No special compile options needed. */ 
+
+    #include &lt;iostream.h&gt;
+
+     int ClearError(istream&amp; isIn)        // Clears istream object
+     {
+        streambuf*  sbpThis;
+        char        szTempBuf[20];
+        int         nCount, nRet = isIn.rdstate();
+
+        if  (nRet)                        // Any errors?
+        {
+            isIn.clear();                 // Clear error flags
+            sbpThis = isIn.rdbuf();       // Get streambuf pointer
+            nCount = sbpThis-&gt;in_avail(); // Number of characters in buffer
+
+            while (nCount)                // Extract them to szTempBuf
+            {
+                if  (nCount &gt; 20)
+                {
+                    sbpThis-&gt;sgetn(szTempBuf, 20);
+                    nCount -= 20;
+                }
+                else
+                {
+                    sbpThis-&gt;sgetn(szTempBuf, nCount);
+                    nCount = 0;
+                }
+            }
+        }
+
+        return  nRet;
+     }
+
+     void main()
+     {
+        int  n = 0, nState;
+        while (n &lt;= 100)
+        {
+           cout &lt;&lt; "Please enter an integer greater than 100.\n";
+           cin &gt;&gt; n;
+           nState = ClearError(cin);   // Clears any errors in cin
+        }
+     }
+
+REFERENCES
+==========
+
+iostream Class Library Reference, Chapter 1
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCRT kbLangCPP kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS-DOS:7.0;WIN3X:1.0,1.5,1.51,1.52;WINNT:2.0,2.1,4.0,5.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

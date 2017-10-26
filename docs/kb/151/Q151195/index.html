@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151195/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151195/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151195/","publisher":null,"image":null,"headline":"Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151195-locallus-parameter-displays-printer-lus-as-display-lus">Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151195
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup kbnetserv
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If 3270 Printer LUs are assigned to a computer using the LocalLUs parameter, the
+printer LU names are improperly displayed as 3270 Display LUs when viewed in a
+3270 Emulator.
+
+CAUSE
+=====
+
+The LocalLUs parameter was not designed to support printer LUs.
+
+RESOLUTION
+==========
+
+A new parameter called LocalPrinterLUs has been added to provide the capability
+of assigning printer LUs to a computer. If this parameter is present on a SNA
+Server client, the printer LUs in the User/Group record are replaced with the
+printer LUs specified in the LocalPrinterLUs parameter. The LocalPrinterLUs
+parameter supports a maximum of 10 printer LUs.
+
+The LocalPrinterLUs parameter is specified as follows:
+
+Win3x Clients
+-------------
+
+- Add the following entry to the [WNAP] Section of the WIN.INI file:
+
+  LocalPrinterLUs=&lt;PrinterLUName1&gt; &lt;PrinterLUName2&gt;
+  ...&lt;PrinterLUNameX&gt;
+
+  where &lt;PrinterLUNameX&gt; are LU names separated by spaces.
+
+Windows 95 Clients
+------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+- Run the Registry Editor (REGEDIT), and locate the following key:
+
+         HKEY_LOCAL_MACHINE
+             SOFTWARE
+                 Microsoft
+                     SnaBase
+                         Parameters
+
+- Add the following string value to the Registry key:
+
+  String Value Name: LocalPrinterLUs
+  Data: &lt;PrinterLUName1&gt; &lt;PrinterLUName2&gt; ... &lt;PrinterLUNameX&gt;
+
+  where &lt;PrinterLUNameX&gt; are LU names separated by spaces.
+
+- Close the Registry Editor.
+
+Windows NT Clients
+------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+- Run the Registry Editor (REGEDT32), and locate the following key:
+
+     HKEY_LOCAL_MACHINE
+        SYSTEM
+            CurrentControlSet
+               Services
+                  SnaBase
+                     Parameters
+
+- Add the following value to the Registry key:
+
+  Value Name: LocalPrinterLUs Data Type:&lt;A0&gt;&lt;A0&gt;REG_SZ
+  Data:&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;PrinterLUName1&gt; &lt;PrinterLUName2&gt;
+  ...&lt;PrinterLUNameX&gt;
+
+  where &lt;PrinterLUNameX&gt; are LU names separated by spaces.
+
+- Close the Registry Editor.
+
+The following files have been updated to add the support for the new
+LocalPrinterLUs parameter:
+
+  Win3x Clients: &lt;winroot&gt;\System\Wdmod.dll
+  Windows 95 Clients: &lt;winroot&gt;\System\Snadmod.dll
+  Windows NT Clients: &lt;snaroot&gt;\System\Snadmod.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 2.11.sp1. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The LocalLUs parameter is used to specify the LUs to be used on the system,
+regardless of which user is logged on. If this variable is not used, SNA Server
+assigns LUs based on the User/Group records defined in SNA Server Admin.
+Reference to Appendix C of the SNA Server "Reference Guide" for more details on
+the LocalLUs parameter.
+
+For additional information on how SNA Server currently handles assigning LUs to a
+computer, please see the following article in the Microsoft Knowledge Base:
+
+  Q149802 Assigning 3270 LUs to Workstations Using SNA Server Client
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbnetserv 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121294/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121294/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121294/","publisher":null,"image":null,"headline":"Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121294-windows-95-err-msg-wa-distec-drive-missing-operating-system">Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121294
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows 95 reboots after Setup is complete, you receive the following error
+message:
+
+  Missing operating system
+
+CAUSE
+=====
+
+This error message occurs when your DISCTEC removable hard disk drive is set as
+the boot drive.
+
+DISCTEC removable hard disk drives set the CMOS to drive type 2. The DISCTEC
+removable drive device driver (DISCTEC.SYS) then uses an INT 13 function 9 call
+to reset the BIOS with the proper hard disk drive type. The hard disk drive type
+is stored in the partition sector.
+
+Windows 95, as well as some earlier versions of MS-DOS, rewrites the partition
+sector when installed. This causes the code the DISCTEC device driver inserted
+to be removed. Therefore, the BIOS can no longer identify the proper hard disk
+drive type.
+
+WORKAROUND
+==========
+
+- If you have already installed Windows 95 and are receiving the above error
+  message, perform the following steps:
+
+  1. Boot your computer with a bootable floppy disk.
+
+  2. Insert the DISCTEC installation disk in the floppy disk drive and change
+     to this drive (A: or B:).
+
+  3. Use DISCTEC's hard disk drive partitioning software to rewrite the
+     partition table as follows:
+
+  HDPRT /w /0
+
+     NOTE: The last character above is a zero.
+
+     You are returned to a drive prompt without any messages being displayed.
+     This step works correctly as long as the formatting of the hard disk has
+     not changed.
+
+  4. Reboot your computer from the hard disk.
+
+- If you have not installed Windows 95 yet, perform the following steps:
+
+  1. Manually set the CMOS to the proper hard disk drive type.
+
+  2. Remove the DISCTEC.SYS device driver from the CONFIG.SYS file and reboot
+     your computer.
+
+  3. Install Windows 95.
+
+  4. Reinstall the DISCTEC software.
+
+If you continue to receive the above error message or experience other problems
+with your DISCTEC removable drive, contact DISCTEC technical support at (407)
+671-5500.
+
+MORE INFORMATION
+================
+
+After booting from a floppy disk and attempting to access your hard disk drive,
+you may encounter "Sector not found" error messages. To correct these errors,
+make sure that the DISCTEC device driver (DISCTEC.SYS) is loading in the
+CONFIG.SYS file on the floppy disk.
+
+The DISCTEC removable hard disk drive is manufactured by Disk Technologies Corp.,
+a vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: 3rdparty disktec disktech disctech
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133226/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133226/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133226/","publisher":null,"image":null,"headline":"Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133226-ppt7-office-shortcut-bar-not-hidden-during-slide-show-on-nt">Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133226
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0; winnt:3.51
+Operating System(s): 
+Keyword(s): kbinterop kbui kbdta
+Last Modified: 19-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0, used with:
+   - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a slide show from PowerPoint for Windows 95, version 7.0, under
+Windows NT version 3.51, the Office shortcut bar is visible.
+
+Furthermore, if you are running Windows NT using the Windows 95 shell, the
+Windows taskbar is also visible during a slide show.
+
+If you choose to autohide the Windows taskbar and/or the Office shortcut bar,
+they still appear as thin gray lines along the edge of your screen.
+
+CAUSE
+=====
+
+When you run a PowerPoint slide show, PowerPoint tries to take control of the
+entire screen. Windows 95 allows PowerPoint to do so, so the Windows taskbar and
+Office shortcut bars are hidden during slide shows running on Windows 95.
+Windows NT, however, does not allow any application to take total control of the
+entire screen, so the Windows taskbar and Office shortcut bar remain visible.
+
+WORKAROUND
+==========
+
+To view your slide show without the Office shortcut bar, close the shortcut bar
+prior to running your slide show.
+
+To view your slide show without the Windows taskbar, do the following:
+
+1. Click the Start button on the taskbar and point to Settings.
+
+2. Click Taskbar. This takes you to Taskbar Properties.
+
+3. Click the Taskbar Options tab. Clear the "Always on top" check box.
+
+4. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft
+PowerPoint 97 for Windows.
+
+Additional query words: 7.0O ppt95 w_office power point winppt macppt shows up bleeds through mom msoffice toolbar task bar short cut
+
+======================================================================
+Keywords          : kbinterop kbui kbdta 
+Technology        : kbPowerPtSearch kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0; winnt:3.51
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

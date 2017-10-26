@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191326/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191326/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191326/","publisher":null,"image":null,"headline":"Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191326-prb-jaws-software-cannot-read-some-of-foxpro-menus">Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191326
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbenable kbEnableSight
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+WARNING: The information in this article has not been confirmed or tested by
+Microsoft. Some or all of the information in this article has been taken from
+unconfirmed customer reports. ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS
+ARTICLE IS AT YOUR OWN RISK. Microsoft provides this information "as is" without
+warranty of any kind, either expressed or implied, including but not limited to
+the implied warranties of merchantability and/or fitness for a particular
+purpose.
+
+When using the Jaws for Windows software to read the Visual FoxPro menus, the
+software is not able to read some of the menus. For example, here is a listing
+for some of the menus that cannot be read:
+
+- File / New
+
+- View / Toolbars
+
+- Tools / Options
+
+Any of the menus that are called through the Windows API, such as, File - Open,
+File - Print, or Format - Font, can be read properly by the Jaws software.
+
+JAWS for Windows is manufactured by Henter-Joyce, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+CAUSE
+=====
+
+The Visual FoxPro menus have not been designed to expose their objects.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Jaws for Windows is a software product that runs in the background, allowing
+blind users to use other software while Jaws talks to them and "speaks" what
+object is on the screen they are accessing with the mouse or keyboard. Visual
+FoxPro's menus are written in such a way that the objects are not exposed at
+run-time. Some of the menus that can be read by Jaws are menus that are called
+through the Windows API. These menus have been designed to expose their objects,
+therefore, Jaws can read the objects and can "speak" those objects to the user.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Jaws for windows software, start Visual FoxPro for Windows, and
+  from the File menu, choose New. As you tab through the menu, Jaws is not able
+  to read the objects. However, accessing the File - Open menu allows Jaws to
+  read the objects.
+
+2. If Jaws for Windows is not available, start Visual FoxPro, and from the File
+  menu, choose Open.
+
+3. Open Microsoft Spy++ that comes with Microsoft C++ and select the Spy [ASCII
+  150] Windows menu. Scroll down the list and find the "Open" #32770 (Dialog)
+  entry. Note that there are items listed under this entry that describe the
+  objects in the Open dialog box.
+
+4. Now, go back to Visual FoxPro and select from the File menu, choose New.
+  Switch back to Spy++ and press the F5 key to refresh the window. Scroll down
+  the list and find the "New" Fox_4000002 entry or "New" VFP664000002 if using
+  Visual FoxPro 6.0. Note that there are no objects listed under this entry.
+
+REFERENCES
+==========
+
+For more information, please see the following World Wide Web URL:
+
+  http://www.hj.com/
+
+Additional query words: kbVFp300b kbVFp500a kbVFp500 kbVFp600 kb3rdParty
+
+======================================================================
+Keywords          : kb3rdparty kbenable kbEnableSight 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

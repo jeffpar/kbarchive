@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150884/","publisher":null,"image":null,"headline":"Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150884-fix-c1001-fatal-error-in-file-mainc-line-413-for-o1-or-o2">Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150884
+Product(s): Microsoft C Compiler
+Version(s): 4.00 4.10
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using /O1 (minimize size) or /O2 (maximize speed) causes a C1001 error in a try
+block with the following error message:
+
+  
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+   (compiler file '\school.tp3\test\c10\src\P2\main.c', line 413)
+
+Additionally, C++ exception handling must be enabled (/GX). If the warning level
+is set to 4 (/W4), C4702 (unreachable code) warnings are issued before the C1001
+fatal error.
+
+CAUSE
+=====
+
+The cause of the problem is having both /Og (global optimizations) and inline
+function expansion /Ob1 (Only __inline) or /Ob2 (Any Suitable) compiling. /O1
+and /O2 are both compound switches, including /Og and /Ob1.
+
+RESOLUTION
+==========
+
+Disable either global optimizations (/Og-) or inline function expansion (/Ob1-
+or /Ob2-). Please see the More Information section below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 32-bit Edition
+version 4.2.
+
+MORE INFORMATION
+================
+
+The following code reproduces the error when compiled:
+
+     // Compile option needed are: /GX, /W4, and /O1(minimize size)
+     // or /O2 (maximize speed)
+     struct A
+     {
+             ~A(){}
+     };
+     struct B
+     {
+             A       a;
+     };
+     void main(void)
+     {
+             try                     // line 17
+             {
+                 B       *pB = new B[4];
+                 delete [] pB;  // line 20, warning C4702: unreachable code
+             }
+             catch(...)
+             {
+             }
+     }
+
+The following error message is generated:
+
+  
+
+  test.cpp(17) : fatal error C1001: INTERNAL COMPILER ERROR
+    (compiler file '\school.tp3\test\c10\src\P2\main.c', line 413)
+
+Compiling from command line with both /Og (global optimizations) and in-line
+function expansion, /Ob1(Only __inline) or /Ob2 (Any Suitable), reproduces the
+error. For instance, using:
+
+  cl  /Og /Ob1 /GX /W4 test.cpp
+
+Compiling with the following switch settings in command line does not produce
+errors:
+
+  cl  /Og /GX /W4 test.cpp
+
+- or -
+
+  cl  /Ob1 /GX /W4 test.cpp
+
+One workaround when using /O1 or /O2 in Developer Studio is to disable In-line
+function expansion (Build:Settings, C++ Tab, Optimizations category). Another
+workaround is to disable global optimizations. To accomplish this, choose Custom
+for the type of optimization (Build:Settings, C++ Tab, Optimizations category).
+Check all categories that apply, but do not check global optimizations. This
+behavior is similar to using the components of /O1 or /O2 and eliminating /Og).
+An additional method is to leave /O1 or /O2 intact and manually add /Og- to the
+Project Options.
+
+Additional query words: kbVC400bug 4.00 4.10 4.20 vcfixlist420 CPPIss
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 4.00 4.10
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

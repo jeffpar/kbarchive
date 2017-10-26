@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257591: Description of the Secure Sockets Layer (SSL) Handshake | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257591: Description of the Secure Sockets Layer (SSL) Handshake" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257591/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257591/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257591/","publisher":null,"image":null,"headline":"Q257591: Description of the Secure Sockets Layer (SSL) Handshake","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257591-description-of-the-secure-sockets-layer-ssl-handshake">Q257591: Description of the Secure Sockets Layer (SSL) Handshake</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257591
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 24-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Secure Sockets Layer (SSL) protocol uses a combination of public-key and
+symmetric-key encryption. Symmetric-key encryption is much faster than
+public-key encryption; however, public-key encryption provides better
+authentication techniques. An SSL session always begins with an exchange of
+messages called the SSL handshake. The handshake allows the server to
+authenticate itself to the client by using public-key techniques, and then
+allows the client and the server to cooperate in the creation of symmetric keys
+used for rapid encryption, decryption, and tamper detection during the session
+that follows. Optionally, the handshake also allows the client to authenticate
+itself to the server.
+
+MORE INFORMATION
+================
+
+The steps involved in the SSL handshake are as follows (note that the following
+steps assume the use of the cipher suites listed in Cipher Suites with RSA Key
+Exchange: Triple DES, RC4, RC2, DES):
+
+1. The client sends the server the client's SSL version number, cipher settings,
+  session-specific data, and other information that the server needs to
+  communicate with the client using SSL.
+
+2. The server sends the client the server's SSL version number, cipher settings,
+  session-specific data, and other information that the client needs to
+  communicate with the server over SSL. The server also sends its own
+  certificate, and if the client is requesting a server resource that requires
+  client authentication, the server requests the client's certificate.
+
+3. The client uses the information sent by the server to authenticate the server
+  (see Server Authentication for details). If the server cannot be
+  authenticated, the user is warned of the problem and informed that an
+  encrypted and authenticated connection cannot be established. If the server
+  can be successfully authenticated, the client proceeds to step 4.
+
+4. Using all data generated in the handshake thus far, the client (with the
+  cooperation of the server, depending on the cipher being used) creates the
+  pre-master secret for the session, encrypts it with the server's public key
+  (obtained from the server's certificate, sent in step 2), and then sends the
+  encrypted pre-master secret to the server.
+
+5. If the server has requested client authentication (an optional step in the
+  handshake), the client also signs another piece of data that is unique to
+  this handshake and known by both the client and server. In this case, the
+  client sends both the signed data and the client's own certificate to the
+  server along with the encrypted pre-master secret.
+
+6. If the server has requested client authentication, the server attempts to
+  authenticate the client (see Client Authentication for details). If the
+  client cannot be authenticated, the session ends. If the client can be
+  successfully authenticated, the server uses its private key to decrypt the
+  pre-master secret, and then performs a series of steps (which the client also
+  performs, starting from the same pre-master secret) to generate the master
+  secret.
+
+7. Both the client and the server use the master secret to generate the session
+  keys, which are symmetric keys used to encrypt and decrypt information
+  exchanged during the SSL session and to verify its integrity (that is, to
+  detect any changes in the data between the time it was sent and the time it
+  is received over the SSL connection).
+
+8. The client sends a message to the server informing it that future messages
+  from the client will be encrypted with the session key. It then sends a
+  separate (encrypted) message indicating that the client portion of the
+  handshake is finished.
+
+9. The server sends a message to the client informing it that future messages
+  from the server will be encrypted with the session key. It then sends a
+  separate (encrypted) message indicating that the server portion of the
+  handshake is finished.
+
+10. The SSL handshake is now complete and the session begins. The client and the
+  server use the session keys to encrypt and decrypt the data they send to
+  each other and to validate its integrity.
+
+11. This is the normal operation condition of the secure channel. At any time,
+  due to internal or external stimulus (either automation or user
+  intervention), either side may renegotiate the connection, in which case,
+  the process repeats itself.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q257586 Description of the Client Authentication Process During the SSL
+  Handshake
+
+  Q257587 Description of the Server Authentication Process During the SSL
+  Handshake
+
+Microsoft Internet Information Server 4.0 Resource Kit
+Microsoft Windows NT Option Pack Documentation
+Microsoft Internet Information Services 5.0 Resource Guide
+Microsoft Internet Information Services 5.0 Documentation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

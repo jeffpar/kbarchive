@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181894/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181894/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181894/","publisher":null,"image":null,"headline":"Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181894-prb-the-remote-procedure-call-failed-during-ole-automation">Q181894: PRB: "The Remote Procedure Call Failed" During OLE Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181894
+Product(s): Microsoft C Compiler
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbole kbAutomation kbCOMt kbMFC kbThread kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+- Microsoft Office 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are performing intensive OLE Automation, most likely in a loop without user
+intervention, and receive the following error:
+
+  The remote procedure call failed.
+
+CAUSE
+=====
+
+Every thread that uses COM or OLE must call CoInitialize() or OleInitialize(),
+respectively. When this call is made, the OS creates a hidden top-level window,
+owned by your thread, for implementation purposes. Because the OS relies on
+Windows messaging behind-the-scenes, your thread should, and in some cases MUST,
+pump messages. Failure to do so can result in automation errors, and sometimes
+in a deadlock situation when another application broadcasts a message to all
+top-level windows (for example, an application might broadcast a WM_WININICHANGE
+or WM_SETTINGCHANGE message to notify other applications the default printer has
+changed).
+
+RESOLUTION
+==========
+
+If you are using OLE Automation in a loop (for example, writing out 10,000 rows
+of data to Microsoft Excel), you need a PeekMessage() loop inside your loop so
+that messages will get processed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Here is an example of a PeekMessage() loop you can use in your code.
+
+     MSG msg;
+     while(PeekMessage(&amp;msg, NULL, NULL, NULL, PM_REMOVE)) {
+        TranslateMessage(&amp;msg);
+        DispatchMessage(&amp;msg);
+     }
+
+REFERENCES
+==========
+
+Microsoft Visual C++ online for PeekMessage().
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q136885 INFO: OLE Threads Must Dispatch Messages
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Joe Crump, Microsoft Corporation
+
+
+Additional query words: excel office rpc -2147418095 800706BE 0x800706BE 1726
+
+======================================================================
+Keywords          : kberrmsg kbole kbAutomation kbCOMt kbMFC kbThread kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbVC400 kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

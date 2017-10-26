@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101526/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101526/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101526/","publisher":null,"image":null,"headline":"Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101526-ras-1x-with-netbiostimeout-and-netbiosretries">Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101526
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SYMPTOMS
+========
+
+When you are loading RAS 1.X, the server responds with this error message:
+
+  The REMOTEACCESS service could not be started.
+  NET3055: A problem exists with the system configuration:
+  Security failure.
+
+  Error Log: NET3299: RAS0755: The Remote Access Service has not been granted
+  permission to start.
+
+CAUSE
+=====
+
+Using the default parameters in the AsyBEUI sections of Protocol.ini and
+adjusting the parameters in the NetBEUI section cause you to receive the above
+errors. Here are the appropriate sections:
+
+Protocol.ini:
+.
+[ASYBEUI_XIF]
+    DRIVERNAME = ASYBEUI$
+    BINDINGS = "ASY_NIF"
+
+[ASY_NIF]
+    DRIVERNAME=ASYMAC$
+
+[NETBEUI_XIF]
+    Drivername = netbeui$
+    BINDINGS = "ELNK3_NIF"
+    SESSIONS = 124
+    NCBS = 255
+    NAMES= 50
+    NETBIOSTIMEOUT = 2000&lt;7F&gt;
+    NETBIOSRETRIES = 8
+    T1 = 1500
+    T2 = 600
+    TI = 3000
+----------------------------------------------------------------------
+CONFIG.SYS:
+
+IFS=C:\LANMAN\NETPROG\HPFS386.IFS /I:C:\LANMAN /CACHE:4096
+/AUTOCHECK:C /MRAS:594
+
+Device drivers are normal ELNK3, ASYBEUI, NETBEUI and COMTOKR
+
+WORKAROUND
+==========
+
+To get RAS to load, use information in the table below to alter NETBIOSTIMEOUT
+and/or NETBIOSRETRIES, in the NetBEUI section of Protocol.ini.
+
+NetBiosRetries       NetBiosTimeOut    Successful TOTAL
+--------------       --------------    ---------- -----
+    5               2000                yes      10000
+    5               2100                yes      10500
+    5               2200                yes      11000
+    5               2300                yes      11500
+    5               2400                yes      12000
+    5               2500                 no      12500
+    5               4000                 no      20000
+    6               2000                yes      12000
+    7               1500                yes      10500
+    7               2000                 no      14000
+    8               1500                yes      12000
+    8               2000                 no      16000
+    9               1000                yes       9000
+    9               1500                 no      13500
+    10              1350                yes      13500
+    10              1400                 no      14000
+    12              1000                yes      12000
+    13              1000                yes      13000
+    13              1020                yes      13260
+    13              1025                yes      13325
+    15              1000                 no      15000
+
+RAS loads if the product of the two parameters is less than 13000 and
+NETBIOSTIMEOUT is less than 2400.
+
+Additional query words: RAS
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

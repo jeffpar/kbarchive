@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198374/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198374/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198374/","publisher":null,"image":null,"headline":"Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198374-wd97-error-message-this-document-cannot-be-registered">Q198374: WD97: Error Message: "This Document Cannot Be Registered"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198374
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word97kbfaq
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you open a Microsoft Word document, one of the following error messages
+appears:
+
+  This document cannot be registered.
+
+  -or-
+
+  This document cannot be registered. It will not be possible to create links
+  from this document to other documents.
+
+CAUSE
+=====
+
+This problem may occur for the following reasons:
+
+Case 1
+------
+
+The Windows Object Linking and Embedding (OLE) files have been damaged or
+incorrectly updated and are incompatible.
+
+Case 2
+------
+
+The Windows registry has been damaged.
+
+RESOLUTION
+==========
+
+Use one or more of the following methods to resolve this problem.
+
+Method 1: Run Setup with the /y Switch to Correct the Registry:
+
+Setup /y is a switch used by Office Setup and Office program Setup files. It
+allows a reinstallation of Office without performing file checks or actually
+reinstalling the files. Setup /y re-registers all Office components and returns
+the settings to their default values in the registry.
+
+To resolve this problem, try running Setup /y for Word or Office to repair
+registry corruption.
+
+To run Setup with the /y switch, follow these steps:
+
+1. Insert the Word or Office CD into the CD drive. If you installed Word or
+  Office from floppy disks, insert the Setup Disk 1 in your computer's floppy
+  disk drive.
+
+2. Click Start and then click Run.
+
+3. In the Open box, type the following:
+
+  drive:\setup /Y
+
+  where drive is the letter of the drive that contains the CD or Setup Disk 1.
+
+4. Click OK.
+
+5. Click Reinstall.
+
+This re-registers Word (and all Office programs, if you run Office Setup).
+
+If this procedure does not work, you may need to remove Word, run OffClean from
+the Microsoft Office CD within the ValuPack folder, and then reinstall Word.
+
+For additional information about the OffClean utility, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q158098 OFF97: Setup May Remove Older Components
+
+
+Method 2: Use the Eraser Utility and Reinstall:
+
+To use the Eraser utility and reinstall Word, follow these steps:
+
+1. Run Setup for Word or Office and use the Remove All option.
+
+2. Run the Eraser 97 utility to remove all remaining Office/Word files and to
+  delete corresponding registry entries.
+
+For additional information about the Office 97 File and Registry Eraser utility,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q176823 OFF97: Utility to Completely Remove Remaining Office 97 Files
+
+3. Re-install either Word 97 or Office 97 for Windows.
+
+Method 3: Rename Winword8.srg and Modify the Registry:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To rename the Winword8.srg file and delete the Word CLSID registry entries in the
+Windows registry, follow these steps:
+
+1. Quit Word and all Windows programs.
+
+2. Rename the Winword8.srg file to Winword8.old.
+
+  NOTE: The Winword8.srg file is located in the following folder by default:
+
+  drive:\Program Files\Microsoft Office\Office
+
+3. Click Start, and then click Run.
+
+4. In the Open box, type "Regedit" (without the quotation marks), and then click
+  OK:
+
+5. In the Registry Editor, open the following registry subkey:
+
+  HKEY_CLASSES_ROOT\Word.Document.8\CLSID
+
+6. On the right side of the Registry Editor, click to select the default string.
+
+7. On the Edit menu, click Modify.
+
+8. In the Edit String dialog box, select the contents of the Value data box, and
+  then press CTRL+C to copy the value to the Windows Clipboard. Click Cancel to
+  close the Edit String dialog box.
+
+  NOTE: The Value data for the Word.Document.8 CLSID should appear as follows:
+
+  {00020906-0000-0000-C000-000000000046}
+
+9. Move to the top of the registry and select My Computer.
+
+10. On the Edit menu, click Find.
+
+11. In the Find What box, press CTRL+V to paste the value from step 8, and then
+  click Find Next.
+
+12. Delete the string or key for each occurrence of the value.
+
+  NOTE: Many of the value occurrences will be set as the Default string. Delete
+  the value for the Default string; do not delete the Default string. To
+  delete the value for the Default string, click to select Default. On the
+  Edit menu, click Modify. Select the value in the Value data box, and then
+  press DELETE. Click OK to close the Edit String dialog box.
+
+13. Press F3 to continue to find and delete all occurrences of the
+  Word.Document.8 CLSID.
+
+14. When you finish searching the registry, click Exit on the Registry menu.
+
+15. Re-install either Word 97 or Office 97 for Windows.
+
+
+
+Additional query words: corrupted corrupt corruption
+
+======================================================================
+Keywords          : kbdta word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

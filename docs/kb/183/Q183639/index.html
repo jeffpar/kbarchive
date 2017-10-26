@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183639/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183639/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183639/","publisher":null,"image":null,"headline":"Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183639-prb-oracle-cursors-remain-open-after-calling-vb-rdoquery">Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183639
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 4.0,5.0,6.0,Build 2.573.2927,Build 2.73.7283.03
+Operating System(s): 
+Keyword(s): kb3rdparty kbAPI kbOracle kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.0 Build 2.73.7283.03 
+- Microsoft ODBC for Oracle version 2.5 Build 2.573.2927 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling the rdoQuery object in Visual Basic 5.0 or later or a Remote Data Object
+(RDO) PreparedStatement in Visual Basic 4.0 opens three Oracle cursors; two
+remain open after closing the rdoQuery or PreparedStatement object.
+
+These cursors should not be confused with cursors that return data. Oracle opens
+cursors internally, and they are defined as follows:
+
+  A cursor is a synonym for context area - a work area in memory where Oracle
+  stores the current SQL statement. For a query, the area in memory also
+  includes column headings and one row retrieved by the Select Statement.
+
+CAUSE
+=====
+
+Oracle provides an API to get the stored procedure information. This API is
+called, in the case of a stored procedure execution, to get the parameter
+information. The API generates two additional cursors, which are not released
+until the logoff request happens. These cursors do not increase when you attempt
+multiple executions.
+
+RESOLUTION
+==========
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Oracle opens a single cursor for an RDO Resultset and closes the cursor when the
+Resultset object is closed. However, the rdoQuery or rdoPreparedStatement leaves
+two cursors open as illustrated below.
+
+To test in Visual Basic 4.0, substitute the Visual Basic 4.0 PreparedStatement
+object for the rdoQuery object.
+
+It is assumed the reader knows how to check for open cursors via Oracle
+Administrator utilities.
+
+This application calls a stored procedure that accepts a numeric input parameter
+and returns the value divided in half as an output parameter. Calling any stored
+procedure should produce similar results. The script for the stored procedure
+called by this project is as follows:
+
+     Create Or Replace Procedure NoTable
+     (inNum IN NUMBER, outNUM OUT NUMBER)
+     IS
+     BEGIN
+        outNUM := inNUM/2;
+     END;
+     / 
+
+Steps to Reproduce Behavior
+---------------------------
+
+After the stored procedure is created, follow these steps:
+
+1. Open a new project in Visual Basic. Form1 is created by default.
+
+2. Place a command button on the new Form.
+
+3. On the Project menu, click References, and select Microsoft Remote Data
+  Object 2.0.
+
+4. Place the following code in the General Declarations section of Form1. You
+  will need to alter the database connection information in the strCon String:
+
+        '
+           Dim strSql As String
+           Dim strError As String
+           Dim En As rdoEnvironment
+           Dim Qr As rdoQuery
+           Dim Cn As rdoConnection
+           Dim Rs As rdoResultset
+           Dim strCon, UserID As String
+
+           Private Sub Command1_Click()
+
+              strCon = "DSN=MyOracle;UID=MyUID;PWD=MyPassword;"
+              strSql = "{call NoTable(?,?)}"
+
+              Set En = rdoEnvironments(0)
+              En.CursorDriver = rdUseClientBatch
+              Set Cn = En.OpenConnection("", rdDriverNoPrompt, _
+              False, strCon)
+
+           'Pause the program to check on number of open cursors.
+           'Should be 0 (zero) at this point
+              MsgBox "Check Open Cursors"
+
+              Set Qr = Cn.CreateQuery("", strSql)
+
+              Qr.rdoParameters(0).Value = 10
+              Qr.Execute
+
+           'Pause the program to check on number of open cursors.
+           'Should be three at this point.
+              MsgBox "Check Open Cursors"
+
+              Debug.Print "The Output is " &amp; Qr(1)
+              Qr.Close
+
+              'Should be two open cursors at this point.
+              MsgBox "DONE"
+
+           End Sub
+
+NOTE: Comments in the above code show at what point in the code you should
+examine the number of open Oracle cursors.
+
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Ron Nelson, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbAPI kbOracle kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbODBCSearch kbVB500 kbVB600 kbVB400Search kbVB400 kbODBCOracle273728303 kbODBCOracle25732927 kbODBCOracle200Search kbODBCOracle250Search
+Version           : :4.0,5.0,6.0,Build 2.573.2927,Build 2.73.7283.03
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

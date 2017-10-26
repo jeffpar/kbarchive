@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274772: INFO: Perl Support Boundaries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274772: INFO: Perl Support Boundaries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274772/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274772/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274772/","publisher":null,"image":null,"headline":"Q274772: INFO: Perl Support Boundaries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274772-info-perl-support-boundaries">Q274772: INFO: Perl Support Boundaries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274772
+Product(s): Internet Information Server
+Version(s): 1.0,2.0,3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): kbCGI kbISAPI kbISAPI300 kbISAPI400 kbGrpDSInetServer kbDSupport kbIIS kbiis300 kbiis40
+Last Modified: 19-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Customers frequently call Microsoft support for Perl issues, particularly when
+they are running Perl scripts on Internet Information Server (IIS). The only
+product that Microsoft ships that has any sort of Perl capabilities is the
+Microsoft Windows NT Resource Kit, and the Perl lanugage is not supported.
+Therefore Microsoft's ability to help customers with Perl issues is limited.
+This article defines Microsoft support boundaries for Perl issues.
+
+MORE INFORMATION
+================
+
+Because Microsoft does not support the Perl language itself, Microsoft offers no
+help with writing Perl, fixing bugs in Perl script, or setting up or configuring
+Perl. However, Microsoft does support the environments in which Perl runs. For
+example, the resource kit implementation of Perl runs Perl script as a Common
+Gateway Interface (CGI) application. Because Microsoft supports the CGI
+interface, which includes setting environment variables for the CGI process and
+communicating with the CGI through standard input (STDIN) and standard output
+(STDOUT), Microsoft Product Support can work with customers whose Perl script is
+not working because the CGI environment variables do not appear properly or who
+are having problems with input and output (I/O).
+
+
+If a customer needs Perl support, a full-featured implementation of Perl is
+available from and supported by ActiveState. For more information, see the
+following Web site:
+
+  http://www.activestate.com
+
+Sample Scenarios:
+
+The following are some of the problems that customers may encounter with Perl
+scripts:
+
+- None of the customer's Perl scripts work.
+
+  This is an installation or configuration question, and Microsoft can only
+  provide limited support.
+
+- The customer has a problem with how to call a Perl function within the
+  script.
+
+  This is a Perl language or syntax problem, and is not supported by Microsoft.
+
+- The customer's Perl script does not work when it is run as a CGI program.
+
+  If no Perl scripts work, the problem is a setup or configuration issue, and
+  Microsoft can only provide limited support. If only one particular Perl
+  script is failing, a problem may exist with the IIS CGI environment.
+  Microsoft Product Support help to determine whether the problem exists in the
+  CGI environment or in the Perl code. However, this may take some research
+  with the customer. The customer must understand the Perl script code and be
+  able to perform normal debug actions, such as determining where the code is
+  failing.
+
+REFERENCES
+==========
+
+For additional information on confirming the proper installation and execution
+of Perl CGI scripts, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q245225 Configuring and Testing a PERL Script with IIS 4.0 and 5.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCGI kbISAPI kbISAPI300 kbISAPI400 kbGrpDSInetServer kbDSupport kbIIS kbiis300 kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200 kbiis100
+Version           : :1.0,2.0,3.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

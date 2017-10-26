@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128243: PC Win: GP Fault with Corrupt .XTN Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128243: PC Win: GP Fault with Corrupt .XTN Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128243/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128243/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128243/","publisher":null,"image":null,"headline":"Q128243: PC Win: GP Fault with Corrupt .XTN Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128243-pc-win-gp-fault-with-corrupt-xtn-files">Q128243: PC Win: GP Fault with Corrupt .XTN Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128243
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.0 of Mail for Windows will general protection (GP) fault when you
+check for new mail or view new messages.
+
+CAUSE
+=====
+
+This can be caused by irregular .XTN file sizes. If you check the .XTN files to
+see if they are divide into 698 evenly, you can tell if that is the problem.
+
+RESOLUTION
+==========
+
+This problem is fixed by version 3.06 of IMPORT.EXE and MSSFS.DLL with a date of
+5/9/93 or later.
+
+MORE INFORMATION
+================
+
+All .XTN files should be divisible by 698 into even number. Older versions of
+IMPORT.EXE will add extra bytes to end of file. You can use the RCX command in
+debug to remove the extra few bytes and make it a number that divides into 698
+evenly. Here are the steps to debug the file:
+
+1. Identify the problem .XTN. The size of a valid .XTN file should be a multiple
+  of 698 bytes.
+
+2. TYPE NETWORK.GLB in the GLB subdirectory. To the left of the 8 digit .XTN
+  file number you will see the Network Name for this file.
+
+  NOTE: At this point you could ignore the rest of the steps and use ADMIN.EXE
+  to delete and redefine the network that the problem .XTN belongs to. This
+  means you will also have to redefine all of the external Postoffices defined
+  on that network.
+
+3. Using Admin, count the number of external postoffices defined for this
+  network name. This will give us a rough approximation of what the file size
+  should be. #Postoffices * 698 approximately equals the size of the .XTN
+  file.
+
+  NOTE: The actual size of the file may be larger by a multiple of 698 since
+  there may be deleted records in the .XTN file. The only accurate way to
+  determine the contents of the XTN is to edit the .XTN file with debug and
+  reset the file size to include all records up to and including the last
+  record that is not marked as deleted.
+
+4. Using Debug, reset the file size of the problem .XTN file. The cases that
+  have been seen thus far where additional information has been appended to the
+  file were calculated by the following formula to get the actual .XTN file
+  size:
+
+  (Current Size div by 698)
+  example: (3015 div 698)
+  = 4.3194842 (Where it should divide out to 4)
+  Take 4 x 698=2792
+  This number has to be converted to HEX
+
+  Debug ????????.XTN
+  -RCX
+  :BC7 &lt;-This is the current file size
+  -AE8 &lt;-This is the number that you calculated as the correct size
+  -W
+  -Q
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

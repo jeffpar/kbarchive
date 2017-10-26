@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262632/","publisher":null,"image":null,"headline":"Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262632-run-iis-5051-instead-of-pws-on-windows-2000-professional">Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262632
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 07-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Although Personal Web Server (PWS) can be installed separately from the Windows
+NT 4.0 Option Pack (NTOP) on computers running Windows NT Workstation 4.0, PWS
+does not run on Windows 2000. Instead, you need to install Microsoft Internet
+Information Services (IIS) 5.0, which is included in Windows 2000 Professional
+and IIS 5.1, which is included in Microsoft Windows XP.
+
+RESOLUTION
+==========
+
+To install IIS 5.0 or IIS 5.1, perform the following steps:
+
+1. From the Start menu, click Control Panel, and then click "Add/Remove
+  Programs".
+
+2. Select "Add/Remove Windows Components", select the Internet Information
+  Services (IIS) component, and then follow the on-screen instructions.
+
+NOTE: IIS 5.0 and 5.1 are not installed by default unless Windows is upgraded
+over a previous version of Windows that had PWS installed.
+
+MORE INFORMATION
+================
+
+IIS has the following limitations:
+
+- Limited to 10 connections
+- Limited to one Web and one FTP server. In other words, you cannot create
+  additional virtual Web or FTP servers.
+
+Additional query words: iis 5 Personal Web Services Peer Server win2kpro w2kpro akz 5.1
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

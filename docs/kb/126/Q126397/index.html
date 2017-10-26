@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126397: SNA Server Installation Guidelines (DC or Member Server) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126397: SNA Server Installation Guidelines (DC or Member Server)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126397/","publisher":null,"image":null,"headline":"Q126397: SNA Server Installation Guidelines (DC or Member Server)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126397-sna-server-installation-guidelines-dc-or-member-server">Q126397: SNA Server Installation Guidelines (DC or Member Server)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126397
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article covers the implications of installing SNA Server on a primary
+domain controller/backup domain controller rather than a member server.
+
+MORE INFORMATION
+================
+
+SNA Server logs users on to the Windows NT domain before allowing any requests
+to be processed, regardless of the transport used by the client to connect to
+SNA Server. If SNA Server logs users onto the domain over named pipes, the users
+is not prompted for the domain password or username. For other client server
+protocols (IPX/SPX, TCP/IP, Banyan, and AppleTalk), the user is prompted for the
+domain password and username. As a result, each new client connection to SNA
+Server results in a winlogon transaction which, in the case of a member server,
+needs to be authenticated across the network by a PDC or BDC. A Windows NT
+member server does not maintain the domain user database, and therefore must
+rely on a BDC or PDC to validate the user over a secure channel.
+
+If the PDC or BDC spend a large percentage of CPU time servicing winlogon
+requests, and the clients generally stay connected to SNA Servers for a long
+time, then the administrator should install SNA Server on a member server. If
+clients connect and disconnect frequently from SNA Server, and the Windows NT
+domain is primarily used for SNA access (as is likely the case when you install
+in an existing NetWare or Banyan environment), you should install SNA Server on
+the PDC or BDC.
+
+SNA Server to SNA Server Communication Issue:
+---------------------------------------------
+
+1. SNA Server Versions 2.11 SP1 and earlier:
+
+  If SNA Servers in the same domain are located across routers, an administrator
+  must install SNA Server on a primary domain controller (PDC) or backup domain
+  controller (BDC). SNA Server to SNA Server communication is mailslot or
+  datagram based. SNA Server uses the winlogon protocols when sending messages
+  across routers.
+
+2. SNA Server 3.0 and 4.0:
+
+  SNA Server 3.0 and 4.0 systems in the same domain that are separated by
+  routers do not have to be installed on Windows NT domain controllers. SNA
+  Server 3.0 and 4.0 Setup prompts for the primary SNA Server's name if it is
+  unable to dynamically locate the primary SNA Server based on a UDP broadcast
+  datagram.
+
+
+Additional query words: prodsna backup domain controller bdc dc admin user name mail slot
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

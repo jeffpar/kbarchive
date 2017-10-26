@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133739/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133739/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133739/","publisher":null,"image":null,"headline":"Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133739-prb-order-of-read-level-clauses-different-in-visual-foxpro">Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q133739</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">FoxPro</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">15</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2000</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">3.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">The</span> <span class="n">order</span> <span class="k">in</span> <span class="n">which</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">executes</span> <span class="n">READ</span> <span class="n">clauses</span> <span class="n">is</span> <span class="n">different</span> <span class="k">from</span> <span class="n">that</span> <span class="k">of</span>
+<span class="n">previous</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">FoxPro</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">READ</span> <span class="n">DEACTIVATE</span> <span class="n">clause</span> <span class="k">in</span> <span class="n">Visual</span>
+<span class="n">FoxPro</span><span class="p">,</span> <span class="k">in</span> <span class="n">some</span> <span class="n">cases</span><span class="p">,</span> <span class="n">behaves</span> <span class="n">differently</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">FoxPro</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">now</span> <span class="n">supports</span> <span class="n">object</span> <span class="n">oriented</span> <span class="n">programming</span> <span class="p">(</span><span class="n">OOP</span><span class="p">).</span> <span class="n">This</span> <span class="n">new</span> <span class="n">event</span>
+<span class="k">model</span> <span class="n">has</span> <span class="n">changed</span> <span class="n">the</span> <span class="n">order</span> <span class="k">in</span> <span class="n">which</span> <span class="n">FoxPro</span> <span class="n">processes</span> <span class="n">certain</span> <span class="n">events</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">This</span> <span class="n">behavior</span> <span class="n">is</span> <span class="n">by</span> <span class="n">design</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">When</span> <span class="n">developing</span> <span class="n">applications</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">it</span> <span class="n">is</span> <span class="n">very</span> <span class="n">important</span> <span class="k">to</span> <span class="n">learn</span> <span class="n">the</span>
+<span class="n">order</span> <span class="k">of</span> <span class="n">events</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">event</span> <span class="k">model</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">is</span> <span class="n">greatly</span> <span class="n">enhanced</span>
+<span class="n">over</span> <span class="n">previous</span> <span class="n">versions</span><span class="p">,</span> <span class="n">items</span> <span class="n">may</span> <span class="k">not</span> <span class="n">fire</span> <span class="n">when</span> <span class="n">expected</span> <span class="k">if</span> <span class="n">compared</span> <span class="k">to</span> <span class="n">earlier</span>
+<span class="n">versions</span> <span class="k">of</span> <span class="n">FoxPro</span><span class="p">.</span>
+
+<span class="n">Code</span> <span class="n">Sample</span>
+<span class="p">-----------</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">example</span> <span class="n">demonstrates</span> <span class="n">how</span> <span class="n">Visual</span> <span class="n">FoxPro</span><span class="s1">'s READ DEACTIVATE clause
+fires in two different places depending on which version of FoxPro runs the
+program. Create the following program, and name it Readordr.prg:
+
+  ****Begin ReadOrdr.PRG****
+
+     SET PRINT TO readordr.log
+     SET PRINT ON
+     COUNT = 1
+     CLEAR
+     SET TALK OFF
+     mquit = .F.
+     ON KEY LABEL F5 mquit = .T. &amp;&amp; Use F5 to clear the READ
+
+     ***Define &amp; Activate Windows, Gets and READ
+     DEFINE WINDOW window1 FROM 1,1 TO 20,60 SYSTEM CLOSE
+     ACTIVATE WINDOW window1
+
+     @1,1 GET X1 ;
+       DEFAULT "1234567890" ;
+       SIZE 1,10 ;
+       FONT "FIXEDSYS",10 ;
+       WHEN ret("@get x1 when clause") ;
+       VALID ret("@get x1 valid clause")
+
+     @1, 40 GET Y1 ;
+       DEFAULT "1234567890" ;
+       SIZE 1,10 ;
+       FONT "FIXEDSYS",10 ;
+       WHEN ret("@get y1 when clause") ;
+       VALID ret("@get y1 valid clause")
+
+     DEFINE WINDOW window2 FROM 21,1 TO 40,60 SYSTEM CLOSE
+     ACTIVATE WINDOW window2
+
+     @1,1 GET X2 ;
+       DEFAULT "1234567890" ;
+       SIZE 1,10 ;
+       FONT "FIXEDSYS",10 ;
+       WHEN ret("@get x2 when clause") ;
+       VALID ret("@get x2 valid clause")
+
+     @1, 40 GET Y2 ;
+       DEFAULT "1234567890" ;
+       SIZE 1,10 ;
+       FONT "FIXEDSYS",10 ;
+       WHEN ret("@get y2 when clause") ;
+       VALID ret("@get y2 valid clause")
+
+     READ ;
+       CYCLE ;
+       MODAL ;
+       ACTIVATE ret("read activate clause") ;
+       DEACTIVATE ret("read deactivate clause") ;
+       VALID ret("read valid clause", IIF(mquit = .T., .T.,.F.)) ;
+       WHEN ret("read when clause") ;
+       SHOW ret("read show clause")
+
+     ***CleanUp Code
+     RELEASE WINDOW window1
+     RELEASE WINDOW window2
+     SET PRINT OFF
+     SET PRINT TO
+
+     ***************************
+     *  Function to print return values to Readordr.log file
+     *  This function is called every time an event occurs, events found
+     *  in this program include:
+     *       READ WHEN
+     *            ACTIVATE
+     *            SHOW
+     *            DEACTIVATE
+     *            VALID
+     *       SHOW GET WHEN
+     *                VALID
+     **************************
+
+     FUNCTION ret
+     PARAMETERS clause, retval
+     IF param() &lt; 2
+        retval = .T.
+     ENDIF
+     ? ALLTRIM(STR(count)) + ": "
+     ?? clause
+     count = count + 1
+     RETURN retval
+
+     ***End of Program Readordr.Prg
+
+When you run the Readordr.prg program, each of the events that fires is written
+to a log file name Readordr.log. You can use this file to check the order of
+events in Visual FoxPro or in a previous version of FoxPro.
+
+Steps to Demonstrate Behavior
+-----------------------------
+
+To illustrate this point, execute the Readordr.prg program in Visual FoxPro, and
+then follow these steps:
+
+1. When the screen is run, these events occur in this order:
+
+  READ WHEN (determines if we may enter the READ)
+  READ ACTIVATE (fires when READ is executed)
+  READ SHOW (occurs when @GET fields are shown on the screen)
+  @GET X1 WHEN (occurs when the cursor moves to the first GET object)
+
+  This behavior is identical to the behavior of previous FoxPro versions.
+
+2. From the first GET field (X1), press the TAB key to move the focus to the
+  second field (Y1) on the screen. The following events occur:
+
+  @GET X1 VALID (occurs when we attempt to leave the object)
+  @GET Y1 WHEN
+
+  This behavior is identical to the behavior of previous FoxPro versions.
+
+3. From the second GET field (Y1), press the TAB key again, this moves the focus
+  from Y1 to X2, but also moves from Window1 to Window2. These events occur:
+
+  @GET Y1 VALID
+  @GET X2 WHEN
+  READ DEACTIVATE (Occurs when we move from one window to the next)
+
+  This behavior is different from previous versions of FoxPro. Notice the WHEN
+  clause for the first object on window2 is fired before the READ DEACTIVATE.
+  In previous versions, the order of events was:
+
+  @GET Y1 VALID
+  READ DEACTIVATE
+
+4. To exit the Readordr.prg program, press the F5 key and then the ESC key.
+
+5. Run the same code in a previous version of FoxPro, and compare the log files.
+
+Why Visual FoxPro Uses a Different Firing Order
+-----------------------------------------------
+
+The reason why Visual FoxPro differs is because of the current event model. The
+Visual FoxPro order of events is described in the Visual FoxPro Help file in the
+"Visual FoxPro Event Sequence" topic.
+
+In the example, you press TAB to move from window1 to window2. The events are
+firing in the correct order. First, the VALID clause of Y1 determines if you may
+leave the object. Second, the WHEN clause is executed for the first object (X2)
+on window2. This occurs because Visual FoxPro'</span><span class="n">s</span> <span class="n">order</span> <span class="k">of</span> <span class="n">events</span> <span class="n">executes</span> <span class="n">the</span>
+<span class="n">WHEN</span> <span class="n">clause</span> <span class="n">for</span> <span class="n">the</span> <span class="k">next</span> <span class="n">object</span> <span class="k">in</span> <span class="n">the</span> <span class="n">TAB</span> <span class="n">order</span><span class="p">,</span> <span class="n">before</span> <span class="n">the</span> <span class="n">form</span> <span class="n">object</span>
+<span class="p">(</span><span class="n">window1</span><span class="p">)</span> <span class="n">loses</span> <span class="n">the</span> <span class="n">focus</span><span class="p">.</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">has</span> <span class="k">to</span> <span class="n">first</span> <span class="n">determine</span> <span class="k">if</span> <span class="n">the</span> <span class="k">next</span>
+<span class="n">object</span> <span class="n">will</span> <span class="n">get</span> <span class="n">the</span> <span class="n">focus</span> <span class="n">before</span> <span class="n">the</span> <span class="n">current</span> <span class="n">object</span> <span class="n">loses</span> <span class="n">the</span> <span class="n">focus</span><span class="p">.</span> <span class="n">When</span> <span class="n">the</span>
+<span class="n">form</span> <span class="n">object</span> <span class="p">(</span><span class="n">window1</span><span class="p">)</span> <span class="n">loses</span> <span class="n">the</span> <span class="n">focus</span><span class="p">,</span> <span class="n">the</span> <span class="n">READ</span> <span class="n">DEACTIVATE</span> <span class="n">is</span> <span class="n">executed</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">WHEN</span> <span class="n">clause</span> <span class="n">for</span> <span class="n">X2</span> <span class="n">fails</span><span class="p">,</span> <span class="n">the</span> <span class="n">form</span> <span class="n">object</span> <span class="p">(</span><span class="n">window1</span><span class="p">)</span> <span class="n">will</span> <span class="k">not</span>
+<span class="n">lose</span> <span class="n">focus</span><span class="p">,</span> <span class="n">so</span> <span class="n">the</span> <span class="n">DEACTIVATE</span> <span class="n">clause</span> <span class="n">should</span> <span class="k">not</span> <span class="n">fire</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">VFoxWin</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVFPsearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbVFP300</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.0</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

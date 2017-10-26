@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155834/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155834/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155834/","publisher":null,"image":null,"headline":"Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155834-info-odbc-drivers-installed-with-visual-foxpro-50">Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155834
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+Last Modified: 03-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the ODBC drivers that are included with Microsoft Visual
+FoxPro for Windows and covers issues that might arise in the installation and
+configuration of these drivers.
+
+MORE INFORMATION
+================
+
+Microsoft Visual FoxPro for Windows includes the following ODBC drivers:
+
+- Microsoft Access
+- Microsoft Excel
+- Microsoft SQL Server
+- Microsoft Visual FoxPro
+- Microsoft FoxPro 2.6 and dBASE
+- Oracle
+- Paradox
+- Text files
+
+These drivers are installed in your Windows System directory along with the
+32-bit ODBC Administrator. Once installed they cannot be removed by an uninstall
+of Visual FoxPro, allowing other applications that require them to function
+properly.
+
+In addition to installing the drivers and the ODBC Administrator, default data
+sources are created for the types of files listed below. You may use these to
+access data files on your machine without having to create a new data source:
+
+- dBASE Files (*.dbf)
+- Excel Files (*.xls)
+- FoxPro Files (*.dbf)
+- Microsoft Access 7.0 Databases (*.mdb)
+- Paradox Files (*.db)
+- Text Files (*.txt, *.csv)
+- Visual FoxPro Databases (*.dbc)
+- Visual FoxPro Tables (*.dbf)
+
+Default data sources are not created for the Microsoft SQL Server and Oracle
+drivers. You must use the 32-bit ODBC Administrator to create them. (See the
+note about the Oracle ODBC Driver below).
+
+Notes on the Microsoft Visual FoxPro driver
+-------------------------------------------
+
+If you chose not to install the Visual FoxPro driver when you initially installed
+Microsoft Visual FoxPro (either by selecting a Laptop Installation or by
+unchecking it from the Custom Install) and you later re- run the setup program
+to add the Microsoft Visual FoxPro driver, only the default data source for
+Visual FoxPro tables are created. You may use the 32-bit ODBC Administrator to
+create a default data source for Visual FoxPro databases.
+
+Notes on the Oracle ODBC driver
+-------------------------------
+
+If you do not already have access to the Oracle database using Oracle's tools,
+you cannot create a data source using the Oracle driver. Contact your Oracle
+representative to get the necessary files to enable this access.
+
+Additional query words: ODBC Oracle
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

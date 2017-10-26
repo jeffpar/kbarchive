@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125606/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125606/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125606/","publisher":null,"image":null,"headline":"Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125606-info-password-dll-file-that-can-be-called-anywhere-in-foxpro">Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125606
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500
+Last Modified: 19-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example code how to generate a modal dialog box on top of
+the FoxPro desktop. The structure of code in this article follows the same
+structure shown in the LCK manual -- FoxPro code is given first followed by the
+C code. The C code was compiled using Visual C++ version 1.5.
+
+MORE INFORMATION
+================
+
+The following example creates a .DLL that defines a modal dialog box for
+passwords. This is a generic example where the user can pass both the dialog
+title and the length of the password. The .DLL will return the password to
+FoxPro.
+
+FoxPro Code
+-----------
+
+     CLEAR
+     CLOSE DATABASES
+     PASSWORD=SPACE(50)   &amp;&amp; DEFINE THE PASSWORD TO BE
+                          &amp;&amp; OF 50 ELEMENTS
+     SET LIBRARY TO SYS(2004)+'FOXTOOLS' &amp;&amp; SET THE LIBRARY TO FOXTOOLS
+     FHANDLE=MAINHWND()   &amp;&amp; RETURN FOXPRO MAIN SCREEN HANDLE
+     FUNCHANDLE=REGFN("MyInputBox","LC@CI","I","C:\FPW26\PASSWORD.DLL")
+     * THE .DLL TITLE IS "PASSWORD DIALOG"
+     * THE FHANDLE IS THE FOXPRO DESKTOP HANDLE
+     * THE FUNCHANDLE IS A HANDLE TO THE FUNCTION IN THE .DLL
+     * THE .DLL RETURNS THE PASSWORD IN THE VARIABLE PASSWORD
+     =CALLFN(FUNCHANDLE,FHANDLE,"PASSWORD DIALOG",@PASSWORD,50)
+     PASSWORD=ALLTRIM(PASSWORD) &amp;&amp; TRIM PROCEEDING SPACES
+     RELEASE LIBRARY SYS(2004)+'FOXTOOLS'
+
+C Code
+------
+
+Because this is a true .DLL and not an .FLL, all required functions of the .DLL
+must be included. These files are: the C code file, the resource file (RC), and
+the definition file (DEF). These files are required to compile any true Windows
+.DLL file
+
+To generate the .DLL file, you need a text editor and a C for Windows compiler.
+This example was compiled using Visual C++ version 1.5
+
+1. Create a text file with your favorite text editor or use the Visual Workbench
+  if you are using Visual C++. Type in the following code into the file, and
+  save it as MYDLL.C:
+
+     #include &lt;windows.h&gt;
+     #include "mydll.h"
+
+     // Data Structures
+     typedef struct tagXFERBUFFER2
+     {char *lpszTitle;
+     LPSTR lpszBuffer;
+     int *length;
+     }XFERBUFFER2;
+     //Prototyping
+     BOOL FAR PASCAL _export InputBoxDlgProc(HWND hDlg, UINT
+     message,WPARAM wParam, LPARAM lParam);
+     int FAR PASCAL _export WEP(int nShutDownFlag);
+     int FAR PASCAL _export MyInputBox(HWND hWndParent, LPCSTR
+     lpszTitle,LPSTR Buffer, int StrLen);
+     HINSTANCE ghInstance;
+     /*******************************************/ 
+     /* THE FOLLOWING FUNCTION  (LibMain) IS    */ 
+     /* NEEDED FOR EVERY .DLL                   */ 
+     /*******************************************/ 
+     int FAR PASCAL LibMain(HINSTANCE hInstance, WORD wDataSeg,
+     WORD wHeapSize, LPSTR lpszCmdLine)
+     {ghInstance=hInstance;
+     if (wHeapSize &gt; 0)
+     UnlockData(0);
+     ghInstance = hInstance;
+     return 1;}
+     /*******************************************/ 
+     /* THE FOLLOWING FUNCTION  (WEP) IS    */ 
+     /* NEEDED FOR EVERY .DLL                   */ 
+     /*******************************************/ 
+     int FAR PASCAL _export WEP(int nShutDownFlag)
+     { return 1;}
+     /*******************************************/ 
+     /* THE FOLLOWING FUNCTION  (MyInputBox) IS*/ 
+     /* WHAT THE FOXPRO .PRG CALLS*/ 
+     /*******************************************/ 
+     /*******************************************/ 
+     int FAR PASCAL _export MyInputBox(HWND hWndParent,
+     LPCSTR lpszTitle,LPSTR Buffer, int Length)
+     {DLGPROC lpfnInputBoxDlgProc;
+     XFERBUFFER2 XferBuffer;
+     int Result;
+     XferBuffer.lpszTitle = (char *) lpszTitle;
+     XferBuffer.lpszBuffer = (LPSTR) Buffer;
+     XferBuffer.length = &amp;Length;
+     lpfnInputBoxDlgProc= (DLGPROC)
+     MakeProcInstance((FARPROC)InputBoxDlgProc, ghInstance);
+     Result=DialogBoxParam(ghInstance,"INPUTDIALOG",
+     hWndParent,lpfnInputBoxDlgProc,(LPARAM)&amp;XferBuffer);
+     FreeProcInstance((FARPROC)lpfnInputBoxDlgProc);
+     return Result;}
+     /*******************************************/ 
+     BOOL FAR PASCAL _export InputBoxDlgProc(HWND hDlg,
+     UINT message,WPARAM wParam, LPARAM lParam)
+     {static XFERBUFFER2 *XferBuffer;
+     switch(message)
+     {case WM_INITDIALOG :
+     {XferBuffer = (XFERBUFFER2*)lParam;
+     SetWindowText(hDlg, XferBuffer-&gt;lpszTitle);
+     return TRUE; }
+     case WM_COMMAND :
+     {switch(wParam)
+     {case IDOK :
+     {int NumChars;
+     NumChars=GetDlgItemText(hDlg,IDD_EDIT,
+     (XferBuffer-&gt;lpszBuffer+'\0'),
+     *XferBuffer-&gt;length+'\0');
+     EndDialog(hDlg,NumChars);
+     break; }
+     case IDCANCEL :
+     {  EndDialog(hDlg, 0);
+     break;}}}}
+     return FALSE;}
+
+2. Create a new text file, type the following code into it, and save it as
+  MYDLL.DEF:
+
+     LIBRARY    mydll
+     EXETYPE    WINDOWS
+     CODE       PRELOAD MOVEABLE DISCARDABLE
+     DATA       PRELOAD SINGLE
+     HEAPSIZE   1024
+     EXPORTS    MyInputBox
+
+3. Create a new text file. Type the following code into it, and save it as
+  MYDLL.RC:
+
+     #include &lt;windows.h&gt;
+     #include "mydll.h"
+     INPUTDIALOG DIALOG 20, 24, 180, 64
+     STYLE WS_POPUP | WS_CAPTION | DS_SETFONT
+     FONT 8, "Helv"
+     BEGIN
+     CONTROL "", IDD_EDIT, "EDIT", WS_CHILD | WS_VISIBLE | WS_BORDER |
+     WS_TABSTOP | ES_AUTOHSCROLL  | ES_PASSWORD, 10, 20, 160, 12
+     DEFPUSHBUTTON "&amp;OK", IDOK, 47, 42, 40, 14
+     PUSHBUTTON "&amp;Cancel", IDCANCEL, 93, 42, 40, 14
+     END
+
+4. Create a new text file, type the following line of code into it, and save it
+  as MYDLL.H:
+
+     #define IDD_EDIT    200
+
+5. In Visual C++, create a new project and name it PASSWORD.
+
+6. From the Option menu, choose Project, and select "Windows dynamic-link
+  library (DLL)" as the project type.
+
+7. Add the files MYDLL.C, MYDLL.DEF, and MYDLL.RC to the project.
+
+8. From the project menu, choose build PASSWORD.DLL
+
+9. Run the code in FoxPro.
+
+Additional query words: API WinMain
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300 kbVFP500
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

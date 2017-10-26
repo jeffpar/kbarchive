@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/229/Q229648/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/229/Q229648/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/229/Q229648/","publisher":null,"image":null,"headline":"Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q229648-xadm-sent-field-displayed-incorrectly-in-forwarded-message">Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q229648
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:98; winnt:5.5
+Operating System(s): 
+Keyword(s): exc55 EXC55SP3Fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a message using the Chinese Traditional version of an e-mail
+client and send the message to a computer that is running the U.S. version of
+Microsoft Exchange Server, and then a rule is applied that forwards the message,
+the Sent field in the copy of the original message that is included in the
+forwarded message may be displayed similar to the following:
+
+  ????: date
+
+where date is the date on which the original message was sent. That is, the word
+"Sent" is displayed as four question marks.
+
+Note that this problem only occurs when the rule is processed on the server. If
+you are running the Internet Mail Only (IMO) version of Microsoft Outlook 98 or
+the rule is configured to notify you using a specific message, the rule is not
+processed on the server. However, the problem occurs regardless of whether the
+original message is formatted as plain text, Rich Text Format (RTF), or
+Hypertext Markup Language (HTML).
+
+CAUSE
+=====
+
+This problem occurs when the server uses the wrong code page conversion routine
+while converting the original message.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, click the following article number to
+view the article in the Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: MDB
+
++-------------------------+
+| File name  | Version    | 
++-------------------------+
+| Store.exe  | 5.5.2587.0 | 
++-------------------------+
+| Mdbmsg.dll | 5.5.2587.0 | 
++-------------------------+
+| Gapi32.dll | 5.5.2587.0 | 
++-------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+Additional query words: cht cpid rules wizard inbox assistant
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:98; winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

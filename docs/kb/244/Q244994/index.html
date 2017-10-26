@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244994/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244994/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244994/","publisher":null,"image":null,"headline":"Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244994-unattended-installation-of-windows-nt-does-not-autodetect-3c905">Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244994
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform an unattended installation of Microsoft Windows NT Workstation
+4.0, Setup may not automatically detect the 3C905 Original Equipment
+Manufacturer (OEM) network adapter, and may therefore not install it.
+
+CAUSE
+=====
+
+This behavior can occur because the Oemsetup.inf file included with the network
+adapter does not have the appropriate settings for an unattended installation.
+You must modify the file before you begin the unattended installation.
+
+RESOLUTION
+==========
+
+To work around this issue, modify the Oemsetup.inf file:
+
+1. Before you modify the file, make a backup copy of the original Oemsetup.inf
+  file supplied by the OEM.
+
+2. Modify the original Oemsetup.inf file as follows:
+
+    Original Oemsetup.inf:   [InstallOptions]
+    Install_dRMON = ''YES''
+    Install_3NIC_Diag = ''YES''
+    Install_PACE = ''YES''
+    Install_Shortcuts = ''YES''
+
+    Replace with:
+    [InstallOptions]
+    Install_dRMON = ''NO''
+    Install_3NIC_Diag = ''NO''
+    Install_PACE = ''NO''
+    Install_Shortcuts = ''NO''
+
+    Original Oemsetup.inf:
+    [Options]
+    3C90X 
+    3C905 
+    3C900 
+
+    Replace with:
+    [Options] 
+    3C905 
+
+    Original Oemsetup.inf:
+    Debug-Output $(InfName)''Adding files: Files-$(NDIS_VER),
+    SrcDir=$(SrcDir)''
+    AddSectionFilesToCopyList Files-$(NDIS_VER)
+    $(SrcDir)WIN32\$(!STF_PLATFORM)     $(!STF_WINDOWSSYSPATH)\drivers
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    Debug-Output $(InfName)''Adding files: Files-$(NDIS_VER), SrcDir=$(SrcDir)''
+    AddSectionFilesToCopyList Files-$(NDIS_VER) $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-Uninstaller $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-Uninstaller $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-3nicdiag $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+    AddSectionFilesToCopyList Files-HwDll $(SrcDir)WINNT $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-3nicdiag $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    AddSectionFilesToCopyList Files-HwDll $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-PACE $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-PACE $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-Tray $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-Tray $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-dRMON $(SrcDir)drmon $(!STF_WINDOWSSYSPATH)
+    AddSectionFilesToCopyList Files-dRMONINF $(SrcDir)WINNT $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Replace with:
+    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+    AddSectionFilesToCopyList Files-dRMON $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    AddSectionFilesToCopyList Files-dRMONINF $(SrcDir) $(!STF_WINDOWSSYSPATH)
+    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+
+    Original Oemsetup.inf:
+    [OptionsTextENG]
+    3C90X = ''3Com Fast EtherLink/Etherlink XL PCI Busmaster NIC''
+
+    Replace with:
+    [OptionsTextENG]
+    3C905 = ''3Com Fast EtherLink/Etherlink XL PCI Busmaster NIC''
+
+3. After you modify the Oemsetup.inf file, perform the unattended installation
+  of Windows NT Workstation 4.0.
+
+MORE INFORMATION
+================
+
+For additional information about how to install Windows NT Workstation 4.0 and
+an OEM network adapter, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q156823 How to Install an OEM Network Adapter Card in WinNT 4.0 Setup
+
+Additional query words: nic autodetect
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

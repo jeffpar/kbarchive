@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193941: INFO: Location of Oracle’s Public FTP Site | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193941: INFO: Location of Oracle’s Public FTP Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193941/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193941/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193941/","publisher":null,"image":null,"headline":"Q193941: INFO: Location of Oracle’s Public FTP Site","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193941-info-location-of-oracles-public-ftp-site">Q193941: INFO: Location of Oracle’s Public FTP Site</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193941
+Product(s): Open Database Connectivity (ODBC)
+Version(s): Build 2.573.2927
+Operating System(s): 
+Keyword(s): kbOracle kbDSupport
+Last Modified: 12-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.5 Build 2.573.2927 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Oracle maintains a public FTP site where it posts, among other things, patches
+to the Oracle server products and the client component that ships with the
+server products. These patches are required for the proper functioning of
+several Microsoft products and technologies. For example, the Microsoft Oracle
+ODBC Driver, the Microsoft Oracle OLE DB Provider, Internet Information Server
+(IIS), Microsoft Transaction Server (MTS) and so forth.
+
+MORE INFORMATION
+================
+
+The public FTP site is located at the following address:
+
+  oracle-ftp.oracle.com
+
+The User ID and Password for this site follows:
+
+  User ID:     anonymous
+  Password:    &lt;your e-mail address&gt;
+
+The patches most relevant to users of Windows 95, Windows 98 and Windows NT are
+located in the following directory:
+
+  /server/wgt_tech/server/windowsNT
+
+Once in this directory, you can navigate to the appropriate sub-directory
+depending on what version of Oracle you are using, 7.3 or 8.0. The two sub-
+directories are:
+
+  /73patchsets
+  /80patchsets
+
+The third sub-directory is for patches to Oracle's network technology, either
+SQL*Net or Net8. These patches are in the following directory:
+
+  /network
+
+Accessing this FTP site from your Web browser may not work. If you experience
+problems you should try using a "traditional" FTP client or use the DOS Command
+prompt. Two Windows 95, Windows 98 and Windows NT clients that work well
+follow:
+
+- WS_FTP from Ipswitch, Inc located at http://www.ipswitch.com -and-
+
+- CuteFTP from GlobalSCAPE, Inc located at http://www.cuteftp.com
+
+Since Oracle rolls all bug fixes forward and they back-port bug fixes from one
+version (Oracle 8) to another (say Oracle 7.3), it is recommended that you use
+the latest patch available. This is especially true for the Oracle Server Client
+components. If you have any questions about installing these patches check with
+Oracle Support before you install them.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q191168 INFO: Failed to Enlist on Calling Object's Transaction
+
+  Q193893 INFO: Using Oracle with Microsoft Transaction Server and COM+
+
+Additional query words: oracle patches
+
+======================================================================
+Keywords          : kbOracle kbDSupport 
+Technology        : kbAudDeveloper kbODBCSearch kbODBCOracle25732927 kbODBCOracle250Search
+Version           : :Build 2.573.2927
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

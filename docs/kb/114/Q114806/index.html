@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114806: How to Determine the Path to the Macintosh Desktop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114806: How to Determine the Path to the Macintosh Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114806/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114806/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114806/","publisher":null,"image":null,"headline":"Q114806: How to Determine the Path to the Macintosh Desktop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114806-how-to-determine-the-path-to-the-macintosh-desktop">Q114806: How to Determine the Path to the Macintosh Desktop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114806
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Macintosh desktop is the background area displayed on a Macintosh. It
+contains icons for folders, applications, disks, and the Trash.
+
+In FoxPro, the desktop is referenced as a subfolder (subdirectory), called
+"Desktop Folder," in the main volume (hard disk).
+
+MORE INFORMATION
+================
+
+Steps to Determine the Volume's Name
+------------------------------------
+
+Type the following in the Command window:
+
+     SET VOLUME C: TO  &amp;&amp; Clears VOLUME setting, if any
+     SET DEFAULT TO    &amp;&amp; Makes the volume's root the current directory
+     ?SYS(5)           &amp;&amp; Returns the current volume (disk) name
+
+Steps to Set the Default to a Folder in the Desktop
+---------------------------------------------------
+
+These steps assume that the volume (disk) name is "Macintosh HD:". If needed, use
+the steps listed above to determine your volume's name.
+
+1. Close all open windows. The only thing in view should be the desktop.
+
+2. From the File menu, choose New Folder.
+
+3. A folder named untitled folder is created on the desktop. Change the name of
+  the folder to "TEST" (without the quotation marks).
+
+4. Start FoxPro.
+
+5. To set the default to the TEST folder in the desktop, type one of the
+  following code snippets in the Command window:
+
+        SET VOLUME C: TO "Macintosh HD:"
+        SET DEFAULT TO "C:\Desktop Folder\TEST"
+
+  -or-
+
+        SET DEFAULT TO "Macintosh HD:\Desktop Folder\TEST"
+
+Example of Code That's Independent of Folder or Volume Name
+-----------------------------------------------------------
+
+     CLEAR
+     CLEAR ALL
+     DEFINE WINDOW GetInfo FROM 0,0 to 20,70
+     ACTIVATE WINDOW GetInfo
+     MOVE WINDOW GetInfo Center
+     @ 0,0 SAY "This example will set the default directory to"
+     @ 1,0 SAY "&lt;volume name&gt;:\&lt;FoxPro folder&gt; and then use the "
+     @ 2,0 SAY "CUSTOMER.DBF table in area #1. This will demonstrate"
+     @ 3,0 SAY "how to make your code independent of any specific"
+     @ 4,0 SAY "folder or volume name..."
+     FPFOLDER = "          "
+     @ 6,0 SAY "Enter the folder name where FoxPro is installed"
+     @ 7,0 GET FPFolder PICTURE "XXXXXXXXXXXXXXXXXX" DEFAULT "MyFolder"
+     READ
+     FPFOLDER = ALLTRIM(FPFolder)
+     @ 8,0 SAY "------------"
+     @ 9,0 SAY "Volume name is: "+SYS(5)
+     @ 10,0 SAY "Currently located in: "+SYS(2003)
+     CURLOC = SYS(5)+ FPFOLDER
+     @ 11,0 SAY "Setting default directory/folder to: "+CURLOC
+     SET DEFAULT TO (Curloc)
+     @ 12,0 SAY "Using "+CURLOC+":Tutorial:CUSTOMER.DBF in area # 1"
+     SELECT 1
+     USE "TUTORIAL\CUSTOMER" IN 1
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac desk top akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

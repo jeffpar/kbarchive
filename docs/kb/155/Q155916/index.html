@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155916: XCLN: Event ID’s 1047 and 1038 from the Free/Busy Connector | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155916: XCLN: Event ID’s 1047 and 1038 from the Free/Busy Connector" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155916/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155916/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155916/","publisher":null,"image":null,"headline":"Q155916: XCLN: Event ID’s 1047 and 1038 from the Free/Busy Connector","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155916-xcln-event-ids-1047-and-1038-from-the-freebusy-connector">Q155916: XCLN: Event ID’s 1047 and 1038 from the Free/Busy Connector</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155916
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt use the Microsoft Schedule+ Free/Busy Connector that comes with
+Microsoft Exchange Server, version 4.0, you might see the following errors:
+
+  Event ID: 1047
+  Source: MSExchangeFB
+  Category: Error
+
+  Unable to open the site folder &lt;X.500 DN of site container&gt;.
+  MAPI returns 80070005 due to last error code 0.
+
+  Event ID: 1038
+  Source: MSExchangeFB
+  Category: Error
+
+  Unable to access the Microsoft Schedule+ Free/Busy Information folder. Ensure
+  that the (hidden) Microsoft Schedule+ Free/Busy Information folder exists.
+  Open the Recipients container and select View.HiddenRecipients.
+
+These errors can be caused by having the default role on the hidden Schedule+
+Free Busy information folder set to something other then Editor. To eliminate
+these errors, change the default role to Editor.
+
+MORE INFORMATION
+================
+
+To change the default role on the Schedule+ Free Busy folder, follow these
+steps:
+
+1. Start the Microsoft Exchange Administrator program.
+
+2. Expand the Folders container, then expand the System Folders container.
+
+3. Expand the Schedule+ Free Busy container and select the folder for your Site.
+
+4. Open the File menu and Click Properties.
+
+5. Click the Client Permissions button.
+
+6. Select Editor from the Roles dropdown list.
+
+7. Click OK and then click OK again.
+
+You might also see these errors in the application event log:
+
+  Event ID: 1034
+  Source: MSExchangeFB
+  Category: Error
+
+  Unable to open or process folder &lt;X.500 address to the Schedule+ Free Busy
+  folder&gt;.
+
+  Event ID: 1036
+  Source: MSExchangeFB
+  Category: Error
+
+  Unable to process and export the Microsoft Schedule+ Free/Busy Connector
+  information for user USER-/CN=RECIPIENTS/CN=&lt;UserID&gt;.
+
+Additional query words: 4.00 Sched+ Sched FB MSExchangeFB
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

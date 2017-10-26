@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112524/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112524/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112524/","publisher":null,"image":null,"headline":"Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112524-ppt-lotus-1-2-3-chart-object-fill-colors-lost-in-powerpoint">Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112524
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbole kbdta kbconversion
+Last Modified: 15-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+- Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you insert a Lotus 1-2-3 version 4.0 or 5.0 object into PowerPoint 7.0 or
+PowerPoint 97 using the Insert menu, clicking Object and clicking Create from
+file, you see a solid black box where your image should be.
+
+If you insert a Lotus 1-2-3 version 4.0 or 5.0 object into PowerPoint 4.0, 7.0,
+or PowerPoint 97 using Copy and Paste, the fill colors are lost. For example,
+the area inside the bars of a bar chart lose their color.
+
+CAUSE
+=====
+
+This is because Lotus 1-2-3 versions 4.0 and 5.0 put device-dependent
+information in the metafiles it uses to represent its objects. The Windows
+Software Development Kit (SDK) recommends that you do not use device- dependent
+information in metafiles.
+
+PowerPoint recognizes that the information provided is device-dependent so it
+simply ignores the information to prevent any future problems when using that
+object in PowerPoint.
+
+This problem has been reported to Lotus by Microsoft development.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 4.00 4.00a 4.00c 7.00 empty blank region 123 1 2 3 graph winppt ppt95
+
+======================================================================
+Keywords          : kb3rdparty kbole kbdta kbconversion 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:4.0,4.0a,4.0c,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

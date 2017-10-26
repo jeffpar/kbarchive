@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125440: Modifications to System Files Made by Media Vision Premium/Pro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125440: Modifications to System Files Made by Media Vision Premium/Pro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125440/","publisher":null,"image":null,"headline":"Q125440: Modifications to System Files Made by Media Vision Premium/Pro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125440-modifications-to-system-files-made-by-media-vision-premiumpro">Q125440: Modifications to System Files Made by Media Vision Premium/Pro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125440
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Media Vision Premium 3-D Sound Card 
+- Media Vision Pro 3-D Sound Card 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the modifications made to the following configuration files
+when you install the Media Vision Premium 3-D or Media Vision Pro 3-D sound
+card:
+
+- CONFIG.SYS
+
+- AUTOEXEC.BAT
+
+- SYSTEM.INI
+
+For additional information about Media Vision products, contact:
+
+- Media Vision's bulletin board service (BBS): (510) 770-0968
+
+- Media Vision's Word-Wide Web site on the Internet:
+
+  http://www.mediavis.com
+
+- Media Vision's CompuServe forum: GO MEDIAVISON
+
+- Media Vision product support, phone: (503) 882-1177
+
+CONFIG.SYS
+----------
+
+     DEVICE=C:\MEDVSN\PA3D.SYS A220 D1 I7 H7 M320 Q2
+
+AUTOEXEC.BAT
+------------
+
+     SET  BLASTER=A220  I7  D1  H7  T4
+
+SYSTEM.INI
+----------
+
+     [BOOT]
+     SOUND.DRV=MMSOUND.DRV
+     DRIVERS=MMSYSTEM.DLL MSMIXMGR.DLL MMMIXER.DLL
+
+     [386ENH]
+     DEVICE=VPA3DD.386
+     DMABUFFERSIZE=064
+
+     [MCI]
+     CDAUDIO=MCICDA.DRV
+
+     [DRIVERS]
+     WAVE=PA3DWAVE.DRV
+     MIXER=PA3DMXD.DRV
+     MIDI=MVIFM.DRV
+     MIDI1=PA3D401.DRV
+
+     [PA3DWAVE.DRV]
+     PORT=220
+     INT=7
+     DMACHANNEL=1
+     DMACHANNEL2=7
+
+     [PA3D401.DRV]
+     INT=2
+     PORT=320
+     BOARD=0
+
+Entries Appearing in the Control Panel
+--------------------------------------
+
+  Media Vision 401 Midi Driver
+  Media Vision FM Synth Driver
+  Media Vision Mixer Driver
+  Media Vision Wave Driver
+  MIDI Mapper
+  Timer
+  [MCI]CD Audio
+  [MCI]MIDI Sequencer
+  [MCI]Sound
+
+MORE INFORMATION
+================
+
+Possible CONFIG.SYS file PA3D.SYS parameters may be:
+
+  A#      Base addresses for the sound card: 210, 220, 230, 240, 250,
+          260. DO NOT use 230 unless the sound card's SCSI host
+          address is removed. Default is A220.
+
+  D#      Sound Blaster 8-bit DMA channels 1 and 3. Default is D1.
+
+  I#      IRQ assignment for the board: 2,3,5,7,10, and 15. Default
+          is I7.
+
+  H#      16-bit DMA channel: 5 and 7. Default is H7.
+          NOTE: on the Media Vision Premium 3-D, the 16-bit DMA channel
+can also be set to 1
+
+  M#      MPU-401 emulation base address: 300, 310, 320 and 330.
+          Default is M320.
+
+  Q#      MPU-401 emulation IRQ: 2, 3, 5, and 7. Default is Q2.
+
+Optional Parameters
+
+  V       Displays all hardware settings during driver load.
+
+  N       Don't print sign-on banner.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: kbhowto multi media multimedia multi-media kbdisplay kbsound kbhw mmtitles audio 3d
+
+======================================================================
+Keywords          :  
+Technology        : kb3rdpartySearch kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

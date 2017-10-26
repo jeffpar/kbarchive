@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130005: HOWTO: Use a Custom Class to Encrypt Passwords | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130005: HOWTO: Use a Custom Class to Encrypt Passwords" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130005/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130005/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130005/","publisher":null,"image":null,"headline":"Q130005: HOWTO: Use a Custom Class to Encrypt Passwords","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130005-howto-use-a-custom-class-to-encrypt-passwords">Q130005: HOWTO: Use a Custom Class to Encrypt Passwords</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130005
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many applications require a level of security that necessitates password
+protection. Password validation requires comparing passwords to a list of
+acceptable passwords, normally stored in table form. This article demonstrates
+how to create a custom class that encrypts passwords and allows passwords to be
+manipulated in encrypted form, allowing a higher level of security.
+
+MORE INFORMATION
+================
+
+The following code sample demonstrates how to use a Custom Class to encrypt and
+decrypt a password. The password can then be used in encrypted form for added
+security.
+
+Code Sample
+-----------
+
+  * Beginning of pwdclass.prg
+  *
+  * To use this program, run it; then type the password in the upper-left
+  * text box, and press ENTER. The Encrypt_It procedure in the FxtoolFormdes
+  * instance of the PASS_WORD class is called in the valid of the text box.
+  * The encrypted password is displayed in the lower-left text.
+  * Pressing the Decrypt It! button calls the Decrypt_It procedure
+  * in the custPassword instance of the PASS_WORD class. The resulting
+  * value is displayed in the text box below the Decrypt It! button.
+  *************
+
+  frmPwdform = CREATEOBJECT("pwdform") &amp;&amp; Instantiate class from pwdform.
+
+  frmPwdform.VISIBLE = .T.
+  READ EVENTS
+
+  * Define Form Class:
+
+  DEFINE CLASS pwdform AS FORM
+
+     CAPTION = "Password Encryption Example"
+     ADD OBJECT custPassword AS PASS_WORD  &amp;&amp; Add Password object to form.
+
+     HEIGHT = 130
+     WIDTH = 350
+     AUTOCENTER = .T.
+
+     ADD OBJECT txtText1 AS TEXTBOX WITH ;
+        HEIGHT = 25, ;
+        LEFT = 25, ;
+        TOP = 20, ;
+        WIDTH = 125, ;
+        PASSWORDCHAR = "*", ;
+        NAME = "txtText1"
+
+     ADD OBJECT txtText2 AS TEXTBOX WITH ;
+        HEIGHT = 25, ;
+        LEFT = 25, ;
+        TOP = 72, ;
+        WIDTH = 125, ;
+        READONLY = .T., ;
+        NAME = "txtText2"
+
+  * Command button to demonstrate the call to Decrypt_It procedure is
+  * contained in cmdCommand1.click in the following procedure:
+
+     ADD OBJECT cmdCommand1 AS COMMANDBUTTON WITH ;
+        TOP = 20, ;
+        LEFT = 200, ;
+        HEIGHT = 29, ;
+        WIDTH = 125, ;
+        CAPTION = "Decrypt It!", ;
+        NAME = "cmdCommand1"
+
+  * Textbox to display Unencrypted password:
+
+     ADD OBJECT txtText3 AS TEXTBOX WITH ;
+        CONTROLSOURCE = "THISFORM.custPassword.cUnencrypted", ;
+        HEIGHT = 25, ;
+        LEFT = 200, ;
+        READONLY = .T., ;
+        TOP = 72, ;
+        WIDTH = 125, ;
+        NAME = "Text3"
+
+     PROCEDURE txtText1.LOSTFOCUS
+        THISFORM.custPassword.Encrypt_It(TRIM(THIS.VALUE))
+        THISFORM.txtText2.VALUE = THISFORM.custPassword.cEncrypted
+        THISFORM.cmdCommand1.SETFOCUS
+     ENDPROC
+
+     PROCEDURE cmdCommand1.CLICK
+        THISFORM.custPassword.Decrypt_It(THISFORM.custPassword.cEncrypted)
+        THISFORM.REFRESH
+        THISFORM.txtText1.SETFOCUS
+     ENDPROC
+
+     PROCEDURE DESTROY
+        CLEAR EVENTS
+     ENDPROC
+
+  ENDDEFINE
+
+  DEFINE CLASS PASS_WORD AS CUSTOM
+
+     HEIGHT = 17
+     WIDTH = 100
+     cUnencrypted = ""
+     cEncrypted = ""
+     NAME = "Password"
+
+     PROCEDURE Encrypt_It     &amp;&amp; Call this to encrypt password
+        PARAMETERS cPassword
+        cEncrypted_password = ''
+        FOR i = 1 TO LEN(cPassword)
+           cLetter = SUBSTR(cPassword, i, 1)
+           cEncrypted_password = cEncrypted_password + ;
+              CHR((ASC(cLetter)*2)+5)      &amp;&amp; Arbitrary encryption formula
+        NEXT i
+        THIS.cEncrypted = cEncrypted_password
+
+     ENDPROC
+
+     PROCEDURE Decrypt_It     &amp;&amp; Call this to Decrypt password
+        PARAMETERS cPassword
+        cUnencrypted_password = ''
+        FOR i = 1 TO LEN(cPassword)
+           cLetter = SUBSTR(cPassword, i, 1)
+           cUnencrypted_password = cUnencrypted_password + ;
+              CHR((ASC(cLetter)-5)/2)    &amp;&amp; Reverse of encryption formula
+        NEXT i
+        THIS.cUnencrypted = cUnencrypted_password
+
+     ENDPROC
+
+  ENDDEFINE
+  * End of pwdclass.prg
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

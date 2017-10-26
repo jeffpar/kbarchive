@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124026/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124026/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124026/","publisher":null,"image":null,"headline":"Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124026-dhcp-requests-fail-on-logically-multihomed-server-single-nic">Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124026
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Dynamic Host Configuration Protocol (DHCP) client IP address lease
+requests fails on a multihomed server configured with multiple logical IP
+networks on a single network interface card (NIC).
+
+This logical multihomed system is a Windows NT Server with a single NIC
+configured with multiple IP addresses for one physical segment. If this server
+is also functioning as a DHCP server with active scopes configured for each
+logical IP network, DHCP client requests are filled until the scope defining the
+first logical IP address pool is exhausted. Further DHCP client requests fail to
+be filled from the pool of IP addresses available from the second or higher
+logical IP network scopes.
+
+RESOLUTION
+==========
+
+To resolve this problem, install a NIC in the DHCP server for each logical
+segment. Each NIC should be connected to the same physical segment and assigned
+only one logical IP address. As DHCP scopes are created they will be made
+available to the clients via the network interface card at this IP network. Also
+verify that IP routing has been enabled on this multihomed DHCP server.
+
+STATUS
+======
+
+This is by design. This forces clients residing on a physical segment to acquire
+IP addresses that are within the same IP network scope.
+
+MORE INFORMATION
+================
+
+Microsoft Windows NT Server 4.0 Service Pack 2 includes the ability to create
+DHCP superscopes, which allows the administrator to group scopes together. This
+eliminates the need of multiple adapters to service multiple scopes.
+
+For more information on superscopes, please see the following article in the
+Microsoft Knowledge Base:
+
+Article : Q161571 Description: Using DHCP "Superscopes" to Serve Multiple Logical
+Subnets
+
+Additional query words: prodnt adapter wfw wfwg tcp ip multinet
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

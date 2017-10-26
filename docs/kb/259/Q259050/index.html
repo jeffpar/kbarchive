@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259050: Unwanted Attribute Updates by Management Agent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259050: Unwanted Attribute Updates by Management Agent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259050/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259050/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259050/","publisher":null,"image":null,"headline":"Q259050: Unwanted Attribute Updates by Management Agent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259050-unwanted-attribute-updates-by-management-agent">Q259050: Unwanted Attribute Updates by Management Agent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259050
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft Metadirectory Services Management Agent updates or overwrites an
+attribute value in the Metaverse or Connected Directory. This is an attribute
+that is maintained by you or another process, and you do not want the Management
+Agent to overwrite it.
+
+CAUSE
+=====
+
+This problem is caused by incorrectly configured attribute flow rules. Somewhere
+in the attribute flow rules the attribute is configured to be updated.
+
+RESOLUTION
+==========
+
+For purposes of explanation, this article uses the attribute TelephoneNumber as
+an example. Issues related to other attributes can be addressed in the same
+fashion.
+
+The prefix proceeding the attribute name identifies the location of the
+attribute. For example:
+
+$MV.TelephoneNumber - Identifies the Metaverse TelephoneNumber.
+$CS.TelephoneNumber - Identifies the Connector Space (Administration Area which
+tracks connectors in the metaverse) TelephoneNumber.
+$CD.TelephoneNumber - Identifies the Connected Directory (Exchange, Notes, Active
+Directory) TelephoneNumber.
+
+First identify the attribute flow rule that is causing the problem. There are
+three areas that must be checked: Specific Flow Rules, General Attribute Flow,
+and the Advanced Flow Script.
+
+Checking Specific Flow Rules To check specific flow rules, follow these steps:
+
+1. Start the Compass client.
+
+2. Select the Management Agent you want and select the Attribute Flow action.
+
+  By default, the Specific Flow Rules tab is displayed. The left pane lists the
+  available Metaverse attributes and the right pane displays the connected
+  directory attributes. The bottom pane displays the rules that are currently
+  configured.
+
+  If a specific flow rule has been created it will appear as follows:
+  $mv.telephonenumber = $cd.telephonenumber - The metaverse is being updated by
+  the connected directory.
+
+  -or-
+
+  $cd.telephonenumber = $mv.telephonenumber - The connected directory is being
+  updated by the metaverse.
+
+3. Select the flow rule to highlight it and click the Delete button.
+
+Checking General Attribute Flow Rules To check general attribute flow rules,
+follow these steps:
+
+1. Click the General Attribute Flow Rules tab.
+
+  This form allows you to configure general rules that affect all the attributes
+  related to a directory object. Only general rules can affect the Metaverse
+  (MV) or Connector Space (CS). Connected Directory (CD) assignments must be
+  specifically configured in either Specific or the Advanced area.
+
+2. If your $mv.telephonenumber is being overwritten, under the Metadirectory
+  Attributes section, click either Never or "When the metaverse attribute does
+  not exist".
+
+Checking the Advanced Flow Script To check the advanced flow script, follow these
+steps:
+
+1. Click the Advanced Flow Script tab.
+
+  When investigating this type of problem, you may see something similar to the
+  following:
+
+  IF $exists($mv.telephonenumber)=T
+  THEN
+  $mv.telephonenumber = $cd.telephonenumber
+
+2. Do one of the following:
+
+   - Comment the rule so it is not processed. For example:
+
+     #IF $exists($mv.telephonenumber)=T
+     #THEN
+     #$mv.telephonenumber = $cd.telephonenumber
+
+     -or-
+
+   - Change the rule, such that if the telephonenumber attribute is blank it
+     can be populated from the connected directory, and if it is not, no change
+     will be made. For example:
+
+     IF $exists($mv.telephonenumber)=F
+     THEN
+     $mv.telephonenumber = $cd.telephonenumber
+
+Additional query words: MMS Attribute Flow Management Agents Zoomit Via
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

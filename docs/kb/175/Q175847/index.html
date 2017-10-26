@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175847: How to Set Up Data Logging on a Remote Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175847: How to Set Up Data Logging on a Remote Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175847/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175847/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175847/","publisher":null,"image":null,"headline":"Q175847: How to Set Up Data Logging on a Remote Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175847-how-to-set-up-data-logging-on-a-remote-computer">Q175847: How to Set Up Data Logging on a Remote Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175847
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are specific instructions included with the Microsoft Windows NT Resource
+Kit to set up data logging on a remote computer. The instructions in this
+article are an update from the instructions included with the Windows NT
+Resource Kit. It is important that you follow these instructions and use the
+appropriate folders.
+
+MORE INFORMATION
+================
+
+To set up data logging on a remote computer, perform the following steps:
+
+1. Create a settings file by using the Windows NT Performance Monitor
+  (Perfmon.exe) on the local computer.
+
+   - Specify all objects you want to log and the alerts you want.
+
+   - Specify the log file name (*.LOG) and the logging interval by saving the
+     file to a local folder (this folder must also exist on the target system),
+     using the Log command on the Options menu. Do not start logging. (This
+     simply determines the name of the log file. The log file will be created
+     on the target computer when the monitor service is stopped).
+
+   - Save the settings file (*.PMW) into the target computer's
+     %SystemRoot%\System32 folder by using the Save Workspace command on the
+     File menu.
+
+2. Copy Datalog.exe into both the target and local computers'
+  %SystemRoot%\System32 folder.
+
+3. Ensure that there is a c:\Users\Default folder on the target computer.
+
+  NOTE: The target computer is the computer that you are monitoring; the source
+  is the computer that you are working from. The final log will be located on
+  the target computer.
+
+4. To install the Data Logging Service, type the following command at a command
+  prompt window in the target %SystemRoot%\System32 folder:
+
+  monitor \\computername setup
+
+  This command registers the service with the Service Manager. You only need to
+  run this command once for each computer. You must have the appropriate rights
+  to start a service on the target computer.
+
+5. To use your settings file, type:
+
+  monitor \\computername filename
+
+  NOTE: It is important to put the entire path for the file name.
+
+  For example: %SystemRoot%\System32\Filename.pmw
+
+6. To start logging events and alerts, immediately type the following command:
+
+  monitor \\computername start
+
+7. To stop logging, type the following command:
+
+  monitor \\computername stop
+
+8. To view the log file in Performance Monitor, the log file will be located in
+  the target computer's %SystemRoot%\Users\Default folder.
+
+  NOTE: You must stop the Monitor service before you can use the log file in
+  Performance Monitor.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Hardware          : ALPHA PPC x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

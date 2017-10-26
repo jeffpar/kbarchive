@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216590/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216590/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216590/","publisher":null,"image":null,"headline":"Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216590-using-attachmate-advanced-function-adapter-on-multidrop-line">Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216590
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 12-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11SP1, 2.11SP2, 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Attachmate Advanced Function Synchronous Data Link Control (SDLC)
+adapter is used to connect the SNA Server computer to a multidrop leased line,
+Request to Send (RTS) may be held high, causing other devices connected to the
+line to drop.
+
+If one of the other devices on the multidrop line happens to be another SNA
+Server computer and it loses its connection, an Event 23, Outage code 0084, may
+be logged in the Windows NT Application Event log. The outage code indicates
+that the SNA Server computer is not receiving Receiver Ready (RR) poll responses
+from the remote system, causing the connection to timeout.
+
+CAUSE
+=====
+
+When RTS is held high, a point-to-point connection is created, and other devices
+on the multidrop line cannot send data on the line.
+
+For more information about configuring an SDLC connection with an SNA Server
+computer using a multidrop line, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q123832 Using SNA Server with SDLC Multidrop Leased Lines
+
+RESOLUTION
+==========
+
+Contact Attachmate to obtain the latest Advanced Function adapter drivers that
+include the fix for this problem.
+
+
+MORE INFORMATION
+================
+
+To verify that RTS is being held high, check the RTS light on the modem or
+CSU/DSU when the connection is started on the SNA Server computer. If the RTS
+light is solid (as opposed to flashing), then RTS is being held high. The Modem
+Monitor utility that ships with SNA Server can also be used to check RTS. This
+utility can be run from the Tools menu in SNA Manager.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400
+Version           : WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

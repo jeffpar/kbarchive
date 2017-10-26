@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90571/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90571/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90571/","publisher":null,"image":null,"headline":"Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90571-applications-that-require-setverexe-for-ms-dos-60-or-62">Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90571
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some applications check the MS-DOS version number before executing and may not
+run when they detect version 6.00 or later. To work around this limitation, use
+SETVER.EXE, which is included with MS-DOS Upgrade.
+
+MORE INFORMATION
+================
+
+SETVER allows you to modify the version table that is kept in the MSDOS.SYS
+file. When an application associated with an entry in the version table is
+executed, the version table tells the program that it is running under the
+MS-DOS version listed in the table.
+
+Default Version Table Contents
+------------------------------
+
+The following lists the files in the default SETVER.EXE version table for MS-DOS
+version 6.0 and the required MS-DOS version:
+
+  Filename    MS-DOS Version
+  --------------------------
+
+  KERNEL.EXE      5.00
+  NETX.COM        5.00
+  NETX.EXE        5.00
+  NET5.COM        5.00
+  BNETX.COM       5.00
+  BNETX.EXE       5.00
+  EMSNETX.EXE     5.00
+  EMSNET5.EXE     5.00
+  XMSNETX.EXE     5.00
+  XMSNET5.EXE     5.00
+  DOSOAD.SYS      5.00
+  REDIR50.EXE     5.00
+  REDIR5.EXE      5.00
+  REDIRALL.EXE    5.00
+  REDIRNP4.EXE    5.00
+  EDLIN.EXE       5.00
+  BACKUP.EXE      5.00
+  ASSIGN.COM      5.00
+  EXE2BIN.EXE     5.00
+  JOIN.EXE        5.00
+  RECOVER.EXE     5.00
+  GRAFTABL.COM    5.00
+  LMSETUP.EXE     5.00
+  STACKER.COM     5.00
+  NCACHE.EXE      5.00
+  NCACHE2.EXE     5.00
+  IBMCACHE.SYS    5.00
+  XTRADRV.SYS     5.00
+  2XON.COM        5.00
+  WINWORD.EXE     4.10
+  EXCEL.EXE       4.10
+  LL3.EXE         4.01
+  REDIR4.EXE      4.00
+  REDIR40.EXE     4.00
+  MSREDIR.EXE     4.00
+  WIN200.BIN      3.40
+  METRO.EXE       3.31
+
+The following lists the files in the default SETVER.EXE version table for MS-DOS
+versions 6.2 and the required MS-DOS version:
+
+  Filename    MS-DOS Version
+  --------------------------
+
+  KERNEL.EXE      5.00
+  NETX.COM        5.00
+  NETX.EXE        6.00
+  NET5.COM        5.00
+  BNETX.COM       5.00
+  BNETX.EXE       6.00
+  EMSNETX.EXE     6.00
+  EMSNET5.EXE     5.00
+  XMSNETX.EXE     6.00
+  XMSNET5.EXE     5.00
+  DOSOAD.SYS      5.00
+  EXTDISK.SYS     6.00
+  REDIR50.EXE     5.00
+  REDIR5.EXE      5.00
+  REDIRALL.EXE    5.00
+  REDIRNP4.EXE    5.00
+  EDLIN.EXE       5.00
+  BACKUP.EXE      5.00
+  ASSIGN.COM      5.00
+  EXE2BIN.EXE     5.00
+  JOIN.EXE        5.00
+  RECOVER.EXE     5.00
+  GRAFTABL.COM    5.00
+  LMSETUP.EXE     5.00
+  STACKER.COM     5.00
+  NCACHE.EXE      5.00
+  NCACHE2.EXE     5.00
+  IBMCACHE.SYS    5.00
+  XTRADRV.SYS     5.00
+  2XON.COM        5.00
+  WINWORD.EXE     4.10
+  EXCEL.EXE       4.10
+  LL3.EXE         4.01
+  REDIR4.EXE      4.00
+  REDIR40.EXE     4.00
+  MSREDIR.EXE     4.00
+  WIN200.BIN      3.40
+  METRO.EXE       3.31
+  VDISK.SYS       4.00
+
+The following lists the files in the default SETVER.EXE version table for MS-DOS
+version 6.21 and the required MS-DOS version:
+
+  KERNEL.EXE      5.00
+  NETX.EXE        6.21
+  BNETX.EXE       6.21
+  EMSNETX.EXE     6.21
+  XMSNETX.EXE     6.21
+  DOSOAD.SYS      5.00
+  EXTDISK.SYS     6.00
+  REDIR50.EXE     5.00
+  REDIR5.EXE      5.00
+  REDIRALL.EXE    5.00
+  REDIRNP4.EXE    5.00
+  EDLIN.EXE       5.00
+  BACKUP.EXE      5.00
+  ASSIGN.COM      5.00
+  EXE2BIN.EXE     5.00
+  JOIN.EXE        5.00
+  RECOVER.EXE     5.00
+  GRAFTABL.COM    5.00
+  LMSETUP.EXE     5.00
+  STACKER.COM     5.00
+  NCACHE.EXE      5.00
+  NCACHE2.EXE     5.00
+  IBMCACHE.SYS    5.00
+  XTRADRV.SYS     5.00
+  2XON.COM        5.00
+  WINWORD.EXE     4.10
+  EXCEL.EXE       4.10
+  LL3.EXE         4.01
+  REDIR4.EXE      4.00
+  REDIR40.EXE     4.00
+  MSREDIR.EXE     4.00
+  WIN200.BIN      3.40
+  METRO.EXE       3.31
+
+Files Using Earlier MS-DOS Versions
+-----------------------------------
+
+The following files need versions of MS-DOS earlier than 6.0; these files are not
+in the default version table:
+
+  Filename   MS-DOS Version   Description
+  ------------------------------------------------------------
+
+  BACKUP.COM     4.0          Backup program from MS-DOS 4.x
+  MC.SYS         5.0          Memory Commander TSR
+  MCIN.EXE       5.0          Memory Commander TSR
+  NETWKSTA.EXE   4.01         LAN MAN 1.x enhanced
+  PCIINIT.EXE    6.00         Initialization program for Locus
+                              Computing Corp network redirector
+  RESTORE.COM    4.0          Restore program from MS-DOS 4.x
+  SLP.EXE        5.0          Seiko Smart Label Printer TSR
+  SCPLUS.EXE     5.0          Iomega caching program
+  SCSIDISK.SYS   5.0          Procomm Technology SCSI Device
+                              Driver
+  UMBFILES.COM   5.0          PC Magazine Utility
+
+
+For more information, query in the Microsoft Knowledge Base on "SETVER.EXE" and
+the specific application name.
+
+Modifying the Version Table
+---------------------------
+
+Before you can use the SETVER command, the version table must be loaded into
+memory by a DEVICE command in your CONFIG.SYS file. By default, the MS-DOS 6.0
+and 6.2 Setup programs modify your CONFIG.SYS file to ensure that the version
+table is loaded into memory each time you start your system.
+
+To modify the version table, do the following:
+
+1. At the MS-DOS command prompt, type the following:
+
+  " setver &lt;name of command and version&gt; " (without the quotation marks)
+
+  For example:
+
+     setver example.exe 4.01
+
+  A warning message is displayed that states the application being added to the
+  version table may not be verified by MS-DOS and could cause corruption.
+
+2. Verify that the command was added to the version table by typing "setver"
+  (without the quotation marks).
+
+3. Restart the system so that the new Setver table is loaded into memory.
+
+Additional query words: 6.22 4.00 5.00 5.00a 6.00 4.0 5.0 6.0 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

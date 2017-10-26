@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200475/","publisher":null,"image":null,"headline":"Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200475-err-msg-530-user-username-cannot-log-in-login-failed">Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200475
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbDSupport kbiis400 kbiis500
+Last Modified: 03-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the FTP utility to connect to an FTP site, the following error
+occurs:
+
+  530 User &lt;username&gt; cannot log in.
+  Login failed.
+
+CAUSE
+=====
+
+This problem can be caused by one of the following:
+
+- The "Allow only anonymous connections security" setting has been turned on in
+  the MMC.
+
+- The username does not have the "Log on locally" permission in User Manager.
+
+- The username does not have the "Access this computer from the network"
+  permission in User Manager.
+
+- The Domain Name was not specified along with the username (in the form of
+  "DOMAIN\USERNAME" (without the quotation marks)).
+
+RESOLUTION
+==========
+
+Resolution 1
+------------
+
+To clear the "Allow only anonymous connections security" check box, perform the
+following steps:
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+  Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the default FTP site folder, and then click Properties.
+
+3. On the Security Accounts tab, clear the "Allow only anonymous connections
+  security" check box.
+
+4. Click OK.
+
+Resolution 2
+------------
+
+To give the username the "Log On Locally" permission, perform the following
+steps:
+
+Windows NT 4.0 Servers
+
+1. In the Administrative Tools group, select "User Manager for Domains", click
+  the Policies tab, and select User Rights.
+
+  NOTE: If the username is not a member of the default domain opened by User
+  Manager, click the User menu, and then select Domain to specify the correct
+  domain. If the username is a member of the local computer's user list, type
+  "\\&lt;computer_name&gt;" (without the quotation marks) in the Domain text
+  box.
+
+2. From the Policies menu, click User Rights.
+
+3. On the Rights drop-down list, select Log on Locally.
+
+4. Click Add, and add the appropriate username (or user group).
+
+5. Click OK twice.
+
+Windows 2000 Servers To configure the "Log on locally" right on a stand-alone
+server, follow these steps:
+
+1. In the Microsoft Management Console (MMC), open the Local Computer Policy
+  snap-in. To do this, follow these steps:
+
+  a. Click Start, type "MMC" (without the quotation marks), and then click OK.
+
+  b. Click Console, click Add/Remove Snap-in, and then click Add.
+
+  c. Select Group Policy, and then click Add.
+
+  d. Ensure that the Group Policy object says Local Computer, and then click
+     Finish.
+
+  e. Click Close, and then click OK.
+
+2. Grant users or groups the "Log on locally" right. To do this, follow these
+  steps:
+
+  a. Expand the following path in the MMC:
+
+  Local Computer Policy\Computer Configuration\Windows Settings\Security
+  Settings\Local Policies\User Rights Assignment
+
+  b. Double-click Log on Locally.
+
+  c. Add any users or groups that will use Basic/Clear Text authentication.
+
+NOTE: It is not recommended that you install an IIS Web server on a Windows 2000
+domain controller. The following steps describe how to configure "Log on
+locally" right by using Group Policy if it is necessary that you install an IIS
+Web server on a Windows 2000 domain controller.
+
+To configure the "Log on locally" right on a domain controller, follow these
+steps:
+
+1. In MMC, open the Default Domain Controllers Policy snap-in. To do this,
+  follow these steps:
+
+  a. Click Start, type "MMC" (without the quotation marks), and then click OK.
+
+  b. Click Console, click Add/Remove Snap-in, and then click Add.
+
+  c. Select Group Policy, and then click Add.
+
+  d. Click Browse.
+
+  e. Double-click the domain controller for the domain.
+
+  f. Double-click "Default Domain Controllers Policy", and then click Finish.
+
+  g. Click Close, and then click OK.
+
+2. Grant users or groups the "Log on locally" right. To do this, follow these
+  steps:
+
+  a. Expand the following path in the MMC:
+
+  Default Domain Controllers Policy\Computer Configuration\Windows
+  Settings\Security Settings\Local Policies\User Rights Assignment
+
+  b. Double-click Log on Locally.
+
+  c. Add any users or groups that will use Basic/Clear Text authentication.
+
+3. Open a command prompt, type "secedit/refreshpolicy machine_policy" (without
+  the quotation marks), and then close the command prompt to refresh the
+  policy.
+
+Resolution 3
+------------
+
+To give the username the "Access this computer from the network" permission,
+perform the same steps outlined in Resolution 2 above, but select the "Access
+this computer from the network" advanced user right.
+
+Resolution 4
+------------
+
+Try using the command line FTP utility and specifying the FTP username in the
+form of "DOMAIN\USERNAME" when you log into the FTP Site. If this works, then
+you can either instruct all users to log on using DOMAIN\USERNAME or you can
+specify the default authentication domain that the FTP Service should use when
+authenticating accounts that do not exist locally and that were not entered in
+"DOMAIN\USERNAME" form. To do this you will need to make changes to the
+Metabase.
+
+To specify a default logon domain so users do not have to type "DOMAIN\USERNAME"
+(without the quotation marks) when logging on to the FTP Server, you can either
+use the Windows Script Host (if it was installed during the Windows NT Option
+Pack setup) or the NTOP utility Mdutil.exe.
+
+Both methods are described below.
+
+To use the Windows Script Host method, do one of the following (depending on the
+version of IIS that you are running):
+
+IIS 5.0:
+
+1. Change to the %Systemroot%\Inetpub\Adminscripts directory.
+
+2. Type the following:
+
+  Adsutil Set MSFTPSVC/DefaultLogonDomain "Domain Name"
+
+  Make sure when you type in the Domain Name that it is enclosed in quotation
+  marks.
+
+3. Stop and restart the FTP Service.
+
+IIS 4.0:
+
+1. Change to the %systemroot%\system32\inetsrv\adminsamples directory.
+
+2. Type the following:
+
+  cscript //h:cscript
+
+  This sets Cscript as the default WSH interpreter.
+
+3. Type the following:
+
+  Adsutil Set MSFTPSVC/DefaultLogonDomain "Domain Name"
+
+  Make sure when you type in the Domain Name that it is enclosed in quotation
+  marks.
+
+4. Stop and restart the FTP Service.
+
+If the Windows Script Host was not installed during the NTOP setup, use
+Mdutil.exe. as follows:
+
+1. Copy Mdutil.exe. from the Windows NT Option Pack compact disc to the
+  %WINDIR%\System32\ directory.
+
+  Make sure to copy Mdutil.exe. from the appropriate platform directory on the
+  compact disc.
+
+2. Open a command prompt, and change to the %WINDIR%\System32 directory.
+
+3. Execute the command below replacing &lt;DomainName&gt; with the name of the
+  accounts domain you want to authenticate your user against by default:
+
+  mdutil set msftpsvc/DefaultLogonDomain -utype UT_Server -dtype String -value &lt;DomainName&gt;
+
+  Make sure that &lt;DomainName&gt; is typed without quotes.
+
+4. When the command completes successfully, stop and restart the FTP Service.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: user name file transfer protocol logon login log on in open akz
+
+======================================================================
+Keywords          : kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

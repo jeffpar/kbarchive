@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253648/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253648/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253648/","publisher":null,"image":null,"headline":"Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253648-smslsbat-cannot-install-sms-client-when-dosonly-is-enabled">Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253648
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Operating System(s): 
+Keyword(s): kbinterop kbsetup kbClient kbConfig kbsms200 kbsms200bug kbsmsUtil kbUpgrade
+Last Modified: 08-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to successfully install the Systems Management Server (SMS)
+client on a Windows NT 4.0-based computer by using the Smsls.bat file, but you
+do not receive any error messages.
+
+You may see entries similar to the following one in the WN_Logon.log file:
+
+  Wrote "SMSClientPath=C:\WINDOWS\" into file "C:\TEMP\SMSBOOT1.INI", iRet = 1
+  $$&lt;SMSBOOT1.EXE&gt;
+  Calling _spawnl("C:\WINDOWS\MS\SMS\CORE\BIN\Boot32wn.exe",
+  "C:\WINDOWS\MS\SMS\CORE\BIN\Boot32wn.exe", "-NT", "-OC:\TEMP\SMSBOOT1.INI",
+  NULL, NULL) $$&lt;SMSBOOT1.EXE&gt;
+
+If you attempt to run Snboot.exe, or Smsboot1.exe on the client, you may receive
+the following error message:
+
+  This program cannot be run in dos mode.
+
+CAUSE
+=====
+
+The dosonly command is enabled in the Config.nt file.
+
+WORKAROUND
+==========
+
+Disable the dosonly option by remarking (REM) it out of the Config.nt file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Windows NT Help DOSONLY notes:
+
+  Normally when you exit an MS-DOS-based application, Windows&lt;A0&gt;NT returns to the
+  Windows&lt;A0&gt;NT command interpreter (CMD.EXE). However, by default, when you run a
+  TSR or temporarily suspend an MS-DOS-based application to return to the
+  command prompt Windows&lt;A0&gt;NT runs COMMAND.COM, the command interpreter for the
+  MS-DOS environment. This preserves the MS-DOS environment allowing you to use
+  the TSR immediately.
+
+  Because starting and running other types of applications from the COMMAND.COM
+  prompt can disrupt a TSR or suspended MS-DOS-based applications, Windows&lt;A0&gt;NT
+  provides the DOSONLY command. The DOSONLY command allows only MS-DOS-based
+  applications to be started from the COMMAND.COM prompt. You can include the
+  DOSONLY command in your CONFIG.NT file or the equivalent custom startup file
+  in an application?s PIF.
+
+Additional query words: prodsms Smsls bat CONFIG NT REM WN_Logon log Snboot Smsboot1 SMS cmd exe command com
+
+======================================================================
+Keywords          : kbinterop kbsetup kbClient kbConfig kbsms200 kbsms200bug kbsmsUtil kbUpgrade 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

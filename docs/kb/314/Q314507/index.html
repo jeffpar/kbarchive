@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314507/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314507/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314507/","publisher":null,"image":null,"headline":"Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314507-fs2002-err-msg-system-is-not-able-to-use-hardware-acceleration">Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314507
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator 2002 Professional Edition 
+- Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Flight Simulator, you may receive a message similar to
+the following:
+
+  System is not able to use hardware acceleration.
+
+CAUSE
+=====
+
+This behavior can occur if your video card is using outdated drivers, or it does
+not meet the minimum system requirements as listed on the product package.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Method 1: Download and Install the Current Version of Microsoft DirectX
+-----------------------------------------------------------------------
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+To download and install Microsoft DirectX, see the following Microsoft Web site.
+Click the link appropriate to your version of Microsoft Windows. The
+installation proceeds automatically.
+
+  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to install the latest version of DirectX,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q179113 How to Download and Install DirectX
+
+Method 2: Download and Install the Current Version of the Video Driver
+----------------------------------------------------------------------
+
+1. Identify the manufacturer and model of your video adapter. For more
+  information about how to identify your video adapter, see the "More
+  Information" section of this article.
+
+2. For information about how to obtain and install the latest driver for your
+  video card, contact your video adapter manufacturer.
+
+WORKAROUND
+----------
+
+To work around this issue, use the following methods in the order in which they
+are presented.
+
+Method 1: Reduce the Graphics Hardware Acceleration Setting
+-----------------------------------------------------------
+
+NOTE: When you reduce the graphic hardware acceleration setting, your computer's
+graphics performance may be reduced. In addition, applications that require 3D
+acceleration to run may not start if you reduce the hardware acceleration
+setting to Basic or None.
+
+To reduce the graphics hardware acceleration setting, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, click Graphics.
+
+4. Move the Hardware Acceleration slider until it is one notch to the right of
+  None (the Basic acceleration setting).
+
+5. Click OK, and then click Close.
+
+6. When you are prompted to restart the computer, click Yes.
+
+Method 2: Enable Direct3D
+-------------------------
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then press
+  ENTER.
+
+3. Click the Display tab.
+
+4. Ensure that Direct3D Acceleration is enabled. If not, click Enable.
+
+5. Click Exit.
+
+MORE INFORMATION
+================
+
+How to Identify the Manufacturer and Model of your Video Adapter
+----------------------------------------------------------------
+
+To identify your video adapter, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then press
+  ENTER.
+
+3. Click the Display tab.
+
+4. Note the manufacturer and model of your video adapter.
+
+5. Click Exit to close the DirectX Diagnostic Tool.
+
+For information about how to contact your video adapter manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+REFERENCES
+==========
+
+For additional information about how to determine the version of the video
+driver that is installed on your computer, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q159487 Games: How to Determine the Version of Installed Video Driver
+
+For additional information about how to obtain Microsoft support files, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

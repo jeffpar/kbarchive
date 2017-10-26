@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152954: XCLN: Network Errors w/ Microsoft Exchange Windows 3.1 Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152954: XCLN: Network Errors w/ Microsoft Exchange Windows 3.1 Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152954/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152954/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152954/","publisher":null,"image":null,"headline":"Q152954: XCLN: Network Errors w/ Microsoft Exchange Windows 3.1 Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152954-xcln-network-errors-w-microsoft-exchange-windows-31-client">Q152954: XCLN: Network Errors w/ Microsoft Exchange Windows 3.1 Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152954
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbusage
+Last Modified: 30-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are running the Microsoft Exchange Windows 3.x client on Windows 3.1
+and using Novell's NetWare IPX/SPX protocol stack, the following error message
+may appear:
+
+  A network error has occurred. Please contact your administrator.
+
+This usually happens when accessing the Address Book, trying to check details of
+names in the Global Address Book, synchronizing local Schedule+ file to server,
+sending and receiving large attachments, or moving messages from PST to
+server-based folder. It is also more likely to happen on Token Ring.
+
+CAUSE
+=====
+
+The computer running Microsoft Exchange Server is sending packets that are
+larger than the MaxFrameSize of the Windows 3.1 client.
+
+When Windows 3.1 was written, there was only one interface with Novell's IPX/SPX
+stack, using ECB's programmed with assembly language. ECBs only support SPX I.
+SPX I does not allow packet size negotiation.
+
+With the release of NetWare 4.x, another interface with Novell's IPX/SPX stack
+was introduced, using TLI programmed with C. TLI supports both SPX I and SPX II.
+SPX II does allow packet size negotiation.
+
+Since Windows 3.1 was written before the TLI interface came out, it was written
+to use ECBs, so its version of RPC can't negotiate packet sizes. Therefore, the
+computer running Microsoft Exchange Server doesn't "know" that the client's
+MaxFrameSize is not the same as its MaxFrameSize and it sends packets that are
+too large for the client.
+
+RESOLUTION
+==========
+
+One possible workaround is to make sure the maximum frame size on the Exchange
+clients is at least the same size a,s or up to 120 bytes larger than, the
+maximum frame size on the computer running Microsoft Exchange Server.
+
+Windows 95 does not exhibit this problem.
+
+
+STATUS
+======
+
+Microsoft does not plan to add TLI support to Windows 3.1.
+
+
+Additional query words: token ring win16
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

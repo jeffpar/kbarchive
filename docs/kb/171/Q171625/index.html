@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171625: Command-line Installation of SNA Server 3.0 and 4.0 Link Servic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171625: Command-line Installation of SNA Server 3.0 and 4.0 Link Servic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171625/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171625/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171625/","publisher":null,"image":null,"headline":"Q171625: Command-line Installation of SNA Server 3.0 and 4.0 Link Servic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171625-command-line-installation-of-sna-server-30--and-40-link-servic">Q171625: Command-line Installation of SNA Server 3.0  and 4.0 Link Servic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171625
+Product(s): Microsoft SNA Server
+Version(s): 3.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server versions 3.0 and 4.0 include the new LINKCFG command-line tool to
+install SNA Server link services. Prior to this release, link service
+installation could only be performed using the SNA Server 3.0 Manager program,
+or using the "LINKSET" program to install back-level link services.
+
+The following steps are required to install and use a link service using the SNA
+Server LINKCFG and SNACFG command-line configuration tools:
+
+1. Use LINKCFG to install the SNA Server link service. This installs the
+  necessary files in the &lt;snaroot&gt;\system directory, adds the required
+  Windows NT registry settings, and runs the Windows NT network control panel
+  bindings.
+
+2. Use "SNACFG LINK ..." to define the link service in the SNA Server
+  configuration file.
+
+3. Use "SNACFG CONNECTION ..." to create a new connection in the configuration
+  file and associate the new link service with the connection.
+
+MORE INFORMATION
+================
+
+The following example shows how to use the LINKCFG and SNACFG commands to
+install a distributed link service:
+
+1. Installing the remote link service using LINKCFG:
+
+  C:\&gt;linkcfg LINKSVC "SnaRem1" /SERVER:STEVED2
+  /LSTYPE:"Distributed Link Service" /REMOTELINKTYPE:TokenRing802.2
+  /REMOTELIST:\\truth\snadlc3 /DOMAIN:STEVED2_DOMAIN /USERID:snaservice
+  /PASSWORD:snaservice
+
+  NOTE: This is a single command line. Line breaks are inserted here for
+  readability.
+
+  The above command installs a link service name of "SnaRem1" to server STEVED2
+  to run under a user account of STEVED2_DOMAIN\snaservice, pointing to a
+  distributed link on \\TRUTH\SNADLC3.
+
+2. Define the link service to the configuration file using SNACFG:
+
+  C:\&gt;snacfg link STEVED2:SnaRem1 /ADD /LINKTYPE:Token
+
+  The above command defines the SnaRem1 link service to the SNA Server
+  configuration file.
+
+3. Define a connection to use this link service:
+
+  C:\&gt;snacfg connection TRUTH /ADD /SERVER:STEVED2
+  /LINKSERVICE:SnaRem1 /CONNTYPE:802.2 /REMOTEEND:Host
+  /REMOTENETADDR:400017001100 /LOCALBLOCKNO:017 /LOCALNODENO:10001
+
+  NOTE: This is a single command line. Line breaks are inserted here for
+  readability.
+
+  The above command creates a new connection called TRUTH on STEVED2, and
+  associates the connection to the SnaRem1 link service. Note that the various
+  connection properties will vary depending on the host configuration settings,
+  such as /REMOTENETADDR, /LOCALBLOCKNO, and /LOCALNODENO, though these are
+  included to show a complete example.
+
+Additional query words: snafaqtop
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : :3.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

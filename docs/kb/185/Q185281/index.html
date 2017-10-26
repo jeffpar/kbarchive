@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185281/","publisher":null,"image":null,"headline":"Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185281-prb-onlbuttondblclk-not-called-in-windows-ce">Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185281
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:1.0,2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++ for Windows CE, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Message handlers for the WM_LBUTTONDBLCLK, WM_RBUTTONDBLCLK and WM_MBUTTONDBLCLK
+messages are not called for a Microsoft Foundation Classes (MFC) application
+running in the Windows CE emulation environment or on a handheld PC (H/PC).
+
+CAUSE
+=====
+
+For a window to receive the WM_LBUTTONDBLCLK, WM_RBUTTONDBLCLK, or
+WM_MBUTTONDBLCLK messages, the class definition of the window must include the
+CS_DBLCLKS style. By default, MFC does not add the CS_DBLCLKS style to the class
+definition that it uses for single document interface (SDI) frame windows and
+views on the Windows CE platform.
+
+RESOLUTION
+==========
+
+To work around this problem, register a new class that includes the CS_DBLCLKS
+style and use this new class when you create the window. You can do this in the
+PreCreateWindow() method of the window that handles the double-click messages,
+as in the following code:
+
+Sample Code
+-----------
+
+     BOOL CtestView::PreCreateWindow(CREATESTRUCT&amp; cs)
+     {
+        if (CView::PreCreateWindow(cs))
+        {
+           WNDCLASS wc;
+           // Get the class information for the default MFC view class.
+           ::GetClassInfo(AfxGetInstanceHandle(),cs.lpszClass,&amp;wc);
+
+           // Register a new class using the attributes of the default
+           // view class, and make it the new default class.
+           cs.lpszClass = AfxRegisterWndClass(wc.style | CS_DBLCLKS,
+              wc.hCursor,wc.hbrBackground,wc.hIcon);
+           return TRUE;
+        }
+        return FALSE;
+     }
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbwince100 kbwince200 kbVC500 kbnokeyword
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC100WinCE kbVC200WinCE
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

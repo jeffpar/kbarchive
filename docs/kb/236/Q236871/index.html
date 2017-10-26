@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236871/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236871/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236871/","publisher":null,"image":null,"headline":"Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236871-prb-sqlcolumns-return-incorrect-buffer_lengthchar_octet_length">Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236871
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.1,2.5,4.0
+Operating System(s): 
+Keyword(s): kbDatabase kbDriver kbJET kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kb
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Access, version 4.0 
+- Microsoft Data Access Components versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When SQLColumns is called on a table in an Access database, the BUFFER_LENGTH
+and CHAR_OCTET_LENGTH values that appear to be returned are incorrect for
+non-UNICODE text fields. Fields of data type CHAR and VARCHAR will show these
+lengths as twice the value of COLUMN_SIZE. This is because Jet now stores text
+data in the Unicode format, which requires two bytes for every character.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Perform the following steps in the ODBC Test utility:
+
+1. Connect to a data source using the Microsoft Jet 4.0 ODBC driver.
+
+2. Call SQLColumns on a table that contain a text field.
+
+3. Select Get Data All from the Results menu to display the returned recordset.
+  The following is an example of how to open the sample Access database
+  Northwind.mdb with table "Categories":
+
+     "TABLE_CAT", "TABLE_SCHEM", "TABLE_NAME", "COLUMN_NAME", "DATA_TYPE",
+     "TYPE_NAME", "COLUMN_SIZE", "BUFFER_LENGTH", "DECIMAL_DIGITS",
+     "NUM_PREC_RADIX", "NULLABLE", "REMARKS", "COLUMN_DEF",
+     "SQL_DATA_TYPE","SQL_DATETIME_SUB", "CHAR_OCTET_LENGTH",
+     "ORDINAL_POSITION",    "IS_NULLABLE", "ORDINAL"
+     "C:\testmdbs\NWIND", &lt;Null&gt;, "Categories", "CategoryName", 12,
+     "VARCHAR", 15, 30, &lt;Null&gt;, &lt;Null&gt;, 1, "Name of food category.",&lt;Null&gt;, 
+     12, &lt;Null&gt;, 30, 2, "YES", 2&lt;BR/&gt;
+
+  You can see that the CategoryName column is a VARCHAR of size 15, but
+  BUFFER_LENGTH and CHAR_OCTET_LENGTH are 30 when they should also be 15.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Sarah Parra, Microsoft Corporation
+
+
+REFERENCES
+==========
+
+See the documentation for SQLColumns for more information on the data that this
+function returns.
+
+The ODBC Test utility can be obtained from the Microsoft Data Access SDK, which
+comes with Visual Studio or can be downloaded from the following Web site:
+
+  http://www.msdn.microsoft.com
+
+Additional query words: odbcjt32.dll mdac 2.1 buffer
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbJET kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbGrpDSODBC 
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC250 kbODBCAccess400
+Version           : WINDOWS:2.1,2.5,4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

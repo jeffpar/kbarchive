@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114138: PRB: FoxPro Icon in .EXE Won’t Install with Norton Desktop 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114138: PRB: FoxPro Icon in .EXE Won’t Install with Norton Desktop 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114138/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114138/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114138/","publisher":null,"image":null,"headline":"Q114138: PRB: FoxPro Icon in .EXE Won’t Install with Norton Desktop 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114138-prb-foxpro-icon-in-exe-wont-install-with-norton-desktop-30">Q114138: PRB: FoxPro Icon in .EXE Won’t Install with Norton Desktop 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114138
+Product(s): Microsoft FoxPro
+Version(s): 2.5x,2.6
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Windows Distribution Kit, versions 2.5x, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+By using ADDICON.APP, you can embed an icon in a FoxPro for Windows .EXE file.
+If you use the Setup Wizard to create a set of setup disks, you can specify
+which group the icon should appear in inside Program Manager. However, after a
+user runs the Setup program, the icon that is installed is the standard FoxPro
+icon, not the icon you specified in ADDICON.APP. No error message is received
+during installation.
+
+CAUSE
+=====
+
+Norton Desktop 3.0 is running instead of the Windows Program Manager.
+
+The SETUP.EXE file used by FoxPro uses Windows API function calls to set up the
+icon in the Program Manager. Norton Desktop does not recognize these calls and
+uses the FoxPro default icon instead.
+
+RESOLUTION
+==========
+
+If the Setup disks are to work correctly, Program Manager must be used as the
+Windows shell.
+
+To set up the icon, do one of the following:
+
+Method 1
+--------
+
+Have the user change the icon manually using Norton Desktop.
+
+Method 2
+--------
+
+1. Open the user's SYSTEM.INI file.
+
+2. In the [boot] section, put a semicolon (;) at the beginning of the
+  "SHELL=NDW.EXE" line. This will comment the line out.
+
+3. In the same section, add the following line:
+
+        SHELL=PROGMAN.EXE
+
+4. Restart Windows.
+
+5. Reinstall the .EXE file built with FoxPro.
+
+This will correctly install the icon. Once this is done, reenable Norton Desktop
+by commenting out the "SHELL=PROGMAN.EXE" line and uncommenting the
+"SHELL=NDW.EXE" line and then restarting Windows.
+
+MORE INFORMATION
+================
+
+Norton Desktop is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: FoxWin 2.50 2.50a 2.50b 2.60 NDW Desk Top dk
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxProDK250xSearch kbFoxProDKSearch
+Version           : :2.5x,2.6
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

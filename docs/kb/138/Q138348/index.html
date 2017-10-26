@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138348: SMS: How to Manually Copy SMS Logon Script Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138348: SMS: How to Manually Copy SMS Logon Script Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138348/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138348/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138348/","publisher":null,"image":null,"headline":"Q138348: SMS: How to Manually Copy SMS Logon Script Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138348-sms-how-to-manually-copy-sms-logon-script-files">Q138348: SMS: How to Manually Copy SMS Logon Script Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138348
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork smsgeneral kbArtTypeINF
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the files and directories required in the Netlogon share for
+clients to successfully execute the Systems Management Server logon script,
+Smsls.bat or Smsls.cmd (for OS/2 clients only).
+
+NOTE: This directory structure has changed slightly from the original structure
+under Systems Management Server 1.0.
+
+MORE INFORMATION
+================
+
+For Systems Management Server 1.1 and 1.2, the new layout is shown below. Note
+that the Scripts directory is shared on the network as
+\\&lt;Servername&gt;\Netlogon.
+
+Files Required in the \Scripts Directory
+----------------------------------------
+
++-------------------------------------------------+
+| File name    | Copied from                      | 
++-------------------------------------------------+
+| Smsls.bat    | \Site.srv\Maincfg.box            | 
++-------------------------------------------------+
+| Smsls.cmd    | \Site.srv\Maincfg.box            | 
++-------------------------------------------------+
+| Smsls.ini    | \Site.srv\Maincfg.box            | 
++-------------------------------------------------+
+| Netspeed.com | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+| Netspeed.dat | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+| Dosver.com   | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+| Clrlevel.com | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+
+NOTE: The following are also required for Systems Management Server 1.2 Service
+Pack 4 only:
+
++-------------------------------------------------+
+| Checkver.exe | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+| Check20.exe  | \Site.srv\Maincfg.box\Client.src | 
++-------------------------------------------------+
+
+Files Required in the \Scripts\&lt;Platform&gt;.bin Directory
+-------------------------------------------------------
+
+Note that there should be one such directory for each client platform supported,
+for example: X86.bin, Alpha.bin, or Mips.bin.
+
++----------------------------------------------------------------+
+| File name    | Copid from                                      | 
++----------------------------------------------------------------+
+| Setls32.exe  | \Site.srv\Maincfg.box\Client.src\&lt;Platform&gt;.bin | 
++----------------------------------------------------------------+
+| Nlsmsg32.exe | \Site.srv\Maincfg.box\Client.src\&lt;Platform&gt;.bin | 
++----------------------------------------------------------------+
+| Nlsres.ini   | \Site.srv\Maincfg.box\Client.src\&lt;Platform&gt;.bin | 
++----------------------------------------------------------------+
+| Setls16.exe  | \Site.srv\Maincfg.box\Client.src\X86.bin (only) | 
++----------------------------------------------------------------+
+| Nlsmsg16.exe | \Site.srv\Maincfg.box\Client.src\X86.bin (only) | 
++----------------------------------------------------------------+
+| Setlsos2.exe | \Site.srv\Maincfg.box\Client.src\X86.bin (only) | 
++----------------------------------------------------------------+
+| Nlsmsgo2.exe | \Site.srv\Maincfg.box\Client.src\X86.bin (only) | 
++----------------------------------------------------------------+
+
+Files Required in the \Scripts\&lt;Platform&gt;.bin\00000409 Directory
+----------------------------------------------------------------
+
+Note that there should be one such directory for each client language supported;
+for example, 409 is US English.
+
++-----------------------------------------------------------------------+
+| File name  | Copied from                                              | 
++-----------------------------------------------------------------------+
+| Nls_ls.dll | \Site.srv\Maincfg.box\Client.src\&lt;Platform&gt;.bin\00000409 | 
++-----------------------------------------------------------------------+
+
+If the Systems Management Server logon script, Smsls.bat or Smsls.cmd, is going
+to be called from a client's existing logon script file, it is recommended that
+the following syntax be used within the existing file:
+
+     CALL %0\..\SMSLS
+
+Additional query words: prodsms login log on in manual copy copying script scripts
+
+======================================================================
+Keywords          : kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

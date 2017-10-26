@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148139/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148139/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148139/","publisher":null,"image":null,"headline":"Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148139-fix-default-ole-container-w-splitters-faults-on-view-closure">Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148139
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbole kbwizard kbActiveX kbCOMt kbContainer kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The AppWizard, included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An AppWizard application generated with OLE Container and Splitter Window
+support will generate an Access Violation when a splitter pane containing an
+in-place active item is closed. The Access Violation occurs when you try to call
+m_pView-&gt;AssertValid() from the COleClientItem::AssertValid() function.
+
+CAUSE
+=====
+
+The AppWizard fails to add an OnDestroy() member function to the view class to
+deactivate the in-place active object when the view containing the in-place
+active object is destroyed. When the view containing the active object is
+destroyed, the remaining view is resized. Because the object in the destroyed
+view was not properly deactivated, the subsequent call to
+GetInPlaceActiveObject() in the view's OnSize() function erroneously detects an
+in-place active COleClientItem object.
+
+RESOLUTION
+==========
+
+To work around the problem, add the following handler for the WM_DESTROY message
+to your view class:
+
+  void CYourView::OnDestroy()
+  {
+     CView::OnDestroy();
+
+     COleClientItem* pActiveItem =
+        GetDocument()-&gt;GetInPlaceActiveItem(this);
+     if (pActiveItem != NULL &amp;&amp; pActiveItem-&gt;GetActiveView() == this)
+     {
+        pActiveItem-&gt;Deactivate();
+        ASSERT(GetDocument()-&gt;GetInPlaceActiveItem(this) == NULL);
+     }
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual C++ version
+5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create an SDI or MDI application with AppWizard. Select OLE Container support
+  in Step 3, and select the "Use split window" (without the quotation marks)
+  check box in the "Windows Styles" (without the quotation marks) tab of the
+  "Advanced Options" (without the quotation marks) dialog box in Step 4.
+
+2. Build a DEBUG version of the application, and run it.
+
+3. Click "Insert New Object" (without the quotation marks) on the "Edit"
+  (without the quotation marks) menu, and insert an object that supports
+  in-place activation. For example, use Microsoft Word or Microsoft Excel. The
+  object should appear in the container application and be activated in-place.
+
+4. Split the container's view window. You should see two objects, one of which
+  is in-place active and the other of which is a copy of the in-place active
+  object.
+
+5. Drag the splitter bar so that the view containing the in-place active object
+  is removed and destroyed. As a result, an unhandled exception Access
+  Violation occurs in COleClientItem::AssertValid().
+
+Additional query words: kbVC400bug GP fault GPF
+
+======================================================================
+Keywords          : kbole kbwizard kbActiveX kbCOMt kbContainer kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

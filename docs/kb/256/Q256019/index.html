@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256019: Asheron’s Call Err Msg: Cannot Initialize Data File Portal.dat.. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256019: Asheron’s Call Err Msg: Cannot Initialize Data File Portal.dat.." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256019/","publisher":null,"image":null,"headline":"Q256019: Asheron’s Call Err Msg: Cannot Initialize Data File Portal.dat..","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256019-asherons-call-err-msg-cannot-initialize-data-file-portaldat">Q256019: Asheron’s Call Err Msg: Cannot Initialize Data File Portal.dat..</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256019
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kberrmsg kbtool igz kbimu msgame
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Asheron's Call, version 1.0 
+- Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Asheron's Call, you may receive the
+following error message:
+
+  Could not initialize data file portal.dat in &lt;folder&gt;.
+
+where &lt;folder&gt; is the folder in which Asheron's Call is installed.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+- One or more files in the Asheron's Call folder are missing or damaged.
+
+- Asheron's Call cannot initialize the Portal.dat file as a result of updating
+  the client computer without restarting the computer.
+
+- If the Cell.dat and Portal.dat files are set to read only.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method.
+
+If One or More Files in the Asheron's Call Folder Are Missing or Damaged
+------------------------------------------------------------------------
+
+To resolve this issues, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Microsoft Asheron's Call, and then click
+  Add/Remove.
+
+4. Follow the instructions on the screen to remove Asheron's Call.
+
+5. Insert the Asheron's Call CD-ROM into the CD-ROM drive.
+
+  If Asheron's Call Setup does not start automatically:
+
+  a. Click Start, and then click Run.
+
+  b. In the Open box, type the following line, and then click OK:
+
+  &lt;drive&gt;:\setup.exe
+
+     where &lt;drive&gt; is the drive letter of the CD-ROM drive.
+
+6. Follow the instructions on the screen to install Asheron's Call.
+
+If Asheron's Call Cannot Initialize the Portal.dat File
+-------------------------------------------------------
+
+To resolve this issue, restart the computer.
+
+Clear the Read-only Attribute from the Files
+--------------------------------------------
+
+To resolve this issues, follow these steps:
+
+1. For Microsoft Windows 95 or Microsoft Windows 98, click Start, point to Find,
+  and then click Files or Folders.
+
+  For Microsoft Windows Millennium Edition (Me) or Microsoft Windows 2000, click
+  Start, point to Search, and then click For Files or Folders.
+
+2. In the Named or "Search for files and folders named" box, type "cell.dat"
+  (without the quotation marks) or "portal.dat" (without the quotation marks).
+
+3. In the Look in box, click My Computer.
+
+4. Click Find Now or Search Now.
+
+5. Right-click one of the files in the found files list, and then click
+  Properties.
+
+6. Clear the Read Only option.
+
+7. Click OK.
+
+8. Repeat steps 5 through 7 for the other file.
+
+
+Additional query words: 1.00 msgame ac msngz igz corrupted asherons
+
+======================================================================
+Keywords          : kberrmsg kbtool igz kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

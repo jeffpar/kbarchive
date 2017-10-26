@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139819: Missing and Multiple Drive Letters Assigned To Partitions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139819: Missing and Multiple Drive Letters Assigned To Partitions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139819/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139819/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139819/","publisher":null,"image":null,"headline":"Q139819: Missing and Multiple Drive Letters Assigned To Partitions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139819-missing-and-multiple-drive-letters-assigned-to-partitions">Q139819: Missing and Multiple Drive Letters Assigned To Partitions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139819
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 14-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT 3.51 on a hard disk partition greater than 9, the
+following problems may occur:
+
+- The first primary partition is not assigned a drive letter.
+
+- The Windows NT operating system partition is assigned 2 drive letters. (Drive
+  C: and the letter that would be normally be assigned to partition L:)
+
+- From File Manager and from the MS-DOS prompt, both drive letters C: and L:
+  address the same Windows NT operating system partition.
+
+- If you assign a drive letter to the first primary partition using Disk
+  Administrator, you can then use the first primary partition in File Manager.
+
+- When you reboot the system, you lose the drive letter assigned to the first
+  primary partition and must re-assign it again.
+
+Following is an example of the above symptoms:
+
+                   [logical drives in extended partition]
+
+  Primary1      L2  L3  L4  L5  L6  L7  L8  L9  L10  &lt;-- operating system
+  (unassigned)  D:  E:  F:  G:  H:  I:  J:  K:  C:
+
+NOTE: Both File Manager and the MS-DOS prompt address the Windows NT operating
+system partition by using drive letters C: and L: while the 1st primary
+partition is inaccessible unless you assign a drive letter to the partition
+using disk administrator.
+
+RESOLUTION
+==========
+
+- Move or re-install Windows NT into a partition numbered less than ten.
+
+  -or-
+
+- Delete partitions until the operating system partition is partition number
+  nine or less. Change the arc path in the BOOT.INI file to reflect the new
+  partition number before you reboot. The arc path looks like this:
+
+  Multi(0)Disk(0)Rdisk(0)partition(9)\winnt35
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

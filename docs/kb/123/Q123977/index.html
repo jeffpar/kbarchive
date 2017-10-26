@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123977: PRB: &quot;Unexpected column data types were returned from query&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123977: PRB: &quot;Unexpected column data types were returned from query&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123977/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123977/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123977/","publisher":null,"image":null,"headline":"Q123977: PRB: &quot;Unexpected column data types were returned from query&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123977-prb-unexpected-column-data-types-were-returned-from-query">Q123977: PRB: "Unexpected column data types were returned from query"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123977
+Product(s): Microsoft C Compiler
+Version(s): 1.50 1.51 1.52 | 2.00 2.10
+Operating System(s): 
+Keyword(s): kbcode kbDatabase kbMFC kbODBC kbVC kbprb
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following exception is thrown in a MFC database application:
+
+  "Unexpected column data types were returned from query"
+
+The message appears in a message box as well as in the Output window of the
+Visual C++ debugger.
+
+CAUSE
+=====
+
+This exception is thrown by a record field exchange RFX function if the SQL type
+of the column returned in the recordset doesn't match the C type used to stored
+the retrieved data for that column. For example, in the MFC RFX_Text() function
+for Visual C++ version 1.51, you'll see the following code segment:
+
+  case CFieldExchange::BindFieldToColumn:
+          {
+          UINT cbColumn;
+          int nSqlType = pFX-&gt;GetColumnType(nField, &amp;cbColumn);
+          switch (nSqlType)
+          {
+           default:
+     pFX-&gt;m_prs-&gt;ThrowDBException(AFX_SQL_ERROR_FIELD_SCHEMA_MISMATCH);
+           case SQL_LONGVARCHAR:
+           case SQL_CHAR:
+           case SQL_VARCHAR:
+              break;
+           case SQL_DECIMAL:
+           case SQL_NUMERIC:
+               // Add room for sign and decimal point
+               cbColumn += 2;
+               break;
+          }
+
+NOTE: The RFX_Text() function supports converting SQL_LONGVARCHAR,SQL_CHAR,
+SQL_VARCHAR, SQL_DECIMAL, and SQL_NUMERIC fields to a CString. If the column
+that the RFX_Text() function represents has any other SQL type, you will get the
+exception.
+
+There are two typical reasons why developers get the exception. First, a
+developer has specified a SQL statement as the second argument for the
+CRecordset::Open() function. In this case, the columns listed in the SQL SELECT
+statement must match the order by which the RFX functions are called in the
+CRecordset's DoFieldExchange(). The first RFX function maps to the first column
+returned in the recordset, the second RFX function maps to the second column,
+and so on. The exception is thrown when the RFX functions are out of order.
+Paying attention to the exception can save developers a lot of debugging time.
+
+Second, a developer intentionally changes one of the RFX functions to map the
+recordset column to a different C type because he or she knows the ODBC driver
+is capable of converting the column to any number of C types. For example, a
+common scenario is to have the driver return a date in a character string rather
+than a TIMESTAMP_STRUCT. Therefore, the developer will change the RFX_Date()
+function in the CRecordset's DoFieldExchange() function to a RFX_Text()
+function. In this scenario, the MFC RFX functions are being type strict and the
+exception shown above will occur.
+
+RESOLUTION
+==========
+
+In Visual C++ version 2.2 or greater, you will not get the exception discussed
+in this article. Type checking has been relaxed and now you will only see a
+message in the Output window:
+
+  "Warning: CString converted from SQL type &lt;SOME_SQL_TYPE&gt;"
+
+If you do not have Visual C++ 2.2 or greater and want to remove the type checking
+that the RFX functions provide, copy the existing RFX function into a new
+function and remove the the code that throws the exception. Replace the call to
+RFX_Text() with your new RFX_MyText() function in the DoFieldExchange()
+function. For example, to change the RFX_Text() function so that it doesn't do
+the type checking, change the code segment shown near the beginning of this
+article to this:
+
+  case CFieldExchange::BindFieldToColumn:
+          {
+              UINT cbColumn;
+              int nSqlType = pFX-&gt;GetColumnType(nField, &amp;cbColumn);
+              switch (nSqlType)
+              {
+              default:
+                  break;
+              case SQL_DECIMAL:
+              case SQL_NUMERIC:
+                  // Add room for sign and decimal point
+                  cbColumn += 2;
+                  break;
+              }
+
+By removing the strict type checking of the RFX functions, you can use functions
+like RFX_Text() to store SQL_DATE or SQL_TIMESTAMP column data in strings rather
+than structures.
+
+Another alternative is to create a new RFX function that either handles the
+BindFieldToColumn case or calls the standard RFX function. For example, you
+could re-write your RFX_Text() function to be something like this:
+
+  void RFX_MyText(CFieldExchange* pFX, const char *szName,
+      CString&amp; value, int nMaxLength, int nColumnType)
+  {
+      ASSERT(AfxIsValidAddress(pFX, sizeof(CFieldExchange)));
+      ASSERT(AfxIsValidString(szName));
+      ASSERT(AfxIsValidAddress(&amp;value, sizeof(CString)));
+      RETCODE nRetCode;
+      UINT nField;
+      if (!pFX-&gt;IsFieldType(&amp;nField))
+          return;
+      if (pFX-&gt;m_nOperation==CFieldExchange::BindFieldToColumn)
+      {
+              UINT cbColumn;
+              int nSqlType = pFX-&gt;GetColumnType(nField, &amp;cbColumn);
+              switch (nSqlType)
+              {
+              default:
+                  break;
+              case SQL_DECIMAL:
+              case SQL_NUMERIC:
+                  // Add room for sign and decimal point
+                  cbColumn += 2;
+                  break;
+              }
+              // Constrain to user specified max length
+              if (cbColumn &gt; (UINT)nMaxLength)
+                  cbColumn = nMaxLength;
+              AFX_SQL_SYNC(::SQLBindCol(pFX-&gt;m_prs-&gt;m_hstmt,
+                  (unsigned short int)nField, SQL_C_CHAR,
+                  value.GetBufferSetLength(cbColumn+1), cbColumn+1,
+                  pFX-&gt;m_prs-&gt;GetFieldLength(pFX)));
+              value.ReleaseBuffer();
+              if (!pFX-&gt;m_prs-&gt;Check(nRetCode))
+                  pFX-&gt;m_prs-&gt;ThrowDBException(nRetCode);
+              return;
+      }
+      // Undo the increments done in the IsFieldType call above
+      if (pFX-&gt;m_nFieldType == CFieldExchange::outputColumn)
+            --pFX-&gt;m_nFields;
+      else
+            --pFX-&gt;m_nParams;
+      RFX_Text(pFX, szName, value, nMaxLength, nColumnType);
+  }
+
+REFERENCES
+==========
+
+For more information about Record Field Exchange (RFX) functions, please see the
+following references:
+
+  MFC Technote #43 - "RFX Routines"
+  MFC Encyclopedia articles on RFX in the online books
+
+Additional query words: 1.50 2.00 2.50 2.51 3.00
+
+======================================================================
+Keywords          : kbcode kbDatabase kbMFC kbODBC kbVC kbprb 
+Technology        : kbAudDeveloper kbMFC
+Version           : 1.50 1.51 1.52 | 2.00 2.10
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

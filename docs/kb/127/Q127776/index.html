@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127776: Path Rules for FoxPro for Macintosh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127776: Path Rules for FoxPro for Macintosh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127776/","publisher":null,"image":null,"headline":"Q127776: Path Rules for FoxPro for Macintosh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127776-path-rules-for-foxpro-for-macintosh">Q127776: Path Rules for FoxPro for Macintosh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127776
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information describes differences and similarities in path
+constructs between the Macintosh and MS-DOS platforms and explains how to use
+path constructs in FoxPro.
+
+MORE INFORMATION
+================
+
+The rules for naming drives differ on the Macintosh and MS-DOS platforms. The
+drive name on the MS-DOS platform consists of a single character followed by a
+colon such as C: or D:. On the Macintosh, a drive name may look like Mac HD: or
+Barney. The Macintosh drive name can even contain a space between multiple
+letters whereas the MS-DOS style is limited to one character. Both, however, end
+with a colon.
+
+NOTE: Volume names, paths, and file names are not case sensitive. The term
+"volume" is interchangable with "drive" on the Macintosh platform.
+
+File Names
+----------
+
+Valid characters in file names are:
+
+  A-Z, underscore, and 0-9 but do not begin a file name with a numeral.
+
+Invalid characters according to the Finder are:
+
+  Colon (:) - ASCII value 58
+  Some systems substitute a dash -
+
+Invalid characters according to FoxPro's Fcreate command are:
+
+  Double Quotation mark (") - ASCII value 34
+  Colon (:) - ASCII value 58
+  Backslash (\) - ASCII value 92
+
+Valid but potentially problematic characters are:
+
+  Single Quotation mark (') - ASCII value 39
+  Period (.) other than the one automatically appended - ASCII value 46
+  Space ( ) - ASCII value 32
+
+Path Strings
+------------
+
+A path is a series of directory names or folders separated by a delimiter
+character such as a colon (:), which is the Macintosh notation, or a backslash
+(\), which is the the MS-DOS notation. The path may or may not have a file name
+at the end or a drive name at the beginning.
+
+NOTE: Most FoxPro for Macintosh commands accept the path in either MS-DOS
+backslash (\) format or Macintosh colon (:) format regardless of environment
+settings. However, commands and functions such as FxNewFolder() from Foxtools,
+which interact directly with the System, require a path in Macintosh shorthand
+notation. Please see SYS(2027) in FoxPro Help for more information.
+
+When to Use Quotation Marks
+---------------------------
+
+Surround the path and file name with quotation marks when any element of the
+volume, path, or file name contains any spaces or characters other than those
+suggested above. Surrounding a path with quotation marks may or may not be
+necessary, but if they are extraneous, they will be ignored.
+
+Path Examples
+-------------
+
+For the following examples, assume the following structure:
+
+  Barney             &lt;-- A volume with same name as folder
+     +-Fred1.dbf
+     |
+     +-Folder
+        +-Fred2.dbf
+        |
+        +-SubFolder1
+        |  +-Fred3.dbf
+        |  |
+        |  +-Barney  &lt;-- A folder with same name as volume
+        |     +-Fred5.dbf
+        |
+        +-SubFolder2
+           +-Fred4.dbf
+
+Fully qualified paths to open the file FRED5.DBF:
+
+  USE Barney:Folder:SubFolder1:Barney:Fred5
+  USE Barney:\Folder\SubFolder1\Barney\Fred5
+
+  * incorrect USE Barney\Folder\SubFolder1\Barney\Fred5
+
+From root of the default volume to FRED3.DBF:
+
+  USE \Folder\SubFolder1\Fred3
+  USE \:Folder:SubFolder1:Fred3
+
+NOTE: The critical difference between a relative path and a fully qualified path
+to FRED5.DBF is the colon after but not before the volume name.
+
+More Information on Relative Path Rules
+---------------------------------------
+
+Given that the default folder is SubFolder1 specified by this command:
+
+     Default=Barney:Folder:SubFolder1
+
+Two valid commands for opening the table in FoxPro are:
+
+     USE Fred3
+
+  This assumes MS-DOS shorthand that does not require a preceding path
+  separator for references relative to the current directory.
+
+     USE :Fred3
+
+  This Macintosh shorthand does require a preceding path separator for
+  references relative to the current directory.
+
+Valid references to the child folder of current folder to FRED5.DBF are:
+
+     USE :Barney:Fred5&lt;BR/&gt;
+     USE Barney\Fred5
+
+Valid references to the parent folder and FRED2.DBF are:
+
+     USE ..\Fred2&lt;BR/&gt;
+     USE ::Fred2
+
+Valid references to the grandparent folder and FRED1.DBF are:
+
+     USE ..\..\Fred1&lt;BR/&gt;
+     USE :::Fred1
+
+Valid references to the sibling folder and FRED4.DBF are:
+
+     USE ..\SubFolder2\Fred4&lt;BR/&gt;
+     USE ::SubFolder2:Fred4
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,2.6a,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

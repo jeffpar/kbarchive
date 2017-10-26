@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160974/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160974/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160974/","publisher":null,"image":null,"headline":"Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160974-howto-determine-if-text-in-a-text-box-can-be-undone">Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160974
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0;
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows, by example, how to determine at any given time if the text
+entered into a text box can be undone.
+
+MORE INFORMATION
+================
+
+By using the Windows API SendMessage(), you can send an EM_CANUNDO message to a
+TextBox control to determine whether an operation on it can be undone; that is,
+whether the control can respond to the EM_UNDO message. If the TextBox control
+can correctly process the EM_UNDO message, the return value from SendMessage()
+is True; otherwise, it is False.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project. Form1 is created by default.
+
+2. Add a TextBox control (Text1) to Form1.
+
+3. Add the following code to Form1's General Declarations section:
+
+        Const EM_CANUNDO = &amp;HC6
+        Private Declare Function SendMessage Lib "User32" Alias _
+        "SendMessageA" _
+           (ByVal hWnd As Long, _
+            ByVal wMsg As Long, _
+            ByVal wParam As Long, _
+            ByVal lParam As Long) As Long
+
+        Private Sub Form_Load()
+           Text1.Text = ""
+        End Sub
+
+        Private Sub Form_Click()
+           Dim lRet As Long
+
+           lRet = SendMessage(Text1.hWnd, EM_CANUNDO, 0&amp;, 0&amp;)
+           Debug.Print lRet
+        End Sub
+
+4. Press the F5 key to run the program. Type some text into the text box and
+  click Form1. The Debug window displays a value of 1 indicating that the text
+  you just entered can be undone. Note that if no text is typed into the text
+  box and the form is clicked, SendMessage()returns 0 because there is nothing
+  to undo.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

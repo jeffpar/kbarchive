@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119415: PC WRmt: How the System Selector Works | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119415: PC WRmt: How the System Selector Works" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119415/","publisher":null,"image":null,"headline":"Q119415: PC WRmt: How the System Selector Works","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119415-pc-wrmt-how-the-system-selector-works">Q119415: PC WRmt: How the System Selector Works</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119415
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mail System Selector (MAILDRV.EXE) is a program provided with version 3.2 of
+Microsoft Mail Remote for Windows. In Windows, the user selects the Mail System
+Selector icon to switch to a different mail service, such as AT&amp;T. These
+mail services are called drivers in the program. You can also use this program
+to remove a driver you no longer use.
+
+MORE INFORMATION
+================
+
+What Happens When the User Changes the Current Mail Driver?
+-----------------------------------------------------------
+
+1. The System Selector determines whether any of the mail driver DLLs are
+  currently loaded, by examining the entries in the [Providers] section of the
+  user's MSMAIL.INI.
+
+  The System Selector interprets the entries in the [Providers] section as
+  module names for driver DLLs. If one or more DLLs are loaded, the System
+  Selector assumes a mail-enabled application is running.
+
+2. If a mail-enabled application is running, the System Selector asks you if you
+  want to sign out immediately.
+
+  After your confirmation, the System Selector attempts to sign you out. This
+  may fail in some cases if, for example, Mail or Schedule+ are displaying
+  modal dialogs. If sign-out fails, the System Selector tells the you that they
+  must be signed off before changing the mail driver, and then it displays the
+  main dialog.
+
+3. The System Selector deactivates the current mail driver.
+
+  NOTE: In this section of the README file, PROVIDER is a placeholder for the
+  specific mail driver subdirectory name. For example, the driver subdirectory
+  for Microsoft Mail is \WINDOWS\MSMAIL\MSMAIL.)
+
+  a. If DEACTIVATE= is defined in \WINDOWS\MSMAIL\PROVIDER\FILES.INI, the named
+     DLL is loaded and functions in it are called so that specific environment
+     changes can be properly cleaned up after the provider has run.
+
+  b. Entries are removed from the user's .INI files as follows:
+
+     The INI= entry in the [Transport] section of the
+     WINDOWS\MSMAIL\PROVIDER\FILES.INI file determines which .INI files will be
+     modified. If this entry is missing, only MSMAIL.INI will be modified. The
+     [XXX - Deactivate] sections of the .INI files in the
+     WINDOWS\MSMAIL\PROVIDER list which entries will be removed from the user's
+     .INI files.
+
+  c. The mail driver's DLLs and other files are returned to
+     WINDOWS\MSMAIL\PROVIDER. The Files= entry of the [Transport] section in
+     FILES.INI lists which files will be moved.
+
+4. The System Selector activates the selected new driver.
+
+  a. The mail driver's DLLs and other files are moved from
+     WINDOWS\MSMAIL\PROVIDER to WINDOWS\SYSTEM. The new driver's FILES.INI file
+     list which files will be moved.
+
+  b. Entries are merged into the user's .INI files. The INI= entry in the
+     [Transport] section of WINDOWS\MSMAIL\PROVIDER\FILES.INI determines which
+     .INI files will be modified. If this entry is missing, only MSMAIL.INI
+     will be modified.
+
+     Sections that do NOT have the " - Deactivate" string as part of the section
+     name list which entries will be added.
+
+  c. If ACTIVATE= is defined in WINDOWS\MSMAIL\PROVIDER\FILES.INI, the named
+     DLL is loaded and functions in it are called so that specific environment
+     changes can be properly set up by the provider.
+
+5. The System Selector updates its display and the contents of MSMAILPV.INI to
+  reflect the switch.
+
+  If there is a failure anywhere along the way, the System Selector backs out
+  changes by first undoing whatever steps were taken in the activation step,
+  and then re-activating the original driver.
+
+Please see SWITCHER.TXT for additional information.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

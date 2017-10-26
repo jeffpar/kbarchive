@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149985/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149985/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149985/","publisher":null,"image":null,"headline":"Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149985-nec-ready-boot-disk-configuration-for-sb16-to-work-in-fs5">Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149985
+Product(s): Microsoft Home Games
+Version(s): MS-DOS:5.0,5.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator for MS-DOS, versions 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use the NEC Ready Sound Card in Microsoft Flight Simulator, you must
+configure it as a Sound Blaster 16 (SB16).
+
+MORE INFORMATION
+================
+
+The following steps assume your CD-ROM drive is drive D and that Windows is
+installed in the Windows folder on drive C.
+
+1. Run Flight Simulator Setup inside Windows. To do this, click Start, click
+  Run, type d:\setup, and then press ENTER.
+
+2. Create a Windows startup disk by following these steps:
+
+  a. Insert a blank floppy disk into the floppy drive. This disk becomes your
+     startup disk.
+
+  b. Click Start, point to Settings, and then click Control Panel.
+
+  c. Double-click Add/Remove Programs.
+
+  d. Click the Startup Disk tab.
+
+  e. Click Create Disk.
+
+3. Create the Autoexec.bat and Config.sys files listed below on the startup
+  disk.
+
+  Autoexec.bat
+  ------------
+
+    set sound16=c:\opti930
+    c:\opti930\sndinit /b
+    PATH C:\WINDOWS;C:\WINDOWS\COMMAND
+    SET TEMP=C:\TEMP
+    LH C:\WINDOWS\COMMAND\MSCDEX /d:mscd000 /l:e /m:12
+    C:\NECUTILS\LMOUSE.COM
+    C:\WINDOWS\SMARTDRV.EXE
+    C:
+    CD FLTSIM5
+
+  Config.sys
+  ----------
+
+    DEVICE=C:\WINDOWS\HIMEM.SYS
+    DEVICEHigh=C:\WINDOWS\EMM386.EXE ram
+    DOS=HIGH,UMB
+    DEVICEHIGH=C:\WINDOWS\COMMAND\DRVSPACE.SYS /move
+    FILES = 35
+    DEVICEHIGH=C:\dos\OAKV111.SYS /d:mscd000 /m:s /p:170p /v
+
+  NOTE: If the drive is compressed, there is not room in memory to load the
+  CDROM Driver. Use the REM command to remark out the lines above, that contain
+  either MSCDEX or OAKV111.SYS.
+
+4. Restart the computer with the startup disk in the floppy drive.
+
+5. Run Fight Simulator Setup from the MS-DOS command prompt and test the sound
+  card with Autodetect. To do this, follow these steps:
+
+  a. At the "C:\fltsim5" command prompt, type "setup" (without the quotation
+     marks), and then press ENTER.
+
+  b. Use the DOWN ARROW key to select the sound card, and then press ENTER.
+
+  c. Select Autodetect, and then press ENTER. Follow the instructions on the
+     screen to complete the installation.
+
+The above steps work on NEC Ready models 7022, 9012, 9022, 9522, and 9532. The
+MS-DOS drivers are installed by factory default. They are also available after
+the NEC Product Recovery CD-ROM has reinitialized the hard disk. If you need the
+latest NEC Recovery CD-ROM, call NEC Technologies at (800)632-4525.
+
+The MS-DOS sound card driver does not work correctly in a MS-DOS Window or in a
+virtual machine.
+
+After using the DOS sound card driver, the sound card needs to be reset before
+the Windows sound driver works correctly. The sound card can be reset by
+shutting down and restarting the computer, or the sound card can be
+automatically reset by the Windows sound driver when you exit Windows.
+
+Additional query words: 5.00 5.10 5.x flightsim fltsim dos d_fltsim flt sim
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbFlightSim510DOS kbSimSearch
+Version           : MS-DOS:5.0,5.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

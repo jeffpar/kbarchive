@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242364: XADM: Information Store Does Not Start After Offline Defrag | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242364: XADM: Information Store Does Not Start After Offline Defrag" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242364/","publisher":null,"image":null,"headline":"Q242364: XADM: Information Store Does Not Start After Offline Defrag","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242364-xadm-information-store-does-not-start-after-offline-defrag">Q242364: XADM: Information Store Does Not Start After Offline Defrag</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242364
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run an offline defragmentation (the eseutil /d command), the
+information store does not start and returns an error message 4294966277.
+
+The following events are logged in the application event log:
+
+  Event ID: 0
+  Source: ESE97
+  Type: Error
+  Category: Logging/Recovery
+  Description: MSExchangeIS ((451)) -1019
+
+  Event ID: 1120
+  Source: MSExchangeIS
+  Type: Error
+  Category: General
+  Description: Error 0xfffffc05 initializing the Microsoft Exchange Server
+  Information Store database.
+
+The Tempdfrg.edb file (this file name may be different if you used a /t switch in
+the defragmentation command) that is created during the defragmentation is still
+on the drive; a normal defragmentation deletes it.
+
+CAUSE
+=====
+
+The information store defragmentation does not finish the copy of the database
+from the temporary (defragmented) file back to the original location. The
+database is therefore damaged and unusable. The 4294966277 error message is a
+JET_errPageNotInitialized error, which means that a page within the database is
+blank or has not been properly initialized.
+
+RESOLUTION
+==========
+
+When the offline defragmentation does not finish the copy, the temporary
+database is not deleted. If the temporary database is the intact, successfully
+defragmented database, you can manually copy it back to the correct location.
+
+If you only defragmented one database and already know which database is damaged,
+proceed to the "Copying the Temporary Database" section of this article. If you
+defragmented both the Priv.edb and Pub.edb databases and you are not sure which
+database has caused the problem, perform the following steps to determine which
+database is causing the problem:
+
+1. Check the integrity of both the Priv.edb and Pub.edb databases:
+
+   - To check the Priv.edb database, at a command prompt, run the following:
+
+  eseutil /g /ispriv
+
+   - To check the Pub.edb database, at a command prompt, run the following:
+
+  eseutil /g /ispub
+
+2. Note which database does not pass the integrity check and returns a -1019
+  error message.
+
+3. Note the size of the database file that did not pass the integrity check.
+
+4. Compare this size to the size of the temporary file.
+
+By comparing the sizes of the two files, you can determine if the Tempdfrg.edb
+file is the defragmented version of the damaged database file. In most cases,
+the files are exactly the same size. The copy process sets aside the space at
+the beginning of the process, and although the process does not finish, the size
+of the database file still matches the source file.
+
+Copying the Temporary Database:
+
+To ensure that the database defragmentation finished successfully and to copy the
+defragmented file back to the correct location:
+
+NOTE: These steps assume that the information store databases are located on the
+server in the D:\Exchsrvr\Mdbdata folder and the temporary defragmentation file
+is located on drive D (D:\Tempdfrg.edb).
+
+1. Perform an integrity check against the temporary file. At a command prompt,
+  run the following:
+
+  eseutil /g d:\tempdfrg.edb
+
+  If the integrity check finishes successfully, proceed to the next step. If the
+  integrity check does not finish successfully, both copies of the database are
+  damaged and you must restore the database from a backup.
+
+2. Rename the damaged database (either the Priv.edb or Pub.edb database).
+
+3. Copy the temporary defragmentation file from drive D (D:\Tempdfrg.edb) to the
+  D:\Exchsrvr\Mdbdata folder.
+
+4. In the D:\Exchsrvr\Mdbdata folder, rename the Tempdfrg.edb file to the
+  correct database file name (either Priv.edb or Pub.edb).
+
+5. Start the information store.
+
+NOTE: If a -1011 error message is displayed when you start the information store,
+it does not indicate a problem. The information store and the directory need to
+be resynchronized. To synchronize the information store and the directory, at a
+command prompt, run the following:
+
+  \exchsrvr\bin\isinteg -patch
+
+MORE INFORMATION
+================
+
+An offline defragmentation copies data from the current database to a new
+database file. When the defragmentation process reaches 100% the temporary file
+is a complete and defragmented database. At this point, the utility copies the
+temporary file back to the original location, which overwrites the original
+database.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

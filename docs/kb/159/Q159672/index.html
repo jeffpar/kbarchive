@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159672: How To Find the Trap Frame If It Is Corrupt | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159672: How To Find the Trap Frame If It Is Corrupt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159672/","publisher":null,"image":null,"headline":"Q159672: How To Find the Trap Frame If It Is Corrupt","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159672-how-to-find-the-trap-frame-if-it-is-corrupt">Q159672: How To Find the Trap Frame If It Is Corrupt</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159672
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the trap frame is corrupt or cannot be found when completing a debugging
+session, use the method detailed below to determine its location.
+
+MORE INFORMATION
+================
+
+Dump the first ChildEBp's address on the stack using the dd command. Continue to
+dump until you see two 23's back-to-back. After you run into this line of the
+dump, subtract x30 from the address at the beginning of that line and run a
+!trap against the results.
+
+For example:
+
+KD&gt; kb
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+fdfa4d3c  80121022  00000000 00000000 00000000 NT!KiTrap0E+0x252
+
+KDx86&gt; dd fdfa4d3c
+0xFDFA4D3C  fef26ba8 fbde3200 00000000 00000000 .k...2..........
+0xFDFA4D4C  00000000 00104601 fdfa4d80 80104655 .....F...M..UF..
+0xFDFA4D5C  fef26ba8 fef26c08 fef26ba8 fbde3260 .k...l...k..`2..
+0xFDFA4D6C  00000000 00000023 00000023 00000400 ....#...#.......
+
+Sequence of 00000000 00000023 00000023 starts at 0xFDFA4D6C.
+
+KD&gt; !trap FDFA4D3C
+eax=00326b08 ebx=00022500 ecx=e18f6dc0 edx=00000400 esi=00000000
+edi=004f2118
+eip=80121022 esp=fdfa4db0 ebp=fdfa4dfc iopl=0         nv up ei pl nz na po
+cy
+vip=0    vif=0
+cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000
+efl=00010207
+ErrCode = 00000000
+
+NOTE: Another way of getting the trap frame is to do a dump on EBP-30 and dump
+from this address until you get to the sequence of 00000023 00000023. From this
+point on its just like the first example.
+
+Additional query words: debugref
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

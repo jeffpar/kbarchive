@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q233550: Component Builder Appears to Change Component’s Transaction ID | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q233550: Component Builder Appears to Change Component’s Transaction ID" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/233/Q233550/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/233/Q233550/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/233/Q233550/","publisher":null,"image":null,"headline":"Q233550: Component Builder Appears to Change Component’s Transaction ID","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q233550-component-builder-appears-to-change-components-transaction-id">Q233550: Component Builder Appears to Change Component’s Transaction ID</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q233550
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0 SP2,4.0SP2
+Operating System(s): 
+Keyword(s): kbsna400sp2
+Last Modified: 05-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+- Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you design COM Transaction Integrator for CICS and IMS (COMTI) components
+using Component Builder (CB), it may seem possible to change the "Transaction
+ID" of a locked method. However, when you save the component, the presumed
+change does not persist.
+
+In some cases, when a method is locked, the edit box for the Transaction ID in
+the Host Names properties is not disabled. At the same time, the title for the
+edit box, Transaction ID, is grayed out. Component Builder allows changing the
+Transaction ID value in the edit box. Then, if the dialog box is closed and
+reopened, the Transaction ID is restored to its original value.
+
+If you do not make that check, you might save the component library and test with
+it. The testing would be confounded because the Transaction ID would not be set
+to the new value.
+
+One place in particular that this could cause a problem is after you have used
+the Import COBOL Wizard of Component Builder to create a new method in a
+component library. After this process, the method is in the "Locked" state.
+Nevertheless, the Transaction ID edit box is enabled, and you can change the
+value of the Transaction ID. However, as above, the change is not persistent.
+
+WORKAROUND
+==========
+
+If the component is installed in an Microsoft Transaction Server (MTS) package,
+delete it by taking these steps:
+
+1. Right-click My Computer in MTS Explorer, and click Shut Down Server
+  Processes.
+
+2. Select the Components folder of the appropriate MTS package, right-click the
+  component, and click Delete.
+
+Then change the Transaction ID:
+
+1. Start the Component Builder, and open the component library.
+
+2. Right-click the method name, and click Unlock.
+
+3. Right-click the method name, and click Properties.
+
+4. Click the Host Names tab.
+
+5. Change the Transaction ID to the appropriate value.
+
+6. Close the dialog box, and lock the method again.
+
+7. Save the component library.
+
+8. Reinstall the component library in its MTS package.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+4.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2
+Version           : WINDOWS:4.0 SP2,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

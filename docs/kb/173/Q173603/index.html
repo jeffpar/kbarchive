@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173603/","publisher":null,"image":null,"headline":"Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173603-wd97-word-cannot-save-or-create-this-file-error-quitting-word">Q173603: WD97: "Word Cannot Save or Create This File" Error Quitting Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173603
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbenv kbsetup kbtemplate winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you quit Microsoft Word 97, the following error message may appear:
+
+  Word cannot save or create this file. The disk may be full or write
+  protected.
+
+  Try one or more of the following:
+
+  - Free more memory.
+
+  - Make sure that the disk you want to save the file on is not full,
+  write-protected, or damaged. (&lt;path&gt;\NORMAL.DOT)
+
+where &lt;path&gt; is the location to which Word is trying to save Normal.dot.
+
+CAUSE
+=====
+
+The problem occurs when all of the following conditions are true:
+
+- You are running Windows NT or Windows 95 with user profiles enabled.
+
+- Office 97 installation has been performed for other users of the workstation,
+  but not for you.
+
+- The Office folder is in a location that you cannot write to. This may occur
+  if you installed Word with a Run From CD installation, a Run From Network
+  Server installation, or a local installation on a Windows NT workstation if
+  you do not have permissions to write to the Office folder.
+
+- You start and quit Word for the first time, without using the New command on
+  the File menu.
+
+When you quit Word, Word attempts to write a Normal.dot (template) file in the
+Office folder. Because the Office folder is in a location that you cannot write
+to, you receive the error message described in the "Symptoms" section of this
+article.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Start Microsoft Word 97.
+
+2. On the Tools menu, click Options.
+
+3. Click the File Locations tab.
+
+4. Under File Types, click User Templates, and then click Modify.
+
+5. In the Modify Location dialog box, select a new folder name and click OK. The
+  default value is:
+
+  C:\Program Files\Microsoft Office\Templates
+
+6. Under File Types, click Workgroup Templates, and then click Modify.
+
+7. In the Modify Location dialog box, select a new Folder Name and click OK
+  twice. The default value is undefined (blank).
+
+8. Quit Word without saving changes to Normal.dot and then restart Word.
+
+Word writes a new Normal.dot file in the location specified in step 5.
+
+If Word writes the Normal.dot file in a location other than the one you
+specified, follow these steps:
+
+1. Manually move (don't copy) the Normal.dot file to the directory you want.
+
+2. Follow steps 1 through 5 above to set the User Templates path to the
+  directory that contains the Normal.dot file.
+
+STATUS
+======
+
+This behavior is by design and is different from earlier versions of Word.
+Earlier versions of Word search the program (Office) directory for a Normal.dot
+file before searching the User Templates or Workgroup Templates locations.
+
+MORE INFORMATION
+================
+
+Template Search Order
+---------------------
+
+When Word 97 starts, it automatically searches for a Normal.dot template file
+upon which to base Document 1. The search order is as follows:
+
+1. Local Templates path - On the Tools menu, click Options, and click the File
+  Locations tab. The setting is called "User Templates." This setting is stored
+  in the following registry location:
+
+     HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Common\FileNew
+     \LocalTemplates
+
+2. Shared Templates path - On the Tools menu, click Options, and click the File
+  Locations tab. The setting is called "Workgroup Templates." This setting is
+  stored in the following registry location:
+
+     HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Common\FileNew
+     \SharedTemplates
+
+3. The program folder that contains Winword.exe.
+
+NOTE: If there is a Normal.dot file in more than one of these locations, Word 97
+uses the first Normal.dot file it finds, based on the above search order.
+
+The search order for Word 97 is different from earlier versions of Word.
+
+How the Registry Keys Are Written
+---------------------------------
+
+Setup does not create the User Templates and Workgroup Templates paths mentioned
+earlier. The registry keys are first created in HKEY_LOCAL_MACHINE, and Word
+copies them to HKEY_CURRENT_USER the first time someone uses the File New
+command.
+
+Word does not create the SharedTemplates registry key unless the installation is
+an upgrade over a previous version of Office in which a WorkGroups Templates
+location was specified. The process is as follows:
+
+1. Setup writes the User Templates and Workgroup Templates settings to the
+  following respective registry keys:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\Office\8.0\Common\FileNew
+     \LocalTemplates
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\Office\8.0\Common\FileNew
+     \SharedTemplates
+
+2. You then log on to Windows and start Word 97.
+
+3. When you click the File menu and click New, Word copies the settings in
+
+  HKEY_LOCAL_MACHINE to HKEY_CURRENT_USER.
+
+Possible Problems
+-----------------
+
+If you never use the New command on the File menu, Word never copies the registry
+entries from HKEY_LOCAL_MACHINE to HKEY_CURRENT_USER. In this situation, the
+LocalTemplates and SharedTemplates keys in HKEY_CURRENT_USER do not exist;
+therefore, Word attempts to write the Normal.dot file to the program directory.
+(See item 3 in the "Template Search Order" section earlier in this article.)
+
+Run from Network Server Installation:
+
+If you are running Office 97 from a network server, the error message described
+earlier occurs because Word cannot save the Normal.dot file to the program
+directory on the network server, a directory to which you do not have write
+permissions.
+
+Run from CD Installation:
+
+If you are running Office 97 using a Run From CD installation, the error message
+occurs because Word is trying to save the Normal.dot file to the program
+directory on the Office CD, a directory which cannot be written to.
+
+Run Local Installation:
+
+If you are running a local installation of Office 97, Word writes the Normal.dot
+file to the program directory as long as you have permission to write to that
+directory. Otherwise, the error message occurs.
+
+
+REFERENCES
+==========
+
+For more information about saving the Normal.dot file, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q167284 WD97: Problem Saving Normal.dot on Computer with Multiple Users
+
+  Q172674 WD: Where Word Settings Are Stored
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbenv kbsetup kbtemplate winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

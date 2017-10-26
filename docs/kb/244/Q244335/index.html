@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244335: SMS: Network Discovery Causes Incorrect Names in Collections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244335: SMS: Network Discovery Causes Incorrect Names in Collections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244335/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244335/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244335/","publisher":null,"image":null,"headline":"Q244335: SMS: Network Discovery Causes Incorrect Names in Collections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244335-sms-network-discovery-causes-incorrect-names-in-collections">Q244335: SMS: Network Discovery Causes Incorrect Names in Collections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244335
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbtool kbui kbsms200 kbsms200bug kbDiscovery
+Last Modified: 30-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Network Discovery is run in an environment where Domain Name Server (DNS)
+reverse lookup zones are used, the discovered data shown in the collections may
+not reflect the correct name for recently discovered systems.
+
+CAUSE
+=====
+
+When Network Discovery receives a list of Internet Protocol (IP) addresses from
+the Address Resolution Protocol (ARP) cache of a router, it uses DNS reverse
+lookup to determine the name of each device. If the first portion of the fully
+qualified domain name (FQDN) in the DNS reverse lookup table does not match a
+system's NetBIOS name, the name in the reverse lookup table could be incorrectly
+used as the system's NetBIOS name.
+
+WORKAROUND
+==========
+
+Network Discovery runs only on the Microsoft Systems Management Server when it
+is scheduled or requested.
+
+  NOTE: Windows Networking Logon Discovery can be used to discover clients on
+  the network as well.
+
+To work around this issue, do one of the following:
+
+- Ensure that the DNS reverse lookup tables contain accurate FQDNs for the
+  systems in your network environment.
+
+- Configure the Systems Management Server site's Transmission Control
+  Protocol/Internet Protocol (TCP/IP) properties not to use DNS servers. If
+  Dynamic Host Configuration Protocol (DHCP) is used to configure the server's
+  IP address and DNS server configuration, it may be necessary to disable DHCP
+  and define a static IP address for the server to control the DNS server
+  configuration.
+
+MORE INFORMATION
+================
+
+This issue can also occur if specifying a Microsoft Windows NT system's IP
+address as a Simple Network Management Protocol (SNMP) device under the Network
+Discovery properties.
+
+The following example shows how this problem can occur:
+
+NetBIOS name:  BIGBIRD
+IP address: 121.54.34.222 
+DNS PTR record:  121.54.34.222
+Returned name: sesame.street.com
+
+When Network Discovery asks the DNS server to return the name that matches the
+121.54.34.222 IP address, it receives "sesame.street.com". The portion of the
+name up to the first period is used as a resource name for this device. As a
+result, "sesame" appears as the name of this system, not "BIGBIRD".
+
+If Windows NT Remote Client Installation is enabled when this behavior occurs,
+the Systems Management Server Client Configuration Manager component may try to
+install the Systems Management Server client on systems that either do not exist
+or are incorrectly discovered.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbui kbsms200 kbsms200bug kbDiscovery 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

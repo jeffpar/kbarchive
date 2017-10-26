@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69704: How to Write Advisor Library Callback Routines Under MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69704: How to Write Advisor Library Callback Routines Under MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69704/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69704/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69704/","publisher":null,"image":null,"headline":"Q69704: How to Write Advisor Library Callback Routines Under MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69704-how-to-write-advisor-library-callback-routines-under-ms-dos">Q69704: How to Write Advisor Library Callback Routines Under MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69704
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft HELPMAKE Utility for MS-DOS and OS/2, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Professional Advisor Library version 1.0 includes a sample program
+(MHTEST.EXE) that demonstrates basic use of the help system API. However, this
+program example was written for OS/2 and there is no MS-DOS example included in
+the package. The sample code provided below demonstrates how to use the help
+system functions under MS-DOS.
+
+MORE INFORMATION
+================
+
+The MHTEST.EXE example is built from two source files, HTEST.C and HELPBACK.C.
+HTEST.C is a sample front-end application that interfaces with the library
+functions. HELPBACK.C is a sample set of call-back functions, which the library
+functions require you to have in your code. Both of these files are written for
+OS/2 (utilizing OS/2 API calls) and will not compile and link explicitly for
+MS-DOS; however, the program will run under either MS-DOS or OS/2 if it is
+compiled and linked for OS/2 and then bound for MS-DOS.
+
+If an unbound, MS-DOS-only version of the program is desired, the sample code
+below illustrates how to write MS-DOS-specific versions of the seven call-back
+functions needed by the library. The nature of these call-back functions is best
+described in the following paragraph from the article "Adding Hypertext-Based
+Help to Your Application Using the Microsoft Help System" from the "Microsoft
+Systems Journal," May 1990:
+
+  If you are developing an MS-DOS application, you must provide some call-back
+  functions. These call-back functions are involved with opening and closing
+  files, reading data from a file, allocating and deallocating memory, and
+  locking and unlocking memory. The help library imposes this burden upon the
+  programmer because of the limited resources available under MS-DOS. If the
+  help engine were to use the standard malloc or _dos_allocmem functions to
+  obtain memory for itself, it would probably find itself running out of memory
+  if it were embedded into a large program, or possibly conflicting with the
+  program's own memory management scheme. For example, many large programs
+  manage their memory using a virtual memory management scheme. By forcing the
+  application to provide call-back functions to control memory allocation, the
+  help engine never intrudes on the application's own memory management scheme.
+
+It is important to note that the sample routines provided below are only simple
+templates for the type of functions needed; they do not include any error
+checking or error-handling capabilities. The sample routines are written for use
+with the large and compact memory models and will require some minor
+modifications to avoid compiler warnings under the small or medium models.
+
+Sample Code
+-----------
+
+  /* Compile options needed: /AL
+  */ 
+
+  #include &lt;stdio.h&gt;
+  #include &lt;fcntl.h&gt;
+  #include &lt;io.h&gt;
+  #include &lt;sys\types.h&gt;
+  #include &lt;sys\stat.h&gt;
+  #include &lt;dos.h&gt;
+
+  #include "help.h"
+
+  int pascal far OpenFileOnPath(char far *file_name, int mode)
+  {
+     return(open(file_name, O_RDONLY | O_BINARY));
+  }
+
+  void pascal far HelpCloseFile(int fh)
+  {
+     close(fh);
+  }
+
+  unsigned long pascal far ReadHelpFile(unsigned fh, unsigned long fpos,
+                                     char far *pdest, unsigned short cb)
+  {
+     unsigned long cRet = 0;
+
+     if(pdest)
+        {
+        if(lseek(fh, fpos, SEEK_SET) != -1L)
+            cRet = (unsigned long)read(fh, pdest, cb);
+        }
+     else
+        cRet = (unsigned long)filelength(fh);
+
+     return(cRet);
+  }
+
+  unsigned pascal far HelpAlloc(unsigned mem_size)
+  {
+     unsigned sel;
+
+     _dos_allocmem((mem_size / 16) + 1, &amp;sel);
+     return(sel);
+  }
+
+  void pascal far HelpDealloc(unsigned seg)
+  {
+     if(seg)
+        _dos_freemem(seg);
+  }
+
+  void far * pascal far HelpLock(unsigned seg)
+  {
+     return((char far *) (((unsigned long)seg) &lt;&lt; 16) );
+  }
+
+  void pascal far HelpUnlock(unsigned seg)
+  {
+     seg;
+  }
+
+Additional query words: kbinf 1.00 helpmake callback TlsMisc
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword2 kbHELPMAKE kbZNotKeyword3
+Version           : MS-DOS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

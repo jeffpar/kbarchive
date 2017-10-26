@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167338/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167338/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167338/","publisher":null,"image":null,"headline":"Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167338-bug-formatd-fails-for-coledatetime-and-coledatetimespan">Q167338: BUG: Format("%D") Fails for COleDateTime and COleDateTimeSpan</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167338
+Product(s): Microsoft C Compiler
+Version(s): 4.2
+Operating System(s): 
+Keyword(s): kbcode kbVC500bug
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+COleDateTime::Format("%D") fails to return the day in the object.
+
+COleDateTimeSpan::Format("%D") fails to return the total days.
+
+RESOLUTION
+==========
+
+Instead of using Format use COleDateTime::GetDay() or
+COleDateTimeSpan::GetDays() to get the day value and use CString::Format to put
+it into a CString. The sample code below illustrates this using CString::Format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+Sample Code
+-----------
+
+     COleDateTimeSpan span;
+     // Set to 1 day 2 hours 3 minutes and 4 seconds
+     span.SetDateTimeSpan(1,2,3,4);
+
+     CString str;
+     str = span.Format("%D;%H;%M;%S"); // BUG:Day(s) is not found in CString
+
+     // Following is equivalent to the above
+     str.Format("%02d;%s", span.GetDays(),
+                 (LPCTSTR)span.Format("%H;%M;%S"));
+
+     COleDateTime time;
+     time = COleDateTime::GetCurrentTime();
+     str = time.Format("%D;%H;%M;%S"); // BUG:Day is not found in CString
+
+     // Following is equivalent to the above
+     str.Format("%02d;%s", time.GetDay(),
+                (LPCTSTR)time.Format("%H;%M;%S"));
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation
+
+
+Additional query words: kbVC420bug kbDSupport COleDateTime COleDateTimeSpan Format Day
+
+======================================================================
+Keywords          : kbcode kbVC500bug 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

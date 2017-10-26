@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122399: Enabling Help Desk Options for MS-DOS Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122399: Enabling Help Desk Options for MS-DOS Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122399/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122399/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122399/","publisher":null,"image":null,"headline":"Q122399: Enabling Help Desk Options for MS-DOS Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122399-enabling-help-desk-options-for-ms-dos-clients">Q122399: Enabling Help Desk Options for MS-DOS Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122399
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbConfig smshowto smsconfig
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Help Desk Options for MS-DOS clients are disabled by default. This article
+discusses proper methods to enable Help Desk Options for an MS-DOS Remote
+client.
+
+MORE INFORMATION
+================
+
+Help Desk Options can be enabled by an MS-DOS client using the -v option of
+USERTSR and USERIPX, or by modifying the SMS.INI on the client. Help Desk
+Options enabled using the -v option of USERTSR and USERIPX (USERIPX is used only
+with Novell IPX clients) are not saved, so the next reboot results in selected
+options being disabled again. Help Desk Options enabled by modifying the SMS.INI
+are permanent.
+
+Method 1: Using -v Option of USERTSR and USERIPX
+------------------------------------------------
+
+To enable options using the -v command of USERTSR or USERIPX:
+
+1. Make sure USERTSR or USERIPX has already been loaded in the CLIENT.BAT file
+  because the -v options are not available until USERTSR or USERIPX has already
+  been loaded.
+
+2. Run USERTSR or USERIPX with a -v option for every Help Desk Option you would
+  like to enable. Available options are:
+
+  VIEW - Allows Remote Control of the client
+  FILEXFER - Allows File Transfer to/from the client
+  EXECUTE - Allows Remote Execution of commands on the client
+  REBOOT - Allows Remote Reboot of the client
+
+  Example:
+
+  USERTSR -vVIEW -vREBOOT -vEXECUTE
+
+  NOTE: To disable a Help Desk Option, enter a -v option preceded by NO. For
+  example:
+
+  USERTSR -vNOVIEW -vNOREBOOT -vNOEXECUTE
+
+Method 2: Modifying SMS.INI File
+--------------------------------
+
+To enable options in the SMS.INI:
+
+1. Change the properties of the SMS.INI file from read-only, hidden, and system
+  using the following MS-DOS command:
+
+  attrib c:\sms.ini -r -h -s
+
+2. Open the SMS.INI file in Notepad and change the entries in the Sight section
+  from "No" to "Yes" (without the quotation marks):
+
+        [Sight]
+        Allow Takeover= &lt;No | Yes&gt;
+        Allow Reboot= &lt;No | Yes&gt;
+        Allow File Transfer= &lt;No | Yes&gt;
+        Allow Remote Execute= &lt;No | Yes&gt;
+
+3. Save the changes and set the properties of the SMS.INI to read-only, hidden,
+  and system using the following MS-DOS command:
+
+  attrib c:\sms.ini +r +h +s
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbConfig smshowto smsconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

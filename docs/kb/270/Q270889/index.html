@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q270889: XCON: How to Manually Create Site Connectors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q270889: XCON: How to Manually Create Site Connectors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/270/Q270889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/270/Q270889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/270/Q270889/","publisher":null,"image":null,"headline":"Q270889: XCON: How to Manually Create Site Connectors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q270889-xcon-how-to-manually-create-site-connectors">Q270889: XCON: How to Manually Create Site Connectors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q270889
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to manually create a site connector. In the normal
+course of things, it should not be necessary to create a site connector in this
+manner, but for some situations, such as creating a site connector between
+member servers in untrusted domains, this method must be used.
+
+MORE INFORMATION
+================
+
+WARNING: If you use the raw mode of the Exchange Server Administrator program
+(admin /r) incorrectly, serious problems may occur that may require you to
+reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+Microsoft cannot guarantee that problems that result from using raw mode
+incorrectly can be solved. Use raw mode at your own risk.
+
+1. Start the Exchange Server Administrator program in raw mode by running admin
+  /r.
+
+2. Click the Connections container for your site.
+
+3. On the File menu, click New Other, and then click Raw Object.
+
+4. Select the site connector from the list.
+
+5. Fill in the Directory Name field in the format of: site connector (Replace
+  with the remote site's name).
+
+6. Click the Set button.
+
+7. Change the List Attributes of Type drop-down menu to "All."
+
+8. Find the Domain-Name raw attribute. Fill out the Edit Value field as follows,
+  replacing the words Organization and Site with the organization and site
+  names of the remote site.
+
+  Organization&lt;A7&gt;Site&lt;A7&gt;X400:c=US;a= ;p=Organization;o=Site;
+
+  NOTE: To create the Section Sign character (&lt;A7&gt;), hold down the ALT key and
+  press 0167, then release the ALT key.
+
+9. Click Set.
+
+10. Find the Target-MTAs raw attribute. Fill out the Edit Value field as
+  follows, replacing the word &lt;server&gt; with the remote server name:
+
+  Server&lt;A7&gt;1
+
+11. Click Add.
+
+12. Click OK.
+
+13. Open the properties of the site connector object that you just created, and
+  on the General tab, fill in the Display Name and Cost fields.
+
+14. On the Address Space tab, fill in the X.400 Addressing field for the remote
+  site.
+
+15. On the Override tab, specify an account with the proper permissions in the
+  remote site.
+
+16. Repeat the process on the remote side.
+
+
+Additional query words: site connector untrusted domains member servers
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

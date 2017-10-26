@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74419: Norton’s Erase Protect Program Doesn’t Work with Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74419: Norton’s Erase Protect Program Doesn’t Work with Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74419/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74419/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74419/","publisher":null,"image":null,"headline":"Q74419: Norton’s Erase Protect Program Doesn’t Work with Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74419-nortons-erase-protect-program-doesnt-work-with-windows-30">Q74419: Norton’s Erase Protect Program Doesn’t Work with Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74419
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Norton's Erase Protect program (EP.EXE) from Norton Utilities
+version 6.0, Microsoft Windows cannot start in protected mode.
+
+One of the following error messages will occur if you use this program with
+Windows version 3.0:
+
+- In 386 Enhanced Mode
+
+  The conventional memory in your system is fragmented and Windows cannot run
+  in 386 enhanced mode. Please reboot your computer and try again or else run
+  Windows in real mode by typing win /r.
+
+- In Standard Mode
+
+  Cannot run Windows in standard mode. Check to ensure you are not running
+  other protected mode software, or run in real mode.
+
+
+WORKAROUND
+==========
+
+Do not to use the Erase Protect utility when running Windows 3.0 in standard or
+386 enhanced mode. You can find out how to disable this program by referring to
+"The Norton Utilities User's Guide" on page 9-3.
+
+-or-
+
+Upgrade to Norton Utilities version 6.01. Erase Protect was revised in version
+6.01 and Norton Desktop version 1.0 to function properly with Windows 3.0.
+
+MORE INFORMATION
+================
+
+The Erase Protect program is a terminate-and-stay-resident program (TSR) that
+moves deleted files to another, less-used part of your disk to protect them from
+being overwritten. The deleted files are renamed and copied into hidden
+directory called TRASHCAN.
+
+For more information, contact Norton.
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+REFERENCES
+==========
+
+"The Norton Utilities User's Guide," page 9-3.
+
+KBCategory: kb3rdparty
+KBSubcategory: win30
+
+Additional query words: ndw 3.00 3.0 3.0a 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

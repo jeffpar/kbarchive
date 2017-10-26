@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253277/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253277/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253277/","publisher":null,"image":null,"headline":"Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253277-xcln-how-to-delete-messages-that-have-a-blank-subject-line">Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253277
+Product(s): Microsoft Exchange
+Version(s): ; WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot create an Outlook rule to process incoming e-mail messages that have
+a blank Subject line.
+
+CAUSE
+=====
+
+This problem occurs because in Outlook, rules cannot process an e-mail message
+if the Subject line is blank. Rules can only process an e-mail message if the
+Subject line contains some content.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. In your Inbox, on the View menu, click Current View, and then click Customize
+  Current View.
+
+2. Click Group By, and then under "Group items by", click Subject to group
+  e-mail messages according to subject.
+
+  In this view, e-mail messages that contain a blank Subject line are included
+  in a group that is displayed similar to the following:
+
+  Subject: (none)(x items, y unread)
+
+  Where x is the total number of e-mail messages in the group, and y is the
+  number of e-mail messages in the group that have not been read.
+
+3. Process that grouped set of e-mail messages as necessary. For example, delete
+  the grouped set of e-mail messages.
+
+MORE INFORMATION
+================
+
+In Outlook you can create rules that process incoming e-mail messages based on a
+variety of criteria. One type of rule moves, deletes, or processes in some way
+incoming e-mail messages, based on the contents of the Subject line. For
+example, if you regularly receive e-mail messages that have a Subject line that
+contains JOKE, you can create a rule that deletes all incoming e-mail messages
+that contain JOKE in the Subject line. To create this type of rule, however, you
+must specify some text for the rule to look for in the Subject line of incoming
+e-mail messages. Therefore, you cannot create a rule to process an incoming
+e-mail message that has a blank Subject line.
+
+Additional query words: empty
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

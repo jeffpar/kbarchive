@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156940/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156940/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156940/","publisher":null,"image":null,"headline":"Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156940-devices-not-detected-with-intel-82371sb-piix3-controller">Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156940
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbhw kbsetup diskmem win95 kbHardware kbDiskMemory
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Windows 95 on a computer with an Intel 82371SB PIIX3 IDE
+hard disk controller, Windows 95 may not detect devices installed on the
+secondary IDE channel. If the devices are initially detected and appear in
+Device Manager, they may no longer appear in Device Manager the next time you
+restart the computer.
+
+CAUSE
+=====
+
+The Intel 82371SB PIIX3 IDE hard disk controller is not included in the
+Mshdc.inf file included with Windows 95. Therefore, although the controller is
+detected by Windows 95 and appears in Device Manager, it may not be properly
+configured. This may prevent devices on the secondary IDE channel from being
+detected or installed properly.
+
+The following computers are known to contain Intel 82371SB PIIX3 IDE hard disk
+controllers:
+
+- Dell Dimension Pentium Pro 200
+
+- Hewlett-Packard Vectra VL 5/xxx Series 4
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that this situation is not caused by problems in Windows 95.
+
+RESOLUTION
+==========
+
+For information about how to work around this problem, please contact Intel.
+
+
+MORE INFORMATION
+================
+
+This problem affects all Intel motherboards that contain the 82371SB PIIX3
+onboard IDE hard disk controller. When you install Windows 95 on a computer that
+contains an 82371SB PIIX3 controller, the controller is detected and installed
+by Windows 95. However, because the Mshdc.inf file does not contain
+configuration information for the controller, the secondary IDE channel on the
+controller may not be configured properly.
+
+Because the secondary channel is not configured properly, it is typically
+disabled by the BIOS the next time you restart your computer. This causes
+Windows 95 to determine that the devices installed on the secondary channel have
+been removed from your computer, and causes Windows 95 to remove the devices
+from Device Manager.
+
+To determine if the 82371SB PIIX3 IDE hard disk controller in your computer is
+configured properly, double-click the System icon in Control Panel, click the
+Device Manager tab, and then double-click the Hard Disk Controllers branch to
+expand it. If the following devices appear under the Hard Disk Controllers
+branch, the 82371SB PIIX3 controller is not configured properly and the problem
+described in this article is likely to occur:
+
+- Primary IDE Controller (single FIFO)
+
+- Standard Dual PCI IDE Controller
+
+- Standard IDE/ESDI Hard Disk Controller
+
+
+Additional query words: oem eide e-ide cd-rom cd
+
+======================================================================
+Keywords          : kbhw kbsetup diskmem win95 kbHardware kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

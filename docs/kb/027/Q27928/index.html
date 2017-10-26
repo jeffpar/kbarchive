@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q27928: Routines Compiled /FPa (Alt. Math) Can’t Be in Quick Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q27928: Routines Compiled /FPa (Alt. Math) Can’t Be in Quick Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/027/Q27928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/027/Q27928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/027/Q27928/","publisher":null,"image":null,"headline":"Q27928: Routines Compiled /FPa (Alt. Math) Can’t Be in Quick Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q27928-routines-compiled-fpa-alt-math-cant-be-in-quick-library">Q27928: Routines Compiled /FPa (Alt. Math) Can’t Be in Quick Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q27928</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">See</span> <span class="n">article</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.00</span> <span class="m">6.00</span><span class="n">b</span> <span class="m">7.00</span> <span class="m">7.10</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">ENDUSER</span> <span class="p">|</span> <span class="n">B_QuickBas</span> <span class="p">|</span> <span class="n">mspl13_basic</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">4</span><span class="p">-</span><span class="n">SEP</span><span class="p">-</span><span class="m">1990</span>
+
+<span class="n">The</span> <span class="n">linker</span> <span class="n">error</span> <span class="n">message</span> <span class="s2">"L2025: Symbol defined more than once"</span> <span class="n">occurs</span>
+<span class="n">when</span> <span class="n">you</span> <span class="n">attempt</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">Quick</span> <span class="n">library</span> <span class="p">(</span><span class="n">LINK</span> <span class="p">/</span><span class="n">Q</span><span class="p">)</span> <span class="k">from</span> <span class="p">.</span><span class="n">OBJ</span> <span class="n">modules</span>
+<span class="n">that</span> <span class="n">were</span> <span class="n">compiled</span> <span class="k">with</span> <span class="n">the</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span> <span class="p">(</span><span class="n">BC</span> <span class="p">/</span><span class="n">FPa</span><span class="p">)</span> <span class="n">option</span><span class="p">.</span>
+
+<span class="n">Routines</span> <span class="n">compiled</span> <span class="k">with</span> <span class="n">BC</span> <span class="p">/</span><span class="n">FPa</span> <span class="p">(</span><span class="n">the</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span> <span class="n">switch</span><span class="p">)</span>
+<span class="n">cannot</span> <span class="n">be</span> <span class="n">placed</span> <span class="n">into</span> <span class="n">a</span> <span class="n">Quick</span> <span class="n">library</span> <span class="n">because</span> <span class="n">the</span> <span class="n">QB</span><span class="p">.</span><span class="n">EXE</span> <span class="k">or</span> <span class="n">QBX</span><span class="p">.</span><span class="n">EXE</span>
+<span class="n">environment</span> <span class="n">does</span> <span class="k">not</span> <span class="n">support</span> <span class="n">the</span> <span class="n">use</span> <span class="k">of</span> <span class="n">the</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span><span class="p">.</span>
+<span class="n">The</span> <span class="n">QuickBASIC</span> <span class="k">and</span> <span class="n">QuickBASIC</span> <span class="n">extended</span> <span class="n">environments</span> <span class="n">support</span> <span class="n">only</span> <span class="n">the</span>
+<span class="n">IEEE</span> <span class="n">coprocessor</span><span class="p">-</span><span class="n">emulation</span> <span class="n">math</span> <span class="k">package</span> <span class="p">(/</span><span class="n">FPi</span><span class="p">).</span> <span class="n">The</span> <span class="n">alternate</span> <span class="n">math</span>
+<span class="k">package</span> <span class="p">(/</span><span class="n">FPa</span><span class="p">)</span> <span class="n">is</span> <span class="n">only</span> <span class="n">supported</span> <span class="k">in</span> <span class="n">compiled</span> <span class="n">EXE</span> <span class="n">programs</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">information</span> <span class="n">applies</span> <span class="k">to</span> <span class="n">the</span> <span class="n">QB</span><span class="p">.</span><span class="n">EXE</span> <span class="n">environment</span> <span class="n">supplied</span> <span class="k">with</span>
+<span class="n">Microsoft</span> <span class="n">BASIC</span> <span class="n">Compiler</span> <span class="n">versions</span> <span class="m">6.00</span> <span class="k">and</span> <span class="m">6.00</span><span class="n">b</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="k">and</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">QBX</span><span class="p">.</span><span class="n">EXE</span> <span class="n">environment</span> <span class="n">supplied</span> <span class="k">with</span> <span class="n">Microsoft</span> <span class="n">BASIC</span> <span class="n">Professional</span>
+<span class="n">Development</span> <span class="nf">System</span> <span class="p">(</span><span class="n">PDS</span><span class="p">)</span> <span class="n">versions</span> <span class="m">7.00</span> <span class="k">and</span> <span class="m">7.10</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">purpose</span> <span class="k">of</span> <span class="n">the</span> <span class="n">alternate</span> <span class="n">floating</span><span class="p">-</span><span class="n">point</span> <span class="n">math</span> <span class="k">package</span> <span class="n">is</span> <span class="k">to</span> <span class="n">provide</span>
+<span class="n">faster</span> <span class="n">floating</span><span class="p">-</span><span class="n">point</span> <span class="n">calculations</span> <span class="n">on</span> <span class="n">computers</span> <span class="n">that</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="n">a</span>
+<span class="n">coprocessor</span><span class="p">.</span> <span class="n">The</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span> <span class="n">is</span> <span class="n">significantly</span> <span class="n">faster</span> <span class="n">than</span>
+<span class="n">the</span> <span class="n">IEEE</span> <span class="n">coprocessor</span><span class="p">-</span><span class="n">emulation</span> <span class="n">math</span> <span class="k">package</span> <span class="n">when</span> <span class="nf">run</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span>
+<span class="n">without</span> <span class="n">a</span> <span class="n">coprocessor</span> <span class="n">installed</span><span class="p">.</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span> <span class="n">is</span> <span class="n">about</span> <span class="m">50</span> <span class="n">percent</span> <span class="n">slower</span> <span class="n">than</span>
+<span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Binary</span> <span class="n">Format</span> <span class="p">(</span><span class="n">MBF</span><span class="p">)</span> <span class="n">floating</span><span class="p">-</span><span class="n">point</span> <span class="n">math</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">noncoprocessor</span> <span class="k">version</span> <span class="k">of</span> <span class="n">QuickBASIC</span> <span class="n">versions</span> <span class="m">3.00</span> <span class="k">and</span> <span class="n">earlier</span><span class="p">.</span>
+<span class="p">(</span><span class="n">QuickBASIC</span> <span class="n">versions</span> <span class="m">4.00</span><span class="p">,</span> <span class="m">4.00</span><span class="n">b</span><span class="p">,</span> <span class="k">and</span> <span class="m">4.50</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">BASIC</span> <span class="n">Compiler</span>
+<span class="n">versions</span> <span class="m">6.00</span> <span class="k">and</span> <span class="m">6.00</span><span class="n">b</span><span class="p">,</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">PDS</span> <span class="n">versions</span> <span class="m">7.00</span> <span class="k">and</span> <span class="m">7.10</span> <span class="n">only</span>
+<span class="n">offer</span> <span class="n">support</span> <span class="n">for</span> <span class="n">the</span> <span class="n">older</span> <span class="n">MBF</span> <span class="n">math</span> <span class="k">with</span> <span class="n">a</span> <span class="p">/</span><span class="n">MBF</span> <span class="n">compiler</span> <span class="n">option</span> <span class="k">and</span>
+<span class="n">some</span> <span class="n">MBF</span> <span class="n">numeric</span> <span class="n">conversion</span> <span class="n">functions</span><span class="p">.</span> <span class="n">These</span> <span class="n">BASIC</span> <span class="n">versions</span> <span class="n">have</span>
+<span class="n">adopted</span> <span class="n">IEEE</span> <span class="k">and</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">to</span> <span class="n">be</span> <span class="n">compatible</span> <span class="k">with</span> <span class="n">the</span> <span class="n">other</span>
+<span class="n">Microsoft</span> <span class="n">language</span> <span class="n">products</span> <span class="p">[</span><span class="n">FORTRAN</span><span class="p">,</span> <span class="n">Pascal</span><span class="p">,</span> <span class="k">and</span> <span class="n">C</span><span class="p">]</span> <span class="k">and</span> <span class="k">to</span> <span class="n">support</span>
+<span class="n">the</span> <span class="n">math</span> <span class="n">coprocessor</span><span class="p">.)</span>
+
+<span class="n">For</span> <span class="n">the</span> <span class="n">greatest</span> <span class="n">speed</span><span class="p">,</span> <span class="n">applications</span> <span class="n">should</span> <span class="n">be</span> <span class="n">compiled</span> <span class="k">with</span> <span class="n">the</span> <span class="n">BC</span>
+<span class="p">/</span><span class="n">FPi</span> <span class="n">switch</span> <span class="k">and</span> <span class="nf">run</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span> <span class="k">with</span> <span class="n">a</span> <span class="n">coprocessor</span> <span class="n">installed</span><span class="p">.</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128390: Different Ways a Macintosh Can Connect Through SNA Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128390: Different Ways a Macintosh Can Connect Through SNA Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128390/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128390/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128390/","publisher":null,"image":null,"headline":"Q128390: Different Ways a Macintosh Can Connect Through SNA Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128390-different-ways-a-macintosh-can-connect-through-sna-server">Q128390: Different Ways a Macintosh Can Connect Through SNA Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128390
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the three ways to connect a Macintosh to a mainframe or
+AS/400 through SNA Server.
+
+MORE INFORMATION
+================
+
+Downstream PU for 3270
+----------------------
+
+On the Macintosh, install a Token Ring card and bind the DLC protocol to it. In
+SNA Server Admin, configure a downstream connection for the Macintosh. For
+instructions on setting up downstream connections see Chapter 9 of the SNA
+Server "Administration Guide."
+
+This configuration works with any Macintosh 3270 emulator that supports 802.2
+connectivity.
+
+NOTE: Macintoshes are not supported as Downstream PUs on Ethernet because there
+is no DLC support for Ethernet on a Macintosh.
+
+NOTE: SNA Server doesn't support 5250 from a downstream PU (DSPU) since 5250
+requires independent LU6.2 which is not support through an SNA Server DSPU.
+
+TN3270/TN5250
+-------------
+
+SNA Server 2.x:
+On the Macintosh, install TCP/IP and use any Macintosh TN3270 emulator. On the
+SNA Server, install the TN3270 Service (&lt;SNACDROOT&gt;\TN3270\setup.bat).
+
+For instructions on how to configure SNA Server Admin for LUA, see Chapter 8 of
+the SNA Server "Administration Guide." For information on configuring the TN3270
+Service, consult the online help in the TN3270 Admin program.
+
+SNA Server 3.x:
+SNA Server 3.x was enhanced with a TN5250 Service. To use this service, install
+TCP/IP on the Macintosh and use any TN5250 emulator for your 5250 sessions.
+
+For instructions on how to configure APPC LUs for use with the TN5250 service or
+for instructions on how to configure the TN5250 Service, consult the online
+documentation within SNA Server Manager.
+
+TN3270 remains the same under 3.x, except the adminstration is built into SNA
+Server Manager and it is installed as an optional component within SNA Server
+3.x's main setup program.
+
+Windows NT Services For Macintosh
+---------------------------------
+
+Configure a Windows NT machine for Services for the Macintosh, and then run
+Attachmate's IRMA Workstation for Macintosh v4.0 or greater and follow the
+instructions outlined in the "Configuring for a Microsoft SNA Server" section in
+Chapter 2 of the Attachmate Irma Workstation for Macintosh User's Guide.
+
+For instructions on how to setup Services for Macintosh on a Windows NT machine
+see "Services for Macintosh" install guide that ships with Windows NT Server.
+
+
+Additional query words: prodsna sfm
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

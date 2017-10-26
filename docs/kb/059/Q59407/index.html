@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59407: PRB: Inaccurate Representation of Large Double Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59407: PRB: Inaccurate Representation of Large Double Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59407/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59407/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59407/","publisher":null,"image":null,"headline":"Q59407: PRB: Inaccurate Representation of Large Double Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59407-prb-inaccurate-representation-of-large-double-values">Q59407: PRB: Inaccurate Representation of Large Double Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59407
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+Last Modified: 29-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for MS-DOS 
+- Microsoft C for OS/2 
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft C, subtracting double values greater than or equal to 1.0E+025 may
+return inaccurate results.
+
+CAUSE
+=====
+
+This is expected behavior and is due to the imprecise nature of floating-point
+math. Anytime floating-point math uses large numbers, there will be
+rounding/truncation errors and errors introduced due to imprecise representation
+of a result in binary format.
+
+MORE INFORMATION
+================
+
+Because double values are only 15-digit precise, simple subtraction of two large
+numbers can give unexpected results. The following sample code demonstrates this
+behavior.
+
+Double values less than 1.0E+25 may not experience the same problem.
+
+Sample Code
+-----------
+
+  #include &lt;stdio.h&gt;
+
+  double a = 1E+28, tmp = 9E+28;
+
+  void main (void)
+  {
+
+     printf ("a = %le    tmp = %le\n", a, tmp);
+
+     while (tmp &gt;= 1E+25) {
+        tmp -= a;
+        printf ("a = %le    tmp = %le\n", a, tmp);
+     }
+  }
+
+The above sample code produces the following output:
+
+a = 1.000000e+028    tmp = 9.000000e+028
+a = 1.000000e+028    tmp = 8.000000e+028
+a = 1.000000e+028    tmp = 7.000000e+028
+a = 1.000000e+028    tmp = 6.000000e+028
+a = 1.000000e+028    tmp = 5.000000e+028
+a = 1.000000e+028    tmp = 4.000000e+028
+a = 1.000000e+028    tmp = 3.000000e+028
+a = 1.000000e+028    tmp = 2.000000e+028
+a = 1.000000e+028    tmp = 1.000000e+028
+a = 1.000000e+028    tmp = 1.319414e+013
+
+Additional query words: 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbVC500 kbVC600 kbVC200 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

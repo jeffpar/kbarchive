@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126110: FIX: What’s New: Bug Fixes Made in Visual C++ Version 2.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126110: FIX: What’s New: Bug Fixes Made in Visual C++ Version 2.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126110/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126110/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126110/","publisher":null,"image":null,"headline":"Q126110: FIX: What’s New: Bug Fixes Made in Visual C++ Version 2.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126110-fix-whats-new-bug-fixes-made-in-visual-c-version-21">Q126110: FIX: What’s New: Bug Fixes Made in Visual C++ Version 2.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126110
+Product(s): Microsoft C Compiler
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbGenInfo kbVC kbArtTypeINFkbbuglist kbfixlist
+Last Modified: 14-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists fixes made in version 2.1 to bugs that appeared in Microsoft
+Visual C++, 32-bit Edition, version 2.0. This information can also be found in
+the What's New help file available from Books Online or from the initial Setup
+dialog box.
+
+
+MORE INFORMATION
+================
+
+Bugs Fixed in Visual C++ 2.1
+----------------------------
+
+Visual C++ version 2.1 fixes several Visual C++ version 2.0 bugs. These include
+bugs for hosting on Windows 95 and for double-byte character set (DBCS) code.
+Many developers will find the bug fixes listed in this article of particular
+interest.
+
+Fixed Integrated Development Environment Bugs
+---------------------------------------------
+
+- The thread priority is not displayed correctly. Visual C++ was using
+  ANSI_FIXED_FONT; this has been changed to SYSTEM_FIXED_FONT.
+
+
+- If you paste data from one window containing a document to another window
+  containing the same document, the window into which you paste is refreshed
+  incorrectly. This occurred in two cases: (a) when the second view of the
+  document was created with the New Window command on the Window menu or (b)
+  when the second view was in a splitter window.
+
+
+- Splitter windows in the Visual C++ source code editor exhibit incorrect
+  behavior. If you split a source code window and edited one of the panes, the
+  other window was repainted incorrectly.
+
+
+- Pasting a large bitmap from Microsoft Word version 6.0 (16 bit) into the
+  Visual C++ version 2.0 bitmap editor results in a general protection (GP)
+  fault. If you placed a bitmap on the clipboard from Word, opened the bitmap
+  editor in Visual C++, and pasted the bitmap, a GP fault occurred in Visual
+  C++. Visual C++ version 2.1 has been fixed to ignore the paste attempt, but
+  even in that version, Word still cannot provide the bitmap.
+
+
+Fixed MFC Bugs
+--------------
+
+- An assertion failure occurs when using RFX_Text with a column of type
+  SQL_VARCHAR that is wider than 255 bytes. Some drivers implement columns of
+  type SQL_VARCHAR that allow more than 255 bytes, so in those cases, the MFC
+  assertion would not be valid. For more information, please see the following
+  article in the Microsoft Knowledge Base:
+
+  Q120888 FIX: Assertion Fails When Use RFX_Text() w/ SQL_VARCHAR Column
+
+
+- Calling MovePrev after you move past the end of a recordset or calling
+  MoveNext after you move past the beginning of a recordset results in no
+  action. You needed two MoveNext calls or two MovePrev calls to get to the
+  first or last record of the recordset, respectively. Note that if your
+  existing code calls either of these functions twice in a row to work around
+  this problem, the code will now move an extra record.
+
+
+- MFC had a problem with the way the Open Database Connectivity (ODBC) driver
+  for Microsoft Access version 2.0 represented its Yes/No (bit) fields. The
+  Microsoft Access driver mapped its Yes/No fields to the SQL_BINARY data type
+  rather than SQL_BIT. This meant that MFC database programmers could not use
+  BOOL for these fields in recordsets. This behavior was incompatible with the
+  previous Microsoft Access driver version. Updated ODBC drivers now eliminate
+  this problem.
+
+
+- In an application that does not use a CRecordView-derived class, MFC database
+  code fails to update Null fields correctly. On a CRecordset::Edit call in an
+  application not using a CRecordView, Edit failed to correctly update the
+  status of fields marked Null to not Null and vice versa; it was necessary to
+  explicitly set the status by calling the CRecordset member function
+  SetFieldNull with the appropriate parameter. For more information, please see
+  the following article in the Microsoft Knowledge Base:
+
+  Q123652 FIX: Update() Fails to Write Changed Text Field
+
+
+- OLE servers lost their toolbars when the container window was resized. If you
+  resized the container's frame window to reduce its height, the server's
+  toolbar disappeared and was replaced by the container's toolbar. As the frame
+  window was made larger, the container's toolbar disappeared, but the server's
+  toolbar did not reappear.
+
+
+- The pvarResult from COleDispatchDriver::InvokeHelper should be NULL when
+  vtRet is VT_EMPTY. But a call to COleDispatchDriver::InvokeHelper caused the
+  server to generate an error when the return type was VT_EMPTY. The nature of
+  the error depended on the automation server. For example, the Microsoft
+  WordBasic automation server caused the following error on some methods with a
+  return type of void (_DEBUG build): "Assertion Failed Line 315,
+  OLEDISP2.CPP." Using the debugger to examine the excepInfo structure showed
+  that the btrDescription member contained this message: "Non Function called
+  as function." For more information, please see the following article in the
+  Microsoft Knowledge Base:
+
+  Q121218 FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY
+
+
+- The CMainView::DoPasteNative member function in the OCLIENT sample
+  application failed to handle an error, which caused a failure. The
+
+     function returned without throwing an exception when the pFile variable
+
+  was NULL. This has been corrected to throw a CFileException.
+
+
+- A default OLE container application with OLE Automation enabled initialized
+  the m_pSelection data member in the wrong function. AppWizard initialized the
+  member to NULL in the view's nInitialUpdate member function rather than in
+  the view constructor. This led to an assertion failure in
+  COleClientItem::OnDraw when you attempted to create a container document with
+  another application, as for example using Visual Basic's CreateObject
+  function. The member is now correctly initialized in both places. (This bug
+  applies to both 16- and 32-bit versions.)
+
+
+- The ANSI mapping layer in MFCANS32.DLL handled standard OLE aggregation
+  incorrectly. The DLL incorrectly called AddRef where it should not have under
+  aggregation rules. There was also a problem with how MFC wrapped the "inner
+  IUnknown." For more information, see Technical Note 49 under MFC in Books
+  Online.
+
+
+- COleDataSource::OnRenderData returned NOERROR instead of TRUE. Because the
+  function return type is prototyped as BOOL, NOERROR is interpreted as FALSE.
+  (This bug applies to both 16- and 32-bit versions.)
+
+
+- The EXCEPINFO structure is not correctly initialized for an OLE control.
+  Information already available about an exception -- in particular, the
+  control name and the name of the control's help file -- was overwritten. This
+  has been corrected so that the EXCEPINFO structure is only filled if it is
+  empty. (This bug applies to both 16- and 32-bit versions.)
+
+
+- When Microsoft Excel deactivated an in-place object whose frame window has a
+  splitter that contained two or more views, the MFC application caused a
+  general protection fault. The COleServerDoc::OnShowDocument function
+  destroyed the frame window in this case, leading to the general protection
+  fault. This applied only to SDI-based in-place servers.
+
+
+- The wrong window was determined to be the active window when the HIERSVR
+  sample application was embedded in Microsoft Excel. When you used Edit Insert
+  in Excel to insert a HIERSVR object, selected the object, then chose any
+  command that opened a dialog box, the dialog box had the wrong parent. The
+  parent was in Excel, not HIERSVR. The m_pActiveWnd data member needed to be
+  set back to NULL once an object left the UI-active state. This was true for
+  both 16- and 32-bit Excel. (This bug applies to both 16- and 32-bit versions
+  of Visual C++.)
+
+
+- Removing FWS_ADDTOTITLE caused an incorrect SaveModified call. Removing the
+  FWS_ADDTOTITLE style from a CMDIChildWnd-derived class caused SaveModified to
+  be called when each view attached to the document was closed. This caused a
+  problem in closing the frame window. For more information, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q99182 How to Change an MFC-Based MDI Child Window's Frame Text
+
+
+- The CMDIFrameWnd caption was not updated when a maximized child window
+  closed. Under certain circumstances, closing a maximized child window did not
+  properly update the caption of the main frame window in a multiple document
+  interface (MDI) application. This caused the main frame window caption to
+  show a document name even with no documents open. The bug appeared when the
+  child window was maximized and the main frame window was narrower than its
+  menu bar, so the menu wrapped to the next line.
+
+
+- The command update handler for a menu item was not called if you added or
+  removed the previous menu item during a command handler call. If you added or
+  removed a menu item during a command handler call, the update handler was not
+  called for the menu item immediately following the added or removed item. For
+  example, menu items below the most-recently-used (MRU) list on the File menu
+  could be affected by this problem.
+
+
+- Problems occurred when you used width specifiers in CString::Format. In the
+  CString::Format member function, using a negative width specifier in a %s
+  metacharacter that was larger than the actual length of the string being
+  substituted led to an assertion failure in file: STREX.CPP, Line 360. You
+  might have a metacharacter like this if you wanted the string to be
+  left-justified within the number of columns you specified as the width.
+
+
+- CString::Format resulted in a general protection (GP) fault if variable width
+  or precision specifiers were used. Format did not correctly handle variable
+  width or precision parameters, such as %*d, which caused an Access
+  Violation.
+
+
+- The tab control didn't invalidate after adding a tab to a property sheet. If
+  you added a CPropertyPage via CPropertySheet::AddPage while the
+  CPropertySheet was displayed, the tab control did not update to reflect the
+  change. The tab control needed to be invalidated. This is similar to the
+  behavior of CTabControl::RemoveTab.
+
+
+- When the last control on a property page had the WS_TABSTOP style, but was
+  hidden, tabbing from the next-to-last control jumped to the first control on
+  the page. The expected behavior would be to go to the first control on the
+  associated property sheet (usually below the property pages). Note that the
+  correction for this behavior does not affect existing code.
+
+
+- An edit control in a property page did not get Return keys. A multiline edit
+  control with the ES_WANTRETURN style set did not receive return-key messages
+  (WM_KEYDOWN with VK_RETURN) when placed in a CPropertyPage object. If the
+  parent CPropertySheet object contained a button with an ID that was IDOK, the
+  dialog box was dismissed when the return key was pressed in the edit control.
+  For more information, please see the following article in the Microsoft
+  Knowledge Base:
+
+  Q125645 FIX: Edit Control in Property Page Does Not Get Return Keys
+
+
+- Problems occurred after destroying a dockable CControlBar object. When the
+  CControlBar object was destroyed, its destructor did not remove the control
+  bar from an array of control bar pointers kept by MFC in a CDockBar object.
+  In some situations, this led to an exception caused by an Access Violation in
+  the function CObject::IsKindOf. For more information, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q125728 FIX: Problems Occur After Destroying Dockable CControlBar
+
+
+- In applications that called CFrameWnd::LoadBarState, restoring the docking
+  state resulted in a disabled toolbar. If you added code that called
+  LoadBarState and your dockable toolbar did not have the style CBRS_DOCKMULTI,
+  LoadBarState caused the toolbar to be disabled the next time you ran the
+  application -- if in the previous session, you hid the toolbar while it was
+  floating and closed the application. AppWizard applications do not set this
+  style and do not call LoadBarState, so they did not encounter this problem.
+
+
+- While being loaded, an MFC _USRDLL could cause an assertion failure if the
+  DLL filename had an extension of fewer than three characters. The assertion,
+  which occurred in CWinApp::SetCurrentHandles, was incorrect. DLL filename
+  extensions are not required to be three characters long, nor must they be
+  "DLL" or any other specific string. However, some environments do require a
+  specific extension, such as the "WLL" extension for Microsoft Word add-ins.
+  This assertion was removed for MFC versions 3.1 and 2.52.
+
+
+- The implementation for the class CMap template could compare keys
+  incorrectly. The CMap implementation needed to use CompareElements to compare
+  keys. This correction allows greater flexibility in implementing the
+  comparison function.
+
+
+- Memory could leak in a CMap object when the KEY parameter was of type
+  CString. Removing all elements in the map resulted in deleting only the
+  values stored in the map, not the keys used to look values up. The fix allows
+  greater flexibility in implementing the comparison function.
+
+
+Fixed Compiler Bugs
+-------------------
+
+- The compiler treated pointer types as the corresponding base type in template
+  specializations. For example, given this template specialization:
+
+        template&lt;class T&gt; T dFriendFunc(Derived&lt;&gt; *);
+
+  char* was treated as char, and int* was treated as int. The compiler did not
+  deduce the template arguments correctly. This caused an error because two
+  functions appeared to differ only in their return types.
+
+
+- Problems occurred when exceptions were thrown across DLL boundaries. Throwing
+  an object that was exported resulted in an Access Violation. Visual C++
+  version 2.1 allows you to catch object defined in a DLL outside the context
+  of the defining DLL. For more information, please wee the following article
+  in the Microsoft Knowledge Base:
+
+  Q122303 BUG: __declspec(dllimport) Classes Are Not Caught Correctly
+
+
+- The Compiler returned no warning on an attempt to return a temporary variable
+  from a function. For example:
+
+        int a = 5;
+        return &amp;a;
+
+  The compiler shipped with Visual C++ version 2.1 now issues a warning' for the
+  return value.
+
+
+Fixed Linker Bugs
+-----------------
+
+- LineNum information was incorrect when converting from 32-bit Object Module
+  Format (OMF) to Common Object File Format (COFF). The linker incorrectly
+  converted 32-bit OMF LINENUM records to COFF. This showed up in the debugger
+  as incorrect line numbers; the conversion is now correct. For more
+  information, please wee the following article in the Microsoft Knowledge
+  Base:
+
+  Q117796 PRB: Incorrect Debug Information in 32-bit Object Module
+
+
+- An error occurred in the incremental linker when processing large images but
+  few relocations. This condition resulted in this message:
+
+  ***** Linker INTERNAL ERROR during EmitRelocations *****
+
+  The problem leading to this message has been corrected.
+
+
+Fixed Run-Time Library Bugs
+---------------------------
+
+- The tolower and toupper functions were not locale sensitive on the Intel
+  platform. The functions incorrectly used the "C" locale regardless of what
+  the locale was.
+
+
+- Using a pointer to a virtual base class object while catching an exception
+  resulted in an Application Error when the derived class used multiple
+  inheritance. This has been corrected.
+
+
+- An incorrect heap region size was set under Win32s. Win32s initially did not
+  support reserved but uncommitted virtual memory. A code check in Visual C++
+  used to limit the maximum total size of the CRTL heap under Win32s. This
+  check has been removed, so applications running under Win32s or Phar Lap TNT
+  will be able to allocate approximately as much total memory as under Windows
+  NT or Windows 95. The initial heap regions will be smaller under Win32s or
+  Phar Lap TNT than under Windows NT or Windows 95.
+
+
+- The _ecvt function returned the wrong number of digits in the overflow case.
+  If you called _ecvt asking for n digits and the function overflowed, it
+  returned n+1 digits. For example, _ecvt returned 1000 instead of 100. If your
+  code expected three digits, it might use 000, the last three of the four
+  digits returned, instead of 100.
+
+
+- There was a memory leak in the client DLLs of MSVCRT20.DLL. Suppose
+  EXAMPLE.DLL was a client of MSVCRT20.DLL and a client .EXE loaded and
+  unloaded EXAMPLE.DLL a number of times. The failure in Visual C++ to
+  deallocate a small block of memory in MSVCRT20.DLL could lead to a memory
+  leak.
+
+
+Fixed Resource Compiler Bugs
+----------------------------
+
+- The Resource Compiler required 16 megabytes of virtual memory on startup.
+  This requirement forced you to close applications or increase the size of the
+  Windows swap file to allow the resource compiler to load. A new version of
+  the resource compiler reduces this requirement.
+
+
+Additional query words: kbinf 2.00 2.10
+
+======================================================================
+Keywords          : kbGenInfo kbVC kbArtTypeINF kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC210
+Version           : :2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

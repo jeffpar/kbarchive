@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176164/","publisher":null,"image":null,"headline":"Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176164-fix-optional-argument-default-value-breaks-binary-compatibility">Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176164
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the default value of an Optional String argument to vbNullString causes
+the following error when the project is compiled with Binary Compatibility:
+
+  "&lt;procedure&gt; in the &lt;class&gt; class module has arguments and/or a
+  return
+  type that is incompatible with a similar declaration in the
+  version-compatible component"
+
+RESOLUTION
+==========
+
+Use quotation marks instead of vbNullString. For example:
+
+     Optional myString as String = ""
+
+You may also see the error:
+
+  "Variable uses an automation type not supported in Visual Basic (Error 458)."
+
+This occurs when you attempt to set the default value of a Variant optional
+argument to Null. Avoid using any of the null-related constants (vbNull,
+vbNullString, etc.) when providing a default value for an optional argument.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+A project containing the specification of this default value returns an error
+stating that the method for which the argument is defined is not Binary
+Compatible. This problem is specific to the use of vbNullString. It does not
+affect default values for Optional arguments in general.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX DLL project.
+
+2. Insert the following code into Class1:
+
+        Public Function meth1(pf1 As String, Optional pf2 As String = _
+            vbNullString) As Boolean
+           'Sample method
+        End Function
+
+3. From the File menu, select Make Project1.DLL.
+
+4. From the Project menu, select Project1 Properties.
+
+5. Click the Component Tab.
+
+6. Set the Version Compatibility to Binary Compatibility.
+
+7. Verify that TestBinaryProject1.dll is listed in the File Location Box at the
+  bottom of the form.
+
+8. Close the Project Properties form, and select "Make TestBinary Project1.DLL"
+  from the File menu. Note that the error occurs at this point.
+
+9. Select "Make Project1.dll" from the File menu. Change the path to the DLL so
+  that it is in a different location than the originally compiled version of
+  project1.dll and click OK. The error occurs at this point.
+
+Additional query words: kbVBp500BUG kbVBp600fix kbAutomation kbVBp kbdsd KBCOMPILER kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

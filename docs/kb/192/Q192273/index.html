@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192273/","publisher":null,"image":null,"headline":"Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192273-prb-sendkeys-does-not-work-with-numlock-or-caplock">Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192273
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using SendKeys to change the state of {CAPSLOCK} or {NUMLOCK} is not effective.
+
+CAUSE
+=====
+
+Toggling {CAPSLOCK} or {NUMLOCK} with the SendKeys statement is only in effect
+for the continuous subsequent keys sent by SendKeys. The state of {CAPSLOCK} or
+{NUMLOCK} is reset when Visual Basic yields to other processes. For example,
+this occurs when the SendKeys statement's Wait parameter is set to "True", or
+when a DoEvents statement is executed.
+
+RESOLUTION
+==========
+
+Use SendKeys to toggle {CAPSLOCK} or {NUMLOCK} only when sending a series of
+keys continuously in a single or multiple number of SendKeys statements. To
+toggle the {CAPSLOCK} or {NUMLOCK} permanently:
+
+1. Use the KeyState control that comes with Visual Basic 4.0.
+
+  - or -
+
+2. Use the Win32 API. See the article in the References section for details.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project. From1 is created by default.
+
+2. Add a TextBox to Form1 and paste the following code in the code Window:
+
+      Private Sub Text1_Click()
+          SendKeys "s"
+          SendKeys "{CAPSLOCK}"  ' Turn on the CapsLock
+          SendKeys "o"  ' will be printed in caps
+          For i = 0 To 10
+          SendKeys Chr(Asc("a") + i)  'will be printed in caps
+          Next
+          'DoEvents  ' uncommenting this will print next line in smalls
+          SendKeys "o"  ' will be printed in caps
+          SendKeys "{CAPSLOCK}"  ' Turn off the caps lock
+          SendKeys "o"  ' Will be printed in smalls
+      End Sub
+
+3. Turn off the Caps Lock. Run the project. Note that the SendKeys work as
+  expected.
+
+4. Un-comment the DoEvents statement. Run the project. The Caps Lock is reset
+  after the DoEvents call.
+
+5. In any SendKeys statement after SendKeys "{CAPSLOCK}", pass "True" as the
+  second parameter. The state of Caps Lock is reset after that statement.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q177674 : HOWTO: Toggle the NUM LOCK, CAPS LOCK, and SCROLL LOCK Keys
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

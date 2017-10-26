@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61236: C 6.00 README: Increasing the Maximum Number of Open Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61236: C 6.00 README: Increasing the Maximum Number of Open Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61236/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61236/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61236/","publisher":null,"image":null,"headline":"Q61236: C 6.00 README: Increasing the Maximum Number of Open Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61236-c-600-readme-increasing-the-maximum-number-of-open-files">Q61236: C 6.00 README: Increasing the Maximum Number of Open Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61236
+Product(s): See article
+Version(s): 6.00   | 6.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 25-APR-1990
+
+The following information is taken from the C Version 6.00 README.DOC
+file.
+
+Increasing the Maximum Number of Open Files
+-------------------------------------------
+
+C 6.00 allows you to increase the maximum number of files that may be
+open for I/O (the default number is 20). To use this feature, you must
+be running either OS/2 or DOS version 3.30 or later. Use the
+procedures described in the remainder of this section to increase the
+maximum number of open files.
+
+Increasing File Handles
+-----------------------
+
+To increase the number of file handles, edit the start-up source file
+CRT0DAT.ASM, which is provided in this release. Change the line
+
+   _NFILE_ = 20
+
+so that _NFILE_ is set to the desired maximum. For example, to
+increase the maximum number of available file handles to 40, change
+the line as shown here:
+
+   _NFILE_ = 40
+
+Note: Increasing the number of file handles allows you to use
+low-level I/O functions, such as open and read, with more files.
+However, it does not affect the number of stream-level I/O files (that
+is, the number of FILE * streams).
+
+Increasing Streams
+------------------
+
+To increase the number of streams, edit the source file _FILE.C.
+Change the line
+
+   #define _NFILE_ 20
+
+to set _NFILE_ to the desired maximum. For example, to allow a maximum
+of 40 streams, change the line as shown here:
+
+   #define _NFILE_ 40
+
+Increasing the number of streams allows you to use stream-level I/O
+functions, such as fopen and fread, with more files.
+
+Note: The number of low-level file handles must be greater than or
+equal to the number of stream-level files. Thus, if you increase the
+value of _NFILE_ in the module _FILE.C, you must also increase the
+value of _NFILE_ in the module CRT0DAT.ASM.
+
+Increasing the System Limit
+---------------------------
+
+To use more than 20 files at a time, you must increase the file limit
+imposed on your process by the operating system.
+
+To increase the system-wide limit, increase the number of files
+available on your system as a whole by editing your system
+configuration file (CONFIG.SYS). For example, to allow 100 open files
+at a time on your system, put this statement in the configuration
+file:
+
+   FILES=120
+
+To increase the process-by-process limit, you must also increase the
+number of files the operating system makes available to your
+particular process. To do this, edit CRT0DAT.ASM and enable the
+commented-out code that is preceded by the appropriate description.
+
+In the DOS version of CRT0DAT.ASM, for example, the commented-out code
+appears as shown here:
+
+   ;       mov     ah,67h
+   ;       mov     bx,_NFILE_
+   ;       callos
+
+In the OS/2 version of CRT0DAT.ASM, the code appears as a call to
+DOSSETMAXFH. Under OS/2, you must also enable the "extrn
+DOSSETMAXFH:far" declaration that appears near the beginning of the
+file.
+
+In either case, remove the semicolon (;) comment characters.
+
+Note: Under OS/2, you must take into account the fact that each
+process has the potential to "own" open files. When planning how many
+open files to allow on a system-wide basis, take this into account.
+
+Using the Modified Start-Up Files
+---------------------------------
+
+After you modify CRT0DAT.ASM and/or _FILE.C, assemble or compile the
+file(s). The start-up MAKEFILE contains sample command lines to
+perform these jobs. Note that the object files will differ for OS/2
+and DOS.
+
+To use the new object files, either explicitly link your program with
+the new CRT0DAT.OBJ and _FILE.OBJ file(s), or replace the CRT0DAT.OBJ
+and _FILE.OBJ object(s) in the appropriate model of the C run-time
+library.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

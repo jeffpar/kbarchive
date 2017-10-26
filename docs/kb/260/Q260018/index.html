@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260018/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260018/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260018/","publisher":null,"image":null,"headline":"Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260018-bug-winsock-control-run-time-error-10054-in-dataarrival-for-udp">Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260018
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbCtrl kbIP kbOSWin2000 kbSDKPlatform kbSDKWin32 kbVBp500 kbVBp600 kbWi
+Last Modified: 10-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A run-time error occurs when you use network communications on a Windows
+2000-based computer with a Winsock Control that uses User Datagram Protocol
+(UDP), and the Protocol property of the control is set as sckUDPProtocol.
+
+If a SendData request is sent to a RemoteHost that is not listening on the
+RemotePort, the DataArrival event fires and indicates that 1 byte of data is
+available. When you call the GetData method to retrieve that data, the following
+Microsoft Visual Basic run-time error occurs:
+
+  '10054' - "The connection is reset by remote side".
+
+Normally, you can capture the error by using the Error event of the Winsock
+Control. However, even when the Error event is present for the control, the
+Error event never fires and a run-time error message box displays.
+
+CAUSE
+=====
+
+When a UDP packet is sent to a remote computer and that computer is not
+listening on the port specified, the Internet Control Message Protocol (ICMP)
+reports this as an ICMP Port Unreachable error, which is then translated to the
+Windows 2000 Winsock control as error 10054.
+
+The Winsock Control incorrectly handles the error, causing it to pass to the
+Visual Basic run-time where the error is subsequently caught and displayed.
+
+RESOLUTION
+==========
+
+To work around this problem, use the Microsoft Visual Basic Standard Error
+Handling mechanism to catch the error. This workaround is illustrated in the
+following code snippet:
+
+  Private Sub Winsock1_DataArrival(ByVal bytesTotal As Long)
+     Dim szData As String
+
+     On Error Resume Next
+     Winsock1.GetData szData
+     If Err Then 
+        ' handle the error here
+     End if
+  End Sub
+
+Use the On Error method around the GetData method of the Winsock Control to
+capture the error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project.
+
+2. Add the Winsock Control to the project.
+
+3. Place a Winsock Control on the form.
+
+4. Add the following code in the Load event of the form:
+
+  Private Sub Form_Load()
+    Winsock1.Protocol = sckUDPProtocol
+    Winsock1.RemoteHost = "localhost"
+    Winsock1.RemotePort = 8377	' pick port that is not listening
+    Winsock1.SendData "Hello World!"
+  End Sub
+
+  Private Sub Winsock1_DataArrival(ByVal bytesTotal As Long)
+    Dim szData As String
+    Winsock1.GetData szData       ' error occurs here.
+  End Sub
+
+  Private Sub Winsock1_Error(ByVal Number As Integer, Description As String, ByVal Scode As Long, ByVal Source As String, ByVal HelpFile As String, ByVal HelpContext As Long, CancelDisplay As Boolean)
+    CancelDisplay = True
+    MsgBox "Error"
+  End Sub
+
+If you run this code on a Windows 2000-based computer, the Winsock1_Error handler
+is never called even though a Winsock Control error occurred.
+
+The Visual Basic error handler is able to trap and handle the error if you use
+the work around described in the "Resolution" section.
+
+NOTE: The run-time error does not occur if you run the same code on a Microsoft
+Windows 98-based computer or a Microsoft Windows NT-based computer.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q245442 INFO: Winsock Ignores ICMP Port Unreachable Control Messages
+
+  Q244751 PRB: Winsock Control does not Fire Error Event in all Cases
+
+  Q263823 WinSock Recvfrom() Now Returns WSAECONNRESET Instead of Blocking or
+  Timing Out
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbCtrl kbIP kbOSWin2000 kbSDKPlatform kbSDKWin32 kbVBp500 kbVBp600 kbWinsock kbDSupport kbGrpDSNet 
+Technology        : kbOSWin2000 kbVBSearch kbAudDeveloper kbOSWinSearch kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

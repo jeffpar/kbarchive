@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171652/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171652/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171652/","publisher":null,"image":null,"headline":"Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171652-howto-retrieve-individual-bytes-from-a-multi-byte-type-in-vb">Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171652
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,7.0
+Operating System(s): 
+Keyword(s): kbProgramming kbVBp400 kbVBp500 kbhowto kb32bitOnly
+Last Modified: 28-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0, used with:
+   - the hardware: Intel x86 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0, used with:
+   - the hardware: Intel x86 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0, used with:
+   - the hardware: Intel x86 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Access for Windows 95, version 7.0 
+- Microsoft Access 97 
+- Microsoft Excel 97 for Windows 
+- Microsoft Excel for Windows 95, version 7.0 
+- Microsoft Word 97 for Windows 
+- Microsoft Visual Basic for Applications 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to copy the individual bytes of data in a
+multi-byte data type, such as a long integer or a single-precision floating-
+point number, into a byte array. It also illustrates how to take an array of
+bytes and turn it into a specific data type that Visual Basic (and VBA) will
+recognize.
+
+MORE INFORMATION
+================
+
+This code shows how to move the separate bytes of a long integer into a
+four-element byte array and also how to turn the byte array back into a long
+integer. In a Visual Basic project, place the following code in the declarations
+section:
+
+     Private Declare Sub CopyMemory Lib "Kernel32" Alias "RtlMoveMemory" ( _
+             ByRef Destination As Any, _
+             ByRef Source As Any, _
+             ByVal numbytes As Long)
+
+A long integer consists of four bytes. These four bytes are recognized by Visual
+Basic to be one number. Use the following subroutine to move the individual
+bytes into a byte array:
+
+     Public Sub LongToBytes(ByRef TheArray() As Byte, ByRef TheLong As Long)
+
+       Call CopyMemory(TheArray(LBound(TheArray)), TheLong, 4)
+
+     End Sub
+
+The first parameter passed to CopyMemory is the first element of the array into
+which the bytes will be stored. (NOTE: The entire array is passed to
+longToBytes.) The second parameter is the source variable. The third parameter
+is how many bytes will be moved. Because a long integer consists of four bytes,
+this parameter has been set to 4.
+
+To go the other way, turning a byte array back into a long integer variable, use
+the following code:
+
+      Public Function BytesToLong(TheArray() As Byte) As Long
+     Dim TempLong As Long
+
+       Call CopyMemory(TempLong, TheArray(LBound(TheArray)), 4)
+       BytesToLong = TempLong
+
+     End Function
+
+NOTE: As with any API call, passing improper memory addresses can cause data
+corruption or could cause your program to terminate abnormally.
+
+REFERENCES
+==========
+
+For more information on the use of the RtlMoveMemory function in Visual Basic,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q129947 Win32 Replacement for the hmemcpy Function
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbVBp400 kbVBp500 kbhowto kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :4.0,5.0,7.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

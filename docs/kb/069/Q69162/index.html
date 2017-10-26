@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69162: VAL Function Returns &quot;Type Mismatch&quot; for Some Invalid Numbers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69162: VAL Function Returns &quot;Type Mismatch&quot; for Some Invalid Numbers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69162/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69162/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69162/","publisher":null,"image":null,"headline":"Q69162: VAL Function Returns &quot;Type Mismatch&quot; for Some Invalid Numbers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69162-val-function-returns-type-mismatch-for-some-invalid-numbers">Q69162: VAL Function Returns "Type Mismatch" for Some Invalid Numbers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69162
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BASICCOM SR# S910121-320 | mspl13_basic
+Last Modified: 14-FEB-1991
+
+The VAL function may return the error message "Type mismatch" in
+specific cases if the string value is not a valid number. In most
+other cases, VAL normally returns 0 (zero) for invalid numbers.
+
+This information applies to Microsoft QuickBASIC 4.00, 4.00b, and
+4.50, to Microsoft BASIC Compiler 6.00 and 6.00b, and to Microsoft
+BASIC Professional Development System (PDS) 7.00 and 7.10.
+
+Microsoft is researching this problem and will post new information
+here as it becomes available.
+
+The VAL function returns the numeric value of a string expression that
+represents a number. VAL interprets the sequence of characters until a
+character is found that cannot be recognized as part of a number. If
+the string is not a valid number (such as a string of alphabetic
+characters), the VAL function returns zero. However, in certain cases,
+a string of alphabetic characters will return the "Type mismatch"
+error.
+
+The problem often occurs with a string expression that starts out with
+a valid numeric expression, such as "&amp;" (for example, &amp;H for
+hexadecimal notation), "-" (for example, a negative number), or "+"
+(for example, a positive number), but follows that with an invalid
+character. When parsing such a string, the VAL function will encounter
+an invalid numeric format and give "Type mismatch" when it should
+return zero.
+
+Examples
+--------
+
+PRINT VAL("12.32")            '12.32 prints correctly
+PRINT VAL("s%k&amp;r3ds")         '0 prints correctly
+PRINT VAL("&amp;+%we3")        'Gives "Type mismatch", but should be 0
+
+The string expressions listed below generate the "Type mismatch" error
+when passed to the VAL function. This is not a complete list.
+
+Each line in the table below shows combinations of characters, which
+are grouped by the following rules:
+
+   [] = Encloses symbol required to pass to VAL
+   |  = Logical or (separates choices in a list of characters)
+   char = CHR$(32) through CHR$(126)
+   real = A valid number which contains a decimal point
+   NULL = A byte value equal to 0 (zero)
+   integer = A valid number with no decimal point
+
+List of known string of symbols:
+
+[ &amp; | D | E | NULL ] +% [ NULL | char ]
+[ &amp; | D | E | NULL ] +&amp; [ NULL | char ]
+[ &amp; | D | E | NULL ] +@ [ NULL | char ]
+[ &amp; | D | E | NULL ] -% [ NULL | char ]
+[ &amp; | D | E | NULL ] -&amp; [ NULL | char ]
+[ &amp; | D | E | NULL ] -@ [ NULL | char ]
+
+[ + | - | . | integer | NULL ] .% [ NULL | char ]
+[ + | - | . | integer | NULL ] .&amp; [ NULL | char ]
+
+[ + | - | . | real | NULL ] D% [ NULL | char ]
+[ + | - | . | real | NULL ] D&amp; [ NULL | char ]
+[ + | - | . | real | NULL ] D@ [ NULL | char ]
+[ + | - | . | real | NULL ] E% [ NULL | char ]
+[ + | - | . | real | NULL ] E&amp; [ NULL | char ]
+[ + | - | . | real | NULL ] E@ [ NULL | char ]
+
+[ . ][ real ][ % | &amp; ]
+[ E | D ][ integer ][ % | &amp; | @ ]
+
+For other examples where the VAL function gives a "Type mismatch"
+error, query on the following words:
+
+   BASIC and VAL and type and mismatch
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

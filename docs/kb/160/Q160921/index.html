@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160921: PRB: Error Using OLE Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160921: PRB: Error Using OLE Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160921/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160921/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160921/","publisher":null,"image":null,"headline":"Q160921: PRB: Error Using OLE Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160921-prb-error-using-ole-controls">Q160921: PRB: Error Using OLE Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160921
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0
+Operating System(s): 
+Keyword(s): kbenv kbvfp
+Last Modified: 01-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use one of the ActiveX controls included with Visual FoxPro 5.0,
+an OLE error occurs.
+
+The following example is typical of the error message (but not the only wording
+that may be displayed):
+
+  OLE Idispatch exception code ) from TreeView Control: Imagelist must be
+  initialized before it can be used.
+
+CAUSE
+=====
+
+The Visual Basic Control Creation Edition 5.0 beta was installed on your system
+after Visual FoxPro 5.0 was installed.
+
+There is an incompatibility between Visual FoxPro 5.0 and the version of the
+ComCtl32.ocx that comes with Visual Basic Control Creation Edition (VBCCE) 5.0
+beta.
+
+
+RESOLUTION
+==========
+
+Follow these rules when you install the Visual Basic Control Creation Edition
+5.0 beta:
+
+1. Copy the existing Visual FoxPro 5.0 Comctl32.ocx (should be dated 8/21/96) to
+  a file called Comctl32.vfp.
+
+2. Install Visual Basic Control Creation Edition 5.0 beta (or any Visual Basic
+  5.0 beta).
+
+3. Copy the newly installed Comctl32.ocx to Comctl32.vb.
+
+4. Copy the Visual FoxPro Comctl32.vfp to Comctl32.ocx.
+
+5. Re-register the Visual FoxPro Comctl32.ocx control by executing the following
+  in a MS-DOS window:
+
+  
+
+        regsvr32 comctl32.ocx
+
+If you have already installed the Visual Basic Control Creation Edition 5.0 beta,
+you should rename the Visual Basic version of the .ocx file, and then re-install
+the Visual FoxPro version of ComCtl32.ocx.
+
+
+The steps to re-install the ActiveX control are as follows:
+
+1. Run the Setup.exe program in the root directory of Visual FoxPro 5.0.
+
+2. Choose "Add/Remove Components."
+
+3. Select "Professional Applications" and choose "Change Option."
+
+4. Select "ActiveX Controls" and clear the check box to remove the ActiveX
+  controls.
+
+5. Click "OK" to complete the removal (setup).
+
+6. Once the setup is completed, repeat the above steps, but mark the check box
+  for "ActiveX Controls" to re-install ComCtl32.ocx and the other controls.
+
+7. From the Visual FoxPro menu, choose "Tools/Options." Choose the "Controls"
+  tab and the "ActiveX Controls" option button, and ensure that the check boxes
+  for the controls in ComCtl32 are selected. These controls are shown in the
+  "ActiveX Controls Overview" Help topic.
+
+
+Additional query words: kbdsd vfoxwin
+
+======================================================================
+Keywords          : kbenv kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500
+Version           : :3.0,3.0b,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

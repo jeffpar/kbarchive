@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -\\Server\Share | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -\\Server\Share" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150727/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150727/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150727/","publisher":null,"image":null,"headline":"Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -\\\\Server\\Share","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150727-pcm-error-unable-to-connect-errcode--servershare">Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -\\Server\Share</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150727
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.1
+Operating System(s): 
+Keyword(s): kbnetwork sms3rdparty
+Last Modified: 10-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute a package from Package Command Manager (PCM) for Windows NT,
+the following error can occur:
+
+  Unable to connect. &lt;errcode&gt; -\\server\share.
+  92 -\\Distribution_Server_Name\SMS_PKGx.
+
+NOTE: This error will be generated for each distribution server specified in the
+client's instruction file. The \\Distribution_Server_Name is replaced with the
+actual distribution server name, and the x in \SMS_PKGx is replaced with the
+actual drive letter.
+
+CAUSE
+=====
+
+Atria's ClearCase version 2.1 for the Windows NT operating system is installed.
+
+MORE INFORMATION
+================
+
+The 92 in the above error is defined as "SERVER_NO_FREE_DRIVE" and will occur
+when no more free drives are available. However, in this particular scenario,
+you can map drives via File Manager.
+
+STATUS
+======
+
+Atria has confirmed this to be a problem with ClearCase version 2.1 and a fix is
+available. To obtain the fix, download patch 2.1.NT-17 from ftp.atria.com. If
+you experience problems locating or downloading the patch, please contact
+Atria's Technical Support at (617) 676-2450 for assistance.
+
+ClearCase is manufactured by Atria, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork sms3rdparty 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

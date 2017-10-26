@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43791: $INCLUDE with DATA Statements in SUB May Hang QB.EXE Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43791: $INCLUDE with DATA Statements in SUB May Hang QB.EXE Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43791/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43791/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43791/","publisher":null,"image":null,"headline":"Q43791: $INCLUDE with DATA Statements in SUB May Hang QB.EXE Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43791-include-with-data-statements-in-sub-may-hang-qbexe-editor">Q43791: $INCLUDE with DATA Statements in SUB May Hang QB.EXE Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43791
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.00 buglist4.00b buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 2-MAR-1990
+
+Using an $INCLUDE file containing DATA statements that are (illegally)
+located inside a SUB or a FUNCTION can cause the QB.EXE editor to
+hang. This problem occurs when you attempt to View Subs, Save, or Run
+the program. The problem also occurs when you use the Merge command
+(from the File menu) to merge a file that contains DATA statements
+into a SUB or FUNCTION block.
+
+Note that DATA statements are not legal inside SUB ... END SUB or
+FUNCTION ... END FUNCTION blocks.
+
+Microsoft has confirmed this to be a problem in Microsoft QuickBASIC
+Versions 4.00, 4.00b, and 4.50. This problem was corrected in
+Microsoft BASIC Professional Development System (PDS) Version 7.00
+(fixlist7.00).
+
+In the QBX.EXE editor that comes with PDS, this problem is caught by
+the error message "Illegal in SUB, FUNCTION, or DEF FN."
+
+This problem can be worked around by observing the rule that DATA
+statements cannot be placed (or included) inside SUBs or FUNCTIONs.
+
+On one occasion, trying to change SUBs in the described case caused
+the message "String Space Corrupt" to be displayed and control was
+transferred to MS-DOS.
+
+If the program is edited in a different editor and then taken into the
+QB.EXE editor, the INCLUDEd DATA statements are placed on the module
+level. The program then runs correctly. If this version is then saved,
+the DATA statements will be duplicated the next time this program is
+edited.
+
+Code Example
+------------
+
+Entering the following program example while in the QB editor
+illustrates the problem:
+
+   CALL test
+   END
+
+   SUB test
+   '$INCLUDE: 'DATA.INC'
+   END SUB
+
+This example assumes that you have previously created DATA.INC to
+contain the following:
+
+   DATA 1,2,3
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

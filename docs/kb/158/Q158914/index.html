@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158914: PRB: Web Root Busy Opening Source-Controlled Web | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158914: PRB: Web Root Busy Opening Source-Controlled Web" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158914/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158914/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158914/","publisher":null,"image":null,"headline":"Q158914: PRB: Web Root Busy Opening Source-Controlled Web","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158914-prb-web-root-busy-opening-source-controlled-web">Q158914: PRB: Web Root Busy Opening Source-Controlled Web</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158914
+Product(s): Microsoft SourceSafe
+Version(s): 97
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open a FrontPage web that is under the control of Visual
+SourceSafe, you may receive the following error message:
+
+  Server Error: "Web Root is busy. Please try again."
+
+CAUSE
+=====
+
+The most likely cause of this error message is that you have used SourceSafe
+itself to set up and populate the files in the Web project.
+
+WORKAROUND
+==========
+
+In order to achieve the most thorough integration, use FrontPage to check out,
+check in, and create files for the SourceSafe project.
+
+To do this, use the appropriate method for your situation:
+
+Method 1
+--------
+
+If you have already placed the Web under source control and populated the project
+with files using SourceSafe Explorer, use the following steps:
+
+a. Check out every file in your Web project to a local directory. This provides
+  you with a backup copy.
+
+b. Delete the SourceSafe project.
+
+  NOTE: This does not delete the files in place on the Web server. You also have
+  the checked out local copies as a backup.
+
+c. Recursively remove the read-only bit on all the Web files. To do this, at the
+  MS-DOS command prompt, type "cd" (without the quotation marks) to position
+  the working directory at the Web content area, and the type the following:
+
+  attrib *.* -R /s
+
+d. In FrontPage Explorer, open the Web.
+
+e. On the Tools menu, click Web Settings. In the Source Control Project box,
+  type "$/" (without the quotation marks) and the name of the project you want
+  the files managed under.
+
+  For example, if the project you want to create is named "web," type "$/web"
+  (without the quotation marks) in the Source Control Project box. (It is not
+  necessary for the Source Control Project name to have any relationship to the
+  name of the Web.)
+
+f. In the Web Settings dialog box, click OK or Apply. FrontPage will populate
+  your Web project with the necessary files.
+
+g. Use FrontPage to check out, edit, and check in the files.
+
+Method 2
+--------
+
+If you have not already placed the Web files under source control, use the
+following steps:
+
+a. On the Tools menu, click Web Settings. In the Source Control Project box,
+  type "$/" (without the quotation marks) and the name of the project you want
+  the files managed under.
+
+  For example, if the project you want to create is named "web," type "$/web"
+  (without the quotation marks) in the Source Control Project box. (It is not
+  necessary for the Source Control Project name to have any relationship to the
+  name of the Web.)
+
+b. In the Web Settings dialog box, click OK or Apply.
+
+  FrontPage will populate your Web project with the necessary files.
+
+c. Use FrontPage to check out, edit, and check in the files.
+
+MORE INFORMATION
+================
+
+FrontPage is designed to act as the front-end for your SourceSafe project. Use
+FrontPage itself to place the Web files under source control.
+
+Additional query words: 97 vss
+
+======================================================================
+Keywords          : kbusage 
+Version           : 97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

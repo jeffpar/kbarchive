@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132560/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132560/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132560/","publisher":null,"image":null,"headline":"Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132560-pc-win-wgpomgrdll-will-not-work-with-a-standard-postoffice">Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132560
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows for Workgroups versions 3.1 and 3.11 provide a simple, single
+postoffice for workgroup connectivity. Usually, this postoffice is installed by
+one user via the Workgroups Mail Windows client. This user can then administer
+this postoffice via the Microsoft Workgroup Postoffice Manager for Windows
+dynamic-link library (DLL)--WGPOMGR.DLL.
+
+Once this postoffice has been upgraded to a standard Microsoft Mail for PC
+Networks version 3.0 or 3.2 postoffice, WGPOMGR.DLL will no longer work against
+this upgraded postoffice. This article describes, with technical detail, why
+WGPOMGR.DLL does not work against a standard postoffice.
+
+MORE INFORMATION
+================
+
+When WGPOMGR.DLL initializes, it examines the MASTER.GLB file of the postoffice,
+the location of which is indicated by the "ServerPath=" statement in the
+[Microsoft Mail] section of the MSMAIL.INI file on that workstation:
+
+  [Microsoft Mail]
+  ServerPath=M:\
+
+WGPOMGR.DLL then checks the MASTER.GLB file to see if it is of type "single
+postoffice." If the postoffice is a single postoffice, the .DLL file then checks
+to ensure the proper template files exist.
+
+If the proper template files exist, WGPOMGR.DLL locks open the FLAG.GLB file and
+allows the user (with proper access rights) to administer the WGPO postoffice.
+
+NOTES:
+
+1. A standard Microsoft Mail for PC Networks postoffice will be an
+  "internetwork" type postoffice in the MASTER.GLB file. This postoffice type,
+  in the MASTER.GLB, allows message transfer agents to transfer mail to and
+  from the postoffice.
+
+2. WGPO postoffices all have the same serial number: 0799-99992. Standard
+  postoffices each have an individual serial number.
+
+3. The procedure to remove the WGPOMGR.DLL entries from the Windows Client for
+  an upgraded postoffice are outlined in the following article in the Microsoft
+  Knowledge Base:
+
+  Q91042 PC WFW: Postoffice Administration Not Available from Windows
+
+4. The WGPO postoffice always contains an ADMIN.TPL and ADMIN.INF file set.
+  These files hold additional user information. Standard postoffices need not
+  necessarily contain ADMIN.TPL and ADMIN.INF files; however, they may have
+  these files if they are defined by the administrator.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

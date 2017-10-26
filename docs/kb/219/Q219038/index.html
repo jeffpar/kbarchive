@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q219038: Disabling and Removing WLBS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q219038: Disabling and Removing WLBS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/219/Q219038/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/219/Q219038/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/219/Q219038/","publisher":null,"image":null,"headline":"Q219038: Disabling and Removing WLBS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q219038-disabling-and-removing-wlbs">Q219038: Disabling and Removing WLBS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q219038
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Load Balancing Service 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Load Balancing Service (WLBS) can be disabled for troubleshooting
+purposes or because a computer is not going to participate in cluster operations
+for an extended period of time. Follow these steps to disable WLBS:
+
+NOTE: Cluster Adapter is the network interface card (NIC) used for cluster
+traffic; it is not the WLBS Virtual NIC adapter.
+
+1. In Control Panal, double-click Network, and then click the Bindings tab.
+
+2. Under "Show Bindings For", select "All Protocols".
+
+3. Disable the binding from the WLBS driver protocol to the network adapter.
+
+4. Disable the binding from the TCP/IP and WINS Client protocols to the WLBS
+  Virtual NIC adapter.
+
+5. If you are using multiple adapters and if you plan to use this adapter to
+  handle TCP/IP and WINS Client traffic, enable the binding from the TCP/IP and
+  WINS Client protocols to the cluster adapter.
+
+6. Click OK to close the dialog box.
+
+7. Restart the computer.
+
+To fully remove the WLBS software, follow these steps:
+
+1. In Control Panal, double-click Network, and then click the Adapters tab.
+
+2. Select the WLBS Virtual NIC Driver.
+
+3. Click Remove.
+
+4. Examine and modify (if needed) the bindings from the TCP/IP and WINS Client
+  protocols to the cluster adapter as preferred.
+
+5. Click OK to close the dialog box.
+
+6. Remove the following files from the %SystemRoot%\System32 folder:
+
+   - Wlbs.exe
+
+   - Wlbs.dll
+
+   - Wlbs.hlp
+
+   - Wlbs.cnt
+
+   - Wlbs.sys
+
+7. Remove the following file from the %SystemRoot%\System32\Drivers folder:
+
+   - Wlbs.sys
+
+8. Restart the computer.
+
+Additional query words: convoy load balancing
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTLBSSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

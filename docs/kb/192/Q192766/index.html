@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192766/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192766/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192766/","publisher":null,"image":null,"headline":"Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192766-sample-adsibrowexe-browses-active-directory-w-visual-foxpro">Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192766
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0; winnt:2.5
+Operating System(s): 
+Keyword(s): kbfile kbsample kbADSI kbAutomation kbCOMt kbvfp600 kbDSupport
+Last Modified: 12-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ADSIBrow.exe is self-extracting executable file that contains the Visual FoxPro
+form files, ADSBrows.scx and ADSBrows.sct. The form ADSBrows is a sample form
+that demonstrates the navigation of an Active Directory Services (ADS) directory
+structure.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  ADSIBrow.exe
+
+Release Date: Sep-24-1998
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+ADSI is a Component Object Model (COM) based interface for accessing directory
+services. Each element of the network, such as users, printers and computers,
+can be treated as an object. The form ADSBrows demonstrates how to find an
+Active Directory Services (ADS) container object as well as the objects
+contained within that container.
+
+To use ADSBrows, run ADSIBrow.exe to extract the form files. Run the form from
+within Visual FoxPro by typing the following in the Command window:
+
+     DO FORM ADSBROWS
+
+In the ADS Path text box, change MyServer to a valid computer name for your
+network and click the Find button. If all of the Filters check boxes are clear,
+the browser displays all ADS objects for the computer name entered. The browser
+allows a user to drill down the object tree by clicking the plus sign to the
+left of an object.
+
+If any Filters check boxes are selected, the browser displays those objects that
+match the selected check boxes. In other words, if Users and Printers are
+checked, the browser displays the users and printers for the computer name
+entered.
+
+To view the properties for an object, select it in the Treeview list and click
+the Properties button. When the Properties button is clicked, the selected
+object's name, class, GUID and ADS path display.
+
+NOTE: In order to use the sample, you must install the Active Directory Service
+Interfaces. The Active Directory Service Interfaces can be installed from one of
+the following:
+
+- http://www.microsoft.com/windows/server/Technical/directory/
+- Microsoft Developer Network CD-ROM
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q190741 HOWTO: Get User Information Using ADSI
+
+  Q192300 HOWTO: Use ADSI for Printer Information and Control
+
+For more information on developing Web-based solutions for Internet Explorer,
+please see the following Web sites:
+
+  http://msdn.microsoft.com/workshop/default.asp
+
+  http://msdn.microsoft.com/ie/
+
+  http://support.microsoft.com/highlights/iep.asp?FR=0&amp;SD=MSDN
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Mike A. Stewart, Microsoft Corporation
+
+
+Additional query words: ADSIBrow
+
+======================================================================
+Keywords          : kbfile kbsample kbADSI kbAutomation kbCOMt kbvfp600 kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0; winnt:2.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

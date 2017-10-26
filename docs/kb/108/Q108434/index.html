@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108434/","publisher":null,"image":null,"headline":"Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108434-fix-csplitterwnd-class-does-not-handle-all-focus-cases">Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108434
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVCkbbuglist kbfixlist
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.0 
+   - Microsoft Visual C++, 32-bit Editions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A view displayed in a splitter window (CSplitterWnd) loses focus when the
+splitter bar is clicked. A user would expect the focus to be returned to the
+active view when the user stops dragging the splitter bar and releases the mouse
+button.
+
+CAUSE
+=====
+
+CSplitterWnd::StopTracking() attempts to restore the active view's keyboard
+focus by calling SetActiveView(pOldActiveView), where pOldActiveView was set to
+the currently active view on entry to the StopTracking() function. This is
+supposed to set the keyboard focus to the previously active view.
+
+The problem is that SetActiveView() fails to set the keyboard focus in the case
+where the view passed as a parameter is the same as m_pViewActive--the currently
+active view. In this case, it is assumed that the keyboard focus is already on
+the active view, and therefore the SetActiveView() function simply returns. This
+assumption is incorrect because the splitter bar gains focus, doesn't save and
+restore it, and yet leaves the frame's active view pointer the same.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in the Microsoft Foundation Class
+(MFC) Libraries version 2.0. This problem has been fixed in the MFC Libraries
+version 2.5, which is included in Visual C++ version 1.5 for Windows. In the
+fixed code, CSplitterWnd::StopTracking() (in WINSPLIT.CPP) is modified to
+explicitly set the focus even after calling SetActiveView(). The code is:
+
+     if (pOldActiveView == pParent-&gt;GetActiveView())
+        {
+            pParent-&gt;SetActiveView(pOldActiveView); // Re-activate.
+            if (pOldActiveView != NULL)
+                pOldActiveView-&gt;SetFocus(); // Make sure focus is restored.
+        }
+
+You can include this fix into WINSPLIT.CPP and then rebuild the MFC library by
+following the directions in Appendix B of the "Class Libraries User's Guide" as
+well as the README.TXT file located in the \MSVC\MFC\SRC directory.
+
+Another workaround for the bug is to save and restore the keyboard focus
+throughout the splitter window's tracking process. This can be done by handling
+the WM_LBUTTONDOWN and WM_LBUTTONUP messages in the CSplitterWnd class. The
+following code demonstrates how to accomplish this:
+
+     class CMySplit:public CSplitterWnd    // derive from it.
+     {
+         public:
+         // This is the pointer to the window that
+         // has focus when the splitter starts resizing.
+         HWND hWndFocus;
+
+         // ...rest of your declaration.
+     }
+
+     void CMySplit::OnLButtonDown(UINT nFlags, CPoint point)
+     {
+         //Get CWnd with current focus
+         hWndFocus = ::GetFocus();
+
+         // Remember to call the base class handler.
+         CSplitterWnd::OnLButtonDown(nFlags,point);
+     }
+
+     void CMySplit::OnLButtonUp(UINT nFlags, CPoint point)
+     {
+         //restore focus
+         ::SetFocus(hWndFocus);
+
+         // Remember to call the base class handler.
+         CSplitterWnd::OnLButtonUp(nFlags,point);
+     }
+
+The code above assumes that the focus is being set to one of the windows in the
+splitter window panes before the OnLButtonDown() handler is called. That is, you
+probably wouldn't want to set the focus back to some other window outside of the
+splitter window when the mouse button is released. You could write additional
+code to check to see if the focus is set to a window in one of the panes by
+checking the splitter's frame window's m_pActiveView variable.
+
+STATUS
+======
+
+This problem has been reported in Visual C++ version 1.0 for Windows. This
+problem has been fixed in Visual C++ version 1.5 for Windows and Visual C++ 2.0
+32-bit Edition.
+
+MORE INFORMATION
+================
+
+To demonstrate the problem, perform the following steps:
+
+1. Create an App Wizard generated application.
+
+2. Create a CSplitterWnd in a frame window with two panes that contain CEditView
+  objects.
+
+3. Build the application and run it.
+
+4. Click the mouse in the first pane of the splitter window so that the keyboard
+  focus is assigned to that pane; you'll see the caret blink there.
+
+5. Move the splitter bar to resize the panes.
+
+6. Observe that the keyboard focus is no longer on the CEditView that you
+  clicked previously.
+
+Additional query words: 1.00 2.00 2.10 splitter focus kbNoUpdate
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

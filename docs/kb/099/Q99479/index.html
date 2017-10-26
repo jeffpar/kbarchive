@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99479: How to Modify MODEMS.INF for Non-Standard Modems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99479: How to Modify MODEMS.INF for Non-Standard Modems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99479/","publisher":null,"image":null,"headline":"Q99479: How to Modify MODEMS.INF for Non-Standard Modems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99479-how-to-modify-modemsinf-for-non-standard-modems">Q99479: How to Modify MODEMS.INF for Non-Standard Modems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99479
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article contains information to help you modify sections in MODEMS.INF to
+accommodate modems not handled by standard means.
+
+MORE INFORMATION
+================
+
+MODEMS.INF lists the expected responses for each modem type in a section using
+the form seen in this example:
+
+  [CODEX_2264.INIT.RESPONSE]
+  OK=*cr*lfOK*cr*lf
+  ERROR=*cr*lfERROR*cr*lf
+
+Defaults are listed at the beginning of the file and exceptions are listed in
+each modem's section, with .RESPONSE in the section header. Modem commands
+depend on the modem (not all are 100 percent Hayes command set compatible), but
+RAS does not understand BUSY, etc. so you must modify MODEMS.INF. The COMDEV.INI
+file contains the name of the modem selected and points RAS to the MODEMS.INF
+file for the appropriate strings.
+
+E1 normally indicates "echo validated," but in some instances it means "enable
+command state character echo," which is not the same thing as validating the
+echo. (This can be done in the script file, but the modem performs no
+validation, it simply echos the command.)
+
+The setting S3=13 (CR) is a default. Some modems "forget" to echo the (CR)
+character; to find out if a program is waiting for the complete echo of the
+string sent to the modem, check the section of MODEMS.INF file detailing your
+modem. See what the program is waiting for, then edit the MODEMS.INF file (use
+any text editor) to make it compatible with your modem.
+
+When you enter a Dial command (ATDT), some modems send a "crlf" or "crlfOKcrlf"
+message before dialing and sending the expected answer. Here is how to deal with
+these modems:
+
+If you use ATQ0V1 ("return result codes" and "return result codes in verbose
+form"), you get the message "CONNECT." If you use ATX3 or ATX4 you also get
+"BUSY." Wait until you get these results and don't be concerned if you get
+something else before. "CONNECT" or "BUSY" are always the last results before
+you can enter a new command. If this does not work you might have a timing
+problem. Check to see if you have to dial "BLIND" or increase the value of S7.
+The best testing technique is to set S7 to the highest possible value listed in
+your modem handbook.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234199/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234199/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234199/","publisher":null,"image":null,"headline":"Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234199-baseball-2000-err-msg-invalid-page-fault-in-module-graphicsdll">Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234199
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbdisplay kbenv kberrmsg kbfile kbimu msgame
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Baseball 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Baseball 2000, you may receive the following error
+message:
+
+  This program has performed an illegal operation and will be shut down.
+
+When you click Details, you receive the following error message:
+
+  Baseball 2000 caused an invalid page fault in module Graphics.dll.
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions are true:
+
+- One megabyte (MB) or less of video memory is installed on your primary video
+  adapter.
+
+- Your video driver is outdated or does not support DirectDraw.
+
+- Your video adapter does not support DirectDraw.
+
+- The Hardware Acceleration setting on your computer is not set to Full.
+
+- An incorrect or duplicate monitor is installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Upgrade Your Video Adapter
+--------------------------
+
+To run Baseball 2000, you must have a video adapter with at least 2 megabytes
+(MB) of video memory installed in your computer. If your video adapter does not
+have 2 MB of video memory, install additional video memory, or upgrade to a
+video adapter that has at least 2 MB of video memory.
+
+To estimate the approximate amount of video memory installed in your computer:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks).
+
+3. Click OK.
+
+4. Click the Display tab.
+
+5. Under Device, check the amount of memory listed next to Approx. Total
+  Memory.
+
+  NOTE: If a video accelerator card is installed in your computer, a Display 1
+  and a Display 2 tab are available. Click either tab to check the approximate
+  total memory.
+
+If the approximate total memory is more than 2 MB, and the issue continues to
+occur, contact the manufacturer of your video adapter to help determine how to
+best resolve this issue.
+
+Download and Install the Graphics.dll Update for Baseball 2000
+--------------------------------------------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  Bb2kgrfx.exe
+  (http://download.microsoft.com/download/baseball2000/Patch/1/WIN98/EN-US/Bb2kgrfx.exe)
+
+Release Date: Mar-07-2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The Graphics.dll Update for Baseball 2000 includes the following changes:
+
+- Refresh problems with Matrox G400 video cards are now resolved.
+
+- The missing text problem in Microsoft Windows 2000 is now resolved.
+
+Obtain and Install an Updated Video Driver
+------------------------------------------
+
+Contact your hardware manufacturer to inquire about how to obtain and install the
+latest version of the video driver for your video adapter.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Increase the Hardware Acceleration Setting to Full
+--------------------------------------------------
+
+To increase the Hardware Acceleration setting to Full:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, click Graphics.
+
+4. Move the Hardware Acceleration slider all the way to the right (the Full
+  acceleration setting).
+
+5. Click OK, and then click Close.
+
+6. When you are prompted to restart your computer, click Yes.
+
+Make Sure That the Correct Monitor Is Installed
+-----------------------------------------------
+
+To make sure that the correct monitor is installed on your computer:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. On the Settings tab, click Change Display Type.
+
+  NOTE: If you are using Microsoft Windows 95 OEM Service Release 2 (OSR2),
+  click Advanced Properties, and if you are using Microsoft Windows 98, click
+  Advanced.
+
+4. Under Monitor, click Change.
+
+  NOTE: If you are using OSR2 or Windows 98, click the Monitor tab, and then
+  click Change.
+
+5. In the Manufacturers box, click the manufacturer of your monitor.
+
+6. In the Models box, click the model of your monitor.
+
+7. Click OK, click Close, and then click OK.
+
+8. If you are prompted to restart the computer, click Yes.
+
+Remove Duplicate Monitors
+-------------------------
+
+Remove any duplicate monitors that are installed by Windows:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, click "View devices by type".
+
+4. Click the plus sign (+) next to Monitors to expand the branch.
+
+5. Note the properties for each device that is listed in the branch. To do this:
+
+  a. Click a device, and then click Properties.
+
+  b. Click each tab in the device properties dialog box, and then record the
+     device information and settings.
+
+  c. Click OK.
+
+6. Click OK, and then close Control Panel.
+
+7. Restart Windows in Safe mode. To do this, use the appropriate method for your
+  version of Microsoft Windows.
+
+  Microsoft Windows 98:
+
+  Restart your computer, press and hold down the CTRL key when your computer
+  completes the Power On Self Test (POST), and then select Safe Mode on the
+  Startup menu.
+
+  Microsoft Windows 95:
+
+  Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then select Safe Mode on the Startup menu.
+
+8. When Windows starts in Safe mode, click OK.
+
+9. Click Start, point to Settings, and then click Control Panel.
+
+10. Double-click System.
+
+11. On the Device Manager tab, click "View devices by type".
+
+12. Click the plus sign (+) next to Monitors to expand the branch.
+
+13. Verify that there are no changes in the list of devices in the branch. If
+  you see a device that is not in the list of devices that you noted in step
+  5, click the new device, and then click Remove. Repeat this step for each
+  device in the branch that is not in the list of devices that you noted in
+  step 5.
+
+  NOTE: If you see new copies of a device that is in the list of devices you
+  noted in step 5, check the properties of each copy of the device. If the
+  properties for the device match the properties that you recorded, keep the
+  device. If the properties for the device do not match the properties you
+  recorded, remove the device.
+
+14. Click OK.
+
+15. When you are prompted to restart the computer, do so.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Baseball 2000.
+
+Additional query words: 1.00 msgame bb2000 bb2k bball2k gpf ipf
+
+======================================================================
+Keywords          : kbdisplay kbenv kberrmsg kbfile kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

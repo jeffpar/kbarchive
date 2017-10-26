@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150029/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150029/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150029/","publisher":null,"image":null,"headline":"Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150029-info-ole-control-containers-must-call-afxenablecontrolcontainer">Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150029
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbContainer kbCtrl kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using Visual C++ version 4.0, it is possible to construct OLE Control
+Containers. These containers must call AfxEnableControlContainer() in their
+CWinApp::InitInstance(). This call is added automatically if OLE Controls
+support is checked in AppWizard Step 3, but in some cases, this call must be
+added manually. This article explains why you need to call
+AfxEnableControlContainer() and the possible problems that might occur if this
+call is not made.
+
+MORE INFORMATION
+================
+
+AfxEnableControlContainer() is responsible for wiring up the support structure
+necessary for a CWnd object to contain an OLE Control. This call is added to a
+project by AppWizard if OLE Controls support is selected. You need to add this
+call manually in the following cases:
+
+- You are adding control container support to an existing project.
+
+-or-
+
+- The object that will contain the OLE controls is not created directly by
+  AppWizard, such as an OLE Control.
+
+For example, if you are dynamically creating an OLE Control as a child of another
+OLE Control, the parent control must call AfxEnableControlContainer() in its
+constructor.
+
+The following list outlines some of the most common problems (others are
+possible) that can occur if AfxEnableControlContainer() is not called:
+
+- In many cases, you might receive the following TRACE messages in the Output
+  Window of the debugger:
+
+     &gt;&gt;&gt; If this dialog has OLE controls:
+     &gt;&gt;&gt; AfxEnableControlContainer has not been called yet.
+     &gt;&gt;&gt; You should call it in your app's InitInstance function.
+
+- In other cases, you might encounter the following ASSERT in file Cmdtarg.cpp,
+  line 218:
+
+     ASSERT(afxOccManager != NULL);
+
+- If you place a Masked Edit or some other OLE control on a CFormView and then
+  run the application, you might see a message box indicating:
+
+  Failed to create empty document.
+
+Additional query words: kbvc410 kbvc400 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbCOMt kbContainer kbCtrl kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159504/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159504/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159504/","publisher":null,"image":null,"headline":"Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159504-xcln-profgenexe-fails-to-replace-mailboxname">Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159504
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 12-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create profiles using Profgen.exe with the -U switch or with
+UpdateMailboxName=1 in Profgen.ini, the MailboxName= entry in the Default.prf
+file is updated with the Current Login ID; however, the profile contains the
+MailboxName originally specified in Default.prf instead of the Current Login ID.
+
+RESOLUTION
+==========
+
+This problem can be resolved by obtaining the latest version of Profgen.exe from
+the Microsoft BackOffice Resource Kit, version 1.0. You will need to obtain the
+updated version of Profgen.exe if the properties of your Profgen.exe file are:
+
+  Size: 80,272 KB
+  Date: 5/17/96
+
+The newer version of Profgen.exe has the following properties:
+
+  Size: 80,752 KB
+  Date: 8/13/96
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange Roving User Profile Generation Program, Profgen.exe, is
+an unsupported program that simplifies the creation of Microsoft Exchange
+Profiles. It works in conjunction with the Automatic Profile Generator program
+(Newprof.exe) to create profiles.
+
+Profgen.exe can be used to overwrite the MailBoxName= entry in the Default.prf
+file with the current logged in User ID. This can be done by running Profgen.exe
+with the -U switch or changing the UpdateMailboxName= entry in the the [PROFGEN]
+section of the Profgen.ini file to a value of 0. If no command line options are
+specified, Profgen.exe will utilize the Profgen.ini.
+
+After modifying Default.prf, Profgen.exe copies Default.prf to Profgen.tmp.
+Profgen.tmp is then used with Newprof.exe to create the profile.
+
+The older version of Profgen.exe modifies the MailboxName= entry after copying
+Default.prf to Profgen.tmp. Thus, the newly created profile will not be updated,
+but the Default.prf will.
+
+More information on Profgen.exe can be found in the "Microsoft Exchange Roving
+User Profile Generation Program (Profgen.exe)" white paper located on the
+Microsoft TechNet compact disc and at
+http://www.microsoft.com/technet/tnorder.htm.
+
+
+Additional query words: stfedt bork newprof profgen exclnfaqold
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

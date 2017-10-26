@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167808: SMS: Unable to Install or Verify NetWare Logon Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167808: SMS: Unable to Install or Verify NetWare Logon Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167808/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167808/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167808/","publisher":null,"image":null,"headline":"Q167808: SMS: Unable to Install or Verify NetWare Logon Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167808-sms-unable-to-install-or-verify-netware-logon-servers">Q167808: SMS: Unable to Install or Verify NetWare Logon Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167808
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbtshoot kbConfig kbSCMan smsgeneral smsconfig smssiteconfigman kbArtTypeINF
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NetWare logon servers in a Systems Management Server site may go inactive or
+fail to be installed, even though the Systems Management Server service account
+has adequate permissions, there is plenty of free space on the specified NetWare
+volume, and network connectivity is available. This will result in inventory
+from clients not being reported up to the site server, packages not being
+distributed, and other problems normally associated with account permissions,
+disk space, or connectivity problems.
+
+CAUSE
+=====
+
+The Site Server's Site Configuration Manager (SCMAN) may not be able to
+correctly enumerate the volume name specified in order to verify or install the
+Systems Management Server logon server components. This occurs because of a
+problem with the NetWare 3.1x logon server's bindery.
+
+Viewing the Scman.log file from the Site Server reveals that it is able to locate
+and identify the server, but is unable to enumerate the volume name specified
+for Systems Management Server installation or verification.
+
+In the following log excerpt, the number of shares (volumes) reported is
+incorrect (note that the number reported may also be 0):
+
+  Server SERVER1 has 171 shares
+  Server SERVER1 status Pending Install role 0x12
+  Server SERVER1 has 11 inboxes; 0 domain master inboxes; 0 components
+
+Site Configuration Manager attempts to identify the volume (VOL1) specified in
+the site properties, but is unable to locate it, as reflected in this portion of
+the Scman.log file:
+
+  Checking for share SMS and directory \\SERVER1\VOL1\SMS\logon.srv on SERVER1;
+  no share
+
+Directory creation is attempted, but it fails:
+
+     CSharedDirInstallItem::Install share=, vol=, dir=SMS\logon.srv,
+     subDiraccess=3, share access=2
+     Created directory \\SERVER1\VOL1\SMS\logon.srv
+     share not found, cannot create without share path
+
+An event 223 is logged:
+
+     Event 223 logged with error 183 and object (SERVER1); GetLastError 183;
+     SiteConfig Mgr code 7404.
+     Cannot create inboxes (Application Control Database, Application Control
+     INI, Application Control Script, Client Installation, Despooler,
+     Inventory Agent, Inventory Processor, ISV MIF Collection, MS Test,
+     Package Command Instruction, Package Source) on server SERVER1
+
+The logon server remains inactive.
+
+Another way to test for this condition is to browse the volume list of a NetWare
+3.1x server from an computer running Windows NT Server (for example, the site
+server) running Gateway (Client) Services for NetWare. If the volume requested
+by Site Configuration Manager is not visible in the browse list, SCMAN will not
+be able to create the directories on the volume, even though it has adequate
+permissions and connectivity and the volume has enough free space. Note that
+client computers running MS-DOS, Windows 3.x, or Windows 95 do not experience
+this problem.
+
+WORKAROUND
+==========
+
+To correct this problem, run the NetWare server BINDFIX utility for NetWare
+3.1x, and DSREPAIR for NetWare 4.x. Resetting the bindery context may also be
+helpful. For more information on these utilities, consult the documentation
+provided with your Novell NetWare product.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q126618 Cannot See All NetWare Volumes from Windows NT
+
+
+Additional query words: prodsms enumeration
+
+======================================================================
+Keywords          : kbnetwork kbtshoot kbConfig kbSCMan smsgeneral smsconfig smssiteconfigman kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

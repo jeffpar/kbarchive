@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135361/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135361/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135361/","publisher":null,"image":null,"headline":"Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135361-bug-seek-command-fails-if-collate-is-set-to-machine">Q135361: BUG: SEEK Command Fails If Collate Is Set to "Machine"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135361
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SEEK command and there are trailing spaces in the seek key, the
+seek fails if you previously used this command:
+
+  SET COLLATE TO "machine"
+
+However, the seek succeeds if you previously used this command:
+
+     SET COLLATE TO "general"
+
+WORKAROUND
+==========
+
+Remove the trailing spaces from the seek key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Code to Reproduce Problem
+-------------------------
+
+  * Begin program
+  * This program uses Customer.dbf found in the \Samples\Data subdirectory.
+  * It is assumed that you have installed the sample data to the
+  * default directory under the main VFP directory.
+
+  CLEAR
+  CD SYS(2004) + "\samples\data"
+  USE customer IN 0
+  SET COLLATE TO "machine"
+  DO theprog
+  SELECT classd1
+  USE
+
+  SET COLLATE TO "general"
+  DO theprog
+
+  SELECT classd1
+  USE
+  SELECT customer
+  USE
+
+  PROCEDURE theprog
+
+  * This is just a simple SELECT statement to create a cursor to use
+  * for this example. This SELECT creates a small set of records
+  * from the Customer table and then creates a tag where the key is
+  * concatenation of several fields.
+
+     SELECT cust_id,company,contact,phone,SUBSTR(contact,1,1) ;
+     AS flag,' ' AS done;
+        FROM customer ;
+        WHERE SUBSTR(contact,1,1)$"AI" ;
+        INTO CURSOR classd1
+     INDEX ON done + cust_id + flag TAG dcust
+
+  * Now that the cursor is created, seek a record that you know is in
+  * the new set of records. Then report the collation sequence
+  * and the results of the seek.
+
+     SEEK " LAMAI A "
+
+  * Print the collation sequence that is in effect. Then if you are at
+  * the end of file marker, you know the record was not found; in which case,
+  * print the word "not." If not at EOF, you found the record, so print
+  * "found."
+
+     ?"With the collation sequence set to " + SET("collate");
+      + " the record was " + IIF( EOF(),"not ","") + "found"
+
+  * End Program
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

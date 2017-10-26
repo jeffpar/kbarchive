@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45145: Installing C 5.10 to Compile Both DOS and OS/2 Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45145: Installing C 5.10 to Compile Both DOS and OS/2 Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45145/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45145/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45145/","publisher":null,"image":null,"headline":"Q45145: Installing C 5.10 to Compile Both DOS and OS/2 Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45145-installing-c-510-to-compile-both-dos-and-os2-programs">Q45145: Installing C 5.10 to Compile Both DOS and OS/2 Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45145
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# G890523-18896 | mspl13_c
+Last Modified: 18-SEP-1989
+
+If you'd like to install your C compiler so that you can create both
+DOS and OS/2 applications, you have three options. The option you
+select affects the compiler options you must set when you compile for
+the two operating systems.
+
+The three options are as follows:
+
+1. Rename none of the libraries.
+
+2. Rename the protected-mode libraries to the default names.
+
+3. Rename the real-mode libraries to the default names. This
+   renaming can also be done while setting up the product.
+
+To install for both OS/2 and DOS, select both operating systems when
+using SETUP to install the product. If you've already installed the
+product for only one operating system, the easiest method is to
+reinstall again from the beginning.
+
+Once the dual installation is done, you have the following two sets of
+libraries (unless you tell SETUP to rename libraries for you when it
+asks):
+
+1. Those whose names are of the form xLIBCyR.LIB (where x is S, M, C,
+   or L for the memory model and y is E, 7, or A for the math option --
+   see the Version 5.10 "Microsoft C Optimizing Compiler for the MS-DOS
+   Operating System User's Guide" for more information) for "R"eal mode.
+
+2. Those whose names are of the form xLIBCyP.LIB for "P"rotected mode.
+
+If you install medium model emulator math only, and don't tell SETUP
+to rename libraries, the libraries will be named "MLIBCEP.LIB" and
+"MLIBCER.LIB". There will be no library named with the default name,
+which is "MLIBCE.LIB".
+
+You can leave the libraries named in this way; however, if you do, you
+must always compile with one of the /Lr (link real mode), /Lc (link
+compatibility mode -- a synonym for real mode), or /Lp (link protected
+mode) compiler options.
+
+None of the /Lp, /Lc, or /Lp options affects the compilation process;
+they only affect what libraries the linker is asked to link in.
+Whether the final executable program is a real-mode executable or a
+protected-mode executable is determined solely by the library with
+which you link.
+
+The /Lp option tells the linker to ignore the default library and to
+use xLIBCyP.LIB instead (x and y depend on the memory model and math
+option selected by the /Ax and /FP switches). The /Lr and /Lc options
+tell the linker to use xLIBCyR.LIB rather than the default. xLIBCy is
+the library generated if none of these options is used. This is shown
+in the following table:
+
+   Compiler Flags                          Library Used
+   --------------                          ------------
+
+      -AS                                     SLIBCE
+      -AL -FPi87                              LLIBC7
+      -AM -FPa -Lp                            MLIBCAP
+      -AH -FPc -Lr                            LLIBCER
+
+If you do most of your programming for one operating system or the
+other, you can rename the appropriate libraries (xLIBCyR or xLIBCyP)
+to xLIBCy and avoid having to use /Lp or /Lr. You still must use /Lp
+or /Lr when compiling for the other mode. For instance, if you rename
+the xLIBCyP libraries to xLIBCy, then when you compile without a /Lc
+or /Lr option, your executable will be a protected-mode executable.
+To generate a DOS executable, you must use /Lr or /Lc. Instead, if you
+rename the xLIBCyR libraries to xLIBCy, the default mode will be DOS
+-- you must use /Lp to produce an OS/2 program.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

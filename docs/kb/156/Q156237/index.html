@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156237/","publisher":null,"image":null,"headline":"Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156237-prb-report-designerpreview-needs-vfp-desktop-to-display">Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156237
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp600
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If REPORT FORM &lt;formname&gt; PREVIEW or MODIFY REPORT &lt;formname&gt; is
+called from an SDI or top-level form (form with the ShowWindow property set to
+2), the Report Preview or Report Designer does not appear if the Visual FoxPro
+desktop is hidden.
+
+WORKAROUND
+==========
+
+Make the Visual FoxPro desktop visible (_SCREEN.Visible = .T.) and display the
+Report Designer or preview and hide the Visual FoxPro desktop (_SCREEN.Visible =
+.F.) after the Report Designer or Preview has been closed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Page Preview and Report Designer windows are being created as a child window
+of the Visual FoxPro desktop. Since the desktop is not visible, the Page Preview
+and Report Designer windows cannot be visible. Each of these windows has
+toolbars that require the Visual FoxPro desktop in order for them to be
+displayed.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+     * Start of code example
+     *
+     PUBLIC oform
+     LOCAL lnI
+     CLOSE ALL
+     CREATE TABLE table_1 (field1 C(10))
+     FOR lnI=1 TO 3
+        INSERT INTO table_1 VALUES ('xx')
+     ENDFOR
+
+     CREATE REPORT report_1 FROM table_1
+
+     oform=CREATEOBJECT("SDI_form")
+     oform.SHOW()
+     READ EVENTS
+     CLOSE TABLES
+
+     DEFINE CLASS sdi_form AS FORM
+
+        SHOWWINDOW = 2
+        AUTOCENTER = .T.
+        lIsFormUp=.F.
+
+        ADD OBJECT commandpreview AS COMMANDBUTTON WITH ;
+           TOP = 180, ;
+           LEFT = 80, ;
+           HEIGHT = 27, ;
+           WIDTH = 95, ;
+           CAPTION = "Report Preview", ;
+           NAME = "Commandpreview"
+
+        ADD OBJECT commanddesign AS COMMANDBUTTON WITH ;
+           TOP = 180, ;
+           LEFT = 202, ;
+           HEIGHT = 27, ;
+           WIDTH = 95, ;
+           CAPTION = "Modify Report", ;
+           NAME = "Commanddesign"
+
+        PROCEDURE DESTROY
+           CLEAR EVENTS
+           _SCREEN.VISIBLE=.T.
+        ENDPROC
+
+        PROCEDURE ACTIVATE
+           IF !THIS.lisformup
+              _SCREEN.VISIBLE = .F.   &amp;&amp; We wait till now to hide desktop
+                                      &amp;&amp; to ensure SDI form is active window
+              THIS.lIsFormUp = .T.
+           ENDIF
+        ENDPROC
+
+        PROCEDURE commandpreview.CLICK
+           REPORT FORM report_1 PREVIEW
+        ENDPROC
+
+        PROCEDURE commanddesign.CLICK
+           MODIFY REPORT report_1
+        ENDPROC
+
+     ENDDEFINE
+     *
+     * End of code example
+
+2. Click on either command button. The preview or Report Designer does not
+  appear.
+
+  NOTE: You may need to double-click the [-] or fox head in the upper left
+  corner to close the form after doing this.
+
+How to Get It Working
+---------------------
+
+1. Modify the Click procedure code for the two command buttons above to read as
+  follows:
+
+     * Start of code example
+     *
+     PROCEDURE commandpreview.CLICK
+        _SCREEN.VISIBLE = .T.           &amp;&amp; Show VFP desktop
+        KEYBOARD '{ctrl+f10}' CLEAR     &amp;&amp; Maximixe Preview window
+        REPORT FORM report_1 PREVIEW
+        _SCREEN.VISIBLE = .F.           &amp;&amp; Hide VFP desktop
+     ENDPROC
+
+     PROCEDURE commanddesign.CLICK
+        LOCAL lcOldShutDown
+        lcOldShutDown = ON('shutdown')  &amp;&amp; Saves existing ON SHUTDOWN
+        ON SHUTDOWN _SCREEN.VISIBLE=.F. &amp;&amp; Traps for closing desktop
+        _SCREEN.VISIBLE = .T.           &amp;&amp; Show VFP desktop
+        KEYBOARD '{ctrl+f10}' CLEAR     &amp;&amp; Maximixe Designer window
+        MODIFY REPORT report_1
+        _SCREEN.VISIBLE = .F.           &amp;&amp; Hide VFP desktop
+        ON SHUTDOWN &amp;lcOldShutDown      &amp;&amp; Restores existing ON SHUTDOWN
+     ENDPROC
+     *
+     * End of code example
+
+2. Click on either command button. The preview or Report Designer appears. When
+  the preview or Report Designer is closed, the desktop is again hidden and the
+  SDI form regains the focus.
+
+Additional query words: kbdse VfoxWin print preview
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

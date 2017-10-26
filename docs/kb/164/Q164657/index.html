@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164657: SMS: Pcmwin32.exe Prevents PCM Service from Running Package | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164657: SMS: Pcmwin32.exe Prevents PCM Service from Running Package" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164657/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164657/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164657/","publisher":null,"image":null,"headline":"Q164657: SMS: Pcmwin32.exe Prevents PCM Service from Running Package","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164657-sms-pcmwin32exe-prevents-pcm-service-from-running-package">Q164657: SMS: Pcmwin32.exe Prevents PCM Service from Running Package</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q164657</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">kbPCM</span> <span class="n">smspcmkbfixlist</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">30</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">The</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="p">(</span><span class="n">PCM</span><span class="p">)</span> <span class="n">service</span> <span class="p">(</span><span class="n">Pcmsvc32</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span> <span class="n">fails</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">a</span>
+<span class="n">mandatory</span> <span class="k">or</span> <span class="n">background</span> <span class="k">package</span> <span class="k">if</span> <span class="n">the</span> <span class="n">PCM</span> <span class="n">Client</span> <span class="p">(</span><span class="n">Pcmwin32</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span> <span class="n">is</span> <span class="n">also</span>
+<span class="n">running</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">first</span> <span class="nf">run</span> <span class="n">Pcmwin32</span><span class="p">.</span><span class="n">exe</span><span class="p">,</span> <span class="n">it</span> <span class="n">loads</span> <span class="n">itself</span> <span class="n">into</span> <span class="n">memory</span><span class="p">.</span> <span class="n">Closing</span> <span class="n">the</span> <span class="n">PCM</span>
+<span class="n">Client</span> <span class="n">does</span> <span class="k">not</span> <span class="nf">stop</span> <span class="n">it</span> <span class="n">running</span> <span class="k">or</span> <span class="nf">unload</span> <span class="n">it</span> <span class="k">from</span> <span class="n">memory</span><span class="p">.</span> <span class="n">Removing</span> <span class="n">Pcmwin32</span><span class="p">.</span><span class="n">exe</span>
+<span class="k">from</span> <span class="n">memory</span> <span class="n">requires</span> <span class="n">a</span> <span class="n">modification</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Smsrun32</span><span class="p">.</span><span class="n">ini</span> <span class="k">and</span> <span class="n">a</span> <span class="n">subsequent</span> <span class="nb">log</span> <span class="n">off</span>
+<span class="k">and</span> <span class="nb">log</span> <span class="n">on</span><span class="p">.</span>
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="k">do</span> <span class="n">either</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Configure</span> <span class="n">the</span> <span class="n">site</span> <span class="n">properties</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">PCM</span> <span class="n">Client</span> <span class="n">does</span> <span class="k">not</span> <span class="n">automatically</span>
+  <span class="nf">run</span> <span class="n">when</span> <span class="n">a</span> <span class="n">user</span> <span class="n">logs</span> <span class="k">in</span><span class="p">.</span> <span class="n">Doing</span> <span class="n">this</span> <span class="n">ensures</span> <span class="n">that</span> <span class="n">the</span> <span class="n">PCM</span> <span class="n">service</span> <span class="n">runs</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">when</span> <span class="n">the</span> <span class="n">job</span><span class="s1">'s mandatory time has been reached.
+
+  -or-
+
+- On the individual client, remark out the load line for Pcmwin32.exe in the
+  Smsrun32.ini file, to ensure that this application does not run when a user
+  logs in. This file is located in the Ms\Sms\Data directory. Make the
+  following change:
+
+        [startup]
+        ;load=C:\MS\SMS\BIN\pcmwin32.exe
+
+  Note that this manual modification of the Smsrun32.ini file will be
+  overwritten if the Systems Management Server client is upgraded (for example,
+  by applying a Systems Management Server service pack).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem was corrected in the latest Microsoft Systems
+Management Server version 1.2 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+With the original released versions of Pcmsvc32.exe and Pcmwin32.exe, this
+functionality was by product design. However, the updated PCM service (dated
+12/20/96) and PCM Client (dated 11/15/96) that are available on the Internet (at
+http://www.microsoft.com/) are not supposed to exhibit this behavior. When this
+problem is resolved, the new versions of these files will be posted to the
+Internet web site.
+
+Additional query words: prodsms pcmsvc pcmsvc32
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

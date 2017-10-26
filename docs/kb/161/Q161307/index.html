@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161307/","publisher":null,"image":null,"headline":"Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161307-howto-use-visual-foxpro-tables-in-visual-basic">Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161307
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The structure of FoxPro tables has changed with the release of Visual FoxPro
+3.0. Visual FoxPro 3.0 now has a database container file with the extension .DBC
+that contains references to tables, but does not contain the tables themselves.
+Like previous versions of FoxPro, the tables still reside in their own .DBF
+files.
+
+The structure of a Visual FoxPro table depends upon whether that table is
+included in a database container. A table not included in a database container
+is called a "free table" and its structure differs from a "database table."
+Visual Basic must know which type of table it is trying to access in order to
+know how to read the structure of the table.
+
+With Visual FoxPro "free tables," Visual Basic recognizes these files much like
+it recognizes older FoxPro tables. Visual Basic's database object corresponds to
+the directory in which the "free tables" reside. However, with "database
+tables," the Visual Basic database object corresponds to the Visual FoxPro .DBC
+file, which contains reference to the "database tables."
+
+MORE INFORMATION
+================
+
+Free Tables
+-----------
+
+Here is some sample code to open the Foxuser.DBF table:
+
+     Private Sub Form_Load()
+         Dim FoxFreeDB As Database
+         Dim FoxFreeRS As Recordset
+         Set FoxFreeDB = Workspaces(0).OpenDatabase("C:\VFP", False, _
+                         False, "FoxPro 3.0;")
+         Set FoxFreeRS = FoxFreeDB.OpenRecordset("Foxuser")
+         Set Data1.Recordset = FoxFreeRS
+     End Sub
+
+Database Tables
+---------------
+
+Here is some sample code to open the Employee.DBF table that resides in the
+Tastrade.DBC database container:
+
+     Private Sub Form_Load()
+         Dim FoxDataDB As Database
+         Dim FoxDataRS As Recordset
+         Set FoxDataDB = Workspaces(0).OpenDatabase( _
+                         "C:\VFP\Samples\Mainsamp\Data\Tastrade.DBC", _
+                         False, False, "FoxPro DBC;")
+         Set FoxDataRS = FoxDataDB.OpenRecordset("Employee")
+         Set Data1.Recordset = FoxDataRS
+     End Sub
+
+When Visual Basic accesses a Visual FoxPro "database table," it uses the .DBC
+file to list and locate .DBF files. Visual Basic does not use the .DBC file to
+determine the structure of the .DBF files; that information is obtained by
+examining the .DBF file itself. This means that long field names, which Visual
+FoxPro stores in the .DBC file, will not be accessible in Visual Basic. For
+example, the above sample that reads the Employee table will have an Employee ID
+field "Employee_I" instead of "Employee_ID" because the .DBF file does not store
+the long field name.
+
+Another ramification of reading the linked tables directly is that Jet marks
+these tables as read-only because all the Referential Integrity rules for a
+table are stored in the database container file. Visual FoxPro free tables are
+also read only.
+
+NOTE: The 16-bit edition of Visual Basic version 4.0 cannot read files in the
+Visual FoxPro version 3.0 format without a third-party ODBC driver.
+
+REFERENCES
+==========
+
+For more information explaining why the Visual Basic Data Control does not list
+all possible Visual FoxPro connect properties, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q140770 : PRB: Accessing Visual FoxPro 3.0 Files from Visual Basic 4.0
+
+Additional query words: fox foxpro dbc open dbf xbase kbVBp600 kbVBp400 kbdse kbDSupport kbVBp kbVFP300
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVB400Search kbVB400
+Version           : :4.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

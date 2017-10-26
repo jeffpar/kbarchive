@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159952/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159952/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159952/","publisher":null,"image":null,"headline":"Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159952-sms-please-insert-diskette-in-drive-message">Q159952: SMS: "Please Insert Diskette in Drive" Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159952
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,95
+Operating System(s): 
+Keyword(s): kbnetwork kbInventory smsinvkbfaq kbfixlist
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 1.2 SP1, 1.2 SP2, 1.2 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Client computers running Windows for Workgroups or Windows 95 may receive a
+"Please insert diskette in drive X:" message (where X is the drive letter) at 17
+percent of the hardware inventory. The message appears after you have applied
+Systems Management Server Service Pack 1, 2, or 3.
+
+CAUSE
+=====
+
+This is a software regression in the Systems Management Server inventory
+component Getdisk.exe.
+
+Getdisk.exe was modified to resolve an issue with inventory collection on MS-DOS
+clients with removable cartridge drives installed, such as the Iomega Zip drive.
+This modification affected Getdisk.exe code to handle MS-DOS clients with one
+floppy disk drive that also impersonate drive B.
+
+WORKAROUND
+==========
+
+To work around this problem, use the original Systems Management Server 1.2
+version of Getdisk.exe. To do this, perform the following steps:
+
+1. Retrieve Getdisk.ex_ from the Systems Management Server 1.2 compact disc and
+  rename the file to Getdisk.exe (it is not compressed).
+
+2. Copy Getdisk.exe to the Sms\Site.srv\Maincfg.box\Client.src\X86.bin directory
+  on the computer running Systems Management Server. Getdisk.exe will be
+  replicated to your logon servers from this directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.2 Service Packs 1, 2 and 3.
+
+
+A supported fix is now available, but has not been fully regression- tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+Additional query words: prodsms err msg errmsg SP1 SP2 SP win95 removeable GETDISK.EXE
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv kbfaq kbfixlist
+Technology        : kbSMSSearch kbSMS120 kbSMS120SP2 kbSMS120SP3 kbSMS120SP1
+Version           : :1.2,1.2 SP1,1.2 SP2,1.2 SP3,95
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234194/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234194/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234194/","publisher":null,"image":null,"headline":"Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234194-bug-conflicting-versions-of-mfc-stop-responding-upon-shutdown">Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234194
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
+Operating System(s): 
+Keyword(s): kbMFC kbOSWin95 kbDSupport kbGrpDSMFCATL kbArchitecture
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.0a, 4.1, 4.2, 4.2b, 5.0, 5.0sp1, 5.0sp2, 5.0sp3, on platform(s):
+      - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Microsoft Foundation Classes (MFC) application built with Visual C++ 4.x or
+5.0 is run on Windows 95 concurrently with a MFC application built with Visual
+C++ 2.x (MFC version 3.x), then when the user logs off or shuts down the
+computer, a dialog box stating that "An illegal operation occurred" in the MFC
+4.x application may appear. This error only occurs if the MFC version 3.x has
+the focus upon shutdown.
+
+CAUSE
+=====
+
+The MFC classes version 3.0 adds atoms, by calling the AddAtom function, to the
+global atom table by calling the atoms in a different manner than MFC 4.0 and
+later. All versions of MFC store the original window procedure of a subclassed
+window in the window property list before replacing it. MFC version 3.0 sets the
+property by using an atom as the following code sample illustrates:
+
+  static const ATOM _afxOldWndProcAtom = GlobalAddAtom(_T("AfxOldWndProc"));
+
+The SetProp method does not call the GlobalAddAtom function if an atom is passed
+to it. Therefore GlobalAddAtom is called only once in the MFC 3.x application
+instance (during the initialization of _afxOldWndProcAtom), even if the atom is
+used in several subclassed windows. MFC Versions 4.0 and later set this property
+using a string as follows:
+
+  static const TCHAR szAfxOldWndProc[] = _T("AfxOldWndProc");
+
+In this case, SetProp calls GlobalAddAtom once for each subclassed window. During
+shutdown, if Windows 95 detects that a process is shutting down without
+destroying all of its windows, then Windows 95 cleans them up for the
+application. Specifically, Windows 95 calls GlobalDeleteAtom for each atom that
+is used in a window's property list. When an MFC 3.x application has several
+subclassed windows, Windows 95 deletes the AfxOldWndProc atom several times,
+even though the application added it only once. In this situation, the atom is
+removed from the global atom table before the MFC 4.x application is done using
+it. As a result, the MFC 4.x application is not able to access the stored window
+procedure when handling the WM_NCDESTROY window in the _AfxActivationWndProc
+function, which results in the illegal operation (general protection fault).
+
+RESOLUTION
+==========
+
+If the MFC 4.x application adds the atom more times than it is deleted during
+the shutdown of any MFC 3.x applications, then the atom is still available when
+the MFC 4.x application references it. Making the atom constantly available can
+be done by adding the following statement to the MFC 4.x application's
+CWinApp::InitInstance function:
+
+  for( int i = 0; i&lt;50; i++)
+           GlobalAddAtom(_T("AfxOldWndProc"));
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The Windows global atom table maintains a reference count on each atom that is
+added. If the same atom is added more than once, Windows does not add a new
+entry in the global atom table; instead, it increments the atom's reference
+count. Similarly, Windows decrements an atom's reference count whenever it is
+deleted. When the reference count reaches zero, Windows then removes the atom
+from the global atom table.
+
+The reference count is maintained in a 16-bit unsigned word. Therefore, the
+reference count may reach 2 to the 16th power minus one (65535) before it rolls
+over to zero. If a MFC 4.x application implements the code in the suggested
+resolution, then it requires over 1300 active instances of the application
+before the reference count limit is reached. In addition, calling GlobalAddAtom
+for an atom that already exists does not cause any additional consumption of
+system resources, other than the processor time used on the function call.
+Therefore, the suggested resolution may be safely deployed in a production
+environment with no appreciable side effects.
+
+MFC subclasses non-MFC windows and uses the atom with the name AfxOldWndProc as
+the key for retrieving the subclassed Window's window procedure. MFC 3.0 and MFC
+4.2 uses the same name for the atom. _AfxActivationWndProc uses the atom to
+retrieve the subclassed window procedure prior to calling it. Destruction of a
+window MFC replaces the window procedure of the non-MFC window with its original
+window procedure. This is done in code in the _AfxActivationWndProc procedure
+that handles WM_NCDESTROY.
+
+This issue is encountered sporadically but is more common on Japanese, Chinese,
+and computers running Korean Windows 95 due to MFC subclassing the Input Method
+Editor (IME) window.
+
+This problem may be observed by using certain accessories that ship with Windows
+95. The Imaging accessory is a MFC 4.x application, while Paint and WordPad are
+both MFC 3.0 applications. If a user starts an instance of Imaging, then Paint,
+then WordPad, then leaves the focus on WordPad while shutting down, they may
+encounter the illegal operation error message, or the applications may simply
+hang, or stop responding. The Windows 98 versions of WordPad and Paint do not
+use MFC.
+
+A conflict does not occur between any two applications if one of the applications
+is using the version of MFC shipped with Visual C++ 6.0 or later.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Method One:
+
+On a computer running Japanese Windows 95:
+
+1. Create a MFC dialog-based application with AppWizard using Visual C++ 4.2.
+
+2. Run this application.
+
+3. Run WordPad.
+
+4. While the WordPad application window is the topmost window, shut down the
+  computer.
+
+Method Two:
+
+1. On a computer running Windows 95, run Imaging for Windows 95 and then run
+  WordPad.
+
+2. When the WordPad application window is the topmost window, shut down the
+  computer.
+
+REFERENCES
+==========
+
+- For additional information, click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q164166 PRB: Assert in Wincore.cpp with MFC in an NT Service
+
+- For additional information, click the article number Windows 95 OSR2
+  Accessories below to view the article Windows 95 OSR2 Accessories in the
+  Microsoft Knowledge Base:
+
+  Q234615 Some Windows 95 OSR2 Accessories May Cause GPF During Shutdown
+
+- See the \MFC\SRC\WinCore.cpp file for the _AfxActivationWndProc and
+  _AfxCbtFilterHook functions and to see how _afxOldWndProc is defined.
+
+(c) Microsoft Corporation June 10, 1999, All Rights Reserved.
+Contributions by Isaac Leon Varon, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMFC kbOSWin95 kbDSupport kbGrpDSMFCATL kbArchitecture 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

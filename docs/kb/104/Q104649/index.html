@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104649/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104649/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104649/","publisher":null,"image":null,"headline":"Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104649-fix-compiler-issues-c1001-or-hangs-with-missing-closing-brace">Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104649
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, versions 1.0, 1.5 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Compiling the sample code below from the Visual Workbench in Visual C++ version
+1.0 or an MS-DOS prompt under Windows causes the compiler to hang with no error
+messages being displayed. If the sample code is compiled under MS-DOS alone the
+following error occurs:
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'msc1.cpp', line 581)
+
+Compiling the sample code with the compiler supplied with Visual C++ for Windows
+version 1.5 causes the compiler to generate the following error message:
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'msc1.cpp', line 585)
+
+Compiling the sample code with the compiler supplied with Visual C++ for Windows
+NT causes the following error message:
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'msc1.cpp', line 602)
+  Please choose the Technical Support command on the Visual Workbench Help menu,
+  or open the Technical Support help file for more information.
+
+CAUSE
+=====
+
+The code being compiled is missing a closing brace on the switch statement. This
+may also occur in other situations where a closing brace is missing. For
+example, if the closing brace closes a function that is the last function in a
+file, the same errors occur. To illustrate, remove the closing brace from the
+CStroke::FinishStroke() member function in SCRIBDOC.CPP in step 5 of the
+scribble tutorial.
+
+RESOLUTION
+==========
+
+Fix the code by adding the missing closing brace.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in C/C++ version 9.0, included with
+Visual C++ 32-bit Edition version 2.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;afxwin.h&gt;    // MFC core and standard components
+
+  class CTestApp : public CWinApp
+  {
+  public:
+      CTestApp();
+  };
+
+  CTestApp::CTestApp()
+  {
+  }
+
+  CTestApp NEAR theApp;
+
+  LPSTR FunctionName (char* pszFileName)
+  {
+      DWORD dwMaxLength;
+      unsigned int nChars;
+      LPSTR LpSrc, lpDst, lpNew;
+      static char szPath [_MAX_PATH];
+
+      while (*LpSrc)
+      {
+          switch (*LpSrc)
+          {
+              case ('\\'):
+              case ('/'):
+                  *lpDst++ = *LpSrc++;
+                  nChars = 0;
+                  break ;
+
+              case ('&lt;'):
+              case ('&gt;'):
+              case ('"'):
+              case ('|'):
+                  ASSERT (FALSE);
+                  LpSrc++;
+                  break;
+
+              default:
+                  if (nChars &lt; dwMaxLength)
+                      *lpDst++ = *LpSrc++;
+                  else
+                      LpSrc++;
+                  nChars++;
+                  break;
+
+          // Without the following closing brace for the switch
+          // statement, the compiler issues the C1001 error or hangs
+          // instead of generating the appropriate syntax error message.
+
+          //}
+      }
+
+      return lpNew;
+  }
+
+Additional query words: 1.00 1.50 8.00 8.00c curly
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

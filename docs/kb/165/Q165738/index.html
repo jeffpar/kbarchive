@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165738/","publisher":null,"image":null,"headline":"Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165738-xweb-pop3-clients-not-authenticated-by-exchange-server">Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165738
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 18-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+- Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This problem occurs when you are using Microsoft Windows 95 and Microsoft
+Internet Explorer. When you start the Internet Explorer Internet Mail client,
+the Internet Mail inbox appears. When you click the Send and Receive icon, the
+authentication dialog box appears and requests your logon information. When you
+type the requested information, you are not logged on to Microsoft Exchange
+Server. However, you can telnet into port 110 of the Exchange Server and the
+following message appears:
+
+  +OK Welcome to NT Example POP3 server.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+- On the computer running Microsoft Exchange Server, ensure that the following
+  services are not started in the Control Panel Services tool:
+
+   - POP3 Server services
+
+   - Local Mail Delivery Agent service
+
+   - SMTP Server services
+
+  If the above services are started, stop the services, set the services to
+  manual, and then restart the server.
+
+MORE INFORMATION
+================
+
+The above services are included with the Windows NT Server 4.0 Resource Kit as
+Mail Server (MailSrv) and are not part of Microsoft Exchange Server version 5.0
+or later. For more information on MailSrv, please refer to the "Windows NT
+Server Internet Guide" Chapter 7 Internet Tools pages 147-154 included with the
+Windows NT Server 4.0 Resource Kit.
+
+The POP3 Server Services service will claim port 110 on boot up if the service is
+set to automatically initialize. This in turn will not allow the Microsoft
+Exchange server to listen to port 110.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+Version           : WinNT:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

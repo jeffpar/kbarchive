@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83902/","publisher":null,"image":null,"headline":"Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83902-windows-31-cannot-run-on-a-novell-nondedicated-file-server">Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83902
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The Microsoft Windows operating system version 3.1 cannot be run on a Novell
+nondedicated server. A nondedicated server is a computer that operates as both a
+server and a workstation at the same time.
+
+The following are two possible workarounds:
+
+- Run Windows 3.1 on all workstations, and run Windows 3.0 in real mode on the
+  nondedicated server.
+
+- Purchase another computer to be a dedicated server.
+
+MORE INFORMATION
+================
+
+Novell NetWare allows a server machine to double as a workstation. In this case,
+the server is called a nondedicated file server. However, no extended or
+expanded memory is available to the workstation, and Windows 3.0 can run in real
+mode only. Windows 3.1 does not have a real mode and therefore cannot be run on
+a nondedicated file server. For more information, query on the following words
+in the Microsoft Knowledge Base:
+
+  win31 real stable
+
+Nondedicated servers are available with the following Novell products:
+
+  ELS Level I           (4 users)
+  ELS Level II          (8 users)
+  Advanced NetWare 286  (100 users)
+
+A dedicated file server functions as a file server only. A dedicated file server
+is preferable because the processor time is not split between the workstation
+functions and the requirements of the file server.
+
+REFERENCES
+==========
+
+"NetWare Buyer's Guide," Winter 1990
+
+Additional query words: 3.10 3.11 non-dedicated novell net ware 3rdparty
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

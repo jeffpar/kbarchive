@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176486/","publisher":null,"image":null,"headline":"Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176486-bug-bookmark-for-unbound-dbgrid-is-incorrect-for-the-last-row">Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176486
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Bookmark property of the DBGrid control can be used to save a reference to
+the current row. By setting the Bookmark property, the current row can be
+updated as well.
+
+If the Bookmark property of an unbound DBGrid control is saved while the last row
+is selected, setting the Bookmark property back to the saved value will update
+the current row to be the first row, rather than the last.
+
+RESOLUTION
+==========
+
+As a workaround, use the RowBookmark method of the DBGrid control when saving
+the Bookmark of the current row:
+
+     Private MyBookmark
+
+     Private Sub cmdSaveBookmark_Click()
+
+         MyBookmark = DBGrid1.RowBookmark(DBGrid1.Row)
+
+     End Sub
+
+Also, the following error handling code will need to be included when updating
+the current row:
+
+     Private Sub cmdRestoreBookmark_Click()
+     On Error GoTo err_handler
+
+         DBGrid1.Bookmark = MyBookmark
+
+     Exit Sub
+
+     err_handler:
+     Dim r
+
+         If Err.Number = 6149 Then
+             For r = 0 To DBGrid1.VisibleRows - 1
+                 DBGrid1.Row = r
+             Next r
+             Resume
+         Else
+             Err.Raise Err.Number
+         End If
+
+     End Sub
+
+The above error handling code is necessary because the bug associated with the
+Bookmark property for the last row will also cause run-time error 6149.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the sample project, UnBndGrd.vbp, in the Visual Basic samples directory
+  (such as C:\Program Files\DevStudio\VB\samples\Misc\UnBndGrd\UnBndGrd.vbp).
+
+  This article uses the Sample application UnBndGRd.Vbp. In the current
+  MarchPreRelease of VB 6.0 this sample is not available. This may have to be
+  changed to reflect what is shipped with the product.
+
+2. Add two CommandButtons to Form1 and name them cmdSaveBookmark and
+  cmdRestoreBookmark.
+
+3. Add the following code to the General Declarations section of Form1:
+
+        Private MyBookmark
+
+        Private Sub cmdSaveBookmark_Click()
+
+            MyBookmark = DBGrid1.Bookmark
+
+        End Sub
+
+        Private Sub cmdRestoreBookmark_Click()
+
+            DBGrid1.Bookmark = MyBookmark
+
+        End Sub
+
+4. Run the project.
+
+5. Select a row in the DBGrid (not the last row) and click on cmdSaveBookmark to
+  save the Bookmark. Move to another row and click on cmdRestoreBookmark to
+  return to the original row.
+
+6. Repeat step 5 with the last row and notice that the DBGrid does not return to
+  the last row but to the first row instead.
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

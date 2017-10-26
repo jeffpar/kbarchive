@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172537: BUG: Grid Clip Property Contains Remnants of Former Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172537: BUG: Grid Clip Property Contains Remnants of Former Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172537/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172537/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172537/","publisher":null,"image":null,"headline":"Q172537: BUG: Grid Clip Property Contains Remnants of Former Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172537-bug-grid-clip-property-contains-remnants-of-former-values">Q172537: BUG: Grid Clip Property Contains Remnants of Former Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172537
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under most circumstances, the Microsoft Grid control's Clip property will
+contain only the values of all the currently-selected cells in the grid.
+However, in Visual Basic 4.0 16-bit, if a cell in a selected range contains a
+null value, previously selected values will show through in the Clip property at
+the position of the cell containing a null value. In Visual Basic 4.0 16- and
+32-bit, if the last cell in a selected range contains a null value then all
+previously selected cell values at that position and beyond will be added to the
+Clip property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This behavior does not occur with the newer MSFlexGrid that ships with Microsoft
+Visual Basic version 5.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic 4.0.
+
+2. Choose Custom Controls from the Tools menu. Select " Grid Control."
+
+3. Add one CommandButton (Command1).
+
+4. Add one grid control (Grid1), large enough to show a 5 x 5 grid.
+
+5. Add the following code to Form1:
+
+        Option Explicit
+
+        Private Sub Command1_Click()
+           Dim x as Integer, y as Integer
+           ' Create a 5 by 5 grid.
+           Grid1.Cols = 5
+           Grid1.Rows = 5
+           ' Fill the grid with some sample values.
+           For x = 1 To 4
+              Grid1.Col = x
+              For y = 1 To 4
+                 Grid1.Row = y
+                 Grid1.Text = x + y
+              Next y
+           Next x
+           ' Select a range of cells.
+           Grid1.SelStartCol = 1
+           Grid1.SelStartRow = 1
+           Grid1.SelEndCol = 4
+           Grid1.SelEndRow = 1
+           ' Show the clip property contents.
+           MsgBox "The contents of the clip property: " &amp; Grid1.Clip
+           ' Select a new range of cells.
+           Grid1.SelStartCol = 2
+           Grid1.SelStartRow = 3
+           Grid1.SelEndCol = 3
+           Grid1.SelEndRow = 3
+           ' Set current cell to the last cell in the selected range.
+           Grid1.Col = 3
+           Grid1.Row = 3
+           MsgBox "Now clearing last selected cell."
+           ' Set the cell to a null value.
+           Grid1.Text = ""
+           ' Show the new contents of the clip property.
+           MsgBox "NOW Notice the contents of the clip property" &amp; _
+             Chr(13) &amp; Chr(10) &amp; "compared to the selected cells: " &amp; _
+             Grid1.Clip
+        End Sub
+
+6. Press the F5 key to run the project.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q150229 BUG: Setting Grid Clip Property to Empty Text Box Causes GPF
+
+Additional query words: msgrid grid16.ocx grid32.ocx kbControl kbVBp400bug kbVBp500bug kbVBp kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

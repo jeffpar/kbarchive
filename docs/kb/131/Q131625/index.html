@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131625/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131625/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131625/","publisher":null,"image":null,"headline":"Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131625-multiple-appn-capable-connections-to-same-as400-not-supported">Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131625
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbfile kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While SNA Server does support one or more connections to the same host system
+(see Q107192), the AS/400 does not support more than one concurrent APPN-capable
+connection from a single SNA Server 2.x system (acting as a LEN node), over any
+link type (802.2 Token Ring, Ethernet, SDLC, or X.25).
+
+SNA Server 3.0 does support multiple APPN-capable connections to the same
+AS/400.
+
+For additional information on how SNA Server 3.0 supports multiple APPN-capable
+connections to an AS/400, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q162133 SNA Server 3.0 Supports Multiple Connections To Same AS/400
+
+For additional information on how to define a non-APPN capable connection, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q145714 How to Establish Two 802.2 Connections To AS/400
+
+To increase the number of sessions from SNA Server to an AS/400, multiple local
+APPC LUs can be defined and partnered with the AS/400s remote APPC LU, or the
+QPCSUPP mode's session limit can be increased in both SNA Server and the
+AS/400.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q126395 Ways to Increase the Number of AS/400 LU6.2 Sessions
+
+MORE INFORMATION
+================
+
+For SNA Server to connect to an AS/400, an APPC controller definition must exist
+for SNA Server's local control point name. The APPC controller may be
+autocreated by the AS/400 or manually created by the AS/400 administrator.
+
+The AS/400 allows only a single APPC controller, with a given control point name,
+over any line it supports. If two connections are defined in SNA Server to the
+same AS/400 (for example, two 802.2 connections, or one 802.2 and one SDLC,
+etc.), the AS/400 rejects the second connection request unless the first APPC
+controller definition is deleted.
+
+SNA Server 2.x can only be configured with one local control point name
+(configured in SNA Admin from the Session Properties dialog box).
+
+For 802.2 connections, the AS/400 allows only a single APPC controller to have a
+specific network adapter address. So, if an SNA Server connects to an AS/400
+with one local control point name configured (over an 802.2 connection), and the
+local control point name is later changed, the AS/400 will refuse the connection
+attempt with the new name because an APPC controller definition already exists
+with the same network adapter address.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbfile kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

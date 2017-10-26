@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172946: XCLN: How to Install the Simple Mail Handler Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172946: XCLN: How to Install the Simple Mail Handler Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172946/","publisher":null,"image":null,"headline":"Q172946: XCLN: How to Install the Simple Mail Handler Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172946-xcln-how-to-install-the-simple-mail-handler-utility">Q172946: XCLN: How to Install the Simple Mail Handler Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172946
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+- Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install the Simple Mail Handler service for
+Microsoft Exchange and Microsoft Outlook. This service is included in the
+BackOffice Resource Kit (BORK). The Simple Mail Handler (SMH) tool is similar to
+the Microsoft Exchange Client Inbox Assistant, but does not require a connection
+to a Microsoft Exchange Server computer. The SMH tool also has more advanced
+filtering capabilities than those available in the Inbox Assistant.
+
+MORE INFORMATION
+================
+
+The instructions in the Help file included with the BORK, Version 1, and BORK,
+Part 2 indicate that you should run Mergeini.exe to install the MAPI service.
+However, when you run this program, you receive the following error message:
+
+  File does not exist.
+
+The purpose of the Mergeini.exe file is to add the settings from the Smh.inf file
+to the Mapisvc.inf file. The Smh.inf file is included in the BackOffice Resource
+Kit: Part One, but not in Part Two.
+
+To successfully install the Simple Mail Handler service for all operating systems
+except Windows NT Workstation:
+
+  From the Exchange\&lt;operating system&gt;\&lt;platform&gt;\Client\SMH folder
+  on the Microsoft BackOffice Resource Kit, Second Edition compact disc, copy
+  Mergeini.exe, Smh.inf, and the Smh.dll file for your operating system to the
+  Windows\System folder on your computer.
+
+For Windows NT Workstation:
+
+  Copy Mergeini.exe, Smh.inf, and Smh.dll to the System32 folder on your
+  computer.
+
+To add Simple Mail Handler to the list of available Microsoft Exchange Server
+services:
+
+1. Run Mergeini.exe using the following command-line syntax:
+
+  Mergeini.exe -m&lt;install path&gt;smh.inf
+
+2. In Control Panel, double-click the Mail and Fax icon.
+
+3. Click the Services tab, and then click Add.
+
+4. Click Simple Mail Handler, and then click OK.
+
+NOTE: These instructions are included in the BORK, Part 3, Help file.
+
+Additional query words: reskit sample 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbOutlook97 kbZNotKeyword2 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118927: PC Adm: Setting Passwords Using the Administrator Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118927: PC Adm: Setting Passwords Using the Administrator Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118927/","publisher":null,"image":null,"headline":"Q118927: PC Adm: Setting Passwords Using the Administrator Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118927-pc-adm-setting-passwords-using-the-administrator-program">Q118927: PC Adm: Setting Passwords Using the Administrator Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118927
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An administrator of a Microsoft Mail for PC Networks postoffice can use the Mail
+Administrator program (ADMIN.EXE) to set two different kinds of passwords. Each
+postoffice will have one password to control dial-in access to the postoffice,
+and each mailbox will have a password to provide security for the users' mail.
+This article provides information about the two kinds of passwords and how you
+can change them.
+
+MORE INFORMATION
+================
+
+The sections below list the ADMIN.EXE program commands you can use to manage
+these passwords. For information about how to start the Mail Administrator
+program, please see the Microsoft Mail for PC Networks "Administrator's Guide."
+
+Postoffice Password Commands
+----------------------------
+
+The following command
+
+  Config, Password, Sign-on password to this postoffice:
+
+sets the postoffice password to provide security for dial-in access via modem
+(for example, Microsoft Mail Remote for Windows users, or when you use the
+External Mail program with a postoffice connected via modem.)
+
+For additional information about setting passwords using the Mail Remote client,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q97894 PC WRmt: Remote Mail Password Dialogs
+
+When you add an external postoffice and configure it as a direct route type via
+modem, use the following command to specify the password for the external
+postoffice it will dial to:
+
+  " External-Admin, Setup, Enter network name:, Password " (without the
+  quotation marks)
+
+You do not need a password for indirect route postoffices or direct route
+postoffices via an MS-DOS drive.
+
+Mailbox Password Commands
+-------------------------
+
+The following command
+
+  Local-Admin, Options, Password, Password:
+
+is the default password for new users. If you would like the default password for
+the postoffice to be something other than "password," you can change it here.
+
+When you create a new mailbox, the "Password:" field contains the default
+password. You can change the password with the following command
+
+  Local-Admin, Create, Mailbox name:, Password:
+
+or let the user change it using Microsoft Mail for Windows.
+
+If a user forgets his or her password, you can reset it to the default using the
+command:
+
+  Local-Admin, Recover, &lt;mailbox name&gt;, Yes
+
+To change the password for a mailbox that already exists, you must use
+appropriate client software:
+
+  Client                  Command
+  ---------------------------------------------
+  MS-DOS                  Options, Password
+  Windows                 Mail, Change Password
+  Macintosh               File, Change Password
+  Presentation Manager    Mail, Change Password
+
+In each product, you will be asked to enter the old password, then enter the new
+password twice for verification.
+
+REFERENCES
+==========
+
+For more information about this topic, please see the Microsoft Mail
+"Administrator's Guide":
+
+Version 3.0
+  Default passwords, page 95.
+  External Admin Setup command, page 113.
+  Lost passwords, page 99.
+  Postoffice password, page 134.
+
+Version 3.2
+  Default passwords, page 101.
+  External Admin Setup command, page 119.
+  Lost passwords, page 104.
+  Postoffice password, page 74.
+
+Additional query words: 3.00 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191126: PRB: Font Changes as ActiveX Control Resizes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191126: PRB: Font Changes as ActiveX Control Resizes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191126/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191126/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191126/","publisher":null,"image":null,"headline":"Q191126: PRB: Font Changes as ActiveX Control Resizes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191126-prb-font-changes-as-activex-control-resizes">Q191126: PRB: Font Changes as ActiveX Control Resizes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191126
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbMFC kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call SelectStockFont() to select a Stock font property to display text
+in an ActiveX control, the font of the text changes as the size of the control
+changes with SetWindowPos() or MoveWindow().
+
+CAUSE
+=====
+
+SelectStockFont() selects a scaled font into a device context. This causes the
+font size to change as the control resizes. However, the natural extent is not
+changed (m_rcBounds is bigger but m_cyExtent is not). As a result, the stock
+font doesn't scale perfectly with respect to the size of the control.
+
+RESOLUTION
+==========
+
+Here are two possible workarounds for this problem:
+
+1. Use SetControlSize() instead of SetWindowPos() or MoveWindow() to change the
+  size of the control.
+
+2. Replace SelectStockFont() with the following code:
+
+        CFontHolder&amp; fntHolder =InternalGetFont();
+        HFONT internalhFont = fntHolder.GetFontHandle();
+
+        HFONT hOldFont = (HFONT)::SelectObject(pdc-&gt;m_hDC,internalhFont);
+        pdc-&gt;TextOut(20, 20, "Hello", 5);
+        ::SelectObject(pdc-&gt;m_hDC,hOldFont);
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Generate an MFC ActiveX control with the Control Wizard.
+
+2. Add a Stock font property to the control.
+
+3. Add a method called SizeControl() to the control. Call SetWindowPos() in this
+  method to change the size of the control. For example:
+
+        void CFontCtrl::SizeControl()
+        {
+           CRect r;
+           GetWindowRect(&amp;r);
+           SetWindowPos(NULL, 0, 0,
+              r.Width() + 100, r.Height() + 100, SWP_NOMOVE);
+        }
+
+4. Display a text string in the control's OnDraw() function with the Stock font
+  property as shown here:
+
+        void CFontCtrl::OnDraw(CDC* pdc, const CRect&amp; rcBounds,
+           const CRect&amp; rcInvalid)
+        {
+           pdc-&gt;FillRect(rcBounds,
+              CBrush::FromHandle((HBRUSH)GetStockObject(WHITE_BRUSH)));
+           pdc-&gt;Ellipse(rcBounds);
+           CFont* def_font = SelectStockFont(pdc);
+           pdc-&gt;TextOut(20, 20, "Hello", 5);
+           pdc-&gt;SelectObject(def_font);
+        }
+
+5. Build the control project, and then insert the control to the ActiveX Control
+  Test Container.
+
+6. Invoke the SizeControl() method in the ActiveX Control Test Container. The
+  font of the text changes.
+
+Additional query words: ocx
+
+======================================================================
+Keywords          : kbole kbActiveX kbMFC kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

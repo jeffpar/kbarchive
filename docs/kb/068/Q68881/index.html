@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68881: Pascal Example in Programmer’s Guide Won’t Compile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68881: Pascal Example in Programmer’s Guide Won’t Compile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68881/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68881/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68881/","publisher":null,"image":null,"headline":"Q68881: Pascal Example in Programmer’s Guide Won’t Compile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68881-pascal-example-in-programmers-guide-wont-compile">Q68881: Pascal Example in Programmer’s Guide Won’t Compile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68881
+Product(s): See article
+Version(s): 1.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | Pascal Mouse Programming Borland Turbo | mspl13_basic
+Last Modified: 11-FEB-1991
+
+The "Making Calls from Borland Turbo Pascal Programs" sample in
+Appendix E of the "Microsoft Mouse Programmer's Reference" does not
+compile with Turbo Pascal versions 5.0 and 6.0.
+
+The CpuReg data structure needs to be defined as "Registers"
+variables. The semicolons need to be removed from the END lines that
+immediately precede ELSE. Finally, finding the segment and offset of
+the pointer of the address of the user array or subroutine (functions
+9,12,20,22,23,and 24) needs to be done outside of this procedure.
+Passing the first element of the array or the start point of the
+subroutine into the procedure, then calling the "ofs" and "seg"
+functions in the procedure doesn't seem to work. This is due to how
+the variables get dereferenced when passed into a procedure.
+
+The following example compiles in both Turbo Pascal version
+6.0 and Quick Pascal version 1.00:
+
+Procedure Mouse (Var m1, m2, m3, m4, m5 : integer );
+
+Var
+   CpuReg: Registers;
+
+begin {mouse}
+
+   if m1 &gt;= 0 then
+      begin
+     CpuReg.AX := m1;        { Load Parameters       }
+     CpuReg.BX := m2;        { into appropriate      }
+     CpuReg.CX := m3;        { registers             }
+
+     if (m1 = 9) or (m1 = 12) or (m1 = 20)
+        or (m1 = 22) or (m1 = 23) or (m1 = 24) then
+        begin
+          CpuReg.DX  :=  m4;    {m4 = offset,         }
+          CpuReg.ES  :=  m5;    { and m5 = segment    }
+        end                       { of the user array }
+                         { or subroutine     }
+
+      else
+      if  m1 = 16  then
+       begin
+         CpuReg.CX  := m2;           {Left  x coordinate }
+         CpuReg.DX  := m3;           {Upper y coordinate }
+         CpuReg.SI  := m4;           {Right x coordinate }
+         CpuReg.DI  := m5;           {Lower y coordinate }
+       end
+     else
+         CpuReg.DX  := m4;
+
+     Intr($33, CpuReg);              {Call mouse driver  }
+                            { at Interrupt 33H  }
+
+     m1 := CpuReg.AX;                {Return values back }
+     m2 := CpuReg.BX;                { to parameters     }
+     m3 := CpuReg.CX;
+     m4 := CpuReg.DX;
+
+     if (m1 = 20) then               {special returns    }
+        m2 := CpuReg.ES              { from subroutines  }
+   end;
+end; {mouse}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

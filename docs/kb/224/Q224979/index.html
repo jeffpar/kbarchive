@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224979: Using Browser Capabilities with Internet Explorer 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224979: Using Browser Capabilities with Internet Explorer 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224979/","publisher":null,"image":null,"headline":"Q224979: Using Browser Capabilities with Internet Explorer 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224979-using-browser-capabilities-with-internet-explorer-50">Q224979: Using Browser Capabilities with Internet Explorer 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224979
+Product(s): Internet Information Server
+Version(s): WINDOWS:5; winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Explorer version 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Services (IIS) version 5.0 with Active Server
+Pages (ASP) and Internet Explorer provides enhanced client and server
+capabilities components that can be combined to allow Web developers greater
+control over the presentation of Web data to clients.
+
+This article explains how to combine these new features in a working example
+scenario.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+Client Capabilities in Internet Explorer 
+----------------------------------------
+
+Microsoft Internet Explorer 4.0 introduced several client-side attributes to the
+DHTML Object Model (DOM) that can be used in customizing a page layout after it
+has been rendered for the client. Internet Explorer 5.0 takes this a step
+further by exposing this information as one of the browser's Default Behaviors.
+
+The following table is a partial list of useful client capabilities. (For a more
+complete list see the MSDN clientCaps Behavior page.)
+
+  
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Client Capability | Description                                                                                        | DHTML Implementation            | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | AvailHeight       | Specifies the height of the working area of the system's screen,
+  in pixels, excluding the taskbar. | Window.screen.availHeight       | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | AvailWidth        | Specifies the width of the working area of the system's screen, in
+  pixels, excluding the taskbar.  | Window.screen.availWidth        | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | BufferDepth       | Specifies the number of bits per pixel used for colors on the off-
+  screen bitmap buffer.           | Window.screen.bufferDepth       | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | ColorDepth        | Specifies the number of bits per pixel used for colors on the
+  destination device or buffer.        | Window.screen.colorDepth        | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | CookieEnabled     | Specifies whether client-side cookies are enabled in the
+  browser.                                  | Window.navigator.cookieEnabled  | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | CpuClass          | Specifies the type of CPU of the client computer.                                                  | Window.navigator.cpuClass       | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Height            | Specifies the vertical resolution of the screen, in pixels.                                        | Window.screen.height            | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | JavaEnabled       | Specifies whether the Microsoft virtual computer is enabled in the
+  browser.                        | Window.navigator.javaEnabled()  | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Platform          | Specifies the platform on which the browser is running.                                            | Window.navigator.platform       | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | SystemLanguage    | Specifies the default language that the system is running.                                         | Window.navigator.systemLanguage | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | UserLanguage      | Indicates the current user language.                                                               | Window.navigator.userLanguage   | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Width             | Specifies the horizontal resolution of the screen, in pixels.                                      | Window.screen.width             | 
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Browser Capabilities in IIS
+---------------------------
+
+IIS 5.0 adds server-side functionality by exchanging the client capabilities
+information through cookies and returning this information to an ASP page as
+part of the Browser Capabilities component. This allows Web developers that
+ability to write ASP code that is custom tailored for a client's display.
+
+Implementation
+--------------
+
+Combining the Internet Explorer 5.0 and IIS 5.0 functionality into a single
+implementation can be thought of as a two-step process:
+
+1. A DHTML page needs to be created to obtain the client capabilities and store
+  them in cookies.
+
+  a. The DHTML page needs to declare the clientcaps behavior.
+
+  &lt;HTML XMLNS:IE&gt;
+  &lt;HEAD&gt;
+  &lt;STYLE&gt;
+    IE\:clientCaps {behavior:url(#default#clientcaps)}
+  &lt;/STYLE&gt;
+
+  &lt;!-- client capabilities code goes here --&gt;
+
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+    &lt;IE:clientcaps ID="objClientCaps" /&gt;
+  &lt;/BODY&gt;
+
+  b. All desired capabilities need to collected as name=value pairs.
+
+  c. All name=value pairs need to be concatenated together into a single string
+     separated by ampersands (&amp;).
+
+  d. The resulting string needs to be stored in a cookie named BrowsCap.
+
+  e. The following example page illustrates all of the above steps. Copy this
+     code and save it is "clientcap.htm" on your IIS computer in a Web folder
+     with Script and Read access enabled.
+
+  &lt;HTML XMLNS:IE&gt;
+  &lt;HEAD&gt;
+
+  &lt;STYLE&gt;
+    IE\:clientCaps {behavior:url(#default#clientcaps)}
+  &lt;/STYLE&gt;
+
+  &lt;SCRIPT language="JavaScript"&gt;
+
+  function stopAllErrors() {
+    return true;
+  }
+
+  window.onerror = stopAllErrors;
+
+  function window.onload () {
+    var strBrowsCap;
+
+    strBrowsCap  = "availHeight="     + objClientCaps.availHeight;
+    strBrowsCap += "&amp;availWidth="     + objClientCaps.availWidth;
+    strBrowsCap += "&amp;bufferDepth="    + objClientCaps.bufferDepth;
+    strBrowsCap += "&amp;colorDepth="     + objClientCaps.colorDepth;
+    strBrowsCap += "&amp;cookieEnabled="  + objClientCaps.cookieEnabled;
+    strBrowsCap += "&amp;cpuClass="       + objClientCaps.cpuClass;
+    strBrowsCap += "&amp;height="         + objClientCaps.height;
+    strBrowsCap += "&amp;javaEnabled="    + objClientCaps.javaEnabled;
+    strBrowsCap += "&amp;platform="       + objClientCaps.platform;
+    strBrowsCap += "&amp;systemLanguage=" + objClientCaps.systemLanguage;
+    strBrowsCap += "&amp;userLanguage="   + objClientCaps.userLanguage;
+    strBrowsCap += "&amp;width="          + objClientCaps.width;
+
+    document.cookie = "BrowsCap=" + strBrowsCap;
+  }
+  &lt;/SCRIPT&gt;
+  &lt;/HEAD&gt;
+
+  &lt;BODY&gt;
+    &lt;IE:clientcaps ID="objClientCaps" /&gt;
+  &lt;/BODY&gt;
+  &lt;HTML&gt;
+
+2. An ASP page needs to be created to read and use this information.
+
+  a. The ASP page needs to reference the DHTML client capabilities through the
+     use of a special METADATA tag:
+
+  &lt;!--METADATA TYPE="Cookie" NAME="BrowsCap" SRC="clientcap.htm"--&gt;
+
+     Note:The SRC attribute of the tag needs to be set to the name of your DHTML
+     page.
+
+  b. Next, a BrowserType component needs to be created in the ASP page:
+
+  &lt;% Set objBrowserType = Server.CreateObject("MSWC.BrowserType") %&gt;
+
+  c. Individual client attributes can now be obtained by referencing them by
+     name:
+
+  &lt;P&gt;availHeight = &lt;%=objBrowserType.availHeight%&gt;&lt;/P&gt;
+  &lt;P&gt;availWidth = &lt;%=objBrowserType.availWidth%&gt;&lt;/P&gt;
+
+  d. The following example page illustrates all of the above steps. Copy this
+     code and save it is "Clientcap.asp" on your IIS computer in the same Web
+     folder as "Clientcap.htm."
+
+  &lt;%@LANGUAGE="VBSCRIPT"%&gt;
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;TITLE&gt;Client Capabilities Test&lt;/TITLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+  &lt;!--METADATA TYPE="Cookie" NAME="BrowsCap" SRC="clientcap.htm"--&gt;
+  &lt;H2 ALIGN="CENTER"&gt;Client Capabilities Test&lt;/H2&gt;
+  &lt;CENTER&gt;
+  &lt;% Set objBrowserType = Server.CreateObject("MSWC.BrowserType") %&gt;
+  &lt;TABLE BORDER="1"&gt;
+    &lt;TR&gt;&lt;TH&gt;Attribute     &lt;/TH&gt;&lt;TH&gt;Value
+  &lt;/TH&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;availHeight   &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.availHeight
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;availWidth    &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.availWidth
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;bufferDepth   &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.bufferDepth
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;colorDepth    &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.colorDepth
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;cookieEnabled &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.cookieEnabled
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;cpuClass      &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.cpuClass
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;height        &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.height
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;javaEnabled   &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.javaEnabled
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;platform      &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.platform
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+
+  &lt;TR&gt;&lt;TD&gt;systemLanguage&lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.systemLanguage%&gt;&lt;/TD&gt;&lt;/TR
+  &gt;
+    &lt;TR&gt;&lt;TD&gt;userLanguage  &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.userLanguage
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+    &lt;TR&gt;&lt;TD&gt;width         &lt;/TD&gt;&lt;TD&gt;&lt;%=objBrowserType.width
+  %&gt;&lt;/TD&gt;&lt;/TR&gt;
+  &lt;/TABLE&gt;
+  &lt;/CENTER&gt;
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+Example Scenario
+----------------
+
+The following ASP example uses the DHTML client capabilities "Clientcap.htm" page
+from earlier and shows some of the above properties in action. This example
+illustrates a splash screen style home page for a Web site by:
+
+1. Creating a table at 90% width and 50% height of the available screen.
+
+2. Creating the page title based on the user's CPU type and operating platform.
+
+3. Creating a URL to another Web folder from the user's language setting.
+
+  &lt;%@LANGUAGE="VBSCRIPT"%&gt;
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;TITLE&gt;Welcome to our Web Site!&lt;/TITLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY BGCOLOR="#000000"&gt;
+  &lt;!--METADATA TYPE="Cookie" NAME="BrowsCap" SRC="clientcap.htm"--&gt;
+  &lt;H2 ALIGN="CENTER"&gt;Client Capabilities Test&lt;/H2&gt;
+  &lt;CENTER&gt;
+  &lt;% Set objBrowserType = Server.CreateObject("MSWC.BrowserType") %&gt;
+  &lt;TABLE WIDTH="&lt;%=objBrowserType.availWidth * .9%&gt;"
+  HEIGHT="&lt;%=objBrowserType.availHeight * .5%&gt;"&gt;
+    &lt;TR&gt;
+      &lt;TD ALIGN="CENTER" BGCOLOR="#FFFFFF"&gt;
+        &lt;H2&gt;Welcome to the &lt;%=UCase(objBrowserType.cpuClass)%&gt; site!&lt;/H2&gt;
+        &lt;P&gt;This site is dedicated to &lt;%=UCase(objBrowserType.platform)%&gt;
+  issues.&lt;/P&gt;
+        &lt;P&gt;&lt;A HREF="/&lt;%=objBrowserType.userLanguage%&gt;/"&gt;Click Here to
+  Continue&lt;/A&gt;&lt;/P&gt;
+    &lt;/TR&gt;
+  &lt;/TABLE&gt;
+  &lt;/CENTER&gt;
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+For more information, please see the Microsoft Scripting Technologies Web site.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbIEsearch kbiis500 kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE500WinNT400
+Version           : WINDOWS:5; winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

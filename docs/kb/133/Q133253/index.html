@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133253: Generating SQL Scripts for SMS Views | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133253: Generating SQL Scripts for SMS Views" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133253/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133253/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133253/","publisher":null,"image":null,"headline":"Q133253: Generating SQL Scripts for SMS Views","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133253-generating-sql-scripts-for-sms-views">Q133253: Generating SQL Scripts for SMS Views</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133253
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbnetwork kbDatabase smsdatabase
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SMSVIEW creates various views that can be used when querying the Systems
+Management Server SQL Database. The SQL Scripts used to create these views can
+be dumped using Microsoft SQL Enterprise Manager (in Microsoft SQL Server 6.0).
+
+MORE INFORMATION
+================
+
+To generate the SQL scripts to create the SMS views:
+
+1. Start SQL Enterprise Manager.
+
+2. If the server where the Systems Management Server database resides is not
+  already registered in SQL Enterprise Manager, register it as follows:
+
+  a. Select Register Server from the Server menu.
+
+  b. Provide the server name and valid logon information (by default, the valid
+     logon is SA with no password and Standard Security).
+
+  c. Choose Register.
+
+3. In the Server Manager window, select the server you just registered (there
+  may be a slight delay as a connection to this server is established).
+
+4. Choose + in the following order:
+
+  a. The Server's name in the Server Manager window.
+
+  b. Databases to get to the Systems Management Server database.
+
+  c. The database that contains the Systems Management Server data.
+
+  The name of the SMS database in the Server Manager window should be selected.
+
+5. Select Generate SQL Scripts from the Object menu.
+
+6. In the Generate SQL Scripts - &lt;servername&gt;\&lt;database name&gt; dialog
+  box, choose All Views for Scripting Objects. This fills in the name of each
+  view in the list box at the bottom right portion of the dialog box.
+
+7. Ensure Object Creation and Object Drop are selected for Scripting Options.
+
+8. If you prefer scripts for each view to be placed in a separate file, select
+  Per Object in Scripting Options. Otherwise, select Single File.
+
+9. Choose Preview (there is a short wait as the scripts are generated). Save the
+  scripts as text files or choose Close to go back to the Generate SQL Scripts
+  dialog box without saving the scripts).
+
+The following displays the resulting output (in Systems Management Server 1.1,
+Build 682):
+
+  /****** Object:  View dbo.vDisk    Script Date: 7/5/95 4:30:43 AM ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vDisk') and
+
+  sysstat &amp; 0xf = 2)
+  drop view dbo.vDisk
+
+  GO
+
+  Create View vDisk as select dwMachineID , Disk_SPEC.__Disk_Full0 ,
+  Disk_COMM.Disk_Index0 , Disk_COMM.File_System0 ,
+  Disk_SPEC.Free_Storage__MByte_0 , Disk_SPEC.Sectors0 ,
+  Disk_SPEC.Serial_Number0 , Disk_SPEC.Storage_Size__MByte_0 ,
+  Disk_COMM.Storage_Type0 , Disk_SPEC.Storage_Used__MByte_0 ,
+  Disk_SPEC.Volume_Name0 from  MachineDataTable  ,Disk_COMM   , Disk_SPEC
+  where Disk_COMM.datakey =*  CommonKey and Disk_SPEC.datakey =* SpecificKey
+  and ArchitectureKey = 5 and GroupKey = 8
+
+  GO
+
+  /****** Object:  View dbo.vEnvironment    Script Date: 7/5/95 4:30:43 AM
+  ******/ 
+  if exists (select * from sysobjects where id =
+  object_id('dbo.vEnvironment')
+
+  and sysstat &amp; 0xf = 2)
+  drop view dbo.vEnvironment
+
+  GO
+
+  Create View vEnvironment as select dwMachineID ,
+  Environment_SPEC.Environment_String0 , Environment_SPEC.Value0 from
+  MachineDataTable  ,Environment_COMM   , Environment_SPEC where
+  Environment_COMM.datakey =*  CommonKey and Environment_SPEC.datakey =*
+  SpecificKey and ArchitectureKey = 5 and GroupKey = 12
+
+  GO
+
+  /****** Object:  View dbo.vGroupNames    Script Date: 7/5/95 4:30:44 AM
+  ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vGroupNames')
+  and sysstat &amp; 0xf = 2)
+  drop view dbo.vGroupNames
+
+  GO
+
+  Create View vGroupNames as select  GM.GroupName   FROM ArchitectureMap AM,
+  GroupMap GM  WHERE  GM.ArchitectureKey = AM.ArchitectureKey AND
+  ((AM.Mode=0))
+
+  GO
+
+  /****** Object:  View dbo.vIdentification    Script Date: 7/5/95 4:30:44 AM
+  ******/ 
+  if exists (select * from sysobjects where id =
+  object_id('dbo.vIdentification') and sysstat &amp; 0xf = 2)
+  drop view dbo.vIdentification
+
+  GO
+
+  Create View vIdentification as select dwMachineID ,
+  Identification_SPEC.Domain0 , Identification_SPEC.LogOn_Name0 ,
+  Identification_SPEC.Name0 , Identification_SPEC.NetCardID0 ,
+  Identification_SPEC.Site0 , Identification_SPEC.SMSID0 ,
+  Identification_SPEC.SMSLocation0 , Identification_SPEC.SystemRole0 ,
+  Identification_SPEC.SystemType0 from  MachineDataTable
+  ,Identification_COMM
+
+  , Identification_SPEC where Identification_COMM.datakey =*  CommonKey and
+  Identification_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and
+  GroupKey = 1
+
+  GO
+
+  /****** Object:  View dbo.vMouse    Script Date: 7/5/95 4:30:44 AM ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vMouse') and
+  sysstat &amp; 0xf = 2)
+  drop view dbo.vMouse
+
+  GO
+
+  Create View vMouse as select dwMachineID , Mouse_COMM.Hardware_Installed0 ,
+  Mouse_COMM.Language0 , Mouse_COMM.Manufacturer0 ,
+  Mouse_COMM.Mouse_Hardware_Type0 , Mouse_COMM.Number_of_Buttons0 from
+  MachineDataTable  ,Mouse_COMM   , Mouse_SPEC where Mouse_COMM.datakey =*
+  CommonKey and Mouse_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and
+  GroupKey = 4
+
+  GO
+
+  /****** Object:  View dbo.vNetcard    Script Date: 7/5/95 4:30:45 AM
+  ******/ 
+
+  if exists (select * from sysobjects where id = object_id('dbo.vNetcard')
+  and
+
+  sysstat &amp; 0xf = 2) drop view dbo.vNetcard
+
+  GO
+
+  Create View vNetcard as select dwMachineID , Netcard_SPEC.IRQ0 ,
+  Netcard_COMM.Manufacturer0 , Netcard_SPEC.Port_Address0 from
+  MachineDataTable  ,Netcard_COMM   , Netcard_SPEC where Netcard_COMM.datakey
+  =*  CommonKey and Netcard_SPEC.datakey =* SpecificKey and ArchitectureKey =
+  5 and GroupKey = 11
+
+  GO
+
+  /****** Object:  View dbo.vNetwork    Script Date: 7/5/95 4:30:45 AM
+  ******/ 
+
+  if exists (select * from sysobjects where id = object_id('dbo.vNetwork')
+  and
+
+  sysstat &amp; 0xf = 2) drop view dbo.vNetwork
+
+  GO
+
+  Create View vNetwork as select dwMachineID , Network_COMM.Default_Gateway0
+  ,
+
+  Network_SPEC.IP_Address0 , Network_SPEC.IPX_Address0 ,
+  Network_COMM.LogOn_Name0 , Network_COMM.Major_Version0 ,
+  Network_COMM.Minor_Version0 , Network_SPEC.Network_Active0 ,
+  Network_COMM.Network_Type0 , Network_COMM.Subnet_Mask0 from
+  MachineDataTable  ,Network_COMM   , Network_SPEC where Network_COMM.datakey
+  =*  CommonKey and Network_SPEC.datakey =* SpecificKey and ArchitectureKey =
+  5 and GroupKey = 10
+
+  GO
+
+  /****** Object:  View dbo.vOperating_System    Script Date: 7/5/95 4:30:45
+  AM ******/ 
+  if exists (select * from sysobjects where id =
+
+  object_id('dbo.vOperating_System') and sysstat &amp; 0xf = 2)
+  drop view dbo.vOperating_System
+
+  GO
+
+  Create View vOperating_System as select dwMachineID ,
+
+  Operating_System_COMM.Build_Number0 , Operating_System_COMM.Build_Type0 ,
+  Operating_System_COMM.Country_Code0 ,
+  Operating_System_SPEC.Installation_Date0 ,
+  Operating_System_COMM.Language_ID0 ,
+  Operating_System_COMM.Operating_System_Name0 ,
+  Operating_System_COMM.Registered_Organization0 ,
+  Operating_System_SPEC.Registered_Owner0 ,
+  Operating_System_SPEC.System_Root0
+
+  , Operating_System_SPEC.System_Start_Options0 ,
+  Operating_System_COMM.Version0 from  MachineDataTable
+  ,Operating_System_COMM   , Operating_System_SPEC where
+  Operating_System_COMM.datakey =*  CommonKey and
+  Operating_System_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and
+  GroupKey = 7
+
+  GO
+
+  /****** Object:  View dbo.vPC_Memory    Script Date: 7/5/95 4:30:46 AM
+  ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vPC_Memory')
+  and sysstat &amp; 0xf = 2)
+  drop view dbo.vPC_Memory
+
+  GO
+
+  Create View vPC_Memory as select dwMachineID ,
+  PC_Memory_SPEC.Page_File_Name0 , PC_Memory_SPEC.Page_File_Size__MByte_0 ,
+  PC_Memory_SPEC.Total_Paging_File_Space__0 ,
+  PC_Memory_SPEC.Total_Physical_Memory__KB0 from  MachineDataTable
+  ,PC_Memory_COMM   , PC_Memory_SPEC where PC_Memory_COMM.datakey =*
+  CommonKey and PC_Memory_SPEC.datakey =* SpecificKey and ArchitectureKey = 5
+  and GroupKey = 9
+
+  GO
+
+  /****** Object:  View dbo.vProcessor    Script Date: 7/5/95 4:30:46 AM
+  ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vProcessor')
+  and sysstat &amp; 0xf = 2)
+  drop view dbo.vProcessor
+
+  GO
+
+  Create View vProcessor as select dwMachineID ,
+  Processor_COMM.Processor_Name0 , Processor_COMM.Processor_Type0 ,
+  Processor_COMM.Quantity0 from  MachineDataTable  ,Processor_COMM   ,
+  Processor_SPEC where Processor_COMM.datakey =*  CommonKey and
+  Processor_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and
+  GroupKey = 6
+
+  GO
+
+  /****** Object:  View dbo.vServices    Script Date: 7/5/95 4:30:46 AM
+  ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vServices')
+  and sysstat &amp; 0xf = 2)
+  drop view dbo.vServices
+
+  GO
+
+  Create View vServices as select dwMachineID , Services_SPEC.EXE_Path0 ,
+  Services_COMM.Name0 , Services_SPEC.Start_Name0 , Services_COMM.Start_Type0
+  , Services_COMM.State0 from  MachineDataTable  ,Services_COMM   ,
+  Services_SPEC where Services_COMM.datakey =*  CommonKey and
+  Services_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and
+  GroupKey = 13
+
+  GO
+
+  /****** Object:  View dbo.vVideo    Script Date: 7/5/95 4:30:47 AM ******/ 
+  if exists (select * from sysobjects where id = object_id('dbo.vVideo') and
+
+  sysstat &amp; 0xf = 2)
+  drop view dbo.vVideo
+
+  GO
+
+  Create View vVideo as select dwMachineID , Video_COMM._nd_Adapter_Type0 ,
+  Video_COMM.Adapter_Type0 , Video_SPEC.Bios_Date0 ,
+  Video_COMM.Current_Video_Mode0 , Video_COMM.Display_Type0 ,
+  Video_COMM.Manufacturer0 , Video_COMM.Max_Rows0 from  MachineDataTable
+  ,Video_COMM   , Video_SPEC where Video_COMM.datakey =*  CommonKey and
+  Video_SPEC.datakey =* SpecificKey and ArchitectureKey = 5 and GroupKey = 5
+
+  GO
+
+  /****** Object:  View dbo.vWorkstationStatus    Script Date: 7/5/95 4:30:47
+  AM ******/ 
+  if exists (select * from sysobjects where id =
+  object_id('dbo.vWorkstationStatus') and sysstat &amp; 0xf = 2)
+  drop view dbo.vWorkstationStatus
+
+  GO
+
+  Create View vWorkstationStatus as select dwMachineID ,
+  WorkstationStatus.Failed_Hardware_Checks0 ,
+  WorkstationStatus.Files_Not_Installed0 , WorkstationStatus.LastHWScan ,
+  WorkstationStatus.LastSWScan , WorkstationStatus.Standalone_Workstation0 ,
+  WorkstationStatus.System_Files_Not_Modified0 from  MachineDataTable  ,
+  WorkstationStatus where WorkstationStatus.datakey =* SpecificKey and
+  ArchitectureKey = 5 and GroupKey = 2
+
+  GO
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

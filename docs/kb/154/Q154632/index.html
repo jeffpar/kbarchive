@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154632/","publisher":null,"image":null,"headline":"Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154632-fix-accept-returns-false-but-getlasterror-returns-0">Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154632
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.1,4.2
+Operating System(s): 
+Keyword(s): kbMFC kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420fix kbWinsock kbDSupport kbGrp
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A call to CSocket or CAsyncSocket::Accept returns FALSE, but a call to
+GetLastError or WSAGetLastError returns 0. The same code works correctly with
+MFC version 4.0.
+
+CAUSE
+=====
+
+MFC maintains information in Thread Local Storage. In CAsyncSocket::Accept, the
+MFC code makes a call to DetachHandle that indirectly makes a call to
+TlsGetValue. This occurs after a call to the WinSock API function accept(). The
+call to TlsGetValue resets the thread's error code to zero and the error
+returned from the accept() call is lost.
+
+RESOLUTION
+==========
+
+If your class is derived directly from CAsyncSocket, then replace the Accept
+function and modify it so that the error code is not lost.
+
+This can be done by first borrowing the function from the CAsyncSocket::Accept
+function found in the MFC source code in the file SOCKCORE.CPP. Change the
+function to be implemented as follows:
+
+     #if _MFC_VER &gt;= 0x0410 &amp;&amp; _MFC_VER &lt;= 0x0420
+
+     BOOL CMySocket::Accept(CAsyncSocket&amp; rConnectedSocket,
+                            SOCKADDR* lpSockAddr, int* lpSockAddrLen)
+     {
+       ASSERT(rConnectedSocket.m_hSocket == INVALID_SOCKET);
+       ASSERT(CAsyncSocket::FromHandle(INVALID_SOCKET) == NULL);
+
+       CAsyncSocket::AttachHandle(INVALID_SOCKET, &amp;rConnectedSocket);
+
+       SOCKET hTemp = accept(m_hSocket, lpSockAddr, lpSockAddrLen);
+
+       if (hTemp == INVALID_SOCKET)
+       {
+     // &lt;===== STORE THE ERROR CODE RECEIVED FROM THE accept CALL
+         int nError = WSAGetLastError();
+
+         CAsyncSocket::DetachHandle(rConnectedSocket.m_hSocket, FALSE);
+
+     // &lt;===== RE-SET THE ERROR CODE THAT WAS SET IN THE accept CALL
+         WSASetLastError(nError);
+
+         rConnectedSocket.m_hSocket = INVALID_SOCKET;
+       }
+       else if (CAsyncSocket::FromHandle(INVALID_SOCKET) != NULL)
+       {
+         rConnectedSocket.m_hSocket = hTemp;
+         CAsyncSocket::DetachHandle(INVALID_SOCKET, FALSE);
+         CAsyncSocket::AttachHandle(hTemp, &amp;rConnectedSocket);
+       }
+
+       return (hTemp != INVALID_SOCKET);
+     }
+
+     #endif  // _MFC_VER
+
+If your class is derived from CSocket, then you will have to replace
+CAsyncSocket::Accept as well as CSocket::Accept. This is necessary because
+CSocket::Accept directly calls CAsyncSocket::Accept. This can be accomplished by
+providing your own Accept function, called AcceptFix. It would be implemented
+just as the Accept function shown above. For example:
+
+     #if _MFC_VER &gt;= 0x0410 &amp;&amp; _MFC_VER &lt;= 0x0420
+
+     BOOL CMySocket::AcceptFix(CAsyncSocket&amp; rConnectedSocket,
+                               SOCKADDR* lpSockAddr, int* lpSockAddrLen)
+     {
+        ...
+        // IMPLEMENTATION IS THE SAME AS THE ONE SHOWN ABOVE
+        ...
+        return (hTemp != INVALID_SOCKET);
+     }
+
+     #endif // _MFC_VER
+
+Then provide a replacement for CSocket::Accept and modify it to call AcceptFix
+instead of CAsyncSocket::Accept. You can borrow the CSocket::Accept function
+from SOCKCORE.CPP and modify it as follows:
+
+     #if _MFC_VER &gt;= 0x0410 &amp;&amp; _MFC_VER &lt;= 0x0420
+
+     BOOL CMySocket::Accept(CAsyncSocket&amp; rConnectedSocket,
+                            SOCKADDR* lpSockAddr, int* lpSockAddrLen)
+     {
+       if (m_pbBlocking != NULL)
+       {
+         WSASetLastError(WSAEINPROGRESS);
+         return FALSE;
+       }
+
+       // &lt;===============  REPLACE THE FOLLOWING LINE
+       // while (!CAsyncSocket::Accept(rConnectedSocket, lpSockAddr,...
+       // &lt;===============  WITH THIS:
+
+       while (!AcceptFix(rConnectedSocket, lpSockAddr, lpSockAddrLen))
+       {
+         if (GetLastError() == WSAEWOULDBLOCK)
+         {
+           if (!PumpMessages(FD_ACCEPT))
+             return FALSE;
+         }
+         else
+           return FALSE;
+       }
+       return TRUE;
+     }
+
+     #endif // _MFC_VER
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in the Visual C++ 4.2b
+technology update.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMFC kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420fix kbWinsock kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

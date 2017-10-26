@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245465/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245465/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245465/","publisher":null,"image":null,"headline":"Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245465-xfor-configuring-message-filtering-on-the-internet-mail-service">Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245465
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP2
+Operating System(s): 
+Keyword(s): exc55sp2
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Mail Service in Microsoft Exchange Server 5.5 with Service Pack 2
+(SP2) or later installed has message filtering capabilities that you can
+configure within the Exchange Server Administrator program. Use the Message
+Filtering feature to add domains or users who are not allowed to deliver SMTP
+messages to your site.
+
+MORE INFORMATION
+================
+
+To configure Message Filtering to restrict delivery of SMTP messages to your
+site:
+
+1. Open the Internet Mail Service properties, and click the Connections tab.
+
+2. Click Message Filtering.
+
+3. Click Add.
+
+4. To prevent a specific user from delivering messages to your site, type the
+  user's alias and domain name in the following format:
+
+  "&lt;username&gt;@&lt;domainname&gt;.com" (without the quotation marks)
+
+5. To prevent all users in a specific domain from delivering messages to your
+  site, type the domain name in the following format:
+
+  "@&lt;domainname&gt;.com" (without the quotation marks)
+
+6. If you want the Internet Mail Service to automatically delete junk e-mail
+  messages, click to select the "Delete messages instead of moving to turf
+  directory" check box.
+
+7. If you want the messages to be saved in a "turf" folder, click to clear the
+  "Delete messages instead of moving to turf directory" check box, and manually
+  create the turf folder.
+
+8. Save the changes, then start and restart the Internet Mail Service for the
+  changes to take effect.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q193926 XFOR: TURFDIR Must Be Manually Created for Message Filtering
+
+  Q197289 XFOR: Internet Mail Service May Not Save Turfed Messages or Saves
+  Them to an Unexpected Location
+
+Additional query words: spam, spamming, filter, prevent, imc, IMS
+
+======================================================================
+Keywords          : exc55sp2 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+Version           : winnt:5.5 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

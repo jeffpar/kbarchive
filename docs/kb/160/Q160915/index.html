@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160915: WD97: Caption with Chapter Numbering Reset to 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160915: WD97: Caption with Chapter Numbering Reset to 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160915/","publisher":null,"image":null,"headline":"Q160915: WD97: Caption with Chapter Numbering Reset to 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160915-wd97-caption-with-chapter-numbering-reset-to-1">Q160915: WD97: Caption with Chapter Numbering Reset to 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160915
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Captions that include Chapter Numbers are reset to 1 following text formatted
+with any Heading style.
+
+For example
+-----------
+
+  This is the caption numbering expected: Heading 1 text
+                                               Figure 1-1
+
+                                          Heading 2 text
+                                               Figure 1-2
+
+  This is the caption numbering received: Heading 1 text
+                                               Figure 1-1
+
+                                          Heading 2 text
+                                               Figure 1-1 &lt;--- problem
+
+RESOLUTION
+==========
+
+To correct this problem, install Microsoft Word 97 Service Release 1 (SR- 1).
+Note, this problem will still occur with Heading 9 sytles in SR-1.
+
+WORKAROUND
+==========
+
+The Caption command on the Insert menu inserts a field similar to the
+following:
+
+  Figure {STYLEREF 1 \s}-{SEQ Figure \* ARABIC \s 1}
+
+NOTE: See the MORE INFORMATION section for how to view the caption fields.
+
+To work around the problem, modify the caption fields using one of the following
+methods.
+
+Method 1: Remove the 1 After the \s in the Caption Field
+--------------------------------------------------------
+
+Remove the 1 after the \s in the caption field for all levels except the first
+caption fields following the first heading levels.
+
+- Change the caption field for the first caption following all first level
+  headings (for example Heading 1):
+
+  Figure {STYLEREF 1 \s}-{SEQ Figure \* ARABIC \s 1}
+
+- Change the caption field for any other captions regardless of what heading
+  level it follows:
+
+  Figure {STYLEREF 1 \s}-{SEQ Figure \* ARABIC \s}
+
+Method 2: Replace "\s 1" Switches with the "\r 1" Switch
+--------------------------------------------------------
+
+Remove all "\s 1" switches in the caption fields and replace with the "\r 1"
+switch only on the first captions following all first level headings:
+
+- Change the caption field for the first caption following all first level
+  headings (for example Heading 1):
+
+  Figure {STYLEREF 1 \s}-{SEQ Figure \* ARABIC \r 1}
+
+- Change the caption field for any other captions regardless of what heading
+  level it follows:
+
+  Figure {STYLEREF 1 \s}-{SEQ Figure \* ARABIC}
+
+NOTE: The Insert Caption command inserts an "\s 1" (without the quotes) switch to
+each sequence (SEQ) field in the caption. If you add another caption after using
+any of the above methods, your changes are deleted and the "\s 1" is added back
+to all the caption SEQ fields. To avoid this problem, do not use the Caption
+option on the Insert menu. Instead, insert any additional captions using the
+following fields:
+
+  Figure {STYLEREF 1 \s} - {SEQ Figure \* ARABIC}
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+This problem was corrected in Microsoft Word 97 SR-1.
+
+For additional information about SR-1, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+
+
+MORE INFORMATION
+================
+
+To view the fields that comprise the caption, do one of the following:
+
+- On the Tools menu, click Options, and then click the View tab. Under Show,
+  click to select the Field Codes check box, and then click OK.
+
+  -or-
+
+- Press ALT+F9 on the keyboard to toggle the field codes on and off.
+
+Additional query words: SR1 release1 restart
+
+======================================================================
+Keywords          : kbualink97 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

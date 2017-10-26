@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127732/","publisher":null,"image":null,"headline":"Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127732-smtp-configuring-lan-manager-22c-ms-dos-client-w-tcpip">Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127732
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail Gateway to SMTP computer requires TCP/IP to be loaded (refer
+to page 2 of the "Administrator's Guide"). However, it is not required to load
+any other protocols on the dedicated workstation. Below are the configuration
+files for a properly configured Microsoft LAN Manager MS-DOS client using only
+TCP/IP.
+
+Boot files
+----------
+
+CONFIG.SYS:
+
+  DEVICE=C:\DOS\Himem.sys
+  DEVICE=C:\DOS\EMM386.EXE NOEMS
+  Buffers=15,0
+  Files=40
+  DOS=UMB
+  LASTDRIVE=Z
+  DOS=HIGH
+  DEVICE=C:\LM\DRIVERS\PROTMAN\PROTMAN.DOS /i:C:\LM
+  DEVICEHIGH /L:1,10000 =C:\LM\DRIVERS\ETHERNET\EXP16\DEPCA.DOS
+  DEVICEHIGH /L:1,4176 =C:\LM\DRIVERS\PROTOCOL\TCPIP\TCPDRV.DOS /I:C:\LM
+  DEVICEHIGH /L:2,2624 =C:\LM\DRIVERS\PROTOCOL\TCPIP\NEMM.DOS
+
+AUTOEXEC.BAT:
+
+  Prompt=$p$g
+  @REM ==== LANMAN 2.2 =======
+  SET PATH=C:\LM\NETPROG;c:\;c:\dos;%PATH%
+  LH C:\LM\DRIVERS\PROTOCOL\tcpip\umb.com
+  NET START WORKSTATION
+  LOAD TCPIP
+  NET LOGON
+  @REM ==== LANMAN 2.2 =======
+
+LAN Manager Files Found in C:\LM\*.INI
+--------------------------------------
+
+PROTOCOL.INI:
+
+  [PROTMAN]
+  DRIVERNAME = PROTMAN$
+  DYNAMIC = YES
+  PRIORITY = TCPIP
+
+  [TCPIP_XIF]
+  DRIVERNAME      = TCPIP$
+  IPADDRESS0  = 22 100 49 117
+  SUBNETMASK0    = 255 255 0 0
+  DEFAULTGATEWAY0 = 22 100 0 1
+  NBSESSIONS  = 2
+  ; the following two parameters added after documentation was completed
+  TCPSEGMENTSIZE  = 1450
+  TCPWINDOWSIZE   = 1450
+  LOAD            = tcptsr[c],tinyrfc[c],emsbfr[cr]
+  UNLOAD          = "unloadt /notsr[dc]"
+  BINDINGS    = "DEPCA_NIF"
+  LANABASE    = 0
+  FORCEPUSHBIT= 1
+
+  [DEPCA_NIF]
+  ; protocol.ini section for the DEC EtherWORKS (MC, LC, Turbo &amp; DEPCA)
+  ; Adapters
+
+     DriverName     = DEPCA$
+     MaxMulticast   = 12
+     MaxTransmits   = 32
+     AdapterName    = DE200
+     RamAddress     = 0xD000
+     :Interrupt     = 3
+
+  Interupt        = 5               ; for turbo board
+  TCPUTILS.INI
+  [TCPGLOBAL]
+  DRIVERNAME      = GLOBAL$
+  HOSTNAME        = LMUSER
+
+  [SOCKETS]
+  DRIVERNAME      = SOCKETS$
+  BINDINGS        = TCPIP_XIF
+  ; the following value changed from 8 to 4 (after documentation was
+  ; complete)
+  NUMSOCKETS  = 4
+  NUMTHREADS      = 32
+  POOLSIZE        = 3200
+  MAXSENDSIZE     = 1024
+  [TELNET]
+  DRIVERNAME      = TELNET$
+  BINDINGS        = TCPIP_XIF
+  NSESSIONS   = 2
+  MAX_OUT_SENDS   = 0
+
+LANMAN.INI:
+
+  ;*****************************************************************;
+  ;**                  Microsoft LAN Manager                      **;
+  ;**            Copyright(c) Microsoft Corp., 1992               **;
+  ;*****************************************************************;
+  [networks]
+  netservices = chknet, minses
+  [workstation]
+  wrkservices = encrypt,messenger
+  computername = Mrgateway
+  domain = mydomain
+  othdomains =
+  numdgrambuf = 3
+  lanroot = C:\LM
+  [netshell]
+  username = SMTPGATE
+  [version]
+  lan_manager = 2.2.c
+  [messenger]
+
+  [services]
+  chknet        = netprog\chknet.exe
+  minses        = netprog\minses.exe /n
+  workstation   = netprog\netwksta.exe
+  messenger     = services\msrv.exe
+  encrypt       = services\encrypt.exe
+
+Additional query words: MSClient
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

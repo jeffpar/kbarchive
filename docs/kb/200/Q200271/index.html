@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200271: INFO: How to Diagnose and Resolve Some Automation Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200271: INFO: How to Diagnose and Resolve Some Automation Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200271/","publisher":null,"image":null,"headline":"Q200271: INFO: How to Diagnose and Resolve Some Automation Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200271-info-how-to-diagnose-and-resolve-some-automation-errors">Q200271: INFO: How to Diagnose and Resolve Some Automation Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q200271</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">5.0</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbenv</span> <span class="n">kberrmsg</span> <span class="n">kbtool</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">01</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Learning</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">diagnose</span> <span class="k">and</span> <span class="n">resolve</span> <span class="n">some</span> <span class="n">automation</span> <span class="n">errors</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">may</span> <span class="n">be</span> <span class="n">useful</span> <span class="k">if</span> <span class="n">you</span> <span class="n">receive</span> <span class="m">429</span> <span class="k">and</span> <span class="m">438</span> <span class="n">error</span>
+<span class="n">messages</span> <span class="n">when</span> <span class="n">you</span> <span class="n">are</span> <span class="n">automating</span> <span class="n">an</span> <span class="n">ActiveX</span><span class="p">/</span><span class="n">COM</span> <span class="n">server</span> <span class="k">from</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Error</span> <span class="m">429</span>
+<span class="p">---------</span>
+
+<span class="n">Error</span> <span class="m">429</span> <span class="n">typically</span> <span class="n">occurs</span> <span class="n">when</span> <span class="n">code</span> <span class="n">tries</span> <span class="k">to</span> <span class="n">instantiate</span> <span class="n">an</span> <span class="n">object</span><span class="p">.</span> <span class="n">This</span> <span class="n">error</span>
+<span class="n">can</span> <span class="n">be</span> <span class="n">caused</span> <span class="k">in</span> <span class="n">many</span> <span class="n">ways</span><span class="p">.</span> <span class="n">The</span> <span class="n">following</span> <span class="k">list</span> <span class="n">includes</span> <span class="n">some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">most</span> <span class="n">common</span>
+<span class="n">scenarios</span> <span class="n">that</span> <span class="n">could</span> <span class="n">cause</span> <span class="n">this</span> <span class="n">error</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">License</span> <span class="n">information</span> <span class="n">for</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">component</span> <span class="n">is</span> <span class="k">not</span> <span class="n">present</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">component</span> <span class="n">is</span> <span class="n">missing</span> <span class="k">or</span> <span class="n">is</span> <span class="k">not</span> <span class="n">registered</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">DCOM</span> <span class="n">issue</span> <span class="nb">exists</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">Packaging</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="p">(</span><span class="n">PDW</span><span class="p">)</span> <span class="n">issue</span> <span class="nb">exists</span><span class="p">.</span>
+
+<span class="n">License</span> <span class="n">Information</span> <span class="n">for</span> <span class="n">a</span> <span class="n">Particular</span> <span class="n">Component</span> <span class="n">Is</span> <span class="k">Not</span> <span class="n">Present</span><span class="p">:</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="n">site</span> <span class="n">a</span> <span class="n">control</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">toolbox</span> <span class="n">onto</span> <span class="n">a</span> <span class="n">form</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">code</span> <span class="n">may</span> <span class="n">throw</span> <span class="n">the</span> <span class="n">following</span> <span class="m">429</span> <span class="n">error</span><span class="p">:</span>
+
+  <span class="n">License</span> <span class="n">Information</span> <span class="n">For</span> <span class="n">This</span> <span class="n">Component</span> <span class="k">Not</span> <span class="n">Found</span><span class="p">.</span> <span class="n">You</span> <span class="k">Do</span> <span class="k">Not</span> <span class="n">Have</span> <span class="n">An</span>
+  <span class="n">Appropriate</span> <span class="n">License</span> <span class="k">To</span> <span class="n">Use</span> <span class="n">This</span> <span class="n">Functionality</span> <span class="k">In</span> <span class="n">The</span> <span class="n">Design</span> <span class="n">Environment</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">error</span> <span class="n">occurs</span> <span class="n">when</span> <span class="n">the</span> <span class="n">problem</span> <span class="n">computer</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span> <span class="n">appropriate</span>
+<span class="n">design</span><span class="p">-</span><span class="n">time</span> <span class="n">license</span> <span class="n">for</span> <span class="n">the</span> <span class="n">control</span> <span class="n">that</span> <span class="n">is</span> <span class="n">being</span> <span class="n">added</span><span class="p">.</span> <span class="n">For</span> <span class="n">additional</span>
+<span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span>
+<span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q194751</span> <span class="n">FILE</span><span class="p">:</span> <span class="n">VB6Cli</span><span class="p">.</span><span class="n">exe</span> <span class="n">Fixes</span> <span class="n">License</span> <span class="n">Problems</span> <span class="k">with</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span>
+
+<span class="n">A</span> <span class="n">Component</span> <span class="n">Is</span> <span class="n">Missing</span> <span class="k">or</span> <span class="n">Is</span> <span class="k">Not</span> <span class="n">Registered</span><span class="p">:</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">program</span> <span class="n">after</span> <span class="n">you</span> <span class="n">distribute</span> <span class="n">it</span><span class="p">,</span> <span class="n">the</span> <span class="n">program</span>
+<span class="n">throws</span> <span class="n">the</span> <span class="n">following</span> <span class="nf">run</span><span class="p">-</span><span class="n">time</span> <span class="n">error</span> <span class="m">429</span><span class="p">:</span>
+
+  <span class="n">ActiveX</span> <span class="n">component</span> <span class="n">can</span><span class="s1">'t create object.
+
+The run-time error 429 usually occurs if you do not include one or more of the
+components that your program requires or uses. One common example is the File
+System object that is described in the following Microsoft Knowledge Base
+article:
+
+  Q247979 PRB: Error 429 Using MSDN File System Object Programming Example
+
+The run-time error 429 can also occur if you do not distribute the correct Visual
+Basic runtime files that are needed by your program executable (.exe) file. Make
+certain that you are distributing the correct runtime files by creating a Setup
+package for your program by using the Package and Deployment Wizard (PDW).
+
+Another way that the run-time error 429 occurs is when one of the components that
+is needed by the program is not registered correctly. The best way to
+troubleshoot what line of code is causing this error is to add tracing code. The
+recommended method is to write to a file (or the event log) instead of
+generating message boxes. After you determine which line of code is throwing
+this error, make certain that the problem component is registered. For example,
+you narrow down the error to the following line of code:
+
+  Dim fs as Scripting.FileSystemObject
+  Set fs = New Scripting.FileSystemObject      '</span> <span class="n">this</span> <span class="n">line</span> <span class="n">throws</span> <span class="n">error</span> <span class="m">429</span>
+
+<span class="n">The</span> <span class="n">File</span> <span class="nf">System</span> <span class="n">object</span> <span class="n">is</span> <span class="n">contained</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Scrrun</span><span class="p">.</span><span class="n">dll</span> <span class="n">file</span><span class="p">.</span> <span class="n">Make</span> <span class="n">certain</span> <span class="n">that</span>
+<span class="n">this</span> <span class="n">DLL</span> <span class="n">file</span> <span class="n">is</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">target</span> <span class="n">computer</span><span class="p">,</span> <span class="k">and</span> <span class="n">that</span> <span class="n">it</span> <span class="n">is</span> <span class="n">correctly</span>
+<span class="n">registered</span><span class="p">.</span>
+
+<span class="n">A</span> <span class="n">DCOM</span> <span class="n">Issue</span> <span class="n">Exists</span><span class="p">:</span>
+
+<span class="n">The</span> <span class="n">attempt</span> <span class="k">to</span> <span class="n">access</span> <span class="n">a</span> <span class="n">DCOM</span> <span class="n">server</span> <span class="k">from</span> <span class="n">a</span> <span class="n">remote</span><span class="p">-</span><span class="n">client</span> <span class="n">program</span> <span class="n">throws</span> <span class="n">a</span> <span class="n">runtime</span>
+<span class="n">error</span> <span class="m">429.</span> <span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">troubleshoot</span> <span class="n">this</span> <span class="n">issue</span><span class="p">,</span>
+<span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">numbers</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">articles</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+<span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q177394</span> <span class="n">HOWTO</span><span class="p">:</span> <span class="n">Troubleshoot</span> <span class="nf">Run</span><span class="p">-</span><span class="n">Time</span> <span class="n">Error</span> <span class="s1">'429'</span> <span class="k">in</span> <span class="n">DCOM</span> <span class="n">Applications</span>
+
+  <span class="n">Q183607</span> <span class="n">HOWTO</span><span class="p">:</span> <span class="n">Configure</span> <span class="n">DCOM</span> <span class="n">for</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Using</span> <span class="n">DCOMCNFG</span><span class="p">.</span><span class="n">EXE</span>
+
+<span class="n">A</span> <span class="n">Packaging</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="p">(</span><span class="n">PDW</span><span class="p">)</span> <span class="n">Issue</span> <span class="n">Exists</span><span class="p">:</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">get</span> <span class="n">this</span> <span class="n">error</span> <span class="n">when</span> <span class="n">you</span> <span class="n">are</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">PDW</span><span class="p">,</span> <span class="n">either</span> <span class="n">by</span> <span class="n">trying</span> <span class="k">to</span>
+<span class="n">start</span> <span class="n">the</span> <span class="n">wizard</span><span class="p">,</span> <span class="k">or</span> <span class="n">by</span> <span class="n">clicking</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">or</span> <span class="n">Deploy</span> <span class="n">button</span><span class="p">.</span> <span class="n">For</span> <span class="n">additional</span>
+<span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">troubleshoot</span> <span class="n">this</span> <span class="n">issue</span> <span class="k">with</span> <span class="n">the</span> <span class="n">PDW</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span>
+<span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q255726</span> <span class="n">PRB</span><span class="p">:</span> <span class="n">Error</span> <span class="m">429</span> <span class="n">Occurs</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Use</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span>
+
+<span class="nf">Run</span> <span class="n">Time</span> <span class="n">Error</span> <span class="m">438</span> <span class="p">-</span> <span class="n">Object</span> <span class="n">Doesn</span><span class="s1">'t Support this Property or Method
+-------------------------------------------------------------------
+
+The most common cause of error 438 is not maintaining binary compatibility
+between successive versions of your components. Each COM interface has an
+associated GUID that is called an interface ID (IID). Each coclass has an
+associated GUID that is called class ID (CLSID). When you compile an ActiveX
+component in Visual Basic, the CLSIDs and IIDs are compiled into the component'</span><span class="n">s</span>
+<span class="n">type</span> <span class="n">library</span><span class="p">.</span>
+
+<span class="n">Example</span><span class="p">:</span>
+
+<span class="n">A</span> <span class="n">program</span> <span class="n">that</span> <span class="n">consists</span> <span class="k">of</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">client</span> <span class="k">and</span> <span class="n">an</span> <span class="n">ActiveX</span> <span class="n">DLL</span> <span class="n">is</span> <span class="n">released</span>
+<span class="k">to</span> <span class="n">the</span> <span class="n">user</span> <span class="n">community</span><span class="p">.</span> <span class="n">At</span> <span class="n">a</span> <span class="n">later</span> <span class="n">time</span><span class="p">,</span> <span class="n">additional</span> <span class="n">functionality</span> <span class="n">is</span> <span class="k">to</span> <span class="n">be</span> <span class="n">added</span>
+<span class="k">to</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">component</span><span class="p">.</span> <span class="n">The</span> <span class="n">necessary</span> <span class="n">modifications</span> <span class="n">are</span> <span class="n">made</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">ActiveX</span> <span class="n">DLL</span>
+<span class="n">is</span> <span class="n">compiled</span> <span class="n">without</span> <span class="n">maintaining</span> <span class="n">binary</span> <span class="n">compatibility</span><span class="p">.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">is</span> <span class="n">released</span><span class="p">,</span>
+<span class="n">the</span> <span class="n">client</span> <span class="n">that</span> <span class="n">is</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">will</span> <span class="n">throw</span> <span class="nf">run</span> <span class="n">time</span> <span class="n">error</span> <span class="m">438.</span> <span class="n">The</span>
+<span class="n">reason</span> <span class="n">this</span> <span class="n">occurs</span> <span class="n">is</span> <span class="n">that</span> <span class="n">when</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">was</span> <span class="n">compiled</span><span class="p">,</span> <span class="n">a</span> <span class="n">fresh</span> <span class="k">set</span> <span class="k">of</span> <span class="n">GUIDs</span> <span class="n">was</span>
+<span class="n">compiled</span> <span class="n">into</span> <span class="n">the</span> <span class="n">DLL</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">client</span> <span class="n">has</span> <span class="n">no</span> <span class="n">reference</span> <span class="k">to</span> <span class="n">these</span> <span class="n">new</span> <span class="n">GUIDs</span><span class="p">.</span> <span class="n">This</span>
+<span class="n">is</span> <span class="n">why</span> <span class="n">it</span> <span class="n">is</span> <span class="n">important</span> <span class="k">to</span> <span class="n">maintain</span> <span class="n">binary</span> <span class="n">compatibility</span> <span class="k">with</span> <span class="n">the</span> <span class="n">last</span><span class="p">-</span><span class="n">released</span>
+<span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">component</span> <span class="n">when</span> <span class="n">you</span> <span class="n">are</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">release</span> <span class="n">a</span> <span class="n">newer</span> <span class="k">version</span><span class="p">.</span>
+
+<span class="n">Another</span> <span class="n">example</span> <span class="n">for</span> <span class="n">the</span> <span class="n">runtime</span> <span class="n">error</span> <span class="m">438</span> <span class="n">would</span> <span class="n">be</span> <span class="n">including</span> <span class="n">the</span> <span class="n">wrong</span> <span class="k">version</span> <span class="k">of</span>
+<span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Components</span> <span class="p">(</span><span class="n">MDAC</span><span class="p">)</span> <span class="k">in</span> <span class="n">the</span> <span class="n">distribution</span> <span class="k">package</span><span class="p">.</span> <span class="n">For</span>
+<span class="n">example</span><span class="p">,</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">5</span> <span class="n">program</span> <span class="n">is</span> <span class="n">built</span> <span class="n">on</span> <span class="n">Microsoft</span> <span class="n">Windows</span>
+<span class="m">2000</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">2</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">latest</span> <span class="k">version</span> <span class="k">of</span> <span class="n">MDAC</span> <span class="n">that</span> <span class="n">is</span> <span class="n">present</span> <span class="p">(</span><span class="k">version</span>
+<span class="m">2.6</span><span class="p">).</span> <span class="n">When</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">is</span> <span class="n">built</span><span class="p">,</span> <span class="n">an</span> <span class="n">earlier</span> <span class="k">version</span> <span class="k">of</span> <span class="n">MDAC</span> <span class="p">(</span><span class="k">version</span> <span class="m">2.5</span><span class="p">)</span>
+<span class="n">is</span> <span class="n">used</span> <span class="p">(</span><span class="n">unless</span> <span class="n">MDAC</span> <span class="m">2.6</span> <span class="n">is</span> <span class="n">downloaded</span><span class="p">),</span> <span class="n">causing</span> <span class="n">an</span> <span class="n">error</span> <span class="m">438</span> <span class="k">to</span> <span class="n">be</span> <span class="n">thrown</span> <span class="n">when</span>
+<span class="n">the</span> <span class="n">distributed</span> <span class="n">program</span> <span class="n">is</span> <span class="nf">run</span><span class="p">.</span>
+
+<span class="n">Another</span> <span class="n">scenario</span> <span class="n">would</span> <span class="n">be</span> <span class="n">misspelled</span> <span class="n">method</span> <span class="k">or</span> <span class="n">property</span> <span class="n">names</span><span class="p">,</span> <span class="k">and</span> <span class="n">this</span> <span class="n">scenario</span>
+<span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">article</span><span class="p">:</span>
+
+  <span class="n">Q193265</span> <span class="n">PRB</span><span class="p">:</span> <span class="n">VB</span> <span class="n">Doesn</span><span class="s1">'t Generate Compile Error for Misspelled Methods
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

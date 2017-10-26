@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132786/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132786/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132786/","publisher":null,"image":null,"headline":"Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132786-known-issues-with-ms-print-agent-for-netware-mspsrv">Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132786
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork kbprint 3rdpartynet win95 kbPrinting kb3rdPartyNetClientkbfixlist
+Last Modified: 28-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience one or more of the following problems with Microsoft Print
+Agent for NetWare Networks (MSPSRV):
+
+Wrong Font Size Used on Print Server Tab in Printer Properties
+--------------------------------------------------------------
+
+When you click the Print Server tab in the Printer Properties dialog box, the
+text extends beyond the border of the dialog box. The dialog box is still
+usable.
+
+Error Message: Could Not Enumerate Print Servers on this Server
+---------------------------------------------------------------
+
+When you click "Enable Microsoft Print Server for NetWare," you receive the
+following error message:
+
+  Could not enumerate print servers on this server.
+
+When you receive this error message, you are automatically logged off the NetWare
+server and your NetWare connections are lost. You must restart Windows 95 and
+log on again to restore your connections.
+
+
+Cannot Activate Print Server List Box
+-------------------------------------
+
+In order to activate the Print Server list box, you must click the NetWare Server
+list box and then click your NetWare server. You must do this even if the
+appropriate NetWare server appears in the box.
+
+Preferred Server Listed Twice in Network Neighborhood
+-----------------------------------------------------
+
+MSPSRV causes the server on which the print queue resides to appear in Network
+Neighborhood. If this is also your preferred server, you may see it listed in
+Network Neighborhood twice.
+
+You are Prompted for Password to NetWare Server
+-----------------------------------------------
+
+Each time you access a NetWare server, you are asked for the password. This
+occurs even when you are already logged on to the NetWare server.
+
+
+Lost Connection to NetWare Server When Printing
+-----------------------------------------------
+
+If MSPSRV is enabled and you send multiple print jobs to a NetWare print server,
+you lose the connection to the NetWare server.
+
+
+Wrong Form Printed
+------------------
+
+All print jobs sent to a NetWare server print queue revert to form zero, even if
+a different form number or name is used.
+
+For additional information about this problem, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q148904 NetWare Print Jobs Always Use Form Zero
+
+
+Must Restart Computer After Enabling or Disabling MSPSRV
+--------------------------------------------------------
+
+After you enable or disable MSPSRV, you must restart your computer.
+
+
+Not All NetWare Print Servers Enumerated
+----------------------------------------
+
+A Windows 95-based workstation with MSPSRV enabled may not enumerate all of the
+NetWare print servers on the list.
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 and OEM
+Service Release 2 (OSR2). An update to address this problem is now available,
+but is not fully regression tested and should be applied only to computers
+experiencing this specific problem. Unless you are severely impacted by this
+specific problem, Microsoft does not recommend implementing this update at this
+time. Contact Microsoft Technical Support for additional information about the
+availability of this update.
+
+Use of the Microsoft Print Agent for NetWare (MSPSRV) is not supported under
+Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, see the following Microsoft Web site:
+
+  http://www.microsoft.com/windows
+
+
+Additional query words: novell MSPSRV.exe
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbprint 3rdpartynet win95 kbPrinting kb3rdPartyNetClient kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

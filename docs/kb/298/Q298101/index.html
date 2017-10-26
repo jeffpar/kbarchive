@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/298/Q298101/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/298/Q298101/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/298/Q298101/","publisher":null,"image":null,"headline":"Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q298101-world-atlas-2001-internet-explorer-error-when-you-start-atlas">Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q298101
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 01-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta Interactive World Atlas 2001, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Encarta Interactive World Atlas, you may receive the
+following error message:
+
+  Internet Explorer Script Error
+
+  Line: 144
+  Char: 5
+  Error: Class not registered
+  Code: 0
+  URL: MsRef://pid=vg=00/cmd=Article/id=631502735
+
+CAUSE
+=====
+
+This behavior can occur when the following conditions are true:
+
+1. The computer has Microsoft Internet Explorer version 5.5.
+
+2. DirectX version 8a has been installed.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, follow the steps below in the order given.
+
+Step 1: Uninstall Internet Explorer 5.5
+---------------------------------------
+
+You can uninstall Internet Explorer 5.5 from the following Windows operating
+systems:
+
+- Microsoft Windows 95
+
+- Microsoft Windows 98
+
+- Microsoft Windows 98 Second Edition
+
+- Microsoft Windows NT 4.0
+
+- Microsoft Windows 2000
+
+NOTE: You cannot uninstall Internet Explorer 5.5 from Microsoft Windows
+Millennium Edition (Windows Me).
+
+NOTE: You must have administrative privileges to install or uninstall Internet
+Explorer 5.5 in Windows NT 4.0 and Windows 2000.
+
+To uninstall Internet Explorer, follow these steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Add/Remove Programs.
+
+2. On the Install/Uninstall tab, click "Microsoft Internet Explorer 5 and
+  Internet Tools" in the list of installed programs, and then click Add/Remove.
+
+NOTE: If "Microsoft Internet Explorer 5 and Internet Tools" is not included in
+the list of installed programs, run Setup.exe from the "Internet Explorer\Setup"
+folder. If you use Windows 2000, run the "w2kexcp.exe /u" (without the quotation
+marks) command from the "Internet Explorer\IE Uninstall" folder.
+
+3. Click "Restore the previous Windows configuration" or click Advanced to
+  specify any additional components that you want to remove, and then click OK.
+
+4. In the "Internet Explorer 5 and Internet Tools Setup" dialog box or
+  Maintenance mode, click OK to restore the previous version of Internet
+  Explorer and shared components.
+
+5. When you are prompted to verify that you want to restore the previous
+  version, click Yes.
+
+6. When you are prompted to restart Windows, click Restart Windows.
+
+If you have installed DirectX 8a before Internet Explorer 5.5, then you will need
+to follow the steps below. You can then remove and reinstall Internet Explorer
+5.5.
+
+Rename DXTRANS.DLL and DXTMSFT.DLL:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "dxtrans.dll" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer, and then click Find Now.
+
+4. In the list of found files, right-click the dxtrans.dll file, and then click
+  Rename.
+
+5. Type "dxtrans.old" (without the quotation marks), and then press ENTER.
+
+6. Repeat the steps for dxtmsft.dll
+
+7. Close all open windows on the desktop, and then restart the computer.
+
+
+Step 2: Clean Boot Your System
+------------------------------
+
+To clean boot your computer, use the appropriate method for your version of
+Windows.
+
+Windows ME
+
+For additional information about how to perform a clean boot, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+Windows 98
+
+Run the System Configuration Utility (Msconfig.exe) to perform a clean boot. To
+do this, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+  click OK.
+
+3. Click the General tab. Click Selective Startup, and then click to clear the
+  following check boxes:
+   - Process Config.sys File
+
+   - Process Autoexec.bat File
+
+   - Process Winstart.bat File (if available)
+
+   - Process Win.ini File
+
+   - Load Startup Group Items
+
+4. Click OK. When you are prompted to restart the computer, do so.
+
+For additional information about how to clean boot Windows 98, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+
+NOTE: To restore your original startup configuration, rerun the System
+Configuration Utility (Msconfig.exe), click the General tab, and then click
+Normal Startup.
+
+Windows 95
+
+1. Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key. From the Startup menu, select Command Prompt Only.
+
+2. At the command prompt, type "win" (without the quotation marks), and then
+  press ENTER. Press and hold down the SHIFT key until the Windows startup
+  sequence is completed.
+
+3. Turn off any anti-virus or disk tool programs that are installed on the
+  computer.
+
+  For information about how to turn off these programs, see the printed or
+  online documentation for the program.
+
+4. Quit all running programs except Explorer and Systray. To do this, press
+  CTRL+ALT+DELETE, click the program that you want to quit, and then click End
+  Task.
+
+  If you receive a message stating that the program is busy or not responding,
+  click End Task again.
+
+5. Repeat step 4 to quit all programs except Explorer and Systray.
+
+For additional information about how to clean boot Windows 95, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+
+NOTE: To restore your original Startup options, restart the computer normally,
+and then enable any anti-virus or disk tool programs installed on the computer.
+For information about how to enable these programs, see the printed or online
+documentation for the program.
+
+Step 3: Install Internet Explorer 5.5
+-------------------------------------
+
+1. Insert the Installations &amp; Resources disc into the CD-ROM drive. Press
+  and hold down the SHIFT key as you insert the compact disc to prevent the
+  Setup program from starting automatically.
+
+2. Click Start, point to Find, and then click "Files or Folders".
+
+3. In the Named box, type "ie5setup.exe" (without the quotation marks)
+
+4. In the "Look in" box, select the CD-ROM drive.
+
+5. Click Find Now.
+
+6. In the search results window, double-click "ie5setup.exe", and follow the
+  prompts to install it.
+
+
+Additional query words: multi multi-media media mm
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

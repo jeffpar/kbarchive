@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/315/Q315535/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/315/Q315535/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/315/Q315535/","publisher":null,"image":null,"headline":"Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q315535-bug-problems-when-you-rebuild-static-and-dynamic-crt-libraries">Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q315535
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCRT
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to rebuild the Visual C++ 6.0 C Runtime (CRT) Libraries (Static or
+Dynamic), you may experience some problems.
+
+NOTE: Microsoft does not recommend rebuilding the CRT libraries. Microsoft may
+not be able to provide support for problems encountered when using rebuilt CRT
+libraries. You are not permitted to redistribute a rebuilt DLL with the same
+name used by Microsoft.
+
+CAUSE
+=====
+
+Makefile contains extra lines that cause errors during rebuild. Also, Makefile
+contains entries that are not valid.
+
+RESOLUTION
+==========
+
+To work around these errors, you must perform the following procedures:
+
+Prerequisites
+-------------
+
+1. The default installation of Visual C++ 6.0 does not install the CRT Source
+  code directory. If you copy this directory manually from the installation
+  CD-ROM, the directory tree will not be set properly. To install the CRT
+  Source directory, follow these steps:
+
+  a. On the Start menu, click Control Panel, and then click Add or Remove
+     Programs.
+
+  b. On the Currently Installed Programs list, click Microsoft Visual C++ 6.0.
+
+  c. Click Change/Remove.
+
+  d. In the Visual C++ 6.0 Setup dialog box, click Add/Remove.
+
+  e. Click to select CRT Source Code.
+
+  f. Click OK.
+
+2. Manually copy the following files from the Visual C++ installation CD-ROM to
+  C:\Program Files\Microsoft Visual Studio\Vc98\Crt\Src:
+
+   - Makefile
+   - Makefile.inc
+   - Makefile.sub
+
+  NOTE: By default, Visual C++ is installed in the C:\Program Files\Microsoft
+  Visual Studio folder. If you have installed Visual C++ in another location,
+  make sure that you modify the path in all of the examples in this article.
+
+3. Change the file attributes of Makefile in C:\Program Files\Microsoft Visual
+  Studio\Vc98\Crt\Src. To do this, follow these steps:
+
+  a. In Windows Explorer, right-click Makefile, and then click Properties.
+
+  b. Click to clear the check box for the Read-only file attribute.
+
+  c. Click OK.
+
+4. In a text editor such as Notepad, make the following changes to Makefile:
+
+  a. Change the three lines that start at line 38 so that they resemble the
+     following sample code:
+
+  #!if "$(V6TOOLS)"==""
+  V6TOOLS=C:\Program Files\Microsoft Visual Studio\vc98
+  #!endif  
+
+     NOTE: Do not place double-quotes around the path designation.
+
+  b. By default, line 331 appears as follows:
+
+  RC_INCS=-I$(V6TOOLS)\include
+
+If the name of your Visual C++ 6.0 installation directory contains spaces, then
+you must change line 331 by adding double quotes as follows:
+
+RC_INCS=-I"$(V6TOOLS)\include"
+
+  c. Search for every instance of Winver.h in Makefile, and then use the #
+     symbol to comment out each line that includes Winver.h, as shown in the
+     following sample code:
+
+  # $(V6TOOLS)\include\winver.h \ 
+
+5. Save your changes to Makefile, and then close the text editor.
+
+Steps to Rebuild the Libraries
+------------------------------
+
+The environment must be configured properly before you can rebuild Makefile. To
+configure the environment, and then rebuild Makefile, follow these steps:
+
+1. If the Visual C++ environment variables are not set, then run the following
+  batch file:
+
+  C:\Program Files\Microsoft Visual Studio\Vc98\Bin\Vcvars32.bat
+
+  NOTE: You may have to increase the environment space if your operating system
+  is Microsoft Windows 95, Microsoft Windows 98, or Microsoft Windows
+  Millennium Edition (Windows Me). For additional information, click the
+  article number below to view the article in the Microsoft Knowledge Base:
+
+  Q248802 PRB: Vcvars32.bat Generates Out of Environment Message
+
+  NOTE: If your computer has multiple versions of the C++ compiler (Cl.exe), run
+  Vcvars32.bat to avoid unexpected results that may occur if you use the Visual
+  C++ .NET compiler instead of the Visual C++ 6.0 compiler.
+
+2. At a command prompt, go to the C:\Program Files\Microsoft Visual
+  Studio\Vc98\Crt\Src directory, and then run the command NMAKE. NMAKE builds
+  all of the static and dynamic libraries. The libraries are placed in the
+  C:\Program Files\Microsoft Visual Studio\Vc98\Crt\Src\Build\Intel directory.
+
+  NOTE: You can run the command Bldnt.cmd instead of NMAKE. However, if you are
+  building Makefile on a computer running Windows 95, Windows 98, or Windows
+  Me, then you must run the batch file Bldwin95.bat instead of Bldnt.cmd.
+
+By default, Makefile builds Msvcrt.dll as _sample_.dll, Msvcrtd.dll as
+_sampld_.dll, Msvcrti.dll as _sample_i.dll, and so on.
+
+Makefile contains the following entries for the default names. If you want to
+change the default library names, change them in Makefile first. Be careful
+about your choice of names because some names have leading underscores and you
+must find the corresponding names in other files.
+
+- RETAIL_DLL_NAME=_sample_
+- RETAIL_LIB_NAME=_sample_
+- RETAIL_DLLCPP_NAME=sample_p
+- RETAIL_LIBCPP_NAME=sample_p
+- RETAIL_DLLIOS_NAME=sample_i
+- RETAIL_LIBIOS_NAME=sample_i
+- DEBUG_DLL_NAME=_sampld_
+- DEBUG_LIB_NAME=_sampld_
+- DEBUG_DLLCPP_NAME=sampld_p
+- DEBUG_LIBCPP_NAME=sampld_p
+- DEBUG_DLLIOS_NAME=sampld_i
+- DEBUG_LIBIOS_NAME=sampld_i
+
+The following are the corresponding .rc and .def files with the default names:
+
+- Sampld_i.def
+- Sampld_p.def
+- Sample_i.def
+- Sample_i.rc
+- Sample_p.def
+- Sample_p.rc
+- _sample_.rc
+- _sample_.def
+- _sampld_.def
+
+These files are located in the following directories:
+
+- C:\Program Files\Microsoft Visual Studio\Vc98\Crt\Src
+
+- C:\Program Files\Microsoft Visual Studio\Vc98\Crt\Src\Intel
+
+You can rename these files to the names that you want. To do this, open the
+individual files, one at a time, and then change the corresponding names in the
+files to reflect the new names that you give to the files themselves. For
+example, if you want to change the default library name, Open _sample_.def. The
+file has the following line:
+
+  LIBRARY _SAMPLE_
+
+Modify that line to the library name that you want to use, such as the
+following:
+
+LIBRARY &lt;I BRACKET="YES"&gt;mycrtlibname&lt;/I&gt;
+
+When you finish building the library, your application links to the resulting
+import library, &lt;mycrtlibname&gt;.lib.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q234622 PRB: VC++ 6.0 Setup Does Not Copy the CRT Make Files
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCRT 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

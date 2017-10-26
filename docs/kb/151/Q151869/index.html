@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151869/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151869/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151869/","publisher":null,"image":null,"headline":"Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151869-prb-incorrect-usage-of-csinglelock-may-lock-up-mutex-object">Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151869
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.1
+Operating System(s): 
+Keyword(s): kbMFC kbThread kbVC410 kbGrpDSMFCATL
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CSingleLock class can be used with a CMutex object. An attempt to free the
+Mutex object by making a call to the documented function
+CSingleLock::Unlock(LONG, LPLONG) locks up the Mutex. The Mutex is not released
+even when the CSingleLock object is destroyed.
+
+Instead, the call to CSingleLock::Unlock(void) successfully frees the Mutex.
+
+CAUSE
+=====
+
+There is a Boolean variable kept in the class CSingleLock - m_bAcquired. This
+variable keeps track of the state of the synchronization object. In the case of
+Mutexes, a value of TRUE (.T.) means that the Mutex object is owned by a thread.
+The variable is set to FALSE (.F.) when the Mutex is freed.
+
+There are two versions of CSingleLock::Unlock and two versions for
+CSyncObject::Unlock. One version takes no arguments, while the other one takes
+two: LONG and LPLONG. CSingleLock::Unlock makes a call to CSyncObject::Unlock
+only if the m_bAcquired member of CSingleLock is set to TRUE.
+
+Of the two versions of CSingleLock::Unlock, the latter version, with two
+arguments, should be used only with CSingleLock associated with CSemaphore
+objects. When used on a CSingleLock object associated with a CMutex, it just
+returns TRUE. This value is interpreted by CSingleLock::Unlock as though the
+object got freed and it sets its m_bAcquired member to FALSE. This causes the
+Mutex to lock up, because any future calls to CSingleLock::Unlock see
+m_bAcquired to be FALSE and the call to CSyncObject::Unlock is not made. When
+CSingleLock's destructor gets called, it calls Unlock. However, the same
+sequence of events prevents the Mutex from being freed.
+
+RESOLUTION
+==========
+
+The first version of CSingleLock::Unlock, the one that takes no arguments,
+should be used. This calls CSyncObject::Unlock(void). This is a virtual function
+that calls CMutex::Unlock, that, in turn, calls ::ReleaseMutex to free the Mutex
+object.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+The following code demonstrates the problem:
+
+     //.......
+          CSingleLock* sLock = new CSingleLock (&amp;GlobalMutex);
+          sLock-&gt;Lock();
+          //...
+          sLock-&gt;Unlock(1);
+          //...
+          delete sLock;
+     //.......
+
+  This code should be changed to:
+
+     //......
+          CSingleLock* sLock = new CSingleLock (&amp;GlobalMutex);
+          sLock-&gt;Lock();
+          //....
+          sLock-&gt;Unlock();
+          //...
+          delete sLock;
+     //.......
+
+Additional query words: 4.10
+
+======================================================================
+Keywords          : kbMFC kbThread kbVC410 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271275/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271275/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271275/","publisher":null,"image":null,"headline":"Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271275-xadm-event-ids-11506-or-11508-with-error-0x2740-are-logged">Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271275
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Exchange Server information store, some or all of the
+following event ID messages may be logged in the Application event log:
+
+  Event Type: Error
+  Event Source: MSExchange Pop3 Interface
+  Event Category: Configuration
+  Event ID: 11508
+  Description:
+  Accept clients on POP3 interface failed in function HrRegisterProtocol with
+  error 0x2740.
+
+  Event Type: Error
+  Event Source: MSExchangeIS
+  Event Category: General
+  Event ID: 1194
+  Description:
+  Accept clients on external interface POP3 failed with error 0x80004005.
+
+  Event Type: Error
+  Event Source: MSExchange NNTP Interface
+  Event Category: Configuration
+  Event ID: 11506
+  Description:
+  Accept clients on NNTP interface failed in function HrRegisterProtocol with
+  error 0x2740.
+
+  Event Type: Error
+  Event Source: MSExchangeIS
+  Event Category: General
+  Event ID: 1194
+  Description:
+  Accept clients on external interface NNTP failed with error 0x80004005.
+
+  Event Type: Error
+  Event Source: MSExchange IMAP4 Interface
+  Event Category: Configuration
+  Event ID: 11506
+  Description:
+  Accept clients on IMAP4 interface failed in function HrRegisterProtocol with
+  error 0x2740.
+
+  Event Type: Error
+  Event Source: MSExchangeIS
+  Event Category: General
+  Event ID: 1194
+  Description:
+  Accept clients on external interface IMAP4 failed with error 0x80004005.
+
+NOTE: If the error code 0x2740 is not present in the event ID 11506 or event ID
+11508 message, then this article does not describe the issue you are
+experiencing.
+
+CAUSE
+=====
+
+This issue can occur if another program is using the Transmission Control
+Protocol (TCP) port that the information store uses for the corresponding
+protocol. If a program is already using port 110, 119 or 143, the information
+store is unable to open these ports for the Post Office Protocol, version 3
+(POP3), Network News Transport Protocol (NNTP) or Internet Message Access
+Protocol, version 4rev1 (IMAP4) protocols respectively.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit the program or service that is using the ports that
+the information store uses, or configure the program to use different ports.
+
+MORE INFORMATION
+================
+
+You can use the Netstat.exe utility to display the ports that are in use on the
+Exchange Server computer. To do so:
+
+1. Open a command prompt, and then run the following command:
+
+  netstat -an
+
+2. In the Local Address column, look for an Internet protocol (IP) address and
+  port combination that ends with the port in question.
+
+For example, if you receive an error message that indicates that the information
+store is unable to register the POP3 port (110), stop the Information Store
+service, run netstat -an, and then look in the Local Address column for a line
+ending in ":110". This line indicates that port 110 is currently in use.
+
+
+Additional query words: proxy socket
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

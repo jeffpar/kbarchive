@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111536: PC Gen: Microsoft Mail and Virus Security | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111536: PC Gen: Microsoft Mail and Virus Security" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111536/","publisher":null,"image":null,"headline":"Q111536: PC Gen: Microsoft Mail and Virus Security","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111536-pc-gen-microsoft-mail-and-virus-security">Q111536: PC Gen: Microsoft Mail and Virus Security</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111536
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0a,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+The importance of data security and protecting against virus infection is
+of paramount importance to any user or network administrator. Viruses are a
+real threat to the integrity of data. However, with some forethought and
+care, users can easily protect their computers and data from infection.
+
+What Is a Virus?
+----------------
+
+A virus may fall into any one of several different classes: Trojan Horse,
+worm, boot-sector infector, or others. Some viruses infect existing
+programs to alter their behavior, others actively destroy data, while some
+perform actions to storage devices that render their stored data
+inaccessible. All have one distinct common trait: a virus is a section of
+code that, like any other program, cannot perform its function until
+executed. This trait is important to keep in mind when preparing to install
+virus safeguards.
+
+Can a Virus Be Transmitted Through a Mail Message?
+--------------------------------------------------
+
+First, an overview of the Microsoft Mail messaging system is in order. When
+a user creates a Mail message, the Mail system creates a passive (non-
+executing) data file. This file is also encrypted to ensure the security of
+the Mail system, thus guarding against "hacking" to get at a message[ASCII 146]s
+contents. The message is secure from the time it is transmitted until the
+receiver deletes it. An attachment to this message, which can be any
+legitimate MS-DOS file, is handled in much the same manner. In summary, a
+Mail message[ASCII 146]s contents and its attachments are secure from the system
+within an "envelope" created by the Mail system. While in this state, the
+data is inaccessible by the system and other users.
+
+Because of this secure envelope, an embedded snippet of virus code cannot
+be unleashed during transit of the message. In addition, since the message
+is a non-executing file, even if the code for a virus were inserted, it
+would just be data and thus non-functional. When a user receives a message
+and reads it using the Macintosh, MS-DOS, or Windows client, the executing
+file performing the operation works independently of the message it is
+reading, which is read in as pure data. If virus code is present within the
+message, it is still benign because it is not being executed, only read.
+Because of this, the Mail messaging system itself is safe from being an
+active vehicle of virus infection.
+
+What About Attachments?
+-----------------------
+
+Attachments to mail messages, on the other hand, can be in a wide variety
+of formats, from Excel spreadsheets to graphics files to executable
+programs. Any file that can be referenced as a valid MS-DOS file can be an
+attachment.
+
+This does raise the possibility of virus infection being sent through the
+Mail system and is where the user[ASCII 146]s own virus protection plans become
+important.
+
+Microsoft Mail[ASCII 146]s manner of dealing with an attachment is similar to that of
+a message: a header is created, identifying the file as an attachment with
+data necessary for it to be identified by the message within the database
+structure. The attachment itself is encrypted, just like the message, to
+ensure the security of the messaging system.
+
+The receiver of the message with the attachment will be notified in
+different ways that the attachment exists, depending upon the client being
+run. On all three platforms, however, the notification itself only points
+to the attachment, so an embedded virus is still non-executing. On both the
+MS-DOS and Macintosh Mail clients, an attachment must be saved as a file to
+disk before its contents can be viewed or acted upon. On these two
+platforms, once the attachment is saved, whatever virus protection scheme
+is already in place by the user is appropriate.
+
+The Windows client, on the other hand, allows a user to launch the
+attachment directly from within the Mail client. If it is an Excel
+spreadsheet, Excel is started and the spreadsheet opened; any other non-
+executable attachment that has an association within Windows will start the
+associated application and open the attachment as a file within the
+application. These types of files, even if they have a virus embedded, are
+still just data being read by a program. In the case of applications where
+macro programming is available (Excel and Word, for example), it is
+possible for a document to contain a macro that is in itself malicious.
+
+If, however, an infected executable file (files that end with .EXE or .COM)
+is launched from the client, the virus is activated and the machine will be
+infected. On the other hand, if an executable file sent as an attachment is
+saved to disk first as a file, whatever virus protection scheme is already
+in place by the user is appropriate.
+
+SUMMARY
+=======
+
+The Microsoft Mail messaging system is used to transfer messages and data
+between users on a network. Due to the nature of the security enhancements in
+place within the package, data in transit is secure from the system and from
+other users, preventing tampering. Once the recipient of the message receives
+the data, whatever virus security procedures are already in place by the user
+are appropriate for detection. In the context of virus disbursal, a message with
+an attachment can be viewed as no different than receiving a disk of data from
+another user.
+
+Additional query words: 3.00 3.00a 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN300b
+Version           : WINDOWS:3.0,3.0a,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

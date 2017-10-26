@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126241: Clients Cannot Run NetWare System Utilities Through GSNW | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126241: Clients Cannot Run NetWare System Utilities Through GSNW" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126241/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126241/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126241/","publisher":null,"image":null,"headline":"Q126241: Clients Cannot Run NetWare System Utilities Through GSNW","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126241-clients-cannot-run-netware-system-utilities-through-gsnw">Q126241: Clients Cannot Run NetWare System Utilities Through GSNW</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126241
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.5 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a client computer is connected to a NetWare server shared by Gateway Service
+for NetWare (GSNW) on a Windows NT Server, you cannot use any of the supported
+NetWare system utilities (Syscon, PConsole, Whoami, Filer, etc.) or
+NetWare-aware applications from the client computer.
+
+CAUSE
+=====
+
+The NetWare system utilities and NetWare-aware applications use NetWare client
+application program interface (API) calls. A client computer connected to a
+shared NetWare resource through a Windows NT Server running GNSW, sends and
+receives information through a Server Message Block (SMB)- based redirector that
+cannot interpret any of the NetWare API calls or NCP packets. Client Service for
+NetWare and Gateway Service for NetWare interpret NetWare API calls through
+NWRDR.SYS, but only for local processes.
+
+RESOLUTION
+==========
+
+To run the NetWare system utilities and NetWare-aware applications on the client
+computer:
+
+1. If the client computer is a Windows NT Workstation, install the Client
+  Service for NetWare.
+
+2. If the client computer is using an operating system other than Windows NT,
+  install the NetWare drivers and redirectors in real mode according to the
+  following conditions:
+
+  - If you are using Novell NetWare to work with IPXODI.COM, add the following
+  lines to your AUTOEXEC.BAT file:
+
+  LSL
+  &lt;appropriate ODI driver for your network card&gt;
+  IPXODI
+  NETX /ps=&lt;preferred server name&gt;
+
+  - If you are using Novell NetWare to work with IPX.COM, add the following
+  lines to your AUTOEXEC.BAT file.
+
+  IPX
+  NETX /ps=&lt;preferred server name&gt;
+
+MORE INFORMATION
+================
+
+For a list of supported NetWare utilities and NetWare-aware applications used
+via the Gateway Service for NetWare or Client Service for NetWare, query on the
+following words here in the Microsoft Knowledge Base:
+
+  CSNW GSNW NETWARE SNU
+
+NetWare is manufactured by Novell, Inc., a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

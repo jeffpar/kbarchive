@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167246/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167246/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167246/","publisher":null,"image":null,"headline":"Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167246-xcln-dcom95-causes-invalid-page-fault-in-awfxcg32dll">Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167246
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 10-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Client for Windows 95, version 4.0 
+- Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install DCOM95 that ships with Visual C++ 5.0, Visual Basic 5.0, and
+Visual Studio 97, Microsoft Outlook (and Microsoft Exchange) stop with the
+following message when exiting:
+
+  OUTLOOK caused an invalid page fault in module AWFXCG32.DLL at
+  0137:7f7ef389.
+  Registers:
+  EAX=010f04d8 CS=0137 EIP=7f7ef389 EFLGS=00010206
+  EBX=815df4f4 SS=013f ESP=0062fb58 EBP=0062fd34
+  ECX=0000000c DS=013f ESI=bff7eeed FS=25cf
+  EDX=815d4878 ES=013f EDI=00000000 GS=0000
+  Bytes at CS:EIP:
+  8b 08 85 c9 8d 51 ff 89 10 74 1a e8 e3 96 ff ff
+  Stack dump:
+  0062fd34 7f7e0000 815d48ac 815df4f4 00400850 bff7b9b5 7f7e0000 00000000
+  00000000 7f7e0000 815d48ac 815df4f4 00000000 00000091 815df4f4 c105cf34
+
+MORE INFORMATION
+================
+
+DCOM stands for Distributed Component Object Model. It is essentially a new OLE.
+It replaces all of your old OLE files. It can be removed under the Add/Remove
+Programs in Control Panel. This will fix the problem.
+
+
+This problem has only been seen to occur with MSFAX installed.
+
+For more information about correcting this problem in Outlook 97, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q175314 OL97: Outlook Caused an Invalid Page Fault in AWFXCG32.DLL
+
+
+RESOLUTION
+==========
+
+To resolve this problem, get the latest version of DCOM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of Microsoft
+Exchange. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

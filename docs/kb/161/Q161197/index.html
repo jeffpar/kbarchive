@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161197: HOWTO: Automate a Word Object Embedded in a Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161197: HOWTO: Automate a Word Object Embedded in a Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161197/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161197/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161197/","publisher":null,"image":null,"headline":"Q161197: HOWTO: Automate a Word Object Embedded in a Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161197-howto-automate-a-word-object-embedded-in-a-form">Q161197: HOWTO: Automate a Word Object Embedded in a Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161197
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+Last Modified: 09-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides an example of how to programmatically update an OLE object
+embedded within a Word document. This example uses both Visual FoxPro 5.0 and
+Microsoft Word for Windows 95 version 7.0a.
+
+MORE INFORMATION
+================
+
+The sample creates a new form and adds a Word object to that form. Next, the
+code activates the Word object to get a reference to its WordBasic object,
+deactivates it, and then automates the WordBasic object. The important part of
+this code is the temporary activation of Word. The object embedded in a form is
+called "Document." Unfortunately, Word does not support the object
+"Word.Document" through OLE Automation, but Word does support the object
+"WordBasic." The following line of code saves a reference to the object
+contained within the Word document:
+
+     oWordRef = oForm.oWordDoc.Object.Application.WordBasic
+
+This allows a programmer to update the object.
+
+Please see the REFERENCES section of this article for additional information.
+
+Code Example
+------------
+
+Place the following code in a program file and run it:
+
+     #DEFINE CRLF  CHR(13)+CHR(10)
+     PUBLIC oForm
+     oForm = CREATE('form')
+     oForm.AddObject('oWordDoc','OleControl','WordDocument')
+     oForm.oWordDoc.Height =  100
+     oForm.oWordDoc.Width =  300
+     oForm.oWordDoc.Visible =  .t.
+     oForm.Show
+     oForm.oWordDoc.DoVerb(0)
+     oWordRef = oForm.oWordDoc.Object.Application.WordBasic
+     MOUSE CLICK AT 0,0
+     oWordRef.Insert("Hello World"+CRLF)
+     oWordRef.EditSelectAll
+     oWordRef.Font("Arial",18)
+     oWordRef.Bold
+     oWordRef.EditGoTo("\EndofDoc")
+     oWordRef.WordLeft(3)
+     oWordRef.SelectCurWord
+     oWordRef.CharColor(2)
+     RETURN
+
+This code will replace the Visual FoxPro toolbars with the Word toolbars in order
+to edit the embedded Word object.
+
+REFERENCES
+==========
+
+For more information about OLE Automation, Visual FoxPro, and Word, please see
+the following articles in the Microsoft Knowledge Base:
+
+  Q138205 HOWTO: Use OLE Automation with Microsoft Word
+
+  Q148474 SAMPLE: Ole_samp.exe to Microsoft Excel, Word, &amp; PowerPoint
+
+
+  Q105535 Word for Windows Supports OLE Automation as a Server Only
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224592/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224592/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224592/","publisher":null,"image":null,"headline":"Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224592-xadm-naming-exchange-servers-to-optimize-kcc-performance">Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224592
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The naming of Exchange Server computers within an Exchange Site influences the
+performance of the Knowledge Consistency Checker (KCC) and the amount of network
+traffic that the KCC creates.
+
+MORE INFORMATION
+================
+
+Each Exchange Server computer in a site runs a KCC check every three hours to
+verify its knowledge of other Exchange Server computers in the site. To verify
+this knowledge, an Exchange Server computer will contact another Exchange Server
+computer in the site to compare their information. Which Exchange Server
+computer is contacted depends on its alphanumeric name.
+
+For example, site A has six servers: ServerA through ServerF. ServerA's KCC will
+contact ServerB, ServerB's will contact ServerC, and so on. The last Exchange
+Server computer alphanumerically, ServerF, will contact the first Exchange
+Server computer, ServerA, creating a virtual ring. The closer this virtual ring
+is to the actual network topology, the less network traffic will be caused by
+the KCC.
+
+Extending the above example, if ServerA, ServerC, and ServerE are on one subnet,
+and ServerB, ServerD, and ServerF are on another subnet, one full KCC cycle will
+cross subnets six times, in the following order:
+
+1. ServerA across to ServerB.
+
+2. ServerB across to ServerC.
+
+3. ServerC across to ServerD.
+
+4. ServerD across to ServerE.
+
+5. ServerE across to ServerF.
+
+6. ServerF across to ServerA.
+
+However, if the first subnet's servers are named ServerA, ServerB, and ServerC,
+and the second subnet's severs are named ServerD, ServerE, ServerF, one full KCC
+cycle will only cross subnets twice, in the following order:
+
+1. ServerC across to ServerD.
+
+2. ServerF across to ServerA.
+
+Generally, the more servers there are in a site, the larger the gains that will
+be made by naming Exchange Server computers as detailed above.
+
+More information on this subject can be found in Managing and Maintaining
+Microsoft Exchange Server 5.5 from Microsoft Press.
+
+Additional query words: intrasite replication
+
+======================================================================
+Keywords          :  
+Component         : Admin
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143243/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143243/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143243/","publisher":null,"image":null,"headline":"Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143243-xadm-missing-site-addressing-objectse-mail-addresses">Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143243
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Site Addressing object in the Configuration hierarchy of a site and the
+E-Mail Addresses page of recipient property pages are hidden in the Microsoft
+Exchange Administrator program when you install a Microsoft Exchange Server
+using the default ("Typical") installation option.
+
+MORE INFORMATION
+================
+
+If you install the Enterprise Edition of Microsoft Exchange Server using the
+default ("Typical") option of the Microsoft Exchange Setup program, you will
+notice, when connecting to that Server later via the Microsoft Exchange
+Administrator program, that the Site Addressing object does not appear in the
+Configuration hierarchy of the Site to which the Server belongs. In addition,
+the E-Mail Addresses page of the property pages for recipients within the site
+is missing.
+
+This behavior is by design in Exchange Server versions 4.0 and 5.0. A default
+installation of Microsoft Exchange Server, Enterprise Edition, does not install
+any connectors other than the Site Connector. Given that the Site Connector is
+used strictly within an organization and they should not be required for
+intersite communication via Site Connectors, and that they can be created very
+rapidly and easily via the Microsoft Exchange Administrator program, the Site
+Addressing object and the E-Mail Addresses page are hidden from view. However,
+if youwish to modify site addressing or individual e-mail addresses for
+recipients, this feature can present a problem.
+
+If you have a need to access the Site Addressing object or the E-Mail Addresses
+page within your Microsoft Exchange Administrator program, and they are hidden
+because you have not installed any connectors other than Site Connectors, you
+can force these details to appear using the Setup program as follows:
+
+1. Start the Microsoft Exchange Server Setup program on the Microsoft Exchange
+  server on which the Site Addressing object is hidden.
+
+2. Select Add/Remove from the Setup options.
+
+3. Select Microsoft Exchange Server from the components listed in the subsequent
+  dialog box, and click on the Change Options button.
+
+4. Select any one of the three connectors listed (MS Mail, SMTP, or X.400),
+  check the box next to the connector to add it to your installation, and click
+  on OK.
+
+5. Setup will install the selected connector and terminate immediately.
+
+6. Start a fresh copy of the Microsoft Exchange Administrator program and
+  connect to this Microsoft Exchange Server. The Site Addressing object will
+  now be visible in the Configuration hierarchy.
+
+The above procedure does not stop services or otherwise interfere with Microsoft
+Exchange server operation, and it requires no additional resources. It can be
+performed at any time and completed within a few seconds. Once at least one
+connector has been installed in this way, the Site Addressing object and the
+E-Mail Addresses page will appear in the Microsoft Exchange Administrator
+program. It is not necessary to actually create any new connectors within the
+site.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

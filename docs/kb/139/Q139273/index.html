@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139273/","publisher":null,"image":null,"headline":"Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139273-stop-0x0000000a-using-3com-3c770-with-compaq-and-hp">Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139273
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the 3Com 3C770 FDDI adapter driver in Windows NT 3.51 on a Compaq
+ProSignia 300 or 500, ProLiant 1500 or 4500, or Deskpro/XL computer, or on some
+Hewlett-Packard (HP) computers, the following STOP error message appears:
+
+  STOP: 0x0000000A
+
+CAUSE
+=====
+
+Bus timing can lead to a hardware malfunction on the 3C770. 3Com has determined
+that there is no software workaround and has revised the hardware to fix this
+problem.
+
+RESOLUTION
+==========
+
+According to the latest Windows NT 3.51 Hardware Compatibility List, the 3Com
+3C770 network adapter driver is not supported on these Compaq computers. Do not
+use the FDDILink adapter in any of these computers.
+
+You can obtain the revised adapter and driver from 3Com Technical Support at
+(800) 876-3266.
+
+For other Compaq PC models, run the adapter's diagnostic external loopback test
+to confirm interoperability.
+
+MORE INFORMATION
+================
+
+Compaq's EISA-PCI bridge chipset's large amount of wait-states causes 3Com's
+adapter to skip 4-byte at certain burst cycle. With NetBEUI, this manifests into
+a data-corruption problem on the Compaq ProSignia 500 computer. The 3C770 driver
+included on the Windows NT Workstation and Windows NT Server CD-ROM disks in the
+\DRVLIB\NETCARD\xX86\3C770 subdirectory is designed for use with only Windows NT
+3.5 and not in Windows NT 3.51. Updates to this adapter will be listed in future
+Hardware Compatibility Lists. The symptom mentioned above does not occur on 3Com
+network adapters with revision 08-0015-002-REV5A or higher.
+
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words: prodnt trap 0xA hcl
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153777/","publisher":null,"image":null,"headline":"Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153777-close-combat-err-msg-ufsreference-is-invalid">Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153777
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbmmkbfaq
+Last Modified: 08-NOV-2001
+
+1.0
+WINDOWS
+kbother kberrmsg kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Close Combat for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error when you start Close Combat:
+
+  [ufs]Reference is invalid
+
+CAUSE
+=====
+
+This error can be caused by the following situations.
+
+Cause 1
+-------
+
+You receive the above error if the Campaign, Myob, or Replay folder is deleted
+from the Close Combat\Games folder. To correct this problem, see the RESOLUTION
+section below.
+
+Cause 2
+-------
+
+This problem also occurs when you change the default location and do not specify
+a directory (for example, if you enter d:\ instead of d:\cc\. If you change the
+default location, make sure you specify a directory for the new location. To
+correct this problem, see the "How to Re-install Close Combat" section below.
+
+Cause 3
+-------
+
+This error may also occur if you install Close Combat to a drive other than
+"C:\". When you select a different drive (for example, X), Setup defaults to
+"X:\" and copies all the files to the root of the drive, causing the
+"[ufs]Reference Is Invalid" error. To correct this problem, see the "Installing
+to a Drive Other than C:\" section below.
+
+RESOLUTION
+==========
+
+This problem can be corrected by reinstalling Close Combat or creating the
+missing folder(s).
+
+How to Re-install Close Combat
+------------------------------
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click the Install/Uninstall tab.
+
+4. On the Install/Uninstall tab, click Microsoft Close Combat, and then click
+  Add/Remove.
+
+5. When the Close Combat installation screen appears, click Reinstall.
+
+How to Re-Create the Missing Folder(s)
+--------------------------------------
+
+NOTE: The following steps assume Close Combat was installed in the default
+location of C:\Windows\Program Files\Microsoft Games\Close Combat.
+
+1. On your Windows 95 desktop, double-click My Computer.
+
+2. Double-click drive C. Double-click the Windows folder, then double-click the
+  Program Files Folder, double-click the Microsoft Games folder, double-click
+  the Close Combat folder, and then double-click the Games folder.
+
+  The following folders should be in the Games folder:
+
+  Campaign
+  Myob
+  Replays
+
+  Determine which folder or folders are missing.
+
+3. From the File menu, click New, and click Folder.
+
+4. Type the name of the missing folder and press the ENTER key. Repeat steps 3
+  and 4 until all the missing folders have been created.
+
+Installing to a Drive Other than C:\
+------------------------------------
+
+The "[ufs]Reference Is Invalid" error may also occur if you install Close Combat
+to a drive other than "C:\". To correct this problem, do the following:
+
+1. Click the Start button, point to Settings, and click Control Panel.
+
+2. Click Add/Remove Programs.
+
+3. Click Microsoft Close Combat, and click Add/Remove.
+
+4. Re-install Close Combat to the other drive by adding the path "X:\Program
+  Files\Microsoft Games\Close Combat" when prompted for the location.
+
+Additional query words: 1.00 close combat error reference invalid ufs
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmm kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombat
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192233/","publisher":null,"image":null,"headline":"Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192233-winframe-1x-not-detected-by-terminal-server-40-for-upgrade">Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192233
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to upgrade Citrix Winframe 1.7 to Windows NT Server 4.0,
+Terminal Server Edition, Winframe 1.7 may not be detected on the computer. A
+fresh install will be the only option presented.
+
+CAUSE
+=====
+
+Registry inconsistencies may cause Terminal Server to ignore the Winframe
+installation from being upgraded.
+
+RESOLUTION
+==========
+
+There is a utility (Regfix.exe) in the Support\Regfix folder that can repair
+some instances of registry (hive) inconsistencies.
+
+This utility will repair a Windows NT 3.51 or a Citrix WinFrame 1.x registry file
+so that you can upgrade that installation to Windows Terminal Server.
+
+usage: regfix inputfilename outputfilename
+
+  inputfilename - the name of the registry file to process
+  ouputfilename - the name for the updated registry file
+
+Detailed Informaton:
+
+To run Regfix.exe, you will have to run it from another Windows NT installation
+so that you can safely modify the registry file. Here is the procedure to
+follow:
+
+1. If you do not have one already, you will have to install Windows NT to
+  another partition.
+
+2. Boot the system to an alternate Windows NT partition.
+
+3. Change to the WinFrame\system32\config directory of the WinFrame (or Windows
+  NT 3.51) partition to be updated:
+
+     cd \winframe\system32\config
+
+4. Rename the software hive to software.sav:
+
+     ren software software.sav
+
+5. Fix the registry file (assuming that d: is your CD-ROM drive):
+
+     d:\support\regfix\regfix software.sav software
+
+6. Restart the Windows Terminal Server upgrade.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0, Terminal
+Server Edition. We are researching this problem and will post additional
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Read Support\Regfix\Regfix.txt on the Terminal Server CD for more information.
+
+Additional query words: detection upgrading
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

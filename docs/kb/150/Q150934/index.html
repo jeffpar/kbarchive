@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150934: How to Create a Performance Monitor Log for NT Troubleshooting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150934: How to Create a Performance Monitor Log for NT Troubleshooting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150934/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150934/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150934/","publisher":null,"image":null,"headline":"Q150934: How to Create a Performance Monitor Log for NT Troubleshooting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150934-how-to-create-a-performance-monitor-log-for-nt-troubleshooting">Q150934: How to Create a Performance Monitor Log for NT Troubleshooting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150934
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft  Windows 2000 version of this article, see Q248345.
+
+SUMMARY
+=======
+
+This article explains how to create a Performance Monitor log so that engineers
+can use it to troubleshoot performance problems on a computer running Windows
+NT.
+
+MORE INFORMATION
+================
+
+Creating the Performance Monitor log:
+
+1. On the View menu, click Log.
+
+2. On the Edit menu, click "Add To Log".
+
+3. In the Computer field, specify the name of the local computer or a remote
+  computer you want to get a log of. In Objects, add the counters that you want
+  Performance Monitor to log. These counters will change depending on the issue
+  that you are troubleshooting.
+
+4. Click to highlight the objects that you wish to monitor and then click Add.
+
+5. Under Options click Log.
+
+6. Under File Name, name the log.
+
+7. In Update Time, set the interval according to how long you want to run the
+  Performance Monitor log. If you want to run the log for an extended period of
+  time, you will want to set this update time to an interval much higher than
+  15 seconds or the log will be very large. If you are going to run the log for
+  only an hour, then 15 seconds will be fine.
+
+8. Click Start Log. The icon will change to a Stop Log icon once the log is
+  started.
+
+When you are ready to stop monitoring the selected objects and examine your log
+file, perform the following steps:
+
+1. Under Options click Log and then click Stop Log.
+
+2. In the Options menu click "Data from", click Log File, and then click to
+  select the radio button beside the perfmon.log field and locate your log
+  file.
+
+  NOTE: You cannot open a log file simply by clicking File and then clicking
+  Open.
+
+3. After you open the log file, add the objects and counters that the log has
+  monitored. Do this for each view needed, otherwise the log file's data will
+  not be available.
+
+If you are troubleshooting a performance issue or an issue that looks like a
+memory leak, the objects that Performance Monitor should log include but are not
+limited to the following items.
+
+Memory resource issues:
+
+  Cache
+  Memory
+  Objects
+  Paging file
+  Process
+  Processor
+  System
+  Terminal Services (if a Terminal Server)
+
+For all other resource issues, add additional counters:
+
+  Logical disk
+  NBT Connections
+  Network interface
+  Physical disk
+  Redirector
+  Server
+  Server work queues
+  Thread (do NOT capture if a terminal server)
+  All Terminal Server counters (if a Terminal Server)
+  All Protocol counters bound to network adapters
+
+NOTES
+
+- Disk counters require that you run "diskperf -y" (without the quotation
+  marks) from the command console and then restart the computer.
+
+- We usually do not capture threads on a terminal server because this counter
+  can consume 80% of a data file.
+
+- You have several options if the computer that is running Perfmon is restarted
+  or goes down while the log is going. You can start a new log, or, if you
+  specify the name of an existing log file, the new data is appended to the end
+  of the log file. It is important to let the engineer know the log was
+  restarted. However, if you are monitoring remotely and the target computer
+  goes down, this does not apply.
+
+- If there are processes that start after the log was started, they will not
+  show up in the beginning of the log. To view different periods in the log,
+  click Edit, click Time Window, and then use the sliding scale.
+
+- If the user logs off, the performance monitor log will stop. You can set up
+  Performance logging as a service, but it is easiest to run Performance
+  Monitor remotely from another Windows NT system.
+
+For additional information about troubleshooting performance issues, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q175658 Gathering Information for Troubleshooting Performance
+
+
+
+Additional query words: perfmon tshoot win2000hotnet
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

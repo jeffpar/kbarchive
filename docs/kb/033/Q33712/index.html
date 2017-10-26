@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q33712: &quot;Subscript Out of Range&quot; DIM SHARED Dynamic Array in SUBmodule | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q33712: &quot;Subscript Out of Range&quot; DIM SHARED Dynamic Array in SUBmodule" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/033/Q33712/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/033/Q33712/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/033/Q33712/","publisher":null,"image":null,"headline":"Q33712: &quot;Subscript Out of Range&quot; DIM SHARED Dynamic Array in SUBmodule","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q33712-subscript-out-of-range-dim-shared-dynamic-array-in-submodule">Q33712: "Subscript Out of Range" DIM SHARED Dynamic Array in SUBmodule</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q33712
+Product(s): See article
+Version(s): 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 28-FEB-1990
+
+A "Subscript out of range" message displays at run time when a dynamic
+array is dimensioned using REM $DYNAMIC and DIM SHARED statements at
+the module level of a support (nonmain) module (composed of just
+subprogram or FUNCTION procedures). In contrast, if the DIM SHARED
+array is a statically dimensioned array instead of a dynamically
+dimensioned array, the program runs without the error message. This
+difference between dynamic and static arrays is not a problem with
+QuickBASIC, but occurs because a DIM for a dynamic array is an
+executable statement (processed only if encountered in the flow of
+control at run time), whereas a DIM for a static array is a
+nonexecutable statement (always processed at compile time).
+
+This information applies to QuickBASIC Versions 4.00b and 4.50 for
+MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and 6.00b for
+MS-DOS, and to Microsoft BASIC Professional Development System (PDS)
+Version 7.00 for MS-DOS and OS/2.
+
+A DIM for a dynamic array is only executed at run time if the
+program's control flows through that DIM statement. Since no
+executable statements are ever executed at the module-level of a
+support (nonmain) module, the DIM statements for dynamic arrays at the
+module level of a support module are ignored. "Subscript out of Range"
+displays for the first time an undimensioned array is referenced in
+the subprogram.
+
+In contrast, static arrays are allocated at compile time; and the DIM
+statement for a static array at the module-level of a support module
+is always recognized. A DIM statement for a static array is a
+compile-time, nonexecutable statement.
+
+When compiling to an EXE file, be sure to produce debug code (that is,
+compile with the /D switch) to catch array problems.
+
+To work around the compiler's ignoring of DIM SHARED for dynamic
+arrays at the module level of support modules, dimension the dynamic
+array in the main module (source file), and pass the array to the
+second module (separate source file) using the COMMON SHARED statement
+in both modules.
+
+The following code fails with a "Subscript out of range" error when an
+element of the array is assigned to a value:
+
+Module #1
+---------
+
+   DECLARE SUB test()
+   CALL test
+
+Module #2
+---------
+
+   REM $DYNAMIC            'will work if this is commented out
+   DIM SHARED a(10,30,30)
+   SUB test STATIC
+   a(1,1,1) = 4           'Subscript out of range error
+   PRINT a(1,1,1)
+   END SUB
+
+The following code successfully shares the dynamic array with the
+procedure in the support module:
+
+Module #1
+---------
+
+   DECLARE SUB test()
+   REM $DYNAMIC
+   COMMON SHARED a()
+   DIM a(10,30,30)
+   CALL test
+
+Module #2
+---------
+
+   COMMON SHARED A()
+   SUB test STATIC
+   a(1,1,1) = 4
+   PRINT a(1,1,1)
+   END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

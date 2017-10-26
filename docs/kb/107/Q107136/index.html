@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107136: Can’t Access Compressed Drives; DBLSPACE.BIN Is Not Loaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107136: Can’t Access Compressed Drives; DBLSPACE.BIN Is Not Loaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107136/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107136/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107136/","publisher":null,"image":null,"headline":"Q107136: Can’t Access Compressed Drives; DBLSPACE.BIN Is Not Loaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107136-cant-access-compressed-drives-dblspacebin-is-not-loaded">Q107136: Can’t Access Compressed Drives; DBLSPACE.BIN Is Not Loaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107136
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SYMPTOMS
+========
+
+You may receive the following error message when you start your computer:
+
+  You cannot access any DoubleSpace-compressed drives because DBLSPACE.BIN is
+  not loaded.
+
+NOTE: DBLSPACE.BIN is the portion of MS-DOS that provides access to
+DoubleSpace-compressed drives.
+
+CAUSE
+=====
+
+This problem occurs when you have the following line in your CONFIG.SYS file and
+DBLSPACE.BIN is not in the root directory:
+
+  device=c:\dos\dblspace.sys /move
+
+RESOLUTION
+==========
+
+If you have DoubleSpace-compressed drives, you should copy DBLSPACE.BIN to the
+root directory of your boot drive. You can either copy it from the directory
+containing your MS-DOS files or expand it from your setup disks to C:\.
+
+If you are not using DoubleSpace, remove all references to DBLSPACE.SYS from your
+CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+This situation can occur when:
+
+- You remove MS-DOS 6.2 and Uninstall restores your pre-MS-DOS 6.2 CONFIG.SYS
+  file, which includes the DEVICE command for DBLSPACE.SYS.
+
+- You format the host drive (to remove DoubleSpace) and then restore your
+  backed up files (including your CONFIG.SYS file with the DBLSPACE.SYS
+  reference).
+
+- You have one or more DoubleSpace-compressed drives, drive C is not
+  compressed, and you delete DBLSPACE.BIN from the root directory of C.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

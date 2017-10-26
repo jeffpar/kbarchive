@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153073: M-Node TCP/IP Clients Fail to Register All Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153073: M-Node TCP/IP Clients Fail to Register All Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153073/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153073/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153073/","publisher":null,"image":null,"headline":"Q153073: M-Node TCP/IP Clients Fail to Register All Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153073-m-node-tcpip-clients-fail-to-register-all-names">Q153073: M-Node TCP/IP Clients Fail to Register All Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153073
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11,3.11a,3.11b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use m-node TCP/IP-32bit Windows for Workgroups clients and your primary
+WINS server is down, TCP/IP will fail to register all names with the backup WINS
+server.
+
+CAUSE
+=====
+
+When using m-node clients with TCP/IP, it will try to register names by first
+using broadcasts. If broadcasts fail, it will try the primary WINS server, and
+if this fails, it goes to the backup WINS server.
+
+NetBIOS registration occurs during the startup of Windows for Workgroups. It
+starts sending all registration requests to the backup after the other two
+methods have failed. Because the secondary WINS server is up, it will reply to
+the Name Registration request. The Name Registration request code sees a
+response and acts accordingly. One of the things the Name Registration request
+code does is check to see where the reply came from. If it determines that the
+response came back from the backup, it will swap the primary and secondary
+addresses so that it will now go to the backup.
+
+Because it has not completed sending out all the Name Registers, it continues
+sending the next Name Register to the backup server. Because the Name
+Registration request code has swapped the backup and primary addresses, it now
+sends to the primary again, and these names fail to get registered.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft TCP/IP-32 for Windows
+for Workgroups. A fix to this problem is in development, but has not been
+regression-tested and may be destabilizing in production environments. Microsoft
+does not recommend implementing this fix at this time. Contact Microsoft Product
+Support Services for more information on the availability of this fix.
+
+Additional query words: networking
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

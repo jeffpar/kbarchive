@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98598: HOWTO: Use CFormView in SDI and MDI Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98598: HOWTO: Use CFormView in SDI and MDI Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98598/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98598/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98598/","publisher":null,"image":null,"headline":"Q98598: HOWTO: Use CFormView in SDI and MDI Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98598-howto-use-cformview-in-sdi-and-mdi-applications">Q98598: HOWTO: Use CFormView in SDI and MDI Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98598
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpD
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 5.0, 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CFormView class provides a convenient method to place controls into a view
+that is based on a dialog box template. The general procedure to use a CFormView
+is described in the documentation for the class and is illustrated in the VIEWEX
+and CHKBOOK sample applications provided with Microsoft Foundation Classes (MFC)
+versions 2.x and above. However, these applications do not demonstrate making
+the initial size of the frame window to be the same as the initial size of the
+form.
+
+The following section lists the steps required to support creating a single
+document interface (SDI) or multiple document interface (MDI) application based
+on a CFormView, sizing the initial frame window around the form, changing the
+style of the frame, and closing an MDI document using a button in the form.
+
+MORE INFORMATION
+================
+
+The following steps describe how to create an MFC AppWizard application using
+the CFormView as the default view:
+
+1. Use the AppWizard to generate an SDI or MDI application.
+
+2. Visual Studion 6.0:
+
+  At step 6 of the AppWizard, select the view class and specify CFormView as the
+  base class using the Base class combo box.
+
+  Visual Studio.NET:
+
+  In step 1 of the AppWizard, select Generated Classes and select CFormView as
+  the base class using the Base class combo box.
+
+  This inserts a dialog template with the proper styles set for your project's
+  resource file.
+
+3. Override the OnUpdate() member function and call UpdateData() as documented
+  in the CFormView documentation to update the member variables with the
+  current document data and to perform dialog data exchange (DDX).
+
+  NOTE: UpdateData is not virtual and calling the base class ensures that the
+  derived class DoDataExchange is called through standard polymorphism. The
+  CFormView documentation states to call, not override UpdateData.
+
+4. If you would like to set the initial size of the form view, override the
+  OnInitialUpdate() function. The text below provides additional information
+  about this step, which is slightly different in an SDI or MDI application.
+
+Changing the Size of an SDI Main Frame Around a CFormView
+---------------------------------------------------------
+
+To change the size of the main frame of an SDI application (that uses CFormView
+as its view class) to be the appropriate size for the form you designed in App
+Studio, override the OnInitialUpdate() function in your class derived from
+CFormView, as follows:
+
+        void CMyFormView::OnInitialUpdate()
+        {
+           CFormView::OnInitialUpdate();
+           GetParentFrame()-&gt;RecalcLayout();
+           ResizeParentToFit(); // default argument is TRUE
+        }
+
+The ResizeParentToFit() function does not prevent the form from changing size
+when the user changes the size of the application main frame (scroll bars are
+added automatically if needed). To modify the style of the frame window that is
+the parent of a form view, you can override the PreCreateWindow() function in
+the CMainFrame class generated by AppWizard. For example, to remove the
+WS_THICKFRAME style and prevent the user from changing the size of the window,
+declare PreCreateWindow() in MAINFRM.H and add the following code to
+MAINFRM.CPP:
+
+        BOOL CMainFrame::PreCreateWindow(CREATESTRUCT &amp;cs)
+        {
+           cs.style &amp;= ~WS_THICKFRAME;
+           return CFrameWnd::PreCreateWindow(cs);
+        }
+
+Changing the Size of an MDI Child Frame Around a CFormView
+----------------------------------------------------------
+
+The process of changing the size of an MDI child frame is similar to changing the
+size of a main frame for an SDI application, as explained above. However, the
+RecalcLayout() call is not required.
+
+To change the size of an MDI child frame around a form view, override the
+OnInitialUpdate() function in your class derived from CFormView as follows:
+
+        void CMDIFormView::OnInitialUpdate()
+        {
+           CFormView::OnInitialUpdate();
+           ResizeParentToFit(); // Default argument is TRUE.
+        }
+
+If the application overrides the default argument to the ResizeParentToFit()
+function, essentially the same consequences occur as for an SDI application, as
+explained above. In addition, the child window may be too large for the
+enclosing MDI main frame or for the entire screen.
+
+To change the style of the MDI child frame (for example, to remove the
+WS_THICKFRAME style so the user cannot change the size of the window), derive an
+MDI child window class and override the PreCreateWindow function as demonstrated
+in the SDI example above.
+
+Closing an MDI Form with a Button
+---------------------------------
+
+To create a button on a form that closes the document add a message handler for
+the BN_CLICKED message to the CFormView class. Make sure that the buttons in
+CFormView do not have the default IDOK or IDCANCEL identifiers. If they do, then
+incorrect entries in the message map and incorrect functions for the buttons
+will be created.
+
+Once the message handler is in place, you can simulate the Close command on the
+File menu with the following code:
+
+        void CMyForm::OnClickedButton1()
+        {
+           PostMessage(WM_COMMAND, ID_FILE_CLOSE);
+        }
+
+This method to close a form prompts the user to save the file if the IsModified()
+member function associated with the document returns TRUE.
+
+Additional query words: kbfasttips
+
+======================================================================
+Keywords          : kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

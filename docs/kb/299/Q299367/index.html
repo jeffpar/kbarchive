@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299367: NIS May Update the Group Files with an Invalid UNIX User | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299367: NIS May Update the Group Files with an Invalid UNIX User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299367/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299367/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299367/","publisher":null,"image":null,"headline":"Q299367: NIS May Update the Group Files with an Invalid UNIX User","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299367-nis-may-update-the-group-files-with-an-invalid-unix-user">Q299367: NIS May Update the Group Files with an Invalid UNIX User</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299367
+Product(s): Microsoft Windows NT
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Network Information Service (NIS) servers may not authenticate UNIX users with
+their group permissions.
+
+CAUSE
+=====
+
+When a UNIX user is added to a UNIX group by using Active Directory, the NIS
+server updates the group.byname and group.byuid files in its MapCache folder to
+be the same. These files are used for group authentication. When NIS updates
+these files, it uses the user's CN name rather than the MsSFUName attribute.
+This can result in an invalid user ID being added to the group files if these
+are different.
+
+For example, a user with a CN name of "First Last" and a logon name of "firstlas"
+would have the invalid "First Last" name added to the group files.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date         Time   Version        Size      File name    Platform
+  ------------------------------------------------------------------
+  23-May-2001  14:25  5.2000.328.19  1,566 KB  Nis2ad.exe   ix86
+  23-May-2001  14:25  5.2000.328.19  1,606 KB  Nisctrl.dll  ix86
+  23-May-2001  14:25  5.2000.328.19  1,566 KB  Nismap.exe   ix86
+  23-May-2001  14:00  5.2000.328.19     80 KB  Nisprop.dll  ix86
+  23-May-2001  14:19  5.2000.328.19    127 KB  Nissvc.exe   ix86
+
+
+
+
+
+WORKAROUND
+==========
+
+To work around this issue, change the user's object name to match the user ID;
+this will put the correct name in the group files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : :2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

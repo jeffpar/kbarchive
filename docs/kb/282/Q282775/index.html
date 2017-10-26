@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/282/Q282775/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/282/Q282775/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/282/Q282775/","publisher":null,"image":null,"headline":"Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q282775-error-writing-encrypted-data-error-during-iis-50-installation">Q282775: "Error Writing Encrypted Data" Error During IIS 5.0 Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q282775
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbDSupport kbiis500 kbiis500prod2web kbProd2Web
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation or re-installation of Internet Information Services
+(IIS) 5.0, you may receive the following error message:
+
+  "Error Writing Encrypted Data to the Web Services Configuration Database."
+
+The installation halts, and you are prompted to Retry, Write unencrypted, or
+Write unencrypted all.
+
+CAUSE
+=====
+
+This error occurs because of incorrect (corrupt) information. If this is a new
+installation of IIS 5.0, the corrupt information is located in the following
+folder:
+
+  %Windir%\Documents and Settings\
+
+If you are re-installing IIS, the corrupt information is located in the following
+folder:
+
+  %Windir%\Profiles\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. If you are still prompted to retry, delete all keys except the key that
+  corresponds to the start of the latest installation from the MachineKeys
+  folder. This key has a date/time stamp that corresponds to the time that you
+  started your last installation.
+
+  -or-
+
+  If the installation is cancelled or did not complete successfully, use Windows
+  Explorer to remove encryption from the %Windir%\Profiles\All
+  Users\Application Data\Microsoft\Crypto\RSA\MachineKeys folder. To this,
+  follow these steps:
+
+  a. Right-click the folder, and then click Properties.
+
+  b. On the General tab, click Advanced.
+
+  c. Clear the "Encrypt contents to secure data" check box, and then click OK.
+     If this check box is NOT already selected, rename the MachineKeys folder
+     to "OldMachineKeys".
+
+2. Log off, and then log back on as Local Administrator. The installation or
+  reinstallation of IIS 5.0 should complete successfully.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q271865 PRB: Error Message '0x8009000F = Object Already Exists'
+
+Additional query words: IIS 5 Metabase.bin metabase bin
+
+======================================================================
+Keywords          : kbDSupport kbiis500 kbiis500prod2web kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

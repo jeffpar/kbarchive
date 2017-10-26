@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99393: Mac Srv: Serial Number Conflicts and Routing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99393: Mac Srv: Serial Number Conflicts and Routing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99393/","publisher":null,"image":null,"headline":"Q99393: Mac Srv: Serial Number Conflicts and Routing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99393-mac-srv-serial-number-conflicts-and-routing">Q99393: Mac Srv: Serial Number Conflicts and Routing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99393
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is possible to see inconsistent routing problems with versions 3.0 and 3.1 of
+Microsoft Mail for AppleTalk Networks. Symptoms for routing problems are the
+following:
+
+- Routing configurations suddenly defaults to "No Connection" in the Mail
+  Network Administrator program.
+
+- User lists disappear from the All listing on one or more servers with no
+  warning.
+
+CAUSE
+=====
+
+Two Microsoft Mail servers at different sites contain identical serial numbers.
+If a duplicate serial number server is inadvertently placed on a routed network,
+the following standard duplicate serial number message will NOT be displayed:
+
+  "There is another copy of this Microsoft Mail Server active on your network.
+  The server on this machine has been stopped."
+
+RESOLUTION
+==========
+
+Use Global Server Report feature from the Mail Network Administrator program to
+verify that all servers have a unique serial number. If two or more servers
+contain the same serial number, all but one must be removed and the existing
+users moved to another server. It is not possible to change the serial number of
+a mail server.
+
+If data from the duplicate server must be maintained, use the Move User feature
+from version 3.1a of the Mail Network Administrator. With version 3.0 of
+Microsoft Mail, it is possible to duplicate user accounts on a second server and
+then forward mail messages to the new account. After all messages have been
+forwarded, the duplicate server can be removed from the network.
+
+After the duplicate server has been removed, routing and user name propagation
+will return to normal.
+
+
+Additional query words: 3.00 3.10 dropped
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

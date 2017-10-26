@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141395/","publisher":null,"image":null,"headline":"Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141395-fix-problem-setting-focus-to-a-combobox-from-a-pageframe">Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141395
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create the initial instance, you must click twice on a page in a
+pageframe to set the focus to a combo box.
+
+WORKAROUND
+==========
+
+To avoid the problem, use one of these workarounds:
+
+- Change the tab order of the PageFrame so that it is the last object in the
+  tab order of the form. To do this, click the View menu while the form is open
+  in the From Designer. Click Tab Order, and a window will appear with a
+  message "Shift-click to select tab order." Click within the number box of the
+  form object that you want to be first. Now, while holding down the SHIFT key,
+  click within the number boxes of the remaining objects, saving the PageFrame
+  for last. When finished, click Reorder within the "Shift-click to select tab
+  order" window.
+
+-or-
+
+- Add a command button (essentially a dummy control) to the form. In the click
+  event of each page, issue this command:
+
+     THISFORM.COMMAND1.SETFOCUS.
+
+  In the GOTFOCUS method of the command button, issue the command
+  THISFORM.COMBO1.SETFOCUS. The Visible property of the command button may be
+  set to False if you want because it is just acting as a bridge to set the
+  focus to the combo box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+This behavior appears to be isolated to the following circumstances:
+
+- The PageFrame is not the last object in the tab order of the form.
+
+-or-
+
+- The PageFrame immediately follows the combo box in the tab order of the form.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a form and place the following controls on it, in the specified
+  order:
+
+  (1) Combo Box   (2) PageFrame   (3) Command Button
+
+2. In the Init event of the form, add this command:
+
+     THISFORM.COMBO1.SETFOCUS.
+
+3. Add the following command to the Click event of pages 1 and 2 of the
+  PageFrame:
+
+         THISFORM.COMBO1.SETFOCUS.
+
+4. Run the form, and click the pages of the PageFrame. It will work correctly
+  the first time but on subsequent attempts the page must be clicked twice to
+  set the focus.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

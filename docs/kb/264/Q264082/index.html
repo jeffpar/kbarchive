@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264082/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264082/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264082/","publisher":null,"image":null,"headline":"Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264082-sna-client-or-dls-cannot-connect-as-guest-user-on-windows-2000">Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264082
+Product(s): Microsoft SNA Server
+Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,SP1
+Operating System(s): 
+Keyword(s): kbWin2000SP2Fix
+Last Modified: 15-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, used with:
+   - the operating system: Microsoft Windows 2000 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an SNA Windows NT client attempts to connect to an SNA Server that is running
+on a non-trusted Windows 2000 Server-based computer with the Guest account
+enabled, the SNA client fails to connect, and you receive the following error
+message:
+
+  ERROR #1003
+  SnaBase could not open a sponsor connection to server [Servername]
+
+However, if an SNA Windows 95 or Windows 98 client is used, and the Guest account
+is explicitly used on the same non-trusted Windows 2000 Server-based computer,
+the connection succeeds.
+
+If an SNA Server Distributed Link Service (for example, SnaRem1) attempts to
+connect through an SNA Server link service that is running on a non-trusted
+Windows 2000 Server-based computer, the connection may stay in a pending state,
+and the following event is logged:
+
+  Event ID: 705
+  Source: SNA DLC Link Service
+  Description: Logon Failed
+  EXPLANATION
+  Connection request failed due to data security.
+  Access denied -- Error Code: 43
+
+On the Windows 2000-based computer, the SnaBase Service logs the following event
+whenever the Distributed Link Service attempts to connect (approximately every
+10-20 seconds):
+
+  Event ID: 705
+  Source: SNA Base Service
+  Description: Logon Failed.
+  EXPLANATION
+  Access denied on client-server or Distributed Link Service connection
+  request.
+
+  Unknown user name or bad password from client [computername] --- Error Code :
+  4097
+
+  ACTION
+  Contact your network support personnel.
+
+CAUSE
+=====
+
+Windows 2000 implements stricter Windows NT Challenge/Response (NTLM) security
+during client logon than Windows NT 4.0, which prevents failover to the Guest
+account if the ISC_REQ_INTEGRITY option is requested during the Security Support
+Provider Interface (SSPI) logon process. Because the SNA client requests this
+option, a non-trusted user's NTLM logon fails on Windows 2000 even when the
+Guest account is enabled. However, if the Guest account is explicitly specified
+(by using the SNA Windows 95 or Windows 98 client Advanced options, which are
+not available in the SNA Windows NT client), the logon succeeds because it is
+clear that Guest access is being requested.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+To work around the problem, the SNA client or Distributed Link Service must use a
+user account and password that exists in the target Windows 2000 domain. Or, if
+you are using the SNA Windows 95 or Windows 98 client, you can configure the
+client to connect explicitly as the Guest user.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 2. The English version of this fix should have the
+following file attributes or later:
+
+  Date       Time    Size          File name
+  -------------------------------------------
+  7/21/2000  09:02a  99,792 bytes  msv1_0.dll
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000SP2Fix 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

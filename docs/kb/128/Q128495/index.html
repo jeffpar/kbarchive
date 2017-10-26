@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128495/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128495/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128495/","publisher":null,"image":null,"headline":"Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128495-system-hangs-with-audio-cd-and-nec-intersect-cdr-37-drive">Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128495
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): diskmem win95 kbDiskMemory
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer stops responding (hangs) when you try to use an audio compact disk
+(CD) in a NEC Intersect CDR-37 CD-ROM drive. Ejecting the CD causes the error
+message "Drive Not Ready" to occur. You can use the system normally once you
+close the error message box.
+
+CAUSE
+=====
+
+The NEC Intersect CDR-37 CD-ROM drive is not supported for CD Audio when you are
+using the Windows 95 protected-mode drivers because it does not respond
+correctly to CD Audio commands.
+
+RESOLUTIONS
+-----------
+
+This drive should function correctly with audio CDs when you are using real- mode
+CD-ROM and MSCDEX.EXE drivers. To use real-mode drivers instead of the Windows
+95 protected-mode drivers, load the CD-ROM driver in the CONFIG.SYS file, and
+load MSCDEX.EXE in the AUTOEXEC.BAT file following the manufacturer's
+instructions. Note that if these drivers were already installed when you
+installed Windows 95, they may still be in the CONFIG.SYS and AUTOEXEC.BAT
+files, but be remarked out.
+
+If using the real-mode drivers does not resolve the problem, you may need to
+disable the CD-ROM drive in Device Manager. To do so, follow these steps:
+
+1. Double-click My Computer.
+
+2. Double-click Control Panel.
+
+3. Double-click the System icon.
+
+4. Click the Device Manager tab.
+
+5. Click the CD-ROM drive, then click the Properties button. Note that you may
+  need to expand a branch of the hardware tree by double- clicking the branch
+  or by clicking the plus sign (+) to the left of the branch before you can
+  click the CD-ROM drive.
+
+6. Click the Original Configuration (Current) check box to remove the check
+  mark.
+
+7. Click the OK button.
+
+8. Click OK.
+
+NOTE: If the CD-ROM drive is on its own controller, you may also need to disable
+the controller. To do so, follow the steps above but choose the CD-ROM
+controller card in step 5.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

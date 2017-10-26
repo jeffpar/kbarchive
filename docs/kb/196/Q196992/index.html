@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196992: Current NonAnonymous Users Performance Counter Is Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196992: Current NonAnonymous Users Performance Counter Is Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196992/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196992/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196992/","publisher":null,"image":null,"headline":"Q196992: Current NonAnonymous Users Performance Counter Is Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196992-current-nonanonymous-users-performance-counter-is-incorrect">Q196992: Current NonAnonymous Users Performance Counter Is Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196992
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Internet Information Server (IIS) Current NonAnonymous Users Performance
+Monitor counter continuously increments, even after you log out of the site. The
+problem occurs when you use an Internet Server API (ISAPI) extension that
+registers as an authentication handler, for example Site Server 3.0 Membership
+Authentication.
+
+CAUSE
+=====
+
+ISAPI extensions that register as an authentication provider and set the
+AuthPersistence to MD_AUTH_SINGLEREQUEST cause the Performance Monitor counter
+for CurrentNonAnonymousUsers to constantly increase. The problem occurs because
+IIS increments the counter as soon as the extension indicates authentication is
+successful, but does not decrement the counter when the login is immediately
+released due to the MD_AUTH_SINGLEREQUEST setting.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next Windows NT
+service pack.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time    Size   File Name   Platform
+  ---------------------------------------------
+  12/03/98  09:36p  47,936 Isatq.dll    (x86)
+  12/03/98  09:37p  71,232 Metadata.dll (x86)
+  12/03/98  09:37p  27,696 Admwprox.dll (x86)
+  12/03/98  09:37p  43,456 Coadmin.dll  (x86)
+  12/03/98  09:37p   7,488 Rpcref.dll   (x86)
+  12/03/98  09:37p  13,856 Lonsint.dll  (x86)
+  12/03/98  09:37p   8,336 Lonsiw95.dll (x86)
+  12/03/98  09:37p  61,920 Iislog.dll   (x86)
+  12/03/98  09:37p  29,520 Iscomlog.dll (x86)
+  12/03/98  09:37p  10,224 Iisfecnv.dll (x86)
+  12/03/98  09:37p 184,192 Infocomm.dll (x86)
+  12/03/98  09:37p  16,848 Infoadmn.dll (x86)
+  12/03/98  09:37p   9,584 Infoctrs.dll (x86)
+  12/03/98  09:37p  12,592 Spud.sys     (x86)
+  12/03/98  09:37p  18,032 Svcext.dll   (x86)
+  12/03/98  09:38p 227,392 W3svc.dll    (x86)
+  12/03/98  09:38p  14,752 W3ctrs.dll   (x86)
+  12/03/98  09:38p  81,376 Ftpsvc2.dll  (x86)
+  12/03/98  09:38p  11,168 Ftpctrs2.dll (x86)
+  12/03/98  11:28p  87,536 Wam.dll      (x86)
+  12/03/98  11:29p 327,472 Asp.dll      (x86)
+
+  12/03/98  09:39p  82,704 Isatq.dll    (alpha)
+  12/03/98  09:39p 131,856 Metadata.dll (alpha)
+  12/03/98  09:39p  49,424 Admwprox.dll (alpha)
+  12/03/98  09:39p  77,072 Coadmin.dll  (alpha)
+  12/03/98  09:39p  12,048 Rpcref.dll   (alpha)
+  12/03/98  09:39p  23,312 Lonsint.dll  (alpha)
+  12/03/98  09:39p  13,584 Lonsiw95.dll (alpha)
+  12/03/98  09:39p 110,864 Iislog.dll   (alpha)
+  12/03/98  09:39p  45,840 Iscomlog.dll (alpha)
+  12/03/98  09:39p  17,680 Iisfecnv.dll (alpha)
+  12/03/98  09:39p 302,864 Infocomm.dll (alpha)
+  12/03/98  09:39p  25,872 Infoadmn.dll (alpha)
+  12/03/98  09:39p  15,120 Infoctrs.dll (alpha)
+  12/03/98  09:40p  20,912 Spud.sys     (alpha)
+  12/03/98  09:40p  29,456 Svcext.dll   (alpha)
+  12/03/98  09:40p 381,200 W3svc.dll    (alpha)
+  12/03/98  09:40p  21,264 W3ctrs.dll   (alpha)
+  12/03/98  09:41p 126,224 Ftpsvc2.dll  (alpha)
+  12/03/98  09:41p  17,168 Ftpctrs2.dll (alpha)
+  12/03/98  11:11p 149,264 Wam.dll      (alpha)
+  12/03/98  11:15p 548,112 Asp.dll      (alpha)
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0.
+
+Additional query words: IIS hotfix hot fix qfe quick engineering patch
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

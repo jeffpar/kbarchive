@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259962/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259962/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259962/","publisher":null,"image":null,"headline":"Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259962-visual-foxpro-60-sample-how-to-create-a-menu-object">Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259962
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbvfp500 kbvfp600 kbXBase kbGrpDSFox kbDSupport
+Last Modified: 10-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MenuObject.exe is a sample that demonstrates how to create a menu object in
+Visual FoxPro.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  MenuObject.exe
+  (http://download.microsoft.com/download/vfox60/sample4/6/win98/en-us/MenuObject.exe)
+
+Release Date: May-24-2000
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+The MenuObject.exe file contains the following files:
+
++-------------------------+
+| File name      | Size   | 
++-------------------------+
+| MenuObject.pjx | 2,493  | 
++-------------------------+
+| MenuObject.pjt | 15,675 | 
++-------------------------+
+| MenuClass.prg  | 10,303 | 
++-------------------------+
+| MenuObject.scx | 2,232  | 
++-------------------------+
+| MenuObject.sct | 10,906 | 
++-------------------------+
+| Program3.prg   | 44     | 
++-------------------------+
+| DoMenuForm.prg | 2,116  | 
++-------------------------+
+| ReadMe.txt     | 1,451  | 
++-------------------------+
+
+This example contains a project (MenuObject.pjx) that runs when a menu item is
+chosen. MenuObject.pjx contains a form (MenuObject.scx), a MenuClass class
+definition (MenuClass.prg), a Main program (DoMenuForm.prg), and a program
+(program3.prg).
+
+Steps to Run the Sample
+-----------------------
+
+1. Run the self-extracting executable file (MenuObject.exe) into a folder.
+
+2. In the Visual FoxPro Command window, run DoMenuForm. When the form is run,
+  three menu pads are displayed on the system menu, Test1, Test2, and Test3.
+
+3. Select Enable Test2 menu pad to enable the Test2 menu pad.
+
+4. Select Add Option4 menu pad to the menu to add another Option4 menu pad to
+  the system menu.
+
+5. Select Add Menu items to Option4 to add a menu item under the Option4 menu
+  pad.
+
+6. Select Disable menu items under Sub-Test3-2-2 to disable the Sub-Test3-2-2
+  menu items in Test3 -&gt; SubTest3-2 -&gt; SubTest3-2-2.
+
+7. Select Disable menu item Sub-Test3-2-2 to disable menu item Sub-Test3-2-2.
+
+8. Select Change Caption Test3 to WhoIsThis to check the Test3 menu pad text to
+  WhoIsThis.
+
+9. Select Test1 -&gt; Exit or click the Exit button on the form to quit the
+  program.
+
+NOTE: The code provided in the sample does not contain any type of error checking
+routines. The code provided only demonstrates how to create a menu object
+wrapper.
+
+Additional query words: MenuObject
+
+======================================================================
+Keywords          : kbfile kbSample kbvfp500 kbvfp600 kbXBase kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

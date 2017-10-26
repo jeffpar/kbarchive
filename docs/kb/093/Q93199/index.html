@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93199/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93199/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93199/","publisher":null,"image":null,"headline":"Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93199-sample-childmnuexe-implements-a-child-window-with-menus">Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93199
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbMenu kbGrpDSUser kbOSWin310 kbWndw kbWndwProp
+Last Modified: 04-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ChildMnu.exe demonstrates one way to embed a pop-up window with menus in a child
+window to simulate a child window with menus.Child windows by design do not have
+menus; however, some applications may require such child windows.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+ChildMnu.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Child windows were not designed to have menus but under certain circumstances an
+application may require a child window with menus. Below are the steps to
+simulate a child window with menus:
+
+1. Create the child for a main window using standard methods.
+
+2. Create a pop-up window without a caption or border. The pop-up window should
+  take up the entire client area of the child window.
+
+3. Moving: Set the child window as the parent of the pop-up window using
+  SetParent(). This method clips the pop-up window to the child's client and
+  moves the pop-up window relative to the child window when the child moves.
+
+4. Sizing: If the child window has sizing borders, then the pop-up window must
+  be adjusted as the child is sized.
+
+  Correct sizing of the pop-up window can be accomplished by processing the
+  child window's WM_SIZE message. When the child window receives a WM_SIZE
+  message, the child's new client area is calculated and the pop-up window is
+  adjusted.
+
+5. Activation: Child windows are not activated by design. When the user clicks
+  the pop-up window, activation is taken away from the main window and is given
+  to the pop-up window. To simulate the main window's activation, the pop-up's
+  window procedure, upon receiving a WM_ACTIVATE message, posts a WM_NCACTIVATE
+  message to the main window.
+
+  Note: This step causes flashing because the caption is repainted when going
+  back and forth between the pop-up window and the main window. Unfortunately,
+  there is no sure way to accomplish the change of caption's activation.
+
+Other Considerations
+--------------------
+
+Maximizing: When a child window is maximized, it uses the screen's maximum size.
+To have the child window act similar to an MDI child, two messages need to be
+processed; WM_SIZE in the main parent's window procedure and WM_GETMINMAXINFO in
+the child's window procedure.
+
+WM_SIZE of the child's parent window procedure checks for SIZE_MAXIMIZE and
+SIZE_RESTORE. Then, if the child window is maximized, call ShowWindow() with
+SW_MAXIMIZED. This method adjusts the child window's size to the new size of the
+parent's client area.
+
+On WM_GETMINMAXINFO of the child's window procedure, calculate the size of the
+parent's client area. Use the newly calculated size and set the ptMaxSize
+variable of the MINMAXINFO structure. This ensures that the child is always
+fully contained within its parent client area when maximized.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbMenu kbGrpDSUser kbOSWin310 kbWndw kbWndwProp 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

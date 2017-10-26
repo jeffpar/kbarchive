@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276259: SMS: Send Requests Are Created with Blank Routing Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276259: SMS: Send Requests Are Created with Blank Routing Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276259/","publisher":null,"image":null,"headline":"Q276259: SMS: Send Requests Are Created with Blank Routing Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276259-sms-send-requests-are-created-with-blank-routing-instructions">Q276259: SMS: Send Requests Are Created with Blank Routing Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276259
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbSender kbsms200preSP4fix kbSMSSender
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a Systems Management Server (SMS) multiple-level hierarchy, an intermittent
+problem can occur when the Scheduler and Sender components repeatedly try to
+evaluate and send jobs to child sites when the send-request file has no routing
+details. When this problem occurs, a build up of these send requests that do not
+have routing instructions causes the SMS Executive service to consume high CPU
+utilization as the Sender threads loop through the send requests.
+
+CAUSE
+=====
+
+This problem can occur if the Scheduler and Sender components collide when they
+read the same send request. When this occurs, the Scheduler component does not
+update the status of that send request and assumes that a new send request is
+required for the same package and instruction files.
+
+A new request file is created, but the Scheduler component does not update
+destination and final destination site details for the send request because the
+routing-instruction file already exists. The Sender component unsuccessfully
+attempts to send directly to a third-tier site or a lower site for which no
+direct address exists. This causes the request to be retried repeatedly, which
+causes the CPU utilization to increase.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, create addresses for all downlevel sites in the SMS
+hierarchy.
+
+When you periodically delete the bad send request files, most of the symptoms
+that are produced by this problem do not occur. To delete the bad send request
+files:
+
+1. Stop the SMS Executive and Site Component Manager services on the site
+  server.
+
+2. Delete the .srq and .srs files from the following folders:
+
+  &lt;Sms_root_folder&gt;\Inboxes\Schedule.box\Requests
+
+  -and-
+
+  &lt;Sms_root_folder&gt;\Inboxes\Schedule.box\Outboxes\Lan
+
+3. Start the SMS Executive and Site Component Manager services on the site
+  server.
+
+The send requests are automatically re-created by the SMS Scheduler component.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+This problem occurs only on primary site servers that do not have direct
+addresses for downlevel sites, which requires routing site-to-site communication
+through a direct child site.
+
+The following log entries indicate that the problem occurs on a site server.
+
+Sched.log:
+
+  Cannot create the routing instruction.
+
+Sender.log:
+
+  Found send request. ID: 1_C6CT01, Dest Site: T30
+  There is no longer an address to destination site T30
+  Returning send request to pending because address cannot not be found.
+  Site T30 added to list of busy sites because there is no available address.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbSender kbsms200preSP4fix kbSMSSender 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

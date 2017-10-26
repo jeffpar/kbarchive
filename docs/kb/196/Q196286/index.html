@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196286/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196286/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196286/","publisher":null,"image":null,"headline":"Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196286-vb4runexe-run-time-dlls-for-visual-basic-40-apps">Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196286
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbfile kbtophit kbAppSetup kbVBp kbVBp400 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Vb4Run.exe is a self-extracting file that contains the run-time engine(s) for
+both the Microsoft Visual Basic 4.0 16-bit and 32-bit versions.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Vb4Run.exe
+  (http://download.microsoft.com/download/vb40ent/Sample27/1/W9XNT4/EN-US/Vb4Run.exe)
+
+Release Date: NOV-25-1998
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+   File Name               Size
+   -------------------------------
+   Vb40016.dll              913KB
+   Vb40032.dll              705KB
+
+Copy these files into the Windows\System directory on the computer where the
+Microsoft Visual Basic 4.0 applications will be run.
+
+If the proper run-time engine is not installed on a system, the following errors
+occur when you try to run a Microsoft Visual Basic 4.0 application:
+
+Windows 95 or Windows 98
+------------------------
+
+  Cannot find VB40016.DLL. Windows needs this file to run
+  C:\Project1.exe
+
+  -or-
+
+  Cannot find VB40032.DLL. Windows needs this file to run
+  C:\Project1.exe
+
+Windows NT
+----------
+
+  Cannot find VB40016.DLL
+
+  -or-
+
+  Cannot find VB40032.DLL
+
+After clicking the OK button, the follow error displays:
+
+  Cannot find file C:\Project1.exe (or one of its components). Check
+  to ensure the path and filename are correct and that all required
+  libraries are available.
+
+NOTE: The filename that appears in the error message will be application
+specific.
+
+Vb40016.dll is the run-time engine used by applications developed in Microsoft
+Visual Basic version 4.0 16-bit.
+
+Vb40032.dll is the run-time engine used by applications developed in Microsoft
+Visual Basic version 4.0 32-bit.
+
+In order to successfully run Visual Basic 4.0 applications, one of the preceding
+run-time files must be installed.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q196285 FILE: VB3Run.exe Run-Time .dll for Visual Basic 3.0 Apps
+
+Additional query words: Vb4Run
+
+======================================================================
+Keywords          : kbfile kbtophit kbAppSetup kbVBp kbVBp400 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101908/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101908/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101908/","publisher":null,"image":null,"headline":"Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101908-comprehensive-list-of-wrk-version-31-doc-errors-part-2">Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101908
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a comprehensive list of documentation errors in the
+"Microsoft Windows Resource Kit" (WRK) guide for version 3.1. This article
+covers errors on pages 200-501 of the guide.
+
+- Page 220 Incorrectly Places Order= Line in the PROGMAN.INI
+
+- Page 220 Incorrectly Describes Window= Line
+
+- Page 239 Incorrectly References CommandEnvSize Variable
+
+- Page 244 Incorrectly States Permanent Swap File Name
+
+- Page 244 Incorrectly States Can't Create a Permanent Swap File with Stacker
+
+- Page 248 Incorrectly Describes Windows 3.1 Support for VCPI
+
+- Page 262 Doesn't Mention 32-Bit Disk Access
+
+- Page 269 Translation Buffer Information Is Incorrect
+
+- Page 310 Incorrectly References Character Map Information
+
+- Page 317 Chart Incorrectly States Vector Fonts Can't Print
+
+- Page 317 Doesn't List Wingdings as an Installed Font
+
+- Page 324 Incorrectly States PFM Editor Kit Available From PSS
+
+- Page 327 Incorrectly Describes How to Create FINSTALL.DIR File
+
+- Page 334 Incorrectly References Virtual Printer Memory Information
+
+- Page 337 Incorrectly Describes Changing TrueType Names
+
+- Page 343 and page 348 Incorrectly State COM Addresses
+
+- Page 348 Provides Incorrect Examples of MODE Command
+
+- Page 388 Incorrectly Describes Logging On/Off Novell Server
+
+- Page 391 Incorrectly States the Requirements for IRQ 2 Setting
+
+- Page 398 Incorrectly Describes How to Make a Boot Disk
+
+- Page 414 Incorrectly States SMARTDRV.EXE Must Load Low
+
+- Page 419 HIMEM.SYS Machine-Type Chart Incorrect
+
+- Page 440 Shows Incorrect Menu Bar for Network Assistant Utility
+
+- Page 441 Incorrectly States Use F1 to Activate SMARTMON Help
+
+- Page 444 Incorrectly States Audio Drivers Available with WRK
+
+- Page 500 Incorrectly States README.WRI Contents
+
+- Page 501 Incorrectly Describes Removing Unused Fonts
+
+- Page 526 Incorrectly Indexes DDE Definition
+
+MORE INFORMATION
+================
+
+Page 220 Incorrectly Places Order= Line in the PROGMAN.INI
+----------------------------------------------------------
+
+On page 220 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1,
+the Order= line of the PROGMAN.INI file is incorrectly placed under the [Groups]
+section. The Order= line should be under the [Settings] section.
+
+The WRK guide lists the order= line as follows:
+
+     [Groups]
+     order=1 2 3 4 5
+
+The correct placement is as follows:
+
+     [Settings]
+     order=1 2 3 4 5
+
+Page 220 Incorrectly Describes Window= Line
+-------------------------------------------
+
+On page 220 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1,
+the Window= line value incorrectly states:
+
+  Four numbers that indicate the position of the window when Program Manager is
+  opened, followed by a 1 if the window is maximized.
+
+The number 1 should be a 3 to indicate a maximized window.
+
+Page 239 Incorrectly References CommandEnvSize Variable
+-------------------------------------------------------
+
+Page 239 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+incorrectly states:
+
+  Windows 386 Enhanced mode provides access to extended memory for non-Windows
+  applications by creating virtual machines up to 640k in size, or the size
+  defined by the CommandEnvSize= entry in the [NonWindowsApp] section of the
+  SYSTEM.INI.
+
+This is incorrect because CommandEnvSize is only used to specify the COMMAND.COM
+environment size.
+
+Page 244 Incorrectly States Permanent Swap File Name
+----------------------------------------------------
+
+Page 244 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly identifies the permanent swap file in the following line:
+
+  A permanent swap file is a hidden file named 386PART.PAR...
+
+The correct name of the permanent swap file is 386SPART.PAR.
+
+Page 244 Incorrectly States Can't Create
+a Permanent Swap File with Stacker
+---------------------------------------------------------------------------
+
+On page 244 of the Windows Resource Kit (WRK) guide for version 3.1, the
+"Creating Swap Files for Virtual Memory" section incorrectly states the
+following:
+
+  You cannot create a permanent swap file if Stacker is running on your system.
+
+You can create a permanent swap file when Stacker is running on your system
+properly as specified by Stacker. The correct statement should read as follows:
+
+  You cannot create a permanent swap file on a compressed (Stacked) drive since
+  an uncompressed contiguous space is required for a permanent swap file.
+
+Page 248 Incorrectly Describes Windows 3.1 Support for VCPI
+-----------------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 incorrectly
+states on page 248:
+
+  Windows 3.1 supports VCPI in both standard mode and 386 enhanced mode.
+
+Windows 3.1 is a Virtual Control Program Interface (VCPI) client in standard mode
+(using DOSX.EXE). Windows 3.1 in 386 enhanced mode is a DOS Protected Mode
+Interface (DPMI) server (using WIN386.EXE); it does not support VCPI.
+
+It is possible to run some VCPI applications in standard mode. It is not possible
+to run VCPI applications in 386 enhanced mode.
+
+Page 262 Doesn't Mention 32-Bit Disk Access
+-------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 should include
+the following item in the subheading titled "To ensure optimal speed
+performance" on page 262:
+
+  Use 32-bit disk access to speed up the access time to hard disk. For a
+  technical discussion of this feature, see "An Introduction to 32-Bit Disk
+  Access" in Appendix D.
+
+Chapter 6 of WRK is dedicated to Windows performance tips. 32-bit disk access is
+a speed enhancement feature in Windows 3.1.
+
+32-bit disk access is a device driver that allows Windows to talk directly to the
+hard disk. Windows 3.1 supports the industrial standards introduced by Western
+Digital 1003 controllers. If your hard disk controller is not Western Digital
+1003 compatible, you do not have this option available in Windows.
+
+Page 269 Translation Buffer Information Is Incorrect
+----------------------------------------------------
+
+Page 269 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+gives inaccurate instructions for placing the 386 enhanced mode translation
+buffers in the upper memory area (UMA).
+
+Paragraph 3 of the section titled "Freeing Conventional Memory in 386 Enhanced
+Mode" states:
+
+  Then add an x= switch to the EMM386 line in the CONFIG.SYS to exclude the
+  unused UMB ranges.
+
+Other information in this section indicates that Windows 3.1 uses these excluded
+ranges for placement of the translation buffers.
+
+This is incorrect; any UMAs excluded by an upper memory block (UMB) provider are
+also excluded from use by Windows 3.1.
+
+Windows running in 386 enhanced mode queries any UMB provider (such as
+EMM386.EXE, QEMM, and 386MAX) for information about the UMB area.
+
+Page 310 Incorrectly References Character Map Information
+---------------------------------------------------------
+
+Page 310 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+contains the following statement:
+
+  For details about special character sets in Windows, see Appendix A, "Special
+  Characters," in the "Windows User's Guide."
+
+This is incorrect. Appendix A is actually titled "Windows and Networks."
+Information on inserting special characters can be found in the Character Map
+section of Chapter 12, "Additional Accessories," on pages 447-449 of the
+"Microsoft Windows User's Guide."
+
+Unlike the "Windows User's Guide" for version 3.0, no reference table for any
+kind of special characters is included in the Windows 3.1 manual.
+
+Appendix B in the Windows 3.0 manual contains the table references for the
+special character codes (that is, ANSI and IBM PC). Windows 3.1 users can use
+Character Map to reproduce any special characters and available in the Windows
+environment.
+
+Most of the character table from Appendix B of the "Windows User's Guide" for
+version 3.0 is also valid for Windows 3.1. Users who have this guide and who are
+now running version 3.1 can refer to this table if they need to enter characters
+through keyboard commands. (Note that the table may not work with certain
+TrueType fonts.)
+
+Page 317 Chart Incorrectly States Vector Fonts Can't Print
+----------------------------------------------------------
+
+Page 317 of the version 3.1 "Microsoft Windows Resource Kit" (WRK) guide for
+version 3.1 includes a chart that incorrectly states that the Windows vector
+fonts Modern, Roman, and Script cannot print on dot- matrix printers.
+
+In the third paragraph on page 322, the WRK guide correctly states that vector
+fonts are printable on dot-matrix printers.
+
+Page 317 Doesn't List Wingdings as an Installed Font
+----------------------------------------------------
+
+Page 317 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 does
+not list Wingdings as a character set that is installed with Windows 3.1.
+
+A line should be added to the table that reads:
+
+  Wingdings***          TrueType, proportional, scalable
+
+Also, an additional footnote should be added:
+
+  ***Wingdings character set, rather than ANSI character set
+
+Page 324 Incorrectly States PFM Editor Kit Available From PSS
+-------------------------------------------------------------
+
+Page 324 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+incorrectly states that the PFM Editor Kit is available from Microsoft Product
+Support Services. The PFM Editor Kit is only included with the Microsoft Windows
+Device Development Kit (DDK).
+
+The Microsoft Windows DDK contains the Windows Printers and Fonts Kit, which
+includes information on the Printer Font and Cartridge Metrics (PFM and PCM)
+file formats and the new PFM Editor. It also contains technical notes on the
+PCL/HP LaserJet and PostScript printer drivers.
+
+The Microsoft Windows Device Development Kit (DDK) is a retail package that can
+assist in writing device drivers for printers, video display cards, and
+networks. It may be ordered through software dealers, or directly from Microsoft
+by calling (425) 882-8088.
+
+Page 327 Incorrectly Describes How to Create FINSTALL.DIR File
+--------------------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 incorrectly
+describes how to create the FINSTALL.DIR file.
+
+Page 327 of the WRK guide incorrectly describes step 2 as:
+
+  In the Font Installer dialog box, hold down the CTRL and SHIFT keys and click
+  the Exit button.
+
+This step should read:
+
+  In the Font Installer dialog box, hold down the CTRL and SHIFT keys and
+  choose the Add Fonts button.
+
+Page 334 Incorrectly References Virtual Printer Memory Information
+------------------------------------------------------------------
+
+Although page 334 of the "Microsoft Windows Resource Kit" Windows 3.1 implies
+that more details exist concerning virtual printer memory in chapter 4
+("Troubleshooting") of the "Getting Started with Microsoft Windows" guide, no
+additional information specific to printer virtual memory exists there.
+Nonetheless, the "To change a PostScript printer's options" section on page 84
+of the "Getting Started with Microsoft Windows" guide does provide information
+about the Clear Memory Per Page check box. Other information about virtual
+memory is found by choosing the Help button or by pressing F1 while the
+insertion point is in the Virtual Memory settings box.
+
+Page 337 Incorrectly Describes Changing TrueType Names
+------------------------------------------------------
+
+On page 337 of the "Microsoft Windows Resource Kit" guide for version 3.1, the
+first paragraph under the section titled "Changing Typeface Names for Soft
+Fonts" states:
+
+  If you purchase a TrueType font or other soft font that has the same name as
+  a font you are already using, you should use the Font Installer to change the
+  name of the font.
+
+This information is incorrect. TrueType font names cannot be changed using the
+Font Installer.
+
+In the Font Installer dialog box, if you have no fonts installed, choose Add
+fonts and specify the WINDOWS\SYSTEM directory. A message "No fonts compatible
+with this printer" or "No fonts found" is returned.
+
+Pages 343 and 348 Incorrectly State COM Addresses
+-------------------------------------------------
+
+In the "Microsoft Windows Resource Kit" (WRK) for version 3.1, incorrect base I/O
+addresses and IRQs for COM1, COM2, COM3, and COM4 occur in the following
+places:
+
+- Page 2 of the COMMQA.WRI file
+
+- Page 343 of the WRK guide
+
+- Page 348 of the WRK guide
+
+The correct addresses and IRQs are as follows:
+
+  Port   Address   IRQ
+  --------------------
+
+  COM1   3F8h      IRQ4
+  COM2   2F8h      IRQ3
+  COM3   3E8h      IRQ4
+  COM4   2E8h      IRQ3
+
+Page 348 Provides Incorrect Examples of MODE Command
+----------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for Windows version 3.1 has an
+incorrect example of the MS-DOS MODE redirector command. Page 348 of the WRK
+guide states the following:
+
+  ...if you have a physical LPT1, but not an LPT3, and you execute MODE
+  LPT3=LPT1, output sent to LPT3 will be redirected to LPT1.
+
+The MS-DOS MODE command can be used to redirect output from a parallel port to a
+serial communications port, but not to another parallel port. The following is
+an example of a valid command:
+
+  MODE LPT1=COM1
+
+Redirecting output to a parallel port generates the following error message:
+
+  Invalid Parameter - =LPTx
+
+A redirection of COM1: to LPT1: requires the use of a special buffer for which
+the MODE command would have to allocate space. The MS-DOS MODE command does not
+have this capability.
+
+For more information on port redirection, query on the following words in the
+Microsoft Knowledge Base:
+
+  mode and redirect and port
+
+Page 388 Incorrectly Describes Logging On/Off Novell Server
+-----------------------------------------------------------
+
+Page 388 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 has
+the following documentation error:
+
+  Do not try to log on, log out, attach, or detach a Novell server from the
+  MS-DOS Prompt within Windows. You must perform these operations before
+  starting Windows.
+
+It should state:
+
+  Do not try to log on, log out, attach, or detach a Novell server from the
+  MS-DOS Prompt within Windows. You must log on to or log out of the Novell
+  server before starting Windows. You can then attach and detach from Novell
+  servers through Windows File Manager.
+
+Page 391 Incorrectly States the Requirements for IRQ 2 Setting
+--------------------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 has the
+following documentation error on page 391:
+
+  Do not use INT 2, INT 9, or above and do not use a base I/O port address
+  below 300 for your LAN card (such as ArcNet or Token Ring) unless you use
+  VPICDA.386, which you can obtain from either Microsoft or Novell.
+
+Windows 3.1 does not require VPICDA.386 to work with IRQ 2 in the Novell network
+environment.
+
+NOTE: The words INT 2 and INT 9 as stated above should be IRQ 2 and IRQ 9.
+
+For more information on VPICDA.386 and Windows 3.1, query on the following words
+in the Microsoft Knowledge Base:
+
+  VPICDA.386 and patch
+
+Page 398 Incorrectly Describes How to Make a Boot Disk
+------------------------------------------------------
+
+Page 398 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+gives inaccurate syntax for creating a bootable floppy disk with the FORMAT
+command. Step 3 of the section titled "To create a 'clean boot' disk for
+troubleshooting" incorrectly states:
+
+  Make a boot disk. To do this, place a disk in drive A, type the following
+  command at the command prompt:
+
+  FORMAT A:
+
+This syntax does not create a boot disk. The correct syntax is:
+
+  FORMAT A: /S
+
+The /S switch causes the MS-DOS FORMAT command to copy the MS-DOS operating
+system files to the formatted disk. These files must be on the disk to enable
+the operating system to boot itself up.
+
+Page 414 Incorrectly States SMARTDRV.EXE Must Load Low
+------------------------------------------------------
+
+Page 414 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+incorrectly states that SMARTDRV.EXE must be loaded into 640K conventional
+memory and cannot be loaded high.
+
+SMARTDRV.EXE in the AUTOEXEC.BAT file loads itself into upper memory blocks
+(UMBs) if they are available and are managed by MS-DOS 5.0 or 6.0 with the
+command DOS=UMB. If you are using a third-party memory manager, such as QEMM or
+386MAX, consult the documentation for that product.
+
+SMARTDRV.EXE installed in the CONFIG.SYS file for double buffering must not be
+loaded high.
+
+On page 414, the WRK guide also states that HIMEM.SYS and EMM386.EXE must be
+loaded in conventional memory. This is partially correct. A DEVICEHIGH command
+for these drivers has no effect. Once they are loaded, however, these drivers do
+use memory beyond the 640K conventional memory.
+
+Page 419 HIMEM.SYS Machine-Type Chart Incorrect
+-----------------------------------------------
+
+Page 419 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+contains an incorrect HIMEM.SYS machine-type chart. The chart displayed refers
+to the HIMEM.SYS driver version included with Windows version 3.0.
+
+The proper switches for Windows 3.1 are documented on page 545 of the "Microsoft
+Windows User's Guide" for version 3.1.
+
+Page 419 of the WRK guide also refers to pages 283-287 of the "Microsoft MS-DOS
+User's Guide and Reference" to aid you in configuring device drivers, such as
+EMM386 and RAMDrive. However, the page numbers discussed (283-287) refer to the
+MS-DOS version 5.0 manual manufactured by Microsoft. These page numbers may
+differ between versions of MS-DOS. Manuals that are manufactured by original
+equipment manufacturers (OEMs), which are often included with the purchase of a
+computer, may also differ.
+
+If you do not have the "Microsoft MS-DOS User's Guide and Reference" for MS-DOS
+version 5.0 or 6.0, refer to your MS-DOS reference guide's index for topics
+relating to the CONFIG.SYS and AUTOEXEC.BAT files.
+
+For specific advice on configuring and using the EMM386.EXE and RAMDRIVE.SYS
+devices, see pages 547-555 of the "Microsoft Windows User's Guide" for version
+3.1.
+
+Page 440 Shows Incorrect Menu Bar for Network Assistant Utility
+---------------------------------------------------------------
+
+Page 440 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+incorrectly shows the menu bar for the Network Assistant utility as having
+"Utilities" and "Help" as menu options.
+
+The menu bar for the Network Assistant utility actually has "File," "Window," and
+"Help" as menu options.
+
+Page 441 Incorrectly States Use F1 to Activate SMARTMON Help
+------------------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for version 3.1 states the
+following in the SMARTDrive Monitor (SMARTMON) section on page 441:
+
+  When SMARTDrive Monitor is running, press F1 for information about its
+  features.
+
+This is a documentation error. To properly activate the Help feature, choose the
+Help button in SMARTDrive Monitor or press ALT+H.
+
+The SMARTDrive Monitor (SMARTMON.EXE) provides an interface to the performance of
+SMARTDrive 4.0, the disk cache included with Microsoft Windows 3.1.
+
+Page 444 Incorrectly States Audio Drivers Available with WRK
+------------------------------------------------------------
+
+Page 444 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+indicates that the WRK includes device drivers for the IBM Multimedia Audio
+Board and the CompuAdd Multimedia Board.
+
+For a sound driver for the CompuAdd Multimedia Board, please contact CompuAdd.
+
+Page 500 Incorrectly States README.WRI Contents
+-----------------------------------------------
+
+Page 500 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly states:
+
+  See README.WRI on the Windows Resource Kit disk for a complete list of files
+  that includes:
+
+- The disk location for each Windows file, based on the disk format size.
+
+- The expanded file size for each file.
+
+- A description of the purpose of each file.
+
+The actual lists can be found in the LAYOUTS.WRI file from the WRK.
+
+The WRK README.WRI has a section (7.0) titled "Windows 3.1 Disk Layouts";
+however, it only contains the following line:
+
+  Please refer to the file LAYOUTS.WRI located in your Windows Resource Kit
+  directory.
+
+Page 501 Incorrectly Describes Removing Unused Fonts
+----------------------------------------------------
+
+On page 501 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1,
+the following steps incorrectly outline how to remove unused fonts.
+
+  3. Make sure the Delete Font File from Disk option is checked, and
+     choose Remove.
+
+  4. When the dialog box prompt appears, choose Yes to remove the
+     file.
+
+The correct instructions are:
+
+  3. Choose Remove. The Remove Font dialog box appears. Make sure the
+     Delete Font From Disk check box is selected.
+
+  4. Choose Yes to remove the file.
+
+Page 526 Incorrectly Indexes DDE Definition
+-------------------------------------------
+
+Page 526 of the "Microsoft Windows Resource Kit" (WRK) guide for version 3.1
+incorrectly lists Page 439 as the index reference for the DDE (Dynamic Data
+Exchange) definition. The correct page number is 449.
+
+KBCategory: kbnetwork kbdisplay kbsound kb3rdparty kbdocerr kbmm kbsetup
+KBSubcategory: win31 winmem wincom
+
+Additional query words: 3.1 3.11 3.10 WRK wrkit guide documentation error MMDISP.EXE windrvr systems administrator EMM386.SYS a20 handler incorrect smart drive wrk2 hp font installer patch vpicda IRQ2 compression winwrk attaching detaching crc xmodem swapfile money AIF setup.inf minoutlineppm minoutlineeppem minoutlineeppm dot matrix sndblst default.pif pif editor default VM Size fastdisk
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

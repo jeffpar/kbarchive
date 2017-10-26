@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135032/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135032/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135032/","publisher":null,"image":null,"headline":"Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135032-pc-ntmmta-cannot-run-as-an-automatic-service-w-banyan-vines">Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135032
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft Windows NT Multitasking MTA (NT MMTA) as a service
+set to Start up automatically, mail is not delivered. This may occur when the
+postoffices are located on a Banyan Vines server.
+
+CAUSE
+=====
+
+The NT MMTA cannot be set up as an automatic service when you use Banyan Vines
+Windows NT drivers due to the inability to make Universal Naming Convention
+(UNC) connections outside of a Banyan Vines login session.
+
+RESOLUTION
+==========
+
+Run the NT MMTA from the CMD prompt.
+
+Call Banyan Vines with any further questions on their redirector.
+
+
+MORE INFORMATION
+================
+
+For each additional type of network (Novell NetWare, Banyan Vines, etc.), a
+provider must be installed. The provider is the component that allows a Windows
+NT computer to communicate with the network.
+
+From the application's viewpoint, there are two sets of commands that can cause
+network traffic UNC commands and WNet (part of the Win32 API) commands.
+
+Although, it is enough to specify the servername to list a server's shared
+resources, a full UNC name is in the following form:
+
+  \\server\share\subdirectory\filename
+
+WNet is specifically designed to allow applications on Windows NT workstations to
+connect to multiple networks, browse the resources of computers on those
+networks, and transfer data between computers of various networks. For example,
+File Manager uses the WNet interface to provide its network browsing and
+connection facilities.
+
+The provider layer spans between kernel and user modes to manage commands that
+may cause network traffic. The provider layer also includes two components to
+route UNC and WNet requests to the appropriate provider:
+
+- The Multiple UNC Provider (MUP) receives UNC commands and locates the
+  redirector that can make a connection to the UNC name.
+
+- The Multiple Provider Router (MPR) receives WNet commands and passes the
+  request to each redirector in turn until one is found that can satisfy the
+  request.
+
+NOTE: I/O calls, such as Open, can contain both a UNC name and WNet calls.
+
+Multiple UNC Provider
+---------------------
+
+The MUP is a kernel-mode component that locates UNC names. When an application
+sends a command containing UNC names, MUP routes each UNC name to one of the
+registered UNC providers, including LanmanWorkstation and any others that may be
+installed. When a provider indicates that it can communicate with the server,
+MUP sends the remainder of the command to the provider.
+
+When applications make I/O calls that contain UNC names, the MUP directs them to
+the appropriate redirector file system driver. The call is routed to its
+redirector based on the handle on the I/O call.
+
+Multiple Provider Router
+------------------------
+
+Through the MPR, Windows NT provides an open interface that enables consistent
+access to third-party network file systems. The key to the MPR is that all file
+systems, regardless of type and physical location, are accessible through the
+same set of file system APIs.
+
+Applications, including File Manager, make file system requests through the
+Windows NT Win32 API. The MPR ensures that requests are directed to the proper
+file system. Local file requests are sent to the local disk; remote requests to
+Windows-based servers are sent to the proper server by the Windows redirector,
+and requests to NetWare-based servers are handled by the NetWare client for
+Windows NT and sent to the NetWare server, and so on.
+
+Because applications access all types of files through a single set of APIs, any
+application can access any kind of server without affecting the user.
+
+Additional query words: 3.20 3.50 redirecter logon
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

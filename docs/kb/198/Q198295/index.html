@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198295: WD97: How to Read Postal Bar Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198295: WD97: How to Read Postal Bar Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198295/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198295/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198295/","publisher":null,"image":null,"headline":"Q198295: WD97: How to Read Postal Bar Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198295-wd97-how-to-read-postal-bar-codes">Q198295: WD97: How to Read Postal Bar Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198295
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbenvelope word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to read a postal bar code in order to determine
+whether Microsoft Word created the correct bar code.
+
+MORE INFORMATION
+================
+
+A postal bar code is composed of three main components: framing bars, number
+bars, and checksum bars.
+
+The first bar on the left side and the last bar on the right side of the postal
+bar code are framing bars for the postal bar code. You can ignore these.
+
+To read the bar code, start with the second bar. Group the bars into groups of
+five bars each. Each number in a postal bar code consists of five bars.
+
+The following address is used as an example:
+
+||,|,,|,,|,||,,,,|,|,,,|,|,||,,,,||,|,|,,|,|,,||,,,,,,|||,,|,|
+Microsoft Corporation
+1 Microsoft Way
+Redmond, WA.  98052-6399
+&lt;BR/&gt;&lt;BR/&gt;
+Postal Bar Code Legend:
+
+  | represents a tall bar
+  , represents a short bar
+
+  Number   Bar code                Number    Bar code
+  ------   --------                ------     --------
+    0       ||,,,                   5        ,|,|,
+    1       ,,,||                   6        ,||,,
+    2       ,,|,|                   7        |,,,|
+    3       ,,||,                   8        |,,|,
+    4       ,|,,|                   9        |,|,,
+
+Breakdown of Sample Bar Code:
+
+Framing Bar                                                       
+Checksum
+-----------                                                       
+--------
+|                                                                     8
+v                                                                   /   
+| |,|,, |,,|, ||,,, ,|,|, ,,|,| ,||,, ,,||, |,|,, |,|,, ||,,, ,,,|| |,,|,
+|
+
+ \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   /      
+^
+   9     8     0     5     2     6     3     9     9     0     1        
+|
+                                                                        
+|
+                                                                 Framing
+|
+                                                                     Bar
+|
+                                                               
+---------+
+           9 8 0 5 2                   6 3 9 9             0 1
+           ---------                   -------      -----------------
+           Zip Code                    Zip+4        Last Two Digits
+                                                    of Street Address
+
+The checksum is the smallest number that, when added to the total of the other
+digits, gives a result that is a multiple of 10. The checksum in this example is
+8. When you add 8 to 52 (the sum of the other digits)-- the result is 60, a
+multiple of 10.
+
+For additional information about adding or creating postal bar codes in Word, or
+if the bar code produces incorrect results, please see the following articles in
+the Microsoft Knowledge Base:
+
+  Q112252 Word Assigns a Delivery Point Bar Code (DPBC) of 99
+
+  Q126863 Delivery Point Bar Code Use 99 in Last Two Digits of Address
+
+  Q105576 Position of Bar Codes is Certified by U.S. Postal Service
+
+Additional query words: word6 macword98
+
+======================================================================
+Keywords          : kbenvelope word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175025: How to Build and Reset a Trust Relationship from a Command Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175025: How to Build and Reset a Trust Relationship from a Command Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175025/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175025/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175025/","publisher":null,"image":null,"headline":"Q175025: How to Build and Reset a Trust Relationship from a Command Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175025-how-to-build-and-reset-a-trust-relationship-from-a-command-line">Q175025: How to Build and Reset a Trust Relationship from a Command Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175025
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article provides a way to build a trust relationship
+between two domains from a command line. To do this, use the NETDOM command line
+utility that comes with the Windows NT 4.0 Resource Kit Supplement 2.
+
+
+CAUTION: The method described in this article has not been extensively tested in
+large installations. Microsoft cannot guarantee that modification of domains as
+recommended herein will accomplish the objective described in this article under
+all circumstances and in all configurations.
+
+MORE INFORMATION
+================
+
+Suppose MYMASTERDOM is the name of the master domain (that is, the trusted
+domain) and MYRESOURCEDOM the name of the resource domain (the trusting domain)
+that will trust the master domain.
+
+With NETDOM, you can build the trust relationship from the command line. To do
+this, perform the following steps:
+
+1. On the master domain, use the following command to create a resource computer
+  account (note that this command should appear on a single line):
+
+  " NETDOM /Domain:MYMASTERDOM RESOURCE MYRESOURCEDOM &lt;trust password&gt;
+  /ADD" (without the quotation marks)
+
+2. On the resource domain, use the following command to establish a trust with
+  the master domain (note that this command should appear on a single line):
+
+  " NETDOM /Domain:MYRESOURCEDOM MASTER MYMASTERDOM &lt;trust password&gt;
+  /TRUST" (without the quotation marks)
+
+NETDOM can also build a trust relationship and complete the operations above all
+at once. If you have an administrator access to the resource domain, both of the
+following commands builds the trust relationship in one step (note that these
+commands should each appear on a single line):
+
+" NETDOM MASTER MYMASTERDOM &lt;trust password&gt; /TRUST " (without the
+quotation marks)
+
+-or-
+
+(If you need to enter an administrator account for the resource domain)
+
+" NETDOM /Domain:MYRESOURCEDOM /User:MYRESOURCEDOM\&lt;administrator user&gt;
+/Password:&lt;administrator password&gt; MASTER MYMASTERDOM &lt;trust
+password&gt; /TRUST " (without the quotation marks)
+
+You can run the second command above from the master domain primary domain
+controller (PDC) or from any Windows NT computer as soon as you have an
+administrator access to the master domain.
+
+
+For more information on the NETDOM command, refer to the Windows NT 4.0 Resource
+Kit documentation.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

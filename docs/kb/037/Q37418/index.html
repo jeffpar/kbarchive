@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37418: LINK &quot;Cannot Open Response File&quot; When Make EXE File in 4.50 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37418: LINK &quot;Cannot Open Response File&quot; When Make EXE File in 4.50" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37418/","publisher":null,"image":null,"headline":"Q37418: LINK &quot;Cannot Open Response File&quot; When Make EXE File in 4.50","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37418-link-cannot-open-response-file-when-make-exe-file-in-450">Q37418: LINK "Cannot Open Response File" When Make EXE File in 4.50</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37418
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.50 | mspl13_basic
+Last Modified: 12-JAN-1990
+
+The error "Cannot open response file" can occur if "Make EXE File..."
+in QB.EXE Version 4.50 invokes the Segmented-Executable linker (which
+does not come with QuickBASIC). QuickBASIC versions earlier than 4.50
+do not create a response file for the linker, and link successfully
+without giving this error message. (Note that QuickBASIC Versions 4.00
+and later require at least Version 3.61 of the linker to handle the
+/EX (EXEPACK) option.)
+
+To properly create an .EXE file from within the QuickBASIC Version
+4.50 environment, you must first make sure that the linker found by
+QuickBASIC (either in your search path, or in the executable file path
+specified in QuickBASIC) is the Overlay Linker Version 3.6x.
+
+If the linker found is a version earlier than 3.61, or a Segmented-
+Executable linker such as the one supplied with Microsoft BASIC
+Compiler Versions 6.00 and 6.00b or with Microsoft BASIC PDS Version
+7.00, there may be complications in using "Make EXE File..." from
+within the QuickBASIC Version 4.50 environment. BASIC PDS 7.00 comes
+with the QBX.EXE environment, which contains all of the functionality
+of the QuickBASIC 4.50 environment. Microsoft does not recommend using
+QB.EXE 4.50 or earlier with BASIC PDS 7.00.
+
+In QuickBASIC Version 4.50, the link step of the .EXE file creation is
+performed with the use of a response file. (A response file can be
+used to supply the input to the linker, such as object modules, output
+file name, extra libraries, etc.) QuickBASIC creates a temporary file
+(~QBLNK.TMP) that contains all of the information required by the four
+prompts of the linker (object files, .EXE file name, list file, and
+libraries), then tells the linker to use this file for a response
+file.
+
+This causes a problem with the Segmented-Executable linkers, because
+these linkers have a fifth input prompt (definitions file). Since the
+response file does not satisfy this prompt, the linker waits for you
+to enter a definitions file. You can press ENTER at this prompt, and
+the linker will complete its task.
+
+In addition to asking for a definitions file, the Segmented-Executable
+linker has another difference from the Overlay linker. If a response
+file is inadvertently supplied with a four-character extension (for
+example, RESPONSE.ABCD), the Segmented-Executable linker stops with a
+"Cannot open response file" error message. However, the Overlay linker
+truncates the filename to a three-character extension (for example,
+RESPONSE.ABCD becomes RESPONSE.ABC), and then looks for that file.
+
+Under some circumstances, QuickBASIC Version 4.50 generates an invalid
+file specification for the response file (specifically "~QBLNK.TMPD",
+which has an illegal fourth letter, D, on the name extension). Because
+of the differences between the two linkers, the Overlay linker ignores
+the appended "D" on the response file, and correctly produces an .EXE
+file. However, the Segmented-Executable linker gives a fatal error,
+"Cannot open response file", and aborts.
+
+Microsoft has confirmed this to be a problem in Version 4.50. We are
+researching this problem and will post new information here as it
+becomes available.
+
+The following is a summary of workarounds for this problem:
+
+1. Use the Overlay Linker Version 3.6x.
+
+2. If the response file is found, the .EXE file can be produced by
+   pressing ENTER at the "Definitions file:" prompt. If the response
+   file is NOT found, try renaming your BASIC source file, changing it
+   by a factor of 1 in length (that is, if your source file is an even
+   number of characters long, make it odd, and vice-versa).
+
+3. Compile and link your program from the DOS command line.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

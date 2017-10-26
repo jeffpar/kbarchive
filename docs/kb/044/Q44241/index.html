@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44241: .EXE with PRINT TAB or SPC Can Hang If Compiled with BC /S | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44241: .EXE with PRINT TAB or SPC Can Hang If Compiled with BC /S" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44241/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44241/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44241/","publisher":null,"image":null,"headline":"Q44241: .EXE with PRINT TAB or SPC Can Hang If Compiled with BC /S","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44241-exe-with-print-tab-or-spc-can-hang-if-compiled-with-bc-s">Q44241: .EXE with PRINT TAB or SPC Can Hang If Compiled with BC /S</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44241
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890208-138 buglist4.50 | mspl13_basic
+Last Modified: 16-MAY-1989
+
+An .EXE program compiled in Microsoft QuickBASIC Version 4.50 can
+hang when all of the following three conditions are met:
+
+1. The program was compiled with the BC /s option.
+
+2. The program was printed with the PRINT or PRINT# statement.
+
+3. Any combination of TAB or SPC functions was used in the PRINT or
+   PRINT# statement.
+
+The following are workarounds for the problem:
+
+1. Break your program into smaller modules so that the /s switch is
+   not needed.
+
+2. When compiling, include the /X switch, which is normally used to
+   indicate the presence of ON ERROR with RESUME, RESUME NEXT, or
+   RESUME 0.
+
+This problem occurs only with Microsoft QuickBASIC Version 4.50, not
+with QuickBASIC Version 4.00 or 4.00b or with the Microsoft BASIC
+Compiler Version 6.00 or 6.00b. We are researching this problem and
+will post new information as it becomes available.
+
+The following program example demonstrates the problem that occurs
+when a program is compiled with the BC /s option:
+
+   c$ = "hello"
+   d$ = "bye"
+   print tab(8); c$; tab(16); d$
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

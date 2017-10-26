@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142516/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142516/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142516/","publisher":null,"image":null,"headline":"Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142516-msb-ocean-cd-audio-mci-driver-not-installed-with-aztech-sound">Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142516
+Product(s): Microsoft Home Kids Products
+Version(s): 1.0,3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 27-MAR-2002
+
+1.00
+WINDOWS
+kb3rdparty kbsetup kbsound kbmm kbprb kberrmsg kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+- the operating system: Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Setup for Magic School Bus Explores the Ocean (MSB Ocean),
+you receive the following error message:
+
+  CD Audio MCI driver not installed or there is no CD present in your CD-ROM
+  drive. Use the Drivers icon in Control Panel to install CD Audio MCI driver
+  if it is missing. Ensure you have your CD with the Magic School Bus Explores
+  the Ocean program inserted into your CD ROM drive.
+
+
+This behavior has been observed with the following configuration:
+
+- Aztech Sound card with a Panasonic (Matsushita) CD-ROM drive running under
+  Windows version 3.x.
+
+RESOLUTION
+==========
+
+Update the CD-ROM driver to use the following Panasonic driver (or later):
+
++------------------------------------------+
+| Filename  | Size   | Date    | Time      | 
++------------------------------------------+
+| CDMKE.SYS | 13,411 | 2/22/95 | 4:11:00AM | 
++------------------------------------------+
+
+You may obtain the driver Cdmke.sys by downloading the file, 56xdos.exe from one
+of the following locations:
+
+  WWW.PANASONIC.COM/OEM-CD-R.HTML (as of 1/10/96)
+
+  -or-
+
+  Panasonic BBS (770) 664-1833 (Communications Protocol: 8,N,1)
+
+NOTE: The file 56xdos.exe is a self-extracting, compressed file that, when
+uncompressed, provides you with the needed driver. There is an Install.exe file
+packaged in the 56xdos.exe, but you do not need to run the install program. Use
+the following instructions to replace the Cr56x.sys file with the newer
+Cdmke.sys file:
+
+1. Copy the Cdmke.sys file to your drivers folder on drive C (c:\drivers), where
+  C is the letter of your hard drive where you installed Windows.
+
+2. Edit the Config.sys file with a text editor, such as Notepad, and change the
+  line that contains the CD-ROM driver to the use the Cdmke.sys file. For
+  example, change the following line
+
+  Device=C:\Wavrider\Drivers\Cr56x.sys /P:340 /D:Mscd000
+
+  to
+
+  Device=C:\Drivers\Cdmke.sys /P:340 /D:Mscd000
+
+  NOTE: If you receive errors when you start the computer, check the switches
+  ("/" on the end of the Device line in Config.sys to make sure they specify
+  the proper settings).
+
+  For additional information, please see the manual that came with your CD-ROM
+  or contact your hardware manufacturer.
+
+3. Install and run MSB Ocean.
+
+If the steps above do not resolve the issue, please see the following articles in
+the Microsoft Knowledge Base:
+
+  Q139659 MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed
+
+  Q99470 Troubleshooting CD Audio Problems in Windows 3.1
+
+  Q92902 Media Player Cannot Play Audio CD If CDAudio=0 in MPLAYER.INI
+
+
+If you have trouble accessing or installing the file, please contact Panasonic
+(8:00 A.M. to 9:00 P. M. eastern time) at:
+
+  (800) 890-3219
+
+  -or-
+
+  (770) 664-3201
+
+MORE INFORMATION
+================
+
+NOTE: The driver for the Panasonic CD-ROM drive is usually included with the
+sound card. This is common practice because a CD-ROM drive often is connected
+through the sound card to the data bus.
+
+There may be situations when a CD-ROM driver causes Windows 3.x to misdetect the
+presence of the CD-Audio MCI driver. With other configurations, do not rule out
+the possibility that you may have to update your CD-ROM driver to get CD Audio
+to play correctly.
+
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: frizz kbmm multimedia multi-media multi media cdaudio mciaudio errors errmsg cdrom compact disc aztech astec aztect astech mmsystem282 mmsystem262 mmsystem 282 262 6 26 err msg msbearth winmsbearth mcicda.drv mcicda
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbOSWinSearch kbHomeProdSearch kbZNotKeyword6 kbZNotKeyword kbKidsSearch kbScholasticOcean kbOSWin310 kbOSWin311 kbOSWin300 kbOSWin300a kbMSBSearch
+Version           : :1.0,3.0,3.0a,3.1,3.11
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

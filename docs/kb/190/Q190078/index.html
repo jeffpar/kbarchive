@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190078: BUG: Error &quot;[[BadImplementsRefInCompatLib]]&quot; When You Recompile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190078: BUG: Error &quot;[[BadImplementsRefInCompatLib]]&quot; When You Recompile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190078/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190078/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190078/","publisher":null,"image":null,"headline":"Q190078: BUG: Error &quot;[[BadImplementsRefInCompatLib]]&quot; When You Recompile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190078-bug-error-badimplementsrefincompatlib-when-you-recompile">Q190078: BUG: Error "[[BadImplementsRefInCompatLib]]" When You Recompile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190078
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCompiler kbCOMt kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A binary compatible server implements an interface from a dynamic-link library
+(DLL) (which defines interfaces), and this DLL is recompiled as project
+compatible so that its interface globally unique identifier (GUID) is changed.
+However, when you recompile the server that implements this interface, you
+receive the following error message:
+
+  [[BadImplementsReflnCompatLib]]
+
+RESOLUTION
+==========
+
+Interfaces must be defined and locked before they can be implemented in other
+components. Thus, make sure that you compile the DLL that defines interfaces as
+binary compatible (to maintain the interface GUIDs) and not project compatible
+to avoid the "[[BadImplementsReflnCompatLib]]" error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This is a bug because it displays the "[[BadImplementsReflnCompatLib]]" error
+message instead of the following error message:
+
+  The binary compatibility DLL or EXE contains an implements type whose
+  definition cannot be found.
+
+If you click Help in the [[BadImplementsReflnCompatLib]] dialog box, the correct
+Help topic appears.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX DLL project. Class1 is created by default.
+
+2. From the Project menu, click Project1 Properties. Change Project Name to
+  MyServer, and then click OK.
+
+3. In Class1, paste the following code:
+
+  Public Sub Test()
+  '
+  End Sub
+
+4. From the File menu, click Make MyServer.dll to make the interface DLL.
+
+5. From the File menu, click Add Project to add another new ActiveX DLL project
+  to the current workspace.
+
+6. Change Project Name to MyNewServer.
+
+7. From the Project menu, click References, select the MyServer check box, and
+  then click OK.
+
+8. In Class1, paste the following code to implement the interface that is
+  defined in MyServer.dll:
+
+  Implements MyServer.Class1
+
+  Private Sub Class1_Test()
+  '
+  End Sub
+
+9. From the File menu, click Make MyNewServer.dll.
+
+10. From the Project menu, click MyNewServer Properties. On the Component tab,
+  set version compatibility to Binary Compatibility with MyNewServer.dll, and
+  then click OK.
+
+  NOTE: Project Compatibility is set automatically.
+
+11. Close the code window for MyNewServer, and repeat step 4 to compile MyServer
+  as MyServer.dll again. When you are prompted to replace the existing file,
+  click Yes.
+
+12. In the Project explorer window, click MyNewServer (MyNewServer) to highlight
+  it. Repeat step 9 to compile MyNewServer as MyNewServer.dll again. When you
+  are prompted to replace the existing file, click Yes. Notice that you
+  receive the above-mentioned error message.
+
+REFERENCES
+==========
+
+For additional information on compatibility, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q161137 HOWTO: Use Project and Binary Compatibility
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCompiler kbCOMt kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

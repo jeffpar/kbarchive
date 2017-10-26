@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96079: WFWG: List of NCB Return Codes and Comments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96079: WFWG: List of NCB Return Codes and Comments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96079/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96079/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96079/","publisher":null,"image":null,"headline":"Q96079: WFWG: List of NCB Return Codes and Comments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96079-wfwg-list-of-ncb-return-codes-and-comments">Q96079: WFWG: List of NCB Return Codes and Comments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96079
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following table lists all the possible network control block (NCB) return
+codes and comments used in Windows for Workgroups.
+
+MORE INFORMATION
+================
+
+  NRC_GOODRET     0x00   good return
+  NRC_BUFLEN      0x01   illegal buffer length
+  NRC_BFULL       0x02   buffers full, no receive issued
+  NRC_ILLCMD      0x03   illegal command
+  NRC_CMDTMO      0x05   command timed out
+  NRC_INCOMP      0x06   message incomplete, issue another command
+  NRC_BADDR       0x07   illegal buffer address
+  NRC_SNUMOUT     0x08   session number out of range
+  NRC_NORES       0x09   no resource available
+  NRC_SCLOSED     0x0a   session closed
+  NRC_CMDCAN      0x0b   command canceled
+  NRC_DMAFAIL     0x0c   PC DMA failed
+  NRC_DUPNAME     0x0d   duplicate name
+  NRC_NAMTFUL     0x0e   name table full
+  NRC_ACTSES      0x0f   no deletions, name has active sessions
+  NRC_INVALID     0x10   name not found or no valid name
+  NRC_LOCTFUL     0x11   local session table full
+  NRC_REMTFUL     0x12   remote session table full
+  NRC_ILLNN       0x13   illegal name number
+  NRC_NOCALL      0x14   no callname
+  NRC_NOWILD      0x15   cannot put * in NCB_NAME
+  NRC_INUSE       0x16   name in use on remote adapter
+  NRC_NAMERR      0x17   called name cannot == name or name #
+  NRC_SABORT      0x18   session ended abnormally
+  NRC_NAMCONF     0x19   name conflict detected
+  NRC_IFBUSY      0x21   interface busy, IRET before retrying
+  NRC_TOOMANY     0x22   too many commands outstanding, retry later
+  NRC_BRIDGE      0x23   ncb_bridge field not 00 or 01
+  NRC_CANOCCR     0x24   command completed while cancel occurring
+  NRC_RESNAME     0x25   reserved name specified
+  NRC_CANCEL      0x26   command not valid to cancel
+  NRC_MULT        0x33   multiple requests for same session
+  NRC_MAXAPPS     0x36   max number of applications exceeded
+  NRC_NORESOURCES 0x38   requested resources are not available
+  NRC_SYSTEM      0x40   system error
+  NRC_ROM         0x41   ROM checksum failure
+  NRC_RAM         0x42   RAM test failure
+  NRC_DLF         0x43   digital loopback failure
+  NRC_ALF         0x44   analog loopback failure
+  NRC_IFAIL       0x45   interface failure
+  NRC_ADPTMALFN   0x50   network adapter malfunction
+  NRC_PENDING     0xff   asynchronous command is not yet finished
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

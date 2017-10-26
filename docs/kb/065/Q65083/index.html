@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65083: QBX Incorrectly Initializes Array in TYPE with OPTION BASE 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65083: QBX Incorrectly Initializes Array in TYPE with OPTION BASE 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65083/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65083/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65083/","publisher":null,"image":null,"headline":"Q65083: QBX Incorrectly Initializes Array in TYPE with OPTION BASE 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65083-qbx-incorrectly-initializes-array-in-type-with-option-base-1">Q65083: QBX Incorrectly Initializes Array in TYPE with OPTION BASE 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65083
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist7.00 buglist7.10 SR# S900205-152 | mspl13_basic
+Last Modified: 4-SEP-1990
+
+QBX.EXE may not correctly initialize programs with OPTION BASE 1 and
+arrays in user-defined TYPEs during their initial loading. The array
+in the type is treated as a zero-based array instead of a one-based
+array. This problem is corrected by saving the file or editing either
+the OPTION BASE 1 line or the TYPE statement. This behavior does not
+occur when the program is compiled with BC.EXE.
+
+Microsoft has confirmed this to be a problem with the QBX.EXE
+environment of Microsoft BASIC Professional Development System (PDS)
+versions 7.00 and 7.10 for MS-DOS. We are researching this problem and
+will post new information here as it becomes available.
+
+Code Example
+------------
+
+The following code example will give incorrect results (a length of 3
+and a lower bound of 0) on the initial run of the program, but after
+saving the file (without reloading), or after editing either of the
+indicated lines, the program runs correctly (giving a length of 2 and
+a lower bound of 1):
+
+   OPTION BASE 1                      'Editing here corrects error
+   TYPE ArrayType
+        Array(2) AS STRING * 1        'Editing here also corrects
+   END TYPE
+   DIM varArrayType AS ArrayType
+   PRINT LEN(varArrayType)               'Should be 2 (incorrectly 3)
+   PRINT LBOUND(varArrayType.Array)      'Should be 1 (incorrectly 0)
+   END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

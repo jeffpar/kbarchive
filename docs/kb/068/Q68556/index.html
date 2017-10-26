@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68556: DlgMain.exe Uses a Dialog Box as the Main Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68556: DlgMain.exe Uses a Dialog Box as the Main Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68556/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68556/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68556/","publisher":null,"image":null,"headline":"Q68556: DlgMain.exe Uses a Dialog Box as the Main Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68556-dlgmainexe-uses-a-dialog-box-as-the-main-window">Q68556: DlgMain.exe Uses a Dialog Box as the Main Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68556
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): _IK kbfile kbsample kb16bitonly kbDlg kbGrpDSUser kbOSWin310 kbOSWin300
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DlgMain.exe is a sample file that demonstrates how to create a modeless dialog
+box that can act as the main window of a Windows-based application. Two
+advantages of this approach are:
+
+- The main window of the application can be created in the Dialog Editor.
+
+- Focus control is managed by Windows as it is for a dialog box.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+DlgMain.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+The information below outlines the necessary modifications to the code in
+GENERIC, a sample application provided with the Windows Software Development Kit
+(SDK) version 3.0, that will result in a Windows-based application that uses a
+modeless dialog box as its main window.
+
+To GENERIC.C, make the following changes:
+
+     //  1. Create a global variable to hold the window handle of the
+     //     dialog box.
+
+        HWND hDlgMain;
+
+     //  2. In the WinMain() procedure, declare a FARPROC variable. This
+     //     variable holds the procedure-instance address for the dialog
+     //     procedure.
+
+        FARPROC lpfn;
+
+     //  3. Modify the CreateWindow() call in InitInstance() to specify 0
+     //     (zero) for nWidth and nHeight when the main window is created.
+     //     Do this so that the main window is not shown until the size of
+     //     the dialog box is known.
+
+        hWnd = CreateWindow("GenericWClass", "Dialog as Main Window",
+                  WS_OVERLAPPED | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,
+                  CW_USEDEFAULT, 0, 0, 0, NULL, NULL, hInstance, NULL);
+
+     //  4. In WinMain(), create a procedure-instance for the dialog
+     //     procedure.
+
+        lpfn = MakeProcInstance(Dialog1, hInst);
+
+     //  5. In WinMain, create the dialog box using CreateDialog().
+
+        hDlgMain = CreateDialog(hInst, "DIA1", hWnd, lpfn);
+
+     //  6. Add code to WinMain() to show the dialog box.
+
+        ShowWindow(hDlgMain, SW_SHOW);
+
+     //  7. Windows sends messages to the modeless dialog box through the
+     //     program's main message queue. To process messages intended for
+     //     the dialog box, modify message queue processing in WinMain() as
+     //     follows:
+
+        while (GetMessage(&amp;msg,   // Message structure
+                          NULL,   // Handle of window receiving message
+                          NULL,   // Lowest message to handle
+                          NULL))  // Highest message to handle
+        {
+           if (hDlgMain == NULL || !IsDialogMessage(hDlgMain, &amp;msg))
+           {
+           TranslateMessage(&amp;msg); // Translate virtual key codes
+           DispatchMessage(&amp;msg);  // Dispatches message to window
+           }
+        }
+        return msg.wParam;     /* Returns the value from PostQuitMessage */ 
+
+     //  8. When the application receives a WM_SETFOCUS message, it must
+     //     set the input focus to the control that acts as the
+     //     application's main window. Adding the following code to
+     //     MainWndProc() processes the WM_SETFOCUS message as required:
+
+        case WM_SETFOCUS:
+           SetFocus(hDlgMain);
+           break;
+
+In the dialog function, make the remaining changes:
+
+     //  9. In the dialog function, declare a variable of type RECT to
+     //     store the bounding rectangle of the modeless dialog box.
+
+        RECT rect;
+
+     // 10. Retrieve the dimensions of the dialog box. This information
+     //     will be used to calculate the size of the parent window.
+
+        case WM_INITDIALOG:
+           GetWindowRect(hDlg, &amp;rect);
+
+     // 11. Size the parent window to be the same size as the dialog box.
+
+        SetWindowPos(GetParent(hDlg), // Get the window handle of the
+                                      // parent of the dialog box.
+
+          NULL,                       // Identifies a window that in the
+                                      // window-manager's list will
+                                      // precede the positioned window.
+                                      // This is not used for this example.
+
+          0,                          // Specify the x-coordinate of the
+                                      // window's upper-left corner.
+
+          0,                          // Specify the x-coordinate of the
+                                      // window's upper-left corner.
+
+          rect.right - rect.left,     // Based on the values returned by
+                                      // GetWindowRect, calculate the new
+                                      // width of the main window.
+
+          rect.bottom - rect.top + GetSystemMetrics(SM_CYCAPTION)
+                                 + GetSystemMetrics(SM_CYMENU),
+                                      // Based on the values returned by
+                                      // GetWindowRect, the height of the
+                                      // caption bar, and the height of
+                                      // the menu bar, calculate the new
+                                      // height of the main window.
+
+          SWP_NOMOVE | SWP_NOZORDER);
+                                      // Retain current position and
+                                      // ordering.
+
+     // 12. When the application receives a WM_CLOSE message, close the
+     //     modeless dialog box and post a WM_CLOSE message to the main
+     //     window.
+
+        case WM_CLOSE:
+           DestroyWindow(hDlg);  // Close the modeless dialog box using
+                                 // DestroyWindow.
+           hDlgMain = NULL;      // Set the handle of the modeless dialog
+                                 // box to null.
+           PostMessage(GetParent(hDlg), WM_CLOSE, NULL, NULL);
+           break;
+
+Make one change to GENERIC.RC: Modify the dialog box template to specify the
+additional style WS_CHILD. Doing so will ensure that the dialog box moves with
+the parent window as the parent is moved.
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbfile kbsample kb16bitonly kbDlg kbGrpDSUser kbOSWin310 kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

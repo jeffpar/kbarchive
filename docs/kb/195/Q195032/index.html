@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195032/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195032/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195032/","publisher":null,"image":null,"headline":"Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195032-prb-incorrect-function-signatures-may-cause-problems-in-release">Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195032
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When developing applications in Visual C++ with MFC, you may receive an invalid
+page fault in Mfc42.dll in release builds due to an incorrect function signature
+for any of the following MFC macros:
+
+  ON_MESSAGE()
+  ON_REGISTERED_MESSAGE()
+  ON_THREAD_MESSAGE()
+  ON_REGISTERED_THREAD_MESSAGE()
+
+CAUSE
+=====
+
+The message handlers for ON_MESSAGE(), ON_REGISTERED_MESSAGE(),
+ON_THREAD_MESSAGE(), and ON_REGISTERED_THREAD_MESSAGE() require the programmer
+to have the correct function signatures. By not having a correct function
+signature for the handler, an invalid page fault in Mfc42.dll results after the
+handler executes in release builds. A crash in debug builds does not occur
+because the stack frame is set up differently for debug builds than it is for
+release builds.
+
+RESOLUTION
+==========
+
+Make sure your message handlers for ON_MESSAGE(), ON_REGISTERED_MESSAGE(),
+ON_THREAD_MESSAGE(), and ON_REGISTERED_THREAD_MESSAGE() have the correct
+signatures.
+
+The correct signature for ON_MESSAGE() is:
+
+     afx_msg LRESULT OnMyMsg(WPARAM, LPARAM)
+
+The correct signature for ON_REGISTERED_MESSAGE is:
+
+     afx_msg LRESULT OnMyRegisteredMsg(WPARAM, LPARAM)
+
+The correct signature for ON_THREAD_MESSAGE is:
+
+     afx_msg void OnMyThreadMsg(WPARAM, LPARAM)
+
+The correct signature for ON_REGISTERED_THREAD_MESSAGE is:
+
+     afx_msg void OnMyRegisteredThreadMsg(WPARAM, LPARAM)
+
+For signatures for other versions of Visual C++, please consult help for
+ON_MESSAGE(), ON_REGISTERED_MESSAGE(), ON_THREAD_MESSAGE() and
+ON_REGISTERED_THREAD_MESSAGE().
+
+To get a compile-time error when using these macros, you can re-define the macros
+after the "#include &lt;afxwin.h&gt;" line in your Stdafx.h file. The code below
+uses the static_cast&lt;&gt; operator to aid the compiler and developer by doing
+strict type conversion on the function pointer:
+
+     #undef  ON_MESSAGE
+     #define ON_MESSAGE(message, memberFxn)    \ 
+         { message, 0, 0, 0, AfxSig_lwl, \ 
+             (AFX_PMSG) (AFX_PMSGW) (static_cast&lt; LRESULT (AFX_MSG_CALL
+     CWnd::*)(WPARAM, LPARAM) &gt; (&amp;memberFxn)) },
+   
+
+     #undef  ON_REGISTERED_MESSAGE
+     #define ON_REGISTERED_MESSAGE(nMessageVariable, memberFxn) \ 
+        { 0xC000, 0, 0, 0, (UINT)(UINT*)(&amp;nMessageVariable), \ 
+           (AFX_PMSG)(AFX_PMSGW)(static_cast&lt;LRESULT (AFX_MSG_CALL
+     CWnd::*)(WPARAM, LPARAM)&gt;(&amp;memberFxn)) },
+   
+
+     #undef  ON_THREAD_MESSAGE
+     #define ON_THREAD_MESSAGE(message, memberFxn) \ 
+        { message, 0, 0, 0, AfxSig_vwl, \ 
+           (AFX_PMSG)(AFX_PMSGT)(static_cast&lt;void (AFX_MSG_CALL
+     CWinThread::*)(WPARAM, LPARAM)&gt;(&amp;memberFxn)) },
+   
+
+     #undef  ON_REGISTERED_THREAD_MESSAGE
+     #define ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn) \ 
+        { 0xC000, 0, 0, 0, (UINT)(UINT*)(&amp;nMessageVariable), \ 
+           (AFX_PMSG)(AFX_PMSGT)(static_cast&lt;void (AFX_MSG_CALL
+     WinThread::*)(WPARAM, LPARAM)&gt;(&amp;memberFxn)) },
+
+The ON_MESSAGE(), ON_REGISTERED_MESSAGE(), ON_THREAD_MESSAGE() and
+ON_REGISTERED_THREAD_MESSAGE() macros are defined in \mfc\include\afxmsg_.h.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Application Wizard MFC dialog project named Sample with default
+  settings.
+
+2. Add the following line of code to the dialog header file above the line class
+  Sample:
+
+        #define WM_MYMSG WM_USER+555
+
+3. Add a custom message handler to the dialog class with incorrect function
+  signature, for example:
+
+        afx_msg void OnMyMsg(void);        //in header file
+        void CSampleDlg::OnMyMsg(void) {}  //in source file
+
+4. Add the following line of code inside of the message handler:
+
+        AfxMessageBox("Got WM_MYMSG");
+
+5. Add a ON_MESSAGE entry in the message map in the dialog source file, for
+  example:
+
+        ON_MESSAGE(WM_MYMSG, OnMyMsg)
+
+6. Add the following line of code inside of the OnInitDialog of the class after
+  CDialog::OnInitDialog();:
+
+        SendMessage(WM_MYMSG);
+
+In debug builds, the message box appears and no invalid page fault occurs. In
+release builds, the message box appears and an invalid page fault in Mfc42.dll
+occurs after you dismiss the message box.
+
+REFERENCES
+==========
+
+ON_MESSAGE() in the Visual C++ Product Documentation.
+
+ON_REGISTERED_MESSAGE() in the Visual C++ Product Documentation.
+
+ON_THREAD_MESSAGE() in the Visual C++ Product Documentation.
+
+ON_REGISTERED_THREAD_MESSAGE() in the Visual C++ Product Documentation.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Nathan
+Manis, Microsoft Corporation.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Nathan Manis, Microsoft Corporation
+
+
+Additional query words: crash access violation release debug message map
+
+======================================================================
+Keywords          : kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

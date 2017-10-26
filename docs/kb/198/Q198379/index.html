@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198379/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198379/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198379/","publisher":null,"image":null,"headline":"Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198379-bug-decimal-points-truncated-using-rdo-client-batch-cursors">Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198379
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbSQLServ kbVBp kbVBp500bug kbVBp600bug kbGrpDSVBDBkbbuglist
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to retrieve or update a Remote Data Object (RDO) Column of type
+DECIMAL, the value truncates to only four digits to the right of the decimal
+point. This happens only when using the RDO client batch cursors.
+
+CAUSE
+=====
+
+When using an RDO client batch cursor, the DECIMAL value of the RDO Column is
+mapped as a CURRENCY data type instead of a DECIMAL data type. This causes all
+decimal values with a scale of four or more to truncate.
+
+NOTE: The CURRENCY data type gives decimal values accurate up to 19 digits, with
+only four digits to the right of the decimal point.
+
+RESOLUTION
+==========
+
+Here are four possible ways to work around this decimal truncation problem:
+
+- Define the data types of the columns on your backend table to be of type
+  FLOAT instead of type DECIMAL.
+
+-or-
+
+- Use the ODBC cursor library or server-side cursors instead of the client
+  batch cursor library.
+
+-or-
+
+- Use an rdoQuery object to explicitly map the values correctly. For more
+  information, please see the Sample Workaround code that follows.
+
+-or-
+
+- Use ActiveX Data Objects (ADO) instead of RDO. For more information, please
+  see the Sample Workaround code that follows.
+
+Sample Workaround Code
+----------------------
+
+To test the code samples, first use ISQL/W to create the test table.
+
+1. In ISQL/w, select the Pubs database.
+
+2. Copy the following code into ISQL/w's Query window, then click the Execute
+  button:
+
+        CREATE TABLE dbo.Table1 (
+           ID int Primary Key,
+           DecValue decimal(20, 8) NULL  )
+
+3. Add a record to the new table, by executing the following code in ISQL/W:
+
+        INSERT dbo.Table1 VALUES (1, 11.12345678)
+
+4. If you do not already have a system data source name (DSN) named Pubs, use
+  the ODBC Administrator in Windows Control Panel to create a system DSN named
+  Pubs that points to the Pubs database.
+
+Workaround Using the rdoQuery Object
+------------------------------------
+
+1. Create the test table, Table1, and the Pubs DSN as described in steps 2-4 of
+  the Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References and then add a reference to
+  "Microsoft Remote Data Object 2.0".
+
+5. Paste the following code into the Click event of the Command button:
+
+        Dim cn As New rdoConnection
+        Dim qry As rdoQuery
+
+        cn.CursorDriver = rdUseClientBatch
+        cn.Connect = "DSN=Pubs;UID=;PWD=;Database=Pubs"
+        cn.EstablishConnection rdDriverNoPrompt, False
+
+        Set qry = cn.CreateQuery("", "Update Table1 Set DecValue = ? " &amp; _
+                                 "Where ID = 1")
+
+        qry.rdoParameters(0).Direction = rdParamInput
+        qry.rdoParameters(0).Value = 22.12345678
+        qry.Execute
+
+        qry.Close
+        cn.Close
+
+6. Run the sample application.
+
+7. In ISQL/W, confirm that the Update was successful by running the following:
+
+        SELECT * FROM dbo.Table1
+
+Workaround using ADO
+--------------------
+
+1. Create the test table, Table1, and the Pubs DSN as described in steps 2-4 of
+  the Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References then add a reference to "Microsoft
+  ActiveX Data Objects Library 2.x."
+
+5. Paste the following code into the Click event of the Command button:
+
+         Dim cn As New ADODB.Connection
+         Dim rsADO As New ADODB.Recordset
+
+         cn.CursorLocation = adUseClient
+         cn.Open "DSN=pubs;UID=;PWD=;Database=Pubs"
+
+         rsADO.Open "SELECT * FROM Table1", cn, adOpenStatic, _
+                    adLockBatchOptimistic
+
+         rsADO!DecValue = 33.12345678
+         rsADO.UpdateBatch
+
+         rsADO.Close
+         cn.Close
+
+6. Run the sample application.
+
+7. In ISQL/W, confirm that the Update was successful by running the following:
+
+        SELECT * FROM dbo.Table1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the sample table in the Pubs database as described in steps 1-4 of the
+  Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References then add a reference to "Microsoft
+  Remote Data Object 2.0".
+
+5. Paste the following code into the Click event of the Command button:
+
+        Dim cn As New rdoConnection
+        Dim rsRDO As rdoResultset
+
+        cn.CursorDriver = rdUseClientBatch
+        cn.Connect = "DSN=Pubs;UID=;PWD=;Database=Pubs"
+        cn.EstablishConnection rdDriverNoPrompt, False
+
+        Set rsRDO = cn.OpenResultset("SELECT * FROM Table1", rdOpenKeyset, _
+                    rdConcurBatch)
+
+        rsRDO("ID").KeyColumn = True
+
+        rsRDO.Edit
+        rsRDO!DecValue = 44.12345678
+        MsgBox rsRDO!DecValue  '&lt;--- Value is always chopped here.
+
+        rsRDO.Update
+        rsRDO.BatchUpdate
+
+        rsRDO.Close
+        cn.Close
+
+6. Run the sample project. Notice that the DECIMAL value truncates to only four
+  digits to the right of the decimal point. That is, the message box displays
+  44.1235.
+
+7. In ISQL/W, confirm that the Update was unsuccessful by running the following
+  code:
+
+        SELECT * FROM dbo.Table1
+
+Note that Value is reported to be 44.12350000.
+
+REFERENCES
+==========
+
+For additional information on using RDO with client batch cursors, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q177186 Error 40069 Update Resultset Returned from Stored Procedure
+
+For additional information on ADO, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q168335 INFO: Using ActiveX Data Objects (ADO) via Visual Basic
+
+  Q168336 HOWTO: Open ADO Connection &amp; Recordset Objects
+
+
+For more information, please refer to the Visual Basic documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSQLServ kbVBp kbVBp500bug kbVBp600bug kbGrpDSVBDB kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

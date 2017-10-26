@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143187: HTTP Server MIB definitions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143187: HTTP Server MIB definitions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143187/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143187/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143187/","publisher":null,"image":null,"headline":"Q143187: HTTP Server MIB definitions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143187-http-server-mib-definitions">Q143187: HTTP Server MIB definitions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143187
+Product(s): Internet Information Server
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 07-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Hyper Text Transfer Protocol MIB (HTTP.MIB) for Internet Information Server
+contains 16 objects specifically designed to support computers running Internet
+Information Server on Windows NT 3.51. This article lists the HTTP.MIB objects
+and description.
+
+MORE INFORMATION
+================
+
+The following lists the HTTP MIB objects and a description of each object. The
+objects are collecting Http Server Statistics:
+
+TotalBytesSent_HighWord:
+
+  This is the high 32-bits of the total number of of BYTEs sent by the
+  Http Server.
+
+TotalBytesSent_LowWord:
+
+  This is the low 32-bits of the total number of
+  of BYTEs sent by the Http Server.
+
+TotalBytesReceived_HighWord:
+
+  This is the high 32-bits of the total number of
+  of BYTEs received by the Http Server.
+
+TotalBytesReceived_LowWord:
+
+  This is the low 32-bits of the total number of
+  of BYTEs received by the Http Server.
+
+TotalFilesSent:
+
+  This is the total number of files sent by this
+  Http Server.
+
+CurrentAnonymousUsers:
+
+  This is the number of anonymous users currently
+  connected to the Http Server.
+
+CurrentNonAnonymousUsers:
+
+  This is the number of nonanonymous users currently
+  connected to the Http Server.
+
+TotalAnonymousUsers:
+
+  This is the total number of anonymous users that
+  have ever connected to the Http Server.
+
+TotalNonAnonymousUsers:
+
+  This is the total number of nonanonymous users
+  that have ever connected to the Http Server.
+
+MaxAnonymousUsers:
+
+  This is the maximum number of anonymous users
+  simultaneously connected to the Http Server.
+
+MaxNonAnonymousUsers:
+
+  This is the maximum number of nonanonymous users
+  simultaneously connected to the Http Server.
+
+CurrentConnections:
+
+  This is the current number of connections to the
+  Http Server.
+
+MaxConnections:
+
+  This is the maximum number of simultaneous
+  connections to the Http Server.
+
+ConnectionAttempts:
+
+  This is the number of connection attempts that
+  have been made to the Http Server.
+
+LogonAttempts:
+
+  This is the number of logon attempts that have
+  been made to this Http Server.
+
+TotalGets:
+
+  This is the number of requests using the GET method
+  that have been made to this Http Server.
+
+TotalPosts:
+
+  This is the number of requests using the POST method
+  that have been made to this Http Server.
+
+TotalHeads:
+
+  This is the number of requests using the HEAD method
+  that have been made to this Http Server.
+
+TotalOthers:
+
+  This is the number of requests not using the GET,
+  POST or HEAD method that have been made to this Http
+  Server.
+
+TotalCGIRequests:
+
+  This is the number of Common Gateway Interface (CGI)
+  requests that have been made to this Http Server.
+
+TotalBGIRequests:
+
+  This is the number of Binary Gateway Interface (BGI)
+  requests that have been made to this Http Server.
+
+TotalNotFoundErrors:
+
+  This is the number of requests the Http server could
+  not satisfy because the requested resource could not be found.
+
+The HTTP.MIB file is available on the Internet Information Server compact disc in
+the SDK directory.
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

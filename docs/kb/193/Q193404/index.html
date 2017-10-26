@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193404: INFO: IntelliSense and Visual FoxPro 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193404: INFO: IntelliSense and Visual FoxPro 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193404/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193404/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193404/","publisher":null,"image":null,"headline":"Q193404: INFO: IntelliSense and Visual FoxPro 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193404-info-intellisense-and-visual-foxpro-60">Q193404: INFO: IntelliSense and Visual FoxPro 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193404
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IntelliSense, or Automatic Statement Completion, is the ability of an editor to
+complete design time function declarations, object references and other editing
+functions. This ability, which is integrated into other Visual Studio
+components, is not natively available in Visual FoxPro.
+
+MORE INFORMATION
+================
+
+In order for IntelliSense to work, the editor needs to know explicitly, at
+design time, the referenced object type. Since Visual FoxPro is a weakly typed
+language, this information is not available during design time and is not
+available until run-time, with some exceptions. In order for the editor to know
+what object to examine for the appropriate methods and properties, a type
+declaration similar to the following is needed:
+
+     PUBLIC oForm
+     LOCAL oADO, oRef
+
+With the following statements, Visual FoxPro cannot resolve the references until
+run-time. The class for "myForm" actually depends upon the SET CLASSLIB setting
+at run-time. Similarly, oForm and oADO could potentially change on subsequent
+executions of that line of code. You cannot be sure what the references are
+until the code actually executes. Here is an example:
+
+     oForm = CREATEOBJECT('myForm') &amp;&amp; Visual FoxPro Class
+     oADO  = oForm.myRecordSet      &amp;&amp; Component Object Model (COM) Class
+     oRef  = oADO                   &amp;&amp; Unknown object reference
+
+In Visual FoxPro, without a strongly typed language, we cannot know at design
+time that "oForm" is derived from the "myForm" class. In other Visual Studio
+languages, such as Visual C++, Visual Basic, and Visual J++, the strong language
+typing gives the editor and compiler system the ability to make use of
+IntelliSense.
+
+As an alternative to having native IntelliSense, there is a public domain utility
+called SuperClass available for download from the following World Wide Web URL:
+
+  http://www.classx.com
+
+This utility makes IntelliSense functionality available within Visual FoxPro. On
+the toolbar, click Tools and then locate the SuperClass utility.
+
+NOTE: The third-party contact information included in this article is provided to
+help you find the technical support you need. This contact information is
+subject to change without notice. Microsoft in no way guarantees the accuracy of
+this third-party contact information.
+
+REFERENCES
+==========
+
+Visual C++ User's Guide in the Microsoft Developer Network Library 6.0.
+
+Additional query words: kbVFp600 kbMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

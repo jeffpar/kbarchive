@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268157: Error Message: &quot;19128-Location Under MA Is Wrong [OU=xx,o=yy]&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268157: Error Message: &quot;19128-Location Under MA Is Wrong [OU=xx,o=yy]&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268157/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268157/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268157/","publisher":null,"image":null,"headline":"Q268157: Error Message: &quot;19128-Location Under MA Is Wrong [OU=xx,o=yy]&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268157-error-message-19128-location-under-ma-is-wrong-ouxxoyy">Q268157: Error Message: "19128-Location Under MA Is Wrong [OU=xx,o=yy]"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268157
+Product(s): Microsoft Windows NT
+Version(s): 2.2
+Operating System(s): 
+Keyword(s): kbenv kberrmsg metadirectory MMS
+Last Modified: 26-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, version 2.2, used with:
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a provisioning agent on your computer, you may receive a generic
+"19128-Location Under MA Is Wrong [OU=xx,o=yy]" error message in the Ds.log
+file.
+
+In the log file, you may receive a detailed version of the preceding error
+message which can resemble the following error message:
+
+  19128-Location under MA is wrong [OU=marketing,OU=Test
+  ICL,NC=XForestRoot.com,ma=ADMA,DsaName=xforestdc,ou=Applications,
+  dc=wrong,dc=com]
+
+  19128-Error 19128 loading resource [res=HR-Prov,f=Together
+  Administration,ou=Applications,dc=Meta,dc=com]
+
+  Summary for [ma=ADMA,DsaName=xforestdc,ou=Applications,dc=Meta,dc=com]
+  Number of entries processed: 7
+  Number of record(s) excluded: 2
+
+  Number of connector(s) exist before: 5
+
+  ******* Reference of return codes *******
+  ERROR 19128: DS_RC_IMPROPER_POLICY
+
+CAUSE
+=====
+
+This behavior may occur because of the following conditions:
+
+- Management Agent (MA) configuration: in the "location under MA" section in
+  the Properties action, the complete distinguished name, rather than the
+  Relative Distinguished Name (RDN) components of the object, must be listed.
+  In this situation, the error message is displayed in a dialog box in Compass.
+
+- Account profile: one or more resources named in the account profile cannot be
+  located, probably because the resource no longer exists.
+
+RESOLUTION
+==========
+
+To resolve this behavior, you must verify the following items to be true:
+
+1. The complete distinguished name of the object (to which the resource is being
+  applied) is listed in the "Location under the MA" dialog box. To verify this
+  listing, perform the following steps:
+
+  a. Using Compass, click Bookmarks.
+
+  b. Click Applications.
+
+  c. Double-click the Together Administration folder.
+
+  d. Select the appropriate resource in the right-hand window.
+
+  e. Click Properties.
+
+  f. Click the Resource Information tab.
+
+  g. Verify that the contents of the Location Under MA (Optional) dialog box
+     contain the correct and complete distinguished name of the object in the
+     metaverse below which the new objects should be created. If it does not,
+     click "Select a location" to drag a valid distinguished name into this
+     field.
+
+2. For every resource listed in the profile, the resource exists in the
+  metadirectory exactly as specified.
+
+MORE INFORMATION
+================
+
+For more information about the provisioning agent, read the "Setting up TAMA"
+topic in the online MMS Active Directory Management Agent Administration manual.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg metadirectory MMS 
+Technology        : kbMMSSearch
+Version           : :2.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

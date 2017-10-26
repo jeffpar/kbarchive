@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96851: MS-DOS 6.0 Configuration Questions and Answers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96851: MS-DOS 6.0 Configuration Questions and Answers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96851/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96851/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96851/","publisher":null,"image":null,"headline":"Q96851: MS-DOS 6.0 Configuration Questions and Answers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96851-ms-dos-60-configuration-questions-and-answers">Q96851: MS-DOS 6.0 Configuration Questions and Answers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96851
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 03-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+1. Q. I receive the message "ERROR: Unable to control A20 line" during the
+  startup (boot) process. How can I correct this problem?
+
+  A. The A20 line is a hardware component of 80286 and higher processors that
+  allows programs to access the first 64 kilobytes (K) of extended memory.
+  HIMEM.SYS must be able to control the A20 line to manage the extended memory
+  on your computer. Different computers use different techniques for
+  controlling the A20 line. In some cases, HIMEM.SYS cannot determine the
+  correct technique to use. If HIMEM.SYS cannot identify the correct technique
+  for controlling the A20 line on your computer, you may need to use the
+  /MACHINE switch with the DEVICE=C:\DOS\HIMEM.SYS command in your CONFIG.SYS
+  file. For further instructions, refer to the "Diagnosing and Solving
+  Problems" chapter of the "Microsoft MS-DOS 6 User's Guide." You can also type
+  "HELP HIMEM.SYS" (without the quotation marks) at the MS-DOS command prompt
+  and press ENTER for information on HIMEM.SYS and the /MACHINE switch.
+
+2. Q. I'm using custom menu colors with multiple configurations. During the
+  startup process, my menu colors change back to the default screen colors. Why
+  is this occurring?
+
+  A. When ANSI.SYS is loaded, it resets your screen colors. ANSI.SYS is an
+  enhanced console device driver; therefore, it takes over all output to the
+  console. At this time, no workaround is available for this problem.
+
+3. Q. How do I add the Windows(TM)-based utilities after I install MS-DOS 6.0?
+
+  A. The MS-DOS 6 Upgrade includes Windows-based versions of Microsoft Backup,
+  Microsoft Anti-Virus, and Microsoft Undelete. To install these programs after
+  you have installed MS-DOS 6.0, insert Setup Disk 1 in your floppy disk drive.
+  At the MS-DOS command prompt, type the following command and press ENTER
+
+  " &lt;drive&gt;: setup /e" (without the quotation marks)
+
+  where &lt;drive&gt; is your floppy disk drive.
+
+  For more information on the Windows-based utilities, refer to the "Microsoft
+  MS-DOS 6 User's Guide."
+
+Additional query words:
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

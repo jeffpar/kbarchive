@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112304/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112304/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112304/","publisher":null,"image":null,"headline":"Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112304-pc-win-moveuserexe-err-msg-export-user-failed">Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112304
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the MOVEUSER.EXE program to export a user to an .MMU file (using
+the Export option under the File menu), the following error may occur:
+
+  Export user Failed
+
+When you use the MOVEUSER.EXE program to copy a user from one postoffice to
+another postoffice, the following error message may occur
+
+  Moving user &lt;User Name&gt; Failed
+
+where &lt;User Name&gt; is the full name of the user being moved.
+
+CAUSE
+=====
+
+This problem can occur if the .MAI files corresponding to the messages in the
+user's .MBG file are missing.
+
+The MOVEUSER.EXE program tries to read and save all the user's mail. It does this
+by reading the user's .KEY file to determine which message headers present in
+the user's .MBG file are not deleted. Each header in the .MBG file contains the
+name of the .MAI file containing the message. While going through the .MBG file,
+if MOVEUSER.EXE detects that the .MAI file for a header is missing, the above
+error messages are generated.
+
+The problem of a missing .MAI file also manifests itself with the following error
+message when the corresponding mail message is read from the MS-DOS
+workstation:
+
+  Notice 16
+  Error reading mail
+  (Possibly previously deleted)
+
+RESOLUTION
+==========
+
+This problem can be resolved in one of the following three ways:
+
+- Delete the message(s) from the Microsoft Mail MS-DOS client.
+
+- Restore the missing .MAI file(s) from a backup copy.
+
+- Clear all the pointers to any lost MAIs.
+
+To determine the .MAI file for the message in question
+------------------------------------------------------
+
+1. Use the USRDMP.EXE or LISTUSER.EXE utility to get the user's 8-digit ID.
+  These utilities are available to Mail administrators as part of the "Database
+  Maintenance Utilities" document.
+
+  To obtain these utilities, please see the following article in the Microsoft
+  Knowledge Base:
+
+  Q99419 PC DB: Database Maintenance Utilities (Complete)
+
+2. The user's .MBG file is &lt;8-digit ID&gt;.MBG and is present in the MBG
+  subdirectory of the Microsoft Mail postoffice.
+
+3. From the user's .MBG file, you can determine the corresponding .MAI file for
+  the message in question.
+
+To clear all the pointers to any lost MAIs:
+-------------------------------------------
+
+1. Login to the user's account with the Windows client and spool all his or her
+  mail into his or her .MMF.
+
+2. Reset the &lt;hexid&gt;.KEY and &lt;hexid&gt;.MBG.
+
+This will clear all the pointers to any lost MAIs and will allow you to move the
+user to the new postoffice.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 3.00 3.00b 3.20 DBUTILS PSS
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

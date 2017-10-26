@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185992/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185992/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185992/","publisher":null,"image":null,"headline":"Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185992-prb-wrong-version-of-run-time-dll-when-starting-application">Q185992: PRB: "Wrong Version Of Run-Time DLL" When Starting Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185992
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting a Visual Basic 5.0 application, you might receive the following
+error dialog box:
+
+  Error
+  "Wrong Version Of Run-Time DLL"
+
+CAUSE
+=====
+
+The wrong version of the run-time file, Msvbvm50.dll, is installed on the target
+machine.
+
+RESOLUTION
+==========
+
+The most recent version of Msvbvm50.dll must be installed.
+
+To resolve this problem, install a Visual Basic 5.0 application built using the
+Application Setup Wizard onto the target machine, or manually copy the most
+recent version of Msvbvm50.dll into the System directory (or System32 for NT
+machines) and register it using RegSvr32.Exe.
+
+To register the run-time file manually, use RegSvr32.Exe (shipped on the Visual
+Basic CD in the OS\System and Tools\RegUtils directories) as demonstrated
+below:
+
+1. On the Windows Start menu, click Run.
+
+2. Type in the following and press ENTER:
+
+  RegSvr32.Exe MSVBVM50.DLL
+
+  You should see a message similar to the following:
+
+  "DLLRegisterServer in C:\Windows\System\MSVBVM50.DLL succeeded"
+
+3. If you do not see this message, please make sure you have the most recent
+  version of Msvbvm50.dll and you have RegSvr32.Exe installed in the Windows
+  System or System32 folder.
+
+  NOTE: It is also possible to obtain all of the latest run-time files by
+  installing the self extracting EXE referred to in the following Microsoft
+  Knowledge Base article:
+
+  Q180071 : FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Application Setup Wizard should always be used to distribute your Visual
+Basic 5.0 applications (or an equivalent third-party distribution tool). This
+ensures that the necessary support files are brought along and installed on the
+target system.
+
+When compiling a Visual Basic program, the final output requires either the
+run-time file that is installed upon the development system (or a more recent
+run-time file). Older applications are not broken by newer versions of the
+run-time file, but newer applications are broken by older versions of the
+run-time file.
+
+However, sometimes the wrong version Visual Basic 5.0 run-time file can still be
+installed on a system and lead to the above error message. If the NT Option 4.0
+or Internet Information Server 4.0 is installed, there is the chance that an
+older version of the run-time file will be installed.
+
+There are currently two versions of the Visual Basic 5.0 run-time file:
+
+    Run-Time File     Version           Ships With
+    -------------------------------------------------------------------
+    Msvbvm50.dll      5.00.3724         Visual Basic 5.0
+                                        Visual Studio 97
+                                        NT Option Pack 4.0
+                                        Internet Information Server 4.0
+
+    Msvbvm50.dll      05.00.4319 (SP2)  Visual Studio Service Pack 2
+                                        Visual Studio Service Pack 3
+
+If you have installed the most recent version of the Visual Basic 5.0 run- time
+file, installing either the NT Option Pack 4 or Internet Information Server 4.0
+results in the older version of the run-time file replacing the most recent
+version, and all Visual Basic 5.0 applications compiled under Service Pack 2 or
+3 will break.
+
+Additional query words: kbDSupport kbdss kbAppSetup
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

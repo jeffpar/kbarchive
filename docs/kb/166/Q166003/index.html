@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166003: How to Grant/Deny Access to a Group of Computers by Network ID | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166003: How to Grant/Deny Access to a Group of Computers by Network ID" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166003/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166003/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166003/","publisher":null,"image":null,"headline":"Q166003: How to Grant/Deny Access to a Group of Computers by Network ID","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166003-how-to-grantdeny-access-to-a-group-of-computers-by-network-id">Q166003: How to Grant/Deny Access to a Group of Computers by Network ID</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166003
+Product(s): Internet Information Server
+Version(s): winnt:2.0,3.0
+Operating System(s): 
+Keyword(s): kbother
+Last Modified: 02-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Information Server (IIS) allows an administrator to grant or deny
+access to a Group of Computers based on Network ID and Subnet mask.
+
+MORE INFORMATION
+================
+
+The advanced property page on the WWW, FTP, and Gopher services has two security
+options. By default, all computers will be: Granted Access or Denied Access.
+
+The Except Those Listed Below: dialog box allows you to specify Single Computer
+or Group of Computers that access information. After you select between Granted
+Access and Denied Access for all computers, click the Add button. Depending on
+which option you selected, the Deny Access On or the Grant Access On dialog box
+is displayed.
+
+The Single Computer option allows you to enter a single IP address. The Group of
+Computers option allows you to enter the Network ID and the Subnet Mask. You
+must specify the first IP address in the range of IP addresses available for the
+Network ID along with the Subnet mask.
+
+Examples
+--------
+
+(Class A Address with custom subnet mask)
+Network ID: 50.48.0.0
+Subnet Mask: 255.240.0.0
+IP Addresses Effected: 50.48.0.0 to 50.63.255.255
+
+(Class B Address with custom subnet mask)
+Network ID: 150.150.64.0
+Subnet Mask: 255.255.224.0
+IP Addresses Effected: 150.150.64.0 to 150.150.95.255
+
+(Class C Address with custom subnet mask)
+Network ID: 200.200.200.128
+Subnet Mask: 255.255.255.192
+IP Addresses Effected: 200.200.200.128 to 200.200.200.191
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : winnt:2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

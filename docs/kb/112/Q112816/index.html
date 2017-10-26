@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112816: Locating and Excluding RAM/ROM Addresses in the UMA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112816: Locating and Excluding RAM/ROM Addresses in the UMA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112816/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112816/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112816/","publisher":null,"image":null,"headline":"Q112816: Locating and Excluding RAM/ROM Addresses in the UMA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112816-locating-and-excluding-ramrom-addresses-in-the-uma">Q112816: Locating and Excluding RAM/ROM Addresses in the UMA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112816
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to locate adapter RAM and ROM addresses in the upper
+memory area (UMA) by using the Microsoft Diagnostic (MSD) utility and/or
+excluding memory ranges on the EMM386.EXE line in the CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+The UMA, which is between 640K and 1024K, is primarily reserved for RAM and ROM
+on hardware devices. The UMA is also used by EMM386.EXE to load device drivers
+and terminate-and-stay-resident (TSR) programs into available addresses in the
+UMA. Conflicts can result when either of the following occur:
+
+- Two or more hardware devices are trying to use the same memory address in the
+  UMA.
+
+-or-
+
+- EMM386.EXE is unable to detect whether an address is in use by a hardware
+  device and loads a TSR program or device driver into that address.
+
+To determine which of the above is causing the problem, edit your EMM386.EXE line
+in the CONFIG.SYS file to read as follows:
+
+  device=c:\dos\emm386.exe noems x=a000-f7ff
+
+Reboot the computer. If the problem still occurs, it may be caused by multiple
+hardware devices using the same memory address. In such cases, you must consult
+your hardware documentation or manufacturer for information on resolving the
+conflict.
+
+If the problem does not occur, it is most likely being caused by a conflict with
+EMM386.EXE and a hardware device in the UMA. To resolve this type of conflict,
+you must identify which upper memory addresses are being used by hardware and
+then exclude these addresses using the EMM386.EXE device line in the CONFIG.SYS
+file. The Microsoft Diagnostic (MSD) utility can be used to identify upper
+memory blocks (UMBs) in use by hardware. To do this:
+
+1. Reboot the computer and perform a "clean boot" by pressing F5 once when the
+  message "Starting MS-DOS..." appears.
+
+2. Type "msd" (without the quotation marks) at the MS-DOS command prompt, and
+  press M to select Memory. Using the legend at the top of the screen, locate
+  the area(s) marked as RAM and/or ROM, and make a note of the starting and
+  ending addresses of this area(s). This is the area(s) that needs to be
+  excluded using the EMM386.EXE device line in the CONFIG.SYS file.
+
+3. Open the CONFIG.SYS file and add the exclusion(s) to the EMM386.EXE line (for
+  example, X=C000-C7FF X=D800-DBFF), and restart the computer.
+
+If memory conflicts exist after you complete the above procedure, there may be
+some adapter RAM and/or ROM addresses that MSD is unable to correctly detect.
+Use the following technique to help isolate the conflicting memory region.
+
+1. Verify that the problem is being caused by a conflict in the UMA by editing
+  the CONFIG.SYS file and specifying the following parameters on the EMM386.EXE
+  device line:
+
+  a. NOEMS
+
+  b. X=A000-F7FF
+
+  c. Remove any other X= or I= parameters
+
+  d. Remove the HIGHSCAN parameter, if present
+
+  A sample line might read as follows:
+
+     device=c:\dos\emm386.exe noems x=a000-f7ff
+
+2. Save the changes and restart the computer. If the problem goes away, continue
+  with the steps below. If the problem still occurs, it is not being caused by
+  a conflict in the UMA, and you need to perform other troubleshooting to
+  determine the cause of the problem. For more information on troubleshooting
+  EMM386.EXE, query on the following words in the Microsoft Knowledge Base:
+
+  emm386.exe and troubleshooting and notr
+
+3. If the problem is corrected by using X=A000-F7FF, edit the CONFIG.SYS file
+  and shrink the excluded range by changing the parameter to X=C000-F7FF. Save
+  the file and restart the computer. If the problem does not recur, proceed to
+  the next step.
+
+  If the problem does recur, the conflict may be in either the A000 or B000
+  range. To verify this, change the X=C000-F7FF parameter to X=A000-BFFF and
+  restart the computer. If this corrects the problem, you can further narrow
+  the range by changing the parameter to X=A000-AFFF. If the problem still
+  exists, try X=B000-BFFF. Once you have narrowed the problem down to a
+  specific range (B000-BFFF), you may be able to narrow it down to half of the
+  range. To do this, try excluding either the first half (X=B000-B7FF) or the
+  second half (X=B800-BFFF) of the range. If neither of these work, you must
+  leave the whole range excluded (X=B000-BFFF).
+
+4. If specifying X=C000-F7FF does not cause the problem to recur, open the
+  CONFIG.SYS file and shrink the range further to X=D000-F7FF. Restart the
+  computer and see if the problem recurs. If not, shrink the range further to
+  X=E000-F7FF. Repeat this process until the problem recurs.
+
+5. When the problem recurs, edit the CONFIG.SYS file to change the first number
+  in the range back to what it had been and decrease the second number in the
+  range. For example, if X=D000-F7FF worked correctly, but X=E000-F7FF did not,
+  change the first number back to D000 and decrease the second number, so the
+  range reads X=D000-EFFF. If that works, decrease the second number again
+  (X=D000-DFFF). Once you have narrowed the problem down to a specific range
+  (for example, D000-DFFF), you may be able to narrow it down to half of the
+  range. To do this, try excluding either the first half (X=D000-D7FF) or the
+  second half (X=D800-DFFF). If neither of these work, you must leave the whole
+  range excluded (X=D000-DFFF).
+
+Notes
+-----
+
+- If you have several hardware devices in your system using upper memory
+  addresses, you may need to exclude more than one range. For example, you
+  might list X=C000-C7FF X=E000-EFFF on the EMM386.EXE line.
+
+- If may be possible to narrow an exclusion to a smaller portion of a range
+  (for example, X=C000-C3FF or X=C400-C7FF or X=C800-CBFF or X=CC00-CFFF.)
+
+The MSD utility contains a memory map that may be helpful in understanding how
+the upper memory ranges are divided and defined. To view the memory map, type
+"msd" (without the quotation marks) at an MS-DOS command prompt and then choose
+M for Memory.
+
+Additional query words: 6.22 5.00 6.00 6.20 tshoot troubleshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

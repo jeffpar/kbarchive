@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268751/","publisher":null,"image":null,"headline":"Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268751-howto-create-a-common-icon-for-accessing-terminal-server">Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268751
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to set up an icon to enable all users to connect to
+Terminal Server using a common session.
+
+MORE INFORMATION
+================
+
+IMPORTANT: This article contains information about modifying the registry.
+Before you modify the registry, make sure to back it up and make sure that you
+understand how to restore the registry if a problem occurs. For information
+about how to back up, restore, and edit the registry, click the following
+article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+In this scenario, multiple users need to log on to the same computer and
+connection to Terminal Server. Using the Terminal Server Client Connection
+Manager, the administrator can create a desktop icon that automatically connects
+to a Terminal Server computer.
+
+However, the icon uses the user profile information that is stored in the
+registry for the user who creates the icon. To change the configuration in the
+registry to use the user profile of a user who logs on to the computer, follow
+these steps:
+
+1. Start Registry Editor (Regedit) and locate the following key:
+
+  HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client
+
+2. Export this key to the desktop.
+
+3. Open this key in Notepad, and then edit the key by replacing
+  HKEY_CURRENT_USER with HKEY_LOCAL_MACHINE\Import.
+
+4. Save the edited key file, and then quit Registry Editor.
+
+5. Start Registry Editor (Regedt32) and click HKEY_LOCAL_MACHINE to highlight
+  it.
+
+6. Load the Ntuser.dat file from the \Winnt\Profiles\Default User folder as a
+  hive. When prompted, name the new hive Import.
+
+7. Double-click the exported registry file that you had previously edited, to
+  load it.
+
+8. Highlight the Import hive under HKEY_LOCAL_MACHINE, and then unload it.
+
+  Note: You have now modified the Default User Ntuser.dat file to include the
+  information needed for all new users to gain access to the icon.
+
+9. Copy the icon for the Terminal Server session to the desktop while you are
+  logged on as the user who created the session.
+
+10. Copy the icon from the desktop to the Winnt\Profiles\Allusers\Desktop
+  folder.
+
+  Note: All new users who log on can now connect to this session. For current
+  users to connect to this session, export the key
+  HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client from the initial
+  user who created the session. Current users must double-click the key to
+  load it, and then they can gain access to the common Terminal Server
+  session.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

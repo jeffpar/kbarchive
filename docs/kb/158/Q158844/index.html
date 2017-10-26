@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158844/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158844/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158844/","publisher":null,"image":null,"headline":"Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158844-prb-cannot-turn-off-filter-when-using-cursor-filter-property">Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158844
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the filter property of a cursor, there is no apparent way to turn off
+the filter. Also, setting the filter to an empty string ("") does not remove the
+filter.
+
+RESOLUTION
+==========
+
+Set the filter to ".T." with the following command:
+
+     ThisForm.DataEnvironment.&lt;cursor&gt;.Filter = ".T."
+
+Or use the SET FILTER TO command with no arguments.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Select DataEnvironment from the View menu. Locate the Customer table in the
+  &lt;drive&gt;:\Vfp\Samples\Mainsamp\Data directory. Select customer then
+  click OK in the Open file dialog box, then click Close in the Add Table or
+  View dialog box. This should add Customer to the DataEnvironment.
+
+3. Drag the cust_id field and the company field to the form.
+
+4. Add two command buttons to the form. In the click event of the first command
+  button place the following code:
+
+        ThisForm.DataEnvironment.cursor1.Filter = "cust_id = 'ANATR'"
+        ThisForm.Refresh
+
+  In the click event of the second button place either one of the following two
+  code snippets:
+
+        ThisForm.DataEnvironment.cursor1.Filter = ".T."
+        ThisForm.Refresh  &amp;&amp; Note: record position is lost with this code.
+
+  -or-
+
+        STORE ThisForm.DataEnvironment.cursor1.Alias TO x
+        SELECT &amp;x
+        SET FILTER TO
+        ThisForm.Refresh   &amp;&amp; Note: record position is not lost with
+                           &amp;&amp; this code.
+
+Now, save the form and run it. Click the button Command1 to apply the filter,
+then click the button Command2 to remove the filter.
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on "Filter property" and "SET FILTER TO command"
+
+Additional query words: vfoxwin kbdse
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

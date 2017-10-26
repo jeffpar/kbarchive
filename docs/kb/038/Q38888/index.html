@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38888: &amp;H8000 to &amp;HFFFF Hex = -32,768 to -1, Affects LONG Bit Masking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38888: &amp;H8000 to &amp;HFFFF Hex = -32,768 to -1, Affects LONG Bit Masking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38888/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38888/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38888/","publisher":null,"image":null,"headline":"Q38888: &amp;H8000 to &amp;HFFFF Hex = -32,768 to -1, Affects LONG Bit Masking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38888-h8000-to-hffff-hex---32768-to--1-affects-long-bit-masking">Q38888: &amp;H8000 to &amp;HFFFF Hex = -32,768 to -1, Affects LONG Bit Masking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38888
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 10-JAN-1991
+
+This article concerns assigning a LONG integer to a hexadecimal
+constant in the range &amp;H8000 through &amp;HFFFF hex. This information is
+especially important if you intend to do any bit manipulation with the
+logical operators (AND, OR, NOT, XOR, EQV, or IMP) with any LONG
+integer larger than &amp;HFFFF&amp; hex (or 65,535 decimal) that has at least
+one bit from 16 through 32 on.
+
+Many programmers may not realize that the constants &amp;H8000 through
+&amp;HFFFF default to a type of short integer, representing decimal values
+-32,768% through -1% respectively. Also note that the LONG-integer
+constants &amp;H8000&amp; through &amp;HFFFF&amp; represent decimal values +32,768 to
++65,535. BASIC must follow these integer-type notation standards and
+behaviors since it doesn't have an unsigned data type.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler versions 6.00 and 6.00b for
+MS-DOS and MS OS/2, and to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+Assigning a LONG integer variable to a short integer hexadecimal
+constant in the range &amp;H8000 through &amp;HFFFF adds &amp;HFFFF0000 to the
+number, resulting in the LONG integer being stored as &amp;HFFFF8000 to
+&amp;HFFFFFFFF (that is, -32,768&amp; to -1&amp; decimal).
+
+This behavior occurs because constants &amp;H8000 through &amp;HFFFF default
+to a type of short integer (%). In short integer notation, constants
+&amp;H8000 through &amp;HFFFF have decimal values -32,768% through -1%,
+respectively. For example:
+
+   PRINT VAL("&amp;HFFFF"); &amp;HFFFF   ' Prints:  -1 -1
+   PRINT VAL("&amp;H8000"); &amp;H8000   ' Prints:  -32768 -32768
+
+To assign hex constants &amp;H8000 through &amp;HFFFF to a LONG integer
+without turning on bits 16 through 32 (&amp;HFFFF0000), you must change
+them to a type of LONG by appending an ampersand (&amp;) character as
+follows:
+
+   LongInt&amp; = &amp;H8000&amp;  ' Use &amp;H8000&amp; (or +32768) instead of &amp;H8000
+   LongInt&amp; = &amp;H8001&amp;  ' Use &amp;H8001&amp; (or +32769) instead of &amp;H8001
+      . . .                . . .
+   LongInt&amp; = &amp;HFFFF&amp;  ' Use &amp;HFFFF&amp; (or +65535) instead of &amp;HFFFF
+
+Appending "&amp;" to the constant is not necessary for hex constants
+outside the range &amp;H8000&amp; through &amp;HFFFF&amp;.
+
+The LONG integer &amp;HFFFF&amp; hex is equal to 65,535 decimal. The short
+integer &amp;HFFFF hex is equal to -1 decimal (according to the signed,
+two's complement, integer format standard). A -1 in decimal notation
+is &amp;HFFFFFFFF in hex LONG-integer notation.
+
+The hexadecimal constants &amp;H8000 through &amp;HFFFF default to short
+integers &amp;H8000% through &amp;HFFFF%, which represent the decimal numbers
+-32,768% to -1% in the two's complement, signed binary integer format.
+You must append an ampersand (&amp;) character to the end of the constant
+to make it a LONG integer, as follows: &amp;H8000&amp; through &amp;HFFFF&amp; (which
+represent the decimal numbers 32,768 through 65,535).
+
+The hexadecimal constants &amp;HFFFF8000 to &amp;HFFFFFFFF are LONG integers
+that represent the decimal numbers -32,768&amp; to -1&amp; in the two's
+complement, signed binary integer format.
+
+Note: Bit masking (manipulation) is normally NOT done with
+floating-point numbers, because of the nature of the floating-point
+format. Bit masking normally is useful only with integers.
+
+Code Example 1
+--------------
+
+'a&amp; is a variable, and b&amp; will serve as a bit mask:
+a&amp; = &amp;HFFFF0000 ' &amp;HFFFF0000 is a constant of type LONG
+b&amp; = &amp;HFFFF&amp;  ' ATTENTION: Assign &amp;HFFFF&amp; instead of &amp;HFFFF
+'This masks out bits 16 through 32, and keeps bits 1 through 15:
+a&amp; = a&amp; AND b&amp;
+PRINT "a&amp; AND b&amp; = "; a&amp;, HEX$(a&amp;); " prints zero (all bits off)"
+
+' Assigning b&amp; to &amp;HFFFF instead of &amp;HFFFF&amp; changes the result:
+b&amp; = &amp;HFFFF
+' Now, b&amp; contains &amp;HFFFFFFFF, or -1 (all bits on). ANDing with b&amp;
+' does not change a&amp;:
+a&amp; = a&amp; AND b&amp;
+PRINT "a&amp; AND b&amp; = "; a&amp;, HEX$(a&amp;); " prints -65536, hex FFFF0000"
+
+Code Example 2
+--------------
+
+' The following assigns short constant &amp;HFFFF (-1) to a LONG
+' integer. &amp;HFFFF is converted to &amp;HFFFFFFFF; the decimal
+' value (-1) stays the same:
+longint&amp; = &amp;HFFFF
+shortint% = &amp;HFFFF
+PRINT "longint&amp; =", longint&amp;, HEX$(longint&amp;)
+PRINT "shortint% =", shortint%, HEX$(shortint%)
+
+' The following assigns short constant &amp;H8000 (-32,768) to a LONG
+' integer. &amp;H8000 is converted to &amp;HFFFF8000; the decimal
+' value (-32,768) stays the same:
+longint&amp; = &amp;H8000
+shortint% = &amp;H8000
+PRINT "longint&amp; =", longint&amp;, HEX$(longint&amp;)
+PRINT "shortint% =", shortint%, HEX$(shortint%)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

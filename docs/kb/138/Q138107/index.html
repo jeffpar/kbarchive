@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138107: PRB: Standard Toolbar Visible in .Exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138107: PRB: Standard Toolbar Visible in .Exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138107/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138107/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138107/","publisher":null,"image":null,"headline":"Q138107: PRB: Standard Toolbar Visible in .Exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138107-prb-standard-toolbar-visible-in-exe">Q138107: PRB: Standard Toolbar Visible in .Exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138107
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Foxuser resource file is saved in the same directory as an executable and
+this Foxuser file has been created with any toolbars visible, when the
+executable is first run, the toolbars will appear. The toolbars, however, will
+be inactive and if closed, will not reappear upon restarting the executable.
+
+CAUSE
+=====
+
+This is caused by having the Foxuser resource file in the same directory as the
+executable. The Foxuser file is a resource file that records the state of the
+development environment when last used. It retains such settings as window
+placement and the toolbars that were left visible when Visual FoxPro was closed.
+If a Foxuser resource file is not in the same directory as the executable when
+this behavior occurs, it could be because there is a PATH= system variable set
+to a directory that contains a Foxuser resource file. This may or may not be the
+Foxuser resource file that is maintained in the Vfp directory. Other Foxuser
+files may exist that are being referenced by the executable via the PATH= system
+variable.
+
+RESOLUTION
+==========
+
+Include in the directory with the executable a Foxuser resource file that has
+been created with the toolbars inactive or not visible.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project in a different directory from Visual FoxPro.
+
+2. Make a new form, and place a command button on it. In the button's Click
+  event, place this line of code:
+
+     CLEAR EVENTS
+
+3. In the activate event of the form, place this line of code:
+
+     READ EVENTS
+
+4. Build the project into an executable in the directory created in step 1.
+
+5. Close the project.
+
+6. Before quitting Visual FoxPro, on the View menu, click Toolbars, and then
+  select a couple of the check boxes of the toolbars. Click OK.
+
+7. Quit Visual FoxPro.
+
+8. Copy the Foxuser and Foxuser.fpt files from the Vfp directory to the same
+  directory in which you built the executable.
+
+9. Double-click the executable. The toolbars left open when you closed Visual
+  FoxPro appear. The toolbars are not of any use and if undocked can be closed
+  by clicking the close box in the upper-right of the title bar.
+
+10. Click the button to exit the program. Restart the program to see that the
+  toolbars are no longer visible.
+
+Additional query words: VFoxWin hiding visible
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

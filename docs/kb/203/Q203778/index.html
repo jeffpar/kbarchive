@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/203/Q203778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/203/Q203778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/203/Q203778/","publisher":null,"image":null,"headline":"Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q203778-windows-nt-server-40-enterprise-edition-readmedoc-file">Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q203778
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbreadme
+Last Modified: 04-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Readme.doc file that is
+included on the Windows NT Server 4.0, Enterprise Edition, CD-ROM.
+
+MORE INFORMATION
+================
+
+Windows NT Server, Enterprise Edition Installation
+--------------------------------------------------
+
+The following sections cover the installation of Windows NT Server/E.
+
+- New Windows NT Server/E Installations
+- Upgrading Existing Windows NT Installations
+- Domain Considerations
+- Computer Name Considerations
+- Installing MSCS
+- Installing MSMQ
+- Installing MTS
+- Installing FrontPage 97
+- Installing Internet Information Server Version 3.0
+- Installing Debug Files
+- Reapplying Service Pack 3
+
+New Windows NT Server/E Installations
+Installing a new copy of Windows NT Server/E is a two step process:
+
+- First, install Windows NT Server/E in the same way that you install Windows
+  NT Server.
+- After you install Windows NT Server/E, install Service Pack 3. (A prompt
+  reminds you to do this each time you log in, until you have done so.)
+
+Both steps are required to have a functioning Windows NT Server, Enterprise
+Edition system.
+Before installing Windows NT Server, Enterprise Edition, ensure you are using
+appropriate hardware. For more information, see "Hardware Compatibility Lists"
+earlier in this document.
+
+Note: Windows NT Server/E Setup places the following string into your Boot.ini
+file (for Intel processors) or NVRAM (for Alpha-based computers): /MAXMEM=256
+This string is used to resolve a memory-limitation issue that can occur with
+Windows NT 4.0 build 1381 on computers with more than 256 megabytes (MB) of
+physical memory. The Windows NT Server/E component installer removes this
+switch.
+
+Note: If you plan to cluster MSMQ, it is recommended that you install Open
+Database Connectivity (ODBC) drivers during this stage of Windows NT Server/E
+installation. To do so, make sure that you first select SQLServer on the list of
+available ODBC drivers when you are prompted to select one or more ODBC drivers,
+and only then click OK.
+
+Upgrading Existing Windows NT Installations
+-------------------------------------------
+
+Winnt32.exe should not be used to upgrade from an existing Windows NT Server
+installation to Windows NT Server/E if you are running Service Pack 2 or later.
+If you use Winnt32.exe to install Windows NT Server/E, and then apply Service
+Pack 3, your system is left in an inconsistent state with incorrect revision
+levels of some system components. This can cause severe problems, including
+reboot failures. To upgrade an existing Windows NT Server installation that is
+running Service Pack 2 or later, use Winntup.exe.
+
+Note: Before installing Windows NT Server/E, ensure you are using appropriate
+hardware. For more information, see "Hardware Compatibility Lists" earlier in
+this document.
+
+Using Winntup.exe to Upgrade to Windows NT Server/E
+---------------------------------------------------
+
+Winntup.exe can be used to upgrade existing Windows NT Server installations to
+Windows NT Server/E. Running Winntup.exe takes significantly less time to run
+than does Winnt32.exe, and your system never enters an inconsistent state. After
+running Winntup.exe, you must still install Service Pack 3 from the Windows NT
+Server/E Base CD (if Service Pack 3 or later is not already installed).
+
+Note: Winntup.exe does not modify the maximum number of processors supported in
+your computer. Therefore, if you have a computer that you want to upgrade to
+Windows NT Server/E and also want to support more than four processors, you must
+install a new copy of Windows NT Server/E. Winntup.exe cannot be used to upgrade
+a Windows NT Workstation installation to Windows NT Server/E. If you have a
+computer running Windows NT Workstation, you must install a new copy of Windows
+NT Server/E.
+
+To start Winntup.exe, run the file from the \i386 folder or the \Alpha folder on
+the Windows NT Server/E 4.0 Base CD. You can also run Winntup.exe from the
+auto-run screen that appears when you place the Windows NT Server/E 4.0 Base CD
+into your CD-ROM drive.
+
+Winnt32.exe Changes for Windows NT Server/E
+-------------------------------------------
+
+If you attempt to upgrade an existing Windows NT Workstation or Windows NT Server
+installation that is running Service Pack 2 or later using Winnt32.exe, the
+following message appears:
+
+  You are installing Windows NT Server, Enterprise Edition on a system where a
+  Windows NT Service Pack has been installed. Setup for Windows NT Server,
+  Enterprise Edition is only to be used for a new installation. Choose 'Cancel'
+  and use the Windows NT Upgrade option to upgrade your current configuration.
+
+If you click OK, Winnt32.exe continues installing Windows NT Server/E. However,
+if you specified the /u switch, Winnt32.exe exits when you click OK or Cancel --
+Windows NT Server/E Winn32.exe does not support unattended upgrades. This change
+was introduced to prevent you from inadvertently moving backward from a later
+Service Pack to Service Pack 1.
+
+Domain Considerations
+---------------------
+
+If you intend to install MSCS, MSMQ, or MTS, you should first consider the impact
+of installing Windows NT Server, Enterprise Edition as a member server, backup
+domain controller (BDC), or primary domain controller (PDC). For example, if you
+install MSCS on member servers or on two BDCs in an existing domain, you
+preserve your existing domain model. If you create a new domain and install MSCS
+on a PDC and a BDC, you must establish domain trusts with your existing domains
+to enable users to access the MSCS servers. Installing MSMQ on BDCs or PDCs in a
+domain where account changes occur regularly or in which users log off and log
+on frequently can adversely affect MSMQ performance.
+For more information on these issues, see "Choosing a Domain Model" in Chapter 2,
+"Planning Your Cluster Environment" of the Microsoft Cluster Server
+Administrator's Guide. For complete instructions on installing and
+troubleshooting Windows NT Server, Enterprise Edition Setup, see Windows NT
+Server Version 4.0 Start Here.
+
+Computer Name Considerations
+----------------------------
+
+For compatibility with MSCS and MSMQ, it is recommended that the computer name
+should contain only English characters and/or ANSI characters below 128. The
+name should not contain extended characters.
+
+Installing MSCS
+---------------
+
+MSCS can be installed from the Windows NT Server, Enterprise Edition Components
+CD. You can either select the Microsoft Cluster Server (MSCS) check box in the
+Windows NT Server, Enterprise Edition Installer, or run Setup.exe from the
+appropriate platform subfolder of the \MSCS\cluster folder on the Windows NT
+Server, Enterprise Edition Components CD. For general information on installing
+MSCS, see Chapter 3, "Setting Up an MSCS Cluster," in the MSCS Administrator's
+Guide.
+
+Installing MSMQ
+---------------
+
+MSMQ can be installed from the Windows NT Server, Enterprise Edition Components
+CD. You can either select the Microsoft Message Queue (MSMQ) check box on the
+Windows NT Server, Enterprise Edition component installation logon screen, or
+run Setup.exe from the \MSMQ\MSMQ\Server folder on the Windows NT Server,
+Enterprise Edition Components CD.
+
+Note: If Microsoft Cluster Server (MSCS) is installed, you can only install MSMQ
+servers and independent clients as fail safe services - you cannot install them
+without configuring them as MSCS resources.
+
+For general information on installing MSMQ, see Chapter 2, "Installing MSMQ," in
+the MSMQ Administrator's Guide. For specific instructions on installing MSMQ for
+failover in an MSCS cluster, see "Clustering MSMQ" later in this document.
+
+Installing MTS
+--------------
+
+MTS can be installed from the Windows NT Server, Enterprise Edition Components
+CD. You can either select the Microsoft Transaction Server (MTS) check box on
+the Windows NT Server, Enterprise Edition component installation logon screen,
+or run Setup.exe from the appropriate platform subfolder of the \MTS\ folder on
+the Windows NT Server, Enterprise Edition Components CD. For general information
+on installing MTS, run Mtx10.hlp from the appropriate platform subfolder of the
+\MTS\ folder on the Windows NT Server, Enterprise Edition Components CD. For
+specific instructions on installing MTS for failover in an MSCS cluster, see
+"Clustering MTS" later in this document.
+
+Installing FrontPage 97
+-----------------------
+
+FrontPage 97 can be installed from the Windows NT Server, Enterprise Edition
+Components CD. You can either select the Microsoft FrontPage97 check box on the
+Windows NT Server, Enterprise Edition component installation logon screen, or
+run Setup.exe from the \FrontPg\i386 folder on the Windows NT Server, Enterprise
+Edition Components CD 2.
+
+Installing Internet Information Server Version 3.0
+--------------------------------------------------
+
+Internet Information Server (IIS) 2.0, if currently installed, will be upgraded
+by Service Pack 3 to IIS 3.0. If IIS 2 is not currently installed, use the
+Network option in Control Panel to install IIS 2.0 (by clicking Add on the
+Services tab) and then upgrade to IIS 3.0 (by reinstalling Service Pack 3 or
+using the Windows NT Server, Enterprise Edition component installer.
+
+Installing Debug Files
+----------------------
+
+Debug files for MSCS, MSMQ, and MTS are located in the Windows NT Server,
+Enterprise Edition Components CD in the following path:
+\Support\Symbols\Components\
+
+Reapplying Service Pack 3
+-------------------------
+
+If you change or add new software or hardware components to your system after you
+have installed Service Pack 3, you must install Service Pack 3 again. You cannot
+install new components directly from the Service Pack folder (such as a new
+keyboard or printer driver). You must install new components from the Windows NT
+Server/E Base CD and then reinstall the Service Pack.
+For example, if you install the SNMP service after installing Service Pack 3, you
+must reinstall the Service Pack. If you do not, the error "Entrypoint
+SnmpSvcGetEnterpriseOID could not be located in snmpapi.dll" appears because
+some of the files in the SNMP service have been updated in the Service Pack and
+you have a version mismatch. Reinstalling the Service Pack fixes the problem by
+copying the newer versions of the files to your system.
+
+Note: If you are reinstalling the Service Pack after installing new software or
+hardware, you must choose to create a new uninstall directory. To indicate this,
+click Yes, I want to create an Uninstall directory when you are prompted.
+
+Windows NT Server, Enterprise Edition Component Installation
+------------------------------------------------------------
+
+Each time you log on, Windows NT Server, Enterprise Edition Setup:
+
+- Prompts you to install Service Pack 3 (if you have not already done so).
+- Gives you the option to install MSCS, MSMQ, MTS, FrontPage 97, and Internet
+  Explorer 3.02 (after you have installed Service Pack 3).
+
+You are not given the option to install MSCS, MSMQ, MTS, FrontPage 97, and
+Internet Explorer 3.02, until you have installed Service Pack 3. You can disable
+the logon prompt for installing these components by clicking to clear the Show
+this installer next time you start Windows NT check box on the logon install
+option screen.
+
+Note: The Internet Information Server 3.0 upgrade option will upgrade an IIS 2.0
+installation to IIS 3.0. If IIS 2 is not currently installed, open Control
+Panel, double-click Network, on the Services tab click Microsoft Internet
+Information Server, and then click OK. After installing IIS 2.0, you can upgrade
+to IIS 3.0.
+
+If you choose to install multiple optional components, the installer installs
+each component in the appropriate order. If you click Cancel, you exit from only
+the install program that is running. For example, if you choose to install MSCS
+and MSMQ, and then click Cancel to exit from MSCS Setup, you much click Cancel
+twice more to exit from both MSMQ Setup and from the installer. This cancels the
+installation of both MSCS and MSMQ. To run the component installer after
+disabling it (by clearing the Show this installer next time you start Windows NT
+check box), run Nhloader.exe from the Windows NT \system32 folder (typically
+C:\Winnt\system32).
+
+REFERENCES
+==========
+
+For up-to-date information on Microsoft Cluster Server (MSCS) running on Windows
+NT 4.0 Enterprise Edition, please reference KB Article, Q259267: Microsoft
+Cluster Service Installation Resource.
+
+Additional query words: readme.txt
+
+======================================================================
+Keywords          : kbreadme 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92946/","publisher":null,"image":null,"headline":"Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92946-bookshelf-button-on-toolbar-appears-as-a-piggy-bank">Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92946
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1992 edition,1993 edition; WINDOWS:2.0a-CD,2.0c-CD
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bookshelf for Windows versions 1992 edition, 1993 edition 
+- Microsoft Word for Windows, versions 2.0a-CD, 2.0c-CD 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Word for Windows &amp; Bookshelf, Multimedia Edition, the Bookshelf
+button on the toolbar is mis-represented by a piggy bank graphic on the button
+face if the V2tbar.bmp or 82tbar.bmp files are corrupt or missing from the Word
+for Windows program folder.
+
+You can copy these two files to the Word program folder from the Word folder on
+the Microsoft Word for Windows &amp; Bookshelf CD. At the MS-DOS Prompt type the
+following two commands:
+
+  "COPY X:\WORD\82TBAR.BMP C:\WINWORD" (without the quotation marks)
+
+  "COPY X:\WORD\V2TBAR.BMP C:\WINWORD" (without the quotation marks)
+
+Where X is the CD-ROM drive letter and C:\Winword is the location of the Word for
+Windows, version 2.0 program files.
+
+MORE INFORMATION
+================
+
+The .bmp file you need depends on the type of video display driver used by
+Windows for your computer. Use the following chart to determine the file you
+need:
+
+  Filename     Display Type
+  --------     ------------
+
+  V2tbar.bmp   Any video display using "VGA res" fonts, which are
+               known as "Small Fonts"
+
+  82tbar.bmp   Any video display using "8514 res" fonts, which are
+               known as "Large Fonts"
+
+If you don't know which type of display you have, copy both files to the Word for
+Windows program folder. Word for Windows selects the correct file based on your
+video driver.
+
+These files provide the bitmap images necessary to display the Bookshelf button
+in the toolbar. Both files represent the same bitmap information, at different
+resolutions.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+Additional query words: 2.00a-CD piggy bank tool bar pig missing wrong incorrect mmwinword 2.00c-cd cd kbmm viewer 2.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbHomeMMsearch kbZNotKeyword2 kbBookshelfSearch kbWord200a kbWord200c kbBookShelf1992 kbBookShelf1993
+Version           : :1992 edition,1993 edition; WINDOWS:2.0a-CD,2.0c-CD
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133365/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133365/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133365/","publisher":null,"image":null,"headline":"Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133365-windows-9598-troubleshooting-problems-with-compressed-audio">Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133365
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0,1.0a,2.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbmm kbsound kbtshoot kbimukbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft 500 Nations, version 1.0 
+- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+- Microsoft Age of Empires II Expansion: The Conquerors 
+- Microsoft Allegiance, version 1.0 
+- Microsoft Ancient Lands for Windows, version 1.0 
+- Microsoft Asheron's Call, version 1.0 
+- Microsoft Baseball 2001 
+- Microsoft Casino 
+- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+- Microsoft Bookshelf '95 for Windows 95 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+- Microsoft Classic Board Games 
+- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+- Microsoft Complete Gardening for Windows, version 1.0 
+- Microsoft Complete NBA Basketball for Windows, 1994-1995, 1995-1996 editions 
+- Microsoft Crimson Skies 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Dogs for Windows, version 1.0 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+- Microsoft Encarta 97 Encyclopedia for Windows 
+- Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+- Microsoft Encarta 97 World Atlas for Windows 
+- Microsoft Flight Simulator for Windows 95, version 1.0 
+- Microsoft Flight Simulator 98 
+- Microsoft Flight Simulator 2000 
+- Microsoft Flight Simulator 2000 Professional Edition 
+- Microsoft Golf 2001 Edition 
+- Microsoft Greetings Workshop, version 2.0 
+- Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+- Microsoft Links 2001 
+- Microsoft MechWarrior 4: Vengeance 
+- Microsoft Metal Gear Solid 
+- Microsoft Midtown Madness 2, version 2.0 
+- Microsoft Motocross Madness 2, version 2.0 
+- Microsoft Musical Instruments for Windows, version 1.0 
+- Microsoft Music Central for Windows, 1996, 1997 edition 
+- Microsoft NBA Inside Drive 2000, version 1.0 
+- Microsoft NFL Fever 2000, version 1.0 
+- Microsoft Oceans for Windows, version 1.0 
+- Microsoft Pandora's Box, version 1.0 
+- Microsoft Plus! Game Pack: Cards and Puzzles 
+- Microsoft Reader's Digest Complete Do-It-Yourself Guide for Windows, version 1.0 
+- Microsoft Return of Arcade for Windows, version 1.0 
+- Microsoft SoundBits, Hanna-Barbera, version 2.0 
+- Microsoft SoundBits, MGM Movies, version 1.0 
+- Microsoft SoundBits, Musical Instruments, version 1.0 
+- Microsoft StarLancer, version 1.0 
+- Microsoft Wine Guide for Windows, versions 1.0, 1.0a, 2.0 
+- Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+If this article does not describe your hardware-related issue, please see the following Microsoft Web site to view more articles about hardware: 
+
+  http://support.microsoft.com/support/windows/topics/hardware/hwddresctr.asp
+
+SYMPTOMS
+========
+
+When you attempt to play a sound clip in Microsoft Windows 95 or Microsoft
+Windows 98, you may receive one of the following error messages:
+
+   - Your audio hardware cannot play files like the current file.
+
+   - Mmsystem326 No wave device that can play files in the current format is
+  installed.
+
+   - Error Starting Program! A required .DLL file, Msacm32.dll, was not found.
+
+When you attempt to play a video clip in Microsoft Windows 95/98, you may receive
+the following error message:
+
+  Mmsystem296 The file cannot be played on the specified MCI device. The file
+  may be corrupt, or not in the correct format.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+- You play a sound clip or video clip that contains compressed audio.
+
+- Microsoft Audio Compression Manager (MSACM) files are missing, damaged, or
+  not compatible with your version of MSACM.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate methods.
+
+Clean Boot the Computer
+-----------------------
+
+Clean boot your computer. To do this, use the appropriate method for your version
+of Windows.
+
+Windows 98:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+  click OK.
+
+3. On the General tab, click Selective Startup, and then click to clear the
+  following check boxes:
+
+   - Process Config.sys File
+   - Process Autoexec.bat File
+   - Process Winstart.bat File (if available)
+   - Process Win.ini File
+   - Load Startup Group Items
+
+4. Click OK. When you are prompted to restart the computer, do so.
+
+For additional information about how to clean boot Windows 98, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+Windows 95:
+
+1. Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then select Command Prompt Only from the Startup menu.
+
+2. At the command prompt, type "win" (without the quotation marks), and then
+  press ENTER. Press and hold down the SHIFT key until the Windows startup
+  sequence is complete.
+
+3. Disable any anti-virus or disk tool programs installed on the computer. For
+  information about how to disable these programs, see the printed or online
+  documentation for the program.
+
+4. Quit all running programs except Explorer and Systray. To do this:
+
+  a. Press CTRL+ALT+DELETE.
+
+  b. In the Close Program dialog box, click to highlight any program except
+     Explorer or Systray, which are components of Microsoft Windows, and then
+     click End Task.
+
+     If you receive a message that the program is busy or not responding, click
+     End Task again.
+
+  Repeat this step to quit all programs except Explorer and Systray.
+
+For additional information about how to clean boot Windows 95, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+
+Remove and Reinstall Audio Compression Drivers
+----------------------------------------------
+
+To remove and reinstall Windows 95/98 Audio Compression drivers:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Windows Setup tab, click Multimedia, and then click Details.
+
+4. Click the Audio Compression check box to clear it, and then click OK.
+
+5. Click Apply.
+
+6. On the Windows Setup tab, click Multimedia, and then click Details.
+
+7. Click the Audio Compression check box to select it, and then click OK.
+
+8. Click OK.
+
+9. Follow the instructions on the screen to finish installing the audio
+  compression drivers.
+
+If the issue continues to occur, proceed to the next method.
+
+Remove and Reinstall 16-bit MSACM Drivers and Codecs
+----------------------------------------------------
+
+Microsoft recommends that you use 32-bit MSACM unless your program requires a
+16-bit MSACM codec. 16-bit MSACM is installed by programs that use 16-bit
+MSACM.
+
+If the issue only occurs when you use a program that uses 16-bit MSACM, remove
+and reinstall the 16-bit MSACM drivers and codecs. To do this:
+
+1. Click Start, point to Find, and then click Files or Folders.
+
+2. In the Named box, type "msacm.ini msadpcm.acm imaadpcm.acm msgsm610.acm"
+  (without the quotation marks), and then click Find Now.
+
+3. On the Edit menu, click Select All.
+
+4. Press DELETE, and then click Yes.
+
+5. Remove and reinstall the program that uses 16-bit MSACM.
+
+Confirm 32-bit MSACM Installation
+---------------------------------
+
+Microsoft recommends that you use 32-bit MSACM unless your program requires a
+16-bit MSACM codec. 32-bit MSACM is a component of Windows 95/98.
+
+To verify that the 32-bit MSACM driver files in your Windows\System folder are
+properly installed:
+
+1. Click Start, point to Find, and then click Files or Folders.
+
+2. In the Named box, type "msacm*.*" (without the quotation marks), and then
+  click Find Now.
+
+3. In the list of found files, verify that the Msacm.drv, Msacm.dll, and
+  Msacm32.dll files are located in the System folder. Delete or rename any
+  copies of these files that are not in the System folder or the Sysbckup
+  folder.
+
+4. In the list of found files, verify that the file versions of the Msacm.drv,
+  Msacm.dll, and Msacm32.dll files match, and that the file versions are 4.0 or
+  greater.
+
+  To check the file version of each of these files:
+
+  a. In the list of found files, right-click the file you want to check.
+
+  b. On the Version tab, note the file version.
+
+  c. Click OK.
+
+5. If any of the files are missing from the System folder, if the file versions
+  do not match, or if the file version of any of the files is less than 4.0,
+  proceed to the appropriate method for your version of Windows to remove and
+  reinstall the 32-bit MSACM drivers.
+
+Remove and Reinstall 32-bit MSACM Drivers in Windows 98
+-------------------------------------------------------
+
+To remove and reinstall the 32-bit MSACM drivers in Windows 98:
+
+1. Insert the Windows 98 CD-ROM into the CD-ROM drive.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following line, and then click OK:
+
+  &lt;cd-rom&gt;:\win98
+
+where &lt;cd-rom&gt; is the letter of the CD-ROM drive.
+4. On the View menu, click Folder Options.
+
+5. On the View tab, under the Hidden Files branch in the Advanced Settings box,
+  click Show All Files, and then click OK.
+
+6. Extract the Msacm.dll and Msacm32.dll files from the Win98_33.cab file, and
+  then extract the Msacm.drv file from the Win98_40.cab file. To extract a file
+  from a .cab file, follow these steps:
+
+  a. Double-click the .cab file that contains the file you want to extract.
+
+  b. Right-click the file you want to extract, and then click Extract.
+
+  c. Double-click the icon for the hard disk on which Windows is installed,
+     double-click the Windows folder, and then click the Sysbckup folder.
+
+  d. Click OK.
+
+7. Restart the computer in MS-DOS mode.
+
+8. At the command prompt, type the following lines, pressing ENTER after you
+  type each line:
+
+  cd \windows\system
+  del msacm*.*
+  cd ..\sysbckup
+  copy msacm*.* ..\system
+
+9. At the command prompt, type "exit" (without the quotation marks), and then
+  press ENTER.
+
+Removing and Reinstalling 32-bit MSACM Drivers in Windows 95
+------------------------------------------------------------
+
+To remove and reinstall the 32-bit MSACM drivers in Windows 95:
+
+1. Insert the Windows 95 CD-ROM into the CD-ROM drive.
+
+2. Click Start, point to Programs, and then click MS-DOS Prompt.
+
+3. At the command prompt, type the following lines, pressing ENTER after you
+  type each line:
+
+  &lt;cd-rom&gt;:
+  cd \win95
+  extract win95_08.cab msacm*.* /l &lt;drive&gt;:\windows\sysbckup ,
+
+where &lt;cd-rom&gt; is the drive letter of the CD-ROM drive, and &lt;drive&gt;
+is the drive letter of the hard disk on which Windows is installed.
+
+If you are prompted to overwrite the files, press Y.
+4. At the command prompt, type "exit" (without the quotation marks), and then
+  press ENTER.
+
+5. Restart the computer in MS-DOS mode.
+
+6. At the command prompt, type the following lines, pressing ENTER after you
+  type each line:
+
+  cd \windows\system
+  del msacm*.*
+  cd ..\sysbckup
+  copy msacm*.* ..\system
+
+7. At the command prompt, type "exit" (without the quotation marks), and then
+  press ENTER.
+
+Additional query words: HWSNDTS errmmsg quiet halts multi media multimedia multi-media mmtitles kbmm m.s.a.c.m. sounds greetingsw gw2 wmpfaq
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmm kbsound kbtshoot kbimu kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbLinkGolfSearch kbEncartaSearch kbGamesSearch kbFlightSimSearch kbArcadeRet kbZNotKeyword kbGolf2001 kbGolfSearch kbNFLFever2000 kbNFLSearch kbArcadeSearch kbMSNSearch kbKidsSearch kbAllegianceSearch kbBookshelfSearch kbMetalGearSearch kbPandoraSearch kbPlusSearch kbMotocrossSearch kbStarlancerSearch kbSoundBitsSearch kbCrimsonSkiesSearch kbAsheronSearch kbBaseballSearch kbMidtownMadSearch kbAOESearch kbEncartaEncycSearch kbGreetingsWorkSearch kbZNotKeyword3 kbCineManiaSearch kbAllegiance kbAsheron100 kbStarlancer kbAOE2ExpConquerors kbAOE2Kings kbAncientLands kbBaseBall2001 kbCombatFlightSim2 kbCombatFlightSim kbCompleteBaseballSearch kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbCompleteBasketballSearch kbClassicBoardGames kbMetalGearSolid kbMidtownMadness2 kbPandorasBox kbMotocrossM2 kb500Nations100 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCasino kbCompleteBaseball1994 kbCompleteBaseball1995 kbCompleteGardening kbCrimsonSkies kbDangerousCreatures kbDinosaurs100 kbDogs100 kbJuliaChild kbLinks2001 kbMusicCentral kbMusicalInst kbNBAInsideDrive2000 kbSoundBits kbWine100 kbWine100a kbWine200 kbWorldofFlight kbGreetingsWork200 kbCompleteNBABasketball1994 kbEncarta1995 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbPlusGamePk kbEncartaEnCyc1994 kbMusicCentral1996 kbMusicCentral1997 kbOceans kbDoItYourself kbSimSearch
+Version           : :1.0,1.0a,2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

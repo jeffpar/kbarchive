@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153021: DOC: ListView Sort Only on Text of ListItem | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153021: DOC: ListView Sort Only on Text of ListItem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153021/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153021/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153021/","publisher":null,"image":null,"headline":"Q153021: DOC: ListView Sort Only on Text of ListItem","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153021-doc-listview-sort-only-on-text-of-listitem">Q153021: DOC: ListView Sort Only on Text of ListItem</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153021
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbdocfix kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbControl
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for the SortOrder Property of a ListView control states that
+you can "sort from the beginning of the alphabet (A-Z), the earliest date, or
+the lowest number." This is incorrect. All sorting is done only on the textual
+representation of the items being sorted. This means, for example, that the
+number "11000" will be sorted before the number "2000" if a sort is done in
+ascending order. This can also affect the sorting of dates, depending on the
+format of the date in the text property of the ListItem object.
+
+MORE INFORMATION
+================
+
+This sorting functionality is provided by the Comctl32.dll file that ships with
+all 32-bit Windows operating systems. Comctl32.ocx wraps this .dll file to
+provide Windows 95-style common controls to Visual Basic programmers. If a
+series of documents is created and sorted in Explorer, it will show the same
+behavior noted in this article and demonstrated in the Step To Reproduce sample
+below. When in ascending order, numbers will be sorted before alphabetic
+characters, and A will be sorted before Z. Special characters such as accents,
+umlauts, tildes, and carets are sorted immediately after the character preceding
+them, without the corresponding special character. These rules are reversed when
+sorting is done in descending order.
+
+Steps To Reproduce Behavior:
+----------------------------
+
+1. Start Visual Basic 4.0, 32-bit version. Form1 is created by default.
+
+2. Add a single ListView control to the form.
+
+3. Add this code to the form:
+
+        Private Sub Form_Click()
+            ListView1.SortOrder = 0
+            ListView1.Sorted = True
+            MsgBox "Sorted in ascending order"
+        End Sub
+
+        Private Sub Form_Load()
+            Dim i As ListItem
+
+            Set i = ListView1.ListItems.Add(, , "2000")
+            Set i = ListView1.ListItems.Add(, , "11000")
+        End Sub
+
+4. Press F5 or select Start from the Run menu to run the application. Click once
+  on the form and dismiss the "Sorted in ascending order message box". Observe
+  that the number "11000" has been sorted before the number "2000".
+
+Microsoft has confirmed this to be a documentation error in the products
+mentioned at the beginning of this article. This error has been corrected in the
+documentation for Visual Basic 5.0 and 6.0
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbControl 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

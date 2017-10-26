@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86294/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86294/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86294/","publisher":null,"image":null,"headline":"Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86294-wininiwri-microsoft-windows--ms-dos-5-upgrade">Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86294
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Windows &amp; MS-DOS 5 Upgrade
+WININI.WRI file.
+
+MORE INFORMATION
+================
+
+MICROSOFT WINDOWS 3.1 &amp; MS-DOS 5 UPGRADE
+
+WININI.WRI
+---------------------------------------------------------------------
+
+Windows initialization files contain information that defines your
+Windows environment. Windows and Windows applications can use the
+information stored in these files to configure themselves to meet your
+needs and preferences.
+
+There are two standard Windows initialization files:
+
+- WIN.INI, which primarily contains settings that Windows maintains to
+customize your Windows environment according to your preferences.
+
+- SYSTEM.INI, which primarily contains settings that customize Windows
+to meet your system's hardware needs.
+
+This document describes only a few of the settings in the WIN.INI
+file. You can get a more complete listing of the WIN.INI settings by
+purchasing the Windows Resource Kit for the Microsoft Windows
+Operating System Version 3.1. The Resource Kit provides complete
+technical information about Windows version 3.1 for the support
+professional. It includes a technical reference manual and a disk
+containing helpful utilities, system resource viewers, drivers, and
+accessories.
+
+To order the Windows Resource Kit within the United States, dial:
+
+  1-800-642-7676
+
+To order outside of the United States, dial the phone number for your
+area. You can find this number on the International Subsidiary card.
+
+Format of the WIN.INI File
+--------------------------
+
+The WIN.INI file contains several sections, each of which consists of
+a group of related settings. The sections and settings are listed in
+the WIN.INI file in the following format:
+
+ [section name]
+ keyname=value
+
+In this example, [section name] is the name of a section. The
+enclosing brackets ([ ]) are required, and the left bracket must be in
+the leftmost column on the screen.
+
+The keyname=value statement defines the value of each setting. A
+keyname is the name of a setting. It can consist of any combination of
+letters and digits in uppercase or lowercase, and it must be followed
+immediately by an equal sign (=). The value can be an integer, a
+string, or a quoted string, depending on the setting.
+
+You can include comments in initialization files. You must begin each
+line of a
+comment with a semicolon (;).
+
+Updating WIN.INI from Previous Versions of Windows
+--------------------------------------------------
+
+If you update your system to Windows version 3.1 from Windows version
+3.0, Setup automatically updates your WIN.INI file by making the
+following changes. For detailed information about these settings,
+refer to the Windows Resource Kit for the Microsoft Windows Operating
+System Version 3.1.
+
+In the [windows] section, Setup adds three new settings:
+
+KeyboardDelay=
+ScreenSaverTimeout=
+DosPrint=
+
+If the following settings are already present in the 3.0 version of
+the WIN.INI file, Setup does not change them. If they are not present,
+Setup adds them:
+
+Device=
+Documents=
+Programs=com exe bat pif
+
+In the [extensions] section, Setup adds one new setting:
+
+bmp=pbrush.exe ^.bmp
+
+Setup adds two other settings to the [extensions] section, if they are
+not already present in the 3.0 version of the WIN.INI file:
+
+pcx=pbrush.exe ^.pcx
+rec=recorder.exe ^.rec
+
+In the [ports] section, Setup adds:
+
+LPT1.DOS
+LPT2.DOS
+
+Setup adds three other settings to the [ports] section, if they are
+not already present in the 3.0 version of WIN.INI:
+
+FILE:\177
+COM3:=9600,n,8,1,x
+COM4:=9600,n,8,1,x
+
+Setup adds the following section and settings to support TrueType
+fonts:
+
+[FontSubstitutes]
+Helv=MS Sans Serif
+Tms Rmn=MS Serif
+Times=Times New Roman
+Helvetica=Arial
+
+Setup adds the following sections and settings to support multimedia:
+
+[mci extensions]
+wav=waveaudio
+mid=sequencer
+rmi=sequencer
+
+Setup adds the following sections and settings to support sound:
+
+[sounds]
+SystemDefault=ding.wav, Default Beep
+SystemExclamation=chord.wav, Exclamation
+SystemStart=tada.wav, Windows Start
+SystemExit=chimes.wav, Windows Exit
+SystemHand=chord.wav, Critical Stop
+SystemQuestion=chord.wav, Question
+SystemAsterisk=chord.wav, Asterisk
+
+Setup adds the following section and settings to support object
+linking and embedding:
+
+[embedding]
+SoundRec=Sound,Sound,SoundRec.exe,picture
+Package=Package,Package,packager.exe,picture
+PBrush=Paintbrush Picture,Paintbrush Picture,pbrush.exe,picture
+
+Setup also makes additional changes, depending on the applications and
+devices installed on your system.
+
+How to Read This Document
+-------------------------
+
+In this document, WIN.INI settings are listed alphabetically within
+sections. However, the settings do not appear alphabetically in the
+WIN.INI file. To change a setting, you need to search for it within
+the appropriate section.
+
+This document lists the syntax, default value, purpose, and
+recommended method for changing each setting, using the following
+format.
+
+SettingName=&lt;value-type&gt;
+
+Default:   The Windows default value for this setting.
+Purpose:   This paragraph briefly describes the function of the
+          setting and its default value (if applicable).
+To change: Describes the recommended method for changing the value of
+          this setting.
+
+&lt;value-type&gt; indicates whether the value should be an integer, a
+letter, a range of numbers, or something else.
+
+Changing Settings
+-----------------
+
+When the Setup program creates the WIN.INI file, it assigns default
+values to the settings. Some settings that are listed in this document
+may not appear in your WIN.INI file.
+
+There are two ways to change WIN.INI settings:
+
+- You can use Windows Control Panel to change most settings. This is
+the safest and most recommended way because there is no need to open
+and edit the WIN.INI file, where it is easier to make mistakes. For
+more information about Control Panel, see Chapter 5, "Control Panel,"
+in the Microsoft Windows User's Guide.
+
+- You can use a text editor, such as Windows Notepad, to edit the
+WIN.INI file directly. (Do not use a formatting editor; it can corrupt
+your WIN.INI file.) You must use this method to change the settings
+that you cannot change by using Control Panel. After you have edited
+the WIN.INI file, you must restart Windows for the settings to take
+effect. For more information about Notepad, see Chapter 12,
+"Additional Accessories," in the Microsoft Windows User's Guide.
+
+Caution:  Always back up your WIN.INI file before you make changes so
+that you can restore the original file in case you accidentally damage
+the WIN.INI file or make changes that cause problems when running
+Windows. It is recommended that you do not change any settings that
+are not described in this document. However, if you need to change
+additional settings, refer to the Windows Resource Kit for the
+Microsoft Windows Operating System Version 3.1. Be careful when using
+a text editor to edit the WIN.INI file. Incorrect changes to WIN.INI
+can cause unexpected results when you run Windows.
+
+[windows] Section Settings
+--------------------------
+
+The [windows] section contains settings that affect general areas of
+your Windows environment, such as which applications run when you
+start Windows and how information appears on your screen.
+
+The [windows] section can contain the following settings.
+
+DoubleClickHeight=&lt;pixels&gt;
+
+Default:   4
+Purpose:   Specifies the height (in pixels) that the mouse pointer can
+          move between clicks when you double-click. If the mouse
+          pointer is moved further up or down, the two clicks are
+          treated as separate single clicks. For example, if
+          DoubleClickHeight=10, the mouse pointer cannot move
+          vertically more than 5 pixels between clicks in order for
+          the two clicks to be recognized as a double-click. If you
+          use an odd number, it is rounded up to the nearest even
+          number. This setting is helpful if you are using a pen-
+          tablet pointing device.
+To change: Use Notepad to edit the WIN.INI file.
+
+DoubleClickWidth=&lt;pixels&gt;
+
+Default:   4
+Purpose:   Specifies the width (in pixels) that the mouse pointer
+          can move between clicks when you double-click. If the mouse
+          pointer is moved further right or left, the two clicks are
+          treated as separate single clicks. For example, if
+          DoubleClickWidth=10, the mouse pointer cannot move
+          horizontally more than 5 pixels between clicks in order for
+          the two clicks to be recognized as a double-click. If you
+          use an odd number, it is rounded up to the nearest even
+          number. This setting is helpful if you are using a pen-
+          tablet pointing device.
+To change: Use Notepad to edit the WIN.INI file.
+
+Load=&lt;filename(s)&gt;
+
+Default:   None
+Purpose:   Specifies one or more applications to run as icons when
+          Windows is started. This value is a list of one or more
+          filenames of applications, or documents that are associated
+          with an application, each separated by a space. Specify the
+          complete path if the application or document is not located
+          in the Windows directory.
+To change: Add the application to the StartUp group in Program
+          Manager, and then select the Minimize On Use check box in
+          the Properties dialog box.
+
+MenuDropAlignment=&lt;0-or-1&gt;
+
+Default:   0
+Purpose:   Specifies whether menus open right-aligned or left-aligned
+          with the menu title. If this setting is 0, menus open so
+          that they are left-aligned. If it is 1, menus open so that
+          they are right-aligned.
+To change: Use Notepad to edit the WIN.INI file.
+
+MenuShowDelay=&lt;milliseconds&gt;
+
+Default:   0 for 80386 computers; 400 for 80286 computers
+Purpose:   Specifies how long Windows waits before displaying a
+          cascading menu.
+To change: Use Notepad to edit the WIN.INI file.
+
+Programs=&lt;extensions&gt;
+
+Default:   com exe bat pif
+Purpose:   Defines which files Windows considers applications. A
+          filename extension is separated by a space and does not
+          include the preceding period.
+To change: Use Notepad to edit the WIN.INI file.
+
+Run=&lt;filename(s)&gt;
+
+Default:   None
+Purpose:   Causes Windows to run one or more specified applications
+          when Windows is started. The value is a list of one or more
+          filenames of applications, or documents associated with
+          applications, each separated by a space. Specify the
+          complete path if the application or document is not located
+          in the Windows directory.
+To change: Add the application to the StartUp group in Program
+          Manager.
+
+[desktop] Section Settings
+--------------------------
+
+The [desktop] section contains optional settings that control the
+appearance of the screen background (desktop) and the positioning of
+windows and icons on the screen. Most of these settings (which are not
+listed in this document) can be changed by using Control Panel. The
+following setting must be changed by editing the WIN.INI file.
+
+IconVerticalSpacing=&lt;pixels&gt;
+
+Default:  Windows determines the default value based on the icon title
+         font and the display adapter you are using.
+Purpose:  Specifies the number of pixels that appear vertically
+         between icons. Increasing this number increases the amount
+         of vertical space between icons.
+
+[fonts] Section Settings
+------------------------
+
+The [fonts] section describes one or more font files that are loaded
+when Windows is started.
+
+The [fonts] section can contain one or more occurrences of the
+following setting.
+
+&lt;font-name&gt;=&lt;font-file&gt;
+
+Purpose:   Specifies a font file. The &lt;font-name&gt; keyname is the
+          descriptive name of a font. The &lt;font-file&gt; value is the
+          filename of a file that contains font resources.
+To change: Choose the Fonts icon from the Control Panel window.
+
+[mci extensions] Section Settings
+---------------------------------
+
+The [mci extensions] section contains settings that associate
+different types of media files with different Media Control Interface
+(MCI) device drivers. Whenever a media file is selected, Windows uses
+the associated driver to play it.
+
+The [mci extensions] section can contain one or more occurrences of
+the following setting.
+
+&lt;extension&gt;=&lt;mci-device-type&gt;
+
+Purpose:   Associates files that have the specified extension with the
+          specified MCI device driver. Windows uses the specified
+          driver to play the media file associated with it.
+To change: Use Notepad to edit the WIN.INI file.
+
+[Windows Help] Section Settings
+-------------------------------
+
+The [Windows Help] section includes settings that specify the size and
+placement of the Help window and dialog boxes, as well as the color of
+text that, when chosen, displays a macro, pop-up window, or new Help
+window.
+
+The [Windows Help] section can include the following settings.
+
+JumpColor=&lt;red-value&gt; &lt;green-value&gt; &lt;blue-value&gt;
+
+Purpose:   Specifies the color of text that, when chosen, leads to a
+          new window of Help information. For example, specifying 000
+          000 000 as values results in black text on a white
+          background.
+To change: Use Notepad to edit the WIN.INI file.
+
+PopupColor=&lt;red-value&gt; &lt;green-value&gt; &lt;blue-value&gt;
+
+Purpose:   Specifies the color of text that, when chosen, displays a
+          pop-up window (the type of window used for glossary
+          definitions). For example, specifying 000 000 000 as values
+          results in black text on a white background.
+To change: Use Notepad to edit the WIN.INI file.
+
+MacroColor=&lt;red-value&gt; &lt;green-value&gt; &lt;blue-value&gt;
+
+Purpose:   Specifies the color of text that, when chosen, runs a Help
+          macro.
+To change: Use Notepad to edit the WIN.INI file.
+
+IFJumpColor=&lt;red-value&gt; &lt;green-value&gt; &lt;blue-value&gt;
+
+Purpose:   Specifies the color of text that, when chosen, leads to a
+          new window of Help information, located in a different Help
+          file.
+To change: Use Notepad to edit the WIN.INI file.
+
+IFPopupColor=&lt;red-value&gt; &lt;green-value&gt; &lt;blue-value&gt;
+
+Purpose:   Specifies the color of text that, when chosen, displays a
+          pop-up window (the type of window used for glossary
+          definitions), located in a different Help file.
+To change: Use Notepad to edit the WIN.INI file.
+
+Additional query words: 3.1 3.10 5 5.0 5.00 win31 doswin
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

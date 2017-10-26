@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237767: XADM: Understanding Offline and Snapshot Backups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237767: XADM: Understanding Offline and Snapshot Backups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237767/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237767/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237767/","publisher":null,"image":null,"headline":"Q237767: XADM: Understanding Offline and Snapshot Backups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237767-xadm-understanding-offline-and-snapshot-backups">Q237767: XADM: Understanding Offline and Snapshot Backups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237767
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 09-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange 2000 Server 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article provides information about snapshot backup solutions for Exchange,
+although this article does not address any vendor's specific implementation.
+This article also provides information about making emergency offline backups of
+Exchange data if your usual online backup solution is not functioning.
+
+This article contains the following sections:
+
+- General Snapshot and Offline Backup Information
+
+- Exchange Server 4.0, 5.0, and 5.5 Offline Backup and Restoration Summary
+
+   - Backing Up a Database
+
+   - Restoring a Database Without Playing Logs Forward
+
+   - Restoring a Database and Playing Logs Forward
+
+- Exchange 2000 Server Offline Backup and Restoration Summary
+
+   - Backing Up a Database
+
+   - Restoring a Database Without Playing Logs Forward
+
+   - Restoring a Database and Playing Logs Forward
+
+MORE INFORMATION
+================
+
+General Snapshot and Offline Backup Information
+-----------------------------------------------
+
+Microsoft has provided a backup application programming interface (API) for
+Exchange that enables you to backup databases while the databases are running,
+which avoids interruptions of service. Many third party backup software vendors
+have implemented this API through add-on software agents or modules.
+
+NOTE:If you install the Exchange Server Administrator program or Exchange System
+Manager on a server, the Windows NT Backup utility that is included with
+Microsoft Windows NT and Microsoft Windows 2000 is automatically extended to
+support Exchange online backups.
+
+The online backup API automatically backs up all of the required database and log
+files. The administrator that performs the backup does not need to know the
+names or path locations of the Exchange files that the administrator needs to
+back up. During restoration, the administrator must specify the server, and then
+the restoration API performs the necessary steps to return all of the files to
+their proper paths, even if file locations have been changed in the interim.
+
+After the backup, if all of the transaction logs that were generated by the
+database that were taken are still available, the restoration API "replays"
+newer transaction logs into the restored database, which brings the restored
+database completely up to date. This procedure is known as a "roll forward"
+restoration.
+
+To preserve all of the transaction logs, you must disable circular logging. By
+default, circular logging is enabled for all versions of Exchange Server that
+are earlier than Exchange 2000 Server.
+
+For additional information about circular logging, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q147523 XADM: Enabling or Disabling Circular Logging
+
+  Q258470 XADM: How to Modify the Circular Logging Setting
+
+By manually backing up the appropriate files, an Exchange administrator can
+achieve the same overall effect as the online backup API, except that the
+administrator cannot perform backups while the database is running. It is even
+possible to replay log data after you restore these backups.
+
+Some commercial Exchange backup solutions deliberately bypass the Exchange backup
+API and take a "snapshot" of the database by stopping it and by copying database
+and transaction files to a backup location. These backups are commonly known as
+"offline" or "snapshot" backups.
+
+The primary advantage of a commercial snapshot backup solution compared to an
+online backup solution is the speed of restoration. Typically, snapshot backup
+solutions are integrated with specialized hardware that can both back up and
+restore very large files almost instantaneously. Snapshot solutions do require
+that you stop the database to perform the backup, however, the length of the
+outage is usually only seconds or minutes.
+
+Regardless of particular vendor implementations, the fundamental principles
+involved in making offline backups of Exchange data are the same. If you are
+considering a commercial snapshot backup solution for Exchange, this article
+provides insight into how the process works. The procedures in this article are
+also valuable if you need to make emergency offline backups of Exchange data
+because an online solution is unavailable.
+
+Supportability of Offline and Snapshot Backup Solutions:
+
+Microsoft recommends backing up and restoring Exchange data through an
+application that implements the online backup API for the following reasons:
+
+- The API ensures that all of the relevant files are backed up.
+
+- The API implements several checks and safeguards during backup and
+  restoration.
+
+- The API has been thoroughly tested.
+
+This does not mean that you cannot perform offline and snapshot backups safely
+and successfully. However, it is up to the backup solution vendor or Exchange
+administrator to ensure that all of the needed files are backed up and restored
+correctly, and that the integrity of all files is preserved at each stage of the
+process.
+
+If you implement a snapshot or offline backup solution for Exchange, your vendor
+is the primary provider of support for backup and recovery problems. Microsoft
+Product Support Services (PSS) can assist you with diagnosing or analyzing
+problems with the available database and transaction log file set, but Microsoft
+does not test, certify or debug scripts and procedures for offline or snapshot
+backups of Exchange data files. Microsoft PSS assistance is limited to advice
+about how to best proceed with the available file set.
+
+Microsoft strongly recommends use of Exchange Server 5.5 Service Pack 2 or later
+if you intend to regularly implement offline backups.
+
+Cautions and Considerations for Offline and Snapshot Backups:
+
+Making and restoring offline backups can be simple if you do not intend to replay
+newer transaction logs into a restored database. However, if you skip log
+replay, all of the data that was generated after the backup is lost.
+
+The online backup paradigm assumes that Exchange administrators will not manually
+add, delete, rename, or replace files in the Exchange data set (in other words,
+that the administrator will let the backup and restoration process take care of
+all file manipulation and log file purging). The administrator's responsibility
+is simply to decide whether circular logging should be enabled or disabled, and
+then to make regular backups of Exchange data. If data must be restored,
+transaction log replay occurs automatically and safely based on the available
+file set. The online backup API verifies that the necessary files are available,
+safely merges data from tape with the existing data set, and automatically
+performs recovery.
+
+When an administrator works with an offline backup, all of this management and
+verification of files becomes entirely the responsibility of the administrator.
+Verifying that the file set that you restored is ready for log file replay is
+the most complicated part of managing offline backups.
+
+Although the fundamental principles of backup and restoration are the same across
+all versions of Exchange, Exchange 2000 adds some complicating factors because
+Exchange 2000 supports multiple independent databases. An Exchange 2000 server
+can support up to 20 databases, organized in up to four separate storage groups,
+with each storage group supporting a separate set of transaction logs. Each of
+these 20 databases can be stopped or started independently.
+
+In Exchange 2000, when you restore files into a storage group you must take extra
+care not to disturb the files that are in use by other databases in the storage
+group. You might be restoring a single Exchange 2000 database into a storage
+group that has several other running databases that are no longer synchronized
+with the restored database.
+
+In earlier versions of Exchange Server, there is a single storage group on each
+server, which supports a maximum of two databases (a private information store
+and a public information store). You must ensure that you stop and start both of
+these databases together. For the purposes of an offline backup, you can treat
+these databases as if they are a single database: they are stopped and started
+together, and backed up and restored together.
+
+For additional information about managing offline backups, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q296788 XADM: Offline Backup and Restoration Procedures for Exchange 2000
+  Server
+
+  Q296787 XADM: Offline Backup and Restore Procedures for Exchange Server 4.0,
+  5.0, and 5.5
+
+There is significant overlap and duplication in these two articles. This is
+deliberate, to make it easy to contrast and understand the differences between
+procedures for the different versions of Exchange.
+
+The rest of this article provides an overview of offline backup and restoration
+procedures. The articles listed earlier provide detailed explanatory information
+about each of the steps.
+
+Exchange Server 4.0, 5.0, and 5.5 Offline Backup and Restoration Summary
+------------------------------------------------------------------------
+
+Backing Up a Database:
+
+To back up a database:
+
+1. Stop the database service.
+
+2. Verify that the database files are consistent.
+
+3. Copy the .edb files to the backup media.
+
+4. Restart the database service.
+
+5. If circular logging is enabled, back up all of the numbered transaction log
+  files, but not the Edb.log file.
+
+6. If circular logging is disabled, purge backed up log files that are older
+  than the checkpoint.
+
+7. Use the Esefile /x command (for Exchange Server 5.0) or the Esefile /s
+  command (for Exchange Server 5.5) to verify the page-level integrity of the
+  backed up .edb files.
+
+Restoring a Database Without Playing Logs Forward:
+
+To restore a database without playing logs forward (a "point in time"
+restoration):
+
+1. Stop the database service and then move--do not delete--the checkpoint file
+  and all of the transaction log files.
+
+2. Restore the consistent .edb files.
+
+3. Start the database service, and if you receive an error message that
+  instructs you to run the ISINTEG -patch command, do so.
+
+Restoring a Database and Playing Logs Forward:
+
+To restore a database and play logs forward:
+
+1. Stop the database service, and then copy the backed up database files that
+  you intend to restore to the current database paths.
+
+2. Verify database file consistency, and then identify the anchor log file (the
+  lowest "last consistent" log) by running the ESEUTIL /MH command against each
+  database. If the anchor log is not available, you cannot play logs forward.
+
+  WARNING: If you try to play logs forward without the anchor log, you
+  irreparably damage the database.
+
+3. Verify that the log signature that is recorded in each database header is the
+  signature of the anchor log. Use the ESEUTIL /ML command and the ESEUTIL /MH
+  command to compare header information.
+
+4. Verify that the current database path locations are the same as they were at
+  the time you made the backup by examining the log file headers with the
+  ESEUTIL /ML command.
+
+5. Gather logs, starting with the anchor log and going as far forward as
+  possible with an unbroken numeric sequence, and then copy these logs to the
+  current transaction logs path. Do not overwrite existing logs on the server.
+
+6. If an Edb.log file already exists on the server, use the ESEUTIL /ML command
+  to examine the lGeneration value to determine whether that Edb.log file is
+  the next log in sequence. If that Edb.log file is not the next highest log,
+  you must remove that Edb.log file.
+
+7. If no Edb.log file is available, rename the highest numbered log file to
+  Edb.log.
+
+8. Verify that all of the logs present in the transaction logs path share the
+  same signature.
+
+9. Remove the Edb.chk file from the Working Path folder.
+
+10. Make a final check: Are all of the database files present and in the correct
+  locations? Are the only log files present an unbroken series of log files
+  that share the same signature from the anchor log to the highest log, which
+  has been renamed Edb.log? Has the checkpoint file been removed?
+
+  WARNING: If you do not remove the checkpoint, you may irreparably damage the
+  database.
+
+11. Start the database service, and if you receive an error message that
+  instructs you to run the ISINTEG -patch command, do so.
+
+Exchange 2000 Server Offline Backup and Restoration Summary
+-----------------------------------------------------------
+
+NOTE: The current log file for a storage group is generically referred to in
+these instructions as E0n.log, where 0n can be 00, 01, 02 or 03.
+
+Backing Up a Database:
+
+To back up a database:
+
+1. Dismount the database that you want to back up.
+
+2. Run the ESEUTIL /MH command to verify that the database files (.edb and .stm)
+  are both consistent and matched to each other.
+
+3. Copy each .edb database file and its corresponding .stm streaming database
+  file to the backup media.
+
+4. Mount the backed up databases.
+
+5. If circular logging is disabled, back up numbered transaction log files, but
+  not E0n.log.
+
+6. If circular logging is disabled, purge any backed up log files that are older
+  than the checkpoint.
+
+7. Use the Esefile /s command to verify the page-level integrity of the backed
+  up .edb files.
+
+8. Use the Eseutil /ml E0n command to verify the integrity of the backed up log
+  files.
+
+Restoring a Database Without Playing Logs Forward:
+
+To restore a database without playing logs forward:
+
+1. Dismount the database that you want to restore. If any other databases in the
+  same storage group are also dismounted, the database files must be consistent
+  and matched. If all of the databases are dismounted, there must be a valid
+  checkpoint file (E0n.chk) that points to E0n.log.
+
+2. Copy the matched and consistent .edb and .stm files for the backup databases
+  into the appropriate locations.
+
+3. Mount the restored databases.
+
+Restoring a Database and Playing Logs Forward:
+
+To restore a database and play logs forward:
+
+1. Dismount the databases that you want to restore, and then copy the backed up
+  database files into place on the server.
+
+2. Dismount all of the databases in the storage group, and then run the ESEUTIL
+  /MH command to verify that all of the files are consistent and matched, and
+  to determine the low and high anchor logs that are required (the lowest and
+  highest Last Consistent values from the database headers).
+
+3. Verify that the log signature that is recorded in each database header is the
+  signature of the low anchor log. Use the ESEUTIL /ML command and the ESEUTIL
+  /MH command to compare header information.
+
+4. Examine the header information in the last consistent log for each database
+  to verify that the current database path locations are the same as they were
+  at the time that you made the backup.
+
+5. Gather all of the logs from the low anchor to the high anchor, and then copy
+  the logs to the current Transaction Logs folder. Remember that the high
+  anchor log is often named E0n.log, and you must examine the lGeneration value
+  in the log's header to discover its place in the sequence. You can also use
+  log files past the high anchor log, as long as they continue in unbroken
+  sequence.
+
+6. Run the ESEUTIL /ML E0n command to verify that all of the logs share the same
+  log signature and are in an unbroken sequence.
+
+7. If the high anchor log is not already named E0n.log, rename it E0n.log.
+
+8. Remove the E0n.chk file from the System Path folder.
+
+9. Make a final check before you mount the storage group: Are all of the
+  database files present in the appropriate paths? Are the only log files
+  present log files that share the same signature, in an unbroken sequence
+  starting with the low anchor log, with the highest log named E0n.log? Has the
+  E0n.chk file been removed from the System Path folder?
+
+10. Mount the databases in the storage group, in no particular order.
+
+You may receive a -1216 error message during the restoration of an offline
+backup. This means that some data that was present at the time that the storage
+group was last stopped is missing.
+
+For additional information about handling -1216 error messages during a soft
+recovery of an Exchange storage group, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q296843 XADM: Error -1216 Recovering an Exchange 2000 Database
+
+Additional query words: 0x3f3 3f3
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

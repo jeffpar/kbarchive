@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141503: FIX: Can’t Connect to Excel Data Source in Remote View Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141503: FIX: Can’t Connect to Excel Data Source in Remote View Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141503/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141503/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141503/","publisher":null,"image":null,"headline":"Q141503: FIX: Can’t Connect to Excel Data Source in Remote View Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141503-fix-cant-connect-to-excel-data-source-in-remote-view-wizard">Q141503: FIX: Can’t Connect to Excel Data Source in Remote View Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141503
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbMDAC250kbbuglist kbfixlist
+Last Modified: 10-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Remote View Wizard, after selecting Microsoft Excel as your data source
+and subsequently choosing a Microsoft Excel spreadsheet, you receive this error
+message:
+
+  Error connecting Excel Files
+
+RESOLUTION
+==========
+
+To create a remote view to a Microsoft Excel spreadsheet, use the New View
+option instead of the Wizard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Before attempting the following steps, you must first have a Microsoft Excel 5.0
+driver data source created and available. If you are missing this data source,
+use the ODBC Administrator to create a new one. You must also have a Microsoft
+Excel spreadsheet available for testing.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the Command window, type these commands:
+
+  CREATE DATA mydata
+  MODIFY DATA mydata
+
+2. Right-click the Database Designer, and choose New Remote View. In the
+  displaying dialog box, click View Wizard.
+
+3. In Step 1, choose your Microsoft Excel data source from the list of available
+  data sources.
+
+4. In the Select Workbook dialog box, choose any Microsoft Excel spreadsheet by
+  double-clicking it. Alternatively, you can select the file and click OK. Note
+  that the Next button is disabled. After selecting the workbook, you will get
+  the error message. Click OK to return to step 1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbMDAC250 kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b
+Version           : WINDOWS:2.5,3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

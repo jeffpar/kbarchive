@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199233: How to Use DHTML with ASP and Long SQL Queries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199233: How to Use DHTML with ASP and Long SQL Queries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199233/","publisher":null,"image":null,"headline":"Q199233: How to Use DHTML with ASP and Long SQL Queries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199233-how-to-use-dhtml-with-asp-and-long-sql-queries">Q199233: How to Use DHTML with ASP and Long SQL Queries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199233
+Product(s): Internet Information Server
+Version(s): winnt:3.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When SQL Server queries take a great deal of time to process in an ASP page, the
+Web browser may be left with a blank page while information is gathered from the
+database. If you use Internet Explorer's Dynamic HTML features, a message can be
+displayed to a Web browser while the data is processed and then changed or
+erased when the page is finished being rendered.
+
+MORE INFORMATION
+================
+
+The following example ASP code uses a system Data Source Name (DSN) that points
+to the Adventure Works example Microsoft Access database that shipped with IIS
+3.0, but can be tested with any data source by changing the following two
+lines:
+
+  strSQL = "SELECT * FROM <span class="nt">&lt;Table</span> <span class="na">Name</span><span class="nt">&gt;</span>"
+  RS.Open strSQL, "DSN=<span class="nt">&lt;Datasource</span> <span class="na">Name</span><span class="nt">&gt;</span>"
+
+The following example page displays a message to the browser while loading the
+data, then changes that message to the record count after the data is loaded.
+Copy and save the following ASP code in your InetPub\Scripts folder as
+DhtmTest.asp, and then test the page by browsing to
+http://localhost/scripts/DhtmTest.asp.
+
+     <span class="nt">&lt;html&gt;</span>
+     <span class="nt">&lt;head&gt;&lt;title&gt;</span>DHTML and ASP Example<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+     <span class="nt">&lt;body&gt;</span>
+
+     <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"HideMe"</span><span class="nt">&gt;</span>Please wait while the data loads...<span class="nt">&lt;/h3&gt;</span>
+
+     <span class="nt">&lt;</span><span class="err">%</span>
+       <span class="na">Dim</span> <span class="na">RS</span><span class="err">,</span> <span class="na">strSQL</span><span class="err">,</span> <span class="na">i</span>
+       <span class="na">Set</span> <span class="na">RS =</span><span class="err"> </span><span class="s">Server.CreateObject("ADODB.RecordSet")</span>
+       <span class="na">strSQL =</span><span class="err"> </span><span class="s">"SELECT * FROM Products"</span>
+       <span class="na">RS</span><span class="err">.</span><span class="na">CursorType =</span><span class="err"> </span><span class="s">1</span> <span class="err">'</span> <span class="na">open</span> <span class="na">with</span> <span class="na">adOpenKeyset</span>
+       <span class="na">RS</span><span class="err">.</span><span class="na">Open</span> <span class="na">strSQL</span><span class="err">,</span> <span class="err">"</span><span class="na">DSN=</span><span class="s">AdvWorks"</span>
+
+       <span class="na">If</span> <span class="na">Not</span> <span class="na">RS</span><span class="err">.</span><span class="na">EOF</span> <span class="na">Then</span>
+         <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">table</span> <span class="na">border=</span><span class="s">1</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> vbCrLf
+
+         Response.Write "<span class="nt">&lt;tr&gt;</span>"
+         For i =  0 to (RS.Fields.Count - 1)
+           Response.Write "<span class="nt">&lt;th&gt;</span>" <span class="err">&amp;</span> RS.Fields(i).Name <span class="err">&amp;</span> "<span class="nt">&lt;/th&gt;</span>"
+         Next
+         Response.Write "<span class="nt">&lt;/tr&gt;</span>" <span class="err">&amp;</span> vbCrLf
+           
+         Do While Not RS.EOF
+           Response.Write "<span class="nt">&lt;tr&gt;</span>"
+           For i =  0 to (RS.Fields.Count - 1)
+             Response.Write "<span class="nt">&lt;td&gt;</span>" <span class="err">&amp;</span> RS.Fields(i).Value <span class="err">&amp;</span> "<span class="nt">&lt;/td&gt;</span>"
+           Next
+           Response.Write "<span class="nt">&lt;/tr&gt;</span>" <span class="err">&amp;</span> vbCrLf
+           RS.MoveNext
+         Loop
+
+         Response.Write "<span class="nt">&lt;/table&gt;</span>" <span class="err">&amp;</span> vbCrLf
+       End If
+     %&gt;
+
+     <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"JavaScript"</span> <span class="na">for=</span><span class="s">"window"</span> <span class="na">event=</span><span class="s">"onload"</span><span class="nt">&gt;</span>
+        <span class="nx">HideMe</span><span class="p">.</span><span class="nx">innerText</span><span class="o">=</span><span class="s1">'&lt;%=RS.RecordCount%&gt; Record(s) displayed.'</span>
+     <span class="nt">&lt;/script&gt;</span>
+
+     <span class="nt">&lt;</span><span class="err">%</span> <span class="na">RS</span><span class="err">.</span><span class="na">Close</span> <span class="err">%</span><span class="nt">&gt;</span>
+
+     <span class="nt">&lt;/body&gt;</span>
+     <span class="nt">&lt;/html&gt;</span>
+
+The above code can easily be modified to erase the message from the page by
+changing the script section to read as follows:
+
+     HideMe.style.display='none';
+
+Additional query words: jscript javascript scripting dhtml asp html
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : winnt:3.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175794/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175794/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175794/","publisher":null,"image":null,"headline":"Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175794-smsinst-odbc-driver-path-is-incorrectly-set-on-win95-client">Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q175794</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">1.0</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">smsinst</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">22</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Installer</span> <span class="k">version</span> <span class="m">1.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">The</span> <span class="n">ODBC</span> <span class="n">Administrator</span> <span class="n">reports</span> <span class="n">that</span> <span class="n">the</span> <span class="n">setup</span> <span class="n">routines</span> <span class="n">could</span> <span class="k">not</span> <span class="n">be</span> <span class="n">loaded</span><span class="p">,</span>
+<span class="n">following</span> <span class="n">the</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">ODBC</span> <span class="n">drivers</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">client</span> <span class="n">using</span> <span class="n">a</span>
+<span class="k">package</span> <span class="n">created</span> <span class="n">by</span> <span class="n">SMS</span> <span class="n">Installer</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="n">Install</span> <span class="n">ODBC</span> <span class="n">Driver</span> <span class="n">option</span> <span class="n">assumes</span> <span class="n">that</span> <span class="n">the</span> <span class="n">driver</span> <span class="k">and</span> <span class="n">setup</span> <span class="n">DLLs</span> <span class="n">are</span> <span class="n">always</span>
+<span class="n">placed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Windows</span><span class="p">\</span><span class="nf">System</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">clients</span><span class="p">.</span> <span class="n">Consequently</span><span class="p">,</span> <span class="n">it</span>
+<span class="n">prepends</span> <span class="n">this</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Driver</span> <span class="n">Attributes</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">client</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="n">Some</span> <span class="n">ODBC</span> <span class="n">Driver</span> <span class="n">Installation</span> <span class="n">routines</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">application</span> <span class="n">directory</span>
+<span class="n">structure</span> <span class="k">and</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">setup</span> <span class="k">and</span> <span class="n">driver</span> <span class="n">DLLs</span> <span class="k">to</span> <span class="n">it</span><span class="p">.</span> <span class="n">This</span> <span class="n">results</span> <span class="k">in</span> <span class="n">a</span> <span class="n">mismatch</span>
+<span class="n">between</span> <span class="n">the</span> <span class="n">path</span> <span class="n">that</span> <span class="n">the</span> <span class="n">registry</span> <span class="n">reports</span> <span class="k">in</span>
+<span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">ODBC</span><span class="p">\</span><span class="n">ODBCINST</span><span class="p">.</span><span class="n">INI</span><span class="p">\</span><span class="n">Applicationname</span><span class="p">\</span> <span class="k">and</span> <span class="n">the</span> <span class="n">actual</span>
+<span class="n">location</span> <span class="k">of</span> <span class="n">the</span> <span class="n">setup</span> <span class="k">and</span> <span class="n">driver</span> <span class="n">DLLs</span><span class="p">.</span> <span class="n">Other</span> <span class="n">drivers</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Driver</span>
+<span class="n">Attributes</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span> <span class="n">Windows</span><span class="p">\</span><span class="nf">System</span> <span class="n">path</span> <span class="n">prepended</span><span class="p">.</span>
+
+<span class="n">Some</span> <span class="n">ODBC</span> <span class="n">Driver</span> <span class="n">Installation</span> <span class="n">routines</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">setup</span> <span class="k">and</span> <span class="n">driver</span> <span class="n">DLLs</span> <span class="k">to</span> <span class="n">a</span>
+<span class="n">newly</span><span class="p">-</span><span class="n">created</span> <span class="n">application</span> <span class="n">directory</span> <span class="n">structure</span><span class="p">,</span> <span class="n">consequently</span> <span class="n">there</span> <span class="n">may</span> <span class="n">be</span> <span class="n">a</span>
+<span class="n">mismatch</span> <span class="n">between</span> <span class="n">the</span> <span class="n">path</span> <span class="n">that</span> <span class="n">the</span> <span class="n">registry</span> <span class="n">reports</span> <span class="k">in</span>
+<span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">ODBC</span><span class="p">\</span><span class="n">ODBCINST</span><span class="p">.</span><span class="n">INI</span><span class="p">\&lt;</span><span class="n">Applicationname</span><span class="p">&gt;\</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">actual</span> <span class="n">location</span> <span class="k">of</span> <span class="n">the</span> <span class="n">setup</span> <span class="k">and</span> <span class="n">driver</span> <span class="n">DLLs</span><span class="p">.</span> <span class="n">Other</span> <span class="n">drivers</span> <span class="n">that</span> <span class="n">are</span> <span class="n">added</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">Driver</span> <span class="n">Attributes</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span> <span class="n">Windows</span><span class="p">\</span><span class="nf">System</span> <span class="n">path</span> <span class="n">prepended</span><span class="p">.</span>
+
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">driver</span> <span class="k">and</span> <span class="n">setup</span> <span class="n">DLL</span> <span class="n">files</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">Windows</span><span class="p">\</span><span class="nf">System</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">client</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">1.2</span><span class="p">.</span> <span class="n">We</span> <span class="n">are</span> <span class="n">researching</span> <span class="n">this</span> <span class="n">problem</span> <span class="k">and</span> <span class="n">will</span> <span class="n">post</span> <span class="n">new</span>
+<span class="n">information</span> <span class="n">here</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="k">as</span> <span class="n">it</span> <span class="n">becomes</span> <span class="n">available</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">SMS</span> <span class="n">Installer</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">smsinst</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS120</span> <span class="n">kbSMSI100</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbbug</span>
+<span class="n">Solution</span> <span class="n">Type</span>     <span class="p">:</span> <span class="n">kbpending</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

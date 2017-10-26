@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q46369: InPort/Bus Mouse Comparison and Overview | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q46369: InPort/Bus Mouse Comparison and Overview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/046/Q46369/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/046/Q46369/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/046/Q46369/","publisher":null,"image":null,"headline":"Q46369: InPort/Bus Mouse Comparison and Overview","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q46369-inportbus-mouse-comparison-and-overview">Q46369: InPort/Bus Mouse Comparison and Overview</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q46369
+Product(s): See article
+Version(s): 1.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# G890626-21385 | mspl13_basic
+Last Modified: 31-AUG-1989
+
+Question:
+
+Could you clarify the difference between the Microsoft Bus Mouse and
+the InPort Mouse?
+
+Response:
+
+The Microsoft InPort device interface is a low-cost graphic device
+interface consisting of a 40-pin custom LSI IC and a compact 9-pin
+circular connector, which supports a variety of graphic input devices,
+especially mice.
+
+The following is a comparison between old Bus Mouse and new InPort
+Mouse:
+
+1. The InPort Mouse uses a custom Microsoft designed 40-pin LSI
+   interface chip manufactured by OKI Inc. of Japan.
+
+   The Bus Mouse uses a generic Intel 8255A parallel interface chip.
+
+2. The InPort Mouse allows the CPU interrupt rate to be programmable
+   from 0 (no interrupt) to 200 Hz.
+
+    The Bus Mouse CPU interrupt rate is fixed at 30 Hz.
+
+3. The InPort Mouse interrupts the CPU only when the mouse position
+   or button status has changed.
+
+    The Bus Mouse interrupts the CPU constantly regardless of mouse
+    (in)activity.
+
+4. The InPort Mouse requires only two I/O operations to read the mouse
+   XY position.
+
+   The Bus Mouse requires four I/O operations to read mouse XY
+   position.
+
+5. The InPort Mouse uses the compact Hosiden 9-pin circular connector.
+
+   The Bus Mouse uses the bulky DB-9 connector.
+
+When used stand-alone with an IBM XT/AT PC, both mice use an interface
+board that plugs into the standard IBM XT/AT bus. In addition, since
+the InPort custom IC is essentially an enhanced, single-chip version
+of the Microsoft Bus Mouse interface board, other manufacturers can
+easily add the InPort interface to their PC plug-in cards. The
+following are examples:
+
+1. The Microsoft MACH 10 enhancement board
+
+2. Renaissance GRX graphics add-in boards
+
+3. Selected Verticom graphics controllers/adapters come with an InPort
+   interface.
+
+The InPort Mouse can also connect to an RS-232 serial port, or the
+IBM PS/2 mouse port through an external adapter box.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

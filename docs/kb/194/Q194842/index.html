@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194842/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194842/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194842/","publisher":null,"image":null,"headline":"Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194842-bug-custom-appwizard-lacks-toolbar-templates-for-standard-steps">Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194842
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbwizard kbVC600bug kbAppWizard kbCustomWizard kbGrpDSTools
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Custom AppWizard projects based on MFC Standard steps do not have all of the
+toolbar bitmaps copied to the Custom AppWizard's Template directory. Projects
+created from your Custom AppWizard load the missing toolbar bitmaps because they
+exist in the MFC extension DLL Mfcapwz.dll.
+
+RESOLUTION
+==========
+
+No action is required unless you want to customize the missing toolbar bitmaps.
+To customize the missing toolbar bitmaps, you must insert them into the Custom
+AppWizard project.
+
+Steps to Customize Missing Toolbar Bitmaps
+------------------------------------------
+
+1. Open the MFC AppWizard extension DLL by clicking Open on the File menu.
+  Navigate to the ..\MSDev98\bin\ide directory. Click Mfcapwz.dll and select
+  Resources in the OpenAs box. Click OK.
+
+2. Expand the Template directory, right-click on the desired template and select
+  Export. Save the selected file in your Custom AppWizard's Template directory.
+  Close Mfcapwz.dll.
+
+3. In FileView of your workspace window, right-click on the Template Files
+  folder and select Add Files to Folder. Select the file you exported from
+  Mfcapwz.dll and click OK.
+
+4. In ResourceView of your workspace window, right-click on the Template folder
+  and select Import. Select the file exported from Mfcapwz.dll, select Custom
+  in the OpenAs box and click Import. Specify the Resource type as TEMPLATE in
+  the dialog box and click OK.
+
+5. The new template is called IDR_TEMPLATE1. Rename the template by
+  right-clicking on the template and selecting Properties. Enter the name of
+  the file in the ID box.
+
+  NOTE: The name must be placed in quotes or you will receive an invalid
+  character error.
+
+  You may now customize the bitmap.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following files are correctly copied into your Custom AppWizard's Template
+directory:
+
+  TBA__.BMP
+  TBA_I.BMP
+  TBAH_.BMP
+  TBAHI.BMP
+  TBD__.BMP
+  TBDH_.BMP
+  TBR__.BMP
+  TBR_I.BMP
+  TBRH_.BMP
+  TBRHI.BMP
+
+The Template directory should also contain the following files:
+
+  TBEA_.BMP
+  TBEAH.BMP
+  TBED_.BMP
+  TBEDH.BMP
+  TBEND.BMP
+  TBER_.BMP
+  TBERH.BMP
+  TBEX_.BMP
+  TBND_.BMP
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Custom AppWizard based on MFC Standard steps, with one custom
+  step.
+
+2. Verify the presence of the files listed above in the Custom AppWizard's
+  Template directory.
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q190977 BUG: Custom AppWizard Generates Incorrect Toolbars and Bitmaps
+
+  Q190518 BUG: MFC AppWizard Generates Incorrect Toolbars and Bitmaps
+
+Please see the following topics in the online documentation in Visual C++ 6.0:
+
+  MSDN Library 6.0: Visual C++ Documentation; Using Visual C++; Visual C++
+  Programmer's Guide; Beginning Your Program; Creating A Custom AppWizard;
+  Creating Custom AppWizards; Understanding Custom Resource Templates;
+  Understanding Custom Resource Templates
+
+  MSDN Library 6.0: Visual C++ Documentation; Using Visual C++; Visual C++
+  Programmer's Guide; Beginning Your Program; Creating A Custom AppWizard;
+  Creating Custom AppWizards; Understanding Custom AppWizards
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbVC600bug kbAppWizard kbCustomWizard kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273027: Gethostbyname() May Return Wrong IP Address | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273027: Gethostbyname() May Return Wrong IP Address" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273027/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273027/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273027/","publisher":null,"image":null,"headline":"Q273027: Gethostbyname() May Return Wrong IP Address","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273027-gethostbyname-may-return-wrong-ip-address">Q273027: Gethostbyname() May Return Wrong IP Address</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273027
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbWinNT400PreSP7Fix
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 4.0, 4.0 SP6a 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP6a 
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When a client computer that is running Windows NT, Microsoft Windows 95, or
+Microsoft Windows 98 disconnects and then reconnects by using Remote Access
+Service (RAS) and receives a new IP address from the RAS server, the new IP
+address is not discovered by a Windows NT 4.0-based server for a variable time
+interval (usually a few minutes). This problem was initially noted in a
+Microsoft Message Queue (MSMQ) environment, in which the reconnected MSMQ
+clients were not discovered by the MSMQ server for a variable time interval.
+
+CAUSE
+=====
+
+This problem is caused by the NetBIOS Name Cache management (Netbt.sys) on the
+Windows NT 4.0-based server. The lifetime of an entry in the NetBIOS Name cache
+is determined by this registry value :
+
+  HKLM\System\CCS\Services\Netbt\Parametes\CacheTimeout
+
+The default value is 600,000 milliseconds (10 minutes).
+
+When a NetBIOS cache entry (such as name00) is used, its remaining lifetime is
+reinitialized for a new (CacheTimeout + 1 minute) interval. Therefore, if a ping
+name command is issued at a regular time interval that is shorter than
+(CacheTimeout +1 minute), the NetBIOS cache entry is revalidated each time; the
+new IP address is never discovered (by WINS resolution).
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Windows NT 4.0 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date        Time    Size     File name  Platform
+  ------------------------------------------------
+  10/16/2000  07:24p  124,656  Netbt.sys  Intel
+  10/16/2000  07:22p  224,912  Netbt.sys  Alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+The MSMQ server periodically accesses all the MSMQ clients by using the
+gethostbyname function to discover the new IP address. You can reduce the
+discovery latency to two minutes by using the following settings:
+
+- HKLM\System\CCS\Services\Netbt\Parameters\CacheTimeout = 60000 (60 seconds),
+  type REG_DWORD in milliseconds
+
+- HKLM\System\CCS\Services\Tcpip\ServiceProvider\MaxHostentCacheSize = 0
+  (mandatory, disables the DNS host cache), type REG_DWORD
+
+- HKLM\Software\Microsoft\MSMQ\Parameters\WaitTime = 30000 (30 seconds), type
+  REG_DWORD, in milliseconds
+
+Additional query words: waittime
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400search kbWinNTS400 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0,4.0 SP6a
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

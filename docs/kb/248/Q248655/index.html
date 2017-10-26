@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248655/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248655/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248655/","publisher":null,"image":null,"headline":"Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248655-bug-atl-composite-controls-do-not-meet-windows-2000-logo">Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248655
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbAAcc kbActiveX kbATL kbCtrl kbOSWin2000 KbUIDesign kbATL300bug kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows 2000 is placed into high contrast mode, the ATL Composite controls
+do not change their background color. Due to this behavior, any application
+using an ATL Composite control fails Windows 2000 logo compliancy.
+
+CAUSE
+=====
+
+This is due to a limitation in the ATL framework for ATL Composite controls.
+CComCompositeControl handles the WM_CTLCOLORDLG and WM_CTLCOLORSTATIC messages
+in the ATL framework and uses the container's ambient background color to paint
+the background and any static controls. When Windows 2000 goes into high
+contrast mode, the WM_CTLCOLORDLG and WM_CTLCOLORSTATIC messages are sent to the
+ATL Composite control. Because the control uses the ambient background color of
+the container when the WM_CTLCOLORDLG or WM_CTLCOLORSTATICC message is received,
+the messages are not passed on to DefWindowProc(), and the background color and
+static control's color does not change.
+
+RESOLUTION
+==========
+
+The following modifications can be made to an ATL Composite control to allow it
+to pass Windows 2000 logo compliancy.
+
+1. In the composite control's header file and class declaration, add message
+  handler entries for WM_CTLCOLORDLG and WM_CTLCOLORSTATIC. It should look like
+  the following:
+
+  BEGIN_MSG_MAP(CATLCONTROLObj1)
+      MESSAGE_HANDLER(WM_CTLCOLORDLG, OnColorDlg)
+      MESSAGE_HANDLER(WM_CTLCOLORSTATIC, OnColorDlg)
+      CHAIN_MSG_MAP(CComCompositeControl&lt;CATLCONTROLObj1&gt;)
+  END_MSG_MAP()
+
+  Notice that the MESSAGE_HANDLER() entries appear before the CHAIN_MSG_MAP()
+  entry. With the entries in this order, the ATL message routing architecture
+  uses the OnColorDlg() function first before using any message handlers
+  provided for these messages by the ATL framework.
+
+2. Add a new message handler function, OnColorDlg(), in your ATL composite
+  control class in the control's header file for the above to entries made to
+  the message map. The function should have the following prototype and code
+  inside of it:
+
+  LRESULT OnColorDlg(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&amp; bHandled)
+  {
+    HIGHCONTRAST highcontrast = { 0 };
+    highcontrast.cbSize = sizeof(HIGHCONTRAST);
+    if (SystemParametersInfo(SPI_GETHIGHCONTRAST, sizeof(HIGHCONTRAST), &amp;highcontrast, 0))
+    {
+        if (highcontrast.dwFlags &amp; HCF_HIGHCONTRASTON) //high contrast on?
+           return DefWindowProc(); //Ignore ambient back color and pass to system.
+    }
+    //else, must be OS where SPI_GETHIGHCONTRAST not available
+
+    //Set bHandled to FALSE to allow the message to keep on being routed to base
+    bHandled = FALSE; 
+
+    return FALSE; //Let message continue to base class.
+  }
+
+3. Save the header file and rebuild the control.
+
+4. Insert the control into Test Container and place Windows 2000 into high
+  contrast mode. You can place Windows 2000 into high contrast mode using the
+  following keystrokes: LEFT ALT + LEFT SHIFT + PRINT SCREEN.
+
+Notice that the ATL Composite control's background and any static controls change
+color when Windows 2000 is placed into high contrast mode.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ATL project using the ATL COM AppWizard. Give the project the
+  name "TestHighCotrast" and click OK.
+
+2. On the ATL COM AppWizard Step 1 of 1 screen, accept the defaults and click
+  Finish.
+
+3. From the Insert menu, select New ATL Object.
+
+4. Click Controls under the Category section. Click Composite Control under the
+  Objects section. Click Next.
+
+5. In the ATL Object Wizard Properties dialog box, give the short name for the
+  control the name TestHighContrastControl. Accept the defaults for the
+  remaining settings and click OK.
+
+6. Build the project.
+
+7. Insert the control into Test Container and place Windows 2000 into high
+  contrast mode. You can place Windows 2000 into high contrast mode using these
+  keystrokes: LEFT ALT + LEFT SHIFT + PRINT SCREEN.
+
+Notice that the ATL Composite control's background and any static controls on the
+control do not change color when Windows 2000 is placed into high contrast mode.
+
+REFERENCES
+==========
+
+Windows Logo Program
+
+Additional query words: windows 2000 logo fail compliancy comply compliant accessability high contrast
+
+======================================================================
+Keywords          : kbAAcc kbActiveX kbATL kbCtrl kbOSWin2000 KbUIDesign kbATL300bug kbGrpDSMFCATL 
+Technology        : kbVCsearch kbOSWin2000 kbAudDeveloper kbOSWinSearch kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189740: BUG: Class Builder Does Not Handle Base Classes Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189740: BUG: Class Builder Does Not Handle Base Classes Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189740/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189740/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189740/","publisher":null,"image":null,"headline":"Q189740: BUG: Class Builder Does Not Handle Base Classes Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189740-bug-class-builder-does-not-handle-base-classes-properly">Q189740: BUG: Class Builder Does Not Handle Base Classes Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189740
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Class Builder Utility incorrectly displays derived classes and base class
+properties.
+
+RESOLUTION
+==========
+
+Before creating a derived class, select the appropriate base class in the Class
+pane. In the Class Module Builder dialog, select the base class in the Based On
+list and check the box for "This Class is a Top Level Object."
+
+Alternatively, create the derived class directly with code, without using the
+class builder utility.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Add the following classes using the Class Builder Utility:
+
+   - Add a class called Person; with two properties Age and FirstName.
+
+   - Add a class called Employee based on Person.
+
+   - Add a class called Customer based on Person.
+
+  At this point you will find that Customer is actually subordinate to Employee
+  instead of Person; this would seem to be wrong because we indicated that
+  Customer was supposed to be based on Person. Instead, Customer was based on
+  the Employee class because that was the selected class in the Classes pane.
+
+2. Delete the Customer class.
+
+3. Select the Person class in the Classes pane.
+
+4. Add a class called Customer based on Person.
+
+  This creates a perceived hierarchy of classes in the Class pane, but Employee
+  and Customer were created as components of Person, rather than derivatives.
+  Examine the properties of each class to see that Person has both Customer and
+  Employee as additional properties. Customer has Employee as a property and
+  Employee has no properties.
+
+To workaround this problem, do the following:
+
+1. Delete the Employee and Customer classes.
+
+2. Select the Person class and create a new class. Choose Person in the Based On
+  list and check the box for "This Class is a Top Level Object."
+
+  When this new class is created, view its properties and note that it has the
+  same properties as Person. Also note that the new class is at the same
+  "level" in the Class pane as the Base class. This is correct; a derived class
+  is not a subordinate or child of the base class.
+
+REFERENCES
+==========
+
+Books Online for Microsoft Visual Basic, version 5.0
+
+Books Online for Microsoft Visual Basic, version 6.0
+
+Additional query words: kbDSupport kbdss kbVBp500bug kbWizard kbVBp kbVBp600bug
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

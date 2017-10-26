@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252413/","publisher":null,"image":null,"headline":"Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252413-bug-wince-cdialogbar-does-not-forward-child-control-messages">Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252413
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbMFC kbOSWinCEsearch kbDSupport kbArchitecture kbMFCCtrlBar
+Last Modified: 06-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows CE, when using the CDialogBar MFC class with standard Windows
+controls on it, the main window (CMainFrame) does not get notification messages
+from the controls on the dialog bar. For example, if you place a button control
+on the dialog bar, the BN_CLICKED message handler in CMainFrame is not called.
+
+RESOLUTION
+==========
+
+To work around this problem subclass CDialogBar with your own class to handle
+the messages from its child controls and forward them to the main window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project named "sample" using the Windows CE MFC AppWizard (exe)
+  and select Win32 (WCE MIPS) and Win32 (WCE x86em) as platforms.
+
+2. At step 2 of 4, select Internet Explorer ReBars for the Control bar type. The
+  rest of the wizard steps can be the default steps.
+
+3. Once the wizard is complete then switch to the ResourceView tab and open the
+  IDR_MAINFRAME dialog resource.
+
+4. Delete the static text control and add a button control called (IDC_BUTTON1).
+
+5. Start ClassWizard and switch to the Message Maps tab. Under the CMainFrame
+  class for the IDC_BUTTON1 object, add a BN_CLICKED message handler function,
+  and call it OnButton1.
+
+6. In the handler for CMainFrame::OnButton1() add code similar to the
+  following:
+
+   MessageBox(L"Button 1", L"Test");
+
+7. Compile the application for the Palm-size PC 1.2 emulator and for the actual
+  target device. Run the sample in the emulator or on the target device and
+  click or tap the dialog bar button (IDC_BUTTON1).
+
+Notice that CMainFrame::OnButton1() is not called and the message box does not
+pop up.
+
+Steps to Work Around this Problem:
+----------------------------------
+
+- In the Visual C++ workspace switch to the FileView tab and add two new files
+  to the project: MyDialogBar.h and MyDialogBar.cpp with the code listed
+  below:
+
+  Contents of MyDialogBar.h:
+
+  #if !defined(MYDIALOGBAR_H_INCLUDED)
+  #define MYDIALOGBAR_H_INCLUDED
+
+  #if _MSC_VER &gt; 1000
+  #pragma once
+  #endif // _MSC_VER &gt; 1000
+
+  #include "resource.h"
+
+  class CMyDialogBar : public CDialogBar
+  {
+  public:
+  	CMyDialogBar();   // standard constructor
+
+  protected:
+  	virtual LRESULT WindowProc(UINT message, WPARAM wParam, LPARAM lParam);
+  };
+
+  #endif // !defined(MYDIALOGBAR_H_INCLUDED)
+
+  Contents of MyDialogBar.cpp:
+
+  #include "stdafx.h"
+  #include "sample.h"
+  #include "MyDialogBar.h"
+
+  #ifdef _DEBUG
+  #define new DEBUG_NEW
+  #undef THIS_FILE
+  static char THIS_FILE[] = __FILE__;
+  #endif
+
+  CMyDialogBar::CMyDialogBar()
+  	: CDialogBar()
+  {
+  }
+
+  LRESULT CMyDialogBar::WindowProc(UINT message, WPARAM wParam, LPARAM lParam) 
+  {
+  	if (message == WM_COMMAND) {
+  		AfxGetMainWnd()-&gt;SendMessage(message, wParam, lParam);
+  	}
+  	
+  	return CDialogBar::WindowProc(message, wParam, lParam);
+  }
+
+- Open the MainFrm.h file and at the top of the file MainFrm.h, insert the
+  following line:
+
+  #include "MyDialogBar.h"
+
+- In the CMainFrame class definition alter the line
+
+  CDialogBar m_wndDlgBar;
+
+  to
+
+  CMyDialogBar m_wndDlgBar;
+
+- Recompile the application for the Palm-size PC 1.2 emulator and for the
+  actual target device. Run the sample in the emulator or on the target device
+  and hit or tap the dialog bar button (IDC_BUTTON1).
+
+Now CMainFrame::OnButton1() is called and the message box pops up.
+
+Additional query words: wince CDialogBar message handler
+
+======================================================================
+Keywords          : kbMFC kbOSWinCEsearch kbDSupport kbArchitecture kbMFCCtrlBar 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

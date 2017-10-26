@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74739: Implicit Casting by C Compiler Can Cause Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74739: Implicit Casting by C Compiler Can Cause Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74739/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74739/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74739/","publisher":null,"image":null,"headline":"Q74739: Implicit Casting by C Compiler Can Cause Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74739-implicit-casting-by-c-compiler-can-cause-problems">Q74739: Implicit Casting by C Compiler Can Cause Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74739
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a function call is made in ANSI C, the compiler implicitly casts the
+arguments passed to the function to the types specified in the function's
+prototype. Implicit casting to promote signed integers or characters (int, char)
+to longer unsigned types (DWORD, WORD) can cause unexpected behavior. The
+difficulties occur because the signed shorter value is promoted by extending its
+sign bit to the high-order bits of the unsigned longer type.
+
+An application can avert the problems caused by sign extension by explicitly
+casting function arguments to unsigned short types.
+
+MORE INFORMATION
+================
+
+In accordance with the ANSI standard, if the shorter value has the sign bit set,
+the compiler first converts the value to a signed longer value by extending the
+sign. The compiler extends the sign by filling the high-order bits with 1s. It
+then converts the signed longer value to unsigned by adding to it the number
+that is one larger than the largest unsigned value of that type. This does not
+change the bit pattern in a 2s complement implementation. For more information,
+see Section 3.2.1.2 of the ANSI C Standard.
+
+To see how this can cause unexpected behavior, consider an application in the
+Microsoft Windows graphical environment that calls the GlobalAlloc function. The
+second parameter of the function, dwBytes, is an unsigned long quantity.
+However, in this application, this parameter contains an signed integer
+expression that evaluates to a number greater than the largest positive signed
+integer value (32,767):
+
+      HANDLE FAR PASCAL GlobalAlloc(WORD, DWORD);  // function prototype
+
+     int a, b; // int = short (16-bit) signed integer
+
+     a = 9500;
+     b = 4;
+
+     GlobalAlloc(GMEM_MOVEABLE, a*b);
+
+The result of a*b is 38,000 (1001010001110000), and the sign bit of the int is
+set. To implement the implicit cast to an unsigned long value (DWORD), the value
+is first converted to a signed long value:
+
+     11111111111111111001010001110000
+
+The value that is one greater than the largest unsigned long value is then added,
+as follows:
+
+        11111111111111111001010001110000
+     + 100000000000000000000000000000000
+     -----------------------------------
+        11111111111111111100101000111000 (4,294,939,760 decimal)
+
+GlobalAlloc attempts to allocate 4,294,939,760 bytes of memory rather than
+38,000, and it fails. The GlobalAlloc call in the application should be as
+follows:
+
+     GlobalAlloc(GMEM_MOVEABLE, (WORD)a*(WORD)b);
+
+Problems caused by implicit casting and sign extension are also encountered
+frequently when an application passes characters to the AnsiUpper and AnsiLower
+functions. The prototypes for these functions are as follows:
+
+     LPSTR FAR PASCAL AnsiUpper(LPSTR);
+     LPSTR FAR PASCAL AnsiLower(LPSTR);
+
+To pass a signed character to AnsiUpper,
+
+     AnsiUpper((DWORD)(BYTE)c) is correct,
+     AnsiUpper((DWORD)c) is incorrect.
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

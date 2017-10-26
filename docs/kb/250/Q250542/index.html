@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250542: &quot;Msnls.dll Cannot Be Found&quot; Error Message When Browsing with AOL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250542: &quot;Msnls.dll Cannot Be Found&quot; Error Message When Browsing with AOL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250542/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250542/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250542/","publisher":null,"image":null,"headline":"Q250542: &quot;Msnls.dll Cannot Be Found&quot; Error Message When Browsing with AOL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250542-msnlsdll-cannot-be-found-error-message-when-browsing-with-aol">Q250542: "Msnls.dll Cannot Be Found" Error Message When Browsing with AOL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250542
+Product(s): Microsoft Windows NT
+Version(s): 4.0,5
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv kberrmsg msient
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Internet Explorer versions 4.0, 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse the Internet with Internet Explorer on your Windows NT-based
+computer and America Online (AOL) as your Internet Service Provider (ISP), you
+may periodically receive the following error message:
+
+  msnls.dll cannot be found.
+
+Also, the Msnls.dll file cannot be located on your AOL or Windows NT installation
+media.
+
+CAUSE
+=====
+
+This issue can occur if you are using an out of date version of the AOL
+software. Older versions of the AOL software periodically try to use the
+Msnls.dll file included with Internet Explorer version 3.x.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain and install version 5.0 (or later) of the AOL
+software. For information about how to do so, contact AOL.
+
+NOTE: AOL does not support running the AOL software on Windows NT-based
+computers, but the current version of their software does not require use of the
+Msnls.dll file.
+
+
+WORKAROUND
+==========
+
+Another way to resolve this issue is to create a "dummy" file. You can create a
+"dummy" file and add it to the system directory of NT (normally winnt\system).
+To do this, do one of these methods:
+
+1. Create a new file on the system directory of NT:
+
+   - Navigate to and open Notepad on your computer.
+
+   - Add some sample text to the body of the Notepad file.
+
+   - Select File, and save as Msnls.dll.
+
+2. Copy a file to the system directory of NT and rename the file Msnsls.dll.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg msient 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbIEsearch kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE400WinNT400 kbIE500WinNT400
+Version           : :4.0,5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

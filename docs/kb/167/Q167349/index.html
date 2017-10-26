@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167349: PRB: Unable to Derive Classes from External Dependencies | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167349: PRB: Unable to Derive Classes from External Dependencies" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167349/","publisher":null,"image":null,"headline":"Q167349: PRB: Unable to Derive Classes from External Dependencies","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167349-prb-unable-to-derive-classes-from-external-dependencies">Q167349: PRB: Unable to Derive Classes from External Dependencies</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167349
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbide kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create a new class derived from a generic class using the New
+Class Wizard, you might get the following error message:
+
+  The New Class Wizard could not find the appropriate header file(s) to include
+  for the base class(es) &lt;base class name&gt;. If you choose to derive from
+  the class(es) anyway, you may need to manually add the appropriate header
+  file(s) to &lt;derived class file&gt;.
+
+CAUSE
+=====
+
+The New Class Wizard can only derive from classes explicitly included in the
+project. Classes that are only in the External Dependencies folder are not
+considered part of the project. That is, if the base class' header file, where
+the base class is declared, is not included in the project, the wizard cannot
+add the header to the derived class' header file.
+
+RESOLUTION
+==========
+
+To resolve the problem, you can do one of the following:
+
+- Close the message box and derive the class anyway. Add the base class header
+  file manually to the derived class' header file.
+
+-or-
+
+- Add the base class header file to the project. On the Project menu, click Add
+  To Project, and then select Files. Browse for the base class header file,
+  then click OK. After doing this, you should be able to derive the class
+  without any warning messages.
+
+Once the new class has been derived, you may remove the base class file from the
+project, and it will appear in the External Dependencies folder on the next
+build.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following procedures can be used to reproduce the problem.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the AppWizard to generate a generic MFC application.
+
+2. Create a header file named CTestClass.h in which you declare a base class.
+  Make sure CTestClass.h is not added to the project. Delete it from FileView
+  if necessary.
+
+3. Derive a class from CTestClass. by clicking New Class on the Insert menu. In
+  "Class type:" choose "Generic Class". Name the derived class
+  CTestClassDerived. Enter CTestClass as the class name in the Derived From
+  edit box.
+
+4. Click OK to save the derivation and exit the New Class dialog box.
+
+5. You should get the error message box mentioned previously before the dialog
+  box is closed.
+
+Additional query words: member methods wizards VwbIss
+
+======================================================================
+Keywords          : kbide kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

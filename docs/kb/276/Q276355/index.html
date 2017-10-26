@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276355: Microsoft Exchange 2000 Server Administrator’s Pocket Consultant | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276355: Microsoft Exchange 2000 Server Administrator’s Pocket Consultant" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276355/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276355/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276355/","publisher":null,"image":null,"headline":"Q276355: Microsoft Exchange 2000 Server Administrator’s Pocket Consultant","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276355-microsoft-exchange-2000-server-administrators-pocket-consultant">Q276355: Microsoft Exchange 2000 Server Administrator’s Pocket Consultant</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276355
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 24-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Exchange 2000 Server Administrator's Pocket Consultant ISBN 0-7356-0962-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Exchange 2000 Server
+Administrator's Pocket Consultant, ISBN 0-7356-0962-4.
+
+The following topics are covered:
+
+- Pages 50 And 147: Incorrect Information About Maximum Number Of Storage
+  Groups Allowed
+
+- Page 79: Correction To Allowing Others To Access A Mailbox
+
+- Page 213: Backing Up Exchange Server M Drive Not Recommended
+
+MORE INFORMATION
+================
+
+Pages 50 and 147: Incorrect Information About Maximum Number Of Storage Groups Allowed
+--------------------------------------------------------------------------------------
+
+Pages 50 and 147 state that "Each Exchange server can have up to 16 storage
+groups, and each storage group can have up to 6 databases."
+
+Although the Extensible Storage Engine (ESE) code allows 16 storage groups,
+Exchange 2000 Server only allows a maximum of 4 storage groups containing a
+maximum of 5 databases for each storage group. This limit is enforced inside the
+Exchange System Manager snap-in, so administrators cannot create more storage
+groups than the system allows.
+
+For more information, please read the following Microsoft Knowledge Base
+article:
+
+Q251123: Maximum Number of Storage Groups in Exchange 2000 for Database Capacity
+Planning
+
+
+Page 79: Correction To Allowing Others To Access A Mailbox
+----------------------------------------------------------
+
+On page 79, under "Allowing Others to Access a Mailbox", the steps listed for
+granting access to a mailbox are incorrect. Please replace the 3 steps with the
+following:
+
+1. Start the Active Directory Users and Computers MMC snap-in.
+
+2. On the View menu, make sure that a check mark appears next to the Advanced
+Features command.
+
+3. Locate the Organizational Unit that contains the user who owns the mailbox
+that you want to allow other users to view.
+
+4. Right-click the user that owns the mailbox, and then click Properties.
+
+5. On the Exchange Advanced tab, click Mailbox Rights.
+
+6. Click Add.
+
+7. Select the user or users that you want to allow to use the mailbox, and then
+assign them Full Mailbox Access - Allow permission.
+
+
+Page 213: Backing Up Exchange Server M Drive Not Recommended
+------------------------------------------------------------
+
+On page 213, the first bulleted item in step 4 reads:
+
+"To back up Exchange and Windows 2000 settings, select all hard disk drives where
+Windows 2000 and Exchange 2000 Server are installed. Normally, this means
+backing up the root drive C:\ and the special partition for Exchange Server,
+M:Exchange."
+
+Microsoft does not recommend backing up drive M with file-level backup software.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: TKBOOK ITBOOK BKOFFICE XCHNG 0-7356-0962-4 STANEK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

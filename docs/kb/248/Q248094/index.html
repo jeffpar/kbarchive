@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248094: BUG: Fatal error RC1022 or Error RC2104 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248094: BUG: Fatal error RC1022 or Error RC2104" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248094/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248094/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248094/","publisher":null,"image":null,"headline":"Q248094: BUG: Fatal error RC1022 or Error RC2104","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248094-bug-fatal-error-rc1022-or-error-rc2104">Q248094: BUG: Fatal error RC1022 or Error RC2104</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248094
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:6.0,97; winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC500bug kbVC600bug kbVS97bug kbVS600bug _IK kbGrpDSTools
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a resource script that includes Chinese and Japanese resources in
+the compile-time directives, the following errors may occur:
+
+  &lt;path&gt;\RCXXXXXX(YYYY) : fatal error RC1022: expected '#endif'
+
+  -or-
+
+  &lt;path&gt;\&lt;file name&gt;.rc (YYYY): error RC2104 : undefined keyword or
+  key name
+
+Where RCXXXXXX is a temporary file created by the resource compiler and YYYY is
+the line number.
+
+CAUSE
+=====
+
+The resource compiler, RC.exe, incorrectly preprocesses the resource script.
+
+RESOLUTION
+==========
+
+To resolve this problem, wrap the inclusion of the Japanese and Chinese scripts
+with the appropriate language statement.
+
+If the resource script includes Chinese (Taiwan) resources:
+
+  #include &lt;chinese taiwan script&gt;.rc
+
+wrap the inclusion as follows:
+
+  #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+  #ifdef _WIN32
+  LANGUAGE 4, 1
+  #pragma code_page(950)
+  #endif //_WIN32
+  #include &lt;chinese taiwan script&gt;.rc
+  #endif
+
+If the resource script contains Chinese (PRC) resources:
+
+  #include &lt;chinese prc script&gt;.rc
+
+wrap the inclusion as follows:
+
+  #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+  #ifdef _WIN32
+  LANGUAGE 4, 2
+  #pragma code_page(936)
+  #endif //_WIN32
+  #include &lt;chinese prc script&gt;.rc
+  #endif
+
+If the resource script includes Japanese resources:
+
+  #include &lt;japanese script&gt;.rc
+
+wrap the inclusion as follows:
+
+  #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+  #ifdef _WIN32
+  LANGUAGE 17, 1
+  #pragma code_page(932)
+  #endif //_WIN32
+  #include &lt;japanese script&gt;.rc
+  #endif
+
+If the resource script includes Japanese and Chinese (PRC or Traditional):
+
+  #include &lt;japanese script&gt;
+  #include &lt;chinese script&gt;
+
+wrap both inclusions with the appropriate language statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps reproduce the RC1024 error:
+
+1. Using the MFC AppWizard (exe), create a new project.
+
+2. In the MFC AppWizard step 1, select Single document and select Japanese as
+  the language for the resources.
+
+3. Click Finish.
+
+4. Using the MFC AppWizard (exe), create a new project and add it to the
+  workspace that you've just created.
+
+5. In the MFC AppWizard, in step 1, select Single document and select Chinese
+  (Taiwan) as the language for the resources.
+
+6. Click Finish.
+
+7. Set the Japanese project as the active project by using the Set active
+  project on the Project menu.
+
+8. Select Resource Includes from the View menu.
+
+9. Scroll to the end of the Compile-time Directives list box and include the
+  Chinese resource script.
+
+  #include &lt;chinese script&gt;.rc
+
+10. Build the Japanese project.
+
+The following steps reproduce the RC1022 error:
+
+1. Select Resource Includes from the View menu.
+
+2. Remove the inclusion of the Chinese resource script.
+
+3. Set the Chinese project as the active project by using Set active project on
+  the Project menu.
+
+4. Select Resource Includes from the View menu.
+
+5. Scroll to the end of the Compile-time Directives list box and include the
+  Japanese resource script.
+
+  #include &lt;japanese script&gt;.rc
+
+6. Build the Chinese project.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbVC500bug kbVC600bug kbVS97bug kbVS600bug _IK kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS:6.0,97; winnt:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

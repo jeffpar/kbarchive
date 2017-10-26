@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127136/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127136/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127136/","publisher":null,"image":null,"headline":"Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127136-direct-cable-connection-fails-with-only-netbeui-loaded">Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127136
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbnetwork dun msnets win95 kbDialUp
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Direct Cable Connection may not work when one or both computers are using only
+the NetBEUI protocol with the Dial-Up Adapter and are located on the same
+network.
+
+On the computer configured as the guest, the Direct Cable Connection Status
+dialog box displays the message "Verifying Username and Password," and then
+"Disconnect."
+
+On the host computer, the Direct Cable Connection Status dialog box displays the
+message "Verifying Username and Password," and then "Waiting for the guest
+machine."
+
+CAUSE
+=====
+
+You are using the Microsoft Client for Microsoft Networks and the NetBEUI
+protocol to log on to the network. The direct connection fails because you are
+connected to the network with an Ethernet adapter when you try to make the
+direct connection. This causes the NETBIOS name projection to fail, which in
+turn causes NetBEUI to fail negotiation. Since NetBEUI is the only installed
+protocol, when it fails negotiation the connection is dropped. This may also
+occur when you are using Dial-up Networking with only the NetBEUI protocol
+installed.
+
+RESOLUTION
+==========
+
+Install the IPX/SPX-compatible network protocol. To do so, follow these steps:
+
+1. Click the Start button, point to Settings, and click Control Panel.
+
+2. Double-click the Network icon.
+
+3. Click the Add button.
+
+4. Click Protocol, then click the Add button.
+
+5. Click Microsoft.
+
+6. Click IPX/SPX-Compatible Protocol.
+
+7. Click the OK button.
+
+MORE INFORMATION
+================
+
+The NetBEUI protocol requires a unique name to identify a computer. You cannot
+connect to the same network using the same name with two different network
+adapters with this protocol.
+
+The IPX/SPX-compatible protocol relies on a unique network ID and is negotiated
+even if there is a name conflict. When you use this protocol, you can make a
+direct connection while you are connected to the network.
+
+
+Note that the behavior described in this article can also occur if the host
+computer uses the TCP/IP and IPX/SPX-compatible protocols and is connected to
+the network and the guest computer uses the TCP/IP protocol and is not connected
+to the network. In this case, add the IPX/SPX- compatible protocol to the guest
+computer to enable the direct connection.
+
+The behavior described in this article can also occur if both computers are using
+only the TCP/IP network protocol.
+
+Additional query words: dcc
+
+======================================================================
+Keywords          : kbnetwork dun msnets win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

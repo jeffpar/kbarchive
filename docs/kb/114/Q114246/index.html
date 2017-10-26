@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114246: PC Adm: Effects of Changing Network or Postoffice Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114246: PC Adm: Effects of Changing Network or Postoffice Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114246/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114246/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114246/","publisher":null,"image":null,"headline":"Q114246: PC Adm: Effects of Changing Network or Postoffice Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114246-pc-adm-effects-of-changing-network-or-postoffice-names">Q114246: PC Adm: Effects of Changing Network or Postoffice Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114246
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+Changing either the network or postoffice name in an existing Microsoft
+Mail postoffice affects the Microsoft Mail system in several ways. If you
+change names by selecting Config, Password from the Microsoft Mail
+Administrator program (ADMIN.EXE), the following will be true:
+
+- All mail that was sent prior to the name change contains the old address in
+  the file header. If anyone tries to reply to one of these messages, the mail
+  will not be delivered because the address is no longer valid.
+
+- All sent, unopened, and registered mail no longer contains the information
+  needed to successfully return a confirmation message to the originator
+  because the originator's address no longer exists.
+
+- All Personal Address Lists and Personal Address Books that contain addresses
+  with the old name must be updated by removing and re-adding each user whose
+  address has changed.
+
+- New address lists need to be exported to all external Microsoft Mail
+  postoffices and gateway-accessed mail systems.
+
+- All other postoffices should update their Network/Postoffice lists with the
+  Mail Administrator (ADMIN.EXE) External-Admin, Modify command.
+
+  NOTE: If the Network name is changed, there may be additional complications.
+
+   - If the network name already exists on other postoffices, those postoffices
+     will not be able to simply modify the name; they must delete the old name
+     and add the new postoffice name to the existing network list. These
+     postoffices will then have to get completely new address lists.
+
+   - If the postoffice that changed its Network name was the directory
+     synchronization (Dir-Sync) server, any requestor cannot simply change its
+     external definition for the Dir-Sync server postoffice, but is forced to
+     delete the definition with the old network name and create a new one. The
+     postoffices will also have to re-register the Dir-Sync server on the
+     requestor by issuing a Config, Dir-Sync, Requestor, Registration command.
+
+   - Modifying a network name is an "all or nothing" proposition. If there are
+     multiple postoffices in a network list, you cannot just change the network
+     name for some of the postoffices in the list. If the postoffice with the
+     changed network name is splitting away from a remaining network, you will
+     again have to delete, re-create, re-register, and update the address
+     lists.
+
+- All Microsoft Mail Remote (MS-DOS or Windows) users need new Data disks or
+  they will no longer be able to connect to the postoffice.
+
+- If you are using Schedule+, all user-granted access privileges must be
+  deleted and then re-added because the friendly name will no longer point to a
+  valid user mailbag ID.
+
+- If Schedule Distribution is being used, ALL POF files will have to be deleted
+  also. This file contains Assistant routing information in the specific user's
+  record, if one is designated by the user. If the Assistant's postoffice is
+  renamed, the 10 x 10 x 10 routing information becomes invalid.
+
+  This will cause two things to occur:
+
+   - The assistant will be denied access to the user's calendar file.
+
+   - The assistant will not receive the meeting request/response messages.
+
+Additional query words: 3.00 3.20 pal pab dirsync dirsynch admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

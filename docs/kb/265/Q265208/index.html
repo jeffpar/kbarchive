@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265208: Determining LU Pool Usage Across Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265208: Determining LU Pool Usage Across Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265208/","publisher":null,"image":null,"headline":"Q265208: Determining LU Pool Usage Across Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265208-determining-lu-pool-usage-across-servers">Q265208: Determining LU Pool Usage Across Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265208
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server and Host Integration Server 2000 allow administrators to define 3270
+and/or LUA Pools that span LUs owned by more than one server in the subdomain.
+An LU Pool can then be assigned to one or more groups of users for host access.
+Although the administrator can determine the number of Pooled LUs that are in
+use by using the SNA Manager or Microsoft Management Console (MMC) snap-in tool
+(on a server-by-server basis), there is no automated facility for monitoring the
+aggregate number of in-use LUs across all servers that support the LU Pool.
+
+However, Host Integration Server 2000 provides a programmable interface to access
+server configuration and status information through the SNA WMI Provider. See
+the "More Information" section of this article for a WMI script that can be used
+to access LU Pool usage information.
+
+MORE INFORMATION
+================
+
+Microsoft has received customer requests to provide an automated means of
+determining the percentage of in-use Pooled LUs to make it easier to determine
+when additional 3270 or LUA LUs are needed for an LU Pool. This feature is under
+consideration for a future version of Host Integration Server 2000. In the mean
+time, Host Integration Server 2000 does provide a WMI interface to access LU
+Pool usage information. The following WMI script demonstrates how to do this for
+a specific LU Pool name on a specific SNA Server:
+
+
+  strPoolTargeted   = "LUPOOL"
+  ' this next should be the name of ONE of the SNA Servers in the subdomain
+  strDomainComputer = "SnaServer"
+
+  GrandTotalOfActiveLU = 0
+
+  Set WmiLocator = CreateObject("WbemScripting.SWbemLocator")
+  Set WmiNamespaceDomain = WmiLocator.ConnectServer(strDomainComputer,"root\MicrosoftHIS")
+
+  Set objServersInThisPool = WmiNamespaceDomain.ExecQuery("ASSOCIATORS OF {MsSna_Pool.Name='" &amp; strPoolTargeted &amp; "'} where ResultClass=MsSna_Server")
+
+  Set objLuInThisPool = WmiNamespaceDomain.ExecQuery("ASSOCIATORS OF {MsSna_Pool.Name='" &amp; strPoolTargeted &amp; "'} where ResultClass=MsSna_Lu3270")
+
+  for each xServer in objServersInThisPool 
+  	'
+  	' Look at all InSession or SSCP LUs on Remote SnaStatus namespace
+  	Set WmiNameSpaceStatusBox = WmiLocator.ConnectServer(xServer.Name,"root\MicrosoftHIS")
+  	Set objLUActives = WmiNameSpaceStatusBox.ExecQuery("Select Name from MsSnaStatus_Lu3270 where StatusText='InSession' or StatusText='SSCP'" )
+  	
+  	' Verify that the LU is in the POOL and belong to the SERVER
+  	for each xLUActive in objLUActives
+  		for each xLuInPool in objLuInThisPool
+  			if xLuInPool.Name = xLUActive.Name then
+  				GrandTotalOfActiveLU = GrandTotalOfActiveLU + 1
+  				exit for
+  			end if
+  		next
+  	next
+  next
+
+  Wscript.Echo "Total active LU "&amp; GrandTotalOfActiveLU
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

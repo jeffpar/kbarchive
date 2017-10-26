@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141242/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141242/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141242/","publisher":null,"image":null,"headline":"Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141242-stop-msg-0x0000001e-testing-new-fault-tolerance-boot-disk">Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141242
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbother smsfault kbFaultTolerance
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In the Windows NT "Concepts and Planning Guide," Chapter 7, Page 17, titled
+"Managing fault tolerance and UPS," the section, Testing Your Newly Created Boot
+Disk, states:
+
+  After creating your fault-tolerant boot floppy disk, you can perform the
+  following simple test to reassure yourself that it will work when needed.
+
+1. Insert the fault-tolerant boot floppy disk and restart the computer.
+
+2. If your boot selection correctly specifies the alternate ARC path to the
+  secondary mirrored partition, your system should begin to boot and then fail
+  with the following STOP message:
+
+  ***STOP: 0x0000006B (0xC000000D, 0x00000002, 0x00000000, 0x00000000)
+  PROCESS1_INITIALIZATION_FAILED
+
+MORE INFORMATION
+================
+
+You may experience a different stop message than the one listed above, but this
+also indicates that the FT boot floppy is working correctly:
+
+  *** STOP: 0x0000001E (0xc0000006,0x801Abe58,0x00000000, 0x00000000)
+  KMODE_EXCEPTION_NOT_HANDLED
+
+To fully test the Fault-Tolerant Boot disk to ensure it will boot from your
+mirrored drive, disable the primary NT drive by removing power to the drive.
+
+Keep in mind that it will be necessary to change the rdisk(x) entry in the
+Boot.ini file to compensate for the missing drive if the rdisk(x) value is
+greater than (0) on the fault-tolerant disk.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q119467 Creating a Boot Disk for an NTFS or FAT Partition
+
+Additional query words: prodnt 4.0 6b 1E mirror
+
+======================================================================
+Keywords          : kbother smsfault kbFaultTolerance 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187742: Methods of Setting DHCP Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187742: Methods of Setting DHCP Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187742/","publisher":null,"image":null,"headline":"Q187742: Methods of Setting DHCP Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187742-methods-of-setting-dhcp-options">Q187742: Methods of Setting DHCP Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187742
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to explain the differences between the four
+methods of setting Dynamic Host Configuration Protocol(DHCP) options. The four
+methods that can be used to set DHCP options are; Default, Global, Scope, and
+Client.
+
+MORE INFORMATION
+================
+
+The following is a brief description of the four methods that can be used to set
+DHCP options:
+
+Default
+-------
+
+Setting a default DHCP option modifies the default value for one of the DHCP
+options. When a default value is set, the default value becomes the default that
+was set during administration rather than the DHCP default that was set during
+installation of DHCP. This method may be accessed through DHCP Manager, click
+"DHCP Options," then click "Defaults".
+
+Global
+------
+
+When you set a global DHCP option, the option takes affect for all DHCP scopes
+defined on the selected DHCP server. Global DHCP options appear in DHCP Manager
+with a globe icon proceeding them. This method may be accessed through DHCP
+Manager, from the DHCP Options menu, click Global.
+
+Scope
+-----
+
+Setting a scope DHCP option will set the option only for the Selected scope on
+the Options Scope menu. DHCP options configured for a scope are displayed with a
+series of computer icons proceeding them in DHCP Manager. This method may be
+accessed through DHCP Manager, from the DHCP Options menu, click Scope.
+
+Client
+------
+
+This method can be used to configure one or more of the DHCP options for a
+specific DHCP client. DHCP options can be set for a client only if the DHCP
+client has a reserved IP address(a Reservation). The only way to see if a DHCP
+option is set for a DHCP client is to view the properties of an active client
+lease through DHCP Manager. To do this, perform the following steps:
+
+1. On the Scope menu, click Active Leases.
+
+2. Select the individual client, click Properties, and then click Options.
+
+  NOTE: If the Options button is not available, no reservation for the client
+  exists.
+
+NOTE: If a DHCP option is set by more than one method, precedence is in the
+following order:
+
+1. Client Overrides...
+
+2. Scope Overrides...
+
+3. Global Overrides...
+
+4. Default.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

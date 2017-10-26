@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41212/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41212/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41212/","publisher":null,"image":null,"headline":"Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41212-info-must-use-prototype-before-intrinsic-or-function-pragmas">Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41212
+Product(s): Microsoft C Compiler
+Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC6
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are a number of C Run-time routines that have both a function version and
+an intrinsic version. If the following statement is used in an application to
+force use of the function version:
+
+  #pragma function( a_CFunction )
+
+where a_CFunction is a C Run-time library routine, the compiler generates the
+following error:
+
+  error C2164: 'a_CFunction': intrinsic was not declared.
+
+if the /Oi option is not used. The same is true for the following statement to
+force use of the intrinsic:
+
+  #pragma intrinsic( a_CFunction )
+
+MORE INFORMATION
+================
+
+When you don't use the /Oi or /Ox option, you need to declare a function
+prototype before you can use the function or intrinsic pragmas. For example, to
+properly use the memcpy function in the Sample Code below, either STRING.H or
+MEMORY.H must be included. Consult the C Run-time documentation for the
+appropriate header (.H) file to include.
+
+For more information about #pragma intrinsic or C Run-time functions that have
+intrinsic versions, consult the documentation provided with your Microsoft
+compiler or development environment.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #pragma function( memcpy )
+
+  char s1[] = "string";
+  char s2[10];
+
+  void main( )
+  {
+     memcpy( s2, s1, 7 );
+  }
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbcode kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : MS-DOS:6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

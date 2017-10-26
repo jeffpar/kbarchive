@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152071/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152071/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152071/","publisher":null,"image":null,"headline":"Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152071-howto-calling-hidden-default-method-of-an-ole-automation-collec">Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152071
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbole kbActiveX kbAutomation kbCOMt kbMFC kbVC200 kbVC210 kbVC220 kbVC400 kbVC41
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A technical article found on the Microsoft Developer Network CD-ROM titled
+"Implementing OLE Automation Collections," describes the functionality necessary
+to create an OLE automation collection. This includes creating a method called
+Item that returns the dispatch interface of the indicated item in the
+collection.
+
+All OLE automation collection objects must implement the Item method to iterate
+through the objects of the collection. The implementation of the method might
+have been created hidden in the .ODL file for some applications. You cannot find
+these hidden methods by calling IDispatch::GetIdsOfNames(). However, in many
+situations, this hidden method is the default method of the collection, in which
+case you can invoke it with an dispatch ID of DISPID_VALUE.
+
+Visual Basic 3.0 depends on this Item method being the default method of the
+collection object.
+
+MORE INFORMATION
+================
+
+The following code sample illustrates using COleDispatchDriver::InvokeHelper()
+to call the Item method from the Resources collection class provided by
+Microsoft Project 4.1. The Item method is hidden and cannot be found in the type
+library of the object:
+
+Sample Code
+-----------
+
+     void IterateCollection(void)
+     {
+        Application App; // wrapper class for the 'Application' object
+        Project Proj;    // wrapper class for the 'Project' object
+        Resources Res;   // wrapper class for the 'Resources' object
+        CString lpszFileName ("c:\\temp\\project2.mpp");
+
+        App.CreateDispatch("MSProject.Application");
+
+        VARIANT vFileName;
+        VariantInit(&amp;vFileName);
+        V_VT(&amp;vFileName) = VT_BSTR;
+        V_BSTR(&amp;vFileName) = lpszFileName.AllocSysString();
+        App.FileOpen(vFileName);
+
+        Proj.AttachDispatch(App.GetActiveProject());
+        Res.AttachDispatch(Proj.GetResources());
+
+        VARIANT vCount;
+        VariantInit(&amp;vCount);
+        V_VT(&amp;vCount) = VT_I4;
+        vCount = Res.Count();
+
+        // the index of the collection starts with 1, not 0
+        for (int i = 1 ; i &lt;= vCount.lVal ; i++)
+        {
+           Resource r; // wrapper class for the 'Resource' object
+
+           VARIANT vResult, vIndex, vStr;
+           VariantInit(&amp;vResult);
+           VariantInit(&amp;vIndex);
+           V_VT(&amp;vIndex) = VT_I2;
+           V_I2(&amp;vIndex) = i;
+           static BYTE parms[] = VTS_VARIANT;
+
+           Res.InvokeHelper(DISPID_VALUE, DISPATCH_METHOD, VT_VARIANT,
+     (void*)&amp;vResult, parms, &amp;vIndex);
+           r.AttachDispatch(vResult.pdispVal);
+
+           vStr = r.GetName();
+           // ... 'vStr' now contains the Name property
+        }
+     }
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10
+
+======================================================================
+Keywords          : kbcode kbole kbActiveX kbAutomation kbCOMt kbMFC kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173882: Netlogon Synchronization Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173882: Netlogon Synchronization Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173882/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173882/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173882/","publisher":null,"image":null,"headline":"Q173882: Netlogon Synchronization Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173882-netlogon-synchronization-errors">Q173882: Netlogon Synchronization Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173882
+Product(s): Microsoft Windows NT
+Version(s): 2000,2000 SP1,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 29-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+- Microsoft Windows versions 2000, 2000 SP1 Server 
+- Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Netlogon creates many errors that are recorded in the event log, which
+eventually fills or wraps the log.
+
+MORE INFORMATION
+================
+
+The Netlogon.chg file is located on all domain controllers, but is used only by
+the primary domain controller (PDC) to keep track of changes made to the
+security databases. All changes to the security databases are recorded in this
+log file, along with the serial number of the change. Each of the three security
+databases maintains a separate serial number, which is incremented once for each
+change. When a backup domain controller (BDC) requests a particular change from
+the PDC, the PDC checks the change log to determine which changes need to be
+sent.
+
+Specific Events and Errors
+--------------------------
+
+The following events may be recorded on the BDC:
+
+  Event ID: 5717
+  Source: NETLOGON
+  Type: Information
+  The full synchronization replication of the LSA database from the primary
+  domain controller \\&lt;DOMAIN CONTROLLER&gt; completed successfully.
+
+  Event ID: 5716
+  Source: NETLOGON
+  Type: Warning
+  The partial synchronization replication of the SAM database from the primary
+  domain controller &lt;DOMAIN CONTROLLER&gt; failed with the following error:
+
+  &lt;THERE IS NO ERROR REPORTED&gt;
+
+  The Data section contains c0000134 (Words) or 34 01 00 c0 (Bytes.); the
+  c0000134 indicates STATUS_SYNCHRONIZATION_REQUIRED.
+
+The following events may be reported on the PDC:
+
+  Event ID: 5713
+  Source: NETLOGON
+  Type: Information
+  The full synchronization request from the server &lt;SERVERNAME&gt; completed
+  successfully. &lt;X&gt; object(s) has(have) been returned to the caller.
+
+  Event ID: 5712
+  Source: NETLOGON
+  Type: Warning
+  The partial synchronization request from the server &lt;SERVERNAME&gt; failed
+  with the following error:
+
+  &lt;THERE IS NO ERROR REPORTED&gt;
+
+Trying to promote a BDC to a PDC may cause the following pop-up window message to
+stay on the screen indefinitely:
+
+"Synchronizing &lt;BDC&gt; with its primary"
+
+The following event log error may be generated:
+
+  Event ID: 5705
+  Source: NETLOGON
+  Type: Error
+  The change log cache maintained by the Netlogon Service for database changes
+  is corrupted. The Netlogon service is resetting the change log.
+
+These events can be caused when Windows NT fails to update the
+%SystemRoot%\Netlogon.chg file on the PDC. This may occur for any of the
+following reasons:
+
+- The Read-Only attribute could be set.
+
+- The netlogon.chg file could be corrupted.
+
+- The permissions for the system account could be insufficient for that file;
+  they should be at least RWXD.
+
+Resolving the Problem
+---------------------
+
+If the Netlogon.chg file has been corrupted, you may need to delete or rename the
+file. However, this file is always in use by the system.
+
+To delete (reset) the Netlogon.chg file on an NTFS partition, use the following
+steps:
+
+1. Open Windows Explorer, and then navigate to the %systemroot% folder.
+
+2. Right-click the Netlogon.chg file, and then click Properties.
+
+3. Click the Security tab.
+
+4. Click to clear the "Allow inheritable permissions from parent to propagate to
+  this object" check box, and then click OK.
+
+5. In the Security dialog box, click Copy to copy the existing inheritable
+  permissions to this object.
+
+6. Click the System account, click "Deny - Full Control" to change all of the
+  permissions to Deny, and then click OK.
+
+7. Restart the computer. After you log on to the computer, delete the
+  Netlogon.chg file.
+
+8. Restart the computer again. When you log on the computer, the Netlogon.chg
+  file is rebuilt automatically.
+
+To delete (reset) the Netlogon.chg file on a FAT partition, use the following
+steps:
+
+1. Start the system using MS-DOS, and then delete the %SystemRoot%\Netlogon.chg
+  file.
+
+2. Restart using Windows NT. The file will be recreated at startup.
+
+Additional query words: continuous repeated alternate server user manager forever 340100c0 warning informational blue yellow 4 A win2000
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbwin2000ServSearch kbwin2000Search kbWinNTS351search kbWinAdvServSearch kbWinDataServSearch kbWin2000AdvServSP1 kbwin2000ServSP1
+Version           : :2000,2000 SP1,3.51,4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

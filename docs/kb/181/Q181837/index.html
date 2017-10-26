@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181837: PRB: Output Param Not Returned from Procedure Without Resultset | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181837: PRB: Output Param Not Returned from Procedure Without Resultset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181837/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181837/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181837/","publisher":null,"image":null,"headline":"Q181837: PRB: Output Param Not Returned from Procedure Without Resultset","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181837-prb-output-param-not-returned-from-procedure-without-resultset">Q181837: PRB: Output Param Not Returned from Procedure Without Resultset</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181837
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbODBC kbVC
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using stored procedures with the Microsoft Foundation Class Library's
+CRecordset class, no values are returned for output parameters unless the stored
+procedure returns a resultset.
+
+CAUSE
+=====
+
+CRecordset is not designed to handle output parameters from a stored procedure
+if no resultset is returned.
+
+RESOLUTION
+==========
+
+If the stored procedure doesn't return a resultset, derive from CDatabase and
+override the BindParameters function to provide your own binding. Then use
+CDatabase::ExecuteSQL directly without using CRecordset.
+
+NOTE: It is possible to use a CRecordset derived class to retrieve the results of
+a stored procedure that doesn't return a result set by overriding the
+CRecordset::Move() function and returning from the method without doing
+anything. This allows you to use the CRecordset and RFX functions for binding in
+and out parameters.
+
+Sample of BindParameters
+------------------------
+
+     void CExecDatabase::BindParameters(HSTMT hstmt)
+     {
+        // This sample shows how to return RETURN code and OUTPUT params.
+        RETCODE nRetCode;
+        m_lDbOutParam = 0;   // First, the RETURN parameter.
+        m_lBufLength = sizeof(m_lDbOutParam);
+        // This is binding the RETURN value.
+        nRetCode = ::SQLBindParameter(hstmt, 1, SQL_PARAM_OUTPUT,
+                                      SQL_C_SLONG, SQL_INTEGER,
+                                      11, 0, (void*)&amp;m_lDbOutParam,
+                                      0, &amp;m_lBufLength);
+
+        m_lDbOutParam2 = 1;  // Second, the OUTPUT parameter.
+        m_lBufLength2 = sizeof(m_lDbOutParam2);
+        // This is binding the OUTPUT value.
+        nRetCode = ::SQLBindParameter(hstmt, 2, SQL_PARAM_OUTPUT,
+                                      SQL_C_SLONG, SQL_INTEGER,
+                                      11, 0, (void*)&amp;m_lDbOutParam2,
+                                      0, &amp;m_lBufLength2);
+     }
+
+     // In your MFC code, call your stored procedure directly.
+     // CRecordset is not involved.
+     db.ExecuteSQL(_T("{?=CALL TestQuery(?)}"));
+
+However, if the stored procedure does return a resultset, use CRecordset's
+FlushResultSet function as follows:
+
+     while( rs.FlushResultSet())
+        {
+           while (!rs.IsEOF())
+           {
+              rs.MoveNext();
+           }
+        }
+     // Now retrieve your bound parameters, as you normally would.
+     m_strName = rs.m_noutparam;
+
+
+STATUS
+======
+
+This is by design.
+
+Additional query words: kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

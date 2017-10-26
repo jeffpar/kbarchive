@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186820/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186820/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186820/","publisher":null,"image":null,"headline":"Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186820-dns-server-returns-wrong-response-when-wins-lookup-is-enabled">Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186820
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+With WINS lookup enabled, a Microsoft DNS server returns RCODE=3 when a name
+exists but the requested type of resource record (RR) is not available.
+
+CAUSE
+=====
+
+The Microsoft DNS server is returning RCODE=3, which, according to RFC 1035,
+means:
+
+  Name Error - Meaningful only for responses from an authoritative name
+  server, this code signifies that the domain name referenced in the query
+  does not exist.
+
+This only occurs when WINS lookup is enabled and the Microsoft DNS server has
+received a response from WINS that states Name Not Found. This is passed back in
+error to the original requester as rcode-3 (nxdomain).
+
+BIND 4.9.x and 8.1.x name servers cache the fact that the name does not exist so
+subsequent queries for other record types that do exist (such as, QTYPE="MX")
+fail.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+MORE INFORMATION
+================
+
+Section 4.1, Domain Implementation and Specification, of RFC 1035 states:
+
+The last three sections have the same format: a possibly empty list of
+concatenated resource records (RRs). The answer section contains RRs that answer
+the question; the authority section contains RRs that point toward an
+authoritative name server; the additional records section contains RRs which
+relate to the query, but are not strictly answers for the question.
+
+RFC 1034 indicates:
+
+When the resolver performs the indicated function, it usually has one of the
+following results to pass back to the client:
+
+- One or more RRs giving the requested data. In this case the resolver returns
+  the answer in the appropriate format.
+
+- A name error (NE). This happens when the referenced name does not exist. For
+  example, a user may have mistyped a host name.
+
+- A data not found error. This happens when the referenced name exists, but
+  data of the appropriate type does not.
+
+RFC 1035 includes the following:
+
+RCODE Response code - this 4 bit field is set as part of responses. The values
+have the following interpretation:
+
+  0 No error condition
+
+  1 Format error - The name server was unable to interpret the query.
+
+  2 Server failure - The name server was unable to process this query due to a
+  problem with the name server.
+
+  3 Name Error - Meaningful only for responses from an authoritative name
+  server, this code signifies that the domain name referenced in the query does
+  not exist.
+
+  4 Not Implemented - The name server does not support the requested kind of
+  query.
+
+  5 Refused - The name server refuses to perform the specified operation for
+  policy reasons. For example, a name server may not wish to provide the
+  information to the particular requester, or a name server may not wish to
+  perform a particular operation (for example, zoneMockapetris [Page 27]
+  transfer) for particular data.
+
+  6-15 Reserved for future use.
+
+The algorithm for operation of a name server specified in RFC 1034, is as
+follows:
+
+  3. Start matching down, label by label, in the zone. The matching process can
+  terminate several ways:
+
+  a. If the whole of QNAME is matched, we have found the node.
+
+  If the data at the node is a CNAME, and QTYPE doesn't match CNAME, copy the
+  CNAME RR into the answer section of the response, change QNAME to the
+  canonical name in the CNAME RR, and go back to step 1.
+
+  Otherwise, copy all RRs which match QTYPE into the answer section and go to
+  step 6.
+
+According to the specified algorithm, the only time an authoritative name error
+is allowed to be specified is in step 3c. In the case that we have, however, the
+QNAME did match, so you should copy all the RRs into the answer section whose
+TYPE matches QTYPE (in this case zero RRs), and jump to step 6 which has NO way
+of setting NXDOMAIN.
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128735/","publisher":null,"image":null,"headline":"Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128735-microcom-deskporte-fast-ep-288-not-compatible-with-es-model">Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128735
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:3.11; winnt:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you make a call from Windows NT 3.5 Remote Access Service (RAS), and your
+EP modem is configured as an ES modem, the call fails. Event Id 20015
+(indicating a hardware failure) is written to the system log.
+
+Windows for Workgroups 3.11 did not ship with support for any Microcom DeskPorte
+v.fast modems. However, if the [Microcom DeskPorte FAST ES 28.8] modem section
+from Windows NT is appended to the Windows for Workgroups 3.11 MODEM.INF file,
+hardware failure symptoms occur when you attempt to make a call.
+
+CAUSE
+=====
+
+The Windows NT 3.5 MODEM.INF section for the Microcom DeskPorte FAST EP 28.8 is
+not compatible with the Microcom DeskPorte FAST ES 28.8 (which is supported in
+Windows NT 3.5).
+
+RESOLUTION
+==========
+
+Windows NT
+----------
+
+To correct this problem under Windows NT, either use the MODEM.INF section for
+the Microcom DeskPorte FAST (which is a different from the ES model) or use the
+[Microcom DeskPorte FAST EP 28.8] section provided below.
+
+Although the MODEM.INF section for the Microcom DeskPorte FAST works for the EP
+model, it has to be manually selected in Windows NT since RAS Setup in Control
+Panel (the Network) not automatically detect the modem (because the EP modem
+identifies itself with a different string). After you select the Microcom
+DeskPorte FAST, restart RAS.
+
+The new [Microcom DeskPorte FAST EP 28.8] section below works for most EP modems
+and allows Control Panel to automatically detect the correct modem.
+
+NOTE: If your EP modem has a ROM revision that responds to the ATI3 detection
+command with a different string than the EP modems used in Microsoft's tests,
+your modem will not be detected.
+
+Windows for Workgroups
+----------------------
+
+To use the EP model under Windows for Workgroups version 3.11, append the below
+[Microcom DeskPorte FAST EP 28.8] section to your MODEM.INF file after you
+remove the following two lines:
+
+  DETECT_STRING=ATI3&lt;cr&gt;
+  DETECT_RESPONSE=DeskPorte 28.8P 2.0
+
+
+General Information
+-------------------
+
+The EP and ES MODEM.INF sections differ as follows:
+
+- The hardware flow control command is different in the EP version:
+
+   - The EP uses: \Qx
+
+   - The ES uses: &amp;Kx
+
+     where x represents a number that modifies the command.
+
+- The DETECT_RESPONSE strings (after issuing ATI3) are different:
+
+   - The EP uses: DeskPorte 28.8P 2.0
+
+   - The ES uses: DeskPorte V.FC
+
+The new MODEM.INF section should be appended to your existing MODEM.INF file:
+
+;----------------------------------------
+[Microcom DeskPorte FAST EP 28.8]
+; NOTE: this EP version is different from the ES version in terms of
+; hardware flow control and DETECT_RESPONSE= strings.
+CALLBACKTIME=10
+DEFAULTOFF=compression
+MAXCARRIERBPS=28800
+MAXCONNECTBPS=57600
+
+&lt;speaker_on&gt;=M1
+&lt;speaker_off&gt;=M0
+&lt;protocol_on&gt;=\\N3
+&lt;protocol_off&gt;=\\N0
+&lt;hwflowcontrol_on&gt;=\\Q3
+&lt;hwflowcontrol_off&gt;=\\Q0
+&lt;compression_on&gt;=%C3
+&lt;compression_off&gt;=%C0
+&lt;autodial_on&gt;=ATDT
+&lt;autodial_off&gt;=ATD
+
+DETECT_STRING=ATI3&lt;cr&gt;
+DETECT_RESPONSE=DeskPorte 28.8P 2.0
+
+COMMAND_INIT=AT&amp;F&amp;C1&amp;D2 V1 -M0 W1 S2=128 S7=55&lt;cr&gt;
+COMMAND_INIT=AT&lt;speaker&gt;&lt;compression&gt;&lt;hwflowcontrol&gt;&lt;protocol&gt;&lt;cr&gt;
+
+COMMAND_LISTEN=ATS0=1&lt;cr&gt;
+COMMAND_DIAL=&lt;autodial&gt;&lt;phonenumber&gt;&lt;cr&gt;
+
+;----------------------------------------
+
+Additional query words: prodnt initialization fails
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbAudDeveloper kbWinNT310Search kbWinNTW310Search kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11; winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

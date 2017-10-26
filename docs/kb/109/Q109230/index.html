@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109230: How to Create a List or Popup of Available Volume Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109230: How to Create a List or Popup of Available Volume Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109230/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109230/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109230/","publisher":null,"image":null,"headline":"Q109230: How to Create a List or Popup of Available Volume Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109230-how-to-create-a-list-or-popup-of-available-volume-names">Q109230: How to Create a List or Popup of Available Volume Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109230
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an application distributed to many users, who each have their own schemes for
+partitioning their hard disks and connecting to various network servers, you may
+find it useful to produce a list or popup of the available volumes. Below are
+several code samples showing how to create such an object.
+
+MORE INFORMATION
+================
+
+You can manually create a popup (the kind controlled by a READ command) by
+incorporating the following code into a program:
+
+     * Load FoxTools
+     IF !'FOXTOOLS'$SET('LIBRARY')
+       SET LIBRARY TO FOXTOOLS ADDITIVE
+     ENDIF
+
+     * Get the name of the boot volume
+     sysDrive = JustDrive(FXSystem(0))
+
+     * Remove the trailing colon
+     sysDrive = LEFT(sysDrive, LEN(sysDrive) -1)
+
+     * Create a popup containing all the volumes to which the Mac is
+     * currently connected. The boot volume, the one containing the active
+     * System Folder, is the default choice. Note the space after the caret
+     * in the PICTURE clause.
+     @1,1 GET m.volPop PICTURE '@^ ' + FXVolume() DEFAULT sysDrive
+     READ  &amp;&amp; Activate the list object
+
+NOTE: Replace the row and column coordinates of the popup with ones that reflect
+the desired position of the object. For more information about the @ ... GET
+LIST command, see the FoxPro "Language Reference."
+
+To create the same kind of popup or list using the Screen Builder, use the
+following code, which builds an array of volume names that can be used as the
+basis for a popup or list. You can place this procedure in the Cleanup and
+Procedures code snippet of a screen.
+
+     PROCEDURE AVol
+     * Procedure to create an array of available volumes.
+     * The parameter must be passed by reference. When the procedure is
+     * finished, the parameter will contain an array of the available
+     * volumes.
+     PARAMETER a_Volume
+
+     IF PARAMETERS() &lt; 1
+       WAIT WINDOW 'Usage: =AVOL(@&lt;expC&gt;)' NOWAIT
+       RETURN 0
+     ENDIF
+
+     *Open FoxTools if necessary
+     IF !'FOXTOOLS'$SET('LIBRARY')
+       SET LIBRARY TO FOXTOOLS ADDITIVE
+     ENDIF
+
+     * Get a semicolon-delimited list of available volumes
+     volList=FXVolume()
+
+     * Get the number of volumes in the list
+     numVols = Words(volList,';')
+
+     * Dimension the array to hold the volume names
+     DIMENSION a_Volume(numVols)
+
+     * Parse the list of volumes and stuff each value into its own array
+     * element
+     FOR i = 1 TO numVols
+       a_Volume[i] = WordNum(volList, i, ';')
+     ENDFOR
+
+     RETURN numVols
+
+     * END OF PROCEDURE AVol
+
+To create the array for use by a popup or list object created in the FoxPro for
+Macintosh Screen Builder, initialize a variable and call procedure AVol in the
+Setup code snippet of the screen. For example:
+
+     * Place the following in the SETUP code snippet of a screen
+     theVols = ''
+     volCount = AVol(@theVols)
+
+In the Popup or List dialog box, specify theVols as the array that supplies the
+popup or list with data. For more information about creating popups and lists in
+the Screen Builder from an array, see the FoxPro "Developer's Guide." You can
+use a similar procedure in Visual FoxPro for Macintosh version 3.0b, by using
+properties specific to the listbox object in the Form Designer.
+
+For more information about the FoxTools functions used in this example, see the
+FoxTools README file located in the FOXPRO:GOODIES:MISC folder. This file
+contains a complete listing of all the functions in the FoxTools function
+library.
+
+Additional query words: vFoxMac FoxMac FXVOLUME listbox pop- up list box
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

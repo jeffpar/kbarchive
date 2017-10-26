@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99542: Printing Reports Created w/ Question Marks in FP for Win | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99542: Printing Reports Created w/ Question Marks in FP for Win" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99542/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99542/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99542/","publisher":null,"image":null,"headline":"Q99542: Printing Reports Created w/ Question Marks in FP for Win","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99542-printing-reports-created-w-question-marks-in-fp-for-win">Q99542: Printing Reports Created w/ Question Marks in FP for Win</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99542
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 3.00 3.00 | 3.00b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+
+You may have reports (commonly xBASE-programmed) that used to print
+correctly but now do not align properly. This problem may occur because of
+the use of proportional fonts in Windows.
+
+The following two methods allow FoxPro for Windows to print reports that
+are created using ? commands and also send escape codes to the printer.
+
+Method If You Previously Used FoxPro for MS-DOS
+-----------------------------------------------
+
+NOTE: For the following method to work correctly, you must have had FoxPro
+2.0 or 2.5 for MS-DOS previously installed and have an existing 2.0 or 2.5
+printer driver in the current resource file. Loading the printer driver
+provides hooks into the GENPD.APP program, which is used for MS-DOS-style
+printing. The GENPD.APP program is not available with Visual FoxPro.
+
+1. Turn off all open print commands by issuing SET DEVICE TO SCREEN and SET
+  PRINTER TO commands.
+
+2. Load an existing FoxPro for MS-DOS version 2.0 or 2.5 printer driver that is
+  in the current resource file. The sample program below uses an existing
+  printer driver named HPCOMPRESS. This printer driver opens the printer in
+  "raw mode," which bypasses the Windows printer drivers.
+
+3. Issue a SET PRINT ON command, which redirects any question mark (?) output to
+  the printer.
+
+4. At the end of the report code, issue a SET PRINTER TO command to clear the
+  raw mode and begin using Windows printer drivers again.
+
+The following code illustrates the above steps:
+
+     SET DEVICE TO SCREEN
+     SET PRINTER TO
+     SET PDSETUP TO "hpcompress"
+     SET PRINT ON
+     ? _pdparms(15)    &amp;&amp; This is an example of using _PDPARMs and
+                       &amp;&amp; escape codes to control printing attributes.
+                       &amp;&amp; This is for turning italics on.
+
+     ?"Hello"
+     ? chr(27)+"(s16.66H" &amp;&amp; This is an example of sending a control
+                          &amp;&amp; sequence directly.
+     ?"There"
+     EJECT
+     SET PRINTER TO
+     SET LIBRARY TO
+     SET PDSETUP TO
+
+Method If You Use Only FoxPro for Windows or Visual FoxPro for Windows
+----------------------------------------------------------------------
+
+If you do not have access to FoxPro for MS-DOS and its drivers, you can
+accomplish the same result by doing either of the following:
+
+- Setting the Windows output to Generic/Text only.
+
+  -or-
+
+- Selecting one of the monospace (nonproportional) fonts (such as Courier,
+  FoxFont, or FoxPrint) by issuing the SET PRINT FONT "&lt;fontname&gt;",10
+  command. This method is also valid for reports being to Visual FoxPro for
+  Macintosh.
+
+Additional query words: vFoxMac VFoxWin FoxWin 2.50 pdparms FOXPROW kbvfp300 kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300bMac kbVFP300 kbVFP600
+Version           : 2.50 2.50a 3.00 3.00 | 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

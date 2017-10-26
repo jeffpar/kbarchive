@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194491/","publisher":null,"image":null,"headline":"Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194491-wd97-how-to-convert-wordperfect-merge-data-documents-to-word">Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194491
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 kbdta kbconversion winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Word supports conversion of WordPerfect 5.x secondary merge files, but
+not conversion of WordPerfect 6.x secondary merge files.
+
+MORE INFORMATION
+================
+
+A WordPerfect 6.x document can be opened in Word 97, provided the WordPerfect
+6.x import converter has been installed. However, the format of an imported
+secondary file is not valid as a Word 97 data document unless you edit it prior
+to performing a mail merge.
+
+Word 97 supports direct conversion of secondary files from WordPerfect 5.0 and
+5.1 for MS-DOS and WordPerfect 5.1 and 5.2 for Windows. Word 97 can use the
+imported secondary file in a mail merge. To use a WordPerfect 5.x secondary
+file, simply open the file in Word 97, or access the file in a mail merge.
+
+WordPerfect 5.x Secondary files and Word 97
+-------------------------------------------
+
+Word 97 automatically detects and converts WordPerfect 5.x secondary merge files
+to Word data source document format, provided the appropriate text converter is
+installed. To open the WordPerfect 5.x secondary file simply open the file in
+Word 97, or access the file in a mail merge.
+
+Secondary files containing 31 fields or fewer become tables, and those with more
+than 31 fields become tab-delimited data documents. WordPerfect conditional
+print merge constructs and macros are not retained. WordPerfect {END FIELD} and
+{END RECORD} merge commands must be properly placed in a WordPerfect file or
+field data may be placed in the wrong column or row after conversion to Word.
+
+WordPerfect 6.x Secondary Files and Word 97
+-------------------------------------------
+
+Word 97 can open a WordPerfect 6.x secondary file if the WordPerfect 6.x import
+converter has been installed. However, the file will be interpreted as a normal
+WordPerfect document.
+
+When converting the WordPerfect 6.x secondary file, the document text and layout
+will be retained, but merge commands appearing within braces (for example,
+{FIELD NAMES}, {END FIELD}, and {END RECORD}) are lost.
+
+NOTE: You will need to obtain the WordPerfect 6.x for Windows import text
+converter.
+
+How to Import a WordPerfect Secondary File
+------------------------------------------
+
+Use the appropriate method below to import.
+
+Method 1: Use If You Have Access to WordPerfect:
+
+Create a new primary document in WordPerfect 5.x or 6.x such that when it is
+merged with the secondary file, the resulting merged file is in a valid data
+document format that Word can use in a print merge. Use the method appropriate
+for your version of WordPerfect to accomplish this.
+
+WordPerfect 5.x:
+----------------
+
+1. Open the secondary file in WordPerfect and determine whether the records are
+  in the correct format. Each record should appear on a separate page and
+  should have the same number of {END FIELD} codes. If any record contains
+  fewer {END FIELD} codes than any other record, the record contains fewer data
+  categories than the other records. This format causes an error if used in a
+  Word merge unless an {END FIELD} code is inserted as a place holder for each
+  missing data category of information in each record.
+
+2. Create a new WordPerfect document.
+
+3. Type one quotation mark ("), click Merge on the Tools menu and select Field.
+
+4. In the Insert Merge Code Box, type a 1 (The 1 corresponds to the first field
+  and so on) click OK. The result is the text "{Field}1~ in the document.
+
+5. Type one quotation mark, which encloses the field in quotation marks, and
+  type a comma in order to separate the field from the next field that will be
+  inserted. Do not press the ENTER key between fields.
+
+6. Repeat steps 3 through 5 for each field in the secondary file. You should
+  also enclose the last field that is inserted in quotation marks; it should
+  not be followed by a comma.
+
+7. After inserting all the fields such that they are enclosed in quotation marks
+  and separated by commas, press ENTER once and save the file with the name
+  Newmain.wpd. An example of the file might look like (where &lt;HARD
+  RETURN&gt; represents pressing ENTER once):
+
+  "{Field}1~","{Field}2~","{Field}3~"&lt;HARD RETURN&gt;
+
+8. To merge the previously created secondary file, click Merge on the Tools
+  menu, select Merge, type the name of the new primary file, Newmain.wpd, in
+  the Primary File box, type the name of the existing secondary file in the
+  secondary File box, and click OK.
+
+9. Save the file with a new name, and then open the file in Word.
+
+10. If the first line of text in the merged file contains text other than actual
+  data, select the entire first line of text and press ENTER once. (This
+  deletes the existing first line of text, and moves the data to the first
+  line in the file.)
+
+11. Click Replace on the Edit menu, click the Clear button if it is available.
+  Place the insertion point in the Find What box, type "^d" (without the
+  quotation marks. Clear any text or spaces in the Replace With box. Click
+  Replace All and close the Replace box.
+
+12. Place the insertion point at the beginning of the document in front of the
+  quotation mark before the first record and press ENTER once. Move the
+  insertion point back up to the empty paragraph that was created by pressing
+  the ENTER key and type the name of each field. Enclose each field name in
+  quotation marks and separate it with commas. Be sure not to forget to type
+  any of the names of the fields. There should be as many field names as there
+  are {END FIELD} codes for a record in the WordPerfect secondary file. For
+  example, the first line of text (called a header record followed by data)
+  might look like:
+
+  "firstname","lastname","address","city","state","zip"&lt;HARD RETURN&gt;
+  "Jane","Doe","One Main Street","Seattle","WA","98101"&lt;HARD RETURN&gt;
+
+  No spaces, punctuation, slashes, or dashes are allowed in the header record.
+  No blank lines or text should appear before the header record.
+
+13. Save the file.
+
+You can use this document as a Word data document in a print merge.
+
+WordPerfect 6.x:
+----------------
+
+NOTE: If the WordPerfect 6.x secondary file is in a table format rather than a
+text format, you can open the file in Word 97 with the WordPerfect 6.x import
+converter and you do not need to follow the steps below. You can use the data
+file after removing the extra paragraphs in each of the table cells.
+
+1. Create a new WordPerfect document.
+
+2. On the Tools menu, click Merge, and then click Form.
+
+3. In the Associate A Data File box, type the name of the previously created
+  data document and click OK.
+
+4. Type one quotation mark (").
+
+5. Click Insert Field and select and insert a field in the list.
+
+6. Type another quotation mark to enclose the field in quotation marks. Then
+  type one comma (,).
+
+7. Type another quotation mark, select another field and insert it.
+
+8. Type another quotation mark and type a comma.
+
+9. Repeat steps 7 and 8 for each field. You should also enclose the last field
+  that you insert in quotation marks, but should not follow it with a comma.
+
+10. After inserting all the field names such that they are enclosed in quotation
+  marks and separated by commas, press ENTER once. For example, the file might
+  look as follows (note that ENTER was pressed once only after the last field
+  name was inserted):
+
+  "FIELD(firstname)","FIELD(lastname)","FIELD(address)",
+  "FIELD(city)","FIELD(state)","FIELD(zip)"&lt;HARD RETURN&gt;
+
+  No spaces, punctuation, slashes, or dashes are allowed in the header record.
+  No blank lines or text should appear before the header record.
+
+11. Click Merge, and then click Merge in the dialog box.
+
+12. Click Options, and click to clear the "Separate Each Merged Document with a
+  Page Break" option. Click OK twice.
+
+13. Place the insertion point before the quotation mark in front of the first
+  word in the document and press ENTER.
+
+14. Move the insertion point back to the first blank paragraph created in the
+  previous step and type the name of each field where each field name is
+  enclosed in quotation marks and separated by commas. Be sure not to forget
+  to type any of the names of the inserted fields. For example, a one-record
+  data file might look as follows:
+
+  "firstname","lastname","address","city","state","zip"&lt;HARD RETURN&gt;
+  "Jane","Doe","One Main Street","Seattle","WA","98101"&lt;HARD RETURN&gt;
+
+15. Save the file.
+
+You can use the resulting document as a Word 6.x or 7.0 data document in a print
+merge. If you have an earlier version of Word, save the file in an intermediary
+format, such as the version of Word being used, an earlier WordPerfect format,
+or Rich Text Format. Method 2: Use If You Do Not Have Access to WordPerfect:
+
+It is possible to clean up a WordPerfect 5.x or 6.x for Windows data document in
+Word after converting the file directly from WordPerfect format. However, due to
+the number of possible variations to the layout of a WordPerfect data document
+and the complexity and variations that are required in a clean-up macro, this
+method is recommended only if you do not have access to WordPerfect and cannot
+use method 1.
+
+A valid Word data file must be either a comma or tab delimited file, or must be
+formatted as a table. If a delimited document is used, the delimiter must
+separate each category of information (or data field) for each record. Each
+record must have the same number of delimiters, and each record must be
+separated from the next record by a hard return.
+
+If a table is used, data field information must appear in a separate table cell,
+and each row (which corresponds to a singe record) must have the same number of
+cells. Both types of data files must contain a header record, which lists all
+the field names that identify the data field categories. An example of a
+two-record tab delimited data file, where the non printing characters have been
+noted in brackets, follows:
+
+  First {TAB} Last {TAB} Address {TAB} City {TAB} State {TAB}
+  Zip {HARD RETURN}
+  Sam {TAB} Elliot {TAB} 3499 Green Hills Rd. {TAB} Beverly Hills {TAB}
+  CA {TAB} 98830 {HARD RETURN}
+  Kate {TAB} Simmons {TAB} 1104 Calvary St. {TAB} Hampton {TAB} VA {TAB}
+  11101 {HARD RETURN}
+
+The following method uses the Replace command to arrange a converted WordPerfect
+data file for use in Word.
+
+1. Open the WordPerfect secondary merge file in Word.
+
+2. View the document and determine whether the records are in the correct
+  format. Each record should appear on a separate page and should have the same
+  number of tabs. (Turn on non printing characters if you cannot see tabs,
+  which look like gray arrows.) If a record contains a paragraph mark that is
+  not at the end of the last field but is between data fields, delete the
+  paragraph and press the TAB key once. If a record has fewer tabs than any
+  other record, the record contains fewer data categories than the other
+  records. You must determine which data category is missing in the record,
+  place the cursor at that location, and insert a tab as a placeholder.
+
+3. On the File menu, click Page Setup, and change the paper size to custom, 20"
+  width and 20" length.
+
+4. On the Edit menu, click Replace, and replace Page Breaks with two percent
+  signs as follows. Click Replace All.
+
+  In the Find What box, type: ^m
+
+  In the Replace box, type: %%
+
+5. On the Edit menu, click Replace, and replace paragraph markers with nothing
+  as follows. Click Replace All.
+
+  In the Find What box, type: ^p
+
+  In the Replace box:
+
+6. On the Edit menu, click Replace, and replace the two percent signs with a
+  paragraph marker as follows. Click Replace All.
+
+  In the Find What box, type: %%
+
+  In the Replace box, type: ^p
+
+7. Save the file with a new file name in order to preserve the original file.
+  The file should now look like each line contains only one record. Each record
+  should begin with the same field information.
+
+8. Insert a header record as the very first record in the data file, where each
+  field name is separated from the others by a tab.
+
+  A header record inserted at the top of a data file might appear like this (non
+  printing characters are not noted):
+
+     name           address                city         state  zip
+     Sam Elliott    3499 Green Hills Rd.   Beverly Hills   CA  98830
+     Kate Simmons   1104 Calvary St.       Hampton         VA  11101
+
+  No spaces, punctuation, slashes, or dashes are allowed in the header record.
+  No blank lines or text should appear before the header record.
+
+9. Once the header record is inserted, save the file.
+
+You can now use this file for a data file in a Word Mail Merge.
+
+WordPerfect Mail Merge Formats
+------------------------------
+
+WordPerfect's secondary mail merge files are significantly different from Word
+for Windows, Word for the Macintosh, and Word for MS-DOS data documents. In
+WordPerfect, a data document (by default) aligns merge data down the left margin
+with each field on a separate line, and each record separated by an
+end-of-record code. In all versions of Microsoft Word, each record contains
+fields that are separated by delimiters, and each record is separated by a hard
+return.
+
+The sections below describe the default layouts used by WordPerfect 5.1 for
+MS-DOS and WordPerfect 5.x and 6.x for Windows, as well as the somewhat
+different format used by WordPerfect 5.0 for MS-DOS. Possible manual variations
+of the default formats are also described.
+
+WordPerfect 6.x Secondary Merge File Format
+-------------------------------------------
+
+By default, a WordPerfect secondary text file created in WordPerfect 6.0 or 6.1
+for Windows separates records by using the ENDRECORD merge command followed by a
+hard page break. The information in each record is divided into fields. Fields
+within each record are separated by the ENDFIELD merge command followed by a
+hard carriage return.
+
+Fields may be referenced in a primary merge document by number or by name. Fields
+are automatically numbered by WordPerfect from top to bottom by default. If
+names are assigned to fields, these names will appear in a record at the
+beginning of the secondary merge file preceded by the FIELDNAMES merge command.
+
+Therefore, by default, a WordPerfect 6.x secondary merge file that includes field
+names appears similar to the following:
+
+  FIELDNAMES(Name;Address)ENDRECORD
+  (Hard Page Break)
+  Mary Jane DoeENDFIELD
+  Seattle, WashingtonENDFIELD
+  END RECORD
+  (hard page break)
+
+WordPerfect 5.x Secondary Merge File Format
+-------------------------------------------
+
+By default, a WordPerfect secondary file created in WordPerfect 5.1 for MS-DOS or
+WordPerfect 5.1, 5.2 for Windows separates records by using the {END RECORD}
+merge command followed by a hard page break. The information in each record is
+divided into fields. Fields within each record are separated by the {END FIELD}
+merge command followed by a hard carriage return.
+
+Fields may be referenced in a primary merge document by number or by name. Fields
+are automatically numbered by WordPerfect from top to bottom by default. If
+names are assigned to fields, these names appear in a record at the beginning of
+the secondary merge file preceded by the {FIELD NAMES} merge command.
+
+Therefore, by default, a WordPerfect 5.1 or 5.2 secondary merge file that
+includes field names appears similar to the following:
+
+  {FIELD NAMES}Name~Address~~{END RECORD}
+  (Hard Page Break)
+  Mary Jane Doe{END FIELD}
+  Seattle, Washington{END FIELD}
+  {END RECORD}
+  (hard page break)
+
+You might choose to manually manipulate the layout of a secondary merge document
+in WordPerfect. The following are some of the possible manual variations of the
+default layout:
+
+- You could insert hard returns following each field name at the beginning of a
+  secondary merge document so that the field names appear aligned down the left
+  column in the same manner as the actual field entries appear by default. In
+  such a case, the example above would instead appear as:
+
+     {FIELD NAMES}
+     Name~
+     Address~
+     ~{END RECORD}
+     {Hard Page Break}
+     Mary Jane Doe{END FIELD}
+     Seattle, Washington{END FIELD}
+     {END RECORD}
+
+- You could remove the hard returns that normally follow each {END FIELD} code
+  so that each data record appears horizontally across the page in the same
+  manner as the field names do by default. In such a case, the example above
+  would instead appear as:
+
+     {FIELD NAMES}Name~Address~~{END RECORD}
+     (Hard Page Break)
+     Mary Jane Doe{END FIELD}Seattle, Washington{END FIELD}{END RECORD}
+
+- You could reverse the layout of both field names and field entries. In such a
+  case, the example above would instead appear as:
+
+     {FIELD NAMES}
+     Name~
+     Address~
+     ~{END RECORD}
+     (Hard Page Break)
+     Mary Jane Doe{END FIELD}Seattle, Washington{END FIELD}{END RECORD}
+
+- You could not include any field name definitions in the secondary merge
+  document, and instead simply make reference to each field in the primary
+  document based on its field number. Depending on the horizontal or vertical
+  (default) layout chosen for field entries, they are numbered in a record
+  either from top to bottom or from left to right. In the example above, Name
+  is field 1 and Address is field 2, and the secondary merge file would appear
+  by default as:
+
+     Mary Jane Doe{END FIELD}
+     Seattle, Washington{END FIELD}
+     {END RECORD}
+     (hard page break)
+
+WordPerfect 5.0 Secondary Merge File Format
+-------------------------------------------
+
+By default, a WordPerfect secondary file created in WordPerfect 5.0 for MS-DOS
+separates records by using the Merge E command (^E followed by a hard page
+break). The information in each record is divided into fields. Fields within
+each record are separated by the Merge R command (^R followed by a hard
+return).
+
+Fields can be referenced in a primary merge document by number or by name.
+WordPerfect automatically numbers fields from top to bottom by default. If names
+are assigned to fields, these names appear in a record at the beginning of the
+secondary merge file, preceded by the Merge N command (^N followed by a hard
+return).
+
+Therefore, by default, a WordPerfect 5.0 secondary merge file that includes field
+names appears similar to the following:
+
+  ^N
+  Name^R
+  Address^R
+  ^E
+  Mary Jane Doe^R
+  Seattle, Washington^R
+  ^E
+
+This layout, with the exception of the differing merge commands, is the same as
+that used by the more recent WordPerfect versions 5.1 and 5.2. The same possible
+variations of this layout as outlined for those versions above are applicable to
+WordPerfect 5.0.
+
+
+Support for all versions of WordPerfect is the sole responsibility of Corel
+Corporation. For more information or support for the merge functionality of
+WordPerfect, contact Corel Customer Support. For information about how to
+contact Corel, query in the Knowledge Base for one of the following articles:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+The WordPerfect products included here are manufactured by Corel Corporation, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+REFERENCES
+==========
+
+"Microsoft Word Developer's Conference" manual, (c) 1991, Microsoft Corporation
+
+"WordPerfect for IBM Personal Computers" for WordPerfect 5.0 for MS-DOS, (c) 1988
+Corel Corporation
+
+"WordPerfect for IBM Personal Computers and PC Networks," for WordPerfect 5.1 for
+MS-DOS, (c) 1990 Corel Corporation
+
+"Reference for Computers Running Windows 3.0 or Higher" for WordPerfect 5.1 for
+Windows, (c) 1991 Corel Corporation
+
+Additional query words: primary secondary link print 8.0 8.00
+
+======================================================================
+Keywords          : kbualink97 kbdta kbconversion winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

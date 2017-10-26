@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162010: XCLN: Exchange Server Name Resolution on a Novell Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162010: XCLN: Exchange Server Name Resolution on a Novell Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162010/","publisher":null,"image":null,"headline":"Q162010: XCLN: Exchange Server Name Resolution on a Novell Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162010-xcln-exchange-server-name-resolution-on-a-novell-network">Q162010: XCLN: Exchange Server Name Resolution on a Novell Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162010
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 27-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows 95/98 client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When the Microsoft Exchange client tries to locate the computer running
+Microsoft Exchange Server on a Novell network, it tries to locate a file server
+for the Microsoft Exchange Server name resolution.
+
+To do this, it sends out a SAP Nearest Service Query packet to get the nearest
+NetWare file server. There are two ways it should get a response:
+
+- If the file server is on the same subnet as the client, it will respond.
+
+- A router responds on behalf of the servers on a different subnet, if and only
+  if the router believes that no servers exist on the client subnet.
+
+This is how most networks are configured, so the client gets a response from the
+Nearest Service Query request from several file servers.
+
+Once a NetWare file server has been located, its bindery is used to translate the
+name of the computer running Microsoft Exchange Server into an IPX address.
+
+On the network being used, when the file server is on the same subnet as the
+client, but there is an internal network number defined on this server, the file
+server acts as if it is on a different subnet. Because of this, it should act as
+a router and respond to the Nearest Service Query.
+
+But if "Respond To Nearest Service Query=OFF" is set on the NetWare server, it
+does not respond to a Nearest Service Query. This setting is used in some
+NetWare environments when people do not want all of their servers to respond to
+this request. To enable this option, type the following on the NetWare Server
+console: SET REPLY TO GET NEAREST SERVER=ON. If setting the SET REPLY TO GET
+NEAREST SERVER=ON resolves the problem, add the entry to the AUTOEXEC.NCF file
+on the Novell server. If this entry is not added to the AUTOEXEC.NCF and the
+server is cycled, the problem will resurface.
+
+If the Nearest Service Query fails, a General Service Query is issued. All file
+servers on the subnet and routers will respond, including the one configured
+with a different internal network number. When the Microsoft Exchange client
+receives the response to the General Service query, it does not connect
+successfully to the computer running Microsoft Exchange Server; it must have a
+response to the Nearest Service Query.
+
+
+MORE INFORMATION
+================
+
+This behavior is by product design.
+
+Additional query words: WINNT WIN16 WIN95
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

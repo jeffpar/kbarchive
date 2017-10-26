@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133111: Systems Management Server Hierarchy Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133111: Systems Management Server Hierarchy Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133111/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133111/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133111/","publisher":null,"image":null,"headline":"Q133111: Systems Management Server Hierarchy Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133111-systems-management-server-hierarchy-manager">Q133111: Systems Management Server Hierarchy Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133111
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup kbDatabase kbHMan kbsmsAdmin smsadmin smssetup smsdatabase smshierman
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Systems Management Server Hierarchy Manager is a Win32 service that manages
+the multiple-site hierarchy when the user has multiple sites. It coordinates the
+transfer of configuration information between sites, handles the construction,
+modification, and destruction of the multiple site hierarchy, and controls the
+actual setup, installation, upgrade, and deinstallation of secondary sites. For
+single site installations, the Hierarchy Manager assists in the setup and
+reconfiguration of the site.
+
+MORE INFORMATION
+================
+
+Multiple site hierarchies are constructed in two ways; by connecting Primary
+Sites together, and by creating Secondary Sites immediately beneath Primary
+Sites.
+
+All Primary sites are created by running Systems Management Server Setup.
+Secondary Sites are created using the SMS Administrator. Primary Sites have a
+Systems Management Server Administrator and a SQL database. Secondary sites have
+no Systems Management Server Administrator or SQL database.
+
+The terms parent and child, when applied to SMS sites, have their standard
+meanings used in any tree-based data structure. The site hierarchy tree formed
+can be any arbitrary multi-way tree, subject to the following rules:
+
+1. A site can only have one parent. A strict multi-way tree structure is
+  observed, where each node can only have one parent and an arbitrary number of
+  children. A directed cyclic graph is not possible, nor are kind of cycles
+  possible. In other words, the site tree cannot contain any kind of circular
+  references and sites cannot have more than one parent.
+
+2. Secondary sites cannot report to each other in a parent-child relationship.
+  Each secondary site must report to a primary site as its immediate parent.
+  There is no mechanism at secondary sites to forward information to another
+  site in this way.
+
+3. Primary sites are added to the tree from the bottom up. A parent site does
+  not acquire a primary child site. A primary child site must decide to report
+  to a parent and attach to the parent site after creating an address to that
+  site.
+
+4. Primary sites can decide to detach themselves from their parent site and
+  become a top-level site with no parent. When they do this, the parent
+  receives instructions to eliminate that site and all its children from its
+  hierarchy tree. The primary site can then reattach to a different parent, if
+  needed. The primary Site can also simply switch to a new parent site in one
+  operation.
+
+5. Secondary sites are deleted through their parent site. The site is physically
+  deinstalled when this happens.
+
+6. The structure of the site tree can be altered by changing parent site codes
+  for the various sites. A primary site can detach from its current parent and
+  attach to a new one or become independent, as stated in rule number four
+  above. Secondary sites can also have their parent code altered to another
+  site. While this is technically possible, this usage is not officially
+  supported in Systems Management Server 1.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbDatabase kbHMan kbsmsAdmin smsadmin smssetup smsdatabase smshierman 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

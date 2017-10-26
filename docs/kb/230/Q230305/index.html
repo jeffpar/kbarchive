@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230305: Contents of Script Debugger Release Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230305: Contents of Script Debugger Release Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230305/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230305/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230305/","publisher":null,"image":null,"headline":"Q230305: Contents of Script Debugger Release Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230305-contents-of-script-debugger-release-notes">Q230305: Contents of Script Debugger Release Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230305
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the Script Debugger Release Notes included with
+the Windows NT 4.0 Option Pack. It is listed here so that the issues it covers
+will be included in queries that are performed against the Knowledge Base.
+
+The file containing these Release Notes is located in
+&lt;%SystemRoot%&gt;\Help\Iis\Htm\Core\Scrdbgrm.htm.
+
+Note: Knowledge Base articles may be distributed in either ASCII-text or HTML
+form. If you are viewing the ASCII-text version of this article, some formatting
+may have been lost when it was converted from the original HTML form of
+Scrdbgrm.htm
+
+MORE INFORMATION
+================
+
+Following are the contents of the Readme file as it shipped with the products
+listed previously. It has not been edited by the Microsoft Developer Support
+Knowledge Base editing team.
+
+Microsoft Script Debugger Release Notes
+(C) Microsoft Corporation, 1997
+
+This document provides information about using the Microsoft Script Debugger, including tips for installing and using the debugger successfully, and information that became available too late to be included in the documentation.
+
+Contents
+Installing and Starting the Script Debugger
+
+Viewing Debugger Documentation
+
+HTML Source Editor
+
+Script Debugging in Internet Explorer 4.0
+
+Script Debugging in Internet Information Server 4.0
+
+Debugging Java
+
+Copyright Information
+
+--------------------------------------------------------------------------------
+
+Installing and Starting the Script Debugger
+Using the Script Debugger with Microsoft&lt;AE&gt; Visual Studio? 98  In general, you should not install the Script Debugger if you have already installed Visual Studio 98 or any of its component products such as Microsoft&lt;AE&gt; Visual InterDev? or Microsoft&lt;AE&gt; Visual J++?. Visual Studio includes its own debugger that you can use to debug scripts and Java components. If you install the Script Debugger after installing any Visual Studio products and you will no longer be able to start the Visual Studio debugger in response to errors reported by Internet Explorer 4.0. 
+
+Using the correct version  Microsoft Script Debugger works with Microsoft Internet Explorer 4.0 or with Internet Information Server 4.0. Because the Script Debugger is designed to be generic across script hosts, Setup does not check for specific versions of products being installed, so you must ensure that you are running the correct versions of these products. If you attempt to use the Script Debugger with earlier versions of Internet Explorer (such as Internet Explorer 3.0 or the Platform Preview release of Internet Explorer 4.0), or with earlier versions of Internet Information Server, the debugger will not work and could disrupt IIS service.
+
+Uninstalling previous versions of the Script Debugger   If you installed the Script Debugger for Internet Explorer 3.0, you must uninstall that version before proceeding with this installation.
+
+Uninstalling IIS  If you uninstall Internet Information Server 4.0, the uninstall process will also remove the Script Debugger, even if you installed the Script Debugger separately. You can reinstall the Script Debugger by running the IIS installation and choosing to install just the Script Debugger.
+
+--------------------------------------------------------------------------------
+
+Viewing Debugger Documentation
+Starting a browser before displaying Help  Help is displayed in the default Web browser. If you are running Internet Information Server, start Internet Explorer 4.0 before choosing Help Topics from the Help menu. If the browser is not already running when you display Help, the debugger might display a blank window, and the Script Debugger might hang.
+
+Viewing Help if no browser is installed on the server  If you are debugging on a server that has no browser installed, you might not be able to view Help, because Help is displayed in the default browser. However, if you have permission to access the Web server as a file server, you can try using a browser on another machine to view the Help file. Look for a file on the server called SDbug.htm, and use file protocol (file://), not HTTP protocol (http://).
+
+--------------------------------------------------------------------------------
+
+HTML Source Editor
+Entering file names when opening HTML documents  When you choose Open from the File menu to open an existing document in the Script Debugger, you must provide a complete file name, including extension, in the File Name box.
+
+Opening HTML documents from the Desktop in Microsoft&lt;AE&gt; Windows NT&lt;AE&gt;  In Windows NT, when you use the Open dialog box to open a file, you can display documents by selecting Desktop from the Look In list. However, in this version of the debugger, the content of the Open dialog box reflects the desktop setting for the default user, not for the current user.
+
+Opening documents in Windows NT shared directories In Windows NT, when you use the Open dialog box to open a file on a shared drive with password protection, use "\*" at the end of the path and file name, as in this example:
+
+\\myshare\myfolder\*
+
+--------------------------------------------------------------------------------
+
+Script Debugging in Internet Explorer 4.0
+Debugging in the Active Desktop  If you use the Script Debugger when Internet Explorer is in Active Desktop mode, all programs that are integrated into the Active Desktop are controlled by the debugger. For example, because Windows Explorer is part of the Active Desktop, it will be suspended when the debugger is open and waiting at a breakpoint. When you run the current document or close the debugger, Windows Explorer will again work normally.
+
+Browsing a document after closing the debugger  If you finish a debugging session and close the Script Debugger, and then return to Internet Explorer and continue working with the document you were just debugging, the browser sometimes restarts the debugger.
+
+Working with multiple documents  If you open two documents in two windows in Internet Explorer, you can debug only one of them at a time. For example, if you are in break mode in one document (are at a breakpoint or are stepping through code), you cannot also be working in the other document.
+
+Entering commands in the Command window  You can display the Command window at any time while the Script Debugger is open, but commands that you type into the Command window have no effect unless you are in break mode.
+
+Problems debugging after executing Document.Write  Using the Document.Write command can cause problems under these circumstances: 
+
+If a Document.Write command is followed by a Stop (in Visual Basic&lt;AE&gt;, Scripting Edition -- VBScript) or a debugger (JScript?) command, the debugger will be launched. However, at that point page processing has been interrupted in Internet Explorer, so you must press F5 to finish loading the document. 
+If a Document.Write command is followed by a breakpoint, the breakpoint is ignored. 
+If you enter a Document.Write command in the Command window while at a breakpoint, Internet Explorer might quit responding to commands. 
+Setting breakpoints on invalid lines  If you attempt to set a breakpoint on a line that does not contain script (such as a line of HTML code) the Script Debugger sets the breakpoint on the next valid code statement, even if that statement is many lines away from where you tried to set the breakpoint. 
+
+Calling functions with breakpoints  In the Command window, if you call a function that contains a breakpoint, Internet Explorer might hang.
+
+Displaying the line indicator correctly  The Script Debugger might not display the current line indicator properly if:
+
+You are stepping through inline JScript code. 
+The document you are debugging is displayed in a frame. 
+Note  If the line indicator is not properly displayed, you can try stepping into the next line to restore the indicator. 
+Features not fully implemented  The following features are not fully implemented in this version of the Script Debugger: 
+
+Viewing variable values  To see the value of a variable, use the Command window. The Script Debugger does not include a Watch window, as in some other debuggers. For more details, see the Script Debugger documentation. 
+Setting breakpoints by clicking  To set a breakpoint, choose Toggle Breakpoint from the Debug menu, or press F9. You cannot set a breakpoint on a line by clicking in the margin to the left of the line, as you can in some environments. 
+Known issues when debugging client scripts  The following are additional known issues with using this version of the Script Debugger in Internet Explorer 4.0: 
+
+If you are debugging a document, return to it in Internet Explorer, refresh it, continue debugging it, refresh it again, and then repeat this process, Internet Explorer might hang or show other unexpected behavior. 
+If you minimize a child window in the debugger, such as the Command window or Running Documents window, the Restore command on the Control menu is unavailable. To restore the minimized child window, maximize it, and then resize it by dragging its corners. 
+
+--------------------------------------------------------------------------------
+
+Script Debugging in Internet Information Server 4.0
+Note Be sure to review the information under Script Debugging in Internet Explorer 4.0 as well. 
+Inspecting variables after a run-time error  If you invoke the debugger after a run-time error, the Command window cannot be used to inspect variable values in an ASP page. However, you can still evaluate expressions using the default language.
+
+Debugging cached pages  If you are using Internet Explorer 3.0 to request pages from the server, or you are using Internet Explorer 4.0 and have set the browser to cache pages (you set "Check for newer versions of stored pages" to "Never"), Stop and debugger command will be ignored.
+
+Illegal object references in the Command window  In the Command window, if you create an instance of an object and then use improper syntax to reference its properties or methods, the Script Debugger might hang. For example, in the following sequence of VBScript commands, the second is illegal because it is not preceded with a "?" operator, and will therefore hang the debugger:
+
+Set myObj = Server.CreateObject("MSWC.Browsertype")
+myObj.frames
+Debugging after IIS has been shut down  If you shut down Internet Information Server while a debugging session is running, and then attempt to continue debugging, the Script Debugger will generate a General Protection Fault.
+
+Calling functions repeatedly  If you are at a breakpoint, open the Command window, and call a function repeatedly that is defined in a script on the page, the debugger might hang when you continue running the document.
+
+--------------------------------------------------------------------------------
+
+Debugging Java
+Debugging Java  This release of the Script Debugger includes support for debugging Java code in client applications, including setting breakpoints, checking the call stack, and using the command window. However, debugging Java code on Internet Information Server is not fully supported, and can result in unexpected behavior.
+
+Debugging Java applications on DEC Alpha computers  This version of the Script Debugger does not fully support debugging Java applications on DEC Alpha computers. If you attempt to debug Java applications, you might experience errors.
+
+Debugging a multi-threaded Java application  If you break into a Java application that is using multiple threads, you can navigate to another thread by choosing it in the Call Stack window. When you do, the current line indicator is displayed in the thread to which you have navigated. However, debugger commands such as Step Into, Step Over, and so on, affect only to the thread where the Script Debugger broke, not the one to which you have navigated and which shows the current line indicator.
+
+
+
+--------------------------------------------------------------------------------
+
+Copyright Information
+(C) 1997 Microsoft Corporation
+
+These materials are provided "as-is," for informational purposes only.
+
+Neither Microsoft nor its suppliers makes any warranty, express or implied with respect to the content of these materials or the accuracy of any information contained herein, including, without limitation, the implied warranties of merchantability or fitness for a particular purpose. Because some states/jurisdictions do not allow exclusions of implied warranties, the above limitation may not apply to you.
+
+Neither Microsoft nor its suppliers shall have any liability for any damages whatsoever including consequential, incidental, direct, indirect, special, and lost profits. Because some states/jurisdictions do not allow exclusions of implied warranties, the above limitation may not apply to you. In any event, Microsoft?s and its suppliers? entire liability in any manner arising out of these materials, whether by tort, contract, or otherwise shall not exceed the suggested retail price of these materials.
+
+--------------------------------------------------------------------------------
+
+Additional query words: ie internet explorer iis kbreadme readme scrdbgrm.htm scrdbgrm akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

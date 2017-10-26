@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65103: OS/2 BASIC Program to Get Machine Configuration; DosDevConfig | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65103: OS/2 BASIC Program to Get Machine Configuration; DosDevConfig" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65103/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65103/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65103/","publisher":null,"image":null,"headline":"Q65103: OS/2 BASIC Program to Get Machine Configuration; DosDevConfig","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65103-os2-basic-program-to-get-machine-configuration-dosdevconfig">Q65103: OS/2 BASIC Program to Get Machine Configuration; DosDevConfig</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65103
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 7.10
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# S900820-52 | mspl13_basic
+Last Modified: 4-SEP-1990
+
+A protected mode BASIC program can call the OS/2 API function
+DosDevConfig() to find out machine-configuration information, such as
+how many printers are attached, how many serial ports and floppy disk
+drives are available, whether or not a math coprocessor is present,
+and the type of primary display adapter (monochrome or color). Below
+is a sample program demonstrating this.
+
+This information applies to Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS OS/2 and to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS OS/2.
+
+DosDevConfig() takes the following parameters:
+
+   Parameter   Description
+   ---------   -----------
+
+   PTR BYTE    Receives machine information
+
+   WORD        Type of information needed
+               0 = Number of printers attached
+               1 = Number of serial ports available
+               2 = Number of floppy disk drives available
+               3 = Check math coprocessor (returns 1 = present, 0 = not)
+               4 = PC Submodel type
+               5 = PC model type
+               6 = Primary display adapter type (returns 0 = monochrome,
+                   1 = color)
+
+   WORD        Reserved by OS/2, must be set to 0
+
+BASIC 6.00 and 6.00b and BASIC PDS 7.00 and 7.10 can directly call
+OS/2 API functions by linking with the DOSCALLS.LIB (for 6.00 and
+6.00b) or OS2.LIB (for 7.00 and 7.10) libraries. Note that a BYTE in
+BASIC has a type of STRING * 1, and a WORD has a type of INTEGER.
+Also, data items preceded by PTR can be passed using the SEG keyword
+in the DECLARE statement; otherwise, BYVAL is used.
+
+For more information on DosDevConfig(), see Pages 509-510 of "Advanced
+OS/2 Programming" by Ray Duncan (Microsoft Press, 1989).
+
+The following sample program (MACHINFO.BAS) displays configuration
+information about the machin, namely, how many printers are attached,
+how many serial ports and floppy disk drives are available, whether or
+not a math coprocessor is present, and the type of primary display
+adapter (monochrome or color). Note that a printer does not have to be
+online to be "attached."
+
+To compile the program, enter the following at the OS/2 command
+prompt:
+
+   bc machinfo;
+
+The LINK command line for BASIC 6.00 and 6.00b is as follows:
+
+   link /nop machinfo,,,doscalls;
+
+The LINK command line for BASIC PDS 7.00 and 7.10 is as follows:
+
+   link /nop machinfo,,,os2;
+
+MACHINFO.BAS
+------------
+
+DEFINT A-Z
+
+TYPE InfoType
+   Info AS STRING * 1
+END TYPE
+
+DECLARE FUNCTION DosDevConfig% (SEG InfoVar AS InfoType,_
+                                BYVAL InfoNeeded%, BYVAL Reserved%)
+
+DIM InfoVar AS InfoType   'Will receive configuration information.
+
+'Get number of printers attached.
+ErrorCode% = DosDevConfig% (InfoVar, 0, 0)
+PRINT "There are" CVI(InfoVar.Info + CHR$(0)) " printers attached."
+
+'Get number of serial ports available.
+ErrorCode% = DosDevConfig% (InfoVar, 1, 0)
+PRINT CVI(InfoVar.Info + CHR$(0)) " serial ports are available."
+
+'Get number of floppy disk drives available.
+ErrorCode% = DosDevConfig% (InfoVar, 2, 0)
+PRINT CVI(InfoVar.Info + CHR$(0)) " disk drives are available."
+
+'Check if math coprocessor is available.
+ErrorCode% = DosDevConfig% (InfoVar, 3, 0)
+IF InfoVar.Info = CHR$(1) THEN
+   PRINT "A math coprocessor is present."
+ELSE
+   PRINT "A math coprocessor is not present."
+END IF
+
+'Get the type of primary display adapter (color or mono).
+ErrorCode% = DosDevConfig% (InfoVar, 6, 0)
+IF InfoVar.Info = CHR$(1) THEN
+   PRINT "The primary display adapter is color."
+ELSE
+   PRINT "The primary display adapter is monochrome."
+END IF
+
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

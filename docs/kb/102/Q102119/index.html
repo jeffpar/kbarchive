@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102119/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102119/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102119/","publisher":null,"image":null,"headline":"Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102119-mac-form-creating-a-custom-form-with-pre-addressed-recipient">Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102119
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:2.0,3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 2.0, 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are using the Form Designer, you can create a custom form with a
+default recipient, similar to the Inquiry form. The Inquiry form is shipped with
+the Mail server and always gets sent to the Network Manager.
+
+The following are the steps to create a custom form with a default recipient:
+
+1. Choose the Field tool and double-click the User List field.
+
+2. Make sure the Lock Text check box is clear (not selected) and choose OK.
+
+3. Choose the Browse tool and type the default recipient's name into the User
+  List. If there are multiple users with that name (for example, Network
+  Manager or Jane Smith), use the recipient name and the server name, as in the
+  following:
+
+  " Network Manager@Accounting Server " (without the quotation marks)
+
+4. Repeat steps 1 and 2, this time making sure the Lock Text check box is
+  selected.
+
+5. Recompile and install.
+
+TIP: If you want to hide the User List, bring up the message box (COMMAND+M) and
+type the following:
+
+  " hide card field "user list" " (without the quotation marks)
+
+If the field is not locked, or if the name is not unique, the Send button will be
+unavailable (gray) after the form is installed until a valid address is added to
+the recipient list. The Inquiry stack is not a good example for this because it
+uses a different method to pre-addressing messages.
+
+Additional query words: 2.00 3.00 3.10 grey dim
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN200
+Version           : WINDOWS:2.0,3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

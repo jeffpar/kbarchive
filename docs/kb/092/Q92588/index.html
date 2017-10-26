@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92588: WFWG: Password Caching and How It Affects LAN Manager Security | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92588: WFWG: Password Caching and How It Affects LAN Manager Security" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92588/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92588/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92588/","publisher":null,"image":null,"headline":"Q92588: WFWG: Password Caching and How It Affects LAN Manager Security","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92588-wfwg-password-caching-and-how-it-affects-lan-manager-security">Q92588: WFWG: Password Caching and How It Affects LAN Manager Security</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92588
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-SEP-1999
+
+3.10
+
+WINDOWS
+
+kbnetwork kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups version 3.1 uses share-level security. As a result, when
+you type a password to start the network, the only purpose this serves is to
+provide access to the network from the workstation.
+
+The access granted provides reconnection services to shares to which the
+workstation was previously connected. If these connections were password
+protected on a share-level basis, then these passwords were saved in a password
+cache and are only accessible if the correct password was entered when the
+network was started. You must type the correct password for a given user name,
+or the network does not start.
+
+MORE INFORMATION
+================
+
+If an alternate user name is typed at the login prompt, then the reconnection
+services are still provided, but you are prompted to enter a password to any
+shares that are secured by one. If you do not know the share password, then you
+are not allowed to reconnect.
+
+When using LAN Manager connectivity with Windows for Workgroups, user-level
+security is implemented for all LAN Manager servers. If there is a server
+available during logon, then it validates the user by checking for the correct
+user name and user-level password. If the user is not validated during logon,
+then any LAN Manager server that is set up to use user-level security validates
+the user name and user-level password before it allows connection. If you do not
+give the correct password, you can connect but only with guest privileges.
+
+User-level security is implemented when a server is set up with restrictions that
+govern who can access the server. These restrictions, may include the time of
+day that the user has access to the server, the files and subdirectories the
+user may access, and the level of rights the user is granted (such as read,
+write, create, and delete).
+
+Share-level security serves to restrict connections to a specified drive that has
+been set up as a share. Security is established by assigning a password to the
+drive. There are two levels of privileges that can be granted: read only and
+full access.
+
+Windows for Workgroups has built-in functionality to store passwords to shares
+that are secured by a password. This feature is optional, and is only
+implemented when the user chooses to enter a password when starting the network.
+Null is a valid password and if used, the user is not prompted for the password.
+It is only implemented for LAN Manager logon if the user selects the check box
+that saves the password in the password cache.
+
+If password caching is enabled, Windows for Workgroups saves the LAN Manager
+logon and user-level passwords in the cache so that the next time the user tries
+to log on or connect to a server the user is not prompted for the password. It
+is also possible to choose not to save an individual connection's password.
+Within File Manager this is done by clearing the option that saves the password
+in the password cache. Password saving can also be prevented when making the
+connection at the MS-DOS command prompt by using the SAVEPW:NO command. For
+example, type:
+
+  net use \\server\share password \savepw:no
+
+To disable password caching and prevent your PWL file from being accessed, add
+the following line to the [NETWORK] section of the System.ini file:
+
+     PasswordCaching=no
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

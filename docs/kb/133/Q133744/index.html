@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133744: How to Re-dimension a Class Array Outside the Class Definition | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133744: How to Re-dimension a Class Array Outside the Class Definition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133744/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133744/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133744/","publisher":null,"image":null,"headline":"Q133744: How to Re-dimension a Class Array Outside the Class Definition","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133744-how-to-re-dimension-a-class-array-outside-the-class-definition">Q133744: How to Re-dimension a Class Array Outside the Class Definition</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133744
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro allows you to re-dimension arrays outside their class definition.
+This article shows by example how to do it.
+
+MORE INFORMATION
+================
+
+User-defined structures (similar to types in Visual Basic, or structs in C) are
+possible through the Custom Class. and because Custom classes in Visual FoxPro
+can contain arrays, you can redimension arrays outside the class definition as
+needed.
+
+Code Sample
+-----------
+
+The following code fragment illustrates how to do so. It uses a Custom class
+called sMystruct to define a set of variables and an array. The array name is
+Inventory_Onorder_Instock and it has an initial dimension of 1. The code
+redimensions the array to 2, and populates each element of the array with values
+from the Products table. Then it displays these values.
+
+     CLEAR
+     OPEN DATABASE C:\VFP\SAMPLES\DATA\TESTDATA.DBC
+     USE C:\VFP\SAMPLES\DATA\PRODUCTS.DBF
+     GO TOP
+     PUBLIC DIMENSION oMyStruct(10)
+     FOR i=1 to 10
+         oMyStruct(i)=CREATEOBJECT("sMyStruct")
+         oMyStruct(i).Product_Name=PRODUCTS.Prod_name
+         oMyStruct(i).Engineer_Name=PRODUCTS.Eng_name
+         oMyStruct(i).Cost_Per_Unit=PRODUCTS.Unit_cost
+         DIMENSION oMyStruct(i).Inventory_Onorder_instock(2) &amp;&amp; Re-dimension
+         oMyStruct(i).Inventory_Onorder_instock(1)=PRODUCTS.On_order
+         oMyStruct(i).Inventory_Onorder_instock(2)=PRODUCTS.In_stock
+         ?oMyStruct(i).Product_Name
+         ?oMyStruct(i).Engineer_Name
+         ?oMyStruct(i).Cost_Per_Unit
+         ?oMyStruct(i).Inventory_Onorder_instock(1)
+         ?oMyStruct(i).Inventory_Onorder_instock(2)
+         SKIP
+     ENDFOR
+
+     DEFINE CLASS sMyStruct AS CUSTOM
+         Product_Name=''
+         Engineer_Name=''
+         Cost_Per_Unit=0
+         DIMENSION Inventory_Onorder_Instock(1) &amp;&amp; initial dimension is 1
+     ENDDEFINE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

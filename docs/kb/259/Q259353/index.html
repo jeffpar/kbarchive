@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259353: Must Enter Password Manually After You Toggle Password Sync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259353: Must Enter Password Manually After You Toggle Password Sync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259353/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259353/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259353/","publisher":null,"image":null,"headline":"Q259353: Must Enter Password Manually After You Toggle Password Sync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259353-must-enter-password-manually-after-you-toggle-password-sync">Q259353: Must Enter Password Manually After You Toggle Password Sync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259353
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 05-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Internet Information Server (IIS) version 4.0, when you clear the Enable
+Automatic Password Synchronization check box (or the Allow IIS to control
+password check box in IIS version 5.0), use the Browse button to browse to the
+IUSR_&lt;computer&gt; account, and then click to reselect the check box, the
+password field is blank and you must enter the password manually. However, when
+you just clear, select, and clear this setting, and you do not browse to the
+IUSR_&lt;computer&gt; account, the password field retains the entry, and you are
+not required to enter the password manually.
+In addition, if the password is not entered, the Event Viewer logs may contain
+the following error message:
+
+  The server was unable to logon the Windows NT account
+  'IUSR_&lt;machinename&gt;' due to the following error: Logon failure: unknown
+  user name or bad password.
+
+CAUSE
+=====
+
+By default, when in IIS you clear the Enable Automatic Password Synchronization
+or Allow IIS to control password check boxes, you are required to enter the
+password manually and anonymous authentication will fail until you do.
+
+MORE INFORMATION
+================
+
+The following information details what occurs when you choose whether you want
+IIS to control the anonymous user password:
+
+1. On a new installation of IIS, the following metabase entries are created:
+
+   - AnonymousPasswordSync = 1
+   - AnonymousUserName = "IUSR_&lt;COMPUTER&gt;"
+   - AnonymousUserPass = "&lt;Random Password&gt;"
+
+2. When you clear the Enable Automatic Password Synchronization or the Allow IIS
+  to control password check box, the AnonymousPasswordSync value is set to 0.
+  However, because the IIS metabase already contains the AnonymousUserPass
+  setting, you are not required to enter the password.
+
+3. When you next select the Enable Automatic Password Synchronization or the
+  Allow IIS to control password check box, IIS sets the AnonymousPasswordSync
+  setting to 1 and then deletes the AnonymousUserPass setting from the
+  metabase.
+
+4. When you clear the Enable Automatic Password Synchronization or the Allow IIS
+  to control password check box again, the AnonymousPasswordSync value is set
+  back to 0. However, because the metabase no longer contains the
+  AnonymousUserPass setting, you must enter the password manually.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q253204 PRB: Error Message: The Server Was Unable to Logon the Windows NT
+  Account IUSR_machinename
+
+  Q184730 Password Sync and IIS 4.0 Return FrontPage Error Message
+
+Additional query words: iis 5 4
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153060/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153060/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153060/","publisher":null,"image":null,"headline":"Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153060-xcln-undeliverable-msg-illegally-formatted-to-header-text">Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153060
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 02-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Exchange MS-DOS client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After sending a message to a CompuServe member, the user may receive the
+following message from "Electronic Postmaster POSTMASTER@CompuServe.COM:"
+
+  Subject:    Undeliverable message
+
+  Illegally formatted To: header text
+
+  ------- Returned Message --------
+
+  Sender: user@domain.com
+  Received: from router.domain.com (router.domain.com [IP_address]) by
+     arl-
+  img-1.compuserve.com (8.6.10/5.950515)
+     id LAA28247; Thu, 27 Jun 1996 11:25:49 -0400
+  Received: by router.domain.com with Microsoft Exchange (IMC 4.0.838.14)
+     id &lt;01BB6402.55C69350@ router.domain.com&gt;; Thu, 27 Jun 1996 08:26:27-
+  0700
+  Message-ID: &lt;c=US%a=_%p=domain%l=SERVER-960627152737Z-8201@
+     router.domain.com&gt;
+  From: Display Name &lt;user@DOMAIN.com&gt;
+  To: "'12345,6789@compuserve.com'" &lt;12345,6789@compuserve.com&gt;
+  Subject: Message Subject.
+  Date: Thu, 27 Jun 1996 08:27:37 -0700
+  Return-Receipt-To: &lt;user@DOMAIN.com&gt;
+  X-Mailer:  Microsoft Exchange Server Internet Mail Connector Version
+  4.0.838.14
+  Encoding: 0 TEXT
+
+CAUSE
+=====
+
+The e-mail address is not in the correct syntax. In this example, the CompuServe
+member's ID is "12345,6789." The comma is not an accepted character.
+
+RESOLUTION
+==========
+
+Substitute a period (.) for the comma. The following e-mail address syntax
+should be used:
+
+  12345.6789@compuserve.com
+
+Additional query words: CIS cserve
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange500DOS kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

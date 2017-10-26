@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58568: How to Use Customize Menu Command of Utility Menu in QBX.EXE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58568: How to Use Customize Menu Command of Utility Menu in QBX.EXE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58568/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58568/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58568/","publisher":null,"image":null,"headline":"Q58568: How to Use Customize Menu Command of Utility Menu in QBX.EXE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58568-how-to-use-customize-menu-command-of-utility-menu-in-qbxexe">Q58568: How to Use Customize Menu Command of Utility Menu in QBX.EXE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58568
+Product(s): See article
+Version(s): 7.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900118-14 | mspl13_basic
+Last Modified: 26-FEB-1990
+
+This article explains how to use the Customize Menu command in the
+Utility menu in the QBX.EXE (QuickBASIC Extended) environment. The
+Customize Menu command allows you to add your own DOS commands
+(internal, external, or batch files) to the Utility menu. This
+provides easy access to these commands rather than having to shell out
+to DOS and type them in at the command line prompt.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) Version 7.00 for MS-DOS.
+
+The following is a brief summary of the features of the Customize Menu
+dialog box:
+
+Applications List - A list of the DOS commands already included in the
+                    Utility menu.
+
+Add button        - Adds a new command to the Applications List. For
+                    details, see farther below.
+
+Edit button       - Edits the information associated with a command
+                    already in the Applications List.
+
+Delete button     - Deletes a command from the Applications List.
+
+To Begin button   - Puts the currently selected command at the top of
+                    the Applications List.
+
+To End button     - Puts the currently selected command at the bottom
+                    of the Applications List.
+
+Save button       - Saves all the changes made to the Applications
+                    List and closes the Customize Menu dialog box.
+
+Cancel button     - Cancels all the changes made to the Applications
+                    List and closes the Customize Menu dialog box.
+
+Help button       - Provides online help for using the Customize
+                    Menu command.
+
+The Customize Menu command in the Utility menu is a handy way to
+execute DOS-level commands from inside the QBX.EXE environment. It
+allows you to execute internal commands, external commands, and batch
+files by selecting a menu item with the keyboard or mouse. There is no
+need to shell out to DOS. When the command or batch file is finished,
+you can be prompted to "press any key to continue" or you can specify
+for QBX to reappear automatically.
+
+Adding, deleting, editing, and ordering commands in the Utility menu
+is very simple, and the discussion above should be adequate enough for
+every feature except the Add button, which is discussed below in
+detail.
+
+Add Button
+----------
+
+When selected, the Add button brings up another dialog box containing
+edit fields that are used to enter information about the command to be
+added. The following is a list of the edit fields and buttons of this
+dialog box and information about each one:
+
+Menu Text (20 chars) - Enter the name you want displayed in the
+                       Utility menu. This name will also appear in the
+                       Applications List. This may or may not be the
+                       name of the actual command.
+
+Pathname             - Enter the name of the command if it is internal
+                       or the full path to the file if it is external
+                       or a batch file. For example, "DIR" or
+                       "C:\CHKDSK".
+
+Arguments            - Enter the arguments passed to the command. For
+                       example, this may be "a:" if the command is
+                       "FORMAT" or "/w" if the command is "DIR", etc.
+
+Initial Directory    - Enter the name of the directory you want the
+                       command to operate in.
+
+Prompt Before        - Select this option if you want to be prompted
+Returning              with "press any key to continue" before control
+                       is returned to QBX.
+
+Accelerator Key      - Select the None button if you do not want to
+                       use an accelerator key or select the ALT+F
+                       button if you do. The values that may be
+                       entered into the box following ALT+F range from
+                       2 to 10, specifying the function keys F2
+                       through F10.
+
+OK button            - Select this button when you are satisfied with
+                       the information in the dialog box. The Add
+                       dialog box closes and the name of the new
+                       command is added to the Applications List.
+                       However, none of the changes to the Utility
+                       menu are saved unless the Save button is
+                       selected.
+
+Cancel button        - This button cancels the information entered in
+                       the edit fields and closes the Add dialog box.
+
+Help button          - This button displays more online help.
+
+Below is a step-by-step example illustrating how to use the Customize
+Menu command. This example shows how to add the DOS command "DIR" to
+the Utility menu. This DIR command operates on the current directory
+and uses the "/w" parameter to display the listing in many columns
+rather than one. Also, an accelerator key (ALT+F5) is linked to the
+command for easy keyboard access and the user is prompted to "press
+any key to continue" after the DIR command is finished.
+
+ 1. Choose Customize Menu from the Utility menu. This can be done by
+    holding down the ALT and U keys together, followed by the C key
+    alone.
+
+ 2. The Customize Menu dialog box appears. Press the TAB key once to
+    highlight the Add button and then press ENTER.
+
+ 3. Another dialog box appears, containing edit fields used to enter
+    information about the command. The cursor is placed in the top
+    edit field, "Menu Text (20 chars)." Type in "DIR" for this field
+    and press TAB.
+
+ 4. The cursor advances to the next edit field, "Pathname". Since DIR
+    is an internal command, it has no path, so you only need to enter
+    the name of the command by itself, "DIR". Do this and press TAB
+    again.
+
+ 5. The next edit field is "Arguments". A common argument to pass to
+    the DIR command is "/w".  The "/w" argument (called a switch)
+    breaks the directory listing into columns rather than listing them
+    in one long column, which frequently scrolls off the screen. Type
+    "/w" and press TAB.
+
+ 6. For the "Initial Directory" edit field, you can enter any valid
+    pathname. Leaving this field blank causes the command to use the
+    current pathname. Press TAB to leave it blank.
+
+ 7. The cursor is now placed inside the button titled "Prompt Before
+    Returning." You can press SPACEBAR to toggle this button on or
+    off. Toggle it on and press TAB.
+
+ 8. The cursor advances to the button titled "None". By default it is
+    also selected, specifying that no accelerator key is to be defined
+    for accessing the DOS command from the Utility menu. To enter an
+    accelerator key, press the RIGHT ARROW. This toggles the None
+    button off and the ALT+F button on. Press TAB to advance the
+    cursor to the edit field following the ALT+F button and enter a 5
+    (specifying F5). Press ENTER to continue.
+
+ 9. The current dialog box closes and the main Customize Menu dialog
+    box reappears. You will see that "DIR" has been added to the
+    Applications List. Press TAB until the Save button is highlighted,
+    then press ENTER.
+
+10. The Customize Menu dialog box closes. You can now choose the DIR
+    command from the Utility menu either by pulling down the menu and
+    then choosing DIR or you can use the accelerator key sequence,
+    ALT+F5. After displaying the contents of the current directory, you
+    will be prompted with "press any key to continue" before control is
+    returned to QBX.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

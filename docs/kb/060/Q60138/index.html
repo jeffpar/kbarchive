@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60138: Explanation and Example of the NMAKE.EXE Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60138: Explanation and Example of the NMAKE.EXE Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60138/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60138/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60138/","publisher":null,"image":null,"headline":"Q60138: Explanation and Example of the NMAKE.EXE Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60138-explanation-and-example-of-the-nmakeexe-utility">Q60138: Explanation and Example of the NMAKE.EXE Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60138
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900314-143 | mspl13_basic
+Last Modified: 20-JUL-1990
+
+Microsoft's NMAKE.EXE is a program-maintenance utility. It saves time
+by automating the process of updating project files. NMAKE compares
+the modification dates for one set of files, the target files, to
+those of another file type, the dependent files. If any of the
+dependent files have changed more recently than the target files,
+NMAKE executes a specified series of commands.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) version 7.00 for MS-DOS and MS OS/2.
+
+The main purpose of NMAKE is to help you update applications quickly
+and simply. However, it can execute any command, so it is not limited
+to compiling and linking. NMAKE can also make backups, move files, and
+do many other project management tasks.
+
+NMAKE works by comparing the times and dates of two sets of files,
+which are called "targets" and "dependents":
+
+ - A target file is a file that you want to create, such as an
+   executable file.
+
+ - A dependent file is a file used to create a target, such as a BASIC
+   source file.
+
+When you run NMAKE, it reads a "description file" that you supply. The
+description file consists of one or more blocks. Each block lists a
+target, the target-dependents, and the command that builds the target.
+If any dependent has changed more recently than the target, NMAKE
+updates the target by executing the command listed in the block.
+
+You can invoke NMAKE with the following two options:
+
+1. Specify options, macro definitions, and the names of targets to be
+   built on the DOS or OS/2 command line.
+
+2. Specify options, macro definitions, and the names to be built in a
+   command file, and give the filename on the DOS command line.
+
+NMAKE accepts a number of command-line options, which are described in
+detail in the Microsoft programmer's guide in Chapter 20.
+
+NMAKE reads a description file (text file, saved as text only with
+line breaks) to determine what to do. The description file may contain
+any number of description blocks.
+
+For example, if you have the following three source files that are
+part of the same program
+
+   MAIN.BAS
+   FILE1.BAS
+   FILE2.BAS
+
+and if the files through the program-development process need to be
+updated, you would use NMAKE. First, you create the description file
+that will contain the description blocks, as follows:
+
+#####################COMPILE.MAK##########################
+
+    ALL: Sample.exe
+    main.obj: main.bas      #target : dependent
+       BC main.bas;         #command field: any DOS command
+    file1.obj: file1.bas        #line
+       BC file1.bas;
+    file2.obj: file2.bas
+       BC file2.bas;
+    files.lib: file1.obj file2.obj
+       LIB files.lib file1.obj + file2.obj
+
+    sample.exe: main.obj files.lib
+       LINK main.obj + files.lib, sample.exe;
+
+##########################################################
+
+Then, you invoke NMAKE. The syntax for invoking NMAKE is as follows:
+
+   NMAKE  COMPILE.MAK
+
+Code Example
+------------
+
+MAIN.BAS
+--------
+
+PRINT "We are in the Main Program"
+CALL file1
+CALL file2
+PRINT "We are DONE!!"
+
+FILE1.BAS
+---------
+
+PRINT "We are in FILE1.BAS "
+SUB file1
+  PRINT "We are in the sub of file1.bas"
+END SUB
+
+FILE2.BAS
+---------
+
+PRINT "We are in FILE2.BAS"
+
+SUB file2
+  PRINT "We are in the sub of file2.bas"
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

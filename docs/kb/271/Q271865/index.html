@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271865: PRB: Error Message &quot;0x8009000F = Object Already Exists&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271865: PRB: Error Message &quot;0x8009000F = Object Already Exists&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271865/","publisher":null,"image":null,"headline":"Q271865: PRB: Error Message &quot;0x8009000F = Object Already Exists&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271865-prb-error-message-0x8009000f--object-already-exists">Q271865: PRB: Error Message "0x8009000F = Object Already Exists"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271865
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While attempting to reinstall Internet Information Services (IIS) 5.0 the
+following error message occurs:
+
+  Error writing Encryption data to Web Services Configuration database
+  (metabase). 0x8009000F=Object Already Exists.
+
+CAUSE
+=====
+
+This problem has been seen after the installation of PCAnywhere.
+
+RESOLUTION
+==========
+
+To resolve the problem, use these steps:
+
+1. Remove IIS (by using Add/Remove Programs in Control Panel).
+
+2. Using Windows Explorer, change to the following directory:
+
+   - If the Windows installation is an upgrade navigate to:
+
+  %windir%\Profiles\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys
+
+   - If the Windows installation is a new installation navigate to:
+
+  %system root%\Documents and Settings\All Users\Application
+  Data\Microsoft\Crypto\RSA\MachineKeys
+
+NOTE: Files in this directory are hidden. To view this folder and files, select
+the Show hidden files and folders option button in Folder Options.
+
+3. Copy all the files in the MachineKeys directory to another location (to back
+  them up).
+
+4. Delete all the files from the MachineKeys directory except the newest one
+  (and not the backups!).
+
+NOTE: If you are unable to delete any of these files, try taking ownership of
+this directory. To do this, follow these steps:
+
+  a. Right-click the MachineKeys folder.
+
+  b. Click Properties.
+
+  c. Click the Security tab.
+
+  d. Click Advanced.
+
+  e. Click the Owner tab.
+
+  f. Highlight the Administrators group to change the owner.
+
+  g. Select Replace owner on subcontainers and objects.
+
+  h. Click OK.
+
+5. Look for the following folder:
+
+  %systemroot%\system32\Microsoft\Crypto\RSA\MachineKeys
+
+If this folder exists, repeat steps 3 and 4 on this folder.
+
+6. Restart the computer.
+
+7. Install IIS (by using Add/Remove Programs in Control Panel).
+
+REFERENCES
+==========
+
+For additional information about setting the correct NTFS rights on the
+MachineKeys directory, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q246459 Error Message: Unable to Enumerate Web Sites because the Following
+  Error Occurred: Object Already Exists
+
+For more information, see the following Knowledge Base article:
+
+  Q282775 'Error Writing Encrypted Data' Error During IIS 5.0 Installation
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

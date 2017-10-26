@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142879/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142879/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142879/","publisher":null,"image":null,"headline":"Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142879-howto-set-up-directory-annotation-for-internet-server-ftp">Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142879
+Product(s): Internet Information Server
+Version(s): winnt:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 1.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to set up directory annotation for Internet Server
+FTP.
+
+MORE INFORMATION
+================
+
+Directory Annotation Files
+--------------------------
+
+You can add directory descriptions to inform FTP users of the contents of
+directories on the server.
+
+Use the following steps to annotate files:
+
+1. Create a file named ~ftpsvc~.ckm in the directory to be annotated. Using an
+  editor, create the information to be displayed.
+
+2. In the Windows NT File Manager, select the file, and make it a hidden file,
+  so directory listings do not display this file.
+
+Directory annotation can be toggled by FTP users on a user-by-user basis with a
+built-in, site-specific command called ckm. This will vary depending on the FTP
+client used. For a Microsoft FTP client, the command "literal SITE CKM" will
+toggle annotations for the FTP client on or off.
+
+To change the FTP Server service configuration in the Registry:
+
+1. Edit the Windows NT Registry with Regedt32.exe. When the Registry Editor
+  window appears, you can press F1 to get Help on how to make changes in the
+  Registry Editor.
+
+2. In Registry Editor, click the window titled HKEY_LOCAL_MACHINE on the local
+  machine, and then click the icons for the SYSTEM subtree until you reach the
+  following subkey:
+
+  ..\SYSTEM\CurrentControlSet\Services\msftpsvc\Parameters
+
+All of the parameters described here are found under the preceding Registry
+subkey. This value of this Registry subkey does not appear by default in the
+Registry, so you must add an entry if you want to change its default value.
+
+  AnnotateDirectories
+
+  Data type = REG_DWORDRange = 0 or 1   Default = 0 (false -- that
+  is, directory annotation is off).
+
+The preceding value defines the default behavior of directory annotation for
+newly connected users. Directory descriptions are used to inform FTP users of
+the contents of a directory on the server. The directory description is saved in
+a file named ~ftpsvc~.ckm, which is usually a hidden file. When this value is 1,
+directory annotation is enabled.
+
+Additional query words: prodiis 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch
+Version           : winnt:1.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

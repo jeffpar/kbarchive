@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193846: HOWTO: Modify the Process Priority of a Shelled Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193846: HOWTO: Modify the Process Priority of a Shelled Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193846/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193846/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193846/","publisher":null,"image":null,"headline":"Q193846: HOWTO: Modify the Process Priority of a Shelled Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193846-howto-modify-the-process-priority-of-a-shelled-application">Q193846: HOWTO: Modify the Process Priority of a Shelled Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193846
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A process' priority determines how its execution is scheduled by the Win32
+kernel. Processes with a higher priority execute more quickly than processes
+with a lower priority. This article describes how to modify the Process priority
+of a shelled application.
+
+MORE INFORMATION
+================
+
+Win32 supports the following four priority classes:
+
+- Idle
+- Normal
+- High
+- Realtime
+
+Idle is the correct priority for system-monitoring applications or screen
+savers.
+
+Normal priority class is the default, indicating a process with no special
+scheduling needs.
+
+High priority indicates a process that performs time-critical tasks requiring
+immediate execution for it to run correctly. The threads of a high-priority
+class process preempt the threads of normal or idle priority class processes. An
+example is the Windows Task List, which must respond quickly when called by the
+user, regardless of the load on the operating system. Use extreme care when
+using the high-priority class, because a high- priority class CPU-bound
+application can use almost all available cycles.
+
+The Realtime priority indicates a process that has the highest possible priority.
+The threads of a real-time priority class process preempt the threads of all
+other processes, including operating system processes performing important
+tasks. For example, a real-time process that executes for more than a very brief
+interval can cause disk caches not to flush or cause the mouse to be
+unresponsive. This priority should almost never be used.
+
+The process' priority is set by assigning one of the parameters of the
+CreateProcess API call.
+
+The following example demonstrates running the Windows NOTEPAD application under
+Windows NT using an idle priority. The process priority is controlled by the
+'dwCreationFlags' variable passed to CreateProcess(). DEFINEs for the four
+supported priority classes are listed at the top of the sample program.
+
+Once Notepad.exe is running, to examine the priority, start the Windows NT Task
+Manager, select the Processes tab, right-click Notepad.exe and select 'Set
+Priority' from the pop-up menu.
+
+The fully qualified pathname to Notepad.exe may need modification in the
+assignment statement of variable 'File2Run'.
+
+Sample Code
+-----------
+
+  
+
+     #DEFINE NORMAL_PRIORITY_CLASS 32
+     #DEFINE IDLE_PRIORITY_CLASS 64
+     #DEFINE HIGH_PRIORITY_CLASS 128
+     #DEFINE REALTIME_PRIORITY_CLASS 1600
+
+     DECLARE INTEGER CreateProcess IN kernel32.DLL ;
+        INTEGER lpApplicationName, ;
+        STRING lpCommandLine, ;
+        INTEGER lpProcessAttributes, ;
+        INTEGER lpThreadAttributes, ;
+        INTEGER bInheritHandles, ;
+        INTEGER dwCreationFlags, ;
+        INTEGER lpEnvironment, ;
+        INTEGER lpCurrentDirectory, ;
+        STRING @lpStartupInfo, ;
+        STRING @lpProcessInformation
+
+     DECLARE INTEGER GetLastError IN kernel32.DLL
+
+     * Startup info is 68 bytes, of which we need to
+     * initially populate the 'cb' or Count of Bytes member
+     * with the overall length of the structure.
+     * The remainder should be 0-filled.
+     START = long2str(68) + REPLICATE(CHR(0), 64)
+
+     * PROCESS_INFORMATION structure is 4 longs,
+     * or 4*4 bytes = 16 bytes, which we'll initially zero.
+     process_info = REPLICATE(CHR(0), 16)
+
+     * Start a copy of NOTEPAD (EXE name must be null-terminated)
+     File2Run = "C:\WINNT\NOTEPAD.EXE" + CHR(0)
+
+     * Call CreateProcess, obtain a process handle. Treat the
+     * application to run as the 'command line' argument, accept
+     * all other defaults. Important to pass the start and
+     * process_info by reference.
+     RetCode = CreateProcess(0, File2Run, 0, 0, 1, ;
+        IDLE_PRIORITY_CLASS, 0, 0, @START, @process_info)
+
+     * Unable to run, exit now.
+     IF RetCode = 0
+        =MESSAGEBOX("Error occurred. Error code: ", GetLastError())
+        RETURN
+     ENDIF
+
+     ********************
+     FUNCTION long2str
+     ********************
+     * passed : 32-bit non-negative numeric value (m.longval)
+     * returns : ascii character representation of passed
+     *    value in low-high format (m.retstr)
+     * example :
+     *   m.long = 999999
+     *   m.longstr = long2str(m.long)
+     PARAMETERS m.longval
+
+     PRIVATE i, m.retstr
+
+     m.retstr = ""
+     FOR i = 24 TO 0 STEP -8
+        m.retstr = CHR(INT(m.longval/(2^i))) + m.retstr
+        m.longval = MOD(m.longval, (2^i))
+     NEXT
+     RETURN m.retstr
+
+REFERENCES
+==========
+
+"Advanced Windows", Jeffrey Richter, Microsoft Press, pages 92-103, Third
+Edition 1997, ISBN: 1-57231-548-2
+
+Additional query words: kbVFp600 kbAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

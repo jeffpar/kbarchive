@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94891/","publisher":null,"image":null,"headline":"Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94891-using-memmaker-with-ms-dos-multiple-configuration-menus">Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94891
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can use MemMaker with multiple configurations, but doing so requires that
+you create separate configuration files to run MemMaker. The "MS-DOS User's
+Guide" for version 6.0 and 6.2 explains this procedure in detail in Chapter 6
+(pages 151 to 154).
+
+This article explains why these separate configuration files are necessary.
+
+MORE INFORMATION
+================
+
+MemMaker removes all references to memory managers, the FILES= statement, the
+BUFFERS= statement, and the DOS= statement. It then adds the following
+statements at the top of the CONFIG.SYS file:
+
+        DEVICE=C:\DOS\HIMEM.SYS
+     DEVICE=C:\DOS\EMM386.EXE &lt;settings&gt;
+     buffers=&lt;setting&gt;
+     files=&lt;setting&gt;
+     dos=umb
+     lastdrive=&lt;setting&gt;
+     FCBS=&lt;setting&gt;
+     [Everything else remains in the same order]
+
+NOTE: The &lt;setting&gt; and &lt;settings&gt; are determined by MemMaker for
+your specific installation and configuration.
+
+Because of this design, MemMaker cannot work with configuration files containing
+Multi-Config sections that reference multiple memory managers or have different
+memory configurations.
+
+MemMaker also uses a program called SIZER.EXE to determine memory requirements
+for device drivers and terminate-and-stay-resident (TSR) programs. MemMaker
+analyzes the contents of the entire CONFIG.SYS and AUTOEXEC.BAT files
+(regardless of Multi-Config headings) to calculate the optimum memory
+configuration for your system. Because the files are viewed as a single unit,
+each individual configuration will not be optimized after you run MemMaker.
+
+Additional query words: 6.22 6.00 6.20 MULTICONFIG
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

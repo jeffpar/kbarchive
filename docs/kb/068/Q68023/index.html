@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68023: BC &quot;Internal Error&quot; with Array of TYPE Using Array of STRING*1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68023: BC &quot;Internal Error&quot; with Array of TYPE Using Array of STRING*1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68023/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68023/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68023/","publisher":null,"image":null,"headline":"Q68023: BC &quot;Internal Error&quot; with Array of TYPE Using Array of STRING*1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68023-bc-internal-error-with-array-of-type-using-array-of-string1">Q68023: BC "Internal Error" with Array of TYPE Using Array of STRING*1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68023
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S901222-1 buglist7.00 buglist7.10 | mspl13_basic
+Last Modified: 9-JAN-1991
+
+The following code example demonstrates a problem using an array of
+user-defined TYPE variables that contain an array of fixed-length
+strings of length one. The BC.EXE compiler incorrectly gives the
+message "BC : Internal Error near XXXX" when compiling this example.
+The QBX.EXE environment compiles the same example without error.
+
+This problem applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2. We are
+researching this problem and will post new information here as it
+becomes available.
+
+Code Sample
+-----------
+
+'$DYNAMIC
+TYPE rectype
+  a(10) AS STRING * 1
+END TYPE
+DIM b(10) AS rectype
+byte% = 0
+10 b(1).a(byte%) = "a"
+
+Save the file as TEST.BAS and then attempt to compile with BC.EXE
+using the following command line:
+
+   BC TEST;
+
+The compiler will issue the "Internal Error" message.
+
+The error occurs only if ALL the following conditions are met:
+
+1. The array b() is dynamic.
+
+2. The second array element in line 10 is referenced with a
+   variable.
+
+3. The fixed-length string in the TYPE is of length one (STRING * 1).
+
+4. The program is compiled without run-time error checking (without
+   the BC /D option).
+
+To work around this problem, just counteract any one of the above
+conditions, using one of the following four suggested workarounds:
+
+1. Make the array b() static. For example, if you add the '$STATIC
+   metacommand before the DIM as follows, the program will compile
+   correctly:
+
+      '$STATIC
+      DIM b(10) AS rectype
+      '$DYNAMIC
+
+2. Reference the second element in line 10 with a constant instead of
+   a variable.
+
+3. Use STRING * 2 or a longer length.
+
+4. Compile with the BC /D option.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

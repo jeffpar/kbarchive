@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q313220: PRB: Unexpected Connections to SQL Server with JDBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q313220: PRB: Unexpected Connections to SQL Server with JDBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/313/Q313220/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/313/Q313220/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/313/Q313220/","publisher":null,"image":null,"headline":"Q313220: PRB: Unexpected Connections to SQL Server with JDBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q313220-prb-unexpected-connections-to-sql-server-with-jdbc">Q313220: PRB: Unexpected Connections to SQL Server with JDBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q313220
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 
+Operating System(s): 
+Keyword(s): kbJDBC kbDSupport kbSQLServ2000 kbSQLServSearch kbAudDeveloper kbSystemData
+Last Modified: 05-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SQL Server 2000 Driver for JDBC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use multiple JDBC statements on a single connection, you may see
+multiple connections implicitly created by the Microsoft SQL Server 2000 Driver
+for JDBC.
+
+CAUSE
+=====
+
+If you open your database connection with the SelectMethod property set to
+Direct (the default setting), only one statement at a time can be active on the
+connection. When you create a second statement, the driver implicitly opens a
+new connection to handle the new result set.
+
+RESOLUTION
+==========
+
+The following two methods prevent implicit connections:
+
+- Close all open statements that are no longer needed.
+
+- Set the SelectMethod property to Cursor in your connection string.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+The following code demonstrates a scenario where the driver creates an implicit
+connection:
+
+  Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver" );
+  Connection conn = DriverManager.getConnection("jdbc:microsoft:sqlserver://myServer:1433;databasename=pubs;SelectMethod=direct","myUser","myPassword");
+  			
+  Statement stmt1 = conn.createStatement();
+  stmt1.execute("INSERT INTO myTable1 (col1) VALUES (1)");
+  //stmt1.close();  //Uncomment this line to prevent the implicit connection.
+  			
+  Statement stmt2 = conn.createStatement();
+  stmt2.execute("INSERT INTO myTable2 (col1) VALUES (2)");
+  //stmt2.close(); //Good practice to clean up after each statement.
+  			
+  conn.close();
+
+An INSERT statement is used in the example, but the contents of the SQL statement
+that is used is not important. If you use a tool such as SQL Profiler to observe
+the connections that are made to the SQL Server, you notice that as soon as the
+second statement is created, the implicit connection is made.
+
+REFERENCES
+==========
+
+For complete details on the SelectMethod property, see the documentation for the
+Microsoft SQL Server 2000 Driver for JDBC.
+
+Additional query words: extra excessive
+
+======================================================================
+Keywords          : kbJDBC kbDSupport kbSQLServ2000 kbSQLServSearch kbAudDeveloper kbSystemData 
+Technology        : kbAudDeveloper kbSQLServ2000Search kbSQLServJDBC
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

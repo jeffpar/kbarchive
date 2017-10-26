@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107218: IBM SDLC and Token Ring Adapter Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107218: IBM SDLC and Token Ring Adapter Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107218/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107218/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107218/","publisher":null,"image":null,"headline":"Q107218: IBM SDLC and Token Ring Adapter Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107218-ibm-sdlc-and-token-ring-adapter-notes">Q107218: IBM SDLC and Token Ring Adapter Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107218
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0
+Operating System(s): 
+Keyword(s): kbhw kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbHardware
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The IBM SDLC, MPCA and Token Ring adapters may cause interrupt or shared memory
+conflicts.
+
+MORE INFORMATION
+================
+
+The following information appears in the SNA Server Administration Guide.
+
+NOTE: This information was also included in the README.TXT for early SNA Server
+2.x versions.
+
+Device drivers provided by SNA Server report any interrupt, port address, or DMA
+conflicts they detect to the Windows NT System Event log.
+
+If you are using an IBM SDLC or MPCA card in an ISA or EISA bus system, you
+should do the following:
+
+- Disable SERIAL.SYS (which is enabled by default) to prevent an interrupt
+  conflict. To do this, use the Devices option in the Windows NT Control Panel.
+
+- Disable any COM ports that use interrupts that conflict with the IBM SDLC
+  adapters. This is normally done through EISA configuration programs, CMOS
+  setup programs, or jumpers on the motherboard.
+
+The IBM SDLC adapter has a known hardware conflict with the Microsoft Windows
+Sound System adapter--both attempt to use the same I/O address on the bus, which
+makes these adapters incompatible on the same PC. The Sound System adapter must
+be removed from the PC in order for the IBM SDLC adapter to work.
+
+If you are using an IBM token ring adapter in an ISA or EISA bus system, you
+should do the following:
+
+- By default, Windows NT loads PARALLEL.SYS during initialization. To avoid
+  interrupt conflicts between PARALLEL.SYS and IBMTOK.SYS, the IBM Token Ring
+  device driver, be sure to choose an interrupt other than 7 on your IBM Token
+  Ring card, or disable the Parallel driver services by using the Devices
+  option in the Windows NT Control Panel.
+
+- Disable any parallel ports that use interrupts that conflict with the IBM
+  Token Ring cards. This is normally done through EISA configuration programs,
+  CMOS setup programs, or jumpers on the motherboard.
+
+Additional query words: prodsna wss
+
+======================================================================
+Keywords          : kbhw kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbHardware 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

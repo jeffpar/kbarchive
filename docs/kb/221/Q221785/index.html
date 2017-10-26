@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221785: Encarta: Error Messages Displayed While Setup Updates Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221785: Encarta: Error Messages Displayed While Setup Updates Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221785/","publisher":null,"image":null,"headline":"Q221785: Encarta: Error Messages Displayed While Setup Updates Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221785-encarta-error-messages-displayed-while-setup-updates-computer">Q221785: Encarta: Error Messages Displayed While Setup Updates Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221785
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbsetup kbimu
+Last Modified: 09-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta Encyclopedia 99 
+- Microsoft Encarta Reference Suite 99 
+- Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install any of the programs listed at the beginning of this article,
+the following message is displayed on the screen:
+
+  Please wait while Setup updates your computer...
+
+While this message is displayed on the screen, you may receive one of the
+following error messages:
+
+Microsoft Encarta Encyclopedia 99
+---------------------------------
+
+  Microsoft Visual C++ Runtime Library
+
+  Runtime Error!
+  Program: E:\EE\SETUP.EXE
+  Abnormal Program Termination
+
+Microsoft Encarta Reference Suite 99
+------------------------------------
+
+  Encarta Reference Suite 99 Setup Complete
+
+  One or more errors were encountered during Setup. Setup did not complete
+  sucessfully.
+
+Microsoft Encarta Virtual Globe 99
+----------------------------------
+
+  Microsoft Visual C++ Runtime Library
+
+  Runtime Error!
+  Program: E:\EVG\SETUP.EXE
+  Abnormal Program Termination
+
+CAUSE
+=====
+
+This behavior can occur if the System.ini file has been marked with the
+Read-only attribute.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "system.ini" (without the quotation marks) and then
+  click Find Now.
+
+3. Right-click the System.ini file located in the Windows folder, and then click
+  Properties.
+
+4. Click to clear the Read-only check box, and then click OK.
+
+5. Close the Find: Files Named System.ini window, and then restart your
+  computer.
+
+
+Additional query words: 1.00 multi multi-media media mm enc99 evg99
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99 kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

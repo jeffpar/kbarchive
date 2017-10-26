@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241241: INF: Using DTS With Custom ATL OLE-DB Providers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241241: INF: Using DTS With Custom ATL OLE-DB Providers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241241/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241241/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241241/","publisher":null,"image":null,"headline":"Q241241: INF: Using DTS With Custom ATL OLE-DB Providers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241241-inf-using-dts-with-custom-atl-ole-db-providers">Q241241: INF: Using DTS With Custom ATL OLE-DB Providers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241241
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0,7.0
+Operating System(s): 
+Keyword(s): kbSQLServ700
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft SQL Server version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual C++ 6.0 provides the ability to create custom OLE-DB providers with the
+Active Template Library (ATL) Provider Templates. However, the default
+implementation of these providers does not work with the Data Transformation
+Services (DTS) provided by SQL Server 7.0.
+
+This article describes the steps and required interfaces necessary to enable a
+custom ATL OLE-DB provider to work with DTS. The steps described herein concern
+the use of DTS through the DTS Designer and DTS Wizard. For direct programmatic
+access to the DTS Package and DTS DataPump, the requirements for interface
+support vary according to what operations are attempted and are outside the
+scope of this article.
+
+MORE INFORMATION
+================
+
+First, the following articles should be used with an ATL Provider to ensure that
+the provider is working correctly before continuing:
+
+  Q198520 BUG: ATL OLE DB Provider Fails When Called from SQL 7.0 Query
+
+  Q198921 FIX: Visual C++ ATL Provider Fails when Used with SQL DTS
+
+  Q200921 PRB: OpenQuery with ATL Provider Fails When Set Up with SEM
+
+General Provider Problems:
+
+ODBC Drivers
+Use of ODBC Drivers is provided by the OLEDB Provider for ODBC (MSDASQL), which
+requires that the ODBC Driver be at least ODBC version 2.5 compliant.
+
+Non-Thread Safe Providers
+DTS prompts each driver to determine if it is thread safe. When the driver
+reports it is thread safe, DTS attempts multiple simultaneous connections to it
+for parallelism. Some drivers report they are thread safe, when they are not. To
+force a package to run all steps on a single thread use the following Visual
+Basic code sample:
+
+  Public Sub ChangeAllStepsToRunOnMainThread(oPkg As DTS.Package)
+      Dim nStepCount As Integer
+      For nStepCount = 1 To oPkg.Steps.Count
+          oPkg.Steps(nStepCount).ExecuteInMainThread = True
+      Next nStepCount
+  End Sub
+
+
+Lack of Support for Service Components
+Some drivers fail when executed as a step due to the driver's failure to properly
+handle service components. Change the package properties to turn off OLEDB
+service components.
+
+
+Driver Error Messages
+SQL Server 7.0 service pack 1 (SP1) addresses some issues with DTS not correctly
+returning error messages from the provider. It also adds some additional
+information in the error message on what step was being executed when the
+failure occurred, as most providers do not give an error message.
+
+An error message in the wizard of "a critical error occurred" means that the
+driver generated an exception but DTS handled the exception.
+
+
+Required Interfaces:
+
+For DTS to fully support the custom ATL OLE-DB provider the following interfaces
+must be implemented:
+
+- IAccessor: Implemented in the IAccessorImplBase and IAccessorImpl templates.
+
+- IColumnsInfo: Implemented in the IColumnsInfoImpl template.
+
+- IDBCreateSession: Implemented in the IDBCreateSessionImpl template.
+
+- IDBInfo: This interface is not implemented in ATL.
+
+- IDBInitialize: Implemented in the IDBInitializeImpl template.
+
+- IDBProperties: Implemented in the IDBPropertiesImpl template.
+
+- IOpenRowset: Implemented in the IOpenRowsetImpl template.
+
+- IRowset: Implemented in the IRowsetImpl template.
+
+- ISessionProperties: Implemented in the ISessionPropertiesImpl template.
+
+- IDBSchemaRowset: Implemented in the IDBSchemaRowsetImpl template. These are
+  the schemas DTS may request:
+
+  DBSCHEMA_PROVIDER_TYPES: This is the only one that MUST be supported.
+  DBSCHEMA_TABLES
+  DBSCHEMA_CATALOGS
+  DBSCHEMA_PRIMARY_KEYS
+  DBSCHEMA_FOREIGN_KEYS
+  DBSCHEMA_INDEXES
+  DBSCHEMA_TABLE_CONSTRAINTS
+  DBSCHEMA_CHECK_CONSTRAINTS
+
+Required Properties:
+
+- DataSource: Implemented in the IGetDataSourceImpl template
+
+Optional Interfaces:
+
+The following interfaces are optional but provide for the full experience with
+DTS:
+
+- IDBCreateCommand: Implemented in the IDBCreateCommandImpl template. Used for
+  creating table(s)/queries and so forth.
+
+- ICommandText: Implemented in the ICommandTextImpl and ICommandImpl templates.
+  Used for creating table(s)/queries and so forth.
+
+- ICommandPrepare: This interface is not implemented in ATL. Used for creating
+  table(s)/queries and so forth.
+
+- ICommandWithParameters: This interface is not implemented in ATL. Used for
+  Data Driven queries.
+
+- ITransactionJoin: This interface is not implemented in ATL. Used by DTS
+  Package to support transactions across steps.
+
+- IRowsetChange: This interface is not implemented in ATL. Used by DTS to
+  support changes to the recordset including inserts, updates or deletes. This
+  interface is not required if the provider will only be used as a source of
+  data.
+
+Additional query words: VC SEM Designer task package
+
+======================================================================
+Keywords          : kbSQLServ700 
+Technology        : kbVCsearch kbSQLServSearch kbAudDeveloper kbSQLServ700 kbVC600 kbVC32bitSearch
+Version           : winnt:6.0,7.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

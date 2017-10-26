@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156299: STL Sample for the find_if Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156299: STL Sample for the find_if Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156299/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156299/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156299/","publisher":null,"image":null,"headline":"Q156299: STL Sample for the find_if Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156299-stl-sample-for-the-find_if-function">Q156299: STL Sample for the find_if Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156299
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): _IK
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the find_if STL function in Visual
+C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+  &lt;algorithm&gt;
+   
+
+Prototype
+---------
+
+     template&lt;class InputIterator, class T, class Predicate&gt; inline
+              InputIterator find_if(InputIterator first,
+                                    InputIterator last,
+                                    Predicate predicate)
+
+NOTE: The class/parameter names in the prototype do not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The find_if algorithm locates the first element in the range [first, last) that
+causes the predicate to return true and returns the iterator positioned at that
+element, or last if no such element was found.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // findif.cpp : Illustrates how to use the find_if function.
+  // 
+  // Functions:
+  // 
+  //   find_if  - locate the first element in a range that satisfies
+  //              a predicate.
+  // 
+  // Written by Kalindi Sanghrajka
+  // of Microsoft Product Support Services,
+  // Software Core Developer Support.
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  // disable warning C4786: symbol greater than 255 character,
+  // okay to ignore
+  #pragma warning(disable: 4786)
+
+  #include &lt;algorithm&gt;
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  // returns true if n is an odd number
+  int IsOdd( int n)
+  {
+      return n % 2 ;
+  }
+
+  void main()
+  {
+      const int ARRAY_SIZE = 8 ;
+      int IntArray[ARRAY_SIZE] = { 1, 2, 3, 4, 4, 5, 6, 7 } ;
+      int *location ;   // stores the position of the first
+                        // element that is an odd number
+      int i ;
+
+          // print content of IntArray
+      cout &lt;&lt; "IntArray { " ;
+      for(i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; IntArray[i] &lt;&lt; ", " ;
+      cout &lt;&lt; " }" &lt;&lt; endl ;
+
+      // Find the first element in the range [first, last -1 ]
+      // that is an odd number
+      location = find_if(IntArray, IntArray + ARRAY_SIZE, IsOdd) ;
+
+      //print the location of the first element
+      // that is an odd number
+      if (location != IntArray + ARRAY_SIZE)  // first odd element found
+          cout &lt;&lt; "First odd element " &lt;&lt; *location
+               &lt;&lt; " is at location " &lt;&lt; location - IntArray &lt;&lt; endl;
+      else         // no odd numbers in the range
+          cout &lt;&lt; "The sequence does not contain any odd numbers"
+               &lt;&lt; endl ;
+      }
+
+Output:
+
+IntArray { 1, 2, 3, 4, 4, 5, 6, 7, }
+
+First odd element 1 is at location 0
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL count_if
+
+======================================================================
+Keywords          : _IK 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

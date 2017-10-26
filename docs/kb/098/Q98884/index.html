@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98884/","publisher":null,"image":null,"headline":"Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98884-recover-from-20cleancmd-when-upgrading-from-lan-man-21">Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98884
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+When upgrading from LAN Manager 2.1 to LAN Manager 2.1a or LAN Manager 2.2, DO
+NOT run the 20CLEAN.CMD program. The Read Me First instructions in the LAN
+Manager 2.1a package are incorrect: step 4 applies only if you are upgrading
+from 2.0 to 2.1a. If you do run 20CLEAN.CMD, this error results when the attempt
+is made to detach LAN Manager:
+
+  Error in SETUP.INF
+
+MORE INFORMATION
+================
+
+The 20CLEAN.CMD file copies newer versions of the following files to your LAN
+Manager root directory (C:\LANMAN by default):
+
+  BACKACC.EXE
+  SETUP.EXE
+  ACLAPI.DLL
+
+If you have already run 20CLEAN.CMD, you need to get your LAN Manager 2.1 OS/2
+Setup disk and copy the file A:\SETUP.EXE to your c:\&lt;lanroot&gt; directory
+(C:\LANMAN by default). This will allow you to run Setup from your lanroot and
+detach the LAN Manager installation. After this step, you must continue with the
+rest of the upgrade instructions.
+
+Additional query words: 2.10a 2.1a 2.20 2.2 upgrade doc err ntdocerr
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

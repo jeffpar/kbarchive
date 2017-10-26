@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143207: PRB: Common Problems When Using STL with STD Namespace | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143207: PRB: Common Problems When Using STL with STD Namespace" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143207/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143207/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143207/","publisher":null,"image":null,"headline":"Q143207: PRB: Common Problems When Using STL with STD Namespace","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143207-prb-common-problems-when-using-stl-with-std-namespace">Q143207: PRB: Common Problems When Using STL with STD Namespace</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143207
+Product(s): Microsoft C Compiler
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Case One
+--------
+
+When compiling a file that uses the Standard Template Library (STL), you may see
+the following warning and error when using the std namespace, which is required
+when using the STL with MFC:
+
+  {stl directory}\iterator.h(65) : warning C4114: same type qualifier
+  used more than once
+
+  {stl directory}\defalloc.h(124) : error C2661: 'new' : no overloaded
+  function takes 2 parameters
+
+Case Two
+--------
+
+In addition, you may get this different set of errors:
+
+  {include directory}\new.h(80) : error C2061: syntax error : identifier
+  'THIS_FILE'
+
+  {include directory}\new.h(80) : error C2091: function returns function
+
+  {include directory}\new.h(80) : error C2809: 'operator new' has no formal
+  parameters#endif
+
+  {include directory}\new.h(80) : error C2065: 'ptr' : undeclared identifier
+
+Case Three
+----------
+
+Once the previous two cases are resolved, you may get link errors. The errors you
+may receive take this form:
+
+  error LNK2001: unresolved external symbol "SymbolName"
+
+Here SymbolName is a C Run-Time (CRT) symbol prefaced by the std:: namespace
+name.
+
+RESOLUTION
+==========
+
+Warning C4114 is superfluous and can be ignored. You can disable the warning by
+using a '#pragma warning' directive. Error C2661 requires that you include New.h
+in your source file.
+
+The second set of errors occurs if you add the STL include directive after the
+following definitions and do not include New.h among your include directives:
+
+     #ifdef _DEBUG
+     #define new DEBUG_NEW
+     #undef THIS_FILE
+     static char THIS_FILE[] = __FILE__;
+     #endif
+
+Including New.h will work around this problem as well. Note that these
+definitions are no longer necessary in MFC code and can be deleted.
+
+The third set of errors from the linker can be resolved by including the
+appropriate header files from the CRT above the declaration for the std
+namspace. You can determine which header file must be included by looking at the
+symbol listed in the linker error. Remove the leading std:: from the symbol, and
+then search for the symbol in the CRT header files. This file was included by
+the STL headers. You need to include this header explicitly before the namespace
+declaration. In the Case Three Sample Code section in this article, you can see
+Iostream.h is the header that must be included at global scope.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduces Behavior Described in Case One
+--------------------------------------------------------
+
+     /* Compile options needed: none
+     */ 
+
+     //#include &lt;new.h&gt;   // Required to avoid C2661 error.
+
+     namespace std {
+     #include &lt;vector.h&gt;
+     }
+
+     std::vector&lt;char&gt; test;
+
+Sample Code to Reproduces Behavior Described in Case Two
+--------------------------------------------------------
+
+     /* Compile options needed: /c /D_DEBUG /DNOMINMAX
+     */ 
+
+     #include &lt;afxwin.h&gt;  // or stdafx.h in a default AppWizard project.
+     //#include &lt;new.h&gt;   // Required to avoid this problem.
+
+     #ifdef _DEBUG
+     #define new DEBUG_NEW
+     #undef THIS_FILE
+     static char THIS_FILE[] = __FILE__;
+     #endif
+
+     namespace std {
+     #include &lt;vector.h&gt;
+     }
+
+Sample Code to Reproduces Behavior Described in Case three
+----------------------------------------------------------
+
+     /* Compile options needed: none
+     */ 
+
+     //#include &lt;iostream.h&gt;     // Required to avoid LNK2001 error
+     #include &lt;new.h&gt;
+
+     namespace std {
+     #include &lt;vector.h&gt;
+     }
+
+     std::vector&lt;int&gt; test(0,10);
+
+Additional query words: MFC
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

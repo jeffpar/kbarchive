@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151500: FIX: /Og Causes vfptr Initialization Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151500: FIX: /Og Causes vfptr Initialization Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151500/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151500/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151500/","publisher":null,"image":null,"headline":"Q151500: FIX: /Og Causes vfptr Initialization Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151500-fix-og-causes-vfptr-initialization-problems">Q151500: FIX: /Og Causes vfptr Initialization Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151500
+Product(s): Microsoft C Compiler
+Version(s): 4.2 5.0
+Operating System(s): 
+Keyword(s): kbcode kbtool kbCompiler kbVC420bug kbVC500bug kbVS97sp1fix
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under some circumstances, virtually calling a class member function from within
+the class's constructor may cause the wrong version of the member function to be
+called when global optimizations are enabled (/Og or #pragma optimize("g",on) ).
+Virtually calling a class member function means assigning the value of this to a
+pointer variable and attempting to call virtual member functions via that
+pointer. Please see the sample code in the More Information Section below.
+
+CAUSE
+=====
+
+The vfptr is not being properly initialized. In the sample code below, p in
+effect becomes an A* instead of a B*.
+
+RESOLUTION
+==========
+
+One workaround is to disable global optimizations for the class constructor.
+Please note the sections of code that compile conditionally for the constant
+'WORKAROUND' in the sample code below.
+
+Another workaround is not to call the member function(s) virtually. That is call
+them directly via the this pointer, ( this-&gt;f() ), or to simply call the
+function using the implied this pointer, ( f() ).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+     /* Compile Options: /Og
+     // uncomment the following to illustrate the workaround which
+     // disables global optimizations for the constructor
+     //#define WORKAROUND
+
+     class A
+     {
+     public:
+     virtual void f() = 0;
+     virtual void g();
+     };
+
+     void A::g()
+     {
+     }
+
+     class B : public A
+     {
+     public:
+     B();
+     virtual void f();
+     virtual void g();
+     };
+
+     void B::f()
+     {
+     }
+
+     void B::g()
+     {
+     }
+
+     #ifdef WORKAROUND
+     #pragma optimize("g",off)
+     #endif   // WORKAROUND
+
+     B::B()
+     {
+     B* p = this;
+     // If p-&gt;g() is changed to this-&gt;g(), or simply g(), the
+     // correct member function (B::g) is called.
+     p-&gt;g();  // Actually calls A::g()
+     // if p-&gt;f() is changed to this-&gt;f(), or simply f(), the
+     // correct member function (B::f) is called.
+     p-&gt;f();  // Actually calls A::f(), which causes a runtime error
+     }
+
+     #ifdef WORKAROUND
+     #pragma optimize("g",on)
+     #endif   //WORKAROUND
+
+     int main()
+     {
+     B b;
+     return 0;
+     }
+
+Additional query words: /Og Global Optimization
+
+======================================================================
+Keywords          : kbcode kbtool kbCompiler kbVC420bug kbVC500bug kbVS97sp1fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 4.2 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

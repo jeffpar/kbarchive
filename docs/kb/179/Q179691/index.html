@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179691/","publisher":null,"image":null,"headline":"Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179691-prb-adding-property-in-classwizard-changes-dispids-for-methods">Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179691
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbwizard kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When adding properties through ClassWizard to existing Automation objects, the
+dispatch identifiers (DISPIDs) of any methods will change.
+
+Although changing DISPIDs does not usually cause a problem when originally
+building an Automation server, it can cause incompatibility problems when
+updating existing Automation objects. Automation clients that were built using
+early binding will no longer work with the updated server.
+
+CAUSE
+=====
+
+ClassWizard adds properties to MFC's "dispatch map" before methods. Because, by
+default, DISPIDs are assigned to interfaces based on the order in which they are
+added to the map, adding a property changes the IDs of all the existing methods.
+
+RESOLUTION
+==========
+
+Add properties and methods to the dispatch map and the .odl file without using
+ClassWizard.
+
+You should add these additional properties outside the ClassWizard comments at
+the end of the dispatch map.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+There are several MFC dispatch DISP_XXXX_ID macros that allow you to specify a
+specific DISPID:
+
+  DISP_FUNCTION_ID()
+  DISP_PROPERTY_ID()
+  DISP_PROPERTY_NOTIFY_ID()
+  DISP_PROPERTY_EX_ID()
+  DISP_PROPERTY_PARAM_ID()
+
+These macros can be useful in maintaining existing DISPID numbering.
+
+Here is an sample dispatch map from a sample control:
+
+  //////////////////////////////////////////////////////////////////////// 
+     // Dispatch map:
+     BEGIN_DISPATCH_MAP(CTestCtrl, COleControl)
+        //{{AFX_DISPATCH_MAP(CTestCtrl)
+        DISP_PROPERTY_NOTIFY(CTestCtrl, "Property1", m_property1,
+                             OnProperty1Changed, VT_I2)
+        DISP_PROPERTY_EX(CTestCtrl, "Property2", GetProperty2,
+                         SetProperty2, VT_I2)
+        DISP_FUNCTION(CTestCtrl, "Method1", Method1, VT_I2, VTS_I2)
+        DISP_FUNCTION(CTestCtrl, "Method2", Method2, VT_I4, VTS_NONE)
+        //}}AFX_DISPATCH_MAP
+        DISP_FUNCTION_ID(CTestCtrl, "AboutBox", DISPID_ABOUTBOX,
+                        AboutBox, VT_EMPTY, VTS_NONE)
+     END_DISPATCH_MAP()
+
+Here is the same dispatch map using the DISP_XXX_ID macros to specify specific
+DISPIDs:
+
+  //////////////////////////////////////////////////////////////////////// 
+     // Dispatch map:
+     BEGIN_DISPATCH_MAP(CTestCtrl, COleControl)
+        //{{AFX_DISPATCH_MAP(CTestCtrl)
+        //}}AFX_DISPATCH_MAP
+        DISP_PROPERTY_NOTIFY_ID(CTestCtrl, "Property1", 1,
+                                m_property1, OnProperty1Changed, VT_I2)
+        DISP_PROPERTY_EX_ID(CTestCtrl, "Property2", 2, GetProperty2,
+                            SetProperty2, VT_I2)
+        DISP_FUNCTION_ID(CTestCtrl, "Method1", 3, Method1, VT_I2, VTS_I2)
+        DISP_FUNCTION_ID(CTestCtrl, "Method2", 4, Method2, VT_I4, VTS_NONE)
+        DISP_FUNCTION_ID(CTestCtrl, "AboutBox", DISPID_ABOUTBOX, AboutBox,
+                         VT_EMPTY, VTS_NONE)
+     END_DISPATCH_MAP()
+
+REFERENCES
+==========
+
+For more information on MFC dispatch macros and how MFC assigns DISPIDs, see MFC
+TechNote TN039 in the Visual C++ Documentation.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Kelly Marie
+Ward, Microsoft Corporation.
+
+Additional query words: dispinterface Idispatch
+
+======================================================================
+Keywords          : kbcode kbwizard kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

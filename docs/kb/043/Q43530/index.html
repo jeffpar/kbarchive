@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43530: QB.EXE 4.50 Hangs If File Unloaded While Watch Is Set | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43530: QB.EXE 4.50 Hangs If File Unloaded While Watch Is Set" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43530/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43530/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43530/","publisher":null,"image":null,"headline":"Q43530: QB.EXE 4.50 Hangs If File Unloaded While Watch Is Set","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43530-qbexe-450-hangs-if-file-unloaded-while-watch-is-set">Q43530: QB.EXE 4.50 Hangs If File Unloaded While Watch Is Set</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43530
+Product(s): See article
+Version(s): 4.50
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# S890410-127 buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 21-FEB-1991
+
+Choosing to UNLOAD a file while a Watch on a variable is set hangs the
+QB.EXE editor, requiring a warm or cold reboot if operating under
+MS-DOS. If you are running under OS/2, this choice hangs the DOS
+compatibility box. This problem does not occur when UNLOADing a file
+if a Watchpoint is set to watch an expression.
+
+Microsoft has confirmed this to be a problem with QB.EXE in QuickBASIC
+version 4.50. This problem was corrected in QBX.EXE in Microsoft BASIC
+Professional Development System (PDS) version 7.00 (fixlist7.00).
+
+Example 1
+---------
+
+To demonstrate this problem do the following:
+
+1. Type the following two lines in the QuickBASIC editor:
+
+      B$ = "Hello"
+      END
+
+2. Save the file by choosing Save As from the File menu.
+
+3. Choose Add Watch from the Debug menu by pressing ALT+D and then
+   pressing "A".
+
+4. Enter B$ as the expression to watch. Press ENTER.
+
+5. Choose Unload from the File menu by pressing ALT+F and then
+   pressing "U". Press ENTER to UNLOAD the program. The editor will
+   then display a menu prompting you to choose a new main module. If
+   the editor does not hang, press ENTER again to choose "Untitled" as
+   the main module. At this point the editor will hang, requiring a
+   cold or warm reboot.
+
+Example 2
+---------
+
+The following exact steps also cause QB.EXE version 4.50 to hang under
+similar circumstances:
+
+ 1. Start QuickBASIC and load any Quick library:
+
+       QB /L QB.QLB
+
+ 2. Type the following and press ENTER:
+
+       PRINT "any text"
+
+ 3. Press the UP ARROW cursor key, thus placing the cursor under the
+    "P" in PRINT.
+
+ 4. Press F9, thus placing a breakpoint on that line.
+
+ 5. Run the program by pressing SHIFT+F5.
+
+ 6. Select the Debug menu with ALT+D and press ENTER, thus choosing to
+    set a watch variable.
+
+ 7. Type FRE("") as the watch variable and press ENTER.
+
+ 8. Press ALT+F+L (to select the Load File command), and press ESC.
+
+10. Press ALT+F+U (to select the Unload File command), and press
+    ENTER.
+
+11. Press TAB, then the SPACE key, then ENTER, and the editor will
+    be hung.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

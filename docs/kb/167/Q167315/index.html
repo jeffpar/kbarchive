@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167315/","publisher":null,"image":null,"headline":"Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167315-qri-bit-not-set-correctly-on-responses-to-rui-apps">Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167315
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11 SP2,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11 SP2, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+LUA applications that transmit application messages with the RH's Queued
+Response Indicator (QRI) flag set may stop responding when communicating to a
+client application through SNA server. When you step through and trace the
+problem, the LUA application may show a message being correctly received with
+the QR flag = 1 in the RH header. In the response, the QR flag is set to 1 prior
+to calling the SNA RUI libraries, but when it is transmitted to the host, the QR
+flag = 0.
+
+CAUSE
+=====
+
+The LUA library provided with SNA Server was not designed to use the Queued
+Response Indicator (QRI) field. The "SNA Server LUA Programmer's Guide" contains
+the following design specification for the RUI libraries:
+
+  lua_rh: Returned parameter. Contains the SNA request/response header (RH) of
+  the message sent or received. For the RH for RUI_WRITE, all fields except the
+  queued-response indicator (lua_rh.qri) and pacing indicator (lua_rh.pi) are
+  used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11 SP2, 3.0 and 3.0 SP1.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+A supported fix for SNA Server version 2.1, 2.1, and 2.11 is now available, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. Unless you are severely impacted by this
+specific problem, Microsoft recommends that you wait for the next Service Pack
+that contains this fix. Contact Microsoft Technical Support for more
+information.
+
+
+MORE INFORMATION
+================
+
+In a response header for a normal-flow RU, the queued response indicator (QRI)
+denotes whether the response is to be enqueued in TC queues (QRI=QR), or whether
+it is to bypass these queues (QRI=[ASCII 172]QR). In a request header for a
+normal-flow RU, it indicates what the setting of the QRI should be on the
+response, if any, to this request (that is, the values on the request and
+response are the same).
+
+For expedited-flow RUs, this bit is reserved. The setting of the QRI bit is the
+same for all RUs in a chain.
+
+This symptom is demonstrated in the following trace:
+
+  DLC    ---------------------------------------------- 12:10:29.17
+  DLC    01160001-&gt;03020201 DLC DATA
+  DLC                       DAF:01 OAF:01 ODAI:off Normal
+  DLC                       RQD FMD BC EC DR1 QR  PI BB EB &lt;&lt;&lt; QR set
+  DLC
+  DLC    ---- Header  at address 00D14550, 1 elements ----
+  DLC    02022439 00012C00 01010001 01007000     &lt;..$9..,.......p.&gt;
+  DLC
+  DLC    ---- Element at address 0120D6C8, start 10, end 18 ----
+  DLC    0383C0F1 1C1C1CF2 03                    &lt;.c.1...2.       &gt;
+  DLC    ---------------------------------------------- 12:10:29.20
+  DLC    03020201-&gt;01160001 DLC DATA
+  DLC                       DAF:01 OAF:01 ODAI:off Normal
+  DLC                       +RSP FMD BC EC PI
+  DLC
+  DLC    ---- Header  at address 00D142E0, 1 elements ----
+  DLC    02050201 E0002C00 01010000 01007000     &lt;......,.......p.&gt;
+  DLC
+  DLC    ---- Element at address 0120A374, start 10, end 12 ----
+  DLC    830100                                  &lt;c..             &gt;
+  DLC    ---------------------------------------------- 12:10:29.26
+  DLC    03020201-&gt;01160001 DLC DATA
+  DLC                       DAF:01 OAF:01 ODAI:off Normal
+  DLC                       +RSP FMD BC EC DR1           &lt;&lt;&lt; QR not set
+  DLC
+  DLC    ---- Header  at address 00D14550, 1 elements ----
+  DLC    04020102 00002C00 01010001 01007000     &lt;......,.......p.&gt;
+  DLC
+  DLC    ---- Element at address 0120D6C8, start 10, end 12 ----
+  DLC    838000                                  &lt;c..             &gt;
+  DLC    ---------------------------------------------- 12:10:50.12
+
+In the fix referenced above, SNA Server RUI libraries and SNA server service
+components were changed to ensure the correct setting for the QRI bit flows over
+SNA messages exchanged between clients and the host.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ210 kbSNAServ211SP2 kbSNAServ300SP1
+Version           : WINDOWS:2.0,2.1,2.11 SP2,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

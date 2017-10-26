@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195655: HOWTO: How to Set a Screen Saver Through a System Policy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195655: HOWTO: How to Set a Screen Saver Through a System Policy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195655/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195655/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195655/","publisher":null,"image":null,"headline":"Q195655: HOWTO: How to Set a Screen Saver Through a System Policy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195655-howto-how-to-set-a-screen-saver-through-a-system-policy">Q195655: HOWTO: How to Set a Screen Saver Through a System Policy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195655
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The options that are available to system policies can be enhanced through
+incorporating user-defined .adm files. The following .adm file will add the
+ability to configure screen saver options through a system policy.
+
+MORE INFORMATION
+================
+
+This policy enables three options in the user-based portion of a policy:
+
+- The choice of screen saver.
+
+- Enabling the screen saver.
+
+- Enabling the password for the screen saver.
+
+The screen saver will use the Default Wait time of 15 minutes. To use this
+policy, perform the following steps:
+
+1. Enter the text below that is between the rows of hyphens (-) into a text file
+  and save it as Scrsave.adm in the Winnt\Inf folder.
+
+2. Open System Policy Editor and click Options and then click Policy Template.
+
+3. Add Scrsave.adm to the listed template files.
+
+4. The additional options will show under any user or group in the policy, with
+  a label of "Screen Saver Policies."
+
+Scrsave.adm &lt;start&gt;
+
+     CLASS USER
+
+     CATEGORY  !!Screen_Saver_Policy
+             POLICY !!Screen_Saver
+             KEYNAME "Control Panel\Desktop"
+                     PART !!Screen_Saver_Location EDITTEXT
+                     DEFAULT !!DEF_SCREEN_SAVER
+                     VALUENAME SCRNSAVE.EXE
+                     END PART
+             END POLICY
+             POLICY !!ENABLE_SCREEN_SAVER
+             KEYNAME "Control Panel\Desktop"
+                     VALUENAME ScreenSaveActive
+                     VALUEON "1" VALUEOFF "0"
+             END POLICY
+             POLICY !!ENABLE_Password
+             KEYNAME "Control Panel\Desktop"
+                     VALUENAME ScreenSaverIsSecure
+                     VALUEON "1" VALUEOFF "0"
+             END POLICY
+     END CATEGORY
+
+     [strings]
+     Screen_Saver_Policy="Screen Saver Policies"
+     Screen_Saver="Screen Saver"
+     ENABLE_SCREEN_SAVER="Enable Screen Saver"
+     Screen_Saver_Location="Enter the location of the Screen Saver"
+     DEF_Screen_Saver="%SYSTEMROOT%\system32\logon.scr"
+     ENABLE_Password=Enable Password
+
+Scrsave.adm &lt;end&gt;
+
+For setting the amount of system idle time after which the screen saver will
+start:
+
+In the CATEGORY !!Screen_Saver_Policy section add:
+
+  POLICY !!SCREEN_SAVER_IDLE_TIMEOUT
+  KEYNAME "Control Panel\Desktop"
+  VALUENAME ScreenSaveTimeout
+  VALUEON "600"
+  END POLICY
+
+In the [strings] section add:
+
+  SCREEN_SAVER_IDLE_TIMEOUT="Screen Saver Activation Timeout"
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q161334 Guide To Windows NT 4.0 Profiles and Policies (Part 1 of 6)
+
+  Q185589 Guide To Windows NT 4.0 Profiles and Policies (Part 4 of 6)
+
+For additional information, please also see the Windows 95 Resource Kit, pages
+518-524.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

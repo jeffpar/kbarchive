@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47501: Libraries Only Found When Linking in Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47501: Libraries Only Found When Linking in Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47501/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47501/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47501/","publisher":null,"image":null,"headline":"Q47501: Libraries Only Found When Linking in Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47501-libraries-only-found-when-linking-in-environment">Q47501: Libraries Only Found When Linking in Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47501
+Product(s): See article
+Version(s): 1.01 2.00 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 10-OCT-1989
+
+Question :
+
+When I use the QuickC environment, my programs compile and link
+properly, but when I compile and link from the command line, I get the
+error "Cannot find library." I tried running the NMAKE file that was
+produced by QuickC and that method did not work either. What is the
+difference when I am in the QuickC environment?
+
+Response :
+
+The only reason this situation might occur is if your LIB environment
+variable string was not typed in correctly. If the string contains any
+spaces, then, although it may point to the correct directories, it is
+not interpreted correctly.
+
+Everything works correctly inside the QuickC environment because the
+QuickC environment actually parses the environment strings, and passes
+on the correct values without the spaces to the compiler and linker.
+This parsing does not occur when you work outside the environment with
+command line compiling and linking, or when using NMAKE.
+
+Another reason a badly set environment string may not be noticed inside
+the QuickC environment is because of the QuickC initialization file
+QC.INI. This file is created the first time you run QuickC, and it is
+updated on each subsequent usage. It is used to store environment
+information such as compiler and linker flags, menu options, completed
+Learn QuickC lessons, etc.
+
+If you select the Environment option under the Options menu, you can
+see the current LIB setting. If you modify this string, then the
+modified string is used in place of the LIB environment variable, and
+it is saved for future use in the QC.INI file. If, at a later time,
+the LIB environment variable is set incorrectly, it will go unnoticed
+inside of the QuickC environment as the string in QC.INI always
+overrides it.
+
+Environment variables are used by various programs as a source of
+global configuration information. With Microsoft's C products, PATH,
+LIB, INCLUDE, and TMP are the environment variables used. These values
+must be set each time the computer is booted up or rebooted from the
+keyboard. Therefore, a batch file is normally used to make these
+settings -- usually AUTOEXEC.BAT. The SET command is used to set an
+environment variable to a value. For example,
+
+   SET LIB=C:\MSC\INCLUDE
+
+sets LIB to the C:\MSC\INCLUDE directory and any program may use this
+information if needed. No spaces may be entered anywhere in the string
+and, if they are, then the programs utilizing this variable will not
+find the correct information. It is especially important that no
+spaces are entered at the end of the string because these are very
+hard to detect. All of the following examples are incorrect:
+
+   SET LIB = C:\MSC\LIB
+   /* illegal spaces around equal sign - this will even cause a
+      failure inside the QuickC environment */
+
+   SET LIB=C:\MSC\LIB; C:\QC2\LIB
+   /* illegal space after the semicolon - the first directory would
+      be found, but not the second */
+
+   SET LIB=C:\MSC\LIB&lt;space&gt;
+   /* the space character at the end can cause problems */
+
+You may find situations where some of these examples do not cause any
+problems, but if you are experiencing problems that seem to involve
+environment variables, it is best to delete the lines that SET them in
+your batch files, and then completely retype them.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

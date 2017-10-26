@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153213: XCLN: Can’t Change Windows NT 3.51 Password w/ AppleTalk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153213: XCLN: Can’t Change Windows NT 3.51 Password w/ AppleTalk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153213/","publisher":null,"image":null,"headline":"Q153213: XCLN: Can’t Change Windows NT 3.51 Password w/ AppleTalk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153213-xcln-cant-change-windows-nt-351-password-w-appletalk">Q153213: XCLN: Can’t Change Windows NT 3.51 Password w/ AppleTalk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153213
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0; winnt:3.51
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+- the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot change the Windows NT account information from within the Microsoft
+Exchange client for Macintosh when the profile is configured to use AppleTalk
+and the Microsoft Exchange Server is running under Microsoft Windows NT version
+3.51.
+
+Note: If the primary domain controller (PDC) is running Windows NT 4.0, please
+see the following articles in the Microsoft Knowledge Base:
+
+  Q127943 Mac Client Can't Log On Because Password Has Expired
+
+  Q140641 Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients
+
+
+WORKAROUND
+==========
+
+There are two ways you can work around this problem:
+
+Workaround 1
+------------
+
+1. Open the Chooser and click AppleShare.
+
+2. Select the AppleTalk Zone where the Microsoft Exchange Server is located.
+
+3. Select the appropriate file server name.
+
+4. Click Set Password and follow the prompts.
+
+Workaround 2
+------------
+
+1. Make sure MacTCP 2.0.6 or higher, OpenTransport TCP/IP, is configured. This
+  can be tested by using MacTCP ping, to make sure the Microsoft Exchange
+  Server name can be resolved. Use Ping exchsrvr1.
+
+2. Use TCP/IP in the profile instead of AppleTalk. To do this:
+
+  a. Open the Microsoft Exchange Settings tool.
+
+  b. Click Show Profiles, Add, and Next, and type a name.
+
+  c. Make sure TCP/IP is selected.
+
+  d. Enter the appropriate account and Microsoft Exchange Server name.
+
+  e. Finish creating the profile and make it the profile to be used when
+     starting the Microsoft Exchange client.
+
+  f. Close the Microsoft Exchange Settings tool.
+
+3. Start the Microsoft Exchange client.
+
+4. To change the Windows NT password, on the Tools menu, click Options, and
+  click Microsoft Exchange Server.
+
+NOTE: This workaround will only work if the PDC is Windows NT version 3.51 or
+higher. The Microsoft Exchange Server must also be at Service Pack 2 or later.
+
+Workaround 3
+------------
+
+1. Upgrade the Microsoft Exchange Server computer to Windows NT 4.0.
+
+2. Upgrade to Microsoft Exchange Service Pack 2. For information on obtaining
+  this Service Pack, query on the following word in the Microsoft Knowledge
+  Base (without the spaces):
+
+  S E R V P A C K
+
+3. See Q156182 for complete list of steps, including adding registry entries to
+  Windows NT PDC.
+
+MORE INFORMATION
+================
+
+If the primary domain controller (PDC) is running Windows NT 4.0, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q127943 Mac Client Can't Log On Because Password Has Expired
+
+  Q140641 Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients
+
+NOTE: You need the following settings, depending on the transport the you are
+using, on the Primary Domain Controller for this to work. These settings are not
+in the registry by default.
+
+PDC Registry Settings:
+
+  HKEY_LOCAL_MACHINE\system\currentcontrolset\lsa
+
+  NetwareClientSupport REG_DWORD 1
+  TCPIPClientSupport REG_DWORD 1
+  AppletalkClientSupport REG_DWORD 1
+  VinesClientSupport REG_DWORD 1
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWinNTsearch kbWinNTSsearch kbHWMAC kbOSMAC kbExchangeSearch kbExchange400 kbExchangeClientSearch kbGraph500
+Version           : WINDOWS:4.0,5.0; winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

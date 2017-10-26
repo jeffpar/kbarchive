@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288929/","publisher":null,"image":null,"headline":"Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288929-sample-filedragtestexe-drags-and-drops-file-in-and-out-of-app">Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288929
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbVC kbVC600 kbDSupport kbGrpDSMFCATL
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This sample demonstrates how to drag and drop files in and out of applications
+by using OLE drag and drop. It shows how to drag a file to your application and
+how to drag a file from your application to other places that can accept files.
+The information in this article supplements the following Microsoft Knowledge
+Base articles:
+
+  Q135299 Using MFC OLE Drag and Drop to Drag Text Between Windows
+
+  Q185572 HOWTO: Get Dropped File Names Using OLE Drag and Drop
+
+MORE INFORMATION
+================
+
+Developers have generally used WM_DROPFILES message to handle files dropped from
+other applications. This message is sent when the user drops a file on the
+window of an application that has registered itself as a recipient of dropped
+files.
+
+On the other hand, your application can respond to mouse event to support
+dragging files to other applications. OLE drag and drop supports this
+functionality. Both techniques involve passing a global HDROP (drop structure
+handle) from the source to the target. WM_DROPFILES passes this handle in the
+WPARAM value. OLE drag and drop passes the HDROP with the data object.
+
+In the sample project provided in this article, CFileDropListCtrl is the most
+important class. Its OnDropFiles method shows how to deal with the file that is
+dragged in. The OnLButtonDown method shows how to drag file to another
+application.
+
+The following file is available for download from the Microsoft Download Center:
+
+  FileDragTest.exe
+  (http://download.microsoft.com/download/vc60std/Sample2/1.0/WIN98MeXP/EN-US/FileDragTest.exe)
+
+Release Date: May-02-2001
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+Additional query words: FileDragTest
+
+======================================================================
+Keywords          : kbfile kbSample kbVC kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

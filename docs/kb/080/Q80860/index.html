@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80860: Uses of the LANMAN.INI RASLANNETS Entry | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80860: Uses of the LANMAN.INI RASLANNETS Entry" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80860/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80860/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80860/","publisher":null,"image":null,"headline":"Q80860: Uses of the LANMAN.INI RASLANNETS Entry","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80860-uses-of-the-lanmanini-raslannets-entry">Q80860: Uses of the LANMAN.INI RASLANNETS Entry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80860
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The ability to restrict remote users to specified networks is a security feature
+that is not well known. This article describes security features made possible
+through the RASLANNETS entry in the LANMAN.INI file.
+
+MORE INFORMATION
+================
+
+The example below illustrates why an administrator may want to restrict remote
+users to a specific server network.
+
+Example
+-------
+
+A development group is using Remote Access Service (RAS) to support split-site
+development in the following manner:
+
+      ---------------------
+      |RAS, SQL, LM server|    \\SERVERNAME
+      ---------------------
+               ||
+
+----Loopback----||---------------Corp Net-------------
+
+where "servername" is a LAN Manager and a SQL Server that the group is using for
+tracking bugs and for file sharing with a codeveloper. The codeveloper uses RAS
+that runs on the server to access SQL Server and the files on the server. The
+server is configured to operate over the following two networks:
+
+  Loopback network
+  Corporate network
+
+The RASLANNET LANMAN.INI parameter is set so that the developer can access
+resources only in the loopback network. This parameter enables the developer to
+copy files to \\SERVERNAME and access the SQL RAID database; however, it
+prevents the developer from using resources on the corporate network if he or
+she accesses the network from a remote location.
+
+If it becomes necessary for the developer to access more machines, the loopback
+network can be changed to be a small LAN; it is not necessary to use a loopback
+network, and place all other machines on that network.
+
+Additional query words: 2.10 2.10a 2.20 RASLANNETS security
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

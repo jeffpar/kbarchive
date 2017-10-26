@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q279849: MM2: Troubleshooting Game Controller Problems (Part 2) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q279849: MM2: Troubleshooting Game Controller Problems (Part 2)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/279/Q279849/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/279/Q279849/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/279/Q279849/","publisher":null,"image":null,"headline":"Q279849: MM2: Troubleshooting Game Controller Problems (Part 2)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q279849-mm2-troubleshooting-game-controller-problems-part-2">Q279849: MM2: Troubleshooting Game Controller Problems (Part 2)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q279849</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Home</span> <span class="n">Games</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbimu</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">is</span> <span class="n">part</span> <span class="m">2</span> <span class="k">of</span> <span class="n">a</span> <span class="n">series</span> <span class="k">of</span> <span class="n">two</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">articles</span> <span class="n">that</span>
+<span class="n">present</span> <span class="n">a</span> <span class="n">systematic</span> <span class="n">approach</span> <span class="k">to</span> <span class="n">troubleshooting</span> <span class="n">game</span> <span class="n">controller</span> <span class="n">problems</span><span class="p">.</span>
+
+  <span class="n">Q279858</span> <span class="n">Midtown</span> <span class="n">Madness</span> <span class="m">2</span><span class="p">:</span> <span class="n">Game</span> <span class="n">Controller</span> <span class="n">Problems</span> <span class="n">Troubleshooting</span> <span class="p">(</span><span class="n">Part</span> <span class="m">1</span><span class="p">)</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Calibrate</span> <span class="k">as</span> <span class="n">a</span> <span class="n">Different</span> <span class="n">Device</span>
+<span class="p">-------------------------------</span>
+
+<span class="n">Use</span> <span class="n">the</span> <span class="n">Game</span> <span class="n">Controllers</span> <span class="n">Control</span> <span class="n">Panel</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">your</span> <span class="n">game</span> <span class="n">controller</span> <span class="k">as</span> <span class="n">a</span>
+<span class="n">different</span> <span class="n">device</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">configure</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SideWinder</span> <span class="n">Standard</span> <span class="k">or</span> <span class="n">the</span> <span class="n">SideWinder</span> <span class="m">3</span><span class="n">D</span> <span class="n">Pro</span> <span class="k">as</span> <span class="n">a</span>
+<span class="n">different</span> <span class="n">device</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">SideWinder</span> <span class="m">3</span><span class="n">D</span> <span class="n">Pro</span> <span class="n">joystick</span> <span class="k">as</span> <span class="n">a</span> <span class="m">3</span><span class="p">-</span><span class="n">axis</span> <span class="m">4</span><span class="p">-</span><span class="n">button</span>
+<span class="n">joystick</span> <span class="k">with</span> <span class="n">Rudder</span><span class="p">/</span><span class="n">Pedals</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Settings</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Control</span> <span class="n">Panel</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Double</span><span class="p">-</span><span class="n">click</span> <span class="n">Game</span> <span class="n">Controllers</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Microsoft</span> <span class="n">SideWinder</span> <span class="m">3</span><span class="n">D</span> <span class="n">Pro</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Click</span> <span class="n">Remove</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Yes</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Click</span> <span class="n">Add</span><span class="p">,</span> <span class="n">click</span> <span class="s2">"3-Axis, 4-Button Joystick"</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Click</span> <span class="n">the</span> <span class="n">Settings</span> <span class="n">tab</span><span class="p">.</span> <span class="n">Click</span> <span class="k">to</span> <span class="n">select</span> <span class="n">the</span> <span class="n">Rudder</span><span class="p">/</span><span class="n">Pedals</span> <span class="n">check</span> <span class="n">box</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="n">Click</span> <span class="n">Calibrate</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">follow</span> <span class="n">the</span> <span class="n">instructions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">screen</span> <span class="k">to</span> <span class="n">calibrate</span>
+  <span class="n">the</span> <span class="n">game</span> <span class="n">controller</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">Axis</span> <span class="m">3</span> <span class="n">is</span> <span class="n">the</span> <span class="n">throttle</span> <span class="n">control</span><span class="p">,</span> <span class="k">and</span> <span class="n">axis</span> <span class="m">4</span> <span class="n">is</span> <span class="n">the</span> <span class="n">rudder</span> <span class="n">control</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">Click</span> <span class="n">Test</span> <span class="k">to</span> <span class="n">verify</span> <span class="n">that</span> <span class="n">the</span> <span class="n">game</span> <span class="n">controller</span> <span class="n">functions</span> <span class="n">properly</span><span class="p">.</span>
+
+<span class="m">9.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">finish</span> <span class="n">calibrating</span> <span class="k">and</span> <span class="n">testing</span> <span class="n">the</span> <span class="n">game</span> <span class="n">controller</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span> <span class="n">Click</span>
+  <span class="n">OK</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">the</span> <span class="n">issue</span> <span class="n">continues</span> <span class="k">to</span> <span class="n">occur</span><span class="p">,</span> <span class="n">proceed</span> <span class="k">to</span> <span class="n">the</span> <span class="k">next</span> <span class="n">method</span><span class="p">.</span>
+
+<span class="n">Lower</span> <span class="n">sound</span> <span class="n">quality</span>
+<span class="p">-------------------</span>
+
+<span class="n">Sometimes</span> <span class="n">controller</span> <span class="n">problems</span> <span class="n">are</span> <span class="n">related</span> <span class="k">to</span> <span class="n">using</span> <span class="n">high</span> <span class="n">sound</span> <span class="n">quality</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span>
+<span class="n">controller</span> <span class="n">isn</span><span class="p">?</span><span class="n">t</span> <span class="n">functioning</span><span class="p">,</span> <span class="k">or</span> <span class="n">is</span> <span class="n">cutting</span> <span class="k">in</span> <span class="k">and</span> <span class="n">out</span><span class="p">,</span> <span class="n">turning</span> <span class="n">off</span> <span class="k">or</span> <span class="n">reducing</span>
+<span class="n">the</span> <span class="n">sound</span> <span class="n">quality</span> <span class="n">before</span> <span class="n">starting</span> <span class="n">a</span> <span class="n">race</span> <span class="n">might</span> <span class="n">solve</span> <span class="n">the</span> <span class="n">problem</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">From</span> <span class="n">any</span> <span class="n">screen</span><span class="p">,</span> <span class="n">select</span> <span class="k">Options</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Click</span> <span class="n">Audio</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Audio</span> <span class="k">Options</span> <span class="n">screen</span><span class="p">,</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">Sound</span> <span class="n">FX</span><span class="p">,</span> <span class="n">City</span> <span class="n">Sounds</span><span class="p">,</span> <span class="k">and</span> <span class="n">Play</span> <span class="n">Music</span>
+  <span class="n">check</span> <span class="n">boxes</span> <span class="k">to</span> <span class="n">turn</span> <span class="n">off</span> <span class="n">music</span> <span class="k">and</span> <span class="n">sound</span> <span class="n">effects</span><span class="p">.</span>
+
+  <span class="p">-</span><span class="k">or</span><span class="p">-</span>
+
+  <span class="k">Set</span> <span class="n">Stereo</span> <span class="n">FX</span> <span class="k">to</span> <span class="n">Mono</span> <span class="k">to</span> <span class="n">play</span> <span class="n">sound</span> <span class="n">effects</span> <span class="k">and</span> <span class="n">music</span> <span class="k">in</span> <span class="n">mono</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Sound</span> <span class="n">Quality</span> <span class="k">list</span><span class="p">,</span> <span class="n">select</span> <span class="n">Low</span> <span class="k">to</span> <span class="n">reduce</span> <span class="n">the</span> <span class="n">quality</span> <span class="k">of</span> <span class="n">sound</span> <span class="n">effects</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Click</span> <span class="n">Done</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">the</span> <span class="n">arrow</span> <span class="n">repeatedly</span> <span class="k">to</span> <span class="n">return</span> <span class="k">to</span> <span class="n">the</span> <span class="n">screen</span> <span class="n">where</span>
+  <span class="n">you</span> <span class="n">were</span> <span class="n">before</span> <span class="n">you</span> <span class="n">selected</span> <span class="k">Options</span><span class="p">.</span>
+
+<span class="n">Adjust</span> <span class="n">the</span> <span class="n">Controller</span> <span class="n">Settings</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Game</span> 
+<span class="p">------------------------------------------</span>
+
+<span class="m">1.</span> <span class="n">Start</span> <span class="n">Midtown</span> <span class="n">Madness</span> <span class="m">2.</span>
+
+<span class="m">2.</span> <span class="n">Click</span> <span class="n">Control</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Adjust</span> <span class="n">the</span> <span class="n">Controller</span> <span class="n">Dead</span> <span class="n">Zone</span> <span class="n">slider</span> <span class="k">to</span> <span class="n">reduce</span> <span class="n">twitches</span> <span class="k">of</span> <span class="n">driving</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Adjust</span> <span class="n">the</span> <span class="n">Steering</span> <span class="n">Sensitivity</span> <span class="n">slider</span> <span class="k">to</span> <span class="n">make</span> <span class="n">your</span> <span class="n">controller</span> <span class="n">more</span> <span class="k">or</span> <span class="n">less</span>
+  <span class="n">sensitive</span> <span class="k">to</span> <span class="n">your</span> <span class="n">movements</span><span class="p">,</span> <span class="k">and</span> <span class="n">so</span> <span class="n">that</span> <span class="n">it</span><span class="s1">'s reponsive without being
+  twitchy.
+
+Disable Sound in the Game
+-------------------------
+
+If your sound card is unable to properly process game port signals and high
+quality game sounds at the same time, you may be able to work around the issue
+by disabling sound in the game.
+
+When you install Midtown Madness 2, several troubleshooting shortcuts are
+installed in the installation folder for the game.
+
+The default location of the Midtown Madness 2 folder is:
+
+  C:\Program Files\Microsoft Games\Midtown Madness 2
+
+When you open the folder double-click the No Sound shortcut.
+
+This shortcut disables both the introductory movie and sound in the game.
+
+Use this shortcut if you think there is a conflict between Midtown Madness and
+the audio adapter installed in the computer.
+
+For additional information about Midtown Madness shortcuts, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q231828 Midtown 1.0/2.0: Description of the Troubleshooting Shortcuts
+
+If the issue continues to occur, proceed to the next method.
+
+Remove and Reinstall Midtown Madness 2
+--------------------------------------
+
+1. Remove Midtown Madness 2
+
+  a. Insert the Midtown Madness 2 compact disc into the CD-ROM drive. Press and
+     hold down SHIFT when you insert the compact disc to prevent the program
+     from starting automatically.
+
+  b. Click Start, point to Settings, and then click Control Panel.
+
+  c. Double-click Add/Remove Programs.
+
+  d. Click the Install/Uninstall tab. Click Microsoft Midtown Madness 2 , and
+     then click Add/Remove or Remove (on Windows 2000).
+
+  e. Click Uninstall, and then select Remove Driver Profiles.
+
+  f. Click OK.
+
+2. Delete the Midtown Madness 2 folder. By default, Midtown Madness 2 is
+  installed in the following folder:
+
+  &lt;drive&gt;:\Program Files\Microsoft Games\Midtown Madness 2
+
+  where &lt;drive&gt; is the drive letter of the hard disk on which Midtown
+  Madness 2 is installed.
+
+3. Quit All Other Running Programs
+
+  To quit all other programs that are running on your computer before you
+  install Midtown Madness 2 use the method appropriate for your version of
+  Windows.
+
+   - Windows 95, Windows 98 and Windows ME.
+
+     a. Press CTRL+ALT+DELETE.
+
+     b. In the Close Program dialog box, click any program except Explorer or
+        Systray (these are components of Windows), and then click End Task.
+
+        If you receive a message stating that the program is busy or not
+        responding, click End Task again.
+
+     c. Repeat steps 1 and 2 to quit all unnecessary programs that are running
+        on your computer.
+
+   - Windows 2000
+
+     a. Press CTRL+SHIFT+ESC.
+
+     b. Click the Applications tab. Click any program, and then click End
+        Task.
+
+        Repeat this step to quit all unnecessary programs that are running on
+        your computer.
+
+     c. Quit Windows Task Manager.
+
+4. Reinstall Midtown Madness 2.
+
+  a. Click Start, and then click Run.
+
+  b. In the Open box, type the following, and then click OK.
+
+  &lt;cd-rom&gt;:\setup.exe
+
+     where &lt;cd-rom&gt; is the drive letter of the CD-ROM drive.
+
+  c. Follow the instructions on the screen to install the program.
+
+If the issue continues to occur, proceed to the next method.
+
+Obtain and Install Updated Device Drivers
+-----------------------------------------
+
+Contact your game controller and sound card manufacturers (if your game
+controller is connected to a 15-pin gameport on your sound card) to obtain and
+install the latest version of the drivers for your game controller and sound
+card.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number in the following list to view the article in the
+Microsoft Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+To determine the manufacturer and model of your sound card, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab.
+
+4. Expand the Sound, video and game controllers list. Note the manufacturer and
+  model of your sound card.
+
+5. Click OK, and then close Control Panel.
+
+If the issue continues to occur, proceed to the next method.
+
+Configure the Sound Card to Use Only One DMA Channel
+----------------------------------------------------
+
+If your game controller is connected to a 15-pin gameport, your game controller
+may perform better if you configure the sound card to use only one DMA (Direct
+Memory Address) channel.
+
+NOTE: Some programs are unable to run with only one DMA channel. If you
+experience this issue, restore your original sound card settings.
+
+To configure a legacy sound card driver on a Windows 95-, Windows 98-, or Windows
+ME-based computer or a native sound card driver on a Microsoft Windows NT
+4.0-based computer to use single-mode DMA:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. Click either the Devices or Advanced tab. Expand the Audio Devices list.
+
+4. Click the sound card, and then click Properties.
+
+5. Click Settings.
+
+6. To configure the sound card to use single-mode DMA, see your sound card
+  documentation, or use one of the following procedures:
+   - Click to select the Use Single-Mode DMA check box. Click OK until you
+     return to Control Panel, and then restart the computer.
+
+   - In the DMA Channel (16-bit) box, click Disable. Click OK until you return
+     to Control Panel, and then restart the computer.
+
+   - In the High DMA box, click Use DMA. Click OK until you return to Control
+     Panel, and then restart the computer.
+
+  If you cannot use the sound card driver to configure single-mode DMA, click
+  Cancel until you return to Control Panel, and then proceed to the "Disable
+  Force-Feedback Effects" method in this article.
+
+To configure a native sound card driver on a Windows 95-, Windows 98-, or Windows
+ME-based computer to use single-mode DMA, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab.
+
+4. Expand the "Sound, video and game controllers" list.
+
+5. Click the sound card, and then click Properties.
+
+6. Click the Resources tab.
+
+7. Under Resource Type, locate the Direct Memory Access (DMA) lines. If you see
+  more than one Direct Memory Access (DMA) line, configure the sound card for
+  single-mode DMA. To do this, follow these steps:
+
+  a. Click to clear the Use Automatic Settings check box.
+
+  b. In the Settings Based On box, click a Basic Configuration that uses only
+     one DMA channel setting.
+
+     If you see a message about a conflict in the Conflicting Device List box,
+     repeat this step to select another basic configuration that uses only one
+     DMA channel and does not conflict with any other devices.
+
+     If you do not see a message about a conflict in the Conflicting Device List
+     box, click OK, and then click Yes.
+
+  c. Click Close, and then restart the computer.
+
+  If you see only one Direct Memory Access (DMA) line, or if you cannot find a
+  basic configuration that uses only one DMA channel, click Cancel twice, and
+  then proceed to the next method.
+
+Disable Force-Feedback Effects
+------------------------------
+
+If you use a SideWinder Force Feedback Pro 1 joystick or SideWinder Force
+Feedback Wheel, disable the force-feedback effects. To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers.
+
+3. Click to select Microsoft SideWinder Force Feedback Pro or Microsoft
+  SideWinder Force Feedback Wheel.
+
+4. Click Properties.
+
+5. Click the Settings tab. Drag the Force Feedback slider to the Off position.
+
+6. Click OK, and then click OK again.
+
+  -or-
+
+  Start Midtown Madness 2.
+
+7. Click Options and then click Control.
+
+8. Click to clear the Force Feedback check box.
+
+9. Click Done.
+
+If this resolves the issue, you may need to call Microsoft SideWinder Force
+Feedback Technical Support at (425) 635-7040 for additional assistance with
+troubleshooting your SideWinder Force Feedback game controller.
+
+REFERENCES
+==========
+
+For additional information about how to troubleshoot issues with your SideWinder
+Force Feedback game controller, click the article numbers below to view the
+articles in the Microsoft Knowledge Base:
+
+  Q175184 SideWinder Force Feedback Pro: No Forces Felt on Test Forces Tab
+
+  Q175701 No Force Feedback Effects Testing SideWinder Force Feedback Pro
+
+  Q175233 SideWinder Force Feedback Pro Test Is Slow or Does Not Respond
+
+  Q174436 Game Port Resource Settings for SideWinder Force Feedback
+
+  Q174432 Game Port Requirements for SideWinder Force Feedback Controller
+
+  Q173689 SideWinder Force Feedback Controller Behaves Erratically
+
+  Q175158 Your Gaming Device is Not Connected...
+
+  Q175054 SideWinder Not Compatible with Game Port-MIDI Adapter Cable
+
+  Q174437 Joystick Does Not Work or You Do Not Feel Force Feedback Effects
+
+  Q174433 How to Connect SideWinder Force Feedback for Best Performance
+
+Additional query words: kbimu homegame msgame
+
+======================================================================
+Keywords          : kbimu 
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

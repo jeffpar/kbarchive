@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120513: PRB: Output Parameters Not Received From Stored Procedure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120513: PRB: Output Parameters Not Received From Stored Procedure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120513/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120513/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120513/","publisher":null,"image":null,"headline":"Q120513: PRB: Output Parameters Not Received From Stored Procedure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120513-prb-output-parameters-not-received-from-stored-procedure">Q120513: PRB: Output Parameters Not Received From Stored Procedure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120513
+Product(s): Microsoft C Compiler
+Version(s): 1.50 1.51 1.52
+Operating System(s): 
+Keyword(s): kbcode kbDatabase kbMFC kbODBC kbVC kbprb
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using stored procedures with the Microsoft Foundation Class Library
+CRecordset class, no values are returned from the stored procedures for output
+parameters.
+
+CAUSE
+=====
+
+The record field exchange (RFX) functions handles the fifth parameter of
+SQLSetParam (cbColDef) incorrectly.
+
+RESOLUTION
+==========
+
+If you are using the ODBC SQL Server driver, you can write a custom record field
+exchange (RFX) function to handle the CFieldExchange::BindParam operation
+differently. Call your custom RFX function rather than the existing MFC RFX
+functions. The sample code below demonstrates two cases; one for RFX_Long() and
+and one for RFX_Text().
+
+MORE INFORMATION
+================
+
+ODBC needs to know whether a parameter is an output parameter for a parameter
+marker. ODBC 1.0 didn't make it clear how this was to be done. In ODBC 2.0 a new
+function, SQLBindParameter(), can tell a 2.0 driver what type of parameter it
+has (input or output). A feature was added to the ODBC 1.0 SQL Server driver to
+allow this to occur.
+
+To specify whether a parameter to a stored procedure is an output parameter, add
+to or pass the value of 65536 to the cbColDef parameter of the SQLSetParam ODBC
+API. The parameter's SQL data type determines if the value is added or passed.
+
+Listed in Appendix D of the ODBC Programmer's Reference manual is a table of
+precisions for the cbColDef parameter. If the table says that the cbColDef
+argument is ignored, pass the value of 65536 for cbColDef. If the value is not
+ignored, add the value to cbColDef.
+
+The sample code below demonstrates both cases. The only way this code differs
+from the MFC implementations, RFX_Long and RFX_Text, is that these pass the
+correct value for the fifth parameter in the call to SQLSetParam. Call these
+functions from your CRecordset's DoFieldExchange where you would normally call
+RFX_Text and RFX_Long when using parameters in your recordset.
+
+Sample Code
+-----------
+
+  #define SQL_OUTPUT_PARAM_VALUE 65536
+
+  void AFXAPI RFX_LongOut(CFieldExchange* pFX, const char *szName, long&amp;
+  value)
+
+  {
+      if( pFX-&gt;m_nOperation == CFieldExchange::BindParam )
+      {
+          // deal with the special case ourselves
+          RETCODE nRetCode;
+          ASSERT(AfxIsValidAddress(pFX, sizeof(CFieldExchange)));
+          ASSERT(AfxIsValidString(szName));
+          UINT nField;
+          if (!pFX-&gt;IsFieldType(&amp;nField))
+              return;
+
+          LONG* plLength = pFX-&gt;m_prs-&gt;GetFieldLength(pFX);
+
+          if (pFX-&gt;m_prs-&gt;IsFieldFlagNull(nField, CFieldExchange::param))
+              *plLength = SQL_NULL_DATA;
+          else
+              *plLength = sizeof(value);
+          // For params, CType is same as SQL type
+          AFX_SQL_SYNC(::SQLSetParam(pFX-&gt;m_hstmt,
+             (unsigned short int)nField,
+
+             (short int)SQL_C_LONG, (short int)SQL_C_LONG,
+             (unsigned long )SQL_OUTPUT_PARAM_VALUE, 0, &amp;value, plLength))
+  ;
+          if (nRetCode != SQL_SUCCESS)
+              pFX-&gt;m_prs-&gt;ThrowDBException(nRetCode, pFX-&gt;m_hstmt);
+      }
+      else
+      {
+          // let MFC handle all other operations
+          RFX_Long( pFX, szName, value );
+      }
+  }
+
+  void AFXAPI RFX_TextOut( CFieldExchange* pFX, const char *szName,
+                           CString&amp; value, int nMaxLength /*= 255*/,
+                           int nColumnType /*= SQL_VARCHAR*/ )
+  {
+      // handle this ourselves
+      if( pFX-&gt;m_nOperation == CFieldExchange::BindParam )
+      {
+          ASSERT(AfxIsValidAddress(pFX, sizeof(CFieldExchange)));
+          ASSERT(AfxIsValidString(szName));
+          ASSERT(AfxIsValidAddress(&amp;value, sizeof(CString)));
+
+          RETCODE nRetCode;
+          UINT nField;
+          if (!pFX-&gt;IsFieldType(&amp;nField))
+              return;
+
+          LONG* plLength = pFX-&gt;m_prs-&gt;GetFieldLength(pFX);
+
+          *plLength = SQL_NTS;
+          // Preallocate to nMaxLength
+          value.GetBufferSetLength(nMaxLength);
+          AFX_SQL_SYNC(::SQLSetParam(pFX-&gt;m_hstmt,
+            (unsigned short int)nField,
+
+           (short int)SQL_C_CHAR, (short int)nColumnType,
+           (unsigned long)SQL_OUTPUT_PARAM_VALUE + value.GetLength(),
+              0, value.GetBuffer(0), plLength));
+          value.ReleaseBuffer();
+          if (nRetCode != SQL_SUCCESS)
+              pFX-&gt;m_prs-&gt;ThrowDBException(nRetCode, pFX-&gt;m_hstmt);
+
+      }
+      else
+      {
+          // let MFC handle all other operations
+          RFX_Text( pFX, szName, value, nMaxLength, nColumnType );
+      }
+  }
+
+NOTE: The ODBC 2.0 Programmer's Reference recommends using the SQLBindParameter()
+function rather than SQLSetParam(). The only reason SQLSetParam() is used here
+is because it is documented in the on-line documentation for Microsoft Visual
+C++ version 1.5.
+
+
+Additional query words: 1.50 1.51 1.52 2.00 2.10 2.50 2.51 2.52
+
+======================================================================
+Keywords          : kbcode kbDatabase kbMFC kbODBC kbVC kbprb 
+Technology        : kbAudDeveloper kbMFC
+Version           : 1.50 1.51 1.52
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191315/","publisher":null,"image":null,"headline":"Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191315-bug-on-error-does-not-trap-alias-not-found-error">Q191315: BUG: ON ERROR Does Not Trap "Alias Not Found" Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191315
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro's ON ERROR command does not trap the following error:
+
+  Alias not found error (error 13).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a program that contains the following code and run the program:
+
+     SET SAFETY OFF
+     ON ERROR WAIT WINDOW ("FIRST ON ERROR: " + CHR(13) + MESSAGE())
+     CREATE DATABASE Ztest
+     CREATE TABLE Ztest (FirstName C(20), LastName C(20))
+     USE Ztest EXCLUSIVE
+     INDEX ON LEFT(Ztest.FirstName,6) TAG FIRST6 OF Ztest &amp;&amp; Comment this
+                                                          &amp;&amp; line.
+     SELECT Ztest
+     USE
+     SET SAFETY OFF
+     ON ERROR WAIT WINDOW ("Second ON ERROR: " + CHR(13) + MESSAGE())
+     USE Ztest  ALIAS CLOSE_Ztest
+     SET ORDER TO TAG FIRST6
+     USE
+     ON ERROR
+     *  Clean up and delete files.
+     CLOSE ALL
+     DELETE FILE Ztest.DBC
+     DELETE FILE Ztest.dcx
+     DELETE FILE Ztest.dct
+     DELETE FILE Ztest.DBF
+
+Run the program and note that the ON ERROR routine traps the following error:
+
+  Variable 'First6' not found.
+
+Next, place an asterisk (*) in front of the INDEX ON command in the code. Run the
+code again and note that the ON ERROR command does not trap the "Alias not
+found" error. In addition, the ON ERROR command does not trap error 13 when
+evoked from the Command window either.
+
+Additional query words: kbVFp300bbug kbVFp500abug kbVFp600bug kbXBase kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

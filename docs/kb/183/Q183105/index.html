@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183105/","publisher":null,"image":null,"headline":"Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183105-xadm-dr-watson-while-upgrading-from-40-sp4-to-55">Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183105
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 05-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are upgrading from Exchange Server 4.0 SP4 to Exchange Server version
+5.5, the upgrade fails with the following Dr. Watson Error Access violation when
+it scans the Priv.edb file for the second time:
+
+  The application, exe\srvrmax.dbg, generated ....
+  c0000005 _ at address 6fef7bec (JetDetachDatabase)
+
+NOTE: This can happen only on a bridgehead server.
+
+CAUSE
+=====
+
+The Dr. Watson error message appears while you are upgrading the Priv.edb file,
+even though it can be upgraded from the command line. The manual upgrade of the
+directory ends around 40 percent with the error -1026 JET_errRecordTooBig. The
+overflowed attribute is Reps-To-Ext in the Site Object, which corresponds to the
+number of directory replication connectors.
+
+WORKAROUND
+==========
+
+There are two possible workarounds:
+
+- First workaround:
+
+  1. In the Administrator window, choose Directory Replication. Double-click
+     the directory replication connector you want to use.
+
+  2. Select the General tab.
+
+  3. In the Local bridgehead server box, select the local server that will
+     process incoming and outgoing requests for updated directory information.
+     The default server is the server you are currently logged on to.
+
+  NOTE: You can change the local bridgehead server for a directory replication
+  connector. However, to reflect this change in the remote server, you must
+  update the remote bridgehead server in the General property page of the
+  corresponding directory replication connector. Changing the bridgehead server
+  causes all replication information to be rewritten and re-replicated.
+
+  -OR-
+
+- Second workaround:
+  Perform the two-step upgrade from a command line:
+
+  1. Copy the Dir.edb file to a temporary directory.
+
+  2. Copy the Edb.dll file from the Exchange Server 4.0 computer that was
+     running (SP2, SP3, or SP4) and rename it Edb40.dll. Then copy the Edb.dll
+     and the Edbutil.exe files from the 5.0 SP2 version to this directory.
+
+  3. Run EDBUTIL /u dir.edb /dedb40.dll (with Edb.dll from 5.0 SP2. The
+     Edb40.dll file is Edb.dll from the 4.0 SP in use).
+
+  4. Run ESEUTIL /u dir.edb /dedb55.dll. (Edb55.dll is the Edb.dll file found
+     on the version 5.5 CD-ROM.)
+
+  5. Copy the resulting Dir.edb file back.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.5. For information about obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : 5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

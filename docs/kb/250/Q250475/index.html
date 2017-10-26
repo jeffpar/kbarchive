@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250475/","publisher":null,"image":null,"headline":"Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250475-prb-vbce-deactivate-event-fires-when-second-form-is-closed">Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250475
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,2.11,3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbOSWinCE100 kbGrpDSVB kbDSupport
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+- Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+   - Microsoft Windows CE versions 2.0, 2.11 for the Handheld PC 
+   - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After closing a form that has been shown on top of another form, the Deactivate
+event of the form that is being closed fires. This occurs only when the
+application is run on the remote device.
+
+RESOLUTION
+==========
+
+To work around this behavior, a form level variable can be used to determine
+when the event should fire. The following example sets the form level variable
+in the QueryUnload event so that the Deactivate event does not fire:
+
+  Dim FireDeactivateEvent
+
+  Private Sub Form_Deactivate()
+      If FireDeactivateEvent Then
+          MsgBox "Deactivate"
+      End If
+  End Sub
+
+  Private Sub Form_Load()
+      FireDeactivateEvent = True
+  End Sub
+
+  Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+      FireDeactivateEvent = False
+  End Sub
+
+MORE INFORMATION
+================
+
+This behavior only occurs in the Windows CE Platform and only on the remote
+device.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE Project in Visual Basic. Form1 is created by default.
+
+2. Add the following code behind Form1:
+
+  Private Sub Form_Click()
+      Form2.Show
+  End Sub
+
+3. Add a second form to the project.
+
+4. Add the following code behind Form2:
+
+  Private Sub Form_Deactivate()
+      MsgBox "Deactivate"
+  End Sub
+
+5. Press the F5 key to run the program.
+
+6. Click on Form1 and note that Form2 appears.
+
+7. Close Form2 and note that the message box appears after Form2 is closed.
+
+Additional query words: wce vbce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCE100 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :2.0,2.11,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

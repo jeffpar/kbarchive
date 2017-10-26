@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253732/","publisher":null,"image":null,"headline":"Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253732-howto-use-foxpro-and-msxml-to-return-information-about-xml-doc">Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253732
+Product(s): Microsoft FoxPro
+Version(s): 2.5,2.6,3.0,6.0
+Operating System(s): 
+Keyword(s): kbMiscTools kbvfp600 kbXML kbGrpDSFox kbDSupport kbMSXML kbGrpDSMSXML
+Last Modified: 06-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft XML, versions 2.5, 2.6, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This simple example shows how to return values from an XML document using
+Microsoft Visual FoxPro.
+
+MORE INFORMATION
+================
+
+This example uses the Microsoft XML (MSXML) parser to move data from an XML
+document to a FoxPro table. The parser is available at:
+
+  http://msdn.microsoft.com/xml/default.asp
+
+The following code creates the Microsoft MSXML ActiveX object to accesses
+information contained in an XML document and displays it:
+
+1. Install the MSXML parser.
+
+2. Create the XML document by copying the sample XML code below to a text file
+  and name the file with the extension .
+
+3. Create a FoxPro program file with the following code and run the program:
+
+  PUBLIC oXML  
+
+  oXML=CREATEOBJECT('msxml.domdocument')  &amp;&amp; This creates the parser object
+
+  oXML.LOAD(GETFILE('xml'))  &amp;&amp; This gets and loads the XML document. 
+
+  *** Select the XML document created from the XML code below.
+
+  *** The following gives the basename / RootElemant of the XML document
+  ? oXml.DocumentElement.Basename 
+
+  *** The following gives the number of nodes (or records)           
+  ? oXML.documentelement.childnodes.LENGTH  
+
+  *** REMEMBER that the object model is in base zero.
+  *** Therefore use the following in looping expressions  
+  ? oXML.documentelement.childnodes.LENGTH - 1
+
+  *** The following returns the number of child nodes contained under the first Item
+  *** This is useful for looping through a childes elements
+  *** FOR ichild = 0 TO oXML.documentelement.childnodes.ITEM(0).childnodes.LENGTH - 1
+  ? oXML.documentelement.childnodes.ITEM(0).childnodes.LENGTH - 1
+
+  *** The following returns the nodename of the childnode  
+  ? oxml.documentelement.childnodes.item(0).childnodes(0).nodename
+
+  *** The following returns the data contained in the childnode
+  ? oXML.documentelement.childnodes.ITEM(0).childnodes(0).TEXT
+
+  *** Returns a string of all the data contained in the second child / record
+  ? oXml.documentelement.childnodes.item(1).nodetypedvalue
+
+XML Code
+--------
+
+  &lt;orders_table&gt;
+
+      &lt;orders&gt;
+  	&lt;order_id&gt; 10040&lt;/order_id&gt;
+  	&lt;cust_id&gt;WHITC &lt;/cust_id&gt;
+  	&lt;emp_id&gt;     3&lt;/emp_id&gt;
+  	&lt;to_name&gt;White Clover Markets&lt;/to_name&gt;
+  	&lt;to_address&gt;1029 - 12th Ave. S.&lt;/to_address&gt;
+  	&lt;to_city&gt;Bellevue&lt;/to_city&gt;
+  	&lt;to_region&gt;WA&lt;/to_region&gt;
+  	&lt;postalcode&gt;98124&lt;/postalcode&gt;
+  	&lt;to_country&gt;USA&lt;/to_country&gt;
+  	&lt;ship_count&gt;USA&lt;/ship_count&gt;
+  	&lt;ship_via&gt;     3&lt;/ship_via&gt;
+  	&lt;order_date&gt;09/09/93&lt;/order_date&gt;
+  	&lt;order_amt&gt;$1,991.00&lt;/order_amt&gt;
+  	&lt;order_dsc&gt;10&lt;/order_dsc&gt;
+  	&lt;order_net&gt;$1,842.88&lt;/order_net&gt;
+  	&lt;require_by&gt;10/07/93&lt;/require_by&gt;
+  	&lt;shipped_on&gt;09/18/93&lt;/shipped_on&gt;
+  	&lt;freight&gt;$51.88&lt;/freight&gt;
+      &lt;/orders&gt;
+      &lt;orders&gt;
+  	&lt;order_id&gt; 10095&lt;/order_id&gt;
+  	&lt;cust_id&gt;LAZYK &lt;/cust_id&gt;
+  	&lt;emp_id&gt;     3&lt;/emp_id&gt;
+  	&lt;to_name&gt;Lazy K Kountry Store&lt;/to_name&gt;
+  	&lt;to_address&gt;12 Orchestra Terrace&lt;/to_address&gt;
+  	&lt;to_city&gt;Walla Walla&lt;/to_city&gt;
+  	&lt;to_region&gt;WA&lt;/to_region&gt;
+  	&lt;postalcode&gt;99362&lt;/postalcode&gt;
+  	&lt;to_country&gt;USA&lt;/to_country&gt;
+  	&lt;ship_count&gt;USA&lt;/ship_count&gt;
+  	&lt;ship_via&gt;     3&lt;/ship_via&gt;
+  	&lt;order_date&gt;12/10/93&lt;/order_date&gt;
+  	&lt;order_amt&gt;$530.00&lt;/order_amt&gt;
+  	&lt;order_dsc&gt;10&lt;/order_dsc&gt;
+  	&lt;order_net&gt;$479.58&lt;/order_net&gt;
+  	&lt;require_by&gt;01/07/94&lt;/require_by&gt;
+  	&lt;shipped_on&gt;12/11/93&lt;/shipped_on&gt;
+  	&lt;freight&gt;$2.58&lt;/freight&gt;
+       &lt;/orders&gt;
+
+  &lt;/orders_table&gt;
+
+REFERENCES
+==========
+
+For additional information on XML, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q191758 Convert FoxPro Cursor into XML Data Format
+
+  Q253713 Move Data From an XML Document into a FoxPro Table
+
+For more information about XML, see the following Web sites:
+
+  http://www.w3.org
+
+  http://www.xml.com
+
+Additional query words: kbsweptMDAC260 GRANTS Jul-19-2000
+
+======================================================================
+Keywords          : kbMiscTools kbvfp600 kbXML kbGrpDSFox kbDSupport kbMSXML kbGrpDSMSXML 
+Technology        : kbVFPsearch kbAudDeveloper kbMSXMLSearch kbVFP600 kbMSXML250 kbMSXML260 kbMSXML300
+Version           : :2.5,2.6,3.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174746/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174746/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174746/","publisher":null,"image":null,"headline":"Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174746-xadm-err-msg-unexpected-nt-api-error-0xc000000d">Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174746
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kb3rdparty kbpatch kbBug kbfix kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use Innoculan anti-virus software on a Windows NT Server version 4.0
+Service Pack 3 (SP3) computer running Microsoft Exchange Server, the Exchange
+Directory (DS) service will not start. In the Windows NT Event Viewer
+Application log, you will see the following error:
+
+  Unexpected NT API error: 0xC000000D
+  MSExchange DS ((153) ) - 1022
+  Error -1022 has occurred (internal ID 2030149). Contact Microsoft
+  Technical Support for assistance.
+  The Microsoft Exchange Server database (EDB) could not be initialized
+  and returned error -1022. Unrecoverable error, the directory can't
+  continue.
+
+This is because Innoculan installs a file system filter that disables the JET
+engine ESE97, from addressing database files.
+
+WORKAROUND
+==========
+
+One of the two following workarounds may be used if Innoculan is installed on
+the Exchange Server.
+
+1. Uninstall Innoculan and restart the computer. Disabling the Innoculan service
+  is not sufficient.
+
+2. Install a Windows NT hotfix that been released to customers as part of the
+  roll-up hotfixes that are recommended in the readme.doc file for Microsoft
+  Exchange Server, version 5.5. These hotfixes are available at:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postSP3/roll-up/
+
+  Note: If you later re-install Windows NT Service Packs, you must also
+  re-install the hotfixes regardless of your responses to the Overwrite Newer
+  Files prompts during the Service Pack installation.
+
+MORE INFORMATION
+================
+
+This same error has occured with Norton NT Tools version 1.0 installed.
+Disabling the Norton service does not work, it must be removed.
+
+Omtool Fax Senior 2.5 will produce this error with an internal ID of 2030148. The
+hotfix noted above also corrects this problem.
+
+Additional query words: Innoculan
+======================================================================
+Keywords          : kb3rdparty kbpatch kbBug kbfix kbISS 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : 5.5
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

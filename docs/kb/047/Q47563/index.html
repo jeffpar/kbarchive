@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47563: CTRL+A and CTRL+B Bytes Stripped from String Constants in .EXE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47563: CTRL+A and CTRL+B Bytes Stripped from String Constants in .EXE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47563/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47563/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47563/","publisher":null,"image":null,"headline":"Q47563: CTRL+A and CTRL+B Bytes Stripped from String Constants in .EXE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47563-ctrla-and-ctrlb-bytes-stripped-from-string-constants-in-exe">Q47563: CTRL+A and CTRL+B Bytes Stripped from String Constants in .EXE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47563
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890721-81 B_BasicCom | mspl13_basic
+Last Modified: 29-JAN-1991
+
+BC.EXE in QuickBASIC version 4.50 strips out the characters CTRL+A and
+CTRL+B (ASCII 1 and 2) from quoted strings at compile time, whereas
+QB.EXE allows these characters. Inside QB.EXE, a CONST or a variable
+assigned a value of a literal STRING consisting of the CTRL+A or
+CTRL+B characters correctly has both a length and a graphics
+representation. In an .EXE program compiled with BC.EXE, neither one
+has a length or a graphics representation. This is a limitation with
+BC.EXE in QuickBASIC version 4.50, but not with earlier versions.
+
+This design limitation also applies to BC.EXE in Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS and MS OS/2. QBX.EXE 7.00 and 7.10 allows ASCII 1 and 2 values
+in quoted strings.
+
+BC.EXE reserves the ASCII 1 and 2 bytes to internally represent
+end-of-statement and end-of-line. QB.EXE and QBX.EXE are more lenient
+in allowing ASCII 1 and 2 bytes to be used in strings.
+
+Code Example
+------------
+
+To enter the ASCII character 01 or 02 (smiley or inverse smiley face)
+into a quoted string within the QB.EXE or QBX.EXE environment, you
+must press CTRL+P followed by CTRL+A or CTRL+B. In the following
+program, the caret symbol (^) represents holding down the CTRL key
+while pressing the next key:
+
+   CONST a = "^P^A"    ' Smiley face representation of CTRL+A
+   CONST b = "^P^B"    ' Inverse smiley face representation of CTRL+B
+
+   a1$ = "^P^A"
+   b1$ = "^P^B"
+
+   PRINT a, a1$, CHR$(1), LEN(a1$)
+   PRINT b, b1$, CHR$(2), LEN(b1$)
+
+Note that the functions CHR$(1) and CHR$(2) return the same ASCII
+values (01 and 02) at run time as pressing CTRL+A and CTRL+B at edit
+time. The problem does not occur if you print the function CHR$(1) or
+CHR$(2), or assign either to a string variable. To work around the
+problem, assign CHR$(1) and CHR$(2) to a string variable (but not to a
+CONST constant). For example:
+
+   a1$ = CHR$(1)
+   b1$ = CHR$(2)
+   PRINT a1$, CHR$(1), LEN(a1$)   ' Works fine in .EXE
+   PRINT b1$, CHR$(2), LEN(b1$)   ' Works fine in .EXE
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

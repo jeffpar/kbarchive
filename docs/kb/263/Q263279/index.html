@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263279: SMS: Advertisement Fails with Error 10003 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263279: SMS: Advertisement Fails with Error 10003" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263279/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263279/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263279/","publisher":null,"image":null,"headline":"Q263279: SMS: Advertisement Fails with Error 10003","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263279-sms-advertisement-fails-with-error-10003">Q263279: SMS: Advertisement Fails with Error 10003</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263279
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbSoftwareDist
+Last Modified: 10-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run an advertised program on a Microsoft Windows NT
+Workstation or Microsoft Windows 2000 Professional computer, the targeted
+computer fails and generates the following error status message:
+
+  10003
+  An error occurred while preparing to run the program for advertisement
+  "DEF20001" ("Test Running APP from Network Drive" - "Run TESTAPP from O:
+  drive"). The operating system reported error 2147500037: Unspecified error
+  Additional program properties: Command line: O:\TESTAPP.EXE Working
+  directory: C:\WINNT\MS\SMS\clicomp\apa\Bin\ Drive letter (? = any): UNC
+  Possible cause: This message most commonly occurs when the program?s
+  command-line executable file could not be found, when a required drive letter
+  connection to a distribution point could not be established, or when the
+  program is configured to use the Windows NT Client Software Installation
+  Account but the account is not specified, could not be found, or does not
+  have the appropriate permissions. Solution: Check each of the items listed
+  above.
+
+CAUSE
+=====
+
+This problem can occur when both of the following conditions are true:
+
+- The Advertised Program's command line includes a reference to a network path.
+  For example, O:\Setup.exe, where O: is mapped by the logged on user to a
+  network share resource.
+
+- The Advertised Program's environment properties specify "Run with
+  Administrative rights."
+
+WORKAROUND
+==========
+
+When advertising programs where the command lines reference network resources
+directly, you can use either of the following two methods:
+
+The Program Does Not Need to Be Run with Administrative Rights
+--------------------------------------------------------------
+
+In the Program's Environment settings, under Run Mode, click to select the "Run
+with user's rights" option.
+
+The Program Must Be Run with Administrative Rights
+--------------------------------------------------
+
+- In the Program's Environment settings, under Run Mode, click to select the
+  "Run with administrative rights" option.
+
+- Click to select the option "Use Windows NT client software installation
+  account".
+
+- For the Program command line, specify a valid UNC path, including the program
+  name and any required parameters. For example:
+
+  \\server\share\directory\setup.exe /parameter1 /parameter2
+
+NOTE: To use the Windows NT client software installation account, some
+prerequisites must be met:
+
+- You must create a valid Windows NT client software installation account in
+  the domain that is a member of at least one global group.
+
+- You must specify the Windows NT client software installation account in the
+  Site Settings, under "Component Configuration - Software Distribution".
+
+- You must set the "Program can run:" option to "Whether or not a user is
+  logged in" or "Only when no user is logged in".
+
+MORE INFORMATION
+================
+
+A typical scenario may involve running a command line from a network resource
+(other than a Systems Management Server Distribution Point) accessible by the
+user. However, when the option "Run with administrative rights" is selected in
+the Environment tab of a program, this forces the program to launch under the
+context of the local SMSCliToknAcct&amp; account on a Windows NT Workstation or
+Windows 2000 Professional computer. The SMSCliToknAcct&amp; has no access to
+network resources, and the attempt to execute the program fails. A connection is
+provided to valid distribution points by the Systems Management Server Client so
+it does not have to authenticate against the network.
+
+For additional information about usage of the Windows NT client software
+installation account, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q235811 Using the SMS Windows NT Client Software Installation Account
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

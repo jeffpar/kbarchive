@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176428/","publisher":null,"image":null,"headline":"Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176428-prb-msrdo20ocx-not-registered-when-running-application-setup">Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176428
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbVBp500 kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running an application that uses Remote Data Objects (RDO) the following
+errors may occur:
+
+  "MSRDO20.OCX Not registered."
+
+  No errors were encountered when installing the application.
+
+  -or-
+
+  An error occurred while registering the file MSRDO20.DLL MSRDC20.OCX
+
+CAUSE
+=====
+
+In order for RDO to be properly registered, ODBC must be installed prior to
+installing the Visual Basic application.
+
+RESOLUTION
+==========
+
+Install ODBC prior to installing the Visual Basic application that uses RDO. On
+the Visual Basic Product CD-ROM in the \ODBC directory is an application that
+will install ODBC. For Visual Studio, Disk One \VB\ODBC is the location. The
+ODBC installation program and it components are re-distributable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+This problem also occurs in Visual Basic 4.0 when using MSRDO32.DLL. ODBC must
+be installed first.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an application that includes MSRDO20.
+
+2. Run the application Setup Wizard to produce setup images.
+
+3. Install the application on a computer that does not have ODBC installed.
+
+4. Run the application.
+
+REFERENCES
+==========
+
+For Visual Basic 5.0, the "Programmer's Guide", Chapter 17 "Distributing
+Applications" pages 799-800.
+
+Additional query words: kbdse
+
+======================================================================
+Keywords          : kberrmsg kbVBp500 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

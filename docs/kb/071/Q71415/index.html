@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71415/","publisher":null,"image":null,"headline":"Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71415-effect-of-the-rmargin-switch-in-the-pwb-1011-editor">Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71415
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Programmer's WorkBench (PWB) has two switches called rmargin and wordwrap
+that affect behavior within the editor when typing towards the end of a line.
+These two switches can be used together to force line breaks as you type past a
+specified margin. However, the PWB documentation for versions 1.0 and 1.1 is
+somewhat incomplete in describing exactly how rmargin works.
+
+The rmargin switch changed in PWB 2.0 to indicate the right margin, rather than
+the beginning of the word wrapping zone.
+
+MORE INFORMATION
+================
+
+To use rmargin, the wordwrap switch must be set to "yes" to enable word wrapping
+at the right margin. With wordwrap turned on, the number specified by the
+rmargin switch controls the right column margin. The C version 6.0 and 6.0a
+"Microsoft C Reference" manual (page 83) describes the rmargin switch as
+follows:
+
+  Controls the right column margin used for wordwrap mode. Any character typed
+  to the right of this margin causes a line break.
+
+The C 6.0 and 6.0a online help for rmargin changes the wording of the second
+sentence above to the following:
+
+  A space typed to the right of this margin causes subsequent characters to be
+  placed on the following line.
+
+In reality, neither of these descriptions is entirely true. There are two ways
+that an automatic line break will occur:
+
+1. If any space is typed after the column specified by rmargin, a forced line
+  break will occur at that point.
+
+2. If any word extends six characters past the rmargin column, a forced line
+  break will be inserted before the word, causing the word to be moved to the
+  next line. The documentation neglects any mention of this behavior.
+
+These are the only two cases where PWB will force a line break. PWB does not
+immediately wordwrap when a character is typed past the right margin as one
+might expect.
+
+In some cases, you may want to ensure that you do not have any text after a
+specified column. This can be done by setting rmargin to six less then the last
+column in which you want text to appear. A simple formula for this is:
+
+     rmargin = last_column_to_allow_text - 6
+
+By setting rmargin to a value as indicated by this formula, a line break will
+occur if a space is inserted into any of the last six columns before the column
+specified by last_column_to_allow_text, or a word will be moved down to the next
+line if it extends past last_column_to_allow_text. Thus, no characters will ever
+be allowed to the right of last_column_to_allow_text.
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

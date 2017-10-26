@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74505: Setting Default Margins, Font, and Point Size in Write | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74505: Setting Default Margins, Font, and Point Size in Write" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74505/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74505/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74505/","publisher":null,"image":null,"headline":"Q74505: Setting Default Margins, Font, and Point Size in Write","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74505-setting-default-margins-font-and-point-size-in-write">Q74505: Setting Default Margins, Font, and Point Size in Write</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74505
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is no built-in setting within Microsoft Write to set the default font and
+point size, or to set the default margins. However, it is possible to create a
+blank file with the font and point sizes and margins in it.
+
+MORE INFORMATION
+================
+
+The following are the steps to set up Write with a default font and point size
+and default margins. If you have different printers connected that have
+different font capabilities, you may want to have multiple Write icons, each
+starting with a font that is compatible with the desired printer.
+
+NOTE: The listed fonts within Write are not necessarily compatible with all
+printers. Write will update its configuration (within WIN.INI) with fonts that
+are addressable through the printer's driver. These fonts are not changed when
+using a different printer. Therefore, printing to a different printer with a
+font that is not built into that printer results in the printer using its
+default font.
+
+Step to Set Up Default Font Only (Windows 3.0 or 3.0a)
+------------------------------------------------------
+
+Edit the [MSWrite] section in the WIN.INI file to default to the desired font
+with the Font1 entry. For example:
+
+     [MSWrite]
+     Font1=Script,48,255
+     Font2=Courier,48,0
+     Font3=LinePrinter,48,0
+
+Steps to Set Up the Default Font and Point Size for Write
+---------------------------------------------------------
+
+1. Run Write.
+
+2. From the Document menu, choose Page Layout.
+
+3. Select the margins desired.
+
+4. From the Character menu, choose Fonts.
+
+5. Select the font and point size desired.
+
+6. Type a few spaces for the changes to take effect.
+
+7. Save the file as a filename such as WRITEFON.WRI, and exit Write.
+
+8. Highlight the Write icon in Program Manager.
+
+9. From the File menu, choose Properties.
+
+10. Change the command line from
+
+  WRITE.EXE
+
+  to:
+
+  WRITE.EXE WRITEFON.WRI
+
+  and choose OK.
+
+Every time you select the Write icon, it loads WRITEFON.WRI, which contains the
+font and point size and margin settings. If you are creating multiple Write
+icons for multiple printers, you need to have a unique filename for each one.
+For example WRITEFON1.WRI for printer 1 and WRITEFON2.WRI for printer 2. To
+ensure that the file is not accidentally overwritten, start Windows File Manager
+and change the file attributes to "read only". When you try to save a document
+write will inform you that the file is read only and prompt you to save the file
+under a different name.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

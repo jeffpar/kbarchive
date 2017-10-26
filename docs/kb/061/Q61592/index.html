@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61592: Mouse Command-Line Switches for Mouse Driver Version 7.04 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61592: Mouse Command-Line Switches for Mouse Driver Version 7.04" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61592/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61592/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61592/","publisher":null,"image":null,"headline":"Q61592: Mouse Command-Line Switches for Mouse Driver Version 7.04","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61592-mouse-command-line-switches-for-mouse-driver-version-704">Q61592: Mouse Command-Line Switches for Mouse Driver Version 7.04</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61592
+Product(s): See article
+Version(s): 1.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | Video 7 Video-7 | mspl13_basic
+Last Modified: 29-AUG-1990
+
+The following are the current command-line options (switches) for
+Microsoft Mouse Driver version 7.04:
+
+   Option  Description
+   ------  -----------
+
+   /B      Using bus mouse
+
+   /Cn     Using serial mouse on port COMn
+           (where:  0 &lt;= n &lt;= 1)
+
+   /Dn     Enabling double-speed threshold
+           (where:  0 &lt;= n &lt;= 100)
+
+           0 =&gt; No threshold speed (always double speed)
+           100 =&gt; Maximum threshold speed (rarely double speed)
+
+   /Hn     Setting horizontal sensitivity
+           (where:  0 &lt;= n &lt;= 100)
+
+           0 =&gt; 0 horizontal mickeys per pixel scaling factor
+              (i.e., no horizontal movement returned)
+           100 =&gt; 100 horizontal mickeys per pixel scaling factor
+
+   /In     Using Microsoft InPort Mouse on primary or secondary InPort
+           (where:  n = 1  or  n = 2)
+
+   /L(c)   Selecting language c
+           Languages are defined as follows:
+
+              c         Language             Ordinal Value
+              -         --------             -------------
+
+          (default)     English                    0
+              F         French                     1
+              NL        Netherlands (Dutch)        2
+              D         German                     3
+              S         Swedish                    4
+              SF        Finnish                    5
+              E         Spanish                    6
+              P         Portuguese                 7
+              I         Italian                    8
+              K         Korean                     9
+              J         Japanese                   10
+
+   /Mn     Cursor mask override
+           (where:  0 &lt;= n &lt;= 255, n = 0 =&gt; mask off)
+
+           0 =&gt; Mask off
+           Not 0 =&gt; Mask on
+
+           (If software cursor is specified in function 10, then set
+           cursor to default software cursor. It tells the mouse
+           driver to determine which bit pattern to use to make
+           the cursor visible.)
+
+   /Nn     Using dampened cursor motion to fix LCD laptop display
+           problems
+           (where:  0 &lt;= n &lt;= 255)
+           (This slows down the screen update rate.)
+
+           0 =&gt;    Skip 0 interrupts (this is, same as normal mouse)
+           255 =&gt;  Skip 255 mouse hardware interrupts before
+                   processing data
+
+   /Pn     Selecting ballistic curve number n
+           (where:  1 &lt;= n &lt;= 4)
+
+           (Note that this may change if the specification changes.)
+
+   /R(n)   Setting interrupt rate
+           (where:  1 &lt;= n &lt;= 4, default n = 1)
+
+           1 =&gt; 30Hz
+           2 =&gt; 50Hz
+           3 =&gt; 100Hz
+           4 =&gt; 200Hz
+
+   /Sn     Setting both horizontal and vertical sensitivity
+           (where:  0 &lt;= n &lt;= 100)
+
+           0 =&gt; 0 mickeys per pixel scaling factor
+                (that is, no movement returned)
+           100 =&gt; 100 mickeys per pixel scaling factor
+
+   /Vn     Setting vertical sensitivity
+           (where:  0 &lt;= n &lt;= 100)
+
+           0 =&gt; 0 vertical mickeys per pixel scaling factor
+                (that is, no vertical movement returned)
+           100 =&gt; 100 vertical mickeys per pixel scaling factor
+
+   /Y      Disabling sprite and Video Seven code
+
+           (To disable mouse driver hardware cursor support on
+           certain Video Seven and C&amp;T VGA controllers.)
+
+   /Z      Using PS/2 mouse
+
+           (This is added for PS/2 only. It directs the driver to look
+           for the mouse at the mouse port.)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

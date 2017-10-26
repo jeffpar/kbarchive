@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132766: Plug and Play ISA Adapter Not Automatically Recognized | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132766: Plug and Play ISA Adapter Not Automatically Recognized" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132766/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132766/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132766/","publisher":null,"image":null,"headline":"Q132766: Plug and Play ISA Adapter Not Automatically Recognized","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132766-plug-and-play-isa-adapter-not-automatically-recognized">Q132766: Plug and Play ISA Adapter Not Automatically Recognized</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132766
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you insert a Plug and Play ISA adapter in a computer without PCI slots,
+Windows 95 may not recognize the new adapter automatically. Also, Device Manager
+may display the PCI bus with an exclamation point in a yellow circle, with the
+status "No Plug and Play ISA bus was found. (Code 29)."
+
+CAUSE
+=====
+
+This problem is caused by a Plug and Play BIOS that is not supported by Windows
+95 on computers that have a PCI BIOS but not a PCI bus.
+
+On PCI computers, it is the PCI driver that starts the Plug and Play ISA driver.
+If the PCI driver fails, the ISA driver is not loaded, and Plug and Play ISA
+adapters are not automatically recognized or configured.
+
+RESOLUTION
+==========
+
+To add a Plug and Play adapter so that Windows 95 automatically recognizes it,
+enable the ISA Plug and Play bus using the following steps:
+
+1. In Control Panel, double-click the Add New Hardware icon, and then click
+  Next.
+
+2. Click No, and then click Next.
+
+3. Click System Devices, and then click Next.
+
+4. Click ISA Plug And Play Bus, and then click Next.
+
+5. Click Finish.
+
+6. When you are prompted to restart your computer, do so.
+
+You may also want to contact your computer manufacturer to inquire about
+obtaining an updated Plug and Play BIOS that is supported by Windows 95.
+
+MORE INFORMATION
+================
+
+A supported Plug and Play BIOS correctly reports an ISA bus instead of a PCI
+bus.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

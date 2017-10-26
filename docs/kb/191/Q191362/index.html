@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191362/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191362/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191362/","publisher":null,"image":null,"headline":"Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191362-fpnw-pass-through-authentication-from-trusted-domain-may-fail">Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q191362</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WinNT</span><span class="p">:</span><span class="m">4.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbWinNT400sp4fix</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">10</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Services</span> <span class="n">for</span> <span class="n">NetWare</span> <span class="k">version</span> <span class="m">4.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.0</span><span class="p">,</span> <span class="n">Terminal</span> <span class="n">Server</span> <span class="n">Edition</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">A</span> <span class="n">hotfix</span> <span class="n">was</span> <span class="n">built</span> <span class="n">that</span> <span class="n">changes</span> <span class="n">the</span> <span class="n">functionality</span> <span class="k">of</span> <span class="n">how</span> <span class="n">File</span> <span class="k">and</span> <span class="n">Print</span> <span class="n">Services</span>
+<span class="n">for</span> <span class="n">NetWare</span> <span class="p">(</span><span class="n">FPNW</span><span class="p">)</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">login</span> <span class="n">scripts</span> <span class="n">that</span> <span class="n">contain</span> <span class="k">IF</span> <span class="n">MEMBER_OF</span>
+<span class="n">statements</span> <span class="n">work</span> <span class="n">when</span> <span class="nf">run</span> <span class="k">from</span> <span class="n">FPNW</span> <span class="n">servers</span> <span class="n">participating</span> <span class="k">in</span> <span class="n">a</span> <span class="n">master</span> <span class="n">domain</span>
+<span class="k">model</span> <span class="k">and</span> <span class="n">using</span> <span class="n">pass</span><span class="p">-</span><span class="n">through</span> <span class="n">authentication</span> <span class="k">to</span> <span class="n">validate</span> <span class="n">group</span> <span class="n">membership</span><span class="p">.</span> <span class="n">This</span>
+<span class="n">validation</span> <span class="n">may</span> <span class="n">fail</span> <span class="k">if</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="p">(</span><span class="n">PDC</span><span class="p">)</span> <span class="k">in</span> <span class="n">the</span> <span class="n">trusted</span> <span class="n">domain</span>
+<span class="n">is</span> <span class="n">down</span><span class="p">.</span>
+
+<span class="n">Please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="k">to</span> <span class="n">understand</span>
+<span class="n">the</span> <span class="n">functionality</span> <span class="n">change</span> <span class="k">of</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">referenced</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">that</span> <span class="n">does</span> <span class="k">not</span>
+<span class="n">work</span> <span class="n">properly</span> <span class="n">when</span> <span class="n">the</span> <span class="n">PDC</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Trusted</span> <span class="n">Domain</span> <span class="n">is</span> <span class="n">down</span><span class="p">:</span>
+
+  <span class="n">ARTICLE</span><span class="p">-</span><span class="n">ID</span><span class="p">:</span> <span class="n">Q150733</span>
+  <span class="n">TITLE</span> <span class="p">:</span> <span class="n">FPNW</span> <span class="n">Groups</span> <span class="k">Not</span> <span class="n">Recognized</span> <span class="k">from</span> <span class="n">Trusted</span> <span class="n">Domain</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="n">FPNW</span> <span class="n">server</span> <span class="n">queries</span> <span class="n">the</span> <span class="n">trusted</span> <span class="n">domain</span><span class="s1">'s domain controller when doing
+pass-through authentication. The API that the FPNW server was calling only
+queried the primary domain controller. The FPNW server now makes an API call
+that queries any domain controller.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+Additional query words: passthrough passthru pass-thru thru
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbServicesNetware400 kbServicesNetwareSearch
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

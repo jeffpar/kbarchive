@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163064/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163064/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163064/","publisher":null,"image":null,"headline":"Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163064-ode97-uninstalling-access-or-office-pro-97-may-break-run-time-a">Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163064
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 08-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+If you set up Microsoft Access 97 or Microsoft Office 97 Professional Edition
+with the Run From CD-ROM or Run From Network Server option, and then you remove
+(uninstall) Microsoft Office from your computer, you may receive the following
+error message when you try to start a Microsoft Access 97 run-time application:
+
+  Unable to initialize the system registry.
+  Rerun Microsoft Access or Office Setup.
+
+CAUSE
+=====
+
+This error only occurs when the following events occur in the order listed:
+
+- You set up Microsoft Access 97 or Microsoft Office 97 Professional Edition
+  with the Run from CD-ROM or Run from Network Server option.
+
+- You run Setup for a Microsoft Access 97 run-time application.
+
+- You uninstall Microsoft Access 97 or Microsoft Office 97 Professional
+  Edition.
+
+This error occurs because the Setup program for the run-time application detects
+that certain Microsoft Office components (such as Msaccess.exe) are available on
+the CD-ROM or network file server, so it does not install them on your hard
+drive. After you uninstall Microsoft Office, the components on the CD-ROM or the
+server are no longer available for the run- time application to use.
+
+RESOLUTION
+==========
+
+You must remove and reinstall your run-time application so that the required
+files for Microsoft Access 97 run-time components will be copied to your hard
+drive.
+
+REFERENCES
+==========
+
+For more information about installing run-time applications on a computer that
+installed Microsoft Access or Microsoft Office 97 with the Run from CD-ROM or
+Run from Network Server options, start the ODE Tools Setup Wizard, and then
+click the Tips button on the first screen of the Setup Wizard.
+
+Additional query words: runtime removing
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

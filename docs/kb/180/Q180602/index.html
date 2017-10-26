@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180602/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180602/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180602/","publisher":null,"image":null,"headline":"Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180602-rras-fails-to-start-with-event-ids-20103-20133-or-7024">Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180602
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer running both Windows NT Server and Routing and Remote Access
+Service (RRAS) may fail to start and one or more of the following events are
+logged in Event Viewer:
+
+  Event ID   : 20103
+  Source     : Router
+  Description: Unable to load C:\WINNT\system32\ipxrtmgr.dll.
+
+-or-
+
+  Event ID   : 20133
+  Source     : IPXRouterManager
+  Description: The description for Event ID (20133) in Source
+               (IPXRouterManager) could not be found.  It contains the
+               following insertion string(s):.
+
+
+-or-
+
+  Event ID   : 7024
+  Source     : Service Control Manager
+  Description: The Routing And Remote Access Service service terminated
+               with service-specific error 1003.
+
+CAUSE
+=====
+
+When RRAS is installed on a multihomed server (one that has two or more network
+interfaces) and Auto Frame Type Detection is enabled for the NWlink IPX/SPX
+Compatible Transport, the bindings may not be correctly enumerated for the
+IPXRouterManager in the registry.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. Manually set the internal network number and specify Manual Frame Type
+  Detection for the properties of the NWLink IPX/SPX Compatible Transport.
+
+  For more information, see the following article in the Microsoft Knowledge
+  base:
+
+  ARTICLE-ID: Q150546
+  TITLE : NWLink IPX/SPX: Network Number vs. Internal Network Number
+
+2. Click Start, point to Settings, and click Control Panel.
+
+3. Double-click Network, click the Services tab, and click Routing and Remote
+  Access.
+
+4. Click Update and specify the location of the RRAS folder.
+
+  NOTE: By default, this folder is C:\Program Files\Routing.
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

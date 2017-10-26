@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185601/","publisher":null,"image":null,"headline":"Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185601-how-to-recursively-search-directories-by-using-filesystemobject">Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185601
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 15-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Information About the FileSystemObject Class
+   - Build the Sample
+   - Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article demonstrates how to use the FileSystemObject class to
+recursively search directories and to find specific files.
+
+Information About the FileSystemObject Class
+--------------------------------------------
+
+The FileSystemObject class is located in the Microsoft Scripting Runtime
+(Scrrun.dll). To obtain the Scrrun.dll file, install any of the following
+packages:
+
+- Microsoft Windows Script Host
+- Microsoft Windows NT Option Pack
+- Microsoft Internet Information Server 3.0
+- Scripting 3.1 upgrade
+- Microsoft Visual Studio 98
+- Microsoft Visual Basic 6.0
+
+The FileSystemObject class provides better performance than if you use Visual
+Basic intrinsic functions such as Dir and GetAttr. Additionally,
+FileSystemObject is much simpler to implement that the Visual Basic intrinsic
+functions.
+
+Build the Sample
+----------------
+
+1. Create a new Standard EXE project in Visual Basic. By default, Form1 is
+  created.
+
+2. On the Project menu, click References, and then add a reference to the
+  Microsoft Scripting Runtime. If this option is not listed, locate the
+  Scrrun.dll file on your system. If you have to, install one of the tools that
+  is listed in the Information About the FileSystemObject Class section.
+
+3. Add a CommandButton, a Label, and a ListBox control to Form1. Adjust the
+  width of the Label control so that it is the same as the width of the form.
+
+4. Add the following code in the General Declarations section of Form1:
+
+  Option Explicit
+
+  Dim fso As New FileSystemObject
+  Dim fld As Folder
+
+  Private Sub Command1_Click()
+     Dim nDirs As Long, nFiles As Long, lSize As Currency
+     Dim sDir As String, sSrchString As String
+     sDir = InputBox("Type the directory that you want to search for", _
+                     "FileSystemObjects example", "C:\")
+     sSrchString = InputBox("Type the file name that you want to search for", _
+                     "FileSystemObjects example", "vb.ini")
+     MousePointer = vbHourglass
+     Label1.Caption = "Searching " &amp; vbCrLf &amp; UCase(sDir) &amp; "..."
+     lSize = FindFile(sDir, sSrchString, nDirs, nFiles)
+     MousePointer = vbDefault
+     MsgBox Str(nFiles) &amp; " files found in" &amp; Str(nDirs) &amp; _
+            " directories", vbInformation
+     MsgBox "Total Size = " &amp; lSize &amp; " bytes"
+  End Sub
+
+  Private Function FindFile(ByVal sFol As String, sFile As String, _
+     nDirs As Long, nFiles As Long) As Currency
+     Dim tFld As Folder, tFil As File, FileName As String
+     
+     On Error GoTo Catch
+     Set fld = fso.GetFolder(sFol)
+     FileName = Dir(fso.BuildPath(fld.Path, sFile), vbNormal Or _
+                    vbHidden Or vbSystem Or vbReadOnly)
+     While Len(FileName) &lt;&gt; 0
+        FindFile = FindFile + FileLen(fso.BuildPath(fld.Path, _
+        FileName))
+        nFiles = nFiles + 1
+        List1.AddItem fso.BuildPath(fld.Path, FileName)  ' Load ListBox
+        FileName = Dir()  ' Get next file
+        DoEvents
+     Wend
+     Label1 = "Searching " &amp; vbCrLf &amp; fld.Path &amp; "..."
+     nDirs = nDirs + 1
+     If fld.SubFolders.Count &gt; 0 Then
+        For Each tFld In fld.SubFolders
+           DoEvents
+           FindFile = FindFile + FindFile(tFld.Path, sFile, nDirs, nFiles)
+        Next
+     End If
+     Exit Function
+  Catch:  FileName = ""
+         Resume Next
+  End Function
+
+5. Run the project, and then click Command1.
+
+6. Type the directory and the file name to search for. Notice that when each
+  file is found, the file name is added to the list box. When the process is
+  complete, the number of files that are found is displayed in a message box.
+  The total size of the files is also displayed.
+
+Troubleshooting
+---------------
+
+- Some files and directories, such as System Volume Information on Microsoft
+  Windows XP, cause an access violation if an application tries to access them.
+  The error handling code stops looking in a directory when a problem occurs.
+  You must use a different approach if you must have a more robust workaround.
+
+- If you use a file filter (such as *.*), a large number of files may be
+  returned. The ListBox control can only contain a limited number of
+  characters. When that limit is reached, no more entries are added to the list
+  box.
+
+- This code sample was tested by using version 5.6.0.6626 of the Microsoft
+  Scripting Runtime (Scrrun.dll). If problems occur, you may have to download a
+  newer version of this file.
+
+REFERENCES
+==========
+
+For additional information about other methods that you can use to find a
+specific file, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q185476 HOWTO: Search Directories to Find or List Files
+
+Additional query words: look subdirectory directory tree recursion recursive File System Object filesystem
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

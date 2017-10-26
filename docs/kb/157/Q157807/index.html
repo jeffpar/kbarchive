@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157807/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157807/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157807/","publisher":null,"image":null,"headline":"Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157807-enabling-autodial-with-internet-explorer-in-windows-nt-40">Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157807
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbfaq
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can use the AutoDial feature in Windows NT 4.0 to automatically prompt you
+to dial a phonebook entry when you try to connect to a network or Internet path
+that is not available or cannot be found. For example, when you double-click the
+Internet Explorer icon, Microsoft Internet Explorer attempts to load your start
+page. If you are not connected to your Internet service provider (ISP), you
+receive the following error message:
+
+  Microsoft Internet Explorer
+  Internet Explorer cannot open the Internet site http://&lt;web address&gt;.
+  The site was not found. Make sure the address is correct, and try again.
+
+With AutoDial correctly configured, you are prompted to dial your ISP.
+
+MORE INFORMATION
+================
+
+To configure AutoDial, follow all of the steps in each of the following
+sections.
+
+Enable AutoDial By Location
+---------------------------
+
+1. Double-click My Computer and then double-click Dial-Up Networking.
+
+2. In the Phonebook Entry To Dial box, click the entry for your ISP.
+
+3. Click More, click User Preferences, and then verify that the location from
+  which you are dialing is selected. Click OK.
+
+Remote Access Services Must Be Started
+--------------------------------------
+
+1. In Control Panel, double-click Services.
+
+2. Locate the following two services and verify that they are started:
+
+   - Remote Access AutoDial Manager
+
+   - Remote Access Connection Manager
+
+Manually Set Your Start Page
+----------------------------
+
+1. Using Dial-Up Networking, connect to your ISP.
+
+2. Start Internet Explorer, and then connect to the Web page that you want to
+  use as your start page.
+
+3. On the View menu, click Options.
+
+4. Click the Navigation tab.
+
+5. In the Page box, click Start Page, and then click Use Current.
+
+6. Click OK.
+
+The next time you start Internet Explorer without being connected to your ISP,
+you will be prompted to dial the connection.
+
+For additional information about AutoDial, please see the following article in
+the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q152220
+  TITLE : How to View and Remove Information from AutoDial
+
+Additional query words: 4.0 ras dialup dun
+
+======================================================================
+Keywords          : kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

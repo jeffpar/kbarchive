@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183528/","publisher":null,"image":null,"headline":"Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183528-prb-scrollbar-and-custom-controls-do-not-have-events-to-handle">Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183528
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbide kbMFC kbResourceEd kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSTools
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.0a, 4.1, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a Scroll Bar or custom control in the Visual C++ Dialog
+editor, the New Windows Message and Event Handlers dialog box appears. However,
+no events are displayed for the control.
+
+On the Message Maps tab of the MFC ClassWizard dialog box, select a dialog class.
+The Messages list is blank for Object IDs corresponding to a Scroll Bar or
+custom control.
+
+CAUSE
+=====
+
+The Scroll Bar and custom controls do not send notification messages so the MFC
+ClassWizard cannot list any messages to map.
+
+RESOLUTION
+==========
+
+Use the ClassWizard, as follows, to add WM_HSCROLL or WM_VSCROLL message
+handlers to the class of the parent window that hosts the Scroll Bar control:
+
+1. Press CTRL+W to open the MFC ClassWizard.
+
+2. On the Message Maps tab, select the dialog class in the Class name box.
+
+3. In the Object IDs list box, select the dialog class.
+
+4. In the Messages list box, select WM_HSCROLL or WM_VSCROLL, then click Add
+  Function.
+
+For the user-defined messages of a custom control, or the WM_CTLCOLORSCROLLBAR
+message, manually add message handlers to the parent window's class. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q99848 Use ON_MESSAGE() Macro to Map Less-Common Messages
+
+STATUS
+======
+
+This behavior is by design.
+
+
+MORE INFORMATION
+================
+
+The Scroll Bar control does not send notification messages of the SBN_... type.
+However, it sends WM_HSCROLL, WM_VSCROLL, and WM_CTLCOLORSCROLLBAR messages to
+its parent window, allowing it to redraw according to the current scroll
+setting. Though these messages are not considered notifications, they have a
+similar effect. With the MFC ClassWizard, any window that can contain a Scroll
+Bar has WM_HSCROLL and WM_VSCROLL messages, and the MFC ClassWizard can add the
+handlers for those messages.
+
+The custom control does not have standard notifications. Its messages are
+user-defined events, and the MFC ClassWizard does not know what they might be.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual C++, open a project that contains a dialog resource.
+
+2. Open the dialog for editing (you can double-click on its ID in ResourceView).
+
+3. From the Controls palette, add a Scroll Bar control to the dialog.
+
+4. Double-click the Scroll Bar control.
+
+  The New Windows Message and Event Handlers dialog box opens but the New
+  Windows messages/events list is empty. Close the New Windows Message and
+  Event Handlers dialog box.
+
+5. Press CTRL+W to open the MFC ClassWizard.
+
+6. On the Message Maps tab, select the dialog class in the Class name list box.
+
+7. In the Object IDs list box, select the Scroll Bar ID.
+
+  The Messages list is blank.
+
+REFERENCES
+==========
+
+Visual C++ Online Books; search on "Scroll Bar Messages"
+
+Platform, SDK, and DDK Documentation: Platform SDK; User Interface Services;
+Controls; Scroll Bars; Scroll Bar Reference; Scroll Bar Messages
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbide kbMFC kbResourceEd kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

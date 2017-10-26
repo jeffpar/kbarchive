@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q79871: Applications That Run with or Without Pen Extensions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q79871: Applications That Run with or Without Pen Extensions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/079/Q79871/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/079/Q79871/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/079/Q79871/","publisher":null,"image":null,"headline":"Q79871: Applications That Run with or Without Pen Extensions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q79871-applications-that-run-with-or-without-pen-extensions">Q79871: Applications That Run with or Without Pen Extensions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q79871
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Typically, applications that are developed for Microsoft Windows for Pen
+Computing do not run unless the pen extensions are installed in memory. The
+reason for this is that these applications are implicitly linked to PENWIN.DLL.
+When a user runs an application that is implicitly linked to PENWIN.DLL on a
+system where the pen extensions are not installed, the application fails to load
+with the following error message:
+
+  File Error
+  Cannot find PENWIN.DLL
+
+The SNOOP sample application, provided with the Microsoft Windows for Pen
+Computing in the Windows Software Development Kit (SDK), is an example of an
+application that runs only when the pen extensions are installed.
+
+Applications can be designed to run in either environment, under Windows with or
+without the pen extensions. The HFORM sample application, also provided with the
+Windows for Pen Computing in the Windows SDK, is an example of this type of
+application.
+
+This article lists the steps required to create an application that runs in
+either environment; this article also lists other sample applications that do
+not implicitly link with PENWIN.DLL.
+
+MORE INFORMATION
+================
+
+An application that does not implicitly link with PENWIN.DLL can use the pen API
+functions when they are available and can run in the Windows environment when
+the pen extensions are not available. The application must not reference any of
+the pen functions directly. At run time, the application must retrieve the
+handle to PENWIN.DLL and explicitly load any functions that the application will
+use. The following four steps detail how an application that is not implicitly
+linked to PENWIN.DLL would load and use the Recognize function:
+
+1. Prototype the Recognize function in the application's header file as
+  follows:
+
+        REC (FAR PASCAL *lpfnRecognize)(LPRC);
+
+2. In the application's initialization, use GetSystemMetrics() to see if the pen
+  extensions are installed. If the value returned from this function is zero,
+  the pen extensions are not installed. Otherwise, the return value is the
+  handle to PENWIN.DLL.
+
+3. If the extensions are installed, use GetProcAddress() to retrieve the address
+  of the Recognize function. A NULL return value indicates an error. The
+  following fragment demonstrates this step:
+
+        if (lpfnRecognize = GetProcAddress(hPenWinDLL, "Recognize"))
+
+4. Finally, call the function using the procedure address, as follows:
+
+        lpfnRecognize(&amp;rc);
+
+As noted above, the HFORM sample application provided with the Windows for Pen
+Computing SDK demonstrates the process detailed in this article. REPAINT,
+HOTSPOTS, and PRESSURE are additional sample applications in the Software/Data
+Library that demonstrate this method. The articles that describe these sample
+applications can be found by searching this Knowledge Base for the name of the
+desired sample application.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

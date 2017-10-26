@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173527: Automating PPTP Connection Via ISP Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173527: Automating PPTP Connection Via ISP Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173527/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173527/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173527/","publisher":null,"image":null,"headline":"Q173527: Automating PPTP Connection Via ISP Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173527-automating-pptp-connection-via-isp-connection">Q173527: Automating PPTP Connection Via ISP Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173527
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbhowto kbinfo kbArtTypeINF
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT version 4.0 introduced a new feature called Point-to-Point Tunneling
+Protocol (PPTP). After you have connected to the Internet, you can make a PPTP
+connection to your corporate network and access corporate resources. This
+article discusses how to use one simple batch file to automate the process of
+connecting to your Internet service provider (ISP) and then connecting to your
+corporate PPTP server.
+
+MORE INFORMATION
+================
+
+To connect to your ISP and then connect to your corporate PPTP server without
+needing to launch two phone book entries, create a batch file using the
+following steps:
+
+NOTE: These steps assume that you have already created two phone book entries,
+one for your ISP and one for your PPTP Server.
+
+1. Using a text editor such as Notepad.exe or Edit.com, type the following
+  lines, substituting your personal information for the items in brackets:
+
+  rasdial.exe &lt;ISP Phonebook Entry&gt; &lt;username1&gt; &lt;password1&gt;
+  rasdial.exe &lt;PPTP Phonebook Entry&gt; &lt;username2&gt; &lt;password2&gt;
+  /DOMAIN:&lt;domain&gt;
+
+  NOTE: The /DOMAIN option should be on the same line as the second Rasdial
+  command and is only required if your PPTP server requires Microsoft
+  encryption.
+
+2. Save the file with a name like Pptp.bat, then exit the text editor.
+
+3. To connect to your PPTP server, run the batch file Pptp.bat.
+
+NOTE: The command "Rasdial /?" will display the correct syntax to use with this
+command.
+
+WARNING: The passwords in such a batch file are in plain text and can be seen by
+anyone viewing the file.
+
+Additional query words: Dial-Up Networking
+======================================================================
+Keywords          : kbhowto kbinfo kbArtTypeINF 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

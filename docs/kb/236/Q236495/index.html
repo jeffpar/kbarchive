@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236495/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236495/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236495/","publisher":null,"image":null,"headline":"Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236495-mod2000-vss-login-allows-access-with-a-blank-username-from-vbe">Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236495
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta modSSafe
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 2000 Developer 
+-------------------------------------------------------------------------------
+
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+You are able to log on to Microsoft Visual SourceSafe by using a blank username
+from a Visual Basic for Applications project in Microsoft Excel 2000 and
+Microsoft Word 2000. After you log on, you are able to add, check out, and check
+in projects. This behavior occurs even when the SourceSafe Administrator is
+password protected.
+
+CAUSE
+=====
+
+When you click "Add Project to SourceSafe" or Run SourceSafe in the Visual Basic
+Editor, the OK button on the Visual SourceSafe Login dialog box is available if
+the Username box does not contain any text.
+
+RESOLUTION
+==========
+
+To prevent this behavior, disable the "Use network name for automatic user log
+in" feature of Visual SourceSafe. To do so, follow these steps:
+
+1. Open Visual SourceSafe 6.0 Administrator.
+
+2. On the Tools menu, click Options, and then click the General tab.
+
+3. Click to clear the "Use network name for automatic user log in" check box.
+
+After you implement this workaround, you receive the following message if you
+leave the Username box empty.
+
+  User "" not found
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior:
+
+1. Open a new Excel workbook.
+
+2. On the Tools menu, point to Macro, and then click Visual Basic Editor.
+
+3. On the File menu, click Save &lt;projectname&gt;, and in the Save As dialog
+  box, click Save.
+
+4. On the Add-ins menu, point to VBA Source Code Control, and then click Add
+  Project to SourceSafe.
+
+NOTE: If you do not get the choice for VBA Source Code Control on the Add-ins
+menu, first click Add-in Manager on the Add-ins menu, select VBA Source Code
+Control in the list, click to select the Loaded/Unloaded check box, and then
+click OK.
+
+5. Delete the name in the Username box, and then click OK. Note that nothing
+  happens.
+
+Additional query words: pra OFF2000
+
+======================================================================
+Keywords          : kbdta modSSafe 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice2000Search kbOffice2000 kbOffice2000DevSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

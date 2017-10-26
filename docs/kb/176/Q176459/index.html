@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176459/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176459/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176459/","publisher":null,"image":null,"headline":"Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176459-xadm-dirrep-bridgehead-errors-modifying-site-naming-contexts">Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176459
+Product(s): Microsoft Exchange
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 14-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A Microsoft Exchange Directory Replication Bridgehead Server may fail to update
+existing, or replicate in new, Microsoft Exchange Site naming contexts. For the
+Windows NT Server Event Viewer Application log signature of this problem, please
+see the MORE INFORMATION section of this article.
+
+CAUSE
+=====
+
+A jet database transaction was not backed out when a value needed to be moved to
+the long value table. Subsequently, when a new jet transaction was attempted,
+the jet error, -1109, would be returned, failing the new transaction attempt.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the following Microsoft Exchange Directory Service diagnostic logging
+enabled:
+
+    Replication = MAX
+    Internal Processing = Min
+
+the following 3 symptoms were noted:
+
+1. The Directory Replication Bridgehead server fails to add new replicas of
+  remote Sites, logging the following events:
+
+    1063
+    Internal event: The directory replication agent (DRA) was asked to
+    replicate naming context &lt;site naming context&gt; from directory
+
+    &lt;EX:/o=&lt;orgname&gt;/ou=&lt;sitename&gt;/cn=Configuration/cn=Servers/cn=
+    &lt;servername&gt;/cn=Microsoft DSA with options &lt;xxxxx&gt; to another site.
+
+    1171***  &lt;&lt;&lt;&lt; these exception *specifics* indicate "THE" problem
+    Exception e0010004 has occured with parameters -1109 and 0 
+    (Internal ID 20a00f8). Please contact Microsoft Product Support 
+    Services for assistance.
+
+    1059
+    Internal error: The directory replication agent (DRA) call returned
+    error 22.
+
+    1117
+    The consistency checker failed to add a missing replica of naming
+    &lt;site naming context&gt; from directory
+
+    EX:/o=&lt;orgname&gt;/ou=&lt;sitename&gt;/cn=Configuration/cn=Servers/cn=&lt;servername
+    &gt;/cn=Microsoft DSA to directory &lt;servername&gt; with error 22. Run the
+    consistency checker on directories
+
+    EX:/o=&lt;orgname&gt;/ou=&lt;sitename&gt;/cn=Configuration/cn=Servers/cn=&lt;servername
+    &gt;/cn=Microsoft DSA and &lt;servername&gt;.
+
+2. Other Microsoft Exchange Servers within the Site may have stranded replicas
+  of one or more of these Sites, thus they request updates for these contexts
+  from the Bridgehead, which doesn't have copies of the object, resulting in
+  the following event log warnings on the Bridgehead server:
+
+    1070
+    Internal event: Directory &lt;dsa-signature&gt; &lt;servername&gt; asked the
+    directory replication agent (DRA) to get changes from naming context
+    &lt;site naming context&gt; starting at update sequence number (USN)
+    &lt;xxxxxxx&gt; with flags 360 and sensitivity 100.
+
+    1059
+    Internal error: The directory replication agent (DRA) call returned
+    error 6.
+
+3. The Microsoft Exchange Server Knowledge Consistency Checker (KCC) fails with
+  the generic KCC failure:
+
+  The knowledge consistency check did not correct directory inconsistencies. Be
+  sure the directory service is running, and then try again. If the error
+  recurs, try stopping the directory service and Administrator program and then
+  restarting them. To view details of the error, see the application event log
+  in the Windows NT Event Viewer on the Microsoft Exchange computer on which
+  you checked knowledge consistency.
+
+  Microsoft Exchange Administrator ID no: c1030b1e
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

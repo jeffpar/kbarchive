@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140356/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140356/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140356/","publisher":null,"image":null,"headline":"Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140356-fix-nmake-fails-if-paths--file-names-have-special-characters">Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140356
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbVC500fix
+Last Modified: 29-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a character with a special meaning to NMAKE is used in a file name or path in
+a project created within the development environment, then an NMAKE error will
+be generated if you attempt to build the project from the command line with
+Nmake.exe. For example, if a file name is Tes$ting.cpp, the error is:
+
+  U1073: don't know how to make '".\Tesing.cpp"'
+
+If a file name is Tes#ting.cpp, the error is:
+
+  U1038: internal error : lexer
+
+If a file name is Tes!ting.cpp, the error is:
+
+  U1017: unknown directive '!ting.obj" :
+
+CAUSE
+=====
+
+Certain characters have special meaning to NMAKE. For example, the dollar sign
+($) indicates the beginning of a MACRO, the pound sign (#) is the start of a
+comment, and the exclamation point (!) indicates the start of a preprocessing
+directive. For further information on special NMAKE characters see the NMAKE
+reference in the Visual C++ User's Guide.
+
+Usually, placing a caret (^) in front of a special character will force that
+character to be treated as a literal character. However, these make files use
+inline response files, and if file names with special characters are used in an
+inline response file, placing a caret in front of the character will not resolve
+the error. For more information on this problem, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q59409 Trouble with File Names w/ a Dollar Sign ($) in Inline Files
+
+RESOLUTION
+==========
+
+Build the project from within the development environment.
+
+-or-
+
+Rename the files or paths so they don't use any special characters.
+
+-or-
+
+If the special characters are dollar signs, make a backup copy of the makefile
+and place a dollar sign in front of the dollar signs in the file names to force
+them to be treated as a literal character.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The project will build without errors from within the development environment
+because it does not use Nmake.exe to build the project. It uses an internal
+build engine that can handle the different file names.
+
+Additional query words: kbVC400bug 10.20 utilities
+
+======================================================================
+Keywords          : kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

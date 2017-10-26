@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148496: XCLN: Creating Shared Windows Roving Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148496: XCLN: Creating Shared Windows Roving Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148496/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148496/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148496/","publisher":null,"image":null,"headline":"Q148496: XCLN: Creating Shared Windows Roving Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148496-xcln-creating-shared-windows-roving-users">Q148496: XCLN: Creating Shared Windows Roving Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148496
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000,4.0,5.0,97,98; winnt:4.0,5.5
+Operating System(s): 
+Keyword(s): kbsetup kbusage exc4 exc55
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.5 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange administrators have the ability to support roving users
+running from a network installation of Windows 3.1 and 3.11. Roving users are
+individuals that are not tied to a specific machine. They need access to their
+Microsoft Exchange accounts regardless of their physical location on the
+network.
+
+MORE INFORMATION
+================
+
+Administrators can run the following steps to create a default profile that can
+be customized for each Microsoft Exchange Windows client user:
+
+1. The network administrator will need to create home directories on the network
+  for each user and assign logon scripts that will automatically connect those
+  users to their home directory.
+
+2. From the Microsoft Exchange Win16 client share point, run SETUP /a to create
+  a network installation of the Microsoft Exchange Win16 client.
+
+  NOTE: You must be logged in with Administrator privileges and be running the
+  same shared copy of Windows that the users will be running. This is because
+  the network installation will add files to the WINDOWS\SYSTEM directory that
+  are required by the Microsoft Exchange client.
+
+3. Run the Microsoft Exchange Setup Editor against this network client
+  installation share point to make any desired changes in the Setup Options a
+  user will see when running the client Setup Program. The Microsoft Exchange
+  Setup Editor can also be used to modify default Microsoft Exchange user
+  profile information. Save the changes you have made and exit the Setup
+  Editor. This will modify the SETUP.STF file in the client network
+  installation directory and create a file called DEFAULT.PRF if it does not
+  already exist.
+
+4. Each user should be configured to run Windows from the network.
+
+5. Each user should now run SETUP.EXE from the Microsoft Exchange Win16 client
+  network installation point. Select the Workstation installation option. This
+  will install the client so that it runs from the server. The Setup program
+  will now create the user's default profile, based on the settings in the
+  DEFAULT.PRF file in the client network installation share point. This default
+  profile will be created in the user's home directory on the server if the
+  user is set up to run Windows from this directory.
+
+6. Each user should now be able to move to any similarly configured machine,
+  running Windows from the network, and be able to run the Microsoft Exchange
+  client using the same profile.
+
+
+Additional query words: FAQ
+
+======================================================================
+Keywords          : kbsetup kbusage exc4 exc55 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbExchange400NT kbExchange500NT
+Version           : WINDOWS:2000,4.0,5.0,97,98; winnt:4.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

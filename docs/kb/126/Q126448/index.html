@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126448: Err Msg: Not Enough Extended Memory Available to Start… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126448: Err Msg: Not Enough Extended Memory Available to Start…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126448/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126448/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126448/","publisher":null,"image":null,"headline":"Q126448: Err Msg: Not Enough Extended Memory Available to Start…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126448-err-msg-not-enough-extended-memory-available-to-start">Q126448: Err Msg: Not Enough Extended Memory Available to Start…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126448
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbenv kberrmsg win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Microsoft Windows 95 you receive the following error
+message:
+
+  Not enough extended memory available to run Windows.
+
+  Quit one or more applications to increase available memory or restart your
+  computer. Press any key to continue...
+
+CAUSE
+=====
+
+This error message can occur if you have configured your computer to create a
+RAM drive larger than 15 megabytes (MB). The error occurs even if your computer
+has enough memory to create the RAM drive and still meet the memory requirements
+for starting Windows 95.
+
+A RAM drive larger than 15 MB is allocated all the available extended memory
+below physical address 16 MB. To start Windows 95 on most computers, some memory
+below 16 MB is necessary for DMA buffers. If all the memory below 16 MB is
+allocated to the RAM drive, Windows 95 cannot start.
+
+RESOLUTION
+==========
+
+To correct this problem, decrease the size of the RAM drive to less than 15 MB.
+To do so, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+  the F8 key and then choose Command Prompt Only.
+
+2. At the command prompt, type
+
+  " edit c:\config.sys " (without the quotation marks)
+
+  and then press ENTER.
+
+3. Locate the line that contains RAMDRIVE.SYS. Change the line so that it
+  contains a value lower than 15 MB. For example, to use an 8 MB RAM drive,
+  change the line to read:
+
+  " DEVICE=C:\WINDOWS\RAMDRIVE.SYS 8192 " (without the quotation marks)
+
+4. Save the CONFIG.SYS file and then quit the editor.
+
+5. Restart your computer.
+
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

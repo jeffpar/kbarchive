@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135030: X400: How to Create a LoopBack Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135030: X400: How to Create a LoopBack Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135030/","publisher":null,"image":null,"headline":"Q135030: X400: How to Create a LoopBack Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135030-x400-how-to-create-a-loopback-message">Q135030: X400: How to Create a LoopBack Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135030
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to X.400, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to create a LoopBack message for troubleshooting the
+X.400 Mail Gateway.
+
+MORE INFORMATION
+================
+
+1. Type the following:
+
+  " x400adm admin -ppassword -d&lt;drive letter to gateway po&gt;" (without the
+  quotation marks)
+
+2. Select the Local MTA option, and get the following information:
+
+   - Name:
+
+   - Country Code:
+
+   - Admd Name
+
+  :     - Prmd Name:
+
+  Click OK (ALT+O) to accept the changes, and go back to previous screen.
+
+3. Select the Address Conversion option.
+
+  The administrator must specify one address conversion string for each network
+  name. One network address conversion string covers all postoffices with the
+  same network name, even if they are not on the same local area network.
+
+   - In the Network field, type the name of the Microsoft Mail network.
+
+   - Set the Org Name to %net by tabbing to the field, then press ALT+N.
+
+   - Set the Org Unit 1 to %post by tabbing to the field, then press ALT+P.
+
+   - Set the Surname to %mbx by tabbing to the field, then press ALT+M.
+
+   - Select Add (ALT+A).
+
+   - Select OK (ALT+O) to return to the previous screen.
+
+4. Select the Routing option. The routing table will look similar to the
+  following:
+
+  NOTE: The syntax is very important. The dots ".." must exist.
+
+    c = country code &lt;item b from Step 1&gt;
+    ..a = Admd Name &lt;item c from Step 1&gt;
+    ....p = Prmd Name &lt;item d from Step 1&gt;
+    ......o = Org Name &lt;item g from Step 2&gt; &lt;Local MTA Name: Item 1&gt;
+
+5. After you complete the above steps, run the MS-DOS Mail client. Login as the
+  Admin to the postoffice, and select Address, X400, Field. This will display
+  the Field template.
+
+  In the Field template, enter the following:
+
+     - Country Code:                  &lt;item b from Step 1&gt;
+     - Administration Domain name:    &lt;item c from Step 1&gt;
+     - Private Domain Name:           &lt;item d from Step 1&gt;
+     - Surname:                       &lt;your mailbox name&gt;
+     - Organization name:             &lt;Network name of the postoffice&gt;
+     - Organization Unit Names (OU):  &lt;postoffice name&gt;
+
+  Press &lt;Enter&gt;
+  At the Alias field, type in "LoopBack Account &lt;Account Name&gt;" (without
+  the quotation marks)
+
+6. The address is put into your Personal Address List (PAL). Press the ESC key
+  until the Compose option appears.
+
+7. Compose a message using the account above, and run the X400Gate program with
+  the following command line options:
+
+  X400gate -lvd -d&lt; drive letter to PO &gt;
+
+  If the message is delivered, the X400Gateway should be configured correctly.
+  If there are error messages in the MAILDATA\LOG\X400xxxx.LOG file, follow the
+  troubleshooting steps to resolve the appropriate error message.
+
+  NOTE: The xxxxx in the LOG file represents the date you run the gateway file.
+  For example, if you run X400GATE.EXE on July 27, the filename would be
+  X4000727.LOG.
+
+More information about the X400 gateway can be found in the Microsoft Mail
+Gateway to X.400 "Administrator Guide."
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300 kbMailGatex400320
+Version           : :3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

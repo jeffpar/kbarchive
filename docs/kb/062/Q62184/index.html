@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62184: L2025: __fltin with Mixed-Language FORTRAN 5.00 and C 6.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62184: L2025: __fltin with Mixed-Language FORTRAN 5.00 and C 6.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62184/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62184/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62184/","publisher":null,"image":null,"headline":"Q62184: L2025: __fltin with Mixed-Language FORTRAN 5.00 and C 6.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62184-l2025-__fltin-with-mixed-language-fortran-500-and-c-600">Q62184: L2025: __fltin with Mixed-Language FORTRAN 5.00 and C 6.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62184
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 buglist6.00a h_fortran | mspl13_c
+Last Modified: 19-JAN-1991
+
+Question:
+
+Why do I get an L2025 multiply-defined symbol error when I link
+together a FORTRAN version 5.00 and a C version 6.00 program? The
+symbol is __fltin.
+
+Sample Code
+-----------
+
+C   FORTRAN MODULE
+      INTERFACE TO SUBROUTINE FOO [C, ALIAS:'_foo'] (N)
+      INTEGER*2 N
+      END
+C   Force a read of a double
+      READ(*,*)DXL
+      CALL FOO (3)
+      END
+
+// C Module
+
+void foo (int x)
+{
+   double j = 3.0 ;
+}
+
+The following are the build options:
+
+   fl /AL /c /FPi fortran.for
+   cl /AL /c /FPi c.c
+   link /nod /noe fortran c, foo.exe,,llibce llibfore ;
+
+The FORTRAN library (llibfore) was created with C compatibility, and
+llibce is a C version 6.00 library.
+
+The linker responds with the following message:
+
+   llibfore.lib(\mrt\c\cfin.ASM) : error L2025: __fltin : symbol
+   defined more than once
+
+   There were 2 errors detected
+
+Under DOS, this does not appear to affect the executable in any way.
+
+Under OS/2, the resulting executable gives SYS0192 when you attempt to
+run it, telling you that there was an error during link time and the
+operating system refuses to run the program.
+
+Microsoft has confirmed this to be a problem with C versions 6.00 and
+6.00a. We are researching this problem and will post new information
+here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

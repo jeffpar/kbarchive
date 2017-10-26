@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103067: Error Messages When Using MSUAM and Apple UAM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103067: Error Messages When Using MSUAM and Apple UAM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103067/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103067/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103067/","publisher":null,"image":null,"headline":"Q103067: Error Messages When Using MSUAM and Apple UAM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103067-error-messages-when-using-msuam-and-apple-uam">Q103067: Error Messages When Using MSUAM and Apple UAM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103067
+Product(s): Microsoft Windows NT
+Version(s): 3.1 4.0
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Macintosh user logs on to a Windows NT Advanced Server running Services
+for Macintosh, any error messages displayed will be different depending on which
+user authentication module (UAM) is used. If the Apple UAM is used, then
+regardless of what the error is, the following error message appears:
+
+  Sorry, your password is incorrect. Please reenter it.
+
+A more informative error message is displayed only when using the Microsoft UAM
+(MSUAM). These errors and their messages are documented later in this document.
+
+The only exception to the above is when the user's password has expired and must
+be changed. In this case, the Apple UAM displays the following message:
+
+  Your password must be changed. Please set a new password.
+
+The MSUAM displays the following message:
+
+  Your password has expired on this server. (Then the user will be presented
+  with the Change Password dialog box.)
+
+MORE INFORMATION
+================
+
+The following error messages are displayed only if the Macintosh user used the
+MSUAM when trying to log on to a Windows NT Advanced Server Running SFM.
+
+  You are not allowed to log on to this server at this time. Try again later.
+
+This message indicates that the user's profile does not allow the user to login
+at that time, or that day. This is set in the User Manager: User Properties:
+Hours dialog box.
+
+  You do not have permission to log on to this server from this workstation.
+
+This messages indicates that the user's profile restricts which computers they
+may log on to. This is set in the User Manager: User Properties: Logon From
+dialog box.
+
+  Sorry; your user name is unknown or your password is incorrect. Logon failed.
+
+This message indicates one of several things. The account may have expired; the
+expiration date of an account may be set in the User Manager: User Properties:
+Account Information dialog box. Or the account's name or password has not been
+entered correctly on either the Macintosh or the Windows NT Advanced Server.
+
+  Your account is currently disabled on this server.
+
+This error message indicates that the user's account has been set to Account
+Disabled in the User Manager: User Properties dialog box.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

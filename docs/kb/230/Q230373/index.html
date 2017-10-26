@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230373: XIMS: IMAP4 Login to MCIS Fails; Can’t Find Mail Account | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230373: XIMS: IMAP4 Login to MCIS Fails; Can’t Find Mail Account" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230373/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230373/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230373/","publisher":null,"image":null,"headline":"Q230373: XIMS: IMAP4 Login to MCIS Fails; Can’t Find Mail Account","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230373-xims-imap4-login-to-mcis-fails-cant-find-mail-account">Q230373: XIMS: IMAP4 Login to MCIS Fails; Can’t Find Mail Account</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230373
+Product(s): Microsoft Exchange
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): MCIS_MSG
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Commercial Internet System version 2.0 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on to your MCIS 2.0 mailbox using Outlook Express
+(IMAP4), you may encounter the following error message:
+
+  'LOGIN Cannot find mail account information for the user.', port 143, Error
+  Number: 0x800CCCD1
+
+The following result is received when using a telnet session to the MCIS IMAP4
+server as follows:
+
+  * OK Mail1.Microsoft.com Microsoft IMAP4Rev1 Server ready at Thu, 29 Apr 1999
+  18:45:13 -0500 Version: 5.5.1875.185.18
+  ? login User password
+  ? NO LOGIN Cannot find mail account information for this user.
+  * BYE Unexpected error---server closing connection.
+
+CAUSE
+=====
+
+Each user account has an account attribute in the membership data base called
+"EMAIL ADDRESS," which contains the user's e-mail address. If the e-mail domain
+of the user's account is not the same as the default e-mail domain listed in the
+IMAP4 server, the above error will result.
+
+The default domain is the e-mail domain the IMAP4 server is hosting. The IMAP4
+server will not find the mailbox for a different e-mail domain. The user could
+be connecting to the wrong IMAP4 server or have the incorrect e-mail address
+listed in his e-mail client.
+
+Another possible cause is that the default e-mail domain for the IMAP4 site was
+set to &lt;host&gt;.&lt;domain&gt;.com at the installation time. This should be
+&lt;domain&gt;.com. Change the host name for the default domain so that it reads
+&lt;domain&gt;.com.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Verify the default domain by going to the IMAP4 server that the user is
+  attempting to log on to.
+
+2. Open the Microsoft Management Console (MMC) for the Internet Information
+  Server, and go to the IMAP4 Site.
+
+3. Go to Properties for the IMAP4 site.
+
+4. Select the IMAP4 Site Property tab. Here, the default domain must match the
+  e-mail domain for the user's account.
+
+5. Verify the IMAP4 domain name according to the information above, and correct
+  any inconsistency.
+
+Additional query words: mcis imap
+
+======================================================================
+Keywords          : MCIS_MSG 
+Technology        : kbAudDeveloper kbExchangeSearch kbExchange550 kbZNotKeyword2 kbMCISSearch kbMCIS200
+Version           : winnt:2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

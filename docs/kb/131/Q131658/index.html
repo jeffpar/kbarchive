@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131658/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131658/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131658/","publisher":null,"image":null,"headline":"Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131658-use-fteditexe-to-recover-fault-tolerant-disk-configuration">Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131658
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbhw kbtool kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have a computer running Windows NT Server that is
+
+- configured for fault tolerant (FT) partitions (such as stripe sets with
+  parity and mirror sets)
+
+  -and-
+
+- the partitions are inaccessible and appear in Disk Administrator as type
+  Unknown
+
+you may be able to make them accessible again by using the Ftedit utility.
+
+This utility is available in the second update to the Microsoft Windows NT
+Resource Kit (for Windows NT version 3.51) or you can obtain this utility at no
+charge from Microsoft Technical Support (MTS).
+
+This article explains:
+
+- When to Use Ftedit
+
+- How to Avoid Having to Use Ftedit in the Future
+
+- How to Install Ftedit
+
+- What to Verify Before Using Ftedit
+
+- How to Recover Fault Tolerance Sets
+
+- How to Recover Advanced FT Sets: Stripe Sets with Parity
+
+- How to Undo Changes Made with Ftedit
+
+
+MORE INFORMATION
+================
+
+When to Use Ftedit
+------------------
+
+WARNING: Incorrect use of Ftedit on a computer with intact and recognized FT sets
+can cause loss of access to those FT sets. For additional information on using
+Ftedit, see the Help file that comes with Ftedit.
+
+You can try to recover access to your hard disk(s) by using Ftedit, if you lose
+access to FT sets in various situations, including the following:
+
+- After you replace a boot disk with a new installation of Windows NT Server on
+  it (in a computer with at least two hard disks)
+
+- After you have problems with stripe sets
+
+- After you replace a member disk of a stripe set with parity
+
+- After you have problems with volume sets
+
+- After you run the emergency repair program with an emergency repair disk that
+  does not contain the correct hard disk configuration information
+
+NOTE: Although Ftedit allows you to create a mirrored drive (mirror), you should
+always re-create a mirror in Disk Administrator (instead of Ftedit) by first
+breaking the mirror, then reestablishing it.
+
+How to Avoid Having to Use Ftedit in the Future
+-----------------------------------------------
+
+To recover easily from these problems in the future without having to use Ftedit,
+save your hard disk configuration information whenever you make a change, for
+example, when you add fault tolerance.
+
+To save your hard disk configuration information using Disk Administrator:
+
+- On the Partition menu, click Configuration, and then click Save.
+
+  You can use this saved information to restore the configuration if it is lost.
+
+To restore the saved information using Disk Administrator:
+
+- On the Partition menu, click Configuration, and then click Restore.
+
+How to Install Ftedit
+---------------------
+
+The following three files come with Ftedit:
+
+  Ftedit.exe
+  Ftedit.hlp
+  Ctl3d32.dll
+
+  NOTE: For Windows NT 3.51 you also need Msvcrt.dll.
+
+To install these files, do the following:
+
+1. Create a directory called Ftedit.
+
+2. Copy the Ftedit.exe and Ftedit.hlp files to the Ftedit directory.
+
+3. Copy the Ctl3d32.dll file to your %Systemroot%\System32 directory.
+
+What to Verify Before Using Ftedit
+----------------------------------
+
+Before you use Ftedit, verify that the following conditions are met:
+
+- Your computer has a stripe set, stripe set with parity, or volume set that is
+  physically present (that is, it was created using Disk Administrator and all
+  the necessary drives and partitions are still recorded on the disk), but is
+  not recognized by Windows NT.
+
+- Verify that FTDISK is started in control panel\devices. FTDISK is the driver
+  used by NT to identify and access fault tolerant drives.
+
+- The following Windows NT Registry key must exist:
+
+     HKEY_LOCAL_MACHINE\SYSTEM\DISK
+
+  NOTE: If this key does not exist, Disk Administrator creates it automatically
+  if you start it once and then click Exit on the Partition menu to quit.
+
+  However, when Ftedit is used to re-create a volume set, it first reads this
+  DISK key as a starting base. If this DISK key is corrupted, it may prevent
+  Ftedit from creating a recognized volume set. In this case, save the current
+  DISK key, and then delete it (to prevent Ftedit from trying to use it as a
+  base). This allows the volume set to be created and recognized. This should
+  not be the first step used. Delete the DISK key only if Ftedit cannot create
+  the volume set due to a corrupted DISK key.
+
+How to Recover Fault Tolerance Sets
+-----------------------------------
+
+If you replaced a member disk in a stripe set with parity, skip to the "How to
+Recover Advanced FT Sets: Stripe Sets with Parity" section.
+
+To recover access to a fault tolerance set (except mirrored disks), do the
+following:
+
+1. Run Ftedit.
+
+2. On the Edit menu, click Create FT Set, or click the Make FT Set button.
+
+3. In the FT Set Type dialog box, select the FT set type you want to recover
+  (Stripe Set, Stripe Set With Parity, or Volume Set), then click OK.
+
+4. Add the partitions that are members of the FT set one at a time, in their
+  original order.
+
+  NOTE: In most cases, partitions are added in the order listed from the top
+  down (not in order of Partition ID) in the Partitions list. If you are unsure
+  about the order, consult your system administrator. If you are still unsure,
+  contact Microsoft Technical Support.
+
+
+To add a partition, use the following steps:
+
+  a. In the Disks list, click the drive that contains the partition you want to
+     add. This causes the Partitions list to display all the partitions on the
+     drive.
+
+  b. To add a partition as an entry to the New FT Set Information list,
+     double-click it.
+
+  c. Repeat steps a and b for each partition that you want to add.
+
+  NOTE: If you select an incorrect partition or if you make an error, click
+  Cancel. If you Cancel, start again from step 2.
+
+5. After you add all partitions to the New FT Set list, verify that they are the
+  correct partitions and that they are listed in their original order. On the
+  Edit menu, click Save FT Set or click the Save FT Set button. This adds the
+  newly created FT set to the FT Set Information list.
+
+6. Repeat steps 1 through 5 for each stripe set with parity that has a member
+  that you need to regain access to.
+
+7. When you are finished, click Save Current Disk Key on the Registry menu (or
+  click Save Changes to System on the Edit menu). This saves the modified
+  information to the Windows NT registry.
+
+8. Quit Ftedit, shut down Windows NT, and reboot.
+
+9. Run Disk Administrator. If you correctly set up the FT set description, your
+  FT sets appear correctly in Disk Administrator and you should be able to
+  assign a logical drive letter to each set.
+
+  NOTE: If the FT sets are listed as type Unknown in Disk Administrator, start
+  Control Panel, double-click the Devices icon, and make sure that Ftdisk (not
+  Ftedit) is set to start on boot. If Ftdisk is started and the FT sets are
+  still not identified, you may have missed a partition, added one out of
+  order, or added an incorrect partition. To correct this problem, follow the
+  steps in the "How to Undo Changes Made with Ftedit" section. Then repeat the
+  steps in this section.
+
+How to Recover Advanced FT Sets: Stripe Sets with Parity
+--------------------------------------------------------
+
+WARNING: Follow the steps in this section only if the following two conditions
+are true for your computer:
+
+- A stripe set with parity is missing one member disk.
+
+  -and-
+
+- Windows NT no longer recognizes the set.
+
+To recover access to the set, perform the following steps:
+
+1. Run Ftedit.
+
+2. On the Edit menu, click Add Drive, or click the Add Drive button. Read the
+  warnings and click OK to continue, if appropriate.
+
+3. Double-click one of the partitions that is not missing from the stripe set
+  with parity to select it. This adds a new disk entry to the Disks list that
+  contains a single partition that is identical to the other partitions in the
+  stripe set.
+
+4. On the Edit menu, click Create FT Set, or click the Make FT Set button.
+
+5. In the FT Set Type dialog box, select the FT set type you want to recover
+  (Stripe Set, Stripe Set with Parity, or Volume Set), and then click OK.
+
+6. Add the partitions that are members of the FT set one at a time, in their
+  original order. When it is time to add the partition from the missing drive,
+  add the partition from the newly created drive instead.
+
+  NOTE: In most cases, partitions are added in the order listed from the top
+  down (not in order of Partition ID) in the Partitions list. If you are unsure
+  about the order, consult your system administrator. If you are still unsure,
+  contact Microsoft Technical Support.
+
+  To add a partition to the stripe set with parity:
+
+  a. Select the drive that contains the partition you want to add in the Disks
+     list. This causes the Partitions list to display all the partitions on the
+     drive.
+
+  b. Double-click the partition you want to add. This adds an entry to the New
+     FT Set Information list.
+
+  c. Repeat this for each partition that you need to be add.
+
+  NOTE: If you select an incorrect partition or if you make an error, click
+  Cancel. If you Cancel, start again with step 4 in this section.
+
+7. After you add all partitions to the New FT Set list, verify that they are the
+  correct partitions and that they are listed in the correct order. On the Edit
+  menu, click Save FT Set or click the Save FT Set button. This adds the newly
+  created FT set to the FT Set Information list.
+
+8. Repeat steps 1 through 7 for each stripe set with parity that has a member
+  that you need to regain access to. When you are finished, click Save Current
+  Disk Key on the Registry menu. This saves the changed information to the
+  Windows NT registry.
+
+9. Quit Ftedit, shut down Windows NT, and reboot.
+
+10. After you reboot, run Disk Administrator. If you correctly set up the stripe
+  sets with parity description, your stripe sets with parity appear and are
+  identified correctly in Disk Administrator and you should be able to assign
+  a logical drive letter to each set.
+
+  NOTE: If the stripe sets with parity show up as type Unknown in Disk
+  Administrator, you should run Control Panel, choose Devices, and make sure
+  Ftdisk (not Ftedit) is set to start on boot. If Ftdisk is started and the
+  stripe sets with parity are still not identified, you may have missed a
+  partition, added one out of order, or added an incorrect partition. To
+  correct this problem, follow the steps in the "How to Undo Changes Made with
+  Ftedit" section. Then repeat the steps in this section.
+
+This allows Windows NT to recognize the stripe set with parity. Windows NT then
+goes through the steps that are normally required when replacing a missing drive
+from a stripe set with parity. For additional information, see pages 551-552 in
+the "Fixing Mirror Sets and Stripe Sets with Parity" section in the Microsoft
+Windows NT 3.5 "Server System Guide," or refer to the chapter titled "Recovering
+Disk Configuration Information" on page 443 in the Microsoft Windows NT 3.5
+"Workstation System Guide."
+
+How to Undo Changes Made with Ftedit
+------------------------------------
+
+Use the recovery method appropriate to your situation:
+
+Method 1: Changes Not Saved to the Registry:
+
+  If you created any FT sets, added extra drives, or made other changes with
+  Ftedit, these changes are not written to the registry until you click Save
+  Current Disk Key on the Registry menu. Therefore, you can prevent the changes
+  from being written to the registry if you do not save your changes and do
+  either of the following:
+
+  - On the Registry menu, click Reload Current Disk Key. This abandons your
+  changes and reloads all FT information from the registry.
+
+  -or-
+
+  - Quit Ftedit.
+
+Method 2: Changes Saved to the Registry:
+
+  In this case, the previous (old) configuration information can be recovered
+  and used to replace the current information by doing the following:
+
+  WARNING: Using the Registry Editor incorrectly can cause serious, system-wide
+  problems that may require you to reinstall Windows NT to correct them.
+  Microsoft cannot guarantee that any problems resulting from the use of the
+  Registry Editor can be solved. Use this tool at your own risk.
+
+1. Run RegEdit32 (Regedt32.exe) and locate the following key:
+
+        HKEY_LOCAL_MACHINE\SYSTEM\OLDDISK1
+
+
+  NOTE: If you run Ftedit more than once, there may be more than one OLDDISKx
+  key. You generally should select the key with the lowest number in place of
+  "x" in "OLDDISKx", as this will be the backup key created the first time you
+  run Ftedit.
+
+2. On the Registry menu, click Save Key to save this key to a file.
+
+3. Select the key SYSTEM\DISK.
+
+4. On the Registry menu, click Restore to restore the previously saved key.
+
+5. Shut down your computer and restart Windows NT.
+
+
+Additional query words: prodnt raid raid5 ntfaqset
+
+======================================================================
+Keywords          : kbhw kbtool kbHardware 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

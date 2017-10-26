@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258294: HOWTO: Offload XSL Transformations to Clients’ Browsers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258294: HOWTO: Offload XSL Transformations to Clients’ Browsers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258294/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258294/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258294/","publisher":null,"image":null,"headline":"Q258294: HOWTO: Offload XSL Transformations to Clients’ Browsers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258294-howto-offload-xsl-transformations-to-clients-browsers">Q258294: HOWTO: Offload XSL Transformations to Clients’ Browsers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258294
+Product(s): Internet Information Server
+Version(s): winnt:; :2.0,2.5,2.6,3.0,3.0 SP1,4.0
+Operating System(s): 
+Keyword(s): kbInternet kbie500 kbXML kbGrpDSMDAC kbDSupport kbIIS kbie501 kbMSXML200
+Last Modified: 12-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 
+- Microsoft XML, versions 2.0, 2.5, 2.6, 3.0, 3.0 SP1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to offload XSL processing from the server to the client. Doing so
+distributes the load, which helps to relieve the server from having to process
+the formatting of an XML document.
+
+MORE INFORMATION
+================
+
+The following example demonstrates how to load an XSL and XML document into the
+clients' memory and then it uses the XSL to transform the XML.
+
+1. First, copy the following code into a file named Sample.htm, and then save
+  the file to a WebServer in a location accessible from the Web:
+
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;TITLE&gt;Clientside XSL Processing Sample&lt;/TITLE&gt;
+  &lt;SCRIPT LANGUAGE="VBScript"&gt;
+  	dim xslDoc, xmlDoc
+
+  Use the Version dependent PROGID 'MSXML2.DOMDocument.4.0 if you wish to use the DOMDocument object that ships with MSXML 4.0.	
+
+  	Sub Init()
+  		set xslDoc = CreateObject("Microsoft.XMLDOM")
+  		set xmlDoc = CreateObject("Microsoft.XMLDOM")
+  		xslDoc.Async = False
+  		xmlDoc.Async = False
+  		xslDoc.Load "http://&lt;YourServerName&gt;/Sample.xsl"
+  		xmlDoc.Load "http://&lt;YourServerName&gt;/Sample.xml"
+  		Data.innerHTML = xmlDoc.transformNode(xslDoc)	
+  	End Sub
+  &lt;/SCRIPT&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY ONLOAD="Init"&gt;
+  &lt;CENTER&gt;&lt;H1&gt;Clientside XSL Processing Sample&lt;/H1&gt;&lt;/CENTER&gt;
+  &lt;DIV ID="Data"&gt;
+  &lt;/DIV&gt;
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+2. Modify the page so that the address of the Sample.xml and Sample.xsl files is
+  the same as the location of your server.
+
+3. Insert the following XML code into a blank XML document and save it to the
+  same location as the Sample.xml file:
+
+  &lt;?xml version="1.0"?&gt;
+  &lt;CUSTOMERS&gt;
+     &lt;CUSTOMER&gt;
+        &lt;CustomerID&gt;
+           ALFKI
+        &lt;/CustomerID&gt;
+        &lt;CompanyName&gt;
+           Alfreds Futterkiste
+        &lt;/CompanyName&gt;
+        &lt;ContactName&gt;
+           Maria Anderson
+        &lt;/ContactName&gt;
+        &lt;Country&gt;
+           Germany
+        &lt;/Country&gt;
+     &lt;/CUSTOMER&gt;
+     &lt;CUSTOMER&gt;
+        &lt;CustomerID&gt;
+           ANATR
+        &lt;/CustomerID&gt;
+        &lt;CompanyName&gt;
+           Ana Trujillo Emparedados y helados
+        &lt;/CompanyName&gt;
+        &lt;ContactName&gt;
+           Ana Trujillo
+        &lt;/ContactName&gt;
+        &lt;Country&gt;
+           Mexico
+        &lt;/Country&gt;
+     &lt;/CUSTOMER&gt;
+  &lt;/CUSTOMERS&gt;
+
+4. If using an MSXML version earlier than 3.0, then insert the following XSL
+  code into a blank XSL document and save it to the same location as the
+  Sample.xsl file.
+
+  &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;   
+     &lt;xsl:template match="/Books"&gt; 
+             &lt;HTML&gt;
+             &lt;BODY&gt;
+             &lt;TABLE BORDER="2"&gt;
+               &lt;TR&gt;
+                 &lt;TD&gt;Title&lt;/TD&gt;
+                 &lt;TD&gt;Author&lt;/TD&gt;
+               &lt;/TR&gt;
+               &lt;xsl:for-each select="Book"&gt;
+                 &lt;TR&gt;
+                   &lt;TD&gt;&lt;xsl:value-of select="Title"/&gt;&lt;/TD&gt;
+                   &lt;TD&gt;&lt;xsl:value-of select="Author"/&gt;&lt;/TD&gt;
+                 &lt;/TR&gt;
+               &lt;/xsl:for-each&gt;
+             &lt;/TABLE&gt;     
+             &lt;/BODY&gt;
+       &lt;/HTML&gt;    
+       &lt;/xsl:template&gt;     
+     &lt;/xsl:stylesheet&gt;
+
+5. Browse to the Sample.htm page.
+
+This page loads into the browser, and then downloads the data for the XML and XSL
+pages. It then uses the XSL document to transform the XML document into HTML. It
+displays this output on the page by using the innerHTML property of the DIV tag
+on the HTML page.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbie500 kbXML kbGrpDSMDAC kbDSupport kbIIS kbie501 kbMSXML200 
+Technology        : kbiisSearch kbAudDeveloper kbMSXMLSearch kbMSXML200 kbMSXML250 kbMSXML260 kbMSXML300 kbMSXML300SP1 kbMSXML400
+Version           : winnt:; :2.0,2.5,2.6,3.0,3.0 SP1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

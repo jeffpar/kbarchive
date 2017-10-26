@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66051: C 6.00 Optimization Pops Too Much Off Stack in Some Situations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66051: C 6.00 Optimization Pops Too Much Off Stack in Some Situations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66051/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66051/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66051/","publisher":null,"image":null,"headline":"Q66051: C 6.00 Optimization Pops Too Much Off Stack in Some Situations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66051-c-600-optimization-pops-too-much-off-stack-in-some-situations">Q66051: C 6.00 Optimization Pops Too Much Off Stack in Some Situations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66051
+Product(s): See article
+Version(s): 6.00   | 6.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 | mspl13_c
+Last Modified: 24-OCT-1990
+
+In certain situations involving the passing of structures to a
+function, Microsoft C version 6.00's optimizations can cause too many
+bytes to be popped off the stack in preparation for the function call.
+In addition, the actual structure can be placed on the stack
+incorrectly. Currently, the only workaround is to compile without any
+optimizations.
+
+The following code demonstrates the problem. When compiled in Large or
+Compact model (/AL or /AC) with even default optimizations enabled,
+too many bytes are popped off the stack as is demonstrated by the
+extracts from the .COD files reproduced below.
+
+Microsoft has confirmed this to be a problem in Microsoft C version
+6.00. We are researching this problem and will post new information
+here as it becomes available.
+
+Sample Code
+-----------
+
+#include&lt;stdio.h&gt;
+
+#define EDGE 1
+typedef struct _point_
+   {
+      double x;
+      double y;
+   } _point;
+
+typedef struct _window_
+   {
+      _point min_scale;
+      _point max_scale;
+      struct _window_ *data_windows_list;
+      struct _window_ *current_data_window;
+      struct _window_ *next_window;
+   } _window;
+
+typedef struct _display_
+   {
+      _point min_scale;
+      _point max_scale;
+      _window *current_window;
+      _window *windows_list;
+   } _display;
+
+int d_edge_window (_display *display);
+int d_edge_window_1(_display *display);
+int d_rectangle(_display *display, _point corner_1,
+                _point corner_2,int fill);
+
+int d_rectangle(_display *display,_point corner_1,
+                       _point corner_2,int fill)
+{
+  printf("%lf %lf %lf %lf %lf %lf %d \n",
+             display-&gt;min_scale.x,display-&gt;min_scale,
+             corner_1.x,corner_1.y,corner_2.x,corner_2.y,fill);
+}
+
+void main(void)
+{
+   _window moo;
+   _display goo;
+
+   goo.min_scale.x=1.1;
+   goo.min_scale.y=2.2;
+   goo.max_scale.x=3.3;
+   goo.max_scale.y=4.4;
+   goo.current_window=&amp;moo;
+   goo.windows_list=&amp;moo;
+
+   moo.data_windows_list=&amp;moo;
+   moo.current_data_window=&amp;moo;
+   moo.next_window=&amp;moo;
+   moo.min_scale.x=5.5;
+   moo.min_scale.y=6.6;
+   moo.max_scale.x=7.7;
+   moo.max_scale.y=8.8;
+
+   d_edge_window(&amp;goo);
+   d_edge_window_1(&amp;goo);
+}
+
+int d_edge_window(_display *display)
+{
+   d_rectangle(display,display-&gt;current_window-&gt;min_scale,
+                        display-&gt;current_window-&gt;max_scale,EDGE);
+   return 0;
+}
+
+int d_edge_window_1 (_display *display)
+{
+   d_rectangle(display,display-&gt;min_scale,display-&gt;max_scale,EDGE);
+   return 0;
+}
+
+Partial .COD Listing
+--------------------
+
+;   display = 6
+;|***   d_rectangle(display,display-&gt;current_window-&gt;min_scale,
+;|***               display-&gt;current_window-&gt;max_scale,EDGE);
+; Line 64
+    *** 000005  6a 01        push 1         ; push EDGE on stack
+    *** 000007  c4 5e 06     les  bx,DWORD PTR [bp+6]    ;display
+    *** 00000a  26 8b 47 20  mov  ax,WORD PTR es:[bx+32]
+    *** 00000e  26 8b 57 22  mov  dx,WORD PTR es:[bx+34]
+    *** 000012  8b c8        mov  cx,ax
+    *** 000014  8b f2        mov  si,dx
+    *** 000016  05 10 00     add  ax,16
+    *** 000019  8b f9        mov  di,cx
+    *** 00001b  83 ec 10     sub  sp,16 ; make room for max_scale
+    *** 00001e  57           push di
+    *** 00001f  56           push si
+    *** 000020  1e           push ds
+    *** 000021  8b f0        mov  si,ax
+    *** 000023  8b fc        mov  di,sp
+    *** 000025  83 c7 0c     add  di,12 ; should be add di,6
+    *** 000028  16           push ss
+    *** 000029  07           pop  es
+    *** 00002a  8e da        mov  ds,dx
+    ASSUME DS: NOTHING
+    *** 00002c  b9 08 00     mov  cx,8
+    *** 00002f  f3           rep
+    *** 000030  a5           movsw      ; copy max_scale to stack
+    *** 000031  1f           pop  ds
+    ASSUME DS: DGROUP
+    *** 000032  07           pop  es    ; es shouldn't be popped
+    *** 000033  5e           pop  si
+    *** 000034  5f           pop  di
+    *** 000035  83 ec 10     sub  sp,16 ; make room for min_scale
+    *** 000038  06           push es    ; rest has been thrown off
+    *** 000039  1e           push ds
+    *** 00003a  56           push si
+    *** 00003b  8b f7        mov  si,di
+    *** 00003d  8b fc        mov  di,sp
+    *** 00003f  83 c7 08     add  di,8
+    *** 000042  16           push ss
+    *** 000043  07           pop  es
+    *** 000044  1f           pop  ds
+    ASSUME DS: DGROUP
+    *** 000045  b9 08 00     mov  cx,8
+    *** 000048  f3           rep
+    *** 000049  a5           movsw
+    *** 00004a  1f           pop  ds
+    ASSUME DS: DGROUP
+    *** 00004b  07           pop  es
+    *** 00004c  06           push es
+    *** 00004d  53           push bx
+    *** 00004e  9a 00 00 00 00  call  FAR PTR _d_rectangle
+    *** 000053  83 c4 26     add  sp,38
+;|***   return 0;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

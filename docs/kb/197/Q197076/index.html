@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197076/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197076/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197076/","publisher":null,"image":null,"headline":"Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197076-info-controlling-anti-aliased-text-via-the-logfont-structure">Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197076
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95,98; winnt:4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT400 kbOSWin2000 kbOSWin95 kbOSWin98
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 98 
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Beginning with Windows 95 and Windows NT 4.0, the Graphics Device Interface
+(GDI) can display TrueType fonts that are anti-aliased for better on-screen
+readability. Applications receive the benefits of anti-aliased text without
+making modifications to the program code. However, applications may want to
+control the use of anti-aliased explicitly.
+
+MORE INFORMATION
+================
+
+Windows and Windows NT display anti-aliased text if the video display is
+configured to be 16-bit per pixel or greater color depth and the user has chosen
+the "smooth edges of screen fonts" display option. Anti-aliased text, otherwise
+known as gray-scale text, uses shades of gray when the background is white, to
+smooth the transition of glyph edge pixels to the background color.
+
+Application developers can specifically realize fonts with or without anti-
+aliasing by using the lfQuality member of the LOGFONT structure.
+
+NOTE: Anti-aliased text can only be realized if the video display is configured
+to be in 16-bit per pixel or greater color depth.
+
+Unfortunately the Platform SDK documentation for the LOGFONT structure fails to
+document the constants that are used to control anti-aliased text by the
+application. However, the following constants are declared in the WinGDI.h
+header file of the Platform SDK:
+
+     #define NONANTIALIASED_QUALITY  3
+     #define ANTIALIASED_QUALITY     4
+
+Disabling Anti-Aliased Text
+---------------------------
+
+To disable anti-aliased text, set the LOGFONT structure's lfQuality member to
+NONANTIALIASED_QUALITY. The font created by selecting the HFONT into a device
+context (DC) is not anti-aliased even if the system option for anti- aliasing
+has been chosen.
+
+Enabling Anti-Aliased Text
+--------------------------
+
+To enable anti-aliased text, set the LOGFONT structure's lfQuality member to
+ANTIALIASED_QUALITY. The font created by selecting the HFONT into a device
+context (DC) is anti-aliased if the system's video display settings can support
+anti-aliased fonts.
+
+If an application sets the lfQuality member of the LOGFONT structure to
+DEFAULT_QUALITY or PROOF_QUALITY, anti-aliasing of text is controlled by the
+user's selection of the "smooth edges of screen fonts" display option.
+
+NOTE: The Windows 95 base installation does not produce anti-aliased text (smooth
+fonts). To install font smoothing capabilities into Windows 95, install the
+Plus! pack for Windows 95 or download the font smoothing utility from the
+Microsoft Typography Web site referenced below.
+
+REFERENCES
+==========
+
+To obtain the Windows 95 font smoothing utility, download the Microsoft
+Typography Web site at:
+
+  http://www.microsoft.com/typography/
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbOSWinNT400 kbOSWin2000 kbOSWin95 kbOSWin98 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWinAdvServSearch kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95,98; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

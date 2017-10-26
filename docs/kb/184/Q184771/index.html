@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184771/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184771/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184771/","publisher":null,"image":null,"headline":"Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184771-xadm-how-to-configure-exchange-server-on-banyan-vines-network">Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184771
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 10-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article details the process of configuring Microsoft Exchange Server on a
+Banyan VINES network.
+
+MORE INFORMATION
+================
+
+To run Microsoft Exchange Server on a Banyan VINES network, perform the
+following configuration steps:
+
+1. Install the Banyan VINES redirector on the Exchange Server computer.
+
+2. Configure RPC support for Banyan VINES.
+
+If Windows NT Server version 3.51 is installed, copy the DLLs in the
+Support\banyan directory on the Exchange Server CD to your Windows System32
+directory.
+
+If Windows NT Server version 4.0 is installed, perform the following steps:
+
+1. On Control Panel, choose Network.
+
+2. Select the Services tab.
+
+3. Click Add.
+
+4. Select RPC support for Banyan and click OK.
+
+If Exchange Server and Windows NT Server version 4.0 are installed on a computer
+running in a Banyan VINES network, the Banyan VINES computer name must be the
+same as the Exchange Server computer name. For example, if the Exchange Server
+computer name is MailServer1, the Banyan VINES computer name should also be
+MailServer1. To set the Banyan VINES computer name to the same name as the
+Exchange Server computer, perform the following steps:
+
+1. Choose Setup from the VINES program group.
+
+2. Choose Computers.
+
+3. Select Name Workstation on Network.
+
+4. In the Computer Name box, type the name used by the Exchange Server computer.
+
+To ensure that the Microsoft Exchange client can connect to an Exchange Server
+computer on a Banyan VINES network, the Banyan VINES protocol (ncacn_vns_spp)
+should be the first protocol listed in the RPC binding order. In addition, any
+unused protocols should be removed from the binding order.
+
+RPC connectivity in Banyan requires the Windows NT 3.51 versions of the following
+two .dll files:
+
+  Rpcltc8.dll
+  Rpclts8.dll
+
+The registry specifies the correct version of the .dll file to use at:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\RPC\Client Protocols
+  \ncacn_vns_spp:REG_SZ:rpcltc8.dll
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\RPC\Server Protocols
+  \ncacn_vns_spp:REG_SZ:rpclts8.dll
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

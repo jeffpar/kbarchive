@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63353/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63353/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63353/","publisher":null,"image":null,"headline":"Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63353-256-color-driver-not-showing-256-colors-in-windows-30">Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q63353</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95.</span><span class="n">x</span> <span class="n">Retail</span> <span class="n">Product</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.0</span><span class="n">a</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">05</span><span class="p">-</span><span class="n">OCT</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">versions</span> <span class="m">3.0</span><span class="p">,</span> <span class="m">3.0</span><span class="n">a</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Some</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">3.0</span> <span class="n">display</span> <span class="n">drivers</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">palette</span> <span class="k">of</span> <span class="m">256</span> <span class="n">simultaneous</span>
+<span class="n">colors</span><span class="p">.</span> <span class="n">The</span> <span class="n">Video</span> <span class="n">Seven</span> <span class="n">VGA</span> <span class="k">and</span> <span class="n">IBM</span> <span class="m">8514</span><span class="p">/</span><span class="n">A</span> <span class="n">drivers</span> <span class="n">included</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">3.0</span>
+<span class="k">package</span> <span class="n">have</span> <span class="n">this</span> <span class="n">capability</span> <span class="p">(</span><span class="k">with</span> <span class="n">an</span> <span class="n">appropriate</span> <span class="n">amount</span> <span class="k">of</span> <span class="n">RAM</span> <span class="n">on</span> <span class="n">the</span> <span class="n">display</span>
+<span class="n">card</span><span class="p">).</span>
+
+<span class="n">However</span><span class="p">,</span> <span class="n">such</span> <span class="n">a</span> <span class="n">driver</span> <span class="n">does</span> <span class="k">not</span> <span class="n">automatically</span> <span class="n">allow</span> <span class="n">a</span> <span class="n">given</span> <span class="n">Windows</span> <span class="n">application</span>
+<span class="k">to</span> <span class="n">use</span> <span class="m">256</span> <span class="n">simultaneous</span> <span class="n">colors</span><span class="p">.</span> <span class="k">In</span> <span class="n">a</span> <span class="m">256</span><span class="p">-</span><span class="n">color</span> <span class="n">Windows</span> <span class="m">3.0</span> <span class="n">display</span> <span class="n">driver</span><span class="p">,</span> <span class="n">there</span>
+<span class="n">are</span> <span class="n">two</span> <span class="n">sets</span> <span class="k">of</span> <span class="n">colors</span> <span class="n">available</span><span class="p">:</span> <span class="m">16</span> <span class="nf">system</span> <span class="n">colors</span> <span class="k">and</span> <span class="m">240</span> <span class="n">palette</span> <span class="n">colors</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">use</span> <span class="n">more</span> <span class="n">than</span> <span class="n">the</span> <span class="m">16</span> <span class="nf">system</span> <span class="n">colors</span><span class="p">,</span> <span class="n">an</span> <span class="n">application</span> <span class="n">must</span> <span class="n">be</span> <span class="n">specifically</span>
+<span class="n">written</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">3.0</span> <span class="n">palette</span><span class="p">-</span><span class="n">management</span> <span class="n">capability</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">application</span>
+<span class="n">is</span> <span class="k">not</span> <span class="n">written</span> <span class="k">to</span> <span class="n">use</span> <span class="n">palette</span> <span class="n">management</span><span class="p">,</span> <span class="n">it</span> <span class="n">shows</span> <span class="n">only</span> <span class="m">16</span> <span class="n">colors</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span>
+<span class="n">problem</span> <span class="k">with</span> <span class="n">the</span> <span class="n">display</span> <span class="n">driver</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Microsoft</span> <span class="n">PowerPoint</span> <span class="n">for</span> <span class="n">Windows</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span> <span class="k">of</span> <span class="n">an</span> <span class="n">application</span> <span class="n">that</span> <span class="k">uses</span>
+<span class="n">Windows</span> <span class="m">3.00</span> <span class="n">palette</span> <span class="n">management</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">you</span> <span class="k">with</span> <span class="m">256</span><span class="p">-</span><span class="n">simultaneous</span><span class="p">-</span> <span class="n">color</span>
+<span class="n">capability</span><span class="p">.</span> <span class="n">The</span> <span class="n">Windows</span> <span class="m">3.0</span> <span class="n">Control</span> <span class="n">Panel</span> <span class="k">uses</span> <span class="nf">system</span> <span class="n">colors</span> <span class="n">only</span><span class="p">,</span> <span class="n">so</span> <span class="n">it</span> <span class="n">does</span>
+<span class="k">not</span> <span class="n">show</span> <span class="n">additional</span> <span class="n">colors</span> <span class="k">with</span> <span class="n">a</span> <span class="m">256</span><span class="p">-</span><span class="n">color</span> <span class="n">display</span> <span class="n">driver</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">because</span>
+<span class="n">there</span> <span class="n">is</span> <span class="n">no</span> <span class="n">need</span> <span class="k">to</span> <span class="n">consume</span> <span class="n">valuable</span> <span class="n">palette</span> <span class="n">color</span> <span class="n">indexes</span> <span class="n">simply</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">an</span>
+<span class="n">additional</span> <span class="n">color</span> <span class="n">for</span> <span class="n">menu</span> <span class="n">bars</span><span class="p">,</span> <span class="n">for</span> <span class="n">example</span><span class="p">.</span>
+
+
+<span class="n">KBCategory</span><span class="p">:</span> <span class="n">kbother</span> <span class="n">kbdisplay</span>
+<span class="n">KBSubcategory</span><span class="p">:</span> <span class="n">win30</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="m">3.00</span> <span class="m">3.00</span><span class="n">a</span> <span class="m">3.0</span> <span class="m">3.0</span><span class="n">a</span> <span class="n">Video</span><span class="p">-</span><span class="m">7</span> <span class="n">windrvr</span> <span class="n">Video</span><span class="p">-</span><span class="n">Seven</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbWin3xSearch</span> <span class="n">kbZNotKeyword3</span> <span class="n">kbWin300</span> <span class="n">kbWin300a</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.0</span><span class="n">a</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

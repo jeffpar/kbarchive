@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303108/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303108/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303108/","publisher":null,"image":null,"headline":"Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303108-mechwarrior-4-err-msg-exception-stack-overflow-or-file-not">Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303108
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MechWarrior 4: Black Knight 
+- Microsoft MechWarrior 4: Inner Sphere 'Mech Pak 
+- Microsoft MechWarrior 4: Vengeance 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Microsoft MechWarrior 4, you may receive an error message
+similar to any of the following:
+
+  EXCEPTION : Stack Overflow in MW4! (+0xd4cf)----Address : 0x0040e4cf
+
+  -or-
+
+  EXCEPTION : Stack Overflow in MW4X! (+0xd4cf)----Address : 0x0040e4cf
+
+-or-
+
+  STOP: File not found 'Content\ShellScripts\Graphics\dialog_500x450.tga'
+
+-or-
+
+  File not found: Cdac14ba.dll
+
+CAUSE
+=====
+
+This behavior can occur if one or more files in the MechWarrior 4 folder are
+damaged or missing.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps.
+
+Step 1: Remove MechWarrior Vengeance, MechWarrior Black Knight and MechWarrior Mech Paks
+----------------------------------------------------------------------------------------
+
+To remove these programs:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click MechWarrior Vengeance and then click "Add/Remove" or "Change/Remove".
+
+4. Click Uninstall.
+
+5. Click to check the "Remove saved games files" check box.
+
+6. Follow the instructions on the screen to remove the game.
+
+7. Repeat steps 1-4 to remove Black Knight and Mech Paks.
+
+Step 2: Delete the MechWarrior Vengeance Folder
+-----------------------------------------------
+
+To delete the MechWarrior Vengeance folder:
+
+1. Click Start, and then click "Find or Search".
+
+  NOTE: If you are using Microsoft Windows 98, click "Files or Folders", and if
+  you are using Microsoft Windows XP, click "All files and folders".
+
+2. In the Named box or the "All or part of the file name" box, type "MechWarrior
+  Vengeance" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer.
+
+4. Make sure that the "Include subfolders" check box is selected.
+
+5. Click "Find Now" or "Search".
+
+6. Right-click the MechWarrior Vengeance folder, click Delete, and then click
+  Yes.
+
+7. Close all the windows.
+
+Step 3: Clean Boot the Computer
+-------------------------------
+
+To clean boot your computer, use the appropriate method for your version of
+Windows:
+
+  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+  Q281770 How to Perform Clean-Boot Troubleshooting for Windows 2000
+
+  Q310353 How to Perform a Clean Boot in Windows XP
+
+Step 4: Install MechWarrior 4
+-----------------------------
+
+1. Insert the MechWarrior compact disc into your computer's CD-ROM or DVD-ROM
+  drive, and then follow the Setup Wizard instructions on your screen. If the
+  Setup Wizard does not appear, complete steps 2 and 3. If the Setup Wizard
+  appears, skip to step 4.
+
+2. Click Start, and then click Run.
+
+3. Type "&lt;drive&gt;:setup" (without the quotation marks), where &lt;drive&gt;
+  is the drive letter of your computer's CD-ROM or DVD-ROM drive.
+
+4. Click Install, click Next, and then click Change.
+
+5. In the Path box, delete the existing path, and then type:
+
+  "&lt;drive&gt;:\Program Files\Microsoft Games\MechWarrior 4" (without the
+  quotation marks)
+
+  where &lt;drive&gt; is the drive letter of the hard disk on which you want to
+  install MechWarrior Vengeance.
+
+6. Click OK, and then click Yes when you receive a prompt to create the folder.
+
+7. Click OK, and then follow the instructions on the screen to reinstall
+  MechWarrior Vengeance.
+
+8. Repeat steps 1-7 to install Black Knight or Mech Paks if you have these
+  programs.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

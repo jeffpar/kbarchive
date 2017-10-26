@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273734: SMS: How to Set Up Unattended Installation Scripts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273734: SMS: How to Set Up Unattended Installation Scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273734/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273734/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273734/","publisher":null,"image":null,"headline":"Q273734: SMS: How to Set Up Unattended Installation Scripts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273734-sms-how-to-set-up-unattended-installation-scripts">Q273734: SMS: How to Set Up Unattended Installation Scripts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273734
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbinterop kbsetup kbConfig kbSecurity kbServer kbsms200 kbsmsUtil kbUpgrade
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set up unattended installation scripts. You can
+use unattended installation scripts to install either a primary or secondary
+site.
+
+MORE INFORMATION
+================
+
+Before you install Systems Management Server (SMS) version 2.0, ensure that
+either Microsoft Windows NT Server version 4.0, Service Pack 4, or Microsoft
+Windows 2000 Server is installed on the computers that are going to be either
+the site servers or the site database servers. Microsoft SQL Server 7.0 or
+Microsoft SQL Server 2000 must be installed prior to Systems Management Server
+installation remotely or locally.
+
+To perform an unattended installation of SMS 2.0, use the following steps.
+
+NOTE: The following sample script is a general script for an unattended
+installation. This script must be modified to suit your specific purpose.
+
+1. Create a user account that you can use as the SMS service account, give the
+  account logon privileges as a service right, and then make the account a
+  member of the Domain Administrator group.
+
+2. Create an initialization file (Filename.ini) that contains the following
+  text. Ensure that you supply your own values for the variables, such as,
+  site, domain, and server.
+
+A sample script:
+
+  [Identification]
+  Action=&lt;InstallPrimarySite or InstallSecondarySite&gt;
+
+  [Options]
+  FullName=&lt;My Full Name&gt;
+  OrgName=&lt;YourCompanyName&gt;
+  ProductID=&lt;123-4567890&gt;
+  SiteCode=&lt;LA1&gt; The site code is a three-character code that SMS uses to
+  identify a site.
+  SiteName=&lt;My Site&gt; The site name is any text that describes the site.
+  SiteDomain=&lt;domain1&gt; The site domain is the Windows NT domain that the
+  site server is in.
+  ServiceAccount=&lt;SMSService &gt;
+  ServiceAccountDomain=&lt;domain1&gt; The domain that the service account is
+  in.
+  ServiceAccountPassword=&lt;YourPassword&gt;
+
+  PublicKey=
+  NumOfClients=&lt;100&gt; The number of clients is the total number of client
+  and server computers that are in the current site and all child sites. The
+  number of clients is used by Setup to calculate the size of the SMS site
+  database device and transaction log device.
+  ServerPlatforms=&lt;X86&gt;
+  NetworkEnvironments=
+  OptionalUnits= &lt;Licensing Metering, Remote Control, Nwbind, Nwnds&gt;
+  SMSInstallDir=&lt;D:\SMS&gt;
+  InstallSQLServer=&lt;0 0:SQL installation not included&gt;.
+  ParentSiteCode=
+  ParentSiteServer=
+  AddressType= &lt;MS_LAN, MS_ASYNC_RAS, MS_ISDN_RAS, MS_X25_RAS,
+  MS_SNA_RAS&gt;
+  LanUser= &lt;Domain\User&gt; This specifies the Windows NT account that the
+  SMS service on this child site must use to connect to the parent site.
+  LanUserPassword=
+  RasUser= This field can be omitted if the Address Type is MS_LAN.
+  RasUserDomain=
+  RasUserPassword=
+  RasPhoneBook=
+  NumberOfAdminUI=&lt;5&gt;
+  SDKServer=&lt;testsms&gt; The server in which you want to place the SMS
+  Software Development Kit (SDK) provider. This server can be either the SMS
+  site server or the SQL server. In the case of a secondary site installation,
+  you do not have to specify a server name.
+
+  [SQLInstallOptions]
+  SQLInstallDir=&lt;E:\SmsSQL7&gt;
+  SAPassword=
+  SQLDevicePath=&lt;E:\Smsdata&gt;
+
+  [SQLConfigOptions]
+  SQLServerName=&lt;testsms&gt;
+  SQLServerVersion=&lt;7.0&gt;
+  UseSQLIntegratedSecurity=&lt;0&gt; (1 for Yes, 0 for No)
+  SQLLoginID=&lt;sa&gt; This field can be omitted if UseSQLIntegratedSecurity is
+  set to 1.
+  SQLLoginPassword= This field can be omitted if UseSQLIntegratedSecurity is set
+  to 1.
+  CreateSQLDevice=1 If you want SMS Setup to automatically create the devices on
+  SQL 6.5 or create the database on SQL 7.0. (1 for Yes, 0 for No)
+  DatabaseName=&lt;SMS_sitecode&gt;
+  DatabaseDevice=&lt;SMS_sitecode_Data&gt;
+  LogDevice=&lt;SMS_sitecode_Log&gt;
+  SQLDevicePath=&lt;E:\Smsdata&gt;
+  NumberOfSqlConnections=&lt;75&gt;
+  AutoConfigSqlConnections=&lt;1&gt;
+
+  [LicenseServer]
+  SQLServerName=&lt;testsms&gt;
+  SQLServerVersion=&lt;7.0&gt;
+  UseSQLIntegratedSecurity=&lt;0&gt;
+  SQLLoginID=&lt;sa&gt;
+  SQLLoginPassword=
+  CreateSQLDevice=&lt;1&gt;
+  DatabaseName=&lt;LicDb&gt;
+  DatabaseDevice=&lt;LicData&gt;
+  LogDevice=&lt;LicLog&gt;
+  SQLDevicePath=&lt;E:\Smsdata&gt;
+
+  [Bootstrap]
+  SetupPath=
+  Action=
+  BuildNumber= 1493 for Service Pack 2 (SP2) or Service Pack 3 (SP3)
+
+3. At a command prompt, run SMS 2.0 Setup by using the initialization file that
+  you created in step 1 of this article. (The Setup file can be located in the
+  SMSsetup\Bin\I386 folder on the SMS CD-ROM.) For example, you can use the
+  setup /script filename.ini /nouserinput command.
+
+4. If the unattended Setup is unsuccessful, check the SMSsetup.log on the root
+  folder of drive C.
+
+REFERENCES
+==========
+
+Refer to Appendix E in the Microsoft Systems Management Server 2.0 Resource
+Guide for further information about unattended installations.
+
+Additional query words: prodsms unattended installation
+
+======================================================================
+Keywords          : kbinterop kbsetup kbConfig kbSecurity kbServer kbsms200 kbsmsUtil kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

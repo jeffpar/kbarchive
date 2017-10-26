@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190607/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190607/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190607/","publisher":null,"image":null,"headline":"Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190607-prb-dataenvironment-datareport-moves-form-to-eof">Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190607
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have a DataReport and Form with controls bound to the same
+DataEnvironment, opening the report causes the form to be blank.
+
+CAUSE
+=====
+
+When the report steps through the records, it is moving the current position for
+the DataEnvironment and stops when it reaches EOF (end-of- file). This becomes
+the current position for the form, which displays blank fields.
+
+RESOLUTION
+==========
+
+- Open a second copy of the DataEnvironment in code and set the DataReport's
+  DataSource property to this variable instead of the global DataEnvironment
+  object.
+
+-or-
+
+- Reset the record pointer from a timer event.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic EXE project and add a form (Form1), DataEnvironment
+  (DataEnvironment1), and DataReport (DataReport1).
+
+2. In the DataEnvironment designer, add a connection (Connection1) to a
+  database, such as Microsoft SQL Server.
+
+3. Off the connection, create a command (Command1) that selects records from a
+  table, such as SELECT * FROM Authors.
+
+4. Save the DataEnvironment.
+
+5. In the DataReport designer, set the following properties:
+
+        DataSource: DataEnvironment1
+        DataMember: Command1
+
+6. Add some fields from the table and save the report.
+
+7. Add some textboxes to the form and set the following properties:
+
+        DataSource: DataEnvironment1
+        DataMember: Command1
+        DataField: choose from the fields in the table
+
+8. Run the project. The form opens and displays the first record in the table.
+
+9. Close the form and add the following code to it:
+
+        Option Explicit
+
+        Sub Form_Load ()
+          DataReport1.Show
+        End Sub
+
+10. Run the project again. The DataReport opens and shows the records. When you
+  switch to the form, it is blank. The DataReport has moved the cursor to the
+  EOF position, so the form has not record to display.
+
+Workaround 1
+------------
+
+1. Modify the form code as follows:
+
+        Option Explicit
+
+        Sub Form_Load ()
+          Dim de As DataEnvironment1
+          Set de = New DataEnvironment1
+          Set DataReport1.DataSource = de
+           DataReport1.Show
+        End Sub
+
+2. Run the project. The form is now correctly positioned to the first record
+  because the DataReport is using a different instance of the DataEnvironment.
+
+Workaround 2
+------------
+
+1. Add a Timer (Timer1) to the form and set the Interval property to 0.
+
+2. Modify the form code as follows:
+
+        Option Explicit
+
+        Sub Form_Load ()
+          DataReport1.Show
+          Timer1.Interval = 1
+        End Sub
+
+        Sub Timer1_Timer ()
+          DataEnvironment1.rsCommand1.MoveFirst
+          Timer1.Interval = 0
+        End Sub
+
+3. Run the project. The form is now correctly positioned to the first record.
+  The timer event does not fire until the DataReport has finished stepping
+  through the records and so safely resets the record pointer. This does not
+  affect the DataReport.
+
+Additional query words: kbDSupport kbdse kbvbp600 kbVBp kbDataBinding
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

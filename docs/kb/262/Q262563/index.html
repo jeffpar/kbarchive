@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262563: Schedule+ User Sees ??? for User’s Free/Busy Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262563: Schedule+ User Sees ??? for User’s Free/Busy Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262563/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262563/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262563/","publisher":null,"image":null,"headline":"Q262563: Schedule+ User Sees ??? for User’s Free/Busy Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262563-schedule-user-sees--for-users-freebusy-data">Q262563: Schedule+ User Sees ??? for User’s Free/Busy Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262563
+Product(s): Microsoft Schedule+ for Windows
+Version(s): 7.0,7.0a,7.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+- Microsoft Outlook 2000 
+- Microsoft Schedule+, versions 7.0, 7.0a, 7.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the InterOrg Replication tool to replicate the Schedule+ Free Busy
+system folder between two organizations, a Schedule+ user sees question marks
+(???) in the Free/Busy bar for an Outlook user in the secondary organization.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time    Version         Size     File name     Platform
+  ----------------------------------------------------------------
+  11/18/99  22.36   8.30.2651.0060  121104   Msoutl32.dll  x86
+
+
+
+WORKAROUND
+==========
+
+If the Schedule+ users do not need to open an Outlook calendar, rename the
+Msoutl32.dll file on the Schedule+ clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Outlook 97 Viewer for Schedule +
+7.x.
+
+MORE INFORMATION
+================
+
+Schedule+ users cannot access an Outlook user's free-and-busy information when
+they are using Schedule+ with the Outlook driver for Schedule+ (Msoutl32.dll) if
+the free-and-busy information is replicated into the Exchange Server
+organization by the InterOrg Replication tool. Free-and-busy time for all
+Outlook users in a local organization is available to local Schedule+ users by
+using the above mechanism, and all Outlook users in the local organization can
+access the free-and-busy information for users in the remote organization. In
+other words, both the Outlook driver for Schedule+ and the InterOrg Replication
+tool work in their own right, the problem is that the Outlook driver cannot read
+the free-and-busy information created by the InterOrg Replication tool.
+Schedule+ users can see free-and-busy information for users in remote
+organizations prior to installing the Outlook driver for Schedule+. The problem
+only shows itself after Msoutl32.dll has been installed.
+
+Additional query words: sched+ scd+ msoutl
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword2 kbOutlook2000Search kbScheduleSearch kbSchedule700 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbSchedule700a kbSchedule750
+Version           : :7.0,7.0a,7.5
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

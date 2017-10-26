@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96605/","publisher":null,"image":null,"headline":"Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96605-ffapi-err-msg-80---bad-gateway-service-type-on-create">Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96605
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Microsoft Mail Software Development Kit: File Format Application
+Programming Interface (FFAPI) version 3.0, an attempt to use GTWCFG.EXE,
+LGTWCFG.EXE, or OGTWCFG.EXE (gateway configure) to create a new FFAPI postoffice
+fails and the application generates this message:
+
+  80 - Bad Gateway Service Type on Create
+
+CAUSE
+=====
+
+This error can occur when the FFAPI network name has been used as a Microsoft
+Mail network name. While a postoffice can contain any number of network or
+postoffice definitions, you cannot share the name of a network between an FFAPI
+and a Microsoft Mail postoffice.
+
+RESOLUTION
+==========
+
+More than one FFAPI postoffice can use the same network name if one of the FFAPI
+gateway configure programs creates the network.
+
+For example, if you create a Network/Postoffice as follows:
+
+  GTWCFG -aadmin:password -dm -cNET1/PO1
+
+This step works correctly if NET1/PO1 does not already exist. Then use ADMIN.EXE
+to create another Network/Postoffice with "Network=Net2" and "Postoffice=PO1."
+This attempt fails and ADMIN generates one of these messages:
+
+  80 - Bad Gateway Service Type on Create
+
+  -or-
+
+  80 - Bad Gateway Service Type on Create
+
+Note: This error is not related to the same error message in FFAPI versions 2.1
+and earlier, which required the -T parameter to specify the service type.
+
+For more information about using the ADMIN program to create external Networks
+and Postoffices, please refer to the "Microsoft Mail for PC Networks
+Administrator's Guide" for version 3.0.
+
+For more information about using FFAPI and creating FFAPI postoffices, please
+refer to the Microsoft Mail Software Development Kit "File Format API for
+Gateways and Applications" manual for version 3.0.
+
+Additional query words: 3.00 ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

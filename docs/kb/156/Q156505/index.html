@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156505/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156505/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156505/","publisher":null,"image":null,"headline":"Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156505-prb-syntax-error-with-activex-control-terminates-vfp">Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156505
+Product(s): Microsoft FoxPro
+Version(s): 5.0, 6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbvfp500 kbvfp600
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ImageList ActiveX control is used to store a set of images for use with
+other ActiveX controls. When setting the Picture property of an ActiveX control
+to an image in the ImageList control, the following error may occur:
+
+  This Program has performed an illegal operation and will be shut down
+
+CAUSE
+=====
+
+The Picture property may have been omitted from the reference to the ImageList
+control.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The ImageList ActiveX control allows you to load all the .bmp files and .ico
+files that may be needed for other ActiveX controls. You can then set the
+Picture property of an ActiveX control to reference any of the images in the
+ImageList control. The following command is an example of assigning the first
+image to the Picture property of an ActiveX control:
+
+     ThisForm.Olecontrol1.Object.Picture = ;
+       ThisForm.Olecontrol2.Object.ListImages(1).Picture
+
+If the Picture property is omitted from the end of the reference, the following
+error message occurs:
+
+  This Program has performed an illegal operation and will be shut down
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following program demonstrates the correct and incorrect way to change a
+Picture Property of an ActiveX control using an image from the ImageList
+control.
+
+      ***** Start Code *****
+
+     PUBLIC frmOcxTest
+     frmOcxTest = CREATEOBJECT('Form1')
+     frmOcxTest.ADDOBJECT("PicList1","PicList", ;
+        "COMCTL.ImageListCtrl.1")
+
+     * Add the Fox.bmp to the image control
+     frmOcxTest.PicList1.Object.ListImages.Add ;
+        (,,LoadPicture("C:\VFP50\FOX.BMP"))
+     frmOcxTest.ADDOBJECT("OcxButton1","OcxButton", ;
+        "Threed.SSCommand")
+     frmOcxTest.OcxButton1.Caption = "Change Image Works"
+     frmOcxTest.ADDOBJECT("Button1","Button")
+
+     frmOcxTest.Show()
+
+     DEFINE CLASS Form1 AS Form
+        Top = 0
+        Left = 0
+        Height = 300
+        Width = 300
+        Name = "Form1"
+        Caption = "ImageList Test"
+
+     ENDDEFINE
+
+     DEFINE CLASS PicList AS OLEControl
+     ENDDEFINE
+
+     DEFINE CLASS OcxButton AS OLEControl
+        Top = 75
+        Left = 75
+        Height = 80
+        Width = 150
+        Visible = .T.
+        PROCEDURE Click
+          * This code will change the image on the ActiveX Button
+          ThisForm.OcxButton1.Object.Picture = ;
+            ThisForm.PicList1.Object.ListImages(1).Picture
+        ENDPROC
+     ENDDEFINE
+
+     DEFINE CLASS Button AS CommandButton
+        Top = 195
+        Left = 75
+        Height = 27
+        Width = 150
+        Visible = .T.
+        Caption = "Change Image Fails"
+
+        PROCEDURE Click
+          * This code will cause the following error message:
+          *  "This Program has performed an illegal operation and will be
+          *  shut down" (There is no "Picture" reference after "ListImages".)
+
+          ThisForm.OcxButton1.Object.Picture = ;
+            ThisForm.PicList1.Object.ListImages(1)
+        ENDPROC
+     ENDDEFINE
+
+     ***** End Code *****
+
+When you run the above code, the "Change Image Works" button displays the Fox.bmp
+file from the ImageList control. The "Change Image Fails" button causes an
+"Invalid Page Fault" error.
+
+In Visual FoxPro 6.0, you do not get the "Invalid Page Fault" error, instead you
+get the following error message:
+
+  Ole exception error: Exception code c0000005. OLE object may be corrupt
+
+REFERENCES
+==========
+
+For more information on the ActiveX controls that shipped with Visual FoxPro
+5.0, see Help and the Ctrlref.hlp file located in the Vfp\Ctrlhlp directory.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : 5.0, 6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

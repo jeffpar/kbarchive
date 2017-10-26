@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152254/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152254/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152254/","publisher":null,"image":null,"headline":"Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152254-bug-lnk2001-on-operator-with-class-from-mfc-extension-dll">Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152254
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbProgramming kbDLL kbMFC kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug k
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to build an application that uses classes from an MFC extension
+DLL, the linker reports an error of the form:
+
+  
+
+  mainfrm.obj : error LNK2001: unresolved external symbol
+      "class CArchive &amp; __stdcall operator&gt;&gt;
+          (class CArchive &amp;,class CClassInExtDLL * &amp;)"
+              (??5@YGAAVCArchive@@AAV0@AAPAVCDummyDoc@@@Z)
+
+Specifically, this problem occurs for code that attempts to use the &gt;&gt;
+operator to serialize one of the extension DLL classes that use the
+DECLARE_SERIAL macro.
+
+CAUSE
+=====
+
+If an exported class is declared in an extension DLL and is made serializable by
+the use of the macros DECLARE_SERIAL and IMPLEMENT_SERIAL, the global function:
+
+     friend CArchive&amp; AFXAPI operator&gt;&gt;(CArchive&amp; ar, CMyObject* &amp;pOb);
+
+is not automatically exported along with the class. Therefore, if an application
+tries to serialize an object of that class type by the use of the &gt;&gt;
+operator, a LNK2001 unresolved external error occurs on operator &gt;&gt;.
+
+RESOLUTION
+==========
+
+Create a new macro based on the DECLARE_SERIAL macro:
+
+     #define DECLARE_SERIAL_EXTDLL(class_name)   \ 
+             _DECLARE_DYNCREATE(class_name)      \ 
+             AFX_EXT_API friend CArchive&amp; AFXAPI \ 
+             operator&gt;&gt;(CArchive&amp; ar, class_name* &amp;pOb);
+
+After defining this macro, use this new DECLARE_SERIAL_EXTDLL macro in place of
+DECLARE_SERIAL in the class declaration. Rebuild the DLL and link its new import
+library with the application.
+
+In this resolution, the AFX_EXT_API prefix resolves the LNK2001 error by
+explicitly exporting the function operator&gt;&gt; when building the extension
+DLL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+In order to make a class serializable by the use of a CArchive object, the class
+must be derived from CObject and must implement the DECLARE_SERIAL and
+IMPLEMENT_SERIAL macros. These macros are needed because they define an
+overloaded function, operator&gt;&gt;, explicitly for that class. In a case
+where that class is defined in an extension DLL and is exported by using the
+AFX_EXT_CLASS macro, the overloaded function, operator&gt;&gt;, does not get
+exported along with the class. Thus, if the main application instantiates an
+object of that class type and tries to serialize that object by the use of a
+CArchive object, a LNK2001 unresolved external error will occur.
+
+Sample Code
+-----------
+
+Declare your class in the extension DLL this way:
+
+In the header (.h) file for CMyObject:
+
+     #define DECLARE_SERIAL_EXTDLL(class_name)   \ 
+             _DECLARE_DYNCREATE(class_name)      \ 
+             AFX_EXT_API friend CArchive&amp; AFXAPI \ 
+             operator&gt;&gt;(CArchive&amp; ar, class_name* &amp;pOb);
+
+     class AFX_EXT_CLASS CMyObject : public CObject
+     {
+         DECLARE_SERIAL_EXTDLL(CMyObject)
+         ...
+
+     };
+
+     In the implementation (.cpp) file for CMyObject:
+
+     ...
+
+     IMPLEMENT_SERIAL(CMyObject, CObject, YOUR_SCHEMA_NUMBER_HERE)
+
+     ...
+
+REFERENCES
+==========
+
+For additional information on serialization and how to export classes from
+extension DLL's, please see:
+
+- MFC TechNote #2 in the Books Online
+
+- MFC TechNote #33 in the Books Online
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q131946 PRB: Bad Pointer from RUNTIME_CLASS with Class from _AFXDLL
+
+Additional query words: kbvc400bug kbvc410bug kbvc420bug kbvc500bug kbvc600bug
+
+======================================================================
+Keywords          : kbProgramming kbDLL kbMFC kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

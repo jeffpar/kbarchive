@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166159: NetBIOS Connections from a Multihomed Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166159: NetBIOS Connections from a Multihomed Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166159/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166159/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166159/","publisher":null,"image":null,"headline":"Q166159: NetBIOS Connections from a Multihomed Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166159-netbios-connections-from-a-multihomed-computer">Q166159: NetBIOS Connections from a Multihomed Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166159
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbbuglist kbfixlist
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you connect from a multihomed computer running Windows NT to another
+computer, the local source IP address used may not be optimal. If the multihomed
+system is attached to two different (disjoint) networks, and the target system
+is on only one of the networks, there may be a delay in establishing the
+connection.
+
+This behavior only occurs on NetBIOS over TCP/IP sessions (such as file and print
+sharing); therefore, this information does not apply to Windows Sockets
+applications such as Web browsers.
+
+
+CAUSE
+=====
+
+The Windows NT 4.0 (and earlier) redirector used the following logic to
+establish a NetBIOS session:
+
+- Place a call to the destination name on all bound transports, in the order
+  they are bound.
+
+- Wait for the "primary" (first-bound) transport to complete, and if it was
+  successful in reaching the target, set up a session on it and disconnect
+  (cancel) the other calls.
+
+In the case of a computer that is multihomed on two connected (by a router)
+networks, if the target system is on only one of those networks, there are two
+paths to the target system. In this case, the call succeeds on both paths, and
+the "primary" transport (for example, the local source IP address associated
+with that binding of NetBT) is the chosen one. The other call is cancelled. This
+means that the less optimal path (through the router) may win out over the more
+optimal (direct) path. In this case, packets sent from the multihomed computer
+are internally routed to the directly connected subnet (because the route table
+shows a direct route to it), but packets sent in response from the target system
+traverse the router. This scenario can be confusing to troubleshoot.
+
+RESOLUTION
+==========
+
+A Windows NT redirector has been produced that allows a new configurable
+behavior, accepting the first transport to complete a call, and immediately
+canceling the calls on the others. A new version of NetBT that supports better
+handling of multiple calls and cancels is also available.
+
+To take advantage of this improvement, a registry parameter must be added as
+follows:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rdr\Parameters
+
+  Value Name: IgnoreBindingOrder
+  Value type: REG_DWORD
+  Default: 0
+
+  Setting this value to "1" causes the redirector to accept the first
+  transport to complete a call, rather than waiting for success or failure
+  on the "primary" transport.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+This problem and hotfix do not apply to Windows Sockets-based connections. When
+a Windows Sockets application places a call from a multi-homed host the best
+local source address is chosen automatically (using the route table), unless the
+application specifies otherwise by choosing a local IP address to use in the
+bind() call.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

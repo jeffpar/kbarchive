@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123808: PRB: Debugger Hangs If Remote Connection Is Lost | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123808: PRB: Debugger Hangs If Remote Connection Is Lost" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123808/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123808/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123808/","publisher":null,"image":null,"headline":"Q123808: PRB: Debugger Hangs If Remote Connection Is Lost","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123808-prb-debugger-hangs-if-remote-connection-is-lost">Q123808: PRB: Debugger Hangs If Remote Connection Is Lost</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123808
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbDebug kbide
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the remote debugging feature of the Visual C++ Integrated Debugger to
+debug an application on Win32s from Windows NT, the debugger appears to hang
+(stops responding) if a remote connection is suddenly terminated.
+
+CAUSE
+=====
+
+This can occur if the computer running Win32s is turned off or if the serial
+cable connecting the two computers is disconnected while debugging. The debugger
+is waiting for information from the remote monitor on the computer running
+Win32s and does not time-out.
+
+RESOLUTION
+==========
+
+Because the debugger will not respond when it is waiting for the information,
+the development environment needs to be terminated.
+
+MORE INFORMATION
+================
+
+The Visual C++ development environment may be terminated through the Task List,
+or by using PVIEW.EXE. PVIEW.EXE is a graphical Process Viewer, providing an
+interface through which processes (and threads) may be examined and modified.
+PVIEW.EXE ships with Visual C++ versions 2.0 and 4.0.
+
+To use PVIEW to terminate the Visual C++ session:
+
+1. For Visual C++ version 2.0: Start PVIEW by clicking the PVIEW icon in the
+  "Microsoft Visual C++ 2.0" group, or by running PVIEW.EXE from the
+  &lt;CD_drive&gt;:\MSVC20\BIN directory.
+
+  For Visual C++ version 4.0: Start PVIEW by clicking the PVIEW icon in the
+  "Microsoft Visual C++ 4.0" group, or by running PVIEW.EXE from the
+  &lt;CD_drive&gt;:\MSDEV\BIN\WINNT directory.
+
+  In both cases, PVIEW may not have been installed, so you may need to run it
+  from the distribution CD.
+
+2. For Visual C++ version 2.0, select MSVC from the list of processes. For
+  Visual C++ version 4.0, select MSDEV from the list of processes.
+
+3. Click the Kill Process button.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC200 kbVC210 kbVC32bitSearch
+Version           : :2.0,2.1,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

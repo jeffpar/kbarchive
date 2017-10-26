@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q300398: IIS: Cannot Create a 128-bit SSL Session with IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q300398: IIS: Cannot Create a 128-bit SSL Session with IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/300/Q300398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/300/Q300398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/300/Q300398/","publisher":null,"image":null,"headline":"Q300398: IIS: Cannot Create a 128-bit SSL Session with IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q300398-iis--cannot-create-a-128-bit-ssl-session-with-iis">Q300398: IIS:  Cannot Create a 128-bit SSL Session with IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q300398
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You install a 128-bit high encryption certificate onto Internet Information
+Server (IIS) version 4.0 or 5.0, then browse with a 128-bit enabled Web browser
+to IIS by using https://. However, the Web browser only makes a 40-bit or 56-bit
+Secure Sockets Layer (SSL) session with IIS. If you open the Internet Services
+Manager and edit the Secure Communication property to Require 128-bit
+encryption, you may receive the following error message when you browse to IIS:
+
+  HTTP Error 403
+  403.5 Forbidden: SSL 128 required
+
+  This error message indicates that the resource you are trying to access is
+  secured with a 128-bit version of Secure Sockets Layer (SSL). In order to
+  view this resource, you need a browser that supports this level of SSL.
+
+  Please confirm that your browser supports 128-bit SSL security. If it does,
+  then contact the Web server's administrator and report the problem.
+
+CAUSE
+=====
+
+The server that is hosting IIS does not have the Windows High Encryption Pack
+installed. If the encryption level is not 128-bit, IIS cannot create a 128-bit
+SSL session.
+
+RESOLUTION
+==========
+
+Update Microsoft Windows with the High Encryption pack.
+
+NOTE: The Windows High Encryption Pack is the same as the Microsoft Internet
+Explorer High Encryption Pack.
+
+Windows NT 4.0
+
+The High Encryption Pack can be installed onto Windows NT 4.0 by updating to the
+High Encryption version of the latest Windows NT Service Pack. For additional
+information on how to obtain the latest service pack, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+Windows 2000
+
+The Windows 2000 High Encryption Pack is available for download from the
+following Microsoft Web site:
+
+  Windows 2000 High Encryption Pack
+  http://www.microsoft.com/windows2000/downloads/recommended/encryption/
+
+MORE INFORMATION
+================
+
+To verify the encryption level that is installed, open Microsoft Internet
+Explorer on the IIS server computer and click About Internet Explorer on the
+Help menu. In the About Internet Explorer dialog box, the encryption level is
+listed next to Cipher Strength.
+
+Additional query words: iis 5 4 sgc Verisign key lock
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

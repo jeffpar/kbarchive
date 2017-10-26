@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164733: PPT7: Embedded Word Tables Show Unequal Borders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164733: PPT7: Embedded Word Tables Show Unequal Borders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164733/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164733/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164733/","publisher":null,"image":null,"headline":"Q164733: PPT7: Embedded Word Tables Show Unequal Borders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164733-ppt7-embedded-word-tables-show-unequal-borders">Q164733: PPT7: Embedded Word Tables Show Unequal Borders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164733
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0,7.0a
+Operating System(s): 
+Keyword(s): kbinterop kbole kbformat
+Last Modified: 16-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+- Microsoft Word for Windows 95, versions 7.0, 7.0a 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you insert a Word table into a PowerPoint slide, and you apply borders to
+some or all of the table cells, the borders appear the same width while you are
+editing the table, but they change to unequal widths when you click outside of
+the table. This symptom is a display effect. When you print the slide, all of
+the borders print with the same thickness.
+
+CAUSE
+=====
+
+When you insert a Word table into a PowerPoint slide, Word provides a picture of
+the table that has an action associated with it. (For example, when you
+double-click it, PowerPoint starts Word, and tells Word to create a table that
+is a certain size and that contains certain information.) When you perform that
+action, Word takes over and replaces the picture of the table with the actual
+table. When you are finished editing the table, Word closes the table and
+PowerPoint displays the picture of the table.
+
+While the table is displayed in Word, the borders are described as lines.
+However, once Word closes the table and PowerPoint displays the picture of the
+table, the borders are described as very thin rectangles instead of lines.
+
+Thin rectangles use different display code than lines do. If several lines have
+the same thickness, PowerPoint always displays them in the same thickness.
+However, if several rectangles have the same width, they are displayed with
+slightly different widths depending on where they appear on screen.
+
+NOTE: This is not a problem with Microsoft PowerPoint. The same symptoms appear
+if you insert a Word table into an Excel worksheet, a Publisher publication, or
+another Word document.
+
+WORKAROUND
+==========
+
+To work around this problem, enlarge or reduce the table slightly. You may need
+to experiment to find the best scale percentage so that the Word table looks
+best during a slide show. NOTE: If you hold the SHIFT key while you resize the
+table, you will avoid stretching the table disproportionately.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 7.00 7.0a word winword word95 ppt95 word7 ppt7 margin thicker thinner uneven row column outline
+
+======================================================================
+Keywords          : kbinterop kbole kbformat 
+Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700 kbWord700a
+Version           : WINDOWS:7.0,7.0a
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

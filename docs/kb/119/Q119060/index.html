@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119060: Writer/Artist: Starts in Black and White | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119060: Writer/Artist: Starts in Black and White" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119060/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119060/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119060/","publisher":null,"image":null,"headline":"Q119060: Writer/Artist: Starts in Black and White","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119060-writerartist-starts-in-black-and-white">Q119060: Writer/Artist: Starts in Black and White</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119060
+Product(s): Microsoft Home Kids Products
+Version(s): MACINTOSH:1.0,1.1,1.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Creative Writer and/or Fine Artist may start in black and white on a color
+Macintosh monitor.
+
+CAUSE
+=====
+
+This will occur if the memory allocation to the application is less than 1536K.
+
+MORE INFORMATION
+================
+
+Setup checks for available memory on the Macintosh before it allocates a
+specific amount of memory to Creative Writer or Fine Artist. It is likely that
+when Setup was run, it perceived that there was not a lot of memory available on
+the Macintosh, and allocated 1536K or less to the application.
+
+The following are the default memory allocations on a Macintosh with adequate
+available memory:
+
+  Suggested: 4096K
+  Minimum: 1024K
+  Preferred: 4096K
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. From the Apple menu, choose About This Macintosh to see how much total memory
+  exists on the computer, and to determine the largest unused block. (On System
+  6.x Macintoshes, choose About the Finder.)
+
+2. If there is enough memory available, allocate more memory to the application.
+  Do not allocate more than the largest unused block.
+
+  If there is not enough memory available, see the "Apple Macintosh User's
+  Guide" for information about memory management on the Macintosh.
+
+After following these steps, the application(s) should run in color.
+
+Additional query words: 1.00 mskids mac colors grey gray grayscale 1.10 kids mczee screen display wm_artist 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

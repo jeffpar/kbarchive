@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261943/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261943/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261943/","publisher":null,"image":null,"headline":"Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261943-howto-use-basic-visio-operations-from-visual-foxpro">Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261943
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSup
+Last Modified: 12-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As with the other Microsoft Office products, Microsoft Visio 2000 can be
+controlled through Automation from Visual FoxPro. This article demonstrates some
+basic functionality.
+
+MORE INFORMATION
+================
+
+  loVisio = CREATEOBJECT("Visio.Application")
+  loDoc = loVisio.Documents.Add("")  &amp;&amp; No default template
+  loPage = loVisio.ActivePage
+
+  *!* The origin of a Visio drawing is the lower-left corner, not 
+  *!* the top left. However, the coordinates for DrawRectangle go
+  *!* from top left to bottom right.
+  loShape = loPage.DrawRectangle(1, 5, 5, 1)
+
+  loShape.Copy()    &amp;&amp; Copy shape to the Clipboard
+  loPage.Paste()    &amp;&amp; Paste copy into drawing page
+  loShape.Cut()     &amp;&amp; Remove original
+
+  *!* Since the copied shape was the last one drawn, it can be retrieved 
+  *!* from the end of the shape collection.
+  loShape = loPage.Shapes.Item(loPage.Shapes.Count)
+
+  *!* Move to the bottom left corner of the page by setting its 
+  *!* PinX and PinY formulas. PinX and PinY are the coordinates
+  *!* that "pin" the shape to the page, so moving them moves
+  *!* the shape. The pin for a rectangle is in the center, so
+  *!* setting the coordinates as below puts the shape right on
+  *!* the edges.
+  loShape.Cells("PinX").Formula = "Width * 0.5"
+  loShape.Cells("PinY").Formula = "Height * 0.5" 
+  loShape.Text = "Switch back to VFP to close."
+
+  =MESSAGEBOX("Hit OK when you are ready to close the document.")
+
+  IF TYPE("loDoc") = "O" and ISNULL(loDoc)
+     RETURN
+  ELSE
+     loDoc.Saved = .T. &amp;&amp; Make Visio think the doc has already been saved
+     loVisio.Quit      &amp;&amp; so you can quit without a Save dialog.
+  ENDIF
+
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Garrett Fitzgerald, Microsoft Corporation
+
+
+REFERENCES
+==========
+
+Visio Online Developer's Reference
+
+Professional Development with Visio 2000 by Dave Edson.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

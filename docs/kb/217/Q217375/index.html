@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217375/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217375/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217375/","publisher":null,"image":null,"headline":"Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217375-info-windows-ce-toolkit-for-visual-basic-60-release-notes">Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217375
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbOSWinCEsearch
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Contents
+--------
+
+- Installation Procedure
+
+- Samples
+
+- Known Issues
+
+   - Property Issues
+   - Method Issues
+   - Event Issues
+   - Function Issues
+   - Constant and Variable Issues
+   - Statement Issues
+   - Control, Object, and Collection Issues
+   - Project and Module Issues
+   - Additional Toolkit Issues
+
+MORE INFORMATION
+================
+
+Installation Procedure
+----------------------
+
+You must install Microsoft Visual Basic 6.0 before you can install the Microsoft
+Windows CE Toolkit for Visual Basic 6.0.
+
+1. Install Visual Basic 6.0.
+
+2. Run Setup.exe from the setup folder on the CD.
+
+3. Follow the instructions in the setup program.
+
+NOTE: In order to use the H/PC SDK included with this release, you must install
+it as part of the Visual Basic CE 6.0 install (either Complete or Custom). In
+addition, you can install it first and then install Visual Basic CE version
+6.0.
+
+To save disk space, you can use the Custom install option during the H/PC SDK
+installation and clear the following components, which are not required for
+Visual Basic CE development:
+
+- Device Driver Development Kit
+
+- Include Files
+
+- Libs
+
+- Microsoft Foundation Classes (MFC)
+
+- ActiveX Template Library (ATL)
+
+- Desktop Components
+
+- Help Files
+
+- Win32 Sample Files
+
+- ATL Sample Files
+
+- MFC Sample Files
+
+NOTE: These are required for the Windows CE Toolkit for Visual C++ 6.0
+development.
+
+Samples
+-------
+
+The toolkit directory contains a Samples subdirectory, and each sample has its
+own subdirectory. There is a Readme.txt file for each sample. The following is a
+listing of the samples included in the toolkit:
+
+- CEPad: A basic text editor.
+
+- Dice: A game sample.
+
+- LoanCalc: Shows how to use Financial library.
+
+- MSCEComm: Serial communications sample.
+
+- NWind: Northwind database order entry application demonstrating the TabStrip,
+  Listview and ADOCE controls.
+
+- Scribble: Graphics interactive sample using the PictureBox.
+
+- Setup1: This is not a Windows CE Project, but a Standard EXE project for
+  Visual Basic 6.0. It is provided here for your use, should you wish to
+  customize your setup programs.
+
+- TreeView: Demonstrates use of the TreeView and ImageList controls.
+
+- WSock: Demonstrates use of Winsock TCP/IP communications.
+
+For additional information about the samples included with the Windows CE Toolkit
+for Visual Basic 6.0, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q212885 INFO: VBCE: Samples Included with the Windows CE Toolkit for VB6
+
+Known Issues
+------------
+
+The following sections describe the known language-related issues present in the
+toolkit.
+
+Property Issues
+
+- You cannot change the BorderStyle property of a Label control at run-time.
+
+- Setting font properties on Microsoft Foundation Classes (MFC) controls will
+  not cause the controls to repaint automatically. You must manually cause an
+  MFC control to repaint itself after changing the font properties.
+
+- You can highlight items in a combo box control with the Locked property set
+  to True. This behavior differs from Visual Basic 6.0 in that setting the
+  Locked property to True does not prevent the items in the combo box control
+  from being highlighted.
+
+- The Err object does not support the LastDLLError property.
+
+- The Value property of a check box control may return an incorrect result
+  inside the control's Click event in cases where the event is generated by
+  changing the Value property directly instead of by choosing the control with
+  a stylus.
+
+- If you use a coordinate system for the ScaleMode property other than twips,
+  some properties, such as CurrentX, will differ slightly from their expected
+  values. All coordinates are stored internally as twips, so other coordinate
+  systems may be subject to rounding errors during conversion.
+
+- The Appearance property of the command button object has no effect on the
+  appearance of the control.
+
+- The design-time settings for the ScaleHeight and ScaleWidth properties of a
+  form are not returned correctly when read at run-time. If these two
+  properties are changed during run-time, the correct values are returned.
+
+- Some intrinsic controls may generate both a KeyDown and KeyPress event in
+  cases where Visual Basic 6.0 generates only the KeyDown event.
+
+- If you compile or save a Visual Basic for Windows CE 6.0 project and switch
+  to a Visual Basic 6.0 project, the App.Path property of the Visual Basic 6.0
+  project defaults to the last path where your Windows CE project or .vb file
+  was saved.
+
+- Visual Basic for Windows CE does not save the data in ItemData for combo
+  boxes as it does for list boxes.
+
+- The toolkit does not support setting the TabIndex property on controls during
+  the Form_Load event.
+
+- The ClipControls property for the Form object does not affect how controls
+  are drawn.
+
+- For the Text property of the ListView control, the Item label text is
+  invisible until ListView is refreshed.
+
+- The Comm control ParityReplace property does not use the ParityReplace
+  character when there is a parity mismatch. Additionally, invalid characters
+  are sent when Parity is set to Space.
+
+- The Break property of the Comm control suspends communication until it is set
+  to False. This works the opposite way in Visual Basic 6.0, where setting the
+  Break property to True enables you to send and receive data.
+
+- For the ListView control, only the first line of a multiline ListItem label
+  is visible until you set the WordWrap property at run-time.
+
+- For a CommandBar control, setting the Style property of a button to 3
+  (cbrSeparator) returns zero when the Style property is read.
+
+- For a Grid control, setting the CellFontItalic property True and then
+  right-aligning the text, causes the text to truncate.
+
+- Using the Form1.ActiveControl property during a Form_Activate event raises
+  error 5 (Invalid Procedure Call or Argument).
+
+- Do not change the CommandBar Height property. If you attempt to do so at
+  run-time, the property value is set to the new height, but the actual
+  CommandBar height does not change. The CommandBar height is determined by the
+  number and size of the controls it contains.
+
+- The index parameter of the ListView.ListItems.Add property is ignored. Items
+  are always added to the end of the list.
+
+- In the CommonDialog control, if a user chooses a combined path and file name
+  longer than the MaxFileSize property, the control reacts as if the user
+  cancelled the dialog box.
+
+- The toolkit does not save an ActiveX control?s Enabled property in the
+  project file, so settings for the Enabled property are not maintained across
+  development sessions. To save Enabled property settings, write code to set
+  the Enabled property in the Form_Load event.
+
+- For the ListView control, the LabelWrap property works correctly when you set
+  it at run-time. However, if you set the LabelWrap property to False at
+  design-time, the label text remains wrapped.
+
+- For the TreeView control, using the Key property to access a Node within a
+  collection raises an error 13. To avoid generating an error, use the Index
+  property instead of the Key property.
+
+- Once you specify the ImageList property of a TabStrip control, all tabs will
+  have an image on them, even if an Image parameter was not specified when you
+  added the tab.
+
+Method Issues
+
+- An error occurs if you call the App.End method in a Form_Load event if a
+  Module invokes the form.
+
+- In the WaitForEvents method, .pvbload does not exit when used with the
+  App.End method.
+
+- The application does not exit if you call the WaitForEvents method twice.
+
+- An error does not occur if you call the WaitForEvents method from Form code.
+
+- A method is issued if you call the WaitForEvents method from a control's
+  event code.
+
+- On a Handheld PC (H/PC), Err.Raise does not work unless you call Err.Clear
+  first. However, this does not apply to a H/PC running the Handheld PC Pro
+  Edition software.
+
+- When using the File control Get method, you cannot read any binary file
+  written using Microsoft Visual Basic 5.0. This is because binary files
+  written using the toolkit contain four additional header bytes at the
+  beginning of the file. To read a binary file using the toolkit, use the
+  Declare statement and CreateFile function to access the file.
+
+- The compiler does not test for variable or procedure names that are the same
+  as objects or object properties. This enables you to accidentally override
+  methods such as DrawCircle. Overriding the standard objects and methods is
+  not recommended.
+
+- For the TreeView control?s GetVisibleCount method, no partially visible items
+  are included in the count.
+
+Event Issues
+
+- Under some circumstances, the Click event of a Label control may occur twice
+  in a row.
+
+- When the drop-down arrow of a combo box control is clicked, the following
+  events are generated:
+
+   - GotFocus
+   - LostFocus
+   - GotFocus
+   - DropDown
+
+- You should not use a common dialog control in a Form_Load event because other
+  applications may cause the dialog box to disappear. If the dialog box
+  disappears, your application may wait indefinitely for a response from the
+  control with no forms visible and no way for the user to terminate the
+  application.
+
+- In the toolkit, the events for the Grid control occur in a different order
+  from Visual Basic 6.0. The following table shows how Grid events start in
+  Visual Basic and in the toolkit.
+
+Windows CE Toolkit for Visual Basic 6.0     Visual Basic 6.0 
+------------------------------------------------------------
+
+LeaveCell                                   LeaveCell 
+
+EnterCell                                   SelChange 
+
+RowColChange                                EnterCell 
+
+SelChange                                   RowColChange 
+
+GridClick                                   GridClick 
+
+- The LostFocus and GotFocus events occur when you edit a ListItem label for a
+  TreeView or ListView control. The following table shows the order in which
+  the events take place:
+
+Control      Events 
+-------------------------
+
+ListView     BeforeLabelEdit 
+            LostFocus 
+            AfterlabelEdit 
+            GotFocus 
+
+TreeView     BeforeLabelEdit 
+            LostFocus 
+            GotFocus 
+            AfterLabelEdit 
+
+- When you issue a public function from an unloaded form in Visual Basic 6.0,
+  the function occurs first, then the Form_Load event occurs. In Visual Basic
+  for Windows CE, however, the Form_Load event occurs prior to the function
+  call.
+
+- If you use an accelerator key or the TAB key to navigate to a combo box
+  control, the GotFocus event of the control occurs twice.
+
+- The Click event for the TabStrip control occurs only when the tab is changed.
+  It does not occur when a user attempts to re-select a selected tab.
+
+Function Issues
+
+- The Left function does not work correctly in forms because the Left property
+  of the form overrides the function of the same name. Use the Mid function or
+  call the Left function from a module instead.
+
+- The compiler does not check for a valid or unused event prefix for the
+  CreateObjectWithEvents function. Event prefixes must start with an alpha
+  character, and subsequent characters can be either alphanumeric or an
+  underscore. Do not use the same prefix as an existing control.
+
+- When using the CreateObjectWithEvents function, you cannot place event code
+  in a Form file.
+
+- If you use the MsgBox function in the Form_Load event, the application form
+  opens as a minimized form.
+
+Constant and Variable Issues
+
+- You cannot use a constant to define another constant. All constants must be a
+  literal.
+
+- It is possible to declare a variable that has the same name as a control.
+  However, you should avoid doing this because such declarations are not
+  detected during compilation and may cause unpredictable results.
+
+Statement Issues
+
+- When using the ListView control, you cannot use the Set statement to set the
+  SelectedItem property. The following code example shows the syntax you should
+  use as an alternative:
+
+  Form1.ListView1.SelectedItem = AnItem
+
+- The Dim As statement enables any data type in the As clause, even unsupported
+  data types. The As clause is discarded during compilation and is intended
+  only for use with the Intellisense feature of the integrated development
+  environment IDE.
+
+- You cannot use the Set statement when assigning an object to a property. You
+  can use the Set statement only when assigning an object to a variable. Use
+  the standard assignment operator (=) to assign an object to a property.
+
+- When using the Declare statement, you must pass variant parameters ByRef, not
+  with ByVal. In addition, the Declare statement function cannot have a variant
+  return value.
+
+Control, Object, and Collection Issues
+
+- When using the Comm control, only the Data Bit settings of 8 and 7 are
+  supported. If you attempt to use a Data Bit setting of 6 or 5, the characters
+  passed are not valid.
+
+- The END, HOME, PAGE UP or PAGE DOWN keys cannot be used to navigate in the
+  Grid Control.
+
+- When using the Winsock control, suspending a device with an active TCP
+  connection causes the application on the device to continually raise the
+  following error when the device is turned back on:
+
+  Error 10054 'The connection is reset by remote side'
+
+- Images from an Imagelist control used in some controls may appear in black
+  and white rather than in color. This occurs only in the emulator, not on a
+  device.
+
+- An MFC control does not use the 'Activates when visible' check box option
+  selected in the MFC control wizard when run on a Visual Basic for Windows CE
+  6.0 form. When you run the created control on a form, the control always runs
+  as if the 'Activates when visible' option is on.
+
+- You cannot create an invisible MFC ActiveX&lt;AE&gt; control at run-time.
+
+- An ActiveX control with a transparent background does not display on a form
+  with a transparent background. Instead, the control has a white background.
+
+- In the emulator, if a combo box has the focus when you choose the Close
+  button on the command bar, the application terminates. This happens only
+  under emulation.
+
+- Keyboard accelerators work only on the last MenuBar added to a command bar.
+
+- Intellisense for the File control may suggest parentheses where none are
+  required.
+
+- When using a Form object, illegally accessing a constant or variable does not
+  raise an error.
+
+- When using the CommandBar control, you can change only the width of the right
+  most command bar item.
+
+- The toolkit sets the order of forms in the Forms collection to the
+  design-time order, while Visual Basic 6.0 sets the order of forms to the
+  run-time load order.
+
+- With the toolkit, it is possible to assign extremely large or extremely small
+  Form dimensions. Visual Basic 6.0 typically enforces minimum and maximum Form
+  dimensions based on screen resolution and the window style of the form.
+
+- If you hide all the menu items on a form, the menu names are not visible, but
+  the black box containing the menus is not. In Visual Basic 6.0, the entire
+  menu area disappears.
+
+- To put a bitmap file in a picture box, add the bitmap file to the project and
+  specify the name of the bitmap in the Picture property. Note that the picture
+  does not show up in design-time, only in run-time.
+
+- All the controls that have both Height and Width allow values to be assigned
+  to them that are smaller than the lowest possible value, however the controls
+  will ignore any values lower than their minimum.
+
+Project and Module Issues
+
+- You cannot refer to module names explicitly. Syntax such as Module1.Function1
+  will not work. All modules are concatenated during compilation, and the
+  specific module names are not retained.
+
+- All Private variables are treated as if they were Public variables.
+
+- You cannot build a Visual Basic for Windows CE 6.0 project from the command
+  line because Visual Basic does not load the add-in before it compiles the
+  project.
+
+- Do not reset the menus or toolbars while editing a Visual Basic for Windows
+  CE project. This clears the menus, causing a failure when you shut down
+  Visual Basic.
+
+Additional Toolkit Issues
+
+- The Data View Window command on the View menu can not be hidden by the add-in
+  and remains visible, though not usable, in a Windows CE project.
+
+- Msvbvm and OLE are permanently installed at the top of the Project References
+  and thus override all other references. This behavior causes the IDE for the
+  toolkit to display hints for Visual Basic 6.0 instead of Visual Basic for
+  Windows CE 6.0. To bypass this default behavior, use Dim...As with Windows
+  CE-specific types.
+
+- Top-level menu items created with the Menu Editor must have at least one
+  submenu item in Visual Basic for Windows CE 6.0.
+
+- If you have a device connected to the IDE or Control Manager, and then you
+  exchange another device for the current one, you do not need to create a new
+  device in the Platform Manager if you use the old device name. As this may
+  change in the future, you should create a separate connection for each
+  device.
+
+- Visual Basic 6.0 indicates that certain features are available when they are
+  not. These features include CausesValidation, DragIcon, DragMode, Index,
+  Drag, DragDrop, and Validate; for a complete list, refer to Help. Visual
+  Basic 6.0 uses the type libraries in Msvbvm60.dll and VB6.olb to provide
+  certain default properties and events for objects. Although Visual Basic for
+  Windows CE does not use these libraries, they cannot be removed or disabled
+  in the References dialog box.
+
+- When using the emulation environment, if you cancel the download/launch of a
+  Visual Basic CE application prior to the emulator starting, it may cause the
+  emulator to fail. Canceling while connecting to a device may result in Visual
+  Basic CE hanging on its connection to the device. Both of these cases are
+  very rare and usually only occur if you immediately try to cancel before a
+  connection is established. To avoid this behavior, always allow the initial
+  connection (or emulator) to start before canceling the download.
+
+Information in this document is subject to change without notice and is provided
+for informational purposes only. The entire risk of the use or results of the
+use of this document remains with the user, and Microsoft Corporation makes no
+warranties, either expressed or implied. The example companies, organizations,
+products, people and events depicted herein are fictitious. No association with
+any real company, organization, product, person or event is intended or should
+be inferred. Complying with all applicable copyright laws is the responsibility
+of the user. Without limiting the rights under copyright, no part of this
+document may be reproduced, stored in or introduced into a retrieval system, or
+transmitted in any form or by any means (electronic, mechanical, photocopying,
+recording, or otherwise), or for any purpose, without the express written
+permission of Microsoft Corporation. Microsoft may have patents, patent
+applications, trademarks, copyrights, or other intellectual property rights
+covering subject matter in this document. Except as expressly provided in any
+written license agreement from Microsoft, the furnishing of this document does
+not give you any license to these patents, trademarks, copyrights, or other
+intellectual property.
+
+Microsoft, MS, MS-DOS, Visual Basic, Visual C++, Windows, Win32, Windows NT, and
+Visual Studio are either registered trademarks or trademarks of Microsoft
+Corporation in the U.S.A. and/or other countries.
+
+The names of actual companies and products mentioned herein may be the trademarks
+of their respective owners.
+
+REFERENCES
+==========
+
+Online Help for the Windows CE Toolkit for Visual Basic 6.0
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q260080 INFO: eMbedded Visual Basic 3.0 Release Notes
+
+Additional query words: vbce vbce6 faq wince
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156909: FP: OLE Errors When Working with FrontPage | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156909: FP: OLE Errors When Working with FrontPage" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156909/","publisher":null,"image":null,"headline":"Q156909: FP: OLE Errors When Working with FrontPage","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156909-fp-ole-errors-when-working-with-frontpage">Q156909: FP: OLE Errors When Working with FrontPage</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156909
+Product(s): Word Front Page
+Version(s): ; WINDOWS:1.0,1.0a,1.1
+Operating System(s): 
+Keyword(s): kbole kbdta
+Last Modified: 25-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows, versions 1.0, 1.0a, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start either FrontPage Explorer or FrontPage Editor, you may see any of
+the following errors messages:
+
+  There is no open Web to receive this page. Please open a Web, and then save
+  this page again
+
+  -or-
+
+  FrontPage Explorer caused an access violation.
+
+  -or-
+
+  Cannot get the To Do List from the Server.
+
+  -or-
+
+  Server error: _vti_bin/_vti_adm does not refer to a page in this Web
+  Ole32.dll caused an invalid page fault.
+
+  -or-
+
+  Unable to connect to the FrontPage Explorer.
+
+  -or-
+
+  Unable to connect to the FrontPage Editor.
+
+  -or-
+
+  FPEDITOR caused an invalid page fault in module Ole32.dll.
+
+  -or-
+
+  FPEDITOR caused an invalid page fault in module Mfc40.dll.
+
+These problems are likely to occur when you start FrontPage Editor from FrontPage
+Explorer, or when you save a file from FrontPage Editor back to a Web, or when
+you use the FrontPage Editor toolbar button to return to the FrontPage
+Explorer.
+
+Note that other error conditions may produce similar error messages.
+
+
+CAUSE
+=====
+
+There are two common causes for these errors when working with FrontPage.
+
+First check your computer name in either the Identification tab of the Network
+Properties or in the Networks Control Panel. Also check the host name for your
+computer on the DNS tab of the TCP/IP properties sheet. If either of these names
+contains non-alphanumeric characters (except for periods in a DNS host name or
+dashes in a computer name), FrontPage may be unable to resolve the name to a
+valid program on your computer. This happens with FrontPage running under
+Windows NT and Windows 95, and Windows 3.x (for FrontPage 1.0).
+
+If the computer name does not contain an illegal character, but you are still
+receiving these errors, your Windows 95 system may need to be updated with the
+OLE Update for Windows 95.
+
+STATUS
+======
+
+Computer names with non-alphanumeric characters are illegal computer names in
+Transmission Control Protocol/Internet Protocol (TCP/IP). Since FrontPage uses
+TCP/IP for authoring operations, illegal TCP/IP names generate errors.
+
+WORKAROUND
+==========
+
+Method 1: Illegal Character in Computer Name
+--------------------------------------------
+
+Take the illegal character out of the computer name. For example, if your
+computer's name is
+
+  My@Work or my@work.mycompany.com
+
+then rename it to
+
+  My-Work or my-work.mycompany.com
+
+NOTE: If other computers on your network are using shares you have created or
+have links pointing to your Web pages, those computers may need to re-establish
+those connections or links.
+
+Method 2: No Illegal Characters in Computer Name, Windows 95 Systems
+--------------------------------------------------------------------
+
+Install the OLE32 update from
+
+  http://www.microsoft.com/Windows95/downloads/contents/wurecommended/s_wuservicepacks/w95ole32update/default.asp?site=95
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+  http://www.microsoft.com
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q138384 "@" Character in Computer Name Causes OLE Error Messages
+
+
+If you attempt to name computer running Windows NT 4.0 with a restricted
+character, you receive an error message that indicates that your computer name
+will not be accessible via internet protocols and will create a substition of a
+"-" character for every unacceptable character. In additon, Microsoft Windows NT
+4.0 does not allow you to enter a restricted character into the DNS Host Name.
+Windows NT 3.51 does not permit you to enter a restricted character in a DNS
+name.
+
+Windows NT WINS Services automatically substitutes "-" characters for illegal
+characters in the computer name in the WINS database. This may not actually
+prevent these error messages from appearing because FrontPage uses the DNS name
+if it is present.
+
+FrontPage uses the Hypertext Transfer Protocol (HTTP) protocol to communicate
+between FrontPage Editor or FrontPage Explorer components of the program and the
+Web server session. HTTP is a component of the TCP/IP protocol, and
+non-alphanumeric characters other than a hyphen or a period are illegal in
+TCP/IP names. The "." character is reserved for separating host names from
+domain names.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage100a kbFrontPage110
+Version           : :; WINDOWS:1.0,1.0a,1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

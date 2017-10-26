@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62351: Hard Disk Compatibility in Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62351: Hard Disk Compatibility in Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62351/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62351/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62351/","publisher":null,"image":null,"headline":"Q62351: Hard Disk Compatibility in Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62351-hard-disk-compatibility-in-windows-30">Q62351: Hard Disk Compatibility in Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62351
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-SEP-1999
+
+3.00 3.00a
+
+WINDOWS
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article outlines the hard disk controller and drive configurations that are
+supported under Microsoft Windows version 3.0, and the steps that may be taken
+to maximize Windows version 3.0 hard disk compatibility.
+
+Windows version 3.0 supports the hard disk controller and drive combinations that
+were available as standard configurations in the supported computers at the time
+Windows version 3.0 was initially shipped (May 22, 1990). Supported computers
+are machines specifically listed in the "Windows 3.0 Hardware Compatibility
+List." A copy of the compatibility list is included in the Windows version 3.0
+retail package.
+
+Additionally, a supported controller and drive combination should be partitioned
+exclusively with the FDISK utility included with the DOS supplied with the
+supported computer. Third-party partitioning utilities may cause problems.
+
+MS-DOS and PC-DOS versions up to 4.00 do not support hard disks with more than
+1024 cylinders. Windows version 3.0 requires MS-DOS to be compatible with your
+hardware, so it shares this limitation. Some nonstandard hard disk controllers
+attempt to translate a hard disk with more than 1024 cylinders into an apparent
+1024-cylinder hard disk. Many such controllers do not provide 100-percent
+compatibility.
+
+MORE INFORMATION
+================
+
+Real or Standard Mode Compatibility
+-----------------------------------
+
+Windows version 3.00 real and standard modes should not experience problems with
+any type of hard disk controller and drive combination. If you experience hard
+disk problems under real or standard modes, this points to a bad controller, one
+that is not compatible with your other hardware, or some other cause. Contact
+your hardware manufacturer for further assistance in this case.
+
+Enhanced Mode Compatibility
+---------------------------
+
+Windows version 3.00 enhanced mode without SMARTDrive loaded supports only
+standard ST506 and ESDI controllers. To use enhanced mode with SCSI or other
+nonstandard devices, it is necessary to load SMARTDrive for proper operation.
+
+When enhanced mode detects the presence of SMARTDrive, it directs all disk access
+requests from itself and all applications through SMARTDrive. This enables
+SMARTDrive to function effectively as a double-buffering hard disk device
+driver, and eliminates most compatibility problems.
+
+Even if SMARTDrive is loaded, in some configurations you may experience hard disk
+access errors such as the following:
+
+  Cannot Read from Drive C:
+
+  Cannot Write to Drive C:
+
+  Drive C: Not Ready Error
+
+In this case, you should insert the following line under the [386ENH] section of
+the SYSTEM.INI configuration text file:
+
+  [386Enh]
+
+  VirtualHDIRQ=off
+
+This line is not case-sensitive. Synonyms for "off" include "no", "0", and
+"false".
+
+If you are still experiencing hard disk problems under Windows version 3.0 with
+SMARTDrive loaded and virtualHDIRQ=off, contact your manufacturer for further
+assistance. This is the highest level of hard disk compatibility that may be
+achieved with Windows version 3.0.
+
+Additional query words: 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

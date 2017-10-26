@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61664: Changes in OS/2 Multithreaded and DLL Support in C 6.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61664: Changes in OS/2 Multithreaded and DLL Support in C 6.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61664/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61664/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61664/","publisher":null,"image":null,"headline":"Q61664: Changes in OS/2 Multithreaded and DLL Support in C 6.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61664-changes-in-os2-multithreaded-and-dll-support-in-c-600">Q61664: Changes in OS/2 Multithreaded and DLL Support in C 6.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61664
+Product(s): See article
+Version(s): 6.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 9-MAY-1990
+
+Described below are several changes that have been made in Microsoft C
+version 6.00 to further support the writing of multithread (MT)
+applications and dynamic link libraries (DLLs) for OS/2:
+
+1. There is now only one set of include files with C 6.00 (as opposed
+   to the separate standard and multithreaded include files in C
+   5.10). The multithreaded versions have been merged with the
+   standard includes and are differentiated internally via "ifdef"
+   statements. If you define _MT in your program (#define _MT) or on
+   the the compile command-line (/D_MT), then the multithreaded
+   includes will be used, otherwise the standard includes are
+   utilized.
+
+2. All of the DLL libraries are multithreaded in C 6.00. Previously, a
+   DLL statically linked with the C DLL run-time library LLIBCDLL.LIB
+   could only be single-threaded; multithreaded DLLs required that
+   they be linked with a DLL version of the C run-time library
+   (CRTLIB.DLL). In C 6.00, LLIBCDLL.LIB is multithreaded, which
+   allows statically linked multithreaded DLLs to contain C run-time
+   code.
+
+3. The C 6.00 compiler now provides three new switches, /MT, /MD, and
+   /ML, to simplify the building of multithreaded programs and dynamic
+   link libraries. These switches lessen the number of other
+   command-line options that must be used and automatically specify
+   the correct library to be used.
+
+   The list below shows the new switches, followed by the options the
+   new switches are roughly equivalent to and the default library
+   names that the switches specify must be written into the object
+   modules. These new switches MUST be used in order to use the
+   specified libraries because the switches are NOT specifically equal
+   to the expanded option lists shown.
+
+      Switches                         Equivalent Options
+      --------                         ------------------
+
+      /MT - /ALw /FPi /G2 /D_MT        Library name - LLIBCMT.LIB
+      /ML - /ALw /FPa /G2 /D_MT        Library name - LLIBCDLL.LIB
+      /MD - /ALw /FPi /G2 /DDLL /D_MT  No default library name - uses
+                                       DLL version of C run-time
+                                       library (for example,
+                                       CRTLIB.DLL).
+
+These switches are documented further on Pages 355-356 of "Microsoft C
+Advanced Programming Techniques" and in the online help. Note that in
+most of the C 6.00 documentation, the symbolic constant _MT is
+improperly referred to as MT (missing the leading underscore).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

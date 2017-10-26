@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186480: Terminal Server Commands: MSG | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186480: Terminal Server Commands: MSG" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186480/","publisher":null,"image":null,"headline":"Q186480: Terminal Server Commands: MSG","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186480-terminal-server-commands-msg">Q186480: Terminal Server Commands: MSG</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186480
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSG sends a message.
+
+Syntax
+------
+
+msg [username] [/server:servername] [/time:seconds] [/v] [/w] [/?]
+[message]msg [sessionname] [/server:servername] [/time:seconds] [/v] [/w]
+[/?] [message]msg [sessionID] [/server:servername] [/time:seconds] [/v]
+[/w] [/?] [message]msg [@filename] [/server:servername] [/time:seconds]
+[/v] [/w] [/?] [message]msg * [/server:servername] [/time:seconds] [/v]
+[/w] [/?] [message]
+
+Parameters
+----------
+
+username
+Identifies the user.
+
+sessionname
+Identifies the name of the session. The name was created by the system
+administrator when the session was configured.
+
+sessionID
+Specifies the ID of the session.
+
+filename
+Identifies a file containing a list of usernames, sessionnames, and sessionIDs to
+which to send the message.
+
+message (message string)
+The text of the message you want to send. If no message is entered, standard
+input (STDIN) is read for the message.
+
+/server:servername
+Allows the Terminal Server to be specified. Otherwise, the current Terminal
+Server is used.
+
+/time:seconds (time delay)
+Sets the amount of time you must wait before you receive confirmation from the
+target session that the message has been received.
+
+/w (wait)
+Wait for a response from the target user(s).
+
+/v (verbose)
+Displays information about the actions being performed.
+
+/? (help)
+Displays the syntax for the command and information about the command's options.
+
+Security Restrictions
+---------------------
+
+The user must have Message access permission for the session.
+
+MSG -- Additional Notes
+-----------------------
+
+If no user or session is specified, msg displays an error message. If the you
+specify the name of a session, it must identify an active session. Wildcards may
+be used for parameters. If a single wildcard is present (*), it specifies all
+users in the system.
+
+MSG -- Examples
+---------------
+
+To send the message titled Falafel? to all sessions for user MIKES, type:
+msg MIKES Falafel?
+
+To send a message to session MODEM02, type:
+msg modem02 Let's meet at 1PM today
+
+To send a message to session 12, type:
+msg 12 Call John at 11:00
+
+To send a message to all sessions contained in the file USERLIST, type:
+msg @userlist Logout because your session will be reset
+
+To send the text in the file MSG.DAT as a message to all sessions for username
+TERRYJ, type:
+msg TerryJ &lt; MSG.DAT
+
+To send a message to all logged-on users, type:
+msg * Meeting in 5 minutes
+
+To send the message to all users, with an acknowledgment timeout of 10 seconds,
+type:
+msg * /TIME:10 Coffee break!?!
+
+NOTE: Messages do not queue on the Client screen. It may be useful to use the
+TIME: parameter so initial messages will expire and be replaced by new messages.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

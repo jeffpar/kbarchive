@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96847/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96847/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96847/","publisher":null,"image":null,"headline":"Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96847-ms-dos-60-installationpartitioning-sequence-qa">Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96847
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+1. Q. How can I repartition my hard disk into one large partition?
+
+  A. Changing your hard disk from multiple partitions to a single partition
+  involves backing up your data files, repartitioning your hard disk, and then
+  restoring your data files. To do this, you must use the Fdisk program. The
+  section titled "Using Fdisk to Configure Your Hard Disk" on pages 204-216 of
+  the "Microsoft MS-DOS 6 User's Guide" contains instructions for
+  repartitioning your hard disk. For specific instructions about backing up
+  your data, repartitioning your hard disk, and restoring your data files,
+  order Application Note PD0771, "Installation and Partitioning Sequence
+  Questions &amp; Answers," from Microsoft Product Support Services.
+
+2. Q. When I try to use DoubleSpace to compress drives, I receive the error
+  "Cannot load SMARTDrive with DoubleSpace." How can I correct this problem?
+
+  A. DoubleSpace is incompatible with versions of SMARTDrive earlier than
+  version 4.1. If you are using an earlier version of SMARTDrive, DoubleSpace
+  displays this error message. To correct this problem, make sure you are
+  loading SMARTDRV.EXE version 4.1, which is included with MS-DOS 6.0.
+
+3. Q. I have a hard disk with more than 1024 cylinders. Is there a way to access
+  and use the entire hard disk?
+
+  A. The MS-DOS 6 Upgrade uses the hardware BIOS to read and write to the hard
+  disk drive. Due to the limitations of the standard ROM BIOS, MS-DOS accesses
+  only the first 1024 cylinders of a physical hard disk. If you have formatted
+  your hard disk after upgrading to MS-DOS 6 and the disk has less space
+  available, consult your hardware manual or contact your hardware manufacturer
+  for more information.
+
+4. Q. When I run the Fdisk program, it does not recognize all the disk space on
+  my hard disk. What is causing this problem?
+
+  A. Fdisk relies on the BIOS to report the hard disk size. If Fdisk incorrectly
+  reports that your hard disk is smaller than it actually is, either your BIOS
+  is set for the wrong drive type (that is, it is set incorrectly or it does
+  not support your specific drive's dimensions), or your drive has more than
+  1024 cylinders.
+
+  Contact your hardware manufacturer to determine if your BIOS is set correctly.
+  If it is not, correcting the setting should allow Fdisk to recognize the
+  entire hard disk. If your BIOS does not support your drive type, and your
+  hard disk doesn't exceed 1024 cylinders, you may need to order a new BIOS
+  from your hardware manufacturer. For more information, contact your hardware
+  manufacturer.
+
+Additional query words: 6.00 apd60
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146120: HOWTO: Use an OLE Control as an Automation Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146120: HOWTO: Use an OLE Control as an Automation Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146120/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146120/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146120/","publisher":null,"image":null,"headline":"Q146120: HOWTO: Use an OLE Control as an Automation Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146120-howto-use-an-ole-control-as-an-automation-server">Q146120: HOWTO: Use an OLE Control as an Automation Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146120
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbActiveX kbAutomation kbCOMt kbCtrlCreate kbInprocSvr kbMFC kbVC400 kbVC500 kbV
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In situations where an OLE container doesn't support control containment, you
+may want to use an OLE control as an automation server to gain access to its
+properties and methods. This article explains the necessary modifications you
+need to make in order for an OLE control to function as a normal automation
+server.
+
+MORE INFORMATION
+================
+
+Prior to Visual C++ 4.0, an OLE Control could be used as an automation server
+without any modification. However, in MFC 4.0, the framework's implementation of
+IDispatch::Invoke calls the virtual function IsInvokeAllowed to determine if an
+automation server is in the appropriate state to handle automation calls. The
+default implementation in CCmdTarget::IsInvokeAllowed returns TRUE, implying
+that a server can handle automation calls.
+
+In the case of an OLE control, COleControl::IsInvokeAllowed checks to see if the
+control has been either initialized or loaded properly through the persistent
+storage interfaces. If the control has the appropriate state information, then
+this function returns TRUE. When an OLE control is created as a normal
+automation server, it is not created as an embedding in the client. Hence, none
+of the persistent state initialization will take place, which thereby causes
+IsInvokeAllowed to return FALSE. The effect of this is that a call to an
+automation object method generates a run-time error of (8000ffff) :
+"Catastrophic failure".
+
+In order to use an OLE control only as an automation server, you need to override
+COleControl::IsInvokeAllowed() and return TRUE. If any of the control's
+properties and methods should not be accessed when invoked as a normal
+automation server, then that automation function could be bypassed and/or an
+error code can be returned when COleControl::m_bInitialized is FALSE.
+
+Sample Code
+-----------
+
+     BOOL CMyOleControl::IsInvokeAllowed (DISPID)
+     {
+        // You can check to see if COleControl::m_bInitialized is FALSE
+       // in your automation functions to limit access.
+       return TRUE;
+     }
+
+Additional query words: ocx OLE Automation error
+
+======================================================================
+Keywords          : kbcode kbActiveX kbAutomation kbCOMt kbCtrlCreate kbInprocSvr kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC kbVCNET
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

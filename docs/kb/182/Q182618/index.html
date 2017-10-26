@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182618/","publisher":null,"image":null,"headline":"Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182618-xadm-cannot-log-on-using-imap4-if-winnt-locale-set-to-swedish">Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182618
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An IMAP4 e-mail client cannot log on to a Microsoft Exchange Server 5.5 computer
+if the Windows NT default locale is set to Swedish. (The default locale is set
+in the Control Panel Regional Settings.)
+
+If you enable protocol logging for IMAP4, you will see that the IMAP4 session
+fails when the client issues the LOGIN command:
+
+  01/26/1998 17:31:43.079     (TID:141): IMAP connection accepted from
+  157.58.35.128
+  01/26/1998 17:31:43.139 &gt;&gt;&gt; (TID:141): * OK Microsoft Exchange IMAP4rev1
+  Server Ready
+  01/26/1998 17:34:05.003 &lt;&lt;&lt; (TID:141): 1 LOGIN U116BIT password
+  01/26/1998 17:34:05.193 &gt;&gt;&gt; (TID:141): 1 NO
+
+However, if the Windows NT locale is set to English, the same login will work
+correctly:
+
+  01/26/1998 16:54:39.267     (TID:140): IMAP connection accepted from
+  157.58.35.128
+  01/26/1998 16:54:39.267 &gt;&gt;&gt; (TID:140): * OK Microsoft Exchange IMAP4rev1
+  server version 5.5.2147.0 (JUNWIN03) ready
+  01/26/1998 16:54:55.370 &lt;&lt;&lt; (TID:140): 1 LOGIN U116BIT PASSWORD
+  01/26/1998 16:54:55.520 &gt;&gt;&gt; (TID:140): 1 OK LOGIN completed.
+
+
+CAUSE
+=====
+
+The Exchange Information Store service does not correctly handle the IMAP4
+responses to the client if the locale is not set to English, French, German, or
+Japanese.
+
+
+WORKAROUND
+==========
+
+To work around this problem, set the locale to English, French, German, or
+Japanese. If that is not possible, a fix for this problem is now available.
+
+NOTE: After you apply this fix, portions of the return message will be in the
+same language as the Windows NT locale.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information about obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+
+
+Additional query words: MSExchangeIS language WszFromMsgid
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

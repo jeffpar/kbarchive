@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88142: Preventing Word Wrap in Microsoft Windows Help Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88142: Preventing Word Wrap in Microsoft Windows Help Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88142/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88142/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88142/","publisher":null,"image":null,"headline":"Q88142: Preventing Word Wrap in Microsoft Windows Help Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88142-preventing-word-wrap-in-microsoft-windows-help-files">Q88142: Preventing Word Wrap in Microsoft Windows Help Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88142
+Product(s): Miscellaneous Software Development Kits
+Version(s): 3.0,3.1; WINDOWS:3.1,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) for Windows versions 3.0, 3.1 
+- Microsoft Win32 Software Development Kit (SDK), versions 3.1, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, the Microsoft Windows Help application wraps lines of text to
+reflect the size of its window. However, there are situations (such as a table
+of information) in which wrapping text is undesirable. The information below
+presents two methods of preventing a section of text from changing when the Help
+application window changes sizes. These techniques apply to version 2.0 of the
+Microsoft Word for Windows-based application.
+
+MORE INFORMATION
+================
+
+Method 1
+--------
+
+This method, which is compatible with versions 3.0 and 3.1 of the Microsoft
+Windows Help Compiler, involves two steps:
+
+1. Place either a hard or a soft carriage return at the end of each line.
+
+2. Format the section with the "keep lines together" paragraph attribute. From
+  the Format menu, choose Paragraph, and select the Keep Lines Together check
+  box in the Paragraph dialog box.
+
+Method 2
+--------
+
+This method, which is compatible only with version 3.1 of the Help Compiler, is
+to create a one row, one column table in Word for Windows. Set the width of the
+table as desired and allow the text to wrap within the table normally. Windows
+Help will duplicate the word breaks in the table provided that the font used to
+author the table is selected by the Help engine when displaying the table. If
+Help uses a different font, the text may wrap differently, even though the table
+keeps the specified width.
+
+Note
+----
+
+When you use either of these methods, if the Windows Help window is not large
+enough to display the entire width of a topic, Help displays a horizontal scroll
+bar rather than wrapping the text to make it visible.
+
+Additional query words: 3.00 3.10 3.50 4.00 95 HLP word wrap wordwrap engine HC31 HC31.EXE HCP HCP.EXE win16sdk
+
+======================================================================
+Keywords          :  
+Technology        : kbWin32SDKSearch kbAudDeveloper kbWin3xSearch kbSDKSearch kbWin32sSearch kbWin32SDK400 kbWin32SDK310 kbWin32SDK351 kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1; WINDOWS:3.1,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

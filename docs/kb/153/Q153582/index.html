@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153582: How to Get Container hWnd from Windowless Custom OLE Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153582: How to Get Container hWnd from Windowless Custom OLE Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153582/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153582/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153582/","publisher":null,"image":null,"headline":"Q153582: How to Get Container hWnd from Windowless Custom OLE Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153582-how-to-get-container-hwnd-from-windowless-custom-ole-control">Q153582: How to Get Container hWnd from Windowless Custom OLE Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153582
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00 | 4.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.x 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An OLE control that is invisible at run time does not have a window handle.
+Hence the GetParent() Windows API function cannot be used to obtain the hWnd of
+the container's window. This article shows how you can implement a read-only
+hWndParent property for a custom OLE control that returns the container window's
+hWnd.
+
+MORE INFORMATION
+================
+
+The window handle of the container's window can be obtained by calling
+IOleInPlaceSite::GetWindow(). The IOleInPlaceSite interface pointer can be
+obtained by QueryInterfacing for it from the ClientSite pointer in the override
+of OnSetClientSite(). Note that this technique can also be used for OLE controls
+that have a window handle at run-time.
+
+Step-by-step example
+--------------------
+
+1. Create a rudimentary 32-bit OLE Control using the MFC CDK that ships with
+  Visual C++ 4.x. This article assumes that this custom OCX is called Test
+  (coclass name) and that the control class name is CTestCtrl.
+
+2. In the .CPP file for your control class, add the OLEMISC_INVISIBLEATRUNTIME
+  flag to your control. It should look something like this:
+
+  ////////////////////////////////////////////////////////////////////// 
+        // Control type information
+
+        static const DWORD BASED_CODE _dwTestOleMisc =
+        OLEMISC_INVISIBLEATRUNTIME |
+        OLEMISC_ACTIVATEWHENVISIBLE |
+        OLEMISC_SETCLIENTSITEFIRST |
+        OLEMISC_INSIDEOUT |
+        OLEMISC_CANTLINKINSIDE |
+        OLEMISC_RECOMPOSEONRESIZE;
+
+3. Use the Visual C++ MFC ClassWizard to add the following Property to your
+  control class. The external name of this Property is hWndParent. It is
+  implemented as a Get method only (called GetHWndParent), so it is a read-only
+  property. It takes no parameters and returns the hWnd as an OLE_HANDLE.
+
+  You will also need to add a protected member variable m_hWndParent (to
+  actually hold the window handle as an OLE_HANDLE) and override the virtual
+  function OnSetClientSite in the header file for the control class as
+  follows:
+
+        Class CTestControl::COleControl
+        {
+         .
+         .
+         .
+
+        // Overrides
+        virtual void OnSetClientSite();
+
+         .
+         .
+
+         // Implementation
+         protected:
+            OLE_HANDLE m_hWndParent;
+
+            .
+            .
+         };
+
+4. Add the following code to the implementation file (.CPP) of the control
+  class:
+
+        ///////////////////////////////////////////////////////////////////// 
+        // CTestCtrl::CTestCtrl - Constructor
+
+        CTestCtrl::CTestCtrl()
+        {
+         InitializeIIDs(&amp;IID_DTest, &amp;IID_DTestEvents);
+
+         // TODO: Initialize your control's instance data here.
+
+         m_hWndParent = NULL;
+
+         .
+         .
+         .
+         }
+
+         void CTestCtrl::OnSetClientSite()
+         {
+          if (m_pClientSite)
+          {
+           IOleInPlaceSite *pOleInPlaceSite = NULL;
+
+           if (NOERROR == m_pClientSite &gt;QueryInterface(IID_IOleInPlaceSite,
+                                            (LPVOID *)&amp;pOleInPlaceSite))
+                {
+                 pOleInPlaceSite-&gt;GetWindow((HWND *)&amp;m_hWndParent);
+                 pOleInPlaceSite-&gt;Release();
+                }
+           else
+              m_hWndParent = NULL;
+           }
+           else
+           m_hWndParent = NULL;
+          }
+
+          OLE_HANDLE CTestCtrl::GetHWndParent()
+          {
+           // TODO: Add your property handler here
+
+           return m_hWndParent;
+          }
+
+5. Build the Test OLE control from Visual C++ 4.x to automatically register the
+  control if everything compiles properly.
+
+6. From Visual Basic 4.0 32-bit, open a new project, and add the Test OLE
+  control to the Visual Basic toolbox by choosing it from the Tools Custom
+  Controls menu.
+
+7. Add an instance of the Test OLE control to Form1. This will be named Test1.
+  Also add a Picture Box control (Picture1) to Form1, and then draw another
+  Test OLE control (Test2) directly inside the PictureBox.
+
+8. Add the following code to the general declarations portion of Form1:
+
+     Private Sub Form_Click()
+        Debug.Print Hex(Test1.hWndParent), Hex(Form1.hWnd)   'Both are same
+        Debug.Print Hex(Test2.hWndParent), Hex(picture1.hWnd)'Both are same
+        End Sub
+
+9. Run the Visual Basic program, and click the form. You should see the same
+  values for the Window handles printed on the same line in the Debug window in
+  each of the two cases.
+
+Additional query words: 4.00 vb4win vb4all vbctrl
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch kbVC32bitSearch
+Version           : 4.00 | 4.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

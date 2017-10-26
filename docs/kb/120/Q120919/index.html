@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120919/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120919/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120919/","publisher":null,"image":null,"headline":"Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120919-visual-c-vers-20-readmewri-part-3-compiler">Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120919
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 2.0, on platform(s):
+   - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is based on the Visual C++ version 2.0 README.WRI file:
+
+/W4 Warning Messages from Including WINDOWS.H
+---------------------------------------------
+
+Specifying warning level 4 (/W4) when you compile any program that includes
+WINDOWS.H may generate many warnings. Most of these are benign warnings caused
+by non-standard extensions used in Windows NT header files such as WINDOWS.H and
+files that WINDOWS.H includes. To eliminate these warnings, create a "dummy"
+header file that uses the #pragma warning directive to selectively turn off
+warnings you don't need to see. Then include this header file in any source file
+that also includes WINDOWS.H, or use the /FI compiler option to force its
+inclusion.
+
+For example:
+
+  // FILE NOWARN.H&lt;7F&gt;
+  #pragma warning(disable:4201)
+  #pragma warning(disable:4214)
+
+  //FILE MYMOD.C
+  #include "NOWARN.H"
+  #include &lt;windows.h&gt;
+  void main(void) {}
+
+For further examples, see AFX.H, located in the MFC\INCLUDE subdirectory of your
+Visual C++ version 2.0 installation. AFX.H uses #pragma warning to disable
+specific level 4 warnings when compiling MFC applications.
+
+Passing Structures by Value
+---------------------------
+
+A pass by value of a structure greater than or equal to 4096 (4K) bytes may cause
+an access violation if the current stack allocation is exceeded. If the
+structure size is greater than or equal to 8192 (8K) bytes, an access violation
+is likely unless you ensure that new stack pages are not being accessed.
+
+The __purecall function
+-----------------------
+
+The __purecall function is a special function (defined with C linkage) that is
+defined in the default run-time library, and may be called at run time if there
+is an error referencing the object's virtual function table. This will usually
+happen as a result of a program error. The following code causes this error:
+
+  struct A;
+  void x(A*);
+  struct A
+  {
+      virtual void f() = 0;
+      A() { x(this); }
+  };
+
+  struct B : A
+  {
+      void f() { }
+  };
+
+  void x(A*p) { p-&gt;f(); }
+
+  void main()
+  {
+      B aB;    // calls B::B calls A::A calls
+  }            // x calls A::f (pure virtual function)
+
+Because such errors cannot be caught at compile time, the __purecall function is
+called, generating the following run-time error:
+
+  runtime error R6025
+  - pure virtual function call
+
+If an application (such as a device driver) must be compiled without using the
+standard run-time libraries (compiler option /Zl or linker option
+/NODEFAULTLIB), but requires virtual function calls, you will get an "undefined
+symbol" linker error on __purecall. You can work around this error in one of two
+ways:
+
+- Define your own __purecall function and compile with the /Gd option (specify
+  __cdecl calling convention). The following is a minimal example:
+
+        int __purecall( void )
+        {
+            /* insert your own error reporting code here */ 
+            return 0;
+        }
+
+  If __purecall is redefined in exactly this way, no run time error is generated
+  if the user calls a pure virtual function. The custom __purecall function
+  should contain appropriate error checking and recovery code, (for example,
+  calling _exit or printing a fatal error message) as noted in the sample.
+
+  -or-
+
+- Extract the object module that contains __purecall from the LIBC.LIB library,
+  and link the object explicitly. Using this method, all other symbols in the
+  object module will be included. To avoid this potentially undesirable
+  side-effect, the first method is recommended.
+
+Additional query words: 2.00 9.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191272: HOWTO: A Brief Exploration of the Project Object Model | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191272: HOWTO: A Brief Exploration of the Project Object Model" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191272/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191272/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191272/","publisher":null,"image":null,"headline":"Q191272: HOWTO: A Brief Exploration of the Project Object Model","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191272-howto-a-brief-exploration-of-the-project-object-model">Q191272: HOWTO: A Brief Exploration of the Project Object Model</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191272
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One of the new features of Visual FoxPro 6.0 is the Project Object. The Project
+Object allows the programmatic manipulation of the project's contents, such as
+adding and deleting files, enumerating the files and types, building various
+file types, modifying version, author information, and so forth.
+
+MORE INFORMATION
+================
+
+The Online documentation describes in detail the Project Object and its
+components. This document explores the components of the Project Object and
+describes how you can access the object model. The attached sample file shows
+some of the more simple operations that you can perform with the Project Object.
+Hopefully, the example will spur more creative use of this new functionality.
+
+Here are some brief examples of using the Project Object:
+
+- When a project is created, as in CREATE PROJECT Test1, the project object, as
+  well as, the ProjectHooks object, is instantiated. The NOSHOW and
+  NOPROJECTHOOK clauses can be specified. If the NOSHOW clause is specified,
+  the Project Manager can be made visible as follows:
+
+        CREATE PROJECT Test1 NOSHOW &amp;&amp; Project is not visible.
+        _VFP.ACTIVEPROJECT.VISIBLE = .T.
+
+A project called "Test1" is created but is not shown. The second line in the
+preceding example makes the Project Manager visible.
+
+You can use the following line to determine how many project objects currently
+exist:
+
+     _VFP.PROJECTS.COUNT
+
+The various other Project Object properties are listed in the Online
+documentation and are not fully demonstrated in this article.
+
+Files can be programmatically added to the Project as follows:
+
+     STRTOFILE("* Main Test File", "MAIN.PRG") &amp;&amp; Creates a program file.
+     _VFP.ACTIVEPROJECT.FILES.ADD("main.prg") &amp;&amp; Adds file to the project.
+
+     ?_VFP.ACTIVEPROJECT.MAINFILE     &amp;&amp; Displays the name of the main file.
+     ?_VFP.ACTIVEPROJECT.FILES.COUNT &amp;&amp; Displays the number of project files.
+     ?_VFP.ACTIVEPROJECT.FILES(1).TYPE  &amp;&amp; Displays the file type.
+
+A description for the file can be programmatically added as follows:
+
+     _VFP.ACTIVEPROJECT.FILES(1).DESCRIPTION = "Added Programmatically."
+     ?_VFP.ACTIVEPROJECT.FILES(1).DESCRIPTION &amp;&amp; Displays description.
+     ?_VFP.ACTIVEPROJECT.FILES(1).LASTMODIFIED &amp;&amp; Displays file date.
+     ?_VFP.ACTIVEPROJECT.FILES(1).SCCSTATUS
+        &amp;&amp; Identifies the file's source code control status.
+     ?_VFP.ACTIVEPROJECT.FILES(1).EXCLUDE
+
+Other components of the Project Object are described in the Programmer's Guide,
+Chapter 32, titled "Application Development and Developer Productivity".
+
+REFERENCES
+==========
+
+Visual FoxPro Help: search on: "Project Object"; "ActiveProject"; "Projects
+Collection"; "Files Collection"; "File Object"; "ProjectHooks"
+
+Programmer's Guide, Chapter 32, "Application Development and Developer
+Productivity".
+
+Additional query words: kbVFp600 kbProjManager
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

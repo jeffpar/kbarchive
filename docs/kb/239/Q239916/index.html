@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239916/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239916/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239916/","publisher":null,"image":null,"headline":"Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239916-fix-atl-activex-fails-on-win95-when-hosting-activex-controls">Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239916
+Product(s): Microsoft C Compiler
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbContainer kbCtrlCreate kbDCOM kbDlg kbLicensing kbVC600bug kbOSWin95
+Last Modified: 02-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Windows 95 without DCOM installed, an ATL AppWizard generated
+composite control will not create properly if it hosts any ActiveX controls
+whether they are licensed or unlicensed.
+
+CAUSE
+=====
+
+When ATL calls CoCreateInstance to create the contained controls it uses
+CLSCTX_SERVER for the context parameter. CLSCTX_SERVER is a combination of
+CLSCTX_INPROC_SERVER, CLSCTX_LOCAL_SERVER and CLSCTX_REMOTE_SERVER.
+CoCreateInstance will look at CLSCTX_REMOTE_SERVER first because this is not
+valid on Windows 95 without DCOM; it will cause the creation of the contained
+control to fail. This will ultimately cause the composite control to fail during
+creation also.
+
+RESOLUTION
+==========
+
+Following are three workarounds for this situation.
+
+1. Open ATLHost.h from the \atl\include directory:
+
+  a. Find the function CreateNormalizedObject in Atlhost.h.
+
+  b. In CreateNormalizedObject, find the calls to CoCreateInstance on lines 28,
+     43 and 49. Change the parameter CLSCTX_SERVER to CLSCTX_INPROC_SERVER.
+
+  c. Save the modified ATLHost.h file.
+
+  d. Rebuild the project.
+
+2. Comment out the following lines in Stdafx.h:
+
+  /*  comment this block of code out if you intend to run without DCOM!
+  #define STRICT
+  #ifndef _WIN32_WINNT
+  #define _WIN32_WINNT 0x0400
+  #endif
+  */ 
+
+3. Install DCOM for Windows 95. You can get it from the following Web site:
+  Windows Update Site. You could also install Internet Explorer 4 or higher as
+  it will install DCOM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ATL composite control.
+
+2. Place an ActiveX control on the composite control using the resource editor;
+  for instance, use Microsoft Calendar control.
+
+3. Build the project using the Release MinDependency build configuration to
+  limit redistribution components needed on target computers.
+
+4. Create an MFC Dialog-based application and accept all of the defaults.
+
+5. Add the ATL composite control to the dialog using the resource editor.
+
+6. Link to MFC statically by going to Projects, Settings, and then click the
+  General tab. This will again limit redistribution components needed on target
+  computers.
+
+7. Build the MFC project.
+
+8. Install the MFC application on Windows 95 without DCOM installed.
+
+9. Register the control on the computer with Windows 95.
+
+10. Attempt to run the MFC application.
+
+You should get a failure to show the dialog on the computer with Windows 95.
+
+Additional query words: Regsvr32.exe host composite fail ATLHOST
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbContainer kbCtrlCreate kbDCOM kbDlg kbLicensing kbVC600bug kbOSWin95 kbATL300bug kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

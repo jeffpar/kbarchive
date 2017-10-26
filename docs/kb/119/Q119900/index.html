@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119900: INFO: Understanding the RETURN Command | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119900: INFO: Understanding the RETURN Command" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119900/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119900/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119900/","publisher":null,"image":null,"headline":"Q119900: INFO: Understanding the RETURN Command","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119900-info-understanding-the-return-command">Q119900: INFO: Understanding the RETURN Command</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119900
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 30-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Macintosh, version 2.5x 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The RETURN command provides a great deal of flexibility over program control.
+RETURN terminates execution of a program, procedure, or function. Depending on
+how RETURN is used, control is returned to the calling program, the
+highest-level calling program, another program, or the Command window. The
+sample code below illustrates the power of the RETURN command.
+
+MORE INFORMATION
+================
+
+Enter the following code in a program call RETTEST.PRG:
+
+
+  PARAMETER x  &amp;&amp; line 1
+
+  ON ERROR DO myErr
+  DO A
+  WAIT WINDOW 'In master'   &amp;&amp; line 5
+
+  ON ERROR
+
+  PROCEDURE A
+  DO B
+  WAIT WINDOW 'In A'   &amp;&amp; line 11
+
+  PROCEDURE B
+  x=testing
+  WAIT WINDOW 'In B'  &amp;&amp; line 15
+
+  PROCEDURE myErr
+  DO CASE
+
+  CASE x = 'master' RETURN TO MASTER CASE EMPTY(x) RETURN OTHERWISE RETURN TO
+  &amp;x
+
+  ENDCASE
+
+
+To demonstrate the capabilities of the RETURN command, try the following three
+invocations of the above program from the Command window.
+
+- The following command returns to line 5 without executing lines 11 or 15: DO
+  rettest WITH "master"
+
+- The following command returns to line 11 without executing line 15: DO
+  rettest WITH "A"
+
+- The following command returns to line 15, the line of code immediately
+  following the line that generated the error: DO rettest WITH ""
+
+The program is so short that it may be helpful to use the Trace window and step
+through the code. For additional information about using the Trace window, see
+the "Debugging" chapter of the "Developer's Guide" and the "Program Menu"
+chapter of the "User's Guide."
+
+REFERENCES
+==========
+
+FoxPro "Language Reference"
+
+Additional query words: VFoxWin FoxUnix FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP500 kbVFP600
+Version           : MACINTOSH:2.5x; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

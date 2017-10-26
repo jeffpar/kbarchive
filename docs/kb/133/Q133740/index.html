@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133740/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133740/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133740/","publisher":null,"image":null,"headline":"Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133740-null-value-null-is-a-marker---not-a-data-type">Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133740
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The null value (.NULL.) is not an actual value, it is a marker that denotes that
+a memory variable or a field value is missing or unknown. If .NULL. is assigned
+to a field or a variable, the field or variable's data type is not changed, but
+the value is changed to NULL.
+
+MORE INFORMATION
+================
+
+Steps to Demonstration Behavior
+-------------------------------
+
+The .NULL. value can be assigned to variables that are numeric or character as
+demonstrated by these steps:
+
+1. From the Command window, issue these commands:
+
+     nMyvariable=200        &amp;&amp; and press ENTER
+     ? TYPE("nMyvariable")  &amp;&amp; and press ENTER
+     ? nMyvariable
+
+  The N is displayed for nMyvariable denoting a variable of numeric type.
+
+2. To assign a null value (.NULL.) to nMyvariable, issue the following commands
+  in the Command window:
+
+     store .NULL. to nMyvariable        &amp;&amp; and press ENTER
+     ? TYPE("nMyvariable")              &amp;&amp; and press ENTER
+     ? nMyvariable                      &amp;&amp; and press ENTER
+
+  The value N is displayed followed by .NULL.; the type of the variable did not
+  change but the value did.
+
+3. To assign a character string to the variable and check the variable type,
+  issue the following commands in the Command window:
+
+     cMyvariable="This is a String"     &amp;&amp; and press ENTER
+     ? cMyvariable                      &amp;&amp; and press ENTER
+
+  The screen displays the string "This is a String."
+
+4. Issue the following command in the Command window:
+
+     ? TYPE("cMyvariable")              &amp;&amp; and press ENTER
+
+  The screen displays C denoting a character type.
+
+5. Issue the following commands in the Command window:
+
+     STORE .NULL. TO cMyvariable        &amp;&amp; and press ENTER
+     ?TYPE("cMyvariable")               &amp;&amp; and press ENTER
+
+  The screen displays C to show that the type has not been changed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

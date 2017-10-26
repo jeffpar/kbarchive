@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100021/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100021/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100021/","publisher":null,"image":null,"headline":"Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100021-unable-to-access-compressed-drives-using-dblbootbat-disk">Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100021
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SYMPTOMS
+========
+
+If you start your computer from the compressed disk created by DBLBOOT.BAT (a
+batch file included with MS-DOS 6.x Supplemental Disks that creates a
+DoubleSpace-compressed startup disk), you cannot access any other compressed
+drives on your system.
+
+To work around this problem, edit the DBLSPACE.INI file on the compressed disk
+and include an ActivateDrive entry for each compressed drive that should be
+mounted at startup.
+
+CAUSE
+=====
+
+To ensure that the compressed volume file (CVF) DBLBOOT.BAT creates is mounted
+automatically at startup, the batch file creates a DBLSPACE.INI file and places
+it in the root directory of the floppy disk. Because DBLSPACE.BIN reads this
+DBLSPACE.INI file from the floppy disk, any DBLSPACE.INI file on the hard disk
+is ignored. Therefore, any ActivateDrive entry specified in such a DBLSPACE.INI
+file is never processed, the corresponding CVF on the hard disk is not mounted,
+and any data stored in that CVF is inaccessible.
+
+The DBLSPACE.INI file created by DBLBOOT.BAT should contain an entry resembling
+the following:
+
+  ActivateDrive=G,A0
+
+This entry causes the CVF on the disk to be mounted at startup and creates a host
+drive (G in the above example) to store the DoubleSpace files.
+
+WORKAROUND
+==========
+
+To work around this problem, you need to edit the DBLSPACE.INI file on the
+compressed disk and include an ActivateDrive entry for each compressed drive
+that should be mounted at startup.
+
+Modify DBLSPACE.INI
+-------------------
+
+Modify the DBLSPACE.INI file located on the floppy disk (if the CVF is not
+mounted) or on the host drive (if the CVF is mounted) and include an
+ActivateDrive entry for each compressed drive that should be mounted at startup.
+The DBLSPACE.INI file on the hard disk drive can be used as a guide for adding
+the appropriate ActivateDrive entries.
+
+These entries should be made in addition to the original ActivateDrive entry made
+by DBLBOOT.BAT.
+
+Preventing This Problem in the Future Under MS-DOS 6.0
+------------------------------------------------------
+
+To prevent this problem from occurring with future use of the DBLBOOT.BAT file,
+modify the DBLBOOT.INI file (which is in the same directory as DBLBOOT.BAT), and
+include an ActivateDrive entry for each compressed drive that should be mounted
+at startup.
+
+DBLBOOT.INI is a prototype .INI file used by the DBLBOOT.BAT file for creating a
+DBLSPACE.INI file on the floppy disk.
+
+Preventing This Problem in the Future Under MS-DOS 6.2
+------------------------------------------------------
+
+Since the MS-DOS 6.2 Supplemental Disk does not contain a DBLBOOT.INI file, you
+must modify the DBLBOOT.BAT file. Line number 76 states the following:
+
+  echo ActivateDrive=I,A0 &gt;&gt; %1\dblspace.ini"
+
+Add additional "echo ActivateDrive" lines after line 76 for each compressed drive
+to be mounted at startup with the DBLBOOT disk. For example, if C is compressed
+and you want drive H for the host drive, add:
+
+  echo ActivateDrive=H,C0 &gt;&gt; %1\dblspace.ini"
+
+MORE INFORMATION
+================
+
+For more information on editing the DBLSPACE.INI file, query on the following
+words in the Microsoft Knowledge Base:
+
+  "dblspace.ini" (without the quotation marks) and "edit" (without the
+  quotation marks) and "how" (without the quotation marks)
+
+Additional query words: 6.00 doublespace double space ds startup dblspace create suppdisk
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

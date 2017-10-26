@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162769/","publisher":null,"image":null,"headline":"Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162769-wrong-cname-rr-causes-dns-startup-and-zone-transfer-failure">Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162769
+Product(s): Microsoft Windows NT
+Version(s): WINNT:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.00 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Windows NT 4.0 DNS server contains an invalid CNAME RR record (see RFC
+1034), the following two problems may occur:
+
+- On a computer running Windows NT 4.0, you receive the following error when
+  you attempt to use a "net start DNS" command:
+
+  System error 13 has occurred. The data is invalid.
+
+- BIND to a Windows NT zone transfer does not complete. The event log only
+  shows the following message:
+
+     Zone transfer is in progress.
+
+CAUSE
+=====
+
+This problem is caused by the following invalid Resource Record that is
+originally coming from a Digital UNIX server running BIND DNS 4.9.4-P1:
+
+  name     IN A  x.x.x.x
+           IN CNAME name-xxx.xxx.xx.xxx.xxxxxx.xxx
+
+RESOLUTION
+==========
+
+Remove the invalid CNAME RR.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+While Windows NT shows the invalid entry by line number (DNS event ID 203: DNS
+server could not parse database file x line number y), BIND to Windows NT zone
+transfer does not generate an error, but does not complete either. In a network
+trace, you see Windows NT TCP resetting the connection during zone transfer.
+
+BIND to BIND zone transfer reports this CNAME record as invalid, but still
+completes the zone transfer.
+
+See RFC 1034 for more information about CNAME Resource Records. The following is
+an excerpt from RFC 1034:
+
+  The domain system provides such a feature using the canonical name (CNAME)
+  RR. A CNAME RR identifies its owner name as an alias, and specifies the
+  corresponding canonical name in the RDATA section of the RR. If a CNAME RR is
+  present at a node, no other data should be present; this ensures that the
+  data for a canonical name and its aliases cannot be different. This rule also
+  insures that a cached CNAME can be used without checking with an
+  authoritative server for other RR types.
+
+Additional query words: domain name system request comments comment
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

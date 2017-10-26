@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258949: MMS Compass Compatibility with WinSock 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258949: MMS Compass Compatibility with WinSock 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258949/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258949/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258949/","publisher":null,"image":null,"headline":"Q258949: MMS Compass Compatibility with WinSock 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258949-mms-compass-compatibility-with-winsock-20">Q258949: MMS Compass Compatibility with WinSock 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258949
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 29-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Zoomit Compass and Microsoft Metadirectory Services (MMS) Compass are not
+compatible with WinSock 2.0 on a Microsoft Windows 95 computer. Compass accepts
+the logon credentials and the server selection which makes it appear to function
+correctly. However, after an attempt to connect with the server, Compass closes
+without warning.
+
+CAUSE
+=====
+
+Compass is only compatible with Microsoft Windows 98 or later and Microsoft
+Windows NT 4.0 or later.
+
+RESOLUTION
+==========
+
+If you remove WinSock 2.0 and reinstall WinSock 1.1, Compass functions
+correctly.
+
+MORE INFORMATION
+================
+
+To Determine If WinSock 2.0 Is Installed
+----------------------------------------
+
+For additional information about how to determine if WinSock 2.0 is installed on
+your computer, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q177719 How to Identify WinSock 2.0 Run-Time Components for Windows 95
+
+To Reinstall WinSock 1.1
+------------------------
+
+When Ws2setup.exe runs the first time, it copies Ws2bakup.bat and the WinSock 1.1
+files to %windir%\ws2bakup. So, to return to your original WinSock 1.1
+configuration, open and run the Ws2bakup.bat file, which is located in the
+following location:
+
+  C:\\WS2BAKUP\ws2bakup.bat
+
+Caution: When you run Ws2bakup.bat on Windows 95, sharing violations can occur
+because some system files cannot be restored while a newer version is running.
+If sharing violations do occur, you need to run Ws2bakup.bat again, this time in
+MS-DOS mode.
+
+To Run Ws2bakup.bat in MS-DOS Mode
+----------------------------------
+
+1. Click Start, and then click Shut Down.
+
+2. Click "Restart the computer in MS-DOS mode", and then click OK.
+
+3. After the restart, type "C:\\WS2BAKUP\WS2BAKUP" (without the quotation marks)
+  at the command prompt, and then press ENTER.
+
+  Errors messages appear for the programs that cannot run outside of Windows,
+  but you should not be concerned because these programs already executed
+  properly if you first ran Ws2bakup.bat from inside Windows 95.
+
+4. When this process is finished, restart the computer, and WinSock 1.1 will be
+  installed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

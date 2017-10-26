@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34405: Coprocessor Is Slower in QuickBASIC 4.00b, 4.50 than in 4.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34405: Coprocessor Is Slower in QuickBASIC 4.00b, 4.50 than in 4.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34405/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34405/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34405/","publisher":null,"image":null,"headline":"Q34405: Coprocessor Is Slower in QuickBASIC 4.00b, 4.50 than in 4.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34405-coprocessor-is-slower-in-quickbasic-400b-450-than-in-400">Q34405: Coprocessor Is Slower in QuickBASIC 4.00b, 4.50 than in 4.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34405
+Product(s): See article
+Version(s): 3.00 4.00 4.00 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist3.00 buglist4.00 fixlist4.00b SR# S890119-106 | mspl13_basic
+Last Modified: 7-FEB-1989
+
+Programs compiled in QuickBASIC Version 4.00 (or the coprocessor
+version of QuickBASIC 3.00) generally run faster on a coprocessor than
+when compiled in later QuickBASIC Versions (4.00b or 4.50) or in BASIC
+Compiler Version 6.00 or 6.00b. There is little speed difference
+between versions when run on a computer that has no coprocessor.
+
+This behavior occurs because the coprocessor math routines in Version
+4.00 of QuickBASIC are different than the coprocessor math routines
+used in later versions of QuickBASIC (4.00b or 4.50) or in the
+Microsoft BASIC Compiler 6.00 or 6.00b. The math routines were updated
+to correct certain problems in the earlier routines. Additional
+coprocessors were required to wait in the new routines, which can
+cause slower program-execution time in programs that take advantage of
+an installed math coprocessor.
+
+In a benchmark test of floating-point calculations on a computer
+equipped with an 80287 coprocessor, QuickBASIC Version 4.00b is
+anywhere from 5- to 30-percent slower than QuickBASIC Version 4.00,
+depending on the type of coprocessor used. There is no appreciable
+speed difference for computers without a coprocessor.
+
+This speed reduction is necessary in Version 4.00b to correct some
+erroneous results associated with coprocessor timing-coordination
+problems in QuickBASIC Version 4.00 and the coprocessor version
+(QB87.EXE) of QuickBASIC Version 3.00.
+
+Microsoft confirmed the timing problems in QuickBASIC Versions 3.00
+and 4.00. The problems were corrected in QuickBASIC Version 4.00b (and
+later) and in the BASIC Compiler Version 6.00 (and later) and its
+copy of QuickBASIC.
+
+A consequence of correcting the timing coordination problems is slower
+coprocessor speed in QuickBASIC Version 4.00b or 4.50 than in Version
+3.00 or 4.00.
+
+The following benchmark example can be used to compare various
+versions of QuickBASIC:
+
+start = TIMER
+FOR k% = 1 TO 10000
+        u = 1000.45 - 88998.2
+        m = 99999! + 23.5
+        x = 1.03 * 99.5
+        y = 456.3 / 9876.345
+        z = 10.3 ^ 2.3
+NEXT k%
+PRINT "elapsed time="; TIMER - start
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

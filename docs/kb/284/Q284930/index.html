@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q284930: INFO: Issues Administering IIS 5.0 from IIS 4.0 MMC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q284930: INFO: Issues Administering IIS 5.0 from IIS 4.0 MMC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/284/Q284930/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/284/Q284930/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/284/Q284930/","publisher":null,"image":null,"headline":"Q284930: INFO: Issues Administering IIS 5.0 from IIS 4.0 MMC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q284930-info--issues-administering-iis-50-from-iis-40-mmc">Q284930: INFO:  Issues Administering IIS 5.0 from IIS 4.0 MMC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q284930
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbWinDNA kbGrpDSSIE kbDSupport kbIIS kbiis400 kbiis500
+Last Modified: 29-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Information Server (IIS) 4.0 Internet Service Manager allows you to
+connect to a remote Windows 2000/Internet Information Services 5.0 server in
+order to perform remote administration tasks. However, unexpected behavior can
+occur when you administer IIS 5.0 remotely from the Windows NT 4.0/Internet
+Information Server 4.0 Internet Service Manager (and vice versa). Microsoft
+recommends that you use the HTML Administration Web site to remotely administer
+an IIS 5.0 or IIS 4.0 server.
+
+MORE INFORMATION
+================
+
+The following excerpt from IIS 5.0 Help (the path to this information is
+Contents, Administration, Server Administration, Web and FTP sites, and
+Downlevel Site Administration) describes a problem concerning application
+mappings when you are administering IIS 5.0 from the IIS 4.0 Microsoft
+Management Console (MMC) snap-in:
+
+  Important! The column entitled Verbs in the App Mappings property sheet lists
+  the HTTP verbs that will be run by an application. In IIS 4.0, this column,
+  entitled Exclusions, listed the HTTP verbs that would not be run by an
+  application. If you perform remote administration tasks between computers
+  running IIS 4.0 and IIS 5.0, this column will be incorrectly labeled.
+
+  For more information on application mappings, see Setting Application
+  Mappings.
+
+This problem can actually occur in both directions (in other words, the problem
+can happen when administering IIS 5.0 from a Windows NT 4.0/IIS 4.0 server and
+vice versa).
+
+The following is a detailed description of the problem: If an administrator
+double-clicks on a specific application mapping in the IIS 4.0 Internet Service
+Manager's Application Configuration dialog box on the App Mappings tab, this
+brings up the Add/Edit application extension mapping form. The part of this form
+that concerns HTTP verbs is titled "Method Exclusions". On IIS 4.0, the default
+behavior for this form is to exclude only the HTTP verbs that you do not want to
+allow for a given application mapping (from example, "exclude PUT, DELETE from
+.ASP").
+
+This behavior was changed in IIS 5.0. The corresponding form is now titled "Limit
+to:" and you type in the HTTP verbs you want to include.
+
+For example, on a Windows 2000 Server, if you use the IIS 5.0 Internet Service
+manager to locally edit the application mapping for the .asp extension, the
+default behavior for the HTTP verbs is "Limit to: GET, HEAD, POST, TRACE". This
+configuration information is then written to the metabase under the ScriptMaps
+key as:
+
+  .asp,C:\WINNT\System32\inetsrv\asp.dll,1,GET,HEAD,POST,TRACE
+
+If this same procedure is performed from a Windows NT 4.0/IIS 4.0 Internet
+Service Manager while you are remotely connected to a Windows 2000/IIS 5.0
+server, the IIS 4.0 Internet Service Manager will read this information from the
+metabase and display "GET, HEAD, POST, TRACE" in the form field as "method
+exclusions", even though these are really method inclusions. If the IIS 4.0
+administrator notices this and changes these values to reflect the proper
+default method exclusions for IIS 4.0 ("PUT, DELETE"), these values will be
+written back to the IIS 5.0 servers metabase and the ScriptMaps key will appear
+as:
+
+  .asp,C:\WINNT\System32\inetsrv\asp.dll,1,PUT,DELETE
+
+IIS 5.0 will then only allow the HTTP verbs PUT and DELETE to be sent to ASP
+pages, which causes the Web application to fail.
+
+REFERENCES
+==========
+
+IIS 5.0 Help, http://localhost/iishelp/iis/htm/core/ii30adm.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinDNA kbGrpDSSIE kbDSupport kbIIS kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

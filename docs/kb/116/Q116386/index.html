@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116386/","publisher":null,"image":null,"headline":"Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116386-adtode-minimizing-all-objects-sets-focus-to-database-window">Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116386
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0,7.0,97
+Operating System(s): 
+Keyword(s): kbui
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When all the objects in an application that is running in the run-time version
+of Microsoft Access are minimized, focus is passed to the Database window even
+though the Database window is not visible.
+
+If you press a key or key combination that is a valid command in the Database
+window while all the objects in the application are minimized, the Database
+window command corresponding to the key or key combination will be carried out.
+Examples of a key or a key combination that are valid commands in the Database
+window include ENTER, which opens or runs the currently selected object, and
+ALT+N, which creates a new object.
+
+RESOLUTION
+==========
+
+Include a form in the application that cannot be minimized.
+
+MORE INFORMATION
+================
+
+Many Microsoft Access applications include a Main Menu or Main Switchboard form
+that is automatically opened with the AutoExec macro and stays open the entire
+time that the application is open. This form is a good choice for a form that
+cannot be minimized.
+
+The following form property settings will prevent the form from being minimized:
+
+  Property        Setting
+  -----------------------------------------------------------------
+  Min Max Buttons   No  (Microsoft Access 97 and 7.0 property only)
+  Min Button        No  (Version 2.0 property only)
+  Control Box       No
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the sample database Northwind.mdb (or NWIND.MDB in version 2.0).
+
+2. In Microsoft Access 97 and 7.0:
+
+  a. On the Tools menu, click Startup.
+
+  b. In the Startup dialog box, under Display Form, select Main Switchboard as
+     the startup form.
+
+  In Microsoft Access 2.0:
+
+  Create a new macro with the following action, and then save the macro as
+  AutoExec:
+
+           Action: OpenForm
+           FormName: Main Switchboard
+
+3. Quit Microsoft Access.
+
+4. On the Start Menu click Run. (Or in Windows 3.x, in Program Manager, choose
+  Run from the File menu.)
+
+5. In the Open box (or Command Line box in Windows 3.x), type the following
+  line, and then press ENTER.
+
+  NOTE: In the following command, an underscore (_) at the end of a line is used
+  as a line-continuation character. Remove the underscore from the end of the
+  line when re-creating this command.
+
+  In Microsoft Access 97:
+
+  "C:\Program Files\Microsoft Office\Office\Msaccess.exe _
+        C:\Program Files\Microsoft Office\Office\Samples\Northwind.mdb_
+        /Runtime"
+
+  In Microsoft Access version 7.0:
+
+  C:\MSOffice\Access\Msaccess.exe _
+        C:\MSOffice\Access\Samples\Northwind.mdb /Runtime
+
+  In Microsoft Access version 2.0:
+
+  C:\ACCESS\MSARN200.EXE C:\ACCESS\SAMPAPPS\NWIND.MDB _
+        /INI C:\WINDOWS\MSACC20.INI
+
+6. After Microsoft Access starts and the Main Switchboard form opens, minimize
+  the Main Switchboard form.
+
+7. Press ENTER or ALT+N. Note that because these are valid commands in the
+  Database window, the Database window command is carried out.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700
+Version           : WINDOWS:2.0,7.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

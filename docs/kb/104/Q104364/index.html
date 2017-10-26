@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104364: PC Forms: Message Displayed in Compose Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104364: PC Forms: Message Displayed in Compose Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104364/","publisher":null,"image":null,"headline":"Q104364: PC Forms: Message Displayed in Compose Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104364-pc-forms-message-displayed-in-compose-form">Q104364: PC Forms: Message Displayed in Compose Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104364
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:1.0,3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Electronic Forms Designer, version 1.0, used with:
+   - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you read a message created using a version 1.0 Microsoft Electronic Forms
+Designer custom form, the message may be displayed in the Compose form, rather
+than the Read form.
+
+CAUSE
+=====
+
+This problem occurs because of a limitation in simple Messaging Application
+Programming Interface (MAPI). The MAPISaveMail() function ignores the MAPI_SENT
+flag, starting this chain of events:
+
+1. The message is opened and the header has MAPI_SENT set (gMessage.Flags =
+  MAPI_SENT).
+
+2. The message is deleted from the message list (underneath).
+
+3. When Mail tries to save the open message to its original Message ID, it fails
+  because the ID has been deleted.
+
+4. The form attempts to save again, using the same header and an empty message
+  ID (to save a "new" message).
+
+5. The MAPISaveMail() function ignores the MAPI_SENT bit and saves the message
+  as a new/unsent message.
+
+6. When the message is reopened, the form processes an Open command on a
+  new/unsent message, and concludes that the message should display the Compose
+  form.
+
+RESOLUTION
+==========
+
+To avoid this problem, close all open instances of E-forms before you delete
+mail from Microsoft Mail for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in simple MAPI from versions 3.0
+and 3.2 of Microsoft Mail for PC Networks. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 1.00 wrong incorrect PC MAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

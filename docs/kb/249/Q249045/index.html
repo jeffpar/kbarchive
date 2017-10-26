@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249045: BUG: C2964 On Pointer-To-Member As Template Argument | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249045: BUG: C2964 On Pointer-To-Member As Template Argument" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249045/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249045/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249045/","publisher":null,"image":null,"headline":"Q249045: BUG: C2964 On Pointer-To-Member As Template Argument","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249045-bug-c2964-on-pointer-to-member-as-template-argument">Q249045: BUG: C2964 On Pointer-To-Member As Template Argument</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249045
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbtemplate kbCompiler kbCPPonly kbLangCPP kbVC600 kbVC600bug
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler generates an error such as the following when a pointer-to-member
+is used as a class template parameter.
+
+  error C2964: invalid expression as template parameter
+
+CAUSE
+=====
+
+This C++ language feature has not yet been implemented in Visual C++.
+
+RESOLUTION
+==========
+
+To not use the pointer-to-member as a template argument, pass it as a parameter
+to the class constructor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Use the following sample code to reproduce the behavior:
+
+  #ifdef BUG
+
+  struct MyClass {
+     char a,b;
+     MyClass() : a('a'), b('b') {};
+  };
+
+  template&lt;char MyClass::*member_ptr&gt; 
+  class AnotherClass {
+  private:
+     MyClass m_var;
+  public:
+     char value() { return m_var.*member_ptr; }
+  };
+
+  int main()
+  {
+     AnotherClass&lt;&amp;MyClass::a&gt; var1;
+     AnotherClass&lt;&amp;MyClass::b&gt; var2;	//&lt;&lt;&lt;&lt; Causes compiler error.
+     return 0;
+  } 
+
+  #else
+
+  // WORKAROUND
+  struct MyClass {
+     char a,b;
+     MyClass() : a('a'), b('b') {};
+  };
+
+  template&lt;typename MbrType, typename ClassType&gt; 
+  class AnotherClass {
+  private:
+     MyClass m_var;
+     MbrType ClassType::*member_ptr;
+  public:
+     AnotherClass(MbrType ClassType::*mem_ptr) : member_ptr(mem_ptr) {}
+     char value() { return m_var.*member_ptr; }
+  };
+
+  int main()
+  {
+     AnotherClass&lt;char,MyClass&gt; var1(&amp;MyClass::a);
+     AnotherClass&lt;char,MyClass&gt; var2(&amp;MyClass::b);
+     return 0;
+  } 
+
+  #endif
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbCPPonly kbLangCPP kbVC600 kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

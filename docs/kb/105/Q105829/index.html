@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105829/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105829/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105829/","publisher":null,"image":null,"headline":"Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105829-ms-dos-62-setup-may-overwrite-stacker-dblspacebin-file">Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105829
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have STAC Electronics Stacker version 3.11 or 4.0, and there is enough
+space on your host drive to install the MS-DOS 6.2 files, MS-DOS 6.2 Upgrade
+replaces your Stacker version of DBLSPACE.BIN. As a result, you cannot access
+your Stacker-compressed drives.
+
+NOTE: This information does not apply to MS-DOS 6.2 Step-Up.
+
+CAUSE
+=====
+
+At the time MS-DOS 6.2 was released, the current version of Stacker was 3.10.
+Microsoft ensured that MS-DOS 6.2 Upgrade and MS-DOS 6.2 Step-Up can detect
+Stacker 3.10 and do not overwrite it. This ensures you can access your
+Stacker-compressed drives (even though Stacker 3.1 replaces a core component of
+MS-DOS [DBLSPACE.BIN]).
+
+Since Microsoft cannot guarantee how MS-DOS will interact with future versions of
+Stacker, MS-DOS 6.2 Setup was designed to detect and avoid Stacker version 3.10
+only.
+
+For Stacker version 3.11, the box and disks still indicate version 3.10. You can
+tell the difference between Stacker 3.10 and 3.11 by the file dates and sizes.
+The file date for Stacker version 3.11 is 9/08/93 and the files are marked with
+the time 3:11 A.M.
+
+RESOLUTION
+==========
+
+To work around this problem, contact STAC Electronics to obtain the 62STAC.EXE
+file, or follow the procedure below. You can order the 62STAC.EXE file from STAC
+Electronics, or you can download it from the STAC Electronics bulletin board
+service at (619) 431-7405.
+
+If you are going to obtain the 62STAC.EXE file, use your Uninstall disk to
+uninstall MS-DOS 6.2, run 62STAC.EXE, and then reinstall MS-DOS 6.2. 62STAC.EXE
+temporarily updates the Stacker driver in memory, not on disk, so you will need
+to run MS-DOS 6.2 setup immediately after running the patch.
+
+To replace the MS-DOS 6.2 DBLSPACE.BIN file with the Stacker version of
+DBLSPACE.BIN:
+
+1. Use the DELTREE command to delete the DBLSPACE.BIN file in the root of your C
+  drive. For example, type "deltree c:\dblspace.bin" (without the quotation
+  marks) at the MS-DOS command prompt and then press ENTER.
+
+2. Put your MS-DOS 6.2 Uninstall disk in drive A and copy DBLSPBIN.HST to your C
+  drive (renaming it DBLSPACE.BIN in the process). For example, type "copy
+  a:\dblspbin.hst c:\dblspace.bin" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+3. Insert a blank floppy disk in drive A and use the SYS command to transfer
+  your MS-DOS system files and the Stacker version of DBLSPACE.BIN to the
+  floppy disk. For example, type "sys c: a:" (without the quotation marks) at
+  the MS-DOS command prompt and then press ENTER.
+
+4. Leave the floppy disk in drive A and restart your computer.
+
+5. Delete the copy of COMMAND.COM on the compressed drive using the DELTREE
+  command located on your host drive. For example, if your host drive is H,
+  type "h:\dos\deltree c:\command.com" (without the quotation marks) at the
+  MS-DOS command prompt and then press ENTER.
+
+6. Copy COMMAND.COM from your host drive to the root of your compressed drive.
+  For example, type "copy h:\command.com c:\" (without the quotation marks)at
+  the MS-DOS command prompt and then press ENTER.
+
+7. Move your MS-DOS 6.2 DOS directory from your host drive to your compressed
+  drive using the MOVE command. For example, if your host drive is H, type
+  "move h:\dos\*.* c:\dos" (without the quotation marks) at the MS-DOS command
+  prompt and then press ENTER. When you are given the "Overwrite
+  &lt;filename&gt; (Yes/No/All)?" prompt, press A and then press ENTER.
+
+8. Remove the floppy disk from drive A and restart your computer.
+
+9. Use DELTREE to delete the MS-DOS 6.0 versions of IO.SYS and MSDOS.SYS. For
+  example, type the following commands at the MS-DOS command prompt, pressing
+  ENTER after each line:
+
+  " deltree /y c:\io.sys
+  deltree /y c:\msdos.sys " (without the quotation marks)
+
+10. Use the ATTRIB command to clear the IO.SYS and MSDOS.SYS file attributes on
+  the host drive. For example, type the following commands at the MS-DOS
+  command prompt, pressing ENTER after each line:
+
+  " attrib -r -s -h h:\io.sys
+  attrib -r -s -h h:\msdos.sys " (without the quotation marks)
+
+11. Copy the MS-DOS 6.2 versions of IO.SYS and MSDOS.SYS to drive C. For
+  example, type the following commands at the MS-DOS command prompt, pressing
+  ENTER after each line:
+
+  " copy h:\io.sys c:\
+  copy h:\msdos.sys c:\ " (without the quotation marks)
+
+12. Use the ATTRIB command to reset the IO.SYS and MSDOS.SYS file attributes on
+  both drives. For example, type the following commands at the MS-DOS command
+  prompt, pressing ENTER after each line:
+
+  " attrib +r +s +h c:\io.sys
+  attrib +r +s +h c:\msdos.sys
+  attrib +r +s +h h:\io.sys
+  attrib +r +s +h h:\msdos.sys " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

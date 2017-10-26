@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188819/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188819/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188819/","publisher":null,"image":null,"headline":"Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188819-xfor-ovvm-connector-returns-different-ndrs-to-profs-sender">Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188819
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Messages sent from PROFS to unknown PROFS addresses in Exchange using the
+LinkAge version 3.2 Connector or the Microsoft Exchange Connector for IBM OV/VM
+version 5.5 may result in different types of non-delivery reports (NDRs) being
+returned.
+
++-----------------+
+|      PROFS      |
+|                 |
+|   NODE3(USER3)  |
++--------+--------+
+        |
+        | OV/VM Connector
+        |
++--------+--------+                +-----------------+
+| Exchange Site 1 | X.400 Connector| Exchange Site 2 |
+|                 +----------------+                 |
+|   NODE1(USER1)  |  with Dir Rep  |   NODE2(USER2)  |
++-----------------+                +-----------------+
+
+Address Space on OV/VM Connector in Site 1:
+
+        PROFS * cost=1
+
+Address Space on X.400 Connector in Site 1:
+
+        PROFS NODE2(*) cost=1
+
+NOTE: This particular Address Space is not required to reproduce the NDR
+behavior.
+
+Address Space on X.400 Connector in Site 2:
+
+        PROFS * cost=1
+
+1. Messages sent from a PROFS user to an unknown PROFS address in Site 1 result
+  in an NDR similar to the following:
+
+  BADUSER unknown at NODE1; &lt;date and time&gt; not received.
+
+  The conditions leading to the production of this NDR are explained in the
+  CAUSE section (1), below.
+
+2. Messages sent from a PROFS user to an unknown PROFS address in Site 2 result
+  in a different NDR message:
+
+  NODE2 cannot deliver &lt;date and time&gt; to BADUSER.
+
+  This NDR does not indicate that the PROFS address was unknown. The conditions
+  leading to the production of this NDR are explained in the CAUSE section (2),
+  below.
+
+CAUSE
+=====
+
+This behavior is by design. The reason for the differences in the NDR messages
+is that the delivery error is detected at different points in the mail network.
+Depending upon the location in the network, where the problem is detected, and
+the circumstances under which it is detected, the NDR is created. It is not
+possible or desirable to guarantee the same error message for different "bad
+recipients."
+
+A fundamental function of the connectors (PROFS, SNADS, and Notes) is to allow
+the use of Exchange as a messaging backbone. As part of this feature, it is not
+required that every address in every attached messaging system be registered in
+the Exchange directory adjacent to the connector. In fact, Exchange
+administrators may decide, for various reasons, not to enable directory
+synchronization (dirsync) between Exchange and PROFS. However, even if dirsync
+is enabled, directory replication latency may cause a valid address not to be
+immediately present in a directory.
+
+1. When a PROFS user sends an address to NODE1 (BADUSER) in the topology shown
+  above, the connector determines that NODE1 is the PROFS proxy node name by
+  reading the site addressing. The connector categorically knows that all proxy
+  addresses with the node name of NODE1 must be registered in Site 1's Exchange
+  directory. When the address lookup fails, the connector knows the user does
+  not exist and immediately generates the appropriate error code for an unknown
+  address NDR.
+
+  When a PROFS user sends an address to NODE2(BADUSER), the connector knows that
+  NODE2 is not the PROFS proxy node name for the immediate site. Because
+  NODE2(BADUSER) cannot be found in Site 1's directory, the message is
+  submitted to the Exchange backbone for routing.
+
+2. If there is a specific NODE2(*) PROFS Address Space defined on the X.400
+  Connector leading to Site 2, the message transfer agent (MTA) routes the
+  message to the other Site, where the receiving MTA attempts to resolve the
+  address. If the address does not exist in Site 2's directory, the MTA once
+  again routes the message, based on Site 2's GWART. Site 2 has a PROFS *
+  Address Space defined on the X.400 Connector, which causes the MTA to route
+  the message back to Site 1. The MTA in Site 1 eventually routes the message
+  back to the OV/VM Connector based on the PROFS * Address Space defined on the
+  OV/VM Connector. The OV/VM Connector detects that the message is looping and
+  generates the error code that causes the following NDR to be generated:
+
+  NODE2 cannot deliver &lt;date and time&gt; to BADUSER.
+
+  The looping message condition is detected even more quickly when the PROFS *
+  Address Space defined on the OV/VM Connector is the only PROFS Address Space
+  defined in Site 1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

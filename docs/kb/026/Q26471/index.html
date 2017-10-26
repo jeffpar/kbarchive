@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q26471: Workarounds for CLOSE of COM(n) Disconnecting Phone Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q26471: Workarounds for CLOSE of COM(n) Disconnecting Phone Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/026/Q26471/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/026/Q26471/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/026/Q26471/","publisher":null,"image":null,"headline":"Q26471: Workarounds for CLOSE of COM(n) Disconnecting Phone Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q26471-workarounds-for-close-of-comn-disconnecting-phone-connection">Q26471: Workarounds for CLOSE of COM(n) Disconnecting Phone Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q26471
+Product(s): See article
+Version(s): 4.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 16-APR-1990
+
+QuickBASIC disconnects the phone connection when a program CLOSEs the
+communications port or when the program ENDs. This happens because the
+DTR line is dropped on a CLOSE or END statement. Below are several
+possible workarounds that might help you to overcome this design
+limitation of Microsoft QuickBASIC.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler Versions 6.00 and 6.00b for
+MS-DOS, and to Microsoft BASIC Professional Development System (PDS)
+Version 7.00 for MS-DOS.
+
+The first workaround is to attempt to reset the DTR line immediately
+after the CLOSE statement. To do this, the correct OUT instruction is
+sent to the modem control register to set DTR (pin 20) high. Consider
+the following example:
+
+     OPEN "COM(n): &lt;parameters&gt;" FOR &lt;mode&gt; AS #n
+     ' The rest of your program code goes here.
+     CLOSE #n
+     OUT &amp;H3FC,3
+     END
+
+However, this example may not work because there is a small period of
+time between the CLOSE and the OUT statements. The modem may
+disconnect the phone connection even in this small time period.
+
+Some "smart" modems allow you to adjust the time-out period for the
+DTR line. If you set this time-out period higher, the modem will wait
+longer before disconnecting the phone connection. This gives you just
+enough time to execute the OUT instruction to set the DTR line higher.
+The following is an example:
+
+     OPEN "COM(n): &lt;parameters&gt;" FOR &lt;mode&gt; AS #n
+     PRINT #n, &lt;control string&gt;
+     ' The rest of your program code goes here.
+     CLOSE #n
+     OUT &amp;H3FC,3
+     END
+
+In the above example, &lt;control string&gt; is a series of control codes
+sent to the modem to set the DTR time-out period higher. Consult the
+manual for your modem to determine the correct control code string.
+The following is an example of the above code modified to work with a
+Hayes Smartmodem:
+
+     OPEN "COM(n): &lt;parameters&gt;" FOR OUTPUT AS #1
+     PRINT #n, "AT S25=100" 'Sets the DTR time out to 100/100 seconds
+     ' or 1 second. Note that a carriage return is sent after this
+     ' PRINT statement. If you OPEN for BINARY, you have to send a
+     ' CHR$(13) also, which tells the modem you are at the end of the
+     ' initial control string.
+     CLOSE #1
+     OUT &amp;H3FC,3
+     END
+
+In some cases, a complaint about losing DTR may really be about losing
+RTS. If this is the case, some modems allow you to ignore RTS, as
+follows:
+
+     OPEN "COM(n): &lt;parameters&gt;" FOR &lt;mode&gt; AS #n
+     PRINT #n, &lt;control string&gt;
+     ' The rest of your program code goes here.
+     CLOSE #n
+     END
+
+In this case, you would send a control string to the smart modem to
+tell it to ignore the RTS line.
+
+Note: If you do not have a smart modem and the first workaround does
+not correct the problem for you, it will be very difficult to work
+around this limitation of QuickBASIC. The best method is obtain a
+smart modem and attempt the second or third workarounds.
+
+The above examples use software instructions to set the DTR time-out
+period or to ignore the RTS line. However, some modems also allow
+these adjustments to be made with DIP switches.
+
+Notes on CHAINing and RUNning
+-----------------------------
+
+Whenever you compile standalone programs (/O), the CLOSE is performed
+implicitly when you do a RUN or a CHAIN. If your programs use
+BRUNxxx.EXE and the COM port is not CLOSEd, DTR and RTS should stay
+high. Compiling with BCOMxxx.LIB or closing the COM port always drops
+DTR.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

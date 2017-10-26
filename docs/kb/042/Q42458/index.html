@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42458/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42458/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42458/","publisher":null,"image":null,"headline":"Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42458-prb-fatalexit-0x0001-possible-if-wm_ctlcolor-used-improperly">Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42458
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbDlg kbSDKPlatform kbGrpDSUser
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+An application can change the colors of a dialog box by creating a brush of the
+desired color and processing the WM_CTLCOLOR message to return a handle to the
+brush. If the brush is not a stock object, the application should create the
+brush before the dialog box is displayed and store its handle in a global or
+static variable. Do not use the following code in a dialog box procedure:
+
+     case WM_CTLCOLOR:  // Create green edit fields
+        if (HIWORD(lParam) == CTLCOLOR_EDIT)
+           return CreateSolidBrush(RGB(0, 255, 0));
+        break;
+
+Windows sends a WM_CTLCOLOR message to the dialog box procedure each time any
+changes are made to the dialog box (such as when the user presses a button or
+moves the focus to a new control). In the code above, each time the application
+processes a WM_CTLCOLOR message for an edit control, the application creates a
+new brush which is stored in the GDI data segment. If the GDI data segment fills
+completely, Windows generates a FatalExit 0x0001 (insufficient memory for
+allocation) error for each subsequent allocation.
+
+MORE INFORMATION
+================
+
+To avoid this error, modify the application to call the CreateSolidBrush
+function once, either outside the application's message loop or during the
+processing of the WM_CREATE message. Store the returned brush handle in a global
+or static variable. An advantage of this method is that the brush can be used in
+any part of the application without consuming any additional system resources.
+
+The following code provides a skeleton for the WinMain procedure and for the
+dialog procedure to implement this method:
+
+     // WinMain
+     HBRUSH  hBrushGreen; // Global variable
+
+     WinMain (...)
+     {
+        // Register window class and create window
+
+        hBrushGreen = CreateSolidBrush(RGB(0, 255, 0));
+
+        while (GetMessage(...))
+          {
+          TranslateMessage(...);
+          DispatchMessage(...);
+          }
+
+        DeleteObject(hBrushGreen);
+        return msg.wparam;
+     }
+
+     // Dialog box procedure
+        case WM_CTLCOLOR: // Green edit fields
+           if (HIWORD(lParam) == CTLCOLOR_EDIT)
+              return hBrushGreen;
+           break;
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly kbDlg kbSDKPlatform kbGrpDSUser 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

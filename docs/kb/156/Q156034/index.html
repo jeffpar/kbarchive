@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156034/","publisher":null,"image":null,"headline":"Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156034-howto-retrieve-information-from-sql-server-on-rows-affected">Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156034
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SQL Server and other Server data sources often have statistical
+information regarding how many rows were affected by a particular SQL statement
+when executed. Visual FoxPro does not retrieve this information from the server
+for you. This article discusses how you can integrate the use of Stored
+Procedures on the server to retrieve this information.
+
+MORE INFORMATION
+================
+
+When you are working with data on a server, you need to know how many rows in
+the table were affected by a certain SQL command, similar to the information
+provided by the _TALLY variable in Visual FoxPro.
+
+This information is not available to you directly within Visual FoxPro, but there
+are ways to obtain that information, if necessary.
+
+Visual FoxPro 5.0 adds support for output parameters from stored procedures. This
+means that you can call a procedure located on the SQL Server and that procedure
+will then return information to the client application.
+
+The following example shows two pieces of code. The first is a SQL Server stored
+procedure that takes two parameters, an order id and order amount. It then
+returns the number of rows affected. The second program is FoxPro code showing
+how to call the procedure and retrieve the return value from the server code:
+
+     ** SQL Server Code
+     CREATE PROCEDURE upd_morders @cust_id int, @order_amt int, @retcount int
+  OUTPUT AS
+        UPDATE morders SET order_amt = @order_amt
+           WHERE cust_id = @cust_id
+     SELECT @retcount = @@ROWCOUNT
+     GO
+
+     ** FoxPro Code
+     mvar = 0
+     retVal = SQLExec(1,'{CALL upd_morders (1, 22.50, ?@mvar)}')
+     ? mvar
+
+The SQL Server procedure takes two parameters, the customer id and the order
+amount. It then updates a table on the server and returns the value @@ROWCOUNT,
+which is a system-defined variable in Microsoft SQL Server containing the number
+of records modified by the last SQL Statement.
+
+The FoxPro code shows how to pass a FoxPro variable to the stored procedure and
+have it filled in by the stored procedure.
+
+REFERENCES
+==========
+
+More information can be found on SQL Server stored procedures in the Microsoft
+SQL Server manuals. Information about Output parameters in Visual FoxPro can be
+found in the Visual FoxPro documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

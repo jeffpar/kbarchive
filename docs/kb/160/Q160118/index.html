@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160118: XADM: How to Print Out Members of a DL from Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160118: XADM: How to Print Out Members of a DL from Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160118/","publisher":null,"image":null,"headline":"Q160118: XADM: How to Print Out Members of a DL from Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160118-xadm-how-to-print-out-members-of-a-dl-from-exchange">Q160118: XADM: How to Print Out Members of a DL from Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160118
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.5
+Operating System(s): 
+Keyword(s): kbprint
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows you how to print out the members of a distribution list (DL)
+from Microsoft Exchange Server.
+
+MORE INFORMATION
+================
+
+To print out the members of a DL:
+
+1. In the Microsoft Exchange Server Administrator program, go to the Recipients
+  container where the distribution list resides.
+
+2. View the properties of the distribution list by either double-clicking on the
+  list or clicking the list and clicking Properties on the File menu.
+
+3. On the General tab of the property page, click Modify.
+
+4. Select all of the list's users to highlight them, and press CTRL-C to copy
+  the members to the clipboard.
+
+5. Open a Notepad document and press CTRL-V to paste the members. Save the
+  document as c:\Dlist.txt
+
+6. Open the document in Microsoft Excel by clicking Open on the File menu, and
+  point to the c:\Dlist.txt file.
+
+7. In the Text Import Wizard, click Delimited, then click Next.
+
+8. From the Delimiters box, click Semicolon only, and click Finish.
+
+  The contents of the Dlist.txt file are now in Excel. The following steps will
+  line up names in a single column and print the list.
+
+9. In Microsoft Excel, select the entire list of names to highlight it, and
+  press CTRL- C.
+
+10. Open a blank Excel document, highlight cell A-1, and on the Edit menu, click
+  Paste Special.
+
+11. Click Transpose, then click OK.
+
+12. On the File menu, click Print to print the list.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240015: FIX: getline Template Function Reads Extra Character | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240015: FIX: getline Template Function Reads Extra Character" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240015/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240015/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240015/","publisher":null,"image":null,"headline":"Q240015: FIX: getline Template Function Reads Extra Character","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240015-fix-getline-template-function-reads-extra-character">Q240015: FIX: getline Template Function Reads Extra Character</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240015
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbtemplate kbLangCPP kbSTL kbVC kbVC600 kbVC600bug kbNoUpdate
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Standard C++ Library template getline function reads an extra character
+after encountering the delimiter. Please refer to the sample program in the More
+Information section for details.
+
+RESOLUTION
+==========
+
+Modify the getline member function, which can be found in the following system
+header file string, as follows:
+
+  	else if (_Tr::eq((_E)_C, _D))
+                  {_Chg = true;
+                //  _I.rdbuf()-&gt;snextc(); /* Remove this line and add the line below.*/ 
+  		  _I.rdbuf()-&gt;sbumpc();
+                  break; }
+
+NOTE: Because the resolution involves modifying a system header file, extreme
+care should be taken to ensure that nothing else is changed in the header file.
+Microsoft is not responsible for any problems resulting from unwanted changes to
+the system header files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following sample program demonstrates the bug:
+
+  //test.cpp
+  //Compiler options : /GX
+  #include &lt;string&gt;
+  #include &lt;iostream&gt;
+  int main () {
+  	std::string s,s2;
+  	std::getline(std::cin,s);
+  	std::getline(std::cin,s2);
+  	std::cout &lt;&lt; s &lt;&lt;'\t'&lt;&lt; s2 &lt;&lt; std::endl;
+  	return 0;
+  }
+
+  Actual Results:
+  Hello&lt;Enter Key&gt;
+  World&lt;Enter Key&gt;
+  &lt;Enter Key&gt;	
+  Hello   World
+
+  Expected Results:
+  Hello&lt;Enter Key&gt;
+  World&lt;Enter Key&gt;
+  Hello   World
+
+Additional query words: STL
+
+======================================================================
+Keywords          : kbtemplate kbLangCPP kbSTL kbVC kbVC600 kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

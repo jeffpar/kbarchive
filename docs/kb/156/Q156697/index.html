@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156697: How to Update Permissions for User Profiles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156697: How to Update Permissions for User Profiles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156697/","publisher":null,"image":null,"headline":"Q156697: How to Update Permissions for User Profiles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156697-how-to-update-permissions-for-user-profiles">Q156697: How to Update Permissions for User Profiles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156697
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The User Profiles tab in Control Panel System displays local, roaming, and
+mandatory user profiles in the %Systemroot%\Profiles, directory; the tab cannot
+be modified to show profiles for other paths.
+
+This is a limitation in Windows NT 4.0 and will be addressed in future versions
+of Windows NT.
+
+MORE INFORMATION
+================
+
+This limitation may cause problems for administrators who store server- based
+profiles in alternate locations and later want to either change the profile type
+(local to roaming or vice-versa) or modify the list of users and groups allowed
+to use existing mandatory profiles.
+
+Several methods (listed below) are available to change permissions for mandatory
+profiles.
+
+The information below assumes that computers running Windows NT Server or
+Workstation 4.0 have machine accounts in Windows NT domains, that the user
+making the change has administrator access in both the domain and the local
+workstation, and that server-based roaming or mandatory profiles are defined in
+User Manager for Domains.
+
+Method I
+--------
+
+1. Log on with the reference account used to create the mandatory profiles and
+  click Copy To on the User Profiles tab of Control Panel System.
+
+2. Redefine the users and groups permitted to use the mandatory profile as
+  required.
+
+3. Recopy the profile to the server-based profile path.
+
+Method II
+---------
+
+1. Rename the server-based mandatory profile Ntuser.man file to Ntuser.dat.
+
+2. Log on using a domain account whose profile properties in User Manager for
+  Domains points to the renamed server-based profile (that is,
+  \\Servername\Sharename\%Username%).
+
+3. On the User Profiles tab of Control Panel System, click Change Type to make
+  the profile local.
+
+4. Make any desired changes to the profile.
+
+5. On the User Profiles tab of Control Panel System, click Copy To to copy the
+  profile to the server-based location.
+
+You can modify domain user and group permissions by clicking Change in the Copy
+To dialog box before copying the profile.
+
+Method III
+----------
+
+NOTE: This method involves editing the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. While logged on as an administrator of the computer used to store the user
+  profiles, start Regedt32.exe and click the root level of
+  HKEY_USERS
+.
+
+2. On the Registry menu, click Load Hive and import the server-based Ntuser.man
+  file (\\Servername\Sharename\Ntuser.man).
+
+3. When prompted for a key name, type "mandatory" (without the quotation marks)
+  or the text string of your choice.
+
+4. Place the cursor at the root of newly imported hive.
+
+5. On the Security menu, click Permissions.
+
+6. Add or remove domain users or groups as required.
+
+7. On the Registry menu, click Unload Hive.
+
+The same information can be applied to local or roaming profiles, but these tend
+to be user-specific rather than shared by multiple users (as is common for
+mandatory profiles).
+
+
+Additional query words: hardcoded hard coded designed
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

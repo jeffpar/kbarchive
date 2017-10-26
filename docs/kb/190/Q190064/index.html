@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190064/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190064/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190064/","publisher":null,"image":null,"headline":"Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190064-howto-build-select-statements-based-on-user-column-privileges">Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190064
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When writing SELECT statements that will be executed by users with varying
+levels of column privileges on a SQL Server table, the SELECT statements may not
+work for all users. For instance, if a user executes a "SELECT * FROM..."
+statement and does not have privileges on all columns, the statement will return
+an error and no data.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     *-- Code begins here.
+     *-- First, connect as administrator to set the column privileges for
+     *-- user "mike".
+     *-- This is strictly for demonstration purposes. Production code would
+     *-- likely assume that the user login exists and that privileges are
+     *-- already set.
+     *--
+     *-- Change the SQLCONNECT function as needed to connect to
+     *-- the database.
+     hConnect = SQLCONNECT("MyDSN", "sa", "password")
+     IF hConnect &lt;= 0
+        =MESSAGEBOX("Connection failed with return code" + STR(hConnect),;
+          0, "Connection Error")
+        RETURN
+     ENDIF
+
+     *-- Grant privileges on three columns to user "mike."
+     *-- Code assumes that user "mike" already exists in the pubs database.
+     cSQLCommand="GRANT SELECT ON pubs.dbo.authors " + ;
+        "(au_id, au_lname, au_fname) TO mike"
+     gnExec = SQLEXEC(hConnect, cSQLCommand)
+
+     *-- Disconnect and reconnect as a less privileged user, "mike".
+     =SQLDISCONNECT(hConnect)
+
+     *-- Change the SQLCONNECT function as needed to connect to
+     *-- the database.
+     hConnect = SQLCONNECT("MyDSN", "mike", "password")
+     IF hConnect &lt;= 0
+        =MESSAGEBOX("Connection failed with return code" + STR(hConnect),;
+          0, "Connection Error")
+        RETURN
+     ENDIF
+
+     *-- Select the pubs database.
+     gnExec = SQLEXEC(hConnect, 'use pubs')
+
+     *-- Get the column privileges for the table.
+     gnExec = SQLEXEC(hConnect, 'EXEC sp_column_privileges ;
+       "authors"', 'privileges')
+     SELECT privileges
+
+     *-- Narrow it down to the user we want.
+     lsUser = UPPER('mike')
+     SELECT Column_Name FROM privileges ;
+        WHERE UPPER(Grantee) = lsUser AND Privilege = 'SELECT';
+        INTO CURSOR MyPrivileges
+
+     *-- Step through the table and build our SELECT statement.
+     SELECT MyPrivileges
+     GOTO TOP
+     IF NOT EOF() &amp;&amp; Assuming user actually has privileges on the table.
+               &amp;&amp; If the user has no privileges, the table is empty.
+        lsColumns = ""
+        SCAN
+           lsColumns = lsColumns + ALLTRIM(Column_Name) + ", "
+        ENDSCAN
+
+        *-- Trim off the last comma and space.
+        lsColumns = SUBSTR(lsColumns, 1, LEN(lsColumns)-2)
+     ENDIF
+
+     *-- Now issue the select statement.
+     gnExec = SQLEXEC(hConnect, 'SELECT ' + lsColumns + ' FROM authors')
+     BROWSE
+     CLOSE DATA
+     SQLDISCONNECT(hConnect)
+     *-- Code ends here.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Mike Stewart, Microsoft Corporation
+
+
+Additional query words: kbDSupport kbDSE kbSQL kbVFp300 kbVFp500 kbVFp500a kbVFp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

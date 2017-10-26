@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155783: FIX: Share Dialog Box Appears Unexpectedly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155783: FIX: Share Dialog Box Appears Unexpectedly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155783/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155783/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155783/","publisher":null,"image":null,"headline":"Q155783: FIX: Share Dialog Box Appears Unexpectedly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155783-fix-share-dialog-box-appears-unexpectedly">Q155783: FIX: Share Dialog Box Appears Unexpectedly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155783
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500fix
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to expand a project tree in Visual SourceSafe's Explorer window,
+the Share dialog box may unexpectedly appear. This problem occurs under the
+following circumstances:
+
+- You are using Microsoft Windows 95 Operating System.
+
+- The Project you are trying to expand contains one or more subprojects and at
+  least 209 files.
+
+- The Visual SourceSafe Explorer was last closed with one of the 209 files
+  mentioned above having the focus.
+
+- The Visual SourceSafe Explorer was last closed with the project containing
+  the 209 files mentioned above in its open but unexpanded view. For example,
+  its glyph is an open folder with a '+' sign to its left.
+
+WORKAROUND
+==========
+
+Click the Cancel Command button to close the unwanted Share dialog box.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual SourceSafe
+5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Microsoft Visual SourceSafe versions 4.0 or 4.0a running on
+  Windows 95.
+
+2. Using the Explorer window, create a project under the root project ($/)
+  called "SOURCESAFEROCKS." Add 209 files and one additional subproject to the
+  project.
+
+3. Open the project in its unexpanded view by clicking its glyph so that the
+  glyph is an open folder with a plus sign next to it. The right partition
+  should now display the 209 files and subproject. Highlight any file in the
+  right partition by clicking it once.
+
+4. Close and then restart Visual SourceSafe. When the Explorer window reopens,
+  click the glyph described in step 3. Note that the Share dialog box appears.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

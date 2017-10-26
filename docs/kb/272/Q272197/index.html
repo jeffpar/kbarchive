@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272197: XCCC: How to Restrict OWA Address View Searches | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272197: XCCC: How to Restrict OWA Address View Searches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272197/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272197/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272197/","publisher":null,"image":null,"headline":"Q272197: XCCC: How to Restrict OWA Address View Searches","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272197-xccc-how-to-restrict--owa-address-view-searches">Q272197: XCCC: How to Restrict  OWA Address View Searches</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272197
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to restrict Exchange 2000 Outlook Web Access (OWA)
+address view searches.
+
+MORE INFORMATION
+================
+
+WARNING: If you use the ADSI Edit snap-in, the LDP utility, or any other LDAP
+version 3 client, and you incorrectly modify the attributes of Active Directory
+objects, you can cause serious problems. These problems may require you to
+reinstall Microsoft Windows 2000 Server, Microsoft Exchange 2000 Server, or
+both. Microsoft cannot guarantee that problems that occur if you incorrectly
+modify Active Directory object attributes can be solved. Modify these attributes
+at your own risk.
+
+If you access e-mail using Exchange 2000 OWA, you do not have the user rights for
+Active Directory that are applied to folder queries. This setting effectively
+enables you to see all users in the Active Directory directory service
+regardless of the Access Control Lists (ACLs) that have been assigned.
+
+In an Exchange 2000 application service provider (ASP) environment, if you are an
+administrator, you can restrict users from viewing the address lists to their
+own organizational unit, but not the entire global address list. Use the
+msExchQueryBaseDN attribute on each user that uses Exchange 2000 OWA to control
+the scope of searches that OWA performs. This attribute is not exposed in
+Exchange Server Microsoft Management Console (MMC). To configure this attribute,
+use Adsiedit.exe, which is available on the Windows 2000 CD-ROM. To install
+Adsiedit.exe:
+
+1. Extract Adsiedit.dll from the Support.cab file in the Support\Tools folder on
+  the Windows 2000 Server CD-ROM.
+
+2. Copy this file to the &lt;Winnt&gt;\System32 folder.
+
+3. At a command prompt, type "regsvr32 adsiedit.dll" (without the quotation
+  marks).
+
+4. Add the ADSIEdit snap-in to MMC.
+
+To restrict OWA address view searches:
+
+1. Start the ADSIEdit snap-in, and then click Connect To on the Action menu.
+
+2. Click Domain NC.
+
+3. Click a computer or domain to connect to, or click OK to use the domain or
+  server that you are logged into, and then click OK to accept these settings
+
+  In this example, use ASPHosting.com.
+
+4. Click "DC=ASPHosting, dc=COM".
+
+5. Locate and click the Customer1.com organizational unit, and then right-click
+  the user to which you want to set viewing restrictions.
+
+6. Click msExchQueryBaseDN in the "Select a property to view" box.
+
+7. Copy the LDAP address that represents that user's organizational unit in the
+  "Edit attribute" box. For example, ou=customer1, DC=ASPhosting, dc=COM.
+
+8. Click Set, and then click OK.
+
+Additional query words: ad name resolution
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000Serv
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

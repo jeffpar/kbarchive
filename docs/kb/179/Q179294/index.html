@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179294: FIX: Record In Use Message Editing in Browse and Using Find | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179294: FIX: Record In Use Message Editing in Browse and Using Find" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179294/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179294/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179294/","publisher":null,"image":null,"headline":"Q179294: FIX: Record In Use Message Editing in Browse and Using Find","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179294-fix-record-in-use-message-editing-in-browse-and-using-find">Q179294: FIX: Record In Use Message Editing in Browse and Using Find</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179294
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp kbvfp600fix
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you Browse a table and use the Find dialog box to locate records for
+editing, the following error message appears when you are editing records:
+
+  Record is in use by another user.
+
+CAUSE
+=====
+
+This behavior occurs under the three following conditions:
+
+- A table has been opened for browsing with buffering enabled.
+
+  -or-
+
+- The Find dialog box (CTRL-F) is used to locate records for editing.
+
+  -or-
+
+- Successive records are found and then edited.
+
+RESOLUTION
+==========
+
+Here are three workarounds for this behavior:
+
+- Move the record pointer off an edited record before finding the next record.
+
+  -or-
+
+- Use the default buffering mode.
+
+  -or-
+
+- Use a SEEK or LOCATE command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+This behavior occurs after buffering has been enabled. After the "Record is in
+use by another user" message appears, subsequent attempts to edit the record
+continue to fail regardless of the buffering mode until the table is closed and
+reopened. This behavior does not occur if the record pointer is moved off the
+edited record (via the keyboard or mouse) before finding the next record.
+Likewise, a record where the error has occurred can be successfully edited if
+you move the record pointer off and back onto the record.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the FoxPro Command window, type the following commands:
+
+        USE HOME()+"\samples\data\customer"
+        SET MULTILOCKS ON
+        =CURSORSETPROP('BUFFERING',2,'customer')
+        BROWSE
+
+  a. Press CTRL+F to open the Find dialog box.
+
+  b. Enter ANATR, and then click Find Next. Press escape and edit the record.
+
+  c. Press CTRL+F to open the Find dialog box.
+
+  d. Enter ANTON, and then click Find Next. Press escape and edit the record.
+
+     When the second record is edited, the following error message appears:
+
+  Record is in use by another user.
+
+2. Click the OK button and then press the escape key to return to the FoxPro
+  Command window.
+
+3. From the Command window type the following commands:
+
+        =CURSORSETPROP('BUFFERING',1,'customer')
+        BROWSE
+
+  Attempt to edit the record.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp600fix 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

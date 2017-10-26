@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35968: CALL SetUEvent in Assembly Routine to Disable PRINT SCREEN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35968: CALL SetUEvent in Assembly Routine to Disable PRINT SCREEN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35968/","publisher":null,"image":null,"headline":"Q35968: CALL SetUEvent in Assembly Routine to Disable PRINT SCREEN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35968-call-setuevent-in-assembly-routine-to-disable-print-screen">Q35968: CALL SetUEvent in Assembly Routine to Disable PRINT SCREEN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35968
+Product(s): See article
+Version(s): 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 12-JAN-1990
+
+This article provides an example of calling BASIC's SetUEvent routine
+from an assembly-language interrupt routine to disable the screen dump
+performed by the PRINT SCREEN key (found on enhanced IBM keyboards) or
+the SHIFT+PRSCR or SHIFT+PRTSC key (found on earlier, nonenhanced IBM
+PC keyboards).
+
+Special steps must be taken when triggering BASIC's user-defined
+events from assembly-language interrupt routines. Primarily, the
+assembly routine needs to make sure that the DS register points to
+BASIC's default data segment before making the call to SetUEvent.
+Also, the interrupt routine should be disabled before, and re-enabled
+after, a CHAIN or RUN statement. This information applies to Microsoft
+QuickBASIC Versions 4.00b and 4.50, to Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
+PDS Version 7.00 for MS-DOS and MS OS/2.
+
+Note: The SetUEvent routine is not provided in QuickBASIC Version 4.00
+or earlier. SetUEvent was introduced in QuickBASIC Version 4.00b and
+the BASIC compiler Version 6.00 and later.
+
+BASIC user-defined interrupts are triggered by a call to SetUEvent.
+This routine can be called from an external assembly routine, usually
+an interrupt handler. However, in QuickBASIC 4.00b, in the BASIC
+compiler 6.00 and 6.00b, and in BASIC PDS 7.00, SetUEvent assumes that
+DS is pointing to BASIC's default data segment; if it isn't, the call
+to SetUEvent will not trigger the BASIC interrupt routine. To ensure
+that DS is pointing to the correct place, save the value of DS in a
+location accessible to the interrupt routine when installing it. Then,
+in the interrupt routine, place that value in DS directly before
+making the call to SetUEvent. In QuickBASIC Version 4.50, you don't
+have to set DS equal to the BASIC Data Segment.
+
+When CHAINing or RUNning other BASIC programs that use the same
+interrupt routine, the first BASIC program must deinstall the
+interrupt handler, CHAIN (or RUN) the second program, and reinstall
+the handler again. The sample program below demonstrates how to
+install, deinstall, and properly CALL SetUEvent in an interrupt
+handler situation.
+
+The following is a BASIC code example:
+
+DECLARE SUB PrScr ()
+DECLARE SUB DeInst ()
+ON UEVENT GOSUB handler
+UEVENT ON
+CALL PrScr
+PRINT "Screen Dump interrupt has been disabled."
+PRINT "Press PRINT SCREEN (or SHIFT+PRTSC) key to trigger event."
+PRINT "Press any other key to end program."
+WHILE i$ = ""
+  i$ = INKEY$
+WEND
+CALL DeInst
+PRINT "Screen Dump interrupt has been re-enabled."
+END
+handler:
+  PRINT "Screen dumps are currently disabled."
+  RETURN
+
+The following is an assembly-language program that redefines the
+interrupt that occurs when you press the PRINT SCREEN (or SHIFT+PRTSC)
+key:
+
+; PRSCR.ASM
+cr      equ     0dh
+lf      equ     0ah
+.model  medium
+.code
+        extrn   SetUEvent:proc
+        public  prscr
+
+tsr_active      db      0
+old_seg         dw      ?
+old_off         dw      ?
+bds             dw      ?
+
+handler proc    far
+      sti
+      push      ax
+      push      bx
+      push      cx
+      push      dx
+      push      si
+      push      di
+      push      bp
+      push      ds
+      push      es                  ;save regs
+        cmp     cs:tsr_active, byte ptr 0  ;are we already up?
+        je      do_int                  ;no, go display message
+        jmp     ex_int                  ;yes, get out!
+
+do_int: mov     cs:tsr_active, byte ptr 1  ;okay, we're up now...
+        mov     ax,bds
+        mov     ds,ax                   ;set DS = BASIC's data segment
+        call    SetUEvent               ;trigger the user event
+        mov     cs:tsr_active, 0        ;re-activate interrupt
+
+ex_int: pop     es
+        pop     ds
+        pop     bp
+        pop     di
+        pop     si
+        pop     dx
+        pop     cx
+        pop     bx
+        pop     ax
+        cli             ; CLI corresponds to STI at Handler beginning.
+        iret
+handler endp
+
+prscr   proc    far
+        push    bp
+        mov     bp, sp
+        push    ds
+        push    es
+        mov     cs:bds,ds               ;put BASIC's DS here
+        mov     ax, 3505h               ;get interrupt vector
+        int     21h                     ;for PrScr
+        mov     cs:old_seg,es
+        mov     cs:old_off,bx           ;save it
+        mov     dx, seg handler
+        mov     ds,dx
+        mov     dx, offset handler      ;reset interrupt 5
+        mov     ax, 2505h               ;to point to handler
+        int     21h
+        pop     es
+        pop     ds
+        pop     bp
+        ret                             ;back to BASIC
+prscr   endp
+
+        public  deinst
+deinst  proc    far                ;to de-install our Prscr interrupt
+        push    bp
+        mov     bp,sp
+        push    ds
+        mov     dx,cs:old_seg
+        mov     ds, dx
+        mov     dx,cs:old_off           ;get old INT 5 vector
+        mov     ax, 2505h
+        int     21h                     ;and restore it
+        pop     ds
+        pop     bp
+        ret
+deinst  endp
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

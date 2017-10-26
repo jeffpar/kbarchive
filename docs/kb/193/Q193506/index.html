@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193506/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193506/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193506/","publisher":null,"image":null,"headline":"Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193506-bug-setdateto-returns-0-rather-than-valid-setting">Q193506: BUG: SET("DATE","TO") Returns "0" Rather Than Valid Setting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193506
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the following command returns a zero (0) rather than a valid DATE
+variable setting (such as AMERICAN):
+
+     SET("DATE","TO")
+
+The zero might be a one or a two, depending on the date setting.
+
+CAUSE
+=====
+
+The SET("DATE") function supports a second argument that reports the date
+ordering. This second argument is documented as the number 1 in the Help file.
+If the SET("DATE") function detects a second argument, it reports the date
+ordering whether this argument is a number, logical, date, character or null
+value. Although using something other than the number 1 as the second argument
+does not cause an error, it should be avoided. Future changes to Visual FoxPro
+could cause the SET("DATE",&lt;not 1&gt;) syntax to create an error.
+
+RESOLUTION
+==========
+
+Rather than using the command SET("DATE","TO"), use the command SET("DATE"). If
+date ordering is desired, use the SET("DATE",1) syntax.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Use the following code in the Visual FoxPro Command window to explore the values
+returned by the SET("DATE") function when it is given a second argument:
+
+     SET DATE TO "British"
+     ? SET("DATE")
+     ? SET("DATE",1)   &amp;&amp; British dates are ordered DMY, this returns 1.
+     ? SET("DATE","Hello")
+     ? SET("DATE",.NULL.)
+     ? SET("DATE",.F.)
+     ? SET("DATE",{05/05/05})
+     ? SET DATE TO "YMD"
+     ? SET("DATE","TO")
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code from the Visual FoxPro Command window:
+
+     SET DATE TO "American"
+     ? SET("DATE","TO")
+     ? SET("DATE")
+
+Notice the difference in what each returns.
+
+Additional query words: kbXBase kbVFp500abug kbVFp600bug
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

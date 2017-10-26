@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254493/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254493/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254493/","publisher":null,"image":null,"headline":"Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254493-shortcutexe-does-not-accept-pathnames-in-command-line">Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254493
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+- MSPRESS Microsoft Windows NT Workstation 4.0 Resource Kit ISBN 1-57231-343-9 
+- MSPRESS Microsoft Windows 95 Resource Kit ISBN 1-55615-678-2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the command line to direct SHORTCUT.EXE to a .LNK file within the
+directory structure, such as the following command from the command prompt:
+
+SHORTCUT -S C:\DIR1\DIR2\SHCUT.LNK
+
+SHORTCUT.EXE may return an error message similar to the following:
+
+  Error: Unable to find C:\DIR1\SHCUT.LNK
+
+CAUSE
+=====
+
+SHORTCUT.EXE does not correctly interpret path names when the -S switch is used.
+
+WORKAROUND
+==========
+
+Change to the directory containing the .LNK file before executing SHORTCUT.EXE.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in the books listed at the
+beginning of this article. We are researching this problem and will post new
+information as soon as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Create a valid .LNK file as C:\DIR1\DIR2\SHCUT.LNK.
+
+2. From the C:\ prompt, type SHORTCUT -S C:\DIR1\DIR2\SHCUT.LNK.
+  The following error message will be displayed:
+
+  Error: unable to find C:\DIR1\SHCUT.LNK
+
+3. From the C:\ prompt, type SHORTCUT -S \DIR1\DIR2\SHCUT.LNK.
+  The following error message will be displayed:
+
+  Error: unable to find \DIR1\DIR2\SHCUT.LNK
+
+4. From the C:\ prompt, type CD \DIR1\DIR2.
+
+5. Type SHORTCUT -S SHCUT.LNK. No error will be displayed.
+
+Additional query words: RKBOOK NT40 WIN95 RESKIT TOOLS RESOURCE KIT
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

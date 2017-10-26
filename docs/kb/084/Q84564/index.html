@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q84564: Windows Err Msg: Setup Error #S019. Cannot Create… WIN.COM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q84564: Windows Err Msg: Setup Error #S019. Cannot Create… WIN.COM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/084/Q84564/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/084/Q84564/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/084/Q84564/","publisher":null,"image":null,"headline":"Q84564: Windows Err Msg: Setup Error #S019. Cannot Create… WIN.COM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q84564-windows-err-msg-setup-error-s019-cannot-create-wincom">Q84564: Windows Err Msg: Setup Error #S019. Cannot Create… WIN.COM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q84564
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message while attempting to perform a
+
+  Setup Error #S019
+  Setup cannot create the file WIN.COM, which it needs to set Windows up. Setup
+  cannot continue.
+
+CAUSE
+=====
+
+Either of the following may cause this error:
+
+- You are trying to run Setup from the Windows 3.1 floppy disks by using the /N
+  switch.
+
+  -or-
+
+- You are using Novell NetWare and have not regenerated IPX.COM from the
+  IPX.OBJ file included with Windows 3.1. For more information on regenerating
+  the IPX.COM file, please see section 2.10 of the NETWORKS.WRI file.
+
+
+MORE INFORMATION
+================
+
+Running Setup /N from the Floppy Disks
+--------------------------------------
+
+Setup /N was designed to be run from a network installation of Windows 3.0, 3.0a,
+or 3.1. The above error message will appear when running Windows 3.1 Setup from
+a floppy disk using "Setup /N" (without the quotation marks) or "NETSETUP=TRUE"
+(without the quotation marks) in the [Data] section of the SETUP.INF file.
+NETSETUP=TRUE Setup will automatically perform a network setup.
+
+The Setup /N command must be performed from the Windows 3.1 shared directory on
+the file server, as explained on page 8 of the "Getting Started with Microsoft
+Windows" manual for version 3.1. Page 9 of the "Getting Started with Microsoft
+Windows" manual outlines the procedure to place the Windows files on the file
+server.
+
+Regenerating IPX.COM from IPX.OBJ
+---------------------------------
+
+If you are using Novell NetWare, you must regenerate the IPX.COM file for each
+computer where you intend to run Windows 3.1. Usually, you can do this either
+before or after you run Setup. However, when you are running Setup with the /N
+option (Setup /N), you may need to regenerate IPX.COM before running Setup to
+avoid receiving Setup Error #S019.
+
+For more information on using Novell NetWare software and Windows 3.1, please see
+section 2.10 of the NETWORKS.WRI file.
+
+The Novell products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.10 3.11 Gen ReGen 3rdparty net ware light
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

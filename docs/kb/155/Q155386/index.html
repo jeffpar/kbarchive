@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155386/","publisher":null,"image":null,"headline":"Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155386-fix-c1001-in-compiler-file-msc1cpp-at-line-1089">Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155386
+Product(s): Microsoft C Compiler
+Version(s): 4.2
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC kbVC500fix
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When defining a template function and a nontemplate function of the same name
+such that the nontemplate version is defined within a namespace, you may
+encounter the following error:
+
+  
+
+  test.cpp(28) : fatal error C1001: INTERNAL COMPILER ERROR
+                 (compiler file 'msc1.cpp', line 1089)
+
+RESOLUTION
+==========
+
+There are three ways to work around this problem:
+
+1. Change the name of one of the functions involved.
+
+-or-
+
+2. Move the using directive to local function scope. See the sample code below.
+
+-or-
+
+3. Instead of a using directive, use the scope resolution operator to reference
+  objects in the namespace. See the sample code below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     /* Compile options needed: None
+     */ 
+     template&lt;class T&gt; int test1( T x)
+     {
+         return 1;
+     }
+
+     namespace A{
+
+         int test1(int)
+         {
+             return 1;
+         };
+     }
+
+     int test2()
+     {
+         return test1(1);
+     }
+
+     using namespace A;  // comment out this line for workarounds 2 &amp; 3.
+
+     void main()
+     {
+     //  using namespace A;  // uncomment this line for workaround 2
+         test1(1);
+     //  A::test1(1);        // uncomment this line for workaround 3
+     }
+
+Additional query words: kbVC420bug
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

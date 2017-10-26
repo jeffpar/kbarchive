@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190413: XADM: MAPI Notifications Appear to Be Dropped | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190413: XADM: MAPI Notifications Appear to Be Dropped" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190413/","publisher":null,"image":null,"headline":"Q190413: XADM: MAPI Notifications Appear to Be Dropped","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190413-xadm-mapi-notifications-appear-to-be-dropped">Q190413: XADM: MAPI Notifications Appear to Be Dropped</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190413
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When registering for MAPI notifications on the Microsoft Exchange Public,
+Private, or Personal Store, the Advise OnNotify callback function does not get
+called when you think it should be.
+
+MORE INFORMATION
+================
+
+The reason you are not getting notifications can be due to one of four things:
+
+- You are registered for table notifications, and you forgot to do a
+  SetColumns() on the table.
+
+- A remote procedure call (RPC) call was not forced to the server to start the
+  notifications (use a GetProps() call on the object).
+
+- The message was sent, but you do not have a Windows message loop translating
+  and dispatching the notifications (especially with personal folder file
+  [.pst] notifications).
+
+- The INFORMATION STORE is using Fast Transfer to do the copy/move operation.
+
+  The Information Store uses a copy/move mechanism called fast transfer (also
+  referred to as a "tightly coupled store" in MAPI documentation) when it
+  detects the RPC destinations are not the same. You can see this in the
+  behavior of Advise Sinks during operations that cross store boundaries (such
+  as copying mail from your Inbox to the .pst file). With the public
+  information store, almost all operations of this type use the fast transfer
+  mechanism. This is based on the need for speed across the network (fast
+  transfer is used to minimize RPC traffic, and maximize data throughput by
+  packing certain properties, and omitting batches of properties depending on
+  the operation, the object, and the client).
+
+Background
+----------
+
+MAPI notifications are used by applications to gather data about MAPI events.
+Essentially, the application will create what is called an Advise Sink, and
+register for notifications by calling the Advise() method of the particular MAPI
+interface it is interested in.
+
+
+Several types of MAPI notifications are available:
+
+- Error notification
+
+- Extended notifications
+
+- New Mail notifications
+
+- Object notifications
+
+- Status notifications
+
+- Table notifications
+
+MAPI determines the type of notification to send based on an event mask (a
+bitmask) passed into the advise method of the interface. The following flags can
+be set:
+
+- fnevCriticalError
+
+- fnevExtended
+
+- fnevNewMail
+
+- fnevObjectCopied
+
+- fnevObjectCreated
+
+- fnevObjectDeleted
+
+- fnevObjectModified
+
+- fnevObjectMoved
+
+- fnevSearchComplete
+
+- fnevTableModified
+
+NOTE: Not all flags can be used with every Advise implementation. Check the
+documentation for specific calls.
+
+There are three different methods of building the actual Advise Sink. The first
+is fairly easy. Use a single callback function and create the Advise Sink with
+the Exchange Development Kit (EDK) function HrAllocAdviseSink(). For the
+lpvContext parameter, pass the pointer to the MAPI interface you want
+notifications on (example below).
+
+     STDAPI HrAllocAdviseSink( LPNOTIFCALLBACK lpfnCallback,
+        LPVOID lpvContext,
+        LPMAPIADVISESINK FAR * lppAdviseSink );
+
+The callback function must also be declared as in the following example:
+
+     static SCODE STDAPICALLTYPE ScNotificationHandler(LPVOID lpvContext,
+        ULONG cNotifications,
+        LPNOTIFICATION lpNotifications);
+
+The second method of creating an Advise Sink is to actually inherit from
+IMAPIAdviseSink, and handle the OnNotify member of that class.
+
+The third method is to use Microsoft Foundation Classes' (MFC) OLE interface
+maps. These must be used from within a class inheriting from CCmdTarget. The
+form for these macros looks like the following:
+
+     BEGIN_INTERFACE_PART( AdviseSink, IMAPIAdviseSink )
+        STDMETHOD_( ULONG, OnNotify ) ( ULONG, LPNOTIFICATION )
+     END_INTERFACE_PART( AdviseSink )
+
+Then implement the methods of IMAPIAdviseSink in your CCmdTarget derived class
+(AddRef, Release, QueryInterface, and OnNotify). The following example is of
+QueryInterface:
+
+     STDMETHODIMP_ CAdvise::XAdviseSink::QueryInterface(REFIID riid, void **
+     ppv)
+     {
+        METHOD_PROLOGUE(CAdvise, AdviseSink)
+        return this-&gt;ExternalQueryInterface(riid, &amp;ppv);
+     }
+
+For more in-depth information on OLE interface maps, look in the Platform SDK.
+
+Most MAPI coding difficulties stem from the assumption that all the client code
+needs to know is the Caller section and that each new provider will work in the
+same manner as the old familiar ones. The bottom line with MAPI is to always
+read the documentation for the Implementer as well as the Caller, and to never
+assume it will always work as expected for every message store provider.
+
+As is always the case in MAPI, there are definite caveats when working with the
+Exchange Server public store as opposed to the private store (where global
+notifications do work, for instance).
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

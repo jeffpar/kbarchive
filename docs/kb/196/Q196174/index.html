@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196174/","publisher":null,"image":null,"headline":"Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196174-xadm-how-move-server-wizard-handles-duplicate-e-mail-addresses">Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196174
+Product(s): Microsoft Exchange
+Version(s): WINNT:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Server Move Server Wizard has been designed to resolve
+duplicate e-mail addresses.
+
+For example, suppose there is an account called Administrator in Container A on
+the server to be moved. Another account called Administrator is in Container B
+on the destination server. Both Administrator accounts have the same SMTP
+address. Run the Move Server Wizard to merge the servers together into the same
+site. The wizard does not prompt you that there is a duplicate SMTP address.
+
+The wizard will only check and prompt the wizard administrator for duplicate
+users that have the same Distinguished Name (DN) (that is, /o=orginization
+name/ou=site name/cn=container name/cn=user name). Because the users are in
+different containers, the DN is different. Therefore, no prompt occurs.
+
+The ProxyFixup.csv file will be populated with any changes that will be made to
+duplicate e-mail addresses (for example, SMTP). In addition to creating the
+ProxyFixup.csv file for every duplicate e-mail address, the Move Server Wizard
+will also report (or flag) the number of duplicates that are found in the
+pre-report, so that the administrator can resolve these before the move.
+
+If you are merging in from a different organization, the Move Server Wizard will
+create the proxy addresses using the site addressing defined in the new site. It
+will always create a unique proxy.
+
+Additional query words: ccmail x400 msw
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINNT:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

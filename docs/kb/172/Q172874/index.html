@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172874/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172874/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172874/","publisher":null,"image":null,"headline":"Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172874-wd97-web-publisher-does-not-make-absolute-paths-relative-paths">Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172874
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): winword word97 kbwdinternet
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a Web page containing links with absolute paths, the absolute
+paths do not become relative paths after you post the page to the Web. (To post
+a web page, click Publish to Web, on the File menu, provided you have installed
+Web Authoring Tools Update version 1.5 .)
+
+CAUSE
+-----
+
+This functionality is by design. Word creates an absolute path whenever you do
+any of the following:
+
+- Create a link with an absolute path in the HTML source.
+
+  -or-
+
+- Insert a Video or Background Sound from the Insert menu in Word, and clear
+  the Use Relative Paths check box.
+
+  -or-
+
+- Insert a hyperlink in Word and clear the "Use relative path for hyperlink"
+  check box.
+
+WORKAROUND
+==========
+
+To work around this behavior, use the following methods:
+
+- Manually edit the link in the HTML source to make it a relative path.
+
+  -or-
+
+- When you insert a Video or Background Sound via the Insert menu in Word,
+  select the Use Relative Path check box.
+
+  -or-
+
+- When you insert a hyperlink in Word, select the "Use relative path for
+  hyperlink" check box.
+
+MORE INFORMATION
+================
+
+For additional information about hyperlinks, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q159940 WD97: General Information About Hyperlinks
+
+  Q172747 What's New in the Web Authoring Tools Update
+
+Additional query words: 8.0 8.00 authoring tools
+
+======================================================================
+Keywords          : winword word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

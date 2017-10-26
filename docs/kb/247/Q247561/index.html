@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247561: How to Edit Index Server Noise-Word Lists | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247561: How to Edit Index Server Noise-Word Lists" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247561/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247561/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247561/","publisher":null,"image":null,"headline":"Q247561: How to Edit Index Server Noise-Word Lists","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247561-how-to-edit-index-server-noise-word-lists">Q247561: How to Edit Index Server Noise-Word Lists</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247561
+Product(s): Internet Information Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to edit noise-word list files and how to activate the
+changes.
+
+MORE INFORMATION
+================
+
+During the index and query process, Index Server uses noise-word list files for
+each language to filter the content provided by the wordbreaker and stemmer.
+This noise-word list includes words and characters that Index Server will not
+store in the catalog. This prevents Index Server from storing useless
+information and wasting disk space. To modify the noise-word list:
+
+1. Select the correct noise-word list file for the language you want to change.
+
+  For each installed language, you can find the corresponding noise-word list
+  file in the registry under:
+
+  HKLM\System\CurrentControlSet\Control\ContentIndex\Language\&lt;language&gt;\NoiseFile
+  REG_SZ
+
+The noise-word list files are stored in the %SystemRoot%\System32 folder.
+
+For example, the English_US noise-word file is stored as
+%SystemRoot%\System32\Noise.enu.
+
+2. Open the noise-word file with any text editor (such as Notepad) and edit the
+  content. Save your changes.
+
+3. Stop and start the ContentIndex service for the changes to take effect. To
+  stop and start the service, use Service Manager or the following command
+  lines:
+
+  net stop "content index"
+  net start "content index"
+
+Note that all the documents must be indexed again if they will be processed by
+the noise-word file you have changed. For example, assume that you remove a word
+from the Noise.enu file and that there is a document that has the EN-US language
+settings and contains this word. If you query the catalog for this word, you do
+not receive the document in the results. This occurs because the data that is
+stored in the catalog for this document was built with the old noise-word list.
+To receive the correct results, the document must be processed again using the
+new noise-word list.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

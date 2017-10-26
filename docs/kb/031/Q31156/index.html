@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q31156: How to Add Routines to Quick Libraries (.QLB Files) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q31156: How to Add Routines to Quick Libraries (.QLB Files)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/031/Q31156/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/031/Q31156/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/031/Q31156/","publisher":null,"image":null,"headline":"Q31156: How to Add Routines to Quick Libraries (.QLB Files)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q31156-how-to-add-routines-to-quick-libraries-qlb-files">Q31156: How to Add Routines to Quick Libraries (.QLB Files)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q31156
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 11-JAN-1990
+
+The following information describes how to add routines to Quick
+libraries (.QLB files) using their corresponding .LIB library files or
+their original .OBJ files.
+
+Microsoft recommends that a .LIB file be maintained for every .QLB
+file. Maintaining a .LIB file makes it easier to maintain a .QLB file
+and to identify the Quick library's contents. Note that QLBDUMP.BAS,
+provided on the QuickBASIC release disk, displays the contents of a
+.QLB Quick library.
+
+This article applies to QuickBASIC Versions 4.00, 4.00b and 4.50, to
+the QuickBASIC compiler that comes with Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to the QBX.EXE
+editor that comes with Microsoft BASIC PDS Version 7.00 for MS-DOS and
+MS OS/2.
+
+Note: The LIB.EXE library manager utility takes .OBJ and .LIB files as
+input arguments and outputs restructured .LIB library files.
+
+The LINK.EXE linker program takes .OBJ and .LIB files as input
+arguments and gives .QLB Quick library files for output if you use the
+LINK /Q option.
+
+The following are three different methods (Examples A, B, and C) for
+adding a routine to a Quick library:
+
+Example A is as follows:
+
+To add a routine (from any supported language) to a Quick library if
+the Quick library's matching .LIB library file is present, do the
+following:
+
+1. Suppose you have an object module, FOO.OBJ, that you wish to add to
+   the Quick library OLDLIB.QLB. OLDLIB.QLB was previously created from
+   OLDLIB.LIB.
+
+2. Add the .OBJ file (FOO.OBJ) to the .LIB library file. For example,
+   the following line adds the routine FOO.OBJ to OLDLIB.LIB and outputs
+   NEWLIB.LIB:
+
+      LIB OLDLIB.LIB+FOO.OBJ,,NEWLIB.LIB;
+
+3. Do one of the following:
+
+   a. Create a Quick library (.QLB) from the NEWLIB.LIB file. For
+      example, the following line produces NEWLIB.QLB:
+
+         LINK /Q NEWLIB.LIB,,,BQLB40.LIB;
+
+      Note: BQLB40.LIB is required for QuickBASIC Version 4.00.
+      BQLB41.LIB is required to make Quick libraries in QuickBASIC
+      Version 4.00b (and later) or the QuickBASIC which comes with
+      the BASIC compiler Version 6.00 or 6.00b. QBXQLB.LIB is
+      required to make Quick libraries for the QBX.EXE editor, which
+      comes with BASIC PDS Version 7.00.
+
+   b. The following is an equivalent alternative to the step above
+      that also outputs NEWLIB.QLB:
+
+         LINK /Q OLDLIB.LIB+FOO.OBJ,NEWLIB.QLB,,BQLB40.LIB;
+
+      (Don't forget step 2, or else your .LIB file will contain
+      different routines than your .QLB file.)
+
+Example B is as follows:
+
+To add an .OBJ module (from any supported language) to a Quick
+library, do the following:
+
+1. Compile (into .OBJ form) the routines(s) that are to be added. For
+   example, the following line invokes the Microsoft FORTRAN compiler
+   to produce FORSUB.OBJ, a FORTRAN subprogram:
+
+      fl /c FORSUB.FOR
+
+2. In the LINK command line, add together the desired .OBJ and/or .LIB
+   files (such as FORSUB.OBJ, FOO.OBJ, and OLDLIB2.LIB) to create a
+   Quick library. For example, the following outputs FOO.QLB:
+
+      LINK /Q FOO.OBJ+FORSUB.OBJ+OLDLIB2.LIB,,,BQLB40.LIB;
+
+   Note: BQLB40.LIB is required for QuickBASIC Version 4.00.
+   BQLB41.LIB is required to make Quick libraries in QuickBASIC
+   Version 4.00b or in the version of QuickBASIC that comes with the
+   BASIC compiler Version 6.00 or 6.00b. QBXQLB.LIB is required for
+   the QBX.EXE editor, which comes with BASIC PDS Version 7.00.
+
+Example C is as follows:
+
+To add a BASIC routine to a Quick library, you may do the following
+(this is not relevant for adding non-BASIC routines):
+
+1. Invoke QuickBASIC and load the Quick library to be updated. For
+   example, the following line loads the Quick library OLDLIB.QLB:
+
+      QB /L OLDLIB.QLB
+
+2. Load all the BASIC subprogram (or FUNCTION) procedures to be added
+   to the Quick library by choosing Load File from the File menu.
+
+3. Choose the Make Library command from the Run menu. The library name
+   specified must be different from the one that was loaded when
+   invoking QuickBASIC. In addition, the .LIB file corresponding to
+   the .QLB file must exist or a LINK error will occur. Both the .LIB
+   and .QLB files specified will be updated automatically.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

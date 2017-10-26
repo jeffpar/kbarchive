@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136798/","publisher":null,"image":null,"headline":"Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136798-versions-of-ctl3d32-included-with-visual-c-version-2x">Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136798
+Product(s): Microsoft C Compiler
+Version(s): 2.00 2.10 2.20
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 02-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The distribution CD-ROM disc for Microsoft Visual C++ version 2.x includes
+several versions of the 32-bit Control 3-D DLL. You can find a general
+description of all re-distributable files in Redistrb.wri in the Redist
+directory on the CD-ROM disc:
+
+  \Msvc20\Redist or \Win32s\Redist
+
+This article includes some additional details on the various versions of the
+32-bit Control 3-D DLL.
+
+MORE INFORMATION
+================
+
+Following is a description of each of the 32-bit Control 3-D DLLs that can be
+found on the CD-ROM disc for Visual C++ versions 2.0, 2.1, and 2.2. Note that
+some of these DLLs are not found on all versions of Visual C++, but all of the
+following descriptions are correct:
+
+- \Msvc20\Redist\Ctl3d32.dll is the UNICODE version of Ctl3d32.dll to be
+  installed in Windows NT for your application. In Visual C++ versions 2.0 and
+  2.1, this DLL is also needed by ODBC.
+
+- \Msvc20\Redist\Ctl3d95.dll is the ANSI version of Ctl3d32.dll. This DLL is
+  needed by the ODBC installer DLL. When the ODBC installer installs ODBC under
+  Windows 95, it will rename this DLL to Ctl3d32.dll.
+
+- \Msvc20\Redist\Ctl3dnt.dll is the UNICODE version of Ctl3d32.dll. This DLL is
+  needed by the ODBC installer DLL. When the ODBC installer installs ODBC under
+  Windows NT, it will rename this DLL to Ctl3d32.dll.
+
+- \Msvc20\Redist\Ansi\Ctl3d32.dll is the ANSI version of Ctl3d32.dll to be
+  installed under Windows 95 for your application.
+
+- \WIN32S\REDIST\Ctl3d32.dll is the ANSI version of Ctl3d32.dll installed with
+  Win32s installations.
+
+REFERENCES
+==========
+
+The following files on the CD-ROM disc contain a description of the
+re-distributable DLLs:
+
+  \Msvc20\Redist\Redistrb.wri
+
+  \Win32s\Redist\Redistrb.wri
+
+Additional query words: kbinf 2.00 2.10 2.20 3.00 3.10 3.20 mfc odbcinst 3D CTL3D
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbVC220 kbVC200 kbVC210
+Version           : 2.00 2.10 2.20
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

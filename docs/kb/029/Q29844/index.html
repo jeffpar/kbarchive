@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q29844: C 5.10 MTDYNA.DOC: Using an MTDYNA Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q29844: C 5.10 MTDYNA.DOC: Using an MTDYNA Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/029/Q29844/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/029/Q29844/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/029/Q29844/","publisher":null,"image":null,"headline":"Q29844: C 5.10 MTDYNA.DOC: Using an MTDYNA Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q29844-c-510-mtdynadoc-using-an-mtdyna-library">Q29844: C 5.10 MTDYNA.DOC: Using an MTDYNA Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q29844
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 15-JAN-1991
+
+The following information is from "Section 5: Creating Dynamic-Link
+Libraries" of the Microsoft C version 5.10 MTDYNA.DOC file.
+
+5.2.3   Using a Multiple-Thread Dynamic-Link Library
+
+Once a C run-time multiple-thread dynamic-link library has been
+created (Section 5.2.2), it can be used by a program and associated
+dynamic-link libraries. The process of using this C run-time
+dynamic-link library is shown below:
+
+1. Compile the main program. When creating executable and dynamic-link
+   library files that will use the dynamically linked C run-time
+   library, the C compiler must be called with the multiple-thread
+   versions of the include files. Additionally, stack checking must be
+   turned off if your code is being compiled as small or compact
+   models. Stack checking can only be supported in the dynamically
+   linked C run-time library using far calls (medium/large memory
+   models).  The C compiler is invoked with something like this:
+
+            cl /I\include\mt /AS /Gs2 /DDLL /c mtmain.c
+
+   The /Gs option specifies no stack checking. The /DDLL option
+   defines the DLL symbol. The /AS option specifies small memory
+   model. The /I\include\mt option specifies that the special
+   multiple-thread include files are to be used.
+
+2. Link the main program to produce MTMAIN.EXE. The following files
+   are linked together:
+
+      mtmain.obj     Output from step 1
+      crtexe.obj     Start-up code for executable files
+      crtlib.lib     Customized C run-time library (Section 5.2.2)
+      doscalls.lib   OS/2 support library
+      mtmain.def     Definition file for mtmain.c
+      mtmain.exe     Output from LINK
+
+   The linker is invoked with something like this:
+
+      link mtmain+crtexe,/noi,,crtlib.lib doscalls.lib/nod,mtmain.def;
+
+3. Compile the dynamic-link-library module. When creating executable
+   and dynamic-link library files that will use the dynamically linked
+   C run- time library, the C compiler must be called with the
+   multiple-thread versions of the include files. Additionally, stack
+   checking must be turned off if your code is being compiled as small
+   or compact model. Stack checking can only be supported in the
+   dynamically linked C run-time library using far calls
+   (medium/large memory models.)  The C compiler is invoked with
+   something like this:
+
+      cl /I\include\mt /Alfw /G2 /DDLL /c mtdll.c
+
+   The /Alfw option specifies large code-pointer size, far
+   data-pointer size and a segment setup of SS not equal to DS; DS
+   fixed. The /DDLL option defines the DLL symbol. The /I\include\mt
+   option specifies that the special multiple-thread include files are
+   to be used.
+
+4. Link the dynamic-link-library module to produce MTDLL.DLL. The
+   following files are linked together:
+
+      mtdll.obj      Output from step 3
+      crtdll.obj     Start-up code for dynamic-link library files
+      crtlib.lib     Customized C run-time library (Section 5.2.2)
+      doscalls.lib   OS/2 support library
+      mtdll.def      Dynamic-link library definition file
+      mtdll.dll      Output from LINK
+
+   The linker is invoked with something like this:
+
+      link mtdll+crtdll,mtdll.dll/noi,,crtlib.lib doscalls.lib/nod,mtdll.def;
+
+5. Place the MTDLL.DLL file (from step 4) and the CRTLIB.DLL file
+   (from Section 5.2.2) in a directory on your LIBPATH so OS/2 can
+   find it. Then run the program MTMAIN.EXE. If either dynamic-link
+   library file is not in your LIBPATH, OS/2 will not be able to run
+   MTMAIN.EXE.
+
+Note: The LIBPATH is set in your CONFIG.SYS or CONFIG.OS2 file,
+depending on which version of OS/2 you are using. LIBPATH is not part
+of your environment strings like the LIB, INCLUDE and PATH variables.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195969/","publisher":null,"image":null,"headline":"Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195969-xforcannot-specify-domains-to-relay-to-in-internet-mail-service">Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195969
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbFEA exc55sp2fea
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the Exchange Server Internet Mail Service is configured to allow message
+routing (relaying), there is no way to specify what domains are allowed or not
+allowed to be relayed to.
+
+RESOLUTION
+==========
+
+New functionality has been added to the Exchange Server Internet Mail Service to
+allow you to override any previous relay restrictions and specify that mail
+destined for a certain domain be relayed.
+
+To obtain this feature, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this feature should have the following file attributes or
+later:
+
+  Component: Internet Mail Service
+
+  File Name      Version
+  -------------------------
+  Imcadmin.dll   5.5.2424.0
+  Msexcimc.exe   5.5.2424.0
+
+This feature was first included in Exchange Server 5.5 Service Pack 2.
+
+
+MORE INFORMATION
+================
+
+Installation
+------------
+
+The Imcadmin.dll file requires a special installation process. This file must be
+copied to the Exchsrvr\Add-ins\Smtp\I386 directory and you must also perform the
+following steps:
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at you own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+  typing the following at an MS-DOS command-line prompt:
+
+  admin /r
+
+2. Click Site, click Configuration, click the Add-Ins container, and select the
+  Internet Mail Service for &lt;platform&gt;.
+
+3. On the File menu, click Raw Properties, and select File-Version from the
+  Object attributes list.
+
+4. Click Editor, and then double-click File version.
+
+5. Type the proper version as shown above, and then click OK.
+
+6. Click Set to save the changes, and then click OK.
+
+To implement this feature, perform the following steps:
+
+1. In the left pane of the Administrator window, click the Connections object
+  under the appropriate site. In the right pane, click the Internet Mail
+  Service, and then click Properties on the File menu. Note that the
+  Connections object appears under the Configuration object.
+
+2. Click the Routing tab, and then click &gt;Add&lt; to add a domain to which
+  you want to allow routing.
+
+3. In the Edit Routing Table Entry dialog box, type the domain to which you want
+  to allow routing in the "E-Mail Sent to This Domain" box, select the radio
+  button next to 'Override Relay Restrictions. Always "relay"', and then click
+  OK.
+
+4. Click &gt;Routing Restrictions&lt;. If you have not already specified
+  restrictions in the Routing Restrictions dialog box, click the "Hosts and
+  clients with these IP addresses" check box to select it.
+
+  *NOTE: Step 4. is important because without specifying any restrictions, any
+  host or client and relay mail anywhere.
+
+5. Click &gt;OK&lt;, and then click &gt;OK&lt; again.
+
+6. Restart you Microsoft Exchange Internet Mail Service.
+
+Example scenario:
+
+Your domain is A.COM but you are responsible for relaying messages to B.COM and
+C.COM. You want to allow rerouting to B.COM and C.COM but not allow mail
+destined for any other domains to relay.
+
+To do this, use step 2-3 in the implementation section above to create an entry
+for both B.COM and C.COM.
+
+When a host sends a RCPT TO: destined for A.COM, B.COM, and C.COM, the mail will
+now be accepted. But, if a message is TO: any other domain, the host will get a
+"550 Relaying is Prohibited" and the Internet Mail Service will not accept the
+message for delivery.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFEA exc55sp2fea 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

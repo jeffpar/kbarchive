@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167213/","publisher":null,"image":null,"headline":"Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167213-fix-invalid-page-fault-when-shutting-down-visual-basic-50">Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167213
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbenv kbtool kbVBp500 kbVS97sp2fix kbFAQ kbvbp500sp2fix kbVBP500FAQ
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you exit Visual Basic 5.0, an Invalid Page Fault may occur.
+
+CAUSE
+=====
+
+This crash is caused by a problem in the way Visual Basic 5.0 destroys command
+bars during shut down.
+
+RESOLUTION
+==========
+
+There are several workarounds for this problem. However, they may not work in
+all cases.
+
+Re-order the Entries in the VBADDIN.INI
+---------------------------------------
+
+This is a trial-and-error process where you open up the VBADDIN.INI in a text
+editor such as notepad.exe and change the order of the lines. This causes Visual
+Basic to load and shut down the add-ins in a different order and may bypass the
+problem. However, if you add or remove an add-in at any later time, the problem
+could resurface. The VBADDIN.INI file is located in your Windows directory.
+
+For instance, you may have a VBADDIN.INI that looks something like this:
+
+     [Add-Ins32]
+     TabOrder.Connect=0
+     DataFormDesigner.DFDClass=0
+     VBSDIAddIn.Connect=0
+     DataToolsAddIn.Connect=0
+     AppWizard.Wizard=0
+     WizMan.Connect=0
+     ClassBuilder.Wizard=1
+     AddInToolbar.Connect=1
+     ControlWiz.Wizard=1
+     DataFormWizard.Wizard=0
+     ActiveXDocumentWizard.Wizard=0
+     PropertyPageWizard.Wizard=1
+     APIDeclarationLoader.Connect=0
+     VisualCompMgr.Connect=0
+     RVBAddInMenus.Connector=1
+     RVBAddIn.Connector=0
+
+Through trial and error, you may find that the problem goes away when the
+VBADDIN.INI is arranged as follows:
+
+     [Add-Ins32]
+     RVBAddInMenus.Connector=1
+     AddInToolbar.Connect=1
+     TabOrder.Connect=0
+     DataFormDesigner.DFDClass=0
+     VBSDIAddIn.Connect=0
+     DataToolsAddIn.Connect=0
+     AppWizard.Wizard=0
+     WizMan.Connect=0
+     ClassBuilder.Wizard=1
+     ControlWiz.Wizard=1
+     DataFormWizard.Wizard=0
+     ActiveXDocumentWizard.Wizard=0
+     PropertyPageWizard.Wizard=1
+     APIDeclarationLoader.Connect=0
+     VisualCompMgr.Connect=0
+     RVBAddIn.Connector=0
+
+Unfortunately, this workaround doesn't always work. When you are testing out your
+changes to the VBADDIN.INI, make sure you use the following procedure. In order
+for your changes to take effect, you must start Visual Basic after saving your
+changes to the VBADDIN.INI:
+
+1. Shut-down Visual Basic 5.0.
+
+2. Save changes to the VBADDIN.INI.
+
+3. Start Visual Basic 5.0.
+
+4. Shut-down Visual Basic 5.0.
+
+Move Add-In Command Bars to the Main Toolbar
+--------------------------------------------
+
+Drag all Add-In toolbar buttons to the Standard toolbar using the toolbar
+customize feature of the Visual Basic development environment. This gets rid of
+some command bars and may by-pass the problem:
+
+1. Launch Visual Basic 5.0.
+
+2. From the Add-Ins menu, select the Add-In Manager and ensure that the Add-In
+  Toolbar is selected.
+
+3. From the View menu, select Toolbars &gt; Customize.
+
+4. Drag each of the Add-In toolbar buttons to the Standard toolbar.
+
+5. Deselect the Add-In toolbar from the Customize dialog box.
+
+6. Close the Customize dialog box.
+
+7. From the Add-Ins menu, select the Add-In Manager and ensure that the Add-In
+  Toolbar is deselected.
+
+8. Close Visual Basic 5.0.
+
+Disable Add-Ins Before Exiting Visual Basic 5.0
+-----------------------------------------------
+
+It may be possible to work around the problem by shutting down all the active
+add-ins manually prior to exiting Visual Basic 5.0. To shut down an add-in, use
+the following procedure:
+
+1. Select the "Add-Ins\Add-In Manager..." menu to bring up the Add-In Manager.
+
+2. De-select the add-ins that you wish to unload.
+
+3. Press OK to unload the add-ins.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 2.
+
+For more information on the Visual Studio 97 Service Pack 2, please see the
+following article in the Microsoft Knowledge Base:
+
+Q170365INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+Service Pack 2, please see the following article in the Microsoft Knowledge
+Base:
+
+Q171554 INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+
+MORE INFORMATION
+================
+
+This problem can occur with many combinations of add-ins. A few of the common
+scenarios and the steps to reproduce the problem are listed below.
+
+Source Code Control Add-In and Visual Basic Add-In Toolbar
+----------------------------------------------------------
+
+1. Install Visual Basic 5.0.
+
+2. Install Visual SourceSafe 5.0.
+
+3. Launch Visual Basic 5.0.
+
+4. With the Add-In Manager, select the Add-In Toolbar and the Source Code
+  Control add-in.
+
+5. Click OK to load the add-ins.
+
+6. Close Visual Basic.
+
+7. Restart Visual Basic.
+
+8. Close Visual Basic.
+
+Visual Modeler Menus Add-In and Visual Basic Add-In Toolbar
+-----------------------------------------------------------
+
+1. Install Visual Basic 5.0.
+
+2. Install Visual Modeler.
+
+3. Launch Visual Basic 5.0.
+
+4. With the Add-In Manager, select the Add-In Toolbar and the Visual Modeler
+  Menus add-in.
+
+5. Click OK to load the add-ins.
+
+6. Close Visual Basic.
+
+7. Restart Visual Basic.
+
+8. Close Visual Basic.
+
+Visual Modeler Menus Add-In and Source Code Control Add-In
+----------------------------------------------------------
+
+1. Install Visual Basic 5.0.
+
+2. Install Visual SourceSafe 5.0.
+
+3. Install Visual Modeler.
+
+4. Launch Visual Basic 5.0.
+
+5. With the Add-In Manager, select the Visual Modeler Menus add-in and the
+  Source Code Control add-in.
+
+6. Click OK to load the add-ins.
+
+7. Close Visual Basic.
+
+8. Restart Visual Basic.
+
+9. Close Visual Basic.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool kbVBp500 kbVS97sp2fix kbFAQ kbvbp500sp2fix kbVBP500FAQ 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

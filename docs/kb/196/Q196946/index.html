@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196946/","publisher":null,"image":null,"headline":"Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196946-snaoledb-fails-with-data-conversion-dconvdll-not-found">Q196946: SNAOLEDB Fails with "Data conversion (DCONV.DLL) not found"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196946
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:1.0,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+- Microsoft OLE DB Provider for AS/400 and VSAM, version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Attempts to initialize the SNA Server OLE DB Provider for AS/400 or VSAM
+(SNAOLEDB) may fail with the following error message:
+
+  Data conversion (DCONV.DLL) not found
+
+This error may occur even though the Dconv.dll is present in the
+&lt;snaroot&gt;\System directory.
+
+CAUSE
+=====
+
+The SNA Server Dconv.dll is dependent upon the SNA Server version of Trnsdt.dll
+which SNA Server installs into the &lt;sna&gt;\System directory. If IBM Client
+Access is also installed on the computer, it installs its own version of
+Trnsdt.dll which conflicts with the SNA Server version, causing Dconv.dll to
+fail to initialize.
+
+This problem may occur with any version of the SNAOLEDB driver.
+
+RESOLUTION
+==========
+
+To solve the problem, rename the version of Trnsdt.dll located in the IBM Client
+Access directory, if it is installed on the computer. Only the SNA Server
+version of Trnsdt.dll should be present on the computer.
+
+NOTE: Renaming the IBM version of Trnsdt.dll may cause IBM Client Access
+applications to fail.
+
+If there are no duplicate versions of Trnsdt.dll present on the computer, ensure
+that there are no conflicting versions of these other dependent DLLs, and that
+these are available in the system path:
+
+Shipped with SNA Server:
+
+  Snanls.dll
+  Trnsdt.dll
+
+These are shipped by Windows NT:
+
+  Advapi32.dll
+  Gdi32.dll
+  Kernel32.dll
+  Ntdll.dll
+  Rpcrt4.dll
+  User32.dll
+
+This one is shipped by Windows NT and SNA Server, and may be redistributed by
+other applications too:
+
+  Msvcrt.dll
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOLEDBSearch kbSNAServSearch kbOLEDBProvAS400VSAM100 kbSNAServ400 kbSNAServ400SP1 kbOLEDBProvSearch
+Version           : WINDOWS:1.0,4.0,4.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

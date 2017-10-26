@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43975: QuickC: Increasing Maximum Number of Open Files and Streams | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43975: QuickC: Increasing Maximum Number of Open Files and Streams" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43975/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43975/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43975/","publisher":null,"image":null,"headline":"Q43975: QuickC: Increasing Maximum Number of Open Files and Streams","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43975-quickc-increasing-maximum-number-of-open-files-and-streams">Q43975: QuickC: Increasing Maximum Number of Open Files and Streams</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43975
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 2-MAY-1989
+
+Question:
+
+Is it possible to increase the maximum number of open files and
+maximum number of streams under QuickC Version 2.00?
+
+Response:
+
+QuickC 2.00 does not come with start-up code; therefore, you MUST have
+the Microsoft C 5.10 Optimizing Compiler to increase the maximum
+number of open files and streams. CRT0DAT.ASM and _FILE.C should be
+modified as described in the README.DOC included in the C 5.10
+package.
+
+Limited testing has been performed with QuickC 2.00 after altering
+the start-up code in this manner; however, Microsoft cannot guarantee
+that it will work properly in all cases.
+
+After successfully assembling CRT0DAT.ASM (use the /MX switch) and
+successfully compiling _FILE.C, you must do one of the following:
+
+1. Explicitly link your program with the new CRT0DAT.OBJ and/or
+   _FILE.OBJ by compiling and linking on the command line using QuickC
+   2.00. One possible command might be as follows:
+
+      QCL TEST.C CRT0DAT /LINK /NOE
+
+2. You can also link with the modified start-up code by creating a
+   program list in QuickC 2.00, which should include TEST.C,
+   CRT0DAT.OBJ, and/or _FILE.OBJ. Do not forget to turn the extended
+   dictionary flag OFF under the linker flags.
+
+3. Replace the CRT0DAT.OBJ and/or _FILE.OBJ in the appropriate model
+   of the QuickC 2.00 run-time library. You can use the library
+   manager and the Replace command symbol (-+) in the "commands" field
+   to replace a module in the library.
+
+Note: Remember that the number of low-level files must be greater than
+or equal to the number of stream-level files. Therefore, if you
+increase the value of _NFILE_ in _FILE.C, you must also increase the
+value of _NFILE_ in CRT0DAT.ASM.
+
+The following program will open up to 64 files, write to them, close
+them, open the files again, and read from them:
+
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+#define MAX_FILES  64
+#define MAX_BUFFER 128
+#define FILE_BASE  "MAX"
+#define FILE_EXT   ".TXT"
+#define TO_WRITE   "This is a bunch of text!"
+
+void main( void )
+{
+    FILE *streams[MAX_FILES];
+    char  buffer[MAX_BUFFER];
+    int   i;
+    int   max;
+    int   cmp;
+
+    /*  Open as many files as possible. */
+    for( i = 0; i &lt; MAX_FILES; i++ )
+    {
+        sprintf( buffer, FILE_BASE "%2.2d" FILE_EXT, i + 1 );
+        streams[i] = fopen( buffer, "w" );
+        if( streams[i] == NULL )
+        {
+            fprintf( stderr, "Open #%2.2d failed.\n", i + 1 );
+            break;
+        }
+    }
+    max = i;
+
+    /*  Write to all open files. */
+    for( i = 0; i &lt; max; i++ )
+        fputs( TO_WRITE, streams[i] );
+
+    /*  Close all open files. */
+    for( i = 0; i &lt; max; i++ )
+        fclose( streams[i] );
+
+    /*  Open all of our files. */
+    for( i = 0; i &lt; max; i++ )
+    {
+        sprintf( buffer, FILE_BASE "%2.2d" FILE_EXT, i + 1 );
+        streams[i] = fopen( buffer, "r" );
+        if( streams[i] == NULL )
+            fprintf( stderr, "Unable to re-open file #%2.2d\n", i + 1 );
+    }
+
+    /*  Read from all open files. */
+    for( i = 0; i &lt; max; i++ )
+    {
+        fgets( buffer, MAX_BUFFER, streams[i] );
+        cmp = strcmp( buffer, TO_WRITE );
+        if( cmp != 0 )
+            fprintf( stderr, "Bad data in file #%2.2d\n", i + 1 );
+    }
+
+    /*  Close all open files. */
+    for( i = 0; i &lt; max; i++ )
+        fclose( streams[i] );
+
+    fputs( "All done!\n", stdout );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173085/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173085/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173085/","publisher":null,"image":null,"headline":"Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173085-howto-create-a-process-for-reading-and-writing-to-a-pipe">Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173085
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This example illustrates a Visual Basic application starting another process
+with the purpose of redirecting that process's standard IO handles. The Visual
+Basic application redirects the created process's standard output handle to an
+anonymous pipe, then proceeds to read the output through the pipe. This sample
+just redirects STDOUT of the new process. To redirect other handles (STDIN and
+STDERR), create a pipe for each handle for which redirection is desired. The
+Visual Basic application would read from the read ends of the pipes for the
+redirected STDOUT and STDERR. If STDIN redirection was desired, the Visual Basic
+application would write to the write end of the appropriate pipe. An example
+follows:
+
+     'A pipe for redirection of STDOUT
+     CreatePipe(hReadPipe1, hWritePipe1, sa, 0)
+
+     'A pipe for redirection of STDERR
+     CreatePipe(hReadPipe2, hWritePipe2, sa, 0)
+
+     'A pipe for redirection of STDIN
+     CreatePipe(hReadPipe3, hWritePipe3, sa, 0)
+
+     'Preparing to start the process with redirected handles
+     start.hStdOutput = hWritePipe1
+     start.hStdError = hWritePipe2
+     start.hStdInput = hReadPipe3
+
+     'Reading output from the started process's STDOUT
+     ReadFile(hReadPipe1, mybuff1, 100, bytesread, ByVal 0&amp;)
+
+     'Reading output from the started process's STDERR
+     ReadFile(hReadPipe2, mybuff2, 100, bytesread, ByVal 0&amp;)
+
+     'Writing to the started process's STDIN
+     WriteFile(hWritePipe3, mybuff3, 100, byteswritten, ByVal 0&amp;)
+
+MORE INFORMATION
+================
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+        Option Explicit
+
+        Private Declare Function CreatePipe Lib "kernel32" ( _
+            phReadPipe As Long, _
+            phWritePipe As Long, _
+            lpPipeAttributes As Any, _
+            ByVal nSize As Long) As Long
+
+        Private Declare Function ReadFile Lib "kernel32" ( _
+            ByVal hFile As Long, _
+            ByVal lpBuffer As String, _
+            ByVal nNumberOfBytesToRead As Long, _
+            lpNumberOfBytesRead As Long, _
+            byval lpOverlapped As Any) As Long
+
+        Private Type SECURITY_ATTRIBUTES
+            nLength As Long
+            lpSecurityDescriptor As Long
+            bInheritHandle As Long
+        End Type
+
+        Private Type STARTUPINFO
+           cb As Long
+           lpReserved As Long
+           lpDesktop As Long
+           lpTitle As Long
+           dwX As Long
+           dwY As Long
+           dwXSize As Long
+           dwYSize As Long
+           dwXCountChars As Long
+           dwYCountChars As Long
+           dwFillAttribute As Long
+           dwFlags As Long
+           wShowWindow As Integer
+           cbReserved2 As Integer
+           lpReserved2 As Long
+           hStdInput As Long
+           hStdOutput As Long
+           hStdError As Long
+        End Type
+
+        Private Type PROCESS_INFORMATION
+           hProcess As Long
+           hThread As Long
+           dwProcessID As Long
+           dwThreadID As Long
+        End Type
+
+        Private Declare Function CreateProcessA Lib "kernel32" (ByVal _
+           lpApplicationName As Long, ByVal lpCommandLine As String, _
+           lpProcessAttributes As Any, lpThreadAttributes As Any, _
+           ByVal bInheritHandles As Long, ByVal dwCreationFlags As Long, _
+           ByVal lpEnvironment As Long, ByVal lpCurrentDirectory As Long, _
+           lpStartupInfo As Any, lpProcessInformation As Any) As Long
+
+        Private Declare Function CloseHandle Lib "kernel32" (ByVal _
+           hObject As Long) As Long
+
+        Private Const NORMAL_PRIORITY_CLASS = &amp;H20&amp;
+        Private Const STARTF_USESTDHANDLES = &amp;H100&amp;
+
+        Private Sub ExecCmd(cmdline$)
+            Dim proc As PROCESS_INFORMATION, ret As Long, bSuccess As Long
+            Dim start As STARTUPINFO
+            Dim sa As SECURITY_ATTRIBUTES, hReadPipe As Long, hWritePipe _
+            As Long
+            Dim bytesread As Long, mybuff As String
+            Dim i As Integer
+
+            mybuff = String(256, Chr$(65))
+
+            sa.nLength = Len(sa)
+            sa.bInheritHandle = 1&amp;
+            sa.lpSecurityDescriptor = 0&amp;
+
+            ret = CreatePipe(hReadPipe, hWritePipe, sa, 0)
+            If ret = 0 Then
+                MsgBox "CreatePipe failed. Error: " &amp; Err.LastDllError
+                Exit Sub
+            End If
+
+         start.cb = Len(start)
+         start.dwFlags = STARTF_USESTDHANDLES
+         start.hStdOutput = hWritePipe
+
+         ' Start the shelled application:
+         ret&amp; = CreateProcessA(0&amp;, cmdline$, sa, sa, 1&amp;, _
+         NORMAL_PRIORITY_CLASS, 0&amp;, 0&amp;, start, proc)
+         If ret &lt;&gt; 1 Then
+             MsgBox "CreateProcess failed. Error: " &amp; Err.LastDllError
+         End If
+
+         bSuccess = ReadFile(hReadPipe, mybuff, 100, bytesread, 0&amp;)
+         If bSuccess = 1 Then
+             List1.AddItem Left(mybuff, bytesread)
+         Else
+             MsgBox "ReadFile failed. Error: " &amp; Err.LastDllError
+         End If
+
+            ret&amp; = CloseHandle(proc.hProcess)
+            ret&amp; = CloseHandle(proc.hThread)
+            ret&amp; = CloseHandle(hReadPipe)
+            ret&amp; = CloseHandle(hWritePipe)
+        End Sub
+
+3. Add a CommandButton (Command1) to Form1.
+
+4. Add the following code to the Command1_Click event:
+
+        Private Sub Command1_Click()
+                ExecCmd ("C:\Console\Debug\console.exe")
+        End Sub
+
+Additional query words: kbInetdev kbInternet kbVBp400 kbVBp500 kbVBp600 kbdsi kbDSupport kbVBp
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61344: Why a Program Might Hang with BLOAD/BSAVE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61344: Why a Program Might Hang with BLOAD/BSAVE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61344/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61344/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61344/","publisher":null,"image":null,"headline":"Q61344: Why a Program Might Hang with BLOAD/BSAVE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61344-why-a-program-might-hang-with-bloadbsave">Q61344: Why a Program Might Hang with BLOAD/BSAVE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61344
+Product(s): See article
+Version(s): 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900305-58 B_BasicCom | mspl13_basic
+Last Modified: 2-MAY-1990
+
+There are two reasons a program might hang when using the BLOAD
+statement in Microsoft QuickBASIC. First, it is possible to hang your
+computer by BLOADing to the incorrect area in memory. Second, if the
+array you are BLOADing into is not large enough, the computer might
+hang or data and code might become corrupt.
+
+This information applies to Microsoft QuickBASIC versions 3.00, 4.00,
+4.00b, and 4.50; to Microsoft BASIC Compiler versions 6.00 and 6.00b;
+and to Microsoft BASIC Professional Development System (PDS) version
+7.00.
+
+The most common programming error with BLOAD is to BLOAD into an array
+and only use the offset value [VARPTR()] of the array. If the array
+you BLOAD into is being stored as a far object and you only use the
+offset of the variable [VARPTR()], you will write over data in your
+DGROUP and possibly some of your code, and if you are using QB.EXE,
+you could write over the code for the editor. To avoid this problem,
+always use the VARSEG function to get the segment of the array and
+then invoke a DEF SEG beforehand to set the current segment to the one
+containing the array variable. This ensures that the data will go into
+the correct memory location, whether the array is being stored as a
+near or far object.
+
+The second programming error is to BLOAD into a data-item that is
+smaller than the one that was used to BSAVE the data. This is similar
+to the error above in that this might cause you to write over both
+code and data in memory.
+
+Both of these programming errors can cause a variety of problems, as
+follows:
+
+1. You might receive a "String space corrupt" error.
+
+2. You might receive a "Far heap corrupt" error.
+
+3. Data values might be corrupt or incorrect.
+
+4. The program could display totally erratic behavior because of
+   corrupt code segments.
+
+5. The computer might hang.
+
+The following code examples demonstrate the correct and incorrect
+ways of executing a binary save.
+
+Code Examples
+-------------
+
+'***********************************************
+'*  This program creates the file to BLOAD     *
+'*                  MAKIT.BAS                  *
+'***********************************************
+
+REM $DYNAMIC
+DEFINT A-Z
+DIM buffer(16384)
+DEF SEG = VARSEG(buffer(0))
+BSAVE "test.bin", VARPTR(buffer(0)), 32768
+DEF SEG
+
+'***********************************************
+'*  Correct method for BLOAD:  CORRECT.BAS     *
+'***********************************************
+
+REM $DYNAMIC
+DEFINT A-Z
+DIM buffer(16384)
+' For far data objects, you must first set the segment
+' to the segment of that object.
+DEF SEG = VARSEG(buffer(0))
+BLOAD "test.bin", VARPTR(buffer(0))
+' The next line is necessary because you MUST
+' reset the segment back to the BASIC default segment.
+DEF SEG
+END
+
+'***********************************************
+'*  Incorrect method for BLOAD:  INCORRECT.BAS *
+'***********************************************
+' WARNING!!!!!: This probably will hang the computer.
+' This example is just for comparison with the one above.
+
+REM $DYNAMIC
+DEFINT A-Z
+DIM buffer(16384)
+BLOAD "test.bin", VARPTR(buffer(0))
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

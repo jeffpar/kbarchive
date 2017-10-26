@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127922/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127922/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127922/","publisher":null,"image":null,"headline":"Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127922-setting-bdc-to-be-wins-proxy-agent-may-cause-broadcast-storms">Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127922
+Product(s): Microsoft Windows NT
+Version(s): 3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+IP broadcast storms can occur when non-WINS clients attempt to log on if Enable
+WINS Proxy Agent is selected in the Advanced configuration dialog box on a
+Windows NT version 3.5 Backup Domain Controller (BDC). If multiple backup domain
+controllers (BDCs) are running WINS proxy agent, then the servers may crash with
+a STOP message 0xA. The stack trace might look like the following:
+
+kd&gt; kb
+ChildEBP RetAddr  Args to Child
+fc8b9b74 801088d2 ffbb7828 c038401c e100743e
+T!_MiWaitForInPageComplete+0xf6
+fc8b9bc8 80106f3b 00000000 e100743e c038401c
+NT!_MiDispatchFault+0x144
+fc8b9c18 8013b8ef 00000000 e100743e 00000000
+NT!_MmAccessFault+0x221
+fc8b9c18 8014fccf 00000000 e100743e 00000000
+NT!_KiTrap0E+0xab
+
+CAUSE
+-----
+
+The WINS proxy code does not check to see if the datagram it receives is from
+another WINS proxy agent. This allows the same datagrams to be repeatedly
+forwarded.
+
+This problem occurs only if the BDC is a WINS proxy agent.
+
+WORKAROUND
+----------
+
+To work around this problem, configure another server to be the WINS proxy
+agent.
+
+STATUS
+------
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+problem has been corrected in the latest U.S. Service Pack for Windows NT
+version 3.5. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+S E R V P A C K
+
+Additional query words: 3.50 internet naming service prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : :3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

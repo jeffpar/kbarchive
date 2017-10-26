@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89902: MIDI Sequencing Software Issues with Windows Sound System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89902: MIDI Sequencing Software Issues with Windows Sound System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89902/","publisher":null,"image":null,"headline":"Q89902: MIDI Sequencing Software Issues with Windows Sound System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89902-midi-sequencing-software-issues-with-windows-sound-system">Q89902: MIDI Sequencing Software Issues with Windows Sound System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89902
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some known issues with Microsoft Windows Sound System and
+the following MIDI sequencing software packages:
+
+- All MIDI sequencing software
+
+- Midisoft Studio for Windows
+
+- Passport Encore for Windows
+
+- Coda Music Software Finale for Windows
+
+- Passport Master Tracks Pro 4 for Windows
+
+MORE INFORMATION
+================
+
+All MIDI Sequencing Software
+----------------------------
+
+Sound Finder does not play MIDI files (.MID and .RMI file extensions) while a
+MIDI sequencing program is running.
+
+Midisoft Studio for Windows
+---------------------------
+
+Run Studio for Windows while Windows is in 386 enhanced mode.
+
+While playing MIDI files, a note may play continuously. Choose the Stop button to
+eliminate this problem.
+
+Passport Encore for Windows
+---------------------------
+
+You may receive the following error with Encore for Windows:
+
+  Error opening the record port. A device ID has been used that is out of range
+  for your system.
+
+Try changing the MIDI configuration using MIDI Mapper in Windows Control Panel.
+
+Coda Music Software Finale for Windows
+--------------------------------------
+
+MIDI files created by Finale do not play through any of the Windows Sound System
+programs because Finale depends upon its own driver to send MIDI information to
+a MIDI output device.
+
+The following procedure may allow Windows Sound System to play a MIDI file
+created by Finale for Windows:
+
+1. Start Finale for Windows.
+
+2. From the File menu, choose Open.
+
+3. Select a MIDI file.
+
+4. From the File menu, choose Save As.
+
+5. Select MIDI Type 1.
+
+6. Try playing the sound from Sound Finder.
+
+Passport Master Tracks Pro 4 for Windows
+----------------------------------------
+
+Master Tracks Pro 4 is not compatible with the Windows Sound System. Running
+Master Tracks Pro 4 with Windows Sound System version 1.0 may cause data loss.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

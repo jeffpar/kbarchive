@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265109: BUG: The STL list::sort() Function Doesn’t Sort List of Pointers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265109: BUG: The STL list::sort() Function Doesn’t Sort List of Pointers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265109/","publisher":null,"image":null,"headline":"Q265109: BUG: The STL list::sort() Function Doesn’t Sort List of Pointers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265109-bug-the-stl-listsort-function-doesnt-sort-list-of-pointers">Q265109: BUG: The STL list::sort() Function Doesn’t Sort List of Pointers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265109
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbtemplate kbSTL kbVC600bug kbDSupport kbGrpDSVCCompiler
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Standard Template Library (STL) list::sort function doesn't sort a list of
+pointers when a predicate function is defined for sorting.
+
+CAUSE
+=====
+
+The Microsoft Developer Network (MSDN) documentation for the list::sort function
+states that, if a translator doesn't support member function templates, the
+following template
+
+  template &lt;class Pred&gt;;
+     void sort(Pred pr);
+
+is replaced by:
+
+  void sort(greater&lt;T&gt; pr);
+
+You can specify the predicate function for sorting, but it will always call the
+greater function.
+
+RESOLUTION
+==========
+
+Override struct greater&lt;T&gt; and specify your comparison function for
+sorting. See the workaround in the "More Information" section for details.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the bug and the workaround:
+
+  //sort.cpp
+  //compiler options cl /GX sort.cpp
+  #include &lt;iostream&gt;
+  #include &lt;algorithm&gt;
+  #include &lt;list&gt;
+  using namespace std;
+
+  //#define WORKAROUND //Uncomment this line to work around the bug.
+
+  class CSort 
+  {
+  public:
+      CSort(int i) : m_i(i) { }
+      int m_i;
+  };
+
+  struct PrintElements 
+  {
+     void operator()(CSort* pfi) const
+     {
+        cout &lt;&lt; pfi-&gt;m_i &lt;&lt; "\n";
+     }
+  };
+
+  #ifdef WORKAROUND
+  template&lt;&gt;
+  struct std::greater&lt;CSort*&gt;  : public binary_function&lt;CSort* ,CSort*, bool&gt; 
+  {
+      bool operator()(const CSort* &amp;x, const CSort* &amp;y) const
+      { 
+  	return (x-&gt;m_i &lt; y-&gt;m_i); 
+      };
+  };
+  #endif
+
+  // User-defined predicate function for sorting.
+  struct lessThan : public greater&lt;CSort*&gt; 
+  {
+      bool operator()(const CSort* &amp;pfi1, const CSort* &amp;pfi2) const
+      { 
+  	return pfi1-&gt;m_i &lt; pfi2-&gt;m_i; 
+      }
+  };
+
+  void SortTest()
+  {
+      list&lt;CSort*&gt; l3;
+      l3.push_back(new CSort(11));
+      l3.push_back(new CSort(01));
+      l3.push_back(new CSort(21));
+      l3.push_back(new CSort(14));
+      l3.push_back(new CSort(41));
+      list&lt;CSort*&gt;::iterator lfii = l3.begin();
+      l3.sort(lessThan());
+      for_each(l3.begin(), l3.end(), PrintElements());
+      cout.flush();
+  }
+
+  int main(int argc, char* argv[])
+  {
+      SortTest();
+      return 0;
+  }
+
+The program produces the following output, which is incorrect:
+
+  41
+  14
+  21
+  1
+  11
+
+The expected output is a sorted result:
+
+  1
+  11
+  14
+  21
+  41
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbSTL kbVC600bug kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260173/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260173/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260173/","publisher":null,"image":null,"headline":"Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260173-err-msg-could-not-bind-to-the-microsoft-exchange-directory">Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260173
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are configuring the Microsoft Exchange (MAPI-based) Management Agent
+(MA) and you click "Test your configuration", you may receive the following
+error message:
+
+  Error was encountered in function: CheckDAPI calling DAPIStart.
+  Error message: Could not bind to the Microsoft Exchange Directory server.
+  Please check that the DSA name "&lt;Servername&gt;" is valid and is running.
+
+  The server connection test was a failure.
+
+CAUSE
+=====
+
+This behavior occurs if either of the following conditions exists:
+
+- You are running Microsoft Metadirectory Services (MMS) as a service and the
+  account that is used to start the service does not have permissions to the
+  Exchange server.
+
+- You are running MMS as a program and the user account that you are using to
+  log on to Windows does not have permission to the Exchange server directory.
+
+RESOLUTION
+==========
+
+If you are running MMS as a service, use the appropriate steps to resolve the
+issue.
+
+Microsoft Windows 2000
+----------------------
+
+1. Click Start, point to Settings, click Control Panel, double-click
+  Administrative Tools, and then double-click Services.
+
+2. Double-click the Zoomit Server service.
+
+
+3. On the General tab, click Stop.
+
+4. After the service is stopped, click the Log On tab.
+
+5. In the Log On As section, click This Account. Use the button to the right of
+  the This Account box to select the domain account with appropriate
+  administrative permissions for the Exchange server.
+
+6. Type and confirm a password for the account, and then click OK.
+
+7. Right-click the Zoomit Server service, and then click Start.
+
+Microsoft Windows NT 4.0
+------------------------
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Services.
+
+2. Click the Zoomit Server service, and then click Startup.
+
+3. In the Log On As section, click This Account. Use the button to the right of
+  the This Account box to select the domain account with appropriate
+  administrative permissions for the Exchange server.
+
+4. Type and confirm a password for the account, and then click OK.
+
+5. Click Start.
+
+If you are running MMS as a program, you must log on to the console with an
+account that has administrative permission to the Exchange server.
+
+Additional query words: Zoomit Via MA Metadirectory MMS
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121218/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121218/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121218/","publisher":null,"image":null,"headline":"Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121218-fix-pvarresult-should-be-null-when-vtretvt_empty">Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121218
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,2.0
+Operating System(s): 
+Keyword(s): kbole kbMFC kbVCkbbuglist kbfixlist
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, versions 1.5, 1.51, 2.0 
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A call to COleDispatchDriver::InvokeHelper causes the server to generate an
+error when the return type is VT_EMPTY. The nature of the error depends on the
+automation server. For example, the Word.Basic automation server causes the
+following error on some methods that have a return type of void (_DEBUG build):
+
+  Assertion Failed Line 315, OLEDISP2.CPP
+
+By using the debugger to examine the excepInfo structure, you'll see that the
+btrDescription member contains this message:
+
+  Non Function called as function.
+
+CAUSE
+=====
+
+The OLE version 2.0 documentation indicates that in a call to IDispatch-
+&gt;Invoke the pvarResult parameter should be NULL if the caller does not expect
+a return value. However the MFC implementation always passes a non- NULL pointer
+to an empty variant structure. In most cases an automation server will simply
+ignore pvarResult when it doesn't intend to return a value. But some servers
+will actually perform error checking on this parameter and will generate an
+error if it is non-NULL.
+
+RESOLUTION
+==========
+
+To work around this problem, derive your own class from COleDispatchDriver, such
+as CMyOleDispatchDriver, and create your own InvokeHelperVoid function. Then
+call your own InvokeHelperVoid function instead of InvokeHelper when you need to
+call a method that has no return value.
+
+To implement this work around, create two new functions in your
+COleDispatchDriver derived class:
+
+     CMyOleDispatchDriver::InvokeHelperVVoid
+     CMyOleDispatchDriver::InvokeHelperVoid
+
+Implement these functions by copying the implementations of InvokeHelperV and
+InvokeHelper from OLEDISP2.CPP.
+
+Then modify the following line in InvokeHelperVoid from:
+
+     InvokeHelperV(dwDispID, wFlags, vtRet, pvRet, pbParamInfo,
+       argList);
+
+  to:
+
+     InvokeHelperVVoid(dwDispID, wFlags, vtRet, pvRet, pbParamInfo,
+       argList);
+
+Then modify the following lines in InvokeHelperVVoid from:
+
+     HRESULT hr = m_lpDispatch-&gt;Invoke(dwDispID, IID_NULL, 0, wFlags,
+        &amp;dispparams, &amp;vaResult, &amp;excepInfo, &amp;nArgErr);
+
+  to:
+
+     HRESULT hr = m_lpDispatch-&gt;Invoke(dwDispID, IID_NULL, 0, wFlags,
+              &amp;dispparams, NULL, &amp;excepInfo, &amp;nArgErr);
+
+On some servers, you may also need to re-implement the
+COleDispatchDriver::SetProperty function and replace it with your own
+SetPropertyVoid function by copying the implementation from OLEDISP2.CPP. Just
+as for the InvokeHelper function, you will need to change it to call
+InvokeHelperVVoid instead of InvokeHelperV.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This bug was corrected in Visual C++ 1.52 and Visual C++ 2.1.
+
+
+Additional query words: 1.50 2.00 2.50 2.51 3.00
+
+======================================================================
+Keywords          : kbole kbMFC kbVC kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

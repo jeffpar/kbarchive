@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260744/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260744/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260744/","publisher":null,"image":null,"headline":"Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260744-howto-set-activex-control-design-time-properties-at-run-time">Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260744
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbMFC kbVC600 kbDSupport kbGrpDSMFCATL
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some properties of an ActiveX control may be read-only at run time, which makes
+dynamic creation difficult. Design mode can be simulated temporarily for
+property initialization by overriding the control container's OnAmbientProperty
+handler.
+
+MORE INFORMATION
+================
+
+For ActiveX controls that offer design-time properties, the author of the
+control probably disallowed dynamic run-time manipulation of these properties on
+purpose. Take care when you adjust these properties. In some cases, however, the
+following method may yield useful results. Always carefully test your solution.
+The control may not be able to switch modes easily, so this technique should be
+used with care, and only to allow these properties to be set when the control is
+created dynamically, not as license to modify these settings at will.
+
+The RichTextBox control is an example of a control that offers such properties.
+Because the Multiline and Scrollbars properties of the RichTextBox control are
+read-only at run time, this control is almost impossible to create dynamically
+except in its default form. The solution, in an MFC container, is to override
+OnAmbientProperty. This function receives, along with a pointer to the control
+site, the DISPID of the ambient property, and a pointer to the value it should
+return. This allows the container to convince the control that it is in design
+mode when the value of DISPID_AMBIENT_USERMODE is queried for.
+
+Following is an example of how to override this function:
+
+  BOOL CRichTextDlg::OnAmbientProperty(COleControlSite* pSite, DISPID dispid, VARIANT* pvar) 
+  {
+  	if ((dispid == DISPID_AMBIENT_USERMODE) &amp;&amp; !m_bInitDone)
+  	{
+  		V_VT(pvar) = VT_BOOL;
+  		V_BOOL(pvar) = 0;
+  		return TRUE;
+  	}
+
+  	return CDialog::OnAmbientProperty(pSite, dispid, pvar);
+  }
+
+A member variable, m_bInitDone, was added to the class. It determines the result
+to return from the function. Once initialization of the control has been
+completed, this variable should be set so that the container reveals its true
+state.
+
+REFERENCES
+==========
+
+For additional information about extensive customization of MFC control
+containers, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q196835 How to Override MFC's Default Control Containment
+
+Additional query words: DISPID_AMBIENT_USERMODE Ambient
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbMFC kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

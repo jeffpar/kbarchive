@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130010: File Manager: Windows NT Server Tools Security Menu Missing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130010: File Manager: Windows NT Server Tools Security Menu Missing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130010/","publisher":null,"image":null,"headline":"Q130010: File Manager: Windows NT Server Tools Security Menu Missing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130010-file-manager-windows-nt-server-tools-security-menu-missing">Q130010: File Manager: Windows NT Server Tools Security Menu Missing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130010
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.11; Win2000:3.1; winnt:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+-------
+
+After you install Windows NT Server Tools on your computer running Windows
+3.1 or Windows for Workgroups 3.11, and reboot the computer, File Manager
+does not display the expected Security menu and toolbar icon with the
+Windows NT Server managing tools.
+
+NOTE: Windows NT Server Tools are available on the Windows NT Server CD in
+the CLIENTS\SRVTOOLS\WINDOWS directory.
+
+CAUSE
+=====
+
+Windows cannot find the necessary tools because the installation does not
+automatically modify the AUTOEXEC.BAT and CONFIG.SYS files. Instead it saves the
+necessary changes in the following two files in the directory where the tools
+are installed:
+
+  NEW-VARS.BAT
+  NEW-CONF.SYS
+
+RESOLUTION
+==========
+
+To correct this situation:
+
+1. Back up your AUTOEXEC.BAT and CONFIG.SYS files.
+
+2. Use a text editor to modify the original AUTOEXEC.BAT and CONFIG.SYS files to
+  include the information in NEW-VARS.BAT and NEW-CONF.SYS files, respectively.
+
+3. Reboot your computer running Windows or Windows for Workgroups for the
+  changes to take effect.
+
+Additional query words: prodnt 3.10 3,50 3.11 wfwg wfw
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWFW311
+Version           : WINDOWS:3.11; Win2000:3.1; winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

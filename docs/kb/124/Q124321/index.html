@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124321/","publisher":null,"image":null,"headline":"Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124321-bug-sqlgetdata-returns-sql_success-on-a-binary-column">Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124321
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 1780 (2.002317)
+
+SYMPTOMS
+========
+
+Under certain conditions when SQLGetData is called on a binary column more than
+once, it may return SQL_SUCCESS when it should return SQL_NO_DATA_FOUND. This
+happens only for binary, varbinary, or longbinary type of columns.
+
+For example, consider the following sequence of calls which demonstrate the
+problem:
+
+     SQLAllocEnv(phenv)
+     SQLAllocConnect(henv,phdbc)
+     SQLConnect(szDSN,cbDSN,szUID,cbUID,szAuthStr,cbAuthStr)
+
+     SQLAllocStmt(hdbc,phstmt)
+     SQLExecDirect(hstmt,"Create table test (col1 longbinary)",SQL_NTS)
+     SQLExecDirect(hstmt,"Insert into test values('abc')",SQL_NTS)
+     SQLExecDirect(hstmt,"Insert into test values('abcd')",SQL_NTS)
+     SQLFreeStmt(hstmt,SQL_CLOSE)
+
+     SQLSetStmtOption(hstmt,SQL_CURSOR_TYPE, SQL_CURSOR_KEYSET_DRIVEN)
+     SQLSetStmtOption(hstmt,SQL_ROWSET_SIZE,2)
+
+     SQLExecDirect(hstmt,"Select * from test",SQL_NTS)
+     SQLBindCol(hstmt,1,SQL_C_BINARY,rgbValue,cbValueMax,pcbValue)
+     SQLExtendedFetch(hstmt,SQL_FETCH_FIRST,1,pcrow,rgfRowStatus)
+
+     SQLGetData(hstmt,1,SQL_C_CHAR,cbValueMax,pcbValue)
+
+This returns SQL_SUCCESS with *rgbValue="616263" and *pcbValue=6. But calling
+SQLGetData second time on the same column like:
+
+     SQLGetData(hstmt,1,SQL_C_CHAR,VALID,100,VALID)
+
+Returns SQL_SUCCESS with *rgbValue="" and *pcbValue=0
+
+This should return SQL_NO_DATA_FOUND.
+
+The behavior occurs only if the following conditions apply:
+
+1. The column type is either binary, longbinary, or Varbinary and is bound.
+
+2. The data in the second row is longer than first row.
+
+3. A SQLExtendedFetch with fFetchType as SQL_FETCH_FIRST and SQLGetData
+  immediately following the SQLExtendedFetch call.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Access Driver version
+2.00.2317. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 ODBC VISUAL C++ MSVC MFC Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

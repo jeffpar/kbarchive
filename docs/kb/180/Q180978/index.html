@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180978: SMS: Security Considerations for SMS Service Accounts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180978: SMS: Security Considerations for SMS Service Accounts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180978/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180978/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180978/","publisher":null,"image":null,"headline":"Q180978: SMS: Security Considerations for SMS Service Accounts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180978-sms-security-considerations-for-sms-service-accounts">Q180978: SMS: Security Considerations for SMS Service Accounts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180978
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbConfig kbsmsAdmin smsadmin smsgeneral smsconfig kbArtTypeINF
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Systems Management Server service account is used by the Site Configuration
+Manager, Hierarchy Manager, and Systems Management Server Executive services.
+This account is also used for the Package Command Manager (PCM) client component
+service on Systems Management Server logon servers in the site. Because this
+account sets up and maintains directories and shares, installs services, and
+writes to the registry, it requires local Administrator rights on the computers
+it maintains (including logon servers, distribution servers, and helper
+servers). Additionally, if the "Auto-detect All Logon Servers" option is
+enabled, every member server will also have the Systems Management Server
+Inventory Agent and the PCM service installed on them. The PCM service on these
+servers uses the Systems Management Server service account.
+
+When security boundaries must be drawn to fit into an organizational or
+administrative model, Systems Management Server hierarchies should be developed.
+Each site should contain its own service account and password. When a site
+hierarchy is developed along security divisions, it is necessary to not have
+multiple sites in a single domain, because the account for each site must reside
+in the domain.
+
+MORE INFORMATION
+================
+
+Generally speaking, the less secure the environment, the easier it is to
+administer, in terms of deployment and password changes. A secure environment
+requires more complex administration.
+
+Normally, the Systems Management Server service account is granted Domain
+Administrator rights to the domains within the site. When this is done, there is
+an assumption made that the local administrator of the site server and logon
+servers is also a Domain Administrator, and visa versa.
+
+It is possible to have a multiple site hierarchy and have all sites use the same
+account and password. If Systems Management Server is configured this way,
+account maintenance is simplified. Multiple sites with unique passwords require
+more account maintenance. It is also possible to create a user account for the
+sender (a thread of the Systems Management Server Executive service) to use for
+inter-site communications. The sender account does not need to be a Domain
+Administrator, rather a Domain User with limited rights. The only requirement of
+the sender account is that it must have Administrator rights on each site
+server's SMS_SITE share (&lt;SMS_root&gt;\Sms\Despooler.box\Receive). After
+creating a user account, you can configure the sender to use a specified account
+in the Addresses portion of the Site Properties.
+
+For more information, refer to the Concepts and Planning Guide in the online
+documentation.
+
+Additional query words: prodsms admin admins
+
+======================================================================
+Keywords          : kbConfig kbsmsAdmin smsadmin smsgeneral smsconfig kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

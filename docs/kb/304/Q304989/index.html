@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/304/Q304989/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/304/Q304989/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/304/Q304989/","publisher":null,"image":null,"headline":"Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q304989-prb-debugger-cannot-read-system-symbols-on-windows-xp">Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q304989
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbDSupport kbGrpDSVCCompiler
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 6.0, used with:
+   - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Visual C++ 6.0 debugger on a Windows XP-based computer, the
+debugger is not able to load symbols for Windows system .dll files even though
+you have Windows XP system symbols correctly installed. As a result, you will
+not be able to see the function names of Windows APIs in the callstack.
+
+CAUSE
+=====
+
+Windows XP system symbols are distributed only as .pdb files, whereas system
+symbols for Windows NT and Windows 2000 are distributed as both .dbg and .pdb
+files. When the Visual C++ 6.0 debugger was written, this change was not
+anticipated. Therefore, the debugger does not search for .pdb files in the
+&lt;Windows directory&gt;\Symbols\dll folder, it looks only for the .dbg files.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+There are two ways to work around this problem:
+
+- Move each .pdb file to the directory where the corresponding system .dll file
+  is located. Typically, Windows system .dll files are in the &lt;Windows
+  directory&gt;\System32 folder.
+
+- The other method involves adding a registry key by using Regedit.exe:
+
+  1. Create a new string value, "Pdb Dirs" (without the quotation marks), if
+     you do not see it under the following registry key:
+
+  HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build
+  System\Components\Platforms\Win32 (x86)\Directories
+
+  2. Double click Pdb Dirs. The Edit String dialog box will appear.
+
+  3. In the Value data edit box, add the path (or paths) to the folders where
+     the .pdb files are located. For example:
+
+  "C:\Windows\Symbols\dll" (without the quotation marks)
+
+     Multiple paths are separated by the semicolon (";") character. For example:
+
+  "C:\Windows\Symbols\dll;C:\Windows\Symbols\ocx" (without the quotation marks)
+
+  4. Click OK to close the Edit String dialog box.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

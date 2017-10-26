@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68236: Can’t Use LINK Overlays in a BASIC OS/2 Dual-Mode Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68236: Can’t Use LINK Overlays in a BASIC OS/2 Dual-Mode Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68236/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68236/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68236/","publisher":null,"image":null,"headline":"Q68236: Can’t Use LINK Overlays in a BASIC OS/2 Dual-Mode Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68236-cant-use-link-overlays-in-a-basic-os2-dual-mode-application">Q68236: Can’t Use LINK Overlays in a BASIC OS/2 Dual-Mode Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68236
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900920-70 | mspl13_basic
+Last Modified: 29-JAN-1991
+
+Dual-mode applications are programs that can run under both OS/2 and
+DOS. You can use the Microsoft BASIC PDS 7.00 or 7.10 to create a
+dual-mode application; however, you cannot use BASIC to create a
+dual-mode application that also uses LINKed overlays for the DOS part
+of the program.
+
+This information applies to Microsoft BASIC Professional Development
+System 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+A dual-mode application is not the same as a bound application under
+OS/2. A dual-mode application is actually two programs, one DOS and
+one OS/2, that are "glued" together to form one executable file.
+
+Every OS/2 program, when linked, has the option to link-in a "stub"
+DOS program. Originally, the stub DOS program was meant to print an
+appropriate message when you attempt to run an OS/2 program under DOS.
+Usually the message is "This program cannot be run in DOS mode," or a
+similar message. You include this stub DOS program by putting the
+following line in the linker .DEF file when you link the OS/2 program
+(where DOSPROG.EXE is the name of your own DOS program):
+
+   STUB 'DOSPROG.EXE'
+
+Originally, the only purpose of this stub file was to print this
+user-friendly message, and then exit back to DOS. Eventually,
+programmers began to let this "stub" program get larger and larger
+until it became a full-blown application that ran under DOS when you
+attempted to run the OS/2 program in DOS. (The user can't tell the
+difference.) Commercial applications, such as Microsoft Word version
+5.00, were created this way. Because dual-mode applications are
+literally two full applications glued together, they tend to be huge.
+
+This technique can be used with programs created with the Microsoft
+BASIC PDS product. However, one limitation of dual-mode applications
+is that the DOS portion cannot contain overlays. Attempting to run a
+dual-mode application, where the DOS portion was linked with overlays,
+will hang the machine.
+
+Illustration
+------------
+
+The following compile and link lines create two dual-mode program
+examples, OS2OVL.EXE and OS2NOOVL.EXE. (Source code is not provided
+but you can write it easily). OS2OVL.EXE is an OS/2 program and
+includes a DOS stub program that uses overlays.
+
+WARNING: Running OS2OVL.EXE will hang your machine, requiring you to
+reboot.
+
+OS2NOOVL.EXE is an OS/2 program, with an identical DOS version of the
+program enclosed as its stub file. OS2NOOVL.EXE does not use overlays,
+and will run without problem under DOS or OS/2.
+
+To compile and link the hypothetical programs, use the following
+commands:
+
+bc dosprog.bas /Lr /o ;
+bc mod1.bas    /Lr /o ;
+bc mod2.bas    /Lr /o ;
+link dosprog mod1 mod2, dosnoovl.exe ;
+link dosprog (mod1) (mod2), dosovl.exe ;
+bc dosprog.bas /Lp /o ;
+bc mod1.bas    /Lp /o ;
+bc mod2.bas    /Lp /o ;
+link os2prog mod1 mod2, os2noovl.exe,,, os2noovl.def ;
+link os2prog mod1 mod2, os2ovl.exe ,,, os2ovl.def ;
+
+DOSPROG.BAS is a main program that calls subprograms contained in
+separate support modules, MOD1.BAS and MOD2.BAS.
+
+OS2NOOVL.DEF contains the following line:
+
+   STUB 'DOSNOOVL.EXE'
+
+OS2OVL.DEF contains the following line:
+
+   STUB 'DOSOVL.EXE'
+
+(A LINK.EXE .DEF file is a module definition file that BASIC can use
+when linking OS/2 protected-mode programs.)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

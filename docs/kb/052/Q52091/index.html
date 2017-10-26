@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q52091: Library Naming Conventions for BASIC PDS 7.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q52091: Library Naming Conventions for BASIC PDS 7.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/052/Q52091/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/052/Q52091/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/052/Q52091/","publisher":null,"image":null,"headline":"Q52091: Library Naming Conventions for BASIC PDS 7.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q52091-library-naming-conventions-for-basic-pds-700">Q52091: Library Naming Conventions for BASIC PDS 7.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q52091
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S891206-120 | mspl13_basic
+Last Modified: 14-JAN-1990
+
+The following article explains the library naming conventions used by
+Microsoft BASIC Professional Development System (PDS) Version 7.00 for
+MS-DOS and MS OS/2.
+
+In Microsoft BASIC PDS Version 7.00, library names are acronyms that
+follow a standard format:
+
+   NAMEmso.LIB
+       m = Alternate (A) or Emulation (E) math package.
+       s = Far (F) or Near (N) variable-length string storage.
+       o = Protected (P) or Real (R) mode operating system.
+
+The format starts with a base NAME of several characters used to
+identify the function of the library (such as BRT70, BCL70, FINANC,
+FONTB, MATB, etc.). Next is a two- or three-character extension
+specifying support for which math package (emulation or alternate
+math), variable-length string storage (near or far), or operating
+system (real or protected mode).
+
+Real mode refers to the DOS Version 3.x box in MS OS/2, or to straight
+MS-DOS. Protected mode refers to MS OS/2 only.
+
+BASIC Run-Time Libraries
+------------------------
+
+   BRT70EFR.LIB, BRT70ENR.LIB, BRT70EFP.LIB, BRT70ENP.LIB
+   BRT70ANR.LIB, BRT70AFR.LIB, BRT70ANP.LIB, BRT70AFP.LIB
+
+   Format: BRT70mso.LIB
+                m = Alternate (A) or Emulation (E) math package.
+                s = Far (F) or Near (N) strings.
+                o = Protected (P) or Real (R) mode operating system.
+
+BASIC Stand-Alone Libraries
+---------------------------
+
+   BCL70EFR.LIB, BCL70ENR.LIB, BCL70EFP.LIB, BCL70ENP.LIB
+   BCL70ANR.LIB, BCL70AFR.LIB, BCL70ANP.LIB, BCL70AFP.LIB
+
+   Format: BCL70mso.LIB    (where the mso letters are defined above)
+
+Financial Libraries
+-------------------
+
+   FINANCER.LIB, FINANCAR.LIB, FINANCEP.LIB, FINANCAP.LIB
+
+   Format: FINANCmo.LIB    (where the mo letters are defined above)
+   (Name is not dependent upon Far or Near string storage.)
+
+   FINANCER.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+Date/Time Format Libraries
+--------------------------
+
+   DTFMTER.LIB, DTFMTAR.LIB, DTFMTEP.LIB, DTFMTAP.LIB
+
+   Format: DTFMTmo.LIB    (where the mo letters are defined above)
+   (Name is not dependent upon Far or Near string storage.)
+
+   DTFMTER.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+Font Libraries
+--------------
+
+   FONTBEFR.LIB, FONTBENR.LIB, FONTBANR.LIB, FONTBAFR.LIB
+
+   Format: FONTBmsR.LIB    (where the ms letters are defined above)
+   (There is no protected mode version.)
+
+   FONTBEFR.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+Matrix Operations Toolbox Libraries
+-----------------------------------
+
+   MATBEFR.LIB, MATBENR.LIB, MATBEFP.LIB, MATBENP.LIB
+   MATBANR.LIB, MATBAFR.LIB, MATBANP.LIB, MATBAFP.LIB
+
+   Format: MATBmso.LIB    (where the mso letters are defined above)
+
+   MATBEFR.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+User Interface Toolbox Libraries
+--------------------------------
+
+   UITBEFR.LIB, UITBENR.LIB, UITBEFP.LIB, UITBENP.LIB
+   UITBANR.LIB, UITBAFR.LIB, UITBANP.LIB, UITBAFP.LIB
+
+   Format: UITBmso.LIB    (where the mso letters are defined above)
+
+   UITBEFR.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+Presentation Graphics Toolbox Libraries
+---------------------------------------
+
+   CHRTBEFR.LIB, CHRTBENR.LIB, CHRTBEFP.LIB, CHRTBENP.LIB
+   CHRTBANR.LIB, CHRTBAFR.LIB, CHRTBANP.LIB, CHRTBAFP.LIB
+
+   Format: CHRTBmso.LIB    (where the mso letters are defined above)
+
+   CHRTBEFR.QLB is the Quick library for use in the QBX.EXE
+   environment.
+
+Stub Library
+------------
+
+   NOTRNEMR.LIB, NOTRNEMP.LIB
+
+   Format: NOTRNEMo.LIB
+                  o = Protected (P) or Real (R) mode operating system.
+
+   Description: A stub library file that removes all intrinsic math
+                functions including LOG, SQR, SIN, COS, TAN, ATN, EXP,
+                ^, CIRCLE statements with a start and/or stop angle,
+                and DRAW statements with A or T commands.
+
+   (NOTRNEMR.LIB and NOTRNEMP.LIB are the only .LIB stub files in
+   BASIC 7.00. For a list of .OBJ stub files, refer to Pages 540 and
+   541 of "Microsoft BASIC Version 7.0: Programmer's Guide.")
+
+OTHER LIBRARY NAMING CONVENTIONS
+--------------------------------
+
+ISAM Libraries
+--------------
+
+   PROISAMD.LIB, PROISAM.LIB
+
+   PROISAMD.LIB gives you full ISAM support, including the data
+   dictionary routines for creating and deleting indexes, tables, and
+   databases. PROISAM.LIB (with no D) supports ISAM programs without
+   the ability to create or delete indexes, tables, or databases.
+
+   PROISAM.EXE and PROISAMD.EXE are the TSR (Terminate-and-Stay-
+   Resident) programs that provide ISAM support in the QBX.EXE
+   environment, or in .EXE programs where you don't wish to link the
+   ISAM support directly to your .EXE file.
+
+OS/2 Function Library
+---------------------
+
+   Name: OS2.LIB
+   Description: Used for operating system calls into MS OS/2.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155857: Windows 95 Multiple Provider Router and Network Call Order | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155857: Windows 95 Multiple Provider Router and Network Call Order" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155857/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155857/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155857/","publisher":null,"image":null,"headline":"Q155857: Windows 95 Multiple Provider Router and Network Call Order","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155857-windows-95-multiple-provider-router-and-network-call-order">Q155857: Windows 95 Multiple Provider Router and Network Call Order</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155857
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbnetwork win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SUMMARY
+=======
+
+Windows 95 provides seamless access to network services and resources using the
+Multiple Provider Router. This article describes the Multiple Provider Router.
+
+MORE INFORMATION
+================
+
+The Multiple Provider Router (MPR) routes incoming network requests to the
+appropriate network provider. It uses the same interface whether one or multiple
+network providers is installed. It also allows for unlimited protected-mode
+network providers as well as one 16-bit network provider.
+
+When multiple network providers are installed, MPR passes the call to each
+installed network provider one at a time, in a defined order. The installed
+network providers are sorted by this defined order when they are loaded.
+Providers with lower values are called before those with higher values. Once a
+network provider returns a successful resolution of a call, additional network
+providers are not tried.
+
+The only method to change the order in which installed network providers are
+called is to modify the Windows 95 registry.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+Network provider information is stored in the following registry branch:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+
+Under the Services branch, there is a CallOrder key for each installed network
+provider. The default CallOrder value for the Novell NetWare network provider is
+00 00 00 20; the default value for the Microsoft network provider is 00 00 00
+40. In this scenario, the NetWare network provider is called before the
+Microsoft network provider because of its lower CallOrder value. The selection
+of the primary client does not affect these settings.
+
+Mpr.dll uses two other components, Mprserv.dll and Mprexe.exe, to facilitate
+faster loading of network providers and routing of network requests. Programs
+link to Mpr.dll (the smaller component), which copies API parameters to shared
+memory and signals a thread in Mprexe.exe to do the work. Mprserv.dll has the
+code to load net providers, route requests, and so on.
+
+======================================================================
+Keywords          : kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

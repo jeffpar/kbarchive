@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257367: XCLN: Error Message When You Open a Recurring Appointment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257367: XCLN: Error Message When You Open a Recurring Appointment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257367/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257367/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257367/","publisher":null,"image":null,"headline":"Q257367: XCLN: Error Message When You Open a Recurring Appointment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257367-xcln-error-message-when-you-open-a-recurring-appointment">Q257367: XCLN: Error Message When You Open a Recurring Appointment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257367
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to view or delete a recurring appointment in the Day/Week/Month
+view, you may receive the following error message:
+
+  Can't open this item. The object could not be found.
+
+CAUSE
+=====
+
+The form may be damaged.
+
+RESOLUTION
+==========
+
+To resolve this problem, run the SwitchForms utility. For additional information
+about how to run the Switch Forms utility, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q179437 OL98: (CW) Switch Forms Utility for Outlook and Exchange
+
+When you run the Switch Forms utility, you may receive the following error
+message:
+
+  Forms could not be found.
+
+If you receive this error message, you must install the Visuals for Form Design
+component. For additional information about Visuals for Form Design, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q143476 OL97: SwitchForms Utility for Outlook and Exchange
+
+The Switch Forms utility requires the form configuration files from the Outlook
+client. The Microsoft Outlook Setup program installs the form configuration
+files automatically. The Switch Forms utility also requires the Outlook form
+configuration files. The Typical Setup option in Microsoft Office Setup or
+Outlook Setup does not provide these form configuration files.
+
+To install the Outlook form configuration files:
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. Click Microsoft Outlook 98, and then click Add/Remove.
+
+3. Click Add New Components, and then click either Install From CD or Install
+  From Web.
+
+4. Click Development Tools.
+
+5. Follow the instructions in the Installation Wizard to install the
+  configuration files.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

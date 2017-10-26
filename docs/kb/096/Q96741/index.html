@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96741: How Fault Tolerance Is Implemented | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96741: How Fault Tolerance Is Implemented" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96741/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96741/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96741/","publisher":null,"image":null,"headline":"Q96741: How Fault Tolerance Is Implemented","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96741-how-fault-tolerance-is-implemented">Q96741: How Fault Tolerance Is Implemented</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96741
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+Fault tolerance is implemented (and detected by its utilities) by three types of
+disk changes: added lines in the CONFIG.SYS file, hidden/system files, and
+modifications to the partition tables.
+
+MORE INFORMATION
+================
+
+These changes are explained below, but before you read about them, keep in mind
+two system aspects that are important to fault tolerance:
+
+First, FDISKPM presents the view that there is only one extended partition and
+one or more logical drives in it, but, each logical drive is in fact an extended
+partition with its own partition table.
+
+Second, when a drive is mirrored, a partition is created whose system type is
+unknown to most of the OS/2 system. It does not receive a drive letter, and is
+virtually inaccessible to the user. For instance, if a mirrored drive does not
+take up the whole extended area of its disk, FDISKPM honors the allocation of
+the mirrored partition, but does not display a logical drive. When asked to
+create a logical drive, the space available is reduced to account for the
+mirrored partition.
+
+Means of Fault Tolerance Implementation
+---------------------------------------
+
+- Two lines in CONFIG.SYS:
+
+     device=c:\&lt;lanman&gt;\netprog\diskft.sys
+     run=c:\&lt;lanman&gt;\netprog\ftmonit.exe
+
+  where &lt;lanman&gt; is the LAN Manager directory (default: LANMAN)
+
+- A hidden/system file (FTCFG.DRV) in the root directory on each fault tolerant
+  drive that contains fault tolerance information about that drive.
+
+- A hidden/system file (FTCFG.SYS) in the root directory of the boot volume
+  that contains system-wide configuration information.
+
+- FTPEND.SYS, FTPENDF.SYS, and FTPENDCP.SYS, which contain hold information
+  about drives pending mirroring.
+
+Mirrored Partitions
+-------------------
+
+The mirror partitions are created when mirroring is done.
+
+Mirrored partitions appear as one partition to HPFS. For example, HPFS does not
+know whether it is hotfixing a master or duplicate partition--a hotfix is made
+on both the master and duplicate partitions.
+
+Mirroring is not done on the file level. It is done on the sector level on a
+partition basis. Some other operating systems, by contrast, mirror on a sector
+level on a physical disk basis.
+
+LAN Man Files Involved in Fault Tolerance
+-----------------------------------------
+
+- For LAN Manager 2.0: DISK01.SYS (and DISK02.SYS for ABIOS machines) or a
+  driver supplied by the OEM.
+
+- For LAN Manager 2.1 and later: FT.VSD (a LADDR system module) provides
+  device-independent support. For every LADDR system disk I/O request, FT.VSD
+  calls DISKFT.SYS to see if the request should be mirrored, and submits the
+  requests to the proper board interface driver (.BID) for a mirrored write.
+  When the .BID completes the request, FT.VSD reports to DISKFT, which checks
+  the request's error status field. DISKFT keeps track of the mirror
+  configurations and statuses, monitors errors on all system drives, and
+  supplies memory for duplicated requests (not memory for request data, only
+  for request headers).
+
+Other Fault Tolerance Files and Programs
+----------------------------------------
+
+- FTSETUP detects the condition of fault tolerance by looking at the
+  hidden/system files and at the partition tables.
+
+- FTADMIN uses the hidden/system configuration files to track errors and does
+  not rely as heavily as FTSETUP does on the partition tables.
+
+- The TABLES.EXE program displays partition table information. You can find it
+  on Utilities Disk 2 of the "LAN Manager Resource Kit."
+
+Additional query words: 2.10 2.10a 2.20 2.1 2.1a 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

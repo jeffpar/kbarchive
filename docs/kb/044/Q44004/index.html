@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44004: Error L2025 from BASIC Calls to QuickC 2.00 Routines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44004: Error L2025 from BASIC Calls to QuickC 2.00 Routines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44004/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44004/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44004/","publisher":null,"image":null,"headline":"Q44004: Error L2025 from BASIC Calls to QuickC 2.00 Routines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44004-error-l2025-from-basic-calls-to-quickc-200-routines">Q44004: Error L2025 from BASIC Calls to QuickC 2.00 Routines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44004
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_C B_QuickBAS | mspl13_c
+Last Modified: 2-MAY-1989
+
+Calling C routines in object modules compiled with Microsoft QuickC
+Version 2.00 from BASIC routines works correctly only when the BASIC
+modules are compiled with QuickBASIC Version 4.50. Using earlier
+versions of QuickBASIC or the BASIC Compiler 6.00 or 6.00b results in
+the following linker error message:
+
+   L2025  'name' : symbol defined more than once
+
+Prior versions of QuickC can be linked successfully with the earlier
+versions of QuickBASIC or the BASIC Compiler 6.00 or 6.00b.
+
+In addition, when using graphics routines in C or BASIC mixed-language
+programs, the graphics calls must be from the QuickBASIC routines and
+use the QuickBASIC library. If graphics routines are called from
+QuickC 2.00, the linker returns the same error message as above. If
+the graphics routines are called from prior versions of the C run-time
+libraries, no error message is displayed; however, the results are
+unpredictable.
+
+If the QuickC 2.00 library includes the C Graphics or Pgchart library
+routines, then the QuickBASIC Version 4.50 calling program must be
+compiled without the /O option (using the BRUN45 library instead of
+BCOM45). Otherwise, you will get many "symbol defined more than once"
+errors at link time.
+
+Using the linker option /NOE (NO Extended function name/symbol
+dictionary search) will not prevent the L2025 error because the
+symbols are defined in both the QuickC 2.00 and BASIC libraries.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197986: How to Configure Windows 95 Policies with Load Balancing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197986: How to Configure Windows 95 Policies with Load Balancing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197986/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197986/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197986/","publisher":null,"image":null,"headline":"Q197986: How to Configure Windows 95 Policies with Load Balancing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197986-how-to-configure-windows-95-policies-with-load-balancing">Q197986: How to Configure Windows 95 Policies with Load Balancing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197986
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information on how to do this, view the "Restoring
+the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+Key" online Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+This article walks through the steps required to configure a Windows 95 client
+to receive a system policy in a Windows NT domain environment. Furthermore, it
+discusses the additional steps to configure the client computer for load
+balancing. Load balancing in this context means that a Windows 95 client can
+receive its policy from any validating domain controller. By default, Windows 95
+computers will only query the Netlogon share of the primary domain controller
+(PDC) for the Config.pol file.
+
+1. Create the policy file from a Windows 95 computer. The System Policy Editor
+  application should be installed through Add/Remove Programs. Click the
+  Windows Setup tab and click Have Disk. In the Install from Disk dialog box,
+  specify the Admin\Apptools\Poledit directory on the Windows 95 compact disc.
+  Click OK, and then click OK again. Make sure that System Policy Editor is
+  selected. If you want to install group policies on this computer as well,
+  click to select the Group Policies check box. Click Install.
+
+2. Ensure that the Windows 95 client's workgroup name is the same as the domain
+  name. To verify this, click Start, click Settings, click Control Panel, and
+  double-click Network, and then look at the Identification tab.
+
+3. The client must log on to a Windows NT domain. To verify this, click Start,
+  click Settings, click Control Panel, and then double-click Network. Select
+  Client for Microsoft Networks and click properties. Verify that it is
+  configured to log on to the correct Windows NT Domain.
+
+4. Enable User Level Access Control. Specify the domain name in the Obtain List
+  Of Users And Groups From box. To verify this, click Start, click Settings,
+  click Control Panel, and then double-click Network. Click the Access Control
+  tab.
+
+5. Make sure User Profiles are enabled on the Window 95 computer. Click Start,
+  click Setting, click Control Panel, and double-click Passwords. Click the
+  User Profiles tab, click "Users can customize their preferences and desktop
+  settings. Windows switches to your personal settings whenever you log in."
+  Click to select the appropriate check boxes under User Profile Settings.
+
+6. Restart the computer.
+
+7. On every Windows 95 computer that will needs group policy support, click
+  Control Panel, click Add/Remove Programs, click the Windows Setup tab, click
+  Have Disk. Use the Poledit folder from Window 95 compact disc. You do NOT
+  have to actually install the Policy Editor on each PC, only the Groups
+  support.
+
+8. By default, Windows 95 needs to contact the Netlogon share on the PDC to
+  check for a Config.pol file. This behavior can be modified by enabling load
+  balancing. There are several ways to achieve this behavior:
+
+  a. Enable load balancing in the default computer portion of the policy, which
+     will modify the system portion of the registry on the Windows 95 client.
+     The client must contact the PDC the first time to apply this policy.
+     Subsequent logon requests will download the policy from the validating
+     domain controller.
+
+  b. To avoid forcing a Windows 95 client to contact the PDC even one time for
+     the policy, you can apply the policy to one computer and then make a
+     registry file. Import the exported registry file to each client.
+
+  c. Use Regedit to manually modify the following subkey:
+
+        HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Update
+
+     WARNING: Using Registry Editor incorrectly can cause serious problems that
+     may require you to reinstall your operating system. Microsoft cannot
+     guarantee that problems resulting from the incorrect use of Registry
+     Editor can be solved. Use Registry Editor at your own risk.
+
+     For information about how to edit the registry, view the "Changing Keys And
+     Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+     Information in the Registry" and "Edit Registry Data" Help topics in
+     Regedt32.exe. Note that you should back up the registry before you edit
+     it. If you are running Windows NT, you should also update your Emergency
+     Repair Disk (ERD).
+
+     1. Select the Update key.
+
+     2. On the Edit menu, click New DWORD Value.
+
+     3. Type: LoadBalance.
+
+     4. Double-click the load balance value.
+
+     5. In the Edit DWORD Value dialog box, change the Value Data to 1.
+
+MORE INFORMATION
+================
+
+To create the Load Balancing Policy file, follow these steps:
+
+1. On a Windows 95 computer, click Start, click Run, and then type "poledit"
+  (without the quotation marks).
+
+2. On the File menu, click New Policy.
+
+3. Double-click default computer.
+
+4. Click the plus sign (+) of Network.
+
+5. Click the plus sign (+) of Update.
+
+6. Click to select the Remote Update check box.
+
+7. Set the Remote Update text box to Automatic (use default path) or leave
+  blank.
+
+8. Click to select the Load-balance check box.
+
+If individual policies work, but group policies fail, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q165064 Group Policies Are Ignored, All Other Policies Work as Expected
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

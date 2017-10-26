@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236399/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236399/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236399/","publisher":null,"image":null,"headline":"Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236399-howto-troubleshoot-visual-c-performance-problems">Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236399
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): _IK920 kbwizard kbClassView kbEditor kbide kbVC500 kbVC600 kbClassWizard kbFAQ kbGrpDST
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article documents steps that could improve the performance of Visual C++ in
+various scenarios. All of the following scenarios apply to Visual C++ 6.0, and
+some apply to Visual C++ 5.0 as well.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Suggestions to Improve Visual C++ Performance
+---------------------------------------------
+
+- Every workspace has files with .ncb and .opt extensions associated with it.
+  These files can become corrupt. To regenerate them, first close the
+  workspace. Then go to the workspace directory to rename or delete these two
+  files. Reopening the workspace will regenerate them. You may experience
+  delays when the files are being created.
+
+  NOTE: The .ncb file holds information for ClassView, IntelliSense, and the
+  WizardBar. The .opt file is the workspace configurations file. Deleting the
+  .opt file will result in the loss of current window positions, breakpoints,
+  and a few other minor settings.
+
+  For additional information, please click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q173164 PRB: Loading a Workspace Is Slow in Visual C++
+
+- Visual C++ 6 only: IntelliSense can slow Visual C++. To check and resolve
+  this, disable IntelliSense by selecting Options from the Tools menu. On the
+  Editor tab, clear all checkboxes in the "Statement completion options" group.
+  For additional information, please click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q153284 INFO: Limitations of IntelliSense in Visual C++ 6.0
+
+
+- Source code control software, such as Microsoft Visual SourceSafe, that
+  integrates with the Visual C++ integrated development environment (IDE) can
+  be configured to connect to a source code server during Visual C++ startup.
+  In such cases, a loss in network connectivity will cause Visual C++ to start
+  up very slowly. To improve performance, either ensure proper network
+  connectivity or disable the source code control software integration with the
+  Visual C++ IDE. To do the latter, quit Visual C++, and then use RegEdit.Exe
+  to locate the following registry key and set its Disabled value to (DWORD)
+  0x00000001:
+
+  HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Source Control\Disabled
+
+  NOTE: Be sure to quit Visual C++ before modifying the registry keys;
+  otherwise, your changes will not take effect.
+
+- Source code control software can perform background status updates on Visual
+  C++ projects under source code control. If this feature is enabled, these
+  updates may cause the IDE to respond slowly. To disable these background
+  updates, select Options from the Tools menu. Then click the Source Control
+  tab, and clear the Perform Background Status Updates checkbox.
+
+
+  For additional information, please click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q195375 FIX: ClassView Can Be Very Slow When SourceSafe Is Being Used
+
+
+- Place your source files in fewer than 64 network directories. This helps
+  because the method that Visual C++ uses to get file change notifications
+  scans the 64th and above directories every 5 seconds.
+
+  For additional information, please click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q216098 PRB: Visual C++ IDE Slows When Files Are in Many Directories
+
+
+- The WizardBar may cause performance problems when you use the source editor
+  and resource editor. Disabling the WizardBar and restarting Visual C++ may
+  improve performance. For additional information, please click the article
+  numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q202591 BUG: Developer Studio Source and Dialog Editors Respond Slowly
+
+  Q170511 PRB: WizardBar Notification Slows Down Dialog Editor
+
+- Splitting large numbers of resources into resource-only DLLs can improve the
+  performance of the IDE. You can see this by adding approximately 100 dialogs
+  to a Microsoft Foundation Classes (MFC) application created by the AppWizard.
+  Associating any controls in those dialogs to code using the ClassWizard will
+  result in performance problems for that dialog.
+
+  Before embarking on a project, you might consider designing your project to
+  keep localized resources inside resource-only DLLs. See the following MFC
+  technical note in the MSDN Online Libraries
+  (http://msdn.microsoft.com/resources/libraries.asp) for more information:
+
+  TN057: Localization of MFC Components
+
+  You may also want to consider grouping your resources and placing them in
+  separate resource files (.rc) rather than having them in one file. See the
+  following MFC technical note in the MSDN Online Libraries
+  (http://msdn.microsoft.com/resources/libraries.asp) for more information:
+
+  TN035: Using Multiple Resource Files and Header Files with Visual C++
+  (http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_mfcnotes_tn035.htm)
+
+
+- Visual C++ 6 only: Editing source code during a debug session may be slow.
+  Disabling the Edit and Continue options might improve performance. To do so,
+  from the Tools menu select Options. On the Debug tab, clear the Debug
+  Commands Invoke Edit and Continue checkbox. You might also want to avoid
+  using the Edit and Continue compiler switch /ZI and use /Zi instead.
+
+
+- Be aware of all add-ins and macros that are running within the IDE because
+  process-intensive or poorly designed macros and add-ins can slow Visual C++.
+  To check this, from the Tools menu, select Customize. All loaded add-ins and
+  macros are listed on the Add-ins and Macro Files tab. To test whether these
+  are degrading performance, clear the checkboxes for all the add-ins and
+  macros. Quit Visual C++ and restart to ensure that these add-ins and macros
+  are unloaded.
+
+
+- Find out whether your files are located on a remote non-Microsoft operating
+  system. Make sure that your network client software is configured properly.
+  Increased network traffic may also affect performance.
+
+
+- Project dependencies might also increase build time. For additional
+  information, please click the article number below to view the article in the
+  Microsoft Knowledge Base:
+
+  Q229030 BUG: A Workspace with Many Dependencies May Appear to Hang
+
+  Exporting make files for the projects could also be slow in such cases.
+
+- A large search path for include files can also degrade performance. The more
+  paths Visual C++ must search to locate the include files, the longer
+  compilation will take. Using network paths can also cause performance
+  problems. To find the search paths that are project-specific, follow these
+  steps:
+
+  1. On the Project menu, click Settings.
+
+  2. In the Settings dialog box, select the C/C++ tab.
+
+  3. Select Preprocessor from the Category drop-down list.
+
+  4. The project-specific include paths are located in the Additional include
+     directories edit box.
+
+  To find the search paths that apply to Visual C++ as a whole, follow these
+  steps:
+
+  1. On the Tools menu, click Options.
+
+  2. In the Options dialog box, select the Directories tab.
+
+  3. In the Show directories for list, select Include files.
+
+- You may be running short of system virtual memory and hard disk space. If
+  needed, adding more RAM (Random Access Memory) or adding a larger hard disk
+  may improve performance.
+
+  On computers running Windows NT, use Task Manager to monitor memory usage. On
+  computers running Windows 95 or Windows 98, you can use Resource Meter. To
+  install Resource Meter, go to Add/Remove Programs in Control Panel, select
+  the Windows Setup tab, and double-click System Tools. Resource Meter should
+  be listed as one of the tools. Select the checkbox and click OK to install
+  it. You may also use Process Viewer (PView.exe), which is shipped with Visual
+  C++.
+
+- Other programs or services may be utilizing valuable CPU time and memory. In
+  such cases, you might temporarily remove programs from the system Startup
+  folder and restart the computer. On systems running Windows NT, there could
+  be more than one Startup group; empty all such Startup groups. You can use
+  the tools mentioned in the previous step to monitor CPU and memory
+  utilization.
+
+  For additional information about customizing and disabling the Startup group,
+  please click the article numbers below to view the articles in the Microsoft
+  Knowledge Base:
+
+  Q152122 How to Customize the Start or Programs Menu
+
+  Q81606 Disabling the Startup Group in Windows
+
+- Antivirus programs running in the background may be scanning the files that
+  you are working on. If disabling the virus scanner temporarily improves
+  Visual C++ performance, then configure the virus scanner to scan less often
+  or contact the software vendor for the latest updates.
+
+- A bad driver could be the cause of performance problems, potentially causing
+  repainting delays. Eliminate display drivers as a possible cause of a
+  performance problem. On computers running Windows NT, try to reproduce the
+  problem in the Windows NT VGA mode. On computers running Windows 95 or
+  Windows 98, change the display adapter to standard VGA by using the Display
+  application in Control Panel. In these modes, third-party display drivers are
+  disabled.
+
+  If the driver is at fault, try to obtain an updated version. A temporary
+  workaround might involve changing the display settings. Start the Display
+  program from Control Panel, and then select the Settings tab. Change either
+  the desktop resolution, refresh frequency, or number of colors being used by
+  the system.
+
+- The .OPT file in the project folder may get corrupted. One symptom is when
+  Visual C++ inserts a large number of breakpoints, some of them multiple
+  times. In this case, after starting to debug the application, the IDE becomes
+  unresponsive for several minutes. To troubleshoot, close the workspace,
+  delete the .OPT file, reopen the workspace, and reset any desired breakpoints
+  and/or project settings that were stored in the .OPT file.
+
+
+Additional query words: kbdevstudio kbdsupport
+
+======================================================================
+Keywords          : _IK920 kbwizard kbClassView kbEditor kbide kbVC500 kbVC600 kbClassWizard kbFAQ kbGrpDSTools kbvc600faq 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

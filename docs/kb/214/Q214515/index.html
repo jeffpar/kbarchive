@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214515/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214515/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214515/","publisher":null,"image":null,"headline":"Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214515-how-to-determine-which-virtual-server-references-port-lmw3svc">Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214515
+Product(s): Internet Information Server
+Version(s): WINDOWS:; winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to determine the server instance [Port /LM/W3SVC/#:]
+in the Frontpg.ini file that refers to a particular virtual server by its IP
+address and/or Web site name.
+
+MORE INFORMATION
+================
+
+In the Frontpg.ini file (located by default in C:\Winnt), you will see [Port
+/LM/W3SVC/#:] (where # is a number referring to the server instance).
+
+This is added each time you install the FrontPage Server Extensions to a new
+virtual server on your Web server. The number at the end will increase with each
+new virtual server or multihosted site. If you uninstall the extensions from a
+virtual server or a multihosted site, you will see the [Port /LM/W3SVC/#:]
+removed.
+
+If you install another virtual server or multihosted site, it will not use the
+number of the last deleted site. It will increase from whatever the last number
+of the virtual server or multihosted Web site that was created. The only way
+that this number will stay the same is if the virtual server or multihosted site
+that you deleted was the last one that you created.
+
+To determine the IP address and/or the name of the virtual server in the
+Frontpg.ini file that uses [Port /LM/W3SVC/#:], perform the following steps:
+
+1. Click Start, click Run, and then type the following to open the MSDOS dialog
+  box.
+
+2. At the command prompt type cd c:\winnt\system32\inetserv\adminsamples and
+  press the Enter key. This will put you inside the Adminsamples dir (the drive
+  letter may differ than the above example).
+
+3. You will see the following path: c:\winnt\system32\inetserv\adminsamples
+
+4. At the end of the path, type the following (without the quotation marks):
+  "adsutil.vbs get w3svc/#/serverbindings" (where # is the number in the
+  Frontpg.ini file that you are trying to determine the IP address and/or the
+  Web site name of the virtual server [Port /LM/W3SVC/#:]).
+
+5. Press the Enter key to execute the Visual Basic script and return you with
+  the following:
+
+  serverbindings : &lt;List&gt; "000.000.000.000:80:" or
+  : &lt;List&gt; "000.000.000.000:80:" "80: website name"
+
+To determine the name of the multihosted Web site in the Frontpg.ini file that
+uses [Port /LM/W3SVC/#:], perform the following steps:
+
+1. Click Start, point to Programs, point to Windows NT 4.0 Option Pack, point to
+  Microsoft Internet Information Server, and then click Internet Service
+  Manager. This will open the Microsoft Management Console (MMC).
+
+2. Look at each multihosted Web site to determine the number that has been
+  assigned during its creation.
+
+3. To do this, right-click the Web site and click Properties.
+
+4. You will see multiple tabs across the top of the dialog box. Click the Web
+  Site tab (it should open by default).
+
+5. At the bottom of the page, click the check box to enable logging (if it is
+  not already checked).
+
+6. Click the Properties box to open an extended logging dialog box.
+
+7. Click the General Properties tab (it should open by default).
+
+8. At the bottom of the dialog box, you will see the w3svc\#\exyymmdd.log log
+  file name (where # represents the number [Port /LM/W3SVC/#:] in the
+  Frontpg.ini file).
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbFrontPageSearch kbiis400 _IKkbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3
+Version           : WINDOWS:; winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

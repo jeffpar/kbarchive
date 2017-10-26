@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140303/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140303/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140303/","publisher":null,"image":null,"headline":"Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140303-fix-dbsetprop-for-datatype-gives-incorrect-results">Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140303
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the DBSETPROP command to change the datatype property of a field for a
+remote view gives incorrect results for the number(N) and float(F) fields.
+Attempting to change the number of decimal positions for type float(F) results
+in asterisks appearing in the field. Changing the number of decimal positions
+displayed for a numeric field changes only the results in the active cell in a
+Browse window. You can change the numbers of positions displayed in Double (B)
+fields, and the Browse window will reflect the correct number of positions
+displayed for active and inactive cells. Currency (Y) fields always display four
+decimal places. Attempts to change this result in the following error message
+when the BROWSE command is issued:
+
+  Datatype property for field 'fieldname' is invalid
+
+WORKAROUND
+==========
+
+Float fields and numeric fields behave the same way. Use N instead of F when
+trying to change the number of displayed positions for a float field. However,
+the new number of decimal positions displayed only effects the active cell in a
+browse.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Type the following commands in the Command window:
+
+     CREATE DATABASE decimal
+     CREATE TABLE decimal (afloat f(10,5), anumeric n(10,5), ;
+        adouble b(5), acurrency y(10,4))
+
+2. Use the Upsizing Wizard to upsize the table to SQL Server.
+
+3. Type the following command in the Command window:
+
+     SET DECIMALS to 3
+
+4. Create a remote view of the table called rem_dec.
+
+  Notice all fields come in with three decimals except currency, which comes in
+  with four decimals.
+
+5. For each of the following DBSETPROP() function calls, close the view, issue
+  the function call, and then browse the view.
+
+     =DBSETPROP("rem_dec.anumeric","field","datatype","N(10,2)")
+     * The number of decimal positions displayed is still three. If the
+     * insertion point is placed on that field, the record highlighted will
+     * show two decimal positions.
+
+     =DBSETPROP("rem_dec.adouble","field","datatype","B(10,2)")
+     * The number of decimal positions displayed changes to two.
+
+     =DBSETPROP("rem_dec.acurrency","field","datatype","Y(10,2)")
+     * Trying to browse the view will produce the error message "Datatype
+     * property for field 'acurrency' is invalid." Resetting the number of
+     * decimals to four will allow the view to be browsed again.
+
+     =DBSETPROP("rem_dec.afloat","field","datatype","F(10,2)")
+     * The field displays asterics. Using N instead of F allows the field
+     * to be viewed, but the results will be the same as they were for the
+     * numeric field.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

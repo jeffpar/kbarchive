@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132790: Unable to Restore cc:Mail After Opening .wri File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132790: Unable to Restore cc:Mail After Opening .wri File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132790/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132790/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132790/","publisher":null,"image":null,"headline":"Q132790: Unable to Restore cc:Mail After Opening .wri File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132790-unable-to-restore-ccmail-after-opening-wri-file">Q132790: Unable to Restore cc:Mail After Opening .wri File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132790
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): win95 appscomp kbAppCompatibility
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a file with a .wri extension from cc:Mail version 2.1, WordPad
+starts automatically, and the cc:Mail window is minimized, but you are unable to
+restore the cc:Mail window after closing WordPad.
+
+CAUSE
+=====
+
+When you run a .wri file from cc:Mail, cc:Mail attempts to run the program that
+the .wri extension is associated with, and the cc:Mail window is minimized. Even
+after you upgrade to Windows 95, the following line, found in the [extensions]
+section of the Win.ini file, causes .wri files to be associated with Write.exe:
+
+     wri=write.exe ^.wri
+
+However, in Windows 95, Write.exe has been replaced with a program stub that
+starts WordPad (Wordpad.exe). Therefore, when you open a .wri file from cc:Mail
+in Windows 95, Write.exe starts, which in turn starts WordPad. When you then
+quit WordPad, the Write.exe stub remains in memory. Because the original program
+run from cc:Mail, Write.exe, has not been closed, the cc:Mail window is not
+automatically restored. In fact, the cc:Mail window cannot be restored until the
+Write.exe program is closed.
+
+RESOLUTION
+==========
+
+Modify the [extensions] section of the Win.ini file so that the line that reads
+
+     wri=write.exe ^.wri
+
+reads:
+
+     wri=c:\progra~1\access~1\wordpad.exe ^.wri
+
+NOTE: Changing the program that .wri files are associated with in Windows
+Explorer does not correct this problem.
+
+MORE INFORMATION
+================
+
+cc:Mail is manufactured by cc:Mail, Inc., a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

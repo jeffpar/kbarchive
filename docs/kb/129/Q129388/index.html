@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129388/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129388/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129388/","publisher":null,"image":null,"headline":"Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129388-info-how-null-string-pointers-behave-in-visual-basic-40">Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129388
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbprogramming kbVBp400
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic version 4.0 recognizes two very different kinds of strings that
+look the same but act differently. One is a Null pointer string, the other is an
+empty string. You might code them in a public module as follows:
+
+     Public sNull As String
+     Public Const sEmpty = ""
+
+If you look at these two strings in the Watch window, they look exactly the same;
+both displayed as "". You can use them in almost the same contexts, but
+internally they are very different.
+
+MORE INFORMATION
+================
+
+Internally, sNull is a null pointer. It does not point to any memory location
+and has a value of zero. In C, you would code it as:
+
+     const char *sNull = NULL;
+
+Internally, sEmpty is a pointer to an empty string. It is a valid pointer to some
+memory location. In C, you would code it as:
+
+     const char sEmpty[] = "";
+
+All Visual Basic version 4.0 variables are set to zero (0) until initialized. In
+previous versions of Visual Basic, uninitialized variable-length strings were
+automatically set to an empty string (""). Therefore, for compatibility with
+previous versions, you might think that you must initialize string variables to
+empty strings. However, Visual Basic version 4.0 strings are in the BSTR format
+where a null pointer is defined to behave exactly as an empty string does.
+Therefore, in Visual Basic version 4.0, you can leave the initial zero value of
+an uninitialized strings alone because it will behave as if it were an empty
+string.
+
+This means that sNull can now be passed to any Windows API function that takes a
+Null pointer. This is something that was not possible in previous versions of
+Visual Basic. For example, it can be passed to FindWindow, which gets the handle
+of a window, given either its class name or its title, or both. However for this
+to work, sNull must be passed ByVal.
+
+In general, for FindWindow (or any other Windows API) to work, the Declare
+statement must be written to pass the string ByVal As String or ByVal As Any. If
+the string is passed by reference, a pointer to a BSTR would then be passed,
+which is nothing but a pointer to a pointer to char. This will not work as
+Windows APIs expect strings that are pointers to char.
+
+NOTE: In Visual Basic version 4.0, sNull might also be expected to be equivalent
+to:
+
+     Public Const sNull As String = 0&amp;
+
+However, Visual Basic does automatic numeric conversion on this and converts it
+to zero (0), which is neither an empty string nor a null string pointer.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+              Const sEmpty = ""
+        Dim sNull As String
+
+        Private Declare Function FindWindow Lib "user32" Alias _
+           "FindWindowA" (ByVal lpClassName As Any, ByVal _
+           lpWindowName As Any) As Long
+
+3. In the Form_Click event for Form1, add the following code:
+
+        Shell "Calc.exe", 1
+        DoEvents
+        x&amp; = FindWindow(sNull, "Calculator")
+        'x&amp; = FindWindow(sEmpty, "Calculator")
+        Debug.Print x&amp;
+
+4. Press the F5 key to run the program. Click Form1, and view the Debug Window.
+  A non-zero value will be printed. This is the handle of the Calculator
+  program's Window.
+
+5. As an experiment, change the following line from executed code into a
+  comment:
+
+        x&amp; = FindWindow(sNull, "Calculator")
+
+  And change the following line from a comment into executed code:
+
+        'x&amp; = FindWindow(sEmpty, "Calculator")
+
+  Then run the program again. You will see a value of zero (0) printed in the
+  Debug Window, indicating that FindWindow failed. This happens because sEmpty
+  is not a null string pointer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

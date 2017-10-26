@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110224: PC Gen: PODIAG.EXE Command-Line Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110224: PC Gen: PODIAG.EXE Command-Line Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110224/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110224/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110224/","publisher":null,"image":null,"headline":"Q110224: PC Gen: PODIAG.EXE Command-Line Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110224-pc-gen-podiagexe-command-line-options">Q110224: PC Gen: PODIAG.EXE Command-Line Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110224
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Post Office Diagnostics Utility, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Postoffice Diagnostics Utility (PODIAG.EXE) has
+several command-line parameters you can enter on the Program Manager File Run
+menu. You can also add these command-line options to the command- line
+properties of the PODIAG icon. The following is an example of the command-line
+properties that will automatically log the administrator in to a postoffice
+mapped to drive M while logging the information to a local log file:
+
+  c:\podiag\podiag.exe -dm:\maildata admin -ppassword
+
+                       -lc:\podiag.log -r -a
+
+MORE INFORMATION
+================
+
+The following is a complete list of all of the command-line options and their
+descriptions.
+
+admin
+-----
+
+The mailbox of the postoffice administrator. This option is used in conjunction
+with the -ppassword option.
+
+-d&lt;path&gt;
+--------
+
+The letter of the network drive where the postoffice data files are located, if
+it is not the current drive. If you do not specify a path, the diagnostics
+utility assumes that the postoffice is in the current directory on the specified
+drive.
+
+For example, if the data files are in the current directory on drive M, and the
+Diagnostics utility is in the PODIAG directory on drive C, you start the
+Diagnostics utility by typing the following line, where the mailbox name used to
+sign in is admin:
+
+  c:\podiag.exe admin -dm
+
+If the postoffice directory is not the current directory on the drive, you need
+to specify the path. For example, if the postoffice is in the MAILDATA directory
+on drive M, type the following line:
+
+  c:\podiag.exe admin -dm:\maildata
+
+The -d command-line parameter can be used in conjunction with the PODIAG.INI
+Login= and Password= settings.
+
+-l&lt;logfilename&gt; (Log File Option)
+---------------------------------
+
+Specifies the log file location and filename. For example:
+
+  -ldiaglog.log
+
+-p&lt;password&gt; (Password Option)
+------------------------------
+
+The password of the mailbox name used to start the diagnostics utility. If you do
+not specify a password, you are required to do so on the Sign In screen.
+
+-r (Batch Run Option)
+---------------------
+
+Runs all tools automatically on a postoffice. To run tools automatically, you
+must specify the administrator mailbox name, the -p&lt;password&gt; option, and
+the -d&lt;drive letter&gt; option.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbMailPODiagnostic320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

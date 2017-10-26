@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181559: XADM: Error -1201 Occurs When Starting the Information Store | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181559: XADM: Error -1201 Occurs When Starting the Information Store" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181559/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181559/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181559/","publisher":null,"image":null,"headline":"Q181559: XADM: Error -1201 Occurs When Starting the Information Store","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181559-xadm-error--1201-occurs-when-starting-the-information-store">Q181559: XADM: Error -1201 Occurs When Starting the Information Store</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181559
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 28-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the Microsoft Exchange Server Information Store service,
+the service does not start and reports a server-specific error 4294966095. The
+Windows NT Event Viewer indicates that the service returned an error -1201.
+
+CAUSE
+=====
+
+Error -1201 commonly occurs because of minor inconsistencies or corruption in
+the Priv.edb or Pub.edb files.
+
+It can also occur when the *.edb files are on drive C, the *.log files are on
+drive D, and there is some sort of unrecoverable hardware failure on drive D. At
+that point, you are in the situation described above because the store will be
+inconsistent and the log files are not available.
+
+WORKAROUND
+==========
+
+The recommended approach to resolving this problem is to restore the information
+store from the latest backup.
+
+If a recent backup is not available, or if restoring the backup will result in
+data loss (circular logging is enabled) follow these steps:
+
+1. Back up the entire Mdbdata folder.
+
+2. Make sure you have sufficient free disk space:
+
+  Exchange Server 4.0 and 5.0
+  ---------------------------
+
+  You need 110 percent of the larger of Priv.edb and Pub.edb files in free disk
+  space.
+
+  Exchange Server 5.5
+  -------------------
+
+  You need 25 percent of the larger of Priv.edb and Pub.edb files in free disk
+  space.
+
+3. Run the following commands from a Windows NT command prompt:
+
+  Exchange Server 4.0 and 5.0
+  ---------------------------
+
+  edbutil /d /r /ispriv /tx:\tempdfg.edb
+  edbutil /d /r /ispub /tx:\tempdfg.edb
+  isinteg -fix -pri
+  isinteg -fix -pub
+
+  Exchange Server 5.5
+  -------------------
+
+  eseutil /p /ispriv /tx:\tempdfg.edb
+  eseutil /p /ispub /tx:\tempdfg.edb
+  isinteg -fix -pri -test alltests
+  isinteg -fix -pub -test alltests
+
+  where x: is the drive containing the required free disk space.
+
+  NOTE: When the Information Store service has started, after the repair
+  process, make a full online backup immediately.
+
+MORE INFORMATION
+================
+
+Error -1201 refers to the Jet error: JET_errDatabaseDuplicate
+
+The Windows NT Event Viewer Application log may also report Event ID 9037
+generated by the information store.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260909/","publisher":null,"image":null,"headline":"Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260909-internet-explorer-script-error-with-services-for-unix-admin-tool">Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260909
+Product(s): Microsoft Windows NT
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbtool
+Last Modified: 04-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft Windows Services for UNIX version 2.0 Administrator
+tool, you may receive the following error message:
+
+  Internet Explorer Script Error
+
+  An error has occurred in the script on this page.
+
+  Line: 60
+  Char: 5
+  Error: Automation server can't create object
+  Code: 0
+  URL: file://C:\Program Files\UnixSvcs\Admin\About.htm
+
+  Do you want to continue running scripts on this page?
+
+NOTE: The information in the URL line of the error message is the path to the
+script, and varies depending on your computer.
+
+CAUSE
+=====
+
+This behavior occurs when you install Services for UNIX in a folder whose name
+contains a space or spaces. This also occurs if the folder name contain a tilde
+(~) character.
+
+RESOLUTION
+==========
+
+To resolve this issue, install Services for UNIX in a folder whose name does not
+contain a space, for example, C:\Sfu, or a tilde (~) character.
+
+MORE INFORMATION
+================
+
+You can easily detect this problem by reviewing the URL value in the error
+message. For example:
+
+  C:\Program Files\UnixSvcs\Admin\About.htm
+
+The Program Files folder name contains a space and causes the error message.
+
+This behavior is also described in the Services for UNIX 2.0 Readme.txt file:
+
+  Special Requirements and Alerts
+
+  Install this software in a directory that does not include a space (or tilde)
+  in its name. If you do install this software in a directory that has a space
+  (or tilde) in its name, some shortcuts cannot work correctly. In addition,
+  you may experience problems with Network File System (NFS), some UNIX
+  utilities, and scripts.
+
+Additional query words: solar coaster solarcoaster sfu
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

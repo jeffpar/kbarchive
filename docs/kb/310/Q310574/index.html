@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310574/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310574/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310574/","publisher":null,"image":null,"headline":"Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310574-mechcommander-2-game-unexpectedly-quits-after-cd-verification">Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310574
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MechCommander 2.0, version 1.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+The third-party products discussed in this article are manufactured by 
+vendors independent of Microsoft; we make no warranty, implied or 
+otherwise, regarding these products' performance or reliability.
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft MechCommander 2, the game unexpectedly
+quits after CD verification.
+
+CAUSE
+=====
+
+This behavior can occur if you are using a product such as DAEMON tools to
+create a Virtual CD, a Phantom CD, or a virtual small computer system interface
+(SCSI) CD-ROM drive on your computer.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use one or more of the following methods.
+
+Method 1: Rename the Daemon.exe File
+------------------------------------
+
+1. Click Start, point to Search, and then click "For Files or Folders".
+
+2. In the Named box, type "daemon.exe" (without the quotation marks), and then
+  click Search Now.
+
+3. When the search process is complete, right-click daemon.exe and then click
+  Rename on the shortcut menu.
+
+4. Type "daemon.old" (without the quotation marks), and then press ENTER.
+
+  When you receive the confirmation message, click Yes.
+
+5. Restart your computer.
+
+NOTE: If this method does not resolve the issue, proceed to Method 2.
+
+Method 2: Remove DAEMON from the Registry
+-----------------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "regedit" (without the quotation marks), and then click
+  OK.
+
+3. In the Registry Editor, browse to the following key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+4. Right-click DAEMON.EXE, and then click Delete on the shortcut menu.
+
+  When you receive the confirmation message, click Yes.
+
+5. Quit the Registry Editor, and then restart MechCommander 2.
+
+MORE INFORMATION
+================
+
+For more information, please see the following Daemon Tools Web site:
+
+  http://www.daemon-tools.com/main.htm
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbMSNSearch kbMechCommSearch kbMechCommander200
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35906: BC 6.00 Example Calling OS/2 API Function DosSetMaxFH | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35906: BC 6.00 Example Calling OS/2 API Function DosSetMaxFH" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35906/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35906/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35906/","publisher":null,"image":null,"headline":"Q35906: BC 6.00 Example Calling OS/2 API Function DosSetMaxFH","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35906-bc-600-example-calling-os2-api-function-dossetmaxfh">Q35906: BC 6.00 Example Calling OS/2 API Function DosSetMaxFH</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35906
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 1-FEB-1990
+
+Below is a sample program that makes a call to the MS OS/2 function
+DosSetMaxFH. This program can be compiled in Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS OS/2 and Microsoft BASIC Professional
+Development System (PDS) Version 7.00 for MS OS/2.
+
+By default, 20 file handles are allocated to a file. To increase the
+number of file handles available, the DosSetMaxFH function must be
+called. The maximum number of file handles is 255. When determining
+the required number of handles, add several for dynamic-link modules
+(these modules use several handles), and three more for the default
+system I/O handles.
+
+The following is a code example:
+
+'This information is found in BSEDOSFL.BI
+DECLARE FUNCTION DOSSETMAXFH%(BYVAL P1 AS INTEGER)
+
+INPUT "Enter the maximum number of file handles : ",fh%
+x=DosSetMaxFH%(fh%)
+
+IF (x) THEN
+   Print "An error occurred.  The error number is ";x
+ELSE
+   Print "Maximum number of file handles has been changed."
+END IF
+
+ON ERROR GOTO DONE
+
+for i = 1 to 255
+  fl$="xxxxx"+mid$(str$(i),2,len(str$(i)))
+  open fl$ for output as i
+next i
+stop
+
+done:
+  Print i
+
+end
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

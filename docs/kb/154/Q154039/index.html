@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154039/","publisher":null,"image":null,"headline":"Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154039-howto-pass-optional-arguments-to-mfc-activex-controls">Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154039
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbAutomation kbCOMt kbCtrlCreate kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many automation methods on ActiveX Controls do not require that all possible
+arguments are passed with each call. Arguments that are not required are called
+optional arguments. In MFC, it is possible to add a method to a custom control
+that accepts optional arguments, but there are a few rules that must be
+followed. This article outlines these rules, and provides step-by-step
+instruction on how to add such a method to a control.
+
+MORE INFORMATION
+================
+
+MFC's implementation of IDispatch accepts optional arguments according to the
+following rules:
+
+1. Optional arguments must appear at the end of the parameter list. If an
+  optional argument is omitted when calling the method, all arguments to the
+  right of this one must also be omitted. This is similar to the C++ rules for
+  calling functions with Default values for parameters.
+
+2. Optional arguments must be declared as VARIANTs. If a parameter is omitted,
+  the calling program must pass a VARIANT initialized as:
+
+     VARIANT.vt = VT_ERROR
+     VARIANT.scode = DISP_E_PARAMNOTFOUND.
+
+  This will be done automatically by Visual Basic. However, in Visual C++ you
+  must create and initialize the VARIANT yourself.
+
+NOTE: If using Visula Studio.NET do the following:
+3. You must edit the IDL file generated for the control and mark the parameters
+  as optional. This is done by adding the [optional] tag as shown here:
+
+  [id(1)] void MyOpt([optional] VARIANT param1,
+              [optional] VARIANT param2);
+
+To add a method that supports optional arguments, follow these steps:
+
+1. Using ClassWizard, add a new method to the control. Be sure to pick VARIANT
+  as the type for each optional argument, and be sure the optional arguments
+  appear last in the parameter list.
+
+  NOTE: If using Visual Studio .NET do the following:
+
+  In Class View, expand the project node to display the interface that you want
+  to add the method. Click Add, and then click Add Method. Pick VARIANT as the
+  type for each optional argument, and verify that the optional arguments
+  appear last in the parameter list.
+
+2. Edit the ODL file, and mark these parameters with the [optional] tag.
+
+3. Add the appropriate functionality to the method and rebuild the control.
+
+  For example, the MyOpt method defined in ODL syntax above could be called from
+  Visual Basic in the following three forms:
+
+  myocx.MyOpt 2, 3  'passing both args
+  myocx.MyOpt 2     'omit one arg
+  myocx.MyOpt       'omit both args
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q140616 SAMPLE: MFCDISP: Replacing MFC IDispatch Implementation
+
+Visual C++ Books Online
+
+Programming with MFC: Encyclopedia
+
+Additional query words: LPDispatch IDispatch kbinf
+
+======================================================================
+Keywords          : kbActiveX kbAutomation kbCOMt kbCtrlCreate kbMFC kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

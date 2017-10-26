@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114557: Executing Viewer Commands When MCI Finishes Playing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114557: Executing Viewer Commands When MCI Finishes Playing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114557/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114557/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114557/","publisher":null,"image":null,"headline":"Q114557: Executing Viewer Commands When MCI Finishes Playing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114557-executing-viewer-commands-when-mci-finishes-playing">Q114557: Executing Viewer Commands When MCI Finishes Playing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114557
+Product(s): Miscellaneous Software Development Kits
+Version(s): 
+Operating System(s): 
+Keyword(s): kbfile
+Last Modified: 09-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Viewer Publishing Toolkit 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The VWRHOOK sample contains code for a HOOKS.DLL which can be used to execute
+Viewer commands when an MCI file within a Viewer title finishes playing. The
+dynamic link library (DLL) will work with MCI files which have been included in
+the title with an {ewX MVMCI2, ViewerMCI...} statement.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  Vwrhook.exe
+  (http://download.microsoft.com/download/platformsdk/sample9/1/WIN98/EN-US/vwrhook.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The DLL accomplishes this by installing a task specific WH_GETMESSAGE hook for
+Viewer. When an MCI file in a Viewer title finishes playing, the hook procedure
+will receive a MM_MCINOTIFY message. The hook procedure processes this message
+by sending a command to Viewer using VwrCommand().
+
+The DLL can be used by multiple instances of Viewer because it keeps track of
+which instances of Viewer have called it.
+
+To use HOOKS.DLL with a Viewer title, the title should register the functions
+HookMCINotify() and ChangeCommand() in the [CONFIG] section of its .MVP file as
+follows:
+
+     RegisterRoutine(`hooks.dll', `HookMCINotify', `i=U')
+     RegisterRoutine(`hooks.dll', `ChangeCommand', `i=S')
+
+HookMCINotify() sets the hook. Its only parameter is the internal hwndApp
+variable. It returns 1 if the hook was successfully installed, and 0 otherwise.
+Typically, a title would call HookMCINotify(hwndApp) from the [CONFIG] section
+of its .MVP file (after it has been registered).
+
+ChangeCommand() is used to set the command which should be executed when any MCI
+file in the title finishes playing. This command can be called from the [CONFIG]
+section, as a topic entry command, as a group entry or exit command, or as a
+hotspot command. Note that the HOOKS.DLL keeps track of only the most recent
+command that was set. There is no default command, so this function must be
+called if any command is to be executed when the hook procedure gets the
+MM_MCINOTIFY message. This function should only be called after HookMCINotify()
+has been called. ChangeCommand() takes as its parameter a string with the
+command in it. The string can have multiple commands, separated by semicolons
+(;). ChangeCommand() returns 1 if it was successful, and 0 otherwise.
+
+A Viewer title can also register UnhookMCINotify() if it will specifically unhook
+the hook. It should be registered as follows:
+
+  RegisterRoutine(`hooks.dll', `UnhookMCINotify', `')
+
+It does not take any parameters. If a title does not call this function,
+HOOKS.DLL will unhook the hook when the instance of Viewer that called
+HookMCINotify() terminates.
+
+The sample also includes the files necessary to build a sample title which uses
+the DLL.
+
+Additional query words: KBFILE
+
+======================================================================
+Keywords          : kbfile 
+Technology        : kbHomeProdSearch kbHomeMMsearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

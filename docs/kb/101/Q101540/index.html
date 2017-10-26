@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101540/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101540/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101540/","publisher":null,"image":null,"headline":"Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101540-pc-wsplus-err-msg-not-a-valid-file-or-invalid-password">Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101540
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-SEP-1999
+
+1.00 1.00a
+WINDOWS
+kbother kbappnote kbtlc
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to log in to Schedule+, you may receive the following message:
+
+  Not a Valid File
+
+This message is generally followed by a dialog box asking if you would like to
+delete this file and create a new calendar file to replace it.
+
+Or, the following message may also appear when you try to log in to Schedule+:
+
+  Invalid Password
+
+CAUSE
+=====
+
+These errors occur when the SCHEDULE.KEY file, which exists in the CAL directory
+of the Mail database, is either missing or corrupted. To see if this is the
+case, the administrator should add the following line to the SCHDPLUS.INI file:
+
+  StartUpOffLine=1
+
+When Schedule+ is operating offline, it uses the local USERNAME.CAL file and
+doesn't need to check the SCHEDULE.KEY file on the server.
+
+NOTE: Although the SCHEDULE.KEY file is hidden by default, it can be visible or
+hidden. It does not matter as long as this file exists in the CAL subdirectory
+of the Mail database.
+
+RESOLUTION
+==========
+
+To resolve this problem, the administrator should do the following:
+
+Try to retrieve the SCHEDULE.KEY file from a current backup copy. This must be
+done to successfully recover a resource room's calendar file on this postoffice.
+Because resource rooms have no local backup copies, there is no way to retrieve
+the information other than from a backup.
+
+If this does not help, or if a SCHEDULE.KEY backup is not available, do the
+following:
+
+1. Backup (to be safe) and then delete all *.CAL files from the CAL directory.
+  (Because each Schedule+ user has two copies of this file--one on the local
+  computer and one on the server--you can safely delete this file, knowing that
+  the next time you log in, your local calendar file will be uploaded to the
+  server.)
+
+2. Backup (to be safe) and then delete all SCHEDULE.* files from the CAL
+  subdirectory. (The SCHEDULE.KEY file is regenerative. Thus, in previous
+  attempts to log in, a new SCHEDULE.KEY file may have been created. Delete
+  it.)
+
+3. Have all users log in to Schedule+ to upload their local calendar files and
+  create a new SCHEDULE.KEY file.
+
+MORE INFORMATION
+================
+
+NOTE: Do NOT delete the server copy of the CAL file under the following
+situation:
+
+  If a User rarely uses the Schedule+ file, but has an assistant who maintains
+  the Schedule+ file (using File, Open Other's Apt Book), the changes the
+  assistant makes will not be reflected in the user's local CAL file until the
+  user enters Schedule+. If the user never enters Schedule+, all recent
+  schedule changes only reside in the CAL subdirectory.
+
+The SCHEDULE.KEY file is an index to each user's calendar file on the server.
+This file keeps track of who belongs to each hexadecimal-numbered .CAL file in
+the CAL directory.
+
+The first time any user tries to use Schedule+, a SCHEDULE.KEY file is created on
+the server, noting who belongs to the file. The hexadecimal- numbered
+xxxxxxxx.CAL file numbers DO NOT match the hexadecimal-numbered .MMF files that
+exist in the MMF directory because not everyone who uses Mail uses Schedule+.
+
+Each consecutive person to log in and use Schedule+ has a hexadecimal number
+assigned to them that will be entered in the SCHEDULE.KEY file for future use
+when logging on.
+
+In the case above, where the SCHEDULE.KEY file is missing or corrupt, users can
+be inadvertently pointed to the wrong hexadecimal-numbered .CAL file on the
+server even when using the MVCAL.EXE utility. When this occurs, one of the above
+error messages is generated.
+
+The MVCAL utility is included with Application Note WA0641, "Database Maintenance
+Utilities." You can have this Application Note mailed or faxed to you by
+contacting Microsoft Product Support Services.
+
+Additional query words: schedule plus 1.00 1.00a err msg errmsg alert
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

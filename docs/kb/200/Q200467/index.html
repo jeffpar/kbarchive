@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200467/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200467/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200467/","publisher":null,"image":null,"headline":"Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200467-info-modem-selection-algorithm-for-use-another-port-if-busy">Q200467: INFO: Modem Selection Algorithm for "Use Another Port If Busy"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200467
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article explains the algorithm used by remote access
+service (RAS) when you select "use another port if busy" under Dialup
+Networking, and how this can cause connectivity problems with multiport serial
+adapters.
+
+MORE INFORMATION
+================
+
+If you are using a multiport serial adapter to provide connectivity for numerous
+modems, the modems must be homogeneous if you want "use another port if busy" to
+work. The reason for this is that the list of ports is maintained in the order
+that TAPI enumerates them to RAS. The order is arbitrary, and Unimodem is not
+capable of assigning a particular order. TAPI is a neutral layer between the TSP
+(Unimodem) and the application (RAS), and enforces no rules about ordering on
+either side.
+
+Applications should, therefore, not make assumptions that there is an order to
+the selection of COM ports. RAS merely assumes that the TAPI list is the list it
+should use when failing over. If the list is out of order, the COM ports will be
+tried out of order. Note that adding and removing devices will have the same
+affect on device order.
+
+For example, you have a multiport serial adapter with 24 ports. COM 1 through 12
+have analog modems installed. COM 13 through 24 have ISDN modems installed.
+
+You will find that rollover to available ports will result in random instability
+and dropped connections when analog strings are sent to ISDN modems, and vice
+versa. This is also true for other types of modems that cannot communicate with
+each other for one reason or another. Currently, there is no way to configure
+which ports should be used for failover for particular devices. Because of this,
+applications must assume responsibility for choosing which ports they will dial
+when one is determined to be busy.
+
+The current workaround to this problem involves disabling the RAS/RRAS servers
+attempt to use another port.
+
+For RAS
+-------
+
+To disable the automatic dialing of another port if the current port is busy, go
+to the Basic tab of the phonebook entry and click to clear "Use another port if
+busy". This will prevent the RAS server from attempting to use another port if
+the device it is configured to use is busy.
+
+For RRAS
+--------
+
+To disable the automatic dialing of another port if the current port is busy on a
+RRAS router, you need to edit %Windir%\System32\Router.pbk:
+
+ MEDIA=rastapi
+ Port=nameofinterface
+ OtherPortOk=1
+ Device=rasinterface
+
+Router.pbk is arranged as an .ini file with the name of demand dial interfaces as
+sections. Go to the section corresponding to the demand dial interface for which
+you want to change this behavior. Change the OtherPortOk field in this section
+to 0, instead of 1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

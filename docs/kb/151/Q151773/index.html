@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151773/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151773/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151773/","publisher":null,"image":null,"headline":"Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151773-flight-simulator-ati-mach-64-svga-option-may-not-work">Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151773
+Product(s): Microsoft Home Games
+Version(s): MS-DOS:5.1
+Operating System(s): 
+Keyword(s): kb3rdparty kbdisplay
+Last Modified: 07-MAY-2002
+
+5.10
+MS-DOS
+kbdisplay kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator for MS-DOS, version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Flight Simulator 5.1 and select any SVGA mode, only the top 1/4 of
+the screen appears and the graphics overlap. It looks like the screen is divided
+into four horizontal sections and they have been moved to overlap in the first
+horizontal section.
+
+CAUSE
+=====
+
+This problem occurs when you choose any SVGA mode and select the ATI Mach 64 or
+VESA 1.2 Compatible as the adapter when you are using a newer ATI MACH 64 video
+card.
+
+RESOLUTION
+==========
+
+To correct the problem:
+
+1. Run the ATI supplied VESA BIOS extensions with the following switches in your
+  Autoexec.bat file
+
+  c:\&lt;directory name&gt;\m64vbe.com s acc
+
+  where &lt;directory name&gt; is the directory where the M64vbe.com file is
+  installed.
+
+2. Select VESA 1.2 Compatible as the adapter type in Flight Simulator.
+
+The M64vbe.com file comes with the card, or it can be downloaded from ATI. To
+download the file from ATI's web page:
+
+1. Using your Internet browser, connect to ATI's web page at
+
+  http://www.atitech.ca.
+
+  Once you are connected, choose the Current Drivers option.
+
+2. At the top of the Current Drivers page, choose the connection to ATI's FTP
+  site, FTP: ftp.atitech.ca.
+
+3. Choose the Utility directory. Download 64vbe101.zip, which contains the
+  M64vbe.com file, by double-clicking the file name 64vbe101.zip and following
+  the instructions that appear on your screen.
+
+To choose the adapter type in Flight Simulator 5.1:
+
+1. From the Options menu, click Preferences.
+
+2. Click Display.
+
+3. Click the down arrow next to VGA Board Model.
+
+MORE INFORMATION
+================
+
+This problem is known to occur on newer ATI Mach 64 cards that use the 264CT
+chipset, which is a brand new card. It does not occur on original chipsets. All
+graphics Xpression Mach 64 cards being distributed by ATI include the new 264CT
+chipset.
+
+To determine which chipset the card is using:
+
+1. If your are running Windows, exit to MS-DOS.
+
+2. Change to the directory where your MACH 64 drivers are installed, by typing
+  "cd &lt;directory name&gt;" (without the quotation marks), where
+  &lt;directory name&gt; is the directory where the MACH 64 drivers are
+  installed.
+
+3. Run Install.exe.
+
+4. Under System Information for the Controller type, look for CT in the
+  description.
+
+For more information, contact ATI technical support:
+
+  User Support: (905) 882-2626
+  FAX: (905) 882-2620
+  BBS: (905) 764-9404
+  WWW: www.atitech.ca
+
+Additional query words: 5.10 flightsim fltsim d_fltsim Mach64 ATI screen distorted
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim510DOS kbSimSearch
+Version           : MS-DOS:5.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

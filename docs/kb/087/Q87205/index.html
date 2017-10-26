@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87205/","publisher":null,"image":null,"headline":"Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87205-profs-typical-autoexecbat--configsys-files-for-gateway-pc">Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87205
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Normally the PROFS gateway PC is configured so that the network drivers, 3270
+API, and emulation program are all loaded automatically when the system is
+started. Often the gateway program is run from another batch file, to allow for
+easy modification and testing of command-line options.
+
+MORE INFORMATION
+================
+
+Below are examples of what you might typically find in a gateway PC's
+AUTOEXEC.BAT and CONFIG.SYS files.
+
+AUTOEXEC.BAT
+------------
+
+The AUTOEXEC.BAT file loads network drivers and loads 3270 emulation.
+
+  @ECHO OFF
+  PROMPT $p$g
+  PATH C:\DOS;c:\bin;C:\COMMSRV\RBIN;
+  SET TEMP=C:\DOS
+
+  @REM == LANMAN 2.1 == DO NOT MODIFY BETWEEN THESE LINES == LANMAN 2.1
+  PATH C:\LANMAN.DOS\NETPROG;%PATH%
+  NETBIND
+  NET START WORKSTATION
+  @REM == LANMAN 2.1 == DO NOT MODIFY BETWEEN THESE LINES === LANMAN 2.1
+
+  net logon vmgate nopassword
+  net use m: \\server1\share1 password1
+  net use n: \\server2\share2 password2
+
+  SET PATH=C:\COMMSRV\RBIN;%path%
+
+  @REM DO NOT DELETE -- Comm Server setup begins mark
+  lh SHARE
+  lh c:\COMMSRV\DEV\COMNDIS 5
+  lh c:\COMMSRV\RBIN\REMNAP \\comsvr
+  @REM DO NOT DELETE -- Comm Server setup ends mark
+
+  c:\commsrv\rbin\dos3270m
+
+At this point, the administrator logs on to the gateway VM ID and makes sure that
+the PROFS:IDLE or PROFS:READY prompt appears. The 3270 emulation can then be
+made memory-resident, and the administrator hot- keys back to MS-DOS and calls
+the batch file that runs the gateway program (HostDisp or VMGATE).
+
+CONFIG.SYS
+----------
+
+  DEVICE=C:\DOS\SETVER.EXE
+  DEVICE=C:\WIN\HIMEM.SYS
+  DOS=HIGH
+  FILES=30
+  BUFFERS=30
+  SHELL=C:\DOS\COMMAND.COM /P /E:400
+  LASTDRIVE=Z
+  DEVICE=C:\LANMAN.DOS\DRIVERS\PROTMAN\PROTMAN.DOS /i:C:\LANMAN.DOS
+  DEVICE=C:\LANMAN.DOS\Drivers\Ethernet\3Com\ELNKII.DOS
+  DEVICE=C:\LANMAN.DOS\Drivers\Protocol\UBXNS\UBXPS.DOS
+  STACKS=9,256
+
+
+Additional query words: 3.00 pcmail profslan AUTOEXEC.BAT CONFIG.SYS
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

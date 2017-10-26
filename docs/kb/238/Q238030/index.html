@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238030: HOWTO: Create HTML Help for MFC Application on WinCE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238030: HOWTO: Create HTML Help for MFC Application on WinCE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238030/","publisher":null,"image":null,"headline":"Q238030: HOWTO: Create HTML Help for MFC Application on WinCE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238030-howto-create-html-help-for-mfc-application-on-wince">Q238030: HOWTO: Create HTML Help for MFC Application on WinCE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238030
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbCSHelp kbHTMLHelp kbOSWinCEsearch kbGrpDSMFCATL
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++ for Windows CE, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In applications supporting Windows Help, the users can tap the Help menu or tap
+the Help button (?) on the command bar or press F1 on the keyboard to access the
+Help files. Note that F1 might not be supported on some Windows CE-based
+devices. Because screen space is crucial, Palm-size PCs do not enable the Help
+button on your applications. Instead, you can access Help files through the Help
+menu item. A Palm-size PC sends a WM_HELP message to the current application
+when the Help menu item is selected.
+
+In H/PC and H/PC Pro-based applications, the most common way to access the Help
+file is through the Help button (?) on the command bar. In the Windows CE
+operating system, the identifier is ID_HELP, the message handler is
+CWnd::OnHelp, and it sends WM_COMMAND and ID_HELP messages. Help for Windows CE,
+also known as PegHelp, lets users access your HTML Help files.
+
+MORE INFORMATION
+================
+
+1. Create a default Windows CE MFC AppWizard (.exe) called Sample. At step 2 of
+  4 select the Windows Help check box. This step enables the Help button (?) on
+  the command bar. The rest of the AppWizard steps can be the default ones.
+
+2. At this point if you build and run the sample application and click the Help
+  button (?) (that is the button next to the Close (X) button), it brings up a
+  message box titled Sample.htp containing just the word, Help. From the Help
+  menu item, if you choose Help Topics, it bring ups a the dialog box, Cannot
+  open help file, and the Help file viewer (PegHelp) is running in the
+  background.
+
+3. To create the Help files, create each topic as a text file with a .htp
+  extension. Create your contents page as a text file also, but save it with a
+  .htc extension. The difference between the two is that you can traverse back
+  from the topic to the contents page. The Soltr sample Help file demonstrates
+  the unique tags and structure of a Help for Windows CE file. Refer to the
+  "References" section of this article for additional information.
+
+4. Create a sample Help file. Add a new text file to the project workspace
+  called Sample.htc. This is the Contents Page of the Help. Add the following
+  code to it:
+
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;META HTTP-EQUIV="" Content=""&gt;
+  &lt;title&gt;Sample Help&lt;/title&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+
+  &lt;H5&gt;Example Help File&lt;/H5&gt;
+  &lt;MENU&gt;
+  &lt;li&gt;&lt;a href ="file:Topic1.htp"&gt;Sample Topic 1 Help&lt;/a&gt;
+  &lt;li&gt;&lt;a href ="file:Topic2.htp"&gt;Sample Topic 2 Help&lt;/a&gt;
+  &lt;/MENU&gt;
+
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+5. Now add two new Help files called Topic1.htp and Topic2.htp. Copy the code
+  below to each.
+  In file Topic1.htp copy and paste this code:
+
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;META HTTP-EQUIV=refer content="file:Sample.htc"&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+  This is Topic 1 of the example help file
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+  In file Topic2.htp copy and paste this code:
+
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;META HTTP-EQUIV=refer content="file:Sample.htc"&gt;
+  &lt;/HEAD&gt;
+  This is Topic 2 of the example help file
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+6. Go to the Class View of the Workspace window and open the definition of
+  CMainFrame::OnHelpInfo method. Comment out the message box and add the
+  following code to it:
+
+  	
+  PROCESS_INFORMATION p;
+  CreateProcess(_T("peghelp.exe"), 
+     	      _T("Sample.htc"), 
+  	      NULL, 
+  	      NULL, 
+  	      FALSE, 
+  	      0, 
+  	      NULL, 
+  	      NULL, 
+  	      NULL, 
+  	      &amp;p);
+  CloseHandle(p.hProcess);
+  CloseHandle(p.hThread);
+
+7. Add a message map entry to your CMainFrame class as shown below. (A
+  WM_COMMAND message with ID_HELP in wparam is sent when Help/Help Topics menu
+  item is selected.)
+
+      //}}AFX_MSG_MAP
+      // Global help commands
+      ON_COMMAND(ID_HELP, CMainFrame::OnHelpInfo)
+  END_MESSAGE_MAP()
+
+8. Save the 3 files (Sample.htc, topic1.htp, topic2.htp) to \Windows folder of
+  the CE device. If you are running this application on the emulator, use the
+  Empfile.exe utility to copy these files to the object store. Example: empfile
+  -c c:\Sample\Sample.htc wce:\windows\Sample.htc
+
+9. Rebuild and run the application. Click the Help button (?) and navigate
+  through the topics and back. Also try accessing the Help by choosing and then
+  select the Help Topics menu item.
+
+REFERENCES
+==========
+
+- For more information on Empfile utility, go to the emulation\windows folder
+  under Folder Windows CE Tools, and on command line, type empfile/?
+
+- SolitarieHelp is a P/PC Win32 Sample showing how to write Help file. Soltr
+  Sample Help File
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Vidyanand Rajpathak, Microsoft Corporation
+
+
+Additional query words: context-help
+
+======================================================================
+Keywords          : kbCSHelp kbHTMLHelp kbOSWinCEsearch kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Hardware          : WinCE
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

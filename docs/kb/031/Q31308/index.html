@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q31308: BASIC Example Using SETMEM to Allocate Far Heap Memory; EXEMOD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q31308: BASIC Example Using SETMEM to Allocate Far Heap Memory; EXEMOD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/031/Q31308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/031/Q31308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/031/Q31308/","publisher":null,"image":null,"headline":"Q31308: BASIC Example Using SETMEM to Allocate Far Heap Memory; EXEMOD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q31308-basic-example-using-setmem-to-allocate-far-heap-memory-exemod">Q31308: BASIC Example Using SETMEM to Allocate Far Heap Memory; EXEMOD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q31308
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 28-DEC-1989
+
+To allocate a reserved location in memory that compiled BASIC will not
+touch, you can deallocate some memory by using the SETMEM function
+(see the BASIC language reference manual and the example for SETMEM
+below). Then, using either CALL INTERRUPT or CALL INT86OLD, execute a
+DOS interrupt &amp;H21 (33), function &amp;H48 (72). Call with AX = &amp;H4800 and
+BX = the number of paragraphs of memory needed (the number of bytes of
+memory needed, divided by 16).
+
+This information applies to QuickBASIC Versions 4.00, 4.00b and 4.50,
+to Microsoft BASIC Compiler Versions 6.00 and 6.00b, and to Microsoft
+BASIC PDS Version 7.00 for MS-DOS and MS OS/2.
+
+If the function succeeds, the flag is clear and AX returns the initial
+segment of the allocated block.
+
+If the function fails, the flag is set and AX either is 7 (if memory
+control blocks were destroyed) or 8 (if memory was insufficient, in
+which case BX gives the size of the largest available block).
+
+Please note that QuickBASIC Versions 3.00 and earlier do not have the
+SETMEM function.
+
+The following are two other methods of allocating areas of memory:
+
+1. A static array can be set aside instead as a block of memory that
+   will not move. The VARPTR function returns the offset of the array.
+
+2. The EXEMOD.EXE utility provided with the Microsoft Macro Assembler
+   allows you to modify the header of an .EXE to shorten the maximum
+   upper load address of a program. By default, BASIC .EXE programs
+   assume that all of RAM is available. If you make the load address
+   smaller, you must make sure that there is enough room for the
+   BASIC program's code and data. Microsoft does not encourage using
+   EXEMOD with compiled BASIC programs. The SETMEM function should be
+   used instead.
+
+The following is a SETMEM code example:
+
+REM $INCLUDE: 'qb.bi'
+REM For BASIC PDS 7.00 include QBX.BI
+DEFINT A-Z
+DIM InRegs AS RegType, OutRegs AS RegType
+DIM InRegsX AS RegTypeX, OutRegsX AS RegTypeX
+
+PRINT SETMEM(-1808)     'Have QuickBASIC free up some memory.
+InRegs.ax = &amp;H4800
+InRegs.bx = 113         'Allocates a block of 113 paragraphs, or 113*16 bytes
+CALL INTERRUPT(&amp;H21, InRegs, OutRegs)
+
+'Check results of the interrupt call.
+IF (OutRegs.flags AND 1) = 0 THEN
+     PRINT "Eureka!   Memory allocated at"; OutRegs.ax
+ELSEIF OutRegs.ax = 7 THEN
+     PRINT "ERROR!  Memory control blocks destroyed!"
+     END
+ELSE
+     PRINT "Insufficient memory!  Largest available block is: "; OutRegs.bx
+     END
+END IF
+
+'Now deallocate the memory we just allocated.
+InRegsX.es = OutRegs.ax
+InRegsX.ax = &amp;H4900
+CALL INTERRUPTX(&amp;H21, InRegsX, OutRegsX)
+
+'Double check the outcome of the interrupt call.
+IF (OutRegsX.flags AND 1) = 0 THEN
+     PRINT "Memory successfully deallocated."
+ELSEIF OutRegsX.ax = 7 THEN
+     PRINT "ERROR!  Memory Control Blocks destroyed!"
+ELSE
+     PRINT "ERROR!  Incorrect segment in ES!"
+END IF
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

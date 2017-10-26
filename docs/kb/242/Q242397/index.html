@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242397/","publisher":null,"image":null,"headline":"Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242397-howto-add-subitems-to-a-listview-result-view-in-report-mode">Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242397
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Management Console, versions 1.1, 1.2 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to add subitems to a ListView Result View when a
+ScopePane item is viewed in Detail mode.
+
+MORE INFORMATION
+================
+
+Steps to Add Subitems to a ListView Result View in Report Mode
+--------------------------------------------------------------
+
+1. Launch Visual Basic and select a new SnapIn project from the New Project
+  dialog box.
+
+2. Open the SnapIn1 Designer through the Project Explorer window and insert a
+  new ListView Result View under the Static Node. By default, the ListView will
+  be named ListView1.
+
+3. View the properties of the new ListView Result View and insert two columns
+  using the Columns Headers tab. The Text and Key must have the same value.
+  Also, select Auto-Width.
+
+4. Open the SnapIn1 Designer code window and paste the following code:
+
+  Private Sub ResultViews_Initialize(ByVal ResultView As SnapInLib.ResultView)
+
+      With ResultView.ListView
+      
+          .ListItems.Add 1, , "Column 1"  ' same as Key field in ColumnHeader
+          .ListItems.Add 2, , "Column 2"  ' same as Key field in ColumnHeader
+      
+          ' add our subitems to the listview
+          .ListItems(1).ListSubItems.Add 1, , "Data 1" ' add data to the first row, column one
+          .ListItems(1).ListSubItems.Add 2, , "Data 2" ' add data to the first tow, column two
+          .ListItems(2).ListSubItems.Add 1, , "Data 3" ' add data to the second row, column one
+          .ListItems(2).ListSubItems.Add 2, , "Data 4" ' add data to the second tow, column two
+          
+      End With
+      
+  End Sub
+
+5. View the properties of the SnapIn (SnapIn1) and set the Default Result View
+  field to ListView1.
+
+6. Compile the project and start the Microsoft Management Console (MMC).
+
+7. Load the SnapIn in MMC and click the SnapIn1 Scope Item. The two columns
+  defined in the ListView Result View should be rendered in the Result View
+  window.
+
+8. Change the View Mode to Detail. The Result View will change into a Report
+  View. There will be two rows of data, each row containing two columns of
+  data.
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

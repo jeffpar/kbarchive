@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174289: FIX: Memory Leak Occurs After Form is Unloaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174289: FIX: Memory Leak Occurs After Form is Unloaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174289/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174289/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174289/","publisher":null,"image":null,"headline":"Q174289: FIX: Memory Leak Occurs After Form is Unloaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174289-fix-memory-leak-occurs-after-form-is-unloaded">Q174289: FIX: Memory Leak Occurs After Form is Unloaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174289
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0 5.0
+Operating System(s): 
+Keyword(s): kbVBp400 kbVBp500 kbGrpDSVB kb32bitOnly
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A memory leak occurs in a Visual Basic project that has forms that are loaded
+and unloaded several times.
+
+CAUSE
+=====
+
+The small icon of a form remains in memory after the form is unloaded, which
+results in a memory leak.
+
+RESOLUTION
+==========
+
+To work around this bug in Visual Basic 4.0, use the DestroyIcon function during
+the Form_Unload event to remove the small icon from memory. Copy the following
+code sample to the code window of each form in your project:
+
+     Private Declare Function SendMessage Lib "user32" _
+        Alias "SendMessageA" _
+        (ByVal hwnd As Long, _
+         ByVal wMsg As Long, _
+         ByVal wParam As Long, _
+         lParam As Long) As Long
+
+     Private Declare Function DestroyIcon Lib "user32" _
+        (ByVal hIcon As Long) As Long
+
+     Private Const WM_SETICON = &amp;H80
+     Private Const MiniIcon = 0
+     Private Const NullIcon = 0
+
+     Private Sub Form_Unload(Cancel As Integer)
+        Dim hIcon As Long
+        hIcon = SendMessage(hwnd, WM_SETICON, MiniIcon, ByVal _
+        NullIcon)
+        If hIcon &lt;&gt; 0 Then
+           DestroyIcon hIcon
+        End If
+     End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic Version 5.0.
+
+MORE INFORMATION
+================
+
+Programs that load and unload forms frequently can cause a significant leak in
+memory because the operating system will lose 1148 bytes every time a form is
+unloaded. The workaround is to destroy the icon when the form is unloaded.
+
+Use the SendMessage function with the WM_SETICON message to get the handle of
+either the large or small icon and to then replace it with the icon specified by
+the NullIcon parameter; in this case replacing it with Null. With the MiniIcon
+parameter set to zero, the message applies to the small icon.
+
+The return value is the handle to the old icon which is removed from memory by
+the DestroyIcon function.
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Start a new project. Form1 is created by default.
+
+2. Add another Form to the project.
+
+3. Add the following code to the Click event of Form1:
+
+        Dim i as Integer
+        For i = 1 To 1000
+           Form2.Show
+           Form2.Hide
+        Next i
+
+4. Press the F5 key to run the project. You will notice a performance drop where
+  Form2 loads more slowly as the iterations progress. Press the CTRL+BREAK keys
+  to end the application.
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbGrpDSVB kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

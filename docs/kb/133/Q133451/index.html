@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133451: HOWTO: Causing a Form or Formset to Time Out | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133451: HOWTO: Causing a Form or Formset to Time Out" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133451/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133451/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133451/","publisher":null,"image":null,"headline":"Q133451: HOWTO: Causing a Form or Formset to Time Out","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133451-howto-causing-a-form-or-formset-to-time-out">Q133451: HOWTO: Causing a Form or Formset to Time Out</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133451
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbtool kbvfp
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro version 2.x provided a TIMEOUT clause on the READ command. If no user
+input activity occurred during the specified interval, the read operation would
+stop. You can duplicate this functionality with a timer control on a form in
+Visual FoxPro. The enhanced event model in Visual FoxPro allows greater control
+over exactly which events cause a form to time out. For example, you can cause
+the form to close if the mouse is clicked even though no key was pressed. This
+article shows you how.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+The following process sets two form level properties (dtKeyPress and dtMouseMove)
+to store the time of the last keystroke or mouse movement. The timer control
+verifies the elapsed time since the last occurrence of these two events. If more
+than the specified interval has elapsed, the form is released.
+
+1. Create a new form. Add the following properties to the form:
+
+  dtCurrTime
+  dtKeyPress
+  dtMousemove
+
+2. In the Init method of the form, add the following code:
+
+     ThisForm.DtKeyPress = DATETIME()
+     ThisForm.dtMouseMove = DATETIME()
+
+3. In the KeyPress method of the form, add the following code:
+
+     ThisForm.dtKeyPress = DATETIME()
+
+4. In the MouseMove method of the form, add the following code:
+
+     ThisForm.dtMouseMove = DATETIME()
+
+5. Add a timer control to the form. Set the Interval property of the timer to
+  the desired number of seconds * 1000. Add the following code to the
+  TimerEvent method of the timer:
+
+     lnIntervalInSeconds = This.Interval / 1000
+     ThisForm.dtCurrTime = DATETIME()
+     IF ThisForm.dtCurrTime - ThisForm.dtMousemove &gt;= lnIntervalInSeconds ;
+        AND ;
+        ThisForm.dtCurrTime - ThisForm.dtKeypress &gt; = lnIntervalInSeconds
+           ThisForm.Release
+     ENDIF
+
+6. Add a text box to the form for testing purposes. Save and run the form.
+
+7. The form should time out and release after the specified number of
+  milliseconds.
+
+Incorporating a Timeout into a Formset
+--------------------------------------
+
+To adapt this example to close an entire formset, follow these steps:
+
+1. Create the three properties specified in step 1 of the example so that they
+  are created at the formset level.
+
+2. Place the Init code specified in step 2 in the Init method of the formset.
+  Change the reference of ThisForm to ThisFormSet.
+
+3. Create the timer control on each individual form in the formset. This is
+  required because the formset itself does not contain KeyPress and MouseMove
+  events. Each form in the formset must maintain its own unique timer, but the
+  formset itself must maintain the information as to whether the user has
+  interacted with any form within the formset. Change all ThisForm references
+  to ThisFormSet within this method.
+
+4. Change the reference of ThisForm in steps 3 and 4 of the example to
+  ThisFormSet.
+
+Additional query words: idle delay
+
+======================================================================
+Keywords          : kbtool kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

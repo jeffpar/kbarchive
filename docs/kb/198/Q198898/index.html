@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198898: XADM: Using Proxy Name Parameters with Unattended Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198898: XADM: Using Proxy Name Parameters with Unattended Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198898/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198898/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198898/","publisher":null,"image":null,"headline":"Q198898: XADM: Using Proxy Name Parameters with Unattended Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198898-xadm-using-proxy-name-parameters-with-unattended-setup">Q198898: XADM: Using Proxy Name Parameters with Unattended Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198898
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Exchange Server in unattended (batch) mode, you can use the
+parameters OrganizationProxyName and SiteProxyName in addition to
+OrganizationName and SiteName. These proxy parameters are used to generate the
+Network and PostOffice names for the MS Mail connector.
+
+MORE INFORMATION
+================
+
+The parameters OrganizationProxyName and SiteProxyName can be found in the
+[Organization] and [Site] sections of the Setup.ini file as shown below. This
+file is used with the Setup /Q switch.
+
+When deciding names for the OrganizationProxyName and SiteProxyName, be aware
+that they should not exceed ten characters in length, and only the standard MS
+Mail characters can be used for each entry.
+
+[Organization]
+
+This section contains entries that specify the names of directory objects in the
+organization.
+
+- Entry: OrganizationName=
+
+  Description: Organization name if a new site is being created.
+  Value: Organization name
+
+- Entry: OrganizationProxyName=
+
+  Description: Organization proxy name that is used to determine the site
+  addresses for the connector if a new site is being created.
+  Value: Organization proxy name
+
+[Site]
+
+This section contains entries that specify the names of directory objects in the
+site, such as the site and server names.
+
+- Entry: ExistingServerName=
+
+  Description: Name of the server in the existing site.
+  Value: Server name
+
+- Entry: SiteName=
+
+  Description: Name of the new site if ExistingServerName is not provided.
+  Value: Site name
+
+- Entry: SiteProxyName=
+
+  Description: Proxy name of the new site that is used to determine the site
+  addresses for connectors.
+  Value: Site proxy name
+
+- Entry: InternetSiteName=
+
+  Description: Internet site name if Internet Mail Service is being installed.
+  Value: Internet site name
+
+After installation has completed, open the property pages for the MS Mail
+connector. You should see that the OrganizationProxyName and SiteProxyName
+entries you used in the Setup.ini file are configured for the Network name and
+PostOffice name respectively on the Local Postoffice tab. In addition, a new
+mailbox will use OrganizationProxyName and SiteProxyName for the MS Mail proxy
+address, for example, OrganizationProxyName/SiteProxyName/PAULKI.
+
+For more information on installing Exchange Server in batch mode, see the
+following articles in the Microsoft Knowledge Base:
+
+  Q188625 XADM: Unattended Exchange Server 5.5 Setup
+
+  Q168490 XADM: Unattended Exchange Server Setup
+
+In addition, example Setup.ini files are provided on the Exchange Server CD-ROM
+in the Support directory.
+
+Additional query words: OrganizationProxyName SiteProxyName unattended batch proxy
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

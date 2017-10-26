@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43142: QuickC: The Inline Assembler Generates 3-Byte JMP Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43142: QuickC: The Inline Assembler Generates 3-Byte JMP Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43142/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43142/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43142/","publisher":null,"image":null,"headline":"Q43142: QuickC: The Inline Assembler Generates 3-Byte JMP Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43142-quickc-the-inline-assembler-generates-3-byte-jmp-instructions">Q43142: QuickC: The Inline Assembler Generates 3-Byte JMP Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43142
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 2-MAY-1989
+
+The following instruction will assemble, link, and run correctly in
+the Microsoft Macro Assembler Version 5.10:
+
+   JMP  $+2
+
+However, the Microsoft QuickC Compiler Version 2.00 inline assembler
+will generate code that hangs the machine when executed.
+
+This is expected behavior and is due to the fact that the inline
+assembler must generate code as assembly mnemonics are encountered.
+Therefore, it cannot tell that the instruction is a SHORT jump. The
+Microsoft Macro Assembler will optimize the code into a 2-byte jump
+instruction while QuickC will generate a 3-byte jump instruction. To
+achieve the desired result either change the instruction to the
+following:
+
+   JMP  $+3
+
+or
+
+   JMP SHORT $+2
+
+The desired result of this instruction is to simply jump to the
+instruction located at the address pointed to by the instruction
+pointer, plus the number of bytes specified.
+
+The following MASM program will have the effect of skipping the second
+instruction:
+
+                                    TITLE  test
+                                    DOSSEG
+                                    .MODEL SMALL
+                                    .CODE
+ 0000                           start:
+ 0000  EB 02                        jmp  $+4
+ 0002  EB 00                        jmp  $+2
+ 0004  EB 00                        jmp  $+2
+ 0006  B8 4C00                      mov  ax,4c00h
+ 0009  CD 21                        int  21h
+                                END start
+
+Clearly, the Assembler is producing a 2-byte JMP instruction. The
+following is the code compiled with QuickC Version 2.00 which will
+have the same effect:
+
+void main(void_ {
+     _asm {
+          jmp $+6
+          jmp $+3
+          jmp $+3
+     }
+
+Upon viewing the mixed C/assembly in CodeView 2.20, it is clear that
+QuickC is generating a 3-byte JMP instruction:
+
+1:      void main(void) {
+/* startup code here */
+3:                      jmp $+6
+6DD8:002B E90300         JMP       _main+11 (0031)
+4:                      jmp $+3
+6DD8:002E E90000         JMP       _main+11 (0031)
+5:                      jmp $+3
+6DD8:0031 E90000         JMP       _main+14 (0034)
+7:         }
+/* exit code here */
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

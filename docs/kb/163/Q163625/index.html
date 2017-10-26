@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163625: XFOR: How to Completely Remove a Requestor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163625: XFOR: How to Completely Remove a Requestor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163625/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163625/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163625/","publisher":null,"image":null,"headline":"Q163625: XFOR: How to Completely Remove a Requestor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163625-xfor-how-to-completely-remove-a-requestor">Q163625: XFOR: How to Completely Remove a Requestor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163625
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes customers need to remove a Requestor or a Remote Requestor object
+either to troubleshoot or to make a change in their organization configuration.
+
+MORE INFORMATION
+================
+
+Note that deleting the requestor or remote requestor object will not remove the
+hidden custom recipient address. This address will be in the Recipients
+container and will be in the form of &lt;network&gt;\&lt;postoffice&gt;\$SYSTEM,
+where &lt;network&gt; and &lt;postoffice&gt; correspond to the connected
+postoffice on Microsoft Mail.
+
+When you remove a Requestor or Remote Requestor object, this address should be
+deleted, and then replication allowed to occur to propagate this change before
+another Requestor or Remote Requestor is created. This will prevent duplicate
+addresses from being inadvertently created.
+
+To remove the hidden recipient, use the following steps:
+
+1. In Exchange Administrator, open the Recipients container.
+
+2. From the View menu, choose Hidden Recipients. This should allow you to see
+  all hidden recipients in the container.
+
+3. Delete the hidden recipient for the $SYSTEM account on the connected
+  Network/Postoffice.
+
+When MS Mail sends a dirsync (directory synchronization) message to Exchange, it
+sends it from $SYSTEM to the dirsync address of the Exchange local postoffice.
+If there are duplicates of the $SYSTEM address, the directory service will not
+process the message. In addition, non-delivery reports (NDRs) of dirsync
+messages are not returned to the sender nor copied to the Administrator or
+Postmaster.
+
+Indicators that duplicate addresses exist are 139 errors in the application log
+(with directory synchronization logging turned to maximum) and SrvTx messages
+not appearing in the Administrator's mailbox as specified. An additional
+indicator is that updates will not appear in Exchange after synchronization.
+
+For information about how to copy dirsync messages to a requestor mailbox on
+Exchange, please see the following article in the Microsoft Knowledge Base:
+
+  Q149905 XFOR: Copying DXA Messages to a Mailbox
+
+Additional query words: 139 error message copy SYSTEM1
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

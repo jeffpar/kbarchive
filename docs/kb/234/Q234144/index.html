@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234144/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234144/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234144/","publisher":null,"image":null,"headline":"Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234144-dns-boot-file-directives-and-configuration-for-windows-nt-40">Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234144
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kbDNS
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Domain Name System (DNS) supports the directives (or commands)
+listed in this article. You can use these directives in a boot file in the
+%SystemRoot%\System32\DNSfile folder or in the EnableRegistryBoot registry key
+to start DNS with the settings you want. The boot file specifies the startup
+parameters for DNS. Directives must start at the beginning of a line with no
+preceding spaces.
+
+The recognized and supports commands are:
+
+  cache
+  primary
+  secondary
+  forwarders
+  slave
+  options
+
+NOTE: Support for the directory directive was removed after the "DNS and
+Microsoft Windows NT 4.0" white paper was published. This directive is no longer
+supported as referenced by the white paper.
+
+NOTE: Support for the options directive, which is not listed in the "DNS and
+Microsoft Windows NT 4.0" white paper, is available with Service Pack 4 or later
+for Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+Cache
+-----
+
+Specifies a cache file used to help the DNS service contact a name server for the
+ROOT domain. This command and the file it refers to must be present. A cache
+file suitable for use on the Internet is provided with the Windows NT 4.0 DNS
+service.
+
+Syntax: cache . &lt;filename&gt;
+
+Example:
+
+  cache . cache.dns
+
+A cache file contains host information that is needed to resolve names outside
+the authoritative domains and contains names and addresses of root name
+servers.
+
+The Windows NT 4.0 DNS service provides a default cache file containing name
+server information for the ROOT domain on the Internet. By default, this file is
+located in the %SystemRoot%\System32\DNS folder. This is sufficient for users on
+the Internet.
+For installations not connected to the Internet, modify the file to contain the
+name servers authoritative for the root of your private networks.
+
+A current Internet cache file is available at:
+
+  ftp://rs.internic.net/domain/named.cache
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+Primary
+-------
+
+Specifies a domain for which this name server is authoritative and a database
+file that contains the resource records for that domain (that is a zone file).
+Multiple "primary" command records could exist in the boot file.
+
+Syntax: primary &lt;domain&gt;&lt;filename&gt;
+
+Examples:
+
+  primary microsoft.com microsoft.com.dns
+  primary PSS.microsoft.com pss.microsoft.com.dns
+
+Secondary
+---------
+
+Specifies a domain for which this name server is authoritative, and a list of
+master server IP addresses from which to attempt downloading the zone
+information, rather than reading it from a file. It also defines the name of the
+local file for caching this zone. Multiple "secondary" command records could
+exist in the boot file.
+
+Syntax: secondary &lt;domain&gt;&lt;master-host&gt;&lt;local-filename&gt;
+
+Examples:
+
+  secondary BP.microsoft.com 120.120.120.1 bp.microsoft.com.dns
+  secondary BOS.microsoft.com 130.130.130.1 bos.microsoft.com.dns
+
+Forwarders
+----------
+
+Specifies another server that is willing to try resolving recursive queries on
+behalf of the system.
+
+Syntax: forwarders &lt;server-list&gt;
+
+Example:
+
+  forwarders 120.120.120.1 130.130.130.1
+
+Slave
+-----
+
+Specifies that the use of forwarders is the only possible way to resolve queries.
+This can only follow a forwarders directive.
+
+Syntax: slave
+
+Example:
+
+  forwarders 120.120.120.1 130.130.130.1
+  slave
+
+Options
+-------
+
+Specifies optional configuration parameters. Currently, the only "option"
+directive supported with the boot file is: no-recursion. Non-recursion specifies
+that the DNS name server sends non-recursive queries to other name servers.
+
+Syntax: options no-recursion
+
+Example:
+
+  options no-recursion
+
+The Boot File
+-------------
+
+The boot file is a BIND-specific implementation and is not a requirement of the
+IETF RFCs. This feature is provided for easy migration from BIND-based DNS
+servers. For more information about configuring the DNS server to boot from a
+boot file, see the "EnableRegistryBoot" and "BootMethod" sections in the
+following Microsoft Knowledge Base article:
+
+  Q198408 Microsoft DNS Server Registry Parameters, Part 1 of 3
+
+Although the DNS white paper still lists the directory directive, this directive
+is not supported. If you use the directory directive in the boot file, the
+following event is recorded in the Event log, stating that an unsupported
+directory directive was used:
+
+  DNS Parsing Error
+
+REFERENCES
+==========
+
+The "DNS and Microsoft Windows NT 4.0" white paper is available at:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/dnswp.exe
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbDNS 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

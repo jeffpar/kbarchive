@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145891/","publisher":null,"image":null,"headline":"Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145891-prb-combo-box-moves-record-pointer-when-no-selection-was-made">Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145891
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form contains a combo box that has its RowSource set to the same table
+that other controls on the form are using as their ControlSource, the record
+pointer may move to a different record when the user activates the combo box.
+There are two different scenarios where this unwanted moving of the record
+pointer can occur. This article outlines both scenarios.
+
+WORKAROUND
+==========
+
+Use an SQL statement for the RowSource of the combo box.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you are not familiar with the Form Designer or with the different form
+controls, please see Chapters 9 and 11 in the Developer's Guide.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form and add the Customer table (found in the Samples\Data
+  directory) to the form's Data Environment.
+
+2. Drag the cust_id and company fields from the Customer table in the Data
+  Environment onto the form.
+
+3. Add a combo box (Combo1) to the form and set these properties:
+
+     RowSourceType = 6 - Fields
+     RowSource = Customer.Cust_id
+
+4. Add the following code to the following indicated Combo1 events:
+
+  Init event:
+
+        This.Value = Cust_id
+
+  GotFocus event:
+
+        SET ORDER TO Cust_id
+
+  InteractiveChage event:
+
+        ThisForm.Combo2.Value = This.Value
+
+5. Add a second combo box (Combo2) to the form and set these properties:
+
+     RowSourceType = 6 - Fields
+     RowSource = Customer.Company,Cust_id
+     BoundColumn = 2
+     ColumnCount = 2
+     ColumnWidths = 200,0
+
+6. Add the following code to the following indicated Combo2 events:
+
+  Init Event:
+
+        This.Value = Cust_id
+
+  GotFocus Event:
+
+        SET ORDER TO Company
+
+  InteractiveChage Event:
+
+        ThisForm.Combo1.Value = This.Value
+
+7. Save and run the form.
+
+8. After the form is up and running, click Debug on the Tools Menu. In the Debug
+  window, enter RECNO().
+
+Scenario Number One
+-------------------
+
+Activate the drop down list in Combo1, and select BERGS. Look in the Debug window
+to see what record number you are on. Then click in the text area of Combo2 to
+place your mouse pointer in it. Look in the Debug window, and you will see that
+the record number has changed. Now place your mouse pointer back in Combo1, and
+you will see in the Debug window that the record number has moved back to what
+it was when you first made the selection in Combo1.
+
+Scenario Number Two
+-------------------
+
+Activate the drop down list in Combo1, and move your mouse pointer down the list
+until the last item in the visible list is highlighted. Without making a
+selection, click in one of the text boxes on the form. Look in the Debug Window,
+and you will see that the record pointer has moved. In both scenarios, if you
+were to activate one of the text boxes, you would see the value of the text box
+change to match what is stored in the record.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

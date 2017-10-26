@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250614: HOWTO: Sort Items in a CListCtrl in Report View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250614: HOWTO: Sort Items in a CListCtrl in Report View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250614/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250614/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250614/","publisher":null,"image":null,"headline":"Q250614: HOWTO: Sort Items in a CListCtrl in Report View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250614-howto-sort-items-in-a-clistctrl-in-report-view">Q250614: HOWTO: Sort Items in a CListCtrl in Report View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250614
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbCtrl kbListView kbMFC kbDSupport kbGrpDSMFCATL
+Last Modified: 16-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Not much information has been provided for the process of sorting the items in a
+ListView control, especially one wrapped by the CListCtrl MFC class. The details
+are easy to implement and this article attempts to fill the gap in documentation
+for this useful feature. The example code represents an MFC dialog with a list
+control set to the LVS_REPORT style.
+
+MORE INFORMATION
+================
+
+In order to sort the items in a ListView control, there must be an LVITEM
+structure associated with the item. MFC provides this for the developer,
+allowing an item to be inserted with a simple InsertItem(int nItem, LPCTSTR
+lpszItem) function call that creates the structure with reasonable defaults.
+Such a buffer from the underlying complexity can sometimes be misleading.
+However, the LVITEM structure is an important key to manipulating ListView
+items, including the sorting mechanism.
+
+The lParam element of LVITEM provides necessary information. When the SortItems
+function of the CListCtrl class is called, it must provide a function pointer to
+a sort callback function, and an application-defined DWORD value. During the
+sort, the callback function is repeatedly invoked as two items from the list
+control are selected for comparison. The parameters it receives are the lParam
+element from each item's LVITEM structure, and the DWORD value passed by the
+SortItems call.
+
+The code below represents a simple example of sorting a list of ten U.S.
+Presidents in a ListView control. The presidents are initially stored in a
+static multi-dimensional CString array.
+
+  static CString strData[10][3] =
+  {
+  	{ _T("Washington"), _T("George"), _T("1789-1797") },
+  	{ _T("Adams"), _T("John"), _T("1797-1801") },
+  	{ _T("Jefferson"), _T("Thomas"), _T("1801-1809") },
+  	{ _T("Madison"), _T("James"), _T("1809-1817") },
+  	{ _T("Monroe"), _T("James"), _T("1817-1825") },
+  	{ _T("Adams"), _T("John Quincy"), _T("1825-1829") },
+  	{ _T("Jackson"), _T("Andrew"), _T("1829-1837") },
+  	{ _T("Van Buren"), _T("Martin"), _T("1837-1841") },
+  	{ _T("Harrison"), _T("William Henry"), _T("1841") },
+  	{ _T("Tyler"), _T("John"), _T("1841-1845") }
+  };
+
+The callback sort function may be defined statically as a member of a class or,
+as here, simply as a global function:
+
+  int CALLBACK SortFunc(LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort);
+
+The lParam element can be anything from simple to highly complex. Frequently, a
+structure is useful in this context, allowing multiple pieces of data to be
+referenced. For this example, a structure called ITEMDATA was defined to hold
+the three elements comprising a given item:
+
+  typedef struct {
+  	LPTSTR pszLastName;
+  	LPTSTR pszFirstName;
+  	LPTSTR pszTerm;
+  } ITEMDATA, *PITEMDATA;
+
+In this example, the structure was defined in a CDialog class's header file, and
+a member variable of a pointer to an array of 10 was defined:
+
+  	ITEMDATA* m_pData[10];
+
+A ListView control was added to a dialog, and a member variable defined called
+m_ctlListView. The items were added in OnInitDialog:
+
+  	m_ctlListView.InsertColumn(0, _T("Last Name"), LVCFMT_LEFT, 100);
+  	m_ctlListView.InsertColumn(1, _T("First Name"), LVCFMT_LEFT, 100);
+  	m_ctlListView.InsertColumn(2, _T("Term"), LVCFMT_LEFT, 100);
+
+  	for (int i=0; i&lt;10; i++)
+  	{
+  		m_pData[i] = new ITEMDATA;
+  		m_pData[i]-&gt;pszLastName = (LPTSTR)(LPCTSTR)strData[i][0];
+  		m_pData[i]-&gt;pszFirstName = (LPTSTR)(LPCTSTR)strData[i][1];
+  		m_pData[i]-&gt;pszTerm = (LPTSTR)(LPCTSTR)strData[i][2];
+
+  		m_ctlListView.InsertItem(i, strData[i][0]);
+  		m_ctlListView.SetItemText(i, 1, strData[i][1]);
+  		m_ctlListView.SetItemText(i, 2, strData[i][2]);
+  		m_ctlListView.SetItemData(i, (LPARAM)m_pData[i]);
+  	}
+
+Three columns were inserted for the last name, first name, and term of office.
+Then, for each of the ten items, a new ITEMDATA structure is allocated and
+initialized from the CString array. The item is inserted very simply, using only
+the index and the last name string, then the text is set for the other two
+columns of the item. Finally, the function SetItemData is called, passing the
+new ITEMDATA as a parameter. This reinitializes the lParam of the item's LVITEM
+structure, and prepares the way for the sort.
+
+MFC in Visual C++ 6.0 has a problem with header notifications for the ListView
+control. Although a handler can be added, in the current version it isn't
+called. For instance, use Class Wizard or the WizardBar to add a Windows Message
+Handler. If the ID for the ListView control is highlighted, a number of
+notification messages are available for selection. To sort the items when the
+header is clicked for a given column, select the notification HDN_ITEMCLICK. An
+ON_NOTIFY message map entry is generated, as well as a handler function. For the
+current example, the entry appears as follows:
+
+  	ON_NOTIFY(HDN_ITEMCLICK, IDC_LIST1, OnItemclickList1)
+
+The problem here is that the notification doesn't actually originate from the
+ListView control; instead, the Header control created by the ListView sends the
+notification. The message map entry listed above does not work. The fix is
+simple, however, since the Header control always has an ID of 0, the macro can
+be edited to work correctly:
+
+  	ON_NOTIFY(HDN_ITEMCLICK, 0, OnItemclickList1)
+
+Then, in the OnItemclickList1 handler, the SortItems call is made:
+
+  void CSortListDlg::OnItemclickList1(NMHDR* pNMHDR, LRESULT* pResult) 
+  {
+  	NMLISTVIEW *pLV = (NMLISTVIEW *) pNMHDR;
+  	
+  	m_ctlListView.SortItems(SortFunc, pLV-&gt;iItem);
+  	
+  	*pResult = 0;
+  }
+
+The notification message header (NMHDR) is actually a ListView notification,
+NMLISTVIEW, that contains the index to the column that was clicked. In this
+example, this is represented by iItem. More complex lists might need to
+reference the iSubItem element of this structure as well. The address of the
+callback function is passed to SortItems, along with the column number which was
+clicked.
+
+The SortFunc routine is called repeatedly as pairs of the ListView's items are
+passed to the function for comparison. The first two parameters are the lParam
+element of the respective items' LVITEM structure, and the third parameter
+(application-defined) is the column number provided in the SortItems call.
+
+  int CALLBACK SortFunc(LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort)
+  {
+  	int nRetVal;
+
+  	PITEMDATA pData1 = (PITEMDATA)lParam1;
+  	PITEMDATA pData2 = (PITEMDATA)lParam2;
+
+  	switch(lParamSort)
+  	{
+  	case 0:	// Last Name
+  		nRetVal = strcmp(pData1-&gt;pszLastName,
+                                   pData2-&gt;pszLastName);
+  		break;
+
+  	case 1:	// First Name
+  		nRetVal = strcmp(pData1-&gt;pszFirstName,
+                                   pData2-&gt;pszFirstName);
+  		break;
+
+  	case 2: // Term
+  		nRetVal = strcmp(pData1-&gt;pszTerm, pData2-&gt;pszTerm);
+  		break;
+
+  	default:
+  		break;
+  	}
+
+  	return nRetVal;
+  }
+
+The column index passed in lParamSort determines which element of the ITEMDATA
+objects passed in lParam1 and lParam2 should be used for comparison. The result
+is returned and the process continues until all items have been sorted.
+
+As a reminder, the ITEMDATA structures which were allocated for the list items
+need to eventually be destroyed. For this example, the WM_DESTROY handler for
+the dialog iterates through the member elements and deletes them.
+
+  	for (int i=0; i&lt;10; i++)
+  		delete m_pData[i];
+
+REFERENCES
+==========
+
+For more information on the ListView common control, consult the Platform SDK
+documentation under Windows Common Controls in the User Interface Services
+section.
+
+Additional query words: CListCtrl ListView SortItems LVITEM LVM_SORTITEMS
+
+======================================================================
+Keywords          : kbCmnCtrls kbCtrl kbListView kbMFC kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

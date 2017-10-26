@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35524: Separating TOOLS.INI Entries for M | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35524: Separating TOOLS.INI Entries for M" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35524/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35524/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35524/","publisher":null,"image":null,"headline":"Q35524: Separating TOOLS.INI Entries for M","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35524-separating-toolsini-entries-for-m">Q35524: Separating TOOLS.INI Entries for M</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35524
+Product(s): See article
+Version(s): 1.00   | 1.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | appnote | mspl13_basic
+Last Modified: 6-JAN-1989
+
+The following information is taken from an application note called
+"Microsoft Editor Questions and Answers." The application note also is
+available from Microsoft Product Support Services by calling (206)
+454-2030.
+
+Making Separate TOOLS.INI Entries for M if You Want to Have Different
+Configurations for M Running Under DOS, OS/2 Real Mode, or OS/2
+Protected Mode, or a Combination of the Three
+
+Various combinations of tags can be used in TOOLS.INI to set up
+different configurations for different environments. Each environment
+has its own recognized tag. The following is an example:
+
+Environment:                  Tag:
+
+MS-DOS                        [M-3.30] (your particular
+                                       DOS version)
+OS/2 real mode                [M-10.0R]
+OS/2 protected mode           [M-10.0]
+
+The following is an examples of combinations:
+
+MS-DOS and OS/2 real mode     [M-3.30 M-10.0R]
+OS/2 real and protected mode  [M-10.0R M-10.0]
+
+If you have renamed M.EXE, the "M" used in the tag must be replaced
+with the name you are using for the editor. However, each M-XX.XX
+sub-tag only can appear once in a tag. For example, if you used the
+double tags above, and you were running M in OS/2 real mode, only the
+information from first tag would be loaded.
+
+By using these tags, only certain sections will be loaded from
+TOOLS.INI to initialize the editor, depending on the environment in
+which the editor is running. The statements in the [M] section are
+always loaded.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

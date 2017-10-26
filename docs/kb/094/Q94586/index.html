@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94586: EXE2BIN Error Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94586: EXE2BIN Error Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94586/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94586/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94586/","publisher":null,"image":null,"headline":"Q94586: EXE2BIN Error Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94586-exe2bin-error-messages">Q94586: EXE2BIN Error Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94586
+Product(s): Microsoft Macro Assembler
+Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1,6.11,6.1a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following table of EXE2BIN errors is adapted from "The MS-DOS Encyclopedia"
+(Microsoft Press). Even though EXE2BIN is provided with MS-DOS, it is often used
+during the process of building an application with the Microsoft Macro Assembler
+(MASM).
+
+  Error: File cannot be converted
+
+Cause: The program to be converted has one of the following problems:
+
+- The program has an origin of 0100h but a different entry point.
+
+- The program requires segment fixups.
+
+- The program code and data are larger than 64 KB.
+
+- The program has more than one declared segment
+
+- The file is not a valid .EXE-format file.
+
+  Error: File creation error
+
+Cause: EXE2BIN cannot create the output file for one of the following reasons:
+
+- A read-only file with the same name already exists
+
+- The specified directory is full
+
+- The specified disk is full, write-protected, or unreadable.
+
+  Error: File not found
+
+Cause: The file does not exist or the incorrect path was given.
+
+  Error: Fixups needed - base segment (hex):
+
+Cause: The .EXE-format file contains segment references that would ordinarily be
+relocated by the .EXE file loader. Specify the absolute segment address at which
+the converted module will be executed.
+
+  Error: Incorrect DOS version
+
+Cause: The version of EXE2BIN is not compatible with the version of MS-DOS that
+is running.
+
+  Error: Insufficient disk space
+
+Cause: The destination disk has insufficient space to create the memory-image
+output file.
+
+  Error: Insufficient memory
+
+Cause: Not enough memory is available to run EXE2BIN.
+
+  Error: WARNING - Read error in EXE file. Amount read less than size in
+  header.
+
+Cause: The file size given in the .EXE header is inconsistent with the actual
+size of the file.
+
+Additional query words: kbinf 5.00 5.10 5.10A 6.00 6.00A 6.00B 6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1,6.11,6.1a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

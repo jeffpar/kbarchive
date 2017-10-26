@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171979/","publisher":null,"image":null,"headline":"Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171979-prb-accessing-property-in-initialize-event-causes-infinite-loop">Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171979
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a property of an object is referred to in its own Initialize event, then
+Visual Basic will fire the Initialize event for that object so that it can be
+instantiated. An infinite recursion will result until stack space runs out and
+you receive the following error:
+
+  Run-time error '28':
+  Out of stack space
+
+This will occur for "built-in" objects, such as Forms, and objects created using
+Visual Basic classes.
+
+CAUSE
+=====
+
+Before a property of an object can be accessed, the object must be initialized.
+This is, in fact, the whole point of the Initialize event; it allows the
+developer to place the object in a satisfactory state by initializing private
+data before the properties and methods of an object are invoked. The properties
+and methods may have to rely on the internal data of the object being in a
+stable state.
+
+Consequently, the Initialize event must be completed before a property or method
+of an object can be accessed, and therefore it is not unexpected that the
+Initialize event is fired again when a property is referred to in the Initialize
+event.
+
+RESOLUTION
+==========
+
+If you are trying to set a property of a Visual Basic built-in object, then it
+may be possible to refer to the property in an event that occurs later than the
+Initialize event. For example, rather than setting the Caption of a Form in the
+Initialize event, set it in the Load event or the Activate event.
+
+An alternative to referring directly to Form1, which is a global object pointer,
+is to use the Me keyword. When referring directly to Form1 in the Initialize
+event of the Form, the global object Form1 has not been created so Visual Basic
+tries to instantiate it. This process causes the infinite recursion. Use the Me
+Keyword to avoid this recursion.
+
+If you are trying to set a property for an object created with class modules in
+Visual Basic, it may be appropriate to create a Method for initializing data or
+setting initial values for properties, for which the client program would be
+responsible for calling after instantiating an object. (Perhaps a good analogous
+example of this is the OLE API function OLEInitialize, which client programs
+written in C must explicitly call before using OLE services).
+
+Another way to accomplish this is to set the private data on which a property
+relies in the Initialize event. For example, if a Visual Basic property of a
+class uses a private data member like so:
+
+     Private lPrivProp1 As Long
+
+     Public Property Get lProp1() As Long
+     lProp1 = lPrivProp1
+     End Property
+
+     Public Property Let lProp1(vNewValue As Long)
+     lPrivProp1 = vNewValue
+     End Property
+
+then in the Initialize event of the class module in which this property is
+contained, it is not appropriate to try and set the public property of the
+class, but rather to set the private data member to a value.
+
+STATUS
+======
+
+This is by design.
+
+NOTE: The behavior with Visual Basic versions 5.0 and 6.0 has changed. You no
+longer receive the run-time error when accessing the property of an object in
+the Initialize event of a form. However, it is still recommended that you
+continue to use the Load or Activate events of a Form to access properties of
+objects instead of the Initialize event.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce the Problem
+------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. In the Initialize event of Form1, add the following line of code:
+
+        Form1.Caption = "Hello world"
+
+3. Run the project by pressing the F5 key. Eventually Visual Basic will run out
+  of stack space.
+
+Steps to Work Around the Problem
+--------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. In the Initialize event, place the following line of code:
+
+        Me.Caption = "Hello world"
+
+3. Run the project by pressing the F5 key. The Form should appear with a "Hello
+  World" caption.
+
+Additional query words: hang kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

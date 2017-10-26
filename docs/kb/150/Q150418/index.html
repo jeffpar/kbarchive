@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150418: How To Create an Access Database Through Visual Basic 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150418: How To Create an Access Database Through Visual Basic 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150418/","publisher":null,"image":null,"headline":"Q150418: How To Create an Access Database Through Visual Basic 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150418-how-to-create-an-access-database-through-visual-basic-40">Q150418: How To Create an Access Database Through Visual Basic 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150418
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00 | 4.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create an Access database programmatically with a
+code example. The code is useful if you need a database with a specific number
+of fields and records for testing purposes.
+
+MORE INFORMATION
+================
+
+An Access database called TEST.MDB is created when you click the command button.
+In this example, the database contains 55 records with each record containing 40
+integer fields. By changing some of the code, you alter the number of records
+and fields and the contents of the records.
+
+In the Form_Load event, the code checks to see if the database exists. If the
+database does not exist, a command button is shown on the form. Clicking the
+command button creates the database.
+
+Code Example
+------------
+
+1. Start Visual Basic 4.0. If it is already running, from the File menu, click
+  New Project.
+
+2. Add a command button, data control, and a DBGrid control on Form1. Set the
+  DataSource property of the DBGrid control to the Data control.
+
+3. Copy the following code sample to the Form1 code window:
+
+        Option Explicit
+        Dim rs1 As Recordset
+        Dim rs2 As Recordset
+        Dim db As Database
+        Dim td As TableDef
+        Dim fl As Field
+
+        Private Sub Command1_Click()
+           Dim iFields As Integer, iRecords As Integer
+
+           ' Create the database.
+           Set db = CreateDatabase("C:\test.mdb", dbLangGeneral)
+           Set td = db.CreateTableDef("Table1")
+
+           'Now that the database is created, add fields to the database
+           For iFields = 1 To 5 'The last number can be changed.
+              Set fl = td.CreateField("Field " &amp; CStr(iFields), dbInteger)
+              td.Fields.Append fl
+           Next iFields
+
+           db.TableDefs.Append td
+
+           ' Now that the database has fields, add records through a
+           ' recordset.
+           Set rs1 = db.OpenRecordset("Table1", dbOpenTable)
+           For iRecords = 1 To 10  ' For each row
+              rs1.AddNew           ' add a new record.
+
+              For iFields = 1 To 5      ' For each field in the record
+                 rs1("Field " &amp; CStr(iFields)) = iFields  ' add a number.
+              Next iFields
+
+              rs1.Update
+           Next iRecords
+
+           ' Close both the recordset and database.
+           rs1.Close
+           db.Close
+
+           ' Populate the DBGrid control with the contents of the Recordset.
+           Set db = OpenDatabase("C:\test.mdb")
+           Set rs1 = db.OpenRecordset("Select * from Table1")
+           Set Data1.Recordset = rs1
+
+           Command1.Visible = False
+        End Sub
+
+        Private Sub Form_Load()
+           If Dir("C:\test.mdb") = "" Then
+              Command1.Caption = "Create Database"
+              Command1.Visible = True
+           End If
+
+        End Sub
+
+4. Press the F5 key, or click Start on the Run menu to run the program. Click
+  the Command button, and populate the DBGrid control. Note that the file
+  TEST.MDB is also created.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00 | 4.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

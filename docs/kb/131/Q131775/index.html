@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131775/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131775/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131775/","publisher":null,"image":null,"headline":"Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131775-howto-access-child-process-exit-code-from-32-bit-parent-proc">Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131775
+Product(s): Microsoft C Compiler
+Version(s): WINNT: 2.0,2.1,4.0,5.0;
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 28-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft products listed at the beginning of this article, there is no C
+run-time function that will return the system exit code from a child process.
+However, the Win32 GetExitCodeProcess() API function can retrieve this
+information. This article shows how to use it.
+
+MORE INFORMATION
+================
+
+Under Win32, the GetExitCodeProcess() function retrieves the exit status of the
+child process. In fact, GetExitCodeProcess() can retrieve the exit status of any
+process given the correct process handle. The process handle itself must have
+PROCESS_QUERY_INFORMATION access before it can be used.
+
+If the specified process has not terminated, STILL_ACTIVE is returned as the exit
+status. If the process has terminated, the exit status returned is one of
+these:
+
+- The exit value specified in the ExitProcess or TerminateProcess function.
+
+-or-
+
+- The return value from the main or WinMain function of the process.
+
+-or-
+
+- The exception value for an unhandled exception that caused the process to
+  terminate.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;windows.h&gt;
+  #include &lt;stdio.h&gt;
+
+  void main(void)
+  {
+     PROCESS_INFORMATION pInfo;
+     STARTUPINFO         sInfo;
+     DWORD               exitCode;
+
+     sInfo.cb              = sizeof(STARTUPINFO);
+     sInfo.lpReserved      = NULL;
+     sInfo.lpReserved2     = NULL;
+     sInfo.cbReserved2     = 0;
+     sInfo.lpDesktop       = NULL;
+     sInfo.lpTitle         = NULL;
+     sInfo.dwFlags         = 0;
+     sInfo.dwX             = 0;
+     sInfo.dwY             = 0;
+     sInfo.dwFillAttribute = 0;
+     sInfo.wShowWindow     = SW_SHOW;
+
+     if (!CreateProcess(NULL,
+                  "command.com /c dir c:\\*.bat",
+                        NULL,
+                        NULL,
+                        FALSE,
+                        0,
+                        NULL,
+                        NULL,
+                        &amp;sInfo,
+                        &amp;pInfo)) {
+        printf("ERROR: Cannot launch child process\n");
+        exit(1);
+     }
+
+     // Give the process time to execute and finish
+     WaitForSingleObject(pInfo.hProcess, 5000L);
+
+     if (GetExitCodeProcess(pInfo.hProcess, &amp;exitCode))
+     {
+        switch(exitCode)
+        {
+           case STILL_ACTIVE: printf("Process is still active\n");
+                              break;
+           default:           printf("Exit code = %d\n", exitCode);
+                              break;
+        }
+     }
+     else {
+        printf("GetExitCodeProcess() failed\n");
+     }
+  }
+
+REFERENCES
+==========
+
+Books Online documentation for the Win32 GetExitCodeProcess() function.
+
+For information about 16-bit Windows-based programs, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q83301 Retrieving Application Exit Code in MS-DOS Window
+
+Additional query words: 9.00 9.0 9.1 9.10
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : WINNT: 2.0,2.1,4.0,5.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

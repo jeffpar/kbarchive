@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69751: How to Make a Library File a Dependent of the Target in PWB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69751: How to Make a Library File a Dependent of the Target in PWB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69751/","publisher":null,"image":null,"headline":"Q69751: How to Make a Library File a Dependent of the Target in PWB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69751-how-to-make-a-library-file-a-dependent-of-the-target-in-pwb">Q69751: How to Make a Library File a Dependent of the Target in PWB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69751
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Programmer's WorkBench (PWB), additional libraries may be specified in a
+Program List. However, these libraries are not put into the makefile as
+dependents of the target file. Thus, if one of these libraries is changed, this
+does not cause the project to be rebuilt unless you delete the existing target
+file or select Rebuild All to rebuild the entire project.
+
+To make a project automatically relink after an external library has been
+modified, you need to modify two build switches. This can be done permanently in
+the TOOLS.INI file or temporarily inside PWB in the Editor Settings (which can
+be reached from the Options menu). Then you must place the library(s) in the
+project's program list (as opposed to the Additional Libraries list in the Link
+Options dialog box).
+
+MORE INFORMATION
+================
+
+The following information describes the two methods for making the build-switch
+changes that are required to have libraries recognized as dependents of the
+target file in a project. For those who would like more extensive information on
+modifying and creating build switches, an application note is available from
+Microsoft on this subject. For details, query on the keyword "SW0330".
+
+You can verify the results of either of these build-switch changes by looking at
+the PWB-generated makefile and observing that external libraries are, in fact,
+listed as dependents of the project target.
+
+Making Permanent Build Switch Modifications in TOOLS.INI
+--------------------------------------------------------
+
+1. Use the Options menu items Build Options, C Compiler Options, and Link
+  Options to setup the various compiler and link options the way you want them.
+
+2. Select the Save Current Build Options function in the Build Options dialog
+  box and save the current build options under a unique name.
+
+3. Bring your TOOLS.INI file into the editor and locate the section that begins
+  with the unique name you just specified in step 2 above.
+
+4. Within this section, locate the line that reads
+
+  build: target $(PROJ).exe lrf_exe link_exe
+
+  and change it to:
+
+  " build: target $(PROJ).exe lrf_exe link_exe new_libs" (without the quotation
+  marks)
+
+5. Add a new line (anywhere in this section) that reads:
+
+  " build: command new_libs "ECHO $(LIBS) &gt;NUL"" (without the quotation
+  marks)
+
+This will cause the target to be dependent upon any library(s) placed in the
+program list whenever these new build options are in effect; when you change an
+external library, the project will be relinked even if no other modules have
+changed.
+
+Making Temporary Build Switch Modifications in the Editor Settings
+------------------------------------------------------------------
+
+1. Select the Editor Settings function from the Options menu.
+
+2. Find the section containing the build switches.
+
+3. Within this section, locate the line that reads
+
+  build: target $(PROJ).exe lrf_exe link_exe
+
+  and change it to:
+
+  " build: target $(PROJ).exe lrf_exe link_exe new_libs" (without the quotation
+  marks)
+
+4. Add a new line (somewhere in this section) that reads:
+
+  " build: command new_libs "ECHO $(LIBS) &gt;NUL"" (without the quotation
+  marks)
+
+These changes will be in effect only for the current programming session. Thus,
+this method is useful for testing, but the previous method is recommended for
+regular use.
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

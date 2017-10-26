@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186504: Terminal Server Commands: CHANGE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186504: Terminal Server Commands: CHANGE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186504/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186504/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186504/","publisher":null,"image":null,"headline":"Q186504: Terminal Server Commands: CHANGE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186504-terminal-server-commands-change">Q186504: Terminal Server Commands: CHANGE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186504
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CHANGE command replaces CHGLOGON, CHGUSER, and CHGPORT from Citrix
+Winframe.
+
+The change utilities are used to change current settings. The change command can
+invoke any one of the change utilities.
+
+change [logon | port | user] [/?]
+
+/? (help): Displays the syntax for the command and information about the
+command's options.
+
+CHANGE LOGON
+------------
+
+Disables all logons for system maintenance.
+
+Syntax:
+
+change logon [/enable] [/disable] [/query] [/?]
+
+Parameters:
+
+none
+
+/enable
+
+  Enables logons from client sessions, but not from the console.
+
+/disable
+
+  Disables subsequent logons from client sessions, but not from the console.
+  Currently logged on users are not affected.
+
+/query
+
+  Displays the current logon status.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+Security Restrictions:
+
+Only administrators can run CHANGE LOGON.
+
+CHANGE LOGON -- Additional Notes:
+
+The change logon command disables logons from client sessions other than the
+system console. Users that are currently logged on are not affected. Client
+sessions are always re-enabled when you restart the system. If you are connected
+to the Terminal Server from a remote location and disable client sessions, and
+if you log off before re-enabling client sessions, you will not be able to
+reconnect. You need to logon at the system console in order to re-enable
+sessions.
+
+CHANGE PORT
+-----------
+
+Changes the COM port mappings to be compatible with DOS applications.
+
+Syntax:
+
+change portchange port COMx=COMychange port /d COMxchange port [/?]
+
+Parameters:
+
+COMx=COMyMaps COM port x to port y.
+
+/d COMx
+
+  Deletes the mapping for COM port COMx.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+CHANGE PORT -- Additional Notes:
+
+Most MS-DOS applications support only COM1 though COM4 serial ports. CHANGE PORT
+maps a serial port to a different port number, allowing applications that cannot
+access high-numbered COM ports to access the serial port. For example, to map
+COM12 to COM1 for use by a MS-DOS application, type change port com12=com1.
+Remapping works only for the current session and is not retained if you logoff
+and then log on again.
+
+Run CHANGE PORT without any parameters to display the available COM ports and the
+current COM port mappings.
+
+CHANGE USER
+-----------
+
+Changes the .ini file mapping setting.
+
+Syntax:
+
+change user [/install | /execute | /query] [/?]
+
+Parameters:
+
+none
+
+/install
+
+  Disables the ability to map the .ini files in the home directory. All .ini
+  files are read and written to the Terminal Server system directory. You must
+  disable .ini file mapping when installing applications on a Terminal Server.
+  See the Notes section below for details.
+
+/execute
+
+  Enables the ability to map.ini files to the home directory. This is the
+  default setting.
+
+/query
+
+  Displays the current .ini file mapping setting.
+
+/? (help)
+
+  Displays the syntax for the command and information about the command's
+  options.
+
+CHANGE USER -- Additional Notes:
+
+Use change user /install before installing an application to create .ini files
+for the application in the Terminal Server system directory. These files are
+used as master copies for the user-specific .ini files. After installing the
+application, use change user /execute to revert to normal .ini file mapping.
+
+The first time you run the application, the application looks in the home
+directory for its .ini files. If the .ini files are not found in the home
+directory, but are found in the Terminal Server system directory, the Terminal
+Server copies the .ini files to the home directory. This ensures that each user
+has a unique copy of the application's .ini files. Any new .ini files are
+created in the home directory. Each user should have a unique (user-specific)
+copy of the .ini files for an application to avoid instances where several users
+have incompatible application setups; for example, different default directories
+or screen resolutions.
+
+When the system is put into install mode (change user /install), several things
+happen. All Registry entries that are created are shadowed under
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Terminal
+Server\Install.
+
+Keys added to HKEY_CURRENT_USER are copied under the Software key and keys added
+to HKEY_LOCAL_MACHINE are copied under MACHINE. If the application queries the
+Windows directory (using system calls like GetWindowsDirectory), the Terminal
+Server returns the %systemroot% directory. If any .ini file entries are added
+(using system calls such as WritePrivateProfileString), they are added to the
+.ini files under the %systemroot% directory.
+
+When the system is put back in execution mode (change user /execute),and the
+application tries to read a Registry entry under HKEY_CURRENT_USER that doesn't
+exist, the Terminal Server checks to see if a copy of the key exists under the
+TerminalServer\Install section of the Registry. If it does, the keys are copied
+to the appropriate location under HKEY_CURRENT_USER. If the application tries to
+read from an .ini file that doesn't exist, the Terminal Server looks for that
+.ini file under the system root. If the .ini file is in the system root, it is
+copied to the home directory\Windows. If the application queries the Windows
+directory, the Terminal Server returns the home directory\Windows.
+
+When you log on, the Terminal Server checks to see if the system .ini files are
+newer than the .ini files on your computer. If the system version is newer, your
+.ini file is replaced with the newer version or the new entries in the system
+version are merged into your .ini file. This depends on whether or not the
+INISYNC bit, 0x40, is set for this .ini file. See the Advanced Installation
+Topics section of the on-line help for additional information. Your previous
+version of the .ini file is renamed to Inifile.ctx. If the system Registry
+values under Install\ are newer than your version under HKEY_CURRENT_USER, then
+your version of the keys is deleted and replaced with the new keys from under
+Install\.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

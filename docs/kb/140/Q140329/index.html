@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140329: Trust Relationships Fail with Large Number of Trusted Domains | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140329: Trust Relationships Fail with Large Number of Trusted Domains" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140329/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140329/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140329/","publisher":null,"image":null,"headline":"Q140329: Trust Relationships Fail with Large Number of Trusted Domains","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140329-trust-relationships-fail-with-large-number-of-trusted-domains">Q140329: Trust Relationships Fail with Large Number of Trusted Domains</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140329
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Windows NT Backup Domain Controllers do not list all trusted domains during
+logon when there are more than twenty trust relationships.
+
+Trusted domain users from domains that do not show up in the Backup Domain
+Controller's list of domains during logon receive access denied errors when
+attempting to use resources on the Backup Domain Controller.
+
+CAUSE
+=====
+
+This occurs because the full list of trusted domains is not replicated to Backup
+Domain Controllers. Since the Backup Domain Controllers do not have a complete
+list of trusted domains, they do not setup a secure channel with Domain
+Controllers that exist in Domain accounts that did not replicate. This results
+in access denied errors on clients from trusted domains because there is no way
+for pass-through validation to occur.
+
+The complete list of trusted domains does not replicate to Backup Domain
+Controllers because Netlogon does not indicate all the trusted domain accounts
+to replicate. Replication fails when Netlogon calls the LSA to get the complete
+list of domain accounts to replicate during a synchronization. Netlogon fails
+because it replicates domain names when it receives STATUS_SUCCESS back from the
+LSA, however with a large number of trusted domain names the LSA may return
+STATUS_MORE_ENTRIES instead of STATUS_SUCCESS. The LSA returns
+STATUS_MORE_ENTRIES if the default buffer supplied by Netlogon (1k in size) is
+too small to hold the complete list of domain names. As a result, if there are
+too many domains to fit in the 1k buffer, Netlogon ignores all but the last
+group of domain names returned by the LSA when STATUS_SUCCESS is received.
+
+RESOLUTION
+==========
+
+This problem has been corrected in the latest Service Pack for Windows NT
+version 3.51.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: incomplete
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

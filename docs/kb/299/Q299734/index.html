@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299734: Component Configuration Document Does Not Refresh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299734: Component Configuration Document Does Not Refresh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299734/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299734/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299734/","publisher":null,"image":null,"headline":"Q299734: Component Configuration Document Does Not Refresh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299734-component-configuration-document-does-not-refresh">Q299734: Component Configuration Document Does Not Refresh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299734
+Product(s): Microsoft Developer Network
+Version(s): 1.3,1.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Passport Manager requests the Component Configuration Document (CCD) as XML
+through the HTTP protocol, using port 443. Firewalls that prevent outbound or
+inbound HTTP prevent the Component Configuration Document from being updated.
+
+MORE INFORMATION
+================
+
+If the Passport server is behind a firewall, it may be necessary to introduce a
+staging system, in which a computer that bridges the firewall is specified as a
+file share and is enabled to refresh the CCD. The refresh can happen at
+specified intervals, or the computer can also be Passport Manager-enabled so
+that the refresh happens as needed. The file share on the computer can then be
+specified as the CCDLocalFile in the Passport node of the registry, and servers
+behind the firewall can then share that configuration and remain behind the
+firewall.
+
+Checking your CCD file periodically to see if any additions have been made to
+core profile attributes is recommended. Locate the Partner.xml document, usually
+in the WinNT\system32\MicrosoftPassport folder, and open it in the Microsoft
+Internet Explorer browser of your server to view the Passport configuration
+attributes. You can check the file date to see when it was last updated or check
+the Passport Manager events in Event Viewer to see if a CCD refresh event has
+been detected recently.
+
+REFERENCES
+==========
+
+For more information, see the following Microsoft Developer Network (MSDN) Web
+site:
+
+  Passport SDK 1.4
+  http://msdn.microsoft.com/library/en-us/ppsdk14/defeula2.asp
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

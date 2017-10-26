@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q307408: Err Msg: Lrun32 Caused Exception 10H in Module Lrun32.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q307408: Err Msg: Lrun32 Caused Exception 10H in Module Lrun32.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/307/Q307408/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/307/Q307408/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/307/Q307408/","publisher":null,"image":null,"headline":"Q307408: Err Msg: Lrun32 Caused Exception 10H in Module Lrun32.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q307408-err-msg-lrun32-caused-exception-10h-in-module-lrun32exe">Q307408: Err Msg: Lrun32 Caused Exception 10H in Module Lrun32.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q307408
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 06-AUG-2002
+
+WARNING:This information is preliminary and has not been confirmed or tested by Microsoft. Use only with discretion.
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Office 2000 Step By Step Interactive ISBN 0-7356-0506-8 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Office 2000 Step By Step Interactive, you may receive
+the following error message:
+
+  This program has performed an illegal operation and will be shut down.
+
+When you click Details, you receive a message similar to the following:
+
+  LRUN32 caused an exception 10H in module LRUN32.EXE.
+
+CAUSE
+=====
+
+This behavior can occur if Macromedia Shockwave Player is outdated or damaged.
+Macromedia Flash Player, which is included in Macromedia Shockwave Player, is
+required for the tutorials in Office 2000 Step by Step Interactive to function
+correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the Shockwave objects from the Downloaded Program
+Files folder on your computer's hard disk, remove Office 2000 Step by Step
+Interactive, install the latest version of Macromedia Shockwave Player, and then
+reinstall Office 2000 Step by Step Interactive. To do this, follow these steps:
+
+1. Start Windows Explorer, and then browse to the Downloaded Program Files
+  folder on your hard disk.
+
+  In Microsoft Windows 98, Windows 98 Second Edition (SE), or Microsoft Windows
+  Millennium Edition (Me), the Downloaded Program Files folder is in the
+  &lt;C&gt;:\Windows folder.
+
+  In Microsoft Windows NT 4.0 and Microsoft Windows 2000, the Downloaded Program
+  Files folder is located in the &lt;C&gt;:\Winnt folder.
+
+  NOTE: &lt;C&gt; is the drive on which Windows is installed.
+
+2. In the Downloaded Program Files folder, locate the Shockwave Player control
+  object or objects (for example, Shockwave Flash Object and Shockwave ActiveX
+  Control).
+
+3. Right-click each object that is found, and then click Remove.
+
+  Click Yes when you are prompted to remove the file.
+
+4. Quit Windows Explorer.
+
+5. Click Start, point to Settings, and then click Control Panel.
+
+6. Double-click Add/Remove Programs.
+
+7. Click "Microsoft Office 2000 Step by Step Interactive", and then click
+  Change/Remove (if you are running Microsoft Windows 98, Window 98 SE, Windows
+  Me, or Windows NT 4.0), or click Add/Remove (if you are running Windows
+  2000).
+
+  Click OK when you are prompted to remove the program.
+
+8. Start Microsoft Internet Explorer, and then connect to the following
+  Macromedia Web site:
+
+  http://sdc.shockwave.com/shockwave/download/frameset.fhtml?
+
+9. Click Install Now to install the latest version of Macromedia Shockwave
+  Player.
+
+10. When the Shockwave Player installation is complete, quit Internet Explorer.
+
+11. Insert your Office 2000 Step by Step Interactive CD-ROM into your computer's
+  CD-ROM or DVD-ROM drive.
+
+12. Run Setup to reinstall Office 2000 Step by Step Interactive.
+
+MORE INFORMATION
+================
+
+For additional information about Microsoft Office 2000 Step by Step Interactive,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q235243 Microsoft Office 2000 Step By Step Interactive Comments and
+  Corrections
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

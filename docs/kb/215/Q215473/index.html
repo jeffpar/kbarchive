@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215473/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215473/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215473/","publisher":null,"image":null,"headline":"Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215473-xfor-understanding-how-snads-connector-uses-lu-62">Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215473
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a brief overview of SNADS, LU6.2, and APPC, and how the
+SNADS Connector uses LU 6.2.
+
+MORE INFORMATION
+================
+
+SNADS (Systems Network Architecture Distribution Services) is a network of
+Distribution Service Units (DSU) that are responsible for transporting
+distributions (messages) from one end-user to another end-user. SNADS (or
+specifically, each DSU) uses LU 6.2 as a transport to send a distribution from
+one DSU to another DSU.
+
+LU 6.2 is a resource on an SNA node that can establish communications with
+another LU 6.2 on another SNA node to pass data. LU 6.2 also exposes a
+programming interface to allow a Transaction Program (TP) to request a
+conversation to another TP through an LU 6.2 - LU 6.2 session.
+
+In analogy to TCP/IP, the LU 6.2 - LU 6.2 session could be compared with a
+three-way TCP/IP handshake, and the TP could be compared with the application
+that is using the TCP/IP session. A DSU can act as multiple TPs just like any
+application can handle multiple incoming TCP/IP ports, or have multiple outgoing
+TCP/IP sessions. A DSU can be analogous to an SMTP mail server.
+
+The TP uses APPC commands to interface with the LU 6.2 to request a conversation,
+send data, and end a conversation with a partner TP on another LU 6.2.
+
+For example, a TP would use the ALLOCATE command to request the LU 6.2 to
+initiate a conversation with a named partner TP at a named partner LU 6.2.
+
+SNADS uses specific TP names to represent the functions of sending and receiving
+SNADS distributions (mail).
+
+  TP name for sending SNADS FS1 distributions: X'21'001
+  TP name for receiving SNADS FS1 distributions: X'21'002
+
+The notation above for the TP names indicates that the TP name begins with the
+(non-printable) character with hexadecimal code 21, and ends with the printable
+characters 001 or 002.
+
+The SNADS connector emulates a DSU in that it implements the X'21'001 and
+X'21'002 Transaction Programs.
+
+The SNADS connector will use the TP_STARTED, ALLOCATE, SEND_DATA, CONFIRM,
+DEALLOCATE, and TP_ENDED commands during the process of starting up, sending a
+message to the Host (or AS/400) system, and shutting down.
+
+The SNADS connector will use the RECEIVE_ALLOCATE, RECEIVE_AND_WAIT, CONFIRMED,
+TP_ENDED commands during the process of starting up, receiving a message from
+the Host (or AS/400) system, and shutting down.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

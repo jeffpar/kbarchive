@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q210198: SMS: Triggers Not Being Generated in Specified Inboxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q210198: SMS: Triggers Not Being Generated in Specified Inboxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/210/Q210198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/210/Q210198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/210/Q210198/","publisher":null,"image":null,"headline":"Q210198: SMS: Triggers Not Being Generated in Specified Inboxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q210198-sms-triggers-not-being-generated-in-specified-inboxes">Q210198: SMS: Triggers Not Being Generated in Specified Inboxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q210198
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbConfig kbDatabase kbServer kbsms200
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Trigger Manager thread of the Microsoft Systems Management Server (SMS) SQL
+Monitor service is responsible for notifying other SMS components of database
+changes. This service allows an almost instantaneous response to the creation,
+update, or deletion of, or the request for, numerous SMS processes such as
+collection updates.
+
+To inform the Trigger Manager of specific database events, SMS Executive thread
+components add keys to a specific location in the site server?s registry. Each
+trigger responds to an insert, update, or deletion on a specific database table
+and writes to the inbox of the component specified in the registry. The absence
+of these triggers can prevent SMS thread components from acting on proposed
+changes.
+
+If triggers are not generated in the expected inboxes, check the following to
+identify the problem area:
+
+- If the site server computer and SQL Server computer are different computers,
+  verify network connectivity between the two. Also, examine the SMS SQL
+  Monitor status messages or the SMSdbmon.log file to verify that SMS SQL
+  Monitor has read the triggers from the registry and installed them to the
+  appropriate tables in the SMS site database.
+
+- Examine the SMSdbmon.log file to verify that the following conditions are
+  true:
+
+   - SMS SQL Monitor has access to the specified inboxes at the site server
+     where it must write the key file for the trigger.
+
+   - The key file (for example, *.adc or *.udc) was written to
+     SMS\Inboxes\&lt;component&gt;.box (for example, SMS\Inboxes\Colleval.box).
+
+- If the trigger file was written, verify from the appropriate component log
+  file that the component has read the key file and taken the required action.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbDatabase kbServer kbsms200 
+Technology        : kbSMSSearch kbSMS200SP1 kbSMS200SP2
+Version           : :2.0 SP1,2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

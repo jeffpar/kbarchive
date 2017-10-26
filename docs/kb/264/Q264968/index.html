@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264968: Files without Extensions are Mapped to Application/Octet-Stream | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264968: Files without Extensions are Mapped to Application/Octet-Stream" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264968/","publisher":null,"image":null,"headline":"Q264968: Files without Extensions are Mapped to Application/Octet-Stream","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264968-files-without-extensions-are-mapped-to-applicationoctet-stream">Q264968: Files without Extensions are Mapped to Application/Octet-Stream</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264968
+Product(s): Internet Information Server
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When IIS locates a file that does not have an extension, the Content-Type that
+is sent back to the browser is set to application/octet-stream. There is no way
+to change this behavior in the user interface. The AOL Netscape browser does not
+display the file because of this header setting. Instead, it tries to download
+the file.
+
+RESOLUTION
+==========
+
+WARNING: Editing the metabase incorrectly can cause serious problems that may
+require you to reinstall any product that uses the metabase. Microsoft cannot
+guarantee that problems resulting from incorrectly editing the metabase can be
+solved. Edit the metabase at your own risk.
+
+NOTE: You should always back up the metabase before you edit it.
+
+To resolve this problem, do the following:
+
+1. Install the IIS Resource Kit.
+
+2. Run the Setup program to install MetaEdit.
+
+3. Start MetaEdit, open the LM tree in the left hand pane, and then open the
+  MimeMap folder.
+
+4. In the right pane, double-click ID 6015 MimeMap.
+
+5. In the Data list box, scroll down (about half way) until you find
+  .*,application/octet-stream.
+
+6. Change the value to .*,text/html.
+
+7. Click OK, and then close MetaEdit.
+
+8. Open a command window so that you can stop and restart IIS.
+
+9. Type the following command at a command prompt:
+
+  net stop iisadmin /y
+
+10. Type the following command at a command prompt:
+
+  net start w3svc
+
+WORKAROUND
+==========
+
+Add an extension to the file.
+
+STATUS
+======
+
+This is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

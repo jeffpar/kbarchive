@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178527/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178527/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178527/","publisher":null,"image":null,"headline":"Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178527-prb-vb5-sp2-and-sp3-give-incorrect-floating-point-results">Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178527
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some calculations yield differing results depending on the prior state of the
+floating point processor.
+
+RESOLUTION
+==========
+
+Run a simple calculation, such as D = Int(D), to reset the floating point
+control registers prior to doing floating point calculations. Note that you may
+have to do this prior to each calculation sequence, depending on what external
+calls are made between calculation sequences.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual Basic 5.0 (without Visual Studio 97 Service Packs 2 or 3) on a
+  clean machine.
+
+2. Make a project with two CommandButton and the following code:
+
+        Private Sub Command1_Click()
+        Dim K0 As Double, K1 As Double, K2 As Double, N As Double
+          K0 = 0.029204
+          K1 = -1.0508
+          K2 = -0.34226
+          N = 0#
+          Do While N &lt;= 2.75
+            N = N + 0.02
+          Loop
+          MsgBox -(K1 + 2# * K2 * N) * Exp(K0 + K1 * N + K2 * N ^ 2) - 0.012
+        End Sub
+
+        Private Sub Command2_Click()
+          Dim D As Double
+          D = Int(D)
+        End Sub
+
+3. Run the program in the IDE and click the CommandButtons in the following
+  order:
+
+  Command1
+  Command2
+  Command1
+
+  The result of the calculation in each case is: 2.80181002613759E-04.
+
+4. Install Visual Basic 5.0 with the Visual Studio 97 SP2 or SP3, and rerun the
+  program. Note that the result of the calculation is different:
+
+   - Prior to clicking Command2: 2.80181002613761E-04
+
+   - After clicking Command2: 2.80181002613759E-04
+
+Notes
+-----
+
+1. Simply setting N to 2.76 does not cause a problem with the calculation; it
+  must be iterated for the problem to occur.
+
+2. Running a compiled EXE seems to give the correct results, but this may be due
+  to different start-up sequences and is no guarantee of repeatable results if
+  the floating point control registers are altered by a DLL or other call.
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

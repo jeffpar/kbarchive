@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295725: Receiving Duplicate Inbound SMTP Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295725: Receiving Duplicate Inbound SMTP Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295725/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295725/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295725/","publisher":null,"image":null,"headline":"Q295725: Receiving Duplicate Inbound SMTP Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295725-receiving-duplicate-inbound-smtp-messages">Q295725: Receiving Duplicate Inbound SMTP Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295725
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user receives an exact copy of the same inbound message over and over. Each
+new duplicate message is received at a consistent interval. This continues for
+several hours and then stops suddenly. Several of these "runs" of duplicate
+messages can occur at the same time and can affect multiple users.
+
+CAUSE
+=====
+
+The Cisco PIX firewall appliance uses an SMTP protocol filtering feature called
+Mailguard. Mailguard blocks all Extended Simple Mail Transfer Protocol (ESMTP)
+commands and allows only seven basic SMTP commands to pass.
+
+The Mailguard feature is intended to help protect weakly secured mail servers. If
+a server is already well configured, and has the latest security patches and
+fixes from the SMTP vendor, Mailguard is not required.
+
+There is a known issue with Mailguard that causes duplicate inbound messages. To
+check for the presence of Mailguard, from a workstation on the internet open a
+telnet session to port 25 of the Exchange IMS. You should see something similar
+to the following:
+
+  220
+  *********0*****************************************************************
+  ************2*************
+
+Now issue the EHLO command. You may see the following:
+
+  ehlo
+  500 Unrecognized command
+
+In a typical SMTP session, a sending host marks the end of the DATA portion of
+the message with CRLF.CRLF on a line by itself. The receiving host acknowledges
+receipt of the message data by issuing a 250 OK response back to the sending
+host. The sending host replies with the QUIT command. The normal response from
+the receiving host would be 221 closing connection. Once the sending host
+receives this last response, the session is complete.
+
+If for any reason the CRLF.CRLF terminating string is broken into separate
+packets during transmission, Mailguard rejects it and does not pass it to the
+mail server. The connection eventually times out and the message queues for
+delivery on the receiving host. Because the sending host never receives
+confirmation of receipt, it assumes delivery failure. It re-queues the message
+for attempted delivery at a later time. This goes on repeatedly until the
+message time-out on the sending host is exhausted.
+
+Further testing with SMTP Protocol Logging can be used to pinpoint the failure in
+a message session. From a sample captured SMTP log below, observe the missing
+response of the receiving host to the CRLF.CRLF command.
+
+2/7/01 5:01:20 PM : A connection was accepted from mail.domain1.com
+2/7/01 5:01:21 PM : &lt;&lt;&lt; HELO mail.domain1.com
+2/7/01 5:01:21 PM : &gt;&gt;&gt; 250 OK
+2/7/01 5:01:21 PM : &lt;&lt;&lt; MAIL From:&lt;user@domain1.com&gt;
+2/7/01 5:01:21 PM : &gt;&gt;&gt; 250 OK - mail from &lt;user@domain1.com&gt;
+2/7/01 5:01:22 PM : &lt;&lt;&lt; RCPT To:&lt;user@domain2.com&gt;
+2/7/01 5:01:22 PM : &gt;&gt;&gt; 250 OK - Recipient &lt;user@domain2.com&gt;
+2/7/01 5:01:23 PM : &lt;&lt;&lt; DATA
+2/7/01 5:01:23 PM : &gt;&gt;&gt; 354 Send data. End with CRLF.CRLF
+2/7/01 5:05:44 PM : A connection was accepted from mail.domain3.com
+
+RESOLUTION
+==========
+
+To resolve this issue, turn off Mailguard.
+
+Cisco has corrected this issue in later software releases. Customers who do not
+want to turn off Mailguard must contact Cisco for the latest updates to the PIX
+operating system.
+
+Cisco has determined this to be an issue in certain versions of PIX operating
+software. This issue is linked to bug: CSCds90792. Registered users of Cisco
+Connection Online (CCO) have access to release notes for this bug in Cisco's
+Software Bug Toolkit: http://www.cisco.com/kobayashi/bugs/bugs.html
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+MORE INFORMATION
+================
+
+Mailguard allows connections to an e-mail host through Transport Control
+Protocol (TCP) port 25 only. It logs all Simple Mail Transfer Protocol (SMTP)
+activity and allows only the minimum SMTP server commands found in Request for
+Comments (RFC) 821, Section 4.5.1.
+
+PIX Firewalls are manufactured by Cisco, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding these products' performance or
+reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

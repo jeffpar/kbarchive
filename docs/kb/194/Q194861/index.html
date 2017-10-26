@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194861/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194861/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194861/","publisher":null,"image":null,"headline":"Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194861-fix-atlreporterror-no-overloaded-function-takes-x-parameters">Q194861: FIX: "AtlReportError: no overloaded function takes X parameters"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194861
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbVC600bug kbATL300bug kbGrpDSMFCATL kbNoUpdate
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Porting an ATL 2.x project to ATL 3.0 might give you the following compilation
+error:
+
+  error C2661: 'AtlReportError' : no overloaded function takes 2 parameters.
+
+CAUSE
+=====
+
+AtlReportError() does not have any default parameters in ATL 3.0.
+AtlReportError() in ATL 2.1 did have default parameters.
+
+RESOLUTION
+==========
+
+Specify all the parameters required by AtlReportError() or complete the
+following steps:
+
+1. Use the CComCoClass static member Error() which accepts default arguments.
+  For example, replace:
+
+        return AtlReportError(
+           CLSID_PolyCtl, _T("Must have between 3&amp;100 sides"));
+
+  with:
+
+        // If your class is derived from CComCoClass&lt;CMyClass,
+        // &amp;CLSID_MyClass&gt;:
+        return Error(_T("Must must have between 3 &amp; 100 sides"));
+
+        // If not derived from CComCoClass&lt;&gt;:
+        return CComCoClass&lt;CMyClass, &amp;CLSID_MyClass&gt;::Error(
+           _T("Must must have between 3 &amp; 100 sides"));
+
+2. Modify \vc98\atl\include\atlcom.h so that all the function prototypes for
+  AtlReportError() accept default arguments. Essentially use the same
+  prototypes used in ATL 2.1. The following code lists the various prototypes
+  of AtlReportError and their default argument equivalents in the same order as
+  AtlCom.h:
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid, UINT nID,
+           const IID&amp; iid, HRESULT hRes, HINSTANCE hInst)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid, UINT nID,
+        const IID&amp; iid = GUID_NULL, HRESULT hRes = 0,
+        HINSTANCE hInst = _Module.GetResourceInstance())
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid, UINT nID,
+           DWORD dwHelpID, LPCOLESTR lpszHelpFile, const IID&amp; iid, HRESULT
+              hRes,
+           HINSTANCE hInst)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid, UINT nID,
+           DWORD dwHelpID, LPCOLESTR lpszHelpFile, const IID&amp; iid =
+              GUID_NULL,
+           HRESULT hRes = 0, HINSTANCE hInst = _Module.GetResourceInstance())
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCSTR lpszDesc, DWORD dwHelpID, LPCSTR lpszHelpFile, const IID&amp;
+              iid,
+           HRESULT hRes)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCSTR lpszDesc, DWORD dwHelpID, LPCSTR lpszHelpFile,
+           const IID&amp; iid = GUID_NULL, HRESULT hRes = 0)
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCSTR lpszDesc, const IID&amp; iid, HRESULT hRes)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCSTR lpszDesc, const IID&amp; iid = GUID_NULL, HRESULT hRes = 0)
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCOLESTR lpszDesc, const IID&amp; iid, HRESULT hRes)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCOLESTR lpszDesc, const IID&amp; iid = GUID_NULL, HRESULT hRes = 0)
+
+   - Replace:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCOLESTR lpszDesc, DWORD dwHelpID,LPCOLESTR lpszHelpFile,
+           const IID&amp; iid, HRESULT hRes)
+
+     with:
+
+        inline HRESULT WINAPI AtlReportError(const CLSID&amp; clsid,
+           LPCOLESTR lpszDesc, DWORD dwHelpID, LPCOLESTR lpszHelpFile,
+           const IID&amp; iid = GUID_NULL, HRESULT hRes = 0)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jaganathan
+Thangavelu, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVC600bug kbATL300bug kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

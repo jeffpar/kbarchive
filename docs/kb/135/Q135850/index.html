@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135850/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135850/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135850/","publisher":null,"image":null,"headline":"Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135850-sms-no-query-results-returned-when-sql-tempdb-is-too-small">Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135850
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbConfig kbDatabase smsconfig smsdatabase
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2, 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you run a query that requires more space than is allocated for tempdb, no
+return is displayed and no errors are given.
+
+By default, Systems Management Server sorts the query results before displaying
+them. This sorting is done in tempdb.
+
+WORKAROUND
+==========
+
+To work around this problem, do either of the following:
+
+- If this problem exists for a single large query, try to refine the query so
+  that the query result is smaller.
+
+  -or-
+
+- Increase the size of tempdb.
+
+For more information on device size recommendations and free space requirements,
+see the MORE INFORMATION section of this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0, 1.1, and 1.2.
+
+MORE INFORMATION
+================
+
+DEVICE SIZE RECOMMENDATIONS
+---------------------------
+
+- The data and log devices should each be a minimum of 10 MB.
+
+- For each computer, allocate 35 KB of data device space.
+
+- For the site database, the log device should be at least 10 percent of the
+  data device.
+
+- The data device for the tempdb should be at least 20 percent of the data
+  device for the site database.
+
+- For the tempdb database, the log device should be at least 20 percent of the
+  data device.
+
+For example, on a site of 10,000 computers:
+
+- The site data device would be 35 KB x 10,000 computers, resulting in a 350 MB
+  data device and (.10 x 350 MB = 35 MB) 35 MB log device.
+
+- The tempdb data device would be (.20 x 350 MB), for a 70 MB data device and
+  (.20 x 70 MB) for a 14 MB log device.
+
+FREE SPACE REQUIREMENTS IN THE DATABASE
+---------------------------------------
+
+To find the space used in the data device, run the sp_spaceused stored procedure
+against the database. Divide the space reserved by the size of the data device.
+If this is over 90 percent for the site database, expand the database. If this
+is over 60 percent for the tempdb data device, expand the database. The tables
+in tempdb are all temporary, so this needs to be checked at peak usage, when
+several Administrator user interfaces are querying the database. The
+Administrator user interfaces put more of a load on tempdb than the site can, so
+even a few can consume the space recommended above.
+
+You can use Windows NT Performance Monitor to observe the log device usage. If
+any of these get over 60 percent, expand the database.
+
+Additional query words: prodsms perfmon admin
+
+======================================================================
+Keywords          : kbnetwork kbConfig kbDatabase smsconfig smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

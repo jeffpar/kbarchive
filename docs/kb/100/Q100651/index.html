@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100651: Using TCP/IP Extensions to Integrate Subnet Domains | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100651: Using TCP/IP Extensions to Integrate Subnet Domains" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100651/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100651/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100651/","publisher":null,"image":null,"headline":"Q100651: Using TCP/IP Extensions to Integrate Subnet Domains","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100651-using-tcpip-extensions-to-integrate-subnet-domains">Q100651: Using TCP/IP Extensions to Integrate Subnet Domains</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100651
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The TCP/IP Extensions for LAN Manager address issues relating to two of the
+three types of broadcasts: second class mail slots, and name query frames
+spanning subnets to allow domain functionality.
+
+When using the Microsoft TCP/IP Extensions with LAN Manager hub and node services
+to view multiple domains, make sure your node services are configured to
+propagate broadcasts for all appropriate domains within LANMAN.INI.
+
+MORE INFORMATION
+================
+
+Below is an example. To put an X in the checkboxes for the types of messages you
+want to route through the TCP/IP hub , click on the checkbox or put the cursor
+in the box and press the SPACEBAR.
+
+  [tcpip_node]
+
+  ..Hub Name:  &lt;NetBIOS name of the hub service.
+  ..Hub IP Addr:  &lt;IP address of the hub service&gt; ex: 140 30 40 200
+    Domains : &lt;domain name, domain name&gt;
+
+  Sub-services:
+  [X] UAS  Replication
+  [X] Net View
+  [X] Logon Validation
+  [ ] Net Who
+  [ ] Net Send
+  [ ] Replication          User-Defined Mailslots
+  [ ] User-defined 1       [                                 ]
+  [ ] User-defined 2       [                                 ]
+  [ ] User-defined 3       [                                 ]
+
+Note: In the Domains field, list the domain(s) you want this TCP/IP node to serve
+on the line provided.
+
+REFERENCES
+==========
+
+Microsoft LAN Manager "Installation And Configuration Guide," pages 375-383
+
+Microsoft TCP/IP Extensions for LAN Manager by Margaret K. Johnson (Volume 3,
+Number 29 September 1992)
+
+Additional query words: 2.10a 2.1a 2.20 2.2 hub node
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

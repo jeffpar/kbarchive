@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125486/","publisher":null,"image":null,"headline":"Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125486-tcpip-ioctlsocket-function-returns-incorrect-data">Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125486
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11a; WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11a 
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A call to ioctlsocket() with a command of FIONREAD should return the amount of
+data currently in the receive buffer on a specific socket. If a recv() is then
+posted to the same socket, the recv() should complete successfully and return
+with the specified number of bytes of data.
+
+If a second ioctlsocket() call is issued to the same socket after a recv()
+completes, the number of bytes returned should be the bytes in the receive
+buffer before the recv() minus the bytes read by the recv() (assuming no
+additional data came in over the network).
+
+The problem described here is that number of bytes in the receive buffer returned
+from the ioctlsocket() call is not updated after a recv() is issued.
+
+The following sample debug log illustrates this problem:
+
+     Got an FD_READ
+     Disabling FD_READ
+     FIONREAD bytes = 239.
+     Bytes read = 100.
+     ioctl for  FIONREAD returned 239.
+     Bytes read = 100.
+     ioctl for  FIONREAD returned 239.
+     Bytes read = 39.
+     ioctl for  FIONREAD returned 0.
+     Enabling FD_READ
+     WM_DESTROY
+     Closing DebugFile
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft TCP/IP-32 for Windows
+for Workgroups, version 3.11a. This problem was corrected in Microsoft TCP/IP-32
+for Windows for Workgroups, version 3.11b.
+
+Additional query words: wfw wfwg 3.11 3.11a prodtcp32
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311a
+Version           : :3.11a; WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

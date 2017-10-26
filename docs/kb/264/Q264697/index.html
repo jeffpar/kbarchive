@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264697: SMSINST: Create Service Script Action Doesn’t Grant Nec. Right | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264697: SMSINST: Create Service Script Action Doesn’t Grant Nec. Right" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264697/","publisher":null,"image":null,"headline":"Q264697: SMSINST: Create Service Script Action Doesn’t Grant Nec. Right","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264697-smsinst-create-service-script-action-doesnt-grant-nec-right">Q264697: SMSINST: Create Service Script Action Doesn’t Grant Nec. Right</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264697
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 smsinst
+Last Modified: 20-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After using the script action, Create Service, in SMS Installer to install a
+service to run under a specific user account, the service is unable to start,
+and the following two errors are generated in the application event log:
+
+  Event ID: 7013
+  Source: Service Control Manager
+  Description: Logon attempt with current password failed with the following
+  error:
+  Logon failure: the user has not been granted the requested logon type at this
+  computer.
+
+  Event ID: 7000
+  Source: Service Control Manager
+  Description: The ServiceName service failed to start due to the following
+  error:
+  The service did not start due to a logon failure.
+
+CAUSE
+=====
+
+The user account specified in the Login Username box for the Create Service
+script action does not have the "Log on as a service" right.
+
+WORKAROUND
+==========
+
+To grant the "Log on as a service" right to the account being used to start the
+service, follow the appropriate method:
+
+Windows NT 4.0
+--------------
+
+Open User Manager. On the Polices menu, click User Rights, click to select the
+Show Advanced User Rights check box, and then grant the service account in
+question the "Log on as a service" right.
+
+Windows 2000
+------------
+
+Use the steps provided in the "How to Configure User Rights" section of the
+following article in the Microsoft Knowledge Base:
+
+  Q259733 How to Troubleshoot Service Startup Permissions
+
+MORE INFORMATION
+================
+
+You can automate the task of granting the service account the "Log on as a
+service" right by using the Microsoft Windows NT Resource Kit Utility
+Ntrights.exe in combination with the SMS Installer Execute Program script
+action. Use this utility to assign the service account the following right:
+
+  SeServiceLogonRight
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

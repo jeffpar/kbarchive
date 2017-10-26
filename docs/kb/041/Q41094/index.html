@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41094: Huge Arrays Not Allowed in QuickC 2.00, But Huge Pointers Are | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41094: Huge Arrays Not Allowed in QuickC 2.00, But Huge Pointers Are" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41094/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41094/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41094/","publisher":null,"image":null,"headline":"Q41094: Huge Arrays Not Allowed in QuickC 2.00, But Huge Pointers Are","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41094-huge-arrays-not-allowed-in-quickc-200-but-huge-pointers-are">Q41094: Huge Arrays Not Allowed in QuickC 2.00, But Huge Pointers Are</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41094
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# G890209-11614 buglist2.00 | mspl13_c
+Last Modified: 28-FEB-1989
+
+The program below produces the following errors when compiled with
+QuickC Version 2.00, even when using huge-memory model (/AH):
+
+   prog.c(4) : error C2125: a : allocation exceeds 64K
+   prog.c(8) : error C2125: b : allocation exceeds 64K
+
+The following is the program:
+
+#include &lt;stdio.h&gt;
+
+short a[64000];
+
+main()
+{
+static short b[64000];
+}
+
+Microsoft has confirmed this to be a problem in Version 2.00. We are
+researching this problem and will post new information as it becomes
+available.
+
+"Huge support" for QuickC means that we perform proper arithmetic for
+huge items. It does not mean that we allow huge items to be
+declared -- only pointers to them.
+
+To work around this problem, declare the pointer, then use halloc to
+allocate the memory. The pointer will be addressed properly. Note: C
+Version 5.10 does allow declarations of huge items.
+
+Below is a sample program that demonstrates the workaround. Once
+memory for the array has been allocated, the pointer to the base type
+of the array may be treated exactly as you would have treated an
+array.
+
+The following is the program:
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;malloc.h&gt;
+
+#define MAX 33000L
+
+unsigned huge *a;
+
+void main(void)
+{
+unsigned huge *b;
+unsigned i;
+
+    a = halloc(MAX, sizeof(unsigned));  /* allocate "global" array */
+                /* IMPORTANT--make sure the allocations worked! */
+    if (!a) { puts("a is NULL");  exit(1);  }
+    b = halloc(MAX, sizeof(unsigned));  /* allocate "local" array */
+        if (!b) { puts("b is NULL");  exit(1);  }
+
+    for (i = 0; i &lt; MAX; i++)  {    /* access memory as arrays */
+                a[i] = i;
+                b[i] = (unsigned)MAX - i - 1;
+        }
+
+    for (i = 0; i &lt; MAX; i++)  {    /* check to make sure it's OK */
+                if (a[i] != i)  {
+                        printf("a[%u] is %u rather than %u\n",
+                                i, a[i], i);
+                        exit(2);
+                }
+                if (b[i] != (unsigned)MAX - i -1)  {
+                        printf("b[%u] is %u rather than %u\n",
+                                i, b[i], (unsigned)MAX - i -1);
+                        exit(2);
+                }
+        }
+        puts("Test passed");
+        exit(0);
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

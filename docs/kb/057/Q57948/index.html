@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57948: INFO: Escape Character Erases First Characters in gets() String | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57948: INFO: Escape Character Erases First Characters in gets() String" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57948/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57948/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57948/","publisher":null,"image":null,"headline":"Q57948: INFO: Escape Character Erases First Characters in gets() String","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57948-info-escape-character-erases-first-characters-in-gets-string">Q57948: INFO: Escape Character Erases First Characters in gets() String</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57948
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), used with:
+   - Microsoft C for MS-DOS 
+   - Microsoft C/C++ for MS-DOS 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+In Microsoft C for MS-DOS and Windows NT, if you enter the escape character
+(ASCII 1Bh) from the keyboard (console) into a string that gets(), cgets(), or
+fgets() is reading, all the string previously read in is erased. The string
+pointer is reset so that characters following the escape character are read into
+the beginning of the string. This is consistent with the action taken by the
+operating system to parse the input line. However, if the escape character is
+input from a file by redirection, the entire string, including the escape
+character, will be read into the string.
+
+MORE INFORMATION
+================
+
+Sample Code #1
+--------------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;conio.h&gt;
+  #include &lt;stdio.h&gt;
+
+  char buf[22];
+  char *result;
+
+  void main(void)
+  {
+       int i;
+       buf[0] = 20;
+
+       printf("Enter your text: \n");
+       result = gets(buf);
+
+       printf ( "Resulting String: %s\n", result );
+       for( i = 0; i &lt; 20; i ++ )
+       {
+            printf("Buf[%2d] = %c (char)\n", i, buf[i]);
+       }
+  }
+
+Enter the following string as a test:
+
+  abcdef&lt;esc&gt;ghijk
+
+Note that the resulting string is output as:
+
+  ghijk
+
+Now, create a data file named test.dat containing the string
+"abcdef&lt;esc&gt;ghijk" either by using a text editor that permits escape
+characters to be embedded in a string or by using the sample code #2 below.
+
+Sample Code #2
+--------------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;stdio.h&gt;
+
+  void main(void)
+  {
+     FILE* fp;
+     char* fname = "test.dat";
+     int   numwrote;
+
+     if ( (fp = fopen( fname, "wt" )) == NULL )
+        printf( "Unable to open text file \"%s\" for writing.\n", fname );
+     else
+     {
+        if ( (numwrote = fprintf( fp, "abcdef""\x1b""ghijk" )) != 12 )
+           printf( "Write to file failed!  %d bytes written!\n", numwrote );
+        fclose( fp );
+     }
+  }
+
+If the program from sample code #1 is run with input redirected from the data
+file, as follows:
+
+  program &lt;test.dat
+
+the resulting string is output as follows:
+
+  abcdef&lt;esc&gt;ghijk
+
+This behavior occurs in the entire gets() family of routines, including gets(),
+cgets(), and fgets(). If the input is coming from the console, the run time will
+use the standard MS-DOS, OS/2, or Windows NT keyboard read routines. On the
+other hand, if the input is coming from a file (through redirection), the
+operating system doesn't perform any editing and the file is read in literally.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63793/","publisher":null,"image":null,"headline":"Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63793-communication-port-data-loss-in-enhanced-mode-windows-30">Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63793
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information about why MS-DOS applications lose
+communication-port data when running from enhanced mode in Microsoft Windows
+version 3.0, and the steps to eliminate this problem.
+
+MORE INFORMATION
+================
+
+Data Loss at 2400 Bits Per Second (BPS) or Slower
+-------------------------------------------------
+
+Communication-port data loss should not occur when using MS-DOS applications
+operating at bit rates of 2400 BPS or less. However, data loss may occur at
+higher bit rates. If you are experiencing problems at 2400 BPS or slower, check
+for a hardware communication-port I/O base or interrupt assignment conflicts.
+
+Data Loss at Rates Higher than 9600 BPS
+---------------------------------------
+
+MS-DOS applications cannot use bit rates greater than 9600 BPS when running under
+enhanced-mode Windows 3.00. To use higher rates, such as 19,200 BPS, use a
+Windows-based communications application, such as FutureSoft's DynaComm
+Asynchronous, or DCA's CrossTalk for Windows.
+
+19.2 kilobits per second (Kbps) is the maximum possible data rate for a
+Windows-based application.
+
+Data Loss at 9600 BPS
+---------------------
+
+On many hardware platforms it is not possible to use 9600 BPS in an MS-DOS
+application under enhanced mode. This depends on the speed of the processor and
+the type of communication-port hardware being used. If you are experiencing
+problems at 9600 BPS, take the appropriate steps as explained below. The steps
+are different for text only or text/binary data.
+
+1. Text data only
+
+  If you are transferring text data ONLY, and your MS-DOS application supports
+  XON/XOFF software flow control, you can configure enhanced-mode Windows to
+  process the XON/XOFF signals internally. This may assist in preventing data
+  loss at 9600 BPS. To enable this feature, insert the following line in the
+  [386Enh] section of the SYSTEM.INI file:
+
+  COMxProtocol=XOFF
+
+  where x is the communication port in question. For example, if you are using
+  COM1, use COM1Protocol=XOFF. It is important to note that this switch does
+  NOT work if you are performing ANY binary data transfers, and actually
+  prevents such data from being transferred correctly. In addition to adding
+  this switch, you should increase the enhanced-mode virtual communication-port
+  buffer size, as detailed below (in Step 2).
+
+2. Binary data, or text and binary data combination
+
+  If you are transferring any type of binary data, such as downloading from a
+  computer bulletin board by modem, you may want to increase the enhanced-mode
+  virtual communication-port buffer size. This may be done by adding a switch
+  to the [386Enh] section of the SYSTEM.INI file, as follows
+
+  COMxBuffer=yyy
+
+  where x is the communication port in question, and yyy is the buffer size in
+  characters (default 128). For example, if you are using COM1, and want to
+  increase the buffer size to 256, use COM1Buffer=256. Since the buffer default
+  is 128, start with 256 and work upward in 128-character increments until the
+  data loss is eliminated. Note that data loss cannot be eliminated in all
+  cases; in such situations, a Windows communications application should be
+  used.
+
+Additional query words: 3.00 3.0 3.0a 3.00a wincomm win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

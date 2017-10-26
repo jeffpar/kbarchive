@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160053/","publisher":null,"image":null,"headline":"Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160053-xcln-mobile-users-of-exchange-on-win31-using-one-configuration">Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160053
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 10-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+For computers running Microsoft Windows 3.1 and LAN Manager for MS-DOS, the
+ShivaRemote is used to remotely access computers running Microsoft Exchange
+Server. However, those users who need to carry the computer back and forth
+between home and an office have to reconfigure the settings every time they
+move, because transport layer protocols cannot be bound to a LAN card driver and
+to the ShivaRemote driver at the same time.
+
+WORKAROUND
+==========
+
+An administrator can set up one configuration that works both at home and at the
+office for these users. The workaround is to load two transport drivers, NetBEUI
+and TCP/IP, which are bound to a LAN card driver and the ShivaRemote driver
+respectively. Because the NetBEUI protocol provides the fastest throughput to
+NetBIOS resources when accessed over a remote access connection, it can be used
+for remote connectivity and the TCP/IP is used on a LAN. Do the following
+procedures to make the configuration work:
+
+1. Install the LAN Manager for MS-DOS version 2.2, and select TCP/IP and
+  NetBEUI.
+
+2. Configure the TCP/IP with the following:
+
+  a. Enable DHCP in the "TCP/IP Settings" dialog box.
+
+  b. Type the Username, and Hostname, and enable Windows Sockets in the "DNR
+     and Sockets Settings" dialog box. To bring up the "DNR and Sockets
+     Settings" dialog box, click the Advanced button in the "TCP/IP Settings"
+     dialog box.
+
+  c. Type the Computername, Username and Domain in the "Workstation Settings"
+     dialog box.
+
+3. After the installation of the LAN Manager is complete, install the Microsoft
+  Exchange client for Windows 3.x. Select the custom installation that includes
+  the ShivaRemote software.
+
+4. Run the ShivaRemote Setup program from the Microsoft Exchange program group,
+  as follows:
+
+  a. Select the COM port and the type of modem you use.
+
+  b. Enable NetBEUI/LLC in the "Protocol Configuration" dialog.
+
+  c. When ShivaRemote Setup is complete, restart your computer so that the
+     configuration changes you made take effect.
+
+5. After the computer restarts, in the Config.sys file, add the line
+
+  DEVICE=C:\EXCHANGE\SHIVA\DIALNDIS.EXE (After the line
+  DEVICE=...\PROTMAN.DOS /i:C:\LANMAN.DOS)
+
+6. Modify the Protocol.ini file in the Lanman.dos directory. Leave the TCP/IP
+  section intact.
+
+     [NetBEUI_XIF]
+     ;BINDINGS="LAN Card Driver"    Make this line a comment.
+     BINDINGS=SDIALIN$                  Add this line.
+     [SDIALIN$]                                    Add this line.
+     DriverName=SDIALIN$                Add this line.
+
+7. Restart the computer.
+
+If users want to use the remote mail functionality of the Exchange, the Exchange
+profile needs to be configured as follows.
+
+1. Double-click the Microsoft Exchange Services icon in the Microsoft Exchange
+  program group. Then, click the Add button to create a new profile.
+
+2. When the Setup Wizard prompts for "Do you travel with this computer", click
+  Yes to create offline folder use in this profile.
+
+3. After the profile is created, select this profile and click the Properties
+  button.
+
+4. Select the Microsoft Exchange Server Information service and click the
+  Properties button. The "Microsoft Exchange Server" dialog is brought up and
+  you should see four tabs, General, Advanced, Dial-Up Networking and Remote
+  Mail.
+
+5. On the General tab, click "Work offline and use dial-up networking".
+
+6. On the Dial-Up Networking tab, click "Dial using the following connection"
+  and click the Setup button to bring up the "ShivaRemote Connect" dialog box.
+
+  a. Type the Description, Dial-in Name, Password and Phone number.
+
+  b. Click Port Setup in the Tools menu to make sure that the port and modem
+     are configured correctly.
+
+  c. Click the Options button to make sure that the NetBEUI/LLC is enabled.
+
+  d. On the File menu, click Save to save the settings. For more information on
+     creating a connection file, refer to the ShivaRemote Online Guide.
+
+  e. Exit the "ShivaRemote Connect" dialog box.
+
+7. On the Dial-Up Networking tab, you should see the description of the just
+  created connection file that appears in the drop-down list. Click this
+  connection and type the User name, Password, and Domain.
+
+8. Click OK to save the settings.
+
+NOTE: This Microsoft Exchange profile has to be used to connect to a computer
+running Microsoft Exchange server on a LAN at least once before it can be used
+remotely because the offline folder file needs to be created and synchronized.
+
+REFERENCES
+==========
+
+The following sample files of Config.sys, Autoexec.bat and Protocol.ini are
+included here as reference.
+
+----- Autoexec.bat -------
+C:\WIN3.1\SMARTDRV.EXE
+@ECHO OFF
+PROMPT $p$g
+PATH C:\WIN3.1;C:\DOS
+SET TEMP=C:\DOS
+@REM ==== LANMAN 2.2a == DO NOT MODIFY BETWEEN THESE LINES == LANMAN 2.2a
+set path=c:\lanman.dos\netprog;%path%;c:\exchange\shiva
+set SHIVA=C:\exchange\shiva
+C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\umb.com
+NET START WORKSTATION
+LOAD TCPIP
+SOCKETS
+LOAD NETBEUI
+@REM ==== LANMAN 2.2a == DO NOT MODIFY BETWEEN THESE LINES == LANMAN 2.2a
+
+----- Config.sys -------
+DEVICE=C:\DOS\SETVER.EXE
+DEVICE=C:\DOS\HIMEM.SYS
+DEVICE=C:\LANMAN.DOS\DRIVERS\DOSUTILS\EMM386.EXE NoEMS
+REM DEVICE=C:\WIN3.1\EMM386.EXE NoEMS
+DOS=HIGH,UMB
+FILES=30
+SHELL=C:\DOS\COMMAND.COM C:\DOS\  /p
+LASTDRIVE=Z
+DEVICE=C:\WIN3.1\SMARTDRV.EXE /DOUBLE_BUFFER
+STACKS=9,256
+DEVICE=C:\LANMAN.DOS\DRIVERS\PROTMAN\PROTMAN.DOS /i:C:\LANMAN.DOS
+device=c:\exchange\shiva\dialndis.exe
+DEVICE=C:\LANMAN.DOS\DRIVERS\ETHERNET\NE2000\NE2000.DOS
+DEVICE=C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\tcpdrv.dos /i:C:\LANMAN.DOS
+DEVICE=C:\LANMAN.DOS\DRIVERS\PROTOCOL\tcpip\nemm.dos
+
+----- Protocol.ini --------
+[PROTMAN]
+ DRIVERNAME = PROTMAN$
+ DYNAMIC = YES
+ PRIORITY = NETBEUI
+
+[SDIALIN$]
+DriverName=SDIALIN$
+
+[TCPIP_XIF]
+ DRIVERNAME      = TCPIP$
+ IPADDRESS0 =
+ SUBNETMASK0 =
+ DEFAULTGATEWAY0 =
+ NBSESSIONS = 6
+ TCPSEGMENTSIZE  = 1450
+ TCPWINDOWSIZE   = 1450
+ LOAD            = tcptsr[c],tinyrfc[c],emsbfr[cr]
+ UNLOAD          = "unloadt /notsr[dc]"
+ BINDINGS = "NE2000_NIF"
+ NETFILES = C:\LANMAN.DOS\ETC
+ LANABASE = 0
+
+[NETBEUI_XIF]
+ Drivername = netbeui$
+ SESSIONS = 6
+ NCBS = 12
+ ;BINDINGS = "NE2000_NIF"
+ BINDINGS = SDIALIN$
+ LANABASE = 1
+
+[NE2000_NIF]
+; protocol.ini section for the Novell NE2000 Card
+   IOBASE = 0x300
+   INTERRUPT = 3
+   DRIVERNAME = MS2000$
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

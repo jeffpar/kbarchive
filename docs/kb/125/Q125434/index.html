@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125434/","publisher":null,"image":null,"headline":"Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125434-adt2-how-to-modify-reattach-nwind-module-in-solutionmdb">Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125434
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbprogramming
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SUMMARY
+=======
+
+The Reattach NWIND module in the Solutions sample application (SOLUTION.MDB)
+demonstrates a method of updating the connection information for attached tables
+in an application that uses multiple databases. This method assumes that a
+wizard utility database (WZLIB.MDA) is specified in the [Libraries] section of
+the MSACC20.INI file and that the MSAU200.DLL file is installed in the Microsoft
+Access directory. If these files are not loaded (such as when you are running a
+run-time version of Microsoft Access), then the method in the Solutions sample
+application does not work.
+
+This article describes how you can modify the method in the Reattach NWIND module
+to work in a run-time environment.
+
+NOTE: In Microsoft Access for Windows 95, the RefreshTableLinks module of the
+Solutions.mdb is completely self-contained. It does not rely on any references
+to a wizard library.
+
+This article assumes that you are familiar with Access Basic and with creating
+Microsoft Access applications using the programming tools provided with
+Microsoft Access. For more information about Access Basic, please refer to the
+"Building Applications" manual.
+
+MORE INFORMATION
+================
+
+To modify the method in the Reattach NWIND module to work in a run-time
+environment, follow these steps while running the retail version of Microsoft
+Access. Each of these steps is described in detail later in this article.
+
+1. Import the sample code from SOLUTION.MDB.
+
+2. Add a user-defined type from the WZLIB.MDA file.
+
+3. Add declare functions from the WZLIB.MDA file.
+
+4. Modify the sample GetMDBName() function.
+
+5. Modify the sample GetMDBName2() function.
+
+6. Modify the sample AreTablesAttached() function.
+
+7. Add the MSAU200.DLL file to your application's Setup using the Setup Wizard.
+
+8. Call the AreTablesAttached() function in your application's Autoexec macro.
+
+The following sections describe in detail each of the steps above.
+
+Step 1: Import the Sample Code from SOLUTION.MDB
+------------------------------------------------
+
+1. With your database open, choose Import from the File menu.
+
+2. In the Data Source box, select Microsoft Access and then choose OK.
+
+3. In the File Name box, select SOLUTION.MDB and then choose OK.
+
+4. In the Object Type box, select Modules. In the Objects In SOLUTION.MDB box,
+  select Reattach NWIND and then choose the Import button.
+
+5. When you are prompted "Successfully imported 'Reattach NWIND'" choose OK.
+
+6. Choose the Close button.
+
+Step 2: Add a User-Defined Type from the WZLIB.MDA File
+-------------------------------------------------------
+
+Add the following Type statement to the Declarations section of the Reattach
+NWIND module you imported in the step above:
+
+     Type GetFileNameInfo
+        hwndOwner As Integer
+        szFilter As String * 255
+        szCustomFilter As String * 255
+        nFilterIndex As Long
+        szFile As String * 255
+        szFileTitle As String * 255
+        szInitialDir As String * 255
+        szTitle As String * 255
+        Flags As Long
+        nFileOffset As Integer
+        nFileExtension As Integer
+        szDefExt As String * 255
+     End Type
+
+Note that this Type statement was copied from the wizard utility database
+(WZLIB.MDA) and renamed to avoid conflicts.
+
+Step 3: Add Declare Functions from the WZLIB.MDA File
+-----------------------------------------------------
+
+NOTE: In the following sample code, an underscore (_) at the end of a line is
+used as a line-continuation character. Remove the underscore from the end of the
+line when re-creating this code in Access Basic.
+
+1. Add the following API declaration to the Declarations section of the Reattach
+  NWIND module you imported:
+
+        Declare Function MSAU_GetFileName Lib "MSAU200.DLL" Alias "#1" _
+        (gfni As GetFileNameInfo, ByVal fOpen As Integer) As Long
+
+  Note that this function was copied from WZLIB.MDA and renamed to avoid
+  conflicts.
+
+2. Add the following API declaration to make the common dialog box modal.
+
+  NOTE: You may have some Microsoft Windows API functions defined in an existing
+  Microsoft Access library; therefore, your declarations may be duplicates. If
+  you receive a duplicate procedure name error message, remove or comment out
+  the declarations statement in your code.
+
+        Declare Function MSA_FindWindow Lib "User" Alias "FindWindow" _
+        (ByVal lpClassName As Any, ByVal lpWindowName As Any) As Integer
+
+Step 4: Modify the Sample GetMDBName() Function
+-----------------------------------------------
+
+Follow these steps to modify the GetMDBName() function to use the new type you
+defined above, make the Find Database dialog box modal, and use the database
+name you specify:
+
+1. Search the GetMDBName() function for the following line:
+
+        Dim OFN As wlib_GetFileNameInfo
+
+2. Modify the line as follows to reference the new type:
+
+        Dim OFN As GetFileNameInfo
+
+3. Search the GetMDBName() function for the following line:
+
+        OFN.hwndOwner = 0
+
+4. Modify the line as follows to make the Find Database dialog box modal:
+
+        OFN.hwndOwner = MSA_FindWindow("OMain", 0&amp;)
+
+5. Search the GetMDBName() function for the following line:
+
+        OFN.szTitle = "Where is your NWIND.MDB?"
+
+6. Change the line so that it uses the name of your database instead of
+  NWIND.MDB.
+
+Step 5: Modify the Sample GetMDBName2() Function
+------------------------------------------------
+
+NOTE: In the following sample code, an underscore (_) at the end of a line is
+used as a line-continuation character. Remove the underscore from the end of the
+line when re-creating this code in Access Basic.
+
+Follow these steps to modify the GetMDBName2() function to use the new type you
+defined above:
+
+1. Find the following GetMDBName2() parameters line:
+
+        Function GetMDBName2(gfni As wlib_GetFileNameInfo, ByVal fopen _
+        as Integer) As Long
+
+2. Modify the line to read:
+
+        Function GetMDBName2(gfni As GetFileNameInfo, ByVal fopen _
+        as Integer) As Long
+
+3. Search the GetMDBName2() function for the following line:
+
+        lRet = wlib_MSAU_GetFileName(gfni, fOpen)
+
+4. Modify the line as follows to reference the new type:
+
+        lRet = MSAU_GetFileName(gfni, fOpen)
+
+Step 6: Modify the Sample AreTablesAttached() Function
+------------------------------------------------------
+
+Follow these steps to modify the AreTablesAttached() function to look for a table
+in your attached database and replace references to NWIND.MDB and SOLUTION.MDB
+with references to your application:
+
+1. Search the AreTablesAttached() function for the following line:
+
+        Set MyRecords = MyDB.OpenRecordset("Products")
+
+2. Replace the Products table with the name of the appropriate table in your
+  attached database.
+
+3. Search for and replace all references to NWIND.MDB and SOLUTION.MDB. Replace
+  these references with your database names.
+
+Step 7: Add MSAU200.DLL to Application's Setup Using the Setup Wizard
+---------------------------------------------------------------------
+
+When you create your application's Setup disks with the Setup Wizard, follow
+these steps to add the MSAU200.DLL file to the list of files to be included with
+your application:
+
+1. Start the Setup Wizard.
+
+2. Add your databases to the Files To Include list.
+
+3. Choose the Add File button.
+
+4. In the File Name box, type "&lt;drive&gt;:\&lt;access&gt;\MSAU200.DLL"
+  (without the quotation marks) where &lt;drive&gt; and &lt;access&gt; are the
+  hard disk and directory containing your copy of Microsoft Access. For
+  example, if you have Microsoft Access installed in the \ACCESS directory on
+  drive C, type "C:\ACCESS\MSAU200.DLL" (without the quotation marks).
+
+5. In the Destination box, select $(AppPath).
+
+6. Choose OK.
+
+7. Proceed through the Setup Wizard as normal.
+
+Step 8: Call AreTablesAttached() Function in Application's AutoExec Macro
+-------------------------------------------------------------------------
+
+In the Solutions sample application, the Autoexec macro calls the
+AreTablesAttached() function. This function determines whether the table
+attachments are valid. If the attachments are not valid, the function prompts
+the user for the location of the attached tables. If the function returns True,
+the tables were successfully reattached. If the function returns False, the
+tables could not be found in the user-specified path and the database is
+closed.
+
+The AutoExec macro from the SOLUTION.MDB database is listed below:
+
+  Condition                 Action
+  ------------------------------------
+  NOT AreTablesAttached()   DoMenuItem
+                            OpenForm
+
+  Action Arguments
+  --------------------------
+  DoMenuItem
+     Menu Bar: Database
+     Menu Name: File
+     Command: Close Database
+  OpenForm
+     Form Name: Startup
+
+REFERENCES
+==========
+
+Microsoft Access Developer's Toolkit "Advanced Topics," version 2.0, Chapter 2,
+"Creating a Custom Setup Program," pages 19-35
+
+Microsoft Access "Building Applications," version 2.0, Chapter 1, "Applications
+Basics," pages 17-19
+
+Additional query words: attach adt reattach Nwind re-link relink
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

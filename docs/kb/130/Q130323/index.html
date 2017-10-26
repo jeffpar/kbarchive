@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130323: PC MAPI: Sample VB Code to Determine Mail Session User | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130323: PC MAPI: Sample VB Code to Determine Mail Session User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130323/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130323/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130323/","publisher":null,"image":null,"headline":"Q130323: PC MAPI: Sample VB Code to Determine Mail Session User","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130323-pc-mapi-sample-vb-code-to-determine-mail-session-user">Q130323: PC MAPI: Sample VB Code to Determine Mail Session User</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130323
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The simple Message Application Program Interface (MAPI) for Microsoft Mail for
+PC Networks does not include a function that allows developers to directly
+determine the current user who is logged into a mail session. However, that
+information can be obtained by using a workaround which basically involves
+saving a dummy message, finding that message, reading the message, and finally
+deleting it.
+
+MORE INFORMATION
+================
+
+One possible example is outlined in the Microsoft Visual Basic version 3.0 code
+below:
+
+IMPORTANT NOTE: Make sure the MAPI declaration module (MAPILIB.BAS) is included
+in the project.
+
+  ' ****************** WHOAMI ************************
+  ' **************************************************
+  '        Simple MAPI Declarations
+  ' **************************************************
+  Dim M As MAPIMessage
+  Dim Mo As MapiRecip
+
+  ' ***************************************************
+  '         Set up the dummy message
+  ' ***************************************************
+  M.RecipCount = 0&amp;
+  M.FileCount = 0&amp;
+
+  MsgId$ = ""
+  MsgType$ = "IPC.SIMPLEMAPI.WHOAMI" ' "Hidden" message
+  M.Reserved = 0&amp;
+  M.Subject = "MAPIWhoAmI message"
+  M.NoteText = ""
+  M.MessageType = MsgType$
+  M.DateReceived = ""
+  M.Flags = 0&amp;
+  msg1$ = "Current logged in user: "
+  msg2$ = "At address: "
+  NL = Chr(10)
+
+  ' **************************************************
+  ' Login and start the MAPI Session
+  ' **************************************************
+  rc&amp; = MAPILogon(Form1.hWnd, "", "", MAPI_LOGON_UI, 0&amp;, lhSession&amp;)
+  If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+    MsgBox "Error logging in"
+    End
+  End If
+  ' ***************************************************
+  ' Place the dummy message in the inbox
+  ' ***************************************************
+  '*********************************
+  ReDim Mr(0 To 0) As MapiRecip
+  ReDim Mf(0 To 0) As MapiFile
+  '*********************************
+
+  rc&amp; = MAPISaveMail(lhSession&amp;, Form1.hWnd, M, Mr(0), Mf(0), 0&amp;, 0&amp;, MsgId$)
+    If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+      MsgBox "Error saving message"
+      rc&amp; = MAPILogoff(lhSession&amp;, 0&amp;, 0&amp;, 0&amp;)
+      End
+    End If
+  ' ***************************************************
+  ' Find then read the dummy message
+  '****************************************************
+  rc&amp; = MAPIFindNext(lhSession&amp;, 0&amp;, MsgType$, "", 0&amp;, 0&amp;, MsgId$)
+    If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+      MsgBox "Error during message find or no messages in Inbox."
+      rc&amp; = MAPILogoff(lhSession&amp;, 0&amp;, 0&amp;, 0&amp;)
+      End
+    End If
+  Do While (rc&amp; = SUCCESS_SUCCESS)
+    rc&amp; = MAPIReadMail(lhSession&amp;, 0&amp;, MsgId$, 0&amp;, 0&amp;, M, Mo, Mr(), Mf())
+    If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+       MsgBox "Error during MAPIReadMail"
+       Exit Do
+    End If
+    If M.MessageType = MsgType$ Then
+     ' Return our user
+          MsgBox msg1$ + Mo.Name + NL + NL + msg2$ + Mo.Address
+  ' **************************************************
+  ' Delete the dummy message when found
+  ' **************************************************
+     ' Delete dummy message
+       rc&amp; = MAPIDeleteMail(lhSession&amp;, 0&amp;, MsgId$, 0&amp;, 0&amp;)
+          If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then MsgBox "Error deleting message"
+              Exit Do
+
+          End If
+      rc&amp; = MAPIFindNext(lhSession&amp;, 0&amp;, MsgType$, MsgId$, 0&amp;, 0&amp;, MsgId$)
+      Loop
+
+  ' **************************************************
+  ' Logoff
+  ' **************************************************
+      rc&amp; = MAPILogoff(lhSession&amp;, 0&amp;, 0&amp;, 0&amp;)
+      If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then MsgBox "Error logging off """
+  End
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

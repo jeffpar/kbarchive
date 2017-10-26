@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141333: VSWAP Demos Multiple-View Switching in SDI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141333: VSWAP Demos Multiple-View Switching in SDI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141333/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141333/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141333/","publisher":null,"image":null,"headline":"Q141333: VSWAP Demos Multiple-View Switching in SDI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141333-vswap-demos-multiple-view-switching-in-sdi">Q141333: VSWAP Demos Multiple-View Switching in SDI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141333
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,1.52
+Operating System(s): 
+Keyword(s): kbcode kbfile kbsample kbDocView kbMFC KbUIDesign kbVC150 kbVC152 kbGrpDSMFCATL kbNoUpd
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+VSWAP demonstrates methods of switching between multiple views on a single
+document in a single-document interface (SDI) application. VSWAP displays two
+form views and a normal view that displays the list of data collected in the two
+form views.
+
+NOTE: This is the 16-bit version of this sample. There is an equivalent 32-bit
+sample available under the name VSWAP32.
+
+This sample application demonstrates using DDX/DDV (dialog data exchange/dialog
+data validation), with correct document updating and data validation when
+switching between views. It also correctly catches unsaved/unvalidated data when
+the application is closed.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Vswap.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+After downloading the file, use the following command to extract the sample and
+build the appropriate directory structure:
+
+  VSWAP.EXE -d
+
+MORE INFORMATION
+================
+
+The most important implementations of this are in:
+
+  CVswapApp::InitInstance
+  CVswapApp::SwitchView
+  CVswapApp::SaveActiveViewsData
+
+The standard InitInstance code creates an initial frame, document, and view
+during the call to OnFileNew. The code added to the end of the InitInstance in
+this sample creates the view objects for the extra views used in this
+application and stores their pointers in a CVswapApp member array. It then
+cycles through a loop which creates the windows for the view objects. Each view
+window is created with a unique child window ID and a CCreateContext object that
+associates each view with the same CDocument object, which was created by
+OnFileNew. Finally, the sample code triggers the OnInitialUpdate for the extra
+views.
+
+The SwitchView function created in this sample swaps the current view with a
+previously hidden view. It accomplishes this by first switching their child
+window IDs. This is necessary because MFC relies on the standard view pane
+having the child window ID of AFX_IDW_PANE_FIRST. The rest of the code hides the
+current view and tells MFC to repaint and begin using the new view.
+
+The SaveActiveViewsData is used to save the information from the active view to
+the document object. It is called by SwitchView whenever a view is switched.
+SaveActiveViewsData subsequently calls the view's SetToDoc, which actually
+updates the data from the form view to the document by calling UpdateData with
+an argument of TRUE. This function uses the DDX/DDV functions specified in the
+view's DoDataExchange.
+
+Sample Code
+-----------
+
+     The SwitchView function is included here as a reference.
+
+     CView* CVswapApp::SwitchView( UINT nIndex )
+     {
+         ASSERT( nIndex &gt;=0 &amp;&amp; nIndex &lt; NUMVIEWS );
+
+         CView* pNewView = m_pViews[nIndex];
+
+         CView* pActiveView =
+         ((CFrameWnd*) m_pMainWnd)-&gt;GetActiveView();
+
+         if ( !pActiveView )    // No currently active view
+             return NULL;
+
+         if ( pNewView == pActiveView )    // Already there
+             return pActiveView;
+
+         // Update Doc's data if needed
+         // Don't change view if data valiation fails
+         if ( ! SaveActiveViewsData() )
+         {
+             return pActiveView;
+         }
+
+         m_nCurView = nIndex;    // Store the new current view's index
+
+         // exchange view window IDs so RecalcLayout() works
+         UINT temp = ::GetWindowWord(pActiveView-&gt;m_hWnd, GWW_ID);
+         ::SetWindowWord(pActiveView-&gt;m_hWnd, GWW_ID,
+               ::GetWindowWord(pNewView-&gt;m_hWnd, GWW_ID));
+         ::SetWindowWord(pNewView-&gt;m_hWnd, GWW_ID, temp);
+
+         // Display and update the new current view - hide the old one
+         pActiveView-&gt;ShowWindow(SW_HIDE);
+         pNewView-&gt;ShowWindow(SW_SHOW);
+         ((CFrameWnd*) m_pMainWnd)-&gt;SetActiveView(pNewView);
+         ((CFrameWnd*) m_pMainWnd)-&gt;RecalcLayout();
+         pNewView-&gt;Invalidate();
+         return pActiveView;
+     }
+
+REFERENCES
+==========
+
+For examples of other applications that switch views, please refer to the
+following SAMPLES:
+
+  COLLECT (SDI)
+  ENROLL  (SDI)
+  VWRPLC  (MDI)
+  SPLIT   (Splitter).
+
+For more information on DDX and DDV routines, please see Technical Note 26: DDX
+and DDV Routines in the Microsoft Development Library.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q99562 Switching Views in a Single Document Interface Program
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words: VSWAP VSWAP32
+
+======================================================================
+Keywords          : kbcode kbfile kbsample kbDocView kbMFC KbUIDesign kbVC150 kbVC152 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,1.52
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201120/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201120/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201120/","publisher":null,"image":null,"headline":"Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201120-xfor-missing-postoffice-in-the-msmi-connection-tab">Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201120
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): exc4 exc5
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One or more postoffices suddenly disappear from a once fully-functional
+Microsoft Mail Connector (MSMC) configuration. When any administrator attempts
+to recreate the missing postoffice, an error message states that this postoffice
+already exists and can not be recreated.
+
+You may also notice the following error messages in the Windows NT Event Viewer:
+
+  Event ID: 2558
+  Source: MSExchangeMSMI
+  Category: Session Error
+  Type: Error
+  Description: The thread in the MSMail connector that delivers to MSMail has
+  failed waiting on the MSExchange queue.
+
+  Event ID:2590
+  Source: MSExchangeMSMI
+  Category: Session error
+  Type: Error
+  Description: The MSMail connector interchange wait on Exchange queue failed
+  0x5
+
+  Event ID: 2550
+  Source: MSExchangeMSMI
+  Category: Session Error
+  Type: Error
+  Description: The thread in MSMail connector that delivers to Exchange has
+  failed creating MSExchange MTA object. Check that the MSExchange MTA is
+  running. When the MSExchange MTA is restarted, the MSMail connector will
+  automatically establish a session with it.
+
+CAUSE
+=====
+
+When the Microsoft Mail Connector starts, it reads files from the connector
+postoffice, &lt;Exchangeservername&gt;\Maildat$, to build what is displayed in
+the MSMC. These files are Network.glb and all of the .xtn files. If these files
+are corrupted, the MSMC displays incorrect information.
+
+Specifically, if the Network.glb file is corrupted, if a valid postoffice is
+changed to indirect by the MSMAIL record, this valid postoffice will not be
+displayed in the Microsoft Mail Connector. Additionally, because the record
+still resides in the Network.glb file, it cannot be recreated.
+
+RESOLUTION
+==========
+
+The best resolution to this problem is to obtain a copy of the Network.glb file
+from backup tape. If no changes have been made to the Exchange routing to
+Microsoft Mail, this file can be restored by itself. Otherwise, please contact
+Microsoft Product Support Services
+
+MORE INFORMATION
+================
+
+The Exchange Connector postoffice (shadow postoffice) has a special record in
+the Network.glb file. There is an Microsoft Mail network name defined in every
+Exchange Connector postoffice. However, this Microsoft Mail network name is not
+viewable in the Microsoft Mail Connector. This is one of the differences between
+a shadow postoffice and the standard postoffice.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

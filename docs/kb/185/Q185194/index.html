@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185194: XCON: Distribution List (DL) Expansion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185194: XCON: Distribution List (DL) Expansion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185194/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185194/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185194/","publisher":null,"image":null,"headline":"Q185194: XCON: Distribution List (DL) Expansion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185194-xcon-distribution-list-dl-expansion">Q185194: XCON: Distribution List (DL) Expansion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185194
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Distribution List (DL) expansion can place a heavy burden on the Message
+Transfer Agent (MTA) service. In organizations that have large DLs, it may be
+necessary to control which server is responsible for DL expansion. This article
+explains the settings that can be changed in the Exchange Server Administrator
+program to control DL expansion.
+
+The default for this feature is for any server to be able to expand any DL homed
+in the local site.
+
+DL Expansion is controlled by the following two settings:
+
+- On the General Property tab of the Message Transfer Agent, there is a
+  checkbox to Expand remote distribution lists locally.
+
+  This indicates that DLs, which are homed in a remote site, will be expanded
+  locally.
+
+- The Expansion Server option on the properties of the DL.
+
+  Setting the Expansion Server to a server within the DL's home site indicates
+  that only the MTA on the chosen server does the expansion regardless of all
+  other parameters.
+
+MORE INFORMATION
+================
+
+Sample Scenario:
+
+Site1 has a site connector to Site2 where a DL resides. Directory replication is
+configured between the two sites. All MTAs in Site1 are set to not expand remote
+distribution lists locally. The DL does not have an expansion server set.
+
+A message generated in Site 1 to the DL forwards the message to the bridgehead
+server in the DL's home site. The bridgehead server in Site2 expands the DL, and
+then fans out messages to recipients on the DL.
+
+Because the sites are joined via a site connector, they can be configured to use
+more than one server in a site as the target. The server that expands and fans
+out the message may vary from message to message. However, if sites are
+connected via an X.400 connector, Dynamic RAS, or Internet Mail Service, the
+targeted server is one single server and will be responsible for expanding the
+DL.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199070: DOC: RDO UpdateCriteria Documentation Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199070: DOC: RDO UpdateCriteria Documentation Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199070/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199070/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199070/","publisher":null,"image":null,"headline":"Q199070: DOC: RDO UpdateCriteria Documentation Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199070-doc-rdo-updatecriteria-documentation-incorrect">Q199070: DOC: RDO UpdateCriteria Documentation Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199070
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbdocfix kbDatabase kbRDO kbVBp kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Basic documentation on the RDO UpdateCriteria property is incorrect.
+There are two specific problems with the documentation:
+
+- The UpdateCriteria Property documentation incorrectly states that the default
+  is rdCriteriaKey (0). The default is really rdCriteriaUpdCols (2).
+
+  -and-
+
+- The rdCriteriaAllCols constant and the rdCriteriaUpdCols constant
+  'rdoResultset type' sections are reversed. The documentation for
+  rdCriteriaAllCols should read as follows:
+
+  "Uses the key column(s) and all the columns in the where clause".
+
+  The rsCriteriaUpdCols description should read as follows:
+
+  "Uses the key column(s) and all updated columns in the where clause."
+
+MORE INFORMATION
+================
+
+The code below demonstrates the usage of the UpdateCriteria property and also
+shows the query that is sent to the database, depending on which constant is
+used. This sample code assumes that you are using a SQL Server database with the
+pubs database.
+
+1. Start a new Visual Basic Standard EXE project and add a a reference to the
+  Microsoft Remote Data Objects Library.
+
+2. Add a command button to the default form.
+
+3. Add the following code to the form.
+
+  NOTE: You need to modify the connection string to point to your database.
+
+     Private Sub Command1_Click()
+
+      Const szConnect = "DSN=yourDSN;uid=sa;pwd="
+      On Error GoTo errhandler
+      Dim cn As rdoConnection
+      Dim rs As rdoResultset
+      Dim SQL As String
+
+      Set cn = New rdoConnection
+      With cn
+          .CursorDriver = rdUseClientBatch
+          .Connect = szConnect
+          .EstablishConnection rdDriverNoPrompt, False
+      End With
+
+      SQL = "SELECT * FROM Authors"
+      Set rs = cn.OpenResultset(SQL, rdOpenKeyset, rdConcurBatch, 0)
+      Debug.Print "Update Criteria (Default): " &amp; rs.UpdateCriteria
+
+      With rs
+
+          rs.MoveFirst
+          rs.UpdateCriteria = rdCriteriaKey       '0
+          rs.Edit
+          rs(1).Value = "Mike1"
+          rs.BatchUpdate
+          Debug.Print "BatchUpdate w/Criteria: " &amp; rs.UpdateCriteria
+          'SQL TRACE: UPDATE Authors SET au_lname='Mike1' WHERE
+          'au_id='172-32-1176'
+
+          rs.MoveFirst
+          rs.UpdateCriteria = rdCriteriaAllCols   '1
+          rs.Edit
+          rs(1).Value = "Mike2"
+          rs.BatchUpdate
+          Debug.Print "BatchUpdate w/Criteria: " &amp; rs.UpdateCriteria
+          'SQL TRACE: UPDATE Authors SET au_lname='Mike2' WHERE
+          'au_id='172-32-1176' AND au_lname='Mike1' AND au_fname='John' AND
+          'phone='408 496-7223' AND address='10932 Bigge Rd.' AND city='Menlo
+          'Park' AND state='CA' AND zip='94025' AND contract=1
+
+          rs.MoveFirst
+          rs.UpdateCriteria = rdCriteriaUpdCols   '2
+          rs.Edit
+          rs(1).Value = "Mike3"
+          rs.BatchUpdate
+          Debug.Print "BatchUpdate w/Criteria: " &amp; rs.UpdateCriteria
+          'SQL TRACE: UPDATE Authors SET au_lname='Mike3' WHERE
+          'au_id='172-32-1176' AND au_lname='Mike2'
+
+      End With
+
+      Exit Sub
+
+     errhandler:
+      Debug.Print "--ERRORS OCCURRED--"
+      Debug.Print "Err.Number: " &amp; Err.Number &amp; "   "
+      Debug.Print "Err.Description: " &amp; Err.Description &amp; "   "
+
+     End Sub
+
+4. Run the code then click the command button.
+
+You may want to run the SQL Trace utility while running this code so that you can
+see the queries that are actually being issued against the database when the
+BatchUpdate method is executed. Samples of these SQL Trace results have been
+included in the preceding code for demonstration.
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Mike
+Ruthruff, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbDatabase kbRDO kbVBp kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

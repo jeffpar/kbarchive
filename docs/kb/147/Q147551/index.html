@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147551: Serial Mouse Fails With CalComp Digitizer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147551: Serial Mouse Fails With CalComp Digitizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147551/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147551/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147551/","publisher":null,"image":null,"headline":"Q147551: Serial Mouse Fails With CalComp Digitizer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147551-serial-mouse-fails-with-calcomp-digitizer">Q147551: Serial Mouse Fails With CalComp Digitizer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147551
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install the CalComp Wintab32 Digitizer Services and Driver version 3.2
+for Windows NT 3.51, a serial mouse does not work and the following system
+events are logged in the Event Viewer:
+
+  Event ID: 3
+  Source: Serial
+  Description: User configuration data for parameter COM2 overriding firmware
+  configuration data.
+
+  Event ID: 11
+  Source: Serial
+  Description: The hardware resources for COMx are already in use by another
+  device.
+
+  Event ID: 22
+  Source:Serial
+  Description: A conflict has been detected between two drivers which claimed
+  two overlapping Io port regions. Driver ccntdrv, with device
+  &lt;\Device\PointerPort0.Translated&gt;, claimed an IO port range with
+  starting address in data address 0x28 and 0x2c, and length in data address
+  0x30.
+
+  Event ID: 22
+  Source:Serial
+  Description: A conflict has been detected between two drivers which claimed
+  two overlapping Io port regions. Driver Serial, with device
+  &lt;\Device\Serial1.Translated&gt;, claimed an IO port range with starting
+  address in data address 0x28 and 0x2c, and length in data address 0x30.
+
+  Event ID: 24
+  Source: Serial
+  Description: A conflict has been detected between two drivers which claimed
+  equivalent IRQs. Driver CCNTDRV, with device
+  &lt;\Device\PointerPort0.Translated&gt;, claimed an interrupt with Level in
+  data address 0x28, vector in data address 0x2c and Affinity in data address
+  0x30.
+
+  Event ID: 24
+  Source: Serial
+  Description: A conflict has been detected between two drivers which claimed
+  equivalent IRQs. Driver Serial, with device
+  &lt;\Device\Serial2.Translated&gt;, claimed an interrupt with Level in data
+  address 0x28, vector in data address 0x2c and Affinity in data address 0x30.
+
+NOTE: The COM ports, IRQ and addresses in system events mentioned above will vary
+depending on the system configuration.
+
+RESOLUTION
+==========
+
+The system events that appear in the Event Viewer are by design.
+
+To correct the problem with the serial mouse:
+
+1. Make sure that the Calcomp Digitizer drivers are installed by following the
+  instructions included with the Calcomp drivers. Turn the digitizer power off
+  and verify that the digitizer tablet is properly connected to the computer.
+
+2. Verify that the settings of the serial mouse, the digitizer, and other
+  hardware peripherals. Make sure that each device is using a unique IRQ, COM
+  port and Base I/O port address. In Windows NT, run Control Panel Ports and
+  select the COM port. Click Settings and then click Advanced to view the IRQ
+  and Base I/O Port Address settings.
+
+If there are no resource conflicts, proceed to step 3. If you have detected
+resource conflicts (especially with the digitizer), contact Calcomp Technical
+Support at (800) 458-5888 and see the following articles in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q112584
+  TITLE : Error Messages Caused by Incorrect Serial Port Configuration
+
+  ARTICLE-ID: Q137584
+  TITLE : CalComp Digitizer Fails on Windows NT 3.51
+
+1. In Control Panel Devices, verify that Serial has started.
+
+2. In Control Panel Devices, select Sermouse and click Startup. For Startup
+  Type, select System. Click OK and quit Control Panel.
+
+3. Shut down and restart Windows NT.
+
+The third-party products discussed here are manufactured by Calcomp, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodnt Cal Comp digitize
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

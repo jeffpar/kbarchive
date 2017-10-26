@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121457/","publisher":null,"image":null,"headline":"Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121457-using-microsoft-fortran-51-with-visual-basic">Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121457
+Product(s): Microsoft Fortran Compiler
+Version(s): 3.0,5.1
+Operating System(s): 
+Keyword(s): kbfile
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN Compiler for MS-DOS, version 5.1 
+- Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the complete text of Application Note number HF1047. The
+title of this Application Note is "HF1047: Using FORTRAN 5.1 with Visual
+Basic."
+
+HF1047 describes how to call FORTRAN routines in a .dll from a Visual Basic for
+Windows-based application, and how to create the .dll file from FORTRAN code.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  hf1047.exe
+  (http://download.microsoft.com/download/fortranps10bnt/doc1/1/W9XNT4/EN-US/hf1047.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Or you can have this Application Note faxed or mailed to you by calling Microsoft
+Product Support Services Monday through Friday, 6:00 A.M. to 6:00 P.M. Pacific
+time. If you are outside the United States, contact the Microsoft subsidiary for
+your area. To locate your subsidiary, go to the Microsoft Web site
+
+  http://www.microsoft.com/worldwide/default.htm
+
+THE TEXT OF HF1047
+------------------
+
+======================================================================
+ Microsoft(R) Product Support Services Application Note (Text File)
+           HF1047: USING FORTRAN 5.1 WITH VISUAL BASIC(R)
+======================================================================
+                                                  Revision Date: 9/94
+                                                     No Disk Included
+
+-----------------------------------------------------------------------
+| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY     |
+| ACCOMPANY THIS DOCUMENT (collectively referred to as an Application |
+| Note) IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER      |
+| EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED      |
+| WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR       |
+| PURPOSE. The user assumes the entire risk as to the accuracy and    |
+| the use of this Application Note. This Application Note may be      |
+| copied and distributed subject to the following conditions:  1) All |
+| text must be copied without modification and all pages must be      |
+| included;  2) If software is included, all files on the disk(s)     |
+| must be copied without modification (the MS-DOS(R)  utility         |
+| diskcopy is appropriate for this purpose);  3) All components of    |
+| this Application Note must be distributed together;  and  4) This   |
+| Application Note may not be distributed for profit.                 |
+|                                                                     |
+| Copyright (C) 1994 Microsoft Corporation.  All Rights Reserved.     |
+| Visual Basic, Microsoft, and MS-DOS are registered trademarks and   |
+| Windows is a trademark of Microsoft Corporation.                    |
+|---------------------------------------------------------------------|
+
+FORTRAN AND VISUAL BASIC FOR WINDOWS(TM)
+========================================
+
+There are several points to consider when using FORTRAN from Visual
+Basic:
+
+- Calling FORTRAN routines from Visual Basic for Windows requires
+  that the FORTRAN routines be made into a DLL.
+
+- When passing data:
+
+   - Both FORTRAN and Visual Basic pass data by reference.
+   - Visual Basic strings are different from FORTRAN strings. They
+     include a string structure, and require a special declaration
+     ("ByVal") to force Visual Basic to pass the string pointer.
+   - In Visual Basic, array indices start at 0. In FORTRAN, they
+     start at 1.
+
+- There must be a declaration statement in Visual Basic for each
+  FORTRAN routine that will be called.
+
+- FORTRAN DLLs have two significant problems in file I/O:
+
+   - Unformatted or Binary files can't be accessed with FORTRAN
+     commands.
+   - ASCII files that are opened in FORTRAN will not be readable
+     until you exit from Visual Basic.
+
+  The solution to both problems is to use Windows API calls to do
+  file I/O.
+
+  NOTE: For additional information on file I/O, please see the
+  following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q102698
+       TITLE: Performing File I/O from a FORTRAN Dynamic-Link Library
+
+CREATING A FORTRAN DLL CALLED FROM A VISUAL BASIC PROGRAM
+=========================================================
+
+This lab presents the steps required to build a FORTRAN DLL and shows how
+to create a Visual Basic application that uses this DLL. This lab also
+shows the syntax required to pass various types of data between FORTRAN and
+Visual Basic.
+
+Preparation
+-----------
+
+1. Install FORTRAN version 5.1 to target 'MS-DOS and Windows' and
+  include the Windows DLL library. When this is completed
+  successfully, the files \FORTRAN\BINB\FL.DEF and
+  \FORTRAN\LIB\LDLLFEW.LIB will be on your computer
+
+  NOTE: If there are problems with any of this, please use the
+  additional information provided in the following article in the
+  Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q112006
+       TITLE: FORTRAN 5.1 Setup Procedure for Typical Installations
+
+2. Install Visual Basic version 3.0.
+
+3. Read chapters 1 and 2 of the "Visual Basic Programmers Guide," and do
+  the "Hello World" example.
+
+Procedure
+---------
+
+1. Start Visual Basic, and begin a new project.
+
+2. Add the following items to the Form by dragging them from the Tool
+  Box to the Form:
+
+   - Four command buttons
+   - One text box
+
+3. In the Properties Window, modify the properties of the following items:
+
+  Object               Properties      Setting
+  ----------------------------------------------------
+  Form                 Caption         VB/Fortran Lab
+  Text Box             Text            empty
+                       Multi Line      True
+                       Scroll Bars     3 Both
+  Command Button 1     Caption         Test Array
+  Command Button 2     Caption         Test String
+  Command Button 3     Caption         Test String Array
+  Command Button 4     Caption         Test Square
+
+  At this point, the Form should look something like this:
+
+-------------------------------------------------------------------
+|                          VB/Fortran Lab                         |
+-------------------------------------------------------------------
+|                                                                 |
+|                               -------------------------------   |
+|  -------------------------    |                           | |   |
+|  |      Test Array       |    |                           | |   |
+|  -------------------------    |                           | |   |
+|  -------------------------    |                           | |   |
+|  |      Test String      |    |                           | |   |
+|  -------------------------    |                           | |   |
+|  -------------------------    |                           | |   |
+|  |   Test String Array   |    |                           | |   |
+|  -------------------------    |                           | |   |
+|  -------------------------    |                           | |   |
+|  |      Test Square      |    |                           | |   |
+|  -------------------------    |                           | |   |
+|                               |                           | |   |
+|                               |---------------------------| |   |
+|                               -------------------------------   |
+-------------------------------------------------------------------
+
+4. From the Project Window, select View Code for the Form.
+
+5. Add the Visual Basic code as follows:
+
+  Add the following code to the Command1 Click event:
+
+     Sub Command1_Click ()
+        Static arr(1 To 3, 1 To 7) As Single
+        Call ARRAYTEST(arr(1, 1))
+        For i% = 1 To 3
+           For j% = 1 To 7
+              ' Enter the following two lines as one, single line of code:
+              text1.Text = Str$(arr(i%, j%)) + Chr$(13) + Chr$(10)
+                 + text1.Text
+           Next j%
+        Next i%
+     End Sub
+
+  Add the following code to the Command2 Click event:
+
+     Sub Command2_Click ()
+        Dim temp As String * 40
+        Call STRINGER(temp)
+        text1.Text = temp + Chr$(13) + Chr$(10) + text1.Text
+     End Sub
+
+  Add the following code to the Command3 Click event:
+
+     Sub Command3_Click ()
+        Static testarray(1 To 5) As StringArray
+        Call ARRAYSTRING(testarray(1))
+        For i% = 1 To 5
+           ' Enter the following two lines as one, single line of code:
+           text1.Text = testarray(i%).strings + Chr$(13) +
+              Chr$(10) + text1.Text
+        Next i%
+     End Sub
+
+  Add the following code to the Command4 Click event:
+
+     Sub Command4_Click ()
+        Dim a As Single
+        a = 4.2
+        Call Square(a)
+        text1.Text = Str$(a) + Chr$(13) + Chr$(10) + text1.Text
+     End Sub
+
+6. Create the files for the form by choosing Save Project As from
+  the file menu. In a directory of your choice, save the form as
+  VB-FORT.FRM, and save the project as VB-FORT.MAK. Create a new module,
+  and save it as GLOBAL.BAS.
+
+7. From the Project Window, select View Code for GLOBAL.BAS. Add all of
+  the following code to general declarations section in GLOBAL.BAS:
+
+     Type StringArray
+        strings As String * 24
+     End Type
+
+     Declare Sub ARRAYTEST Lib "fortvb.dll" (Myarray As Single)
+     Declare Sub STRINGER Lib "fortvb.dll" (ByVal mystring As String)
+     Declare Sub ARRAYSTRING Lib "fortvb.dll" (Myarray As StringArray)
+     Declare Sub Square Lib "fortvb.dll" (a As Single)
+
+  NOTE: The DLL name in these declarations could include full path to
+  the FORTRAN DLL (For example, "C:\VB\TEXT\FORTVB.DLL"). Then Visual
+  Basic won't have to search for it.
+
+8. Create the FORTRAN file to be made into a DLL as follows:
+
+  Create a file (FORTVB.FOR) with the following contents, and place it
+  in the same directory where the Form and other Visual Basic files
+  are located:
+
+     C  Code for the FORTRAN DLL 'FORTVB.DLL'
+           subroutine arraystring(arr)
+           character*24 arr(5)
+           arr = 'This is a string also'
+           end
+
+           subroutine arraytest(arr)
+           real*4 arr(3,7)
+           integer i,j
+           do i=1,3
+             do j=1,7
+               arr(i,j) = 11*i+j-1*i
+             end do
+           end do
+           end
+
+           subroutine square(a)
+           real*4 a
+           a = a*a
+           end
+
+           subroutine stringer(s)
+           character*40 s
+           s = 'This is from fortran'
+           end
+
+9. Create the Definitions file as follows:
+
+  Create the file FORTVB.DEF with the following contents:
+
+     LIBRARY        FORTVB
+     EXETYPE        WINDOWS
+     PROTMODE
+     CODE           PRELOAD MOVEABLE DISCARDABLE
+     DATA           PRELOAD MOVEABLE SINGLE
+     HEAPSIZE       1024
+
+     EXPORTS        WEP
+                    ARRAYTEST
+                    ARRAYSTRING
+                    SQUARE
+                    STRINGER
+
+10. Build the DLL by typing the following commands at the MS-DOS prompt
+   in the directory where the Form and other Visual Basic files
+   are located:
+
+      FL /c /Gw /Aw /G2 FORTVB.FOR
+      LINK FORTVB,FORTVB.DLL,NUL,/NOD LDLLFEW,FORTVB.DEF
+
+11. Copy the DLL to a directory where Visual Basic can find it if the
+   declarations did not include the full path to the DLL. This could
+   be either the working directory, C:\WINDOWS\SYSTEM, or a directory
+   in the path.
+
+   NOTE: loading a Visual Basic project does not change the working
+   directory. The current project directory is not usually searched
+   when loading a DLL.
+
+12. Run the Visual Basic application, and click the command buttons to
+   execute the FORTRAN subroutines. The results will appear in the
+   text window.
+
+--------------------------------------------------------------------
+
+Additional query words: HF1047.EXE kbfile
+
+======================================================================
+Keywords          : kbfile 
+Technology        : kbVBSearch kbAudDeveloper kbFortranSearch kbVB300Search kbVB300 kbZNotKeyword3 kbFORTRAN510DOS
+Version           : :3.0,5.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

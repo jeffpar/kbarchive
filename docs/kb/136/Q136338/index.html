@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136338/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136338/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136338/","publisher":null,"image":null,"headline":"Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136338-fix-windows-95-gdi-leak-with-show-window-contents-setting">Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136338
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbenvkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the Project Manager open, GDI resources dwindle when dragging windows
+within Visual FoxPro under Windows 95 if the Microsoft Plus feature "Show window
+contents while dragging" is enabled.
+
+WORKAROUND
+==========
+
+The loss of GDI resources can be prevented by disabling the Microsoft Plus "Show
+window contents while dragging" feature. If the GDI resources become very low,
+most may be recovered by exiting and then restarting Visual FoxPro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 3.0b
+for Windows.
+
+MORE INFORMATION
+================
+
+Microsoft Plus is a set of companion enhancements for Windows 95 which can be
+installed to add functionality to the base feature set of Windows 95.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Install Microsoft Plus, and select the "Visual Enhancements" option when
+  installing.
+
+2. Using the right mouse button, click the Windows 95 desktop, and select
+  Properties.
+
+3. Click the Plus! tab, and select the "Show window contents while dragging"
+  check box. The Plus! tab will not be available if Microsoft Plus is not
+  installed.
+
+4. Start the Windows 95 System Resource Meter from the Start Menu. Click the
+  Start button. Then click Programs, click Accessories, click System Tools, and
+  click Resource Meter. A green icon will appear in the Taskbar to the left of
+  the clock.
+
+  If the Resource Meter does not appear in the Start menu, it has not been
+  installed. Install it by opening the Control Panel under My Computer. Click
+  the Add/Remove Programs icon. Then click the Windows Setup tab, and select
+  Accessories in the Components list. Click Details, and select the System
+  Resource Meter check box in the Components list. Click the OK button twice.
+  Windows 95 will prompt for the CD-ROM disc or floppy disk to complete the
+  installation.
+
+5. Start Visual FoxPro, and create a new project by clicking New on the File
+  menu. Click Project, and then click New File. Type testproj in the Enter box
+  of the Save As dialog box, and click Save.
+
+6. Add a new form to the project by clicking the Documents tab of the Project
+  Manager. Then select Forms, and click New. Click New Form to create the form.
+
+7. Check the current System Resources by placing the mouse pointer over the
+  green System Resource Meter icon in the taskbar. The percentage of available
+  System, User, and GDI resources appears. Note the GDI percentage.
+
+8. Click the Form Designer title bar in the center, hold down the mouse button
+  and drag the mouse pointer around the Visual FoxPro desktop as follows: top
+  right, top left, bottom left, bottom right. Repeat this about 20 times.
+
+9. Repeat step 7, and read the GDI percentage. Observe that it falls by from 1%
+  to 5% for each set of 20 drags of the form designer around the Visual FoxPro
+  desktop.
+
+Additional Notes
+----------------
+
+- The GDI does not leak memory if the Project Manager is not open or if "Show
+  window contents while dragging" is not enabled.
+
+- Closing all windows in Visual FoxPro will not fully recover the GDI resources
+  lost. Closing Visual FoxPro itself will cause most or all of the GDI
+  resources to be recovered.
+
+- During a long programming session, the GDI resources will eventually become
+  depleted. At this point, you need to exit Visual FoxPro and restart to
+  recover the resources.
+
+Additional query words: VFoxWin fixlist3.00b buglist3.00 sysmeter insufficient plus pack memory
+
+======================================================================
+Keywords          : kbenv kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

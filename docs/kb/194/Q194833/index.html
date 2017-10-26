@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194833: HOWTO: Using the Supermover Foundation Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194833: HOWTO: Using the Supermover Foundation Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194833/","publisher":null,"image":null,"headline":"Q194833: HOWTO: Using the Supermover Foundation Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194833-howto-using-the-supermover-foundation-class">Q194833: HOWTO: Using the Supermover Foundation Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194833
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbvfp600 kbFFC
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the SuperMover Foundation Class that shipped
+with Visual FoxPro. The SuperMover class is located in the _movers.vcx class
+library.
+
+MORE INFORMATION
+================
+
+In order to set up a SuperMover Foundation Class in an application, here are
+some basic properties and methods that you need to understand:
+
+- aChoices[1,0] array property - This array property contains available choices
+  that is in the left list box.
+
+- aSelections[1,0] array property - This array property contains selected items
+  in the right list box.
+
+- UseArray property - This property specifies whether to use arrays for the
+  left list box. When the UseArray property is set to .T., a property array is
+  created and the property array can be reference from any object on the form.
+  However, when UseArray is set to .F., it basically using the list box's
+  AddItem method to add the items to the list box. The default value for this
+  property is .T.
+
+- SortLeft property - This property sorts items in the left list box, the
+  default value is .F.
+
+- InitChoices method - This method initializes the aChoices array and populate
+  the initial content of the aChoices array into the list box. The syntax for
+  this method is:
+
+        Object.InitChoices(@choicearrayname)
+
+- choicearrayname specifies the array of initial choices. When the UserArray
+  property is set to .F., the choicearrayname array will use as the source for
+  the list box Additem method to add the item to the list box and no aChoices
+  array will be created.
+
+- InitSelections method - This method initializes the aSelections array. The
+  syntax for this method is:
+
+        Object.InitSelections(@selectionarrayname)
+
+- Selectionarrayname specifics the array of initial selections.
+
+- GetSelections method - The method retrieves the selected items. The syntax
+  for this method is:
+
+        Object.GetSelections(@targetarrayname)
+
+- Targetarrayname specifies the name of the array containing the target
+  selections.
+
+Example:
+--------
+
+1. Create a form, name mymover.scx.
+
+2. Add the SuperMover class, located in _movers.vcx in \Ffc directory, to the
+  form.
+
+3. In the Init event of the form, put in the following code:
+
+        DIMENSION aMyChoice[6]
+        LOCAL iCount
+        FOR iCount = ALEN(aMyChoice) to 1 STEP -1
+           aMyChoice[(ALEN(aMyChoice)+1)-iCount] = CHR(64+iCount)
+
+        ENDFOR
+
+        &amp;&amp; To initialize the aChoice array property and populate
+        &amp;&amp; the left list box
+        Thisform._supermover1.InitChoices(@aMyChoice)
+
+4. Add two command buttons to the form and change the following properties as
+  shown:
+
+        Command1.Caption = "Display selected items"
+        Command2.Caption = "Display aChoice array"
+
+5. In the Click event of Command1, place the following code:
+
+        DIMENSION aMySelection[1]
+        Thisform._supermover1.GetSelections(@aMySelection)
+        LOCAL iCount
+        FOR iCount = 1 TO ALEN(aMySelection)
+           WAIT WINDOW aMySelection[iCount]
+        ENDFOR
+
+6. In the Click event of Command2, place the following code:
+
+        FOR I = 1 to ALEN(Thisform._supermover1.aChoices)
+           WAIT WINDOW thisform._supermover1.aChoices[i]
+        ENDFOR
+
+7. Save and run the form.
+
+  The left list box displays F,E,D,C,B,A. Click on the right arrow button to
+  move a few items to the right list box. Click the "Display selected items"
+  button and the selected items will display in the Wait Window. Now, click the
+  "Display aChoice array" button, only the items left in the left list box will
+  display in the Wait Window.
+
+8. Modify the mymover form again, change the _supermover's SortLeft property to
+  .T.
+
+9. Save and run the form again. The left list box now displays A,B,C,D,E,F.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbFFC 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

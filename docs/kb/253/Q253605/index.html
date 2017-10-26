@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253605/","publisher":null,"image":null,"headline":"Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253605-xadm-clients-hang-at-logon-if-duplicate-ofl-folders-exist">Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253605
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 12-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Exchange Server clients stop responding (hang) during logon when duplicate
+English Organization Forms library (OFL) folders exist in the Exchange Server
+organization.
+
+CAUSE
+=====
+
+The existence of duplicate OFL folders can occur when two or more sites are
+connected through directory replication connectors. If these OFL folders exist
+in both sites prior to establishing directory replication, you can end up with
+duplicate OFL folders after directory replication is finished between the
+sites.
+
+If public folder affinity is configured between the sites that contain the
+duplicate OFL folders, clients in one or both sites may attempt to gain access
+to the remote version of the OFL folder during logon. If connectivity to this
+folder requires traversing a slow network link or if connectivity is not
+possible because of a lack of permissions and/or an absence of remote procedure
+call (RPC) connectivity, clients may hang and/or may be prompted for credentials
+at logon.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. Download all forms that you want to keep from each OFL folder to a .pst file,
+  using the following steps:
+
+  a. Log on with a client in the site where you want to remove the duplicate
+     OFL folders.
+
+  b. Go to Manage Forms in the Microsoft Outlook client, and export the forms
+     you want to save to a .pst file.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q190994 XADM: How to Save Organizational Forms to a PST File
+
+2. Delete the OFL folder(s) that you do not want to keep, using the following
+  steps:
+
+  a. Start the Exchange Server Administrator program against a server in the
+     site where the duplicate OFL folder exists.
+
+  b. On the Tools menu, click Forms Administrator.
+
+  c. Click the appropriate OFL folder, and then click Remove.
+
+NOTE: Make sure you do not delete the wrong OFL folders. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q175129 XADM: Wrong OFL Deleted in Forms Administrator
+
+3. Restart all Exchange Server computers to delete any cached OFL folder
+  information in the site.
+
+4. Publish any missing forms to the remaining OFL by logging on with a client in
+  the site containing the English OFL folder and publishing any saved custom
+  forms to the OFL.
+
+  NOTE: You can also simply create a new OFL folder with a unique name in the
+  site that contained the duplicate. You can then publish forms into the newly
+  created OFL folder of that site, rather than publishing the previously
+  exported forms into the OFL folder of the site that contains the last copy of
+  what was previously the duplicate folder (which is now the unique English OFL
+  folder). For additional information, click the article number below to view
+  the article in the Microsoft Knowledge Base:
+
+  Q184765 XADM: Setting up the Organization Forms Library
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

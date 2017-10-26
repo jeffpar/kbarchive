@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246914/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246914/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246914/","publisher":null,"image":null,"headline":"Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246914-howto-manually-promote-a-label-in-visual-sourcesafe">Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246914
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,4.0a,5.0
+Operating System(s): 
+Keyword(s): kbSSafe600 kbVS600 kbFAQ kbDSupport kbGrpDSSSafe kbSsafe600FAQ
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe 6.0 automatically promotes a file into a preexisting project
+label when the user creates a file label with the same name as the label applied
+to its parent project. Automatic label promotions only work when both Visual
+SourceSafe 6.0 is installed and the database has the updated database format.
+Earlier versions of Visual SourceSafe do not allow you to promote a file by
+applying a file label. Instead, you need to reapply the project label. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q246910 INFO: How Do Label Promotions Work in SourceSafe 6.0
+
+MORE INFORMATION
+================
+
+The following example leads you through the process of labeling a project,
+editing a file in that project, then promoting the edited file into the existing
+label. This example assumes that a project named MyProject exists in Visual
+SourceSafe, and that the project contains a file named MyFile, whose current
+version in Visual SourceSafe is version 3.
+
+Step 1: Label the Project
+-------------------------
+
+1. Select the project called MyProject.
+
+2. Select the Label option from the File menu.
+
+3. Type in a label name for the project, like Version1.
+
+Step 2: Modify the File
+-----------------------
+
+1. Select the file MyFile.
+
+2. Check the file out, edit it, then check it back in.
+
+At this point, the current version of MyFile is version 4. If you were to go into
+the history of MyProject, select the label Version1, and retrieve the project,
+you would get version 3 of MyFile. To associate version 4 of MyFile with the
+Version1 label, you need to do the following:
+
+Step 3: Promoting the Edited File into the Preexisting Label
+------------------------------------------------------------
+
+1. Select the project MyProject.
+
+2. Choose the Label option from the File menu.
+
+3. In the Label dialog box type Version1.
+
+You receive a dialog box that states:
+
+  The label Version1 is already used. Remove the old Label?
+
+4. Click Yes.
+
+This recycles the label name Version1, and you are now be able to retrieve the
+project using the Version1 label and have Visual SourceSafe retrieve version 4
+of MyFile rather than version 3.
+
+For additional information on changing a label in Visual SourceSafe, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q126786 HOWTO: Remove or Change a Label
+
+For additional information on using labels in Visual SourceSafe, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q139298 HOWTO: Include Specific File Revisions in a Project Label
+
+  Q130176 Project versus File Labeling in SourceSafe
+
+  Q162114 HOWTO: How To Issue a Recursive GET Based on a Project Label
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbVS600 kbFAQ kbDSupport kbGrpDSSSafe kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500
+Version           : :4.0,4.0a,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

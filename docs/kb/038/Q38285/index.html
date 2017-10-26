@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38285: Detecting Presence of 80x87 Math Coprocessor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38285: Detecting Presence of 80x87 Math Coprocessor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38285/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38285/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38285/","publisher":null,"image":null,"headline":"Q38285: Detecting Presence of 80x87 Math Coprocessor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38285-detecting-presence-of-80x87-math-coprocessor">Q38285: Detecting Presence of 80x87 Math Coprocessor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38285
+Product(s): See article
+Version(s): 3.00 4.00 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# G881027-5369 8087 80287 80387 87 /FPc | mspl13_c
+Last Modified: 30-NOV-1988
+
+Question:
+
+My Microsoft C program is compiled with the /FPi (floating-point
+emulator) option. I would like to warn the user if they are running it
+on a machine that has no math coprocessor. Is there any way to detect
+if an 80x87 is currently being used by the floating-point libraries?
+
+Response:
+
+There is no direct way to query the Microsoft C floating-point
+libraries as to whether or not they're using a math coprocessor. If
+you compile /FPi, you're telling the compiler you don't want to have
+to worry about whether or not a coprocessor is present. Consequently,
+the compiler generates code that will do the following:
+
+1. Check to see if a 80x87 coprocessor is present.
+
+2. If so, use it.
+
+3. If not, emulate it with software routines.
+
+There is nothing in this algorithm to tell your program what it found.
+The only way you'll know it's emulating the coprocessor is by
+observing how slowly your program runs.
+
+If you really need to know whether a coprocessor is present, you'll
+have to test it yourself. For more information on how to test for the
+presence of an 80x87 coprocessor, please consult Intel's "80286 and
+80287 Programmer's Reference Manual," Pages 3-2 and 3-3 (in the 2nd
+half of the book). This section is titled "System-Level Numeric
+Programming," and states that your program can detect the presence of
+the 80287 NPX. It then gives an assembly-language example that works
+correctly for both 8086- and 80286-based machines.
+
+Here is how you could use this routine in your program:
+
+1. During initialization of your program, call the short Intel routine
+   to see if a coprocessor is present.
+
+2. If there is a coprocessor, proceed normally.
+
+3. If there is no coprocessor, put up a message box explaining the
+   following to the user:
+
+   "Your computer lacks a coprocessor, but &lt;my_app&gt; will emulate it in
+   software; this emulation will slow down the calculations that
+   &lt;my_app&gt; needs to perform. To increase the performance of
+   &lt;my_app&gt;, as well as other programs, add a numeric coprocessor to
+   your system."
+
+4. Proceed with your program as you normally would. The C run-time
+   libraries will automatically adjust for the presence or lack of a
+   80x87.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

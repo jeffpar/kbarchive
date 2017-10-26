@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259708: SMS: New SQL Views Are Available in SMS 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259708: SMS: New SQL Views Are Available in SMS 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259708/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259708/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259708/","publisher":null,"image":null,"headline":"Q259708: SMS: New SQL Views Are Available in SMS 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259708-sms-new-sql-views-are--available-in-sms-20">Q259708: SMS: New SQL Views Are  Available in SMS 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259708
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP2
+Operating System(s): 
+Keyword(s): kbDatabase kbsms200 kbsms200sp2fix
+Last Modified: 27-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes new SQL views that have been added to Systems Management
+Server (SMS) 2.0 Service Pack 2 (SP2).
+
+MORE INFORMATION
+================
+
+New SQL views have been added to the SMS 2.0 SP2 database to enable high
+performance data access for reporting programs. The purpose of these views is to
+mirror the Windows Management Instrumentation (WMI) class schema of the SMS
+database as documented in the SMS 2.0 Resource Kit and the SMS 2.0 Software
+Development Kit (SDK).
+
+Please note that WMI is the recommended data-access method for accessing the SMS
+2.0 database.
+
+For more information about SQL views and how to use them, see the SQL Books
+Online or the SQL Resource Kit. For more information about WMI as it relates to
+SMS, please see the SMS 2.0 Administrators Guide, the SMS 2.0 Resource Kit, or
+the SMS 2.0 SDK.
+
+According to the SMS SDK, the majority of the SMS class names in WMI begin with
+"SMS_". In the SQL views, the SMS_ prefix has been removed and replaced with
+"v_".
+
+Most of the property names have been kept the same, except for inventory classes
+where the inventory class names are slightly different because of TSQL string
+manipulation limitations.
+
+The following views have been added to the schema.
+
+- v_SchemaViews: Lists the schema views
+
+- v_GroupMap: Lists inventory classes and their associated history classes
+
+- v_GroupAttributeMap: Lists the attributes of the inventory classes
+
+- v_ResourceMap: Lists resource classes
+
+- v_ResourceAttributeMap: Lists attributes, including array attributes of the
+  resource classes
+
+- v_AgentDiscoveries: Former agent array properties of SMS_R_System, and lists
+  discovered resources and the discovery agent
+
+- v_AuditRootSummarizer: Summarizes the number of actions performed each day,
+  for each user, for each action
+
+- v_AuditSummarizer: Summarizes the number of actions performed each day, for
+  each user, for each action
+
+The following modifications have been made to the WMI schema:
+
+- v_OS_Details: Lists the supported platforms for a program (this was formerly
+  an embedded object of SMS_Program)
+
+- v_CollectionRuleDirect: Lists the resources that are direct members of a
+  collection (this was formerly an embedded object of SMS_Collection)
+
+- v_CollectionRuleQuery: Lists the queries that are used to populate a
+  collection (this was formerly an embedded object of SMS_Collection)
+
+The following stored procedures have been added to enable regeneration of these
+views:
+
+- sp_RenewSMSSchemaViews: Regenerates all views
+
+- sp_RenewCollectionViews: Regenerates collection class views
+
+- sp_RenewResourceViews: Regenerates resource class views
+
+- sp_RenewInvGroupViews: Regenerates inventory group class views
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbsms200 kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114968/","publisher":null,"image":null,"headline":"Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114968-howto-making-visual-c-32-bit-edition-books-online-run-faster">Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114968
+Product(s): Microsoft C Compiler
+Version(s): 1.00 2.00 2.10 4.00
+Operating System(s): 
+Keyword(s): kbsetup kbVC100 kbVC200 kbVC210 kbVC400 kbGrpDSTools
+Last Modified: 29-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Books Online may start slowly because its index file must be read from
+the CD-ROM drive. CD-ROM drives are usually much slower than hard drives. By
+putting part or all of the help files on your hard drive, you can decrease the
+time you spend waiting for Books Online to access information.
+
+In the Setup of Visual C++ version 4.0, there are three options: leave all Books
+Online files on the CD, the CD-ROM installation; copy just the Books Online
+indices and some relatively small help file to the hard drive, the Typical
+installation; or, copy all Books Online files to the hard drive, a Custom
+installation that includes at least the Microsoft Developer Studio and the Books
+Online. The Typical installation is the default.
+
+In Visual C++ version 2.x, the Setup program provides similar options: keeping
+all of the help on the distribution CD, copying just the indices to the hard
+drive, or copying all of the help files in their entirety to the hard drive.
+Copying just the indices is the default action.
+
+The Setup for Visual C++ 32-bit edition version 1.0 does not afford these
+options. The remainder of this article explains how to place part or all of the
+online help onto a hardrive for Visual C++ 32-bit edition version 1.0.
+
+This article assumes you are familiar with the registry editor, REGEDT32. For
+more information, type "start REGEDT32" at a command prompt and view the online
+help for the utility.
+
+MORE INFORMATION
+================
+
+Windows NT keeps track of the locations of the Books Online files in the
+registry. Using the REGEDT32 registry editor, you can change these registry
+entries to allow you to keep the books that you access most frequently on your
+local drive.
+
+It is recommended that any help files moved from the CD are located in a single
+directory, such as "MSVCNT\HELP", for simplicity.
+
+All of the registry references have the root registry path of:
+
+  HKEY_CURRENT_USER\ 
+     Software\ 
+     Microsoft\ 
+     Viewer
+
+Make the following changes in the registry:
+
+1. Change BOOKSONL\Path to refer to the location of the BOOKS.HDX and BOOKS.IND
+  files. The .HDX index file allows the Books Online Viewer to start up while
+  the .IND file is used in the Search Plus help file option.
+
+2. Change VCXXBKS1\Path to refer to the location of VCXXBKS1.HLP. Books listed
+  before the "C++ Language Reference" in the viewer window are included in this
+  help file.
+
+3. Change VCXXBKS2\Path to refer to the location of the VCXXBKS2.HLP file. All
+  books in the viewer window that are not in VCXXBKS1.HLP are in this help
+  file.
+
+4. Change SDKBKS\Path to refer to SDKBKS.HLP. This help file contains all five
+  volumes of the "Win32 Programmer's Reference."
+
+NOTE: that Visual C++ 2.0 and later also have entries in similar places to hold
+Books Online information in the registry.
+
+HKEY_CURRENT_USER\Software\Microsoft\Viewer
+HKEY_CURRENT_USER\Software\Microsoft\Visual C++ 2.0
+
+You can change these entries individually to place the most used portions of the
+Books online on your hard drive if you wish, but this will require that you
+experiment on your own. Microsoft does not directly support custom Books Online
+configurations past those offered in the Visual C++ 2.0 setup.
+
+Additional query words: kbinf 1.00 2.00 2.10 4.00
+
+======================================================================
+Keywords          : kbsetup kbVC100 kbVC200 kbVC210 kbVC400 kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC200 kbVC210
+Version           : 1.00 2.00 2.10 4.00
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

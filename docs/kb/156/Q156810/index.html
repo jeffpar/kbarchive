@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156810: INFO: STL Sample for Members of the numeric_limits Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156810: INFO: STL Sample for Members of the numeric_limits Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156810/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156810/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156810/","publisher":null,"image":null,"headline":"Q156810: INFO: STL Sample for Members of the numeric_limits Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156810-info-stl-sample-for-members-of-the-numeric_limits-class">Q156810: INFO: STL Sample for Members of the numeric_limits Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156810
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the following members from the
+numeric_limits class in Visual C++:
+
+  has_denorm
+  has_denorm_loss
+  has_infinity
+  has_quiet_NaN
+  has_signaling_NaN
+  is_bounded
+  is_exact
+  is_iec559
+  is_integer
+  is_modulo
+  is_signed
+  is_specialized
+  tinyness_before
+  traps
+  round_style
+  digits
+  digits10
+  max_exponent
+  max_exponent10
+  min_exponent
+  min_exponent10
+  radix;
+  denorm_min()
+  epsilon()
+  infinity()
+  max()
+  min()
+  quiet_ NaN()
+  round_error()
+  signaling_NaN()
+
+MORE INFORMATION
+================
+
+The numeric_limits class provides information for a given type. For example, you
+can determine whether a given type is signed or exact or how it might represent
+infinity.
+
+The Standard Library instantiates numeric_limits for char, bool, signed char,
+unsigned char, short, unsigned short, int, unsigned int, long, unsigned long,
+float, double, and long double. This class could also be instantiated for a
+user-defined type.
+
+Required Header
+---------------
+
+     &lt;limits&gt;
+
+Description
+-----------
+
+To reference one of the members of this class, you need to specify the type that
+you want to obtain information about and the member name. The return will either
+be a value of 1 for true or 0 for false. For example,
+
+     numeric_limits&lt;int&gt;::min()
+
+will return the minimum value for an int.
+
+NOTE: Some of the members are only valid for certain types. Please refer to the
+Online Help to determine if a member is only valid for a certain type.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // &lt;filename&gt; :  Numeric.cpp
+  // 
+  // Variables and Functions:
+  // 
+  //    has_denorm
+  //    has_denorm_loss
+  //    has_infinity
+  //    has_quiet_NaN
+  //    has_signaling_NaN
+  //    is_bounded
+  //    is_exact
+  //    is_iec559
+  //    is_integer
+  //    is_modulo
+  //    is_signed
+  //    is_specialized
+  //    tinyness_before
+  //    traps
+  //    round_style
+  //    digits
+  //    digits10
+  //    max_exponent
+  //    max_exponent10
+  //    min_exponent
+  //    min_exponent10
+  //    radix;
+  //    denorm_min()
+  //    epsilon()
+  //    infinity()
+  //    max()
+  //    min()
+  //    quiet_ NaN()
+  //    round_error()
+  //    signaling_NaN()
+  // 
+  // Written by Linda Koontz
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  /* Compile options needed: /GX
+  */ 
+
+  #include &lt;iostream&gt;
+  #include &lt;limits&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  void main() {
+      cout &lt;&lt; " 1 The minimum value for char is " &lt;&lt;
+          (int)numeric_limits&lt;char&gt;::min() &lt;&lt; endl;
+      cout &lt;&lt; " 2 The minimum value for int is " &lt;&lt;
+           numeric_limits&lt;int&gt;::min() &lt;&lt; endl;
+      cout &lt;&lt; " 3 The maximum value for char is " &gt;&gt;
+          (int)numeric_limits&lt;char&gt;::max() &lt;&lt; endl;
+      cout &lt;&lt; " 4 The maximum value for int is " &lt;&lt;
+          numeric_limits&lt;int&gt;::max() &lt;&lt; endl;
+      cout &lt;&lt; " 5 The number of bits to represent a char is " &lt;&lt;
+          numeric_limits&lt;char&gt;::digits &lt;&lt; endl;
+      cout &lt;&lt; " 6 The number of bits to represent an int is " &lt;&lt;
+          numeric_limits&lt;int&gt;::digits &lt;&lt; endl;
+      cout &lt;&lt;" 7 The number of digits representable in base 10 for float is"
+           &lt;&lt; numeric_limits&lt;float&gt;::digits10 &lt;&lt; endl;
+      cout &lt;&lt; " 8 Is a char signed?              " &lt;&lt;
+          numeric_limits&lt;char&gt;::is_signed &lt;&lt; endl;
+      cout &lt;&lt; " 9 Is an unsigned integer signed? " &lt;&lt;
+          numeric_limits&lt;unsigned int&gt;::is_signed &lt;&lt; endl;
+      cout &lt;&lt; "10 Is a integer an integer? " &lt;&lt;
+          numeric_limits&lt;int&gt;::is_integer &lt;&lt; endl;
+      cout &lt;&lt; "11 Is a float an integer?   " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_integer &lt;&lt; endl;
+      cout &lt;&lt; "12 Is a integer exact? " &lt;&lt;
+          numeric_limits&lt;int&gt;::is_exact &lt;&lt; endl;
+      cout &lt;&lt; "13 Is a float  exact?  " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_exact &lt;&lt; endl;
+      cout &lt;&lt; "14 The radix for float is            "  &lt;&lt;
+          numeric_limits&lt;float&gt;::radix &lt;&lt; endl;
+      cout &lt;&lt; "15 The epsilon for float is          " &lt;&lt;
+          numeric_limits&lt;float&gt;::epsilon() &lt;&lt; endl;
+      cout &lt;&lt; "16 The round error for float is      " &lt;&lt;
+          numeric_limits&lt;float&gt;::round_error() &lt;&lt; endl;
+      cout &lt;&lt; "17 The minimum exponent for float is " &lt;&lt;
+          numeric_limits&lt;float&gt;::min_exponent &lt;&lt; endl;
+      cout &lt;&lt; "18 The minimum exponent in base 10   " &lt;&lt;
+          numeric_limits&lt;float&gt;::min_exponent10 &lt;&lt; endl;
+      cout &lt;&lt; "19 The maximum exponent is           " &lt;&lt;
+          numeric_limits&lt;float&gt;::max_exponent &lt;&lt; endl;
+      cout &lt;&lt; "20 The maximum exponent in base 10   " &lt;&lt;
+          numeric_limits&lt;float&gt;::max_exponent10 &lt;&lt; endl;
+      cout &lt;&lt; "21 Can float represent positive infinity?  " &lt;&lt;
+          numeric_limits&lt;float&gt;::has_infinity &lt;&lt; endl;
+      cout &lt;&lt; "22 Can double represent positive infinity? " &lt;&lt;
+          numeric_limits&lt;double&gt;::has_infinity &lt;&lt; endl;
+      cout &lt;&lt; "23 Can int represent positive infinity? " &lt;&lt;
+          numeric_limits&lt;int&gt;::has_infinity &lt;&lt; endl;
+      cout &lt;&lt; "24 Can float represent a NaN?           " &lt;&lt;
+          numeric_limits&lt;float&gt;::has_quiet_NaN &lt;&lt; endl;
+      cout &lt;&lt; "25 Can float represent a signaling NaN? " &lt;&lt;
+          numeric_limits&lt;float&gt;::has_signaling_NaN &lt;&lt; endl;
+      cout &lt;&lt; "26 Does float allow denormalized values?   " &lt;&lt;
+          numeric_limits&lt;float&gt;::has_denorm &lt;&lt; endl;
+      cout &lt;&lt; "27 Does float detect denormalization loss? " &lt;&lt;
+          numeric_limits&lt;float&gt;::has_denorm_loss &lt;&lt; endl;
+      cout &lt;&lt; "28 Representation of positive infinity for float " &lt;&lt;
+          numeric_limits&lt;float&gt;::infinity() &lt;&lt; endl;
+      cout &lt;&lt; "29 Representation of quiet NaN for float         " &lt;&lt;
+          numeric_limits&lt;float&gt;::quiet_NaN() &lt;&lt; endl;
+      cout &lt;&lt; "30 Minimum denormalized number for float         " &lt;&lt;
+          numeric_limits&lt;float&gt;::denorm_min() &lt;&lt; endl;
+      cout &lt;&lt; "31 Minimum positive denormalized value for float " &lt;&lt;
+          numeric_limits&lt;float&gt;::denorm_min() &lt;&lt; endl;
+      cout &lt;&lt; "32 Does float adhere to IEC 559 standard?  " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_iec559 &lt;&lt; endl;
+      cout &lt;&lt; "33 Is float bounded? " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_bounded &lt;&lt; endl;
+      cout &lt;&lt; "34 Is float modulo?  " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_modulo &lt;&lt; endl;
+      cout &lt;&lt; "35 Is int modulo?    " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_modulo &lt;&lt; endl;
+      cout &lt;&lt; "36 Is trapping implemented for float?    " &lt;&lt;
+          numeric_limits&lt;float&gt;::traps &lt;&lt; endl;
+      cout &lt;&lt; "37 Is tinyness detected before rounding? " &lt;&lt;
+          numeric_limits&lt;float&gt;::tinyness_before &lt;&lt; endl;
+      cout &lt;&lt; "38 What is the rounding style for float? " &lt;&lt;
+          (int)numeric_limits&lt;float&gt;::round_style &lt;&lt; endl;
+      cout &lt;&lt; "39 What is the rounding style for int? " &lt;&lt;
+          (int)numeric_limits&lt;int&gt;::round_style &lt;&lt; endl;
+      cout &lt;&lt; "40 How does a float represent a signaling NaN? " &lt;&lt;
+          numeric_limits&lt;float&gt;::signaling_NaN() &lt;&lt; endl;
+      cout &lt;&lt; "41 Is int specialized? " &lt;&lt;
+          numeric_limits&lt;float&gt;::is_specialized &lt;&lt; endl;
+  }
+
+Output:
+1 The minimum value for char is -128
+2 The minimum value for int is  -2147483648
+3 The maximum value for char is 127
+4 The maximum value for int is  2147483647
+5 The number of bits to represent a char is 7
+6 The number of bits to represent an int is 31
+7 The number of digits representable in base 10 for float is 6
+8 Is a char signed?              1
+9 Is an unsigned integer signed? 0
+10 Is an integer an integer? 1
+11 Is a float an integer?   0
+12 Is an integer exact? 1
+13 Is a float exact?  0
+14 The radix for float is            2
+15 The epsilon for float is          1.19209e-007
+16 The round error for float is      0.5
+17 The minimum exponent for float is -125
+18 The minimum exponent in base 10   -37
+19 The maximum exponent is           128
+20 The maximum exponent in base 10   38
+21 Can float represent positive infinity?  1
+22 Can double represent positive infinity? 1
+23 Can int represent positive infinity? 0
+24 Can float represent a NaN?           1
+25 Can float represent a signaling NaN? 1
+26 Does float allow denormalized values?   1
+27 Does float detect denormalization loss? 1
+28 Representation of positive infinity for float 1.#INF
+29 Representation of quiet NaN for float         -1.#IND
+30 Minimum denormalized number for float         1.4013e-045
+31 Minimum positive denormalized value for float 1.4013e-045
+32 Does float adhere to IEC 559 standard?  1
+33 Is float bounded? 1
+34 Is float modulo?  0
+35 Is int modulo?    0
+36 Is trapping implemented for float?    1
+37 Is tinyness detected before rounding? 1
+38 What is the rounding style for float? 1
+39 What is the rounding style for int? 0
+40 How does a float represent a signaling NaN? -1.#INF
+41 Is int specialized? 1
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample kbSTL kbTemplate
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186528/","publisher":null,"image":null,"headline":"Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186528-document-window-problem-in-16-bit-internet-explorer-3x">Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186528
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The document window in the 16-bit version of Internet Explorer 3.x may not be
+displayed or "painted," when the application is started with its window
+maximized. The document window is the area of the Internet Explorer display
+where HTML pages are displayed. It is located between the Toolbar and Status
+bar. This document describes the problem and its resolution.
+
+CAUSE
+=====
+
+Internet Explorer's document window may be either transparent or a solid color,
+and HTML documents are not displayed until the Internet Explorer window is
+minimized, then maximized.
+
+This problem is not specific to Terminal Server or Terminal Server Client,
+because it is reproducible on Windows 3.1 and Windows NT 3.51 when using the
+16-bit version of Internet Explorer. The problem does not occur with the 32-bit
+version (supported under Windows 95 and Windows NT 4.0 only). The simple
+solution is to use the 32-bit version, if possible.
+
+The problem is related to settings in Internet Explorer's Iexplore.ini, located
+in each user's home directory in the Windows subdirectory. The settings that
+control the size of the Internet Explorer window are stored in the section
+[Document Windows]. This section contains settings similar to:
+
+  [Document Windows]
+  x=110
+  y=122
+  width=375
+  height=221
+  maximize=0
+
+These values define the screen when Internet Explorer is started in windowed mode
+(not maximized):
+
+The "x" and "y" values define the pixel coordinates of the upper-left corner of
+the Internet Explorer window. These values are relative to the upper-left corner
+of the display screen, with "x" being horizontal and "y" vertical.
+
+The "width" value defines the horizontal dimension in pixels of the Internet
+Explorer window.
+
+The "height" value defines the vertical dimension in pixels of the Internet
+Explorer window.
+
+The "maximize" value defines whether Internet Explorer starts with its window
+maximized or not. Possible values are "1" (maximized) or "0" (windowed).
+
+The document window problem occurs when the width and height values both exceed
+the current display dimensions by eight pixels or more. For example, if the
+current display resolution is 640x480, the problem will occur if width is 648 or
+more, and height is 488 or more. If the current display is 800x600, the problem
+occurs when width is 808 or more, and height is 608 or more.
+
+RESOLUTION
+==========
+
+To resolve the problem, either manually edit the values in Iexplore.ini, or
+follow these steps:
+
+1. "Un-maximize" the Internet Explorer window by clicking its "Restore" button.
+  The restore button is located in the upper-right corner of the window.
+
+2. Resize the Internet Explorer window until it fits the current display,
+  without exceeding the display boundaries.
+
+3. Exit Internet Explorer. This writes the new width and height values. It also
+  sets the maximize value to 0 (zero).
+
+4. Restart Internet Explorer.
+
+5. Maximize the window.
+
+6. Exit Internet Explorer. If Internet Explorer is closed while its window is
+  maximized, only the maximize value is modified. It will be set to 1. Restart
+  Internet Explorer. You will notice that it starts in maximized mode, but the
+  document window is displayed correctly.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

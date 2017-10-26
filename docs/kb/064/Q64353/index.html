@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64353/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64353/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64353/","publisher":null,"image":null,"headline":"Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64353-with-deflang-switch-pwb-prompts-for-setting-program-list">Q64353: With "deflang" Switch, PWB Prompts for Setting Program List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64353
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0; OS/2:1.0
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, version 1.0 
+- Microsoft Programmer's Workbench for OS/2, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As documented on page 79 of the "Microsoft C Reference" shipped with C version
+6.0 and in the online help, the "deflang" switch in the Programmer's WorkBench
+(PWB) sets the default filename extension for list boxes in PWB dialog boxes.
+Another (undocumented) feature of this switch is to enable you to be prompted to
+"Set Program List?" when loading a source file with a .MAK file associated with
+it in the current directory.
+
+MORE INFORMATION
+================
+
+By default, "deflang" is not set. You can set the deflang switch in the [PWB]
+tagged section of the TOOLS.INI file, for example:
+
+  deflang:C
+
+This changes the default filename extension in PWB's dialog boxes (such as Open
+in the File menu) from "*.*" to "*.c", so that only files with the .c extension
+show up by default. Other languages can be specified as well, as shown below:
+
+  Switch Setting     Extension
+  --------------     ---------
+  no value            .*
+  C                   .c
+  Asm                 .asm
+  BASIC               .bas
+  FORTRAN             .for
+  Pascal              .pas
+  COBOL               .cbl
+  LISP                .lsp
+
+Note that the online documentation specifies "Assembler" as the switch to use for
+.ASM files, but this is incorrect. "Asm" is the correct switch to use to make
+Assembler the default language.
+
+The deflang switch also enables you to be prompted as to whether or not the
+program list should be set automatically. If you load a file that has the
+extension specified by the "deflang" switch and you also have a .MAK file with
+the same base filename in the same directory, PWB will prompt you about loading
+the program list.
+
+For example, assume that deflang is set to C, and TEST.MAK and TEST.C are in the
+same directory. If you type PWB TEST.C at the command-prompt, PWB will pause
+when loading and prompt with "Set Program List? TEST.MAK". At this point you can
+specify yes or no.
+
+When already in PWB, if you choose Open from the File menu, and select TEST.C as
+the file to open, PWB will also prompt you at this point regarding whether or
+not you want TEST.MAK loaded as the program list, but only if NO program list is
+currently set.
+
+Note that beginning with PWB version 1.1, command-line switches are provided that
+allow the automatic loading of a program list.
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB100OS2
+Version           : MS-DOS:1.0; OS/2:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

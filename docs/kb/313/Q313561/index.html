@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/313/Q313561/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/313/Q313561/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/313/Q313561/","publisher":null,"image":null,"headline":"Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q313561-how-to-set-http-headers-for-content-expiration-in-iis">Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q313561
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbenv kbAudITPro kbHOWTOmaster
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - How to Set HTTP Headers for Content Expiration
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to set the expiration of Web site
+content in Internet Information Services (IIS) 5.0.
+
+If your Web site contains time-sensitive information, such as special offers or
+event announcements, you can configure settings to ensure that information that
+is no longer valid is not published. When you establish content expiration, you
+can configure site content to automatically expire any time.
+
+When you enable the content expiration feature, IIS includes the expiration
+information in the Hypertext Transport Protocol (HTTP) header of the Web page
+that is sent to the Web browser. The browser then compares the current date with
+the expiration date to determine whether to display a locally cached page, or
+request an updated page from the server.
+
+You can set content expiration for Web sites, for virtual folders, or for
+individual files. Site-level settings apply to all content in that site,
+folder-level settings apply to all folders and files in that folder, and
+file-level settings apply to an individual file.
+
+How to Set HTTP Headers for Content Expiration
+----------------------------------------------
+
+To set content expiration for a Web site, for a virtual folder, or for a file:
+
+1. Start Internet Services Manager, or open the MMC that contains the IIS
+  snap-in.
+
+2. In the Internet Information Services dialog box, click to expand "*
+  &lt;server_name&gt;", where &lt;server_name&gt; is the name of the server.
+
+3. Right-click the Web site, folder, or file for which you want to set content
+  expiration (for example, click Default Web Site), and then click Properties.
+
+4. Click the HTTP Headers tab.
+
+5. Click to select the Enable Content Expiration check box.
+
+6. In the "Content should" box, perform one of the following steps:
+
+   - Click Expire Immediately.
+
+     Use this option if you want Web content to expire immediately. The browser
+     does not display the page from the local cache. It requests and displays
+     the latest version of the page from the server.
+
+     -or-
+
+   - Click "Expire after", and then specify a period of time (in minutes,
+     hours, or days) after the content that expires in the appropriate boxes.
+
+     Use this option if you want Web content to expire after a specific length
+     of time.
+
+     -or-
+
+   - Click "Expire on", and then click an expiration date and time in the
+     appropriate boxes.
+
+     Use this option when you want Web content to expire after a specific date
+     and time.
+
+7. Click OK, and then quit Internet Services Manager, or close the IIS snap-in.
+
+Notes:
+
+- When you attempt to change the settings for a Web site or for a virtual
+  folder, IIS checks the existing settings on the child nodes (virtual folders
+  and files) that are contained in that Web site or in the virtual folder. If
+  the settings at the lower levels are different, IIS displays an Inheritance
+  Overrides dialog box. To specify which child nodes should inherit the
+  settings that you set at the higher level, click the node or click the nodes
+  in the Child Nodes list, and then click OK. The child node or child nodes
+  inherit the new content expiration settings.
+
+- Typically, content expiration is enabled for Web sites, for folders, or for
+  individual files. However, you can also set content expiration for all Web
+  sites on a server. To do this, right-click "* &lt;server_name&gt;", and then
+  click the Internet Information Services tab. Click WWW Service in the Master
+  Properties box, and then click Edit. Click the HTTP Headers tab, and then
+  configure the content expiration settings that you want.
+
+REFERENCES
+==========
+
+For more information about content expiration in IIS, see the "Enabling Content
+Expiration" topic in the "Web Site Management" section of the IIS 5.0 Online
+Documentation:
+
+  http://localhost/iishelp
+
+Note that this link works correctly only if you have IIS installed on your
+computer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173434/","publisher":null,"image":null,"headline":"Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173434-fp-indent-formatting-in-word-html-file-converted-to-bullets">Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173434
+Product(s): Word Front Page
+Version(s): MACINTOSH:1.0; WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a Word 97 document and apply increase indent formatting to the
+text, save the document in HyperText Markup Language (HTML) format, and then
+open the document in FrontPage 97, the HTML code is converted incorrectly. In
+FrontPage 97, the text is formatted with bullet formatting.
+
+NOTE: To increase the indentation of text in Word 97, click the Increase Indent
+button on the Formatting toolbar.
+
+CAUSE
+=====
+
+This problem occurs because Word 97 converts the indented formatting to a
+&lt;DIR&gt; element and FrontPage 97 saves indented formatting as a
+&lt;BLOCKQUOTE&gt; element. FrontPage will not convert the &lt;DIR&gt; element
+to a &lt;BLOCKQUOTUE&gt; element.
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps:
+
+1. Create the page in Word 97 and apply the formatting you want.
+
+2. On the File menu, click Save As.
+
+3. In the Save As dialog box, in the Save As Type list, click Word Document,
+  type a file name for the file, and then click Save.
+
+4. Start or switch to FrontPage Editor.
+
+5. On the File menu, click Open.
+
+6. Click the Other Location tab.
+
+7. Click From File.
+
+8. In the From File box, enter the file name of the Word document. Or, click
+  Browse and select the Word document.
+
+9. Click Open.
+
+NOTE: The file will open and the text that was originally formatted using the
+Increase Indent command will not be formatted as bullet items. You can save the
+file in the current web by clicking Save As on the File menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : MACINTOSH:1.0; WINDOWS:97
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262034: SMS: How to Manage the Deletion of Aged Status Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262034: SMS: How to Manage the Deletion of Aged Status Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262034/","publisher":null,"image":null,"headline":"Q262034: SMS: How to Manage the Deletion of Aged Status Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262034-sms-how-to-manage-the-deletion-of-aged-status-messages">Q262034: SMS: How to Manage the Deletion of Aged Status Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262034
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbConfig kbDatabase kbMMC kbServer kbsms kbsms200 kbAudit kbStatSum
+Last Modified: 13-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to provide an in-depth look at how aged status
+messages are handled and how to manage them.
+
+MORE INFORMATION
+================
+
+Scheduling the Delete Aged Status Messages maintenance task is exposed within
+the Systems Management Server (SMS) 2.0 Administrator console. Navigate to:
+
+  Site Settings/Database Maintenance/Tasks/Delete Aged Status Messages
+
+Each day the task is enabled, it can only start during the particular window of
+time defined in the property page. The defaults for Delete Aged Status Messages
+are:
+
+- The task is enabled.
+
+- It runs every day.
+
+- It starts between 12:00am and 5:00am.
+
+Also listed under Site Settings within the SMS Administrator console is Status
+Filter Rules. For each Status Filter Rule, the Actions tab has an option labeled
+"Write to the SMS database". When this option is checked, it configures the
+"Keep messages for:" box to a default of 7 days. This means that after 7 days,
+the messages that this particular rule caused to be written into the database
+will be deleted the next time that the SMS SQL Monitor runs.
+
+When you run a default site configuration, this creates two of the status filter
+rules that affect how long status messages are kept in the database. These two
+rules are:
+
+- Write audit messages to the site database and keep them for 180 days.
+
+- Write all other messages to the site database and keep them for 30 days.
+
+When a status message is written into the StatusMessages table in the site
+database, the date after which it can be deleted is written into the DeleteTime
+field in its record.
+
+This is a very critical point because it means that even if the period in which
+status messages are kept is modified in the status filter rule, this change does
+not affect any messages already in the database. It only affects new messages
+that the modified rule causes to be written into the database.
+
+When a status message record is written into the StatusMessages table in the
+database, records might also be written into the StatusMessageAttributes table
+or the StatusMessageInsStrs table.
+
+Depending on the actual status messages being written into the database, the
+StatusMessageInsStrs table might have more or less rows than the StatusMessages
+table. However, the StatusMessageAttributes table will be much smaller than the
+StatusMessages table.
+
+When a record is deleted from the StatusMessages table, a trigger will delete
+related records from the StatusMessageAttributes and StatusMessageInsStrs
+tables. If unsupported procedures were conducted on the database, there might be
+orphaned records in the StatusMessageAttributes and StatusMessageInsStrs tables
+that will not be cleaned out as aged messages are deleted from the
+StatusMessages table.
+
+When the SMS SQL Monitor service starts, in relationship to managing aged status
+messages, it checks the site control file for scheduling changes. The service
+then checks \SMS\bin\i386\Sqlmon.dat for the time it last ran that task. The
+particular task will run if:
+
+- The task is enabled.
+
+- The task is within the configured start window.
+
+- The task has not yet run in the current window.
+
+If it has already run that task within the current window, it will skip the task
+until the next window occurs.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbDatabase kbMMC kbServer kbsms kbsms200 kbAudit kbStatSum 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168080: PRB: Debugger Displays Incorrect Information for Variable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168080: PRB: Debugger Displays Incorrect Information for Variable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168080/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168080/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168080/","publisher":null,"image":null,"headline":"Q168080: PRB: Debugger Displays Incorrect Information for Variable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168080-prb-debugger-displays-incorrect-information-for-variable">Q168080: PRB: Debugger Displays Incorrect Information for Variable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168080
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbVC500 kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you debug an optimized build of an application that includes debug
+information, the debugger may display incorrect symbol data.
+
+RESOLUTION
+==========
+
+You can work around this problem by displaying the desired variable in a dialog
+box or printing it out using cout or printf();
+
+MORE INFORMATION
+================
+
+The debugger displays incorrect symbol data when debugging an application built
+with the following compiler options:
+
+- /Oy (Frame-Pointer Omission)
+
+- /Og (Global Optimizations)
+
+- /Zi or /Z7 (Debug Info)
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a console application that includes the code listed below.
+
+2. Set the active configuration to Release.
+
+3. In the project Settings dialog box, click the C/C++ tab and select Program
+  Database in the Debug Info list box.
+
+4. In the Project Settings dialog box, click the Linker tab and select the
+  "Generate debug info" check box.
+
+5. Set a breakpoint in Something().
+
+6. Press the F5 key to build and debug the application.
+
+     //Compiler options needed: /GX /Oy /Og /MLd
+     #include &lt;windows.h&gt;
+     #include &lt;iostream&gt;
+
+     void Something(DWORD dwFirst, DWORD dwSecond)
+     {
+        // cout will display the correct information.
+        std::cout &lt;&lt; "dwFirst = " &lt;&lt; dwFirst &lt;&lt; ", dwSecond = " &lt;&lt; dwSecond
+        &lt;&lt; std::endl;
+     }
+
+     int main()
+     {
+        DWORD dwFirst = 123456;
+        DWORD dwSecond = 234567;
+
+        Something(dwFirst, dwSecond);
+        return 0 ;
+     }
+   
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : 5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

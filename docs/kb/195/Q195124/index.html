@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195124: XCON: NDR When Replying All to Message Sent to Moved User | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195124: XCON: NDR When Replying All to Message Sent to Moved User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195124/","publisher":null,"image":null,"headline":"Q195124: XCON: NDR When Replying All to Message Sent to Moved User","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195124-xcon-ndr-when-replying-all-to-message-sent-to-moved-user">Q195124: XCON: NDR When Replying All to Message Sent to Moved User</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195124
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 18-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) may return a non- delivery
+report (NDR) similar to the following when a user attempts to Reply All to a
+message:
+
+  Your message did not reach some or all of the intended recipients.
+
+  Subject: Test Message
+  Sent: 10/30/98 11:00 AM
+
+  The following recipient(s) could not be reached:
+
+     "User in PAB" on 10/30/98 11:01 AM
+        The recipient name is not recognized
+        MSEXCH:MSExchangeMTA:SITE:SERVER
+
+This problem may occur when the recipient's address was chosen from an old
+personal address book (PAB) entry that had been originally selected as a custom
+recipient in Container A, but had since been relocated to Container B.
+
+CAUSE
+=====
+
+These NDRs occur because the PAB entry is storing an old distinguished name that
+is no longer accurate for that custom recipient since the custom recipient has
+been relocated to a new container. However, it should be possible to add an X500
+distinguished name with the old address to the relocated custom recipient. The
+MTA will be able to send the message, but if the recipient attempts to "Reply
+All", they will receive an NDR when it attempts to send a message to the
+incorrect distinguished name for the original recipient.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: Message Transfer Agent (MTA)
+
+      File Name      Version
+      -------------------------
+      Dbserver.sch   5.5.2427.0
+      Dcprods.cat    5.5.2427.0
+      Ems_rid.dll    5.5.2427.0
+      Emsmta.exe     5.5.2427.0
+      Info4log.cfg   5.5.2427.0
+      Infodlog.cfg   5.5.2427.0
+      Infollog.cfg   5.5.2427.0
+      Infotlog.cfg   5.5.2427.0
+      Mtacheck.exe   5.5.2427.0
+      Mtamsg.dll     5.5.2427.0
+      P2.xv2         5.5.2427.0
+      X400om.dll     5.5.2427.0
+      X400omv1.dll   5.5.2427.0
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

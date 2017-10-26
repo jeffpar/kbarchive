@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104862: FORTRAN PowerStation 1.0 README.TXT: Executing and Debugging | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104862: FORTRAN PowerStation 1.0 README.TXT: Executing and Debugging" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104862/","publisher":null,"image":null,"headline":"Q104862: FORTRAN PowerStation 1.0 README.TXT: Executing and Debugging","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104862-fortran-powerstation-10-readmetxt-executing-and-debugging">Q104862: FORTRAN PowerStation 1.0 README.TXT: Executing and Debugging</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104862
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is from parts 6 and 7 of the Microsoft FORTRAN
+PowerStation README.TXT file located in the \F32\README directory.
+
+  Part 6: Using the Debugger
+  Part 7: Miscellaneous
+
+MORE INFORMATION
+================
+
+Part 6: Using the Debugger
+--------------------------
+
+Optimizing Debugging Speed
+--------------------------
+
+Because a program being debugged runs as a separate task under Windows, the speed
+at which the debugger operates depends upon how many other programs are being
+executed at the same time. If screen-swapping is disabled, FORTRAN Visual
+Workbench must yield control back to Windows, and any other program waiting for
+cycles is serviced along with the program being debugged in the remote monitor
+window. To improve the speed of the debugger, don't run other applications at
+the same time.
+
+Watching Complex Variables in Commons
+-------------------------------------
+
+Debugging code that has complex variables in common blocks causes the watch
+window to display them as characters. This affects common record variables. They
+are shown in the locals window as a single space rather than as a structure.
+
+Using Mixed Source/Asm during Debugging
+---------------------------------------
+
+You can only view Mixed Source/Asm (selected from the View menu) during a
+debugging session if you have not built the target with the /Ox option (optimize
+for time). (The release version will disable Mixed Source/Asm if the /Ox option
+is enabled in the Compiler Options dialog box.) If you attempt to view Mixed
+Source/Asm for a target built with the /Ox option, the debugger will not be able
+to show all of the assembly instructions. Unexpected results may occur.
+
+Viewing Strings and Arrays in the Locals Window
+-----------------------------------------------
+
+When you first step into a program or routine, you will not be able to see the
+values or variable-length strings or allocatable arrays until you step at least
+once inside the subprogram. This is because the lengths are not computed until
+after the debugger has begun executing subprogram code. Once you have stepped
+into the subprogram, you can view the values of single dimensional allocatable
+arrays.
+
+Debugging Very Large Programs
+-----------------------------
+
+Although it is possible to debug a program that has an executable file and symbol
+table that are close to (or larger than) the amount of physical memory in your
+PC, the debugger will take longer to load the symbols. This is because the
+Windows memory manager must swap portions of memory during loading.
+
+Part 7: Miscellaneous
+---------------------
+
+Running Programs
+----------------
+
+FORTRAN programs can be executed from the FORTRAN Visual Workbench either in a
+window or in full-screen mode. You select which to use in the Execute/Debug
+Options dialog box. FORTRAN programs can be run from an MS-DOS session within
+Windows either in a window or in full-screen mode. You can switch between these
+modes from within the MS-DOS session by pressing ALT+ENTER. You can also select
+the mode for a minimized MS-DOS session from the Settings dialog box.
+
+Programs that use graphics may not run properly within a window. In most cases,
+Microsoft Windows will ask you to switch to full-screen mode if the graphics
+mode is not supported by the graphics driver. Some graphics modes are only
+partially supported in a window. In this case, the results will depend upon
+which graphics routines are used by the program.
+
+For best results, we recommend that graphics programs are always executed in
+full-screen mode.
+
+Redistribution Rights
+---------------------
+
+You have the right to distribute the MS-DOS extender files DOSXMSF.EXE and
+DOSXNT.386 with programs that you create with FORTRAN PowerStation. There is no
+royalty required.
+
+The font files COURB.FON, HELVB.FON, and TMSRB.FON are owned by BitStream, Inc.
+If you want to distribute these files with a program, you will need get
+permission from BitStream.
+
+If you have any questions about redistribution rights, please contact Microsoft
+Product Support Services.
+
+About Other Text Files
+----------------------
+
+There are four other text files with information about Microsoft FORTRAN
+PowerStation.
+
+  Filename      Contents
+  ----------------------------------------------------------------
+  ADDENDA.TXT   Changes to the printed manuals
+  QUESTION.TXT  Answers to common questions about FORTRAN PowerStation
+  ERRORS.TXT    Additions and corrections to the error messages
+  VENDORS.TXT   Information about products from other vendors
+
+Additional query words: nofpsnt Phar Lap 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

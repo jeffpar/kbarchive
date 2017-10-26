@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122714: ADT: Data Outline Control Events Not Triggered | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122714: ADT: Data Outline Control Events Not Triggered" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122714/","publisher":null,"image":null,"headline":"Q122714: ADT: Data Outline Control Events Not Triggered","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122714-adt-data-outline-control-events-not-triggered">Q122714: ADT: Data Outline Control Events Not Triggered</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122714
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:2.0,7.0
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 25-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+Code assigned to a Data Outline control's event (such as the DoRowClick,
+DoRowDblClick, or DoKeyPress event) does not run when the event occurs.
+
+CAUSE
+=====
+
+The Data Outline control's SendMouseEvents and SendKeyboardEvents properties are
+not set to True. The default for both properties is False.
+
+RESOLUTION
+==========
+
+Set the Data Outline control's SendMouseEvents and SendKeyboardEvents properties
+to True to enable the triggering of mouse and keyboard events by the Data
+Outline control. To set the SendMouseEvents and SendKeyboardEvents properties to
+True, follow these steps:
+
+1. Open the form containing the Data Outline control in Design view.
+
+2. Using the right mouse button, click the Data Outline control.
+
+3. On the shortcut menu, point to Data Outline Control Object, and then click
+  Properties.
+
+4. Click to select the SendMouseEvents and SendKeyboardEvents check boxes, and
+  then click OK.
+
+Note that you need only select the appropriate property for the type of events
+you want the Data Outline control to process. For example, if you want the Data
+Outline control to process only mouse events, click to select only the
+SendMouseEvents check box.
+
+REFERENCES
+==========
+
+For more information about the SendMouseEvents property, search for
+"SendMouseEvents," and then "SendMouseEvents Property" using the OUTL1016.HLP
+Help file included with the Microsoft Access Developer's Toolkit.
+
+For more information about the SendKeyboardEvents property, search for
+"SendKeyboardEvents," and then "SendKeyboardEvents Property" using the
+OUTL1016.HLP Help file included with the Microsoft Access Developer's Toolkit.
+
+NOTE: In the Microsoft Access Developer's Toolkit for Windows 95 version 7.0, the
+Help file is called MSDBOUTL.HLP.
+
+NOTE: The Microsoft Office 97, Developer's Edition (ODE), does not include the
+Data Outline control. However, for backward compatibility, Microsoft has
+released an Office 97-compatible version of the Data Outline control on the
+World Wide Web. This updated version has no documentation. To obtain a copy of
+the updated Data Outline control, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q162359 ACC97: Access 97 Data Outline ActiveX Control Available in Download
+  Center
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3 kbAccessDevTK700
+Version           : WINDOWS:2.0,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

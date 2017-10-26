@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188535/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188535/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188535/","publisher":null,"image":null,"headline":"Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188535-howto-sharing-data-between-processes-using-memory-mapped-files">Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188535
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While using shared tables is generally the simplest and most efficient way to
+share data between two processes, it is possible to use memory-mapped files to
+accomplish the same task. The following example uses the Win32 functions
+CreateFileMapping, MapViewOfFile and UnmapViewOfFile to use the Windows NT
+pagefile as a memory-mapped file and pass a string between two copies of Visual
+FoxPro.
+
+NOTE: This example is intended for use only under Windows NT, and was written and
+tested using Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+1. Start one instance of Visual FoxPro.
+
+2. Create and run a program containing the following code:
+
+  
+
+        DECLARE INTEGER CreateFileMapping IN kernel32.DLL INTEGER hFile, ;
+           INTEGER lpFileMappingAttributes, INTEGER flProtect, ;
+           INTEGER dwMaximumSizeHigh, INTEGER dwMaximumSizeLow, ;
+           STRING lpName
+
+        DECLARE INTEGER MapViewOfFile IN kernel32.DLL ;
+           INTEGER hFileMappingObject, INTEGER dwDesiredAccess, ;
+           INTEGER dwFileOffsetHigh, INTEGER dwFileOffsetLow, ;
+           INTEGER dwNumberofBytesToMap
+
+        DECLARE INTEGER GetLastError IN kernel32.DLL
+
+        DECLARE INTEGER lstrcpy IN kernel32.DLL ;
+           INTEGER lpString1, STRING @lpString2
+
+        DECLARE INTEGER UnmapViewOfFile IN kernel32.DLL ;
+           INTEGER lpBaseAddress
+
+        DECLARE INTEGER CloseHandle IN kernel32.DLL INTEGER hObject
+
+        #DEFINE page_writeread 4
+        #DEFINE page_readwrite 4
+        #DEFINE file_map_read 4
+        #DEFINE file_map_write 2
+
+        * FFFFFFFF (2^32) means: Use the Windows NT pagefile as the memory-
+        * mapped file.
+        * Otherwise, you could substitute a handle that you have created.
+        #DEFINE usepagefile 2^32
+
+        * Arbitrary name for the file mapping.
+        szename = "hello"
+
+        * This says: Create a file-mapping object from the pagefile,
+        * using a default security descriptor, giving Read/Write access
+        * to the committed region, with a maximum size of 4096 bytes,
+        * named szeName, and return the handle to this file-mapping
+        * object in variable 'handle'.
+        handle = createfilemapping(usepagefile, 0, page_readwrite, 0, ;
+           4096, szename)
+        IF handle = 0
+           WAIT WINDOW "CreateFileMapping failed - LastError: " ;
+              + LTRIM(STR(getlasterror()))
+           RETURN
+        ENDIF
+
+        * This says: Given the handle obtained above, give full access
+        * to the file-mapping object, starting at offset 0, and map the
+        * entire file into my process' address space.
+        addhandle = mapviewoffile(handle, file_map_write, 0, 0, 0)
+        IF handle = 0
+           WAIT WINDOW "MapViewOfFile failed - LastError: " ;
+              + LTRIM(STR(getlasterror()))
+           RETURN
+        ENDIF
+
+        * Now, the file can be treated just like a memory address.
+        * Use lstrcpy to copy the FoxPro string to addhandle, the
+        * starting address of the mapped view.
+
+        * The text you want to write to the shared memory-mapped
+        * file goes here.
+        stxt1 = "Hello world, I'm writing to a shared page file."
+        ret = lstrcpy(addhandle, @stxt1)
+
+        * When the message box appears, run the corresponding program
+        * to read the memory-mapped file in a second instance of FoxPro.
+        * Unmapping the file view and closing the handle removes the text
+        * from the file.
+        = MESSAGEBOX("Now switch to the other application")
+
+        * When we've finished with it, unmap the file-mapping object
+        * from our address space and release the handle.
+        =UnmapViewOfFile (addhandle)
+        =CloseHandle(handle)
+
+3. When the message box containing the text "Now switch to the other
+  application" appears, run a second instance of Visual FoxPro, create and run
+  a program containing the following code:
+
+  
+
+        DECLARE INTEGER CreateFileMapping IN kernel32.DLL INTEGER hFile, ;
+           INTEGER lpFileMappingAttributes, INTEGER flProtect, ;
+           INTEGER dwMaximumSizeHigh, INTEGER dwMaximumSizeLow, ;
+           STRING lpName
+
+        DECLARE INTEGER MapViewOfFile IN kernel32.DLL ;
+           INTEGER hFileMappingObject, INTEGER dwDesiredAccess, ;
+           INTEGER dwFileOffsetHigh, INTEGER dwFileOffsetLow, ;
+           INTEGER dwNumberofBytesToMap
+
+        DECLARE INTEGER GetLastError IN kernel32.DLL
+
+        DECLARE INTEGER lstrcpy IN kernel32.DLL ;
+           STRING @lpString1, INTEGER lpString2
+
+        DECLARE INTEGER UnmapViewOfFile IN kernel32.DLL ;
+           INTEGER lpBaseAddress
+
+        DECLARE INTEGER CloseHandle IN kernel32.DLL INTEGER hObject
+
+        #DEFINE page_writeread 4
+        #DEFINE page_readwrite 4
+        #DEFINE file_map_read 4
+        #DEFINE file_map_write 2
+
+        * FFFFFFFF (2^ 32) means: Use the Windows NT pagefile as the memory-
+        * mapped file. Otherwise, you could substitute a handle that you
+        * have created.
+        #DEFINE usepagefile 2^32
+        #DEFINE maxbuffersize 254
+
+        * Arbitrary name for the file mapping.
+        szename = "hello"
+
+        * This says: Create a file-mapping object from the pagefile,
+        * using a default security descriptor, giving Read/Write access
+        * to the committed region, with a maximum size of 4096 bytes,
+        * named szeName, and return the handle to this file-mapping
+        * object in variable handle.
+        handle = createfilemapping(usepagefile, 0, page_readwrite, ;
+           0, 4096, szename)
+        IF handle = 0
+           WAIT WINDOW "CreateFileMapping failed - LastError: " ;
+              + LTRIM(STR(getlasterror()))
+           RETURN
+        ENDIF
+
+        * This says: Given the handle obtained above, give full
+        * access to the file-mapping object, starting at offset 0,
+        * and map the entire file into my process' address space.
+        addhandle = mapviewoffile(handle, file_map_write, 0, 0, 0)
+        IF handle = 0
+           WAIT WINDOW "MapViewOfFile failed - LastError: " ;
+              + LTRIM(STR(getlasterror()))
+           RETURN
+        ENDIF
+
+        * Now, the file can be treated just like a memory address.
+        * Use lstrcpy to copy the Foxpro string to the Foxpro
+        * string stxt2 from the starting address of the mapped view.
+
+        * Buffer to receive passed string.
+        stxt2 = SPACE(254)
+        ret = lstrcpy(@stxt2, addhandle)
+
+        =MESSAGEBOX ("String I read was: " + stxt2)
+
+        * When we've finished with it, unmap the file-mapping object
+        * from our address space and release the handle.
+
+        =UnmapViewOfFile(addhandle)
+        =CloseHandle (handle)
+
+4. The second instance of Visual FoxPro should display the string written to the
+  pagefile by the first instance. To unmap the pagefile and release all the
+  handles, press OK on the message boxes in both instances of Visual FoxPro.
+
+The sample code presented here is complex. Answers to questions regarding this
+example may require that Microsoft Product Support Engineers spend some time
+familiarizing themselves with the code.
+
+REFERENCES
+==========
+
+Win32 SDK Help; topic: "CreateFileMapping"; "MapViewOfFile"; "UnmapViewOfFile"
+
+For further background on the uses of memory-mapped files:
+
+"Advanced Windows: The Developer's Guide to the Win32 API for Windows NT 3.5 and
+Windows 95," Jeffry Richter, Chapter 7, Microsoft Press
+
+Additional query words: kbDSupport memory-mapped file CreateFileMapping MapViewOfFile UnmapViewOfFile page file kbnokeyword
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

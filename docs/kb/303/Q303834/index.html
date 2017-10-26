@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303834: Setup Returns Error When the Source Path Contains Spaces | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303834: Setup Returns Error When the Source Path Contains Spaces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303834/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303834/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303834/","publisher":null,"image":null,"headline":"Q303834: Setup Returns Error When the Source Path Contains Spaces","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303834-setup-returns-error-when-the-source-path-contains-spaces">Q303834: Setup Returns Error When the Source Path Contains Spaces</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303834
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbsetup kbvfp kbGrpDSFox kbDSupport kbvfp700
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Visual FoxPro 7.0, the Windows Component Update
+portion of the setup may not complete successfully and you may receive an error
+message that resembles the following:
+
+  winmain() error. Cannot locate expected executable last word of path or share
+  name\wcu\runprog.exe C:\WINNT\System32\msiexec.exe
+
+Each component that fails to install successfully has an X next to it in the list
+that is displayed when the Windows Component Update completes.
+
+CAUSE
+=====
+
+The path to the installation folder or the share contains a space.
+
+RESOLUTION
+==========
+
+To work around this problem, do one of the following:
+
+- Remove the spaces in your share name or path.
+
+-or-
+
+- Install the components that fail by using their individual install routines,
+  which are documented in the \WCU\Help\Moreinfo.htm file on the Visual FoxPro
+  7.0 Professional CD.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem does not occur when you install Visual FoxPro from the CD on a
+local computer or from a share that does not contain spaces in the path. The
+problem can occur if you install Visual FoxPro from a shared CD with a space in
+the share name, or if the CD contents are copied to a network share and the
+share path contains a space.
+
+Steps to Reproduce This Behavior
+--------------------------------
+
+1. Copy all of the directories and files from the Visual FoxPro CD. If you
+  downloaded Visual FoxPro as an MSDN Universal Subscriber, copy the
+  directories to a folder named Visual FoxPro .
+
+2. Run the Setup program and select Windows Component Update.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbvfp kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181744/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181744/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181744/","publisher":null,"image":null,"headline":"Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181744-fp-how-to-change-where-frontpage-content-is-stored-in-ms-pws">Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181744
+Product(s): Word Front Page
+Version(s): 1.0,1.0a,4.0
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 03-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows 
+- Microsoft Personal Web Server versions 1.0, 1.0a, 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194159.
+
+SUMMARY
+=======
+
+This article describes how to move the Microsoft Personal Web Server content
+from the default location (C:\Webshare\Wwwroot) to a different location.
+
+MORE INFORMATION
+================
+
+To move content from the default location on the Microsoft Personal Web Server
+to a new location, use the appropriate method for your situation.
+
+Method 1: If You Are Using Microsoft Personal Web Server 4.0
+------------------------------------------------------------
+
+1. Run the FrontPage Server Administrator and uninstall the FrontPage Server
+  Extensions.
+  a. On the Windows Start menu, click Run.
+
+  b. In the Open box, type "c:\Program Files\Microsoft FrontPage\version
+     3.0\bin\fpsrvwin" (with the quotation marks) and click OK.
+
+     NOTE: If you installed FrontPage to a folder other than the default folder,
+     change the path to reflect the correct folder.
+
+  c. Click Uninstall.
+
+2. Move the Personal Web Server content folder to a new location. For example,
+  move the C:\Inetpub\wwwroot folder to drive D (D:\Inetpub\wwwroot). To do
+  this, follow these steps:
+  a. On the Windows Start menu, point to Programs, and then click Windows
+     Explorer.
+
+  b. Drag the Personal Web Server content folder to drive D.
+
+3. On the Windows Start menu, point to Programs, point to Microsoft Personal Web
+  Server, and then click Personal Web Manager.
+
+4. Switch to Advanced view.
+
+5. Click the &lt;Home&gt; directory and then click Edit Properties.
+
+6. Type the new location of the Personal Web Server content and click OK.
+
+7. Run the FrontPage Server Administrator and install the FrontPage Server
+  Extensions.
+  a. On the Windows Start menu, click Run.
+
+  b. In the Open box, type "c:\Program Files\Microsoft FrontPage\version
+     3.0\bin\fpsrvwin" (with the quotation marks) and click OK.
+
+     NOTE: If you installed FrontPage to a folder other than the default folder,
+     change the path to reflect the correct folder.
+
+  c. Click Install.
+
+  d. In the Server Type list, click Microsoft Personal Web Server and click OK.
+
+  e. When the installation is complete, click Close.
+
+Method 2: If You Are Using Microsoft Personal Web Server 1.0 or 1.0a
+--------------------------------------------------------------------
+
+1. Run the FrontPage Server Administrator and uninstall the FrontPage Server
+  Extensions.
+  a. On the Windows Start menu, click Run.
+
+  b. In the Open box, type "c:\Program Files\Microsoft FrontPage\version
+     3.0\bin\fpsrvwin" (with the quotation marks) and click OK.
+
+     NOTE: If you installed FrontPage to a folder other than the default folder,
+     change the path to reflect the correct folder.
+
+  c. Click Uninstall.
+
+2. Move the Personal Web Server content folder to a new location. For example,
+  move the C:\Webshare\wwwroot folder to drive D (D:\Webshare\wwwroot). To do
+  this, follow these steps:
+  a. On the Windows Start menu, point to Programs, and then click Windows
+     Explorer.
+
+  b. Drag the Personal Web Server content folder to drive D.
+
+  a. b.
+
+3. Run the Personal Web Server Administrator by following these steps:
+  a. On the Windows Start menu, point to Settings, and then click Control
+     Panel.
+
+  b. Double-click the Personal Web Server icon.
+
+  c. Click the Administration tab.
+
+  d. Click Administration.
+
+  e. Click WWW Administration.
+
+  f. Click the Directories tab.
+
+  g. Select the C:\Webshare\Wwwroot directory and then click Edit in the Action
+     column.
+
+  h. Type the new location for the Personal Web Server content, and click OK.
+
+     Repeat this step for each directory beginning with c:\Webshare.
+
+  i. Click OK.
+
+4. Run the FrontPage Server Administrator and install the FrontPage Server
+  Extensions.
+  a. On the Windows Start menu, click Run.
+
+  b. In the Open box, type "c:\Program Files\Microsoft FrontPage\version
+     3.0\bin\fpsrvwin" (with the quotation marks) and click OK.
+
+     NOTE: If you installed FrontPage to a folder other than the default folder,
+     change the path to reflect the correct folder.
+
+  c. Click Install.
+
+  d. In the Server Type list, click Microsoft Personal Web Server and click OK.
+
+  e. When the installation is complete, click Close.
+
+Additional query words: mspws change drive webshare
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95 kbPersWebServ400Win95
+Version           : :1.0,1.0a,4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

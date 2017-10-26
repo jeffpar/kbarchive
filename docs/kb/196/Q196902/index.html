@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196902: BUG: UserControl Does Not Refresh the Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196902: BUG: UserControl Does Not Refresh the Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196902/","publisher":null,"image":null,"headline":"Q196902: BUG: UserControl Does Not Refresh the Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196902-bug-usercontrol-does-not-refresh-the-menu">Q196902: BUG: UserControl Does Not Refresh the Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196902
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbCtrlCreate kbVBp500bug kbVBp600bug kbGrpDSVB kbCodeSam
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a UserControl changes the menu at run time, the menu does not refresh.
+
+RESOLUTION
+==========
+
+You need to set the Enabled property of the UserControl to False, reset it to
+True, and then given it the focus to force a refresh of the menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a New ActiveX Control Project. UserControl1 is created by default.
+
+2. From the Tools menu, click the Menu Editor. Add the following three menu
+  items:
+
+   - 
+
+   - Caption : Menu1
+   - Name : Menu1
+   - NegotiatePosition = Left
+
+   - 
+
+   - Caption : SubMenu1
+   - Name : SubMenu1
+   - Click the Right Arrow button to make it a SubMenu.
+
+   - 
+
+   - Caption : Menu2
+   - Name : Menu2
+   - NegotiatePostion = Left
+
+3. Add a CommandButton (Command1) to the UserControl. Add the following code to
+  the General Declarations section of UserControl1:
+
+        Private Sub Command1_Click()
+           Menu1.Caption = "Modified"
+        End Sub
+
+4. Close all open windows on Project1.
+
+5. From the File menu, click Add Project to add a New Standard .exe Project.
+  Form1 is created by default.
+
+6. Place an instance of UserControl1 to Form1, and run the project.
+
+7. Click the CommandButton on the UserControl. The caption of Menu1 does not
+  change.
+
+8. To work around the problem replace the code in UserControl1 with the
+  following:
+
+        Private Sub Command1_Click()
+           Menu1.Caption = "Modified"
+           UserControl.Enabled = False
+           UserControl.Enabled = True
+           UserControl.SetFocus
+           DoEvents
+        End Sub
+
+9. Close Project1 and repeat Step 7. The menu caption is updated.
+
+Additional query words: UserControl Menu Refresh
+
+======================================================================
+Keywords          : kbcode kbCtrlCreate kbVBp500bug kbVBp600bug kbGrpDSVB kbCodeSam 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47124: Array in SUB Statement Doesn’t Need Dimensions in Parentheses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47124: Array in SUB Statement Doesn’t Need Dimensions in Parentheses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47124/","publisher":null,"image":null,"headline":"Q47124: Array in SUB Statement Doesn’t Need Dimensions in Parentheses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47124-array-in-sub-statement-doesnt-need-dimensions-in-parentheses">Q47124: Array in SUB Statement Doesn’t Need Dimensions in Parentheses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47124
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr B_BasicCom | mspl13_basic
+Last Modified: 30-MAY-1990
+
+In QuickBASIC versions 3.00 and earlier, passing an array in a SUB
+statement requires the number of array dimensions to be specified in
+parentheses, such as x(2) for an array dimensioned as DIM x(10,10).
+Empty parentheses () after the array name in a SUB statement cause a
+compile-time error in QuickBASIC 3.00 and earlier.
+
+However, in QuickBASIC versions 4.00 and later, empty parentheses
+after the array name in a SUB statement are actually the preferred
+syntax. They are also the preferred syntax in Microsoft BASIC Compiler
+versions 6.00 and 6.00b for MS-DOS and MS OS/2 and in Microsoft BASIC
+Professional Development System (PDS) version 7.00 for MS-DOS and MS
+OS /2.
+
+In fact, the QB.EXE editor in QuickBASIC versions 4.00, 4.00b, and
+4.50 and the QBX.EXE editor in BASIC PDS version 7.00 automatically
+strip out the constant (if any) in the parentheses net to the array
+name in a SUB statement.
+
+When using a text editor (word processor, EDLIN, etc.) and writing the
+program using the syntax for QuickBASIC versions 3.00 or earlier, you
+will get an "L1101 Invalid Object Module" error when trying to link
+the .OBJ that was created using QuickBASIC versions 4.00 or later.
+
+The subroutine example for the LBOUND and UBOUND functions in the
+manuals doesn't require the subscript (2) in the array in the SUB
+statement. This applies to Page 60 of the "Microsoft QuickBASIC 4.0:
+Programming in BASIC: Selected Topics" manual for QuickBASIC versions
+4.00 and 4.00b and for Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Page 53 of the "Microsoft
+QuickBASIC 4.5: Programming in BASIC" manual for QuickBASIC version
+4.50. This misleading documentation was changed in Microsoft BASIC PDS
+version 7.00.
+
+The first line of the subroutine example shows the following, which is
+allowed but may be a little misleading, since QB.EXE and QBX.EXE strip
+out the "2":
+
+   SUB PrintOut(A(2)) STATIC
+
+No number of dimensions (2) is required for the A array. This line
+converts to the following preferred syntax when entered in the QB.EXE
+and QBX.EXE editor:
+
+   SUB PrintOut(A()) STATIC
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

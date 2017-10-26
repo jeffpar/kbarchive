@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188586: HOWTO: Expedite the Visual Basic Support Process | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188586: HOWTO: Expedite the Visual Basic Support Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188586/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188586/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188586/","publisher":null,"image":null,"headline":"Q188586: HOWTO: Expedite the Visual Basic Support Process","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188586-howto-expedite-the-visual-basic-support-process">Q188586: HOWTO: Expedite the Visual Basic Support Process</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188586
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides tips on how to reduce your Visual Basic program to a
+minimum so you can accurately describe the problem to a support professional,
+who will look for a way to duplicate the problem using the least objects and
+code.
+
+When you encounter a problem with a Visual Basic program and have to call
+Microsoft Technical Support for assistance, you can reduce your call time prior
+to calling by creating a version of your program that contains only those pieces
+needed to reproduce the problem.
+
+MORE INFORMATION
+================
+
+The following is the basic strategy of creating a minimal Visual Basic program
+to isolate the problem so a support professional can find a solution quickly.
+
+1. Make a back-up copy of your program.
+
+2. Follow the steps shown in the next section. After completing each step, check
+  to see if the problem still exists.
+
+3. When you have finished, copy the minimal program to a new project and check
+  to see if the problem still exists.
+
+NOTE: You may not have to perform all the steps presented here to isolate your
+problem. However, you may need to modify your code to get the program to compile
+properly to reproduce the problem.
+
+Steps to Reduce Your Program to a Minimum
+-----------------------------------------
+
+1. Identify and remove all forms, code modules, class modules, user controls,
+  and property pages not needed to re-create the problem.
+
+2. From the remaining forms, remove all controls and referenced objects not
+  needed to re-create the problem.
+
+3. From the Project menu, clear all References and Components not needed to
+  re-create the problem.
+
+  NOTE: Visual Basic prevents any control or reference used by the program from
+  being removed.
+
+4. Remove all unexecuted code from the remaining forms.
+
+5. At this point, you may be able to remove additional controls that are not
+  used by the remaining forms.
+
+  NOTE: Try clearing additional References and Components, as described in step
+  3.
+
+6. Remove pieces of code from the remaining procedures that do not appear to be
+  related to the problem.
+
+7. Try to remove pieces from the original project. For example, if the problem
+  is related to database access, use another database to reproduce the problem,
+  such as BIBLIO.MDB that ships with Visual Basic.
+
+8. Repeat this process until you have the smallest possible program, then copy
+  this program to a new project.
+
+Additional query words: kbDSupport kbdss kbVBp500 kbVBp400 kbVBp kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

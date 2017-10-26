@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q297779: FIX:Closing Connection While View Designer Open Crashes VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q297779: FIX:Closing Connection While View Designer Open Crashes VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/297/Q297779/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/297/Q297779/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/297/Q297779/","publisher":null,"image":null,"headline":"Q297779: FIX:Closing Connection While View Designer Open Crashes VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q297779-fixclosing-connection-while-view-designer-open-crashes-vfp">Q297779: FIX:Closing Connection While View Designer Open Crashes VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q297779
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbDesigner kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug KbDBFDBC
+Last Modified: 20-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you issue a SQLDISCONNECT function on the connection that the View Designer
+is using, Visual FoxPro (VFP) may quit and you may receive one of the following
+error messages:
+
+In VFP version 6.0 running on Microsoft Windows 2000:
+
+  VFP6.exe has generated an error and will be closed by Windows. You need to
+  restart the program. An error log is being generated.
+
+In VFP version 6.0 running on Microsoft Windows Millennium Edition (Me):
+
+  Vfp6 has caused an error in VFP6.exe.
+  Vfp6 will now close.
+
+In VFP verion 5.0 running on Microsoft Windows NT 4.0:
+
+  An application error has occurred and an application error log is being
+  generated.
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+NOTE: In VFP version 7.0, when you perform the steps in the "More Information"
+section, you receive the following error message after step 3:
+
+  No connection associated with this cursor
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. To set up a test database and open the View Designer, run the following code
+  in a program file or the command window:
+
+  SET SAFETY OFF
+  CLOSE DATA ALL
+
+  lcDir = SET("DEFAULT") + CURDIR()
+
+  CREATE DATABASE company
+  CREATE TABLE employees (iEmpID I, cName c(80))
+  CLOSE DATABASES ALL
+
+  OPEN DATABASE company SHARED
+  CREATE CONNECTION cnCompany CONNSTRING "DSN=Visual FoxPro Database;" + ;
+      "UID=;PWD=;SourceDB=" + lcDir + "Company.DBC;SourceType=DBC;" + ;
+      "Exclusive=No;BackgroundFetch=No;Collate=Machine;DBQ="
+  CREATE VIEW r_Employees REMOTE CONNECTION cnCompany SHARED AS ;
+  	SELECT * FROM employees
+
+  _CLIPTEXT = "MODIFY VIEW r_Employees"
+  KEYBOARD "{ctrl+f2}{ctrl+end}{ctrl+v}{enter}"
+
+2. After the View Designer appears, type the following in the command window:
+
+  SQLDISCONNECT(0)
+
+This closes all open connections.
+
+3. Right-click the View Designer and click Run Query. In the ODBC dialog box,
+  click Cancel.
+
+4. VFP displays the following error message:
+
+  Connectivity error: Unable to retrieve specific error information. Driver is
+  probably out of resources
+
+Click OK.
+
+5. Minimize and then maximize VFP.
+
+6. Right-click the View Designer again and click Run Query. In the Fetch is in
+  progress dialog box, click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDesigner kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

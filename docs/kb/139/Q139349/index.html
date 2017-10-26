@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139349/","publisher":null,"image":null,"headline":"Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139349-fix-c2607-error-passing-ref-to-pointer-w-templated-functions">Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139349
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,2.20
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.20 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pass a reference to a pointer of the templated type, the compiler
+incorrectly generates an error at the point where the function is called. The
+error is:
+
+  C2607: 'initializing' : cannot implicitly convert a '&lt;type&gt;*' to a
+  'type**&amp; ' that is not const
+
+where &lt;type&gt; represents the data type to which the templated data type is
+being instantiated for the function call.
+
+WORKAROUND
+==========
+
+You may be able to accomplish the same thing by remembering that pointers are
+similar to references, so you may be able to pass a pointer to a pointer instead
+of a reference to a pointer. The problem with this is that it requires code
+modification at the point where the function is called because you must pass the
+address of the pointer. Also, you need to modify the code at any point within
+the function where the pointer is referenced, which means that one more level of
+de-referencing is required.
+
+If it is not necessary to change the address the pointer points to, an easier
+solution is to simply pass the pointer instead of a reference (or pointer) to
+the pointer. This workaround requires no code modification at all, but the
+address the pointer points to cannot be permanently changed from within the
+function.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32 bit edition, version 4.0.
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+  /* Compile options needed: None - build the following as a console app
+     using default options.
+  */ 
+
+  #include &lt;iostream.h&gt;
+
+  template &lt;class T&gt;
+  void fn(T*&amp; ptr)
+  {
+     *ptr = 71957;
+  }
+
+  void main()
+  {
+      int i = 123;
+      int* ip = &amp;i;
+      fn(ip);   // &lt;=== error C2607: 'initializing' : cannot implicitly
+                //      convert a 'int*' to a 'int**&amp; ' that is not const
+     cout &lt;&lt; *ip &lt;&lt; endl;
+     cin &gt;&gt; i;
+  }
+
+Example Workaround
+------------------
+
+In this case, the address the pointer points to does not need to be permanently
+changed, so you could simply remove the ampersane (&amp;) from this line:
+
+     void fn(T*&amp; ptr)
+
+This is sufficient to make the program compile and run correctly. If it was
+necessary to change the address that ptr points to permanently within the fn
+function, you could change it to void fn(T** ptr), and add an additional level
+of indirection to every reference of ptr within fn. It would also be necessary
+to add the ampersand (&amp;) operator to every call of fn in order to pass the
+address of its argument. In the previous code sample, fn(ip) would have to be
+changed to fn(&amp;ip).
+
+Additional query words: 2.00 2.10 2.20 9.0 9.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC210
+Version           : :2.0,2.1,2.20
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

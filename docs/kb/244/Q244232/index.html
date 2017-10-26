@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244232/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244232/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244232/","publisher":null,"image":null,"headline":"Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244232-howtoadd-context-help--button-to-title-bar-of-cpropertysheet">Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244232
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbCSHelp kbDlg kbWinHelp kbMFC KbUIDesign kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to add the Context Help Button(?) to the top right corner of a
+CPropertySheet so that it shows up on all the tabs of the sheet, you need to
+override the OnInitDialog method of the CPropertySheet and call the
+ModifyStyleEx() function with the first parameter of 0 and the second set to
+WS_EX_CONTEXTHELP.
+
+MORE INFORMATION
+================
+
+The following steps can be used to add the context help button to a MFC property
+sheet.
+
+1. Using AppWizard create a default dialog based application called "Sample" and
+  add a button resource to it. Using ClassWizard, add a BN_CLICKED handler for
+  this button.
+
+2. Insert a Property Sheet Resource, by choosing Project, Add to Project,
+  Components and Controls..., Visual C++ Components, now select Property Sheet
+  and click Insert
+
+3. Click OK on the dialog box that is displayed. This will bring up another
+  wizard to choose the type of the property sheet.
+
+4. Select the Property Sheet radio button and click Next. Take default setting
+  on the next screen and click Next.
+
+5. On the next screen where it says "What class would you like to give access to
+  this property sheet?", choose CSampleDlg. Take the default settings on the
+  next two screens and click Finish. Click Close in the Components and Controls
+  Gallery dialog box.
+
+6. Go to the Button Handler and add the following code:
+
+  void CSampleDlg::OnButton1() 
+  {
+      CMyPropertySheet pSheet;
+      pSheet.DoModal();
+  }
+
+7. Using ClassView, override the OnInitDialog virtual function by right-clicking
+  CMyPropertySheet and selecting Add Virtual Function.... Select OnInitDialog
+  on the left and click the Add and Edit button.
+
+8. Add the following code to the OnInitDialog virtual function:
+
+  BOOL CMyPropertySheet::OnInitDialog() 
+  {
+      BOOL bResult = CPropertySheet::OnInitDialog();
+      ModifyStyleEx(0, WS_EX_CONTEXTHELP); 
+      return bResult;
+  }
+
+Build the project and run it. If you click the the button on the dialog box, you
+should notice the property sheet gets displayed with the Context Help
+Button(?).
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Vidyanand Rajpathak, Microsoft Corporation
+
+
+Additional query words: Context Help, Question mark button
+
+======================================================================
+Keywords          : kbCSHelp kbDlg kbWinHelp kbMFC KbUIDesign kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

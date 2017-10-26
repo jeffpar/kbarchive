@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272024/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272024/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272024/","publisher":null,"image":null,"headline":"Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272024-bug-release-calls-when-using-_atl_debug_intefaces-may-crash">Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272024
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbATL kbVC600 kbVC600bug kbATL300 kbATL300bug
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Release calls that are made with _ATL_DEBUG_INTERFACES or _ATL_DEBUG_REFCOUNT
+defined are not thread-safe. The most common symptom is an access violation (AV)
+under the stress of multiple threads (even if they are all STA). The crash may
+not occur near any ATL code.
+
+In addition, _QIThunk::Release may access member variables after the object has
+been deleted regardless of your threading model. This can lead to unpredictable
+behavior, including an access violation. Typically, a crash related to this
+occurs inside _QIThunk::Release.
+
+If you experience crashing with _ATL_DEBUG_INTERFACES defined but do not
+experience the crashing without it defined, then the crashing behavior may be
+caused by one of several ATL 3.0 bugs in the _QIThunk releasing mechanism.
+
+CAUSE
+=====
+
+There are two functions that contribute to the thread safety problems:
+ATL::CComModule::DeleteNonAddRefThunk and ATL::_QIThunk::Release.
+
+The purpose of the DeleteNonAddRefThunk function is to iterate through the array
+of interface thunks and delete all thunks that cannot be AddRef'ed. However,
+DeleteNonAddRefThunk does not check whether a thunk is marked as not AddRef'able
+before deleting it.
+
+The Release method's problems stem from two sources:
+
+- Release accesses _QIThunk object members after a call to
+  InterlockedDecrement. In a multithreaded scenario, another thread could
+  decrement the count after the call to InterlockedDecrement and delete the
+  _QIThunk object. This might cause an access violation if the first thread
+  accesses any class members.
+
+- Release should delete the thunk before allowing the underlying object the
+  chance to be deleted, because once the underlying object is deleted, another
+  thread can allocate another object and get the same address. The AddThunk
+  function can then find the existing thunk (that is about to be deleted) and
+  return it, instead of creating a new thunk.
+
+RESOLUTION
+==========
+
+Replace ATL::CComModule::DeleteNonAddRefThunk and ATL::_QIThunk::Release in
+Atlbase.h with the following:
+
+  void DeleteNonAddRefThunk(IUnknown* pUnk)
+  {
+      EnterCriticalSection(&amp;m_csObjMap);
+      for (int i = 0; i &lt; m_paThunks-&gt;GetSize(); i++)
+      {
+          if (m_paThunks-&gt;operator[](i)-&gt;pUnk == pUnk 
+              &amp;&amp; m_paThunks-&gt;operator[](i)-&gt;bNonAddRefThunk
+              )
+          {
+              delete m_paThunks-&gt;operator[](i);
+              m_paThunks-&gt;RemoveAt(i);
+              break;
+          }
+      }
+      LeaveCriticalSection(&amp;m_csObjMap);
+  }
+
+  inline ULONG _QIThunk::Release()
+  {
+      if (bBreak)
+          DebugBreak();
+      ATLASSERT(m_dwRef &gt; 0);
+      IUnknown *r_pUnk           = pUnk;
+      bool     r_bNonAddRefThunk = bNonAddRefThunk;
+      LPCTSTR  r_lpszClassName   = lpszClassName;
+      IID      r_iid             = iid;
+      ULONG    r_dwRef           = InterlockedDecrement(&amp;m_dwRef);
+      ATLTRACE(_T("%d&lt; "), r_dwRef);
+      AtlDumpIID(r_iid, r_lpszClassName, S_OK);
+      if (r_dwRef==0 &amp;&amp; !r_bNonAddRefThunk)
+          _pModule-&gt;DeleteThunk(this);
+      r_pUnk-&gt;Release();
+      return r_dwRef;
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The _ATL_DEBUG_INTERFACES mechanism can assist you in troubleshooting reference
+counting and QueryInterface-related problems in your code.
+
+The _ATL_DEBUG_INTERFACES mechanism does this by returning an object of type
+ATL::_QIThunk in place of any interface you request. This object tracks
+reference counting for each interface. It does this by intercepting all method
+calls.
+
+For any method calls but IUnknown method calls, the _QIThunk object adds no
+functionality. For the IUnknown method calls, the _QIThunk object does the
+appropriate tracking before passing the call on to the real object.
+
+ATL::_QIThunk::Release must manage the lifetime of the _QIThunk object as well as
+allow the underlying object to manage its lifetime.
+
+Most of the _QIThunk lifetime-management-related code is enclosed in a critical
+section. This is not possible in _QIThunk::Release because of the call to the
+Release method in the underlying object.
+
+The Release method in the underlying object could wait for a second thread to
+terminate. If the second thread also requires a Release call or a QueryInterface
+call through _QIThunk, a deadlock would result.
+
+This justifies the need to use InterlockedDecrement instead of a critical
+section, and also adds a level of complexity to designing a thread-safe
+function.
+
+Additional query words: AV 0xC0000005
+
+======================================================================
+Keywords          : kbATL kbVC600 kbVC600bug kbATL300 kbATL300bug 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

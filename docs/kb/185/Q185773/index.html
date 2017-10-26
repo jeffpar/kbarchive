@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185773/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185773/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185773/","publisher":null,"image":null,"headline":"Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185773-ntfs-corruption-on-drives--4-gb-using-extendoempartition">Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185773
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Winnt.exe unattended installation from an MS-DOS FAT partition on a drive
+exceeding 4 GB may cause NTFS corruption. Unattended installation parameters
+would be specified as follows in the Unattend.txt file:
+
+     [Unattended]
+     OemPreinstall = yes
+     FileSystem = ConvertNTFS
+     ExtendOemPartition = 1
+
+When starting for the first time after the Windows NT installation is complete,
+NTFS corruption will be identified either by the inability to successfully start
+because of missing or corrupted files or by the following CHKDSK messages:
+
+  CHKDSK is verifying indexes...
+  Correcting error in index %I30 for file 100
+  Correcting error in index %I30 for file 100
+  Index verification completed.
+  CHKDSK detected minor inconsistencies on the drive.
+  Errors found. CHKDSK cannot continue in read-only mode.
+
+If the corruption is severe enough, the computer may stop responding (hang)
+during the GUI-mode portion of setup or various other error messages may also
+occur. These error messages vary from computer to computer, but usually concern
+file corruption or missing files on systems where the files actually do exist.
+The files are reported as damaged or missing because the indexes for NTFS are
+not setup properly.
+
+CAUSE
+=====
+
+The problem is that the drive is larger than 4 GB. When conversion to the NTFS
+file system takes place, the mirror boot sector should be written to the end of
+the disk, but the byte offset location was masked to within 4 GB of hard drive
+space because of a 32-bit calculation. The incorrect calculation causes the NTFS
+index buffer to be overwritten.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+NOTE: The Fastfat.sys file included with Service Pack 4 is required. In addition
+to the Fastfat.sys file, the following additional files must be obtained from
+the latest Windows NT 4.0 Service Pack (SP4 or later). The service pack should
+be of the same language as that being installed.
+
+For I386 Platform:
+
+  Atapi.sys
+  Basesrv.dll
+  Hal.dll
+  Hal486c.dll
+  Halapic.dll
+  Halast.dll
+  Halcbus.dll
+  Halcbusm.dll
+  Halmca.dll
+  Halmps.dll
+  Halmpsm.dll
+  Haloli.dll
+  Halsp.dll
+  Halwyse7.dll
+  Ntdll.dll
+  Ntoskrnl.exe
+  Ntkrnlmp.exe
+  Win32k.sys
+  User32.dll
+  Kernel32.dll
+  Gdi32.dll
+  Winsrv.dll
+
+For Alpha Platform:
+
+  halgammp.dll
+  halpinna.dll
+  halrawmp.dll
+  halsabmp.dll
+  Ntdll.dll
+  Ntoskrnl.exe
+  Ntkrnlmp.exe
+  Win32k.sys
+  User32.dll
+  Kernel32.dll
+  Gdi32.dll
+  Winsrv.dll
+
+How to Install
+--------------
+
+1. Start the computer in MS-DOS mode and prepare the drive for Windows NT
+  unattended installation as usual. This includes copying the .\I386 or .\Alpha
+  directory from the Windows NT compact disc to the install directory on the C:
+  drive.
+
+2. Copy the fix files into a temporary directory.
+
+3. Apply the fix files and required Service Pack 3+ dependency files to the
+  install directory on the C: drive. The service pack CD should be that of the
+  same language as that being installed. Since the Service Pack CDs are in
+  Windows NT unicode format, they can not be read directly from MS-DOS. The
+  Service Pack files may need to be transferred from a Windows NT system
+  capable of reading the Service Pack CD or the SP files can be read directly
+  using MS-DOS from the Enterprise Server CD in the "\SP3\i386" or "\SP3\Alpha"
+  directory. The Service Pack dependency files are listed above. This step can
+  be performed automatically using the OEMSETUP.BAT batch file, if you have the
+  dependency files in a DOS readable format. Otherwise, you will need to
+  perform this step manually.
+
+  Intel Platform: Step Three Instructions
+  ---------------------------------------
+
+  BATCH File Option
+  -----------------
+
+  From the temporary directory, run OEMSETUP.BAT specifying both the source
+  Service Pack directory and the target install directory. For example: (assume
+  D: is a Service Pack directory and C:\I386 is the install directory)
+
+  OEMSETUP D:\SP3\I386 C:\I386
+
+  This will copy the necessary files to the I386 and to C:\I386\SYSTEM32
+  directories on the C drive where the installation directory is located.
+
+  Manual Option
+  -------------
+
+  You can also perform this step manually. First, copy FASTFAT.SYS from the fix
+  to the C:\I386 install directory, then copy the following files from the
+  latest NT 4.0 Service Pack to the C:\I386 and C:\I386\SYSTEM32 directories as
+  denoted below:
+
+    Atapi.sys       -&gt; ..\I386
+    Basesrv.dll     -&gt; ..\I386
+    Fastfat.sys     -&gt; ..\I386
+    Hal.dll         -&gt; ..\I386
+    Hal486c.dll     -&gt; ..\I386
+    Halapic.dll     -&gt; ..\I386
+    Halast.dll      -&gt; ..\I386
+    Halcbus.dll     -&gt; ..\I386
+    Halcbusm.dll    -&gt; ..\I386
+    Halmca.dll      -&gt; ..\I386
+    Halmps.dll      -&gt; ..\I386
+    Halmpsm.dll     -&gt; ..\I386
+    Haloli.dll      -&gt; ..\I386
+    Halsp.dll       -&gt; ..\I386
+    Halwyse7.dll    -&gt; ..\I386
+    Ntdll.dll       -&gt; ..\I386 and  -&gt; ..\I386\SYSTEM32
+    Ntoskrnl.exe    -&gt; ..\I386
+    Ntkrnlmp.exe    -&gt; ..\I386
+    Win32k.sys      -&gt; ..\I386
+    User32.dll      -&gt; ..\I386
+    Kernel32.dll    -&gt; ..\I386
+    Gdi32.dll       -&gt; ..\I386
+    Winsrv.dll      -&gt; ..\I386
+
+  Then remove the compressed versions of these files from the C:\I386 and
+  C:\I386\SYSTEM32 directories. Compressed files are identified by the last
+  character of the file type containing an underscore ("_"). For example delete
+  FASTFAT.SY_, HAL.DL_, NTDLL.DL_, NTOSKRNL.EX_, etc.
+
+  Alpha Platform: Step 3 Instructions
+  -----------------------------------
+
+  BATCH File Option
+  -----------------
+
+  From the temporary directory, run OEMSETUP.BAT specifying both the source
+  Service Pack directory and the target install directory. For example (assume
+  D: is a Service Pack directory and C:\Alpha is the install directory):
+
+  OEMSETUP D:\SP3\Alpha C:\Alpha
+
+  This will copy the necessary files to the Alpha and C:\Alpha\SYSTEM32
+  directories on the C: drive where the installation directory is located.
+
+  Manual Option
+  -------------
+
+  You can also perform this step manually by first copying FASTFAT.SYS from the
+  fix to the C:\Alpha install directory then copy the following files from the
+  latest NT 4.0 Service Pack to the C:\Alpha and C:\Alpha\SYSTEM32 directories
+  as denoted below:
+
+     Fastfat.sys     -&gt; ..\Alpha
+     Halgammp.dll    -&gt; ..\Alpha
+     Halpinna.dll    -&gt; ..\Alpha
+     Halrawmp.dll    -&gt; ..\Alpha
+     Halsabmp.dll    -&gt; ..\Alpha
+     Ntdll.dll       -&gt; ..\Alpha and  -&gt; ..\Alpha\SYSTEM32
+     Ntoskrnl.exe    -&gt; ..\Alpha
+     Ntkrnlmp.exe    -&gt; ..\Alpha
+     Win32k.sys      -&gt; ..\Alpha
+     User32.dll      -&gt; ..\Alpha
+     Kernel32.dll    -&gt; ..\Alpha
+     Gdi32.dll       -&gt; ..\Alpha
+     Winsrv.dll      -&gt; ..\Alpha
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

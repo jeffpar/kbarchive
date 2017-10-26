@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136995/","publisher":null,"image":null,"headline":"Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136995-how-the-visual-foxpro-setup-wizard-compresses-large-files">Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136995
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FoxPro 2.6 Setup Wizard had some limitations when it distributed large
+files. The Visual FoxPro 3.0 Setup Wizard has improved capabilities. This
+article describes how large files are handled and ways to customize the handling
+of large files.
+
+MORE INFORMATION
+================
+
+When the Setup Wizard compresses files for assembly into disk images, it ensures
+that the files do not exceed the limit (in bytes) defined by the SplitSize value
+in the Preferences section of Wzsetup.ini. By default, this value is 363,520.
+
+Files that fall below this limit are renamed with a $ in the filetype. For
+example, a 234,738-byte file named Mydata.dbf is compressed into:
+
+  MYDATA.DB$    61,638
+
+Files that exceed this limit are chopped into pieces. The pieces are given a
+generated filename and an extension that indicates the order in which they are
+re-assembled when installed on the target computer. For example, a
+4,415,168-byte file named Mydata.fpt might be divided and compressed into:
+
+  56600245.001   263,446
+  56600245.002   344,833
+  56600245.003   335,156
+  56600245.004   323,052
+  56600245.005   273,779
+
+During installation on the target computer, these files are decompressed and
+reassembled into Mydata.fpt.
+
+If you need to reassemble this table without running the setup program, you can
+use Expand.exe to expand each piece; then copy the expanded pieces of the memo
+file into the final memo file:
+
+  EXPAND MYDATA.DB$ MYDATA.DBF
+  EXPAND 56600245.001 MYDATA.001
+  EXPAND 56600245.002 MYDATA.002
+  EXPAND 56600245.003 MYDATA.003
+  EXPAND 56600245.004 MYDATA.004
+  EXPAND 56600245.005 MYDATA.005
+  COPY MYDATA.001+MYDATA.002+MYDATA.003+MYDATA.004+MYDATA.005 MYDATA.FPT
+
+To determine the original name of a compressed file, refer to the Application
+section of the Setup.inf file that is written to DISK1 (or NETSETUP) of the disk
+image directories:
+
+[Application]
+"56592553"=1,MYDATA.DB$,,,,,,,,!READONLY,,MYDATA.DBF,,,,234738,,,,,VITAL
+"56592734"=1,56600245.001,,,,,,,,!READONLY,,MYDATA.FPT,,,,727040,,,,,VITAL
+"56592734"=1,56600245.002,MYDATA.FPT,,,,,,,!READONLY,,,,,,952832,,,,,VITAL
+"56592734"=1,56600245.003,MYDATA.FPT,,,,,,,!READONLY,,,,,,953856,,,,,VITAL
+"56592734"=1,56600245.004,MYDATA.FPT,,,,,,,!READONLY,,,,,,982528,,,,,VITAL
+"56592734"=1,56600245.005,MYDATA.FPT,,,,,,,!READONLY,,,,,,798912,,,,,VITAL
+
+The default SplitSize value of 363,520 is held over from the FoxPro version 2.6
+Setup Wizard, which was able to generate 360K disk images and needed to ensure
+that files would not exceed the capacity of a 360K disk. While the version 3.0
+Setup Wizard does not generate 360K disk images, the SplitSize value of 353,520
+provides improved flexibility when assembling files into 1.2-MB and 1.44-MB disk
+images.
+
+The version 3.0 Setup Wizard is able to split a file into hundreds of pieces by
+using a numeric file extension. The file extension may extend from 001 to 999,
+but a directory limitation (or setup limitation) may be encountered before
+getting that far.
+
+The SplitSize setting may be increased to cause the Setup Wizard to create larger
+chunks when it splits large files. Do this by modifying the SplitSize setting in
+Wzsetup.ini. Do not use a setting greater than the number of bytes that will fit
+on 1.2-MB disks (or 1.44-MB disks). Some experimentation and testing may be
+required to arrive at settings that work well for the specific application.
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

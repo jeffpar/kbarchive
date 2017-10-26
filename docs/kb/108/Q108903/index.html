@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108903/","publisher":null,"image":null,"headline":"Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108903-using-windows-for-workgroups-311-with-beame-and-whiteside">Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108903
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups 3.11 supports multiple network drivers and can co-exist
+with other network products, such as Beame and Whiteside NFS (BW-NFS), version
+3.0c.
+
+After you upgrade to Windows for Workgroups 3.11, your BW-NFS connectivity may
+not exist. This article describes procedures to correct this problem that are
+based on information provided by Beame and Whiteside. If you want to use ODI
+interface (running Novell NetWare, BW-NFS, and Windows for Workgroups 3.11),
+contact Beame and Whiteside for configuration recommendations.
+
+MORE INFORMATION
+================
+
+CONFIG.SYS File Changes
+-----------------------
+
+Make the following changes in your CONFIG.SYS file by either remarking out (with
+the REM command) or deleting the lines shown below.
+
+NOTE: The following information assumes that your BW-NFS files are in a directory
+called C:\BW30c.
+
+     rem DEVICE=C:\BW30c\NDIS\PROTMAN.DOS
+     rem DEVICE=C:\BW30C\NDIS\&lt;ELNK3.DOS&gt;   (where &lt;ELNK3.DOS&gt; is your
+                                            specific network card driver)
+     rem DEVICE=C:\BW30C\ETHDEV.SYS
+     rem DEVICE=C:\BW30C\TCPIP.SYS 1460
+
+SYSTEM.INI File Changes
+-----------------------
+
+Verify that your SYSTEM.INI file contains the following lines.
+
+NOTE: You must copy the ETHDEV.SYS and TCPIP.SYS files to the directory specified
+on the DEVDIR= line in the [network drivers] section of your SYSTEM.INI file.
+The following is an example and assumes that the Windows for Workgroups 3.11
+network is also installed:
+
+     [boot]
+     network.drv=wfwnet.drv
+     secondnet=bwnet.drv
+
+     [boot.description]
+     network.drv=Microsoft Windows Network (version 3.11)
+     secondnet.drv=BW-NFS Network File System (version 3.0)
+
+     [386Enh]
+     network=*vnetbios,*vwc,vnetsup.386,vredir.386,vserver.386
+     secondnet=bwdosnet.386,bwredir.386
+     TimerCriticalSection=1000
+     UniqueDOSPSP=TRUE
+     PSPIncrement=5
+
+     [Network]
+     winnet=wfwnet/00025100
+     multinet=bwnfs
+
+     [network drivers]
+     transport=ethdev.sys,tcpip.sys 1460,ndishlp.sys,*netbeui
+     devdir=C:\Windows
+     LoadRMDrivers=Yes
+
+PROTOCOL.INI File Changes
+-------------------------
+
+Verify that your PROTOCOL.INI file located in the Windows directory contains the
+following lines.
+
+NOTE: The following is an example that uses a Western Digital Plus Family
+Adapter. Your network adapter may differ and may have a different section name
+and settings under that section.
+
+  [protocol manager]
+  drivername=PROTMAN$
+
+  [WD8003XMAC]                  ;This section varies depending on the
+  drivername=MACWD$             ;network adapter used in your system.
+  irq=5
+  ramaddress=CC00
+  iobase=0X280
+
+  [ETHDEV]
+  drivername=ETHDEV27
+  bindings=WD8003XMAC           ;This line must be identical to the
+                                ;adapter name section in brackets
+                                ;above. This line is case sensitive.
+
+AUTOEXEC.BAT File Changes
+-------------------------
+
+Remark out any NETBIND= lines in your AUTOEXEC.BAT file.
+
+If you are running only the TCP portion of the BW-NFS software, you should remove
+the BWRPC and BWNFS drivers from the AUTOEXEC.BAT file.
+
+If you are using the NFS portion of the BW-NFS software, you should remove the
+BWSTART line from your AUTOEXEC.BAT file. There should be a C:\WINDOWS\NET START
+line only. If you see another similar line that is pointing to the BW-NFS
+directory, either remark out or delete that line.
+
+Rename Your Files
+-----------------
+
+Regardless of the installation (ODI or NDIS), in the BW-NFS directory, rename the
+NET.EXE file to NFS.EXE and the STARTNET.EXE to BWSTART.EXE. This eliminates
+potential conflicts with Windows for Workgroups drivers.
+
+NOTE: BW-NFS version 3.1 uses STARTNET.COM instead of STARTNET.EXE.
+
+Save Your Changes and Reboot
+----------------------------
+
+Save all changes to your files and reboot your computer. Your Beame and Whiteside
+connectivity should then be restored.
+
+For more information, contact Beame and Whiteside Software, Inc.
+
+BW-NFS is manufactured by Beame and Whiteside, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3.11 Beam White-side BWNFS
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305317/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305317/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305317/","publisher":null,"image":null,"headline":"Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305317-prb-sql-builder-improperly-refreshes-upon-editing-query">Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305317
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbSQLServ kbVBp600 kbGrpDSVBDB kbDSupport
+Last Modified: 16-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When data is located on a mapped drive, SQL Builder improperly refreshes upon
+editing a query.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. On the server computer, create a share that allows access to a Microsoft
+  Visual FoxPro .dbf file.
+
+2. On the local computer, map a drive to the share as drive N.
+
+  NOTE: This is not performed on the same computer as in step 1.
+
+3. On the local computer, create a data source name (DSN) that points to the
+  .dbf file in step one.
+
+4. Open a new data project in Visual Basic.
+
+5. Double-click DataEnvironment1 to open the Data Environment designer.
+
+6. Right-click Connection1, and then click Properties.
+
+7. Click "Microsoft OLE DB Provider for ODBC Driver", and then click Next to
+  move to the Connection tab.
+
+8. In the Data source name drop-down list box, click the DSN that you created in
+  step 3. Test the connection, and close the dialog box.
+
+9. Right-click Connection1, and then click Add a command.
+
+10. Right-click Command1, and then click Properties.
+
+11. Select the SQL Statement option, and then click SQL Builder.
+
+12. From the DataView window, click to expand the folders, and drag the table to
+  the top pane of the SQL Builder.
+
+13. Select a few fields from the list in the top pane, run the query to verify
+  that it works, and then save the query.
+
+14. Reopen SQL Builder, and select another field from the top pane. Notice that
+  the SQL statement has changed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSQLServ kbVBp600 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

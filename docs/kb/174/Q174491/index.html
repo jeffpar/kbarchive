@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174491: User Profile Scenario Summaries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174491: User Profile Scenario Summaries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174491/","publisher":null,"image":null,"headline":"Q174491: User Profile Scenario Summaries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174491-user-profile-scenario-summaries">Q174491: User Profile Scenario Summaries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174491
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are typical user profile scenarios that you may encounter. Each of
+these scenarios includes a brief description of the situation, the current
+status of the profiles on the server, actions that you need to take to
+administer the profile properly, any required user action, references to
+sections of this guide that have more detailed information, and any applicable
+usage notes.
+
+MORE INFORMATION
+================
+
+Existing Windows NT 3.5x Roaming Profile
+----------------------------------------
+
+A domain user has an existing Windows NT 3.5x roaming profile and will continue
+to log on to computers running Windows NT 3.5x only.
+
+What currently exists: A Myuser.usr file exists in the folder
+\\MyServer\MyShare.
+
+Administrator action: None.
+
+User action: None.
+
+Existing Windows NT 3.5x Roaming Profile
+----------------------------------------
+
+A domain user has an existing Windows NT 3.5x mandatory profile and will continue
+to log on to computers running Windows NT 3.5x only.
+
+What currently exists: A Myuser.man file exists in the folder
+\\MyServer\MyShare.
+
+Administrator action: None.
+
+User action: None.
+
+Migrating a Windows NT 3.5x Roaming Profile
+to a Windows NT 4.0 Roaming Profile
+-------------------------------------------------------------------------------
+
+A domain user has an existing Windows NT 3.5x roaming profile and moves to a
+computer running Windows NT 4.0.
+
+What currently exists: A Myuser.usr file exists in the folder
+\\MyServer\MyShare.
+
+Administrator action: None.
+
+User action: To automatically upgrade the profile, log on to the computer running
+Windows NT 4.0 and then log off. The automatic upgrade creates a new folder with
+the name Myuser.pds in the existing directory \\MyServer\MyShare. Inside the new
+folder is the upgraded user profile for the domain user.
+
+For more information, see the section "Upgrading 3.5x Server-Based Profiles to
+4.0 Roaming Profiles" in the documentation mentioned in the REFERENCE section of
+this article.
+
+Migrating a Windows NT 3.5x Mandatory Profile
+to a Windows NT 4.0 Mandatory Profile
+-----------------------------------------------------------------------------------
+
+A domain user has an existing Windows NT 3.5x mandatory profile and moves to a
+computer running Windows NT 4.0 where the user will have a mandatory profile.
+
+What currently exists: A Myuser.man file exists in the folder
+\\MyServer\MyShare.
+
+Administrator action: Create a folder with the name Myuser.pdm in the existing
+folder \\MyServer\MyShare, and then place the desired mandatory profile into the
+new folder.
+
+User action: None.
+
+NOTE: After this procedure is performed, the Windows NT 3.5x profile is still
+available to the user should he or she ever log on to a computer running Windows
+NT 3.5x again. The Windows NT 4.0 user profile is maintained separately. The
+administrator can remove the Windows NT 3.5x profile if the user will only be
+using computers running Windows NT 4.0.
+
+For more information, see the section "Upgrading 3.5x Mandatory Profiles to 4.0
+Mandatory Profiles" in the documentation mentioned in the REFERENCE section of
+this article.
+
+Migrating a Windows NT 3.5x Mandatory Profile
+to a Windows NT 4.0 Roaming Profile
+---------------------------------------------------------------------------------
+
+A domain user has an existing Windows NT 3.5x mandatory profile and moves to a
+computer running Windows NT 4.0 where they will have a roaming profile.
+
+What currently exists: A Myuser.man file exists in the folder
+\\MyServer\MyShare.
+
+Administrator action: Change the user's profile path to
+\\MyServer\MyShare\Myuser, and then allow the user to log on and log off the
+computer.
+
+User action: When instructed to do so, log on to the computer running Windows NT
+4.0 and then log off. This creates the folder \\MyServer\MyShare\Myuser on the
+server containing the user's new roaming profile.
+
+For more information, see the section "Creating a New Roaming User Profile for
+Windows NT 4.0" in the documentation mentioned in the REFERNCE section of this
+article.
+
+Creating a New Windows NT 4.0 Roaming Profile
+---------------------------------------------
+
+A new user will be logging on to a computer running Windows NT 4.0 only, and will
+be using a roaming profile.
+
+What currently exists: Nothing currently exists for the user in
+\\MyServer\MyShare.
+
+Administrator action: In User Manager, specify the user profile path without an
+extension. For example, use \\MyServer\MyShare\Myuser.
+
+User action: Log on and then log off the computer. This creates the folder on the
+server \\MyServer\MyShare\Myuser that contains the user's new roaming profile.
+
+For more information, see the section "Creating a New Roaming User Profile for
+Windows NT 4.0" in the documentation mentioned in the REFERENCE section of this
+article.
+
+Creating a New Windows NT 4.0 Mandatory Profile
+-----------------------------------------------
+
+A new user will be logging on to a computer running Windows NT 4.0 only, and will
+be using a mandatory profile.
+
+What currently exists: Nothing currently exists for the user in
+\\MyServer\MyShare.
+
+Administrator action: In User Manager, specify the user profile path with the
+extension .man. For example, use \\MyServer\MyShare\Myuser.man. Then, manually
+create the Myuser.man folder manually in the \\MyServer\MyShare directory. Place
+the mandatory profile for the user in this new folder.
+
+User action: None.
+
+For more information, see the section "Creating a New Mandatory User Profile for
+Windows NT 4.0" in the documentation mentioned in the REFERENCE section of this
+article.
+
+Updating and Changing a Roaming Profile to a Mandatory Profile
+--------------------------------------------------------------
+
+A domain user has an existing Windows NT 4.0 roaming user profile that was not
+upgraded from Windows NT 3.5x, and the administrator is going to mandate that
+the profile be read or the log on attempt will be denied.
+
+What currently exists: A Myuser folder containing the user's roaming profile
+exists in \\MyServer\MyShare.
+
+Administrator action: Use User Manager to add the .man extension to the user
+profile path, thus changing the path to \\MyServer\MyShare\Myuser.man. Then,
+rename the existing folder that contains the user's roaming profile from Myuser
+to Myuser.man. Finally, rename the NTuser.dat file, which is located in the root
+of the user's profile folder, to NTuser.man.
+
+User action: None.
+
+For more information, see the section "Making a Roaming Profile Mandatory in
+Windows NT 4.0" in the documentation mentioned in the REFERENCE section of this
+article.
+
+Changing a Roaming Profile to a Mandatory Profile
+-------------------------------------------------
+
+A domain user has an existing Windows NT 4.0 roaming User Profile that was
+upgraded from Windows NT 3.5x, and the administrator is going to mandate that
+the profile be read or the log on attempt will be denied.
+
+What currently exists: A Myuser.pds folder containing the user's roaming profile
+exists in \\MyServer\MyShare.
+
+Administrator action: Use User Manager to change the extension of the user
+profile path to .man, changing the path to \\MyServer\MyShare\myuser.man. Then,
+rename the existing folder that contains the user's roaming profile from
+Myuser.pds to Myuser.pdm. Finally, rename the NTuser.dat file, which is located
+in the root of the user's profile folder, to NTuser.man.
+
+User action: None.
+
+For more information, see the section "Making a Roaming Profile Mandatory in
+Windows NT 4.0" in the documentation mentioned in the REFERENCE section of this
+article.
+
+REFERENCE
+
+The "Guide to Windows NT 4.0 Profiles and Policies" is a whitepaper available for
+download from the Microsoft Web site and provides information and procedures for
+implementing Microsoft Windows NT 4.0 profiles and policies on client
+workstations and servers. You can download this document from:
+
+http://www.microsoft.com/ntserver/management/deployment/planguide/prof_policies.asp
+
+Additional query words: wpaper spe config ntconfig poledit
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

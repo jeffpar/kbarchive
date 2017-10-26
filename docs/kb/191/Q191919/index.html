@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191919: BUG: DataGrid Doesn’t Handle Special Filter Constants Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191919: BUG: DataGrid Doesn’t Handle Special Filter Constants Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191919/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191919/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191919/","publisher":null,"image":null,"headline":"Q191919: BUG: DataGrid Doesn’t Handle Special Filter Constants Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191919-bug-datagrid-doesnt-handle-special-filter-constants-correctly">Q191919: BUG: DataGrid Doesn’t Handle Special Filter Constants Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191919
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.5,2.0,2.1 SP2,2.5,2.6,2.7,5.0,6.0,6.0 SP4,6.0 SP5
+Operating System(s): 
+Keyword(s): kbADO200bug kbCtrl kbDatabase kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp
+Last Modified: 10-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, 6.0 SP4, 6.0 SP5 
+- ActiveX Data Objects (ADO), versions 1.5, 2.0, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the filter of an ADO Recordset object is set to one of the special
+constants, such as adFilterPendingRecords, the bound DataGrid control still
+displays all of the rows in the Recordset. If the filter is set to specify a
+particular field, such as "State = 'CA'," the DataGrid displays only the rows
+that are specific to that filter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The code that follows filters based on a field and displays the appropriate data
+in the grid.
+
+Modifying records in the data grid and setting the Filter property of the
+Recordset to display only records with pending changes (Filter =
+adFilterPendingRecords) causes the recordset to correctly filter on those
+changed records. However, the DataGrid does not correctly display the filtered
+Recordset object.
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. On the Project menu, click References.
+
+3. In the list of available references, click Microsoft ActiveX Data Objects
+  Library.
+
+4. On the Project menu, click Components.
+
+5. In the list of available components, click Microsoft DataGrid Control 6.0
+  (OLEDB).
+
+6. Add a DataGrid control and two CommandButton controls to Form1.
+
+7. Set the name and the caption properties of the CommandButton controls as
+  follows:
+
+   - Command1:
+     Name = cmdFilterField
+     Caption = FilterField
+
+   - Command2:
+     Name = cmdFilterPending
+     Caption = FilterPending
+
+8. Add the following code to the General Declarations of Form1:
+
+        Dim rsAuthors As New ADODB.Recordset
+        Private Sub cmdFilterField_Click()
+          rsAuthors.Filter = adFilterNone
+          rsAuthors.Filter = "State = 'UT'"
+        End Sub
+
+        Private Sub cmdFilterPending_Click()
+          rsAuthors.Filter = adFilterNone
+          rsAuthors.Filter = adFilterPendingRecords
+        End Sub
+
+        Private Sub Form_Load()
+          Dim cnPubs As New ADODB.Connection
+          Dim strConn As String
+
+          ' You may have to change the following line
+          ' to a valid SQL Server
+          strConn = "Provider=SQLOLEDB;Data Source=(local);" &amp; _
+                   "Initial Catalog=pubs;"
+
+          cnPubs.CursorLocation = adUseClient
+          cnPubs.Open strConn, "sa", ""
+
+          rsAuthors.Open "SELECT * FROM Authors", cnPubs, adOpenStatic, _
+                    adLockBatchOptimistic
+
+          Set rsAuthors.ActiveConnection = Nothing
+
+          cnPubs.Close
+
+          Set DataGrid1.DataSource = rsAuthors
+
+        End Sub
+
+9. Press the F5 key to run the application, and note the behavior of the
+  different filter methods.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADO200bug kbCtrl kbDatabase kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2bug kbMDAC210SP2bug kbMDAC250bug kbADO250bug kbMDAC260 kbADO260 kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO150 kbADO200 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB600SP4 kbVB600SP5 kbADO270
+Version           : :1.5,2.0,2.1 SP2,2.5,2.6,2.7,5.0,6.0,6.0 SP4,6.0 SP5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

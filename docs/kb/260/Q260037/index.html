@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260037/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260037/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260037/","publisher":null,"image":null,"headline":"Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260037-xadm-how-to-remove-a-message-from-exchange-by-using-exmerge">Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260037
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 02-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In some cases, you may need to remove a single message from an Exchange Server
+computer. This article describes how to remove a single message by using the
+ExMerge utility.
+
+MORE INFORMATION
+================
+
+The steps in this article require the ExMerge disaster recovery utility version
+3.62 or later. Please contact Microsoft Product Support Services (PSS) to obtain
+the latest version of ExMerge.
+
+1. Log on to the Exchange service account.
+
+2. Create a folder called "Exmerge" (without quotation marks) on the Exchange
+  Server computer.
+
+3. Copy the following files to the folder:
+
+  Exmerge.exe
+  Exmerge.ini
+  Mfc42.dll
+
+4. Double-click the Exmerge.exe file, read the Welcome message, and then click
+  Next.
+
+5. Click "Two step merge", and then click Next.
+
+6. Click "Step 1: Copy data to Personal Folders", and then click Next.
+
+7. Type your server name, and then click Options.
+
+8. On the Data tab, click "User messages".
+
+9. On the Import Procedure tab, click "Archive data to target store". This
+  copies the data that you select to .pst files, and then deletes the data in
+  the Exchange Server mailbox.
+
+10. Click Yes when you receive the warning message.
+
+11. On the Message Details tab, type the subject of the message or the
+  attachment name that you want to remove, click Add, click Apply, and then
+  click OK.
+
+NOTE: If the original message was forwarded with a different subject, the ExMerge
+utility cannot delete the message based on the original message subject line or
+MTS-ID.
+
+If the Item Retention option is turned on, the message may be available for
+recovery on the Outlook client. For additional information about deleted item
+recovery, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q228934 XCLN: Understanding Deleted Item Recovery
+
+12. On the Dates tab you can select a specific date or range of dates or times
+  to narrow your search.
+
+  Note that all dates and times are selected by default.
+
+13. Select all mailboxes or only the affected mailboxes, and then check Next.
+
+14. If possible, leave the default folder as C:\Exmergedata, and then click
+  Next
+
+  NOTE: Microsoft does not recommend that you change the default folder, but it
+  may be necessary to select a different location due to free space
+  limitations.
+
+  The ExMerge utility pulls the e-mail messages that you selected from the
+  mailboxes to .pst files.
+
+15. Open a few mailboxes to make sure that the message was removed.
+
+  Note that the messages are not removed from the System Attendant Mailbox as a
+  safety measure. You must manually delete these messages.
+
+16. After you determine that the message is removed from all mailboxes, you can
+  delete the .pst files in the C:\Exmergedata folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

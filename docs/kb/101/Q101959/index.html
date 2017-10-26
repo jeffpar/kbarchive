@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101959/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101959/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101959/","publisher":null,"image":null,"headline":"Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101959-netxexe-and-loadhigh-in-remote-boot-configuration">Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101959
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Novell's NETX.EXE workstation shell in a remote boot
+configuration and you use the MS-DOS 6.0 or 6.2 LOADHIGH /L:x,yyyy syntax, you
+may receive the following error message when NETX loads:
+
+  Insert disk with \COMMAND.COM in drive A
+  Press any key to continue...
+
+Even if you insert a disk with COMMAND.COM in drive A and press a key, you cannot
+get past this message.
+
+CAUSE
+=====
+
+This situation occurs because the drive being referenced is the virtual drive A
+established by the remote boot procedure. The extra syntax available to use with
+MS-DOS 6.0 adn 6.2 is also related to this problem.
+
+RESOLUTION
+==========
+
+To correct this problem, you must eliminate the /L syntax from both the remote
+boot image and the matching AUTOEXEC.BAT file in your login or home directory.
+
+For example, if your remote boot image and matching AUTOEXEC.BAT file contain the
+"LH /L:0 NETX.EXE" command, eliminate the /L:0 portion of the command so that
+you are left with "LH NETX.EXE."
+
+Once you re-create the remote boot image (typically NET$DOS.SYS), you should be
+able to successfully boot without receiving the message mentioned above.
+
+MORE INFORMATION
+================
+
+For more information on the LOADHIGH /L syntax, type "help loadhigh" (without
+the quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+
+Additional query words: 6.22 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/327/Q327050/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/327/Q327050/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/327/Q327050/","publisher":null,"image":null,"headline":"Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q327050-microsoft-adonet-core-reference-comments-and-corrections">Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q327050
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 06-AUG-2002
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft ADO.NET (Core Reference), ISBN
+0-7356-1423-7.
+
+The following topics are covered:
+
+- Page 8: Incorrect Reference To SQL Client
+
+- Page 34: ContactTitle Should Be ContactName
+
+- Page 77: Incorrect Reference To Figure 3-9
+
+- Page 218: ReadOnly Mentioned Twice
+
+- Page 273: DataSet Should Be DataTable
+
+- Page 276: DataSet Should Be DataTable
+
+- Page 365: Incorrect Event
+
+- Page 457: Scale Property Is Omitted
+
+- Pages 470-471: UpdatedDataSource Should Be UpdatedRowSource
+
+- Page 550: XLST Should Be XSLT
+
+- Page 571: Incorrect Word
+
+MORE INFORMATION
+================
+
+Page 8: Incorrect Reference To SQL Client
+-----------------------------------------
+
+On page 8, in the Visual Basic .NET code sample, the first comment references the
+SQL Client .NET Data Provider.
+
+Change:
+"Open and close a connection using the SQL Client .NET Data Provider."
+
+To:
+"Open and close a connection using the OLE DB .NET Data Provider.
+
+
+Page 34: ContactTitle Should Be ContactName
+-------------------------------------------
+
+On page 34, in the final paragraph of the Selecting Columns to Display section,
+
+Change:
+"... select just the CustomerID, CompanyName, ContactTitle, and Phone fields
+..."
+
+To:
+"... select just the CustomerID, CompanyName, ContactName, and Phone fields ..."
+
+
+Page 77: Incorrect Reference To Figure 3-9
+------------------------------------------
+
+On page 77, in the final paragraph of the section Creating Connections Using the
+Toolbox,
+
+Change:
+"(Figure 3-9 shows an example.)"
+
+To:
+
+"(Figure 3-10 shows an example.)"
+
+
+Page 218: ReadOnly Mentioned Twice
+----------------------------------
+
+On page 218, in the last sentence of the first paragraph under the "Try This at
+Home..." box, the ReadOnly property is listed twice. The second instance should
+be removed.
+
+
+Page 273: DataSet Should Be DataTable
+-------------------------------------
+
+On page 273, in the BeginInit and EndInit Methods section, all references to the
+DataSet object should be changed to the DataTable object.
+
+
+Page 276: DataSet Should Be DataTable
+-------------------------------------
+
+On page 276, in the GetChanges Method section, the two references to DataSet
+objects should be changed to DataTable objects.
+
+
+Page 365: Incorrect Event
+-------------------------
+
+On page 365, in the first sentence of the The ListChanged Event of the DataView
+Object section, change:
+
+"The DataView object has one event, ListEvent..."
+
+To:
+"The DataView object has one event, ListChanged..."
+
+
+Page 457: Scale Property Is Omitted
+-----------------------------------
+
+On page 457, in the paragraph immediately before the Note box, change:
+
+"...Size, Precision, and Size properties, ..."
+
+To:
+"...Size, Precision, and Scale properties,..."
+
+
+Pages 470-471: UpdatedDataSource Should Be UpdatedRowSource
+-----------------------------------------------------------
+
+On page 470, the header for the section The Command Object's UpdatedDataSource
+Property should be The Command Object's UpdatedRowSource Property.
+
+In addition, on pages 470 and 471, the four references to UpdatedDataSource in
+the section following table 11-1should be changed to UpdatedRowSource.
+
+
+Page 550: XLST Should Be XSLT
+-----------------------------
+
+On page 550, in the section Applying an XSLT Transform, second paragraph, there
+is a reference to XLST. Change this to XSLT.
+
+
+Page 571: Incorrect Word
+------------------------
+
+On page 571, in the third paragraph of the section Step 5: Adding Add and Delete
+Buttons, change:
+
+"If you remove add an item..."
+
+To:
+"If you add an item..."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1423-7 Sceppa
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/266/Q266204/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/266/Q266204/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/266/Q266204/","publisher":null,"image":null,"headline":"Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q266204-cannot-browse-a-different-windows-nt-40-domain-across-a-firewal">Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q266204
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a firewall is used to separate two Windows NT 4.0 domains that have no
+trust relationship established, and each domain has its own Windows Internet
+Name Server (WINS) server that does not replicate to the WINS server in the
+other domain, you cannot browse for resources in the other domain by NetBIOS
+name.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+- The Domain Master Browser [1Bh] entry for the opposite domain is missing or
+  incorrect in WINS or in the LMHOSTS file (if one is in use).
+
+- The firewall is using a network address translator (NAT), and NAT is
+  improperly configured.
+
+- The firewall is filtering or has disabled the required ports.
+
+RESOLUTION
+==========
+
+To resolve this behavior, perform the following actions:
+
+1. Make sure that WINS or LMHOSTS is using the correct Domain Master Browser
+  [1Bh] entry for the opposite domain.
+
+2. Make sure that if the firewall is using network address translation, the NAT
+  has the correct internal/external address mapping/translation configured.
+
+3. On all firewalls between the domains, make sure that UDP ports 137 (NBNS)
+  (used by NBT NS Query for [1bh]) and 138 (NBDS) (used by the browser service)
+  and TCP port 139 (NBSS) (used by NBT for session setup and SMB for browse
+  list transfer) are not filtered or disabled.
+
+4. Make sure there are no other firewall services running.
+
+MORE INFORMATION
+================
+
+For more information, refer to the following articles:
+
+  Q172227 Network Address Translators Can Block Netlogon Traffic
+
+  Q180094 How to Write an LMHOSTS File for Domain Validation
+
+  Q163409 NetBIOS Suffixes (16th Character of the NetBIOS Name)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

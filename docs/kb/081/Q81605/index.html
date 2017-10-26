@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81605: Setting Up LANtastic 4.x with Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81605: Setting Up LANtastic 4.x with Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81605/","publisher":null,"image":null,"headline":"Q81605: Setting Up LANtastic 4.x with Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81605-setting-up-lantastic-4x-with-windows-30">Q81605: Setting Up LANtastic 4.x with Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81605
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to install LANtastic versions 4.x network drivers for
+use with Windows 3.0. According to Artisoft, the peer-to-peer network LANtastic
+4.x is fully compatible with Windows 3.0. In addition, according to Artisoft,
+Windows 386 enhanced mode will now run on a LANtastic server also being used as
+a workstation (nondedicated server).
+
+The information that follows discusses both installation and upgrade of LANtastic
+drivers for a local installation of Windows 3.0 on a workstation and the setup
+of LANtastic drivers for a shared network installation of Windows 3.0.
+
+MORE INFORMATION
+================
+
+Setup for Local Installation of Windows
+---------------------------------------
+
+You must run the SETUP.EXE program from Windows to add the enhanced mode
+LANtastic 4.x drivers for Windows.
+
+NOTE: You must have the drivers copied to the appropriate directory on your hard
+drive before you run the Windows Setup program (so that Windows can find the
+drivers).
+
+To install the LANtastic 4.x drivers for Windows 3.0:
+
+1. Change to your Windows directory (C:\WINDOWS by default).
+
+2. Run Windows Setup without any parameters by typing the following at the
+  MS-DOS command prompt:
+
+  setup
+
+3. From the System Information Screen, select Network.
+
+4. Select Other (requires disk provided by manufacturer).
+
+5. Replace the A:\ path with the path to the directory where you installed the
+  LANtastic Network Operating System (NOS) files. For example:
+
+  c:\lantasti
+
+  Setup will find the file OEMSETUP.INF that contains the necessary settings for
+  Windows to use when it executes. These settings will be copied into the
+  Windows SYSTEM.INI file so that these parameters will be used each time you
+  run Windows.
+
+6. Select LANtastic Network Operating System 4.0.
+
+7. Setup will return to the main menu with LANtastic NOS 4.0 as the network.
+  Press ENTER to accept the new Windows configuration. Setup will make the
+  changes and return to the MS-DOS command prompt.
+
+Setup for a Shared Copy of Windows
+----------------------------------
+
+To install a shared copy of Windows on a LANtastic network, follow the
+instructions in the "Putting Windows on a Network" section on page 553 of the
+"Microsoft Windows User's Guide." After expanding all the Windows disks into the
+shared directory, change to the shared directory and make all the files
+read-only by using the MS-DOS ATTRIB command, as follows:
+
+  attrib +r *.*
+
+Each network workstation can now log into the network and redirect a drive
+designation to the shared Windows directory on the server. For example, type the
+following:
+
+  net use w: \\server_name\c-drive cd\winshare setup /n
+
+Users can now set up to either their local hard drives or their directory on the
+server drive. The network selected should be Microsoft Network or 100-percent
+compatible.
+
+Once Windows is installed, exit to MS-DOS and run Windows Setup from the WINDOWS
+directory using the SETUP /N command. Then do the following:
+
+1. Select Network.
+
+2. Select Other (requires disk provided by manufacturer).
+
+3. Backspace over the A:\ path and enter the path to the user's LANtastic
+  Network Operating System (NOS) files. For example:
+
+  c:\lantasti
+
+4. Setup will use the OEMSETUP.INF from this directory. Select LANTASTIC NETWORK
+  OPERATING SYSTEM 4.0.
+
+5. Press ENTER to accept this configuration. Windows is now set up to run on the
+  LANtastic network.
+
+Additional Notes for Both Configurations
+----------------------------------------
+
+The following line should have been added to the [boot] section of the SYSTEM.INI
+file:
+
+     network.drv=LANTNET.DRV
+
+The following lines should have been added in the [386Enh] section of the
+SYSTEM.INI file:
+
+     network=*vnetbios,lantasti.386
+     EMMExclude=D800-DFFF
+     PerVMFiles=0
+     NetHeapSize=64
+     NetAsynchTimeout=5.0
+     NetAsynchFallback=TRUE
+
+Note: If you are upgrading from earlier versions of LANtastic 2.x or 3.x, you
+need to remove the following lines from the [386Enh] section of the SYSTEM.INI
+file:
+
+     InDOSPolling=TRUE
+     ReflectDOSInt2a=TRUE
+     UniqueDOSPSP=TRUE
+
+LANtastic is manufactured by Artisoft, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+REFERENCES
+==========
+
+Artisoft technical bulletin: "Multitasking Software: Microsoft Windows 3.0"
+(WIN300 07.19.91)
+
+SYSINI3.TXT from Windows 3.0
+
+Additional query words: 3.00 3.00a lan tastic lan-tastic set-up artasoft 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

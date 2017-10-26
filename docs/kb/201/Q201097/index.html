@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201097: PRB: ClassView Does Not Display COM Interface Nodes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201097: PRB: ClassView Does Not Display COM Interface Nodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201097/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201097/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201097/","publisher":null,"image":null,"headline":"Q201097: PRB: ClassView Does Not Display COM Interface Nodes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201097-prb-classview-does-not-display-com-interface-nodes">Q201097: PRB: ClassView Does Not Display COM Interface Nodes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201097
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbClassView kbide kbVC500bug kbVC600bug kbDSupport kbGrpDSTools kbNoUpdate
+Last Modified: 18-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add COM_INTERFACE_ENTRY(IMyIF) to the COM map in a class, a
+corresponding interface node does not appear on the class in ClassView.
+
+CAUSE
+=====
+
+There is no interface declaration for IMyIF in the project's .idl file, or the
+.idl file has not been saved with that declaration. This is per the current
+design of ClassView.
+
+RESOLUTION
+==========
+
+Add the interface declaration to the project's .idl file and save it. In Visual
+C++ 6.0, the interface node will immediately appear on the class in ClassView.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+The ClassView pane in Visual C++ displays special nodes for interfaces defined
+in a project's .idl file. If a Visual C++ class implements that interface,
+specifying it with the COM_INTERFACE_ENTRY() macro between the BEGIN_COM_MAP()
+and END_COM_MAP() macros, ClassView displays a special node in the class tree as
+well.
+
+In both Visual C++ 5.0 and 6.0, you must save the .idl file for ClassView to
+display new interface definitions. ClassView now displays nodes for the
+COM_INTERFACE_ENTRY() macros inside class definitions, where those macros
+reference interfaces in the .idl file. In Visual C++ 5.0, you must also save the
+class definition file before ClassView can display the new interface node for
+the class.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Download the LABRADOR sample from the Compiler COM Support samples.
+
+2. Open the Labrador.dsw workspace from the downloaded sample.
+
+3. In the workspace pane, click the ClassView tab. To display the workspace
+  pane, right-click any blank area on the menu area, then select Workspace if
+  it is not already selected.
+
+4. Expand the Labrador classes and the CLabrador branches.
+
+5. Double-click CLabrador. The cursor jumps to the beginning of the CLabrador
+  class definition in Labobj.h.
+
+6. Search for the END_COM_MAP() macro. On the line before it, type
+  "COM_INTERFACE_ENTRY(IMyIF)" (without the quotation marks). Note there is no
+  change in ClassView.
+
+7. Double-click the IDog node. The cursor jumps to the IDog interface definition
+  in Labrador.idl, right after its attributes.
+
+8. After the end of the IDog definition, enter the following code:
+
+        [
+           object,
+           uuid(62A33E87-932A-11CF-B056-00A0C90348FA),
+           helpstring("IMyIF Interface"),
+           pointer_default(unique)
+        ]
+        interface IMyIF : IUnknown
+        {
+        };
+
+  Note there is still no change in ClassView.
+
+9. On the File menu, click Save.
+
+Note that two nodes now appear for IMyIF in ClassView, one for the Labrador
+classes branch, and one under the CLabrador branch. With Visual C++ 5.0, you
+must also save the Labobj.h file to view the CLabrador node.
+
+REFERENCES
+==========
+
+For additional information on the ?_COM_MAP macros, see the following
+documentation:
+
+- MSDN library for VC++ 5.0:
+
+  Visual C++; C/C++ Language and C++ Libraries; Active Template Library; Class
+  Reference; ATL Macros and Global Functions; "BEGIN_COM_MAP"
+
+- MSDN library for VC++ 6:
+
+  Visual C++ Documentation; Reference; Microsoft Foundation Class Library and
+  Templates; Active Template Library; Class Reference; ATL Macros and Global
+  Functions; "BEGIN_COM_MAP"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbClassView kbide kbVC500bug kbVC600bug kbDSupport kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172046/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172046/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172046/","publisher":null,"image":null,"headline":"Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172046-xcln-patch-for-outlook-deployment-kit-on-april-select-cd">Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172046
+Product(s): Microsoft Exchange
+Version(s): 98
+Operating System(s): 
+Keyword(s): kbgraphxlinkcritical
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 98 Deployment Kit 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Outlook 98 client installations that are created with the Outlook 98
+Deployment Kit that is included with the April 1, 1998 Select CD-ROM do not
+respond correctly to registration as the default mail client. Mailto: URLs and
+the Microsoft Internet Explorer Mail button may not function properly. This is
+the result of an error in the Stdprf.inf file. The Odkupd.exe file automatically
+fixes this error.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  DownloadDownload Olodkupd.exe now
+  (http://download.microsoft.com/download/outlook98/odk/1/win98/en-us/Olodkupd.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The following is the Readme.txt file for the Odkupd.exe file. This file
+automatically fixes the error in the Stdprf.inf file in the Outlook Deployment
+Kit found on the April Select CD-ROM. You can obtain this Readme.txt file by
+downloading Olodkupd.exe from the Microsoft Download Center and by extracting
+its contents.
+
+      --------------------------------------------------------
+             Microsoft Outlook 98 README for Odkupd.exe
+                              March 1998
+      --------------------------------------------------------
+              (c) Copyright Microsoft Corporation, 1998
+
+  ------------
+  INTRODUCTION
+  ------------
+
+  This utility is designed to correct an error in the Stdprf.inf file in
+  the Outlook Deployment Kit, found on the April Select CD-ROM. It should    not be used in any other version of the Outlook Deployment Kit.
+
+  The Olodkupd.exe file contains the following files:
+
+  Odkupd.exe   The patch that corrects the error in the Stdprf.inf file
+  Readme.txt   Information about the patch and instructions for manually
+               correcting the error
+
+  SYMPTOMS
+  --------
+  Outlook 98 client installations created with the Outlook 98 Deployment
+  Kit that shipped with the April 1, 1998 Select CD-ROM will fail to     correctly register as the default mail client. Mailto: URLs and Internet
+  Explorer's "Mail" button will not function properly.
+
+  This is a result of a single, missing quotation in two copies of the
+  Outlook 98 Deployment Kit file Stdprf.inf. If the Created Date = March
+  12, 1998 of either of the Stdprf.inf files on your computer, select one
+  of the methods below to correct the problem.
+
+  Method 1
+  --------
+
+  To correct this problem automatically, run Odkupd.exe. It replaces both
+  copies of the Stdprf.inf file.
+
+  Method 2
+  --------
+
+  To correct this problem manually, follow the steps below.
+
+  NOTE: You must do this before you use the Outlook Deployment Kit. If you
+  already deployed an Outlook 98 Client installation, you must rebuild it.
+
+  1. Locate both copies of Stdprf.inf. The default locations are:
+
+        \Program Files\ODK\olbin\ 
+
+        - and -
+
+        \Program Files\ODK\olbin\en\optional\ 
+
+  2. Open each file in a text editor, such as Notepad.
+
+  3. Locate the following line:
+
+       Q=""
+
+     Replace that line with:
+
+       Q="""
+
+  4. Save and close the file.
+
+Additional query words: 98 ODK
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+Version           : :98
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

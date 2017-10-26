@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288420: XADM: How to Re-create a Directory Object for a System Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288420: XADM: How to Re-create a Directory Object for a System Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288420/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288420/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288420/","publisher":null,"image":null,"headline":"Q288420: XADM: How to Re-create a Directory Object for a System Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288420-xadm-how-to-re-create-a-directory-object-for-a-system-folder">Q288420: XADM: How to Re-create a Directory Object for a System Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288420
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some cases, you may want to manually re-create the Directory object for a
+public folder rather than running a DS/IS consistency adjuster. In this way, you
+will avoid the possibility of rehoming public folders in your environment.
+
+RESOLUTION
+==========
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+To manually re-create the Directory object, follow these steps:
+
+1. Restore an old Directory database from backup to a recovery server in a lab
+  environment that has been disconnected from the production network. The old
+  Directory that you restore does not have to be a Directory database from a
+  server in the site where the folder was homed. The Dir.edb from a server in
+  any connected site will do, because every site should have a copy of the
+  Directory object for the folder.
+
+For additional information about configuring a recovery server for the Directory
+database, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q177635 XADM: How to Set Up a Disaster Recovery Server for Dir.edb
+
+2. After the Directory Service has been restored and is running on the recovery
+  server, start the Exchange Administrator program in Raw mode (admin /r).
+
+  Highlight the Global Address List in the left pane. On the View menu, click
+  Hidden Recipients. Find the system folder in question, and then dump the raw
+  attributes of the folder. To dump the raw attributes of the folder, follow
+  these steps:
+
+  a. Highlight the object, while you press and hold down the CTRL key.
+
+  b. On the File menu, click Raw Properties.
+
+  c. Release the CTRL key after the properties window appears.
+
+  The raw attributes of this folder are dumped to a file called Admindmp.txt in
+  the Exchsrvr\bin directory.
+
+3. On the production Exchange Server computer, start the Exchange Administrator
+  in Raw Mode (admin /r).
+
+4. Highlight the Recipients container, click New Other on the File menu, and
+  then click Raw Object. Choose Public-Folder from the list of objects
+  presented to you.
+
+5. Open the Admindmp.txt file that you created in step 2. It is recommended that
+  you cut and paste the contents of this file into a Microsoft Word document,
+  rather than in Notepad.
+
+6. Under the "List attributes of type", click ALL. For each attribute listed
+  below, highlight the value for this attribute, paste the appropriate value
+  into the Edit Value field, and then click Set. For those objects with
+  multi-valued fields, you will choose ADD (the only option available) rather
+  than SET after you paste in the appropriate value(s). The values listed below
+  are provided as an example of what you will see in the Admindmp.txt file.
+
+  Insert the values listed in the text file (without the single quotes
+  surrounding each value) rather than the values listed below. The attributes
+  below are only listed as examples of what you will find in the Admindmp.txt
+  file:
+
+  Alias Name: Schedule+ Free Busy Information - NorthAmerica
+
+  Deliv-Ext-Cont-Types: (Choose ADD after pasting the value below)
+  2A864886F7140501
+
+  Delivery-Mechanism: 0
+
+  Directory Name:
+  EX:_O=MYORG_OU=NORTHAMERICA-1264689012646890126468901E398F5F000007
+
+  Display Name: Schedule+ Free Busy Information - NorthAmerica
+
+  E-mail Addresses: (Enter the following 3 values one at a time. Choose ADD
+  after pasting each value)
+  CCMAIL:Schedule+ Free Busy Information - NorthAmerica at NorthAmerica
+
+  SMTP:Schedule+FreeBusyInformation-NorthAmerica@Myorg.com
+
+  X400:c=US;a= ;p=Myorg;o=NorthAmerica;s=Schedule+ Free Busy Information -
+  NorthA;
+
+  Folder-Pathname: SCHEDULE+ FREE BUSY\EX:/o=Myorg/ou=NorthAmerica
+
+  Hide from AB: 1
+
+  Home-MDB:
+  /o=ML/ou=NorthAmerica/cn=Configuration/cn=Servers/cn=EPCC24/cn=Microsoft
+  Public MDB
+
+  Home-MTA:
+  /o=ML/ou=NorthAmerica/cn=Configuration/cn=Servers/cn=EPCC24/cn=Microsoft MTA
+
+  Object-Class: (Enter the following 3 values one at a time. Choose ADD after
+  pasting each value)
+
+  2A864886F71401030F
+
+  2A864886F71401032E
+
+  550600
+
+7. Click Apply, make sure that all fields that you edited held their values, and
+  then click OK.
+
+After the directory entry has been created, you should be able to fully access
+the properties of the folder in the Exchange Administrator program.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

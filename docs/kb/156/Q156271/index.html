@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156271/","publisher":null,"image":null,"headline":"Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156271-sms-installation-scripts-for-run-command-on-workstation">Q156271: SMS: Installation Scripts for "Run Command on Workstation"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156271
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork kbPCM smsappscripts smspcm kbSMSAppScripts
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An installation script is required for "Run Command on Workstation" packages, if
+the executable file specified in the Package Command Line terminates after
+calling a second executable file that relies on accessing the package share
+location to continue.
+
+Many applications run a setup program, and the original executable (such as
+Setup.exe) does not keep running throughout the duration of setup. When creating
+a "Run Command on Workstation" package, the executable file to run is specified.
+When the workstation receives that package, and the Package Command Manager
+(PCM) goes to run it, PCM does a NET USE to the package share location. As soon
+as the original executable file is finished running, PCM deletes the share. If
+the executable file spawned another executable file before it closed, the second
+application will fail if it relies on the source share. The error messages that
+may result from this problem vary from application to application. PCM will
+report in the Pcmwin.log file that the package ran successfully.
+
+There may or may not be error messages when the installation fails, depending on
+the setup application. The following are examples of common error messages or
+problems that may be encountered:
+
+  Insert Disk 16 in Drive N:
+
+  Unable to read from Drive N:
+
+  Disk Error Drive/on Device N:
+
+  Error reading Drive N
+
+  Error opening file XXX
+
+  Error in script line 123 - cannot open media script file
+
+Buttons or windows may be blank or not drawn correctly
+
+The system stops responding
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- If the application to be installed is an MS-DOS-based application, or a
+  Windows-based application on a client computer running Windows NT, it may be
+  possible to create a batch file containing the command for the setup
+  executable file, and then use the batch file as the command line when
+  creating the package.
+
+- If the application is a 16-bit application for a computer running Windows
+  3.1, Windows NT, or Windows 95, use Execute.exe to run a two- phase setup
+  program under the PCM program. Execute.exe is provided with the Systems
+  Management Server 1.2 Resource Kit, and requires a basic understanding of
+  Visual C++.
+
+- Copy the source files to the local hard drive, before launching setup.
+
+MORE INFORMATION
+================
+
+MSTest is not the only option for writing an installation script for "Run
+Command on Workstation" packages. There are other options, such as using
+InstallShield or WINInstall, Visual Basic, C, or even Visual Test (for client
+computers running Windows NT only).
+
+NOTE: If the entire setup program runs from a single executable file (many
+programs do), it is not necessary to write an installation script at all.
+
+The following are some third-party applications that can be used to write an
+installation script:
+
+- MSTest by Microsoft Corporation
+
+- Visual Test by Microsoft Corporation
+
+- InstallShield by Installshield Corporation
+
+- WINInstall by Seagate (formerly OnDemand Software)
+
+- WinBatch by Wilson WindowWare
+
+- LAN Script by ABC Systems
+
+- Wise Solutions, Inc.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+For more information on this subject, see the following articles in the Microsoft
+Knowledge Base:
+
+  Q130373 Obtaining Package ID From Within an Microsoft Test Script
+
+  Q151735 Visual Test 4.0 Not Supported with Windows 95 PCM
+
+  Q153227 PCM Requires Reboot After Executing Package
+
+  Q128612 SMS: Visual Basic Application Setup Fails When Executed by PCM
+
+Additional query words: prodsms WIN Install Shield
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbPCM smsappscripts smspcm kbSMSAppScripts 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

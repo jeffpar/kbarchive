@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149501/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149501/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149501/","publisher":null,"image":null,"headline":"Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149501-prb-child-cpropertysheet-hangs-if-focus-is-switched">Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149501
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:1.0; winnt:4.0a
+Operating System(s): 
+Keyword(s): kbMFC kbPropSheet KbUIDesign kbVC kbGrpDSMFCATL
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Class, version 1.0 
+- Microsoft Visual C++, version 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a modeless CPropertySheet is a child of a CDialog or another CPropertySheet,
+the program will hang in the following situations:
+
+- The focus is switched back to a PropertyPage that previously had the focus.
+
+- The focus is placed on a control on a PropertyPage, and then the focus is
+  switched to another window (for example, Program Manager).
+
+- The focus is on a control on a PropertyPage and the PropertySheet is closed.
+
+The program hangs because the child CPropertySheet continuously receives a
+WM_GETDLGCODE message.
+
+CAUSE
+=====
+
+By default, CPropertyPages have a WS_EX_CONTROLPARENT style. However,
+CPropertySheets do not have this style. This style allows a user to press the
+TAB key to move from a control inside the page to one in the sheet.
+
+When the focus is switched from the CPropertyPage, code that handles default
+command buttons loops through all the controls in the pages and the sheet.
+Cycling through controls is done using GetNextDlgTabItem(). The loop cycles
+through controls in the page in the child CPropertySheet and finds its way to
+controls in the parent page or parent dialog. At this point, GetNextDlgTabItem()
+is not able to find controls inside the child CPropertySheet because it doesn't
+have a WS_EX_CONTROLPARENT style. The loop never ends because it never finds the
+original control that had the focus.
+
+RESOLUTION
+==========
+
+Override OnInitDialog() for the child CPropertySheet, and add the
+WS_EX_CONTROLPARENT style.
+
+STATUS
+======
+
+This is a problem with the implementation of the Property Sheet common control,
+and not MFC's CPropertySheet wrapper.
+
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     // CMySheet is derived from CPropertySheet
+     BOOL CMySheet::OnInitDialog()
+     {
+               ModifyStyleEx (0, WS_EX_CONTROLPARENT);
+               return CPropertySheet::OnInitDialog();
+     }
+
+     /* Compile options needed: default
+     */ 
+
+Additional query words: WS_CHILD Property Sheet lock freeze page modal
+
+======================================================================
+Keywords          : kbMFC kbPropSheet KbUIDesign kbVC kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper _IKkbbogus kbMFC kbVC400a
+Version           : WINDOWS:1.0; winnt:4.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

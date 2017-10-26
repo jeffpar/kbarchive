@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128929: LAN Manager Logon Script Window Placement in WFW | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128929: LAN Manager Logon Script Window Placement in WFW" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128929/","publisher":null,"image":null,"headline":"Q128929: LAN Manager Logon Script Window Placement in WFW","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128929-lan-manager-logon-script-window-placement-in-wfw">Q128929: LAN Manager Logon Script Window Placement in WFW</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128929
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11; :2.2b; winnt:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft LAN Manager, version 2.2b 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on from a Windows for Workgroups 3.11 client computer to a LAN
+Manager or Windows NT domain and your logon script (defined on the server)
+executes, two windows with identical LAN Manager Logon Script title bars appear.
+The window in the foreground states the following, and displays a Cancel
+button:
+
+  Please wait while your logon script executes...
+
+If you press Enter, the logon script on the background window stops with the
+following error messages:
+
+  Batch file missing
+  Bad command or file name
+
+NOTE: The error messages above disappear very quickly. To view the error
+messages, ensure that LMSCRIPT.PIF file does not have the Close Window On Exit
+check box selected. The LMSCRIPT.PIF file is located in the WINDOWS\SYSTEM
+subdirectory.
+
+CAUSE
+=====
+
+An additional window for the logon script with a Cancel button appears in front
+of the actual logon script window when:
+
+- WinPopup is enabled for Startup Settings in Control Panel Network.
+
+-and-
+
+- Domain Logon password is saved in the user's password list (PWL) file.
+
+The above error messages occurs when you press Enter during the execution of the
+logon script in the second background window. This operation cancels the logon
+script execution.
+
+RESOLUTION
+==========
+
+To work around this problem, select the window running the logon script to place
+it in the foreground.
+
+To correct this problem:
+
+1. Reset the cached Domain Logon password by deleting the &lt;username&gt;.PWL
+  file in the WINDOWS directory.
+
+2. Log on to the Domain again. When the Domain Logon dialog box appears, enter
+  the logon information, but do not select "Save this Password in Your Password
+  List."
+
+3. Run Control Panel, choose Network. Disable WinPopup.
+
+  If your require WinPopup, add the following in the [windows] section of the
+  WIN.INI file:
+
+        load=winpopup.exe
+
+Additional query words: prodnt 3.10 3.11 2.20b wfw wfwg lanman user name
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbLanManSearch kbWFWSearch kbWFW311 kbLanMan220b
+Version           : WINDOWS:3.11; :2.2b; winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

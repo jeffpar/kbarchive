@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228929: WD97: IPF Merging Data File After Numbering Records | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228929: WD97: IPF Merging Data File After Numbering Records" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228929/","publisher":null,"image":null,"headline":"Q228929: WD97: IPF Merging Data File After Numbering Records","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228929-wd97-ipf-merging-data-file-after-numbering-records">Q228929: WD97: IPF Merging Data File After Numbering Records</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228929
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 kbfield word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you number the records contained in your data file, when you merge your
+data file in a Word mail merge, the following error message may be displayed:
+
+  This program has performed an illegal operation and will be shut down.
+
+  If the problem persists, contact the program vendor.
+
+When you click Details, the following error message is displayed:
+
+  WINWORD caused an invalid page fault in WINWORD.EXE at 015f:301be993.
+
+CAUSE
+=====
+
+This problem occurs when your data file contains either a LISTNUM or an AUTONUM
+field.
+
+WORKAROUND
+==========
+
+Use one of the following methods to number the records or labels.
+
+Method 1: Use the Microsoft Word Numbering Feature
+--------------------------------------------------
+
+1. Open your data file.
+
+2. Select the table column containing the LISTNUM or AUTONUM field and then
+  press DELETE. This removes the LISTNUM or AUTONUM fields from your data file
+  that you used for numbering each record (table row).
+
+  NOTE: If you have other LISTNUM or AUTONUM fields contained in the data file,
+  remove them also.
+
+3. Select just the table cells that you want to contain a record number.
+
+4. On the Format menu, click Bullets and Numbering.
+
+5. On the Numbered tab, select the type of numbering you want and then click OK.
+  Word should number each selected table cell.
+
+  NOTE: If you want to modify the number format (for example, remove the period
+  after the number), on the Numbered tab, select the number style you want and
+  then click Customize to make changes to the number format.
+
+Method 2: Manually Type the Record Number
+-----------------------------------------
+
+1. Open your data file.
+
+2. Select the table column containing the LISTNUM or AUTONUM field and then
+  press DELETE. This removes the LISTNUM or AUTONUM fields from your data file
+  that you used for numbering each record (table row).
+
+  NOTE: If you have other LISTNUM or AUTONUM fields contained in the data file,
+  remove them also.
+
+3. Position the insertion point in the table cell you want to number, and then
+  type in the record (row) number.
+
+4. Repeat step 3 for each table row you want to number.
+
+Method 3: Use Merge Record #
+----------------------------
+
+If you want the number of the record of your data file to appear on your merged
+document (for example, the record number to appear on each label), use the
+following steps:
+
+1. Open your data file.
+
+2. Select the table column containing the LISTNUM or AUTONUM field and then on
+  the Table menu, click Delete Columns. This removes the table column that
+  contained your record numbers (the LISTNUM or AUTONUM fields).
+
+3. Save and close your data file.
+
+4. In your mail merge main document, position your insertion point where you
+  want the record number to appear.
+
+5. On the Mail Merge toolbar, click Insert Word Field and then click Merge
+  Record #.
+
+6. Repeat steps 4-5 for each location that you want the record number to appear
+  (for example, on each label).
+
+When you complete your mail merge, the record number will print for each record
+in your data file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: ipf gpf errmsg errormessage source datasource
+
+======================================================================
+Keywords          : kbdta word8 kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

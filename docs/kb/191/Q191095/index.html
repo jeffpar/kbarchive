@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191095: BUG: Error When Attempting to Update Included Files in PDW | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191095: BUG: Error When Attempting to Update Included Files in PDW" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191095/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191095/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191095/","publisher":null,"image":null,"headline":"Q191095: BUG: Error When Attempting to Update Included Files in PDW","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191095-bug-error-when-attempting-to-update-included-files-in-pdw">Q191095: BUG: Error When Attempting to Update Included Files in PDW</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191095
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbwizard kbAppSetup kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to update the included files in the Package and Deployment Wizard
+(PDW) with a newer version of a file (located in a different folder than the
+original), you receive the following error message:
+
+  A file with this name has already been added to the list of files
+
+The error occurs even if you clear the check box next to the file to be updated
+before adding the new version of the file.
+
+RESOLUTION
+==========
+
+To work around the problem, use one of the following five methods.
+
+Method 1: Modify the Project (.vbp) File
+----------------------------------------
+
+If the file you are attempting to replace in the Included Files screen of the PDW
+is the project's .exe file, the .vbp file is pointing to the wrong .exe file.
+This can occur when you make the .exe, saving it to a different location, but do
+not save the changes to the .vbp afterward.
+
+To update the .vbp file to point to the correct .exe, then follow these steps:
+
+1. Open the project in Visual Basic.
+
+2. Make the .exe in the new location again.
+
+3. Save the project.
+
+These steps update the setting of Path32 in the .vbp file. When you rerun the
+PDW, it will include the correct .exe file, even if you use an existing script.
+
+Method 2: Copy New File Over Original File
+------------------------------------------
+
+Copy the new version of the file to the location of the original version, and
+then rerun the PDW.
+
+NOTE: Back up the original file to another location first if you want to keep
+it.
+
+Method 3: Copy New File to Redist Folder
+----------------------------------------
+
+Copy the new version of the file to the VB98\Wizards\PDWizard\Redist folder, and
+then run the PDW again. By default, the PDW always looks for the files in the
+Redist folder first.
+
+Method 4: Copy New File to Support Folder and Rebuild CAB
+---------------------------------------------------------
+
+If you have previously created a Setup package for this project, you can copy the
+new version of the file to the package's Support folder and then run the .bat
+file in the same folder to re-create the Setup package.
+
+NOTES:
+
+- If the version number, date, or size of the new file is different from the
+  original, you should also modify the entries for that file in Setup.lst. For
+  additional information, please see the following articles in the Microsoft
+  Knowledge Base:
+
+
+  Q190077 : HOWTO: Set Number of .CAB's in Setup.lst After Repackaging
+
+- This method is quick, but does not affect any of your future PDW sessions.
+
+Method 5: Modify the Script (.pdm) File
+---------------------------------------
+
+You can manually modify the script (.pdm) file in a text editor, such as NotePad.
+The .pdm file contains all the scripts for a single project, and it is a
+recording of all the options you selected when packaging or deploying an
+application using the PDW.
+
+To modify the path to a folder in a script, open the project's .pdm file in a
+text editor, and modify the path in all references to the file. After saving the
+changes to the file, rerun the PDW.
+
+NOTE:
+
+- This method does not work for updating the path to the project's .exe file.
+  The PDW picks up the path from the Path32 setting of the .vbp file instead.
+
+- Make a backup copy of the .pdm file before modifying.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Place a command button on Form1.
+
+3. Save the project.
+
+4. Compile the project by selecting Make Project1.exe on the File menu.
+
+5. Run the PDW, and select the project you just created.
+
+6. Click Package, and follow the instructions in the wizard to create the setup
+  package.
+
+7. Reopen Project1.vbp in Visual Basic, recompile the project, and save the
+  executable in another location (for example, C:\Temp).
+
+8. Run the PDW, and select Project1 again. Click Package, and follow the
+  instructions in the wizard until you get to the "Included Files" screen.
+
+9. Clear the check box for the original Project1.exe, and then click Add. In the
+  Add File dialog box, select the new Project1.exe found in C:\Temp and click
+  Open.
+
+The following error message appears:
+
+  A file with this name has already been added to the list of files You cannot
+  add the new version of Project1.exe into the setup package.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbwizard kbAppSetup kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

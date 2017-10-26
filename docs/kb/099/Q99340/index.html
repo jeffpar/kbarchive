@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99340: Windows 3.1 Card File Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99340: Windows 3.1 Card File Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99340/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99340/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99340/","publisher":null,"image":null,"headline":"Q99340: Windows 3.1 Card File Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99340-windows-31-card-file-format">Q99340: Windows 3.1 Card File Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99340
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article documents the file format used by Microsoft Windows version 3.1
+Cardfile. Please note that the Cardfile file format (.CRD) may change in future
+versions. All numbers in this document, including those in the descriptive text,
+should be interpreted as hexadecimal numerals. All data pointers and count bytes
+in the file are unsigned binary/hexadecimal integers in least-to-most
+significant format. All text in the file is saved in low ASCII format. In the
+text section of a card's data, &lt;CR&gt; is always followed by &lt;LF&gt;.
+
+MORE INFORMATION
+================
+
+Card File Changes in NT 3.51
+----------------------------
+
+The only difference in the unicode format is the signiture (DKO) and the
+characters, now 16-bits wide. The Signature can now be MGC.
+
+The Cardfile file format is as follows:
+
+  Byte #  Description
+  -------------------
+  0 - 2   Signature bytes--always "RRG" (52 52 47).
+  3 - 6   Last object's ID.
+  7 - 8   Number of cards in file.
+
+Beyond the first 9 bytes are the index lines--the information about the top line
+of each card. The first index entry begins at byte 9 in the file, and successive
+entries begin 34 bytes after the beginning of the last index entry (the second
+entry at byte 3D, the third entry at byte 71, and so forth). The format for each
+index line entry is as follows:
+
+  Byte #  Description
+  -------------------
+  0 - 5   Null bytes, reserved for future use (should all be 00).
+  6 - 9   Absolute position of card data in file.
+  A       Flag byte (00).
+  B - 32  Index line text.
+  33      Null byte; indicates end of index entry.
+
+After the last index entry, each card's data is stored. Card data is in one of
+four general formats: graphic and text, text only, graphic only, and blank.
+Blank cards consist of 4 null bytes; the other card formats are below:
+
+  Graphic       Text     Graphic
+  &amp; Text        Only     Only
+  -------------------------------------------------------------------
+  0 - 1        0 - 1#    0 - 1         Flag Determining whether or not
+                                       the card contains an object.
+  2 - 5          *       2 - 5         Unique object ID.
+  6 - x          *       6 - x         The OLE object.
+  x+1 - x+2      *       x+1 - x+2     Character width, used for device
+                                       independence.
+  x+3 - x+4      *       x+3 - x+4     Character height.
+  x+5 - x+C      *       x+5 - x+C     RECT: left  - X-coordinate of the
+                                                     upper-left corner.
+                                             top   - Y-coordinate of the
+                                                     upper-left corner.
+                                             right - X-coordinate of the
+                                                     lower-right corner.
+                                             bottom- Y-coordinate of the
+                                                     lower-right corner.
+  x+D - x+E      *       x+D - x+E     Object type embedded=0, linked=1,
+or
+                                       static=2 (values may change in the
+                                       future).
+  x+F - x+10   2 - 3     x+F - x+10#   Length of text entry.
+  x+11 - y     4 - z         *         Text.
+
+NOTE:
+
+  x = 6 + size in bytes of the entire OLE object (the entire size of the
+      object is not stored anywhere within the .CRD file). See below for
+      more information on the OLE object size.
+  y = x + 10 + length of text entry.
+  z = 3 + length of text entry.
+  # - These bytes are null if no object/text.
+  * - These bytes do not exist if no object/text.
+
+The first byte of any card's data entry is pointed to by bytes 6-9 in the index
+entry. Note that no null byte is used to indicate the end of the card's data
+entry; the next card's data entry immediately follows the last byte of the
+previous entry, which is null only if the previous card has no text (null length
+of text entry).
+
+OLE Object
+----------
+
+The size of the OLE object is not stored anywhere within the .CRD file. The OLE
+object could be loaded using OleLoadFromStream(); however, to get passed the OLE
+object, the file needs to be parsed. The OLE object's format description is
+documented in Appendix C of the "Object Linking and Embedding Programmer's
+Reference" version 1.0, published by Microsoft Press, and also in the Microsoft
+Windows Software Development Kit (SDK) "Programmer's Reference, Volume 1:
+Overview," Chapter 6, Object Storage Format. Below is an algorithm that uses the
+OLE object's format description to parse the OLE object in the .CRD file and
+pass it.
+
+Need Five Primary Functions
+---------------------------
+
+  Primary Function        Description
+  -----------------------------------
+  ReadLong()            - Reads a long from the file and advances the file
+                          pointer.
+  EatBytes(NumBytes)    - Reads and discards the specified number of bytes
+                          from the file and advances the file pointer.
+  RdChkVer()            - Reads the version number and advances the file
+                          pointer and returns TRUE if version is 1.0. To
+                          check the version number, the received value
+                          must be converted to Hex then checked against
+                          0x0100.
+                          (See below for the algorithm of this function.)
+  RdChkString()         - Reads the string and checks the value to see if
+                          it is either METAFILEPICT, BITMAP, or DIB, then
+                          returns TRUE; otherwise, returns FALSE. Advances
+                          the file pointer too.
+  SkipPresentationObj() - Reads and skips the variable-length presentation
+                          object at the end of each object type.
+                          (See below for the algorithm of this function.)
+
+Algorithm to Skip Over the OLE Object
+-------------------------------------
+
+  if (RdChkVer)                  // If the version is 1.0
+    Format = ReadLong();         // 1==&gt; Linked, 2==&gt; Embedded, 3==&gt; Static
+    EatBytes(ReadLong());        // Class String
+    if (Format == 3)             // Static object
+      ReadLong();                // Width in mmhimetric.
+      ReadLong();                // Height in mmhimetric.
+      EatBytes(ReadLong());      // Presentation data size and data itself.
+    else                         // Embedded or linked objects.
+      EatBytes(ReadLong());      // Topic string.
+      EatBytes(ReadLong());      // Item string.
+      if (Format == 2)           // Embedded object.
+        EatBytes(ReadLong());    // Native data and its size.
+        SkipPresentationObj()    // Read and eat the presentation object.
+      else                       // Linked object.
+        EatBytes(ReadLong());    // Network name.
+        ReadLong();              // Network type and net driver version.
+        ReadLong();              // Link update options.
+        SkipPresentationObj()    // Read and eat the presentation object.
+
+SkipPresentationObj()
+---------------------
+
+  if (RdChkVer)                  // If the version is 1.0
+    ReadLong();                  // Format ID
+    if (RdChkString())           // if Class String is either
+                                 // METAFILEPICT or BITMAP or DIB.
+      ReadLong();                // Width in mmhimetric.
+      ReadLong();                // Height in mmhimetric.
+      EatBytes(ReadLong());      // Presentation data size and data itself
+    else
+      if (!ReadLong())           // if Clipboard format value is NULL
+        EatBytes(ReadLong());    // Read Clipboard format name.
+      EatBytes(ReadLong());      // Presentation data size and data itself.
+
+RdChkVer()
+----------
+
+  OLEVer = ReadLong();
+  OLEVer = (((WORD)(LOBYTE(OLEVer))) &lt;&lt; 8 | (WORD) HIBYTE(OLEVer);
+  if (OLEVer == 0x0100)           // Always use Hex value.
+    return TRUE;
+  else
+    return FALSE;
+
+Additional references: 3.10
+
+Additional query words: no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191183: HOWTO: Navigate Between DHTML Designer Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191183: HOWTO: Navigate Between DHTML Designer Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191183/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191183/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191183/","publisher":null,"image":null,"headline":"Q191183: HOWTO: Navigate Between DHTML Designer Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191183-howto-navigate-between-dhtml-designer-pages">Q191183: HOWTO: Navigate Between DHTML Designer Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191183
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600 kbDSupport
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have multiple page designers in your application, you can move from one
+page to another within your application, or you can navigate to a page outside
+of your DHTML application, including Active Server Pages (ASP) pages.
+
+MORE INFORMATION
+================
+
+The DHTML Designer page is an HTML page with a COM component. Therefore,
+navigating between multiple page designers is no different than navigating
+between HTML pages. Following are two examples of navigating between page
+designer pages.
+
+Using a Hyperlink
+-----------------
+
+If you want to navigate from Page1.htm to Page2.htm when the user clicks on a
+hyperlink, you need to:
+
+1. Insert a Hyperlink object from the toolbox into Page1.htm.
+
+2. Set the HREF property to "Page2.htm".
+
+NOTE: In step 2 you set the HREF to a relative file name. This is preferred
+because it works no matter where your files are stored as long as Page1.htm and
+Page2.htm are in the same location.
+
+You can use an absolute path for HREF as well. For example, you can set this
+property to http://msdn.microsoft.com/vbasic/Default.asp.
+
+You can change the caption of the hyperlink by simply editing it in the main
+designer screen.
+
+Additionally, you can convert existing plain text in the designer to a new
+hyperlink. To convert existing text to a hyperlink, highlight the text and click
+the "Make Selection into Link" icon from the designer toolbar.
+
+Navigating from Code
+--------------------
+
+You may want to navigate from within your Visual Basic code behind the DHTML page
+designer, as in the following examples:
+
+1. Use the location object available from BaseWindow:
+
+        BaseWindow.location.href = "Page2.htm"
+        BaseWindow.location.replace "page2.htm"   'History not maintained.
+        BaseWindow.location.hash = "#bookmark"    'Navigate to bookmark.
+
+2. Use the Navigate method from BaseWindow:
+
+        BaseWindow.navigate "http://www.microsoft.com/vbasic"
+
+You can use the preceding code within an Onclick event handler of a button
+element or other elements.
+
+REFERENCES
+==========
+
+Please see the following article here in the Microsoft Knowledge Base for more
+information on the DHTML Page Designer:
+
+  Q190249 INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

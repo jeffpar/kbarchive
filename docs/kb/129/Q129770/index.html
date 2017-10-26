@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129770/","publisher":null,"image":null,"headline":"Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129770-fix-cstringtrimleft-fails-in-a-unicode-application">Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129770
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbnokeyword kbMFC kbVC210bug kbVC220fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ 32-bit Edition, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a UNICODE application, CString::TrimLeft creates a string that is the same
+length as the original with the first half of the trimmed string replacing the
+first few characters of the original string.
+
+The following are examples that show the result of using TrimLeft in a UNICODE
+application. The dash (-) character represents white space.
+
+  CString::TrimLeft()
+
+  Before      After
+  -------------------
+  --A         A-A
+  --AB        ABAB
+  --ABC       ABABC
+  --ABCD      ABCBCD
+  --ABCDE     ABCBCDE
+
+CAUSE
+=====
+
+The CString::TrimLeft function trims all leading white space characters from a
+string when using ASCII, which is a single-byte character set. However, when
+using UNICODE, which is a double-byte character set, the CString::TrimLeft
+function copies only half of the non-white space characters over the white
+spaces. In addition, because the null character is not in the first half of the
+non-white space characters, you end up with a new string that is a combination
+of the copied characters and the original string. This is due to the following
+line of code in STREX.CPP, which you'll find in MSVC20\MFC\SRC:
+
+     memmove(m_pchData, lpsz, nDataLength+1);
+
+This line of code moves (nDataLength+1) bytes instead of characters.
+
+RESOLUTION
+==========
+
+The easiest solution is to create a global TrimLeft function to, in this case,
+take a CString as a parameter. An implementation for this global function is
+listed in the "Sample Code to Workaround Problem" section below.
+
+While it is possible to override the CString class and modify the functionality
+of TrimLeft so that characters are moved instead of bytes, Microsoft doesn't
+recommend it because you would also need to override the constructors,
+assignment operators, and destructors for your CString derived class. To
+override CString::TrimLeft, copy the functionality from CString::TrimLeft in
+STREX.CPP line 390 to your function, and then change the problem line of code to
+this:
+
+     memmove(m_pchData, lpsz, (nDataLength+1)*sizeof(TCHAR));
+
+Both solutions will work with both single-byte and double-byte character sets.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 2.2.
+
+MORE INFORMATION
+================
+
+Sample Code to Workaround Problem
+---------------------------------
+
+  /* Compile options needed:
+  This change does not require special options.
+  */ 
+
+  void TrimLeft(CString&amp; str){
+
+     // Get the cstring length and buffer pointer:
+
+        int    str_length = str.GetLength();
+        LPTSTR pstr_Data =  str.GetBuffer(str_length);
+
+    // Find the first non white-space character:
+
+       LPCTSTR pstr_non_space = pstr_Data;
+       while (_istspace(*pstr_non_space))
+               pstr_non_space = _tcsinc(pstr_non_space);
+
+    // Find the new length in characters:
+
+       int nDataLength = str_length - (pstr_non_space - pstr_Data);
+
+    // Replace this line:
+
+       // memmove(m_pchData, lpsz, nDataLength + 1);
+       // WITH THE FOLLOWING TO MOVE CHARACTERS INSTEAD OF BYTES:
+
+    memmove(pstr_Data,pstr_non_space, (nDataLength+1)*sizeof(TCHAR));
+
+    // Release the buffer pointer, and adjust the cstring length:
+
+       str.ReleaseBuffer(nDataLength);
+  }
+
+Additional query words: 2.10 3.10 3.1
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbVC210bug kbVC220fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

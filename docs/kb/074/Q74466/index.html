@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74466/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74466/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74466/","publisher":null,"image":null,"headline":"Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74466-undelete-does-not-work-if-file-deleted-from-windows-or-shell">Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74466
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the MIRROR deletion tracking program loaded (for example, MIRROR /TC),
+UNDELETE does not work if the deletion has been done through Windows or MS-DOS
+Shell File Manager. This deletion tracking program, which is a TSR
+(terminate-and-stay-resident program), cannot detect the deleted files because
+Windows and Shell delete files through ROM instead of standard interrupts.
+
+When MIRROR is installed, it tracks which files have been deleted. When UNDELETE
+/DT is run, MIRROR can recover all available clusters in the deleted file.
+However, when a file is deleted inside MS-DOS Shell, the file is not added to
+the list of deleted files. For this reason, UNDELETE /DT does not work (inside
+Shell or from DOS) if the file has been deleted in Shell.
+
+The only way to undelete the file is to use the /DOS switch on the UNDELETE
+command.
+
+MORE INFORMATION
+================
+
+If a file has been deleted in Windows or Shell, and you want to undelete it,
+shell out of Windows or MS-DOS Shell and issue the following command:
+
+  UNDELETE &lt;filename&gt; /DOS
+
+The /DOS switch recovers only those files that are internally listed as deleted
+by MS-DOS 5.0. If a deletion-tracking file exists, this switch causes UNDELETE
+to ignore it. Because the deletion tracking is ignored, the first character of a
+filename used to mark as available for reuse will not be retrievable. "UNDELETE
+&lt;filename/s&gt; /DOS" will prompt you for the first character of the
+filename.
+
+Do not use Windows or MS-DOS Shell File Manager to delete or undelete. Exit
+Windows or Shell and carry out the command from the C prompt. UNDELETE will not
+work by shelling out from Windows or Shell even though the deletion tracking
+program is installed prior to running Windows or Shell.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

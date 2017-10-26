@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110385/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110385/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110385/","publisher":null,"image":null,"headline":"Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110385-changes-made-to-configsys-by-wsscnfgexe">Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110385
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Sound System comes with an application called the Windows Sound System
+MS-DOS Configuration program (WSSCNFG.EXE). This application is run from within
+Windows to provide Creative Labs Sound Blaster emulation at the MS-DOS level.
+When you run WSSCNFG.EXE, it will add the following lines to the beginning of
+your CONFIG.SYS file:
+
+     [MENU]
+     menuitem=Default,Default Configuration
+     menuitem=SBCompat,Sound Blaster Compatibility
+
+     [SBCompat]
+     DEVICE=C:\WINDOWS\HIMEM.SYS
+     DEVICE=C:\SNDSYS\EMM386.EXE 512 RAM
+     DEVICE=C:\SNDSYS\WSSXLAT.EXE sbio=220 irq=7 dma=1
+     DOS=HIGH,UMB
+     BUFFERS=20
+     FILES=30
+
+     [Default]
+
+The rest of the lines from your pre-existing CONFIG.SYS file go here.
+
+The above lines are the default entries for a system running MS-DOS 6.0 or later,
+or a system running MS-DOS 5.0 or earlier with the addition of a third-party
+multiconfiguration program called BOOTCON. If the system is running MS-DOS 5.0
+or earlier without BOOTCON, the following changes are made.
+
+The following line is added:
+
+     DEVICE=C:\SNDSYS\WSSXLAT.EXE sbio=220 irq=7 dma=1
+
+The following line is modified if already present or added if not:
+
+    DEVICE=C:\SNDSYS\EMM386.EXE 512 RAM
+
+MORE INFORMATION
+================
+
+The DEVICE=C:\SNDSYS\EMM386.EXE line is required by the Sound Blaster emulator.
+Sound Blaster emulation will not be available if this line is not present and if
+there is not at least 512K of memory allotted to it. If you are running MS-DOS
+6.2 or later, you can use the EMM386 expanded-memory emulator (EMM386.EXE) in
+your DOS directory instead of the one in the SNDSYS directory.
+
+The DEVICE=C:\SNDSYS\WSSXLAT.EXE line is the actual Sound Blaster emulation
+driver. It will not load if the EMM386.EXE line described above is not present.
+The following parameters are valid:
+
+  sbio=&lt;220 or 240&gt;           Determines which I/O address the
+                              emulator should trap
+
+  irq=&lt;7,9,10 or 11&gt;          Determines which interrupt the
+                              emulator should check
+
+  dma=&lt;0,1 or 3&gt;              Determines which Direct Memory
+                              Access channel the emulator should
+                              monitor
+
+  wave=&lt;1-9&gt;                  Controls the volume for digitized
+                              sound in the Sound Blaster emulation
+
+  line=&lt;1-9&gt;                  Controls the volume for audio pass-
+                              through in the Sound Blaster mode
+
+NOTE: The WSSCNFG.EXE program will only work correctly with the Microsoft Windows
+Sound System audio board (or 100% compatible).
+
+Additional query words: 2.00 DOS Games Configuration Sound Blaster sbp soundblaster soundblast blast sb config configure sys multiple 6 5 4 2 mulit-configuration expanded memory
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

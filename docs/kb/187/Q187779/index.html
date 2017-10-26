@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187779/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187779/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187779/","publisher":null,"image":null,"headline":"Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187779-xadm-error-warning-30-message-contains-duplicate-email-addre">Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187779
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After a new Exchange Server computer has been added to an Exchange Server site,
+that is a requestor in directory synchronization (dirsync) with a Microsoft Mail
+3.x postoffice (PO), the following warnings may appear in the Dirsync log:
+
+   Warning [154]Non delivery report
+   Warning [30] 154 Message contains duplicate email address. Mail item
+   was not delivered to(requestor name)
+
+Address lists updates will not be propagated to the Exchange Server site, and no
+errors or warnings will show up in the Event Log for the Exchange requestor.
+
+CAUSE
+=====
+
+The new Exchange Server computer has been given the Microsoft Mail address
+"SHADOWNET\SHADOWPO\SYSTEM1" under the Directory Synchronization tab as the
+Requestor server. Consequently, the errors occur and dirsync stops functioning.
+
+Usually, when a new server is added to the site, directory replication checks for
+other MS Mail connectors and if it finds any, it automatically increments the MS
+Mail address in sequential order. For example, if a fourth Exchange Server
+computer is added to a site with an MS Mail connector, as a dirsync requestor,
+it will look for the connector during directory replication, and then assign it
+the address SHADOWNET\SHADOWPO\SYSTEM4.
+
+WORKAROUND
+==========
+
+On the Directory Synchronization Properties page, highlight the new server and
+edit the Microsoft Mail e-mail address.
+
+MORE INFORMATION
+================
+
+For additional information on how the Exchange Server Directory Synchronization
+address can be changed, please see the following Microsoft Knowledge Base
+article:
+
+  Q150828 XFOR: Dirsync Role/Number of Servers can Change DXA Addresses
+
+Additional query words: dirsync new address error 30 thirty
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148828/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148828/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148828/","publisher":null,"image":null,"headline":"Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148828-err-msg-dlchlpexe-is-required-to-support-16-bit-applications">Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148828
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbnetwork msnets win95 kbAPI kbDLC kbSDKPlatform kbGrpDSNet
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a server-based Windows 95 installation using the Microsoft
+32-bit DLC protocol (MSDLC32), Dlc.vxd may report the following error message:
+
+  DLCHP.EXE is required to support 16-bit applications. It must be loaded from
+  Autoexec.bat.
+
+CAUSE
+=====
+
+This error can be caused by either of the following conditions:
+
+- Net.exe is not being loaded before Dlchlp.exe is being run in the
+  Autoexec.bat file.
+
+- The Autoexec.bat file does not contain the correct path to the Dlchlp.exe
+  file.
+
+RESOLUTION
+==========
+
+Modify the Autoexec.bat file. Make sure that Net.exe is loaded before
+Dlchlp.exe, and that the path for the Dlchlp.exe file is correct. The path for
+the Dlchlp.exe file should point to the shared folder on the network server from
+which you run Windows 95. For example, the Autoexec.bat file may contain
+
+  net.exe
+  &lt;drive&gt;:\netsetup\dlchlp.exe
+
+where &lt;drive&gt; is the network server from which you run Windows 95.
+
+MORE INFORMATION
+================
+
+The default installation of MSDLC32 supports 16-bit DLC programs that require
+Dlchlp.exe to be loaded in the Autoexec.bat file.
+
+In a server-based setup, the real-mode network components must be loaded and a
+drive mapped to the shared Windows 95 installation before Dlchlp.exe can be
+loaded.
+
+======================================================================
+Keywords          : kbnetwork msnets win95 kbAPI kbDLC kbSDKPlatform kbGrpDSNet 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

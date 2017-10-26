@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58035: Alternate Math (BC /FPa) Won’t Always Produce Smaller .EXE’s | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58035: Alternate Math (BC /FPa) Won’t Always Produce Smaller .EXE’s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58035/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58035/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58035/","publisher":null,"image":null,"headline":"Q58035: Alternate Math (BC /FPa) Won’t Always Produce Smaller .EXE’s","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58035-alternate-math-bc-fpa-wont-always-produce-smaller-exes">Q58035: Alternate Math (BC /FPa) Won’t Always Produce Smaller .EXE’s</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58035
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | docerr SR# S900122-49 | mspl13_basic
+Last Modified: 8-JAN-1991
+
+Using alternate math (BC /FPa) does not always produce smaller
+executable files than using the emulator math library (BC /FPi) when
+compiling with Microsoft BASIC Compiler Versions 6.00 and 6.00b for
+MS-DOS and MS OS/2 and Microsoft BASIC Professional Development System
+(PDS) Versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+Page 8 of the "Microsoft BASIC Compiler 6.0: User's Guide" and Page
+562 of the "Microsoft BASIC 7.0: Programmer's Guide" (for 7.00 and
+7.10) misleadingly state that "it [the alternate math library] also
+creates a smaller executable file." Page 545 of the "Microsoft BASIC
+7.0: Programmer's Guide" misleadingly states that "alternate math is
+an IEEE-compatible math package optimized for speed and size."
+
+Although there is an initial space savings from using the alternate
+math libraries, each individual floating-point calculation can take
+more room using the alternate math library than the equivalent code
+for the emulator math library. This means that as the code grows in
+size, the initial space savings can be lost and the program can
+actually be larger using the alternate math package.
+
+Note: You will only notice a savings in the size of an executable
+compiled /FPa versus /FPi if the program is also compiled with the /O
+(stand-alone) option. If you compile as non stand alone with the
+alternate math library (/FPa) option, the program will actually
+contain both math libraries -- the compiled program will contain the
+alternate math routines, while the BASIC run-time module
+(BRUN60Ax.EXE, BRUN61Ax.EXE, or BRT70Axx.EXE) will contain the
+emulator math routines.
+
+The small program below demonstrates the size difference when
+compiling with and without the alternate math package.
+
+Compile the following program in these two ways:
+
+  BC /FPa test, test1.obj;
+  BC /FPi test, test2.obj;
+  LINK test1;
+  LINK test2;
+
+Code Example
+------------
+
+   REM  This is TEST.BAS
+   a = 6.1
+   b = 5.7
+   c = a * b
+
+The program compiled with the alternate math package (/FPa) produces
+larger code for the floating-point operation than the equivalent
+instructions using the emulator math library (/FPi). There is,
+however, an initial savings of about 4K when compiling with the
+alternate math library. In most programs, this initial savings offsets
+any extra code generated by floating-point calculation. In larger
+programs with lots of floating-point calculations, the extra code for
+each floating-point operation can actually create a larger executable
+file.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

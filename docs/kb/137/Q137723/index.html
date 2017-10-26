@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137723/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137723/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137723/","publisher":null,"image":null,"headline":"Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137723-net2182-and-net3546-errors-appear-after-lan-manager-22c-setup">Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137723
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft LAN Manager, version 2.2c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you successfully install LAN Manager 2.2c client software from the Windows
+NT Server 3.5 or 3.51 compact disc and restart the client computer, the
+following two error messages appear:
+
+  NET2182: The workstation has already been started
+
+  NET3546: Error running C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+
+Whether or not this error occurs depends on your computer configuration.
+
+The protocol installed during LAN Manager Setup may bind successfully to the
+network interface card (NIC) driver, but the NET START WORKSTATION command in
+AUTOEXEC.BAT fails with the following message:
+
+  The WORKSTATION service is not started.
+  Is it OK to start it? (Y/N) [Y]:
+
+If you answer Yes, the error messages above appear again.
+
+
+CAUSE
+=====
+
+The LAN Manager 2.2c client Setup program in the \CLIENTS\LANMAN\DISKS directory
+on the Windows NT Server 3.5 and 3.51 compact disc places the NET START
+WORKSTATION statement at the end of the AUTOEXEC.BAT file. This causes problems
+with the Microsoft CD-ROM Extension (MSCDEX.EXE) file because it is not
+network-aware.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Use a text editor to modify the client computer's AUTOEXEC.BAT.
+
+2. Place the MSCDEX.EXE line after the NET START WORKSTATION line.
+
+3. Save AUTOEXEC.BAT and quit the editor.
+
+4. Reboot the client computer.
+
+Additional query words: prodnt 2.20c disk
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbLanManSearch kbLanMan220c
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

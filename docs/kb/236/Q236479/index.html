@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236479/","publisher":null,"image":null,"headline":"Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236479-acc2000-new-tables--pages-deleted-when-you-undo-vss-checkout">Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236479
+Product(s): Microsoft SourceSafe
+Version(s): ; WINDOWS:2000
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 30-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 2000 Developer 
+- Microsoft Access 2000 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+This article applies only to a Microsoft Access database (.mdb).
+
+SYMPTOMS
+========
+
+When you undo the checkout of "Data and Misc. Objects" for a Microsoft Access
+database under Microsoft Visual SourceSafe control, you lose any tables or links
+to a data access page that you created after you checked out the object.
+
+CAUSE
+=====
+
+Visual SourceSafe stores all of the tables and links to pages in "Data and Misc.
+Objects" as a single object. Therefore, if you undo the checkout of that object,
+Visual SourceSafe reverts to the stored version.
+
+RESOLUTION
+==========
+
+The stored version of "Data and Misc. Objects" does not contain any information
+about the new table. After you undo the checkout, there's no way to recover the
+new table.
+
+However, the HTML file for the data access page is not part of "Data and Misc.
+Objects". Therefore, the HTML file of the new page remains in the folder where
+it was saved. You can create a new link to the HTML file. To do so, follow these
+steps:
+
+1. Remove the database from Visual SourceSafe control.
+
+2. Open the database.
+
+3. In the Database window, click Pages under Objects, and then click New.
+
+4. In the New Data Access Page dialog box, click Existing Web Page, and then
+  click OK.
+
+5. Locate the existing HTML file and click Open.
+
+6. On the File menu, click Save.
+
+7. Add the database back to Visual SourceSafe control.
+
+For more information about removing a database from Visual SourceSafe control,
+click Contents on the Help menu, click the Index tab in Visual SourceSafe Help,
+type the following text:
+
+  "files" (without the quotation marks)
+
+and then double-click the selected text to go to the "files, delete and recover"
+topic.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the sample database Northwind.mdb.
+
+2. On the Tools menu, point to SourceSafe, and then click "Add Database to
+  SourceSafe". Click Yes when prompted to close the database.
+
+3. If you see the Visual SourceSafe Login dialog box, type a valid user name and
+  password, and then click OK.
+
+4. In the Add to SourceSafe Project dialog box, type "Northwind" (without the
+  quotation marks) in the Project box, and then click OK. Click Yes when
+  prompted to create the project.
+
+5. In the Add Objects to SourceSafe dialog box, click Select All, and the click
+  OK.
+
+6. On the Tools menu, point to SourceSafe, and then click Check Out.
+
+7. In the Object Type list, click Other. Click to select the Data and Misc.
+  Objects check box, and then click OK.
+
+8. Create and save a new table as tblVSSTest.
+
+9. Close the table. Note that you see the tblVSSTest table in the Database
+  window.
+
+10. On the Tools menu, point to SourceSafe, and then click Undo Check Out.
+
+11. In the Object Type list, click Other. Click to select the Data and Misc.
+  Objects check box, and then click OK.
+
+12. When you see the following warning, click Yes:
+
+  The Data and Misc. Objects may have changed. Undo checkout and lose changes?
+
+Note that the new tblVSSTest table no longer exist.
+
+Additional query words: prb vss miscellaneous
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbAccess2000 kbOffice2000Search kbAccess2000Search kbOffice2000 kbOffice2000DevSearch
+Version           : :; WINDOWS:2000
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276453: Dynamically Defined Dependent LU Support for Printer LUs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276453: Dynamically Defined Dependent LU Support for Printer LUs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276453/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276453/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276453/","publisher":null,"image":null,"headline":"Q276453: Dynamically Defined Dependent LU Support for Printer LUs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276453-dynamically-defined-dependent-lu-support-for-printer-lus">Q276453: Dynamically Defined Dependent LU Support for Printer LUs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q276453</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">2.11</span> <span class="p">(</span><span class="n">all</span> <span class="n">SP</span><span class="p">),</span><span class="m">3.0</span> <span class="p">(</span><span class="n">all</span> <span class="n">SP</span><span class="p">),</span><span class="m">4.0</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP3</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbDSupport</span> <span class="n">kbsna211sp1</span> <span class="n">kbsna211sp2</span> <span class="n">kbsna300sp1</span> <span class="n">kbsna300sp2</span> <span class="n">kbsna300sp3</span> <span class="n">kbsna300sp4</span> <span class="n">sna4</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">11</span><span class="p">-</span><span class="n">JUN</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">,</span> <span class="n">versions</span> <span class="m">2.11</span> <span class="n">SP1</span><span class="p">,</span> <span class="m">2.11</span> <span class="n">SP2</span><span class="p">,</span> <span class="m">3.0</span> <span class="n">SP1</span><span class="p">,</span> <span class="m">3.0</span> <span class="n">SP2</span><span class="p">,</span> <span class="m">3.0</span> <span class="n">SP3</span><span class="p">,</span> <span class="m">3.0</span> <span class="n">SP4</span><span class="p">,</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">4.0</span> <span class="n">SP1</span><span class="p">,</span> <span class="m">4.0</span> <span class="n">SP2</span><span class="p">,</span> <span class="m">4.0</span> <span class="n">SP3</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">IMPORTANT</span><span class="p">:</span> <span class="n">This</span> <span class="n">article</span> <span class="n">contains</span> <span class="n">information</span> <span class="n">about</span> <span class="n">modifying</span> <span class="n">the</span> <span class="n">registry</span><span class="p">.</span> <span class="n">Before</span> <span class="n">you</span> <span class="n">modify</span> <span class="n">the</span> <span class="n">registry</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">back</span> <span class="n">it</span> <span class="n">up</span> <span class="k">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">you</span> <span class="n">understand</span> <span class="n">how</span> <span class="k">to</span> <span class="n">restore</span> <span class="n">the</span> <span class="n">registry</span> <span class="k">if</span> <span class="n">a</span> <span class="n">problem</span> <span class="n">occurs</span><span class="p">.</span> <span class="n">For</span> <span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">back</span> <span class="n">up</span><span class="p">,</span> <span class="n">restore</span><span class="p">,</span> <span class="k">and</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">registry</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">following</span> <span class="n">article</span> <span class="n">number</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q256986</span> <span class="n">Description</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Registry</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">2.11</span> <span class="k">and</span> <span class="n">later</span> <span class="n">provide</span> <span class="n">support</span> <span class="n">for</span> <span class="n">Dynamically</span>
+<span class="n">Defined</span> <span class="n">Dependent</span> <span class="n">Logical</span> <span class="n">Units</span> <span class="p">(</span><span class="n">DDDLUs</span><span class="p">)</span> <span class="n">for</span> <span class="m">3270</span> <span class="n">display</span> <span class="n">LUs</span><span class="p">.</span> <span class="n">DDDLU</span> <span class="n">support</span> <span class="n">for</span>
+<span class="n">LUA</span> <span class="n">LUs</span> <span class="n">was</span> <span class="n">first</span> <span class="n">added</span> <span class="k">in</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">3.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="p">(</span><span class="n">SP1</span><span class="p">).</span> <span class="n">However</span><span class="p">,</span> <span class="n">DDDLU</span>
+<span class="n">support</span> <span class="n">for</span> <span class="m">3270</span> <span class="n">Printer</span> <span class="n">LUs</span> <span class="n">is</span> <span class="k">not</span> <span class="n">provided</span> <span class="k">in</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">support</span> <span class="n">for</span> <span class="n">DDDLUs</span> <span class="k">in</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">,</span>
+<span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">numbers</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">articles</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+<span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q161492</span> <span class="n">LU</span> <span class="n">Session</span> <span class="n">Activation</span> <span class="n">Using</span> <span class="n">Dynamically</span> <span class="n">Defined</span> <span class="n">Dependent</span> <span class="n">LUs</span>
+
+  <span class="n">Q164592</span> <span class="n">Dynamically</span> <span class="n">Defined</span> <span class="n">Dependent</span> <span class="n">LU</span> <span class="n">Support</span> <span class="n">for</span> <span class="n">LUA</span> <span class="n">LUs</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">for</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">4.0</span><span class="p">,</span>
+<span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+<span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q215838</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Obtain</span> <span class="n">the</span> <span class="n">Latest</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="k">Version</span> <span class="m">4.0</span> <span class="n">Service</span> <span class="n">Pack</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">DDDLU</span> <span class="n">support</span> <span class="n">for</span> <span class="m">3270</span> <span class="n">Printer</span> <span class="n">LUs</span> <span class="n">is</span> <span class="n">available</span> <span class="n">after</span> <span class="n">you</span> <span class="n">apply</span> <span class="n">the</span> <span class="n">update</span> <span class="k">to</span>
+<span class="n">SNA</span> <span class="n">Server</span> <span class="m">4.0</span><span class="p">.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">DDDLU</span> <span class="n">support</span> <span class="n">for</span> <span class="m">3270</span> <span class="n">Printer</span> <span class="n">LUs</span> <span class="n">is</span> <span class="n">disabled</span><span class="p">.</span> <span class="k">To</span>
+<span class="n">enable</span> <span class="n">this</span> <span class="n">support</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">entry</span> <span class="n">must</span> <span class="n">be</span> <span class="k">set</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">the</span>
+<span class="k">model</span> <span class="n">name</span> <span class="n">that</span> <span class="n">is</span> <span class="n">sent</span> <span class="k">to</span> <span class="n">the</span> <span class="n">host</span> <span class="k">in</span> <span class="n">an</span> <span class="n">Network</span> <span class="n">Management</span> <span class="n">Vector</span> <span class="n">Table</span> <span class="p">(</span><span class="n">NMVT</span><span class="p">)</span>
+<span class="n">request</span><span class="p">,</span> <span class="k">in</span> <span class="n">order</span> <span class="k">to</span> <span class="n">solicit</span> <span class="n">an</span> <span class="n">Activate</span> <span class="n">LU</span> <span class="p">(</span><span class="n">ACTLU</span><span class="p">)</span> <span class="k">or</span> <span class="n">Deactivate</span> <span class="n">LU</span> <span class="p">(</span><span class="n">DACTLU</span><span class="p">)</span>
+<span class="n">for</span> <span class="m">3270</span> <span class="n">Printer</span> <span class="n">LUs</span><span class="p">.</span>
+
+<span class="n">WARNING</span><span class="p">:</span> <span class="k">If</span> <span class="n">you</span> <span class="n">use</span> <span class="n">Registry</span> <span class="n">Editor</span> <span class="n">incorrectly</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">cause</span> <span class="n">serious</span> <span class="n">problems</span>
+<span class="n">that</span> <span class="n">may</span> <span class="n">require</span> <span class="n">you</span> <span class="k">to</span> <span class="n">reinstall</span> <span class="n">your</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">.</span> <span class="n">Microsoft</span> <span class="n">cannot</span>
+<span class="n">guarantee</span> <span class="n">that</span> <span class="n">you</span> <span class="n">can</span> <span class="n">solve</span> <span class="n">problems</span> <span class="n">that</span> <span class="n">result</span> <span class="k">from</span> <span class="n">using</span> <span class="n">Registry</span> <span class="n">Editor</span>
+<span class="n">incorrectly</span><span class="p">.</span> <span class="n">Use</span> <span class="n">Registry</span> <span class="n">Editor</span> <span class="n">at</span> <span class="n">your</span> <span class="n">own</span> <span class="n">risk</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Start</span> <span class="n">Registry</span> <span class="n">Editor</span> <span class="p">(</span><span class="n">Regedt32</span><span class="p">.</span><span class="n">exe</span><span class="p">).</span>
+
+<span class="m">2.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">following</span> <span class="n">key</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="nf">SYSTEM</span><span class="p">\</span><span class="n">CurrentControlSet</span><span class="p">\</span><span class="n">Services</span><span class="p">\</span><span class="n">SnaServr</span><span class="p">\</span><span class="k">Parameters</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">above</span> <span class="n">registry</span> <span class="n">key</span> <span class="n">is</span> <span class="n">one</span> <span class="n">path</span><span class="p">;</span> <span class="n">it</span> <span class="n">has</span> <span class="n">been</span> <span class="n">wrapped</span> <span class="n">for</span> <span class="n">readability</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Edit</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Add</span> <span class="n">Value</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">value</span><span class="p">:</span>
+
+  <span class="n">Value</span> <span class="n">Name</span><span class="p">:</span> <span class="n">PrinterDDDLUModel</span>
+  <span class="n">Data</span> <span class="n">Type</span><span class="p">:</span> <span class="n">REG_SZ</span>
+  <span class="n">Value</span><span class="p">:</span> <span class="p">&lt;</span><span class="k">Model</span> <span class="n">Name</span><span class="p">&gt;</span>
+
+<span class="m">4.</span> <span class="n">Quit</span> <span class="n">Registry</span> <span class="n">Editor</span><span class="p">.</span>
+
+<span class="k">Model</span> <span class="n">Name</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">be</span> <span class="n">replaced</span> <span class="k">with</span> <span class="n">the</span> <span class="k">model</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">printer</span> <span class="n">LU</span> <span class="n">that</span> <span class="n">SNA</span>
+<span class="n">Server</span> <span class="n">will</span> <span class="nf">send</span> <span class="k">to</span> <span class="n">the</span> <span class="n">host</span> <span class="k">in</span> <span class="n">the</span> <span class="n">NMVT</span> <span class="n">request</span> <span class="k">to</span> <span class="n">activate</span><span class="p">/</span><span class="n">deactivate</span> <span class="n">the</span>
+<span class="n">printer</span> <span class="n">LU</span><span class="p">.</span> <span class="n">These</span> <span class="n">values</span> <span class="n">are</span> <span class="n">defined</span> <span class="n">on</span> <span class="n">the</span> <span class="n">host</span><span class="p">.</span> <span class="n">Typical</span> <span class="n">values</span> <span class="n">may</span> <span class="n">be</span> <span class="m">3270</span><span class="n">SCS</span>
+<span class="n">for</span> <span class="n">LU1</span> <span class="n">printers</span> <span class="k">or</span> <span class="m">3270</span><span class="n">DSC</span> <span class="n">for</span> <span class="n">LU3</span> <span class="n">printers</span><span class="p">.</span> <span class="n">The</span> <span class="k">model</span> <span class="n">name</span> <span class="k">string</span> <span class="n">can</span> <span class="n">be</span> <span class="n">up</span> <span class="k">to</span>
+<span class="n">seven</span> <span class="n">characters</span> <span class="n">long</span><span class="p">.</span> <span class="n">The</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="n">pads</span> <span class="n">any</span> <span class="n">strings</span> <span class="n">that</span> <span class="n">are</span> <span class="n">less</span> <span class="n">than</span> <span class="n">seven</span>
+<span class="n">characters</span> <span class="k">with</span> <span class="n">spaces</span><span class="p">,</span> <span class="k">or</span> <span class="n">truncates</span> <span class="n">any</span> <span class="n">strings</span> <span class="n">that</span> <span class="n">are</span> <span class="n">longer</span> <span class="n">than</span> <span class="n">seven</span>
+<span class="n">characters</span> <span class="k">to</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">only</span> <span class="n">seven</span> <span class="n">characters</span> <span class="n">are</span> <span class="n">sent</span> <span class="k">to</span> <span class="n">the</span> <span class="n">host</span> <span class="k">as</span> <span class="n">part</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">NMVT</span> <span class="n">requests</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">This</span> <span class="n">support</span> <span class="n">for</span> <span class="n">DDDLUs</span> <span class="n">is</span> <span class="n">limited</span> <span class="k">to</span> <span class="n">either</span> <span class="n">LU1</span> <span class="n">printer</span> <span class="n">LUs</span> <span class="k">or</span> <span class="n">LU3</span> <span class="n">printer</span>
+<span class="n">LUs</span> <span class="n">because</span> <span class="n">the</span> <span class="n">PrinterDDDLUModel</span> <span class="n">registry</span> <span class="n">entry</span> <span class="n">is</span> <span class="n">global</span> <span class="k">in</span> <span class="n">nature</span> <span class="k">and</span> <span class="n">applies</span>
+<span class="k">to</span> <span class="n">all</span> <span class="n">dynamically</span> <span class="n">created</span> <span class="m">3270</span> <span class="n">printer</span> <span class="n">LUs</span><span class="p">.</span>
+
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">Snaservr</span> <span class="n">sp1</span> <span class="n">sp2</span> <span class="n">sp3</span> <span class="n">sp4</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbDSupport</span> <span class="n">kbsna211sp1</span> <span class="n">kbsna211sp2</span> <span class="n">kbsna300sp1</span> <span class="n">kbsna300sp2</span> <span class="n">kbsna300sp3</span> <span class="n">kbsna300sp4</span> <span class="n">sna4</span> <span class="n">kbsna400sp1</span> <span class="n">kbsna400sp2</span> <span class="n">kbsna400sp3</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbAudDeveloper</span> <span class="n">kbSNAServSearch</span> <span class="n">kbSNAServ400</span> <span class="n">kbSNAServ211SP1</span> <span class="n">kbSNAServ211SP2</span> <span class="n">kbSNAServ300SP3</span> <span class="n">kbSNAServ300SP1</span> <span class="n">kbSNAServ400SP1</span> <span class="n">kbSNAServ400SP2</span> <span class="n">kbSNAServ400SP3</span> <span class="n">kbSNAServ300SP2</span> <span class="n">kbSNAServ300SP4</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">2.11</span> <span class="p">(</span><span class="n">all</span> <span class="n">SP</span><span class="p">),</span><span class="m">3.0</span> <span class="p">(</span><span class="n">all</span> <span class="n">SP</span><span class="p">),</span><span class="m">4.0</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">4.0</span> <span class="n">SP3</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

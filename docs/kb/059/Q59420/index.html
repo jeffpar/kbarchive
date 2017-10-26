@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59420: Specifying the Order in Which NMAKE Builds Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59420: Specifying the Order in Which NMAKE Builds Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59420/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59420/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59420/","publisher":null,"image":null,"headline":"Q59420: Specifying the Order in Which NMAKE Builds Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59420-specifying-the-order-in-which-nmake-builds-files">Q59420: Specifying the Order in Which NMAKE Builds Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59420
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft NMAKE Utility for MS-DOS 
+- Microsoft NMAKE Utility for OS/2 
+- Microsoft NMAKE Utility for Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to specify the order in which NMAKE builds target files.
+
+MORE INFORMATION
+================
+
+When NMAKE runs, it first checks its comment line. NMAKE builds any targets
+specified on the command line in order, from left to right. If the command line
+does not specify any targets, NMAKE builds the first target in the description
+file.
+
+NMAKE builds all the dependents in the order in which they are specified on the
+first target line, from left to right. For most description files, the first
+target in the file is the ALL pseudotarget. NMAKE builds the specified files in
+order and builds other files that depend on the specified files according to
+their rules.
+
+As an example, consider the following description file:
+
+Sample Makefile 1
+-----------------
+
+      all : three.obj two.obj one.obj main.exe
+
+     one.obj : one.c
+        cl /c one.c
+
+     two.obj : two.c
+        cl /c two.c
+
+     three.obj : three.c
+        cl /c three.c
+
+     main.exe : three.obj one.obj two.obj
+        link one two three, main;
+
+In this example, NMAKE compiles THREE.C, TWO.C, and ONE.C, then it links
+MAIN.EXE. The compiler uses this order because the first target specifies the
+dependents in this order. NMAKE builds the first target unless the command line
+specifies a different target to build.
+
+Consider the following example that is somewhat different from the example
+above:
+
+Sample Makefile 2
+-----------------
+
+        all : main.exe
+
+     one.obj : one.c
+         cl /c one.c
+
+     two.obj : two.c
+         cl /c two.c
+
+     three.obj : three.c
+         cl /c three.c
+
+     main.exe : three.obj one.obj two.obj
+         link one two three, main;
+
+In this example, NMAKE compiles THREE.C, ONE.C, and TWO.C, then it links
+MAIN.EXE. NMAKE builds the first target, MAIN.EXE, then it builds the file
+MAIN.EXE depends on in the specified order.
+
+To summarize, NMAKE looks first at its command line. If no files are specified,
+it builds the first target in the description file by building each of its
+dependent files in the specified order. If a file that the first target depends
+on specifies another target, NMAKE builds the dependent files of that target in
+the specified order. This continues until all dependent files are built.
+
+Additional query words: kbinf 1.20 1.30 1.40 1.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

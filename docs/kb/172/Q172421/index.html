@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172421: Verisign Certificate Password Not Accepted in Key Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172421: Verisign Certificate Password Not Accepted in Key Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172421/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172421/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172421/","publisher":null,"image":null,"headline":"Q172421: Verisign Certificate Password Not Accepted in Key Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172421-verisign-certificate-password-not-accepted-in-key-manager">Q172421: Verisign Certificate Password Not Accepted in Key Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172421
+Product(s): Internet Information Server
+Version(s): WinNT:3.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbsetup
+Last Modified: 02-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install a Verisign certificate, Key Manager may not accept the
+password assigned for that certificate, and the certificate fails to install.
+
+RESOLUTION
+==========
+
+Perform the following steps to work around this problem:
+
+1. Open the certificate in a text editor (such as Notepad).
+
+2. Insert blank lines before "Begin Certificate" and after "End Certificate" as
+  below:
+
+        &lt;insert blank line here&gt;
+        -----BEGIN CERTIFICATE-----
+        MIICiTCCAjOgAwIBAgICAmMwDQYJKoZIhvcNAQEEBQAwgYIxCzAJBgNVBAYTAlVTMRI
+        wEAYDVQQKEwlNaWNyb3NvZnQxJjAkBgNVBAsTHVBlcnNvbmFsIGFuZCBCdXNpbmVzcy
+        BTeXN0ZW1zMTcwNQYDVQQDEy5NaWNyb3NvZnQgRGVtbyBDQSAtLSBGb3IgVGVzdGluZ
+        yBQdXJwb3NlcyBPbmx5MB4XDTk3MDYxMTEzMTYzOFoXDTk4MDYxMTEzMTYzOFowaTEL
+        MAkGA1UEBhMCVVMxEjAQBgNVBAgTCUNoYXJsb3R0ZTELMAkGA1UEBxMCTkMxEjAQBgN
+        VBAoTCU1pY3Jvc29mdDEOMAwGA1UECxMFSXRlYW0xFTATBgNVBAMUDHN0dW1wanVtcG
+        VyMjBbMA0GCSqGSIb3DQEBAQUAA0oAMEcCQG+iFOxAWKwpYwXa/eQKL30g0XIwDk0K7
+        op8LOoygU86Uih/NkU4dYzVTBUVtvtxEoVyKARBD3ofPBRFEUuaFskCAwEAAaOBqzCB
+        qDCBpQYDVR0BBIGdMIGaoYGFMIGCMQswCQYDVQQGEwJVUzESMBAGA1UEChMJTWljcm9
+        zb2Z0MSYwJAYDVQQLEx1QZXJzb25hbCBhbmQgQnVzaW5lc3MgU3lzdGVtczE3MDUGA1
+        UEAxMuTWljcm9zb2Z0IERlbW8gQ0EgLS0gRm9yIFRlc3RpbmcgUHVycG9zZXMgT25se
+        YIQUkMFyaAAfKoR0JtrD7asoDANBgkqhkiG9w0BAQQFAANBACJBMQ19GkgYwcbSShm5
+        rjnWzgcyamyKVmODav3HDJEkyJRNm2QHBq2NGfQkFXx2zJHLSlP597Vr96g9NlX3uoI=
+        -----END CERTIFICATE-----
+        &lt;insert blank line here&gt;
+
+3. Save the file and then attempt to install the certificate as before in Key
+  Manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Microsoft Internet Information
+Server version 3.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Verisign certificate is manufactured by Verisign, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q180018 : SGCINST.EXE Appears to Execute but SGC Does Not Work
+
+Additional query words: 4.00
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbiisSearch kbiis300
+Version           : WinNT:3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

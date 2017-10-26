@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272079: IIS Search Method May Allow Unauthorized Users a Directory List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272079: IIS Search Method May Allow Unauthorized Users a Directory List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272079/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272079/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272079/","publisher":null,"image":null,"headline":"Q272079: IIS Search Method May Allow Unauthorized Users a Directory List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272079-iis-search-method-may-allow-unauthorized-users-a--directory-list">Q272079: IIS Search Method May Allow Unauthorized Users a  Directory List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272079
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It may be possible for an outside user to use the search functionality in Web
+Distributed Authoring and Versioning (WebDAV) to get a directory listing of a
+Web site's content area.
+
+NOTE: This is only a problem if Index Server is used on the server (which is not
+enabled by default), and the directory lists can only be generated if the Web
+site (or resource such as a virtual directory or file) has the Index property
+set.
+
+The implications of this are that an outside user may be able to discover a
+hidden directory or an include file (such as a .inc). By using the search
+feature, a use may be able to get a directory listing, which would make
+discovery much easier. This may expose your Web site to a malicious attack (for
+example, if a .inc file includes a database user name and password).
+
+RESOLUTION
+==========
+
+To secure your Web site(s) from a possible attack, perform the following
+checklist on your Web site(s):
+
+- If you are not using Index Server (for example, you don't have content on
+  your Web site that you want to have searched), disable or uninstall the
+  service.
+
+  -OR-
+
+- In directories that contain sensitive information, make sure to disable the
+  Index this resource option on the appropriate tab (for example, a virtual
+  directory on the Virtual Directory tab).
+
+MORE INFORMATION
+================
+
+Internet Information Services (IIS) 5.0 offers a new technology named WebDAV
+(see RFC2518). Web Distributed Authoring and Versioning (WebDAV) extends the
+HTTP/1.1 protocol to allow clients to publish, lock, and manage resources on the
+Web. Integrated into IIS, WebDAV allows clients to do the following:
+
+- Manipulate resources in a WebDAV publishing directory on your server. For
+  example, with this feature, users with the correct permissions can copy and
+  move files around in a WebDAV directory.
+
+- Modify properties associated with certain resources. For example, a user can
+  write to and retrieve a file's property information.
+
+- Lock and unlock resources so that multiple users can read a file
+  concurrently, but only one person at a time can modify the file.
+
+- Search the content and properties of files in a WebDAV directory.
+
+Additional query words: iis 5 webdav security
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

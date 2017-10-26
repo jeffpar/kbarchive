@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173288: PPT: Sample Code to Update Links in a Graph Datasheet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173288: PPT: Sample Code to Update Links in a Graph Datasheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173288/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173288/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173288/","publisher":null,"image":null,"headline":"Q173288: PPT: Sample Code to Update Links in a Graph Datasheet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173288-ppt-sample-code-to-update-links-in-a-graph-datasheet">Q173288: PPT: Sample Code to Update Links in a Graph Datasheet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173288
+Product(s): Microsoft PowerPoint for Windows
+Version(s): 97,98
+Operating System(s): 
+Keyword(s): kbcode kbdta kbdtacode kbgraph KbVBA
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint 98 Macintosh Edition 
+- Microsoft PowerPoint 97 for Windows 
+- Microsoft Graph 97 for Windows 
+- Microsoft Visual Basic for Applications 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article provides a sample Microsoft Visual Basic for Applications macro
+(Sub procedure) that updates the links inside a Microsoft Graph object on a
+Microsoft PowerPoint slide.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: The following macro examples only work from within the PowerPoint
+application. Visual Basic for Applications macros are not supported by the
+Microsoft PowerPoint Viewer. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q230746 PPT: Viewer: Presentation Macros Don't Run Within the Viewer
+
+Before you can run the sample Visual Basic macro, you must add a reference to the
+Graph 8.0 object model. To add the reference, follow these steps:
+
+1. On the Tools menu, point to Macros, and then click Visual Basic Editor.
+
+2. On the Tools menu, click References.
+
+3. In the References - VBAProject dialog box, click to select the Microsoft
+  Graph 8.0 Object Library check box.
+
+4. Click OK.
+
+  The project now contains a reference to the Graph 8.0 object model.
+
+Sample Visual Basic Procedure
+-----------------------------
+
+  Sub UpdateAllGraphs()
+
+     Dim oShape As Shape
+     Dim oSlide As Slide
+     Dim oGraph As Object
+     '
+     ' Loop through each slide in the presentation.
+     '
+     For Each oSlide In ActivePresentation.Slides
+     '
+     ' Loop through all the shapes on the current slide.
+     '
+        For Each oShape In oSlide.Shapes
+     '
+     ' Check whether the shape is an OLE object.
+     '
+           If oShape.Type = msoEmbeddedOLEObject Then
+     '
+     ' Check whether the OLE object is a Graph 8 object.
+     '
+              If oShape.OLEFormat.ProgID = "MSGraph.Chart.8" Then
+     '
+     ' Found a graph; obtain object reference, and
+     ' then update.
+     '
+                 Set oGraph = oShape.OLEFormat.Object
+                 oGraph.Application.Update
+     '
+     ' Now, quit out of the MSGraph program. This frees 
+     ' memory, and prevents any problems. Also, set oGraph equal
+     ' to Nothing to release the object.
+     '
+                 oGraph.Application.Quit
+                 Set oGraph = Nothing
+              End If
+           End If
+        Next oShape
+     Next oSlide
+
+  End Sub
+
+REFERENCES
+==========
+
+For more information about how to edit a macro, click the Office Assistant while
+in the Visual Basic Editor, type "edit a macro" (without the quotation marks),
+click Search, and then click to view "Edit a macro."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+For more information about how to use the sample code in this article, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q163188 PPT: Sample VB Code to Create a Graph on a Slide
+
+  Q171383 PPT97: Graph8 Process Remains in Memory After Macro Ends
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: macro code vbe graph97 8.0 graph vba ppt ppt97 graph8 offvba kbcode kbmacro macppt mac_ppt ppt98 98 powerpt
+
+======================================================================
+Keywords          : kbcode kbdta kbdtacode kbgraph KbVBA 
+Technology        : kbHWMAC kbOSMAC kbWordSearch kbAccessSearch kbPowerPtSearch kbZNotKeyword6 _IKkbZNotKeyword4 kbPowerPt97 kbPowerPt97Search kbPowerPt98Search kbPowerPt98 kbVBASearch kbGraphSearch kbZNotKeyword3 kbGraph97
+Version           : :97,98
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

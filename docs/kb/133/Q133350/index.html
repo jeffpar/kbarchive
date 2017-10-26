@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133350: Cannot Map Drives to More Than Eight NetWare Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133350: Cannot Map Drives to More Than Eight NetWare Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133350/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133350/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133350/","publisher":null,"image":null,"headline":"Q133350: Cannot Map Drives to More Than Eight NetWare Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133350-cannot-map-drives-to-more-than-eight-netware-servers">Q133350: Cannot Map Drives to More Than Eight NetWare Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133350
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): 3rdpartynet msnets win95 kb3rdPartyNetClient
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to map a drive to a Novell NetWare server, you may receive the
+following message:
+
+  Before you can connect to another server, you must detach from one
+  or more of the listed servers.
+
+
+CAUSE
+=====
+
+The Microsoft Client for NetWare Networks defaults to a maximum of eight mapped
+NetWare servers.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods:
+
+Method 1
+--------
+
+Connect to the server using a Universal Naming Convention name. This bypasses the
+default connection limit because UNC connections do not use drive letters.
+
+Click the Start button, click Run, and then type "\\&lt;server&gt;\&lt;share&gt;"
+(without quotation marks) in the Open box, where &lt;server&gt; is the server
+name and &lt;share&gt; is the name of the share on the server.
+
+This is a "manual" connection that does not remain mapped to the server when you
+restart the computer.
+
+Method 2
+--------
+
+Change or add the "CONNECTIONS=" line in the Net.cfg file. A default value of 8
+is used if there is no "CONNECTIONS=" entry in the Net.cfg file. Add this line
+with a value of up to 50, or change the line to a value of up to 50. Then,
+remove the network components in Windows 95. Restart your computer and reinstall
+the network components. After you reinstall the network components you should be
+able to map as many drives as the value in the "CONNECTIONS=" line in the
+Net.cfg file.
+
+The Net.cfg file is a NetWare support file. This file is not included with
+Windows 95.
+
+
+MORE INFORMATION
+================
+
+The default maximum number of server connections that NetWare 3.1x allows is
+eight. The Microsoft Client for NetWare Networks uses the same default value.
+This restriction does not affect the number of drives that can be mapped. It
+affects only the number of servers you can map a drive to.
+
+Additional query words: detaching servers
+
+======================================================================
+Keywords          : 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

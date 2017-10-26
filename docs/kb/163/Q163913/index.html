@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163913/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163913/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163913/","publisher":null,"image":null,"headline":"Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163913-xadm-is-or-ds-stops-due-to-lack-of-drive-space-for-log-files">Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163913
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Information Store (IS) or Directory (DS) services shut
+down unexpectedly and log the following message in the Windows NT Server Event
+Viewer Application log:
+
+  Event ID: 49
+  Source: EDB
+  Type: Warning
+  Category: Logging/Recovery
+  Description:
+  MSExchangeIS (or DS) ((286) ) The database engine is rejecting update
+  operations due to low free disk space on the log disk.
+
+  Event ID: 1113
+  Source: MSExchangeIS (or DS)
+  Type: Error
+  Category: None
+  Description:
+  The log disk is full. Attempting to stop the Microsoft Exchange Information
+  Store service.
+
+One or more of the entries in the Event Log may indicate error -529 (
+JET_errLogDiskFull) has occurred.
+
+CAUSE
+=====
+
+The disk drive containing the transaction logs for the service (MDBDATA for the
+IS and DSADATA for the DS) has no available space to create another log file.
+
+RESOLUTION
+==========
+
+Using the Microsoft Exchange Performance Optimizer, move the transaction logs to
+another drive containing sufficient free disk space. The new drive should have
+enough free disk space for all the existing logs to be moved to that drive and
+then have enough free disk space for the service to startup.
+
+MORE INFORMATION
+================
+
+The following events take place when the JET database engine detects and out of
+disk space condition on the log file drive:
+
+1. The JET database engine refuses to take any more transactions from the
+  Information Store service or Directory service.
+
+2. The Information Store will rollback all uncommitted transactions (this is
+  done with the use of the reserved log files RES1.LOG and RES2.LOG).
+
+3. The Information Store shuts down gracefully, meaning all uncommitted
+  transactions in the log files are flushed into the database and the databases
+  are in a consistent state.
+
+If log files are filling up your drive, you may want to find out whether they are
+being purged after backups. For additional information on how to determine which
+log files can safely be deleted, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q240145 XADM: How to Tell Which Transaction Log Files Can Be Safely Removed
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

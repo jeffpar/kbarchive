@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99629: Values Returned by UDFs Cannot Be Centered in a Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99629: Values Returned by UDFs Cannot Be Centered in a Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99629/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99629/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99629/","publisher":null,"image":null,"headline":"Q99629: Values Returned by UDFs Cannot Be Centered in a Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99629-values-returned-by-udfs-cannot-be-centered-in-a-report">Q99629: Values Returned by UDFs Cannot Be Centered in a Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99629
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A user-defined function (UDF) can be used to return values to a report in FoxPro
+for Windows. A UDF function call is implemented in a report as a field
+expression. Because it is a field expression, the function call can be formatted
+using normal formatting procedures. However, a UDF call cannot be centered
+within a field in a report created with the Report Writer in FoxPro for Windows
+unless you choose Text Alignment, then Center, from the Object menu.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+A UDF function call can appear as a field expression within a report. However,
+the results returned by the function call cannot be centered like field
+expressions can. For example, do the following:
+
+1. Use the INVOICES database in the TUTORIAL subdirectory of FoxPro for Windows.
+
+2. Create a quick report based on this database.
+
+3. Place a 25-character-wide field within the report with the UDF call TEST() as
+  the field expression.
+
+4. Under FORMAT for the field choose CENTER from the Editing options.
+
+5. Save and close the report.
+
+6. Create a program called TEST in this same directory. The only line in this
+  program will be:
+
+  RETURN "HELLO WORLD!"
+
+7. Now print or preview the report.
+
+  The field will be left-justified within the field expression even though the
+  Center format was chosen.
+
+To center this UDF call within the report, do the following:
+
+1. Select the UDF expression within the report.
+
+2. From the Object menu, choose Text Alignment, then choose Center.
+
+When the report is printed or previewed, the UDF return value will be centered
+within the field expression instead of being left-justified.
+
+Additional query words: VFoxWin FoxWin 2.50 CENTER UDF RWriter
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

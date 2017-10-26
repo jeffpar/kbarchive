@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109790/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109790/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109790/","publisher":null,"image":null,"headline":"Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109790-prb-ctimespangetdays-reports-29-days-in-april">Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109790
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDateTime kbMFC kbVC kbDSupport kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CTimeSpan::GetDays function seems to incorrectly report that the number of
+days between April 1 and May 1 is 29, instead of 30.
+
+CAUSE
+=====
+
+This behavior of the CTimeSpan::GetDays function is by design. One day in April
+is the start of Daylight Savings Time. On that day, there are only 23 hours,
+instead of the normal 24. Because of the way the CTimeSpan::GetDays member
+function is implemented, a day with less than 24 hours is not a complete day.
+
+Because the time span is figured in seconds, the time span for a month is the sum
+of all the seconds in a month. The definition of CTimeSpan::GetDays() in AFX.INL
+(located in the MFC\INCLUDE sub-directory of the Visual C++ installation
+directory)calculates the number of days by dividing the value of the m_timeSpan
+member variable by the number of seconds in a day. Thus, if one day in a 30-day
+month has 23 hours (which is the case here), m_timeSpan will be short by 3600
+seconds, and the result of the division will be 29 (days), rather than 30. This
+is a characteristic of integer division in C/C++ where the remainder is
+truncated.
+
+RESOLUTION
+==========
+
+There are two workarounds:
+
+- If you are interested only in the precision of the number of days, add 3600
+  seconds to the instance of CTimeSpan. This ensures that the April case is
+  handled appropriately, and that other calculations will not be affected, as a
+  characteristic of integer division. Adding 3600 seconds (one hour) to a
+  CTimeSpan instance will not affect measurement in days even in the worst case
+  of a time span being some multiple of 86400 seconds (one day), because a day
+  with one hour is not a full day.
+
+-or-
+
+- Use the TZ environment variable to control how time calculations are handled
+  by MFC. The TZ environment variable can be set from the command line (such as
+  in AUTOEXEC.BAT), or it can be set with the _putenv() function. The
+  documentation for the TZ environment variable [in the online help or the
+  "Run-Time Library Reference," under _tzset()], states that the default value
+  of TZ is PST8PDT, which corresponds to the Pacific time zone.
+
+  To work around the problem at hand, just set ONLY the tzn (three letter time
+  zone) and hh (difference in hours between Universal Coordinated
+  Time/Greenwich Mean Time) fields of the TZ variable. For example, if you are
+  in the Eastern Time Zone, and set the TZ variable to EST5, then Daylight
+  Savings Time would not be taken into account when doing CTime and CTimeSpan
+  calculations.
+
+  NOTE: You MUST set the TZ variable before doing ANY time calculations,
+  including initialization of CTime objects. Try moving the _putenv() call in
+  the following code to demonstrate this. A good place to set the TZ
+  environment variable is in the application's InitInstance() function.
+
+Sample Code
+-----------
+
+     void CDialogsApp::OnTimeDaysInApril()
+     {
+         // Set TZ environment variable.
+         if (_putenv("TZ=PST8")==-1)
+          // Can't set variable.
+          AfxMessageBox("Unable to set TZ environment variable",MB_OK);
+         else {
+          // Variable set, show its effect!
+          CTime t1(1993,4,1,0,0,0);   // April 1, 1993, 12:00:00 am
+          CTime t2(1993,5,1,0,0,0);   // May 1, 1993, 12:00:00 am
+          // Calculate time span.
+          CTimeSpan ts = t2 - t1;
+          LONG lNumDays=ts.GetDays();
+          // Output message.
+          char buffer[40];
+          wsprintf(buffer,"Days in April: %ld",lNumDays);
+          AfxMessageBox(buffer,MB_OK);
+         }
+     }
+
+Additional query words: kbSweptVC600
+
+======================================================================
+Keywords          : kbDateTime kbMFC kbVC kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

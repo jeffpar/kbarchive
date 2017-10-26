@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142247: FIX: Application Error Occurs When Printing a Large Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142247: FIX: Application Error Occurs When Printing a Large Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142247/","publisher":null,"image":null,"headline":"Q142247: FIX: Application Error Occurs When Printing a Large Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142247-fix-application-error-occurs-when-printing-a-large-project">Q142247: FIX: Application Error Occurs When Printing a Large Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142247
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0; winnt:3.51
+Operating System(s): 
+Keyword(s): kbnokeyword kbide kbVBp400bug kbVBp500fix kbGrpDSVB
+Last Modified: 05-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Printing a large 32-bit Visual Basic project under the Windows NT 3.51 operating
+system generates an application error that closes Visual Basic. This behavior
+occurs if the Visual Basic program is running under the Windows NT 3.51
+operating system whether you print the project to a printer or a file.
+
+RESOLUTION
+==========
+
+To print a large Visual Basic project from Windows NT 3.51, print the sections
+individually rather than as one large piece.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a issue in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual Basic
+version 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+Step to Reproduce Behavior
+--------------------------
+
+1. Start the 32-bit version of the Visual Basic 4.0 under the Window NT 3.51
+  operating system or if it is already running, click New Project on the File
+  menu.
+
+2. Load the Visdata project located in the \Program Files\Microsoft Visual
+  Basic\Samples\visdata directory. To load this project:
+
+  a. From the File menu, click the Open Project menu item. The Open Project
+     dialog box appears.
+
+  b. Go to the \Program Files\Microsoft Visual Basic\Samples\visdata directory.
+
+  c. Click the VISDATA.VBP file name.
+
+  d. Click the OK button to close the Open Project dialog box and load the
+     project.
+
+3. From the File menu, click the Print menu item. The Print dialog box appears.
+
+4. In the Print dialog box, click the Project option button and the Code and
+  Form as Text check boxes.
+
+5. Click OK to close the Print dialog box and begin printing. An application
+  error occurs, and Visual Basic ends.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbide kbVBp400bug kbVBp500fix kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbOSWinSearch kbOSWinNT351 kbVB400Search kbVB400 kbOSWinNTSearch
+Version           : WINDOWS:4.0; winnt:3.51
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

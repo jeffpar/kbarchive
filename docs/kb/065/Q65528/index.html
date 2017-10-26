@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65528: Mouse Cursor on Wrong Monitor During Dual-Monitor Debugging | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65528: Mouse Cursor on Wrong Monitor During Dual-Monitor Debugging" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65528/","publisher":null,"image":null,"headline":"Q65528: Mouse Cursor on Wrong Monitor During Dual-Monitor Debugging","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65528-mouse-cursor-on-wrong-monitor-during-dual-monitor-debugging">Q65528: Mouse Cursor on Wrong Monitor During Dual-Monitor Debugging</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65528
+Product(s): See article
+Version(s): 3.00 3.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | H_MOUSE | mspl13_basic
+Last Modified: 17-SEP-1990
+
+Under certain conditions, when invoking real-mode CodeView (CV) in
+dual-monitor mode with /2, the mouse cursor appears on the wrong
+monitor. When this occurs, a "sprite" mouse cursor appears on the
+monitor that the application is to run on, while the secondary monitor
+where CodeView is running does not have a mouse cursor. Several
+workarounds to this problem are given below.
+
+The sprite mouse cursor is a "graphic" arrow cursor similar to that in
+Windows 3.00 or OS/2 Presentation Manager (PM), as opposed to the
+traditional "text" block cursor that usually appears when running
+CodeView or the Programmer's WorkBench (PWB).
+
+The problem of the mouse appearing on the wrong monitor occurs only on
+computers that have "extended register" video boards, such as some of
+the Video 7 VGA cards. Certain mouse drivers enable the sprite cursor
+when they detect these extended video registers. Because a monochrome
+monitor cannot support this extended mode mouse cursor, the cursor
+fails to switch to the secondary monitor when focus is switched to
+that monitor after CodeView is invoked with the /2 switch.
+
+The following are three possible workarounds to this problem:
+
+1. Upgrade to mouse driver version 7.04 or later. This version
+   provides a new switch, /Y, which can be used with either the
+   MOUSE.COM program or the MOUSE.SYS device driver. The /Y switch
+   tells the mouse driver to disable the sprite cursor. The mouse
+   driver update can be obtained free of charge by contacting
+   Microsoft Product Support Services at (206) 637-7096.
+
+2. If a mouse driver earlier than version 7.04 is used, the problem
+   may be worked around by creating a batch file or adding the
+   following commands to the AUTOEXEC.BAT file:
+
+      mode mono
+      mouse
+      mode co80
+
+   These commands will switch focus to the monochrome monitor while
+   the mouse is being invoked and then will switch the focus back to
+   the color monitor. This method will prevent the mouse driver from
+   detecting the extended registers and using the sprite cursor.
+
+3. Disable the extended video registers. Check the video card
+   documentation to see if this method is possible with your
+   particular card.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

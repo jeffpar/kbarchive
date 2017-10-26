@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69109: &quot;Illegal Function Call&quot; Selecting Menu Item Using UI Toolbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69109: &quot;Illegal Function Call&quot; Selecting Menu Item Using UI Toolbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69109/","publisher":null,"image":null,"headline":"Q69109: &quot;Illegal Function Call&quot; Selecting Menu Item Using UI Toolbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69109-illegal-function-call-selecting-menu-item-using-ui-toolbox">Q69109: "Illegal Function Call" Selecting Menu Item Using UI Toolbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69109
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S901120-94 | mspl13_basic
+Last Modified: 14-FEB-1991
+
+An "Illegal function call" error can occur when you select an item
+from a user-defined menu with the ALT+Key1+Key2 combination, even
+though selecting the same item with the mouse does not give an error.
+This error can be caused by using an incorrect parameter in the
+MenuSet procedure. The fifth argument of the MenuSet SUB is
+accesskey%. If zero is passed as the fifth parameter, then that menu
+item and any after it will generate an error when selected with key
+combinations. This error does not occur if you use the mouse. This
+article shows why this error occurs, and gives a workaround for this
+problem.
+
+This information applies to the User Interface (UI) Toolbox in
+Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10 for MS-DOS.
+
+The MenuSet SUB is described on pages 545 and 546 of the "Microsoft
+BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10.
+
+The accesskey% argument specifies the position of the character within
+the menu item text that is used in conjunction with the ALT key to
+select that item. You may want accesskey% to be zero if you don't want
+the item to be selected. If you don't want the item to be selected,
+pass a zero as the third parameter (the State% argument).
+
+Code Example
+------------
+
+The following code example demonstrates the "Illegal function call"
+error. In this case, a zero is passed as the fifth parameter of
+MenuSet because the text is just a horizontal line across the menu.
+
+To run this example, save the code as &lt;filename&gt;.BAS, then invoke
+QBX.EXE with the following command:
+
+QBX &lt;filename&gt; /L UITBEFR
+
+' UIERROR.BAS
+DEFINT A-Z
+'$DYNAMIC
+'$INCLUDE: 'GENERAL.BI'
+'$INCLUDE: 'MENU.BI'
+'$INCLUDE: 'MOUSE.BI'
+'$INCLUDE: 'WINDOW.BI'
+
+'These global variables are required by the UI Toolbox routines:
+COMMON SHARED /uitools/ GloMenu         AS MenuMiscType
+COMMON SHARED /uitools/ GloTitle()      AS MenuTitleType
+COMMON SHARED /uitools/ GloItem()       AS MenuItemType
+
+'******************************************************************
+'MAXMENU and MAXITEM are constants defined in *.BI above.
+'The TYPEs MenuTitleType and MenuItemType are also defined
+'in the *.BI files above.
+'******************************************************************
+DIM GloTitle(MaxMenu)         AS MenuTitleType
+DIM GloItem(MaxMenu, MaxItem) AS MenuItemType
+COLOR 2, 1
+CLS
+MenuInit
+COLOR 15, 1                       'Sets the background to blue
+MenuSet 1, 0, 1, "Salutation", 1  'Menu title
+MenuSet 1, 1, 1, "Hello", 1       'First item under Salutation
+MenuSet 1, 2, 1, "-", 0           'Line across the menu
+MenuSet 1, 3, 1, "Goodbye", 1     'Last item under Salutation
+MenuPreProcess
+MenuShow
+MouseShow
+ProgramFinished = False
+WHILE NOT ProgramFinished
+  kbd$ = MenuInkey$
+  WHILE MenuCheck(2)
+    GOSUB MenuTrap
+  WEND
+WEND
+MouseHide
+END
+
+MenuTrap:
+  Menu = MenuCheck(0)
+  item = MenuCheck(1)
+  COLOR 2, 1
+  SELECT CASE Menu
+    CASE 1
+      SELECT CASE item
+        CASE 1                        'If hello was selected then
+          LOCATE 12, 37               'print hello.
+          PRINT "Hello"
+        CASE 3                        'If goodbye was selected then
+          LOCATE 13, 36               'print goodbye and end.
+          PRINT "GoodBye"
+          ProgramFinished = True
+        CASE ELSE
+          ProgramFinished = False
+      END SELECT
+    CASE ELSE
+      ProgramFinished = False
+  END SELECT
+  RETURN
+
+Workaround
+----------
+
+This problem can be solved by either not passing a zero as the fifth
+parameter in MenuSet or by changing a few lines of code in the
+MENU.BAS program. The problem lies in the MENU.BAS program in the
+MenuDo SUB. There is a DO LOOP shortly after the following comment:
+
+'==================================================================
+'If menu is selected, search items for matching access key, and
+'select that (menu,item) and exit MenuDo if item is enabled
+'==================================================================
+
+The LOOP statement reads:
+
+LOOP UNTIL UCASE$(MID$(GloItem(currMenu, newItem).text,_
+GloItem(currMenu, newItem.accesskey,1)) = kbd$ AND GloItem(currMenu,_
+newItem).state &gt; 0 AND RTRIM$(GloItem(currMenu, newItem).text) &lt;&gt;_
+"-") OR newItem = loopEnd
+
+Note: The above is one line of code in MENU.BAS. The underscore (_)
+characters indicate line continuation.
+
+If zero was passed as the fifth parameter in MenuSet, then
+GloItem(currMenu, newItem).accesskey = 0 when the loop reaches that
+menu item. This condition causes an "illegal function call" in the
+MID$ function. Adding the following IF statement to the loop will
+solve the problem:
+
+DO
+  newItem = (newItem) MOD MAXITEM + 1
+  IF GloItem(currMenu, newItem).accesskey = 0 THEN
+    LoopDone% = (newItem = loopEnd)
+  ELSE
+    LoopDone% = UCASE$(MID$(GloItem(currMenu, newItem).text,_
+    GloItem(currMenu, newItem.accesskey,1)) = kbd$ AND_
+    GloItem(currMenu, newItem).state &gt; 0 AND RTRIM$(GloItem(currMenu,_
+    newItem).text) &lt;&gt; "-") OR newItem = loopEnd
+  END IF
+LOOP UNTIL LoopDone%
+
+To include these changes in the files UITBEFR.LIB and UITBEFR.QLB, do
+the following:
+
+1. At the DOS prompt, type:
+
+      QBX MENU
+
+2. Make the changes in the DO LOOP as stated above.
+
+3. Save the new MENU.BAS.
+
+4. Exit QBX.EXE.
+
+5. At the DOS prompt, type:
+
+      BC MENU /X/Fs;
+
+6. Type:
+
+      LIB UITBEFR - MENU.OBJ + MENU.OBJ
+
+7. Type:
+
+      LINK /Q UITBEFR.LIB, UITBEFR.QLB,, QBXQLB.LIB;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

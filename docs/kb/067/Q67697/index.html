@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67697: UI Toolbox: &quot;Subscript Out of Range&quot; or Hang on WindowDo Call | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67697: UI Toolbox: &quot;Subscript Out of Range&quot; or Hang on WindowDo Call" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67697/","publisher":null,"image":null,"headline":"Q67697: UI Toolbox: &quot;Subscript Out of Range&quot; or Hang on WindowDo Call","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67697-ui-toolbox-subscript-out-of-range-or-hang-on-windowdo-call">Q67697: UI Toolbox: "Subscript Out of Range" or Hang on WindowDo Call</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67697
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist7.00 buglist7.10 | mspl13_basic
+Last Modified: 14-DEC-1990
+
+If more than 20 buttons and edit fields are opened simultaneously
+within a single window, a "Subscript out of range" error will occur on
+a call to the SUB procedure WindowDo at run time. In some instances, a
+call to WindowDo may lead to a "String space corrupt" error message or
+cause the computer to hang.
+
+Microsoft has confirmed this to be a problem with the User Interface
+(UI) Toolbox provided with Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10. The correction for this problem
+is provided further below.
+
+This information applies to BASIC PDS versions 7.00 and 7.10 for
+MS-DOS.
+
+To avoid the problem, change the default value of the constant
+MAXHOTSPOT, which appears in the file, GENERAL.BI. Two other constants
+MAXBUTTON and MAXEDITFIELD, which appear in GENERAL.BI, set the
+maximum number of buttons and edit fields allowed. The value of
+MAXHOTSPOT should be changed from its current setting of 20 to the sum
+of these two constants. The default setting for MAXBUTTON is 50, and
+the default setting for MAXEDITFIELD is 20. MAXHOTSPOT should be
+changed to 70.
+
+If a call to the SUB program WindowDo leads to a computer hang or a
+"String space corrupt" error message, Microsoft suggests changing the
+constants as described in the above paragraph and rebuilding the UI
+Toolbox default libraries, UITBEFR.LIB and UITBEFR.QLB. A computer
+hang or "String space corrupt" error message usually occurs when the
+default libraries have been modified and the modules that make up the
+UI Toolbox have not been compiled with the /D option. The /D option
+enforces array bounds checking on arrays. Using the /D compile option
+will help to avoid a computer hang or a "String space corrupt" error
+message at run time.
+
+The following assumes that you are using the default LINK library
+UITBEFR.LIB and the Quick library UITBEFR.QLB built during set up of
+BASIC PDS.
+
+Once the modifications to GENERAL.BI have been made, update the
+library UITBEFR.LIB and re-create the default Quick library
+UITBEFR.QLB. Below are the steps necessary to update the .LIB file and
+re-create the .QLB file.
+
+Because the files GENERAL.BAS, MENU.BAS, MOUSE.BAS, and WINDOW.BAS all
+require GENERAL.BI, they must be recompiled from DOS as follows:
+
+        BC GENERAL.BAS /FS/X/D;
+        BC MENU.BAS /FS/X/D;
+        BC MOUSE.BAS /FS/X/D;
+        BC WINDOW.BAS /FS/X/D;
+
+Enter the following command line from DOS to modify the library,
+UITBEFR.LIB:
+
+        LIB UITBEFR.LIB-+GENERAL.OBJ-+MENU.OBJ-+MOUSE.OBJ-+WINDOW.OBJ
+
+Enter the following from DOS to re-create the Quick library,
+UITBEFR.QLB:
+
+        LINK /Q UITBEFR.LIB,,,QBXQLB.LIB;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

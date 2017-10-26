@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170660: TN3270 Server Access Violation in SetBestGroups() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170660: TN3270 Server Access Violation in SetBestGroups()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170660/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170660/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170660/","publisher":null,"image":null,"headline":"Q170660: TN3270 Server Access Violation in SetBestGroups()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170660-tn3270-server-access-violation-in-setbestgroups">Q170660: TN3270 Server Access Violation in SetBestGroups()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170660
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a TN3270E print emulator attempts to open a printer session through the SNA
+Server 3.0 Service Pack 1 TN3270 Server, the TN3270 server may encounter the
+following access violation:
+
+  
+
+  Application exception occurred:
+     App: tn3servr.DBG (pid=&lt;process id&gt;)
+     Exception number: c0000005 (access violation)
+
+  [data omitted]
+
+  function: SetBestGroups
+
+  FAULT -&gt;01012c07 8b4804     mov  ecx,[eax+0x4]   ds:0068e922=????????
+
+CAUSE
+=====
+
+This is caused by a problem in the SNA Server 3.0 Service Pack 1 TN3270 server,
+which was introduced by the addition of support for multiple ports.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0 Service
+Pack 1. This problem was corrected in the latest SNA Server version 3.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+When this problem occurs, the stack back trace looks like the following:
+
+  *----&gt; Stack Back Trace &lt;----*
+
+  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+  0ca5fc10 01013e60 00183230 0ca5fc34 001849a2 001833c8
+     tn3servr!SetBestGroups
+  0ca5fc98 0100faa8 00183230 001849a2 0ca5fcbc 001849a2
+     tn3servr!SRSGetSNAResourceFirst
+  0ca5fd54 010184e3 00183230 001849a2 00183888 00000010
+     tn3servr!SNAGenericSessionStart
+  0ca5fd70 010179b7 00183230 00183230 0101704b 00183230
+     tn3servr!TNTContinueDataFromNetwork
+  0ca5fd7c 0101704b 00183230 0ca5ff5c 0ca5fe3c 00183230
+     tn3servr!TNTContinueDataFromNetwork
+  0ca5fd94 01018580 00183230 010152b2 00183230 00000011
+     tn3servr!TNTContinueDataFromNetwork
+  0ca5fd9c 010152b2 00183230 00000011 0ca5fe3c 001837cc
+     tn3servr!TNTDataFromNetwork
+  0ca5fe14 77f4f7c2 00000000 00000011 001837cc 7ffdf000 tn3servr!TCPRecv
+  0ca5fe28 77fb03bb 01015100 001837cc 00000000 00010017
+     kernel32!&lt;nosymbols&gt;
+  0ca5ff5c 0100c876 00000003 0018d0b8 00000000 006ddcce ntdll!&lt;nosymbols&gt;
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP1
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

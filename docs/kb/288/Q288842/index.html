@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288842/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288842/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288842/","publisher":null,"image":null,"headline":"Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288842-new-8022-connections-always-appear-as-ethernet-in-sna-manager">Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288842
+Product(s): Microsoft SNA Server
+Version(s): 4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport kbsna400sp4
+Last Modified: 28-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you add new Data Link Control (DLC) 802.2 link services to an SNA Server
+configuration after you apply SNA Server 4.0 Service Pack 4 (SP4), all
+connections that use these link services appear to be Ethernet connections even
+if Token Ring adapters are being used for the physical connection.
+
+The new connections have an Ethernet icon (T-shaped tap) when the connections are
+viewed in SNA Server Manager. The Connection Properties dialog box in Manager
+also indicate that the connection type is Ethernet.
+
+NOTE: New connections that are created after you apply SNA Server 4.0 SP4 show
+the correct network icon if they are configured to use DLC 802.2 link services
+that were installed before SP4.
+
+CAUSE
+=====
+
+When you install SNA Server 4.0 SP4 on Windows NT 4.0, SNA Server 4.0 SP4 does
+not correctly read the installed network adapter's MediaType registry parameter.
+Therefore, all DLC 802.2 connections appear as Ethernet connections because this
+is the default connection type in SNA Server.
+
+SNA Server 4.0 SP3 and SP4 display all DLC 802.2 connections as Ethernet
+connections on Windows 2000 because the MediaType registry entry does not exist
+in Windows 2000. Therefore, the default connection type of Ethernet is always
+used when installing SNA Server 4.0 SP3 and SP4 on Windows 2000.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Microsoft SNA Server version 4.0 service
+pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
++-------------------------------------+
+| File name    | Date       | Time    | 
++-------------------------------------+
+| Snarpccl.dll | 03/05/2001 | 09:25AM | 
++-------------------------------------+
+| Snarpcsv.exe | 03/05/2001 | 09:26AM | 
++-------------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+4.0 SP4.
+
+MORE INFORMATION
+================
+
+After you apply the fix, use one of the following procedures, depending on
+whether the SNA Server configuration includes connections with the incorrect
+Ethernet icon:
+
+- If the SNA Server does not have any installed DLC 802.2 link services
+  configured to use the Token Ring adapter and there are no connections that
+  show the incorrect Ethernet icon, add new DLC 802.2 link services. New
+  connections that use these newly added link services will show the correct
+  Token Ring connection icon.
+
+  -or-
+
+- If the SNA Server configuration has current connections with the wrong
+  connection icon, follow these steps:
+
+  a. Delete the DLC 802.2 link services (SnaDlc1) that the connections with the
+     incorrect icon are using.
+
+     NOTE: Removing the link services will cause any existing connections that
+     were using it to show a link service of &lt;None&gt; when you view the
+     connection's Properties in SNA Manager.
+
+  b. Save the configuration.
+
+  c. Add DLC 802.2 link services that point to the Token Ring adapter.
+
+  d. Open the affected connections and select a DLC 802.2 link service that was
+     just added in step c.
+
+  e. Save the configuration.
+
+  f. Close and re-open SNA Manager. The connections should now show the correct
+     Token Ring icon.
+
+For additional information about a similar problem and how to determine the SNA
+Server DLC 802.2 connection type, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q140149 SNA 802.2 Connection Icon Indicates Incorrect Network Type
+
+Because the MediaType registry parameter is not available in Windows 2000, the
+DLC 802.2 link service was changed in Host Integration Server 2000 to query DLC
+to determine the network adapter's media type. This change to query DLC was
+included in this fix so that the correct media type is determined when you run
+SNA Server 4.0 SP4 on Windows 2000 after the fix is applied.
+
+If you install SNA Server or Host Integration Server 2000 on Windows NT 4.0, the
+updated DLC 802.2 link service still reads the MediaType registry parameter to
+determine the connection type.
+
+The maximum Basic Transmission Unit (BTU) length for Ethernet connections
+defaults to 1493, whereas the default for Token Ring connections is 1929. The
+problem described here could result in some network connectivity issues because
+of the difference in the default maximum BTU length.
+
+For additional information about how SNA Server determines the maximum BTU length
+over the 802.2 DLC connection, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q148972 INFO: How SNA Server Determines Max BTU Over 802.2 DLC
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP4
+Version           : :4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q76922: ROM and RAM Error Codes Explained | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q76922: ROM and RAM Error Codes Explained" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/076/Q76922/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/076/Q76922/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/076/Q76922/","publisher":null,"image":null,"headline":"Q76922: ROM and RAM Error Codes Explained","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q76922-rom-and-ram-error-codes-explained">Q76922: ROM and RAM Error Codes Explained</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q76922
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the event that a RAM or ROM chip fails, a multidigit error code will be
+displayed. The error code is displayed only briefly, then replaced by the
+message
+
+  PARITY CHECK x
+
+where if x=1, the problem is on the system board or is power supply problem, and
+if x=2, the problem is on one of the memory expansion adapters.
+
+The multidigit error codes can be used to determine where the chip error
+occurred.
+
+MORE INFORMATION
+================
+
+ROM Error Codes
+---------------
+
+During power-on-self-test (POST), a failed ROM chip will display an error code in
+the following format
+
+  xx00 ROM
+
+-or-
+
+  xx000 ROM
+
+where xx is the hexadecimal address of the failed ROM.
+
+Not all problems can be identified by an error code, because some problems will
+prevent the computer from booting at all.
+
+The following table shows some of the possible error codes and what they mean:
+
+Error Code    Computer     Location of Faulty ROM
+----------    --------     ----------------------
+
+C800 ROM       All         Hard disk drive adapter
+CC00 ROM       PC,XT       PC network
+IO ROM CC00    XT 286,AT   PC network
+F600 ROM       PC          U29
+F800 ROM       PC          U30
+FA00 ROM       PC          U31
+FC00 ROM       PC          U32
+Fxxx ROM       PC          System board
+ROM Error      all         System board
+IO ROM xxxxxx  XT 286, AT  Power related
+
+RAM Error Codes
+---------------
+
+When the last three numbers of an error code are 201, it indicates an error in
+the RAM area. The numbers preceding 201 are the code that identifies the
+specific chip. Error code formats appear as follows:
+
+Computer          Error Code Format
+--------   -----------------
+PC                xxx 201
+XT                xxxxx xx 201
+AT and PS/2       xxxxxx xxxx 201
+
+Note: x represents hexadecimal characters.
+
+The first one or two characters indicate the bank or expansion adapter, and the
+two to four characters preceding 201 represent the specific chip that failed.
+
+If a chip has failed in one of the first few memory banks, the error code may
+disappear very quickly. Ensure that the display is warmed-up sufficiently to
+show the error code.
+
+For more information, query on the following words:
+
+  parity error and meaning and message
+
+  parity check and error and description
+
+REFERENCES
+==========
+
+"The PC Configuration Handbook," John Woram, pages 259-275, Bantam, 1990
+
+"IBM PC Troubleshooting and Repair Guide," Robert C. Brenner, H.W. Sams &amp;
+Co., 1985
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

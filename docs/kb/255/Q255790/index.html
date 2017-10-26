@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255790/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255790/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255790/","publisher":null,"image":null,"headline":"Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255790-howto-use-a-datacombo-activex-control-in-visual-foxpro">Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255790
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbADO kbContainer kbCtrl kbDatabase kbvfp600 kbVS600sp3 kbGrpDSFox kbGrpDSMDA
+Last Modified: 21-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft DataCombo control (Msdatlst.ocx) cannot directly use Microsoft
+Visual FoxPro tables as a data source. The DataCombo control can, however, be
+bound to an ActiveX Data Objects (ADO) recordset. This article illustrates how
+to bind a DataCombo ActiveX control to an ADO recordset from within a Visual
+FoxPro application.
+
+The code in this article requires installation of Microsoft Visual Studio Service
+Pack 3.
+
+MORE INFORMATION
+================
+
+NOTE: The Microsoft DataCombo control has not been tested with and is not
+supported by Microsoft Visual FoxPro.
+
+In order to bind a DataCombo ActiveX control to an ADO recordset, a recordset
+that can be bookmarked or a client-side ADO recordset must first be created.
+After this ADO recordset has been created, the DataCombo.BoundColumn,
+DataCombo.ListField, and DataCombo.RowSource properties are used to bind the
+control with the ADO recordset, as follows:
+
+  WITH THISFORM.DataCombo1
+     .BOUNDCOLUMN = myrs.FIELDS(0).NAME  &amp;&amp; Source Field being bound to
+     .ListField = myrs.FIELDS(0).NAME    &amp;&amp; Source Display Field
+     .ROWSOURCE = myrs                   &amp;&amp; Source Recordset
+  ENDWITH
+
+1. Create a program file named "DataCombo.prg" (without the quotation marks)
+  using the following code:
+
+  oX = CREATEOBJECT('MYFORM')
+  oX.SHOW()
+
+  READ EVENTS
+
+  DEFINE CLASS myform AS FORM
+  	CAPTION = "DataCombo Control Form"
+  	HEIGHT = 250
+  	LEFT = 0
+  	TOP = 0
+  	WIDTH = 375
+  	NAME = "myform"
+
+  	ADD OBJECT DataCombo1 AS OLECONTROL WITH ;
+  		OLECLASS = "MSDataListLib.DataCombo.1",;
+  		TOP		 = 25, ;
+  		LEFT	 = 25, ;
+  		HEIGHT   = 22, ;
+  		WIDTH	 = 175, ;
+  		NAME     = "DataCombo1"
+
+  	ADD OBJECT textBox1 AS TEXTBOX WITH ;
+  		TOP     = 65, ;
+  		LEFT    = 25, ;
+  		HEIGHT  = 25, ;
+  		WIDTH   = 150, ;
+  		NAME    = "textBox1", ;
+  		CONTROLSOURCE = "demo.cCustName"
+
+  	ADD OBJECT commandButton2 AS COMMANDBUTTON WITH ;
+  		TOP     = 225, ;
+  		LEFT    = 275, ;
+  		HEIGHT  = 25, ;
+  		CAPTION = "\&lt;Close", ;
+  		NAME    = "commandButton2"
+
+  	PROCEDURE LOAD
+  		#DEFINE adUseClient 3
+  		#DEFINE adLockOptimistic 3
+  		WITH THIS
+  *!*		 Create an ADO Connection to the FoxPro Samples
+  			.ADDPROPERTY("oConn")
+  			.oConn = CREATEOBJECT("ADODB.CONNECTION")
+
+  *!* 	Need a Client Side Cursor for this
+  			.oConn.CursorLocation = adUseClient
+
+  *!* 	Open the data source - make sure the Samples directory is correctly
+  *!* 	set in Tools:Options:File Locations
+  			.oConn.OPEN("DRIVER=Microsoft Visual FoxPro Driver;" + ;
+  				"SourceType=DBC;SourceDB=" + HOME(2) + "DATA\TESTDATA.DBC;" + ;
+  				"Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE")
+
+  *!* 	Create an ADO Recordset to be used as the datasource for the DataCombo control
+  			.ADDPROPERTY("oRS")
+  			.oRS = CREATEOBJECT("ADODB.RECORDSET")
+
+  *!* 	Set the connection property of the recordset
+  			.oRS.ActiveConnection = THISFORM.oConn
+
+  *!*		The recordset inherits the cursorlocation of the connection
+  			.oRS.LockType = adLockOptimistic
+  			.oRS.OPEN("SELECT contact FROM CUSTOMER",,,, 1)
+  		ENDWITH
+
+  		IF !FILE('demo.dbf')
+  			CREATE TABLE demo (cCustName c(30))
+  			APPEND BLANK
+  		ENDIF
+
+  		IF !USED('demo')
+  			USE demo
+  		ENDIF
+  	ENDPROC
+
+  	PROCEDURE INIT
+  		LOCAL loField
+
+  *!* 	Set properties for the DataCombo control
+  		WITH THIS.DataCombo1
+  			loField = THISFORM.oRS.FIELDS(0)
+
+  			.TEXT = loField.VALUE		 &amp;&amp; Display value
+  			.BOUNDCOLUMN = loField.NAME  &amp;&amp; Source Field being bound to
+  			.ListField = loField.NAME	 &amp;&amp; Source Display Field
+  			.ROWSOURCE = THISFORM.oRS	 &amp;&amp; Source Recordset
+  		ENDWITH
+  	ENDPROC
+
+  	PROCEDURE DataCombo1.DBLCLICK
+  		LPARAMETERS area
+
+  		SELECT demo
+  		IF RECCOUNT() = 0
+  			INSERT INTO demo VALUES (THIS.TEXT)
+  		ELSE
+  			UPDATE demo SET cCustName = THIS.TEXT
+  		ENDIF
+  		THISFORM.REFRESH
+  	ENDPROC
+
+  	PROCEDURE commandButton2.CLICK
+  		THISFORM.RELEASE
+  	ENDPROC
+
+  	PROCEDURE UNLOAD
+  		WITH THIS
+  			.oRS.CLOSE
+  			.oConn.CLOSE
+  			.oRS = .NULL.
+  			.oConn = .NULL.
+  		ENDWITH
+  		
+  		CLOSE TABLES ALL
+  		CLEAR EVENTS
+  	ENDPROC
+  ENDDEFINE
+
+2. Save and run DataCombo.prg.
+
+3. Click on the DataCombo control to expand the drop-down box.
+
+4. Double-click the DataCombo control and note that the text box value has been
+  set to the value displayed in the DataCombo control.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information regarding ActiveX Controls supported with Microsoft
+Visual FoxPro 6.0, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q191222 INFO: ActiveX Controls Supported by Visual FoxPro 6.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbADO kbContainer kbCtrl kbDatabase kbvfp600 kbVS600sp3 kbGrpDSFox kbGrpDSMDAC kbDSupport kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

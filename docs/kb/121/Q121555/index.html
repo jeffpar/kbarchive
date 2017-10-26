@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121555: Compression Performance Tuning in Systems Management Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121555: Compression Performance Tuning in Systems Management Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121555/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121555/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121555/","publisher":null,"image":null,"headline":"Q121555: Compression Performance Tuning in Systems Management Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121555-compression-performance-tuning-in-systems-management-server">Q121555: Compression Performance Tuning in Systems Management Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q121555</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">kbConfig</span> <span class="n">smshowto</span> <span class="n">smsconfig</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">24</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span><span class="p">,</span> <span class="m">1.2</span><span class="p">,</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">process</span> <span class="k">of</span> <span class="n">creating</span> <span class="n">a</span> <span class="n">data</span><span class="p">-</span><span class="n">compressed</span> <span class="k">package</span> <span class="p">(*.</span><span class="n">PKG</span><span class="p">)</span> <span class="k">to</span> <span class="n">be</span> <span class="n">transmitted</span>
+<span class="n">through</span> <span class="n">a</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">sender</span> <span class="n">involves</span> <span class="n">intense</span> <span class="n">use</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Central</span>
+<span class="n">Processing</span> <span class="n">Unit</span> <span class="p">(</span><span class="n">CPU</span><span class="p">)</span> <span class="n">for</span> <span class="n">the</span> <span class="n">data</span><span class="p">-</span><span class="n">compression</span> <span class="n">algorithm</span><span class="p">.</span> <span class="n">The</span> <span class="n">frequency</span> <span class="n">at</span> <span class="n">which</span>
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">will</span> <span class="n">yield</span> <span class="n">the</span> <span class="n">CPU</span> <span class="n">during</span> <span class="n">compression</span> <span class="n">can</span> <span class="n">have</span> <span class="n">a</span>
+<span class="n">dramatic</span> <span class="n">effect</span> <span class="n">on</span> <span class="n">performance</span><span class="p">;</span> <span class="n">this</span> <span class="n">article</span> <span class="n">discusses</span> <span class="n">this</span> <span class="n">type</span> <span class="k">of</span> <span class="n">tuning</span><span class="p">.</span>
+<span class="n">There</span> <span class="n">are</span> <span class="n">several</span> <span class="n">Registry</span> <span class="k">parameters</span> <span class="n">for</span> <span class="n">this</span> <span class="n">purpose</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">WARNING</span><span class="p">:</span> <span class="n">Using</span> <span class="n">Registry</span> <span class="n">Editor</span> <span class="n">incorrectly</span> <span class="n">can</span> <span class="n">cause</span> <span class="n">serious</span><span class="p">,</span> <span class="nf">system</span><span class="p">-</span><span class="n">wide</span> <span class="n">issues</span>
+<span class="n">that</span> <span class="n">may</span> <span class="n">require</span> <span class="n">you</span> <span class="k">to</span> <span class="n">reinstall</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">to</span> <span class="n">correct</span> <span class="n">them</span><span class="p">.</span>
+<span class="n">Microsoft</span> <span class="n">cannot</span> <span class="n">guarantee</span> <span class="n">that</span> <span class="n">any</span> <span class="n">issues</span> <span class="n">resulting</span> <span class="k">from</span> <span class="n">the</span> <span class="n">use</span> <span class="k">of</span> <span class="n">Registry</span>
+<span class="n">Editor</span> <span class="n">can</span> <span class="n">be</span> <span class="n">solved</span><span class="p">.</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">tool</span> <span class="n">at</span> <span class="n">your</span> <span class="n">own</span> <span class="n">risk</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">During</span> <span class="n">a</span> <span class="k">package</span> <span class="n">compression</span><span class="p">,</span> <span class="n">a</span> <span class="n">block</span> <span class="k">of</span> <span class="n">data</span> <span class="n">is</span> <span class="n">submitted</span> <span class="k">to</span> <span class="n">the</span> <span class="n">compression</span>
+  <span class="n">algorithm</span> <span class="k">and</span> <span class="n">this</span> <span class="n">call</span> <span class="n">returns</span> <span class="n">a</span> <span class="n">compressed</span> <span class="n">block</span><span class="p">.</span> <span class="n">A</span> <span class="n">large</span> <span class="n">number</span> <span class="k">of</span> <span class="n">these</span>
+  <span class="n">calls</span> <span class="n">can</span> <span class="n">take</span> <span class="n">a</span> <span class="n">large</span> <span class="n">amount</span> <span class="k">of</span> <span class="n">CPU</span> <span class="n">time</span><span class="p">,</span> <span class="n">so</span> <span class="n">we</span> <span class="n">have</span> <span class="n">a</span> <span class="n">timer</span> <span class="n">that</span> <span class="n">allows</span>
+  <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">to</span> <span class="n">yield</span> <span class="n">the</span> <span class="n">processor</span> <span class="n">for</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">amount</span> <span class="k">of</span>
+  <span class="n">time</span><span class="p">.</span> <span class="n">The</span> <span class="n">default</span> <span class="n">is</span> <span class="m">75</span> <span class="n">milliseconds</span><span class="p">.</span> <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="k">set</span> <span class="n">a</span> <span class="n">Registry</span>
+  <span class="n">entry</span> <span class="n">under</span><span class="p">:</span>
+
+     <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">Compression</span><span class="p">\</span> 
+
+     <span class="s2">"Yield Time"</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span> <span class="p">[</span><span class="n">this</span> <span class="n">is</span> <span class="k">in</span> <span class="n">milliseconds</span> <span class="k">of</span> <span class="n">yield</span> <span class="n">time</span> <span class="n">per</span>
+     <span class="n">compression</span> <span class="n">block</span><span class="p">]</span>
+
+  <span class="k">If</span> <span class="n">compression</span> <span class="n">appears</span> <span class="k">to</span> <span class="n">monopolize</span> <span class="n">your</span> <span class="nf">system</span><span class="p">,</span> <span class="n">try</span> <span class="n">setting</span> <span class="n">this</span> <span class="k">to</span> <span class="m">100</span> <span class="k">or</span>
+  <span class="m">125.</span> <span class="n">For</span> <span class="n">systems</span> <span class="k">with</span> <span class="n">lots</span> <span class="k">of</span> <span class="n">RAM</span> <span class="k">and</span> <span class="n">CPU</span> <span class="n">power</span><span class="p">,</span> <span class="n">values</span> <span class="k">of</span> <span class="m">1</span><span class="p">-</span><span class="m">20</span> <span class="n">might</span> <span class="n">be</span>
+  <span class="n">usable</span><span class="p">,</span> <span class="k">and</span> <span class="n">this</span> <span class="n">would</span> <span class="n">speed</span> <span class="n">up</span> <span class="n">compression</span> <span class="n">somewhat</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">There</span> <span class="n">are</span> <span class="m">7</span> <span class="n">levels</span> <span class="k">of</span> <span class="n">compression</span> <span class="p">(</span><span class="m">1</span> <span class="n">through</span> <span class="m">7</span><span class="p">);</span> <span class="n">a</span> <span class="n">level</span> <span class="k">of</span> <span class="m">1</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+  <span class="n">providing</span> <span class="n">the</span> <span class="n">least</span> <span class="n">compression</span> <span class="k">and</span> <span class="n">greatest</span> <span class="n">speed</span><span class="p">,</span> <span class="k">and</span> <span class="n">a</span> <span class="n">level</span> <span class="k">of</span> <span class="m">7</span>
+  <span class="n">providing</span> <span class="n">maximum</span> <span class="n">compression</span> <span class="k">and</span> <span class="n">taking</span> <span class="n">additional</span> <span class="n">time</span><span class="p">.</span> <span class="n">This</span> <span class="n">value</span> <span class="n">is</span>
+  <span class="n">located</span> <span class="n">at</span><span class="p">:</span>
+
+     <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">Compression</span><span class="p">\</span> 
+
+     <span class="s2">"Compression Level"</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span>
+
+  <span class="k">In</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span> <span class="n">degree</span> <span class="k">of</span> <span class="n">compression</span> <span class="n">desired</span><span class="p">,</span> <span class="n">compression</span> <span class="n">can</span> <span class="n">be</span> <span class="n">disabled</span>
+  <span class="n">by</span> <span class="n">setting</span> <span class="n">the</span> <span class="n">value</span> <span class="n">below</span> <span class="k">to</span> <span class="s2">"No"</span><span class="p">.</span> <span class="n">The</span> <span class="n">default</span> <span class="n">is</span> <span class="s2">"Yes"</span><span class="p">.</span>
+
+     <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">Compression</span><span class="p">\</span> 
+
+     <span class="s2">"Enable Compression"</span> <span class="p">(</span><span class="n">REG_SZ</span><span class="p">)</span>
+
+  <span class="n">Two</span><span class="p">-</span><span class="k">to</span><span class="p">-</span><span class="n">three</span> <span class="n">megabytes</span> <span class="p">(</span><span class="n">M</span><span class="p">)</span> <span class="k">of</span> <span class="n">memory</span> <span class="n">resource</span> <span class="n">can</span> <span class="n">be</span> <span class="n">saved</span> <span class="n">by</span> <span class="n">disabling</span>
+  <span class="n">compression</span><span class="p">;</span> <span class="n">however</span><span class="p">,</span> <span class="n">greater</span> <span class="n">disk</span> <span class="n">space</span> <span class="n">will</span> <span class="n">be</span> <span class="n">required</span> <span class="k">to</span> <span class="n">store</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">files</span> <span class="n">because</span> <span class="n">they</span> <span class="n">will</span> <span class="k">not</span> <span class="n">be</span> <span class="n">compressed</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Decompression</span> <span class="n">Buffer</span> <span class="n">size</span><span class="p">:</span>
+
+     <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">Compression</span><span class="p">\</span> 
+
+     <span class="s2">"Decompression Buffer Size (Log2 Value)"</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span>
+
+  <span class="n">This</span> <span class="n">value</span> <span class="n">specifies</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">buffers</span> <span class="k">to</span> <span class="n">be</span> <span class="n">used</span> <span class="n">when</span> <span class="n">decompressing</span> <span class="n">a</span>
+  <span class="k">package</span> <span class="n">file</span><span class="p">.</span> <span class="n">It</span> <span class="n">defaults</span> <span class="k">to</span> <span class="m">15</span> <span class="k">and</span> <span class="n">can</span> <span class="n">be</span> <span class="k">set</span> <span class="k">to</span> <span class="n">a</span> <span class="n">value</span> <span class="k">of</span> <span class="m">1</span> <span class="n">through</span> <span class="m">31</span><span class="p">;</span>
+  <span class="n">however</span><span class="p">,</span> <span class="n">for</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.0</span><span class="p">,</span> <span class="n">values</span> <span class="n">greater</span> <span class="n">than</span> <span class="m">15</span>
+  <span class="n">are</span> <span class="n">ignored</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">sms</span> <span class="n">prodsms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbnetwork</span> <span class="n">kbConfig</span> <span class="n">smshowto</span> <span class="n">smsconfig</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span> <span class="n">kbSMS110</span> <span class="n">kbSMS120</span> <span class="n">kbSMS200</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">2.0</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

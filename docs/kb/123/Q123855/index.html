@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123855: PC MMTA: MMTA and Digiboard Configurations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123855: PC MMTA: MMTA and Digiboard Configurations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123855/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123855/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123855/","publisher":null,"image":null,"headline":"Q123855: PC MMTA: MMTA and Digiboard Configurations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123855-pc-mmta-mmta-and-digiboard-configurations">Q123855: PC MMTA: MMTA and Digiboard Configurations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123855
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In setting up a Digiboard product to work with version 3.2 of Microsoft Mail
+Multitasking Message Transfer Agent (MMTA), specific switches must be modified
+in order for the MMTA to run properly. For example, OS/2 will initialize all
+ports as data type E,7,1 and 1200 baud by default, unless otherwise specified
+with the Digiboard driver.
+
+Example command line for Digiboard driver used with the MMTA:
+
+  DEVICE=C:\DIGI\XALL.SYS /b:9600 /d:N81 /p:200 /m:D8000 /n:"digi"1
+
+MORE INFORMATION
+================
+
+The Digiboard driver (XALL.SYS or similar) is loaded from the CONFIG.SYS file.
+The command format line syntax is described as follows.
+
+NOTE: Only pertinent switches for the MMTA are defined:
+
+  DEVICE=C:\DIGI\XALL.SYS /n:names /b:baud /d:data type /a:a
+
+  where:
+
+  /n: ---&gt; Defines the naming convention for Digiboard ports
+
+  If this switch is omitted, the first port will be named COM3, the second COM4
+  and so on by default. Regardless of how the ports are named, they must match
+  the AsyncCommPort= settings in each EXTERNAL.INI instance.
+
+  /b: ---&gt; Sets the default baud rate to be used with all ports
+
+  Since the OS/2 default baud rate for serial ports is only 1200, the switch
+  should be included to obtain better performance. The switch will support up
+  to 38,400 baud; however, more reliable results can be obtained by using rates
+  of 19,200 or less.
+
+  /d: ---&gt; Sets the initial data type (parity, # of data bits, stop bit #)
+
+  If this switch is not used, all serial ports will be set to even parity, 7
+  data and 1 stop bit(s). The MMTA requires no parity, 8 data bits and 1 stop
+  bit for asynchronous connections.
+
+  /a:a ---&gt; Enables the alternate pin assignment of Carrier Detect (DCD)
+
+  For Digiboard RJ45 port interfaces only.
+
+  This switch will allow an 8-pin RJ45 cable to be used instead of a 10-pin RJ45
+  cable by re-assigning the Carrier Detect pin from pin 1 to pin 2. Using an
+  8-pin cable will also eliminate 2 signals, ring indictor (RI) and data set
+  ready (DSR). This switch is not recommended for use with the MMTA, largely
+  because RTS/CTS (hardware) handshaking requires the 2 eliminated signals.
+
+  NOTE: Digiboard uses an additional pin assignment for cable shielding (GND)
+  that is not required for the MMTA.
+
+For more information, please see Microsoft Mail Multi-Tasking MTA 3.2
+"Administrator's Guide" INSTALL.DOC file for DIGIBOARD XALL.SYS driver version
+1.4.5 and "Digiboard Xem System Hardware Configuration Guide."
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

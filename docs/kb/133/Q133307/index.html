@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133307: HOWTO: How to Detect If a CFormView Has Changed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133307: HOWTO: How to Detect If a CFormView Has Changed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133307/","publisher":null,"image":null,"headline":"Q133307: HOWTO: How to Detect If a CFormView Has Changed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133307-howto-how-to-detect-if-a-cformview-has-changed">Q133307: HOWTO: How to Detect If a CFormView Has Changed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133307
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1
+Operating System(s): 
+Keyword(s): kbDocView kbMFC kbVC kbVC100 kbVC200 kbVC400 kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Changes to the controls on a CFormView-derived class are not automatically
+detected by the framework. As in any other CView-derived class, it is up to your
+view to let the document know when its content has changed.
+
+MORE INFORMATION
+================
+
+When the content of a control on a CFormView-derived class has changed, the
+document associated with the view should be marked as modified. Doing this
+results in MFC popping up a dialog box asking the user if they want to save the
+changed file whenever the user tries to either close the application or load a
+different document.
+
+To mark a document associated with a CFormView-derived class as modified, add
+OnChange handlers for the controls on the view, and call the CDocument class
+member function SetModifiedFlag(TRUE). For example, for an edit control, add a
+handler for the EN_CHANGE message in the CFormView-derived class, and call
+GetDocument()-&gt;SetModifiedFlag(TRUE).
+
+The number of controls for which the programmer should provide OnChange handlers
+depends on the extent to which the application serializes the UI state of
+CFormView. For example, if the current selection of a listbox is serialized,
+then a change in the listbox item selection should be considered a change to the
+document.
+
+For controls like a group of option buttons, add handlers for the BN_CLICKED
+message in the CFormView-derived class, and if the button selection has changed,
+call GetDocument()-&gt;SetModifiedFlag(TRUE).
+
+Additional query words: kbinf 1.00 1.50 2.00 2.10 2.20 2.50 2.51 2.52 3.0 3.00 3.1 3.10 3.2 3.20 4.00 4.10
+
+======================================================================
+Keywords          : kbDocView kbMFC kbVC kbVC100 kbVC200 kbVC400 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

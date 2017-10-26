@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224459: BackOffice Web Administrator Links Are Unavailable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224459: BackOffice Web Administrator Links Are Unavailable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224459/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224459/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224459/","publisher":null,"image":null,"headline":"Q224459: BackOffice Web Administrator Links Are Unavailable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224459-backoffice-web-administrator-links-are-unavailable">Q224459: BackOffice Web Administrator Links Are Unavailable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224459
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Web Administrator program included with BackOffice Server,
+the Web links to the BackOffice Administrator and Windows NT Administrator Web
+pages may be unavailable. This may occur even though both components are
+installed on the BackOffice Web server.
+
+For example, this behavior may occur when you browse
+http://&lt;servername&gt;/boadmin.
+
+CAUSE
+=====
+
+This behavior occurs when a virtual directory is missing for an administration
+tool.
+
+The BackOffice Web Administration main page checks the virtual directories
+installed on the Web site to determine if a Web tool is installed. If it finds
+the Boadmin virtual directory, it activates the BackOffice Administration link
+on the Web Administration main page; if it finds the Ntadmin virtual directory,
+it activates the Windows NT Administration link. The same behavior applies to
+the Iisadmin virtual directory for the Internet Information Server (IIS)
+Administration link. If the virtual directory is missing for an administration
+tool, the link for that tool is not available on the BackOffice Web
+Administration main page.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method:
+
+- If the Boadmin and Ntadmin folders do not appear in the default Web site's
+  root folder, reinstall the Web Administrator program. The default path for
+  these folders is Inetpub\Wwwroot.
+
+  To install the Web Administrator program, run Iksetup.exe on BackOffice CD-ROM
+  3 in the Bkoffice\I386 folder. Click to install the Web Administrator
+  program.
+
+- If the Boadmin and Ntadmin folders do appear in the default Web site's root
+  folder, use Microsoft Management Console to check each folder. Both should be
+  physical folders, and should also be virtual directories within IIS. To
+  change the Boadmin and Ntadmin folders to virtual directories:
+
+  1. Right-click the default Web site, point to New, and then click Virtual
+     Directory.
+
+  2. Add Boadmin or Ntadmin as the alias.
+
+  3. Click Next.
+
+  4. Browse to Boadmin or Ntadmin under Inetpub\Wwwroot.
+
+  5. Click Next.
+
+  6. Add the Execute permission to the permissions list, and then click Finish.
+
+If necessary, repeat this process for both Boadmin and Ntadmin.
+If the methods outlined above do not reset the Boadmin settings and the service
+links are still unavailable, you can force the tool that determines which Web
+administration services are installed to return a hard-coded custom list of
+installed Web services. To do this, edit the
+Inetpub\Wwwroot\Boadmin\Common\Include.asp file:
+
+1. Use Notepad to open the Inetpub\Wwwroot\Boadmin\Common\Include.asp file.
+
+2. In Notepad, click Find on the Search menu.
+
+3. In the Search box, type "HasWebAdmin(Comp)" (without the quotation marks). A
+  section of code similar to the following sample is displayed:
+
+  Function HasWebAdmin(Comp)
+  	Select Case Comp
+  		Case BOC_NT_SERVER:
+  			HasWebAdmin = BOAdmin.HasWebAdmin("NT")
+
+  To enable the Windows NT Administrator Web link, change the following line of
+  code. Change from:
+
+  Case BOC_NT_SERVER:
+  HasWebAdmin = BOAdmin.HasWebAdmin("NT")
+
+  Change to:
+
+  Case BOC_NT_SERVER:
+  HasWebAdmin = 1
+
+4. To enable the BackOffice Administrator Web link, change the following line of
+  code. Change from:
+
+  Case BOC_BACK_OFFICE:
+  HasWebAdmin = BOAdmin.HasWebAdmin("BackOffice")
+
+  Change to:
+
+  Case BOC_BACK_OFFICE:
+  HasWebAdmin = 1
+
+5. Save the changes and then quit Notepad.
+
+Additional query words: iis boadmin ntadmin
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

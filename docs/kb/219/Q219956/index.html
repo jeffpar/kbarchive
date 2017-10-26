@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q219956: PRB: Too Many Files Open Running VFP on Windows Terminal Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q219956: PRB: Too Many Files Open Running VFP on Windows Terminal Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/219/Q219956/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/219/Q219956/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/219/Q219956/","publisher":null,"image":null,"headline":"Q219956: PRB: Too Many Files Open Running VFP on Windows Terminal Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q219956-prb-too-many-files-open-running--vfp-on-windows-terminal-server">Q219956: PRB: Too Many Files Open Running  VFP on Windows Terminal Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q219956
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0; winnt:4.0
+Operating System(s): 
+Keyword(s): kberrmsg KbClientServer kbvfp kbvfp300 kbvfp500a kbvfp600 kbGrpDSFox
+Last Modified: 12-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, versions 2.6, 2.6a 
+- the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Visual FoxPro applications through Windows Terminal Server, the
+following error message occurs if more than 2048 file handles are open:
+
+  Too many files open
+
+CAUSE
+=====
+
+To maintain compatibility with existing Server Message Block (SMB)-based
+products (for example, Windows NT 3.x and 4.0, Windows 95), Terminal Server's
+use of SMB has not been modified from Windows NT Server 4.0. This may cause a
+problem if several Terminal Server users connect to a single network share,
+either on the Terminal Server or elsewhere on the network. The potential problem
+is an SMB limitation of 2048 open file handles.
+
+MORE INFORMATION
+================
+
+The error message indicates that FoxPro for Windows or Visual FoxPro has
+attempted to open more than it's internal limit of files. This behavior and the
+resulting error message occur as a result of a limitation of 2048 open file
+handles in Windows NT Terminal Server.
+
+With Windows 2000 server, the open file handles limit has been expanded to 16,384
+(as seen with "Net Config server"). While the open file handles limit has been
+expanded, the error may still occur unless use of a separate virtual circuit by
+each Terminal Server has been enabled.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Initiate a connection to a Windows NT Terminal Server.
+
+2. Using the connection to Windows NT Terminal Server, launch a session of
+  FoxPro for Windows or Visual FoxPro.
+
+3. Create a program file called "MAXFILES.PRG", using the following code:
+
+  FOR i=1 TO 684
+     SELECT 0
+     make_cmd="create table test"+ALLTRIM(STR(i))+" (var1 c(10), var2 m)"
+     *!* Open one file handle for each table created
+     *!* Open a second file handle for each fpt file
+     &amp;make_cmd
+     select_table="test"+ALLTRIM(STR(i))
+     SELECT (select_table)
+     index_cmd="index on var1 tag junk of test"+ALLTRIM(STR(i))
+     *!* Open a third file handle for each index created
+     &amp;index_cmd
+  NEXT
+
+4. From the Command window, type "DO MAXFILES."
+
+5. Observe that the program will error out with the following error message:
+
+  Too many files open
+
+6. Click Suspend
+
+7. From the Command window, type the following code:
+
+  ? i
+  ? i*3
+
+  Note that the value for i that is displayed is 683, and the value that is
+  displayed for i*3 is 2049.
+
+REFERENCES
+==========
+
+For additional information about Microsoft Windows NT Server version 4.0,
+Terminal Server Edition, please see the following article in the Microsoft
+Knowledge Base:
+
+  For additional information, click the article number below to view the
+  article in the Microsoft Knowledge Base:
+
+  Q190162 Terminal Server and the 2048 Open File Limitation
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg KbClientServer kbvfp kbvfp300 kbvfp500a kbvfp600 kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbOSWinSearch kbOSWinNT400 kbFoxproSearch kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a kbOSWinNTSearch
+Version           : WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

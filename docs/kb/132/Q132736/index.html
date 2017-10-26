@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132736: Windows 95 Networking Questions and Answers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132736: Windows 95 Networking Questions and Answers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132736/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132736/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132736/","publisher":null,"image":null,"headline":"Q132736: Windows 95 Networking Questions and Answers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132736-windows-95-networking-questions-and-answers">Q132736: Windows 95 Networking Questions and Answers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132736
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbfile kbnetwork win95 kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+1. Q. What can I do to fix the sporadic network problems I am experiencing?
+
+  A. There may be a problem between the network adapter and the protected-mode
+  driver. Use the following four steps to test the real-mode driver:
+
+  1. Click the Start button, point to Settings, and then click Control Panel.
+
+  2. Double-click the Network icon.
+
+  3. On the Configuration tab, click the network adapter, and then click
+     Properties.
+
+  4. On the Driver Type tab, click the "Real mode (16-bit) NDIS driver" option.
+
+  If you continue to have problems, use Device Manager to change the IRQ, I/O
+  address, and RAM address settings for the network adapter.
+
+2. Q. Why can't I see another Windows 95-based computer on the network?
+
+  A. In order to connect to another Windows 95-based computer, that computer
+  must have the "File and printer sharing for Microsoft Networks" network
+  component installed.
+
+3. Q. How do I connect to an IBM(R) LAN Server computer?
+
+  A. To connect to an IBM LAN Server computer, you must have the Microsoft
+  Client For Microsoft Networks network component installed.
+
+4. Q. Each time I log in I am asked for a password. Is there a way to prevent
+  this?
+
+  A. If you do not want to be prompted for a password, set your primary network
+  logon to Windows Logon. To do so, use the following six steps:
+
+  1. Use the right mouse button to click Network Neighborhood, and then click
+     Properties on the menu that appears.
+
+  2. On the Configuration tab, click Windows Logon in the Primary Network Logon
+     box, then click OK.
+
+  3. When Windows prompts you to restart your computer, click No.
+
+  4. Click the Start button, point to Settings, and then click Control Panel.
+
+  5. Double-click the Passwords icon.
+
+  6. On the Change Passwords tab, click the Change Windows Password button,
+     click OK, then set a blank password.
+
+5. Q. Why can't I see a Windows for Workgroups 3.11-based computer on the
+  network when I use the IPX/SPX network protocol as my only network protocol?
+
+  A. The Windows for Workgroups-based computer uses a frame type of 802.3. You
+  must change the frame type of the IPX/SPX network protocol on your computer
+  to match. To do so, use the following three steps:
+
+  1. Use the right mouse button to click Network Neighborhood, and then click
+     Properties on the menu that appears.
+
+  2. On the Configuration tab, click the IPX/SPX-compatible network protocol,
+     and then click Properties.
+
+  3. On the Advanced tab, click Frame Type in the Property box, and then click
+     the appropriate frame type in the Value box.
+
+6. Q. The TCP/IP network protocol doesn't work with Novell(R) ODI drivers. What
+  can I do?
+
+  A. Make sure that the Ethernet_II frame type is listed in the Net.cfg file.
+  For additional information, please see the following article in the Microsoft
+  Knowledge Base:
+
+  Q129726 TCP/IP Requires Ethernet_II Frame Type for ODI Driver
+
+7. Q. Is WinPopUp installed in Windows 95?
+
+  A. Yes, if you install either the Microsoft Client for Microsoft Networks or
+  the Microsoft Client for NetWare(R) Networks component, WinPopUp
+  (Winpopup.exe) is installed in the Windows folder.
+
+8. Q. How do I run NetDDE programs (such as Microsoft Chat) in Windows 95?
+
+  A. To run NetDDE programs in Windows 95, you must add a shortcut for
+  Netdde.exe to the Startup group. To do so, use the following four steps:
+
+  1. Use the right mouse button to click an empty space on the taskbar, and
+     then click Properties on the menu that appears.
+
+  2. On the Start Menu Programs tab, click Add.
+
+  3. Use the Create Shortcut Wizard to create a shortcut for Netdde.exe in the
+     Windows folder.
+
+  4. After you create the shortcut, restart your computer.
+
+You can download this document as a self-extracting compressed file named
+Ww1194.exe.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Download Ww1194.exe now
+
+For additional information about how to download Microsoft Support
+files, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available 
+on the date of posting to scan this file for viruses. Once posted, 
+the file is housed on secure servers that prevent any unauthorized 
+changes to the file.
+
+Additional query words: 95 network logon password
+
+======================================================================
+Keywords          : kbfile kbnetwork win95 kbgraphxlinkcritical 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

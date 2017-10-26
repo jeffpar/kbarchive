@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198684: Event 94 Continuously Logged on COMTI Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198684: Event 94 Continuously Logged on COMTI Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198684/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198684/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198684/","publisher":null,"image":null,"headline":"Q198684: Event 94 Continuously Logged on COMTI Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198684-event-94-continuously-logged-on-comti-client">Q198684: Event 94 Continuously Logged on COMTI Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198684
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A computer running Microsoft Transaction Server, COMTI, and the Windows SNA
+client may repeatedly log the error below in the Windows NT Application Event
+log when multiple instances of COMTI are using one local APPC LU on SNA Server.
+The only way to stop the event from being logged is to stop SnaBase.
+
+  
+
+  Event ID:  94
+  APPC remote conversation start failed:
+
+  Primary_rc   = 0002
+  Secondary_rc = 00000509
+  TP name      =
+
+  EXPLANATION
+  An invokable APPC TP configured on SNA Server has issued a RECEIVE_ALLOCATE
+  verb that failed.
+
+  ACTION
+  Refer to the "Microsoft SNA Server APPC Programmer's Guide" for information
+  about the displayed primary_rc and secondary_rc values.
+
+CAUSE
+=====
+
+The Resync TP service runs on the COMTI computer, and it is used for two-phase
+commit. The error occurs when the Resync TP service is enabled, and multiple
+COMTI computers are trying to use the same local APPC LU on the SNA Server
+computer.
+
+WORKAROUND
+==========
+
+To work around this problem, if the COMTI transaction program does not use
+two-phase commit, and no instances of COMTI require a transaction, stop the
+Resync TP service on the computer running COMTI, and set the Startup value to
+Manual. In addition, if the COMTI components do not require transactions, the
+SyncPoint Support option should not be checked in the properties of the local
+APPC LU being used on SNA Server.
+
+RESOLUTION
+==========
+
+To resolve this problem, associate each instance of COMTI to its own local APPC
+LU on the SNA Server computer, as opposed to associating all the instances of
+COMTI to the same local APPC LU.
+
+MORE INFORMATION
+================
+
+Two-phase commit is a protocol that ensures that transactions which take place
+on multiple servers are completed on all servers or none at all. In other words,
+if a transaction fails on one server, then the changes that took place on the
+other servers are backed out. The resynchronization service is used in
+conjuction with two-phase commit and allows Distributed Transaction Coordinator
+(DTC) and CICS to initiate the rollback process after there has been an outage
+of some sort. For example, a communications failure, a CICS failure, an MVS
+failure, and so forth. Resync TP monitors the situation, and when the partner
+comes alive again, it ensures that a proper "Exchange Log Names(XLN)" is
+performed between the two ends (DTC and CICS). This is how they synchronize
+after an outage. At the time, it may be discovered that everything is OK.
+Otherwise, the transaction that was in-flight at the time of the outage will be
+rolled back. Each COMTI computer must have its own local APPC LU configured on
+the SNA Server for two-phase commit to function properly, because each local
+APPC LU is associated to one CICS region on the host.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0,4.0SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

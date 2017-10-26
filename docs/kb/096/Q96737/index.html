@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96737/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96737/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96737/","publisher":null,"image":null,"headline":"Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96737-ftadmin-incorrectly-shows-phantom-drives-or-problems">Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96737
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+At times FTADMIN will incorrectly show phantom drives and/or phantom errors.
+These problems, though surprising, are easily correctable.
+
+PROBLEM ID: BUG# 406
+
+SYMPTOMS
+========
+
+  At times FTADMIN will report drives as being cracked, displaying a question
+  mark (?) where the drive letter should be. Viewing information about the
+  drive will show a code ???, critical level, a disk block with a ridiculous
+  number (4291035135, 4294967295 and 4294905600 have been seen, even if the
+  block size was 512 bytes [these figures represent a location of just under 2
+  terabytes]) and a drive type unknown. This can occur on "raw" drives (not
+  partitioned) or it can be a truly "phantom" (non- existent) drive. When
+  &lt;Correct all errors on drive&gt; is selected a Net 2533 will be produced.
+  Choosing OK at this point will cause the cracked drive to go away.
+
+CAUSE
+=====
+
+  There are at least two known ways to produce this problem. The first is to go
+  into FDISKPM, create a partition on a "raw" drive, and exit the program
+  without saving the changes. Making a change and exiting FTSETUP without
+  saving the changes will produce the same result. This problem appears to
+  persist through system shutdowns and reboots, but not through a power down
+  and reboot. The other known way to produce this problem is to attempt to run
+  the Verify option of FTADMIN (locally) and WFTADMIN (remotely) at the same
+  time (see related article on concurrency).
+
+RESOLUTION
+==========
+
+  As mentioned earlier, choosing OK after receiving the Net 2533 message will
+  cause the cracked drive to go away.
+
+  Attempting to correct the phantom drive by selecting &lt;Correct&gt; then
+  &lt;All errors on all drives&gt; may not work. The phantom drive itself may
+  have to be selected and then use &lt;Correct&gt;, &lt;All errors on selected
+  drive&gt;.
+
+Additional query words: 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

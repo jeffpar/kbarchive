@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163731/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163731/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163731/","publisher":null,"image":null,"headline":"Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163731-wd97-bullets-and-horizontal-lines-lost-after-save-to-ftp-server">Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163731
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 kbwdinternet
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you save an HTML document to an FTP server and then insert graphics
+interchange format (GIF) bullets or horizontal lines into the document, the
+bullet or line images are not copied to the FTP server, and you do not receive a
+warning.
+
+When this occurs, the GIF bullets and horizontal lines are missing from the HTML
+document the next time the document is opened.
+
+CAUSE
+=====
+
+Normally, .gif and .jpg images are copied to the same directory as the document
+when the document is saved. When the document is re-opened, the images are read
+back in and displayed in the document. However, when you save to an FTP server,
+the .gif and .jpg files are saved to the Windows Temp directory instead of the
+directory where the document is being saved. During the initial save to the FTP
+server, you are warned that this may happen; however, on subsequent saves, you
+are not warned.
+
+WORKAROUND
+==========
+
+To work around this problem, manually copy the .gif and .jpg files to the
+directory where the document is saved on the FTP server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginnning of this article.
+
+MORE INFORMATION
+================
+
+The problem is twofold: first, the .gif and .jpg images are not retained when
+you save to an FTP server; and second, there are some situations where you are
+not warned that this will happen.
+
+Word displays a warning about the images if all of the following are true:
+
+- The save location is not a file allocation table (FAT) or a universal naming
+  convention (UNC) location,
+
+  -and-
+
+- there is at least one embedded image,
+
+  -and-
+
+- the save is the first save of the document.
+
+No warning is displayed if you do the following:
+
+1. Save the document to an FTP server before inserting .gif or .jpg images.
+
+2. Insert the .gif or .jpg images.
+
+3. Update the saved document on the server.
+
+Additional query words: 97 missing
+
+======================================================================
+Keywords          : kbualink97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

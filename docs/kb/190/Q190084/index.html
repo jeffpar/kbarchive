@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190084: XFOR: 12006 and 4117 Errors when IMS Receives an SMTP Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190084: XFOR: 12006 and 4117 Errors when IMS Receives an SMTP Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190084/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190084/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190084/","publisher":null,"image":null,"headline":"Q190084: XFOR: 12006 and 4117 Errors when IMS Receives an SMTP Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190084-xfor-12006-and-4117-errors-when-ims-receives-an-smtp-message">Q190084: XFOR: 12006 and 4117 Errors when IMS Receives an SMTP Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190084
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 17-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Microsoft Exchange Server Internet Mail Service receives an SMTP
+message, the following events may be logged in the event viewer:
+
+  Event ID: 12006
+  Source: MSExchangeIS
+  Type: error
+  Category: content engine
+  Description: Error 80040C05-F20000E9 occurred while processing message
+  &lt;&gt; from 'Test User'. The archive filename is 'NQ1NQYQK'.
+
+  Event ID: 4117
+  Source: MSEechangeIMC
+  Type: error
+  Category: internal processing
+  Description: An error was returned from the messaging software the
+  Internet Mail Service uses to process messages on the Microsoft
+  Exchange Server. As a result, the message in spool file NQ1NQYQK failed
+  to be delivered. The message has been moved to the IMCDATA\IN\ARCHIVE
+  directory.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: STORE version 5.0
+
+  File Name    Version
+  -----------------------
+  Store.exe    5.0.1461.77
+  Mdbmsg.dll   5.0.1461.77
+
+  Component: STORE version 5.5
+
+  File Name    Version
+  -----------------------
+  Store.exe    5.5.2402.0
+  Mdbmsg.dll   5.5.2402.0
+  Gapi32.dll   5.5.2402.0
+  Gapi32.dll   5.5.2402.0
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+MORE INFORMATION
+================
+
+The errors above indicate that the Internet Mail Service is having difficulty
+with the headers in the SMTP message that it received, in particular, the
+Received line in the headers. In the archive are the following headers:
+
+  Received: from testserver.microsoft.com ([1.1.1.1]) by VHAISHEXC1 with
+  SMTP (Microsoft Exchange Internet Mail Service Version 5.5.1960.3) id
+  ND9X2LS1; Wed, 17 Jun 1998 16:41:18 -0500
+
+  Received: (from uucp@localhost) by testserver.microsoft.com
+  (8.6.12/8.6.11) id QAA16339 for &lt;test.user@testserver.microsoft.com&gt;;
+  Wed, 17 Jun 1998 16:35:59 -0500
+
+  Received: from 1.1.1.2 by testserver.microsoft.com via smap (3.2) id
+  xma015989; Wed, 17 Jun 98 16:35:11 -0500
+
+  Received: from [1.1.1.3] by unixtest.microsoft.com;
+  (5.65/1.1.8.2/14Feb98-0313PM) id AA06568; Wed, 17 Jun 1998 14:35:47
+  -0700
+
+In examining the headers above, the following line is the important one:
+
+  Received: from [1.1.1.3] by unixtest.microsoft.com;
+  (5.65/1.1.8.2/14Feb98-0313PM) id AA06568; Wed, 17 Jun 1998 14:35:47
+  -0700
+
+Notice that the comment section in parentheses contains a date. The Internet Mail
+Service is trying to use the date in the comment section and failing on
+conversion. Code was added to the Exchange Server information store to ignore
+the comment section.
+
+Additional query words: XADM XFOR MIME IMC IMS
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

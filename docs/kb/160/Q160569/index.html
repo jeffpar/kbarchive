@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160569/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160569/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160569/","publisher":null,"image":null,"headline":"Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160569-sms-inventory--audit-differences--how-to-perform-an-audit">Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q160569</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">kbusage</span> <span class="n">kbDatabase</span> <span class="n">smshowto</span> <span class="n">smsdatabasekbfaq</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">31</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.1</span><span class="p">,</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">some</span> <span class="n">differences</span> <span class="n">between</span> <span class="n">software</span> <span class="n">inventories</span> <span class="k">and</span> <span class="n">audits</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">describes</span> <span class="n">the</span> <span class="k">procedure</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">an</span> <span class="n">audit</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">are</span> <span class="n">some</span> <span class="n">differences</span> <span class="n">between</span> <span class="n">audits</span> <span class="k">and</span> <span class="n">software</span> <span class="n">inventories</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">occurs</span> <span class="n">during</span> <span class="n">client</span> <span class="n">inventory</span><span class="p">,</span> <span class="k">while</span> <span class="n">an</span> <span class="n">audit</span> <span class="n">occurs</span>
+  <span class="n">when</span> <span class="n">it</span> <span class="n">is</span> <span class="nf">run</span> <span class="k">from</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="p">(</span><span class="n">PCM</span><span class="p">).</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">does</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">be</span> <span class="n">distributed</span><span class="p">,</span> <span class="n">because</span> <span class="n">distribution</span>
+  <span class="n">occurs</span> <span class="n">automatically</span> <span class="n">through</span> <span class="n">the</span> <span class="k">Package</span><span class="p">.</span><span class="n">rul</span> <span class="n">file</span>
+  <span class="p">(</span><span class="n">Sms</span><span class="p">\</span><span class="n">Site</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Maincfg</span><span class="p">.</span><span class="n">box</span><span class="p">\</span><span class="n">Pkgrule</span><span class="p">),</span> <span class="k">and</span> <span class="n">is</span> <span class="n">automatically</span> <span class="n">copied</span> <span class="k">to</span> <span class="n">each</span>
+  <span class="n">Logon</span><span class="p">.</span><span class="n">srv</span> <span class="n">directory</span> <span class="k">as</span> <span class="n">Pkg_16</span><span class="p">.</span><span class="n">cfg</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="nf">send</span> <span class="n">out</span> <span class="n">an</span> <span class="n">audit</span> <span class="k">as</span> <span class="n">a</span> <span class="n">job</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">affects</span> <span class="n">all</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">users</span> <span class="n">logging</span> <span class="k">in</span><span class="p">,</span>
+  <span class="k">while</span> <span class="n">an</span> <span class="n">audit</span> <span class="n">will</span> <span class="n">only</span> <span class="n">be</span> <span class="nf">run</span> <span class="n">by</span> <span class="n">the</span> <span class="n">clients</span> <span class="k">to</span> <span class="n">whom</span> <span class="n">it</span> <span class="n">was</span> <span class="n">sent</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">be</span> <span class="n">defined</span><span class="p">,</span> <span class="k">and</span> <span class="n">clients</span> <span class="n">will</span> <span class="n">access</span> <span class="n">the</span>
+  <span class="n">Pkg_16</span><span class="p">.</span><span class="n">cfg</span> <span class="n">file</span> <span class="p">(</span><span class="n">inventory</span> <span class="n">criteria</span><span class="p">)</span> <span class="n">during</span> <span class="n">login</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Logon</span><span class="p">.</span><span class="n">srv</span>
+  <span class="n">directory</span><span class="p">.</span> <span class="n">An</span> <span class="n">audit</span> <span class="k">uses</span> <span class="n">the</span> <span class="n">Audit</span><span class="p">.</span><span class="n">rul</span> <span class="n">file</span> <span class="k">to</span> <span class="n">define</span> <span class="n">the</span> <span class="n">search</span> <span class="n">criteria</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="nf">Run</span> <span class="k">or</span> <span class="n">Share</span> <span class="n">Packages</span> <span class="n">commands</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">defined</span> <span class="k">as</span> <span class="n">software</span> <span class="n">inventory</span>
+  <span class="n">packages</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">select</span> <span class="s2">"Inventory This Package"</span> <span class="p">(</span><span class="n">this</span> <span class="n">allows</span> <span class="n">automatic</span>
+  <span class="n">software</span> <span class="n">inventory</span> <span class="k">of</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">distributed</span> <span class="n">packages</span><span class="p">).</span> <span class="n">Audits</span>
+  <span class="n">detect</span> <span class="n">only</span> <span class="n">those</span> <span class="n">packages</span> <span class="n">defined</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Audit</span><span class="p">.</span><span class="n">rul</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">can</span> <span class="n">be</span> <span class="k">set</span> <span class="k">to</span> <span class="n">collect</span> <span class="n">files</span><span class="p">,</span> <span class="n">but</span> <span class="n">an</span> <span class="n">audit</span> <span class="n">cannot</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">To</span> <span class="nb">create</span> <span class="n">an</span> <span class="n">audit</span><span class="p">,</span> <span class="n">perform</span> <span class="n">the</span> <span class="n">following</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">At</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">site</span> <span class="n">server</span><span class="p">,</span> <span class="n">open</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Primsite</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Audit</span> <span class="n">directory</span>
+
+<span class="m">3.</span> <span class="nf">Run</span> <span class="n">the</span> <span class="nf">command</span>
+
+  <span class="n">Rul2cfg</span> <span class="n">Audit</span><span class="p">.</span><span class="n">rul</span>
+
+  <span class="n">at</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span><span class="p">.</span> <span class="n">You</span> <span class="n">will</span> <span class="n">see</span> <span class="n">the</span> <span class="n">messages</span> <span class="s2">"Compile succeeded"</span> <span class="k">and</span> <span class="s2">"1
+  file(s) copied"</span> <span class="n">three</span> <span class="n">times</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Open</span> <span class="n">File</span> <span class="n">Manager</span> <span class="k">and</span> <span class="n">share</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Primsite</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Audit</span><span class="p">\</span><span class="k">Package</span> <span class="n">directory</span> <span class="k">as</span>
+  <span class="s2">"package."</span>
+
+<span class="m">5.</span> <span class="nf">Run</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span> <span class="n">program</span> <span class="k">and</span> <span class="n">select</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">window</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">New</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="n">Click</span> <span class="n">Import</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">Select</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Primsite</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Import</span><span class="p">.</span><span class="n">src</span><span class="p">\</span><span class="n">Enu</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Directories</span> <span class="n">box</span><span class="p">.</span>
+
+<span class="m">9.</span> <span class="n">Click</span> <span class="n">Audit</span><span class="p">.</span><span class="n">pdf</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">10.</span> <span class="n">Click</span> <span class="n">Workstation</span><span class="p">.</span>
+
+<span class="m">11.</span> <span class="n">Enter</span> <span class="n">the</span> <span class="n">source</span> <span class="n">directory</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="p">\\</span><span class="n">Smsserver</span><span class="p">\</span><span class="k">Package</span><span class="p">),</span> <span class="k">and</span> <span class="n">click</span>
+  <span class="n">Close</span><span class="p">.</span>
+
+<span class="m">12.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span> <span class="n">again</span> <span class="k">to</span> <span class="s2">"Update the package at all sites."</span>
+
+<span class="m">13.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Open</span><span class="p">.</span> <span class="n">Select</span> <span class="n">the</span> <span class="n">Sites</span> <span class="n">window</span><span class="p">.</span>
+
+<span class="m">14.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Window</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Tile</span> <span class="n">Horizontally</span><span class="p">.</span>
+
+<span class="m">15.</span> <span class="n">Drag</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="k">or</span> <span class="n">client</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">that</span> <span class="n">you</span> <span class="n">intend</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">audit</span>
+  <span class="n">on</span><span class="p">.</span> <span class="n">A</span> <span class="n">Jobs</span> <span class="n">window</span> <span class="n">will</span> <span class="n">open</span><span class="p">.</span>
+
+<span class="m">16.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">17.</span> <span class="n">Click</span> <span class="n">Schedule</span> <span class="k">and</span> <span class="n">change</span> <span class="n">the</span> <span class="n">priority</span> <span class="k">to</span> <span class="n">High</span><span class="p">.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">18.</span> <span class="n">Type</span> <span class="n">a</span> <span class="n">comment</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="s2">"Test audit"</span><span class="p">),</span> <span class="k">and</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="k">package</span> <span class="n">will</span> <span class="n">now</span> <span class="n">be</span> <span class="n">pending</span> <span class="k">until</span> <span class="n">the</span> <span class="k">next</span> <span class="n">process</span> <span class="n">polling</span> <span class="n">cycle</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span>
+<span class="n">monitor</span> <span class="n">the</span> <span class="k">package</span><span class="s1">'s progress by viewing the SCHED, DESPOOL, and LANSEND log
+files, as well as by monitoring the job in the Jobs window (to do this, double
+click on the job, click Status, and then click Details).
+
+After the package is offered to the client'</span><span class="n">s</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span><span class="p">,</span> <span class="nf">run</span> <span class="n">the</span>
+<span class="k">package</span><span class="p">.</span> <span class="k">If</span> <span class="n">packages</span> <span class="n">are</span> <span class="n">found</span><span class="p">,</span> <span class="n">there</span> <span class="n">will</span> <span class="n">be</span> <span class="n">a</span> <span class="n">new</span> <span class="n">icon</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Personal</span>
+<span class="n">Computer</span> <span class="n">Properties</span> <span class="n">called</span> <span class="s2">"Audited Software."</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbnetwork</span> <span class="n">kbusage</span> <span class="n">kbDatabase</span> <span class="n">smshowto</span> <span class="n">smsdatabase</span> <span class="n">kbfaq</span>
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS110</span> <span class="n">kbSMS120</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

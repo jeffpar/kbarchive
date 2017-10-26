@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69164: BASIC Uses Radians, Not Degrees, for Trigonometric Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69164: BASIC Uses Radians, Not Degrees, for Trigonometric Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69164/","publisher":null,"image":null,"headline":"Q69164: BASIC Uses Radians, Not Degrees, for Trigonometric Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69164-basic-uses-radians-not-degrees-for-trigonometric-functions">Q69164: BASIC Uses Radians, Not Degrees, for Trigonometric Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69164
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BASICCOM B_GWBasicI B_BasicInt B_MQuickB | mspl13_basic
+Last Modified: 14-FEB-1991
+
+You must pass angle measurements in radians (not degrees) to BASIC's
+trigonometric functions (SIN, COS, and TAN).
+
+All versions of Microsoft BASIC require radians for the built-in
+trigonometric functions (SIN, COS, TAN). Therefore, the value returned
+from BASIC's SINe, COSine, and TANgent will be different than your
+calculator's value, unless your calculator is using radians.
+
+To convert degrees to radians, multiply the degrees by pi/180, where
+pi equals 3.14159265359.
+
+This information applies to the following BASIC versions:
+
+1. Microsoft QuickBASIC versions 1.00, 1.00a, and 1.00b for Apple
+   Macintosh.
+
+2. Microsoft BASIC Compiler version 1.00 for Apple Macintosh.
+
+3. Microsoft BASIC Interpreter versions 1.00, 1.01, 2.00, 2.10, and
+   3.00 for Apple Macintosh.
+
+4. Microsoft QuickBASIC versions 1.00, 1.01, 1.02, 2.00, 2.01, 3.00,
+   4.00, 4.00b, and 4.50 for MS-DOS.
+
+5. Microsoft BASIC Compiler versions 5.35 and 5.36 for MS-DOS.
+
+6. Microsoft BASIC Compiler versions 6.00 and 6.00b for MS-DOS and
+   MS OS/2.
+
+7. Microsoft BASIC Professional Development System (PDS) versions 7.00
+   and 7.10 for MS-DOS and MS OS/2.
+
+8. Microsoft GW-BASIC Interpreter versions 3.20, 3.22, and 3.23 for
+   MS-DOS.
+
+Code Example
+------------
+
+'Radians = degrees * PI / 180
+PI = 3.141593
+X = 45
+' The following prints .8509035, which is the SIN of 45 radians,
+' which may not be what you wanted:
+PRINT SIN(X)
+
+' Now, convert X to radians before passing to the SIN function:
+PRINT SIN(X * PI / 180)  'This gives .7071068 as the SIN of 45 degrees
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

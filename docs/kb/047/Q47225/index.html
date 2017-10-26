@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47225: .DEF File Optional Internal Names Not Supported by Implib | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47225: .DEF File Optional Internal Names Not Supported by Implib" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47225/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47225/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47225/","publisher":null,"image":null,"headline":"Q47225: .DEF File Optional Internal Names Not Supported by Implib","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47225-def-file-optional-internal-names-not-supported-by-implib">Q47225: .DEF File Optional Internal Names Not Supported by Implib</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47225
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | OPSYS PMWIN BUSLANG | mspl13_c
+Last Modified: 17-AUG-1989
+
+The implib utility does not put the optional internal name of a
+dynamically linked function into the import library it creates. Implib
+puts only the entry name of the function (the function name that
+external modules call) into the import library.
+
+The use of optional internal names is supported only by linking with
+the module definition file (.DEF) that specifies the internal function
+names (the actual function names in the source file) within a Dynamic
+Link Library (DLL) for OS/2 or DOS Windows.
+
+In a .DEF file, you can optionally specify aliases for the entry
+points into your DLL as in the following .DEF file statement:
+
+EXPORTS
+    ENTRYNAME=INTERNALNAME
+
+ENTRYNAME is the name of a DLL routine called by other modules, and
+the optional INTERNALNAME is the actual name of the function or
+procedure in the DLL. By default, the INTERNALNAME is the same as the
+ENTRYNAME, but you may want to provide more meaningful entry names to
+the users of your DLL in addition to the actual internal function
+names.
+
+The names of dynamically linked functions in a DLL must be specified
+in either a .DEF file or in an import library, which has a .LIB
+extension, so that the linker can resolve all references (calls) to
+the DLL functions. Attempting to link an application that calls DLL
+functions without an import library or .DEF file results in LINK :
+error L2029: Unresolved externals: for the DLL function names.
+
+Import libraries, consisting of little more than the names of the
+modules in the DLL and the externally callable functions within the
+DLL, are created by the implib utility from an existing .DEF file with
+a command such as the following, which creates the import library
+"myimport.lib" from the existing module definition file "myfile.def":
+
+   implib myimport.lib myfile.def
+
+Commonly used import libraries for OS/2 are DOSCALLS.LIB for the OS/2
+1.00 API (Application Program Interface) DLL routines, OS2.LIB for
+OS/2 1.10, or CRTLIB.LIB for the multi-thread C 5.10 run-time
+CRTLIB.DLL. The Windows Software Development Kit for creating DOS
+Windows applications comes with memory model-specific import libraries
+such as SLIBW.LIB.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

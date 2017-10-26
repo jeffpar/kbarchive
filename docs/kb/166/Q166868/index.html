@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166868/","publisher":null,"image":null,"headline":"Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166868-wd97-properties-summary-info-comments-in-wrong-formatmissing">Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166868
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
+Operating System(s): 
+Keyword(s): kbinterop kbusage kbconversion word97 wordconvert
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Word for Windows 95, versions 7.0, 7.0a 
+- Microsoft Word for Windows, versions 6.0, 6.0a, 6.0c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Word 97 document in an earlier version of Word, the information
+from the Comments box in the Properties dialog box (on the File menu, click
+Properties) may be incorrectly formatted or may be missing.
+
+NOTE: In Word 6.x, the Comments box is in the Summary Info dialog box (on the
+File menu, click Summary Info).
+
+Case 1:
+
+When you save the file in "Word 6.0/95 (*.doc)" or "Rich Text Format (*.rtf)"
+format and then open it in Word 6.x or 7.x, multiple paragraphs in the Comments
+box are combined into a single paragraph.
+
+Case 2:
+
+The text from the Comments box is lost when you use the Word 97 Import Converter
+to open the document.
+
+For more information about the Word 97 Import Converter, please see the following
+article in the Microsoft Knowledge Base:
+
+  
+
+  Q162214 WD: How to Obtain the Word 97-2000 Import Converter
+
+CAUSE
+=====
+
+Case 1
+------
+
+The Microsoft Word 6.0/95 and the Rich Text Format (RTF) file converter of
+Microsoft Word 97 cannot read linefeeds in the RTF format for the document
+property.
+
+Case 2
+------
+
+The Word 97 Converter is not identifying the Comments field for conversion to
+earlier versions.
+
+MORE INFORMATION
+================
+
+In Word 97, the document information is called Properties. On the File menu,
+click Properties. In Word 6.0 and 7.0, the document information is called
+Summary Info. On the File menu, click Summary Info.
+
+REFERENCES
+==========
+
+For more information on what formatting is retained when you save in other
+formats, please see the following resources:
+
+Word Help
+---------
+
+Click the Office Assistant, type "Save as Word 7.0," click Search, and then click
+to view "Results of saving Word 97 documents in other formats."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+  
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Office Resource Kit
+-------------------
+
+Chapter 15 of the "Office Resource Kit" also contains information about
+formatting that is retained through the conversion process. The ORK is available
+on the Microsoft Web site at:
+
+  http://www.microsoft.com/office/ork/
+
+For more information about how to obtain the Office Resource Kit (ISBN:
+1-57231-329-3), call (800) MS-PRESS in the United States or (800) 667-1115 in
+Canada.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbusage kbconversion word97 wordconvert 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbWord95Search kbZNotKeyword2 kbWord600 kbWord600a kbWord600c kbWord95 kbWord95a
+Version           : WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

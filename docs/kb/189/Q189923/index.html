@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189923: PRB: No Validate Event When Activating CommandButton | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189923: PRB: No Validate Event When Activating CommandButton" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189923/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189923/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189923/","publisher":null,"image":null,"headline":"Q189923: PRB: No Validate Event When Activating CommandButton","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189923-prb-no-validate-event-when-activating-commandbutton">Q189923: PRB: No Validate Event When Activating CommandButton</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189923
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a form in Visual Basic, you have a CommandButton whose CausesValidation
+property is True. Also, the CommandButton's Default or Cancel properties are
+True. The Default and Cancel properties allow you to activate the CommandButton
+by pressing the ENTER or ESC keys. When you activate the CommandButton by
+pressing ENTER or ESC, the Validate event for the current control does not occur
+and the Click event of the CommandButton fires. This may cause undesirable
+results if you need the Validate event for the current control to occur before
+the Click event of the CommandButton.
+
+If you activate the CommandButton using the mouse or the CommandButton's
+accelerator key, the Validate event for the current control occurs as expected.
+
+CAUSE
+=====
+
+When you activate a "default" or "cancel" CommandButton by pressing the ENTER or
+ESC keys, focus does not change to the CommandButton. Because Focus remains in
+the current control, the Validate event for the current control does not occur.
+In short, the CausesValidation property for a Default or Cancel CommandButton is
+ignored when you activate the CommandButton by pressing the ENTER or ESC keys.
+
+RESOLUTION
+==========
+
+To work around this limitation when using Default or Cancel CommandButtons, you
+must add your validation code to the Click event of the CommandButton.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a TextBox control.
+
+3. Add a CommandButton control.
+
+4. Set the following properties of Command1:
+
+        Caption = Command&amp;1
+        Cancel = True
+        CausesValidation = True
+        Default = True
+
+5. Add the following code to the Form1 module:
+
+        Option Explicit
+
+        Private Sub Text1_Validate(Cancel As Boolean)
+           ' Ensure Text1 has data else keep focus in Text1:
+           If Trim(Text1.Text) = "" Then Cancel = True
+        End Sub
+
+        Private Sub Command1_Click()
+           Unload Me
+        End Sub
+
+        Private Sub Form_Load()
+           Text1.Text = ""
+        End Sub
+
+6. Run the project. Text1 has focus and is empty.
+
+7. Click Command1 or press the ALT+1 key combination. The Validate event occurs
+  for Text1 as Expected. Because Text1 is empty, the Validate event keeps focus
+  in Text1 and prevents the CommandButton from closing the form.
+
+8. With focus still in Text1, press the ENTER key or the ESC key to activate
+  Command1. The Validate event for Text1 does not occur and the Command1_Click
+  event occurs, causing the form to close.
+
+  To work around this problem so that you can validate the Text1 control when
+  you activate the CommandButton via the ENTER or ESC keys, add validation code
+  to the Command1_Click event. The following example shows one way in which you
+  could validate the Text1 control:
+
+        Private Sub Command1_Click()
+           Dim ctl As Control
+
+           ' Validation code for all controls that need validating:
+
+           ' Set ctl to current control in which to validate:
+           Set ctl = Screen.ActiveControl
+           If TypeOf ctl Is TextBox Then
+              If ctl.Name = "Text1" Then
+                 ' Validation code for Text1:
+                 If Trim(Text1.Text) = "" Then
+                    ' Exit this procedure. Focus remains in Text1
+                    Exit Sub
+                 End If
+              End If
+           End If
+
+           ' If Validation passes for all controls, the following
+           ' code will execute:
+           Unload Me
+        End Sub
+
+Additional query words: kbDSD kbDSupport kbVBp kbVBp600 kbCtrl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

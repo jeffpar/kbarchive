@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239875: HOW TO: Use ASP to Force SSL for Specific Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239875: HOW TO: Use ASP to Force SSL for Specific Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239875/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239875/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239875/","publisher":null,"image":null,"headline":"Q239875: HOW TO: Use ASP to Force SSL for Specific Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239875-how-to-use-asp-to-force-ssl-for-specific-pages">Q239875: HOW TO: Use ASP to Force SSL for Specific Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239875
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 02-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Prerequisites
+- Forcing SSL using ASP
+
+- REFERENCES
+
+SUMMARY
+=======
+
+It is frequently good security practice to require Secure Sockets Layer (SSL)
+for certain pages on a Web site. Although this can be configured through the
+Internet Services Manager (ISM) in the Microsoft Management Console (MMC), you
+can also use Active Server Pages (ASP) to force SSL for specific pages without
+making changes in the MMC.
+
+Prerequisites
+-------------
+
+This article assumes the following conditions:
+
+- IIS is running on standard ports:
+
+   - HTTP = Port 80
+
+   - HTTPS = Port 443
+
+- IIS has a valid SSL certificate installed.
+
+- The Web site or virtual server that is used does not use HTTP/1.1 host
+  headers for name resolution.
+
+Forcing SSL using ASP
+---------------------
+
+To force SSL using ASP, follow these steps:
+
+1. Click Start, click Run, type "Notepad" (without the quotation marks), and
+  then click OK.
+
+2. Paste the following code into a blank Notepad document. On the File menu,
+  click Save As, and then save the following code in the root of your Web
+  server as an include file named ForceSSL.inc:
+
+  &lt;%
+     If Request.ServerVariables("SERVER_PORT")=80 Then
+        Dim strSecureURL
+        strSecureURL = "https://"
+        strSecureURL = strSecureURL &amp; Request.ServerVariables("SERVER_NAME")
+        strSecureURL = strSecureURL &amp; Request.ServerVariables("URL")
+        Response.Redirect strSecureURL
+     End If
+  %&gt;
+
+3. For each page that requires SSL, paste the following code at the top of the
+  page to reference the include file from the previous step:
+
+  &lt;%@Language="VBSCRIPT"%&gt;
+  &lt;!--#include virtual="/ForceSSL.inc"--&gt;
+
+When each page is browsed, the ASP code that is contained in the include file
+detects the port to determine if HTTP is used. If HTTP is used, the browser will
+be redirected to the same page by using HTTPS.
+
+REFERENCES
+==========
+
+For additional information about this topic, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q171084 How to Install a Certificate
+
+  Q187504 HTTP 1.1 Host Headers Are Not Supported When You Use SSL
+
+  Q218445 How to Configure Certificate Server for Use with SSL on IIS
+
+  Q228991 How to Create and Install an SSL Certificate in Internet Information
+  Server 4.0
+
+  Q228836 Installing a New Certificate with Certificate Wizard for Use in
+  SSL/TLS
+
+  Q257591 Description of the Secure Sockets Layer (SSL) Handshake
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

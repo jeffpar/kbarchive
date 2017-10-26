@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149283/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149283/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149283/","publisher":null,"image":null,"headline":"Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149283-info-rollbackexe-on-windows-nt-40-cd-destroys-critical-system">Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149283
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbhw kbsetup kbOPK kbSBK kbHardware
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT 4.0 Server and Workstation compact discs include a utility called
+Rollback.exe. Rollback.exe was designed to help computer manufacturers
+preinstall Windows NT 4.0, and allow end-users to do the final configuration
+according to the desired role of the computer. Running this utility will remove
+all registry settings on a system and bring it back to the end of the Character
+Based Setup portion of the Setup program, effectively undoing everything
+configured by the GUI portion of Windows NT Setup.
+
+WARNING: Do not run this file on a production system! There is no way to recover
+information erased by running this utility, so anything stored in the registry
+will be lost. This includes user account information, protocol bindings,
+application settings, user preferences, etc.
+
+MORE INFORMATION
+================
+
+If you run Rollback.exe on a production system there is no warning that
+Rollback.exe removes all system registry entries. Therfore, after you run
+Rollback.exe there is no system to rescue or to restore as the registry and the
+Setup.log file no longer exist.
+
+The only fix to this problem is to restore the entire system from a current tape
+back up. Emergency Repair Disk does not restore the system as it requires the
+Setup.log and specific registry components to be present.
+
+Rollback.exe is on the Windows NT compact discs in the following directory:
+
+  Support\Deptools\&lt;system&gt;\
+
+Additional query words: prodnt Rollback boot registry ERD SBKOem Preinstall Kit OPK
+
+======================================================================
+Keywords          : kbhw kbsetup kbOPK kbSBK kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

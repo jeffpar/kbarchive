@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44755: Long Arithmetic Incorrect in Certain Circumstances in QuickC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44755: Long Arithmetic Incorrect in Certain Circumstances in QuickC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44755/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44755/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44755/","publisher":null,"image":null,"headline":"Q44755: Long Arithmetic Incorrect in Certain Circumstances in QuickC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44755-long-arithmetic-incorrect-in-certain-circumstances-in-quickc">Q44755: Long Arithmetic Incorrect in Certain Circumstances in QuickC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44755
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist2.00 | mspl13_c
+Last Modified: 26-SEP-1989
+
+QuickC Version 2.00 produces incorrect code for the subtraction and
+addition of long integers in some cases. One of the following set of
+conditions must be met for this problem to occur (these conditions
+apply to subtraction, but can be applied to the case of addition):
+
+1. The first set of conditions is as follows:
+
+   a. The subtrahend is an element of an array of long ints.
+
+   b. The array is defined locally.
+
+   c. The subtrahend index is not a constant.
+
+   d. The expected difference is less than zero.
+
+2. The second set of conditions is as follows:
+
+   a. The subtrahend is being accessed through a pointer (either
+      global or local).
+
+   b. The expected difference is less than zero.
+
+To work around this problem, do one of the following:
+
+1. In the case of an array, make the array global, i.e., define it
+   outside the body of any function.
+
+2. In the case of a pointer or array, eliminate the indirection in
+   the expression.
+
+3. Disable pointer checking. This may be accomplished in the
+   integrated environment with the following menu sequence:
+
+       Options, Make, Compiler, Flag, Pointer Check
+
+   When using QCL, do not use the /Zr switch.
+
+This problem occurs with code generated both in the integrated
+environment and by the command-line compiler QCL. The following
+program demonstrates this behavior:
+
+#include &lt;stdio.h&gt;
+#include &lt;malloc.h&gt;
+
+long int     *p;
+
+void main( void )
+{
+    int      SubtrahendIndex = 0;
+    long int array[1],
+             diff;
+
+    /* Bad case 1 */
+    array[0] = 10L;
+    diff = 5L - array[SubtrahendIndex];
+    printf( "diff=%ld\n", diff );
+
+    /* Bad case 2 */
+    p = (long int *)malloc( sizeof( long int ) );
+    *p = 10L;
+    diff = 5L - *p;
+    printf( "diff=%ld\n", diff );
+}
+
+The problem occurs when pointer check is enabled because the check is
+being performed in between accessing the MSW and LSW of the
+subtrahend, which clears the carry flag. The subsequent SBB
+instruction, which relies on the state of the carry flag to correctly
+borrow, is then inaccurate in the case of a negative result. Disabling
+pointer checking eliminates this problem.
+
+Microsoft has confirmed this to be a problem with QuickC Version 2.00.
+We are researching this problem and will post new information as it
+becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

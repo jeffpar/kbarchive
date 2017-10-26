@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135699/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135699/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135699/","publisher":null,"image":null,"headline":"Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135699-prb-in-windows-nt-visual-foxpro-dir-command-differs">Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135699
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In certain cases, the DIRECTORY or DIR command in Visual FoxPro returns a value
+different from that returned by the same command, in the same case, in FoxPro
+version 2.x for Windows.
+
+One such case is when running Visual FoxPro under Windows NT. The difference
+occurs when the default is set to a subdirectory on a remote share with a
+network drive/directory combination, and then the default is changed back to the
+local drive. Visual FoxPro sees the remote share's root as the "current"
+directory of the remote drive, while FoxPro for Windows sees the directory set
+by the SET DEFAULT command as the current directory of the remote drive.
+
+CAUSE
+=====
+
+Visual FoxPro relies on the operating system to provide identification of the
+"current" directory for each drive. Windows NT does not keep a list of the
+current directory for each drive. FoxPro for Windows retains a variable defining
+the default directory settings for drives.
+
+
+WORKAROUND
+==========
+
+Developers need to be aware of this behavior and compensate for it in the design
+of the application if necessary.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+This behavior can be demonstrated by using two computers, one of which is running
+Windows NT version 3.5 or later (Workstation or Server). Both computers must be
+on a common network.
+
+1. On the Windows NT computer, load both FoxPro version 2.6a for Windows and
+  Visual FoxPro for Windows 3.0.
+
+2. Create three table (.dbf) files, each with a memo (.fpt) file. Name one
+  Parent and the other two child1 and child2.
+
+3. On the second computer's hard drive, create a first-level directory named
+  Asample. Under it, create a subdirectory named Subdir. Share Asample.
+
+4. Copy the child1 and child2 tables and their memo files to C:\Asample\Subdir.
+
+5. Copy the Parent table and its memo file to C:\Asample
+
+6. Connect the Windows NT computer to the remote share. For example, in the
+  Windows NT File Manager, on the Drive menu, click Connect Network Drive. In
+  the path edit box of the Connect Network Drive dialog box, enter:
+
+  " \\&lt;name of remote computer&gt;\Asample" (without the quotation marks)
+
+7. Note the drive letter assigned to the remote drive. For the purposes of this
+  article assume the letter is E, so the remote share is E:
+
+8. Start FoxPro for Windows and enter the following commands in the Command
+  window:
+
+     SET DEFAULT TO E:\subdir
+     SET DEFAULT TO C:
+     DIR E:            &amp;&amp; Make a note of the values and their appearance
+     DIR E:*.*         &amp;&amp; Also note the values and their appearance
+
+9. Quit FoxPro for Windows. Start Visual FoxPro.
+
+10. In Visual FoxPro's Command window, issue the commands shown in step 8.
+
+Visual FoxPro sees the root of the remote drive as the current directory once the
+default directory is no longer on the remote drive.
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

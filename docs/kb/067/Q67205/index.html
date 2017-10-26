@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67205: DRAW Statement to Erase or Redraw Image May Not Work Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67205: DRAW Statement to Erase or Redraw Image May Not Work Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67205/","publisher":null,"image":null,"headline":"Q67205: DRAW Statement to Erase or Redraw Image May Not Work Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67205-draw-statement-to-erase-or-redraw-image-may-not-work-correctly">Q67205: DRAW Statement to Erase or Redraw Image May Not Work Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67205
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BASICCOM B_GWBASICI buglist4.00 buglist4.00b buglist4.50 | mspl13_basic
+Last Modified: 5-DEC-1990
+
+Under some circumstances the DRAW statement will incorrectly redraw
+the same figure.
+
+A common method of erasing an image is to draw an image with the
+drawing color and then redraw it with the background color. However,
+as this article describes, it is possible that DRAWing the exact same
+picture over the previously drawn picture may not completely erase the
+image, resulting in "droppings" being left on the screen.
+
+Microsoft has confirmed this to be a problem in Microsoft QuickBASIC
+Compiler versions 2.00, 2.01, 3.00, 4.00, 4.00b, and 4.50 for MS-DOS;
+in Microsoft BASIC Compiler versions 6.00 and 6.00b (buglist6.00,
+buglist6.00b) for MS-DOS and MS OS/2; in Microsoft BASIC Professional
+Development System (PDS) versions 7.00 and 7.10 (buglist7.00,
+buglist7.10) for MS-DOS and MS OS/2; and in Microsoft GW-BASIC
+Interpreter versions 3.20, 3.22, and 3.23 (buglist3.20, buglist3.22,
+buglist3.23). We are researching this problem and will post new
+information here as it becomes available.
+
+When the DRAW command "TA" is executed, the angles calculated should
+be consistent. However, a second iteration of the same command with a
+different color produces a slightly different image.
+
+The problem seems to occur only in certain examples, regardless of the
+screen mode or product version used. Microsoft has duplicated this
+problem only when using the "TA" angle rotation command in conjunction
+with a "B" (move but don't plot) command.
+
+The code example below demonstrates this problem. The program below
+continually draws a line and then immediately redraws that line with
+the background color to erase the line. On each iteration of the loop,
+the angle of the line is rotated. For a few of the lines, the DRAW
+command will not completely erase some of the lines drawn.
+
+Code Example
+------------
+
+SCREEN 9: CLS
+L$ = "U65 BU5 D70"
+DO
+        FOR i = 0 to 360 STEP 3
+                DRAW "C14TA=" + VARPTR$(i) + L$
+                DRAW "C0TA=" + VARPTR$(i) + L$
+        NEXT i
+LOOP UNTIL INKEY$ &lt;&gt; ""
+END
+
+In this specific example, the "BU" command must be in the DRAW string
+or the problem will not occur.
+
+Additional reference words: buglist3.00 buglist2.01 buglist2.00
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

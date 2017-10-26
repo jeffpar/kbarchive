@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89141: Using Swap Files on Networks in Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89141: Using Swap Files on Networks in Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89141/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89141/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89141/","publisher":null,"image":null,"headline":"Q89141: Using Swap Files on Networks in Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89141-using-swap-files-on-networks-in-windows">Q89141: Using Swap Files on Networks in Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89141
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the use of Microsoft Windows and swap files on network
+drives. The following topics are included:
+
+- Can swap files be created on a network drive?
+
+- Why does Windows take so long to start in 386 enhanced mode?
+
+MORE INFORMATION
+================
+
+Can Swap Files be Created on a Network Drive?
+---------------------------------------------
+
+Network drives do not support the INT13h calls needed to set up a permanent swap
+file. A temporary swap file can be set up on a network drive where you have full
+privileges (rights) including creation rights if you are on a Novell network.
+
+Approximately 2 MB of free hard disk space is required. You cannot have multiple
+workstations using the same swap file; therefore, if you set up a swap file on a
+network drive, it should be in the user's directory where no one else but the
+user can access it.
+
+If possible, set up the swap file on your local workstation's hard drive.
+Benefits of this configuration include the following:
+
+- Performance for the workstation
+
+- Performance for the network (cuts down on network traffic)
+
+- Provides the ability to set up a permanent swap file
+
+Why Does Windows Take So Long to Start in 386 Enhanced Mode?
+------------------------------------------------------------
+
+Temporary swap files on a network can make the loading of Windows slow. This can
+also affect the speed at which Windows runs in 386 enhanced mode while Windows
+tries to swap files. This affects both Windows and non- Windows-based
+applications.
+
+When you load Windows, the temporary swap file is initialized in the startup
+location of WIN.COM. Because a network drive normally has a large amount of free
+disk space, this swap file can become large. 386 enhanced mode initializes the
+temporary swap file to about half of the available contiguous free disk space.
+
+Initializing this large swap file can take a long time and can cause Windows to
+take more than one minute to load.
+
+There are three ways to avoid this problem:
+
+1. The first step is to change the location of the temporary swap file. Change
+  the PagingDrive= in the [386Enh] section of the SYSTEM.INI file to a local
+  drive. For example:
+
+  PagingDrive=C:
+
+  NOTE: For a diskless workstation, this won't be an option. A network drive
+  must be used.
+
+2. You can also limit the size of the swap file by using the MaxPagingFileSize=
+  statement in the [386Enh] section of the SYSTEM.INI. For example:
+
+  MaxPagingFileSize=[Amount in Kilobytes]
+
+  NOTE: Using a smaller size swap file speeds up the initialization of the swap
+  file and makes access to it faster as well. This also limits the amount of
+  virtual memory available.
+
+3. Using Notepad, you can disable paging completely by editing the Paging= line
+  in the [386Enh] section of the SYSTEM.INI file.
+
+  Paging=NO
+
+  NOTE: Microsoft does not recommend setting Paging=NO as a Long-term solution
+  because this may adversely affect the performance of Windows.
+
+Additional query words: 3.10 3.11 3.00a 3.00 swapfile decnet starlan swap-file 2.1 2.12 2.2 4.0 4.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

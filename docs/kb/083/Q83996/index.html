@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83996: Windows Software Development Kit Installation Procedure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83996: Windows Software Development Kit Installation Procedure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83996/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83996/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83996/","publisher":null,"image":null,"headline":"Q83996: Windows Software Development Kit Installation Procedure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83996-windows-software-development-kit-installation-procedure">Q83996: Windows Software Development Kit Installation Procedure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83996
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The recommended installation procedure for version 3.1 of the Microsoft Windows
+Software Development Kit (SDK) consists of the following five steps:
+
+1. Install the final retail release of the Windows graphical operating
+  environment, version 3.1.
+
+2. Do not install the Windows SDK over another version of the Windows SDK. The
+  Windows SDK installation procedure is not designed to update a previous
+  version. NOTE: The Windows SDK version 3.1 can create applications compatible
+  with Windows 3.0. For more information, see Chapter 3 of the "Microsoft
+  Windows Software Development Kit: Getting Started" manual for version 3.1,
+  starting on page 29.
+
+  If multiple (more than one) versions of the SDK are installed on the same
+  machine, each must be installed in a separate directory tree. A pair of batch
+  files that change the PATH, INCLUDE, and LIB environment variables
+  appropriately for the two versions of the SDK are also very helpful.
+
+3. Make sure enough hard disk space is available. The amount of space required
+  depends on the components installed and ranges between 9.6 and 24.3 megabytes
+  (MB) of space. The program requires an additional 4 MB of free space for
+  scratch files created in the installation process. The SDK installation
+  program does not copy any files unless it detects enough free hard-disk space
+  for a successful installation.
+
+4. Run the SDK installation program to install the final retail release of the
+  Windows 3.1 SDK. For more information on this procedure, see Chapter 1 of the
+  "Microsoft Windows SDK: Getting Started" manual.
+
+5. If the Windows SDK version 3.1 is used with the Microsoft C Optimizing
+  Compiler, version 6.0, install the C run-time libraries and header files from
+  the disk labeled "Microsoft C 6.0 Run-time Libraries" provided with the SDK.
+  To install the libraries, place the disk into a drive and run the INSTALL.BAT
+  file on the disk. For more information on this procedure, see page 3 of the
+  "Microsoft Windows SDK: Getting Started" manual.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

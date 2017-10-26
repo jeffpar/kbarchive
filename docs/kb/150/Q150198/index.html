@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150198: Bus Contention and PCI, EISA, and ISA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150198: Bus Contention and PCI, EISA, and ISA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150198/","publisher":null,"image":null,"headline":"Q150198: Bus Contention and PCI, EISA, and ISA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150198-bus-contention-and-pci-eisa-and-isa">Q150198: Bus Contention and PCI, EISA, and ISA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150198
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, versions 3.5, 3.51 
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run a nightly backup of your system and during that period of time you
+get network disconnect errors in the event log, it is very likely that you are
+encountering bus contention between your network card and the SCSI controller
+that may be hosting your tape backup unit.
+
+Because SCSI controllers are most often involved in this type of issue, this
+article focuses on SCSI, but bus contention can potentially affect the function
+of any card or built-in accessory port in the system including mice, video,
+keyboard, and any other I/O system.
+
+MORE INFORMATION
+================
+
+There are hardware issues that occur rarely and are on the surface
+indistinguishable from software-based problems. These issues most often occur
+when there are a number of same function cards in a given computer. For example
+a given hardware platform has several different SCSI cards in the system, one or
+more in the slots and perhaps an onboard (built-in) SCSI controller in some of
+the more modern boards. This can occur with any group of cards in a
+multi-interface system board (any combination of PCI, EISA and ISA).
+
+WORKAROUND
+==========
+
+The best test (and potential workaround) for this problem is to choose an ISA
+board to replace your PCI (or EISA) board's function (for example, replace a PCI
+network card with an ISA network card) and see whether the problem ceases. If
+substituting the ISA board eliminates the problem, you may want to contact your
+various hardware vendors to investigate why and where this conflict is occurring
+if you want to continue to use the card in question.
+
+An alternative is to simplify your setup. For example, you could place your tape
+unit on the onboard SCSI chain and eliminate one of the extra SCSI controllers.
+This issue should not occur in an all-ISA or all-EISA configuration. Although
+with the ISA configuration you will have the familiar problem of I/O address as
+IRQ conflict resolution, most of these conflicts are self-evident.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTAdvSerSearch kbWinNTAdvServ351 kbWinNTAdvServ350
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

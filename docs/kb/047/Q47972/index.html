@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47972/","publisher":null,"image":null,"headline":"Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47972-fix-f1001-srclistc159-line-1153-invalid-common-in-save">Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47972
+Product(s): Microsoft Fortran Compiler
+Version(s): 4.0,4.01,4.1,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN compiler for OS/2, versions 4.0, 4.01, 4.1, 5.0 
+- Microsoft FORTRAN Compiler for MS-DOS, versions 4.0, 4.01, 4.1, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to compile an application fails and the compiler generates the
+following message:
+
+  fatal error F1001: Internal Compiler Error
+  (compiler file '@(#)srclist.c:1.59', line 1153)
+
+CAUSE
+=====
+
+The application specifies a non-existent COMMON block in a SAVE statement and
+the compiler command line specifies the /F2 compiler option switch.
+
+RESOLUTION
+==========
+
+To correct this problem, remove the name of the undeclared COMMON block from
+SAVE statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN version 5.0 for MS-DOS
+and OS/2. This problem was corrected in FORTRAN version 5.1 for MS-DOS and OS/2.
+
+MORE INFORMATION
+================
+
+The following code example demonstrates this problem.
+
+Sample Code
+-----------
+
+  C Compile options needed: None
+
+        SUBROUTINE SUBR()
+          SAVE /C1/, /TEST/ 
+          COMMON /C1/ I, J, K
+        END
+
+To correct this error, remove "/test/" from the second line. If a subroutine and
+a COMMON block have the same name and the compiler command line specifies the
+/Fs compiler option switch, the following error occurs:
+
+  fatal error F1001: Internal Compiler Error
+  (compiler file '@(#)p3io.c:1.93',line 605)
+
+Additional query words: 4.00 4.01 4.10 5.00 buglist5.00 fixlist5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRAN400DOS kbFORTRAN401DOS kbFORTRAN500DOS kbFORTRAN410DOS kbFORTRAN500OS2 kbFORTRAN400OS2 kbFORTRAN410OS2 kbFORTRAN401OS2
+Version           : :4.0,4.01,4.1,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

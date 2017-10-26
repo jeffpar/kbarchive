@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193967: HOWTO: Determine the New Month Selected in Calendar Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193967: HOWTO: Determine the New Month Selected in Calendar Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193967/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193967/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193967/","publisher":null,"image":null,"headline":"Q193967: HOWTO: Determine the New Month Selected in Calendar Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193967-howto-determine-the-new-month-selected-in-calendar-control">Q193967: HOWTO: Determine the New Month Selected in Calendar Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193967
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Calendar Control provides NewMonth and NewYear events. These
+events occur when the user selects a different month or year in the Calendar.
+However, the events do not indicate which month or year was selected. This
+article demonstrates how you can determine which month or year was selected.
+
+MORE INFORMATION
+================
+
+The Microsoft Calendar control does not ship with Visual Basic. The control
+ships as part of Microsoft Access or may be downloaded for free from the
+following URL:
+
+  http://www.microsoft.com/officedev/freestuff/mscaldl.htm
+
+Step-by-Step Example
+--------------------
+
+1. Start Visual Basic and create a new Standard EXE project. Form1 is created by
+  default.
+
+2. On the Project menu, click Components, and then check the "Microsoft Calendar
+  Control 8.0" component. The Calendar control is made available on the
+  Toolbox.
+
+3. Put a Calendar control on Form1.
+
+4. Copy and paste the following code to the form's code window:
+
+        Option Explicit
+        Private Declare Function FindWindowEx Lib "user32" _
+           Alias "FindWindowExA" _
+           (ByVal hWnd1 As Long, _
+           ByVal hWnd2 As Long, _
+           ByVal lpsz1 As String, _
+           ByVal lpsz2 As String) As Long
+
+        Private Declare Function SendMessage Lib "user32" _
+           Alias "SendMessageA" _
+           (ByVal hwnd As Long, _
+           ByVal wMsg As Long, _
+           ByVal wParam As Long, _
+           lParam As Any) As Long
+
+        Private Const CB_GETCURSEL = &amp;H147
+        Private Const CB_GETLBTEXT = &amp;H148
+        Private calendarHwnd As Long
+        Private cboMonthHwnd As Long
+        Private cboYearHwnd As Long
+
+        Private Sub Form_Load()
+           calendarHwnd = FindWindowEx(Me.hwnd, 0&amp;, "CalendarWndClass", _
+              vbNullString)
+           cboMonthHwnd = FindWindowEx(calendarHwnd, 0&amp;, "ComboBox", _
+              vbNullString)
+         cboYearHwnd = FindWindowEx(calendarHwnd, cboMonthHwnd, "ComboBox", _
+              vbNullString)
+        End Sub
+
+        Private Sub Calendar1_NewMonth()
+           Dim monthIndex As Long, temp As Long
+           Dim ret As String * 255
+           ret = Space(255)
+           ' Find 0-based index of the selected item:
+           monthIndex = SendMessage(cboMonthHwnd, CB_GETCURSEL, 0&amp;, 0&amp;)
+           ' Put month name in ret and length of month name in temp:
+           temp = SendMessage(cboMonthHwnd, CB_GETLBTEXT, monthIndex, _
+               ByVal ret)
+           ' uncomment the line below to see if the ComboBox was used:
+           'If Calendar1.Month = 0 Then Debug.Print "ComboBox used to
+           'select";
+           Debug.Print Left(ret, temp) 'Displays Month Name
+        End Sub
+
+        Private Sub Calendar1_NewYear()
+           Dim yearIndex As Long, temp As Long
+           Dim ret As String * 255
+           ret = Space(255)
+           ' Find 0-based index of the selected item:
+           yearIndex = SendMessage(cboYearHwnd, CB_GETCURSEL, 0&amp;, 0&amp;)
+           ' Put year value in ret and length of year value in temp:
+           temp = SendMessage(cboYearHwnd, CB_GETLBTEXT, yearIndex, _
+               ByVal ret)
+           ' uncomment the line below to see if the ComboBox was used:
+           'If Calendar1.Year = 0 Then Debug.Print "ComboBox used to
+           'select ";
+           Debug.Print Left(ret, temp) 'Displays Year
+        End Sub
+
+5. Press the CTRL+G key combination to view the Immediate Window.
+
+6. Press the F5 key to run the project.
+
+7. Choose a month from the first combo box. Note the Immediate Window displays
+  the month name selected.
+
+8. Choose a year from the second combo box. Note the Immediate Window displays
+  the year selected.
+
+NOTE: The NewMonth event can occur either by using the ComboBox to select a new
+month or by clicking a new day that is in a different month than the one
+currently shown.
+
+For example, suppose the current value in the Calendar is February 1. If you
+click on what would be the 31st day, the NewMonth event occurs because you have
+chosen a day in January. If you need to distinguish between using the ComboBox
+to select a month versus clicking a day in the calendar that changes the month,
+check the Month property of the calendar in the NewMonth event. If Month is 0,
+the ComboBox was used to select the new month. Otherwise, if Month is greater
+than 0, the user chooses a new date in the Calendar. Similarly, you can check
+the Year property in the NewYear event.
+
+REFERENCES
+==========
+
+
+Additional query words: kbVBp kbVBp500 kbVBp600 kbCtrl kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

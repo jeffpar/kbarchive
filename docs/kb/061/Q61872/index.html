@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61872: DosDevIOCtl() Category 5 Subfunction 66H Fails with C 6.00 API | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61872: DosDevIOCtl() Category 5 Subfunction 66H Fails with C 6.00 API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61872/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61872/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61872/","publisher":null,"image":null,"headline":"Q61872: DosDevIOCtl() Category 5 Subfunction 66H Fails with C 6.00 API","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61872-dosdevioctl-category-5-subfunction-66h-fails-with-c-600-api">Q61872: DosDevIOCtl() Category 5 Subfunction 66H Fails with C 6.00 API</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61872
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist6.00 buglist6.00a | mspl13_c
+Last Modified: 19-JAN-1991
+
+The DOS version of DosDevIOCtl() Category 5 Subfunction 66H, found in
+the API.LIB shipped with Microsoft C version 6.00, fails in native
+DOS. The failure consists of returning an invalid printer status byte,
+regardless of the printer's current status.
+
+The DosDevIOCtl() function is used to determine printer status.
+Although the function seems to work correctly when used from either
+OS/2 or the DOS compatibility box of OS/2, it fails when run from
+native DOS. When called, this function sets the value pointed to by
+its first parameter to a status byte whose bits have the following
+significance.
+
+   Bit(s)  Significance (if set)
+   ------  ---------------------
+
+   0       Timed Out
+   1-2     Reserved
+   3       I/O error
+   4       Printer selected
+   5       Out of paper
+   6       Acknowledge
+   7       Printer not busy
+
+The failure of this function results in a status byte value of 2 being
+returned from the function regardless of the printer's status. This is
+particularly bad because 2 is not even a valid return value for this
+function. If the Microsoft C version 5.10 API.LIB is used, the
+function works correctly, returning a status of 144 if the printer is
+ready and 24 if the printer is off line. The only known workaround is
+to use the earlier version of the library for this function call.
+
+To reproduce the problem, create a bound version of the following
+program using the C 6.00 API.LIB and run it on a computer physically
+connected to a printer under native DOS:
+
+Sample Code
+-----------
+
+#define INCL_DOSDEVICES
+#define INCL_DOSFILEMGR
+#include&lt;os2.h&gt;
+#include&lt;stdio.h&gt;
+
+void main(void)
+{
+ int handle;
+ unsigned char pfstat,x=0;
+ unsigned short actiontaken;
+ unsigned short p;
+
+ p=DosOpen("lpt1",&amp;handle,&amp;actiontaken,0l,0,0x0001,0x0041,0l);
+ p=DosDevIOCtl(&amp;pfstat,&amp;x,0x0066,0x0005,handle);
+
+ printf("pfstat=%d \n",(int)pfstat);
+
+}
+
+Microsoft has confirmed this to be a problem with C versions 6.00 and
+6.00a. We are researching the problem and will post new information
+here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277876: Status Message 10002 on the Client When Distributing Software | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277876: Status Message 10002 on the Client When Distributing Software" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277876/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277876/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277876/","publisher":null,"image":null,"headline":"Q277876: Status Message 10002 on the Client When Distributing Software","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277876-status-message-10002-on-the-client-when-distributing-software">Q277876: Status Message 10002 on the Client When Distributing Software</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277876
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Operating System(s): 
+Keyword(s): kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbStatSum
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the status message 10002, which you can receive when you
+distribute software.
+
+MORE INFORMATION
+================
+
+When you distribute software with Systems Management Server (SMS) version 2.0,
+you may receive a status message 10002 from a client. This status message
+indicates that the client is aware of the advertisement and that the
+advertisement can be run from the Advertised Programs tool in Control Panel.
+Even though a status message 10002 indicates that the advertisement has been
+received, the client may not automatically run the program for a variety of
+reasons, such as:
+
+- The program is configured to run when a user is not logged on, the
+  advertisement is not assigned, and a user is presently logged on.
+
+- The program is configured to run whether a user is logged on or not, the
+  advertisement is not assigned, and a user is presently logged on.
+
+The client can report the status message 10002 that signifies that the client has
+seen and recorded the advertisement, but the client cannot return any further
+status messages until some other action occurs, for example, an advertisement is
+run on the computer by a user.
+
+In Control Panel, you must double-click Advertised Programs for an unassigned
+program to run. If the advertisement is made during a time when a user is not
+logged on, the necessary user interaction cannot be made and the program cannot
+run.
+
+For a program to have the ability to run when a user is not logged on, you must
+assign the program a mandatory time to run in the advertisement properties. When
+you create a mandatory assignment, the client runs the command line of the
+program, regardless of the logged on state of the computer.
+
+To create an assignment schedule for an existing advertisement, right-click the
+advertisement, and then click Properties. On the Schedule tab, click Create,
+which is located above the Mandatory Assignments dialog box. You can assign the
+advertisement if you specify a mandatory date or time for the program to run or
+if you want the advertisement to run immediately after one of the following
+events:
+
+- As soon as possible
+
+- Logon
+
+- Logoff
+
+One or more additional status messages may be generated on the client as a result
+of running an advertisement.
+
+REFERENCES
+==========
+
+For more information about status messages, refer to the Microsoft Systems
+Management Server 2.0 Resource Guide, Chapter 26, "Status Messages."
+
+Additional query words: prodsms status message 10002 statmsg
+
+======================================================================
+Keywords          : kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbStatSum 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

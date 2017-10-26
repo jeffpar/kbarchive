@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159980: Remote Link Doesn’t Reconnect After Event 23 Outage 0x000A | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159980: Remote Link Doesn’t Reconnect After Event 23 Outage 0x000A" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159980/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159980/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159980/","publisher":null,"image":null,"headline":"Q159980: Remote Link Doesn’t Reconnect After Event 23 Outage 0x000A","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159980-remote-link-doesnt-reconnect-after-event-23-outage-0x000a">Q159980: Remote Link Doesn’t Reconnect After Event 23 Outage 0x000A</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159980
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server 2.11 Service Pack 1 includes support for distributed link services,
+where a distributed link service is configured to communicate over a native LAN
+session to a link service running on a remote SNA Server, over TCP/IP sockets,
+Netware IPX/SPX, or Banyan Vines.
+
+If the distributed link service (SNAREM1, SNAREM2, etc) loses its LAN session to
+the remote link service (for example, due to a network outage), the following
+Windows NT application event log entry is logged by the distributed link
+service:
+
+  
+
+  Event:  23
+  Source: SNA Server
+  Description: Connection TOKEN1   using Link Service SNAREM1  failed
+               Qualifier = 000A
+
+Once this occurs, the connection will remain "Inactive" and SNA Server will not
+reconnect to a remote link service on another server (assuming multiple remote
+link services were configured in the distributed link service setup dialog). The
+administrator will be unable to manually restart the connection unless the SNA
+Server service is stopped and restarted.
+
+NOTE: When connecting over TCP/IP sockets between the distributed link service
+and the remote link, it will take over 2 minutes for a network outage to be
+detected. The TCP/IP socket "keep alive" interval used to detect network outages
+on SNA Server is controlled by the SNA Server WatchDogTimeout parameter (which
+defaults to 60 seconds), documented in the following Microsoft Knowledge Base
+article:
+
+  Q150511 Preventing SNA Server Keepalives on Idle LAN Connections
+
+
+CAUSE
+=====
+
+The cause of the initial network outage (leading to the Event 23 qualifier 0x0A)
+will require debugging using a network trace tool such as Network General
+Sniffer(TM) or Microsoft Network Monitor.
+
+The cause of automatic reconnection problem was due to a problem in SNA Server.
+SNA Server (Snaservr.exe) started a link reactivation timer when in fact it was
+trying to deactivate the link to reuse it for an outgoing call.
+
+RESOLUTION
+==========
+
+There is no workaround for this problem, though there is an SNA Server 2.11
+hotfix available from Microsoft. This problem is fixed in SNA Server 3.0.
+
+NOTE: The cause of the network outage must be diagnosed separately, as described
+in the CAUSE section above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+Pack 1. This problem was corrected in the latest Microsoft SNA Server 2.11 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211SP1
+Version           : WINDOWS:2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

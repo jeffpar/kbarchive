@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155528/","publisher":null,"image":null,"headline":"Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155528-howto-set-up-an-offline-view-in-visual-foxpro-50">Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155528
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDatabase kbSQL kbvfp500 kbvfp600 kbSQLProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates the steps to create and use an offline view in Visual
+FoxPro.
+
+MORE INFORMATION
+================
+
+With the following steps, you can create a sample offline view using the data
+from the Testdata database from the Samples\Data directory.
+
+1. Create a new directory called Myoffline, and make it the default directory.
+
+2. Open the Testdata database in the C:\VFP\Samples\Data directory. In Visual
+  FoxPro 6.0, the Testdata database can be found in the home()+"data"
+  directory.
+
+3. Create a new .dbc file called Mydbc, and modify this database.
+
+4. Within Mydbc, create a new Local View from the Customer table and include all
+  fields as output. Check Send SQL Updates, and mark the Cust_ID field as
+  modifiable in the Update criteria tab.
+
+  NOTE: An offline view does not have to be from a local view; it can also come
+  from a remote view, adding more power to this feature.
+
+5. Close and save the view, and name it Myview.
+
+6. From the Command window issue the command:
+
+         ? CREATEOFFLINE("MYVIEW")
+
+  If the command executes successfully, it returns a .T., and now if you look at
+  the files in the Myoffline directory, you should see three extra files with
+  the following names:
+
+  Myview.dbf
+  Myview.tbf
+  Myview.tdx
+
+  The view Myview is now considered offline. You can take the contents of the
+  MYOFFLINE folder anywhere and make changes to the data in Myview view.
+
+7. Issue a CLOSE All command from the Command window to close all the files.
+
+8. Next issue the following commands from the Command window:
+
+         SET MULTILOCKS ON
+         OPEN DATABASE MYDBC
+         USE MYVIEW
+         BROWSE
+
+  Multilocks must be set on in order to use the view. You can look at the
+  records and modify them.
+
+9. Modify or append a couple of records. Because the view is offline, only the
+  records in Myview.dbf are actually changed. Nothing is being changed in the
+  Customer table.
+
+10. Issue a USE command to close Myview.
+
+11. To update the Customer table, issue the following commands:
+
+         OPEN DATABASE c:\vfp\samples\data\testdata
+         USE Customer
+         ? CURSORSETPROP("Buffering",5)
+         USE Myview ONLINE EXCLUSIVE IN 0
+         SELECT Myview
+         ? TABLEUPDATE(.T.)
+
+  If you BROWSE the Customer table, you should see your changes. You must open
+  the view with the ONLINE clause, and it must be exclusive in order to
+  update. Also the table and database the view is representing, in this case
+  Customer, must be open.
+
+12. To make Myview a normal view or one that is considered ONLINE, you must use
+  the DROPOFFLINE()function, which deletes the three files that you created in
+  the Myoffline directory. Any changes made to the view are reflected in the
+  Customer table.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp500 kbvfp600 kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

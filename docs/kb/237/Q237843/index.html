@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237843/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237843/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237843/","publisher":null,"image":null,"headline":"Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237843-howto-synchronize-a-sourcecontrolled-vfp-project-between-users">Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237843
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbSSafe500 kbSSafe600 kbvfp kbvfp500 kbvfp500a kbvfp600 _IK kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When synchronizing changes made to a SourceCode Controlled Visual Fox Pro (VFP)
+project (.pjx) between multiple developers, you use different techniques
+depending on whether you are:
+
+- changing existing files.
+
+- adding or removing files.
+
+MORE INFORMATION
+================
+
+In the following scenarios, you need to assume that there are two users, userA
+and userB.
+
+Synchronizing changes to existing files:
+
+UserA checks out, modifies, then saves and checks in a file. To see the new
+version of the file, userB chooses "Get Latest Version" of that file.
+
+Microsoft Visual SourceSafe (VSS) does not provide a way of automatically
+notifying users when a file is checked in. If an automatic notification is
+desired, you should develop methods for providing that notification.
+
+For additional information, please click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q238556 HOWTO: Notify Other Team Members when Changing Projects Under Source
+  Controlled Projects
+
+In more complex scenarios, such as when multiple users may have the same files
+checked out simultaneously, all users should periodically refresh the project
+(From the Project menu select Refresh).
+
+You might also want to Show Differences on a file to compare your local copy with
+the latest version in VSS before "Getting Latest Version" from VSS, which would
+overwrite your local copy.
+
+Adding or removing files to or from a project:
+
+If userA adds files to (or removes files from) a project, from the
+Project-&gt;Source Control menu the userA selects "Update Project List. "UserB
+then updates his/her project list by choosing the menu items mentioned in the
+previous statement to see the changes made by userA.
+
+REFERENCES
+==========
+
+For additional information about Visual FoxPro and Visual SourceSafe
+integration, please see the following article(s) in the Microsoft Knowledge
+Base:
+
+  Q237847 INFO: The Role of the .pjm File in VSS / VFP Integration
+
+  Q157636 HOWTO: Set Up Source Code Control with Visual SourceSafe
+
+Additional query words: .pjm update
+
+======================================================================
+Keywords          : kbSSafe500 kbSSafe600 kbvfp kbvfp500 kbvfp500a kbvfp600 _IK kbGrpDSSSafe 
+Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

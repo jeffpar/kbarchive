@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118591: Calculating the Disk Space Required for an AVI File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118591: Calculating the Disk Space Required for an AVI File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118591/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118591/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118591/","publisher":null,"image":null,"headline":"Q118591: Calculating the Disk Space Required for an AVI File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118591-calculating-the-disk-space-required-for-an-avi-file">Q118591: Calculating the Disk Space Required for an AVI File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118591
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:1.0,1.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Video for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides information about how to calculate the hard disk space
+required for digitized video and audio.
+
+MORE INFORMATION
+================
+
+To calculate the disk space required for an AVI file, use the formulas below to
+determine the disk space required for captured uncompressed video and audio.
+
+Video
+-----
+
+The following two equations are used to determine the total disk space required
+for capturing raw, uncompressed video with no audio:
+
+1. Transfer rate (bytes/minute) = (frame height [pixels] * frame width [pixels]
+  * frame rate [frames/second] * 60 [sec/min] * color depth [bits/pixel]) / 8
+  (byte/bits)
+
+  NOTE: The frame height in pixels multiplied by the frame width in pixels
+  yields pixels per frame. The color depth could be 8 bits per pixel, 16 bits
+  per pixel or 24 bits per pixel.
+
+2. Disk space (bytes) = transfer rate (bytes/minutes) * length of captured video
+  (minutes)
+
+Audio
+-----
+
+To calculate the hard disk space required for captured audio, use the following
+two equations:
+
+1. Transfer rate (bytes/minute) = (sampling rate [kilohertz] * 1000 * sample
+  size [bits] * 60 [sec/min] * 1, or 2 if in stereo) / 8 (byte/bits)
+
+  NOTE: The sampling rate is multiplied by 1000 to convert the value to hertz.
+  If the audio track is in stereo, multiply the equation by two.
+
+2. Disk space (bytes) = transfer rate (bytes/minute) * length of captured audio
+  (minutes)
+
+Video and Audio
+---------------
+
+Combining the above equations provides a quick way to calculate disk space
+required for both audio and video; this is specified in the following equation:
+
+Total disk space required for an uncompressed AVI sequence = ([frame height *
+frame width * frame rate] + [sampling rate * 1000 * sample size * 1, or 2 if in
+stereo] * 60 [sec/min] * color depth * length of captured video) / 8
+(byte/bits)
+
+NOTE: If the audio is in stereo, multiply the audio transfer rate by two. This
+information can be used to find the space required on a hard disk as well as a
+CD-ROM.
+
+Additional query words: 1.00 1.10 vfw transfer rate disk space avi
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo100 kbVideo110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

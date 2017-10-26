@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140516: FIX: Storing Array Elements Causes GP Fault | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140516: FIX: Storing Array Elements Causes GP Fault" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140516/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140516/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140516/","publisher":null,"image":null,"headline":"Q140516: FIX: Storing Array Elements Causes GP Fault","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140516-fix-storing-array-elements-causes-gp-fault">Q140516: FIX: Storing Array Elements Causes GP Fault</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140516
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the CLEAR ALL command in the Command window results in an error such
+as:
+
+  Use of Unallocated Handle
+
+  -or-
+
+  This program has performed an illegal operation and will be shut down.
+
+CAUSE
+=====
+
+It is likely that you have used the STORE command to assign values to an array.
+
+WORKAROUND
+==========
+
+Instead of using the STORE command to assign values to your array, use the
+assignment operator (=).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro
+version 3.0b for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the following code:
+
+     -=-=-=-=-=-=-=-=-=-=-=-=
+          BEGIN CODE
+     -=-=-=-=-=-=-=-=-=-=-=-=
+     PUBLIC yy
+     yy = CREATEOBJECT("cc")
+     RETURN
+
+     DEFINE CLASS cc AS Custom
+     DIMENSION ee(1)
+     DIMENSION bb(1)
+
+     PROCEDURE Whatever
+     LOCAL ltemp
+
+     DO FORM C:\VFP\TEST NAME ltemp LINKED
+
+     *-- Use the following two lines to demonstrate the error.
+     STORE ltemp TO THIS.bb(1)
+     STORE ltemp TO THIS.ee(1)
+
+     *-- Use the following two lines to demonstrate the workaround.
+     * THIS.bb(1) = ltemp
+     * THIS.ee(1) = ltemp
+
+     ENDPROC
+     ENDDEFINE
+     -=-=-=-=-=-=-=-=-=-=-=-=
+       END CODE
+     -=-=-=-=-=-=-=-=-=-=-=-=
+
+2. In the Command window, enter the following line of code:
+
+     yy.Whatever()
+
+3. In the Command window, enter the following line of code:
+
+     CLEAR ALL
+
+To work around the problem, change the STORE lines into comments and change the
+lines that use the assignment operator into executed lines to see the
+workaround.
+
+Additional query words: VFoxWin buglist3.00 fixlist3.00b
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

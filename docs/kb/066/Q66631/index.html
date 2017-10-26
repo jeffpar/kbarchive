@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66631: Adding a Category in QuickHelp | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66631: Adding a Category in QuickHelp" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66631/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66631/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66631/","publisher":null,"image":null,"headline":"Q66631: Adding a Category in QuickHelp","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66631-adding-a-category-in-quickhelp">Q66631: Adding a Category in QuickHelp</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66631
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.7,1.83; OS/2:1..4,1.7,1.83
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft HELPMAKE Utility for MS-DOS, versions 1.7, 1.83 
+- Microsoft HELPMAKE Utility for OS/2, versions 1..4, 1.7, 1.83 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When creating a help database with HELPMAKE, new categories may be added to the
+Microsoft Advisor help system for use in the QuickHelp utility. To add
+selections that will appear under the QuickHelp Categories menu, use the topic
+"List categories." Under the List categories topic, list the selections that
+need to be added to the menu.
+
+MORE INFORMATION
+================
+
+The following is a sample help file:
+
+  File CATEGORY.TXT
+  -----------------
+
+     .context List categories
+     Category1
+     Category2
+
+     .context Category1
+     This is the information under the first category.
+
+     .context Category2
+     This is the information under the second category.
+
+For the file CATEGORY.TXT shown above, the HELPMAKE command line will appear as
+follows:
+
+  helpmake /E8 /Ocategory.hlp category.txt
+
+The choice of /E8 for partial compression is strictly arbitrary in this case, and
+is shown for demonstration purposes only. The maximum compression can be
+achieved by using /E15, and no compression is denoted by /E0.
+
+When the above help database is added to the list of databases for the Advisor,
+the topics "Category1" and "Category2" will be added under the Categories menu.
+
+The items that are placed in the List categories topic should be topics that are
+already defined with ".context" strings; otherwise, when the item is selected
+from the Categories menu, a message will be displayed stating that the topic
+could not be found.
+
+When using HELPMAKE with the "/C" option, which preserves case sensitivity, you
+must use the string "List categories" exactly. The case is important. Failure to
+use the exact case for each letter will cause the Advisor to ignore the
+categories you have added.
+
+Additional query words: kbinf 1.40 1.70 1.83
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbHELPMAKE kbZNotKeyword3
+Version           : MS-DOS:1.7,1.83; OS/2:1..4,1.7,1.83
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

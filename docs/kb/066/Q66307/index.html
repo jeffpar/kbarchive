@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66307: Accessing Online Help for C and Assembly Topics with Same Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66307: Accessing Online Help for C and Assembly Topics with Same Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66307/","publisher":null,"image":null,"headline":"Q66307: Accessing Online Help for C and Assembly Topics with Same Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66307-accessing-online-help-for-c-and-assembly-topics-with-same-name">Q66307: Accessing Online Help for C and Assembly Topics with Same Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66307
+Product(s): See article
+Version(s): 2.01 2.51
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QUICKASM | mspl13_c
+Last Modified: 23-OCT-1990
+
+QuickC with QuickAssembler versions 2.01 and 2.51 include online help
+for both C and Assembly topics. The Microsoft Advisor searches for C
+topics in the help file, QC.HLP, and for Assembly topics in QA.HLP.
+The manner in which the Advisor searches for topics is governed by the
+Language and Smart Help settings in the Display box under the Options
+menu.
+
+The following three possible Language settings determine the search
+order through the help files:
+
+   If Language Is:      Then:
+   ---------------      -----
+
+   C                    QC.HLP is searched first, then QA.HLP.
+
+   Assembler            QA.HLP is searched first, then QC.HLP.
+
+   Auto                 The file extension of the current file determines
+                        the search order. If it is not .ASM, the C
+                        defaults are used.
+
+Smart Help causes the Advisor to be insensitive to the presence or
+absence of leading underscores. For example, with Smart Help on,
+_dos_findfirst and dos_findfirst will bring up the same topic, while
+no help will be displayed on dos_findfirst with Smart Help turned off.
+In addition, Smart Help makes the search case insensitive.
+
+With the possible combinations of Language and Smart Help settings,
+attempting to access the online help system for topics defined in both
+C and Assembly may result in receiving help for only one language. For
+example, with the Language set to C and Smart Help activated, the
+following table shows a few instances where seeking help on certain
+Assembly topics results in help for the corresponding C topics:
+
+   Assembly Help Desired     C Help Actually Received
+   ---------------------     ------------------------
+
+      .EXIT                       exit()
+      SEGMENT                     _segment
+      IF                          if
+      IFNDEF                      #ifndef
+      INCLUDE                     #include
+
+The solution to this problem is changing the search order of the help
+files by changing the Language setting or forcing the search to be
+case sensitive by disabling Smart Help.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

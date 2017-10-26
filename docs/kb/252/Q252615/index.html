@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252615/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252615/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252615/","publisher":null,"image":null,"headline":"Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252615-ole-examples-for-taking-control-of-excel-from-visual-foxpro">Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252615
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbfile kbinterop kbsample kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 k
+Last Modified: 10-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Dbf2xls.exe is a sample that provides Microsoft Visual FoxPro code to control
+Microsoft Excel by using OLE Automation.
+
+MORE INFORMATION
+================
+
+  Dbf2xls.exe
+  (http://download.microsoft.com/download/vfox60/sample/9/w9x2k/en-us/Dbf2xls.exe)
+
+Release Date: Mar-20-2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The dbf2xls.exe file contains the following files:
+
++----------------------+
+| File Name    | Size  | 
++----------------------+
+| vfpexcel.prg | 29520 | 
++----------------------+
+| customer.dbf | 25979 | 
++----------------------+
+| readme.txt   | 3773  | 
++----------------------+
+
+VFPExcel.prg demonstrates, by example, the means by which to create a fully
+formatted and ready to print Microsoft Excel file using OLE Automation from
+within Microsoft Visual FoxPro. This program requires the installation of
+Microsoft Excel version 7.0 (Excel for Office 95) or higher. The program is
+capable of functioning in Microsoft Visual FoxPro version 3.0 and higher. If
+this program is run on a computer with no installed printer, functionality
+associated with Microsoft Excel Page Setup features produces errors. These can
+be ignored.
+
+The operation performed within this program first uses a COPY TO TYPE XL5
+command. While OLE can be used to pass data from Visual FoxPro to Excel, the
+COPY TO command is vastly more efficient. Once the Excel file is created, the
+program creates an OLE instance of Microsoft Excel and opens the temporary file
+created with the COPY TO command. The program stores the temporary file in the
+Microsoft Visual FoxPro root directory as determined by the HOME() function.
+
+NOTE: Any partial installation of Microsoft Visual FoxPro that does not include
+the appropriate OLE or COM DLLs causes this program to fail when it attempts to
+instantiate (through OLE) the Microsoft Excel Application Object.
+
+To Use This Program
+-------------------
+
+A table, view, or cursor must be open in the currently selected work area. The
+table, view, or cursor must not contain any memo field or fields. This program
+creates a Microsoft Excel file and stores it in the directory containing the
+source table. The name assigned to the created file is the same as the one
+provided by the ALIAS() function. The extension of the derived file is .xls.
+
+The program utilizes a parameter passed as a numeric value to determine the paper
+size and print orientation. The parameter values are shown here:
+
+- 1 = letter size paper, portrait orientation (1,1)
+- 2 = letter size paper, landscape orientation (1,2)
+- 3 = legal size paper, portrait orientation (5,1)
+- 4 = legal size paper, landscape orientation (5,2)
+
+If no parameter is passed, the default value will be 1.
+
+Important Items to Remember
+---------------------------
+
+- This program does not work with a table, view, or cursor that contains a memo
+  field or fields.
+
+- Cursors and Views that represent subsets of a single table or represent data
+  combined from two or more tables can be temp (.tmp) files that are stored in
+  the computer's assigned TEMP directory.
+
+- This program places the entire contents of the currently open file into a
+  resulting Microsoft Excel file. If you want to use only a subset of the data,
+  this action needs to be taken prior to running this program. This is
+  especially true, and particularly important, when using larger tables.
+
+- The program code is thoroughly commented to describe all processes that are
+  occurring.
+
+Step-by-Step Process for Using Vfpexcel.prg  
+-------------------------------------------
+
+1. Download the self-extracting executable file and expand the Vfpexcel.prg,
+  Customer.dbf, and Readme.txt files.
+
+2. Start Microsoft Visual FoxPro.
+
+3. From within Microsoft Visual FoxPro, set the default directory to the folder
+  containing the extracted Vfpexcel.prg, Customer.dbf, and the Readme.txt
+  files.
+
+4. Open the Customer.dbf table. Ensure that the selected work area is the one in
+  which the Customer.dbf file is open.
+
+5. In the Microsoft Visual FoxPro Command window, type the following line of
+  code:
+
+  DO vfpexcel.prg WITH 4
+
+The result is a Microsoft Excel file with a name of Customer.xls that is stored
+in the same location as the customer.dbf table. If you print (or print preview)
+the file, you see that the paper size is legal and the print orientation is
+landscape. This was determined by the parameter of 4.
+
+Additional query words: Dbf2xls
+
+======================================================================
+Keywords          : kbfile kbinterop kbsample kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

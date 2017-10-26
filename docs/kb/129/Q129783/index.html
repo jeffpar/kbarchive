@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129783: FIX: typedef Class Template Causes Compiler Errors C2440/C2561 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129783: FIX: typedef Class Template Causes Compiler Errors C2440/C2561" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129783/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129783/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129783/","publisher":null,"image":null,"headline":"Q129783: FIX: typedef Class Template Causes Compiler Errors C2440/C2561","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129783-fix-typedef-class-template-causes-compiler-errors-c2440c2561">Q129783: FIX: typedef Class Template Causes Compiler Errors C2440/C2561</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129783
+Product(s): Microsoft C Compiler
+Version(s): 2.00 2.10
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling a program that has all of the following in the code causes the
+compiler to generate two errors:
+
+- Class A.
+
+- Class B derived from class A.
+
+- Template class C that has type T as its argument.
+
+- Class C has a member function that returns a type of A*.
+
+- Type T* value in the return statement of the function.
+
+- Function implementation inside the class C definition.
+
+- "typedef C&lt;B&gt; CB" before the class B definition.
+
+Here are the two errors generated:
+
+  
+
+  error C2440 : 'return' : cannot convert from 'class B*' to
+                           'class A*'
+
+-and-
+
+  
+
+  error C2561 : 'f' : function must return a value
+
+CAUSE
+=====
+
+The class template was instantiated within the typedef statement where the class
+B definition (the derivation) has not been seen by the compiler yet. Therefore
+no conversion is defined between the derived class and the base class.
+
+RESOLUTION
+==========
+
+Use any one of the following three workarounds:
+
+- Do not create a typedef based on class B until class B is defined.
+
+-or-
+
+- Due to the definition of the member function, the templated class C can only
+  be instantiated with class T if a conversion from T* to A* exists. This may
+  have been unintentional, and the design of class C could be re-thought.
+
+-or-
+
+- Do not define the class template member function inside the class definition.
+  The following sample code demonstrates this workaround:
+
+     /* Compile options needed: none
+     */ 
+
+     class A {};
+
+     template &lt; class T &gt;
+     class C
+     {
+       public:
+        A* f( T *t );
+     };
+
+     template &lt; class T &gt;
+     inline A* C::f( T *t )
+     {
+       return t;
+     }
+
+     class B;
+     typedef C&lt;B&gt; CB;
+
+     class B : public A {};
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+  /* Compile options needed: none
+  */ 
+  class A {};
+  template &lt; class T &gt;
+  class C
+  {
+    public :
+     A* f( T *t ) { return t; }
+  };
+  class B;
+  typedef C&lt;B&gt; CB;
+  // Work around #1: Move the following line, the definition of class B,
+  // before the typedef which depends on class B
+  class B : public A {};
+
+Additional query words: 2.00 2.10 9.00 9.10
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 2.00 2.10
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

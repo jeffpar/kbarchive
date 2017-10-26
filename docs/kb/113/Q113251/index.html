@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113251: MULTICON Demonstrates Dynamic Icons | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113251: MULTICON Demonstrates Dynamic Icons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113251/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113251/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113251/","publisher":null,"image":null,"headline":"Q113251: MULTICON Demonstrates Dynamic Icons","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113251-multicon-demonstrates-dynamic-icons">Q113251: MULTICON Demonstrates Dynamic Icons</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113251
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0,4.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kbMDI kbMFC KbUIDesign kbVC kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MULTICON sample demonstrates how to implement dynamic icons for both
+CMDIChildWnd and CMDIFrameWnd windows. The procedure is to first register a
+window class with a NULL icon for the frame. A frame of this type receives
+WM_PAINT messages when it becomes iconic, and can output to a 36 x 36* pixel
+area. To prevent duplicating output code from the view, the frame can call its
+view's OnDraw member to do the output.
+
+NOTE: Dynamically animated application icons will not work on Windows 95 and
+versions of Windows NT after 3.51.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Multicon.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+This file contains subdirectories, be sure to use the -d command line switch
+while extracting.
+
+Two simple view classes are used to demonstrate dynamic icons: CRectView and
+CEllipseView. These classes draw a random rectangle and a random ellipse,
+respectively. CWinApp::OnIdle is overridden to invalidate each open view and
+each minimized frame window. The MULTICON sample also demonstrates how to scale
+the output from an open view to fit a minimized frame, and how to convert the
+minimized frame's output to an icon during a drag operation.
+
+*For Windows 3.1, subject to change in future versions of Windows.
+
+Feature (How to...)                            Location(s)
+-------------------                            -----------
+Generate random rectangles ................... RECTVIEW.CPP
+                                              CRectView::OnDraw
+
+Generate random ellipses ..................... ELLPSEVW.CPP:
+                                              CEllipseView::OnDraw
+
+Register a window class with a NULL
+icon ......................................... MAINFRM.CPP:
+                                              CMainFrame::PreCreateWindow
+
+Render on a minimized CMDIFrameWnd using the
+application's active view .................... CMainFrame::OnPaint
+
+Convert the display of a minimized
+CMDIFrameWnd to an icon ...................... CMainFrame::QueryDragIcon
+
+Enable OnIdle processing while a menu or
+modal dialog is displayed .................... CMainFrame::OnEnterIdle
+
+Render on a minimized CMDIChildWnd using the   
+associated view .............................. ICONWND.CPP:
+                                              CIconWnd::OnPaint
+
+Convert the display of a minimized
+CMDIChildWnd to an icon ...................... CIconWnd::QueryDragIcon
+
+Drive animated views and icons in the          
+background ................................... MULTICON.CPP:
+                                              CMulticonApp::OnIdle
+
+Additional query words: dynamic mdi frame child kbfile
+
+======================================================================
+Keywords          : kbfile kbsample kbMDI kbMFC KbUIDesign kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0,4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

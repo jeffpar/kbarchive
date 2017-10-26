@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242291: INFO: GetResultView Event Does Not Fire As Expected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242291: INFO: GetResultView Event Does Not Fire As Expected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242291/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242291/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242291/","publisher":null,"image":null,"headline":"Q242291: INFO: GetResultView Event Does Not Fire As Expected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242291-info-getresultview-event-does-not-fire-as-expected">Q242291: INFO: GetResultView Event Does Not Fire As Expected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242291
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbMMC kbVBp600bug kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Management Console, versions 1.1, 1.2 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for the MMC SnapIn Designer for Visual Basic states that if
+the GetResultViewInfo event is not implemented, then the GetResultView event
+fires to allow the SnapIn to reuse a cached result view. However, the
+GetResultView event only fires if a result view for the selected scope pane item
+has been cached through the ResultView_Deactivate event.
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the event sequence for the following three
+events:
+
+1. ResultView_Deactivate
+
+2. ScopePaneItems_GetResultView
+
+3. ScopePaneItems_GetResultViewInfo
+
+Steps To Reproduce
+------------------
+
+1. Start Visual Basic and select a new SnapIn project from the New Project
+  dialog box.
+
+2. Open the Snapin1 Designer and add a new URL view under the static node. By
+  default this new URL view is named URLView1.
+
+3. View the properties of URL view1, and set the URL field to a valid address
+  (http://example.microsoft.com/) and click Ok.
+
+4. View the properties of the static node and set the default view to URLView1
+  and click Ok.
+
+5. Open the code window for the Snapin1 Designer, and then paste in the
+  following code:
+
+     
+  Private Sub ResultViews_Deactivate(ByVal ResultView As SnapInLib.ResultView, Keep As Boolean)
+      Keep = True
+  End Sub
+
+  Private Sub ScopePaneItems_GetResultView(ByVal ScopePaneItem As SnapInLib.ScopePaneItem, Index As Variant)
+      ScopePaneItem.ResultView = ScopePaneItem.ResultViews(1)
+  End Sub
+
+  Private Sub ScopePaneItems_GetResultViewInfo(ByVal ScopePaneItem As SnapInLib.ScopePaneItem, 
+  ViewType As SnapInLib.SnapInResultViewTypeConstants, DisplayString As String)
+     ScopePaneItem.ResultViewType = siURLView
+  End Sub
+
+6. Set breakpoints in all three events and start the project in the debugger.
+
+7. Load the SnapIn into MMC. When the SnapIn loads, select the SnapIn1 scope
+  item. The debugger breaks in the ScopePaneItems_GetResultViewInfo event
+  handler. Press F5 to continue code execution.
+
+8. Click off the SnapIn1 scope item, and the debugger breaks in the
+  ResultViews_Deactivate event handler. Note that the keep property is set to
+  True. This indicates that this result view will be cached, and the
+  ScopePaneItems_GetResultView will be fired the next time the Result View is
+  needed. Press F5 to continue code execution
+
+9. Click back on the SnapIn1 scope item, the debugger breaks in the
+  ScopePaneItems_GetResultViewInfo event handler again. This time step through
+  the code using the F8 key, and note that the ScopePaneItems_GetResultView
+  event is handled.
+
+10. Stop the SnapIn and comment out the ResultViews_Deactivate event handler.
+
+11. Run the project again, and follow the above steps. Note that the
+  ScopePaneItems_GetResultView event is never fired.
+
+REFERENCES
+==========
+
+Refer to the following topic(s) in the SnapIn Designer for Visual Basic
+documentation :
+
+1. ScopePaneItems
+
+2. Debugging a SnapIn
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600bug kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

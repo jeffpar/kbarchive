@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167107: FIX: Missing Controls on the SSTAB Control Tabs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167107: FIX: Missing Controls on the SSTAB Control Tabs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167107/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167107/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167107/","publisher":null,"image":null,"headline":"Q167107: FIX: Missing Controls on the SSTAB Control Tabs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167107-fix-missing-controls-on-the-sstab-control-tabs">Q167107: FIX: Missing Controls on the SSTAB Control Tabs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167107
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0 5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One or more of the tabs on the SSTAB control is missing its controls when
+displayed at run-time.
+
+CAUSE
+=====
+
+The SSTab control does not respond correctly when attempting to manipulate the
+Tab or TabVisible properties from the Form-Load event. If the SSTab control has
+not completely finished initializing when you attempt to set the Tab property to
+reflect a value different than the default, then the controls are still located
+in their temporary holding area at -72960. The Tab will display without its
+controls. To guarantee that the SSTab control has finished initializing, you can
+access its properties from any event after Form_Load has completed and the SSTab
+can receive the focus. This will occasionally work from the Form_Load event but
+has inconsistent behavior when you have various controls on one the tabs.
+
+RESOLUTION
+==========
+
+Tab Property
+------------
+
+If you attempt to set a certain tab as the current tab on initial display, then
+setting the Tab property in either the Form_Activate event or the
+SSTab1.Got_Focus event instead of the Form_Load event fixes this problem, as
+follows:
+
+     Private Sub Form_Activate
+     Static bReactivate as Boolean  'default is false
+     If Not bReactivate Then
+      SSTab1.Tab = GetSetting("MyApp","Settings","MyTab",0)
+      bReactivate = True
+     End If
+     End Sub
+
+TabVisible Property
+-------------------
+
+If you attempt to display only a certain tab on initial display, then setting the
+desired tab as the current tab and then setting the REMAINING tabs TabVisible
+property to false in reverse order (leaving the current tab set to visible) from
+either the Form_Activate event or the SSTab.Got_Focus events solves this
+problem, as follows:
+
+     Private Sub Form_Activate()
+     Static bReactivate as Boolean  'default is false
+      If Not bReactivate Then
+       SSTab1.Tab = GetSetting("MyApp","Settings","MyTab",0)
+       For i = SSTab1.Tabs - 1 To 0 Step -1
+        If SSTab1.Tab &lt;&gt; i Then
+         SSTab1.TabVisible(i) = False
+        End If
+       Next i
+       bReactivate = True
+      End If
+     End Sub
+
+This code assumes that have stored an entry "MyTab" in the registry.
+
+The GetSetting function can be replaced with a module level Public integer
+variable and set as needed.
+
+- You should not make the current tab invisible using SSTab1.TabVisible() =
+  False.
+
+- You should not set an invisible tab as the current tab.
+
+- You should always leave at least one 'tab' set to visible. If you want to
+  make all the tabs invisible, use SSTab1.Visible = False
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 2.
+
+For more information on the Visual Studio 97 Service Pack 2, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q170365 : INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+Service Pack 2, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q171554 : INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+
+MORE INFORMATION
+================
+
+Activate &amp; Got_Focus
+--------------------
+
+If you do not want the tab selected every time the SSTab control or the form its
+on receives focus, then use a Static flag such as bReactivate in the sample. If
+you do want the tab to be set every time the form receives focus, then remove
+the flag:
+
+     Private Sub Form_Activate
+      SSTab1.Tab = GetSetting("MyApp","Settings","MyTab",0)
+     End Sub
+
+Steps to Reproduce Behavior
+---------------------------
+
+SSTab Control
+-------------
+
+Tab property:
+
+1. Put an SSTab control with five tabs on a form.
+
+2. Add a textbox to each tab.
+
+3. Click on tab 0 to set design time current tab to 0.
+
+4. In Form_Load, add:
+
+        SSTab1.Tab = 3
+
+5. Run the project and note that the textbox will be gone. The textbox is
+  actually at -72960.
+
+Tabvisible property:
+
+1. Put an SSTab control with three tabs on a form.
+
+2. Add a textbox to each tab.
+
+3. In form load, add:
+
+        sstab1.tabvisible(0) = false
+        sstab1.tabvisible(1) = false
+        sstab1.tabvisible(2) = false
+        *(this will fail with the older SSTab, giving invalid property value)
+
+4. Put three CommandButtons on the form, reversing what was done in form load:
+
+        sstab1.tabvisible(0) = true
+        sstab1.tabvisible(1) = true
+        sstab1.tabvisible(2) = true
+
+Note that the textbox will be gone; it is actually at -72960.
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q149328 : Selecting Invisible Tab Can Cause GPF with SSTab Control
+
+Additional query words: missing invisible kbVBp500fix kbVBp kbWinOS98 kbDSupport kbdse kbVBp400fix
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : 4.0 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

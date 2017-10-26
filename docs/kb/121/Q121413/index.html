@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121413/","publisher":null,"image":null,"headline":"Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121413-prb-printer-not-ready-when-choosing-font-from-object-menu">Q121413: PRB: "Printer Not Ready" When Choosing Font from Object Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121413
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5x,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are modifying a report and you choose Font from the Object menu in
+FoxPro 2.x, or from the Format menu in Visual FoxPro, you receive a "Printer Not
+Ready" error message.
+
+CAUSE
+=====
+
+This problem is caused by a corrupt printer driver. The same error message
+should appear in any Microsoft Windows-based application, including the Write
+accessory application in the Windows Accessories group.
+
+RESOLUTION
+==========
+
+Reinstall the corrupt printer driver, or use the Printers application in Windows
+Control Panel to change the default printer. You can either install a new
+printer driver and set it as the default or select a different driver from the
+list of currently installed printer drivers. To reinstall a corrupt printer
+driver:
+
+1. Open Windows Control Panel (located in the Main group in Program Manager) and
+  double-click the Printers icon.
+
+2. Select the corrupt printer driver, and then click the Remove button.
+
+3. Delete the appropriate .DRV or .DLL files from the WINDOWS\SYSTEM
+  subdirectory.
+
+4. Reinstall the printer driver use the Printers icon in Control Panel.
+
+
+Additional query words: kbdse VFoxWin FoxWin 2.50 2.50a 2.50b errmsg applet
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.5x,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

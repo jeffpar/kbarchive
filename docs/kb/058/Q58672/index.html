@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58672: Using INT with _asm Does Not Output Text in Debugger | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58672: Using INT with _asm Does Not Output Text in Debugger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58672/","publisher":null,"image":null,"headline":"Q58672: Using INT with _asm Does Not Output Text in Debugger","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58672-using-int-with-_asm-does-not-output-text-in-debugger">Q58672: Using INT with _asm Does Not Output Text in Debugger</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58672
+Product(s): See article
+Version(s): 2.00 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickasm buglist2.00 | mspl13_c
+Last Modified: 26-FEB-1990
+
+Question:
+
+If I trace (using F8) through the DOS or BIOS interrupt functions
+designed to output information to the screen, I do not receive any
+output from the program. I can run the program (using F5) and my
+output is displayed properly. C run-time screen output functions also
+properly display my output. How can I correct this problem?
+
+Response:
+
+To work around this problem, turn on Screen Swap. This option is found
+under Options.Run/Debug. When you press F5 or use C run-time
+function, the screen is swapped to the output window before executing
+the statement. In the case of an interrupt call through _asm, QuickC
+does not switch to the output window when Screen Swap is set to Auto
+or Off.
+
+Sample Code:
+
+/*
+DEBUGGER.C:
+To see the problem, use .Option.Run/Debug.Screen Swap set to either
+Auto or Off. Setting this to On will cause output to appear properly.
+*/
+#include &lt;string.h&gt;
+
+char *str1 = "Print using INT 21H, Function 09H$" ;
+char *str2 = "Print using INT 21H, Function 40H" ;
+
+void main ( void )
+
+{
+  int len ;
+
+  len = strlen(str2) ;
+
+/*  Display String - outputs a string to standard out (must be */
+/*                   terminated with '$').                     */
+  _asm {
+         push dx
+         mov  dx, word ptr str1
+         mov  ah, 09h
+         int  21h
+         pop  dx
+  }
+
+/*  Write File or Device - outputs a string to a file, use bx = 1 */
+/*                         to write to standard out.              */
+  _asm {
+         push dx
+         push cx
+         push bx
+         mov  ah, 40h
+         mov  bx, 01h
+         mov  cx, len
+         mov  dx, word ptr str2
+         int  21h
+         pop  bx
+         pop  cx
+         pop  dx
+  }
+
+/*  Write Character and Attribute at Cursor - Displays 40h X's */
+/*                                            at the cursor.   */
+  _asm {
+         push cx
+         push bx
+         mov  bh, 0
+         mov  bl, 0f0h
+         mov  cx, 40h
+         mov  ah, 0ah
+         mov  al, 'X'
+         int  10h
+         pop  bx
+         pop  cx
+  }
+
+The code is generated properly, but the debugger does not recognize
+the need to swap to the output screen on these interrupts.
+
+Microsoft has confirmed this to be a problem with QuickC Version 2.00.
+We are researching this problem and will post new information here as
+it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97457/","publisher":null,"image":null,"headline":"Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97457-ms-dos-err-msg-setup-did-not-find-windows-in-the-path">Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97457
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can install the MS-DOS 6.0 and later optional programs (Anti-Virus,
+Undelete, and Backup) with either SETUP or SETUP /E. If you install any of these
+programs using either command, you may receive the following error message:
+
+  Setup Did Not Find Windows in the Path Specified
+
+CAUSE
+=====
+
+One or more of the optional program(s) you attempted to install was the
+Windows-based version, and one of the following files is missing from your
+computer system:
+
+  SYSTEM.INI
+  PROGMAN.INI
+
+If you use Norton Desktop for Windows or another replacement shell for Program
+Manager, you receive the above error message if the PROGMAN.INI file has been
+deleted.
+
+You may also receive the above error message if Windows has been installed to the
+root directory of a logical drive.
+
+WORKAROUND
+==========
+
+Missing PROGMAN.INI
+-------------------
+
+If the PROGMAN.INI file has been deleted and you cannot restore it, you can
+re-create the PROGMAN.INI file by using the following steps:
+
+1. At the MS-DOS command prompt in the Windows directory, type the following,
+  pressing ENTER after each line:
+
+  " copy con progman.ini [groups] " (without the quotation marks)
+
+2. Press CTRL+Z, then press ENTER.
+
+3. Run SETUP or SETUP /E again.
+
+Missing SYSTEM.INI
+------------------
+
+If the SYSTEM.INI file has been deleted and you cannot restore, you can re-create
+the SYSTEM.INI file by using the following steps:
+
+1. Expand the file SYSTEM.SR_ from the original Windows 3.1 disks to your
+  Windows directory with the following command
+
+  " &lt;destination&gt;:\windows\expand &lt;drive&gt;:system.sr_
+  &lt;destination&gt;:
+  \windows\system.ini " (without the quotation marks)
+
+  where &lt;destination&gt; is your hard disk drive and &lt;drive&gt; is your
+  floppy disk drive containing the original Windows 3.1 disk.
+
+  NOTE: SYSTEM.SR_ is found on Disk 1 on the 1.44-megabyte 3.5-inch disk set and
+  on Disk 2 of the 1.2-megabyte 5.25-inch disk set.
+
+2. Change to the drive containing Windows, and then change to the Windows
+  directory.
+
+3. Type "setup" (without the quotation marks) to start the MS-DOS portion of
+  Windows Setup.
+
+4. Select the correct hardware options for your system. (The options are blank
+  by default.)
+
+5. Accept your changes.
+
+  NOTE: At this point, you can have Setup copy new drivers.
+
+6. Open the new SYSTEM.INI file in a text editor, such as Microsoft MS-DOS
+  Editor, and make the following changes:
+
+  a. In the [BOOT] section, add PROGMAN.EXE to the SHELL= line.
+
+  b. In the [BOOT] section, remove or remark out the Taskman.exe= line.
+
+7. Run SETUP or SETUP /E again.
+
+Windows Was Installed in the Root Directory
+-------------------------------------------
+
+If Windows has been installed to the root directory of a logical drive, you can
+work around the problem by specifying the root directory name, followed by a
+period. For example, if Windows has been installed in the root directory of
+drive D, type "D:\." (without the quotation marks).
+
+Norton Desktop for Windows (NDW) is manufactured by Symantec, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 6.22 6.00 undelete 6.20 ndw
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

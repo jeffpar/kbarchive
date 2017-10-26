@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207429/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207429/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207429/","publisher":null,"image":null,"headline":"Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207429-sms-cannot-install-sms-client-software-in-windows-nt-and-2000">Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207429
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbinterop kbsetup kbClient kbConfig kbServer kbsms200 kbBindery kbOSNovell
+Last Modified: 08-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Smsls.bat or Smsman.exe to install the Systems Management Server
+(SMS) 2.0 client software on a target Windows NT- or Windows 2000-based
+computer, the SMS 2.0 client installation may not be completed successfully.
+
+CAUSE
+=====
+
+This issue can occur because you are unable to install SMS 2.0 client software
+on a Windows NT- or Windows 2000-based computer if the Workstation and Server
+services are not running. When you disable either of these services, the client
+is not supported as an SMS 2.0 client, and the networking abilities of the
+client are limited.
+
+MORE INFORMATION
+================
+
+For more information about Windows NT Workstation and Server services, consult
+the Windows NT Resource Kit, Chapter 1, "Windows NT Networking Architecture."
+
+The following log files are created on Windows NT- and Windows 2000-based
+computers on which the SMS 2.0 client installation was unsuccessful. These logs
+are located in the %SystemRoot%\Ms\Sms\Logs folder.
+
+WN_logon.log:
+
+  Could not register CCIM; AppRegister return code =1060
+  Waiting for 1 minute for CliSvc to start CCIM~
+  NetServerGetInfo failed (2138)~
+  Unable to create the Client Service Account - The specified service does not
+  exist as an installed service.~~
+  UpdateClientRegistryForCCIMLaunch returned (null)
+
+WNManual.log:
+
+  Could not register CCIM (could be initial install); AppRegister return code
+  =1060
+  Waiting for 1 minute for CliSvc to start CCIM~
+  ERROR: NetServerGetInfo failed (2114)~
+  ERROR: Unable to create the Client Service Account. Win32 Error: 2114
+  Warning: Could not launch/register CCIM - 2114
+  Warning: could not open base component installation properties
+
+Additional query words: prodsms sms20 cli32 file and printer sharing print
+
+======================================================================
+Keywords          : kbinterop kbsetup kbClient kbConfig kbServer kbsms200 kbBindery kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

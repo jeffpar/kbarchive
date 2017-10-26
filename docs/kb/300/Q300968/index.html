@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q300968: Train Simulator: Installation Uses More Disk Space Than Expected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q300968: Train Simulator: Installation Uses More Disk Space Than Expected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/300/Q300968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/300/Q300968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/300/Q300968/","publisher":null,"image":null,"headline":"Q300968: Train Simulator: Installation Uses More Disk Space Than Expected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q300968-train-simulator-installation-uses-more-disk-space-than-expected">Q300968: Train Simulator: Installation Uses More Disk Space Than Expected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q300968
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Train Simulator on your computer, a complete
+installation may require a greater amount of disk space than the disk-space
+requirements listed on the box for a full install.
+
+CAUSE
+=====
+
+A complete installation of Train Simulator requires about 1.8 gigabytes (GB) of
+disk space (not including the swap file) unless you install the program to a
+FAT16 volume. If you install to a Fat16 volume, the installation may require as
+much as 2.2 GB because of the cluster size of a FAT16 volume. On a hard disk
+that uses the FAT16 file system, the smallest amount of space that a file can
+use is equal to the size of one cluster. This means that a 1-kilobyte (KB) file
+stored on the hard disk may actually use up to 32 KB of physical disk space,
+rather than 1 KB of disk space. Train Simulator installs a large number of small
+files (1 to 2 KB), including images (JPG).
+
+NOTE: This behavior does not occur on a FAT32 file system or on NTFS file
+systems, because these systems do not have a 32-KB limitation.
+
+MORE INFORMATION
+================
+
+Windows 95 Gold only supports FAT16 volumes, but Windows 95 OSR2, all versions
+of Windows 98, Windows ME and Windows 2000 can support FAT32.
+
+It may be possible to use Microsoft utilities to convert a FAT16 volume to FAT32
+in some operating systems. More information including information on who to
+contact for support of these tools can be found in the following articles:
+
+- Window98, Windows Millennium
+
+  
+
+  Q273896 How to Convert a Drive to FAT32 in Windows Millennium Edition
+
+  Q180134 How to Convert a Drive to FAT32 Using Drive Converter
+
+  Q253774 Common Questions About the FAT32 File System
+
+- Windows 2000
+
+  
+
+  Q214579 How to Use Convert.exe to Convert a Partition to NTFS
+
+  Q156560 Free Space Required to Convert FAT to NTFS
+
+- Windows 95 OSR2
+
+  Q158238 How to Determine the Version of Windows 95/98/Me in Use
+
+  Q155003 Description of Windows 95 OEM Service Release 2
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbTrainSim
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

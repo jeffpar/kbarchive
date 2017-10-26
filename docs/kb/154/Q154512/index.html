@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154512/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154512/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154512/","publisher":null,"image":null,"headline":"Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154512-sample-winsockexe-getting-hostaddress-using-windows-sockets">Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154512
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbsample kbVBp400 kbVBp500 kbWinsock
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to get the HostAddress of a machine using Windows
+Sockets. The TCP/IP network protocol is shipped with all Windows operating
+systems and is becoming increasingly more important with its Internet
+compatibility. There is an API set for Windows Sockets that can work with TCP/IP
+and help to return information such as the HostName or the IP Address of a
+machine. This is obviously reliant on the presence of the relevant DNS or WINS
+servers and the TCP/IP protocol being installed. Below is a sample showing how
+to extract the machine HostAddress.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Winsock.exe
+  (http://download.microsoft.com/download/vb50ent/Sample45/1/W9XNT4/EN-US/Winsock.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+NOTE: This code requires at least version 1.1 of Windows Sockets.
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Place a CommandButton on the form.
+
+3. Add the following code to the Form1 code window:
+
+        Option Explicit
+
+        Private Const WSADescription_Len = 256
+        Private Const WSASYS_Status_Len = 128
+        Private Const SOCKET_ERROR As Long = -1
+
+        Private Type WSADATA
+           wversion As Integer
+           wHighVersion As Integer
+           szDescription(0 To WSADescription_Len) As Byte
+           szSystemStatus(0 To WSASYS_Status_Len) As Byte
+           iMaxSockets As Integer
+           iMaxUdpDg As Integer
+           lpszVendorInfo As Long
+        End Type
+
+           Private Declare Function gethostname Lib "WSOCK32.DLL" (ByVal hostname$, _
+     ByVal HostLen As Integer) As Long
+
+        Private Declare Function WSAGetLastError Lib "WSOCK32.DLL" _
+           () As Long
+        Private Declare Function WSAStartup Lib "WSOCK32.DLL" (ByVal _
+           wVersionRequired as Integer, lpWSAData As WSADATA) As Long
+        Private Declare Function WSACleanup Lib "WSOCK32.DLL" () As Long
+
+        Sub Form_Load()
+          Call SocketsInitialize
+        End Sub
+
+        Private Sub Command1_click()
+          Dim hostname$, HostLen&amp;
+          HostLen&amp; = 256
+          hostname$ = Space$(HostLen&amp;)
+          If gethostname(hostname$, HostLen&amp;) = SOCKET_ERROR Then
+              MsgBox "Windows Sockets error" &amp; Str(WSAGetLastError())
+          Else
+              hostname$ = Trim$(hostname$)
+              hostname$ = Left$(hostname$, Len(hostname$) - 1)
+              MsgBox "Host name  = " &amp; hostname$
+          End If
+          SocketsCleanup
+        End Sub
+
+        Sub SocketsInitialize()
+          Const WS_VERSION_REQD As Integer = &amp;H101
+          Const WS_VERSION_MAJOR = WS_VERSION_REQD \ &amp;H100 And &amp;HFF&amp;
+          Const WS_VERSION_MINOR = WS_VERSION_REQD And &amp;HFF&amp;
+          Const MIN_SOCKETS_REQD = 1
+          Dim WSAD As WSADATA
+          Dim iReturn As Integer
+          Dim sLowByte As String, sHighByte As String, sMsg As String
+          iReturn = WSAStartup(WS_VERSION_REQD, WSAD)
+          If iReturn &lt;&gt; 0 Then
+              MsgBox "Winsock.dll is not responding."
+              End
+          End If
+          If lobyte(WSAD.wversion) &lt; WS_VERSION_MAJOR Or (lobyte _
+            (WSAD.wversion) = WS_VERSION_MAJOR And hibyte(WSAD.wversion) _
+            &lt; WS_VERSION_MINOR) Then
+            sHighByte = Trim$(Str$(hibyte(WSAD.wversion)))
+            sLowByte = Trim$(Str$(lobyte(WSAD.wversion)))
+            sMsg = "Windows Sockets version " &amp; sLowByte &amp; "." &amp; sHighByte
+            sMsg = sMsg &amp; " is not supported by winsock.dll "
+            MsgBox sMsg:
+            End
+       End If
+       If WSAD.iMaxSockets &lt; MIN_SOCKETS_REQD Then
+         sMsg = "This application requires a minimum of "
+         sMsg = sMsg &amp; Trim$(Str$(MIN_SOCKETS_REQD)) &amp; _
+         " supported sockets."
+         MsgBox sMsg
+         End
+       End If
+        End Sub
+
+        Function hibyte(ByVal wParam As Integer)
+           hibyte = wParam \ &amp;H100 And &amp;HFF&amp;
+        End Function
+
+        Function lobyte(ByVal wParam As Integer)
+           lobyte = wParam And &amp;HFF&amp;
+        End Function
+
+        Sub SocketsCleanup()
+          Dim lReturn As Long
+          lReturn = WSACleanup()
+          If lReturn &lt;&gt; 0 Then
+            MsgBox "Socket error " &amp; Trim$(Str$(lReturn)) &amp; _
+     " occurred in Cleanup"
+            End
+          End If
+        End Sub
+
+4. Press the F5 key to run the project. The Hostname should be printed on the
+  form.
+
+Additional query words: vb5rel kbintluk
+
+======================================================================
+Keywords          : kbfile kbsample kbVBp400 kbVBp500 kbWinsock 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

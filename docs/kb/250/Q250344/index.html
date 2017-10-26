@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250344/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250344/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250344/","publisher":null,"image":null,"headline":"Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250344-sample-arrayconvertexe-variant-conversion-functions">Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250344
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbprogramming kbsample kbVBp kbVBp400 kbVBp500 kbVBp600 kbDSupport
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ArrayConvert.exe is a sample that is used to convert Variants of one type to
+Variants of another type. For example, if you are using Visual Basic Script
+(VBScript), these conversion functions aid you in converting a Variant that
+contains an Octet string to a Variant that contains a Hex string.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  ArrayConvert.exe
+  (http://download.microsoft.com/download/exch55/sample/55/win98/en-us/ArrayConvert.exe)
+
+The ArrayConvert.exe file contains the following files:
+
++-------------------------------------+
+| ADS.vbp              | 747 bytes    | 
++-------------------------------------+
+| ADS.vbw              | 35 bytes     | 
++-------------------------------------+
+| ArrayConvert.cls     | 3017 bytes   | 
++-------------------------------------+
+| ArrayConvertTest.bas | 1205 bytes   | 
++-------------------------------------+
+| ArrayConvertTest.vbg | 67 bytes     | 
++-------------------------------------+
+| ArrayConvertTest.vbp | 884 bytes    | 
++-------------------------------------+
+| ArrayConvertTest.vbw | 31 bytes     | 
++-------------------------------------+
+| ADS.dll              | 24,576 bytes | 
++-------------------------------------+
+| ADs.exp              | 996 bytes    | 
++-------------------------------------+
+| ADs.lib              | 2536 bytes   | 
++-------------------------------------+
+| AdsConvert.vbg       | 73 bytes     | 
++-------------------------------------+
+
+Release Date: Apr-13-2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The five functions that are in this sample are:
+
+1. CStrArray - Use this function to convert a Variant Array of strings to a
+  Variant Array of Variants containing strings. This allows VBScript to access
+  multi-valued string attributes returned in ADO recordsets.
+
+2. CvOctetStr2vHexStr - Use this function to convert a Variant Array of bytes to
+  a Variant containing an ASCII-encoded Hex string. This allows VBScript to
+  translate an ADSTYPE_OCTETSTRING Variant into a string of ASCII characters
+  0-9 A-F.
+
+3. CvHexStr2vOctetStr -Use this function to convert a Variant containing an
+  ASCII-encoded Hex string to a Variant Array of bytes. This allows VBScript to
+  create Variants for ADSTYPE_OCTETSTRING from strings of ASCII characters 0-9
+  A-F.
+
+4. CvOctetStr2vStr - Use this function to convert a Variant Array of bytes to a
+  Variant containing an ASCII string. This allows VBScript to translate an
+  ADSTYPE_OCTETSTRING Variant into a string of ASCII characters.
+
+5. CvStr2vOctetStr - Use this function to convert a Variant containing a string
+  to a Variant Array of bytes. This allows VBScript to create Variants for
+  ADSTYPE_OCTETSTRING from strings of ASCII characters.
+
+To use the sample, double-click on the self-extracting executable file
+ArrayConvert.exe. Using Visual Basic, open the ArrayConvertTest.vbg file. Once
+the project is open you can run the test program that demonstrates how to use
+the conversion functions.
+
+To use the functions from VBScript, you can register the the Ads.Dll file by
+doing Regsvr32 Ads.dll and then calling the functions from VBScript.
+
+The following is an example of using the CStrArray function in a VBScript to
+convert and display the members of Distribution lists in an Exchange
+Organization:
+
+   
+  Set cnvt = CreateObject("ADs.ArrayConvert")
+  Set conn = CreateObject("ADODB.connection")
+  conn.provider = "ADSDSOObject"
+  conn.open ""
+  Set rs = conn.execute( _
+      "&lt;LDAP://Server/o=organization/ou=site/cn=recipients&gt;;(objectClass=groupOfNames);ADsPath,member;onelevel")
+         
+  While Not rs.EOF
+      v1 = cnvt.CStrArray(rs.fields("member").Value)
+      For Each v2 In v1
+  	msgbox v2
+      Next
+
+      rs.movenext
+  Wend
+
+Additional query words: ArrayConvert Array Convert
+
+======================================================================
+Keywords          : kbfile kbprogramming kbsample kbVBp kbVBp400 kbVBp500 kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

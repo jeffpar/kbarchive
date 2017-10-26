@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q318472: Cannot obtain an IP address from a DHCP server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q318472: Cannot obtain an IP address from a DHCP server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/318/Q318472/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/318/Q318472/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/318/Q318472/","publisher":null,"image":null,"headline":"Q318472: Cannot obtain an IP address from a DHCP server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q318472-cannot-obtain-an-ip-address-from-a-dhcp-server">Q318472: Cannot obtain an IP address from a DHCP server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q318472
+Product(s): The Microsoft Network
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows 2000 
+- the operating system: Microsoft Windows XP 
+- MSN DSL, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may have problems obtaining an IP address from a DHCP server if:
+
+- You are using the Arescom 860 external DSL Modem with either Windows 2000 or
+  Windows XP and are unable to obtain an IP address automatically from the
+  modem's DHCP server.
+
+- You previously had a working connection when using MSN DSL Broadband service
+  but after changing a setting or using another computer, you are now seeing an
+  error message in your Internet browser when trying to access the Web.
+
+CAUSE
+=====
+
+The IP address for your current connection is not the correct IP address for the
+Arescom 860 external DSL Modem.
+
+RESOLUTION
+==========
+
+To reset your IP address
+
+1. From the Start menu, click Run, and then type "cmd".
+
+2. In the Command window, type "ipconfig/release" to view the current IP
+  address.
+
+3. Type "ipconfig/renew". Your IP address should now be listed as "192.168.1.2".
+  If it is not, go to
+
+  Q318473 Verify Settings in Internet Protocol Properties
+
+  for additional troubleshooting steps.
+
+4. If the IP address is listed as "192.168.1.2", then attempt to connect to the
+  Internet using your Internet browser.
+
+Additional query words: kbimu;
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin2000 kbOSWinSearch kbOSWinXP kbMSNSearch kbOSWinXPSearch kbMSNDSL200
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155890: PRB: FoxPro for Mac’s Setup Wizard Can’t Copy Source Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155890: PRB: FoxPro for Mac’s Setup Wizard Can’t Copy Source Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155890/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155890/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155890/","publisher":null,"image":null,"headline":"Q155890: PRB: FoxPro for Mac’s Setup Wizard Can’t Copy Source Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155890-prb-foxpro-for-macs-setup-wizard-cant-copy-source-files">Q155890: PRB: FoxPro for Mac’s Setup Wizard Can’t Copy Source Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155890
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 09-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you click the Finish button in the Visual FoxPro for Macintosh Setup
+Wizard, a WAIT WINDOW appears with the message "Copying the source code
+files..." followed by the following error message:
+
+  The Setup Wizard was unable to make a copy of your source files. Setup
+  terminated.
+
+A copy of the source files is not made.
+
+CAUSE
+=====
+
+This error may occur because the Finder Scripting Extension is not loaded or the
+Power PC Modern Memory Manager is not ON.
+
+RESOLUTION
+==========
+
+Load the Finder Scripting Extension. If you are using System 7.5, it might be
+disabled in the Extensions Manager Control Panel. If you are using System 7.1.2,
+obtain a copy of the Finder Scripting Extension from a System 7.5 install or
+download it from Apple's Web site.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Setup Wizard uses AppleScript to tell the Finder to make a copy of the
+source code files. If the Finder Scripting Extension is not loaded, the Setup
+Wizard cannot communicate this to the Finder.
+
+The Finder Scripting Extension is installed with the System 7.5 versions of the
+Macintosh System Software. It is not supplied or installed with System 7.1.2.
+Therefore, the Visual FoxPro Setup Wizard does not run under System 7.1.2 unless
+you place the Finder Scripting Extension in the System:Extensions folder.
+
+For Visual FoxPro users who are still running System 7.1.2, you can download the
+Finder Scripting Extension from the Apple Web site. You should use version 1.2
+of the Finder Scripting Extension. Apple included version 1.1 of the Finder
+Scripting Extension with AppleScript 1.1.
+
+You can find the (http://support.microsoft.com/download/support/mslfiles/the)
+Finder Scripting Extension in the following location on the Apple Web site. This
+information is subject to change, however. Apple recommends you not bookmark the
+page.
+
+Connect to http://www.apple.com. Choose Customer Support, then Apple Software
+Updates Archive from the next page. From the Apple Software Updates page choose
+US, then Macintosh, then System, and then Other System.
+
+NOTE: This error may also be caused by running a product called "Mac User's Hide
+Always." "Hide Always" can hide the finder. You can either disable "Hide Always"
+or prevent it from hiding the finder.
+
+Additional query words: kbdsd vfoxmac
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187234: HOWTO: Use the Dictionary Object with Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187234: HOWTO: Use the Dictionary Object with Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187234/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187234/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187234/","publisher":null,"image":null,"headline":"Q187234: HOWTO: Use the Dictionary Object with Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187234-howto-use-the-dictionary-object-with-visual-basic">Q187234: HOWTO: Use the Dictionary Object with Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187234
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbScript KbVBA kbVBp500 kbVBp600 kbVS600 kbGrpDSVB _IK
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the use of a component from the Microsoft Scripting
+Library; the Dictionary Object.
+
+MORE INFORMATION
+================
+
+The Dictionary is quite similar to the Collection object in both functionality
+and purpose. The Dictionary, however, offers some functionality that is not
+available with a Collection. Some of these features include:
+
+- The option to specify a comparison method for Keys. This allows for a
+  case-sensitive Key, for example.
+
+- A method for determining if an object exists in a Dictionary.
+
+- A method for extracting all of the Keys into an Array.
+
+- A method for extracting all of the Items into an Array.
+
+- A method for changing a Key value.
+
+- A method for removing all items from the Dictionary.
+
+- Dictionary Keys are not limited to String datatype.
+
+NOTE: One important difference between the Collection object and the Dictionary
+object is the behavior of the Item property. If you use the Item property to
+reference a nonexistent Key in a Collection, you will receive an error. If you
+use the Item property to reference a nonexistent Key in a Dictionary, that Key
+will be added to the Dictionary. Use the Exists method to determine whether or
+not a Key is present in a Dictionary.
+
+The Dictionary object is a component of the Microsoft Scripting library, which
+does not ship with Visual Basic version 5.0 or later. You can obtain the
+Microsoft Scripting library (SCRRUN.DLL) by installing one of the following
+packages:
+
+  Windows Script Host
+  Windows NT Option Pack
+  IIS 3.0
+  Scripting 3.1 upgrade.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project in Visual Basic. (Make sure that the
+  Immediate Window is displayed.) Form1 is created by default.
+
+2. Add a reference to Microsoft Scripting Runtime.
+
+3. Add a standard module to the project.
+
+4. From the Project menu, select Project1.Properties and change the Startup
+  object to Sub Main.
+
+5. Insert the following code into Module1:
+
+        Option Explicit
+        Dim dict As Dictionary
+
+        Sub Main()
+        Dim keyArray, itemArray, element
+
+        Set dict = New Dictionary
+        With dict
+           'set compare mode
+           .CompareMode = BinaryCompare
+           'add item using named arguments
+           .Add Key:="mike", Item:=22
+           'add item without named arguments
+           .Add "joe", 33
+
+           'case sensitivity and Exists method
+           'does MIKE exist?
+           Debug.Print "MIKE exists = " &amp; .Exists("MIKE")
+           'change key value
+           .Key("mike") = "MIKE"
+           'does MIKE exist?
+           Debug.Print "MIKE exists = " &amp; .Exists("MIKE")
+
+           'extract keys into variant array
+           Debug.Print "Array of Keys"
+           keyArray = .Keys
+           For Each element In keyArray
+              Debug.Print element
+           Next
+
+           'extract items into variant array
+           Debug.Print "Array of Items"
+           itemArray = .Items
+           For Each element In itemArray
+              Debug.Print element
+           Next
+
+           'empty the dictionary
+           .RemoveAll
+           Debug.Print dict.Count &amp; " Items in Dictionary"
+
+        End With
+        Set dict = Nothing
+        End Sub
+
+6. Run the project. You should see that the initial search for the key fails,
+  then succeeds after the key value is replaced with an uppercase value. Next,
+  you should see the contents of the variant arrays that were extracted from
+  the dictionary using the Keys and Items methods. Last, you see the result of
+  emptying the Dictionary.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbScript KbVBA kbVBp500 kbVBp600 kbVS600 kbGrpDSVB _IK 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

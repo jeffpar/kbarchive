@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187616/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187616/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187616/","publisher":null,"image":null,"headline":"Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187616-fix-the-dynamic-link-library-mfcce20ddll-could-not-be-found">Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187616
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbide kbMFC kbVC600bug kbOSWinCEsearch kbOSWinCE200bug kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++ for Windows CE, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run a WCE MFC EXE project, you may get an error box, titled:
+
+  &lt;Program&gt;.exe - Unable To Locate DLL
+
+This is the message inside the error box:
+
+  The dynamic link library mfcce20d.dll could not be found in the specified
+  path...
+
+If you're running a WCE MFC EXE with COM support, you may get an error box,
+titled:
+
+  Assertion Failed!
+
+This is the message inside the error box:
+
+  &lt;unknown application&gt; : File dllole.cpp, Line 65
+
+If you're building a WCE MFC ActiveX control or WCE MFC automation DLL, you may
+get the following error:
+
+  Failed : Registration of &lt;control&gt;.ocx. Error = 0000007E
+
+CAUSE
+=====
+
+All of the above problems occur because the run-time DLLs are not copied to the
+correct directories by the VCCE Toolkit Setup program.
+
+RESOLUTION
+==========
+
+Using Windows NT Explorer, copy the following files
+
+  MFCCE20.DLL
+  MFCCE20D.DLL
+  OLECE20.DLL
+  OLECE20D.DLL
+
+from
+
+  \Program Files\DevStudio\WCE\MFC\LIB\WCE200\X86EM
+
+to the following location:
+
+  \Program Files\Windows CE Platform SDK\wce\emul\hpc\windows
+
+You also need to copy the same files using Osviewer.exe (Object Store Viewer).
+The Osviewer.exe file is located in the \Program Files\Windows CE Platform
+SDK\wce\bin directory. When you run this program, it lists your C drive with the
+addition of Emulator Database and Emulator Files. Copy the Mfcce20.dll,
+Mfcce20d.dll, Olece20.dll, and Olece20d.dll files from
+
+  \Program Files\DevStudio\WCE\MFC\LIB\WCE200\X86EM
+
+to the following location:
+
+  \Emulator Files\Windows
+
+NOTE: The above directories are the default directories when you install the VCCE
+Toolkit, and may be different on your machine.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The above case is for emulation. When targeting the actual CE device, the same
+DLLs must be copied to the Windows directory on the CE device. Use the "Mobile
+Devices" tool to do this. The DLLs are located in the "C:\Program
+Files\DevStudio\WCE\MFC\LIB\WCE200\WCESH" or C:\Program
+Files\DevStudio\WCE\MFC\LIB\WCE200\WCEMIPS" directory, depending on the type of
+chip on the CE device (SH3 or MIPS).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbide kbMFC kbVC600bug kbOSWinCEsearch kbOSWinCE200bug kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC200WinCE
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

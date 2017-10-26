@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122917/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122917/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122917/","publisher":null,"image":null,"headline":"Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122917-golf-20-err-msg-win32s---error-improper-installation">Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122917
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 12-JUN-2001
+
+2.00
+WINDOWS
+kberrmsg kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running under Windows 3.1, if a temporary or permanent swap file does not
+exist on your computer, the following error message occurs after you
+double-click the Golf icon:
+
+  Win32s - Error
+  Improper Installation.
+  Win32s requires Windows to run with virtual memory enabled.
+  Re-Install Win32s
+
+When running under Windows 95, if you disable virtual memory, or if you specify
+your own virtual memory setting and the setting is not large enough, the
+following error message will occur after you start playing a game:
+
+  This program performed an illegal operation
+
+If you click on details receive the message:
+
+  GLFMOD20 caused an invalid page fault in module GLFANI32.DLL
+
+If you choose the close button, you are returned to the desktop.
+
+RESOLUTION
+==========
+
+Under Windows 3.1, the conflict can be corrected by creating a temporary or
+permanent swap file. A temporary or permanent swap file must exist in order for
+Golf 2.0 to run. To correct this problem, close all applications, and then
+perform the following steps to create the swap file:
+
+1. Double-click the 386 Enhanced icon from the Control Panel.
+
+2. Click Virtual Memory.
+
+3. Click Change.
+
+4. Select the setting for a permanent or temporary swap file.
+
+5. Click OK, restart Windows.
+
+Under Windows 95, the conflict can be corrected by lettings Windows manage your
+virtual memory. To correct this problem, close all applications, and then
+perform the following steps to create the swap file:
+
+1. Click Start, point to Settings, then click Control Panel.
+
+2. Double-click the System icon.
+
+3. Click the Performance tab, then click Virtual Memory.
+
+4. In the Virtual Memory box, select the option that allows Windows to manage
+  the virtual memory.
+
+5. Click OK. Windows will restart.
+
+In both situations, Golf 2.0 should now run properly.
+
+Additional query words: 2.00 win32s win32 virtual memory err msg faq
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

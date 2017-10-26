@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74463: Extended Error Code Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74463: Extended Error Code Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74463/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74463/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74463/","publisher":null,"image":null,"headline":"Q74463: Extended Error Code Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74463-extended-error-code-information">Q74463: Extended Error Code Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74463
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following MS-DOS function provides detailed extended error information
+concerning a failed Interrupt 21H function call:
+
+  Interrupt 21H Function 59H - Get Extended Error Information
+
+This routine returns codes named as the DOS extended error code, error class,
+recommended action, and error locus.
+
+- The extended error code identifies exactly what occurred.
+
+- The error class provides more information identifying the error based on the
+  internal workings of the operating system.
+
+- The recommended action codes are suggestions meant to help but are not
+  solutions.
+
+- The error locus codes attempt to provide information about the origin of the
+  error or what device caused the error.
+
+MORE INFORMATION
+================
+
+The MS-DOS function returns the four codes in the following registers:
+
+  AX  Extended error code
+  BH  Error class
+  BL  Recommended action
+  CH  Error locus
+
+Extended Error Codes
+--------------------
+
+  Hex    Decimal  Meaning
+  ---    -------  -------
+  01     01       Function number invalid
+  02     02       File not found
+  03     03       Path not found
+  04     04       Too many open files
+  05     05       Access denied
+  06     06       Handle invalid
+  07     07       Memory control blocks destroyed
+  08     08       Insufficient memory
+  09     09       Memory block address invalid
+  0A     10       Environment invalid
+  0B     11       Format invalid
+  0C     12       Access code invalid
+  0D     13       Data invalid
+  0E     14       Unknown unit
+  0F     15       Disk drive invalid
+  10     16       Attempted to remove current directory
+  11     17       Not same device
+  12     18       No more files
+  13     19       Write-protected disk
+  14     20       Unknown unit
+  15     21       Drive not ready
+  16     22       Unknown command
+  17     23       Data error (CRC)
+  18     24       Bad request-structure length
+  19     25       Seek error
+  1A     26       Unknown media type
+  1B     27       Sector not found
+  1C     28       Printer out of paper
+  1D     29       Write fault
+  1E     30       Read fault
+  1F     31       General failure
+  20     32       Sharing violation
+  21     33       File-lock violation
+  22     34       Disk change invalid
+  23     35       FCB unavailable
+  24     36       Sharing buffer exceeded
+  25-31  37-49    Reserved
+  32     50       Unsupported network request
+  33     51       Remote machine not listening
+  34     52       Duplicate name on network
+  35     53       Network name not found
+  36     54       Network busy
+  37     55       Device no longer exists on network
+  38     56       NetBIOS command limit exceeded
+  39     57       Error in network adapter hardware
+  3A     58       Incorrect response from network
+  3B     59       Unexpected network error
+  3C     60       Remote adapter incompatible
+  3D     61       Printer queue full
+  3E     62       Not enough room for print file
+  3F     63       Print file was deleted
+  40     64       Network name deleted
+  41     65       Network access denied
+  42     66       Incorrect network device type
+  43     67       Network name not found
+  44     68       Network name limit exceeded
+  45     69       NetBIOS session limit exceeded
+  46     70       Temporary pause
+  47     71       Network request not accepted
+  48     72       Print or disk redirection paused
+  49-4F  73-79    Reserved
+  50     80       File already exists
+  51     81       Reserved
+  52     82       Cannot make directory
+  53     83       Fail on Int 24H (critical error handler)
+  54     84       Too many redirections
+  55     85       Duplicate redirection
+  56     86       Invalid password
+  57     87       Invalid parameter
+  58     88       Net write fault
+
+Error Class Codes
+-----------------
+
+  Class   Meaning
+  -----   -------
+   1      Out of resource
+   2      Temporary situation
+   3      Authorization
+   4      Internal
+   5      Hardware failure
+   6      System failure
+   7      Application program error
+   8      Not found
+   9      Bad format
+  10      Locked
+  11      Media
+  12      Already exist
+  13      Unknown
+
+Recommended Action Codes
+------------------------
+
+  1  Retry. If not cleared in reasonable number of attempts, prompt
+     user to Abort or Ignore.
+  2  Delay then retry. If not cleared in reasonable number of
+     attempts, prompt user to Abort or Ignore.
+  3  Get corrected information from user (bad filename or disk
+     drive).
+  4  Abort application with cleanup.
+  5  Abort application without cleanup (cleanup may increase
+     problems).
+  6  Ignore error.
+  7  Prompt user to correct error and then retry.
+
+Error Locus Codes
+-----------------
+
+  1  Unknown
+  2  Block device (disk or disk emulator)
+  3  Network
+  4  Serial device
+  5  Memory related
+
+An application program may use the MS-DOS Interrupt 21H Function 59H call when a
+function call fails during the execution of the application. The program may
+take a number of possible different actions as a result, which could include
+retrying the function, aborting, or just displaying the DOS extended error code.
+For example, an application might display the following after a failed interrupt
+call:
+
+  DOS extended error 27 /11 /4 /2
+
+This represents:
+
+  Extended error 27       Sector not found
+  Error class 11          Media
+  Recommended action 4    Abort application with cleanup
+  Error locus 2           Block device (disk or disk emulator)
+
+Additional query words: 6.22 3.20 3.21 3.30 3.30a 4.00 4.01 5.00 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

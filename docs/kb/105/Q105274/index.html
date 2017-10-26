@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105274: Solving the &quot;Insufficient Memory to Run&quot; Situation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105274: Solving the &quot;Insufficient Memory to Run&quot; Situation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105274/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105274/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105274/","publisher":null,"image":null,"headline":"Q105274: Solving the &quot;Insufficient Memory to Run&quot; Situation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105274-solving-the-insufficient-memory-to-run-situation">Q105274: Solving the "Insufficient Memory to Run" Situation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105274
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Each task under Windows requires a data structure allocated below 1 megabyte
+(MB) called the Task Data Base (TDB). Under the debug version of Windows,
+failure of a TDB's allocation shows up as:
+
+  t Kernel: GlobalAlloc(200) failed for ????
+
+This error occurs within the context of LoadModule as it attempts to start a new
+task under a low conventional memory condition.
+
+The most common cause of low conventional memory is fixed allocations made on
+behalf of a dynamic-link library (DLL). Fixed allocations should be used only
+for code and data touched at interrupt time. All other allocations should be
+made with the moveable attribute.
+
+MORE INFORMATION
+================
+
+The Windows heap consists of all conventional and XMS memory available after
+WIN.COM and WIN386.EXE/DOSX.EXE are loaded by MS-DOS. These two physically
+separate blocks are combined into a single linear address space to make up the
+global heap.
+
+Windows allocates fixed objects with a bottom up/first fit algorithm. As more
+fixed objects are allocated from the heap, conventional memory gets pinched.
+Eventually, even a small allocation for the TDB fails resulting in LoadModule
+returning 0 (zero).
+
+The HEAPWALK.EXE utility provides a view onto the global heap to determine what
+is using up conventional memory. The Sort Address menu item sorts the main heap
+with lower addresses at the top of the list. Any object with an address of 9FFFF
+or below is in conventional memory. An object with an "F" set in the FLG column
+is fixed. Any fixed object owned by an application or its dependent dynamic-link
+libraries that is not a TDB (TYPE Task in HEAPWALK) should be considered
+suspect.
+
+The module definition (.DEF) file should mark CODE MOVEABLE DISCARDABLE and DATA
+MOVEABLE. Any allocations should contain the GMEM_MOVEABLE attribute. The
+EXEHDR.EXE utility can be used to indentify modules that use the fixed attribute
+for their code or data segments. Segments without the &lt;moveable&gt; attribute
+in the "flags" column of EXEHDR's output are fixed.
+
+Additional query words: no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

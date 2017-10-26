@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138563/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138563/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138563/","publisher":null,"image":null,"headline":"Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138563-fix-form-not-cleared-from-memory-when-grid-has-the-focus">Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138563
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The RELEASE command will not release a form from memory if a grid has the focus
+when the form is released. The form is cleared off the screen, but
+_screen.formcount is not decremented, and _screen.activeform.name still shows
+the name of the form in the Debug window. If another object on the form, such as
+a text box, has the focus when the form is released, _screen.formcount is
+decremented, and _screen.activeform.name is cleared.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create s program named Main.prg that contains this code:
+
+     SET PROCEDURE TO Main.prg
+     ON KEY LABEL F12 CLEAR EVENTS
+     ON KEY LABEL F11 SET SYSMENU TO DEFAULT
+
+     DO MyMenu.MPR
+     READ EVENTS
+
+     SET SYSMENU TO DEFAULT
+
+     PROCEDURE ClearForms                  &amp;&amp; Clear all open forms
+         IF _SCREEN.FormCount &gt; 0
+              FOR i = _SCREEN.FormCount TO 1 STEP -1
+                   _SCREEN.Forms(i).Release
+              ENDFOR
+         ENDIF
+
+2. Create a menu named MyMenu.
+
+  a. Add a Form1 prompt that uses this command:
+
+        DO FORM Form1.SCX
+
+  b. Add a Clear Forms prompt that uses this command:
+
+        DO ClearForms
+
+  c. Add an Exit program prompt that uses this command:
+
+        CLEAR EVENTS
+
+  d. Generate and save the menu in the directory where Main.prg is located.
+
+3. Create a form named Form1.
+
+  a. Add the Customer and Orders tables located in the Vfp\Samples\Data
+     directory to the data environment.
+
+  b. Drag a field from the Customer table onto the form to create a text box.
+
+  c. Drag the Orders table onto the form to create a grid.
+
+  d. Save the form in the directory where Main.prg is located.
+
+4. Open the Debug window and place _screen.formcount in the left pane.
+
+5. Run Main.prg.
+
+6. Click the Form1 menu, and then click the grid to give it the focus.
+  _screen.formcount will equal 1. Multiple instances of Form1 can be run with
+  the same result.
+
+7. Release Form1 by clicking the Clear Forms menu. Form1 will clear off the
+  screen, but _screen.formcount will still equal 1.
+
+8. Exit the program, or click the Clear Forms menu again to return
+  _screen.formcount to 0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

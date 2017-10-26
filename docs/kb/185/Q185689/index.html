@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185689: Snaserver.exe May Trap in Function S1PXSND() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185689: Snaserver.exe May Trap in Function S1PXSND()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185689/","publisher":null,"image":null,"headline":"Q185689: Snaserver.exe May Trap in Function S1PXSND()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185689-snaserverexe-may-trap-in-function-s1pxsnd">Q185689: Snaserver.exe May Trap in Function S1PXSND()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185689
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 24-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an invokable APPC TP is not configured as a Windows NT service using
+Tpsetup.exe, then loading the invoking TP (such as Sendtp.exe or Randomtp.exe)
+may cause an application exception in Snaservr.exe in function s1pxsnd(). When
+this problem occurs, a Dr. Watson log similar to the following may be
+generated:
+
+ Application exception occurred:
+   App: snaservr.exe (pid=&lt;process id&gt;)
+   When: &lt;date&gt; @ &lt;time&gt;
+   Exception number: c0000005 (access violation)
+
+&lt;data omitted&gt;
+
+function: s1pxsnd
+       0106440d 7ccf             jl      s1pxsnd+0x1ee (010643de)
+       0106440f 8b44242c         mov     eax,[esp+0x2c]
+ss:021de7a3=????????
+       01064413 8d4c2464         lea     ecx,[esp+0x64]
+ss:021de7a3=????????
+       01064417 0fbfd7           movsx   edx,di
+       0106441a be08000000       mov     esi,0x8
+       0106441f c6829046090100   mov     byte ptr [edx+0x1094690],0x0
+ds:01094690=52
+       01064426 668b400c         mov     ax,[eax+0xc]
+ds:0183ea5f=????
+       0106442a 0fbfd0           movsx   edx,ax
+       0106442d 8b04959cc30e01
+ds:00000000=????????
+                                 mov     eax,[s1rcb+0xe25c
+(010ec39c)+edx*4]
+       01064434 83c058           add     eax,0x58
+fault -&gt;01064437 8a10             mov     dl,[eax]
+ds:00000058=??
+       01064439 40               inc     eax
+       0106443a 8811             mov     [ecx],dl
+ds:0099fe00=50
+       0106443c 41               inc     ecx
+       0106443d 4e               dec     esi
+       0106443e 75f7             jnz     s1pxsnd+0x247 (01064437)
+       01064440 8b442420         mov     eax,[esp+0x20]
+ss:021de7a3=????????
+       01064444 33d2             xor     edx,edx
+       01064446 25ff000000       and     eax,0xff
+       0106444b 33c9             xor     ecx,ecx
+       0106444d c1e002           shl     eax,0x2
+       01064450 c644246c00       mov     byte ptr [esp+0x6c],0x0
+ss:021de7a3=??
+
+*----&gt; [ASCII 189][ASCII 192][ASCII 175][ASCII 184] [ASCII 202][ASCII
+222][ASCII 175][ASCII 184] [ASCII 196][ASCII 218][ASCII 176][ASCII 189] &lt;--
+--*
+
+FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4 Function Name
+0000000c 00000000 00000000 00000000 00000000 00000000 snaservr!s1pxsnd
+(FPO: [EB
+
+WORKAROUND
+==========
+
+To work around this problem, load Tpstart.exe before loading the invoking TP.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for SNA Server
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: SNAAPPC SNACPIC SNATP SNAWINNT SNAPROG SNA3RDPARTY
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

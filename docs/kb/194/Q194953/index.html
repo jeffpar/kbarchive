@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194953: INFO: Facts About WinInet API Support on Windows CE OS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194953: INFO: Facts About WinInet API Support on Windows CE OS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194953/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194953/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194953/","publisher":null,"image":null,"headline":"Q194953: INFO: Facts About WinInet API Support on Windows CE OS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194953-info-facts-about-wininet-api-support-on-windows-ce-os">Q194953: INFO: Facts About WinInet API Support on Windows CE OS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194953
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbVC500 kbOSWinCE100 kbOSWinCE200 kbOSWinCE210
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows CE, version 1.0 does not support Windows Internet APIs (WinInet) APIs.
+Windows CE, versions 2.0 and 2.1 support WinInet APIs with the following
+exceptions:
+
+- Unlike Win32, authentication is not built into Wininet.dll on Windows CE,
+  hence InternetErrorDlg is not supported. Using InternetSetOption for setting
+  user name and password is not supported either.
+
+- Unlike Win32, cookie support is not built into Wininet.dll on Windows CE, and
+  therefore such cookie APIs as InternetGetCookie and InternetSetCookie are not
+  supported. If a persistent cookie is saved on the Windows CE device while
+  using the Pocket IE program, sending a request to the same URL with WinInet
+  APIs does not contain the cookie.
+
+- InternetWriteFile API is not supported.
+
+- Please note that even when the Unicode version of the WinInet APIs is used,
+  text returned by the server (from InternetOpenUrl and InternetReadFile) is
+  not converted and is usually ASCII.
+
+- Wininet.dll (and the corresponding wininet.lib) shipped with retail version
+  HPC 2.0 (2.1) does not include FTP APIs. This limitation is by design (to
+  save ROM). Therefor it is not possible to use WinInet FTP APIs on the HPC 2.0
+  (2.1).
+
+  To clarify: if an HPC version 2.0 (2.1) device contains a retail version of
+  the operating system (for example, is purchased in the store), FTP APIs are
+  not present. To develop FTP applications on the retail version of Windows CE
+  (that does not export FTP APIs from wininet.dll), developers can use Windows
+  Sockets.
+
+  NOTE: FTP APIs are included in the emulation library(wininetm.lib) and do work
+  in the emulation environment.
+
+- Known Problem in Windows CE 2.0 (fixed in Windows CE 2.1) applicable to the
+  emulation libraries:
+
+  InternetConnect does not correctly submit credentials to the FTP server (bogus
+  characters are added to the end of the user name or password). Hence it is
+  impossible to establish a connection with the FTP server. This problem is
+  addressed in Windows CE 2.1
+
+REFERENCES
+==========
+
+SDK for HPC on-line documentation
+
+Win32 Internet Client SDK (Internet Explorer Authoring Kit)
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Leon Braginski, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC500 kbOSWinCE100 kbOSWinCE200 kbOSWinCE210 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK500VC
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

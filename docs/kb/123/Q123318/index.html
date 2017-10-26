@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123318: SMS: Checklist for Enabling SMS in Logon Scripts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123318: SMS: Checklist for Enabling SMS in Logon Scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123318/","publisher":null,"image":null,"headline":"Q123318: SMS: Checklist for Enabling SMS in Logon Scripts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123318-sms-checklist-for-enabling-sms-in-logon-scripts">Q123318: SMS: Checklist for Enabling SMS in Logon Scripts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123318
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbSCMan kbsmsAdmin smsadmin smssiteconfigmankbfaq
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+This article provides a checklist of what must be accomplished before
+Systems Management Server will install itself in the logon scripts
+for a Microsoft network domain (Windows NT or LAN Manager):
+
+1. Configure and enable the Directory Replicator service for the domain being
+  managed by Systems Management Server. Systems Management Server looks for a
+  REPL$ share on the domain controller (DC). If it doesn't exist, the Site
+  Configuration Manager will not be able to copy the proper Systems Management
+  Server logon support files to the Export\Scripts directory.
+
+2. Using Systems Management Server Administrator, configure the Systems
+  Management Server Site properties as follows:
+
+  a. In the Clients dialog box, select Automatically Configure Workstation
+     Logon Scripts.
+
+  b. In the Domains dialog box, select Use All Detected Servers for each domain
+     that you want logon scripts enabled.
+
+  NOTE: At this point, Systems Management Server has been properly configured.
+  It will then configure the user logon scripts for each domain to include the
+  Smsls.bat entry, and copy the proper Systems Management Server support files
+  to the REPL$ share during the next Site Configuration Manager watchdog cycle.
+  This occurs by default every 24 hours, but can be forced immediately by using
+  one of the two methods listed in step 3 below.
+
+3. To force the watchdog cycle to occur immediately, use one of the following
+  methods:
+
+   - Toggle the Systems Management Server site property for logon scripts,
+     changing it from its current state to the other state. This will toggle
+     the site control file line "PROPERTY &lt;Logon
+     Scripts&gt;&lt;&gt;&lt;&gt;&lt;1&gt;" to 1 or 0. Site Configuration
+     Manager will read this line and immediately configure the logon scripts
+     appropriately. For example, if the Automatically Configure Workstation
+     Logon Scripts site property in the Clients dialog box is clear, selecting
+     it changes the flag from 0 to 1. This would then force Site Configuration
+     Manager to configure logon scripts when it next reads the Sitectrl.ct1
+     file.
+
+   - Use the SENDCODE utility. It is located on the Systems Management Server
+     CD, in the PSSTOOLS directory. At the Systems Management Server site
+     server, go to a command prompt and type the following command:
+
+  sendcode sms_site_config_manager 196
+
+     If the Hierarchy Manager has not yet taken the proposed changes made for
+     logon script configuration and passed this information to the Site
+     Configuration Manager, the only way to expedite the process is to stop and
+     restart the Hierarchy Manager service. If you use SENDCODE to force Site
+     Configuration Manager to wake up under the old configuration (because
+     Hierarchy Manager has not done its work yet) the configuration does not
+     include the recent changes, and is a useless operation.
+
+     This forces Site Configuration Manager to perform its watchdog cycle
+     immediately and configure the Systems Management Server logon scripts for
+     all users in the domains that were enabled in step 2 above.
+
+NOTE: When you configure logon scripts in a domain that contains more than
+one site server, do not use the Detect All Servers option. Be sure to
+specify each server that is to be managed in the site properties for the
+site that exclusively manages the server; otherwise two sites may compete
+for the same server.
+
+
+Additional query words: config sms prodsms siteconfigman
+
+======================================================================
+Keywords          : kbnetwork kbSCMan kbsmsAdmin smsadmin smssiteconfigman kbfaq
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

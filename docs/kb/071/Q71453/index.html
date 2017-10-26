@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71453: Using a Wacom HD-648A Tablet with Pen Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71453: Using a Wacom HD-648A Tablet with Pen Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71453/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71453/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71453/","publisher":null,"image":null,"headline":"Q71453: Using a Wacom HD-648A Tablet with Pen Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71453-using-a-wacom-hd-648a-tablet-with-pen-windows">Q71453: Using a Wacom HD-648A Tablet with Pen Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71453
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use a Wacom HD-648A tablet with Windows for Pen Computing, you must modify
+options on the hardware menu. The information below lists the settings necessary
+for the tablet to be compatible with Pen Windows.
+
+MORE INFORMATION
+================
+
+Perform the following six steps to set up the tablet:
+
+1. Activate the Wacom settings menu by gently resting the tip of the pen against
+  the screen and pressing the RESET button under the top of the tablet.
+
+  The Wacom menu will appear with three choices:
+
+  PEN ADJ -- Adjust the arrow cursor with the tip of the pen
+  FUNC SET -- Main settings menu
+  JAP/ENG -- Japanese or English menus
+
+2. Choose FUNC SET. Another menu appears:
+
+  TABLET | VIDEO | BACK LIGHT | MACRO | MAINTENANCE
+
+3. Choose the TABLET menu and modify each of the parameters as follows:
+
+  COMM = "WACOMHD" (without the quotation marks)
+  FORMAT = "BIN" (without the quotation marks)
+  MODE = "STREAM" (without the quotation marks)
+  COORD = "ABS" (without the quotation marks)
+  ALWAYS = "DSB" (without the quotation marks)
+  BAUDRATE = "19200" (without the quotation marks)
+  PARITY = "NONE" (without the quotation marks)
+  STOP BIT = "1" (without the quotation marks)
+  DATA BIT = "8" (without the quotation marks)
+  TRMNTR = "CRLF" (without the quotation marks)
+  REPORT RATE = "100" (without the quotation marks)
+  MM/INCH = "INCH" (without the quotation marks)
+  BUZZER = "OFF" (without the quotation marks)
+  ORIGIN = "UPPER LEFT" (without the quotation marks)
+  DSR = "DSB" (without the quotation marks)
+
+4. Choose the VIDEO menu and modify each of the parameters as follows:
+
+  RGB SIGNAL = "G (disregard R and B)" (without the quotation marks)
+  DISPLAY MODE = "POS" (without the quotation marks)
+  MODEL = "PS/2" (without the quotation marks)
+
+5. Choose the BACK LIGHT menu and modify each of the parameters as follows:
+
+  AUTO LIGHT OFF TIME = "5min" (without the quotation marks)
+  BRIGHT ON LIGHT OFF = "10%" (without the quotation marks)
+
+6. Choose the MAINTENANCE menu and modify each of the parameters as follows:
+
+  HORIZON = "45" (without the quotation marks)
+  VERTICAL = "33" (without the quotation marks)
+  PLL.CNT = "94" (without the quotation marks)
+  DOTDLCOK = "DOWN" (without the quotation marks)
+  ANALOG RGB LEVEL
+  R = "18" (without the quotation marks)
+  G = "18" (without the quotation marks)
+  B = "18" (without the quotation marks)
+
+After making these changes, if the video output is not satisfactory, modify the
+parameters on the VIDEO and MAINTENANCE menus to fine tune the output for your
+machine.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

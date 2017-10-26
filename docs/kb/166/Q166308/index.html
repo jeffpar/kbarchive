@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166308: XCON: Exchange MTA Logs NT Event ID 51 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166308: XCON: Exchange MTA Logs NT Event ID 51" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166308/","publisher":null,"image":null,"headline":"Q166308: XCON: Exchange MTA Logs NT Event ID 51","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166308-xcon-exchange-mta-logs-nt-event-id-51">Q166308: XCON: Exchange MTA Logs NT Event ID 51</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166308
+Product(s): Microsoft Exchange
+Version(s): WinNT; Exchange 4.0, 5.0. 5.5
+Operating System(s): 
+Keyword(s): kbtshoot kbusage
+Last Modified: 29-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT event ID 51 appears in the event log on a computer running
+Microsoft Exchange Server with configured X.400 connectors.
+
+  3/7/97 8:23:42 PM
+  MSExchangeMTA
+  Warning Security  51
+  N/A
+  &lt;Exchange_server_name&gt; An unknown MTA has attempted to bind. The MTA
+  name in bind is &lt;other_mta_host&gt;. The MTA presentation address is
+  /n:0x636166656F6C65, Association index: 2354. [MTA XFER-IN 23 42] (14)
+
+CAUSE
+=====
+
+A remote message transfer agent (MTA) has attempted to establish a messaging
+session with the computer running Exchange Server and there has been a mismatch
+in the specified security information. The security information for the computer
+running Exchange Server is specified on the remote MTA name or Password fields,
+the T, S and P selector in the Outgoing and Incoming OSI address information,
+and the local MTA name or password fields on the Override tab of the Exchange
+connector. Improper entry of any one or a combination of these results in a
+security violation.
+
+The Remote and the Local password fields are case-sensitive and must be an exact
+match with the information submitted by the adjacent MTA when it attempts to
+connect (bind). The T, S and P Selector may be entered in either hexadecimal or
+text; verify that only the required fields are specified and that the required
+fields are specified in the correct format. If multiple X.400 connectors use a
+given transport stack to connect to foreign X.400 MTAs, verify that each of the
+connectors has a unique value specified for the T Selector (TSAP). The T
+Selector specifies the entry point to the transport layer of the protocol and as
+such should be unique.
+
+MORE INFORMATION
+================
+
+Remote MTA name and password fields on the General tab and the Open Sytems
+Interconnect (OSI) information for Outgoing and Incoming OSI address information
+are on the Stack tab of the X.400 connector configuration dialog box. P Selector
+(PSAP) is not supported in 1984 mode. S Selector (SSAP) is not supported in 1988
+X.410 mode. T Selector (TSAP) is the most uniformly used throughout X.400 MTAs.
+
+Additional query words: X400
+======================================================================
+Keywords          : kbtshoot kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT; Exchange 4.0, 5.0. 5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

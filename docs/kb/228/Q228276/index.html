@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228276: SMS: Foreground App Performance Degrades During SW Inventory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228276: SMS: Foreground App Performance Degrades During SW Inventory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228276/","publisher":null,"image":null,"headline":"Q228276: SMS: Foreground App Performance Degrades During SW Inventory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228276-sms-foreground-app-performance-degrades-during-sw-inventory">Q228276: SMS: Foreground App Performance Degrades During SW Inventory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228276
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbInventory
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If an on-demand virus scanner is running when Systems Management Server software
+inventory (SINV) executes, performance of the foreground applications may
+degrade significantly for the duration of the inventory scan. To reduce the
+severity of the problem consider the following suggestions:
+
+- Carefully choose which files will be scanned on-the-fly by the on-demand
+  virus scanner. Some types of files are less susceptible to virus infection
+  than others, and it may be possible to scan those on a scheduled basis rather
+  than on demand.
+
+- Carefully choose which types of files SINV will scan for inventory. The more
+  overlap between the files scanned for inventory and the files scanned for
+  viruses, the more work the virus scanner will have to do.
+
+- Review the scanning options for the virus scanner. It may allow for scanning
+  on "run" separately from scanning on "open", and so on. It may also have
+  options for fast scans versus full scans, or options for yield times.
+
+When considering changes to your virus scanning implementation, always follow the
+guidelines of your corporate virus/security policy and consult the vendor of
+your virus scanning software for advice.
+
+CAUSE
+=====
+
+This occurs because as SINV opens each file to read its header information, the
+virus scanner scans it. Scanning a file for a virus signature is a
+processor-intensive operation. Because SINV may open several hundred files in a
+short period of time, the virus scanner may become CPU bound as it attempts to
+scan them all.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To specify the sleep interval, create a DWORD value called "Reserved" in the
+following registry key on each client computer:
+
+  HKLM\SOFTWARE\Microsoft\SMS\Client\Client Components\Software Inventory Agent\ 
+
+Set this value to the desired time in milliseconds (ms). The default is 1 ms and
+the maximum is 500 ms. You may need to adjust this value for your specific
+environment. Start with a small value and work up until you get acceptable
+foreground application performance.
+
+Additional query words: prodsms mcafee vshield checker anti antivirus smsinv sw inv smsfaqtop
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbInventory 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

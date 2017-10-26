@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137522/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137522/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137522/","publisher":null,"image":null,"headline":"Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137522-fpnw-keeps-directory-handles-open-preventing-deletion">Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137522
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to delete one or more directories on an FPNW server is unsuccessful.
+The delete command completes without error, but the directory being deleted
+remains until such time as another client, which happens to have an open search
+handle to the directory, either logs off or deletes its drive mapping to the
+shared resource.
+
+CAUSE
+=====
+
+When a NetWare client searches a directory, either to locate a specific file or
+to list files in the directory, a search handle must be created on the server.
+Since NetWare clients do not notify the server when they are done with the
+handle, the server keeps the handle open (in order to satisfy any later
+directory lookup operations that the client may want to submit).
+
+This can cause a problem when a NetWare client gets a DIR listing of a directory
+on an FPNW server, and another client -- or someone at the server console --
+then attempts to delete the same directory.
+
+If the FPNW server keeps the search open too long, clients can't delete the
+directory. If the FPNW server closes the search too soon, clients are unable to
+read the entire contents of the directory. There are some situations, such as
+when the client that issued the DIR logs off, in which the FPNW server knows it
+may delete the search handle safely. Note too, that if a particular client is
+the only one with an open search handle, it may also delete the directory since,
+once again, FPNW knows that it is safe to do so in this situation.
+
+WORKAROUND
+==========
+
+Directories that cannot be deleted for the reason discussed above will be
+deleted successfully once the client(s) with open search handles have logged off
+and/or deleted their mapping to the shared resource. A partial fix for this
+problem is also available in the form of an updated copy of Fpnwsrv.sys. This
+update allows FPNW to close directory search handles in some situations where it
+could not before. Specifically, if a NetWare client comes in and does a
+FileSearchInit and then sends FileSearchContinue for both directory and
+nondirectory files and enumerates them all, then the search will be closed out.
+
+So if the client does:
+
+  DIR \FOLDER1\FOLDER2
+
+then FPNW won't keep the search handle open and the directory can be deleted. But
+if the client does:
+
+  DIR \FOLDER1\FOLDER2\TEST.TXT
+
+then FPNW probably will keep the search handle open, depending on what the client
+does.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in File and Print Services for
+NetWare version 3.51. This problem was corrected in the latest Windows NT 3.51
+U.S. Service Pack. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodnt 3.51 novell
+
+======================================================================
+Keywords          :  
+Technology        : kbServicesNetwareSearch kbFPNW351
+Version           : winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

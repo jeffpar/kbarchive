@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50735: Linking QuickBASIC 4.50 with QuickC 2.00, 2.01 Font Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50735: Linking QuickBASIC 4.50 with QuickC 2.00, 2.01 Font Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50735/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50735/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50735/","publisher":null,"image":null,"headline":"Q50735: Linking QuickBASIC 4.50 with QuickC 2.00, 2.01 Font Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50735-linking-quickbasic-450-with-quickc-200-201-font-library">Q50735: Linking QuickBASIC 4.50 with QuickC 2.00, 2.01 Font Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50735
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom S_C S_QuickC | mspl13_basic
+Last Modified: 27-DEC-1989
+
+QuickBASIC Version 4.50 and Microsoft BASIC PDS Version 7.00 can call
+routines contained in the QuickC Version 2.00 or 2.01 font library.
+One restriction is that the QuickBASIC program must be compiled with
+the BRUNxx.EXE option, or it will not link with the C program. BASIC
+PDS 7.00 is also restricted and must be linked with the BRT70xxx.EXE
+option. Note also that the QuickBASIC program must make a call to
+SETMEM to release far memory that the C routine will need to use for
+its workspace.
+
+This information about interlanguage calling applies to QuickBASIC
+Versions 4.00, 4.00b, and 4.50 for MS-DOS, to Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
+PDS Version 7.00 for MS-DOS and MS OS/2.
+
+The following is a sample program that demonstrates calling a C
+routine to display text in the Times Roman Bold font. This sample is
+based on the sample program given on Page 268 of the "Microsoft C for
+Yourself Version 2.0" manual that comes with QuickC Versions 2.00 and
+2.01.
+
+Code Example
+------------
+
+The following BASIC program is CFONT.BAS, which calls a C routine to
+display text on the screen in the Times Roman Bold font:
+
+DECLARE SUB WriteTMSRB CDECL ()
+' Release the available far memory for the C routine:
+' Note: This releases the entire far heap. This probably should
+' not be done with programs that use $DYNAMIC arrays.
+X = SETMEM(-FRE(-1))
+CALL WriteTMSRB
+END
+
+The following C routine is TMSRB.C, which calls the Font library
+routines to display text on the screen in the Times Roman Bold font:
+
+#include &lt;stdio.h&gt;
+#include &lt;graph.h&gt;
+
+void WriteTMSRB()
+{
+  int mode = _VRES16COLOR;
+
+  /* Read header info from .FON file */
+  if (_registerfonts("TMSRB.FON") &lt; 0)
+  {
+    _outtext("ERROR: can't register fonts");
+    exit (0);
+  }
+
+  /* Set highest available video mode */
+  while(!_setvideomode(mode))
+    mode--;
+  if (mode == _TEXTMONO)
+    exit(0);
+
+  /* Set font and display text */
+  if (!_setfont ("t'helv'h30w24b"))
+  {
+    _moveto(10,10);
+    _outgtext("THIS IS IN TIMES ROMAN BOLD");
+    getch();
+  }
+  else
+  {
+    _setvideomode(_DEFAULTMODE);
+    _outtext("ERROR: can't set font");
+    exit(0);
+  }
+
+  _setvideomode(_DEFAULTMODE);
+  _unregisterfonts();
+}
+
+For QuickBASIC, the steps to compile and link are as follows:
+
+   BC CFONT.BAS;
+   QCL /c /AM TMSRB.C
+   LINK /noe /nod CFONT+TMSRB,,,BRUN45.LIB+MLIBCE.LIB+GRAPHICS.LIB;
+
+For BASIC PDS 7.00, the steps to compile and link are as follows:
+
+   BC CFONT.BAS;
+   QCL /c /AM TMSRB.C
+   LINK /noe /nod CFONT+TMSRB,,,BRT70ENR.LIB+MLIBCE.LIB+GRAPHICS.LIB;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

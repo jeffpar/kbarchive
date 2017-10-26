@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124558/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124558/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124558/","publisher":null,"image":null,"headline":"Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124558-drivespace-err-msg-minicab-file-is-missing-or-damaged">Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124558
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): diskmem win95 kbDiskMemory
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error messages when you run DriveSpace to perform an
+operation that requires full restartability:
+
+- Files required to manage your compressed drive(s) are missing on drive
+  &lt;x&gt;. To restore these files, copy the MINI.CAB file from your Windows
+  95 Setup Disk 1 or CD-ROM into your Windows directory. The next time you run
+  DriveSpace, the missing files will be restored.
+
+  ID Number: DRVSPACE575
+
+  -and-
+
+- Windows might not be able to restart this operation if it is interrupted.
+  Check to make sure drive x is not full; you may need as much as 1.5 MB of
+  free space to continue.
+
+  ID Number: DRVSPACE311
+
+CAUSE
+=====
+
+These errors occur when the files in the hidden FAILSAFE.DRV\FAILSAFE directory
+on drive C (or the host for drive C) are missing and DriveSpace cannot find the
+MINI.CAB file in your Windows 95 SYSTEM subdirectory.
+
+These errors can also occur if there is a file named Failsafe.drv in the root
+folder of drive C (or the host for drive C).
+
+RESOLUTION
+==========
+
+Copy the MINI.CAB file from your original Windows 95 distribution media to your
+Windows 95 SYSTEM subdirectory.
+
+NOTE: MINI.CAB is located on the standard 1.44-megabyte (MB) disk 1 of the
+3.5-inch distribution media format (DMF) disk set and can be copied using
+Windows Explorer or at an MS-DOS prompt (using EXTRACT is not necessary). On
+CD-ROM installation media, MINI.CAB is located in the WIN95 directory.
+
+MORE INFORMATION
+================
+
+DriveSpace operations that can prevent Windows from restarting properly if
+interrupted by a power loss or accidental reboot are fully restartable. To
+ensure restartability in these cases, DriveSpace uses a mini-version of Windows
+(a subset of Windows 3.1 also used by Setup).
+
+DriveSpace extracts the mini-version files (from the MINI.CAB file in your
+Windows 95 SYSTEM subdirectory to a hidden FAILSAFE.DRV directory on the
+physical boot drive) before beginning an operation that requires full
+restartability. This ensures that DriveSpace can complete its operation in the
+event of a power loss or accidental reboot.
+
+DriveSpace requires the mini-version of Windows during the following operations:
+
+- Compressing an existing drive that contains Windows files (including the swap
+  file).
+
+- Uncompressing a DriveSpace- or DoubleSpace-compressed drive that contains
+  Windows files (including the swap file).
+
+- Changing the size of a DriveSpace- or DoubleSpace-compressed drive that
+  contains Windows files (including the swap file).
+
+- Changing the estimated compression ratio (ECR) for a DriveSpace- or
+  DoubleSpace-compressed drive that contains Windows files (including the swap
+  file).
+
+You should not delete the FAILSAFE.DRV directory created by DriveSpace unless you
+have a MINI.CAB file in your Windows SYSTEM subdirectory. DriveSpace does not
+delete FAILSAFE.DRV after successfully completing a restartable operation. This
+allows future restartable operations to be completed more quickly.
+
+Additional query words: err msg dxxspace
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/091/Q91694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/091/Q91694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/091/Q91694/","publisher":null,"image":null,"headline":"Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q91694-wfwg-err-msg-protocol-manager-reported-an-incomplete-binding">Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q91694
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-SEP-1999
+
+3.10
+
+WINDOWS
+
+kbnetwork kberrmsg kbprb kbhw
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when using Windows for Workgroups:
+
+  The protocol manager has reported an incomplete binding
+
+The message can be preceded by a number, such as 5733 or 5773. For example:
+
+  Error 5733: The protocol manager has reported an incomplete binding.
+
+In most cases, Windows still functions after this message; however, all network
+services are disabled.
+
+CAUSE
+=====
+
+This message occurs due to several conditions, including:
+
+- Incorrect NDIS Network Interface Card (NIC) driver loaded in the CONFIG.SYS
+  file
+
+- Incorrect network card configuration (PROTOCOL.INI)
+
+- Hardware problem(s)
+
+WORKAROUND
+==========
+
+Use the information in the following paragraphs to eliminate the conditions
+listed above.
+
+Incorrect NDIS NIC Driver Loaded in the CONFIG.SYS File
+-------------------------------------------------------
+
+This message may result if you have installed the wrong network card driver. To
+verify that the driver you selected matches the network card you are using,
+choose the Network icon from Control Panel. If the network card you are using is
+not listed during setup, check the manufacturer's suggested emulation.
+
+The network card supplier may need to provide an NDIS compatible driver. If the
+card you are trying to install is not listed in Control Panel, contact the
+network card manufacturer for a specific NDIS driver that works with Windows for
+Workgroups.
+
+The order of the network drivers in the CONFIG.SYS file is also important. For
+example, protocol manager (PROTMAN.DOS) must load before any other Windows for
+Workgroup network drivers. If PROTMAN.DOS does not load first, you may receive
+the following variation of the message above:
+
+  Error 5741: The protocol manager was unable to bind.
+
+Incorrect Network Card Configuration (PROTOCOL.INI)
+---------------------------------------------------
+
+The protocol manager error message can also occur if the network adapter is
+configured incorrectly. The configuration settings include IRQ, Base I/O port,
+and Base Memory Address. To verify these settings, choose the Network icon from
+Control Panel.
+
+Some network adapters do not have an on-board transceiver, and use an external
+transceiver to transmit data over the medium. If your network adapter works this
+way, add the following entry to the section of the PROTOCOL.INI file that refers
+to the specific net card using the external transceiver:
+
+  [MS$NIUPC]
+  TRANSCEIVER=EXTERNAL
+
+You can also correct your settings by deleting the PROTOCOL.INI, PROTMAN.DOS,
+WORKGRP.SYS, and other Workgroup network driver files. Then, from Control Panel,
+choose the Network icon, and indicate the correct network adapter and
+configuration settings.
+
+Note: Each time the PROTOCOL.INI file is updated, the old one is saved with a
+sequentially numbered extension (that is, PROTOCOL.000, PROTOCOL.001,
+PROTOCOL.002, and so forth). By referring this naming convention, you may be
+able to recover an earlier PROTOCOL.INI that was once configured correctly.
+
+Hardware Problem(s)
+-------------------
+
+This error message could also indicate problems with the network adapter. Check
+to make sure that the adapter is seated properly in the computer's expansion
+slot. If the error message continues, try inserting a different network adapter,
+then verify the correct setting for that card. Check for other potential
+problems including incorrect cabling, improper installation of T-connectors and
+terminators, and check other connections within the workgroup.
+
+Additional query words: 3.1 3.10 5733 5741 5773 bind binding
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

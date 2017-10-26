@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85956/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85956/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85956/","publisher":null,"image":null,"headline":"Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85956-doc-visual-editors-do-not-use-include-environment-variable">Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85956
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbdocerr kbClassView kbide kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC410 kbVC500 kbVC
+Last Modified: 18-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The online help provides the following information about the #include
+preprocessor directive:
+
+  If the file is still not found or if the path-spec is enclosed in angle
+  brackets, the next directories searched are the ones specified using the /I
+  custom compiler option. After those have been searched, the compiler searches
+  the directories specified in the INCLUDE environment variable.
+
+This documentation is correct if the compiler is invoked from the command line.
+However, from within the Visual WorkBench, the INCLUDE environment variable is
+ignored. Instead, the directories searched are those set by choosing Directories
+from the Options menu in Visual C++ for Windows and in Visual C++ 32-bit edition
+versions 1.0 and 2.x, or by choosing the Directories Tab from the Options dialog
+box in Visual C++ version 4.x. This information also applies to the LIB
+environment variable.
+
+To set the directories searched for include files in Visual C++ version 4.x, use
+the following steps:
+
+1. Select Options... from the Tools menu.
+
+2. Select the Directories tab in the Options dialog box.
+
+3. Select the appropriate platform (e.g., Win32) in the Platform drop-down list
+  box. The directories to be searched will be specific to this platform.
+
+4. Select "Include files" in the Show directories for drop-down list box.
+
+5. Enter the full paths of the directories to be searched in the Directories
+  editable list box, one directory per line. The directories will be searched
+  in the order listed.
+
+6. Press OK to confirm the selections.
+
+For more information on setting directories in Visual C++ version 4.x, search for
+"Setting Directories" in the Books Online. For more information on the #include
+preprocessor directive, search the online documentation for "#include".
+
+Additional query words: on-line
+
+======================================================================
+Keywords          : kbdocerr kbClassView kbide kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC410 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

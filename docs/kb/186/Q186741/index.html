@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186741/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186741/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186741/","publisher":null,"image":null,"headline":"Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186741-xfor-ins-error-msg-502-you-have-no-permission-to-talk">Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186741
+Product(s): Microsoft Exchange
+Version(s): Winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+
+MORE INFORMATION
+================
+
+To prevent unauthorized access to their NNTP servers, Internet Service Providers
+often restrict logon attempts to their own network or to a group of IP
+addresses.
+
+You may not see this error message unless you manually telnet to port 119 of an
+NNTP server for troubleshooting reasons. The telnet dialog box looks something
+similar to the following:
+
+  502 You have no permission to talk, Goodbye
+  Connection closed by foreign host.
+
+SYMPTOMS
+========
+
+When you set up the Internet News Service for Microsoft Exchange Server 5.5, and
+you attempt to connect to another host Network News Transfer Protocol (NNTP)
+server, the following error message may appear:
+
+  502 You Have No Permission to Talk
+
+CAUSE
+=====
+
+This error can occur if you try to connect to a host server that does not allow
+access from your IP address.
+
+This is a security measure that allows Internet Service Providers (ISPs) to
+restrict access to their NNTP server.
+
+RESOLUTION
+==========
+
+If you are setting up a new connection with an NNTP server, your ISP needs to
+include the IP address (or range of addresses) of your Exchange Server computer,
+explicitly in order to allow you to connect.
+
+If you do not have a static IP address (or a range of addresses) that can be
+included on your newsfeed server's authorized pool for incoming connections,
+then you may need to set up a secure connection using a logon name and
+password.
+
+To select a secure outbound connection, click the Security tab IN the newsfeed
+object in the Microsoft Exchange Administrator program.
+
+Additional query words: news, usenet
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : Winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152526: Changing the Default Interval for User Tokens in IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152526: Changing the Default Interval for User Tokens in IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152526/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152526/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152526/","publisher":null,"image":null,"headline":"Q152526: Changing the Default Interval for User Tokens in IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152526-changing-the-default-interval-for-user-tokens-in-iis">Q152526: Changing the Default Interval for User Tokens in IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152526
+Product(s): Internet Information Server
+Version(s): 1.0,2.0,3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): kbnetwork kbIIS
+Last Modified: 26-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Internet Information Server (IIS) has a default delay of 15 minutes before users
+tokens are updated. For example, if you change the password on a user account,
+you will be able to connect to the server with both the old password and the new
+password.
+
+CAUSE
+=====
+
+For performance reasons, user tokens are cached by IIS and updated at 15 minute
+intervals.
+
+RESOLUTION
+==========
+
+The token cache can be refreshed manually by stopping and restarting ALL of the
+IIS services (Gopher, FTP, and WWW). For performance reasons, this is the
+preferred method if updates are infrequent.
+
+The default interval for the token cache can also be changed in the Microsoft
+Windows NT registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  \System\CurrentControlSet\Services\InetInfo\Parameters
+
+3. Click Add Value on the Edit menu, and add the following:
+
+Value Name: UserTokenTTL
+Data Type: REG_DWORD
+Data: (Number of Seconds for token to be cached - 30 sec. Min)
+
+NOTE: For IIS version 4.0, the minimum value is 30 seconds. For IIS 5.0, the
+minimum value is 1 second. If you set the value to 0, the minimum value will be
+used instead.
+4. Stop and restart all three IIS services (WWW, FTP, and GOPHER).
+
+Additional query words: prodiis iis timeout credentials
+
+======================================================================
+Keywords          : kbnetwork kbIIS 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200 kbiis100
+Version           : :1.0,2.0,3.0,4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

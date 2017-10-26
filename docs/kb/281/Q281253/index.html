@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281253: File Change Notifications Are Lost When Content Is on UNC Share | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281253: File Change Notifications Are Lost When Content Is on UNC Share" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281253/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281253/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281253/","publisher":null,"image":null,"headline":"Q281253: File Change Notifications Are Lost When Content Is on UNC Share","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281253-file-change-notifications-are-lost-when-content-is-on-unc-share">Q281253: File Change Notifications Are Lost When Content Is on UNC Share</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281253
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbCOMIS kbWin2000sp3fix
+Last Modified: 15-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When content is located on a UNC share, File Change Notifications are lost.
+Changes to the content are not detected and cached content is sent to the
+client. This affects both static content and dynamic ASP content that is located
+on a UNC share.
+
+CAUSE
+=====
+
+An unexpected network problem causes the File Change Notification request to be
+lost. This can be the result of any number of network related problems that
+cause the current session between IIS and the file server to close. When a
+request is made for content that is not in the cache, a new session may get
+established if the network conditions that caused the initial session to close
+have been resolved. However, IIS does not request File Change Notifications
+again. Therefore, any new content changes do not appear until the Web service is
+stopped and restarted.
+
+NOTE: If the cause of the File Change Notification being lost is due to the
+connection being closed or reset from the IIS server, make sure that you apply
+the hotfix for Q282185. This hotfix corrects an issue where the redirector
+incorrectly parses server message block (SMB) packets and closes the session
+unexpectedly. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q282185 Indexing Service Loses File System Change Notification Request
+
+WORKAROUND
+==========
+
+As a troubleshooting step and/or workaround, disable ASP and static file
+caching:
+
+To disable ASP file caching:
+
+1. Open the Internet Service Manager (ISM).
+
+2. Right-click the &lt;computer name&gt;, and then click Properties.
+
+  where &lt;computer name&gt; is the name of your computer.
+
+3. Click Edit to edit the WWW Service Master Properties.
+
+4. On the Home Directory tab, click Configuration.
+
+5. On the Process Options tab, select the "Do not cache ASP files" option.
+
+6. Click Apply, and then click OK to save your changes and then restart IIS.
+
+To disable static file caching editing registry warning: WARNING: If you use
+Registry Editor incorrectly, you may cause serious problems that may require you
+to reinstall your operating system. Microsoft cannot guarantee that you can
+solve problems that result from using Registry Editor incorrectly. Use Registry
+Editor at your own risk.
+You must add a value to the registry:
+
+  HKLM\System\CurrentControlSet\Services\Inetinfo\Parameters
+
+DisableMemoryCache: REG_DWORD: 1
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q182626 Access Is Denied When Attempting to Put Files on FTP Server
+
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem. This fix may receive
+additional testing. Therefore, if you are not severely affected by this problem,
+Microsoft recommends that you wait for the next Windows NT service pack that
+contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The typical support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of the IIS 4.0 fix should have the following file attributes
+or later:
+
+NOTE: The IIS 4.0 hotfix was completed in May 2000. There are several newer IIS
+4.0 hotfixes that include this one. If your file versions and dates are newer
+than these, you do not need to install this fix.
+
+  
+
+  Date      Time      Version    Size      File name     Platform
+  -------------------------------------------------------------
+  5/17/2000 7:45:31PM 4.2.745.1  330,080   Asp.dll       x86
+  5/17/2000 7:43:50PM 4.2.745.1  185,776   Infocomm.dll  x86
+  5/17/2000 7:44:44PM 4.2.745.1  38,256    Ssinc.dll     x86
+  5/17/2000 7:44:52PM 4.2.745.1  25,360    Sspifilt.dll  x86
+  5/17/2000 7:44:31PM 4.2.745.1  228,496   W3svc.dll     x86
+
+  5/17/2000 7:47:33PM 4.2.745.1  551,696   Asp.dll       ALPHA
+  5/17/2000 7:45:54PM 4.2.745.1  304,912   Infocomm.dll  ALPHA
+  5/17/2000 7:46:48PM 4.2.745.1  60,176    Ssinc.dll     ALPHA
+  5/17/2000 7:46:54PM 4.2.745.1  39,696    Sspifilt.dll  ALPHA
+  5/17/2000 7:46:36PM 4.2.745.1  383,760   W3svc.dll     ALPHA
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of the IIS 5.0 fix should have the following file attributes
+or later:
+
+  
+
+  Date      Time      Version       Size    File name     Platform
+  -------------------------------------------------------------
+  5/31/2001 3:31:22PM 5.0.2195.3649 332,560 Asp.dll      x86
+  5/31/2001 3:31:42PM 5.0.2195.3649 245,520 Infocomm.dll x86
+  5/31/2001 3:31:42PM 5.0.2195.3649 62,736  Isatq.dll    x86
+  5/31/2001 3:31:42PM 5.0.2195.3649 13,584  Infoadmn.dll x86
+  5/31/2001 3:32:02PM 5.0.2195.3649 7,440   W3ctrs.dll   x86
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in IIS 4.0 and 5.0. This problem
+was first corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+Some network related problems do not cause the server message block (SMB)
+session between IIS and the file server to be lost. Instead, File Change
+Notifications are simply not returned or do not contain valid file information,
+which causes IIS to miss changes to the content. This fix cannot address those
+kinds of issues. Also, there are several conditions that can cause this symptom.
+Some of these conditions can cause the problem to persist or cause performance
+degradation, even when you apply the fix listed in this article. In these cases,
+it is necessary to identify why the File Change Notifications are not being
+returned or why they do not contain valid information.
+
+Some of the known issues and conditions are listed in this section.
+Troubleshooting information is provided to help identify the root cause of the
+symptoms.
+
+Common Causes for Losing File Change Notifications
+--------------------------------------------------
+
+Some common causes for losing or not establishing File Change Notifications are
+loss of network connectivity, lack of permissions or invalid user accounts,
+exceeding the maximum command limit or work contexts for the redirector or
+server, the file server not returning complete information, or the file server
+not returning any notification at all.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q221790 IIS Runs Out of Work Items and Causes RPC Failures When Connecting to
+  a Remote UNC Path
+
+  Q271148 MaxMpxCt and MaxCmds Limits in Windows 2000
+
+Loss of Network Connectivity:
+
+The network connection, on which the SMB session is established, may become
+disconnected. Therefore, the SMB session is lost. When the SMB session is lost,
+open file and directory handles are invalidated. Directory handles are used to
+establish File Change Notifications. Prior to this hotfix, when a session loss
+occurs, IIS loses any outstanding File Change Notifications and does not try to
+re-establish them, because the directory handle being used becomes invalid. With
+this fix, IIS now attempts to re-establish file change notifications on the
+first successful re-connection of an SMB session. For example, the next time an
+HTML file is retrieved from the file server, a new SMB session is created. At
+this time, IIS also attempts to re-establish File Change Notifications.
+
+Loss of network connectivity can occur for several reasons, including hardware
+problems, bugs in the client redirector, or bugs in the server code. One known
+cause is a bug in the Microsoft Windows 2000 redirector. This bug has been
+addressed by the fix included in Q282185. By using a network analyzer, you
+should be able to determine where the loss of connectivity is originating. See
+the "Troubleshooting" section of this article for more information.
+
+Lack of Permissions or Invalid User Accounts:
+
+For File Change Notifications to work, a directory handle must be created on the
+directory in question. When an SMB session is established, a specific user
+context is used. This context must have sufficient permissions to create a file
+handle on any of the directories. The account used by IIS is the account created
+when the virtual directory or Web site is created and a UNC path is used. The
+"Connect As" account must be an account with sufficient permissions on the file
+server for the directory tree in question. A supported configuration is the use
+of a domain account that is trusted by both servers. Often, users want to use
+non-domain accounts or no account at all (also known as Pass-Through
+Authentication). This method is not supported by Microsoft. Additionally, mapped
+drives are also not supported. This often fails because when IIS first starts,
+it enumerates the virtual directories, which include virtual directories on UNC
+shares, and then attempts to create a directory handle for each and establish
+File Change Notifications on them. This can fail because there is no account, an
+account without sufficient permissions, or an account that is unknown to the
+target file server. In those cases, the SMB session is not established or is
+established with a guest account that does not have proper permissions.
+
+Exceeding the Maximum Command Limit or Work Contexts for the Redirector or Server:
+
+This can occur if the amount of long term commands is greater than the negotiated
+maximum command limit between the client (IIS server) and file server. If an IIS
+server has a large number of sites or virtual directories mapped to a UNC path,
+they can exceed these limits. The solution is to increase the values for MaxCmds
+on the IIS server and MaxMpxCt on the file server side. This is important
+because each outstanding File Change Notification requires a work context. If
+there are not enough work contexts or if MaxCmds is too low, some File Change
+Notification requests will not be satisfied. The limit that can be used is the
+lesser of MaxCmds or MaxMpxCt, and the explicit number is sent from the server
+to the client in the negotiation part of an SMB session setup.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q221790 IIS Runs Out of Work Items and Causes RPC Failures When Connecting to
+  a Remote UNC Path
+
+  Q271148 MaxMpxCt and MaxCmds Limits in Windows 2000
+
+The File Server Does Not Return Complete Information or the File Server Does Not Return Any Notification:
+
+When a File Change Notification is requested, IIS specifies whether to be
+notified only for changes in the current directory or to include changes in any
+subdirectories. ASP specifies only the current directory, and IIS specifies to
+include subdirectories. If the file server responds to a File Change
+Notification that occurs in a subdirectory, but it does not send complete path
+information, it is not possible to know which file in the cache to flush.
+Therefore, it will appear that IIS did not respond to the File Change
+Notification. A common indicator that this is a problem is that ASP pages in
+that same subdirectory may seem to get updated, while static HTML content does
+not. In other cases, a file server may respond with a status other than SUCCESS,
+but not include any other file change information. In that case, the return is
+ignored and treated as an error. This is normal. Some Samba systems exhibit this
+behavior. Another situation that can occur is a file server that does not send a
+notification at all. This can occur with system that attempt to multiplex their
+replies. For example, if a change occurs in a directory that IIS and ASP have
+both requested File Change Notifications for, the file server should send two
+replies; however, it may only respond to one. In each of these cases, analyzing
+a network trace will show what is occurring.
+
+Troubleshooting
+---------------
+
+It is important to note some common troubleshooting tools and methods that apply
+to all causes of this symptom. Because the problem is network related, almost
+all of the causes can be identified by examining the network traffic between the
+IIS server and the file server. A network capture tool, such as Microsoft
+Network Monitor, can often provide the most useful and complete information in
+determining the cause. For example, by using Microsoft Network Monitor, the
+following steps have proved very effective in capturing the needed network
+traffic for inspection.
+
+The goal in using a network analyzer is to see all of the communication between
+IIS and the file server from the time that IIS starts until the File Change
+Notifications stop occurring, as indicated by stale content, and so on. Although
+this can result in a large capture file, it is necessary to capture valid data.
+An incomplete network trace can waste more time than it saves.
+
+1. Stop all IIS services, and make sure that the IIS process is not running. In
+  IIS 4.0, you can do this by closing the Internet Information Server
+  Management console, and then running the following command at a CMD prompt:
+
+  "NET STOP IISADMIN /Y" (without the quotation marks)
+
+  In IIS 5.0, you can do this by closing the Internet Services Manager console,
+  and then running the following command at a CMD prompt:
+
+  "iisreset /stop" (without the quotation marks)
+
+  Verify that the IIS process is not running by checking the Task Manager to
+  make sure Inetinfo.exe is not loaded.
+
+2. Configure Network Monitor. Start Network Monitor on the IIS server and
+  configure it to capture data on the network between the IIS server and the
+  file server where the content resides. To do this:
+
+  a. On the Capture menu, click Networks.
+
+  b. Choose the correct interface that is used to communicate with the file
+     server.
+
+  c. Configure the buffer settings to allow enough space to capture the entire
+     communication up until the problem occurs. The size needed depends on the
+     load as well as how long it takes before the problem appears. Common sizes
+     are 100 MB to 2 GB. To set the buffer size, click Buffer Settings on the
+     Capture menu, enter the size, and then make sure that the Frame Size is
+     set to Full.
+
+  d. Set a trigger to stop the tracing when the buffer is full. To do this,
+     click Trigger on the Capture menu, select Buffer Space, and then choose
+     100%. For Trigger Action, select Stop Capture.
+
+3. Start capturing. To do this, click Start on the Capture menu.
+
+4. Start the IIS services. In IIS 4.0, you can do this by running the following
+  command at a CMD prompt:
+
+  "NET START W3SVC" (without the quotation marks)
+
+  In IIS 5.0, you can do this by running the following command at a CMD prompt:
+
+  "iisreset /start" (without the quotation marks)
+
+5. When the problem occurs, stop the capture. To do this, click the Capture
+  menu, and then click Stop. If the capture has stopped automatically because
+  of the trigger and the problem has not yet occurred, you need to repeat the
+  above steps by using a larger buffer.
+
+6. When the problem has been captured successfully, save the capture by clicking
+  the File menu, and then clicking Save As.
+
+NOTE: Although it is common to set filters to reduce the size of the trace, it is
+not recommended, because important frames may be missed. Microsoft recommends
+that you do not have any Microsoft Windows Explorer windows open or any mapped
+drives to the file server on the IIS server. This will reduce the number of
+sessions and applications that make File Change Notifications, so that the trace
+only contains the sessions and notifications for IIS. This makes analyzing the
+trace much easier.
+
+Things to Look for in the Captured Trace:
+
+The first things to identify in the trace are the SMB sessions that were
+established when IIS first started. This shows the account context used, as well
+as the negotiated worker contexts. You also want to identify that File Change
+Notification requests that were sent by IIS for each of the virtual directories.
+File Change Notification requests are long term commands, because the server
+does not reply to them until a file change actually occurs. When you have
+verified that they were sent from IIS, see if any were replied to by the server.
+Typically, you should use a known file that is not getting updated. For example,
+if Test.htm in a directory that has stale content, verify that a File Change
+Notification request was made for that directory or its parent directory (with
+the watch subdirectories flag set), and then see if the file server ever replies
+that a change was made. Examining the traces requires some knowledge of the SMB
+(CIFS) spec. In general, once you have found a File Change Notification request,
+you can use the MID (Multiplex ID) to find any corresponding reply from the
+server.
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbCOMIS kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

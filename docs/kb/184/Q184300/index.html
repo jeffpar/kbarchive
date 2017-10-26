@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184300: How to Run a Web Site as the User Who Created the Content | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184300: How to Run a Web Site as the User Who Created the Content" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184300/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184300/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184300/","publisher":null,"image":null,"headline":"Q184300: How to Run a Web Site as the User Who Created the Content","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184300-how-to-run-a-web-site-as-the-user-who-created-the-content">Q184300: How to Run a Web Site as the User Who Created the Content</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184300
+Product(s): Internet Information Server
+Version(s): WINNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Server (IIS) version 4.0 allows a Web site to run
+in the context of the user who created the content, as in some versions of UNIX,
+through the use of the anonymous user account.
+
+MORE INFORMATION
+================
+
+When a user accesses any resource in IIS, IIS can perform the action as the user
+performing the request or in the context of a nominated user account. To access
+the resource as the user performing the request, you must use Basic or Windows
+NT Challenge/Response authentication. To access a resource as a pre-defined
+user, you can turn off all authentication, use Anonymous Authentication, and
+choose a pre-defined Windows NT account to use as the Anonymous account.
+
+Assume you have a directory containing content created by DOMAIN\USER and you
+always want this content, whether it is active content (ASP, components) or
+static content, to run in the context of this user. Perform the following
+procedure to change the anonymous account for that directory:
+
+1. Load the Microsoft Management Console administrator tool.
+
+2. Right-click on the Web server, virtual directory, or directory in question.
+
+3. Select Properties.
+
+4. Select Directory Security.
+
+5. Select Edit in the Anonymous Access and Authentication Control box.
+
+6. Make sure only Allow Anonymous Access is selected.
+
+7. Click Edit and type DOMAIN\USER or the user account to use.
+
+8. Make sure Enable Automatic Password Synchronization is enabled.
+
+9. Click OK to save the changes and exit each dialog box.
+
+Any object executed within the scope of that virtual directory will now execute
+as DOMAIN\USER.
+
+NOTE: The IIS log files can still log the IP address of the calling user.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

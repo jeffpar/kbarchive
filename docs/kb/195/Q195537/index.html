@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195537: HOWTO: Copy Table Structures and Data From SQL Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195537: HOWTO: Copy Table Structures and Data From SQL Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195537/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195537/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195537/","publisher":null,"image":null,"headline":"Q195537: HOWTO: Copy Table Structures and Data From SQL Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195537-howto-copy-table-structures-and-data-from-sql-server">Q195537: HOWTO: Copy Table Structures and Data From SQL Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195537
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbClient KbClientServer kbDatabase kbSQL kbvfp KbDBFDBC kbSQLProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under some conditions, you may want to copy table structures and data from SQL
+Server tables. This article illustrates how to programmatically create table
+structures that correspond to SQL Server tables and copy the data from SQL
+Server to FoxPro tables.
+
+MORE INFORMATION
+================
+
+In situations where developers want to copy data from SQL Server tables to
+Visual FoxPro tables, you can use the SQLEXEC(), SQLTABLES(), and AFIELDS()
+functions for the following:
+
+- Retrieve information regarding the structure of SQL Server tables.
+
+- Create tables that correspond to SQL Server table structure(s).
+
+- Copy data from SQL Server tables to Visual FoxPro tables.
+
+The following code snippet illustrates the process of copying data from SQL
+Server tables to Visual FoxPro tables:
+
+Sample Code
+-----------
+
+     * Begin Code.
+     * SQL Server Tables may contain long field names
+     * that would not be supported in free tables.
+     * Create a Database Container.
+     CREATE DATABASE SQLDATA
+     * Create a cursor to contain the table information.
+     CREATE CURSOR SYS_Tables (Table_Name c(128), Field_Name c(120), ;
+        Field_Type c(1), Field_len N(3,0), Field_Dec N(3,0))
+     * Create a connection string to connect to SQL Server.
+     * Substitute the correct server name in the next line.
+     Connect_String = 'DRIVER={SQL Server};SERVER=MY_SERVER;' + ;
+        'DATABASE=PUBS;UID=sa;PWD='
+     * Connect to SQL Server.
+     gnConnHandle=SQLSTRINGCONNECT(Connect_String)
+     IF gnConnHandle&gt;0
+        * Want to use the PUBS Database, so send USE command.
+        SQLCOMMAND="USE PUBS"
+        =sqlexec(gnConnHandle,SQLCOMMAND)
+        * Get the tables available on SQL Server.
+        SQLConnTables=SQLTABLES(gnConnHandle)
+        IF SQLConnTables&gt;0
+           SELECT SQLResult
+           * Only want tables, so select where table_type='TABLE'
+           * Otherwise get system tables and views.
+           SELECT Table_Name FROM SQLResult ;
+              WHERE UPPER(ALLTRIM(Table_Type))="TABLE" ;
+              INTO CURSOR SQL_Tables
+           SELECT SQL_Tables
+           INCnt=0
+           DO WHILE !EOF()
+              * Create a command to execute the stored procedure.
+              SQLCOMMAND="SELECT * FROM " + ALLTRIM(Table_Name)
+              * Execute the stored procedure and return data to a cursor
+              =sqlexec(gnConnHandle,SQLCOMMAND,'tmp_sys_data')
+              * Select the cursor.
+              SELECT tmp_sys_data
+              * Get actual name of the tmp file that is in use with DBF()
+              this_file=DBF()
+              * Use AFIELDS() function to get fields and field attributes.
+              =AFIELDS(test_vals)
+              * Dimension maketab array to contain field data.
+              DIMENSION maketab[alen(test_vals,1),6]
+              * Load maketab array with field data.
+              FOR i=1 TO ALEN(test_vals,1)
+                 maketab[i,1]=test_vals[i,1]
+                 maketab[i,2]=test_vals[i,2]
+                 maketab[i,3]=test_vals[i,3]
+                 maketab[i,4]=test_vals[i,4]
+                 maketab[i,5]=test_vals[i,5]
+                 maketab[i,6]=test_vals[i,6]
+              NEXT
+              * Create a table from the array maketab.
+              Execute_Cmd="CREATE TABLE "+ALLTRIM(SQL_Tables.Table_Name)+ ;
+                 " FROM ARRAY maketab"
+              &amp;Execute_Cmd
+              * Select the table that was just created.
+              current_table=ALLTRIM(SQL_Tables.Table_Name)
+              SELECT (current_table)
+              * Append from the tmp file.
+              APPEND FROM &amp;this_file
+              SELECT SQL_Tables
+              SKIP
+           ENDDO
+           =SQLDISCONN(gnConnHandle)
+        ENDIF
+     ENDIF
+     SELECT SQL_Tables
+     CLOSE ALL
+     USE AUTHORS
+     BROWSE TIMEOUT 15
+     CLOSE ALL
+     RETURN
+     * End Code
+
+Copy the code snippet to a program file, then run the program file. The program
+creates a Database container named Sqldata.dbc and copies tables from the SQL
+Server PUBS database. After the tables are copied, the Authors table opens.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by John
+Desch, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbClient KbClientServer kbDatabase kbSQL kbvfp KbDBFDBC kbSQLProg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

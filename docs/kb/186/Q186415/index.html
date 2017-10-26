@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186415/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186415/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186415/","publisher":null,"image":null,"headline":"Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186415-sms-status-mif-creator-ismif32exe-is-available">Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186415
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ISMIF, a tool available in the BackOffice Resource Kit, writes a generic status
+MIF file from information provided when you run it from a command prompt.
+Ismif32.exe is a 32-bit application that does not have a dialog box. All
+information must be specified when you run it from a command prompt.
+
+MORE INFORMATION
+================
+
+The command can be run on Alpha, MIPS, and x86.
+
+ISMIF32 Syntax
+--------------
+
+     ismif32 [-f Filename] [-c Manufacturer] [-p Product] [-v Version] [-l
+     Locale] [-n Serial_Number] [-d Description] [-s Success] [-q] [-?]
+
+     -f Filename - Specifies the name of the MIF file that will be created. A
+     MIF extension is automatically appended. The default file name is
+     Setup.mif.
+
+     -c, -p, -v, -l, -n, -d - Each of these options can specify a text
+     string. Strings containing spaces must be surrounded by quotation marks.
+
+     -s status - 0 or 1. The 1 means success.
+
+     -q - Quiet mode. No output is displayed on the screen.
+
+     -? - Provides a usage statement.
+
+ISMIF32 Example
+---------------
+
+     ismif32 -c Microsoft -p SMS -v 1.2 -d "The most effective multi-site
+     management system that provides integrated desktop management for
+     customers with medium to large Windows environments."
+
+The preceding command creates a file in your Windows directory called Setup.mif
+that contains the following:
+
+     START COMPONENT
+       NAME = "WORKSTATION"
+       START GROUP    NAME = "ComponentID"
+         ID = 1
+         CLASS = "DMTF|ComponentID|1.0"
+         START ATTRIBUTE
+           NAME = "Manufacturer"
+           ID = 1
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(64)
+           VALUE = "Microsoft"
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Product"
+           ID = 2
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(64)
+           VALUE = "SMS"
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Version"
+           ID = 3
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(64)
+           VALUE = "1.2"
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Locale"
+           ID = 4
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(16)
+           VALUE = ""
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Serial Number"
+           ID = 5
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(64)
+           VALUE = ""
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Installation"
+           ID = 6
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(64)
+           VALUE = "DateTime"
+         END ATTRIBUTE
+       END GROUP
+       START GROUP
+         NAME = "InstallStatus"
+         ID = 2
+         CLASS = "MICROSOFT|JOBSTATUS|1.0"
+         START ATTRIBUTE
+           NAME = "Status"
+           ID = 1
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(32)
+           VALUE = "Failed"
+         END ATTRIBUTE
+         START ATTRIBUTE
+           NAME = "Description"
+           ID = 2
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(148)
+           VALUE = "The most effective multi-site management system that
+     provides integrated desktop management for customers with
+     medium to large Windows environments."
+         END ATTRIBUTE
+       END GROUP
+     END COMPONENT
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184304/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184304/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184304/","publisher":null,"image":null,"headline":"Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184304-xweb-outlook-web-access-error-message-unable-to-render-view">Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184304
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc5 exc55
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Active Server Components, version 5.0 
+- Microsoft Outlook Web Access, version 5.5 
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to access your mailbox using the Outlook Web Access client, the
+following error messages may be displayed:
+
+  Unable to Render View
+
+  -or-
+
+  Unable to Render This View
+
+CAUSE
+=====
+
+Incorrect security permissions are set on the following registry keys:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\currentcontrolset\services\MsExchangeweb
+
+  - and -
+
+  HKEY_LOCAL_MACHINE\SYSTEM\currentcontrolset\services\W3SVC
+
+RESOLUTION
+==========
+
+Other settings that should be checked are the permissions on the following
+directories on the Microsoft Outlook Web Access server:
+
+  \Exchsrvr\Res directory
+
+  \Exchsrvr\bin directory
+
+In both of the above cases, the Everyone group should have Full Control.
+
+If correcting the above permissions does not correct the "Unable to Render View"
+problem, follow these steps to reregister the cdo.dll and cdohtml.dll files.
+
+1. Stop the IIS Admin service, which stops the following services (if they are
+  running):
+
+   - World Wide Web Publishing Service
+
+   - Microsoft SMTP Service
+
+   - Microsoft NNTP Service
+
+   - FTP Publishing Service
+
+2. Reregister Cdo.dll and Cdohtml.dll by typing the following syntax at a
+  command prompt:
+
+  "regsvr32 c:\winnt\system32\cdo.dll" (without the quotation marks)
+
+  - and then -
+
+  "regsvr32 c:\exchsrvr\bin\cdohtml.dll" (without the quotation marks)
+
+NOTE: The paths for the Cdo.dll and Cdohtml.dll files assume that these
+directories are on drive C; if this is not the correct drive for your system,
+change the drive letter of the path to point to the correct drive location of
+the files.
+
+If reregistering these libraries does not correct the problem, re-apply the most
+recent Microsoft Exchange Server service pack.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To set the correct permissions for the above listed registry keys, do the
+following:
+
+1. Start the Registry Editor (Regedt32.exe).
+
+2. Select the keys in the "Cause" section of this article, one at a time.
+
+3. On the Security menu, click Permissions.
+
+4. Click Add, and click Everyone.
+
+5. Click Full to change the permission to full, and then click OK.
+
+6. Click to select the Replace Permission on Existing Subkeys check box, and
+  then click OK.
+
+7. Stop the Exchange Server services, and restart the computer.
+
+Additional query words: 424object 438object
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550 kbExchangeActiveServComp500
+Version           : :5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

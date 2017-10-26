@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37341: How to Create Your Own Font in Character Mode for EGA Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37341: How to Create Your Own Font in Character Mode for EGA Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37341/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37341/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37341/","publisher":null,"image":null,"headline":"Q37341: How to Create Your Own Font in Character Mode for EGA Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37341-how-to-create-your-own-font-in-character-mode-for-ega-text">Q37341: How to Create Your Own Font in Character Mode for EGA Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37341
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 28-DEC-1989
+
+The code example below shows a method of creating a user-defined text
+font for use with an EGA or VGA monitor. This method allows a person
+to define a specified number of new characters that are in order
+starting at a specified position in the table. Only those characters
+in the character set that are overwritten by the new fonts are
+changed. In the example below, the three new characters are printed
+and the fourth character from the original set is printed.
+
+This code example applies to QuickBASIC Versions 4.00, 4.00b, and
+4.50, to Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS,
+and to Microsoft BASIC PDS Version 7.00 for MS-DOS.
+
+Note: Microsoft BASIC PDS Version 7.00 comes with a library of
+routines that allow loading and displaying of bitmapped fonts. BASIC
+PDS 7.00 comes with several font files, and the font library routines
+can load and display any of the Microsoft Windows bitmapped fonts.
+
+The following is a code example:
+
+' $INCLUDE: 'qb.bi'
+DIM RegS AS RegType, RegL AS RegTypeX
+DIM table(100)
+DATA 0,0,0,2,6,14,30,62,126,254,0,0,0,0
+DATA 0,0,0,254,64,32,16,32,64,254,0,0,0,0
+DATA 0,0,0,132,136,158,162,70,130,14,0,0,0,0
+
+CLS
+DEF SEG = VARSEG(table(0))
+FOR i = 1 TO 42
+   READ A%        'Place the NEW characters into
+   POKE VARPTR(table(0)) + i, A%    'graphics table
+NEXT i
+DEF SEG
+
+RegL.AX = &amp;H1100   ' function 11 subfunction 0
+RegL.BX = &amp;HE00    ' There are &amp;HE points per character
+                   ' put font at table 0
+RegL.CX = &amp;H3      ' defined three characters
+RegL.DX = 0        ' first character is chr$ (0)
+RegL.DS = -1       ' use old data seg
+RegL.ES = VARSEG(table(0))  ' address of table
+RegL.BP = VARPTR(table(0))  ' that holds the fonts
+CALL interruptX(&amp;H10, RegL, RegL)  ' make the call
+
+PRINT CHR$(0) + CHR$(1) + CHR$(2) + CHR$(3)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

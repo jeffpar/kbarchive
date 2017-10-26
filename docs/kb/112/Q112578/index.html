@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112578/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112578/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112578/","publisher":null,"image":null,"headline":"Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112578-creating-a-setup-disk-for-the-updated-wfw-311-tcpip-drivers">Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112578
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The updated TCP/IP for Windows for Workgroups 3.11 files do not contain a
+SETUP.EXE program that can be executed for a first time installation. If you
+have the old TCP/IP Windows for Workgroups 3.11 disk, it can be modified to
+install the updated files.
+
+MORE INFORMATION
+================
+
+Using the self-extracting file WFWTCP.EXE and your old TCP/IP Windows for
+Workgroups 3.11 disk, follow these steps to install the new Windows for
+Workgroups TCP/IP network protocol drivers:
+
+1. Download the self-extracting 408k file, WFWTCP.EXE, dated 01/27/94, from the
+  following Microsoft Web site:
+
+  http://download.microsoft.com/download/wfw311/tcpip/3.11/WFW/EN-US/wfwtcp.exe
+
+2. Copy WFWTCP.EXE to your hard disk.
+
+3. Insert the old TCP/IP for Windows for Workgroups 3.11 disk in a floppy drive.
+
+4. From the command prompt, change directory to the directory where the file
+  WFWTCP.EXE is located.
+
+5. Type "WFWTCP &lt;floppy drive&gt;" without the quotes and press ENTER. This
+  extracts the new TCP/IP files archived in the WFWTCP.EXE file and overwrites
+  the old files on the floppy disk. Two extra files containing windows help for
+  TCP/IP will also be added to the disk.
+
+6. Start Windows for Workgroups and choose the Network icon.
+
+7. In the Network window choose the Network Setup icon.
+
+8. In the Network Setup window choose the Drivers button.
+
+9. In the Network Drivers window choose the Add Protocol button.
+
+10. Select Unlisted or Update Protocol from the edit list and choose the OK
+  button.
+
+11. Indicate which floppy drive you have inserted the Windows for Workgroups
+  TCP/IP installation disk in and choose the OK button.
+
+12. Microsoft TCP/IP should be selected in the edit list. Choose the OK button.
+
+13. The Microsoft TCP/IP Configuration appears. Enter your IP address other
+  network information. Choose the OK button.
+
+14. Continue to choose the OK button until you are prompted to reboot your
+  computer. Select the restart option.
+
+Following is a list of the 30 files archived in the WFWTCP.EXE file:
+
+  ADDNAME  EXE              14887 12/20/93  12:00a
+  DNR      EXE              31152 12/20/93  12:00a
+  EMSBFR   EXE               4294 12/20/93  12:00a
+  HOSTS                       749 05/08/93  08:47p
+  LMHOSTS                     846 05/08/93  08:47p
+  MSTCPIP  HLP             132028 12/30/93  12:26p
+  NEMM     DOS               2619 12/20/93  12:00a
+  NETWORKS                    395 05/08/93  08:47p
+  NMTSR    EXE              22874 12/20/93  12:00a
+  OEMSETUP INF               1267 01/04/94  11:21a
+  PING     EXE              66460 12/20/93  12:00a
+  PROTOCOL                    795 05/08/93  08:47p
+  READTCP! TXT               9317 01/27/94  02:49p
+  RPC16C3  DLL               5632 06/14/93  05:15p
+  SERVICES                   5962 05/08/93  08:47p
+  SOCKETS  EXE              50144 12/20/93  12:00a
+  TCPDRV   DOS               4180 12/20/93  12:00a
+  TCPOVER  HLP              82990 02/26/93  11:23a
+  TCPSETUP DLL              38192 06/09/93  04:09p
+  TCPSETUP HLP              13487 05/08/93  08:51p
+  TCPTSR   EXE              66752 12/20/93  12:00a
+  TCPUTILS INI                233 06/03/93  01:49p
+  TINYRFC  EXE              33376 12/20/93  12:00a
+  UMB      COM               3325 12/20/93  12:00a
+  VBAPI    386               9524 12/20/93  12:00a
+  VSOCKETS 386               9535 12/20/93  12:00a
+  WIN_SOCK DLL              30912 12/20/93  12:00a
+  WINSOCK  DLL              47968 12/20/93  12:00a
+  WSAHDAPP EXE               5152 12/20/93  12:00a
+  WSOCKETS DLL              32768 12/20/93  12:00a
+
+Additional query words: wfw wfwg 3.11 tcp setup
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : :3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

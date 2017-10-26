@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69223: Retrieving a Disk’s Volume Serial Number from C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69223: Retrieving a Disk’s Volume Serial Number from C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69223/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69223/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69223/","publisher":null,"image":null,"headline":"Q69223: Retrieving a Disk’s Volume Serial Number from C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69223-retrieving-a-disks-volume-serial-number-from-c">Q69223: Retrieving a Disk’s Volume Serial Number from C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69223
+Product(s): See article
+Version(s): 5.10 6.00 6.00a
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 25-FEB-1991
+
+Beginning with MS-DOS 4.00, a semi-random 32-bit binary identification
+number (ID) is assigned to each disk that DOS formats. The volume
+serial number (or ID) is stored at offset 27H to 2AH in the boot
+sector of each disk. The following program illustrates how to retrieve
+this information:
+
+/***************************************************************/
+/*                                                             */
+/* This program reads the volume serial number (or ID) from    */
+/* the boot sector of a specified disk. The DOS interrupt 25   */
+/* Absolute Disk Read is used to read in the boot sector.      */
+/*                                                             */
+/* Note: The volume ID is only implemented from MS-DOS 4.00    */
+/*       and later.                                            */
+/*                                                             */
+/* The output consists of the OEM name and version of the      */
+/* disk-formatting program (stored at offset 03H to 0AH in the */
+/* boot sector), the disk volume label, and the disk-volume    */
+/* serial number.                                              */
+/*                                                             */
+/***************************************************************/
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;dos.h&gt;
+#include &lt;conio.h&gt;
+
+char bootsector[1024];
+char volume[12];
+char ver[9];
+char block[10];
+
+void main(void)
+{
+   int ax, _far *p, drive;
+   struct find_t fileinfo;
+   char filename[13], _far *foo, _far *q;
+   union REGS inregs, outregs;
+   struct SREGS segregs;
+
+   printf("Enter drive number (0=A,1=B,2=C, ...): ");
+   drive=getche() - '0';
+
+   /**************************************/
+   /* Parameter block for int 25H        */
+   /* Bytes    Description               */
+   /* -------  -----------               */
+   /* 00H-03H  32-bit sector number      */
+   /* 04H-05H  Number of sectors to read */
+   /* 06H-07H  Offset of buffer          */
+   /* 08H-09H  Segment of buffer         */
+   /**************************************/
+
+   block[0]=block[1]=block[2]=block[3]=0;
+   block[4]=1;
+   block[5]=0;
+
+   foo=bootsector;
+
+   p=(int *)&amp;block[6];
+   *p=FP_OFF(foo);
+
+   p=(int *)&amp;block[8];
+   *p=FP_SEG(foo);
+
+   q=block;
+   inregs.h.al=(char) drive;
+   inregs.x.cx=-1;
+   inregs.x.bx=FP_OFF(q);
+   segregs.ds=FP_SEG(q);
+   ax=int86x(0x25, &amp;inregs, &amp;outregs, &amp;segregs);
+
+   /*** Error routine ***/
+
+   if(outregs.x.cflag)
+   {
+      printf("\n\nerror on int 25\n");
+      printf("this is AX:%04X",ax);
+      exit(-1);
+   }
+
+   /*** Output ***/
+
+   printf("\n\nDrive %c\n-------\n\n", drive +'A');
+
+   strncpy(ver, &amp;bootsector[3], 8);
+   printf("OEM name and version: %s\n", ver);
+
+   /* Use _dos_findfirst for the volume label */
+
+   filename[0]=(char) (drive + 'A');
+   filename[1]='\0';
+   strcat(filename, ":\\*.*");
+   if(!_dos_findfirst(filename, _A_VOLID, &amp;fileinfo))
+   printf("Volume name         : %s\n",fileinfo.name);
+
+   /* Before printing serial number, check if version &gt;= 4.x */
+
+   if((ver[6]=='.')&amp;&amp;(ver[5]&gt;='4')&amp;&amp;(ver[5]&lt;='9'))
+      printf("Serial number       : %02X%02X-%02X%02X\n\n",
+                              (unsigned char) bootsector[0x2a],
+                              (unsigned char) bootsector[0x29],
+                              (unsigned char) bootsector[0x28],
+                              (unsigned char) bootsector[0x27]);
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

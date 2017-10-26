@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173349: FIX: OLEDropMode=0 Doesn’t Stop DragDrop of File to Rich TextBox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173349: FIX: OLEDropMode=0 Doesn’t Stop DragDrop of File to Rich TextBox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173349/","publisher":null,"image":null,"headline":"Q173349: FIX: OLEDropMode=0 Doesn’t Stop DragDrop of File to Rich TextBox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173349-fix-oledropmode0-doesnt-stop-dragdrop-of-file-to-rich-textbox">Q173349: FIX: OLEDropMode=0 Doesn’t Stop DragDrop of File to Rich TextBox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173349
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the OLEDragMode property of a Rich TextBox control to 0-rtfOLEDropNone
+does not disable the ability to drag files from the Windows Explorer and drop
+them into the Rich Textbox control.
+
+CAUSE
+=====
+
+The control should be allowed to accept dropped files independent of the
+OLEDragMode property. This behavior is allowed because DragAcceptFiles works
+independently of OLE drag and drop.
+
+RESOLUTION
+==========
+
+You can call the DragAcceptFiles API to set the Rich TextBox control so that it
+does not accept files in a DragDrop operation.
+
+The following is the declaration for the DragAcceptFiles API function:
+
+     Declare Sub DragAcceptFiles Lib "shell32.dll" (ByVal hwnd As Long, _
+          ByVal fAccept As Long)
+
+You can then use the following line of code to set the Rich Textbox control so
+that it cannot accept files in a DragDrop operation:
+
+     DragAcceptFiles ByVal RichTextBox1.hwnd, ByVal 0&amp;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+The steps provided below are for the Visual Basic 5.0 IDE.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project.
+
+2. Click Components on the Project Menu.
+
+3. Check the "Microsoft Rich Textbox Control" in the Controls Tab of the
+  Components dialog box, and click OK.
+
+4. From the Project Menu, select Add Module to add a new module to the project.
+
+5. Place a Rich Textbox control and two Command buttons on Form1.
+
+6. Add the following code to Module1:
+
+        Declare Sub DragAcceptFiles Lib "shell32.dll" (ByVal hwnd As _
+           Long, ByVal fAccept As Long)
+
+7. Add the following code to Form1:
+
+        Private Sub Command1_Click()
+          Me.Caption = "DragDrop Enabled"
+          RichTextBox1.OLEDragMode = rtfOLEDragAutomatic
+          RichTextBox1.OLEDropMode = rtfOLEDropAutomatic
+        End Sub
+
+        Private Sub Command2_Click()
+          Me.Caption = "DragDrop Disabled"
+          RichTextBox1.OLEDropMode = rtfOLEDropNone
+          RichTextBox1.OLEDragMode = rtfOLEDragManual
+          'Uncomment the following line to disable DragDrop of files
+          'DragAcceptFiles ByVal RichTextBox1.hwnd, ByVal 0&amp;
+        End Sub
+
+        Private Sub Form_Load()
+          Me.Caption = "DragDrop Enabled"
+          Command1.Caption = "Enable DragDrop"
+          Command2.Caption = "Disable DragDrop"
+          RichTextBox1.OLEDragMode = rtfOLEDragAutomatic
+          RichTextBox1.OLEDropMode = rtfOLEDropAutomatic
+        End Sub
+
+8. Press F5 to run the application.
+
+9. Drag a text file from the Windows Explorer and drop it on the Rich Textbox
+  control. Try doing this with DragDrop Enabled and Disabled. You can still
+  drop a file on the Rich Textbox control after you have run the code in
+  Command2_Click. Uncomment the DragAcceptFiles API call and then try to drop
+  the file on the Rich TextBox control after you have clicked the Disable
+  DragDrop button.
+
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Brian
+Combs, Microsoft Corporation
+
+
+Additional query words: kbIDE kbVBp500bug kbVBp600fix kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

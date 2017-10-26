@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139126: How To Connect to NetWare Resources through a RAS Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139126: How To Connect to NetWare Resources through a RAS Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139126/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139126/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139126/","publisher":null,"image":null,"headline":"Q139126: How To Connect to NetWare Resources through a RAS Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139126-how-to-connect-to-netware-resources-through-a-ras-connection">Q139126: How To Connect to NetWare Resources through a RAS Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139126
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:; winnt:3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to access remote NetWare resources from a Windows for Workgroups
+3.11, Windows NT 3.5x, or Windows 95 Remote Access (RAS) client. This article
+discusses the requirements for accessing remote NetWare resources for each of
+these RAS clients. This article assumes the use of a Windows NT 3.5x Server as
+the RAS server.
+
+MORE INFORMATION
+================
+
+Windows for Workgroups 3.11 Client
+----------------------------------
+
+The Windows for Workgroups 3.11 RAS client only supports the NetBEUI protocol.
+Therefore, the RAS server must act as a gateway to the NetWare resources.
+
+On the RAS server, or any other Windows NT Server on the same network as your RAS
+server, you must perform the following steps:
+
+1. Install the NWLink IPX/SPX Compatible protocol.
+
+2. Install Gateway Services for NetWare (GSNW). GSNW is only available on
+  Windows NT Server.
+
+3. Use the GSNW icon in Control Panel to configure one or more Gateways to
+  NetWare resources on your LAN. By configuring a Gateway to these NetWare
+  resources, you are allowing access to NetWare resources from clients that are
+  unable to connect directly to your NetWare servers but are able to connect to
+  your Windows NT server.
+
+  On the Windows for Workgroups 3.11 RAS client, connect to the NetWare
+  resources by specifying the server name of the Windows NT Server running GSNW
+  and the share name defined for the NetWare resources. Choose the Windows NT
+  Server and share from the browse list or use the following format to connect
+  directly to the share using the Path field of File Manager's Connect Network
+  Drive dialog:
+
+  \\&lt;Server_Name&gt;\&lt;Share_Name&gt;
+
+Windows NT 3.5x RAS Client
+--------------------------
+
+Windows NT 3.5x RAS supports the IPX protocol over a RAS connection, eliminating
+the need to use a Gateway to access NetWare resources from the RAS client. The
+user account you use on your RAS client computer must have proper access
+permission to resources you connect to on the NetWare servers.
+
+On the RAS server, you must perform the following steps:
+
+1. Install the NWLink IPX/SPX Compatible protocol.
+
+2. Configure the RAS Server to allow remote clients running IPX. To enable this
+  option, use the Network Control Panel applet and configure the Remote Access
+  Service. Choose the Network button and select IPX in the Server Settings
+  section. NetBEUI and TCP/IP can be enabled or disabled.
+
+3. Choose the Configure button to the right of the IPX Checkbox. Make sure IPX
+  clients have access to the entire network by selecting the Entire Network
+  radio button.
+
+On the Windows NT RAS client, you must perform the following steps:
+
+1. Install the NWLink IPX/SPX Compatible protocol.
+
+2. Install Client Services for NetWare (CSNW).
+
+3. Edit your Remote Access PhoneBook entry for your RAS server and enable the
+  IPX protocol. To enable the IPX protocol, select the Network button and
+  select the IPX checkbox. You must use PPP as SLIP does not support the IPX
+  protocol.
+
+4. Once you are connected to the RAS server, connect to NetWare resources on the
+  remote network using File Manager or the NET USE command. If you connect
+  directly to the NetWare server instead of selecting the server and share from
+  the browse list, the server name you enter should be the server name of the
+  NetWare server and the share name should be the name of the volume on the
+  NetWare server.
+
+Windows 95 Dial-Up Networking Client
+------------------------------------
+
+Windows 95 Dial-Up Networking also supports IPX over the RAS connection. The user
+account you use on your Dial-Up Networking client computer must have proper
+access permission to resources you connect to on the NetWare servers.
+
+On the RAS server, you must perform the following steps:
+
+1. Install the NWLink IPX/SPX Compatible protocol.
+
+2. Configure the RAS Server to allow remote clients running IPX. To enable this
+  option, use the Network Control Panel applet and configure the Remote Access
+  Service. Choose the Network button and select IPX in the Server Settings
+  section. NetBEUI and TCP/IP can be enabled or disabled.
+
+3. Choose the Configure button to the right of the IPX Checkbox. Make sure IPX
+  clients have access to the entire network by selecting the Entire Network
+  radio button.
+
+On the Windows 95 Dial-Up Networking client, you must perform the following
+steps:
+
+1. Install the IPX/SPX Compatible protocol.
+
+2. Install the Microsoft Client for NetWare networks.
+
+3. Edit the properties of your Dial-Up Networking icon for your RAS server and
+  enable the IPX protocol. To enable the IPX protocol, choose the Server Type
+  button and enable the IPX/SPX Compatible checkbox in the Allowed Network
+  protocols section.
+
+4. Once you are connected to the RAS server, use the Network Neighborhood
+  application to connect to resources on remote NetWare servers.
+
+NOTE: If you use Windows NT RAS and you are running CSNW or Windows 95 Dial-Up
+Networking and you are running the Microsoft Client for NetWare networks and you
+connect with IPX to a remote, you will lose connectivity to all local NetWare
+servers. You will only have NetWare connectivity to the remote network. You
+cannot browse or reconnect to local NetWare servers as long as the RAS or
+Dial-Up Networking connection exists.
+
+For additional information on this limitation, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q128008 RAS: Connecting Using IPXCP Drops Local NetWare Session
+
+NetWare is manufactured by Novell, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: Win95
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:; winnt:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

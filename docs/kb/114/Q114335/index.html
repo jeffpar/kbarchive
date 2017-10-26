@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114335/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114335/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114335/","publisher":null,"image":null,"headline":"Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114335-deleting-outdated-registry-trees-for-fortran-or-visual-c">Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114335
+Product(s): Microsoft C Compiler
+Version(s): 1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+- Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have installed more than one release of a Microsoft software development
+product and are noticing strange build errors that seem, like undefined
+identifiers, it is possible that you have an outdated or incorrect Visual C++ or
+FORTRAN PowerStation registry. This situation can be corrected by deleting the
+appropriate registry key. Exit the Visual WorkBench and follow the steps below.
+
+WARNING NOTE: Please follow the instructions closely, because the Windows NT
+installation may be corrupted if you happen to incorrectly delete the wrong
+key.
+
+1. Select the Run... option from the Program Manager's File menu.
+
+2. Type "regedt32" (without the quotation marks) in the Command Line field and
+  press [Enter].
+
+3. Select "HKEY_CURRENT_USER" under the Window menu
+
+4. Open the "HKEY_CURRENT_USER" folder
+
+5. Open the "Software" folder
+
+6. Open the "Microsoft" folder
+
+7. Select the "Development" folder (for Visual C++ version 4.0) or the "Visual
+  C++ &lt;version&gt;" folder (&lt;version&gt; may be blank or be a version
+  number such as "2.0") or the "FORTRAN PowerStation" folder.
+
+8. Press the [Del] key
+
+9. Answer [Yes] to the confirmation Dialog
+
+10. Close the Registry Editor (regedt32).
+
+The Visual WorkBench will inform you that a new registry key will be created the
+next time it is run.
+
+Additional query words: kbinf 1.00 2.00 2.10 4.00
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbFortranSearch kbvc100 kbZNotKeyword2 kbVC200 kbVC210 kbFORTRANPower32100NT kbFORTRANPower32400NT
+Version           : :1.0,2.0,2.1,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

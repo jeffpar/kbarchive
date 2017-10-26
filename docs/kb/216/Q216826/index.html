@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216826/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216826/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216826/","publisher":null,"image":null,"headline":"Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216826-smsinst-how-to-create-a-silent-uninstall-for-sms-installer-prog">Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216826
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:2.0; winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms120 kbAdvertisement kbPackage kbsmsInst kbSoftwareDist
+Last Modified: 19-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 2.0 
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server 2.0, you can uninstall a program when it is no
+longer advertised.
+
+In SMS Installer programs created with uninstall support, the uninstall process
+brings up a dialog box that prompts the user to select an Automatic or a Custom
+uninstall. In some cases, it might be necessary to have a silent uninstall that
+does not bring up any dialog boxes.
+
+MORE INFORMATION
+================
+
+You can create a silent uninstall in one of the following ways:
+
+Method 1
+
+Modify the UNINSTAL.IPF before compiling your program. SMS Installer includes
+UNINSTAL.IPF (located in Program files\Microsoft SMS Installer\Include) when
+uninstall support is selected. You can modify this file with the script editor
+view of SMS Installer. Modify the registry statement highlighted below with
+'=&gt; &lt;='
+
+  If APPTITLE Not Equal "" then
+     If System has Windows 95 Shell
+        Registry Key Software\Microsoft\.....
+  =&gt;    Registry Key Software\Microsoft\......   &lt;=
+     Else
+        .
+        .
+     End Block
+  End Block
+
+Change the value from:
+
+  "%UNINSTALL_PATH%" "%_LOGFILE_PATH_%" "%APPTITLE% Uninstall"
+
+to:
+
+  "%UNINSTALL_PATH%" /S "%_LOGFILE_PATH_%" "%APPTITLE% Uninstall"
+
+Save the script but do not compile it. All programs compiled after the
+modification of uninstal.ipf will have quiet uninstall automatically enabled.
+
+Method 2
+
+Modify the uninstall string in the client's registry after the program is
+installed. All programs with uninstall support create the following registry
+key:
+
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\&lt;Program name&gt;
+
+A string value 'UninstallString' is also created and its data is the path to
+uninstal.exe + install log file + application name.
+For example, the key would be the following for a program called Bogo Games:
+
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Bogo Games
+
+and the UninstallString Data would be similar to "C:\Program Files\Bogo
+Games\UNINSTAL.EXE "C:\Program Files\Bogo Games\INSTALL.LOG"
+
+To make the uninstall silent, you need to add a "/S" (without the quotation
+marks) after UNINSTAL.EXE. The UninstallString would become "C:\Program
+Files\Bogo Games\UNINSTAL.EXE /S "C:\Program Files\......""
+
+Additional query words: prodsms installer silent quiet
+
+======================================================================
+Keywords          : kbsms200 kbsms120 kbAdvertisement kbPackage kbsmsInst kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : WINDOWS:2.0; winnt:2.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

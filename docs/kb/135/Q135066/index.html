@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135066/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135066/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135066/","publisher":null,"image":null,"headline":"Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135066-pc-mapi-how-to-schedule-mail-messaging-on-windows-nt">Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135066
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Electronic mail messages can be sent automatically under Microsoft Windows NT
+when you use the Messaging Application Programming Interface (MAPI), included
+with Microsoft Mail for PC Networks. The following steps outline how to
+configure the system to send a message without requiring a user to be logged in
+at the Windows NT workstation.
+
+MORE INFORMATION
+================
+
+The following steps assume that a working version of a Simple MAPI application
+(in this example referred to as MAPISEND.EXE) has been developed and does not
+require any user intervention to send an electronic mail message.
+
+1. Configure the NT Registry such that the HKEY_USERS on Local
+  Machine\DEFAULT\Software\Microsoft\Mail \Microsoft Mail has the correct
+  settings, such as the following:
+
+     Login:REG_SZ, ServerPath:REG_SZ, and Password:REG_SZ
+
+  As a minimum, these fields will need to exist for automatic login to the
+  desired postoffice to occur. Modifications for these entries can be modified
+  using the REGEDT32.EXE utility.
+
+  WARNING: Using Registry Editor incorrectly can cause serious, system- wide
+  problems that may require you to reinstall Windows NT to correct them.
+  Microsoft cannot guarantee that any problems resulting from the use of
+  Registry Editor can be solved. Use this tool at your own risk
+
+2. Configure the Scheduler service. The Scheduler service can be activated via
+  the Windows NT Services icon found in the Control Panel.
+
+3. Select Scheduler, and set Startup to Automatic. The System Account should be
+  checked (this will allow mail to be sent automatically, regardless of whether
+  a user is logged in or not).
+
+4. Set the scheduled time using the Windows NT AT command. For example, run the
+  application every Monday at 2:30 p.m. (assuming the time set on the
+  workstation is not at or past this time):
+
+        AT 2:30pm /every:monday "C:\TOOLS\MAPISEND.EXE"
+
+  The Interact with Desktop option is not required on either the command line
+  parameters to AT or the Scheduler Service configuration. For the syntax on
+  the AT command, type "AT /?" (without the quotation marks) at the MS-DOS
+  prompt.
+
+Additional query words: 3.00 3.20 Windows NT visual basic vb
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

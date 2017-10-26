@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311350/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311350/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311350/","publisher":null,"image":null,"headline":"Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311350-how-to-create-a-custom-server-type-for-use-with-the-iis-lockdow">Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q311350
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 01-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Description of the Technique
+- Create the Custom Server Type Template
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to create a custom server type for use
+with the Internet Information Services (IIS) Lockdown Wizard.
+
+Description of the Technique
+----------------------------
+
+The latest version of the IIS Lockdown Wizard provides administrators with the
+ability to create custom server type templates.
+
+In the Iislockd.ini file, administrators can create custom server type templates
+for use with the IIS Lockdown Wizard. A custom server type template appears in
+the Lockdown Wizard as a configurable server type and can also be used when you
+run Iislockd.exe unattended.
+
+Create the Custom Server Type Template
+--------------------------------------
+
+1. In the [Info] section of the Iislockd.ini file, add the name of the custom
+  server type to the list for the appropriate variable (either ServerTypesNT4
+  or ServerTypes). In this example, MyCustomServerType is used.
+
+2. As a guide for the new custom server type template, copy the [sbs4.5]
+  template and paste the text at the bottom of the file.
+
+3. Change [sbs4.5] in the copied text to reflect the custom server type name
+  that you entered in step 1. For this example, the text is
+  [MyCustomServerType].
+
+4. Change the label value to something meaningful for the custom server type.
+
+5. Configure the feature settings of the server template to TRUE or FALSE.
+
+6. If you install URLScan, change the UrlScan_IniFileLocation value to point to
+  a custom URLScan .ini file that is used for this custom server type. You can
+  also use a Urlscan.ini file from another server type.
+
+7. Save the Iislockd.ini file.
+
+After you perform these steps, Iislockd.exe can be run in the GUI mode, and the
+custom server type appears in the available server types list. You can also use
+this new custom server type to run the IIS Lockdown Wizard unattended.
+
+After you create the custom server type template, the Iislockd.ini file may
+resemble the following:
+
+  [Info]
+  ServerTypesNT4=sbs4.5, exchange5.5, frontpage, proxy, staticweb, dynamicweb , other, iis_uninstalled
+  ServerTypes=MyCustomServerType, sbs2000, exchange5.5, exchange2k, sharepoint_portal, frontpage, biztalk, commerce, proxy, _
+  staticweb, dynamicweb, other, iis_uninstalled
+  UnattendedServerType=MyCustomServerType
+  Unattended=TRUE
+  Undo=FALSE
+
+  [MyCustomServerType]
+  label="My Custom Server Type Template"
+
+  Enable_iis_http=TRUE
+  Enable_iis_ftp= TRUE
+  Enable_iis_smtp= FALSE
+  Enable_iis_nntp= FALSE
+  Enable_asp= TRUE
+  Enable_index_server_web_interface= FALSE
+  Enable_server_side_includes= FALSE
+  Enable_internet_data_connector= FALSE
+  Enable_internet_printing= FALSE
+  Enable_HTR_scripting= FALSE
+  Enable_webDAV= FALSE
+  Disable_Anonymous_user_system_utility_execute_rights= TRUE
+  Disable_Anonymous_user_content_directory_write_rights= TRUE
+  Remove_iissamples_virtual_directory=TRUE
+  Remove_scripts_directory=TRUE
+  Remove_MSADC_virtual_directory=TRUE
+  Remove_iisadmin_virtual_directory=TRUE	
+  Remove_iishelp_virtual_directory=TRUE
+  UrlScan_Install=DISABLED
+  UrlScan_IniFileLocation=
+  AdvancedSetup =
+  UninstallServices=TRUE
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q310725 HOW TO: Run the IIS Lockdown Wizard Unattended
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

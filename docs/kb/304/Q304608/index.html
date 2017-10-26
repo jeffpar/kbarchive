@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/304/Q304608/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/304/Q304608/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/304/Q304608/","publisher":null,"image":null,"headline":"Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q304608-interrupted-forced-upgrade-causes-subsequent-upgrade-attempt-to">Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q304608
+Product(s): The Microsoft Network
+Version(s): 5.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network version 5.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to auto-upgrade to MSN 5.4, migration is stopped before
+completion. The log in error is as follows:
+
+"A MSN Software Update Was not required at this time. If needed you will receive
+an update when you close MSN and start a new session."
+
+CAUSE
+=====
+
+This is a known issue and the product team is working to resolve it.
+
+RESOLUTION
+==========
+
+Removed your MSN connection file, create a manual connection, connect using the
+manual connection, and then re-download the 5.4 software.
+
+To remove your MSN connection file
+
+1. Click Start, point to Settings, click Control Panel, and then click
+  Add/Remove Programs.
+
+2. Remove MSN Internet Access 5.4.
+
+3. If prompted, restart your computer.
+
+4. Follow the steps in KB article Q294853 to create a manual connection named
+  "temp".
+
+To connect with Windows 98 and 95
+
+1. Right-click the Internet Explorer icon on your desktop, and then click
+  Properties.
+
+2. Click the Connection tab.
+
+3. Under Dial-up Setting, click Add.
+
+4. Name the connection "temp", and then click Next.
+
+5. Type area code and number of MSN local access number, and then click Next.
+
+6. Click Finish.
+
+7. Click temp, and then click Set Default.
+
+8. Select Always dial my default connection.
+
+9. Click Settings.
+
+10. In the User name box, type "MSN/username".
+
+11. In the Password box, type your password.
+
+12. Click Properties, and then click the Server types tab.
+
+13. Under Accepted options, make sure that Enable software compression is
+  selected.
+
+14. Under Allowed Network Protocols, make sure that only TCP/IP is selected.
+
+15. Click OK twice.
+
+16. Double-click the Internet Explorer icon on your desktop to connect to MSN.
+
+To connect with Windows Millenium Edition
+
+1. Double-click My Computer.
+
+2. Double-click Control Panel.
+
+3. Double-click Dial-up Networking.
+
+4. Double-click Make New Connection.
+
+5. Name the connection "temp", and then click Next.
+
+6. Type area code and the number of a local access number, and then click Next.
+
+7. Click Finish.
+
+8. Right click "temp", and then click Properties.
+
+9. Click the Security tab.
+
+10. Type "MSN/user name" in the User name box.
+
+11. Type your password.
+
+12. Click the Dialing tab.
+
+13. Select This is my default Internet connection.
+
+14. Select Always dial my default connection.
+
+15. Click OK.
+
+16. Close Dial-Up Networking.
+
+17. Connect to MSN by double-clicking the Internet Explorer icon.
+
+To complete the MSN 5.4 autoupgrade installation
+
+1. Start Internet Explorer.
+
+2. Go to: http://fdl.msn.com/public/msnqfe/components/us/msn54fu.exe.
+
+3. Select Run this program from its current location, and then click the OK
+  button at the File Download prompt.
+
+4. If prompted with any security warnings, click Yes.
+  This will self-extract the .exe file and launch a new browser window that
+  points to https://migration.msn.com/upgrade53. You will be prompted with an
+  Explorer User Prompt box.
+
+5. Enter in your MSN Member ID without the domain name (don't include @msn.com,
+  just include the first half of the address, for example, johndoe), and then
+  click OK.
+
+6. Proceed through the migration Web pages as usual.
+  Note: Do not interrupt the migration. When the upgrade is complete, you will
+  be disconnected, and Logon Manager will start.
+
+7. Type your password.
+
+8. Click Sign-in.
+
+9. From Dial-Up Networking, remove the "temp" connection that you created in the
+  steps above. Note: Do not remove the MSN Internet Access connection.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN100
+Version           : :5.4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156479/","publisher":null,"image":null,"headline":"Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156479-info-differences-between-dlc-on-windows-95-and-windows-nt">Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156479
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 3.5,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbDLC kbOSWinNT400 kbSDKPlatform kbOSWin95 kbOSWinNT350 kbGrpDSNet
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Workstation versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the major differences between the Win32 Data Link Control
+(DLC) API as implemented on Windows 95 and Windows NT. It assumes familiarity
+with the DLC protocol and the relevant specification documents. It also assumes
+familiarity with the following Microsoft Knowledge Base article that describes
+the differences between Windows NT DLC and the IBM Specifications for OS/2
+1.xx:
+
+  Q156081 Differences between Data Link Control APIs on Windows NT &amp; DOS
+
+MORE INFORMATION
+================
+
+The differences between Windows 95 and Windows NT DLC are as follows:
+
+1. The Windows 95 API continues to use the CCB Application ID field. In Windows
+  NT and DLCAPI.H, this field is defined as uchReserved2 in the LCC_CCB
+  structure and is commented as reserved for DLC DLL. A Windows 95 application
+  must use this field as defined for OS/2 EE. That is:
+
+   - Issue a DIR.OPEN.ADAPTER command with this CCB set to zero. The DLC driver
+     will set this field to an Application ID value.
+
+   - This Application ID must be used in subsequent CCB requests by setting
+     uchReserved2 to this value.
+
+  This difference is necessary because Windows 95 does not have support for the
+  security mechanisms used by Windows NT in lieu of the application ID.
+
+  See The IBM LAN Technical Reference Manual for more information.
+
+2. The fields uchReserved1 and uchReserved3 must not be used by an application
+  under any circumstances.
+
+3. NT-specific extensions such as security, multiple processors, or
+  international character strings are not supported.
+
+4. Windows 95 continues to support the completion method of polling (busy
+  looping) on the CCB's return code (uchDlcStatus in the LLC_CCB structure).
+  This method is not reliable on Windows NT and an application that uses it on
+  Windows 95 may not work on Windows NT.
+
+5. Windows 95 allows a DIR.STATUS command to be issued before a DIR.OPEN.ADAPTER
+  CCB. NT does not allow this. You should be aware of this when writing
+  cross-platform applications.
+
+6. Windows 95 does not support:
+
+   - Multiple logical adapters.
+
+   - TRANSMIT.FRAMES.CCB.
+
+   - Direct station support that is global to all applications.
+
+7. The Windows 95 802.2 implementation does support CCB 1's or a 16-bit DOS
+  interface.
+
+8. An application must issue a BUFFER.CREATE command before issuing any of the
+  following CCBs:
+
+  BUFFER.FREE              DLC.OPEN.SAP         XMIT.I.FRAME
+  BUFFER.GET               DLC.OPEN.STATION     XMIT.DIR.FRAME
+  DIR.CLOSE.DIRECT         DLC.REALLOCATE       XMIT.TEST.CMD
+  DIR.OPEN.DIRECT          DLC.RESET            XMIT.UI.FRAME
+  DLC.CLOSE.SAP            DLC.STATISTICS       XMIT.XID.CMD
+  DLC.CLOSE.STATION        READ                 XMIT.XID.RESP.FINAL
+  DLC.CONNECT.STATION      READ.CANCEL          XMIT.XID.RESP.NOT.FINAL
+  DLC.FLOW.CONTROL         RECEIVE
+  DLC.MODIFY               RECEIVE.CANCEL
+
+REFERENCES
+==========
+
+1. IBM LAN Technical Reference SC30-3383. This describes the basic set of CCB2
+  functions as used by OS/2 EE.
+
+2. DLCAPI.H
+
+3. For more information, please see the following article in the Microsoft
+  Knowledge Base:
+
+  Q156081 Differences between Data Link Control APIs on Windows NT &amp; DOS
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbDLC kbOSWinNT400 kbSDKPlatform kbOSWin95 kbOSWinNT350 kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWin95search kbZNotKeyword3
+Version           : :3.5,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151995/","publisher":null,"image":null,"headline":"Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151995-configure-win95--winnt-logon-to-netware-server-w-nt-ras-server">Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151995
+Product(s): Microsoft Windows NT
+Version(s): 3.51 95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Windows NT remote access service (RAS) functionality to allow
+Windows 95 NetWare clients or Windows NT NetWare clients to dial into the
+Windows NT 3.51 RAS Server; these clients can then log on to a Novell NetWare
+server.
+
+MORE INFORMATION
+================
+
+The following are steps to provide the Windows 95 or Windows NT client that
+connects to a Windows NT 3.51 Server access to the Novell 3.x or 4.1 file
+server.
+
+1. Have Windows NT 3.51 Server running RAS Services.
+
+2. Make sure that NWLink IPX/SPX Compatible Transport is loaded on the Windows
+  NT Server and make sure that the frame type is set to match the frame type
+  used by IPX/SPX on your NetWare server (for example 802.3, 802.2,and so
+  forth). You can leave the Internal Network Number blank or set it to
+  00000000.
+
+3. On the RAS Server, use RAS Admin to add the user name that will be dialing in
+  (it is the same as the NetWare Server's user name.)
+
+4. Allow IPX users to route to Entire Network.
+
+5. Any authentication should work when tested with encrypted authentication and
+  clear text options.
+
+6. On the Win95 Client PC, load the Microsoft Client for NetWare and the IPX/SPX
+  Protocol. The Microsoft client for Microsoft Networks will not allow the
+  client to see NetWare servers. The Windows 95 client should load Microsoft
+  Client for NetWare Networkds.
+
+NOTE: Windows NT Workstation or Windows NT Server should be running Client
+Services for NetWare(CSNW) or Gateway Services for NetWare (GSNW).
+
+7. You should select the Client for NetWare Networks loaded as primary Network
+  Logon. This will not allow the client to process the Login Script Processing,
+  because it will be done automatically after connecting by means of RAS.
+
+8. Create a dial-up connection to the RAS Server from the Windows 95 computer.
+
+NOTE: At this point you may receive the following message:
+
+  You are currently using NetWare Servers which will be inaccessible if
+  you establish this connection. Click OK to continue dialing or cancel to
+  stop.
+
+This message is advisory in nature. It informs you that NetWare servers that are
+local as opposed to RAS connection may not be accessible. This message is only
+seen on Windows 95 clients.
+
+Once logged on, you should see the Logon Window for NetWare. If you don't,
+double-click on the Network Neighborhood icon to get to the Novell Server or
+Directory Tree.
+
+Additional query words: win95 prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbWin95search kbZNotKeyword3
+Version           : 3.51 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

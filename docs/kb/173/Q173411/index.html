@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173411/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173411/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173411/","publisher":null,"image":null,"headline":"Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173411-cg3-error-trying-to-delete-image-category-in-clipart-gallery">Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173411
+Product(s): Microsoft PowerPoint for Windows
+Version(s): 3.0; WINDOWS:97
+Operating System(s): 
+Keyword(s): kberrmsg kbdta kbclip
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Clip Gallery for Windows 95, version 3.0 
+- Microsoft Excel 97 for Windows 
+- Microsoft PowerPoint 97 for Windows 
+- Microsoft Publisher 97 
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, make sure you understand how to restore it if a problem
+occurs. For information about how to do this, view the "Restoring the Registry"
+Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in
+Regedt32.exe.
+
+
+When you attempt to delete a category or a thumbnail from Clip Gallery, you
+receive one of the following error messages:
+
+  Cannot delete this clip because it resides in a read-only preview file.
+
+  -or-
+
+  Unable to fully delete category because some of the previews reside in a
+  read-only preview file.
+
+  -or-
+
+  This category cannot be deleted.
+
+CAUSE
+=====
+
+This error occurs because the clip image or category that you are attempting to
+delete is stored in a ClipArt Gallery Package (.cag) file on a read-only volume.
+For example, the .cag file is stored on a read-only network location or a
+compact disc.
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To work around this behavior, move the .cag file to your hard disk, remove the
+read-only attribute and then delete the desired category or clip image,
+following these steps:
+
+1. Determine the path for the .cag file that contains the clip image or category
+  you want to delete. To do this, follow these steps:
+
+  a. On the Insert menu, point to Picture, and then click Clip Art.
+
+  b. Select the image you want to delete (or select any image in the category
+     you want to delete) and then click Clip Properties.
+
+     The Clip Properties dialog box appears. It contains the path to the .cag
+     file and it also indicates whether the image is read-only.
+
+  c. Note the path and then click Cancel.
+
+2. On the Windows Start menu, point to Programs, and then click Windows
+  Explorer.
+
+3. Open the folder that contains the .cag file you want to delete.
+
+4. Copy the .cag file to your hard disk and note the path for this file.
+
+5. Remove the read-only attribute from the file, following these steps:
+
+  a. Right-click the .cag file and then click Properties on the menu that
+     appears.
+
+  b. In the Attributes section, click to clear the Read-only check box.
+
+  c. Click OK.
+
+6. Modify the registry so that Clip Gallery can locate the .cag file, using
+  these steps:
+
+  a. Exit all programs.
+
+  b. On the Start menu, click Run.
+
+  c. In the Open box, type "Regedit" (without the quotation marks) and then
+     click OK.
+
+  d. On the Edit menu, click Find.
+
+  e. In the Find dialog box, click to select Data and click to clear the
+     remaining check boxes.
+
+  f. In the Find What box, enter the name of the .cag file you identified in
+     step 1. Click Find Next.
+
+     When the search is completed, the registry key that is used to store the
+     location of the .cag file is displayed in the status bar. For example, the
+     registry key, which appears in the Status bar, may look similar to this:
+
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClipArtGallery\3.0\ 
+        ConcurrentDatabases\Publisher 4.0 ClipArt4
+
+  g. In the right-hand pane of Registry Editor, in the Name column, double-
+     click CAG.
+
+  h. In the Edit String dialog box, in the Value Data box, select the path and
+     delete it. Type the new path you noted in step 4.
+
+  i. Click OK.
+
+You can now delete categories and clips that reside in the local .cag file.
+
+STATUS
+======
+
+This behavior is by design. Microsoft welcomes suggestions or comments about
+changes in functionality and product design. You are invited to submit
+suggestions by filling out the form at the following Microsoft Web site:
+
+  http://www.microsoft.com/regwiz/regwiz.asp
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q161718 CG: How to Create Clip Gallery Packages
+
+Additional query words: pub97 clip-art gallery galrey galry cag wmf graphic remove unable to get rid of 3.00 4.00 thumbnail thumb
+
+======================================================================
+Keywords          : kberrmsg kbdta kbclip 
+Technology        : kbWordSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWord97 kbWord97Search kbPublisherSearch kbWord95Search kbZNotKeyword6 kbPowerPt97 kbZNotKeyword2 kbExcel95Search kbExcel97Search kbPowerPt97Search kbPublisher97 kbClipGallerySearch kbZNotKeyword3 kbPowerPt95Search kbClipGallery300 kbHomePubSearch kbPhotoDrawSearch kbWorks400Search kbExcelWinSearch
+Version           : :3.0; WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130700/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130700/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130700/","publisher":null,"image":null,"headline":"Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130700-pc-mac-err-msg-the-preference-file-could-not-be-found">Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130700
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, on platform(s):
+   - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Mail for PC Networks, Macintosh workstation, you can have
+difficulty connecting to the Maildata share on the server and/or logging into
+Mail. The error message displayed is:
+
+  The Preference file could not be found. Where is your postoffice located?
+
+CAUSE
+=====
+
+The following are possible causes of the above error:
+
+1. The client is being launched for the first time, and the MS Mail/PC LANs
+  Prefs cache file has not been created yet.
+
+2. The client has lost its connection to the Maildata share, and the connection
+  needs to be re-established.
+
+3. The client's rights on the server are insufficient for it to function.
+
+4. The MS Mail/PC LANs Prefs file is corrupt.
+
+RESOLUTION
+==========
+
+1. The MS Mail/PC LANs Prefs cache file will be created when you launch the
+  Macintosh client.
+
+  a. Launch the Mail client. The following message will be displayed:
+
+  The Preference file could not be found. Where is your postoffice created?"
+
+  b. Select Find PO.
+
+  c. In the Where is the Mail Data Folder? dialog box, select Desktop. Select
+     the Maildata server share found on the Desktop.
+
+  d. A new dialog box will be displayed, Select Postoffice [postoffice name]?.
+     Select the OK button. Type your user and password information.
+
+  e. Select the OK button. Mail will launch.
+
+2. Verify that the PC Maildata share can be seen on the Macintosh Desktop. If
+  you see the share icon, this confirms that the connection to the server has
+  been made. However, if the PC Maildata share cannot be seen, perform the
+  following steps to establish the connection:
+
+  a. From the Apple menu, choose the Chooser. Then select AppleShare and the
+     appropriate AppleTalk zone and Maildata server. Select the OK button.
+
+  b. In the Connect to the File Server [server name] as: dialog box, select
+     Registered User, and type the information for the name and password that
+     will enable the workstation to login to the Maildata server. Select the OK
+     button.
+
+  c. In the Select Items You Want to Use: dialog box, select the Maildata
+     share, and select the checkbox to enable the share to be opened at system
+     startup.
+
+  d. Accept the default of Save my Name Only, and select the OK button. The
+     Maildata share icon should appear on the Desktop.
+
+3. If the Maildata share is mounted on the Desktop, and the Macintosh client
+  still cannot find the postoffice, verify that you have sufficient rights to
+  connect to the Maildata share. You should have the following rights to the
+  Maildata subdirectory on the Mail for PC Networks server:
+
+  Network Operating System            Rights Required for Macintosh Users
+  -----------------------------------------------------------------------
+  Windows NT                          Full Control
+  LAN Manager                         All Permissions
+  NetWare                             Read, Write, Create, Erase,
+                                       Modify, and Filescan
+
+4. If the PC Mail postoffice can be seen and the access rights have been
+  verified, the MS Mail/PC LANs Prefs file may be corrupt.
+
+  a. To create a new one, drag the MS Mail/PC LANs Prefs file that is located
+     in the System Folder to the Trash.
+
+  b. Launch the Mail client. The following message will be displayed:
+
+  The Preference file could not be found. Where is your postoffice created?"
+
+  c. Select Find PO.
+
+  d. In the Where is the Mail Data Folder? dialog box, select Desktop. Select
+     the Maildata server share found on the Desktop.
+
+  e. A new dialog box will be displayed, Select Postoffice [postoffice name]?.
+     Select the OK button. Type your user and password information.
+
+  f. Select the OK button. Mail will launch.
+
+Additional query words: 3.20 mac preferences error
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

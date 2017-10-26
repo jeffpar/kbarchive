@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183496: XADM: Importing International Characters Into Exchange Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183496: XADM: Importing International Characters Into Exchange Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183496/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183496/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183496/","publisher":null,"image":null,"headline":"Q183496: XADM: Importing International Characters Into Exchange Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183496-xadm-importing-international-characters-into-exchange-fails">Q183496: XADM: Importing International Characters Into Exchange Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183496
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to import a CSV file with international characters via the Exchange
+directory import, the characters will be replaced with symbols or incorrect
+characters.
+
+CAUSE
+=====
+
+The CSV file was created using MS-DOS text, which uses the IBM PC Extended
+Character Set (ECS). The Microsoft Exchange Server Administrator program uses
+the Standard ANSI character set, which is incompatible with ECS.
+
+MORE INFORMATION
+================
+
+MS-DOS uses the IBM PC Extended Character Set, or ECS for short. The lower 128
+values are the same as the ASCII character set, but values 128-255 map into the
+European characters differently from other character sets, including those used
+in Windows.
+
+Unfortunately, the ANSI character set is incompatible with the ECS character set
+used by DOS. For example, the British pound symbol is code 163 in ANSI, but code
+156 in ECS. Likewise, ANSI does not include many of the ECS symbols,
+particularly the line drawing characters. If you try to display a DOS document
+in Windows, Windows attempts to convert the ECS characters to ANSI. Any
+character that does not convert is replaced by an arbitrary graphic. Therefore a
+round-trip conversion from DOS to Windows and back will not re-create the
+original document.
+
+If you are using Visual Basic to create CSV files from MS-DOS text, you can refer
+to the following Knowledge Base article to understand how to convert between the
+MS-DOS and ANSI character set used by Microsoft Exchange:
+
+  Q75857 How to Print the ASCII Character Set in Visual Basic
+
+This article shows you how to use the OEM_Fixed font to print the ECS character
+set. Simple modifications to this program can print out the Windows ANSI
+character set.
+
+Additional query words: batch import export random bimport code page
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

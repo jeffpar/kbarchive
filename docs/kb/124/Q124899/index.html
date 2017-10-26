@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124899/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124899/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124899/","publisher":null,"image":null,"headline":"Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124899-bug-sqlnumresultcols-may-fail-after-prepared-sql-statement">Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124899
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:1.0,2.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+BUG# AddonBugs: 10888 (1.02.3231)
+
+SYMPTOMS
+========
+
+After preparing a SELECT statement, a call to an ODBC meta data function call,
+such as SQLDescribeCol, SQLNumResultCols, and SQLColAttributes, fails with the
+message:
+
+  Syntax error near 'where'
+
+This happens only if the above functions are called after SQLPrepare has been
+called but before SQLExecute has been called. The following code demonstrates
+the problem:
+
+     SQLPrepare(hstmt, "select sum(qty) from sales group by stor_id")
+     SQLNumResultCols(hstmt, &amp;col)  ==&gt; SQL_ERROR
+     SQLError() ==&gt; "Syntax error near 'where'"
+
+CAUSE
+=====
+
+The SQL Server driver is sending an improperly constructed SQL statement to SQL
+Server at the time SQLNumResultCols, SQLDescribeCol, and SQLColAttributes are
+called.
+
+WORKAROUND
+==========
+
+Because this problem appears only if SQLExecute has not been called, it is
+recommended that meta data function calls be called after both SQLPrepare and
+SQLExecute have been called.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 16-bit Microsoft SQL Server
+driver version 1.02.3231 and 32-bit SQL Server driver version 2.00.1912. We are
+researching this problem and will post more information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1.02.3231 2.00.1912 Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200 kbODBC100
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

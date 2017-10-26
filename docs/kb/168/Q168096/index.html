@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168096: Windows 95 SNA Server Client And Encryption Requirements | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168096: Windows 95 SNA Server Client And Encryption Requirements" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168096/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168096/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168096/","publisher":null,"image":null,"headline":"Q168096: Windows 95 SNA Server Client And Encryption Requirements","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168096-windows-95-sna-server-client-and-encryption-requirements">Q168096: Windows 95 SNA Server Client And Encryption Requirements</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168096
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows 95 SNA Server version 3.0 and 4.0 clients require one of the
+following to support the Data Encryption feature introduced with SNA Server
+3.0:
+
+- Client for Microsoft Networks
+
+  -or-
+
+- DCOM for Windows 95
+
+If one of these components is not installed, and encryption is enabled for the
+user trying to access the SNA Server, the connection attempt will fail. The
+applets included with SNA Server will return errors similar to the following
+when this occurs.
+
+5250 Applet:
+
+  There are no SNA Servers running in your domain.
+
+  [F004][010000F0]
+
+3270 Applet:
+
+  ERROR - Reading SNA Server Configuration.
+
+MORE INFORMATION
+================
+
+- The Data Encryption feature of SNA Server 3.0 requires that SNA Server
+  clients are validated using the NTLM logon process. Third-party network
+  redirectors such as Novell Netware Client 32 which do not provide the NTLM
+  security interface will cause the user logon to fail when encryption is
+  used.
+
+  The Microsoft Network Client and DCOM for Windows 95 install the necessary
+  NTLM security components to allow the user logon to succeed when encryption
+  is used.
+
+  DCOM for Windows 95 is a Windows 95 addon that provides support for
+  distributed object computing. For more information on DCOM for Windows 95,
+  please refer to the following Microsoft Web Page:
+
+  http://www.microsoft.com/com/dcom/dcom95/dcom1_3.asp
+
+- SNA Server 2.x client software does not support encryption. If encryption is
+  enabled for any users/groups that are running SNA Server 2.x clients, those
+  clients will not be able to connect to SNA Server.
+
+- Encryption can be used over any of the client/server LAN transports supported
+  by SNA Server.
+
+- The Windows 95 user does not need to logon to the Windows NT domain that the
+  SNA Server belongs or or to any trusted domain in order to use encryption.
+
+- If the Client for Microsoft Networks is not installed, the Windows 95 SNA
+  Server client needs to be configured so that the "Use Windows NT domain
+  password" option is not selected under the Advanced tab in the client
+  configuration. If this option is not selected, the Logon Domain has to be
+  entered to specify which Windows NT Domain will be used to validate the user
+  account. This also applies if the Client for Microsoft Networks is installed
+  and a non-Named Pipe transport (in other words, TCP/IP or IPX/SPX) is
+  selected for the SNA Server client.
+
+Additional query words: snaencrypt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

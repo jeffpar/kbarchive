@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194892: Load-Balanced Application Does Not Work Properly Using WLBS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194892: Load-Balanced Application Does Not Work Properly Using WLBS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194892/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194892/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194892/","publisher":null,"image":null,"headline":"Q194892: Load-Balanced Application Does Not Work Properly Using WLBS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194892-load-balanced-application-does-not-work-properly-using-wlbs">Q194892: Load-Balanced Application Does Not Work Properly Using WLBS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194892
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Load Balancing Service 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An application that is load balanced does not appear to work correctly when
+running Windows NT Load Balancing Service (WLBS).
+
+- All of the application's ports are not being load balanced. Some applications
+  require multiple ports to perform their functions. For example, FTP uses
+  ports 20 and 21. If both ports are not load balanced (usually with one port
+  rule), the application will not work correctly. Check that the applicable
+  port rule covers all ports used by the application and be sure to enable
+  client affinity (single or Class C).
+
+- The application is not started on all cluster hosts. WLBS does not start or
+  control applications. You should check that the application has been started
+  on every cluster host. If an application fails, you can disable its
+  associated port range using the wlbs disable command.
+
+- The application should not be load balanced. Applications that update a file
+  on the local cluster host may not work correctly when load balanced because
+  multiple instances of the application may conflict when attempting to update
+  a common file. For example, e-mail, groupware, and database servers often
+  have this problem. Do not load balance an application until its data sharing
+  requirements are thoroughly understood and met.
+
+- The application is not a TCP/IP service. WLBS load balances applications by
+  distributing incoming client requests among the cluster hosts. If a server
+  application is not structured as a TCP/IP service that receives client
+  requests, it will not benefit from using WLBS, and you will not observe load
+  balancing.
+
+- Your firewall is proxying client traffic and making it appear as if all
+  connections are originating from the same client IP address. If the load
+  balancing rule is configured with Single affinity, all traffic will be
+  handled by the same cluster host. Turn off address translation (proxying) on
+  the firewall or change affinity from Single to None.
+
+  NOTE: You may need Single affinity to provide session support.
+
+Additional query words: WLBS Convoy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400 kbWinNTLBSSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155055/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155055/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155055/","publisher":null,"image":null,"headline":"Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155055-prb-problem-adding-vb-file-from-other-drive-to-vss-project">Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155055
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbVBp400
+Last Modified: 08-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual Basic Forms and other files can be located anywhere on any machine. The
+.VBP file contains pointers to these files wherever they may be located. Visual
+SourceSafe needs to have the project files somewhere in the working directory
+structure in order to make the mapping association with the project. If this
+mapping association is not followed, the glyphs that represent file status may
+be incorrect.
+
+For example, a file's glyph in the SourceSafe Explorer may indicate that the file
+is under source code control and not checked out (for instance, the file is
+read-only) while the Visual Basic glyph may say that the file is writable. This
+behavior occurs because the .VBP file is looking at one file and Visual
+SourceSafe is looking at a different copy of the same file.
+
+CAUSE
+=====
+
+The Form on the different drive is a read/write file. The form in the working
+directory is a read-only file. Visual Basic is still looking at the file on the
+different drive while Visual SourceSafe is looking at the file in the working
+directory.
+
+RESOLUTION
+==========
+
+Save the project (File, Save Project), and then refresh the project (Add- Ins,
+SourceSafe, Refresh File Status). These two steps update the .VBP file so it is
+looking at the file written for that project in the SourceSafe Working
+Directory. The original file still exists in the location where it was
+originally saved, but the Visual Basic project no longer points to it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+
+1. Start Visual Basic 4.0. Form1 is created by default.
+
+2. Start up the Source Code Control Options (Add-Ins, SourceSafe, Options). Set
+  "Add files to source control when adding them to Visual Basic" to NO.
+
+3. Open a Visual Basic project that is under source code control. Check the
+  files out. Add a new form to the Visual Basic project and save this new form
+  to a different drive.
+
+4. Run the following SourceSafe command:
+
+  "Add-Ins, SourceSafe, Add files to SourceSafe..."
+
+  and select the newly-saved form.
+
+  The following informational message will be displayed:
+
+  File &lt;path on different drive&gt;\&lt;newform&gt;.frm could not be mapped
+  to the SourceSafe project $/&lt;SourceSafe Project&gt;. Copy the file to
+  &lt;working directory path&gt;?
+
+5. Answer YES to the message. The following message is then displayed:
+
+  "Please save and check-in your Visual Basic project file. Otherwise your
+  project will contain references to the remapped files in their old locations
+  instead of their current locations."
+
+  NOTE: The glyph for the form shows that the form is under source code control
+  but its checkin/checkout status is not defined.
+
+6. Save the project. Check in the project file. At this point, the glyphs
+  display as they should.
+
+The original copy of the form is still located on the different drive. In
+addition, the new copy of the form is located in the project working directory.
+Only the new copy of the form is pointed to by the .VBP and updated with Visual
+SourceSafe. The old copy will need to be deleted manually.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbVBp400 
+Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

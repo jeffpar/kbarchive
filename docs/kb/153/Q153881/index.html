@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153881/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153881/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153881/","publisher":null,"image":null,"headline":"Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153881-howto-how-to-assign-the-activex-control-lpdispatch-property-in">Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153881
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbCtrl kbMFC kbVBp kbVC400 kbVC420 kbGrpDSVB
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is often useful for one ActiveX (OLE) Control to hold an LPDispatch pointer
+to another control on the same Visual Basic form. The first control can use this
+pointer to call methods and/or access properties on the second control using OLE
+Automation. This article demonstrates how to create a property of type
+LPDispatch on an MFC ActiveX Control, and how to properly set this property to
+another control's IDispatch pointer in Visual Basic.
+
+NOTE: Although this article discusses properties of type LPDispatch, this
+information also applies to properties of type LPUnknown.
+
+MORE INFORMATION
+================
+
+Follow these steps to add a property to a custom ActiveX control that is to hold
+another control's IDispatch pointer:
+
+1. Using ClassWizard, add a property of type LPDispatch to the control. Fill in
+  a name for the property, and select the "Member Variable" button for this
+  property.
+
+2. Next, you must initialize this member variable to NULL in the control's
+  constructor. If you do not, Visual Basic will cause a General Protection
+  Fault when you try to assign a value to it. This occurs because MFC tries to
+  call Release() on the uninitialized pointer. If the pointer is set to NULL,
+  Release() will not be called by MFC.
+
+3. Build the control, and place it on a form in Visual Basic.
+
+The following lines of Visual Basic code demonstrate how to set the property to
+another control's IDispatch pointer:
+
+  'Set the control's DispatchProp property to the DBCombo OLE control on
+  'this form.
+  Set MyOcx1.DispatchProp = DBCombo1
+
+    . . .
+    . . .
+
+  'Don't forget to set this property to Nothing when finished
+  Set MyOcx1.DispatchProp = Nothing
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q141414 How to Enumerate OLE and VB Controls from an OLE Control Visual C++
+  Books Online, Programming with MFC Encyclopedia.
+
+Additional query words: 4.00 4.10 4.20 kbinf
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbCtrl kbMFC kbVBp kbVC400 kbVC420 kbGrpDSVB 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

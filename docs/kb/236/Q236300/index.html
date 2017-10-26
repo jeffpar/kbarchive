@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236300/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236300/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236300/","publisher":null,"image":null,"headline":"Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236300-xfor-notes-migration-wizard-only-looks-at-namesnsf">Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236300
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft Exchange Migration Wizard, a list of Lotus Notes
+users available for migration is displayed. The list may not include all the
+Notes users. This article explains the cause of this problem and suggests a
+workaround action to this problem.
+
+CAUSE
+=====
+
+The Migration Wizard first verifies the existence of Regist.nsf file, a special
+Name and Address Book (NAB) for some Japanese installations of Notes. If the
+Regist.nsf file exists, the wizard uses a different set of fields for migration.
+If it does not exist, the Migration Wizard only looks for the Names.nsf file. If
+the address list is kept in a different database (file), those users' names are
+not displayed in the Migration Wizard User Interface (UI).
+
+WORKAROUND
+==========
+
+If you want the users to be included in the migration, you must add their names
+to the Names.nsf file. The following list of required and optional fields in a
+Notes Document shows the mappings that the Migration Wizard uses.
+
+The required fields:
+
+  Form=Person
+  Mailserver=&lt;server being migrated (DN or Abbreviated DN)&gt;
+  Mailfile=&lt;NSF being migrated&gt;
+  Fullname=&lt;Full name of user being migrated&gt;
+
+Optional Fields that will be migrated (if available):
+
+  ShortName =&gt; Mail-Nickname &amp; NT-Acct-Name/Obj-User
+  FirstName =&gt; Given-Name
+  LastName =&gt; Surname
+  MiddleInitial =&gt; Initials
+  CompanyName =&gt; Company
+  Department =&gt; Department
+  Assistant =&gt; Assistant-Name
+  JobTitle =&gt; Title
+  Location =&gt; Physical-Delivery-Office-Name
+
+  OfficePhoneNumber =&gt; Telephone-Office1
+  CellPhoneNumber =&gt; Telephone-Mobile
+  OfficeFAXPhoneNumber =&gt; Telephone-Fax
+  PhoneNumber =&gt; Telephone-Home
+  HomeFAXPhoneNumber =&gt; Telephone-Home-Fax
+  Comment =&gt; Comment
+  State =&gt; State-Or-Province-Name
+  StreetAddress =&gt; Street-Address
+  Zip =&gt; Postal-Code
+  City =&gt; Locality-Name
+  country =&gt; Text-Country
+  Manager =&gt; Extension-Attribute-13
+  Children =&gt; Extension-Attribute-2
+  Spouse =&gt; Extension-Attribute-1
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : winnt:5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

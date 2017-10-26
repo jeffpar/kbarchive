@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159311: Instantiating Remote Components in MTS and IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159311: Instantiating Remote Components in MTS and IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159311/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159311/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159311/","publisher":null,"image":null,"headline":"Q159311: Instantiating Remote Components in MTS and IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159311-instantiating-remote-components-in-mts-and-iis">Q159311: Instantiating Remote Components in MTS and IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q159311</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span><span class="p">,</span><span class="m">4.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbtool</span> <span class="n">kbASP</span> <span class="n">kbCOMt</span> <span class="n">kbMTS</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">29</span><span class="p">-</span><span class="n">MAR</span><span class="p">-</span><span class="m">2000</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="m">2.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="m">4.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">contains</span> <span class="n">information</span> <span class="n">on</span> <span class="n">how</span> <span class="k">to</span> <span class="n">use</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Pages</span> <span class="p">(</span><span class="n">ASP</span><span class="p">)</span> <span class="k">to</span>
+<span class="n">instantiate</span> <span class="n">a</span> <span class="n">remote</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">component</span> <span class="n">that</span> <span class="n">resides</span>
+<span class="n">on</span> <span class="n">a</span> <span class="n">separate</span> <span class="n">computer</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="p">(</span><span class="n">IIS</span><span class="p">)</span>
+<span class="n">computer</span><span class="p">.</span> <span class="n">This</span> <span class="n">article</span> <span class="n">also</span> <span class="n">addresses</span> <span class="n">the</span> <span class="n">issues</span> <span class="n">that</span> <span class="n">may</span> <span class="n">arise</span> <span class="k">from</span> <span class="n">developing</span>
+<span class="n">remote</span> <span class="n">components</span> <span class="n">for</span> <span class="n">MTS</span> <span class="m">2.0</span> <span class="k">and</span> <span class="n">IIS</span> <span class="m">4.0</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">NTLM</span> <span class="n">security</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="k">not</span> <span class="n">possible</span> <span class="k">to</span> <span class="n">directly</span> <span class="n">call</span> <span class="n">remote</span>
+<span class="n">components</span><span class="p">,</span> <span class="n">regardless</span> <span class="k">of</span> <span class="n">the</span> <span class="n">IIS</span> <span class="n">application</span><span class="s1">'s activation setting (in- process
+or out-of-process) or identity (local or domain user). To call remote components
+when using NTLM security, you need to do the following:
+
+1. Create an intermediate MTS package with a domain identity.
+
+2. Set the package activation to run in a dedicated server process.
+
+3. Install an intermediate component that calls the remote component into the
+  package. This intermediate component is then called from the ASP script and
+  in turn, calls the remote component.
+
+NOTE: When you use this technique, the direct caller, as seen by the remote
+component, will not be the original IIS caller, but the identity of the
+intermediate package.
+
+If you are using Basic security, it is possible to call remote components
+directly. However, this requires that you set the Basic Authentication Domain to
+the domain and not the local machine. Although this setting allows the remote
+components to see the direct caller as the original IIS caller and not the
+intermediate package identity, it is not recommended. For more information on
+Basic security, please see the IIS 4.0 online documentation.
+
+If you are using Anonymous security, it is possible to call remote components
+directly. However, this requires that you set the Anonymous User to a domain
+account. Although this setting allows the remote components to see the direct
+caller as the original IIS caller and not the intermediate package identity, it
+is not recommended. Anonymous security allows access to everyone. Allowing
+everyone access to your domain, even through a restricted account, can be a
+serious security risk. Therefore, it is recommended that you do not set the
+Anonymous account to a domain account. Instead, you should set the Anonymous
+User to the default (or some other local account) and use the intermediate MTS
+package technique, following the steps described above, to instantiate remote
+MTS components (without having to use NTLM).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbASP kbCOMt kbMTS 
+Technology        : kbMTSsearch kbiisSearch kbAudDeveloper kbiis400 kbMTS200
+Version           : winnt:2.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

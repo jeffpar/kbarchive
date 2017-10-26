@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228800/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228800/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228800/","publisher":null,"image":null,"headline":"Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228800-howto-call-a-parameterized-sql-server-stored-procedure-from-rdo">Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228800
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbRDO kbRDO200 kbSQLServ kbStoredProc kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how the rdoQuery object can be used to call a parameterized
+SQL Server stored procedure.
+
+MORE INFORMATION
+================
+
+The sample in this article uses the Pubs database in SQL Server to demonstrate
+the use of the RDO query object to call parameterized queries. The Pubs database
+contains a stored procedure called byroyalty that accepts an integer parameter
+and returns all authors from the Titleauthor table whose royalty amount matches
+the passed value. Although this stored procedure does not return any values to
+the caller, the example reserves space for a return value in the Parameters
+collection for illustrative purposes.
+
+Create and execute the following program. It calls the byroyalty stored procedure
+in the SQL Server Pubs sample database. Then, it prints values from the returned
+recordset in the debug window. Substitute a valid Server, User ID and Password
+in the connection string.
+
+Sample Code
+-----------
+
+  Private Sub Command1_Click()
+
+  Dim rs As rdoResultset
+  Dim cn As New rdoConnection
+  Dim qd As New rdoQuery
+  Dim cl As rdoColumn
+  	
+  cn.Connect = "uid=sa;pwd=;server=MyServer;" _
+      &amp; "driver={SQL Server};database=pubs;" _
+      &amp; "DSN='';"
+  cn.CursorDriver = rdUseOdbc
+  cn.EstablishConnection rdDriverNoPrompt
+
+  Set qd.ActiveConnection = cn
+  qd.SQL = "{ ? = call dbo.ByRoyalty (?) }"
+      
+  qd(0).Direction = rdParamReturnValue
+  qd(1).Direction = rdParamInput
+
+  qd.rdoParameters(1) = 100
+
+  Set rs = qd.OpenResultset(rdOpenForwardOnly, rdConcurReadOnly)
+
+  For Each cl In rs.rdoColumns
+      Debug.Print cl.Name,
+  Next
+      Debug.Print
+
+     Do Until rs.EOF
+       For Each cl In rs.rdoColumns
+          Debug.Print cl.Value,
+  	    Next
+  	    rs.MoveNext
+  	    Debug.Print
+          Loop
+
+  	rs.Close
+  	qd.Close
+  	cn.Close
+
+  End Sub
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q177358 HOWTO: Pass a Date Value to a Oracle Stored Procedure
+
+  Q174981 HOWTO: Retrieve Typical Resultsets From Oracle Stored Procedures
+
+  Q166211 HOWTO: Call SQL Server System Stored Procedures from RDO Procedures
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbRDO kbRDO200 kbSQLServ kbStoredProc kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

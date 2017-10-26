@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154825/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154825/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154825/","publisher":null,"image":null,"headline":"Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154825-howto-extract-multiple-rdo-resultsets-from-stored-procedures">Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154825
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbRDO kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SQL Server stored procedures are capable of returning more than one recordset
+and the Remote Data Object (RDO) has the ability to access these Multiple
+Resultsets.
+
+When calling these stored procedures, the following error can be encountered:
+
+  Error 40002
+
+  "37000: [Microsoft][ODBC SQL Server Driver][SQL Server]Cannot open a cursor on
+  a stored procedure that has anything other than a single
+  select statement in it"
+
+The following code sample showing how to return the multiple Resultsets using the
+MoreResults Property of the RDO.
+
+MORE INFORMATION
+================
+
+There are two methods to avoid Error 40002.
+
+Method 1
+--------
+
+Use The ODBC Cursor library rather than Server Side Cursors. To do this, use the
+following code:
+
+     rdoEngine. rdoDefaultCursorDriver = rdUseODBC
+
+  - or -
+
+     rdoEnvironments(0).CursorDriver = rdUseOdbc
+
+This option gives better performance for small result sets, but may degrade
+quickly for larger result sets depending on the Server and workstation
+configuration.
+
+NOTE: If you are using SQL text fields, you must use Server-side cursors to
+bypass Error 40002"
+
+Method 2
+--------
+
+Use Server Side Cursors, a Forward Only Cursor, and a rowset size of 1. Make the
+server create a cursor-less resultset on the server side by using a forward only
+cursor and a RowSetSize of 1.
+
+The following code sample illustrates how to create a stored procedure that
+returns multiple result sets using method 2.
+
+1. Create the stored procedure on SQL Server:
+
+  a. Start the ISQL utility that shipped with SQL server.
+
+  b. Connect to your SQL server.
+
+  c. Select the pubs database from the combo box labeled DB.
+
+  d. Enter the following lines into the Query Tab:
+
+        CREATE PROCEDURE TestMultiResults AS
+        select * from authors
+        select * from discounts
+        GO
+   
+
+  e. Choose the Query|Execute menu. The Results tab should display:
+
+     This command did not return data, and it did not return any rows
+
+     A stored procedure called TestMultiResults has now been created in the pubs
+     database on SQL Server.
+
+2. Create the Visual Basic client to call the stored procedure:
+
+  a. Start Visual Basic. Form1 is created by default.
+
+  b. Add a Command Button (Command1) and a List Box (List1) to Form1.
+
+  c. Add the following code to Form1:
+
+        Private Sub Form_Load()
+           Command1.Caption = "Run Stored Procedure"
+        End Sub
+
+         Private Sub Command1_Click()
+          Dim cn As rdoConnection
+          Dim ps As rdoPreparedStatement
+          Dim rs As rdoResultset
+          Dim strConnect As String
+          'set cursor driver to use server-side cursors
+          rdoDefaultCursorDriver = rdUseServer
+
+          'open a connection to the pubs database using DSNless connections
+          'replace myServer with the name of your SQL server
+
+          strConnect = "Driver={SQL Server}; Server=myServer; " &amp; _
+                       "Database=pubs; Uid=sa; Pwd="
+          Set cn = rdoEnvironments(0).OpenConnection(dsName:="", _
+                                                Prompt:=rdDriverNoPrompt, _
+                                                ReadOnly:=False, _
+                                                Connect:=strConnect)
+
+          'create a prep stmt for the stored proc call
+          Set ps = cn.CreatePreparedStatement("MyPs", _
+                                              "{call TestMultiResults}")
+          'set the RowSet size to 1
+           ps.RowsetSize = 1
+
+           'open the resultset with forward-only cursor
+           Set rs = ps.OpenResultset(rdOpenForwardOnly)
+
+           'add the first resultset to a list box
+           While Not rs.EOF
+               list1.AddItem rs("au_fname") &amp; " " &amp; rs("au_lname")
+               rs.MoveNext
+           Wend
+
+           'move to the second resultset
+           rs.MoreResults
+           list1.AddItem "Second Resultset Below"
+           'add the second resultset to the same list box
+           While Not rs.EOF
+               list1.AddItem rs("discounttype") &amp; " = " &amp; rs("discount")
+               rs.MoveNext
+           Wend
+
+           'Close the resultset and the connection and set both to nothing
+           rs.Close
+           Set rs = Nothing
+           cn.Close
+           Set cn = Nothing
+        End Sub
+   
+
+  d. Run the project and click the "Run Stored Procedure" button. You should
+     see a list of Authors and then Discounts in the list box.
+
+REFERENCES
+==========
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q147875 HOWTO: Use "DSN-Less" ODBC Connections with RDO and DAO
+
+  Q147814 HOWTO: Retrieve Multiple Result Sets from a Stored Procedure
+
+  Q149054 INFO: Choosing a rdoResultset Cursortype
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbRDO kbVBp
+
+======================================================================
+Keywords          : kbRDO kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57607: Exemod Shows Min Alloc Greater Than Max Alloc with Link /CP:1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57607: Exemod Shows Min Alloc Greater Than Max Alloc with Link /CP:1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57607/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57607/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57607/","publisher":null,"image":null,"headline":"Q57607: Exemod Shows Min Alloc Greater Than Max Alloc with Link /CP:1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57607-exemod-shows-min-alloc-greater-than-max-alloc-with-link-cp1">Q57607: Exemod Shows Min Alloc Greater Than Max Alloc with Link /CP:1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57607
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | cvpack | mspl13_c
+Last Modified: 15-JAN-1990
+
+Problem:
+
+Looking at the header of a .EXE file, compiled with C Version 5.10
+with the following
+
+   cl foo.c
+
+and linked with
+
+   link /CP:1 /E foo;
+
+EXEMOD shows that the value of the minimum allocation(para) is higher
+than the value for maximum allocation(para).
+
+The description of EXEMOD implies that this is not possible (Page 323
+of the Microsoft "CodeView and Utilities, Microsoft Editor,
+Mixed-Language Programming Guide" manual, under the description of
+/MAX).
+
+Response:
+
+Under normal circumstances, the minimum allocation size cannot be
+larger than the maximum allocation size. However, on Page 324 of the
+Microsoft "CodeView and Utilities, Microsoft Editor, Mixed-Language
+Programming Guide" manual, it states the following:
+
+   If either the /MIN or the /STACK option is used, the value is
+   CORRECTED as necessary to accommodate unpacking of the modified
+   stack. The /MAX option operates as it would for unpacked files.
+
+In other words, the minimum allocation value listed in a packed file
+is corrected to allow for the unpacked stack space. Since the maximum
+allocated value does not change for packed files, this COULD result in
+the minimum value being much larger than the maximum value. Note that
+this is the same whether the file is packed using the /E switch with
+LINK, or separately with EXEPACK.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

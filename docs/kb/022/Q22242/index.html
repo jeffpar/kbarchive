@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q22242: PRB: Area Around Text and Remainder of Window Different Colors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q22242: PRB: Area Around Text and Remainder of Window Different Colors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/022/Q22242/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/022/Q22242/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/022/Q22242/","publisher":null,"image":null,"headline":"Q22242: PRB: Area Around Text and Remainder of Window Different Colors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q22242-prb-area-around-text-and-remainder-of-window-different-colors">Q22242: PRB: Area Around Text and Remainder of Window Different Colors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q22242
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+   - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When text is painted into a window, an area around the text is a different color
+than the remainder of the window.
+
+CAUSE
+=====
+
+The area around the text is painted with a solid color while the remainder of
+the window is painted using a dithered color.
+
+RESOLUTION
+==========
+
+To make the area around the text and the remainder of the window have the same
+color, perform one of the following two steps:
+
+- Use a solid color for the window background, and use the same color for the
+  text background. To ensure that a color is a solid color, use the
+  GetNearestColor function. This function returns the nearest solid color
+  available to represent the specified color.
+
+  -or-
+
+- Call the SetBkMode function to specify TRANSPARENT mode for the text. Doing
+  so prevents Windows from painting the area behind the text. The window
+  background color shows through instead.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+By default, when an application paints text into its window, Windows fills the
+area around the character with the current background color. Windows always uses
+a solid color for this purpose.
+
+When an application registers a window class, it specifies a handle to a brush
+that Windows uses to paint the window background. On some output devices,
+brushes can create dithered colors. On one of these devices, the area behind
+painted text might have a different color than the remainder of the window.
+
+The following code specifies the window background color:
+
+     #define ELANGREEN  0x003FFF00
+     pTemplateClass-&gt;hbrBackground = CreateSolidBrush((DWORD)ELANGREEN);
+
+The following code specifies the color used to paint around text and draws some
+text into a device context:
+
+     #define SZ -1
+     SetBkColor(hDC, (DWORD)ELANGREEN);
+     DrawText(hDC, (LPSTR)"text", SZ, (LPRECT)&amp;Rect, DT_BOTTOM);
+
+The color used to paint the area around the text has a yellow cast, which gives
+it a slightly different appearance than the window background color.
+
+A brush may be able to represent a wider color range than the solid colors
+because a brush covers an area while a solid color may be used to paint
+nominal-width lines (for example, lines that are one device unit wide) that must
+be the same color at all locations and angles. Therefore, the device-driver
+writer has the option of providing dithered colors for brushes, but has no such
+freedom when it comes to the solid colors for drawing lines.
+
+Additional query words: 3.00 3.10 3.50 4.00 win16sdk
+
+======================================================================
+Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

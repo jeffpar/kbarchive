@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165915: Explanation of Jet Database for Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165915: Explanation of Jet Database for Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165915/","publisher":null,"image":null,"headline":"Q165915: Explanation of Jet Database for Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165915-explanation-of-jet-database-for-windows-nt-40">Q165915: Explanation of Jet Database for Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165915
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbinfo kbArtTypeINF
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Internet Name Service (WINS) produces J&lt;n&gt;.log files in the
+%SystemRoot%\System32\Wins folder to increase the speed and efficiency of
+storing the WINS data. This article discusses these Jet files and their purpose.
+
+MORE INFORMATION
+================
+
+J&lt;n&gt;.log Files
+--------------
+
+To increase speed and efficiency of data storage, the Jet database writes current
+transactions to log files rather than to the database directly. Therefore, the
+most current view of the data will be the database plus any transactions in the
+log file(s). These files are also used for recovery if the WINS service is
+stopped abruptly or in an unexpected manner. If the service is stopped in an
+unexpected manner, the log files will automatically be used to re-create the
+correct state of the WINS database.
+
+Log files will always be a certain size; however, they can grow quickly in number
+on a very busy WINS Server. It is inevitable that WINS will write more
+transactions to a log than the size of the log can accommodate. When a log file
+becomes filled, it is renamed to indicate that it is an older log and not in
+use. A new transaction log is created with the J&lt;n&gt;.log filename, where
+&lt;n&gt; is a decimal number such as J50.log. The naming format of the previous
+log file will be JetXXXXX.log, where each X denotes a hexadecimal number from 0
+to f. Previous log files are maintained in the same folder as the current log
+files.
+
+The log files are processed (all log entries written to the database) and deleted
+when a successful backup occurs or when the WINS server is shut down gracefully.
+Therefore, if many J&lt;n&gt;.log files have accumulated, frequent backups
+should be scheduled to maintain the logs.
+
+After the entries have been processed, it is possible to manually delete the log
+files; however, this will prevent a successful recovery of the database if it
+should be needed. Because of this, it is important to ensure that the log files
+are not manually deleted or removed from the system until a backup has been
+performed.
+
+J&lt;n&gt;.chk Files
+--------------
+
+Jet maintains a checkpoint file, J&lt;n&gt;.chk, that indicates the location
+where the last information was successfully written from the transaction logs to
+the database. It is also used for recovery purposes; that is, the checkpoint
+file indicates where the recovery or replaying of data should begin. This
+checkpoint file is updated every time data is written to the database file
+(Wins.mdb).
+
+Res1.log and Res2.log Files
+---------------------------
+
+Reserved logs (Res1.log and Res2.log) are kept for emergency purposes. More
+specifically, they are used in the event that the server runs out of disk space.
+If a server attempts to create another transaction log file and there is
+insufficient disk space, the server will flush any outstanding transactions into
+these reserved log files. The service will then shut down and log an event to
+the Event Viewer.
+======================================================================
+Keywords          : kbinfo kbArtTypeINF 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

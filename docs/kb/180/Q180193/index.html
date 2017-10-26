@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180193: FIX: DAO Oracle and the NUMBER Datatype | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180193: FIX: DAO Oracle and the NUMBER Datatype" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180193/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180193/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180193/","publisher":null,"image":null,"headline":"Q180193: FIX: DAO Oracle and the NUMBER Datatype","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180193-fix-dao-oracle-and-the-number-datatype">Q180193: FIX: DAO Oracle and the NUMBER Datatype</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180193
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1,5.0,6.0,Build 2.573.4202
+Operating System(s): 
+Keyword(s): kbDAOsearch kbDriver kbOracle kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSuppor
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft ODBC for Oracle version 2.5 Build 2.573.4202 
+- Microsoft Data Access Components version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using DAO/Jet to access an Oracle database, you get either blank rows back
+in a grid or rows filled with #DEFINE (when using Access).
+
+CAUSE
+=====
+
+This behavior is caused by DAO having a problem determining the datatype for
+Oracle columns defined as NUMBER.
+
+RESOLUTION
+==========
+
+This behavior is only exhibited when the Oracle columns have been defined as
+NUMBER. If you define the columns as NUMBER(38,0), which is the equivalent of
+just NUMBER, everything works as expected. When you use DAO/Jet to access an
+Oracle database, you need to specify the size (total digits) and precision for
+table columns of type NUMBER.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the versions of Microsoft
+FrontPage listed at the beginning of this article.
+
+This bug was corrected in MDAC 2.1 Service Pack 2.
+
+You can obtain the latest version of MDAC from the following Microsoft Web site:
+
+  http://www.microsoft.com/data/download.htm
+
+MORE INFORMATION
+================
+
+This problem was identified using Visual Basic 5.0 Enterprise edition, MDAC 1.5
+(see the REFERENCES section below), and Oracle 7.3. You may see different
+behavior with different versions of these components. Following is an example of
+what will work and what will fail when creating an Oracle table that will be
+accessed by DAO/Jet.
+
+This Oracle table definition will fail:
+
+        CREATE TABLE daotest (item_number NUMBER PRIMARY KEY,
+                              depot_number NUMBER);
+
+This Oracle table definition will work:
+
+        CREATE TABLE daotest (item_number NUMBER(38,0) PRIMARY KEY,
+                              depot_number NUMBER(38,0));
+
+If you are using Access, the first example will fill your grid with #DELETE. If
+you are using Visual Basic/DAO, your grid will show the correct number of rows
+but they won't contain any data. You can still insert records but you never get
+the correct display.
+
+REFERENCES
+==========
+
+ORACLE: The Complete Reference by George Koch and Kevin Loney
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q175018 : HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Sam
+Carpenter, Microsoft Corporation.
+
+
+Additional query words: Jet Oracle grid #Define
+
+======================================================================
+Keywords          : kbDAOsearch kbDriver kbOracle kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC210SP2fix kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbODBCSearch kbVB500 kbVB600 kbMDACSearch kbMDAC210 kbODBCOracle25734202 kbODBCOracle250Search
+Version           : :2.1,5.0,6.0,Build 2.573.4202
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

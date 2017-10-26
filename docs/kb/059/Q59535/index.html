@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59535: Why the /HIGH Switch Is Not Used with High-Level Languages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59535: Why the /HIGH Switch Is Not Used with High-Level Languages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59535/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59535/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59535/","publisher":null,"image":null,"headline":"Q59535: Why the /HIGH Switch Is Not Used with High-Level Languages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59535-why-the-high-switch-is-not-used-with-high-level-languages">Q59535: Why the /HIGH Switch Is Not Used with High-Level Languages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59535
+Product(s): See article
+Version(s): 3.65
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 15-MAR-1990
+
+The linker option /HIGH is used with assembly language programs to
+load an .EXE file as high as possible in memory. Without the /HIGH
+option, LINK places the .EXE file as low as possible.
+
+/HIGH is not used with high-level languages because it prohibits the
+use of dynamic memory allocation by the program. Furthermore, C
+run-time start-up code specifies /DOSSEG, which forces low load and
+Microsoft run-time segment layout.
+
+When a program is linked with /HIGH, MS-DOS loads the program at the
+highest possible memory location available, usually 0xFFF0. All memory
+between the program's segments (which are high) and the program's PSP
+(which is low) is now considered program RAM, owned by the program.
+You can no longer allocate or free that memory.
+
+Therefore, calls to routines such as malloc() and free() fail. This
+causes problems for the following reasons:
+
+1. Some memory is dynamically allocated during function calls from
+   high-level languages.
+
+2. The memory structure required by Microsoft high-level languages for
+   tracking used/freed memory is not available.
+
+You can use /HIGH if you write your own start-up code, but your
+programs cannot call most of the routines from the C run-time library.
+
+The only reason /HIGH is still available to the linker is that early
+versions of Microsoft FORTRAN and Microsoft Pascal generated code that
+had to be linked with /DSALLOCATE, which relocates all addresses
+within DGROUP in such a way that the last byte in the group has the
+offset 0xFFFF. The /HIGH switch is used in conjunction with the
+/DS(ALLOCATE) switch.
+
+For more information, search the knowledge base with the following
+query:
+
+   S_LINK and /HIGH and /DS
+
+You can also read the section "Using the /HIGH and /DSALLOCATE
+Switches" on Page 719 ff in the "MS-DOS Encyclopedia."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

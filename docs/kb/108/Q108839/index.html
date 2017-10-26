@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check] | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108839/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108839/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108839/","publisher":null,"image":null,"headline":"Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check]","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108839-pc-gen-podiagini-entries-in-address--group-check">Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check]</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108839
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Post Office Diagnostics Utility, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists and describes all the entries in the Microsoft Mail
+Postoffice Diagnostics Utility (PODIAG.EXE) private profile, PODIAG.INI, that
+are contained in the [Address &amp; Group Check] section.
+
+The Microsoft Mail Postoffice Diagnostics Utility has two PODIAG.INI files. One
+of the PODIAG.INI files exists in the MAILDATA\INI subdirectory; this .INI file
+contains all of the postoffice-specific settings. The second PODIAG.INI file
+exists in the WINDOWS subdirectory and contains environment- specific
+information. Only the PODIAG.INI file in the MAILDATA\INI subdirectory contains
+an [Address &amp; Group Check] section.
+
+MAILDATA\INI\PODIAG.INI
+-----------------------
+
+The default settings of the [Address &amp; Group Check] section of the
+postoffice-specific PODIAG.INI file are as follows:
+
+  [Address &amp; Group Check]
+  Depth=3
+  Existence=Yes
+  Size=Yes
+  Contents=Yes
+  Attribs=Yes
+  Validate=Yes
+
+Depth=&lt;1/2/3/4&gt;
+---------------
+
+This is the level of depth selected for the check in the tool Preferences dialog
+box. The default is 3, to check all Postoffice Address List users and groups,
+and to check the Global Address List. Use 1 to disable the tool, 2 to check only
+the Postoffice Address List, or 4 to check all address lists and groups.
+
+Existence=&lt;Yes/No&gt;
+------------------
+
+The default is Yes, to check that files exist.
+
+Size=&lt;Yes/No&gt;
+-------------
+
+The default is Yes, to check file size.
+
+Contents=&lt;Yes/No&gt;
+-----------------
+
+The default is Yes, to check contents of files.
+
+Attribs=&lt;Yes/No&gt;
+----------------
+
+The default is Yes, to check file attributes.
+
+Validate=&lt;Yes/No&gt;
+-----------------
+
+The default is Yes, to check validity and completeness of all postoffice
+addresses and groups.
+
+MORE INFORMATION
+================
+
+The PODIAG.INI file is created in the MAILDATA\INI subdirectory the first time
+one of the PODIAG tools is run on the postoffice. In addition, an INI
+subdirectory will be created if the INI subdirectory does not already exist (as
+in the case of a version 2.1 postoffice). The environment-specific PODIAG.INI
+file is created in the WINDOWS subdirectory the first time PODIAG is run on a
+workstation.
+
+The WINDOWS\PODIAG.INI file only contains one section called [Microsoft Mail PO
+Diagnostics] and only contains the MostRecentlyUsed postoffice settings.
+
+There are five possible sections in the postoffice-specific PODIAG.INI:
+
+- Microsoft Mail PO Diagnostics
+
+- Address &amp; Group Check
+
+- Directory Synchronization Check
+
+- Server Folder Check
+
+- User Mail Check
+
+Each of the sections is created when the corresponding tool is run on the
+postoffice. The one exception is the Microsoft Mail PO Diagnostics section,
+which is created when the postoffice is closed. These sections can exist in the
+postoffice-specific PODIAG.INI file, in any order.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbMailPODiagnostic320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

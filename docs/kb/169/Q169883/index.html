@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169883/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169883/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169883/","publisher":null,"image":null,"headline":"Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169883-fp-extra-line-spacing-inserted-after-pressing-enter">Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169883
+Product(s): Word Front Page
+Version(s): windows:97, macintosh:1.0
+Operating System(s): 
+Keyword(s): kbusage kbdta
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q205659.
+
+For a Microsoft FrontPage 98 version of this article, see Q194246.
+
+SYMPTOMS
+========
+
+When you press the ENTER key in Microsoft FrontPage Editor, a blank line is
+inserted before the next line of text, causing the text to look double-spaced.
+
+CAUSE
+=====
+
+When you press ENTER in FrontPage, FrontPage inserts a paragraph represented in
+HyperText Markup Language (HTML) by the &lt;P&gt; tag. When rendered by a Web
+browser, the paragraph is displayed with a line space above it. If your lines
+are short or you press ENTER when you reach the right margin instead of allowing
+the text to wrap to the next line, each line will be formatted with the
+&lt;P&gt; tag, resulting in the extra line space between paragraphs.
+
+RESOLUTION
+==========
+
+To work around this behavior, insert a normal line break (&lt;BR&gt;) instead of
+a paragraph (&lt;P&gt;), using either of the following methods:
+
+- On the Insert menu, click Break, and then click OK.
+
+  A normal line break, represented by a right-angle arrow, will appear at the
+  end of the line. The arrow does not appear when you open the page in a Web
+  browser or in FrontPage Editor if you click the Show/Hide button on the
+  Standard toolbar to turn off the display of non-printing characters.
+
+  -or-
+
+- Press SHIFT+ENTER.
+
+MORE INFORMATION
+================
+
+For additional information about HTML, please see the following Microsoft Web
+site:
+
+  http://www.microsoft.com/workshop/author/newhtml/htmlref.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97, macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

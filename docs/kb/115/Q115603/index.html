@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115603: No Option to Import LMHOSTS with SmartStart | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115603: No Option to Import LMHOSTS with SmartStart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115603/","publisher":null,"image":null,"headline":"Q115603: No Option to Import LMHOSTS with SmartStart","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115603-no-option-to-import-lmhosts-with-smartstart">Q115603: No Option to Import LMHOSTS with SmartStart</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q115603</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">3.1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsetup</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">08</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">3.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">use</span> <span class="n">a</span> <span class="n">utility</span> <span class="n">called</span> <span class="n">SmartStart</span> <span class="n">on</span> <span class="n">Compaq</span> <span class="n">computers</span> <span class="k">to</span> <span class="n">install</span> <span class="n">Windows</span>
+<span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">3.1</span> <span class="p">,</span> <span class="n">the</span> <span class="n">option</span> <span class="k">to</span> <span class="n">import</span> <span class="n">the</span> <span class="n">LMHOSTS</span> <span class="n">file</span> <span class="n">is</span> <span class="k">not</span>
+<span class="n">available</span><span class="p">.</span> <span class="n">Because</span> <span class="k">of</span> <span class="n">this</span><span class="p">,</span> <span class="n">domain</span> <span class="n">synchronization</span> <span class="n">between</span> <span class="n">this</span> <span class="n">domain</span>
+<span class="n">controller</span> <span class="k">and</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="n">may</span> <span class="k">not</span> <span class="n">occur</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Compaq</span> <span class="n">ships</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">3.1</span><span class="p">,</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">3.1</span><span class="p">,</span>
+<span class="n">Novell</span> <span class="n">NetWare</span><span class="p">,</span> <span class="k">and</span> <span class="n">SCO</span> <span class="n">UNIX</span> <span class="n">bundles</span> <span class="k">with</span> <span class="n">some</span> <span class="k">of</span> <span class="n">their</span> <span class="n">computer</span> <span class="n">systems</span><span class="p">.</span> <span class="n">This</span>
+<span class="k">package</span> <span class="n">includes</span> <span class="n">a</span> <span class="n">utility</span> <span class="n">called</span> <span class="n">SmartStart</span> <span class="n">which</span> <span class="n">helps</span> <span class="n">you</span> <span class="n">install</span> <span class="n">any</span> <span class="n">one</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">above</span> <span class="n">network</span> <span class="n">operating</span> <span class="n">systems</span> <span class="n">by</span> <span class="n">entering</span> <span class="n">all</span> <span class="n">requested</span> <span class="n">information</span><span class="p">.</span>
+<span class="n">SmartStart</span> <span class="n">does</span> <span class="k">not</span> <span class="n">prompt</span> <span class="n">for</span> <span class="n">importing</span> <span class="n">the</span> <span class="n">LMHOSTS</span> <span class="n">file</span> <span class="n">when</span> <span class="n">installing</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span> <span class="m">3.1</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">products</span> <span class="n">included</span> <span class="n">here</span> <span class="n">are</span> <span class="n">manufactured</span> <span class="n">by</span> <span class="n">vendors</span> <span class="n">independent</span> <span class="k">of</span> <span class="n">Microsoft</span><span class="p">;</span>
+<span class="n">we</span> <span class="n">make</span> <span class="n">no</span> <span class="n">warranty</span><span class="p">,</span> <span class="n">implied</span> <span class="k">or</span> <span class="n">otherwise</span><span class="p">,</span> <span class="n">regarding</span> <span class="n">these</span> <span class="n">products</span><span class="s1">' performance
+or reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

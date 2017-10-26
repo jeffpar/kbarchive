@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159410/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159410/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159410/","publisher":null,"image":null,"headline":"Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159410-fix-invalid-procedure-call-referencing-collection-item">Q159410: FIX: "Invalid Procedure Call" Referencing Collection Item</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159410
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you reference a collection object created by an out-of-process OLE server
+with a variable index and the index variable is specified as an Integer or Long
+in a Dimension statement, the following error appears:
+
+  "Invalid Procedure Call"
+
+RESOLUTION
+==========
+
+Make sure that the index variable is specified as Variant in the Dimension
+statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+The out-of-process OLE server (EXE server) that created the collection object
+receives the index through remote procedure call (RPC). This data is marshaled
+across the processes and received as a Variant data type only.
+
+This behavior does not occur if the collection object is created in an in-process
+server because RPC is in the same process and is not needed to transmit the data
+between the two different processes.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. On the Visual Basic menu, click Insert and Class Module to add a new class
+  module.
+
+3. Insert the following code into the class module code window:
+
+     Dim x As New Collection
+
+     Public Function PassCollection() As Collection
+              x.Add "Item 1"
+              x.Add "Item 2"
+              x.Add "Item 3"
+
+              Set PassCollection = x
+     End Function
+
+4. Change the following properties on the class module:
+
+     Instancing = 2-Createable MultiUse
+     Public = True
+
+5. On the Visual Basic menu, click Insert and Module to add a new Basic code
+  module.
+
+6. Insert the following code in the code window of the Basic code module:
+
+     Sub main()
+              Load Form1
+     End Sub
+
+7. On the Visual Basic menu, click Tools and Options. On the Project tab, change
+  the following fields:
+
+  Startup Form = Sub Main
+  Project Name = OLECOL
+  StartMode = OLE Server
+  Application Description = OLE Collection Example
+
+8. Click OK, and then press the F5 key to run the project.
+
+9. Start another session of Visual Basic. A new Project with Form1 appears by
+  default.
+
+10. Place a CommandButton on Form1.
+
+11. Insert the following code into the General Declaration section of the code
+  window for Form1:
+
+      Private Sub Command1_Click()
+               Dim c As Collection
+               Dim o As New OLECOL.Class1
+               Dim i As Long
+
+               Set c = o.PassCollection
+
+               For i = 1 To c.Count
+      MsgBox c(i)
+               Next i
+      End Sub
+
+12. On the Visual Basic menu, click Tools and References. Select "OLE Collection
+  Example" on the reference list, and then click OK.
+
+13. Run the project by pressing the F5 key and clicking on Command1. The
+  following error message appears:
+
+  "Invalid Procedure Call"
+
+Additional query words: kbVBp400bug kbVBp600fix kbVBp kbdsd kbDSupport kbVBA
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

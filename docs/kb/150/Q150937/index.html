@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150937: Visual C++ Version 4.1 Patch | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150937: Visual C++ Version 4.1 Patch" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150937/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150937/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150937/","publisher":null,"image":null,"headline":"Q150937: Visual C++ Version 4.1 Patch","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150937-visual-c-version-41-patch">Q150937: Visual C++ Version 4.1 Patch</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150937
+Product(s): Microsoft C Compiler
+Version(s): 4.1
+Operating System(s): 
+Keyword(s): kbenv kbfile kbpatch kbtool kbDatabase kbDebug kbide kbMFC kbODBC kbVC kbVC410
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to get a patch to fix the problems discussed in the
+SYMPTOMS section below.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Vc41a.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+This patch fixes two different Visual C++ 4.1 problems described below.
+
+- It fixes a problem you may be seeing in an MFC application that uses the
+  Microsoft database classes. While using certain ODBC drivers, you may get
+  "Out of memory" errors. See below for a list of files updated.
+
+  For more information, please also see the following article in the Microsoft
+  Knowledge Base:
+
+  Q148787 FIX: Run Out of Memory or Assertion in GetBufferSetLength()
+
+- It also fixes the debugger problem in the Microsoft Developer Studio where
+  you may not be stopping at breakpoints you have set if your project was built
+  from a directory structure that contained long names. This problem did not
+  exist in Visual C++ 4.0. See below for a list of files updated.
+
+For more information, please also see the following article in the Microsoft
+Knowledge Base:
+
+  Q150936 FIX: VC4.1 Debugger Fails to Stop on Breakpoints with Long Names
+
+Included in the self-extracting file, VC41A.EXE, you'll find:
+
++---------------------------------------------------------------------------------+
+| Readme.txt  | The text file that contains more information about this patch.    | 
++---------------------------------------------------------------------------------+
+| Patch.exe   | The executable that runs the patch script.                        | 
++---------------------------------------------------------------------------------+
+| Msdev41.rtp | The patch file for the \Msdev tree.                               | 
++---------------------------------------------------------------------------------+
+| Mfc41.rtp   | The patch file for the MFC DLLs in the \Windows\System directory. | 
++---------------------------------------------------------------------------------+
+
+To Patch the MFC DLLs in Your \Windows\System Directory
+-------------------------------------------------------
+
+1. Close all applications that use MFC, including Microsoft Developer Studio.
+
+2. Copy Patch.exe and Mfc41.rtp to your \Windows\System directory in Windows 95
+  or Windows 3.x running Win32s, or the \Windows\System32 directory in Windows
+  NT.
+
+3. Run the command "patch mfc41" (without the quotation marks) at a command
+  prompt in that directory.
+
+The files patched By Mfc41.rtp in the Windows system directory are:
+
+- mfc40.dll
+
+  (Before)  Size: 921,872  Date: 2/28/96  Time:  6:53a Version: 4.1.6038
+  (After)         921,872        5/13/96        11:39a          4.1.6130
+
+- mfc40u.dll
+
+  (Before)  Size: 922,384  Date: 2/28/96  Time:  3:16a Version: 4.1.6038
+  (After)         919,824        5/13/96        11:45a          4.1.6130
+
+- mfcd40d.dll
+
+  (Before)  Size: 247,808  Date: 2/27/96  Time: 10:40p Version: 4.1.6038
+  (After)         247,808        5/13/96        11:46a          4.1.6130
+
+- mfcd40ud.dll
+
+  (Before)  Size: 255,488  Date: 2/27/96  Time: 11:05p Version: 4.1.6038
+  (After)         255,488        5/13/96        11:46a          4.1.6130
+
+- mfcd40d.pdb
+
+  (Before)  Size: 1,134,592  Date: 2/27/96  Time: 10:40p
+  (After)         1,134,592         5/6/96         3:03p
+
+- mfcd40ud.pdb
+
+  (Before)  Size: 1,159,168  Date: 2/27/96  Time: 11:05p
+  (After)         1,159,168         5/6/96         3:27p
+
+To Patch the Files in the \Msdev Tree
+-------------------------------------
+
+1. Close all applications using MFC, including Microsoft Developer Studio.
+
+2. Copy Patch.exe and Msdev41.rtp to your \Msdev Directory.
+
+3. Run the command "patch msdev41" (without the quotation marks) at a
+
+command prompt in that directory.
+
+The files patched by Msdev41.rtp are:
+
+- \bin\emn0n0.dll
+
+  (Before)  Size: 100,112  Date: 2/16/96  Time: 4:59a  Version: 4.10.6038
+  (After)         103,696        4/10/96        8:56p           4.10.6038
+
+- \mfc\src\dbrfx.cpp
+
+  (Before)  Size: 65,181      Date: 1/30/96      Time: 9:10a
+  (After)         65,183             4/8/96            4:38p
+
+- \mfc\lib\nafxcw.lib
+
+  (Before)  Size: 6,652,314   Date: 2/27/96      Time: 10:12p
+  (After)         6,652,314         4/25/96             4:57p
+
+- \mfc\lib\nafxcwd.lib
+
+  (Before)  Size: 7,405,604   Date: 2/27/96      Time: 10:03p
+  (After)         7,405,604         4/25/96             4:49p
+
+- \mfc\lib\uafxcw.lib
+
+  (Before)  Size: 6,677,766   Date: 2/27/96      Time: 10:29p
+  (After)         6,677,730          5/6/96             2:52p
+
+- \mfc\lib\uafxcwd.lib
+
+  (Before)  Size: 7,437,480   Date: 2/27/96      Time: 10:21p
+  (After)         7,437,480          5/6/96            2:43pm
+
+- \mfc\lib\nafxcw.pdb
+
+  (Before)  Size: 569,344     Date: 2/27/96      Time: 10:12p
+  (After)         569,344           4/25/96             4:57p
+
+- \mfc\lib\nafxcwd.pdb
+
+  (Before)  Size: 577,536     Date: 2/27/96      Time: 10:03p
+  (After)         577,536           4/25/96             4:48p
+
+- \mfc\lib\uafxcw.pdb
+
+  (Before)  Size: 569,344     Date: 2/27/96      Time: 10:29p
+  (After)         569,344            5/6/96             2:52p
+
+- \mfc\lib\uafxcwd.pdb
+
+  (Before)  Size: 577,536     Date: 2/27/96      Time: 10:20p
+  (After)         585,728            5/6/96             2:43p
+
+MORE INFORMATION
+================
+
+Several of the MFC files that will potentially get patched are optionally
+installed. You may get a message in the patch log stating that a particular file
+wasn't found and that is OK. If you didn't install the Unicode MFC libraries for
+instance, the patch program won't find them.
+
+For any other potential problems and resolutions, please refer to the readme file
+in the patch.
+
+
+Additional query words: mfc4.1 softlib fix
+
+======================================================================
+Keywords          : kbenv kbfile kbpatch kbtool kbDatabase kbDebug kbide kbMFC kbODBC kbVC kbVC410 
+Technology        : kbVCsearch kbAudDeveloper kbVC410
+Version           : :4.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

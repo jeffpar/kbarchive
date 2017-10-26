@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q32003: Assigning Addresses to Overlay Segments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q32003: Assigning Addresses to Overlay Segments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/032/Q32003/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/032/Q32003/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/032/Q32003/","publisher":null,"image":null,"headline":"Q32003: Assigning Addresses to Overlay Segments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q32003-assigning-addresses-to-overlay-segments">Q32003: Assigning Addresses to Overlay Segments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q32003
+Product(s): See article
+Version(s): 3.x 5.01.20 5.01.21
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 15-JUL-1988
+
+The linker assigns only code segments (identified by class names
+ending in "CODE") to overlays. Data segments go in the root. The
+particular overlay the segment goes in is determined by the module
+that first defines the segment.
+
+   Note that the linker assigns segments, not object modules, to
+overlays. Therefore, if you have the following command
+
+    LINK A+(B+C)
+
+where
+
+    A   defines public SEG1
+    B   defines public SEG2
+    C   defines public SEG1
+
+then C's contribution to SEG1 goes in the root, not in the first
+overlay, because SEG1 was first defined in a root module.
+   The linker orders all segments as it normally would, ignoring the
+overlays and using the class and combine-type rules described
+elsewhere. The linker then assigns addresses for every segment in the
+root up to the first overlay segment. Before the first overlay
+segment, it defines a special empty segment called OVERLAY_AREA. Then
+for each overlay it assigns addresses for every segment in the overlay
+so that the first segment in the overlay starts at OVERLAY_AREA. One
+particular overlay will end at a higher address than all the others;
+at this address, the linker defines a special empty segment called
+OVERLAY_END. Finally, the linker assigns addresses for all remaining
+segments in the root so that the first one starts at OVERLAY_END. The
+load image looks like the following:
+
+        ------------+-&gt; 0000
+        |           |
+        |  root     |
+        |           |
+        +-----------+-&gt; OVERLAY_AREA
+        |  overlay  |
+        |  area     |
+        |           |
+        +-----------+-&gt; OVERLAY_END
+        |  root     |
+        +-----------+
+
+   The resultant MAP file has some different contents than the
+pre-overlay file. All items listed are declared as "res", meaning
+resident. The items contained within the overlay modules are also
+declared as "res".
+   At the top of the MAP file, the segments are listed in the exact
+order in which they will be in the load image, and each segment is
+identified as being in a particular overlay or the root.
+   Every symbol marked "res" is in a root segment and every symbol
+marked "ovl" is in an overlay segment. If symbols are not where you
+think they ought to be, remember the linker assigns segments, not
+modules, to overlays.
+   For more information on overlays, refer to the 1988 "MS-DOS
+Encyclopedia."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

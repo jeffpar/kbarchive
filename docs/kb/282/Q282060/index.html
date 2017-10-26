@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q282060: Resources for Securing Internet Information Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q282060: Resources for Securing Internet Information Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/282/Q282060/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/282/Q282060/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/282/Q282060/","publisher":null,"image":null,"headline":"Q282060: Resources for Securing Internet Information Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q282060-resources-for-securing-internet-information-services">Q282060: Resources for Securing Internet Information Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q282060
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbDSupport kbiis400 kbiis500
+Last Modified: 01-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Internet Information Services to host Web sites, it is important to
+protect the server from unknown, and potentially malicious, users. This article
+provides references to use in this vital task.
+
+MORE INFORMATION
+================
+
+The most comprehensive information on securing Web applications is available
+in:
+
+  Designing Secure Web-Based Applications for Microsoft&lt;AE&gt; Windows 2000
+  http://mspress.microsoft.com/books/4293.htm
+  ISBN: 0-735-60995-0
+  Authors: Michael Howard, Richard Waymire, Marc Levy
+  Publisher: Microsoft Press, July 2000
+
+The following references are available online from the Microsoft TechNet Web
+site:
+
+As a best practice, Microsoft recommends installing the latest service pack and
+security updates for IIS, as well as any other components running on the web
+server. Although many customers utilize the online Security Bulletin Search as a
+reference for what hotfixes to apply for a given Product and Service Pack
+choice, the information provided by that tool does not take into account
+cumulative rollups (it shows all updates released after the specified Service
+Pack). For that reason, Microsoft recommends that customers using IIS determine
+the required updates using the HFNetChk tool, which is available in the
+following article:
+
+  Q303215 Microsoft Network Security Hotfix Checker (Hfnetchk.exe) Tool Is
+  Available
+
+Once the latest Service Pack and all of the latest product updates (hotfixes)
+have been applied, system level security should be applied to the web server.
+
+
+The IIS Lockdown Wizard provides a "wizard" interface to configure many of the
+security recommendations that are published in the Secure Internet Information
+Services 5 Checklist and the Microsoft Internet Information Server 4.0 Security
+Checklist. Both the IIS Lockdown Wizard and UrlScan (Q307608), an ISAPI filter
+that can be used to block malicious web requests, are part of the Microsoft
+Security Toolkit which can be obtained from the following location:
+
+  http://www.microsoft.com/technet/security/tools/stkintro.asp
+
+Microsoft is committed to providing applications that can be used to keep our
+customers' information secure, and maintains an Internet site dedicated to
+security-related topics for Microsoft products. The Microsoft Security web site
+is available at:
+
+  http://www.microsoft.com/security/
+
+In addition to visiting the Microsoft Security web site on a regular basis,
+Microsoft recommends that customers stay up to date with the latest Security
+Bulletins, by subscribing to the Microsoft Security Notification Service at the
+Web site listed below:
+
+  http://www.microsoft.com/technet/security/bulletin/notify.asp
+
+Microsoft provides free online services for determining when updates are
+required, such the Critical Update Notification which is available from the
+Windows Update (WU) Web site, as well as the Microsoft Personal Security Advisor
+(MPSA) which can be used to determine vulnerabilities on the system running the
+utility, but it is not recommended that the WU and MPSA utilities be used as the
+only guidance for the latest updates. HFNetChk is the only tool which provides
+comprehensive updates for service-level applications such as IIS.
+
+REFERENCES
+==========
+
+When securing Web servers, it is possible to set permissions too restrictively,
+which can prevent proper serving of content. The following Microsoft Knowledge
+Base article describes the minimal permissions necessary for Internet
+Information Services to serve content properly:
+
+  Q187506 List of NTFS Permissions Required for IIS Site to Work
+
+
+Additional query words: iis 5 hack crack hacking cracking break broke delete vulnerability vulnerable
+
+======================================================================
+Keywords          : kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

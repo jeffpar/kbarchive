@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317908: XADM: Inter-Site Message Tracking May Stop Responding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317908: XADM: Inter-Site Message Tracking May Stop Responding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317908/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317908/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317908/","publisher":null,"image":null,"headline":"Q317908: XADM: Inter-Site Message Tracking May Stop Responding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317908-xadm-inter-site-message-tracking-may-stop-responding">Q317908: XADM: Inter-Site Message Tracking May Stop Responding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317908
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP3,5.5 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP3, 5.5 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While tracking messages from one Microsoft Exchange Server 5.5 site to another,
+the Microsoft Exchange Administrator program may appear to stop responding.
+
+MORE INFORMATION
+================
+
+Message tracking for Exchange Server 5.5 is server message block (SMB)-based
+traffic. When you track a message from one site to another, the local tracking
+Exchange Server computer opens a network connection to the remote Exchange
+Server computer's message tracking folder, and then copies all of the message
+tracking logs over the network.
+
+The default location for Exchange Server 5.5 message tracking logs is
+C:\Exchsrvr\Tracking.log.
+
+You can specify which message tracking logs are copied by indicating the number
+of days that you want to track:
+
+1. In the Microsoft Exchange Administrator program, on the Tools menu, click
+  Track Message.
+
+2. In the Select Message to Track dialog box, click a number of days to track in
+  the Look back box.
+
+NOTE: Specifying zero (0) days causes the Exchange Server computer to copy all of
+the message tracking logs from the remote server. This may cause significant
+network traffic and it may cause the tracking Exchange Server computer to run
+low on resources and become unresponsive. If your Exchange Server computer
+becomes unresponsive, use Microsoft Task Manager to end the task for the
+Microsoft Exchange Administrator program. This stops the tracking process and
+returns the Exchange Server computer to a typical operational state.
+
+You can also perform a Network Monitor trace throughout the tracking process to
+see the tracking logs being copied over from the source server to the
+destination server.
+
+
+The following frames from a sample Network Monitor trace indicate the SMB
+communication between two Exchange Server computers that are copying tracking
+logs:
+
+285 14.421875 TESTDC1 TESTDC2 SMB C tree connect and X, Share = \\TESTDC2\TRACKING.LOG
+286 14.421875 TESTDC2 TESTDC1 SMB R tree connect
+287 14.421875 TESTDC1 TESTDC2 SMB C NT create and X, File = \20020429.log
+288 14.421875 TESTDC2 TESTDC1 SMB R NT create and X, FID = 0x800e
+289 14.437500 TESTDC2 TESTDC1 SMB R read and X, Read 0xa000
+
+The following text is a sample of the stub data from Frame 285:
+
+00070:  00 00 00 00 A0 43 3D 55 53 3B 41 3D 20 3B 50 3D   .... C=US;A= ;P=
+00080:  54 41 5A 3B 4C 3D 54 41 5A 44 43 31 2D 30 32 30   TEST;L=TESTDC1-020
+00090:  34 32 35 31 37 35 34 33 33 5A 2D 37 09 30 09 32   425175433Z-7.0.2
+000A0:  30 30 32 2E 34 2E 32 39 20 31 38 3A 35 30 3A 34   002.4.29 18:50:4
+000B0:  37 09 09 2F 4F 3D 54 41 5A 2F 4F 55 3D 42 41 43   7../O=TEST/OU=BAC
+000C0:  4B 42 4F 4E 45 2F 43 4E 3D 43 4F 4E 46 49 47 55   KBONE/CN=CONFIGU
+000D0:  52 41 54 49 4F 4E 2F 43 4E 3D 53 45 52 56 45 52   RATION/CN=SERVER
+000E0:  53 2F 43 4E 3D 54 41 5A 44 43 31 2F 43 4E 3D 4D   S/CN=TESTDC1/CN=M
+000F0:  49 43 52 4F 53 4F 46 54 20 4D 54 41 09 09 2F 6F   ICROSOFT MTA../o
+00100:  3D 54 41 5A 2F 6F 75 3D 42 41 43 4B 42 4F 4E 45   =TEST/ou=BACKBONE
+00110:  2F 63 6E 3D 43 4F 4E 46 49 47 55 52 41 54 49 4F   /cn=CONFIGURATIO
+00120:  4E 2F 63 6E 3D 53 45 52 56 45 52 53 2F 63 6E 3D   N/cn=SERVERS/cn=
+00130:  54 41 5A 44 43 31 2F 63 6E 3D 4D 49 43 52 4F 53   TESTDC1/cn=MICROS
+00140:  4F 46 54 20 44 53 41 09 30 09 31 34 39 37 09 30   OFT DSA.0.1497.0
+00150:  09 30 09 09 31 0A 2F 6F 3D 54 41 5A 2F 6F 75 3D   .0..1./o=TEST/ou=
+00160:  4D 49 58 45 44 2F 63 6E 3D 43 4F 4E 46 49 47 55   MIXED/cn=CONFIGU
+00170:  52 41 54 49 4F 4E 2F 63 6E 3D 53 45 52 56 45 52   RATION/cn=SERVER
+00180:  53 2F 63 6E 3D 54 41 5A 44 43 32 2F 63 6E 3D 4D   S/cn=TESTDC2/cn=M
+00190:  49 43 52 4F 53 4F 46 54 20 44 53 41 0A 0A 43 3D   ICROSOFT DSA..C=
+001A0:  55 53 3B 41 3D 20 3B 50 3D 54 41 5A 3B 4C 3D 54   US;A= ;P=TEST;L=T
+001B0:  41 5A 44 43 31 2D 30 32 30 34 32 36 30 30 31 35   ESTDC1-0204260015
+001C0:  30 30 5A 2D 37 09 30 09 32 30 30 32 2E 34 2E 32   00Z-7.0.2002.4.2
+001D0:  39 20 31 38 3A 35 30 3A 34 37 09 09 2F 4F 3D 54   9 18:50:47..
+
+Microsoft recommends that you perform message tracking locally on the Microsoft
+Exchange Server computer that contains the message tracking logs that you want
+to track.
+
+Additional query words: track admin slow lock unresponsive response hang netmon
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP3 kbExchange550SP4
+Version           : :5.5,5.5 SP3,5.5 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

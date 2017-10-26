@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121372/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121372/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121372/","publisher":null,"image":null,"headline":"Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121372-how-to-configure-non-intelligent-digiboard-pc8-adapters">Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121372
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.10 3.50 3.51
+
+WINDOWS
+
+kbhw kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adapter drivers for the non-intelligent Digiboard PC/8 adapters are not
+available for Windows NT versions 3.1 and 3.5. The configuration for the adapter
+is accomplished through the Windows NT Registry only. This article describes how
+to configure and utilize the non-intelligent Digiboard PC/8 adapter in Windows
+NT versions 3.1 and 3.5.
+
+MORE INFORMATION
+================
+
+There are nine switch blocks on the Digiboard PC/8 adapter. Listed below are the
+switch block settings of the adapter and Registry settings for each
+communications port of the adapter.
+
+Switch Block Settings
+---------------------
+
+Switch Block One (DS1) is used to configure the adapter's Interrupt Status
+Register address.
+
+Switches       Description
+
+--------------------------
+
+Switches 1-7   Adapter I/O port address
+Switches 8-9   Set these to the ON position
+Switch 10      Enables (ON position) the Interrupt Status Register
+
+The remaining eight switch blocks are used to configured the I/O port addresses
+for each communications port of the adapter. Switch 8 on each of these blocks
+enables (ON position) the port. The I/O port addresses available range from 000H
+to 3F8H.
+
+Registry Settings
+-----------------
+
+  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+  problems that may require you to reinstall Windows NT to correct them.
+  Microsoft cannot guarantee that any problems resulting from the use of
+  Registry Editor can be solved. Use this tool at your own risk.
+
+1. Start REGEDT32.EXE and locate the following Registry subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet \Services\Serial\Parameters
+
+2. Listed below are entries that need to be manually added to be able to use the
+  ports on the Digiboard PC/8 adapter. To add a key for each entry, choose Add
+  Key from the Edit menu. Enter "Serial3" (without the quotation marks) for
+  COM3 on the entry for Key Name. Leave the Class entry blank, and then choose
+  OK.
+
+  To enter each value, choose Add Value from the Edit menu. Enter values of the
+  following:
+
+     Serial3
+     -------
+     DosDevices : REG_SZ : COM3
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x100
+     PortIndex : REG_DWORD : 0x1
+
+     Serial4
+     -------
+     DosDevices : REG_SZ : COM4
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x108
+     PortIndex : REG_DWORD : 0x2
+
+     Serial5
+     -------
+     DosDevices : REG_SZ : COM5
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x110
+     PortIndex : REG_DWORD : 0x3
+
+     Serial6
+     -------
+     DosDevices : REG_SZ : COM6
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x118
+     PortIndex : REG_DWORD : 0x4
+
+     Serial7
+     -------
+     DosDevices : REG_SZ : COM7
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x120
+     PortIndex : REG_DWORD : 0x5
+
+     Serial8
+     -------
+     DosDevices : REG_SZ : COM8
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x128
+     PortIndex : REG_DWORD : 0x6
+
+     Serial9
+     -------
+     DosDevices : REG_SZ : COM9
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x130
+     PortIndex : REG_DWORD : 0x7
+
+     Serial10
+     --------
+     DosDevices : REG_SZ : COM10
+     ForceFifoEnable : REG_DWORD : 0x1
+     Indexed: REG_DWORD : 0x1
+     Interrupt : REG_DWORD : 0x5
+     InterruptStatus : REG_DWORD : 0x140
+     PortAddress : REG_DWORD : 0x138
+     PortIndex : REG_DWORD : 0x8
+
+3. When complete, quit REGEDT32.
+
+4. Quit Windows NT and turn off your computer.
+
+5. Restart your computer and Windows NT.
+
+COM1 through COM9 can be directly referenced just like a filename from programs
+and from the command line. However, COM10 must be referenced with the following
+syntax:
+
+  \\.\COM10
+
+NOTE: The command line MODE command does not recognize ports above COM9.
+
+The products included here are manufactured by Digiboard, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: prodnt 3.10 prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85179/","publisher":null,"image":null,"headline":"Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85179-use-adlib-midi-map-with-sound-blaster-internal-synthesizer">Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85179
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a MIDI (.MID) file on a Creative Labs Sound Blaster (DSP revision
+1.0 and 1.5) internal synthesizer, no output is heard.
+
+The following Windows error message may be displayed:
+
+  The current MIDI setup references a MIDI device which is not installed on
+  your system. Do you want to continue?
+
+     [Yes] [No]
+
+In other cases, the file seems to play but you can't hear the sound. There is no
+error message.
+
+CAUSE
+=====
+
+The MIDI Mapper is configured incorrectly.
+
+If the error message occurs, then the MIDI Mapper is configured to use a hardware
+device that is not installed in the PC.
+
+If the error message isn't displayed but no sound is produced, the MIDI Mapper is
+configured with the Port Name as "Creative Labs Sound Blaster 1.0" or the
+"Creative Labs Sound Blaster 1.5" and is attempting to send the MIDI data to an
+external synthesizer connected to the sound board using an add-on MIDI
+interface. Unless an external synthesizer is connected, no sound is played.
+
+RESOLUTION
+==========
+
+You must select "Adlib" or "Adlib general" in the MIDI Mapper.
+
+1. From the Control Panel, run MIDI Mapper.
+
+2. Set the Name to Adlib or Adlib General.
+
+3. Save your changes and restart Windows.
+
+MORE INFORMATION
+================
+
+Windows version 3.1 supplies multimedia drivers for the Creative Labs Sound
+Blaster 1.0 and 1.5. The Adlib driver is installed with these cards to access
+the built-in Synthesizer chip.
+
+To properly address the internal synthesizer chip on the Sound Blaster, the MIDI
+Mapper should be set to "Adlib" or "Adlib general."
+
+
+For more information, contact Creative Labs technical support.
+
+The Sound Blaster product here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+KBCategory: kbmm kbsound kb3rdparty kberrmsg
+KBSubcategory: win31
+
+Additional query words: 3.10 3.11 MWIN Media Player
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

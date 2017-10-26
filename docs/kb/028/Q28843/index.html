@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28843: Why QuickBASIC Does Not Support COM3: and COM4: Serial Ports | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28843: Why QuickBASIC Does Not Support COM3: and COM4: Serial Ports" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28843/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28843/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28843/","publisher":null,"image":null,"headline":"Q28843: Why QuickBASIC Does Not Support COM3: and COM4: Serial Ports","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28843-why-quickbasic-does-not-support-com3-and-com4-serial-ports">Q28843: Why QuickBASIC Does Not Support COM3: and COM4: Serial Ports</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28843
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 26-MAR-1990
+
+Question:
+
+Why doesn't QuickBASIC support the COM3: and COM4: data communications
+ports?
+
+Response:
+
+Support for these two additional communications ports requires a
+larger code size for QuickBASIC in both the compiler and the run-time
+module. Therefore, the decision was made not to support COM3: and
+COM4:.
+
+The QuickBASIC compiler supports the use of serial communications
+ports COM1: and COM2: through the use of the OPEN "COM" statement.
+Information on how to access these ports can be found on Page 296 of
+the BASIC language reference manual for the following products:
+
+1. Microsoft QuickBASIC Versions 4.00 and 4.00b for MS-DOS
+
+2. Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and
+   MS OS/2
+
+To access COM3: and COM4:, it may be possible for compiled BASIC to
+call third-party library routines, which are listed in catalogs such
+as the "Programmer's Connection Buyer's Guide" [in the United States,
+call (800) 336-1166; in Canada, call (800) 225-1166; to reach Customer
+Service, call (216) 494-8899]. For example, you may want to contact
+the company Software Interphase at (401) 274-5465 to determine if
+its product QuickComm supports COM3: and COM4: called from Microsoft
+compiled BASIC.
+
+For a list of other catalogs, search for the following words:
+
+   programmer and tool and catalog
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

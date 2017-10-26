@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242229/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242229/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242229/","publisher":null,"image":null,"headline":"Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242229-howto-create-an-ocx-view-with-the-mmc-snap-in-designer-for-vb">Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242229
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Management Console, versions 1.1, 1.2 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Management Console (MMC) Snap-in Designer for Visual Basic offers
+the ability to create result views based on ActiveX UserControls. The use of
+ActiveX UserControls allows for greater flexibility in what can be displayed in
+the Result View window. This article outlines the steps needed to create an OCX
+View.
+
+MORE INFORMATION
+================
+
+Steps to Create an OCX View
+---------------------------
+
+1. Start Visual Basic and select a new SnapIn project from the New Project
+  dialog box.
+
+2. Add a new UserControl to the project. By default this new UserControl will be
+  named UserControl1.
+
+3. Open the SnapIn1 Designer. Under the Static node, right-click the ResultView
+  node, and then select Add New Result View -&gt; OCX View from the pop-up
+  menu. By default, the new Result View will be named OCXView1.
+
+4. Right-click the OCXView1 node and select Properties from the pop-up menu.
+
+5. When the property dialog box appears for OCXView1, set the ProgID text field
+  to the ProgID of the project's UserControl (Snapin.UserControl1). Close the
+  property sheet when done.
+
+6. Right-click the main parent node, Snapin1, and select Properties.
+
+7. When the Snap-in property sheet appears, set the Default Result View value to
+  OCXView1. Close the property sheet.
+
+8. Open the UserControl1 code window, and add the following code:
+
+  Private Sub UserControl_Click()
+      UserControl.BackColor = vbRed
+  End Sub
+
+9. Compile the project and start MMC.
+
+10. Load the snap-in into MMC and select the SnapIn1 scope item. The UserControl
+  will be rendered in the result view window.
+
+11. Click anywhere in the result view window and the background color of the
+  window will change to red.
+
+Notes:
+
+- An OCX View will not display when a snap-in is run from within the Visual
+  Basic integrated development environment (IDE). The SnapIn project must be
+  compiled to an executable to work properly.
+
+- A UserControl will resize to fill the Result View window, regardless of the
+  window's size. Any controls sited on the UserControl will not be
+  automatically repositioned when the UserControl is resized.
+
+- By default, a UserControl is only initialized once, the first time it is used
+  in a Result View. The ResultViews_InitializeControl event will only be fired
+  once for each OCX View. An OCX View provides the AlwaysCreateNewOCX property
+  to change this behavior. With the AlwaysCreateNewOCX property set to TRUE, a
+  new instance of the UserControl is created each time a Result View is
+  rendered.
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

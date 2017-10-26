@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303909: MechCommander 2.0: Known Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303909: MechCommander 2.0: Known Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303909/","publisher":null,"image":null,"headline":"Q303909: MechCommander 2.0: Known Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303909-mechcommander-20-known-issues">Q303909: MechCommander 2.0: Known Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303909
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbsound kbimu
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MechCommander 2.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses known issues that you may experience with Microsoft
+MechCommander 2.0.
+
+MORE INFORMATION
+================
+
+Issue 1
+-------
+
+When you start MechCommander, you may receive the either of the following error
+messages:
+
+  Cannot find DirectInput functions
+
+-or-
+
+  STOP: Cannot CreateNetLib
+
+This behavior can occur if you choose not to restart your computer after you
+install MechCommander, and you then immediately attempt to start MechCommander.
+
+Issue 2
+-------
+
+When you use the MechCommander Editor, you may receive the following error
+message:
+
+  [ASSERT 0] No components in the purchase file.
+
+This behavior occurs if you name your mission "Purchase01". You must select a
+different name in this case.
+
+Issue 3
+-------
+
+When you are playing a multiplayer game, you cannot download custom insignias,
+even though you could download them before.
+
+The Unit Insignia list in Player Preferences (multiplayer) only displays the
+first 125 insignias. To clear old insignia files, remove them from the
+data\multiplayer\insignia folder.
+
+Issue 4
+-------
+
+If you are running Microsoft Windows 2000, you may receive the following error
+message:
+
+  Your system is low on virtual memory. Windows is increasing the size of your
+  virtual memory paging file. During this process, memory requests for some
+  applications may be denied.
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System, and then click the Advanced tab.
+
+3. Click Performance Options, and then click Change under Virtual Memory.
+
+4. Under "Paging File Size for Selected Drive", change the initial size to 250
+  MB, change the maximum size to 500 MB, and then click Set.
+
+5. Click OK three times.
+
+Issue 5
+-------
+
+If you are running Windows 2000, you may experience choppy playback of audio or
+the program may stop responding (hang). These symptoms occur if you are using
+cards based on the Aureal Vortex 2 chipset.
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click "Sounds and Multimedia", and then click the Audio tab.
+
+3. Under Sound Playback, click Advanced, and then click the Performance tab.
+
+4. Drag the Hardware Acceleration slider to the left two notches, and then click
+  OK twice.
+
+Issue 6
+-------
+
+If you quit Microsoft NetMeeting 3.01 improperly, or if Remote Desktop Sharing is
+enabled, Direct3D functionality is disabled. When you restart the computer,
+Direct3D functionality is not restored.
+
+NetMeeting 3.01 automatically disables Direct3D functionality when it starts.
+When you quit NetMeeting properly, it restores Direct3D functionality. To
+resolve this issue, start NetMeeting 3.01, and then quit it properly.
+
+Issue 7
+-------
+
+Norton Antivirus 2001 slows video playback and goes the game to start slowly.
+With Norton Antivirus 2001 Autoprotect running, it may take four to five times
+longer than normal to start MechCommander. To resolve this issue, disable Norton
+Antivirus before you start the game.
+
+Issue 8
+-------
+
+The IntelliPoint ClickLock feature conflicts with right-click mouse camera
+control.
+
+When you adjusting camera perspective with the right mouse button, the ClickLock
+feature is engaged. To resolve this issue, turn off the ClickLock feature when
+you play MechCommander.
+
+Issue 9
+-------
+
+When you start MechCommander and you are using an ATI Rage Fury Maxx card, the
+computer may stop responding after the opening movies, during the fade into the
+menu.
+
+This behavior occurs with the ATI Rage Fury Maxx card with driver version
+4.12.01.7942. To resolve this issue, use version 7925 of the driver.
+
+If you are unable to see in-game videos, or receive an error message stating:
+
+  MC2RES.DLL 0 NOT FOUND
+
+please see the following article:
+
+  Q303913 MechCommander 2.0: You Cannot See In-Game Videos
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame mech commander mech2
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbsound kbimu 
+Technology        : kbGamesSearch kbMSNSearch kbMechCommSearch kbMechCommander200
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62217: EXEHDR.EXE Switch Omissions in 7.00/7.10 Manual | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62217: EXEHDR.EXE Switch Omissions in 7.00/7.10 Manual" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62217/","publisher":null,"image":null,"headline":"Q62217: EXEHDR.EXE Switch Omissions in 7.00/7.10 Manual","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62217-exehdrexe-switch-omissions-in-700710-manual">Q62217: EXEHDR.EXE Switch Omissions in 7.00/7.10 Manual</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62217
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900517-206 docerr | mspl13_basic
+Last Modified: 15-JAN-1991
+
+The EXEHDR documentation on page 347 of the "Microsoft CodeView and
+Utilities User's Guide" for Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 mentions only the /v (verbose)
+option and omits many additional EXEHDR options. This manual also
+unnecessarily documents the EXEMOD utility (on pages 307-311), which
+is an older version of EXEHDR. EXEMOD is not shipped with BASIC PDS
+7.00 or 7.10 because EXEHDR contains all of EXEMOD's functionality.
+
+This information applies to Microsoft BASIC PDS versions 7.00 and 7.10
+for MS-DOS and MS OS/2.
+
+The full list of EXEHDR options can be displayed by typing EXEHDR /?
+at the DOS prompt. The options are as follows:
+
+   Usage: EXEHDR [options] &lt;file-list&gt;
+   Valid options are:
+
+      /?
+      /HEAP:(0H - ffffH)
+      /HELP
+      /MAX:(0H - ffffH)
+      /MIN:(0H - ffffH)
+      /NEWFILES
+      /NOLOGO
+      /PMTYPE:(PM | VIO | NOVIO | WINDOWAPI |
+                  WINDOWCOMPAT | NOTWINDOWCOMPAT)
+      /RESETERROR
+      /STACK:(0H - ffffH)
+      /VERBOSE
+
+Note: The hex values are listed in assembly notation (for example,
+ffffH). Hex values should actually be input with C notation using the
+"0x" prefix instead of the "H" suffix (for example, ffffH -&gt; 0xffff).
+The values can also be entered in decimal notation without prefixes or
+suffixes.
+
+If the assembler notation for hex values is used with EXEHDR, the
+following errors will occur:
+
+   EXEHDR: error U1110: malformed number FFFFH
+   EXEHDR: error U1115: option /MAX:FFFFH ignored
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

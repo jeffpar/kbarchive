@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72899/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72899/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72899/","publisher":null,"image":null,"headline":"Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72899-sample-vpostdexe-calls-postmessage-from-a-virtual-device-vxd">Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72899
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbDDK kbOSWin300
+Last Modified: 04-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Windows graphical environment, a virtual device (VxD) can
+indirectly call the PostMessage function. This enables any virtual machine (VM)
+to communicate with the system VM. VPostD.exe demonstrates the techniques
+discussed below to implement this communication.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  VPostD.exe
+  (http://download.microsoft.com/download/platformsdk/sample88/3.1/W31/EN-US/VPostD.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Although a VxD cannot directly call the PostMessage function, a VxD can call a
+callback function in a Windows dynamic-link library (DLL), which can in turn
+call PostMessage.
+
+To accomplish this communication, the callback function called by the VxD must
+reside in a FIXED code segment of a DLL. Any data accessed by the callback
+routine must be placed in a FIXED data segment. This is necessary because the
+callback routine is very similar to an interrupt service routine (ISR). Required
+code and data must be available in memory at all times. FIXED code and data
+segments of a Windows DLL are page locked by the Windows memory manager, which
+keeps the segments present in memory. The callback routine can call only the
+PostMessage and PostAppMessage functions, because these are the only reentrant
+Windows functions. The DLL can't call any other Windows functions.
+
+To communicate with the system VM, the VxD must provide a protected mode API
+through which the DLL can register the address of its callback function. When
+the VxD receives an event that generates a message, the VxD schedules the system
+VM for execution. It may also be necessary to wait for the critical section to
+be free and for interrupts to be enabled. The virtual machine manager (VMM)
+provides a service called Call_Priority_VM_Event, which is designed for
+situations such as this.
+
+When the System VM is scheduled and is in an appropriate state, the VxD can use
+the VMM service Simulate_Far_Call to call the DLL, which can then call
+PostMessage.
+
+Refer to the "Microsoft Windows Device Driver Kit: Virtual Device Adaptation
+Guide" (VDAG) for documentation on the VMM services. VPOSTD provides the full
+source listing for a VxD and DLL, which demonstrates everything required to
+implement the architecture discussed above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbDDK kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

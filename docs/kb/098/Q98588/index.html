@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98588/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98588/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98588/","publisher":null,"image":null,"headline":"Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98588-prb-undesired-side-effects-from-toascii-tolower-toupper">Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98588
+Product(s): Microsoft C Compiler
+Version(s): 6.0 6.0a 6.0ax 7.0 1.0 1.5 1.51 2.0 2.1 4.0 4.1 4.2 5.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an application compiled with Microsoft C/C++, using the toascii, tolower, or
+toupper macros with a pointer value produces incorrect results, such as
+corrupted strings or a GP fault, depending on which compiler you use.
+
+CAUSE
+=====
+
+Because the tolower and toupper macros evaluate the input argument twice, the
+compiler performs any pointer arithmetic specified in a macro argument twice.
+This problem occurs most often with macros that affect an individual character
+because character pointers are common arguments for these macros.
+
+RESOLUTION
+==========
+
+The text below presents two methods to address the behavior the side effects
+cause.
+
+- Modify the code to remove the pointer arithmetic expression from the macro
+  argument. In the code fragment below, because the argument to the toupper
+  macro does not change, the side effect does not occur when the macro
+  evaluates the argument a second time.
+
+  while (*x != '\0')
+     {
+     *x = (char) toupper((int) *x);
+     x++;
+     }
+
+- The compiler provides more than one implementation for some functions. For
+  example, to use a different implementation of the tolower or toupper
+  function, perform the following three steps:
+
+  1. Specify the /Za option (ANSI compatibility) on the compiler command line.
+
+  2. Use the _tolower() or _toupper() functions in place of the tolower or
+     toupper macros.
+
+  3. After including the &lt;ctype.h&gt; file in your application source code,
+     use the #undef tolower or #undef toupper statement to remove the macro
+     definition from the code.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: none
+   */ 
+
+  #include &lt;stdio.h&gt;
+  #include &lt;ctype.h&gt;
+
+  char string[20]="this is a string";
+
+  void main(void)
+  {
+     char *x;
+
+     x = string;
+     while (*x != '\0')
+        *x = (char)toupper((int) *(x++));
+     printf("%s\n", string);
+  }
+
+The sample code above may produce the following output:
+
+thHssiI    ttiIgg
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : 6.0 6.0a 6.0ax 7.0 1.0 1.5 1.51 2.0 2.1 4.0 4.1 4.2 5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

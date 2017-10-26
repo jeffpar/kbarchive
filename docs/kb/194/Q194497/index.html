@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194497/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194497/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194497/","publisher":null,"image":null,"headline":"Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194497-wd97-private-fields-appear-in-converted-wordperfect-documents">Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194497
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 kbfield word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Microsoft Word, when you open a document that is in WordPerfect 5.x or 6.x
+format, you may see PRIVATE fields at the beginning of and throughout the
+converted document.
+
+CAUSE
+=====
+
+This is a design feature of Word and the WordPerfect converter. A PRIVATE field
+stores data for documents converted from other file formats. The field contains
+data that allows Word to retain formatting information not used by Word but that
+is necessary for optimally converting the file back to its original format. At
+this time, PRIVATE fields are used only when converting documents from
+WordPerfect 5.x and 6.x format to Word.
+
+PRIVATE fields do not affect document layout in Word. If you do not want PRIVATE
+fields to be displayed in your document, click the Show/Hide button on the
+Formatting toolbar. Sometimes there is no way to turn off the PRIVATE field,
+regardless of whether Show/Hide or Field Codes are turned off. However, it will
+not appear in print preview or when the document is actually printed.
+
+MORE INFORMATION
+================
+
+The PRIVATE field that appears at or near the beginning of converted WordPerfect
+documents notifies Word that the document was originally opened from
+WordPerfect. This enables Word to make necessary adjustments to process other
+PRIVATE fields for table of contents formatting codes and several other formats
+if you later choose to save the document in WordPerfect format.
+
+Sometimes, whether Field Codes are on or off under the View or Print tabs (on the
+Tools menu, click Options), the {PRIVATE} fields are shown in normal and print
+preview views and print {PRIVATE} on the document. When this behavior occurs,
+Bookmark Not Defined is also shown in page layout view. To work around this
+behavior, find these codes and cut them from the document.
+
+You can search for these fields by using Replace or Find on the Edit menu. Type
+"^dPRIVATE" (without the quotation marks). You can also manually search through
+the document for the {PRIVATE} fields, select them, and then click Cut on the
+Edit menu.
+
+
+
+Additional query words: textconv wpft5 convert converted converts converting conversion transfer transferred transfers transferring translate translated translates translating word-perfect word perfect 5.1 5.2 wpft6 6.1
+
+======================================================================
+Keywords          : kbdta word8 kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81541: Using PWB to Maintain Libraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81541: Using PWB to Maintain Libraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81541/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81541/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81541/","publisher":null,"image":null,"headline":"Q81541: Using PWB to Maintain Libraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81541-using-pwb-to-maintain-libraries">Q81541: Using PWB to Maintain Libraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81541
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS 
+- Microsoft Programmer's Workbench for OS/2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add a template of build switches to the TOOLS.INI
+file, which will allow you to maintain libraries of object modules. This article
+also describes how to add new object modules to an existing library using the
+Programmer's WorkBench. One drawback to using these templates is that the
+library must exist before they can be used.
+
+This articles was originally written for PWB 1.X, but the process is the same for
+PWB 2.0. However, some of the steps to select the build options are different.
+
+MORE INFORMATION
+================
+
+Add the following template to the TOOLS.INI file in the subdirectory specified
+by the INIT environment variable. This template will allow you to replace .OBJ
+modules in an existing library. Note that the object module must be in the
+library to make use of this template.
+
+Note: The lines that are split should be concatenated. These lines were broken
+for readability.
+
+[pwb-Build Options:Replace OBJ in Library]
+ build: macro PWBRMAKE "pwbrmake"
+ build: macro NMAKEBSC1 "set"
+ build: macro NMAKEBSC2 "nmake"
+ build: macro CC "cl"
+ build: macro CFLAGS_G "/AL /W2 /G2 /BATCH /FR$*.sbr"
+ build: macro CFLAGS_D "/qc /Od /Zi /Zr"
+ build: macro CFLAGS_R "/Ot /Oi /Ol /Oe /Og /Gs"
+ build: macro ASM "ml"
+ build: macro AFLAGS_G "/W2 /WX /FR$*.sbr"
+ build: macro AFLAGS_D "/Sf /Sa /Sg /Sx /Zi /Fl"
+ build: macro AFLAGS_R "/nologo"
+ build: macro MAPFILE_D "$(PROJ).map"
+ build: macro MAPFILE_R "NUL"
+ build: macro BRFLAGS " /o $(PROJ).bsc"
+ build: macro BROWSE "1"
+ build: macro LIB "lib"
+ build: all $(PROJ).lib
+ build: target $(PROJ).bsc pwbrmake
+ build: target $(PROJ).lib lib nmakebsc1 nmakebsc2
+ build: inference .c.sbr cc_c_sbr
+ build: inference .asm.sbr asm_asm_sbr
+ build: inference .c.obj cc_c_obj lib_obj_lib
+ build: inference .asm.obj asm_asm_obj lib_obj_lib
+ build: inference .h.inc h2inc_h_inc
+ build: command pwbrmake "$(PWBRMAKE) @&lt;&lt;\n$(BRFLAGS) $(SBRS)\n&lt;&lt;"
+ build: command nmakebsc1 "$(NMAKEBSC1) MAKEFLAGS="
+ build: command nmakebsc2 "$(NMAKEBSC2) $(NMFLAGS) -f $(PROJFILE)
+                       $(PROJ).bsc"
+ build: command lib_obj_lib "$(LIB) $(PROJ).lib -+$(@B).obj;"
+ build: command lib "@echo $(OBJS) &gt;NUL"
+ build: release command cc_c_sbr "$(CC) /Zs $(CFLAGS_G)
+                       $(CFLAGS_R) /FR$@ $&lt;"
+ build: debug command cc_c_sbr "$(CC) /Zs $(CFLAGS_G) $(CFLAGS_D)
+                       /FR$@ $&lt;"
+ build: release command asm_asm_sbr "$(ASM) /Zs $(AFLAGS_G)
+                       $(AFLAGS_R) /FR$@ $&lt;"
+ build: debug command asm_asm_sbr "$(ASM) /Zs $(AFLAGS_G)
+                       $(AFLAGS_D) /FR$@ $&lt;"
+ build: release command cc_c_obj "$(CC) /c $(CFLAGS_G) $(CFLAGS_R)
+                       /Fo$@ $&lt;"
+ build: debug command cc_c_obj "$(CC) /c $(CFLAGS_G) $(CFLAGS_D)
+                       /Fo$@ $&lt;"
+ build: release command asm_asm_obj "$(ASM) /c $(AFLAGS_G)
+                       $(AFLAGS_R) /Fo$@ $&lt;"
+ build: debug command asm_asm_obj "$(ASM) /c $(AFLAGS_G)
+                       $(AFLAGS_D) /Fo$@ $&lt;"
+ build: release command h2inc_h_inc "$(H2INC) /c $(CFLAGS_G)
+                       $(CFLAGS_R) $&lt;"
+ build: debug command h2inc_h_inc "$(H2INC) /c $(CFLAGS_G)
+                       $(CFLAGS_D) $&lt;"
+
+This template will allow you to add new OBJ modules to an existing library. Add
+the following template to the TOOLS.INI file in the subdirectory specified by
+the INIT environment variable.
+
+Note: The object module must not be in the library to make use of this template.
+
+[pwb-Build Options:Add OBJ to library]
+ build: macro PWBRMAKE "pwbrmake"
+ build: macro NMAKEBSC1 "set"
+ build: macro NMAKEBSC2 "nmake"
+ build: macro CC "cl"
+ build: macro CFLAGS_G "/AL /W2 /G2 /BATCH /FR$*.sbr"
+ build: macro CFLAGS_D "/qc /Od /Zi /Zr"
+ build: macro CFLAGS_R "/Ot /Oi /Ol /Oe /Og /Gs"
+ build: macro ASM "ml"
+ build: macro AFLAGS_G "/W2 /WX /FR$*.sbr"
+ build: macro AFLAGS_D "/Sf /Sa /Sg /Sx /Zi /Fl"
+ build: macro AFLAGS_R ""
+ build: macro MAPFILE_D "$(PROJ).map"
+ build: macro MAPFILE_R "NUL"
+ build: macro BRFLAGS " /o $(PROJ).bsc"
+ build: macro BROWSE "1"
+ build: macro LIB "lib"
+ build: all $(PROJ).lib
+ build: target $(PROJ).bsc pwbrmake
+ build: target $(PROJ).lib lib nmakebsc1 nmakebsc2
+ build: inference .c.sbr cc_c_sbr
+ build: inference .asm.sbr asm_asm_sbr
+ build: inference .c.obj cc_c_obj lib_obj_lib
+ build: inference .asm.obj asm_asm_obj lib_obj_lib
+ build: inference .h.inc h2inc_h_inc
+ build: command pwbrmake "$(PWBRMAKE) @&lt;&lt;\n$(BRFLAGS) $(SBRS)\n&lt;&lt;"
+ build: command nmakebsc1 "$(NMAKEBSC1) MAKEFLAGS="
+ build: command nmakebsc2 "$(NMAKEBSC2) $(NMFLAGS) -f $(PROJFILE)
+                       $(PROJ).bsc"
+ build: command lib_obj_lib "$(LIB) $(PROJ).lib +$(@B).obj;"
+ build: command lib "@echo $(OBJS) &gt;NUL"
+ build: release command cc_c_sbr "$(CC) /Zs $(CFLAGS_G)
+                       $(CFLAGS_R) /FR$@ $&lt;"
+ build: debug command cc_c_sbr "$(CC) /Zs $(CFLAGS_G) $(CFLAGS_D)
+                       /FR$@ $&lt;"
+ build: release command asm_asm_sbr "$(ASM) /Zs $(AFLAGS_G)
+                       $(AFLAGS_R) /FR$@ $&lt;"
+ build: debug command asm_asm_sbr "$(ASM) /Zs $(AFLAGS_G)
+                       $(AFLAGS_D) /FR$@ $&lt;"
+ build: release command cc_c_obj "$(CC) /c $(CFLAGS_G) $(CFLAGS_R)
+                       /Fo$@ $&lt;"
+ build: debug command cc_c_obj "$(CC) /c $(CFLAGS_G) $(CFLAGS_D)
+                       /Fo$@ $&lt;"
+ build: release command asm_asm_obj "$(ASM) /c $(AFLAGS_G)
+                       $(AFLAGS_R) /Fo$@ $&lt;"
+ build: debug command asm_asm_obj "$(ASM) /c $(AFLAGS_G)
+                       $(AFLAGS_D) /Fo$@ $&lt;"
+ build: release command h2inc_h_inc "$(H2INC) /c $(CFLAGS_G)
+                       $(CFLAGS_R) $&lt;"
+ build: debug command h2inc_h_inc "$(H2INC) /c $(CFLAGS_G)
+                       $(CFLAGS_D) $&lt;"
+
+To demonstrate the use of these templates, do the following.
+
+1. At the command prompt, type the following:
+
+  " lib example" (without the quotation marks)
+
+2. The library manager will ask you if you would like to create the new library.
+  Answer "Y".
+
+3. Press ENTER for the remaining prompts.
+
+4. Start PWB.
+
+5. Create a program list EXAMPLE.MAK.
+
+6. Add a .C or .ASM file to the program list.
+
+7. From the Options menu, choose Build Options. If you are using PWB version
+  1.1, set the main language to none. Set Initial Build Options to Add OBJ to
+  library.
+
+8. Choose Rebuild All from the Make menu.
+
+9. In the Compile Results window, you should see the results of NMAKE compiling
+  your file and adding it to the existing library.
+
+10. Now choose Build Options from the Options menu.
+
+11. Set Initial Build Options to Replace OBJ in Library.
+
+12. Choose Rebuild All from the Make menu.
+
+13. In the Compile Results window, you should see the results of NMAKE compiling
+  or assembling your file and replacing it in the existing library.
+
+For information on how to make libraries dependents of the current target, query
+on the following words:
+
+  " library pwb dependent" (without the quotation marks)
+
+For more information about the PWB build switches and how to modify the above
+switches, see the "Microsoft Programmers WorkBench" application note, which can
+be obtained from Microsoft Product Support or query on SW0330.
+
+Additional query words: kbinf 1.00 1.10 2.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

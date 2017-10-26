@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181490/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181490/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181490/","publisher":null,"image":null,"headline":"Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181490-causes-of-elevated-cpu-utilization-with-tapi-20-and-ras">Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181490
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 14-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Tapisrv.exe may begin to use an excessive amount of processor time (from 50% to
+100%) with Remote Access Services (RAS) installed.
+
+CAUSE
+=====
+
+This problem may occur if you use TAPI 2.0 and any of the following are true:
+
+- RAS is configured with modems that are no longer connected to the system or
+  that are powered off.
+
+- Your serial device or modem uses an outdated driver.
+
+- You are using a multi-port device that does not appear on the Microsoft
+  Windows NT 4.0 Hardware Compatibility List. For more information on the
+  Windows NT Hardware Compatibility List, please see the following article in
+  the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q131303
+  TITLE : Latest Windows 2000 and Windows NT Hardware Compatibility List (HCL)
+
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following:
+
+- Remove any modems listed in the RAS Server configuration that are no longer
+  on the system.
+
+- Connect the modems listed in the RAS Server configuration.
+
+- Turn on all modems connected to the system.
+
+- Update outdated serial device or modem drivers.
+
+- Make sure your serial device or modem is on the Hardware Compatibility List.
+
+- Update the firmware for your serial device or modem.
+
+
+MORE INFORMATION
+================
+
+This information does not apply to TAPI 2.1.
+
+To determine the version of TAPI on your computer, check date and file size of
+the Tapisrv.exe file in the %SystemRoot%\System32 folder.
+
++--------------------------------------------------------------------------------------------+
+| File        | Date         | Size          | Version                                       | 
++--------------------------------------------------------------------------------------------+
+| Tapisrv.exe | May 01, 1997 | 120,592 bytes | TAPI 2.0 (from Windows NT 4.0 Service Pack 3) | 
++--------------------------------------------------------------------------------------------+
+
+Additional query words: ntsee serial rras
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

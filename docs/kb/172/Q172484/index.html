@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172484: 5250 Printing Causes High CPU Utilization | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172484: 5250 Printing Causes High CPU Utilization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172484/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172484/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172484/","publisher":null,"image":null,"headline":"Q172484: 5250 Printing Causes High CPU Utilization","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172484-5250-printing-causes-high-cpu-utilization">Q172484: 5250 Printing Causes High CPU Utilization</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172484
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 02-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An SNA Server system using the print server service for 5250 printing may
+occasionally show very high CPU utilization, even though there are no print jobs
+currently printing. In addition, the AS/400 that SNA Server is connected to may
+also show an increase in its CPU utilization at the same time.
+
+You may notice that there are print jobs on the AS/400 print writers waiting to
+be printed when this problem occurs.
+
+An SNA Server Data Link Control (DLC) message traces shows repeated LUSTAT
+messages being sent between the SNA Server computer and the AS/400 in rapid
+succession while the problem is going on.
+
+CAUSE
+=====
+
+When a print request is received from a host, the print server issues a
+StartDoc() call to initialize the connection to the printer that the print
+session is configured to use. The CPU utilization problem occurs when the
+StartDoc() call returns an error that the 5250 print provider does not correctly
+handle. The print server fails to send an error message to the AS/400 when the
+StartDoc() call fails and does not respond to the AS/400 print request at all.
+The result is that the print server and the AS/400 establish a loop by sending
+LUSTAT messages back and forth. The frequency of these messages causes the CPU
+utilization on both systems to increase.
+
+If the StartDoc() call is successful, the AS/400 print job is printed normally.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The following is an excerpt from a Nodemsg1.atf trace captured while the problem
+was occurring:
+
+  DLC   ------------------------------------------------------------------
+  --------------
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:0E OAF:01 ODAI:off Normal
+  DLC                      LUSTAT RQE DFC FI BC EC DR1 PI CD
+  DLC
+  DLC   ---- Header  at address 01444758, 1 elements ----
+  DLC   07050000 00002C00 0E01A904 0100CC00     &lt;......,...z.....&gt;
+  DLC
+  DLC   ---- Element at address 0193BB68, start 10, end 17 ----
+  DLC   4B912004 00060000                       &lt;Kj .....        &gt;
+  DLC   ------------------------------------------------------------------
+  --------------
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:21 OAF:01 ODAI:off Normal
+  DLC                      LUSTAT RQE DFC FI BC EC DR1 CD
+  DLC
+  DLC   ---- Header  at address 0144444C, 1 elements ----
+  DLC   07050000 00002C00 2101DA7A 0100CC00     &lt;......,.!..z....&gt;
+  DLC
+  DLC   ---- Element at address 0193F470, start 10, end 17 ----
+  DLC   4B902004 00060000                       &lt;K. .....        &gt;
+  DLC   ------------------------------------------------------------------
+  --------------
+  DLC   04160000-&gt;01020101 DLC DATA
+  DLC                      DAF:01 OAF:0E ODAI:off Normal
+  DLC                      +RSP FMD BC EC PI
+  DLC
+  DLC   ---- Header  at address 0144478C, 1 elements ----
+  DLC   07050000 00002C00 010E0000 01008700     &lt;......,.......g.&gt;
+  DLC
+  DLC   ---- Element at address 0193BB68, start 10, end 12 ----
+  DLC   830100                                  &lt;c..             &gt;
+  DLC   ------------------------------------------------------------------
+  --------------
+  DLC   04160000-&gt;01020101 DLC DATA
+  DLC                      DAF:01 OAF:0E ODAI:off Normal
+  DLC                      LUSTAT RQE DFC FI BC EC DR1 CD
+  DLC
+  DLC   ---- Header  at address 0144437C, 1 elements ----
+  DLC   26050002 00002C00 010EA905 01008700     &lt;&amp;.....,...z...g.&gt;
+  DLC
+  DLC   ---- Element at address 0193EA2C, start 10, end 17 ----
+  DLC   4B902004 00060000                       &lt;K. .....        &gt;
+  DLC   ------------------------------------------------------------------
+--------------
+  DLC   04160000-&gt;01020101 DLC DATA
+  DLC                      DAF:01 OAF:21 ODAI:off Normal
+  DLC                      LUSTAT RQE DFC FI BC EC DR1 PI CD
+  DLC
+  DLC   ---- Header  at address 0144444C, 1 elements ----
+  DLC   04050004 00002C00 0121DA7B 01008700     &lt;......,..!.{..g.&gt;
+  DLC
+  DLC   ---- Element at address 0193F470, start 10, end 17 ----
+  DLC   4B912004 00060000                       &lt;Kj .....        &gt;
+  DLC   ------------------------------------------------------------------
+  --------------
+
+With the fix applied, the 5250 print provider correctly handles errors returned
+by the StartDoc() call.
+
+Additional query words: spike perfmon pegged
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

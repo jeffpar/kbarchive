@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170287: Multi-session SLI Program Stops Receiving Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170287: Multi-session SLI Program Stops Receiving Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170287/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170287/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170287/","publisher":null,"image":null,"headline":"Q170287: Multi-session SLI Program Stops Receiving Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170287-multi-session-sli-program-stops-receiving-data">Q170287: Multi-session SLI Program Stops Receiving Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170287
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,3.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprogramming
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an SLI program opens multiple sessions, the application may fail to receive
+error notification on all sessions if a link failure occurs, causing the session
+to stop responding. This problem was observed in the following scenario:
+
+- A Win32-based SLI application (running on the SNA Server or a Windows NT
+  client) opens 100 sessions, then calls SLI_RECEIVE on each session.
+
+- A connection failure occurs, causing all 100 sessions to fail. However, the
+  SLI application fails to receive any error notification on most of the
+  sessions. All SLI_RECEIVEs should return with the following error message
+  when the connection fails:
+
+  
+
+     primary_rc   = 0x000F     (LUA_SESSION_FAILURE)
+     secondary_rc = 0x08310000 (LUA_LU_COMPONENT_DISCONNECTED)
+
+The above scenario describes the common symptom for this problem. However, the
+problem could appear whenever the SLI library receives status or data messages
+on a large number of sessions at the same time.
+
+CAUSE
+=====
+
+The SNA Server SLI interface is queuing messages to the RUI interface
+incorrectly, which could cause outstanding SLI calls to fail to return to the
+SLI application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.11 SP2 and
+3.0 SP1.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+A supported fix is now available for 2.11 SP2, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211
+Version           : WINDOWS:2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

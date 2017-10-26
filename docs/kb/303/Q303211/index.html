@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303211: Err Msg: &quot;[Object Error] No such partner or key version found&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303211: Err Msg: &quot;[Object Error] No such partner or key version found&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303211/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303211/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303211/","publisher":null,"image":null,"headline":"Q303211: Err Msg: &quot;[Object Error] No such partner or key version found&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303211-err-msg-object-error-no-such-partner-or-key-version-found">Q303211: Err Msg: "[Object Error] No such partner or key version found"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303211
+Product(s): Microsoft Developer Network
+Version(s): 1.3,1.4,1.99
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.3, 1.4, 1.99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to sign in to Passport, you may receive the following error
+message:
+
+  [Object Error] No such partner or key version found
+
+CAUSE
+=====
+
+The encryption key has been installed incorrectly or a network encryption
+problem exists on the Passport servers.
+
+RESOLUTION
+==========
+
+To resolve the problem, check the following:
+
+- This error may indicate that the partner site has installed an encryption key
+  that is different than the one that is registered in the Passport network for
+  the site. The site administrator should ensure that the site is using the key
+  that is registered for the site.
+
+- The encryption key may have been installed incorrectly. Check the kv
+  parameter on the query string and verify that it matches the version of the
+  current key that is installed. Rerun the key installation executable file as
+  directed by the key installation instructions that shipped with the
+  encryption key. For more information, see the following Passport SDK Web
+  site:
+
+  Installing the Encryption Key
+  http://www.passport.com/sdkdocuments/sdk14/Implementation/enckey.htm
+
+- There may be a problem with the key on the Passport Network. Notify your
+  Passport representative or e-mail Passport Developer Support at
+  nfssup@microsoft.com for assistance in verifying or correcting this.
+
+- When f values are returned on the query string after an attempted login, they
+  usually indicate a network problem. If you see f=7, an invalid key version
+  exists. Run the show current command to check the current key version that is
+  installed.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q304952 Error Message: 'Passport Partner Error' at Login
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassport199 kbPassportSearch
+Version           : :1.3,1.4,1.99
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

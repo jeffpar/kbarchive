@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44033: DOS Append Interfaces with execvp() in C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44033: DOS Append Interfaces with execvp() in C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44033/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44033/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44033/","publisher":null,"image":null,"headline":"Q44033: DOS Append Interfaces with execvp() in C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44033-dos-append-interfaces-with-execvp-in-c">Q44033: DOS Append Interfaces with execvp() in C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44033
+Product(s): See article
+Version(s): 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 25-MAY-1989
+
+The versions of the exec and spawn (with P_OVERLAY) functions that
+search the path for the child program to be run, fail with run-time
+error "R6005 not enough memory on exec" if the child is not in the
+current directory and the DOS APPEND command points to the child's
+directory.
+
+The DOS Versions 3.30 and later APPEND command is used to specify
+directories for locating data files.
+
+APPEND incorrectly finds .EXE and .COM files when DOS interrupt 21
+hex, function 3D hex (open file) is called. This can cause the C
+library function sopen() to mistakenly report that it has succeeded in
+finding a .COM or .EXE file in the current directory when, in fact,
+the file is in another directory that is pointed to by APPEND.
+
+The path-searching versions of the exec and spawn (with P_OVERLAY)
+functions use sopen() to first try to open the .COM or .EXE file in
+the current working directory. If sopen() fails because the file is
+not there, successive directories specified by the PATH are prepended
+to the child's filename, and sopen() is called again until it
+successfully opens the child's file in one of the directories
+specified by the PATH.
+
+If the child is not in the current working directory, but is pointed
+to by APPEND, sopen() mistakenly reports that it has successfully
+opened the child in the current directory and the necessary path is
+not prepended to the child's filename. When the exec/spawn functions
+call DOS interrupt 21 hex, function 4B hex, subfunction 3 (load and
+execute overlay program), the child can't be found in the current
+working directory, and the exec fails. (Unlike DOS function 3D hex to
+open a file, DOS function 4B hex is not affected by APPEND.) At this
+point, the only error C exec/spawn functions are designed to report is
+that there isn't enough memory available for the child process, and
+the R6005 error is issued.
+
+The path searching exec/spawn functions that can be adversely affected
+by APPEND are execlp, execlpe, execvp, execvpe, spawnlp, spawnlpe,
+spawnvp, and spawnvpe. The spawn functions using P_WAIT are not
+affected by APPEND since they do not use sopen().
+
+The Microsoft C run-time library functions do not support the use of
+APPEND. There are no plans to do so in the future.
+
+To work around problems caused by APPEND, disabling APPEND with the
+DOS command "APPEND;" is recommended. Or, within a program, you may
+use the system() library function for this purpose (except for
+versions of DOS that support the /E APPEND option to place APPEND in
+the environment table). If your program needs to accommodate APPEND,
+you could use the _searchenv() function to obtain the path. Then
+traverse the path prepending successive drive and directory names to
+the child's filename for use with sopen() until an sopen() call
+returns a valid file handle indicating the child program has been
+found. Once you have the exact path of the .EXE or .COM file, pass
+the complete path the the appropriate exec?? or spawn?? function.
+
+Note: DON'T use one of the functions that has a "p" in its name --
+these functions search the path for the file, something you've
+already done if you've followed these directions.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

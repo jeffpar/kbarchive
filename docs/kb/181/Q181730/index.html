@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181730/","publisher":null,"image":null,"headline":"Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181730-wd97-how-to-use-mail-merge-to-create-a-list-sorted-by-category">Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181730
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta kbfield word97 kbmerge kblayout
+Last Modified: 16-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Mail Merge feature in Word to create a list of data sorted and
+separated by a category. This article contains instructions and a sample you can
+use to create such a list.
+
+MORE INFORMATION
+================
+
+Setting Up the Data File
+------------------------
+
+Sort your data file so that all records with the same value for the key field
+(category, the field upon which you base the sort) are together, as shown in the
+sample data file below. The following sample list is sorted by the CITY field
+(CITY is the key field in this example):
+
+     CITY        EMPLOYEE      SALES
+     Atlanta     Smith        $3,000
+     Atlanta     Gates       $50,000
+     Atlanta     Henderson   $10,000
+     Houston     Jones        $8,000
+     Houston     Kelley       $9,000
+     Houston     Peterson         $0
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q142756 WD: How to Design and Set Up Mail Merge Data Sources
+
+Setting Up the Main Document
+----------------------------
+
+NOTE: Paragraph marks in the following examples are designated as &lt;B6&gt;. To type a
+paragraph mark, press ENTER. To show the paragraph marks in your Word document,
+click the Show/Hide button on the Standard toolbar.
+
+To set up your main document as a catalog, follow these steps:
+
+1. From a new blank document, click Mail Merge on the Tools menu.
+
+2. In the Mail Merge Helper, click the Create button and then click Catalog.
+
+3. Click New Main Document when prompted.
+
+4. In the Mail Merge Helper, click Get Data and then click Open Data Source to
+  attach the data file (use the sample file you created in the "Setting Up the
+  Data File" section of this article.
+
+5. In the main document, insert the following fields to compare the contents of
+  each key field record with the contents of the next key field record, to
+  determine whether the key field contents change from one data record to the
+  next.
+
+  NOTE: This example uses the sample data from the "Setting Up the Data File"
+  section of this article. To insert the field braces, press CTRL+F9.
+
+  {If {MergeSeq} = "1" "{Mergefield City}&lt;B6&gt;
+  " ""}{Set Place1 {Mergefield City}}&lt;B6&gt;
+  {If {Place2} &lt;&gt; {Place1}"&lt;B6&gt;
+  {Mergefield City}&lt;B6&gt;
+&lt;B6&gt;
+  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}&lt;B6&gt;
+
+  NOTE: To insert the {MergeSeq} field in the mail-merge main document, click
+  Insert Word Field on the Mail Merge toolbar.
+
+  The fields laid out in this example produce a catalog listing on the same page
+  as follows:
+
+  Atlanta
+
+  Smith $3,000
+  Gates $50,000
+  Henderson $10,000
+
+  Houston
+
+  Jones $8,000
+  Kelley $9,000
+  Peterson $0
+
+Forcing Each New Category to a New Page
+---------------------------------------
+
+The key field in this example is {Mergefield City}. When the value of City
+changes in the data file to a different city, then a new page is added to the
+merged results and the merge is continued at the top of the next page. To insert
+the field braces, press CTRL+F9.
+
+  {If {MergeSeq} = "1" "{Mergefield City}&lt;B6&gt;
+  " ""}{Set Place1 {Mergefield City}}&lt;B6&gt;
+  {If {Place2} &lt;&gt; {Place1}"
+  ----------------------------Page Break--------------------------------
+  {Mergefield City}&lt;B6&gt;
+&lt;B6&gt;
+  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}&lt;B6&gt;
+
+NOTE: A page break is inserted either by pressing CTRL+ENTER or by clicking Break
+on the Insert menu, selecting Page Break, and then clicking OK.
+
+The fields laid out in this example produce a catalog listing on separate pages
+as follows:
+
+  Atlanta
+
+  Smith $3,000
+  Gates $50,000
+  Henderson $10,000
+  ----------------------------Page Break--------------------------------
+  Houston
+
+  Jones $8,000
+  Kelley $9,000
+  Peterson $0
+
+Formatting the Key Field
+------------------------
+
+The key field in this example is {Mergefield City}. To format the results of the
+{Mergefield City} as all capital letters, you can use the formatting switch of
+"\* Upper". To insert the field braces, press CTRL+F9.
+
+  {If {MergeSeq} = "1" "{Mergefield City \* Upper}&lt;B6&gt;
+  " ""}{Set Place1 {Mergefield City}}&lt;B6&gt;
+  {If {Place2} &lt;&gt; {Place1}"&lt;B6&gt;
+  {Mergefield City \* Upper}&lt;B6&gt;
+&lt;B6&gt;
+  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}&lt;B6&gt;
+
+The fields laid out in this example produce a catalog listing on the same page
+with the city in all capital letters as follows:
+
+  ATLANTA
+
+  Smith $3,000
+  Gates $50,000
+  Henderson $10,000
+
+  HOUSTON
+
+  Jones $8,000
+  Kelley $9,000
+  Peterson $0
+
+For more information about general field formatting switches, click "Contents and
+Index" on the Help menu, click the Index tab in Microsoft Word Help, type the
+following text
+
+  fields, formatting
+
+and then double-click the selected text to go to the "Help Topics: Microsoft
+Word" topic. If you are unable to find the information you need, ask the Office
+Assistant.
+
+NOTE: You can apply different formatting to the key field {Mergefield City} by
+selecting the entire field (including the field braces ({}) and formatting the
+field as you want. For example, to format the field, click Font on the Format
+menu.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q141922 WD97: How to Start a Mail Merge
+
+  Q194747 WD97: Mail Merge Tutorial and Help File Available
+
+Additional query words: invoice catalog phone directory conditional mailmerge howto how-to how to
+
+======================================================================
+Keywords          : kbdta kbfield word97 kbmerge kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

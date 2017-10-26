@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169486: SnaBase and SNA Server Don’t Accept New Client Connections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169486: SnaBase and SNA Server Don’t Accept New Client Connections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169486/","publisher":null,"image":null,"headline":"Q169486: SnaBase and SNA Server Don’t Accept New Client Connections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169486-snabase-and-sna-server-dont-accept-new-client-connections">Q169486: SnaBase and SNA Server Don’t Accept New Client Connections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169486
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SnaBase and SNA Server may unexpectedly stop accepting new client connections
+after changes to the SNA Server configuration are saved using SNA Server
+Manager. Clients who are already connected through the SnaBase or server
+continue to function correctly. New clients may fail to get a sponsor
+connection, and will display one of the following error messages:
+
+Windows NT client:
+
+  SNA Server - ERROR # 1003
+  SnaBase could not open a sponsor connection to server &lt;server&gt;
+
+Windows 95 client:
+
+  SnaBase
+  ERROR: Could not open sponsor connection to &lt;server&gt;
+
+Windows 3.x client:
+
+  SNA Server Error: 546 Cannot establish connection with SNA Server
+  &lt;servername&gt;.
+
+If SNA Server or SnaBase full internal tracing is enabled while this is
+occurring, no internal trace files are generated.
+
+CAUSE
+=====
+
+Under SNA Server 3.0, every time a 3.0 client opens the sponsor connection, the
+SnaBase makes a local remote procedure call (RPC) to check if the encryption
+flag is enabled for the user record. If this occurs while another thread of the
+SnaBase is notified of a configuration file change, an SnaBase deadlock can
+occur.
+
+When the deadlock occurs, the DMOD critical section is held, preventing new users
+from connecting to either SnaBase or SNA Server.
+
+NOTE: For information on other potential causes of client connection problems to
+SNA Server 3.0 servers, see the following articles in the Microsoft Knowledge
+Base:
+
+  Q168546 Access Violation May Occur After Upgrading to 3.0 SP1
+
+  Q167196 SNA Server 3.0 SP1 Update May Break Named Pipe Clients
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the fix applied, the asynchronous RPC requests done from the SnaBase DMOD
+are really asynchronous; without the fix, they are synchronous, which can cause
+a deadlock in certain situations.
+
+
+Additional query words: hang crash
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

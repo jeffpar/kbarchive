@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187834/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187834/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187834/","publisher":null,"image":null,"headline":"Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187834-howto-select-and-unselect-a-range-of-cells-in-msflexgrid">Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187834
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to select a range of cells and how to unselect a
+range of selected cells using the MSFlexGrid control.
+
+MORE INFORMATION
+================
+
+The Visual Basic documentation provides a good explanation in the Online Help of
+how to select a range of cells in a MSFlexgrid control. However, there is no
+such explanation for how to undo a selection that has already been made. The
+example below demonstrates both.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project. Form1 is created by default.
+
+2. Click Components on the Project menu, check "Microsoft FlexGrid Control," and
+  then click OK.
+
+3. Add a MSFlexGrid control to Form1.
+
+4. Add two CommandButtons to Form1.
+
+5. Change the Caption property of Command1 to "UnSelect."
+
+6. Change the Caption property of Command2 to "Select."
+
+7. Add the following code to the module of Form1:
+
+        Private Sub Command1_Click()
+        ' unselect a range
+        With MSFlexGrid1
+           ' cancel selection by setting end points to start points
+           .RowSel = .Row
+           .ColSel = .Col
+           .SetFocus
+        End With
+        End Sub
+
+        Private Sub Command2_Click()
+        ' select a range
+        With MSFlexGrid1
+           ' Row and Col properties must be set before RowSel and ColSel
+           .Col = 0 ' start selection in this column
+           .Row = 2 ' start selection in this row
+           .ColSel = 1 ' end selection in this column
+           .RowSel = 4 ' end selection in this row
+           .SetFocus
+        End With
+        End Sub
+
+        Private Sub Form_Load()
+        With MSFlexGrid1
+           .Clear
+           .FixedCols = 0
+           .FixedRows = 0
+           .AddItem "mike" &amp; vbTab &amp; 10, 0
+           .AddItem "fred" &amp; vbTab &amp; 11, 1
+           .AddItem "jack" &amp; vbTab &amp; 13, 2
+           .AddItem "herman" &amp; vbTab &amp; 55, 3
+           .AddItem "irene" &amp; vbTab &amp; 88, 4
+           .AddItem "jane" &amp; vbTab &amp; 22, 5
+        End With
+        End Sub
+
+8. Press the F5 key to run the project. Click on the "Select" button. You should
+  see the middle of the MSFlexGrid selected.
+
+9. Click on the "UnSelect" button, and note that the selection is undone.
+
+Additional query words: kbDSupport kbDSD flex grid kbVBp kbVBp500 kbCtrl kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

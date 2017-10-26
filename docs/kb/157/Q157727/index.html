@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157727/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157727/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157727/","publisher":null,"image":null,"headline":"Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157727-bug-animated-mouse-cursor-does-not-work-in-exe-file">Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157727
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An animated mouse cursor (pointer) used in a form in an application works only
+in the development environment. The animated mouse cursor (pointer) shows up as
+regular mouse cursor (pointer) instead at run time (in an .exe file).
+
+NOTE: In Visual FoxPro 5.0a, using a .cur file also produces the same behavior.
+Visual FoxPro 5.0a Service Pack 2 allows a .cur file to be used properly.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+An animated mouse cursor will not show up properly in an .exe, however, if you
+assign an .ico or .cur file to the MouseIcon property, the animated mouse cursor
+will work.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form as mPointer.scx.
+
+2. Set the MouseIcon property of the form to some animated cursor (for example,
+  Cursor.ani).
+
+3. Set the MousePointer property of the form to "99-Custom."
+
+4. Add a command button to the form, and in the click method of the form, put in
+  the following code:
+
+        RELEASE Thisform
+        CLEAR EVENT
+
+5. Run the form.
+
+  Notice the animated mouse pointer that appears when you run the form.
+
+6. Now, close the form and create a project named mProject.pjx
+
+7. Add a program to the project as Main.prg, and put the following code in
+  Main.prg
+
+        DO FORM mPointer
+        READ EVENT
+
+8. Add the form to the project.
+
+9. Build the project into an .exe file.
+
+10. Exit Visual FoxPro and run the .exe file.
+
+  The animated mouse pointer changes to a regular mouse pointer.
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

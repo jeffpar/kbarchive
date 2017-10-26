@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90285: User Interface Differences Between WFWG and Windows 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90285: User Interface Differences Between WFWG and Windows 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90285/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90285/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90285/","publisher":null,"image":null,"headline":"Q90285: User Interface Differences Between WFWG and Windows 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90285-user-interface-differences-between-wfwg-and-windows-31">Q90285: User Interface Differences Between WFWG and Windows 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90285
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): win31
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the differences in the user interface (UI) between
+Microsoft Windows for Workgroups version 3.1 and Microsoft Windows operating
+system version 3.1.
+
+MORE INFORMATION
+================
+
+Toolbars
+--------
+
+Windows for Workgroups adds a toolbar to File Manager and Print Manager.
+
+Each toolbar contains a number of buttons that facilitate the most common
+procedures. Windows for Workgroups displays an explanation of each toolbar
+button and menu item on the status bar when you select it. You can customize
+each toolbar.
+
+File Manager
+------------
+
+- The toolbar contains a list box for selecting a drive to display in the
+  directory window.
+
+- The drive bar is located in the main File Manager window, providing more
+  display area for files.
+
+- An option has been added that opens a new directory window when you connect
+  to a network drive.
+
+- When you select a single file, its size, date, and time display on the status
+  bar.
+
+- The Properties dialog box includes version stamp and copyright information.
+  The Properties dialog box contains an Open By button that allows you to view
+  users on the network who are currently accessing that file.
+
+- When you share a directory, its icon changes. When you select a shared
+  directory, its network path displays on the status bar.
+
+- A directory window can exist for an unavailable drive; in 3.1, when you
+  started File Manager, the only saved windows that were restored were ones on
+  drives that actually existed.
+
+- The Tile command is expanded to Tile Horizontally or Tile Vertically.
+
+Print Manager
+-------------
+
+- A new display format allows more compact and flexible display of information.
+
+- When a printer is shared or connected, its network path is shown in the main
+  display.
+
+- All jobs in a remote print queue are shown, not just those that belong to
+  you.
+
+- The display font can now be customized.
+
+- The default printer can be set from within Print Manager, so you don't have
+  to switch to Control Panel to set it.
+
+- You can insert a separator page before each print job.
+
+Control Panel
+-------------
+
+- The Network icon provides access to all Windows for Workgroups configuration
+  settings.
+
+- The Printers icon only provides access to a Connect dialog box. You cannot
+  disconnect from within the Printers window. You must use Print Manager
+  instead. The Printers icon in Control Panel is primarily dedicated to set up
+  and remove printers from your system.
+
+Connection UI (Both File Manager and Print Manager)
+---------------------------------------------------
+
+- Windows for Workgroups integrates browsing into the Connect Network Printer
+  and Connect Network Drive dialog boxes, so you don't have to choose a
+  separate button to browse. Similarly, the network Path drop-down list
+  contains the last 12 network paths used, so you don't have to open a separate
+  dialog box to browse that list.
+
+- The Drive or Device list displays all devices, including those that are
+  already connected and what they are connected to. You can replace an existing
+  connection with a new one without manually disconnecting first.
+
+- When Windows for Workgroups prompts you for a password, that password can be
+  saved in a password list file (PWL) for later use.
+
+- On dual-network systems, you can choose a button that opens the secondary
+  network's connect dialog box.
+
+- On dual-network systems, you can type a network path to the secondary network
+  in the Windows for Workgroups Path field without having to use the secondary
+  network's Connect dialog box.
+
+Disconnect UI (Both File Manager and Print Manager)
+---------------------------------------------------
+
+- You can select multiple drives for disconnecting at once.
+
+- On dual-network systems, both Windows for Workgroups and secondary- network
+  connections can be disconnected using the same dialog box.
+
+Common Dialog Boxes
+-------------------
+
+- The common Open, Save As, and Print Setup dialog boxes contain a Network
+  button that provides access to a Connect dialog box.
+
+- In the Open and Save As dialog boxes, you can type a share name in UNC
+  (universal naming convention) format to access a list of files without
+  explicitly connecting to that share.
+
+Note to ISVs (independent software vendors): If a common dialog box called by
+your application lacks a Network button, there may be a control ID conflict (the
+ID is psh14), or there may not be enough room in your custom dialog template for
+the button to fit. If, on a dual-network system, the Connect dialog box lacks a
+NetWare button, your application may have insufficient stack space to support
+the NetWare connect dialog box.
+
+Built-In Applications
+---------------------
+
+- ClipBook Viewer replaces Clipboard Viewer.
+
+- New applications include WinMeter, Net Watcher, and Chat.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          : win31 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

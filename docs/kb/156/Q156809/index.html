@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156809: STL Sample for adjacent_difference, vector::push_back Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156809: STL Sample for adjacent_difference, vector::push_back Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156809/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156809/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156809/","publisher":null,"image":null,"headline":"Q156809: STL Sample for adjacent_difference, vector::push_back Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156809-stl-sample-for-adjacent_difference-vectorpush_back-function">Q156809: STL Sample for adjacent_difference, vector::push_back Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156809
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the adjacent_difference and
+vector::push_back STL functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;numeric&gt;
+     &lt;functional&gt;
+
+Prototype
+---------
+
+     template&lt;class InputIterator, class OutputIterator&gt; inline
+
+         OutputIterator adjacent_difference(InputIterator first,
+              InputIterator last, OutputIterator result)
+
+     template&lt;class InputIterator, class OutputIterator,
+
+              class BinaryOperator&gt; inline
+         OutputIterator adjacent_difference(InputIterator first,
+              InputIterator last, OutputIterator result,
+              BinaryOperator binary_op)
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+Assigns to every element referred to by iterator i in the range [result + 1,
+result + (last - first)) a value correspondingly equal to *(first + (i -
+result)) - *(first + (i - result) - 1) or binary_op (*(first + (i - result)),
+*(first + (i - result) - 1)). Result gets the value of *first.
+
+Sample Code
+-----------
+
+  /////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // adj_diff.cpp : Demonstrates the use of adjacent_difference()
+  // 
+  // Description of adjacent_difference(first,last,result)
+  //                adjacent_difference(first,last,result,binary_op):
+  // 
+  //    Assigns to every element referred to by iterator i in the range
+  //    [result + 1, result + (last - first))
+  //    a value correspondingly equal to
+  //    *(first + (i - result)) - *(first + (i - result) - 1)
+  //    or
+  //    binary_op(*(first + (i - result)), *(first + (i - result) - 1)).
+  //    Result gets the value of *first.
+  // 
+  // Written by Shaun Miller
+  // of Microsoft Product Support Services, Languages Developer Support.
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  /////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;iostream&gt;
+  #include &lt;numeric&gt;
+  #include &lt;functional&gt;
+  #include &lt;vector&gt;
+  #include &lt;iterator&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef vector &lt; int, allocator &lt; int &gt; &gt; IntegerArray;
+  typedef ostream_iterator &lt; int, char, char_traits&lt;char&gt; &gt; IntOstreamIt;
+
+  void main ()
+
+  {
+
+      // an ostream iterator that outputs an int to cout terminated
+      // by a space
+      IntOstreamIt itOstream(cout," ");
+
+      // Initialize the array
+      // Suppose that you are taking a trip and can measure
+      // the miles traveled from your city of origin
+      // to the city you are traveling through
+      IntegerArray rgIA;
+      rgIA.push_back(5661); // San Francisco to Berlin
+      rgIA.push_back(7456); // to Cairo
+      rgIA.push_back(10995); // to Calcutta
+      rgIA.push_back(17019); // to Cape Town
+      rgIA.push_back(24394); // to Hong Kong
+      rgIA.push_back(30376); // to London
+      rgIA.push_back(35758); // to Los Angeles
+
+      // Print the array
+      copy(rgIA.begin(),rgIA.end(),itOstream);
+      cout &lt;&lt; endl;
+
+      // Suppose that you now want the distance between each
+      // of the cities that you traveled to. You can easily
+      // find it with adjacent_difference()
+      IntegerArray rgDifferences(7);
+      IntegerArray::iterator itDifferences = rgDifferences.begin();
+      adjacent_difference(rgIA.begin(),rgIA.end(),itDifferences);
+
+      // Print the differences
+      // Remember that the first item in the differences array is
+      // not a difference, but is unused space
+      cout &lt;&lt; "The adjacent differences are: ";
+      copy(rgDifferences.begin()+1,rgDifferences.end(),itOstream);
+      cout &lt;&lt; endl;
+
+      // Suppose that you now want to know which adjacent differences
+      // are greater. If you have [a,b,c], you would like [1,0] if a&gt;b
+      // and b&lt;=c.
+      // You are using less() rather than greater() because
+      // adjacent_difference() reverses the parameters. For example,
+      // if a and b are adjacent, adjacent_difference() calls
+      // less(b,a). See the explanation at the top of this file
+      // for a more exact description.
+      IntegerArray rgGT(6);
+      IntegerArray::iterator itGT = rgGT.begin();
+      adjacent_difference(rgDifferences.begin()+1,
+                          rgDifferences.end(),
+                          itGT,
+                          less&lt;int&gt;());
+
+      // Print the greater thans
+      // Remember that the first item in the differences array is
+      // not a difference, but is unused space
+      cout &lt;&lt; "Which adjacent distances are greater:" &lt;&lt; endl
+           &lt;&lt; "(If you have [a,b,c], then you have [1,0] if a&gt;b and b&lt;=c)"
+           &lt;&lt; endl;
+      copy(rgGT.begin()+1,rgGT.end(),itOstream);
+      cout &lt;&lt; endl;
+
+  }
+
+Program Output is:
+
+5661 7456 10995 17019 24394 30376 35758
+The adjacent differences are: 1795 3539 6024 7375 5982 5382
+Which adjacent distances are greater:
+(If you have [a,b,c], then you have [1,0] if a&gt;b and b&lt;=c)
+0 0 0 1 1
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample adjacent_difference push_back iterator kbSTL kbTemplate
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

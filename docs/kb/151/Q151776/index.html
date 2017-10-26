@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151776: Err Msg: Unable to Find INF Source File during CPS Install | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151776: Err Msg: Unable to Find INF Source File during CPS Install" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151776/","publisher":null,"image":null,"headline":"Q151776: Err Msg: Unable to Find INF Source File during CPS Install","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151776-err-msg-unable-to-find-inf-source-file-during-cps-install">Q151776: Err Msg: Unable to Find INF Source File during CPS Install</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151776
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You try to use Uplodprf.exe to preinstall and configure Windows NT. After the
+upload to the distribution server completes, you restart, the process aborts,
+and the following error appears:
+
+  "Unable to find the inf source file, check the /i switch on the command line"
+
+MORE INFORMATION
+================
+
+The Windows NT Computer Profile Setup (CPS) utilities "make a profile of a fully
+installed Windows NT or Windows NT Advanced Server system, then load the profile
+onto identical target computers streamlining subsequent installations," page 103
+of the Windows NT 3.51 Resource Guide, volume 1.
+
+The process to create the CPS involves first creating a master system, then
+uploading the master system, copying the master system to target computers, and
+testing the systems. The steps to follow to upload the master system to the
+distribution server are detailed on page 103 of the Windows NT 3.51 Resource
+Guide. They include:
+
+1. On the master system computer, create a directory to hold the CPS utility
+  files, and then change the default to that directory.
+
+2. With the Windows NT resource kit CD-ROM in the CD-ROM drive of the master
+  system computer, copy the \I386\CPS directory from the CD-ROM to the
+  directory you created in step 1. For example, if your CD-ROM drive is D:,
+
+  type: "xcopy d:\i386\cps" (without the quotation marks)
+
+NOTE: The files on the CD-ROM are read-only.
+
+3. If you need to edit the PROFILE.INI, edit the copy you made in step 2 using a
+  text editor such as Windows Notepad.
+
+4. On the distribution server, create the directory that is to receive the
+  master system files, and share this directory.
+
+5. On the master system computer, type the following:
+
+  "uplodprf -s:&lt;master&gt; -i:profile.ini [\dir1] [\dir2]" (without the
+  quotation marks)
+
+RESOLUTION
+==========
+
+The CPS support file named ~profile.inf may be missing from CPS directory where
+you ran uplodprf.exe. Copy ~profile.inf from \i386\cps (or i386\setup\cps on
+3.51 Resource Kit CD-ROM) to the directory and run uplodprf.exe again.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

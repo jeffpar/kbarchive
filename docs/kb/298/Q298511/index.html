@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/298/Q298511/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/298/Q298511/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/298/Q298511/","publisher":null,"image":null,"headline":"Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q298511-snahis-print-server-may-hang-using-generic-text-print-driver">Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q298511
+Product(s): Microsoft SNA Server
+Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbDSupport MSGRAPH kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbs
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+- Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are printing with SNA Server 3.0 (or later) or Host Integration Server
+2000 on a Windows NT 4.0 Server (with Service Pack [SP] 4 or later), all SNA
+Server/Host Integration Server print jobs may stop printing and eventually the
+server will "hang" (lock). When this occurs, all keyboard and mouse activity
+will cease.
+
+This problem does not occur when running on Windows 2000 Server.
+
+CAUSE
+=====
+
+This problem is caused by a memory leak when you are using the generic text
+print driver. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q244350 Memory Leaks in 'Drsd' Tag When Printing to Generic Text Printer
+
+RESOLUTION
+==========
+
+To resolve this problem, apply the updated RASDD.dll file available from the
+link provided in the "Cause" section of this article.
+
+MORE INFORMATION
+================
+
+The following information would be recorded if Performance Monitor were running
+during this time.
+
+In one documented case of the problem, the following objects, counters, and
+instances were used:
+
+  Object = Process and Memory
+  Counter = Private Bytes and Pool Paged Bytes
+  Instance = SNASERVR, SNABASE and SNAPRINT
+
+During this time you would see the process/private bytes for SNASERVR and SNABASE
+increase, level off, and then start to decrease, while SNAPRINT would remain in
+a steady state. However, when viewing the memory object on the pool paged bytes
+counter, you would observe a steady increase of paged bytes up until the point
+at which the server stops responding.
+
+Reviewing the event viewer logs leading up to this failure would show the
+following errors:
+
+  SYSTEM LOG
+
+  Event 2020 - Source: Srv
+
+  The server was unable to allocate from the system paged pool because the pool
+  was empty.
+
+In addition to that event, a Snadump.log and Dr. Watson log (if configured as the
+default debugger) may be generated during this time as well:
+
+  APPLICATION LOG
+
+  Event 624 - Source: SNA Server (snadump)
+  Event 4097 - Source: DrWatson
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport MSGRAPH kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

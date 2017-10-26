@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127793/","publisher":null,"image":null,"headline":"Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127793-windows-sound-system-20-deinstaltxt-contents">Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127793
+Product(s): Miscellaneous Windows Products
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the text in the DEINSTAL.TXT file that is
+included on Disk 1 of the Microsoft Windows Sound System version 2.0.
+
+MORE INFORMATION
+================
+
+Contents of the DEINSTAL.TXT File
+---------------------------------
+
+To remove Microsoft Windows Sound System, you must remove the Windows Sound
+System files, initialization file entries, and backup files. You may also have
+to modify the Windows Registration Database.
+
+Before you remove files and file entries, remove the program groups used by
+Windows Sound System. The default program group name for Windows Sound System
+programs is Windows Sound System. If you have created program groups with user
+names for Voice Pilot, remove them also. If you have added any Windows Sound
+System applications to your Windows Startup group, remove those programs from
+the Startup group.
+
+Next, exit Microsoft Windows. In Microsoft MS-DOS, remove the files listed and
+make the changes noted. Do not attempt to remove files in Windows.
+
+NOTE: Because of the broad range of installations and uses of the Windows Sound
+System, not all files will be installed on all computers. In addition, not all
+files will be installed in the directories noted. For example, when Windows
+Sound System is installed on a computer that is running from a shared Windows
+installation on a remote network drive, all the files noted as contained in the
+Windows System directory are actually located in the local Windows directory.
+
+REMOVING WINDOWS SOUND SYSTEM FILES
+-----------------------------------
+
+To remove the Windows Sound System files:
+
+1. From the Windows directory (for example, from C:\WINDOWS), remove:
+
+       WINDOWSS.GRP
+       SNDSYS.INI
+       VOICEPIL.INI
+       SNDCNTRL.DLL
+       SND.HLP
+       MCIPLAY.EXE
+       MUSICBOX.INI
+       MCIOLE.DLL
+       CLIPRDR.INI
+       SNDSYS.HLP     (Windows Sound System sound board only)
+       WSSSB16.HLP    (Creative Labs Sound Blaster 16 or 16 ASP
+                       audio hardware only)
+       WSSSBPRO.HLP   (Creative Labs Sound Blaster Pro audio hardware
+                       only)
+
+       AUDDRIVE.HLP   (ESS audio hardware only)
+
+CAUTION: The files MCIPLAY.EXE and MCIOLE.DLL may be used by other applications.
+Removing these files could hinder these applications' proper functioning.
+
+2. From the Windows System directory (for example, from C:\WINDOWS\SYSTEM),
+  remove:
+
+       SNDSYS.DRV     (Windows Sound System sound board only)
+       VSNDSYS.386    (Windows Sound System sound board only)
+       MVMIXER.DRV    (Media Vision audio hardware only)
+       MVPROAUD.DRV   (Media Vision audio hardware only)
+       OPL3.DRV       (Media Vision audio hardware only)
+       VPASD.386      (Media Vision audio hardware only)
+       AUDDRIVE.DRV   (ESS audio hardware only)
+       VAUDRV.386     (ESS audio hardware only)
+       WSSSB16.386    (Creative Labs Sound Blaster 16 or 16 ASP audio
+                       hardware only)
+       WSSSB16.DRV    (Creative Labs Sound Blaster 16 or 16 ASP audio
+                       hardware only)
+       WSSSBPRO.386   (Creative Labs Sound Blaster Pro audio hardware
+                       only)
+       WSSSBPRO.DRV   (Creative Labs Sound Blaster Pro audio hardware
+                       only)
+       MIDIMAP.CFG    (Original file replaced)
+       MSMIXMGR.DLL
+       SNDEVNTS.DRV
+       TS_SOFT.ACM
+       TSD.DLL
+       IMAADPCM.ACM
+       MSACM.DRV
+       MSACM.DLL
+       MSADPCM.ACM
+       CHOO_WIN.HLP
+       FIL_WIN.HLP
+       MAP_WIN.HLP
+
+CAUTION: The files MSACM.DLL, MSACM.DRV, MSADPCM.ACM, IMAADPCM.ACM, CHOO_WIN.HLP,
+FIL_WIN.HLP, MAP_WIN.HLP, and SNDEVNTS.DRV may be used by other applications.
+Removing these files could hinder these applications' proper functioning.
+3. If you want to restore your MIDIMAP configuration to the state it was in
+  before you installed Windows Sound System, in the Windows System directory,
+  rename the MIDIMAP.WSS file MIDIMAP.CFG.
+
+4. From the Windows System directory, remove the following backup file:
+
+       MIDIMAP.WSS    (Backup version of MIDIMAP.CFG)
+
+5. From the Microsoft Excel directory (for example, from C:\EXCEL), remove:
+
+       XLRDR.INI
+
+6. From the Microsoft Excel Library directory (for example, from
+  C:\EXCEL\LIBRARY), remove:
+
+       PROOF.XLA
+
+7. From the Lotus 1-2-3 for Windows directory (for example, from C:\123WIN),
+  remove:
+
+       123RDR.INI
+
+8. Remove all of the files and directories from the directory where the Windows
+  Sound System was installed. (The default is C:\SNDSYS.)
+
+In some cases, you may not be able to delete the dictionary (*.DCT) files that
+are installed with ProofReader because they are read-only files. To delete them,
+start Windows File Manager, and then select all files with the .DCT extension.
+Then, from the File menu, choose Delete. File Manager warns you that the files
+are "system, hidden, or read-only" and provides you with options. Choose Yes.
+
+REMOVING INITIALIZATION FILE ENTRIES
+------------------------------------
+
+Now, remove all entries that Windows Sound System made to initialization (.INI)
+files that were not created by Windows Sound System. All of the initialization
+files are located in the Windows directory (for example, in C:\WINDOWS). Entries
+are listed by file and section.
+
+NOTE: Depending on how you installed Windows Sound System and how you use it,
+some of the entries may not be present in the specified files. In addition, if
+you did not install Windows Sound System in C:\SNDSYS (the default directory),
+substitute the full name of the directory in which you installed Windows Sound
+System for C:\SNDSYS in the following entries.
+
+1. 
+
+  
+  File:    123W.INI:
+  Section: [AUTOLOAD ADDINS]
+  Entry:
+      123RDR.ADW=C:\SNDSYS, 1, 0, 0
+
+2. 
+
+  File:    123R4.INI:
+  Section: [AUTOLOAD ADDINS]
+  Entry:
+      123RDR.ADW=C:\SNDSYS, 1, 0, 0
+
+3. 
+
+  File: CONTROL.INI:
+
+  NOTE: CONTROL.WSS is a copy of your CONTROL.INI file as it appeared before it
+  was modified by the Windows Sound System.
+
+  Section: [drivers.desc]
+  Entries:
+      sndsys.drv=Microsoft Windows Sound System
+      msacm.drv=Microsoft Sound Mapper
+      ts_soft.acm=DSP Group TrueSpeech(TM) Software CODEC
+      SndEvnts.drv=SoundBits Events Driver
+      imaadpcm.acm=Microsoft ACM IMA ADPCM Audio CODEC
+      msadpcm.acm=Microsoft ADPCM Audio CODEC
+
+  NOTE: If you have Microsoft SoundBits(TM) installed on your system, do not
+  delete the entry for SndEvnts.drv. Some other applications may use ACM.
+  Removing the entries for msacm.drv, imaadpcm.acm, and msadpcm.acm could
+  hinder these applications' proper functioning.
+
+  Section: [SoundSchemes]
+  Entries: ALL
+
+  NOTE: If you have Microsoft SoundBits installed on your system, do not delete
+  the entries for Musical Sounds, Hanna Barbera, Hollywood Movies, or Your Old
+  Scheme.
+
+  Section: [SoundScheme.Nature] Entries: ALL
+
+  Section: [SoundScheme.Sci-Fi] Entries: ALL
+
+4. File: WIN.INI
+
+   Section: [Extensions]
+   Entries:
+      WAV=C:\SNDSYS\QRECORD.EXE ^.WAV
+      SND=C:\SNDSYS\SNDFINDR.EXE ^.SND
+      AIF=C:\SNDSYS\SNDFINDR.EXE ^.AIF
+      VOC=C:\SNDSYS\SNDFINDR.EXE ^.VOC
+      MID=C:\SNDSYS\SNDFINDR.EXE ^.MID
+      RMI=C:\SNDSYS\SNDFINDR.EXE ^.RMI
+
+   Section: [Embedding]
+   Entry:
+      SoundRec=Sound,Sound,C:\SNDSYS\QRECORD.EXE,picture
+
+  NOTE: To restore Sound Recorder as the OLE server for sound objects, replace
+  C:\SNDSYS\QRECORD.EXE with SOUNDREC.EXE. You can also choose the OLE server
+  for sound objects from the Windows Sound System Setup program.
+
+   Section: [sounds]
+   Entries: If any system events point to Windows Sound System
+       sound files, remove the location and name of those
+       files. You can either replace them with other sound
+       filenames or change them to point to &lt;none&gt; and use
+       the Sound Control Panel to assign other sounds to these
+       events.  Also remove all entries that point to Voice
+       Pilot sounds.  Those entries begin with "VPT" or "VPV."
+
+5. File: SYSTEM.INI
+
+  NOTE: SYSTEM.WSS is a copy of your SYSTEM.INI file as it appeared before it
+  was modified by Windows Sound System.
+
+   Section: [boot]
+   Entry:
+      drivers=msmixmgr.dll SndEvnts.drv
+
+  NOTE: Do not delete or modify any other drivers mentioned in the drivers= line
+  in the [boot] section. Do not alter the order of the drivers. If you have
+  Microsoft SoundBits installed on your computer, do not delete the entry for
+  SndEvnts.drv.
+
+   Section: [drivers]
+   Entries:
+      WaveMapper=MSACM.DRV
+      SndEvnts=SndEvnts.drv
+      MSACM.msadpcm=msadpcm.acm
+      MSACM.imaadpcm=imaadpcm.acm
+      MSACM.trspch=ts_soft.acm
+
+  NOTE: If you have Microsoft SoundBits installed on your system, do not delete
+  the entry for SndEvnts.drv. Because other applications may use ACM, removing
+  the entries for MSACM could hinder these applications' proper functioning.
+
+     wave=SNDSYS.DRV      (Windows Sound System sound board only)
+     aux=SNDSYS.DRV       (Windows Sound System sound board only)
+     midi=SNDSYS.DRV      (Windows Sound System sound board only)
+     mixer=SNDSYS.DRV     (Windows Sound System sound board only)
+
+     WAVE=MVPROAUD.DRV    (Media Vision audio hardware only)
+     AUX=MVPROAUD.DRV     (Media Vision audio hardware only)
+     MIDI=MVPROAUD.DRV    (Media Vision audio hardware only)
+     MIDI1=OPL3.DRV       (Media Vision audio hardware only)
+     MIXER=MVMIXER.DRV    (Media Vision audio hardware only)
+
+     wave=AUDDRIVE.DRV    (ESS audio hardware only)
+     aux=AUDDRIVE.DRV     (ESS audio hardware only)
+     midi=AUDDRIVE.DRV    (ESS audio hardware only)
+     mixer=AUDDRIVE.DRV   (ESS audio hardware only)
+
+     wave=WSSSB16.DRV     (Creative Labs Sound Blaster 16 or 16 ASP
+                             audio hardware only)
+     aux=WSSSB16.DRV      (Creative Labs Sound Blaster 16 or 16 ASP
+                             audio hardware only)
+     midi=WSSSB16.DRV     (Creative Labs SoundBlaster 16 or 16 ASP
+              audio hardware only)
+     mixer=WSSSB16.DRV    (Creative Labs SoundBlaster 16 or 16 ASP
+                             audio hardware only)
+
+     wave=WSSSBPRO.DRV    (Creative Labs SoundBlaster Pro audio
+                             hardware only)
+     aux=WSSSBPRO.DRV     (Creative Labs Sound Blaster Pro audio
+                             hardware only)
+     midi=WSSSBPRO.DRV    (Creative Labs Sound Blaster Pro audio
+                             hardware only)
+     mixer=WSSSBPRO.DRV   (Creative Labs Sound Blaster Pro audio
+                             hardware only)
+
+   Section: [mvproaud.drv] (Media Vision audio hardware only)
+   Entries: All
+
+   Section: [opl3.drv]     (Media Vision audio hardware only)
+   Entries: All
+
+   Section: [auddrive.drv] (ESS audio hardware only)
+   Entries: All
+
+   Section: [wsssb16.drv]  (Creative Labs Sound Blaster 16 or 16 ASP
+             audio hardware only)
+   Entries: All
+
+   Section: [wsssbpro.drv] (Creative Labs Sound Blaster Pro audio
+                            hardware only)
+   Entries: All
+
+   Section: [sndsys.drv]   (Windows Sound System sound board only)
+   Entries: All
+
+   Section: [386Enh]
+   Entries:
+      device=vsndsys.386   (Windows Sound System sound board only)
+      device=vpasd.386     (Media Vision audio hardware only)
+      device=vaudrv.386    (ESS audio hardware only)
+      device=wsssb16.386   (Creative Labs Sound Blaster 16 or 16
+             ASP audio hardware only)
+      device=wsssbpro.386  (Creative Labs Sound Blaster Pro audio hardware
+             only)
+
+6. File: EXCEL4.INI or EXCEL.INI, depending on which version of Microsoft Excel
+  is installed.
+
+   Section: [Microsoft Excel]
+   Entry:
+      OPEN#=/F C:\EXCEL\LIBRARY\PROOF.XLA
+      Where # is a digit (0,1,2, etc.)
+
+7. File: PROGMAN.INI
+
+  WARNING: Make a backup copy of this file before proceeding.
+
+   Section: [Settings]
+   Entry:
+      Order= #
+      Delete the number (#) that refers to the Windows Sound System
+      program group number in the [Groups] section entry
+      "Group#=C:\WINDOWS\WINDOWSS.GRP."
+
+   Section: [Groups]
+   Entry:
+      Group#=C:\WINDOWS\WINDOWSS.GRP
+      Where # is a digit (0,1,2, etc.)
+
+8. File: WINHELP.INI
+
+   Section: [Files]
+   Entry:
+      wsspss.hlp=c:\sndsys
+
+  NOTE: If Windows Sound System is not installed in C:\SNDSYS, the path to
+  wsspss.hlp will be different. Delete that line.
+
+MODIFYING THE WINDOWS REGISTRATION DATABASE (REG.DAT)
+
+-----------------------------------------------------
+
+NOTE: Depending on how you installed Windows Sound System and how you use it,
+some of the following entries may not be present in the REG.DAT file.
+
+When Windows Sound System was installed, you chose which application to use as
+the OLE server for sound objects. By default, this application is Quick
+Recorder; therefore, unless you chose another application, Quick Recorder is
+registered in the Windows Registration Database as the server for all sound
+objects.
+
+When you deinstall Windows Sound System, you must replace Quick Recorder as the
+server for OLE sound objects.
+
+To do this:
+
+1. From the Program Manager File menu, choose Run.
+
+2. Type "REGEDIT.EXE /V" (without the quotation marks)
+
+3. From the Search menu, choose Find Key.
+
+4. Type "soundrec" (without the quotation marks) and press Enter. The entry
+  "SoundRec = Sound" will be selected.
+
+5. From the Edit menu, choose Delete Key and press OK.
+
+6. From the File menu, choose Save Changes.
+
+7. From the File menu, choose Exit.
+
+8. Repeat steps 1 through 7, substituting SoundFinder for SoundRec in step 4, to
+  delete the entry for Sound Finder.
+
+9. Now start the application you will be using as your OLE sound server.
+  Normally, this is Windows Sound Recorder, which is in the Accessories group
+  in Program Manager.
+
+REMOVING BACKUP FILES
+
+---------------------
+
+From the Windows directory, remove the following backup files:
+
+       CONTROL.WSS    (Backup version of CONTROL.INI)
+       SYSTEM.WSS     (Backup version of SYSTEM.INI)
+       VOICEPIL.WSS   (Backup version of VOICEPIL.INI)
+       WIN.WSS        (Backup version of WIN.INI)
+
+CAUTION: Because you may need these files to restore previous settings, remove
+these files as the last step in the deinstallation process.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : :2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

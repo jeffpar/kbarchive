@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48689: CodeView Version 2.20 Is Called CVPCK.EXE by DOS Version 2.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48689: CodeView Version 2.20 Is Called CVPCK.EXE by DOS Version 2.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48689/","publisher":null,"image":null,"headline":"Q48689: CodeView Version 2.20 Is Called CVPCK.EXE by DOS Version 2.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48689-codeview-version-220-is-called-cvpckexe-by-dos-version-210">Q48689: CodeView Version 2.20 Is Called CVPCK.EXE by DOS Version 2.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48689
+Product(s): See article
+Version(s): 2.20
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | CV CVPCK CVPACK 2.x | mspl13_basic
+Last Modified: 21-SEP-1989
+
+Question:
+
+When trying to invoke CodeView Version 2.20 under DOS Version 2.10 or
+2.11, I get the messages "Cannot Find CVPCK.EXE" and "Please enter new
+program spec:". How can I get CodeView 2.20 to work under DOS Versions
+2.1x?
+
+Response:
+
+If you rename CV.EXE to CVPCK.EXE, you can run CodeView Version 2.20
+under DOS Version 2.10 or 2.11. You must also rename CV.HLP to C.HLP
+to make the on-line help accessible.
+
+CodeView Version 2.20 is included with C Version 5.10, FORTRAN Version
+4.10, Pascal Version 4.00, and Macro Assembler (MASM) Version 5.10.
+
+Many people mistakenly assume that CodeView is actually looking for
+CVPACK.EXE, which also comes with the software packages listed above.
+If you rename CVPACK.EXE to CVPCK.EXE and then try to run CVPCK.EXE,
+you will receive the error message "overlay not found." If you receive
+this error, delete CVPCK.EXE, copy both CV.EXE and CVPACK.EXE from the
+installation disks, and follow the instructions above.
+
+Under DOS Versions 3.x, a C program's name is available from argv[0].
+Under DOS Versions 2.x, argv[0] always equals the letter "C", so
+programs that need to find themselves under DOS Versions 2.x also have
+their own names hard coded as the filename to locate. Unfortunately,
+the hard-coded name within CodeView Version 2.20 is "CVPCK.EXE", so
+this is what it looks for under DOS Versions 2.x.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

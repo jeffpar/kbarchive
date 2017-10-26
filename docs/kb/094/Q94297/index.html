@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94297: Hardware Handshake for 3Server COM Ports | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94297: Hardware Handshake for 3Server COM Ports" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94297/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94297/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94297/","publisher":null,"image":null,"headline":"Q94297: Hardware Handshake for 3Server COM Ports","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94297-hardware-handshake-for-3server-com-ports">Q94297: Hardware Handshake for 3Server COM Ports</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94297
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+Getting a printer to talk to a server serial port isn't always as easy as it
+seems. Communication between a serial output device such as a printer (Data
+Communications Equipment, or DCE) and a server (Data Termination Equipment, or
+DTE) is called handshaking. This handshaking is needed for the printer to tell
+the server that its buffer is full and can't accept any more data. The two most
+common types of handshaking used are XON/XOFF and hardware.
+
+MORE INFORMATION
+================
+
+XON/XOFF is software handshaking. Handshaking is accomplished by the exchange of
+control codes between the printer and the server via the transmit and receive
+lines, pins 2 and 3 respectively (RS232-C). When the printer's data buffer is
+full, it sends an XOFF telling the server's print processor to pause output.
+When the buffer has available space for more data, an XON character is sent and
+the server continues to send until the next XOFF. For example, when you type a
+long text document to your screen, the data scrolls off the screen too rapidly
+for you to read. When you press CTRL+S, you are sending an XOFF control
+character. XOFF tells the processor to pause the screen output until you've
+finished reading. Output continues when the processor receives a CTRL+Q (XON).
+The printer talks to the server in the same manner. This XON/XOFF handshaking
+continues until the server has sent the entire spool file.
+
+XON/XOFF handshaking is adequate for most serial communication needs and can
+easily be set up on the server by selecting the correct parameters on the mode
+and 3mode lines. A sample XON/XOFF mode statement is shown further below in
+example 1.
+
+Hardware handshaking uses signal voltage levels instead of control code to
+communicate between DTE and DCE devices. There are several signal options that
+can be used. The most common signals used are Data Terminal Ready (DTR) pin 20
+on the printer, which is connected to Clear To Send (CTS) pin 5 and Data Set
+Ready (DSR) pin 6 on the server. When the printer data buffer fills, the voltage
+level on pin 20, DTR, changes from high to low. This tells the server to stop
+sending data. When the buffer has available space for more data, the DTR voltage
+level toggles high and the server continues to send until the next DTR voltage
+drop.
+
+Hardware handshaking is the default setting (see example 2 below). The minimum
+parameters needed for hardware handshaking are shown in example 3. Note that DTR
+can be set to either ON or HS with the same outcome.
+
+Sample COM Port Configurations (excerpt from C:\LANMAN\NETPROG\SETMODE.CMD)
+---------------------------------------------------------------------------
+
+Example 1: XON/XOFF
+
+  c:\os2\mode
+  COM1:9600,N,8,1,TO=OFF,XON=ON,IDSR=OFF,ODSR=OFF,OCTS=OFF,DTR=OFF,RTS=OFF
+  &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\os2\mode COM1: &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\3mode COM1;9600;n;8;1;0; &gt;&gt; c:\startup.log 2&gt;&gt;&amp;1
+
+Example 2: Hardware (default settings)
+
+  c:\os2\mode
+  COM1:9600,N,8,1,TO=OFF,XON=OFF,IDSR=ON,ODSR=ON,OCTS=ON,DTR=ON,RTS=ON
+  &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\os2\mode COM1: &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\3mode COM1;9600;n;8;1;1; &gt;&gt; c:\startup.log 2&gt;&gt;&amp;1
+
+Example 3: Hardware (minimal settings)
+
+  c:\os2\mode
+  COM1:9600,N,8,1,TO=OFF,XON=OFF,IDSR=OFF,ODSR=ON,OCTS=OFF,DTR=ON(hs),
+  RTS=OFF &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\os2\mode COM1: &gt;&gt; startup.log 2&gt;&gt;&amp;1
+  c:\3mode COM1:9600;n;8;1;1; &gt;&gt; c:\startup.log 2&gt;&gt;&amp;1
+
+Testing was done with the following equipment and settings:
+
+3Com 3S500 server with LAN Manager 2.1, both COM 1 and COM 3 tested E-Z Interface
+IBM XT - HP printer cable
+HP 7550a plotter:
+
+     Data flow = Remote standalone
+     Handshake = Hardware
+     Bypass = Off
+     Duplex = Full
+     Parity = 8 Bit, off
+     Baud rate = 9600
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

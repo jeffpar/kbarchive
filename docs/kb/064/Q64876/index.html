@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64876: &quot;Insufficient EMS to Load Overlays&quot; at Run Time in 7.00, 7.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64876: &quot;Insufficient EMS to Load Overlays&quot; at Run Time in 7.00, 7.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64876/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64876/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64876/","publisher":null,"image":null,"headline":"Q64876: &quot;Insufficient EMS to Load Overlays&quot; at Run Time in 7.00, 7.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64876-insufficient-ems-to-load-overlays-at-run-time-in-700-710">Q64876: "Insufficient EMS to Load Overlays" at Run Time in 7.00, 7.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64876
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900808-19 | mspl13_basic
+Last Modified: 5-SEP-1990
+
+The run-time error message "Insufficient EMS to load overlays" occurs
+(if it is going to occur at all) when the first overlaid module is
+called. This error is documented on Page 656 of the "Microsoft BASIC
+7.0: Language Reference" manual for Microsoft BASIC Professional
+Development System (PDS) versions 7.00 and 7.10. The article below
+explains in more detail why you might get this error condition.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS when using linked
+overlays.
+
+The "Insufficient EMS to load overlays" error message is not random.
+If you run a program on a particular machine and the error does not
+occur, the error will never occur for that program unless that
+machine's expanded memory configuration is changed. Common ways of
+changing the expanded memory configuration include the following:
+setting up a larger RAM drive in expanded memory; or moving the
+program to another machine with a different amount of free expanded
+memory.
+
+If a given program produces an "Insufficient EMS to load overlays"
+error on a given machine, the error will always occur for that program
+as long as the machine's expanded memory configuration and usage stay
+the same.
+
+When a BASIC program calls the first overlaid module, the program
+must estimate the space in expanded memory necessary to load all
+overlays at once. This estimate is based only on the following:
+
+1. The number of overlays
+2. The size of the largest overlay
+3. The fact that each overlay has less than 64K of code (otherwise, it
+   would not be able to use expanded memory)
+
+The overlay manager in BASIC 7.00 and 7.10 requests expanded memory in
+16K pages (blocks). The overlay manager knows the size of only the
+largest overlay and must make a "best guess" at the size of the
+smaller overlays. When the overlay manager estimates how many 16K
+pages are necessary to hold all overlays at once in expanded memory,
+the estimate could be over or under the actual number of pages needed.
+If your overlays are all between 16K and 64K in size (according to the
+LINK .MAP file), and if the estimated or actual size of all overlays
+together exceeds the available expanded memory, the following
+initialization error occurs when the first overlay is called at
+run-time:
+
+   Insufficient EMS to load overlays
+
+Note: You will never see this error if all your overlays are smaller
+than 16K each.
+
+If you want to force loading overlays from disk, thus avoiding the
+possibility of this overlay-initialization error in expanded memory,
+you must link with the stub file NOEMS.OBJ (with no parentheses around
+NOEMS.OBJ on the LINK command line). Alternatively, you can try
+reconfiguring expanded memory so more of it is available for BASIC
+overlays. Another alternative is to make overlays similar in size.
+
+To find out the size of each overlay, you must look at the .MAP file
+generated by the linker (LINK.EXE).
+
+References:
+
+For more information about how to use link overlays in BASIC 7.00 and
+7.10, search in this Knowledge Base for a separate article with the
+following words:
+
+   How and link and overlays and expanded and memory and BASIC
+
+See also the section "Linking with Overlays" on Pages 612-614 in the
+"Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

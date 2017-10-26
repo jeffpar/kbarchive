@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/293/Q293911/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/293/Q293911/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/293/Q293911/","publisher":null,"image":null,"headline":"Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q293911-sample-abparamexe-passes-a-blob-parameter-with-atl">Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q293911
+Product(s): Microsoft C Compiler
+Version(s): 6.0,6.0SP3,6.0sp4,6.0sp5
+Operating System(s): 
+Keyword(s): kbfile kbSample kbATL kbOLEDB kbConsumer kbGrpDSVCDB kbGrpDSMDAC tslic_tslic
+Last Modified: 26-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 6.0, 6.0SP3, 6.0sp4, 6.0sp5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ABParam.exe sample demonstrates how to pass a large binary object (BLOB) as
+a parameter when using the Active Template Library (ATL) Consumer Templates.
+
+Because the ATL Consumer Templates do not currently allow passing of parameters
+as BLOBs when using a CDynamicParameterAccessor, the Atldbcli.h header file must
+be modified to allow this behavior. This sample contains a modified header file,
+called Atldbcli_new.h, and a simple application that inserts a BLOB value into a
+SQL Server 7.0 or SQL Server 2000 database by using a parameterized INSERT
+statement.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  ABParam.exe
+  (http://download.microsoft.com/download/vc60std/sample/6.0/W98NT42KMeXP/EN-US/abparam.exe)
+
+Release Date: June 18, 2001
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The ABParam.exe file contains the following files:
+
++---------------------------+
+| File name        | Size   | 
++---------------------------+
+| AtlBlobParam.cpp | 3 KB   | 
++---------------------------+
+| AtlBlobParam.dsp | 5 KB   | 
++---------------------------+
+| AtlBlobParam.dsw | 1 KB   | 
++---------------------------+
+| AtlBlobParam.ncb | 57 KB  | 
++---------------------------+
+| AtlBlobParam.opt | 51 KB  | 
++---------------------------+
+| AtlBlobParam.plg | 2 KB   | 
++---------------------------+
+| Atldbcli_new.h   | 106 KB | 
++---------------------------+
+| ISSHelper.cpp    | 3 KB   | 
++---------------------------+
+| ISSHelper.h      | 2 KB   | 
++---------------------------+
+| StdAfx.cpp       | 1 KB   | 
++---------------------------+
+| StdAfx.h         | 1 KB   | 
++---------------------------+
+
+To use the sample, modify the connection properties in AtlBlobParam.cpp to
+reflect your SQL Server server, authentication settings, and database. Then
+compile the sample and run it. The sample creates a table named "BlobTable" in
+the database and inserts a single record into it.
+
+Implementation Details
+----------------------
+
+For an OLE DB consumer application to use BLOB input parameters, several
+requirements must be met:
+
+- If the provider does not support writing to the provider's storage object,
+  the consumer application must implement an object that implements the
+  ISequentialStream interface. This is the case with the Microsoft OLE DB
+  Provider for SQL Server (SQLOLEDB).
+
+  To implement the consumer storage class, this sample uses the ISSHelper class,
+  which is presented in the following article in the Microsoft Knowledge Base:
+
+  Q190958 SAMPLE: AOTBLOB Read/Writes BLOB Using OLE DB Consumer Template
+
+- The consumer application must bind status, length, and value for the
+  parameter. One problem with the current ATL Consumer Template implementation
+  of CDynamicParameterAccessor is that it does not allow the setting and
+  getting of status and length when binding parameters. The Atldbcli_new.h
+  header file contains modifications to allow binding status and length. The
+  approach used is similar to that described in the following article in the
+  Microsoft Knowledge Base:
+
+  Q264291 SAMPLE: Retrieve and Set the DBSTATUS of Parameters Through the Use
+  of CDynamicParameterAccessorEx
+
+- The consumer application must bind the BLOB parameter as an ISequentialStream
+  object instead of a memory buffer. The ATL Consumer Templates do not bind to
+  ISequentialStream when using CDynamicParameterAccessor. The Atldbcli_new.h
+  file modifies the binding calls to bind to an ISequentialStream object.
+
+When you attempt to use a BLOB parameter with the CDynamicParameterAccessor class
+without the changes outlined in this sample, the following error code may be
+returned by the BindParameters function when binding the parameters:
+
+  E_OUTOFMEMORY, 0x8007000e, or -2147024882
+
+This error occurs when the BindParameters call attempts to allocate a memory
+buffer of size 0x7fffffff or greater, because this is the size of the BLOB
+parameter as described by a call to IColumnsInfo which is performed by the
+CDynamicParameterAccessor class.
+
+To meet the requirements described above, the following changes have been made to
+Atldbcli.h in the Atldbcli_new.h header file:
+
+- GetParamLength and GetParamStatus have been added to the
+  CDynamicParameterAccessor class.
+
+- The BindParameters function of the CDynamicParameterAccessor class has been
+  modified as follows:
+
+   - The nLengthOffset and nStatusOffset variables have been added to track the
+     current offset to the length and status parts of the current binding.
+
+   - The DBOBJECT* pObject variable has been added to allow binding to a
+     storage object.
+
+   - If the size of the parameter is determined to be more than 1024 bytes, or
+     the type of the parameter is DBTYPE_IUNKNOWN, the pObject variable is
+     initialized to point to a new DBOBJECT structure that will be used to bind
+     to an ISequentialStream object.
+
+   - The Bind call has been modified to include nonzero offsets to status and
+     length variables.
+
+Additional query words: BLOB CDynamicParameterAccessor Parameters ISequentialStream ABParam
+
+======================================================================
+Keywords          : kbfile kbSample kbATL kbOLEDB kbConsumer kbGrpDSVCDB kbGrpDSMDAC tslic_tslic 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVC600SP3 kbVC600SP4 kbVC600SP5
+Version           : :6.0,6.0SP3,6.0sp4,6.0sp5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

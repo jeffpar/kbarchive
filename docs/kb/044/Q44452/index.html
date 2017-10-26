@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44452: -Zg Won’t Handle Untagged Aggregate typedef Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44452: -Zg Won’t Handle Untagged Aggregate typedef Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44452/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44452/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44452/","publisher":null,"image":null,"headline":"Q44452: -Zg Won’t Handle Untagged Aggregate typedef Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44452--zg-wont-handle-untagged-aggregate-typedef-parameters">Q44452: -Zg Won’t Handle Untagged Aggregate typedef Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44452
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 1-JUN-1989
+
+The -Zg switch causes the Microsoft C Version 5.10 Optimizing Compiler
+to generate a list of function prototypes from the input file. This is
+documented on Page 86 of the "Microsoft C for the MS-DOS Operating
+System: User's Guide."
+
+It is noted on Page 87 of the same manual that structure, enumerated,
+and union types that are used as formal parameters must be tagged.
+Using untagged aggregate types as formal parameters results in the
+following message being generated for each instance of untagged
+aggregate type parameters:
+
+   warning C4032 : unnamed struct/union as parameter
+
+Typedefs are expanded in the prototype listing. If an aggregate type
+has no tag then the prototype is commented out and the type of the
+parameter is labeled, in the case of a structure, as follows:
+
+   struct UNNAMED
+
+There is no way to prevent the compiler from expanding the typedefs
+and from disliking the untagged aggregate types.
+
+The program below, when compiled in the following manner
+
+   cl -Zg whack.c
+
+produces the following output:
+
+    extern  void main(void );
+    extern  int Woof(struct ure a);
+    /* int Heave(struct UNNAMED a); */
+    whack.c(29) : warning C4032 : unnamed struct/union as parameter
+
+/* Demonstration of typedef expansion when compiling with /Zg
+ */
+typedef struct ure      // This one's tagged
+{
+    int     x;
+    int     y;
+} URE;
+
+typedef struct          // This one's not tagged
+{
+    int     x;
+    int     y;
+} IME;
+
+void main()
+{
+    URE     Ok;         // Tagged type variable
+    IME     NotOk;      // Untagged type variable
+
+    Woof( Ok );
+    Heave( NotOk );
+}
+
+int Woof( URE a )
+{
+    return( 0 );
+}
+
+int Heave( IME a )
+{
+    return( 0 );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

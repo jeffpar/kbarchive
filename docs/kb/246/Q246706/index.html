@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246706/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246706/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246706/","publisher":null,"image":null,"headline":"Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246706-errors-generated-if-tcpip-ddm-server-on-as400-not-started">Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246706
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbsna400sp2 kbsna400sp3
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the TCP/IP DDM Server on the AS/400 is not started, the following data
+providers cannot connect over TCP/IP:
+
+   - Microsoft OLE DB Provider for AS/400 and VSAM
+
+- Microsoft OLE DB Provider for DB2
+
+- Microsoft ODBC Driver for DB2
+
+If the TCP/IP DDM Server on the AS/400 is not started, testing the connection for
+the data providers listed above will return the following error messages.
+
+For Microsoft OLE DB Provider for AS/400 and VSAM:
+
+  Test connection failed because of an error in initializing provider. The
+  partner LU does not recognize the TP name.
+
+For Microsoft OLE DB Provider for DB2:
+
+  Test connection failed because of an error in initializing provider. Could
+  not connect to specified host SQLSTATE: 08S01, SQLCODE: -603
+
+For Microsoft ODBC Driver for DB2:
+
+  Connection failed [Microsoft][ODBC Driver for DB2][Microsoft DB2 OLE DB
+  Provider]Could not connect to specified host SQLSTATE: 08S01, SQLCODE: -603
+
+RESOLUTION
+==========
+
+Verify status of TCP/IP DDM Server on the AS/400 by performing the following
+steps:
+
+1. From an AS/400 command line, type following command:
+
+    NETSTAT
+
+2. When the following menu appears, choose option number 3:
+
+    1. Work with TCP/IP interface status 
+    2. Display TCP/IP route information 	 
+    3. Work with TCP/IP connection status
+
+3. A list similar to the following will be presented:
+
+    Remote     Remote    Local
+  Opt  Address    Port      Port       Idle Time    State 
+  __   *          *         drda       001:13:15    Listen
+  __   *          *         ddm        001:13:15    Listen
+  __   *          *         ddm-ssl    001:13:15    Listen
+
+  The list should contain an entry with the Local Port listed as drda. Scroll
+  through the list until this entry is located. If this entry is not present,
+  the TCP/IP DDM Server has not been started.
+
+4. To start the TCP/IP DDM Server, type the following command from an AS/400
+  command line:
+
+    STRTCPSVR SERVER(*DDM)
+
+  If successful, a message will be posted on the screen indicating that the DDM
+  Server is starting. Repeat steps 1 through 3 above to verify that the server
+  has started properly.
+
+It is also possible to automatically start the DDM server whenever TCP/IP is
+started on the AS/400 system. Issue the following command on an AS/400 command
+line to enable this functionality:
+
+    CHGDDMTCPA AUTOSTART(*YES)
+
+MORE INFORMATION
+================
+
+For more information on using the commands referenced above, please refer to the
+IBM OS/400 CL Reference V4R4 (Document Number SC41-5722-03).
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP2,4.0 SP3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

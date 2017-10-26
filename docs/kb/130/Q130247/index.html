@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130247/","publisher":null,"image":null,"headline":"Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130247-how-to-set-up-and-use-oracle7-data-sources-with-odbc">Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130247
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 2.50b 2.60 2.60a 3.00
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork kbvfp300 kbvfp600
+Last Modified: 30-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NOTE: Some products mentioned in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+This article discusses how to use Oracle7 data sources with ODBC. Information is
+this article is available in DRVORA7.HLP in the DISTRIB.SRC\SYSTEM\SYSTEM16
+directory under the Visual FoxPro directory, Professional version.
+
+Microsoft does not support, endorse, or recommend any of these products. We
+provide this information only as a convenience for our customers and do not
+provide warranties of any kind, either expressed or implied, including but not
+limited to the implied warranties of merchantability and/or fitness for a
+particular purpose.
+
+MORE INFORMATION
+================
+
+Overview of Oracle RDBMS
+------------------------
+
+Oracle RDBMS is a multiuser relational database management system (DBMS) that
+runs on a variety of workstation and minicomputer operating systems. Structured
+Query Language (SQL) is used to access data in Oracle RDBMS. IBM PCs and
+compatibles running Microsoft Windows communicate with Oracle7 database servers
+across a network such as Microsoft LAN Manager, Novell NetWare, Banyan VINES,
+DECnet, or any TCP/IP network.
+
+The Oracle7 driver enables applications to access data in an Oracle7 database
+through the Open Database Connectivity (ODBC) interface. It communicates with
+the network through SQL*Net.
+
+Application/Driver Architecture
+-------------------------------
+
+1. Application
+
+2. ODBC Driver Manager (ODBC.DLL)
+
+3. Oracle7 Driver (SQORA7.DLL)
+
+4. OCI Layer (ORA7WIN.DLL)
+
+5. SQL*Net Driver
+
+6. Network Software (Microsoft LAN Manager, Novell NetWare, etc.
+
+7. SQL*Net Listener
+
+8. Oracle7 RDBMS
+
+Driver Conformance Levels
+-------------------------
+
+The Oracle7 driver has the following conformance levels:
+
+- API Conformance Level: Level 1
+- SQL Conformance Level: Minimum
+
+NOTE: The Oracle7 driver also supports some of the functions in the level 2 API
+conformance level and almost all of the grammar in the core and extended SQL
+conformance levels.
+
+To determine the minimum conformance levels (if any), you must use drivers with
+your application, see your application's documentation.
+
+Hardware and Software Requirements
+----------------------------------
+
+What You Must Have to Be Able to Access Oracle7 Data
+----------------------------------------------------
+
+- The Oracle7 driver.
+- An Oracle7 RDBMS database.
+- A network connecting the computers on which these reside and a SQL*Net
+  connection across that network.
+
+Hardware Requirements for the Oracle7 Driver
+--------------------------------------------
+
+The Oracle7 driver requires the following hardware:
+
+- An Industry Standard Architecture (ISA) computer, such as the IBM PC/AT or
+  compatible.
+
+  -or-
+
+- A Micro Channel Architecture (MCA) computer, such as an IBM PS/2 or
+  compatible.
+
+  -or-
+
+- An Extended Industry Standard Architecture (EISA) computer with an 80286,
+  80386, or 80486 microprocessor.
+
+Plus:
+
+- At least two megabytes of random-access memory (RAM) - four megabytes
+  recommended.
+- A hard disk drive and approximately 350 kilobytes of hard disk space for the
+  Oracle7 driver.
+
+Software Requirements for the Oracle7 Driver
+--------------------------------------------
+
+- MS-DOS version 3.3 or later.
+- Microsoft Windows version 3.0a or later.
+- ODBC Driver Manager version 1.0 (ODBC.DLL).
+- Oracle7 Call Interface (OCI) dynamic-link library (ORA7WIN.DLL).
+
+NOTE: The Oracle7 driver requires ORA7WIN.DLL, regardless of whether a later
+version of OCI has been installed. ORA7WIN.DLL is shipped with SQL*Net for
+Windows.
+
+Oracle7 RDBMS
+-------------
+
+To access data in an Oracle7 database with the Oracle7 driver, you must have
+Oracle RDBMS version 7 or later. For information about the hardware and software
+required by Oracle7 RDBMS, see the Oracle documentation.
+
+Network Software
+----------------
+
+A network is required to connect the platforms on which Oracle7 RDBMS and the
+Oracle7 driver reside. For information about the hardware and software required
+by each network, see that network's documentation.
+
+NOTE: If you are using Microsoft LAN Manager with the named pipes protocol, it
+must be version 2.0 or later. If you are using Microsoft LAN Manager with the
+TCP/IP protocol, it must be version 2.2 or later.
+
+SQL*Net
+-------
+
+The Oracle7 driver and Oracle7 RDBMS use SQL*Net as a common network interface.
+You should be able to use the Oracle7 driver on any SQL*Net connection from a
+computer running Windows to an Oracle7 database server. For complete information
+about SQL*Net, see the SQL*Net documentation.
+
+NOTE: SQL*Net components are available only from Oracle Corporation.
+
+How to Set Up the Oracle7 ODBC Driver
+-------------------------------------
+
+1. If you have not already done so, install the ORACLE SQL*Net client components
+  on your computer. If you want to test your ORACLE SQL*Net connection, set up
+  your computer as an Oracle7 client workstation, and run SQL*Plus or NetTest.
+  For information on how to do this, see the SQL*Net documentation.
+
+2. Add a data source for each copy of Oracle7 RDBMS in which you want to access
+  data.
+
+How to Set Up a New Version of the Oracle7 Driver
+-------------------------------------------------
+
+1. In the Main group in Program Manager, double-click the Control Panel icon. In
+  the Control Panel window, double-click the ODBC icon. The Data Sources dialog
+  box is displayed.
+
+2. In the Data Sources dialog box, choose the Drivers button. The Drivers dialog
+  box is displayed.
+
+3. In the Drivers dialog box, choose the Add button. The Add Driver dialog box
+  is displayed.
+
+4. In the text box, type the name of the drive and directory containing the
+  Oracle7 driver in the text box. Or choose the Browse button to select a drive
+  and directory name.
+
+5. In the Add Driver dialog box, choose the OK button. The Install Drivers
+  dialog box is displayed.
+
+6. In the Available ODBC Drivers list, select Oracle7.
+
+7. Choose the OK button. The Oracle7 driver is installed.
+
+How to Delete the Oracle7 Driver
+--------------------------------
+
+1. In the Main group in the Program Manager window, double-click the Control
+  Panel icon. In the Control Panel window, double-click the ODBC icon. The Data
+  Sources dialog box is displayed.
+
+2. In the Data Sources dialog box, choose the Drivers button. The Drivers dialog
+  is displayed.
+
+3. In the Installed ODBC Drivers list, select Oracle7.
+
+4. Choose the Delete button. A message asks you to confirm that you want to
+  remove the driver and all of the data sources that use the driver.
+
+5. Choose the Yes button.
+
+How to Add, Modify, and Delete Oracle7 Data Sources
+---------------------------------------------------
+
+Before you can access data with the Oracle7 driver, you must add a data source
+for each of your copies of Oracle7 RDBMS. The Oracle7 driver uses the
+information you enter when you add the data source to access the data. You can
+change or delete a data source at any time.
+
+How to Add an Oracle7 Data Source
+---------------------------------
+
+1. In the Main group in the Program Manager window, double-click the Control
+  Panel icon. In the Control Panel window, double-click the ODBC icon.
+
+2. In the Data Sources dialog box, choose the Add button. The Add Data Source
+  dialog box is displayed.
+
+3. In the Installed ODBC Drivers list, select Oracle7 and choose the OK button.
+  The Oracle7 ODBC Driver dialog box is displayed.
+
+4. In the Oracle7 ODBC Driver dialog box, enter the Data Source Name and the
+  SQL*NET Connect String information, which should be made available by the
+  Network Administrator. The Description can be set to whatever you want. For
+  more information about these options, press the Help button in the dialog
+  box.
+
+NOTE: To modify or delete the Oracle7 data source, highlight it in the Data
+Sources dialog box, and then select the Setup or Delete options respectively.
+For more information, select the Help option in the dialog box.
+
+How to Connect to an Oracle7 Data Source
+----------------------------------------
+
+To connect to a data source, the Oracle7 ODBC Driver requires that an ORACLE
+SQL*Net driver be installed on your computer and the corresponding ORACLE
+SQL*Net listener be running on the Oracle7 database server. ORACLE SQL*Net for
+Windows is a Dynamic Linked Library (DLL)-based application. For more
+information about ORACLE SQL*Net, see the ORACLE SQL*Net documentation.
+
+As part of the connection process, an application can prompt you for information.
+If an application prompts you for information about an Oracle data source, do
+the following:
+
+1. In the User Name box, type the name you use on Oracle7 RDBMS.
+
+2. In the Password box, type the password you use on Oracle7 RDBMS.
+
+3. Choose OK.
+
+An application must connect to a data source to access data in it. Different
+applications connect to data sources at different times. For example, an
+application might connect to a data source only at your request or it might
+connect automatically when it starts. For information about when an application
+connects to a data source, see the documentation for that application.
+
+Troubleshooting "Message send failure"
+--------------------------------------
+
+The "Message send failure" error may occur when you're using Oracle7 with
+Microsoft LAN Manager using TCP/IP protocol. On Microsoft LAN Manager using the
+TCP/IP protocol, the number of bytes of data that can be sent to or retrieved
+from Oracle7 RDBMS at one time is controlled by the MAXSENDSIZE keyword in the
+[sockets] section of TCPUTILS.INI. If you receive a "Message send failure"
+error, try increasing this value. This error is most likely to occur when
+SQL_LONGVARCHAR or SQL_LONGVARBINARY data is being sent. For more information,
+see the Oracle documentation.
+
+REFERENCES
+==========
+
+More information on installing Oracle6 and Oracle7 is available in the
+DRVORA7.HLP, DRVORACL.HLP, and ORACLE.TXT files, which are located in the
+DISTRIB.SRC\SYSTEM\SYSTEM16 directory under the Professional Edition of the
+Visual FoxPro directory.
+
+Additional query words: 2.50 VFoxWin FoxWin Fax Issues
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbvfp300 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300 kbVFP600
+Version           : 2.50 2.50a 2.50b 2.60 2.60a 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

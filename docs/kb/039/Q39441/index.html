@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39441: The ORG Directive and Actual Offsets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39441: The ORG Directive and Actual Offsets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39441/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39441/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39441/","publisher":null,"image":null,"headline":"Q39441: The ORG Directive and Actual Offsets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39441-the-org-directive-and-actual-offsets">Q39441: The ORG Directive and Actual Offsets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39441
+Product(s): Microsoft Macro Assembler
+Version(s): 5.1,5.1a,6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ORG directive in MASM does not necessarily produce an actual offset that
+matches the offset specified by "ORG XXX". For example, if you use "ORG 100h" in
+your program, the following code will not always begin at the 100h offset
+relative to the start of the segment.
+
+When you are using a .COM source file and there is only one module, the "ORG
+100h" will result in an actual offset of 100h for the code that follows the ORG
+statement. This behavior also occurs with segments with AT combine type (in
+which case segments are not combined by the linker, and no data or code is
+defined).
+
+However, if you have multiple modules and/or you are not dealing with a .COM
+source file, the "ORG 100h" produces an actual offset, which is somewhat greater
+than 100h.
+
+This behavior occurs because the linker, in these circumstances, will do some
+padding that you have no control over.
+
+MORE INFORMATION
+================
+
+In the following illustration (which deals with the source modules below), note
+that the ORG instruction increments the local offset by 100h, resulting in the
+offset of the PUSH instruction in example2 being 100h (that's what it would
+report in the listing file). However, when these modules are linked, all the
+portions of segment code are concatenated. Thus, EXAMPLE2.asm:code:100h is
+converted into code:113h. The order of concatenation is the order of linking.
+
+The following example illustrates the scenario:
+
+       Actual                      Offset
+       offset                      from start
+       from                        of segment
+       code                        code in module
+       -------                     ---------------
+               +-----------------+
+       0117    |   ret           | 0105
+       0116    |   pop           | 0103    test2.asm
+       0114    |   mov           | 0101
+       0113    |   push          | 0100
+       0013    |   org           | 0000
+               +-----------------+
+       0012    |   ret           | 0004
+       0011    |   pop           | 0003    test1.asm
+       000F    |   mov           | 0001
+       000E    |   push          | 0000
+               +-----------------+
+       000C    |   int           | 000C
+       0009    |   mov           | 0009    testmain.asm
+       0006    |   call          | 0006
+       0003    |   call          | 0003
+       0000    |   mov           | 0000
+               +-----------------+
+                   segment code
+
+  |---------------testmain.asm:       |---------------test1.asm:
+    code segment public 'code'           PUBLIC _test
+    assume cs:code                       code segment public 'code'
+                                         assume cs:code
+            mov     ax, 0a0ah            _test proc
+
+            extrn   _test:proc               push    bp
+            extrn   _test2:proc              mov     bp, sp
+
+            call    _test                    pop     bp
+            call    _test2                   ret
+
+            mov     ax, 4c00h            _test   ENDP
+            int     21h                  code ends
+            code ends
+
+            END                          END
+
+  |---------------test2.asm:
+     code segment public 'code'
+     assume cs:code
+             org     100h
+
+             PUBLIC  _test2
+     _test2    PROC
+
+             push    bp
+             mov     bp, sp
+
+             pop     bp
+             ret
+
+     _test2    ENDP
+     code ends
+             END
+
+Additional query words: kbinf 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

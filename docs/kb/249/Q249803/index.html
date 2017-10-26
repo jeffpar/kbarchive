@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249803/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249803/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249803/","publisher":null,"image":null,"headline":"Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249803-bug-unicode-issue-using-mfc-odbc-w-the-sql-server-odbc-driver">Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249803
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbODBC kbVC kbVC420bug kbVC500bug kbVC600bug kbGrpDSVCDB kbDSupport
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the SQL Server Open Database Connectivity (ODBC) driver (version 3.70.06.90
+or later), UNICODE data is treated as UNICODE and the behavior of SQLDescribeCol
+is changed from the previous drivers. If you use the MFC ODBC CRecordset class
+with the latest drivers, the length returned from CRecordset::GetTextLen is
+incorrect, and therefore the data is truncated when CRecordset::GetFieldValue is
+called.
+
+CAUSE
+=====
+
+With UNICODE fields in SQL Server version 7.0, for example, and a field with
+"nchar" datatype that calls SQLDescribeCol on this column, the previous SQL
+Server ODBC driver (version 3.60.03.19 or earlier) returns SQL_CHAR with the
+column size doubled. However, if SQLDescribeCol is called with the new SQL
+Server ODBC driver (version 3.70.06.90 or later), SQL_WCHAR is returned with the
+column size as defined in the database.
+
+In MFC ODBC, when CRecordset::GetFieldValue is called, it will call
+CRecordset::GetTextLen, which doesn't provide you with the option to check
+against the SQL_WCHAR datatype. It just adds one more byte to the result from
+SQLDescribeCol. For UNICODE data, this length is incorrect and the fetched data
+is truncated.
+
+RESOLUTION
+==========
+
+There are two ways you can work around this problem:
+
+- Use the odbccmpt utility.
+
+  The odbccmpt utility is shipped with SQL Server version 7.0 (you can find it
+  in the Mssql7\Binn folder). The odbccmpt utility sets certain behaviors of
+  the SQL Server ODBC version 3.7 driver to be compatible with the earlier SQL
+  Server ODBC drivers.
+
+  One way to use this utility is to run it from the DOS prompt; for example:
+
+  " dos prompt&gt;odbccmpt yourAppName" (without the quotation marks)
+
+  No code modification is required under this option.
+
+-or-
+
+- Use the overwrite CRecordset::GetFieldValue method.
+
+  Under certain circumstances, if the odbccmpt utility cannot be used, another
+  workaround is to overwrite CRecordset::GetFieldValue. The following steps
+  outline the method to overwrite GetFieldValue to handle the SQL_WCHAR
+  datatype:
+
+1. Add the following three methods to your CRecordset-derived class declaration:
+
+  void GetFieldValueMyEx(LPCTSTR lpszName, CString&amp; strValue);
+  void GetFieldValueMyEx(short nIndex, CString&amp; strValue);
+  int PASCAL GetTextLenMyEx(short nSQLType, UDWORD nPrecision);
+
+2. From the Mfc/Src/Dbcore.cpp file, copy and paste the implementation of these
+  three methods, corresponding to the methods in your .cpp file:
+
+  void GetFieldValue(LPCTSTR lpszName, CString&amp; strValue);
+  void GetFieldValue(short nIndex, CString&amp; strValue);
+  int PASCAL GetTextLen(short nSQLType, UDWORD nPrecision);
+
+3. The only modification you need to make is inside GetTextLen, which you need
+  to add the check against SQL_WCHAR, for example:
+
+  if(nSQLType == SQL_WCHAR)
+  {
+  	nLen = 2*nPrecision + 1;
+  }
+
+4. Implement GetTextLenMyEx as follows:
+
+  int PASCAL CMyRecordset::GetTextLenMyEx(short nSQLType, UDWORD nPrecision)
+  {
+  	int nLen;
+
+  	if (nSQLType == SQL_LONGVARCHAR || nSQLType == SQL_LONGVARBINARY)
+  	{
+  		// Use a dummy length of 1 (will just get NULL terminator).
+  		nLen = 1;
+  	}
+  	else
+  	{
+  		// Better know the length.
+  		ASSERT(nPrecision &gt;= 0);
+  		if(nSQLType == SQL_WCHAR)	
+  		{
+  			nLen = 2*nPrecision + 1;
+  		}
+  		else
+  		{			
+  			nLen = nPrecision + 1;
+  		}
+  		// If converting Numeric or Decimal to text, you need
+  		// room for decimal point and sign in string.
+  		if (nSQLType == SQL_NUMERIC || nSQLType == SQL_DECIMAL)
+  			nLen += 2;
+  	}
+
+  	return nLen;
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the following script to create a table named "TestingTable" in the SQL
+  Server 7.0 Pubs sample database and insert one row into the table:
+
+  CREATE TABLE [dbo].[TestingTable] (
+  	[id] [int] IDENTITY (1, 1) NOT NULL ,
+  	[net_address] [nchar] (12) NULL 
+  ) ON [PRIMARY]
+
+  INSERT INTO TestingTable(net_address) VALUES ('a12345678901')
+
+2. Set up a data source name (DSN) with the name "pubs" that points to the Pubs
+  database.
+
+3. Create a Win32 console application that supports MFC, add the following code
+  into the "else" block of _tmain, and then add the "afxdb.h" header file for
+  MFC ODBC classes:
+
+  Db.Open("pubs");
+  CRecordset myquery(&amp;Db);
+  try
+  {
+  	myquery.Open(CRecordset::forwardOnly, _T("select net_address from TestingTable"),
+  	CRecordset::readOnly |CRecordset::executeDirect);
+  			
+  	CString sID;
+  	if (!myquery.IsBOF())
+  	{
+  	    myquery.GetFieldValue("net_address", sID);			
+  	}
+  	AfxMessageBox(sID);
+  	myquery.Close();
+  	Db.Close();	
+  	}
+  catch(CDBException * e)
+  {
+  	e-&gt;ReportError();
+  	e-&gt;Delete();
+  	return -1;
+  }
+
+4. Compile and run the project.
+
+From the message box, you will see the data returned is "a1234567890", which is
+truncated.
+
+REFERENCES
+==========
+
+For more information on the odbccmpt utility, search the documentation on
+odbccmpt in the SQL books online.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC kbVC420bug kbVC500bug kbVC600bug kbGrpDSVCDB kbDSupport 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

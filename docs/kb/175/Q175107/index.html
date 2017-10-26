@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175107: XCLN: Directory for the Local Exchange Offline Add | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175107: XCLN: Directory for the Local Exchange Offline Add" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175107/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175107/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175107/","publisher":null,"image":null,"headline":"Q175107: XCLN: Directory for the Local Exchange Offline Add","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175107-xcln-directory-for-the-local-exchange-offline-add">Q175107: XCLN: Directory for the Local Exchange Offline Add</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175107
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,97
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a
+Registry  Key" Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+When you try to download the Offline Address Book, the following error message
+may occur:
+
+  The directory for the local Microsoft Exchange offline address book
+  files does not exist.
+
+If you click OK, the following message occurs:
+
+  Unable to download the offline Address Book. The Microsoft Exchange Address
+  Book could not be accessed.
+
+NOTE: Only Exchange clients installed from a network share point exhibit these
+symptoms.
+
+CAUSE
+=====
+
+The Default.prf file on the network share point has the OfflineAddressBookPath
+value set incorrectly, which causes the error message for the profiles created
+from it.
+
+The location specified in the Exchange user's profile for the Offline Address
+Book files is invalid. The location of the Offline Address Book is not
+configurable through the Exchange client. By default the Offline Address Book is
+kept in the Windows directory.
+
+RESOLUTION
+==========
+
+The following method can be used to modify the Default.prf. If the Default.prf
+file is present, edit the file using a text editor such as Notepad, and complete
+these steps:
+
+1. In the [Service2] section, add this entry:
+
+     OfflineAddressBookPath= &lt;path to the offline Address Book&gt;
+
+  If this entry already exists, modify the path to what you want.
+
+2. Save the file, and exit out of the text editor.
+
+New profiles created using this Default.prf will now point to the correct
+location for the Offline Address Book files.
+
+To modify an existing profile, perform the following steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+Assuming that the Offline Address Book location needs to be modified for a
+profile with the name "Default Exchange Profile," use the procedure that is
+appropriate for your operating system to change it.
+
+For Windows NT:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. Go to the following key:
+
+  HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\Currentversion
+  \Windows Messaging Subsystem\Profiles\Default Exchange Profile
+
+3. Open the following key:
+
+  13dbb0c8aa05101a9bb000aa002fc45a
+
+4. Now look for the value: 001e660e This should be type REG_SZ and should
+  contain the path to OAB files. Modify the string associated with this value
+  to be the new directory for the OAB files. If this value does not exist, then
+  add a new value with the following information:
+
+     Value Name: 001e660e
+     Data Type: REG_SZ
+     String: &lt;Location of the OAB Files&gt;
+
+For Windows 95:
+
+1. Run Registry Editor (Regedit.exe).
+
+2. Go to the following key:
+
+  HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Messaging
+  Subsystem\Profiles\Default Exchange Profile
+
+3. Open the following key:
+
+  13dbb0c8aa05101a9bb000aa002fc45a
+
+4. Now look for the value: 001e660e This should be type REG_SZ and should
+  contain the path to OAB files. Modify the string associated with this value
+  to be the new directory for the OAB files. If this value does not exist, then
+  add a new value with the following information:
+
+     Value Name: 001e660e
+     Data Type: REG_SZ
+     String: &lt;Location of the OAB Files&gt;
+
+For Windows 3.x:
+
+1. Open the Profiles.ini file and find the filename for the profile "Default
+  Exchange Profile." The file name could be 5d630a00 or something similar.
+
+2. Exit the editor and open the 5d630a00.ini file.
+
+3. Locate the section with the heading [13dbb0c8aa05101a9bb000aa002fc45a]. Look
+  for an entry with the name, 001e660e. The value of this entry is the path to
+  the OAB files. Modify the value to the location you prefer.
+
+  If this entry does not exist, locate the section with the heading
+  13dbb0c8aa05101a9bb000aa002fc45a] and add the following line to it:
+
+       001e660e=&lt;path to OAB files&gt;
+
+4. Open the client again and download the Offline Address Book.
+
+Additional query words: 8.0 8.01 8.02 8.03 8.04
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0,97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

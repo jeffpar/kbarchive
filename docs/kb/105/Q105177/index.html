@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105177: PC Forms: No Error Returned by MEFWriteItem() Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105177: PC Forms: No Error Returned by MEFWriteItem() Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105177/","publisher":null,"image":null,"headline":"Q105177: PC Forms: No Error Returned by MEFWriteItem() Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105177-pc-forms-no-error-returned-by-mefwriteitem-function">Q105177: PC Forms: No Error Returned by MEFWriteItem() Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q105177</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Mail</span> <span class="n">For</span> <span class="n">PC</span> <span class="n">Networks</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">19</span><span class="p">-</span><span class="n">NOV</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Electronic</span> <span class="n">Forms</span> <span class="n">Designer</span><span class="p">,</span> <span class="k">version</span> <span class="m">1.0</span><span class="p">,</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Mail</span> <span class="n">for</span> <span class="n">PC</span> <span class="n">Networks</span><span class="p">,</span> <span class="n">versions</span> <span class="m">3.0</span><span class="p">,</span> <span class="m">3.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="k">With</span> <span class="k">version</span> <span class="m">1.0</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Electronic</span> <span class="n">Forms</span> <span class="n">Designer</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span>
+<span class="n">MEFWriteItem</span><span class="p">()</span> <span class="k">function</span> <span class="k">to</span> <span class="n">add</span> <span class="n">information</span> <span class="k">to</span> <span class="n">the</span> <span class="n">E</span><span class="p">-</span><span class="n">Form</span> <span class="k">package</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">use</span>
+<span class="n">MEFWriteItem</span><span class="p">()</span> <span class="k">to</span> <span class="n">add</span> <span class="n">a</span> <span class="n">binary</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">the</span> <span class="n">type</span> <span class="n">parameter</span>
+<span class="n">equal</span> <span class="k">to</span> <span class="n">MEF_BINARYFILE</span><span class="p">,</span> <span class="n">unexpected</span> <span class="n">return</span> <span class="n">values</span> <span class="n">may</span> <span class="n">be</span> <span class="n">generated</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span>
+<span class="k">if</span> <span class="n">an</span> <span class="n">invalid</span> <span class="n">path</span> <span class="n">is</span> <span class="n">given</span> <span class="k">to</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">file</span> <span class="k">to</span> <span class="n">be</span> <span class="n">attached</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">MEFWriteItem</span><span class="p">()</span> <span class="k">function</span> <span class="n">will</span> <span class="n">return</span> <span class="n">MEF_OKAY</span><span class="p">,</span> <span class="k">as</span> <span class="k">if</span> <span class="n">the</span> <span class="n">file</span> <span class="n">were</span> <span class="n">successfully</span>
+<span class="n">attached</span><span class="p">.</span>
+
+<span class="n">However</span><span class="p">,</span> <span class="n">when</span> <span class="n">the</span> <span class="n">message</span> <span class="n">is</span> <span class="n">sent</span> <span class="k">and</span> <span class="n">the</span> <span class="k">package</span> <span class="n">is</span> <span class="n">saved</span><span class="p">,</span> <span class="n">a</span> <span class="s2">"File Open Failed"</span>
+<span class="n">error</span> <span class="n">will</span> <span class="n">be</span> <span class="n">presented</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Electronic</span> <span class="n">Forms</span> <span class="n">Designer</span> <span class="n">does</span> <span class="k">not</span> <span class="n">take</span> <span class="n">a</span> <span class="n">snapshot</span> <span class="k">of</span> <span class="n">the</span> <span class="n">file</span> <span class="n">for</span>
+<span class="n">the</span> <span class="n">binary</span> <span class="n">file</span> <span class="n">type</span><span class="p">.</span> <span class="n">Because</span> <span class="k">of</span> <span class="n">this</span><span class="p">,</span> <span class="n">it</span> <span class="n">does</span> <span class="k">not</span> <span class="n">try</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span> <span class="n">file</span> <span class="n">when</span> <span class="n">it</span>
+<span class="n">is</span> <span class="n">written</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span> <span class="n">Instead</span><span class="p">,</span> <span class="n">it</span> <span class="n">attempts</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span> <span class="n">file</span> <span class="n">when</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">is</span> <span class="n">saved</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">why</span> <span class="n">the</span> <span class="n">error</span> <span class="s2">"File Open Failed"</span> <span class="n">is</span> <span class="n">returned</span> <span class="n">when</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">is</span> <span class="n">saved</span><span class="p">,</span> <span class="k">as</span> <span class="n">opposed</span> <span class="k">to</span> <span class="n">when</span> <span class="n">the</span> <span class="n">file</span> <span class="n">is</span> <span class="n">attached</span> <span class="n">using</span> <span class="n">MEFWriteItem</span><span class="p">().</span>
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="m">1.00</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbMailSearch</span> <span class="n">kbZNotKeyword3</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.2</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

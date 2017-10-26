@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37905: BASIC Sample Program for OS/2 Function Calls for DLL Modules | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37905: BASIC Sample Program for OS/2 Function Calls for DLL Modules" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37905/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37905/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37905/","publisher":null,"image":null,"headline":"Q37905: BASIC Sample Program for OS/2 Function Calls for DLL Modules","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37905-basic-sample-program-for-os2-function-calls-for-dll-modules">Q37905: BASIC Sample Program for OS/2 Function Calls for DLL Modules</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37905
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 2-FEB-1990
+
+Below is a sample program that makes a call to the following MS OS/2
+functions:
+
+   DosLoadModule
+   DosFreeModule
+   DosGetProcAddr
+   DosGetModHandle
+   DosGetModName
+
+The program below can be compiled in Microsoft BASIC Compiler Versions
+6.00 and 6.00b for MS-DOS and MS OS/2 and Microsoft BASIC Professional
+Development System (PDS) Version 7.00 for MS-DOS and MS OS/2.
+
+The program below should be compiled with BASIC compiler Version 6.00
+or 6.00b, or BASIC PDS 7.00 and should use the default run-time module
+(BRUN60EP.DLL for BASIC compiler 6.00, BRUN61EP.DLL for BASIC compiler
+6.00b, and BRT70ENP.DLL for BASIC PDS 7.00). The run-time module is
+required because the call to DosGetModHandle is searching for the
+handle of the run-time module. The program can be modified to search
+for any given DLL (dynamic link library).
+
+The following is a code example:
+
+'The function declarations can be found in BSEDOSPE.BI
+
+DECLARE FUNCTION DosLoadModule%(_
+      BYVAL P1s AS INTEGER,_
+      BYVAL P1o AS INTEGER,_
+      BYVAL P2  AS INTEGER,_
+      BYVAL P3s AS INTEGER,_
+      BYVAL P3o AS INTEGER,_
+      SEG   P4  AS INTEGER)
+
+DECLARE FUNCTION DosFreeModule%(_
+      BYVAL P1  AS INTEGER)
+
+DECLARE FUNCTION DosGetProcAddr%(_
+      BYVAL P1  AS INTEGER,_
+      BYVAL P2s AS INTEGER,_
+      BYVAL P2o AS INTEGER,_
+      SEG   P3  AS LONG)
+
+DECLARE FUNCTION DosGetModHandle%(_
+      BYVAL P1s AS INTEGER,_
+      BYVAL P1o AS INTEGER,_
+      SEG   P2  AS INTEGER)
+
+DECLARE FUNCTION DosGetModName%(_
+      BYVAL P1  AS INTEGER,_
+      BYVAL P2  AS INTEGER,_
+      BYVAL P3s AS INTEGER,_
+      BYVAL P3o AS INTEGER)
+
+DEFINT a-z
+
+dllname$="BRUN60EP"+chr$(0)  'Change this "BRUN61EP" for 6.00B
+
+x=DosGetModHandle%(varseg(dllname$),sadd(dllname$),handle)
+
+IF (x) THEN
+   Print "An error occurred in DosGetModHandle.  The number is : ";x
+ELSE
+   Print "The handle for ";dllname$;" is : ";handle
+
+   'Using the handle returned, find the name
+   DIM buffer AS STRING*40
+   length=40
+   x=DosGetModName%(handle,length,varseg(buffer),varptr(buffer))
+   IF (x) THEN
+      Print "An error occurred in DosGetModName.  The number is : ";x
+   ELSE
+      Print "The module name for handle ";handle;" is ";buffer
+   END IF
+
+   'Load another DLL
+   DIM bad AS STRING*128
+   dllname$="DOSCALLS1"+chr$(0)
+   x=DosLoadModule%(varseg(bad),varptr(bad),128,varseg(dllname$),_
+             sadd(dllname$),handle)
+   IF (x) THEN
+      Print "An error occurred in DosLoadModule.  The number is : ";x
+   ELSE
+      Print "The handle for ";dllname$;" is : ";handle
+
+      '#150 is an routine that can be found in DOSCALLS1
+      routine$="#150"+chr$(0)
+      DIM address AS LONG
+      x=DosGetProcAddr%(handle,varseg(routine$),sadd(routine$),address)
+      IF (x) THEN
+       Print "An error occurred in DosGetProcAddr.  The number is : ";x
+      ELSE
+       Print "The address of ";routine$;" is ";address
+      END IF
+
+      'Unload module
+      x=DosFreeModule%(handle)
+      IF (x) THEN
+       print "An error occurred in DosFreeModule.  The number is : ";x
+      ELSE
+       Print "DLL was freed."
+      END IF
+   END IF
+END IF
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

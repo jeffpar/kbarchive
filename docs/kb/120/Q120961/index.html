@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120961: HOWTO: How to Sort a CStringArray in MFC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120961: HOWTO: How to Sort a CStringArray in MFC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120961/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120961/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120961/","publisher":null,"image":null,"headline":"Q120961: HOWTO: How to Sort a CStringArray in MFC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120961-howto-how-to-sort-a-cstringarray-in-mfc">Q120961: HOWTO: How to Sort a CStringArray in MFC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120961
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the sample code in this article to sort a CStringArray object. The
+main() function constructs a CStringArray object, adds elements to it, prints
+out the elements, calls the sort() member function to sort it, and then prints
+the sorted elements. The sort() function uses the Bubble Sort algorithm to sort
+the array and calls the CompareAndSwap() function to compare each string and
+swap them if necessary.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+
+  /*
+   * Compile options needed: /MT
+   */ 
+
+  #include &lt;afx.h&gt;
+  #include &lt;iostream.h&gt;
+  #include &lt;afxcoll.h&gt;
+
+  class CSortStringArray : public CStringArray {
+  public:
+     void Sort();
+  private:
+     BOOL CompareAndSwap(int pos);
+  };
+  void CSortStringArray::Sort()
+  {
+     BOOL bNotDone = TRUE;
+
+     while (bNotDone)
+     {
+        bNotDone = FALSE;
+        for(int pos = 0;pos &lt; GetUpperBound();pos++)
+           bNotDone |= CompareAndSwap(pos);
+     }
+  }
+  BOOL CSortStringArray::CompareAndSwap(int pos)
+  {
+     CString temp;
+     int posFirst = pos;
+     int posNext = pos + 1;
+
+     if (GetAt(posFirst).CompareNoCase(GetAt(posNext)) &gt; 0)
+     {
+        temp = GetAt(posFirst);
+        SetAt(posFirst, GetAt(posNext));
+        SetAt(posNext, temp);
+        return TRUE;
+
+     }
+     return FALSE;
+  }
+  void main()
+  {
+     CSortStringArray sortArray;
+
+     sortArray.Add(CString("Zebra"));
+     sortArray.Add(CString("Bat"));
+     sortArray.Add(CString("Apple"));
+     sortArray.Add(CString("Mango"));
+
+     for (int i = 0; i &lt;= sortArray.GetUpperBound(); i++)
+        cout &lt;&lt; sortArray[i] &lt;&lt; endl;
+
+     sortArray.Sort();
+     cout &lt;&lt; endl;
+
+     for (int j = 0; j &lt;= sortArray.GetUpperBound(); j++)
+        cout &lt;&lt; sortArray[j] &lt;&lt; endl;
+  }
+
+
+Additional query words: kbinf 7.00 1.00 1.50 2.00 2.10 2.50 3.00 4.00 kbNoUpdate
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

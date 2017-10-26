@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137779/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137779/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137779/","publisher":null,"image":null,"headline":"Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137779-dell-latitude-installing-both-xircom-tr-and-ethernet-pcmcia">Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137779
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to run both the Xircom CreditCard Ethernet IIps and
+the Xircom CreditCard Token Ring network cards simultaneously on a Dell Latitude
+XP4100 running Windows NT Workstation 3.51.
+
+MORE INFORMATION
+================
+
+This article assumes you need to have the Advanced Port Replicator (APR)
+attached to the computer. Because the APR has both a SCSI interface and a
+built-in Ethernet port, you must use the settings displayed below to get this
+combination of hardware initialized under Windows NT Workstation 3.51.
+
+Before you follow the two procedures below, install both cards, turn on the
+computer, and start Windows NT.
+
+Xircom CreditCard Ethernet IIPS Configuration
+---------------------------------------------
+
+1. Run Control Panel, choose Network, choose Add Adapter, select "&lt;Other&gt;
+  Requires disk from manufacturer," and then choose OK.
+
+2. When Setup prompts for a floppy disk, type the following:
+
+  &lt;drive&gt;:\DRVLIB\NETCARD\X86\XCE10
+
+  where &lt;drive&gt; is the drive letter of your CD-ROM drive.
+
+3. Select the Xircom CreditCard Ethernet IIps from the Select OEM Option window
+  and choose OK.
+
+4. From the Xircom CreditCard Ethernet IIps V1.17 Dialog Box, configure the card
+  as follows:
+
+     I/O Port Address:    0x220
+     Memory Address:      0xD4000
+     Interrupt:           3
+     Full Duplex:         No
+     Mode:                I/O Mode
+     Early Transmit:      On
+     Link Integrity:      Enabled
+     Cable Type:          Auto Detect
+
+5. Choose OK.
+
+Xircom CreditCard Token Ring Configuration
+------------------------------------------
+
+IMPORTANT: Make sure that the Token Ring adapter is connected to a Multi-Station
+Access Unit (MSAU/MAU) on a live Token Ring network before proceeding. If it is
+not connected to a live Token Ring network, the network card will not
+initialize.
+
+1. Run Control Panel, choose Network, choose Add Adapter, select "&lt;Other&gt;
+  Requires disk from manufacturer," and then choose OK.
+
+2. When Setup prompts for a floppy disk, type the following:
+
+  &lt;drive&gt;:\DRVLIB\NETCARD\X86\XCE10
+
+  where &lt;drive&gt; is the drive letter of your CD-ROM drive.
+
+3. Select the Xircom CreditCard TokenRing from the Select OEM Option window and
+  choose OK.
+
+4. From the Xircom CreditCard Token Ring V1.17 Dialog Box, configure the card as
+  follows:
+
+    I/O Port Address:    0x380
+    Memory Address:      0xD6000
+    Interrupt:           15
+    Line Speed:          EEPROM
+
+  NOTE: An I/O Port address of 0x300, the default, will not work with the port
+  replicator attached to Dell Latitude XP4100/CX
+
+5. Choose OK and then Restart Windows NT.
+
+The Dell Latitude will be connected to both the Ethernet network and the Token
+Ring network.
+
+Additional query words: prodnt pcmcia
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

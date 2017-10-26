@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98743/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98743/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98743/","publisher":null,"image":null,"headline":"Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98743-err-not-a-database-file-how-to-modify-database-header">Q98743: ERR: "Not a Database File"; How to Modify Database Header</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98743
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.0,2.5x,2.6; WINDOWS:2.5x,2.6,3.0,5.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 01-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When FoxPro returns the error message "Not a Database File," you can sometimes
+correct the damaged file's header by using a hexadecimal file editor.
+
+WARNING: Before attempting to modify a database in this way, it is STRONGLY
+recommended that you back up the database.
+
+The structure of the database file header is given below.
+
+MORE INFORMATION
+================
+
+The "Not a database file" error message in FoxPro 2.x may be caused by a record
+count value in the table header that is greater than the actual number of
+records. The Hexedit.app, distributed with Visual FoxPro 5.0 may be used in an
+attempt to correct the record count. In the Hexedit.app, a hexadecimal
+representation of the record count may be found at Address: 0000000 in columns
+4, 5, 6, and 7. Use the calculator in Windows 95 or Windows NT to convert from
+decimal to hexadecimal and remember to reverse the order of the numbers as per
+this article.
+
+For information about performing table maintenance using FoxPro low-level file
+functions, please see the following article in the Microsoft Knowledge Base:
+
+  Q135905 How to Retrieve Records that were Previously Zapped
+
+
+**********************************************************************
+WARNING: ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS ARTICLE IS AT YOUR
+OWN RISK. Microsoft provides this information "as is" without warranty of any
+kind, either expressed or implied, including but not limited to the implied
+warranties of merchantability and/or fitness for a particular purpose.
+**********************************************************************
+
+The table below identifies the bytes in the first part of the header:
+
+  Byte number   Description
+  -------------------------------------------------------------
+
+  1             File-type identifier:
+                   03 - DBF without memo (FoxBASE+/FoxPro/dBASE
+                        III PLUS/dBASE IV)
+                   83 - DBF with memo (FoxBASE+/dBASE III PLUS)
+                   8B - dBASE III with memo
+                   F5 - FoxPro with memo
+  2-4           Date of last update (YYMMDD)
+  5-8           Number of records in file*
+  9-10          Offset to start of data**
+  11-12         Size of record***
+  13-28         Not used
+  29            Flag for compound index****
+  30-32         Not used
+
+  * The number of records in the database is stored in reverse
+    format. In other words, if those bytes were equivalent to F4 01
+    00 00, there would be 500 records in the database. 1F4h is the
+    hexadecimal equivalent of decimal 500.
+
+ ** The offset to the start of the data is computed from the
+    beginning of the file to the first data record. It also is stored
+    in reverse format. For example, if bytes 9 and 10 are 41 02, the
+    first data record would begin at 241h, or 577 decimal bytes from
+    the beginning of the file.
+
+*** The size of the record also is stored in reverse format; the
+    number represents the sum of the field sizes plus 1 because of
+    the deletion flag.
+
+**** The flag for the compound index will be 01h if there is a
+    structural .CDX file attached to the database, and 00h if there
+    is not an associated structural .CDX file.
+
+The second part of the header depends on the number of fields in the database.
+Each field uses 32 bytes. There is also a single terminating byte (0Dh) at the
+very end.
+
+The field definition is as follows:
+
+  Byte number   Description
+  ------------------------------------------------------
+
+  1-11          Field name
+  12            Field type
+                Character 43h
+                Date      44h
+                Logical   4Ch
+                Memo      4Dh
+                Numeric   4Eh
+  13-14         Offset of field from beginning of record
+  15-16         Not used
+  17-18         Field length (nonnumeric fields)
+  17            Field length (numeric fields)
+  18            Field decimals (numeric fields)
+  19-32         Not used
+
+FoxPro limits field names to ten characters; thus the eleventh byte, or the last
+(rightmost) byte, after the field name, must be null (00h). The field length is
+dependent upon the data type. Character fields use the seventeenth and
+eighteenth bytes, in reverse format.
+
+Memo, date, and logical fields, which have fixed lengths of 10, 8, and 1,
+respectively, need only the first byte (17). The remaining bytes are generally
+nulls. However, keep in mind that there is a terminating byte of 0Dh at the very
+end of the header.
+
+After the terminating 0Dh byte, the actual database data begins. The first byte
+of each record is the deletion flag. If the record has been deleted, but not
+packed, this byte will be 2Ah (an ASCII asterisk); otherwise, it is 20h (an
+ASCII space).
+
+For DBF files created in Visual FoxPro for Windows, or 2.x DBF files added to a
+Database Container (DBC), the backlink information is stored between byte 0DH
+and the beginning of the data.
+
+REFERENCES
+==========
+
+"FoxPro Version 2 Programming Guide," Chapter 11, by Michael Antonovich
+FoxPro for MS-DOS "Developer's Guide," version 2.0, Appendix B
+FoxPro for MS-DOS "Update," version 2.5, pages 4-20 to 4-21
+FoxPro for Windows "Developer's Guide," version 2.5, Appendix A
+
+Additional query words: VFoxWin FoxDos FoxWin 2.50 2.50a errmsg err msg repair corrupt not a table/dbf 2.50b
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260 kbVFP300 kbVFP500
+Version           : MS-DOS:2.0,2.5x,2.6; WINDOWS:2.5x,2.6,3.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

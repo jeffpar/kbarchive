@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186393: PRB: Problems Trying to Resize the MonthView Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186393: PRB: Problems Trying to Resize the MonthView Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186393/","publisher":null,"image":null,"headline":"Q186393: PRB: Problems Trying to Resize the MonthView Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186393-prb-problems-trying-to-resize-the-monthview-control">Q186393: PRB: Problems Trying to Resize the MonthView Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186393
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After dropping the MonthView ActiveX control onto a form, the control resizes
+itself after losing focus. Only part of the control is visible either in design
+mode or at run-time. Trying to resize the MonthView ActiveX control by dragging
+the control's handles results in the control snapping to a certain size, and any
+other attempts appear to have no effect at all in resizing the control. Changing
+the Height and Width properties also appear to have no effect after resizing the
+control once. When the form runs, the border around the MonthView ActiveX
+control appears resized but the size of the control remains the same.
+
+RESOLUTION
+==========
+
+You should resize the MonthView ActiveX control using only the Font.Size
+property.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Normally, when resizing a control located on a form at design-time, you would
+click on the control and drag one of the handles or change the Height and Width
+properties to resize it. Doing this to the MonthView ActiveX control results in
+resizing the border around the control. Of course, the Appearance property of
+the MonthView ActiveX control must be set to "3D," which is the default.
+
+After resizing the MonthView control once, any attempts to resize the control
+again have no effect because the size of the control or its border do not change
+visually while in design mode. If the form is run, then the border of the
+MonthView ActiveX control will be resized, either covering part of the control
+or being expanded to an area larger than the control, depending on which way it
+was resized. Use the Font.Size property to resize the control. You can change
+the Font.Size property at design-time or during run-time.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add the MonthView ActiveX control to it by clicking the
+  ActiveX Control (OleControl) icon on the Form Controls toolbar and dropping
+  it on the form.
+
+2. In the Insert Object dialog box, select the Create Control button, then
+  scroll down the Object Type list box and choose the Microsoft MonthView
+  control.
+
+3. Click the form to make the MonthView ActiveX control lose focus and note that
+  the control changes size and only part of the control can now be seen.
+
+4. Grab the lower-right handle on the MonthView ActiveX control and drag it down
+  and to the right. Note that the control resizes once and any other attempts
+  to resize it seem to have no effect. Run the form and observe that the border
+  may be larger than the control itself depending on how far the handle was
+  dragged.
+
+5. Modify the form, drop a spinner control onto the form, and then add the
+  following code to the respective events:
+
+  Spinner Init event:
+
+           This.Value = ThisForm.OleControl1.Object.Font.Size
+
+  Spinner InterActiveChange Event:
+
+           ThisForm.OleControl1.Object.Font.Size = This.Value
+
+6. Run the form and change the value in the spinner. Note that the MonthView
+  ActiveX control changes its size according to the value of the spinner.
+
+Additional query words: FxinteropOcx vfoxwin FxtoolFormdes kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

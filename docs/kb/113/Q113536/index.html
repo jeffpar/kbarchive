@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113536/","publisher":null,"image":null,"headline":"Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113536-wfwg-311-err-msg-the-password-you-specified-is-incorrect">Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113536
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+As you start Microsoft Windows for Workgroups 3.11 and your password is being
+validated for a Microsoft Windows NT domain, you receive the following error
+message:
+
+  The password you specified is incorrect or your account is inactive. See your
+  network administrator for the password or to activate your account.
+
+CAUSE
+=====
+
+If you include the command NET START NETBEUI instead of NET START in the
+AUTOEXEC.BAT file, the real-mode NetBEUI protocol is loaded. If your machine
+then connects to a Microsoft Windows NT domain and is supposed to be validated
+when you log on, the validation may be prevented, and the above error message
+may appear.
+
+RESOLUTION
+==========
+
+1. Choose the Network Setup icon in the Network group, then choose the Drivers
+  button.
+
+2. Select the Microsoft NetBEUI protocol, and then choose the Setup button.
+
+3. In the Advanced Protocol Settings section, set the value for NCBS to twice
+  that of the Maximum Sessions value.
+
+4. When you are prompted to restart the computer, choose the Continue button.
+
+5. Quit Windows and "cold boot" your computer (either turn the machine off and
+  then on again, or press the Reset button).
+
+If the above error message persists, continue with the following steps:
+
+1. In the Advanced Protocol Settings section, double the value for Maximum
+  Sessions and increase the NCBS value accordingly (refer to step 3 above).
+
+2. When you are prompted to restart the computer, choose the Continue button.
+
+3. Exit Windows and "cold boot" your computer (either turn the machine off and
+  then on again, or press the Reset button).
+
+NOTE: In addition to increasing the above values, you may need to increase the
+NetHeapSize setting in the [386Enh] section of the SYSTEM.INI file.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+This error message can also occur if the Windows NT server that you are logging
+on to runs out of available licenses (if the server is using "per server"
+mode).
+
+To verify this, run the Licensing tool in Control Panel on the Windows NT server.
+Verify that the number of client licenses is set to the correct number. Also,
+use Server Manager to determine whether all current licenses are currently in
+use.
+
+Additional query words: 3.11 winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

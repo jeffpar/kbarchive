@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155133: PRB: ClassWizard Doesn’t Bring in Proper Header File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155133: PRB: ClassWizard Doesn’t Bring in Proper Header File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155133/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155133/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155133/","publisher":null,"image":null,"headline":"Q155133: PRB: ClassWizard Doesn’t Bring in Proper Header File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155133-prb-classwizard-doesnt-bring-in-proper-header-file">Q155133: PRB: ClassWizard Doesn’t Bring in Proper Header File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155133
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbwizard kbMFC kbVC420 kbVC500 kbVC600 kbWinsock kbClassWizard kbGrpDSMFCATL
+Last Modified: 17-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating a new class derived from either CSocket or CAsyncSocket using the
+ClassWizard, one of the following errors occur during compilation:
+
+  
+
+  error C2504: 'CSocket' : base class undefined
+  error C2504: 'CAsyncSocket' : base class undefined
+
+CAUSE
+=====
+
+ClassWizard allows you to derive a class directly from CSocket or CAsyncSocket;
+however, it does not pull in the required header file where these classes are
+declared. Therefore, the compiler displays an error message reflecting that
+CSocket or CAsyncSocket was not defined.
+
+RESOLUTION
+==========
+
+Include the header file, afxsock.h, into your project, preferably in your
+project's StdAfx.h header file:
+
+       ...
+       #include &lt;afxsock.h&gt;  //MFC support for Sockets
+       ...
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The header file, afxsock.h, contains the class definitions for CAsyncSocket and
+CSocket. If you are using these classes or any classes that are derived from
+these classes, you must make sure to include afxsock.h in your project. Also
+note that if you use AppWizard to start your project and select the Socket
+Support option on the fourth page of the wizard, you will automatically get
+afxsock.h inserted into your StdAfx.h file. In addition, you will get the
+function call, AfxSocketInit(), inserted into your project. This is very
+important because you must make a call to AfxSocketInit() if you want to use
+Sockets in your MFC application. This function is usually called from your
+InitInstance() method of your CWinApp derived object.
+
+     BOOL CMyApp::InitInstance()
+     {
+
+          if (!AfxSocketInit())
+          {
+               AfxMessageBox("Socket Initialization Failed");
+               return FALSE;
+          }
+
+          ...
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbwizard kbMFC kbVC420 kbVC500 kbVC600 kbWinsock kbClassWizard kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

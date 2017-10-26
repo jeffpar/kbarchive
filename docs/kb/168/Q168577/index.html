@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168577: XFOR: Err Msg: All Pipe Instances Are Busy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168577: XFOR: Err Msg: All Pipe Instances Are Busy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168577/","publisher":null,"image":null,"headline":"Q168577: XFOR: Err Msg: All Pipe Instances Are Busy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168577-xfor-err-msg-all-pipe-instances-are-busy">Q168577: XFOR: Err Msg: All Pipe Instances Are Busy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168577
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbtshoot kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start the LinkAge Controller service from Control Panel
+Services, the following messages are logged in the LinkAge Administrator
+program's Log Browser:
+
+  control(01ba) 1 00001:Operating system error {WIN32:231(All pipe
+  instances are busy.)} from NPServer::create
+
+  control(01ba) 1 01054:Error {An unknown error condition has occurred}:
+  Could not create the named pipe server object
+
+  control(01ba) 3 00505:control is ending, last return code was {An
+  unknown error condition has occurred}
+
+  control(019f) 1 00001:Operating system error {WIN32:231(All pipe
+  instances are busy.)} from NPServer::create
+
+  control(019f) 1 01054:Error {An unknown error condition has occurred}:
+  Could not create the named pipe server object
+
+  control(019f) 3 00505:control is ending, last return code was {An
+  unknown error condition has occurred}
+
+CAUSE
+=====
+
+There are two cases when these errors can be generated.
+
+- The LinkAge Controller (Lsmain.exe) is already up and running and a user is
+  trying to start the LinkAge Controller service.
+
+- The LinkAge Controller (Lsmain.exe) is stopped or ends abnormally, but the
+  rest of the underlying controller tasks are still running.
+
+RESOLUTION
+==========
+
+To resolve this problem, do one of the following:
+
+- Restart the computer. This is the easiest method.
+
+- Terminate the remaining LinkAge processes with the Windows NT Task Manager,
+  and then restart the LinkAge Controller service. It should restart correctly
+  after all the processes are stopped. Contact a Microsoft Exchange Server
+  Support Professional to assist with this method.
+
+MORE INFORMATION
+================
+
+The LinkAge controller task and all the underlying tasks talk to each other
+through named pipes (that is, inter-process communication). Named pipes are used
+for such things as the scoreboard display on the LinkAge Administrator user
+interface, which displays all the processes and their status, the Windows NT
+Services listing, located in the Control Panel under Services, and the LinkAge
+Connector logs.
+
+If you are trying to start the LinkAge Controller service when it is already
+running, the Named Pipe resources clash, and result in the above errors. You do
+not need to do anything further.
+
+If the Controller task (Lsmain.exe) is stopped for any reason and all the
+underlying tasks remain, and the connector is restarted, the above errors will
+be added to the log, and the connector will not appear to start. It is most
+likely currently up, and mail is most likely still flowing. But no logs or
+status of it being up, other than the NT Task Manager, are available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtshoot kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

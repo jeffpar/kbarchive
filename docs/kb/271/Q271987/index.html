@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271987: XADM: Overview of Exchange Database Architecture and Engine | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271987: XADM: Overview of Exchange Database Architecture and Engine" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271987/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271987/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271987/","publisher":null,"image":null,"headline":"Q271987: XADM: Overview of Exchange Database Architecture and Engine","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271987-xadm-overview-of-exchange-database-architecture-and-engine">Q271987: XADM: Overview of Exchange Database Architecture and Engine</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271987
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a general overview of the database architecture and
+database engine for Microsoft Exchange Server. The discussion includes
+information about the database components, maintenance of database consistency,
+possible types of database failures, and database utilities.
+
+MORE INFORMATION
+================
+
+Exchange Server uses fault-tolerant, transaction-based databases to store
+messages and directory information before it is applied to the database. For
+Exchange Server 5.5 Standard Edition, each database can grow to a maximum of 16
+gigabytes (GB). For Exchange Server 5.5 Enterprise Edition, size is limited only
+by hardware.
+
+If a power outage or other abnormal system failure occurs, Exchange Server uses
+transaction log files to reconstruct data that is already accepted by the server
+but not yet written to the database.
+
+Database Components
+-------------------
+
+The design of Exchange Server is based on standard database technology. The
+system relies on an embedded database engine that lays out the structure of the
+disk for Exchange Server and manages memory. The database engine technology is
+also used behind the scenes by other Windows applications, for example, Windows
+Internet Name Service (WINS) and Dynamic Host Configuration Protocol (DHCP).
+
+Information Store:
+
+The information store, which is the key component for database management in
+Exchange Server, is actually two separate databases. The private information
+store database, Priv.edb, manages data in user mailboxes. The public information
+store, Pub.edb, manages data in public folders.
+
+The information store works with the Messaging Application Programming Interface
+(MAPI) and the database engine to ensure that all user actions are recorded on
+the server's hard disk. For example, when a user saves a message in Microsoft
+Outlook, MAPI first calls the information store, which then calls the database
+engine, which then writes the changes to disk.
+
+JET Database Engine:
+
+Exchange Server databases are based on the JET format, which uses log files to
+track and maintain information. Microsoft JET is an advanced 32-bit
+multithreaded database engine that combines speed and performance with other
+advanced features to enhance transaction-based processing capabilities.
+
+The database engine caches the disk in memory by swapping 4-kilobyte (KB) pages
+of data in and out of memory. It updates the pages in memory and writes new or
+updated pages back to the disk. This makes the system more efficient because
+when requests come, the database engine buffers data in memory instead of
+constantly going to the disk.
+
+In versions earlier than Exchange Server 5.5, the buffer cache is a fixed size.
+If more memory is needed, the administrator must manually change the buffer
+size.
+
+In Exchange Server 5.5, dynamic buffer allocation allows the buffer cache to grow
+or shrink, depending on how much memory is available and on what resources are
+in use by other services that are running on the Microsoft Windows NT Server
+computer. If other services are not using memory, the Exchange Server database
+engine takes up as much memory as it needs. If other services need memory, the
+database engine gives up some memory by transferring pages to the hard disk and
+shrinking the size of the buffer.
+
+When a user makes a request, the database engine loads the request into memory
+and marks the pages as "dirty" (a "dirty" page is a page that has been written
+with data and is still being held in memory). These dirty pages are later
+written to the information store databases on the disk.
+
+Maintaining Database Consistency
+--------------------------------
+
+Although caching in memory is the most efficient way to process data, one effect
+is that information on the disk is never completely up-to-date. Dirty pages in
+memory cause the databases to be flagged as inconsistent even though Exchange
+Server is running normally. Databases are truly in a consistent state only when
+all the dirty pages are successfully transferred to disk during a shutdown in
+which no errors occur.
+
+What if you lose the contents of memory? For example, what if the server crashes
+before the data is written to disk and you are left with an inconsistent
+database? Exchange uses transaction log files to recover from this situation.
+
+Transaction Log Files:
+
+Transaction log files keep a secure copy of volatile data that is in memory. If
+the system crashes, assuming the database is undamaged, the log files enable you
+to recover data up to the last committed transaction before the crash. (Note
+that it is recommended that you store the log files on a dedicated hard disk, so
+that the logs are not affected by possible disk failures that can corrupt the
+database.)
+
+Exchange is a "transaction-based" messaging system, and the information store is
+a transactional database. A transaction is a set of changes to a database, such
+as inserts, deletes, and updates, in which the system follows four "ACID"
+invariants:
+
+- Atomic: Either all the operations occur or none of them occur.
+
+- Consistent: The database is transformed from one correct state to another.
+
+- Isolated: Changes are not visible until they are committed.
+
+- Durable: Committed transactions are preserved in the database even if the
+  system crashes.
+
+Following these invariants means that the database engine commits a transaction
+only when it can guarantee that the data is durable or persistent, protected
+from crashes or other failures. The database engine commits data only when that
+data has been transferred from memory to the transaction log file on the hard
+disk.
+
+For example, to move a message from the Inbox folder to the Important folder,
+Exchange Server performs three operations:
+
+1. Deletes the message from the Inbox folder
+
+2. Inserts the message into the Important folder
+
+3. Updates the information about each folder to reflect the number of items and
+  unread items
+
+These operations are done in one transaction. The order of the operations does
+not matter. Exchange Server can safely delete the message from the Inbox folder
+because the deletion is committed only when the message is safely inserted into
+the Important folder. Even if the system crashes, Exchange Server never loses a
+message while moving it and never ends up with two copies of the message.
+
+Logically, you might think of the data as moving from memory to the log file and
+then to the database on disk, but what actually happens is that data moves from
+memory to the database on disk. The log files are optimized for high-speed
+writes, so during normal operations, the database engine never actually reads
+the log files. It reads from the log files only if the information store service
+stops abnormally or crashes and the database engine needs to recover by
+replaying the log files.
+
+The Checkpoint File
+
+The database engine maintains a checkpoint file called Edb.chk for every log file
+sequence in order to keep track of the data that has not yet been written to the
+database file on disk. The checkpoint file is a pointer in the log sequence that
+indicates where in the log file the information store needs to start the
+recovery in case of a failure. The checkpoint file is essential for efficient
+recovery. Without it, the information store would start from the beginning of
+the oldest log file on the disk and check every page in every log file to
+determine whether it had already been written to the database--a time-consuming
+process, especially if all you want to do is make the database consistent.
+
+The checkpoint file is located on the system disk. If you have to recover your
+system disk, this file is probably missing or in only an invalid version. But in
+most cases the checkpoint file takes care of itself.
+
+Normal Logging
+
+The following steps illustrate the process of "normal logging" where data is
+written to transaction log files:
+
+1. The user sends a message.
+
+2. MAPI calls the information store to tell it that the user is sending the
+  message.
+
+3. The information store starts a transaction in the database engine and makes
+  the corresponding changes to the data.
+
+4. The database engine records the transaction in memory by dirtying a new page
+  in memory.
+
+5. Simultaneously, the database engine secures the transaction in the
+  transaction log file and creates a log record. When the database engine
+  reaches the end of a transaction log file, it rolls over and creates a new
+  log file in sequence.
+
+6. The database engine writes the dirty page to the database file on the hard
+  disk.
+
+7. The checkpoint file is updated.
+
+Circular Logging
+
+Exchange Server supports a feature called circular logging, which was implemented
+at a time when administrators were more concerned about server disk space than
+about data recovery.
+
+Circular logging works in much the same way as normal logging except that the
+checkpoint file is essential for keeping track of information that is
+transferred to disk. During circular logging, as the checkpoint file advances to
+the next log file, old files are reused. When this happens, you cannot use the
+log files on disk in conjunction with your backup media to restore to the most
+recent committed transaction.
+
+By default, circular logging is turned on in Exchange Server 5.5 to maintain a
+fixed size for log files and prevent buildup. When a log file reaches its 5-MB
+limit, the database engine deletes it and creates a new log file in the
+sequence. As a result, Exchange Server keeps only enough data on the hard disk
+to make the database consistent if a crash occurs.
+
+It is recommended that you turn off circular logging on your Exchange Server
+computer. Circular logging may reduces the need for disk space, but it also
+eliminates your ability to recover up to the last committed transaction before a
+failure. You cannot replay log files and can only recover data up to the last
+full backup. Even if only one log file is overwritten, there is no way to
+recover the other 99 percent of the log data.
+
+In effect, circular logging negates the advantages of a transaction-based system.
+Leaving circular logging turned on makes sense only if you do not need your data
+or if you have other means of data recovery. If you are concerned about log
+files' consuming your disk resources, it is better to clean them up by
+performing regular online backups. Backup automatically removes transaction log
+files when they are no longer needed.
+
+Data Protection:
+
+It seems logical to think that database files are the most important aspect of
+data recovery. But in Exchange Server, transaction log files are more important
+because they contain information that is not in the database files. (This is why
+you should locate them on a stable server and place them on dedicated,
+high-performance disks, even if that means putting the database files on slower
+disks.)
+
+Transaction log files keep a secure copy on disk of volatile data that is in
+memory so that the system can recover in the event of a failure. If the system
+crashes but the database is undamaged, as long as you have the log files, you
+can recover data up to the last committed transaction before the failure.
+
+Transaction log files also make writing data more efficient because it is faster
+to update pages sequentially in a log file than to insert pages into the
+database. When a change occurs in the database, the database engine updates the
+data in memory. It synchronously writes a record of the transaction to the log
+file, telling it how to redo the transaction if the system fails. Then the
+database engine writes the data to the database on disk. To minimize disk
+input/output, the database engine transfers pages to disk in batches.
+
+Each log file in a sequence can contain up to 5 MB of data. When a log file is
+full, it is renamed as a previous log file, and a new one is created with the
+Edb.log file name. Exchange Server associates each log file with a hexadecimal
+generation number. Because log files can have the same name, the database engine
+stamps the header in each file in the sequence with a unique signature so it can
+distinguish between different generations of log files.
+
+Database Corruption
+-------------------
+
+Exchange may experience a failure, such as a hardware failure, that requires the
+system to attempt to get back to a consistent state. Because there are different
+types of database corruption with differing symptoms, different tools and
+techniques are required to diagnose and fix problems.
+
+There are two types of corruption:
+
+- Physical corruption
+  At the lowest level, data can become physically corrupted on the disk. This is
+  usually a hardware-related problem that always requires you to restore from
+  backup.
+
+- Logical corruption
+  Typical logical corruption occurs at the database level. For example, database
+  engine failure can cause index entries to point to missing values. Logical
+  corruption can also occur at the application level, in mailboxes, messages,
+  folders, and attachments. For example, application-level corruption might
+  cause incorrect reference counts, incorrect access control levels, a message
+  header without a message body, and so on.
+
+Physical Corruption:
+
+Physical corruption is serious because it can destroy data, and the only thing
+you can do is restore Exchange from backup. It is important that you detect
+physical corruption early and resolve the issues quickly.
+
+Detecting Physical Corruption
+
+Physical corruption in the information store generates the following errors in
+the application log of Event Viewer:
+
+- -1018 (JET_errReadVerifyFailure) The data read from disk is not the same as
+  the data that was written to disk.
+
+- -1022 (JET_errDiskIO) The hardware, device driver, or operating system is
+  returning errors.
+
+- -510 JET_errLogWriteFail The log files are out of disk space or there is a
+  hardware failure with the log file disk.
+
+Although Exchange typically displays a -1018 or -1022 error message when there is
+physical corruption, you can also detect physical corruption by performing
+online backups, which are Microsoft's recommended method for backing up data.
+Online backup also is the best way to detect corruption in a database file
+because it is the only process that systematically checks every single page in
+the database.
+
+When you run an online backup, the Windows NT Backup software reads each 4-KB
+page in the database file, passes it to the database engine, and then writes it
+to tape. The database engine verifies that the checksum on each page is correct.
+If the checksum on the page does not match the checksum that the database engine
+calculates, there is physical database corruption on the hard disk and NT Backup
+logs an -1018 error.
+
+Preventing Physical Corruption
+
+The best way to prevent physical corruption is to outfit the server with quality
+hardware components and configure the system correctly. Make sure that you are
+not running file-level utilities, such as antivirus software, against database
+and log files on the computer that runs Exchange Server.
+
+If you have reliable hardware, you may never see indications of physical
+corruption. If you do consistently run into -1018 errors, you probably have a
+hardware problem, possibly a bad disk or disk controller.
+
+A word about write-back caching: Some write-back caching array controllers
+incorrectly return successful commits on transactions before the data has
+actually been secured to disk. The safest course is to turn off write-back
+caching unless the process has battery backup. If you do use write-back caching,
+avoid having a corrupted database by making sure that data is fully protected
+and that you have procedures to ensure that cached data is replayed to the right
+disks after a crash.
+
+Recovering from Physical Corruption
+
+The only way to recover from physical database corruption is to restore from the
+last good backup (if a backup ran without errors, it is good) and roll the log
+files forward to bring the system to a consistent and undamaged state. Repeated
+failure probably indicates a problem with the disk where the database is
+located.
+
+There is really no safe way to repair physical corruption to the database. You
+can run the Eseutil.exe utility in repair mode to get the database functioning
+again, but this is not recommended because Eseutil simply deletes bad pages.
+
+NOTE: If it is at all possible, avoid using Eseutil in repair mode (Eseutil /p).
+Eseutil, which comes with Exchange Server, is a last resort for repairing
+database damage when all else fails. In repair mode, it gets a broken database
+running again by simply deleting damaged pages. Eseutil should never be used to
+recover data. If you do run the "Eseutil /p" command, you must run the "Isinteg
+-test alltests -fix" (without the quotation marks) command to restore a
+consistent state.
+
+Logical Corruption:
+
+Logical corruption is much more difficult to diagnose and fix than physical
+corruption because logical corruption is unpredictable and is typically caused
+by software bugs. Usually it requires a problem to alert you to logical
+corruption. (Logical corruption is extremely rare in Exchange Server 5.5.)
+
+Preventing Logical Corruption
+
+Because logical corruption is so unpredictable, there is no foolproof way to
+prevent it. However, there are ways to reduce the risk:
+
+- Install the latest service pack for Microsoft Exchange Server version 5.5 as
+  soon as possible. Service packs fix a number of known problems in Exchange
+  Server 5.5.
+
+  For additional information about service packs and how to obtain them, click
+  the article numbers below to view the articles in the Microsoft Knowledge
+  Base:
+
+  Q241740 List of Bugs Fixed in Exchange Server 5.5 Service Pack 3
+
+  Q254682 XADM: Exchange Server 5.5 Post-SP3 Database Engine Fixes
+
+  Q191014 How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+- Make sure that your Exchange Server computer is secure and that your
+  configuration is not changed.
+
+If you discover a problem and it persists after you follow through on these
+precautions, you may have found a new bug. If this is the case, notify Microsoft
+as soon as possible.
+Repairing Logical Corruption
+
+Logical corruption can occur in the information store or in the database engine.
+Because logical corruption can cause serious damage to data, do not ignore
+reports of errors.
+
+You can use the Isinteg utility to check into problems in the information store
+or the Eseutil utility to check into problems in the database engine. Note that
+you should use these utilities only as a last resort after you have tried to
+restore the system from backup.
+
+The Isinteg Utility
+
+The Information Store Integrity Checker (Isinteg) finds and eliminates errors
+from the public and private information store databases. These errors may
+prevent the information store from starting or prevent users from logging on and
+receiving, opening, or deleting e-mail.
+
+Isinteg is not intended for use as a part of normal information store
+maintenance; it is provided to assist in disaster recovery situations. For
+example, you can run Isinteg to correct information store counters in memory
+when they get out of sync after a system crash.
+
+Because the Isinteg utility works at the logical schema level, it can recover
+data that Eseutil utility cannot recover. This is because data that is valid for
+the Eseutil utility at the physical schema level can be semantically invalid at
+the logical schema level. Isinteg records information in the application log in
+Event Viewer so that you can track the progress of the recovery.
+
+The Isinteg utility performs two main tasks:
+
+- It patches the information store after a restore from an offline backup.
+
+- It tests and optionally fixes errors in the information store.
+
+For additional information about troubleshooting the information store and
+Isinteg utility, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q185006 XADM: Troubleshooting Information Store Problems
+
+  Q182081 XADM: Description of ISINTEG Utility
+
+or see the Isinteg.rtf document on the Exchange Server 5.5 compact disc, in the
+Support\Utils directory.
+
+The Eseutil Utility
+
+The Eseutil utility examines the structure of the database tables and records and
+defragments, repairs, and checks the integrity of the information store and
+directory. Because running Eseutil in repair mode simply deletes damaged pages,
+use this utility only after you have tried to restore from backup.
+
+For additional information about the Eseutil utility, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q192185 XADM: How to Defragment with the ESEUTIL Utility (Eseutil.exe)
+
+or see the Eseutil.rtf document on the Exchange 5.5 compact disc in the
+Support\Utils directory.
+
+Data Backup
+-----------
+
+Because Exchange Server is transaction-based, avoid performing a file-level or
+offline backup of the database files on disk. The best way to ensure that you
+are preserving all data in the system, including transactions that have not yet
+been flushed to disk, is to perform regular online backups.
+
+Online Backup:
+
+Online backup enables you to back up Exchange Server databases to your backup
+medium without shutting down the server. When Exchange Server is performing an
+online backup, all services, including the information store, continue to run
+normally. Pages continue to be updated in memory and transferred to the database
+files on disk, transactions are recorded in the log files, and the checkpoint
+file continues to move along.
+
+Exchange uses a .pat (patch) file that keeps track of updated pages while the
+backup software is running, to make sure that pages that are modified during
+backup are also backed up. There are two .pat files, Priv.pat for the private
+information store and Pub.pat for the public information store.
+
+When you perform an online backup, regularly check the application log in Event
+Viewer to make sure that backups are completing successfully.
+
+Process of Online Backup
+
+A backup program, for example Windows NT Backup (Ntbackup.exe), does the
+following during a full backup or a copy backup:
+
+1. Makes a copy of the database and backs it up to the tape.
+
+2. Adds a subset of pages to the .pat file, the pages that change after being
+  copied to tape.
+
+3. Renames the current Edb.log file to Edbx.log, where x is the log file
+  generation number in hexadecimal format, and creates a new log generation.
+
+4. In a full backup, backs up the .pat file and all log files after the
+  checkpoint (except the new Edb.log) onto the tape. In a copy backup, backs up
+  all log files before and after the checkpoint.
+
+5. In a full backup, deletes transaction log files that are older than the
+  checkpoint. In a copy backup, does not delete any transaction log files.
+
+A backup program does the following during an incremental backup or a
+differential backup:
+
+1. In an incremental backup, makes a copy of the log files and backs them up to
+  the tape. In a differential backup, copies the database to tape.
+
+2. Adds a subset of pages to the .pat file, the pages that change after being
+  copied to tape.
+
+3. Renames the current Edb.log file to Edbx.log and creates a new log
+  generation.
+
+4. Backs up the .pat file and all log files before and after the checkpoint,
+  including the new Edb.log, to tape.
+
+5. In an incremental backup, deletes transaction log files older than the
+  checkpoint. In a differential backup, does not delete any log files.
+
+Offline Backup:
+
+Try to avoid doing offline backups. In an online backup, the backup program
+manages files for you, but offline backup is a manual, labor-intensive process
+that is prone to human error. Additionally, in an offline backup, you cannot
+validate the checksum on each page of the database. Online backups are the
+single most valuable tool for detecting corruption and performing data
+recovery.
+
+For additional information about backups, click the article numbers below to view
+the articles in the Microsoft Knowledge Base:
+
+  Q191357 XADM: Restoring a Single Database from Full Online Backups
+
+  Q179308 XADM: How To Verify Exchange Online Backups
+
+  Q237767 XADM: Making and Restoring Offline Backups
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : Admin JET Utilities,System LocalStore MAPI
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

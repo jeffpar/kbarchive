@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34610: WRITE# Statement Works with Semicolon Despite BC.EXE Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34610: WRITE# Statement Works with Semicolon Despite BC.EXE Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34610/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34610/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34610/","publisher":null,"image":null,"headline":"Q34610: WRITE# Statement Works with Semicolon Despite BC.EXE Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34610-write-statement-works-with-semicolon-despite-bcexe-error">Q34610: WRITE# Statement Works with Semicolon Despite BC.EXE Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34610
+Product(s): See article
+Version(s): 4.00 4.00b
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 16-DEC-1989
+
+Microsoft does not recommend linking object modules that produced one
+or more severe error messages at compile time. The behavior of such
+programs cannot be guaranteed to work in future product versions, or
+even to work at all.
+
+An example is shown below for the case of improperly using a WRITE#
+statement with a trailing semicolon with the intent to suppress a
+carriage return. PRINT# is intended for this purpose, not WRITE#.
+
+This information applies to QuickBASIC Versions 4.00 4.00b and 4.50,
+to Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and MS
+OS/2, and to Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2.
+
+According to Page 455 of the "Microsoft QuickBASIC 4.0: BASIC Language
+Reference" manual for QuickBASIC Versions 4.00 and 4.00b, the WRITE#
+statement should not allow a semicolon at the end of its arguments.
+QB.EXE correctly displays an "Expected:Expression" error message on
+the WRITE# statement at run time. A "Syntax Error" is correctly
+produced when the BC.EXE compiler tries to compile the following
+program, which has a semicolon at the end of a WRITE statement:
+
+open "data" for output as #1
+write #1, str$(5);    ' This line is not allowed to have a ";"
+write #1, str$(5)
+close #1
+
+Despite the "severe" error message at compile time, BC.EXE produces an
+object module that can be linked into an executable program. This
+program executes as you might expect a WRITE# with a semicolon at the
+end to work (i.e., no carriage return or linefeed). However, this
+behavior cannot be guaranteed for future versions.
+
+Note that the PRINT# statement can be used in place of the WRITE#
+statement if you wish to use a trailing semicolon to suppress the
+carriage return, as shown in the following program:
+
+open "data" for output as #1
+PRINT#1, CHR$(34) + STR$(5) + CHR$(34) + ", ";    'This is allowed.
+write #1, str$(5)
+close #1
+
+The WRITE# statement delimits output arguments with commas, and also
+places double quotation marks around string arguments.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

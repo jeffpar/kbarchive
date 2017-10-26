@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128205: HOWTO: Set Buffering Mode in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128205: HOWTO: Set Buffering Mode in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128205/","publisher":null,"image":null,"headline":"Q128205: HOWTO: Set Buffering Mode in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128205-howto-set-buffering-mode-in-visual-foxpro">Q128205: HOWTO: Set Buffering Mode in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128205
+Product(s): Microsoft FoxPro
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp kbvfp300 kbvfp600
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Data buffering is used in Visual FoxPro to enable edits to be made and verified
+in memory before they are applied to a .DBF file and to handle some record
+contention issues in a multiuser environment. There are several ways to use
+buffering within Visual FoxPro. This article gives you an overview.
+
+MORE INFORMATION
+================
+
+There are two ways to set the buffereing mode. Issue a SET MULTILOCKS ON, or
+choose the Multiple Record Locks check box in the Data Tab of the Tools, Options
+dialog to begin buffering data. Use one of the following methods to set the
+buffering mode.
+
+Setting the Buffering Mode Through the Visual FoxPro Interface
+--------------------------------------------------------------
+
+Use any one of the following methods to set the buffering mode through the Visual
+FoxPro user interface:
+
+- To set the buffering mode for an open table, you can use the Properties
+  button in the View Window. This method sets the buffering properties for the
+  currently selected table only.
+
+  -or-
+
+- To set the buffering mode for subsequently opened tables, you can use the
+  Buffering list box in the Data tab of the Tools, Options dialog.
+
+  -or-
+
+- In the form designer, you can set the form.BufferMode property to 1 for
+  Pessimistic Buffering, or to 2 for Optimistic Buffering. If BufferMode is set
+  to 1 or 2, table buffering is enabled for any cursor used by a grid control.
+  Any other control bound to data uses row buffering. This property sets the
+  default buffering mode for all tables used in the form.
+
+  -or-
+
+- In the form designer, you can set the default buffering mode for individual
+  cursors in the Data Environment by setting the BufferModeOverride property.
+  The default for this property is 1 (Use the default buffering mode of the
+  form).
+
+NOTE: You cannot set a default buffering mode for a table through the Database
+Designer.
+
+Setting the Buffering Mode Programatically
+------------------------------------------
+
+To set the buffering mode programatically, you can use the CURSORSETPROP()
+function to enable or disable buffering on an open table. The following line of
+code sets Optimistic Row buffering:
+
+     SET MULTILOCKS ON
+     =CURSORSETPROP("Buffering",3)
+
+You must issue this line of code for each open table on which you wish to enable
+buffering. This command overrides the default BufferMode property on a form, or
+the default BufferModeOverride property for a cursor in the Data Environment for
+the Form.
+
+REFERENCES
+==========
+
+For more information on the properties and functions used in this article,
+please see the Visual FoxPro Language Reference. For information on using the
+Forms Designer, please see the Visual FoxPro User's Guide.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP600
+Version           : 3.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

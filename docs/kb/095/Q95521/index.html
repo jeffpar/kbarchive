@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95521/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95521/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95521/","publisher":null,"image":null,"headline":"Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95521-conn-wa0728-troubleshooting-the-mail-connection-gateway">Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95521
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 1.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Connection Gateway for PC and AppleTalk Networks, version 1.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+Application Note WA0728, "Troubleshooting the Mail Connection Gateway," is
+designed to help you troubleshoot and correct common problems encountered with
+the Microsoft Mail Connection gateway, version 1.0b.
+
+You can obtain this Application Note from the following sources:
+
+- Microsoft's World Wide Web Site on the Internet
+
+- The Internet (Microsoft anonymous ftp server)
+
+- The Microsoft Network (MSN)
+
+For complete information, see the "To Obtain This Application Note" section at
+the end of this article.
+
+The TEXT OF WA0728
+------------------
+
+======================================================================
+ Microsoft(R) Product Support Services Application Note (Text File)
+         WA0728: TROUBLESHOOTING THE MAIL CONNECTION GATEWAY
+======================================================================
+                                                  Revision Date: 2/93
+                                                     No Disk Included
+
+The following information applies to Microsoft Mail Connection Gateway
+version 1.0b.
+
+--------------------------------------------------------------------
+| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY    |
+| ACCOMPANY THIS DOCUMENT (collectively referred to as an            |
+| Application Note) IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY      |
+| KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO    |
+| THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A     |
+| PARTICULAR PURPOSE. The user assumes the entire risk as to the     |
+| accuracy and the use of this Application Note. This Application    |
+| Note may be copied and distributed subject to the following        |
+| conditions: 1) All text must be copied without modification and    |
+| all pages must be included; 2) If software is included, all files  |
+| on the disk(s) must be copied without modification [the MS-DOS(R)  |
+| utility DISKCOPY is appropriate for this purpose]; 3) All          |
+| components of this Application Note must be distributed together;  |
+| and 4) This Application Note may not be distributed for profit.    |
+|                                                                    |
+| Copyright 1993 Microsoft Corporation. All Rights Reserved.         |
+| Microsoft and MS-DOS are registered trademarks and Windows         |
+| is a trademark of Microsoft Corporation.                           |
+--------------------------------------------------------------------
+
+                            INTRODUCTION
+                            ============
+
+This application note is designed to help you troubleshoot and correct
+common problems encountered with the Microsoft Mail Connection
+gateway, version 1.0b. Additional information is available in the
+"Mail Connection Administrator's Guide" and the README files located
+on the Mail Connection distribution disks.
+
+                    HOW THE MAIL CONNECTION WORKS
+                    =============================
+
+The Microsoft Mail Connection can be broken down into two separate
+gateway components, a Macintosh component and a PC component. Both
+gateway components perform the same tasks and operate independently.
+Each is responsible for extracting outgoing gateway messages and
+importing incoming gateway messages to their respective mail servers.
+The two gateway components transfer messages and directory lists
+between each other by depositing and retrieving message files to or
+from designated directories located on a file server that is
+accessible to the PC and the Macintosh. The shared directory structure
+that the gateway components use to transfer their messages is called
+the "Connection store".
+
+The Connection store contains two subdirectories, MACTOPC and PCTOMAC.
+The names of the directories describe the direction in which the
+message files stored within them are traveling. Message files found in
+the MACTOPC directory originate from the AppleTalk Mail network and
+are destined for the PC Mail network. Message files stored in the
+PCTOMAC directory are traveling in the opposite direction, from the PC
+Mail network to the AppleTalk Mail network.
+
+The PC and Macintosh gateway components perform the same basic task,
+importing and extracting messages to/from their Mail database, but
+they operate quite differently from each other. Because the two
+components operate independently, one may be functioning normally
+while the other is not.
+
+THE MACINTOSH GATEWAY COMPONENT
+-------------------------------
+
+The Macintosh gateway component is integrated with the AppleTalk Mail
+server and is an "extension" of the server process. The AppleTalk Mail
+server communicates with its loaded gateways via the MS Mail GW
+Chooser extension. Gateway resources are extracted from the gateway
+server by the MS Mail GW Chooser extension and are stored in the MS
+Mail GW Cache file. The AppleTalk Mail server "triggers" the gateway
+at the times specified in the Gateway Connect Times configuration
+screen.
+
+THE PC GATEWAY COMPONENT
+------------------------
+
+The PC component of the Mail Connection consists of a dedicated PC
+running the MACGATE application. The "Macgate PC" must be connected
+via the local-area network (LAN) to the PC Mail gateway postoffice and
+the Connection store. The Macgate PC periodically checks for incoming
+gateway message files in the MACTOPC directory and deposits any
+outgoing gateway messages in the PCTOMAC directory. The MACGATE
+application calls the Microsoft Mail File Format Application
+Programming Interface (FFAPI) modules MACGET and MACPUT to import and
+extract gateway messages to/from the PC Mail postoffice database.
+
+Use the MSGATE.INI file and command-line options to configure the
+MACGATE application.
+
+DIRECTORY EXCHANGE
+------------------
+
+Directory exchange is controlled from the Macintosh side of the Mail
+Connection using the Connection Name Utility (CNU). The CNU extracts
+the AppleTalk Mail user list and sends it to the Macgate PC as a
+special directory exchange mail message. The Macgate PC processes the
+message and passes the AppleTalk Mail user list to the FFAPI
+IMPORT.EXE program.
+
+The CNU can also send a request message to the Macgate PC to request
+the PC Mail user list. The Macgate PC extracts the PC Mail user list
+by calling the FFAPI IMPORT.EXE program and mails the list to the
+network manager of the gateway AppleTalk Mail server. If the CNU is
+running, it intercepts the message, processes the list of PC Mail
+addresses, and adds the address names to the AppleTalk Mail server as
+gateway recipients (gateway recipients can be seen in the Define
+Gateway Recipients screen). The CNU can also be used to remove the
+AppleTalk Mail names from the PC Mail network, or to remove the PC
+Mail names from the AppleTalk Mail server.
+
+The Macintosh gateway component configuration screen contains a
+section for configuring directory synchronization options. Directory
+synchronization has not been implemented in this version of the Mail
+Connection, so leave these fields blank. (Entering values in the
+directory synchronization fields may cause the Mail Connection to stop
+functioning.)
+
+  NOTE: Directory exchange messages are similar to regular gateway
+  messages and can be affected by many of the same problems that
+  would prevent a gateway message from being delivered. If you
+  experience problems with directory exchange, verify that regular
+  gateway messages are being delivered.
+
+                   MONITORING THE MAIL CONNECTION
+                   ==============================
+
+Use the following information to help you monitor the activity of the
+Mail Connection Gateway. By tracking a message through the gateway,
+you can determine where problems are occurring and which component is
+responsible.
+
+TRACKING A MESSAGE FROM PC MAIL TO APPLETALK MAIL
+-------------------------------------------------
+
+Messages that are composed by PC Mail users and addressed to AppleTalk
+Mail recipients are written to the Mail Connection gateway mailbag
+file. The messages remain in the gateway mailbag file until the
+Macgate PC extracts them and deposits them in the PCTOMAC directory.
+
+The PC Mail administrator can use the ADMIN.EXE program to check the
+status of messages waiting in the gateway mailbag. A list of the
+outgoing gateway messages can be viewed by selecting Queue from the
+top menu bar and entering "MSMAIL" as the network name. The gateway
+messages can be deleted or returned to the sender by the
+administrator.
+
+The Macgate PC periodically checks the Mail Connection gateway mailbag
+on the postoffice and extracts any waiting gateway messages. Each
+message is written as a separate file in the PCTOMAC directory of the
+Connection store. The Macgate PC updates the status screen and
+displays a summary of each gateway message it processes.
+
+The gateway message files wait in the PCTOMAC directory until the
+Macintosh gateway component retrieves them. The MS-DOS directory (DIR)
+command can be used to display the contents of the PCTOMAC directory;
+it shows the number of messages waiting to be delivered to AppleTalk
+Mail users, the date and time the Macgate PC deposited them, and the
+size of each message file.
+
+The AppleTalk Mail server periodically executes the Macintosh
+component of the Mail Connection gateway at the times defined in the
+Gateway Connect Times configuration screen. The Macintosh gateway
+component checks for new message files in the PCTOMAC directory. The
+message files are imported by the Macintosh gateway component and are
+passed to the AppleTalk Mail server via the MS Mail GW RDEV (resource
+device). The Macintosh Gateway Services Monitor (GWS Monitor) can be
+used to monitor the message traffic as it is passed from the gateway
+component to the AppleTalk Mail server. (Launch the GWS Monitor and
+choose Show Trace Window from the Trace menu.)
+
+The AppleTalk Mail server delivers the gateway message to the
+recipient's inbox and notifies the user of the new mail (if
+notification is turned on).
+
+TRACKING A MESSAGE FROM APPLETALK MAIL TO PC MAIL
+-------------------------------------------------
+
+Messages that are composed by AppleTalk Mail users and addressed to PC
+Mail recipients are retained by the server in a special outbound
+gateway queue. The network manager can view a list of the messages
+waiting in the outbound gateway queue by launching the Mail Network
+Administrator application and requesting a Global Server Report. The
+Global Server Report displays the status of each mail server your
+server is aware of and the status of the messages waiting in the
+outbound gateway queue (at the bottom of the report). The network
+manager can delete messages from the outbound gateway queue by
+choosing Delete Queued Mail from the Admin menu of the Mail Network
+Administrator application.
+
+The AppleTalk Mail server triggers the Macintosh component of the Mail
+Connection Gateway at the times specified in the Gateway Connect Times
+configuration screen. The Macintosh gateway component uses the MS Mail
+GW RDEV to extract the messages from the outbound gateway queue. The
+Gateway Services Monitor can be used to monitor the message traffic as
+it is passed from the AppleTalk Mail server to the gateway component.
+
+The Macintosh gateway component deposits the extracted gateway
+messages into the MACTOPC subdirectory of the Connection store. The MS-
+DOS directory (DIR) command can be used to display the contents of the
+MACTOPC directory; it shows the number of messages waiting to be
+delivered to the PC Mail network, the date and time the Macintosh
+gateway component deposited them, and the size of each message file.
+
+The Macgate PC periodically checks the MACTOPC directory and retrieves
+any new messages. Each new message is temporarily placed in the
+Inqueue mailbag and the intended recipients are copied into a file in
+the P1 directory. The Macgate PC or any other Message Transfer Agent
+(MTA) processes the entries in the Inqueue mailbag and delivers the
+gateway messages to the intended PC Mail recipients' mailbags or
+external postoffice mailbags.
+
+                         DIAGNOSING PROBLEMS
+                         ===================
+
+Problems with the Mail Connection can often be isolated quickly by
+checking for message files in the MACTOPC and PCTOMAC subdirectories
+of the Connection store. Message files should not remain in the
+Connection store directories for more than one gateway cycle, except
+when there are more than 50 messages waiting to be processed. The Mail
+Connection has a limit of 50 messages per processing cycle, so some
+may be left over if more than 50 are waiting.
+
+MESSAGES ARE NOT DELIVERED FROM APPLETALK MAIL TO PC MAIL
+---------------------------------------------------------
+
+If you suspect that the Mail Connection is not delivering messages
+from AppleTalk Mail to PC Mail, check for message files in the MACTOPC
+directory. If the gateway is not depositing message files in the
+MACTOPC directory, verify the following:
+
+- The Connection store volume is mounted on the AppleTalk Mail
+  server's desktop.
+- The path to the Connection store is defined correctly in the
+  Gateway Configuration screen.
+- Gateway connect times are configured to trigger the gateway.
+- The MS Mail GW Chooser document has the correct gateway server
+  selected.
+- The AppleTalk Mail server has sufficient access rights (read,
+  write, create, delete, and scan) to the Connection store volume.
+- The MACTOPC directory exists in the Connection store.
+
+If you find message files waiting in the MACTOPC directory that are
+not being delivered by the gateway, verify the following:
+
+- MACGATE.EXE is running.
+- The Macgate PC has sufficient access rights to the PC Mail
+  postoffice and Connection store volumes.
+- StorePath and/or StoreDrive are configured correctly in the
+  MSGATE.INI file.
+- The postoffice INQUEUE.MBG and INQUEUE.KEY files exist with no
+  hidden attributes, have an owner (if you are using a Novell
+  network), and can be written to by the Macgate PC.
+- If you are using a non-MS-NET or Novell network, make sure the file
+  sizes are the same on each platform.
+- From the Macintosh, verify that the filenames on the Connection
+  store are all uppercase letters or all lowercase letters.
+
+MESSAGES ARE NOT DELIVERED FROM PC MAIL TO APPLETALK MAIL
+---------------------------------------------------------
+
+If you suspect that the Mail Connection is not delivering messages
+from PC Mail to AppleTalk Mail, first check for message files in the
+PCTOMAC directory. If the gateway is not depositing message files in
+the PCTOMAC directory, verify the following:
+
+- MACGATE.EXE is running.
+- The Macgate PC has sufficient access rights to the Connection store
+  volume to create and delete files.
+- The PCTOMAC directory exists in the Connection store.
+
+If the above items are correct, run the PC Mail ADMIN.EXE utility and
+check the status of the gateway mailbag file by selecting Queue and
+entering "MSMAIL" as the Network Type. It is possible that the Macgate
+PC cannot deliver a bad message. If so, return the oldest gateway
+message to the sender.
+
+If you find message files waiting in the PCTOMAC directory that the
+gateway is not delivering, verify the following:
+
+- The Connection store volume is mounted on the AppleTalk Mail
+  server's desktop.
+- The path to the Connection store is defined correctly in the
+  Gateway Configuration screen.
+- Gateway Connect Times are configured to trigger the gateway.
+- The MS Mail GW Chooser document has the correct gateway server
+  selected.
+- The AppleTalk Mail server has sufficient access rights to the
+  Connection store volume to create and delete files.
+- The MACTOPC directory exists in the Connection store.
+
+                   SPECIFIC PROBLEMS AND SOLUTIONS
+                   ===============================
+
+The following describes specific problems, possible causes, and their
+solutions.
+
+MACGATE.EXE
+-----------
+
+  2 - Cannot verify logon user/admin ID. Authorization failure.
+  Bad parameter value. (110)
+
+      Possible cause: Admin password is incorrect in the MSGATE.INI
+      file.
+
+      The user and password defined in the MSGATE.INI file are used
+      by the Mail Connection gateway when importing and exporting
+      user lists. This user must have administrator privileges on the
+      postoffice.
+
+      Possible cause: The Enhanced Security feature is installed.
+
+      The Microsoft Mail Connection gateway is not compatible with
+      the Enhanced Security feature of PC Mail version 3.0. Remove
+      the Enhanced Security feature by running the UPDATE.EXE program
+      from the PC Mail 3.0 Server Version - Disk 1 (refer to page 11
+      of the "Microsoft Mail Administrator's Guide").
+
+  MSGATE.INI cannot be accessed. (125): No such file or directory.
+
+      Possible cause: The PC Mail postoffice volume is not at the
+      root of the postoffice directory structure.
+
+      The PC Mail postoffice volume must be at the root level of the
+      postoffice directory structure when the MACGATE.EXE program is
+      executed. Change to the postoffice drive and use the MS-DOS
+      "CD" command to set the default directory to the root of the
+      postoffice. (A directory of the root level of the postoffice
+      should contain the subdirectories ATT, FOLDERS, GLB, etc.)
+
+  Invalid gateway share directory. (130)
+
+      Possible cause: StoreDrive or StorePath is incorrect in the
+      MSGATE.INI file.
+
+      Verify that the StoreDrive and StorePath parameters in the
+      MSGATE.INI file are defined correctly. The StoreDrive is the
+      letter mapped to the root directory of the gateway store. The
+      StorePath is the path to the gateway store from the root of the
+      StoreDrive.
+
+      Possible cause: The PCTOMAC directory is missing or renamed.
+
+      Verify that the MSGATE\STORE directory contains a subdirectory
+      named PCTOMAC. If this subdirectory doesn't exist, create a new
+      one using the MS-DOS "MKDIR" command.
+
+  52 - A file open error has occurred.
+  Error while processing message: (114)
+
+      Possible cause: MACGATE cannot write or create files in the
+      MSGATE\STORE directory.
+
+      The PC running the MACGATE program must have sufficient access
+      rights to write and create temporary files in the MSGATE\STORE
+      directory structure.
+
+  The Macgate PC status screen shows that incoming messages are being
+  processed, but the messages are not being delivered.
+
+      Possible cause: The PC Mail postoffice P1 subdirectory is
+      missing or the Macgate PC does not have sufficient access
+      rights to create files in this directory.
+
+      Create the P1 subdirectory and grant all access rights to the
+      account the Macgate PC uses.
+
+      Possible cause: There are not enough file handles available to
+      deliver the message.
+
+      Edit the CONFIG.SYS file of the PC running the MACGATE.EXE
+      program and add a "FILES=20" line. Restart the PC after making
+      this change.
+
+  Error running FFAPI program: Not enough core
+  Error importing AppleTalk Mail directory to drive M:
+
+      Possible cause: IMPORT.EXE does not have enough conventional
+      memory available to import the AppleTalk Mail address list.
+
+      The MACGATE.EXE program spawns IMPORT.EXE when a directory
+      exchange message is received from the AppleTalk Mail network.
+      IMPORT.EXE requires as much conventional memory available as
+      possible to successfully import a large AppleTalk Mail address
+      list. Remove any unnecessary TSRs and device drivers, and load
+      the remaining drivers into high memory if possible. Use the MS-
+      DOS "MEM /C" command to see a summary of your memory
+      utilization.
+
+  Warning [ 1] Error obtaining message #:1 GWTRANS
+
+      Possible cause: There are not enough file handles available to
+      complete the directory import.
+
+      Edit the CONFIG.SYS file of the PC running the MACGATE.EXE
+      program and add a "FILES=20" line. Restart the PC after making
+      this change.
+
+  Error 940: Cannot add physical address
+
+      Possible cause: The Macgate PC is unable to write to the
+      MSMAIL.GLB file in the PC Mail postoffice GLB directory or the
+      MSMAIL.NME file in the NME directory.
+
+      Novell users should also confirm that these files are not
+      ownerless.
+
+CONNECTION NAME UTILITY
+-----------------------
+
+  Exporting Macintosh directory to PC Mail: Error Occurred: Out of
+  memory
+
+      Possible cause: The Connection Name Utility requires more
+      memory allocated to it.
+
+      The Connection Name Utility has a suggested memory allocation
+      of 384K. Increase this amount if you are exporting a large
+      number of Macintosh names to PC Mail. Increase the Connection
+      Name Utility's memory allocation in the Get Info box by
+      increasing the Current Size value.
+
+   Error Occurred: No Gateway Selected.
+
+      Possible cause: The gateway is not selected from within the
+      Connection Name Utility.
+
+      To define the gateway, choose Select Gateway from the File
+      menu. From the Select Gateway configuration screen, highlight
+      the installed Mail Connection Gateway and click the Select
+      button.
+
+  Gateway Error 4992 (When exporting AppleTalk Mail names to PC Mail
+  via the Connection Name Utility)
+
+      Possible cause: The MS Mail GW Cache file in the Preferences
+      folder may be corrupt.
+
+      Restart the AppleTalk Mail server and hold down the "M" key
+      while the server starts up (to prevent the Microsoft Mail
+      server from loading). Delete the MS Mail GW Cache file and
+      restart the server again (don't hold down the "M" key this
+      time). Open the Chooser and select the MS Mail GW Chooser
+      document. Choose the gateway Microsoft Mail server and close
+      the Chooser; this will create a new MS Mail GW Cache file
+      (System 6.x users will find the MS Mail GW Cache file in the
+      root level of the System Folder.)
+
+APPLETALK MAIL
+--------------
+
+  All gateway messages sent from AppleTalk Mail are being returned to
+  the sender as "Undeliverable Mail"
+
+      Possible cause: Mail Connection is configured to accept
+      messages only from users who have gateway accounts.
+
+      The network manager can configure the Mail Connection to accept
+      gateway messages only from specific users whose names have been
+      added to a gateway access account list. To add users to the
+      gateway account list, choose Gateway from the Mail menu, then
+      choose Accounts. If a non-gateway user tries to send a message
+      through the Mail Connection, the message will be returned as
+      "undeliverable mail." The Mail Connection is initially
+      configured (by default) to accept gateway messages from any
+      AppleTalk Mail user.
+
+  Only some of the PC Mail names appear in the AppleTalk Mail address
+  list.
+
+      Possible cause: The AppleTalk Mail server has insufficient
+      memory allocated to hold the entire PC Mail address list.
+
+      The network manager must increase the Server Memory Allocation
+      in the Server Setting Configuration screen and restart the
+      AppleTalk Mail server. Import the PC Mail address list again
+      with the Connection Name Utility.
+
+   All messages received from PC Mail users are prefixed by the
+  following error message:
+
+     This message was sent using a custom form that is not installed
+     on your server. Some information from the original message may
+     not be displayed. To view the complete message, ask your Network
+     Manager to install the form on your server.
+
+      Possible cause: The 80 Column message form is not installed on
+      the AppleTalk Mail server.
+
+      All messages received from PC Mail are delivered using the 80
+      Column message form. Use the Forms Installer HyperCard stack to
+      add the 80 Column form to your AppleTalk Mail server.
+
+      NOTE: This error message will always prefix directory exchange
+      messages that are sent to the network manager. If the
+      Connection Name Utility is running, these messages will be
+      intercepted from the network manager's mailbox.
+
+PC MAIL
+-------
+
+  PC Mail users are unable to see the AppleTalk Mail address list.
+
+      Possible cause: The PC Mail users do not have "External"
+      privileges.
+
+      The PC Mail administrator must grant External privileges to
+      users who are authorized to send messages through the Mail
+      Connection Gateway.
+
+  Messages that are sent from the PC Mail 3.0 Windows client and
+  contain a file attachment are returned to the sender with the
+  message "Error processing message - WINMAIL.DAT".
+
+      Possible cause: An older version of the Mail Connection gateway
+      is loaded on the AppleTalk Mail server.
+
+      Upgrade your Mail Connection gateway to version 1.0b. Use the
+      Update Gateway option of the Gateway Installer application to
+      install the updated Macintosh component of the Mail Connection.
+
+TO OBTAIN THIS APPLICATION NOTE
+-------------------------------
+
+You can find WA0728.EXE, a self-extracting file, on the following services:
+
+- Microsoft's World Wide Web Site on the Internet
+  On the www.microsoft.com home page, click the Support icon.
+  Click Knowledge Base, and select the product.
+  Enter kbfile WA0728.EXE, and click GO!
+  Open the article, and click the button to download the file.
+
+- Internet (anonymous FTP)
+  ftp ftp.microsoft.com
+  Change to the Softlib/Mslfiles folder.
+  Get WA0728.EXE
+
+- The Microsoft Network
+  On the Edit menu, click Go To, and then click Other Location.
+  Type "mssupport" (without the quotation marks).
+  Double-click the MS Software Library icon.
+  Find the appropriate product area.
+  Locate and Download WA0728.EXE.
+
+
+  For additional information about downloading, please see the following article
+  in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+- If you are unable to access the source(s) listed above, you can have this
+  Application Note mailed to you by calling Microsoft Product Support Services
+  Monday through Friday, 6:00 A.M. to 6:00 P.M. Pacific time at (800) 936-4400.
+  If you are outside the United States, contact the Microsoft subsidiary for
+  your area. To locate your subsidiary, call the Microsoft International Sales
+  Information Center at (206) 936-8661.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100b
+Version           : :1.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

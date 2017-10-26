@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/280/Q280513/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/280/Q280513/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/280/Q280513/","publisher":null,"image":null,"headline":"Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q280513-prb-vb6-app-has-run-time-error-3633-when-run-on-new-computer">Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q280513
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbDeployment kbGrpDSVBDB kbGrpDSMDAC kbDSupport
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build setup disks for a Microsoft Jet-based database application with
+the Package and Deployment Wizard (PDW), the Package and Deployment Wizard does
+not include the Microsoft Jet database engine files. When you install the
+application and try to run it, you get the following error message:
+
+  Run-time error '3633'
+
+CAUSE
+=====
+
+The Package and Deployment Wizard does not know to add the Microsoft Jet 4.0
+database engine if you are using the Microsoft DAO 3.6 Object Library.
+
+RESOLUTION
+==========
+
+Add the MDAC_TYP.EXE to your setup package.
+
+NOTE: MDAC 2.6 and later no longer include the Jet engine. If you are using MDAC
+2.6 or higher, you need to use the Jet redistribution pack.
+
+For more information about downloading the Jet redistribution for use with your
+application, see the following Microsoft Web site at:
+
+  http://www.microsoft.com/data
+
+MORE INFORMATION
+================
+
+This problem does not occur on Windows 2000-based computers or computers that
+have Microsoft Office 2000 installed. To reproduce the problem, install the
+following application that is created on a clean installation of Microsoft
+Windows 98, Microsoft Windows 95. or Microsoft Windows NT 4.0 SP3.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new application and add a reference to the Microsoft DAO 3.6 Object
+  Library.
+
+2. Create setup disks by using the Package and Deployment Wizard.
+
+3. Install the application on a new computer that does not already have Jet
+  installed.
+
+4. Run the application, and note that you receive the error message.
+
+5. Repeat the preceding steps, but add a reference to the Microsoft DAO 3.5
+  Object Library. Note that the application runs correctly.
+
+REFERENCES
+==========
+
+For more information about Jet 4.0 and DAO 3.6, see the following MSDN Web site
+at:
+
+  http://msdn.microsoft.com
+
+Additional query words: 3633
+
+======================================================================
+Keywords          : kbDeployment kbGrpDSVBDB kbGrpDSMDAC kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

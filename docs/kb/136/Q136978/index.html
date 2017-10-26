@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136978: How to Refresh a Formset by Using Commands Outside of the Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136978: How to Refresh a Formset by Using Commands Outside of the Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136978/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136978/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136978/","publisher":null,"image":null,"headline":"Q136978: How to Refresh a Formset by Using Commands Outside of the Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136978-how-to-refresh-a-formset-by-using-commands-outside-of-the-form">Q136978: How to Refresh a Formset by Using Commands Outside of the Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136978
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When moving the record pointer in a table whose fields belong to an active form,
+the form will not refresh if the command that moved the record pointer was
+issued from a menu or the Command window. For example, if there is a menu item
+issues a SKIP command, the record pointer will move but the form will not
+refresh.
+
+To have your application menu item move the record pointer and refresh the form,
+use the SKIP command to move the record pointer. and then use the
+_SCREEN.FORMCOUNT and _SCREEN.FORMS().REFRESH commands to refresh a form or
+formset correctly.
+
+MORE INFORMATION
+================
+
+If the active form on the screen is a form and not a formset, you can use the
+_SCREEN.ACTIVEFORM.REFRESH command alone from the menu or Command window to
+refresh the form. However, if the form could be a form or a formset, it is best
+to make your refresh code generic, so it fits both cases.
+
+The _SCREEN.FORMCOUNT command returns the number of forms on the screen, so it
+allows you to refresh each form whether a single form or a formset. Then you can
+use the FORMS() array to refresh each form if a formset is active. The FORMS()
+array is created when the forms start up. It is internal to Visual FoxPro. By
+putting these commands in a FOR loop, you can refresh a form or formset from a
+menu action.
+
+For additional information about a form that uses toolbars, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q136277 FormCount Property Does Not Count Toolbars in a Formset
+
+Step-by-Step Example
+--------------------
+
+1. Create a formset with two pages, and place a field from a table on each page.
+
+2. Run the form, and place the two forms side by side.
+
+3. Type the SKIP command in the Command window and press ENTER. Note that the
+  fields on each form do not change.
+
+4. Type the _SCREEN.FORMS(1).REFRESH command in the Command window and press
+  ENTER. Note that the second form refreshes. This is because the name of the
+  last form in the formset is placed in the first FORMS array element. Issuing
+  the _SCREEN.FORMS(2).REFRESH command will refresh the other form.
+
+5. If the SKIP command is used in a menu, place the following code in the menu
+  item's procedure:
+
+     SKIP
+     FOR x = 1 TO _SCREEN.FORMCOUNT
+        _SCREEN.FORMS(x).REFRESH
+     ENDFOR
+
+  This will refresh any form or formset that is active at the time when the user
+  clicks that menu item.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

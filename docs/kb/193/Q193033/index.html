@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193033: Troubleshooting IPX Connectivity | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193033: Troubleshooting IPX Connectivity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193033/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193033/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193033/","publisher":null,"image":null,"headline":"Q193033: Troubleshooting IPX Connectivity","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193033-troubleshooting-ipx-connectivity">Q193033: Troubleshooting IPX Connectivity</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193033
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft BackOffice Server 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are using Client Services for NetWare (CSNW) or Gateway Services for
+NetWare (GSNW), you may experience slow performance, or you may not be able to
+connect to or browse other clients and servers running the IPX protocol.
+
+MORE INFORMATION
+================
+
+To troubleshoot the most frequent causes of this behavior, try the following:
+
+1. In Windows NT, go into Control Panel. Click Network, Protocol, NWLink
+  IPX/SPX, and Properties.
+
+2. If the Frame Type is set for "Auto," change it to force the computer to use
+  the same Frame Type and Network Number of Novell server.
+
+3. To determine the configured Frame Type and Network Number on the Novell
+  server, you can do one of two things. Either run the Novell utility,
+  RCONSOLE, remotely, and go to the System Prompt. Or, from the Novell server's
+  console, go to the System Prompt. Run the command CONFIG. You will get the
+  following results:
+
+  NOTE: Your Network numbers, server name and frame type may vary from those
+  shown below. This is only an example of what the Novell CONFIG command
+  displays.
+
+  RED_DOG:config
+
+        File server name: RED_DOG
+        IPX internal network number: 0FA41030
+        Intel EtherExpress(tm) 16
+        Version 2.26    May 20, 1993
+        Hardware setting: I/O Port 300h to 30Fh, Interrupt 5h
+        Node address: 00AA00342846
+        Frame type: ETHERNET_802.2
+        No board name defined
+        LAN protocol: IPX network 9D396800
+
+Notice the "Frame Type (Ethernet_802.2)" on your Novell server, and the "LAN
+Protocol: IPX Network 9D396800." You will use these numbers to configure the
+Windows NT computers.
+
+On a Computer Running CSNW
+--------------------------
+
+Go into Control Panel. Click Network, Protocol, NWLink IPX/SPX, and click
+Properties. In the field for Frame Type, choose the frame type that matches
+"Frame Type" on the Novell server. In the field for "Network Number," enter the
+number that matches the "IPX Network" number on the Novell server.
+
+On a Computer Running GSNW
+--------------------------
+
+Go into Control Panel. Click Network, Protocol, NWLink IPX/SPX, and click
+Properties. Choose the radio (option) button for Manual Frame Type Detection.
+Choose the ADD button. Choose the frame type that matches "Frame Type" on the
+Novell server. In the field for "Network Number," enter the number that matches
+the "IPX Network" number on the Novell server.
+
+1. Your trouble with slow performance or the inability to connect or browse
+  other clients and servers running the IPX protocol should disappear.
+
+2. If clients or servers are across a router, ensure that Type 20 Packets on the
+  router are enabled in both directions. Type 20 Packets are not enabled by
+  default on routers. Contact the router vendor for information on how to check
+  or manipulate this setting.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWinNTS350search kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400
+Version           : winnt:3.5,3.51,4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

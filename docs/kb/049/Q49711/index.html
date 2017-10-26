@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q49711: SUB Not Defined; Change CALL MOUSE to MOUSES in MS Press Book | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q49711: SUB Not Defined; Change CALL MOUSE to MOUSES in MS Press Book" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/049/Q49711/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/049/Q49711/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/049/Q49711/","publisher":null,"image":null,"headline":"Q49711: SUB Not Defined; Change CALL MOUSE to MOUSES in MS Press Book","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q49711-sub-not-defined-change-call-mouse-to-mouses-in-ms-press-book">Q49711: SUB Not Defined; Change CALL MOUSE to MOUSES in MS Press Book</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q49711
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891002-77 docerr B_BasicCom H_DriverPR H_Mouse | mspl13_basic
+Last Modified: 13-DEC-1989
+
+As specified in the README.TXT file on Disk 2 of the companion disks
+to the "Microsoft Mouse Programmer's Reference" (a Microsoft Press
+release, 1989), the MOUSE routine in MOUSE.LIB has been changed to
+MOUSES (and to MOUSEL, which is not mentioned in the README.TXT).
+MOUSES and MOUSEL are the small- and large-model implementations of
+mouse calls, respectively, and are contained in MOUSE.LIB, which comes
+on the companion disks.
+
+The change of MOUSE to MOUSES affects QuickBASIC Versions 4.00, 4.00b,
+and 4.50 examples in the "Microsoft Mouse Programmer's Reference" that
+call MOUSE through building the QBMOUSE.QLB file (using MOUSE.LIB).
+After creating the QBMOUSE.QLB and trying to execute QBMOU.BAS,
+MOUSE.BAS, PENCIL.BAS, or QBTEST.BAS (from the disk or book), the
+following QuickBASIC error occurs on reference to MOUSE:
+
+   "Subprogram not defined"
+
+This error occurs because there is no routine named MOUSE in
+MOUSE.LIB. To work around this problem, change the CALL (or implied
+CALL) and DECLARE statements from MOUSE to MOUSES or MOUSEL.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 and to Microsoft BASIC Compiler 6.00, and 6.00b for MS-DOS, and
+Microsoft BASIC PDS 7.00 for MS-DOS.
+
+The following specific corrections apply to "Microsoft Mouse
+Programmer's Reference" (published by Microsoft Press, 1989):
+
+1. On Pages 220, 222, 223, and in MOUSE.BAS on the companion disk,
+   change all occurrences of
+
+      CALL MOUSE(m1%, m2%, m3%, m4%)   ' Gives "Subprogram not defined"
+
+   to the following:
+
+      CALL MOUSES(m1%, m2%, m3%, m4%)  ' Small-model mouse CALL works OK
+   or
+      CALL MOUSEL(m1%, m2%, m3%, m4%)  ' Large-model mouse CALL works OK
+
+2. On Pages 212, 213, 214, and in QBMOU.BAS, QBTEST.BAS, and
+   PENCIL.BAS on the companion disk, change all occurrences of
+
+      MOUSE m1, m2, m3, m4         ' Gives "Subprogram not defined"
+
+   to the following:
+
+      MOUSES m1, m2, m3, m4        ' Implicit CALL OK
+   or
+      MOUSEL m1, m2, m3, m4        ' Implicit CALL OK
+
+3. On Pages 214 and 221, and in the QBMOU.BAS, MOUSE.BAS, PENCIL.BAS,
+   and QBTEST.BAS programs on the companion disk, change the DECLARE
+   SUB MOUSE statements to DECLARE SUB MOUSES or DECLARE SUB MOUSEL.
+
+Recommended Method to Call Mouse Functions
+------------------------------------------
+
+As an alternative to linking with the MOUSE.LIB library that is
+provided with the "Microsoft Mouse Programmer's Reference," Microsoft
+recommends the BASIC procedure below to provide the mouse interface.
+This routine uses the CALL INTERRUPT statement to access the mouse via
+interrupt 51.
+
+DEFINT A-Z
+REM $INCLUDE: 'QB.BI'
+REM When using this code in BASIC PDS 7.00, it is necessary
+REM to include the 'QBX.BI' file instead of QB.BI.
+SUB mouse (m0, m1, m2, m3) STATIC
+DIM inregs AS RegType, outregs AS RegType
+    inregs.ax = m0    'Load the registers
+    inregs.bx = m1
+    inregs.cx = m2
+    inregs.dx = m3
+    CALL INTERRUPT(51, inregs, outregs)
+    m0 = outregs.ax
+    m1 = outregs.bx   'Return values from driver
+    m2 = outregs.cx
+    m3 = outregs.dx
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

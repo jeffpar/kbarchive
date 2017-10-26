@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162686: Problems with Incorrect #9FX Reality 332 Video Card | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162686: Problems with Incorrect #9FX Reality 332 Video Card" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162686/","publisher":null,"image":null,"headline":"Q162686: Problems with Incorrect #9FX Reality 332 Video Card","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162686-problems-with-incorrect-9fx-reality-332-video-card">Q162686: Problems with Incorrect #9FX Reality 332 Video Card</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162686
+Product(s): Microsoft Windows NT
+Version(s): WINNT:3.51
+Operating System(s): 
+Keyword(s): kbdisplay kbhw kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After applying any service pack to a computer outfitted with a #9FX Reality 332
+video card that requires a third-party driver, the computer restarts to a black
+screen and stops responding. This will also happen if an Emergency Repair Disk
+(ERD) is run against the computer for repair purposes. Starting the computer to
+VGA mode allows the computer to start; however, using the Last Known Good
+Configuration will not.
+
+Some Dell Dimensions XPS Pro 200 computers come with this video card, and exhibit
+this problem.
+
+The problem occurs if both of the following conditions are true:
+
+- Windows NT 3.51 was initially installed using the third-party video driver.
+
+- The video card is set for at least 1280 X 768 resolution and 256 colors.
+
+CAUSE
+=====
+
+The #9FX Reality 332 video card is based on the S3 chipset and uses a set of
+drivers with the same name as the standard S3 compatible video card; S3.sys and
+S3.dll. However, the drivers that come with Windows NT 3.51 and its service
+packs are not 100 percent compatible with this video adapter. When applying the
+service pack or running an ERD, these files are replaced by the standard S3
+drivers, which cause the computer to fail. When Windows NT 3.51 is preinstalled
+by the manufacturer, the standard S3 driver is not used. The Last Known Good
+startup option does not work because the last successful restart included
+drivers with the same name as the failed attempt.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Obtain the correct drivers from Number Nine Visual Technology. You can obtain
+  these drivers by connecting to http://www.nine.com/drivers.html and
+  downloading the 325n3009.exe file.
+
+2. Start the computer to VGA mode.
+
+3. Install the newer drivers.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt hang hung freeze frozen chip set
+======================================================================
+Keywords          : kbdisplay kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WINNT:3.51
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

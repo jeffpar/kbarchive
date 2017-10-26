@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314746/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314746/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314746/","publisher":null,"image":null,"headline":"Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314746-bug-access-violation-occurs-in-ado-when-you-run-executable-file">Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314746
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1,2.5,2.6,2.7,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB kbGrpDSMDAC kbDSupport
+Last Modified: 02-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- ActiveX Data Objects (ADO), versions 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive an access violation in ADO under the following circumstances:
+
+1. Call the Debug.Print method on certain properties of the ADO Recordset
+  object.
+
+2. Compile the project.
+
+3. Run the file as an executable (.exe) file.
+
+CAUSE
+=====
+
+This problem occurs because the compiler does not remove the Debug.Print
+statement correctly.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+- Remove the Debug.Print statement from the code.
+
+- Store the property value in a variable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic.
+
+2. Add two CommandButton controls to the form. Specify the caption "Open
+  Recordset" for Command1. Specify the caption "Close Application" for
+  Command2.
+
+3. On the Project menu, click Reference, and then select the "Microsoft ActiveX
+  Data Object 2.x" check box.
+
+4. Add the following code to the form:
+
+  Option Explicit
+  Dim cn As ADODB.Connection
+
+  Private Sub Command1_Click()
+      Dim rs As ADODB.Recordset
+      Set rs = New ADODB.Recordset
+      
+      rs.Open "Select * from Customers", cn, adOpenDynamic, adLockBatchOptimistic
+      
+      Debug.Print "Update: " &amp; rs.EOF
+      
+      rs.Close
+      Set rs = Nothing
+      
+  End Sub
+
+  Private Sub Command2_Click()
+      Unload Me
+  End Sub
+
+  Private Sub Form_Load()
+      Set cn = New ADODB.Connection
+      cn.Open "User ID=sa;password=sa;Initial Catalog=pubs;Data Source=mySQLServer"
+  End Sub
+
+5. Modify the connection string as appropriate for your environment.
+
+6. Compile and run the executable file.
+
+7. Click Open Recordset.
+
+8. Click Close Application. Notice that an access violation occurs.
+
+9. To resolve this problem, use one of the following methods:
+
+   - Comment out the Debug.Print line of code, and then repeat steps 5 through
+     7.
+
+   - Replace the code
+
+      Debug.Print "Update: " &amp; rs.EOF
+
+     with the following code:
+
+  Dim b as boolean
+  b = rs.eof
+  Debug.Print "Update: " &amp; b
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVBDB kbGrpDSMDAC kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVB600SP3 kbVB600SP4 kbVB600SP5 kbADO260SP1 kbADO270
+Version           : :2.1,2.5,2.6,2.7,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

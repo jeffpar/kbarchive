@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175638: FTP Login Using Domain and Trusted Domain Accounts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175638: FTP Login Using Domain and Trusted Domain Accounts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175638/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175638/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175638/","publisher":null,"image":null,"headline":"Q175638: FTP Login Using Domain and Trusted Domain Accounts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175638-ftp-login-using-domain-and-trusted-domain-accounts">Q175638: FTP Login Using Domain and Trusted Domain Accounts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175638
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FTP server on a member server computer running Windows NT 4.0 (non- domain
+controller) can validate users using a domain accounts database or the local
+machine accounts database. The FTP server on a Windows NT 4.0 Domain Controller
+can validate users using the local domain accounts database or a trusted domain
+accounts database. However, the guest account setting on the FTP server's local
+machine accounts database and its domain accounts database must be disabled.
+
+MORE INFORMATION
+================
+
+Local accounts database validation is the default validation method for FTP
+servers. The FTP client is validated against the FTP server's local machine
+accounts database.
+
+Local domain accounts database validation occurs if the FTP server is a domain
+controller, the local domain users do not supply their domain-name in
+conjunction with their user name. This is because the local domain accounts
+database is also the local machine accounts database for a domain controller.
+
+Local domain accounts database validation can be enabled on an FTP server which
+is a Windows NT Member Server by adding the registry entries:
+"DefaultLogonDomain: REG_SZ:"MyDomainName" as described in the following
+Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q139341
+TITLE : FTP Server Interaction with Guest Account
+
+However, this setting limits accessibility to local domain users only.
+
+Trusted domain and local domain accounts databases can be used for validation
+when users log on to an FTP server. Users log on to the FTP server using their
+local domain account or trusted domain account. This is accomplished by having
+them log on with their user name in the format
+&lt;domain-name&gt;\&lt;username&gt; and then providing their password. The FTP
+server will either check the local domain accounts database or will use pass-
+through validation to the trusted domain. If the FTP server is a domain
+controller, then local domain users do not supply their domain name, only their
+user name. If the FTP server is a member server, then the domain name must be
+used to validate against a local domain accounts database, as well as a trusted
+domain accounts database.
+
+For a proper log on attempt using a user account in all of the above scenarios,
+the guest account settings in the FTP server's local machines account database
+and its own domain account database must be disabled. The disabled setting is
+needed to require users to use their log on account and password.
+
+WARNING:
+
+Ftp passwords are sent on the net in "clear text" and are easily stolen,
+especially on the Internet. For this reason, many people set up ftp for
+"anonymous only" access, and use file sharing if write access is needed.
+
+Additional query words: winnt file transfer protocol trusting
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis300 kbiis200
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

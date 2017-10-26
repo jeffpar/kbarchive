@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141548/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141548/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141548/","publisher":null,"image":null,"headline":"Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141548-prb-16-bit-visual-basic-requires-16-bit-sourcesafe">Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141548
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,95; winnt:4.0
+Operating System(s): 
+Keyword(s): kbSSafe400
+Last Modified: 22-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SourceSafe for Windows NT, version 4.0 
+- Microsoft SourceSafe for Windows, versions 95, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the 16-bit version of Visual Basic is initially started or the Source Code
+Control Add-In check box is selected in the Visual Basic Add-In Manager when a
+standalone version of Visual SourceSafe has been installed under a 32-bit
+operating system, the following message and prompt results:
+
+  'Source Code Control Add-In' could not be loaded. Remove it from the list of
+  available Add-Ins?
+
+CAUSE
+=====
+
+There are two possible causes:
+
+- During installation of Visual SourceSafe, the Vb.ini file was not updated to
+  reflect the 16-bit Source Control Code Add-In entry. (This may occur even in
+  the Visual Basic Enterprise edition after the installation of the Visual
+  Basic 16-bit version and a subsequent Visual SourceSafe Client installation.)
+
+-or-
+
+- In the standalone version, Visual SourceSafe usually installs only the 32-bit
+  version on a 32-bit operating system, so the missing 16-bit version is the
+  source of the problem.
+
+RESOLUTION
+==========
+
+If the 16-bit version of the Visual SourceSafe client has not been loaded, you
+need to uninstall the SourceSafe 32-bit client and then reinstall it using the
+Custom option so that you can tell it to load the 16-bit as well as the MS-DOS
+versions.
+
+If the 16-bit version of Visual SourceSafe is already installed, run
+Win\Ssint.exe to update the &lt;WINDOWS folder&gt; or the Vb.ini file.
+
+MORE INFORMATION
+================
+
+Visual SourceSafe 4.0, which ships with Visual Basic 3.0 Enterprise Edition has
+a different Client setup (netsetup) from the standalone version. Instead of two
+buttons (one for 32-bit and one for custom), there is only one button (for all)
+that installs both the 16-bit and 32-bit versions of Visual SourceSafe on 16-
+and 32-bit operating systems.
+
+In the standalone version of Visual SourceSafe, there are two buttons. The
+non-custom button loads the 32-bit version only on a 32-bit operating system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3
+Version           : WINDOWS:4.0,95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

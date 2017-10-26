@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201577/","publisher":null,"image":null,"headline":"Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201577-bug-treeview-scroll-bar-does-not-disappear-when-scroll--false">Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201577
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbAPI kbCmnCtrls kbCtrl kbSDKWin32 kbTreeView kbVBp kbGrpDSVB kbDSupport
+Last Modified: 24-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, used with:
+   - Microsoft Windows 95 
+   - Microsoft Windows 98 
+   - Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0, used with:
+   - Microsoft Windows 95 
+   - Microsoft Windows 98 
+   - Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0, used with:
+   - Microsoft Windows 95 
+   - Microsoft Windows 98 
+   - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set the Scroll property of the TreeView control from Microsoft Windows
+Common Controls (Mscomctl.ocx) to False at run time, the scroll bar does not
+disappear as expected.
+
+RESOLUTION
+==========
+
+To work around this problem, call the ShowScrollBar function instead of using
+the Scroll property. The following example demonstrates how to use the
+ShowScrollBar function:
+
+1. Open a new Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. On the Project menu, click Components, select the "Microsoft Windows Common
+  Controls 6.0" check box, and then click OK.
+
+3. Add a TreeView control (TreeView1) and a CheckBox control (Check1) to Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+
+  Private Const SB_VERT = 1
+
+  Private Declare Function ShowScrollBar Lib "user32" _
+      (ByVal hWnd As Long, ByVal wBar As Long, ByVal bShow As Long) As Long
+
+  Private Sub Check1_Click()
+  ' The reference to CBool is not required but is used to enhance clarity.
+      Call ShowScrollBar(TreeView1.hWnd, SB_VERT, CBool(Check1.Value))
+  End Sub
+
+  Private Sub Form_Load()
+      Dim i As Integer
+      For i = 1 To 20
+          TreeView1.Nodes.Add , , , "Item " &amp; i
+      Next i
+      Check1.Caption = "Show Scroll Bar"
+      Check1.Value = vbChecked
+  End Sub
+
+5. Run the code, and notice that a vertical scroll bar appears on the TreeView
+  control.
+
+6. Click Show Scroll Bar, and notice that the scroll bar disappears. Click Show
+  Scroll Bar again, and notice that the scroll bar re-appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the TreeView control from
+Microsoft Windows Common Controls (Mscomctl.ocx) under Windows 95, Windows 98,
+and Windows Millennium Edition.
+
+NOTE: This problem does not occur under Windows NT 4.0 and Windows 2000.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: You must perform these steps on a computer that is running Windows 95,
+Windows 98, or Windows Millennium Edition (Me).
+
+1. Open a new Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. On the Project menu, click Components. In the Components dialog box, select
+  the "Microsoft Windows Common Controls 6.0" check box, and then click OK.
+
+3. Add a TreeView control (TreeView1) and a CommandButton control (Command1) to
+  Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+
+  Private Sub Command1_Click()
+      TreeView1.Scroll = False
+  End Sub
+
+  Private Sub Form_Load()
+      Dim i As Integer
+      For i = 1 To 20
+          TreeView1.Nodes.Add , , , "Item " &amp; i
+      Next i
+      Command1.Caption = "Hide Scroll Bar"
+  End Sub
+
+5. Run the code, and notice that a vertical scroll bar appears on the TreeView
+  control.
+
+6. Click Hide Scroll Bar, and notice that the scroll bar is still displayed.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q189249 HOWTO: Determine Which 32-Bit Windows Version Is Being Used
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbCmnCtrls kbCtrl kbSDKWin32 kbTreeView kbVBp kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

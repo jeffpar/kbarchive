@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135405/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135405/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135405/","publisher":null,"image":null,"headline":"Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135405-repairing-a-corrupted-wins-database-w-starting-version-count">Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135405
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how you may increase the Starting Version Count within
+WINS preferences to repair WINS database corruption.
+
+MORE INFORMATION
+================
+
+To repair WINS database corruption, you may modify the Starting Version Count
+(also called Starting Version ID) within WINS preferences to increase the
+Highest Version ID of the Local Database. You may set this Starting Version ID
+only to a higher value than the existing Highest Version ID. After you set it to
+a higher value you may not lower it without deleting the databases.
+
+NOTE: Although the terms Starting Version ID and Highest Version ID contain the
+word Version they do not refer to a particular released version of the product,
+but to the number of entries in the WINS database. Therefore, you may use any
+number that is a higher value than the current Starting Version ID. For
+additional information, refer to the EXAMPLES section below.
+
+To modify the Starting Version ID in the registry:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Under the subtree HKEY_LOCAL_MACHINE, select the following subkey:
+
+  \System\CurrentControlSet\Services\WINS\Parameters
+
+  The following parameters for the Starting Version count appear:
+
+  VersCounterStartVal_LowWord: REG_DWORD
+  VersCounterStartVal_HighWord: REG_DWORD
+
+2. Select the parameter you want to modify. If you are unsure about which
+  parameter to select, read the EXAMPLES section below.
+
+3. From the Edit menu, choose DWORD.
+
+4. Type the higher hexadecimal value and choose OK.
+
+EXAMPLES
+--------
+
+A Starting Version ID of FF78 hexadecimal (hex) appears as:
+
+  VersCounterStartVal_LowWord: REG_DWORD:0x0000FF78
+  VersCounterStartVal_HighWord: REG_DWORD:0x00000000
+
+To increment this number, change the VersCounterStartVal_LowWord value to FF79.
+
+As the number of database entries grows the VersCounterStartVal_LowWord value
+increases until it reaches 0xFFFFFFFF hex that is the maximum number for a
+double word hexadecimal value. If you want to increment this number by one, you
+need to start using the VersCounterStartVal_HighWord counter. For the starting
+Version ID of 100000000 hex, both parameters appear as follows:
+
+  VersCounterStartVal_LowWord: REG_DWORD:0x00000000
+  VersCounterStartVal_HighWord: REG_DWORD:0x00000001
+
+A Starting Version ID of 100000001 hex appears as:
+
+  VersCounterStartVal_LowWord: REG_DWORD:0x00000001
+  VersCounterStartVal_HighWord: REG_DWORD:0x00000001
+
+A Starting Version ID of 12FF6F782B3 hex appears as:
+
+  VersCounterStartVal_LowWord: REG_DWORD:0xF6F782B3
+  VersCounterStartVal_HighWord: REG_DWORD:0x0000012F
+
+Additional query words: prodnt tcp/ip tcpip
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

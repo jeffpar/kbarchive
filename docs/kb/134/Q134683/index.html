@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134683: Scenes 2.0: Manual Installation Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134683: Scenes 2.0: Manual Installation Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134683/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134683/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134683/","publisher":null,"image":null,"headline":"Q134683: Scenes 2.0: Manual Installation Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134683-scenes-20-manual-installation-instructions">Q134683: Scenes 2.0: Manual Installation Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134683
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 2.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Scenes (all collections), version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the manual installation procedure for Microsoft Scenes
+2.0.
+
+MORE INFORMATION
+================
+
+================
+
+The following are steps assume:
+
+- Windows is installed into C:\Windows
+- you're installing Scenes to C:\Scenes
+- and the collection you're installing is the Hollywood Collection from
+  floppy drive A.
+
+These steps involve creating folders and directories and copying and moving
+files. For more information about how to accomplish these tasks in Windows,
+see your Windows printed documentation or online help.
+
+To manually install Scenes, do the following:
+
+1. Create a Scenes folder on the hard drive. At the MS-DOS command prompt,
+   type the following and press ENTER:
+
+      c:\&gt;md scenes
+
+2. Create a Picsets folder under the Scenes folder. At the MS-DOS command
+   prompt, type the following and press ENTER:
+
+      c:\scenes&gt;md picsets
+
+3. Create a Hollywoo folder under the Scenes\Picsets folders. At the
+   MS-DOS command prompt, type the following and press ENTER:
+
+      c:\scenes\picsets&gt;md hollywoo
+
+4. Expand the following files from Disk 1 to the C:\Scenes folder:
+
+      Scenes.ex_
+      Scenes.hl_
+      Msswiz.dl_
+
+   For example, to expand Scenes.ex_, type the following at the MS-DOS
+   command prompt and press ENTER:
+
+      c:\scenes&gt;expand a:\scenes.ex_ scenes.exe
+
+5. Copy the Readme.txt file from Disk 1 to the C:\Scenes folder.
+
+      c:\scenes&gt;copy a:\readme.txt
+
+6. Expand the following files from Disk 1 to the C:\Windows folder:
+
+      Msscmn.Dl_
+      Msscenes.Sc_
+      Scenes2.In_
+
+   For example, to expand Msscmn.Dl_, type the following at the MS-DOS
+   command prompt and press ENTER:
+
+      c:\windows&gt;expand a:\msscmn.dl_ msscmn.dll
+
+7. Expand the following files from Disk 1 to the C:\Windows\System folder:
+
+      Pcdlib.dl_
+      Ctl3dv2.dl_
+
+   For example, to expand Pcdlib.dl_, type the following at the MS-DOS
+   command prompt and press ENTER:
+
+      c:\windows\system&gt;expand a:\pcdlib.dl_ pcdlib.dll
+
+8. Expand Collectn.sa_ from Disk 2 to the C:\Scenes\Picsets\Hollywoo
+   folder by using the following example.
+
+   For example, type the following at the MS-DOS command prompt and press
+   ENTER:
+
+      c:\scenes\picsets\hollywoo&gt;expand a:\collectn.sa_ collectn.sac
+
+9. Expand all of the ..jp files from Disk 1 to the
+   C:\Scenes\Picsets\Hollywoo folder. For example, type the following at
+   the MS-DOS command prompt and press ENTER:
+
+      c:\scenes\picsets\hollywoo&gt;expand a:\*.jp_ *.*
+
+   When prompted for destination directory (folder), type:
+
+      c:\scenes\picsets\hollywoo
+
+10. Rename all *.jp_ files in the C:\Scenes\Picsets\Hollywoo
+   folder to  *.jpg. For example,
+
+      c:\scenes\picsets\hollywoo&gt;rename *.jp_ *.jpg
+
+11. Repeat steps 9 and 10 for Disk 2.
+
+12. Expand all of the .th_ files from Disk 1 to the
+   C:\Scenes\Picsets\Hollywoo folder. For example,
+
+      c:\scenes\picsets\hollywoo&gt;expand a:\*.th_ *.*
+
+   When you are prompted for destination directory (or folder) type:
+
+      c:\scenes\picsets\hollywoo
+
+13. Rename all of the *.th_ files in the C:\Scenes\Picsets\Hollywoo
+   folder too *.thm. For example,
+
+      c:\scenes\picsets\hollywoo&gt;rename *.th_ *.thm
+
+14. Repeat steps 12 and 13 for Disk 2.
+
+15. Expand all .nf_ files from Disk 1 to the C:\Scenes\Picsets\Hollywoo
+   folder. For example:
+
+      c:\scenes\picsets\hollywoo&gt;expand a:\*.nf_ *.*
+
+   When prompted for destination directory, type:
+
+      c:\scenes\picsets\hollywoo
+
+16. Rename all of the *.nf_ files in the C:\Scenes\Picsets\Hollywoo
+   folder to *.nfo. For example:
+
+      c:\scenes\picsets\hollywoo&gt;rename *.nf_ *.nfo
+
+17. Repeat steps 15 and 16 for Disk 2.
+
+18. In Windows 95, create a shortcut for Scenes by using the following
+   steps:
+
+   a.  From the Start menu, select Settings - Taskbar.
+   b.  Click the Start Menu Programs tab.
+   c.  Click the Add button.
+   d.  Type in 'c:\scenes\scenes.exe' on the Command Line and press Enter.
+   e.  Click the New Folder button.
+   f.  Type in 'Microsoft Scenes' and press Enter.
+   g.  Where it says 'Select a name for the shortcut', type in 'Microsoft
+       Scenes' and press Enter.
+   h.  Click the OK button to close the Taskbar Properties dialog box.
+   i.  Skip to step 21.
+
+19. In Windows 3.1, create a new group in Program Manager for Scenes by
+   using the following steps:
+
+   a.  On File menu in Program Manager, click New.
+   b.  Click Program Group. Click OK.
+   c.  In the Description box, type Microsoft Scenes. Click OK.
+
+20. In Windows 3.1, create a new program item for Scenes by using the
+   following steps.
+
+   a.  On File menu in Program Manager, click New.
+   b.  Click Program Item, OK.
+   c.  In the Description box, type Microsoft Scenes.
+   d.  In the Command box type "c:\scenes\scenes.exe" (without the
+       quotation marks) and click OK.
+
+21. Create icons for Scenes on-line help and Readme.txt using step 19 as an
+   example.
+
+22. Run Scenes and ignore the error message.
+
+23. Run the Add A Collection To Scenes Wizard. Point the wizard to the
+   c:\scenes\picsets\hollywoo folder.
+
+Additional query words: kbhowto installation msscenes screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes200
+Version           : 2.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

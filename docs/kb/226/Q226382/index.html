@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226382/","publisher":null,"image":null,"headline":"Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226382-xweb-www-service-crash-causes-server-unavailable-errors-wwlbs">Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226382
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are connected with a browser to an Outlook Web Access (OWA) server, the
+following error messages may be displayed if this server is also a part of a
+cluster of Windows Load Balancing Servers (WLBS), and the WWW publishing service
+has stopped:
+
+  Sorry! The Microsoft Exchange Server is down or the HTTP service has been
+  disabled by an administrator. Please try your request again later.
+
+-or-
+
+  HTTP/1.0 404 Object Not Found
+
+-or-
+
+The browser screen may be displayed as a white screen and the browser may also
+display an error similar to the following:
+
+  Host Not Found
+
+-or-
+
+  This page cannot be displayed.
+
+MORE INFORMATION
+================
+
+You may get the above error messages if the WWW service has failed on the server
+your client is connected to. After the service fails, you will be unable to
+connect to your Exchange Server computer using the OWA component. Even though
+the OWA server is a part of a WLBS cluster, the WLBS service is not aware that
+the service has stopped, and therefore, cannot redirect you to another on-line
+server. To use OWA to access your Exchange mailbox, you will have to close the
+browser and start again in order to connect to another OWA server.
+
+In version 2.2 for Windows NT 4.0, WLBS does not include application monitoring
+tools or features. Many leading monitoring tools on the market can be easily
+configured by an end-user to provide this support by creating an alert option
+specifically for WLBS. In the alert functions of many monitoring tools, an
+option is provided for running a script in addition to the standard "Page this
+number" or "E-mail this address" options. Using these scripts, WLBS can be tied
+into the existing monitoring infrastructure.
+
+For example, if the Internet Information Service (IIS) application on Server A
+does not respond for X seconds, then run the following script:
+
+  'wlbs stop (cluster IP address):(Server A's host ID or dedicated IP address)
+
+Some examples of third-party tools:
+
+- SiteScope by Freshwater Software (http://www.freshtech.com)
+- AppManager by NetIQ (http://www.netiq.com)
+- WhatsUp Gold by Ipswitch
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

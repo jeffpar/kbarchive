@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117687: INFO: Misplaced __declspec Causes Error C2062, C2059, or C4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117687: INFO: Misplaced __declspec Causes Error C2062, C2059, or C4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117687/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117687/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117687/","publisher":null,"image":null,"headline":"Q117687: INFO: Misplaced __declspec Causes Error C2062, C2059, or C4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117687-info-misplaced-__declspec-causes-error-c2062-c2059-or-c4">Q117687: INFO: Misplaced __declspec Causes Error C2062, C2059, or C4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117687
+Product(s): Microsoft C Compiler
+Version(s): 1.0,2.0,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbCompiler kbVC100 kbVC200 kbVC400 kbVC500 kbVC600
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Compiling a C or C++ source file that contains an incorrectly placed __declspec
+keyword may cause the compiler to issue a warning or error message. The possible
+messages and the version of the 32-bit compiler generating them are listed
+below:
+
+  Source     CL.EXE Version    Error/Warning
+
+  C          8.xx              error C2062: type 'int' unexpected
+  C++        8.xx              error C2059: syntax error :
+  '__declspec(Storage_Class_Attribute)'
+  C/C++      9.xx              error C2059: syntax error :
+  '__declspec(Storage_Class_Attribute)'
+  C          10.xx             error C2059: syntax error : 'type'
+  C++        10.xx             warning C4230: anachronism used :
+  modifiers/qualifiers interspersed, qualifier ignored
+
+where "Storage_Class_Attribute" is one of the following:
+
+- thread
+
+- naked
+
+- dllimport
+
+- dllexport
+
+MORE INFORMATION
+================
+
+The compiler is generating one of these error message because an extended
+storage-class attribute specified with the __declspec keyword has been placed
+incorrectly. The extended storage-class attribute must appear to the left of the
+calling-convention keyword, if a keyword is specified.
+
+The sample code shown below illustrates both the correct and incorrect placement
+of an extended storage-class attribute. In the declaration that fails, the
+__declspec keyword is placed after the __cdecl keyword. In the declaration that
+succeeds, the __declspec keyword is placed before the __cdecl keyword.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none to compile as C source
+  * /Tp to compile as C++ source (or use .cpp extension)
+  */ 
+
+    // This declaration will cause the C2062 and C2059 errors:
+    void __cdecl __declspec(dllexport) Function2(void);
+
+    // This declaration will compile successfully:
+    void __declspec(dllexport) __cdecl Function1(void);
+
+REFERENCES
+==========
+
+For more information, search the online documentation included with Visual C++,
+32-bit Edition, on "__declspec," "thread," "naked," "dllimport," "dllexport," or
+"storage-class attributes." For an in-depth discussion of these topics and more,
+see the "Programming Techniques" book in the Visual C++, 32-bit Edition,
+documentation set.
+
+Additional query words: 8.00 9.00 export
+
+======================================================================
+Keywords          : kberrmsg kbCompiler kbVC100 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC600 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : :1.0,2.0,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

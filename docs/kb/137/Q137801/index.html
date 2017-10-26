@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137801: Wrong Mouse Displayed in Mouse Properties | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137801: Wrong Mouse Displayed in Mouse Properties" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137801/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137801/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137801/","publisher":null,"image":null,"headline":"Q137801: Wrong Mouse Displayed in Mouse Properties","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137801-wrong-mouse-displayed-in-mouse-properties">Q137801: Wrong Mouse Displayed in Mouse Properties</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137801
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 14-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The General tab in Mouse properties may indicate that a PS/2-style mouse is
+installed, even though you are using a serial mouse.
+
+When this occurs, the PS/2 mouse port is displayed with an exclamation point in a
+yellow circle in Device Manager.
+
+CAUSE
+=====
+
+This behavior can occur if your computer has a PS/2 mouse port, but you are
+using a mouse connected to a serial port. The PS/2 mouse port is the first mouse
+port displayed in Device Manager, so the PS/2 mouse is displayed as the
+installed device in Mouse properties.
+
+RESOLUTION
+==========
+
+To correctly configure the mouse settings, follow these steps:
+
+1. Disable the PS/2 mouse port in your computer's CMOS settings. For information
+  about how to do so, please consult your computer's documentation or
+  manufacturer.
+
+  NOTES:
+
+   - This may not work if your computer is a Plug and Play system, as the PS/2
+     mouse port will be redetected and reenabled the next time you start
+     Windows 95.
+
+   - On some older computers, disabling the PS/2 mouse port may not be an
+     option in the CMOS settings. Instead, there may be a jumper on the
+     motherboard to disable the port. Consult the computer's documentation or
+     manufacturer if you are not sure how to disable the port.
+
+2. In Control Panel, double-click the System icon.
+
+3. On the Device Manager tab, click Standard PS/2 Port Mouse, and then click
+  Properties.
+
+4. Click the Original Configuration (Current) check box to clear it, and then
+  click OK.
+
+If you decide later to use the PS/2 mouse port, reenable the port in your
+computer's CMOS settings, and then run the Add New Hardware Wizard to redetect
+it in Windows 95.
+
+MORE INFORMATION
+================
+
+Some Plug and Play motherboards may actually have pinholes for a PS/2 mouse port
+but have no PS/2 mouse port installed. In some cases, there may be no CMOS
+settings or jumpers to disable the PS/2 mouse port. If this is the case,
+following steps 2-4 above may resolve the situation.
+
+Additional query words: ps2
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

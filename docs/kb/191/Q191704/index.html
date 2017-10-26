@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191704: PRB: Unable to Load File to Register It During Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191704: PRB: Unable to Load File to Register It During Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191704/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191704/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191704/","publisher":null,"image":null,"headline":"Q191704: PRB: Unable to Load File to Register It During Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191704-prb-unable-to-load-file-to-register-it-during-setup">Q191704: PRB: Unable to Load File to Register It During Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191704
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.5,2.6,6.0,95,98
+Operating System(s): 
+Keyword(s): kbwizard kbtophit kbADO200 kbAppSetup kbDatabase kbDCOM kbMDAC kbVBp kbFAQ kbGrpDSVBDB
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+- ActiveX Data Objects (ADO), versions 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating distribution files using the Package and Deployment Wizard (PDW)
+and then attempting to install the application on a Windows 95, Windows 98, or
+Windows Me computer, you may receive the following error:
+
+  Unable to load file "msdadc.dll" to register it
+
+Alternatively, you may see the error:
+
+  DLL registration failed
+
+CAUSE
+=====
+
+Installation of Microsoft Data Access Components (MDAC) requires installation of
+DCOM. Setup programs created with the Package and Deployment Wizard use the MDAC
+installer program, Mdac_typ.exe, to install the Microsoft Data Access
+Components, which include OLE DB, ADO, and Jet. Mdac_typ.exe requires that the
+target machine have DCOM installed on it.
+
+RESOLUTION
+==========
+
+To fix this problem, install DCOM on the target machine. Either DCOM95 or DCOM98
+can be used. The latest version of DCOM95 can be found at the following Web
+address:
+
+  Microsoft COM at http://www.microsoft.com/com
+
+Alternatively, DCOM98 can be installed by running DCOM98.exe found in the DCOM98
+folder on the Visual Basic 6.0 CD-ROM, Disk 1. Please note that DCOM98 can
+install DCOM on both Windows 95 and Windows 98 machines.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbtophit kbADO200 kbAppSetup kbDatabase kbDCOM kbMDAC kbVBp kbFAQ kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbVBp600FAQ kbADO210sp2 kbADO250 kbMDAC260 kbADO260 kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :2.5,2.6,6.0,95,98
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

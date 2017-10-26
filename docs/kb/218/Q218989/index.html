@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218989/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218989/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218989/","publisher":null,"image":null,"headline":"Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218989-windows-95-clients-registering-in-wins-as-multihomed-computers">Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218989
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:1.0,2.0,2.1,2.2,95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95, used with:
+   - Microsoft H/PC Explorer, version 1.0 
+   - Microsoft Windows CE Services versions 2.0, 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 clients that are configured to use statically defined Windows
+Internet Name Service (WINS) servers and have the Handheld PC (H/PC) Explorer
+software installed, register in WINS as multihomed computers with a second
+Internet Protocol (IP) address of 192.168.55.101.
+
+CAUSE
+=====
+
+This behavior occurs because the Windows 95 client registers both the network
+adapter and the dial-up adapter in WINS when you use statically defined WINS
+servers.
+
+Windows CE Services uses TCP/IP and Dial-Up Networking to allow the handheld
+computer to synchronize with a desktop computer. A dial-up adapter is added and
+is assigned an IP address of 192.168.55.101. Prior to the Winsock 2 upgrade,
+WINS settings were defined globally for all adapters configured with TCP/IP.
+
+RESOLUTION
+==========
+
+To resolve this problem, install the Winsock 2 update on the computer running
+Windows 95 and disable WINS resolution on the dial-up adapter. You can obtain
+the Winsock 2 update at the following Microsoft Web site:
+
+  http://www.microsoft.com/windows95/downloads/contents/wuadmintools/s_wunetworkingtools/w95sockets2/default.asp
+
+For more information about this update, see the following article in the
+Microsoft Knowledge Base:
+
+  Q182108 Availability of Windows Sockets 2.0 for Windows 95
+
+To disable WINS resolution on the dial-up adapter:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Network.
+
+2. In the list of network components, click "TCP/IP -&gt; Dial-up Adapter", and
+  then click Properties.
+
+3. Click the WINS Configuration tab.
+
+4. Click Disable WINS Resolution.
+
+5. Click OK.
+
+Additional query words: wince 95 multi-homed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:1.0,2.0,2.1,2.2,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

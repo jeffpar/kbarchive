@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89399: Double-Clicking Multimedia Icon Does Not Start Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89399: Double-Clicking Multimedia Icon Does Not Start Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89399/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89399/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89399/","publisher":null,"image":null,"headline":"Q89399: Double-Clicking Multimedia Icon Does Not Start Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89399-double-clicking-multimedia-icon-does-not-start-program">Q89399: Double-Clicking Multimedia Icon Does Not Start Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89399
+Product(s): Miscellaneous Software Development Kits
+Version(s): 1.0,1991 edition,1992 edition
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Viewer, version 1.0 
+- Microsoft Bookshelf for Windows versions 1991 edition, 1992 edition 
+- Microsoft Cinemania for Windows 1992 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you double-click an icon for a multimedia application that uses Viewer 1.0
+while WinFax Pro version 2.0 from Delrina Technology, Inc. is running, the
+application will not start. Bookshelf or Cinemania should start if you disable
+WinFax. If Bookshelf or Cinemania still does not start, remove any reference to
+WinFax from the WIN.INI LOAD= line or the Startup group in the Windows Program
+Manager.
+
+Workarounds
+-----------
+
+WinFax Pro contains a .DLL named VIEWER.DLL. Bookshelf for Windows and Cinemania
+also contain a file named VIEWER.EXE. There are three possible workarounds for
+this problem.
+
+- Upgrade to WinFax Pro version 3.0, which corrects this problem.
+
+  -or-
+
+- Shutdown WinFax Pro before running the multimedia applications.
+
+  -or-
+
+- Rename VIEWER.EXE to VIEW.EXE (or any legal MS-DOS filename). This allows
+  both programs to run simultaneously. However, renaming VIEWER.EXE to VIEW.EXE
+  (or any legal MS-DOS filename) causes QuickKeys to fail because QuickKeys is
+  hard coded to look for VIEWER.EXE. (Note: This workaround is not applicable
+  to the Word for Windows &amp; Bookshelf, Multimedia Edition. Word for Windows
+  is hard coded to look for VIEWER.EXE.
+
+NOTE: Another possible workaround is to upgrade to Bookshelf 1993. Bookshelf 1993
+uses MVIEWER2.EXE instead of VIEWER.EXE.
+
+For technical assistance with WinFax Pro, contact Delrina Technology technical
+support at (416) 441-1026.
+
+Additional query words: 91 92 Word for Windows Multimedia multi media multi-media 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbCineManiaSearch kbBookShelf1991 kbBookShelf1992 kbCinemania1992 kbMMViewer100
+Version           : :1.0,1991 edition,1992 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

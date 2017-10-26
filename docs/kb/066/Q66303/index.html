@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66303: Errors in Chapter 16 of Advanced Programming Techniques | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66303: Errors in Chapter 16 of Advanced Programming Techniques" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66303/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66303/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66303/","publisher":null,"image":null,"headline":"Q66303: Errors in Chapter 16 of Advanced Programming Techniques","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66303-errors-in-chapter-16-of-advanced-programming-techniques">Q66303: Errors in Chapter 16 of Advanced Programming Techniques</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66303
+Product(s): See article
+Version(s): 6.00 6.00a
+Operating System(s): OS/2
+Keyword(s): ENDUSER | docerr | mspl13_c
+Last Modified: 19-JAN-1991
+
+Due to printing problems and proofing oversight, there are several
+documentation errors, shown in detail below, in Chapter 16 of the
+"Microsoft C Advanced Programming Techniques" manual that shipped with
+C version 6.00 and 6.00a. These errors can cause various problems if
+you are attempting to learn how to use C 6.00 to develop OS/2
+applications. Some examples of the problems are as follows:
+
+1. Sample code fails to compile.
+
+2. Sample application fails to function correctly.
+
+3. Running a sample application causes SYS2070 error (Unable to Demand
+   Load application segment xxxxx) from the operating system.
+
+The following are documentation errors occurring in Chapter 16 of the
+"Microsoft C Advanced Programming Techniques" manual, and their
+corrections:
+
+1. Page 404; example at top of page:
+
+      #pragma stack_check(off)
+
+   Should be as follows:
+
+      #pragma check_stack(off)
+
+   Program will not compile as is.
+
+2. Page 404; example at top of page:
+
+      "while (s = TargetBuff)" and "while (d = TargetBuff)"
+
+   Both should be changed to the following:
+
+      "while (s &gt;= TargetBuff)" and "while (d &gt;= TargetBuff)"
+
+   The sample program will not function correctly as is.
+
+3. Page 402; middle of page (details of /ML and /MD switch).
+   Page 404; bottom of page.
+   Page 410; bottom of page.
+   Page 412; top of page (in the paragraph at the top).
+   Page 412; bottom of page (in the example).
+
+   All define switches to the compiler should have underscores instead
+   of spaces (that is, /D MT should be /D_MT, and /D DLL should be /D_DLL.
+
+   Without this, the correct sections of the include files will not
+   be used. Symptoms include incorrect program operation and link
+   failure (especially obvious with floating-point math functions).
+
+4. Page 407; top of page.
+   Page 411; bottom of page (end of Step 3).
+   Page 412; bottom of page.
+
+      All the link lines should include /NOI.
+
+   Without this, the programs that use run-time in a DLL will likely
+   fail at run-time due to name mismatch. In the SYS2070 error
+   message from the OS, the function name will probably be uppercase
+   with a leading underscore. The actual function name is probably
+   mixed case.
+
+5. Page 411; top of page (end of Step 2).
+
+   This step defines the building of the .DEF file for the
+   application-specific DLL. The .DEF file should also include "DATA
+   MULTIPLE." This fact was mentioned on Page 398.
+
+   If this is not done, the program will likely run correctly until a
+   second process attempts to gain access to the DLL. At that time,
+   the second process will likely overwrite the run-time instance data
+   from the first process.
+
+Microsoft is researching this problem and will post new information
+here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159776/","publisher":null,"image":null,"headline":"Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159776-fix-vc-crash-when-adding-test-case-under-source-code-control">Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159776
+Product(s): Microsoft SourceSafe
+Version(s): 3.0 4.0 4.1 4.2
+Operating System(s): 
+Keyword(s): kbusage kbSSafe400bug kbSSafe500fix kbVC400 kbVC410 kbVC420
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+- Microsoft Visual SourceSafe for Windows, version 4.0 
+- Microsoft Test for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a new test case to a Visual Test project and the project is under
+source-code control, Developer Studio may cause one of the following errors:
+
+  MSDEV.EXE - Application Error
+
+  MSDEV caused an invalid page fault in module MSVCBLD.PKG at &lt;memory
+  location&gt;.
+
+  The instruction at &lt;memory location&gt; referenced memory at "&lt;memory
+  location&gt;". The memory could not be "read".
+
+  MSDEV caused an invalid page fault in module SSSCC.DLL at &lt;memory
+  location&gt;.
+
+  MSDEV caused an invalid page fault in module KERNEL32.DLL at &lt;memory
+  location&gt;.
+
+RESOLUTION
+==========
+
+You must remove the project from source-code control before adding a new test
+case.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual SourceSafe version
+5.0.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Behavior
+---------------------------
+
+1. Under File, New, select Project Workspace (MFC AppWizard EXE). Accept all
+  defaults.
+
+2. Under Tools, select Source Control, then select Add To Source Control (keep
+  all files checked out).
+
+3. Select the TestView tab (the one with the red check).
+
+4. Right-click the project name and select New.
+
+5. Give the item a name and leave the type as "Test Case."
+
+6. Click OK. Developer Studio will probably generate a fatal application error.
+
+Additional query words: ssvt visualc
+
+======================================================================
+Keywords          : kbusage kbSSafe400bug kbSSafe500fix kbVC400 kbVC410 kbVC420 
+Technology        : kbVCsearch kbVC400 kbSSafeSearch kbAudDeveloper kbVC410 kbTest kbVC420 kbSSafe400
+Version           : 3.0 4.0 4.1 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

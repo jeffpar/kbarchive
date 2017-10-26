@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126897/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126897/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126897/","publisher":null,"image":null,"headline":"Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126897-howto-how-to-change-default-printer-settings-in-an-mfc-applicat">Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126897
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1
+Operating System(s): 
+Keyword(s): kbcode kbprint kbMFC kbPrinting kbVC150 kbVC151 kbVC152 kbVC200 kbVC210
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To change the default printer settings in an MFC application, you must retrieve
+the system default settings in a CWinApp derived object and modify those
+defaults before a print job is invoked.
+
+MORE INFORMATION
+================
+
+Default printer driver settings in an MFC application are maintained in the
+CWinApp object. These settings take the form of the following two protected
+member variables:
+
+- m_hDevMode, which is a handle to a global memory object that contains a
+  DEVMODE structure.
+
+- m_hDevNames, which is a handle to a global memory object that contains a
+  DEVNAMES structure.
+
+These variables are initialized to NULL by MFC when the application starts. The
+first time a print operation is invoked, the global default printer settings are
+retrieved in these variables. All subsequent print operations in the application
+will take their printer settings from these variables.
+
+To set an application's default printer settings to something different from the
+system defaults, the application must retrieve the system defaults before a
+print operation and modify the values in the appropriate member variable in the
+CWinApp derived object. To retrieve the system defaults, you can use the
+CWinApp::GetPrinterDeviceDefaults() function.
+
+Sample Code
+-----------
+
+For example, if you want to set the orientation in your application to landscape
+mode, you could use a function similar to the following where CMyWinApp is a
+class derived from the CWinApp class:
+
+  void CMyWinApp::SetLandscape()
+      {
+      // Get default printer settings.
+      PRINTDLG   pd;
+
+      pd.lStructSize = (DWORD) sizeof(PRINTDLG);
+      if (GetPrinterDeviceDefaults(&amp;pd))
+          {
+          // Lock memory handle.
+          DEVMODE FAR* pDevMode =
+              (DEVMODE FAR*)::GlobalLock(m_hDevMode);
+          LPDEVNAMES lpDevNames;
+          LPTSTR lpszDriverName, lpszDeviceName, lpszPortName;
+          HANDLE hPrinter;
+
+          if (pDevMode)
+              {
+              // Change printer settings in here.
+              pDevMode-&gt;dmOrientation = DMORIENT_LANDSCAPE;
+             // Unlock memory handle.
+         lpDevNames = (LPDEVNAMES)GlobalLock(pd.hDevNames);
+         lpszDriverName = (LPTSTR )lpDevNames + lpDevNames-&gt;wDriverOffset;
+         lpszDeviceName = (LPTSTR )lpDevNames + lpDevNames-&gt;wDeviceOffset;
+         lpszPortName   = (LPTSTR )lpDevNames + lpDevNames-&gt;wOutputOffset;
+
+         ::OpenPrinter(lpszDeviceName, &amp;hPrinter, NULL);
+         ::DocumentProperties(NULL,hPrinter,lpszDeviceName,pDevMode,
+                             pDevMode, DM_IN_BUFFER|DM_OUT_BUFFER);
+
+         // Sync the pDevMode.
+         // See SDK help for DocumentProperties for more info.
+         ::ClosePrinter(hPrinter);
+         ::GlobalUnlock(m_hDevNames);
+         ::GlobalUnlock(m_hDevMode);
+         }
+      }
+  }
+
+If you want landscape to be the default orientation for the application, you
+would call this function before any print job was invoked. A good place to do
+this would be in your CWinApp derived class's InitInstance() function.
+
+Additional query words: kbinf 1.52 2.00 2.10 2.52 3.00 3.10 printing
+
+======================================================================
+Keywords          : kbcode kbprint kbMFC kbPrinting kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

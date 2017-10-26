@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228475/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228475/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228475/","publisher":null,"image":null,"headline":"Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228475-xfor-event-id-115-error-starting-smtp-relay-host-service">Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228475
+Product(s): Internet Information Server
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT version 4.0 Option Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start the SMTP Relay Host service in the Microsoft
+Management Console (MMC) for Windows NT Option Pack (NTOP), the following error
+message may appear in the NT application log:
+
+  Event ID: 115
+  Source: SMTPSVC
+  Description: Service could not bind instance 1. The data is in the error.
+
+CAUSE
+=====
+
+This behavior can occur if a service or program is using port 25. For example,
+some third-party e-mail programs that send and receive mail on behalf of another
+program may be utilizing this port. In addition, some anti-virus programs listen
+over port 25 and scan all incoming and outgoing e-mail messages.
+
+RESOLUTION
+==========
+
+To determine whether another program and or service is using port 25, type
+"netstat -an" (without the quotation marks) at a command prompt, and then press
+ENTER.
+
+A list of all available ports and their states (listening or active) is
+displayed. If there is an entry for port 25 and you are not able to start the
+SMTPSVC Relay Host service, this likely the program causing the problem. Stop
+the appropriate service and then try to start the SMTP Relay Host service.
+
+MORE INFORMATION
+================
+
+Transport Control Protocol (TCP) ports cannot be multiplexed or used more than
+one time in a session. You must stop one service from using a port before
+another service or program can use it.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNT400OptionPack
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167542/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167542/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167542/","publisher":null,"image":null,"headline":"Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167542-prb-conflict-with-eof-and-getusername-using-import-on-rdo">Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167542
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbRDO kbVC500 kbVC600 kbDSupport
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With #import, you can generate classes that encapsulate the typelib of database
+API's, such as Remote Data Objects (RDO) within a windows application. For
+example:
+
+     // Excerpt from STDAFX.H
+     #include &lt;afxwin.h&gt;         // MFC core and standard components
+     ...
+     #import "C:\winnt\system32\msrdo20.dll" no_namespace
+
+When you use #import for RDO, you may receive these errors. The first is for a
+conflict with the ResultSet.EOF property, and the second is for the
+Environment.GetUserName method.
+
+  error C2629: unexpected 'short ('
+
+  error C2238: unexpected token(s) preceding ';'
+
+  error C2535: 'class _bstr_t
+  _rdoEnvironment::GetUserNameA(void)':
+  member function already defined or declared
+
+  error C2084: function 'class bstr_t _rdoEnvironment::GetUserNameA(void)'
+  already has a body
+
+CAUSE
+=====
+
+In this case, two separate problems are creating the four compiler errors.
+
+"EOF" Property and #import
+--------------------------
+
+Within an application that uses STDIO.H, IOS.H or STREAMB.H (including AFXWIN.H
+), EOF has already been defined as a constant (-1). #import defines the EOF
+property for RDO's Resultset object. At compile time, this generates the
+C2629/C2238 errors on this line of generated code in the MSRDO20.TLH file:
+
+     VARIANT_BOOL EOF;
+
+This line is attempting to define a variable, but EOF has already been defined as
+-1. So the above line of code parses to:
+
+     short -1;
+
+which will not compile because -1 is not a valid variable name.
+
+
+GetUserName and #import
+-----------------------
+
+The compiler errors C2535 and C2084 are an indication that Msrdo20.dll's typelib
+is using a name that is mapped by #define to another name that's also used. In
+this case, the _rdoEnvironment interface has properties UserName and UserNameA.
+#import creates property get methods for GetUserName and GetUserNameA. However,
+there's a GetUserName Win32 API that the system headers #define to GetUserNameA
+(or GetUserNameW for Unicode). That means, after preprocessing, the compiler
+sees two definitions for _rdoEnvironment::GetUserNameA.
+
+RESOLUTION
+==========
+
+To correct both problems, the rename clause will be used as follows:
+
+     #import "C:\winnt\system32\msrdo20.dll" \ 
+              no_namespace \ 
+              rename( "EOF", "_EOF" ) \ 
+              rename("UserNameA", "_UserNameA")
+
+This time, it will compile without error. If you look at _rdoEnvironment in
+Msrdo20.tlh, you'll now see properties UserName and _UserNameA, with propget
+methods GetUserName and Get_UserNameA.
+
+NOTE: The rename attribute renames UserNameA, not GetUserNameA. That's because
+rename must be applied to an actual name from the typelib, and only UserNameA,
+not GetUserNameA, appears there. Instead, GetUserNameA is a name synthesized by
+the #import mechanism.
+
+Additional query words: MfcDatabase RDOALL RDOVC
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbRDO kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

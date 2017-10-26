@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/275/Q275494/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/275/Q275494/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/275/Q275494/","publisher":null,"image":null,"headline":"Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q275494-prb-iis-40-userdump-generates-a-memory-dump-w-remote-perfmon">Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q275494
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbiis400
+Last Modified: 14-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a User Mode Process dump from the OEM Support Tools kit
+(http://www.microsoft.com/downloads/release.asp) on a Microsoft Windows NT 4.0
+Service Pack 6a (SP6a)/Internet Information Server (IIS) version 4.0 server that
+is being remotely monitored by Performance Monitor, the User Mode Process dump
+may repeatedly generate memory dump files. In addition you may see the following
+events in the event log:
+
+  Event ID: 201
+  Src: Udmpsvc
+  User Mode Process Dump service was started successfully.
+
+  Event ID: 1010
+  Source: Perflib
+  The Collect Procedure for the "InetInfo" service in DLL "infoctrs.DLL"
+  generated an exception or returned an invalid status. Performance data
+  returned by counter DLL will be not be returned in Perf Data Block. Exception
+  or status code returned is data DWORD 0.
+
+CAUSE
+=====
+
+This problem occurs because the User Mode Process dump can only be configured to
+dump a process on first chance exceptions. These dumps are being generated
+because of first chance "access violations" that are handled by the performance
+counters, which do not cause IIS to crash. However, because the User Mode
+Process dump cannot be configured to ignore these first chance exceptions (or
+first chance exceptions of any kind), it generates a dump file.
+
+RESOLUTION
+==========
+
+There are two workarounds for this issue:
+
+- Do not run performance monitor against the IIS server remotely while the User
+  Mode Process dump is being used.
+
+-or-
+
+- Use the IIS Exception Monitor and the Script file customization wizard to
+  configure the IIS Exception Monitor to ignore first chance access violations.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: perfmon
+
+======================================================================
+Keywords          : kbiis400 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

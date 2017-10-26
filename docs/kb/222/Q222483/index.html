@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222483: SBS: Services Do Not Work After Installing Service Pack 3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222483: SBS: Services Do Not Work After Installing Service Pack 3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222483/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222483/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222483/","publisher":null,"image":null,"headline":"Q222483: SBS: Services Do Not Work After Installing Service Pack 3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222483-sbs-services-do-not-work-after-installing-service-pack-3">Q222483: SBS: Services Do Not Work After Installing Service Pack 3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222483
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0a
+Operating System(s): 
+Keyword(s): kbnetwork kbtool kbui
+Last Modified: 28-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Windows NT 4.0 Service Pack 3 (SP3) to a Small Business Server
+(SBS) version 4.0-based or 4.0a-based computer, you may experience performance
+problems and the following services may no longer function properly:
+
+- Remote Access service
+
+- Modem Sharing
+
+- Fax Server
+
+- Microsoft Internet Information Server 3.0 and 4.0
+
+- Microsoft Proxy Server 1.0 and 2.0
+
+- The Manage Server Console
+
+Small Business Server-specific RAS files are overwritten by the Service Pack 3
+for Windows NT 4.0 installation. Because RAS is directly affected, the services
+listed above may no longer function properly depending on how the server is set
+up.
+
+CAUSE
+=====
+
+This problem can occur after you manually apply Windows NT 4.0 Service Pack 3 to
+your SBS version 4.0 or 4.0a-based computer. When you do so, some SBS files are
+overwritten with incorrect versions.
+
+RESOLUTION
+==========
+
+To work around this problem, use any of the following methods:
+
+- If Service Pack 3 has only been applied once and the "Create uninstall
+  directory" option was selected during the installation, run Service Pack 3
+  Setup again and choose the "Uninstall a previously installed Service Pack" to
+  roll back Small Business Server to the SBS-specific version of Service Pack
+  3.
+
+- Restore a backup of your SBS computer made before you applied Windows NT 4.0
+  Service Pack 3.
+
+- Reinstall SBS version 4.0 or 4.0a.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional related information, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q194343 Small Business Server 4.0: Differences and Limitations
+
+  Q190152 Requirements to Install Updated SPs and Add-ons on SBS
+
+Additional query words: smallbiz bof bos 4.00 sp3
+
+======================================================================
+Keywords          : kbnetwork kbtool kbui 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : winnt:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

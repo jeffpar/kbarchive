@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163931: BUG: FxAlert() Function Does Not Appear Centered | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163931: BUG: FxAlert() Function Does Not Appear Centered" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163931/","publisher":null,"image":null,"headline":"Q163931: BUG: FxAlert() Function Does Not Appear Centered","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163931-bug-fxalert-function-does-not-appear-centered">Q163931: BUG: FxAlert() Function Does Not Appear Centered</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163931
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp kbvfp300bBUGkbbuglist
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The default position of the FxAlert() function does not appeared centered
+horizontally when invoked in Visual FoxPro 3.0b for the Macintosh. When compared
+with FoxPro 2.6a for the Macintosh, the FxAlert() function appears much closer
+to the left-hand corner of the Visual FoxPro desktop after assigning the
+nHorizontal and nVertical parameters the negative one (-1) value.
+
+In FoxPro for the Macintosh 2.6a, the dialog appears centered horizontally.
+
+RESOLUTION
+==========
+
+Use the Visual FoxPro MESSAGEBOX() function.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The FxAlert() function topic in the FoxTools Help file, located in the Microsoft
+Visual FoxPro\Tools folder, states:
+
+  Use a value of -1 for either nHorizontal or nVertical to accept the default
+  position.
+
+The FoxTools Help file contains the complete syntax for the FxAlert() function.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Visual FoxPro for the Macintosh Command window, issue the following
+  commands:
+
+        SET LIBRARY TO HOME()+"FoxTools.cfm"&lt;BR/&gt;
+        =FxAlert(1,257,-1,-1,"Hello")
+
+2. Note that the Alert box is not centered horizontally.
+
+3. If you have FoxPro 2.6a for the Macintosh, the FxAlert() syntax remains the
+  same. However, change the line:
+
+        SET LIBRARY TO HOME()+"FoxTools.cfm"
+
+  -to-
+
+        SET LIBRARY TO GETFILE()
+
+  Navigate to the System\Extensions folder and open the FoxTools.mlb file.
+
+4. Note that in FoxPro for the Macintosh 2.6a, the Alert dialog is centered
+  horizontally.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300bBUG kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

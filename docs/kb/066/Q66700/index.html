@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66700: Redirecting Standard Input Does Not Affect getch() Under OS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66700: Redirecting Standard Input Does Not Affect getch() Under OS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66700/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66700/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66700/","publisher":null,"image":null,"headline":"Q66700: Redirecting Standard Input Does Not Affect getch() Under OS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66700-redirecting-standard-input-does-not-affect-getch-under-os2">Q66700: Redirecting Standard Input Does Not Affect getch() Under OS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66700
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 11-NOV-1990
+
+Redirecting STDIN (standard input) in the OS/2 environment does not
+change the behavior of the getch() function; it will continue to read
+from the keyboard. This is different from the DOS environment where
+redirecting STDIN also causes getch() to be redirected.
+
+The getchar() function could be used instead because it reads from
+standard input and will conform with redirection under OS/2. However,
+if standard input is not redirected, you will have to press ENTER
+after each character typed in. This can be nuisance when the program
+does not know if input will be redirected or not.
+
+A simple workaround is to use the FAPI function DosQHandType to
+determine if standard input has been redirected or not. The program
+can then call either getch() or getchar(), accordingly. The following
+sample code illustrates the workaround:
+
+Sample Code
+-----------
+
+#define INCL_VIO
+#include&lt;os2.h&gt;
+#include&lt;conio.h&gt;
+
+void main(void)
+{
+   USHORT fsType, usDeviceAttr;
+
+   DosQHandType(0, &amp;fsType, &amp;usDeviceAttr);
+
+   if(LOBYTE(fsType) == HANDTYPE_DEVICE)
+   {
+      /* Standard input is not redirected. */
+      /* Use getch() for input.            */
+   }
+   else if(LOBYTE(fsType) == HANDTYPE_FILE)
+   {
+      /* Standard input is redirected to a file. */
+      /* Use getchar() for input.                */
+   }
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

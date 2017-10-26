@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/070/Q70146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/070/Q70146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/070/Q70146/","publisher":null,"image":null,"headline":"Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q70146-nmake-macros-cannot-expand-to-multiple-command-lines">Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q70146
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft NMAKE Utility for MS-DOS 
+- Microsoft NMAKE Utility for OS/2 
+- Microsoft NMAKE Utility for Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NMAKE does not support using a macro to substitute for more than one command
+line in a makefile. An attempt to use a macro in this way fails when NMAKE
+treats the macro expansion as one long concatenated command line.
+
+MORE INFORMATION
+================
+
+A makefile can contain many description blocks, each of which contain the same
+sequence of commands. Therefore, it would be useful to use a macro instead of
+the multiple commands shared between description blocks.
+
+For example, your makefile might somewhat resemble to sample makefile below. The
+macro in that makefile is designed to expand to the commands CLS (clear screen)
+and DIR (directory). However, when this makefile runs, the DIR command does not
+run because the command line passed to the system is as follows:
+
+  CLS &lt;cr/lf&gt; DIR
+
+where &lt;cr/lf&gt; denotes a carriage return and a line feed character.
+
+One method that effectively avoids repeating many command sequences in your
+makefile involved creating a batch file that contains the commands. The makefile
+calls the batch file when these commands are required. In addition, in OS/2, you
+can specify more than one command on a line by separating the commands with an
+ampersand (&amp;) character.
+
+Under Windows NT, you can execute multiple commands by separating them with a
+&amp;&amp;.
+
+Sample Makefile
+---------------
+
+  # This makefile attempts to clear the screen and request a directory
+  # listing by expanding one macro. However, the DIR command is not
+  # executed.
+
+  CMDS = CLS ^
+         DIR
+
+  showdir:
+     $(CMDS)
+
+  In order to achieve this on Windows NT, use
+
+  Sample Makefile
+  ---------------
+
+  #
+  # This works on Windows NT
+  #
+
+  CMDS = CLS &amp;&amp; DIR
+
+  showdir:
+     $(CMDS)
+
+Additional query words: kbinf 1.10 1.20 1.30 1.40 1.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

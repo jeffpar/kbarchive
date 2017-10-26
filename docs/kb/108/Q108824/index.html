@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108824: Programmatically Copying Text to/from Windows Clipboard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108824: Programmatically Copying Text to/from Windows Clipboard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108824/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108824/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108824/","publisher":null,"image":null,"headline":"Q108824: Programmatically Copying Text to/from Windows Clipboard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108824-programmatically-copying-text-tofrom-windows-clipboard">Q108824: Programmatically Copying Text to/from Windows Clipboard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108824
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro for Windows, the system memory variable _CLIPTEXT provides access to
+the Windows system Clipboard for transferring text data (not graphics).
+
+MORE INFORMATION
+================
+
+In FoxPro for MS-DOS, copying or cutting text places that text in an internal
+clipboard used only by FoxPro for MS-DOS. In Windows-based applications,
+including FoxPro for Windows, copying or cutting an item places that item in the
+Windows Clipboard, which is available to other Windows applications.
+
+To view the contents of the Windows Clipboard, open the Main group in Program
+Manager, and in Windows 3.0 and 3.1, start Clipboard or in Windows for
+Workgroups 3.1 and 3.11, start Clipbook Viewer (which contains Clipboard). Note,
+however, that Clipboard does not need to be running for data to be stored in
+it.
+
+NOTE: You can pass only text data using _CLIPTEXT, although the Windows Clipboard
+can store graphics as well as text.
+
+Example of Copying Text from FoxPro to Notepad
+----------------------------------------------
+
+1. Start FoxPro for Windows.
+
+2. Type the following command in the Command window:
+
+  " _CLIPTEXT = "Text from FoxPro"" (without the quotation marks)
+
+3. Minimize or quit FoxPro.
+
+4. Start the Windows Notepad program (usually found in the Accessories group).
+
+5. From the Edit menu, choose Paste.
+
+Notepad now contains the following line:
+
+  Text from FoxPro
+
+Example of Copying Text From Memo Field to Clipboard
+----------------------------------------------------
+
+  USE &lt;table_name&gt; &amp;&amp; Open a database that contains a memo field
+  SCATTER MEMVAR MEMO
+  _CLIPTEXT=m.&lt;memo_field_name&gt; &amp;&amp; Copy memo contents to clipboard
+
+Example of Copying Text from Notepad to FoxPro
+----------------------------------------------
+
+1. Start Notepad.
+
+2. Type the following line in Notepad:
+
+  " Text from Notepad" (without the quotation marks)
+
+3. Select the line of text (so that it is highlighted).
+
+4. From the Edit menu, choose Copy.
+
+5. Minimize or quit Notepad.
+
+6. Start FoxPro for Windows.
+
+7. Type the following command in the Command window:
+
+  " ? _CLIPTEXT" (without the quotation marks)
+
+The following is displayed on the FoxPro Desktop:
+
+  Text from Notepad
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxWin FoxWin 2.50 clipbrd.exe akz
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

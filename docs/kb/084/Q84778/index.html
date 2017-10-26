@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q84778: Memory Use Limitations in Microsoft Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q84778: Memory Use Limitations in Microsoft Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/084/Q84778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/084/Q84778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/084/Q84778/","publisher":null,"image":null,"headline":"Q84778: Memory Use Limitations in Microsoft Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q84778-memory-use-limitations-in-microsoft-windows">Q84778: Memory Use Limitations in Microsoft Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q84778
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 3.0 can access up to 16 megabytes (MB) of physical memory. With the
+release of version 3.1, Windows can access more than 16 MB of physical memory.
+This article discusses the factors that influence the amount of memory available
+to applications in the Windows environment.
+
+MORE INFORMATION
+================
+
+In enhanced mode, Windows versions 3.0 and 3.1 can use features of the Intel 386
+(and compatible) microprocessors to supplement the installed physical RAM memory
+with virtual memory in a disk-based swap file. As physical memory fills, Windows
+sends the least-recently used pages of memory to disk. When this data is later
+accessed, Windows pages it back in from disk. This activity is transparent to
+applications in the system.
+
+Windows 3.0 cannot address any memory with an address higher than 100000h (16
+MB). Windows 3.1 can address at most 256 MB of physical RAM memory, and the
+largest swap file Windows 3.1 will ever create is 256 MB. To be used by Windows
+3.1, all physical RAM memory must have an address lower than 7FC00000h (2,044
+MB).
+
+While the combination of 256 MB of physical RAM memory coupled with a 256 MB swap
+file provides a theoretical limit of 512 MB, the actual maximum is somewhat less
+than 512 MB.
+
+The architecture of the Intel 386 processor defines a Local Descriptor Table
+(LDT), which is used in the memory protection scheme. Windows 3.1 uses one LDT
+that provides 8192 descriptors. Each descriptor can describe a block of memory
+containing at most 64 KB. While multiplying the number of descriptors by the
+maximum amount of memory yields the 512 MB theoretical limit again, Windows will
+not access this much memory for the following two reasons:
+
+- Windows reserves some descriptors for its own use.
+
+- Most memory allocations that use a descriptor do not allocate the 64K maximum
+  allowed.
+
+Both of these factors reduce the number of available descriptors and the amount
+of memory that Windows can use.
+
+While the About dialog box in the Program Manager reports an estimate of the
+amount of memory available, Windows does not maintain sufficient information to
+accurately report the amount of free memory at any given time. Maintaining more
+accurate information regarding the amount of free memory would seriously degrade
+system performance because memory is allocated and freed very frequently.
+
+The values reported by the GetFreeSpace and GlobalCompact functions are less than
+or equal to the amount of free memory available in the system. Because of their
+imprecise nature, an application should use the value reported by one of these
+functions only for an informational display. The application must not assume
+that it is possible to allocate that much memory.
+
+The largest block of memory that an application can allocate is affected by the
+degree of memory fragmentation. Memory available in fixed portions of memory may
+be available for allocation only as a fixed block. For example, consider the
+case where the GetFreeSpace function returns 100K available, and 64K of the
+available space is located in the fixed portion of the heap with the remainder
+in the movable and discardable portion of the heap. An attempt to allocate a
+100K block of movable and discardable memory will most likely fail.
+
+Additional query words: no32bit 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

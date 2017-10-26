@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162114/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162114/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162114/","publisher":null,"image":null,"headline":"Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162114-howto-how-to-issue-a-recursive-get-based-on-a-project-label">Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162114
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:3.04,3.1,4.0,4.0a,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSSafe310 kbSSafe304 kbSsafe
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are three methods in Visual SourceSafe that you can use to "Get" files
+based on a project-level label. This article discusses each of these methods and
+describes their respective results.
+
+MORE INFORMATION
+================
+
+Of the three methods mentioned above, one uses the Visual SourceSafe Explorer
+and the other two use the command line.
+
+Using the Command Line
+----------------------
+
+The two command line methods are:
+
+     SS GET $/&lt;path to project&gt;/*.* -r -gf -vl&lt;label&gt;
+
+-or-
+
+     SS GET $/&lt;path to project&gt; -r -gf -vl&lt;label&gt;
+
+Where &lt;path to project&gt; is the Visual SourceSafe path to the desired
+project and &lt;label&gt; is the project label against which the Get is
+executed. The -gf switch tells Visual SourceSafe to Get the files into their
+working directory, not the current DOS directory.
+
+The results of these two examples are quite different. The command in the first
+example yields all files and subprojects in &lt;path to project&gt; that are
+currently in the project. The files are returned in the state at which the label
+was applied. This means that any file or subproject that was deleted (and not
+permanently destroyed) after the label was applied will not be returned.
+
+The command in the second example returns all files and subprojects in &lt;path
+to project&gt; that were in the project at the time the label was applied,
+except for those files that were deleted or permanently destroyed.
+
+The following procedure illustrates this difference:
+
+1. Open or switch to Visual SourceSafe, and create a project called Vssrocks off
+  of the root($/).
+
+2. Create a subproject of Vssrocks called Vssrules.
+
+3. Add two files, one to Vssrocks and the other to Vssrules.
+
+4. Apply a project-level label called Label1 to Vssrocks.
+
+  NOTE: This level is inherited by Vssrules.
+
+5. Set the working directory of Vssrocks to C:\Vssrocks (create this directory
+  if it does not already exist).
+
+6. Delete, but do not destroy, the project Vssrules, and then close the Visual
+  SourceSafe Explorer.
+
+7. Open a DOS window and set your path to include \Vss\Win32.
+
+8. Type the following command in the DOS window:
+
+     SS GET $/VSSROCKS/*.* -r -vlLABEL1
+
+  NOTE: Only the file added to Vssrocks is returned.
+
+9. Type the following command in the DOS window:
+
+     SS GET $/VSSROCKS -r -vlLABEL1
+
+  The error message "File or project not found" appears, but the contents of
+  both Vssrocks and Vssrules are returned.
+
+Using the Visual SourceSafe Explorer
+------------------------------------
+
+The following procedure describes how to use a recursive Get on a label to return
+all files and subprojects in a project that were in the project at the time the
+label was applied, except for those projects that have been deleted or
+permanently destroyed.
+
+1. Open or switch to Visual SourceSafe and create a project called Vssrocks off
+  of the root($/).
+
+2. Create a subproject of Vssrocks called Vssrules.
+
+3. Add two files, one to Vssrocks and the other to Vssrules.
+
+4. Apply a project-level label called Label1 to Vssrocks.
+
+  NOTE: This level is inherited by Vssrules.
+
+5. Set the working directory of Vssrocks to C:\Vssrocks (create this directory
+  if it does not already exist).
+
+6. Delete, but do not destroy, the project Vssrules.
+
+7. Right-click the Project Vssrocks and click Show History.
+
+8. Select the version that the label was applied to and click Get.
+
+9. Select the Recursive check box and click OK (do not select the Build Tree
+  check box). Note that the contents of both Vssrocks and Vssrules are
+  returned.
+
+REFERENCES
+==========
+
+For additional information on project and file labels please see the following
+article in the Microsoft Knowledge Base:
+
+  Q139298 How to Include Specific File Revisions in a Project Label
+
+Additional query words: 4.0 4.0a 5.0 kbdss
+
+======================================================================
+Keywords          : kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSSafe310 kbSSafe304 kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword3 kbSSafe304 kbSSafe310 kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:3.04,3.1,4.0,4.0a,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

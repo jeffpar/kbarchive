@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190008/","publisher":null,"image":null,"headline":"Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190008-using-host-header-names-to-host-multiple-sites-from-1-ip-address">Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190008
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 05-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Configure Host Header Names in IIS 5.0
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article shows you how to use Host Headers to allow multiple
+host names to share a single IP address.
+
+IIS allows you to assign any number of sites to a single IP address and
+distinguish them by using host headers. When IIS receives a request for a Web
+page, it looks at the information sent in by the browser. If the browser is HTTP
+1.1 compliant (Internet Explorer 3.x and later, or Netscape Navigator 3.x and
+later), the HTTP header contains the actual domain name requested. IIS uses this
+to determine which site should answer the request.
+
+If the browser is not HTTP 1.1 compliant, you can program a core page to display
+all sites available and allow the user to choose which site to use. For
+instructions on how to do this, see the references section at the bottom of this
+article.
+
+Configure Host Header Names in IIS 5.0:
+
+To configure host header names in IIS
+
+1. Start the Internet Service Manager (Iis.msc).
+
+2. Right-click the Web site to be configured, and then click Properties.
+
+3. On the Web Site tab, select the IP address that the site will use.
+
+  Note: if you only have one IP address on the server, select All Unassigned,
+  and set the TCP Port that should be used (usually 80).
+
+4. Click Advanced.
+
+5. In the Multiple identities for this Web Site list, select the identity that
+  you want to use.
+
+6. Click Edit, and then add the desired host header name.
+
+  NOTE: If you want this site to respond to more than one host header name, use
+  the Add button to add additional identities to this list. Specify a different
+  host header name for each identity, but be sure to use the same IP address
+  and port.
+
+7. Apply these changes and start the Web site (if it is not already running).
+
+8. Register the host header name with the appropriate name resolution system.
+
+  If the computer is on an intranet (a private LAN that uses Internet
+  technology), register it with the intranet's name resolution system, such as
+  the Windows Internet Name Service (WINS).
+
+  If the computer is on the Internet, register the host header name with the
+  Domain Name System (DNS), which is administered by InterNic.
+
+9. After the host header name is registered with the name resolution system,
+  test it from a browser by attempting to browse the host header name. The
+  browser should open the expected Web site.
+
+Troubleshooting:
+
+- When your computer boots or when you manually start the Microsoft Internet
+  Information Server service, Event Viewer may log the following event:
+
+  Event ID : 115
+  Source : w3svc
+  Description : The service could not bind instance X.
+
+  This problem can occur when some or all of the Web sites that are using Host
+  Headers have the same port number defined for Secure Sockets Layer (SSL).
+  Internet Information Server 4.0 does not support the use of Host Headers for
+  SSL. For more information, see the references links below.
+
+- Erratic behavior can occur when applying a host header name to the default
+  Web site if add-on packages for IIS (such as Microsoft Proxy Server) are also
+  being used. For this reason, it is generally not recommended that you apply a
+  host header name to the default Web site created by IIS.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q186810 Event ID 115 When Using Host Headers With IIS
+
+For additional information, click the link below to visit the following web
+site:
+
+  Supporting Host Header Names in Older Browsers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

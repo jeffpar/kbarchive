@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71227/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71227/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71227/","publisher":null,"image":null,"headline":"Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71227-info-inverting-color-inverts-palette-index-not-rgb-value">Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71227
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+   - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Performing any bitwise logical operator on a color, such as inversion, does not
+modify the color's RGB value; it instead changes the index into the system
+palette. This applies also to the ROP codes associated with the blt functions
+(BitBlt, StretchBlt, and PatBlt) and in the SetRop2 function. For display
+devices with hardware palettes [generally, devices with fewer than 24
+Bits-Per-Pixel (BPP)], this can produce unexpected or undesirable results.
+
+MORE INFORMATION
+================
+
+Suppose the system palette contained the following colors:
+
+                                  Entry #
+
+  Color      0      1      2      3      4      5      6      7
+  -----
+  Red   =    0   0x80      0      0   0x80   0x80      0   0x80
+  Green =    0      0   0x80      0   0x80      0   0x80   0x80
+  Blue  =    0      0      0   0x80      0   0x80   0x80   0x80
+
+                                  Entry #
+
+  Color      8      9      A      B      C      D      E      F
+  -----
+  Red   = 0xC0   0xFF      0      0   0xFF   0xFF      0   0xFF
+  Green = 0xC0      0   0xFF      0   0xFF      0   0xFF   0xFF
+  Blue  = 0xC0      0      0   0xFF      0   0xFF   0xFF   0xFF
+
+The inversion of colors would look like this: (Half = half intensity, Full = full
+intensity)
+
+  Color          Index      Inverse Color   Index
+  -----          -----      -------------   -----
+  Black              0      White               F
+  Half Red           1      Full Cyan           E
+  Half Green         2      Full Magenta        D
+  Half Blue          3      Full Yellow         C
+  Half Yellow        4      Full Blue           B
+  Half Magenta       5      Full Green          A
+  Half Cyan          6      Full Red            9
+  Dark Gray          7      Light Gray          8
+
+This obviously is not the desired effect. Inverting a full-intensity color such
+as red will not invert to full-intensity cyan; instead, it is inverted to
+half-intensity cyan.
+
+This is also true for any logical operations performed on the bits of a bitmap,
+pen, or flood fill through ROP codes. All operations are done on the index of
+the color and not its RGB value.
+
+Note that when using custom palettes on a palette capable device, the application
+does not have control over the precise mapping between logical palette indexes
+and system palette indexes. The results of bitwise logical operations are
+unpredictable in such a case.
+
+The only way for an application to precisely control color mixing is to perform
+the operation on RGB values, then translate the RGB result back into the most
+appropriate palette index.
+
+For example, one way to do this is to mix colors in a 24 BPP Device-Independent
+Bitmap (DIB), then set the DIB bits into the Device Context (DC) again when
+finished. Another method is to query the RGB color of pixels to modify, do the
+mixing, and then use the SetPixel function to apply the change to the DC.
+
+Additional query words: 3.00 3.10 3.50 4.00 win16sdk
+
+======================================================================
+Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152339/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152339/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152339/","publisher":null,"image":null,"headline":"Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152339-windows-nt-ntfs-time-stamps-mismatch-cd-rom-after-upgrading">Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152339
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.5 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you perform a Windows NT installation or upgrade (using the three Windows
+NT setup diskettes) onto a pre-existing NTFS partition, you will find that the
+Windows NT system files' time stamps do not match the installation CD-ROM time
+stamps. The time stamps will differ by plus or minus the difference in your time
+zone and the Greenwich Mean Time(GMT) zone.
+
+CAUSE
+=====
+
+When you install Windows NT for the first time on a given computer, NT always
+installs to a FAT partition whose time stamps are local time, then converts the
+partition to NTFS on the final reboot. During the GUI portion of setup, you are
+prompted to indicate your time zone, but when NT converts the partition to NTFS,
+it changes the time stamps to Greenwich Mean Time (GMT). However, after NT is
+installed, File Manager adds or subtracts the number of hours separating your
+time zone from GMT to arrive at your correct local time.
+
+For example, if you were operating in U.S. eastern standard time (EST), which is
+five hours behind GMT time, File Manager would subtract five hours from the
+stored GMT time to equal your local time. If EST was 10:57 a.m., the following
+settings would be registered:
+
+  CD-ROM time:               10:57 a.m.
+  NTFS GMT time:              3:57 p.m.
+  File Manager displays:     10:57 p.m. (3:57 p.m. - 5 hours)
+
+This process does not work correctly when you install or upgrade Windows NT onto
+an existing NTFS partition. When you do this, the setup program copies all the
+files to the NTFS partition using only local time. As a result, it does not know
+what time zone you are in, and hence cannot add or subtract time to the files to
+be stored in GMT time. After NT is finished installing, the time stamps
+displayed by File Manager will be different from those shown by the CD-ROM. This
+is because the setup program is now adding or subtracting the time-zone offset
+to or from your local time rather than GMT time.
+
+For the scenario described above, if the person had reinstalled or upgraded
+Windows NT onto an existing NTFS partition, the following settings would be
+registered:
+
+  CD-ROM time:               10:57 a.m.
+  NTFS EST (local) time:     10:57 a.m.
+  File Manager displays:      5:57 a.m. (10:57 a.m. - 5 hours)
+
+RESOLUTION
+==========
+
+To resolve this problem, perform an upgrade using the Winnt32.exe program while
+under Windows NT.
+
+In this case the files will be copied from the CD-ROM to the local NTFS
+partition, and Windows NT will know to store the files in GMT on the NTFS
+partition. After NT is installed or upgraded, all the time stamps will match
+those on the CD-ROM. For example:
+
+  CD-ROM time:                  10:57 a.m.
+  NTFS GMT time:                 3:57 p.m.
+  File Manager displays:        10:57 a.m.  (3:57 p.m. - 5 hours)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.50 and
+3.51. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

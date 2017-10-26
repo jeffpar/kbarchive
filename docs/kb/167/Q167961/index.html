@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167961: FIX: F1 Help Routed Wrongly for Additional Top-Level Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167961: FIX: F1 Help Routed Wrongly for Additional Top-Level Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167961/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167961/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167961/","publisher":null,"image":null,"headline":"Q167961: FIX: F1 Help Routed Wrongly for Additional Top-Level Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167961-fix-f1-help-routed-wrongly-for-additional-top-level-windows">Q167961: FIX: F1 Help Routed Wrongly for Additional Top-Level Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167961
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2
+Operating System(s): 
+Keyword(s): kbDocView kbMFC kbVC152bug kbVC200bug kbVC210bug kbVC220bug kbVC400fix kbGrpDSMFCATL kb
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the F1 key to display help for a window that is not a descendant
+of the application's main window, it does not display the proper help text.
+
+CAUSE
+=====
+
+MFC assumes that the currently active window is a descendant of the main window.
+So, for windows that are children of the desktop, MFC routes WM_COMMANDHELP to
+the mainframe instead of the active window.
+
+RESOLUTION
+==========
+
+Add an ID_HELP command handler in the CMainFrame that searches for the active
+window based on the window with the current focus and walks up the parent tree
+sending the WM_COMMANDHELP message. Use the code shown in the sample code
+section.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual C++ version
+4.0.
+
+MORE INFORMATION
+================
+
+When you press the F1 key, an ID_HELP command message is generated and is
+usually routed and handled in the application's main frame message map using
+CFrameWnd::OnHelp(). Then, the OnHelp functions (CFrameWnd and CWnd) finds the
+active window using ::GetLastActivePopup(hWnd), thereby passing the handle to
+the application's main frame. Unfortunately, this only returns windows handles
+that are a descendant of hWnd. If another top-level window was active when you
+pressed the F1 key, the main frame window is still used and the subsequent
+WM_COMMANDHELP messages is never sent to the correct active window.
+
+The sample code below fixes this bug by sending the message to the window with
+the current focus before going through the default MFC logic.
+
+Sample Code
+-----------
+
+     ////////////////////////////////////// 
+     // HEADER file
+     class CMainFrame : public CMDIFrameWnd
+     {
+        afx_msg void OnHelp();
+        ...
+
+     ////////////////////////////////////// 
+     // IMPLEMENTATION file
+     #include "afxpriv.h"
+
+     BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWnd)
+     ...
+        ON_COMMAND(ID_HELP, CMainFrame::OnHelp)
+     END_MESSAGE_MAP()
+
+     void CMainFrame::OnHelp()
+     {
+        if (m_dwPromptContext != 0)
+        {
+           if (m_dwPromptContext !=
+              HID_BASE_PROMPT + AFX_IDP_FAILED_TO_LAUNCH_HELP)
+              AfxGetApp()-&gt;WinHelp(m_dwPromptContext);
+           return;
+        }
+
+        // attempt to get help from whoever has the focus
+        HWND hWnd = ::GetFocus();
+        while (hWnd != NULL)
+        {
+           // attempt to process help
+           if (::SendMessage(hWnd, WM_COMMANDHELP, 0, 0))
+              return;
+
+           // check next parent/owner in the parent/owner chain
+           CWnd* pWnd = CWnd::FromHandlePermanent(hWnd);
+           if (pWnd != NULL)
+              hWnd = pWnd-&gt;GetOwner()-&gt;GetSafeHwnd();
+           else
+              // otherwise, return parent in the Windows sense
+              hWnd = ::GetParent(hWnd);
+        }
+        CWnd::OnHelp();
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Adam Kim, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDocView kbMFC kbVC152bug kbVC200bug kbVC210bug kbVC220bug kbVC400fix kbGrpDSMFCATL kbNoUpdate kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

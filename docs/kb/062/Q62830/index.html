@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62830: X=(-1*W)^2 Gives &quot;Division by Zero&quot; on 386 with 387; BASIC 7.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62830: X=(-1*W)^2 Gives &quot;Division by Zero&quot; on 386 with 387; BASIC 7.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62830/","publisher":null,"image":null,"headline":"Q62830: X=(-1*W)^2 Gives &quot;Division by Zero&quot; on 386 with 387; BASIC 7.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62830-x-1w2-gives-division-by-zero-on-386-with-387-basic-71">Q62830: X=(-1*W)^2 Gives "Division by Zero" on 386 with 387; BASIC 7.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62830
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist7.00 buglist7.10 | mspl13_basic
+Last Modified: 6-AUG-1990
+
+Executing the following line of code on a 80386 machine equipped with
+an 80387 math coprocessor results in a "Division by zero" error:
+
+   X = (-1 * W) ^ 2
+
+The "Division by zero" error occurs in both the QBX.EXE environment
+and within a compiled .EXE in Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10. The error occurs only on 80386
+computers with 80387 coprocessors.
+
+Microsoft has confirmed this to be a problem with Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS and MS OS/2. We are researching this problem and will post new
+information here as it becomes available. This problem does not occur
+with other Microsoft BASIC products.
+
+The following are two workarounds for the above problem:
+
+1. Use the DOS command SET NO87=NONE to disable BASIC's use of the 387
+   coprocessor. The program will then execute correctly. Note that
+   disabling BASIC's use of the coprocessor usually slows program
+   execution.
+
+2. Change the line of code into two lines, using a temporary variable
+   to hold the value of (-1 * W), as follows:
+
+      TEMP = (-1 * W)
+      X = TEMP ^ 2
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

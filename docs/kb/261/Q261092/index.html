@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261092: XADM: Requirements to Set Security Permission Roles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261092: XADM: Requirements to Set Security Permission Roles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261092/","publisher":null,"image":null,"headline":"Q261092: XADM: Requirements to Set Security Permission Roles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261092-xadm-requirements-to-set-security-permission-roles">Q261092: XADM: Requirements to Set Security Permission Roles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261092
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how enterprise administrators can set granular security
+permissions on Exchange Server directory objects to ensure that enterprise and
+local administrators have the appropriate security access in an organization.
+
+MORE INFORMATION
+================
+
+By setting granular security, you can allow local administrators access to only
+the server-level directory objects and allow enterprise administrators full
+access to all of the directory objects in the organization.
+
+In traditional configurations, you might configure an Exchange Administrator
+group that has the Permissions Admin role at the organization, site, and
+configuration levels. This group represents the enterprise administrators of the
+organization. However, this particular configuration does not provide any
+granular directory object access for the local administrators.
+
+For example, if you have five enterprise administrators who are responsible for
+supporting the organization at a global level and you also have individual local
+administrators who are responsible for only their server's directory objects in
+a particular site, you need to ensure that the local administrators have
+directory object access to only the appropriate servers. To do so, you need to
+set appropriate permissions that the site and server directory objects inherit.
+
+To set the appropriate permissions:
+
+1. At the server for which the local administrator or administrative group needs
+  full access, open the properties of the server's directory object.
+
+2. Click the Permissions tab, and then add that user or group as Permissions
+  Admin.
+
+  NOTE: Ensure that you click the appropriate directory object (for example,
+  under the &lt;organization&gt; container, the &lt;site&gt; container, and the
+  Servers container, click the &lt;server name&gt; object and just not the
+  Servers container) before you perform step 2. If you select the Servers
+  container in step 1 and then perform step 2, you grant the accounts
+  Permissions Admin role to all of the servers in that site.
+
+3. Open the properties of the site-level directory object.
+
+4. Click the Permissions tab, and then add that user or group as Permissions
+  Admin.
+
+After you perform these steps, the local administrator or administrative group
+has access to not only the site folders, but also to their server properties.
+Additionally, the local administrator or administrative group cannot gain access
+to other server objects in the site. Enterprise administrators should already be
+established with organization-level, site-level, and server-level Permissions
+Admin roles.
+
+When you establish the preceding permissions, note that enterprise administrators
+have full access to change the properties attributes of all system folders.
+However, you can configure more granular permissions with this approach,
+depending on your particular needs.
+
+As with any security implementation, if you change your environment settings, you
+may impact more then one area. You need to plan and test when you apply
+permission changes for your organization.
+
+Additional query words: xmrp
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

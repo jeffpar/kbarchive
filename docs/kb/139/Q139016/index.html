@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139016/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139016/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139016/","publisher":null,"image":null,"headline":"Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139016-optimizing-wfwg-311-for-real-mode-netbios-programs">Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139016
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a program or tool that relies on the real-mode NetBIOS
+interface provided by NetBEUI, your network session may be dropped in Windows
+for Workgroups 3.11. This problem is most likely to occur with programs or tools
+that load a real-mode TSR that interfaces with NetBIOS and have Windows-based
+components that communicate with the TSR.
+
+CAUSE
+=====
+
+This problem can be caused by a number of different timing and optimization
+problems that can occur when a Windows-based component uses the protected- mode
+NetBIOS interface to communicate with a real- mode TSR running over real-mode
+NetBEUI.
+
+RESOLUTION
+==========
+
+Disabling the protected-mode NetBEUI component and optimizing the real- mode
+NetBEUI protocol may increase the reliability of layered applications based on a
+real-mode NetBIOS interface requiring real-mode NetBEUI.
+
+The instructions in the following sections may help you to resolve the problem
+described in this article.
+
+Remove Protected-Mode NetBEUI/Use Real-Mode NetBEUI Only
+--------------------------------------------------------
+
+1. In the Network group, double-click the Network Setup icon.
+
+2. Click Drivers.
+
+3. Click the network adapter driver, and then click Setup.
+
+4. In the Driver Type box, click Real Mode NDIS Driver, and then click OK until
+  you exit Network Setup.
+
+5. When you are prompted to restart your computer, click Continue.
+
+6. Use any text editor (such as Notepad) to open the System.ini file. Locate the
+  line that reads
+
+        transport=netbeui.386
+      
+
+  and change it to:
+
+  transport=
+
+7. Add the following line to the [Network] section of the file:
+
+  AutoStart=NETBEUI
+
+8. Save and then close the System.ini file.
+
+Optimize the Real-Mode NetBEUI Protocol
+---------------------------------------
+
+1. In the Network group, double-click the Network Setup icon.
+
+2. Click Drivers.
+
+3. Click the NetBEUI protocol, and then click Set As Default Protocol.
+
+4. Click Setup, click Sessions, and increase the value to at least 16 (depending
+  on your results).
+
+5. Click Set, click NCBS, and increase the value to at least 32 (depending on
+  your results).
+
+6. Click Set, and then click OK until you exit Network Setup. When you are
+  prompted to restart your computer, click Continue.
+
+Optimize the Virtualized Network Interface
+------------------------------------------
+
+1. Use any text editor (such as Notepad) to open the System.ini file.
+
+2. Locate the line that reads
+
+        NetHeapSize=20
+      
+
+  and change it to:
+
+  NetHeapSize=32
+
+  NOTE: You can use a value greater than 32, depending on your results.
+
+3. Save and then close the System.ini file
+
+4. Restart your computer.
+
+MORE INFORMATION
+================
+
+The configuration described in this article was tested and is stable with the
+original versions of the Windows for Workgroups 3.11 files. This configuration
+was not found to be stable with the updated Windows for Workgroups 3.11 files
+included on the Microsoft Windows NT 3.5 and 3.51 Server CD-ROMs.
+
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197469: WD97: Word Lists Unused Table of Contents and Index Styles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197469: WD97: Word Lists Unused Table of Contents and Index Styles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197469/","publisher":null,"image":null,"headline":"Q197469: WD97: Word Lists Unused Table of Contents and Index Styles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197469-wd97-word-lists-unused-table-of-contents-and-index-styles">Q197469: WD97: Word Lists Unused Table of Contents and Index Styles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197469
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): winword word97 kbtable
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you insert a table of contents (TOC), table of authorities, table of
+figures, or index in a document, Microsoft Word adds all levels of table or
+index styles to the Styles list, regardless of whether the style is actually
+used in your document.
+
+NOTE: This article uses the word "table" to mean tables of figures, authorities,
+contents, or other list you create using the Index And Tables command on the
+Insert menu.
+
+CAUSE
+=====
+
+Word features built-in formats for indexes and tables, such as Elegant, Classic,
+Formal, and Modern; these formats are actually a collection of predefined
+styles.
+
+When you select a format for your index or table, Word lists all the styles
+associated with that format. This prevents the styles from getting mixed up with
+those for another format in a different table or index. By listing all the
+styles, Word maintains consistency in your indexes or tables and prevents the
+mixing of style definitions for different levels of your index or table.
+
+
+For example, if your document contains a four-level table of figures that you
+formatted with the Classic format, and you add a two-level table of figures and
+format it with the Modern format, Word redefines all the styles, whether they
+are currently in use or not. As a result, Word reformats your entire first
+table--not just the first two levels. In other words, Word maintains a
+consistent look throughout all the tables and indexes in your document.
+
+NOTE: If Word did not redefine all the style levels, some levels would contain
+formatting that did not match the formatting in the other levels. The following
+diagrams illustrate this idea.
+
+Table A (Created Before Table B)
+--------------------------------
+
+  Level 1 &lt;Classic format&gt;
+  Level 2 &lt;Classic format&gt;
+  Level 3 &lt;Classic format&gt;
+  Level 4 &lt;Classic format&gt;
+
+Table B (You Change from Classic to Modern Format)
+--------------------------------------------------
+
+  Level 1 &lt;Modern format&gt;
+  Level 2 &lt;Modern format&gt;
+
+After you create Table B, Word correctly reformats Table A as follows.
+
+Table A
+-------
+
+  Level 1 &lt;Modern format&gt;
+  Level 2 &lt;Modern format&gt;
+  Level 3 &lt;Modern format&gt;
+  Level 4 &lt;Modern format&gt;
+
+If Word did not replace all the style definitions when you switched to Modern
+format, Table A would incorrectly look like this.
+
+Table A (Hypothetical: This Is Not How Word Formats Your Table)
+---------------------------------------------------------------
+
+  level 1 &lt;Modern format&gt;
+  level 2 &lt;Modern format&gt;
+  level 3 &lt;Classic format&gt;
+  level 4 &lt;Classic format&gt;
+
+WORKAROUND
+==========
+
+To delete any unwanted styles from your document, follow these steps:
+
+1. On the Format menu, click Style.
+
+2. In the List box, select Styles In Use.
+
+3. Select each unwanted style and click Delete. Repeat this step until you have
+  deleted all the unwanted styles, and then click Close.
+
+NOTE: You cannot delete the Default Paragraph Font character style or the Heading
+1, Heading 2, Heading 3, or Normal paragraph styles.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : winword word97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

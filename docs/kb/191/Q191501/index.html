@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191501/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191501/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191501/","publisher":null,"image":null,"headline":"Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191501-howto-detect-if-the-floppy-drive-is-ready-on-windows-nt">Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191501
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following Microsoft Knowledge Base article describes how to verify that a
+disk is in a floppy drive:
+
+  Q170609 PRB: PUTFILE Command to Drive "A" Without a Floppy Causes Fault
+
+However, in some instances a formatted unused diskette may be in the drive with a
+volume serial number of zero. In this case, the code in the article incorrectly
+indicates that there is not a disk in the drive. The article also mentions the
+use of the FoxPro DISKSPACE function. However, on a Microsoft Windows NT-based
+computer or a Microsoft Windows 2000-based computer, the use of the DISKSPACE
+function opens a system error dialog box if there is not a disk in the drive.
+
+MORE INFORMATION
+================
+
+The following code demonstrates how to indicate the floppy disk status,
+regardless of the volume serial number. The code does not cause an error dialog
+box to open on a Windows NT-based computer or a Windows 2000-based computer. The
+WIN32API function SetErrorMode is used to eliminate the error dialog on both a
+Windows NT-based computer or a Windows 2000-based computer.
+
+     *-- Code begins here.
+     *-- Defines from Winbase.h
+     #define SEM_FAILCRITICALERRORS      0x0001
+     #define SEM_NOGPFAULTERRORBOX       0x0002
+     #define SEM_NOALIGNMENTFAULTEXCEPT  0x0004
+     #define SEM_NOOPENFILEERRORBOX      0x8000
+
+     *-- SetErrorMode determines whether the system handles
+     *-- serious errors or whether the program handles them.
+     DECLARE INTEGER SetErrorMode in win32api INTEGER
+
+     *-- SetErrorMode returns to what the flags were last set.
+     *-- You need to store this in lnResult so that you can set them
+     *-- back the way they were before calling SetErrorMode.
+     *-- Failure to do so can produce unpredictable results
+     *-- when encountering future errors.  SetErrorMode only
+     *-- applies to the current process and therefore only affects
+     *-- the FoxPro program that called SetErrorMode.
+     lnResult = SetErrorMode(SEM_FAILCRITICALERRORS)
+
+     *-- Test the FoxPro DISKSPACE() function.  If you get a -1, then
+     *-- there is no disk in the drive.
+     IF DISKSPACE("a:") = -1
+        MESSAGEBOX("No disk present.", 0)
+     ELSE
+        MESSAGEBOX("Drive is ready.", 0)
+     ENDIF
+
+     *-- Put things back the way you found them.
+     lnResult = SetErrorMode(lnResult)
+
+     *-- Test DISKSPACE() again.  If there is no floppy in the drive,
+     *-- a Windows NT system dialog box appears.
+     IF DISKSPACE("a:") = -1
+        MESSAGEBOX("No disk present.", 0)
+     ELSE
+        MESSAGEBOX("Drive is ready.", 0)
+     ENDIF
+     *-- Code ends here.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q170609 PRB: PUTFILE Command to Drive "A" Without a Floppy Causes Fault
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+Stewart, Microsoft Corporation.
+
+
+Additional query words: removable media kbVFp600 kbAPI kbVFp500a kbVFp500
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

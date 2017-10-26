@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q283618: INFO: Security Considerations When Using Automatic User Login | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q283618: INFO: Security Considerations When Using Automatic User Login" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/283/Q283618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/283/Q283618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/283/Q283618/","publisher":null,"image":null,"headline":"Q283618: INFO: Security Considerations When Using Automatic User Login","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q283618-info-security-considerations-when-using-automatic-user-login">Q283618: INFO: Security Considerations When Using Automatic User Login</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q283618
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbConfig kbDSupport kbGrpDSSSafe
+Last Modified: 06-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe provides a "Use network name for automatic user log in" option
+that allows Visual SourceSafe integration with Microsoft Visual InterDev or
+Microsoft FrontPage. However, the feature has security ramifications that users
+should consider before using it. Microsoft recommends that the feature only be
+used in protected networks in which all users are fully trusted.
+
+MORE INFORMATION
+================
+
+The "Use network name for automatic user log in" option in Visual SourceSafe is
+designed to enable single sign-on to development environments. When the option
+is selected (this is the default), Visual SourceSafe uses the currently
+logged-in account name as the Visual SourceSafe user name. If the name matches a
+Visual SourceSafe user name, the user is logged in without a password.
+
+Use of this feature can provide a better user experience by not requiring the
+user to enter a userid and password repeatedly. However, there are security
+ramifications associated with using the feature, and customers should consider
+them carefully before using it:
+
+- The feature does not perform Windows authentication, in which
+  cryptographically protected credentials are exchanged anytime the user
+  requests access to a resource, even through single sign-on mechanisms.
+  Instead, the feature sends the current account name, which Visual SourceSafe
+  then compares to a local database of users.
+
+- It could be possible for a user to log in as any desired Visual SourceSafe
+  user, simply by logging into a local account with a userid that exists in
+  Visual SourceSafe. In particular, there is always a user name of "Admin" in
+  the Visual SourceSafe user list, which has full administrative access and
+  cannot be deleted. If the Use network name for automatic user log in feature
+  is enabled, an attacker could create a local machine account named "Admin",
+  and then misuse the automatic log in feature to gain access to the Visual
+  SourceSafe "Admin" account.
+
+- The feature can be disabled, but it is possible for the client to override
+  the server settings and re-enable it.
+
+Because of these factors, Microsoft recommends that the "Use network name for
+automatic user log in" feature only be used in protected networks in which all
+of the users are fully trusted. It should not be used on unprotected networks or
+networks containing users who require differing levels of privileges. Indeed,
+Visual SourceSafe itself is not recommended for use on unprotected networks, as
+it is a development tool.
+
+The most effective way to provide security for Visual SourceSafe is by
+controlling access to the share on which the server software and the database
+reside. This can be done by setting NTFS permissions on the share and, if
+appropriate, hiding the share.
+
+Conclusion
+----------
+
+There can be significant benefit to enabling the "Use network name for automatic
+user log in" option in a protected network. However, in an unprotected network,
+this option is not appropriate.
+
+REFERENCES
+==========
+
+If you require technical assistance with this issue, contact Microsoft Product
+Support Services:
+
+  http://support.Microsoft.com/support/contact/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbConfig kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

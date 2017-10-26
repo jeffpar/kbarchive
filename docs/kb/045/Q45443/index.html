@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45443: PAINT Fills Entire Screen If Border Color Is Not the Same | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45443: PAINT Fills Entire Screen If Border Color Is Not the Same" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45443/","publisher":null,"image":null,"headline":"Q45443: PAINT Fills Entire Screen If Border Color Is Not the Same","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45443-paint-fills-entire-screen-if-border-color-is-not-the-same">Q45443: PAINT Fills Entire Screen If Border Color Is Not the Same</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45443
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890524-91 B_GWBasicI B_BasicCom | mspl13_basic
+Last Modified: 13-DEC-1989
+
+The PAINT statement fills a graphics area with a specified color or
+pattern. PAINT fills the entire screen if the graphics area is not
+bound by a border of the same color or pattern.
+
+The PAINT statement is available in Versions 1.00, 1.01, 1.02, 2.00,
+2.01, 3.00, 4.00, 4.00b, and 4.50 of Microsoft QuickBASIC, Version for
+MS-DOS 3.21, 3.22, and 3.23 of Microsoft GW-BASIC, and Versions 6.00, 6.00b
+for MS-DOS and the Microsoft BASIC PDS 7.00 for MS-DOS.
+
+The PAINT statement has the following syntax:
+
+   PAINT [step] (x,y) [,[paint] [, [bordercolor] [,background]]]
+
+Note the following:
+
+1. step - Defines coordinates to be relative to the most recently
+   plotted point.
+
+2. (x,y) - The coordinates where painting begins. The point must lie
+   inside or outside of the figure, not on the border itself.
+
+3. paint - A numeric or string expression. If numeric, the number must
+   be a valid color attribute. The corresponding color is then used to
+   paint the graphic area. If no value for paint is used, the
+   foreground color attribute is used. If the corresponding paint
+   argument is a string, then PAINT does a "tiling" process to paint
+   the area. Consult the BASIC language reference manual for more on
+   "tiling."
+
+4. bordercolor - A numeric expression identifying the color attribute
+   to use to paint the border of the figure.
+
+5. background - A string value giving the "background tile slice" to
+   skip when checking for termination of the boundary.
+
+PAINT can be used to fill a graphic area denoted by the starting point
+(x,y). PAINT continues filling the screen until it reaches the
+termination color, which is the same color that it is currently
+filling, or the background argument specified above. If no background
+argument is specified, the default is CHR$(0).
+
+To fill only a specific image, the color that the graphic image was
+drawn in must match the fill color. The following code example
+illustrates this. Although the code example illustrates this feature
+with the DRAW functions, this feature is built into the PAINT
+statement and therefore holds true for all graphics functions (LINE,
+CIRCLE, etc.).
+
+Code Examples
+-------------
+
+'          PAINT.BAS
+SCREEN 9                      ' Sets video mode to EGA screen 9
+
+PSET (100, 100)               ' Positions pen to line 100 column 100
+DRAW "D50 R50 U50 L50"   ' Draws a 50x50 box starting from
+                          ' (100,100), with the default color
+                          ' (white).
+PAINT (125, 125)         ' Paints the box with the default color
+                     ' (white)
+
+DO WHILE INKEY$ = ""     ' Continuous loop until key pressed
+LOOP
+
+PSET (200, 200)               ' Reposition pen to line 200 column 200
+DRAW "D50 R50 U50 L50"   ' Draws a 50x50 box starting from
+                          ' (200,200), with the default color
+                          ' (white).
+
+DO WHILE INKEY$ = ""      ' Continuous loop until key pressed
+LOOP
+
+PAINT (225, 225), 1           ' Attempt to PAINT box with color BLUE,
+                          ' but will result in the whole screen
+                          ' being PAINTed.  If the box was drawn
+                          ' in BLUE, then this would work.
+
+'(DRAW "C1 D50 R50 U50 L50").
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

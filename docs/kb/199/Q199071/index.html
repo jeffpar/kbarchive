@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199071: Recovering from Minor LSA Corruption | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199071: Recovering from Minor LSA Corruption" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199071/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199071/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199071/","publisher":null,"image":null,"headline":"Q199071: Recovering from Minor LSA Corruption","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199071-recovering-from-minor-lsa-corruption">Q199071: Recovering from Minor LSA Corruption</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199071
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+You might see event ID 5714
+
+  The full synchronization request from the server "bdc" failed with the
+  following error: &lt;error text&gt;
+
+on the primary domain controller (PDC), or event ID 5716
+
+  The partial synchronization replication of the SAM database from the primary
+  domain controller &lt;name&gt; failed with the following error: Cannot
+  perform this operation on built-in accounts
+
+on one or more backup domain controllers (BDCs), indicating that replication of
+the LSA database failed.
+
+CAUSE
+=====
+
+This problem occurs because one of the secrets in the LSA database is corrupted.
+This can happen when the registry is physically corrupted (as in a disk system
+hardware failure) or when a transaction to the LSA database does not complete
+and is left in a partially completed state (as in a power failure during a
+transaction).
+
+If you examine the LSA secrets in the registry, you will see at least one secret
+that has only one subkey, PolMod. Normal secrets have five subkeys.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, locate and delete the corrupted secret in the registry
+on the PDC.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+If you examine each secret in the registry, you can locate the corrupted secret
+manually and no reboot will be required.
+
+You can also find the corrupted secret by installing a checked build of
+Netlogon.dll and examining the logs that are generated. A Netlogon.log file of
+this problem will have lines (wrapped for readability) that look like:
+
+  12/08 18:11:41 [SYNC] Packing Secret Object: G$$TRUSTEDDOMAIN
+  12/08 18:11:41 [CRITICAL] NlSyncLsaDatabase: returning unsuccessful
+  (c0000034).
+  12/08 18:11:41 [MISC] Eventlog: 5714 (2) "PDC" "%%2" c0000034
+  12/08 18:11:41 [SYNC] NetrDatabaseSync: LSA returning (0xc0000034) to PDC
+  Context: 0x0.
+
+From this log, you can see that the LSA secret named G$$TRUSTEDDOMAIN is
+corrupted.
+
+For more information on obtaining, installing and configuring the checked build
+of Netlogon.dll, contact Microsoft Product Support Services.
+
+
+After the corrupted secret is located, delete it.
+
+NOTE: Performing the following procedure across a slow WAN link could be
+extremely time-consuming (hours). Microsoft recommends that you perform this
+procedure locally on the PDC.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\Security
+
+3. On the Security menu, click Permissions.
+
+4. Change the permissions on this key and all subkeys to:
+
+  Administrators: Full Control
+  System: Full Control
+
+  NOTE: You can safely ignore any errors while applying permissions.
+
+5. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\Security\Policy\Secrets\&lt;secretname&gt;
+
+6. On the Edit menu, click Delete.
+
+7. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\Security
+
+8. On the Security menu, click Permissions.
+
+9. Change the permissions on this key and all subkeys to:
+
+  Administrators: Special... (only Read Control and Write DAC)
+  System: Full Control
+
+  NOTE: You can safely ignore any errors while applying permissions.
+
+10. Quit Registry Editor.
+
+In this example, the corrupted key corresponds to an outgoing trust. You would
+need to re-establish the trust to TRUSTEDDOMAIN using User Manager for Domains
+to delete and re-create each end of the trust.
+
+Here is a short list of secrets you might see:
++-------------------------------------------------------------+
+| Secret Name    | Type of Information                        | 
++-------------------------------------------------------------+
+| G$$DOMAINNAME  | Trust to domain DOMAINNAME                 | 
++-------------------------------------------------------------+
+| G$&lt;other name&gt; | Other global secret                        | 
++-------------------------------------------------------------+
+| $MACHINE.ACC   | Machine account password for this computer | 
++-------------------------------------------------------------+
+| NL$xx          | Cached logon credentials                   | 
++-------------------------------------------------------------+
+| *ServiceName*  | Information stored by that service         | 
++-------------------------------------------------------------+
+Problems of this sort occur only in global secrets because other secrets are not
+replicated to BDCs by Netlogon. Thus, it is only necessary to inspect secrets
+beginning with G$.
+
+
+MORE INFORMATION
+================
+
+LSA secrets are stored in the registry under the following registry key:
+
+  HKEY_LOCAL_MACHINE\Security\Policy\Secrets
+
+Each LSA secret key will normally have five subkeys:
+
+  CupdTime
+  CurrVal
+  OldVal
+  OupdTime
+  SecDesc
+
+When a secret changes, the values of each of these keys must be looked up and
+replicated by Netlogon as part of the normal domain accounts database
+replication process.
+
+The 5714/5716 event pair is generated when one or more of these values is
+missing.
+
+During a change to an LSA secret, there is an intermediate state where these five
+subkeys have been deleted and a temporary key, PolMod, is present. If the
+transaction is not completed atomically, this key could persist, resulting in a
+corrupted and non-replicatable LSA secret.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

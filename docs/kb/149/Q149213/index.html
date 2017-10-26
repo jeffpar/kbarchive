@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149213: How Resource Accounts Automatically Accept Meeting Requests | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149213: How Resource Accounts Automatically Accept Meeting Requests" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149213/","publisher":null,"image":null,"headline":"Q149213: How Resource Accounts Automatically Accept Meeting Requests","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149213-how-resource-accounts-automatically-accept-meeting-requests">Q149213: How Resource Accounts Automatically Accept Meeting Requests</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149213
+Product(s): Microsoft Schedule+ for Windows
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Schedule+ 7.0 accounts can be created as Resource Accounts, for example
+Conference Rooms, Overhead Projectors, Company Vehicles, etc. These Resources
+can also be configured to automatically accept meeting requests and clear
+canceled meetings from their appointment book.
+
+NOTE: Auto-booking of appointments does not work when you send meeting requests
+between Microsoft Mail for PC Networks postoffices and Microsoft Exchange Server
+version 4.0 environments. Mail for PC Networks does not support Bcc:
+recipients.
+
+
+MORE INFORMATION
+================
+
+By placing the Resource account into the RESOURCE address box of the Meeting
+Attendees dialog box, it will place the ResourceID in the Bcc: line of the
+meeting request message. The ResourceID will also be displayed in the Where:
+field of the meeting request message. Schedule+ will only search for users
+listed in the Bcc: box to perform the auto-booking of appointments. This
+eliminates overhead of parsing addresses, locating the appointment book,
+determining the Account-type (Resource or not) and accessing permissions to all
+users; therefore, it improves performance.
+
+NOTE: Entering ResourceIDs into any address box other than that of a Resource
+Attendee (for example, Required or Optional) will disable the Auto-booking
+features.
+
+Setting Up the Resource Account
+-------------------------------
+
+NOTE: These steps will assume a Microsoft Exchange Profile has be previously
+configured for the Resource Account.
+
+1. Log into Schedule+ 7.0 as the Resource ID.
+
+2. In the Welcome to Schedule+ 7.0 dialog box, select the I Do Not Want a
+  Schedule File on this Machine option, if you do not the creation of a local
+  file for the Resource account on the workstation you are on.
+
+3. Click Options on the Tools menu. Select General and the following options:
+
+   - This Account is a for a Resource....
+
+   - Automatically Accept Meeting Requests
+
+   - Automatically Remove Canceled Meetings
+
+4. Click Options on the Tools menu. Select Synchronize and clear the option to
+  Work Primarily from Local File.
+
+5. Click Set Access Permissions on the Tools menu. Check the following:
+
+   - Default access permission is set to CREATE or Higher
+
+   - Specified user(s) are given access privileges CREATE or Higher
+
+
+6. Exit and Sign Out as the Resource.
+
+Inviting the Resource to Attend a Meeting
+-----------------------------------------
+
+NOTE: Entering ResourceIDs into any address box other than that of a Resource
+Attendee (for example, Required or Optional) will disable the Auto-booking
+features.
+
+1. Login to Schedule+ as a user other than a Resource account.
+
+2. Click Appointments on the Insert menu to display a New Appointment dialog
+  box.
+
+3. In the General tab, type the description of the appointment.
+
+4. Select the Attendees tab. Then use either method A or B below.
+
+Method A
+--------
+
+  1. Enter the ResourceID directly into the RESOURCES address box.
+
+  2. Select the OK button. Meeting Request dialog box is displayed.
+
+  3. Select the Envelope button to send the mail.
+
+Method B
+--------
+
+  1. Select the Invite Others button to display the address book.
+
+  2. Select the ResourceID from the address book and press the Resources button
+     to place the Resource address into the Resources: address box.
+
+  3. Enter the ResourceID directly into the Resources box.
+
+
+Additional query words: 7.00 schedule plus
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbScheduleSearch kbSchedule700
+Version           : :7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

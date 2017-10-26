@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317720/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317720/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317720/","publisher":null,"image":null,"headline":"Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317720-fix-getfldstate-indicates-record-is-appended-after-transaction">Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317720
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you append records to a table and then use the GETFLDSTATE function, the
+result may indicate that an additional record has been appended to the table.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows 7.0. This problem was first corrected in Visual FoxPro for Windows 7.0
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Behavior
+---------------------------
+
+1. Paste the following code in a program (.prg) file and then run the program:
+
+  #DEFINE DBCNAME 	'testdb'
+  #DEFINE TABNAME 	'testtab'
+
+  CD (ADDBS(JUSTPATH(SYS(16))))
+
+  CLEAR 
+  CLOSE ALL
+  DELETE FILE testdb.dbc
+  DELETE FILE testdb.dc?
+  DELETE FILE testtab.dbf
+
+  CREATE DATABASE DBCNAME
+  CREATE TABLE (TABNAME) (F1 I PRIMARY KEY, F2 C(8) , F3 C(10), F4 i, F5 i)
+  	
+  CLOSE DATABASES ALL 
+
+  DELETE FILE testdb1.dbc
+  DELETE FILE testdb1.dc?
+
+  CREATE DATABASE (DBCNAME+'1')
+
+  CREATE CONNECTION Conn1 ;
+  	CONNSTRING "Driver=Microsoft Visual FoxPro Driver;UID=;" + ;
+  	"PWD=;SourceDB="+ADDBS(JUSTPATH(SYS(16)))+"testdb.dbc;SourceType=DBC;" + ;
+  	"Exclusive=No;BackgroundFetch=Yes;Collate=Machine;Null=Yes;Deleted=Yes;"
+
+  CREATE SQL VIEW "RV_TESTTAB" ; 
+     REMOTE CONNECT "conn1" ; 
+     AS SELECT * FROM testtab Testtab WHERE Testtab.f1 = ?id
+
+  DBSETPROP('RV_TESTTAB', 'View', 'SendUpdates', .T.)
+  DBSETPROP('RV_TESTTAB', 'View', 'Tables', 'testtab')
+
+  *!* Field Level Properties for RV_TESTTAB
+  * Props for the RV_TESTTAB.f1 field.
+  DBSETPROP('RV_TESTTAB.f1', 'Field', 'KeyField', .T.)
+  DBSETPROP('RV_TESTTAB.f1', 'Field', 'Updatable', .T.)
+  DBSETPROP('RV_TESTTAB.f1', 'Field', 'UpdateName', 'testtab.f1')
+  DBSETPROP('RV_TESTTAB.f1', 'Field', 'DataType', "I")
+  * Props for the RV_TESTTAB.f2 field.
+  DBSETPROP('RV_TESTTAB.f2', 'Field', 'KeyField', .F.)
+  DBSETPROP('RV_TESTTAB.f2', 'Field', 'Updatable', .T.)
+  DBSETPROP('RV_TESTTAB.f2', 'Field', 'UpdateName', 'testtab.f2')
+  DBSETPROP('RV_TESTTAB.f2', 'Field', 'DataType', "C(8)")
+  * Props for the RV_TESTTAB.f3 field.
+  DBSETPROP('RV_TESTTAB.f3', 'Field', 'KeyField', .F.)
+  DBSETPROP('RV_TESTTAB.f3', 'Field', 'Updatable', .T.)
+  DBSETPROP('RV_TESTTAB.f3', 'Field', 'UpdateName', 'testtab.f3')
+  DBSETPROP('RV_TESTTAB.f3', 'Field', 'DataType', "C(10)")
+  * Props for the RV_TESTTAB.f4 field.
+  DBSETPROP('RV_TESTTAB.f4', 'Field', 'KeyField', .F.)
+  DBSETPROP('RV_TESTTAB.f4', 'Field', 'Updatable', .T.)
+  DBSETPROP('RV_TESTTAB.f4', 'Field', 'UpdateName', 'testtab.f4')
+  DBSETPROP('RV_TESTTAB.f4', 'Field', 'DataType', "I")
+  * Props for the RV_TESTTAB.f5 field.
+  DBSETPROP('RV_TESTTAB.f5', 'Field', 'KeyField', .F.)
+  DBSETPROP('RV_TESTTAB.f5', 'Field', 'Updatable', .T.)
+  DBSETPROP('RV_TESTTAB.f5', 'Field', 'UpdateName', 'testtab.f5')
+  DBSETPROP('RV_TESTTAB.f5', 'Field', 'DataType', "I")
+
+  USE rv_Testtab SHARED NODATA
+
+  =CURSORSETPROP("Buffering",3) &amp;&amp; same with 5
+
+  ? "   First Call To AddData"
+  * Add the first record to the table.
+  =AddData(500) 
+
+  ? "   Second Call To AddData"
+  * Add the 2nd record to the table.
+  =AddData(501)
+
+  RETURN 
+
+  PROCEDURE AddData(lnNewVal)
+     id=0
+     =REQUERY("rv_Testtab")
+     SELECT rv_Testtab
+     APPEND BLANK
+     REPLACE F1 WITH m.lnNewVal, F2 WITH ALLTRIM(STR(m.lnNewVal)), ;
+        F3 WITH ALLTRIM(STR(m.lnNewVal)), F4 WITH m.lnNewVal, ;
+        F5 WITH m.lnNewVal
+  	
+     ? "  Before Transaction: "+GETFLDSTATE(-1,"rv_Testtab"),F1
+     BEGIN TRANSACTION 
+        ? "  GETFLDSTATE() In Transaction Before Table Update:        "+GETFLDSTATE(-1,"rv_Testtab"),F1
+        ? "  Table Update Results: " + IIF(TABLEUPDATE(0,.f.,"rv_Testtab"), "True", "False")
+        ? "  GETFLDSTATE() In Transaction After Table Update:  "+GETFLDSTATE(-1,"rv_Testtab"),F1
+     END TRANSACTION 
+     * After the second record has been added and the transaction is done,
+     * GETFLDSTATE shows that another record has been appended when 
+     * this is not the case.
+     ? "  GETFLDSTATE() After End Transaction: "+GETFLDSTATE(-1,"rv_Testtab"),F1
+
+  ENDPROC   
+
+2. Examine the results as follows:
+
+   - After the first record is added to the table, the results from GETFLDSTATE
+     after the END TRANSACTION command return all 1s, which indicates that the
+     field has not been edited.
+
+   - After the second record is added to the table, the results for the
+     GETFLDSTATE after the END TRANSACTION command return all 3s, which
+     indicates that the field in the appended record has not been edited.
+
+   - The GETFLDSTATE function reports that another record has been appended to
+     the table even though no record has been added.
+
+Additional query words: kbVFP700sp1fix
+
+======================================================================
+Keywords          : kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

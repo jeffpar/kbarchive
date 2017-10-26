@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182198: XADM: Server Invocation ID Identical to Other Server’s UUID | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182198: XADM: Server Invocation ID Identical to Other Server’s UUID" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182198/","publisher":null,"image":null,"headline":"Q182198: XADM: Server Invocation ID Identical to Other Server’s UUID","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182198-xadm-server-invocation-id-identical-to-other-servers-uuid">Q182198: XADM: Server Invocation ID Identical to Other Server’s UUID</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182198
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 03-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Microsoft Exchange Server, you may see problems with replication
+between two servers in a site. In addition, messages between these two servers
+may be looping.
+
+CAUSE
+=====
+
+This can be caused by a problem with the Domain Name Service (DNS) or another
+name resolution technique. To determine whether this is the problem, complete
+the following steps:
+
+WARNING: Using the raw mode of the Exchange Administrator program (admin /r)
+incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+  typing the following at a command prompt:
+
+  admin /r
+
+  from the \Exchsrvr\Bin directory.
+
+2. View the raw properties for the directory service of one of the servers in
+  question.
+
+  a. Select the &lt;server name&gt;, under the Servers container.
+
+  b. Select Directory Service, and open a raw property.
+
+  c. Make a note of the Invocation ID attribute of the server.
+
+3. Select &lt;sitename&gt;.
+
+4. Select File, Raw Properties for the Site container.
+
+5. View the Reps-From attribute of the Site container.
+
+6. In the Attributes Value scroll box, move the horizontal scroll bar to the far
+  right until the Microsoft Exchange Server names can be seen. Scroll through
+  the list until the server name of the second server is found.
+
+7. Double-click this entry and view Replica link.
+
+8. Make a note of the UUID.
+
+If the UUID of the second server is the same as the Invocation ID of the first
+server, then the problem is most likely that the DNS (or any other naming
+service) has IP addresses switched for these two servers.
+
+WORKAROUND
+==========
+
+To work around this problem, correct the DNS entry. The UUID of each server will
+be dynamically updated to the correct value. At this point, replication between
+these two servers should occur, and messages should flow normally.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

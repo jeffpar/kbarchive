@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153793: How To Check for a Remote Access Service Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153793: How To Check for a Remote Access Service Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153793/","publisher":null,"image":null,"headline":"Q153793: How To Check for a Remote Access Service Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153793-how-to-check-for-a-remote-access-service-connection">Q153793: How To Check for a Remote Access Service Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153793
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp300b kbvfp600
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some windows APIs related to a Remote Access Service. The
+tasks described in this article are available as commands in Microsoft FoxPro
+version 2.6 for Windows, as well as versions 3.0 and 3.0b. This article
+describes how to verify the RAS (Remote Access Service) while using the remote
+view.
+
+MORE INFORMATION
+================
+
+Often, you can anticipate the run-time errors when you work with the remote view
+due to the bad telephone connection. You can shield from these errors by
+including the error-handling code included in this article using APIs.
+
+It is possible to check whether a Remote Access Service has been disconnected.
+This verification can be controlled by using some API calls (RasEnumConnections
+and RasGetConnectStatus). In this article, the customized API routine was
+written using Microsoft Visual C++ 4.0 to check the status of RAS connections.
+
+The following sample program illustrates the contents of the .DLL file written in
+Microsoft Visual C++ 4.0 and shows a way to verify the connection of RAS
+successfully through the Win32 SDK.
+
+NOTE: This sample program illustrates many Microsoft Visual C++ commands. The use
+of these commands is beyond the scope of Microsoft FoxPro Product Support. Users
+with substantial experience using API routines should be able to write the
+following sample .DLL file. For this sample .DLL file to work, you need a .DEF
+file to export the rasnt function.
+
+Sample C++ Program (DLL)
+------------------------
+
+     #include &lt;stdio.h&gt;
+     #include &lt;windows.h&gt;
+     #include &lt;ras.h&gt;
+
+     HANDLE hInst;
+     HWND   hDlg;
+     HANDLE hHeap;
+
+     BOOL APIENTRY DllMain(HANDLE hInst, DWORD ul_reason_being_called, LPVOID
+     lpReserved)
+     {
+         return 1;
+             UNREFERENCED_PARAMETER(hInst);
+             UNREFERENCED_PARAMETER(ul_reason_being_called);
+             UNREFERENCED_PARAMETER(lpReserved);
+     }
+
+     int APIENTRY rasnt(void)
+     {
+         LPRASCONN     lpRasConn = NULL;
+         DWORD   cbBuf = 0;
+         DWORD   cConn = 0;
+         DWORD   dwRet = 0;
+         HRASCONN   hrasconn;
+         RASCONNSTATUS rasStatus;
+         UINT    ndx;
+
+         // enumerate connections
+         cbBuf = sizeof(RASCONN);
+         if ( (lpRasConn = ( LPRASCONN ) malloc((UINT)cbBuf)) != NULL)
+         {
+             lpRasConn-&gt;dwSize = sizeof( RASCONN );
+             dwRet = RasEnumConnections( lpRasConn, &amp;cbBuf, &amp;cConn );
+        for (ndx = 0; ndx &lt; cConn; ndx++)
+        {
+            // get to HRASCONN
+            hrasconn = lpRasConn[ndx].hrasconn;
+
+            // get connection status
+            rasStatus.dwSize = sizeof(RASCONNSTATUS);
+            dwRet = RasGetConnectStatus( hrasconn, &amp;rasStatus );
+            if ( dwRet ) return 0;
+            else
+            {
+           if (rasStatus.rasconnstate == RASCS_Connected) return 1;
+           else return 0;
+            }
+        }
+         }
+
+         return 0;
+     }
+
+Sample DEF File
+---------------
+
+     LIBRARY   rasnt
+
+     CODE    PRELOAD MOVEABLE DISCARDABLE
+     DATA    PRELOAD SINGLE
+
+     EXPORTS
+         rasnt      @2
+
+Sample Visual FoxPro Program
+----------------------------
+
+     DECLARE integer rasnt IN RASNT.DLL
+     retval = rasnt()
+
+     IF retval = 1 THEN
+        WAIT WINDOW "there is connection"
+     ELSE
+        WAIT WINDOW "there is no connection"
+     ENDIF
+
+Sample Program (Notes)
+----------------------
+
+- To create a .DLL file in Visual C++, please refer to a Help file in Microsoft
+  Visual C++ 4.0.
+
+- Note that the Rasnt.dll should be in the same directory as your FoxPro
+  project, or should be in the path of the Windows Win32 directory.
+
+In order to compile the above DLL properly, you need to include RASAPI32.LIB.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

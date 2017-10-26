@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129739/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129739/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129739/","publisher":null,"image":null,"headline":"Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129739-how-to-determine-if-vb-40-app-was-launched-as-ole-server">Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129739
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the StartMode Property of the Visual Basic App
+object to determine whether an application started as a stand-alone project or
+as an OLE Automation object application.
+
+MORE INFORMATION
+================
+
+If the StartMode property has a value of vbSModeStandalone (or 0), it means that
+the application started as a stand-alone project. That is, the user started the
+.EXE from File Manager or by double-clicking the icon from Program Manager.
+
+If the StartMode property has a value of vbSModeAutomation (or 1), it means that
+the application started as an OLE Automation object application. That is, the
+.EXE started because an OLE Automation client called CreateObject.
+
+These constants are listed in the Visual Basic object library in the Object
+Browser.
+
+At design time, you can debug an application as if it were started as an OLE
+Automation object application by setting StartMode in the Project Options dialog
+box to 1 (vbSModeAutomation) by selecting the OLEServer option button. But a
+project's actual StartMode setting is determined by how that application is
+started at run time, not by its nominal setting in the Project Options dialog
+box when you create an executable (.EXE) file.
+
+When StartMode is set to 1 and there are no public classes in the project, you
+must use the End statement or choose End from the Run menu or toolbar to end the
+application. If you choose Close from the Control menu, the form closes but the
+project is still running.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a new Module to the project by choosing Module from the Insert menu.
+  Module1 is created by default.
+
+3. Copy the following code, and Paste it into the General Declarations portion
+  of Module1:
+
+     Public Sub main()
+        If App.StartMode = vbSModeStandalone Then
+           MsgBox "Application being started as a stand alone EXE!"
+        Else
+           MsgBox "Application being started as an OLE Automation server!"
+        End If
+     End Sub
+
+4. In the Project Options dialog box (Choose Options from the Tools menu and
+  then select the Project tab), choose Sub Main as the startup form and choose
+  OLEServer as the startmode.
+
+5. Press the F5 key to run the program. A message box will tell you that the
+  application was started as an OLE Automation server.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

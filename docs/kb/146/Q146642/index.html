@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146642: How to Undelete a File Deleted by the Project Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146642: How to Undelete a File Deleted by the Project Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146642/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146642/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146642/","publisher":null,"image":null,"headline":"Q146642: How to Undelete a File Deleted by the Project Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146642-how-to-undelete-a-file-deleted-by-the-project-manager">Q146642: How to Undelete a File Deleted by the Project Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146642
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro's Project Manager has a Remove button that once pressed asks:
+
+  Do you want to remove the file from the project or delete it from the disk?
+
+If you tell Visual FoxPro to delete the file, the file is marked for deletion in
+the standard MS-DOS fashion under Windows 3.11 or Windows 95, thus removing the
+first charter of the file's name and allowing new files to use that disk space.
+
+MORE INFORMATION
+================
+
+If you are using Windows 3.1 and MS-DOS 6.22, you can use the Undelete.exe
+program that came with MS-DOS to undelete the file. Earlier versions of MS-DOS
+that have an UNDELETE command may also enable you to retrieve your deleted file.
+See your MS-DOS documentation for more details. Other Utilities that provide
+undelete utilities may also work to restore your deleted files, see the
+documentation for your installed software. Do not install any new software, save
+any files, or do any type of action that will write information to your hard
+disk. This will maximize your chances of retrieving your deleted files.
+
+If you are using Windows 95, and delete a file that you did not intend to delete
+from your hard disk, create an MS-DOS 6.22 boot disk, and copy Undelete.exe to
+that floppy disk. You will need to find a computer with MS-DOS 6.22 as the
+operating system so that you can create a boot disk using FORMAT A: /S, and copy
+the Undelete.exe to that disk. Once you have the floppy disk, insert in drive
+A:, and boot your computer using the boot disk. Press ENTER for the date, and
+press ENTER for the time.
+
+For example, to use the Undelete.exe of MS-DOS 6.22, type the following at the A:
+prompt:
+
+  " A:&gt;undelete c:\vfp\*.* " (without the quotation marks)
+
+You will have to provide the first letter of each file you wish to undelete.
+Remember that many files consist of more that one file, for example a form
+consists of an .scx and a .sct file. See File Extensions and File Types in
+Visual FoxPro's Help file for a listing of the extensions that Visual FoxPro
+uses.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

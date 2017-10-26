@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136284: How to Find the Size of an .FPT File with Different Blocksizes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136284: How to Find the Size of an .FPT File with Different Blocksizes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136284/","publisher":null,"image":null,"headline":"Q136284: How to Find the Size of an .FPT File with Different Blocksizes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136284-how-to-find-the-size-of-an-fpt-file-with-different-blocksizes">Q136284: How to Find the Size of an .FPT File with Different Blocksizes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136284
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.0,2.5,2.5a,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.6, 2.6a 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes changing the blocksize of a memo field can result in significant
+savings in disk space. The BLOCKTEST() function listed in this article can
+determine exactly how much disk space can be gained or lost with different
+blocksizes.
+
+MORE INFORMATION
+================
+
+1. Open a program file called LowLevel.prg and add this code:
+
+     FUNCTION BLOCKTEST
+     PARAMETER lnTempsize
+     CLEAR
+     IF lnTempsize&gt;0
+       IF lnTempsize&lt;=32
+         lnTempsize=lnTempsize*512
+       ENDIF
+       lnTempblk=0
+       lcFilename=LEFT(DBF(),LEN(DBF())-4)
+       lnBlksize=VAL(SYS(2012))
+       USE
+       lnHandle=FOPEN(lcFilename+".FPT")
+       IF lnHandle&gt;0
+          lnFilesize=FSEEK(lnHandle,0,2)
+          =FSEEK(lnHandle,0)
+          lcByte=FREAD(lnHandle,8)
+          lnBlknum=ASC(SUBSTR(lcByte,4,1))+(ASC(SUBSTR(lcByte,3,1))*256)+;
+             (ASC(SUBSTR(lcByte,2,1))*256*256)+;
+             (ASC(SUBSTR(lcByte,1,1))*256*256*256)
+          ?  "Current Memo Stats"
+          ?  "    Blocksize    "+ALLTRIM(STR(lnBlksize))
+          ?  "    # of blocks  "+ALLTRIM(STR(lnBlknum))
+          ?  "    Filesize     "+ALLTRIM(STR(lnFilesize))+" Bytes"
+          lnBlkend=0
+          lni=1
+          DO WHILE lnBlkend&lt;512
+             lnBlkend=lni*lnBlksize
+             lni=lni+1
+          ENDDO
+          =FSEEK(lnHandle,lnBlkend+4)
+          lnRec=0
+          FOR lni=lni TO lnBlknum
+             lcByte=FREAD(lnHandle,4)
+             =FSEEK(lnHandle,lnBlksize-4,1)
+             IF (lnBlksize*lni)&gt;lnBlkend
+                lnx=ASC(SUBSTR(lcByte,4,1))+:
+                   (ASC(SUBSTR(lcByte,3,1))*256)+;
+                   (ASC(SUBSTR(lcByte,2,1))*256*256)+;
+                   (ASC(SUBSTR(lcByte,1,1))*256*256*256)+8
+                lnRec=lnRec+1
+                lnk=INT((lnx-1)/lnBlksize)
+                lni=lni+lnk
+                lnTempblk=lnTempblk+INT(lnx/lnTempsize)+;
+                   IIF(MOD(lnx,lnTempsize)=0,0,1)
+                =FSEEK(lnHandle,(lnBlksize*lnk),1)
+             ENDIF
+          ENDFOR
+          =FCLOSE(lnHandle)
+          lnTempblk=lnTempblk+INT(512/lnTempsize)+;
+             IIF(MOD(512,lnTempsize)=0,0,1)
+          lnTempfile=lnTempsize*lnTempblk
+          ?
+          ?  "Requested Memo Stats"
+          ?  "    Blocksize    "+ALLTRIM(STR(lnTempsize))
+          ?  "    # of blocks  "+ALLTRIM(STR(lnTempblk))
+          ?  "    Filesize     "+ALLTRIM(STR(lnTempfile))+" Bytes"
+          ?
+          ? "Savings: "+ALLTRIM(STR(lnFilesize-lnTempfile))+" Bytes"
+          USE &amp;lcFilename
+          IF lnRec&gt;RECCOUNT()
+            ?
+            ? ALLTRIM(str(lnrec-reccount()))+;
+               " disconneted records in memo file."
+            ? "Please PACK MEMO and run this command again"
+          ENDIF
+          RETURN lnTempfile
+       ENDIF
+     ENDIF
+
+2. Save and close LowLevel.prg.
+
+3. Test the function by opening a table with a memo field. For this example, the
+  table is Restaurs.dbf. A blocksize of 64 will be tested. In the Command
+  window, type:
+
+     SET PROCEDURE TO LOWLEVEL.PRG
+     USE C:\FPW26\SAMPLE\ORGANIZE\DBFS\RESTAURS
+     =BLOCKTEST(64)
+
+  Note that if the current blocksize is 64, there will be no savings in creating
+  a new file with the same blocksize.
+
+4. Test it again using the following different block sizes:
+
+     =BLOCKTEST(32)
+     =BLOCKTEST(35)
+     =BLOCKTEST(40)
+
+5. To change the blocksize of Restaurs.dbf TO 40, use these commands:
+
+     SET BLOCKSIZE TO 40
+     COPY TO TEMP
+     USE
+
+     ERASE RESTAURS.DBF
+     ERASE RESTAURS.FPT
+
+     RENAME TEMP.DBF TO RESTAURS.DBF
+     RENAME TEMP.FPT TO RESTAURS.FPT
+
+Additional query words: VFoxWin FoxWin FoxDos
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

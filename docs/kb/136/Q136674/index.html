@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136674: PRB: Can’t Print GrandChild Records in One-to-Many Relation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136674: PRB: Can’t Print GrandChild Records in One-to-Many Relation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136674/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136674/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136674/","publisher":null,"image":null,"headline":"Q136674: PRB: Can’t Print GrandChild Records in One-to-Many Relation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136674-prb-cant-print-grandchild-records-in-one-to-many-relation">Q136674: PRB: Can’t Print GrandChild Records in One-to-Many Relation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136674
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A report for three tables, where the tables have a parent, child, and grandchild
+one-to-many relation, does not display all the related records in the grandchild
+table for each of the records in the child table. Only the first related
+grandchild record prints.
+
+RESOLUTION
+==========
+
+To list all the related records in the grandchild table for each of the records
+in the child table:
+
+- Use the SET SKIP command. Place it in the Init event of the report's data
+  environment to set the one-to-many relation from child and grandchild into
+  the parent.
+
+-or-
+
+- Set the IntitialSelectedAlias property of the report's data environment to
+  the child table.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the Testdata Database that should be in the \Samples\Data directory
+  under the Main Visual FoxPro directory.
+
+2. Create a new report, and call it Test.
+
+3. Open the data environment of the report and add the Customer, Orders, and
+  OrdItems tables to it. Make sure the relation is set among these tables so
+  that the Orders table is a child of the Customer table, and the OrdItems
+  table is a child of the Orders table. The OrdItems table is the grandchild of
+  Customer table.
+
+4. Set the OneToMany property of both the relations in the report data
+  environment to true (.T.-True).
+
+5. Set the Order property of the Customer table to Cust_Id and the Order
+  property of the Orders table to Order_Id.
+
+6. Set the InitialSelectedAlias property of the report data environment to the
+  Customer table.
+
+7. Create a report group for Customer.Cust_Id and another report group for
+  Orders.Order_Id.
+
+8. Place the Cust_Id and Company fields of the Customer table in the first group
+  header (Customer.Cust_Id).
+
+9. Place the Order_Id and Order_Amt fields of the Orders table in the second
+  group header (Orders.Order_Id).
+
+10. Place the Line_No,Product_ID, and Unit_Price fields of the OrdItems table in
+  the Detail band.
+
+11. Add whatever titles you think are necessary to each of the Bands.
+
+12. Preview the Report. Only one OrdItems record related to each of the Orders
+  record appears.
+
+Example Resolution
+------------------
+
+Set the InitialSelectedAlias of the report data environment to Orders.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

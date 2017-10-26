@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43895: &quot;Device Unavailable&quot;; PS/2 SETUP Doesn’t Recognize COM2 Port | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43895: &quot;Device Unavailable&quot;; PS/2 SETUP Doesn’t Recognize COM2 Port" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43895/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43895/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43895/","publisher":null,"image":null,"headline":"Q43895: &quot;Device Unavailable&quot;; PS/2 SETUP Doesn’t Recognize COM2 Port","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43895-device-unavailable-ps2-setup-doesnt-recognize-com2-port">Q43895: "Device Unavailable"; PS/2 SETUP Doesn’t Recognize COM2 Port</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43895
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890424-38 B_BasicCom | mspl13_basic
+Last Modified: 15-DEC-1989
+
+A "Device unavailable" error may occur when a QuickBASIC program
+attempts to OPEN "COM2:" and the IBM PS/2 system SETUP utility hasn't
+been configured or can't be configured to recognize COM2.
+
+This problem has been reported with the IBM PS/2 Model 30 computer.
+The SETUP utility doesn't make provisions for a second communications
+port. Therefore, the BIOS data area RS232_BASE does not contain the
+proper information that QuickBASIC is looking for. A good example is
+an internal modem card configured as COM2 that is put in the PS/2 but
+not recognized as an actual communications port. QuickBASIC looks in
+the BIOS data area to see if there is a COM2 port to use and doesn't
+find the proper information. This problem is caused by the PS/2 Model
+30 (and possibly other models) and is not a problem with QuickBASIC.
+
+The RS232_BASE area can be set with the proper COM2 information using
+a simple QuickBASIC program. This program can be found in this
+Knowledge Base by querying on the following words:
+
+   COM2 and Bad Filename and QuickBASIC
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50, Microsoft BASIC Compiler Versions 6.00 and 6.00b, and
+Microsoft BASIC PDS Version 7.00.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

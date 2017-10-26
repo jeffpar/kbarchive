@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/275/Q275134/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/275/Q275134/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/275/Q275134/","publisher":null,"image":null,"headline":"Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q275134-xadm-cannot-reply-to-mail-sent-from-user-that-changed-sites">Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q275134
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you move a user account from one Exchange Server site to another by copying
+the mailbox information to a .pst file, deleting the existing mailbox,
+recreating it in the destination site, and then importing the .pst (or by using
+ExMerge), if messages are sent from that user account before the move, the
+receiver may not be able to reply to the messages. The sender may receive a
+non-delivery report (NDR) that contains the following error message:
+
+  The recipient name is not recognized
+
+In addition, any calendar appointments that contain the moved user account are no
+longer linked to that user account.
+
+CAUSE
+=====
+
+This issue can occur because the X.500 address of the user account has changed.
+The site name is part of the X.500 address, which Exchange Server uses for
+internal mail addressing.
+
+RESOLUTION
+==========
+
+To resolve this issue, add an X.500 address that is equivalent to the X.500
+address of the mailbox before the move to the new user account mailbox:
+
+1. Start the Microsoft Exchange Server Administrator program.
+
+2. Click the mailbox for the user in the destination site.
+
+  NOTE: Make sure that the mailbox from the original site has been deleted, and
+  that the deletion has been replicated to this destination site.
+
+3. Click the E-mail Addresses tab, click New, click "Other Address" and then
+  click OK.
+
+4. In the E-mail Address box, type the following text, where
+  &lt;organization&gt; is the name of the Exchange Server organization,
+  &lt;site&gt; is the name of the previous Exchange Server site, &lt;Recipients
+  Container&gt; is the name of the recipients container where this mailbox had
+  been created, and &lt;alias&gt; is the X.500 common name (or alias) for the
+  user.
+
+  "/o=&lt;organization&gt;/ou=&lt;site&gt;/cn=&lt;Recipients
+  Container&gt;/cn=&lt;alias&gt;" (without the quotation marks)
+
+  For example, if you move a server in an Exchange Server organization that is
+  named "TestCo" from a site that is named "TestSite", and the mailbox used to
+  be in the "Recipients" container, and the user's X.500 common name is
+  TestUser, you use the following X.500 address:
+
+  "/o=TestCo/ou=TestSite/cn=Recipients/cn=TestUser" (without the quotation
+  marks)
+
+  NOTE: Make sure to keep the case of the letters consistent with the case that
+  is displayed in the Administrator program.
+
+5. In the E-mail type box, type "X500" (without the quotation marks).
+
+MORE INFORMATION
+================
+
+For additional information about how to add X.500 addresses to many users at a
+time, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q155414 XADM: Bulk Import/Export FAQ
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

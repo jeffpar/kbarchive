@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190423/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190423/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190423/","publisher":null,"image":null,"headline":"Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190423-xfor-ms-mail-migration-does-not-migrate-new-messages">Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190423
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:3.5; winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Mail for Windows, version 3.5 
+- Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you migrate users and messages from a Microsoft Mail for PC Networks
+postoffice, it may appear that some recent messages were not migrated.
+
+CAUSE
+=====
+
+When you migrate users and messages from an MS Mail (PC) postoffice, messages
+contained in the mail message file (MMF) or the Inbox on the postoffice are
+migrated to Microsoft Exchange Server. New messages that are delivered to the
+recipient after the migration is performed remain on the MS Mail (PC)
+postoffice.
+
+WORKAROUND
+==========
+
+To move new messages that were delivered after the migration to Exchange Server
+was performed, use one of the following methods.
+
+NOTE: If the recipient's mailbox has been deleted from the MS Mail (PC)
+postoffice, you must restore a backup of the postoffice to a separate folder
+before you perform one of the following procedures. After you restore a backup
+of the postoffice, have the recipient connect to the restored postoffice in the
+following procedures.
+
+- Have the recipient connect to the MS Mail (PC) postoffice using Mail for
+  Windows, and then check for new messages. Then, do one of the following:
+
+   - Perform the migration again.
+
+   - Use a Microsoft Exchange client to import the MMF that contains the new
+     messages.
+
+- Have the recipient connect to the MS Mail (PC) postoffice using the MS Mail
+  (PC) MS-DOS client and then forward all new messages to his or her Exchange
+  Server mailbox. To transfer messages between an MS Mail (PC) postoffice and
+  an Exchange Server postoffice, the appropriate transport agents must be
+  installed and functioning properly.
+
+- Have the recipient connect to the MS Mail (PC) postoffice using a Microsoft
+  Exchange client with the Microsoft Mail information service installed, and
+  then check for new messages. The messages are then transferred to the
+  recipient's mailbox on the Exchange Server computer or to a set of personal
+  folders.
+
+MORE INFORMATION
+================
+
+When you send a new message to an MS Mail (PC) recipient, the message is stored
+on the postoffice until the recipient starts Mail for Windows and then checks
+for new messages. The message is then transferred to the recipient's MMF. If you
+migrate users and messages from the MS Mail (PC) postoffice after the message
+has been received, the message is migrated to the Exchange Server computer
+regardless of whether the message has been transferred to the MMF. However, if
+the mailbox remains on the postoffice after the migration is performed, new
+messages may still be delivered to the recipient. These messages remain on the
+MS Mail (PC) postoffice and are not automatically migrated to Exchange Server.
+
+For additional information, please see the migration documentation located in the
+Migrate\Docs folder on the Exchange Server 4.0 CD-ROM.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMail350 kbMailPCN350
+Version           : WINDOWS:3.5; winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

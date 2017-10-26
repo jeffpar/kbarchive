@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158766/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158766/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158766/","publisher":null,"image":null,"headline":"Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158766-prb-valid-behavior-on-get-different-in-version-50">Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158766
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,2.6a; WINDOWS:3.0,3.0b,5.0,6.0; :3.0
+Operating System(s): 
+Keyword(s): kbinterop kbvfp300 kbvfp500 kbvfp600 kbvfp
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+- Microsoft Visual FoxPro for Macintosh, Professional Edition, version 3.0 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro for Windows 3.0x and 5.0 invoke the VALID clause upon execution of
+a MODIFY MEMO command, whereas FoxPro for Windows 2.6x does not.
+
+WORKAROUND
+==========
+
+The suggested workaround is to set a flag based on the version and test the flag
+prior to executing any Valid code.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Since Visual FoxPro for Windows is now object-oriented, the Valid event is
+firing properly. The cursor has indeed left the GET field; therefore, the MODIFY
+MEMO window now has the focus.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Enter and run the following program in both Visual FoxPro 5.0 (or 3.0x) and
+FoxPro for Windows 2.6x and notice that Visual FoxPro invokes the READ VALID
+clause, whereas FoxPro for Windows does not. On the Program menu, click Cancel
+to exit the program:
+
+     CLEAR
+     ON KEY LABEL f4 DO modiproc
+
+     *  use a table that has a memo field such as the
+     *  \foxprow\tutorial\salesman.dbf or \vfp\samples\data\employee.dbf
+     *  execute the following code which creates a Readtest.dbf.
+
+     CREATE TABLE ReadTest (char1 C(10), char2 C(10), memo1 M(4))
+     APPEND BLANK
+     REPLACE memo1 WITH ;
+     "notice that the Wait Window does display in Visual FoxPro"
+     @ 2,2 SAY 'tab into the second get field, then press the F4 key'
+     @ 4,2 GET char1
+     @ 4,20 GET char2 VALID testvalid()
+     READ
+     CLEAR READ
+
+     FUNCTION modiproc
+       MODIFY MEMO memo1
+       RETURN
+
+     FUNCTION testvalid   &amp;&amp; char2 valid
+       WAIT WINDOW "I am in the valid of the second get"
+       RETURN
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Perry Newton, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbvfp300 kbvfp500 kbvfp600 kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbVFP300Mac kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : MACINTOSH:2.5b,2.5c,2.6a; WINDOWS:3.0,3.0b,5.0,6.0; :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

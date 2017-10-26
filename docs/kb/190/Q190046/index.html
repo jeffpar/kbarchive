@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190046: INFO: VB6 Readme: Part 6 Wizard Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190046: INFO: VB6 Readme: Part 6 Wizard Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190046/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190046/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190046/","publisher":null,"image":null,"headline":"Q190046: INFO: VB6 Readme: Part 6 Wizard Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190046-info-vb6-readme-part-6-wizard-issues">Q190046: INFO: VB6 Readme: Part 6 Wizard Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q190046</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbreadme</span> <span class="n">kbwizard</span> <span class="n">kbtophit</span> <span class="n">kbActiveX</span> <span class="n">kbAppSetup</span> <span class="n">kbInternet</span> <span class="n">kbMDAC</span> <span class="n">kbVBp</span> <span class="n">kbVS600</span> <span class="n">kbWebSe</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">18</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Learning</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">information</span> <span class="n">below</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">documentation</span> <span class="k">and</span> <span class="n">workarounds</span> <span class="n">for</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="m">6.0</span><span class="p">.</span> <span class="n">This</span> <span class="n">information</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">README</span><span class="p">.</span><span class="n">htm</span> <span class="n">file</span> <span class="n">that</span> <span class="n">ships</span>
+<span class="k">with</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">Please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">REFERENCES</span>
+<span class="n">section</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span> <span class="n">for</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">articles</span>
+<span class="n">relating</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">readme</span><span class="p">.</span>
+
+<span class="n">Following</span> <span class="n">is</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">all</span> <span class="n">parts</span> <span class="k">of</span> <span class="n">the</span> <span class="n">readme</span> <span class="n">file</span><span class="p">:</span>
+
+<span class="n">Part</span> <span class="m">1.</span> <span class="n">Important</span> <span class="n">Issues</span> <span class="n">Please</span> <span class="n">Read</span> <span class="n">First</span><span class="c1">!
+</span><span class="n">Part</span> <span class="m">2.</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Issues</span> <span class="k">and</span> <span class="n">DataBinding</span> <span class="n">Tips</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">3.</span> <span class="n">Control</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">4.</span> <span class="n">Language</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">5.</span> <span class="n">Samples</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">6.</span> <span class="n">Wizard</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">7.</span> <span class="n">Error</span> <span class="n">Message</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">8.</span> <span class="n">WebClass</span> <span class="n">Designer</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">9.</span> <span class="n">DHTML</span> <span class="n">Page</span> <span class="n">Designer</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">10.</span> <span class="n">Extensibility</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">11.</span> <span class="n">Miscellaneous</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">12.</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">Issues</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">13.</span> <span class="n">Dictionary</span> <span class="n">Object</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">14.</span> <span class="n">Visual</span> <span class="n">Component</span> <span class="n">Manager</span><span class="p">.</span>
+<span class="n">Part</span> <span class="m">15.</span> <span class="n">Application</span> <span class="n">Performance</span> <span class="n">Manager</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="p">(</span><span class="n">PDW</span><span class="p">):</span>
+
+<span class="n">Automatically</span> <span class="n">Picks</span> <span class="n">Up</span> <span class="n">Files</span> <span class="k">From</span> <span class="n">Redist</span> <span class="n">Directory</span>
+<span class="p">----------------------------------------------------------------------------------------</span>
+
+<span class="n">A</span> <span class="n">new</span> <span class="n">feature</span> <span class="k">of</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">is</span> <span class="n">its</span> <span class="n">ability</span> <span class="n">pick</span> <span class="n">up</span> <span class="n">files</span>
+<span class="k">from</span> <span class="n">the</span> <span class="n">Redist</span> <span class="n">folder</span><span class="p">.</span> <span class="n">An</span> <span class="n">example</span> <span class="k">of</span> <span class="n">how</span> <span class="n">the</span> <span class="n">feature</span> <span class="n">is</span> <span class="n">used</span> <span class="n">would</span> <span class="n">follow</span> <span class="n">the</span>
+<span class="n">steps</span> <span class="n">below</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">You</span> <span class="n">have</span> <span class="n">created</span> <span class="n">an</span> <span class="n">application</span> <span class="n">that</span> <span class="n">is</span> <span class="n">ready</span> <span class="n">for</span> <span class="n">packaging</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">The</span> <span class="n">application</span> <span class="n">depends</span> <span class="n">on</span> <span class="n">a</span> <span class="n">certain</span> <span class="nf">system</span> <span class="n">file</span> <span class="s2">"MySysFile.dll"</span> <span class="n">which</span><span class="p">,</span> <span class="k">until</span>
+  <span class="n">recently</span><span class="p">,</span> <span class="n">has</span> <span class="n">been</span> <span class="n">a</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="n">file</span><span class="p">.</span> <span class="n">But</span> <span class="n">now</span> <span class="n">a</span> <span class="n">recent</span> <span class="nf">system</span> <span class="n">update</span> <span class="n">has</span>
+  <span class="n">made</span> <span class="n">that</span> <span class="n">file</span> <span class="n">dependent</span> <span class="n">on</span> <span class="n">other</span> <span class="n">files</span> <span class="k">to</span> <span class="k">function</span> <span class="n">properly</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">However</span><span class="p">,</span> <span class="n">a</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">file</span> <span class="n">is</span> <span class="n">also</span> <span class="n">supplied</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">To</span> <span class="n">simplify</span> <span class="n">setups</span><span class="p">,</span> <span class="n">you</span> <span class="n">place</span> <span class="n">that</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="k">version</span> <span class="n">into</span> <span class="n">the</span> <span class="n">Redist</span>
+  <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">When</span> <span class="n">creating</span> <span class="n">your</span> <span class="n">deployment</span> <span class="k">package</span><span class="p">,</span> <span class="n">you</span> <span class="n">navigate</span> <span class="k">to</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">file</span> <span class="k">to</span>
+  <span class="n">instruct</span> <span class="n">the</span> <span class="n">wizard</span> <span class="n">that</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">file</span> <span class="n">should</span> <span class="n">be</span> <span class="n">included</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Instead</span> <span class="k">of</span> <span class="n">picking</span> <span class="n">up</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">file</span> <span class="p">(</span><span class="n">which</span> <span class="n">is</span> <span class="n">dependent</span> <span class="n">on</span> <span class="n">other</span> <span class="n">files</span><span class="p">),</span>
+  <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">will</span> <span class="n">pick</span> <span class="n">up</span> <span class="n">the</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="k">version</span> <span class="n">that</span>
+  <span class="n">is</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Redist</span> <span class="n">directory</span><span class="p">.</span>
+
+  <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">no</span> <span class="n">files</span> <span class="n">are</span> <span class="n">placed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">redist</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">Has</span> <span class="p">[</span><span class="k">Do</span> <span class="k">Not</span> <span class="n">Redist</span><span class="p">]</span> <span class="n">Section</span>
+<span class="p">---------------------------------------------------------</span>
+
+<span class="n">A</span> <span class="n">new</span> <span class="n">section</span> <span class="n">has</span> <span class="n">been</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">VB6Dep</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span><span class="p">:</span> <span class="p">[</span><span class="k">Do</span>
+<span class="k">Not</span> <span class="n">Redist</span><span class="p">]</span>
+
+<span class="n">Two</span> <span class="n">kinds</span> <span class="k">of</span> <span class="n">files</span> <span class="n">are</span> <span class="n">listed</span> <span class="n">under</span> <span class="n">the</span> <span class="n">new</span> <span class="n">section</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Files</span> <span class="n">that</span> <span class="n">are</span> <span class="k">not</span> <span class="n">needed</span> <span class="n">at</span> <span class="nf">run</span><span class="p">-</span><span class="n">time</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">ActiveX</span> <span class="n">designers</span> <span class="n">often</span>
+  <span class="n">require</span> <span class="n">two</span> <span class="n">file</span> <span class="n">references</span><span class="p">,</span> <span class="n">one</span> <span class="n">for</span> <span class="n">design</span><span class="p">-</span><span class="n">time</span><span class="p">,</span> <span class="k">and</span> <span class="n">one</span> <span class="n">for</span> <span class="nf">run</span><span class="p">-</span> <span class="n">time</span><span class="p">.</span>
+  <span class="n">Since</span> <span class="n">the</span> <span class="n">design</span><span class="p">-</span><span class="n">time</span> <span class="n">reference</span> <span class="n">is</span> <span class="k">not</span> <span class="n">needed</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">section</span>
+  <span class="k">and</span> <span class="n">is</span> <span class="k">not</span> <span class="n">included</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Files</span> <span class="n">that</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">redistributed</span> <span class="n">by</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">.</span> <span class="n">Some</span>
+  <span class="n">dependent</span> <span class="n">files</span> <span class="n">are</span> <span class="k">not</span> <span class="n">installed</span> <span class="n">by</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">,</span> <span class="n">but</span> <span class="n">must</span> <span class="n">be</span> <span class="n">installed</span> <span class="n">by</span>
+  <span class="n">another</span> <span class="n">component</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">files</span> <span class="n">are</span> <span class="n">installed</span> <span class="n">by</span> <span class="n">Internet</span>
+  <span class="n">Explorer</span> <span class="m">4.</span><span class="n">x</span><span class="p">:</span> <span class="n">Shdocvw</span><span class="p">.</span><span class="n">dll</span> <span class="k">and</span> <span class="n">Mshtml</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="k">In</span> <span class="n">Silent</span> <span class="n">Mode</span> <span class="n">the</span> <span class="n">Notification</span>
+<span class="n">Window</span> <span class="n">May</span> <span class="k">Not</span> <span class="n">Be</span> <span class="n">First</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Window</span> <span class="n">Z</span><span class="p">-</span><span class="n">order</span>
+<span class="p">------------------------------------------------------------------------------------------------------------</span>
+
+<span class="k">With</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">possible</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="k">in</span>
+<span class="n">silent</span> <span class="n">mode</span> <span class="k">from</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span><span class="p">.</span> <span class="n">When</span> <span class="n">doing</span> <span class="n">so</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">also</span> <span class="k">set</span> <span class="n">a</span> <span class="n">path</span> <span class="n">for</span>
+<span class="n">logging</span> <span class="n">the</span> <span class="n">wizard</span><span class="s1">'s output (/l ). With the path set, the wizard will create a
+log of events. If you do not use the argument, the wizard will instead display a
+dialog box to notify you of the wizard'</span><span class="n">s</span> <span class="n">completion</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">the</span> <span class="n">window</span> <span class="n">is</span> <span class="k">not</span>
+<span class="n">always</span> <span class="n">obvious</span> <span class="n">because</span> <span class="n">it</span> <span class="n">may</span> <span class="n">be</span> <span class="n">underneath</span> <span class="n">other</span> <span class="n">windows</span><span class="p">.</span> <span class="k">In</span> <span class="n">order</span> <span class="k">to</span> <span class="n">see</span> <span class="n">it</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="k">to</span> <span class="n">close</span> <span class="k">or</span> <span class="nf">minimize</span> <span class="n">all</span> <span class="n">other</span> <span class="n">windows</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span><span class="p">,</span> <span class="n">search</span> <span class="n">online</span> <span class="n">for</span> <span class="s2">"running as a stand-alone"</span> <span class="k">in</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="n">Concepts</span> <span class="k">in</span> <span class="n">the</span> <span class="n">MSDN</span> <span class="n">Library</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="m">6.0</span> <span class="n">documentation</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Command</span> <span class="n">Line</span> <span class="n">Mode</span> <span class="n">Argument</span> <span class="n">Added</span> <span class="n">for</span>
+<span class="n">Specifying</span> <span class="n">Executable</span> <span class="n">Path</span>
+<span class="p">----------------------------------------------------------------------------------------------</span>
+
+<span class="n">An</span> <span class="n">argument</span> <span class="n">has</span> <span class="n">been</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">mode</span> <span class="k">of</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span>
+<span class="n">Wizard</span><span class="p">.</span> <span class="n">The</span> <span class="n">argument</span> <span class="n">is</span> <span class="n">shown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">table</span> <span class="n">below</span><span class="p">:</span>
+
+<span class="n">Argument</span>       <span class="n">Description</span>
+
+<span class="p">/</span><span class="n">e</span> <span class="n">path</span>        <span class="n">Use</span> <span class="n">the</span> <span class="n">argument</span> <span class="k">to</span> <span class="k">set</span> <span class="n">the</span> <span class="n">path</span> <span class="n">for</span> <span class="n">the</span> <span class="n">project</span><span class="s1">'s
+              executable file if it is different from the project'</span><span class="n">s</span>
+              <span class="n">path</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">argument</span> <span class="n">allows</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">mode</span> <span class="k">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">in</span> <span class="n">a</span> <span class="n">multi</span><span class="p">-</span><span class="n">developer</span>
+<span class="n">environment</span> <span class="n">where</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">is</span> <span class="n">dedicated</span> <span class="k">to</span> <span class="n">compiling</span> <span class="n">the</span> <span class="n">project</span> <span class="k">and</span> <span class="n">creating</span>
+<span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span><span class="p">,</span> <span class="n">search</span> <span class="n">online</span> <span class="k">with</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">selected</span><span class="p">,</span>
+<span class="n">for</span> <span class="n">running</span> <span class="k">as</span> <span class="n">a</span> <span class="n">stand</span><span class="p">-</span><span class="n">alone</span> <span class="k">in</span> <span class="n">the</span> <span class="n">MSDN</span> <span class="n">Library</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="m">6.0</span>
+<span class="n">documentation</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Manually</span> <span class="n">Add</span> <span class="n">User</span> <span class="n">Control</span> <span class="n">License</span> <span class="n">Files</span>
+<span class="p">----------------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">creating</span> <span class="n">a</span> <span class="k">package</span> <span class="n">for</span> <span class="n">a</span> <span class="n">user</span> <span class="n">control</span> <span class="n">that</span> <span class="n">requires</span> <span class="n">a</span> <span class="n">license</span> <span class="n">key</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">license</span> <span class="n">file</span> <span class="p">(.</span><span class="n">vbl</span><span class="p">)</span> <span class="n">is</span> <span class="k">not</span> <span class="n">automatically</span> <span class="n">included</span><span class="p">.</span> <span class="n">Instead</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">add</span> <span class="n">the</span>
+<span class="n">file</span> <span class="n">manually</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">are</span> <span class="n">at</span> <span class="n">the</span> <span class="n">dialog</span> <span class="n">titled</span> <span class="s2">"Package and Deployment Wizard Included Files,"</span>
+<span class="n">click</span> <span class="n">the</span> <span class="n">Add</span> <span class="n">button</span> <span class="k">and</span> <span class="n">search</span> <span class="n">for</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="p">.</span><span class="n">vbl</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Steps</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">Deployment</span> <span class="n">Process</span>
+<span class="p">------------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">post</span> <span class="n">an</span> <span class="n">Internet</span> <span class="k">package</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span>
+<span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">the</span> <span class="n">wizard</span> <span class="k">uses</span> <span class="n">a</span> <span class="n">technology</span> <span class="n">known</span> <span class="k">as</span> <span class="n">WebPost</span> <span class="k">to</span> <span class="n">copy</span> <span class="n">your</span>
+<span class="k">package</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span> <span class="k">and</span> <span class="n">process</span> <span class="n">it</span> <span class="n">appropriately</span><span class="p">.</span> <span class="n">These</span> <span class="n">are</span> <span class="n">the</span> <span class="n">steps</span> <span class="n">that</span> <span class="n">the</span>
+<span class="n">WebPost</span> <span class="n">process</span> <span class="n">goes</span> <span class="n">through</span> <span class="n">when</span> <span class="n">processing</span> <span class="n">your</span> <span class="p">.</span><span class="n">cab</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">It</span> <span class="n">extracts</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">into</span> <span class="n">a</span> <span class="n">temporary</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">It</span> <span class="n">locates</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">for</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span><span class="p">,</span> <span class="n">the</span> <span class="n">WebPost</span> <span class="n">process</span> <span class="n">installs</span>
+  <span class="n">application</span> <span class="n">files</span> <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">RInstallApplicationFiles</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span>
+  <span class="n">file</span><span class="p">),</span> <span class="n">installs</span> <span class="nf">system</span> <span class="n">files</span> <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">RiinstallSystemFiles</span> <span class="n">section</span><span class="p">),</span> <span class="k">and</span>
+  <span class="n">installs</span> <span class="n">shared</span> <span class="n">files</span> <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">RInstallSharedFiles</span> <span class="n">section</span><span class="p">).</span> <span class="k">In</span> <span class="n">the</span>
+  <span class="n">process</span><span class="p">,</span> <span class="n">it</span> <span class="n">registers</span> <span class="n">any</span> <span class="n">necessary</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">DefaultInstall</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">is</span> <span class="k">not</span> <span class="nf">run</span><span class="p">,</span> <span class="n">because</span> <span class="n">the</span>
+<span class="n">instructions</span> <span class="n">it</span> <span class="n">contains</span> <span class="n">often</span> <span class="n">require</span> <span class="n">user</span> <span class="n">input</span><span class="p">.</span> <span class="n">The</span> <span class="n">WebPost</span> <span class="n">process</span> <span class="n">also</span> <span class="n">does</span>
+<span class="k">not</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">virtual</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">your</span> <span class="n">application</span><span class="p">,</span> <span class="k">if</span> <span class="n">one</span> <span class="n">is</span> <span class="n">required</span><span class="p">;</span>
+<span class="n">directories</span> <span class="n">must</span> <span class="n">be</span> <span class="k">set</span> <span class="n">up</span> <span class="k">in</span> <span class="n">advance</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Web</span> <span class="n">Deployment</span> <span class="n">Tips</span> <span class="n">for</span> <span class="n">HTTP</span> <span class="k">or</span> <span class="n">FTP</span> <span class="n">Protocol</span>
+<span class="p">---------------------------------------------------------------------------</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">you</span> <span class="n">are</span> <span class="n">attempting</span> <span class="k">to</span> <span class="n">deploy</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">is</span> <span class="n">copied</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">server</span> <span class="n">but</span> <span class="n">is</span> <span class="k">not</span> <span class="n">unpacked</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">you</span> <span class="n">included</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">Items</span> <span class="k">to</span> <span class="n">Deploy</span> <span class="n">screen</span><span class="p">,</span> <span class="k">and</span> <span class="n">that</span> <span class="n">you</span> <span class="n">used</span> <span class="n">HTTP</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">the</span> <span class="n">protocol</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">Web</span> <span class="n">Publishing</span> <span class="n">Site</span> <span class="n">screen</span><span class="p">.</span> <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">have</span> <span class="n">checked</span> <span class="n">the</span> <span class="n">Unpack</span> <span class="k">and</span>
+  <span class="n">Install</span> <span class="n">Server</span><span class="p">-</span><span class="n">Side</span> <span class="n">Cab</span> <span class="n">check</span> <span class="n">box</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">Publishing</span> <span class="n">Site</span> <span class="n">screen</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span>
+  <span class="n">did</span> <span class="k">not</span><span class="p">,</span> <span class="n">try</span> <span class="n">re</span><span class="p">-</span><span class="n">deploying</span> <span class="n">your</span> <span class="k">package</span> <span class="n">again</span> <span class="k">with</span> <span class="n">this</span> <span class="n">option</span> <span class="n">selected</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">Cab</span> <span class="n">unpacking</span> <span class="n">is</span> <span class="n">supported</span> <span class="n">by</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span> <span class="n">running</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">4.0</span><span class="p">.</span>
+  <span class="k">If</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">error</span> <span class="n">saying</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">you</span> <span class="n">selected</span> <span class="n">does</span> <span class="k">not</span>
+  <span class="n">support</span> <span class="n">the</span> <span class="n">service</span> <span class="n">provider</span> <span class="n">you</span> <span class="n">selected</span><span class="p">,</span> <span class="n">there</span> <span class="n">are</span> <span class="n">several</span> <span class="n">things</span> <span class="n">you</span> <span class="n">can</span>
+  <span class="k">do</span> <span class="k">to</span> <span class="n">try</span> <span class="k">to</span> <span class="n">fix</span> <span class="n">this</span> <span class="n">problem</span><span class="p">:</span>
+
+   <span class="p">-</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">the</span> <span class="n">HTTP</span> <span class="n">Post</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">Posting</span> <span class="n">Acceptor</span>
+     <span class="n">is</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">your</span> <span class="n">Web</span> <span class="n">server</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">running</span> <span class="n">IIS</span> <span class="m">4.0</span><span class="p">,</span> <span class="n">install</span>
+     <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">running</span> <span class="n">IIS</span> <span class="m">3.0</span><span class="p">,</span> <span class="n">install</span> <span class="n">Posting</span> <span class="n">Acceptor</span>
+     <span class="m">1.0</span><span class="p">.</span> <span class="n">Cab</span> <span class="n">unpacking</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span> <span class="n">by</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">1.0</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="n">Ensure</span> <span class="n">that</span> <span class="n">your</span> <span class="n">URL</span> <span class="n">is</span> <span class="n">correct</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">HTTP</span> <span class="n">Post</span><span class="p">,</span> <span class="n">ensure</span> <span class="n">that</span>
+     <span class="n">your</span> <span class="n">URL</span> <span class="n">begins</span> <span class="k">with</span> <span class="s2">"http://"</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">FTP</span><span class="p">,</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">your</span> <span class="n">URL</span>
+     <span class="n">begins</span> <span class="k">with</span> <span class="s2">"ftp://"</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">uploading</span> <span class="k">to</span> <span class="n">a</span> <span class="n">server</span> <span class="n">location</span> <span class="n">that</span> <span class="n">has</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">1.0</span>
+     <span class="n">installed</span><span class="p">,</span> <span class="n">you</span> <span class="n">cannot</span> <span class="n">select</span> <span class="n">the</span> <span class="n">option</span> <span class="k">to</span> <span class="n">unpack</span> <span class="k">and</span> <span class="n">install</span> <span class="n">your</span> <span class="n">cabinet</span>
+     <span class="n">files</span> <span class="n">when</span> <span class="n">you</span> <span class="n">deploy</span> <span class="n">your</span> <span class="k">package</span> <span class="n">using</span> <span class="n">the</span> <span class="n">wizard</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span>
+     <span class="n">error</span> <span class="n">C0042115</span> <span class="n">that</span> <span class="n">the</span> <span class="n">query</span> <span class="k">string</span> <span class="n">INSTALL</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">,</span> <span class="n">check</span> <span class="n">your</span> <span class="n">server</span>
+     <span class="n">configuration</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">what</span> <span class="k">version</span> <span class="k">of</span> <span class="n">posting</span> <span class="n">acceptor</span> <span class="n">is</span> <span class="n">installed</span><span class="p">.</span>
+     <span class="k">If</span> <span class="n">it</span> <span class="n">is</span> <span class="k">version</span> <span class="m">1.</span><span class="n">x</span><span class="p">,</span> <span class="n">deploy</span> <span class="n">your</span> <span class="n">cab</span> <span class="n">again</span><span class="p">,</span> <span class="n">making</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">deselect</span> <span class="n">the</span>
+     <span class="n">Unpack</span> <span class="k">and</span> <span class="n">Install</span> <span class="n">Server</span><span class="p">-</span><span class="n">Side</span> <span class="n">Cab</span> <span class="n">option</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="k">If</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">FTP</span> <span class="n">protocol</span> <span class="k">to</span> <span class="n">post</span> <span class="k">to</span> <span class="n">a</span> <span class="n">URL</span> <span class="n">beginning</span> <span class="k">with</span>
+     <span class="s2">"http://"</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">error</span> <span class="n">by</span> <span class="n">adding</span> <span class="n">the</span> <span class="n">following</span>
+     <span class="n">entry</span> <span class="k">to</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">your</span> <span class="n">Web</span> <span class="n">server</span><span class="s1">'s postinfo.asp file, usually located
+     in the scripts directory on the Web server:
+     [{02B5E1D1-8B7C-11D0-AD45-00AA00A219AA}] ServerName=" &lt;%=
+     Request.ServerVariables("SERVER_NAME") %&gt;"
+
+- MDAC installation requires DCOM95 to be installed. Setup programs created
+  with the Package and Deployment Wizard install the Microsoft Data Access
+  Components (MDAC), which includes OLE DB, ADO and Jet, via the MDAC installer
+  program: Mdac_typ.exe. This EXE requires that the machine being installed to
+  have DCOM95 (or the newer DCOM98) installed on it.
+
+  If the MDAC intaller fails with a "DLL registration failed" message, this is
+  because DCOM was not found on the machine. To restore functionality of
+  existing data components, install DCOM95 and run the installer again.
+
+- If you use the HTTP Post protocol and receive an error that you do not have
+  write access for the Web server, open the Internet Service Manager on the
+  server computer, access the node for your Default Web Site (Console Root \
+  Internet Information Server \ machinename \ Default Web Site), choose
+  Properties, select the Home Directory tab, and check the Write check box.
+
+- If your files are read-only when you try to post, you will receive an error
+  C0042116 announcing that processing has stopped. Change your file attributes
+  to proceed.
+
+- Be aware that if you post a file to a directory where the same file already
+  exists, the file on the server will be overwritten and no warning message
+  will be displayed.
+
+- If you use the FTP protocol and receive an error that access is denied, open
+  the Internet Service Manager on the server computer, access the node for your
+  Default FTP Site (Console Root \ Internet Information Server \ machinename \
+  Default FTP Site), choose Properties, select the Home Directory tab, and
+  check the Write check box.
+
+- If you use the FTP protocol and receive additional errors besides the one
+  described in the previous bullet, make sure that you have properly configured
+  your FTP service on the Web server. To do so, start the Microsoft Management
+  Console (MMC), then follow these steps:
+
+1. Right-click on Default FTP Site and choose New Virtual Directory.
+
+2. Enter an alias to be used to access the virtual directory, then click Next.
+
+3. Enter the physical path of the directory to which to map the virtual
+  directory (for example, c:\inetpub\ftproot) then click Next.
+
+4. Select the appropriate access permissions, making sure to allow write access
+  so that your deployments can proceed without errors, then click Finish.
+
+5. Right-click on Default FTP Site and choose Stop.
+
+6. Right-click on Default FTP Site and choose Start.
+
+  When you deploy to the FTP server using the Package and Deployment Wizard, use
+  the site FTP://servername/alias where alias is the alias you assigned in step
+  2. Use the username "anonymous" and the password "me@somewhere" for anonymous
+  login.
+
+Package and Deployment Wizard: Start Menu Items: Run Option Not Supported
+-------------------------------------------------------------------------
+
+When creating a package for deployment, you can also create a Start menu item.
+Although it is mentioned in the Help topic for the dialog box, the Run option is
+not supported.
+
+System Configurations for WebPost'</span><span class="n">s</span> <span class="n">Posting</span> <span class="n">Acceptor</span>
+<span class="p">----------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">deploy</span> <span class="n">your</span> <span class="n">packages</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">server</span><span class="p">,</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span>
+<span class="k">uses</span> <span class="n">a</span> <span class="n">technology</span> <span class="n">known</span> <span class="k">as</span> <span class="n">WebPost</span> <span class="k">to</span> <span class="n">move</span> <span class="n">your</span> <span class="n">files</span> <span class="k">to</span> <span class="n">the</span> <span class="n">desired</span> <span class="n">location</span><span class="p">.</span>
+<span class="n">WebPost</span> <span class="n">consists</span> <span class="k">of</span> <span class="n">two</span> <span class="n">main</span> <span class="n">components</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">which</span> <span class="n">sends</span> <span class="n">your</span> <span class="n">content</span> <span class="k">to</span> <span class="n">a</span> <span class="n">qualified</span>
+  <span class="n">site</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">Posting</span> <span class="n">Acceptor</span><span class="p">,</span> <span class="n">located</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">server</span><span class="p">,</span> <span class="n">that</span> <span class="n">enables</span> <span class="n">the</span> <span class="n">posting</span> <span class="k">of</span>
+  <span class="n">content</span> <span class="k">to</span> <span class="n">an</span> <span class="n">IIS</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">There</span> <span class="n">are</span> <span class="n">multiple</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">available</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">you</span>
+<span class="n">install</span> <span class="n">the</span> <span class="n">correct</span> <span class="k">version</span> <span class="n">on</span> <span class="n">your</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">based</span> <span class="n">on</span> <span class="n">your</span> <span class="n">machine</span>
+<span class="n">configuration</span><span class="p">.</span> <span class="n">The</span> <span class="n">following</span> <span class="n">table</span> <span class="n">lists</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">configurations</span><span class="p">:</span>
+
+<span class="n">Use</span> <span class="n">this</span>                  <span class="k">if</span> <span class="n">you</span> <span class="n">are</span> <span class="n">running</span>        <span class="n">Comments</span>
+<span class="p">--------------------------------------------------------------------------</span>
+<span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span>     <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="k">with</span> <span class="n">SP3</span>   <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span>
+<span class="n">IIS</span> <span class="m">4.0</span>                                            <span class="n">supports</span> <span class="n">both</span> <span class="n">content</span>
+
+                                                  <span class="n">posting</span> <span class="k">and</span> <span class="n">the</span>
+                                                  <span class="n">unpacking</span> <span class="k">of</span> <span class="n">cabinet</span>
+                                                  <span class="p">(.</span><span class="n">cab</span><span class="p">)</span> <span class="n">files</span> <span class="n">on</span> <span class="n">the</span>
+                                                  <span class="n">server</span><span class="p">.</span>
+
+<span class="n">Posting</span> <span class="n">Acceptor</span>         <span class="m">1.0</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span>        <span class="n">You</span> <span class="n">cannot</span> <span class="n">unpack</span> <span class="p">.</span><span class="n">cab</span>
+                        <span class="k">with</span> <span class="n">SP3</span>                  <span class="k">with</span> <span class="n">this</span> <span class="k">version</span>
+                        <span class="n">IIS</span> <span class="m">3.0</span>                   <span class="n">files</span> <span class="k">of</span> <span class="n">posting</span>
+                                                  <span class="n">acceptor</span><span class="p">.</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">for</span>
+                                                  <span class="n">content</span> <span class="n">posting</span> <span class="n">only</span><span class="p">.</span>
+                                                  <span class="n">You</span> <span class="n">can</span> <span class="n">move</span> <span class="n">your</span>
+                                                  <span class="n">files</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span>
+                                                  <span class="k">and</span> <span class="k">then</span> <span class="n">manually</span>
+                                                  <span class="n">register</span> <span class="n">any</span> <span class="n">necessary</span>
+                                                  <span class="n">files</span> <span class="n">that</span> <span class="n">would</span> <span class="n">have</span>
+                                                  <span class="n">been</span> <span class="n">registered</span> <span class="n">by</span> <span class="n">the</span>
+                                                  <span class="p">.</span><span class="n">cab</span> <span class="n">process</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">does</span> <span class="k">not</span> <span class="n">work</span> <span class="n">on</span> <span class="n">any</span> <span class="n">platforms</span> <span class="n">that</span> <span class="n">are</span> <span class="n">using</span> <span class="n">Personal</span> <span class="n">Web</span>
+<span class="n">Server</span> <span class="k">or</span> <span class="n">Peer</span> <span class="n">Web</span> <span class="n">Server</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">use</span> <span class="n">IIS</span><span class="p">.</span> <span class="n">Steps</span> <span class="n">for</span> <span class="n">installing</span> <span class="n">Microsoft</span>
+<span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="k">or</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span>
+<span class="n">Editions</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Launch</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="k">or</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">setup</span> <span class="k">from</span> <span class="n">your</span> <span class="n">installation</span> <span class="n">CDs</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">When</span> <span class="n">prompted</span> <span class="k">to</span> <span class="n">choose</span> <span class="k">options</span> <span class="k">to</span> <span class="n">install</span><span class="p">,</span> <span class="n">click</span> <span class="n">Install</span> <span class="n">Server</span> <span class="n">Applications</span>
+  <span class="k">and</span> <span class="n">Tools</span><span class="p">,</span> <span class="k">then</span> <span class="n">click</span> <span class="k">Next</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Click</span> <span class="n">Launch</span> <span class="n">the</span> <span class="n">BackOffice</span> <span class="n">Installation</span> <span class="n">Wizard</span><span class="p">,</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Install</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Now</span> <span class="n">select</span> <span class="n">the</span> <span class="n">radio</span> <span class="n">button</span> <span class="n">for</span> <span class="n">Custom</span><span class="p">,</span> <span class="k">then</span> <span class="n">click</span> <span class="k">Next</span><span class="p">.</span> <span class="n">You</span> <span class="n">will</span> <span class="n">see</span> <span class="n">the</span>
+  <span class="k">options</span> <span class="k">to</span> <span class="n">install</span> <span class="k">and</span> <span class="n">their</span> <span class="n">sizes</span><span class="p">.</span> <span class="n">Click</span> <span class="k">Next</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Select</span> <span class="n">Microsoft</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">install</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">2.0</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Deploy</span> <span class="n">folder</span> <span class="k">of</span> <span class="n">Visual</span> <span class="n">Studio</span>
+<span class="n">installation</span> <span class="n">CD</span> <span class="n">number</span> <span class="m">2.</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">1.0</span> <span class="n">can</span> <span class="n">be</span> <span class="n">installed</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">Microsoft</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">Information</span> <span class="n">Website</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">install</span> <span class="n">Posting</span>
+<span class="n">Acceptor</span> <span class="m">2.0</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">that</span> <span class="n">already</span> <span class="n">has</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Option</span> <span class="n">Pack</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">should</span> <span class="n">first</span> <span class="n">check</span> <span class="k">to</span> <span class="n">see</span> <span class="k">if</span> <span class="k">version</span> <span class="m">1.0</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">is</span> <span class="n">already</span>
+<span class="n">installed</span><span class="p">.</span> <span class="k">If</span> <span class="n">so</span><span class="p">,</span> <span class="n">remove</span> <span class="n">it</span> <span class="n">before</span> <span class="n">installing</span> <span class="k">version</span> <span class="m">2.0</span><span class="p">.</span> <span class="k">To</span> <span class="n">determine</span> <span class="k">if</span> <span class="m">1.0</span>
+<span class="n">is</span> <span class="n">installed</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span> <span class="n">NT</span> <span class="n">Option</span> <span class="n">Pack</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Add</span><span class="p">/</span><span class="n">Remove</span> <span class="n">Programs</span> <span class="n">mechanism</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">Control</span> <span class="n">Panel</span><span class="p">.</span> <span class="n">Click</span> <span class="n">Add</span><span class="p">/</span><span class="n">Remove</span><span class="p">,</span> <span class="k">then</span> <span class="n">look</span> <span class="n">for</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="m">1.0</span> <span class="n">among</span>
+<span class="n">the</span> <span class="n">components</span> <span class="n">listed</span><span class="p">.</span> <span class="n">You</span> <span class="n">may</span> <span class="n">find</span> <span class="n">it</span> <span class="n">under</span> <span class="n">Microsoft</span> <span class="n">Site</span> <span class="n">Server</span><span class="p">.</span> <span class="k">If</span> <span class="n">it</span> <span class="n">is</span>
+<span class="n">installed</span><span class="p">,</span> <span class="n">remove</span> <span class="n">it</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="k">then</span> <span class="n">install</span> <span class="k">version</span> <span class="m">2.0</span> <span class="n">by</span> <span class="n">running</span> <span class="n">PASetup</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Edit</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">File</span> <span class="k">If</span> <span class="n">You</span>
+<span class="n">Rebuild</span> <span class="n">Cabs</span> <span class="k">From</span> <span class="n">Batch</span> <span class="n">File</span>
+<span class="p">--------------------------------------------------------------------------------------</span>
+
+<span class="n">After</span> <span class="n">creating</span> <span class="n">a</span> <span class="n">standard</span> <span class="n">setup</span> <span class="k">package</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">can</span> <span class="n">manually</span> <span class="n">recreate</span> <span class="n">the</span> <span class="n">setup</span> <span class="n">files</span> <span class="p">(</span><span class="n">Setup</span><span class="p">.</span><span class="n">exe</span><span class="p">,</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">,</span> <span class="k">and</span> <span class="n">all</span> <span class="p">.</span><span class="n">cab</span>
+<span class="n">files</span><span class="p">)</span> <span class="n">by</span> <span class="n">running</span> <span class="n">the</span> <span class="n">batch</span> <span class="n">file</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Support</span> <span class="n">folder</span><span class="p">.</span> <span class="n">Doing</span> <span class="n">this</span>
+<span class="n">allows</span> <span class="n">you</span> <span class="k">to</span> <span class="n">manually</span> <span class="n">customize</span> <span class="n">the</span> <span class="k">package</span> <span class="k">or</span> <span class="k">to</span> <span class="n">recreate</span> <span class="n">a</span> <span class="k">package</span> <span class="n">without</span>
+<span class="n">running</span> <span class="n">the</span> <span class="n">wizard</span> <span class="n">again</span><span class="p">.</span> <span class="n">Running</span> <span class="n">the</span> <span class="n">batch</span> <span class="n">file</span> <span class="n">will</span> <span class="n">copy</span> <span class="n">setup</span><span class="p">.</span><span class="n">exe</span> <span class="k">and</span>
+<span class="n">setup</span><span class="p">.</span><span class="n">lst</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Support</span> <span class="n">folder</span> <span class="k">to</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span> <span class="k">and</span> <span class="n">will</span> <span class="n">generate</span> <span class="n">the</span>
+<span class="n">cab</span> <span class="n">file</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">once</span> <span class="n">the</span> <span class="n">batch</span> <span class="n">file</span> <span class="n">is</span> <span class="n">finished</span><span class="p">,</span>
+<span class="n">setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">will</span> <span class="k">not</span> <span class="n">know</span> <span class="n">how</span> <span class="n">many</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span> <span class="n">were</span> <span class="n">generated</span><span class="p">.</span> <span class="n">Unless</span> <span class="n">this</span> <span class="n">problem</span>
+<span class="n">is</span> <span class="n">remedied</span><span class="p">,</span> <span class="n">the</span> <span class="n">setup</span> <span class="n">program</span> <span class="n">will</span> <span class="n">fail</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">remedy</span> <span class="n">this</span> <span class="n">situation</span><span class="p">,</span> <span class="k">do</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Before</span> <span class="n">running</span> <span class="n">the</span> <span class="n">batch</span> <span class="n">file</span><span class="p">,</span> <span class="n">delete</span> <span class="n">all</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">After</span> <span class="n">running</span> <span class="n">the</span> <span class="n">batch</span> <span class="n">file</span><span class="p">,</span> <span class="k">count</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">cabs</span> <span class="n">produced</span> <span class="n">by</span> <span class="n">the</span> <span class="n">batch</span>
+  <span class="n">operation</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span> <span class="k">with</span> <span class="n">a</span> <span class="n">text</span> <span class="n">editor</span><span class="p">.</span> <span class="n">NOTE</span><span class="p">:</span> <span class="n">There</span>
+  <span class="n">are</span> <span class="n">two</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">files</span><span class="p">.</span> <span class="n">One</span> <span class="n">is</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Support</span> <span class="n">folder</span><span class="p">.</span> <span class="n">The</span> <span class="n">second</span> <span class="n">is</span>
+  <span class="n">found</span> <span class="n">outside</span> <span class="n">the</span> <span class="n">Support</span> <span class="n">folder</span><span class="p">,</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span> <span class="n">where</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span>
+  <span class="n">are</span> <span class="n">created</span><span class="p">.</span> <span class="n">Be</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">text</span> <span class="n">editor</span><span class="p">,</span> <span class="n">look</span> <span class="n">for</span> <span class="n">the</span> <span class="n">following</span> <span class="n">lines</span><span class="p">,</span> <span class="n">which</span> <span class="n">are</span> <span class="n">at</span> <span class="n">the</span> <span class="n">top</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">file</span><span class="p">):</span>
+
+     <span class="p">[</span><span class="n">Bootstrap</span><span class="p">]</span>
+     <span class="n">SetupTitle</span><span class="p">=</span><span class="n">Install</span>
+     <span class="n">SetupText</span><span class="p">=</span><span class="n">Copying</span> <span class="n">Files</span><span class="p">,</span> <span class="n">please</span> <span class="n">stand</span> <span class="n">by</span><span class="p">.</span>
+     <span class="n">CabFile</span><span class="p">=</span><span class="n">Projec1</span><span class="p">.</span><span class="n">CAB</span>
+     <span class="n">Spawn</span><span class="p">=</span><span class="n">Setup1</span><span class="p">.</span><span class="n">exe</span>
+     <span class="n">Uninstal</span><span class="p">=</span><span class="n">st6unst</span><span class="p">.</span><span class="n">exe</span>
+     <span class="n">TmpDir</span><span class="p">=</span><span class="n">msftqws</span><span class="p">.</span><span class="n">pdw</span>
+
+<span class="m">5.</span> <span class="n">After</span> <span class="n">the</span> <span class="n">last</span> <span class="n">line</span> <span class="p">(</span><span class="n">TmpDir</span><span class="p">=</span><span class="n">msftqws</span><span class="p">.</span><span class="n">pdw</span><span class="p">),</span> <span class="n">insert</span> <span class="n">the</span> <span class="n">following</span> <span class="n">line</span> <span class="n">where</span> <span class="n">N</span>
+  <span class="n">equals</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">cabs</span> <span class="n">generated</span><span class="p">:</span>
+
+  <span class="n">Cabs</span><span class="p">=</span><span class="n">N</span>
+
+<span class="n">The</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">should</span> <span class="n">now</span> <span class="n">be</span> <span class="n">up</span> <span class="k">to</span> <span class="n">date</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">setup</span> <span class="n">won</span><span class="s1">'t fail.
+
+Package And Deployment Wizard: Error 80042114
+---------------------------------------------
+
+If you are creating a package for Internet deployment and you get the following
+error:
+
+  "Unexpected error 80042114 has occurred: The Web server you selected does not
+  indicate support for the service provider you selected. Do you want to
+  proceed anyway?"
+
+This error occurs because you have specified that your package should be posted
+to an FTP site using an HTTP URL. If you are certain that you have access
+privileges to the web server, you can click "Yes" and the deployment will
+proceed.
+
+To avoid this error in the future, when creating a package for deployment on the
+same server, specify the site and its protocol. When you do so, the following
+dialog box will appear:
+
+"The specified URL and publishing method can be saved in the registry as a Web
+publishing site. This ensures that the URL and publishing method are valid and
+saves you time in future deployments to this site. Do you want to store this
+information as a Web publishing site?"
+
+If you select "yes," this saves the site information and you will no longer
+receive the 80042114 error.
+
+Package and Deployment Wizard: Use Mdac_typ.Cab and Mdac20.Cab to
+Distribute Data Access Components
+---------------------------------------------------------------------------------------------------
+
+When your Internet Package includes any of the following four files, the wizard
+will by default set these files to be downloaded from:
+
+http://activex.microsoft.com/controls/vb6/mdac_typ.cab
+
+MSDAOSP.dll
+MSADO15.dll
+MSADCF.dll
+ODBC32.dll
+
+Similarly, the wizard will, by default, set the following files to be downloaded
+from:
+
+http://activex.microsoft.com/controls/vb6/mdac20.cab
+
+MSADOR15.dll
+MSADCO.dll
+
+In both cases, these defaults are indicated as the "Download from Microsoft Web
+site" option on the File Source screen. These cab files (mdac_typ.cab and
+mdac20.cab) perform special handling that should not be attempted manually. In
+order to ensure that the proper handling takes place, your Internet cab should
+not include these files but rather should reference the cabs. Therefore, you
+should never choose the "Include in this cab" option for any of these files. In
+addition, if you choose the "Download from alternate Web site" option, you
+should be careful to specify cabs that are copies of these cabs to ensure that
+the proper handling takes place.
+
+Do not change the default settings for these files.
+
+Package and Deployment Wizard: Manually Include .ASP and .HTM Files
+For IIS Applications When Using Standard Setup
+------------------------------------------------------------------------------------------------------------------
+
+If you use the Package and Deployment Wizard'</span><span class="n">s</span> <span class="n">standard</span> <span class="n">setup</span> <span class="k">to</span> <span class="n">deploy</span> <span class="n">an</span> <span class="n">IIS</span>
+<span class="n">application</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">manually</span> <span class="k">include</span> <span class="n">any</span> <span class="p">.</span><span class="n">asp</span> <span class="k">or</span> <span class="p">.</span><span class="n">htm</span> <span class="n">files</span> <span class="k">with</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+<span class="n">Add</span> <span class="n">the</span> <span class="n">files</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Include</span> <span class="n">Files</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Bad</span> <span class="n">Date</span> <span class="k">and</span> <span class="n">Time</span> <span class="n">Formats</span>
+<span class="p">--------------------------------------------------------</span>
+
+<span class="k">In</span> <span class="n">certain</span> <span class="n">situations</span><span class="p">,</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">will</span> <span class="n">incorrectly</span> <span class="nb">write</span>
+<span class="n">time</span> <span class="k">and</span> <span class="n">date</span> <span class="n">information</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span><span class="p">.</span> <span class="n">When</span> <span class="n">this</span> <span class="n">occurs</span><span class="p">,</span> <span class="n">the</span> <span class="n">setup</span>
+<span class="n">will</span> <span class="n">fail</span> <span class="n">because</span> <span class="n">the</span> <span class="n">dates</span> <span class="n">will</span> <span class="n">be</span> <span class="n">written</span> <span class="k">in</span> <span class="n">a</span> <span class="n">form</span> <span class="n">that</span> <span class="n">the</span> <span class="n">setup</span><span class="p">.</span><span class="n">exe</span> <span class="n">can</span><span class="s1">'t
+read. The problem occurs when you create a deployment package using the US
+version of Visual Basic on:
+
+- A computer using the German version of Windows (NOTE: the German version of
+  Visual Basic will work correctly.)
+
+- Any computer where the date separator isn'</span><span class="n">t</span> <span class="n">either</span> <span class="n">a</span> <span class="k">forward</span> <span class="n">slash</span> <span class="p">(</span><span class="s2">"/"</span><span class="p">)</span> <span class="k">or</span> <span class="n">a</span>
+  <span class="n">dash</span> <span class="p">(</span><span class="s2">"-"</span><span class="p">).</span>
+
+<span class="k">To</span> <span class="n">fix</span> <span class="n">the</span> <span class="n">bad</span> <span class="n">formats</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">From</span> <span class="n">the</span> <span class="n">Start</span> <span class="n">menu</span><span class="p">,</span> <span class="n">open</span> <span class="n">Control</span> <span class="n">Panel</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Click</span> <span class="n">the</span> <span class="n">Regional</span> <span class="n">Settings</span> <span class="n">icon</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Date</span> <span class="n">tab</span><span class="p">,</span> <span class="n">change</span> <span class="n">the</span> <span class="n">Date</span> <span class="n">separator</span> <span class="k">to</span> <span class="s2">"/"</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Time</span> <span class="n">tab</span><span class="p">,</span> <span class="n">change</span> <span class="n">the</span> <span class="n">Time</span> <span class="n">separator</span> <span class="k">to</span> <span class="s2">":"</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="nf">Run</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Restore</span> <span class="n">the</span> <span class="n">date</span> <span class="k">and</span> <span class="n">time</span> <span class="n">settings</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Unable</span> <span class="k">to</span> <span class="nf">Run</span> <span class="n">Setup</span><span class="p">.</span><span class="n">exe</span> <span class="n">on</span>
+<span class="n">First</span> <span class="n">Windows</span> <span class="m">95</span> <span class="k">Version</span>
+<span class="p">----------------------------------------------------------------------------------</span>
+
+<span class="n">Any</span> <span class="n">setup</span> <span class="k">package</span> <span class="n">built</span> <span class="k">with</span> <span class="n">the</span> <span class="n">wizard</span> <span class="n">will</span> <span class="k">not</span> <span class="n">launch</span> <span class="n">on</span> <span class="n">certain</span> <span class="n">installations</span>
+<span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">due</span> <span class="k">to</span> <span class="n">lack</span> <span class="k">of</span> <span class="n">support</span> <span class="n">for</span> <span class="n">an</span> <span class="n">API</span> <span class="k">in</span> <span class="n">the</span> <span class="n">original</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span>
+<span class="n">Oleaut32</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span> <span class="n">This</span> <span class="n">failure</span> <span class="n">will</span> <span class="k">not</span> <span class="n">occur</span> <span class="n">on</span> <span class="n">OS</span> <span class="n">release</span> <span class="m">2</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="k">or</span> <span class="n">any</span>
+<span class="n">versions</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="k">and</span> <span class="n">later</span><span class="p">,</span> <span class="k">and</span> <span class="n">will</span> <span class="k">not</span> <span class="n">occur</span> <span class="k">if</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="m">97</span>
+<span class="k">or</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="m">3.0</span> <span class="k">or</span> <span class="m">4.0</span> <span class="n">has</span> <span class="n">been</span> <span class="n">installed</span><span class="p">.</span> <span class="n">Any</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">a</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="m">5.0</span> <span class="n">application</span> <span class="n">will</span> <span class="n">also</span> <span class="n">remedy</span> <span class="n">the</span> <span class="n">situation</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">work</span> <span class="n">around</span>
+<span class="n">this</span> <span class="n">failure</span> <span class="n">by</span> <span class="n">first</span> <span class="n">overwriting</span> <span class="n">the</span> <span class="n">older</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Oleaut32</span><span class="p">.</span><span class="n">dll</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">latest</span> <span class="k">version</span><span class="p">.</span> <span class="n">Be</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">shut</span> <span class="n">down</span> <span class="n">all</span> <span class="n">applications</span> <span class="n">before</span> <span class="n">attempting</span> <span class="k">to</span>
+<span class="n">manually</span> <span class="n">update</span> <span class="n">Oleaut32</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">:</span> <span class="n">Packaging</span> <span class="n">ActiveX</span> <span class="n">Documents</span>
+<span class="p">----------------------------------------------------------</span>
+
+<span class="n">The</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">can</span> <span class="n">insert</span> <span class="n">CODEBASE</span><span class="p">=</span> <span class="k">and</span>
+<span class="k">VERSION</span><span class="p">=</span> <span class="n">information</span> <span class="n">directly</span> <span class="n">embedded</span> <span class="n">into</span> <span class="n">the</span> <span class="p">.</span><span class="n">vbd</span> <span class="n">file</span> <span class="n">for</span> <span class="n">your</span> <span class="n">ActiveX</span>
+<span class="n">Document</span> <span class="n">project</span><span class="p">.</span> <span class="n">This</span> <span class="n">eliminates</span> <span class="n">the</span> <span class="n">need</span> <span class="n">for</span> <span class="n">having</span> <span class="n">the</span> <span class="n">extra</span> <span class="p">.</span><span class="n">htm</span> <span class="n">file</span>
+<span class="n">previously</span> <span class="n">used</span> <span class="k">to</span> <span class="n">launch</span> <span class="n">ActiveX</span> <span class="n">Documents</span><span class="p">.</span> <span class="n">The</span> <span class="n">embedded</span> <span class="n">information</span> <span class="n">allows</span>
+<span class="n">Internet</span> <span class="n">Explorer</span> <span class="k">to</span> <span class="nb">read</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">name</span> <span class="n">for</span> <span class="n">your</span> <span class="n">ActiveX</span> <span class="n">Document</span> <span class="n">code</span> <span class="k">and</span>
+<span class="k">version</span> <span class="n">information</span> <span class="k">from</span> <span class="n">the</span> <span class="p">.</span><span class="n">vbd</span> <span class="n">file</span> <span class="k">and</span> <span class="n">carry</span> <span class="n">out</span> <span class="n">the</span> <span class="n">installation</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span>
+<span class="n">now</span> <span class="n">navigate</span> <span class="n">directly</span> <span class="k">to</span> <span class="n">the</span> <span class="p">.</span><span class="n">VBD</span> <span class="n">file</span> <span class="k">and</span> <span class="n">your</span> <span class="n">User</span> <span class="n">document</span> <span class="n">code</span> <span class="n">will</span> <span class="n">download</span>
+<span class="k">if</span> <span class="n">necessary</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">same</span> <span class="n">functionality</span> <span class="n">was</span> <span class="n">available</span> <span class="n">for</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">5.0</span> <span class="n">setup</span> <span class="n">using</span> <span class="n">the</span>
+<span class="n">SetCodeBase</span> <span class="n">utility</span> <span class="n">found</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Owners</span> <span class="n">Area</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">are</span> <span class="n">some</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span>
+<span class="n">generated</span> <span class="n">setups</span> <span class="n">for</span> <span class="n">User</span> <span class="n">documents</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="m">3.</span><span class="n">x</span><span class="p">.</span> <span class="m">4.0</span><span class="p">,</span> <span class="k">and</span> <span class="m">4.01</span> <span class="n">cannot</span> <span class="nb">read</span> <span class="n">the</span> <span class="n">embedded</span> <span class="n">information</span> <span class="k">in</span>
+  <span class="n">the</span> <span class="n">VBD</span> <span class="n">file</span><span class="p">.</span> <span class="n">The</span> <span class="n">wizard</span> <span class="n">also</span> <span class="n">generates</span> <span class="n">an</span> <span class="n">old</span> <span class="p">(</span><span class="n">VB5</span><span class="p">)</span> <span class="n">style</span> <span class="p">.</span><span class="n">htm</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span>
+  <span class="p">.</span><span class="n">htm</span> <span class="n">file</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">launch</span> <span class="n">ActiveX</span> <span class="n">Documents</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">first</span> <span class="n">modify</span> <span class="n">the</span>
+  <span class="p">.</span><span class="n">htm</span> <span class="n">file</span><span class="p">,</span> <span class="n">however</span><span class="p">,</span> <span class="n">since</span> <span class="n">most</span> <span class="k">of</span> <span class="n">the</span> <span class="n">code</span> <span class="n">is</span> <span class="n">commented</span> <span class="n">out</span><span class="p">.</span> <span class="n">After</span> <span class="n">removing</span>
+  <span class="n">the</span> <span class="n">comments</span> <span class="k">and</span> <span class="n">an</span> <span class="n">extra</span> <span class="p">&lt;</span><span class="n">A</span><span class="p">&gt;</span> <span class="n">tag</span> <span class="p">(&lt;</span><span class="n">a</span>
+  <span class="n">href</span><span class="p">=</span><span class="n">xxxx</span><span class="p">.</span><span class="n">VBD</span><span class="p">&gt;</span><span class="n">xxxxx</span><span class="p">.</span><span class="n">VBD</span><span class="p">&lt;/</span><span class="n">a</span><span class="p">&gt;)</span> <span class="k">from</span> <span class="n">the</span> <span class="n">top</span><span class="p">,</span> <span class="k">from</span> <span class="n">the</span> <span class="n">top</span><span class="p">,</span> <span class="n">the</span> <span class="n">file</span>
+  <span class="n">will</span> <span class="n">only</span> <span class="n">be</span> <span class="n">an</span> <span class="n">OBJECT</span> <span class="n">tag</span> <span class="k">with</span> <span class="n">the</span> <span class="n">CLSID</span> <span class="k">of</span> <span class="n">your</span> <span class="n">User</span> <span class="n">document</span> <span class="k">and</span> <span class="n">some</span>
+  <span class="n">script</span> <span class="n">code</span> <span class="n">for</span> <span class="n">Window_OnLoad</span> <span class="n">event</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="m">4.01</span> <span class="k">with</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="k">and</span> <span class="n">later</span> <span class="n">will</span> <span class="nb">read</span> <span class="n">this</span>
+  <span class="n">information</span> <span class="n">correctly</span> <span class="k">from</span> <span class="n">the</span> <span class="p">.</span><span class="n">vbd</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">articles</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+<span class="n">Q170164</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">1</span><span class="p">:</span> <span class="n">Important</span> <span class="n">Issues</span> <span class="n">Read</span> <span class="n">First</span><span class="c1">!
+</span>
+<span class="n">Q170163</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">2</span><span class="p">:</span> <span class="n">Data</span> <span class="n">Access</span><span class="p">/</span><span class="n">Databinding</span> <span class="n">Issues</span>
+
+<span class="n">Q170162</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">3</span><span class="p">:</span> <span class="n">Control</span> <span class="n">Issues</span>
+
+<span class="n">Q170161</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">4</span><span class="p">:</span> <span class="n">Language</span> <span class="n">Issues</span>
+
+<span class="n">Q170160</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">5</span><span class="p">:</span> <span class="n">Samples</span> <span class="n">Issues</span>
+
+<span class="n">Q170158</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">7</span><span class="p">:</span> <span class="n">Error</span> <span class="n">Message</span> <span class="n">Issues</span>
+
+<span class="n">Q189539</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">8</span><span class="p">:</span> <span class="n">WebClass</span> <span class="n">Designer</span> <span class="n">Issues</span>
+
+<span class="n">Q190249</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">9</span><span class="p">:</span> <span class="n">DHTML</span> <span class="n">Page</span> <span class="n">Designer</span> <span class="n">Issues</span>
+
+<span class="n">Q170154</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">10</span><span class="p">:</span> <span class="n">Extensibility</span> <span class="n">Issues</span>
+
+<span class="n">Q170157</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">11</span><span class="p">:</span> <span class="n">Miscellaneous</span> <span class="n">Issues</span>
+
+<span class="n">Q170156</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">12</span><span class="p">:</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">Issues</span>
+
+<span class="n">Q191792</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">13</span><span class="p">:</span> <span class="n">Dictionary</span> <span class="n">Object</span>
+
+<span class="n">Q191791</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">14</span><span class="p">:</span> <span class="n">Visual</span> <span class="n">Component</span> <span class="n">Manager</span>
+
+<span class="n">Q191790</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">15</span><span class="p">:</span> <span class="n">Application</span> <span class="n">Performance</span> <span class="n">Explorer</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbreadme</span> <span class="n">kbwizard</span> <span class="n">kbtophit</span> <span class="n">kbActiveX</span> <span class="n">kbAppSetup</span> <span class="n">kbInternet</span> <span class="n">kbMDAC</span> <span class="n">kbVBp</span> <span class="n">kbVS600</span> <span class="n">kbWebServer</span> <span class="n">kbFAQ</span> <span class="n">kbVBp600FAQ</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVBSearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbZNotKeyword6</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbVB600Search</span> <span class="n">kbVB600</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">6.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

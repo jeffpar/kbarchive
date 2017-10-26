@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245101/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245101/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245101/","publisher":null,"image":null,"headline":"Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245101-sms-lsm-is-case-sensitive-when-comparing-domain-names">Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245101
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200bug kbsms200fix kbsms200sp2fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Logon Server Manager uses a case-sensitive string comparison to detect if a
+domain is still active. It first builds a list of domain configuration files by
+using the domain names from the Ntlogon.pcf file, and then later checks this
+list against a list in the registry to detect any missing domains.
+
+If the domain name in the .pcf file is not the same case as the domain name
+stored in the registry, the check is unsuccessful and the service marks the
+domain as DEINSTALL_PENDING. This can cause sites managing that domain to
+repeatedly add and remove the logon files and folders from the logon points.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To install the update, use the appropriate method.
+
+Method 1: Using the Update Installer
+------------------------------------
+
+NOTE: This method is only for I386-based computers.
+
+1. Copy the update folder structure to a share on your network. Q245101.exe is a
+  Microsoft Windows Installer file that updates specific files on your site
+  server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the Systems Management Server Administrator
+  console.
+
+4. Run Q245101.exe and follow the directions in the wizard. You can run the file
+  in Quiet mode using the /s switch.
+
+Method 2: Manual Installation
+-----------------------------
+
+1. Close the Systems Management Server Administrator console and stop the
+  Systems Management Server Site Component Manager and Systems Management
+  Server Executive services.
+
+2. Replace the Nt_logon.dll file in the
+  &lt;sms_root_directory&gt;\Bin\&lt;platform&gt; folder with the version
+  obtained from the update.
+
+3. Replace the Ntlg_rem.exe file in the
+  &lt;sms_root_directory&gt;\Bin\&lt;platform&gt; folder with the version
+  obtained from the update.
+
+4. Restart the Systems Management Server Site Component Manager and Systems
+  Management Server Executive services.
+
+
+Additional query words: prodsms deinstall fail fails lsm
+
+======================================================================
+Keywords          : kbsms200bug kbsms200fix kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

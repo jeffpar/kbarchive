@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256312: FTP DIR Command Shows Time Created Instead of Year | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256312: FTP DIR Command Shows Time Created Instead of Year" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256312/","publisher":null,"image":null,"headline":"Q256312: FTP DIR Command Shows Time Created Instead of Year","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256312-ftp-dir-command-shows-time-created-instead-of-year">Q256312: FTP DIR Command Shows Time Created Instead of Year</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256312
+Product(s): Internet Information Server
+Version(s): winnt:2.0,3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 2.0, 3.0, 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you issue an FTP dir command against an IIS FTP server, one or more of the
+files listed may not display the year created. Instead, the time created is
+displayed.
+
+MORE INFORMATION
+================
+
+The IIS FTP server is configured to display UNIX-style directory listings. As
+per the UNIX specification, files created in the current year display the time
+of creation instead of the year of creation.
+
+Example:
+
+  ftp&gt; dir
+  200 PORT command successful.
+  150 Opening ASCII mode data connection for /bin/ls.
+  -r-xr-xr-x   1 owner    group               1 Jun  3  1999 NotCurrentYear.txt
+  -r-xr-xr-x   1 owner    group               1 Mar  6 21:11 CurrentYear.txt
+
+If you require the time and year to be displayed, change to the MS-DOS directory
+listing style. To do this, perform the following steps:
+
+1. Open the IIS Microsoft Management Console (MMC).
+
+2. Edit the properties for the FTP service.
+
+3. On the Home Directory tab, change the Directory Listing Style to MS-DOS.
+
+4. Click OK.
+
+5. Restart the FTP service.
+
+After you make this change, the directory listing appears as follows:
+
+  ftp&gt; dir
+  200 PORT command successful.
+  150 Opening ASCII mode data connection for /bin/ls.
+  06-03-99  10:57PM                    1 NotCurrentYear.txt
+  03-06-00  09:11PM                    1 CurrentYear.txt
+
+Additional query words: FTP UNIX date time timestamp year
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200
+Version           : winnt:2.0,3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

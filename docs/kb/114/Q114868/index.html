@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114868: Error 0126 When You Start the Net2Com Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114868: Error 0126 When You Start the Net2Com Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114868/","publisher":null,"image":null,"headline":"Q114868: Error 0126 When You Start the Net2Com Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114868-error-0126-when-you-start-the-net2com-service">Q114868: Error 0126 When You Start the Net2Com Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114868
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 15-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Net2Com utility included with the Windows NT Resource Kit
+from the Services applet of Control Panel, error 0126 is generated.
+
+CAUSE
+=====
+
+The error is caused by missing null characters on some of the Net2Com entries in
+the Windows NT Registry. The cause of the error is not Net2Com but Net2Set, the
+installation program for Net2Com. Net2Set fails to write the additional
+terminator byte to the Registry. This causes the service loader to receive
+invalid information and thus generate the error. The problem occurs only if you
+install the Windows NT Resource Kit from floppy disks.
+
+RESOLUTION
+==========
+
+A corrected version of Net2Set is included on the Windows NT Resource Kit on
+CD-ROM.
+
+If you are unable to install the Windows NT Resource Kit from CD-ROM, you can
+work around this problem by doing the following:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (REGEDT32.EXE) and choose the following subkey:
+
+     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Net2com
+
+2. Choose the SERVICEDLL value.
+
+3. Make sure the NUM LOCK key is not selected.
+
+4. Press END, SPACEBAR, BACKSPACE.
+
+5. Choose the OK button.
+
+  This causes Registry Editor to rewrite the value with the correct number of
+  terminator characters.
+
+6. Repeat steps 3-5 for the SERVICEINIT and SERVICEMAIN values.
+
+7. Quit Registry Editor and start the Net2Com service.
+
+The products included here are manufactured by ESDL Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: prodnt esdl winntrk ntas reskit err msg
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : 3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

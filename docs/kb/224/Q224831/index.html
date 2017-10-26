@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224831/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224831/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224831/","publisher":null,"image":null,"headline":"Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224831-tips-on-upgrading-from-iis-30-to-iis-40">Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224831
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides tips on upgrading a Web site from Internet Information
+Server (IIS) 3.0 to IIS 4.0
+
+MORE INFORMATION
+================
+
+CAUTION: When you run the Windows NT 4.0 Option Pack (NTOP) Setup program, Do
+Not click the Cancel button once it has begun copying files. If you cancel it at
+this time, you will have to completely rebuild the Web server.
+
+If you are using PERL in any of your Web pages, refer to the following Microsoft
+Knowledge Base articles:
+
+  Q190011 Perl Script Mappings Converted to Uppercase During Upgrade
+
+  Q186801 PERL Scripts Do Not Run
+
+Note: A version of PERL that some IIS users use is provided by ActiveState. For
+more information, visit:
+
+  http://www.activestate.com/
+
+
+If you use the logging features of IIS, read:
+
+  Q183733 Active Log Format Drop-down List Is Not Populated
+
+Although it's not a requirement, it is recommended that you Do Not modify the
+Default Web site. If possible, leave it as-is, and instead, create a new Web
+site or sites for your pages. Changing the default permissions and other
+properties of the Default Web site can cause upgrade complications.
+
+If the system administrator has restricted access or permissions to the Web
+server directories, you may have problems when upgrading. To verify that the
+NTFS permissions are set up properly, refer to the following Knowledge Base
+article:
+
+  Q187506 List of NTFS Permissions Required for IIS Site to Work
+
+IIS 4.0 installation creates two user accounts: IUSR_&lt;machinename&gt; and
+IWAM_&lt;machinename&gt;. These two accounts are required during the latter part
+of the NTOP installation, specifically by Index Server and the Sample Sites. If
+the domain controllers are not synchronized in time for that part of the
+installation, the accounts will not be available, and the installation will
+fail.
+
+To avoid this situation when you install on a BDC, choose a custom installation,
+and deselect Index Server and the Sample Sites. After the installation has
+completed and the domain controllers have been synchronized, run the NTOP Setup
+again, and selectively install Index Server and the Sample Sites.
+
+When you run the Windows NT 4.0 Option Pack Setup program, click the Upgrade Plus
+button to perform a custom installation. Leave everything checked that is
+already selected by default, and then select additional components that you
+want, such as additional samples and documentation.
+
+NOTE: This problem does not occur with the Windows 2000 Indexing Service.
+
+Related Topics
+--------------
+
+For information on the benefits of upgrading from IIS 3.0 to IIS 4.0, see:
+
+  http://www.microsoft.com/ntserver/web/exec/overview/option_pack4.asp
+
+For tuning tips on IIS 4.0, download the self-extracting document "Tuning
+Parameters for High-Volume Sites" from:
+
+  http://www.microsoft.com/ntserver/zipdocs/tuning.exe
+
+Additional query words: tricks caveats gotchas problems advice advise guidance suggestions recommendations hints set up nt4op ntop install installation
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

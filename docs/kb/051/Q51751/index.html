@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51751: Generating .COM Files with QuickAssembler Can Cause Link Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51751: Generating .COM Files with QuickAssembler Can Cause Link Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51751/","publisher":null,"image":null,"headline":"Q51751: Generating .COM Files with QuickAssembler Can Cause Link Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51751-generating-com-files-with-quickassembler-can-cause-link-error">Q51751: Generating .COM Files with QuickAssembler Can Cause Link Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51751
+Product(s): See article
+Version(s): 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr | mspl13_masm
+Last Modified: 17-JAN-1990
+
+The QuickC Version 2.01 compiler (i.e., QuickAssembler) can and will
+generate .COM files for assembly language programs. Current support
+for the TINY model (.COM files) is not extended to C programs. Thus,
+the program must be in assembly language source code, not in C source
+code.
+
+Both the assembler and linker in QuickC 2.01 support the TINY memory
+model. The C module does not support the TINY memory model.
+
+The information contained in the README.DOC, Part 5, Subsection 386,
+states the following:
+
+   "...the following command lines each produce a file with a .COM
+    extension:
+
+      QCL /AT sample.asm /link /TINY
+      QCL /Fesample.com sample.asm /link /TINY  ..."
+
+The second command successfully generates a .COM file, but the first
+command generates the following error message:
+
+   LINK: fatal error L1093: CRTCOM.OBJ: object not found
+
+Typing the following also generates the same error message:
+
+   qcl /AT sample.asm
+
+The following are four ways to correctly generate a .COM file:
+
+1. Type the following as listed in the README.DOC.:
+
+      QCL /Fesample.com sample.asm /link /TINY
+
+2. Type the following:
+
+      qcl /AT /c sample.asm
+
+   Then, type the following:
+
+      link /TINY sample.obj
+
+3. Through the menu options in the environment, make the following
+   selections:
+
+      Options.Make.Linker_Flags.Global_Flags.Generate .COM file
+
+   Note: Full menus must be activated and then Options.Make.
+   Linker_Flags.Debug_Flags.Incremental_Link must be disabled.
+
+4. Type the following:
+
+      QCL sample.asm /link /TINY
+
+   This creates a sample.EXE file that is actually in the .COM format.
+   It should be renamed immediately to SAMPLE.COM. This method is also
+   correctly listed in the README.DOC.
+
+Note: The source code must also contain the ".MODEL tiny" directive
+for all of the above methods.
+
+Microsoft is researching this problem and will post new information
+here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

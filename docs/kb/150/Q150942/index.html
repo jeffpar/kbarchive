@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150942: PRB: ISAM Tuning Information Not Read From VB.INI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150942: PRB: ISAM Tuning Information Not Read From VB.INI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150942/","publisher":null,"image":null,"headline":"Q150942: PRB: ISAM Tuning Information Not Read From VB.INI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150942-prb-isam-tuning-information-not-read-from-vbini">Q150942: PRB: ISAM Tuning Information Not Read From VB.INI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150942
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbDatabase kbIISAM
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ISAM tuning information is not automatically read from the VB.INI file in
+the design environment or the &lt;application&gt;.INI in the executable
+program.
+
+When using Visual Basic 4.0 with one of the ISAM drivers, unexpected behavior or
+errors occur. For example, setting Deleted=on in the [dBase ISAM] section of the
+VB.INI or &lt;application name&gt;.INI has no effect on the visibility of
+deleted records. Also, when trying to connect to a Paradox 4.x table, Visual
+Basic gives the error message:
+
+  Can't open this Paradox 4.x table because ParadoxNetStyle is set to 3.x in.
+
+For developers working with Paradox 4.X tables, this means that their
+applications cannot access those tables at design time. Specifically, right
+clicking on a DBGrid and selecting "Retrieve Fields" will generate the error
+message described above. Also, the DataField property of bound controls will not
+be populated automatically. This means that the DataField property cannot be
+filled by selecting from the drop-down list of fields in the table. However, the
+field can still be entered at design time by typing it in. If the
+DBEngine.IniPath property is correctly assigned and contains the necessary
+information, the application will behave properly at run time.
+
+Both the 16-bit and 32-bit versions of the Visual Basic database engine look for
+the [Installable ISAM] information, such as the [Paradox ISAM] and [dbase ISAM]
+sections, in the system registry.
+
+
+The 32-bit edition also looks for the ISAM tuning information in the system
+registry. The 16-bit version does not.
+
+The 16-bit edition looks for the ISAM tuning information in a specified INI file.
+Unlike Visual Basic 3.0, it does not default to the VB.INI file or
+&lt;application&gt;.INI file.
+
+STATUS
+======
+
+This behavior is by design.
+
+WORKAROUND
+==========
+
+To work around this problem in the 16-bit edition of Visual Basic, specify an
+.INI file that contains the ISAM entries using the INIPath property of the
+DBEngine object, and set all properties at run-time. For example:
+
+     Sub Form_Load ()
+
+        'Do before any other references to DAO objects or data control.
+        DBEngine.INIPath = "VB.INI"
+        'All other code
+
+     End Sub
+
+To work around this problem in the 32-bit edition of Visual Basic, specify a
+Registry key such as:
+
+  ...\Engines\SomeISAM
+
+where SomeISAM = Xbase, Paradox, Excel, Text, or Lotus, and the ... specifies any
+Registry key you specify.
+
+Use the DBEngine.INIPath property as documented above to point to the Registry
+Key up to, but not including, the Engines Key (the ...).
+
+If ... = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.0", then the settings are
+system wide and DBEngine.INIPath does not need to be used.
+
+NOTE: The full path to the .Ini file must be included, Visual Basic will not
+automatically look in the Windows directory.
+
+For further information see:
+
+"The Jet Database Engine Programmer's Guide", Appendix C.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbDatabase kbIISAM 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

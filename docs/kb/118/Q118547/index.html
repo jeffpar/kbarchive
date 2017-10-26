@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118547: PRB: Multithreaded Program Crashes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118547: PRB: Multithreaded Program Crashes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118547/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118547/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118547/","publisher":null,"image":null,"headline":"Q118547: PRB: Multithreaded Program Crashes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118547-prb-multithreaded-program-crashes">Q118547: PRB: Multithreaded Program Crashes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118547
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbFL32 kbFortranPS
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A program that uses the multithread run-time library fails to run to completion
+or generates a Dr. Watson access-violation error message.
+
+CAUSE
+=====
+
+This behavior can occur if the compile options are not consistent with the
+libraries included in linking.
+
+RESOLUTION
+==========
+
+If the program is linked using the MSFRT.LIB and MSVCRT.LIB files, your object
+modules must be compiled using the -MD option.
+
+NOTE: This behavior was changed in Microsoft FORTRAN PowerStation version 4.0.
+
+MORE INFORMATION
+================
+
+To demonstrate the problem and workaround, compile the sample code below
+(TESTC), using the four different tests listed. The first two tests demonstrate
+the problem, while the last two tests show two sets of options that do not cause
+problems:
+
+Test 1
+------
+
+The TESTC created using these options will produce a Dr. Watson error message:
+
+     CL -c TESTC.CPP
+     FL32 -LD TESTF.FOR
+     FL32 -MD TESTC.OBJ TESTF.LIB
+
+Test 2
+------
+
+The TESTC created using these options will not produce an error message, but will
+fail to run completely and will not produce any output:
+
+     CL -c -MD TESTC.CPP
+     FL32 -LD TESTF.FOR
+     FL32 -ML TESTC.OBJ TESTF.LIB
+
+-or-
+
+     FL32 -MT TESTC.OBJ TESTF.LIB
+
+Test 3
+------
+
+The TESTC created using these options will create a TESTC program that is linked
+to MSFRT.LIB and MSVCCRT.LIB. The actual run-time code is in the DLLs MSFRT10
+and MSVCRT10. This TESTC will correctly display the message, "Factorial of 7 is:
+5040":
+
+     CL -c -MD TESTC.CPP
+     FL32 -LD TESTF.FOR
+     FL32 -MD TESTC.OBJ TESTF.LIB
+
+Test 4
+------
+
+The TESTC created using these options has the run-time code statically linked
+into the executable file. It will also correctly display the message, "Factorial
+of 7 is: 5040":
+
+     CL -c TESTC.CPP
+     FL32 -LD TESTF.FOR
+     FL32 -ML TESTC.OBJ TESTF.LIB
+
+-or-
+
+     FL32 -MT TESTC.OBJ TESTF.LIB
+
+C Sample Code
+-------------
+
+  /* Compile options needed: see text above
+  */ 
+     #include &lt;iostream.h&gt;
+     extern "C" {void __stdcall FACT (int n, int *amt);}
+     int main() {
+        int amt;
+        FACT(7, &amp;amt);
+        cout &lt;&lt; "Factorial of 7 is: " &lt;&lt; amt;
+        return 0;
+     }
+
+FORTRAN Sample Code
+-------------------
+
+  C Compile options needed: see text above
+        SUBROUTINE Fact[DLLEXPORT](n, amt)
+        INTEGER*4 n [VALUE]
+        INTEGER*4 amt [REFERENCE]
+        INTEGER*4 i
+        amt = 1
+        DO i = 1, n
+          amt = amt * i
+        END DO
+        END
+
+Additional query words: 1.00 multi-thread
+
+======================================================================
+Keywords          : kbcode kbCompiler kbFL32 kbFortranPS 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

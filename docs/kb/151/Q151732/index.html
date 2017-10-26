@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151732: MSB Solar: How to Change the Installation Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151732: MSB Solar: How to Change the Installation Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151732/","publisher":null,"image":null,"headline":"Q151732: MSB Solar: How to Change the Installation Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151732-msb-solar-how-to-change-the-installation-folder">Q151732: MSB Solar: How to Change the Installation Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151732
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbsetup kbimu
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Magic School Bus Explores the Solar System, you are not given
+the option to specify the folder in which the program is installed. After you
+finish installing the program, however, you can move or change the name of the
+folder in which Magic School Bus Explores the Solar System is installed.
+
+The following is the default folder in which Magic School Bus Explores the Solar
+System is installed:
+
+  C:\Mskids\Msbsolar
+
+If you want to move or change the name of the Msbsolar folder, you must use a
+text editor (such as Notepad or WordPad) to edit the Msbsolar.ini file in the
+Mskids\Msbsolar folder to reflect the new location or name of the Msbsolar
+folder.
+
+MORE INFORMATION
+================
+
+The [Media] section of the Msbsolar.ini file contains the following default
+entries
+
+     [Media]
+     count=2
+     mdf1=C:\MSKIDS\MSBSOLAR\MSBAMB.MDF
+     cmf1=C:\MSKIDS\MSBSOLAR\MSBAMB.CMF
+     root1=&lt;drive&gt;:\MSBSOLAR\ 
+     mdf2=C:\MSKIDS\MSBSOLAR\MSBSOLAR.MDF
+     cmf2=C:\MSBSOLAR\MSBSOLAR.CMF
+     root2=C:\MSBSOLAR\ 
+
+where C is the letter of the hard disk on which Microsoft Windows is installed,
+and &lt;drive&gt; is the letter of your CD-ROM drive.
+
+To move the Msbsolar folder from the C:\Mskids folder to the C:\Apps folder, for
+example, you must make the following changes to the default entries in the
+Msbsolar.ini file
+
+     [Media]
+     count=2
+     mdf1=&lt;C&gt;:\APPS\MSBSOLAR\MSBAMB.MDF
+     cmf1=&lt;C&gt;:\APPS\MSBSOLAR\MSBAMB.CMF
+     root1=&lt;D&gt;:\MSBSOLAR\ 
+     mdf2=&lt;C&gt;:\APPS\MSBSOLAR\MSBSOLAR.MDF
+     cmf2=&lt;D&gt;:\MSBSOLAR\MSBSOLAR.CMF
+     root2=&lt;D&gt;:\MSBSOLAR\ 
+
+where C is the letter of the hard disk on which Microsoft Windows is installed,
+and &lt;drive&gt; is the letter of your CD-ROM drive.
+
+If You Use Microsoft Windows 95/98
+----------------------------------
+
+After you move or change the name of the Msbsolar folder and modify the
+Msbsolar.ini file as noted above, Windows 95/98 updates the program item
+properties automatically when you start the program.
+
+If You Use Microsoft Windows 3.x
+--------------------------------
+
+In Program Manager, you must change the program item properties for the Magic
+School Bus - Solar System icon to reflect the new name or location of the
+Msbsolar folder. To do this, follow these steps:
+
+1. In Program Manager, double-click the Microsoft Kids program group.
+
+2. Click the Magic School Bus - Solar System icon.
+
+3. On the File menu, click Properties.
+
+4. In the Command Line box, type "C:\Apps\Msbsolar\Msbsolar.exe" (without the
+  quotation marks), where C:\Apps\Msbsolar\Msbsolar.exe is the path to the
+  Msbsolar.exe file.
+
+5. In the Working Directory box, type "C:\Apps\Msbsolar" (without the quotation
+  marks), where C:\Apps\Msbsolar is the path to the folder in which Magic
+  School Bus Explores the Solar System is installed.
+
+6. Click OK.
+
+Additional query words: 1.00 mskids msb msbss schoolbus magicbus setup
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticSolar kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

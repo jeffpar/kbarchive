@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150431: PRB: Using Enhanced Metafiles in COleServerItem | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150431: PRB: Using Enhanced Metafiles in COleServerItem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150431/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150431/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150431/","publisher":null,"image":null,"headline":"Q150431: PRB: Using Enhanced Metafiles in COleServerItem","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150431-prb-using-enhanced-metafiles-in-coleserveritem">Q150431: PRB: Using Enhanced Metafiles in COleServerItem</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150431
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbCOMt kbInplaceAct kbMetafile kbMFC kbVC400 kbVC410 kbVC420 kbGrpDSMFC
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Enhanced metafiles do not appear in a non-active state in a OLE client when they
+are used by the server to render the image. A call to CDC::PlayMetaFile() in the
+OnDraw of the COleServerItem-derived class fails if it is passed an enhanced
+metafile.
+
+CAUSE
+=====
+
+When an OLE client application asks the server for a metafile representation of
+the server data when it is in an inactive state or using Paste Special, the
+application asks for it in a standard metafile format (CF_METAFILEPICT). The
+server cannot respond to this request. However, most images can be rendered
+without a problem using standard metafiles.
+
+When COleClientItem::Draw calls the IViewObject2::Draw to render the cached
+metafile representation, it needs to receive a metafile and not an enhanced
+metafile. When COleServerItem::OnDraw is called, the DC passed is for a standard
+metafile, not an enhanced metafile, so the rendering into the DCneeds to be
+limited to items understood by a standard metafile.
+
+RESOLUTION
+==========
+
+If your server is using enhanced metafiles, and the client is asking it to
+render to an standard metafile, you need to make a conversion. You can use
+GetEnhMetafileBits() to get each command of the enhanced metafile and copy the
+commands to a standard metafile using SetMetafileBitsEx(), or you can use the
+GetWinMetaFileBits() function to make the conversion.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Use the metafile format rather than the enhanced metafile. Check the
+documentation on the features of enhanced metafiles to determine whether this
+usage is appropriate for your application.
+
+REFERENCES
+==========
+
+For more information on enhanced metafiles, see the "Enhanced-Format Metafiles"
+section in Online Help.
+
+Additional query words: 4.00 4.10 4.20
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbInplaceAct kbMetafile kbMFC kbVC400 kbVC410 kbVC420 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

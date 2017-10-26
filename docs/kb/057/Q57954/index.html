@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57954: EMS Support in Windows Versions 3.0 and 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57954: EMS Support in Windows Versions 3.0 and 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57954/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57954/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57954/","publisher":null,"image":null,"headline":"Q57954: EMS Support in Windows Versions 3.0 and 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57954-ems-support-in-windows-versions-30-and-31">Q57954: EMS Support in Windows Versions 3.0 and 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57954
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information listed below discusses the following topics:
+
+1. Windows version 3.x support of EMS.
+
+2. Utilization of the services of an already-installed LIM EMS
+  (Lotus/Intel/Microsoft Expanded Memory Support) version 4.0 driver, such as a
+  "limulator" or hardware EMS board by Windows version 3.x.
+
+3. Making EMS calls from an application not based on Windows.
+
+4. Making EMS calls from a Windows-based application.
+
+MORE INFORMATION
+================
+
+1. Windows version 3.x support of EMS.
+
+  Windows version 3.x has three modes: real mode, standard mode, and enhanced
+  mode. Of the three, only enhanced mode provides EMS. This is because
+  "limulation" [simulation of LIM (Lotus/Intel/Microsoft)] requires hardware
+  support that only the Intel 80386 provides; the 8086 and 80286 do not have
+  the necessary combination of protected mode addressing and virtual 8086
+  emulation (provided by the 80386's V86 mode).
+
+2. Utilization of the services of an already-installed LIM EMS
+  (Lotus/Intel/Microsoft Expanded Memory Support) version 4.0 driver, such as a
+  "limulator" or hardware EMS board by Windows version 3.x.
+
+  Real mode Windows can take advantage of either a limulator or a hardware EMS
+  board.
+
+  Windows version 3.0 standard mode (which runs in 80286 protected mode) cannot
+  use a limulator because these drivers run in 80386 protected mode, thereby
+  conflicting with the standard mode's need to switch into protected mode.
+  However, if the machine has a hardware EMS board and associated LIM version
+  4.0 driver installed, any EMS calls made will be serviced by the EMS driver;
+  however, Windows itself will not use the EMS memory in any way. Only small
+  frame EMS is supported in protected mode.
+
+  In Windows version 3.1, it is possible to start limulators such as QEMM,
+  386MAX and EMM386 in standard mode. All support for EMS from protected mode
+  Windows-based applications has been dropped from Windows version 3.1 enhanced
+  mode. Any INT67H calls made by a Windows application in enhanced mode under
+  Windows version 3.1 will result in an error being returned.
+
+  Enhanced mode is incompatible with preinstalled EMS drivers that cannot be
+  "shut off" by Windows. If the EMS driver is a limulator that cannot be shut
+  off, Windows will not be able to run in enhanced mode because the 80386 is
+  already running in protected mode; limulators that can be shut off respond to
+  Windows as it boots, turning themselves off and letting Windows manage the
+  EMS that they had been managing.
+
+  Physical LIM memory is not supported by 386 enhanced mode Windows. Software
+  running in Virtual 8086 mode in any VM (virtual machine), including the
+  system VM (which contains all the Windows applications), can make LIM version
+  4.0 calls; however, the calls will be handled by Windows/386, not by any
+  previously installed LIM driver. No LIM calls are reflected; they are all
+  handled (error or successful completion) by V86MMGR. As mentioned above, only
+  small frame EMS is supported in protected mode.
+
+3. Making EMS calls from an application not based on Windows.
+
+  If EMS is present, MS-DOS-based applications and other applications not based
+  on Windows have the full LIM version 4.0 specification available for their
+  use. Running in enhanced mode, part of the mappable page array may not be
+  usable; therefore, applications have to be sensitive to what is usable in the
+  mappable page array and what is not; they cannot assume that all of the
+  mappable page array is available.
+
+4. Making EMS calls from a Windows-based application.
+
+  If EMS is present, the normal small-frame EMS calls work as they do in Windows
+  version 2.x (that is, applications can make LIM version 3.2 calls plus LIM
+  version 4.0's realloc function). This allows both Windows versions 2.x and
+  3.x applications to use EMS memory.
+
+  CAUTION: In protected mode, the standard technique of querying for the
+  presence of an EMS driver by examining the contents of interrupt vector 67H
+  will fail due to virtualization of memory and virtualization of the IDT
+  (interrupt description table). Therefore, applications will have to use the
+  alternate technique of opening a file handle using the name of the EMS device
+  driver. For more information on these techniques, please consult Chapter 9 of
+  Ray Duncan's "Advanced MS-DOS" book (Microsoft Press, 1986), which is the
+  chapter on memory management under MS-DOS. This chapter contains a discussion
+  on EMS that describes how to check for the presence of an EMS driver.
+
+  Windows version 3.x applications that use EMS when running in protected mode
+  will be slower than non-EMS-using applications, and may run out of memory
+  faster. If it is necessary to run a Windows version 2.x application that
+  requires EMS under Windows version 3.x, this can easily be done in enhanced
+  mode. When designing a new application for Windows version 3.x, however, the
+  programmer should take advantage of the new protected mode addressing scheme
+  rather than trying to use EMS.
+
+  CAUTION: In protected mode, the value returned as the location of the page
+  frame is a selector, not a segment. Therefore, applications cannot make any
+  assumptions about that value. Many EMS-using applications, besides
+  encountering the inefficiency of using EMS, will probably run into other
+  restrictions that will not allow them to run in protected mode. For example,
+  they cannot put code into EMS unless they implement special handling in
+  protected mode to create a code selector alias for the page frame selector.
+
+  For enhanced mode, there are SYSTEM.INI entries that correspond to the same
+  entries in the .PIF file. The Control Panel does not touch them. We do not
+  expect many programmers to need to do anything with these at all. See the
+  PIFEDIT documentation for information on the meanings of possible values.
+
+  Example:
+
+  ; The following variables perform the equivalent of the XMS and
+  ; EMS memory PIF settings for the SYS VM:
+  ;
+  SYSVMEMSLIMIT           Max value (default is -1)
+  SYSVMEMSREQUIRED        Min value (default is -1)
+  SYSVMEMSLOCKED          Is the EMS touched under interrupt or needed
+                          to be in memory at all times for some other
+                          reason? (default is NO)
+  SYSVMXMSLIMIT           Max value (default is -1)
+  SYSVMXMSREQUIRED        Min value (default is -1)
+  SYSVMXMSLOCKED          Is the EMS touched under interrupt or needed
+                          to be in memory at all times for some other
+                          reason? (default is NO)
+
+  Related switch:
+
+  EMMSIZE                 Controls the maximum amount of memory
+                          that will be used for EMS across all
+                          VMs (default is -1, no limit).
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

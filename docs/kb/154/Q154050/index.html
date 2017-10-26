@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154050/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154050/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154050/","publisher":null,"image":null,"headline":"Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154050-cannot-uncompress-drivespace-drive-after-using-partition-magic">Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154050
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kb3rdparty kbtool win95
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to uncompress a drive compressed with DriveSpace, the process may
+stop at 24 percent finished and then state that it needs to restart Windows 95
+in a special mode. When your computer restarts, it restarts Windows 95 and the
+uncompress operation is not completed.
+
+CAUSE
+=====
+
+This behavior can occur if you use Partition Magic to create additional
+partitions on the drive. When you do, Partition Magic may change the drive
+letter assignment for the host drive from its default letter (usually drive H).
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+  the F8 key and then choose "Safe Mode Command Prompt Only" from the Startup
+  menu.
+
+2. Change the attributes of the Drvspace.ini or Dblspace.ini file in the root
+  folder of the physical boot drive. To do so, change to the root folder of the
+  physical boot drive and then type the following line
+
+  " attrib -s -h -r &lt;filename&gt; " (without the quotation marks)
+
+  where &lt;filename&gt; is either Dblspace.ini or Drvspace.ini
+
+3. Open the Drvspace.ini or Dblspace.ini file using any text editor (such as
+  Edit.com).
+
+4. Locate the line that reads:
+
+  ActivateDrive=H,C0
+
+  Change the "H" in this line to the drive letter that is assigned to the host
+  drive.
+
+  For example, if the host drive is actually drive I, change the line to read:
+
+  " ActivateDrive=I,C0 " (without the quotation marks)
+
+5. Save and then close the file.
+
+6. Restart your computer.
+
+7. Run the uncompress operation again.
+
+MORE INFORMATION
+================
+
+Partition Magic is manufactured by Power Quest Corporation, a vendor independent
+of Microsoft. We make no warranty, implied or otherwise, regarding this
+product's performance or reliability. For technical support, contact Power Quest
+at magic@powerquest.com or visit Power Quest's Web site at:
+http://www.powerquest.com
+
+======================================================================
+Keywords          : kb3rdparty kbtool win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

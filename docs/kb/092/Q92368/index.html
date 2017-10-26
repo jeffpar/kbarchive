@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92368: Asymetrix DayBook/ToolBook Issues and Problems/Solutions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92368: Asymetrix DayBook/ToolBook Issues and Problems/Solutions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92368/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92368/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92368/","publisher":null,"image":null,"headline":"Q92368: Asymetrix DayBook/ToolBook Issues and Problems/Solutions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92368-asymetrix-daybooktoolbook-issues-and-problemssolutions">Q92368: Asymetrix DayBook/ToolBook Issues and Problems/Solutions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92368
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The initial release of Microsoft Windows operating system version 3.0 came with
+run-time versions of Asymetrix DayBook and ToolBook. Microsoft was responsible
+for supporting these run-time versions. Since the release of Microsoft Windows
+operating system version 3.1, Asymetrix is responsible for supporting all
+versions of DayBook and ToolBook.
+
+This article includes information on some specific problems with DayBook and
+ToolBook and possible solutions or workarounds. The following topics are
+discussed:
+
+- Can't drag icons when mouse buttons are swapped
+
+- Error when compiling script
+
+- Valid dates problem
+
+- Mouse required
+
+MORE INFORMATION
+================
+
+Can't Drag Icons When Mouse Buttons Are Swapped
+-----------------------------------------------
+
+DayBook version 1.0 with the run-time version of ToolBook does not allow you to
+drag icons when the mouse buttons are reversed or swapped in Control Panel. To
+work around this behavior, click both the mouse buttons in quick succession; for
+example, if the right button is the "active" button, quickly click the right
+button, then click and hold down the left button.
+
+Error When Compiling Script
+---------------------------
+
+  Error when compiling script: Syntax Error
+
+may occur when DayBook is running and either Setup Applications is started from
+the Windows Setup Options menu or Microsoft PowerPoint for Windows is being set
+up. Quit DayBook and run Setup again.
+
+Valid Dates Problem
+-------------------
+
+You may receive the following message when the internal clock reaches 1992:
+
+  Valid dates for this version of DayBook are 1-1-91 through 12-31-91. Please
+  check your system date.
+
+According to Asymetrix, this problem occurs only in ToolBook's DayBook version
+1.5, in both the full and run-time versions. There are two solutions to this
+problem:
+
+1. Download DB15FIX.ZIP from the Asymetrix bulletin board service (BBS) at (425)
+  451-1173.
+
+2. If the full version of ToolBook 1.5 is being used, the DAYBOOK.SBK script
+  file can be edited. The following two changes need to be made:
+
+  a. Change "12-31-91" to "12-31-93".
+
+  b. Change "12,31,91" to "12,31,93".
+
+Mouse Required
+--------------
+
+A mouse is not listed as a system requirement on the envelope in which run-time
+ToolBook version 1.0 is packaged.
+
+A mouse is necessary to be able to access all the features in both TourBook (An
+Introduction to ToolBook) and DayBook. Without a mouse, TourBook does not allow
+you to select or execute any of the tutorials. In DayBook, the keyboard allows
+you to access the file menu options only.
+
+You will be able to successfully exit both programs using keyboard commands. In
+TourBook, press ALT+SPACE and choose Close. In DayBook, press ALT+F and choose
+exit.
+
+ToolBook and DayBook are manufactured by Asymetrix, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional Information About ToolBook, DayBook
+----------------------------------------------
+
+For more information, contact:
+
+  Asymetrix technical support:
+
+  (425) 637-1600 (DayBook Plus and full DayBook versions) or
+  (900) 896-9191 (version 1.0, 1.5, and run-time versions)
+  BBS - (425) 451-1173
+  FAX - (425) 454-0672
+
+  Asymetrix Corporation
+  Sales &amp; Marketing
+  110-111th Ave. NE, Suite 717
+  Bellevue, WA 98004
+
+Additional query words: 3.00 3.00a 3.10 day book tool 1.0 1.5 Asimatrix Asimetrics
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

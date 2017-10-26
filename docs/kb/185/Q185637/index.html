@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185637/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185637/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185637/","publisher":null,"image":null,"headline":"Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185637-howto-use-apis-to-check-enable-or-disable-full-window-drag">Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185637
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 27-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Normally, when a window is moved or sized, the operating system informs the
+window by posting the appropriate messages at the end of the move or size
+operation. These messages include WM_MOVE, WM_WINDOWPOSCHANGED, WM_PAINT, and
+WM_SIZE among others. Windows 2000, Windows NT 4.0, and Windows 95 (with the
+Microsoft Plus! add-in), Windows 98, and Windows Me offer the ability to show
+the entire contents of a window as it is moved or resized. The operating system
+accomplishes this by continuously sending these messages to the window during
+moving or resizing, not just at the end of the operation. This causes the window
+to redraw itself multiple times during one resize or move operation.
+
+At times, you may want to disable this feature to avoid possible flickering of
+the screen or to prevent code in an event like the ReSize event from occurring
+multiple times during one resize operation. Using the SystemParametersInfo API
+function, the status of this feature can be checked, enabled, or disabled as
+needed. This technique is demonstrated in the sample code below for both the 16-
+and 32-bit Visual Basic development environments.
+
+MORE INFORMATION
+================
+
+Steps to Create Sample 32-Bit Project
+-------------------------------------
+
+1. Create a new Visual Basic project. Form1 is created by default.
+
+2. Paste the following code into the code module for Form1:
+
+        Option Explicit
+
+        Private Declare Function SystemParametersInfo Lib "user32" _
+           Alias "SystemParametersInfoA" (ByVal uAction As Long, _
+           ByVal uParam As Long, ByRef lpvParam As Any, _
+           ByVal fuWinIni As Long) As Long
+
+        Private Const SPI_GETDRAGFULLWINDOWS = 38
+        Private Const SPI_SETDRAGFULLWINDOWS = 37
+        Private Const SPIF_SENDWININICHANGE = 2
+
+        Private Function IsFullWindowDragOn() As Boolean
+            Dim result As Long
+
+            'Call API and check for successful call.
+            If SystemParametersInfo(SPI_GETDRAGFULLWINDOWS, 0&amp;, result, 0&amp;) _
+                   &lt;&gt; 0 Then
+                'Feature supported now check value of result.
+                If result = 0 Then
+                    IsFullWindowDragOn = False
+                Else
+                    IsFullWindowDragOn = True
+                End If
+
+            'Call failed, feature not supported.
+            Else
+                IsFullWindowDragOn = False
+            End If
+        End Function
+
+        Private Sub Form_Click()
+            Dim result As Long
+
+            'Toggle the setting.
+            If IsFullWindowDragOn Then
+                'Turn full window drag off.
+                result = SystemParametersInfo(SPI_SETDRAGFULLWINDOWS, 0&amp;, _
+                   ByVal vbNullString, SPIF_SENDWININICHANGE)
+            Else
+                'Turn full window drag on.
+                result = SystemParametersInfo(SPI_SETDRAGFULLWINDOWS, 1&amp;, _
+                   ByVal vbNullString, SPIF_SENDWININICHANGE)
+            End If
+        End Sub
+
+3. Save and run the project.
+
+4. Click the form. This toggles full window dragging.
+
+5. Move or resize the window to test the full window dragging state.
+
+  RESULT: Full window dragging is toggled on and off with each click of the
+  form.
+
+Steps to Create Sample 16-Bit Project
+-------------------------------------
+
+Repeat steps 1-5 above but replace the code in step 2 with the following code:
+
+     Option Explicit
+
+     Private Declare Function SystemParametersInfo Lib "user" ( _
+        ByVal uAction As Integer, ByVal uParam As Integer, _
+        ByRef lpvParam As Any, ByVal fuWinIni As Integer) As Integer
+
+     Private Const SPI_GETDRAGFULLWINDOWS = 38
+     Private Const SPI_SETDRAGFULLWINDOWS = 37
+     Private Const SPIF_SENDWININICHANGE = 2
+
+     Private Function IsFullWindowDragOn() As Boolean
+         Dim result As Integer
+
+         'Call API and check for successful call.
+         If SystemParametersInfo(SPI_GETDRAGFULLWINDOWS, 0, result, 0) _
+                &lt;&gt; 0 Then
+             'Feature supported now check value of result.
+             If result = 0 Then
+                 IsFullWindowDragOn = False
+             Else
+                 IsFullWindowDragOn = True
+             End If
+
+         'Call failed, feature not supported.
+         Else
+             IsFullWindowDragOn = False
+         End If
+     End Function
+
+     Private Sub Form_Click()
+         Dim result As Integer
+
+         'Toggle the setting.
+         If IsFullWindowDragOn Then
+             'Turn full window drag off.
+             result = SystemParametersInfo(SPI_SETDRAGFULLWINDOWS, 0, _
+                ByVal vbNullString, SPIF_SENDWININICHANGE)
+         Else
+             'Turn full window drag on.
+             result = SystemParametersInfo(SPI_SETDRAGFULLWINDOWS, 1, _
+                ByVal vbNullString, SPIF_SENDWININICHANGE)
+         End If
+     End Sub
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

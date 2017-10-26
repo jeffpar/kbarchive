@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181121: Enhanced Event Logging for SNA Server Event 9, 12 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181121: Enhanced Event Logging for SNA Server Event 9, 12" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181121/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181121/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181121/","publisher":null,"image":null,"headline":"Q181121: Enhanced Event Logging for SNA Server Event 9, 12","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181121-enhanced-event-logging-for-sna-server-event-9-12">Q181121: Enhanced Event Logging for SNA Server Event 9, 12</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181121
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+To improve the ability to troubleshoot SNA Server Event 9 (subcode 1117) and
+Event 12 errors, these events have been enhanced to include the following
+additional information:
+
+- Client Domain
+
+- Client User (name)
+
+- LU name (3270 LU)
+
+- FMI Sense Code
+
+When SNA Server logs an Event 9 (subcode 1117), the SNA Server has detected an
+SNA protocol violation by the 3270 emulation product being used. The Event 9
+indicates a non-fatal protocol violation which would not cause a user to lose
+their 3270 session. If SNA Server detects a nonrecoverable 3270 protocol
+violation by the 3270 emulation product, SNA Server logs an Event 12.
+
+Using SNA Server 3.0 (including 3.0 SP1 and SP2), it's not possible to determine
+which client workstation caused these problems to occur, making troubleshooting
+more difficult. These events have been enhanced so that the specific client user
+can be tracked down.
+
+To debug the exact cause of these events, SNA Server 3270 message tracing is
+needed on either the server or the client computer.
+
+STATUS
+======
+
+
+
+MORE INFORMATION
+================
+
+SNA Server 4.0 already includes these enhancements to SNA Server Event 9 and 12.
+These changes have been retrofitted to SNA Server 3.0 Service Pack 3 (SP3) in
+order to improve diagnostic capability for the 3.0 product.
+
+Here is the event message text for these enhanced events:
+
+  
+
+  ===============================
+  Event ID: 9
+  Source:   SNA Server
+  Description:
+  (&lt;subcode&gt;) A protocol error occurred due to a message sent by a 3270
+  emulator or link service
+
+  EXPLANATION
+  A protocol error occurred due to a message sent by a 3270 emulator or
+  link service.
+
+  SUBCODE INFORMATION
+  X'1117'  A 3270 emulator used by the following user caused an error,
+  though the user's 3270 session was not interrupted:
+
+     Client Domain: 
+     Client User:   
+     LU name:       
+     FMI Sense Code:
+
+  ===============================
+
+  Event ID: 12
+  Source:   SNA Server
+  Description:
+  A 3270 Session was lost due to a protocol error in the 3270 emulator.
+
+  A user has lost their 3270 session due to a non-recoverable protocol
+  error caused by the 3270 emulator being used. The following user
+  encountered this error.
+
+     Client Domain:  
+     Client User:    
+     LU name:        
+     FMI Sense Code: 
+
+  ACTION
+  To troubleshoot this problem, capture matching SNA client 3270 message
+  traces from this user's machine and SNA Server DLC and 3270 message
+  traces on the server, and provide them to Microsoft product support.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

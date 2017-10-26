@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256149/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256149/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256149/","publisher":null,"image":null,"headline":"Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256149-memory-leak-using-multiple-threads-to-call-cogetclassobject">Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256149
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbWinNT400PreSP7Fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a program is running on Windows NT and multiple threads concurrently call
+CoGetClassObject for an object that is located on a remote computer but the
+COSERVERINFO value is not supplied (the remote computer name must be read from
+the registry), one of the following three error messages may be displayed:
+
+  0x80041054: Class not registered
+  0x800706BA: The RPC server is unavailable
+  0x80070005: Access is denied
+
+CAUSE
+=====
+
+This behavior occurs when the RemoteServerName data is placed into a buffer from
+the registry. The buffer is then deleted; by the next time the information is
+read from the registry by another thread, it is no longer present. If the
+previous thread uses the buffer (assuming that the name is valid) after the
+second thread has deleted it, the RemoteServerName data is invalid.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem. This fix may receive
+additional testing. Therefore, if you are not severely affected by this problem,
+Microsoft recommends that you wait for the next Windows NT 4.0 service pack that
+contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The typical support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English-language version of this fix for Windows NT Server should have the
+following file attributes or later:
+
+  Date        Time   Size     File name     Platform
+  --------------------------------------------------
+  03/14/2000  18:00  105 KB   Rpcss.exe     Intel
+  03/14/2000  18:00  179 KB   Rpcss.exe     Alpha
+
+The English-language version of this fix for Windows NT Server Terminal Server
+Edition should have the following file attributes or later:
+
+  Date        Time   Version           Size     File name
+  -------------------------------------------------------
+  09/27/2001  20:17  4.0.1381.33478    701,712  Ole32.dll
+  09/27/2001  20:17  4.0.1381.33478    108,816  Rpcss.exe
+
+
+
+NOTE: This hotfix requires 4.0 SP5 or later for installation and support.
+
+WORKAROUND
+==========
+
+If you supply the remote computer name in the COSERVERINFO value, the problem
+does not occur.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The value for COSERVERINFO can be null, in which case the class object is
+created on the current computer or on the computer specified under the class's
+RemoteServerName key in the registry as according to the interpretation of the
+dwClsCtx parameter. See the CLSCTX documentation on the Microsoft Developer
+Network (MSDN) for details.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

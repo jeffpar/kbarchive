@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156006/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156006/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156006/","publisher":null,"image":null,"headline":"Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156006-fix-columns-properties-shows-numeric-codes-under-data-type">Q156006: FIX: Columns Properties Shows Numeric Codes Under "Data Type"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156006
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:4.2
+Operating System(s): 
+Keyword(s): kbProgramming kbEEdition kbVC
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Properties for table columns in Data View show numeric codes under Data Type in
+the Column Properties dialog box. The Type field of the same dialog box displays
+the text version of the column type.
+
+CAUSE
+=====
+
+The ODBC API SQLGetTypeInfo returns these numbers. The return code is displayed
+without displaying the constant name for the SQL data type (SQL_CHAR,
+SQL_INTEGER, and so on).
+
+RESOLUTION
+==========
+
+Open the header file Sql.h, which lists the constant names for the SQL data type
+codes, in the MSDEV\include subdirectory. A partial list is given below:
+
+  /* Standard SQL datatypes, using ANSI type numbering */ 
+  #define SQL_CHAR                        1
+  #define SQL_NUMERIC                     2
+  #define SQL_DECIMAL                     3
+  #define SQL_INTEGER                     4
+  #define SQL_SMALLINT                    5
+  #define SQL_FLOAT                       6
+  #define SQL_REAL                        7
+  #define SQL_DOUBLE                      8
+  #define SQL_VARCHAR                     12
+  ..
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual C++ version
+5.0.
+
+MORE INFORMATION
+================
+
+To reproduce the behavior, insert a SQL Server data source connecting to the
+pubs sample database:
+
+1. In the data source pane, open the authors table so that each column name is
+  displayed.
+
+2. Display the properties page, pin it in place, and click the various column
+  names.
+
+Note: The data types are shown as 1, -7, 12, and perhaps others. These are the
+SQL type ids for the various SQL types. The type name is listed elsewhere in the
+properties page. Other tables show the same problem.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbEEdition kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

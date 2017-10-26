@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252821: XGEN: Read Contact Properties from ASP Page with VBScript | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252821: XGEN: Read Contact Properties from ASP Page with VBScript" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252821/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252821/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252821/","publisher":null,"image":null,"headline":"Q252821: XGEN: Read Contact Properties from ASP Page with VBScript","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252821-xgen-read-contact-properties-from-asp-page-with-vbscript">Q252821: XGEN: Read Contact Properties from ASP Page with VBScript</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252821
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 26-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides an example of how to use VBScript to retrieve the
+information for a contact in the Contacts folder.
+
+MORE INFORMATION
+================
+
+The following is an example of VBScript that retrieves and displays several, but
+not all, of the properties of a contact:
+
+  &lt;%@ LANGUAGE="VBSCRIPT" %&gt;
+
+  &lt;HTML&gt;
+  &lt;HEAD&gt;
+  &lt;META NAME="GENERATOR" Content="Microsoft FrontPage 4.0"&gt;
+  &lt;META HTTP-EQUIV="Content-Type" content="text/html;charset=iso-8859-1"&gt;
+  &lt;TITLE&gt;Document Title&lt;/TITLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+
+  &lt;%
+  CONST strServer = "server_name"
+  CONST strMailbox = "mailbox_name"
+
+  CONST CdoPR_GIVEN_NAME = &amp;H3A06001F 'First Name
+  CONST CdoPR_INITIALS = &amp;H3A0A001E 'Initials
+  CONST CdoPR_SURNAME = &amp;H3A11001E 'Last Name
+  CONST CdoPR_DISPLAY_NAME = &amp;H3001001F 'Display Name
+  CONST CdoPR_ACCOUNT = &amp;H3A00001E 'Alias
+  CONST CdoPR_TITLE = &amp;H3A17001F 'Title
+  CONST CdoPR_COMPANY_NAME = &amp;H3A16001F 'Company
+  CONST CdoPR_BUSINESS_TELEPHONE_NUMBER = &amp;H3A08001F
+  'BusinessTelephoneNumber
+
+  Dim objSession
+  Dim objMessages
+  Dim objMessage
+  Dim objFilter
+  Dim strProfileInfo
+
+  Response.Write ("&lt;B&gt;&lt;BR&gt;&lt;Center&gt;Contacts Information
+  Demo&lt;/center&gt;&lt;/B&gt;&lt;BR&gt;")
+
+  strProfileInfo = strServer &amp; vbLf &amp; strMailbox
+  Set objSession = CreateObject("MAPI.Session")
+  objSession.Logon , , False, False, , True, strProfileInfo
+
+  Set objFolder = objSession.GetDefaultFolder(5)
+
+  Set objMessages = objFolder.Messages
+  Set objFilter = objMessages.Filter
+
+  For Each objMessage In objMessages
+
+  if objMessage.Type = "IPM.Contact" then
+
+  Response.Write("&lt;B&gt; First Name:&lt;/B&gt; " &amp;
+  objMessage.Fields(CdoPR_GIVEN_NAME).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Initials:&lt;/B&gt; " &amp;
+  objMessage.Fields(CdoPR_INITIALS).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Last Name: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_SURNAME).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Display Name: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_DISPLAY_NAME).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Alias: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_ACCOUNT).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Title: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_TITLE).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Company: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_COMPANY_NAME).Value &amp; "&lt;br&gt;")
+
+  Response.Write("&lt;B&gt;Business Tel: &lt;/B&gt;" &amp;
+  objMessage.Fields(CdoPR_BUSINESS_TELEPHONE_NUMBER).Value &amp; "&lt;br&gt;")
+
+  end if
+
+  Response.Write("&lt;HR&gt;")
+  Next
+
+  objSession.Logoff
+  Set objFilter = Nothing
+  Set objAddrEntries= Nothing
+  Set objSession = Nothing
+  %&gt;
+  &lt;/BODY&gt; &lt;/HTML&gt;
+
+Additional query words: VBScript ActMsg CDO ASP
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

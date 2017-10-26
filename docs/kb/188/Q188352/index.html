@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188352: ASP Caching May Cause &quot;Server Too Busy&quot; Errors and Blank Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188352: ASP Caching May Cause &quot;Server Too Busy&quot; Errors and Blank Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188352/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188352/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188352/","publisher":null,"image":null,"headline":"Q188352: ASP Caching May Cause &quot;Server Too Busy&quot; Errors and Blank Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188352-asp-caching-may-cause-server-too-busy-errors-and-blank-pages">Q188352: ASP Caching May Cause "Server Too Busy" Errors and Blank Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188352
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbWinNT4sp6fix
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ASP caching in low memory situations may cause "Server Too Busy" errors and/or
+blank pages returned to client browsers. Memory usage by the Inetinfo process
+will be very high.
+
+CAUSE
+=====
+
+This problem occurs because too much data is being cached and the default number
+of ASP files to cache is set to unlimited in Internet Information Server (IIS)
+4.0. ASP attempts to cache ASP files until the process runs out of virtual
+memory. The IIS computer stops processing pages and returns the "Server Too
+Busy" error or blank pages to client browsers.
+
+Note that there are other causes of the "Server Too Busy" errors.
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or the
+individual software update. For information on obtaining the latest service
+pack, please go to:
+
+- http://www.microsoft.com/Windows/ServicePacks/
+
+-or-
+
+- Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+For information on obtaining the individual software update, contact Microsoft
+Product Support Services. For a complete list of Microsoft Product Support
+Services phone numbers and information on support costs, please go to the
+following address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows NT Server version 4.0, Terminal Server Edition Service Pack 6.
+
+MORE INFORMATION
+================
+
+ASP has been modified to flush the cache when it receives an "Out of Memory"
+error. This enables it to recover gracefully. Please see the following
+paragraphs for information on how to do additional tuning of the ASP cache, so
+that it does not flush the ASP cache frequently, thus nullifying the benefits of
+caching.
+
+- Tune the AspScriptFileCacheSize (the number of ASP files to cache) settings
+  for IIS. This setting is documented in IIS Help. The settings depend on a
+  number of factors, including the amount of data in the server- side Include
+  files and the number of ASP files that are cached. It is reasonable to start
+  with a number like 250, and then monitor the ASP cache hit ratio using
+  Performance Monitor. If it is below 90 percent, then raise the number. If it
+  is above 90 percent, then any changes to the Web's pages can and will most
+  likely change the tuning parameters.
+
+- To change the ASP process options, do the following:
+
+  1. Open the IIS MMC.
+
+  2. Right-click on the computer name for the IIS computer.
+
+  3. Edit the master properties for the WWW Service.
+
+  4. Click the Home Directory tab.
+
+  5. Click the Configuration button.
+
+  6. Click the Process Options tab.
+
+  7. Modify the settings in the Script File Cache group.
+
+- NTDLL may not efficiently use the virtual address space, which causes the
+  processes to run out of memory sooner. Apply the fix listed in the following
+  article in the Microsoft Knowledge Base:
+
+  Q216383 Memory Allocations May Fail When There Are Large Free Blocks
+
+- Some improvement can be made by increasing the per-process address space from
+  2 GB to 3 GB. For additional information, please see the following article in
+  the Microsoft Knowledge Base:
+
+  Q171793 Information on Application Use of 4GT RAM Tuning
+
+  Note that more physical RAM may be required to reduce possible paging after
+  this change is made.
+
+- Redesign the Web application.
+
+- Disable ASP caching.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

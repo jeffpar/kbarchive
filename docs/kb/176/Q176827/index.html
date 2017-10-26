@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176827: No Settings Command on Start Menu After Logging On to Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176827: No Settings Command on Start Menu After Logging On to Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176827/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176827/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176827/","publisher":null,"image":null,"headline":"Q176827: No Settings Command on Start Menu After Logging On to Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176827-no-settings-command-on-start-menu-after-logging-on-to-windows">Q176827: No Settings Command on Start Menu After Logging On to Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176827
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0,95
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Plus! for Kids, version 1.0 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to Windows, there may be no Settings command on the Start menu.
+As a result, the Control Panel, Printers, and Taskbar commands may be
+unavailable.
+
+CAUSE
+=====
+
+This issue can occur if you have restricted family members from changing the
+computer settings in Protect It!.
+
+Access to the Control Panel, Printers, and Taskbar commands is restricted by
+selecting the To Change Computer Settings check box in Protect It!. If you have
+not given any family member the ability to change these settings, the Control
+Panel, Printers, and Taskbar commands are unavailable.
+
+RESOLUTION
+==========
+
+To give a family member access to the Settings command on the Start menu, follow
+these steps:
+
+1. Click Start, point to Programs, point to Microsoft Kids, and then click
+  Protect It!.
+
+  NOTE: If you receive the following error message when you try to start Protect
+  It!, you must follow the steps in the "More Information" section later in
+  this article before you can continue:
+
+  This operation has been cancelled due to restrictions in effect on this
+  computer. Please contact your system administrator.
+
+2. Type your Protect It! key, and then click OK.
+
+3. In the Family Members box, click the family member who you want to have
+  access to the Settings command.
+
+4. Click Set/Change.
+
+5. Click the To Change Computer Settings check box to clear it.
+
+6. Click Next, and then click Next.
+
+7. Click Finish.
+
+8. Repeat steps 3-7 for each family member who should have access to the
+  Settings command.
+
+Before you can access the Control Panel, Printers, or Taskbar command, you must
+log on to Windows as a family member who has access to these commands.
+
+MORE INFORMATION
+================
+
+You can control access to individual programs by selecting the "Limit the family
+member to programs selected by the owner below" check box. If you limit access
+to the Protect It! program for all family members, including the default user,
+you receive an error message when you try to run Protect It!.
+
+To work around this issue, create a shortcut to the Protect It! tool in Control
+Panel by following these steps:
+
+1. Right-click the Windows desktop.
+
+2. Point to New, and then click Shortcut.
+
+3. In the Command Line box, type the following line, and then click Next:
+
+  " protect!.cpl " (without the quotation marks)
+
+4. Click Finish.
+
+5. Double-click the new Protect!.cpl shortcut. This starts Protect It!.
+
+To give a family member access to the Settings command on the Start menu, follow
+steps 2-7 in the "Resolution" section earlier in this article.
+
+For additional information about Protect It!, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q171703 Kids Plus!: Resetting Protect It! and Internet Ratings Passwords
+
+Additional query words: canceled protection mskids login sign on in
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWin95search kbWin98search _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch kbZNotKeyword3 kbWin98
+Version           : WINDOWS:1.0,95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

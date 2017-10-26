@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166174/","publisher":null,"image":null,"headline":"Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166174-wd97-styles-not-automatically-updated-attaching-to-normaldot">Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166174
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbusage kbtemplate winword word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Document styles are not automatically updated after you change the styles in an
+attached template.
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions are true:
+
+- You create a document that is based on a template other than your current
+  Normal template (Normal.dot).
+
+  For example, you create a new document that is based on the Professional
+  Report.dot template or the document you are working on was created using a
+  different normal.dot, as in the case when you upgrade from Word 95 to 97.
+
+  -and-
+
+- The Automatically Update Document Styles check box is selected.
+
+  -and-
+
+- You attach the document to the Normal template.
+
+NOTE: This problem does not occur if you attach the document to any template
+other than Normal.dot. This problem also does not occur if you attach a document
+that is based on Normal.dot to any other template.
+
+This problem occurs because Word retains the styles from the previous template
+and doesn't make the styles from the Normal.dot template available.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods.
+
+Method 1: Copy the Style to the Document
+----------------------------------------
+
+To copy the style to the document, use the following steps:
+
+1. Open the document in Word.
+
+2. On the Tools menu, click "Templates and Add-ins."
+
+3. Click Organizer.
+
+4. Click the Styles tab.
+
+  The styles in your document are listed on one side of the dialog box and the
+  styles in Normal.dot (global template) are listed on the other side.
+
+  NOTE: If these two files are not open in the organizer, close the file on the
+  appropriate side, and then open the file that is not open.
+
+5. In the Normal.dot list, click the style you want to copy to your document,
+  and then click Copy.
+
+  You should receive the following message:
+
+  Do you wish to overwrite the existing style entry &lt;stylename&gt;?
+
+  where &lt;stylename&gt; is the name of the style you want to copy.
+
+6. Click Yes and click Close to close the Organizer.
+
+The style is copied to the document.
+
+Method 2: Apply Manual Formatting
+---------------------------------
+
+To manually apply formatting, use the following steps:
+
+1. Select the text that you want to change.
+
+2. On the Format menu, click Font. Modify the font, and then click OK.
+
+3. On the Format menu, click Paragraph. Modify the paragraph formatting, and
+  then click OK.
+
+Note: Repeat these steps for text that you want to change.
+
+Method 3: Change the Applied Style
+----------------------------------
+
+To change the style, use the following steps:
+
+1. On the Format menu, click Style.
+
+2. Click "All styles" in the list.
+
+3. In the Styles list, click the style you want to change, and then click
+  Modify.
+
+4. In the Modify Style dialog box, do the following:
+
+  a. Click Format and click Font. Modify the font, and then click OK.
+
+  b. Click Format and click Paragraph. Modify the paragraph formatting, and
+     then click OK.
+
+5. Click OK to close the Modify Style dialog box.
+
+  NOTE: If you click the Add To template check box, the changes you make are
+  applied to all documents you subsequently create. If you want the changes to
+  be applied to only the active document, leave this check box cleared.
+
+6. Click OK to close the Modify Style dialog box.
+
+7. Click Close to close the Style dialog box.
+
+The changes are applied to all text that is formatted with the style.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q109873 Envelope Settings Apply Only to Current Document
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbtemplate winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

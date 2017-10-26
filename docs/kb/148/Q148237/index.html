@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148237: IDC: Error Performing Query Connecting to SQL Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148237: IDC: Error Performing Query Connecting to SQL Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148237/","publisher":null,"image":null,"headline":"Q148237: IDC: Error Performing Query Connecting to SQL Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148237-idc-error-performing-query-connecting-to-sql-server">Q148237: IDC: Error Performing Query Connecting to SQL Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148237
+Product(s): Internet Information Server
+Version(s): WINNT: 1.0,2.0,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 06-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute an IDC script that connects to a remote SQL Server, one of the
+following error messages appear from the web browser:
+
+  Error Performing Query
+
+  [State=01000][Error=1385][Microsoft][ODBC SQL Server
+  Driver][dbnmpntw]ConnectionOpen (CreateFile()).
+
+  [State=08001][Error=1385][Microsoft][ODBC SQL Server Driver]Unable
+  to connect to data source
+
+  -or-
+
+  [State=01000][Error=1326][Microsoft][ODBC SQL Server
+  Driver][dbnmpntw]ConnectionOpen (CreateFile()).
+
+  [State=08001][Error=1326][Microsoft][ODBC SQL Server Driver]Unable
+  to connect to data source
+
+CAUSE
+=====
+
+This problem occurs because of one or all of the following:
+
+- The user account IUSR_&lt;Server Name&gt; (where &lt;Server Name&gt; is the
+  name of your Internet Information Server) does not have the "Access this
+  computer from the network" user right configured on the SQL Server.
+
+- The Internet Information Server and the SQL Server are on different domains
+  and the IUSR_&lt;Server Name&gt; account does not exist in the SQL Server's
+  local user database or domain.
+
+- The Internet Information Server and SQL Server are on the same domain;
+  however, the Internet Information Server is installed on a Server (non-domain
+  controller) and the SQL Server is installed on a Domain Controller. The
+  IUSR_&lt;Server Name&gt; account does not exist on the domain.
+
+RESOLUTION
+==========
+
+To correct this problem, do one or all of the following:
+
+- Grant the IUSR_&lt;Server Name&gt; the "Access this computer from network"
+  user right on the SQL Server.
+
+- If there is a trust established between the domains, whereas the Internet
+  Information Server in the Resource domain, then you can set the "Username:"
+  value under "Anonymous Logon" to be MASTERDOMAIN\username (where username is
+  a user account that was created on the Master Domain).
+
+  If there is not a trust relationship involved, you must create an
+  IUSR_&lt;Server Name&gt; account on the remote domain and give it the
+  appropriate rights. (See first resolution above)
+
+  Note: If there is no trust, the username and password in one domain must match
+  the username and password on the other domain.
+
+- Modify the "Username:" value under "Anonymous Logon" in the Microsoft
+  Internet Service Manager to use the following format:
+
+     DOMAIN\IUSR_&lt;Server Name&gt;.
+
+  If the IUSR_&lt;Server Name&gt; does not exist on the domain, then create the
+  account using User Manager for Domains.
+
+- See Q141086 in the SQL Server Knowledge Base for information on fixing a bug
+  in the SQL Server 2.5 ODBC driver.
+
+MORE INFORMATION
+================
+
+The Internet Information Server accesses the SQL Server by first connecting to
+the IPC$ share of the SQL Server. It uses the user name and password specified
+for Anonymous Logon (entry is in the Service tab of Internet Service Manager).
+
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis400 kbiis300 kbiis200 kbiis100
+Version           : WINNT: 1.0,2.0,3.0,4.0
+Hardware          : ALPHA x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

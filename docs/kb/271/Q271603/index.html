@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271603: XADM: How to Use the Inbox Rules Manager Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271603: XADM: How to Use the Inbox Rules Manager Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271603/","publisher":null,"image":null,"headline":"Q271603: XADM: How to Use the Inbox Rules Manager Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271603-xadm-how-to-use-the-inbox-rules-manager-program">Q271603: XADM: How to Use the Inbox Rules Manager Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271603
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Microsoft Exchange Inbox Rules Manager
+Program (Rulesmgr.exe). Please contact Microsoft Product Support Services (PSS)
+to open a support incident and speak with a Support Professional to obtain this
+tool.
+
+
+MORE INFORMATION
+================
+
+If you are an administrator, you can use Inbox Rules Manager to scan the Inbox
+Rules for mailboxes on one or more Exchange Server computers in a site. You can
+configure Inbox Rules Manager to include or exclude certain mailboxes or
+distribution lists (DLs) from the scan.
+
+Inbox Rules Manager can report on the following types of rules:
+
+- Rules that forward messages to custom recipients.
+
+- Rules that forward messages to DLs.
+
+- Rules that forward messages to foreign addresses of one or more types.
+
+- Rules that reply to messages.
+
+This functionality enables you to determine which users have rules that forward
+messages out of the company. Therefore, you can use this tool to keep track of
+which users are forwarding mail out of an organization, rather than block all
+forwarded messages at the Internet Mail Service.
+
+If you are troubleshooting a rapidly growing information store and you suspect
+that rules are causing messages to bounce, Inbox Rules Manager can quickly
+determine which mailboxes have rules that forward or reply to messages.
+
+To use Inbox Rules Manager:
+
+1. Install the Microsoft Exchange Server Administrator program on the computer
+  that you want to run Inbox Rules Manager on.
+
+2. Use the Exchange Service Account to log on to Microsoft Windows NT.
+
+3. Copy Rulesmgr.exe and Rulecls.dll to a folder on the local computer.
+
+4. Start Windows NT Explorer or File Manager, locate Rulesmgr.exe, and then
+  double-click the file.
+
+5. Click Next, and then follow the directions.
+
+The program writes to the output file that you specify. By default, the output
+file is C:\Rulesmgr.txt.
+
+Command-Line Options
+--------------------
+
+Inbox Rules Manager supports the following command line options:
+
+- -logmin: Use this option to set the logging level to Minimum.
+
+- -logmed: Use this option to set the logging level to Medium.
+
+- -logmax: Use this option to set the logging level to Maximum.
+
+Requirements
+------------
+
+Inbox Rules Manager requires that the Administrator program is installed on the
+computer on which it is run.
+
+In addition, the following files must be present:
+
+- Advapi32.dll
+
+- Comctl32.dll
+
+- Comdlg32.dll
+
+- Dapi.dll
+
+- Exchmem.dll
+
+- Gdi32.dll
+
+- Kernel32.dll
+
+- Libxds.dll
+
+- LZ32.dll
+
+- Mapr32.dll
+
+- Mfc42.dLL
+
+- Mpr.dll
+
+- Msvcrt.dll
+
+- Msvcirt.dll
+
+- Msvcirt40.dll
+
+- Netapi32.dll
+
+- Netrap.dll
+
+- Ntdll.dll
+
+- Ole32.dll
+
+- Rpcns4.dll
+
+- Rpcrt4.dll
+
+- Rulecls.dll
+
+- Samlib.dll
+
+- Shell32.dll
+
+- User32.dll
+
+- Version.dll
+
+Troubleshooting
+---------------
+
+Inbox Rules Manager generates a log that contains all the errors that the program
+encounters. You can use the following command-line options to increase the
+amount of information logged:
+
+- -logmin
+
+- -logmed
+
+- -logmax
+
+By default, the log file is C:\Rulesmgr.log.
+
+Additional query words: rulesmgr exe xadm
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288121/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288121/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288121/","publisher":null,"image":null,"headline":"Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288121-bug-posting-acceptor-causes-asp-session-to-be-lost">Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288121
+Product(s): Internet Information Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbASP kbInternet kbDSupport kbIIS kbGrpDSMSXML
+Last Modified: 27-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft Posting Acceptor is used to upload files to Internet Information
+Server (IIS), Session state is lost.
+
+CAUSE
+=====
+
+Posting Acceptor is causing the Session cookie to be omitted when the
+cpshost.dll that is responsible for handling the file upload posts data to the
+repost URL. As a result, IIS sees the request as from a first-time caller and
+assigns it a new Session ID.
+
+RESOLUTION
+==========
+
+Workarounds
+-----------
+
+There are two possible workarounds for this problem:
+
+- Do not use session data or write all Session variables to Form variables on
+  the page calling the Posting Acceptor and then rewrite them from the Repost
+  page. In this event, the original session still uses memory on the server and
+  eventually times out. This solution is not very robust or clean, and
+  Microsoft does not recommended it.
+
+- A more robust workaround is to include a hidden form variable in the form
+  that is used to upload the file that contains the user's ASP Session cookie.
+  Then, in the onload event for the repost page, the cookie must be set again.
+  While some browsers may be able to retrieve the correct Session cookie
+  without this step, others never recover the session without it.
+
+Note that Session data is not available in the server-side code for the repost
+URL because the cookie does not yet exist at that time. If Session data is
+needed on the Repost page, the page can redirect to another page immediately
+upon loading. However, until this bug is fixed in Posting Acceptor, the
+server-side code on the Repost page is not able to access Session data.
+
+The following sample demonstrates the second workaround described previously.
+Keep in mind that Posting Acceptor needs to be installed on the server for the
+sample to work. Also, the proper permissions must be set on the directory
+referenced by the TargetURL form variable in the code in order for the upload to
+succeed.
+
+For more information, see the articles listed in the "References" section of this
+article.
+
+1. Paste the following code into a new ASP page, and save the page as
+  UploadFile.asp in a directory that is accessible from your Web site. This
+  directory should allow write access for the IUSR (or IWAM, if run
+  out-of-process) account on the Web server, both with NT file system and
+  Microsoft Internet Information Server (IIS) permissions:
+
+  <span class="nt">&lt;</span><span class="err">%@</span> <span class="na">Language=</span><span class="s">VBScript%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+  <span class="err">'</span> <span class="na">Get</span> <span class="na">the</span> <span class="na">repost</span> <span class="na">path</span> <span class="na">for</span> <span class="na">the</span> <span class="na">page</span><span class="err">,</span> <span class="na">because</span> <span class="na">you</span> <span class="na">have</span> <span class="na">to</span> <span class="na">have</span> <span class="na">the</span> <span class="na">fully</span> <span class="na">qualified</span> <span class="na">path</span> <span class="na">for</span> <span class="na">the</span> <span class="na">upload</span> <span class="na">to</span> <span class="na">succeed</span><span class="err">.</span>
+  <span class="na">Dim</span> <span class="na">strRepostPath</span>
+  <span class="na">strRepostPath =</span><span class="err"> </span><span class="s">"http://"</span> <span class="err">+</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">SERVER_NAME</span><span class="err">")</span> <span class="err">+</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">URL</span><span class="err">")</span>
+  <span class="na">strRepostPath =</span><span class="err"> </span><span class="s">Left(strRepostPath,</span> <span class="na">InStrRev</span><span class="err">(</span><span class="na">strRepostPath</span><span class="err">,</span> <span class="err">"/"))</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  	<span class="nt">&lt;b&gt;</span>Session ID:<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;</span><span class="err">%=</span><span class="na">Session</span><span class="err">.</span><span class="na">SessionID</span><span class="err">%</span><span class="nt">&gt;&lt;br&gt;</span>
+  	<span class="nt">&lt;br&gt;</span>
+  	<span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/scripts/cpshost.dll?PUBLISH?&lt;%=strRepostPath%&gt;RepostPage.asp"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"TargetURL"</span> <span class="na">value=</span><span class="s">"&lt;%=strRepostPath%&gt;"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"SessionCookie"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"SessionID"</span> <span class="na">value=</span><span class="s">"&lt;%=Session.SessionID%&gt;"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;b&gt;</span>File to upload:<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"UploadFile"</span><span class="nt">&gt;&lt;br&gt;</span>
+  		<span class="nt">&lt;br&gt;</span>
+  		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Submit"</span> <span class="na">onclick=</span><span class="s">"Submit();"</span><span class="nt">&gt;</span>		
+  	<span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"javascript"</span><span class="nt">&gt;</span>
+  	<span class="kd">function</span> <span class="nx">Submit</span><span class="p">()</span>
+  	<span class="p">{</span>
+  		<span class="c1">// Find the ASP Session cookie and store it in the SessionCookie form variable.</span>
+  		<span class="kd">var</span> <span class="nx">sSC</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span><span class="p">);</span>
+  		<span class="kd">var</span> <span class="nx">iStartPos</span> <span class="o">=</span> <span class="nx">sSC</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">"ASPSESSIONID"</span><span class="p">);</span>
+  		<span class="kd">var</span> <span class="nx">iEndPos</span> <span class="o">=</span> <span class="nx">sSC</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">";"</span><span class="p">,</span> <span class="nx">iStartPos</span><span class="p">);</span>
+  		
+  		<span class="k">if</span> <span class="p">(</span><span class="nx">iEndPos</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="nx">iEndPos</span> <span class="o">=</span> <span class="nx">sSC</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+  		<span class="nx">sSC</span> <span class="o">=</span> <span class="nx">sSC</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="nx">iStartPos</span><span class="p">,</span> <span class="nx">iEndPos</span> <span class="o">-</span> <span class="nx">iStartPos</span><span class="p">);</span>
+  		<span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">SessionCookie</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">sSC</span><span class="p">;</span>
+  		
+  		<span class="c1">// And submit the form...</span>
+  		<span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">submit</span><span class="p">();</span>
+  	<span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+
+2. Paste the following code into another new file, and save the file with the
+  name RepostPage.asp in the same location as the previous file:
+
+  <span class="nt">&lt;</span><span class="err">%@</span> <span class="na">Language=</span><span class="s">VBScript</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+  <span class="err">'</span> <span class="na">Get</span> <span class="na">the</span> <span class="na">repost</span> <span class="na">path</span> <span class="na">for</span> <span class="na">the</span> <span class="na">page</span><span class="err">,</span> <span class="na">because</span> <span class="na">you</span> <span class="na">have</span> <span class="na">to</span> <span class="na">have</span> <span class="na">the</span> <span class="na">fully</span> <span class="na">qualified</span> <span class="na">path</span> <span class="na">for</span> <span class="na">the</span> <span class="na">redirection</span> <span class="na">to</span> <span class="na">succeed</span><span class="err">.</span>
+  <span class="err">'</span> <span class="na">This</span> <span class="na">is</span> <span class="na">because</span> <span class="na">this</span> <span class="na">page</span> <span class="na">erroneously</span> <span class="na">believes</span> <span class="na">it</span> <span class="na">is</span> <span class="na">in</span> <span class="na">the</span> <span class="err">/</span><span class="na">Scripts</span> <span class="na">virtual</span> <span class="na">root</span>
+  <span class="err">'</span> <span class="na">of</span> <span class="na">the</span> <span class="na">site</span> <span class="na">that</span> <span class="na">was</span> <span class="na">called</span> <span class="na">by</span> <span class="na">the</span> <span class="na">cpshost</span><span class="err">.</span><span class="na">dll</span> <span class="na">file</span> <span class="na">in</span> <span class="na">that</span> <span class="na">directory</span><span class="err">.</span>
+  <span class="na">Dim</span> <span class="na">strRepostPath</span>
+  <span class="na">strRepostPath =</span><span class="err"> </span><span class="s">"http://"</span> <span class="err">+</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">SERVER_NAME</span><span class="err">")</span> <span class="err">+</span> <span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">URL</span><span class="err">")</span>
+  <span class="na">strRepostPath =</span><span class="err"> </span><span class="s">Left(strRepostPath,</span> <span class="na">InStrRev</span><span class="err">(</span><span class="na">strRepostPath</span><span class="err">,</span> <span class="err">"/"))</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"FixBrokenSession();"</span><span class="nt">&gt;</span>
+  	<span class="nt">&lt;b&gt;</span>Session ID should be (and was):<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;</span><span class="err">%=</span><span class="na">Request</span><span class="err">.</span><span class="na">Form</span><span class="err">("</span><span class="na">SessionID</span><span class="err">")%</span><span class="nt">&gt;&lt;br&gt;</span>
+  	<span class="nt">&lt;b&gt;</span>New (incorrect) session ID after post:<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;</span><span class="err">%=</span><span class="na">Session</span><span class="err">.</span><span class="na">SessionID</span><span class="err">%</span><span class="nt">&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"JavaScript"</span><span class="nt">&gt;</span>
+  	<span class="kd">function</span> <span class="nx">FixBrokenSession</span><span class="p">()</span>
+  	<span class="p">{</span>
+  		<span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span> <span class="o">=</span> <span class="s2">"&lt;%=Request.Form("</span><span class="nx">SessionCookie</span><span class="s2">")%&gt;;path=/"</span><span class="p">;</span>
+  		<span class="nx">alert</span><span class="p">(</span><span class="s2">"Session has been restored!"</span><span class="p">);</span>
+  		<span class="nx">alert</span><span class="p">(</span><span class="s2">"Now redirect to demonstrate fixed Session ID..."</span><span class="p">);</span>
+  		<span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"&lt;%=strRepostPath%&gt;SessionIsFixed.asp"</span><span class="p">;</span>
+  	<span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span>
+  <span class="err">'</span> <span class="na">Abandon</span> <span class="na">this</span> <span class="na">false</span> <span class="na">session</span> <span class="na">so</span> <span class="na">that</span> <span class="na">the</span> <span class="na">server</span> <span class="na">releases</span> <span class="na">it</span> <span class="na">immediately</span><span class="err">.</span>
+  <span class="na">Session</span><span class="err">.</span><span class="na">Abandon</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+
+3. Paste the following code into a third new file, and save the file as
+  SessionIsFixed.asp in the same location as the previous two files:
+
+  <span class="nt">&lt;</span><span class="err">%@</span> <span class="na">Language=</span><span class="s">VBScript</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  	<span class="nt">&lt;b&gt;</span>Fixed, original Session ID:<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;</span><span class="err">%=</span><span class="na">Session</span><span class="err">.</span><span class="na">SessionID</span><span class="err">%</span><span class="nt">&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+4. Finally, browse to the UploadFile.asp in your Internet browser, and upload a
+  file. Note that you see the session lost and restored again. Remember that
+  some browsers (Internet Explorer (IE), specifically) are capable of restoring
+  the Session cookie simply by redirecting the URL. However, other browsers may
+  not be able to do this, and lose the state of the Session unless the Session
+  cookie is manually fixed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this problem, use the preceding sample code but remove the
+FixBrokenSession() function call from the onload event of the <span class="nt">&lt;body&gt;</span> tag.
+The session is then lost.
+
+REFERENCES
+==========
+
+For additional information about Posting Acceptor, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q184352 HOWTO: Upload Files to the Internet Information Server
+
+  Q217425 A Simple ASP Example Using Posting Acceptor
+
+  Q230298 Posting Acceptor Release Notes
+
+  Q241184 Posting Acceptor Returns Server Error 500 When Invalid File Name Is
+  Used
+
+Additional query words:
+
+======================================================================
+Keywords          : kbASP kbInternet kbDSupport kbIIS kbGrpDSMSXML 
+Technology        : kbiisSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

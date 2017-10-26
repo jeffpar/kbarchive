@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127850/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127850/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127850/","publisher":null,"image":null,"headline":"Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127850-using-the-dpt-smartraid-scsi-host-on-a-ast-manhattan-p5090">Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127850
+Product(s): Microsoft Windows NT
+Version(s): 3.5
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Setup may not recognize your hard disks or your may stop responding
+(hang) when booting if you use a DPT SmartRAID PCI (PM3224a/9x) SCSI controller
+on an AST Manhattan P Series 5090 (single processor) computer.
+
+CAUSE
+=====
+
+The DPT SmartRAID PCI (PM3224a/9x) SCSI controller is not on the Windows NT
+version 3.5 hardware compatibility list (HCL), and it is not a supported device.
+
+WORKAROUND
+==========
+
+Since the AST Manhattan P5090 is on the Windows NT 3.5 HCL, you may be able to
+use the PM3224a controller if you configure it specifically for the P5090.
+According to DPT technical support, you may need to perform some or all of the
+following configuration steps for the system to successfully run Windows NT
+3.5:
+
+1. The DPT SmartRAID controller must be set as the boot device. If you set a
+  disk connected to another controller as the boot device, then the system may
+  hang at boot time.
+
+2. Some models of the AST Manhattan P5090 have dual internal (embedded) NCR
+  53C810 SCSI controllers. One of them must be disabled for the DPT PM3224a to
+  work.
+
+3. You need to explicitly specify an Input/Output (I/O) address in the BIOS
+  configuration program for the DPT PM3224a host adapter. However, you do not
+  need to choose the default setting of 330H as the I/O address for the card.
+  To set the I/O address for the card, press CTRL-D at boot time, and then
+  choose HBIO from the menu.
+
+4. In certain cases you may also need to disable PCI Parity in the DPT BIOS for
+  the initial installation to succeed. Otherwise, memory parity problems may
+  result.
+
+5. Once the machine boots successfully, replace the DPT driver supplied on the
+  Windows NT distribution disks with an updated driver from DPT. This updated
+  driver is available from the DPT bulletin board system (BBS) at (407)
+  831-6432 (14000 to 2400 baud, HST/DUAL). The file name is NT351JJ.ZIP. Other
+  DPT Bulletin Board numbers include: (407) 830-1070 (14400 to 1200 buad,
+  HST/DUAL), and (407) 830-0852 (9600-1200 baud).
+
+6. As of 2/1/97, the latest firmware for the DPT SmartRaid PCI (PM3224a/9x)
+  controller is FW290-007H1. The latest ROM revision is SmartRom 3.DS.
+
+For additional information or continuing problems with the DPT product mentioned
+above, please contact DPT directly at (407) 830-5522. You may also email DPT
+technical support directly at Support@DPT.COM or visit their web page at
+WWW.DPT.COM.
+
+The third-party products discussed here are manufactured vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: prodnt array freeze lock
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

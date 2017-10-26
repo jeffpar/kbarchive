@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50003: Bits Per Pixel Per Plane for Graphics GET for SCREEN 3 and 4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50003: Bits Per Pixel Per Plane for Graphics GET for SCREEN 3 and 4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50003/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50003/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50003/","publisher":null,"image":null,"headline":"Q50003: Bits Per Pixel Per Plane for Graphics GET for SCREEN 3 and 4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50003-bits-per-pixel-per-plane-for-graphics-get-for-screen-3-and-4">Q50003: Bits Per Pixel Per Plane for Graphics GET for SCREEN 3 and 4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50003
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891016-54 B_BasicCom docerr | mspl13_basic
+Last Modified: 13-DEC-1989
+
+The bits-per-pixel-per-plane values and the number of planes for
+SCREEN 3 and SCREEN 4 were omitted and must be added under the
+graphics GET statement in the following sources:
+
+1. Page 207 of "Microsoft QuickBASIC 4.0: BASIC Language Reference"
+   manual for Versions 4.00 and 4.00b
+
+2. Page 207 of "Microsoft BASIC Compiler 6.0: BASIC Language
+   Reference" manual for Versions 6.00 and 6.00b for MS-DOS
+
+3. Page 151 of "Microsoft BASIC Version 7.00: BASIC Language
+   Reference" manual for Version 7.00 for MS-DOS
+
+4. The QuickBASIC Advisor on-line help screen for QuickBASIC 4.50
+   under "HELP: GET (Graphics) Statement Details"
+
+5. The QuickBASIC Extended Advisor on-line help screen for BASIC
+   Compiler 7.00 under "HELP: GET (Graphics) Statement Details"
+
+Below is a table that contains the complete values for bits per pixel
+per plane and the number of planes used by the GET (Graphics)
+statement.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 and to Microsoft BASIC Compiler Versions 6.00, and 6.00b for
+MS-DOS and to Microsoft BASIC PDS 7.00 for MS-DOS.
+
+The following complete table provides values necessary to calculate
+the array size required by the graphics GET Statement:
+
+                Bits
+                Per Pixel
+   Mode         Per Plane     Planes
+   ----         ---------     ------
+   SCREEN 1     2             1
+   SCREEN 2     1             1
+   SCREEN 3     1             1   &lt;&lt;-- (Add to manual)
+   SCREEN 4     1             1   &lt;&lt;-- (Add to manual)
+   SCREEN 7     1             4
+   SCREEN 8     1             4
+   SCREEN 9     1             2 (if 64K of EGA memory)
+                              4 (if more than 64K of EGA memory)
+   SCREEN 10    1             2
+   SCREEN 11    1             1
+   SCREEN 12    1             4
+   SCREEN 13    8             1
+
+The GET statement transfers a screen image into an array. The PUT
+statement, associated with GET, transfers the image stored in the
+array onto the screen.
+
+For the statement
+
+   GET (x1,y1)-(x2,y2),arrayname
+
+the following formula gives the required size of the array in bytes:
+
+   4+INT(((x2-x1+1)*(bits-per-pixel-per-plane)+7)/8)*planes*((y2-y1)+1)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

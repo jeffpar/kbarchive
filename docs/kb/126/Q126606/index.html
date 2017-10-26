@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126606/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126606/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126606/","publisher":null,"image":null,"headline":"Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126606-info-accessing-create_db-repair_db-and-compact_db">Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126606
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0,3.0,3.5
+Operating System(s): 
+Keyword(s): kbcode kbprogramming kbusage kbGrpDSVCDB
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, versions 2.0, 3.0, 3.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Help file for the ODBC version 2.0 Desktop Drivers mentions that the
+Microsoft Access driver accepts the keywords CREATE_DB, REPAIR_DB, and
+COMPACT_DB on the lpszAttributes parameter, but gives no details on their
+syntax.
+
+MORE INFORMATION
+================
+
+The SQLConfigDataSource lpszAttributes keywords CREATE_DB, REPAIR_DB, and
+COMPACT_DB cannot be used in conjunction with other keywords. If you want your
+programs to create a datasource and also create a new .MDB file for that
+datasource, you must do this in a two stage process. You must create the
+datasource on one call to SQLConfigDataSource, and create the new .MDB file on a
+separate call to SQLConfigDataSource.
+
+The syntax for these keywords are:
+
+     CREATE_DB=&lt;path name&gt; &lt;sort order&gt;
+     REPAIR_DB=&lt;path name&gt;
+     COMPACT_DB=&lt;source path&gt; &lt;destination path&gt; &lt;sort order&gt;
+
+&lt;path name&gt; is the fully qualified path name to the .MDB file to be created
+or repaired. &lt;source path&gt; is the fully qualified path name to the .MDB
+file to be compacted. &lt;destination path&gt; is the fully qualified path name
+of the file after it has been compacted. &lt;sort order&gt; is one of the
+following keywords:
+
+  General, Traditional Spanish, Dutch, Swedish/Finnish, Norwegian/Danish,
+  Icelandic, Czech, Hungarian, Polish, Russian, Turkish, Arabic, Hebrew, Greek
+
+NOTE: The General sort order covers English, French, German, Portuguese, and
+Italian.
+
+Depending on the version of the Microsoft Jet Engine used by the Microsoft Access
+ODBC driver the following keywords may also be available:
+
+  
+
+  CREATE_DBV2=&lt;path name&gt; &lt;sort order&gt; (to create version 2 Jet engine mdb file, Access 2, 16bit)
+
+  CREATE_DBV3=&lt;path name&gt; &lt;sort order&gt; (to create version 3 Jet engine mdb file, Access 95, Access 97)
+
+  CREATE_DBV4=&lt;path name&gt; &lt;sort order&gt; (to create version 4 Jet engine mdb file, Access 2000)
+
+For additional information on these and other keywords, see the MSDN or the
+Microsoft Press book, Microsoft Jet Database Engine Programmer's Guide.
+
+NOTE: Some versions of the documentation incorrectly spell CREATE_DBV2 and are
+missing descriptions for CREATE_DBV3 and CREATE_DBV4.
+
+With CREATE_DB, the file named in &lt;path name&gt; must not exist at the time
+SQLCOnfigDataSource is called.
+
+With REPAIR_DB, the file named in &lt;path name&gt; must be a valid .MDB file.
+
+With COMPACT_DB, the file named in &lt;source path&gt; must be a valid .MDB file.
+&lt;destination path&gt; can point to the same file as &lt;source path&gt;, in
+which case the file will be compacted into the same location. If &lt;destination
+path&gt; names a different file than &lt;source path&gt;, the file named as the
+&lt;destination path&gt; must not exist at the time SQLConfigDataSource is
+called.
+
+For example, the following code segment would create a .MDB file, repair it,
+compress it to a second file, compress it in the same location, and then create
+a datasource for it.
+
+     void Config_Sample(void)
+     {
+               RETCODE retcode;
+               int     subscrp;
+       extern  HWND    hWnd;      /* Main window handle. */ 
+
+       UCHAR szDriver[] = "Microsoft Access Driver (*.mdb)";
+       UCHAR *szAttributes2[] =
+       // Create the original .mdb file.
+       {"CREATE_DB=c:\\odbcsdk\\smpldata\\access\\general.mdb General\0\0",
+
+       // Issue a REPAIR_DB on the created file.
+       "REPAIR_DB=c:\\odbcsdk\\smpldata\\access\\general.mdb\0\0",
+
+       // Compact the file into a new location.
+       "COMPACT_DB=c:\\odbcsdk\\smpldata\\access\\general.mdb "
+         "c:\\odbcsdk\\smpldata\\access\\general2.mdb General\0\0",
+
+       // Compact the file onto itself.
+       "COMPACT_DB=c:\\odbcsdk\\smpldata\\access\\general.mdb "
+         "c:\\odbcsdk\\smpldata\\access\\general.mdb General\0\0",
+
+       // Create a datasource for the first .mdb file created.
+       "DSN=albacc\0FIL=MS Access\0JetIniPath=odbcddp.ini\0"
+       "DBQ=c:\\odbcsdk\\smpldata\\access\\general.mdb\0"
+       "DefaultDir=c:\\odbcsdk\\smpldata\\access\0\0"};
+
+       for (subscrp = 0;
+            subscrp &lt;= ((sizeof szAttributes2 / sizeof(UCHAR *)) - 1);
+             subscrp++)
+       {
+         retcode = SQLConfigDataSource(hWnd,
+                                       ODBC_ADD_DSN,
+                                       szDriver,
+                                       szAttributes2[subscrp]);
+         if (retcode != TRUE)
+           handle_error(retcode);
+       }
+       return;
+     }
+
+
+Additional query words: 2.00.2317 Windows NT SQLConfigDataSource desktop driver access
+
+======================================================================
+Keywords          : kbcode kbprogramming kbusage kbGrpDSVCDB 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC350 kbODBC300 kbODBC200
+Version           : WINDOWS:2.0,3.0,3.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

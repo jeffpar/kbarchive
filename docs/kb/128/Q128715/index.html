@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128715: 3Com 3C619B Fails Using Default Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128715: 3Com 3C619B Fails Using Default Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128715/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128715/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128715/","publisher":null,"image":null,"headline":"Q128715: 3Com 3C619B Fails Using Default Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128715-3com-3c619b-fails-using-default-settings">Q128715: 3Com 3C619B Fails Using Default Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128715
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kbhw kbsetup kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you configure the 3Com TokenLink III network adapter (3C619B) with the
+default settings (3Com mode) using the DOS Configuration utility (3TOKDIAG.EXE)
+and start Windows NT, the following system events appear in the Event Viewer:
+
+  Event ID: 5017 Source: tlnk3 Type: Warning Description: There is a memory
+  conflict at address 0x0000000000000000.
+
+  Event ID: 5000 Source: tlnk3 Type : Error Description: Has encountered a
+  conflict in resources and could not load.
+
+These symptoms occur sporadically.
+
+CAUSE
+=====
+
+The driver tries to load into an illegal memory address of 0x0 if the adapter is
+set for an I/O Port address of A20 or above.
+
+These are the default settings of the 3C619B network adapter:
+
+  Mode:        3com
+  Base I/O:    A20
+  Base (MMIO): CC000h
+  Shared Ram:  D8000 - DBFFF
+  Memory mode: 16
+  I/O mode:    16
+
+The Windows NT Diagostics (WINMSD) utility reports the following in the Adapters
+option:
+
+  Memory address      length
+  0x0                 0x2000
+
+  Port address        length
+  0x110               0x4
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+- Configure the 3C619B network adapter to use an I/O port address below A20 in
+  3Com mode.
+
+  -or-
+
+- Configure the 3C619B network adapter as follows:
+
+     Mode:        IBM
+     Base I/O:    Primary
+     Base (MMIO): CC000h
+     Shared Ram:  D0000h
+     Memory mode: 16
+     I/O mode:    16
+
+  In Windows NT, use the IBM Token Ring Adapter driver.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+The 3Com product discussed here is manufactured by 3Com Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: prodnt scsi ibmtok
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

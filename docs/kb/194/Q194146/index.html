@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194146/","publisher":null,"image":null,"headline":"Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194146-sms-scandinavian-sql-server-sort-orders-cause-inventory-probs">Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194146
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Systems Management Server Administrator program to view the
+machine records of a Systems Management Server site, certain records that were
+previously present in the database may appear to have "disappeared" from the
+site. Upon closer inspection, you will see that missing data has been combined
+into another inventory record. By selecting the Previous History Record for the
+inventory record's Identification property, you may observe values relating to a
+"missing" machine record.
+
+CAUSE
+=====
+
+Microsoft SQL Server is configured to use character set 850 Multilingual and
+either sort order Scandinavian dictionary order, case-insensitive, uppercase
+preference (id 58), or sort order Scandinavian dictionary order,
+case-insensitive (id 60). By definition, these configurations do not
+differentiate between the characters "V" and "W".
+
+Because the unique identifier for Systems Management Server clients (that is, the
+SMSID) takes advantage of each of the alphanumeric characters, a conflict arises
+whenever a site has two clients differentiated only by the single character V or
+W (for example, "SIT0100V" and "SIT0100W").
+
+In this example, assuming that SIT0100V is written to the database first, when
+Inventory Data Loader attempts to add SIT0100W, the current record for SIT0100V
+will be added as a history record of SIT0100W. Therefore, the existing inventory
+record appears to have disappeared from the site database, until an inventory
+delta-MIF for SIT0100V is produced.
+
+WORKAROUND
+==========
+
+To work around this problem, set SQL Server to use a sort order that
+differentiates between these characters. To do this, perform complete the
+following steps, which apply specifically to SQL Server 6.5:
+
+1. Make a complete backup of your system, according to the steps outlined in
+  Chapter 15 of the Systems Management Server Administrator's Guide.
+
+2. Stop all SMS services running on your Systems Management Server site
+  server(s). You can use either the SMS Service Manager or Control Panel
+  Services to stop these services.
+
+3. Install a separate SQL Server running on another server and configure it for
+  another sort order (that is, a sort order other than Scandinavian dictionary
+  order, case-insensitive with or without uppercase preference).
+
+  NOTE: Because the Nordic sort orders available for the ISO character set are
+  not affected by this problem, you may also want to change the character set
+  you are using, in addition to changing the sort order.
+
+4. Start SQL Enterprise Manager and register the remote server you installed
+  during Step 3 of this procedure.
+
+5. Prepare the target server with proper device files to hold the database and
+  the transaction log. Create the target database spanning the entire space of
+  these two devices. The size of these devices should be at least as large as
+  your SMS database on your current server.
+
+6. In SQL Enterprise Manager, click Tools menu, click "Database/Object
+  Transfer", and then click to select the server that is currently holding your
+  SMS database as the source server and click to select the SMS database as the
+  source database.
+
+7. Make sure the destination SQL Server is selected as the destination server,
+  select the proper target database that you created during Step 5 of this
+  procedure, and then click "Start Transfer".
+
+8. During the transfer process, you may receive errors and warnings during
+  transfer of some objects. For a resolution to these warnings, consult the
+  following article in the Microsoft Knowledge Base:
+
+For additional information about resolutions to these warnings, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q189588 SMS: SQL Transfer Manager Errors When Moving SMS Database
+
+9. Start Systems Management Server Setup. Click Operations, click "SMS
+  Database", type a new SQL Server name (and possibly SQL Server login ID and
+  password), and then click OK.
+
+10. Systems Management Server Setup will now reset the system according to the
+  selected changes. When it is done, click Close and then click Exit. The
+  system will now use the new SQL Server and database instead.
+
+MORE INFORMATION
+================
+
+If you want to maintain the old SQL Server to store the SMS database, you can
+rebuild Master.dat (to do this, use the Rebuild Master Database option in SQL
+Setup on the original SQL Server, selecting a new sort order that does
+differentiate between the letters V and W). However, before doing so, you should
+determine whether this SQL Server is in use for other databases as well, because
+this step will purge all existing databases from Master.dat. If it is being used
+for other databases, you should carefully evaluate what kind of impact this
+configuration change may have for these databases. If you come to the conclusion
+that these databases can be successfully transferred to another temporary SQL
+Server running on a different sort order, you can pursue rebuilding Master.dat
+in order to change the running sort order. After completing this step, go
+through the procedure described in the WORKAROUND section of this article to
+move the SMS database back to the original server again. Also transfer all other
+databases you temporarily moved over to another server back to the original SQL
+server.
+
+NOTE: It is highly recommended that you go through these steps before you upgrade
+to Systems Management Server 2.0.
+
+
+Additional query words: prodsms localize Scandinavia resync multi lingual SEM Danish Finnish Norwegian Swedish
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

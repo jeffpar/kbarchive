@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103786: HOWTO: Change Window Background Color with Foundation Classes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103786: HOWTO: Change Window Background Color with Foundation Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103786/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103786/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103786/","publisher":null,"image":null,"headline":"Q103786: HOWTO: Change Window Background Color with Foundation Classes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103786-howto-change-window-background-color-with-foundation-classes">Q103786: HOWTO: Change Window Background Color with Foundation Classes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103786
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To change the background color for a CView, CFrameWnd, or CWnd object, process
+the WM_ERASEBKGND message. The sample code below demonstrates how to do this.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      BOOL CSampleView::OnEraseBkgnd(CDC* pDC)
+     {
+        // Set brush to desired background color
+        CBrush backBrush(RGB(255, 128, 128));
+
+        // Save old brush
+        CBrush* pOldBrush = pDC-&gt;SelectObject(&amp;backBrush);
+
+        CRect rect;
+        pDC-&gt;GetClipBox(&amp;rect);     // Erase the area needed
+
+        pDC-&gt;PatBlt(rect.left, rect.top, rect.Width(), rect.Height(),
+            PATCOPY);
+        pDC-&gt;SelectObject(pOldBrush);
+        return TRUE;
+     }
+
+To change the background color for a CMDIFrameWnd, you must subclass the multiple
+document interface (MDI) client window (window in the client area of
+CMDIFrameWnd) and process the WM_ERASEBKGND message. For more information about
+the MDI client window in an MDI application, see chapter 18 in "Programming
+Windows 3.1 - Third Edition" by Charles Petzold. For an example that shows how
+to subclass the MDICLIENT window, please see the article in the Microsoft
+Knowledge Base:
+
+  Q129471 HOWTO: Subclass the MDICLIENT by Using MFC
+
+To change the background color of an MDI client window (client area of a
+CMDIFrameWnd), perform the following steps using an AppWizard-generated
+application:
+
+1. Create a generic CWnd class with ClassWizard.
+
+2. Add a member variable, using the type of the CWnd class from step 1, to the
+  CMainFrame class.
+
+3. In the CMainFrame's OnCreate member function, after the call to the base
+  class CMDIFrameWnd::OnCreate(), add a call to SubclassWindow(). For example:
+
+        if (!m_wndNewClient.SubclassWindow(m_hWndMDIClient))
+        {
+          TRACE("Failed to subclass MDI client window\n");
+          return -1;      // fail to create
+        }
+
+  m_hWndMDIClient is the member variable of CMDIFrameWnd that contains the
+  handle to the MDI client window. Also, replace "m_wndNewClient" with the data
+  member that you created in step 2.
+
+4. Whenever a window is subclassed, the GetSuperWndProcAddr() member function
+  for the CWnd needs to be overridden to provide storage for the old window
+  procedure's address. To do that, add the following function to the
+  implementation of the CWnd class created in step 1:
+
+        WNDPROC* CNewClientWnd::GetSuperWndProcAddr()
+        {
+           static WNDPROC NEAR pfnSuper = NULL;
+           return &amp;pfnSuper;
+        }
+
+  NOTE: Replace "CNewClientWnd" above with the name of your class.
+
+  For more information on subclassing windows using the Microsoft Foundation
+  Classes, please see the following materials:
+
+   - "Class Library Reference" for functions CWnd::SubclassWindow(),
+     CWnd::GetSuperWndProcAddr(), and CWnd::SubclassDlgItem()
+
+   - Query on the following words in the Microsoft Knowledge Base:
+
+  subclass and sample and mfc
+
+   - See the CTRLTEST MFC sample application that is provided with Visual C++
+     for Windows and Visual C++ 32-bit Edition.
+
+   - See the article titled "Subclassing Windows with the Microsoft Foundation
+     Class Library" on the Microsoft Developer Network (MSDN) CD.
+
+5. Override the WM_ERASEBKGND message for the generic CWnd class, using the code
+  listed above.
+
+To change the background color of a CFormView object, either process the
+WM_ERASEBKGND message and use the code above or process the WM_CTLCOLOR message
+to change the background color.
+
+For more information on changing the background color of a dialog box by
+processing the WM_CTLCOLOR message, please query on the following words in the
+Microsoft Knowledge Base:
+
+  changing and background and color and MFC
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

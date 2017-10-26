@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:\DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:\DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93434/","publisher":null,"image":null,"headline":"Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:\\DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93434-memmaker-copies-himemsys-and-emm386exe-to-cdos">Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:\DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93434
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run MemMaker and you have MS-DOS installed on a drive other than your
+startup (boot) drive (which is usually drive C), MemMaker creates a directory on
+the C drive that has the same name as the directory that MemMaker was run from
+and copies the following files to that directory:
+
+  MEMMAKER.EXE
+  MEMMAKER.HLP
+  MEMMAKER.INF
+  EMM386.EXE
+  HIMEM.SYS
+  CHKSTATE.SYS
+  SIZER.EXE
+
+During the optimization process, it also creates MEMMAKER.STS.
+
+NOTE: The original startup drive may not be drive C if you have a program such as
+Stacker from STAC Electronics.
+
+MORE INFORMATION
+================
+
+If MemMaker is run from the D:\MSDOS.622 directory, it creates a C:\MSDOS.622
+directory, copies the files listed above to that directory, and changes the
+DEVICE= statements in the CONFIG.SYS file to point to drive C to ensure that the
+files are found when MemMaker restarts the system. MemMaker copies these files
+to the startup drive because MemMaker moves the device= statements for HIMEM.SYS
+and EMM386.EXE to the top of the CONFIG.SYS file. Because these files are then
+loaded before any devices that might perform drive swapping, MemMaker must be
+sure it can find the files it needs to optimize your system's memory.
+
+MemMaker does not remove these files after it has completed its optimization. To
+remove these changes, edit the CONFIG.SYS file and make sure the device= lines
+for HIMEM.SYS and EMM386.EXE point to the drive that contains your full MS-DOS
+directory. You can then safely delete the directory on drive C created by
+MemMaker.
+
+Using SUBST
+-----------
+
+If you have a C:\DOS directory but use the SUBST command to remap the directory
+to another drive letter such as R: and place the MS-DOS directory into the PATH
+as R:\, MemMaker does not create a C:\DOS directory. Instead, MemMaker creates a
+C:\MEMMAKER directory and copies the above files into the new directory.
+MemMaker displays a message that it is copying files to the startup drive.
+MemMaker also leaves the HIMEM.SYS and EMM386.EXE lines in the CONFIG.SYS file
+pointing to the C:\MEMMAKER directory. The old CONFIG.SYS and AUTOEXEC.BAT files
+are in the C:\MEMMAKER directory.
+
+NOTE: Using the SUBST command to map directories to unused single drive letters
+saves space in the PATH statement, which is limited to 128 characters. This
+works on drives that are uncompressed, as well as on drives compressed with
+DoubleSpace.
+
+Additional query words: 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

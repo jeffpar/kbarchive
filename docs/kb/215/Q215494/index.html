@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215494/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215494/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215494/","publisher":null,"image":null,"headline":"Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215494-xfor-message-flow-through-the-ibm-ovvm-profs-connector">Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215494
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes message flow between Exchange Server and the IBM
+OV/VM-PROFS Connector.
+
+MORE INFORMATION
+================
+
+Message flow from Exchange Server to IBM OV/VM-PROFS 
+----------------------------------------------------
+
+1. The message is passed by the Exchange Server information store to the
+  connector's MTS-OUT folder if on same Exchange Server computer. Otherwise,
+  the message transfer agent (MTA) routes it to the Exchange Server computer
+  where the OV/VM Connector is installed, and places it in the connector's
+  MTS-OUT folder.
+
+2. The OV/VM Connector picks up the message from the MTS-OUT folder, looks up
+  the directory entries for the recipients, and places the message in the
+  READYOUT folder.
+
+  NOTE: Specifically, the process, Lsmexout.exe, listed in Exchange Connectivity
+  Administrator's Process Manager as "Transfer from Exchange for OV/VM," or
+  "LME-PROFS-MEXOUT," is responsible for the above action. In the Queues tab of
+  the OV/VM Connector Property page, MTS-OUT is called "Outbound from
+  Exchange," and READYOUT is called "Outbound to OV/VM."
+
+3. The OV/VM Connector receives the message from the MTS-OUT folder and puts it
+  into the READYOUT folder.
+
+4. The OV/VM Connector then translates it into an intermediary GML structure
+  (similar to DIA), breaks out the attachments into separate messages, and
+  places the message header(s) (one for the body, one for each attachment) into
+  the Exchsrvr\Connect\Exchconn\Q\Dia2vm.in directory as a file with the
+  extension .rdy, and places the message body (*.tmp) and attachments (*.att)
+  into separate files in the Exchsrvr\Connect\Exchconn\Q\Objects directory.
+
+  NOTE: Specifically, the process, Lsmexdia.exe, listed in Exchange Connectivity
+  Administrator's Process Manager as "Exchange to OV/VM Transform," or
+  "LME-PROFS-MEXDIA," is responsible for the above action.
+
+5. The OV/VM Connector then picks up the *.rdy file (and associated files), and
+  sends an OV/VM distribution to RSCS/VM over an LU 0 session. When RSCS
+  confirms that it has received the distribution, the OV/VM Connector removes
+  the *.rdy file and associated files.
+
+  NOTE: Specifically, the processes Lsdiavm.exe and Lsnje.exe, listed in
+  Exchange Connectivity Administrator's Process Manager as "Outbound to OV/VM"
+  ([LME-PROFS-DIAVM]), and "NJE Server" ([LME-PROFS-VMDIA]), respectively, work
+  together to process the message. Lsdiavm.exe does the message conversion, and
+  Lsnje.exe handles the SNA interface and acts as a traffic cop for the LU 0
+  session.
+
+Message Flow from IBM OV/VM-PROFS to Exchange Server
+----------------------------------------------------
+
+1. The OV/VM Connector listens to receive an incoming distribution from RSCS,
+  receives the distribution over an LU 0 session, and generates a file in the
+  Exchsrvr\Connect\Exchconn\Q\Vm2mex.in directory (extension *.rdy) containing
+  the message header, and generates a file in the
+  Exchsrvr\Connect\Exchconn\Q\Objects (extension *.snd) containing the message
+  body (or document/binary file).
+
+  NOTE: Specifically, the processes Lsnje.exe and Lsvmdia.exe, listed in
+  Exchange Connectivity Administrator's Process Manager as "NJE Server"
+  ([LME-PROFS-NJE]), and "Inbound from OV/VM" ([LME-PROFS-VMDIA]),
+  respectively, work together to process the message. Lsnje.exe handles the SNA
+  protocols and acts as a traffic cop for the LU 0 session, and Lsvmdia.exe
+  handles the message conversion.
+
+2. The OV/VM Connector picks up the *.rdy file (and associated files) from the
+  Exchsrvr\Connect\Exchconn\Q\Vm2mex.in directory, translates the message into
+  Microsoft internal format, and puts the message in the READYIN folder.
+
+  NOTE: Specifically, the process Lsdiamex.exe, listed in Exchange Connectivity
+  Administrator's Process Manager as "OV/VM to Exchange Transform," or
+  "LME-PROFS-DIAMEX," is responsible for the above action.
+
+3. The OV/VM Connector then verifies the validity of the recipients and puts the
+  message into the MTS-IN folder.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189073/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189073/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189073/","publisher":null,"image":null,"headline":"Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189073-bug-step-2-of-the-mfc-appwizard-does-not-set-macro-values">Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189073
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbide kbVC500bug kbVC600bug kbGrpDSTools kbNoUpdate
+Last Modified: 12-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The AppWizard, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a Custom AppWizard that uses the Standard AppWizard step defined by
+the APWZDLG_DLGAPPOPTIONS dialog box (Step 2), the macro values associated with
+this dialog box do not get set when the Next button is clicked.
+
+RESOLUTION
+==========
+
+The macro values are set when the Next button or the Back button of the
+APWZDLG_PROJOPTIONS dialog is clicked (Step 3). The TITLE macro is an exception.
+This macro is not set until the Finish button is selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The APWZDLG_DLGAPPOPTIONS dialog has the following associated macros:
+
+  ABOUT        Whether the standard MFC AppWizard user or Custom AppWizard
+               user has specified that the dialog-based application
+               include an About box. Default value is ON.
+
+  HELP         Whether the standard MFC AppWizard user or custom AppWizard
+               user has specified that the application have
+               context-sensitive help. Default value is OFF.
+
+  3D           Whether the standard MFC AppWizard user or custom AppWizard
+               user has specified that the application use 3D controls.
+               Default value is ON.
+
+  AUTOMATION   Whether the standard MFC AppWizard user or custom AppWizard
+               user has selected Automation support. Default value is OFF.
+
+  OLECTL       Whether the application supports using ActiveX Controls.
+               Default value is ON.
+
+  SOCKETS      Whether the standard MFC AppWizard user or custom AppWizard
+               user has specified that the project have Windows Sockets
+               support. Default value is OFF.
+
+  TITLE        The caption string for an application's main title bar or,
+               in a dialog-based application, the dialog's title. Default
+               value is the name of the project.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Custom AppWizard based on Standard MFC AppWizard steps.
+
+2. In your Custom AppWizard's CDialogChooser::Next and CDialogChooser::Back
+  functions, add the following code:
+
+        // Look up the value associated with the ABOUT macro.
+        // Replace &lt;MyCustomAWProj&gt; with your custom AppWizard project name.
+        // See "CCustomAppWiz::m_Dictionary" in the on-line documentation.
+        CString strAbout;
+        if( !&lt;MyCustomAWProj&gt;aw.m_Dictionary.Lookup(_T("ABOUT"), strAbout) )
+           strAbout = "ABOUT is not defined in the dictionary";
+        else
+           strAbout = "ABOUT is " + strAbout;
+        AfxMessageBox( strAbout );
+
+3. Build your Custom AppWizard by selecting Build from the main menu or by
+  entering F7.
+
+4. Create a new project based on a Custom AppWizard.
+
+5. In Step 1, select "Dialog based" as the type of application to create, and
+  click the Next button. The message box will show that the ABOUT macro is set.
+
+6. In Step 2, clear the About Box check box, and click the Next button. The
+  message box still shows the ABOUT macro is set.
+
+7. In Step 3, click the Next button or the Back button. The message box now
+  shows that the ABOUT macro is undefined.
+
+This behavior is the same for the macros in the MORE INFORMATION section of this
+article with the exception of TITLE. This macro is not defined until the Finish
+button is clicked.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q186895 BUG: Custom AppWizard Errors with Applications That Have Help
+
+Visual C++ Programmer's Guide: Beginning Your Program; Creating Custom
+AppWizards
+
+Visual C++ Programmer's Guide: Beginning Your Program; Details
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbide kbVC500bug kbVC600bug kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

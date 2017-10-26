@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192742/","publisher":null,"image":null,"headline":"Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192742-xadm-perfmon-counters-unavailable-after-applying-55-sp1">Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192742
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If you run Performance Monitor after applying Exchange Server 5.5 Service Pack
+1, no counters may appear in the object list. This happens under the following
+conditions: Regional Settings are set to "French" and Outlook Web Access
+(MSExchangeWEB service) is enabled.
+
+CAUSE
+=====
+
+The wrong values for French strings are in the Ewsperf.ini file included in
+Service Pack 1 (SP1).
+
+WORKAROUND
+==========
+
+If you have not yet installed Exchange Server 5.5 SP1 and if you match these two
+conditions:
+
+  French Regional Settings and Outlook Web Access enabled
+
+then you can avoid the problem by replacing the following lines in the
+Server\Setup\I386\Ewsperf.ini file of SP1:
+
+  OBJECT_KLUANE_009_NAME=MSExchange WEB
+  OBJECT_KLUANE_009_HELP=Microsoft Outlook Web Access
+  COUNTER_1_009_NAME=Objets transmetteurs de rendus
+  COUNTER_1_009_HELP=Le nombre actuel d'objets transmetteurs de rendus.
+  COUNTER_2_009_NAME=Corps de messages rendus
+  COUNTER_2_009_HELP=Le nombre total de corps de messages rendus.
+  COUNTER_3_009_NAME=Pieces jointes rendues
+  COUNTER_3_009_HELP=Le nombre total de pieces jointes rendues.
+  COUNTER_4_009_NAME=Octets de pieces jointes rendus
+  COUNTER_4_009_HELP=Le nombre total d'octets de pieces jointes rendus.
+
+Replace the above lines with:
+
+  OBJECT_KLUANE_00C_NAME=MSExchange WEB
+  OBJECT_KLUANE_00C_HELP=Microsoft Outlook Web Access
+  COUNTER_1_00C_NAME=Objets transmetteurs de rendus
+  COUNTER_1_00C_HELP=Le nombre actuel d'objets transmetteurs de rendus.
+  COUNTER_2_00C_NAME=Corps de messages rendus
+  COUNTER_2_00C_HELP=Le nombre total de corps de messages rendus.
+  COUNTER_3_00C_NAME=Pieces jointes rendues
+  COUNTER_3_00C_HELP=Le nombre total de pieces jointes rendues.
+  COUNTER_4_00C_NAME=Octets de pieces jointes rendus
+  COUNTER_4_00C_HELP=Le nombre total d'octets de pieces jointes rendus. Then run
+the SP1 Setup.exe.
+
+If you are already facing this problem, edit the registry with REGEDT32, and then
+reinstall the Exchange Web counters.
+
+
+1. Fixing the registry with REGEDT32
+------------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Run REGEDT32.
+
+2. Navigate to the following registry subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\MSExchangeWEB\Performance
+
+3. Compute the Last Counter and Last Help values as follows:
+
+   - LastCounter = FirstCounter + 8
+
+   - LastHelp = FirstHelp + 8
+
+4. Modify the registry values "Last Counter" and "Last Help" with the values
+  computed above.
+
+5. Navigate to the following registry key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Perflib\009
+
+  (English counters were set properly by the Service Pack).
+
+6. Edit the "Counter" value that is a multi-string value. Go to the last couple
+  of strings and note the highest counter number. For example, if the last two
+  lines look like the following, the LastCounter value should be 3400:
+
+  3400
+  Attachment Bytes Rendered
+
+7. Edit the "Help" value that is a multi-string value. Note the highest help
+  value (last one).
+
+8. Navigate to the following registry key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Perflib
+
+9. Modify LastCounter and LastHelp with the values computed above.
+
+2. Restoring Counters of MSExchangeWEB Service
+----------------------------------------------
+
+Modify Ewsperf.ini, located in \server\setup\i386 of Exchange 5.5 SP1, so that
+all French counters are marked with the 00C language ID. You should now have the
+following lines:
+Replace the above lines with:
+
+  OBJECT_KLUANE_00C_NAME=MSExchange WEB
+  OBJECT_KLUANE_00C_HELP=Microsoft Outlook Web Access
+  COUNTER_1_00C_NAME=Objets transmetteurs de rendus
+  COUNTER_1_00C_HELP=Le nombre actuel d'objets transmetteurs de rendus.
+  COUNTER_2_00C_NAME=Corps de messages rendus
+  COUNTER_2_00C_HELP=Le nombre total de corps de messages rendus.
+  COUNTER_3_00C_NAME=Pieces jointes rendues
+  COUNTER_3_00C_HELP=Le nombre total de pieces jointes rendues.
+  COUNTER_4_00C_NAME=Octets de pieces jointes rendus
+  COUNTER_4_00C_HELP=Le nombre total d'octets de pieces jointes rendus.
+
+Run the following commands:
+
+  "UNLODCTR MSExchangeWEB" (without the quotation marks)
+  "LODCTR EWSPERF.INI" (without the quotation marks)
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 1. This problem was first corrected in Exchange Server
+5.5 Service Pack 2.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

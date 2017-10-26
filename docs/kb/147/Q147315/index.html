@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147315: FIX: Access Violation After Unloading Extension DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147315: FIX: Access Violation After Unloading Extension DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147315/","publisher":null,"image":null,"headline":"Q147315: FIX: Access Violation After Unloading Extension DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147315-fix-access-violation-after-unloading-extension-dll">Q147315: FIX: Access Violation After Unloading Extension DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147315
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbtool kbwizard kbDLL kbMFC kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The AppWizard, included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you dynamically unload an AppWizard-generated Microsoft Foundation Class
+(MFC) Extension DLL, an access violation may occur as you try to gain access to
+Windows resources. The last MFC function on the call stack is usually
+AfxFindResourceHandle().
+
+NOTE: This occurs only when Extension DLLs are loaded and unloaded explicitly
+with calls to AfxLoadLibrary() and AfxFreeLibrary() or LoadLibrary() and
+FreeLibrary(). Most Extension DLLs are loaded implicitly by linking to their
+import libraries.
+
+CAUSE
+=====
+
+When AppWizard generates the program template for an Extension DLL, it is not
+including a call to AfxTermExtensionModule(). This function removes the DLL from
+the list of loaded MFC Extension DLLs. Since this list is used when searching
+for resources, an access violation may occur after an AppWizard-generated
+Extension DLL is freed.
+
+RESOLUTION
+==========
+
+Add the following line to the DLL_PROCESS_DETACH section of an AppWizard-
+generated Extension DLL's DllMain():
+
+     else if (dwReason == DLL_PROCESS_DETACH)
+     {
+        // Add the following line
+        AfxTermExtensionModule(extensionDLL);
+
+            // TODO: perform other cleanup tasks here
+     }
+
+extensionDLL should be the same static value passed to AfxInitExtensionModule()
+in the DLL_PROCESS_ATTACH section. This value should be different for every
+Extension DLL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual C++ 5.0.
+
+MORE INFORMATION
+================
+
+NOTE: Dynamically loading and unloading MFC Extension DLLs was not supported in
+versions prior to Visual C++ 4.0. Dynamically loading or freeing Extension DLLs
+built with earlier versions could corrupt static MFC state information.
+
+AfxLoadLibrary() and AfxFreeLibrary() should be called to load and free MFC
+Extension DLLs. Calling the Win32 API functions LoadLibrary() and FreeLibrary()
+to load or free MFC Extension DLLs can cause problems in multi-threaded
+applications.
+
+For more information on AfxTermExtensionModule() see the "TN033: DLL Version of
+MFC" technote in the MFC documentation.
+
+Additional query words: _AFXDLL gpfault gpf
+
+======================================================================
+Keywords          : kbtool kbwizard kbDLL kbMFC kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSMFCATL kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

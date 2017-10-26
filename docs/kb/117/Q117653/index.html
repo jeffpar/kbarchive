@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117653: PC DOS: MAIL.EXE Command-Line Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117653: PC DOS: MAIL.EXE Command-Line Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117653/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117653/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117653/","publisher":null,"image":null,"headline":"Q117653: PC DOS: MAIL.EXE Command-Line Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117653-pc-dos-mailexe-command-line-options">Q117653: PC DOS: MAIL.EXE Command-Line Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117653
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.0a, on platform(s):
+   - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For versions 3.0 and 3.0a of Microsoft Mail for PC Networks, there are several
+parameters you can add to the command line for MS-DOS workstations (MAIL.EXE).
+This article explains the parameters.
+
+MORE INFORMATION
+================
+
+To use a command-line option, start the program by typing MAIL followed by a
+space and the command-line option. You can also add the mailbox name to the
+command line.
+
+-&lt;25-50&gt;         Specifies number of lines on screen
+                This option is used to specify the number of lines you
+                want to display on your screen. Minimum = 25,
+                maximum = 50.
+
+-c               Color option
+                This option is used to display the screen in color.
+
+-d&lt;drive&gt;        Specify database location
+                This option -d specifies the drive letter of your
+                postoffice. For example, if drive F is the location of
+                the Mail data files then the command line would be -df.
+                This option is not required for Microsoft-compatible
+                networks using the advanced security feature of Microsoft
+                Mail. It is required for other networks only if the Mail
+                data files are not on drive M.
+
+-e&lt;drive:path&gt;   Specify location of graphics executables
+                This option specifies the drive and path location of
+                graphics executable files.
+
+-h,-?            Show help
+                This option displays the command line options and usage
+                descriptions.
+
+-i&lt;drive:path&gt;   Specify location for temporary graphics files
+                This option specifies the drive and path for the creation
+                of temporary graphic files.
+
+-m               Monitor/Micro option
+                This option tells Mail that the Monitor or Micro program
+                is loaded and will notify you of new mail. The Mail
+                program will not notify you when new mail arrives.
+
+-n&lt;1-999&gt;        Set polling period in seconds
+                This option specifies the polling period between checks
+                for new mail in seconds, from a minimum of 1 to a maximum
+                of 999. Default is 30 seconds. This option is effective
+                only when the -X option is configured to enable polling
+                rather than instant notification.
+
+-n0              Disable polling
+                This option disables polling for new mail.
+
+-p&lt;password&gt;     Specify password
+                This option is used to bypass the password prompt when you
+                start the program.
+
+-s               Specify monitor type
+                This option specifies the graphic display as follows:
+                -SCGA for CGA
+                -SEGA for EGA
+                -SHERC for Hercules Graphics
+                -SVGA for VGA
+                -SMONO for Monochrome monitors.
+
+-v               Reduce screen snow
+                This option is used to reduce the snow on your screen.
+
+-w&lt;1-15&gt;         Set border color
+                This option is used to set the border color. The numbers
+                1 to 15 correspond to the following:
+
+                Number            Color
+                ------            -----
+                   1              Blue
+                   2              Green
+                   3              Cyan
+                   4              Red
+                   5              Magenta
+                   6              Brown
+                   7              White
+                   8              Gray
+                   9              Bright blue
+                  10              Bright green
+                  11              Bright cyan
+                  12              Bright red
+                  13              Bright magenta
+                  14              Yellow
+                  15              Bright white
+
+-x               Set notification method
+                This option specifies how mail checks for new mail
+                messages: by polling periodically or by notifying you
+                instantly when new mail arrives in the postoffice.
+                The -n sets the polling interval. The effect of the
+                -x option depends on whether NetBIOS is loaded and
+                on what type of network you are using.
+
+REFERENCES
+==========
+
+"Microsoft Mail Electronic Mail for PC Networks Workstation Software for MS-DOS
+User's Guide" page 21.
+
+Additional query words: 3.00 mono
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174329: SMSINST: Creating Backup Copies of Replaced Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174329: SMSINST: Creating Backup Copies of Replaced Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174329/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174329/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174329/","publisher":null,"image":null,"headline":"Q174329: SMSINST: Creating Backup Copies of Replaced Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174329-smsinst-creating-backup-copies-of-replaced-files">Q174329: SMSINST: Creating Backup Copies of Replaced Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174329
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbusage smsinst
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server Installer includes a feature that allows you
+to back up files that are replaced during an installation. This process is not
+automatic by default.
+
+MORE INFORMATION
+================
+
+To enable support for backing up replaced files, the Installer variable
+BACKUPDIR must be set to a value that is a valid directory path. Typically a
+backup directory would be created below a program's main installation
+directory.
+
+Use either of the two following methods to ensure that the BACKUPDIR variable is
+set.
+
+METHOD 1
+
+If you wish to display the Backup Replaced Files dialog box or are performing a
+silent installation (using the /s command line switch), do the following:
+
+1. Under Installation Interface, click the Dialogs tab.
+
+2. Click to select the Backup Replaced Files check-box.
+
+  This will display the dialog asking whether you want to back up replaced
+  files, and what directory to store them in, and then sets the BACKUPDIR
+  appropriately. If the option to display the dialog is selected, the default
+  is set to %MAINDIR%\BACKUP.
+
+NOTE: When a Systems Management Server Installer executable is run with the /s
+switch (for silent installation), none of the dialogs selected are displayed,
+but if the Backup Replaced Files dialog box is selected, BACKUPDIR will still be
+set to %MAINDIR%\BACKUP, and files will be backed up accordingly.
+
+METHOD 2
+
+If you wish to have an interactive installation, but prefer not to include the
+Backup Replaced Files dialog box, in Script Editor view, insert a Set Variable
+script item before the first instance of any Install File script items:
+
+  Variable: BACKUPDIR
+  New Value: %MAINDIR%\BACKUP
+  Operation: Nothing
+
+Either of these methods will cause a backup directory to be created (user
+specified location for Method 1 and BACKUP under the application's main
+directory for the Method 2). As each file is installed, Installer will check to
+see if the file being installed is replacing a current file. If it is, it will
+backup the current file to the specified backup directory, then install the new
+file. If the application is later uninstalled, the backed-up files will be
+restored.
+
+For more information on creating backup copies of replaced files, refer to the
+online help provided with Microsoft Systems Management Server Installer. Search
+the index for the word "BACKUPDIR" (without the quotation marks).
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbusage smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

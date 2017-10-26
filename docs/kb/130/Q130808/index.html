@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130808/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130808/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130808/","publisher":null,"image":null,"headline":"Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130808-help-building-fortran-powerstation-32-app-that-targets-win32s">Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130808
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbFortranPS kbLangFortran kbOSWin32s
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Fortran PowerStation 32 was not designed to build applications that target
+Win32s, nor has this capability been tested. Therefore, developing Win32-based
+applications with Fortran PowerStation 32 that target Win32s is not supported.
+
+However, it is possible to create a Win32-based application that runs on Win32s
+if you follow the guidelines for all applications that target Win32s.
+
+MORE INFORMATION
+================
+
+There are many Win32 APIs that are not supported under Win32s. They will return
+ERROR_CALL_NOT_IMPLEMENTED. The Win32 Programmer's Reference identifies whether
+or not each Win32 API is supported under Win32s. As long as you use only the
+Win32 APIs that are supported on Win32s, your application should run on Win32s.
+
+
+Fortran PowerStation 32 can create two kinds of applications: Console and
+QuickWin (Standard Graphics is a disguised QuickWin). Win32s does not support
+the Console API, so console applications are not an option under Win32s. In
+addition, Fortran PowerStation 32 QuickWin libraries were not restricted to the
+subset of Win32 APIs that are supported under Win32s. Therefore, some functions
+and statements in a QuickWin application will fail under Win32s.
+
+We do not have a list of the things in a QuickWin application that will fail
+under Win32s, so when you use QuickWin under Win32s, you use it at your own
+risk.
+
+The "Sample Code" in this article is an example of a program that does not work
+as expected under Win32s. If the sample code is compiled with Fortran
+PowerStation 32 using the /MW compile option (create QuickWin app) and run under
+Windows NT, the following is displayed in a child window:
+
+     character * 20
+
+When the application is run under Win32s, this string is not displayed.
+
+Sample Code
+-----------
+
+  C Compile options needed: /MW
+
+        character * 20  ch20
+
+        open (1,file='test.for')
+        read (1,' (a)') ch20
+        write(*,' (1x,a)') ch20
+        close(1)
+        stop
+        end
+
+REFERENCES
+==========
+
+For information regarding Win32s and Microsoft FORTRAN PowerStation versions 1.0
+and 1.0a for MS-DOS, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q118549 PRB: PowerStation Applications Do Not Start Under Win32s
+
+Additional query words: 1.00 4.00 win32sdk
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbOSWin32s 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

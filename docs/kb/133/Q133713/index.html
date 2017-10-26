@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133713: PRB: Problems Using the PivotTable Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133713: PRB: Problems Using the PivotTable Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133713/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133713/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133713/","publisher":null,"image":null,"headline":"Q133713: PRB: Problems Using the PivotTable Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133713-prb-problems-using-the-pivottable-wizard">Q133713: PRB: Problems Using the PivotTable Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133713
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One of the following symptoms occur when you use the PivotTable Wizard in Visual
+FoxPro:
+
+- The SQL Data Sources dialog is opened after Microsoft Excel is launched. In
+  some cases, an OLE error is then displayed. The PivotTable Wizard continues
+  to fail, regardless of the data used.
+
+-or-
+
+- The PivotTable Wizard fails on some tables.
+
+-or-
+
+- The PivotTable Wizard does not display International or high ASCII
+  characters.
+
+CAUSE
+=====
+
+The cause of these problem is likely related to the ODBC configuration. The
+PivotTable Wizard uses ODBC to generate the Pivot table in Microsoft Excel.
+
+RESOLUTION
+==========
+
+Here are three steps you can take to troubleshoot this problem:
+
+1. Verify the content of the ODBC.INI file located in the WINDOWS directory. It
+  should contain the sections and the entries listed below. Under Windows NT,
+  the Driver32 entry is necessary for the PivotTable Wizard to work well. The
+  PivotTable Wizard uses OLE automation to communicate with Microsoft Excel,
+  which in turn retrieves the Visual FoxPro data for its PivotTable by using
+  MSQuery.
+
+
+  Windows NT
+  ----------
+  [ODBC Data Sources]
+  MS Access Databases=Access Data (*.mdb)
+  FoxPro Files=FoxPro Files (*.dbf)
+  dBASE Files=dBase Files (*.dbf)
+  Paradox Files=Paradox Files (*.dp )
+  NWind=dBase Files (*.dbf)
+  MS Access 2.0 Databases=Access 2.0 for MS Office (*.mdb)
+
+  [FoxPro Files]
+  Driver=C:\WINNT35\SYSTEM\SIMBA.DLL
+  FileType=FoxPro 2.5
+  SingleUser=False
+  Driver32=C:\WINNT35\System32\odbcjt32.dll
+
+  Windows and Windows for Workgroups
+  ----------------------------------
+  [ODBC Data Sources]
+  MS Access Databases=Access Data (*.mdb)
+  FoxPro Files=FoxPro Files (*.dbf)
+  dBASE Files=dBase Files (*.dbf)
+  Paradox Files=Paradox Files (*.dp )
+  NWind=dBase Files (*.dbf)
+  MS Access 2.0 Databases=Access 2.0 for MS Office (*.mdb)
+
+  [FoxPro Files]
+  Driver=C:\WINDOWS\SYSTEM\ODBCJT16.DLL
+  DriverId=24
+  JetIniPath=odbcddp.ini
+
+1. Verify the dates and sizees of the ODBCDLL and ODBCINST.DLL files. They may
+  be outdated. These files are located in the WINDOWS\SYSTEM directory in
+  Windows version 3.1 or Windows for Workgroups, or in the WINNT\SYSTEM
+  directory in Windows NT. Visual FoxPro installs 16-bit ODBC drivers under
+  Windows, and 32-bit ODBC drivers under Windows NT. The file sizes for each
+  drivers should be at least:
+
+  ODBC.DLL       55,792
+  ODBCINST.DLL   86,800
+
+2. Verify the name of the FoxPro ODBC driver used. If the Driver= line lists
+  SIMBA.DLL, you might be using an outdated version of the driver that does not
+  support General fields or high ASCII characters.
+
+To resolve these problems, reinstall the ODBC drivers. You can use the Visual
+FoxPro Setup program to reinstall these drivers.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You must have Microsoft Excel with Microsoft Query installed on your computer to
+be able to create a pivot table. For more information about pivot tables, please
+see the Microsoft Excel Help menu.
+
+For more information about the PivotTable Wizard, please query using "PivotTable
+Wizard" in the Visual FoxPro Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

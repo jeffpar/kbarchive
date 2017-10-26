@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104096: IniHeadr.exe Reads Section Headers from .INI Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104096: IniHeadr.exe Reads Section Headers from .INI Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104096/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104096/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104096/","publisher":null,"image":null,"headline":"Q104096: IniHeadr.exe Reads Section Headers from .INI Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104096-iniheadrexe-reads-section-headers-from-ini-files">Q104096: IniHeadr.exe Reads Section Headers from .INI Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104096
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbsample kbOSWin311 kbOSWin300 kbGrpDSUser kbfile kb16bitonly kbSysSettings kbOSWin310
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Iniheadr.exe sample defines a function called GetPrivateProfileSections(),
+which parses a given .INI file and returns a buffer containing the section
+headers separated by NULLs and terminated by a double NULL. SECTION.C contains
+the function and a necessary helper function. The sample allows the user to
+choose an .INI file using the Open common dialog box. The section headings are
+then placed in a list box.
+
+The Windows SDK does not define a function to read all of the section headers
+from a profile (.INI) file. An application must read the entire .INI file and
+parse it to obtain the section headers.
+
+NOTE: Microsoft recommends using Windows's application programming interfaces
+(APIs) to read .INI files. The method described below is not guaranteed to work
+on future releases, especially for system .INI files such as WINFILE.INI,
+WIN.INI, SYSTEM.INI, CONTROL.INI, and so forth.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Iniheadr.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+A profile file (WIN.INI) or a private profile (such as CLOCK.INI) must have the
+following form:
+
+  [section heading]
+  entry=value
+
+     .
+     .
+     .
+
+For example, given a profile containing the following section headings
+
+  [windows]
+     .
+     .
+     .
+
+  [Desktop]
+
+     .
+     .
+     .
+  [Extensions]
+
+GetPrivateProfileSections() parses the profile file and places the following in a
+buffer:
+
+   windows&lt;NULL&gt;Desktop&lt;NULL&gt;Extensions&lt;NULL&gt;&lt;NULL&gt;
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsample kbOSWin311 kbOSWin300 kbGrpDSUser kbfile kb16bitonly kbSysSettings kbOSWin310 
+Technology        : kbAudDeveloper kbSDKSearch kbWinSDKSearch
+Version           : WINDOWS:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

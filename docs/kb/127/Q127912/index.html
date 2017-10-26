@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127912: Writer/Artist: Paint Bucket Does Not Fill | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127912: Writer/Artist: Paint Bucket Does Not Fill" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127912/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127912/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127912/","publisher":null,"image":null,"headline":"Q127912: Writer/Artist: Paint Bucket Does Not Fill","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127912-writerartist-paint-bucket-does-not-fill">Q127912: Writer/Artist: Paint Bucket Does Not Fill</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127912
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0,1.1,1.1a
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 30-APR-1999
+
+1.00 1.10 1.10a
+WINDOWS
+kbenv kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+- Microsoft Creative Writer for Windows, versions 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Paint Bucket tool to color an object or background in Fine
+Artist, or to color a picture in the CD-ROM version of Creative Writer, the tool
+may place a small line of color instead of filling the area.
+
+This behavior occurs if you are using an ATI Mach 64 video card set for more than
+256 colors and with certain other settings.
+
+NOTE: It may also occur if other certain video drivers are set to show more than
+256 colors.
+
+
+RESOLUTION
+==========
+
+To resolve the problem, use the following steps:
+
+Set the video display driver to show 256 colors.
+
+If using ATI Mach 64 video card:
+
+In Program Manager, go to the ATI DeskTop program group and click About DeskTop
+to determine which version of ATI DeskTop is installed on your computer.
+
+Follow the appropriate steps according to your version of ATI DeskTop.
+
+ATI DeskTop Version 1.2 and FlexDesk Version 3.0
+------------------------------------------------
+
+1. Run the ATI FlexDesk utility and choose Advanced.
+
+2. Make sure Color Palette is set to On, then choose OK.
+
+3. Choose OK again to close FlexDesk.
+
+4. A message appears stating that you need to restart Windows for changes to
+  take effect. Do NOT restart Windows; choose Continueinstead.
+
+5. From the ATI DeskTop, choose WinSwitch.
+
+6. If the Enabled check box is selected, clear the check box.
+
+7. You should again receive a message to restart Windows. Choose Restart
+  Windows.
+
+  This version of the ATI Mach 64 driver with these settings works with all
+  Microsoft Kids products.
+
+ATI DeskTop version 1.31 and FlexDesk version 3.0
+-------------------------------------------------
+
+You need a newer video driver to correctly run these programs. If the Color
+Palette is turned On, you can save your work, but the paint bucket does not
+work. If the Color Palette is turned Off, the paint bucket works, but when you
+save your work in Fine Artist, the saved document is black.
+
+ATI DeskTop version 1.4 and FlexDesk version 3.0
+------------------------------------------------
+
+1. Run the ATI FlexDesk utility and choose Advanced.
+
+2. Make sure Color Palette is set to Off, then choose OK.
+
+3. Choose OK again to close FlexDesk.
+
+4. You should receive a message stating that you need to restart Windows for
+  changes to take effect. Do NOT restart Windows; choose Continue instead.
+
+5. From the ATI DeskTop, choose WinSwitch.
+
+6. If the Enabled check box is selected, clear the check box to turn off
+  (disable) this feature.
+
+7. You should again receive a message to restart Windows. Click Restart Windows.
+
+This version of the ATI Mach 64 driver with these settings works only with
+Creative Writer and Fine Artist. For other Microsoft Kids products, or other
+multimedia products that require 256 palette colors, obtain the ATI Mach 64
+DeskTop version 1.2 with FlexDesk version 3.0 from ATI or from your computer
+manufacturer.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 1.10 1.10a kids mskids cw fa mczee cd disk diskette ATI color paintbucket Mach64 picture pictures sticker stickers palette wm_writer cd-rom cdrom floppy graphic
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword2 kbCreativeWriter110 kbCreativeWriter110a kbFineArtist100 kbFineArtist110 kbFineArtist110a
+Version           : WINDOWS:1.0,1.1,1.1a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

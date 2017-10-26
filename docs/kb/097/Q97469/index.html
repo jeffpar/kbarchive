@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97469/","publisher":null,"image":null,"headline":"Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97469-pc-wrmt-sharing-the-att-message-file-with-microsoft-mail">Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97469
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the AT&amp;T Mail driver with version 3.2 of Microsoft Mail Remote
+for Windows, it creates its own message file, called MS_ATT.MMF, in the Windows
+directory. If you are also using version 3.0 or 3.2 of Microsoft Mail for
+Windows or the Mail Remote driver, you can share the AT&amp;T message file.
+
+CAUTION: This procedure copies the Personal Address Book (PAB) to the AT&amp;T
+message file. It is best to use this procedure only after you have run Mail
+Remote for Windows with the AT&amp;T driver the first time because copying the
+Personal Address Book to the AT&amp;T message file overwrites existing
+addresses.
+
+To share the AT&amp;T message file with Microsoft Mail, do the following:
+
+1. If you have not already run Mail Remote with the AT&amp;T Mail driver, do so.
+
+2. From the File menu, choose Exit And Sign Out.
+
+3. Use the Mail System Selector to change the current driver to Mail for Windows
+  or Mail Remote for Windows.
+
+4. Start Mail Remote for Windows or Mail for Windows.
+
+5. From the File menu, choose Export Folder. Select &lt;Windows&gt;\MS_ATT.MMF
+  as the destination file name.
+
+6. From the File menu, choose Exit And Sign Out.
+
+7. Rename the original local message store used by the LAN and Remote drivers.
+
+8. Make sure the Mail Remote or Mail for Windows driver is current and start
+  Mail Remote for Windows again. A message tells you that the message file
+  could not be found, since it no longer exists in the original location with
+  the original file name. Mail Remote for Windows prompts you to locate the
+  message file or create a new file.
+
+9. Enter the name of the AT&amp;T message file, which now contains all the
+  information from the original message file (including the Personal Address
+  Book).
+
+10. Choose the OK button.
+
+
+Additional query words: 3.20 att
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

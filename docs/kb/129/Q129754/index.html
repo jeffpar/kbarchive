@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129754/","publisher":null,"image":null,"headline":"Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129754-how-to-remap-foxpro-2x-connectivity-kit-functions-to-30">Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129754
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro provides the same ability to use SQL Passthrough commands that
+earlier versions of FoxPro provided. However, the names of the functions have
+changed somewhat in Visual FoxPro version 3.0, so FoxPro version 2.x code that
+uses these functions will no longer work as expected in Visual FoxPro. This
+article provides code that re-maps the old function names to the new function
+names.
+
+MORE INFORMATION
+================
+
+If you have a main program file or a procedure file, add this code to it and
+call the functions as you normally would. If you do not, you may want to make a
+procedure file and use the SET PROCEDURE command to reference these functions at
+run time.
+
+     **************************************
+     *   Procedure:  DBCANCEL
+     *   Remaps dbcancel() -&gt; SQLCANCEL()
+     **************************************
+     FUNCTION dbcancel
+     PARAMETERS nHandle
+
+     h = SQLCANCEL(nHandle)
+
+     RETURN h
+
+     **************************************
+     *   Procedure:  DBCOLS
+     *   Remaps dbcols() -&gt; SQLCOLUMNS()
+     **************************************
+     FUNCTION dbcols
+     PARAMETERS nHandle, cTable, cColForm, cResultSet
+
+     DO CASE
+
+        CASE PARAMETERS() = 2
+           h = SQLCOLUMNS(nHandle, cTable)
+
+        CASE PARAMETERS() = 3
+           h = SQLCOLUMNS(nHandle, cTable, cColForm)
+
+        CASE PARAMETERS() = 4
+           h = SQLCOLUMNS(nHandle, cTable, cColForm, cResultSet)
+
+     ENDCASE
+
+     RETURN h
+
+     **************************************
+     *   Procedure:  DBCONNECT
+     *   Remaps dbconnect() -&gt; SQLCONNECT()
+     **************************************
+     FUNCTION dbconnect
+     PARAMETERS DataSource, cUserID, cPass, cCString
+
+     DO CASE
+
+        CASE PARAMETERS() = 3
+           h = SQLCONNECT(DataSource, cUserID, cPass)
+
+        CASE PARAMETERS() = 4
+           h = SQLCONNECT(DataSource, UserID, cPass, cCString)
+
+     ENDCASE
+     RETURN h
+
+     ******************************************
+     *   Procedure:  DBDISCONN
+     *   Remaps dbdisconn() -&gt; SQLDISCONN()
+     ******************************************
+     FUNCTION dbdisconn
+     PARAMETERS nHandle
+
+     h = SQLDISCONN(nHandle)
+
+     RETURN h
+
+     ******************************************
+     *   Procedure:  DBEXEC
+     *   Remaps dbexec() -&gt; SQLEXEC
+     ******************************************
+     FUNCTION dbexec
+     PARAMETERS nHandle, cSQLCommand, cCursorName
+
+     DO CASE
+
+        CASE PARAMETERS() = 2
+           h = SQLEXEC(nHandle, cSQLCommand)
+
+        CASE PARAMETERS() = 3
+           h = SQLEXEC(nHandle, cSQLCommand, cCursorName)
+
+     ENDCASE
+
+     RETURN h
+
+     ******************************************
+     *   Procedure:  DBGETOPT
+     *   Remaps dbgetopt() -&gt; SQLGETPROP
+     ******************************************
+     FUNCTION dbgetopt
+     PARAMETERS nHandle, cSetting
+
+     h = SQLGETPROP(nHandle, cSetting)
+
+     RETURN h
+
+     *******************************************
+     *   Procedure:  DBMORERES
+     *   Remaps dbmoreres() -&gt; SQLMORERESULTS
+     *******************************************
+     FUNCTION dbmoreres
+     PARAMETERS nHandle, cExpression
+
+     h = SQLMORERESULTS(nHandle)
+
+     RETURN h
+
+     ******************************************
+     *   Procedure:  DBSETOPT
+     *   Remaps dbsetopt() -&gt; SQLSETPROP
+     ******************************************
+     FUNCTION dbsetopt
+     PARAMETERS nHandle, cSetting, eExpression
+
+     h = SQLSETPROP(nHandle, cSetting, eExpression)
+
+     RETURN h
+
+     ******************************************
+     *   Procedure:  DBTABLES
+     *   Remaps dbtables() -&gt; SQLTABLES
+     ******************************************
+     FUNCTION dbtables
+     PARAMETERS nHandle, cTableType, cResultName
+
+     DO CASE
+
+        CASE PARAMETERS() = 2
+           h = SQLTABLES(nHandle, cTableType)
+
+        CASE PARAMETERS() = 3
+           h = SQLTABLES(nHandle, cTableType, cResultName)
+
+     ENDCASE
+
+     RETURN h
+
+     ***********
+     ** \EOF ***
+     ***********
+
+Additional query words: VFoxWin 3.00
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

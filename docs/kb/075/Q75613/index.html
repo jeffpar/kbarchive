@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/075/Q75613/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/075/Q75613/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/075/Q75613/","publisher":null,"image":null,"headline":"Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q75613-in-codeview-strings-not-watchable-beyond-null-0-character">Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q75613
+Product(s): Microsoft Programming Utilities
+Version(s): 2.2,3.11,4.0,4.0b,4.5,7.0,7.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS, versions 2.2, 3.11 
+- Microsoft CodeView for OS/2, versions 2.2, 3.11 
+- Microsoft BASIC Professional Development System (PDS) for MS-DOS, versions 7.0, 7.1 
+- Microsoft Basic Professional Development System (PDS) for MS-OS/2, version 7.1 
+- Microsoft QuickBASIC, versions 4.0, 4.0b, 4.5, on platform(s):
+   - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article documents a limitation of Microsoft CodeView's Watch feature when
+viewing Basic string expressions. A fixed-length or variable-length string
+containing a null character is only watchable up to the null character under
+CodeView. Any text beyond the null character is not watchable. This is not a
+problem with CodeView, but rather a design limitation.
+
+This information applies to Microsoft CodeView versions 2.2 and 3.1 for MS-DOS
+and MS OS/2; Microsoft Basic Professional Development System (PDS) versions 7.0
+and 7.1 for MS-DOS and version 7.1 for MS OS/2; and Microsoft QuickBasic
+versions 4.0, 4.0b, 4.5 for MS-DOS. (Note: CodeView is not shipped with
+QuickBasic 4.x products).
+
+MORE INFORMATION
+================
+
+A null character is a byte with an ASCII value of 0, such as returned by the
+Basic function CHR$(0). (Note that null bytes serve as the standard string
+terminator in the Microsoft C language.)
+
+CodeView interprets a null character as a null terminator for a string. Any
+attempt to display a string expression containing null characters in the Watch
+window of CodeView will result in a display of the string truncated at the null
+character. For example, if a null character is the first character of a string,
+an empty string ("") will be displayed in the Watch window for the string.
+
+Example 1
+---------
+
+An example of this behavior can be demonstrated in the following one line code
+example:
+
+     message$ = "Hi" + CHR$(0) + "there"
+
+If a watchpoint is set for message$ from within CodeView, the text displayed in
+the Watch window for message$ will be "Hi". However, if the variable message$ is
+printed as output, the displayed output will be Hi there.
+
+Example 2
+---------
+
+In the following example for fixed-length strings, CodeView will not display any
+text:
+
+1. A fixed-length string is DIMensioned, but not initialized or assigned to a
+  value.
+
+2. The MID$ statement is used to place a string fragment at any point after the
+  first character position of the fixed-length string.
+
+3. A watchpoint is set for the string under CodeView.
+
+When you first dimension a fixed-length string, it contains null characters, not
+spaces. When you use the MID$ statement to place a string fragment within the
+fixed-length string at any point after the first character position, a null byte
+(which CodeView treats as a string terminator) is left as the first character.
+If you set a Watchpoint for the string under CodeView, an empty string will be
+displayed in the Watch window. However, the embedded string fragment will still
+be part of the string and can be printed to the screen as output.
+
+The following is a code example that demonstrates the behavior described above:
+
+  DIM temp AS STRING * 20
+  MID$(temp,5,3) = "abc"
+  PRINT temp
+
+This code puts "abc" starting at the fifth character position of the variable
+temp. However, if you view the contents of temp within a Watch window of
+CodeView, an empty string ("") will be displayed for the string. The PRINT
+statement above will correctly print the contents of temp to the screen. The
+PRINT statement causes a space to be printed for each null character.
+
+One workaround for this behavior is to assign an empty string ("") to the
+fixed-length string variable. The assignment should be made after the DIM
+statement and before the MID$ statement. When a fixed-length string is assigned
+to an empty string, all null characters are replaced by spaces (ASCII 32). If a
+Watchpoint is set on temp in the following code example, the full contents of
+the string will be displayed in the Watch window.
+
+  DIM temp AS STRING * 20
+  temp = ""
+  MID$(temp,5,3) = "abc"   ' The whole string is watchable.
+  PRINT temp
+
+Additional query words: QuickBas BasicCom 2.20 3.10 3.14 4.00 4.00b 4.50 7.00 7.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbBASICSearch kbCodeView kbQBASICSearch kbZNotKeyword3
+Version           : :2.2,3.11,4.0,4.0b,4.5,7.0,7.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

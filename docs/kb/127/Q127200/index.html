@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127200/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127200/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127200/","publisher":null,"image":null,"headline":"Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127200-howto-use-other-registry-keys-with-visual-c-20-and-above">Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127200
+Product(s): Microsoft C Compiler
+Version(s): 2000,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbenv kbDebug kbide kbOSWin2000 kbVC kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbGrpDSToo
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1, 4.2, 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows NT 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to instruct Microsoft Visual C++ to use a Registry key other than
+the default by specifying the /I&lt;key_suffix&gt; option as shown in the MORE
+INFORMATION section below. This allows you to specify different environments
+with invocations of Visual C++. By making multiple copies of the Visual C++
+icon, you can specify different environments or customization options and start
+Visual C++ using these settings.
+
+NOTE: Use of the /I switch is not supported. The /I switch is usually used to
+have different environments or it can be used as to help debug problems with
+Visual C++ where the default registry is suspected of being corrupted. It is not
+recommended to use the /I switch in order to run different point releases of
+Visual C++.
+
+MORE INFORMATION
+================
+
+The default Registry key used by Visual C++ version 2.0 is "Visual C++ 2.0" and
+the default Registry key used by Visual C++ version 4.0 is "Developer." Visual
+C++ version 5.0 uses the "DevStudio\5.0" key, while Visual C++ version 6.0 uses
+the "DevStudio\6.0" key.
+
+All keys are found in the HKEY_CURRENT_USER on Local Machine window under
+HKEY_CURRENT_USER\Software\Microsoft.
+
+In the properties for the Visual C++ icon, you can add the /I switch to the
+Command Line field. The /I switch must be followed immediately by the extension
+to the registry entry that will be used.
+
+For example, the following switch starts Visual C++ using the "Visual C++
+2.0_Test" key:
+
+     /I_Test
+
+The first time Visual C++ is started with this switch it will create the "Visual
+C++ 2.0_Test" key using the default settings. At this point, you will have two
+keys, the original "Visual C++ 2.0" key and the "Visual C++ 2.0_Test" key.
+Future invocations of Visual C++ using the /I_Test switch will use the existing
+"Visual C++ 2.0_Test" key, taking advantage of customizations that are specific
+to that key.
+
+CAUTION: Don't make modifications to the Registry by hand. The Registry is
+intended to be edited only by the application that uses it.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbDebug kbide kbOSWin2000 kbVC kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :2000,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

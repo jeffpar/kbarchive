@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149605: How to Change the TCP Port for IIS Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149605: How to Change the TCP Port for IIS Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149605/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149605/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149605/","publisher":null,"image":null,"headline":"Q149605: How to Change the TCP Port for IIS Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149605-how-to-change-the-tcp-port-for-iis-services">Q149605: How to Change the TCP Port for IIS Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149605
+Product(s): Internet Information Server
+Version(s): 1.0,2.0,3.0,4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+It is possible to change the port that Internet Information Server (IIS)
+services will listen to. This can be useful when you try to run multiple web
+servers on the same computer.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Microsoft Internet Information Server Versions 1.0 to 2.0
+---------------------------------------------------------
+
+1. Start Regedt32.exe and locate the following registry subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceProvider\ServiceType\W3SVC
+
+2. Find the TCP Port value and double-click it.
+
+3. The DWORD Editor dialog box should appear with the default value (0x50 Hex;
+  80 Decimal) listed. Change the decimal value to the number of the port that
+  you want the World Wide Web Publishing Service to listen to.
+
+  NOTE: You can also follow steps 2 and 3 to change the following services:
+
+   - MSFTPSVC: FTP Publishing Service
+
+   - GOPHERSVC: Gopher Publishing Service
+
+4. Exit Regedt32.exe.
+
+5. Stop and Restart the IIS Services by Using the Internet Service Manager.
+
+Microsoft Internet Information Server Versions 3.0
+--------------------------------------------------
+
+1. Open Internet Service Manager.
+
+2. Double-click on the computer corresponding to the WWW service.
+
+3. On the Service tab, change the TCP Port field to the desired port number.
+
+4. Click OK.
+
+5. Using the Internet Service Manager, stop and restart the IIS Services.
+
+Microsoft Internet Information Server Versions 4.0 to 5.0
+---------------------------------------------------------
+
+1. Open Internet Service Manager.
+
+2. Right-click the Web site that you want to change.
+
+3. Click Properties.
+
+4. Click the Web Site tab.
+
+5. Change the TCP Port Number in the TCP Port edit box (or click Advanced for
+  multiple Port settings).
+
+6. Click OK to save the changes.
+
+
+
+Additional query words: prodiis tcp www ports
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200 kbiis100
+Version           : :1.0,2.0,3.0,4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180789/","publisher":null,"image":null,"headline":"Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180789-cancelling-appc-receive_and_post-causes-sna-event-id-95">Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180789
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following event may occur when an APPC application cancels a
+[MC_]RECEIVE_AND_POST function by calling TP_ENDED:
+
+ Source: SNA APPC Application
+ Event ID: 95
+ Description:  APPC given bad event handle or callback address 00000006
+
+The following SNA Server APPC Application traces were captured when this problem
+occurred:
+
+  APPC  ---------------------------------------------------------------
+  APPC  MC_RECEIVE_AND_POST request
+  APPC
+  APPC  Type:Sync                                  VerbID:00084000
+  APPC
+  APPC  ---- Verb Parameter Block at address 0138F34C ----
+  APPC  0D000100 00000000 00000000 00000000     &lt;................&gt;
+  APPC  00A87700 80A97700 00000100 00000800     &lt;.yw..zw.........&gt;
+  APPC  00000000 58270900 94020000 00000000     &lt;....X'..m.......&gt;
+  APPC  ---------------------------------------------------------------
+  APPC  MC_RECEIVE_AND_POST response, result = OK
+  APPC
+  APPC  Type:Sync                                  VerbID:00084000
+  APPC
+  APPC  ---- Verb Parameter Block at address 0138F34C ----
+  APPC  0D000100 00000000 00000000 00000000     &lt;................&gt;
+  APPC  00A87700 80A97700 00040101 00000400     &lt;.yw..zw.........&gt;
+  APPC  00000000 6EAA7700 94020000 00000000     &lt;....n.w.m.......&gt;
+  APPC  ---------------------------------------------------------------
+  APPC  TP_ENDED request
+  APPC
+  APPC  Type:Sync                                  VerbID:00028000
+  APPC
+  APPC  ---- Verb Parameter Block at address 0138F090 ----
+  APPC  13000000 00000000 00000000 00000000     &lt;................&gt;
+  APPC  00A87700 01000000                       &lt;.yw.....        &gt;
+  APPC  ---------------------------------------------------------------
+  APPC  ***UNKNOWN VERB*** response, result = DEALLOC_ABEND
+  APPC
+  APPC  Type:Async   Method:Post   Hwnd:0138F398   VerbID:00084000
+  APPC
+  APPC  ---- Verb Parameter Block at address 0138F34C ----
+  APPC  20F43801 0005                           &lt; 48...          &gt;
+  APPC  ---------------------------------------------------------------
+
+CAUSE
+=====
+
+The APPC application was deallocating the verb control block (VCB) that it had
+passed to the [MC_]RECEIVE_AND_POST function prior to calling TP_ENDED. This
+caused an error when the APPC interface attempted to set the event handle
+indicating final completion of the [MC_]RECEIVE_AND_POST VCB.
+
+RESOLUTION
+==========
+
+The APPC application should maintain the state of the RECEIVE_AND_POST VCB until
+the function has fully completed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150246/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150246/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150246/","publisher":null,"image":null,"headline":"Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150246-bookshelf-96-quickshelf-not-installed-with-office-95">Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150246
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:7.0,97
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 22-MAY-2001
+
+96-97
+WINDOWS
+kbsetup kbinterop kbusage kbmm kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set up Bookshelf '96-'97 on a computer with Microsoft Office already
+installed, Microsoft QuickShelf was not installed.
+
+CAUSE
+=====
+
+Bookshelf 96 does not install QuickShelf when the Office Shortcut Bar is
+installed. Instead, a QuickShelf Toolbar is added to the Office Shortcut Bar.
+This item may not be immediately visible.
+
+This may occur even if you are not using the Office Shortcut Bar. If you have
+removed the Office Shortcut Bar from the Windows 95 Startup folder, it is still
+technically "installed". In this case, Bookshelf Setup does not install a
+separate QuickShelf program.
+
+If you were previously using QuickShelf 95, and you chose to remove the previous
+version of Bookshelf, Setup removes QuickShelf and replaces it with the
+QuickShelf Toolbar on the Office Shortcut Bar.
+
+RESOLUTION
+==========
+
+To use QuickShelf, follow the steps below for your system configuration.
+
+If You Are Using the Office Shortcut Bar
+----------------------------------------
+
+If you are using the Shortcut Bar, QuickShelf items are not seen by default. To
+access QuickShelf from the Shortcut Bar, do the following:
+
+1. Click the Office symbol in the upper-left corner of the Shortcut Bar, and
+  then click Customize.
+
+2. Click the Toolbars tab.
+
+3. If the QuickShelf folder does not contain a check, click the box to select
+  it.
+
+  If the QuickShelf folder is not listed on the Toolbars tab, follow these steps
+  to manually add the QuickShelf option:
+
+  a. Click Cancel to close the Customize window.
+
+  b. Press the F5 key to refresh the Shortcut Bar.
+
+  c. Click the Office symbol in the upper-left corner of the Shortcut Bar, and
+     then click Customize.
+
+  d. On the Toolbars tab, click Add Toolbar.
+
+  e. Click the Browse button.
+
+  f. Locate and double-click the Office folder.
+
+     The Office folder should be located in the MSOffice or the Program
+     Files/Microsoft Office folder. For more information about finding files
+     and folders in Windows, see your Windows printed documentation or online
+     help.
+
+  g. Double-click the Shortcut Bar folder.
+
+  h. Click the QuickShelf folder, and then click Add.
+
+  i. Click OK.
+
+4. Click OK. The QuickShelf toolbar is now visible on the Shortcut Bar.
+
+  NOTE: To return to the Office Toolbar items, click the Office Folder on the
+  Shortcut Bar, or click the QuickShelf Folder to see the QuickShelf items.
+
+If these steps fail, do the following to reinstall QuickShelf items on the Office
+Shortcut Bar:
+
+1. Close the Office Shortcut Bar. Setup can not update the bar if it is open.
+
+2. Run Bookshelf Setup. Use the Add/Remove option to remove QuickShelf.
+
+3. Run Bookshelf Setup again and use the Add/Remove option to add QuickShelf.
+
+4. Open the Office Shortcut Bar. If the QuickShelf Toolbar is not visible,
+  repeat steps 1-4 in the "If You Are Using The Office Shortcut Bar" section of
+  this article.
+
+If You Are Not Using The Office Shortcut Bar
+--------------------------------------------
+
+Follow these steps to install the standalone QuickShelf program:
+
+1. Run Office Setup. Use the Add/Remove option and remove the Office Shortcut
+  Bar.
+
+2. Run Bookshelf Setup and use the Add/Remove option to remove QuickShelf.
+
+3. Run Bookshelf Setup again. Use the Add/Remove option to add QuickShelf.
+
+MORE INFORMATION
+================
+
+Customizing the QuickShelf Toolbar on the Office Shortcut Bar
+-------------------------------------------------------------
+
+To customize the QuickShelf Toolbar when it is used with the Office Shortcut Bar,
+do the following:
+
+1. Click the Office symbol in the upper-left corner of the Shortcut Bar, and
+  then click Customize.
+
+2. Click the View tab.
+
+3. Click the Toolbar area, and then click QuickShelf.
+
+4. The View tab contains numerous options you can change. For information on
+  these options, click the option, then press the F1 keyboard key for online
+  Help.
+
+5. On the Buttons tab are additional QuickShelf options.
+
+6. When you are finished customizing the toolbar, click OK.
+
+Opening the Office Shortcut Bar
+-------------------------------
+
+1. Click the Start button, point to Programs, and then click Startup.
+
+2. Click Microsoft Office Shortcut Bar.
+
+  If the shortcut is missing, continue to step 3.
+
+3. Using Windows Explorer, open the Microsoft Office folder.
+
+  For more information about finding files and folders in Windows 95, see your
+  Windows printed documentation or online Help.
+
+4. Double-click the Microsoft Office Shortcut Bar shortcut.
+
+  If the shortcut is missing, reinstall Office.
+
+Additional query words: multimedia mmtitles kbmm OEM compaq quickshelf, bs96, office
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:7.0,97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

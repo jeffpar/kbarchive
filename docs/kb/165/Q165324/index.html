@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165324: XCON: Basic Site Connector Troubleshooting Checklist | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165324: XCON: Basic Site Connector Troubleshooting Checklist" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165324/","publisher":null,"image":null,"headline":"Q165324: XCON: Basic Site Connector Troubleshooting Checklist","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165324-xcon-basic-site-connector-troubleshooting-checklist">Q165324: XCON: Basic Site Connector Troubleshooting Checklist</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165324
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 03-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains helpful information for troubleshooting Microsoft Exchange
+Site Connector problems.
+
+MORE INFORMATION
+================
+
+The following is a checklist of questions that you need to ask when confronted
+with a Site connector that isn't functioning properly.
+
+1. Is this a new installation or a connector that had been working for a while
+  that broke?
+
+2. Are both Microsoft Exchange Servers in the same Organization? An exact match,
+  including spelling and case, is required.
+
+3. Do both Microsoft Exchange Servers use the same Service Account?
+
+4. Are the two Microsoft Exchange Servers in trusted, untrusted, or the same NT
+  domain?
+
+5. If the domains are untrusted, is at least one Microsoft Exchange Server a
+  Domain Controller? This is required.
+
+6. If you are configuring a new Site Connector between untrusted domains have
+  you followed the instructions in the following article in the Microsoft
+  Knowledge Base?
+
+  Q154624 : XCON: Configuring the Site Connector Between Untrusted Domains
+
+  If one of the servers is a Member Server, you must use the Microsoft Exchange
+  Administrator program on the Member server to configure the Site Connector
+  for both servers. You won't be able to correctly configure the Site Connector
+  from the Microsoft Exchange Administrator program on the Domain Controller
+  server.
+
+7. If the two Microsoft Exchange Servers are in Trusted Domains but each Server
+  has a different Service Account, do both Servers use the other Server's
+  service account on their connector's Override page?
+
+  We recommended the use of the Microsoft Exchange service account on the
+  override page even in trusted domains. That way, if something happens to the
+  trust relationship between the two domains, the connector will still be able
+  to function.
+
+  If you elect not to use the override page in a trusted domain environment,
+  make sure that the other domain's Microsoft Exchange service account is given
+  Service Account Admin rights to both the Site and Configuration containers on
+  the local Server.
+
+Troubleshooting Network Connectivity for the Site Connector
+
+1. Is this a brand new installation or a working setup that stopped working?
+
+  If this was working, check for what may have changed or broken; things such as
+  service account changes, service account password changes, problems with the
+  trust relationship between the domains, network problems, addition of network
+  cards, additions or deletions or modifications of protocols, changes to the
+  Server's RPC binding order, changes in the network configuration, changes
+  made to DNS or WINS, and so forth.
+
+2. If using TCP/IP, can you PING the IP address of the other server? Can they
+  PING you?
+
+3. If you PING -a the other server's IP address, does it resolve the hostname?
+  Is the returned hostname the other server's Server Name? Can the other server
+  do the same to you?
+
+4. What procedure is used to resolve hostnames, for example, DNS, WINS, Hosts
+  file, and so forth?
+
+5. When troubleshooting WINS problems, check the system log for the following
+  error:
+
+     There are no logon servers available to service the logon request.
+
+
+  For more information about this error, please see the following article in the
+  Microsoft Knowledge Base:
+
+  Q139410 in the NT Database for more information. : Err Msg: There are
+  Currently No Logon Servers Available...
+
+
+6. What protocols are installed on both computers?
+
+7. Was the latest Windows NT Service Pack reapplied after making changes to the
+  system that may have copied older files to the server? This is especially
+  important when changes or additions were made to protocols on the server.
+
+8. Can you connect from Server1 to Server2 using the following command?
+
+  NET USE \\&lt;server2&gt;\IPC$ /USER:&lt;domain2&gt;\&lt;service account
+  2&gt;
+
+  Can Server2 connect to Server1?
+
+9. After the connection is made, can you view the shares on the other server?
+
+  NET VIEW &lt;server2&gt;
+
+  Can the other server see your shares?
+
+10. After making the IPC$ connection, can you RPC Ping on all protocols in both
+  directions with security? Which protocols work? Do some only work without
+  security?
+
+11. By default, Microsoft Exchange will use RPC first over TCP, then over IPX,
+  and finally over Vines. If you encounter problems with the Site Connector or
+  Servers in the same Site working over TCP/IP, you can switch to using named
+  pipes to verify there is a problem with TCP/IP.
+
+  RPC Server Bindings are controlled by the following registry entry:
+
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Exchange Provider
+                        \Rpc_Svr_Binding_Order.
+  
+
+  The default string is "ncacn_ip_tcp,ncacn_spx,ncacn_vns_spp".
+
+  For testing purposes, you can set the Site Connector to work over Named Pipes
+  or NetBEUI by adding either ncacn_np or ncacn_nb_nb to the beginning of the
+  string.
+
+  Neither NetBEUI or Named Pipes is used for Server to Server communications by
+  default because they do not support full RPC functionality and open a
+  potential security hole, respectively. They should only be used in a test
+  mode when you want to bypass the default protocols during testing.
+
+12. Does either server have Dual NIC cards? We've seen several cases where this
+  caused problems.
+
+13. Does either server have an FDDI card and was it just added? If so, make sure
+  the MTU Size is configured correctly. The symptoms of the problems will be
+  that mail won't move between two Servers in the same Site or over a Site
+  connector. The Network Administrator should know how to configure the MTU
+  Sizes for their FDDI Cards. For more information about this problem, please
+  see the following articles in the Microsoft Knowledge Base:
+
+  Q138575 : Communication Fails Through Ethernet Segment Between FDDI Rings
+
+  Q140375 : Devault MTU Size for Different Network Topology
+
+
+  Did it work before the FDDI card was added?
+
+14. When troubleshooting network problems, check the Windows NT Event Viewer
+  System log for error 3013.
+
+
+15. Verify that the Microsoft Exchange Server has the following 9 files in the
+  server's system32 directory, RPC requires them to function correctly. If any
+  of them are missing, protocol sequences can fail.
+
+  Rpcltc1.dll, Rpcltc8.dll, Rpcltccm.dll, Rpclts1.dll, Rpclts8.dll,
+  Rpcltscm.dll, Rpcns4.dll, Rpcrt4.dll, Rpcss.exe
+
+  In particular, look for a missing Rpcltccm.dll. We've encountered some cases
+  where this file is missing after upgrading from Windows NT 3.51 to 4.0. If
+  this file is missing, RPC over TCP/IP will fail. However, RPC over Name
+  Pipes will still work.
+
+  These files can be copied from a similar Windows NT Server with the same
+  Service Pack(s) installed. They can also be expanded from the Windows NT 4.0
+  Server compact disk.
+
+  a. Copy Expand.exe from the Windows NT Server compact disk to a directory on
+     your hard disk drive. Any directory that is in your PATH will work.
+
+  b. Insert the Windows NT Server compact disk where files will be found.
+
+  c. At a command prompt, change to the directory where the files to be
+     expanded are located. For example, type the following at the command
+     prompt:
+
+  EXPAND E:\i386\filename.dl_ c:\winnt\system32\filename.dll
+
+  If you try to expand a file that is already expanded, you will receive the
+  following message:
+
+  Input file &lt;filename&gt; already in expanded format
+
+  where &lt;filename&gt; is the name of the file you attempted to expand.
+
+16. Verify the registry values for RPC DLL files. We've encountered cases where
+  these have been messed up. At least some cases were after an upgrade to
+  Windows NT 4.0.
+
+  The Windows NT 4.0 operating system normally has registry keys for
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\ServerProtocols and
+  ClientProtocols that look like the following:
+
+      Key Name:        SOFTWARE\Microsoft\Rpc\ServerProtocols
+
+      ncacn_ip_tcp     REG_SZ :    RpcLtScm.Dll
+      ncacn_nb_ipx     REG_SZ : RpcLtScm.Dll
+      ncacn_nb_nb      REG_SZ : RpcLtScm.Dll
+      ncacn_nb_tcp     REG_SZ : RpcLtScm.Dll
+      ncacn_np         REG_SZ : rpclts1.dll
+      ncacn_spx        REG_SZ : RpcLtScm.Dll
+      ncadg_ip_udp     REG_SZ : RpcLtScm.Dll
+      ncadg_ipx        REG_SZ : RpcLtScm.Dll
+      ncalrpc          REG_SZ : ncalrpc
+
+      Key Name:        SOFTWARE\Microsoft\Rpc\ClientProtocols
+
+      ncacn_ip_tcp     REG_SZ :    RpcLtCcm.Dll
+      ncacn_nb_ipx     REG_SZ : RpcLtccm.Dll
+      ncacn_nb_nb      REG_SZ : RpcLtccm.Dll
+      ncacn_nb_tcp     REG_SZ : RpcLtccm.Dll
+      ncacn_np         REG_SZ : rpcltc1.dll
+      ncacn_spx        REG_SZ : RpcLtCcm.Dll
+      ncadg_ip_udp     REG_SZ : RpcLtCcm.Dll
+      ncadg_ipx        REG_SZ : RpcLtCcm.Dll
+      ncalrpc          REG_SZ : ncalrpc
+  
+
+  If you see incorrect registry entries, removing and re-adding TCP/IP is the
+  cleanest way to make sure the registry is updated correctly.
+
+17. Turn the MTA's diagnostic logging for the Operating System and Interface
+  categories to maximum. Then inspect the Application log for any network
+  problems?
+
+Testing the Site Connector
+
+1. Create X.400 custom recipients
+
+  Create a new Custom Recipient with an X.400 address type on your Server for
+  one of the mailboxes on the other Microsoft Exchange Server. These two Custom
+  Recipients (one on each of the Microsoft Exchange Servers) will be used to
+  test the Connector.
+
+  IMPORTANT NOTE: Do not add a Directory Replication Connector until mail
+  capabilities have been fully confirmed. If your Connector is not working the
+  Directory Replication Connector will rapidly clog the queue and error logs.
+
+  To create a correctly addressed Custom Recipient do the following:
+
+  a. Start the Microsoft Exchange Administrator program on both Server1 and
+     Server2.
+
+  b. On Server1, select New Custom Recipient from the File menu.
+
+  c. If prompted to select the correct container, click OK.
+
+  d. Highlight X.400 Address and click OK.
+
+  e. On Server2, highlight a local mailbox in either the Global Address List or
+     the Recipients containers. Then select Properties from the File menu.
+
+  f. Click the E-mail Addresses tab.
+
+  g. Highlight the X.400 E-mail address and click the Edit button.
+
+  h. On Server1, fill in each of the fields exactly (including case and any
+     spaces) as they are displayed on Server2. In particular, watch for a space
+     on the ADMD (a): field of Server2. If the ADMD field appears blank, it
+     probably has a space in it. You can check by moving the cursor to the
+     field and using the left and right arrows to move within the field.
+     Server1's address must match Server2's mailbox exactly.
+
+  i. When finished filling out all fields on Server1, click OK.
+
+  j. You will then be presented with a set of Property pages that are similar
+     to what you see when you create a new mailbox. You must fill in at least
+     the Display and Alias fields. The display name and alias you choose at
+     this point can be whatever you want. It can match the information from
+     Server2, but does not have to. After you have filled in the fields, click
+     OK
+
+  You have now created a Custom Recipient on Server1 for a mailbox on Server2.
+  To allow for testing in both directions, repeat steps a-j above, but switch
+  Server1 and Server2 around.
+
+2. Send test messages in both directions to verify the connector works.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

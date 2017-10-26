@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310770/","publisher":null,"image":null,"headline":"Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310770-fp2002-jpeg-image-quality-degrades-when-inserted-into-web-page">Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310770
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 29-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 2002 
+- Microsoft FrontPage 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you insert a picture into a Microsoft FrontPage Web, the picture appears
+indistinct (fuzzy) when you browse to the Web page that contains the image.
+
+CAUSE
+=====
+
+This behavior can occur if you insert a Joint Photographic Experts Group (JPEG)
+image into a Web page. The JPEG image storage format is classified as a lossy
+compressed 24-bit color format.
+
+This means that the image quality may degrade, or lose detail, each time that you
+save the picture.
+
+RESOLUTION
+==========
+
+To resolve this issue, set the allowable level of image degradation for the
+picture to a higher level. To do this, follow the steps appropriate to your
+operating system.
+
+Microsoft FrontPage 2000
+------------------------
+
+1. Start FrontPage 2000, and then open the Web that you want.
+
+2. On the File menu, click Import.
+
+3. Click Add File, browse to the JPEG file that you want, and then click Open.
+
+4. In the Import dialog box, click OK.
+
+5. Under Folder List, double-click the Web page that you want.
+
+6. On the Insert menu, point to Picture, and then click From File.
+
+7. Click the imported JPEG file, and then click OK.
+
+8. Right-click the inserted image and then click Picture Properties on the
+  shortcut menu that appears.
+
+9. In the Quality box, type "100" (without the quotation marks), and then click
+  OK.
+
+10. On the File menu, click Save.
+
+  The Save Embedded Files dialog box appears.
+
+11. Click Set Action, click Overwrite, and then click OK.
+
+  NOTE: This action sets the default quality setting for the selected image to
+  100, as entered in step 9.
+
+12. Click OK.
+
+Microsoft FrontPage 2002
+------------------------
+
+1. Start FrontPage 2002, and then open the Web that you want.
+
+2. On the File menu, click Import.
+
+3. Click Add File, browse to the JPEG file that you want, and then click Open.
+
+4. In the Import dialog box, click OK.
+
+5. Under Folder List, double-click the Web page that you want.
+
+6. On the Insert menu, point to Picture, and then click From File.
+
+7. Click the imported JPEG file, and then click Insert.
+
+8. On the File menu, click Save. In the "File name" box, type the name that you
+  want, and then click Save.
+
+  NOTE: If the Save Embedded Files dialog box is not displayed, follow these
+  steps:
+
+  a. Resize the picture.
+
+  b. On the Pictures toolbar, click the Resample button.
+
+     NOTE: If the Pictures toolbar is not visible, point to Toolbars on the View
+     menu, and then click Pictures.
+
+  c. On the File menu, click Save As.
+
+  d. In the Save As dialog box, click Save. When you are prompted to replace
+     the existing file, click Yes.
+
+9. In the Save Embedded Files dialog box, click Picture Options.
+
+10. In the Quality box, type "100" (without the quotation marks), and then click
+  OK.
+
+11. Click Set Action, then do one of the following:
+
+   - If the Save Embedded Files dialog box was displayed when you initially
+     saved the Web page that contains the inserted picture, click "Use
+     Existing", and then click OK.
+
+     -or-
+
+   - If you had to resize and then resave the Web page that contains the
+     inserted image before the Save Embedded Files dialog was displayed, click
+     Overwrite, and then click OK.
+
+NOTE: This action sets the default quality setting for the selected image to 100,
+as entered in step 10.
+
+12. Click OK.
+
+MORE INFORMATION
+================
+
+The default quality setting for JPEG images in FrontPage 2000 is 75 (out of a
+maximum of 100). In FrontPage 2002, the default setting is 90. A higher setting
+allows the least amount of image degradation of your JPEG pictures. A lower
+setting in the Quality box reduces the size of the image file.
+
+For additional information about picture formats, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q272399 OFF2000: Guidelines for Selecting the Appropriate Picture Format
+
+Additional query words: front page prb
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPage2000Search kbFrontPage2002Search kbZNotKeyword5
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

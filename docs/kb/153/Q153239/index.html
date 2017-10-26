@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153239: BUG: Multiple CRichEditView::PrintInsideRect’s Are Distorted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153239: BUG: Multiple CRichEditView::PrintInsideRect’s Are Distorted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153239/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153239/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153239/","publisher":null,"image":null,"headline":"Q153239: BUG: Multiple CRichEditView::PrintInsideRect’s Are Distorted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153239-bug-multiple-cricheditviewprintinsiderects-are-distorted">Q153239: BUG: Multiple CRichEditView::PrintInsideRect’s Are Distorted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153239
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbprint kbMFC kbPrinting kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDS
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use CRichEditView::PrintInsideRect() more than once during printing,
+the text printed by calls after the first one appears either distorted or
+missing in Print Preview mode.
+
+CAUSE
+=====
+
+The PrintInsideRect() scales the window extents of the DC before formatting and
+printing the requested text to that DC. This scaling is necessary and works for
+the first call. However, PrintInsideRect() does not undo the scaling before
+returning. Hence, the scaling will be cumulative, causing future prints to be
+distorted or scaled out of the visible portion of the DC.
+
+RESOLUTION
+==========
+
+Save the DC before calling PrintInsideRect(), and restore it after returning.
+Refer to the "Sample Code" section of this article for details.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Sample Code
+-----------
+
+Here is an example of making multiple PrintInsideRect calls per page using
+SaveDC() and RestoreDC() to keep the scaling from accumulating:
+
+     void CThatSillyRichEditView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
+     {
+         // Get the current paper size and construct an actual printing
+         // rectangle by leaving out one half inch margin from each side.
+         CSize sizePaper = GetPaperSize();
+         CRect rectMargins(720, 720, sizePaper.cx - 720, sizePaper.cy - 720);
+
+         // Need to set the margins when printing from CRichEditView
+         SetMargins(rectMargins);
+
+         // Set up three rectangular regions spaced an inch apart
+         CRect rectHeader(0, 0, rectMargins.right, 1440);
+         CRect rectBody(0, 1440, rectMargins.right, 1440 * 2);
+         CRect rectFooter(0, 1440 * 2, rectMargins.right, 1440 * 3);
+
+         // Format the first 10 characters in the buffer.
+         int nSavedDC = pDC-&gt;SaveDC();
+         PrintInsideRect(pDC, rectHeader, 0, 10, TRUE); // characters 0-10
+         pDC-&gt;RestoreDC(nSavedDC);
+
+         // Format the second 10 characters in the buffer.
+         nSavedDC = pDC-&gt;SaveDC();
+         PrintInsideRect(pDC, rectBody, 10, 20, TRUE); // characters 10-20
+         pDC-&gt;RestoreDC(nSavedDC);
+
+         // Format the third 10 characters in the buffer.
+         nSavedDC = pDC-&gt;SaveDC();
+         PrintInsideRect(pDC, rectFooter, 20, 30, TRUE); // characters 20-30
+         pDC-&gt;RestoreDC(nSavedDC);
+     }
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words: MfcPrinting
+
+======================================================================
+Keywords          : kbprint kbMFC kbPrinting kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

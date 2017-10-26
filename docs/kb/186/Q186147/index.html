@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186147/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186147/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186147/","publisher":null,"image":null,"headline":"Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186147-installing-pcanywhere32-80-on-windows-nt-40-w-ati-rage-card">Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186147
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are running Windows NT 4.0 on a computer using one of these ATI Rage- based
+video cards:
+
+- XPERT@PLAY
+
+- XPERT@WORK
+
+- All-In-Wonder
+
+- 3D PRO TURBO
+
+- 3D PRO TURBO PC2TV
+
+- 3D XPRESSION+ &amp; 3D XPRESSION+ PC2TV
+
+- 3D CHARGER
+
+You have installed pcANYWHERE32, but on the reboot, Windows NT 4.0 displays a
+blue screen error. You can boot by selecting "VGA Mode only."
+
+In some situations, the computer may boot correctly, but CTRL+ALT+DEL and file
+transfers do not work.
+
+CAUSE
+=====
+
+pcANYWHERE 8.0 requires 8514a.dll to be loaded to work with these video drivers.
+
+RESOLUTION
+==========
+
+The driver installation file, Ati.inf, that ships with the ATI Rage video card
+contains an error; it installs two video drivers into the system registry, but
+only copies one of the associated .dll files into the WinNT\System32 folder.
+
+There are two ways to resolve this issue. You can perform both procedures from
+either the MS-DOS prompt or the VGA mode in Windows NT.
+
+Solution One
+------------
+
+Follow these steps to replace the file:
+
+1. Expand the resource file 8514a.dll from the Windows NT 4.0 CD.
+
+2. Move this file to the WinNT\System32 folder.
+
+3. Reboot the computer.
+
+4. If you were able to boot into Windows NT 4.0 before this procedure, reinstall
+  pcANYWHERE32 to disable the fault-tolerant boot mode.
+
+Solution Two
+------------
+
+Follow these steps to reinstall the video driver:
+
+1. Uninstall pcANYWHERE32 version 8.0.
+
+2. Manually edit the Ati.inf file.
+
+3. Locate the [ati.Display] section and add in a reference to 8514a.DLL.
+
+  The modified [ati.Display] section should read as follows:
+
+  [ati.Display]
+  ati.dll
+  8514a.dll
+
+4. Save the Ati.inf file.
+
+5. Right-click the desktop and select Properties.
+
+6. Click the Settings tab.
+
+7. Click Display Type.
+
+8. Click Change.
+
+9. Click Have Disk and point to the Ati.inf file that you modified in step 3.
+
+10. Complete the wizard. You may be required to provide the Windows NT 4.0
+  CD-ROM.
+
+11. Reboot the system.
+
+12. Reinstall pcANYWHERE32 version 8.0.
+
+MORE INFORMATION
+================
+
+For additional information about this issue, see the following Symantec
+documents on the Web:
+
+  http://service1.symantec.com/SUPPORT/pca.nsf/docid/1997111012243
+
+  http://service1.symantec.com/SUPPORT/pca.nsf/43a0bb88345b815a85256450004ddb6a/e9a8409af3d20b01882565010059a26a?OpenDocument
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

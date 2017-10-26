@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170257/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170257/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170257/","publisher":null,"image":null,"headline":"Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170257-fix-crecordsetaddnew-inserts-32484-into-int-fields-rfx_int">Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170257
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVS97sp2fix
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may see one of the following problems when you update a newly-added record
+using a CRecordset derived class that uses RFX_Int:
+
+- The value 32484 is saved in the table if the int data member was not
+  modified.
+
+- If the int data member corresponds to an identity column in the table, an
+  error message appears indicating that an attempt was made to save a value to
+  it. Identity fields are automatically updated by the server, and cannot be
+  modified by external applications without setting flags on the server.
+
+- Fields of type int that were not modified, and thus should contain NULL,
+  contain 32484 instead. This may cause queries involving NULLs to return
+  unexpected results.
+
+CAUSE
+=====
+
+This problem is caused by a bug in the RFX_Int function which always causes it
+to mark the int data member as dirty during AddNew. This problem occurs only if
+the value of the int data member was not explicitly changed.
+
+When a record is added, all of the data members are set to pseudo null values.
+The application then sets the values of any members that are to be changed.
+Subsequently, any fields where the corresponding data member is not a pseudo
+null are marked as dirty and an SQL statement including all of the dirty fields
+is generated.
+
+In the RFX_Int::MarkForAddNew in Visual C++ 5.0, the if clause that checks for
+the pseudo null value was removed. The code in 5.0 appears as follows:
+
+     case CFieldExchange::MarkForAddNew:
+     // can force writing of psuedo-null value (as a non-null) by ...
+     if (!pFX-&gt;m_prs-&gt;IsFieldStatusDirty(nField - 1))
+     {
+        pFX-&gt;m_prs-&gt;SetDirtyFieldStatus(nField - 1);
+        pFX-&gt;m_prs-&gt;ClearNullFieldStatus(nField - 1);
+     }
+     return;
+
+The effect of the change is to force the field to be set as dirty (no matter what
+value it has), and write that value out to the underlying table. If the
+application has not changed that value since the AddNew, then it will be
+AFX_RFX_INT_PSEUDO_NULL = 32484.
+
+RESOLUTION
+==========
+
+The resolution depends on the application. The cleanest workaround is to change
+the int data member to a long, and use the RFX_Long function. The code problem
+above only exists with the int type, and most of the server data types that
+might be mapped to an int, such as Integer, Numeric(9), etc., will map to a long
+as well. This method also creates more portable code, since the size and max
+value of the int data type varies from one platform and operating system to
+another.
+
+Another solution is to create your own RFX_Int functions. To create your own
+RFX_Int function, follow these steps:
+
+1. From file vc\mfc\src\DBRFX.CPP, copy the function RFX_Int.
+
+2. Create a new .cpp file and include the file in your project that uses ints.
+  Place the copy of RFX_Int into this file and rename it RFX_Int1. Change the
+  switch statement case for MarkForAddNew from the following code:
+
+        case CFieldExchange::MarkForAddNew:
+        // Can force writing of psuedo-null value (as a non-null) by
+        // setting field dirty.
+        if (!pFX-&gt;m_prs-&gt;IsFieldStatusDirty(nField - 1))
+        {
+           pFX-&gt;m_prs-&gt;SetDirtyFieldStatus(nField - 1);
+           pFX-&gt;m_prs-&gt;ClearNullFieldStatus(nField - 1);
+        }
+        return;
+
+  to:
+
+        case CFieldExchange::MarkForAddNew:
+        // Can force writing of psuedo-null value (as a non-null) by
+        // setting field dirty.
+
+        // comment out -&gt; if (!pFX-&gt;m_prs-&gt;IsFieldStatusDirty(nField - 1))
+        if (value != AFX_RFX_INT_PSEUDO_NULL)   // add in this line
+        {
+           pFX-&gt;m_prs-&gt;SetDirtyFieldStatus(nField - 1);
+           pFX-&gt;m_prs-&gt;ClearNullFieldStatus(nField - 1);
+        }
+        return;
+
+3. Include the following header information in your new project file:
+
+        #include "stdafx.h"
+
+        #ifdef AFX_DB_SEG
+        #pragma code_seg(AFX_DB_SEG)
+        #endif
+
+        #ifdef _DEBUG
+        #undef THIS_FILE
+           static char THIS_FILE[] = __FILE__;
+        #endif
+
+        #define new DEBUG_NEW
+
+4. Create a header file that declares your new RFX_INT1 function. Include it
+  into any CRecordset-derived classes that need to use small integers.
+
+5. Change all of the calls in the DoFieldExchange functions of your
+  CRecordset-derived classes from RFX_Int to RFX_Int1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+Additional query words: AddNew identity Update
+
+======================================================================
+Keywords          : kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVS97sp2fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

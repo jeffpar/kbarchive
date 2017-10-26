@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167220: How to Create Custom Calling Card Rules | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167220: How to Create Custom Calling Card Rules" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167220/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167220/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167220/","publisher":null,"image":null,"headline":"Q167220: How to Create Custom Calling Card Rules","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167220-how-to-create-custom-calling-card-rules">Q167220: How to Create Custom Calling Card Rules</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167220
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 4.0 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a custom calling card rule in Windows 95,
+Windows NT Server version 4.0, or Windows NT Workstation version 4.0. Calling
+card rules can be used with Dial-Up Networking, HyperTerminal, Microsoft Fax,
+Phone Dialer, or any other program that uses Windows 95 or Windows NT 4.0
+telephony.
+
+MORE INFORMATION
+================
+
+To create a custom calling card rule, follow these steps:
+
+1. In Control Panel, double-click Modems.
+
+2. Click Dialing Properties, and then click the Dial Using Calling Card check
+  box to select it.
+
+3. Click New, type the name of the calling card in the text box, and then click
+  OK.
+
+4. Click Advanced, and then type your calling card rule in the text box for
+  which you want to create a rule. Rules can be created for each of the
+  following call types:
+
+  - Calls within the same area code
+  - Long distance calls
+  - International calls
+
+  NOTE: In Windows NT Workstation 4.0 and Windows NT Server 4.0, click Rules
+  instead of Advanced.
+
+5. Click Close, click OK, and then click OK again.
+
+If you would like to edit an existing rule from a predefined calling card, click
+Copy From in Step 4 and then follow these steps:
+
+1. Click a predefined calling card from the list, and then click OK.
+
+2. Edit the existing calling card rule in the text box for which you want to
+  create a rule.
+
+3. Click Close, click OK, and then click OK again.
+
+The following list describes the different dialing codes that can be used when
+you are setting up custom calling card rules.
+
+Rules for Dialing
+-----------------
+
+0-9: Numbers to be dialed.
+
+ABCD: Characters to be dialed. (Tone dialing only - used for special control on
+some phone systems.)
+
+E: Dial the country code.
+
+F: Dial the area code (city code).
+
+G: Dial the local phone number.
+
+H: Dial the card number.
+
+*,#: Characters to be dialed (tone dialing only).
+
+T: Subsequent numbers are to be tone dialed.
+
+P: Subsequent numbers are to be pulse dialed.
+
+,: Pause for a fixed time.
+
+!: Flash (1/2 second on-hook, 1/2 second off-hook).
+
+W: Wait for a second dial tone.
+
+@: Wait for quiet answer (ring-back followed by five seconds of silence).
+
+$: Wait for calling card prompt tone.
+
+?: Suspend dialing until user provides input.
+
+For example, the MCI via 1-800-674-7000 calling card has the following rule for
+long distance calls:
+
+  18006747000,,,,,,TH,,FG
+
+This means that the following sequence needs to be dialed in order to place a
+long distance call with an MCI calling card:
+
+1. Call 1-800-674-7000.
+
+2. Wait (6 commas).
+
+3. Dial next numbers as tone.
+
+4. Dial the calling card number.
+
+5. Wait (2 commas).
+
+6. Dial the area code.
+
+7. Dial the phone number.
+
+Additional query words: tapi at t sprint
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 4.0 95
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

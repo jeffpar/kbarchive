@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137246/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137246/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137246/","publisher":null,"image":null,"headline":"Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137246-windows-3x-appc-application-fails-with-f002-ap_tp_busy-error">Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137246
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft SNA Server APPC Programmer's Reference documents the following
+reason for a primary return code of F002 (AP_TP_BUSY) error:
+
+  F002 AP_TP_BUSY
+
+  The Local TP has issued a call to APPC while APPC was processing another call
+  for the same TP. This may occur if the local TP has multiple threads, and
+  more than one thread is issuing APPC calls using the same tp_id.
+
+However, this is not the only possible cause of this error when running the
+Windows 3.x client. The SNA Server Windows 3.x APPC interface also returns
+AP_TP_BUSY (primary return code = F002) to an application if it calls into the
+APPC interface from a Windows procedure from SendMessage().
+
+Applications that talk over the CPIC interface may also encounter this problem
+because the CPIC API communicates over the APPC API. If this APPC error is
+returned to the CPIC interface as a result of a CMINIT call, CPIC returns Error
+20 (product specific error) to the application. To see if this error is
+occurring, SNA Server Windows 3.x CPIC and APPC API tracing must be enabled. For
+additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q123256 Enabling SNA Server Windows 3.x Client Traces
+
+Some third party applications require do not run reliably on the SNA Server
+Windows 3.x client software unless the TP_BUSY check is disabled. Wall Data
+Rumba AS/400 Shared Folders requires that the TP_BUSY check is disabled.
+
+CAUSE
+=====
+
+This additional TP_BUSY check is done by the APPC interface to prevent a
+possible deadlock within Windows.
+
+RESOLUTION
+==========
+
+Using the SNA Server 2.11 Windows 3.x client software, the following parameter
+can be set in the [wnap] section of WIN.INI file to disable this SendMessage
+check:
+
+  SendMessageCheck=NO
+
+The SNA Server Windows client process (WNAP) must be stopped and started to
+enable this change.
+
+WARNING: This parameter should be used with caution, since it can lead to
+deadlocks from within Windows, depending on the other Windows applications that
+are running on the computer.
+
+STATUS
+======
+
+Microsoft has implemented this setting within the SNA Server 2.11 Windows client
+software. SNA Server 2.0 and 2.1 customers should upgrade to SNA Server 2.11.
+
+
+Additional query words: prodsna 2.00 2.10 2.11 tp_busy F002
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

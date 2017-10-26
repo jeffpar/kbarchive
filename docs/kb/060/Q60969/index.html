@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60969: NMAKE Example Using ALL, Pseudotarget and Macros | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60969: NMAKE Example Using ALL, Pseudotarget and Macros" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60969/","publisher":null,"image":null,"headline":"Q60969: NMAKE Example Using ALL, Pseudotarget and Macros","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60969-nmake-example-using-all-pseudotarget-and-macros">Q60969: NMAKE Example Using ALL, Pseudotarget and Macros</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60969
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900319-89 | mspl13_basic
+Last Modified: 14-MAY-1990
+
+NMAKE works by comparing the dates and times of two sets of files,
+which are called "targets" and "dependents." A target is a file that
+you want to create, such as an executable file. A dependent is a file
+used to create a target, such as a BASIC source file. If any dependent
+has changed more recently than the target, NMAKE updates the target by
+executing the command listed in the block.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) version 7.00 for MS-DOS and MS OS/2.
+
+The pseudotarget is a name that serves as a "handle" for building a
+group of files or executing a group of commands. In the following
+example, ALL is the pseudotarget. After ALL, you would list all the
+EXE files that you want to create with this NMAKE file.
+
+Inference rules are templates that NMAKE uses to generate files with a
+given extension. When NMAKE encounters a description block with no
+commands, it looks for an inference rule that specifies how to create
+the target from the dependent files, given the two file extensions.
+Inference rules eliminate the need to put the same commands in several
+description blocks. In this example, the inference rules are to
+compile BASIC source files with no options and also to link the files
+with no linker options. If you wanted to specify compiler options (for
+example, /W, /X, etc.), you must include the command line "BC
+myprog.bas /X ;" in your description block for myprog.obj :
+myprog.bas.
+
+The OBJS statement in the description block for mymain2 is called a
+macro. Macros provide a convenient way to replace a string in the
+description file with another string. This statement is telling NMAKE
+that MYLIB.LIB is made up of these object files. The "!" on the LIB
+command is a repetition modifier that tells NMAKE to repeat the
+command as many times as it needs for dependents that are out of date
+with respect to the target. If both members of the library were
+updated, they would both be compiled and the library would be
+incrementally updated. The following commands would be executed:
+
+   lib mylib.lib -+ libsub.obj ;
+   lib mylib.lib -+ libsub2.obj ;
+
+The library could also contain modules written in assembler or C. You
+would need to add an assemble or C compile line, either as an
+inference rule or specifically to the module's description block. For
+example, the inference rules for a C compile and a MASM assemble would
+be as follows:
+
+   .c.obj:
+      cl /c $?
+
+   .asm.obj:
+      masm $? ;
+
+The following is a sample NMAKE description file, MYMAKE.MAK, which
+compiles and links two programs. The first is a main module and a
+subprogram, and the second is a main module with a library containing
+two members. To execute the description file, type the following:
+
+   NMAKE MYMAKE.MAK
+
+Code Example
+------------
+
+#----------------MYMAKE.MAK-------------------
+
+#----------pseudotarget
+
+ALL : mymain.exe mymain2.exe
+
+#----------inference rules
+
+.BAS.OBJ:
+   BC $&lt; ;
+
+.OBJ.EXE:
+   LINK $** ;
+
+#----------mymain description block
+
+# target : dependent
+mymain.obj : mymain.bas  # (these will use inference rules
+mysub.obj : mysub.bas    #  to compile and link)
+mymain.exe : mymain.obj mysub.obj
+
+#----------mymain2 description block
+
+mymain2.obj : mymain2.bas
+    BC mymain2.bas /X ;    # (this command used for compile)
+
+libsub.obj : libsub.bas    # (these will use the inference
+libsub2.obj : libsub2.bas  #  rules for compiling)
+
+OBJS = libsub.obj libsub2.obj
+
+mylib.lib : $(OBJS)
+      !lib mylib.lib -+ $?;
+
+mymain2.exe : mymain2.obj mylib.lib   # (this uses inference
+                                      #  rule for linking)
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

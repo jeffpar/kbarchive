@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60858: Floating-Point Bench Marks: QB vs BC6 vs PDS, /FPi vs /FPa | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60858: Floating-Point Bench Marks: QB vs BC6 vs PDS, /FPi vs /FPa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60858/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60858/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60858/","publisher":null,"image":null,"headline":"Q60858: Floating-Point Bench Marks: QB vs BC6 vs PDS, /FPi vs /FPa","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60858-floating-point-bench-marks-qb-vs-bc6-vs-pds-fpi-vs-fpa">Q60858: Floating-Point Bench Marks: QB vs BC6 vs PDS, /FPi vs /FPa</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q60858</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">See</span> <span class="n">article</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">7.00</span>   <span class="p">|</span> <span class="m">7.00</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="p">|</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span>
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">ENDUSER</span> <span class="p">|</span> <span class="n">SR</span><span class="p">#</span> <span class="n">S900403</span><span class="p">-</span><span class="m">121</span> <span class="n">B_QuickBas</span> <span class="p">|</span> <span class="n">mspl13_basic</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">19</span><span class="p">-</span><span class="n">APR</span><span class="p">-</span><span class="m">1990</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">provides</span> <span class="n">some</span> <span class="n">informal</span> <span class="n">benchmarks</span> <span class="n">for</span> <span class="n">various</span> <span class="n">versions</span> <span class="k">of</span>
+<span class="n">Microsoft</span> <span class="n">BASIC</span><span class="p">.</span> <span class="n">It</span> <span class="n">demonstrates</span> <span class="n">the</span> <span class="n">speed</span> <span class="n">differences</span> <span class="n">between</span> <span class="n">them</span>
+<span class="n">using</span> <span class="n">certain</span> <span class="n">mathematic</span> <span class="n">operations</span> <span class="k">with</span> <span class="n">different</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">BASIC</span>
+<span class="k">and</span> <span class="n">different</span> <span class="n">math</span> <span class="n">packages</span><span class="p">.</span> <span class="n">The</span> <span class="n">data</span> <span class="n">listed</span> <span class="n">below</span> <span class="n">was</span> <span class="n">generated</span> <span class="n">on</span> <span class="n">a</span>
+<span class="n">Wyse</span> <span class="m">386</span> <span class="m">16</span> <span class="n">MHz</span> <span class="n">PC</span> <span class="n">without</span> <span class="n">a</span> <span class="n">coprocessor</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">information</span> <span class="n">applies</span> <span class="k">to</span> <span class="n">Microsoft</span> <span class="n">QuickBASIC</span> <span class="k">Version</span> <span class="m">4.50</span><span class="p">,</span>
+<span class="n">Microsoft</span> <span class="n">BASIC</span> <span class="n">Compiler</span> <span class="n">Versions</span> <span class="m">6.00</span> <span class="k">and</span> <span class="m">6.00</span><span class="n">b</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">and</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">Microsoft</span> <span class="n">BASIC</span> <span class="n">Professional</span> <span class="n">Development</span> <span class="nf">System</span> <span class="p">(</span><span class="n">PDS</span><span class="p">)</span> <span class="k">Version</span> <span class="m">7.00</span>
+<span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">and</span> <span class="n">OS</span><span class="p">/</span><span class="m">2.</span>
+
+<span class="n">The</span> <span class="n">emulator</span> <span class="p">(/</span><span class="n">FPi</span><span class="p">)</span> <span class="n">is</span> <span class="n">a</span> <span class="n">math</span> <span class="k">package</span> <span class="n">that</span> <span class="k">uses</span> <span class="n">software</span> <span class="k">to</span> <span class="n">emulate</span>
+<span class="n">the</span> <span class="n">floating</span><span class="p">-</span><span class="n">point</span> <span class="n">coprocessor</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">closely</span> <span class="k">as</span> <span class="n">possible</span> <span class="n">when</span> <span class="n">a</span>
+<span class="n">coprocessor</span> <span class="n">is</span> <span class="k">not</span> <span class="n">present</span><span class="p">.</span> <span class="n">The</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">package</span> <span class="p">(/</span><span class="n">FPa</span><span class="p">)</span> <span class="n">is</span>
+<span class="n">another</span> <span class="n">method</span> <span class="k">of</span> <span class="n">emulating</span> <span class="n">the</span> <span class="n">coprocessor</span> <span class="n">functions</span><span class="p">.</span> <span class="n">The</span> <span class="n">main</span>
+<span class="n">difference</span> <span class="n">is</span> <span class="n">that</span> <span class="n">the</span> <span class="n">emulator</span> <span class="n">always</span> <span class="k">uses</span> <span class="n">an</span> <span class="m">80</span><span class="p">-</span><span class="n">bit</span> <span class="n">temporary</span> <span class="n">work</span>
+<span class="n">area</span> <span class="p">(</span><span class="k">to</span> <span class="n">emulate</span> <span class="n">the</span> <span class="n">coprocessor</span><span class="s1">'s 80-bit register), whereas the
+alternate math package uses a smaller temporary storage area for most
+operations. The alternate math package can generate significantly
+faster code, but at a loss of precision for floating-point
+calculations.
+
+QuickBASIC uses only the emulator math (EM) package (/FPi). The
+alternate math package is not available with QuickBASIC, but is
+available with BASIC compiler 6.00 and 6.00b and BASIC PDS 7.00.
+
+The following table gives the times for the various operations in the
+program listed below (these operations were performed 10,000 times on
+a 386/16 MHz):
+
+   10,000        PDS 7.00       BC 6.00b       BC 6.00       QB 4.50
+   Operations  /FPi    /FPa   /FPi    /FPa   /FPi    /FPa   (EM only)
+   ----------  ------------   ------------   ------------   ---------
+
+   empty loop   3.19   1.87   3.91    1.21   3.94    1.22   3.56
+   J#=I#+I#     4.53   1.84   5.78    1.84   5.78    1.85   5.15
+   J#=I#*I#     4.72   2.03   5.97    2.12   5.91    2.03   5.19
+   J#=I#^2     33.91   3.68  46.32    3.81  45.47    3.72  42.31
+   J#=I#^.5    33.93  29.34  46.50   30.57  45.66   29.47  42.63
+   J#=SQR(I#)   5.57   3.25   6.84    3.40   6.71    3.28   6.00
+   J#=COS(I#)  16.87  15.90  31.44   16.22  31.47   16.15  29.94
+
+Please note the following about the above table:
+
+1. Any exponents are slow in the emulator. Equivalent multiplication
+   is much faster for small cases.
+
+2. Fractional exponents are almost as slow with the alternate math
+   package as the emulator. The times for other noninteger exponents
+   are similarly slow with the alternate math package. Note that SQR
+   is much faster than raising to the .5 exponent.
+
+3. BASIC PDS 7.00 greatly improves the emulator speed for many of the
+   operations (COS, exponentiation) over previous versions. Since the
+   alternate math package doesn'</span><span class="n">t</span> <span class="n">have</span> <span class="n">the</span> <span class="n">same</span> <span class="n">factor</span> <span class="k">of</span> <span class="n">improvement</span><span class="p">,</span>
+   <span class="n">the</span> <span class="n">emulator</span> <span class="n">runs</span> <span class="n">closer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">alternate</span> <span class="k">package</span> <span class="n">for</span> <span class="n">many</span>
+   <span class="n">operations</span> <span class="k">in</span> <span class="n">BASIC</span> <span class="n">PDS</span> <span class="m">7.00</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">The</span> <span class="n">time</span> <span class="k">of</span> <span class="n">execution</span> <span class="n">for</span> <span class="n">most</span> <span class="n">operations</span> <span class="n">using</span> <span class="p">/</span><span class="n">FPa</span> <span class="k">in</span> <span class="n">PDS</span> <span class="m">7.00</span> <span class="n">is</span>
+   <span class="m">40</span><span class="p">-</span><span class="m">60</span> <span class="n">percent</span> <span class="k">of</span> <span class="n">the</span> <span class="n">time</span> <span class="k">with</span> <span class="p">/</span><span class="n">FPi</span> <span class="k">in</span> <span class="n">PDS</span> <span class="m">7.00</span><span class="p">.</span>
+
+<span class="n">Code</span> <span class="n">Example</span>
+<span class="p">------------</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">code</span> <span class="n">example</span> <span class="n">demonstrates</span> <span class="n">the</span> <span class="n">times</span> <span class="k">of</span> <span class="n">various</span>
+<span class="n">operations</span> <span class="n">using</span> <span class="n">the</span> <span class="n">different</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">BASIC</span><span class="p">:</span>
+
+   <span class="s1">'Compile and link lines for emulator (only mode for QuickBASIC):
+   '</span>
+   <span class="s1">' BC /O BENCH.BAS;
+   '</span> <span class="n">LINK</span> <span class="n">BENCH</span><span class="p">;</span>
+   <span class="s1">'
+   '</span><span class="nf">Compile</span> <span class="k">and</span> <span class="n">link</span> <span class="n">for</span> <span class="n">alternate</span> <span class="n">math</span> <span class="k">in</span> <span class="n">BASIC</span> <span class="n">compiler</span> <span class="k">and</span> <span class="n">PDS</span><span class="p">:</span>
+   <span class="s1">'
+   '</span> <span class="n">BC</span> <span class="p">/</span><span class="n">O</span> <span class="p">/</span><span class="n">FPa</span> <span class="n">BENCH</span><span class="p">.</span><span class="n">BAS</span><span class="p">;</span>
+   <span class="s1">' LINK BENCH;
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   NEXT
+   PRINT "Empty loop:"; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = I# + I#
+   NEXT
+   PRINT "J#=I#+I#:"; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = I# * I#
+   NEXT
+   PRINT "J#=I#*I#:"; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = I# ^ 2
+   NEXT
+   PRINT "J#=I#^2: "; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = I# ^ .5
+   NEXT
+   PRINT "J#=I#^.5: "; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = SQR(I#)
+   NEXT
+   PRINT "J#=SQR(I#):"; TIMER - orig
+
+   orig = TIMER
+   FOR I# = 1 TO 10000
+   J# = COS(I#)
+   NEXT
+   PRINT "J#=COS(I#): "; TIMER - orig
+   END
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

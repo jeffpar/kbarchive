@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242958: BETA-HOWTO: Forcing Display of Migration DLL’s Incompatible Mess | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242958: BETA-HOWTO: Forcing Display of Migration DLL’s Incompatible Mess" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242958/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242958/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242958/","publisher":null,"image":null,"headline":"Q242958: BETA-HOWTO: Forcing Display of Migration DLL’s Incompatible Mess","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242958-beta-howto-forcing-display-of-migration-dlls-incompatible-mess">Q242958: BETA-HOWTO: Forcing Display of Migration DLL’s Incompatible Mess</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242958
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbsetup kbmigrate kbOSWin2000 kbSDKPlatform kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDS
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 98 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Windows 2000 Migration DLL displays messages in a user's Upgrade Report by
+writing to an [INCOMPATIBLE MESSAGES] section of its Migrate.inf file. However,
+these messages can be removed from the Upgrade Report by similar entries in the
+[HANDLED] section. This article describes how to force an incompatible message
+to display despite the conflict with the [HANDLED] section.
+
+MORE INFORMATION
+================
+
+Typically, if you place a file, directory, or registry entry in the [HANDLED]
+section, Windows 2000 Setup assumes that you are going to fix any problems
+associated with that object. It uses this logic to ignore any entries in the
+[INCOMPATIBLE MESSAGES] section that are dependent on the same objects.
+
+In some cases, the object being [HANDLED] also needs a message to be displayed in
+the Upgrade Report. For example, if your application did not have an equivalent
+Windows 2000 version, the Migration DLL may decide to remove the application
+completely. In this case, all directories and registry entries for the
+application should be placed in the [HANDLED] section, but you also want to warn
+the user that the application will be removed during the upgrade.
+
+The solution involves modifying the condition that triggers the incompatible
+message in the [&lt;Message Object Section&gt;] of the Migrate.inf file. The
+three documented identifier types are "File," "Registry," and "Directory." A
+fourth option is to use the Migration DLL's ProductId as the Message Object and
+set it to "ProductId" as the Identifier Type. This will create a message that
+will always be displayed. This allows you to "handle" all files and registry
+entries associated with your product without suppressing the message in the
+Upgrade Report.
+
+REFERENCES
+==========
+
+For more information on Migration DLLs, see following in the MSDN Library:
+
+  Platform SDK; Management Services; Setup; Migration-Extension Interface
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbmigrate kbOSWin2000 kbSDKPlatform kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDSupport kbGrpDSTools kbMigrationDLLFAQ 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWinAdvServSearch kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

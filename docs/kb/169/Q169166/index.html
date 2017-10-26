@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169166: WD97: Print To File on Windows May Produce Incorrect Output | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169166: WD97: Print To File on Windows May Produce Incorrect Output" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169166/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169166/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169166/","publisher":null,"image":null,"headline":"Q169166: WD97: Print To File on Windows May Produce Incorrect Output","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169166-wd97-print-to-file-on-windows-may-produce-incorrect-output">Q169166: WD97: Print To File on Windows May Produce Incorrect Output</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169166
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbprint winword word97
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a file using the Generic/Text Only printer driver in Microsoft
+Windows NT version 4.0 or Microsoft Windows 95, the resulting .prn file will
+contain garbled text. When you view the .prn file in a text editor, all of the
+characters are formatted incorrectly.
+
+
+CAUSE
+=====
+
+This problem occurs when the text is formatted at 10 characters per inch, in a
+font other than the Generic/Text Only printer font (Roman), and when the default
+data type of the printer driver is not text.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Change the Printer Metrics to Lay Out the Document
+------------------------------------------------------------
+
+1. Start Microsoft Word and open the document that you want to print to a file.
+
+2. On the Tools menu, click Options.
+
+3. On the Compatibility tab, click to select Microsoft Word 97 in the
+  Recommended Options For box.
+
+4. On the Compatibility tab, under Options, select the "Use printer metrics to
+  lay out document" check box, and then click OK.
+
+NOTE: When you select the "Use printer metrics to lay out document" check box,
+the Recommended Options For box changes to Custom. This method applies only to
+the current document, because "Use printer metrics to lay out document" is a
+document setting only.
+
+Method 2: Set a Printer Driver and Font Selection (Windows NT 4.0 Only)
+-----------------------------------------------------------------------
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Click to select the Generic Text only printer driver icon. If this icon does
+  not appear, see the "Installing the Generic / Text Only Printer" section
+  later in this article.
+
+3. On the File menu, click Properties, and then on the General tab, click Print
+  Processor.
+
+4. In the Default Datatype box, click Text, and then click OK.
+
+5. Start Microsoft Word and open the document that you want to print to a file.
+
+6. On the Edit menu, click Select All.
+
+7. On the Format menu, click Font. On the Font tab, click Roman (10 characters
+  per inch) in the Font list.
+
+8. In the Size list, click 10, and then click OK.
+
+9. On the File menu, click Print. Under Printer, select the Print To File check
+  box, and then click OK.
+
+Installing the Generic / Text Only Printer
+------------------------------------------
+
+To install the Generic / Text Only printer for method 2, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Double-click Add Printer, and then click Next.
+
+3. Click Local Printer or Network Printer as appropriate, and then click Next.
+
+  If you click Network Printer, you are prompted for the network path for the
+  printer. If you do not know the correct path, click Browse, or check with
+  your network administrator. Click either Yes or No in the "Do you print from
+  MS-DOS-based programs?" area, and then click Next.
+
+4. Under Manufacturers, click Generic. Under Model, click Generic / Text Only,
+  and then click Next.
+
+5. If you chose to install a local printer, click the correct port and then
+  click Next.
+
+6. Type a name for the printer (or accept the default name), and then click
+  either Yes or No in the "Do you want your Windows-based programs to use this
+  printer as the default printer?" area. Click Next.
+
+7. To print a test page, click Yes. Click Finish.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: word97 8.0 wordnt ntword winword garbage overlap overlay
+
+======================================================================
+Keywords          : kbprint winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262441: PRB: Run-Tme Error Message ‘400’ : Form already displayed….&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262441: PRB: Run-Tme Error Message ‘400’ : Form already displayed….&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262441/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262441/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262441/","publisher":null,"image":null,"headline":"Q262441: PRB: Run-Tme Error Message ‘400’ : Form already displayed….&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262441-prb-run-tme-error-message-400--form-already-displayed">Q262441: PRB: Run-Tme Error Message ‘400’ : Form already displayed…."</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262441
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbAPI kbCmnCtrls kbCtrl kbSDKWin32 kbTabCtrl kbVBp kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to display a modal dialog box window in the Click event of a
+TabStrip control from Microsoft Windows Common Controls 6.0 Service Pack 3
+(SP3), you receive the following error message:
+
+  Run-time error '400' :
+  Form already displayed ; can't show modally.
+
+This message appears only with the service pack 3 version of Mscomctl.ocx.
+
+
+CAUSE
+=====
+
+This behavior occurs because the mouse capture is not released, so all of the
+mouse inputs still go to the TabStrip control window instead of the modal
+window.
+
+RESOLUTION
+==========
+
+Make a call to the ReleaseCapture API function before displaying the modal form.
+This releases the mouse capture from the TabStrip control window and restores
+normal mouse input processing.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is added by default.
+
+2. From the Project menu, add another form, Form2, to the project.
+
+3. On the Project menu, click Components, click to select Microsoft Windows
+  Common Controls 6.0 (SP3) on the Components dialog box, and then click OK.
+
+4. Add a TabStrip control to Form1 from the Toolbox.
+
+5. In the General Declarations section for Form1, paste the following code:
+
+  Private Sub TabStrip1_Click()
+      Form2.Top = Form1.Top + Form1.Height
+      Form2.Show vbModal
+  End Sub
+
+6. Run the project and click the TabStrip control to display Form2.
+
+7. Click the TabStrip control again and note that the error described in the
+  "Symptoms" section is displayed.
+
+Workaround 
+----------
+
+1. To work around the problem, paste the following API declaration in the
+  general Declaration Section for Form1:
+
+  Private Declare Function ReleaseCapture Lib "user32" Alias _
+    "ReleaseCapture" () As Long
+
+2. Modify the TabStrip1_Click event on Form1 as follows:
+
+  Private Sub TabStrip1_Click()
+     ReleaseCapture
+     Form2.Show vbModal
+  End Sub
+
+3. Run the test again and note that the error does not appear.
+
+Additional query words: 400
+
+======================================================================
+Keywords          : kbAPI kbCmnCtrls kbCtrl kbSDKWin32 kbTabCtrl kbVBp kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157515/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157515/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157515/","publisher":null,"image":null,"headline":"Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157515-windows-nt-resource-kit-faq-versions-350-and-351">Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157515
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Resource Kit, versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Contents
+--------
+
+1. Common Upgrading Questions About Win NT 3.51 Resource Kit
+
+2. NT 3.5 Resource Kit "Remote Command Installation" Instructions Do not Work
+
+3. Installing Windows NT Resource Kit Utilities to Different Operating Systems
+
+4. Windows NT 3.51 Resource Kit Mail Server Update/Usage Information
+
+5. POSIX Utilities Q&amp;A
+
+6. Alternative Sources for Obtaining Windows NT Resource Kit Utilities
+
+7. TELNETD Telnet Server Update for Windows NT 3.51 Resource Kit
+
+8. NT 3.50 Creadme.wri replaces Readme.wri
+
+9. NT 3.5 ResKit Net2Com, AppleTalk, and Animated Cursor utilities missing
+
+10. Support of the Windows NT 3.5 Resource Kit
+
+11. Notes on the WAIS Internet Toolkit and EMWAC
+
+12. NT 3.51 INSTSRV and SRVANY programs try to install FLOPPYLOCK
+
+1. Common Upgrading Questions About Win NT 3.51 Resource Kit
+------------------------------------------------------------
+
+I have the Windows NT 3.5 Resource Kit and Windows NT 3.51.
+
+1. Is there a Resource Kit for Windows NT 3.51?
+
+2. Should I upgrade to the new Resource Kit?
+
+Many utilities in the Windows NT 3.5 Resource Kit are specifically designed for
+the Windows NT 3.5 operating system. Several Windows NT 3.5 utilities will not
+work properly under Windows NT 3.51 or later. An update to the Resource Kit is
+now available that provides updated utilities and information about Windows NT
+3.51. If you are using Windows NT 3.51, you should purchase the "Windows NT
+Resource Kit Version 3.51 Update."
+
+Is there more than one update to the Windows NT 3.51 Resource Kit?
+
+In addition to the first update for Windows NT 3.51, Microsoft has produced a
+second update titled "Windows NT Resource Kit Version 3.51 Update 2." This
+second update volume contains new information about Windows NT 3.51, including
+
+- A beta draft of "Windows NT Workstation Deployment Planning Basics"
+
+- Using Windows NT topics including information regarding
+
+- The Windows NT File System (NTFS)
+
+- Fault tolerance for disks
+
+- Printing
+
+- Corrections and additions to previous Resource Kit utilities and text and
+  more
+
+OK. There are two updates so far. Do I need both, or just the latest update
+volume?
+
+The update volumes are incremental. The information in Update 1 is not covered in
+Update 2, so you need to purchase both update volumes if you want all of the
+Resource Kit information.
+
+How can I get an upgrade for the Resource Kit without paying full price?
+
+The Windows NT 3.51 Resource Kit consists of the original four Windows NT 3.5
+Resource Kit volumes plus an additional fifth volume that covers new issues
+specific to Windows NT 3.51.(It also includes update corrections to the previous
+four volumes). A new Windows NT 3.51 Resource Kit utility CD-ROM is included
+with the update. You can order the full set or just the 3.51 update volume and
+the updated CD-ROM by calling Microsoft Press Sales at 800-MS-PRESS or by
+visiting your local bookstore.
+
+2. NT 3.5 Resource Kit "Remote Command Installation" Instructions
+  Do not Work
+--------------------------------------------------------------------------------
+
+The following installation information is stated in the "Tools for Windows NT"
+help file for the "Remote Command Installation" utility:
+
+- After installation of the resource kit, the necessary files will have been
+  copied to the system directory.
+
+- In Program Manager, Control Panel, Network, Add Software, select "Remote
+  Command Server".
+
+However, there is no "Remote Command Server" option present.
+
+Comments/correction:
+There is a mistake in the documentation. To install the Remote Command Server,
+you must first copy the following files from your RESKIT directory to your
+SYSTEM32 directory:
+
+  RCMD.EXE
+  RCMDSVC.EXE
+  OEMNSVRC.INF
+
+After these files are copied to your SYSTEM32 directory, the Remote Command
+Server option will be available and will work properly. From this point, you can
+follow the installation instructions as written.
+
+3. Installing Windows NT Resource Kit Utilities to Different
+  Operating Systems
+---------------------------------------------------------------------------------
+
+The Windows NT Resource Kit CD-ROM and disks are designed specifically for use
+with the Windows NT operating system. Due to many differences in the internal
+structure of Windows and Windows NT, the CD-ROM and the disks are not compatible
+with other operating systems in the Windows family (e.g., Microsoft Windows 3.1,
+Microsoft Windows 95).
+
+To install the contents of the CD-ROM on your computer, you must have the
+appropriate version of Windows NT. For the Windows NT 3.51 Resource Kit, you can
+only install the utilities on a computer running Windows NT 3.51. Please note
+that many Resource Kit utilities are also version specific and will not work
+with a newer (or older) version of Windows NT.
+
+4. Windows NT 3.51 Resource Kit Mail Server Update/Usage Information
+--------------------------------------------------------------------
+
+The following information will help clarify the installation and configuration of
+the Windows NT 3.51 Resource Kit utilities for SMTP and POP3 service:
+
+The Mail Server bundled in the NT Resource Kit 3.51 is a very basic SMTP and POP3
+service and should not require much configuration to function.
+
+There are, however, a few things to be aware of:
+
+GENERAL:
+--------
+
+1. There is a patch to the Mail Server that can be obtained by connecting to
+  ftp.microsoft.com. We highly recommend implementing this patch.
+
+  NOTE: As of November 7, 1995, the directory and file name for this patch is:
+
+  ftp://microsoft.com!bussys/winnt/winnt-public/reskit/nt351/MAILSRV.EXE
+
+  After downloading the file, execute MAILSRV.EXE -d
+  (http://support.microsoft.com/download/support/mslfiles/MAILSRV.EXE -d) to
+  uncompress the patch files for the four platforms of NT, including the
+  original directory structure. To install the patch, please follow the
+  instructions in the README.TXT file that will be available after
+  uncompression.
+
+2. The Administrative service is planned for a future revision and has not yet
+  been implemented.
+
+INSTALLATION:
+
+1. The Mail Server must be installed on a local drive.
+
+2. The local drive must be formatted using the NTFS.
+
+  NOTE: If you attempt to install to a network or non-NTFS drive you will
+  receive the following error:
+
+  The data area passed to a system call is too small.
+
+CONFIGURATION:
+
+1. To get mail to flow smoothly it might be necessary to alter the Mail Server's
+  rule set. Please refer to the Mailsrv topic in the RKTOOLS.HLP file. (These
+  rules are very similar to the rules used for any SMTP server.)
+
+2. In order to receive mail, a user must have a valid LOCAL account in the LOCAL
+  NT user database. A mail directory with secured permissions will be created
+  for the user the first time the user checks his or her mail or the first time
+  the user's account is sent mail.
+
+NOTE: When adding user names, please make sure to use the LOCAL USER DATABASE
+with LOCAL USER ACCOUNT. One of the most common problems is adding a name like
+DOMAIN\userX which will not work by design. Instead you need to create a local
+user called userX.
+TROUBLESHOOTING:
+The RESKIT 3.51 Mail Server might work after installing the DHCP server and by
+manually adding a DhcpDomain name to the registry.
+
+5. POSIX Utilities Q&amp;A
+----------------------
+
+I have been unable to get any output from "grep" or any of the other UNIX-like
+commands. What do I have to do to get these utilities to work on Windows NT 3.51
+servers?
+
+The most likely cause of problems when using the POSIX utilities provided with
+the NT Resource Kit is mismatched versions. Please make sure you are using the
+Windows NT 3.51 Resource Kit utilities on a machine running Windows NT 3.51.
+Windows NT 3.5 utilities do not typically work in Windows NT 3.51 and vice
+versa.
+
+Please remember that the POSIX utilities are provided AS IS. This is why the
+source code for the utilities is included with the executables.
+
+I'm attempting to play with the Posix subsystem using the utilities supplied on
+the Windows NT 3.5 Resource Kit, and I've noticed a couple executables missing.
+My attempts to compile the included source files have been unsuccessful.
+
+CC, MAKE, and a few other POSIX utilities are only provided in source code.
+
+These utilities require some changes to be fully POSIX.1 compliant and have not
+been tested enough to be provided with the Windows NT Resource Kit in compiled
+form.
+
+The original BSD UNIX source code is provided with the Resource Kit for those who
+wish to make the necessary code changes. You must have a separate C compiler
+(such as Microsoft Visual C++ version 4) in order to compile these utilities
+including any changes you make to provide POSIX.1 compatibility.
+
+6. Alternative Sources for Obtaining Windows NT Resource Kit Utilities
+----------------------------------------------------------------------
+
+As of November, 1995, most of the Windows NT Resource Kit is available in
+electronic form via the Microsoft TechNet CD-ROM. This includes the Windows NT
+Resource Kit utilities. For more information regarding the Microsoft TechNet
+program, please call Microsoft Sales at (800) 426- 9400.
+
+The Windows NT Resource Kit utilities are not available free of charge via FTP,
+CIS, MSN, or any other online source. However, a limited number of the utilities
+and even a few sources (PERL, REXX, and POSIX ports) are available on the
+Microsoft FTP server ftp://microsoft.com.
+
+If you have further questions regarding the Windows NT Resource Kit, please feel
+free to e-mail RKINPUT@MICROSOFT.COM.
+
+7. TELNETD Telnet Server Update for Windows NT 3.51 Resource Kit
+----------------------------------------------------------------
+
+The following information is located in the Readme.wri file of the Windows NT
+3.51 Resource Kit:
+
+"Due to last minute problems, the Telnet Server Service did not ship
+with this release as was originally planned. This service is referenced
+in the Windows NT Update 1 book in Chapter 4, "Internet Servers and
+Security." It is listed on the first page of that chapter and described
+in the "Telnet Server Service" section. Those references are not valid
+for this release."
+&lt;BR/&gt;&lt;BR/&gt;
+As of March 1996, the Windows NT Resource Kit team is still working
+to include this utility in a future update to the Windows NT
+Resource Kit. The Resource Kit team is aware that this functionality is
+very important to Resource Kit readers.
+
+8. NT 3.50 Creadme.wri replaces Readme.wri
+------------------------------------------
+
+The Creadme.wri file (which is correctly installed as the README icon for the
+Resource Kit) contains new information added after the old Readme.wri was
+created. Customers should refer to Creadme.wriinstead of Readme.wri for this
+CD-ROM.
+
+9. NT 3.5 ResKit Net2Com, AppleTalk, and Animated Cursor utilities
+  missing
+-----------------------------------------------------------------------------
+
+Net2Com and the AppleTalk utilities are no longer part of the NT Resource Kit
+(and won't be for the near future). The Readme.wri incorrectly references these
+tools. The Creadme.wri file (which is correctly installed as the README icon for
+the Resource Kit) properly omits these utilities and discusses other utilities
+added after the old Readme.wri was created.
+
+The animated cursors were removed from the Resource Kit because they are included
+with the Windows NT 3.5 software.
+
+10. Support of the Windows NT Resource Kit
+------------------------------------------
+
+Microsoft does not guarantee the performance of the Windows NT Resource Kit
+utilities, response times, or bug fixes to the tools. Microsoft does, however,
+offer customer assistance on the utilities by either sending e-mail to
+RKINPUT@MICROSOFT.COM or by calling Microsoft Product Support Services. For a
+listing of Microsoft telephone support numbers, please refer to "Your Guide to
+Service and Support" included with Windows NT.
+
+11. Notes on the WAIS Internet Toolkit and EMWAC
+------------------------------------------------
+
+The WAIS toolkit for Windows NT was created by EMWAC (the European Microsoft
+Windows NT Academic Center). If you need to contact EMWAC for further
+information regarding the Internet utilities, here are some handy addresses
+(updated Feb. 08, 1996):
+
+e-mail:
+
+  emwac@ed.ac.uk
+  http://emwac.ed.ac.uk
+  ftp://emwac.ed.ac.uk
+
+12. NT 3.51 INSTSRV and SRVANY programs try to install FLOPPYLOCK.
+------------------------------------------------------------------
+
+Instsrv was originally authored to install the FLOPPYLOCK service, and thus most
+of its visual information will make reference to this. However, text messages
+aside, it is a great tool for installing almost any service.
+
+The misleading information was corrected in The Windows NT 3.51 Update 2 release,
+making INSTSRV and FLOPPLOCK completely separate.
+
+Sincerely,
+
+Microsoft Windows NT Resource Kit team RKINPUT@MICROSOFT.COM
+
+
+Additional query words: bookbug mspress ms press ms_press ResKit 3.5x
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

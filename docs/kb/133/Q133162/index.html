@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133162: PPT7: Network Installation: .cag Files Not Read-Only | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133162: PPT7: Network Installation: .cag Files Not Read-Only" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133162/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133162/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133162/","publisher":null,"image":null,"headline":"Q133162: PPT7: Network Installation: .cag Files Not Read-Only","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133162-ppt7-network-installation-cag-files-not-read-only">Q133162: PPT7: Network Installation: .cag Files Not Read-Only</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133162
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0; Win95:7.0
+Operating System(s): 
+Keyword(s): kbnetwork kbole kbclip
+Last Modified: 21-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you perform a Workstation setup of PowerPoint for Windows 95, version 7.0 or
+Office for Windows 95, version 7.0 and choose to leave the shared components on
+the network server, you may receive an error similar to the following the first
+time you run ClipArt Gallery:
+
+  The ClipArt Gallery could not add the ClipArt package PowerPoint Popular Clip
+  Art
+
+  To make the package available to the ClipArt Gallery, re-run setup for the
+  application which included this ClipArt package.
+
+This error occurs after someone with administrative rights to the Pcsfiles folder
+on the server has successfully run ClipArt Gallery.
+
+CAUSE
+=====
+
+When you perform an Administrative mode setup of Microsoft PowerPoint or Office,
+the .cag files used in setting up the ClipArt Gallery are not flagged Read Only.
+This means they can be deleted or moved by anyone who has administrative rights
+to the Pcsfiles folder.
+
+The first time you run ClipArt Gallery, the individual .cag files in the PCSfiles
+folder are merged into a single Artgalry.cag file. ClipArt Gallery then tries to
+delete the .cag files in the Pcsfiles folder. If you have administrative rights
+to this folder and run ClipArt Gallery, the individual .cag files are deleted,
+and any later attempt to install ClipArt Gallery will fail.
+
+RESOLUTION
+==========
+
+Under most circumstances, this should not be a problem, because most network
+users don't have administrative rights to the shared application directories. To
+prevent this problem from happening accidentally, mark the Pcsfiles folder Read
+Only before running the first workstation installation.
+
+If Office is installed to drive X in a folder called Msoffice, the Pcsfiles
+location is:
+
+  X:\Msoffice\Clipart\Pcsfiles
+
+NOTE: Do not mark the individual .cag files Read Only, unless you are sure that
+no one will perform a local installation from the Administrative setup.
+
+STATUS
+======
+
+This problem was corrected in Microsoft PowerPoint 97 for Windows.
+
+Additional query words: install ppt95 mspub cag artgalry art gallery read only net directory
+
+======================================================================
+Keywords          : kbnetwork kbole kbclip 
+Technology        : kbOfficeSearch kbPowerPtSearch kbSQLServ700 kbZNotKeyword2 kbOffice95Search kbZNotKeyword3 kbPowerPt700Search
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

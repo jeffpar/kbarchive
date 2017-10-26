@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34377: How to Implement a Function Pointer in MASM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34377: How to Implement a Function Pointer in MASM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34377/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34377/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34377/","publisher":null,"image":null,"headline":"Q34377: How to Implement a Function Pointer in MASM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34377-how-to-implement-a-function-pointer-in-masm">Q34377: How to Implement a Function Pointer in MASM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34377
+Product(s): Microsoft Macro Assembler
+Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following sample program illustrates how to implement a function pointer
+using the Microsoft Macro Assembler. It takes the address of the function (in
+this example, the address is loaded into ES:DX) and moves it into a 4-byte
+variable; it then does a far call through the pointer.
+
+In this example, it may seem odd to call a function in this manner because the
+function is defined locally and its name is known; however, what if the name of
+the function was not known? What if you were programming a device driver and all
+that was know was the entry point of the function? Using the following
+technique, a name could be given to the address of the function and the function
+could be called like any other function.
+
+MORE INFORMATION
+================
+
+This program illustrates how to implement a function pointer in MASM. This code
+is similar to the code that the C compiler would generate for a C program that
+used a pointer to a function.
+
+Sample Code
+-----------
+
+  ; Assemble options needed: none
+
+     .model small
+
+     .data
+  fptr dd 1 dup(?)   ; set aside four bytes for function address
+
+     .code
+  ;
+  ;  MACRO Definitions
+  ;
+  FARCALL MACRO func_ptr
+     CALL dword ptr func_ptr  ; call by 4-byte far function reference
+     ENDM
+
+  DosExit MACRO
+     MOV  ax, 4C00h    ; ah = 4Ch ( dos exit interrupt) al = 0
+     INT  21h
+     ENDM
+  ;
+  ;  FUNCTION Definition: function uses int 10h, function 07h to
+  ;                       initialize a window
+  ;
+     PUBLIC _ClrScr
+
+  _ClrScr PROC FAR
+
+     PUSH bp          ; save bp
+     MOV  bp, sp      ; get sp
+     PUSH bx          ; save registers
+     PUSH cx
+     PUSH dx
+
+     MOV ax, 0700h    ; ah = 7,  al = 0
+     MOV bx, 0700h    ; bh = 7,  bl = 0
+     XOR cx, cx       ; cx = 0
+     MOV dx, 184Fh    ; dh = 24, dl = 79, decimal
+     INT 10h
+
+     MOV ax, 0200h    ; ah = 2, al = 0
+     XOR bx, bx       ; bx = 0
+     XOR dx, dx       ; dx = 0
+     INT 10h
+
+     XOR  ax, ax      ; function returns void
+     POP  dx          ; restore registers
+     POP  cx
+     POP  bx
+
+     MOV  sp, bp      ; reset sp
+     POP  bp          ; restore bp
+     RET              ; return
+   _ClrScr ENDP
+
+  BEGIN:              ; main part of the program
+  ;
+  ;  Get address of the function, put in es:dx
+  ;
+     mov  dx, SEG _ClrScr
+     mov  es, dx
+     mov  dx, OFFSET _ClrScr
+  ;
+  ;  Load function address into fptr
+  ;
+     mov  WORD PTR fptr, dx    ; low word of fptr is the
+                               ; offset of the function
+     mov  WORD PTR fptr+2, es  ; high word of fptr is the
+                               ; segment of the function
+  ;
+  ;  Call the function via a function pointer
+  ;
+     FARCALL fptr              ; call function. FARCALL is a macro
+                               ; defined above
+  ;
+  ;  Exit to DOS
+  ;
+     DosExit                   ; Exit to DOS. DosExit is a macro
+                               ; defined above
+
+     END BEGIN
+
+Additional query words: kbinf 5.00 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.0,5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

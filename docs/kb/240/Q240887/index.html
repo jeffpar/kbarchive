@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240887/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240887/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240887/","publisher":null,"image":null,"headline":"Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240887-bug-fatal-error-wmemo-field-in-watch-window-bound-to-edit-box">Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240887
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbMiscTools kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport
+Last Modified: 08-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+   - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Referencing a memo field in the Watch Window that is bound to an edit box on a
+form might result in a fatal error in Microsoft Visual FoxPro. After you close
+the error dialog box, Visual FoxPro terminates.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The error varies depending upon whether you are using Visual FoxPro 6.0 on
+Microsoft Windows 98 or Microsoft Windows NT.
+
+Using Visual FoxPro 6.0 on Windows 98 and Windows NT 4.0, you receive the
+following error message:
+
+  Fatal error: Exception code = C0000005.
+
+Using Visual FoxPro 6.0 under Visual Studio 6.0 SP3 on Windows 98 and Windows NT
+4.0, you receive this error message:
+
+  This program has performed an illegal operation and will be shut down.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Follow one of the methods below to reproduce the error.
+
+Method 1:
+
+1. Create a form.
+
+2. Add a table to the data environment that contains a memo field.
+
+3. Add an edit box to the form that is bound to the memo field.
+
+4. Run the form.
+
+5. Open the debugger.
+
+6. Enter the name of the memo field in the Watch Window and press the Enter key.
+
+Method 2: Create a program with the following code, and then run the program:
+
+  *** start of code ***
+  CREATE CURSOR temp (m1 M)
+  APPEND BLANK
+  REPLACE m1 WITH "This is a test."
+  PUBLIC oform1
+  oform1=CREATEOBJECT("form1")
+  oform1.SHOW
+  DEBUG
+  _CLIPTEXT = "temp.m1"
+  KEYBOARD '{alt+3}{ctrl+v}{enter}'
+  RETURN
+
+  DEFINE CLASS form1 AS FORM
+
+     TOP = -1
+     LEFT = -1
+     HEIGHT = 300
+     WIDTH = 400
+     DOCREATE = .T.
+     CAPTION = (VERSION())
+     LOCKSCREEN = .F.
+     NAME = "Form1"
+
+     ADD OBJECT edit1 AS EDITBOX WITH ;
+        HEIGHT = 169, ;
+        LEFT = 48, ;
+        TOP = 48, ;
+        WIDTH = 241, ;
+        CONTROLSOURCE = "temp.m1", ;
+        NAME = "Edit1"
+
+  ENDDEFINE
+  *** end of code ***
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

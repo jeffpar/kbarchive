@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259276/","publisher":null,"image":null,"headline":"Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259276-pc-win-personal-name-field-in-nnw-pab-entry-cannot-be-modified">Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259276
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you copy an address from the global address list (GAL) to the personal
+address book (PAB) with the Microsoft Mail for Windows client, the Personal Name
+field for the PAB entry cannot be modified.
+
+When you attempt to obtain mailbox details using the Microsoft Mail client for
+MS-DOS (Mail.exe) from the GAL, you may receive the following error message:
+
+  Notice 3
+  Template file corrupted.
+  Contact Administrator.
+  Press Enter to continue
+
+Also, if you try to get mailbox details with the MS Mail Administrator program
+(Admin.exe), you may receive the following error message:
+
+  Notice 90
+  Template file is corrupted.
+  Contact administrator.
+  Press Enter to continue
+
+CAUSE
+=====
+
+The template file is corrupted.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods.
+
+Method 1
+--------
+
+Restore the Admin.inf file from backup prior to when the issue started
+occurring.
+
+Method 2
+--------
+
+Re-create the template data manually. To do this, follow these steps:
+
+1. At a command prompt, change to the Inf subfolder of the Mail database.
+
+2. Rename the existing Admin.inf file.
+
+3. Using the MS Mail Administrator program, re-enter the template information by
+  modifying each of the local addresses. To modify the users' mailboxes, select
+  Local-Admin, and then click Modify.
+
+Method 3
+--------
+
+Use the Template utility to create a new Admin.inf file. the Template utility
+(Template.exe) that is located in the Mailexe folder. To do this, follow these
+steps:
+
+1. At a command prompt, change to the Inf subfolder of the Mail database.
+
+2. Type the following command:
+
+  type nul &gt; admin.txt
+
+  This command creates a zero-byte file, Admin.txt, in the Inf subfolder.
+
+3. Go to the root of the MS Mail database.
+
+4. Change to the drive and subfolder that contain the MS Mail executable files.
+  This is usually the Mailexe subfolder.
+
+5. Type the following (this example assumes that the Maildata subfolder is in
+  the root of drive M):
+
+  template m:\tpl\admin.tpl m:\inf\admin.inf m:\inf\admin.txt -dm
+
+  NOTE: This step creates an Admin.txt file. note that you should check the
+  Admin.txt file for signs of corrupt data. Corrupted data may be indicated by
+  control characters or other illegible characters in the template records. If
+  corrupted records exist in the Admin.txt file, you should remove those
+  records from the file before proceeding with the remaining steps of this
+  procedure.
+  All the records contained in the Admin.txt file should be legible in text
+  format. For example:
+
+  admin
+  Administrator
+  Name:~
+  Phone #:~
+  Fax #:~
+  Address:~
+  Department:~
+  Manager:~
+  ~~
+
+  The end of the record marker is a pair of tildes (~~) in a separate line. Also
+  note that the tilde at the end of the line is a data field placeholder. This
+  tilde can also be replaced with the actual data that is entered for the user
+  data.
+
+6. Change to the Inf subfolder.
+
+7. At the command prompt, rename the Admin.inf file to Admin.old. Type the
+  following command:
+
+  ren admin.inf *.old
+
+8. Go to the root of the MS Mail database.
+
+9. Change to the drive and subfolder that contain the MS Mail executable files.
+  This is usually the Mailexe subfolder.
+
+10. Type the following (this example assumes that the Maildata subfolder is in
+  the root of drive M):
+
+  template m:\tpl\admin.tpl m:\inf\admin.txt m:\inf\admin.inf -dm
+
+These steps create a new Admin.inf file that matches the current Admin.tpl file.
+
+MORE INFORMATION
+================
+
+For more information about MS Mail templates, see Chapter 8 of the Microsoft
+Mail Administrator's Guide.
+
+Additional query words: winmail windows and pm 16 bit
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : :3.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

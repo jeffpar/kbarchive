@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44723: Side Effects in ISRs and Signal Handlers Confuse Optimizer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44723: Side Effects in ISRs and Signal Handlers Confuse Optimizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44723/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44723/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44723/","publisher":null,"image":null,"headline":"Q44723: Side Effects in ISRs and Signal Handlers Confuse Optimizer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44723-side-effects-in-isrs-and-signal-handlers-confuse-optimizer">Q44723: Side Effects in ISRs and Signal Handlers Confuse Optimizer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44723
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | S_QuicKc | mspl13_c
+Last Modified: 1-JUN-1989
+
+It can be dangerous to allow the Microsoft C or QuickC compiler to
+perform loop optimization on code that contains global variables that
+may be modified in interrupt service routines or signal handlers.
+For example, consider the following code
+
+    int TimerCount = 1000;
+
+    while( TimerCount );
+    printf( "Timer expired." );
+
+where an ISR is concurrently executing the following:
+
+    void interrupt far ISR()
+    {
+        TimerCount--;
+    }
+
+This is acceptable code and performs a simple task -- it waits for a
+global timer variable to reach 0, indicating that the ISR has been
+executed a specified number of times. However, the loop optimization
+optionally performed by the compiler results in the while() loop being
+completely removed from the executable code. Because the compiler does
+not know that the ISR is simultaneously accessing TimerCount, it sees
+no reason to keep an expression that obviously evaluates to true and
+does nothing but waste time. This is NOT a problem with the compiler.
+Section 2.1.2.3 of the 7 December 1988 ANSI C draft standard states
+the following:
+
+   An actual implementation need not evaluate part of an expression
+   if it can deduce that its value is not used and that no needed
+   side effects are produced (including any caused by calling a
+   function or accessing a volatile object).
+
+Because C 5.10 does not semantically implement the "volatile" keyword,
+there is no way to indicate that TimerCount is volatile and that the
+expression involving TimerCount should not be removed from the program
+by the optimizer. Thus, it is reasonable for the compiler to assume
+that this expression is not necessary and may be safely removed.
+
+When writing code for Interrupt Service Routines or signal handlers
+that expect conditions that the compiler cannot predict, care should
+be used in the choice of optimizations; and, if needed, an assembly
+code listing should be generated with the /Fc or /Fs /Fa switches and
+examined for the optimization's effect. Disabling optimization with
+/Od may result in slower executable programs but will prevent
+optimizer side effects.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

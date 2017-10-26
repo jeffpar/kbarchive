@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68590: &quot;Symbol Defined More Than Once&quot; LINKing BASIC 7.10/FORTRAN 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68590: &quot;Symbol Defined More Than Once&quot; LINKing BASIC 7.10/FORTRAN 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68590/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68590/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68590/","publisher":null,"image":null,"headline":"Q68590: &quot;Symbol Defined More Than Once&quot; LINKing BASIC 7.10/FORTRAN 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68590-symbol-defined-more-than-once-linking-basic-710fortran-50">Q68590: "Symbol Defined More Than Once" LINKing BASIC 7.10/FORTRAN 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68590
+Product(s): See article
+Version(s): 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S910111-256 H_FORTRAN | mspl13_basic
+Last Modified: 29-JAN-1991
+
+Below is an example where linking BASIC PDS 7.10 with FORTRAN 5.00
+gives several "Symbol defined more than once" errors. In this specific
+case, the problem can be worked around by compiling with BC /O (the
+stand-alone .EXE option, using BCL71ENR.LIB).
+
+=======================================================================
+
+IMPORTANT NOTE: Linking Microsoft BASIC Professional Development
+System (PDS) 7.10 with Microsoft FORTRAN 5.00 requires first changing
+the FORTRAN library and including a Microsoft C 6.00 library, as
+explained in a separate application note, "How to Link BASIC PDS 7.10
+with C 5.10, FORTRAN 5.00, or Pascal 4.00." To find this application
+note in a separate article in this knowledge base, search for the
+words shown in the title of the application note, or BB0345. Despite
+using the steps in the application note, linking certain BASIC 7.10
+and FORTRAN 5.00 programs may generate the "Symbol defined more than
+once" errors described in the example below.
+
+Although the methods in the application note have been designed to
+produce compatible results, we have not put the methods through a
+standard Microsoft mixed-language testing cycle, and it is possible
+that you may still encounter compatibility problems under certain
+conditions. We cannot guarantee the complete success of mixed-
+language programming of BASIC PDS 7.10 with C 5.10, FORTRAN 5.00, or
+Pascal 4.00. Further problems or questions can be directed to
+Microsoft Language Support Services.
+
+=======================================================================
+
+To duplicate the problem, create the following code:
+
+BASIC.BAS
+---------
+
+REM *********************BASIC CODE*****************************
+DIM x%(2048)
+COMMON SHARED /nmalloc/ x%()
+DECLARE SUB Test()
+CALL Test
+END
+
+FORTRAN.FOR
+-----------
+
+C  *********************FORTRAN CODE***************************
+      SUBROUTINE Test
+      REAL frq(1)
+      WRITE(6,*)wreal
+      i=INT(frq(i))
+      RETURN
+      END
+
+Compile and link with the following commands:
+
+   (Note: To create MIXED.LIB, you must obtain the application note
+   "How to Link BASIC PDS 7.10 with C 5.10, FORTRAN 5.00, or Pascal
+   4.00.")
+
+ BC /E /FPi /Zi basic.bas;
+ fl /c /4Yb /FPi /Zi fortran.for
+ link /NOD/NOE/CO basic.obj + fortran.obj,s.exe,,brt71enr.lib+
+                   llibcer.lib+mixed.lib;
+
+LINK.EXE generates the following errors:
+
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __flds : symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fsts : symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fadds: symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fdivs: symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fsubs: symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fmuls: symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fstsp: symbol defined
+more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fdivsr: symbol
+defined more than once.
+mixed.lib(\mrt\c\87ccallf.asm) : error L2025: __fsubsr: symbol
+defined more than once.
+
+To work around this problem, add /O to the BASIC compiler command line
+and then relink, as follows:
+
+   BC /O /E /FPi /Zi basic.bas;
+   link /NOD/NOE/CO basic.obj + fortran.obj,s.exe,,BCL71ENR.LIB+
+                   llibcer.lib+mixed.lib;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

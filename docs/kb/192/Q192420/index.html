@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192420: Err Msg: Modem Not Responding (Error 650) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192420: Err Msg: Modem Not Responding (Error 650)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192420/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192420/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192420/","publisher":null,"image":null,"headline":"Q192420: Err Msg: Modem Not Responding (Error 650)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192420-err-msg-modem-not-responding-error-650">Q192420: Err Msg: Modem Not Responding (Error 650)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192420
+Product(s): The Microsoft Network
+Version(s): 2.52,2.6,5.0,5.1,5.2,5.3
+Operating System(s): 
+Keyword(s): kberrmsg kbmsn
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.52, 2.6, 5.0, 5.1, 5.2, 5.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to MSN, The Microsoft Network, you may receive the
+following error message:
+
+  Modem not responding (Error 650). For troubleshooting information, click
+  Help.
+
+CAUSE
+=====
+
+This behavior can occur if the program called RNAAPP is leaving the modem port
+open, the wrong modem is selected in the connection settings, the Dial Up
+Networking program is corrupted, or there are extra settings in the modem
+causing the modem to not respond.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+End task on RNAAPP then try the connection again:
+
+1. On the keyboard, press the keys CTRL + ALT + DELETE at the same time to view
+  the Close Programs dialog box.
+
+2. Click Rnaapp, click End Task and try the connection again.
+
+If the error continues, and there is another modem is selected, switch to second
+modem.
+
+1. Right-click the MSN Internet Access icon on the desktop and click Connection
+  Settings.
+
+2. On the General tab, check the modem being used to connect under Connect Using
+  and select another modem from the listing if another is displayed.
+
+3. Click OK and try the connection again.
+
+If the error continues, reinstall the Dial Up Networking, which may be
+corrupted.
+
+1. Right-click the Network Neighborhood icon on the desktop, and then click
+  Properties.
+
+2. Click Dial-Up Adapter, and then click Remove.
+
+3. Click OK and if you are prompted to restart the computer, click No.
+
+4. Click Start, point to Settings, and then click Control Panel.
+
+5. Double-click Add/Remove Programs, and then click the Windows Setup tab.
+
+6. In the Components box, click Communications, and then click Details.
+
+7. Click to clear the Dial-Up Networking check box, and then click OK.
+
+8. Click OK, close Control Panel, and then restart the computer.
+
+9. Double-click the MSN icon on the desktop. When you are prompted to install
+  the Connection Manager components, click Yes, and then restart the computer.
+
+If the error continues, remove any extra modem property settings.
+
+1. Click Start, point to Settings, and click Control Panel.
+
+2. Double-click Modems.
+
+3. Under The following modems are set up on this computer select the correct
+  modem and click Properties.
+
+4. Click the Connection tab, and then click Advanced.
+
+5. In the Extra Settings field delete any settings.
+
+6. Click OK, click OK, and then click Close.
+
+7. Restart computer and try connecting again.
+
+
+MORE INFORMATION
+================
+
+If this behavior continues to occur, the issue may be in the configuration or
+condition of the modem. Consult the computer or modem manufacturer for more
+information on correctly configuring it.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. dun kbimu
+
+======================================================================
+Keywords          : kberrmsg kbmsn 
+Technology        : kbMSNSearch kbMSN520 kbMSN530 kbMSN510 kbMSN500 kbMSN252 kbMSN260
+Version           : :2.52,2.6,5.0,5.1,5.2,5.3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

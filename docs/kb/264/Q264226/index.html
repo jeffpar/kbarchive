@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264226/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264226/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264226/","publisher":null,"image":null,"headline":"Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264226-xcln-no-entries-in-directory-service-match-ldap-query-search">Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264226
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5; winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 19-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Outlook Express version 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you use Outlook Express to
+search the Exchange Server directory, even though your account is configured
+correctly:
+
+  There are no entries in the directory service that match your search.
+
+CAUSE
+=====
+
+Check the properties of the Outlook Express directory service account:
+
+1. On the Tools menu, click Accounts, and then click the Directory Service tab.
+
+2. Click the directory service account that you want to check, and then click
+  Properties.
+
+If the "Check names against this server when sending mail" check box is selected,
+this issue can occur.
+
+This option may have been enabled in the Internet Connection Wizard. When you set
+up a directory service account, the second dialog box that the Internet
+Connection Wizard displays states the following:
+
+  Your e-mail program checks the e-mail addresses of your message recipients
+  using one or more directory service address lists.
+
+  Using a directory service to check the e-mail addresses of your message
+  recipients may slow down the performance of your e-mail program.
+
+  Do you want to check addresses using this directory service?
+
+If you click Yes, the error message in the "Symptoms" section of this article can
+occur when you try to perform a search.
+
+If you click to clear the "Check names against this server when sending mail"
+check box, it does not resolve this issue.
+
+WORKAROUND
+==========
+
+To work around this issue, re-create the Outlook Express directory service
+account:
+
+1. On the Tools menu, click Accounts.
+
+2. Click Add, and then click Directory Service.
+
+3. Type the server name, and then click Next.
+
+4. Leave No selected by default, and then click Next.
+
+5. Click Finish.
+
+If you need to resolve e-mail addresses automatically:
+
+1. Complete the Internet Connection Wizard.
+
+2. On the Tools menu, click Accounts, and then click the Directory Service tab.
+
+3. Click the directory service account that you just created, and then click
+  Properties.
+
+4. Click to select the "Check names against this server when sending mail" check
+  box.
+
+Additional query words: LDAP
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpressNT400Search kbOutlookExpress500NT400
+Version           : WINDOWS:5; winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138753: PRB: Unable to Compile 32-bit CDK Samples | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138753: PRB: Unable to Compile 32-bit CDK Samples" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138753/","publisher":null,"image":null,"headline":"Q138753: PRB: Unable to Compile 32-bit CDK Samples","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138753-prb-unable-to-compile-32-bit-cdk-samples">Q138753: PRB: Unable to Compile 32-bit CDK Samples</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138753
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0; :
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 2.0 
+- Microsoft OLE Control Developer's Kit (CDK) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to build the CDK32 samples under Windows 95 from within the Visual
+C++ 2.0 IDE may cause the following error messages to be generated:
+
+  Command line too long (tool does not support response files).
+
+  Error: could not generate command line for the Win32 resource compiler tool.
+
+The messages appear in the output window for Rc.exe.
+
+NOTE: This behavior does not occur under Windows NT or if using Visual C++
+versions 2.1 or 2.2 with Windows 95.
+
+CAUSE
+=====
+
+The macro "$(OUTDIR)" is listed under additional include directories for the
+resource compiler (Rc.exe). The expansion of this macro while building the
+Rc.exe command line exceeds the capacity for the length of the Rc.exe command
+line.
+
+RESOLUTION
+==========
+
+To avoid the problem:
+
+1. Open the CDK32 project you want to build.
+
+2. On the Project menu, click Settings, and then click Resource.
+
+3. In the Additional Include Directories text box, erase the "$(OUTDIR)" text,
+  and click OK.
+
+4. Rebuild the project.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For information on the resource settings dialog box, please see the Visual C++
+Help file or the User's Guide.
+
+Additional query words: vc
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbOLESearch kbVC200
+Version           : winnt:2.0; :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41659: QuickC 2.00 README.DOC: Differences Between NMAKE and MAKE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41659: QuickC 2.00 README.DOC: Differences Between NMAKE and MAKE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41659/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41659/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41659/","publisher":null,"image":null,"headline":"Q41659: QuickC 2.00 README.DOC: Differences Between NMAKE and MAKE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41659-quickc-200-readmedoc-differences-between-nmake-and-make">Q41659: QuickC 2.00 README.DOC: Differences Between NMAKE and MAKE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41659
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 28-FEB-1989
+
+The following information is taken from the QuickC Version 2.00
+README.DOC file, part 3, "Notes on 'QuickC Tool Kit.'" The following
+notes refer to specific pages in "QuickC Tool Kit."
+
+Page 174   Differences between NMAKE and MAKE
+
+Note: If you don't own QuickC Version 1, skip this section.
+
+Section 7.5 explains how to convert DOS MAKE files for use with NMAKE.
+Section 7.6 explains how to interchange QuickC 2.0 Program Lists (.MAK
+files) with NMAKE description files. The discussion below covers
+conversion of QuickC Version 1 program lists to NMAKE files.
+
+It's fastest and easiest to delete the old .MAK files and create new
+ones from within QuickC. However, if you wish to alter a Version 1
+program list by hand, follow these instructions:
+
+Converting to NMAKE Format
+
+To use QuickC 1.00 and 1.01 program lists (.MAK files) with the
+stand-alone NMAKE utility, follow these steps:
+
+1. Make a backup copy of the .MAK file.
+
+2. Delete or comment out (precede with a #) the first two lines of
+   the .MAK file. These lines define inference rules.
+
+3. Add the following as the first target in the file:
+
+      all : target.exe
+
+(Replace "target.exe" with the name of the final target in the file.)
+Spell the target name with lowercase characters only.
+
+4. Change the initial capital letter of the final target in the file
+   to a lowercase letter.
+
+Converting to 2.0 Format
+
+If you want to use the resulting file within the QuickC 2.0
+environment, you must also follow these steps:
+
+1. Run QuickC.
+
+2. Choose Set Program List from the Make menu. Specify the .MAK file
+   you just edited as the program list file.
+
+3. Choose Edit Program List from the Make menu and immediately choose
+   &lt;Save List&gt;.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

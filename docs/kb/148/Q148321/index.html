@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148321: Standard Edition Missing Help Entries for Win32SDK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148321: Standard Edition Missing Help Entries for Win32SDK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148321/","publisher":null,"image":null,"headline":"Q148321: Standard Edition Missing Help Entries for Win32SDK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148321-standard-edition-missing-help-entries-for-win32sdk">Q148321: Standard Edition Missing Help Entries for Win32SDK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148321
+Product(s): Microsoft C Compiler
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbfile kbother kbGrpDSTools
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This patch fixes a problem where the Win32 API functions cannot be found in the
+index tab or through F1-activated help in the Visual C++ help engine.
+
+NOTE: The Visual C++ Professional version does NOT exhibit the problem described
+in this article.
+
+The keyword file was corrected in later shipments of the Visual C++ Standard
+Edition, version 4.0.
+
+
+Visual C++ Standard Edition may display a dialog box containing the error
+message
+
+  Keyword not found
+
+when you use F1 to access help on any Windows SDK API function. The function also
+will not appear in the index dialog box displayed by choosing Help, then Search
+in the Visual C++ Developer Studio. However, similarly named MFC equivalents of
+SDK functions WILL appear in the index and when using F1.
+
+The documentation for these missing entries can still be found using full-text
+search, which is available from the Query Tab brought up by the same Help,
+Search menu selection.
+
+If you do not know if this patch applies to your copy of Visual C++ Standard
+Edition, check the size of the .KWD files in your Msdevstd\Help directory. If
+Vcbks40.kwd has a size of 685,135 bytes, this patch applies to you.
+
+
+The Vcbks40.kwd keyword index file had missing entries for the Win32 SDK. A new
+index file containing the correct number of keywords is available. Download the
+file as described in the MORE INFORMATION section.
+
+MORE INFORMATION
+================
+
+To obtain the new keyword file, download the file Vc40std1.exe, put it in a
+temporary directory, and run the executable. The Readme.txt file included in
+Vc40std1.exe explains what to do.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Vc40std1.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words: online on-line helpfile
+
+======================================================================
+Keywords          : kbfile kbother kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

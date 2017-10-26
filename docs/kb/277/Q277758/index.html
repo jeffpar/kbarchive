@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277758: WP: What Are the Requirements for Express Purchase (EP) Service? | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277758/","publisher":null,"image":null,"headline":"Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277758-wp-what-are-the-requirements-for-express-purchase-ep-service">Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277758
+Product(s): Internet Information Server
+Version(s): 1.3,1.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the client-side and server-side requirements for using the
+Microsoft Passport Express Purchase (EP) service.
+
+MORE INFORMATION
+================
+
+Client-side requirements:
+
+- Each client user must have a Passport. The user must have registered as a
+  Passport user and have provided at least the required elements of the
+  Passport core profile.
+
+- The client browser must be capable of accepting cookies and be configured to
+  accept them.
+
+- The browsers must support Secure Sockets Layer (SSL).
+
+- Browsers must be JavaScript capable and enabled.
+
+Server-side requirements:
+
+- The participant site must be a Passport-registered site and have a
+  Passport-issued Site ID.
+
+Without the Site ID, the Passport EP service cannot verify that a participant
+site is legitimate. When a participant site applies for a Passport Site ID, it
+also must specify a root domain. When requesting user data from the Passport EP
+service, any private user data that is requested must be returned into that
+domain to corroborate the validity of the supplied Site ID. After you have
+completed the registration process, you are provided with an official Passport
+Site ID. Include the Site ID number as a query string parameter whenever you
+direct a user to the Passport Wallet server from your site.
+
+- Pages that are specified as "return URLs" (that is, the pages on a site that
+  actually receive and process the posted wallet data) must be served by means
+  of HTTPS protocol.
+
+- Any material that is used in Passport EP service cobranding must also be
+  served by HTTPS.
+
+REFERENCES
+==========
+
+For more information, see the following Passport Web site:
+
+  Customize Developer Info
+  http://www.passport.com/DevInfo/Dev_ppep.asp
+
+Additional query words: express purchase ep
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

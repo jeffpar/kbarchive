@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260247/","publisher":null,"image":null,"headline":"Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260247-xfor-message-looping-with-exchange-server-on-a-windows-2000-dc">Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260247
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Exchange Server 5.5 is installed on a Microsoft Windows 2000 domain
+controller, some Internet e-mail messages may loop if the following conditions
+are met:
+
+- The Windows 2000 domain is &lt;domain&gt;.com.
+
+- The Exchange Server Simple Mail Transfer Protocol (SMTP) site address is
+  &lt;exchangedomain&gt;.com.
+
+- The domain &lt;domain&gt;.com does not have an MX record configured in DNS.
+
+- Exchange Server is configured to reroute all e-mail messages except e-mail
+  messages to &lt;exchangedomain&gt;.com (set to deliver inbound).
+
+- A message is sent to &lt;domain&gt;.com.
+
+The following events may be logged in the application event log:
+
+  
+
+- Event ID: 4115
+  Event Type: Error
+  Event Source: MSExchangeIMC
+  Event Category: Internal Processing
+
+  Description:
+  The message from the spool file &lt;archivename&gt; seems to be looping
+  through the routing extension for the Internet Mail Service. Please check
+  that the routing DLL is configured properly.
+
+- Event ID: 12071
+  Event Type: Warning
+  Event Source: MSExchangeIS
+  Event Category: Content Engine
+
+  Description:
+  Message &lt;MessageID&gt; with subject &lt;subject of message&gt; from
+  &lt;sender&gt; exceeded the maximum hop count(80040C02-8200008C). The archive
+  filename is &lt;archivename&gt;.
+
+- Event ID: 4098
+  Event Type: Error
+  Event Source: MSExchangeIMC
+  Event Category: Internal Processing
+
+  Description:
+  The following message could not be delivered because the hop count exceeded
+  the maximum. Check your configuration to make sure messages are not looping.
+  From: &lt;sender&gt;
+  Subject: &lt;subject of message&gt;
+
+CAUSE
+=====
+
+This behavior occurs because Internet Mail Service is connecting to itself in an
+attempt to deliver the message.
+
+It is important to note that this is not a problem with either Exchange Server or
+Windows 2000. Refer to the "More Information" section of this article for
+further explanation of this behavior.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+- Add an MX record for &lt;domain&gt;.com in DNS specifying the proper mail
+  host.
+
+- Add &lt;domain&gt;.com in the "Specify by E-Mail Domain" area on the
+  Connections tab of Internet Mail Service properties specifying the proper
+  mail host.
+
+- On the Routing tab of Internet Mail Service, configure &lt;domain&gt;.com to
+  route to the correct destination mail host.
+
+NOTE: The first two methods are the best ways to resolve this issue. Although the
+third method prevents the message from looping, it still causes Internet Mail
+Service to first connect to itself to deliver the message and then reroutes the
+message to its intended destination.
+
+MORE INFORMATION
+================
+
+When a Windows 2000 domain controller is created, it registers an A record for
+its Windows 2000 domain. In the situation described in this article, the Windows
+2000 domain is &lt;domain&gt;.com.
+
+NOTE: This domain should not be confused with the domain used for Internet mail.
+The domain &lt;domain&gt;.com specifies a security namespace, while the domain
+&lt;exchangedomain&gt;.com specifies a messaging namespace. The two namespaces
+are completely separate, and can have different names. Therefore an A record for
+&lt;domain&gt;.com is dynamically registered in DNS, and it points to the IP
+address of the domain controller.
+
+When Internet Mail Service tries to deliver an SMTP message, the service first
+queries DNS for an MX record for the destination domain. If the query does not
+return an MX record for the destination domain, Internet Mail Service queries
+DNS for an A record for the destination domain. If an A record is returned,
+Internet Mail Service connects to the IP address specified in the A record and
+delivers the message.
+
+In this situation, Internet Mail Service attempts to deliver the message to
+itself because of the following reasons:
+
+- The MX record query does not return any records because an MX record is not
+  configured in DNS.
+
+- The A record query successfully finds the A record for the domain controller.
+
+
+Additional query words: XMRP imc
+
+======================================================================
+Keywords          : kberrmsg kbnetwork exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

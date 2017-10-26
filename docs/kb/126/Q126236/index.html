@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126236/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126236/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126236/","publisher":null,"image":null,"headline":"Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126236-encarta-sub-or-function-not-defined-error-in-mindmaze-1994">Q126236: Encarta: "Sub Or Function Not Defined" Error in MindMaze 1994</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126236
+Product(s): Microsoft Home Kids Products
+Version(s): 1994 edition
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click on a doorway in the Microsoft Encarta 1994 edition of MindMaze,
+you may receive the error:
+
+  Sub Or Function Not Defined
+
+The error seldom occurs if MindMaze is executed directly from File Manager.
+
+CAUSE
+=====
+
+The problem has been observed with several Compaq Presario computers with
+internal IDE CD-ROM drives. The CD-ROM driver in the Config.sys file is
+Cpqidecd.sys. These Compaq CD-ROM drives are apparently not being cached
+properly by SMARTDrive.
+
+RESOLUTION
+==========
+
+NOTE: The following instructions discuss editing your Autoexec.bat file. For
+more information about how to edit your Autoexec.bat file, see your MS- DOS
+manual. If you are using Windows 95, use online Help to find the topic "editing
+unformatted text files".
+
+1. Disable CD-ROM caching by adding the /U switch to the Smartdrv.exe line in
+  the Autoexec.bat file. For example, change the Smartdrv.exe line to:
+
+  "C:\WINDOWS\SMARTDRV.EXE /U" (without the quotation marks)
+
+  For more information about Smartdrv.exe, consult your Microsoft MS- DOS
+  manual. Systems running Microsoft MS-DOS 5.0 and 6.x can access comprehensive
+  information about MS-DOS commands by typing "help" (without the quotation
+  marks) at the MS-DOS command prompt. In Windows 95, you can enter "smartdrv
+  /?" (without the quotation marks) at the MS-DOS prompt.
+
+2. Increase the number of CD-ROM buffers to 20 by editing the line containing
+  Mscdex.exe in the Autoexec.bat file. Increase the number after the /M: switch
+  to 20. If this switch is not present, add /M:20 to the line containing
+  Mscdex.exe.
+
+  For more information about Mscdex.exe, consult your Microsoft MS-DOS manual.
+  Systems running Microsoft MS-DOS 5.0 and 6.x can access comprehensive
+  information on MS-DOS commands by typing "help" (without the quotation marks)
+  at the MS-DOS command prompt.
+
+3. Save your changes and restart the computer.
+
+MORE INFORMATION
+================
+
+Smartdrv.exe
+------------
+
+The Smartdrv /U option does not load the CD-ROM caching module of SMARTDrive even
+if you have a CD-ROM drive. If SMARTDrive is loaded with the /U switch, you
+cannot enable CD-ROM drive caching.
+
+Mscdex.exe
+----------
+
+The Mscdex /M: option specifies the number of sector buffers used to cache the
+path table of a CD. Typically, each drive should have a minimum of four to five
+buffers. The larger this number is, the less your computer will have to read
+directly from the CD-ROM drive.
+
+
+The Compaq Presario computer is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 1994multi media multimedia multi-media mmtitles encarta mindmaze compaq cdrom hardware
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

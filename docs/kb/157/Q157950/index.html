@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157950/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157950/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157950/","publisher":null,"image":null,"headline":"Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157950-info-stl-sample-for-trigonometry-sin-cos-tan-etc-function">Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157950
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 04-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the STL acos, asin, atan, atan2,
+cos, cosh, sin, sinh, tan, tanh functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;valarray&gt;
+     &lt;cmath&gt;
+
+Prototype
+---------
+
+  // acos
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; acos(const valarray&lt;T&gt;&amp; x);
+
+  // asin
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; asin(const valarray&lt;T&gt;&amp; x);
+
+  // atan
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; atan(const valarray&lt;T&gt;&amp; x);
+
+  // atan2
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; atan2(const valarray&lt;T&gt;&amp; x, const valarray&lt;T&gt;&amp; y);
+
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; atan2(const valarray&lt;T&gt; x, const T&amp; y);
+
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; atan2(const T&amp; x, const valarray&lt;T&gt;&amp; y);
+
+  // cos
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; cos(const valarray&lt;T&gt;&amp; x);
+
+  // cosh
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; cosh(const valarray&lt;T&gt;&amp; x);
+
+  // sin
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; sin(const valarray&lt;T&gt;&amp; x);
+
+  // sinh
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; sinh(const valarray&lt;T&gt;&amp; x);
+
+  // tan
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; tan(const valarray&lt;T&gt;&amp; x);
+
+  // tanh
+       template&lt;class T&gt;
+       inline valarray&lt;T&gt; tanh(const valarray&lt;T&gt;&amp; x);
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+This article illustrates the use of STL trigonometry functions through sample
+code.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // main.cpp : Illustrates the use of STL trigonometry functions.
+  // 
+  // Functions:
+  // 
+  //  acos, asin, atan, atan2, cos, cosh, sin, sinh, tan, tanh
+  // 
+  // Written by Yeong-Kah Tam
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;iostream&gt;                 // for i/o functions
+  #include &lt;valarray&gt;                 // for valarray
+  #include &lt;cmath&gt;                    // for trigonometry functions
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+   
+  #define ARRAY_SIZE  3               // array size
+
+  void main()
+
+  {
+
+      // Initialize val_array to values -1, 0 and 1.
+      valarray&lt;double&gt; val_array(ARRAY_SIZE);
+      for (int i = 0; i &lt; ARRAY_SIZE; i++)
+          val_array[i] = i - 1;
+
+      // Display the size of val_array.
+      cout &lt;&lt; "Size of val_array = " &lt;&lt; val_array.size() &lt;&lt; endl;
+
+      // Display the values of val_array before calling any trigonometry
+      // functions.
+      cout &lt;&lt; "The values in val_array:" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; val_array[i] &lt;&lt; "    ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // Initialize rev_valarray that is the reverse of val_array.
+      valarray&lt;double&gt; rev_valarray(ARRAY_SIZE);
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          rev_valarray[i] = val_array[ARRAY_SIZE - i - 1];
+
+      // Display the size of rev_valarray.
+      cout &lt;&lt; "Size of rev_valarray = " &lt;&lt; rev_valarray.size() &lt;&lt; endl;
+
+      // Display the values of rev_valarray.
+      cout &lt;&lt; "The values in rev_valarray:" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rev_valarray[i] &lt;&lt; "    ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // rvalue_array to hold the return value from calling the trigonometry
+      // functions.
+      valarray&lt;double&gt; rvalue_array;
+
+      // ----------------------------------------------------------------
+      // acos() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+      rvalue_array = acos(val_array);
+      cout &lt;&lt; "The result after calling acos():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // asin() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+      rvalue_array = asin(val_array);
+      cout &lt;&lt; "The result after calling asin():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // atan() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+      rvalue_array = atan(val_array);
+      cout &lt;&lt; "The result after calling atan():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // atan2() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+
+      // This template function returns an object of class valarray&lt;T&gt;,
+      // each of whose elements at I is the arctangent of x[I] / y[I].
+      rvalue_array = atan2(val_array, rev_valarray);
+      cout &lt;&lt; "The result after calling atan2(val_array, rev_valarray):"
+           &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // This template function stores in element I the arctangent of
+      // x[I] / y.
+      rvalue_array = atan2(val_array, 3.1416);
+      cout &lt;&lt; "The result after calling atan2(val_array, 3.1416):" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // This template function stores in element I the arctangent of
+      // x / y[I].
+      rvalue_array = atan2(3.1416, val_array);
+      cout &lt;&lt; "The result after calling atan2(3.1416, val_array):" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // cos() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+      rvalue_array = cos(val_array);
+      cout &lt;&lt; "The result after calling cos():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // cosh() - display the result of rvalue_array
+      // ----------------------------------------------------------------
+      rvalue_array = cosh(val_array);
+      cout &lt;&lt; "The result after calling cosh():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // sin() - display the result of val_array
+      // ----------------------------------------------------------------
+      rvalue_array = sin(val_array);
+      cout &lt;&lt; "The result after calling sin():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // sinh() - display the result of val_array
+      // ----------------------------------------------------------------
+      rvalue_array = sinh(val_array);
+      cout &lt;&lt; "The result after calling sinh():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // tan() - display the result of val_array
+      // ----------------------------------------------------------------
+      rvalue_array = tan(val_array);
+      cout &lt;&lt; "The result after calling tan():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // tanh() - display the result of val_array
+      // ----------------------------------------------------------------
+      rvalue_array = tanh(val_array);
+      cout &lt;&lt; "The result after calling tanh():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+  } 
+
+Program Output
+--------------
+
+  Size of val_array = 3
+  The values in val_array:
+  -1    0    1
+
+  Size of rev_valarray = 3
+  The values in rev_valarray:
+  1    0    -1
+
+  The result after calling acos():
+  3.14159     1.5708     0
+
+  The result after calling asin():
+  -1.5708     0     1.5708
+
+  The result after calling atan():
+  -0.785398     0     0.785398
+
+  The result after calling atan2(val_array, rev_valarray):
+  -0.785398     0     2.35619
+
+  The result after calling atan2(val_array, 3.1416):
+  -0.308168     0     0.308168
+
+  The result after calling atan2(3.1416, val_array):
+  1.87896     1.5708     1.26263
+
+  The result after calling cos():
+  0.540302     1     0.540302
+
+  The result after calling cosh():
+  1.54308     1     1.54308
+
+  The result after calling sin():
+  -0.841471     0     0.841471
+
+  The result after calling sinh():
+  -1.1752     0     1.1752
+
+  The result after calling tan():
+  -1.55741     0     1.55741
+
+  The result after calling tanh():
+  -0.761594     0     0.761594
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample acos, asin, atan, atan2, cos, cosh, sin, sinh, tan, tanh
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

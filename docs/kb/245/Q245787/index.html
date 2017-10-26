@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245787: XFOR: SMTP Error Message: 550 Invalid Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245787: XFOR: SMTP Error Message: 550 Invalid Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245787/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245787/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245787/","publisher":null,"image":null,"headline":"Q245787: XFOR: SMTP Error Message: 550 Invalid Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245787-xfor-smtp-error-message-550-invalid-domain">Q245787: XFOR: SMTP Error Message: 550 Invalid Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245787
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 04-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send outbound Simple Mail Transfer Protocol (SMTP) mail, a non-delivery
+report (NDR) similar to the following is displayed:
+
+  550 Invalid Domain.
+
+The following NDR is also logged in the application event log:
+
+  Event ID: 4031
+  Source: MSEXCHANGEIMC
+  Description:
+  The message could not be delivered. The destination server reported: 550
+  Invalid Domain.
+
+CAUSE
+=====
+
+This problem may be caused by a Domain Name System (DNS) record that points to
+the wrong mail host for a certain domain. This incorrect DNS information causes
+Exchange Server to connect to the wrong mail host when you try to send mail to a
+recipient in another domain, which generates the error message in the "Symptoms"
+section of this article.
+
+This problem may also be caused by the incorrect configuration of an "echo
+firewall." The echo firewall is an advanced device that verifies every command
+that is sent to the Exchange Server computer. This type of firewall cannot be a
+Network Address Translation (NAT) or packet-filter device. If you incorrectly
+configure this firewall so that it does not accept mail from a domain that it
+needs to accept mail from, the error message in the "Symptoms" section of this
+article may also be displayed. The mail never resides on the firewall, but
+passes through it.
+
+RESOLUTION
+==========
+
+Use the NSLookup utility to make sure that the MX and A records of the Exchange
+Server domain on the Internet are correct.
+
+If the problem is related to the incorrect configuration of an echo firewall,
+then correct the configuration of the firewall.
+
+MORE INFORMATION
+================
+
+The error message in the "Symptoms" section of this article is closely related
+to the following Exchange Server generated error message:
+
+  550 Relaying is prohibited
+
+The message route of this topology is:
+
+  Sending Exchange Server ----- Internet ------ Firewall ----- Mailhost
+
+The SMTP conversation of this problem may look like the following log:
+
+  
+
+  A connection to 10.1.1.25 was established.
+
+  &lt;&lt;&lt; IO: |220 firewall.expedia.com Generic SMTP handler
+
+  &lt;&lt;&lt; 220 firewall.expedia.com Generic SMTP handler
+
+  &gt;&gt;&gt; EHLO ExchangeSending.microsoft.com
+
+  &lt;&lt;&lt; IO: |500 Command unrecognized
+
+  &lt;&lt;&lt; 500 Command unrecognized
+
+  &gt;&gt;&gt; HELO ExchangeSending.microsoft.com
+
+  &lt;&lt;&lt; IO: |250 firewall.expedia.com talking to
+  mailhost.expedia.com [157.5.1.4])
+
+  &lt;&lt;&lt; 250 firewall.expedia.com talking to mailhost.expedia.com ([157.5.1.4])
+
+  &gt;&gt;&gt; MAIL FROM: &lt;bob@microsoft.com&gt;
+
+  &lt;&lt;&lt; IO: |250 &lt;bob@microsoft.com&gt;: Sender Ok
+
+  &lt;&lt;&lt; 250 &lt;bob@microsoft.com&gt;: Sender Ok
+
+  &gt;&gt;&gt; RCPT TO:&lt;vincent@expedia.com&gt;
+
+  &lt;&lt;&lt; IO: |550 Domain invalid
+
+  &lt;&lt;&lt; 550 Domain invalid
+
+  &gt;&gt;&gt; QUIT
+
+  &lt;&lt;&lt; IO: |221 firewall.microsoft.com closing connection. Goodbye!
+
+Additional query words: 4031 3010 Invalid Raptor Secure Gateway
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

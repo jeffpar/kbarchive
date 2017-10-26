@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158622: BUG: Cursor Library Fails to Close Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158622: BUG: Cursor Library Fails to Close Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158622/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158622/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158622/","publisher":null,"image":null,"headline":"Q158622: BUG: Cursor Library Fails to Close Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158622-bug-cursor-library-fails-to-close-buffer">Q158622: BUG: Cursor Library Fails to Close Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158622
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.5
+Operating System(s): 
+Keyword(s): kbSDKODBC kbBug kbISS
+Last Modified: 27-JUL-2001
+
+2.50
+WINDOWS
+kbusage kbbug2.50 kbother
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC SDK version 2.5 
+-------------------------------------------------------------------------------
+
+BUG #: 4317 (ODBC3.0 SDK)
+
+SYMPTOMS
+========
+
+Under certain situations, multithreaded applications using the ODBC Cursor
+Library generate the following error message:
+
+  SQLFreeStmt:
+  szSqlState = S1000
+  pfNativeError = 0
+  szErrorMsg = [Microsoft][ODBC Cursor Library]
+  General error: Unable to close or remove file buffer.
+
+Applications using MFC database classes with snapshots use the ODBC Cursor
+Library, so they may also generate this error message.
+
+WORKAROUND
+==========
+
+If you are using the ODBC API, change the connection option to use driver
+cursors, such as SQLSetConnectOption( .. SQL_ODBC_CURSORS, SQL_CUR_USE_DRIVER).
+Use Dynasets when using MFC Database Classes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft ODBC SDK 2.5. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sequence outlines the scenario:
+
+1. The primary thread connects to the ODBC driver using the ODBC Cursor Library.
+
+2. The primary thread runs queries and generates result sets.
+
+3. The primary thread creates a thread that launches processes (and need not use
+  any ODBC calls) with the CreateProcess() API, with the bInheritHandles
+  parameter set to TRUE.
+
+4. When the primary thread tries to close the result set by issuing
+  SQLFreeStmt() SQL_CLOSE, the error message noted above may be generated.
+
+For more information on the CreateProcess() API, refer to the Win 32 SDK
+documentation.
+
+
+Additional query words: 2.50 VC
+
+======================================================================
+Keywords          : kbSDKODBC kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbSDKSearch kbSDKODBCSearch kbSDKODBC250
+Version           : :2.5
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

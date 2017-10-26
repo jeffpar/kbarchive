@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106567/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106567/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106567/","publisher":null,"image":null,"headline":"Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106567-bug-runqq-generates-dx1420-for-ms-dos-extended-tools">Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106567
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+RUNQQ generates the following error message when it invokes any executable that
+requires the MS-DOS extended utility shipped with Microsoft language products:
+
+  DOSXMSF : fatal error DX1420: cannot load program : invalid or corrupted .EXE
+  file
+
+For example, RUNQQ cannot execute the MS-DOS extended utilities such as NMAKE,
+FL32, and LINK32, that are shipped with Microsoft FORTRAN PowerStation for
+MS-DOS, version 1.0 and 1.0a.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation for MS-DOS,
+version 1.0 and 1.0a.
+
+This is not a problem with FORTRAN PowerStation 32.
+
+MORE INFORMATION
+================
+
+The following sample program generates DX1420 when RUNQQ executes the MS-DOS
+extended utility FL32.EXE. RUNQQ does not cause any problems when it spawns
+16-bit programs and utilities.
+
+Sample Code
+-----------
+
+  C No compiler options required
+         include 'flib.fi'
+         include 'flib.fd'
+         i = runqq('fl32',' ')
+         print '(A,I3)',' Return Code:', i
+         end
+
+The following output is produced when the above program is executed:
+
+  DOSXMSF : fatal error DX1420: cannot load program : invalid or corrupted .EXE
+  file
+  Additional info: "C:\F32\BIN\fl32.exe"
+  Return Code: 11
+
+Additional query words: nofpsnt 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

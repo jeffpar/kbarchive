@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115390: LAN Manager Upgrade Release Notes - README.TXT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115390: LAN Manager Upgrade Release Notes - README.TXT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115390/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115390/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115390/","publisher":null,"image":null,"headline":"Q115390: LAN Manager Upgrade Release Notes - README.TXT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115390-lan-manager-upgrade-release-notes---readmetxt">Q115390: LAN Manager Upgrade Release Notes - README.TXT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115390
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 05-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the README.TXT file that ships with
+Windows NT Advance Server upgrade tools.
+
+MORE INFORMATION
+================
+
+**********************README.TXT**********************
+
+Thank you for purchasing the Microsoft Windows NT Advanced Server 3.1 Upgrade for
+Microsoft LAN Manager. To ensure the success of your upgrade, this document
+includes information not available in the Upgrade Guide. Additional information
+on Windows NT/LAN Manager interoperation is available in the file INTEROP.TXT.
+
+For information on the Windows NT Advanced Server 3.1 Update, see the file
+UPDATE.TXT located on the upgrade installation disk for x86-based computers.
+
+Contents:
+---------
+
+1.0 Removing Previous Versions of the Upgrade
+2.0 General Upgrade Notes
+2.1 Set Srvhidden Parameter to No Before Upgrading
+2.2 Home Directories That Are UNC Names
+2.3 Synchronizing Accounts Before Upgrading
+2.4 Running Acllist on Drives with Large Numbers of Files
+2.5 Using Hcopy or Xcopy to Restore Files
+2.6 Upgrading File Replication Settings
+2.7 Use Convert Utility Included With Windows NT
+2.8 Using Portuas With the /U Option
+2.9 Account Expiration Date Set Incorrectly
+2.10 Userconv Not Supported on Workstations
+2.11 Aclconv Prompts for File Verification if Run After Userconv
+2.12 Aclconv User Account Mapping
+2.13 Sfmconv Admin Account Mapping
+2.14 NBF (NetBEUI) Timeout Parameters
+2.15 Notes on Windows NT Backup
+2.16 Upgrading UPS Command File Setting 3.0 Post Upgrade Issues
+3.1 Checking Permissions for Replication Directories
+3.2 Synchronizing Domains After Upgrading
+3.3 Checking for Duplicate Server Accounts
+3.4 Re-establishing Audit Settings
+4.0 Localization Notes
+4.1 Code Page Support
+4.2 Windows NT Advanced Server Upgrade Manager Fails to Restart After Converting
+Partitions
+4.3 AT Commands Containing "t" Variable
+5.0 Troubleshooting
+5.1 Sfmconv Error: Unable to Locate DLL
+5.2 Restenv Fails With Error 2
+5.3 Sfmconv Fails to Convert Macintosh Volumes
+5.4 Sfmconv Fails With Error 2, Can't Find File
+5.5 Aclcomp Erroneously Reports Files Not Found
+5.6 Problems With Account Replication in a Mixed Domain
+5.7 Error 1219 and Failure to Log On
+5.8 Acllist Causes General Protection Fault
+5.9 Hcopy Generates Error 2
+6.0 Reporting Problems
+
+1.0  Removing Previous Versions
+-------------------------------
+
+If you have installed a prerelease version of the upgrade product, you should
+delete it before installing this version. Move to the UPGRADE directory and
+delete all files.
+
+In addition, remove *.ACL files from the directory &lt;LANROOT&gt;\ACCOUNTS. This
+ensures that the Windows NT Advanced Server Upgrade Manager uses the correct
+*.ACL files to assign file permissions.
+
+2.0 General Upgrade Issues
+--------------------------
+
+2.1  Set Svrhidden to No Before Upgrading:
+
+Before upgrading a server, make sure the srvhidden parameter in LANMAN.INI is set
+to no. If svrhidden is yes, the LAN Manager Upgrade Manager cannot correctly
+verify the synchronization state of domain servers, as described in item 2.3. If
+svrhidden is yes, change it to no and then stop and restart the server service.
+
+2.2  Home Directories That Are UNC Names:
+
+LAN Manager supports UNC paths for user home directories (e.g.,
+TEST\LAN\USERS\FK) while Windows NT requires logical path names (K:\USERS\FK).
+Because the upgrade does not convert UNC paths to logical paths, users with UNC
+path home directories may be unable to log on after upgrading to Windows NT
+Advanced Server. To give these users full access, change their home directories
+to a logical path names before or after upgrading. For the latest status on this
+problem, contact Microsoft Support Services.
+
+2.3  Synchronizing Accounts Prior to Upgrading:
+
+Upgrading when user accounts are not synchronized can result in creation of a
+NETACC.BKP file that contains incorrect information. To prevent this, the LAN
+Manager Upgrade Manager automatically checks for synchronization, as follows:
+
+a) For LAN Manager primary domain controllers, the LAN Manager Upgrade Manager
+checks to see that user accounts on backup domain controllers and member servers
+are synchronized with the primary domain controller. If accounts are not
+synchronized, the Upgrade Manager starts synchronization and then rechecks
+status once a minute for 10 minutes. If ynchronization is not complete after 10
+minutes, the Upgrade Manager offers the option of exiting or stopping the Net
+Logon service and continuing the upgrade.
+
+b) If you run the LAN Manager Upgrade Manager on a member or backup domain
+controller and the primary domain controller is not already a Windows NT
+Advanced Server, the Upgrade Manager verifies that the local UAS is synchronized
+with the primary domain controller. If not, it initiates synchronization as
+described in the previous paragraph.
+
+c) If you run the LAN Manager Upgrade Manager on a backup domain controller or
+member server and the domain controller is a Windows NT Advanced Server,
+synchronization is not checked.
+
+The LAN Manager Upgrade Manager only checks for synchronization on servers that
+are running LAN Manager version 2.1 and above. Note that if the Net Logon
+service is stopped on one of the servers in the domain, the Upgrade Manager will
+report an error during its synchronization attempt and then continue with the
+upgrade (if Net Logon is not running on the specific machine being upgraded,
+error 2453 is shown).
+
+2.4  Running Acllist on Drives with Large Numbers of Files:
+
+Acllist can cause excessive paging on disks containing large numbers of files
+and/or directories. For example, on a LAN Manager server with 16 MB, swapping
+activity occurs if a combination of more than 29,000 files and directories
+exist. To avoid this problem, run acllist specifying one or more root-level
+subdirectories, instead of a drive. For example, type "acllist c:\programs
+c:\projects /a" to collect file information for the PROGRAMS and PROJECTS
+directory trees and place it in a single ACLLIST.DAT file. (/a appends PROJECT
+directory information to the ACLLIST.DAT.) Note that this acllist option is not
+documented in the Upgrade Guide and is not available from the LAN Manager
+Upgrade Manager.
+
+2.5  Using Hcopy or Xcopy to Restore Files:
+
+The hcopy utility included with the upgrade can be used to back up files to
+another LAN Manager server and then to restore files under Windows NT Advanced
+Server. Using hcopy is important if you want to preserve hidden files and
+extended file attributes (extended attributes are required to upgrade Macintosh
+volumes). Hcopy is run from a LAN Manager server using the following options:
+
+  /f  - ensure destination partition supports extended attributes
+  /e - copy empty directories
+  /v - verify transfer
+  /s - copy subdirectories
+
+The Windows NT xcopy command can also be used to restore files. (Xcopy
+automatically preserves extended attributes.) Use the following options to
+restore files using xcopy:
+
+  /e - copy subdirectories, including empty ones
+  /f - display source and destination filenames while copying
+  /h - copy files with hidden and system attributes
+  /k - copy attributes (read-only, archive, etc.)
+
+Note that after using Hcopy to transfer directories to a clone, the aclcomp
+utility reports a mismatch in directory creation time. This reflects the
+difference between actual directory creation time under LAN Manager and the time
+it was copied to the clone.
+
+2.6  Upgrading File Replication Settings:
+
+To retain LAN Manager file replication settings under Windows NT Advanced Server,
+you must create a special service account on the Windows NT Advanced Server
+Domain Controller (DC).
+
+If the Windows NT Advanced Server (to be upgraded) is aware of this service
+account, the restenv utility will restore file replication. Otherwise, file
+replication configuration is not preserved.
+
+To create a service account, log onto an account with Administrative privileges.
+If this is the first server to be upgraded with file replication, perform steps
+1 through 8 on the Domain Controller. On the remaining servers in the domain,
+complete steps 4 through 8. Perform these steps prior to running the Windows NT
+Advanced Server Upgrade Manager on the server you are upgrading.
+
+1. Run the User Manager from the Administrative Tools group on the Server
+  designated as the Domain Controller (DC).
+
+2. Create a new user account for replication (name this account using the 'Logon
+  =' parameter located in the LANMAN.INI file). If a password is desired, use
+  the 'Password = ' parameter. Remove the check from the "User must change
+  password at next logon" check box. Choose Add, then Close.
+
+3. Choose Exit. Then close User Manager.
+
+4. Run the Control Panel and select Services.
+
+5. Choose the Directory Replicator service and choose Startup. Change the
+  Startup Type from Manual to Automatic.
+
+6. In the 'Log On As' control, choose 'This Account'. Then choose Add User.
+  Select the Domain Service account created in step 2 above and choose Add and
+  then OK.
+
+7. Type the password for the replication account and choose OK. (Note that this
+  is the same password specified in Step 2.) Control Panel responds with a
+  message such as "The account DOMAIN\REPL has been granted the Log On As A
+  Service right and added to the Replicator local group."
+
+8. Choose OK to dismiss this message. Choose Close Services.
+
+Restenv will automatically start Directory Replication Services. If you have
+problems with file replication, refer to item 4 in the file INTEROP.TXT .
+
+2.7 Use Convert Utility Included With Windows NT Advanced Server The Upgrade
+Guide is incorrect in stating that CONVERT.EXE is included on the upgrade disk.
+The Windows NT Advanced Server Upgrade Manager converts partitions using the
+convert utility included with the operating system.
+
+2.8  Using Portuas with the /U Option:
+
+By default, running portuas adds all LAN Manager groups and users listed in a
+specified NETACC.BKP file to an existing Windows NT Advanced Server security
+database. To add a single user instead of the entire UAS, you can use portuas
+with the /u option. Note, however, that in addition to porting the specified
+user, portuas transfers all LAN Manager group names to Windows NT Advanced
+Server. For example, typing "portuas netacc.bkp /u johnh" results in the
+following:
+
+a) All groups listed in NETACC.BKP are added to the Windows NT security
+database.
+
+b) The user "johnh" is added with his group membership preserved.
+
+c) If the groups or the user "johnh" already exist, portuas overwrites previous
+information, which in the case of groups is a remark entry.
+
+2.9  Account Expiration Date Set Incorrectly:
+
+Portuas sets all user account expiration dates to be 24 hours earlier than their
+original LAN Manager settings.
+
+2.10 Userconv Not Supported on Workstations:
+
+It is not possible to map user accounts by running userconv on a Windows NT
+Workstation. Userconv runs only on Windows NT Advanced Servers.
+
+2.11 Aclconv Prompts for File Verification if Run After Userconv By default, the
+userconv utility creates a file called ACLWORK.DAT for use by aclconv. If
+aclconv detects this file, it prompts the user to verify use of the file to map
+permissions.
+
+This verification reduces the likelihood that alconv uses the wrong file to map
+permissions. For example, if you run portuas, instead of userconv, it is not
+appropriate for aclconv to use ACLWORK.DAT. If ACLWORK.DAT is present from a
+previous conversion attempt, aclconv cannot automatically determine if it is
+valid.
+
+2.12 Aclconv User Account Mapping:
+
+The Upgrade Guide incorrectly states that Aclconv maps the LAN Manager ADMIN
+group to the Windows NT Advanced Server ADMINISTRATOR group. The correct mapping
+is as follows:
+
+  LAN Manager Group     Windows NT Group
+  -----------------    -----------------
+  USERS               USERS
+  GUESTS               GUESTS
+  ADMINS               ADMINISTRATORS
+  ADMIN               ADMIN
+
+2.13 Sfmconv Admin Account Mapping:
+
+If an Admin account exists under LAN Manager, portuas creates a new account
+called "Admin" under Windows NT. Sfmconv, however, maps all Admin privileges to
+the "Administrator account." This does effect normal operation.
+
+2.14 NBF (NetBEUI) Timeout Settings:
+
+Under Windows NT Advanced Server, the following NetBEUI timeout parameters have a
+default value of 5,000,000 (units are in 100 nanoseconds): GeneralTimeout,
+AddNameQueryTimeout, and NameQueryTimeout. Appendix B of the Upgrade Guide
+incorrectly gives their default value as 500,000.
+
+2.15 Windows NT Backup Issues:
+
+When using the Windows NT Backup program supplied with the upgrade, the following
+may occur:
+
+a) Windows NT Backup may have a problem restoring files from a Sytos Plus tape if
+the file is in a backup session that spans two Sytos Plus tapes and the file
+itself is entirely on the second tape. If this occurs, you can restore the file
+by rerunning backup after setting the following Windows NT Registry key to 0:
+HKEY_CURRENT_USER \Software\Microsoft\Ntbackup\Backup Engine\Use fast file
+restore. After restoring the file, reset the key to 1.
+
+b)When restoring or cataloging a Sytos Plus tape under Windows NT, you get the
+error "Fatal tape translation error on Tape drive 1" because the backup error
+correction flag value is incorrect in the Registry. To correct this problem,
+edit the following registry key:
+CURRENT_USER\SOFTWARE\Microsoft\Ntbackup\Translators \Sytos Plus ECC flag. This
+value can be 0 for OFF, 1 for ON, or 2 for AUTO. Values should be set
+accordingly:
+
+     4mm Dat    0        1/4 in. 525    0
+     8mm Dat    0        1/4 in. 150    1
+
+Note that if you have previously run the version of Windows NT Backup included
+with Windows NT, delete the Windows NT Backup entries in the Registry prior to
+running the upgrade version of Windows NT Backup. Otherwise, the ECC flag will
+not appear.
+
+2.16 Upgrading UPS Command File Setting:
+
+LAN Manager and Windows NT Advanced Server differ in the specification of the UPS
+Shutdown command file. If the Windows NT Advanced Server UPS service issues a
+warning that the UPS command file setting is incorrect, ensure that the command
+file is specified as a filename only, with no preceding path. The exact wording
+of the warning is "There is a problem with a configuration of user specified
+shut down command file. The UPS service started anyway." The event log will
+contain a similar entry.
+
+3.0 Post-Upgrade Issues
+-----------------------
+
+This section discusses post-upgrade steps you can take to ensure that upgraded
+servers and domains are fully functional.
+
+3.1 Checking Permissions for Replication/Logon Script Directories
+
+Make sure that permissions for logon scripts and replication directories are set
+so that the appropriate users have access to these directories.
+
+3.2 Synchronizing a Domain After Upgrading:
+
+After upgrading, logon scripts will be unavailable to users until user account
+replication occurs. To force replication after upgrading:
+
+1) Select the Windows NT Advanced Server domain controller from the list in the
+Server Manager window.
+
+2) From the Computer menu, choose Synchronize Entire Domain.
+
+3.3  Checking for Duplicate Server Accounts:
+
+If duplicate server accounts exist in different domains, replication and trust
+relationships may function incorrectly. This situation can also cause the Net
+Logon service to fail in a LAN Manager domain.
+
+The following circumstances can result in the creation of duplicate accounts:
+
+a) Upgrading a LAN Manager PDC to a Windows NT Advanced Server clone and leaving
+the original LAN Manager domain intact. In this scenario, portuas creates
+computer accounts on the clone for each of the LAN Manager servers in the
+original Servers group. Thus, server accounts exist in both domains. Typically,
+this situation prevents LAN Manager users from logging on.
+
+b) Using Server Manager to create an account for a computer that already exists
+in another domain. For example, if you add the computer account \\FRISBEE to a
+Windows NT domain controller, and \\FRISBEE already exists in another domain,
+you will have problems setting up a trust relationship between the two domains.
+
+To rectify this problem, use User Manager for Domains to delete accounts for LAN
+Manager server(s) that exist in another domain.
+
+3.4 Re-establishing Audit Settings:
+
+Audit settings are not ported as part of the upgrade. To restore these settings
+under Windows NT, manually configure audit parameters for each resource
+previously audited under LAN Manager. Then, specify "Everyone". To set up
+auditing, choose Auditing from the Security menu in File Manager.
+
+Note that if auditing is enabled for LAN Manager, the aclcomp utility will note
+which LAN Manager files and directories were audited in the file ACLCOMP.LOG.
+
+4.0  Localization Notes
+-----------------------
+
+The upgrade product supports upgrading from English to another native
+language-for example, from an English language version of OS/2 to a French
+language version of Windows NT Advanced Server. It also supports upgrading to
+the same native language, such as Canadian French to Canadian French.
+
+NOTE: Using Sytos Plus to back up data under one language version and Windows NT
+Backup to restore the data under another language version is not presently
+supported.
+
+4.1 Code Page Support:
+
+To detect a change from one language version to another, the Windows NT Upgrade
+Manager compares OS/2 code page information with the OEM code page under Windows
+NT Advanced Server. Code pages determine the character correspondence tables
+used to set up foreign language versions of software. For purposes of the
+upgrade, code pages indicate how a utility should map various extended
+characters that can appear in usernames, account descriptions, and so on.
+
+If code pages differ, the Upgrade Manager modifies the Upgrade Tool Schedule so
+that the command lines of various upgrade utilities include a /codepage option
+(for example, portuas /codepage:&lt;OS/2 code page number&gt;).
+
+NOTE: The /codepage option is only necessary if changing languages is part of the
+upgrade.
+
+The exact steps used to detect code page changes follow.
+
+1) The backenv utility determines LAN Manager code page information by:
+
+  a) Checking CONFIG.SYS.
+  b) Calling the DosGetCtryInfo() API
+  c) Using the default code page for the current country code (from
+     CONFIG.SYS)
+
+2) If a code page is located, backenv writes the information to the LMBAKENV.DAT
+and ADVISORY.TXT files. If no code page is found, nothing is written.
+
+3) Next, the Windows NT Advanced Server Upgrade Manager reads the code page from
+LMBAKENV.DAT. If it differs from the existing Windows NT Advanced Server code
+page, the Upgrade Manager edits the Express Upgrade Tool Schedule by appending a
+"/codepage:&lt;code page number&gt;" option to the command line for the
+following utilities: restenv, portuas, userconv, aclconv, sfmconv, and aclcomp.
+If no code page exists, the OEM code page is assumed to be valid.
+
+Note that the Custom Upgrade Schedule always includes a /codepage:### option for
+restenv, portuas, userconv, aclconv, sfmconv, and aclcomp. Delete this option if
+you are not changing language versions. If you are creating a Custom Upgrade
+schedule and also changing language versions:
+
+1) Check the ADVISORY.TXT for OS/2 code page information.
+
+2) Specify this information for each utility you run under Windows NT Advanced
+Server. For example, if the code page is 863 ( for Canadian French language
+support), the command line for restenv should be "restenv /codepage:863",
+instead of "restenv /codepage:###".
+
+These procedures also apply if you run restenv, portuas, userconv, aclconv,
+sfmconv, and aclcomp from the command line AND are changing language versions.
+
+4.2 If Windows NT Advanced Server Upgrade Manager Fails to Restart After
+Converting Partitions
+
+After converting partitions to NTFS, the Windows NT Upgrade Manager schedules a
+reboot and then places itself in the Startup Group. This guarantees that the
+upgrade will continue automatically after the reboot.
+
+For foreign language versions of Windows NT Advanced Server, the Upgrade Manager
+uses the native translation for "Startup group". If the Upgrade Manager cannot
+be placed in the default "Startup group" for a foreign language version, then a
+group titled "Startup" is created containing an icon for the Upgrade Manager. If
+a user double-clicks on this icon, the Upgrade Manager will restart and continue
+with the upgrade.
+
+4.3 AT Commands Containing "t" Variable:
+
+Running the backat utility creates a file called RESTAT.CMD that contains AT
+commands. If this file contains commands that use the variable "t" (e.g., at
+12:00pm /every:t "dir"), the commands will not port correctly to localized
+versions of Windows NT Advanced Server.
+
+5.0  Troubleshooting
+--------------------
+
+5.1 Sfmconv Error: Unable to Locate DLL:
+
+The following error message under Windows NT Advanced Server typically indicates
+that Services for Macintosh has not been installed:
+
+  SFMCONV.EXE - Unable to Locate DLL. The dynamic link library SFMAPI.dll
+  could not be found in the specified path.
+
+Install Services for Macintosh and rerun sfmconv.
+
+5.2  Restenv Fails With Error 2:
+
+If various extended characters appear in LAN Manager directory names, uses, or
+shares, the uses and shares may not upgrade successfully. Successful porting
+depends on whether the Windows NT Advanced Server code page supports an
+uppercase version of the extended characters in question.(See item 4.0 for more
+information on code pages.)
+
+If restenv encounters an unsupported extended character, it displays "Error 2"
+and skips the respective share or directory name.
+
+5.3 Sfmconv Fails to Convert Macintosh Volumes
+
+(Error 3)
+
+If a LAN Manager Macintosh volume uses a directory name with an unsupported
+extended character, Sfmconv skips the volume during conversion and generates an
+entry in SFMCONV.LOG similar to the following:
+
+  error: open error on G:\AIOSHARE\~AFP\VOLINFO.AFP,
+  error=3 The system cannot find the path specified.
+
+where the directory name AIOSHARE contains unsupported characters.
+
+If this error occurs, check unconverted volumes for directory names with any of
+the unsupported characters listed in item 5.3. To convert the volumes, remove
+these characters prior to running Sfmconv.
+
+Note that, in this case, Sfmconv successfully converts non-offending volumes.
+
+5.4  Sfmconv Fails With Error 2, Can't Find File:
+
+Files or folders with names ending in a period or a space character cause the
+error "Can't Find File" during sfmconv execution. These files are converted, but
+the access permissions present on the file or folder may be more than they
+should be. In addition, the Macintosh volume is not mounted. To correct this
+problem, view permissions using File Manager, revoke those that should not be
+present, and add the Macintosh volume.
+
+5.5  Aclcomp Erroneously Reports Files Not Found:
+
+When upgrading partitions (particularly Macintosh volumes) with file names
+containing certain extended characters, aclcomp may incorrectly report that some
+files could not be found.
+
+In addition, the following specific error is not important because the file EA
+DATA.SF is normally deleted after conversion:
+
+  Error: the file E:\EA DATA. SF could not be found.
+
+5.6 Problems With User Account Replication in a Mixed Domain
+
+If you experience user account replication problems in a Windows NT Advanced
+Server domain that contains LAN Manager servers, consider the following
+troubleshooting steps:
+
+1) Does your security database contain usernames with extended characters such as
+[ASCII 138], [ASCII 162], and so on? Usernames containing these characters can
+cause problems with replication (see item 5.3). Try deleting or changing these
+usernames.
+
+2) Try rebooting LAN Manager servers.
+
+3) Try changing the role of LAN Manager backup controllers to standalone and
+then, back to backup controllers.
+
+5.7  Error 1219 and Failure to Log On:
+
+The following error message typically indicates that two passwords exist for you
+on the domain, one that is case- sensitive and one that is not: System error
+1219 has occurred. The credentials supplied conflict with an existing set of
+credentials.
+
+See the file INTEROP.TXT for more information on case-sensitive passwords.
+
+5.8  Acllist Causes General Protection Fault:
+
+This may occur if you do not pause the LAN Manager server and delete all sessions
+prior to upgrading. The LAN Manager Upgrade Manager prompts you to take these
+steps when it first starts up.
+
+5.9 Hcopy Generates Error 2 Copying Macintosh Files
+
+If hcopy generates "Error 2" in the process of copying Macintosh files, check for
+folders and file names with nonstandard names. For example, the folder name
+"option- a" will cause an error to occur. To avoid this problem, rename the
+offending file(s) or folder(s).
+
+6.0  Reporting Problems
+-----------------------
+
+If you encounter a system problem, please report it to Microsoft using
+BUGREP.TXT. This file is located in the \SUPPORT\SUPTOOLS directory on the
+CD-ROM as well as floppy Disk #4 of the floppy install disk set. Additionally,
+SAMPBUG.TXT is an example of a completed bug report.
+
+Additional query words: sfm prodlm2nt lan manager lanman
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

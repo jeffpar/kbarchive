@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253650/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253650/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253650/","publisher":null,"image":null,"headline":"Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253650-howto-use-the-sysinfo-activex-control-in-visual-foxpro">Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253650
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 03-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SysInfo control allows you to respond to certain system messages sent to all
+applications by the operating system. Your application can then adapt to changes
+in the operating system if necessary. This article demonstrates how to create a
+form in Visual FoxPro with the SysInfo control to respond to changes.
+
+MORE INFORMATION
+================
+
+To create the sample, follow these steps:
+
+1. Create a program called "mySystem.prg" (without the quotation marks) by using
+  the following code:
+
+  PUBLIC oform
+
+  oform=createOBJECT("frmSysInfo")
+  oform.Show
+  Read Events
+  RETURN
+
+  	**************************************************
+  *-- Form:         frmSysinfo 
+  *-- ParentClass:  form
+  *-- BaseClass:    form
+  *
+  DEFINE CLASS frmSysinfo AS form
+
+  	Top = -8
+  	Left = 16
+  	Height = 323
+  	Width = 271
+  	DoCreate = .T.
+  	Caption = "Your system Information"
+  	Name = "frmSysInfo"
+  	
+  	ADD OBJECT lblOSNameTag AS label WITH ;
+  		AutoSize = .T., ;
+  		Caption = "Operating System:", ;
+  		Height = 17, ;
+  		Left = 12, ;
+  		Top = 21, ;
+  		Width = 103, ;
+  		Name = "lblOSNameTag"
+
+  	ADD OBJECT lblOSBuildTag AS label WITH ;
+  		AutoSize = .T., ;
+  		Caption = "Build #:", ;
+  		Height = 17, ;
+  		Left = 72, ;
+  		Top = 69, ;
+  		Width = 43, ;
+  		Name = "lblOSBuildTag"
+
+  	ADD OBJECT lblOSVersionTag AS label WITH ;
+  		AutoSize = .T., ;
+  		Caption = "Version #:", ;
+  		Height = 17, ;
+  		Left = 58, ;
+  		Top = 45, ;
+  		Width = 57, ;
+  		Name = "lblOSVersionTag"
+
+  	ADD OBJECT lblversion AS label WITH ;
+  		AutoSize = .T., ;
+  		FontBold = .T., ;
+  		Caption = "", ;
+  		Height = 17, ;
+  		Left = 132, ;
+  		Top = 45, ;
+  		Width = 2, ;
+  		ForeColor = RGB(0,0,128), ;
+  		Name = "lblVersion"
+
+  	ADD OBJECT lblbuild AS label WITH ;
+  		AutoSize = .T., ;
+  		FontBold = .T., ;
+  		Caption = "", ;
+  		Height = 17, ;
+  		Left = 132, ;
+  		Top = 69, ;
+  		Width = 2, ;
+  		ForeColor = RGB(0,0,128), ;
+  		Name = "lblBuild"
+
+  	ADD OBJECT lblos AS label WITH ;
+  		AutoSize = .T., ;
+  		FontBold = .T., ;
+  		Caption = "", ;
+  		Height = 17, ;
+  		Left = 132, ;
+  		Top = 21, ;
+  		Width = 2, ;
+  		ForeColor = RGB(0,0,128), ;
+  		Name = "lblOs"
+
+  	ADD OBJECT lblSysCngTag AS label WITH ;
+  		AutoSize = .T., ;
+  		Caption = "System Change Log", ;
+  		Height = 17, ;
+  		Left = 12, ;
+  		Top = 96, ;
+  		Width = 114, ;
+  		Name = "lblSysCngTag"
+
+  	ADD OBJECT edtlog AS editbox WITH ;
+  		Height = 100, ;
+  		Left = 12, ;
+  		Top = 120, ;
+  		Width = 253, ;
+  		Name = "edtLog"
+
+  	ADD OBJECT edttime AS editbox WITH ;
+  		Height = 64, ;
+  		Left = 12, ;
+  		Top = 252, ;
+  		Width = 253, ;
+  		Name = "edtTime"
+
+  	ADD OBJECT lblSysTimeTag AS label WITH ;
+  		AutoSize = .T., ;
+  		Caption = "System Time Change Message", ;
+  		Height = 17, ;
+  		Left = 12, ;
+  		Top = 228, ;
+  		Width = 175, ;
+  		Name = "lblSysTimeTag"
+
+  	ADD OBJECT olesysinfo AS olecontrol WITH ;
+  		OleClass="SYSINFO.sysinfo.1", ;
+  		Top = 240, ;
+  		Left = 288, ;
+  		Height = 100, ;
+  		Width = 100, ;
+  		Visible = .F., ;
+  		Name = "oleSysinfo"
+
+           PROCEDURE Unload
+  		clear events
+  	ENDPROC
+
+  	PROCEDURE olesysinfo.SettingChanged
+  		*** ActiveX Control Event ***
+  		LPARAMETERS item
+
+  		If !Empty(Thisform.edtLog.value)
+  			Thisform.edtLog.value = Thisform.edtLog.value + ;
+  				chr(10) + chr(13) + "System Change - " + ttoc(DateTime()) + ;
+  				" " + Alltrim(str(Item))
+  		else
+  			Thisform.edtLog.value = "System Change - " + ttoc(DateTime()) + ;
+  				" " + Alltrim(str(Item))
+  		endif
+  	ENDPROC
+
+  	PROCEDURE olesysinfo.TimeChanged
+  		*** ActiveX Control Event ***
+  		Thisform.edtTime.Value = ""
+  		Thisform.edtTime.Value = "The System Time has been Changed!"
+  		Thisform.edtTime.Value = Thisform.edtTime.Value + chr(10)
+  		Thisform.edtTime.Value = Thisform.edtTime.Value + ;
+  			"Put any information in this event to warn of changes"
+  	ENDPROC
+
+  	PROCEDURE olesysinfo.Init
+  		Private vpOsPlatform
+  		Do Case
+  			case This.OsPlatform = 0
+  				vpOsPlatform = "Win32s"
+
+  			case This.OsPlatform = 1
+  				vpOsPlatform = "Windows 98"
+
+  			case This.OsPlatform = 2 and THis.OSVersion &gt;= 5
+  				vpOsPlatform = "Windows 2000"
+
+  			Otherwise
+  				vpOsPlatform = "Windows NT"
+  		EndCase
+
+  		Thisform.lblOs.Caption = vpOsPlatform
+  		Thisform.lblVersion.Caption = Alltrim(str(This.OSVersion))
+  		Thisform.lblBuild.Caption = Alltrim(str(This.OSBuild))
+  	ENDPROC
+
+  ENDDEFINE
+
+  *
+  *-- EndDefine: form1
+  **************************************************
+
+2. Save and run mySystem.prg.
+
+3. While the form is visible, adjust the size of your Windows taskbar. Note the
+  information displayed in the "System Change Log."
+
+4. Double-click on the clock in the taskbar. Change the System time. Note the
+  information entered in the box labeled "System Time Change Message."
+
+This can be very useful when your application needs to get specific information
+about the operating system that it is running on. In this article, the specific
+examples can be applied to the other events and properties in the SysInfo
+control.
+
+The SysInfo control can provide information on and detect the following system
+events:
+
+- Hardware Device Profile Changes
+- Plug and Play Hardware events (Device adding and removal)
+- System Wide Parameter Changes (that is, Keyboard default Language Changes)
+- System Color Changes
+- Display Property Changes
+- System Time Changes
+
+Other events can be monitored and acted upon using this control. Check the
+control's Help file for a complete list of the properties and events.
+
+REFERENCES
+==========
+
+For additional information regarding ActiveX Controls supported with Microsoft
+Visual FoxPro 6.0, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q191222 INFO: ActiveX Controls Supported by Visual FoxPro 6.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

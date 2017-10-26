@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146005: Optimizing Windows NT for Performance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146005: Optimizing Windows NT for Performance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146005/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146005/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146005/","publisher":null,"image":null,"headline":"Q146005: Optimizing Windows NT for Performance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146005-optimizing-windows-nt-for-performance">Q146005: Optimizing Windows NT for Performance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146005
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When starting troubleshooting performance problems or when trying to optimize
+Windows NT, while working with Windows NT Performance Monitor it isn't always
+easy to choose from the large number of performance monitor objects and
+counters.
+
+This article helps you pick the right counters and objects.
+
+Below you'll find performance checkpoints for the following possible
+bottlenecks:
+
+- Suspected bottleneck: memory
+
+- Suspected bottleneck: processor
+
+- Suspected bottleneck: physical disk
+
+- Suspected bottleneck: network
+
+- Suspected bottleneck: network components
+
+MORE INFORMATION
+================
+
+
+Suspected Bottleneck: Memory
+----------------------------
+
+Check:
+
+Object: Memory
+Counter: Pages /sec
+
+Object: Logical Disk (location of the PAGEFILE.SYS)
+Counter: Avg. Disk sec/Transfer
+
+If the product of these two counters (equals percentage of the disk access time
+used by paging) &gt; 10 % on a sustained basis, the system needs more memory.
+
+Check:
+
+Object: Memory
+Counter: Pages /sec
+
+If counter value is consistently &gt; 5 , suspect memory.
+
+Check:
+
+Object: Server
+Counter: Pool Nonpaged Failures
+
+The number of times allocations from nonpaged pool have failed. Indicates that
+the computer's physical memory is too small.
+
+Check:
+
+Object: Server
+Counter: Pool Paged Failures
+
+Pool Paged Failures indicate that either physical memory or a paging file is near
+capacity.
+
+Check:
+
+Object: Server
+Counter: Pool Nonpaged Peak
+
+The maximum number of bytes of nonpaged pool the server has had in use at any one
+point. Indicates how much physical memory the computer should have.
+
+Suspected Bottleneck: Processor
+-------------------------------
+
+Check:
+
+Object: Processor
+Counter: %Processor Time
+
+If this value is consistently high (&gt; 80%) and disk and network counter values
+are low, suspect the processor.
+
+Object: System
+Counter: %Processor Time (for multi processor systems)
+
+If this value is consistently high (&gt; 80%) and disk and network counter values
+are low, suspect the processor.
+
+Object: System
+Counter: Processor Queue Length
+
+A sustained processor queue length &gt; 2 , generally indicates a processor
+bottleneck.
+
+Object: Processor
+Counter: Interrupts/sec
+
+A dramatic increase in this counter value without a corresponding increase in
+system activity indicates a hardware problem.
+
+Object: Processes (_Total)
+Counter: %Processor Time
+
+If more than a couple of processes are contending for the majority of the
+processor time, then a faster processor or an additional processor should be
+considered.
+
+Suspected Bottleneck: Physical Disk
+-----------------------------------
+
+Check:
+
+Object: Physical Disk
+Counter: %Disk Time
+
+If this value is consistently high and disk queue length is greater than 2,
+suspect the disk.
+
+Object: Physical Disk
+Counter: Average Disk sec/Transfer
+
+A high value (values greater than 0.3 seconds) may mean that the disk controller
+is continually retrying the disk because of failures.
+
+Object: Physical Disk
+Counter: Disk Queue Length
+Counter: Average Disk sec/Transfer
+
+The Average Queue Time is the average amount of time for a disk transfer (either
+reads or writes) to complete. Use the following formula to find the average disk
+queue time:
+
+  Avg. Queue Time = Disk Queue Length x Avg. Disk sec/Transfer
+
+This information is a relative performance measurement and should be compared
+with other hard disk drivers in your system. Compute the figures for all logical
+disks in your system. The number of disk commands waiting in the queue is
+normally the factor that slows disk performance by increasing the average disk
+queue time.
+
+Object: Physical Disk
+Counter: Disk Bytes/sec
+
+A Disk Bytes/sec count lower than 20K may indicate that an application is
+accessing a disk inefficiently.
+
+Suspected Bottleneck: Network Components
+----------------------------------------
+
+Check:
+
+Object: Redirector
+Counter: Current commands
+
+If this number is greater than one per network adapter, the redirector may be a
+bottleneck in the system for one or more of the following reasons:
+
+- the server with which the redirector is communicating is slower than the
+redirector.
+- the network may be experiencing capacity problems.
+- the redirector is busier than the adapter can keep up with.
+
+If network capacity problems are identified, it may be necessary to subnet the
+network in an attempt to partition network traffic.
+
+Check:
+
+Object: Redirector
+Counter: Network Errors/sec
+
+If any network errors are logged, check the Event Log for more details.
+
+Check:
+
+Object: Redirector
+Counter: Reads Denieds/sec
+Counter: Writes Denieds/sec
+
+These values indicate if the remote servers are having problems with memory
+allocation.
+
+Check:
+
+Object: Server
+Counter: Work Item Shortage
+
+An increase in Work Item Shortage should cause a change in the registry value(s)
+InitialWorkItems and/or MaximumWorkItems (depending on when the outage
+occurred).
+
+Check:
+
+Object: Server
+Counter: Raw Reads Rejected/sec
+Counter: Raw Writes Rejected/sec
+
+Rejections indicates the exhaustion of RAW work items used when busy doing large
+file transfers. The increase of the registry value RawWorkItems can possibly
+solve this bottleneck.
+
+Suspected Bottleneck: Network
+-----------------------------
+
+Check:
+
+Object: Server
+Counter: Bytes Total/sec
+
+If the sum of Bytes Total/sec for all servers is roughly equal to the maximum
+transfer rates of your network, you may need to segment the network.
+
+
+Additional query words: prodnt 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinAdvServSearch
+Version           : WINDOWS:2000; winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

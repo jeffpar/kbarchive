@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125727: FIX: Text Truncated When Using Dynaset and RFX_Text() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125727: FIX: Text Truncated When Using Dynaset and RFX_Text()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125727/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125727/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125727/","publisher":null,"image":null,"headline":"Q125727: FIX: Text Truncated When Using Dynaset and RFX_Text()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125727-fix-text-truncated-when-using-dynaset-and-rfx_text">Q125727: FIX: Text Truncated When Using Dynaset and RFX_Text()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125727
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbDatabase kbMFC kbODBC kbVCkbbuglist kbfixlist
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When editing a record with a text field, the text gets truncated to the length
+of the previous value. For example, if a text field has the value "ABC" and an
+application attempts to change the value to "TEST," the result is "TES."
+
+This occurs when opening a CRecordset with CRecordset::dynaset as the first
+argument of CRecordset::Open() and using RFX_Text() to map the field to a
+CRecordset member variable.
+
+CAUSE
+=====
+
+The CFieldExchange::Default() function, located in \MSVC20\MFC\SRC\DBRFX.CPP,
+contains the following code:
+
+  case BindFieldForUpdate:
+     if (!m_prs-&gt;IsFieldFlagDirty(nField, m_nFieldType))
+     {
+       // If field is not dirty, set bound length to SQL_IGNORE
+       // for SQLSetPos updates
+       *plLength = SQL_IGNORE;
+     }
+     else if ((m_prs-&gt;m_nEditMode == CRecordset::addnew) &amp;&amp;
+             (!m_prs-&gt;IsFieldFlagNull(nField, m_nFieldType)))
+     {
+       // plLength always set to SQL_NULL_DATA in AddNew mode
+       *plLength = cbValue;
+     }
+     return;
+
+The second If statement shouldn't check for only CRecordset::addnew because this
+also applies to updates.
+
+RESOLUTION
+==========
+
+To work around this problem, perform these steps:
+
+1. In one of your header files, perhaps in your CRecordset's header file, create
+  the following function prototype:
+
+      void RFX_Text2(CFieldExchange* pFX, const char *szName,
+         CString&amp; value, int nMaxLength=255, int nColumnType=SQL_VARCHAR);
+
+2. In your CRecordset's .CPP file or elsewhere, add the RFX_Text2() definition
+  shown below:
+
+     ****
+     void RFX_Text2(CFieldExchange* pFX, const char *szName,
+                    CString&amp; value, int nMaxLength, int nColumnType)
+     {
+       ASSERT(AfxIsValidAddress(pFX, sizeof(CFieldExchange)));
+       ASSERT(AfxIsValidString(szName));
+       ASSERT(AfxIsValidAddress(&amp;value, sizeof(CString)));
+
+       if (pFX-&gt;m_nOperation==CFieldExchange::BindFieldForUpdate)
+       {
+         UINT nField;
+         if (!pFX-&gt;IsFieldType(&amp;nField))
+           return;
+
+      LONG* plLength = pFX-&gt;m_prs-&gt;GetFieldLength(pFX);
+
+      if (!pFX-&gt;m_prs-&gt;IsFieldFlagDirty(nField, pFX-&gt;m_nFieldType))
+      {
+        // If field is not dirty, set bound length to SQL_IGNORE
+        // for SQLSetPos updates
+        *plLength = SQL_IGNORE;
+      }
+      else if (!pFX-&gt;m_prs-&gt;IsFieldFlagNull(nField, pFX-&gt;m_nFieldType))
+      {
+        // plLength always set to SQL_NULL_DATA in AddNew mode
+        *plLength = value.GetLength();
+      }
+      return;
+       }
+
+       RFX_Text(pFX, szName,value, nMaxLength,nColumnType);
+     }
+
+     ****
+
+3. Modify the DoFieldExchange member function of your CRecordset class,
+  replacing calls to RFX_Text with calls to the RFX_Text2 function described
+  above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 2.1.
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

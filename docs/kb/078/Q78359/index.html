@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78359/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78359/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78359/","publisher":null,"image":null,"headline":"Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78359-how-to-install-raslan-manager-on-dual-720k-floppy-disks">Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78359
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2002
+
+SUMMARY
+=======
+
+This article discusses how to successfully load and start Remote Access Server
+(RAS) on a LAN Manager version 2.1 enhanced DOS workstation from two 720K floppy
+disks. This procedure is primarily intended for use with older laptop machines
+with dual 720K floppy disk drives and no hard drive. This configuration should
+also run successfully from a machine with a single floppy disk, although it will
+involve some disk swapping.
+
+This configuration requires that LAN Manager 2.1 and RAS be successfully
+installed on a DOS workstation before copying to dual 720K disks. This must be
+accomplished by installing an enhanced LAN Manager 2.1 DOS workstation and the
+DOS RAS service. Additionally, the RAS service on the workstation must be
+correctly configured for the modem on the machine with the 720K disk drives
+because the Setup program for RAS will not be included on these floppy disks.
+
+MORE INFORMATION
+================
+
+INSTALLATION INSTRUCTIONS
+-------------------------
+
+To begin the installation, format one 720K floppy disk as a system disk (FORMAT
+/S) and label it appropriately (for example, RAS Startup). Format a second
+floppy disk and label it appropriately (for example, RAS Work). The following
+discussion assumes that the LAN Manager enhanced workstation has been installed
+to the C:\LANMAN.DOS directory. If not, make the necessary substitution in the
+following discussions.
+
+The files will be copied from the appropriate LAN Manager directory on the hard
+disk to the same directory on the appropriate floppy disk. For example:
+
+  copy c:\lanman.dos\comdev.ini a:\lanman.dos\comdev.ini
+
+The format of the directory structure and associated files on the floppy disk
+drives is listed below. Copy the listed files from the appropriate directory on
+the hard disk drive to the same directory on the floppy disk drive. It is not
+necessary to copy the CONFIG.SYS and AUTOEXEC.BAT files from the hard disk drive
+because they will need to be created in a specific format. All unnecessary files
+have been removed. The main purpose of these floppy disks is to allow access to
+a network via RAS on a machine that does not have a high-density disk drive or a
+hard disk. There is sufficient space on each of the disks to add in necessary
+DOS commands and any other desired utilities disk space will allow.
+
+RAS Startup Disk (Disk 1):
+
+Directory of A:\
+
+A:\ 
+  COMMAND  COM
+  AUTOEXEC BAT
+  CONFIG   SYS
+A:\LANMAN.DOS\ 
+              PROTOCOL INI
+              MODEMS   INF
+              RASPHONE MSG
+              RASDIAL  MSG
+              RASHELP  MSG
+              COMDEV   INI
+              PHONE    INF
+              LMUSER   INI
+A:\LANMAN.DOS\NETPROG\ 
+                     LOAD     COM
+                     OSO001   MSG
+                     RASPHONE EXE
+A:\LANMAN.DOS\DRIVERS\ 
+A:\LANMAN.DOS\DRIVERS\PROTMAN\ 
+                             PRO      MSG
+                             PROTMAN  DOS
+                             PROTMAN  EXE
+A:\LANMAN.DOS\DRIVERS\PROTOCOL\ 
+A:\LANMAN.DOS\DRIVERS\PROTOCOL\ASYBEUI\ 
+                                      ASYBEUI  EXE
+A:\LANMAN.DOS\DRIVERS\ASYNC\ 
+                           ASYMAC   DOS
+A:\LANMAN.DOS\LOGS\ 
+                  MESSAGES LOG
+
+RAS Work Disk (Disk 2):
+
+The following files listed in the first column must be included on this disk. The
+second column lists the location of the file from the hard drive. The LANROOT
+directory is assumed to be C:\LANMAN.DOS; substitute as appropriate.
+
+B:\ 
+   LANMAN   INI        C:\LANMAN.DOS
+   ENCRYPT  EXE        C:\LANMAN.DOS\SERVICES
+   NETPOPUP EXE        C:\LANMAN.DOS\SERVICES
+   MSRV     EXE        C:\LANMAN.DOS\SERVICES
+   RASLOAD  BAT        C:\LANMAN.DOS\NETPROG
+   NETWKSTA EXE        C:\LANMAN.DOS\NETPROG
+   CHKNET   EXE        C:\LANMAN.DOS\NETPROG
+   MINSES   EXE        C:\LANMAN.DOS\NETPROG
+   VCOMMIOD EXE        C:\LANMAN.DOS\NETPROG
+   WANTSR   EXE        C:\LANMAN.DOS\NETPROG
+   NETBIND  COM        C:\LANMAN.DOS\NETPROG
+   NET      EXE        C:\LANMAN.DOS\NETPROG
+   NET      MSG        C:\LANMAN.DOS\NETPROG
+
+MODIFICATIONS TO SYSTEM FILES
+-----------------------------
+
+The CONFIG.SYS file, shown below, resides on disk 1 and is the minimum
+configuration required to run RAS and LAN Manager 2.1 from two 720K disks. Other
+devices can be added as space permits.
+
+  FILES=30
+  BUFFERS=10
+  LASTDRIVE=Z
+  SHELL=A:\COMMAND.COM /P /E:512
+  DEVICE=A:\LANMAN.DOS\DRIVERS\PROTMAN\PROTMAN.DOS /i:A:\LANMAN.DOS
+  DEVICE=A:\LANMAN.DOS\DRIVERS\ASYNC\ASYMAC.DOS
+
+Construct the AUTOEXEC.BAT file as follows. It also resides on the root of disk 1
+and represents the minimum configuration needed. Other features may be added.
+
+  @ECHO OFF
+  PATH A:\;B:\;A:\LANMAN.DOS\NETPROG;
+  PROMPT $P$G
+  SET COMSPEC=A:\COMMAND.COM
+  B:
+  NET START WORKSTATION
+  CALL RASLOAD
+  A:
+  RASPHONE
+  B:
+
+Edit the LANMAN.INI file on disk 2 as follows:
+
+1. In the [workstation] section, the lanroot entry should read:
+
+        lanroot = A:\LANMAN.DOS
+
+2. In the [services] section, specify the new location of the LAN Manager
+  services as follows:
+
+        chknet        = B:\chknet.exe
+        minses        = B:\minses.exe /n
+        workstation   = B:\netwksta.exe
+        messenger     = B:\msrv.exe
+        netpopup      = B:\netpopup.exe
+        encrypt       = B:\encrypt.exe
+
+NOTES
+-----
+
+There are several disadvantages of running this particular configuration. All
+invocations of RASPHONE must be done from drive A. All net commands (NET LOGON,
+NET USE, NET SEND, and so forth) must be done from drive B. If these commands
+are run from the incorrect drive, an error message similar to "unable to open
+message file xxxxx.msg" will be displayed. This is not a harmful error; it means
+only that it is necessary to switch to the root of the other floppy disk and
+retry the command.
+
+If any modification to the configuration of this setup is required (such as
+switching modem configurations), it will be necessary to modify a fully
+installed DOS LAN Manager enhanced workstation from a hard disk, and copy the
+modified files to the appropriate floppy disk.
+
+Additional query words: 2.10 2.10a 2.20 dialin laptop
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

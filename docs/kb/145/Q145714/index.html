@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145714: How to Establish Two 802.2 Connections To AS/400 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145714: How to Establish Two 802.2 Connections To AS/400" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145714/","publisher":null,"image":null,"headline":"Q145714: How to Establish Two 802.2 Connections To AS/400","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145714-how-to-establish-two-8022-connections-to-as400">Q145714: How to Establish Two 802.2 Connections To AS/400</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145714
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server can establish a second connection to the same AS/400 if the second
+APPC controller is set up as a non-APPN controller and the APPC device is set as
+non-APPN capable. This article describes how you can establish the second
+connection.
+
+MORE INFORMATION
+================
+
+To establish a second connection to the same AS/400, do the following:
+
+SNA Server Configuration
+------------------------
+
+1. Use SNA Server Setup to create a new link service with a different SAP than
+  the existing one. For additional information, please see Chapter 3 of the SNA
+  Server Administration Guide and the following article in the Microsoft
+  Knowledge Base:
+
+  Q107192 Multiple Connections to the Same Host Over 802.2
+
+2. Create a new connection for the link service created in step 1. To do this,
+  enter a valid Remote Network Address and a Local Node ID. Do NOT enter a
+  Network Name, Control Point Name, or Remote Node ID. For additional
+  information, please see Chapter 3 of the SNA Server Administration Guide.
+
+3. Create a new Remote LU for the new connection. To do this, disable automatic
+  partnering for the LU. Verify that the LU name matches the Control Point Name
+  defined on the AS/400. For additional information, please see Chapter 6 of
+  the SNA Server Administration Guide.
+
+4. Create a new Local LU. To do this, disable automatic partnering. Partner with
+  the Remote LU created in step 3 above. For additional information, please see
+  Chapter 6 of the SNA Server Administration Guide.
+
+AS/400 Configuration
+--------------------
+
+1. Create a new controller description. To do this, set all parameters as a
+  standard SNA Server controller, except for the following:
+
+  AS/400 Parameter      Value
+  ----------------      -----
+  Exchange Identifier   Local Node ID (set up in Step 2 of SNA Server
+                        Configuration above)
+  Remote Control Point  *ANY
+  Initial Connection    *ANS
+  LAN DSAP              SAP for new link service (set up in Step 1 of SNA
+                        Server Configuration above)
+  APPN-capable          *NO
+
+2. Create a new APPC device description. To do this, set all parameters as a
+  standard SNA Server controller, except for the following:
+
+  AS/400 Parameter      Value
+  ----------------      -----
+  Remote location       New Local LU Name (set up in Step 4 of SNA Server
+                        Configuration above)
+  Attached controller   Controller (set up in Step 1 of AS/400
+                        Configuration above)
+  APPN-capable          *NO
+
+3. Vary on both the SNA Server controller and the APPC device.
+
+4. Attempt to start the connection. If any one of the configurations above are
+  set up incorrectly, the connection will not be available.
+
+  NOTE: Since the connection is non-APPN capable, any APPN related functions are
+  ignored.
+
+For additional information on SNA Server and AS/400 communication over an 802.2
+network, please see the following article in the Microsoft Knowledge Base:
+
+  Q112158 Configuring SNA Server to Talk to AS/400 Over 802.2
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

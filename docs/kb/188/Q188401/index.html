@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188401/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188401/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188401/","publisher":null,"image":null,"headline":"Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188401-prb-access-cannot-importlink-table-if-index-contains-function">Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188401
+Product(s): Microsoft FoxPro
+Version(s): 2.5,3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbODBC kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbDSupport kbMDAC250
+Last Modified: 24-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Visual FoxPro table has an index tag that calls a User Defined Function or
+a FoxPro function like DELETED() or RECNO(), the table cannot be imported or
+linked from Microsoft Access.
+
+Microsoft Access does not seem to have a problem with string functions like
+SUBSTR(), LEFT(), RIGHT(), AT(), STRTRAN(), TRIM(), ALLTRIM(), or STUFF().
+
+NOTE: Under Microsoft Visual Basic version 5.0 and 6.0, using ODBC and connecting
+to a FoxPro table with an Index tag that calls a function causes an application
+error to occur.
+
+
+RESOLUTION
+==========
+
+Workarounds
+-----------
+
+There are two ways to work around this behavior:
+
+- Do not use an index tag that calls a function.
+
+  -or-
+
+- Create a local view in Visual FoxPro based on the table with the offending
+  index and link to the view instead.
+
+  To accomplish this, use the following steps:
+
+  a. From Visual FoxPro, create a new database container (DBC). This is not
+     really required, but is preferable if you wish to leave your existing DBC
+     unmodified, or if the table to which you want to link is a free table.
+     Open the DBC in the Database Designer.
+
+  b. Create a new Local View. The View Designer will open. When prompted for a
+     table, select the table to which you want to link.
+
+  c. In the View Designer, select the fields you want to link to in the Fields
+     tab.
+
+  d. This step is only required if you want the data to be updateable. Select
+     the Update Criteria tab in the View Designer. Select the key field under
+     the Key column, and select every field that you want to be updateable
+     under the Pencil column in the Field name list. Select the Send SQL
+     updates check box. If you leave the Send SQL updates check box is cleared,
+     the changes you make when you are linked to the view will not be saved
+     back to the table.
+
+  e. Save the view. The name you save it under will appear as the tablename in
+     the list when you connect through ODBC.
+
+  f. Close the View Designer and Database Designer.
+
+  g. To connect, make an ODBC Datasource that uses the DBC you created in step
+     1. The list of tables will include the view you saved in step 5. If you
+     created a view for each table in the customer's DBC (repeat steps 2-5 for
+     each table) then you could link to all of them.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run FoxPro, create a table and add two records using the following code:
+
+        CREATE TABLE Tbl1 (Fld1 c(4), Fld2 c(4))
+        INSERT INTO Tbl1 (Fld1,Fld2) VALUES ("one","two")
+        INSERT INTO Tbl1 (Fld1,Fld2) VALUES ("four","five")
+
+2. Create an index that calls a function with the following command:
+
+        INDEX ON DELETED() TAG dltd
+
+  -or-
+
+  Create a program, named Myudf.prg, with some code then create the following
+  Index tag:
+
+        INDEX ON myudf() TAG myfunc
+
+  -or-
+
+        INDEX ON RECNO() TAG rnum
+
+3. Close the table by issuing this command:
+
+        USE Tbl1
+
+4. Run Microsoft Access and create or open a database.
+
+5. From the File menu, choose Get External Data, and then select the Import or
+  Link Tables option.
+
+6. In the Files of Type box, of the Import or Link dialog box (depending on the
+  option selected in step 5), select ODBC Databases.
+
+7. In the Select Data Source dialog box, click the Machine Data Source tab.
+
+8. Double-click the Visual FoxPro Tables option and then click OK.
+
+9. From the Configure Connection dialog box, select Free Table Directory as the
+  database type, and then select the directory where you saved the table
+  created in step 1 (Tbl1). Next, click OK.
+
+10. When the Link Tables or Import dialog box opens (depending on the option
+  selected in step 5), select the table, Tbl1, and then click OK. At this
+  point, the following error message appears:
+
+  Invalid Field definition &lt;Function Name&gt; in definition of Index or
+  relationship.
+
+  Subsequently, Microsoft Access will not be able to import or create a link to
+  the table.
+
+NOTE: The same behavior occurs if the table is in a database container.
+
+Additional query words: kbdse
+
+======================================================================
+Keywords          : kbODBC kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbDSupport kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : :2.5,3.0,3.0b,5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

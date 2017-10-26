@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128522/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128522/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128522/","publisher":null,"image":null,"headline":"Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128522-replacing-carriage-return--line-feeds-with-other-characters">Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128522
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.6a,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to have a program process a file to replace
+carriage returns and line feeds with a double dollar sign. You can modify the
+code to use a character other than the double dollar sign by replacing the
+double dollar sign ASCII value (CHR(36)) with some other appropriate ASCII
+value. The code in this article also demonstrates how to use low level file
+functions.
+
+MORE INFORMATION
+================
+
+The following program takes two parameters:
+
+- The file that needs carriage returns and line feeds removed (file1).
+
+- The file name to write to (file2).
+
+Sample Code
+-----------
+
+  PARAMETER file1,file2
+  PRIVATE fhandle_in,fhandle_out,fisize,inchar
+
+  fhandle_in=FOPEN(file1,2)
+  IF (fhandle_in#-1)                 &amp;&amp; open read/write buffered
+     fhandle_out=FCREATE(file2)      &amp;&amp; default read/write
+     fisize=FSEEK(fhandle_in,0,2)    &amp;&amp; get the size of the file
+     =FSEEK(fhandle_in,0,0)          &amp;&amp; reposition pointer to beginning of
+                                     &amp;&amp; file
+     x=1
+     DO WHILE (x&lt;=fisize)            &amp;&amp; process the whole file
+        inchar=FREAD(fhandle_in,1)   &amp;&amp; read 1 byte at a time
+        IF ((inchar = CHR(13)) .OR. ;
+            (inchar = CHR(10)))
+            *** change the replacement character '$$'
+            *** by changing the CHR value below
+           =FWRITE(fhandle_out,CHR(36)) &amp;&amp; replace crlf with $$
+        ELSE
+           =FWRITE(fhandle_out,inchar)  &amp;&amp; write the character to file
+        ENDIF
+        x=x+1                           &amp;&amp; increment the variable
+     ENDDO
+     =FCLOSE(fhandle_in)                &amp;&amp; release the file handle to close
+                                        &amp;&amp; file1
+     =FCLOSE(fhandle_out)               &amp;&amp; release the file handle to close
+                                        &amp;&amp; file2
+     MODIFY FILE &amp;file2                 &amp;&amp; opens the target file for viewing
+  ELSE
+     RETURN .F.                         &amp;&amp; could not open the input file
+  ENDIF
+
+How to Use the Sample Code
+--------------------------
+
+To demonstrate the code example, copy it into a new program file, and save it as
+TEST.PRG. Then from the Command Window, type:
+
+     Do TEST.PRG with "C:\TEST.TXT", "C:\TEST1.TXT"
+
+NOTE: Please note that file names passed to a program as parameters must be
+enclosed by quotation marks.
+
+Here C:\TEST.TXT is the file that needs carriage returns and line feeds removed,
+and C:\TEST1.TXT is the name of the new file.
+
+Additional query words: VFoxWin FoxWin 3.00 2.60a
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

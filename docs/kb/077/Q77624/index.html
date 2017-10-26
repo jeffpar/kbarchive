@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77624: MS-DOS Shell Fails to Start | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77624: MS-DOS Shell Fails to Start" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77624/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77624/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77624/","publisher":null,"image":null,"headline":"Q77624: MS-DOS Shell Fails to Start","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77624-ms-dos-shell-fails-to-start">Q77624: MS-DOS Shell Fails to Start</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77624
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MS-DOS Shell won't start after you type "dosshell" (without the quotation marks)
+at the MS-DOS command prompt. Or, you cannot switch between another program and
+MS-DOS Shell.
+
+CAUSE
+=====
+
+This problem can be caused by any of the following:
+
+- Incorrect video files for a monochrome monitor
+
+- A conflict with memory-resident drivers or programs
+
+- Incorrect or corrupted MS-DOS Shell files
+
+Read the Workaround section of this article, and try the procedures that apply to
+your computer. If, after performing these steps, you still have problems with
+MS-DOS Shell, contact Microsoft Product Support Services.
+
+NOTE: If you are a network administrator and you have local computers running
+MS-DOS Shell files from a network DOS directory, contact Microsoft Product
+Support Services.
+
+WORKAROUND
+==========
+
+Incorrect Video Files for a Monochrome Monitor
+----------------------------------------------
+
+Sometimes Setup improperly identifies monochrome monitors and expands incorrect
+video files. If your computer has a monochrome monitor and you can't start
+MS-DOS Shell, expand the correct video files as follows:
+
+1. Delete the DOSSHELL.VID file. For example, if the file is in the DOS
+  subdirectory, type the following at the MS-DOS command prompt:
+
+  " del c:\dos\dosshell.vid " (without the quotation marks)
+
+2. Preserve the DOSSHELL.INI file by renaming it with a different extension,
+  such as .OLD or .BAK. For example, if this file is located in your DOS
+  subdirectory, type the following command at the MS-DOS command prompt:
+
+  " ren c:\dos\dosshell.ini c:\dos\dosshell.old " (without the quotation marks)
+
+3. Use the following syntax to expand and copy the new files to your DOS
+  directory:
+
+  expand [drive1:][path1]mono.in_ [drive2:][path2]dosshell.ini
+  expand [drive1:][path1]mono.gr_ [drive2:][path2]dosshell.grb
+
+  This syntax renames the files as they are expanded and copied.
+
+  The [drive1:][path1] parameter specifies the location of the compressed file
+  you want to expand. The [drive2:][path2] parameter specifies the location of
+  the expanded file. The MONO.IN_ and MONO.GR_ files are on Disk 3 (5.25-inch
+  disks) or Disk 2 (3.5-inch disks).
+
+  For example, if the MONO.IN_ file is on a disk in drive A, and you want to
+  expand the file to the DOS directory on drive C, type the following at the
+  MS-DOS command prompt:
+
+  " expand a:\mono.in_ c:\dos\dosshell.ini " (without the quotation marks)
+
+  If DOS Shell works now, you have solved the problem.
+
+Removing Memory-Resident Programs and Drivers
+---------------------------------------------
+
+MS-DOS Shell might not work properly if a memory-resident program or driver is
+running. If you are having problems with MS-DOS Shell, try starting your
+computer without running memory-resident programs and drivers.
+
+To start your computer without running memory-resident programs or drivers:
+
+1. Create a system disk by inserting a formatted disk into drive A and typing
+  the following:
+
+  " sys c: a: " (without the quotation marks)
+
+2. Make sure the system disk is in drive A and restart your computer by pressing
+  CTRL+ALT+DEL.
+
+3. To determine whether your CONFIG.SYS and AUTOEXEC.BAT files are causing
+  problems, type the following at the MS-DOS command prompt:
+
+  " c:\dos\dosshell " (without the quotation marks)
+
+  If MS-DOS Shell starts, one or both of these files are probably causing
+  problems. If MS-DOS Shell doesn't start, these files might not be causing
+  problems, in which case you should skip to the next procedure, "Incorrect or
+  Corrupt MS-DOS Shell Files."
+
+4. Remove the system disk from drive A and restart your computer by pressing
+  CTRL+ALT+DEL.
+
+5. To determine whether your AUTOEXEC.BAT file is causing problems, rename your
+  CONFIG.SYS file by typing the following at the MS-DOS command prompt:
+
+  " ren config.sys config.bac " (without the quotation marks)
+
+6. Restart your computer by pressing CTRL+ALT+DEL and type the following at the
+  MS-DOS command prompt:
+
+  " dosshell " (without the quotation marks)
+
+  If MS-DOS Shell doesn't start, your AUTOEXEC.BAT file is causing problems;
+  proceed to step 7.
+
+  If MS-DOS Shell starts, the problem is probably with your CONFIG.SYS file, not
+  your AUTOEXEC.BAT file; skip to step 11.
+
+7. Use a text editor, such as MS-DOS Editor, to open the AUTOEXEC.BAT file. If
+  you want to use MS-DOS Editor, type the following command:
+
+  " edit autoexec.bat " (without the quotation marks)
+
+8. Insert the REM command in front of every command in your AUTOEXEC.BAT file
+  except the @ECHO OFF, PROMPT, and PATH commands.
+
+  For example, your AUTOEXEC.BAT might look like the following:
+
+         rem dos\share
+         @echo off
+         prompt $p$g
+         path c:\dos
+         rem temp=c:\temp
+         rem tmp=c:\temp
+         rem init=c:\init
+
+         rem start workstation
+         rem logon joeblow
+
+         rem netime time
+         rem net use l: \\john\doe
+         rem net use lpt1: \\john\doe
+         rem mode spe=high
+         rem cd \qs
+         rem quickshr - - - y \qs
+         rem cd \ 
+
+9. Save your AUTOEXEC.BAT file. If you're using MS-DOS Editor, choose Save from
+  the File menu.
+
+10. To determine which command is causing a problem, remove the first REM
+  command from the first command line. Save your AUTOEXEC.BAT file, restart
+  your computer by pressing CTRL+ALT+DEL, and try to start MS-DOS Shell by
+  typing "dosshell" (without the quotation marks) at the MS-DOS command
+  prompt. Repeat these steps until MS-DOS Shell does not start. When it
+  doesn't start, you have identified a command that conflicts with MS-DOS
+  Shell.
+
+11. Restart your computer by typing CTRL+ALT+DEL. Then rename your CONFIG.SYS
+  file by typing the following at the MS-DOS command prompt:
+
+  " ren config.bac config.sys " (without the quotation marks)
+
+12. To determine whether your CONFIG.SYS file is causing problems, rename your
+  AUTOEXEC.BAT file by typing the following at the MS-DOS command prompt:
+
+  " ren autoexec.bat autoexec.bac " (without the quotation marks)
+
+13. Restart your computer by pressing CTRL+ALT+DEL and type the following at the
+  MS-DOS command prompt:
+
+  " c:\dos\dosshell " (without the quotation marks)
+
+  If MS-DOS Shell doesn't start, your CONFIG.SYS file is causing problems;
+  proceed to step 14.
+
+  If MS-DOS Shell starts, there is probably no problem with your CONFIG.SYS
+  file; skip to step 20.
+
+14. Use a text editor, such as MS-DOS Editor, to open your CONFIG.SYS file. If
+  you are using MS-DOS Editor, type the following at the MS-DOS command
+  prompt:
+
+  " c:\dos\edit c:\config.sys " (without the quotation marks)
+
+15. Insert the REM command in front of every command in your CONFIG.SYS file
+  except lines with device drivers that are needed to run computer hardware,
+  such as a disk drive, monitor, or keyboard, and lines with FILES and BUFFERS
+  commands. Make sure to type the REM command in front of the mouse driver
+  command, if any.
+
+16. Change the FILES and BUFFERS commands to the following:
+
+  FILES="30" (without the quotation marks)
+  BUFFERS="30" (without the quotation marks)
+
+  If your CONFIG.SYS file does not have these commands, add them.
+
+17. Save your CONFIG.SYS file. If you're using MS-DOS Editor, choose Save from
+  the File menu.
+
+18. To determine which driver is causing a problem, remove the first occurrence
+  of the REM command from a command line. Save your CONFIG.SYS file, restart
+  your computer by pressing CTRL+ALT+DEL, and try starting MS-DOS Shell by
+  typing "c:\dos\dosshell" (without the quotation marks) at the MS-DOS command
+  prompt. Repeat these steps until MS-DOS Shell does not start. When it
+  doesn't start, you have identified a command that conflicts with MS-DOS
+  Shell.
+
+19. Rename your AUTOEXEC.BAT file by typing the following at the MS-DOS command
+  prompt:
+
+  " ren c:\autoexec.bac c:\autoexec.bat " (without the quotation marks)
+
+20. When you have identified the commands that are causing problems, insert the
+  REM command in front of the same commands in the AUTOEXEC.BAT and/or
+  CONFIG.SYS files on drive C. Then restart your computer and try using MS-DOS
+  Shell. If the MS-DOS Shell still doesn't start, you might have more than one
+  command in one or both files that are causing problems. In this case, repeat
+  steps 5 through 19 as applicable.
+
+  When you have identified the drivers and/or programs that are causing
+  problems, you have two options:
+
+   - If the drivers and/or programs are not essential, you can disable them
+     with the REM command, as described earlier in this procedure.
+
+   - You can contact the manufacturers of the drivers and/or programs for
+     further assistance.
+
+Incorrect or Corrupt MS-DOS Shell Files
+---------------------------------------
+
+Sometimes Setup identifies your monitor incorrectly and copies the wrong video
+files to your system. Also, sometimes video or MS-DOS Shell files become
+corrupted during or after setup. MS-DOS Shell won't work properly if the
+following files are incorrect or corrupted:
+
+  DOSSHELL.EXE
+  DOSSHELL.GRB
+  DOSSHELL.INI
+  DOSSWAP.EXE
+  DOSSHELL.COM
+  DOSSHELL.VID
+
+If you are having problems with MS-DOS Shell, try manually expanding these files
+from your Setup disks, as follows:
+
+1. Preserve DOSSHELL.INI by backing it up with the COPY command. For example, if
+  this file is in the DOS directory, change to the DOS directory by typing "cd
+  \dos" (without the quotation marks) at the MS-DOS command prompt. Then type
+  the following command:
+
+  " copy dosshell.ini dosshell.old " (without the quotation marks)
+
+2. Use the following syntax to expand and copy the following files to your DOS
+  directory:
+
+  expand [drive1:][path1]dosshell.ex_ [drive2:][path2]dosshell.exe
+  expand [drive1:][path1]dosshell.co_ [drive2:][path2]dosshell.com
+  expand [drive1:][path1]dosswap.ex_ [drive2:][path2]dosswap.exe
+
+  The [drive1:][path1] parameter specifies the location of the compressed file
+  you want to expand. The [drive2:][path2] parameter specifies the location of
+  the expanded file. These files are on Disk 3 (5.25-inch disks) or Disk 2
+  (3.5-inch disks).
+
+  For example, if the DOSSHELL.EX_ file is on a disk in drive A, and you want to
+  expand the file to the \DOS directory on drive C, type the following at the
+  MS-DOS command prompt:
+
+  " expand a:\dosshell.ex_ c:\dos\dosshell.exe " (without the quotation marks)
+
+3. Find your monitor type below, and expand and rename the files by typing the
+  specified commands. The files are on Disk 3 (5.25-inch disks) or Disk 2
+  (3.5-inch disks).
+
+   Monochrome
+   ----------
+
+      expand a:\mono.gr_ c:\dos\dosshell.grb
+      expand a:\mono.in_ c:\dos\dosshell.ini
+
+         Note that a monochrome monitor does not require a .VID file.
+
+   CGA
+   ---
+
+      expand a:\cga.gr_ c:\dos\dosshell.grb
+      expand a:\cga.in_ c:\dos\dosshell.ini
+      expand a:\cga.vi_ c:\dos\dosshell.vid
+
+   EGA
+   ---
+
+      expand a:\ega.gr_ c:\dos\dosshell.grb
+      expand a:\ega.in_ c:\dos\dosshell.ini
+      expand a:\ega.vi_ c:\dos\dosshell.vid
+
+   EGA Monochrome
+   --------------
+
+      expand a:\egamono.gr_ c:\dos\dosshell.grb
+      expand a:\mono.in_ c:\dos\dosshell.ini
+      expand a:\ega.vi_ c:\dos\dosshell.vid
+
+   VGA (Super VGA, XGA, and other high-resolution monitors)
+   --------------------------------------------------------
+
+      expand a:\vga.gr_ c:\dos\dosshell.grb
+      expand a:\ega.in_ c:\dos\dosshell.ini
+      expand a:\vga.vi_ c:\dos\dosshell.vid
+
+   8514 Color
+   ----------
+
+      expand a:\vga.gr_ c:\dos\dosshell.grb
+      expand a:\ega.in_ c:\dos\dosshell.ini
+      expand a:\ega.vi_ c:\dos\dosshell.vid
+
+   VGA Monochrome (VGA, Super VGA,
+   XGA, and other high-resolution monitors)
+   ----------------------------------------
+
+      expand a:\vgamono.gr_ c:\dos\dosshell.grb
+      expand a:\mono.in_ c:\dos\dosshell.ini
+      expand a:\vga.vi_ c:\dos\dosshell.vid
+
+   8514 Monochrome
+   ---------------
+
+      expand a:\vgamono.gr_ c:\dos\dosshell.grb
+      expand a:\mono.in_ c:\dos\dosshell.ini
+      expand a:\cga.vi_ c:\dos\dosshell.vid
+
+   Hercules
+   --------
+
+      expand a:\herc.gr_ c:\dos\dosshell.grb
+      expand a:\mono.in_ c:\dos\dosshell.ini
+      expand a:\herc.vi_ c:\dos\dosshell.vid
+
+Additional query words: appnote 5.00
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

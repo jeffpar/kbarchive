@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274623/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274623/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274623/","publisher":null,"image":null,"headline":"Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274623-prb-w2k-help-system-update-breaks-install-of-msdn-library">Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274623
+Product(s): Microsoft Developer Network
+Version(s): July 2000
+Operating System(s): 
+Keyword(s): kbMSDN kbGrpDSVB kbDSupport
+Last Modified: 09-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Developer Network (MSDN) July 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The update of the HTML Help System during the installation of the Microsoft
+Developers Network (MSDN) Library breaks the Microsoft Windows 2000 Help
+system.
+
+During the installation of the MSDN Library (usually, but not limited to the
+April 2000 or July 2000 editions), the MSDN Library installation program
+attempts to update the HTML Help System. The update fails due to not having the
+required permissions. (The installation is denied rights to do so due to the
+Windows file system protection feature.) Although the installation attempt fails
+and the update has not been completed, the HTML Help system is not able to
+display the MSDN Library correctly when started.
+
+The following MSDN Library (any edition) error messages appear:
+
+  "unable to find the collection \..\msdn***.col"
+
+  -or-
+
+  "Can not open the MSDN010.COL"
+
+The exact error depends on the version of the MSDN Library being started.
+
+CAUSE
+=====
+
+The MSDN Library updates some of the underlying files, but is not able to
+complete the HTML Help system update.
+
+RESOLUTION
+==========
+
+Install Microsoft Windows 2000 Service Pack 1 from the following Microsoft Web
+site at
+
+  http://www.microsoft.com/windows2000/downloads/servicepacks/sp1/default.asp
+
+and then perform the steps that you find in the following Microsoft Knowledge
+Base article:
+
+  Q240350 HOWTO: Manually Uninstall the MSDN Library
+
+REFERENCES
+==========
+
+This issue is due to the situation explained in the following Microsoft
+Knowledge Base article:
+
+  Q269966 BUG: MSDN Library - July 2000 DVD Edition Has a Corrupt MSDN020
+
+Additional query words: msdnsetup install vssetup
+
+======================================================================
+Keywords          : kbMSDN kbGrpDSVB kbDSupport 
+Technology        : kbMSDNSearch kbZNotKeyword2
+Version           : :July 2000
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139964: SAMPLE: How to List Directories on Entire Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139964: SAMPLE: How to List Directories on Entire Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139964/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139964/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139964/","publisher":null,"image":null,"headline":"Q139964: SAMPLE: How to List Directories on Entire Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139964-sample-how-to-list-directories-on-entire-drive">Q139964: SAMPLE: How to List Directories on Entire Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139964
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode kbfile kbvfp600
+Last Modified: 17-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a sample program that builds a directory listing by using
+the outline control. It displays directory names and directory sizes in
+hierarchical order.
+
+MORE INFORMATION
+================
+
+This program creates a form that contains an outline control. You can copy and
+paste the following code into a program (.prg file) to run it. The following
+methods are essential to the program.
+
+The Fillit Method
+-----------------
+
+This method of the form builds the root of the directory tree. It also calls the
+Fill method.
+
+The Fill Method
+---------------
+
+This method fills the directory tree with directory names and sizes. It accepts
+the directory name as a parameter and uses the ADIR() function to place
+directory information into an array. This method is first executed for the root.
+A recursive call to the Fill method is then executed for each level of
+subdirectory. The tree is complete when all of the elements of the array have
+been processed.
+
+The Recalc Method
+-----------------
+
+The directory listing displays the name and the size of each directory. When an
+item is expanded and its subordinates become visible, the Recalc method
+subtracts the size of each sub-directory from the size of the parent directory.
+
+Sample Program
+--------------
+
+  *:*************************************************************************
+  *:
+  *: Procedure File C:\VFP\TESTOLE.PRG
+  *:
+  *: Documented using Visual FoxPro Formatting wizard version  .03
+  *:*************************************************************************
+  *:   TESTOLE
+  CLEAR
+  PUBLIC ocDir
+  ocDir = CREATEOBJECT("CDir")
+  ocDir.Show
+  ocDir.Fillit("c:\")
+
+  DEFINE CLASS CDir AS FORM
+     Caption = "Directories"
+     Height = 2* SYSMETRIC(2) / 3
+     nLevel = 0
+     ADD OBJECT cmdQuit AS COMMANDBUTTON WITH ;
+        CAPTION = "Quit",;
+        CANCEL = .T.
+     ADD OBJECT ole1 AS COutline
+     PROCEDURE INIT
+        THIS.ole1.Width = THIS.Width
+        * Dimensions the outline to the size of the form
+        THIS.ole1.Height = THIS.Height - THIS.ole1.Top
+
+     PROCEDURE Fillit(cRoot)    &amp;&amp; Builds the start of the directory tree
+        LOCAL Totsize
+        IF RIGHT(cRoot,1) # '\'
+          cRoot = cRoot + '\'
+        ENDIF
+        THIS.ole1.Visible = .F.
+        THIS.ole1.AddItem(cRoot)    &amp;&amp; Adds the root to the outline control
+        THIS.ole1.Indent[0] = 0
+        * Defines the root to the outline control
+        TotSize = THIS.Fill(cRoot)  &amp;&amp; Method that fills the tree
+        THIS.ole1.List[0] = THIS.ole1.LIST[0] + ' : ' +  ;
+           LTRIM(TRANSFORM(Totsize,"999,999,999"))
+        THIS.ole1.Itemdata[0] = TotSize
+        THIS.ole1.Visible = .T. &amp;&amp; Displays the control
+
+     PROCEDURE FILL(cRoot) &amp;&amp; Fills the directory tree
+        LOCAL nNumbofFiles,I, acDirAll[1,1],nCumSize,nSize,nCount,Here
+        nCumSize = 0
+        nSize = 0
+        THIS.nLevel = THIS.nLevel + 1
+        * Places information into an array
+        nNumbofFiles = ADIR(acDirAll,cRoot + "*.*","D")
+        =ASORT(acDirAll)
+        FOR I = 1 TO nNumbofFiles
+           IF "D" $ acDirAll[i,5]   &amp;&amp; Finds all the directories
+              IF LEFT(acDirAll[i,1],1) != '.'
+                 THIS.ole1.ADDITEM(LOWER(acDirAll[i,1]))
+                 Here = THIS.ole1.LISTCOUNT - 1
+                 THIS.ole1.Indent[Here] = THIS.nLevel &amp;&amp;Indents the directory
+                 nSize = THIS.FILL(cRoot + acDirAll[i,1] + '\')
+                 * Fills the directory
+                 THIS.ole1.LIST[Here] = THIS.ole1.LIST[Here] + ' : ' +;
+                    LTRIM(TRANSFORM(nSize,"999,999,999"))
+                 THIS.ole1.ITEMDATA[Here] = nSize
+                 nCumSize = nCumSize + nSize
+              ENDIF
+           ENDIF
+           IF THIS.nLevel = 1
+              THIS.ole1.nRootSize = THIS.ole1.nRootSize + acDirAll[i,2]
+           ENDIF
+           nCumSize = nCumSize + acDirAll[i,2]
+        ENDFOR
+        THIS.nLevel = THIS.nLevel - 1
+        RETURN nCumSize
+
+     PROCEDURE cmdQuit.CLICK &amp;&amp;Quit method for the Command Button
+        THISFORM.RELEASE
+        RELEASE WINDOW TRACE
+        RELEASE WINDOW DEBUG
+  ENDDEFINE
+
+  DEFINE CLASS COutline AS OLECONTROL
+     OleClass = "MSOutl.Outline"
+     Top = 20
+     nRootSize = 0
+
+     PROCEDURE ReCalc(nList) &amp;&amp; Adjusts the size of the directory
+        LOCAL N,MyLevel,nSize,j,cDirName,nStart,nstartlev
+        nStart = nList
+        nStartlev = THIS.Indent[nList]
+        MyLevel = THIS.Indent[nList]
+        nSize = THIS.ITEMDATA[nlist]
+        j = nList + 1
+        DO WHILE j &lt; THIS.LISTCOUNT AND THIS.Indent[j] &gt; MyLevel
+           IF THIS.IsItemVisible[j]
+              nSize = nSize - THIS.ITEMDATA[j]
+           ENDIF
+           j = j + 1
+        ENDDO
+        cDirName = THIS.LIST[nlist]
+        IF  VAL(STRTRAN(SUBSTR(cDirName,AT(':',cDirName)+2),",")) # nSize
+           THIS.LIST[nList] = ;
+              LEFT(THIS.LIST[nList],AT(':',THIS.LIST[nList])) + ' ' +;
+              LTRIM(TRANSFORM(nSize,"999,999,999"))
+        ENDIF
+        nList = nStart
+        DO WHILE .T.
+           nList = nList + 1
+           IF nList = THIS.ListCount OR THIS.Indent[nList] &lt;= nStartlev
+              EXIT
+           ELSE
+              THIS.Recalc(nList)
+           ENDIF
+        ENDDO
+
+     PROCEDURE Expand(nList)
+        THIS.Object.MousePointer = 11
+        THIS.PictureType[nList] = 1
+        THIS.Recalc(nList)
+        * Recalculates the size of each directory when the item is clicked
+        THIS.Object.MousePointer = 0
+
+     PROCEDURE Collapse(nList) &amp;&amp; Collapses an element
+        LOCAL nSize
+        THIS.Object.MousePointer = 11
+        THIS.PictureType[nList] = 0
+        cDirName = THIS.List[nlist]
+        nSize = THIS.ItemData[nList]
+        IF  VAL(STRTRAN(SUBSTR(cDirName,AT(':',cDirName)+2),",")) # nSize
+           THIS.List[nList] =  ;
+           LEFT(THIS.LIST[nList],AT(':',THIS.LIST[nList])) + ' ' +;
+              LTRIM(TRANSFORM(nSize,"999,999,999"))
+        ENDIF
+        ni=nList+1
+        DO WHILE THIS.Indent(ni)&gt;THIS.Indent(nList)
+        * Closes the folder when it is collapsed
+           IF THIS.PictureType(ni)=1
+             THIS.PictureType(ni)=0  &amp;&amp;Folder looks closed
+           ENDIF
+           ni=ni+1
+        ENDDO
+        THIS.OBJECT.MOUSEPOINTER = 0
+  ENDDEFINE
+
+REFERENCES
+==========
+
+For more information about the outline control, search for "Outline Control" in
+the Visual FoxPro Help file.
+
+Additional query words: VFoxWin ocx
+
+======================================================================
+Keywords          : kbcode kbfile kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP600
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176990: SMSINST: Installer Does Not Install Printers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176990: SMSINST: Installer Does Not Install Printers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176990/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176990/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176990/","publisher":null,"image":null,"headline":"Q176990: SMSINST: Installer Does Not Install Printers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176990-smsinst-installer-does-not-install-printers">Q176990: SMSINST: Installer Does Not Install Printers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176990
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): smsinst
+Last Modified: 03-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server Installer version 1.0 does not currently
+have functionality allowing it to add printers to Windows NT and Windows 95
+systems. Using the repackage feature is not sufficient. Microsoft Technical
+Support does not support using the Systems Management Server Installer version
+1.0 for adding printers. The purpose of this article is to present other options
+for adding printers to client systems.
+
+MORE INFORMATION
+================
+
+There are other options for automatically adding a printer to a system,
+including, but not limited to, the AddPrinter function and the Con2prt utility.
+
+AddPrinter Function
+-------------------
+
+This is the programmatic method for adding a printer, appropriate for use with
+Windows NT and Windows 95. Using this method, you can write a custom application
+to add printers automatically. See the Microsoft Platform SDK for more
+information on implementing this function.
+
+Con2prt.exe
+-----------
+
+This is a command line utility from the Microsoft Windows Zero Administration Kit
+(ZAK) for Windows NT Workstation. This utility allows a network printer
+connection to be added at a command line on a computer running Windows NT
+Workstation. It requires no user interaction and can be delivered through normal
+Systems Management Server software distribution as a batch file or within a
+Systems Management Server Installer script (by using the Execute Program script
+item). Please note that this utility works for Windows NT only. There is no
+equivalent executable program currently available for Windows 95. For more
+information on this utility, see the Zero Administration Kit Version 1.0,
+"Administrator's Guide," Appendix B, Utilities and Commands.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

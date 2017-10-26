@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216947: How Special Characters in the Name Field Effect Certificates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216947: How Special Characters in the Name Field Effect Certificates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216947/","publisher":null,"image":null,"headline":"Q216947: How Special Characters in the Name Field Effect Certificates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216947-how-special-characters-in-the-name-field-effect-certificates">Q216947: How Special Characters in the Name Field Effect Certificates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216947
+Product(s): Internet Information Server
+Version(s): winnt:1.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Certificate Server version 1.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes why, when special characters are included as part of a
+name in a certificate, they cause that part of the name to be encoded as a
+Unicode string rather than a printable string. This process of promoting string
+encoding from Printable to Unicode is fully documented in the relevant IETF
+standard (pkix part 1). However, applications written before the standard may
+have problems processing certificates, particularly CA Certificates, that
+contain Unicode names. Before including these special characters in a CA
+certificate name, it is advisable to confirm that all applications using
+certificates from a CA can correctly process certificates containing the Unicode
+names.
+
+This affects all releases of Microsoft Certificate Server, including version 1.0
+that shipped with the Windows NT Option Pack, the QFE update for Exchange
+Server, and the SP4 update.
+
+MORE INFORMATION
+================
+
+The IETF standard requires that where possible, the names in certificates be
+encoded as Printable Strings. The Printable String character set is as follows:
+
+  Upper case letters (A to Z)
+  Lower case letters (a to z)
+  Numbers (0 to 9)
+  Some punctuation characters (space) ' ( ) + , - . / : = ?
+
+The standard also requires that names containing any character outside of the
+Printable String character set are encoded as a type of Unicode string known as
+a BMP string. For example:
+
+  Jones and Partner's = Encoded as Printable String
+  Jones &amp; Partner's = Encoded as BMP string
+
+If, when installing Certificate Server, you use a character outside of the
+Printable String character set as any part on the CA's name, that part of the
+CA's name will be encoded as a BMP string. In addition, any certificate that the
+CA issues will contain the same name and a BMP string in the issuer name of the
+certificate.
+
+As vendors update their products to conform to the new standard, this problem
+will diminish. However, it is advisable at this time to only use characters
+outside of the Printable String character set in a Certificate Server's name
+where you are confident that all applications can correctly process certificates
+containing BMP strings.
+
+Because the name is in a signed object (for example a certificate), removal of
+the BMP string requires that you reinstall the Certificate Server, and re- issue
+the certificates it has issued.
+
+Additional query words: Certificate, Encoding, Compatibility
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbCertServSearch kbZNotKeyword3 kbCertServ100
+Version           : winnt:1.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

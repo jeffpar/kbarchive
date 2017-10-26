@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190066/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190066/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190066/","publisher":null,"image":null,"headline":"Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190066-fix-table-can-not-be-used-after-replace-of-memo-in-transaction">Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190066
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your application issues a REPLACE of a Memo field within a transaction. In a
+multi-user environment, a user (User 1) issues the REPLACE. After User 1's
+REPLACE, but before User 1's transaction has completed, another user (User 2)
+attempts to open the table. User 2 receives the following scrolling message
+until User 1's transaction has completed:
+
+  Record not available...please wait.
+
+NOTE: This has been changed in Visual FoxPro 6.0 such that even if the memo file
+can not be locked, the table can be opened.
+
+CAUSE
+=====
+
+When a REPLACE of a memo field is issued within a transaction, the memo file
+header is locked for the remainder of the transaction. If another user attempts
+to USE the table, that user can not open the table because the USE command can
+not lock the memo file. Once the first user's transaction has completed, the
+second user can open the table.
+
+RESOLUTION
+==========
+
+One way to work around this issue is to not use REPLACE with Memo field data
+within a transaction.
+
+Alternatively, use buffering on the tables with Memo fields, REPLACE memo values,
+then cause the update to be written by issuing a TABLEUPDATE() within the
+transaction.
+
+Additionally, you do not want to cause the transaction to last any longer than
+necessary. Avoid modal dialog boxes, such as message boxes, that pause program
+execution, during transactions. Please see the MORE INFORMATION section for
+additional details.
+
+STATUS
+======
+
+This behavior is by design. All locks made within a transaction remain until the
+transaction has completed. In the case of Memo field, replacing the Memo field
+actually locks the memo file header, which prevents the USE command from opening
+the table.
+
+MORE INFORMATION
+================
+
+Visual FoxPro tables consist of one or more files. Each file has the same name,
+but with different extensions. These are:
+
+  File      Extension   Comment
+  -----------------------------------------------------------------------
+
+  Table     .dbf        Present for all tables.
+  Memo      .fpt        Present only if table has Memo or General fields.
+  Index     .cdx        Present only if table has index tags.
+
+When a table is opened (with a USE command), the .dbf file opens. The .fpt and
+.cdx files are also opened if they exist, and they must be open for the USE
+command to succeed.
+
+When a replace is made on a Memo field, at the time the replace is made, the memo
+file (.fpt) header is locked. Normally, this lock is made and released
+instantaneously, but the transaction causes the lock to be held until the
+transaction ends.
+
+Because the USE command can not open the memo file if its header is locked, the
+scrolling message appears until the lock is removed, for example, when the
+transaction ends.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+        SET EXCLUSIVE OFF
+        SET MULTILOCKS ON
+        SET REPROCESS TO 5
+
+        IF NOT FILE('MUTest.DBC')
+           WAIT WINDOW "Creating test data..." NOWAIT
+           CREATE DATABASE MUTest
+           CREATE TABLE MUTable (IntFld I, MemoFld M)
+           APPEND BLANK
+           CLOSE DATABASE
+        ENDIF
+
+        WAIT WINDOW "Opening database..." NOWAIT
+        OPEN DATA MUTest SHARE
+
+        WAIT WINDOW "Opening table..." NOWAIT
+        USE MUTable IN 0 SHARE
+
+        WAIT CLEAR
+        SELECT MUTable
+        LOCATE
+
+        BEGIN TRANSACTION
+           REPLACE MemoFld WITH sys(3)
+           =MESSAGEBOX('Start another instance of Visual FoxPro and run ;
+           this program again. Observe that the USE statement causes ;
+           the "Record not available...please wait." scrolling message    ;
+           to appear when attempting to open the table.', 16)
+
+        ROLLBACK
+        CLOSE DATABASE
+
+2. Start another instance of Visual FoxPro and change to the same default
+  directory that the first instance used.
+
+3. Run the program above in the second instance.
+
+RESULTS:
+
+- The second instance receives a scrolling "Record not available...please wait"
+  message on the USE command.
+
+- If the REPLACE is made to the Integer field rather than the Memo field, the
+  scrolling message will not occur and the table opens.
+
+- Buffering helps if the REPLACE is made before the BEGIN TRANS.
+
+- To clear the scrolling message in the second instance, click OK in the
+  message box in the first instance, then click OK in the message box of the
+  second instance.
+
+NOTES:
+
+- In this case, we have intentionally added a message box to make the
+  transaction last longer, which is what we want to avoid, because the
+  lengthening of the transaction makes the behavior more likely to occur.
+
+- It is much preferable to use buffering and issue your REPLACE before starting
+  the transaction. Use the preceding steps with the following code to
+  demonstrate:
+
+        SET EXCLUSIVE OFF
+        SET MULTILOCKS ON
+        SET REPROCESS TO 5
+
+        IF NOT FILE('MUTest.DBC')
+           WAIT WINDOW "Creating test data..." NOWAIT
+           CREATE DATABASE MUTest
+           CREATE TABLE MUTable (IntFld I, MemoFld M)
+           APPEND BLANK
+           CLOSE DATABASE
+        ENDIF
+
+        WAIT WINDOW "Opening database..." NOWAIT
+        OPEN DATA MUTest SHARE
+
+        WAIT WINDOW "Opening table..." NOWAIT
+        USE MUTable IN 0 SHARE
+
+        WAIT CLEAR
+        SELECT MUTable
+        =CURSORSETPROP('Buffering', 5)
+        LOCATE
+
+        REPLACE MemoFld WITH sys(3)
+
+        BEGIN TRANSACTION
+           =TABLEUPDATE(.T.)
+           =MESSAGEBOX('Start another instance of Visual FoxPro and run ;
+           this program again. The second instance will open the table ;
+           without the scrolling message', 16)
+
+        ROLLBACK
+        CLOSE DATABASE
+
+In this case, the scrolling message will not occur and the table opens in the
+second instance without problem.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp600 kbVFp500a kbVFp300b kbDatabase kbXBase kbVFp600fix kbVFp500abug kbVFp300bbug kbDatabase kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

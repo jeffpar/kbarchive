@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101523: INF: Meaning of an Active ODBC Statement Handle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101523: INF: Meaning of an Active ODBC Statement Handle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101523/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101523/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101523/","publisher":null,"image":null,"headline":"Q101523: INF: Meaning of an Active ODBC Statement Handle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101523-inf-meaning-of-an-active-odbc-statement-handle">Q101523: INF: Meaning of an Active ODBC Statement Handle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101523
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+An ODBC application can call SQLGetInfo() with an fInfoType of
+SQL_ACTIVE_STATEMENTS to determine the number of active statement handles that
+an ODBC driver can support on a connection. This article explains how the
+concept of 'active statement' is far removed from the states of statement
+handles in an ODBC State Transition table.
+
+MORE INFORMATION
+================
+
+An ODBC application may be written such that one statement handle (hstmt) on a
+connection (hdbc) is used to fetch data from the back end, and a second hstmt
+within the same hdbc is used simultaneously for other tasks, such as generating
+updates. But an application must not assume that the driver will support such
+behavior from the application. The application must first call SQLGetInfo with
+the fInfoType of SQL_ACTIVE_STATEMENTS to see if multiple active hstmts are
+supported. In ODBC, an hstmt is defined as active if it has results pending. The
+term 'results' means rows from a select or the number of rows affected by an
+insert, update or delete operation (such as row count).
+
+If a driver supports only one active hstmt per hdbc, applications written as
+above will not work. They must allocate a second hdbc, make a new connection,
+and then allocate another hstmt within this new hdbc to be able to concurrently
+use both hstmts, that is, concurrently having one hstmt with results pending as
+the rows are being fetched, and using the other hstmt for other
+application-specific tasks.
+
+It must be noted, however, that even for a driver that supports only one active
+hstmt per hdbc, it may be possible to allocate more than one hstmt within the
+hdbc, that is, such a driver may support multiple hstmts per hdbc but not
+multiple active hstmts per hdbc. In such cases, applications must be careful to
+not use other hstmts within the hdbc when results are pending on a hstmt within
+the hdbc.
+
+The following examples assume a driver that supports only one active hstmt per
+hdbc, without limiting multiple hstmts per hdbc.
+
+  SQLAllocStmt(hdbc, &amp;hstmt1)
+  SQLAllocStmt(hdbc, &amp;hstmt2)
+
+Example 1
+---------
+
+  SQLExecDirect (hstmt1, "select * from &lt;a zero-row table&gt;", SQL_NTS)
+  //Since the above select generated no results, it's OK to use hstmt2
+  SQLExecDirect(hstmt2, "select * from &lt;table&gt;", SQL_NTS)
+
+Example 2
+---------
+
+  SQLExecDirect(hstmt1, "select * from &lt;table that has rows&gt;", SQL_NTS)
+  // The above statement generates a results set
+  SQLExecDirect(hstmt2, "some update statement", SQL_NTS)
+  // Error with SQLState 24000 "Invalid Cursor State"
+
+Example 3
+---------
+
+  SQLExecDirect(hstmt1, "delete  from &lt;table that has rows&gt;", SQL_NTS)
+  // The above delete generates a row count (the number of rows
+  affected)
+  SQLExecDirect(hstmt2, "some update statement", SQL_NTS)
+  // Error with SQLState 24000 "Invalid Cursor State"
+
+Because there are results pending on hstmt1, the last SQLExecDirect on hstmt2 in
+Examples 2 and 3 results in SQLState 24000 "Invalid Cursor state." Note that in
+example 3, if SQLRowCount had been called after the first SQLExecDirect to
+determine the number of rows affected, the second SQLExecDirect would have been
+valid.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

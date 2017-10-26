@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228778/","publisher":null,"image":null,"headline":"Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228778-how-to-administer-iis-40-on-a-different-domain-through-the-mmc">Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228778
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect through the Microsoft Management Console (MMC) to an IIS
+4.0 computer that resides on a different domain, the following error message may
+occur:
+
+  Unable to Administer the &lt;Specific IIS Service&gt; Service on &lt;Server
+  Name&gt; because the following error occurred.
+  Access is Denied.
+
+CAUSE
+=====
+
+The user account that you are logged in as on the workstation or server from
+which you are running the MMC does not exist on the remote IIS 4.0 computer that
+you are trying to connect to. Therefore, you can not be authenticated as an
+administrator of the IIS 4.0 resources on the remote computer. If you cannot be
+authenticated as an administrator, then the MMC will deny you access to those
+resources.
+
+RESOLUTION
+==========
+
+The following resolution needs to be performed on the domain or server where the
+remote IIS 4.0 computer is located.
+
+Create a similar account and password on the other domain using User Manager for
+Domains. If the server is a standalone server, use User Manager on the server to
+create the user account.
+
+Perform these steps on the remote IIS 4.0 computer that you want to administer:
+
+1. If the IIS 4.0 computer is a standalone server, run User Manager. Otherwise
+  run User Manager for Domains.
+
+2. Create a user account with the same user name and password as the account
+  that you are logged on to on the local workstation or server.
+
+3. To be able to fully administer the remote IIS 4.0 computer, make this new
+  account a member of the Local Administrators Group on the remote IIS 4.0
+  computer.
+
+You can now run the MMC on your system and access and manage the IIS 4.0
+resources of the remote system.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

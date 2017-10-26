@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259575: XADM: How to Determine Which User Deleted an Exchange Recipient | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259575: XADM: How to Determine Which User Deleted an Exchange Recipient" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259575/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259575/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259575/","publisher":null,"image":null,"headline":"Q259575: XADM: How to Determine Which User Deleted an Exchange Recipient","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259575-xadm--how-to-determine-which-user-deleted-an-exchange-recipient">Q259575: XADM:  How to Determine Which User Deleted an Exchange Recipient</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259575
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kberrmsg exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Diagnostics Logging to determine which
+Administrator account deleted an Exchange Server recipient.
+
+MORE INFORMATION
+================
+
+In a typical production Exchange Server environment, many individuals and groups
+may have Administrator permissions to an Exchange Server site. In some cases,
+recipients may be accidentally or purposely deleted when you use the Microsoft
+Exchange Server Administrator program or the Directory Import feature.
+
+To determine when the recipient was deleted, and which Administrator account
+deleted the recipient, set the Diagnostics Logging level on the
+MSExchangeDS\Security object to Maximum:
+
+1. Start the Administrator program, expand the Site\Configuration\Servers
+  container, and then click a server.
+
+2. On the File menu, click Properties.
+
+3. Click the Diagnostics Logging tab.
+
+4. In the Services section, click MSExchangeDS.
+
+5. In the Category section, click Security.
+
+6. In the Logging Level section, click Maximum, and then click OK.
+
+Use this procedure on every server in the site. If you use the Administrator
+program on one server to change the Diagnostics Logging level, the diagnostic
+information is not logged until the changes are replicated to the other servers
+in the site.
+
+NOTE: If Diagnostics Logging for the Security object is not enabled on every
+server in the site, a user who has Administrator permissions is able to
+establish a connection to a server that does not have the Diagnostics Logging
+level set to Maximum, and delete a mailbox without being detected.
+
+When the Diagnostics Logging level for the Security object is set to Maximum, if
+a mailbox is deleted on the server, an event similar to the following event is
+logged:
+
+  ***BEGIN***
+  Date: &lt;date&gt; Event: 1053
+  Time: &lt;time&gt; Source: MSExchangeDS
+  User: (User who deleted mailbox) Type: Information
+  Computer: Local Exchange server Category: Security
+
+  Description:
+  The security descriptor granted 0x10000 access on object /o=Org Name/ou=Site
+  Name/cn=Recipients Container/cn=Deleted Recipient for this user.
+  ***END***
+
+To use this event to find out more information about the deleted recipient
+mailbox:
+
+- Look for the type of access granted. 0x10000 represents delete access.
+
+- Look in the User section in the header of the event to determine which
+  Administrator account deleted the mailbox.
+
+- Look at the full distinguished name path to the deleted recipient. The
+  distinguished name section begins with "/o=.../ou=...". In this section,
+  "cn=" marks the directory name of the deleted recipient. By default, the
+  directory name is the same as the alias name of the mailbox unless the alias
+  was modified when you created the mailbox.
+
+- Look at the Date and Time headers to determine when the mailbox was deleted.
+
+The server that reports an event ID 1053 that contains a 0x10000 access
+hexadecimal code is the server that the Administrator program was connected to
+when the mailbox was deleted.
+
+An event ID 1053 is also logged when you modify or create a recipient. The
+following list contains a few of the possible hexadecimal codes and the type of
+access each code represents:
+
+- 0x10000: A recipient has been deleted.
+
+- 0x1: A recipient has been created.
+
+- 0x80: Permissions have been added or modified.
+
+- 0x4: Display or alias name has been modified.
+
+Additional query words: custom recipient, distribution list, dl, mailbox, deletion
+
+======================================================================
+Keywords          : kberrmsg exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

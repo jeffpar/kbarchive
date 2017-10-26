@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q11785: Getting the DTA Address Using INT86 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q11785: Getting the DTA Address Using INT86" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/011/Q11785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/011/Q11785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/011/Q11785/","publisher":null,"image":null,"headline":"Q11785: Getting the DTA Address Using INT86","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q11785-getting-the-dta-address-using-int86">Q11785: Getting the DTA Address Using INT86</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q11785
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 28-DEC-1989
+
+Problem:
+
+I would like to search for files with a given extension, save them in
+an array, and display them on the screen for user selection using
+QuickBASIC Version 2.00 and the DOS interrupt routine INT86. I have
+written a sample program that calls function 4E and 4F to find the
+desired files. They appear to be working correctly, as the flag
+returned in the low byte of register AX is showing 0 for each
+successful find and 18 when no files exist or when the last file has
+been found. However, I do not know how to read the DTA (Disk Transfer
+Address) after I successfully find a file, thus I cannot store the
+filename for later display.
+
+Response:
+
+In QuickBASIC Versions 2.00, 2.01, and 3.00, you can perform DOS
+Interrupts by calling the external routine INT86. In QuickBASIC
+Versions 4.00, 4.00b, and 4.50, you can call the external routines
+INT86OLD INT86XOLD INTERRUPT and INTERRUPTX.
+
+It is difficult to find the current DTA of a program (and its offset
+is subject to change without notice); therefore, it is better to ask
+DOS (via INT 21, function Hex 1A "Set DTA") to reassign the DTA to a
+location over which you have control. For the application indicated,
+you should try the following:
+
+1. Issue the DOS function call to change the DTA address (INT 21,
+   function Hex 1A) to an address of a structure in your code space
+   (this way you will know where to find it).
+
+2. Perform your "Find first" (INT 21, function Hex 4E).
+
+3. Perform your loop of "Continue file search" (INT 21, function Hex
+   4F).
+
+Within your loop you may check your variables in the structure as
+desired. The "Microsoft MS-DOS Programmer's Reference" manual includes
+an example of how to set up the structure for the DTA in assembler.
+
+The book "Advanced MS-DOS," by Ray Duncan (Microsoft Press, 1986) also
+is a very helpful reference for using DOS function calls.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

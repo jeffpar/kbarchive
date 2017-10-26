@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66640/","publisher":null,"image":null,"headline":"Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66640-sample-increasing-the-file-handle-limit-with-sethandlecount">Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66640
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kbOSWin310 kbOSWin300 kb16bitonly
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows-based applications can access more than 20 files. To do this, call the
+SetHandleCount() function with the number of files needed for the application.
+The return value from this function specifies the exact number of handles that
+the application can use. Note that the maximum number of handles that can be
+requested is 255, and what is returned can be a number less than requested.
+
+There is a sample application named HANDLCNT in the Microsoft Download Center
+that demonstrates the use of SetHandleCount().
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Handlcnt.exe
+  (http://download.microsoft.com/download/platformsdk/sample30/1/W31/EN-US/HANDLCNT.EXE)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Every Windows-based application is given enough memory when it is loaded to
+access 20 file handles. This default setting is the same as the setting used in
+the C run-time libraries. Similarly, the first 5 handles are reserved for basic
+file I/O, as with any other MS-DOS-based application, leaving the other 15
+available for the Windows-based application to use.
+
+When you call SetHandleCount(), the file handle location in the application's
+program segment prefix (PSP) is expanded to reflect the number of files
+requested. Because the PSP is unique for every instance of every application,
+the change in the file handle count will be internal to the application that
+called SetHandleCount(). No other changes are made in the system. Furthermore,
+the number of files that may be opened by this application, set by
+SetHandleCount(), is not limited by the FILES environment variable, declared in
+the CONFIG.SYS file.
+
+To use these handles, you must also use the Windows file I/O routines (_lopen(),
+_lclose(), _lread(), and so forth). These routines are versions of the C
+run-time routines modified to accept a handle value greater than If the Windows
+file I/O functions do not offer enough flexibility, routines must be written by
+the ISV with the appropriate functionality using Int 21H calls. If Int 21H calls
+are to be used, we recommend that these calls be performed in a dynamic-link
+library (DLL). Doing this will make it easier to service the code in the future
+if significant changes are made with the Windows file I/O routines.
+
+If you want to use the C run-time functions instead of using the Windows file I/O
+routines or writing each routine separately, you must modify the C run-time code
+to increase the file handle limit. For more information on increasing the file
+limit, query in the C language Knowledge Base or consult the documentation
+supplied with the Microsoft C Compiler. Once the C run-time code has been
+modified, the C run-time routines can be used within the limit of file handles
+set during the modification. A modified C run-time routine will fail if it is
+passed a file handle value greater than the new limit that was set.
+
+The above approaches are the only acceptable methods of using more than the
+default 20 file handles in a Windows-based application. If you attempt to
+increase the number of files by calling Int 21H, Function 67H, important
+information will not be recorded in Windows and you will experience problems
+using file handles over the default number.
+
+Additional query words: HANDLCNT.EXE kbfile
+
+======================================================================
+Keywords          : kbfile kbsample kbOSWin310 kbOSWin300 kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

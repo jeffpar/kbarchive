@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188386: XFOR: Error Removing Directory Synchronization Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188386: XFOR: Error Removing Directory Synchronization Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188386/","publisher":null,"image":null,"headline":"Q188386: XFOR: Error Removing Directory Synchronization Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188386-xfor-error-removing-directory-synchronization-objects">Q188386: XFOR: Error Removing Directory Synchronization Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188386
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When removing a directory synchronization server (DXA server), directory
+synchronization requestor, or a remote directory synchronization requestor using
+Microsoft Exchange Server Administrator program, you may receive the following
+error messages:
+
+  An internal processing error has occurred: Naming Violation
+  Microsoft Exchange Directory
+  ID no: DS_E_NAMING_VIOLATION
+
+  The object cannot be found in the directory.
+  This may be because replication has not completed.
+  Microsoft Exchange Directory
+  ID no: c1010aae
+
+  The attribute does not exist
+  Microsoft Exchange Directory
+  ID no: DS_E_NO_SUCH_ATTRIBUTE_OR_VALUE
+
+CAUSE
+=====
+
+These errors may occur if the Microsoft Mail Connector for PC Networks was
+removed through Add/Remove Components in the Exchange Server Setup before
+deleting the directory synchronization (dirsync) objects, (dirsync requestor,
+dirsync server, and so on) through the Microsoft Exchange Server Administrator
+program.
+
+WORKAROUND
+==========
+
+To work around this behavior, you need to delete the directory synchronization
+server object. To do this, follow these steps:
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+  typing the following at a command prompt:
+
+  admin /r
+
+  WARNING: Using the raw mode of the Exchange Server Administrator program
+  (admin/r) incorrectly can cause serious problems that may require you to
+  reinstall Microsoft Windows NT Server and/or Microsoft Exchange Server.
+  Microsoft cannot guarantee that problems resulting from the incorrect use of
+  raw mode can be solved. Use raw mode at your own risk.
+
+2. Expand on Site, Configuration, Servers, &lt;Server Object&gt;, and then
+  select the Directory Service object.
+
+3. On the File menu, click Raw Properties.
+
+4. From the Object Attributes list, select the OBJ-DIST-NAME.
+
+5. Select the text in the Edit Value text box, copy it to the Clipboard, and
+  then click OK.
+
+6. Expand on Site, Configuration, Connections, and then select &lt;Dirsync
+  Server Object&gt;. On the File menu, click Raw Properties.
+
+7. In the Raw Properties dialog box, select All from the "List Attributes of
+  Type" drop-down box.
+
+8. Find the Responsible-Local-DXA property.
+
+9. Select the text in the Edit Value text box, and then paste the address of the
+  Directory Synchronization Object that you copied to the Clipboard in step
+  five.
+
+10. Click Set, and then click OK.
+
+11. Select the "Directory Synchronization Server Object" and delete it.
+
+  Doing so may generate a "Constraint_Violation" error message, but you should
+  be able to delete the object after the error.
+
+MORE INFORMATION
+================
+
+The proper way to remove a Microsoft Mail Connector is to remove the Directory
+Synchronization objects from within Exchange Server Administrator program before
+removing the component through the Setup Add/Remove feature.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

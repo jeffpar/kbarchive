@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170551: ADT/ODE: Transporter and Synchronizer Can’t Share Log File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170551: ADT/ODE: Transporter and Synchronizer Can’t Share Log File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170551/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170551/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170551/","publisher":null,"image":null,"headline":"Q170551: ADT/ODE: Transporter and Synchronizer Can’t Share Log File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170551-adtode-transporter-and-synchronizer-cant-share-log-file">Q170551: ADT/ODE: Transporter and Synchronizer Can’t Share Log File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170551
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbother
+Last Modified: 16-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+- Microsoft Access Developer's Toolkit, version 7.0 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+
+SYMPTOMS
+========
+
+When you start Microsoft Replication Manager, you may receive the following
+error message:
+
+  Sharing Violation while attempting to open log file &lt;path to log file&gt;
+  in Deny Write mode.
+
+This is followed by the following error, depending on which version you are
+using.
+
+  
+
+  In Microsoft Replication Manager 3.5:
+
+  Microsoft Replication Manager can't start the Synchronizer. Without the
+  Synchronizer running, no synchronization of data can occur.
+
+  Do you want to work without the Synchronizer?
+
+  Synchronizer could not be initialized.
+
+  In Microsoft Replication Manager 3.0:
+
+  Microsoft Replication Manager can't start the Transporter. Without the
+  Transporter running, no synchronization of data can occur.
+
+  Do you want to work without the Transporter?
+
+  Transport could not be initialized.
+
+CAUSE
+=====
+
+You are trying to run Transporter and Synchronizer at the same time, and both
+are configured to use the same log file.
+
+RESOLUTION
+==========
+
+Reconfigure either Transporter or Synchronizer to use a different log file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access Developer's
+Toolkit 7.0 and Microsoft Office 97 Developer Edition Tools.
+
+MORE INFORMATION
+================
+
+When Synchronizer and Transporter start, they attempt to open their log files
+for write access, and deny write access to other applications. If Synchronizer
+and Transporter are configured to use the same log file, the first application
+started can successfully access the log file for this mode. However, this
+prevents the second application from accessing the file in the same mode, and an
+error occurs during startup.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Microsoft Replication Manager 3.0.
+
+2. On the Tools menu, click Configure Microsoft Replication Manager.
+
+3. Add a managed folder if one is not in the list, and then click Next. The
+  folder you select does not need to contain any replicas.
+
+4. Select a shared network folder for indirect synchronizations, and then click
+  Next.
+
+5. In the "Path to Log File" box, type:
+
+  " C:\My Documents\Transporter.log" (without the quotation marks)
+
+  Click Finish. Transporter will start on your computer.
+
+6. On the File menu, click Exit and Stop Transporter.
+
+7. Start Microsoft Replication Manager 3.5.
+
+8. On the Tools menu, click Configure Microsoft Replication Manager.
+
+9. Click Next.
+
+10. Click to select the Support Indirect Synchronization check box, and then
+  click Next.
+
+11. Click Next.
+
+12. Select a shared Network folder for indirect synchronizations, and then click
+  Next.
+
+13. Click No to indicate that your computer is not an Internet server, and then
+  click Next.
+
+14. In the "Path to Log File" box, type:
+
+  " C:\My Documents\Transporter.log" (without the quotation marks)
+
+  Note that this is the same path selected for the log file in step 5.
+
+15. Click Finish. Synchronizer will start on your computer.
+
+16. Quit Microsoft Replication Manager 3.5. Do not stop Synchronizer.
+
+17. Start Microsoft Replication Manager 3.0. Note that you receive the errors
+  described in the "Symptoms" section.
+
+REFERENCES
+==========
+
+For more information about the Synchronizer log file, search the Microsoft
+Replication Manager Help Index for "log, Synchronizer."
+
+Additional query words: can t
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

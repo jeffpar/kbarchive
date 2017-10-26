@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198798: XADM: Troubleshooting the InterOrg Synch Tool | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198798: XADM: Troubleshooting the InterOrg Synch Tool" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198798/","publisher":null,"image":null,"headline":"Q198798: XADM: Troubleshooting the InterOrg Synch Tool","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198798-xadm-troubleshooting-the-interorg-synch-tool">Q198798: XADM: Troubleshooting the InterOrg Synch Tool</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198798
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The InterOrg Synchronization tool is available in the Microsoft BackOffice
+Resource Kit, Second Edition. Microsoft Product Support Services (PSS) will use
+commercially reasonable efforts in addressing all support problems.
+
+The tool allows multiple Microsoft Exchange Server organizations to synchronize
+the contents of their directories.
+
+The connector works hierarchically, with a master service running in the master
+organization, and multiple requestor services running in the branch
+organizations. The Exchange Server computer of the master organization collects
+and distributes all of the directory changes from the branch organizations. The
+requestor service in each branch organization collects any changes that have
+occurred in the directory of that organization and exports these changes to the
+master service.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+There are a number of steps you can take if you encounter problems with the
+InterOrg Synchronization tool.
+
+1. Use the application event viewer to make sure that there are no errors.
+  Configure the event viewer with a 2-MB size, and configure it to wrap as
+  needed.
+
+2. Use Performance Monitor to review the number of threads the InterOrg process
+  uses. The InterOrg Synchronization service typically uses 11-20 Microsoft
+  Windows NT threads. If it is using only five threads, this typically means
+  that the service does not have a valid mailbox to log on with.
+
+3. Use the Exchange Client to view what the InterOrg service sends and receives.
+  Because the service uses an Exchange Server mailbox to send and receive
+  requests, it is sometimes possible to troubleshoot messaging problems in this
+  way. To do this, configure an Exchange Server profile that can open the
+  master and requestor mailboxes. Do not use the Master or Requestor profiles
+  directly, as this prevents the service from processing any messages.
+
+  After you configure the profile, open the Sent Items folder of each mailbox to
+  see what messages each service has sent to the other. In the Deleted Items
+  folder you can find the messages each service has received from the other.
+  Because the InterOrg service uses a Microsoft Access 97 compatible file
+  format, you can use Microsoft Access 97 to view the contents of the messages.
+  It is also a good idea to periodically erase the Sent Items and Deleted Items
+  folder of the Master and Requestor agent.
+
+4. If the InterOrg service does not process data even though it is correctly
+  configured, there may be a versioning problem with the ODBC drivers. In this
+  case, you can try reinstalling the ODBC drivers from the ValuPack\DataACCC
+  directory of the Microsoft Office 97 CD. The latest ODBC Drivers can be
+  obtained from the following location:
+
+  http://www.microsoft.com/downloads/
+
+5. Make sure you have not made any unsaved changes to the InterOrg service
+  configuration. For example, if you remove an export container from the
+  requestor service, make sure you close the InterOrg Configuration dialog box
+  prior to the next scheduled replication cycle. Note that container removal
+  only takes place during the scheduled replication cycle.
+
+6. Turn up Diagnostic logging on the tool from 2 to 5, and review the
+  application log for errors.
+
+  a. Start Registry Editor (Regedt32.exe) on both MASTER and REQUESTOR Servers.
+
+  b. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\_Exchange Inter-Org
+  Synch\Config
+
+  c. Change Logging from 2 to 5.
+
+  d. Quit Registry Editor.
+
+  e. Stop and restart the InterOrg Synch Tool service on Both the MASTER and
+     REQUESTOR Server computers for the settings to take effect.
+
+NOTE: The InterOrg Synch tool does not scale well above 10,000 users. If greater
+scalability is required, the user or the administrator should consider the
+Microsoft Metadirectory Services (Exchange Agent) for Replication.
+
+More information about this tool can be obtained from the following Microsoft Web
+sites:
+
+  http://www.microsoft.com/WINDOWS2000/guide/server/features/mms.asp
+
+  http://www.microsoft.com/technet/win2000/metadire.asp
+
+
+Additional query words: t-shoot tshot dirsynch Synch BORKIII GAL replication
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

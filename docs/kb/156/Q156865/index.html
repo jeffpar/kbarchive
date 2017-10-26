@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156865/","publisher":null,"image":null,"headline":"Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156865-prb-programmatically-converting-30-project-in-50-fails">Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156865
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp600
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 3.0 or 3.0b, a FoxPro 2.x project can be programmatically
+converted with the MODIFY PROJECT &lt;project name&gt; command. However, in
+Visual FoxPro 5.0, the command MODIFY PROJECT &lt;project name&gt; results in
+the following error:
+
+  The wrong parameters were passed to the converter. To convert files, open
+  them from the file menu.
+
+CAUSE
+=====
+
+New codes have been added to the Visual FoxPro 5.0 converter to preserve the
+Visual FoxPro 3.0 default. These changes require running the CONVERT program
+before issuing the MODIFY PROJECT command.
+
+RESOLUTION
+==========
+
+You can convert a FoxPro 2.x project programmatically in Visual FoxPro 5.0 by
+running the Convert.app first, as follows:
+
+     DO CONVERT WITH pFileName, pFileType, pVersion, pProgCall
+     MODIFY PROJECT pFileName
+
+The following applies to the above code:
+
+- pFileName. The fully qualified name of file to convert, require character
+  type.
+
+- pFileType. Type of file, require character type, for example: PROJECT.
+
+- pVersion. Version of file, require character type, for example: 2.6 or 3.0.
+
+- pProgCall. New parameter--use .T., if CONVERT.APP is being called from within
+  another program or application.
+
+Here is an example:
+
+     DO Convert WITH "c:\FPW26\OLD.PJX", "PROJECT", "2.6", .T.
+     MODIFY PROJECT c:\FPW26\OLD.PJX
+
+NOTE: In the DO CONVERT command above the word "PROJECT" must be capitalized.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a FoxPro 2.6 or Visual FoxPro 3.0 project called "Old.pjx" (without
+  the quotation marks).
+
+2. In Visual FoxPro 5.0 create a .prg file and put the following code the .prg
+  file:
+
+        SET TALK OFF
+        MODIFY PROJECT C:\FPW26\OLD.PJX
+
+3. Run the program.
+
+Additional query words: VFoxWin kbdse
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243777/","publisher":null,"image":null,"headline":"Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243777-nothing-happens-when-you-click-save-in-save-file-as-box">Q243777: Nothing Happens When You Click Save in "Save File As" Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243777
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:2000,95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 98 
+- Microsoft Windows 98 Second Edition 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Save in the Save File As common dialog box, nothing may happen,
+or the contents of the Look In box may change.
+
+CAUSE
+=====
+
+This behavior can occur if the the File Name box contains an asterisk (*) or
+question mark (?). These characters are reserved for use as wildcards and cannot
+be used in a file name.
+
+RESOLUTION
+==========
+
+Specify a file name that does not contain an asterisk or question mark.
+
+STATUS
+======
+
+This behavior is by design and is shared by all Windows-based programs that use
+the common Save File As dialog box.
+
+MORE INFORMATION
+================
+
+You can use wildcards to reference more than one file name by using special
+characters. A wildcard is a character (either an asterisk or a question mark)
+that is used to express that any combination of characters is allowed in a
+certain section of a string. For example, if you want to list all files that
+begin with the string "user" but can contain any other characters and any
+extension, use the following wildcard:
+
+  user*.*
+
+If you want to list all files that start with any character, then contain the
+string "user" and have any extension, use the following wildcard:
+
+  ?user*.*
+
+File names that contain other illegal characters, such as a colon (:), generate
+the following error message:
+
+  &lt;Filename&gt; This filename is not valid.
+
+The characters that are valid for a file or folder name include any combination
+of letters (A-Z) and/or numbers (0-9), plus the following special characters:
+
+  $   Dollar sign
+  %   Percent 
+  '   Apostrophe
+  `   Opening single quotation mark
+  -   Hyphen
+  @   At sign
+  {   Left brace
+  }   Right brace
+  ~   Tilde
+  !   Exclamation point
+  #   Number sign
+  (   Opening parenthesis
+  )   Closing parenthesis
+  &amp;   Ampersand 
+  _   Underscore
+  ^   Caret
+      space
+  +   Plus sign
+  ,   Comma
+  .   Period
+  =   Equal sign
+  [   Opening bracket
+  ]   Closing bracket
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWin98SEsearch kbWinAdvServSearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:2000,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

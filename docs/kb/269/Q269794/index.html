@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/269/Q269794/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/269/Q269794/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/269/Q269794/","publisher":null,"image":null,"headline":"Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q269794-prb-mapi-advise-call-returns-0x8007000e-e_outofmemory">Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q269794
+Product(s): Microsoft Exchange
+Version(s): 1.0,5.5
+Operating System(s): 
+Keyword(s): kbMAPI kbMsg kbDSupport exc55
+Last Modified: 13-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Extended Messaging Application Programming Interface (MAPI), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call the Advise function about 7800 to 7900 times, the next Advise call
+may fail with the error 0x8007000E (E_OUTOFMEMORY).
+
+
+CAUSE
+=====
+
+Notifications, which are registered by calling Advise, use a shared memory
+space. By default the heap size is set as 0x100000. If the heap size is exceeded
+when registering a new notification, the E_OUTOFMEMORY error is returned.
+
+This limit is system-wide; in other words, if you are running two programs that
+call Advise, the combined maximum for both programs should be less than 7900.
+
+WORKAROUND
+==========
+
+You can configure the heap size to be as high as 0x800000 by setting the
+following registry keys:
+
+  "HKLM\SOFTWARE\Microsoft\Windows Messaging Subsystem\SharedMemMaxSize
+  HKLM\SOFTWARE\Microsoft\Windows Messaging
+  Subsystem\Applications\MyApp\SharedMemMaxSize" (without the quotation marks)
+
+NOTE: The application that first calls the MAPIInitialize function sets the
+global heap size. Therefore, if Mad.exe (the System Attendant) is the first to
+start, you must make sure that the registry key is set for Mad.exe as well.
+
+Additional query words: 0x8007000E E_OUTOFMEMORY
+
+======================================================================
+Keywords          : kbMAPI kbMsg kbDSupport exc55 
+Technology        : kbAudDeveloper kbMAPISearch kbExchangeSearch kbExchange550 kbZNotKeyword kbZNotKeyword2 kbMAPIExt
+Version           : :1.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

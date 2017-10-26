@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137450/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137450/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137450/","publisher":null,"image":null,"headline":"Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137450-howto-set-up-and-troubleshoot-macintosh-communications">Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137450
+Product(s): Microsoft C Compiler
+Version(s): MAC:2.0;
+Operating System(s): 
+Keyword(s): kbtshoot
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is designed to help you properly set up and troubleshoot network
+and serial communications between a PC and a Macintosh for file transfer and
+debugging.
+
+This article is divided into four sections:
+
+1. Verify network communication parameters
+
+2. Verify serial communication parameters
+
+3. Troubleshoot file transfers
+
+4. Troubleshoot remote debugging
+
+MORE INFORMATION
+================
+
+SECTION 1: VERIFY NETWORK COMMUNICATION PARAMETERS
+--------------------------------------------------
+
+Verify the Physical Network Connection
+--------------------------------------
+
+What type of network cable are you using: ThinNet (coax cable that looks like
+cable TV wire), ThickNet (fat cable with 15 pin connectors on the ends), or
+Twisted Pair (looks like telephone wire)?
+
+ThinNet and ThickNet are considered active networks and allow direct connections
+between the two computers. Twisted Pair is a passive network and requires both
+computers to be plugged into a net hub or similar device before the network
+connection can be active between the two machines. Simply hooking up two
+machines using Twisted-pair will not work unless one of the network cards is a
+net hub or there is a net hub between the two network cards.
+
+Verify the Macintosh Network Settings
+-------------------------------------
+
+1. Verify the Macintosh communications setup by clicking the Macintosh Control
+  Panel on the Apple Menu (the Apple icon at the leftmost position of the menu
+  bar). Verify these settings:
+
+  a. Sharing Setup control panel
+
+     Under Network Identity, type and note the Macintosh Name. Don't worry about
+     the Macintosh Owner field; Visual C++ doesn't use it.
+
+  b. Network control panel
+
+     Ensure you are using EtherTalk. Note the Zone you are located in. If it
+     says &lt; No zones available &gt;, you are in a peer-to-peer network and
+     no zone is required.
+
+  c. Visual C++ Debug Monitor control panel
+
+     Make sure this and the other Visual C++ Macintosh components are installed.
+     Ensure that Network (AppleTalk) is highlighted in the connection list.
+     Click Settings; then type and note the debug password (Case sensitive).
+
+2. Restart the Macintosh computer to ensure that the current network and debug
+  settings are used.
+
+3. Make sure the Visual C++ File Utility and WLM Debug Output are both up and
+  running. You can check this by looking in the Application Menu. Click the
+  icon that appears in the far right of the menu bar. This is similar to the
+  Task List in Windows.
+
+  NOTE: These can be made to start automatically when the computer starts by
+  creating aliases to these two programs and moving the aliases to the System
+  Folder:Startup Items: folder. To create an alias, click the program icon and
+  then click Make Alias on the Finder File menu.
+
+  You are now finished verifying the Macintosh communications setup
+
+Verify the PC Network Settings
+------------------------------
+
+1. Ensure that Appletalk is installed and running under Windows NT. Check this
+  by clicking the Networks icon in the Control Panel. If it isn't installed,
+  click Add Protocol, and add AppleTalk.
+
+2. Within the Visual C++ development environment, complete these steps:
+
+  a. On the Project menu, click Settings, and then click the Debug tab.
+
+     "Executable for Debug Session:"
+
+     This is the location for the executable on the local Windows NT computer.
+     Under a Debug build, it is usually here:
+
+  &lt;project_dir&gt;\MacDebug\MyProgram.EXE
+
+     For Release build, it is usually here:
+
+  &lt;project_dir&gt;\MacRel\MyProgram.EXE
+
+     "Remote Executable Path and File Name:"
+
+     This is where you want the remote executable to be placed. Macintosh uses
+     colons (:) as a separator between folders (analogous to directories on
+     PCs). Unlike PCs, Macintosh hard drives are addressed by their full volume
+     names as opposed to single hard drive letters. The proper format for
+     specifying the full path on the Macintosh is:
+
+  &lt;Macintosh HD name&gt;:&lt;Folder&gt;:&lt;Program Name&gt;
+
+     So, to specify a filename "My MacProg" to be stored on a hard drive named
+     "BobHD" in a folder (directory) named "Testing", you would enter:
+
+  BobHD:Testing:My MacProg
+
+  b. On the Tools menu, click Options, and click the Debug tab.
+
+     1. Ensure that Remote Debugging is enabled.
+
+     2. Click the Connection button.
+
+         - Ensure that Platform: is set to Macintosh.
+
+         - Ensure that Connection: is set to Network (AppleTalk).
+
+         - Click Settings, and make sure Macintosh Name, Macintosh Zone, and
+           Debug Monitor Password all match up with what is set on the
+           Macintosh (see previous section). If there is no Zone, enter "*" as
+           Macintosh Zone.
+
+SECTION 2: VERIFY SERIAL COMMUNICATION PARAMETERS
+-------------------------------------------------
+
+Due to a bug with serial communications on the Visual C++ Cross-Development
+Edition, the network Macintosh Name and Zone are required.
+
+Ensure that you have the null modem cable properly connected between the two
+computers. Also note which serial port you are using on both machines. For
+Windows NT, it may be COM1, COM2, COM3, or COM4. For Macintosh, it may be either
+MODEM (phone handset symbol) or PRINTER (printer symbol).
+
+Verify the Macintosh Serial Settings
+------------------------------------
+
+1. Verify the Macintosh serial settings by clicking the Macintosh Control Panel
+  on the Apple Menu (the Apple icon at the leftmost position of the menu bar).
+  Verify these settings:
+
+  a. Sharing Setup control panel
+
+     Under Network Identity, type and note the Macintosh Name. Don't worry about
+     the Macintosh Owner field. Visual C++ doesn't use it.
+
+  b. Network control panel
+
+     Note the Zone in which you are located, even if it says &lt; No zones
+     available &gt;.
+
+  c. Visual C++ Debug Monitor control panel
+
+     Make sure this and the other Visual C++ Macintosh components are installed.
+     Ensure that Serial is highlighted in the connection list. Click Settings.
+     Note the connection settings and make sure you are using the correct port
+     the serial cable is attached to.
+
+2. Restart the Macintosh to ensure the current serial and debug settings are
+  used.
+
+3. Make sure the Visual C++ File Utility and WLM Debug Output are both up and
+  running. You can check this by looking in the Application Menu. Click the
+  icon that appears in the far right of the menu bar. This is similar to the
+  Task List in Windows.
+
+  NOTE: These can be made to start automatically when the computer starts by
+  creating aliases to these two programs and moving the aliases to the System
+  Folder:Startup Items: folder. To create an alias, click the program icon and
+  then click Make Alias on the Finder File menu.
+
+  You are now finished verifying the Macintosh communications setup
+
+Verify the PC Serial Settings
+-----------------------------
+
+Verify the PC serial settings within the Visual C++ development environment by
+following these steps:
+
+1. On the Project menu, click Settings, and click the Debug tab.
+
+  Executable for Debug Session
+
+  This is the location for the executable on the local Windows NT computer.
+  Under a Debug build, it is usually here:
+
+  &lt;project_dir&gt;\MacDebug\MyProgram.EXE
+
+  For a Release build, it is usually here:
+
+  &lt;project_dir&gt;\MacRel\MyProgram.EXE
+
+  Remote Executable Path and File Name
+
+  This is where you want the remote executable to be placed. Macintosh uses
+  colons (:) as a separator between folders (analogous to directories on PCs).
+  Unlike PCs, Macintosh hard drives are addressed by their names as opposed to
+  single letters. The proper format for specifying the full path on the
+  Macintosh is:
+
+  &lt;Macintosh HD name&gt;:&lt;Folder&gt;:&lt;Program Name&gt;
+
+  For example, to specify a filename "My MacProg" to be stored on a hard drive
+  named "BobHD" in a folder (directory) named "Testing," you would enter this:
+
+  BobHD:Testing:My MacProg
+
+2. On the Tools menu, click Options, and click the Debug tab.
+
+  a. Ensure that Remote Debugging is enabled.
+
+  b. Click the Connection button.
+
+  c. Set Platform: to Macintosh.
+
+  d. Set Connection: to Network (AppleTalk).
+
+  e. Click Settings and make sure Macintosh Name and Macintosh Zone match up
+     with what is set on the Macintosh. If there is no zone or Macintosh name,
+     type anything for the Macintosh name and "*" as the Macintosh Zone.
+
+  f. Leave the Debug Monitor Password blank, and click OK.
+
+  g. Set Connection: to Serial, and click OK. You are now finished verifying
+     the PC communications setup.
+
+SECTION 3: TROUBLESHOOT FILE TRANSFERS (MFILE)
+----------------------------------------------
+
+MFILE is the utility that Visual C++ uses to transfer files between the PC and
+the Macintosh. This is usually executed by: the build process, the "Update
+Remote Output File" option under the Tools menu, or a command entered at the
+command line.
+
+1. Ensure that the communication settings are correct on both the Macintosh and
+  the PC as documented in Section 1 or 2 of this article. Improper
+  configuration and setup are the main causes of communication problems.
+
+2. If you are using a serial connection:
+
+  a. Exit Visual C++. Visual C++ takes over the serial port when it starts.
+     This will prevent you from testing the serial connection.
+
+  b. Try to use Terminal or a similar communications program to communicate to
+     a communications program running on the Macintosh. This is all documented
+     in the Macintosh Components Help file on the Macintosh in the Visual C++
+     2.0 Folder. There is a help section called "Troubleshooting: Communication
+     Problems" that explains this in more detail.
+
+  c. Ensure that the Visual C++ File Utility is up and running. As noted in
+     Section 2 of this article, you need to make sure the Macintosh Name and
+     Zone are entered into the Network connections settings on the PC side.
+
+3. If you are using a network connection:
+
+  a. Ensure that the cables are connected properly. If you are on a network
+     with other computers, check to see if you can "see" other computers or
+     printers on the network.
+
+  b. Ensure that the network protocols are installed and running on each of the
+     computers.
+
+  c. Go through Section 1 of this article, and verify that everything is is set
+     correctly.
+
+4. Ensure that the Macintosh has a name in the Sharing Setup applet in the
+  Control Panel. Also make sure the name set in the Connection Settings on the
+  PC matches. Check the Help file mentioned in Step 2 of this section for
+  additional suggestions.
+
+5. If you are receiving an MFILE error (MFxxxx), check to make sure the Visual
+  C++ File Utility is actually running and that it is in the user's Startup
+  Folder on the Macintosh. This error occurs when the Macintosh can't be found
+  or the Visual C++ File Utility is not started.
+
+6. If you are receiving one of the following errors, make sure the name of the
+  remote output file is specified on the Debug tab reached by clicking Settings
+  on the Project menu:
+
+   - 
+
+  MF4017 (no Mac specified for volume mount) or
+
+   - 
+
+  MF4007 (all source files must be on the Mac xxx is not)
+
+  The typical cause of these errors is that the name of the remote output file
+  is not entered correctly. Please refer to Section 1 or 2 of this article for
+  a discussion of how it should be entered.
+
+SECTION 4: TROUBLESHOOT REMOTE DEBUGGING PROBLEMS
+-------------------------------------------------
+
+Ensure the communication settings are correct on both the Macintosh and PC as
+documented in Section 1 or 2 of this article. Improper configuration and setup
+are the main causes of communication problems.
+
+1. Check for conflicting INITs. INITs are like device drivers. They are in the
+  System Folder in the Extensions Folder. There is already at least one known
+  conflict with the Procomm SCSI drivers (see the release notes). Remove any
+  unnecessary INITs.
+
+2. Try to run the application standalone. Just like the Intel debugger, a very
+  unstable application can cause unusual behavior in the debugger.
+
+3. Try building and debugging one of the sample applications such as HELLO. If
+  you can debug the sample application, there may simply be a problem with your
+  application binary itself.
+
+4. Restart the Macintosh. Sometimes the Macintosh may have been in an unstable
+  state that prevented proper debugging to occur.
+
+5. Try switching the connection from Serial to Network or vice-versa. This will
+  require use of a Null-modem cable for a serial connection. It may be just the
+  physical connection or driver problem.
+
+6. If you are using a Macintosh with a 680x0 processor, check the Memory Control
+  Panel. In one unconfirmed case, 32-bit addressing being off caused a debugger
+  failure.
+
+7. If possible, try accessing another Macintosh. If this works, you may have a
+  configuration problem with the Macintosh or a conflict with at least one of
+  the INITs installed.
+
+
+======================================================================
+Keywords          : kbtshoot 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev200Mac
+Version           : MAC:2.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262146/","publisher":null,"image":null,"headline":"Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262146-xcon-messages-to-custom-recipients-are-undeliverable-with-sp1">Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262146
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP1
+Operating System(s): 
+Keyword(s): exc55sp1
+Last Modified: 28-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Exchange Server 5.5 Service Pack 1 (SP1), messages that you send
+to Fenestrae Faxination custom recipients are returned as undeliverable by the
+message transfer agent (MTA) with the following non-delivery report:
+
+  Your message did not reach some or all of the intended recipients.
+
+  Subject: Test Fax
+  Sent: 11/22/99 12:55 PM
+
+  The following recipient(s) could not be reached:
+
+  FaxTest on 11/22/99 12:55 PM
+  The recipient name is not recognized
+  The MTS-ID of the original message is: &lt;msg-id&gt;
+  MSEXCH:MSExchangeMTA:OrgName:SITENAME
+
+The MTA also records the following event:
+
+  Event ID: 290
+  Source: MSExchangeMTA
+  Category: X.400 Service
+  Type: Warning
+  Description: A non-delivery report was (reason code unable-to-transfer and
+  diagnostic code unrecognized-OR-name) is being generated for message
+  &lt;msg-id&gt;. It was originally destined for &lt;Faxination Custom
+  Recipient&gt;, and was to be redirected to . [MTA DISP:RESULT 19 136] (12)
+
+Additional notes about this problem:
+
+- This problem cannot be reproduced with the original release of Exchange
+  Server 5.5.
+
+- This problem cannot be reproduced if Exchange Server 5.5 Service Pack 2 (SP2)
+  or later is applied without first installing SP1.
+
+- When you apply SP2 or later, the problem is not resolved.
+
+CAUSE
+=====
+
+This problem may be caused by the lack of an X.400 proxy address for the custom
+recipients.
+
+RESOLUTION
+==========
+
+To resolve this problem, add an X.400 proxy address for all custom recipients.
+You can do this manually in the Exchange Administration program or
+programmatically by using a variety of tools.
+
+MORE INFORMATION
+================
+
+Exchange Server versions 4.0 through 5.5 are all X.400-based, and the routing of
+messages depends heavily on X.400 addresses. It is not typical that an Exchange
+Server-based computer routes messages to objects without X.400 proxy addresses,
+but it is typical that an Exchange Server-based computer returns such messages
+as undeliverable.
+
+To illustrate the importance of the X.400 proxy address, administrators may
+locate the Site Addressing object in the Configuration container of any site,
+and then click the Site Addressing tab in properties. If the administrator
+attempts to clear the X.400 E-mail address, the administrator receives the
+following error message:
+
+  The X.400 site address cannot be disabled. All recipients must have an X.400
+  address in Microsoft Exchange.
+
+There is no way to remove or disable the X.400 site proxy address. However, the
+Exchange Server-based computer does allow administrators to remove X.400 proxy
+addresses for recipients, custom recipients, and distribution lists, and the
+administrator does not receive any warning messages when they do this.
+Administrators are therefore cautioned to only remove proxy addresses when they
+are fully aware of the implications of that action.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp1 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5 SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

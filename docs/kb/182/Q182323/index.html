@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182323: BUG: ClassView Add… Errors with Read-Only Project Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182323: BUG: ClassView Add… Errors with Read-Only Project Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182323/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182323/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182323/","publisher":null,"image":null,"headline":"Q182323: BUG: ClassView Add… Errors with Read-Only Project Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182323-bug-classview-add-errors-with-read-only-project-files">Q182323: BUG: ClassView Add… Errors with Read-Only Project Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182323
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbActiveX kbCOMt kbCtrl kbide kbInprocSvr kbMFC kbVC kbVC420 kbVC500 kbVC500bu
+Last Modified: 12-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassView offers the following four options for classes on the shortcut menu:
+
+- Add Member Function
+
+- Add Member Variable
+
+- Add Virtual Function
+
+- Add Windows Message Handler
+
+These operations fail if project source files are read-only.
+
+The first two operations fail displaying one of the following messages:
+
+  One or more of the files for ... are read-only.
+
+  The implementation file for class ... cannot be found.
+
+The last two operations listed above fail without any message or visual cue. They
+may not be presented as options.
+
+CAUSE
+=====
+
+Source file permissions are read-only, perhaps due to source control.
+
+RESOLUTION
+==========
+
+Change the source file permissions to permit write access. In a source control
+environment, this may require checking out the file, or having the file's
+current owner check it back in.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The .ncb file contains ClassView browser information. If it is read-only at the
+time Visual C++ opens the project, ClassView is unavailable. The .clw file
+contains ClassWizard information. If it is read-only at the time Visual C++
+opens the project, the Add Virtual Function and Add Windows Message Handler
+options are unavailable on the ClassView context menu for classes.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new MFC AppWizard (exe) project.
+
+2. Change the file permissions to read-only for all files except the .ncb file.
+
+3. Right-click a class in ClassView; select Add Member Function or Add Member
+  Variable.
+
+  NOTE: A message box appears, but the "Add..." dialog box does not.
+
+4. Right-click Add Virtual Function or Add Windows Message Handler.
+
+  NOTE: No visible response occurs.
+
+5. Close the workspace and reopen it.
+
+6. Right-click a class in ClassView. The Add Virtual Function and Add Windows
+  Message Handler options do not appear on the context menu.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q140252 PRB: ClassWizard Disables Add Function &amp; Add Variable Buttons
+
+REFERENCES
+==========
+
+Visual C++ online books: "File Types Created for Visual C++ Projects."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbActiveX kbCOMt kbCtrl kbide kbInprocSvr kbMFC kbVC kbVC420 kbVC500 kbVC500bug kbVC600 kbVC600bug kbClassWizard kbGrpDSMFCATL kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

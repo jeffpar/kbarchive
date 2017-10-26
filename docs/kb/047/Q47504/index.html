@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47504: Some Instructions May Require Enabling of Instruction Set | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47504: Some Instructions May Require Enabling of Instruction Set" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47504/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47504/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47504/","publisher":null,"image":null,"headline":"Q47504: Some Instructions May Require Enabling of Instruction Set","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47504-some-instructions-may-require-enabling-of-instruction-set">Q47504: Some Instructions May Require Enabling of Instruction Set</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47504
+Product(s): Microsoft Macro Assembler
+Version(s): MS-DOS:5.0,5.1,5.1a,6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using an instruction that requires a 80186, 80286, or 80386 processor may cause
+the Microsoft Macro Assembler (MASM) 5.1 to generate the one of the following
+errors:
+
+  A2066: Must have instruction after prefix.
+
+  A2105: Expected: instruction, directive, or label
+
+and MASM 6.0 to generate the following error:
+
+  A2085: instruction or register not accepted in current CPU mode
+
+The error occurs because the default assembly mode is 8086. The .186, .286,
+.286p, .386, or .386p directive must be placed in the source code prior to any
+instructions that require those modes.
+
+In addition, MASM 6.0 supports 80486 instructions.
+
+MORE INFORMATION
+================
+
+The following information is taken from page 621 of the "Microsoft Macro
+Assembler Programmer's Guide" for MASM 6.0
+
+80186 Processor Instructions
+
+  BOUND        INSW         OUTSW
+  ENTER        LEAVE        POPA
+  INS          OUTS         PUSHA
+  INSB         OUTSB        PUSHW*
+
+80286 Processor Instructions
+
+  ARPL         SIDT         VERR
+  LAR          SLDT         VERW
+  LSL          SMSW
+  SGDT         STR
+
+80286 and 80386 Privileged-Mode Instructions
+
+  CLTS         LIDT         LMSW
+  LGDT         LLDT         LTR
+
+80386 Processor Instructions
+
+  BSF          LSS          SETNAE
+  BSR          MOVSD        SETNB
+  BT           MOVSX        SETNBE
+  BTC          MOVZX        SETNC
+  BTR          OUTSD        SETNE
+  BTS          POPAD        SETNG
+  CDQ          POPFD        SETNGE
+  CMPSD        PUSHAD       SETNL
+  CWDE         PUSHD*       SETNLE
+  INSD         PUSHFD       SETNO
+  IRETD        SCASD        SETNP
+  IRETDF*      SETA         SETNS
+  IRETF*       SETAE        SETNZ
+  JECXZ        SETB         SETO
+  LFS          SETBE        SETP
+  LGS          SETC         SETPE
+  LODSD        SETE         SETPO
+  LOOPD*       SETG         SETS
+  LOOPED*      SETGE        SETZ
+  LOOPNED*     SETL         SHLD
+  LOOPNZD*     SETLE        SHRD
+  LOOPZD*      SETNA        STOSD
+
+80486 Processor Instructions
+
+  BSWAP*       INVD*        WBINVD*
+  CMPXCHG*     INVLPG*      XADD*
+
+  * New to MASM 6.0
+
+Additional query words: kbinf 5.00 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : MS-DOS:5.0,5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

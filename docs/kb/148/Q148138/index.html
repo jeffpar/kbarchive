@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148138/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148138/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148138/","publisher":null,"image":null,"headline":"Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148138-enabling-mousekeys-feature-causes-invalid-vxd-error-in-enable2">Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148138
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you enable the MouseKeys feature in Windows 95, you may receive the
+following error message on a blue screen:
+
+  Invalid VxD dynamic link call from ENABLE2(01) + 00000A38 to device &lt;mouse
+  driver name&gt;, service 3.
+
+  Your Windows configuration is invalid. Run the Windows Setup program again to
+  correct this problem.
+
+CAUSE
+=====
+
+This problem can occur if a reference to "*Vmouse" is missing in the [386Enh]
+section of the System.ini file.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps:
+
+1. Boot your computer to a command prompt. To do so, restart your computer,
+  press the F8 key when you see the "Starting Windows 95" message, and then
+  choose Safe Mode Command Prompt Only from the Startup menu.
+
+2. Type the following line to change to the Windows folder, and then press
+  ENTER
+
+  " cd &lt;windows&gt; " (without the quotation marks)
+
+  where &lt;windows&gt; is the Windows folder.
+
+3. Type the following line and then press ENTER:
+
+  " edit system.ini " (without the quotation marks)
+
+4. Edit the "mouse=" line in the [386Enh] section of the file. Add "*Vmouse"
+  (without the quotation marks) after the equal sign (=).
+
+5. Save the System.ini file and then quit the editor.
+
+6. Restart your computer.
+
+If the mouse does not work after you restart the computer, reinstall the mouse
+driver. To do so, follow these steps:
+
+1. Press CTRL+ESC to open the Start menu.
+
+2. Press UP ARROW until Settings is selected, press RIGHT ARROW, and then press
+  ENTER to open Control Panel.
+
+3. Use the ARROW keys to select the Mouse icon, and then press ENTER.
+
+4. Press SHIFT+TAB, and then press RIGHT ARROW until the General tab is
+  selected.
+
+5. Press TAB until the Change button is selected, and then press SPACE BAR.
+
+6. Press TAB until Show Compatible Devices is selected, and then press DOWN
+  ARROW to select Show All Devices.
+
+7. Use the ARROW keys to select the correct manufacturer in the Manufacturers
+  box, press TAB, and then use the ARROW keys to select the correct model in
+  the Models box.
+
+8. Press TAB until OK is selected, and then press SPACE BAR.
+
+9. Press TAB until the Close button is selected, and then press SPACE BAR.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

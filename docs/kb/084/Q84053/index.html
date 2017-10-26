@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q84053: How a TSR Can Serialize Access to Its Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q84053: How a TSR Can Serialize Access to Its Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/084/Q84053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/084/Q84053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/084/Q84053/","publisher":null,"image":null,"headline":"Q84053: How a TSR Can Serialize Access to Its Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q84053-how-a-tsr-can-serialize-access-to-its-data">Q84053: How a TSR Can Serialize Access to Its Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q84053
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the enhanced mode of the Microsoft Windows graphical environment, each
+virtual machine (MS-DOS applications and the Windows system) is scheduled for
+execution using a preemptive multitasking algorithm. A terminate-and-
+stay-resident program (TSR) that is visible to all processes running in Windows
+at any given time (a so-called "global" TSR) must take precautions to prevent
+two or more processes from accessing its data concurrently. This article
+discusses techniques that a TSR can use to serialize other applications' access
+to its data.
+
+MORE INFORMATION
+================
+
+A TSR can employ any of the following four techniques to prevent conflicts when
+more than one process accesses data simultaneously:
+
+1. Use the virtual memory manager (VMM) to instance the data in the TSR. This
+  method requires either a virtual device (VxD) or processing the Windows
+  startup broadcast (Interrupt 2Fh Function 1605h) documented in the "Microsoft
+  Windows Device Development Kit Virtual Device Adaptation Guide." This
+  technique creates a copy of the critical data for each virtual machine that
+  requires access. Because each instance has its own private copy, concurrent
+  access to the data is impossible. A TSR cannot use instanced data to share
+  information between virtual machines or to describe a system-wide state for
+  the machine.
+
+2. Encapsulate the global data in a VxD, which performs all data management.
+  This article does not discuss this technique.
+
+3. Use the critical section services described in the "Microsoft Windows DDK
+  Virtual Device Adaptation Guide."
+
+4. Use semaphores.
+
+An application can implement the third technique by surrounding each access to
+the data with calls to the Begin_Critical_Section (Interrupt 2Fh, Function
+1681h) and End_Critical_Section (Interrupt 2Fh, Function 1682h) services.
+However, doing so can cause a significant performance hit for three reasons:
+
+1. Interrupt 2Fh may be trapped by many TSRs or VxDs; traversing the interrupt
+  chain can take a long time.
+
+2. The critical section is claimed by Windows frequently; each call to
+  Begin_Critical_Section may block the process or Windows unnecessarily.
+
+3. If the virtual timer device (VTD) reflects a timer interrupt into a virtual
+  machine while another VM has claimed the critical section, processing blocks.
+
+Note: The presence of an owned critical section does not suppress task switches
+into VMs that receive reflections of hardware interrupts.
+
+If the critical section is not required by the TSR for other reasons, the TSR can
+perform serialization much more efficiently by using a semaphore. A semaphore is
+a global variable in the TSR than can be maintained using the following code:
+
+      Wait_On_Sem:
+          mov     al,1
+          xchg    al,[Semaphor]   ;; xchg is indivisible!!!
+          test    al,0ffh
+          je      Got_Access      ;; If Semaphor was 0, gained access;
+          mov     ax,1680h        ;; otherwise,
+          int     2fh             ;; release time slice
+          jmp short Wait_On_sem   ;; and try again.
+
+     Got_Access:
+
+          &lt; access the data here &gt;
+
+          xor     al,al           ;; Free semaphore.
+          xchg    al,[Semaphor]
+
+This code uses the variable Semaphor as a binary semaphore that has either the
+value 1, indicating claimed, or 0, indicating free. Note that this technique
+depends on the indivisibility of the XCHG instruction. If the processor receives
+an interrupt while it is processing an indivisible instruction, the processor
+completes the instruction before processing the interrupt. In this example, the
+XCHG instruction transfers data between the AL register and the Semaphor
+variable. If XCHG was not indivisible and an interrupt occurred as the XCHG was
+being processed, two processes could receive the semaphore simultaneously, which
+defeats the mutual exclusion that the semaphore is designed to provide. Careful
+coding is required when using the semaphore because there is always a
+possibility of deadlocking a process.
+
+REFERENCES
+==========
+
+For more information on semaphores and mutual exclusion in general, refer to an
+introductory text on operating systems. One such text is "An Introduction to
+Operating Systems" by Harvey M. Deitel (Addison- Wesley).
+
+Additional query words: 3.00 3.10 DDKTSR DDKVXD
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

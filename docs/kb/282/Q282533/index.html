@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q282533: XADM: Exchange Server 5.5 Post-SP4 Information Store Fixes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q282533: XADM: Exchange Server 5.5 Post-SP4 Information Store Fixes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/282/Q282533/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/282/Q282533/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/282/Q282533/","publisher":null,"image":null,"headline":"Q282533: XADM: Exchange Server 5.5 Post-SP4 Information Store Fixes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q282533-xadm-exchange-server-55-post-sp4-information-store-fixes">Q282533: XADM: Exchange Server 5.5 Post-SP4 Information Store Fixes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q282533
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55kbfixlist
+Last Modified: 27-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the article numbers for Exchange Server 5.5 information store
+bugs that have been fixed since Exchange Server 5.5 Service Pack 4 was
+released.
+
+For information about how to obtain the fixes listed in this article, click the
+article number(s) listed in the "More Information" section of this article.
+
+NOTE: Exchange Server fixes for a particular component are cumulative and contain
+all of the previous fixes for that component. Fixes with a particular version
+number contain all of the fixes that have an earlier version number.
+
+MORE INFORMATION
+================
+
+Information store fixes include the following files:
+
+  
+  +--------------------------------+
+  | File name    | Current version | 
+  +--------------------------------+
+  | Emsmdb32.dll | 5.5.2655.18     | 
+  +--------------------------------+
+  | Isinteg.exe  | 5.5.2654.62     | 
+  +--------------------------------+
+  | Store.exe    | 5.5.2655.37     | 
+  +--------------------------------+
+
+Fixes Released on October 2, 2001
+---------------------------------
+
+The following files are modified:
+
+  Emsmdb32.dll incremented to version 5.5.2655.18
+  Store.exe incremented to version 5.5.2655.37
+
+The following fixes are included:
+
+  Q288848 XADM: The MTA May Sporadically Return Mail with the Transfer-Failure
+  Reason Code
+
+  Q290621 XADM: Public Folder Rules Are Disabled When You Use an Antivirus
+  API-Based Solution
+
+  Q295969 XADM: The Information Store Service Is Caught in Deadlock After You
+  Apply Exchange Server 5.5 SP4
+
+  Q297212 XADM: Public Folders Are Not Accessible After Site Split
+
+  Q297944 Calling GetProps(NULL,...) to Get All Properties of an Attachment
+  Returns E_FAIL for Some Messages
+
+  Q299258 XADM: Information Store Access Violation Occurs with Virus Scanning
+  API Anitvirus Software Installed
+
+  Q302669 XADM: Error Message After Moving Mailboxes Between Sites or
+  Organizations
+
+  Q303245 XCLN: Item Count Incorrect for Messages with Modified Permissions
+
+  Q303686 XADM: Information Store Stops Responding in STORE!HrDecodeRTF
+  Processing Delivery Reports
+
+  Q303938 XIMS: Netscape IMAP4 Clients Cannot View the Message Body
+
+  Q304024 XADM: Information Store Stops with Malformed Content-Type
+
+  Q302935 XADM: Exchange Server May Return Truncated Message Text If the CDO
+  Application Is Running as a Service
+
+
+Fixes Released on April 27, 2001
+--------------------------------
+
+The following files are modified:
+
+  Isinteg.exe added and incremented to version 5.5.2654.62
+  Store.exe incremented to version 5.5.2654.89
+
+The following fixes are included:
+
+  Q272141 XADM: CDO CopyTo Method May Cause a MAPI_E_NOT_FOUND Error
+
+  Q282796 XADM: Store.exe Causes Access Violation When an SMTP Message Is
+  Received
+
+  Q284954 XADM: Extra Read Receipt May Be Sent from Delegate
+
+  Q282958 XADM: Information Store Stops Responding in store!EcCAIFromAI
+
+  Q284990 XCON: Inbound SMTP Message May Contain Extra Line in Message Body
+
+  Q286261 Duplicate Messages Received by a Public Folder When Set as an
+  Alternate Recipient to a Mailbox
+
+  Q288240 XADM: Header Line of Message That Was Autoforwarded by Rule Is Too
+  Long
+
+  Q288562 XADM: Isinteg Does Not Patch an Information Store That Is Running on
+  a Cluster
+
+  Q288722 Non-Delivery Reports with Event ID 2025 Error Code BB8 or 50A
+
+  Q289865 XADM: Information Store Stops Responding in
+  store!CmcvtrBptExternal__hrCheckIntlShCut
+
+  Q294406 XIMS: IMAP Cannot Open Appointment Items by Using SSL
+
+
+
+
+Fixes Released on December 19, 2000
+-----------------------------------
+
+The following files are modified:
+
+  Emsmdb32.dll incremented to version 5.5.2654.3
+  Store.exe incremented to version 5.5.2654.31
+
+The following fixes are included:
+
+  Q266638 XADM: Information Store Stops Responding When Receiving a Message
+  That Contains a DBCS Display Name with a Missing Tailing Byte
+
+  Q272274 XADM: Information Store Stops Responding on PUSH_NOTIFY Function
+
+  Q272559 XADM: Information Store Crashes When You Save a Complex View
+
+  Q274280 XADM: Messages That Contain RTF Text Strings Are Not Delivered
+  Correctly
+
+  Q274281 XADM: Information Store Crash in UNK__Delete
+
+  Q274573 XADM: Delegate Permissions Assigned Through a Distribution List Do
+  Not Work
+
+  Q276057 XADM: Access Violation in Information Store
+
+  Q278293 XADM: Dr. Watson Message on store!OMSG::EcMakeRTFFromBody
+
+  Q279798 XADM: Information Store Service Hangs After You Apply Service Pack 4
+
+
+
+Additional query words: rollup
+
+======================================================================
+Keywords          : exc55 kbfixlist
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200964: SMS: Reasons Software Metering Server Fails to Install | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200964: SMS: Reasons Software Metering Server Fails to Install" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200964/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200964/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200964/","publisher":null,"image":null,"headline":"Q200964: SMS: Reasons Software Metering Server Fails to Install","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200964-sms-reasons-software-metering-server-fails-to-install">Q200964: SMS: Reasons Software Metering Server Fails to Install</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200964
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 23-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When installation of a software metering server fails, there are several areas
+to troubleshoot.
+
+Connectivity and Permissions
+----------------------------
+
+Verify that the License Server Manager on the Systems Management Server site
+server has connectivity to the new software metering server. To do so, perform a
+ping test using the NetBIOS name and then connect to the C$, D$, and Admin$
+shares using a domain administrator account. Verify that the License Server
+Manager account being used by software metering from the Systems Management
+Server site server has administrative rights on the new software metering
+server. This account must have administrative rights on the new server because
+it will need to create file structures, services, and registry entries. For
+additional information, see \Sms\Logs\Licsvcfg.log on the site server.
+
+ODBC Compliance
+---------------
+
+Verify that the ODBC drivers on the software metering server are at least version
+2.52. Confirm this by either checking the version of the drivers or by verifying
+that the Install_ODBC process has completed successfully. License Manager
+Service will not proceed with the software metering server installation until
+the ODBC drivers are version 2.52 or newer.
+
+Inbox and Service Creation
+--------------------------
+
+The License Server Manager should create the required inboxes on the target
+server. Verify that these are present and were installed without problems by
+looking in \Sms\Logs\Inboxmgr.log on the site server. Once the inboxes have been
+created, License Server Manager completes the file transfer and installation,
+creates the SMS_LICENSE_SERVER service on the target server, and starts the
+service. Verify that this has taken place by checking \Sms\Logs\Licsrvc.log.
+
+Additional information pertaining to the target server installation is found in
+\Sms\Logs\Smsprov.log and \SMS\Logs\Sitectrl.log on the site server.
+
+Additional query words: prodsms swmeter
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

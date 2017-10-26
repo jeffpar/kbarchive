@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124775: How to Play an .AVI File Using FoxPro for Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124775: How to Play an .AVI File Using FoxPro for Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124775/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124775/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124775/","publisher":null,"image":null,"headline":"Q124775: How to Play an .AVI File Using FoxPro for Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124775-how-to-play-an-avi-file-using-foxpro-for-windows">Q124775: How to Play an .AVI File Using FoxPro for Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124775
+Product(s): Microsoft FoxPro
+Version(s): 2.60a 3.00
+Operating System(s): 
+Keyword(s): kbcode kbmm
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to play a video .AVI file using FoxPro for
+Windows.
+
+MORE INFORMATION
+================
+
+The code example below employs the FOXTOOLS.FLL library to register a Windows
+system function, MMSYSTEM.DLL. MMSYSTEM.DLL ships with Windows versions 3.1 and
+later. The library is usually located in the \WINDOWS\SYSTEM subdirectory. After
+the REGFN() function registers the multimedia function, MciSendString, the AVI
+file plays within a window defined by the program.
+
+Sample Code
+-----------
+
+1. Install Video for Windows on the computer that will be used to run the sample
+  code.
+
+2. Create a program containing the following code, and run it:
+
+     IF ! 'FOXTOOLS' $ SET('LIBRARY')
+        SET LIBRARY TO SYS(2004)+"FOXTOOLS.FLL" ADDITIVE
+     ENDIF
+
+     x=""
+     avi=REGFN("MciSendString","@C@CII","I","mmsystem")
+
+     foxwh=mainhwnd()
+     cmd="open c:\fpw26\tazmovie.avi type AVIVideo alias "+ ;
+         "Animation parent "+LTRIM(STR(foxwh))+" style "+LTRIM(STR(12345))
+
+     *open the avi file
+     ret = CALLFN(avi,@cmd,@x, 0, 0)
+     IF ret &gt; 0
+        WAIT WINDOW "Problems"
+     ENDIF
+
+     * Put the window at location 10 10 relative to the parent window
+     * with a size of 200 200
+     cmd="put Animation window at 20 20 200 200"
+     ret = CALLFN(avi,@cmd,@x, 0, 0)
+     IF ret &gt; 0
+        WAIT WINDOW "Cannot create child window"
+     ENDIF
+
+     * The wait tells the MCI command to complete before returning
+     * control to the application.
+     cmd="play Animation wait"
+     ret = CALLFN(avi,@cmd,@x, 0, 0)
+     IF ret &gt; 0
+        WAIT WINDOW "Cannot play AVI"
+     ENDIF
+
+     * Close windows so they don't crash when you exit the application.
+     cmd="close Animation"
+     ret = callfn(avi,@cmd,@x, 0, 0)
+     IF ret &gt; 0
+        WAIT WINDOW "Cannot close AVI window"
+     ENDIF
+
+     SET LIBRARY TO
+
+Additional query words: VFoxWin FoxWin
+
+======================================================================
+Keywords          : kbcode kbmm 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300
+Version           : 2.60a 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

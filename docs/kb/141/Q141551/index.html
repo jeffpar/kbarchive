@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141551: How to Hide the &quot;FoxPro Run Command&quot; Window in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141551: How to Hide the &quot;FoxPro Run Command&quot; Window in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141551/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141551/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141551/","publisher":null,"image":null,"headline":"Q141551: How to Hide the &quot;FoxPro Run Command&quot; Window in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141551-how-to-hide-the-foxpro-run-command-window-in-visual-foxpro">Q141551: How to Hide the "FoxPro Run Command" Window in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141551
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbcode kbsample kbvfp kbvfp300 kbvfp300b kbvfp600
+Last Modified: 09-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By using the Windows API function WinExec, you can execute an MS-DOS command or
+program without the user seeing the "FoxPro Run Command" window or another
+MS-DOS session.
+
+MORE INFORMATION
+================
+
+The following program creates a sample function that executes an MS-DOS command
+or program and keeps the MS-DOS window hidden. The program takes one parameter,
+the command to be executed.
+
+To maintain control over the MS-DOS window, the program sends the command through
+a PIF file. To keep this window hidden, use the Windows PIF Editor to make the
+following changes to the PIF file you use (this example uses Foxrun.pif in the
+Visual FoxPro directory):
+
+1. Select the Close Window on Exit check box.
+
+2. Set Display Usage to Windowed.
+
+Code Sample
+-----------
+
+  *---------------- Run.prg -----------------------------
+  * Sample program to Execute an MS-DOS command and keep
+  * the MS-DOS window hidden.
+  *
+  * To use this function in FoxPro to create a new directory,
+  * use one of the following commands that illustrate two
+  * ways to call the function and achieve the same result:
+  *
+  *    = run("MD C:\VFP\TESTDIR")
+  *
+  *    DO run WITH "MD C:\VFP\TESTDIR"
+  *
+
+  FUNCTION run
+  PARAMETER doscmd
+
+  DECLARE INTEGER WinExec IN win32api AS run ;
+     STRING command, INTEGER param
+
+  * To have control over the visibility of the
+  * MS-DOS command, call it through a .pif file.
+  *
+  * IMPORTANT: (1) Be sure the "Close Window on Exit" check box in
+  * the PIF file is selected. (2) Be sure "Windowed" is the
+  * selected "Display Usage."
+
+  cmdstart = SYS(2004) + "FOXRUN.PIF /C "
+
+  * Now concatenate the two pieces of the command:
+
+  fullcmd = cmdstart + doscmd
+
+  retval = run(fullcmd, 0)
+
+  RETURN retval
+  *------- End of program ----------------------
+
+NOTE: For more information about hiding the FoxPro Run Command window in FoxPro
+for Windows, versions 2.x, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q131621 How to Hide the "FoxPro Run Command" Window
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbsample kbvfp kbvfp300 kbvfp300b kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

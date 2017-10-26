@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193838/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193838/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193838/","publisher":null,"image":null,"headline":"Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193838-dns-zone-transfer-fails-from-winnt-server-to-unix-dns-server">Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193838
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When transferring a primary zone from a Microsoft Windows NT 4.0 DNS server to a
+secondary zone on a UNIX DNS server, the zone transfer may fail if the Windows
+NT DNS zone is configured for WINS lookup or WINS Reverse Lookup.
+
+CAUSE
+=====
+
+The Microsoft DNS server may have a WINS or WINS-R (NBTSTAT) record included in
+the DNS file, which is not understood by UNIX DNS. This may cause the zone
+transfer to fail when the UNIX DNS server reaches the record in the transfer.
+The WINS record is the result of configuring WINS Lookup for a zone. The WINS-R
+(NBTSTAT) record is the result of configuring WINS Reverse Lookup for a reverse
+lookup zone.
+
+RESOLUTION
+==========
+
+There is an additional flag that can be set for the WINS and WINS-R (NBTSTAT)
+records in the zone transfer file that allow better interoperability with a UNIX
+DNS server. To avoid sending the WINS or WINS-R (NBTSTAT) records to DNS servers
+that do not have the WINS or WINS-R capability, configure the zone properties to
+specify "Settings only affect local server."
+
+The "Settings only affect local server" configuration will insert the LOCAL flag
+immediately after the WINS or WINS-R (NBTSTAT) record. For example:
+
+  @  0 IN WINS  LOCAL 1.1.1.1  1.1.1.2
+  @  0 IN WINS-R LOCAL domainname.com
+
+On the primary Microsoft NT DNS server, the LOCAL flag keeps the record from
+being sent in a zone transfer.
+
+To configure "Settings only affect local server" for a zone that uses WINS
+Lookup, perform the following steps:
+
+1. Select the zone and right-click it.
+
+2. Click Properties.
+
+3. Click the WINS Lookup tab.
+
+4. Click to select the "Settings only affect local server" check box.
+
+5. Click OK.
+
+6. Click the DNS menu.
+
+7. Click Update Server Data Files.
+
+To configure "Settings only affect local server" for a zone that uses WINS
+Reverse Lookup, perform the following steps:
+
+1. Select the reverse lookup zone and right-click it.
+
+2. Click Properties.
+
+3. Click the WINS Reverse Lookup tab.
+
+4. Click to select the "Settings only affect local server" check box.
+
+5. Click OK.
+
+6. Click the DNS menu.
+
+7. Click Update Server Data Files.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

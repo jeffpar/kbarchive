@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95531: SMARTDrive: Maximum Cache Size | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95531: SMARTDrive: Maximum Cache Size" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95531/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95531/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95531/","publisher":null,"image":null,"headline":"Q95531: SMARTDrive: Maximum Cache Size","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95531-smartdrive-maximum-cache-size">Q95531: SMARTDrive: Maximum Cache Size</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95531
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The cache size of SMARTDrive is limited by one 64 kilobyte (K) segment (or the
+largest available upper memory block if you are loading SMARTDrive high). In
+this 64K segment, SMARTDrive stores the code for its device driver (10.5K), a
+read ahead buffer (16K) and an element table that references each element block
+in the cache. The maximum cache size is limited by available RAM and the size of
+the element table which is, in turn, limited by the amount of space left in the
+64K segment after SMARTDrive and the read ahead buffer load.
+
+If you are using the default element size (8K), SMARTDrive's cache has a maximum
+size of 25 megabytes (MB). However, if you have an upper memory block (UMB)
+provider (EMM386, for example) installed and you prevent SMARTDrive from loading
+high by using the /L switch with the LH command, the read ahead buffer splits
+off from the 64K segment. This makes more room for the element table, increasing
+the maximum cache size of SMARTDrive to 35.7 MB.
+
+MORE INFORMATION
+================
+
+To determine the maximum cache size of SMARTDrive, use the following formula:
+
+  CacheSize = ElementSize * (SegmentSpace / ElementDescriptor)
+
+ElementSize, by default, is 8K or 8192 bytes and refers to the element block size
+in the SMARTDrive cache. ElementDescriptor is the memory required to reference
+each element in the cache and is 12 bytes if the element size is 8K or greater;
+it is 10 bytes if the element size is less than 8K. SegmentSpace can be
+determined by subtracting the size of the SMARTDrive device driver and the read
+ahead buffer from 64K (or the largest available upper memory block):
+
+  One 64K segment:                       65536 bytes
+  SMARTDrive device driver (10.5K):    - 10752 bytes
+  Read ahead buffer (16K):             - 16384 bytes
+  --------------------------------------------------
+  Remaining segment space:               38400 bytes
+
+  Note: If you have a UMB provider installed and you use the /L switch with the
+  LH command, the read ahead buffer loads separately from the 64K segment,
+  increasing the remaining segment space to 54784 bytes or 53.5K.
+
+For example: If you do not load a UMB provider and do not change the default
+element size of 8K, you can determine the maximum SMARTDrive cache size by doing
+the following:
+
+1. Use the following values:
+
+  ElementSize = 8192 bytes
+  SegmentSpace = 38400 bytes
+  ElementDescriptor = 12 bytes
+
+2. Insert the values from Step 1 in the formula
+
+  CacheSize = ElementSize * (SegmentSpace / ElementDescriptor)
+
+  such that:
+
+  CacheSize = 8192 * (38400 / 12) = 26214400 bytes = 25 MB
+
+NOTE: Although you can specify a large cache size, Microsoft recommends a maximum
+cache size of 2 MB for most situations. Few systems benefit from large cache
+sizes; beyond 2 MB, cache performance does not increase significantly.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

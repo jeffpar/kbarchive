@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127189: DOCERR: Additional SourceSafe INI Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127189: DOCERR: Additional SourceSafe INI Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127189/","publisher":null,"image":null,"headline":"Q127189: DOCERR: Additional SourceSafe INI Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127189-docerr-additional-sourcesafe-ini-settings">Q127189: DOCERR: Additional SourceSafe INI Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127189
+Product(s): Microsoft SourceSafe
+Version(s): 3.04 3.10 | 3.04 3.10 | 3.04 3.1
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 15-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SourceSafe for MS-DOS, versions 3.04, 3.1 
+- Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+- Microsoft SourceSafe for Windows NT, versions 3.04, 3.1 
+- Microsoft SourceSafe for Macintosh, versions 3.04, 3.1 
+- Microsoft SourceSafe for UNIX, versions 3.04, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists INI settings and color strings that were not documented in
+the SourceSafe documentation.
+
+MORE INFORMATION
+================
+
+SourceSafe 3.0 INI Settings
+---------------------------
+
+The following INI settings were not documented in the SourceSafe version 3.0
+Concepts and Configuration Manual:
+
+Diff_Context - Indicates how many lines to show before and after a difference:
+
+  Syntax: Diff_Context = &lt;n1&gt;
+  Example: Diff_Context = 3
+
+Indicate_Expandable - Controls whether SourceSafe will put a + or - character in
+the folders (Inteface Only):
+
+  Syntax: Indicate_Expandable = &lt;Yes|No&gt;
+  Example: Indicate_Expandable = Yes
+
+Store_Deltas - Indicates whether changes are stored or not:
+
+  Syntax: Store_Deltas = &lt;Yes|No&gt;
+  Example: Store_Deltas = Yes
+
+Update_No_Conflicts - Indicates to SourceSafe to merge with no conflicts:
+
+  Syntax: Update_No_Conflicts = &lt;Yes|No&gt;
+  Example: Update_No_Conflicts = No
+
+Viewer_Font - Sets font attributes for any SourceSafe viewer window:
+
+  Syntax: Viewer_Font = &lt;Font face&gt;, &lt;Font size&gt;, &lt;Font
+  weight&gt;, &lt;[Bold|Underline|Strikeout|Italic]&gt;
+  Example: Viewer_Font = arial, 10
+
+SourceSafe 3.02 INI Settings
+----------------------------
+
+The following INI settings were new to version 3.02:
+
+Hist_Rect - Sets coordinates of the History window:
+
+  Syntax: Hist_Rect = &lt;x1, y1, x2, y2&gt;
+  Example: Hist_Rect = 65,61,966,665
+
+Preview_Rect - Sets coordinates of the Preview window:
+
+  Syntax: Preview_Rect = &lt;x1, y1, x2, y2&gt;
+  Example: Preview_Rect = 65,61,966,665
+
+Visual_Diff_ChangeClr - Sets color of Visual Difference Change text:
+
+  Syntax: Visual_Diff_ChangeClr = &lt;color string| RGB value&gt;
+  Example: Visual_Diff_ChangeClr = Green
+
+Visual_Diff_DeleteClr - Sets color of Visual Difference Delete text:
+
+  Syntax: Visual_Diff_DeleteClr = &lt;color string| RGB value&gt;
+  Example: Visual_Diff_DeleteClr = Green
+
+Visual_Diff_InsertClr - Sets color of Visual Difference Insert text:
+
+  Syntax: Visual_Diff_InsertClr = &lt;color string| RGB value&gt;
+  Example: Visual_Diff_InsertClr = Green
+
+Visual_Diff_Rect - Coordinates of a Visual Difference Window:
+
+  Syntax: Visual_Diff_Rect = &lt;x1,y1,x2,y2&gt;
+  Example: Visual_Diff_Rect = 65,61,966,665
+
+Color String Values
+-------------------
+
+The following color-string values were not documented in the SourceSafe 3.0
+Concepts and Configuration Manual:
+
+  Black
+  Blue
+  Green
+  Cyan
+  Red
+  Magenta
+  Yellow
+  White
+  Gray
+  Light Blue
+  Light Green
+  Light Cyan
+  Light Red
+  Light Magenta
+  Light Yellow
+
+Additional query words: ss3 vbwin 3.10
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304DOS kbSSafe310 kbSSafe310DOS kbSSafe304Mac kbSSafe310Mac kbSSafe304UNIX kbSSafe310UNIX kbSSafe304NT kbSSafe310NT
+Version           : 3.04 3.10 | 3.04 3.10 | 3.04 3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

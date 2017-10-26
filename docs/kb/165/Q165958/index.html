@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165958/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165958/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165958/","publisher":null,"image":null,"headline":"Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165958-getting-madge-pcmcia-token-card-to-join-a-domain-during-setup">Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165958
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbsetup
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+You are unable to load your Madge network adapter on a computer running Windows
+NT 4.0.
+
+CAUSE
+=====
+
+Because of an error in the Microsoft Windows NT registry regarding the name of
+the driver for the Madge SMART 16/4 PCMCIA RINGNODE, you are unable to load the
+Madge driver.
+
+RESOLUTION
+==========
+
+In order to get the Madge SMART 16/4 PCMCIA RINGNODE to install and load during
+setup, you will have to make the following changes:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Expand the file system._ from the &lt;platform&gt; directory on the
+  distribution CD to "c:\temp\system.".
+
+2. Copy the &lt;platform&gt; directory a server share point.
+
+3. Run REGEDT32.EXE, to edit the registry.
+
+4. From the Window menu chose HKEY_LOCAL_MACHINE
+
+5. From the Registry menu select "Load Hive" and enter the path
+  "c:\temp\system.".
+
+6. Enter the name "Madge", when the system prompts for a Key Name
+
+7. Find the following section:
+
+  HKEY_LOCAL_MACHINE\Madge\System\ControlSet01\Services
+  \Pcmcia\Database\MADGE\SMART 16/4 PCMCIA RINGNODE
+
+8. In this section, change the name of the file pointed to by the "Driver" from
+  "madgemport" to "mdgmport".
+
+9. Select the HKEY_LOCAL_MACHINE\Madge key again, and from the Registry menu
+  select "Unload Hive"
+
+10. Select "OK" to the dialog that gets displayed.
+
+11. Exit the Registry editor.
+
+12. Delete the "system._" from the Server Distribution point created in step 2
+  above and place the "system." from the c:\test directory into the Server
+  Distribution point. This file will now contain all the needed registry
+  settings to allow the Madge driver to load during setup.
+
+MORE INFORMATION
+================
+
+Please be aware that many of the current line of laptops and portables typically
+place the sound card on IRQ 10, which is the default IRQ for PCMCIA cards.
+Because of this conflict, you may still experience problems. Please contact
+Madge Technical support for more details.
+
+Additional query words: setup set-up madge pcmcia token ring
+
+======================================================================
+Keywords          : kbenv kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

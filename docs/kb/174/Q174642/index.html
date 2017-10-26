@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174642/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174642/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174642/","publisher":null,"image":null,"headline":"Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174642-dca-isca-sdlc-connections-fail-on-pentium-pro-systems">Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174642
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A SNA Server using a DCA Intelligent Synchronous Communications Adapter (ISCA)
+SDLC adapter on a system with a Pentium or Pentium Pro processor (133Mhz or
+faster) and using a 56Kbps SDLC line may experience one or more of the following
+problems:
+
+- The SDLC connection stays in a "Pending" state after it is started.
+
+- The SDLC connection goes to an "Active" state and the 3270 LUs become
+  "Available", but it can take a minute or more before all of the sessions are
+  "Available".
+
+- If the SDLC connection is "Active" and the 3270 LUs are "Available", 3270
+  sessions experience very slow response times. Each screen update may take 30
+  seconds or more to complete.
+
+- The SDLC connection drops after it is "Active" causing a message similar to
+  the following to be logged in the Windows NT Application Event Log:
+
+  
+
+  Event ID: 23
+     Source: DCA SDLC Link Service
+     Description: Connection &lt;connection name&gt; using Link Service DCASDLC1 failed.
+                              Qualifier = 0x'0015'
+
+Another symptom of this problem is that enabling SNA Server traces for the DCA
+SDLC Link Service and restarting the SNA Server service may correct the problems
+that were being experienced before enabling the traces. When tracing is enabled,
+the SDLC connection activates and the response times return to the level
+expected for a 56Kbps SDLC line.
+
+
+CAUSE
+=====
+
+The cause of the problem is unknown.
+
+
+RESOLUTION
+==========
+
+The DCA SDLC Link Service has been updated to correct the problems that have
+been reported when using the DCA ISCA SDLC adapter on systems with Pentium or
+Pentium Pro (133MHz or faster) processors. The updated driver can be used with
+SNA Server 2.11 and 3.0.
+
+The following steps may provide an interim solution until the updated driver can
+be obtained and applied to the SNA Server:
+
+1. Start the SNA Server Trace program (snatrace.exe).
+
+2. Select the DCA SDLC Link service (i.e. DcaSdlc1) as the component to trace.
+
+3. Enable Full Internal Tracing, Data Link Control, and Level 2 Messages as the
+  trace options.
+
+4. Click Apply and close the SNA Server Trace Program.
+
+5. Stop and Restart the SNA Server service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.1, 2.11,
+2.11 SP1, 2.11 SP2, 3.0, and 3.0 SP1. This problem was corrected in the latest
+SNA Server version 3.0 Service Pack. For information on obtaining this Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

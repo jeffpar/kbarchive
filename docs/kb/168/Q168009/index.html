@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168009: FIX: Smartptr Property in Interface Causes C2512 Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168009: FIX: Smartptr Property in Interface Causes C2512 Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168009/","publisher":null,"image":null,"headline":"Q168009: FIX: Smartptr Property in Interface Causes C2512 Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168009-fix-smartptr-property-in-interface-causes-c2512-error">Q168009: FIX: Smartptr Property in Interface Causes C2512 Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168009
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbVS97sp1fix kbVS97sp2fix
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler may incorrectly issue error C2512 when a class has a
+_declspec(property) member. Having a _declspec(property) member is common when
+you import type-libraries with #import. In addition to error C2512, warnings
+C4510, C4511, C4512, C4513 and C4610 may also be generated.
+
+RESOLUTION
+==========
+
+This can be avoided when doing #import by using the attributes
+raw_interfaces_only or no_native_types. Unfortunately, this also turns off major
+functionality.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97,
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The first sample below causes the compiler to give the following messages when
+compiled at warning level 4:
+
+  warning C4510: 'B' : default constructor could not be generated
+
+  warning C4610: struct 'B' can never be instantiated - user defined
+  constructor required
+
+  error C2512: 'B' : no appropriate default constructor available
+
+Sample Code A
+-------------
+
+     // Compile option needed /W4
+     class A
+     {  A();
+     };
+     struct B
+     {  __declspec( property (get=getA)) A a;
+        A getA();
+     };
+     void f()
+     {
+        B b;
+     }
+
+The second sample generates the following errors:
+
+  warning C4510: 'IA' : default constructor could not be generated
+
+  warning C4511: 'IA' : copy constructor could not be generated
+
+  warning C4512: 'IA' : assignment operator could not be generated
+
+  warning C4513: 'IA' : destructor could not be generated
+
+  warning C4610: struct 'IA' can never be instantiated - user defined
+  constructor required
+
+  warning C4510: 'CA' : default constructor could not be generated
+
+  warning C4511: 'CA' : copy constructor could not be generated
+
+  warning C4512: 'CA' : assignment operator could not be generated
+
+  warning C4513: 'CA' : destructor could not be generated
+
+  warning C4610: class 'CA' can never be instantiated - user defined
+  constructor required
+
+  error C2512: 'CA' : no appropriate default constructor available
+
+Sample Code B
+-------------
+
+     // custom.idl
+     // MIDL options: &lt;none&gt;
+     #include &lt;olectl.h&gt;
+     #include &lt;idispids.h&gt;
+     #ifndef DO_NO_IMPORTS
+     import "objidl.idl";
+     import "oleidl.idl";
+     import "oaidl.idl";
+     import "ocidl.idl";
+     #endif
+     interface IB;
+     [ object, uuid(27979FD1-E576-11cf-BFAC-00A02437A6A0) ]
+     interface IA : IUnknown
+     {
+         [propput, id(1)] HRESULT Interface([in] IB* pB);
+         [propget, id(1)] HRESULT Interface([out, retval] IB** ppB);
+     }
+     [ object, uuid(27979FD0-E576-11cf-BFAC-00A02437A6A0) ]
+     interface IB : IUnknown
+     {
+         [id(5)] HRESULT Method([in] int in1);
+     }
+     [ uuid(596DBF82-2F2D-11D0-A537-00A02437A6A0), version(1.0) ]
+     library Custom
+     {
+         importlib(STDOLE_TLB);
+         importlib(STDTYPE_TLB);
+         interface IA;
+         interface IB;
+     }
+
+     // test.cpp
+     // compile options: /GX /W4 /c
+     #import "Custom.tlb" no_namespace
+     class CA : IA
+     {
+        STDMETHOD_(ULONG, AddRef)() { return 0; }
+        STDMETHOD_(ULONG, Release)() { return 0; }
+        STDMETHOD(QueryInterface)(REFIID,  LPVOID* ) { return E_NOTIMPL; }
+        // ICustom methods
+        STDMETHOD(put_Interface)(IB *) { return E_NOTIMPL; }
+        STDMETHOD(get_Interface)(IB **) { return E_NOTIMPL; }
+     };
+     class CB
+     {
+        CB(){
+           CA* pA = new CA;
+            if (pA)
+              delete pA;
+        }
+     };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVS97sp1fix kbVS97sp2fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

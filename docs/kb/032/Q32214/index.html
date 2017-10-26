@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q32214: &quot;Device I/O&quot; Error Using LPRINT or &quot;LPT1:&quot; After a CHAIN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q32214: &quot;Device I/O&quot; Error Using LPRINT or &quot;LPT1:&quot; After a CHAIN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/032/Q32214/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/032/Q32214/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/032/Q32214/","publisher":null,"image":null,"headline":"Q32214: &quot;Device I/O&quot; Error Using LPRINT or &quot;LPT1:&quot; After a CHAIN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q32214-device-io-error-using-lprint-or-lpt1-after-a-chain">Q32214: "Device I/O" Error Using LPRINT or "LPT1:" After a CHAIN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q32214
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | buglist6.00 buglist6.00b buglist7.00 | mspl13_basic
+Last Modified: 17-JAN-1990
+
+The following problem occurs in OS/2 protected mode programs compiled
+with Microsoft BASIC Compiler Versions 6.00 and 6.00b or Microsoft
+BASIC Professional Development System (PDS) Version 7.00 for MS OS/2.
+Using LPRINT, or sending output to the "LPT1:" device name, then
+chaining to a second routine that uses the printer produces the
+following error:
+
+   Device I/O error in line 0 of module PROG2
+
+This problem can be worked around in OS/2 protected mode by sending
+output to the DOS "LPT1" (without a colon) device name instead of
+using LPRINT or "LPT1:". This problem does not occur in OS/2 real
+mode.
+
+Microsoft has confirmed this to be a problem in Microsoft BASIC
+Compiler Versions 6.00 and 6.00b and in Microsoft BASIC PDS Version
+7.00. We are researching this problem and will post new information
+here as it becomes available.
+
+The following chained programs demonstrate the "Device I/O" error.
+These programs must be compiled with the BRUN library option for
+protected mode.
+
+   ' prog1
+   OPEN "O",15,"LPT1:"
+   PRINT #15,"program 1"
+   CHAIN "prog2"
+
+   ' prog2
+   PRINT #15,"program 2"
+   CLOSE #15
+
+The problem occurs only when sending output to the BASIC "LPT1:"
+printer device. If the DOS device, "LPT1" (without a colon) is used,
+the problem does not occur. For example, the following programs CHAIN
+correctly:
+
+   ' prog1
+   OPEN "O",15,"LPT1"
+   PRINT #15,"program 1"
+   CHAIN "prog2"
+
+   ' prog2
+   PRINT #15,"program 2"
+   CLOSE #15
+   SYSTEM
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

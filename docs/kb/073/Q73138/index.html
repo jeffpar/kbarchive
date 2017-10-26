@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73138/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73138/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73138/","publisher":null,"image":null,"headline":"Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73138-loading-lotus-1-2-3-files-using-file-associate-from-windows">Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73138
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot load files directly into Lotus 1-2-3 versions 3.0 and 3.1 using the
+File Associate command in Windows File Manager.
+
+MORE INFORMATION
+================
+
+Some applications accept command line parameters to load a specific file. For
+example, typing
+
+  c:&gt;word test.doc
+
+loads a document file named TEST into Microsoft Word.
+
+Lotus 1-2-3 versions 3.0 and 3.1 do not support filenames as a command line
+parameter to load files directly. Attempting to load a file called TEST.WK3 into
+Lotus 1-2-3 version 3.0 or 3.1 by typing
+
+  c:&gt;123 test.wk3
+
+produces the following error:
+
+  Cannot load DCF file-run Install
+
+A similar MS-DOS-based error occurs if you attempt to load .WK3 files from
+Windows File Manager using the File Associate Command. This is a limitation of
+Lotus 1-2-3 versions 3.0 and 3.1 and is not a Windows problem.
+
+Lotus works around this problem with the use of a 123.BAT batch file and an
+AUTO123.WK3 auto-execute macro. The 123.BAT file creates a text file with the
+name and path of the file to be loaded and then loads 123.EXE. The AUTO123.WK3
+file reads the filename and path information from the text file and loads the
+desired file.
+
+In Windows File Manager, the File Associate command associates .WK3 files with
+123.BAT instead of 123.EXE.
+
+Specific information on the creation of the 123.BAT file and the AUTO123.WK3 is
+available from Lotus in a technical note called "Loading a 123 3.0 File from the
+Command Line".
+
+For more information, contact Lotus technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

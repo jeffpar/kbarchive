@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186298: HOWTO: Get the HRESULT From a COM Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186298: HOWTO: Get the HRESULT From a COM Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186298/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186298/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186298/","publisher":null,"image":null,"headline":"Q186298: HOWTO: Get the HRESULT From a COM Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186298-howto-get-the-hresult-from-a-com-object">Q186298: HOWTO: Get the HRESULT From a COM Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186298
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you make calls to a function of a COM interface, the function returns an
+integer return code, or HRESULT. This value consists of a severity code, context
+information, a facility code, and a status code that describes the result. In
+Visual FoxPro, it may be useful to obtain the HRESULT for debugging purposes or
+error handling.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro, it is not possible to obtain the HRESULT directly. However,
+when an OLE error occurs (error number 1426), the HRESULT is in the text of the
+error message in the form 0x800nnnnn. The sample code below demonstrates how to
+extract the HRESULT from the error message text and display it in both base 10
+and hexadecimal format.
+
+Sample Code
+-----------
+
+Create a program file named Hresult.prg, with the following code:
+
+     *-- Code begins here.
+     ON ERROR DO getresult IN hresult WITH ;
+        ERROR(), MESSAGE()
+
+     *-- Create an instance of Microsoft Word.
+     oWord = CREATEOBJECT("Word.Application")
+
+     *-- Call an invalid function to test our error handling.
+     oWord.RaiseError
+
+     PROCEDURE getresult
+        PARAMETER liError, lsMessage
+
+     IF liError &lt;&gt; 1426  &amp;&amp; Not an OLE error code
+
+        *-- Since this error handler now handles all errors, it
+        *-- would be best to include some more robust error
+        *-- handling here to handle errors other than #1426.
+        RETURN
+     ENDIF
+
+     *-- Take the message string and parse the hexadecimal HRESULT.
+     *-- The VAL() function will do the conversion to a base 10 integer.
+     liHresult = VAL(SUBSTR(lsMessage, AT("0x", lsMessage), 10))
+
+     *-- Display the result in decimal and hexadecimal format.
+     *-- This section would be used to process the HRESULT as needed,
+     *-- either by parsing the returned code or otherwise overriding the
+     *-- default Visual FoxPro behavior.
+     MESSAGEBOX("OLE function returned HRESULT: " +;
+       CHR(10) + CHR(13) + ;
+       STR(liHresult) + " (decimal) " +;
+       CHR(10) + CHR(13) + ;
+       TRANSFORM(liHresult, "@0") + " (hexadecimal)", 0, "OLE Error")
+     RETURN
+     *-- Code ends here.
+
+REFERENCES
+==========
+
+MSDN Library
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+Stewart, Microsoft Corporation
+
+
+Additional query words: kbDSupport kbDSE beta99 FxinteropOcx FxinteropOle FxprgGeneral vfoxwin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

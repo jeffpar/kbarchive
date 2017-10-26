@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/323/Q323722/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/323/Q323722/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/323/Q323722/","publisher":null,"image":null,"headline":"Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q323722-user-name-mapping-does-not-seem-to-work-and-event-id-1003-occurs">Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q323722
+Product(s): Microsoft Windows NT
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Services for UNIX, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The User Name Mapping service does not seem to work with any of the Windows
+Services for UNIX components such at Client for NFS, Server for NFS, Gateway for
+NFS, and other components. All files are still being written by using anonymous
+permissions even though you configured User Name Mapping properly.
+
+Additionally, the following event ID message may be logged in the system log if
+you are running Server for NFS:
+
+  Event Type: Warning
+  Event Source: NfsSvr
+  Event ID: 1003
+  Description:
+  Mapping information could not be obtained from Username mapping. Another
+  attempt will be made after 30 minutes.
+
+NOTE: This problem only occurs if User Name Mapping is running on a remote
+server; however, if a negative entry (represented by a dash [-]) exists in the
+.Maphosts file, this problem does not occur.
+
+CAUSE
+=====
+
+The authentication mechanism that is used by the network file system (NFS)
+protocol is based on trust relationships between host computers. That is, an NFS
+server accepts the user identifiers (UIDs) and group identifiers (GIDs) from a
+specific client computer because the server is configured to recognize the
+client computer as trustworthy.
+
+User Name Mapping acts as an intermediary between NFS servers and NFS clients on
+a network that contains UNIX hosts and Windows-based computers. To maintain the
+implicit trust relationship between the NFS client and host computers, you must
+control which computers can access User Name Mapping and act as a trusted host
+on the NFS network.
+
+To control which computers can access User Name Mapping, edit the .Maphosts file
+in the &lt;Windows_Services_for_UNIX_folder&gt;\Mapper folder of the server that
+is running User Name Mapping. When you add entries in this file, you can easily
+allow or deny any other computer access to User Name Mapping. If the .Maphosts
+file is present but not empty, only those computers that are allowed access by
+entries that are included in the file can access User Name Mapping. If the
+.Maphosts file is present but it does not contain host entries (it contains only
+comments, which is the default text), only the computer that is running User
+Name Mapping can access User Name Mapping; no other computers can access this
+service. If the .Maphosts file is not present, no computers can access User Name
+Mapping, including the computer that is running User Name Mapping.
+
+RESOLUTION
+==========
+
+To resolve this issue, edit the .Maphosts file in the
+&lt;Windows_Services_for_UNIX_folder&gt;\Mapper folder on the User Name Mapping
+server.
+
+NOTE: When User Name Mapping matches a computer that is making a request against
+the elements in the list, it searches from the top down until it finds a match.
+As a result, the order of the entries is important.
+
+To edit the .Maphosts file, add any of the following elements:
+
+- host: Use this element to specify one or more computers that can access User
+  Name Mapping. You can specify the host by using an Internet Protocol (IP)
+  address (IP version 4) or as a host name that resolves to one or more IP
+  addresses.
+
+- host -: Use this element to specify one or more computers that are denied
+  access to User Name Mapping. You can specify the host as an IP address (IP
+  version 4) or as a host name that resolves to one or more IP addresses. Note
+  that you must use at least one blank space between "host" and the dash (-).
+
+- Plus sign (+) : Use only the plus sign (+) to specify that all computers can
+  access User Name Mapping unless they are denied access by an earlier entry in
+  the list. All of the entries in the list that follow this element are
+  ignored.
+
+- Dash (-): Use only the dash (-) to specify that all computers are denied
+  access to User Name Mapping unless they are allowed by an earlier entry in
+  the list. All of the entries in the list that follow this element are
+  ignored.
+
+Additional query words: sfu
+
+======================================================================
+Keywords          :  
+Technology        : kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

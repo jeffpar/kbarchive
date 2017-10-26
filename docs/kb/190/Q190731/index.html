@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190731: BUG: Pageframe Border Disappears When Sparse Set to False | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190731: BUG: Pageframe Border Disappears When Sparse Set to False" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190731/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190731/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190731/","publisher":null,"image":null,"headline":"Q190731: BUG: Pageframe Border Disappears When Sparse Set to False","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190731-bug-pageframe-border-disappears-when-sparse-set-to-false">Q190731: BUG: Pageframe Border Disappears When Sparse Set to False</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190731
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changing the Sparse property of a column in a grid, that is part of a Pageframe,
+to false causes the border of the Pageframe to disappear at run- time. The only
+part of the Pageframe that is visible are the tabs of the Pageframe. A combo box
+needs to be the current control of the column and the Sparse property of the
+column must be set to false before the border of the Pageframe disappears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+When you run a form that meets the requirements in the SYMPTOMS section, the
+border of the Pageframe appears the first time after any changes have been made
+to the form. If no changes have been made to the form, the border of the
+Pageframe disappears until one of the Pageframe tabs are clicked.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a table to the Data Environment.
+
+2. Add a Pageframe to the form, then edit the Pageframe and place a grid on
+  Page1. Resize the grid to fit inside the Pageframe.
+
+3. Change the ColumnCount property of the grid to 1.
+
+4. Edit the grid and place a combo box on Column1 of the grid.
+
+5. Change the Grid1.Column1.CurrentControl property to point to the combo box.
+
+6. Set the RowSourceType property of the combo box to "2 - Alias" and add a
+  field name to the RowSource property.
+
+7. Set the Grid1.Column1.Sparse property to false.
+
+8. Run the form and note that the border of the Pageframe appears properly.
+
+9. Run the form a second time without making any changes to it and note that the
+  border of the Pageframe disappears. Click Page2 of the pageframe and the
+  border appears.
+
+Additional query words: kbVFp500abug kbOOP kbvfp500a
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

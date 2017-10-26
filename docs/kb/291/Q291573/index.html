@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q291573: HOWTO: Use Visual Basic to List Active Logical Drives | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q291573: HOWTO: Use Visual Basic to List Active Logical Drives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/291/Q291573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/291/Q291573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/291/Q291573/","publisher":null,"image":null,"headline":"Q291573: HOWTO: Use Visual Basic to List Active Logical Drives","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q291573-howto-use-visual-basic-to-list-active-logical-drives">Q291573: HOWTO: Use Visual Basic to List Active Logical Drives</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q291573
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbsample kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 31-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can determine which drive letters are in use on a local computer by using
+the GetLogicalDriveStrings Win32 API. This list of drive letters will be the
+drive letters of all active drives on the local computer, including floppy
+drives, hard disks, mapped drives, and other drives that are mapped to a drive
+letter.
+
+MORE INFORMATION
+================
+
+The GetLogicalDriveStrings API function returns a string containing a list of
+all active drive letters on the local computer. The format of the string is a
+null-separated list of drive letters with a terminating null at the end of the
+string. For example, a computer with a single floppy drive (A:) and a single
+hard disk drive (C:) would have a string of the following format returned by
+GetLogicalDriveStrings:
+
+  
+
+  A:\&lt;null&gt;C:\&lt;null&gt;&lt;null&gt;
+
+This string can be parsed to list the active drives.
+
+The following Visual Basic code sample demonstrates how to retrieve and parse a
+list of drives. Note that this can also be used to create a control or feature
+similar to the DriveListBox.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. Add a new command button (Command1) and a listbox (List1) to Form1.
+
+3. Add the following code to Form1's code window:
+
+  Option Explicit
+
+  Private Declare Function GetLogicalDriveStrings Lib "kernel32" _
+      Alias "GetLogicalDriveStringsA" _
+      (ByVal nBufferLength As Long, ByVal lpBuffer As String) As Long
+
+  Private Function GetDriveStrings() As String
+      ' Wrapper for calling the GetLogicalDriveStrings API
+      
+      Dim result As Long          ' Result of our api calls
+      Dim strDrives As String     ' String to pass to api call
+      Dim lenStrDrives As Long    ' Length of the above string
+      
+      ' Call GetLogicalDriveStrings with a buffer size of zero to
+      ' find out how large our stringbuffer needs to be
+      result = GetLogicalDriveStrings(0, strDrives)
+      
+      strDrives = String(result, 0)
+      lenStrDrives = result
+      
+      ' Call again with our new buffer
+      result = GetLogicalDriveStrings(lenStrDrives, strDrives)
+      
+      If result = 0 Then
+          ' There was some error calling the API
+          ' Pass back an empty string
+          ' NOTE - TODO: Implement proper error handling here
+          GetDriveStrings = ""
+      Else
+          GetDriveStrings = strDrives
+      End If
+  End Function
+
+  Private Sub Command1_Click()
+      Dim strDrives As String
+      
+      ' Find out what drives we have on this machine
+      strDrives = GetDriveStrings()
+      
+      If strDrives = "" Then
+          ' No drives were found
+          MsgBox "No Drives were found!", vbCritical
+      Else
+          ' Walk through the string and list each drive
+          DisplayDriveTypes strDrives
+      End If
+  End Sub
+
+  Private Sub DisplayDriveTypes(drives As String)
+      ' Walk through the logical drive string and display the drive
+      ' letters. The logical drive string is a null seperated
+      ' double null terminated string.
+      
+      Dim pos As Long
+      Dim drive As String
+      
+      List1.Clear
+      pos = 1
+      
+      Do While Not Mid$(drives, pos, 1) = Chr(0)
+          drive = Mid$(drives, pos, 3)
+          pos = pos + 4
+          List1.AddItem UCase(drive)
+      Loop
+  End Sub
+
+4. Click Run or press the F5 key to run the project.
+
+Result: The drive letter of each logical drive on the system is displayed in the
+listbox.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q190000 HOWTO: Get Started Programming with the Windows API
+
+  Q291575 HOWTO: Use Visual Basic to Locate CD-ROM Drives
+
+  Q196141 PRB: Problems Using Intrinsic File System Controls
+
+The Visual Basic Programmer's Guide (available on MSDN Online,
+http://msdn.microsoft.com/default.asp)
+
+(c) Microsoft Corporation 2001, All Rights Reserved.
+Contributions by Gray McDonald, Microsoft Corporation
+
+
+Additional query words: VB GetLogicalDriveStrings Drives Enumerate Letter
+
+======================================================================
+Keywords          : kbsample kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

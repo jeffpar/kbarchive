@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190518/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190518/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190518/","publisher":null,"image":null,"headline":"Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190518-fix-mfc-appwizard-generates-incorrect-toolbars-and-bitmaps">Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190518
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbwizard kbide kbVC600bug kbVS600sp2 kbFAQ kbVS600SP1 kbVS600sp3fix kbvc6
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MFC AppWizard (exe) has the following problems when generating applications
+that do not support the Document/View architecture:
+
+- SDI applications that do not support the Document/View architecture have
+  disassociations between their toolbar buttons and their images. These
+  disassociations also exist when Context-sensitive help is supported.
+
+- MDI applications that do not support the Document/View architecture but have
+  Context-sensitive Help do not have a Help toolbar image.
+
+CAUSE
+=====
+
+The MFC AppWizard uses the same toolbar bitmap for both SDI and MDI applications
+that do not support the Document/View architecture. This bitmap is also used
+when Context-sensitive help is selected in MFC AppWizard step 4. This bitmap
+does not contain the Help toolbar image.
+
+In the case of SDI applications, there is no File New toolbar button generated.
+This causes a disassociation between the toolbar buttons and their images. For
+example, the Help About toolbar button has the Print image on it. When
+Context-sensitive help is selected, the Help toolbar button has the Help About
+image on it.
+
+RESOLUTION
+==========
+
+SDI Applications That Do Not Support the Document/View Architecture
+-------------------------------------------------------------------
+
+Add a File New toolbar button by modifying the applications resource File: On the
+File menu, click Open, and open the applications resource file. Select
+&lt;yourapp&gt;.rc file and specify OpenAs Text. Add the following to the
+Toolbar section:
+
+        .
+        .
+
+        ////////////////////////////////////////////////////////////////// 
+        // Toolbar
+
+        IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+        BEGIN
+            BUTTON   ID_FILE_NEW     //&lt;-Add the File New toolbar button.
+            SEPARATOR                //&lt;-Add a toolbar separator.
+            BUTTON      ID_EDIT_CUT
+            BUTTON      ID_EDIT_COPY
+            BUTTON      ID_EDIT_PASTE
+            SEPARATOR
+            BUTTON      ID_FILE_PRINT
+            SEPARATOR
+            BUTTON      ID_APP_ABOUT
+        END
+        .
+        .
+
+SDI Applications Without Document/View Architecture but Support Help
+--------------------------------------------------------------------
+
+Make the above modifications as well as modifying the applications toolbar
+bitmap. You'll need to export a bitmap from the MFC AppWizard resource DLL,
+which has a Help toolbar image:
+
+1. On the File menu, click Open, and open the MFC AppWizard resource DLL.
+  Navigate to the ..\MSDev98\bin\ide directory. Select Mfcapwz.dll and specify
+  OpenAs Resources. Click Ok.
+
+2. Expand the Template directory, right-click Tbah_.bmp, and click Export.
+  Specify a name and directory for the bitmap, and click Export.
+
+3. On the File menu, click Open from the main menu and navigate to the directory
+  where you saved the bitmap. Double-click the bitmap to open it in the
+  resource editor.
+
+4. In the Graphics window, select the Rectangle Selection tool if it is not
+  already selected. Using the mouse, select the Help image by dragging the
+  mouse over it. On the Edit menu, click Copy. NOTE: Toolbar button images are
+  16x15 pixels in size. The area you select should be 16x15 and can be verified
+  in the status bar.
+
+5. In ResourceView, expand the Toolbar folder. Double-click IDR_MAINFRAME to
+  open the Toolbar editor. Select the empty button to the left of the Help
+  About button. On the Edit menu, click Paste. Click the Help About toolbar
+  button. The Help image should now be on the Help toolbar button.
+
+6. Save IDR_MAINFRAME and rebuild the application.
+
+MDI Applications Without Document/View Architecture but Support Help
+--------------------------------------------------------------------
+
+Make the above modifications to include the Help image in your applications
+toolbar bitmap.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+SDI applications that do not support the Document/View architecture do not have
+File New menu support, because a Frame and View are always created for you when
+the application is run. You can edit the code to include a File New menu and
+handler if you like.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project using the MFC AppWizard (exe). In step 1, select Single
+  Document and clear Document/View architecture support. Accept the defaults in
+  step 2 and 3. In step 4, select Context-sensitive help and click Finish.
+
+2. Build and run the application. Verify that the toolbar tooltips are
+  incorrect.
+
+3. Create a project using the MFC AppWizard (exe). In step 1, select Multiple
+  Document and clear Document/View architecture support. Accept the defaults in
+  step 2 and 3. In step 4, select Context-sensitive help and click Finish.
+
+4. Build and run the application. Verify that the Help toolbar button has no
+  image.
+
+REFERENCES
+==========
+
+See the following online documentation:
+
+- "Creating a Custom AppWizard:" Visual C++ Documentation, Using Visual C++,
+  Visual C++ Programmer's Guide, Beginning Your Program, Creating a Custom
+  AppWizard.
+
+- "Toolbar Editor:" Visual C++ Documentation, Using Visual C++, Visual C++
+  User's Guide, Resource Editors, Toolbar Editor.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q190977 Custom AppWizard Generates Incorrect Toolbars and Bitmaps
+
+Additional query words: kbvc600bug kbvc600 kbWizard
+
+======================================================================
+Keywords          : kbservicepack kbwizard kbide kbVC600bug kbVS600sp2 kbFAQ kbVS600SP1 kbVS600sp3fix kbvc600faq 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161155: FP97: How to Make a Web Page Display Data from a Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161155: FP97: How to Make a Web Page Display Data from a Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161155/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161155/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161155/","publisher":null,"image":null,"headline":"Q161155: FP97: How to Make a Web Page Display Data from a Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161155-fp97-how-to-make-a-web-page-display-data-from-a-database">Q161155: FP97: How to Make a Web Page Display Data from a Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161155
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 26-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FrontPage 97 has a built-in Internet Database Connector Wizard which, when used
+with the Database Results Page template, can create database queries that will
+function with the Microsoft Personal Web Server, Microsoft Peer Web Services, or
+Microsoft Internet Information Server. This article describes how to get started
+using the Internet Database Connector and where to get more information about
+it.
+
+NOTE: FrontPage 97 will not record Structured Query Language (SQL) or show you
+the table structure of the database you are querying. The Internet Database
+Connector Wizard will write the proper file for you, but you will need to know
+the SQL and the table structure needed to reach your data.
+
+MORE INFORMATION
+================
+
+To start using the Internet Database Connector, use the following steps:
+
+1. Make sure you have all of the following components:
+   - Microsoft Personal Web Server, Microsoft Peer Web Services, or Microsoft
+     Internet Information Server.
+
+   - An ODBC Driver for your database management system.
+
+   - A database.
+
+2. Create a system data source name using your ODBC Driver. For additional
+  information, please see the following article in the Microsoft Knowledge
+  Base:
+
+  Q161172 ACC97: How to Use IDC Files to Query a Secure MS Access Database
+
+
+1. Do the following:
+  a. On the File menu, click New.
+
+  b. In the Template Or Wizard list, select the Database Results template and
+     then click OK.
+
+     -or-
+
+     On the Edit menu, point to Database, and then click the command you want.
+
+2. On the File menu, click New.
+
+3. In the Template Or Wizard list, select the Database Connector Wizard, and
+  then click OK.
+
+4. In the ODBC Data Source box, type the name of your data source. Type a user
+  name and password, if desired. In the Query Results Template box, type the
+  file name of the file you created in step 3. Click Next.
+
+5. Enter the SQL statement you want, and then click next.
+
+6. In the Default Parameters box, specify the parameters and values you want,
+  and then click Finish.
+
+7. In the Current Web dialog box, in the Save As box, type they file name you
+  want, using an .idc file extension. Select a folder in your Web where
+  executable files can be stored. Click OK.
+
+To open the IDC file from a form, specify the Internet Database Connector as the
+form handler and the .idc file you created in step 9. You can also create a
+hyperlink on a Web page that links to the .idc file.
+
+For a full step-by-step, Web-based tutorial on creating Internet Database
+Connector files, see the Internet Database Connector Example Web at the
+following Microsoft World Wide Web site:
+
+  http://support.microsoft.com/support/Frontpage/idc/idcwiz.asp
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+  http://www.microsoft.com/
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

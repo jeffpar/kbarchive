@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179346: XADM: Generating the OAB Yields Error c1031662 Events 5004 5012 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179346: XADM: Generating the OAB Yields Error c1031662 Events 5004 5012" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179346/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179346/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179346/","publisher":null,"image":null,"headline":"Q179346: XADM: Generating the OAB Yields Error c1031662 Events 5004 5012","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179346-xadm-generating-the-oab-yields-error-c1031662-events-5004-5012">Q179346: XADM: Generating the OAB Yields Error c1031662 Events 5004 5012</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179346
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 10-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you attempt to generate the
+Exchange offline Address Book (OAB):
+
+  An error occurred while generating the offline Address Book. To
+  view details, see the application event log in the Windows NT
+  Event Viewer on the offline Address Book server.
+
+  Microsoft Exchange Administrator
+  ID no. c1031662
+
+The event viewer will log the following event:
+
+  Event ID 5004
+  Generation of the offline Address Book is complete. Result: An
+  error occurred.
+
+CAUSE
+=====
+
+The foreign Details Templates or the One-Off Address Templates, or both, have
+been installed, but the corresponding Windows NT Code Pages have not.
+
+If a Foreign Language Container Exists, check under the
+site\configuration\addressing\details templates and click on the left hand side
+for the various templates (for example, English/USA, French, German). If, after
+you click on each template on the left, you see no leaf objects on the right,
+you will need to follow the workaround.
+
+Also check under site\configuration\addressing\one-off address templates and
+click on the left hand side for the various templates (for example, English\USA,
+French, German). If, after you click on each template on the left, you see no
+leaf objects on the right, you will need to follow the workaround.
+
+WORKAROUND
+==========
+
+The Details Templates, One-Off Address Templates, and the corresponding Windows
+NT Code Pages must be installed properly for each language. If they are not
+installed properly, then each empty Language Container must be removed from the
+directory using the following procedure:
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Administrator program in raw mode by executing
+  ADMIN.EXE -R from the EXCHSRVR\BIN directory.
+
+2. Open the Details Templates and the One-Off Address Templates objects under
+  Configuration/Addressing in the Administrator program.
+
+3. Highlight the foreign language template(s) listed, and then click Delete Raw
+  Object from the Edit menu in the Administrator program.
+
+MORE INFORMATION
+================
+
+The Details Templates Language container holds details templates in various
+languages (such as U.S./English, German, and Japanese). Details templates let
+you customize various dialog boxes.
+
+Path: Organization\ Site\ Configuration Container\ Addressing Container\ Details
+Templates Container\ Language Container.
+
+The One-Off Address Templates container holds various One-Off Address Templates
+containers, which contain one-off address templates in various languages.
+One-off address templates let you view the Microsoft Outlook dialog boxes that
+prompt you for one-off e-mail address information.
+
+The One-Off Address Templates Language container holds one-off address templates
+in various languages (such as U.S./English, German, and Japanese). One-off
+address templates let you view the Microsoft Outlook dialog boxes that prompt
+you for one-off e-mail address information.
+
+Path: Organization\ Site\ Configuration Container\ Addressing Container\ One-Off
+Address Templates Container\ Language Container.
+
+For additional information about installing foreign language templates, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q159721 XADM: How to Add Templates for Different Language Clients
+
+For additional information about how to install the Windows NT code pages, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q151701 How to Manually Add Code Pages for Mixed Languages
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

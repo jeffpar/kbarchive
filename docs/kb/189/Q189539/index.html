@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189539/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189539/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189539/","publisher":null,"image":null,"headline":"Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189539-info-vb-60-readme-part-8-webclass-designer-issues">Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q189539</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbreadme</span> <span class="n">kbhtml</span> <span class="n">kbwizard</span> <span class="n">kbAppSetup</span> <span class="n">kbDCOM</span> <span class="n">kbInternet</span> <span class="n">kbVBp</span> <span class="n">kbVBp600</span> <span class="n">kbVS600</span> <span class="n">kbWebClass</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">01</span><span class="p">-</span><span class="n">MAR</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">information</span> <span class="n">below</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">documentation</span> <span class="k">and</span> <span class="n">workarounds</span> <span class="n">for</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="m">6.0</span><span class="p">.</span> <span class="n">This</span> <span class="n">information</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">README</span><span class="p">.</span><span class="n">htm</span> <span class="n">file</span> <span class="n">that</span> <span class="n">ships</span>
+<span class="k">with</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">Please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">REFERENCES</span>
+<span class="n">section</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span> <span class="n">for</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">articles</span>
+<span class="n">relating</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span> <span class="n">readme</span><span class="p">.</span>
+
+<span class="n">Following</span> <span class="n">is</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">all</span> <span class="n">parts</span> <span class="k">of</span> <span class="n">the</span> <span class="n">readme</span> <span class="n">file</span><span class="p">:</span>
+
+<span class="n">Part</span> <span class="m">1.</span>  <span class="n">Important</span> <span class="n">Issues</span> <span class="p">-</span> <span class="n">Please</span> <span class="n">Read</span> <span class="n">First</span><span class="c1">!
+</span><span class="n">Part</span> <span class="m">2.</span>  <span class="n">Data</span> <span class="n">Access</span> <span class="n">Issues</span> <span class="k">and</span> <span class="n">DataBinding</span> <span class="n">Tips</span>
+<span class="n">Part</span> <span class="m">3.</span>  <span class="n">Control</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">4.</span>  <span class="n">Language</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">5.</span>  <span class="n">Samples</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">6.</span>  <span class="n">Wizard</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">7.</span>  <span class="n">Error</span> <span class="n">Message</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">8.</span>  <span class="n">WebClass</span> <span class="n">Designer</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">9.</span>  <span class="n">DHTML</span> <span class="n">Page</span> <span class="n">Designer</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">10.</span> <span class="n">Extensibility</span> <span class="n">issues</span>
+<span class="n">Part</span> <span class="m">11.</span> <span class="n">Miscellaneous</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">12.</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">Issues</span>
+<span class="n">Part</span> <span class="m">13.</span> <span class="n">Dictionary</span> <span class="n">Object</span>
+<span class="n">Part</span> <span class="m">14.</span> <span class="n">Visual</span> <span class="n">Component</span> <span class="n">Manager</span>
+<span class="n">Part</span> <span class="m">15.</span> <span class="n">Application</span> <span class="n">Performance</span> <span class="n">Manager</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Webclass</span> <span class="n">Designer</span> <span class="n">Issues</span><span class="p">:</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="s2">"Me."</span> <span class="k">Not</span> <span class="n">Supported</span>
+<span class="p">-------------------------------</span>
+
+<span class="n">You</span> <span class="n">cannot</span> <span class="n">use</span> <span class="n">the</span> <span class="s2">"Me"</span> <span class="n">reference</span> <span class="k">in</span> <span class="n">your</span> <span class="n">Webclass</span> <span class="n">code</span> <span class="k">to</span> <span class="n">reference</span> <span class="n">the</span> <span class="n">Webclass</span>
+<span class="n">object</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">frequently</span> <span class="n">shows</span> <span class="n">that</span> <span class="n">you</span> <span class="n">can</span> <span class="nb">write</span> <span class="n">code</span>
+<span class="n">such</span> <span class="k">as</span> <span class="s2">"Me.URLData = value"</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span> <span class="n">Instead</span> <span class="k">of</span> <span class="n">using</span> <span class="n">Me</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">must</span> <span class="n">use</span> <span class="n">the</span> <span class="s2">"Webclass"</span> <span class="n">statement</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">instead</span> <span class="k">of</span> <span class="n">Me</span><span class="p">.</span><span class="n">URLData</span><span class="p">,</span> <span class="n">you</span> <span class="n">would</span>
+<span class="n">use</span> <span class="n">Webclass</span><span class="p">.</span><span class="n">URLData</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Invalid</span> <span class="n">HTML</span> <span class="n">Syntax</span> <span class="n">Can</span> <span class="n">Cause</span> <span class="n">Unspecified</span> <span class="n">Error</span>
+<span class="p">-----------------------------------------------------------</span>
+
+<span class="k">If</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">templates</span> <span class="n">you</span> <span class="n">add</span> <span class="k">to</span> <span class="n">your</span> <span class="n">Webclass</span> <span class="n">contains</span> <span class="n">badly</span> <span class="n">formed</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">sometimes</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">error</span> <span class="n">message</span> <span class="n">on</span> <span class="n">loading</span> <span class="n">the</span> <span class="n">template</span><span class="p">.</span> <span class="n">The</span> <span class="n">message</span>
+<span class="n">states</span> <span class="n">only</span> <span class="n">that</span> <span class="n">an</span> <span class="n">unspecified</span> <span class="n">error</span> <span class="n">has</span> <span class="n">occurred</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">in</span> <span class="n">older</span> <span class="n">pages</span>
+<span class="n">there</span> <span class="n">may</span> <span class="n">be</span> <span class="n">two</span> <span class="n">BODY</span> <span class="n">tags</span><span class="p">,</span> <span class="n">one</span> <span class="n">that</span> <span class="n">specifies</span> <span class="n">a</span> <span class="n">background</span> <span class="n">GIF</span> <span class="k">and</span> <span class="n">one</span> <span class="n">that</span>
+<span class="n">specifies</span> <span class="n">a</span> <span class="n">color</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">have</span> <span class="n">errors</span> <span class="k">in</span> <span class="n">unmatched</span> <span class="n">opening</span> <span class="k">and</span> <span class="n">closing</span>
+<span class="n">tags</span><span class="p">,</span> <span class="n">invalid</span> <span class="n">nesting</span><span class="p">,</span> <span class="k">or</span> <span class="n">other</span> <span class="n">syntax</span> <span class="n">issues</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">this</span> <span class="n">message</span> <span class="n">on</span>
+<span class="n">loading</span> <span class="n">a</span> <span class="n">template</span><span class="p">,</span> <span class="n">check</span> <span class="n">your</span> <span class="n">HTML</span> <span class="n">carefully</span> <span class="k">or</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">file</span> <span class="n">through</span> <span class="n">an</span> <span class="n">HTML</span>
+<span class="n">syntax</span> <span class="n">checker</span><span class="p">,</span> <span class="k">then</span> <span class="n">reload</span> <span class="n">the</span> <span class="n">template</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Avoid</span> <span class="n">Using</span> <span class="n">Global</span> <span class="k">or</span> <span class="n">Static</span> <span class="n">Variables</span> <span class="k">in</span> <span class="n">a</span> <span class="n">Webclass</span>
+<span class="p">----------------------------------------------------------------</span>
+
+<span class="n">One</span> <span class="n">allocation</span> <span class="k">of</span> <span class="n">global</span> <span class="n">variables</span> <span class="n">occurs</span> <span class="n">per</span> <span class="n">thread</span> <span class="k">in</span> <span class="n">a</span> <span class="n">multi</span><span class="p">-</span><span class="n">threaded</span>
+<span class="n">environment</span><span class="p">.</span> <span class="n">For</span> <span class="n">more</span> <span class="n">information</span><span class="p">,</span> <span class="n">search</span> <span class="n">Online</span><span class="p">,</span> <span class="k">with</span> <span class="n">Search</span> <span class="n">titles</span> <span class="n">only</span>
+<span class="n">selected</span><span class="p">,</span> <span class="n">for</span> <span class="s2">"Scalability and Multithreading"</span> <span class="k">in</span> <span class="n">the</span> <span class="n">MSDN</span> <span class="n">Library</span> <span class="n">Visual</span> <span class="n">Studio</span>
+<span class="m">6.0</span> <span class="n">documentation</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Some</span> <span class="n">External</span> <span class="n">HTML</span> <span class="n">Changes</span> <span class="n">Are</span> <span class="k">Not</span> <span class="n">Detected</span> <span class="n">Automatically</span>
+<span class="p">---------------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">working</span> <span class="n">on</span> <span class="n">an</span> <span class="n">HTML</span> <span class="n">template</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">designer</span><span class="p">,</span> <span class="n">any</span> <span class="n">changes</span> <span class="n">made</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">HTML</span> <span class="n">file</span> <span class="n">outside</span> <span class="k">of</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="k">in</span> <span class="n">an</span> <span class="n">external</span> <span class="n">HTML</span> <span class="n">editor</span><span class="p">)</span>
+<span class="n">are</span> <span class="n">usually</span> <span class="n">detected</span> <span class="n">by</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">when</span> <span class="n">you</span> <span class="n">return</span> <span class="k">to</span> <span class="n">the</span> <span class="n">designer</span><span class="p">.</span> <span class="k">In</span> <span class="n">these</span>
+<span class="n">cases</span><span class="p">,</span> <span class="n">you</span> <span class="n">are</span> <span class="n">prompted</span> <span class="k">to</span> <span class="n">reload</span> <span class="n">the</span> <span class="n">changed</span> <span class="n">file</span><span class="p">.</span> <span class="k">In</span> <span class="n">some</span> <span class="n">cases</span><span class="p">,</span> <span class="n">external</span>
+<span class="n">changes</span> <span class="n">are</span> <span class="k">not</span> <span class="n">detected</span><span class="p">.</span> <span class="n">The</span> <span class="n">most</span> <span class="n">common</span> <span class="n">occurrence</span> <span class="k">of</span> <span class="n">this</span> <span class="n">problem</span> <span class="n">is</span> <span class="n">when</span> <span class="n">you</span>
+<span class="k">set</span> <span class="n">focus</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">window</span> <span class="n">other</span> <span class="n">than</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">designer</span> <span class="n">before</span>
+<span class="n">switching</span> <span class="k">to</span> <span class="n">an</span> <span class="n">external</span> <span class="n">editor</span><span class="p">.</span> <span class="n">Upon</span> <span class="n">return</span> <span class="k">to</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">,</span> <span class="n">the</span> <span class="n">refresh</span> <span class="n">prompt</span>
+<span class="n">does</span> <span class="k">not</span> <span class="n">appear</span><span class="p">.</span> <span class="n">This</span> <span class="n">could</span> <span class="n">result</span> <span class="k">in</span> <span class="n">the</span> <span class="n">external</span> <span class="n">changes</span> <span class="n">being</span> <span class="n">overwritten</span>
+<span class="n">when</span> <span class="n">you</span> <span class="n">save</span> <span class="n">the</span> <span class="n">project</span><span class="p">,</span> <span class="n">unless</span> <span class="n">you</span> <span class="n">refresh</span> <span class="n">the</span> <span class="n">file</span> <span class="n">on</span> <span class="n">your</span> <span class="n">own</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">may</span> <span class="n">also</span> <span class="n">see</span> <span class="n">this</span> <span class="n">situation</span> <span class="k">if</span> <span class="n">you</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">template</span> <span class="k">while</span> <span class="n">your</span> <span class="n">project</span>
+<span class="n">is</span> <span class="n">running</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">cases</span> <span class="n">where</span> <span class="n">you</span> <span class="n">make</span> <span class="n">changes</span> <span class="k">to</span> <span class="n">the</span> <span class="n">HTML</span> <span class="k">and</span> <span class="n">are</span> <span class="k">not</span> <span class="n">prompted</span> <span class="k">to</span> <span class="n">refresh</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">refresh</span> <span class="n">manually</span> <span class="n">by</span> <span class="n">selecting</span> <span class="n">Refresh</span> <span class="n">HTML</span> <span class="n">Template</span> <span class="k">from</span> <span class="n">the</span> <span class="n">template</span><span class="s1">'s
+shortcut menu.
+
+NOTE: When you navigate to your external HTML editor, it is best to use the Edit
+HTML toolbar button or shortcut menu command. If you use the taskbar or the
+ALT+TAB key combination to navigate to an editor, make sure to save your project
+before leaving Visual Basic or you could lose changes you made in the designer.
+
+Webclasses:
+
+IIS Administration Console File Settings Not Acknowledged for Templates
+-----------------------------------------------------------------------
+
+The IIS Administration Console allows the server administrator to specify
+properties for files that are available on the IIS server. These properties
+include HTTP headers, file security, and custom errors. These properties will
+not be set on a Webclass template file if that file is sent to the client by the
+Webclass run-time.
+
+Webclasses: Unattended Execution
+--------------------------------
+
+A project containing a Webclass must have the Unattended Execution option
+selected in the Project Properties dialog box. This property has the following
+benefits:
+
+- Setting this property allows the Webclass to be run as an apartment model
+  object. This allows the Webclass to service an HTTP request on the thread on
+  which the request was received instead of processing all requests on a single
+  thread.
+
+  NOTE: You must set the Threading Model property in the Project Properties
+  dialog box to Apartment Threaded to run as an apartment-model object.
+
+- Setting this property causes the Visual Basic run-time DLL to log all
+  run-time errors to the event log instead of displaying the error in a prompt.
+  Displaying the message in a prompt would hang the IIS thread.
+
+- Setting this property causes any call to the Visual Basic MsgBox function to
+  log its message to the event log instead of displaying a prompt. Displaying
+  the message in a prompt would hang the IIS thread.
+
+Webclasses: Retain in Memory
+----------------------------
+
+A Visual Basic project executes inside the framework of the Visual Basic run-time
+environment. When a Visual Basic project begins executing, this framework needs
+to be initialized. The initialization takes the form of internal state
+allocation and initialization. In a multi-threaded Visual Basic environment,
+initialization has to be done at the process level and for each thread that is
+used to create a Visual Basic object.
+
+The above initialization is for the Visual Basic run-time. Similarly, for each
+Visual Basic project whose objects are created, the Visual Basic project must be
+initialized both at the process and the thread level.
+
+When a Visual Basic project is no longer in use on a thread or process (all the
+objects created in the thread or process are destroyed), the above state is
+reset and the memory is reallocated. Consequently, if a thread or process
+repeatedly creates and then quickly deletes all its Visual Basic objects, the
+overhead from the allocation and reallocation of run-time and project state is
+considerable. This will have a negative impact on Visual Basic'</span><span class="n">s</span> <span class="n">performance</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">scenario</span> <span class="n">occurs</span> <span class="k">in</span> <span class="n">IIS</span> <span class="n">especially</span> <span class="n">when</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">object</span><span class="p">,</span>
+<span class="n">invokes</span> <span class="n">some</span> <span class="n">operations</span> <span class="n">on</span> <span class="n">it</span> <span class="k">and</span> <span class="k">then</span> <span class="n">releases</span> <span class="n">it</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">precisely</span> <span class="n">the</span> <span class="k">case</span>
+<span class="n">for</span> <span class="n">Webclasses</span> <span class="n">where</span> <span class="n">the</span> <span class="n">Webclass</span><span class="s1">' StateManagement is set to wcNoState. As a
+result, the most commonly used Webclass scenario will have poor performance.
+
+The project property RetainInMemory allows the Visual Basic developer to override
+this behavior. When this property is set, once the Visual Basic project is
+initialized inside a process or thread, its state will never be reset or freed.
+Further, because the presence of a loaded Visual Basic project prevents the
+unloading of the Visual Basic run-time, the Visual Basic run-time will never be
+reset in the thread or process. In the case of IIS, once a Webclass whose
+RetainInMemory property is set is loaded into an IIS thread, it will never be
+reset in that thread. This will improve the performance of the Webclass.
+
+Note that RetainInMemory refers to the retention of the state of the Visual Basic
+run-time and the Visual Basic project. It does not refer to the retention of the
+Visual Basic project'</span><span class="n">s</span> <span class="n">object</span> <span class="n">instances</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">standard</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">projects</span><span class="p">,</span> <span class="n">projects</span> <span class="n">are</span> <span class="n">unloaded</span> <span class="k">from</span> <span class="n">threads</span> <span class="k">or</span>
+<span class="n">processes</span> <span class="k">as</span> <span class="n">soon</span> <span class="k">as</span> <span class="n">they</span> <span class="n">are</span> <span class="n">no</span> <span class="n">longer</span> <span class="n">being</span> <span class="n">used</span><span class="p">.</span> <span class="k">In</span> <span class="n">a</span> <span class="n">Webclass</span> <span class="n">project</span><span class="p">,</span> <span class="n">this</span>
+<span class="k">model</span> <span class="n">can</span> <span class="n">cause</span> <span class="n">performance</span> <span class="n">issues</span> <span class="n">because</span> <span class="n">the</span> <span class="n">server</span> <span class="n">must</span> <span class="nb">create</span> <span class="n">an</span> <span class="n">object</span><span class="p">,</span>
+<span class="n">invoke</span> <span class="n">a</span> <span class="n">method</span> <span class="n">on</span> <span class="n">it</span><span class="p">,</span> <span class="k">and</span> <span class="n">destroy</span> <span class="n">it</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">optimize</span> <span class="n">your</span> <span class="n">Webclasses</span> <span class="n">by</span>
+<span class="n">setting</span> <span class="n">a</span> <span class="n">project</span> <span class="n">property</span> <span class="n">called</span> <span class="n">Retain</span> <span class="k">In</span> <span class="n">Memory</span><span class="p">.</span> <span class="n">The</span> <span class="n">Retain</span> <span class="k">In</span> <span class="n">Memory</span>
+<span class="n">property</span> <span class="n">prevents</span> <span class="n">the</span> <span class="n">project</span> <span class="k">from</span> <span class="n">being</span> <span class="n">unloaded</span> <span class="k">until</span> <span class="n">the</span> <span class="n">thread</span> <span class="k">or</span> <span class="n">process</span> <span class="k">in</span>
+<span class="n">which</span> <span class="n">it</span> <span class="n">is</span> <span class="n">running</span> <span class="n">terminates</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span>
+
+<span class="n">Accounting</span> <span class="n">for</span> <span class="n">Differences</span> <span class="n">Between</span> <span class="n">the</span> <span class="n">Debug</span> <span class="k">and</span> <span class="n">Compiled</span> <span class="n">Versions</span>
+<span class="p">------------------------------------------------------------------</span>
+
+<span class="n">Visual</span> <span class="n">Basic</span> <span class="n">provides</span> <span class="n">the</span> <span class="n">ability</span> <span class="k">to</span> <span class="n">debug</span> <span class="n">components</span> <span class="n">running</span> <span class="n">under</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="n">service</span><span class="p">.</span> <span class="n">One</span> <span class="k">of</span> <span class="n">the</span> <span class="n">most</span> <span class="n">common</span> <span class="k">uses</span> <span class="k">of</span> <span class="n">this</span> <span class="n">feature</span> <span class="n">is</span> <span class="k">to</span> <span class="n">debug</span> <span class="n">an</span> <span class="n">IIS</span>
+<span class="n">Application</span><span class="p">.</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">achieves</span> <span class="n">this</span> <span class="n">by</span> <span class="n">running</span> <span class="n">the</span> <span class="n">component</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Visual</span>
+<span class="n">Basic</span> <span class="n">IDE</span><span class="p">.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">component</span> <span class="n">runs</span><span class="p">,</span> <span class="n">IIS</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">proxy</span> <span class="n">object</span> <span class="n">supplied</span> <span class="n">by</span>
+<span class="n">Visual</span> <span class="n">Basic</span><span class="p">,</span> <span class="n">which</span> <span class="k">in</span> <span class="n">turn</span> <span class="n">creates</span> <span class="n">the</span> <span class="k">real</span> <span class="n">object</span> <span class="n">running</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span>
+<span class="n">IDE</span><span class="p">.</span> <span class="n">IIS</span> <span class="k">then</span> <span class="n">communicates</span> <span class="k">with</span> <span class="n">the</span> <span class="n">object</span> <span class="n">through</span> <span class="n">DCOM</span><span class="p">.</span> <span class="n">This</span> <span class="n">debugging</span> <span class="n">behavior</span>
+<span class="n">is</span> <span class="n">very</span> <span class="n">different</span> <span class="k">from</span> <span class="n">how</span> <span class="n">the</span> <span class="n">project</span> <span class="n">runs</span> <span class="k">as</span> <span class="n">a</span> <span class="n">compiled</span> <span class="n">DLL</span><span class="p">.</span> <span class="n">Certain</span> <span class="n">behavior</span>
+<span class="n">that</span> <span class="n">is</span> <span class="n">present</span> <span class="k">in</span> <span class="n">debug</span> <span class="n">mode</span> <span class="n">works</span> <span class="n">differently</span> <span class="n">when</span> <span class="n">you</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">compiled</span>
+<span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">project</span><span class="p">.</span> <span class="n">Because</span> <span class="k">of</span> <span class="n">this</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">keep</span> <span class="n">the</span> <span class="n">compiled</span> <span class="n">behavior</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">project</span> <span class="k">in</span> <span class="n">mind</span> <span class="n">when</span> <span class="n">you</span> <span class="n">build</span> <span class="n">your</span> <span class="n">Webclass</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">are</span> <span class="n">key</span> <span class="n">areas</span> <span class="k">in</span> <span class="n">which</span> <span class="n">you</span> <span class="n">must</span> <span class="n">tailor</span> <span class="n">your</span> <span class="n">application</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">behavior</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">displays</span> <span class="k">as</span> <span class="n">a</span> <span class="n">compiled</span> <span class="n">application</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Use</span> <span class="n">only</span> <span class="nf">system</span> <span class="n">DSNs</span> <span class="n">because</span> <span class="n">other</span> <span class="n">DSNs</span> <span class="n">will</span> <span class="k">not</span> <span class="n">work</span> <span class="n">beyond</span> <span class="n">debug</span> <span class="n">mode</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">Do</span> <span class="k">not</span> <span class="n">use</span> <span class="n">an</span> <span class="n">Access</span> <span class="n">database</span> <span class="n">on</span> <span class="n">a</span> <span class="n">remote</span> <span class="n">computer</span> <span class="k">in</span> <span class="n">your</span> <span class="n">project</span><span class="p">.</span> <span class="k">While</span>
+  <span class="n">this</span> <span class="n">will</span> <span class="n">work</span> <span class="k">in</span> <span class="n">debug</span> <span class="n">mode</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="k">not</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">database</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">compiled</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">Do</span> <span class="k">not</span> <span class="n">allow</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="k">to</span> <span class="n">add</span> <span class="n">itself</span> <span class="k">or</span> <span class="n">other</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">components</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Page</span><span class="s1">'s Application object. Attempting to do so will
+  generate an error when you run the compiled application.
+
+- Understand the security context of the compiled application. Please refer to
+  the "Webclasses: Articles of Interest" section below for information on an
+  article about security.
+
+- Keep in mind that your compiled Webclass will be accessed from multiple
+  threads rather than through the same thread, as is the case in debug mode.
+  Static and global variables will not be kept across threads. For more
+  information, search Online, with Search titles only selected, for
+  "Scalability and Multithreading" in the MSDN Library Visual Studio 6.0
+  documentation.
+
+- Understand that, although you will see message prompts in debug mode, the
+  compiled Webclass writes all errors as entries in the NT event log or in a
+  log file created in the Windows directory. No prompt appears for errors in
+  compiled mode.
+
+- While Unattended Execution must be set for Webclasses, you will not see the
+  side effects of failing to set this property in debug mode. See the
+  Unattended Execution section above for details.
+
+Webclasses: Performance Tips
+----------------------------
+
+The following are miscellaneous tips you can incorporate to improve the
+performance of your IIS applications:
+
+- When running from the IDE, the interactive user'</span><span class="n">s</span> <span class="n">context</span> <span class="n">is</span> <span class="n">used</span><span class="p">.</span> <span class="n">When</span>
+  <span class="n">running</span> <span class="n">compiled</span><span class="p">,</span> <span class="n">the</span> <span class="n">IIS</span> <span class="n">anonymous</span> <span class="n">user</span> <span class="n">is</span> <span class="n">used</span> <span class="n">unless</span> <span class="n">some</span> <span class="n">other</span> <span class="n">security</span>
+  <span class="n">setting</span> <span class="n">is</span> <span class="k">set</span> <span class="n">up</span> <span class="n">on</span> <span class="n">the</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Unattended</span> <span class="n">Execution</span> <span class="k">and</span> <span class="n">Retain</span> <span class="k">In</span> <span class="n">Memory</span> <span class="k">options</span> <span class="n">are</span>
+  <span class="n">selected</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Project</span> <span class="n">Properties</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">for</span> <span class="n">your</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">your</span> <span class="n">application</span> <span class="n">does</span> <span class="k">not</span> <span class="k">include</span> <span class="n">any</span> <span class="n">text</span> <span class="n">replacements</span><span class="p">,</span> <span class="k">set</span> <span class="n">the</span> <span class="n">TagPrefix</span>
+  <span class="n">property</span> <span class="k">to</span> <span class="n">an</span> <span class="n">empty</span> <span class="k">string</span><span class="p">.</span> <span class="n">This</span> <span class="n">prevents</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="k">from</span> <span class="n">performing</span>
+  <span class="n">unnecessary</span> <span class="n">scans</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">Do</span> <span class="k">not</span> <span class="n">store</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">objects</span> <span class="p">(</span><span class="k">or</span> <span class="n">any</span> <span class="n">other</span> <span class="n">apartment</span><span class="p">-</span><span class="k">model</span> <span class="n">COM</span> <span class="n">object</span><span class="p">)</span>
+  <span class="k">in</span> <span class="n">the</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Pages</span><span class="s1">' Session object. This may affect scalability. You
+  can store strings in the Session object without adverse effects. Refer to the
+  IIS documentation for more details.
+
+- Limit the use of variants in your application.
+
+- When the Webclass'</span><span class="n">s</span> <span class="n">StateManagement</span> <span class="n">property</span> <span class="n">is</span> <span class="k">set</span> <span class="k">to</span> <span class="n">wcRetainInstance</span><span class="p">,</span>
+  <span class="n">performance</span> <span class="n">will</span> <span class="n">decrease</span> <span class="n">when</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">clients</span> <span class="n">significantly</span> <span class="n">increases</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">your</span> <span class="n">application</span> <span class="n">is</span> <span class="n">performing</span> <span class="n">a</span> <span class="n">client</span><span class="p">-</span><span class="n">side</span> <span class="n">transaction</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Webclass</span>
+  <span class="n">template</span> <span class="n">that</span> <span class="n">does</span> <span class="k">not</span> <span class="n">contain</span> <span class="n">any</span> <span class="n">replacements</span> <span class="k">or</span> <span class="n">does</span> <span class="k">not</span> <span class="n">use</span> <span class="n">the</span> <span class="n">URLData</span>
+  <span class="n">property</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">access</span> <span class="n">the</span> <span class="n">template</span> <span class="n">directly</span> <span class="n">through</span> <span class="n">a</span> <span class="n">URL</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">When</span> <span class="n">using</span> <span class="n">the</span> <span class="n">URLFor</span> <span class="n">method</span><span class="p">,</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">Webitem</span> <span class="n">by</span> <span class="n">the</span> <span class="k">string</span> <span class="n">name</span> <span class="n">rather</span>
+  <span class="n">than</span> <span class="n">by</span> <span class="n">an</span> <span class="n">object</span> <span class="n">reference</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Use</span> <span class="n">specific</span> <span class="n">types</span> <span class="n">when</span> <span class="n">creating</span> <span class="k">and</span> <span class="n">invoking</span> <span class="n">other</span> <span class="n">components</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Miscellaneous</span> <span class="n">Issues</span>
+<span class="p">--------------------------------</span>
+
+<span class="p">-</span> <span class="n">When</span> <span class="n">the</span> <span class="n">debugger</span> <span class="n">for</span> <span class="n">your</span> <span class="n">IIS</span> <span class="n">application</span> <span class="n">hits</span> <span class="n">a</span> <span class="n">breakpoint</span> <span class="k">in</span> <span class="n">any</span> <span class="n">event</span><span class="p">,</span>
+  <span class="n">pressing</span> <span class="n">the</span> <span class="n">F5</span> <span class="n">key</span> <span class="k">to</span> <span class="n">continue</span> <span class="n">does</span> <span class="k">not</span> <span class="n">return</span> <span class="n">the</span> <span class="n">focus</span> <span class="k">to</span> <span class="n">Internet</span>
+  <span class="n">Explorer</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">switch</span> <span class="k">to</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="n">manually</span> <span class="n">after</span> <span class="n">continuing</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Webclass</span> <span class="n">names</span> <span class="k">and</span> <span class="n">tag</span> <span class="n">names</span> <span class="n">are</span> <span class="k">case</span><span class="p">-</span><span class="n">insensitive</span><span class="p">.</span> <span class="n">You</span> <span class="n">cannot</span> <span class="n">rename</span> <span class="n">a</span>
+  <span class="n">Webclass</span> <span class="k">to</span> <span class="n">the</span> <span class="n">same</span> <span class="n">name</span> <span class="n">it</span> <span class="n">had</span> <span class="n">previously</span><span class="p">,</span> <span class="n">changing</span> <span class="n">only</span> <span class="n">the</span> <span class="k">case</span><span class="p">.</span> <span class="n">For</span>
+  <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">change</span> <span class="n">a</span> <span class="n">Webclass</span> <span class="n">named</span> <span class="n">Orderentry</span> <span class="k">to</span> <span class="n">OrderEntry</span><span class="p">,</span> <span class="n">the</span>
+  <span class="n">original</span> <span class="n">name</span> <span class="n">remains</span> <span class="n">unchanged</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Avoid</span> <span class="n">running</span> <span class="n">multiple</span> <span class="n">browser</span> <span class="n">instances</span> <span class="n">during</span> <span class="n">debugging</span><span class="p">.</span> <span class="k">If</span> <span class="n">more</span> <span class="n">than</span> <span class="n">one</span>
+  <span class="n">instance</span> <span class="k">of</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="n">is</span> <span class="n">open</span><span class="p">,</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">does</span> <span class="k">not</span> <span class="n">keep</span> <span class="n">track</span> <span class="k">of</span>
+  <span class="n">which</span> <span class="n">browser</span> <span class="n">is</span> <span class="n">running</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">project</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">two</span> <span class="n">browsers</span> <span class="n">open</span><span class="p">,</span>
+  <span class="n">one</span> <span class="n">pointing</span> <span class="k">to</span> <span class="n">your</span> <span class="n">project</span> <span class="k">and</span> <span class="n">one</span> <span class="n">pointing</span> <span class="k">to</span> <span class="n">another</span> <span class="n">page</span><span class="p">,</span> <span class="n">both</span> <span class="n">browsers</span>
+  <span class="n">will</span> <span class="n">be</span> <span class="n">affected</span> <span class="n">when</span> <span class="n">you</span> <span class="k">end</span> <span class="n">your</span> <span class="n">debugging</span> <span class="n">session</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">You</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">error</span> <span class="k">if</span> <span class="n">you</span> <span class="n">attempt</span> <span class="k">to</span> <span class="nf">compile</span> <span class="n">your</span> <span class="n">IIS</span> <span class="n">application</span>
+  <span class="n">mproject</span> <span class="k">from</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span><span class="p">.</span> <span class="n">One</span> <span class="n">way</span> <span class="k">to</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">is</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span>
+  <span class="n">project</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">,</span> <span class="n">dirty</span> <span class="n">the</span> <span class="n">designer</span> <span class="k">in</span> <span class="n">some</span> <span class="n">insignificant</span> <span class="n">way</span><span class="p">,</span> <span class="k">and</span>
+  <span class="k">then</span> <span class="n">resave</span> <span class="n">the</span> <span class="n">project</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="k">then</span> <span class="n">restart</span> <span class="n">the</span> <span class="nf">compile</span> <span class="k">from</span> <span class="n">the</span> <span class="nf">command</span>
+  <span class="n">line</span> <span class="k">and</span> <span class="n">it</span> <span class="n">should</span> <span class="n">work</span> <span class="n">correctly</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">program</span> <span class="n">buttons</span> <span class="n">on</span> <span class="n">the</span> <span class="n">HTML</span> <span class="n">templates</span> <span class="k">in</span> <span class="n">your</span> <span class="n">Webclass</span><span class="p">,</span> <span class="n">you</span>
+  <span class="n">must</span> <span class="n">be</span> <span class="n">aware</span> <span class="k">of</span> <span class="n">two</span> <span class="n">items</span><span class="p">.</span> <span class="n">First</span><span class="p">,</span> <span class="n">your</span> <span class="n">buttons</span> <span class="n">must</span> <span class="n">be</span> <span class="k">of</span> <span class="n">type</span> <span class="n">SUBMIT</span><span class="p">.</span> <span class="n">You</span>
+  <span class="n">can</span> <span class="k">set</span> <span class="n">this</span> <span class="n">by</span> <span class="n">adding</span> <span class="n">a</span> <span class="n">parameter</span> <span class="k">to</span> <span class="n">the</span> <span class="n">HTML</span> <span class="n">for</span> <span class="n">your</span> <span class="n">button</span> <span class="n">element</span> <span class="n">that</span>
+  <span class="n">says</span> <span class="n">type</span><span class="p">=</span><span class="n">SUBMIT</span><span class="p">.</span> <span class="n">Second</span><span class="p">,</span> <span class="n">you</span> <span class="n">cannot</span> <span class="n">code</span> <span class="n">for</span> <span class="n">the</span> <span class="n">buttons</span> <span class="n">directly</span><span class="p">;</span> <span class="n">instead</span>
+  <span class="n">you</span> <span class="n">must</span> <span class="nf">connect</span> <span class="n">their</span> <span class="n">form</span> <span class="n">element</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">either</span> <span class="n">place</span> <span class="n">each</span> <span class="n">button</span> <span class="k">in</span> <span class="n">a</span>
+  <span class="n">separate</span> <span class="n">form</span> <span class="k">or</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Request</span> <span class="n">object</span><span class="s1">'s form collection to
+  determine the button from which the event originated.
+
+Webclasses: Articles of Interest
+--------------------------------
+
+Webclasses tie together several distinct technologies, including Visual Basic,
+Active Server Pages, Internet Information Server, and Windows NT. There are
+several articles available on Microsoft'</span><span class="n">s</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">that</span> <span class="n">may</span> <span class="n">be</span> <span class="n">useful</span> <span class="k">to</span> <span class="n">you</span> <span class="k">as</span>
+<span class="n">you</span> <span class="n">learn</span> <span class="n">about</span> <span class="n">the</span> <span class="n">technologies</span> <span class="n">behind</span> <span class="n">WebClasses</span><span class="p">.</span> <span class="n">Some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">articles</span> <span class="n">that</span>
+<span class="n">may</span> <span class="n">be</span> <span class="n">particularly</span> <span class="n">helpful</span> <span class="n">are</span> <span class="n">listed</span> <span class="n">below</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">MSDN</span> <span class="n">Online</span> <span class="n">main</span> <span class="n">site</span><span class="p">:</span> <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">msdn</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">workshop</span><span class="p">/</span><span class="n">default</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="s2">"Implementing a Secure Site with ASP"</span>
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">isn</span><span class="p">/</span><span class="n">techcenter</span><span class="p">/</span><span class="n">security</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="p">-</span> <span class="s2">"INFO: Security Issues with Objects in ASP and ISAPI Extensions"</span> <span class="n">Microsoft</span>
+  <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">article</span> <span class="n">Q172925</span>
+
+<span class="p">-</span> <span class="s2">"FAQ: COM Security Frequently Asked Questions"</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span>
+  <span class="n">article</span> <span class="n">Q158508</span>
+
+<span class="p">-</span> <span class="s2">"INFO: Descriptions of Workings of OLE Threading Models"</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+  <span class="n">Base</span> <span class="n">article</span> <span class="n">Q150777</span>
+
+
+<span class="p">-</span> <span class="s2">"INFO: COM Servers Activation and NT Windows Stations"</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+  <span class="n">Base</span> <span class="n">article</span> <span class="n">Q169321</span>
+
+<span class="p">-</span> <span class="s2">"HOWTO: Launching ActiveX Servers from ISAPI Extensions"</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+  <span class="n">Base</span> <span class="n">article</span> <span class="n">Q156223</span>
+
+<span class="p">-</span> <span class="s2">"INFO: Security Ramifications for IIS Applications"</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span>
+  <span class="n">article</span> <span class="n">Q158229</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Formatting</span> <span class="k">in</span> <span class="n">Source</span> <span class="n">HTM</span> <span class="n">File</span>
+<span class="p">-----------------------------------------</span>
+
+<span class="n">You</span> <span class="n">may</span> <span class="n">see</span> <span class="n">a</span> <span class="n">loss</span> <span class="k">of</span> <span class="n">some</span> <span class="n">formatting</span> <span class="k">in</span> <span class="n">your</span> <span class="n">HTML</span> <span class="n">source</span> <span class="n">code</span> <span class="n">after</span> <span class="n">you</span> <span class="n">add</span> <span class="n">a</span>
+<span class="n">template</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">designer</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">may</span> <span class="n">remove</span>
+<span class="n">some</span> <span class="n">extraneous</span> <span class="n">white</span> <span class="n">spaces</span> <span class="k">from</span> <span class="n">your</span> <span class="n">original</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">will</span> <span class="k">not</span> <span class="n">affect</span> <span class="n">the</span>
+<span class="n">functioning</span> <span class="k">of</span> <span class="n">your</span> <span class="n">HTML</span> <span class="n">page</span> <span class="k">in</span> <span class="n">any</span> <span class="n">way</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Cannot</span> <span class="n">Support</span> <span class="n">HTML</span><span class="s1">'s LINK Element
+----------------------------------------------
+
+LINK tags are used in an HTML page to reference style sheets. While your HTML
+pages in a Webclass project can contain this tag, you cannot use the designer to
+access the LINK element and process Visual Basic code for it. If you need to
+manipulate a LINK tag in your code, you can manually add event notation to the
+tag as shown in the Online documentation. To see the notation, search Online,
+with Search titles only selected, for "Manually Adding Event Notation to an .HTM
+File" in the MSDN Library Visual Studio 6.0 documentation.
+
+Webclasses: When Using Visual SourceSafe with Webclass Projects,
+
+You Must Manually Check in the Project'</span><span class="n">s</span> <span class="p">.</span><span class="n">HTM</span> <span class="n">Files</span>
+<span class="p">---------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">check</span> <span class="n">an</span> <span class="n">IIS</span> <span class="n">application</span> <span class="n">project</span> <span class="n">into</span> <span class="n">Visual</span> <span class="n">SourceSafe</span><span class="p">,</span> <span class="n">the</span> <span class="n">HTML</span> <span class="n">pages</span>
+<span class="n">associated</span> <span class="k">with</span> <span class="n">the</span> <span class="n">project</span> <span class="n">are</span> <span class="k">not</span> <span class="n">automatically</span> <span class="n">checked</span> <span class="n">into</span> <span class="n">the</span> <span class="n">SourceSafe</span>
+<span class="n">tree</span> <span class="k">with</span> <span class="n">the</span> <span class="n">rest</span> <span class="k">of</span> <span class="n">the</span> <span class="n">project</span> <span class="n">files</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">manually</span> <span class="n">add</span> <span class="n">them</span> <span class="k">to</span> <span class="n">the</span> <span class="n">tree</span>
+<span class="k">as</span> <span class="n">related</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">TagPrefix</span> <span class="n">Should</span> <span class="n">Be</span> <span class="n">WC</span>
+<span class="p">----------------------------------</span>
+
+<span class="n">Although</span> <span class="n">the</span> <span class="n">default</span> <span class="n">value</span> <span class="n">for</span> <span class="n">the</span> <span class="n">TagPrefix</span> <span class="n">property</span> <span class="n">for</span> <span class="n">your</span> <span class="n">Webclass</span> <span class="n">templates</span>
+<span class="n">is</span> <span class="n">WC</span><span class="p">@,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">preferable</span> <span class="n">for</span> <span class="n">you</span> <span class="k">to</span> <span class="n">use</span> <span class="n">WC</span><span class="p">:</span> <span class="n">whenever</span> <span class="n">possible</span> <span class="k">to</span> <span class="n">indicate</span> <span class="n">text</span>
+<span class="n">replacements</span> <span class="k">in</span> <span class="n">your</span> <span class="n">template</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Variant</span> <span class="n">Parameter</span> <span class="k">in</span> <span class="n">URLFor</span> <span class="n">Method</span>
+<span class="p">----------------------------------------------</span>
+
+<span class="n">The</span> <span class="n">WebItem</span> <span class="n">parameter</span> <span class="k">of</span> <span class="n">the</span> <span class="n">URLFor</span> <span class="n">method</span> <span class="n">can</span> <span class="n">accept</span> <span class="n">a</span> <span class="n">WebItem</span> <span class="n">object</span> <span class="k">or</span> <span class="n">the</span>
+<span class="n">name</span> <span class="k">of</span> <span class="n">a</span> <span class="n">WebItem</span> <span class="k">as</span> <span class="n">a</span> <span class="k">string</span><span class="p">.</span> <span class="n">For</span> <span class="n">performance</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">use</span> <span class="n">the</span>
+<span class="k">string</span> <span class="n">form</span> <span class="n">when</span> <span class="n">referencing</span> <span class="n">multiple</span> <span class="n">webitems</span> <span class="n">within</span> <span class="n">one</span> <span class="n">request</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Sequencing</span> <span class="n">Data</span> <span class="n">is</span> <span class="n">Passed</span> <span class="n">Using</span> <span class="n">the</span> <span class="p">&amp;</span><span class="n">WCU</span> <span class="n">Parameter</span>
+<span class="p">--------------------------------------------------------------</span>
+
+<span class="k">In</span> <span class="s2">"Handling Sequencing in Webclasses"</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Building</span> <span class="n">Internet</span>
+<span class="n">Applications</span> <span class="n">book</span> <span class="k">in</span> <span class="n">MSDN</span><span class="s1">'s Component Tools Guide, the documentation incorrectly
+states that you can move data between the client and the server using a ?Data
+parameter appended on to your URL request. In fact, you must use a &amp;WCU
+parameter instead of ?Data. The correct syntax for the request is:
+
+  WCI=webitem1?WCE=event1&amp;WCU=01
+
+Webclasses:
+
+StateManagement Property Constants Contain Incorrect Property Reference
+-----------------------------------------------------------------------
+
+The "StateManagement Property Constants" topic incorrectly states that the
+RetainInstance constant causes the Webclass to retain state data until the
+Webclass object calls the SetComplete method. This should say that data is
+maintained until the Webclass object calls the ReleaseInstance method. To see
+the erroneous Help topic, search Online, with Search titles only selected, for
+"StateManagement Property Constants" in the MSDN Library Visual Studio 6.0
+documentation.
+
+Webclasses: State and the Session Object
+----------------------------------------
+
+If the Webclass'</span><span class="n">s</span> <span class="n">StateManagementType</span> <span class="n">is</span> <span class="n">wcRetainInstance</span><span class="p">,</span> <span class="n">a</span> <span class="n">separate</span> <span class="n">instance</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">Webclass</span> <span class="n">will</span> <span class="n">be</span> <span class="n">maintained</span> <span class="k">in</span> <span class="n">the</span> <span class="n">ASP</span> <span class="n">Session</span> <span class="n">object</span> <span class="n">per</span> <span class="n">user</span> <span class="n">session</span><span class="p">.</span> <span class="k">In</span>
+<span class="n">some</span> <span class="n">cases</span><span class="p">,</span> <span class="n">it</span> <span class="n">may</span> <span class="n">appear</span> <span class="k">to</span> <span class="n">you</span> <span class="n">that</span> <span class="n">state</span> <span class="n">is</span> <span class="k">not</span> <span class="n">being</span> <span class="n">maintained</span> <span class="n">when</span> <span class="n">you</span>
+<span class="n">actually</span> <span class="n">have</span> <span class="n">two</span> <span class="n">instances</span> <span class="k">of</span> <span class="n">a</span> <span class="n">Webclass</span> <span class="k">in</span> <span class="n">your</span> <span class="n">Session</span> <span class="n">object</span><span class="p">.</span> <span class="n">One</span> <span class="n">situation</span>
+<span class="k">in</span> <span class="n">which</span> <span class="n">this</span> <span class="n">might</span> <span class="n">occur</span> <span class="n">is</span> <span class="n">when</span> <span class="n">you</span> <span class="n">have</span> <span class="n">two</span> <span class="n">virtual</span> <span class="n">directories</span> <span class="n">that</span> <span class="n">both</span>
+<span class="n">point</span> <span class="k">to</span> <span class="n">the</span> <span class="n">same</span> <span class="n">location</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">one</span> <span class="n">virtual</span> <span class="n">directory</span> <span class="n">when</span> <span class="n">you</span> <span class="n">begin</span>
+<span class="n">your</span> <span class="n">debugging</span> <span class="n">session</span> <span class="k">and</span> <span class="n">reference</span> <span class="n">the</span> <span class="n">second</span> <span class="k">in</span> <span class="n">your</span> <span class="n">code</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="n">actually</span>
+<span class="n">start</span> <span class="n">a</span> <span class="n">second</span> <span class="n">instance</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Webclass</span> <span class="n">when</span> <span class="n">the</span> <span class="n">code</span> <span class="n">is</span> <span class="n">activated</span><span class="p">.</span> <span class="n">Please</span> <span class="n">refer</span>
+<span class="k">to</span> <span class="n">the</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Pages</span> <span class="n">documentation</span> <span class="k">in</span> <span class="n">MSDN</span> <span class="n">for</span> <span class="n">details</span> <span class="n">on</span> <span class="n">how</span> <span class="n">the</span> <span class="n">Active</span>
+<span class="n">Server</span> <span class="n">Pages</span> <span class="n">Session</span> <span class="n">object</span> <span class="n">is</span> <span class="n">implemented</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span>
+
+<span class="n">Code</span> <span class="n">Corrections</span> <span class="k">in</span> <span class="n">Help</span> <span class="n">Topic</span> <span class="s2">"Defining Webclass Events at Run Time"</span>
+<span class="p">---------------------------------------------------------------------</span>
+
+<span class="k">In</span> <span class="n">the</span> <span class="n">topic</span> <span class="s2">"Defining Webclass Events at Run Time,"</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">code</span> <span class="n">shows</span> <span class="n">a</span>
+<span class="n">statement</span> <span class="n">that</span> <span class="n">reads</span><span class="p">:</span>
+
+     <span class="n">rs</span> <span class="p">=</span> <span class="n">New</span> <span class="n">ADO</span><span class="p">.</span><span class="n">Recordset</span>
+
+<span class="n">The</span> <span class="n">correct</span> <span class="n">syntax</span> <span class="n">for</span> <span class="n">this</span> <span class="n">line</span> <span class="n">should</span> <span class="n">be</span><span class="p">:</span>
+
+     <span class="k">Set</span> <span class="n">rs</span> <span class="p">=</span> <span class="n">New</span> <span class="n">ADODB</span><span class="p">.</span><span class="n">Recordset</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">HTM</span> <span class="k">and</span> <span class="n">ASP</span> <span class="n">Files</span> <span class="k">Not</span> <span class="n">Included</span> <span class="k">in</span> <span class="n">Standard</span> <span class="n">Packages</span>
+<span class="p">---------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="k">package</span> <span class="n">an</span> <span class="n">IIS</span> <span class="n">application</span> <span class="n">into</span> <span class="n">a</span> <span class="n">standard</span> <span class="k">package</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span>
+<span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">the</span> <span class="n">wizard</span> <span class="n">does</span> <span class="k">not</span> <span class="n">automatically</span> <span class="k">include</span> <span class="n">the</span> <span class="p">.</span><span class="n">htm</span> <span class="k">and</span> <span class="p">.</span><span class="n">asp</span>
+<span class="n">files</span> <span class="n">for</span> <span class="n">the</span> <span class="n">project</span> <span class="k">in</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">it</span> <span class="n">creates</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="k">include</span> <span class="n">these</span> <span class="n">files</span>
+<span class="n">manually</span> <span class="k">while</span> <span class="n">you</span> <span class="n">are</span> <span class="n">packaging</span> <span class="n">the</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="n">Webclasses</span><span class="p">:</span> <span class="n">Unspecified</span> <span class="n">Error</span>
+<span class="p">-----------------------------</span>
+
+<span class="n">An</span> <span class="s2">"unspecified error"</span> <span class="n">occurs</span> <span class="k">if</span> <span class="n">you</span> <span class="n">add</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">Webclass</span> <span class="k">to</span> <span class="n">a</span> <span class="n">new</span> <span class="n">project</span>
+<span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">on</span> <span class="n">the</span> <span class="n">template</span> <span class="n">icon</span> <span class="n">before</span> <span class="n">the</span> <span class="n">project</span> <span class="n">has</span> <span class="n">been</span> <span class="n">saved</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span>
+<span class="n">receive</span> <span class="n">a</span> <span class="n">prompt</span> <span class="n">saying</span> <span class="n">that</span> <span class="s2">"An unspecified error has occurred"</span> <span class="k">in</span> <span class="n">this</span>
+<span class="n">context</span><span class="p">,</span> <span class="n">save</span> <span class="n">your</span> <span class="n">project</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">articles</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q170164</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">1</span><span class="p">:</span> <span class="n">Important</span> <span class="n">Issues</span> <span class="p">-</span> <span class="n">Read</span> <span class="n">First</span><span class="c1">!
+</span>
+  <span class="n">Q170163</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">2</span><span class="p">:</span> <span class="n">Data</span> <span class="n">Access</span><span class="p">/</span><span class="n">Databinding</span> <span class="n">Issues</span>
+
+  <span class="n">Q170162</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">3</span><span class="p">:</span> <span class="n">Control</span> <span class="n">Issues</span>
+
+  <span class="n">Q170161</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">4</span><span class="p">:</span> <span class="n">Language</span> <span class="n">Issues</span>
+
+  <span class="n">Q170160</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">5</span><span class="p">:</span> <span class="n">Samples</span> <span class="n">Issues</span>
+
+  <span class="n">Q190046</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">6</span><span class="p">:</span> <span class="n">Wizard</span> <span class="n">Issues</span>
+
+  <span class="n">Q170158</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">7</span><span class="p">:</span> <span class="n">Error</span> <span class="n">Message</span> <span class="n">Issues</span>
+
+  <span class="n">Q190249</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">9</span><span class="p">:</span> <span class="n">DHTML</span> <span class="n">Page</span> <span class="n">Designer</span> <span class="n">Issues</span>
+
+  <span class="n">Q170154</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">10</span><span class="p">:</span> <span class="n">Extensibility</span> <span class="n">Issues</span>
+
+  <span class="n">Q170157</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">11</span><span class="p">:</span> <span class="n">Miscellaneous</span> <span class="n">Issues</span>
+
+  <span class="n">Q170156</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">12</span><span class="p">:</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="n">Issues</span>
+
+  <span class="n">Q191792</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">13</span><span class="p">:</span> <span class="n">Dictionary</span> <span class="n">Object</span>
+
+  <span class="n">Q191791</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">14</span><span class="p">:</span> <span class="n">Visual</span> <span class="n">Component</span> <span class="n">Manager</span>
+
+  <span class="n">Q191790</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">VB</span> <span class="m">6.0</span> <span class="n">Readme</span> <span class="n">Part</span> <span class="m">15</span><span class="p">:</span> <span class="n">Application</span> <span class="n">Performance</span> <span class="n">Explorer</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbreadme</span> <span class="n">kbhtml</span> <span class="n">kbwizard</span> <span class="n">kbAppSetup</span> <span class="n">kbDCOM</span> <span class="n">kbInternet</span> <span class="n">kbVBp</span> <span class="n">kbVBp600</span> <span class="n">kbVS600</span> <span class="n">kbWebClasses</span> <span class="n">MSGRAPH</span> <span class="n">kbIIS</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVBSearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbZNotKeyword6</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbVB600Search</span> <span class="n">kbVB600</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">6.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

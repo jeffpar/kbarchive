@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143042: PRB: Version Compatibility of OLE Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143042: PRB: Version Compatibility of OLE Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143042/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143042/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143042/","publisher":null,"image":null,"headline":"Q143042: PRB: Version Compatibility of OLE Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143042-prb-version-compatibility-of-ole-servers">Q143042: PRB: Version Compatibility of OLE Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143042
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0;
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When distributing an update to an OLE server you may receive the following error
+when accessing the server with an existing OLE client:
+
+  Run-time error '-2147319765 (8002802b)':
+
+  Ole Automation error
+  Element not found.
+
+CAUSE
+=====
+
+Version compatible is when objects and/or methods have been added to the type
+library, but no changes have been made to existing properties. Version identical
+is when interfaces are the same such that the type library is exactly the same
+as the old version.
+
+Making an update to an OLE server, which is version compatible but is not version
+identical, causes this error.
+
+RESOLUTION
+==========
+
+You must recompile the OLE client with the reference to the updated OLE server
+and redistribute the OLE client.
+
+MORE INFORMATION
+================
+
+Prior to following this example, make sure you have built the OLE server and OLE
+client. For additional information on building OLE clients and servers, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q129801 : How to Create and Use a Minimal OLE Automation Server
+
+Phase One - Modify the Client
+-----------------------------
+
+You will have to make the following modifications to the OLE client project:
+
+1. Change the code in the Form1_Click event procedure to:
+
+        Dim MyObj As New Project1.Class1
+        Print MyObj.MyString
+        Print MyObj.MyFunction
+
+2. Delete the code from the Form1_Load event procedure.
+
+3. From the Tools menu, select Options. In the Project tab set the Project Name
+  to Client.
+
+4. Add a reference to the OLE server by selecting Tools-Reference from the menu
+  and marking the checkbox which references the OLE server(Project1) in order
+  to successfully compile the OLE client.
+
+5. Make an executable file. Save the OLE client executable file as CLIENT.EXE.
+  Also save the OLE client project.
+
+Phase Two - Modify the Server
+-----------------------------
+
+Modify the server to make a version compatible but not version identical server.
+This will involve changing the OLE interface by simply adding a method to the
+class module.
+
+1. Open the OLE server project previously created.
+
+2. In the Class Module insert the following code in the general declarations
+  section:
+
+        Private Function MyFunction2() as Integer
+
+        End Function
+
+3. From the Tools menu, choose Options. In the Project tab place the name of the
+  previously created OLE server in the "Compatible OLE Server" editbox.
+
+4. From the File menu, select Make EXE File. Select Options from the file dialog
+  and change the version number to 1.
+
+5. Start the program by choosing Start from the Run menu or by pressing the F5
+  key to register the OLE server.
+
+6. Save the project. Exit Visual Basic.
+
+Phase Three - Test the OLE Client
+---------------------------------
+
+1. Run the OLE client executable file.
+
+2. Click Form1. You'll see the following error message:
+
+        Run-time error '-2147319765 (8002802b)':
+          Ole Automation error
+          Element not found.
+
+Phase Four - Fix the OLE Client
+-------------------------------
+
+In order to make the OLE client execute properly again it will have to be
+recompiled referencing the updated OLE server.
+
+1. Open the OLE client project.
+
+2. Make a new executable file.
+
+3. Run the executable file. Click Form1. You will see this output:
+
+  Life is like a box of chocolates.
+  You never know what you're gonna get.
+
+Additional query words: kbDSupport kbdss kbVBp400 kbole OLE version compatibility
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0;
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

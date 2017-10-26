@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145742: File Structure and Contents of .VCX and .SCX Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145742: File Structure and Contents of .VCX and .SCX Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145742/","publisher":null,"image":null,"headline":"Q145742: File Structure and Contents of .VCX and .SCX Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145742-file-structure-and-contents-of-vcx-and-scx-files">Q145742: File Structure and Contents of .VCX and .SCX Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145742
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may sometimes need to change the contents of a .vcx or .scx record to allow
+a form to run correctly or to modify a Class library to allow editing. This
+article explains the file structure of the table that contains the .vcx or .scx
+information and gives a description of the usage and examples of the field
+contents.
+
+MORE INFORMATION
+================
+
+Field Name: Platform
+Type: C(8)
+Description: VCX/SCX - Used to associate a Specific platform for an object. In
+single-platform tables, every object has one record per platform. Cross-
+platform objects have one record per platform with the same UniqueID and are
+distinguished by the Platform Field. For records that do not relate to a
+specific class or object, the Platform field contains the string "COMMENT". The
+header record (record #1) has Platform="COMMENT".
+
+Example: "WINDOWS"
+===============================================================================
+Field Name: UniqueID
+Type: C(10)
+Description: VCX/SCX - Unique ID code for individual classes and objects. Related
+cross-platform records share the same UniqueID value. For records that do not
+relate to a specific class or object, the UniqueID field contains information
+that describes the type of record. The header record (record #1) has
+Unique="Class". SCX - Same as VCX except the header record (record #1) has
+uniqueID="Screen".
+
+Example: "_QVW1055YU"
+===============================================================================
+Field Name: TimeStamp
+Type: N(10)
+Description: VCX/SCX - This timestamp code relates directly to the date and time
+the object symbols were created or last generated. The TimeStamp field for all
+records associated with a class are updated whenever the class is changed. For
+records that do not relate to a specific class or object, TimeStamp=0.
+
+Example: 495748740
+===============================================================================
+Field Name: Class
+Type: Memo
+Description: VCX/SCX - Defines which class is used to create the subclass of the
+class or object member.
+
+Example: "MyCommandButton"
+===============================================================================
+Field Name: ClassLoc
+Type: Memo
+Description: VCX/SCX - Relative path and filename of the class defined in the
+Class field. If the Class field specifies a Visual FoxPro built-in base class or
+the Class name specified is located in the same VCX, then the ClassLoc field is
+empty.
+
+Example: "Tsbase.vcx"
+===============================================================================
+Field Name: BaseClass
+Type: Memo
+Description: VCX/SCX - Stores the name of the base class, or top-most parent
+class in the class tree hierarchy, of class or object member.
+
+Example: "CommandButton"
+===============================================================================
+Field Name: ObjName
+Type: Memo
+Description: VCX/SCX - Defines the name of class or object member.
+
+Example: "CmdCancel"
+===============================================================================
+Field Name: Parent
+Type: Memo
+Description: VCX/SCX - References the immediate parent container object of which
+the object is a member. If an object member is not a child member of a
+container, the Parent field is empty.
+
+Example: "Form1"
+===============================================================================
+Field type: Properties
+Type: Memo
+Description: VCX/SCX - Lists properties and their values that override the values
+defined in the parent class from which a class or object member is derived.
+
+Example: "Width = 69" "Height = 10"
+===============================================================================
+Field Name: Protected
+Type: Memo
+Description: VCX/SCX - Lists all properties and methods that are marked as
+protected members for a class.
+
+Example: "dUpdated"
+===============================================================================
+Field Name: Methods
+Type: Memo
+Description: VCX/SCX - Contains all snippet code of a class or object member.
+
+Example: "Procedure Click"
+"ThisForm.Release()
+"EndProcedure"
+===============================================================================
+Field Name: ObjCode
+Type: Memo
+Description: VCX/SCX - Stores the compiled p-code of source code stored in the
+Methods field. The ObjCode is empty if the Methods field is empty.
+
+Example: None
+===============================================================================
+Field Name: Ole
+Type: Memo
+Description: VCX/SCX - Stores binary information for OLE class and object
+members.
+
+Example: None
+===============================================================================
+Field Name: Ole2
+Type: Memo
+Description: VCX/SCX - Stores binary information for OLE class and object
+members.
+
+Example: None
+===============================================================================
+Field Name: Reservedl
+type: Memo
+Description: VCX - Class tag field used to indicate the start of a class
+definition by storing the string "Class". If a record is not the start of a
+class definition, the Reservedl field is empty. SCX - Not used.
+
+Example: None
+===============================================================================
+Field Name: Reserved2
+Type: Memo
+Description: VCX/SCX - Stores the number of records associated with a class
+including the class or container record. This field only contains a value for
+the first record of a class definition. If a class does not contain any object
+members, the Reserved2 field for the record that starts the class definition
+contains a 1. For records that are not the start of a class definition, the
+Reserved2 field is empty.
+
+Example: 2
+===============================================================================
+Field Name: Reserved3
+Type: Memo
+Description: VCX - Lists all user-defined member names of a class with the member
+description separated by a single space character. One member is stored with its
+description per memo line. Standard property names are listed without a
+preceding character, while array properties are preceded with an asterisk (*)
+character. SCX - Not used.
+
+Example: "^Myarray(100)"
+===============================================================================
+Field Name: Reserved4
+Type: Memo
+Description: VCX - Stores the relative path and filename of the bitmap (BMP) of a
+custom class icon. SCX - Not used.
+
+Example: "c:\vfp\samples\bitmaps\cancel.bmp"
+===============================================================================
+Field Name: Reserved5
+Type: Memo
+Description: VCX - Stores the relative path and filename of the bitmap (.bmp
+file) for a custom Project Manager and Class Browser class icon. SCX - Not
+used.
+
+Example: "c:\vfp\samples\bitmaps\cancel.bmp"
+===============================================================================
+Field Name: Reserved6
+Type: Memo
+Description: VCX/SCX - Stores scalemode (Pixels/Foxels)Pixels of a class or
+object.
+
+Example: "Pixels"
+===============================================================================
+Field Name: Reserved7
+Type: Memo
+Description: VCX/SCX - Stores class description that can be modified within the
+Class Info dialog of the Class Designer.
+
+Example: "This class releases the form."
+===============================================================================
+Field Name: Reserved8
+Type: Memo
+Description: VCX/SCX- For classes, stores the relative path and file name of the
+#INCLUDE file for all code snippets. For object members, stores the string
+"NOINIT" if an object has NoInit check box marked in the Class Info dialog of
+the Class Designer.
+
+Example: "NOINIT"
+===============================================================================
+Field Name: User
+Type: Memo
+Description: VCX/SCX - Open for user-defined purposes.
+
+Example: None
+===============================================================================
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

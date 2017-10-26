@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241419: SMS Executive Causes Access Violation Processing Prochist.dat | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241419: SMS Executive Causes Access Violation Processing Prochist.dat" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241419/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241419/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241419/","publisher":null,"image":null,"headline":"Q241419: SMS Executive Causes Access Violation Processing Prochist.dat","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241419-sms-executive-causes-access-violation-processing-prochistdat">Q241419: SMS Executive Causes Access Violation Processing Prochist.dat</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241419
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200bug kbsms200fix kbsms200sp2fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMS Executive service may stop responding (hang) or generate an "Access
+violation" error message during the processing of the Prochist.dat file.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+Installing the Hotfix
+---------------------
+
+To install the hotfix, perform these steps on your Systems Management Server
+(SMS) site servers:
+
+1. Stop the SMS Executive and SMS Site Component Manager services.
+
+2. Replace the Baseobj.dll file in the &lt;SMS_root&gt;\Bin\&lt;Platform&gt;
+  folder with the version obtained from the hotfix.
+
+3. Restart the SMS Executive and SMS Site Component Manager services.
+
+Identifying the Problem
+-----------------------
+
+To determine whether you are experiencing the problem outlined in this article,
+review the Crash.log file in the Sms\Logs\CrashDumps\&lt;Date of
+problem&gt;_smsexec folder. The Crash.log file points to the SMS Executive
+thread responsible for the problem. For example:
+
+  Exception Information
+
+  Time = 09/01/1999 09:41:03
+  Service name = SMS_EXECUTIVE
+  Thread name = SMS_CLIENT_INSTALL_DATA_MGR
+  Executable = D:\SMS\bin\i386\smsexec.exe
+  Process ID = 130
+  Thread ID = 344
+  Instruction address = 0x7801042A
+  Exception = 0xC0000005 (EXCEPTION_ACCESS_VIOLATION)
+  Description = "The thread tried to write to the virtual address 0x063B8000 for
+  which it does not have the appropriate access."
+  Raised inside CService mutex = No
+  CService mutex description = ""
+
+Review all thread logs for the thread responsible for the problem and determine
+whether the thread was responsible for creating the FlushToFile thread used for
+processing the Prochist.dat file. The thread ID may be different from the thread
+ID listed in the Crash.log file. For example:
+
+  SMS_CLIENT_INSTALL_DATA_MGR_thread_356
+
+  CProcHistoryCache::LoadData - Created FlushToFile thread...
+  $$&lt;SMS_CLIENT_INSTALL_DATA_MGR&gt;&lt;Wed Sep 01 09:20:58.666 1999 Eastern
+  Daylight Time&gt;&lt;thread=356 (0x164)&gt;
+
+Additional query words: prodsms smsexec crash
+
+======================================================================
+Keywords          : kbsms200bug kbsms200fix kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

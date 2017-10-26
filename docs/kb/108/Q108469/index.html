@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108469/","publisher":null,"image":null,"headline":"Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108469-vb-30-dataconstxt-const-constant-values-for-data-access">Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108469
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains the complete contents of the DATACONS.TXT file
+distributed with the Standard and Professional Editions of Visual Basic version
+3.0 for Windows. DATACONS.TXT gives the values of named constants used for data
+access in Visual Basic.
+
+The DATACONS.TXT file is required as a supplement to the following manual,
+because this manual gives the names of the constants without specifying all the
+values:
+
+- Microsoft Visual Basic 3.0: Professional Features Book 2: Data Access Guide
+
+MORE INFORMATION
+================
+
+DATACONS.TXT
+------------
+
+'
+' Data Access constants
+'
+
+' Option argument values (CreateDynaset, etc)
+Global Const DB_DENYWRITE = &amp;H1
+Global Const DB_DENYREAD = &amp;H2
+Global Const DB_READONLY = &amp;H4
+Global Const DB_APPENDONLY = &amp;H8
+Global Const DB_INCONSISTENT = &amp;H10
+Global Const DB_CONSISTENT = &amp;H20
+Global Const DB_SQLPASSTHROUGH = &amp;H40
+
+' SetDataAccessOption
+Global Const DB_OPTIONINIPATH = 1
+
+' Field Attributes
+Global Const DB_FIXEDFIELD = &amp;H1
+Global Const DB_VARIABLEFIELD = &amp;H2
+Global Const DB_AUTOINCRFIELD = &amp;H10
+Global Const DB_UPDATABLEFIELD = &amp;H20
+
+' Field Data Types
+Global Const DB_BOOLEAN = 1
+Global Const DB_BYTE = 2
+Global Const DB_INTEGER = 3
+Global Const DB_LONG = 4
+Global Const DB_CURRENCY = 5
+Global Const DB_SINGLE = 6
+Global Const DB_DOUBLE = 7
+Global Const DB_DATE = 8
+Global Const DB_TEXT = 10
+Global Const DB_LONGBINARY = 11
+Global Const DB_MEMO = 12
+
+' TableDef Attributes
+Global Const DB_ATTACHEXCLUSIVE = &amp;H00010000
+Global Const DB_ATTACHSAVEPWD = &amp;H00020000
+Global Const DB_SYSTEMOBJECT = &amp;H80000002
+Global Const DB_ATTACHEDTABLE = &amp;H40000000
+Global Const DB_ATTACHEDODBC = &amp;H20000000
+
+' ListTables TableType
+Global Const DB_TABLE = 1
+Global Const DB_QUERYDEF = 5
+
+' ListTables Attributes (for QueryDefs)
+Global Const DB_QACTION = &amp;HF0
+Global Const DB_QCROSSTAB = &amp;H10
+Global Const DB_QDELETE = &amp;H20
+Global Const DB_QUPDATE = &amp;H30
+Global Const DB_QAPPEND = &amp;H40
+Global Const DB_QMAKETABLE = &amp;H50
+
+' ListIndexes IndexAttributes values
+Global Const DB_UNIQUE = 1
+Global Const DB_PRIMARY = 2
+Global Const DB_PROHIBITNULL= 4
+Global Const DB_IGNORENULL= 8
+' ListIndexes FieldAttributes value
+Global Const DB_DESCENDING = 1  'For each field in Index
+
+' CreateDatabase and CompactDatabase Language constants
+Global Const DB_LANG_GENERAL = ";LANGID=0x0809;CP=1252;COUNTRY=0"
+Global Const DB_LANG_SPANISH = ";LANGID=0x040A;CP=1252;COUNTRY=0"
+Global Const DB_LANG_DUTCH = ";LANGID=0x0413;CP=1252;COUNTRY=0"
+'VB3 and Access 1.1 Databases:
+Global Const DB_LANG_SWEDFIN = ";LANGID=0x040C;CP=1252;COUNTRY=0"
+'VB3 and Access 1.1 Databases:
+Global Const DB_LANG_NORWDAN = ";LANGID=0x0414;CP=1252;COUNTRY=0"
+'VB3 and Access 1.1 Databases:
+Global Const DB_LANG_ICELANDIC = ";LANGID=0x040F;CP=1252;COUNTRY=0"
+'Access 1.0 Databases only:
+Global Const DB_LANG_NORDIC = ";LANGID=0x041D;CP=1252;COUNTRY=0"
+
+' CreateDatabase and CompactDatabase options
+Global Const DB_VERSION10 = 1        ' Microsoft Access Version 1.0
+Global Const DB_ENCRYPT = 2          ' Make database encrypted.
+Global Const DB_DECRYPT = 4          ' Decrypt database while compacting.
+
+'Collating order values
+
+Global Const DB_SORTGENERAL = 256    ' Sort by EFGPI rules (English,
+French,
+                                    ' German,Portuguese, Italian)
+Global Const DB_SORTSPANISH = 258    ' Sort by Spanish rules
+Global Const DB_SORTDUTCH = 259      ' Sort by Dutch rules
+Global Const DB_SORTSWEDFIN = 260    ' Sort by Swedish, Finnish rules
+Global Const DB_SORTNORWDAN = 261    ' Sort by Norwegian, Danish rules
+Global Const DB_SORTICELANDIC = 262  ' Sort by Icelandic rules
+Global Const DB_SORTPDXINTL = 4096   ' Sort by Paradox international rules
+Global Const DB_SORTPDXSWE = 4097    ' Sort by Paradox Swedish, Finnish
+                                    ' rules
+Global Const DB_SORTPDXNOR = 4098    ' Sort by Paradox Norwegian, Danish
+                                    ' rules
+Global Const DB_SORTUNDEFINED = -1   ' Sort rules are undefined or unknown
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/294/Q294469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/294/Q294469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/294/Q294469/","publisher":null,"image":null,"headline":"Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q294469-prb-error-cannot-update-the-cursor-when-you-modify-tables">Q294469: PRB: Error "Cannot Update the Cursor" When You Modify Tables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q294469
+Product(s): Microsoft FoxPro
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbATM kbODBC kbvfp KbDBFDBC kbGrpDSFox kbDSupport
+Last Modified: 17-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Visual FoxPro, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can use the Execute Action Query option to manipulate data in database
+tables. When you execute SQL Action queries (such as INSERT, UPDATE or DELETE)
+on a Visual FoxPro table, you may receive the following error message:
+
+  Run-time error '-2147467259 (80004005)':
+
+  [Microsoft][ODBC Visual FoxPro Driver]Cannot update the cursor.
+
+CAUSE
+=====
+
+This error occurs if you select the Read-Only check box for the Visual FoxPro
+file. To review the file attributes, right-click the Visual FoxPro file, click
+Properties, and then click the General tab.
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure that you clear Read-Only check box for the
+Visual FoxPro file.
+
+MORE INFORMATION
+================
+
+You can use the Execute method (with Data Access Object or Microsoft ActiveX
+Data Objects libraries, for example) to execute Action queries on the Connection
+object. The following sample code uses the ActiveX Data Objects (ADO) library to
+reproduce the above-mentioned error. The sample code creates a test Visual
+FoxPro table named T1.Dbf, and then uses the INSERT SQL Action Query to add
+records.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a new Visual Basic standard EXE project. Form1 is created by default.
+
+2. Set a reference to the Microsoft ActiveX Data Objects library.
+
+3. Place two command buttons (CreateTable and ADOExecute) on Form1.
+
+4. Add the following code to Form1:
+
+  Dim conADO As ADODB.Connection
+
+  Private Sub CreateTable_Click()
+
+      conADO.Execute "CREATE TABLE T1 (col1 Int, col2 Int)", , adExecuteNoRecords
+      MsgBox "FoxPro file created."
+      
+  End Sub
+
+  Private Sub Form_Load()
+      Dim strCon As String
+      
+      CreateTable.Caption = "Create FoxPro File"
+      ADOExecute.Caption = "Execute Action Query"
+      
+      strCon = "Driver={Microsoft Visual FoxPro Driver};" &amp; _
+               "SourceType=DBF;" &amp; _
+               "SourceDB=" &amp; App.Path &amp; "\;" &amp; _
+               "Exclusive=No;"
+                   
+      Set conADO = New ADODB.Connection
+      conADO.Open strCon
+
+  End Sub
+
+  Private Sub ADOExecute_Click()
+      Dim strSQL As String
+      Dim numRec As Integer
+      
+      strSQL = "Insert Into T1 values(1,100)"
+
+      conADO.Execute strSQL, numRec, adExecuteNoRecords
+      
+      MsgBox "Records Affected = " &amp; numRec
+      
+  End Sub
+
+  Private Sub Form_Unload(Cancel As Integer)
+      conADO.Close
+      Set conADO = Nothing
+
+  End Sub
+
+5. Run the project, and then click Create FoxPro File.
+
+6. Click Execute Action Query, and notice that it executes successfully.
+
+7. Select the Read-Only check box for the T1.dbf file.
+
+8. Click Execute Action Query again, and you receive the above-mentioned error.
+
+Additional query words: -2147467259 (80004005)
+
+======================================================================
+Keywords          : kbATM kbODBC kbvfp KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

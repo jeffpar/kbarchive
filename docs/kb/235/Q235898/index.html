@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235898: XADM: Cannot Generate Offline Address Book | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235898: XADM: Cannot Generate Offline Address Book" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235898/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235898/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235898/","publisher":null,"image":null,"headline":"Q235898: XADM: Cannot Generate Offline Address Book","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235898-xadm-cannot-generate-offline-address-book">Q235898: XADM: Cannot Generate Offline Address Book</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235898
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 02-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to generate an offline Address Book (OAB), the following error
+message may be displayed:
+
+  An error occurred while generating the offline Address Book. To view details,
+  see the application event log in the Windows NT Event Viewer on the offline
+  Address Book Server.
+
+  Microsoft Exchange Administrator ID no. c1031662
+
+In addition, the following event appears in the event log:
+
+  Event ID: 5004
+  Description: Generation of the offline Address Book is complete. Result: An
+  error occurred.
+
+CAUSE
+=====
+
+This problem can occur when the OAB Version 2 or Offline Address Book folder is
+not selected on the Instances tab in the properties for the public information
+store.
+
+WORKAROUND
+==========
+
+Verify that the OAB Version 2 and Offline Address Book folders are selected on
+the Instances tab in the properties for the public information store. To do so:
+
+1. Start the Administrator program. To do so, click Start, point to Programs,
+  point to Microsoft Exchange, and then click Microsoft Exchange Administrator.
+
+2. In the left pane, click the Public Information Store container under the
+  appropriate server, and then on the File menu, click Properties.
+
+3. Click the Instances tab, and then verify that OAB Version 2 and Offline
+  Address Book are listed under "Folders on this Information Store". If they
+  are not listed, click the appropriate folder under "Public folders", and then
+  click Add. When you are finished, click OK.
+
+MORE INFORMATION
+================
+
+For information about additional causes for this error message, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q177783 XADM: Temp Files Remain After OAB Generation Fails
+
+  Q179346 XADM: Generating the OAB Yields Error c1031662 Events 5004 5012
+
+  Q188636 XADM: Error Generating OAB from Large Containers
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

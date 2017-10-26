@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140653/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140653/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140653/","publisher":null,"image":null,"headline":"Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140653-prb-cursor-based-grid-goes-blank-if-sql-select-resets-cursor">Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140653
+Product(s): Microsoft FoxPro
+Version(s): 3.00 | 3.00b
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a grid's RecordSource property is set to a cursor, and then the SQL SELECT
+command resets the cursor, the grid appears blank if the RecordSource property
+is not set back to itself.
+
+The following command will refresh the grid properly if a SQL SELECT is run to
+rebuild the cursor, but if the grid's column or header properties have been
+customized, these customized changes will be lost and the grid's column and
+header properties will change back to their default settings:
+
+     THISFORM.GRID1.RECORDSOURCE=THISFORM.GRID1.RECORDSOURCE
+
+Such customization could be headers with different names, longer column lengths,
+and code placed in the events of columns or headers. For more information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q131836 PRB: Grid Not Refreshing Displaying a Cursor from Query
+
+CAUSE
+=====
+
+When you rebuild the cursor that the grid is based on with the SQL SELECT
+command, the original cursor has to be destroyed before the new cursor can be
+created. When this happens, the grid columns and headers are also cleared and
+then recreated. Even when the grid's RecordSource is set back to itself, the
+custom settings of the grid's columns and headers are lost.
+
+RESOLUTION
+==========
+
+To refresh the grid without losing the custom properties of the columns and
+headers, set the RecordSource property to a dummy cursor that already has been
+created with the same fields as the cursor the grid is based on. After the SQL
+SELECT is run, change the RecordSource property back to the rebuilt cursor. This
+allows the properties of the columns and headers to remain intact while the
+cursor is being rebuilt.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the Customer.dbf table located in the \Vfp\Samples\Data directory, and
+  create a form called GridForm.
+
+2. Place the following code in the Load event of the form:
+
+     SELECT cust_id, city, country FROM customer INTO CURSOR Temp1
+     SELECT cust_id, city, country FROM customer WHERE country = "" ;
+        INTO CURSOR Temp2
+
+3. Place the following code in the Destroy event of the form:
+
+     SELECT Temp1
+     USE
+     SELECT Temp2
+     USE
+
+4. Place a grid on the form, and give the grid the following property settings:
+
+     ColumnCount=3
+     RecordSourceType=Alias
+     RecordSource=Temp1
+
+5. Change the caption of the grid1.Column1.header1 to Customer Id and the
+  Column1 Width property to 100.
+
+6. Add a text box to the form.
+
+7. Add a command button, and place the following code in its Click event:
+
+     THISFORM.GRID1.RECORDSOURCE = "Temp2"
+     SELECT cust_id, city, country FROM customer ;
+        WHERE country = Thisform.text1.value ;
+        INTO CURSOR Temp1
+     THISFORM.GRID1.RECORDSOURCE = "Temp1"
+
+8. Run the Form. Type Spain in the text box, and then click the command button.
+  The grid should display all records where the country field is equal to
+  Spain. Note that the name of the header of column 1 stays the same and the
+  width of the column doesn't change. By changing the RecordSource of the grid
+  to the cursor called Temp2, the properties of the columns and headers are not
+  reset when the Temp1 cursor is rebuilt.
+
+9. Change the two THISFORM.GRID1.RECORDSOURCE lines in the Click event of the
+  command button into comments and add the following as the last line of code:
+
+     THISFORM.GRID1.RECORDSOURCE = THISFORM.GRID1.RECORDSOURCE
+
+  After running the form, typing a country name in the text box, and clicking
+  the command button, note that the column name changes and the width is
+  smaller.
+
+Additional query words: VFoxMac VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : 3.00 | 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

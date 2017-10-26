@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60333: _bios_serialcom() May Not Work at 9600 and 4800 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60333: _bios_serialcom() May Not Work at 9600 and 4800" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60333/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60333/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60333/","publisher":null,"image":null,"headline":"Q60333: _bios_serialcom() May Not Work at 9600 and 4800","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60333-_bios_serialcom-may-not-work-at-9600-and-4800">Q60333: _bios_serialcom() May Not Work at 9600 and 4800</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60333
+Product(s): See article
+Version(s): 5.10 6.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QUICKC | mspl13_c
+Last Modified: 19-APR-1990
+
+The function _bios_serialcom() may not work correctly at 4800 or 9600
+baud. This problem is due to the function calling BIOS interrupt 14h.
+
+Sample Code
+-----------
+
+/* Transmitting Machine */
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;bios.h&gt;
+
+void main(void)
+{
+   unsigned config;
+
+   config = (_COM_CHR8|_COM_STOP1|_COM_NOPARITY|_COM_9600);
+   _bios_serialcom(_COM_INIT,0,config);
+
+   while(1)
+      _bios_serialcom(_COM_SEND,0,(unsigned)getch());
+}
+
+/* Receiving Machine */
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;bios.h&gt;
+
+void main(void)
+{
+   unsigned config;
+   unsigned data;
+   config = (_COM_CHR8|_COM_STOP1|_COM_NOPARITY|_COM_9600);
+   _bios_serialcom(_COM_INIT,0,config);
+
+   while(1)
+      {
+      data = 0x0000;
+      _bios_serialcom(_COM_RECEIVE,0,data);
+      if (data != 0x0000)
+         putch((int)data);
+      }
+}
+
+If the sample programs are run on two separate machines connected by a
+null modem (serial cable), 9600 baud communication is not possible. At
+4800 baud, the data is seriously corrupted on the receiving end. The
+results are the same when the roles of the machines in question are
+reversed. However, the function performs well at 300 to 2400 baud.
+
+Since _bios_serialcom() uses interrupt 14h to do the work, this is a
+limitation of the BIOS and not the function. If you want to establish
+reliable serial communications at a higher baud rate, an interrupt
+service routine (ISR) should be written to handle the I/O. More
+information on this can be found in Article 6, Pages 167-246 of the
+"MS-DOS Encyclopedia."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

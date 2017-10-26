@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160233: FIX: Can’t Set SelStart Property of RichTextBox to &gt; 32K | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160233: FIX: Can’t Set SelStart Property of RichTextBox to &gt; 32K" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160233/","publisher":null,"image":null,"headline":"Q160233: FIX: Can’t Set SelStart Property of RichTextBox to &gt; 32K","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160233-fix-cant-set-selstart-property-of-richtextbox-to--32k">Q160233: FIX: Can’t Set SelStart Property of RichTextBox to &gt; 32K</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160233
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot set the SelStart property of RichTextBox controls that contain text
+greater than 32K (32768) characters in length to a value greater than 32767 and
+less than the text length. Although this is a legal range, SelStart is
+automatically set to the text length. Consequently, you cannot make selections
+within this range.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 5.0.
+
+RESOLUTION
+==========
+
+Use the SendMessage API of USER32 with the EM_EXSETSEL parameter to set the
+SelStart position:
+
+     Private Const WM_USER = &amp;H400
+     Private Const EM_EXSETSEL = (WM_USER + 55)
+
+     Private Declare Function SendMessage Lib "USER32" Alias "SendMessageA"
+     (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As
+     Long) As Long
+
+     Private Sub Command1_Click()
+     Dim x As String
+
+         x = String(32800, "a")
+         RichTextBox1.Text = x
+
+         '''[THE NORMAL WAY] RichTextBox1.SelStart = 32790
+         SendMessage RichTextBox1.hwnd, EM_EXSETSEL, 0, 32790
+         RichTextBox1.SelLength = 10
+
+         MsgBox RichTextBox1.SelText
+
+     End Sub
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Place a RichTextBox, RichTextBox1, on Form1.
+
+3. Place a CommandButton, Command1, on Form1.
+
+4. Place the following code in the Click event of Command1:
+
+     Private Sub Command1_Click()
+     Dim x As String
+
+         x = String(32800, "a")
+         RichTextBox1.Text = x
+
+         RichTextBox1.SelStart = 32790
+         RichTextBox1.SelLength = 10
+
+         MsgBox RichTextBox1.SelText
+
+     End Sub
+
+5. Press the F5 key to run the project.
+
+6. Click Command1 and note that nothing is selected.
+
+Additional query words: kbstream kbVBp400bug kbVBp500fix kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

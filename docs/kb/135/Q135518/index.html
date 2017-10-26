@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135518/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135518/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135518/","publisher":null,"image":null,"headline":"Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135518-howto-copy-files-from-cabinets-on-dmf-formatted-disks">Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135518
+Product(s): Microsoft FoxPro
+Version(s): WIN3.X:3.0
+Operating System(s): 
+Keyword(s): kbsetup kbvfp
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The files on Disks 2 through 7 of the Standard Edition and 2 through 16 of the
+Professional Edition of the Setup program for Microsoft Visual FoxPro for
+Windows are stored in cabinet files on DMF-formatted disks. If you need to copy
+the files from the disks to a network server or other permanent storage drive,
+you must use the /C copy switch with the Extract.exe utility located on Disk 1
+to copy the application files to the target location.
+
+Extract.exe allows you to copy the entire cabinet file (*.CAB) or extract and
+decompress individual files contained in the cabinet file. You can also use the
+Extract utility to search a cabinet file and list its contents.
+
+To obtain a complete list of command options for the Extract utility, insert Disk
+1 and switch to the drive containing the disk. For example, type A: if the disk
+is in drive A. Type EXTRACT or EXTRACT /? at the command prompt to obtain the
+list of available command options.
+
+MORE INFORMATION
+================
+
+A cabinet (*.CAB) file contains many files stored as a single file. The
+following examples show how to use the Extract utility to copy and extract files
+from a cabinet file and how to locate the files contained in a cabinet file.
+
+Copying an Entire *.CAB File
+----------------------------
+
+The following examples show how to use Extract to copy the entire cabinet file to
+another location. To copy a cabinet file named VFP2.CAB to the current
+directory, use this syntax:
+
+     EXTRACT /C A:\VFP2.CAB VFP2.CAB
+
+To copy a cabinet file named VFP2.CAB to the C:\DISK2 directory, use this
+syntax:
+
+     EXTRACT /C A:\VFP2.CAB C:\DISK2\VFP2.CAB
+
+Copying Files from a *.CAB File
+-------------------------------
+
+To copy all files from all cabinets on all disks to the C:\FLAT directory, use
+this syntax::
+
+     EXTRACT /E /A /L C:\FLAT A:\VFP1.CAB
+
+NOTE: The /A switch extracts all files beginning with the first cabinet, so Disk
+1 should be in drive A when you use Extract with this switch.
+
+To copy all files from the VFP4.CAB cabinet to the current directory, use this
+syntax:
+
+     EXTRACT /E A:\VFP4.CAB
+
+Locating a File in a *.CAB File
+-------------------------------
+
+If you need only a single file that is contained in one of the cabinet files, you
+can search for it using the /D switch with Extract.exe. Once you find the file,
+you can use Extract.exe again to copy the file to the desired location. The
+following examples show how to use the Extract to find files.
+
+To list all files in a cabinet file, use this syntax:
+
+     EXTRACT /D A:\&lt;cabinet filename&gt;
+
+To list all *.exe files in a cabinet file, use this syntax:
+
+     EXTRACT /D A:\&lt;cabinet filename&gt; *.EXE
+
+Copying a Single File from a *.CAB File
+---------------------------------------
+
+The following examples show how to use Extract to copy a single file from a
+cabinet file.
+
+To extract Any.exe to the current directory, use this syntax:
+
+     EXTRACT A:\&lt;cabinet filename&gt; ANY.EXE
+
+To extract Any.exe to C:\VFP, use this syntax:
+
+     EXTRACT A:\&lt;cabinet filename&gt; /L C:\VFP ANY.EXE
+
+Copying Contents of Distribution disks to Hard Disk for Installation
+--------------------------------------------------------------------
+
+If you are experiencing errors extracting files from the original distribution
+diskettes, you can copy Disk1 to a clean (empty) subdirectory.
+
+Using the extract command, extract the remaining CAB files into the same
+directory, then run setup from that directory.
+
+Additional query words: compress decompress dmf disk 2
+
+======================================================================
+Keywords          : kbsetup kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WIN3.X:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

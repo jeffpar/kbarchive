@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221931: HOWTO: Return Record’s Autonumber Value Inserted into Access DB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221931: HOWTO: Return Record’s Autonumber Value Inserted into Access DB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221931/","publisher":null,"image":null,"headline":"Q221931: HOWTO: Return Record’s Autonumber Value Inserted into Access DB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221931-howto-return-records-autonumber-value-inserted-into-access-db">Q221931: HOWTO: Return Record’s Autonumber Value Inserted into Access DB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221931
+Product(s): Internet Information Server
+Version(s): 1.5,2.0,3.0,4.0,5.0,7.0
+Operating System(s): 
+Keyword(s): kbAccess200 kbAccess97 kbADO150 kbADO200 kbASP kbDatabase kbInternet kbInetDev kbIIS kb
+Last Modified: 02-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- ActiveX Data Objects (ADO), versions 1.5, 2.0 
+- Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+- Microsoft Access 2.0 
+- Microsoft Access for Windows 95, version 7.0 
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a new record is added to an ActiveX Data Objects (ADO) Recordset that
+contains an Autonumber field, immediately reporting the value of the Autonumber
+field for the inserted record returns a value of 0.
+
+This article describes how to retrieve the automatically generated value of an
+Autonumber field of a record inserted into an Access database with the ADO
+AddNew() and Update() methods. The sample uses VBScript in an Active Server
+Pages (ASP) page.
+
+MORE INFORMATION
+================
+
+The following code assumes that you have the Adventure Works database on your
+machine and you have an ODBC datasource name (DSN) named AdvWorks pointing to
+it.
+
+The sample also includes the file Adovbs.inc, which can be found in \Program
+Files\Common Files\System\Ado.
+
+This code does not prompt the user for any input. It inserts one record into the
+Customers table of the Adventure Works database and displays the value of the
+Autonumber field (CustomerID) of the new record.
+
+Following are some key elements to note:
+
+- The CursorLocation must be adUseClient. Access does not support a server-side
+  cursor.
+
+- In order to populate the Autonumber field with the automatically generated
+  value, the recordset must be requeried using the Requery method.
+
+- The Requery method resets the absolutePosition (bookmark) from the newly
+  inserted record, to the first record of the requeried recordset. As a result,
+  the absolutePosition must be saved before calling Requery, and restored to
+  the newly inserted record after Requery has been called.
+
+  &lt;%@ Language=VBScript %&gt;
+  &lt;HTML&gt;
+  &lt;BODY&gt;
+
+  &lt;!--#include file=adovbs.inc --&gt;
+
+  &lt;% 
+  Set objConn = CreateObject("ADODB.Connection")
+  Set objRS = CreateObject("ADODB.Recordset")
+
+  objConn.Open "DSN=advworks;"
+
+  'Access does not support a cursor engine so a client cursor must be used
+  objRS.CursorLocation = adUseClient
+
+  objRS.Open "SELECT * FROM Customers", objConn, adOpenStatic, adLockOptimistic
+
+       ' when you invoke the method AddNew it adds a new record to the end of           
+       ' your current recordset and places your cursor on that record.
+       
+  objRS.AddNew
+  	objRS("CompanyName") = "Microsoft"
+  	objRS("ContactFirstName") = "Bob"
+  	objRS("ContactLastName") = "Smith"
+  objRS.Update
+
+       ' when you invoke the method Update, it updates the database with the
+       ' values of the new record that we just created.  To retrieve the 
+       ' value of the Autonumber field we need to update the ADO recordset that
+       ' currently have.
+
+       ' When you do a Requery on your recordset, you lose your cursor.  So
+       ' we need to store the location before we do the Requery, then reset
+       ' it after the Requery.
+
+  'before the requery, the Autonumber field shows as 0
+  Response.Write "&lt;br&gt;ID before Requery = " &amp; objRS("CustomerID")   
+
+  bookmark = objRS.absolutePosition  ' First, store the location of you cursor
+  objRS.Requery                      ' Next, update your recordset with the data from the database
+
+  'after the requery, the absolutePosition is the first record of the recordset
+  Response.Write "&lt;br&gt;ID before setting absolutePosition = " &amp; objRS("CustomerID")
+
+  objRS.absolutePosition = bookmark  ' Finally, change your cursor back
+
+  'now we have the Autonumber value
+  Response.Write "&lt;P&gt;Added ID = " &amp; objRS("CustomerID")
+
+  objRS.Close
+  objConn.Close
+  set objConn = nothing
+  set objRS = nothing
+  %&gt;
+  &lt;/BODY&gt;
+  &lt;/HTML&gt;
+
+REFERENCES
+==========
+
+For additional information about using AutoIncrement fields and ADO, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q195910 INFO: Identity (AutoIncrement) Columns in ADO or RDS
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAccess200 kbAccess97 kbADO150 kbADO200 kbASP kbDatabase kbInternet kbInetDev kbIIS kbiis400 kbiis500 kbfaq
+Technology        : kbiisSearch kbAudDeveloper kbADOsearch kbAccessSearch kbADO150 kbADO200 kbAccess200 kbAccess97 kbiis500 kbiis400 kbiis300 kbAccess97Search kbAccess95Search kbZNotKeyword3 kbAccess700
+Version           : :1.5,2.0,3.0,4.0,5.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

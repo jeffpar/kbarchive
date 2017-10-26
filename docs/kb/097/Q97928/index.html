@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97928: CONVERT.BAT and GETPATH.BAT File Contents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97928: CONVERT.BAT and GETPATH.BAT File Contents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97928/","publisher":null,"image":null,"headline":"Q97928: CONVERT.BAT and GETPATH.BAT File Contents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97928-convertbat-and-getpathbat-file-contents">Q97928: CONVERT.BAT and GETPATH.BAT File Contents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97928
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+CONVERT.BAT and GETPATH.BAT are two batch files included with the Stacker
+Conversion disk. The contents of these files are listed below.
+
+MORE INFORMATION
+================
+
+CONVER.BAT
+----------
+
+  @echo off
+  if "%1"=="/?" goto givehelp
+  if "%1"=="?" goto givehelp
+  if "%1"=="-?" goto givehelp
+  if ""=="%1" goto findit
+  if ""=="%2" goto stacdir
+  if not exist %2 goto Invalid_args
+  goto signon
+  REM   if Stacker is in default location, handle automatically.
+  :stacdir
+  if exist c:\stacker\check.exe CONVERT %1 c:\stacker\check.exe
+  if exist c:\stacker\scheck.exe CONVERT %1 c:\stacker\scheck.exe
+  REM   else search the path...
+  echo Searching for your Stacker directory...
+  call getpath check.exe
+  if "%TARGET%"=="" call getpath scheck.exe
+  if "%TARGET%"=="" goto cantfindstacker
+  CONVERT %1 %TARGET%
+  :findit
+  REM Check to ensure we have enough environment space for a full path
+  (80 chars)
+  set TEST1=----------------------------------------
+  set TEST2=----------------------------------------
+  if not "%TEST1%"=="----------------------------------------" goto
+     smallenv
+  if not "%TEST2%"=="----------------------------------------" goto
+     smallenv
+  set TEST1=
+  set TEST2=
+  if "%temp%" == "" set temp=c:\ 
+  REM if temp is set to non existent dir, point to root of c.
+  if not exist %temp%\NUL set temp=c:\ 
+  REM Confirm that CONVERT is in the working directory.
+  if not exist .\convert.bat goto notroot
+  if not exist .\getpath.bat goto notroot
+  if not exist .\allstack.exe goto notroot
+  if not exist .\dblspace.hlp goto notroot
+  if not exist .\dblspace.exe goto notroot
+  if not exist .\convert.txt goto notroot
+  echo Searching for the directory that contains your MS-DOS files...
+  call getpath dblspace.exe
+  if "%TARGET%"=="" goto nodblspace
+  CONVERT %TARGET%
+  :signon
+  if not exist %1 goto Invalid_args
+  cls
+  echo Welcome to the MS-DOS Stacker conversion program.
+  echo.
+  echo This program copies an updated version of the DBLSPACE.EXE file
+  echo to your hard disk and checks your drive(s) for errors. Then
+  echo it runs the updated DoubleSpace program to convert your Stacker
+  echo drive(s) to DoubleSpace format.
+  echo.
+  echo NOTE: The conversion process can take several hours.
+  echo.
+  :readdocs
+  echo The CONVERT.TXT file contains a detailed procedure for running
+  echo this program.
+  echo.
+  choice /cync /n "Do you want to read the CONVERT.TXT file now
+     [Yes,No,Cancel]?"
+  :displayfile
+  if errorlevel 3 goto cancelexit
+  if errorlevel 2 goto skipdocs
+  more &lt; convert.txt
+  echo.
+  choice /cync /n "Would you like to read CONVERT.TXT again
+     [Yes,No,Cancel]?"
+  goto displayfile
+  :skipdocs
+  CLS
+  echo.
+  echo Updating the DBLSPACE.EXE and DBLSPACE.HLP files...
+  attrib -r -h -s %1 &gt; nul
+  call getpath dblspace.hlp
+  if not "%target%" == ""  copy dblspace.hlp %target% &gt; nul
+  copy dblspace.exe %1 &gt; nul
+  cls
+  echo.
+  echo Now running the SCHECK or CHECK programs and the CHKDSK program
+  echo to check your drive(s) for errors.
+  echo.
+  echo DoubleSpace Setup will later warn you that you need to run SCHECK
+  echo or CHECK before converting Stacker drives to DoubleSpace. Because
+  echo this program is doing that now, you can ignore the warning.
+  echo.
+  echo Watch carefully and note any errors that are reported.
+  echo.
+  pause
+  allstack %2 /F #c:
+  allstack chkdsk /F #c:
+  allstack -h chkdsk /F #c:
+
+  choice /n "Were any errors reported [Yes,No]?"
+  if errorlevel 2 goto OK
+  goto fixerrors
+  :OK
+  cls
+  echo.
+  echo DoubleSpace Setup will now convert your Stacker drives to
+  echo DoubleSpace format. This will take several hours.
+  echo.
+  choice /n "Do you want to convert your Stacker drive(s) now [Yes,No]?"
+  if errorlevel 2 goto userabort
+  cls
+  echo.
+  echo Press ENTER at the DoubleSpace Setup Welcome screen to begin
+  echo converting your Stacker drives.
+  echo.
+  echo Loading DoubleSpace Setup...
+  choice /ty,5 /n &gt;nul
+  %1
+  goto exitprogram
+
+  :fixerrors
+  echo.
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  echo   because your drive(s) still contain disk errors.
+  echo.
+  echo   Before converting your drives, you must fix all disk errors.
+  echo   For information about fixing disk errors, see the MS-DOS 6
+  echo   User's Guide and your Stacker documentation. After fixing
+  echo   the errors, run CONVERT again.
+  echo.
+  goto exitprogram
+
+  :nodblspace
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  echo   because it could not find your copy of the DBLSPACE.EXE file.
+  echo   The DBLSPACE.EXE should be located in the directory that
+  echo   contains your MS-DOS files.
+  echo.
+  echo   Add your MS-DOS directory to your search path, and then run
+  echo   CONVERT again. (For information about changing your search
+  echo   path, type HELP PATH at the command prompt.)
+  goto exitprogram
+
+  :Invalid_args
+  Echo.
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  echo   because the CONVERT command included an invalid argument.
+  echo.
+  echo   To run the Stacker conversion program, type CONVERT at the
+  echo   command prompt without any arguments, and then press ENTER.
+  echo.
+  goto exitprogram
+
+  :cantfindstacker
+  Echo.
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  echo   because it cannot find the Stacker CHECK.EXE or SCHECK.EXE
+  echo   programs.
+  echo.
+  echo   Add the directory that contains your Stacker files to your
+  echo   search path, and then run CONVERT again. Either the CHECK.EXE
+  echo   or the SCHECK.EXE file must be in your Stacker directory when
+  echo   you run CONVERT. (For information about changing your search
+  echo   path, type HELP PATH at the command prompt.)
+  echo.
+  goto exitprogram
+
+  :smallenv
+  set TEST1=
+  set TEST2=
+  Echo.
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  Echo   because there is not enough environment space.
+  echo.
+  Echo   Use the SET command to examine your environment, and to
+  echo   remove any unnecessary environment variables.
+  echo.
+  goto exitprogram
+
+  :notroot
+  Echo.
+  Echo   The MS-DOS Stacker conversion program cannot continue
+  Echo   because it cannot find one of its component files.
+  echo.
+  Echo   Change to the drive and directory that contains the
+  echo   CONVERT.BAT file, and then run CONVERT again. For example,
+  echo   if the MS-DOS Stacker conversion disk is in drive B,
+  echo   you would type the following:
+  echo.
+  echo       B:
+  echo       CONVERT
+  echo.
+  goto exitprogram
+
+  :userabort
+  echo.
+  echo   The Stacker conversion process has been canceled.
+  echo.
+  echo   To convert your Stacker drives, run CONVERT again. When
+  echo   CONVERT displays the question "Do you want to convert
+  echo   your Stacker drive(s) now?" type Y.
+  echo.
+  goto exitprogram
+
+  :givehelp
+  echo   The CONVERT program converts your Stacker drives to DoubleSpace
+  echo   format. When the conversion process is complete, all your
+  echo   Stacker drives will be DoubleSpace drives.
+  echo.
+  echo   CONVERT replaces the DBLSPACE.EXE file in your MS-DOS directory
+  echo   with an updated version of DBLSPACE.EXE. After CONVERT checks
+  echo   your drive(s) for errors, it runs the updated DoubleSpace
+  echo   program to convert all your Stacker drives.
+  echo.
+  echo   To convert your Stacker drives to DoubleSpace drives, type
+  echo   CONVERT at the command prompt without any arguments, and then
+  echo   press ENTER.
+  goto exitprogram
+
+  :cancelexit
+  echo.
+  echo   The MS-DOS Stacker conversion process has been canceled.
+  echo   To convert your Stacker drives to DoubleSpace drives,
+  echo   run the CONVERT program again.
+  echo.
+  :exitprogram
+  set TARGET=
+
+  GETPATH.BAT
+  -----------
+
+  @echo off
+  rem
+
+  rem GETPATH -- Searches for a (wildcarded if you like) file along the
+  rem            path
+  rem            sets the environment variable "TARGET" to a full
+  rem            specification for the file
+  rem
+  rem format:   GETPATH  filename.ext
+  rem
+  rem return:   %TARGET% == full specification, or ""
+  rem
+
+  if "%1"=="" goto help
+
+  set TARGET=
+  if exist zz.bat del zz.bat
+
+  rem if exist %1 goto localdir   --don't check for a local copy of the
+     file!
+
+  echo @ECHO OFF                                   &gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+  echo if "%%1"=="" goto loop                     &gt;&gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+  echo if not "%%START%%"=="TRUE" goto end        &gt;&gt;zz.bat
+  echo if exist %%1\%1 set TARGET=%%1\%1          &gt;&gt;zz.bat
+  echo if not "%%TARGET%%"=="" set START=FALSE    &gt;&gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+  echo goto end                                   &gt;&gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+  echo :loop                                      &gt;&gt;zz.bat
+  echo set START=TRUE&gt;&gt;zz.bat
+  echo for %%%%f in (%%PATH%%) do call zz %%%%f&gt;&gt;zz.bat
+  echo set START=&gt;&gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+  echo :end                                       &gt;&gt;zz.bat
+  echo;                                           &gt;&gt;zz.bat
+
+  call zz.bat
+  del zz.bat
+  goto end
+
+  :localdir
+  set TARGET=%1
+  goto end
+
+  :two
+  echo PARAM %1
+
+  :help
+  echo format: GETPATH filename.ext
+  echo;
+  echo examine the environment variable TARGET= after running getpath.
+  echo;
+  goto end
+
+  :end
+
+Additional query words: 6.00 translate convert getpath
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

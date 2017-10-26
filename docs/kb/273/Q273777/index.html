@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273777/","publisher":null,"image":null,"headline":"Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273777-logging-fails-with-event-id-2-the-data-is-the-error">Q273777: Logging Fails with Event ID 2 "The Data is the Error"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273777
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There are no corresponding logs in the c:\%Systemroot%\System32\LogFiles
+directory for any of the Web services included in Internet Information Server
+(IIS) 4.0.
+
+NOTE: The drive letter may be different if Windows NT has been installed on a
+different partition.
+
+The following error message is logged in the Event Viewer:
+
+  Event ID: 2
+  Source: IISLog
+  "The data is the error"
+
+For each Web request from clients, there is a corresponding error message in the
+Event Viewer.
+
+CAUSE
+=====
+
+By default, IIS uses the user who is currently logged on to write the logs. It
+obtains the credentials of the current user from the current thread that is
+executing in the Identify.exe process.
+
+When IIS is unable to run under the thread that is currently logged on, it
+reverts to the system account. In this case, the underlying NTFS permissions
+require the system account to have permissions to the
+c:\%Systemroot%\System32\LogFiles folder. The permission needed for the system
+account is Full Control.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. In Windows Explorer, open the c:\%Systemroot%\System32\LogFiles folder.
+
+2. Right-Click the LogFiles folder, and then click Properties.
+
+3. Click the Security tab, and then click Permissions.
+
+4. Click Add, and then change the Type of Access for the system account to Full
+  Control. Click OK three times.
+
+To verify that the error message no longer occurs, check the
+c:\%Systemroot%\System32\LogFiles folder for log files being written.
+
+Additional query words: failure logging
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

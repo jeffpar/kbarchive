@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246248/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246248/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246248/","publisher":null,"image":null,"headline":"Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246248-xweb-diagnostic-logging-levels-for-owa-defined-in-adminexe">Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246248
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+You may want to enable logging on a server to gather diagnostics information for
+troubleshooting purposes. This article describes the diagnostics logging
+settings that allow monitoring of Outlook Web Access (OWA) activity.
+
+MORE INFORMATION
+================
+
+To monitor OWA client connections to the directory service and the information
+store on the Exchange Server computer:
+
+1. Start the Microsoft Exchange Server Administrator progam.
+
+2. Click the server you want to monitor, and on the File menu, click Properties.
+
+3. Click the Diagnostics Logging tab.
+
+4. Click MSExchangeDS in the left pane, and in the right pane, set Security,
+  ExDS Interface, MAPI Interface, Directory Access, LDAP Interface, and Name
+  Resolution to Maximum.
+
+5. Click the plus sign (+) by MSExchangeIS in the left pane, click System, and
+  then in right pane, set Connections and General to Maximum.
+
+6. Under MSExchangeIS, click Private, and set General and Logons to Maximum.
+
+If you look at one logon through OWA, you see three MAPI Interface events from
+the directory service, then a Connections event to the information store, then a
+Logons event, again to the information store, and then another Connections event
+to the information store.
+
+The following events are recorded in the application log in Event Viewer if the
+above listed diagnostic logging is enabled. Several events such as 1136, 1137,
+and 1170 may appear multiple times during one user's logon.
+
+  Event ID 1170 MSExchangeDS MAPI Interface
+  A client process connected to the directory with remote procedure call (RPC)
+  string binding ncalrpc:SERVER1[MSExchangeDS_LPC].
+
+  Event ID 1136 MSExchangeDS MAPI Interface
+  Internal event: Function NspiBind entered
+
+  Event ID 1170 MSExchangeDS MAPI Interface
+  A client process connected to the directory with remote procedure call (RPC)
+  string binding nvalrpc:SERVER1(MSExchangeDS_LPC)
+
+  Event ID 1136 MSExchangeDS ExDS Interface
+  Internal event: Function ds_read entered
+
+  Event ID 1137 MSExchangeDS ExDS Interface
+  Internal event: Function ds_read completed with an elapsed time of 0.
+
+  Event ID 1007 MSExchangeIS Connections
+  Kermitdom\administrator connected as
+  /o=Microsoft/ou=server1/cn=Recipients/cn=administrator
+
+  Event ID 1009 MSExchangeIS Private Logons
+  Kermitdom\administrator logged on as
+  /o=Microsoft/ou=server1/cn=Recipients/cn=administrator
+
+If you have more than one OWA server, you can modify the RPC Binding order in the
+registry to allow logging to show the binding of the OWA server's IP address to
+the directory service port:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Click Start, click Run, type Regedit in the Open box, and then click OK.
+
+2. Locate the following registry key.
+
+  HKEY_Local_Machine\Software\Microsoft\Exchange\Exchange Provider
+
+3. Click RPC_Binding_Order, and then remove NCALRPC from the binding order value
+  in the right pane.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q163576 XGEN: Changing the RPC Binding Order
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103478/","publisher":null,"image":null,"headline":"Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103478-mac-wkst-mail-31-installer-corrupts-appletalk-on-system-71">Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103478
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install version 3.1 of Microsoft Mail for AppleTalk Networks on a
+Macintosh running System version 7.1 software, you may receive any of the
+following error messages regarding AppleTalk or network access:
+
+  The correct version of AppleTalk is not installed. Please reinstall the
+  Network Software
+
+  -or-
+
+  An error occurred while trying to start up your AppleTalk connection. The
+  built-in LocalTalk port will be used instead.
+
+  -or-
+
+  The Network Control Panel cannot be used because AppleTalk did not load at
+  startup. Activate AppleTalk in the Chooser and reboot.
+
+  -or-
+
+  AppleTalk service is unavailable because a serious error has occurred.
+  Rebooting may restore AppleTalk Service.
+
+  -or-
+
+  The currently installed version of AppleTalk is too old for this version of
+  the Network Control Panel. Please install the most recent version.
+
+CAUSE
+=====
+
+The Microsoft Mail installer script replaces AppleTalk with version 57.0.3. This
+version is not compatible with System 7.1.
+
+RESOLUTION
+==========
+
+To correct the problem once it has occurred, you need to reinstall the AppleTalk
+drivers with a more current version than 57.0.3. To do this, use one of the
+following methods:
+
+- Reinstall the Macintosh System software with the original disks. this will
+  update AppleTalk during the course of the installation.
+
+  NOTE: To reduce installation time, you can choose a minimal installation from
+  the Custom menu.
+
+-or-
+
+- Update the AppleTalk drivers by using the Network Software Installation (NSI)
+  disk from Apple. You can obtain the NSI disk from Apple or from most online
+  bulletin board systems, such as AppleLink.
+
+Additionally, Microsoft Mail 3.1a will not update the AppleTalk if the AppleTalk
+version is 57.0.3 or later.
+
+MORE INFORMATION
+================
+
+You can manually install Microsoft Mail 3.1 on a Macintosh running System 7.1.
+With a manual installation, the AppleTalk driver is not updated, and therefore,
+network connectivity is not affected.
+
+To manually install Microsoft Mail
+----------------------------------
+
+1. Insert the Disk 2 - Macintosh Workstation disk.
+
+2. Open the Mail Files folder by double-clicking the folder.
+
+3. Drag the MS Mail file to the Extensions folder.
+
+4. Open the Microsoft Mail DA suitcase by double-clicking it.
+
+5. Drag the enclosed Microsoft Mail desk accessory to the Apple Menu Items
+  folder.
+
+6. Restart the Macintosh.
+
+Additional query words: 3.10 AppleTalk corrupt
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

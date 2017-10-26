@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194546/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194546/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194546/","publisher":null,"image":null,"headline":"Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194546-x400-incorrect-time-on-message-sent-through-gateway-to-x400">Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194546
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send a message through the Microsoft Mail Gateway to X.400, and either of
+the following conditions are met, the time on the message may be incorrect when
+you view the message in an e-mail client:
+
+- The message is sent from Microsoft Exchange Server to Microsoft Mail for PC
+  Networks, or vice versa, and the Microsoft Mail Gateway to X.400 computer is
+  configured for a time zone other than Greenwich mean time. The problem occurs
+  regardless of the time zone for which the Exchange Server computer is set.
+
+-or-
+
+- The message is sent from Microsoft Mail (PC) to Microsoft Mail (PC) through
+  two Microsoft Mail Gateway to X.400 computers, and the computers are not
+  configured for the same time zone.
+
+CAUSE
+=====
+
+Microsoft Mail Gateway to X.400 does not properly modify the time on messages to
+adjust for differences in time zones. This causes the time on the message to be
+displayed incorrectly when either of the conditions described above are met.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name      Version
+  ----------------------
+  X400gate.exe   3.2.23
+
+This hotfix has been posted to the following Internet location as X400gy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/gateways-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to X.400
+version 3.2.
+
+MORE INFORMATION
+================
+
+When you send a message to or from an Exchange Server or Microsoft Mail (PC)
+computer, the computer may adjust the time on the message for differences in
+time zones. This adjustment is intended to ensure that the time on the message
+is accurate when the message is viewed in an e-mail client, regardless of the
+time zones in which the Exchange Server or Microsoft Mail (PC) computers are
+located.
+
+When a message is sent from an Exchange Server computer that is configured for a
+time zone other than Greenwich mean time, the server adds or subtracts the
+appropriate number of hours so that the time on the message appears in Greenwich
+mean time. Similarly, when a message is sent to an Exchange Server computer that
+is configured for a time zone other than Greenwich mean time, the server adds or
+subtracts the appropriate number of hours so that the time on the message
+appears in the time zone in which the server is located. Adjusting the time to
+Greenwich mean time on outbound messages allows the server that receives the
+message to easily adjust the time to the appropriate time zone. This ensures
+that the time on the message is accurate when the message is viewed in an e-mail
+client.
+
+Microsoft Mail (PC) computers adjust the time on outbound and inbound messages in
+a similar manner. However, if the message is sent through the Microsoft Mail
+Gateway to X.400, the time on the message may be not be adjusted properly. If
+the Microsoft Mail Gateway to X.400 computer is configured for Greenwich mean
+time, the computer does not attempt to adjust the time on the message.
+Therefore, the problem described in this article does not occur.
+
+In addition, if the message is sent from Microsoft Mail (PC) to Microsoft Mail
+(PC) through two Microsoft Mail Gateway to X.400 computers that are configured
+for a time zone other than Greenwich mean time, and both computers are
+configured for the same time zone, the incorrect adjustments made by the two
+computers offset each other, and the problem does not occur.
+
+In all other scenarios, the problem described in this article occurs because the
+Microsoft Mail Gateway to X.400 does not properly adjust the time on the
+message.
+
+As indicated above, this problem occurs when a message is sent from Microsoft
+Mail (PC) to Microsoft Mail (PC) through two Microsoft Mail Gateway to X.400
+computers that are not configured for the same time zone. Specifically, this
+problem occurs when either of the following conditions are met:
+
+- Both of the Microsoft Mail Gateway to X.400 computers are configured for a
+  time zone other than Greenwich mean time, but the computers are not
+  configured for the same time zone.
+
+-or-
+
+- One of the Microsoft Mail Gateway to X.400 computers is configured for
+  Greenwich mean time, but the other is not.
+
+Additional query words: gmt
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

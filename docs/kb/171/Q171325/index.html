@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171325: Incorrect Icons Displayed for .ico Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171325: Incorrect Icons Displayed for .ico Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171325/","publisher":null,"image":null,"headline":"Q171325: Incorrect Icons Displayed for .ico Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171325-incorrect-icons-displayed-for-ico-files">Q171325: Incorrect Icons Displayed for .ico Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171325
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:4.0,95
+Operating System(s): 
+Keyword(s): win95 kbshell
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows to correct them.
+Microsoft cannot guarantee that any problems resulting from the use of
+Registry Editor can be solved. Use this tool at your own risk.
+
+SYMPTOMS
+========
+
+When you view icon (.ico) files, the icons may display the default Windows
+system icon instead of the actual icon image.
+
+CAUSE
+=====
+
+The .ico file association is missing, or is damaged.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, see the online Help in
+Registry Editor.
+
+To resolve this issue, follow these steps:
+
+1. Double-click My Computer, and then click Options on the View menu.
+
+2. Verify that the Icon file type appears on the File Types tab. If the Icon
+  file type does not appear in the Registered File Types box, skip to step 10.
+
+3. Click Icon in the Registered File Types box, and then click Edit.
+
+4. Verify that the following settings exist, and then click OK:
+
+   - The Description Of Type box contains "Icon" (without the quotation marks).
+
+   - If there is a Confirm Open After Download check box, it should be
+     selected.
+
+5. If the settings do not appear exactly as listed in step 4, click Remove,
+  click Yes, and then click OK. If the settings do appear as listed in step 4,
+  skip to step 10.
+
+6. Click New Type.
+
+7. In the Description Of Type box, type "Icon" (without the quotation marks).
+
+8. In the Associated Extension box, type "ICO" (without the quotation marks).
+
+9. Click OK, and then click Close.
+
+10. Use Registry Editor to view the
+
+  HKEY_CLASSES_ROOT\.ico
+
+  key, and then verify that the default string contains the following value:
+
+  icofile
+
+  If the .ico key does not exist, create it, and then insert the value listed
+  above. If any other values exist in the .ico key, delete them.
+
+11. Use Registry Editor to view the
+
+  HKEY_CLASSES_ROOT\icofile
+
+  key, and then verify that the default string contains the following value:
+
+  icon
+
+  If the icofile key does not exist, create it, and then insert the value
+  listed above. If any other values exist, delete them.
+
+12. Create a new key in the icofile key called "DefaultIcon" (without the
+  quotation marks) , and type "%1" (without the quotation marks) as this key's
+  default value.
+
+13. Quit Registry Editor, and then restart your computer.
+
+MORE INFORMATION
+================
+
+When this issue occurs, the default system icon may be displayed for all the
+icons on the desktop.
+
+======================================================================
+Keywords          : win95 kbshell 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbZNotKeyword3
+Version           : WINDOWS:4.0,95
+Hardware          : x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

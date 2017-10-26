@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178760: HOWTO: Alter the Properties of a View at Run Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178760: HOWTO: Alter the Properties of a View at Run Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178760/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178760/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178760/","publisher":null,"image":null,"headline":"Q178760: HOWTO: Alter the Properties of a View at Run Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178760-howto-alter-the-properties-of-a-view-at-run-time">Q178760: HOWTO: Alter the Properties of a View at Run Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178760
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600
+Last Modified: 19-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under some circumstances, it may be desirable to modify the properties of a view
+at run time. This article describes the properties and default property values
+associated with a view. The sample code illustrates how to create a view and use
+the DBSETPROP() function to alter the properties of the view programmatically.
+
+MORE INFORMATION
+================
+
+The properties of a view created with the View Designer are readily accessible
+from the View Designer. The properties of a view created programmatically,
+however, use default values unless those values are changed either
+programmatically or from the View Designer.
+
+The default values of a view created programmatically are as follows:
+
+  Property Name            Default Value
+  --------------------------------------
+
+  SendUpdates              .F. (False)
+  UpdateType               1 SQL Update
+  WhereType                3 Key and Modified Fields
+  BatchUpdateCount         1
+  UseMemoSize              255
+  FetchSize                100
+  FetchMemo                .T. (True)
+  MaxRecords               -1 (All)
+  Tables                   Database Container and Table Name
+  Comment                  Null String
+  Prepared                 .F. (False)
+  CompareMemo              .T. (True)
+  FetchAsNeeded            .F. (False)
+
+  View Field Properties    Default Value
+  -------------------------------------
+
+  KeyField                 .T. (True if the field is a Primary Key)
+                           .F. (False if the field is not a Primary Key)
+  Updatable                .F. (False)
+  UpdateName               Database Container, Table Name And Field Name
+  DataType                 Same as source field
+  Caption                  Null String
+  RuleExpression           Null String
+  RuleText                 Null String
+  Default                  Null String
+
+The following View Properties are not available in Visual FoxPro 3.0 or Visual
+FoxPro 3.0b:
+
+  Prepared
+  CompareMemo
+  FetchAsNeeded
+
+The following sample code creates a view based on the Customer table contained in
+the \Samples\Data subdirectory of the Visual FoxPro installation folder. In
+Visual FoxPro 6.0, Customer table is in the Microsoft Visual
+Studio\Common\Samples\Data folder.
+
+1. Create a program called Makeview.prg using the following code:
+
+        thisversion=VERSION()
+        IF LEFT(ALLTRIM(thisversion),6)="Visual"
+          thisversion=VAL(SUBSTR(thisversion,15,2))
+        ELSE
+          thisversion=0
+        ENDIF
+        SET EXCLUSIVE ON
+        SET MULTILOCKS ON
+        OPEN DATABASE home()+"\SAMPLES\DATA\TESTDATA"
+        CREATE SQL VIEW customerview ;
+         AS SELECT DISTINCT cust_id, company, contact ;
+        FROM testdata!customer ;
+        ORDER BY customer.cust_id
+        * Set view properties.
+        =DBSETPROP('CUSTOMERVIEW','View','SendUpdates',.T.)
+        =DBSETPROP('CUSTOMERVIEW','View','UpdateType',2)
+        =DBSETPROP('CUSTOMERVIEW','View','WhereType',1)
+        =DBSETPROP('CUSTOMERVIEW','View','BatchUpdateCount',3)
+        =DBSETPROP('CUSTOMERVIEW','View','UseMemoSize',255)
+        =DBSETPROP('CUSTOMERVIEW','View','FetchSize',100)
+        =DBSETPROP('CUSTOMERVIEW','View','FetchMemo',.T.)
+        =DBSETPROP('CUSTOMERVIEW','View','MaxRecords',10)
+        =DBSETPROP('CUSTOMERVIEW','View','Tables','CUSTOMER')
+        =DBSETPROP('CUSTOMERVIEW','View','Comment',"Demonstration View")
+        IF thisversion&gt;=5
+        =DBSETPROP('CUSTOMERVIEW','View','Prepared',.F.)
+        =DBSETPROP('CUSTOMERVIEW','View','CompareMemo',.T.)
+        =DBSETPROP('CUSTOMERVIEW','View','FetchAsNeeded',.T.)
+        ENDIF
+        SELECT customer
+        USE
+        * Set Key and Updatable fields.
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','KeyField',.T.)
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','Updatable',.T.)
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','UpdateName', ;
+        'CUSTOMER.Cust_id')
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','DataType',"C(12)")
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','Caption','Primary Key')
+        =DBSETPROP('CUSTOMERVIEW.Company','Field','KeyField',.F.)
+        =DBSETPROP('CUSTOMERVIEW.Company','Field','Updatable',.T.)
+        =DBSETPROP('CUSTOMERVIEW.Company','Field','UpdateName', ;
+        'CUSTOMER.Company')
+        =DBSETPROP('CUSTOMERVIEW.Company','Field','DataType',"N(15,2)")
+        =DBSETPROP('CUSTOMERVIEW.Company','Field','Caption','Company Name')
+        =DBSETPROP('CUSTOMERVIEW.Contact','Field','KeyField',.F.)
+        =DBSETPROP('CUSTOMERVIEW.Contact','Field','Updatable',.F.)
+        =DBSETPROP('CUSTOMERVIEW.Contact','Field','UpdateName', ;
+        'CUSTOMER.Contact')
+        =DBSETPROP('CUSTOMERVIEW.Contact','Field','DataType',"N(15,2)")
+        =DBSETPROP('CUSTOMERVIEW.Contact','Field','Caption','Contact Name')
+        USE customerview
+        BROWSE
+        RETURN
+
+2. From the Command window, type:
+
+        DO Makeview.prg
+
+  The program creates an updateable view based on the Customer table.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbHWMAC kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

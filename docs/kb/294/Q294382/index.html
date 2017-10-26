@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server’s NetBIOS Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server’s NetBIOS Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/294/Q294382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/294/Q294382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/294/Q294382/","publisher":null,"image":null,"headline":"Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server’s NetBIOS Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q294382-error-4013-if-host-header-differs-from-servers-netbios-name">Q294382: Error 401.3 If "Host Header" Differs from Server’s NetBIOS Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q294382
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbDSupport kbIIS kbiis500
+Last Modified: 18-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Internet Explorer on a Windows 2000 client and browsing to a
+Web site where the host header name is different from the NetBIOS name of the
+computer, Integrated Authentication may fail with error 401.3.
+
+Note that Internet Explorer clients that are using Windows NT 4 or Windows 95 or
+Windows 98 will not fail. Also, other authentication schemes will work.
+
+CAUSE
+=====
+
+During Kerberos authentication, a Windows 2000 domain controller grants tickets
+based on the Internet Information Services 5.0 computer's Server Principle Name
+(SPN). If the host header (Web site name) being requested differs from the
+NetBIOS name of the Internet Information Services 5.0 computer, Kerberos
+authentication will fail, causing 401.3 errors on the client.
+
+Clients using Windows NT 4 or Windows 95 or Windows 98 succeed because they do
+not natively support Kerberos and thus use Windows NT Challenge/Response (NTLM)
+authentication.
+
+WORKAROUND
+==========
+
+- If you are using Kerberos:
+
+  Use the SetSPN.exe utility, from the Windows 2000 Resource Kit, to register
+  any host header names of Web sites that are configured to use "Integrated"
+  authentication and will be accessed from Windows 2000 clients. For example:
+
+  Server name: webserver1.development.exair.com
+  Host header: www.exair.com
+
+  Use the SetSPN command to register the www.exair.com SPN:
+
+  "SetSPN -A HTTP/www.exair.com webserver1" (without the quotation marks)
+
+- If you are not using Kerberos:
+
+  Remove Kerberos from the list of authentication providers in Internet
+  Information Services 5.0 by using the following command:
+
+  "cscript adsutil.vbs set w3svc/NTAuthenticationProviders "NTLM"" (without the
+  quotation marks)
+
+NOTE: Adsutil.vbs must be run by a member of the local Admins group on the
+Internet Information Services computer.
+
+MORE INFORMATION
+================
+
+A fresh install of Internet Information Services 5.0 with Integrated
+Authentication enabled will attempt to authenticate clients with Kerberos first.
+If a client does not support Kerberos, IIS will send that client an
+"Authenticate: NTLM" header, forcing it to authenticate using Windows NT
+Challenge/Response.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q217098 Basic Overview of Kerberos Authentication in Windows 2000
+
+  Q266080 Answers to Frequently Asked Kerberos Questions
+
+  Q215383 How to Ensure Windows Integrated Logons in IIS 5.0
+
+  Q248350 Kerberos Authentication Fails after Upgrading from IIS 4.0 to IIS 5.0
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbIIS kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

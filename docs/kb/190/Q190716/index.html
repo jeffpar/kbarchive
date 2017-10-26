@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190716/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190716/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190716/","publisher":null,"image":null,"headline":"Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190716-wd97-send-to-mail-recipient-problem-with-outlook-expresswin-95">Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190716
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:4.0,4.01,97
+Operating System(s): 
+Keyword(s): kbdta word97
+Last Modified: 05-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows, used with:
+   - the operating system: Microsoft Windows 95 
+- Microsoft Internet Explorer versions 4.0, 4.01 for Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click Send To on the File menu in Word, Mail Recipient may be missing
+even though you have Microsoft Outlook Express installed as your default e-mail
+program.
+
+  -or-
+
+The following error messages may appear when you click Mail Recipient:
+
+  Cannot load Extended MAPI library mapi32.dll.
+
+  -and-
+
+  Mail is not installed on your system.
+
+CAUSE
+=====
+
+You may not have the Windows Messaging components installed on your system, or
+you do not have Outlook Express set as your default e-mail program.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the appropriate procedure for your situation.
+
+If Mail Recipient Is Missing When You Click Send To on the File Menu
+--------------------------------------------------------------------
+
+If Mail Recipient is missing when you point to Send To on the File menu in Word,
+follow these steps:
+
+1. Quit all Windows programs.
+
+2. On the Start menu, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs.
+
+4. On the Windows Setup tab, select Windows Messaging and then click Details.
+
+5. Select Windows Messaging and then click OK.
+
+  NOTE: The other two options, Internet Mail Services and Microsoft Mail
+  Services, do not need to be selected.
+
+6. On the Windows Setup tab, click Apply.
+
+  NOTE: Windows 95 Setup will copy the required components to your computer.
+
+7. Click OK after Windows Setup has completed to close the Add/Remove Programs
+  Properties dialog box.
+
+8. Close Control Panel and then restart your computer.
+
+  Note: To restart your computer, click the Start button and then click
+  Shutdown. When the Shut Down Windows dialog box appears, click to select
+  Restart and then click OK.
+
+If You Get Error Messages When You Click Mail Recipient
+-------------------------------------------------------
+
+If you receive the error messages listed in the "Symptoms" section of this
+article when you click Mail Recipient (on the File menu, point to Send To),
+follow these steps:
+
+1. Quit Word.
+
+2. Do one of the following:
+
+   - Start Microsoft Outlook Express. When you receive the following message,
+     click Yes.
+
+  Outlook Express is not currently your default mail client. Would you like to
+  make it your default mail client?
+
+  -or-
+
+   - In Microsoft Outlook Express, click Options on the Tools menu. On the
+     General tab, select "Make Outlook Express my default e-mail program," and
+     then click OK.
+
+3. Restart Word.
+
+When you point to Send To on the File menu in Word and then click Mail Recipient,
+no error messages should appear and a Outlook Express mail message should
+appear.
+
+MORE INFORMATION
+================
+
+For additional information about sending a Word document using Outlook Express,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q178478 WD97: Can't Send Word Document with Outlook Express
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:4.0,4.01,97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/298/Q298141/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/298/Q298141/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/298/Q298141/","publisher":null,"image":null,"headline":"Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q298141-howto-send-a-pcl-or-postscript-file-directly-to-a-printer-w-vb">Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q298141
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbprint kbSample kbAPI kbPrinting kbSpooler kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSuppor
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to bypass the printer driver and send a PCL or
+PostScript file directly to a printer from Visual Basic.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Place two Command Buttons, Command1 and Command2, onto Form1.
+
+3. Add the following code to the code window of Form1:
+
+  Option Explicit
+    
+  ' Modify FILE_NAME to point to a valid path and file name on your system.
+  Const FILE_NAME = "C:\TEST.PRN"  
+
+  Private Type DOCINFO
+    pDocName As String
+    pOutputFile As String
+    pDatatype As String
+  End Type
+
+  Private Declare Function ClosePrinter Lib "winspool.drv" (ByVal _
+    hPrinter As Long) As Long
+    
+  Private Declare Function EndDocPrinter Lib "winspool.drv" (ByVal _
+    hPrinter As Long) As Long
+    
+  Private Declare Function EndPagePrinter Lib "winspool.drv" (ByVal _
+    hPrinter As Long) As Long
+    
+  Private Declare Function OpenPrinter Lib "winspool.drv" Alias _
+    "OpenPrinterA" (ByVal pPrinterName As String, phPrinter As Long, _
+    ByVal pDefault As Long) As Long
+    
+  Private Declare Function StartDocPrinter Lib "winspool.drv" Alias _
+    "StartDocPrinterA" (ByVal hPrinter As Long, ByVal Level As Long, _
+    pDocInfo As DOCINFO) As Long
+    
+  Private Declare Function StartPagePrinter Lib "winspool.drv" (ByVal _
+    hPrinter As Long) As Long
+    
+  Private Declare Function WritePrinter Lib "winspool.drv" (ByVal _
+    hPrinter As Long, pBuf As Any, ByVal cdBuf As Long, _
+    pcWritten As Long) As Long
+
+  Private Sub Command1_Click()
+    Dim lhPrinter As Long
+    Dim lReturn As Long
+    Dim lpcWritten As Long
+    Dim lDoc As Long
+    Dim sWrittenData As String
+    Dim MyDocInfo As DOCINFO
+    lReturn = OpenPrinter(Printer.DeviceName, lhPrinter, 0)
+    If lReturn = 0 Then
+        MsgBox "The Printer " &amp; Printer.DeviceName &amp; " could not be opened!"
+        Exit Sub
+    End If
+    MyDocInfo.pDocName = "My Document"
+    MyDocInfo.pOutputFile = vbNullString
+    MyDocInfo.pDatatype = vbNullString
+    lDoc = StartDocPrinter(lhPrinter, 1, MyDocInfo)
+    Call StartPagePrinter(lhPrinter)
+    sWrittenData = "How's that for Magic !!!!" &amp; vbFormFeed
+    lReturn = WritePrinter(lhPrinter, ByVal sWrittenData, _
+       Len(sWrittenData), lpcWritten)
+    lReturn = EndPagePrinter(lhPrinter)
+    lReturn = EndDocPrinter(lhPrinter)
+    lReturn = ClosePrinter(lhPrinter)
+  End Sub
+
+  Private Sub Command2_Click()
+    Dim lhPrinter As Long
+    Dim lReturn As Long
+    Dim lpcWritten As Long
+    Dim lDoc As Long
+    Dim sWrittenData As String
+    Dim MyDocInfo As DOCINFO
+    
+    Dim NumLoops As Long     ' number of 8k loops
+    Dim LeftOver As Integer  ' amount of file left
+    Dim i As Integer         ' counter for loops
+    Const MaxSize = 8192     ' maximum buffer size
+    
+    lReturn = OpenPrinter(Printer.DeviceName, lhPrinter, 0)
+    If lReturn = 0 Then
+        MsgBox "The Printer Name you typed wasn't recognized."
+        Exit Sub
+    End If
+    MyDocInfo.pDocName = "My Document"
+    MyDocInfo.pOutputFile = vbNullString
+    MyDocInfo.pDatatype = vbNullString
+    lDoc = StartDocPrinter(lhPrinter, 1, MyDocInfo)
+    ' Make sure that FILE_NAME points to a valid PCL or PostScript file on your system.
+    Open FILE_NAME For Binary As #1
+    
+    ' Calculate size of file and amount left over.
+    NumLoops = LOF(1) \ MaxSize
+    LeftOver = LOF(1) Mod MaxSize
+    
+    For i = 1 To NumLoops
+      sWrittenData = Input(MaxSize, #1)
+      lReturn = WritePrinter(lhPrinter, ByVal sWrittenData, _
+                    Len(sWrittenData), lpcWritten)
+    Next
+    
+    ' Grab what is left over.
+    If LeftOver &lt;&gt; 0 Then
+      sWrittenData = Input(LeftOver, #1)
+      lReturn = WritePrinter(lhPrinter, ByVal sWrittenData, _
+                        Len(sWrittenData), lpcWritten)
+    End If
+    
+    Close #1
+    lReturn = EndDocPrinter(lhPrinter)
+    lReturn = ClosePrinter(lhPrinter)
+  End Sub
+
+  Private Sub Form_Load()
+    Command1.Caption = "Print a String"
+    Command2.Caption = "Print a File"
+  End Sub
+
+4. Assign the constant FILE_NAME in the code with your own PCL or PostScript
+  path and file name.
+
+5. Run the project. Click Print a String, which prints a string to the printer.
+  Click Print a File to read and print a PCL or PostScript file directly to the
+  printer.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q154078 HOWTO: Send Raw Data to a Printer Using the Win32 API from Visual
+  Basic
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbSample kbAPI kbPrinting kbSpooler kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

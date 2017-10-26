@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166181: WD97: Can’t Insert Page Numbers into WordMail Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166181: WD97: Can’t Insert Page Numbers into WordMail Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166181/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166181/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166181/","publisher":null,"image":null,"headline":"Q166181: WD97: Can’t Insert Page Numbers into WordMail Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166181-wd97-cant-insert-page-numbers-into-wordmail-message">Q166181: WD97: Can’t Insert Page Numbers into WordMail Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166181
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbmacro kbprogramming kbwordvba
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Word as your email editor, Word does not allow you to insert page
+numbers into your email message. This article describes how to insert page
+numbers in an email message by using a Visual Basic for Applications macro.
+
+MORE INFORMATION
+================
+
+NOTE: The page numbers that you will insert into your email message will be
+visible only when you or the recipient is using WordMail and while you or the
+recipient is using page layout view. The page numbers will be printed when you
+or the recipient prints the email message.
+
+1. Start Word.
+
+2. On the Tools menu, point to Macro, and then click Record New Macro.
+
+3. In the Macro name box, type a name for the macro. For example, type
+  "InsertPageNumbers" (without the quotation marks).
+
+4. In the Store Macro In list, select "All Documents (Normal.dot)."
+
+5. Click OK.
+
+  The macro recorder starts and the Stop Recording toolbar appears.
+
+6. On the View menu, click Header And Footer. The insertion point appears in the
+  header. If you want the page numbers in the footer, click the "Switch Between
+  Header and Footer" button on the Header And Footer toolbar.
+
+7. Position the insertion point where you want to place the page number. For
+  example, press TAB one time if you want the page number to be centered, or
+  press TAB two times if you want the page number to be right-aligned.
+
+8. Type any text you want to appear before the page number, and then click the
+  Page Number button on the Header And Footer toolbar.
+
+9. Click the Close button on the Header And Footer toolbar.
+
+10. Click the Stop Recording button on the Stop Recording toolbar.
+
+  NOTE: The InsertPageNumbers macro is now stored in the Normal.dot template.
+  It will be available any time you create a document in Word. If you want the
+  macro to be available only to email documents, use the Organizer to move the
+  macro from the Normal.dot template to the E-mail.dot template.
+
+11. Start Microsoft Outlook and set Word as your email editor:
+  a. On the Tools menu, click Options.
+
+  b. On the E-mail tab, click to select the "Use Microsoft Word as the e-mail
+     editor" check box.
+
+  c. Click OK.
+
+12. Compose your email message.
+
+13. Insert the page numbers using the recorded macro:
+  a. Place the insertion point in the text area of your email message.
+
+  b. On the Tools menu, point to Macro, and then click Macros.
+
+  c. In the Macro list box, select the InsertPageNumbers macro, and then click
+     Run.
+
+Additional query words: 97 8.0 Page Numbers WordMail
+
+======================================================================
+Keywords          : kbmacro kbprogramming kbwordvba 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

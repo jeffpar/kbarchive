@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68874: Using ANSI.SYS Escape Codes with printf() for Screen Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68874: Using ANSI.SYS Escape Codes with printf() for Screen Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68874/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68874/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68874/","publisher":null,"image":null,"headline":"Q68874: Using ANSI.SYS Escape Codes with printf() for Screen Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68874-using-ansisys-escape-codes-with-printf-for-screen-control">Q68874: Using ANSI.SYS Escape Codes with printf() for Screen Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68874
+Product(s): See article
+Version(s): 3.x 4.x 5.x 6.00 6.00a | 5.10 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 6-FEB-1991
+
+The DOS ANSI.SYS driver may be used to perform screen control
+functions in printf() output. Setting screen attributes, positioning
+the cursor to a row and column, and clearing the screen are some
+examples of functions that may be done with this driver using the
+correct escape sequences.
+
+The ANSI.SYS driver must be loaded from CONFIG.SYS in order for these
+functions to work correctly. All of the sequences start with the
+escape code "\33" (representing the value for escape in octal),
+followed by the appropriate set of characters needed to perform the
+desired function.
+
+This topic is discussed in detail on pages 224-225 in the Microsoft
+Press book "Variations in C."
+
+The following sample code demonstrates some of these functions:
+
+Sample Code
+-----------
+
+#include &lt;stdio.h&gt;
+
+void main( void)
+{
+   int row = 10;
+   int col = 20;
+   int num = 1;
+
+   printf( "\33[2J");                // clears the screen
+
+   printf( "\33[%d;%dH", row, col);  // positions the cursor at row 10,
+                                     // column 20
+
+   printf( "\33[%dA", num);          // moves the cursor up 1 line
+
+   printf( "\33[%dB", num);          // moves the cursor down 1 line
+
+   printf( "\33[7m");                // sets the attribute to reverse
+                                     // video
+}
+
+There are other sequences available. Information about them may be
+found in DOS manuals under the "prompt" command, or any other sections
+dealing with ANSI.SYS.
+
+Under OS/2, the ANSI driver is enabled by default for all sessions
+except the Presentation Manager. To enable ANSI support in the DOS
+box, a line must be added to the CONFIG.SYS file. See your OS/2
+documentation for more information on the exact syntax.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

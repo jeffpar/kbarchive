@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80783: Determining the Version of MS-DOS from a Windows App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80783: Determining the Version of MS-DOS from a Windows App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80783/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80783/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80783/","publisher":null,"image":null,"headline":"Q80783: Determining the Version of MS-DOS from a Windows App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80783-determining-the-version-of-ms-dos-from-a-windows-app">Q80783: Determining the Version of MS-DOS from a Windows App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80783
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are at least three ways for an application developed for Windows version
+3.x to determine the version of MS-DOS that is running on the system. Both the
+first and second methods require placing a few lines of inline assembler code
+into the application. The second method requires MS- DOS version 5.0. The third
+method requires changing the GetVersion() function prototype in the WINDOWS.H
+header file distributed with the Microsoft Windows SDK version 3.0 (this change
+is not necessary if the Microsoft Windows SDK version 3.1 is being used).
+
+Even though it is necessary to modify the Windows 3.0 header file, the third
+method is the most removed from the hardware and can be considered the most
+portable. The other two methods assume an underlying Intel 80x86 architecture
+(or emulation).
+
+MORE INFORMATION
+================
+
+Method 1
+--------
+
+This method requires only a few lines of inline assembler code and a call to the
+DOS3Call() function. The following code fragment demonstrates this technique:
+
+      VOID FAR PASCAL DOS3Call(VOID);   // Use instead of INT 21h
+     int nMajor;                       // MS-DOS major version
+     int nMinor;                       // MS-DOS minor version, revision
+     int nOEMNumber;                   // OEM serial number
+     static char szUserMsg[80];        // holds user message
+
+     _asm
+       {
+          mov   ax, 0x3000        ; Get MS-DOS version
+          call  DOS3Call
+          mov   nMajor, al        ; Save major number
+          mov   nMinor, ah        ; Save minor version number
+          mov   nOEMNumber, bh    ; Save OEM Serial number
+       }
+
+     wsprintf(szUserMsg,
+              "Running on MS-DOS %d.%d OEM Serial Number %d",
+              nMajor, nMinor, nOEMNumber);
+     MessageBox(hWnd, szUserMsg, "MS-DOS Version", MB_OK);
+
+Method 2
+--------
+
+This method requires only a few lines of inline assembler code and a call to the
+DOS3Call() function. Additionally, it requires that MS-DOS version 5.0 is
+running on the system. While this function does not report the OEM serial
+number, it does report whether MS-DOS is in ROM or in HMA (the High Memory
+Area). Also the MS-DOS version returned by this method is unaffected by the
+SETVER command. The following code fragment demonstrates this technique:
+
+     #define DOSINROM 0x08
+     #define DOSINHMA 0x10
+     int nMajor    = 0;
+     int nMinor    = 0;
+     int nRevision = 0;
+     int nDOSFlag  = 0;
+     static char msg[120];
+     _asm
+       {
+           mov   ax, 0x3306        ; Get MS-DOS version
+           call  DOS3Call
+           mov   nMajor, bl        ; Save major number
+           mov   nMinor, bh        ; Save minor version number
+           mov   nRevision, dl     ; Revision num in low 3 bits
+           mov   nDOSFlag, dh      ; MS-DOS version flags
+       }
+     wsprintf(msg,
+              "Running on MS-DOS %s %s version %d.%d revision %d ",
+              (LPSTR) (nDOSFlag &amp; DOSINROM ? "in ROM " : ""),
+              (LPSTR) (nDOSFlag &amp; DOSINHMA ? "in HMA " : ""),
+              nMajor, nMinor, (nRevision &amp; 0x03));
+     MessageBox(hWnd, msg, "MS-DOS Version", MB_OK);
+
+Important Note for Methods 1 and 2
+----------------------------------
+
+The DOS3Call() function must be prototyped. In assembly language, the appropriate
+prototype is as follows:
+
+     extrn DOS3CALL: far
+
+Use the DOS3Call() fucntion instead of making a direct call to MS-DOS INT 21h.
+The DOS3Call() function runs a little faster than the equivalent INT 21h call
+under Windows and it ensures that the interrupt will be handled correctly under
+Windows.
+
+Also note that the use of FAR and PASCAL in the definition of DOS3Call() requires
+use of WINDOWS.H, since these macros are defined there.
+
+Method 3
+--------
+
+The last method involves making a slight modification to the Windows SDK version
+3.0 header file, WINDOWS.H. To retrieve the MS-DOS version, change the return
+type in the function prototype of the GetVersion function call from a WORD to a
+DWORD. The modified prototype should resemble the following:
+
+     DWORD FAR PASCAL GetVersion(void);
+
+NOTE: It is not necessary to make the above change to the version of the
+WINDOWS.H file included with the Windows SDK version 3.1.
+
+The following code fragment demonstrates how to use the GetVersion() function to
+display both the MS-DOS version and the Windows version numbers:
+
+     DWORD dwVersion;
+     char szUserMsg[80];
+     dwVersion = GetVersion();
+     wsprintf(szUserMsg,
+              "Window version %d.%d. MS-DOS version %d.%d",
+              LOBYTE(LOWORD(dwVersion)), HIBYTE(LOWORD(dwVersion)),
+              HIBYTE(HIWORD(dwVersion)), LOBYTE(HIWORD(dwVersion)));
+     MessageBox(hWnd, szUserMsg, "GetVersion", MB_OK);
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

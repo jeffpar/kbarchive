@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188672: XADM: Upgrading to Exchange 5.5 Gives Error ID No: c1032695 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188672: XADM: Upgrading to Exchange 5.5 Gives Error ID No: c1032695" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188672/","publisher":null,"image":null,"headline":"Q188672: XADM: Upgrading to Exchange 5.5 Gives Error ID No: c1032695","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188672-xadm-upgrading-to-exchange-55-gives-error-id-no-c1032695">Q188672: XADM: Upgrading to Exchange 5.5 Gives Error ID No: c1032695</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188672
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Microsoft Exchange Server 5.5 Upgrade Edition, the
+following error message may be displayed:
+
+  This upgrade program cannot be used to upgrade a promotional copy of
+  Microsoft Exchange Server. You must first install a licensed copy of
+  Microsoft Exchange Server.
+
+  Microsoft Exchange Setup
+  ID no: c1032695
+
+CAUSE
+=====
+
+You are attempting to upgrade an Evaluation Edition of Microsoft Exchange
+Server.
+
+WORKAROUND
+==========
+
+Option 1:
+To directly upgrade to Microsoft Exchange Server 5.5 after using the Evaluation
+Edition of Exchange Server 5.5, you must purchase the full copy of Exchange
+Server 5.5.
+
+Option 2:
+If you mistakenly upgraded your Microsoft Exchange Server 4.0 or 5.0 computer to
+Exchange 5.5 using the Exchange Server Evaluation Edition, follow these steps to
+correctly upgrade your server using the Exchange Server 5.5 Upgrade Edition:
+
+1. Back up your current Exchange Server 5.5 directory and information store.
+
+  Make note of the exact spelling, punctuation, and capitalization of the
+  Organization and Site names and verify the Exchange service account. Note the
+  locations of the directory and information store EDB, LOG, and CHK files.
+  Note which connectors are installed on this server.
+
+2. Run Exchange Server 5.5 Evaluation Edition Setup, and select Remove All. Do
+  NOT connect to a server in the site and remove the affected server from the
+  site.
+
+3. Run Exchange Server Setup from your original distribution media (either
+  Exchange Server 4.0 or 5.0).
+
+  When doing the installation, select the Create a New Site option, NOT the Join
+  Existing Site option. You must re-install with the exact same Organization
+  name, Site Name, and Exchange Service account as noted in step 1. (If
+  changing hardware, the machine name must also be the same and the Domain must
+  be the same as the original.)
+
+  Be sure to add all connectors that were on the original system so that they
+  are upgraded as well. After Setup is complete, run Optimizer to put the
+  directory and information store files on the same drives\paths as the
+  original.
+
+4. After Exchange Server 4.0 or 5.0 Setup has completed, run Setup from your
+  Exchange Server 5.5 Upgrade Edition.
+
+5. Restore your Exchange Server 5.5 Evaluation Edition directory and information
+  store (which were backed up in step 1). If this is a multi- server site,
+  restoring the directory restores the connection to the other servers in the
+  site and resumes replication.
+
+For more information on the recovery process, please refer to the Backup and
+Restore White Paper available on the Microsoft Web site.
+
+MORE INFORMATION
+================
+
+To upgrade to Microsoft Exchange Server 5.5 using the Version Upgrade Edition,
+you must own Microsoft Exchange Server 4.0 or 5.0.
+
+Additional query words: RTM 120 day
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

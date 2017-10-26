@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192747/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192747/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192747/","publisher":null,"image":null,"headline":"Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192747-xfor-linkage-snads-connector-does-not-handle-ndr-properly">Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192747
+Product(s): Microsoft Exchange
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- LinkAge Message Exchange, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an NDR message is received by the Exchange Server computer through the
+Linkage SNADS Connector, an entry similar to the following is logged in the
+Exchange Connectivity Manager's log browser:
+
+  LME-SNADS-IN(014e) 4 22464:- Recipient: FPTEST(ATTPING), Status1: 0
+  '{SNA:0(No error)}' Status2: 201'{DIA:201(system error occurred)}'
+
+The Exchange Server recipient receives the following message in their inbox:
+
+  The message was undeliverable because the recipient specified in the
+  recipient postal address refused to accept the message.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: Linkage SNADS Connector
+
+  File Name      Date      Time     Size
+  ----------------------------------------------
+  Lsdiamex.exe   8/19/98   10:31a   74,220 bytes
+  Mexdia.msg     8/19/98   10:22a    2,158 bytes
+
+This is a hotfix and distribution requires manager approval. To receive the
+hotfix, customers must be encountering the bug as described above. You must
+track the customers you send this to and supply them with the next service pack
+when it becomes available.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Linkage Message Exchange version
+3.2.
+
+MORE INFORMATION
+================
+
+If you enable the debug option by doing following:
+
+  add DEBUG=A30 in the [LME-SNADS-IN] and [LME-SNADS-OUT] sections of the
+  Linkage.ini and use Decsnd.exe to parse the *.snr files in the
+  \\Linkage\Traces directory
+
+you will get information similar to the following:
+
+  Prefix              &gt;
+  Dist_Command        &gt;
+  Dist_ID             &gt;
+  Origin_REN          : "HOUSSW3"
+  Origin_DGN          : ""
+  Origin_DEN          : "        "
+  Origin_Seqno        : "0000"
+  Origin_DTM          : 1998/7/31 16:31:3:1
+  Dist_Gen_Options    &gt;
+  Dist_Flags          : REPORT: Do not generate a report.
+  Hop_Count           : I(255)
+  Service_Parms       : Priority   (RLG) DATALO
+                     Protection (RLG) LEVEL 2 (SAFE STORE REQUIRED)
+                     Capacity   (RLG) INDEFINITE
+  Server_Object_Ind   : (No Server Object)
+  Origin_Agent        : 20F0F0F0: DIA Process Destination TP
+  Begin_Dest_Operands &gt; C3 52 01                            |CR |
+  Dest_RGN            &gt; ""
+  Begin_REN_List      &gt; C3 53 01                            |CS |
+  Dest_REN            &gt; "BENGAL"
+  Begin_DGN_List      &gt; C3 54 01                            |CT |
+  Dest_DGN            &gt; "BURMESE"
+  Begin_DEN_List      &gt; C3 55 01                            |CU |
+  Dest_DEN            &gt; "LPLESS3"
+  End_DEN_List        &gt;
+  End_DGN_List        &gt;
+  End_REN_List        &gt;
+  End_Dest_Operands   &gt;
+  Report_Correlation  &gt;
+  Report-On_Origin_DGN: "BURMESE"
+  Report-On_Origin_DEN: "LPLESS3"
+  Report-On_Seqno     : "0010"
+  Report-On_DTM       : 1998/7/31 15:0:8:18
+  Report-On_Agent_Corr: E2 A3 85 A2 A3 40 A3 96 40 81 A3 A3 |Stest to att|
+                        97 89 95 87                         |ping|
+  Begin_Reprt_DGN_List&gt; C3 54 01                            |CT |
+  Reported-On_Dest_DGN&gt; "FPTEST"
+  Begin_Reprt_DEN_List&gt; C3 55 01                            |CU |
+  Reported-On_Dest_DEN&gt; "ATTPING"
+  Spec_SNADS/DIA_Type &gt; DIA Report
+  Spec_SNADS/DIA_Conte&gt;
+  SNADS/DIA Code      : System Error / Routing Error &lt;&lt;&lt;&lt;&lt; Return code
+  End_Report_DEN_List &gt;
+  End_Report_DGN_List &gt;
+  DS_Suffix           &gt;
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbLinkAgeSearch kbLinkAge320
+Version           : :3.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

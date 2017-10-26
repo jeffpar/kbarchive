@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67223: What Does RECOVER Do? | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67223: What Does RECOVER Do?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67223/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67223/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67223/","publisher":null,"image":null,"headline":"Q67223: What Does RECOVER Do?","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67223-what-does-recover-do">Q67223: What Does RECOVER Do?</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67223
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.20,3.21,3.3,3.3a,3.x,4.01,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.01, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a file or part of a file on a disk is located on a bad sector, the RECOVER
+command is designed to retrieve the undamaged portion(s) of the file. The data
+that was in the bad sector will be gone. To recover a file named A:\MYFILE.TXT,
+type the following from the C:\DOS&gt; prompt:
+
+  " RECOVER A:\MYFILE.TXT " (without the quotation marks)
+
+If the root directory of a disk is damaged, RECOVER can also be run on an entire
+disk. DO NOT, however, run RECOVER on the entire disk unless the root directory
+IS damaged. When RECOVER is run on an entire disk drive, it assumes that the
+current root directory is damaged and useless. ALL of the files on the entire
+disk are recovered, renamed, and placed in the root directory. The entire
+subdirectory structure of the disk is destroyed by this process.
+
+Each subdirectory is converted into a file that contains the data about that
+subdirectory and is placed in the root directory as well.
+
+The root directory of a disk has a limit to the number of files it can contain,
+and on most hard disks this limit is 512. It is not always possible for all
+files to be recovered, and the nonrecovered files become lost chains. The 512
+recovered files should be copied to floppy disks and then deleted from the hard
+disk, and CHKDSK can then be used to convert the lost chains into files.
+
+The "Microsoft MS-DOS User's Reference" for versions 3.x and 4.x incorrectly
+states that RECOVER should be run if CHKDSK reports bad sectors. For more
+information on this topic and on using RECOVER on hard disks, query on the
+following words:
+
+  " ms-dos and recover and chkdsk " (without the quotation marks)
+
+Additional query words: 3.20 3.21 3.30 3.30a 4.00 4.01 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS320 kbMSDOS330a kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401
+Version           : MS-DOS:3.20,3.21,3.3,3.3a,3.x,4.01,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

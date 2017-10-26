@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138651: How to Exclude or Include Vfp300.esl File from Compression | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138651: How to Exclude or Include Vfp300.esl File from Compression" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138651/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138651/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138651/","publisher":null,"image":null,"headline":"Q138651: How to Exclude or Include Vfp300.esl File from Compression","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138651-how-to-exclude-or-include-vfp300esl-file-from-compression">Q138651: How to Exclude or Include Vfp300.esl File from Compression</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138651
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Setup Wizard is run for the first time, the "Visual FoxPro Runtime 3.0"
+check box appears unselected in the Step 2 - Optional Components screen. Select
+this check box to compress the Vfp300.esl library file that is needed to run a
+Visual FoxPro application .exe file on another computer. After you select the
+"Visual FoxPro Runtime 3.0" check box the first time, it will be selected by
+default the next time the Setup Wizard is run. The Vfp300.esl library file is
+3,713,213 bytes in size, so you may not want to compress it every time the Setup
+Wizard is run.
+
+MORE INFORMATION
+================
+
+After starting the Setup Wizard to build the disks, you can, in Step 2 -
+Optional Components, clear the "Visual FoxPro Runtime 3.0" check box. This will
+allow the Setup Wizard to build the disks much more quickly due to not having to
+compress the Vfp300.esl library file. Also, there will be fewer disks created
+due to the absence of the Vfp300.esl library file. If the user has already
+installed the disks created with the Vfp300.esl library file earlier, the file
+is already on the computer in the \Windows\System subdirectory. An .exe file
+built in Visual FoxPro automatically looks in the \Windows\System subdirectory
+for the Vfp300.esl library file. Therefore, when you send a user an update of
+your application or a second application, you don't need to include the
+Vfp300.esl library file again. All Visual FoxPro .exe files located on a
+computer can use the same Vfp300.esl library file as long as it is placed in the
+Windows\System subdirectory.
+
+Additional query words: VFoxWin performance speed faster
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

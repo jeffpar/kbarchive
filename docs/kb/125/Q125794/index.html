@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125794/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125794/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125794/","publisher":null,"image":null,"headline":"Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125794-prb-calling-cdatabaseopen-in-a-usrdll-causes-cdbexception">Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125794
+Product(s): Microsoft C Compiler
+Version(s): 1.00 1.50 1.51 1.52 | 1.00 2.00
+Operating System(s): 
+Keyword(s): kbcode kbprb
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling the CDatabase::Open function in a USRDLL and using a parameter list of
+(NULL, FALSE, FALSE, "ODBC;") may generate a CDBException with it's m_strError
+member set to a value of "Dialog failed."
+
+CAUSE
+=====
+
+When the CDatabase::Open function is called with a value of NULL for the first
+parameter and the default values for the remaining parameters, an SQL Data
+Source dialog is displayed to the user allowing them to choose the data source
+they want to open.
+
+When this is done in the context of a USRDLL, the CDBException is generated
+because CDatabase::Open() attempts to specify the main or active window of the
+CWinApp or CWinThread object as the parent of the SQL Data Source dialog. In a
+USRDLL, the main or active window of the CWinApp or CWinThread object is
+typically NULL.
+
+RESOLUTION
+==========
+
+Avoid the problem by using the main window of the calling application as the
+parent of the SQL Data Source dialog. The sample code listed below illustrates
+one way to implement this solution. The sample DLL exports one function,
+OpenDatabase(), which displays a dialog with a list of data sources. The
+OpenDatabase() function accepts a single parameter of type HWND, which is then
+used as the handle to the parent window of the SQL Data Source dialog.
+
+STATUS
+======
+
+This behavior was by design, however it was modified in Visual C++ version 2.2.
+to eliminate the problem.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /* 16-bit Compile options needed: /GD
+  *  16-bit Link options needed:    /LIB:"odbc"
+  */ 
+  #ifndef _WINDLL        // Make this work with WIN32 and WIN16
+  #define _WINDLL
+  #endif
+  #ifndef _USRDLL
+  #define _USRDLL
+  #endif
+  #include &lt;afxwin.h&gt;
+  #include &lt;afxext.h&gt;
+  #include &lt;afxdb.h&gt;
+  class MyDLL : public CWinApp
+  {
+  public:
+      BOOL InitInstance();
+  };
+  #ifdef WIN32    // Make this work with WIN32 and WIN16
+  extern "C" __declspec(dllexport) int
+  #else
+  extern "C" int _export
+  #endif
+  FAR PASCAL OpenDatabase(HWND hWndParent /* Needs a parent window */)
+  {
+      TRY
+      {
+          // Before calling MyDb.Open setup a parent window
+          AfxGetApp()-&gt;m_pMainWnd = new CWnd;
+          AfxGetMainWnd()-&gt;Attach(hWndParent);
+          CDatabase MyDb;
+          // Present list of ODBC sources
+          MyDb.Open(NULL,FALSE,FALSE,"ODBC;");
+          MyDb.Close();
+          // Clean Up
+          AfxGetMainWnd()-&gt;Detach();
+          delete AfxGetMainWnd();
+          AfxGetApp()-&gt;m_pMainWnd = NULL;
+      }
+      CATCH_ALL(e)
+      {
+          if ( AfxGetMainWnd()-&gt;GetSafeHwnd() != NULL )
+          {
+              // Clean Up
+              AfxGetMainWnd()-&gt;Detach();
+              delete AfxGetMainWnd();
+              AfxGetApp()-&gt;m_pMainWnd = NULL;
+          }
+          // Exception caused a failure
+          return FALSE;
+      }
+      END_CATCH_ALL
+      return TRUE;
+  }
+  BOOL MyDLL::InitInstance()
+  {
+      return TRUE;
+  }
+  MyDLL theDLL;
+
+Additional query words: 1.00 1.50 2.00 2.10 2.50 2.51 2.52 3.00 3.10
+
+======================================================================
+Keywords          : kbcode kbprb 
+Technology        : kbAudDeveloper kbMFC
+Version           : 1.00 1.50 1.51 1.52 | 1.00 2.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

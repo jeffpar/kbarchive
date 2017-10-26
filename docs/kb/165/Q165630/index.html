@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165630/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165630/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165630/","publisher":null,"image":null,"headline":"Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165630-ode97-files-added-to-the-disk-images-by-the-ode-setup-wizard">Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165630
+Product(s): Microsoft Access Distribution Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 01-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SUMMARY
+=======
+
+When you create a custom application using the Microsoft Office 97 Professional
+Edition Tools (ODE) Setup Wizard, some files are automatically copied to your
+disk images. These are considered to be the core files for your custom
+application. These files enable to run Microsoft Access on another computer
+without the retail version.
+
+Any other files that are added to the disk images are added so that they can
+accompany all other options you select in the Setup Wizard.
+
+For example, if you add the Microsoft Excel ISAM component to your custom
+application, the Setup Wizard will add the files needed for that component to
+your disk images.
+
+MORE INFORMATION
+================
+
+This article lists the files that are automatically copied to your disk images
+and the additional files that are added when you add files to the Add Files page
+or you add components on the Redistributable components page of the Setup
+Wizard.
+
+The following files are added automatically to the disk images created by the
+Setup Wizard program when you add the Microsoft Access run-time version and
+Workgroup Administrator components:
+
+Acmsetup.ex_
+acmsetup.hl_
+admin.IN_
+expand.exe
+Msacc8.ol_
+msacccah.dl_
+msodeusa.dl_
+mssetup.dl_
+msvcrt20.dl_
+msvcrt40.dl_
+Selfreg.dl_
+setup.exe
+setup.IN_
+setup.ini
+setup.LST
+setup.ST_
+setup.tdf
+Stdole2.tl_
+wrkgadm.ex_
+Ctl3d32.dl_
+Dao350.dl_
+Mfcans32.dl_
+Misc2.sr_
+Msjet35.dl_
+oleaut32.dl_
+mso97rt.dl_
+Msaccess.e1_
+misc.sr_
+mrt7enu.dl_
+Msacnv30.ex_
+Vba332.dl_
+Winsspi.dl_
+Dao2535.tl_
+hlink.sr_
+mso97rt.d2_
+msoffice.sr_
+Msrepl35.dl_
+Soa800.dl_
+Msaccess.e2_
+Msjint35.dl_
+Vbacv20.dl_
+wininet.dl_
+comcat.dl_
+Hlink.dl_
+Hlinkprx.dl_
+Msaccess.sr_
+Msacnv30.dl_
+Msaexp30.dl_
+Msain800.dl_
+Msjter35.dl_
+MSRDx35.DL_
+tahoma.tt_
+tahomabd.tt_
+Urlmon.dl_
+Utility.md_
+Vba3en.dl_
+W95fiber.dl_
+
+The files that follow are added to the disk images if you add a particular
+component to the Setup Wizard program.
+
+Microsoft Excel ISAM
+--------------------
+
+msexcl35.dl_
+oleaut32.dl_
+
+Paradox ISAM
+------------
+
+Mspdox35.dl_
+
+Text and HTML ISAM
+------------------
+
+mstext35.dl_
+
+Lotus ISAM
+----------
+
+Msltus35.dl_
+
+Xbase ISAM
+----------
+
+msxbse35.dl_
+
+Microsoft Graph 97 Run-Time Version Component
+---------------------------------------------
+
+gr8galry.gr_
+graph8.ol_
+scp32.dl_
+gr8409.dl_
+graph8rt.sr_
+Grintl32.ol_
+mrt7enu.dl_
+oleaut32.dl_
+Graph.ex_
+
+Replication Manager Component
+-----------------------------
+
+mstran35.ex_
+Hlink.sr_
+Hlp95en.dl_
+mfcans32.dl_
+mfcuia32.dl_
+msoffice.sr_
+msremr35.dl_
+msrpf535.dl_
+mstrai35.ex_
+replman.ex_
+rplman35.cn_
+rplman35.hl_
+vbajet32.dl_
+vbar332.dl_
+winnet.dl_
+winsspi.dl_
+
+ODBC Support with SQL Server
+----------------------------
+
+12520850.cp_
+odbcad32.ex_
+odbccp32.dl_
+odbcinst.hl_
+odbcinst.dl_
+odbckey.in_
+odbcstf.dl_
+odbctrac.dl_
+12520437.cp_
+Ctl3d32.dl_
+dbnmpntw.dl_
+drvssrvr.hl_
+ds16gt.dl_
+ds32gt.dl_
+mscpxl32.dl_
+odbc16gt.dl_
+odbc32.dl_
+odbc32gt.dl_
+odbccp32.cp_
+odbccr32.dl_
+odbcjet.hl_
+odbcji32.dl_
+odbcjt32.dl_
+odbcjtnw.hl_
+odbctl32.dl_
+oleaut32.dl_
+sqlsrv32.dl_
+
+Microsoft Exchange and Outlook ISAM
+-----------------------------------
+
+msexch35.dl_
+
+ODBCDIRECT Component
+--------------------
+
+msrdo20.dl_
+rdocurs.dl_
+
+NOTE: When you are including the ODBC or ISAM components in your custom
+application, you will also need to add the driver files for those components to
+the List Of Files box in the Setup Wizard. For more information about the driver
+files that you will need to add, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q163106 ODE97: ODBC Desktop Database Drivers Needed by ODE Setup Wizard
+
+For information about the files that will be included when you add ActiveX
+control files to your custom setup program, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q163183 ODE97: Supporting Files for ActiveX Controls in ODE
+
+For more information about files that cannot be redistributed in your run-time
+application, please see the following article in the Microsoft Knowledge Base:
+
+  Q169813 OFF97: Not All Files Can Be Distributed Using Setup Wizard
+
+REFERENCES
+==========
+
+For more information about the files that are included by the ODE Setup Wizard,
+search the ODE Help Index for "adding files to Setup Wizard."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

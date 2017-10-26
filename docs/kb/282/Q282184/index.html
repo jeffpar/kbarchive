@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/282/Q282184/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/282/Q282184/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/282/Q282184/","publisher":null,"image":null,"headline":"Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q282184-xadm-heuristic-changes-in-address-book-views-in-service-pack-4">Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q282184
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The behavior to restrict Address Book views may change after you apply Exchange
+Server 5.5 Service Pack 4 in an organization in which the heuristic bit was
+changed to restrict permissions to Address Book views as described in the
+following post Service Pack 3 Microsoft Knowledge Base Article:
+
+  Q248398 XADM: Restricting Permission to Address Book Views
+
+If you apply Service Pack 4 (SP4) to a computer running Service Pack 3 (SP3) with
+no post SP3 hotfixes installed, the heuristics bit is not set. Nevertheless, the
+default behavior is as described in the More Information section below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+MORE INFORMATION
+================
+
+The change in the behavior to restrict Address Book views is to ensure that, by
+default, the permission on the Address Book views object is not inherited by the
+site naming context.
+
+The meaning of the heuristic bit is actually reversed in Service Pack 4 from any
+earlier fixes, to accommodate this request.
+
+In more detail, if the bit is set to 1, the Address Book Views object inherits
+permissions from the site naming context. If the heuristic bit is 0 or is not
+set, the Address Book Views object does not inherit any permissions and is
+locked down to the service account unless a security descriptor has already been
+stamped on the Address Book Views object.
+
+Furthermore, if you set the heuristic bit to 1 after you apply the post Exchange
+Server 5.5 Service Pack 3 Dsamain.exe fixes that are described in Knowledge Base
+article Q248398, to lock down the permissions to either a service account or
+security descriptor, notice that the heuristic bit is changed back to 0 after
+you apply Service Pack 4.
+
+The behavior to restrict Address Book views first changed in the post Exchange
+Server 5.5 Service Pack 3 version of the Dsamain.exe file (version
+5.5.2652.11).
+
+The version of the Dsamain.exe file that is included in Exchange Server 5.5
+Service Pack 4 is 5.5.2653.17.
+
+
+Additional query words: abv mapi hierarchy dsa recalculation DS_E_INSUFFICIENT_ACCESS_RIGHTS 1055 0x80
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

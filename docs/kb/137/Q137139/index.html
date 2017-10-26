@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137139/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137139/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137139/","publisher":null,"image":null,"headline":"Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137139-howto-optimize-the-reactivation-of-in-place-active-servers">Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137139
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbCOMt kbInplaceAct kbMFC kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52, 1.52b 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an OLE container embeds an in-place active capable server, the
+deactivation/reactivation process may be considered too long. One way to
+optimize the process is to hide the server rather than deactivate it. Simply
+hiding the server will enable a faster reactivation should the embedded object
+be reactivated.
+
+MORE INFORMATION
+================
+
+Optimizing the deactivation/reactivation process for an object embedded in an
+MFC container application involves overriding the virtual
+COleClientItem::OnDeactivateUI and COleClientItem::OnActivate methods.
+
+By default, MFC OLE container applications created with versions of AppWizard
+prior to version 4.0 contain the following implementation of the
+COleClientItem::OnDeactivateUI method:
+
+     void CCntrItem::OnDeactivateUI(BOOL bUndoable)
+     {
+       COleClientItem::OnDeactivateUI(bUndoable);
+
+       // Close an in-place active item whenever it removes the user
+       // interface. The action here should match as closely as possible
+       // the handling of the ESC key in the view.
+
+       Deactivate();   // nothing fancy here -- just deactivate the object
+     }
+
+To optimize the deactivation/reactivation process, modify the AppWizard generated
+version of this function to have it invoke the embedded item's OLEIVERB_HIDE
+verb to have the item hide itself: "
+
+     void CCntrItem::OnDeactivateUI(BOOL bUndoable)
+     {
+       COleClientItem::OnDeactivateUI(bUndoable);
+
+       // Hide the object if it is not an outside-in object
+       DWORD dwMisc = 0;
+       m_lpObject-&gt;GetMiscStatus(GetDrawAspect(), &amp;dwMisc);
+       if (dwMisc &amp; OLEMISC_INSIDEOUT)
+          DoVerb(OLEIVERB_HIDE, NULL);
+     }
+
+" (without the quotation marks) The second step in optimizing the
+deactivation/reactivation process involves modifying the virtual
+COleClientItem::OnActivate method to correctly handle activation of another
+embedded object. To override COleClientItem::OnActivate, first add the following
+public method declaration to the declaration of the MFC container application's
+COleClientItem derived class: "
+
+     virtual void OnActivate();
+
+" (without the quotation marks) Add the following definition of the OnActivate
+method to the implementation file for the container's COleClientItem derived
+class: "
+
+     void CCntrItem::OnActivate()
+     {
+       // allow only one in-place active item per frame
+       CView* pView = (CView*)GetActiveView();
+       ASSERT_VALID(pView);
+       COleClientItem* pItem = GetDocument()-&gt;GetInPlaceActiveItem(pView);
+       if (pItem != NULL &amp;&amp; pItem != this)
+         pItem-&gt;Close();
+
+       COleClientItem::OnActivate();
+     }
+
+" (without the quotation marks) If the container has previously hidden an
+embedded object, this function will close it prior to activating the new item.
+Note that this optimization is similar to the technique that Microsoft Excel and
+the rich edit control use in similar circumstances.
+
+Beginning with Visual C++ version 4.0, AppWizard-generated OLE containers contain
+the optimized versions of COleClientItem::OnDeactivateUI and
+COleClientItem::OnActivate automatically. There is no need to manually add the
+changes shown above.
+
+
+Additional query words: Word embedded UIActive
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbInplaceAct kbMFC kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

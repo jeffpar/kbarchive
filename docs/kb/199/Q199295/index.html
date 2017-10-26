@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199295/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199295/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199295/","publisher":null,"image":null,"headline":"Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199295-prb-vxd-containing-constant-data-may-fail-to-load-in-windows-95">Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199295
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC500 kbVC600 kbOSWin95 kbOSWin98
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Visual C++.NET (2002), used with:
+   - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A VXD built in Visual C++ version 5.0 or later, may fail to load in the Windows
+95 or Windows 98 operating system if it contains constant data.
+
+The same VXD built with Visual C++ version 4.2 may not show this behavior.
+
+CAUSE
+=====
+
+The problem stems from differences in the way the compiler versions handle
+constant data. The 4.2 compiler erroneously grouped constant data with all other
+data. Hence, all data appeared in the LDATA section in the object.
+
+Later compilers, starting with version 5.0, correctly treat constant data as
+separate read only data and place it in the .rdata section. Because of this, the
+VXD fails to load, unable to recognize the new section.
+
+The Visual C++ .NET Linker issues an LNK4212 warning for this condition.
+
+RESOLUTION
+==========
+
+Use any one of the following two workarounds:
+
+- Add the following pragma in the source file where constant data is declared:
+
+      #pragma const_seg("_LDATA")
+
+- Add the following linker switch:
+
+      /merge:.rdata=_LDATA
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbCompiler kbVC500 kbVC600 kbOSWin95 kbOSWin98 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

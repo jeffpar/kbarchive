@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q257230: HOWTO: Display a Form in a Top-Level Form on Startup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q257230: HOWTO: Display a Form in a Top-Level Form on Startup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/257/Q257230/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/257/Q257230/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/257/Q257230/","publisher":null,"image":null,"headline":"Q257230: HOWTO: Display a Form in a Top-Level Form on Startup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q257230-howto-display-a-form-in-a-top-level-form-on-startup">Q257230: HOWTO: Display a Form in a Top-Level Form on Startup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q257230
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 28-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you attempt to automatically run a form inside a top-level form, you may find
+that you cannot run the form from the Load or Init method. Both the Load and
+Init method cause the form to appear in the Visual FoxPro screen, rather than in
+the form.
+
+Although the Activate event happens frequently during the life of a form, this is
+the best place from which to run a form on startup. You can put wrapper code
+around the call to the in-top-level form so that it only runs once.
+
+MORE INFORMATION
+================
+
+To use the code sample included in this article, follow these steps:
+
+1. Copy and then save this sample code into a program named RunSDI.prg:
+
+  *!* Adjust this line to point to your VFP 5.0 or 6.0 root directory.
+  #INCLUDE "D:\VS98\VFP98\FOXPRO.H"
+
+  LPARAMETER tcDoForm
+  PUBLIC oContainer
+
+  oContainer = CREATEOBJECT("frmContainer", tcDoForm)
+  IF TYPE("oContainer") = "O" AND NOT ISNULL(oContainer)
+     oContainer.Show()
+  ENDif
+
+  RETURN
+
+  DEFINE CLASS frmContainer AS form
+
+     AutoCenter = .T.
+     Height = 400
+     Width = 600
+     ShowWindow = 2   &amp;&amp; As Top-Level Form
+     Caption = "Top-Level Container"
+     Name = "frmContainer"
+     cDoForm = ""
+     lFormCreated = .F.
+   
+     PROCEDURE Init
+        LPARAMETER tcFormToRun
+
+        IF TYPE("tcFormToRun") != "C"
+           tcFormToRun = ""
+        ENDif
+
+        IF UPPER(RIGHT(tcFormToRun, 4)) != ".SCX"
+           tcFormToRun = tcFormToRun + ".SCX"
+        ENDif
+
+        IF FILE(tcFormToRun)
+           THIS.cDoForm = tcFormToRun
+        ELSE
+           MESSAGEBOX("File " + ALLTRIM(tcFormToRun) + ;
+              " not found.", MB_OK, "Top-Level Container")
+           RETURN .F.
+        ENDif
+     ENDproc
+
+  *!* To make your form appear inside the SDI container, run the following 
+  *!* code as is. If you want to make it appear that only one form is 
+  *!* running, comment the "loDoForm.Caption..." line below and uncomment
+  *!* the lines currently commented.
+     PROCEDURE Activate
+        LOCAL loDoForm, llLockScreen
+        
+        WITH This
+           IF NOT .lFormCreated
+              DO FORM (.cDoForm) NAME loDoForm
+             
+              llLockScreen = .LockScreen
+              .LockScreen = .T.
+              
+              lcDoForm = .cDoForm
+              loDoForm.Caption = loDoForm.Caption + ": In Top-Level"
+              
+  *!*	            loDoForm.TitleBar = 0
+  *!*	            loDoForm.BorderStyle = 0
+  *!*	            .Height = loDoForm.Height
+  *!*	            .Width = loDoForm.Width
+  *!*	            .Caption = loDoForm.Caption
+              
+              .LockScreen = llLockScreen
+              .lFormCreated = .T.
+           ENDif
+        ENDwith
+     ENDproc
+  ENDdefine 
+
+2. Create a new form with the following properties and save it as MYFORM.scx:
+
+  ShowWindow = "1 - In Top-Level Form"
+  Height = 200
+  Width = 200
+
+3. From the Visual FoxPro Command window, set the default directory to the
+  directory that contains the RunSDI.prg file.
+
+4. Type the following in the Command window and then press ENTER:
+
+  DO RunSDI.PRG WITH "MYFORM"
+
+A top-level (SDI) form with your form inside appears. Your form was run from the
+Activate event of the SDI container.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Garrett
+Fitzgerald, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

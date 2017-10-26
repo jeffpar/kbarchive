@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126016/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126016/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126016/","publisher":null,"image":null,"headline":"Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126016-multimedia-wave-error-messages-under-windows-nt-35">Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126016
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0; :1994 edition,1994-1995 edition,1995 edition; winnt:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Ancient Lands for Windows, version 1.0 
+- Microsoft Bookshelf for Windows versions 1994 edition, 1995 edition 
+- Microsoft Cinemania for Windows 1995 edition 
+- Microsoft Complete Baseball for Windows, version 1994 edition 
+- Microsoft Complete Basketball for Windows 1994-1995 edition 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are playing sounds in the Windows NT version 3.5 environment, you may
+encounter the following symptoms:
+
+- No sound in Encarta, or Bookshelf, or Dangerous Creatures.
+
+- Only title sounds in Ancient Lands, Cinemania, and Dinosaurs. No sound in the
+  tours.
+
+- Only button-click sounds in Complete Baseball and Complete Basketball.
+
+NOTE: For descriptions of additional problems, see the More Information section
+at the bottom of this article.
+
+RESOLUTION
+==========
+
+Ensure that the following drivers are in the SYSTEM32 directory:
+
+  Filename      Size      Date
+  ------------------------------
+
+  MSACM.DLL     56,704    9/4/94
+  MSACM32.DLL   82,384    9/4/94
+  MSACM32.DRV   28,960    9/4/94
+  IMAADP32.ACM  18,000    9/4/94
+  MSADP32.ACM   17,488    9/4/94
+  MSGSM32.ACM   24,768    9/4/94
+  TSSOFT32.ACM   9,760    9/4/94
+
+Also, ensure that the following lines are in the
+HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\DRIVERS32 section of the
+registry:
+
+      msacm.imaadpcm:REG_SZ:imaadp32.acm
+      msacm.msadpcm:REG_SZ:msadp32.acm
+      msacm.msgsm610:REG_SZ:msgsm32.acm
+      wavemapper:REG_SZ:msacm32.drv
+
+To check the registry, do the following:
+
+1. From the File menu in Program Manager, choose Run.
+
+2. Type the following and choose OK:
+
+  "c:\winnt35\system32\regedt32.exe" (without the quotation marks)
+
+3. Make the HKEY_LOCAL_MACHINE window active by clicking it.
+
+4. Change to the SOFTWARE\MICROSOFT\WINDOWSNT\CURRENTVERSON\DRIVERS32 directory
+  by double-clicking each respective directory.
+
+MORE INFORMATION
+================
+
+You may receive the following error message when running Encarta 1995 with
+Windows NT 3.5
+
+  Unknown problem while loading the specified device driver file
+
+  &lt;drive&gt;:\encyc95\AUDIO.M12!&lt;xxxxxxxx.WAV&gt;
+
+where &lt;drive&gt; is your CD-ROM drive and &lt;xxxxxxxx.WAV&gt; is a name such
+as T048604A.WAV. (This applies to Encarta 1995 only, NOT to Encarta 1994.)
+
+After you receive this error message, Encarta plays no sound. To correct this
+problem, do the following:
+
+1. Make sure the following entry is in HKEY_CURRENT_USER\CONTROL PANEL\IOPROCS
+  registry:
+
+  M12:REG_SZ:mvfs1232.dll
+
+2. Make sure MVFS1232.DLL is in the WINNT35\SYSTEM32 directory.
+
+Additional query words: kbhowto multi media multimedia multi-media mmtitles windowsnt winnt '94 '95 viewer MCI
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbBookshelfSearch kbBaseballSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLands kbCompleteBaseballSearch kbCompleteBasketballSearch kbBookShelf1994 kbBookShelf1995 kbCinemania1995 kbCompleteBaseball1994 kbCompleteBasketball1994 kbCompleteBasketball1995 kbDangerousCreatures kbDinosaurs100 kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac
+Version           : WINDOWS:1.0; :1994 edition,1994-1995 edition,1995 edition; winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

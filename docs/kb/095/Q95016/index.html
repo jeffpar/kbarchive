@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95016/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95016/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95016/","publisher":null,"image":null,"headline":"Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95016-profs-system-abend-155-installing-gateway-on-host">Q95016: PROFS: "System Abend 155" Installing Gateway on Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95016
+Product(s): Microsoft Mail For PC Networks
+Version(s): 2.1b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to PROFS, version 2.1b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to install the Microsoft Mail Gateway to PROFS on the MS-Gate VM ID
+on the host system fails immediately after you initiate the install command.
+When this error occurs, VM generates the following error message:
+
+  Generating National Language Support. DMS Abend 148T system abend 155 called
+  from 3020628 reason code 0000000
+
+CAUSE
+=====
+
+The abend 155 error has three major causes:
+
+- The PROFS gateway VM ID is not properly linked to the system disk that
+  contains the VM Assembler. The assembler is required to process commands in
+  several PROREXX modules used by the install program.
+
+- An assembler other than the IBM VM assembler is installed on the system. The
+  alternative assembler causes an incompatibility conflict with the IBM CONVERT
+  command in the PROREXX module of the INSTALL EXEC.
+
+- The version of the VM operating system installed on the computer is not
+  compatible with the IBM CONVERT command in the PROREXX module of the INSTALL
+  EXEC.
+
+RESOLUTION
+==========
+
+To resolve the first cause of this error, the VM administrator must give the
+MS-Gate ID access to the VM system disk that contains the assembler.
+
+To resolve the second cause of this error, the VM administrator must install the
+IBM VM assembler and give the MS-Gate ID access to it.
+
+To resolve the third cause of this error, replace the IBM CONVERT command line in
+the PROREXX module of the INSTALL EXEC with the following line:
+
+  GENCMD PROREXX ( USER OUTMODE F )
+
+Additional query words: 2.10b Installation PROREXX Assembler ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS210b
+Version           : :2.1b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

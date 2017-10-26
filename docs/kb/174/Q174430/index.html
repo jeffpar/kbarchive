@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174430/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174430/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174430/","publisher":null,"image":null,"headline":"Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174430-kids-plus-play-it-and-talk-it-missing-required-dlls">Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174430
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv kbimu kbSysSettings
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files located
+in the Windows folder.
+
+SYMPTOMS
+========
+
+After installing Plus! For Kids you are unable to run Play It! or Talk It!
+because the programs are unable to find required .dll files.
+
+CAUSE
+=====
+
+This occurs if the path to the files in the Windows registry is incorrect.
+
+The following files are associated with this problem:
+
+  Mediagal.dll - (Paint It!/Picture Picker)
+  Mmmidi16.dll - (Play It!)
+  Mmmidi32.dll - (Play It!)
+  Mnmidi32.dll - (Play It!)
+  Tibase32.dll - (Talk It!)
+  Tieng32.dll - (Talk It!)
+  Tispan32.dll - (Talk It!)
+
+RESOLUTION
+==========
+
+Use Method 1 below to resolve the problem. If Method 1 does not resolve the
+problem, use Method 2.
+
+Method 1
+--------
+
+Copy all seven of the files listed above from the Plus! For Kids compact disc to
+the Windows\System folder on your hard disk. If the program does not run after
+you have copied the files, try Method 2.
+
+
+For more information about how to copy files in Windows, please refer to your
+printed Windows documentation or online Help.
+
+Method 2
+--------
+
+If the program still does not run you will need to edit the Windows registry to
+remove the incorrect entries and resolve the problem.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editorcan be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To resolve this issue, delete the (Default) and Path Key registry entries
+contained in the following registry keys:
+
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+     \App Paths\PaintIt!.EXE
+
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+     \App Paths\PictPick.EXE
+
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+     \App Paths\PlayIt!.EXE
+
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+     \App Paths\TalkIt!.EXE
+
+When you start each of these programs, the program looks in the Windows\System
+folder to start the program and adds the missing entries to the registry.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! For Kids version
+1.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbimu kbSysSettings 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

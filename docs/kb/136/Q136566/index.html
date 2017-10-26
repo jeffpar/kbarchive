@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136566/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136566/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136566/","publisher":null,"image":null,"headline":"Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136566-how-to-use-the-declare-dll-command-to-call-win32-sdk-functions">Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136566
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to use the DECLARE-DLL command in Visual
+FoxPro to call functions that are part of the WIN32 Software Development Kit
+(SDK). The example code shows you how to use DECLARE-DLL to set up functions
+that you can use to swap the Foreground window to another application.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  * DECLARE is used to make connections to two SDK functions. It
+  * uses the keyword WIN32API for the LibraryName to tell Visual FoxPro
+  * to search for the 32-bit Windows .dll function in Kernel32.dll,
+  * Gdi32.dll, User32.dll, Mpr.dll, and Advapi32.dll.
+  *
+  * FindWindow takes two parameters and returns the HWND of the application
+  * window if found.
+
+  DECLARE INTEGER FindWindow IN WIN32API AS findw STRING,STRING
+
+  * SetForegroundWindow takes one parameter and returns true(1) or false(0)
+  * depending upon its ability to switch to the other window.
+
+  DECLARE INTEGER SetForegroundWindow IN WIN32API INTEGER
+
+  * GetFocus takes no parameters and returns the HWND
+  * of the window that currently has the focus.
+
+  DECLARE INTEGER GetFocus IN WIN32API
+
+  mynull = .NULL.       &amp;&amp; You need a NULL when you do not know the
+                        &amp;&amp; the class name of the window.
+
+  winname = "File Manager"  &amp;&amp; This should be the name of another window that
+                            &amp;&amp; is open on the Windows desktop.
+
+  * First call FindWindow to get the HWNDs for the application you want
+  * to switch to. It is important that Visual FoxPro has the focus when this
+  * is run and that you know the exact name of the window that you want to
+  * switch to. For more info Please see the Note later in this code.
+
+  foxhand= getfocus()
+  pmhand = findw(mynull,winname)
+
+  IF pmhand&lt;&gt;0   &amp;&amp; If you have an HWND, switch
+     WAIT WINDOW "Press Any Key to Switch to another window and then back;
+                  after a short interval."
+     switched = setforegroundwindow(pmhand)
+     IF switched = 1  &amp;&amp; If switched, count for a while and switch back
+        ii=1
+        DO WHILE ii&lt;50000
+           ii=ii+1
+        ENDDO
+        switched = setforegroundwindow(foxhand)
+        WAIT WINDOW "I'm back now"
+     ELSE
+        WAIT WINDOW  "Switch failed"
+     ENDIF
+  ELSE
+     WAIT WINDOW "Cannot find that window"
+  ENDIF
+
+NOTE: Under Windows NT and Windows 95, if a child window is maximized, its name
+is added to the name of the parent window in the Title Bar of the Parent Window.
+For example, when you run Microsoft Word it automatically opens an empty
+document. If this document (call it Document1), is not maximized, the title of
+the main Microsoft Word window is "Microsoft Word." If Document1 is maximized,
+the title is "Microsoft Word - Document1." In the example code, if you want to
+switch to the Microsoft Word session, set the winname variable to "Microsoft
+Word - Document1."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged…Error #05 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged…Error #05" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85737/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85737/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85737/","publisher":null,"image":null,"headline":"Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged…Error #05","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85737-alr-eisa-err-msg-emm386-unrecoverable-privilegederror-05">Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged…Error #05</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85737
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an Advanced Logic Research (ALR) EISA computer system, such as the
+PowerPro and the Business VEISA, with the Microsoft Windows 3.1 EMM386.EXE
+version 4.44 utility loaded, your system stops responding (hangs) or displays
+the following error message when you press CTRL+ALT+DEL to restart your
+computer:
+
+  EMM386:
+  Unrecoverable privileged operation error #05 press ENTER to reboot
+
+NOTE: This error also occurs when you try to load SHARE immediately after
+EMM386.EXE in the CONFIG.SYS file and you incorrectly use the
+DEVICE=C:\DOS\SHARE.EXE command instead of the correct INSTALL=C:\DOS\SHARE.EXE
+command.
+
+WORKAROUND
+==========
+
+To work around this error, use one of the following:
+
+- If you are using MS-DOS 6.0 or 6.2, add the ALTBOOT switch to the device
+  statement for EMM386.EXE in your CONFIG.SYS file. For example:
+
+  device=c:\dos\emm386.exe noems altboot
+
+  -or-
+
+- Obtain the updated ALR BIOS version 1.00.17.
+
+  -or-
+
+- Obtain a modified copy of EMM386.EXE from ALR. The version number is
+  4.35.06X. You can obtain this by calling ALR Technical Support or by
+  downloading EMM386.ZIP from ALR's bulletin board service (BBS) at (714)
+  458-6834. The following are the file details:
+
+  EMM386.EXE     91742 12-10-91   5:58p
+
+MORE INFORMATION
+================
+
+There are two versions of the ALR Business VEISA: the ASIC and the Discrete. The
+ASIC BIOS version ends with the letter "A." If you are using the Discrete
+version, you must exclude the range from E000 to EFFF.
+
+Excluding the Range
+-------------------
+
+Using EMM386.EXE in the CONFIG.SYS:
+
+       DEVICE=EMM386.EXE X=E000-EFFF
+
+Using EMMEXCLUDE statement in the [386Enh] section of the SYSTEM.INI file:
+
+       EMMEXCLUDE=E000-EFFF
+
+
+Additional query words: 3.10 3.1 3.11 #5 visa power hang lock-up warm boot lock
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138970: Configuring the NVAlert and NVRunCmd Host Code Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138970: Configuring the NVAlert and NVRunCmd Host Code Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138970/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138970/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138970/","publisher":null,"image":null,"headline":"Q138970: Configuring the NVAlert and NVRunCmd Host Code Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138970-configuring-the-nvalert-and-nvruncmd-host-code-page">Q138970: Configuring the NVAlert and NVRunCmd Host Code Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138970
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server includes the NetView Alerter (NVAlert) and NetView Run
+Command (NVRunCmd) services. The NVAlert service is used to send predefined
+Windows NT events to NetView; NVRunCmd is used to allow a NetView host operator
+to send commands to Windows NT. By default, these services use the United States
+(037) host code page.
+
+The host code page used by these services can be changed by setting the host code
+page within the SNA Server Windows NT 3270 applet. This must be done on the
+server where these services are run. The NVAlert and NVRunCmd services look for
+the 3270 emulator's configured host code page to determine the host code page to
+be used.
+
+
+MORE INFORMATION
+================
+
+The SNA Server Windows NT 3270 applet's host code page setting is configured in
+the "Host code page" listbox within the 3270 applet's Session / Session
+Configuration dialog. The following host code pages can be selected:
+
+Australia (037)
+Belgium (037)
+Canada(English) (037)
+Canada(French) (037)
+Denmark (277)
+Finland (278)
+France (297)
+Germany (273)
+International (500)
+Italy (280)
+Latin America (284)
+Netherlands (037)
+Norway (277)
+Portugal (037)
+Spain (284)
+Sweden (278)
+Switzerland(French) (500)
+Switzerland(German) (500)
+United Kingdom (285)
+United States (037)
+
+For SNA Server version 3.0, the following host code pages were added to the 3270
+applet:
+
+China (935)
+Czech Republic (870)
+Greece (423)
+Greece (875)
+Japan (English lower) (931)
+Japan (Extended Katakana) (930)
+Korea (933)
+Taiwan (937)
+
+The default host code page is United States (037). The value chosen here is
+written to the [SnaServerWin3270] section of the &lt;ntroot&gt;\WIN.INI file, in
+the "LUHostCountry=" parameter. For example:
+
+[SnaServerWin3270] LUHostCountry=Canada(French) (037)
+
+The NVAlert and NVRunCmd services look at this setting to determine the host code
+page that they should use.
+
+Additional query words: prodsna codepage
+
+======================================================================
+Keywords          : kbnetwork kbsetup sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

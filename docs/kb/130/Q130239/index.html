@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130239: PRB: Changes to SQL Remote View Aren’t Saved | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130239: PRB: Changes to SQL Remote View Aren’t Saved" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130239/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130239/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130239/","publisher":null,"image":null,"headline":"Q130239: PRB: Changes to SQL Remote View Aren’t Saved","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130239-prb-changes-to-sql-remote-view-arent-saved">Q130239: PRB: Changes to SQL Remote View Aren’t Saved</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130239
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After updating data contained in a remote view, the updates may not appear in
+the source table.
+
+CAUSE
+=====
+
+This is by design. Updates will not be sent to the source unless you specify
+that records should be updated.
+
+RESOLUTION
+==========
+
+If you are creating the view through the View Designer, click the Update
+Criteria Tab, and make sure you have selected the SEND SQL UPDATES check box.
+
+If you are creating the view in a program, use the DBSETPROP() function to set
+the SendUpdates and the UpdateType options. The following code example allows
+data changed in the view named vCustomer to be updated. Because the UpdateType
+is being reset to "2," updates occur by first deleting the existing record, and
+then adding a new record:
+
+     =DBSETPROP("vCustomer", "View", "SendUpdates", .T.)
+     =DBSETPROP("vCustomer", "View", "UpdateType", 2)
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If you want to update data contained in a remote view, execute these steps:
+
+1. Define a primary key for each server table (mymain). This is done at the data
+  source (such as SQL Server), not through Visual FoxPro. The steps will vary
+  based on the type of data source you are connecting to.
+
+2. In the View Designer Update Criteria Tab, select the Send SQL Updates check
+  box, or use DBSETPROP() to set this property in a program.
+
+3. In the View Designer Update Criteria Tab, specify which fields you want to
+  update, or specify this in a program through the UpdateFields option of the
+  DBSETPROP() function.
+
+REFERENCES
+==========
+
+For more information, please see the Visual FoxPro "Language Reference" or Help
+file for information on DBSETPROP() and the View Designer Update Criteria Tab.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

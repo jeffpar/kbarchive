@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q298158: HOW TO: Configure FrontPage Server Extensions in IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q298158: HOW TO: Configure FrontPage Server Extensions in IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/298/Q298158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/298/Q298158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/298/Q298158/","publisher":null,"image":null,"headline":"Q298158: HOW TO: Configure FrontPage Server Extensions in IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q298158-how-to-configure-frontpage-server-extensions-in-iis">Q298158: HOW TO: Configure FrontPage Server Extensions in IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q298158
+Product(s): Internet Information Server
+Version(s): 2000,5.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 08-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Server 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Install the FrontPage Server Extensions for Windows
+- Enable FrontPage Server Extensions on the System
+- Enable FrontPage Server Extensions on a Web Site
+- Troubleshooting
+
+SUMMARY
+=======
+
+This article describes how to set up and configure Microsoft FrontPage 2000
+Server Extensions to work with Internet Information Server (IIS) version 5.0.
+
+Install the FrontPage Server Extensions for Windows
+---------------------------------------------------
+
+FrontPage Server Extensions are installed and configured by default. However, if
+the user has removed FrontPage Server Extensions or chose not to install them
+when Windows was installed, follow these steps to install and configure them:
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. In Add/Remove Programs, click Add/Remove Windows Components.
+
+3. In the Components box of the Windows Components Wizard, click Internet
+  Information Services (IIS), and then click Details.
+
+  NOTE: Do not clear Internet Information Services (IIS). This will uninstall
+  IIS components.
+
+4. Under Subcomponents of Internet Information Services, select FrontPage 2000
+  Server Extensions, and then click OK.
+
+5. In the Windows Components Wizard, click Next.
+
+6. When the Windows Components Wizard completes the installation, click Finish.
+
+If you are installing to a computer with a single Web server, the FrontPage
+Server Extensions are installed in the content area of the Web server
+automatically. If the server is IIS, the initial administrator's account is your
+system administrator account.
+
+Enable FrontPage Server Extensions on the System
+------------------------------------------------
+
+1. On the Start menu, click Run, type "MMC" (without the quotation marks), and
+  then click OK.
+
+2. On the Console menu, click Add/Remove Snap-in.
+
+  NOTE: If the Console menu shows only Options, click Options and change Console
+  mode to Author mode, then click Add/Remove Snap-in on the Console menu.
+
+3. On the Standalone tab, click Add.
+
+4. Select Internet Information Services from the list and click Add, then close
+  the Add Standalone Snap-in dialog box.
+
+5. On the Standalone tab, select Internet Information Services and click the
+  Extensions tab.
+
+6. Ensure that FrontPage Server Extensions is selected in the Available
+  extensions list and click OK.
+
+7. Close the console and name it IISConsole (or another name that you can
+  remember).
+
+Enable FrontPage Server Extensions on a Web Site
+------------------------------------------------
+
+Even though the necessary software to support FrontPage is preinstalled, you must
+enable these extensions on the specific Web sites that your FrontPage content
+developers will be using.
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Internet Services Manager.
+
+  NOTE: In Administrative Tools, the IIS console is called Internet Services
+  Manager; however, when you open the console, it is called Internet
+  Information Services, also known as the IIS snap-in.
+
+2. Under Internet Information Service, expand your server (where server_name is
+  the name of your server).
+
+3. Right-click the Web site node in the Internet Services Manager console tree,
+  point to All Tasks, and select Configure Server Extensions.
+
+4. Start the Server Extensions Configuration Wizard.
+
+  NOTE: The wizard cannot create a new Web site; it can only configure a Web
+  site for FrontPage users.
+
+5. Click Next to create local Windows groups. Identify users as FrontPage
+  administrators, authors, or browsers for the selected Web site. These three
+  groups can be described as follows:
+
+   - Administrators: Members of this group can create new FrontPage Web sites,
+     change settings on the Web site, control the site authoring process,
+     author new content, and browse existing content in the site.
+
+   - Authors: Members of this group can author new content and browse existing
+     content in the site.
+
+   - Browsers: Members of this group can browse existing content in the site,
+     but cannot modify folders and files on this server.
+
+6. Click Next to specify a Windows group or user account that will be the Web
+  administrator for the selected site.
+
+7. Click Next to specify Simple Mail Transfer Protocol (SMTP) e-mail settings
+  for the site (if necessary).
+
+8. Click Finish to enable and configure FrontPage Server Extensions on the site.
+
+9. Click the Action button on the Internet Information Services toolbar.
+
+10. Select Refresh from the drop-down menu to refresh the window view. The
+  selected Web site should be populated with a whole series of virtual and
+  physical subdirectories with their associated server extension files.
+
+Troubleshooting
+---------------
+
+If you delete any of these FrontPage files or directories, the server extensions
+may not work properly.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbiisSearch kbiis500
+Version           : :2000,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

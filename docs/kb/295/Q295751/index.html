@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295751: XADM: Event 156 Appears When Using Backup Exec | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295751: XADM: Event 156 Appears When Using Backup Exec" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295751/","publisher":null,"image":null,"headline":"Q295751: XADM: Event 156 Appears When Using Backup Exec","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295751-xadm-event-156-appears-when-using-backup-exec">Q295751: XADM: Event 156 Appears When Using Backup Exec</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295751
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbnetwork kbpolicy kbExchange550
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Seagate Backup Exec version 7.0 to back up Exchange Server version
+4.x, 5.0, or 5.5, the following error message may appear on the server that you
+are backing up:
+
+  Event ID: 156
+  Source: ESE97
+  Description:
+  MSExchangeDS ((210) ) Database C:\exchsrvr\DSADATA\dir.edb needs a full backup
+  before incremental backup.
+
+Event ID 156 may also be logged in the application log, with MSExchangeIS cited
+as the source.
+
+On the server where you are performing the backup, you may receive the following
+error message:
+
+  Event ID: 57920
+  Description: An error occurred while preparing Microsoft Exchange Server
+  \\servername\Microsoft Exchange directory to backup database Exchange DS
+  database. Error code 0xc8000230. The database missed a previous full backup
+  before the incremental backup.
+
+CAUSE
+=====
+
+This behavior can occur because, in order to perform a full backup, Backup Exec
+relies on the archive bit's being set. Occasionally, Backup Exec does not reset
+the archive bit and therefore cannot perform a full backup. This is a known
+behavior with Backup Exec 7.0 and earlier versions.
+
+RESOLUTION
+==========
+
+To resolve this behavior, contact the Backup Exec vendor, Veritas, to obtain a
+fix. The fix that resolves the behavior is BNT7I725.EXE.
+
+WORKAROUND
+==========
+
+To work around this behavior, use NTBackup.exe to perform a full backup.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For information about how to contact Seagate, click the appropriate article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbnetwork kbpolicy kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

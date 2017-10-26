@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274710: XGEN: How to Remove Attachments with ExClean | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274710: XGEN: How to Remove Attachments with ExClean" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274710/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274710/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274710/","publisher":null,"image":null,"headline":"Q274710: XGEN: How to Remove Attachments with ExClean","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274710-xgen-how-to-remove-attachments-with-exclean">Q274710: XGEN: How to Remove Attachments with ExClean</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274710
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kberrmsg exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the how to use the ExClean utility to remove attachments.
+
+MORE INFORMATION
+================
+
+You may want to remove all instances of a message attachment from an Exchange
+Server 5.5 computer. For example, if there has been an outbreak of a new e-mail
+virus strain, but the antivirus vendors have not updated their signature files,
+if you are an administrator, you may need to remove an infected attachment
+completely before you restart Exchange Server. In another scenario, you may want
+to remove a classified attachment from servers to prevent further transmission
+and exposure.
+
+You can use the ExClean utility to remove attachments from the attachment table
+and quarantine transitory messages that have text that matches the attachment
+name. ExClean is not a replacement for commercial antivirus software.
+
+ExClean uses the ISScan utility to remove attachments from the attachment table
+according to the names and attachment sizes that you specify in the graphical
+user interface (GUI). ExClean also scans the Imcdata and Mtadata folders for
+data files that contain the attachment name that you specified. These files are
+moved to the ExClean subfolder of their respective data folders. As an
+administrator, you can examine the files in the subfolders to determine if those
+data files are infected with a virus, or if the files only have the attachment
+name in their contents.
+
+NOTE: Before you use ExClean, update Exchange Server 5.5 to Exchange Server 5.5
+Service Pack 4 (SP4), and install the latest version of ISScan. For more
+information about ISScan, please contact the Microsoft Product Support Services
+(PSS) at the following Microsoft Web site:
+
+  http://support.microsoft.com/support/webresponse.asp
+  (http://support.microsoft.com/support/webresponse.asp)
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q158693 XGEN: How to Obtain Exchange Server 4.0 Service Pack 4
+
+To use ExClean to remove an attachment:
+
+1. Double-click the ExClean icon, and then run the utility from the command
+  prompt. Run the program from a local drive (for example,
+  C:\&lt;Dir&gt;\Exclean), and not with a UNC name
+  (&lt;\\servername\sharepoint&gt;\exclean).
+
+  NOTE: You receive an error message if ExClean does not find Exchange Server on
+  the local computer.
+
+2. Read the introduction and click Next.
+
+3. Enter the databases that you want to scan, and then click Next.
+
+  NOTE: If a database is unavailable, a message is displayed in the Remarks box.
+
+4. Type the attachment name and a size range, and then click Next.
+
+  The size range is only used when the information store is scanned, and not
+  during the MTA and IMS scan.
+
+5. Click Finish. If the Finish button is unavailable, the Remarks section
+  contains an explanation. Use the Back button to correct any errors.
+
+ExClean verifies ISScan and store version compatibility, stops the Exchange
+Server services (if necessary), calls ISScan with parameters that are specified
+in the GUI, and then scans the Imcdata and Mtadata files for a match with the
+attachment name. If matches are found in the Imcdata or Mtadata folders, the
+utility creates subfolders and moves the suspicious files. ExClean does not
+restart any services. After ExClean is finished, a dialog box is displayed that
+reports either a success or error message. After you finish ExClean, restart the
+information store service.
+
+ExClean is available from Microsoft PSS.
+
+
+Additional query words: macro Melissa Prelissa IMS
+
+======================================================================
+Keywords          : kberrmsg exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

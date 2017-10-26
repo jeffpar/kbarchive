@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50339: Not All Extended ASCII Characters Are Mapped by QuickC Fonts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50339: Not All Extended ASCII Characters Are Mapped by QuickC Fonts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50339/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50339/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50339/","publisher":null,"image":null,"headline":"Q50339: Not All Extended ASCII Characters Are Mapped by QuickC Fonts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50339-not-all-extended-ascii-characters-are-mapped-by-quickc-fonts">Q50339: Not All Extended ASCII Characters Are Mapped by QuickC Fonts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50339
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QuickASM | mspl13_c
+Last Modified: 17-JUL-1990
+
+Problem:
+
+When I display the extended ASCII character set with a QuickC font,
+the characters do not match my chart for the characters. However, when
+I watch an array of the extended characters in the watch window, they
+are the same as my chart.
+
+Response:
+
+There are three parts to this response:
+
+1. What happens in the watch window, versions 2.00 and 2.01
+
+2. The fonts and Presentation Graphics (PG) default font in QuickC
+   version 2.00
+
+3. The fonts and PG default font in QuickC Version 2.01
+
+What Happens in the Quick Environment
+Watch Window, Versions 2.00 and 2.01
+-------------------------------------
+
+The Quick environment's watch window uses the system character set,
+not fonts. The default system character set in the United States is
+codepage 437, a table of 256 character correspondence codes. Codepage
+437 matches the IBM extended character set so the watch window
+displays the standard characters.
+
+It is possible to override the default system character set with DOS's
+command to change codepage (CHCP). However, a call to _setvideomode()
+-- required when you use fonts -- will reset the system character set
+to the default.
+
+The Fonts and PG Chart Default Font in QuickC Version 2.00
+----------------------------------------------------------
+
+The .FON files contain the ANSI character set, not the extended ASCII
+character set. They match the ASCII character set only from hex 20
+through hex 7E. When you use _outgtext() to display any of the
+extended characters, only characters from hex 20 through hex 7E will
+match your ASCII chart; for example, the function _outgtext() displays
+the ANSI characters. The function _outtext() displays the ASCII
+characters.
+
+The PG Chart default font uses a bitmap that is the same as codepage
+437. Extended characters you display with the default font will match
+the extended ASCII chart.
+
+The Fonts and PG Chart Default Font in QuickC Version 2.01
+----------------------------------------------------------
+
+The .FON files are the same as Version 2.00 .FON files. However, in
+QuickC Version 2.01, the _outgtext() function maps the ANSI character
+set onto codepage 850. Codepage 850 is a multilingual character set
+(as distinct from codepage 437, which is the U.S. character set).
+
+While not an exact match of the extended ASCII character set, codepage
+850 matches more ASCII chart characters than the ANSI character set
+does. Specifically, codepage 850 and the ASCII chart share the
+accented vowels used in European languages. When you use _outgtext()
+to display extended characters using fonts in Version 2.01, more of
+the characters will match the ASCII chart than when you use Version
+2.00. (The function _outtext() displays the ASCII characters in
+Version 2.01 as it does in Version 2.00.)
+
+In Version 2.01 the PG Chart default font maps to codepage 850
+(instead of codepage 437).
+
+The QuickC .FON files are identical to the .FON files used in the
+Microsoft Windows operating environment. You can use any fonts files
+that are compatible with Windows with QuickC. You can find more
+information on fonts in "C for Yourself," Chapter 14, "Fonts."
+
+For more information on the ANSI characters, refer to Page 152 in
+"Programming Windows," Chapter 4, "The Keyboard."
+
+You can find additional information on codepages in "The MS-DOS
+Encyclopedia."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

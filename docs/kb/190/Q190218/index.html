@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190218: HOWTO: Retrieve Settings From a Printer Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190218: HOWTO: Retrieve Settings From a Printer Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190218/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190218/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190218/","publisher":null,"image":null,"headline":"Q190218: HOWTO: Retrieve Settings From a Printer Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190218-howto-retrieve-settings-from-a-printer-driver">Q190218: HOWTO: Retrieve Settings From a Printer Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190218
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbprint kbAPI kbPrinting kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSuppo
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Basic Printer object allows you to get to many of a printer driver's
+properties, but it does not give you access to all of them. The following sample
+demonstrates how to retrieve information from a printer driver using the WIN32
+API.
+
+MORE INFORMATION
+================
+
+A printer's settings are stored in a structure called the DEVMODE. This sample
+retrieves the DEVMODE for the current default printer and displays its settings
+in a ListBox. Note that these are numeric values that must be compared to
+constants to determine their meaning. This article only includes the constants
+for the values the code actually displays. Other constants can be found in the
+REFERENCES section at the end of this article.
+
+The sample below contains two custom functions, StripNulls and ByteToString.
+StripNulls simply takes a String and removes all characters starting at the
+first Null. This is used in place of the RTrim function because in Visual Basic
+5.0, fixed-length strings are padded with Nulls instead of the spaces used in
+Visual Basic 4.0. The ByteToString function converts an array of Bytes into a
+String. The DEVMODE contains two such arrays.
+
+There are two special notes about the following sample when running under Windows
+NT. First, many monochrome drivers have their dmColor property set to 2, which
+means they report being capable of color printing, but really are not. Also,
+some settings for the "Generic / Text Only" printer driver may not be accurate
+under NT.
+
+
+Step-by-Step Example
+--------------------
+
+1. Open a new Standard EXE project. Form1 is created by default.
+
+2. Add a CommandButton and a ListBox to the Form.
+
+3. Add the following code to the Form's module:
+
+        Option Explicit
+
+        Private Const NULLPTR = 0&amp;
+        ' Constants for DEVMODE
+        Private Const CCHDEVICENAME = 32
+        Private Const CCHFORMNAME = 32
+        ' Constants for DocumentProperties
+        Private Const DM_MODIFY = 8
+        Private Const DM_COPY = 2
+        Private Const DM_IN_BUFFER = DM_MODIFY
+        Private Const DM_OUT_BUFFER = DM_COPY
+        ' Constants for dmOrientation
+        Private Const DMORIENT_PORTRAIT = 1
+        Private Const DMORIENT_LANDSCAPE = 2
+        ' Constants for dmPrintQuality
+        Private Const DMRES_DRAFT = (-1)
+        Private Const DMRES_HIGH = (-4)
+        Private Const DMRES_LOW = (-2)
+        Private Const DMRES_MEDIUM = (-3)
+        ' Constants for dmTTOption
+        Private Const DMTT_BITMAP = 1
+        Private Const DMTT_DOWNLOAD = 2
+        Private Const DMTT_DOWNLOAD_OUTLINE = 4
+        Private Const DMTT_SUBDEV = 3
+        ' Constants for dmColor
+        Private Const DMCOLOR_COLOR = 2
+        Private Const DMCOLOR_MONOCHROME = 1
+        ' Constants for dmCollate
+        Private Const DMCOLLATE_FALSE = 0
+        Private Const DMCOLLATE_TRUE = 1
+        Private Const DM_COLLATE As Long = &amp;H8000
+        ' Constants for dmDuplex
+        Private Const DM_DUPLEX = &amp;H1000&amp;
+        Private Const DMDUP_HORIZONTAL = 3
+        Private Const DMDUP_SIMPLEX = 1
+        Private Const DMDUP_VERTICAL = 2
+
+        Private Type DEVMODE
+            dmDeviceName(1 To CCHDEVICENAME) As Byte
+            dmSpecVersion As Integer
+            dmDriverVersion As Integer
+            dmSize As Integer
+            dmDriverExtra As Integer
+            dmFields As Long
+            dmOrientation As Integer
+            dmPaperSize As Integer
+            dmPaperLength As Integer
+            dmPaperWidth As Integer
+            dmScale As Integer
+            dmCopies As Integer
+            dmDefaultSource As Integer
+            dmPrintQuality As Integer
+            dmColor As Integer
+            dmDuplex As Integer
+            dmYResolution As Integer
+            dmTTOption As Integer
+            dmCollate As Integer
+            dmFormName(1 To CCHFORMNAME) As Byte
+            dmUnusedPadding As Integer
+            dmBitsPerPel As Integer
+            dmPelsWidth As Long
+            dmPelsHeight As Long
+            dmDisplayFlags As Long
+            dmDisplayFrequency As Long
+                  
+        End Type
+
+        Private Declare Function OpenPrinter Lib "winspool.drv" Alias _
+        "OpenPrinterA" (ByVal pPrinterName As String, phPrinter As Long, _
+        ByVal pDefault As Long) As Long
+
+        Private Declare Function DocumentProperties Lib "winspool.drv" _
+        Alias "DocumentPropertiesA" (ByVal hwnd As Long, _
+        ByVal hPrinter As Long, ByVal pDeviceName As String, _
+        pDevModeOutput As Any, pDevModeInput As Any, ByVal fMode As Long) _
+        As Long
+
+        Private Declare Function ClosePrinter Lib "winspool.drv" _
+        (ByVal hPrinter As Long) As Long
+
+        Private Declare Sub CopyMemory Lib "KERNEL32" Alias "RtlMoveMemory" _
+        (hpvDest As Any, hpvSource As Any, ByVal cbCopy As Long)
+
+        Function StripNulls(OriginalStr As String) As String
+           If (InStr(OriginalStr, Chr(0)) &gt; 0) Then
+              OriginalStr = Left(OriginalStr, InStr(OriginalStr, Chr(0)) - 1)
+           End If
+           StripNulls = Trim(OriginalStr)
+        End Function
+
+        Function ByteToString(ByteArray() As Byte) As String
+          Dim TempStr As String
+          Dim I As Integer
+
+          For I = 1 To CCHDEVICENAME
+              TempStr = TempStr &amp; Chr(ByteArray(I))
+          Next I
+          ByteToString = StripNulls(TempStr)
+        End Function
+
+        Function GetPrinterSettings(szPrinterName As String, hdc As Long) _
+        As Boolean
+        Dim hPrinter As Long
+        Dim nSize As Long
+        Dim pDevMode As DEVMODE
+        Dim aDevMode() As Byte
+        Dim TempStr As String
+
+          If OpenPrinter(szPrinterName, hPrinter, NULLPTR) &lt;&gt; 0 Then
+             nSize = DocumentProperties(NULLPTR, hPrinter, szPrinterName, _
+             NULLPTR, NULLPTR, 0)
+            If nSize &lt; 1 Then
+              GetPrinterSettings = False
+              Exit Function
+            End If
+            ReDim aDevMode(1 To nSize)
+            nSize = DocumentProperties(NULLPTR, hPrinter, szPrinterName, _
+            aDevMode(1), NULLPTR, DM_OUT_BUFFER)
+            If nSize &lt; 0 Then
+              GetPrinterSettings = False
+              Exit Function
+            End If
+           Call CopyMemory(pDevMode, aDevMode(1), Len(pDevMode))
+
+           List1.Clear   ' empty the ListBox
+           List1.AddItem "Printer Name: " &amp; _
+           ByteToString(pDevMode.dmDeviceName)
+
+           If pDevMode.dmOrientation = DMORIENT_PORTRAIT Then
+              TempStr = "PORTRAIT"
+           ElseIf pDevMode.dmOrientation = DMORIENT_LANDSCAPE Then
+              TempStr = "LANDSCAPE"
+           Else
+              TempStr = "UNDEFINED"
+           End If
+           List1.AddItem "Orientation: " &amp; TempStr
+
+           Select Case pDevMode.dmPrintQuality
+              Case DMRES_DRAFT
+                  TempStr = "DRAFT"
+              Case DMRES_HIGH
+                  TempStr = "HIGH"
+              Case DMRES_LOW
+                  TempStr = "LOW"
+              Case DMRES_MEDIUM
+                  TempStr = "MEDIUM"
+              Case Else   ' positive value
+                  TempStr = CStr(pDevMode.dmPrintQuality) &amp; " dpi"
+           End Select
+           List1.AddItem "Print Quality: " &amp; TempStr
+
+           Select Case pDevMode.dmTTOption
+              Case DMTT_BITMAP    ' default for dot-matrix printers
+                  TempStr = "TrueType fonts as graphics"
+              Case DMTT_DOWNLOAD  ' default for HP printers that use PCL
+                  TempStr = "Downloads TrueType fonts as soft fonts"
+              Case DMTT_SUBDEV    ' default for PostScript printers
+                  TempStr = "Substitute device fonts for TrueType fonts"
+              Case Else
+                  TempStr = "UNDEFINED"
+           End Select
+           List1.AddItem "TrueType Option: " &amp; TempStr
+
+           ' Windows NT drivers often return COLOR from Monochrome printers
+           If pDevMode.dmColor = DMCOLOR_MONOCHROME Then
+              TempStr = "MONOCHROME"
+           ElseIf pDevMode.dmColor = DMCOLOR_COLOR Then
+              TempStr = "COLOR"
+           Else
+              TempStr = "UNDEFINED"
+           End If
+           List1.AddItem "Color or Monochrome: " &amp; TempStr
+
+           If pDevMode.dmScale = 0 Then
+              TempStr = "NONE"
+           Else
+              TempStr = CStr(pDevMode.dmScale)
+           End If
+           List1.AddItem "Scale Factor: " &amp; TempStr
+
+          If pDevMode.dmFields And DM_COLLATE Then
+              If pDevMode.dmCollate = DMCOLLATE_FALSE Then
+                 TempStr = "Collating is supported, but turned off"
+              ElseIf pDevMode.dmCollate = DMCOLLATE_TRUE Then
+                 TempStr = "Collating is supported and turned on"
+              End If
+           Else
+              TempStr = "Collating is unsupported"
+           End If
+           List1.AddItem TempStr        
+           If pDevMode.dmFields And DM_DUPLEX Then
+              If pDevMode.dmDuplex = DMDUP_SIMPLEX Then
+                 TempStr = "Duplex is supported, but turned off (1)"
+              ElseIf pDevMode.dmDuplex = DMDUP_VERTICAL Then
+                 TempStr = "Duplex is set to VERTICAL (2)"
+              ElseIf pDevMode.dmDuplex = DMDUP_HORIZONTAL Then
+                 TempStr = "Duplex is set to HORIZONTAL (3)"
+              Else
+                 TempStr = "Duplex is set to undefined value of " &amp; _
+                    pDevMode.dmDuplex
+              End If
+           Else
+              TempStr = "Duplex is unsupported"
+           End If
+           List1.AddItem TempStr
+
+           List1.AddItem "Y Resolution: " &amp; pDevMode.dmYResolution &amp; " dpi"
+           List1.AddItem "Copies: " &amp; CStr(pDevMode.dmCopies)
+           ' Add any other items of interest ...
+
+           Call ClosePrinter(hPrinter)
+           GetPrinterSettings = True
+        Else
+           GetPrinterSettings = False
+        End If
+        End Function
+
+        Private Sub Command1_Click()
+        If GetPrinterSettings(Printer.DeviceName, Printer.hdc) = False Then
+           List1.AddItem "No Settings Retrieved!"
+           MsgBox "Unable to retrieve Printer settings.", , "Failure"
+        End If
+        End Sub
+
+4. Run the project and click on Command1. The current default printer's settings
+  will be displayed in the ListBox.
+
+REFERENCES
+==========
+
+To find additional constants, please search on DEVMODE in either the Win32
+Programmer's Reference or the Microsoft Developer Network (MSDN) Library CD-ROM.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbAPI kbPrinting kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

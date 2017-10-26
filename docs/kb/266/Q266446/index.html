@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/266/Q266446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/266/Q266446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/266/Q266446/","publisher":null,"image":null,"headline":"Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q266446-roaming-profiles-do-not-load-generate-errors-18-and-1009">Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q266446
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When users are required to use a roaming profile and a system policy, and the
+default computer policy is set to delete the locally cached copies of roaming
+profiles, some users may receive the following error messages when they attempt
+to log on:
+
+  "The Operating System was unable to load a locally stored profile. A new
+  profile will be created. (1009)."
+
+  "The operating system was unable to load your profile. Please contact your
+  network administrator. [18]"
+
+When you use the net helpmsg command to reveal the source of the error code, you
+receive the following information:
+
+  Error code 1009 is: "The registry database is corrupt".
+  Error code 18 is: "There are no more files".
+
+CAUSE
+=====
+
+This behavior can occur when the registry size on the workstations is too small.
+This can cause duplicate entries for the roaming profiles to be written into the
+HKEY_USERS hive.
+
+RESOLUTION
+==========
+
+IMPORTANT: This article contains information about modifying the registry.
+Before you modify the registry, make sure to back it up and make sure that you
+understand how to restore the registry if a problem occurs. For information
+about how to back up, restore, and edit the registry, click the following
+article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Log on to the computer as an Administrator or through a user account that is
+  not required to use a roaming profile.
+
+2. Remove the extraneous profiles from the registry:
+
+  a. Run Registry Editor (Regedt32).
+
+  b. Open the HKEY_USERS registry hive.
+
+  c. Delete any duplicate Security Identifier (SID) registry keys for the
+     roaming profile.
+
+     NOTE: You can find which SID matches a given user profile by looking at the
+     data for the ProfileImagePath registry value in the following registry
+     location:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows
+     NT\CurrentVersion\ProfileList\SID#
+
+  d. Quit the Registry Editor.
+
+3. Increase the size of the registry:
+
+  a. In Control Panel, double-click System.
+
+  b. Click Performance.
+
+  c. In the Virtual Memory group, click Change.
+
+  d. View the Current Registry Size and the Maximum Registry Size.
+
+  e. In the Maximum Registry Size box, type a number greater than the current
+     registry size and then click OK.
+
+  f. Click Close, and then restart your computer to effect the new settings.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

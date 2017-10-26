@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161198: FIX: Program Code Cannot Set Database Property to Null String | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161198: FIX: Program Code Cannot Set Database Property to Null String" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161198/","publisher":null,"image":null,"headline":"Q161198: FIX: Program Code Cannot Set Database Property to Null String","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161198-fix-program-code-cannot-set-database-property-to-null-string">Q161198: FIX: Program Code Cannot Set Database Property to Null String</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161198
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Database property of a cursor cannot be programmatically set to a null
+string. The Database property always shows the full path of Visual FoxPro. This
+is the same value as contained in the FULLPATH() function. The Database property
+of a cursor contained in the DataEnvironment of a form can be modified.
+
+This problem only appears in Visual FoxPro 5.0; Visual FoxPro 3.0b functions
+properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+This program creates a free table named myTable. Next, the Database property is
+set to null. Finally, WAIT WINDOW commands compare the value of the FULLPATH()
+function with the actual value of the Database property.
+
+Steps to Reproduce Problem
+--------------------------
+
+Create a program, place the following code in it, and run the program:
+
+     CREATE TABLE myTable FREE (myFld C (10))
+     * create the custom data environment object
+     xx = createobject("myDataEnv")
+
+     DEFINE CLASS myDataEnv AS DataEnvironment
+     PROCEDURE init()
+        This.AddObject("oMyCursor","myCursor")
+
+        * The database property is incorrect.
+        * It is showing the current value of FULLPATH("").
+        * The same code under Visual FoxPro 3.0 shows the null string.
+
+        WAIT WINDOW "This is the Value of FULLPATH():" ;
+        + CHR(13) + FULLPATH("") + ;
+        CHR(13) + "Press any key to continue..."
+
+        WAIT WINDOW "This is the value of the Database property :" ;
+        + CHR(13) + this.oMyCursor.Database ;
+        + CHR(13) + "Press any key to continue..."
+
+     ENDPROC
+     ENDDEFINE
+
+     DEFINE CLASS myCursor AS Cursor
+        Database = ""    &amp;&amp; Sets the Database property to empty string
+        CursorSource = "myTable"
+     ENDDEFINE
+
+In Visual FoxPro 5.0, both the FULLPATH() function and the Database property
+return the same value. In Visual FoxPro 3.0, the Database property returns an
+empty string.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

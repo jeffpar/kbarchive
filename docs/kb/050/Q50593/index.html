@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50593: Using OS/2 LAN Manager Alerts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50593: Using OS/2 LAN Manager Alerts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50593/","publisher":null,"image":null,"headline":"Q50593: Using OS/2 LAN Manager Alerts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50593-using-os2-lan-manager-alerts">Q50593: Using OS/2 LAN Manager Alerts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50593
+Product(s): Microsoft LAN Manager
+Version(s): 1.0,1.1,2.0,2.1,2.1a,2.2
+Operating System(s): 
+Keyword(s): kbfile kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LAN Manager, versions 1.0, 1.1, 2.0, 2.1, 2.1a, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the use of OS/2 LAN Manager alerts.
+
+MORE INFORMATION
+================
+
+Alerts can be a confusing subject. First, alerts function locally, not across
+the network. When a NetAlertStart() is issued, an entry in a workstation memory
+page is created. There are no entries made to the NetBios() table when an alert
+is registered.
+
+The source of most of the confusion is a server-level service called Alerter.
+This function does a number of NetAlertStart()s for the alerts it will monitor
+(admin, print, user). When an alert is generated on the server, the alerter
+service receives the local message in the mailslot associated with the alert.
+Based on the alert type, the information is reformatted as a message and
+transmitted via the NetMessageBufferSend() call.
+
+The Netpopup system is sort of a mirror image of the Alerter system. Netpopup
+registers for MESSAGE alerts. When the Messenger service receives a message, it
+raises the message alert and thus transfers the information to the Netpopup
+subsystem.
+
+In the Software/Data Library is a file named ALERTS that contains two source
+programs, ALRTMON.C and ALRTRAIS.C. ALRTMON.C establishes an alert monitor and
+ALRTRAIS.C raises an alert.
+
+You can find ALERTS.EXE,
+(http://support.microsoft.com/download/support/mslfiles/ALERTS.EXE,) a
+self-extracting file, on the following services:
+
+- Microsoft's World Wide Web Site on the Internet On the www.microsoft.com home
+  page, click the Support icon. Click Knowledge Base, and select the product.
+  Enter kbfile ALERTS.EXE, and click GO! Open the article, and click the button
+  to download the file.
+
+- Internet (anonymous FTP) ftp ftp.microsoft.com Change to the Softlib/Mslfiles
+  folder. Get ALERTS.EXE
+
+- Microsoft Download Service (MSDL) Dial (425) 936-6735 to connect to MSDL
+  Download ALERTS.EXE
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbnetwork 
+Technology        : kbAudDeveloper kbLanManSearch kbLanMan100 kbLanMan110 kbLanMan200 kbLanMan210 kbLanMan210a kbLanMan220
+Version           : :1.0,1.1,2.0,2.1,2.1a,2.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

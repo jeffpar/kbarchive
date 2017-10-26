@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115496: SMTP: Configuring the Mail Routing Host Without DNS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115496: SMTP: Configuring the Mail Routing Host Without DNS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115496/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115496/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115496/","publisher":null,"image":null,"headline":"Q115496: SMTP: Configuring the Mail Routing Host Without DNS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115496-smtp-configuring-the-mail-routing-host-without-dns">Q115496: SMTP: Configuring the Mail Routing Host Without DNS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115496
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+Mail Routing Host
+-----------------
+
+The Microsoft Mail Gateway to SMTP depends on a mail routing host in the
+TCP/IP network to route its mail. This is the host defined in the
+Administrator program under Gateway, SMTP, Setup, in the IP Address of SMTP
+Router field. The mail routing host is sometimes referred to as the smart
+host.
+
+The mail routing host routes mail in two ways:
+
+1. Domain name service (DNS)
+
+2. Hosts file, usually kept in \ETC\HOSTS
+
+For details on the DNS, see the application note "Configuring the SMTP
+Gateway and DNS" (GW0645).
+
+Hosts File Contents
+-------------------
+
+The hosts file is a flat file on the mail routing host that consists of
+two vital pieces of information: IP addresses and host domain names.
+
+The gateway computer must have an entry in the host file, and so must the
+domain names assigned to Microsoft Mail postoffices. Domain names are
+assigned in the Administrator program, under Gateway, SMTP, Address Map,
+in the SMTP domain field.
+
+For example, the entries in the hosts file for the gateway computer
+MSMAILGWY.COMPANY.COM at IP address 123.123.4.5 that has Mail postoffice
+domain names of HQ.COMPANY.COM and SALES.COMPANY.COM, would look like this:
+
+  123.123.4.5 MSMAILGWY.COMPANY.COM
+  123.123.4.5 HQ.COMPANY.COM
+  123.123.4.5 SALES.COMPANY.COM
+
+This ensures that mail addressed to SPARKY@HQ.COMPANY.COM is routed to
+the gateway computer by the SMTP host for processing by Mail.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

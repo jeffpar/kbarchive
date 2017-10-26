@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311443/","publisher":null,"image":null,"headline":"Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311443-xadm-using-findbinexe-to-find-viruses-in-the-mta">Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q311443
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Findbin.exe program to find viruses in the
+message transfer agent (MTA).
+
+MORE INFORMATION
+================
+
+You can use Findbin.exe to crawl Exchange Server message transfer agent (MTA)
+.dat files. Findbin.exe is primarily used to extract messages that may contain a
+virus.
+
+In most cases, a batch file is created for the most common types of e-mail virus
+(such as ExplorerZipWorm, ILOVEYOU, or Melissa). If a batch file is not created
+for a virus, Findbin.exe requires the following syntax (where &lt;hex_string&gt;
+is the name of the attachment that the virus uses converted to hexadecimal,
+&lt;files&gt; are the files that you want to look for, and &lt;move_folder&gt;
+is the folder that you want to move the files to):
+
+  findbin.exe [&lt;hex_string&gt;] [&lt;files&gt;] [&lt;move_folder&gt;]
+
+
+For example, if the virus always uses an attachment that is named Badvirus.vbs,
+convert the name Badvirus.vbs to hexadecimal to use as the &lt;hex_string&gt;.
+Badvirus.vbs is 62616476697275732E766273 in hexadecimal. The files that you want
+to look for in &lt;files&gt; are usually "db*.dat" (without the quotation
+marks), which are the MTA .dat files. For &lt;move_folder&gt;, choose a
+subfolder of the Mtadata folder that you want to move the files to, such as the
+Virus folder. Therefore, the command line to find Badvirus.vbs in your MTA .dat
+files and move those files to the Virus subfolder is the following:
+
+  findbin.exe 62616476697275732E766273 db*.dat VIRUS
+
+Cleaning Up a Worm Virus Attack from the Mtadata Folder
+-------------------------------------------------------
+
+1. Identify your MTA's database folder. Inspect the server's registry for the
+  MTA database path value in the following location:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeMTA\Parameters\
+
+2. Copy Findbin.exe to the Mtadata folder that you identified in step 1.
+
+3. Stop the MTA and any dependent services.
+
+4. Create a subfolder of the Mtadata folder named Virus.
+
+5. From an MS-DOS prompt or a command prompt window, run Findbin with the
+  correct syntax. It may take some time to process all of the files. When the
+  cursor returns to the MS-DOS prompt window, the files have all been
+  processed. Any files that contain the string that you specified are moved to
+  the Virus folder, and you can safely delete those files at your discretion.
+
+6. Run Mtacheck. If you do not encounter any problems, skip to step 8. If you do
+  encounter problems when you run Mtacheck, proceed to step 7.
+
+7. If you encounter any problems when you run Mtacheck, copy the files from
+  Db000002.dat through Db000026.dat from the
+  Server\Setup\&lt;platform&gt;\Bootenv folder of your Exchange Server CD-ROM
+  to the Mtadata folder that you identified in step 1. After you copy the
+  files, you need to remove the Read Only attribute from the copied files or
+  you will not be able to successfully run Mtacheck or start the MTA.
+
+  IMPORTANT: Do not overwrite the Db000001.dat file.
+
+8. Restart the MTA.
+
+9. Repeat steps 1 through 7 again if you encounter another significant backlog
+  on the MTA because of virus mail.
+
+
+Additional query words: VIRUS FINDBIN MTA MTADATA
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

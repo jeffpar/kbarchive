@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194299: PRB: RC2151 When Using MFC as a Static Link Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194299: PRB: RC2151 When Using MFC as a Static Link Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194299/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194299/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194299/","publisher":null,"image":null,"headline":"Q194299: PRB: RC2151 When Using MFC as a Static Link Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194299-prb-rc2151-when-using-mfc-as-a-static-link-library">Q194299: PRB: RC2151 When Using MFC as a Static Link Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194299
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbMFC kbResource kbResourceEd kbString kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Adding a string resource to an application that uses MFC as a static link
+library may result in the use of the same ID value twice in a STRINGTABLE
+statement. The Resource Compiler generates the following error:
+
+  RC2151 Cannot re-use string constants
+
+This problem is likely to happen when using the resource editor to add the
+string.
+
+CAUSE
+=====
+
+When using MFC as a static library in an application, MFC's resources are
+compiled into the .exe.
+
+The statement on line 26 of Afxres.rc
+
+  #ifndef _AFXDLL
+
+causes string resources defined in Afxres.h to be used in the application when
+building Afxres.rc. If an ID value of another string resource matches any of the
+ID values used in Afxres.rc, the same ID value is used twice in a STRINGTABLE
+statement.
+
+NOTE: The problem is not multiple definitions of the ID symbol, but rather, the
+use of the definition multiple times in a string table.
+
+RESOLUTION
+==========
+
+Consult both Technical Note 20 "ID Naming and Numbering Conventions" and the
+file Afxres.h to help locate ID values used by Windows or MFC. Then remove any
+entries in the string table that use ID values more than once (for example, an
+entry in the application's string table that has a ID value matching an ID value
+in Afxres.h).
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Technical Note 20 "ID Naming and Numbering Conventions" lists many of the ID
+ranges used for specific purposes. However, this article does not mention the
+possible conflict with the IDs defined in Afxres.h.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new SDI or MDI application using AppWizard that use MFC as a static
+  library.
+
+2. Add a String resource using the Resource Editor; it will have the ID
+  IDS_STRING61446, which has the value 61446 (0xF006).
+
+3. Build the application.
+
+When building the application, the following error message is generated:
+
+  error RC2151 : cannot reuse string constants, 61446(0xF006)
+
+This error is generated because AFX_IDS_UNNAMED_FILE is defined with the value of
+0xF006 in Afxres.h and is used in both the Afxres.rc file and the application's
+.rc file.
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q21569 RW2002 Error "Cannot Reuse String Constants" in RC.EXE
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Isaac
+Varon, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMFC kbResource kbResourceEd kbString kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

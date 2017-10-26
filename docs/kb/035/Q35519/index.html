@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35519: PCOPY &amp; Multiple Pages Not Supported in MS OS/2 Protected Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35519: PCOPY &amp; Multiple Pages Not Supported in MS OS/2 Protected Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35519/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35519/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35519/","publisher":null,"image":null,"headline":"Q35519: PCOPY &amp; Multiple Pages Not Supported in MS OS/2 Protected Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35519-pcopy--multiple-pages-not-supported-in-ms-os2-protected-mode">Q35519: PCOPY &amp; Multiple Pages Not Supported in MS OS/2 Protected Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35519
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# G880910-3123 docerr | mspl13_basic
+Last Modified: 2-FEB-1990
+
+Multiple video pages are not supported in the protected mode of MS
+OS/2. As stated on Page 40 of the "Microsoft BASIC Compiler 6.0:
+User's Guide" and on Page 522 of the "Microsoft BASIC 7.0:
+Programmer's Guide," the SCREEN function ignores the active and visual
+page parameters.
+
+Since multiple pages are not supported, the PCOPY function is not
+allowed in MS OS/2 protected mode. This fact needs to be added to the
+section on BASIC language changes for MS OS/2 protected mode.
+
+Through BASIC, there is no way to manipulate the video buffer directly
+in MS OS/2 protected mode. However, it can be done through the use of
+OS/2 API calls. The following API calls can be used to modify the
+video buffer:
+
+   VioGetBuf
+   VioShowBuf
+   VioGetPhysBuf
+   VioScrLock
+   VioScrUnLock
+
+The VioGetBuf function retrieves the address and length of the logical
+video buffer (LVB). The address of the buffer is returned in a long.
+The high 2 bytes are the segment and the low 2 bytes are the offset,
+as in the following example:
+
+   x = VioGetBuf(pointer, length, 0)
+   segment&amp; = pointer / &amp;H10000
+   offset&amp; = pointer MOD &amp;H10000
+
+To modify the buffer, change the segment to the segment value returned
+and use PEEK and POKE to read and modify the information. Once the
+information is changed, VioShowBuf is used to display the changes.
+
+The VioGetPhysBuf function retrieves the selector of the physical
+video buffer. The physical video buffer contains the current screen
+image. To modify the screen, change the segment to the selector
+returned and use PEEK and POKE to read and modify the screen. This
+method is faster than using VioGetBuf/VioShowBuf because you are
+directly modifying the screen.
+
+For more information about these VIO API calls, please refer to your
+OS/2 documentation. Listed below are two sample programs that use the
+methods discussed above.
+
+Code Examples
+-------------
+
+'The following program uses VioGetPhysBuf:
+DEFINT A-Z
+TYPE PhysBufData
+     bufstart AS LONG
+     buflength AS LONG
+     selector1 AS INTEGER
+     selector2 AS INTEGER
+END TYPE
+
+DECLARE FUNCTION VioGetBuf (_
+   SEG p1 AS LONG,_
+   SEG p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioShowBuf (_
+   BYVAL p1 AS INTEGER,_
+   BYVAL p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioGetPhysBuf (_
+   SEG p1 AS PhysBufData,_
+   BYVAL p2 AS INTEGER)
+
+DECLARE FUNCTION VioScrLock (_
+   BYVAL p1 AS INTEGER,_
+   SEG p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioScrUnLock (_
+   BYVAL p1 AS INTEGER)
+
+CLS
+FOR i = 1 TO 10
+    PRINT "This is a test"
+NEXT i
+DIM stuff AS PhysBufData
+x = VioScrLock(1, status, 0)
+PRINT
+PRINT "Lock Status: "; status
+stuff.bufstart = &amp;HB8000
+stuff.buflength = 43 * 80 * 2
+x = VioGetPhysBuf(stuff, 0)
+IF (x) THEN
+    PRINT "Error: "; x; " occurred."
+    END
+ELSE
+    PRINT
+    PRINT "Start: "; HEX$(stuff.bufstart)
+    PRINT "Length: "; stuff.buflength
+    PRINT "Selector1: "; stuff.selector1
+    PRINT "Selector2: "; stuff.selector2
+    PRINT
+    PRINT
+    PRINT "Enter a key to begin changing..."
+    WHILE INKEY$ = "": WEND
+    offset = 0
+    DEF SEG = stuff.selector1
+    FOR i = offset TO offset&amp; + stuff.buflength - 1 STEP 2
+       POKE i, 65     'Character
+       POKE i + 1, &amp;H17'Attribute
+    NEXT i
+    DEF SEG
+    x = VioScrUnLock(0)
+END IF
+PRINT "Enter a key to quit..."
+WHILE INKEY$ = "": WEND
+END
+
+'The following program uses VioGetBuf/VioShowBuf:
+DEFINT A-Z
+TYPE PhysBufData
+     bufstart AS LONG
+     buflength AS LONG
+     selector1 AS INTEGER
+     selector2 AS INTEGER
+END TYPE
+
+DECLARE FUNCTION VioGetBuf (_
+   SEG p1 AS LONG,_
+   SEG p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioShowBuf (_
+   BYVAL p1 AS INTEGER,_
+   BYVAL p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioGetPhysBuf (_
+   SEG p1 AS PhysBufData,_
+   BYVAL p2 AS INTEGER)
+
+DECLARE FUNCTION VioScrLock (_
+   BYVAL p1 AS INTEGER,_
+   SEG p2 AS INTEGER,_
+   BYVAL p3 AS INTEGER)
+
+DECLARE FUNCTION VioScrUnLock (_
+   BYVAL p1 AS INTEGER)
+
+CLS
+FOR i = 1 TO 10
+    PRINT "This is a test"
+NEXT i
+DIM pointer AS LONG
+DIM length AS INTEGER
+DIM handle AS INTEGER
+x = VioGetBuf(pointer, length, 0)
+segment&amp; = pointer / &amp;H10000
+offset&amp; = pointer MOD &amp;H10000
+IF (x) THEN
+    PRINT "Error: "; x; " occurred."
+    END
+ELSE
+    PRINT "POINTER = "; HEX$(pointer)
+    PRINT "LENGTH = "; length
+    PRINT
+    PRINT "SEGMENT = "; HEX$(segment&amp;)
+    PRINT "OFFSET = "; HEX$(offset&amp;)
+    PRINT
+    PRINT "Enter a key to begin changing the buffer..."
+    WHILE INKEY$ = "": WEND
+    CLS
+    DEF SEG = segment&amp;
+    FOR i = offset TO offset&amp; + length - 1 STEP 2
+      POKE i, 65     'Character
+      POKE i + 1, &amp;H17'Attribute
+    NEXT i
+    DEF SEG
+    PRINT "Enter a key to see the changes..."
+    WHILE INKEY$ = "": WEND
+    x = VioShowBuf(0, length, 0)
+END IF
+PRINT "Enter a key to quit..."
+WHILE INKEY$ = "": WEND
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

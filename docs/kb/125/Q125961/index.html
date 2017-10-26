@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125961: How to Configure Chameleon PPP Client Software for Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125961: How to Configure Chameleon PPP Client Software for Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125961/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125961/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125961/","publisher":null,"image":null,"headline":"Q125961: How to Configure Chameleon PPP Client Software for Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125961-how-to-configure-chameleon-ppp-client-software-for-windows-nt">Q125961: How to Configure Chameleon PPP Client Software for Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125961
+Product(s): Microsoft Windows NT
+Version(s): 3.5 4.0
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 4.0 
+- Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can configure NetManage's Chameleon PPP
+(Point-to-Point Protocol) client software, included with Chameleon NFS version
+4.01 and Internet Chameleon version 4.03 for Windows NT Remote Access Service
+(RAS). Please contact NetManage technical support for further assistance.
+
+MORE INFORMATION
+================
+
+To set up the Chameleon PPP client software for Windows NT, configure both the
+Chameleon installation and the Windows NT RAS server as follows:
+
+Configuring Chameleon
+---------------------
+
+1. Make sure you have Chameleon NFS version 4.01 or Internet Chameleon version
+  4.03 installed on the client computer.
+
+2. Windows NT RAS uses password authentication protocol (PAP) for password
+  authentication of third-party RAS client software. Therefore, use valid user
+  and password information that matches the Windows NT RAS server's user
+  account (Refer to Step 7 in the Windows NT Configuration below).
+
+3. Verify that the following lines are in the SLIP.INI file (used to send
+  scripts for the Chameleon PPP client software):
+
+  [PPP]
+  SCRIPT=-n
+  TYPE=PPP
+
+4. If the Windows NT RAS server is providing the IP address, select IP Address
+  from the Chameleon PPP client software Custom menu and specify the address:
+  0.0.0.0
+
+  NOTE: If you do not want Windows NT RAS server to provide the IP address, make
+  sure that you select the "Allow Remote Clients To Request A Predetermined IP
+  Address" option in Step 4 below.
+
+Configuring Windows NT
+----------------------
+
+1. Run Control Panel and choose Network. For Installed Network Software select
+  Remote Access Service. Choose the Configure button.
+
+2. In the Remote Access Setup dialog box, select the device and choose
+  Configure. For Port Usage, verify that you have selected either Receive Calls
+  Only or Dial Out And Receive Calls. Choose OK.
+
+3. In the Remote Access Setup dialog box, choose Network. In Server Settings,
+  make sure you have TCP/IP enabled for Allow Remote Clients Running. The
+  Chameleon PPP client software does not support any other PPP protocols. If
+  this is the only PPP client software, you can disable NetBEUI and IPX.
+
+4. For more network options for the Chameleon PPP client software, choose TCP/IP
+  Configure. In the RAS Server TCP/IP Configuration dialog box, you can:
+
+  - Choose to allow remote TCP/IP clients to access the Entire Network or This
+  Computer Only.
+
+  - Use DHCP to assign remote TCP/IP client addresses.
+
+  - Use a static address pool.
+
+  - Allow remote clients to request a predetermined IP address.
+
+  When you are finished with the configuration, choose OK.
+
+5. In the Network Configuration dialog box, ensure you have "Allow Any
+  Authentication Including Clear Text" selected for Encryption settings. Choose
+  OK and quit Remote Access Setup.
+
+6. Run Control Panel and select Services. Locate Remote Access Server. If it has
+  not started, select Start.
+
+7. Run Remote Access Admin. Select Permissions from the Users menu. Ensure the
+  Chameleon PPP client software users have dial-in permissions.
+
+The Chameleon product discussed here is manufactured by NetManage, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: prodnt rasadmin
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172302/","publisher":null,"image":null,"headline":"Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172302-domain-synchronization-fails-with-5730-or-5731-and-5716">Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172302
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When domain synchronization occurs at the automatic interval or when issued
+manually, you may encounter the following events:
+
+5730 - Replication of the SAM Global group (RID:0x200) from primary domain
+controller &lt;Domain name&gt; failed with the following error: cannot perform
+this operation on built-in accounts.
+
+5731 - Replication of the built-in local group (rid:0x220) from the primary
+domain controller failed with the following error: A new member could not be
+added to a local group because the member has the wrong account type.
+
+5716 - The partial synchronization replication of the SAM database from the
+primary domain controller &lt;name&gt; failed with the following error: Cannot
+perform this operation on built-in accounts.
+
+CAUSE
+=====
+
+In order to ensure an administrator's ability to manage servers in a domain,
+Windows NT Server maintains a value called AdminCount. AdminCount is a one-byte
+field that is incremented for each instance that the administrator user account
+is directly added to the Administrators local group, or indirectly made a member
+of the Administrators local group via a global group.
+
+Prior to Windows NT Server 3.51 Service Pack 4, the backup domain controller's
+(BDC) AdminCount field could sometimes get out of sync with the primary domain
+controller's (PDC) AdminCount field. Although this problem was fixed in Windows
+NT 3.51 Service Pack 4, the value was never recalculated for the BDCs in the
+domain.
+
+BDCs analyze the AdminCount field prior to removing any instances of the
+Administrator from the Administrators group. If the BDC calculates that this
+field will be less then 1 after it commits changes from the PDC synchronization,
+then you will see 5730 or 5731 events in the Event Viewer.
+
+RESOLUTION
+==========
+
+If the administrator is already a member of both the Domain Administrators and
+the Administrators group, the following steps will increment the administrator
+count on each BDC.
+
+1. Click the Start button, point to Programs, point to Administrative Tools, and
+  click User Manager for Domains.
+
+2. In User Manager for Domains, create a new global group by clicking New Global
+  Group from the User menu. Type MakeAdmin for the Group Name and AdminCount
+  Workaround for the Description.
+
+3. Double-click the MakeAdmin global group icon located in the
+  Groups/Description view pane.
+
+4. Select the Administrator user, and then click Add in the global Group
+  Properties dialog box.
+
+5. Double-click the Administrators local group icon located in the
+  Groups/Descriptions view pane.
+
+6. Click Add in the Local Group Properties dialog box.
+
+7. Select the MakeAdmin global group in the Add Users and Groups dialog box,
+  click Add, and then click OK.
+
+8. Click OK on the Local Group Properties dialog box.
+
+9. Wait for domain synchronization to complete or force a full synchronization
+  by running: NLTEST/SYNC.
+
+NOTE: The MakeAdmin Global Group must be left added to the local Administrators
+group indefinitely. If the MakeAdmin group is removed from the local
+Administrator's group, the original symptoms will resume.
+
+NOTE: If you run NLTEST /SYNC, the full synchronization can take several minutes.
+Run NLTEST /BDC_QUERY:&lt;Domain Name&gt; to check the status of the
+synchronization. NLTEST can be found on the Windows NT 4.0 Resource Kit CD.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 and 4.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt usrmgr
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

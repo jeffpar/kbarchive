@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155389/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155389/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155389/","publisher":null,"image":null,"headline":"Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155389-howto-convert-values-to-hexadecimal-format-with-xbase">Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155389
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbvfp500 kbvfp600
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro 5.0 and 6.0 allow you to convert between hexadecimal and decimal
+values using Xbase code.
+
+MORE INFORMATION
+================
+
+Visual FoxPro 5.0 and 6.0 help you easily convert between decimal and
+hexadecimal numbers. The following examples demonstrate how to gain decimal
+output from a hexadecimal number. Type the following lines in the Command
+window:
+
+     x = 0xff
+     WAIT WINDOW STR(x)
+     y = 0xefff
+     WAIT WINDOW STR(y)
+
+The WAIT WINDOW commands report the numbers 255 and 61439. The zero and the x
+(0x) in front of the hexadecimal value tells Visual FoxPro to treat the
+proceeding values as hexadecimal values.
+
+Additionally, the TRANSFORM() function has a new clause to handle hexadecimal
+conversions. The following TRANSFORM() functions demonstrate this new
+functionality. Type the following code in the Command window:
+
+     ? TRANSFORM(x,"@0")
+     ? TRANSFORM(y,"@0")
+
+The TRANSFORM() function converts the decimal values back to hexadecimal form.
+The zero (0) format code directs the TRANSFORM() function to output hexadecimal
+numbers. The output is always an eight-digit hexadecimal value preceded by 0x.
+
+While these new capabilities are easy to use, earlier versions of FoxPro do not
+have this functionality. If you need backward-compatible code that converts
+decimals to hexadecimal values, create a function within Visual FoxPro using the
+CONVERT() function.
+
+For more information about this technique, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q95717 How to Convert Decimal Numbers to Hexadecimal Numbers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

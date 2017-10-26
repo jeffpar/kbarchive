@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186403: SMS: How to Generate a PDF from an Existing SMS Package | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186403: SMS: How to Generate a PDF from an Existing SMS Package" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186403/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186403/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186403/","publisher":null,"image":null,"headline":"Q186403: SMS: How to Generate a PDF from an Existing SMS Package","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186403-sms-how-to-generate-a-pdf-from-an-existing-sms-package">Q186403: SMS: How to Generate a PDF from an Existing SMS Package</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q186403</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbPCM</span> <span class="n">smspcm</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">30</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">summarizes</span> <span class="n">the</span> <span class="n">process</span> <span class="n">that</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span> <span class="k">to</span> <span class="n">generate</span> <span class="n">a</span> <span class="k">Package</span>
+<span class="n">Definition</span> <span class="n">File</span> <span class="p">(</span><span class="n">PDF</span><span class="p">)</span> <span class="k">from</span> <span class="n">a</span> <span class="k">package</span> <span class="n">that</span> <span class="n">was</span> <span class="n">created</span> <span class="n">manually</span> <span class="k">in</span> <span class="n">Systems</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">is</span> <span class="n">useful</span> <span class="k">if</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span> <span class="n">add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">line</span>
+
+     <span class="n">SynchronousSystemExitRequired</span> <span class="p">=</span> <span class="nb">TRUE</span>
+
+<span class="k">to</span> <span class="n">an</span> <span class="n">existing</span> <span class="k">package</span> <span class="k">or</span> <span class="k">if</span> <span class="n">you</span> <span class="n">would</span> <span class="n">like</span> <span class="k">to</span> <span class="n">easily</span> <span class="n">regenerate</span> <span class="n">the</span> <span class="k">package</span> <span class="n">at</span> <span class="n">a</span>
+<span class="n">later</span> <span class="n">time</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Obtain</span> <span class="n">the</span> <span class="n">Writepdf</span><span class="p">.</span><span class="n">exe</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">is</span> <span class="n">included</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="n">Resource</span> <span class="n">Kit</span><span class="p">,</span> <span class="n">which</span> <span class="n">is</span> <span class="n">available</span> <span class="n">for</span> <span class="n">download</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span>
+<span class="n">at</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">smsmgmt</span><span class="p">/.</span>
+
+<span class="n">This</span> <span class="n">utility</span> <span class="n">will</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">generic</span> <span class="n">PDF</span> <span class="k">from</span> <span class="n">the</span> <span class="n">information</span> <span class="n">entered</span> <span class="k">in</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">setup</span><span class="p">.</span>
+
+<span class="n">Usage</span>
+<span class="p">-----</span>
+
+  <span class="n">writepdf</span><span class="p">.</span><span class="n">exe</span> <span class="p">&lt;</span><span class="n">sqlserver</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">sqlaccount</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">password</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="n">database</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">package_id</span><span class="p">&gt;</span>
+
+<span class="n">Examples</span>
+<span class="p">--------</span>
+
+  <span class="n">writepdf</span><span class="p">.</span><span class="n">exe</span> <span class="n">sqlsvr2</span> <span class="n">sa</span> <span class="n">secret</span> <span class="n">sms</span> <span class="n">sms12345</span>
+
+  <span class="k">or</span>
+
+  <span class="n">writepdf</span><span class="p">.</span><span class="n">exe</span> <span class="n">sqlsvr2</span> <span class="n">sa</span> <span class="s2">""</span> <span class="n">sms</span> <span class="n">sms12345</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">If</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">account</span> <span class="n">password</span> <span class="n">is</span> <span class="n">blank</span> <span class="k">or</span> <span class="n">contains</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">spaces</span><span class="p">,</span> <span class="n">place</span>
+<span class="n">it</span> <span class="n">within</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">will</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">PDF</span> <span class="n">file</span> <span class="k">with</span> <span class="n">the</span> <span class="n">package_id</span> <span class="k">as</span> <span class="n">the</span> <span class="n">name</span> <span class="k">in</span> <span class="n">the</span> <span class="n">current</span>
+<span class="n">directory</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Resource</span> <span class="n">Guide</span> <span class="n">Supplement</span> <span class="p">(</span><span class="n">BackOffice</span> <span class="n">Resource</span> <span class="n">Kit</span>
+<span class="n">Part</span> <span class="m">2</span><span class="p">)</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="nb">create</span> <span class="n">SynchronousSystemExitRequired</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbPCM</span> <span class="n">smspcm</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS120</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

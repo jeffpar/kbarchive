@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299273/","publisher":null,"image":null,"headline":"Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299273-upn-logon-option-does-not-work-after-you-apply-fix-from-ms01-026">Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299273
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbCOMIS kbWin2000PreSP3Fix kbWin2000sp3fix
+Last Modified: 15-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user principal name (UPN) logon option, which is documented in Microsoft
+Knowledge Base articles Q260269 and Q168908, does not work after you apply the
+fix from the Microsoft security bulletin MS01-026. The Microsoft security
+bulletin MS01-026 fix is referenced in Microsoft Knowledge Base article Q293826
+and is available from the following Microsoft Web site:
+
+  http://www.microsoft.com/technet/security/bulletin/ms01-026.asp
+
+After you apply the Microsoft security bulletin MS01-026 fix, users must
+explicitly specify the logon domain.
+
+CAUSE
+=====
+
+This problem occurs because DefaultLogonDomain parameter of backslash ("\") from
+Q168908 is no longer honored.
+
+RESOLUTION
+==========
+
+For IIS 5.0:
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date        Time    Version      Size    File name
+  --------------------------------------------------
+  05/25/2001 17:10  5.0.2195.35   332,560  Asp.dll      
+  05/25/2001 17:10  5.0.2195.36    13,584  Infoadmn.dll    
+  05/25/2001 17:10  5.0.2195.36   245,520  Infocomm.dll    
+  05/25/2001 17:10  5.0.2195.36    62,736  Isatq.dll       
+  05/25/2001 17:10  5.0.2195.35     7,440  W3ctrs.dll      
+
+
+For IIS 4.0:
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem. This fix may receive
+additional testing. Therefore, if you are not severely affected by this problem,
+Microsoft recommends that you wait for the next Microsoft Windows NT service
+pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The typical support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date         Time   Version    Size   File name
+  --------------------------------------------------------------
+  07-Jun-2001  20:09  4.2.766.1  214,544  Adsiis.dll
+  07-Jun-2001  20:09  4.2.766.1  330,672  Asp.dll
+  07-Jun-2001  20:08  4.2.766.1   55,392  Httpodbc.dll
+  07-Jun-2001  20:09  4.2.766.1   98,912  Iischema.dll
+  07-Jun-2001  20:07  4.2.766.1   63,472  Iislog.dll
+  07-Jun-2001  20:07  4.2.766.1  185,792  Infocomm.dll
+  07-Jun-2001  20:07  4.2.766.1   29,520  Iscomlog.dll
+  17-Sep-1998  19:26                 992  Rmiisupd.cmd
+  07-Jun-2001  20:08  4.2.766.1   38,256  Ssinc.dll
+  07-Jun-2001  20:08  4.2.766.1   25,360  Sspifilt.dll
+  07-Jun-2001  20:08  4.2.766.1  229,536  W3svc.dll
+  07-Jun-2001  20:08  4.2.766.1   88,032  Wam.dll
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Internet Information
+Services 5.0. This problem was first corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+NOTE: This problem will also occur after installing the Windows NT 4.0 SRP since
+it contains MS01-026.
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+For additional information about how to install Windows 2000 and Windows 2000
+hotfixes at the same time, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbCOMIS kbWin2000PreSP3Fix kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

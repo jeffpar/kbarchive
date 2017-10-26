@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235873: SMS: Specifying Preferred Servers in Systems Management Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235873: SMS: Specifying Preferred Servers in Systems Management Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235873/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235873/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235873/","publisher":null,"image":null,"headline":"Q235873: SMS: Specifying Preferred Servers in Systems Management Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235873-sms-specifying-preferred-servers-in-systems-management-server">Q235873: SMS: Specifying Preferred Servers in Systems Management Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q235873</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms200</span> <span class="n">kbsms200bug</span> <span class="n">kbSoftwareDist</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">Previously</span><span class="p">,</span> <span class="n">when</span> <span class="n">you</span> <span class="n">created</span> <span class="n">preferred</span> <span class="n">server</span> <span class="n">entries</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span> <span class="n">on</span> <span class="n">a</span>
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">client</span><span class="p">,</span> <span class="n">you</span> <span class="n">had</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">fully</span> <span class="n">qualified</span>
+<span class="n">Network</span> <span class="n">Abstraction</span> <span class="n">Layer</span> <span class="p">(</span><span class="n">NAL</span><span class="p">)</span> <span class="n">path</span> <span class="n">similar</span> <span class="k">to</span> <span class="n">the</span> <span class="n">following</span> <span class="n">text</span><span class="p">:</span>
+
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span><span class="n">CAP_zzz</span><span class="p">\</span>  <span class="p">(</span><span class="n">for</span> <span class="n">a</span> <span class="n">CAP</span><span class="p">)</span>
+  <span class="n">NWBIND</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span><span class="n">VolumeName</span><span class="p">\</span><span class="n">CAP_zzz</span><span class="p">\</span>  <span class="p">(</span><span class="n">for</span> <span class="n">a</span> <span class="n">CAP</span><span class="p">)</span>
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span><span class="n">SMSPKGx</span><span class="p">$\&lt;</span><span class="k">package</span> <span class="n">directory</span> <span class="n">name</span><span class="p">&gt;\</span> <span class="p">(</span><span class="n">for</span> <span class="n">a</span> <span class="n">Distribution</span> <span class="n">Point</span><span class="p">)</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">provided</span> <span class="n">an</span> <span class="n">update</span> <span class="n">where</span> <span class="n">NAL</span> <span class="n">has</span> <span class="n">the</span> <span class="n">ability</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">a</span>
+<span class="n">preferred</span> <span class="n">NAL</span> <span class="n">path</span> <span class="k">to</span> <span class="n">a</span> <span class="n">substring</span> <span class="n">so</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">know</span> <span class="n">the</span> <span class="n">full</span> <span class="n">NAL</span> <span class="n">path</span>
+<span class="k">in</span> <span class="n">advance</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">add</span> <span class="n">preferred</span> <span class="n">server</span> <span class="n">entries</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span> <span class="n">using</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">form</span><span class="p">:</span>
+
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span>  <span class="p">(</span><span class="n">for</span> <span class="n">a</span> <span class="n">CAP</span><span class="p">)</span>
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span> <span class="p">(</span><span class="n">for</span> <span class="n">a</span> <span class="n">Distribution</span> <span class="n">Point</span><span class="p">)</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">for</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="m">2.0</span><span class="p">.</span> <span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">following</span> <span class="n">article</span> <span class="n">number</span> <span class="k">to</span>
+<span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q236325</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Obtain</span> <span class="n">the</span> <span class="n">Latest</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">Service</span> <span class="n">Pack</span>
+
+
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">that</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span><span class="p">.</span>
+<span class="n">This</span> <span class="n">problem</span> <span class="n">was</span> <span class="n">first</span> <span class="n">corrected</span> <span class="k">in</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">Service</span> <span class="n">Pack</span>
+<span class="n">Service</span> <span class="n">Pack</span> <span class="m">1.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+
+<span class="n">The</span> <span class="n">client</span> <span class="n">files</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replicated</span> <span class="k">to</span> <span class="n">the</span> <span class="n">CAPs</span> <span class="k">and</span> <span class="n">Logon</span> <span class="n">Points</span><span class="p">.</span> <span class="n">When</span> <span class="n">this</span>
+<span class="n">occurs</span> <span class="n">the</span> <span class="n">clients</span> <span class="n">may</span> <span class="n">be</span> <span class="n">updated</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">default</span> <span class="n">Client</span> <span class="n">Configuration</span> <span class="n">Installation</span> <span class="n">Manager</span> <span class="p">(</span><span class="n">CCIM</span><span class="p">)</span> <span class="n">polling</span>
+<span class="n">interval</span> <span class="n">is</span> <span class="m">23</span> <span class="n">hours</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="n">it</span> <span class="n">may</span> <span class="n">take</span> <span class="n">up</span> <span class="k">to</span> <span class="m">23</span> <span class="n">hours</span> <span class="n">for</span> <span class="n">the</span> <span class="n">files</span> <span class="n">that</span>
+<span class="n">are</span> <span class="k">in</span> <span class="n">this</span> <span class="n">hotfix</span> <span class="k">to</span> <span class="n">be</span> <span class="n">propagated</span> <span class="k">to</span> <span class="n">the</span> <span class="n">clients</span><span class="p">.</span> <span class="k">To</span> <span class="n">speed</span> <span class="n">up</span> <span class="n">this</span> <span class="n">process</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">can</span> <span class="nf">stop</span> <span class="k">and</span> <span class="k">then</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Client</span> <span class="n">Service</span> <span class="n">on</span> <span class="n">each</span> <span class="n">client</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span>
+<span class="n">also</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">software</span> <span class="n">distribution</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Setevnt</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span> <span class="n">the</span> <span class="n">Cliutils</span><span class="p">.</span><span class="n">exe</span>
+<span class="n">Resource</span> <span class="n">Kit</span> <span class="n">tools</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="k">include</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="k">parameters</span> <span class="k">to</span> <span class="n">start</span> <span class="n">a</span> <span class="n">CCIM</span>
+<span class="n">work</span> <span class="n">cycle</span><span class="p">.</span> <span class="n">For</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">proper</span> <span class="n">syntax</span> <span class="n">for</span> <span class="n">these</span> <span class="n">tools</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span>
+<span class="n">Resource</span> <span class="n">Kit</span> <span class="n">documentation</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">preferred</span> <span class="n">server</span> <span class="n">on</span> <span class="n">a</span> <span class="n">client</span> <span class="n">computer</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">To</span> <span class="n">enable</span> <span class="n">preferred</span> <span class="n">server</span> <span class="n">selection</span><span class="p">,</span> <span class="n">at</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">key</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span>
+
+  <span class="k">and</span> <span class="n">add</span> <span class="n">the</span> <span class="n">value</span> <span class="s2">"Use Preferred Servers"</span> <span class="k">with</span> <span class="n">a</span> <span class="n">Data</span> <span class="n">Type</span> <span class="k">of</span> <span class="n">REG_DWORD</span>
+
+  <span class="n">The</span> <span class="n">REG_DWORD</span> <span class="n">Data</span> <span class="n">value</span> <span class="n">should</span> <span class="n">be</span> <span class="k">set</span> <span class="k">to</span> <span class="s2">"1"</span><span class="p">.</span>
+
+  <span class="n">Exported</span><span class="p">,</span> <span class="n">the</span> <span class="n">key</span> <span class="n">would</span> <span class="nb">read</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span><span class="p">]</span>
+  <span class="s2">"Use Preferred Servers"</span><span class="p">=</span><span class="n">dword</span><span class="p">:</span><span class="m">00000001</span>
+
+<span class="m">2.</span> <span class="k">To</span> <span class="nb">create</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">preferred</span> <span class="n">CAPs</span> <span class="k">or</span> <span class="n">DPs</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">keys</span> <span class="n">must</span>
+  <span class="n">be</span> <span class="n">created</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span><span class="p">\</span><span class="n">Preferred</span> <span class="n">AbExprtDB</span><span class="p">\</span><span class="n">CAP</span> <span class="k">List</span>
+  <span class="n">for</span> <span class="n">site</span> <span class="n">zzz</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span><span class="p">\</span><span class="n">Preferred</span> <span class="n">AbExprtDB</span><span class="p">\</span><span class="n">DP</span> <span class="k">List</span>
+  <span class="n">for</span> <span class="n">site</span> <span class="n">zzz</span>
+
+  <span class="n">where</span> <span class="n">zzz</span> <span class="p">=</span> <span class="n">site</span> <span class="n">code</span>
+
+<span class="m">3.</span> <span class="n">Under</span> <span class="n">each</span> <span class="n">key</span><span class="p">,</span> <span class="k">list</span> <span class="n">the</span> <span class="n">NAL</span> <span class="n">paths</span> <span class="n">for</span> <span class="n">each</span> <span class="n">server</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">form</span><span class="p">:</span>
+
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span>
+
+  <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Reskit</span> <span class="n">utility</span> <span class="n">PREFSERV</span> <span class="k">to</span> <span class="n">add</span> <span class="n">these</span> <span class="n">paths</span> <span class="k">to</span> <span class="n">the</span> <span class="n">registry</span><span class="p">.</span>
+  <span class="n">For</span> <span class="n">information</span> <span class="n">on</span> <span class="n">the</span> <span class="n">proper</span> <span class="n">syntax</span> <span class="k">to</span> <span class="n">use</span> <span class="k">with</span> <span class="n">this</span> <span class="n">tool</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">Resource</span>
+  <span class="n">Kit</span> <span class="n">documentation</span><span class="p">.</span>
+
+
+<span class="m">4.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">intend</span> <span class="k">to</span> <span class="n">disable</span> <span class="n">the</span> <span class="n">other</span> <span class="n">selection</span> <span class="n">methods</span> <span class="nf">wait</span> <span class="n">one</span> <span class="n">CCIM</span> <span class="n">cycle</span> <span class="n">for</span>
+  <span class="n">CCIM32</span> <span class="k">to</span> <span class="n">validate</span> <span class="n">the</span> <span class="n">preferred</span> <span class="n">CAP</span><span class="p">.</span> <span class="n">Failure</span> <span class="k">to</span> <span class="k">do</span> <span class="n">this</span> <span class="n">results</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">client</span> <span class="n">losing</span> <span class="n">its</span> <span class="n">means</span> <span class="k">of</span> <span class="n">gaining</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="n">CAP</span> <span class="k">and</span> <span class="n">its</span> <span class="n">ability</span> <span class="k">to</span>
+  <span class="n">receive</span> <span class="n">configuration</span> <span class="n">changes</span> <span class="k">and</span> <span class="n">advertisments</span> <span class="k">from</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span>
+
+  <span class="k">To</span> <span class="n">speed</span> <span class="n">up</span> <span class="n">this</span> <span class="n">CCIM</span> <span class="n">cycle</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="nf">stop</span> <span class="k">and</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span>
+  <span class="n">Server</span> <span class="n">Client</span> <span class="n">Service</span> <span class="n">on</span> <span class="n">each</span> <span class="n">client</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">software</span>
+  <span class="n">distribution</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Setevnt</span><span class="p">.</span><span class="n">exe</span> <span class="k">or</span> <span class="n">Cliutils</span><span class="p">.</span><span class="n">exe</span> <span class="n">tool</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Resource</span> <span class="n">Kit</span>
+  <span class="n">using</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="k">parameters</span> <span class="k">to</span> <span class="n">start</span> <span class="n">a</span> <span class="n">CCIM</span> <span class="n">work</span> <span class="n">cycle</span><span class="p">.</span> <span class="n">For</span> <span class="n">information</span>
+  <span class="n">on</span> <span class="n">the</span> <span class="n">proper</span> <span class="n">syntax</span> <span class="k">to</span> <span class="n">use</span> <span class="k">with</span> <span class="n">these</span> <span class="n">tools</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">Resource</span> <span class="n">Kit</span>
+  <span class="n">documentation</span><span class="p">.</span>
+
+  <span class="n">Once</span> <span class="n">CCIM32</span> <span class="n">has</span> <span class="n">valided</span> <span class="n">the</span> <span class="n">preferred</span> <span class="n">CAP</span> <span class="n">it</span> <span class="n">will</span> <span class="n">add</span> <span class="n">a</span> <span class="s2">"PREFERRED"</span> <span class="n">qualifier</span>
+  <span class="k">to</span> <span class="n">the</span> <span class="n">NAL</span> <span class="n">path</span> <span class="n">for</span> <span class="n">the</span> <span class="n">CAP</span> <span class="n">under</span> <span class="n">the</span> <span class="n">following</span> <span class="n">key</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span><span class="p">\</span><span class="n">AbExprtDB</span><span class="p">\</span><span class="n">CAP</span> <span class="k">List</span> <span class="n">for</span> <span class="n">site</span>
+  <span class="n">zzz</span>
+
+  <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">use</span> <span class="n">the</span> <span class="n">following</span> <span class="n">form</span><span class="p">:</span>
+
+  <span class="n">MSWNET</span><span class="p">:[</span><span class="s2">"SMS_SITE=zzz"</span><span class="p">,</span> <span class="s2">"PREFERRED"</span><span class="p">]\\</span><span class="n">ServerName</span><span class="p">\</span><span class="n">CAP_zzz</span>
+
+  <span class="n">you</span> <span class="n">can</span> <span class="n">disable</span> <span class="n">the</span> <span class="n">other</span> <span class="n">selection</span> <span class="n">methods</span> <span class="n">by</span> <span class="n">adding</span> <span class="n">the</span> <span class="n">Use</span> <span class="n">Existing</span>
+  <span class="n">Connections</span> <span class="p">=</span> <span class="m">0</span> <span class="p">(</span><span class="n">default</span> <span class="n">is</span> <span class="m">1</span> <span class="n">enabled</span><span class="p">)</span> <span class="k">and</span> <span class="n">Use</span> <span class="n">Random</span> <span class="n">Path</span> <span class="n">Selection</span> <span class="p">=</span> <span class="m">0</span>
+  <span class="p">(</span><span class="n">default</span> <span class="n">is</span> <span class="m">1</span> <span class="n">enabled</span><span class="p">)</span> <span class="n">values</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">key</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span> <span class="n">Exported</span> <span class="n">the</span> <span class="n">key</span> <span class="n">would</span> <span class="nb">read</span>
+  <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">CLIENT</span><span class="p">]</span>
+  <span class="s2">"Use Existing Connections"</span><span class="p">=</span> <span class="n">dword</span><span class="p">:</span><span class="m">00000000</span>
+  <span class="s2">"Use Random Path Selection"</span><span class="p">=</span> <span class="n">dword</span><span class="p">:</span><span class="m">00000000</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">advertise</span> <span class="n">a</span> <span class="k">package</span> <span class="k">to</span> <span class="n">a</span> <span class="n">client</span><span class="p">,</span> <span class="n">APM</span> <span class="n">creates</span> <span class="n">AbExprtDB</span> <span class="n">entries</span> <span class="n">on</span> <span class="n">the</span>
+<span class="n">fly</span> <span class="n">under</span> <span class="n">the</span> <span class="n">following</span> <span class="n">registry</span> <span class="n">key</span><span class="p">:</span>
+
+  <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">NAL</span><span class="p">\</span><span class="n">Client</span><span class="p">\</span><span class="n">AbExprtDB</span><span class="p">\</span><span class="n">zzz0000x</span> <span class="n">APM</span>
+
+<span class="n">This</span> <span class="n">happens</span> <span class="n">when</span> <span class="n">it</span> <span class="n">receives</span> <span class="n">the</span> <span class="n">offer</span> <span class="n">for</span> <span class="n">each</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">that</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">was</span> <span class="n">sent</span> <span class="k">to</span><span class="p">.</span> <span class="k">If</span> <span class="n">any</span> <span class="k">of</span> <span class="n">those</span> <span class="n">distribution</span> <span class="n">points</span> <span class="n">match</span> <span class="n">the</span> <span class="n">specified</span>
+<span class="n">perferred</span> <span class="n">distribution</span> <span class="n">points</span> <span class="k">then</span> <span class="n">NAL</span> <span class="n">adds</span> <span class="n">the</span> <span class="s2">"PREFERRED"</span> <span class="n">qualifier</span> <span class="k">to</span> <span class="n">that</span>
+<span class="n">server</span><span class="s1">'s NAL path in the above key and selects a preferred server to use. When
+the package has been executed APM removes these registry keys.
+
+NOTE: If the package has been distributed to only one distribution point, these
+AbExprtDB entries are not created and the preferred server specification is
+ignored.
+
+
+Additional query words: prodsms prefserv
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

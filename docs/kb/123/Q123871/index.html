@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123871/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123871/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123871/","publisher":null,"image":null,"headline":"Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123871-prb-screen-saver-applications-cannot-be-debugged-properly">Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123871
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,2000,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbOSWin2000 kbVC kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbHWx86
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 5.0, 6.0, used with:
+   - the hardware: Intel x86 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may run into problems when debugging screen saver type applications in the
+Visual C++ development environment. For example, when attempting to debug the
+SCRNSAVE application included with Visual C++ version 2.0, the program starts
+correctly, but then may fail to return control and the focus to the debugger.
+
+CAUSE
+=====
+
+This is expected behavior. Screen savers don't use the same desktop as normal
+applications. When a breakpoint in the screen saver is encountered, the
+operating system doesn't switch desktops. Thus, there may be no screen in which
+to display the Visual C++ user interface and the breakpoint is essentially
+ignored.
+
+RESOLUTION
+==========
+
+There are two possible workarounds to this problem:
+
+1. Try debugging your application without using the Always-on-Top feature. Add
+  the feature when the application is ready to be released.
+
+2. Use remote debugging. For more information on remote debugging, see the
+  "Debugging Remote Applications" section in the "Using The Debugger" chapter
+  of the "Visual C++ User's Guide," or search for "remote debugging," in the
+  Visual C++ Books Online.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Using the Visual C++ version 2.0 SCRNSAVE sample in the
+\MSVC20\SAMPLES\WIN32\SCRNSAVE directory on the distribution CD, do the
+following:
+
+1. Build the program with debug information.
+
+2. Set a breakpoint on line 73 of FRACTAL.C.
+
+3. Set /S as an option for FRACTAL.EXE. To do this, select Settings from the
+  Project menu. Then select the Debug sheet from the Settings dialog. Type "/S"
+  (without the quotation marks) on the Program Arguments line.
+
+4. Run the program by pressing the F5 key. The screen should turn black and
+  appear to hang. Bring up the Task List by pressing CTRL+ESC. Then quit Visual
+  C++ to regain control of the system.
+
+NOTE: The SCRNSAVE sample included with Visual C++ version 4.0 is entirely
+different from that of Visual C++ version 2.0; it demonstrates Control Panel
+utility library routines for managing "cpArrow" window class/spinner controls
+used in applet dialog boxes.
+
+NOTE: No screen saver sample is provided in Visual C++ .NET.
+
+Additional query words: 9.00 Always Top HWND_TOP hung frozen not responding
+
+======================================================================
+Keywords          : kbDebug kbide kbOSWin2000 kbVC kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbHWx86 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :2.0,2.1,2000,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

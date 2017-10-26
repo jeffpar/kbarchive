@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132491/","publisher":null,"image":null,"headline":"Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132491-fax-fax-gateway-stops-with-corrupt-rrsfax">Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132491
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to Fax, version 3.0.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.0.1 of Microsoft Mail Gateway to Fax can experience a critical error
+that halts the program. The critical error may be caused by a corrupt RRS.FAX
+file. The gateway screen will show the following message:
+
+  A Critical error has occurred (10:0:2:0)
+
+  Attempted operation: CREATE File affected: M:\FAX\RRS.FAX
+
+On the first attempt to restart the gateway, the following messages may occur:
+
+  A Critical error has occurred (10:0:2:0)
+
+  Database function failure
+
+A second attempt to restart results in the following message:
+
+  [&lt;time&gt;] - RRS.FAX file is corrupted
+
+  [&lt;time&gt;] - &gt;&gt;&gt; Press any key to shutdown
+
+CAUSE
+=====
+
+The errors mentioned above are the result of a corrupt RRS.FAX file.
+
+The RRS.FAX file can be corrupted under the following circumstances:
+
+- A fax message is sent with a bad phone number.
+
+- No other valid recipients are in the message.
+
+- The faxout cycle begins with more than one mail item in the fax queue.
+
+- The bad message follows a good message.
+
+The corruption is due to a failure in resetting a pointer in the RRS.FAX file.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name    Version
+  --------------------
+  Faxgtw.exe   3.0.2
+
+This hotfix has been posted to the following Internet location as Faxgy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/gateways-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to Fax
+version 3.0.1.
+
+MORE INFORMATION
+================
+
+After the sequence of events mentioned in the "Symptoms" section above, it is
+not possible to compress the RRS.FAX file. It has been renamed to TMPRRS.FAX,
+and it still contains the corruption.
+
+To recover, restore the RRS.FAX file from the installation disk. The initial
+RRS.FAX file is four 00 bytes. When the RRS.FAX file is reset, the messages in
+the FAX queue should be returned or deleted using the Microsoft Mail
+Administrator's program (ADMIN.EXE).
+
+Additional query words: 3.00.1
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3
+Version           : MS-DOS:3.0.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

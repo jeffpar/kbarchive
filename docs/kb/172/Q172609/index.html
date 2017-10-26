@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172609: FIX: /GX May Cause C1001 When Using Base Class’ Operator Delete | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172609: FIX: /GX May Cause C1001 When Using Base Class’ Operator Delete" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172609/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172609/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172609/","publisher":null,"image":null,"headline":"Q172609: FIX: /GX May Cause C1001 When Using Base Class’ Operator Delete","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172609-fix-gx-may-cause-c1001-when-using-base-class-operator-delete">Q172609: FIX: /GX May Cause C1001 When Using Base Class’ Operator Delete</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172609
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbcode kberrmsg kbCompiler kbCPPonly kbVC kbVC500bug kbVS97sp3fix
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to use a base class' operator delete, and using the /GX switch
+to enable Visual C++ Exception Handling, the following error may be generated:
+
+  
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+      (compiler file 'msc1.cpp', line 1188)
+
+CAUSE
+=====
+
+This error will be generated if the base class has a virtual function, the
+derived class uses the base class operator delete via a using declaration or an
+access declaration, and the derived class has a function prototyped to return a
+pointer to a base class, but actually returns a pointer to the derived class. An
+example can be found in the sample code below.
+
+RESOLUTION
+==========
+
+Do not use the /GX switch when attempting to use the base class operator
+delete.
+
+  -or-
+
+Implement an operator delete in the derived class that calls the base class
+operator delete.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following two samples cause an internal compiler error when built with the
+compiler's /GX switch. The second sample shows how this can occur when using
+MFC.
+
+Sample 1
+--------
+
+     // compile options: /GX /c
+     class A
+     {
+     public:
+         virtual MyFunction();
+         void operator delete(void* p);
+     };
+     class B : public A
+     {
+     public:
+         A::operator delete;
+         // using A::operator delete;
+         A* func();
+     };
+     A* B::func()
+     {
+         return new B;
+     }
+
+Sample 2
+--------
+
+     // compile options: /GX /c
+     #include "afxcoll.h"
+     class C : public CObArray
+     {
+     public:
+          CObArray::operator delete;
+          // using CObArray::operator delete;
+          DECLARE_SERIAL( C );
+     };
+     IMPLEMENT_SERIAL ( C, CObArray, 1 )
+
+Additional query words: ICE
+
+======================================================================
+Keywords          : kbcode kberrmsg kbCompiler kbCPPonly kbVC kbVC500bug kbVS97sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

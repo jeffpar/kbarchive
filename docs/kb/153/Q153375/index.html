@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153375: Failure to Modify User Accounts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153375: Failure to Modify User Accounts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153375/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153375/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153375/","publisher":null,"image":null,"headline":"Q153375: Failure to Modify User Accounts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153375-failure-to-modify-user-accounts">Q153375: Failure to Modify User Accounts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153375
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.50 3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to add a user or modify an existing user account, you receive the
+following error:
+
+  The transaction state of a registry subkey is incompatible with the requested
+  operation
+
+CAUSE
+=====
+
+This problem occurs when the %Systemroot%\Netlogon.chg file is corrupted, or has
+the read-only file attribute set.
+
+RESOLUTION
+==========
+
+To correct this problem, ensure that the read-only attribute is not set for the
+Netlogon.chg file, or delete the file. This file is located on the primary
+domain controller (PDC) and all backup domain controllers (BDCs), but is only
+used on the PDC.
+
+MORE INFORMATION
+================
+
+The Netlogon.chg file is located on the PDC and keeps track of the changes made
+to the security databases. Each change to the security databases is recorded in
+the change log along with the change serial number. The serial number is
+maintained separately for each of the three security databases. The security
+databases are actually three separate databases: the SAM Accounts database, the
+SAM Built-in database, and the LSA database. The SAM Built-in database contains
+all the default local groups installed with the system. The SAM Accounts
+database include all other SAM objects: users, global groups, site-specific
+local groups, and global security policy. The LSA database contains user rights,
+secret objects, and trusted domain objects.
+
+The Netlogon.chg file is incremented once for each change to the databases. When
+a BDC requests a particular change from the PDC, the PDC views the change log to
+determine what changes need to be sent.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+Q102717Windows NT UAS Replication (Windows NT and LAN Manager)
+
+Q173882Netlogon Synchronization Errors
+
+Additional query words: logon prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.1 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

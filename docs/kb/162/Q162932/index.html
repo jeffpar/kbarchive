@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162932/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162932/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162932/","publisher":null,"image":null,"headline":"Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162932-prb-vss-integration-dialog-box-does-not-respond-to-keyboard">Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162932
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 15-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+This article assumes that you are familiar with using the client-side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or Help topics available
+from the Visual SourceSafe menu.
+
+Visual SourceSafe integration with Microsoft Access 97 provides a user feedback
+dialog box for object status and actions that occur with the Source Code Control
+integration.
+
+This is a special dialog box that behaves differently from other option or
+message dialog boxes in the product. If you happen to click on the box or a
+message is displayed with the indication of an error when the dialog box is
+present, the dialog box may remain on the screen, overlapping the Microsoft
+Access application.
+
+The dialog box contains a Close button and a list of action items completed
+during the latest session. You cannot close the dialog box by pressing ENTER or
+ESC.
+
+CAUSE
+=====
+
+This behavior occurs because of the nature of the integration with the Source
+Code Control components of Visual SourceSafe.
+
+RESOLUTION
+==========
+
+You can only close the dialog box with the pointer or by pressing ALT+F4.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access version 97. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new database called "vssTest.mdb" (without the quotation marks).
+
+2. Create a new module called "modTest" (without the quotation marks).
+
+3. Place this database under Source Code Control by clicking SourceSafe on the
+  Tools menu, and then clicking "Add Database to SourceSafe."
+
+4. Click SourceSafe on the Tools menu, and then click Show History. This will
+  bring up two windows, the Source Code Control Results window (this is the VSS
+  Integration dialog box) as well as the History Window.
+
+5. Click the Source Code Control Results window, and press ENTER or ESC. Note
+  that nothing happens. Click the Close button in the window. Note that the
+  window closes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAccessSearch kbAccess97 kbAccess97Search
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142567/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142567/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142567/","publisher":null,"image":null,"headline":"Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142567-howto-filter-a-child-grid-using-a-parent-combo-box">Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142567
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp300b kbvfp500 kbvfp600
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a one-to-many relationship, you can filter child records displayed in a Grid
+by using the Value property of a combo box. One method is to use the
+RelationalExpr and LinkMaster properties of a grid. This article gives you
+another method, which uses a SET FILTER command along with a SELECT-SQL
+statement as the row source of a combo box.
+
+MORE INFORMATION
+================
+
+To filter the records from the child grid, use the related field from the parent
+table as the RowSource of a combo box, and use the SET FILTER command.
+
+Step-by-step Example
+--------------------
+
+1. Create a new form by typing the following command in the Command window:
+
+     CREATE FORM &lt;form name&gt;.
+
+2. Open the Data Environment, and add the Customer and Orders tables from the
+  Testdata.dbc database located in the Vfp\Samples\Data subdirectory for Visual
+  FoxPro 5.0 or home(2)+"data" for Visual FoxPro 6.0.
+
+3. From the Form menu, choose New Property, and in the Name box, type MVAR. Then
+  click OK.
+
+4. Set the Properties window to the Form1 object. The MVAR property will be
+  located at the bottom of the list on the All tab. Set the value of MVAR to
+  "". This will initalize MVAR to a Character Data Type.
+
+5. Drag the Orders table to the form to create a grid. Change the name property
+  of the grid to Grid1.
+
+6. Place a combo box on the form after selecting it from the Form Controls
+  toolbar. Type the following statement in the RowSource property for the combo
+  box:
+
+        SELECT CUST_ID FROM CUSTOMER INTO CURSOR TEMP
+
+7. Choose 3-SQL Statement in the RowSourceType property.
+
+8. Open the Code window for the combo box, and add the following code to its
+  InteractiveChange event:
+
+        SELECT ORDERS
+        THISFORM.MVAR=THIS.VALUE
+        SET FILTER TO CUST_ID = THISFORM.MVAR
+        GO TOP
+        THISFORM.Grid1.RecordSource=THISFORM.Grid1.RecordSource
+
+9. Save and run the form. When you select an item from the combo box, the grid
+  should refresh and display the related child records.
+
+NOTE: An index must exist on the filtered field from the child table to take
+advantage of the Rushmore technology.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

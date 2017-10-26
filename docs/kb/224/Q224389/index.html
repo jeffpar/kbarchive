@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224389/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224389/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224389/","publisher":null,"image":null,"headline":"Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224389-http-error-403-4034-4035-forbidden-ssl-required">Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224389
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you enable the Require Secure Channel when accessing this resource option
+or the Require 128-bit Encryption option from the IIS HTML Admin (HTMLA), the
+following error occurs when trying to access the Web site:
+
+  HTTP Error 403
+  403.4 Forbidden: SSL required
+  This error indicates that the page you are trying to access is secured with
+  Secure Sockets Layer (SSL). In order to view it, you need to enable SSL by
+  typing "https://" at the beginning of the address you are attempting to
+  reach.
+  Please contact the Web server's administrator if the problem persists.
+
+CAUSE
+=====
+
+The HTML Admin (HTMLA) incorrectly allows you to enable Require Secure Channel
+when accessing this resource and Require 128-bit Encryption before an SSL
+certificate has been mapped to the Web site. The MMC does not allow you to
+enable either of these options until an SSL certificate has been assigned to the
+Web site using Key Manager.
+
+RESOLUTION
+==========
+
+To resolve this problem, assign an SSL certificate to the Web site using the
+MMC.
+
+WORKAROUND
+==========
+
+If you do not have an SSL certificate to assign to the Web site, use the Cscript
+utility to disable these options.
+
+1. Open a CMD prompt: Click Start, click Run, and then type "cmd.exe" (without
+  quotation marks) and press the Enter key.
+
+2. Change to the Adminsamples directory by typing "CD
+  \winnt\system32\inetsrv\adminsamples" (without the quotation marks), and then
+  press the Enter key. Note: Capitalization does not matter.
+
+3. Type "cscript adsutil.vbs set w3svc/1/root/AccessSSL false" (without
+  quotation marks), and then press the Enter key. Again, capitalization does
+  not matter.
+
+4. Type "cscript adsutil.vbs set w3svc/1/root/AccessSSL128 false" (without
+  quotation marks), and then press the Enter key. Capitalization does not
+  matter.
+
+5. Close the CMD window.
+
+6. Close all browsers.
+
+7. You should now be able to access the Web site
+
+If you are still unable to access the Web site without receiving the "HTTP Error
+403" error, then it is possible that SSL is enabled at a higher level in the
+metabase hierarchy. Repeat steps 1 through 7, but execute the following Cscript
+commands instead:
+
+  cscript adsutil.vbs set w3svc/1/AccessSSL false
+  cscript adsutil.vbs set w3svc/1/AccessSSL128 false
+  cscript adsutil.vbs set w3svc/AccessSSL false
+  cscript adsutil.vbs set w3svc/AccessSSL128 false
+
+If you are still unable to access the Web site without receiving the "HTTP Error
+403" error, it is possible that SSL is enabled on a different Web site instance
+other than the first instance. Repeat steps 1 through 7, but execute the Cscript
+command with the appropriate Web site instance number. For example, if SSL is
+enabled on the third Web site instance, the following Cscript commands will
+disable SSL:
+
+  cscript adsutil.vbs set w3svc/3/AccessSSL false
+  cscript adsutil.vbs set w3svc/3/AccessSSL128 false
+
+If the above steps do not disable SSL, then please contact Microsoft Technical
+Support for assistance.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

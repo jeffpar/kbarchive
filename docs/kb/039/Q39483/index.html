@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39483/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39483/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39483/","publisher":null,"image":null,"headline":"Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39483-mac-dos-installing-a-localtalk-compatible-card-in-an-ibm-pcxt">Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39483
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 1.37,2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 1.37, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The IBM PC/XT or a PC/XT compatible uses interrupt 5 for the hard disk
+controller. To avoid conflicts, no devices installed in an XT should use
+interrupt 5. To reduce the possiblity of conflicts between other applications
+and software drivers, set the DMA (direct memory access) channel to 1; note also
+that the software interrupt should be located at address 60.
+
+MORE INFORMATION
+================
+
+The following table shows some of the common devices that might be installed in
+an XT, the interrupts used by these devices (in brackets []), and the possible
+interrupt settings for the Farallon LocalTalk card or compatible cards:
+
+Net Card  Mouse    COM1  COM2    Possible PC LocalTalk Card Settings
+--------  -----    ----  ----    -----------------------------------
+
+[2]       [2,3,4]  [4]   [3]
+
+No        No       No    No      Interrupt = 2, 3, or 4
+
+No        No       Yes   No      Interrupt = 2 or 3
+
+No        Yes      Yes   No      Interrupt = 3 with mouse interrupt=2
+                                Interrupt = 2 with mouse interrupt=3
+
+No        Yes      Yes   Yes     Interrupt = 2 requires disabling mouse
+                                Interrupt = 3 requires disabling COM2
+
+Yes       No       No    No      Interrupt = 3 or 4
+
+Yes       No       Yes   No      Interrupt = 3
+
+Yes       Yes      Yes   No      Interrupt = 3 requires disabling mouse
+                                Interrupt = 4 requires disabling COM1
+
+Yes       No       Yes   Yes     Interrupt = 2 requires disabling net
+                                              card
+                                Interrupt = 3 requires disabling COM2
+                                Interrupt = 4 requires disabling COM1
+                                              and COM2
+
+Yes       Yes      No     No     Interrupt = 3 with mouse interrupt=4
+                                Interrupt = 4 with mouse interrupt=3
+
+If you still encounter problems installing your Farallon LocalTalk card, call
+Farallon Technical Support at (415) 596-5000.
+
+Additional query words: 1.37 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN137DOS kbMailATN200DOS kbMailATN300DOS
+Version           : :1.37,2.0,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

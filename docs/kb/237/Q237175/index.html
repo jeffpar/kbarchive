@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237175/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237175/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237175/","publisher":null,"image":null,"headline":"Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237175-fix-vb-ide-improperly-changes-the-registry-of-atl-objects">Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237175
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0; winnt:6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbATL kbDLL kbide kbVBp kbVBp500bug kbVBp600bug kbVC600 kbGrpDSVB kbDSupport
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have an Active Template Library (ATL) DLL that includes a control and an
+ATL object and you create a custom marshalling DLL for both the control and the
+object, then when you reference this ATL DLL as a component in a Visual Basic
+project, the Visual Basic integrated development environment (IDE) improperly
+changes the Registry entries for the interface of the ATL object. The Registry
+entries that are changed are the Typelib and the ProxyStubClsid32 keys of the
+interface.
+
+CAUSE
+=====
+
+When a control in the Visual Basic IDE is referenced, it generates an .oca file.
+The .oca file creates a new interface ID for the control and registers the new
+interface ID in the Registry. However, at the same time, the Visual Basic IDE
+improperly changes the Registry entries for the interface of the ATL object,
+which is in the same DLL as the control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the latest service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+  Visual Studio Product Updates
+  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create an ATL DLL:
+
+1. Start Microsoft Visual C++, and, on the File menu, choose New.
+
+2. Choose ATL COM AppWizard and type "SimpleATLControl" (without the quotation
+  marks) as the project name.
+
+3. Click the Finish button.
+
+4. On the Insert menu, select New ATL Object.
+
+5. Click Simple Object, and then click Next.
+
+6. Type "SimpleATLObj" (without the quotation marks) in the Short Name box, and
+  then click OK.
+
+7. Click the Insert menu again, and then click New ATL Object.
+
+8. Choose the Controls category and click on Full Control.
+
+9. Type "SimpleATLCtl" (without the quotation marks) in the Short Name box and
+  click OK.
+
+10. Save the project.
+
+11. From the Build menu, choose Build SimpleATLControl.dll, and wait until the
+  build is finished.
+
+12. Open a Command Prompt window and browse to the SimpleATLControl project
+  folder.
+
+13. Type the following command and press Return:
+
+  NMake SimpleATLControlps.mk /all
+
+  Wait until the build is finished, and note that the SimpleATLControlps.dll is
+  generated.
+
+  NOTE: If this command line generates an error, you may need to run the
+  Vcvars32.bat file from the Visual C++ BIN directory to set the compiler
+  environment variables.
+
+14. Register SimpleATLControlps.dll by using the regsvr32 utility with a command
+  line, such as:
+
+regsvr32.exe &lt;path&gt;\SimpleATLControlps.dll
+
+15. Run the OleView utility, expand Interfaces, and look at these two
+  interfaces:
+
+   - ISimpleATLObj
+   - ISimpleATLCtl
+
+16. You may see the following:
+
+   - The Typelib key for both interfaces refers to SimpleATLControl.dll.
+   - The ProxyStubClsid32 key for both interfaces points to PSFactoryBuffer
+     class in SimpleATLControlps.dll.
+
+Create a Visual Basic Client:
+
+1. Start a Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. From the Project menu, select Components, select SimpleATLControl 1.0 Type
+  Library, and then click OK.
+
+3. Locate the OleView utility, and, from the View menu, select Refresh.
+
+4. Look at the following two interfaces again:
+
+   - ISimpleATLObj
+   - ISimpleATLCtl
+
+  Note that another interface with the same name (ISimpleATLCtl) is generated by
+  the Visual Basic IDE and that the Typelib key points to SimpleATLControl.oca.
+
+5. However, if you look at the interface ISimpleATLObj, you find two changes:
+
+   - The Typelib key is changed to SimpleATLControl.oca.
+   - The ProxyStubClsid32 key is changed to PSOAInterface in oleaut32.dll.
+
+These two changes are not proper because the Visual Basic IDE does not generate a
+new interface ID for ISimpleATLObj, but it changes its Typelib and
+ProxyStubClsid32 Registry entries. These changes would break existing programs
+that are using the custom marshalling DLL SimpleATLControlps.dll.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbActiveX kbATL kbDLL kbide kbVBp kbVBp500bug kbVBp600bug kbVC600 kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVC600 kbVC32bitSearch
+Version           : WINDOWS:5.0,6.0; winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

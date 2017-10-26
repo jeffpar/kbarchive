@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135398: HOWTO: Write to the Windows Registry Using API Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135398: HOWTO: Write to the Windows Registry Using API Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135398/","publisher":null,"image":null,"headline":"Q135398: HOWTO: Write to the Windows Registry Using API Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135398-howto-write-to-the-windows-registry-using-api-calls">Q135398: HOWTO: Write to the Windows Registry Using API Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135398
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600
+Last Modified: 28-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can write information directly to the Windows 95, Windows NT, or Win32
+Registry. The Windows Registry is the suggested place for 32-bit applications to
+store application information. Previous versions of Windows used .INI files for
+this purpose. This article gives a brief description of the Windows Registry and
+the steps necessary to write information to it programatically.
+
+MORE INFORMATION
+================
+
+The following information comes from Chapter 10 of the Windows NT Resource Kit:
+
+  The Registry is analogous to the .INI files used under Windows 3.1, with each
+  key in the Registry similar to a bracketed heading in an .INI file, and
+  entries under the heading similar to values in the Registry. However,
+  Registry keys can contain subkeys, while .INI files do not support nested
+  headings. Registry values can also consist of executable code, rather than
+  the simple strings representing values in .INI files. And individual
+  preferences for multiple users of the same computer can be stored in the
+  Registry, which is not possible with .INI files.
+
+Windows NT Registry
+-------------------
+
+The Registry is a database of keys and values. The Windows NT Registry contains
+four primary keys:
+
+HKEY_CLASSES_ROOT   - File associations and DDE/OLE actions.
+
+HKEY_LOCAL_MACHINE  - Global information on the state of the local
+                     computer.
+
+HKEY_USERS          - Configuration information about each individual user
+                     of the computer and the DEFAULT entry.
+
+HKEY_CURRENT_USER   - specific key within HKEY_USERS that stores
+                     information for the currently active user.
+
+Windows 95 Registry
+-------------------
+
+Windows 95 adds a couple more primary keys:
+
+HKEY_CURRENT_CONFIG - Hardware configuration for devices currently attached
+                     and installed on the computer.
+
+HKEY_DYN_DATA       - System Monitor data for performance settings and
+                     statistics.
+
+It is good idea for applications to store version specific information in the
+HKEY_LOCAL_MACHINE\SOFTWARE branch in this format:
+
+  SOFTWARE\Vendor\product\version
+
+The example code in this article shows one way to register an application name
+and version.
+
+Win32s Registry
+---------------
+
+The Win32s Registry is limited to only one hive, HKEY_CLASSES_ROOT, and all keys
+are children of that hive. Any information placed in the Win32s Registry should
+be placed in a child key of HKEY_CLASSES_ROOT instead of HKEY_CLASSES_ROOT (used
+in Windows 95 and Windows NT).
+
+Sample Code
+-----------
+
+The following code illustrate the ability to create a new registry key by using
+the Windows API RegCreateKeyEx() and to assign a value to that key by using
+RegSetValueEx. These 32bit functions are first prototyped using the DECLARE
+command; then they are available to be called directly. For more information,
+please search for DECLARE - DLL in the Help menu.
+
+NOTE: Some constants are declared with definitions taken from the appropriate
+Microsoft Visual C++ header files.
+
+  * REGISTRY.PRG
+  * This code writes information to the HKEY_LOCAL_MACHINE\SOFTWARE key.
+  * It creates a key called MYAPPS, and a value name called AppName that
+  * contains the value "SuperApp 1.0"
+
+  PUBLIC RESULT,DISPLAY
+  RESULT=0
+  DISPLAY=0
+  #DEFINE HKEY_LOCAL_MACHINE 2147483650   &amp;&amp; (HKEY) 0x80000002
+  #DEFINE SECURITY_ACCESS_MASK 983103     &amp;&amp; SAM value KEY_ALL_ACCESS
+
+  DECLARE RegCreateKeyEx IN ADVAPI32.DLL;
+  INTEGER,STRING,INTEGER,STRING,INTEGER,INTEGER,INTEGER,INTEGER @, INTEGER @
+  DECLARE RegSetValueEx IN ADVAPI32.DLL;
+  INTEGER,STRING,INTEGER,INTEGER,STRING,INTEGER
+
+  ?RegCreateKeyEx(HKEY_LOCAL_MACHINE,"SOFTWARE\MYAPPS",0,"REG_SZ",;
+  0,SECURITY_ACCESS_MASK,0,@RESULT,@DISPLAY)  &amp;&amp; Returns .T. if successful
+  ?RESULT                                     &amp;&amp; Returns the key handle
+  ?DISPLAY                                    &amp;&amp; Returns one of 2 values:
+                                              &amp;&amp; REG_CREATE_NEW_KEY = 1
+                                              &amp;&amp; REG_OPENED_EXISTING_KEY = 2
+  ?RegSetValueEx(RESULT,"AppName",0,1,"SuperApp 1.0",13)
+
+Notes
+-----
+
+You can run the Registry Editor to see the registry interface and check that your
+key was created successfully in the HKEY_LOCAL_MACHINE\SOFTWARE section. In
+Windows NT, you can find it in the Winnt\System32\regedt32.exe directory. In
+Windows 95, you can find it in the Win95\Regedit.exe directory.
+
+For more information, please see the Win32API Help file shipped with Visual
+FoxPro. Search for RegCreateKeyEx() and RegSetValueEx() as well as the Reg.h and
+Winnt.h header files to find some of the constant definitions used in the code.
+To remove these values, you can use the RegDeleteKey() and RegDeleteValue()
+functions.
+
+Additional query words: Declare DLL API
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

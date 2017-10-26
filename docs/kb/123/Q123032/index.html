@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123032: BUG: SKIP Produces Unexpected Results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123032: BUG: SKIP Produces Unexpected Results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123032/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123032/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123032/","publisher":null,"image":null,"headline":"Q123032: BUG: SKIP Produces Unexpected Results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123032-bug-skip-produces-unexpected-results">Q123032: BUG: SKIP Produces Unexpected Results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123032
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.60
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Windows, version 2.60 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SKIP clause on a BAR of a POPUP, FoxPro for Windows disables
+the menu choice but still displays the disabled choice and allows the disabled
+choice to be selected.
+
+RESOLUTION
+==========
+
+Use an IF _WINDOWS clause to bracket the code. Then define the POPUP and BARs
+without the SKIP option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The SKIP clause does not work in FoxPro for Windows but does work as documented
+in FoxPro for MS-DOS. For example, the following code works correctly in FoxPro
+for MS-DOS but not in FoxPro for Windows:
+
+    DEFINE POPUP CAmenu FROM 5,23 TO 23,53
+    DEFINE BAR 1 OF CAmenu PROMPT "          Main Menu"   SKIP
+    DEFINE BAR 2 OF CAmenu PROMPT "-----------------------------"   SKIP
+    DEFINE BAR 3 OF CAmenu PROMPT "  Application, Inquiry, HSQ"
+    ACTIVATE POPUP CAmenu
+
+Code to Reproduce Problem
+-------------------------
+
+Run the following code in FoxPro for Windows:
+
+    DEFINE POPUP CAmenu FROM 5,23 TO 23,53
+    DEFINE BAR 1 OF CAmenu PROMPT "          Main Menu"   SKIP
+    DEFINE BAR 2 OF CAmenu PROMPT "-----------------------------"   SKIP
+    DEFINE BAR 3 OF CAmenu PROMPT "  Application, Inquiry, HSQ"
+    ACTIVATE POPUP Camenu
+   
+    ON SELECTION BAR 1 WAIT WINDOW 'Bar 1'
+    ON SELECTION BAR 2 WAIT WINDOW 'Bar 2'
+    ON SELECTION BAR 3 WAIT WINDOW 'Bar 3'
+
+Even though you can select Bars 1 and 2 by using the cursor keys, no WAIT WINDOW
+appears for them.
+
+Additional query words: FoxWin buglist2.60 disable prompt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : WINDOWS:2.60
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

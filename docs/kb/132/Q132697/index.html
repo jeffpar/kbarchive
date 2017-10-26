@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132697: PRB: Application Appears Then Exits to Operating System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132697: PRB: Application Appears Then Exits to Operating System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132697/","publisher":null,"image":null,"headline":"Q132697: PRB: Application Appears Then Exits to Operating System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132697-prb-application-appears-then-exits-to-operating-system">Q132697: PRB: Application Appears Then Exits to Operating System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132697
+Product(s): Microsoft FoxPro
+Version(s): 3.00 5.00
+Operating System(s): 
+Keyword(s): kbcode kbvfp
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Visual FoxPro .EXE file appears briefly, and then it exits to the operating
+system.
+
+CAUSE
+=====
+
+The main program is a screen or menu, and no READ EVENTS command has been
+issued. In Visual FoxPro, the Command window provides a place for your
+application to wait for the next command. Because the Command window is
+unavailable in a run-time application, the .EXE file has no wait state to
+anticipate keyboard input, so the application returns to the operating system.
+
+RESOLUTION
+==========
+
+A READ EVENTS command or a modal form will provide a wait state for your
+application.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Adding a READ EVENTS to a menu
+------------------------------
+
+If the main program in your project is a menu, a READ EVENTS command should be
+added to the menu as follows:
+
+1. In the Menu Builder on the View menu, click General options.
+
+2. Select the Cleanup check box. In the Cleanup code window, add this code:
+
+        READ EVENTS
+
+3. Add a Quit option to the menu that contains this command:
+
+        CLEAR EVENTS
+
+If the main program in your project is a form or formset, there are several ways
+to proceed as described in the remainder of this article.
+
+Creating a Modal Form or Formset
+--------------------------------
+
+The easiest way to provide a wait state for a form or formset is to set the
+WindowType property to 1 - Modal at design time.
+
+This may be undesirable if you want to run other forms from within the current
+form or formset.
+
+Creating a Program that Issues a Read Events
+--------------------------------------------
+
+The form or formset can be run from within a program that issues a READ EVENTS.
+For example:
+
+1. Create a program containing this code:
+
+        DO FORM &lt;formname&gt;
+        READ EVENTS
+
+2. Save this program, and make it the main program in your project.
+
+3. Add a command button to the form. Add the following code in its Click event:
+
+        CLEAR EVENTS
+        THISFORM.RELEASE
+
+Adding a READ EVENTS to a form or formset
+-----------------------------------------
+
+If you do not want to create a wrapper program that runs the form and issues a
+read events command, you can add the appropriate code to the form or formset
+itself. For example:
+
+1. Add a new property to the form or formset named RdEventsFlag. Set the value
+  of this property to false (.F.).
+
+2. In the Activate method of the form or formset, add this code:
+
+        IF !THISFORM.RdEventsFlag
+           READ EVENTS
+           THISFORM.RdEventsFlag = .T.
+        ENDIF
+
+3. Add a command button to the form. Add the following code to its click event:
+
+        CLEAR EVENTS
+        THISFORM.RELEASE
+
+Change THISFORM to THISFORMSET everywhere it appears if you are working with a
+formset instead of a form.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a quick form.
+
+2. Create a new project, and add the form to the Documents tab.
+
+3. Build an executable from the project.
+
+4. Exit Visual FoxPro, and run the executable. The menu appears briefly; then
+  the executable returns to the operating system shell.
+
+REFERENCES
+==========
+
+Visual FoxPro Professional Features Guide, Chapter 9.
+
+Additional query words: foundation READ
+
+======================================================================
+Keywords          : kbcode kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : 3.00 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

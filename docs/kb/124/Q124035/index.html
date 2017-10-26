@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124035/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124035/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124035/","publisher":null,"image":null,"headline":"Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124035-ati-graphics-pro-turbo-video-dac-incorrectly-detected">Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124035
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade or install Windows NT version 3.5 on a computer with an ATI
+Graphics Pro Turbo PCI video card, Windows NT Setup detects the video card as an
+ATI Graphics Compatible Adapter. Only 16 and 256 colors are supported for any
+resolution.
+
+If you manually configure the video card to use the ATI Graphics Pro Turbo video
+adapter driver, only 16 and 256 colors are available and the Test option of
+Display in Control Panel fails.
+
+CAUSE
+=====
+
+This problem occurs because the DAC (Digital-to-Analog Converter) is incorrectly
+identified as a Brooktree BT-47x DAC instead of an ATI 68860 DAC.
+
+RESOLUTION
+==========
+
+If the ATI Graphics Pro Turbo PCI video adapter is detected as using a Brooktree
+BT-47x DAC, call the ATI bulletin board system (BBS) at (905) 764-9404 and
+download 64NT35.ZIP. Extract the contents of 64NT35.ZIP and follow the
+installation instructions. For more information, contact ATI Technical Support
+at (905) 882-2600.
+
+To verify the DAC type:
+
+1. Run Control Panel and choose Display.
+
+2. Choose the Change Display Type button.
+
+3. Verify that the Adapter Type is the ATI Graphics Pro Turbo.
+
+4. Verify that the DAC type in Adapter Information is ATI 68860.
+
+The ATI product discussed here is manufactured by ATI Technologies, Inc., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding the product's performance or reliability.
+
+Additional query words: prodnt brook tree
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

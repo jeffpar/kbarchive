@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129205: How to Add Multiple Properties When You Add Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129205: How to Add Multiple Properties When You Add Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129205/","publisher":null,"image":null,"headline":"Q129205: How to Add Multiple Properties When You Add Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129205-how-to-add-multiple-properties-when-you-add-objects">Q129205: How to Add Multiple Properties When You Add Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129205
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 25-APR-2000
+
+3.00
+WINDOWS
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to:
+
+- Add objects to a container within a Class definition by using the ADD OBJECT
+  command, and specify multiple properties of the added object by using the
+  WITH keyword.
+
+- During the creation of a container, use the AddObject (one word) method to
+  add an object, and specify multiple properties of the object by using
+  WITH...ENDWITH.
+
+MORE INFORMATION
+================
+
+Example One
+-----------
+
+You can specify multiple properties of an added object within the Class
+definition by using the WITH clause. WITH...ENDWITH, however, is not valid
+within a Class definition and will result in an error.
+
+  ** Start of Example One
+
+  MyNewForm=CREATE("frmForm")
+  MyNewForm.Show
+
+  READ EVENTS
+
+  DEFINE CLASS frmForm AS Form
+
+     Visible = .T.
+     Left    = 50
+     Top     = 30
+     ADD OBJECT MyQuitButton AS cmdQuitButton WITH ;
+        Left    = 30, ;
+        Top     = 30, ;
+        Height  = 60, ;
+        Width   = 100, ;
+        Caption = "Quit"
+
+  ENDDEFINE
+
+  DEFINE CLASS cmdQuitButton AS CommandButton
+
+     PROCEDURE Click
+        RELEASE ThisForm
+        CLEAR EVENTS
+     ENDPROC
+
+  ENDDEFINE
+
+  ** Note: Without the semicolons and commas in the ADD OBJECT ... WITH
+  ** clause, error messages will occur such as "Unrecognized command
+  ** verb" and "Command contains unrecognized phrase/keyword."
+
+Example Two
+-----------
+
+This example shows how to use AddObject method with the WITH...ENDWITH clause to
+specify multiple properties for the object.
+
+  ** Start of Example Two
+
+  frmForm = CREATEOBJECT("Form")
+
+  WITH frmForm
+
+     .Visible   = .T.
+     .ScaleMode = 3
+     .AddObject("pgfPageFrame", "PageFrame")
+     WITH .pgfPageFrame
+        .Visible   = .T.
+        .PageCount = 2
+        .Left      = 50
+        .Top       = 20
+        .Height    = 200
+        .Width     = 250
+     ENDWITH
+
+  ENDWITH
+
+  ** The WITH...ENDWITH may be used to specify properties of the object
+  ** by pointing to the parent, which is the container in this case.
+
+  WITH frmForm.pgfPageFrame
+
+     .PageCount = 3
+
+  ENDWITH
+
+  READ EVENTS
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115391/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115391/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115391/","publisher":null,"image":null,"headline":"Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115391-upgrade-from-lan-manager-release-notes---interoptxt">Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115391
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is information contained in INTEROP.TXT file that ships with
+Windows NT Advanced Server upgrade tools.
+
+MORE INFORMATION
+================
+
+********************INTEROP.TXT*********************
+
+This document includes notes on Windows NT/LAN Manager interoperation.
+
+1.  Administering a Mixed Domain
+--------------------------------
+
+In a Windows NT Advanced Server domain that contains LAN Manager servers and
+clients, user account modifications occur at the domain controller and are
+subsequently replicated to other servers in the domain. Windows NT Advanced
+Servers can administer Windows NT servers and clients, as well as LAN Manager
+servers. LAN Manager servers can administer LAN Manager servers and clients, and
+Windows NT Advanced Servers and clients to a limited degree. LAN Manager
+administration limitations result primarily from the larger feature set
+available under Windows NT Advanced Server. It is highly recommended that
+Windows NT Advanced Server tools be used to manage domains.
+
+Most aspects of mixed domain user and share administration, including adding,
+deleting, and changing users and shares, work from either platform. The
+following adminstration features are not supported, in most cases because of
+feature differences:
+
+Administration of a Windows NT Advanced Server from the LAN Manager Net Admin
+menu:
+
+a) The Users on a Domain dialog (View menu) does not display an entry for the
+Windows NT domain controller. b) The Server Options dialog (Config menu) does
+not display existing alert names or allow the addition of new alert names. c)
+Assignment of Admin privileges is not allowed. d) Cloning a member of the
+Administrators group is not allowed. e) Changing the role of the server is not
+permitted. f) Listing users logged onto the Windows NT Advanced Server is not
+possible.
+
+Administration of a LAN Manager Server from a Windows NT Advanced Server:
+
+a) Forcibly logging out users is not possible because Windows NT does not support
+lock-out account settings.
+
+b) Neither LAN Manager nor Windows NT Advanced Server support remote
+administration of LAN Manager replication servers.
+
+2.  Password Case Sensitivity
+-----------------------------
+
+Password validation in a Windows NT network is case- sensitive as long as the
+computer you are logged on to and the computer whose resource you are trying to
+access are both Windows NT computers; the case of the password entered and the
+password stored in the Windows NT user database must match. However, if a logon
+procedure takes place on a non-Windows NT computer (a Windows for Workgroups
+computer, for example) or the share being accessed is on a non-Windows NT server
+(even if the server is in a Windows NT domain), password validation becomes
+case-insensitive. There is one exception to these rules and one error that
+results from mismatched case in passwords.
+
+The exception is that if you change your password from a non-Windows NT computer
+(using the Windows NT NET PASSWORD command), Windows NT stores your new password
+as a case-insensitive password and permits all subsequent logons to be password
+case-insensitive. Even if another user logs on from a Windows NT computer, no
+password case checking is performed.
+
+An error can be generated if you mismatch the case of your password after you've
+already logged onto a Windows NT domain. For example, if you establish a network
+session with a Windows NT computer by typing the following two lines:
+
+  net use x: \\winntcomputer\data /u:domain\user PASSWORD
+  net use y: \\winntcomputer\apps /u:domain\user password
+
+The following error message is displayed: "System error 1219 has occurred. The
+credentials supplied conflict with an existing set of credentials."
+
+To avoid this error message, make sure you always use the same case when
+attempting to connect to shared resources.
+
+3.  Cross Domain and Guest Access
+---------------------------------
+
+This section discusses cross-domain and guest access on a network containing LAN
+Manager and Windows NT Advanced Servers.
+
+Consider this example: Your Windows NT Advanced Server is the domain controller
+for DomainA, and you have problems seeing or using printers from LAN Manager
+DomainB. This could be a very simple problem: You are connecting to a printer on
+a non-Windows NT computer, so you must have the correct printer driver set up on
+your own workstation. Often, however, it is a permissions/account problem.
+
+Possibility 1: There may already be an account with the same name on the other
+domain or workstation, but one that uses a different password.
+
+Possibility 2: You are logged on as DomainA\eric, and have no account on DomainB.
+Unless DomainA is a trusted domain for DomainB you have to rely on guest rights
+or secure an account DomainB\eric with the same password you have on your
+DomainA account. This is the same the way you must do things now with LAN
+Manager.
+
+Use the Administrator account to get access that is denied on other computers,
+even if you could have secured guest access.
+
+Possibility 1--Password Problems:
+
+Why would the same account with different passwords cause access to be denied?
+The DomainB server receives a request: "Hi, I'm Eric from DomainA, my password
+is q," and responds: "You can't be Eric, that's not his password here--Access
+Denied." If the request comes from an account that does not exist on the DomainB
+server, it responds: "Well, I don't know you Miles, but I'll give you guest
+access" (if the server has a guest account enabled).
+
+Windows NT and OS/2 LAN Manager react the same way to Possibility 1. There are
+some differences, however, when trusted domains are involved.
+
+Possibility 2--Trusted Domains:
+
+The DomainB controller may not recognize the request "I'm Klaas from DomainA, my
+password is q." If DomainA is a trusted domain, however, the DomainB server
+checks the password with the DomainA controller, rather than simply deny access.
+If the DomainA controller says the password is correct for the account, the
+Windows NT server checks the account's access privileges to the resource in
+question and grants the same privileges allowed in DomainA.
+
+MS-DOS or OS/2 clients send the Windows NT server only their username and
+password because they do not support the extended Server Message Block (SMB)
+protocol; Windows NT clients identify their domain as well, which the server
+checks against the list of trusted domains. If a domain match exists, the server
+grants the requester the same privileges allowed in its own domain. If the
+account or domain is unknown, the server compares the requester's password
+against the guest account password (if that account is enabled) and grants guest
+privileges if a match exists.
+
+4.  File Replication
+--------------------
+
+Both Windows NT and LAN Manager use replication to maintain identical copies of
+specified files and directories on different computers. Changes made to files on
+one computer are automatically replicated to other computers configured to
+receive the changes. In a mixed Windows NT Advanced Server domain, designate a
+Windows NT Advanced Server(s) to be the export server(s). The import server(s)
+can be other Windows NT Advanced Servers, Windows NT workstations, or LAN
+Manager version 2.x servers.
+
+The following rules also apply:
+
+a) A Windows NT Advanced Server can be an import and an export file replication
+server.
+
+b) A LAN Manager server can function as an import server to both Windows NT
+workstations and to Windows NT Advanced Servers.
+
+c) A Windows NT workstation can function as only an import server. A Windows NT
+Advanced Server can replicate files across domain trust relationships by
+establishing the equivalent Replication accounts and passwords in each domain.
+
+d) When a Windows NT Advanced Server replicates files from NTFS to FAT, it
+replicates only 8.3 filenames.
+
+e) Windows NT can support any import and export paths. However, maintaining the
+default paths, C:\WINNT\SYSTEM32\REPL\IMPORT and C:\WINNT\SYSTEM32\REPL\EXPORT,
+is recommended.
+
+f) The Windows NT message "The account DOMAIN\REPL has been granted the Log On As
+A Service right and added to the Replicator local group.", indicates that the
+specified account has been added to the Backup Operators and Domain Users groups
+by default in addition to the Replicator group.
+
+g) You can replicate directories or files from a Windows NT NTFS volume to an
+OS/2 (with LAN Manager 2.x) FAT volume if the filenames adhere to FAT file
+system naming conventions. The same is true for OS/2 as long as the filenames
+adhere to OS/2 HPFS style naming conventions.
+
+h) Directories or files can be replicated from a Windows NT Advanced Server NTFS
+volume to an MS OS/2 LAN Manager 2.x HPFS volume; however, the names of the
+directories or files must adhere to the HPFS conventions, as follows:
+
+  - Names can be up to 254 characters.
+  - Paths and filenames can together be up to 259 characters long.
+  - Blank spaces and periods can occur anywhere in the file or directory name.
+  - These characters can be used in naming HPFS files: [ ] , + = ;
+  - These characters are not currently allowed: &lt; &gt; : " / \ | * ? &amp;
+
+If you experience problems during file or directory replication, use the
+following steps to troubleshoot.
+
+1) Note what operating system is running on the import computer (Windows NT,
+Windows NT Advanced Server, OS/2, UNIX).
+
+2) Is there anything interesting in the error log in the import computer? The
+applications log has entries for the Replicator service and often contains
+useful information. Look at the logs on both the import and export computers.
+
+3) What file systems are installed in the partitions pointed to by the import and
+export paths?
+
+4) How many import computers exhibit incorrect behavior?
+
+5) What time zones are the import and export computers running in?
+
+6) Make sure the import computer has Backup Operator permissions. If these
+permissions are not set up, errors 5, 1300, and 1307 will appear in the event
+log.
+
+7) Are the import and export computers in the same domain? If so, are the
+password and username the same in both domains? Do the domains trust each
+other?
+
+8) Are alerts being received by administrative accounts? (Has the Alerter service
+been started?)
+
+9) Are there any extended attributes in the files or directories being
+replicated?
+
+10) If the source directory is on an NTFS partition, are there an alternate data
+streams in the files or directories being replicated?
+
+11) If the source or destination directories are on an NTFS partition, look at
+the permissions on the import and export trees with File Manager. Does the
+Replicator local group have at least CHANGE privileges to these directories?
+
+12) Is it possible that an account has a file open (on import or export) all the
+time? This would appear as a sharing violation in the event log (error 32).
+
+13) Is there a REPL$ share on the export computer? (The share is created as a
+side effect of the Directory Replicating dialog box on the export computer. This
+dialog box also sets an ACL for the REPL$ share. Using the NET command or any
+other means to create the REPL$ share is likely to cause problems.)
+
+14) If you run the NET START command on the export and import computers, do both
+computers show "Directory Replicator" (or equivalent) in the list?
+
+15) If you are exporting or importing from an NTFS directory, does either tree
+have filenames that differ only in case? Which file gets replicated is not
+predictable. It is possible that the export computer will choose one file and
+the import computer will choose another. This results in the replication being
+out of sync.
+
+16) Some versions of the OS/2 importer leave the archive bit set on all files
+imported, whether or not it was set on the export side. This too could result in
+continuous copying. One work around is to set the archive bit on all files on
+the export computer. (Windows NT to Windows NT replication correctly clones the
+archive bit.)
+
+17) Some LAN Manager 2.1a import computers do not set their status file to
+OK.RP$. The cause is currently unknown, but there are a few side effects. Files
+will not be recopied each pass, but a file comparison will occur. Except for the
+status file state, the files are correctly replicated. This behavior does not
+occur on LAN Manager 2.2 importers.
+
+18) Some versions of LAN Manager allow hard disk files with reserved names, such
+as LPT1 or COM1. This can cause problems with HCOPY.EXE, XCOPY.EXE, and
+Replication and should be avoided. These files can be deleted from a DOS
+client's commandline using the DEL command. The Windows NT replicator currently
+lets these filenames exist.
+
+19) OS/2 LAN Manager only allows one set of credentials to be in use at a time.
+(The credentials consist of the user name and password.) If someone is
+interactively logged on to one user identification (ID) and the replicator is
+trying to use a different user ID, then replication cannot occur until the
+interactive user logs off. On the other hand, if the interactive user and the
+replicator user have the same user ID, then replication is possible, depending
+on the value of the TryUser value in the LANMAN.INI file.
+
+20) LAN Manager importers are generally designed with a limit of 1000 files per
+directory. You should be aware that the "." and ".." directory entries use two
+of those 1000 entries. Also, some versions may have an off-by-one error that
+causes repeated file copies with exactly 1000 entries. This gives a practical
+limit of 997 files for those importers. The Windows NT importer does not have
+these limitations.
+
+21) Are there some files being replicated from an HPFS partition (written by
+OS/2) to a Windows NT server? Do these files have extended attributes (EAs)? If
+so, OS/2 may have written the EAs in discontiguous parts of the disk; Windows NT
+does not support this. The directory replicator includes the EA sizes in its
+checksums, and they may be wrong in this case. The replication may stay out of
+sync permanently. You can use Windows NT to rewrite the same EA values to a
+single contiguous area, if you know the original EA values. Note that accessing
+an HPFS volume over the network while OS/2 is directly reading or writing the
+volume will work correctly.
+
+Additional query words: wfw wfwg prodlm2nt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

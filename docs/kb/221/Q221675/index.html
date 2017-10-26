@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221675/","publisher":null,"image":null,"headline":"Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221675-fix-problem-converting-fp26-screens-with-large-labels--says">Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221675
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbOOP kbMiscTools kbvfp600 kbvfp600bug kbXBase kbvfp600sp3 kbGrpDSFox
+Last Modified: 26-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message is received when converting a FoxPro 2.6 for Windows
+screen to a Visual FoxPro 6.0 form.:
+
+  WARNING - Expression too long at Record #&lt;record number&gt;.
+  The expression was not converted. See the log file for details.
+
+CAUSE
+=====
+
+This is known to happen if the FoxPro 2.6 screen has a large label on it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+In FoxPro 2.6, a label is created with the Screen Designer tool button with the
+capital A on it. The screen generator generates this into an @...SAY in the .spr
+file it creates. An @...SAY or output field can also be created with the FoxPro
+2.6 Screen Designer tool button with the ab| symbol on it and choosing the
+Output Field(Say) option button in the Field dialog box. This later type of
+@...SAY will convert into a text box control in Visual FoxPro rather than a
+label control. Text box controls do not have caption properties.
+
+If the FoxPro 2.6 label is over approximately 221 characters (including two
+carriage returns), the error message listed above will be produced and the
+caption property of the label control will just be Label1, or what ever label
+number it is, when the screen is converted. The reason that two carriage return
+characters are included is because it is very hard to visually fit more than
+about 108 characters on a label line without pressing the ENTER key to create a
+new line for the label.
+
+In FoxPro 2.6, the maximum number of characters that could be entered for a label
+varied depending on how many carriage returns there were. Each time the ENTER
+key was pressed, a carriage return character (CHR(13)) was entered into the
+label text. If there are two carriage returns, the maximum number of other
+characters that could be entered was 252. If there are five carriage returns,
+the maximum number of characters that could be entered was 249. Therefore, in
+FoxPro 2.6, the maximum length of a label was 254 characters with a carriage
+return counting as a character. A line feed character was not added with the
+carriage return when the ENTER key was pressed.
+
+Some FoxPro 2.6 developers might have long labels on their screens as text
+instructions or descriptions for their applications.
+
+The Convert.app or the converter for Visual FoxPro has been updated in Visual
+Studio 6.0 Service Pack 3 to allow for label captions up to 254 characters,
+including the carriage returns. What happens in the new Convert.app is that the
+label caption from the FoxPro 2.6 form is truncated at 254 characters. The
+character count includes a character for each carriage return. Then the carriage
+return characters are removed.
+
+Therefore, a FoxPro 2.6 label caption of 254 characters that includes five
+carriage returns will turn into a label caption of 249 characters after being
+converted. In Visual FoxPro, the maximum length of a label caption is 254
+characters. Some FoxPro 2.6 labels that do not have many carriage returns may
+have the last few characters truncated. For instance, a label of 254 characters
+that includes just two carriage returns has the last two characters truncated
+and the Visual FoxPro label caption is only 250 characters after the carriage
+returns are removed.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a screen in FoxPro 2.6 for Windows and put a label on it with as many
+  characters as it will allow to be typed it. Press the ENTER key when needed
+  to create new lines.
+
+2. Save the screen. You may want to count the number of characters that were
+  typed in.
+
+3. Open the screen in Visual FoxPro 6.0. Do a Functional conversion when
+  prompted to convert the form.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbMiscTools kbvfp600 kbvfp600bug kbXBase kbvfp600sp3 kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

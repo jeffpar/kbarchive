@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148132/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148132/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148132/","publisher":null,"image":null,"headline":"Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148132-swapable-floppycd-rom-components-support-on-nec-versa-4050c">Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148132
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The NEC Versa 4050C computer allows you to inter-exchange or swap between a
+floppy disk drive and an IDE CD-ROM drive. Windows NT does not allow you to
+start with any media component. For example, you cannot start Windows NT with a
+floppy disk drive and then immediately restart your component with a an IDE
+CD-ROM drive. A "STOP: 0x0000007B: Inaccessible Boot Device" blue screen appears
+if you start with a component that has not been configured in Windows NT.
+
+
+MORE INFORMATION
+================
+
+To start Windows NT on the NEC Versa 4050C computer:
+
+1. Configure the following devices to the recommended settings in Control Panel
+  Devices. If you start Windows NT with a floppy disk drive as one of your
+  hardware components, see Startup for Floppy in the table below. If you start
+  Windows NT with a CD-ROM drive as one of your hardware components, see
+  Startup for IDE CD-ROM.
+
+Device   Startup for Floppy   Startup for IDE CD-ROM
+------   ------------------   ----------------------
+ATDISK        BOOT                   SYSTEM
+ATAPI         BOOT                   BOOT
+FLOPPY        SYSTEM                 SYSTEM
+
+2. Verify that both ATAPI.SYS and ATDISK.SYS reside in the following directory:
+
+  %SystemRoot%\System32\Drivers
+
+  NOTE: Copy the missing file(s) from the Windows NT compact disc to the
+  directory mentioned above.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q125933
+  TITLE : STOP 0x0000007B: Inaccessible Boot Device After Removing CD-ROM
+
+The NEC products included here are manufactured by NEC Technologies, Inc., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: 3.50 3.51 boot
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

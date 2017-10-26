@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191991: Error Message: Stop C0000142 (DLL Initialization Failed) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191991/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191991/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191991/","publisher":null,"image":null,"headline":"Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191991-error-message-stop-c0000142-dll-initialization-failed">Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191991
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows NT 4.0 starts, you may receive the following error message:
+
+  STOP C0000142 (DLL initialization failed)
+
+  Initialization of the dynamic link library c:&lt;path&gt;\user32.dll failed.
+  The process is terminating abnormally
+
+CAUSE
+=====
+
+This issue can occur if there are conflicting versions of the User32.dll and
+Gdi32.dll files.
+
+RESOLUTION
+==========
+
+To resolve this issue, replace the Gdi32.dll file in the %SystemRoot%\System32
+folder with the file that is included in the Windows NT 4.0 Service Pack that
+was loaded on the original installation. To verify, SP3 files display a modified
+date of 4/30/97 or 5/1/97, and SP4 files show a modified date of 10/15/98.
+
+Method 1
+--------
+
+If you have access to another Windows NT-based computer with Windows NT 4.0 SP3
+installed, copy the Gdi32.dll file from the other computer to the original
+computer. To do so, follow these steps:
+
+1. On the other computer, click Start, point to Programs, and then click Command
+  Prompt.
+
+2. Insert a formatted floppy disk into the floppy disk drive, type the following
+  line, and then press ENTER:
+
+  copy %SystemRoot%\system32\gdi32.dll &lt;drive&gt;:
+
+  Where &lt;drive&gt; is the drive letter of the floppy disk drive.
+
+3. Restart the original computer using any bootable floppy disk (such as an
+  MS-DOS boot disk, a Microsoft Windows 95 Emergency Boot disk, or a Microsoft
+  Windows 98 Startup disk), and then insert the floppy disk you used in step 2
+  in the floppy disk drive.
+
+  NOTE: For instructions about how to create a boot floppy disk, please consult
+  your operating system's documentation.
+
+4. Type the following lines, pressing ENTER after each line
+
+  ren %SystemRoot%\system32\gdi32.dll gdi32.old copy &lt;drive&gt;:\gdi32.dll
+  %SystemRoot%\system32\
+
+  Where &lt;drive&gt; is the drive letter of the floppy disk drive.
+
+5. Restart the computer.
+
+Method 2
+--------
+
+If you dual-boot Windows NT and Windows 95 or Windows 98 on your computer, follow
+these steps:
+
+1. Start Windows 95 or Windows 98.
+
+2. Click Start, point to Programs, and then click MS-DOS Prompt.
+
+3. Type the following line, and then press ENTER:
+
+  ren %SystemRoot%\system32\gdi32.dll gdi32.old
+
+4. If you have the SP3 CD-ROM, place it in the CD-ROM drive, type the following
+  line, and then press ENTER:
+
+  expand -r &lt;drive&gt;:\i386\gdi32.dll %SystemRoot%\system32\
+
+  Where &lt;drive&gt; is the drive letter of the CD-ROM drive. After you
+  complete this step, skip to step 7.
+
+5. If you downloaded SP3, you need to extract all files from the Nt4sp3_i.exe
+  file before you can obtain the Gdi32.dll file. To extract all files from the
+  Nt4sp3_i.exe file, consult the instructions in the "Downloading and
+  Extracting the Service Pack" section of the following article in the
+  Microsoft Knowledge Base:
+
+  Q152841Windows NT 4.0 Service Pack 3 Readme.txt File (40-bit)
+
+6. Type the following line, and then press ENTER:
+
+  copy &lt;path&gt;\gdi32.dll %SystemRoot%\system32\
+
+  Where &lt;path&gt; is the location of the SP3 files.
+
+7. Restart your computer.
+
+Method 3
+--------
+
+If you have Windows NT installed on an NTFS partition, follow these steps:
+
+1. Install Windows NT in a different folder on your hard disk, and then install
+  SP3.
+
+2. Copy the Gdi32.dll file from the %SystemRoot%\System32 folder in the new
+  Windows NT installation to the corresponding folder in the original
+  installation. To do so, type the following line, and then press ENTER:
+
+  copy %SystemRoot%\system32\Gdi32.dll &lt;path&gt;\system32
+
+  Where &lt;path&gt; is the original installation.
+
+3. Restart your computer to the original Windows NT installation.
+
+4. Remove the temporary Windows NT installation, and then delete any entries in
+  the Boot.ini file that are entered for that installation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

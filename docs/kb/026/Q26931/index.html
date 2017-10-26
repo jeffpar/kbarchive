@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q26931: VAL(&quot;&amp;H&quot;) and VAL(&quot;%&quot;) Unexpectedly Returning Nonzero Value | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q26931: VAL(&quot;&amp;H&quot;) and VAL(&quot;%&quot;) Unexpectedly Returning Nonzero Value" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/026/Q26931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/026/Q26931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/026/Q26931/","publisher":null,"image":null,"headline":"Q26931: VAL(&quot;&amp;H&quot;) and VAL(&quot;%&quot;) Unexpectedly Returning Nonzero Value","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q26931-valh-and-val-unexpectedly-returning-nonzero-value">Q26931: VAL("&amp;H") and VAL("%") Unexpectedly Returning Nonzero Value</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q26931
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.00 buglist4.00b buglist4.50 B_BasicCom | mspl13_basic
+Last Modified: 31-JAN-1990
+
+When "&amp;H", "&amp;", and "%" are passed alone as arguments to the VAL
+function, VAL returns 0 (zero) as expected in QuickBASIC Version 3.00.
+In QuickBASIC Version 4.00, VAL returns a nonzero value for "&amp;H" and
+"&amp;", and returns a "type mismatch" (error 5) at run time for "%". VAL
+is expected to return 0 (zero) because "&amp;H" is 0 in hexadecimal
+notation, "&amp;" is 0 in long integer notation, and "%" is 0 in integer
+notation.
+
+Passing "&amp;H0" or "0%" to VAL returns 0 as expected.
+
+Microsoft has confirmed this to be a problem in QuickBASIC Versions
+4.00, 4.00b, and 4.50 and in Microsoft BASIC Compiler Versions 6.00
+and 6.00b (buglist6.00, buglist6.00b). This problem was corrected in
+Microsoft BASIC Professional Development System (PDS) Version 7.00 for
+MS-DOS and MS OS/2 (fixlist7.00).
+
+If your program accepts input into a string variable and then uses
+VAL, you may want to filter out the character combinations that are
+not accepted. On the Microsoft QuickBASIC Versions 4.00 and 4.00b
+Utilities and Examples Disk in the \Source subdirectory there is a
+program called STRTONUM.BAS that filters out all characters from a
+string except numeric digits, the decimal point, and a minus sign.
+STRTONUM.BAS can be modified if you want to allow hexadecimal
+constants but exclude the special cases "&amp;H" and "H" that return
+nonzero values from VAL. You can also write your own filtering
+routine.
+
+The presence of a coprocessor makes no difference. The following is
+a code example:
+
+' The following two statements print 203 in the QuickBASIC Version
+' 4.00 editor; they print 233 compiled to EXE with BRUN40.LIB, print
+' 1889 with BCOM40.LIB, and print 0 (zero) in QuickBASIC Version 3.00:
+
+PRINT VAL("&amp;h")
+PRINT VAL("&amp;")
+
+' The following statement gives "type mismatch" in QuickBASIC Version
+' 4.00 editor or EXE; it prints 0 (zero) in QuickBASIC Version 3.00:
+
+PRINT VAL("%")
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

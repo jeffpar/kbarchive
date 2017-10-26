@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q255796: Updating a Management Agent’s Templates from Its Working Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q255796: Updating a Management Agent’s Templates from Its Working Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/255/Q255796/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/255/Q255796/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/255/Q255796/","publisher":null,"image":null,"headline":"Q255796: Updating a Management Agent’s Templates from Its Working Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q255796-updating-a-management-agents-templates-from-its-working-folder">Q255796: Updating a Management Agent’s Templates from Its Working Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q255796
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2,2.2 SP1
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 27-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, versions 2.1, 2.2, 2.2 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can update a Management Agent's templates from its working folder by running
+"Update Management Agent." You may need to update your Management Agent
+templates to recover from unsuccessful Management Agent changes or to transfer a
+Management Agent between Microsoft Metadirectory Services-based servers.
+Management Agent templates are stored as attributes of the Management Agent
+object in the metaverse. By default, the Management Agent will be updated with
+the included templates in the Zoomserv\Data\Dsgates folder. Any customization
+you have performed in the Design MA area will be lost. If you have recorded your
+templates to the working folder, this article describes how to refresh the
+Management Agent with those templates.
+
+MORE INFORMATION
+================
+
+Before following these steps, you must either:
+
+- Have recorded the customized Management Agent templates to the working folder
+  and now need to restore the metaverse with your customized templates. For
+  information about recording Management Agents templates to the working
+  folder, see the following article in the Microsoft Knowledge Base:
+
+  Q250479 Recording Management Agent Templates in Microsoft Metadirectory
+  Services
+
+- Have custom templates that you want to use in place of the current templates.
+  You have copied them into the working folder, overriding the existing
+  templates.
+
+Updating a Management Agent from the Working Folder
+---------------------------------------------------
+
+1. Log on to the Compass client with administrator access.
+
+2. Click the MA that you want to update.
+
+3. In the Actions panel, click Properties.
+
+4. On the Recording Templates tab, click to select the "Update this MA from its
+  working directory's templates located at : \Zoomserv\Data\Ds\0000000#" check
+  box.
+
+5. Click OK.
+
+6. In the Actions panel, click Update Management Agent.
+
+7. In the Update Management Agent dialog box, click Yes. You should then receive
+  a message indicating a successful update.
+
+For additional information about Management Agent working folders, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q254189 Description of the Management Agent Working Folders
+
+Additional query words: MA
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220 kbMMS220SP1
+Version           : :2.1,2.2,2.2 SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

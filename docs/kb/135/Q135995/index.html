@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135995/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135995/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135995/","publisher":null,"image":null,"headline":"Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135995-visual-sourcesafe-integration-with-visual-basic-40-and-50">Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135995
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400 kbVBp500kbfaq
+Last Modified: 18-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article covers some of the most frequently asked questions (FAQ) about the
+Visual Basic Add-In to Visual SourceSafe.
+
+MORE INFORMATION
+================
+
+1. Q. I have installed Visual Basic and Visual SourceSafe, but Visual SourceSafe
+  is still not available in the Visual Basic Add-In menu. Why?
+
+  A. Make sure Visual SourceSafe was installed after you installed Visual Basic.
+  If you install Visual SourceSafe before Visual Basic, Visual SourceSafe does
+  not know you plan to use the add-in functionality because it does not find
+  Visual Basic. Therefore, the installation does not install the add-in hooks.
+  You must install Visual SourceSafe (Client, Custom, or preferably
+  Netsetup.exe) after installing Visual Basic.
+
+  If you install the custom version, you must select the "Visual Basic and
+  Visual C++ Registration" check box in Visual SourceSafe version 4.x, or
+  "Enable SourceSafe Integration" for version 5.0 or later. This is what
+  installs the registry hooks necessary for Visual Basic to find Visual
+  SourceSafe.
+
+  For more information about what the registry hooks are and how integration
+  works, please see the following article in the Microsoft Knowledge Base:
+
+  Q133018 Visual SourceSafe Setup Registration Settings
+
+
+2. Q. I have a project under Visual SourceSafe control. Why can't I make any
+  modifications to my files in this project now?
+
+  A. When anything is under Visual SourceSafe control, the files must be checked
+  out of Visual SourceSafe before they can be modified in Visual Basic. There
+  are several easy ways to tell if the files are checked out:
+
+   - When viewing the project in Visual Basic, if a file is checked out, there
+     will be a check mark in the box on the left side of the given file icon.
+     When viewing the code, if the file is checked out, you will be able to
+     make modifications. If the file is not checked out, you will see (read
+     only) on the top.
+
+     In addition, within Visual Basic, when you select any control, there will
+     be a black stretch box instead of a white stretch box.
+
+   - In the Visual SourceSafe Explorer, if the files are checked out, there
+     will be a check mark on top of the icon next to the file name and there
+     will be a check-out directory specified.
+
+3. Q. I have my Visual Basic project under Visual SourceSafe control. Now I see
+  miniature icons appearing by my file names when I view the project. What are
+  these and what do they mean?
+
+  A. These miniature icons are called glyphs. There are a variety of glyphs used
+  by Visual SourceSafe, Visual Basic, and other programs to let the user know
+  the status of each and every file under Visual SourceSafe control.
+
+  For files that are under SourceSafe control but not checked out, you will see
+  a little red padlock on the corner of the icon for that file. This means that
+  the files are under SourceSafe Control and are not checked out.
+
+  The glyph you see when you check out a file is a check mark on the side next
+  to the icon. This means the file is checked out of SourceSafe to you and that
+  it is editable.
+
+  The Visual SourceSafe Explorer uses these and a number of other different
+  icons to represent different states of various files. See your Visual
+  SourceSafe documentation for details.
+
+4. Q. I have renamed a file in the Visual SourceSafe Explorer. Why is the file
+  not renamed in Visual Basic?
+
+  A. Visual SourceSafe doesn't have a way to tell Visual Basic to rename a file
+  in a given project. On the other hand, Visual Basic, through the integration
+  component, can tell SourceSafe that a file has been renamed. Therefore, the
+  best way to rename a file is to do it within Visual Basic. This will update
+  the Visual SourceSafe Explorer.
+
+REFERENCES
+==========
+
+For additional information on Visual SourceSafe Integration with Visual Basic
+version 6.0, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q201649 FAQ: Visual SourceSafe Integration with Visual Basic 6.0
+
+Additional query words: vss FAQ Q&amp;A vbwin VB Visual Basic
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400 kbVBp500 kbfaq
+Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbVB400Search kbVB400 kbVB16bitSearch kbSSafe600 kbSSafe400 kbSSafe500
+Version           : :4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

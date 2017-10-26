@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77983/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77983/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77983/","publisher":null,"image":null,"headline":"Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77983-using-ms-dos-5x6x-with-win-30-enhanced-without-wina20386">Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77983
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.0 operates under MS-DOS 5.x, 6.0, and 6.2 without
+the WINA20.386 file if you include the line "SWITCHES=/W" in the CONFIG.SYS
+file. Although it is possible to run Windows 3.0 this way, doing so may cause
+Windows to stop responding (hang) if the following conditions are true:
+
+- Windows 3.0 is running in 386 enhanced mode
+
+- MS-DOS (or another program) is using the high memory area (HMA)
+
+This information does not apply to later versions of Microsoft Windows.
+
+MORE INFORMATION
+================
+
+Windows 3.0 enhanced mode considers the status of the A20 line to be identical
+in all MS-DOS virtual machines (VMs). Changing the status of the A20 line can
+have dangerous results, as in the following example. While one VM is accessing
+the MS-DOS kernel located in the HMA, Windows task switches to another VM in
+which MS-DOS turns off the A20 line. When Windows switches back to the original
+VM that is currently attempting to execute code in the HMA, Windows hangs
+(stops).
+
+The WINA20.386 file is designed to force Windows 3.0 enhanced mode to treat the
+A20 line status as local to each VM, instead of global to all VMs. This is why
+it is not recommended to force Windows 3.0 enhanced mode to run without
+WINA20.386.
+
+For more information about Windows and WINA20.386, query on the following words
+in the Microsoft Knowledge Base:
+
+  "Windows" (without the quotation marks) and "WINA20.386" (without the
+  quotation marks)
+
+
+Additional query words: 6.22 3.00 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

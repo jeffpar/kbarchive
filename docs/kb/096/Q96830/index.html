@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96830: Windows 3.0 Doesn’t Run in 386 Enhanced Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96830: Windows 3.0 Doesn’t Run in 386 Enhanced Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96830/","publisher":null,"image":null,"headline":"Q96830: Windows 3.0 Doesn’t Run in 386 Enhanced Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96830-windows-30-doesnt-run-in-386-enhanced-mode">Q96830: Windows 3.0 Doesn’t Run in 386 Enhanced Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96830
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21 
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to correct the problem of Microsoft Windows version
+3.0 not running in 386 enhanced mode on a system with Microsoft MS-DOS version
+5.0 and later.
+
+The article is divided into the following subsections:
+
+- Extended Memory Requirements
+
+- CONFIG.SYS File Requirements
+
+- AUTOEXEC.BAT File Requirements
+
+- WINA20.386 File Requirements
+
+- Additional Steps for Systems Running EMM386.EXE
+
+MORE INFORMATION
+================
+
+To ensure the Microsoft Windows version 3.0 can run on your system, make sure
+your system meets all the requirements discussed in the following subsections.
+
+Extended Memory Requirements
+----------------------------
+
+Your system must have at least 1 megabyte (MB) (1,048,576 bytes) of extended
+memory. To determine the amount of available extended memory, type the following
+at the MS-DOS command prompt, and press ENTER:
+
+  " mem" (without the quotation marks)
+
+If you do not have 1 MB of available extended memory, reduce your system's
+extended memory usage by removing the DOS=HIGH command from your CONFIG.SYS
+file. If you are using the version of SMARTDrive that is provided with MS-DOS
+5.0 (SMARTDRV.SYS), reduce the value of the MinCacheSize parameter. If you are
+using the version of SMARTDrive that is provided with MS-DOS version 6.0 or
+later (SMARTDRV.EXE), reduce the value of the WinCacheSize parameter.
+
+CONFIG.SYS File Requirements
+----------------------------
+
+By default, Setup configures MS-DOS to install HIMEM.SYS when you start your
+system. If MS-DOS does not install HIMEM.SYS, make sure the the following
+command appears in your CONFIG.SYS file before any commands that start device
+drivers or programs that use extended memory:
+
+  device=c:\dos\himem.sys
+
+In addition, verify the following in your CONFIG.SYS file:
+
+- The FILES command must specify at least 30 files.
+
+- The BUFFERS command must specify at least 20 buffers.
+
+AUTOEXEC.BAT File Requirements
+------------------------------
+
+Your AUTOEXEC.BAT file must include a SET command such as the following that
+establishes the location where temporary files are stored:
+
+  set temp=&lt;drive&gt;:\&lt;directory&gt;
+
+where &lt;drive&gt; is your hard disk drive and &lt;directory&gt; is the
+directory where your temporary files are stored. This set command creates an
+environment variable that Windows version 3.0 uses to determine where to store
+its temporary files. For example, the following command directs Windows to store
+its temporary files in a directory named TEMP on drive C:
+
+  set temp=c:\temp
+
+WINA20.386 File Requirements
+----------------------------
+
+Your system must include the WINA20.386 file. The Setup program for MS-DOS places
+this file in the root directory of your startup drive (usually drive C). If you
+have moved the WINA20.386 file to another directory, you need to edit your
+CONFIG.SYS and SYSTEM.INI files to reflect the accurate location of this file.
+Use the procedures outlined below.
+
+If you can't find the WINA20.386 file in any directory on your hard disk drive,
+expand and copy the file from your MS-DOS installation disks to the root
+directory of your startup drive by typing the following at the MS-DOS command
+prompt and pressing ENTER
+
+  expand &lt;floppy&gt;:\wina20.38_ &lt;startupdrive&gt;:\wina20.386
+
+where &lt;floppy&gt; is the floppy disk drive that contains the installation disk
+with the compressed file you want to expand, and &lt;startupdrive&gt; is your
+startup drive. For example, if your installation disk is in floppy disk drive A
+and your startup drive is drive C, type the following command:
+
+  " expand a:\wina20.38_ c:\wina20.386" (without the quotation marks)
+
+The WINA20.386 file is located on the following installation disks:
+
+   MS-DOS       3.5-Inch Disk  5.25-Inch    3.5-Inch   5.25-Inch
+   Version      Number (1.44   Disk Number  Disk       Disk
+                MB)            (1.2 MB)     Number     Number
+                                            (720K)     (360K)
+   -------------------------------------------------------------
+
+   MS-DOS 5     N/A            N/A          Disk 3     Disk 5
+   Upgrade
+   MS-DOS 5.0a  N/A            Disk 2       Disk 3     Disk 5
+   Upgrade
+   MS-DOS 6.0   Disk 1         Disk 2       Disk 3     Disk 5
+   Upgrade
+   MS-DOS 6.2   Disk 1         Disk 2       Disk 3     Disk 5
+   Upgrade
+   MS-DOS 6.21  Disk 1         Disk 2       Disk 3     Disk 5
+   Upgrade
+
+If you have moved your WINA20.386 file to a directory other than the root
+directory of your startup drive, use the following procedure to allow Windows
+3.0 to find it:
+
+1. Edit your CONFIG.SYS file. To edit the file using MS-DOS Editor, type the
+  following at the MS-DOS command prompt and press ENTER:
+
+  " edit &lt;startupdrive&gt;:\config.sys" (without the quotation marks)
+
+2. Add the following line at the end of your CONFIG.SYS file:
+
+  switches=/w
+
+3. Save your CONFIG.SYS file. If you're using MS-DOS Editor, choose Exit from
+  the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+  your file, choose the Yes button or press ENTER.
+
+4. Next, use MS-DOS Editor to open your Windows SYSTEM.INI file. Your SYSTEM.INI
+  file is in the directory where your Windows files reside. To edit the file,
+  type the following at the MS-DOS command prompt and then press ENTER:
+
+  " edit &lt;drive&gt;:\&lt;directory&gt;\system.ini" (without the quotation
+  marks)
+
+  where &lt;drive&gt; is your hard disk drive and &lt;directory&gt; is the
+  directory where your Windows files reside. For example, if your hard disk
+  drive is drive C and your Windows files are located in the WINDOWS directory,
+  type the following command:
+
+  " edit c:\windows\system.ini" (without the quotation marks)
+
+5. Locate the section of your SYSTEM.INI file that begins with the [386Enh]
+  heading, and add the following command:
+
+  " device=&lt;drive&gt;:\&lt;directory&gt;\wina20.386" (without the quotation
+  marks)
+
+  where &lt;drive&gt; is your hard disk drive and &lt;directory&gt; is the
+  directory where the WINA20.386 file is now located. For example, if you moved
+  the file to your WINDOWS directory, you would add the following command to
+  your Windows SYSTEM.INI file:
+
+  " device=c:\windows\wina20.386" (without the quotation marks)
+
+6. Save your SYSTEM.INI file. If you're using MS-DOS Editor, choose Exit from
+  the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+  your file, choose the Yes button or press ENTER.
+
+7. Restart your computer by pressing CTRL+ALT+DEL.
+
+Additional Steps for Systems Running EMM386.EXE
+-----------------------------------------------
+
+If Windows version 3.0 doesn't run in 386 enhanced mode after you have checked
+the items listed above, and you are using EMM386.EXE, do the following:
+
+1. Use a text editor, such as MS-DOS Editor, to open the SYSTEM.INI file that is
+  located in the directory where your Windows files reside. If you want to use
+  MS-DOS Editor, type the following at the MS-DOS command prompt and press
+  ENTER
+
+  " edit &lt;drive&gt;:\&lt;directory&gt;\system.ini" (without the quotation
+  marks)
+
+  where &lt;drive&gt; is your hard disk drive and &lt;directory&gt; is the
+  directory where your Windows files reside. For example, if your hard disk
+  drive is drive C and your Windows files are located in the WINDOWS directory,
+  type the following command:
+
+  " edit c:\windows\system.ini" (without the quotation marks)
+
+2. Insert the following command in the [386Enh] section of the SYSTEM.INI file:
+
+  " EMMEXCLUDE=A000-EFFF" (without the quotation marks)
+
+3. Save your SYSTEM.INI file. If you're using MS-DOS Editor, choose Exit from
+  the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+  your file, choose the Yes button or press ENTER.
+
+4. Start Windows version 3.0. If Windows version 3.0 does not run in 386
+  enhanced mode, a device conflict is preventing Windows from running in 386
+  enhanced mode. Call Microsoft Product Support Services for help.
+
+
+Additional query words: appnote 6.00 5.00 6.20 win30 enh enhanced-mode
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbMSDOSSearch kbMSDOS621 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

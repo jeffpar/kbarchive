@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119811/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119811/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119811/","publisher":null,"image":null,"headline":"Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119811-bug-dbase-or-foxpro-fox-memo-select-stopped-by-dbase">Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119811
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCDBASE: 2129 (1.01.1928)
+
+SYMPTOMS
+========
+
+The ODBC FoxPro driver is unable to fetch data from a Microsoft FoxPro table
+that contains memo fields when it follows any CREATE TABLE statement executed
+with the ODBC Dbase driver during a session operating on the same ODBC
+environment handle allocated via SQLAllocEnv().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC Desktop Database
+Drivers version 1.01.1928. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+The following is the ODBC Application Programming Interface (API) call sequence
+that recreates this problem:
+
+1. Connect to any ODBC Dbase datasource.
+
+2. Create any form of Dbase table with the ODBC Dbase driver, Then free the
+  statement handle used for this operation with SQLFreeStmt() but do not call
+  SQLDisconnect().
+
+3. Connect to an FoxPro ODBC datasource that provides access to a FoxPro table
+  containing at least one memo field.
+
+4. Attempt to execute a SQL SELECT query on the FoxPro table containing the memo
+  field via SQLExecDirect() or attempt to prepare such a statement with
+  SQLPrepare(); either way, the same problem will be created.
+
+  The error message received is:
+
+  [Microsoft][ODBC Single-Tier Driver][ODBC File Library]General Isam error.
+  [Microsoft][ODBC Single-Tier Driver]Unable to open table: &lt;table_name&gt;.
+
+To recreate this problem in MS Query:
+
+1. Define a Dbase and a FoxPro ODBC datasource. You will need to create a Fox
+  table ahead of time with your Fox datasource. It can have any number of
+  columns but must contain one memo field.
+
+  For example,
+
+  create table fox1 (col1 memo)
+
+2. In MS Query, from the File menu, select Execute SQL....
+
+3. Click the Data Sources... button, and choose the Dbase datasource you have
+  defined; click the Use button.
+
+4. Create any form of Dbase table.
+
+  For example:
+
+  create table dbase1 (col1 char(30)).
+
+  Then click the Execute button to execute the SQL statement. You should receive
+  the message:
+
+  Microsoft Query
+  Executed SQL Statement successfully
+
+5. Click the Data Sources... button and choose the FoxPro datasource you have
+  defined, click the Use button.
+
+6. Try to query on the Fox table with the SQL statement:
+
+  select * from fox1,
+
+  Click the Execute button to execute the SQL statement. You will get the
+  message:
+
+  Microsoft Query
+  General ISAM error
+  Unable to open table: fox1.
+
+Additional query words: 1.01.1928 Dbase FoxPro Fulfillment Kit MSDN Excel Word Visual C++ MFC
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

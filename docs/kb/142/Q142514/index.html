@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142514/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142514/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142514/","publisher":null,"image":null,"headline":"Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142514-msb-ocean-errmsg-internal-error-xxx-skip-type-xxx">Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142514
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Magic School Bus Explores the Ocean (MSB Ocean) you may receive the
+one of the following error messages:
+
+  Internal Error 400 (Unknown). Skip Type 0
+
+  Internal Error xxx. Skip Fault 178
+
+The numbers in the error message can vary.
+
+RESOLUTION
+==========
+
+To resolve the problem, use the steps below for your version of Windows:
+
+Windows 95/98
+-------------
+
+1. In Windows Explorer, delete the MSBOcean folder. For more information about
+  how to accomplish this task in Windows, see your Windows printed
+  documentation or online Help.
+
+  By default, the MSBOcean folder is located in the Mskids folder on drive C.
+
+2. Run a diagnostic disk utility, such as ScanDisk, and fix any disk errors.
+
+3. Click Start, point to Settings, and then click Control Panel.
+
+4. Double-click System. Click the Performance tab, click File System, and then
+  click the CD-ROM tab.
+
+5. Set the Supplemental cache size to Large. Set the Optimize access pattern for
+  No Read Ahead. Click OK to close File System properties. Close System
+  properties.
+
+  Windows may prompt you to restart your computer at this point if changes have
+  been made. To restart your computer, click the Restart button and then wait
+  for your computer to restart Windows. Then return to the Control Panel.
+
+6. In Control Panel, double click Multimedia, and then click the Advanced tab.
+
+7. Double-click Media Control Devices. Click the Wave Audio Device (Media
+  Control) option, and then click Properties.
+
+8. Click Settings, drag the slider to maximum (9 seconds), and then click OK.
+  Click OK to close Wave Audio Device (Media Control) properties. Click OK to
+  close Multimedia properties.
+
+9. Reinstall MSB Ocean.
+
+After following these steps, MSB Ocean should run successfully.
+
+Windows 3.x
+-----------
+
+1. In File Manager, delete the MSBOcean folder. By default, the MSBOcean folder
+  is located in the Mskids folder on drive C.
+
+2. On the File menu in Program Manager, click Run.
+
+3. On the Command line, type the following and press ENTER:
+
+  sysedit
+
+4. In the Autoexec.bat file, add a switch to the Smartdrv.exe line to disable
+  CD-ROM caching. For example:
+
+  Smartdrv.exe /u
+
+5. Save the Configuration Editor changes.
+
+6. In Program Manager, open the Control Panel, usually located in the Main
+  program group.
+
+7. Double-click the Drivers icon, and then select MCI Sound. Click Setup and
+  drag the slider to maximum (9 seconds). Click OK to close the MCI Sound
+  Setting window. Click OK to close the Drivers Control Panel.
+
+8. Exit Windows.
+
+9. Run a diagnostic disc utility such as Scandisk and fix any errors.
+
+10. Reset the computer, and restart Windows.
+
+11. Reinstall MSB Ocean.
+
+After following these steps, MSB Ocean should run successfully.
+
+Other Possible Solutions
+------------------------
+
+NOTE: Running a CD audio program in the background can also cause this error.
+Closing the CD audio program can solve this problem.
+
+Additional query words: 1.00 msbhb msbss frizz kbmm multimedia msbocean msbsea frizzle compact disc disk cd-rom winmsbhuman msbhuman
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOcean kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156754: Limit of 26 Catalogs with Microsoft Index Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156754: Limit of 26 Catalogs with Microsoft Index Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156754/","publisher":null,"image":null,"headline":"Q156754: Limit of 26 Catalogs with Microsoft Index Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156754-limit-of-26-catalogs-with-microsoft-index-server">Q156754: Limit of 26 Catalogs with Microsoft Index Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156754
+Product(s): Internet Information Server
+Version(s): winnt:1.0,2.0; :
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 30-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server versions 1.0, 2.0 
+- Indexing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to use an Administrators page or submit a query with more than 26
+catalogs directories under Microsoft Index Server, you receive the following
+error message:
+
+  Call failed for unknown reason 0x80041600 while processing the query
+
+CAUSE
+=====
+
+This error message occurs if you have created more than 26 catalog directories.
+Microsoft Internet Information Server (IIS) version 1.0 has a limit of 26
+catalog directories. This is a hardcoded limit and is currently viewed and
+adequate for implementation.
+
+You are discouraged from using multiple catalogs because 26 catalogs take
+substantially more space than one catalog containing the same data. Both threads
+and processes are unique to a given catalog. 26 catalogs will be 26 daemon
+processes (Cidaemon.exe) and over 100 extra threads. This takes a large amount
+of physical memory (RAM); therefore, it is not the optimal way to operate.
+
+RESOLUTION
+==========
+
+Indexing Service:
+
+This is not an issue in Windows 2000 Indexing Service. By default, a maximum of
+33 catalogs can be created. You can modify this limit by changing the
+MaxCatalogs registry entry in the following location:
+
+  HKEY_LOCAL_MACHINE\System\Currentcontrolset\Control\Contentindex
+
+Note: It is still not recommended to have multiple catalogs.
+
+Index Server:
+
+To control the directories that are being searched rather than creating unique
+catalogs, Microsoft recommends that you use the CISCOPE and the CIRESTRICTIONS
+flags.
+
+The CiSCope flag indicates the topmost directory (either the virtual root or the
+physical path) that will be searched in a given query.
+
+NOTE: This parameter is not valid in Administrator pages and should only be used
+in Queries.
+
+The CiRestrictions flag can be used to limit your scope further and is the query
+itself that is being processed.
+
+MORE INFORMATION
+================
+
+Use the following information as an example.
+
+In the Internet Service Manager, you have the following virtual directories
+assigned:
+
+Directory           Alias
+--------------------------------
+C:\InetPub\WWWroot  &lt;Home&gt;
+C:\InetPub\Scripts  /Scripts
+c:\MyFiles          /Myfiles
+C:\OtherStuff       /OtherStuff
+
+and the following directory structure.
+
+C:\Myfiles\Cats
+C:\Myfiles\Dogs
+C:\MyFiles\Pigs
+C:\MyFiles\Cows
+C:\MFiles\Cows\Brown
+C:\MyFiles\Cows\Spotted
+C:\MyFiles\Cows\Green
+
+To specify the appropriate CISCOPE and CIRESTRICTIONS, you should use the form
+fields you will find in the sample query HTML document (found under Start,
+Programs, Microsoft Index Server, Index Server Sample Query Form).
+
+  &lt;INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/"&gt;
+
+This value will search all virtual roots starting at the topmost level.
+
+If you wanted a search to start at the /Myfiles/Dogs directory, you can use
+something similar to the following:
+
+&lt;INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/dogs"&gt;
+or
+&lt;INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/Cows"&gt;
+or
+&lt;INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/dogs/brown"&gt;
+or
+&lt;INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="c:\MyFiles\Cown\Green"&gt;
+
+The CiRestrictions flag normally contains the query parameters to search for
+such, as in the following example.
+
+&lt;TD&gt;
+&lt;INPUT TYPE="TEXT" NAME="CiRestriction" SIZE="60" MAXLENGTH="100"
+VALUE=""&gt;
+&lt;/TD&gt;
+
+This is the Form Field that the user types their query into and will take the
+text typed in to pass it to the IDQ file. This allows you to use a particular
+IDQ for multiple queries by changing the HTML code, and the user can use the
+appropriate HTML form for a particular scope in the query. Alternatively, you
+can have the user type in the scope information and pass it similar to the way
+the example passes the CiRestriction value.
+
+For additional information, please see the documentation in the Online "Users
+Guide" that outlines these flags and covers the methods described above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ200
+Version           : winnt:1.0,2.0; :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

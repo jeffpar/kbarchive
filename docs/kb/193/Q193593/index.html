@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193593/","publisher":null,"image":null,"headline":"Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193593-prb-cannot-paste-printscreen-result-to-ole-control">Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193593
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Pressing the ALT+PRINTSCRN key combination turns the OLE control's PasteOK
+property to False, and the bitmap in the clipboard cannot be pasted to the OLE
+control.
+
+CAUSE
+=====
+
+There are two kinds of Clipboard formats; one is the traditional format and the
+other is the OLE format. Microsoft's Visual Basic OLE control is designed to
+hold the objects that can either be linked or embedded in the control. It
+requires the clipboard to contain the OLE information to be pasted into it.
+However, after pressing the ALT+PRINTSCRN key combination, the clipboard format
+is in the traditional format. For the same reason, simple metafiles in the
+clipboard cannot be pasted into the OLE control either.
+
+RESOLUTION
+==========
+
+To workaround this problem, the clipboard format needs to be transformed from
+traditional format to OLE format.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce and Work Around Behavior
+-------------------------------------------
+
+The following is an example of using a Rich Textbox to transform the clipboard
+format from traditional format to OLE format and make the paste possible. The
+basic idea is to paste the bitmap from the clipboard to a Rich Textbox and then
+copy it back from the Rich Textbox to the clipboard. In the example, the
+SendKeys function is used to paste to and copy from the clipboard.
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. Put an OLE control on Form1 and keep the default name, OLE1. Click Cancel
+  when the "Insert Object" dialog box comes up.
+
+3. Put a CommandButton on Form1 and keep the default name, Command1.
+
+4. Add the following code to the code window of Form1:
+
+        Private Sub Command1_Click()
+          if OLE1.PasteOk = True then
+              OLE1.Paste
+          else
+              msgbox "Can not paste!"
+          End if
+        End Sub
+
+5. Run the application. Pressing the ALT+PRINTSCRN key combination and then
+  click the CommandButton. The message box "Can not paste!" is displayed,
+  demonstrating the problem.
+
+6. Stop the application.
+
+7. Select Components from the Project menu and check "Microsoft Rich Textbox
+  Control X.0."
+
+8. Add a Rich Textbox to Form1 and keep the default name, RichTextBox1. Make
+  sure its Visible property is set to True and its TabStop property is set to
+  False. Make the Rich Textbox as small as possible and hide it under the
+  CommandButton (because you don't want it to show on the screen). If
+  necessary, right-click on the Rich Textbox and click "Send to Back."
+
+9. Change the Command1_Click event handler to be:
+
+        Private Sub Command1_Click()
+          ' use RichTextBox to transform the clipboard info
+          RichTextBox1.TextRTF = ""
+          RichTextBox1.SetFocus
+          SendKeys "^v", True
+          SendKeys "^+{HOME}", True
+          SendKeys "^c", True
+          RichTextBox1.TextRTF = ""
+
+          if OLE1.PasteOk = True then
+              OLE1.Paste
+          else
+              msgbox "Can not paste!"
+          End if
+        End Sub
+
+10. Run the application again. Press the ALT+PRINTSCRN key combination and then
+  click on Command1. This time the screen capture is pasted to the OLE
+  control.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp500 kbVBp600 kbOLE kbClipboard
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

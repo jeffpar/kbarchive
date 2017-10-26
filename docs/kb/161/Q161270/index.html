@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161270/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161270/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161270/","publisher":null,"image":null,"headline":"Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161270-howto-extend-the-scrolling-capabilities-of-a-textbox-control">Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161270
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the Windows API function SendMessage, you can scroll text a specified
+number of lines vertically and/or a specified number of columns horizontally in
+a text box. You can also scroll text programmatically, without any user
+interaction. This technique extends a text box's scrolling capabilities beyond
+those provided by its built-in properties and methods.
+
+MORE INFORMATION
+================
+
+In Visual Basic, you can scroll text in a text box vertically or horizontally by
+actively clicking the vertical or horizontal scroll bar respectively, at run
+time. However, the text always scrolls one line or one column per click of the
+scroll bar. Furthermore, there are no built-in properties or methods to scroll
+text without user interaction. To work around these limitations, you can call
+the Windows API SendMessage function using the EM_LINESCROLL message.
+SendMessage requires the following parameters:
+
+     SendMessage(hWnd, EM_LINESCROLL, wParam, lParam) where:
+
+- hWnd is the hWnd of the text box.
+
+- wParam is used to specify the number of horizontal columns to scroll. A
+  positive value causes text to scroll to the left. A negative value causes
+  text to scroll to the right.
+
+- lParam is used to specify the number of vertical lines to scroll. A positive
+  value causes text to scroll upward. A negative value causes text to scroll
+  downward.
+
+SendMessage returns True if the text box is multiline and False if it is
+single-line. Note that calling SendMessage to scroll text vertically does not
+require a vertical scroll bar, but the length of text within the text box should
+exceed the text box height. To scroll text horizontally, a scroll bar is
+required.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project. Form1 is added by default.
+
+2. Add a TextBox control, Text1, to Form1 and change its MultiLine property to
+  True and its ScrollBars property to 3-Both.
+
+3. Add two CommandButton controls, Command1 and Command2, to Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+        Const EM_LINESCROLL = &amp;HB6
+
+        Private Declare Function SendMessage Lib "User32" Alias _
+        "SendMessageA" _
+           (ByVal hWnd As Long, _
+            ByVal wMsg As Integer, _
+            ByVal wParam As Integer, _
+            ByVal lParam As Long) As Long
+
+        Private Sub Form_Load()
+           Dim intLineIndex As Integer, intWordIndex As Integer
+
+           'Initialize Text1.
+           Text1.Font = "Courier New"
+           Text1.Text = ""
+           For intLineIndex = 1 To 25             'Add 25 lines of text.
+              Text1.Text = Text1.Text &amp; "Line" &amp; Str$(intLineIndex)
+              For intWordIndex = 1 To 5           'Make each line 12 words
+                                                  'long.
+                 Text1.Text = Text1.Text &amp; " Word" &amp; Str$(intWordIndex)
+              Next intWordIndex
+              Text1.Text = Text1.Text &amp; vbCrLf
+           Next intLineIndex
+
+           Command1.Caption = "Vertical"
+           Command2.Caption = "Horizontal"
+        End Sub
+
+        Private Sub Command1_Click()
+           Dim lngRet As Long
+
+           lngRet = SendMessage(Text1.hWnd, EM_LINESCROLL, 0, 5&amp;)
+        End Sub
+
+        Private Sub Command2_Click()
+           Dim lngRet As Long
+
+           lngRet = SendMessage(Text1.hWnd, EM_LINESCROLL, 5, 0&amp;)
+        End Sub
+
+5. Press the F5 key to run the program. Click "Vertical" to scroll the text up
+  five lines at a time and click "Horizontal" to scroll the text left five
+  columns at a time.
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

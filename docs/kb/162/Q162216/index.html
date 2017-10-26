@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162216/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162216/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162216/","publisher":null,"image":null,"headline":"Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162216-flight-sim-95-err-msg-invalid-page-fault-in-weathermdll">Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162216
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-2002
+
+6.0
+WINDOWS
+kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating weather areas in Microsoft Flight Simulator for Windows 95,
+version 6.0, you may receive the following error messages:
+
+  Invalid Page Fault in Weatherm.dll.
+
+  -or-
+
+  Invalid Page Fault in Kernel32.dll.
+
+You will receive this error message when attempting to create multiple weather
+areas using the Advanced Weather dialog box.
+
+STEPS TO REPRODUCE PROBLEM
+--------------------------
+
+The following steps contain information to reproduce the problem. If are
+experiencing this
+
+1. Turn on the Advanced Weather option as follows:
+
+  a. In Flight Simulator for Windows 95, click Options.
+
+  b. Click Preferences.
+
+  c. Click Use Advanced Weather Dialog.
+
+2. Add multiple weather areas as follows:
+
+  a. On the World menu, click Weather Areas.
+
+  b. Click Add Area.
+
+  c. Click OK to exit the dialog box.
+
+To create multiple weather areas, repeat the steps above for each area.
+
+3. Add details for each weather area as follows:
+
+  a. On the World menu, click Weather.
+
+  b. In the Advanced Weather dialog box notice the five topic tabs.
+
+  c. Click the Clouds tab, and then click Add Layer. Any setting is OK.
+
+  d. Click the Windows tab, and then click Add Layer. Any setting is OK.
+
+  e. Click the Temperature tab, and the click Add Layer. Any setting is OK.
+
+  f. Click the Visibility tab and set the visibility. Any setting is OK.
+
+  g. Click the Pressure tab, and then click Drift.
+
+Do this for each weather area. Any setting is OK, but make sure the Drift button
+is clicked.
+
+When all weather area details are set, click OK to exit the Advanced Weather
+dialog box. You will now receive one of the error messages listed at the top of
+this article.
+
+RESOLUTION
+==========
+
+To resolve this error message, leave the Drift set to off, or set the Transition
+to 000.
+
+The Drift button is set to off by default. Leaving it off will prevent the error
+message.
+
+Transition can be set to 000 by editing the Weather Area.
+
+To edit a weather area, do the following:
+
+1. Click Weather Areas on the World menu.
+
+2. Change the Transition number to 000.
+
+You can also set the Transition to 000 in the initial creation of the weather
+area.
+
+Additional query words: 1.00 6.00 flightsim fs6 fs95 transition weather weatherm kernel32.dll IPF get
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

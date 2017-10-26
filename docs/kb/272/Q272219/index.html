@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272219/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272219/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272219/","publisher":null,"image":null,"headline":"Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272219-prb-vfp-app-installed-with-vsi-creates-foxuser-files-on-desktop">Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q272219</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">FoxPro</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbAppSetup</span> <span class="n">kbMiscTools</span> <span class="n">kbvfp600fix</span> <span class="n">kbGrpDSFox</span> <span class="n">kbDSupport</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">22</span><span class="p">-</span><span class="n">OCT</span><span class="p">-</span><span class="m">2000</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span><span class="p">,</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">a</span> <span class="n">user</span> <span class="n">starts</span> <span class="n">an</span> <span class="n">executable</span> <span class="n">file</span> <span class="n">that</span> <span class="n">was</span> <span class="n">developed</span> <span class="k">with</span> <span class="n">Visual</span> <span class="n">FoxPro</span>
+<span class="p">(</span><span class="n">VFP</span><span class="p">)</span> <span class="k">from</span> <span class="n">a</span> <span class="n">desktop</span> <span class="n">shortcut</span> <span class="n">that</span> <span class="n">was</span> <span class="n">created</span> <span class="n">by</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span>
+<span class="p">(</span><span class="n">VSI</span><span class="p">)</span> <span class="k">package</span><span class="p">,</span> <span class="n">the</span> <span class="n">user</span> <span class="n">may</span> <span class="n">see</span> <span class="n">two</span> <span class="n">new</span> <span class="n">files</span> <span class="n">on</span> <span class="n">the</span> <span class="n">desktop</span><span class="p">.</span> <span class="n">The</span> <span class="n">names</span> <span class="k">of</span> <span class="n">these</span>
+<span class="n">files</span> <span class="n">may</span> <span class="n">vary</span><span class="p">,</span> <span class="n">but</span> <span class="n">they</span> <span class="n">are</span> <span class="n">usually</span> <span class="n">Foxuser</span><span class="p">.</span><span class="n">dbf</span> <span class="k">and</span> <span class="n">Foxuser</span><span class="p">.</span><span class="n">fpt</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="n">Foxuser</span><span class="p">.</span><span class="n">dbf</span> <span class="k">and</span> <span class="n">Foxuser</span><span class="p">.</span><span class="n">fpt</span> <span class="n">pair</span> <span class="n">make</span> <span class="n">up</span> <span class="n">a</span> <span class="n">resource</span> <span class="n">file</span> <span class="n">for</span> <span class="n">the</span> <span class="n">VFP</span>
+<span class="n">application</span><span class="p">,</span> <span class="n">storing</span> <span class="n">useful</span> <span class="n">information</span> <span class="n">such</span> <span class="k">as</span> <span class="n">window</span> <span class="n">positions</span><span class="p">,</span> <span class="n">Browse</span> <span class="n">window</span>
+<span class="n">configurations</span><span class="p">,</span> <span class="k">and</span> <span class="n">label</span> <span class="n">definitions</span><span class="p">.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">a</span> <span class="n">VFP</span> <span class="n">application</span>
+<span class="n">automatically</span> <span class="n">creates</span> <span class="n">these</span> <span class="n">two</span> <span class="n">files</span> <span class="n">on</span> <span class="n">startup</span><span class="p">,</span> <span class="n">unless</span> <span class="n">configured</span> <span class="n">otherwise</span>
+<span class="p">(</span><span class="n">see</span> <span class="n">the</span> <span class="s2">"Resolution"</span> <span class="n">section</span> <span class="n">for</span> <span class="n">more</span> <span class="n">information</span><span class="p">).</span> <span class="n">These</span> <span class="n">files</span> <span class="n">are</span> <span class="n">usually</span>
+<span class="n">created</span> <span class="k">in</span> <span class="n">the</span> <span class="n">same</span> <span class="n">folder</span> <span class="k">as</span> <span class="n">the</span> <span class="n">application</span><span class="p">,</span> <span class="k">or</span> <span class="k">in</span> <span class="n">the</span> <span class="n">START</span> <span class="k">IN</span> <span class="n">folder</span> <span class="k">if</span> <span class="n">the</span>
+<span class="n">application</span> <span class="n">is</span> <span class="n">started</span> <span class="n">by</span> <span class="n">means</span> <span class="k">of</span> <span class="n">a</span> <span class="n">shortcut</span><span class="p">.</span>
+
+<span class="n">Installation</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">are</span> <span class="n">created</span> <span class="k">with</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span> <span class="n">can</span> <span class="nb">create</span>
+<span class="n">shortcuts</span> <span class="k">to</span> <span class="n">applications</span> <span class="n">that</span> <span class="n">they</span> <span class="n">install</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="k">not</span> <span class="n">possible</span> <span class="k">to</span>
+<span class="n">change</span> <span class="n">the</span> <span class="n">START</span> <span class="k">IN</span> <span class="n">property</span> <span class="k">of</span> <span class="n">these</span> <span class="n">shortcuts</span> <span class="k">from</span> <span class="n">the</span> <span class="n">VSI</span> <span class="n">interface</span><span class="p">.</span> <span class="k">As</span> <span class="n">a</span>
+<span class="n">result</span><span class="p">,</span> <span class="n">the</span> <span class="n">START</span> <span class="k">IN</span> <span class="n">property</span> <span class="n">is</span> <span class="k">set</span> <span class="n">by</span> <span class="n">default</span> <span class="k">to</span> <span class="n">the</span> <span class="n">folder</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span>
+<span class="n">shortcut</span><span class="p">.</span> <span class="n">The</span> <span class="n">VFP</span> <span class="n">application</span> <span class="n">creates</span> <span class="n">its</span> <span class="n">Foxuser</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="n">START</span> <span class="k">IN</span> <span class="n">folder</span>
+<span class="k">of</span> <span class="n">the</span> <span class="n">shortcut</span><span class="p">,</span> <span class="n">which</span> <span class="k">in</span> <span class="n">this</span> <span class="k">case</span> <span class="n">is</span> <span class="n">the</span> <span class="n">user</span><span class="s1">'s desktop.
+
+RESOLUTION
+==========
+
+There are two ways to prevent this behavior:
+
+- Configure the VFP application that you are are distributing with VSI to not
+  create a resource file. To do this, include a Config.fpw file with the
+  application and adding the following line of code to it:
+
+  RESOURCE = OFF
+
+-or-
+
+- Use the Orca table editing tool, which is available in the Windows Installer
+  Software Development Kit (SDK), to set the START IN property of the shortcuts
+  that are contained in the .msi file. For information on installing Orca,
+  click the article number below to view the article in the Microsoft Knowledge
+  Base:
+
+  Q255905 HOWTO: Use the Orca Database Editor to Edit Windows Installer Files
+
+  After you have installed Orca, follow the steps below to change the START IN
+  property of the shortcuts that your VSI package creates.
+
+  NOTE: These steps assume that you have already built your VFP application
+  installation package with VSI.
+
+  1. Start Orca and from the main menu, select File and then select Open.
+
+  2. Locate and select the .msi package that you created with VSI.
+
+  3. With the .msi table open, scroll through the list on the left-hand side of
+     the Orca window, locate the entry for "Shortcut", and click it.
+
+  4. When you click the "Shortcut" entry, records appear in the right-hand pane
+     of the Orca window, one for each shortcut that you created. In the
+     right-hand pane, select each entry and replace the empty WkDir field with
+     "TARGETDIR" (without the quotation marks).
+
+  5. Save and close the .msi file, and then install your application. The
+     Foxuser.* files should be created in the same folder as the EXE when it is
+     started from the desktop shortcut.
+
+IMPORTANT: You will need to do this each time that you rebuild your installation
+package with VSI, because each rebuild sets the WkDir field to its default
+state.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual FoxPro, create a simple "Hello World" EXE. To force the creation of
+  a resource file, include a Config.fpw file with the EXE that contains the
+  following line:
+
+  RESOURCE=ON
+
+2. Use VSI to create an installation package (including the proper merge
+  modules) and create a desktop shortcut using the File System window. For
+  additional information on using VSI with VFP applications, see the
+  "References" section below.
+
+3. Install your VFP application using the VSI package that you created.
+
+4. After the installation is complete, double-click the desktop shortcut to your
+  application. You should see two new files, Foxuser.dbf and Foxuser.fpt, on
+  the desktop.
+
+REFERENCES
+==========
+
+For information on shortcuts and the Visual Studio Installer, see the following
+article in the Microsoft Knowledge Base:
+
+  Q242586 INFO: Can'</span><span class="n">t</span> <span class="n">Change</span> <span class="n">the</span> <span class="s1">'Start in:'</span> <span class="n">Property</span> <span class="k">of</span> <span class="n">a</span> <span class="n">Shortcut</span> <span class="k">in</span> <span class="n">VSI</span>
+
+<span class="n">The</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span> <span class="n">is</span> <span class="n">available</span> <span class="k">to</span> <span class="n">registered</span> <span class="n">users</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Visual</span>
+<span class="n">Studio</span> <span class="k">or</span> <span class="n">its</span> <span class="n">component</span> <span class="n">parts</span> <span class="n">at</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Developer</span> <span class="n">Workshop</span>
+<span class="p">(</span><span class="n">MSDN</span><span class="p">)</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">msdn</span><span class="p">.</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">vstudio</span><span class="p">/</span><span class="n">downloads</span><span class="p">/</span><span class="n">vsi</span><span class="p">/</span><span class="n">default</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">on</span> <span class="n">using</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="k">with</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span>
+<span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Installer</span> <span class="n">help</span> <span class="n">file</span><span class="p">,</span> <span class="k">as</span> <span class="n">well</span> <span class="k">as</span> <span class="s2">"Using Visual Studio Installer for
+Distributing Visual FoxPro 6.0 Applications"</span> <span class="n">at</span> <span class="n">the</span> <span class="n">following</span> <span class="n">MSDN</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">msdn</span><span class="p">.</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">library</span><span class="p">/</span><span class="n">techart</span><span class="p">/</span><span class="n">usingvsi</span><span class="p">.</span><span class="n">htm</span>
+  <span class="p">(</span><span class="n">http</span><span class="p">://</span><span class="n">msdn</span><span class="p">.</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">library</span><span class="p">/</span><span class="n">techart</span><span class="p">/</span><span class="n">usingvsi</span><span class="p">.</span><span class="n">htm</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="n">Microsoft</span> <span class="n">Corporation</span> <span class="m">2000</span><span class="p">,</span> <span class="n">All</span> <span class="n">Rights</span> <span class="n">Reserved</span><span class="p">.</span> <span class="n">Contributions</span> <span class="n">by</span> <span class="n">Trevor</span>
+<span class="n">Hancock</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">Corporation</span><span class="p">.</span>
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbAppSetup</span> <span class="n">kbMiscTools</span> <span class="n">kbvfp600fix</span> <span class="n">kbGrpDSFox</span> <span class="n">kbDSupport</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVSsearch</span> <span class="n">kbVFPsearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbVSI</span> <span class="n">kbVSI100</span> <span class="n">kbVSI110</span> <span class="n">kbVFP500</span> <span class="n">kbVFP600</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbprb</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

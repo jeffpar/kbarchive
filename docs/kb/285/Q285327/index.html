@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q285327: Games: W95.Hybris Virus Alert | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q285327: Games: W95.Hybris Virus Alert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/285/Q285327/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/285/Q285327/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/285/Q285327/","publisher":null,"image":null,"headline":"Q285327: Games: W95.Hybris Virus Alert","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q285327-games-w95hybris-virus-alert">Q285327: Games: W95.Hybris Virus Alert</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q285327
+Product(s): Microsoft Home Games
+Version(s): 1.0,2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Age of Empires, Gold Edition 
+- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+- Microsoft Age of Empires II Expansion: The Conquerors 
+- Microsoft Asheron's Call, version 1.0 
+- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+- Microsoft Flight Simulator 2000 
+- Microsoft Flight Simulator 2000 Professional Edition 
+- Microsoft Links 2001 
+- Microsoft MechCommander 2.0, version 1.0 
+- Microsoft MechWarrior 4: Vengeance 
+- Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play one of the programs listed at the beginning of this article, you
+may receive any of the following error messages:
+
+   - EXCEPTION: Access violation in PopupMsg::ONMBDOWN()
+
+   - STOP: Cannot create Resource\pilots\&lt;username&gt;\games\&lt;Mission
+  name&gt;.mw4
+
+   - STOP: File not found Resource\props.mw4
+
+   - The game could not be saved. Free some disk space and try again.
+
+   - This feature will not work in the trial version.
+
+   - Could not load keymap file default.map. Default keymap will be used instead.
+
+   - Dlgalert.bmp Cannot Be Loaded.
+
+   - Can't find file agencyfb20.d3f
+
+   - Cannot find the file assets\graphics\agencyfb14.d3f.
+
+Or, for Age of Empires 2, you may receive the following error message:
+
+  The scenario could not be loaded.
+
+NOTE: This happens with the second campaign, once you've beaten the first one.
+
+Or, when you finish a race, the game may stop responding (hang) or your mouse
+pointer may disappear.
+
+Or, when joining a CFS1 or CFS2 multiplayer session you may receive an error
+stating that some planes are unavailable or locked even though those planes are
+unlocked in the Multiplayer settings on the Host computer.
+
+Or, you may lose keyboard functions within the game. And, upon going to the
+options menu to reassign keyboard assignments, you may find that the keyboard
+assignments are cleared out and non-configurable.
+
+CAUSE
+=====
+
+This behavior can occur if the Wsock32.dll file on your computer is infected
+with the W95.Hybris worm virus.
+
+NOTE: This can also occur if the wsock32.dll is corrupted.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, run anti-virus software that contains the latest virus
+signature file, and perform a thorough scan of your computer.
+
+Support for this particular virus is available from many anti-virus programs.
+
+After you detect and remove the virus, extract a new copy of the Wsock32.dll
+file. Use the steps below for your version of Windows operating system.
+
+Microsoft Windows Millennium (Me)
+---------------------------------
+
+The Windows Me system files are protected. To extract protected files, follow the
+steps given in the following Microsoft Knowledge Base article:
+
+  Q265371 How to Extract and Replace a Protected File in Windows Me
+
+In Microsoft Windows 98
+-----------------------
+
+1. Click Start, click Run, type "sfc" (without the quotation marks) in the Open
+  box, and then click OK.
+
+2. Click "Extract one file from the installation disk".
+
+3. Type "c:\windows\system\wsock32.dll" (without the quotation marks), and then
+  click Start.
+
+4. In the "Restore from" box, type "c:\windows\options\cabs" (without the
+  quotation marks) or browse to the Win98 folder on your Windows 98 CD-ROM.
+
+5. Click OK, and then click Skip to skip the back up of the file. (If you click
+  OK, you might back up the virus.)
+
+6. Follow the instructions on the screen to complete the installation, and then
+  restart the computer.
+
+The Wsock32.dll file is located in the Precopy1.cab cabinet file on the Windows
+98 CD-ROM.
+
+In Microsoft Windows 95
+-----------------------
+
+The Wsock32.dll file can be found in the following CAB files:
+
+- Win95_11.cab on the Windows 95 CD-ROM
+
+- Win95_18.cab on the Windows 95 OSR2 CD-ROM
+
+- Win95_12.cab on the Windows 95 DMF disks
+
+- Win95_19.cab on the Windows 95 non-DMF disks
+
+To extract the Wsock32.dll file, from the Windows 95 CD-ROM:
+
+1. Click Start, click "Shut down", and then click "Restart in MS-DOS mode".
+
+2. Either type
+
+  extract /a c:\windows\options\cabs\win95_11.cab wsock32.dll /l
+  c:\windows\system
+
+or
+
+Insert your Windows 95 CD-ROM into your CD-ROM drive, and then type
+
+  extract /a &lt;d&gt;:\win95\win95_11.cab wsock32.dll /l c:\windows\system
+
+where &lt;d&gt; is the drive letter of your CD-ROM drive.
+
+In Microsoft Windows NT 4.0
+---------------------------
+
+1. Rename the Wsock32.dll file in the Windows\System32 folder to Wsock32.old.
+
+For information about how to rename a file, click Start, click Help, click the
+Index tab, type "renaming" (without the quotation marks), and then double-click
+the "Renaming files" topic.
+
+2. Click Start, point to Programs, and then click Command Prompt
+
+3. Type "cd\" (without the quotation marks), and then press ENTER.
+
+4. Insert the Windows NT 4.0 CD-ROM into the CD-ROM drive, and then close the
+  Windows NT Setup screen if it is displayed.
+
+5. Type the following line at the command prompt, and then press ENTER:
+
+  expand &lt;drive&gt;:\i386\wsock32.dl_
+  c:\&lt;windows&gt;\system32\wsock32.dll
+
+where &lt;drive&gt; is the drive letter assigned to your CD-ROM drive, and where
+&lt;windows&gt; is the name of the folder in which Windows NT 4.0 is installed.
+
+6. Type "exit" (without the quotation marks), and then press ENTER to return to
+  windows.
+
+For additional information about how to extract files from the Windows CD-ROM or
+a Windows floppy disk, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+MORE INFORMATION
+================
+
+It is possible to detect HYBRIS by using the Find program (Search in Windows
+Me/Windows 2000). Search the system for wsock32.dll using the Containing Text
+field. To do this follow the steps below:
+
+1. Click Start, point to Find, and then click "Files or Folders". In Windows
+  ME/Windows 2000, click Start, point to Search, and then click "For files or
+  folders".
+
+2. In the Named field (or "Search for files or folders named:") type
+  "wsock32.dll" (without the quotation marks).
+
+3. In the "Containing Text" field, type "Hybris" (without the quotation marks).
+
+4. Click "Find Now" (or "Search Now").
+
+NOTE: the Containing Text field is on the Advanced tab in Windows 95.
+
+If Windows finds any files, then the system may be infected with the HYBRIS virus
+and you should contact your antivirus vendor. For additional information about
+third-party antivirus vendors and products, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q49500 List of Antivirus Software Vendors
+
+For more detailed information about this particular virus, visit the following
+Web site:
+
+  http://www.mcafee.com
+
+Additional query words: msgame hyrbis w95 win95 win98 connectivity network online winsock internet access explorer infect delete rename saved overwrite props mw4 mech mech4 links2k1 aoe links aok trial hd drive space save game mw warrior sockets wsock32 dll CFS1 CFS2 CFS
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbLinkGolfSearch kbGamesSearch kbFlightSimSearch kbGolfSearch kbMSNSearch kbMotocrossSearch kbAsheronSearch kbAOESearch kbMechCommSearch kbAsheron100 kbAOE2ExpConquerors kbAOE2Kings kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbMotocrossM2 kbLinks2001 kbMechCommander200 kbSimSearch
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147312: PRB: Error Importing Control into Component Gallery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147312: PRB: Error Importing Control into Component Gallery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147312/","publisher":null,"image":null,"headline":"Q147312: PRB: Error Importing Control into Component Gallery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147312-prb-error-importing-control-into-component-gallery">Q147312: PRB: Error Importing Control into Component Gallery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147312
+Product(s): Microsoft C Compiler
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbide kbVC kbVC400bug kbGrpDSTools
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you import an OLE Control into the Microsoft Developer Studio, the
+Component Gallery reports the following error:
+
+  Unable to import this OLE control. Make sure the control contains a valid
+  type library.
+
+CAUSE
+=====
+
+The Component Gallery is checking the version of the type library for the
+control against the version of the OLE Control itself. If the versions do not
+match, the error is generated.
+
+RESOLUTION
+==========
+
+The version identification for the control and the control's type library must
+be made to match. The version identification for an OLE control written in MFC
+is located in .cpp file that contains the CWinApp-derived class and will have
+the following format:
+
+     const WORD _wVerMajor = 1;
+     const WORD _wVerMinor = 0;
+
+The version identification for the control's type library is located in the .odl
+file for the control and will have the following format:
+
+  [ uuid(209E0960-66DC-11CF-8B9A-444553540000), version(1.0),
+  helpstring("KBCtl OLE Control module"), control ]
+  library KBCTLLib
+
+Notice that in the previous cases, the version of the control and the control's
+type library (which is generated from the .odl file) match. The version is 1.0
+in both cases.
+
+STATUS
+======
+
+This behavior is by design. This error typically occurs when the version
+identification of a control is incremented but the version of the control's type
+library is not made to match.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbide kbVC kbVC400bug kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137577: The Control Point Name is Invalid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137577: The Control Point Name is Invalid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137577/","publisher":null,"image":null,"headline":"Q137577: The Control Point Name is Invalid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137577-the-control-point-name-is-invalid">Q137577: The Control Point Name is Invalid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137577
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install Microsoft SNA Server version 2.11 on a Microsoft Windows NT
+server, the following error message appears when you run SNA Admin:
+
+  Error 3846:
+  The Control Point Name is invalid.
+  The name can be from one through eight alphanumeric characters long.
+
+This problem occurs when the Windows NT server name begins with a digit.
+
+CAUSE
+=====
+
+There is an IBM SNA standard that an APPC control point name cannot begin with a
+digit. If the Local Control Point Name is not already configured on the SNA
+Server, the Microsoft SNA Server 2.11 Admin program automatically sets the Local
+Control Point Name (in the server properties dialog) to the Windows NT
+computername. If the Windows NT computername starts with a digit, the SNA Admin
+program sets the local control point name to an invalid value.
+
+WORKAROUND
+==========
+
+To work around this problem, open the COM.CFG file with the command line
+command:
+
+  "SNAADMIN C:\SNA\SYSTEM\CONFIG\COM.CFG" (without the quotation marks)
+
+This opens the SNA Server configuration file off-line and allows you to make
+changes the configuration.
+
+If the "Servers and Connections" window in SNA Server Admin lists the SNA Server
+Name, double-click on the SNA Server Name and enter a valid Control Point Name.
+
+If the Servers and Connections window has only "No Assigned Services" listed, use
+the following process to add a SNA Server with a valid Control Point Name:
+
+1. Select Services from the SNA Server Admin Menu Bar.
+
+2. Select New Server from the Services drop down menu.
+
+3. Enter the NT Computer Name in the Server Name field on the Server Properties
+  dialog.
+
+4. Enter a valid Control Point Name in the Control Point Name field. If you
+  enter a Control Point, you must also enter a Network Name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna 2.11 snaadmin 3846
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

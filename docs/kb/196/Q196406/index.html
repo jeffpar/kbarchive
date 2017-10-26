@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196406: XADM: Replication Fails After Disaster Recovery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196406: XADM: Replication Fails After Disaster Recovery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196406/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196406/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196406/","publisher":null,"image":null,"headline":"Q196406: XADM: Replication Fails After Disaster Recovery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196406-xadm-replication-fails-after-disaster-recovery">Q196406: XADM: Replication Fails After Disaster Recovery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196406
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you follow standard disaster recovery procedures, the restored server
+appears to fail both in replication and mail transfer. All services start
+successfully and no errors are encountered.
+
+Prior to the recovery, the server was deleted from the site through the Exchange
+Server Administration program.
+
+CAUSE
+=====
+
+Removing a server from the site forces all other servers to purge the server
+from the list of valid servers in the site to be replicating with. When the
+server (both information store and directory service) is restored from backup
+after you Create a New Site in Exchange Server Setup, the other servers in the
+site will not begin replication with the server because there is no Reps-To or
+Reps-From raw value entries for the deleted server. The Reps-To and Reps-From
+entries are only created on "Joining An Existing Site" in Exchange Server Setup.
+
+WORKAROUND
+==========
+
+There are two possible options to restore the server to the original site:
+
+- Directory Restore - Depending on the size of the organization, each directory
+  could be restored to their original servers with a backup time prior to the
+  deletion. Each server must remain offline until all restores have been
+  completed.
+
+- Rebuilding the Directory - A more practical workaround to organizations
+  larger that a few servers is to build a new directory. If the removed server
+  was the system folder server for the site, perform the steps in the following
+  Microsoft Knowledge Base article prior to continuing:
+
+  Q152960 XADM: Reassigning Site Roles after Removing the First Server in an
+  Exchange Site
+
+  1. From the Exchange Administrator Program, on the Tools menu, click
+     Directory Export and export all Recipient containers and Distribution
+     Lists on this server. If possible, export these to the templates provided
+     on the Exchange 4.0 Server CD (Support\Samples\Csvs) to ensure all valid
+     data fields are populated. Verify the data after export.
+
+  2. In Control Panel Services, stop the Microsoft Exchange System Attendant.
+     When prompted, click OK to stop all of the other Microsoft Exchange Server
+     services.
+
+  3. Copy the Pub.edb, Priv.edb, all Edb*.log files, all Res*.log files and the
+     Edb.chk file to another directory or another server as a backup.
+
+  4. Run Setup.exe from the Exchange Server CD, and click Remove All when
+     prompted. Verify and remove all Exchange directories (across all drives if
+     Optimization was run).
+
+  5. Using the Exchange Administrator program on another server, remove this
+     server from the site if it is visible. Allow replication to occur -- the
+     time will depend on the links between the other servers in the site.
+
+  6. Run Setup.exe again, and join the existing site. This will provide the
+     installation with the same Organization Name and Site Name as before.
+
+     NOTE: Remember to reapply any Service Packs applied in the previous
+     installation.
+
+  7. In Control Panel Services, stop the Microsoft Exchange System Attendant.
+     When prompted, click OK to stop all of the other Microsoft Exchange Server
+     services.
+
+  8. Move all the files out of the Exchsrvr\Mdbdata directory (across all
+     drives if Optimization was run). Copy to this directory the all files that
+     were copied to another directory or server in step 1 (Pub.edb, Priv.edb,
+     all Edb*.log files, all Res*.log files and the Edb.chk file).
+
+  9. Start the Microsoft Exchange System Attendant and Microsoft Exchange
+     Directory services in Control Panel Services.
+
+  10. From a command prompt, change directories to Exchsrvr\Bin, and carry out
+     the following command:
+
+  ISINTEG -PATCH
+
+  11. Start the remaining Microsoft Exchange Server services in the Control
+     Panel Services tool.
+
+  12. Run the Microsoft Exchange Server Administrator Program against the
+     server you are reintroducing.
+
+  13. If there were any other Recipients container aside from the default
+     Recipients container, make sure the containers have replicated from one
+     of the other servers in the site before the restore.
+
+  14. Using the comma separated value (CSV) files created in Step 1, on the
+     Tools menu, click Directory Import and import the Directory entries into
+     the Directory.
+
+At this point, all Users should show up in their respective containers.
+
+After these procedures are done, the users will be able to log into the server
+without having lost their mail messages and the public folders will have been
+restored as well.
+
+Additional query words: replication setup recovery
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

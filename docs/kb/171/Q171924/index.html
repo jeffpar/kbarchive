@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171924: MSN Sign-In Screen Appears When Starting Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171924: MSN Sign-In Screen Appears When Starting Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171924/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171924/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171924/","publisher":null,"image":null,"headline":"Q171924: MSN Sign-In Screen Appears When Starting Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171924-msn-sign-in-screen-appears-when-starting-windows">Q171924: MSN Sign-In Screen Appears When Starting Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171924
+Product(s): The Microsoft Network
+Version(s): WINDOWS:2.5,2.51,2.52,2.6,95
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 16-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+- the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, you may be prompted to sign in to MSN, The Microsoft
+Network.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+- The Startup folder may contain a shortcut to MSN or to an e-mail client.
+
+- Microsoft Connection Manager may be the default service for all dial-up
+  Internet access. (MSN 2.5 only.)
+
+- A registry key is damaged or contains an incorrect value.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use the appropriate method:
+
+Remove the shortcut to MSN or your e-mail client from the Startup folder
+------------------------------------------------------------------------
+
+To do so, follow these steps:
+
+1. Right-click the Start button, and then click Open.
+
+2. Double-click the Programs folder.
+
+3. Double-click the Startup folder.
+
+4. Right-click the MSN shortcut icon, and then click Delete. Do the same for the
+  e-mail client shortcut icon if it is present in the Startup folder.
+
+Prevent Connection Manager from being the default service for all dial-up Internet access
+-----------------------------------------------------------------------------------------
+
+To do so, follow these steps:
+
+1. Right-click the MSN icon on the desktop, click Connection, and then click Yes
+  when you are prompted to delete the component's files.
+
+2. On the Options tab, click the Use this service for all dial-up Internet
+  access check box to clear it, and then click OK.
+
+3. Restart the computer.
+
+Reinstall MSN to correct the registry settings
+----------------------------------------------
+
+To do so, use the appropriate method:
+
+MSN Version 2.5 for Windows 95
+
+1. To uninstall MSN, please see the following article in the Microsoft Knowledge
+  Base: Q173274 &lt;A0&gt;How to Uninstall The Microsoft Network Version 2.5
+
+2. Reinstall MSN.
+
+MSN Version 2.52 for Windows 98
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Add/Remove Programs.
+
+2. On the Install/Uninstall tab, click any of the following entries, and then
+  click Add/Remove (Click Yes when you are prompted to delete the component's
+  files):
+
+  -Connection Manager
+  -Microsoft Chat 2.0
+  -MSN v2.5
+  -RealPlayer 4.0
+
+3. Click Start, point to Programs, Accessories, Communications and then click
+  Dial-Up Networking.
+
+4. Right-click any of the following Dial-Up Networking connections, and then
+  click Delete:
+
+  -MSN
+  -MSN Backup (for advanced use only)
+  -The Microsoft Network
+  -The Microsoft Network (Backup)
+
+5. Restart the computer.
+
+6. Close all ANTI-VIRUS and SYSTEM-MONITORING programs. For information about
+  closing anti-virus and system-monitoring programs, consult the program's
+  documentation or manufacturer.
+
+7. Insert the Windows 98 CD-ROM in the CD-ROM drive.
+
+8. If the Welcome to Windows 98 Setup screen appears, click Cancel.
+
+9. On the desktop click the Start, click Find, and then click "Files or
+  Folders".
+
+10. In the Named box type Msnstart.exe.
+
+11. In the Look in box select your CD ROM drive with your Windows 98 CD. Also
+  make sure that Include subfolders is checked and click Find Now.
+
+12. Double click Msnstart.exe, and then continue to follow the screen prompts.
+
+MSN Version 2.6 for Windows 95
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Add/Remove Programs.
+
+2. On the Install/Uninstall tab, click any of the following entries, and then
+  click Add/Remove:
+
+  Select each component in the following order:
+
+  -VRML Add-in 3.0
+  -Connection Manager
+  -Microsoft Chat 2.5
+  -MSN v2.6
+  -Microsoft Outlook Express (If using Win98 select Setup tab and remove check
+  from Outlook Express)
+  -Microsoft Internet Explorer 4.01 (NOTE: Not available on Win98)
+
+3. Repeat steps 2-3 to remove every program component.
+
+4. The MSN Setup program may also install any of the following programs. Repeat
+  steps 2-3 if you want to uninstall any of these programs:
+
+  -Microsoft Internet Explorer 3.02
+  -Microsoft Internet Mail and News 1.0
+  -Microsoft ActiveMovie
+  -Microsoft NetMeeting 2.0
+  -Interactive Music
+
+5. Restart the computer.
+
+6. Close all ANTI-VIRUS and SYSTEM-MONITORING programs. For information about
+  closing anti-virus and system-monitoring programs, consult the program's
+  documentation or manufacturer.
+
+7. Insert the MSN CD-ROM in the CD-ROM drive.
+
+  NOTE: This CD-ROM is sent to all current and new MSN subscribers.
+
+8. If the Welcome To MSN Setup screen appears, follow the prompts on the screen
+  to install MSN, and then skip step 4. If the Welcome To MSN Setup screen does
+  not appear, continue with the next step.
+
+9. Double-click My Computer on the desktop, double-click the CD-ROM drive
+  containing the MSN CD-ROM, and then double-click the Cdsetup.exe file.
+
+MORE INFORMATION
+================
+
+For information about installing MSN, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q159037 &lt;A0&gt; MSN Installation and Setup Questions &amp; Answers
+
+  Q159870&lt;A0&gt;Questions and Answers About Setting Up the New MSN
+
+  Q174200&lt;A0&gt; How to Install The Microsoft Network Version 2.5
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

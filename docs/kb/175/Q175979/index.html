@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175979: PRB: All Parameters of Choose Function Are Evaluated | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175979: PRB: All Parameters of Choose Function Are Evaluated" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175979/","publisher":null,"image":null,"headline":"Q175979: PRB: All Parameters of Choose Function Are Evaluated","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175979-prb-all-parameters-of-choose-function-are-evaluated">Q175979: PRB: All Parameters of Choose Function Are Evaluated</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175979
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you specify functions as the Choice arguments in a Choose function, all
+functions are executed.
+
+CAUSE
+=====
+
+The Choose function allows you to select a value from a list of choices based on
+the value passed as the index. For example, the following statement would result
+in x being assigned the value "b":
+
+     x = Choose(2, "a", "b", "c")
+
+The parameters passed to the Choose function do not need to be static values as
+in the above example. You can use function names instead:
+
+     x = Choose(2, MyFunction1(), MyFunction2(), MyFunction3())
+
+In this situation, all of the functions referenced are executed regardless of the
+index specified. In this example, the functions MyFunction1, MyFunction2, and
+MyFunction3 are all executed even though the result of MyFunction2 is the value
+returned by Choose.
+
+Choose is implemented as a function with a parameter array and every parameter
+must be evaluated before it can be passed to the Choose function.
+
+Visual Basic's implementation of the Choose function can be duplicated with the
+following function:
+
+     Public Function MyChoose(Index As Single, ParamArray Choice())
+        On Error GoTo BadChoice
+        If IsObject(Choice(Index - 1)) Then
+           Set MyChoose = Choice(Index - 1)
+        Else
+           MyChoose = Choice(Index - 1)
+        End If
+        Exit Function
+     BadChoice:
+        MyChoose = Null
+     End Function
+
+RESOLUTION
+==========
+
+Because this behavior is by design, another approach must be taken to avoid all
+parameters being evaluated. The logic of the Choose function can easily be
+broken down into an equivalent "If...Then...ElseIf" statement or a "Select Case"
+statement.
+
+Sample Choose Statement
+-----------------------
+
+     result = Choose(MyIndex, MyFunction1(), MyFunction2(), MyFunction3())
+
+Equivalent 'If...Then...ElseIf' Statement
+-----------------------------------------
+
+     If MyIndex = 1 Then
+        result = MyFunction1()
+     ElseIf MyIndex = 2 Then
+        result = MyFunction2()
+     ElseIf MyIndex = 3 Then
+        result = MyFunction3()
+     Else
+        result = Null
+     End If
+
+Equivalent 'Select Case' Statement
+----------------------------------
+
+     Select Case MyIndex
+        Case 1
+           result = MyFunction1()
+        Case 2
+           result = MyFunction2()
+        Case 3
+           result = MyFunction3()
+        Case Else
+           result = Null
+     End Select
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic project. Form1 is created by default.
+
+2. Add a Command button to Form1.
+
+3. Add the following code to Form1:
+
+        Option Explicit
+
+        Private Function MyFunction1() As Long
+           Debug.Print "MyFunction1"
+           MyFunction1 = 1
+        End Function
+
+        Private Function MyFunction2() As Long
+           Debug.Print "MyFunction2"
+           MyFunction2 = 2
+        End Function
+
+        Private Function MyFunction3() As Long
+           Debug.Print "MyFunction3"
+           MyFunction3 = 3
+        End Function
+
+        Private Sub Command1_Click()
+           Dim result
+           result = Choose(2, MyFunction1(), MyFunction2(), MyFunction3())
+        End Sub
+
+4. Save and run the project.
+
+5. Click the CommandButton. Note that the "Debug.Print" statements from the
+  three user-defined functions are executed even though the result of
+  MyFunction2 is the returned value.
+
+REFERENCES
+==========
+
+Visual Basic's Online Help for the Choose function.
+
+Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbVBp400 kbVBA
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145986/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145986/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145986/","publisher":null,"image":null,"headline":"Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145986-xcon-illegal-country-code-in-x400-address-causes-mta-to-hang">Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145986
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange message transfer agent (MTA) may stop responding after
+logging content conversion error messages similar to the following:
+
+  message NMI0210: X.400 Service Event, severity 14
+
+  (MTA DISP:FANOUT(15) Proc 112) 05-14-97 08:21:37pm
+  Content conversion failed
+  Object at fault 06006364
+  Conversion error 1029
+  MTS Identifier C=US;A=ABC;P=ABCMAIL;L=ABC+A85E08EENDSCA.TEW.55
+  Old content type 56010A00
+  New content type 2A864886F7140501
+
+  message NMI0062: X.400 Service Event, severity 12
+
+  (MTA DISP:FANOUT(15) Proc 112) 05-14-97 08:21:37pm
+  Delivery failure
+  X.400 reason code unable-to-transfer
+  X.400 diagnostic code content-type-not-supported
+  Internal qualifier 0
+  MTS Identifier C=US;A=ABC;P=ABCMAIL;L=ABC+A85E08EENDSCA.TEW.55
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+This problem occurs when the Exchange MTA receives a message from a foreign MTA
+that has an illegally formed X400 address containing a country code with a
+single character. All X400 country codes must be either two or three characters
+long.
+
+The MTA hangs when it attempts to perform content conversion on the message
+containing the invalid address. The Microsoft Exchange version 4.0 SP1, SP2,
+SP3, and SP4 MTA will not log content conversion failures to the BF0.LOG files
+if APDU logging is enabled. However, the Microsoft Exchange version 5.0 MTA will
+log content conversion errors to the BF0.LOG files if APDU logging has been
+enabled. This functionality has also been added for all 4.0 MTAs starting with
+build 996.18 which is a post SP4 build. This feature is extremely desirable
+since it allows messages that fail content conversion to be logged to the APDU
+logs in order to determine the cause of the failure. APDU logging is enabled by
+setting APDU logging to maximum and X.400 Service logging to minimum.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

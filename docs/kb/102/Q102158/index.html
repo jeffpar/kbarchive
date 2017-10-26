@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102158: FIX: ifstream Object Loses Character in Text Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102158: FIX: ifstream Object Loses Character in Text Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102158/","publisher":null,"image":null,"headline":"Q102158: FIX: ifstream Object Loses Character in Text Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102158-fix-ifstream-object-loses-character-in-text-mode">Q102158: FIX: ifstream Object Loses Character in Text Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102158
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbCPPonly kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbVC420 kbVC500fix
+Last Modified: 29-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application reads characters into an ifstream object opened in text
+mode, data may be lost and not placed into the buffer. The code does not provide
+any warning or other indication of this data loss.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. This problem was fixed in Visual C++ 5.0.
+
+MORE INFORMATION
+================
+
+The following code example demonstrates this problem by filling a buffer with
+the character sequence "01234567890..." and using an ifstream object to copy the
+data to another buffer. The transferred sequence reads as "013456..." Only the
+character "2" is missing from the sequence. The remainder of the sequence
+transfers correctly.
+
+Sample Code
+-----------
+
+  /*
+   * Compiler options needed:  -GX for 5.0 only
+   */ 
+
+  #include &lt;iostream.h&gt;
+  #include &lt;fstream.h&gt;
+
+  // To resolve the problem using Visual C++ 5.0, use the
+  // following three statements instead of the preceding two:
+  // 
+  // #include &lt;iostream&gt;
+  // #include &lt;fstream&gt;
+  // using namespace std;
+
+  void main(void)
+  {
+     ofstream os("test.tmp");
+     for (int i = 0; i &lt; 512; i++)
+     {
+        os.put((char)('0' + i % 10));
+     }
+     os.put('\n');
+     os.close();
+
+     streampos pos;
+     ifstream is("test.tmp");
+  // To resolve this error using Visual C++ 4.x and earlier, use the
+  // following line to open the ifstream instead of the line above.
+  // ifstream is("test.tmp", ios::binary);
+     for (int k = 0; k &lt; 10; k++)
+     {
+        pos = is.tellg();
+        cout &lt;&lt; (char)is.get();
+     }
+  }
+
+
+Additional query words: kbVC400bug 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbVC420 kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbVC410 kbVC420 kbVC200 kbVC32bitSearch kbVC16bitSearch
+Version           : :1.0,1.5,2.0,4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

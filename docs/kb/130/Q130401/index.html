@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130401: WAN Browsing May Fail After Promoting New PDC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130401: WAN Browsing May Fail After Promoting New PDC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130401/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130401/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130401/","publisher":null,"image":null,"headline":"Q130401: WAN Browsing May Fail After Promoting New PDC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130401-wan-browsing-may-fail-after-promoting-new-pdc">Q130401: WAN Browsing May Fail After Promoting New PDC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130401
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you promote a new PDC on a network that routes only TCP/IP, browse lists
+may no longer contain the names of all the computers and domains on the network.
+
+CAUSE
+=====
+
+In network where only TCP/IP is routed, the primary domain controller (PDC) acts
+as the domain master browser. The PDC is also be the master browser for its
+subnet. Every other subnet (an independent broadcast region) has a separate
+computer acting as the master browser.
+
+Every 12 minutes, the master browser for each subnet:
+
+- Sends a directed master browser announcement to the Domain Master Browser.
+
+- Establishes a TCP/IP connection to the domain master browser, and pulls two
+  browse lists from it. One is a list of all machines in the domain that are
+  participating in browsing, and the other is a list of all domains that have
+  been discovered.
+
+Upon receiving the master browser announcement from a subnet master browser, the
+PDC should establish a TCP connection to it and pull the updated browse lists
+for that subnet. It should then merge those lists into the complete browse list,
+which it maintains.
+
+A timing condition exists in Windows NT 3.5 where the user-mode portion of the
+browser code may not have an IRP posted to receive master browser announcements.
+When this occurs, the domain master browser begins to drop master browser
+announcements. This causes it to stop collecting browse lists from the subnet
+master browsers. Computers on those subnets will age out of the master browse
+list and no longer be visible in browse lists.
+
+
+RESOLUTION
+==========
+
+Obtain an updated BROWSER.DLL file from Microsoft . The new BROWSER.DLL file
+should be installed on any machine that may be promoted to PDC.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. A
+supported fix is now available, but is not fully regression-tested and should be
+applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the service pack release containing this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+Additional query words: prodnt 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

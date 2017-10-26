@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159284: XADM: Client Operation Failed Accessing Categorized PF View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159284: XADM: Client Operation Failed Accessing Categorized PF View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159284/","publisher":null,"image":null,"headline":"Q159284: XADM: Client Operation Failed Accessing Categorized PF View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159284-xadm-client-operation-failed-accessing-categorized-pf-view">Q159284: XADM: Client Operation Failed Accessing Categorized PF View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159284
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): exc4
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you access a Public Folder and the folder has an initial view that is
+categorized, the operation may fail with the following error message seen by the
+client:
+
+  Client Operation Failed
+
+If you press the F2 key while this error message is displayed, you will see the
+following error codes:
+
+  Microsoft Exchange Server Information Store - 1201 - [80004005 - FFFFFBFE]
+
+CAUSE
+=====
+
+When a categorized view is placed on a folder, each user that accesses it
+creates two columns in the JET database (public and private information stores)
+for storing the collapsed state of the row. There is hard-coded limit for the
+size of a JET record and the Information Store is surpassing that limit, causing
+the error.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following four workarounds:
+
+- After you close the error messages, change the view to the Personal, Normal
+  view.
+
+- Change the initial view on the folder to be normal or non-categorized.
+
+- Replicate the folder to more servers so fewer users will access the view on
+  each replica.
+
+- Reset the cached views as shown below.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe or Regedit.exe as appropriate for your
+  version of Windows NT).
+
+2. Go to the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+  \ParametersPublic\
+
+3. On the Edit menu, click Add Value and use the following entry:
+
+     Value Name: Reset Views
+     Data Type: REG_DWORD
+     Value: 1 (hex)
+
+4. Quit Registry Editor.
+
+5. Stop and restart the Information Store service.
+
+6. Using the Exchange Server Administrator program, set the IS Maintenance
+  schedule (IS maintenance tab of the Server object) to run in the next
+  15-minute interval.
+
+Once the IS Maintenance interval initiates and performs the Reset Views
+operation, the value of Reset Views in the registry will be reset to 0. At this
+point the cached views in the Public Information Store will be cleared and users
+will not experience the "Client Operation Failed" error. Over time, if there is
+a high amount of usage on a folder replica and it is using a categorized view
+this problem may reoccur and the steps in this section may need to be repeated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in Microsoft Exchange Server
+version 5.0.
+
+MORE INFORMATION
+================
+
+The error code returned, FFFFFBFE, maps to 4294966270 in decimal and this maps
+to Error -1026 (0xfffffbfe) = JET_errRecordTooBig. A categorized view is defined
+as a view that has a column specified in the "Group By" field.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

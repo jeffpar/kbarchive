@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132955: PC WRmt: Changing a Remote User from Default to Custom Views | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132955: PC WRmt: Changing a Remote User from Default to Custom Views" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132955/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132955/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132955/","publisher":null,"image":null,"headline":"Q132955: PC WRmt: Changing a Remote User from Default to Custom Views","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132955-pc-wrmt-changing-a-remote-user-from-default-to-custom-views">Q132955: PC WRmt: Changing a Remote User from Default to Custom Views</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132955
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change a user from the Default View to a Custom View with the
+Administrator's program (ADMIN.EXE) through the Remote/Modify options, the
+remote user continues to download the Default View.
+
+CAUSE
+=====
+
+The user's configuration has not been updated to the Custom View.
+
+RESOLUTION
+==========
+
+The following procedure may be used to change the user's configuration:
+
+1. After you change the user's view, generate a new Init-Disk from ADMIN.EXE
+  through the Remote/Init-Disk option.
+
+2. Start the Windows Remote client. From the Mail menu, choose Options.
+
+3. From the Options dialog box, select on the Server button.
+
+4. From the Server dialog box, enter the path to the files on the Init-Disk in
+  the User Information/Path field.
+
+  NOTE: If the files are located on a disk in the A: floppy disk drive, enter
+  "A:\" (without the quotation marks).
+
+5. Click OK. If the procedure was performed correctly, the following message
+  will appear:
+
+  The new information will take effect after you exit and sign out.
+  Your sign-on identity will be &lt;mailbox&gt;.
+
+  If the information regarding the mailbox is correct, click OK.
+
+6. At the Options dialog box, click OK.
+
+7. Exit and Sign Out of the Windows Remote client. You must sign back in for the
+  changes to take effect.
+
+MORE INFORMATION
+================
+
+Updating the Init-Disk and the files on the remote workstation is important to
+determine the type of view that will be downloaded. The view changes must be
+updated locally.
+
+Additional query words: 3.00 3.20 winremote rnetwork.glb
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

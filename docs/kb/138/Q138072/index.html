@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138072: INFO: Tips to Improve Performance While Using OLE Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138072: INFO: Tips to Improve Performance While Using OLE Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138072/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138072/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138072/","publisher":null,"image":null,"headline":"Q138072: INFO: Tips to Improve Performance While Using OLE Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138072-info-tips-to-improve-performance-while-using-ole-servers">Q138072: INFO: Tips to Improve Performance While Using OLE Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138072
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbVBp400
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists tips to keep in mind when instantiating an OLE server object,
+when calling a method, or when using a property of the object.
+
+MORE INFORMATION
+================
+
+Tip One
+-------
+
+Here are two ways in which an object could be created using early binding:
+
+- 
+
+     Dim x As New MyClass
+     Call x.MyMethod
+
+  -or-
+
+- 
+
+     Dim x As MyClass
+     Set x = New MyClass
+     Call x.MyMethod
+
+The latter code is faster and more efficient because it creates an instance of
+the object only while executing the Set statement. The former code doesn't
+instantiate the object until the statement that calls a method of the object.
+
+In the former code, each call to a member of an object checks to see if it has
+been instantiated. If not it is instantiated at that point, the call is made. In
+the latter code, no such check is made, so it is faster. It is the
+responsibility of the application developer to ensure that an object variable
+has been properly instantiated before calling any of its members.
+
+Another thing to keep in mind is that the former code guarantees that you always
+have a reference to an object. Therefore, even if you:
+
+     Set x = Nothing
+
+and later check:
+
+     If x Is Nothing Then
+
+x is instantiated at that point. Such a check will always return a value of
+False. Whereas in the latter code, you are always free to set x to Nothing and
+check for it correctly later.
+
+Tip Two
+-------
+
+While calling members of an out-of-process OLE Server such as an OLE EXE server,
+if you need to make repetitive calls to members that return quickly (for
+example, members like the height property of the Form object that don't use many
+instruction cycles), it will be faster to call a single method that bundles all
+these other "lightweight" properties into an array or returns them as parameters
+to this single method. This is because the time taken by the marshalling code
+for a cross-process call to execute is much more than what is needed to perform
+the task that the member does.
+
+Additional query words: optimization speed quick 4.00
+
+======================================================================
+Keywords          : kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

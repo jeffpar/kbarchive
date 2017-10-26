@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172396: PRB: Access Violation When Accessing STL Object in DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172396: PRB: Access Violation When Accessing STL Object in DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172396/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172396/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172396/","publisher":null,"image":null,"headline":"Q172396: PRB: Access Violation When Accessing STL Object in DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172396-prb-access-violation-when-accessing-stl-object-in-dll">Q172396: PRB: Access Violation When Accessing STL Object in DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172396
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS NT:5.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC500 kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing an STL object created in one DLL or EXE through a pointer or
+reference in a different DLL or EXE, you may experience an access violation or
+other serious program errors including the appearance of data corruption or data
+loss.
+
+CAUSE
+=====
+
+Most classes in the Standard C++ Libraries use static data members directly or
+indirectly. Since these classes are generated through template instantiation,
+each executable image (usually with DLL or EXE file name extensions) will
+contain its own copy of the static data member for a given class. When a method
+of the class that requires the static data member is executed, it uses the
+static data member in the executable image in which the method code resides.
+Since the static data members in the executable images are not in sync, this
+action could result in an access violation or data may appear to be lost or
+corrupted.
+
+RESOLUTION
+==========
+
+1. Export accessor methods from the executable image that created the STL
+  object. These methods wrap the required functionality of the STL object. In
+  this way, the STL object will only be directly accessed inside a single
+  executable image. For example, suppose MyProgram.EXE needs to get the next
+  element in deque&lt;MyClass&gt; that resides in MyLibrary.DLL. MyLibrary.DLL
+  could export an accessor method, MyClass* DequeNextItem (/*...*/). Then
+  MyProgram.EXE could execute this method to get the next item in the deque.
+  See the code sample below for a more complete example.
+
+  This option works for STL objects that are either global, static, or static
+  data members of a class that are not exported from a DLL. This option will
+  not work for non-static data members of a class that are exported from a DLL
+  or for automatic data.
+
+2. Export the template class instantiation from one executable image and import
+  it into the other executable images. For example, if MyLibrary.DLL passes a
+  pointer to vector&lt;MyClass&gt; back to a function in MyProgram.EXE, then
+  export the classes MyClass and vector&lt;MyClass&gt; from MyLibrary.DLL. Then
+  import these classes into MyProgram.EXE. By doing this, you will have one
+  copy of the static class members residing in MyLibrary.DLL. For more
+  information about exporting and importing STL classes, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q168958 HOWTO: Exporting STL Components Inside &amp; Outside of a Class
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+     //---------------------------------------------------------
+     // AVEXE.CPP
+     // Compile options needed: /GX
+     #pragma warning (disable : 4786)
+     #include &lt;map&gt;
+     #include &lt;string&gt;
+     #include &lt;stdio.h&gt;
+
+     __declspec(dllimport)
+     std::map&lt;int,std::string&gt;* GiveMeAMap(int n);
+
+     __declspec(dllimport)
+     void ShowMeTheMap(std::map&lt;int,std::string&gt; *amap);
+
+     __declspec(dllexport)
+     const char* MapItemX (std::map&lt;int,std::string&gt; *m, int x);
+
+     int main () {
+
+        // Create the map in the DLL
+        int x = 6;
+        std::map&lt;int,std::string&gt; *p = GiveMeAMap(x);
+
+        // Display the contents of the map from the DLL
+        printf("Showing contents from the DLL\n");
+        ShowMeTheMap(p);
+
+        // Display the contents of the map from the EXE
+        // using the accessor function from the DLL so we
+        // aren't directly accessing the map
+        printf("Showing contents from the EXE using accessor\n");
+        int i = x;
+        while (i--) {
+           printf("%d = %s\n",i,MapItemX(p,i));
+        }
+
+        // Access Violation when accessing the map that
+        // was created in the DLL from the EXE
+        printf("Showing contents from the EXE directly\n");
+        while (x--) {
+           printf("%d = %s\n",x,(*p)[x].c_str());
+        }
+
+        return 0;
+     }
+
+     //---------------------------------------------------------
+     // AVDLL.CPP
+     // Compile options needed /GX
+     #pragma warning (disable : 4786)
+     #include &lt;map&gt;
+     #include &lt;string&gt;
+     #include &lt;stdlib.h&gt;
+
+     // Create the map here in the DLL
+     __declspec(dllexport)
+     std::map&lt;int,std::string&gt;* GiveMeAMap(int n) {
+        std::map&lt;int,std::string&gt; *m = new std::map&lt;int,std::string&gt;;
+        while(n--) {
+           char b[33];
+           itoa(n,b,2);
+           (*m)[n] = std::string(b);
+        }
+        return m;
+     }
+
+     // We can access the map without error from the executable
+     // image where the map was created
+     __declspec(dllexport)
+     void ShowMeTheMap(std::map&lt;int,std::string&gt; *p) {
+        int x = p-&gt;size();
+        while (x--) {
+           printf("%d = %s\n",x,(*p)[x].c_str());
+        }
+     }
+
+     // An accessor method to return the associated C string
+     // for key x
+     __declspec(dllexport)
+     const char* MapItemX (std::map&lt;int,std::string&gt; *m, int x) {
+        return (*m)[x].c_str();
+     }
+
+======================================================================
+Keywords          : kbCRT kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS NT:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

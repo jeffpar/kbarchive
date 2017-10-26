@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148684: What to Do When You Can’t Open the FoxPro Macintosh Help File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148684: What to Do When You Can’t Open the FoxPro Macintosh Help File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148684/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148684/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148684/","publisher":null,"image":null,"headline":"Q148684: What to Do When You Can’t Open the FoxPro Macintosh Help File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148684-what-to-do-when-you-cant-open-the-foxpro-macintosh-help-file">Q148684: What to Do When You Can’t Open the FoxPro Macintosh Help File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148684
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.6a,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After a normal installation process, attempts to start the FoxPro for the
+Macintosh Help file fail. Often, the rest of the software functions normally.
+This article offers some troubleshooting tips to solve this problem.
+
+MORE INFORMATION
+================
+
+After installing FoxPro for the Macintosh, you find that you can't open the Help
+file by any method from within FoxPro. Typing HELP in the Command window or
+pressing the F1 key fail to start Help. Often, attempts to start graphical Help
+do not produce any errors; the Help file simply refuses to open.
+
+Many times this problem may manifest itself on a single computer. Other computers
+that have FoxPro installed from the same disk may function correctly.
+
+Because this problem frequently does not produce an error message, it can be
+particularly difficult to troubleshoot.
+
+The role of the FoxPro Help engine described in this article in assigned to a
+file named Microsoft Visual FoxPro Help, located in the Microsoft folder.
+
+Steps That May Enable the FoxPro Help File
+------------------------------------------
+
+1. Open the Finder in Macintosh, and click the File pad. Choose the Find option,
+  and type FoxHelp.hlp to locate the file. Double-click the file and see if the
+  Help file opens. If it doesn't, there's a problem with the .hlp file. Run the
+  uninstall from the Microsoft FoxPro setup folder, and remove the Help files.
+  Then reinstall the help files after performing steps 2 and 3. If Help does
+  start, proceed to step 2.
+
+2. Turn off FoxPro, and rebuild the Macintosh desktop by holding the OPTION and
+  APPLE keys down while choosing Restart from the Special menu pad. Start
+  FoxPro and try to invoke Help.
+
+3. Turn off FoxPro, and boot the computer without extensions by holding down the
+  SHIFT key while choosing Restart from the Special menu pad. Start FoxPro and
+  try to invoke Help.
+
+4. Quit FoxPro, turn off Apple Talk, and restart FoxPro.
+
+5. Quit FoxPro, and move the FoxPro Help Engine file to the same folder as the
+  FoxHelp.hlp file. The FoxPro Help Engine usually resides in the Microsoft
+  folder. Start FoxPro, and use the SET HELP TO command to point to the
+  location of the FoxHelp.hlp file.
+
+6. Quit FoxPro, and restart the computer without extensions. Open the Setup
+  folder in the Microsoft FoxPro folder. Double-click the Microsoft FoxPro
+  Setup icon, and choose the Add/Remove button. Remove the Graphical Help
+  option, and then reinstall it. This will require the FoxPro Macintosh
+  installation disks.
+
+If all of these steps fail to enable Help, create an alias for the Help file, and
+invoke it from the icon, provided that double-clicking the FoxHelp.hlp in Finder
+works.
+
+Additional query words: vFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.6a,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

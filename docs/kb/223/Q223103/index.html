@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/223/Q223103/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/223/Q223103/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/223/Q223103/","publisher":null,"image":null,"headline":"Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q223103-fix-memory-leak-with-command-button-on-japanese-windows-95c">Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q223103
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbFarEast kbIntl kbOSWin95OSR250 kbVBp kbVBp500bug kbVBp600bug kbOSWin95
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A memory leak might occur on Japanese Windows 95C (OSR 2.5) when unloading a
+Form that contains a CommandButton.
+
+CAUSE
+=====
+
+This problem occurs when the CommandButton's TabIndex property = "0" and its
+TabStop property = "TRUE."
+
+RESOLUTION
+==========
+
+Set the TabIndex of the CommandButton to a value greater than 0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic Standard EXE Project. Form1 is created by default.
+
+2. Add a CommandButton and Timer control to Form1.
+
+3. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+  Private f As Boolean
+
+  Private Sub Command1_Click()
+     Timer1.Enabled = True
+  End Sub
+
+  Private Sub Form_Load()
+     Timer1.Interval = 500
+     Timer1.Enabled = False
+  End Sub
+
+  Private Sub Timer1_Timer()
+     f = Not f
+     If f Then
+        Form2.Show
+     Else
+        Unload Form2
+        Set Form2 = Nothing
+     End If
+  End Sub
+
+4. On the Project menu, click Add Form to add a new form to the project. Form2
+  is created by default.
+
+5. Add a CommandButton to Form2.
+
+6. Compile the Application to an EXE file.
+
+7. Run the compiled EXE on Japanese Windows 95C.
+
+8. Start the System Monitor tool, which is located in the System Tools folder in
+  the Accessories folder. (If the System Monitor tool is not available, it can
+  be installed from the Control Panel Add/Remove Programs option.) On the Edit
+  menu, click Add Item. Click the Memory Manager Category, click the Allocated
+  Memory Item, and click OK.
+
+9. Click Command1 to start loading/unloading Form2.
+
+  Result: The "Allocated Memory" will steadily increase as the application is
+  running and might eventually cause the application to crash.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbFarEast kbIntl kbOSWin95OSR250 kbVBp kbVBp500bug kbVBp600bug kbOSWin95 kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbIntlDev 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

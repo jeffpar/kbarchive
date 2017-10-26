@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234508/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234508/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234508/","publisher":null,"image":null,"headline":"Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234508-sms-how-to-determine-sms-thread-responsible-for-high-cpu-use">Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234508
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 02-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If System Management Server 2.0 causes high processor utilization on the site
+server, there is a way to track the SMSEXEC thread responsible in order to begin
+troubleshooting the problem.
+
+MORE INFORMATION
+================
+
+To determine the SMS thread responsible for high CPU utilization, run
+Performance Monitor from a remote server, and then add the counters in the
+following table:
+
++------------------------------------------------------------------------+
+| Object    | Counter          | Instance(s)                             | 
++------------------------------------------------------------------------+
+| Processor | % Processor Time | &lt;all instances&gt;                         | 
++------------------------------------------------------------------------+
+| Thread    | % Processor Time | &lt;all instances needed&gt; example: smsexec | 
++------------------------------------------------------------------------+
+| Thread    | ID Thread        | &lt;all instances needed&gt;                  | 
++------------------------------------------------------------------------+
+| Thread    | Thread State     | &lt;all instances needed&gt;                  | 
++------------------------------------------------------------------------+
+
+  Definition of Thread State:
+
+  The current state of the thread:
+  0 = Initialized
+  1 = Ready
+  2 = Running
+  3 = Standby
+  4 = Terminated
+  5 = Wait
+  6 = Transition
+  7 = Unknown
+
+  A Running thread is using a processor; a Standby thread is about to use one. A
+  Ready thread wants to use a processor, but is waiting for a processor because
+  none are free. A thread in Transition is waiting for a resource in order to
+  execute, such as waiting for its execution stack to be paged in from disk. A
+  Waiting thread has no use for the processor because it is waiting for a
+  peripheral operation to complete or a resource to become free.
+
+Using Performance Monitor in Report (CTRL+R) view:
+
+  Locate the column with the thread(s) using the greatest processor time(s) and
+  note the ID Thread number.
+
+Using Performance Monitor in Chart (CTRL+C) view:
+
+  Locate the line with the thread(s) using the greatest processor time(s), and
+  note the Thread Instance.
+
+  Locate the ID Thread counter with the same instance number. Highlight
+  (right-click) that counter.
+
+  The number in the boxes Last, Ave, Mix, and Max will all be the same. This is
+  the ID Thread number.
+
+Convert the decimal version of the ID Thread (given on the report) to hex using
+the Calculator (Calc.exe).
+
+To begin troubleshooting the root of your high processor utilization, find the
+log file in the SMS\logs directory on your site server using the command Findstr
+/i &lt;HexID&gt;*.log.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

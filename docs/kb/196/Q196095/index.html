@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196095: PRB: SBS Client Installation Does Not Continue After Restart | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196095: PRB: SBS Client Installation Does Not Continue After Restart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196095/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196095/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196095/","publisher":null,"image":null,"headline":"Q196095: PRB: SBS Client Installation Does Not Continue After Restart","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196095-prb-sbs-client-installation-does-not-continue-after-restart">Q196095: PRB: SBS Client Installation Does Not Continue After Restart</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196095
+Product(s): Microsoft Windows NT
+Version(s): Windows:95,98;WinNT:4.0,4.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the Small Business Server (SBS) Client Setup Disk on a computer
+running Windows 95, Windows 98, or Windows NT Workstation 4.0 and then restart
+the computer, the SBS Client Application installation program does not continue
+after the initial logon screen and finish the applications install.
+
+The logged on user does get a logon script, and has full connectivity to the SBS
+server as determined by permissions set during User Setup Wizard.
+
+Shortcuts appear on desktop and are available.
+
+CAUSE
+=====
+
+The cause for this problem can be any of the following:
+
+- The computer was a client to another SBS domain at some time.
+
+- The client setup installation was previously stopped.
+
+- There was a corrupted log file during setup.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Locate and delete the following LOG file:
+
+  c:\startcli.log
+
+2. Restart the client computer.
+
+3. If the SBS Client Installation does not continue when logging on, click
+  Start, click Run, and type the following line:
+
+  \\&lt;ServerName&gt;\clients\setup\&lt;ClientType&gt;\startcli.exe
+
+  Replace &lt;ServerName&gt; with the name of your SBS Server.
+
+  Replace &lt;ClientType&gt; with i386 for Windows NT Workstation clients and
+  win95 for Windoes 95 or Windows 98 clients.
+
+4. Click OK.
+
+
+Additional query words: kbDSupport abort
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin95search kbWin98search kbSBServSearch kbZNotKeyword3 kbWin98 kbSBServ400 kbSBServ400a
+Version           : Windows:95,98;WinNT:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

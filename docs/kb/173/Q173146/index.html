@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173146/","publisher":null,"image":null,"headline":"Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173146-wd97-run-from-network-install-for-web-authoring-autoupdate">Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173146
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): winword word97 kbwdinternet
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Web Authoring Tools support the ability to perform an administrative
+installation for use with "Run From Network Server" installations of Word.
+
+To update the Web Authoring Tools in a "Run From Network Server" environment, use
+the steps described in this article.
+
+MORE INFORMATION
+================
+
+The following list of steps must be performed to properly create a "Run From
+Network" installation of the updated Web Authoring Tools:
+
+1. Download the latest version of the Web Authoring Tools file, Wd97au.exe, to a
+  client machine that has been set up to run Word from the server.
+
+  For more information about where to obtain the latest version of the Web
+  Authoring Tools, please see the following article in the Microsoft Knowledge
+  Base:
+
+  Q163299 WD97: Web Page Authoring Tools AutoUpdate
+
+2. When given the choice to either save to disk or open the Wd97au.exe, click
+  Save To Disk.
+
+3. Ensure there are no users running Word 97 from the server.
+
+4. On the client machine, from the Windows 95 Start menu, click Run.
+
+5. Type in the following Setup script, substituting the path in the following
+  example for the path location of the Wd97au.exe you downloaded in steps 1 and
+  2.
+
+  c:\Windows\Desktop\Wd97au.exe /c:serverau.inf
+
+  This executes a special version of the Setup script which will install the
+  updated Web authoring components to the server.
+
+6. You must restart Windows at the client machine you ran the setup script from
+  before the updated settings will take effect. The Server does not need to be
+  restarted.
+
+7. After restarting the client machine, users at other workstations will see the
+  changes the next time they start or install Word 97.
+
+This method does not install the Web Publishing Wizard. The Web Publishing Wizard
+must be set up on each computer. To set up the Web Publishing Wizard, use the
+following steps:
+
+1. Copy or download the Wd97au.exe to each client machine setup to run Word from
+  the server.
+
+2. If Word is currently running, exit Word.
+
+3. Type in the following Setup script, substituting the path in the following
+  example for the path location of the Wd97au.exe you downloaded or copied in
+  step 1.
+
+  c:\Windows\Desktop\wd97au.exe /c:wpfull.inf
+
+  This executes a special version of the setup script which will install the
+  Updated Web Publishing Wizard components to the client machine.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q172502 WD97: Troubleshooting Setup for the Web AutoUpdate Feature
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : winword word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

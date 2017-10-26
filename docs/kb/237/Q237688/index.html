@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237688/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237688/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237688/","publisher":null,"image":null,"headline":"Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237688-howto-using-getsockopt-and-setsockopt-in-visual-basic">Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237688
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI kbCtrl kbSDKPlatform kbSDKWin32 kbVBp kbVBp500 kbWinsock kbDSupport kbG
+Last Modified: 12-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Win32 Application Programming Interface (API) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use the Windows Sockets (Winsock) getsockopt
+and setsockopt functions in Visual Basic to read and set options on a socket. A
+specific parameter that is valid for the socket's protocol type can be read or
+set by passing a socket handle to these functions along with an option level and
+option name. Either a socket obtained by way of the Winsock Socket function or
+even the Winsock Control's socket handle (exposed by way of the SocketHandle
+property) can be used (as shown here).
+
+MORE INFORMATION
+================
+
+As a general rule, when calling C functions in Visual Basic, the relevant
+constants, structures (types), and functional prototypes must be redefined or
+declared. This is also the case with the Winsock API. This example shows how to
+set up the functions and constants, read all the available socket options, and
+then set the two relevant socket options for a specific protocol.
+
+The sample application contains two buttons, Command1 and Command2, which read
+and set values, respectively. The sample also contains a Winsock Control,
+Winsock1, to supply a socket handle. Please note that the Winsock Control must
+be in a bind state to be able to set the options on the socket. In other words,
+the Winsock1.SocketHandle property must have a value greater than zero. That is
+handled in the Form_Load event.
+
+Some socket options require structures to be passed to get or set the information
+for a socket. SO_LINGER is one such option and is illustrated in the sample code
+that follows.
+
+If an option is not supported for a specific socket or type of socket, the error
+10042 (WSAENOPROTOOPT) is returned.
+
+  Option Explicit
+
+  ' Error returned by Winsock API.
+  Const SOCKET_ERROR = -1
+
+  ' Level number for (get/set)sockopt() to apply to socket itself.
+  Const SOL_SOCKET = 65535      ' Options for socket level.
+  Const IPPROTO_TCP = 6         ' Protocol constant for TCP.
+
+  ' option flags per socket
+  Const SO_DEBUG = &amp;H1&amp;         ' Turn on debugging info recording
+  Const SO_ACCEPTCONN = &amp;H2&amp;    ' Socket has had listen() - READ-ONLY.
+  Const SO_REUSEADDR = &amp;H4&amp;     ' Allow local address reuse.
+  Const SO_KEEPALIVE = &amp;H8&amp;     ' Keep connections alive.
+  Const SO_DONTROUTE = &amp;H10&amp;    ' Just use interface addresses.
+  Const SO_BROADCAST = &amp;H20&amp;    ' Permit sending of broadcast msgs.
+  Const SO_USELOOPBACK = &amp;H40&amp;  ' Bypass hardware when possible.
+  Const SO_LINGER = &amp;H80&amp;       ' Linger on close if data present.
+  Const SO_OOBINLINE = &amp;H100&amp;   ' Leave received OOB data in line.
+
+  Const SO_DONTLINGER = Not SO_LINGER
+  Const SO_EXCLUSIVEADDRUSE = Not SO_REUSEADDR ' Disallow local address reuse.
+
+  ' Additional options.
+  Const SO_SNDBUF = &amp;H1001&amp;     ' Send buffer size.
+  Const SO_RCVBUF = &amp;H1002&amp;     ' Receive buffer size.
+  Const SO_ERROR = &amp;H1007&amp;      ' Get error status and clear.
+  Const SO_TYPE = &amp;H1008&amp;       ' Get socket type - READ-ONLY.
+
+  ' TCP Options
+  Const TCP_NODELAY = &amp;H1&amp;      ' Turn off Nagel Algorithm.
+
+  ' linger structure
+  Private Type LINGER_STRUCT
+    l_onoff As Integer          ' Is linger on or off?
+    l_linger As Integer         ' Linger timeout in seconds.
+  End Type
+   
+  ' Winsock API declares
+  Private Declare Function setsockopt Lib "wsock32.dll" (ByVal s As Long, ByVal level As Long, ByVal optname As Long, optval As Any, ByVal optlen As Long) As Long
+  Private Declare Function getsockopt Lib "wsock32.dll" (ByVal s As Long, ByVal level As Long, ByVal optname As Long, optval As Any, optlen As Long) As Long
+
+  Private Sub Command1_Click()
+    ' Read all the options and present in a message box.
+    Dim socket As Long
+    
+    socket = Winsock1.SocketHandle
+    
+    If socket = 0 Then
+      MsgBox "No Socket"
+    Else
+      MsgBox "Socket Options:" &amp; vbCrLf &amp; _
+             "    SO_DEBUG: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_DEBUG)) &amp; vbCrLf &amp; _
+             "    SO_ACCEPTCONN: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_ACCEPTCONN)) &amp; vbCrLf &amp; _
+             "    SO_REUSEADDR: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_REUSEADDR)) &amp; vbCrLf &amp; _
+             "    SO_KEEPALIVE: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_KEEPALIVE)) &amp; vbCrLf &amp; _
+             "    SO_DONTROUTE: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_DONTROUTE)) &amp; vbCrLf &amp; _
+             "    SO_BROADCAST: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_BROADCAST)) &amp; vbCrLf &amp; _
+             "    SO_USELOOPBACK: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_USELOOPBACK)) &amp; vbCrLf &amp; _
+             "    SO_LINGER: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_LINGER)) &amp; vbCrLf &amp; _
+             "    SO_OOBINLINE: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_OOBINLINE)) &amp; vbCrLf &amp; _
+             "    SO_DONTLINGER: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_DONTLINGER)) &amp; vbCrLf &amp; _
+             "    SO_EXCLUSIVEADDRUSE: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_EXCLUSIVEADDRUSE)) &amp; vbCrLf &amp; _
+             "    SO_SNDBUF: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_SNDBUF)) &amp; vbCrLf &amp; _
+             "    SO_RCVBUF: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_RCVBUF)) &amp; vbCrLf &amp; _
+             "    SO_ERROR: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_ERROR)) &amp; vbCrLf &amp; _
+             "    SO_TYPE: " &amp; CStr(GetSocketOption(socket, SOL_SOCKET, SO_TYPE)) &amp; vbCrLf &amp; vbCrLf &amp; _
+             "TCP Options:" &amp; vbCrLf &amp; _
+             "    TCP_NODELAY: " &amp; CStr(GetSocketOption(socket, IPPROTO_TCP, TCP_NODELAY))
+      End If
+  End Sub
+  Private Sub Command2_Click()
+    Dim lResult As Long     ' Results of 1st option.
+    Dim lResult2 As Long    ' Results of 2nd option.
+    Dim linger As LINGER_STRUCT
+    
+    If (Winsock1.Protocol = sckTCPProtocol) Then
+      ' Change two options valid for TCP Sockets.
+      lResult = setsockopt(Winsock1.SocketHandle, IPPROTO_TCP, TCP_NODELAY, 1, 4)
+      If (lResult = SOCKET_ERROR) Then
+        MsgBox "Error setting TCP_NODELAY option: " &amp; CStr(Err.LastDllError)
+      End If
+      
+      ' Set up the linger structure.
+      linger.l_onoff = 1
+      linger.l_linger = 5
+      lResult2 = setsockopt(Winsock1.SocketHandle, SOL_SOCKET, SO_LINGER, linger, LenB(linger))
+      If (lResult2 = SOCKET_ERROR) Then
+        MsgBox "Error setting SO_LINGER option: " &amp; CStr(Err.LastDllError)
+      End If
+    Else
+      ' Change two options valid for UDP sockets.
+      lResult = setsockopt(Winsock1.SocketHandle, SOL_SOCKET, SO_REUSEADDR, 1, 4)
+      If (lResult = SOCKET_ERROR) Then
+        MsgBox "Error setting SO_REUSEADDR option: " &amp; CStr(Err.LastDllError)
+      End If
+
+      lResult2 = setsockopt(Winsock1.SocketHandle, SOL_SOCKET, SO_BROADCAST, 0, 4)
+      If (lResult2 = SOCKET_ERROR) Then
+        MsgBox "Error setting SO_BROADCAST option: " &amp; CStr(Err.LastDllError)
+      End If
+    End If
+    
+    If (lResult = 0) And (lResult2 = 0) Then
+      MsgBox "Options Set"
+    End If
+  End Sub
+  Public Function GetSocketOption(lSocket As Long, lLevel As Long, lOption As Long) As Long
+    Dim lResult As Long       ' Result of API call.
+    Dim lBuffer As Long       ' Buffer to get value into.
+    Dim lBufferLen As Long    ' len of buffer.
+    Dim linger As LINGER_STRUCT
+    
+    ' Linger requires a structure so we will get that option differently.
+    If (lOption &lt;&gt; SO_LINGER) And (lOption &lt;&gt; SO_DONTLINGER) Then
+      lBufferLen = LenB(lBuffer)
+      lResult = getsockopt(lSocket, lLevel, lOption, lBuffer, lBufferLen)
+    Else
+      lBufferLen = LenB(linger)
+      lResult = getsockopt(lSocket, lLevel, lOption, linger, lBufferLen)
+      lBuffer = linger.l_onoff
+    End If
+    
+    If (lResult = SOCKET_ERROR) Then
+      GetSocketOption = Err.LastDllError
+    Else
+      GetSocketOption = lBuffer
+    End If
+  End Function
+  Private Sub Form_Load()
+    Winsock1.Bind 8377      ' Set up socket enough to get nonzero socket. handle
+  End Sub
+
+REFERENCES
+==========
+
+- Platform SDK documentation for Windows Sockets Version 2 API
+
+- Visual Basic documentation for Visual Basic and the Winsock Control
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q110219 LONG: How to Call Windows API from VB 3.0--General Guidelines
+
+  Q106553 HOWTO: Write C DLLs and Call Them from Visual Basic
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbCtrl kbSDKPlatform kbSDKWin32 kbVBp kbVBp500 kbWinsock kbDSupport kbGrpDSNet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbWin32sSearch kbWin32API
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251045/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251045/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251045/","publisher":null,"image":null,"headline":"Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251045-bugmemory-in-shared-code-sections-not-shared-across-ts-sessions">Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251045
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2000
+Operating System(s): 
+Keyword(s): kbKernBase kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbDSupport kbGrpDSKernBase kbTermSe
+Last Modified: 23-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On Microsoft Windows NT 4.0, Terminal Server Edition, memory in shared code
+sections of system global DLLs is shared across terminal server sessions.
+
+On Windows 2000, however, memory in shared code sections of system global DLLs
+cannot be shared across terminal server sessions. Instead, each session receives
+its own instance of the variables that are declared within a shared code
+section. That memory is shared among processes that are running within the same
+session, but is not accessible to processes in other sessions.
+
+CAUSE
+=====
+
+New architecture of Windows 2000 memory manager prevents shared code sections
+from being shared across terminal server sessions.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+
+WORKAROUND
+==========
+
+If an application needs to share memory across terminal server sessions on
+Windows 2000, it should do so through a global file mapping object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 1.
+
+MORE INFORMATION
+================
+
+On computers that are running terminal server, you can register a DLL as a
+system global resource. For additional information on how to perform this
+registration, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q186625 Terminal Server Commands: REGISTER
+
+Additional query words:
+
+======================================================================
+Keywords          : kbKernBase kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbDSupport kbGrpDSKernBase kbTermServ kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbWin2000sp1Fix 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:2000
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112903/","publisher":null,"image":null,"headline":"Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112903-pc-gen-err-msg-notice-51-no-folders-to-select">Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112903
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under versions 2.1x, 3.0, 3.0a, and 3.2 of Microsoft Mail for PC Networks, when
+you access folders from the MS-DOS client, the following error message may
+appear:
+
+  Notice 51:
+  No folders to select
+
+CAUSE
+=====
+
+This error can be caused by a corrupt or missing private folder index file. It
+can also be caused when you try to access private folders created in Mail for
+Windows from the MS-DOS client.
+
+RESOLUTION
+==========
+
+If the index file is missing, restore it from a backup copy. The index file
+(.IDX) should reside in the following sub-directory:
+
+  maildata\folders\loc\xxxxxxxx
+
+where XXXXXXXX is your associated hexadecimal filename. The index file will be
+named using the same hexadecimal number (XXXXXXX.IDX). Run LISTUSER.EXE to
+obtain your hexadecimal number.
+
+If no valid backup exists, run FIXIDX.EXE to recreate the folder index file.
+
+NOTE: The following procedure will remove the human-readable folder names. In
+order to recreate the folder names later, DUMPFLD.EXE should be run against all
+folders before hand, in order to obtain the original name:
+
+  dumpfld xxxxxxxx.fld
+
+Once you obtain all the information you need, you can run FIXIDX.EXE (from your
+private folders sub-directory) using the following command:
+
+  fixidx xxxxxxxx.idx xxxxxxxx
+
+where XXXXXXXX.IDX is the index file to be created and XXXXXXXX is the your
+hexadecimal filename.
+
+Folder names can be re-assigned to their original, human-readable names from
+within the client using Options, Folders, Modify.
+
+MORE INFORMATION
+================
+
+For additional information on the LISTUSER.EXE and DUMPFLD.EXE utilities, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q99419 PC DB: Database Maintenance Utilities
+
+
+Additional query words: 2.1x 3.00 3.00a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0a,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178492/","publisher":null,"image":null,"headline":"Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178492-sna-30-tn3270-or-tn5250-server-traps-when-configuration-saved">Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178492
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TN3270 or TN5250 service may end unexpectedly with an access violation when
+saving the configuration file, even if the configuration file changes do not
+affect these services. This problem can occur if the SNA Server Manage Agent
+service (Mngagent.exe) is restarted on the SNA Server. The following symptoms
+will occur when this problem happens:
+
+- All TN3270 or TN5250 client users will lose their sessions and the TN3270 or
+  TN5250 Server service will no longer be running.
+
+- The following event will be logged in the Windows NT application event log:
+
+  
+
+  Event ID: 624 
+  Source:   TN3270 Server (or TN5250 Server)
+  Description: Creating dump file &lt;snaroot&gt;\traces\snadump.log for 
+               &lt;tn3servr.exe | tn5250.exe &gt;
+
+- A new entry will be created in the &lt;ntroot&gt;\drwtsn32.log file (the
+  failing routine in mngbase.dll is the same for both TN3270 or TN5250):
+
+  
+
+  Application exception occurred:
+       App: exe\tn3servr.dbg (&lt;process id&gt;)
+       Exception number: c0000005 (access violation)
+
+  [...]
+
+  State Dump for Thread Id &lt;thread id&gt;
+
+  eax=0c9dfda4 ebx=77e7a69f ecx=0b5f0000 edx=42008000 esi=00000003 
+  edi=00000003 eip=6098d4c8 esp=0c9dfd98 ebp=77e719c8 iopl=0         
+  nv up ei pl nz na po nc
+  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000 efl=00000206
+
+  function: MngGetRectypeChangeMask
+       6098d4a6 6a00             push    0x0
+       6098d4a8 682c1400c0       push    0xc000142c
+       6098d4ad 6a01             push    0x1
+       6098d4af e8fc010000       call    MngReportToEventLog (6098d6b0)
+       6098d4b4 33c0             xor     eax,eax
+       6098d4b6 33d2             xor     edx,edx
+       6098d4b8 5e               pop     esi
+       6098d4b9 81c4a0000000     add     esp,0xa0
+       6098d4bf c20400           ret     0x4
+       6098d4c2 81e6ffff0000     and     esi,0xffff
+  FAULT -&gt;6098d4c8 8b84f1a0010000   mov     eax,[ecx+esi*8+0x1a0]  
+
+  *----&gt; Stack Back Trace &lt;----*
+
+  Function Name
+
+  mngbase!MngGetRectypeChangeMask  
+  mngbase!MngIsRectypeChanged
+  mngext!Mng_IsRectypeChanged 
+  tn3servr!Tn3ManageActionEx
+  tn3servr!Tn3ManageActionEx
+  tn3servr!Tn3ManageActionEx
+  mngext!CMngExtSink::OnCommand 
+  mngbase!CNotifyQueue::Dispatch 
+  mngbase!CNotifyQueue::ProcessWait  
+  mngext!Mng_IsRectypeChanged 
+  kernel32!BaseThreadStart 
+  tn3   servr!&lt;nosymbols&gt;
+
+CAUSE
+=====
+
+When the configuration file changes, the TN3270 and TN5250 services are both
+notified and attempt to handle dynamic changes to their configuration data.
+However, if the mngagent service had been stopped and restarted, the
+configuration data location within the Manage shared memory may change, causing
+the services to access an invalid memory location causing an access violation.
+
+WORKAROUND
+==========
+
+Do not stop and restart the SNA Server Manage Agent service (Mngagent.exe).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 (including SP1
+and SP2).
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

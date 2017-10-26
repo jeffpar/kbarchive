@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239007/","publisher":null,"image":null,"headline":"Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239007-xcon-user-name-mapping-issues-when-implementing-mta-mixer">Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239007
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MIME Internet X.400 Enhanced Relay (MIXER) (RFC 2156) does not provide any
+specifications for mapping variations in user names. Consequently, it is
+important to understand the limitations of using the address mapping scheme.
+
+MORE INFORMATION
+================
+
+When the MIXER maps an SMTP address to an X.400 address, the user name mapping
+is as follows:
+
+  Case 1:
+
+  SMTP address is &lt;name&gt;@&lt;domain&gt;
+  Mapped X.400 address is s=&lt;name&gt;
+
+  Case 2:
+
+  SMTP address is &lt;firstname&gt;.&lt;lastname&gt;@&lt;domain&gt;
+  Mapped X.400 address is s=&lt;lastname&gt;;g=&lt;firstname&gt;
+
+  Case 3:
+
+  SMTP address is
+  &lt;firstname&gt;.&lt;initial&gt;.&lt;lastname&gt;@&lt;domain&gt;
+  Mapped X.400 address is
+  s=&lt;lastname&gt;;g=&lt;firstname&gt;;i=&lt;initial&gt;
+
+When the MIXER maps an X.400 address to an SMTP address, the user name mapping is
+as follows:
+
+  Case 1:
+
+  X.400 address is s=&lt;lastname&gt;
+  Mapped SMTP address is &lt;lastname&gt;@&lt;domain&gt;
+
+  Case 2:
+
+  X.400 address is s=&lt;lastname&gt;;g=&lt;firstname&gt;
+  Mapped SMTP address is &lt;firstname&gt;.&lt;lastname&gt;@&lt;domain&gt;
+
+  Case 3:
+
+  X.400 address is s=&lt;lastname&gt;;g=&lt;firstname&gt;;i=&lt;initial&gt;
+  Mapped SMTP address is
+  &lt;firstname&gt;.&lt;initial&gt;.&lt;lastname&gt;@&lt;domain&gt;
+
+In most Exchange Server topologies, the SMTP address for users is the Exchange
+Server default, which is &lt;alias&gt;@&lt;domain&gt;. If the MIXER mapping
+strategy is in use in this environment, the SMTP-to-X.400 mapping works only if
+all X.400 addresses are in the following form:
+
+  X.400:c=&lt;country&gt;;a=&lt;admd&gt;;p=&lt;prmd&gt;;o=&lt;org&gt;;s=&lt;alias&gt;
+
+This is possible only if the administrator does not populate First Name and Last
+Name fields during mailbox creation. The administrator can also populate the
+Last Name field with the alias, if necessary.
+
+The reverse of this problem is also true if the administrator wants to provide
+X.400-to-SMTP mapping. If, as mentioned above, the administrator has populated
+the First Name and Last Name fields at mailbox creation, the X.400 address is in
+the following form:
+
+  X.400:c=&lt;country&gt;;a=&lt;admd&gt;;p=&lt;prmd&gt;;o=&lt;org&gt;;s=&lt;LastName&gt;;g=&lt;FirstName&gt;
+
+The translated SMTP address in this case renders as:
+
+  &lt;FirstName&gt;.&lt;LastName&gt;@&lt;domain&gt;
+
+This mapping does not work if the default SMTP addressing scheme of
+&lt;alias&gt;@&lt;domain&gt; is being used in this environment.
+
+Additional query words: MIXER RFC2156
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

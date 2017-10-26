@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167039: XWEB: Access Forbidden Error from Browser | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167039: XWEB: Access Forbidden Error from Browser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167039/","publisher":null,"image":null,"headline":"Q167039: XWEB: Access Forbidden Error from Browser","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167039-xweb-access-forbidden-error-from-browser">Q167039: XWEB: Access Forbidden Error from Browser</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167039
+Product(s): Microsoft Exchange
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Active Server Components, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access a Microsoft Exchange Server mailbox from a browser
+via the Web Connector (Active Server Pages), the following occurs:
+
+1. The graphics on the logon page do not load.
+
+2. If you enter a mailbox name and validation details, you receive the following
+  error message:
+
+  HTTP/1.0 403 Access Forbidden (Execute Access Denied - This
+  Virtual Directory does not allow objects to be executed.)
+
+CAUSE
+=====
+
+This problem occurs because the default document set from Internet Server
+Manager on IIS has been changed to something other than Default.htm.
+
+NOTE: This message results if Logon.asp is named as the default document.
+
+RESOLUTION
+==========
+
+This problem can be resolved by renaming Default.htm in the IIS Home directory
+to Default.xxx.
+
+If you are unsure of the current setting for the Home directory, start Microsoft
+Internet Server Manager and select properties for the WWW service. The
+Directories tab shows a path for the Home directory.
+
+To create a new default.htm in the Home directory, perform the following steps:
+
+1. Open a new file and enter the following tags:
+
+       &lt;HTML&gt;
+       &lt;HEAD&gt;
+       &lt;META HTTP-EQUIV="refresh" CONTENT="0;URL=http://x_server_name/exchange"&gt;
+       &lt;/HEAD&gt;
+       &lt;BODY&gt;
+   
+
+  For x_server_name, enter your Microsoft Exchange Server computer name as it
+  appears in Control Panel Networks.
+
+2. Save the new file.
+
+3. Exit and restart the browser and type exchange_server_name as the URL. The
+  logon should appear automatically.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbExchangeActiveServComp500
+Version           : :5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

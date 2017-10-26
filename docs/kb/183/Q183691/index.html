@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183691: HOWTO: Access UserControl Properties From the Same Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183691: HOWTO: Access UserControl Properties From the Same Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183691/","publisher":null,"image":null,"headline":"Q183691: HOWTO: Access UserControl Properties From the Same Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183691-howto-access-usercontrol-properties-from-the-same-project">Q183691: HOWTO: Access UserControl Properties From the Same Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183691
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The properties of a UserControl cannot be accessed from other forms or modules
+in the same project using a syntax such as:
+
+  &lt;UserControl&gt;.&lt;Property&gt;=&lt;Value&gt;
+
+The reference to the UserControl cannot be obtained by specifying the name of the
+UserControl from forms or modules present in the same project. These properties
+can be accessed indirectly, however.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create an ActiveX Control project.
+
+2. Click Add Form on the Project menu to add a form to the project.
+
+3. Add the following code to the UserControl:
+
+        Public CtlProp as string 'user created property
+
+        Private Sub UserControl_Click()
+            CtlProp = "passed value" 'set the property
+            Form1.Show
+        End Sub
+
+        Private Sub UserControl_Initialize()
+            BackColor = vbRed
+        End Sub
+
+4. Add the following code to Form1:
+
+        Private Sub Form_Activate()
+           MsgBox Usercontrol1.CtlProp '&lt;--- Error Occurs Here
+        End Sub
+
+5. Close all of the open forms in the project.
+
+6. Click Add Project on the File menu to add a Standard EXE to the workspace.
+
+7. Place a copy of your Usercontrol on Form1 of Project2.
+
+8. Press the F5 key to run the project and click on the Usercontrol. When the
+  ActiveX control is clicked and the Form is shown, a run-time error 424
+  "Object Required" is generated on the line of code that attempts to directly
+  access a property of the Usercontrol.
+
+Workaround
+----------
+
+To workaround this problem, you can have the UserControl pass a reference to
+itself on the Form by a procedure. The following steps illustrate this
+solution.
+
+1. Create an ActiveX Control project.
+
+2. Click Add Form on the Project menu to add a form to the project.
+
+3. Add the following code to the UserControl:
+
+        Public CtlProp As String 'user created property
+
+        Private Sub UserControl_Click()
+            CtlProp = "passed value" 'set the property
+            Load Form1
+            Call Form1.ControlRef(Me) 'pass the reference before showing
+            Form1.Show
+        End Sub
+
+        Private Sub UserControl_Initialize()
+            BackColor = vbRed
+        End Sub
+
+4. Add the following code to the Form:
+
+        Dim cCtl As UserControl1
+
+        Private Sub Form_Activate()
+            MsgBox cCtl.CtlProp 'this works fine now
+        End Sub
+
+        Sub ControlRef(cC As UserControl1)
+            Set cCtl = cC
+        End Sub
+
+5. Close all of the open forms in the project.
+
+6. Click Add Project on the File menu to add a Standard EXE to the workspace.
+
+7. Place a copy of your Usercontrol on Form1 of Project2.
+
+8. Press the F5 key to run the project. Click on the Usercontrol. No error
+  occurs.
+
+Additional query words: user defined properties access refer kbCtrlCreate kbControl kbVBp500 
+kbVBp600 kbVBp kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

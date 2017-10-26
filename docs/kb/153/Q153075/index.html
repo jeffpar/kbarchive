@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153075/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153075/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153075/","publisher":null,"image":null,"headline":"Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153075-rpl-clients-will-not-boot-with-a-smc-8432-adapter">Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153075
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.5,3.51; :2.2,2.2c
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft LAN Manager, versions 2.2, 2.2c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an SMC 8432 adapter with an RPL client you will receive the
+following error:
+
+  NOT USER LEVEL SEC!
+  RPLDISK.SYS
+  Error in server \\&lt;ServerName&gt;.
+  System files not found (Non-System disk).
+
+CAUSE
+=====
+
+By default, the entries in the Protocol.ini file for the RPL clients are in
+lower case. When the RPL client parses through the Protocol.ini file, and the
+drivername for the SMC adapter under the [smcpwr_nif] section is in lower case,
+the RPL client will fail to start. Below is the default section of the
+[smcpwr_nif] from the Protocol.ini file:
+
+  [smcpwr_nif]
+    drivername = smcpwr$
+
+RESOLUTION
+==========
+
+Modify the Protocol.ini file and ensure that the drivername for the SMC adapter
+under the [smcpwr_nif] section is typed in upper case. A working Protocol.ini
+file is referenced below:
+
+  [protman]
+    drivername = protman$
+    dynamic = yes
+    priority = netbeui
+
+  [netbeui_xif]
+    drivername = netbeui$
+    bindings = smcpwr_nif
+    names = 6
+    ncbs = 12
+    packets = 20
+    pipeline = 10
+    sessions = 6
+    stacksize = 512
+    lanabase = 0
+
+  [xnsnb_xif]
+    drivername = xnsnb$
+    bindings = smcpwr_nif
+    load = xnsnb[cbr]
+    lanabase = 1
+
+  [xnstp_xif]
+    drivername = xnstp$
+    bindings = smcpwr_nif
+    load = xnstp[ub]
+    lanabase = 1
+
+  [tcpip_xif]
+    drivername = TCPIP$
+    disabledhcp = (TCPIP_NO_DHCP)
+    ipaddress0 = (TCPIP_ADDRESS)
+    subnetmask0 = (TCPIP_SUBMASK)
+    defaultgateway0 = (TCPIP_GATEWAY)
+    tcpsegmentsize = 1450
+    tcpwindowsize = 1450
+    nbsessions = 6
+    load = tcptsr[c],tinyrfc[c],emsbfr[cr]
+    unload = "unloadt /notsr[dc]"
+    bindings = smcpwr_nif
+    lanabase = 1
+
+  [ipx_xif]
+    drivername = ipx$
+    load = ipxmark[u],ipx[u]
+    unload = ipxrel[c]
+    bindings = smcpwr_nif
+    lanabase = 1
+
+  [msdlc_xif]
+    drivername = msdlc$
+    bindings = smcpwr_nif
+    load = msdlc[ub]
+    unload = msdlc[u]
+
+  [smcpwr_nif]
+    drivername = SMCPWR$
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbLanManSearch kbLanMan220 kbLanMan220c
+Version           : winnt:3.5,3.51; :2.2,2.2c
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

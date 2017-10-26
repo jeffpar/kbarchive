@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196837/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196837/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196837/","publisher":null,"image":null,"headline":"Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196837-bug-compile-errors-result-for-certain-atl-method-parameters">Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196837
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbwizard kbATL200bug kbAutomation kbCOMt kbVC500bug kbGrpDSMFCATL kbCollectionClass
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the ATL Interface Wizard from Visual C++ 5.0 to add a method to an
+interface, you will get compilation errors C2061 if you specified any of the
+following for parameters in the dialog box:
+
+     SAFEARRAY(type) pSA
+     SAFEARRAY(type) *ppSA
+
+CAUSE
+=====
+
+This problem is caused by a limitation in the ATL COM Interface Wizard.
+
+RESOLUTION
+==========
+
+To cause the ATL code to compile, you must make modifications to the method that
+was added with the ATL COM Interface wizard in the .h and .cpp files.
+
+The correct declarations and definitions that must be used for each of the known
+data types that cause the problems are shown below (assume that the interface is
+IATLObj and the ATL class that is implementing the interface is CATLObj):
+
+For instance, the following are wizard-generated function prototypes in the .h
+file:
+
+     STDMETHOD(Test)(SAFEARRAY(BSTR) *ppArrayBstr);
+     STDMETHOD(Test2)(SAFEARRAY(BSTR) pArrayBstr);
+
+The correct declarations for header file should be:
+
+     STDMETHOD(Test)(SAFEARRAY **ppArrayBstr);
+     STDMETHOD(Test2)(SAFEARRAY *pArrayBstr);
+
+The correct definitions for source file should be:
+
+     STDMETHODIMP CATLObj::Test(SAFEARRAY **ppArrayBstr)
+     {
+        return S_OK;
+     }
+
+     STDMETHODIMP CATLObj::Test2(SAFEARRAY *pArrayBstr)
+     {
+        return S_OK;
+     }
+
+You will notice that if you use the above method, the Class view information in
+the Tree view may look different for CATLObj. Test and Test2 will not be in the
+IATLObj interface section in Class view for CATLObj as they were before. They
+are now in the member function section. You can correct this behavior by not
+making the changes above; and instead, using a macro. To do this, make the
+following modifications to the header file before the class definition:
+
+     #define SAFEARRAY(X) SAFEARRAY*
+
+Class view will now properly display the new methods under the interface section
+instead of under the member function section.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ATL/COM Application Wizard Project.
+
+2. Insert a new ATL COM Object with the default settings.
+
+3. Add a new method with the ATL COM Object Wizard by right-clicking the
+  interface to add the method and selecting "Add Method."
+
+4. Give the method a name.
+
+5. Add one parameter with SAFEARRAY(BSTR)* as the type. For example:
+
+        [out] SAFEARRAY(BSTR) *pArrayBSTR
+
+6. Build the project.
+
+You will receive Compiler Error C2061 due to the incorrect syntax for the
+parameter in the header and source files.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbATL200bug kbAutomation kbCOMt kbVC500bug kbGrpDSMFCATL kbCollectionClass 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

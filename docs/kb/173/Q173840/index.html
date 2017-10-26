@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173840/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173840/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173840/","publisher":null,"image":null,"headline":"Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173840-hardcore-visual-basic-2nd-ed-comments-and-corrections">Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173840
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbfile
+Last Modified: 20-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Hardcore Visual Basic, Second Edition ISBN 1-57231-422-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains corrections, comments, and information on known errors
+relating to the Microsoft Press book "Hardcore Visual Basic, Second Edition,"
+ISBN 1-57231-422-2.
+
+For information about known errors and corrections in the first edition of
+"Hardcore Visual Basic", please see the following article in the Microsoft
+Knowledge Base:
+
+  Q141085 HARDCORE VISUAL BASIC Comments and Corrections
+
+Contents:
+
+- Page 3: Exit Loop Should Be Exit Do
+
+- Page 173: Typographical Error
+
+- Page 273: Typographical Error
+
+- Page 279: IsArrayEmpty Function Code Incorrect
+
+- Page 610: "VBCore" Should Read "VisualCore"
+
+- Page 680: Typographical Error
+
+- Page 692: ListItemFromLinePosition Code Incorrect
+
+- CD-ROM: error in Windows API Type Library for GetCursorPos
+
+- ToRelease.bat, ToDebug.bat, and UnRegisterAll.bat Don't Work
+
+- Missing VisiCore.RC File
+
+- CPalette Errors Don't Work Correctly
+
+- How to Download the Hardvb2a.exe Patch File
+
+- LoadAnyResPicture Fails in VBCore.dll
+
+- Duplicate Files in Hardcore2 Directory
+
+- XEditor Control Properties Require Twips as ScaleMode
+
+- ERROR Constant in Win.tlb Conflicts With VB Error Function
+
+- Error in RegTool Class
+
+- Browse.vbp Does Not Display .JPG or .GIF Files Properly
+
+- GModTool.cls Function CreateToolhelp32Snapshot Memory Leak
+
+MORE INFORMATION
+================
+
+Page 3: Exit Loop Should Be Exit Do
+-----------------------------------
+
+Page 3, paragraph 3, sentence 5:
+
+Change:
+"The Exit Loop statement allows..."
+
+To:
+"The Exit Do statement allows..." (without the quotation marks)
+
+
+Page 173: Typographical Error
+-----------------------------
+
+Page 173, paragraph 1, sentence 2:
+
+Change:
+"hold your piece."
+
+To:
+"hold your peace." (without the quotation marks)
+
+
+Page 273: Typographical Error
+-----------------------------
+
+Page 273, code sample 3:
+
+Change:
+
+    CopyMemory LoWord4, dw 2
+
+To:
+
+    CopyMemory LoWord4, dw, 2
+
+
+Page 279: IsArrayEmpty Function Code Incorrect
+----------------------------------------------
+
+The IsArrayEmpty function mentioned at the bottom of page 279 is coded
+incorrectly in UTILITY.BAS and UTILITY.CLS. The function fails when used on an
+array in which the first item is an object. The following version (provided by
+reader Torsten Rendelmann) fixes the problem:
+
+  Function IsArrayEmpty(va As Variant) As Boolean
+      Dim f As Boolean
+      On Error Resume Next
+      f = IsObject(va(LBound(va)))
+      IsArrayEmpty = (Err &lt;&gt; 0)
+  End Function
+
+
+Page 610: "VBCore" Should Read "VisualCore"
+-------------------------------------------
+
+In the last line of the paragraph before the heading "A Form Wrapped by a Class,"
+the last three words, "...the VBCore component" should be changed to "the
+VisualCore component."
+
+
+Page 680: Typographical Error
+-----------------------------
+
+Page 680, paragraph 4, sentence 2:
+
+Change:
+"from new Visual Basic features such native code"
+
+To:
+"from new Visual Basic features such as native code" (without the quotation
+marks)
+
+
+Page 692: ListItemFromLinePosition Code Incorrect
+-------------------------------------------------
+
+The ListItemFromLinePosition function shown on page 692 is incorrect. The correct
+code is:
+
+  Function ListItemFromLinePosition(lvw As ListView, _
+                                    ByVal y As Single) As ListItem
+      Dim rc As RECT, i As Integer, c As Long, dy As Long
+      c = lvw.ListItems.Count
+      If c = 0 Then Exit Function
+      ' Get the height of a single item
+      rc.Left = LVIR_BOUNDS
+      SendMessage lvw.hWnd, LVM_GETITEMRECT, ByVal 0&amp;, rc
+      dy = rc.bottom - rc.Top
+      ' Calculate the index of the item under the mouse pointer
+      i = lvw.GetFirstVisible.Index - 1 + _
+          ((y \ Screen.TwipsPerPixelY) - (dy / 2)) / dy
+      ' Return the item (if any)
+      If i &gt; 0 And i &lt;= c Then
+          Set ListItemFromLinePosition = lvw.ListItems(i)
+      End If
+  End Function
+
+The code that calls this function later on the page should be adjusted
+accordingly:
+
+  ' Determine if user double clicked anywhere on the line
+  Set item = ListItemFromLinePosition(lvw, yList)
+
+
+CD-ROM: error in Windows API Type Library for GetCursorPos
+----------------------------------------------------------
+
+The CD-ROM installs the Windows API Type Library. Win.Tlb is included in the API
+Type and contains an incorrect declaration for GetCursorPos.
+
+Change:
+
+  GetCursorPos(lpPoint AS Long)
+
+To:
+
+  GetCursorPos(lpPoint AS POINTAPI)
+
+
+ToRelease.bat, ToDebug.bat, and UnRegisterAll.bat Don't Work
+------------------------------------------------------------
+
+ToRelease.bat, ToDebug.bat, and UnRegisterAll.bat all require a program called
+Regsvr32.exe. The batch files expect this program to be located in a subfolder
+of the Hardcore Visual Basic folder, called Tools.
+
+However, in the first printing of "Hardcore Visual Basic, Second Edition," the
+setup program does not create a Tools folder and then copy Regsvr32.exe to it.
+Consequently, the ToDebug, ToRelease, and UnRegisterAll batch files do not work
+correctly.
+
+Follow these steps to fix this problem:
+
+1. Create a Tools folder in the folder to which you installed the Hardcore
+  Visual Basic files.
+
+2. Copy Regsvr32.exe from the CD-ROM to the new Tools folder.
+
+
+Missing VisiCore.rc File
+------------------------
+
+The VisiCore.rc file is not included with the first printing of the companion
+CD-ROM.
+
+The self-extracting file, Hardvb2a.exe, distributed by Microsoft Press, contains
+the VisiCore.rc file as well as instructions for installing this file to your
+Hardcore Visual Basic folder.
+
+For directions on downloading the Hardvb2a.exe patch file, please see the "How to
+Download the Hardvb2a.exe Patch File" section.
+
+
+CPalette Errors Don't Work Correctly
+------------------------------------
+
+The CPalette error IDs in VBCORE.RC don't match the corresponding error constants
+in CPalette's error enumeration.
+
+This error has also been corrected in the self-extracting file, Hardvb2a.exe.
+
+
+How to Download the Hardvb2a.exe Patch File
+-------------------------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  HARDVB2A.EXE
+  (http://download.microsoft.com/download/vb50pro/mspress/2.0/WIN98/EN-US/HARDVB2A.EXE)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+The following installation instructions are copied from the Readme.txt file
+included in Hardvb2a.exe.
+
+INSTALLATION INSTRUCTIONS
+-------------------------
+
+1. Download Hardvb2a.exe into your Hardcore Visual Basic folder.
+
+  If your software is not capable of downloading the file into a particular
+  folder, download the file and copy or move it to your Hardcore Visual Basic
+  folder.
+
+2. Double-click (or run) Hardvb2a.exe to extract the necessary files.
+
+3. If you are asked to confirm the replacement of files, please press Y to
+  confirm the file replacement.
+
+4. Delete Hardvb2a.exe.
+
+LoadAnyResPicture Fails in VBCore.dll
+-------------------------------------
+
+The LoadAnyResPicture function described on page 469 does not work when used from
+the VBCore DLL component.
+
+CAUSE
+=====
+
+When you call from your application to LoadAnyResPicture in VBCore, the function
+looks for your resource in the DLL rather than in the calling application. Since
+your resource is not in VBCore.dll, you will receive an error message.
+
+The List Files of Type combo box is not set to display .GIF and .JPG files by
+default. Also, the UpdateFile subroutine of Browse.vbp attempts to open .GIF and
+.JPG files using the LoadImage API rather than Visual Basic's LoadPicture.
+However, LoadImage does not handle .JPG and .GIF files.
+
+WORKAROUND
+==========
+
+If you use LoadAnyResPicture by including the PicTool.Bas module (from the
+LocalModule directory) in your project, the function will be in your application
+and everything will work fine. You can also cut and paste the function into your
+own code as long as the functions and constants it uses are available.
+
+
+Duplicate Files in Hardcore2 Directory
+--------------------------------------
+
+Some standard module versions of source modules are incorrectly duplicated in two
+different directories on the book CD.
+
+UTILITY.BAS and several other files are duplicated in two directories, Hardcore2
+and LocalModule. Delete the following duplicated files from the Hardcore2
+directory, while keeping the versions in the LocalModule directory:
+
+Bytes.bas
+ComDlg.bas
+Draw.bas
+GDITool.bas
+ModTool.bas
+Parse.bas
+ProcTool.bas
+Random.bas
+Utility.bas
+WinTool.bas
+
+If you want to reuse procedures in the Utility module through the VBCore
+component, use the class version UTILITY.CLS, which is located in the Hardcore2
+directory. This is recommended in most cases. If you want to reuse the
+procedures directly through the source module, use the standard utility
+UTILITY.BAS, which is located in the Hardcore2\LocalModules directory. See
+chapter five for further description of these choices.
+
+
+XEditor Control Properties Require Twips as ScaleMode
+-----------------------------------------------------
+
+Some properties of the XEditor control, such as SelTabs and RightMargin, require
+the control container to use Twips as its ScaleMode. If the container sets its
+ScaleMode to another mode such as Pixels, setting these properties may have
+unexpected results.
+
+To work around this problem, convert values to Twips before assigning them to
+these properties.
+
+You can avoid this problem in your own controls by checking the
+Container.Scalemode and making appropriate adjustments in the control.
+
+
+ERROR Constant in Win.tlb Conflicts With VB Error Function
+----------------------------------------------------------
+
+The Windows API Type Library (Win.tlb and Winu.tlb) contains a constant ERROR
+that conflicts with the Visual Basic Error function. Therefore, you cannot use
+the Error function without qualification when the type library is loaded.
+
+To resolve the conflict, qualify the Error function or constant with the
+appropriate library name, as in the following example:
+
+    Dim s As String, i As Long
+    s = VBA.Error (4)   ' Use Visual Basic function
+    i = Win.Error       ' Use type library constant
+
+
+Error in RegTool Class
+----------------------
+
+In the CreateRegValue function of RegTool.cls:
+Change code to appear as follows:
+
+  &lt;...&gt;
+    Case vbArray + vbByte
+      Dim ab() As Byte
+      ab = vValueA
+      ordType = REG_BINARY
+      c = UBound(ab) - LBound(ab) + 1  ' &lt;-- This line updated
+
+  &lt;...&gt;
+
+
+Browse.vbp Does Not Display .JPG or .GIF Files Properly
+-------------------------------------------------------
+
+SYMPTOMS
+========
+
+The List Files of Type combo box in Browse.vbp does not show .GIF and .JPG files
+by default. If you select a .GIF or a .JPG file manually, the picture will not
+display.
+
+RESOLUTION
+==========
+
+Change line 10 in the Form_Load subroutine in Browse.frm to:
+
+    nsPicType.Add "*.bmp;*.dib;*.gif;*.jpg;*.ico;*.wmf;*.cur;*.wav"
+
+Change lines 278-283 in the UpdateFile subroutine in Browse.frm as follows:
+
+    Dim hBmp As Long, hPal As Long
+    If sExt = ".GIF" Or sExt = ".JPG" Then
+      Set imgPic = LoadPicture(sFile)
+    Else
+      hBmp = LoadImage(App.hInstance, sFile, IMAGE_BITMAP, 0, 0, _
+                 LR_LOADFROMFILE Or LR_CREATEDIBSECTION)
+      hPal = GetBitmapPalette(hBmp)
+      Set imgPic = BitmapToPicture(hBmp, hPal)
+    End If
+
+Delete lines 275-277:
+
+    If 0 Then
+    Set imgPic = LoadPicture(sFile)
+    Else \*
+
+
+GModTool.cls Function CreateToolhelp32Snapshot Memory Leak
+----------------------------------------------------------
+
+There are several functions in GModTool.cls which call the Windows API function
+CreateToolhelp32Snapshot(). This function allocates memory which must be
+released or the memory remains allocated to the calling program. This can create
+a serious memory leak.
+
+To destroy the snapshot, use the CloseHandle() function.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug vb5 vbwin 1-57231- 422-2 devbook
+
+======================================================================
+Keywords          : kbfile 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

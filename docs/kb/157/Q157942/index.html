@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157942: INFO: STL Sample for the sqrt and pow Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157942: INFO: STL Sample for the sqrt and pow Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157942/","publisher":null,"image":null,"headline":"Q157942: INFO: STL Sample for the sqrt and pow Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157942-info-stl-sample-for-the-sqrt-and-pow-functions">Q157942: INFO: STL Sample for the sqrt and pow Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157942
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the STL sqrt and pow functions in
+Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;valarray&gt;
+     &lt;cmath&gt;
+
+Prototype
+---------
+
+     // sqrt
+     template&lt;class T&gt;
+     inline valarray&lt;T&gt; sqrt(const valarray&lt;T&gt;&amp; x);
+
+     // pow
+     template&lt;class T&gt;
+     inline valarray&lt;T&gt; pow(const valarray&lt;T&gt;&amp; x, const valarray&lt;T&gt;&amp; y);
+
+     template&lt;class T&gt;
+     inline valarray&lt;T&gt; pow(const valarray&lt;T&gt; x, const T&amp; y);
+
+     template&lt;class T&gt;
+     inline valarray&lt;T&gt; pow(const T&amp; x, const valarray&lt;T&gt;&amp; y);
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+This article illustrates the use of STL sqrt() and pow() functions through sample
+code. sqrt() returns an object of class &lt;valarrayT&gt;, each of whose
+elements at index I is the square root of x[I]. pow() has three template
+functions. The first template function returns an object of class
+valarray&lt;T&gt;, each of whose elements at index I is x[I] raised to the power
+of y[I]. The second template function stores in element I x[I] raised to the
+power of y. The third template function stores in element I x raised to the
+power of y[I].
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // main.cpp : Illustrates the use of STL sqrt() and pow() functions.
+  // 
+  // Functions:
+  // 
+  //    sqrt, pow
+  // 
+  // Written by Yeong-Kah Tam
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;iostream&gt;                 // for i/o functions
+  #include &lt;valarray&gt;                 // for valarray
+  #include &lt;cmath&gt;                    // for sqrt() and pow()
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  #define ARRAY_SIZE  3               // array size
+
+  void main()
+
+  {
+
+      // Set val_array to contain values 1, 4, 9 for the following test
+      valarray&lt;double&gt; val_array(ARRAY_SIZE);
+
+      for (int i = 0; i &lt; ARRAY_SIZE; i++)
+          val_array[i] = (i+1) * (i+1);
+
+      // Display the size of val_array
+      cout &lt;&lt; "Size of val_array = " &lt;&lt; val_array.size() &lt;&lt; endl;
+
+      // Display the values of val_array before calling sqrt() and pow().
+      cout &lt;&lt; "The values in val_array:" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; val_array[i] &lt;&lt; "    ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // Initialize rev_valarray that is the reverse of val_array.
+      valarray&lt;double&gt; rev_valarray(ARRAY_SIZE);
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          rev_valarray[i] = val_array[ARRAY_SIZE - i - 1];
+
+      // Display the size of rev_valarray.
+      cout &lt;&lt; "Size of rev_valarray = " &lt;&lt; rev_valarray.size() &lt;&lt; endl;
+
+      // Display the values of rev_valarray.
+      cout &lt;&lt; "The values in rev_valarray:" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rev_valarray[i] &lt;&lt; "    ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // rvalue_array to hold the return value from calling the sqrt() and
+      // pow() functions.
+      valarray&lt;double&gt; rvalue_array;
+
+      // ----------------------------------------------------------------
+      // sqrt() - display the content of rvalue_array
+      // ----------------------------------------------------------------
+
+      // Display the result of val_array after calling sqrt().
+      rvalue_array = sqrt(val_array);
+      cout &lt;&lt; "The result of val_array after calling sqrt():" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // ----------------------------------------------------------------
+      // pow() - display the content of rvalue_array
+      // ----------------------------------------------------------------
+
+      // This template function returns an object of class valarray&lt;T&gt;,
+      // each of whose elements at I is x[I] raised to the power of y[I].
+      rvalue_array = pow(val_array, rev_valarray);
+      cout &lt;&lt; "The result after calling pow(val_array, rev_valarray):"
+           &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // This template function stores in element I x[I] raised to the
+      // power of y, where y=2.0.
+      rvalue_array = pow(val_array, 2.0);
+      cout &lt;&lt; "The result after calling pow(val_array, 2.0):" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+      // This template function stores in element I x raised to the
+      // y[I] power, where x=2.0.
+      rvalue_array = pow(2.0, val_array);
+      cout &lt;&lt; "The result after calling pow(2.0, val_array):" &lt;&lt; endl;
+      for (i = 0; i &lt; ARRAY_SIZE; i++)
+          cout &lt;&lt; rvalue_array[i] &lt;&lt; "     ";
+      cout &lt;&lt; endl &lt;&lt; endl;
+
+  }
+
+Program Output
+--------------
+
+Size of val_array = 3
+The values in val_array:
+1    4    9
+
+Size of rev_valarray = 3
+The values in rev_valarray:
+9    4    1
+
+The result of val_array after calling sqrt():
+1     2     3
+
+The result after calling pow(val_array, rev_valarray):
+1     256     9
+
+The result after calling pow(val_array, 2.0):
+1     16     81
+
+The result after calling pow(2.0, val_array):
+2     16     512
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample sqrt pow
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

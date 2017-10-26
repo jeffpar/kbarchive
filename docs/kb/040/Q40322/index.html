@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40322: Setting Up QuickC Version 2.00 on a Two-Floppy Machine | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40322: Setting Up QuickC Version 2.00 on a Two-Floppy Machine" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40322/","publisher":null,"image":null,"headline":"Q40322: Setting Up QuickC Version 2.00 on a Two-Floppy Machine","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40322-setting-up-quickc-version-200-on-a-two-floppy-machine">Q40322: Setting Up QuickC Version 2.00 on a Two-Floppy Machine</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40322
+Product(s): See article
+Version(s): 2.00   | 2.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): enduser | | mspl13_c
+Last Modified: 17-JAN-1989
+
+The following article contains one possible setup configuration for
+installing QuickC Version 2.00 on a two-floppy machine (360K). This is
+not the only setup configuration. Although the combination listed
+below will minimize disk swapping, it is not as practical for large
+programs as other configurations that require an additional disk(s)
+for your libraries.
+
+The following are the four steps to this setup:
+
+1. Below is a description of the distribution of QuickC Version 2.00
+   files over five 360K floppies. After each disk number is a list
+   of files that you need to copy to that disk. The following is the
+   description:
+
+      disk 1:   qc.exe
+
+      disk 2:   qcc.ovl
+                c1.err
+                cl.err
+                link.exe
+                ilink.exe
+                ilinkstb.ovl
+
+      disk 3:   qc.hlp
+
+      disk 4:   qcenv.hlp
+                errors.hlp
+                graphics.hlp
+                notes.hlp
+                (There is plenty of room left on this disk for
+                addition help files.)
+
+      disk 5:   \include\*.h    (It is best to copy just the header
+                                 files that you require.)
+                \include\sys\stat.h
+                \include\sys\timeb.h
+                \include\sys\types.h
+                \include\sys\utime.h
+                \include\sys\locking.h
+                \lib\xlibce.lib (without graphics.lib or pgchart.lib)
+                source files
+
+      The following are notes on disk 5:
+
+      The notation "\include\*.h" means that you must create a
+      directory named "include" on disk five, and copy the necessary
+      header files (files with the .h extension) to this directory.
+      "\include\sys\.." means that you must create a subdirectory
+      "sys" inside the "include" directory and copy the files listed
+      into it.
+
+      If you copy all of the header files, there is room for a
+      combined library without any graphics, and about 45K remains for
+      your source file. Due to this behavior, it's better to only copy
+      needed header files. If you want to use graphics or pgchart, in
+      all practicality, you should put your library or libraries onto
+      another disk, and swap when the linker asks for it.
+
+      The notation "\lib\xlibce.lib" means you must create a "lib"
+      directory and copy a combined library to this directory.
+      xLIBCE.LIB is your combined library where "x" is S, M, C, or L
+      (small, medium, compact, or large).
+
+      To build the combined libraries, you can invoke the SETUP.EXE
+      program to specifically build them for you. Type "setup /L" (use
+      /L, not /l).
+
+2. Set your environment variables as follows:
+
+      PATH=a:\;b:\
+      set INCLUDE=b:\include
+      set LIB=b:\lib
+
+   You can set these variables at the DOS command prompt
+   ("set path=a:\;b:\") or you can place these settings within
+   a batch file. When typing these variables, it is vital that
+   you do not add extraneous characters (such as spaces) to them
+   because they will mislead DOS. The following lists two common
+   errors when setting environment variables:
+
+      set path = a:\;b:\ &lt;enter&gt;    &lt;--spaces invalidate this setting.
+      set path=a:\;b:\ &lt;space(s)&gt;&lt;enter&gt;  &lt;--spaces at the end also
+                                             invalidate the setting.
+
+3. Add the following two lines to your CONFIG.SYS file:
+
+      files=20
+      buffers=15
+
+   (You must reboot after this modification for the changes to take
+   effect.)
+
+4. Make Drive B: your default drive by typing "B:".
+
+If you have further questions concerning Setup, libraries,
+environment variables, or specific component files of QuickC,
+please refer to the following source listings in the
+"Microsoft QuickC Up and Running" manual:
+
+   Setup:
+
+      1. Page 15, "Installing on a Floppy-Disk System"
+
+      2. Page 6, "Running Setup"
+
+   Libraries:
+
+      1. Page 7, "Understanding Libraries"
+
+      2. Page 8, "First Screen: The Libraries"
+
+   Environment Variables:
+
+      1. Page 14, "Modifying CONFIG.SYS"
+
+      2. Page 13, "Setup Stage Three"
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

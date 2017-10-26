@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226470/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226470/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226470/","publisher":null,"image":null,"headline":"Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226470-xweb-using-owa-with-windows-load-balancing-service-wlbs">Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226470
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Load Balancing Service (WLBS) is a service that allows balancing of
+server loads for incoming client connections. Outlook Web Access (OWA) can be
+used in conjunction with WLBS to manage traffic handling of incoming Web client
+connections to an Exchange Server computer. WLBS with OWA is not a solution for
+increasing performance of the Web client connections, merely a method to spread
+the load on the servers while allowing you to use a common name space for
+connections to your Exchange Server computer.
+
+MORE INFORMATION
+================
+
+In a common scenario, you will have two or more front-end servers configured
+with WLBS software and the OWA component. These servers will be the contact
+point for incoming OWA client traffic, and WLBS will balance the OWA connections
+between the servers. The back-end server or servers will be configured with the
+Exchange mailboxes you wish to access through OWA. Therefore, users will access
+OWA through a common name space created during the installation of WLBS, and OWA
+does not need to be installed on the back end. After installing OWA as
+recommended in the Setup instructions included with Exchange Server 5.5, you
+should install the WLBS component according to the WLBS documentation.
+
+It is recommended that you install the OWA component on the front-end server
+before installing WLBS. After installing OWA, you may install WLBS, (for more
+information on WLBS Setup, see the WLBS documentation).
+
+NOTE: Configure WLBS with one NIC in the computer before installing a secondary
+NIC.
+
+For more information on configuring WLBS with single or multiple network cards,
+see the following articles in the Microsoft Knowledge Base:
+
+  Q197992 How to Configure WLBS Using a Single Network Interface Card
+
+  Q197991 How to Configure WLBS Using Multiple Network Interface Cards
+
+After you complete the WLBS configuration you want, OWA should be functional, and
+client connections can be dispersed to the server with less load at the time of
+connection. For example, users A-M will no longer be instructed to connect to
+front-end server 1, while users N-Z will connect to front-end server 2. All
+users will connect to a common namespace (http://server/exchange), and the WLBS
+will balance connections to the servers in the WLBS grouping, all of which will
+be transparent to the user.
+For more information on troubleshooting OWA with WLBS, see the following articles
+in the Microsoft Knowledge Base:
+
+  Q226377 XWEB: This Page Cannot be Displayed When Connected with OWA to WLBS
+
+  Q226386 XWEB: WLBS Failover Causes Accumulation of MMP Files in the Webtemp
+  Directory
+
+
+For more information on deployment and troubleshooting OWA, see the Outlook Web
+Access Deployment and Troubleshooting Guide at the following Web location:
+
+http://support.microsoft.com/support/exchange/content/whitepapers/whitepapers.asp
+
+Additional query words: convoy
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

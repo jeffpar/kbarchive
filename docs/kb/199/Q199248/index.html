@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199248: SMS: Limited Support for Dual Boot Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199248: SMS: Limited Support for Dual Boot Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199248/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199248/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199248/","publisher":null,"image":null,"headline":"Q199248: SMS: Limited Support for Dual Boot Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199248-sms-limited-support-for-dual-boot-clients">Q199248: SMS: Limited Support for Dual Boot Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q199248</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsetup</span> <span class="n">kbsms200</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">18</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Dual</span> <span class="n">boot</span> <span class="n">support</span> <span class="k">in</span> <span class="nf">System</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">is</span> <span class="n">limited</span> <span class="k">to</span> <span class="n">computer</span> <span class="n">that</span>
+<span class="n">have</span> <span class="n">a</span> <span class="nf">System</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">role</span> <span class="k">of</span> <span class="n">client</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">supported</span> <span class="n">only</span> <span class="n">on</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span>
+<span class="n">Windows</span> <span class="n">clients</span><span class="p">,</span> <span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">Windows</span> <span class="m">95</span><span class="p">,</span> <span class="n">Windows</span> <span class="m">98</span><span class="p">,</span> <span class="k">and</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">,</span> <span class="k">or</span> <span class="n">multiple</span>
+<span class="n">instances</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">.</span> <span class="n">The</span> <span class="n">default</span> <span class="n">location</span> <span class="n">for</span> <span class="n">the</span> <span class="n">MS</span><span class="p">\</span><span class="n">SMS</span> <span class="n">tree</span> <span class="n">will</span> <span class="n">be</span> <span class="n">under</span>
+<span class="p">%</span><span class="n">Windir</span><span class="p">%.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">same</span> <span class="nf">System</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">unique</span> <span class="n">identifier</span> <span class="p">(</span><span class="n">ID</span><span class="p">)</span> <span class="n">is</span> <span class="n">used</span> <span class="n">for</span> <span class="n">all</span>
+<span class="n">operating</span> <span class="nf">system</span> <span class="n">instances</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span><span class="p">.</span> <span class="nf">System</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">scans</span> <span class="n">the</span>
+<span class="n">hard</span> <span class="n">disk</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">whether</span> <span class="n">another</span> <span class="n">installation</span> <span class="k">of</span> <span class="nf">System</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="m">2.0</span> <span class="nb">exists</span><span class="p">.</span> <span class="k">If</span> <span class="n">it</span> <span class="n">does</span><span class="p">,</span> <span class="n">the</span> <span class="n">same</span> <span class="n">unique</span> <span class="n">ID</span> <span class="n">is</span> <span class="n">used</span> <span class="k">and</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">appears</span> <span class="n">only</span>
+<span class="n">once</span> <span class="k">in</span> <span class="n">the</span> <span class="n">database</span><span class="p">.</span>
+<span class="n">When</span> <span class="n">distributing</span> <span class="n">software</span> <span class="k">to</span> <span class="n">this</span> <span class="n">machine</span><span class="p">,</span> <span class="n">each</span> <span class="n">operating</span> <span class="nf">system</span> <span class="n">instance</span>
+<span class="n">attempts</span> <span class="k">to</span> <span class="n">process</span> <span class="n">the</span> <span class="n">advertisement</span><span class="p">.</span> <span class="n">This</span> <span class="n">can</span> <span class="n">be</span> <span class="n">limited</span> <span class="n">by</span> <span class="n">changing</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">properties</span> <span class="k">to</span> <span class="n">support</span> <span class="n">only</span> <span class="n">Windows</span> <span class="m">95</span><span class="p">,</span> <span class="n">Windows</span> <span class="m">98</span><span class="p">,</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">.</span> <span class="n">Note</span>
+<span class="n">that</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">instance</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">targeted</span><span class="p">.</span>
+<span class="k">If</span> <span class="n">all</span> <span class="n">instances</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">advertisement</span> <span class="n">the</span> <span class="k">next</span> <span class="n">time</span> <span class="n">they</span> <span class="n">are</span> <span class="n">started</span><span class="p">,</span> <span class="n">the</span> <span class="n">status</span>
+<span class="n">is</span> <span class="n">reported</span> <span class="n">without</span> <span class="n">any</span> <span class="n">detail</span> <span class="n">about</span> <span class="n">which</span> <span class="n">instance</span> <span class="n">ran</span> <span class="n">the</span> <span class="n">program</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">sms20</span> <span class="n">setup</span> <span class="n">prodsms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsetup</span> <span class="n">kbsms200</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS200</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">2.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

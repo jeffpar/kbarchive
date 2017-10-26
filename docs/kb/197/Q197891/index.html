@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197891: Enumerating the Names of IIS Web Sites Using WSH | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197891: Enumerating the Names of IIS Web Sites Using WSH" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197891/","publisher":null,"image":null,"headline":"Q197891: Enumerating the Names of IIS Web Sites Using WSH","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197891-enumerating-the-names-of-iis-web-sites-using-wsh">Q197891: Enumerating the Names of IIS Web Sites Using WSH</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197891
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Windows NT Option Pack (NTOP) and Internet Information Server
+(IIS) version 4.0, Web sites are added to the server using the Microsoft
+Management Console (MMC). Each new Web site is given a number in the metabase,
+and this number is used by IIS when logging and FrontPage when installing
+extensions. It is sometimes desirable to know which number corresponds to a
+given Web site.
+
+MORE INFORMATION
+================
+
+The following code was written using Windows Script Host (WSH) and lists all Web
+sites by their short metabase path and name.
+
+To use this script, follow these steps:
+
+1. Copy the following code into Notepad, and then save it to your computer as a
+  file called W3sites.vbs:
+
+        Dim objW3SVC, objSITE, strOUT
+        Set objW3SVC = GetObject("IIS://LOCALHOST/W3SVC")
+
+        If (Err &lt;&gt; 0) Then
+        strOUT = "Error " &amp; Hex(Err.Number) &amp; "("
+        strOUT = strOUT &amp; Err.Description &amp; ") occurred."
+        Else
+        For Each objSITE In objW3SVC
+        If objSITE.class = "IIsWebServer" Then
+        strOUT = strOUT &amp; "LM/W3SVC/" &amp; objSITE.Name &amp; Chr(9)
+        strOUT = strOUT &amp; Chr(34) &amp; objSITE.ServerComment
+        strOUT = strOUT &amp; Chr(34) &amp; Chr(13) &amp; Chr(10)
+        End If
+        Next
+        End If
+
+        WScript.Echo strOUT
+
+2. To run the code, open a command prompt, and then type the following command:
+
+     CSCRIPT.EXE W3SITES.VBS
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

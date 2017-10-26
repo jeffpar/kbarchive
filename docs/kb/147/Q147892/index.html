@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147892: FIX: Custom AppWizard Doesn’t Support Multiple Languages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147892: FIX: Custom AppWizard Doesn’t Support Multiple Languages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147892/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147892/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147892/","publisher":null,"image":null,"headline":"Q147892: FIX: Custom AppWizard Doesn’t Support Multiple Languages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147892-fix-custom-appwizard-doesnt-support-multiple-languages">Q147892: FIX: Custom AppWizard Doesn’t Support Multiple Languages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147892
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbwizard kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The AppWizard, included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+By default, when you create a custom AppWizard using the Standard AppWizard
+Steps in the Custom AppWizard, the German, English, Spanish, French, Italian
+language support is selected. If you leave the default, five .rc files will be
+generated (loc_XXX.rc) for each language along with several sets of RTF files.
+However, all of these files will be in Italian instead of their respective
+languages.
+
+As a result of selecting more than one language in the list box in Custom
+AppWizard, all resource files will be created in the bottom-most selected
+language.
+
+RESOLUTION
+==========
+
+Select only one language in the list box in Step 2 of the Custom AppWizard. If
+more than one language is needed, run AppWizard multiple times, once for each
+language.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Error
+------------------------
+
+1. On the "File" (without the quotation marks) menu, click "New" (without the
+  quotation marks), and then click "Project Workspace" (without the quotation
+  marks).
+
+2. Click "Custom AppWizard" (without the quotation marks), and select "Standard
+  AppWizard Steps" (without the quotation marks). Leave all other defaults as
+  is.
+
+3. Click "Finish" (without the quotation marks), and then click "OK" (without
+  the quotation marks).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

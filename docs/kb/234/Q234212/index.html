@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234212/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234212/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234212/","publisher":null,"image":null,"headline":"Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234212-howto-insert-line-into-text-file-using-low-level-file-functions">Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234212
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport
+Last Modified: 27-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Windows, versions 2.6, 2.6a 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can add lines of a text into a text file by creating a function using the
+code in the MORE INFORMATION section of this article.
+
+MORE INFORMATION
+================
+
+Save the following code to a program (PRG) file. The calling convention is :
+
+Syntax:      InsertText(expC1, expN, expC2)
+
+Parameters:  expC1  The file into which text is inserted
+            expN   The line number after which text is inserted
+            expC2  The text to be inserted
+Returns:     Numeric
+
+  *-- Function InsertLine
+  *-- Description: Inserts text into a file at a specified line
+  *--
+  *-- Parameters:
+  *-- lsFileName - The file into which text is inserted
+  *-- liLineNum  - The line number after which text is inserted
+  *-- lsText     - The text to be inserted
+  *-- Returns:
+  *-- -1 = File could not be opened
+  *-- -2 = Text insertion failed
+  *-- -3 = File could not be closed
+
+  Function InsertLine
+  Parameter lsFileName, liLineNum, lsText
+  liFile = Fopen(lsFileName, 12)
+  If liFile = -1
+      Return -1
+  Endif
+
+  *-- Loop until we get to the desired line
+  For i = 1 To liLineNum
+      =Fgets(liFile)
+  Endfor
+
+  *-- Insert the text
+  liRc = Fputs(liFile, lsText)
+  If liRc = 0
+      Return -2
+  Endif
+
+  *-- Clean up
+  llRc = Fclose(liFile)
+  If !llRc 
+      Return -3
+  Else
+      Return 1
+  Endif
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Mike A. Stewart, Microsoft Corporation
+
+
+Additional query words: Add data low-level low level
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro260a kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74539: HOWTO: Draw the Icon for a Minimized Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74539: HOWTO: Draw the Icon for a Minimized Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74539/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74539/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74539/","publisher":null,"image":null,"headline":"Q74539: HOWTO: Draw the Icon for a Minimized Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74539-howto-draw-the-icon-for-a-minimized-application">Q74539: HOWTO: Draw the Icon for a Minimized Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74539
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbIcon kbGrpDSUser kbOSWin310 kbWndwProp
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text below describes how an application developed for the Microsoft Windows
+graphical environment can draw its own icon when it is minimized. An application
+can use these techniques to draw different icons to indicate its state.
+
+In Windows version 3.1, an application can initiate a dynamic data exchange (DDE)
+conversation with the Windows Program Manager to determine which icon the user
+has associated with an application and can then draw that icon using the
+following techniques.
+
+MORE INFORMATION
+================
+
+To draw its own icon when minimized, a Windows-based application performs the
+following five steps:
+
+1. When the application registers its main window's window class, specify NULL
+  as the value of the hIcon member of the WNDCLASS data structure.
+
+2. Create a static variable to store the icon the application will use, as
+  follows:
+
+        HICON hIcon;
+
+  Initialize this variable to the value returned from the CreateIcon or LoadIcon
+  function.
+
+3. To draw the icon, process the WM_PAINT message in the main window's window
+  procedure as follows:
+
+        case WM_PAINT:
+           {
+           PAINTSTRUCT ps;
+
+           if (IsIconic(hWnd))
+              {
+              BeginPaint(hWnd, (LPPAINTSTRUCT)&amp;ps);
+
+              // Paint the desktop window background.
+              DefWindowProc(hWnd, WM_ICONERASEBKGND, (WORD)ps.hdc, 0L);
+
+              // Draw the icon on top of it.
+              DrawIcon(ps.hdc, 0,0, hIcon);
+
+              EndPaint(hWnd, (LPPAINTSTRUCT)&amp;ps);
+              }
+           else
+              return DefWindowProc(hWnd, message, wParam, lParam);
+           }
+
+4. To prevent a screen flash when the application draws the icon, process the
+  WM_ERASEBKGND message in the main window's window procedure, as follows:
+
+        case WM_ERASEBKGND:
+           if (IsIconic(hWnd))
+
+              // Do not erase the background now. When the application
+              // paints its icon, it will erase the background.
+              return TRUE;
+           else
+              return DefWindowProc(hWnd, message, wParam, lParam);
+
+5. Process the WM_QUERYDRAGICON message in the main window's window procedure.
+  When the user is about to drag a window that has no icon defined for its
+  window class, Windows sends it a WM_QUERYDRAGICON message. The code below
+  causes Windows to create a dragging cursor based on the specified icon.
+  Windows automatically converts a color icon to a monochrome cursor.
+
+        case WM_QUERYDRAGICON:
+           return (LONG)(WORD)hIcon;
+           break;
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly kbIcon kbGrpDSUser kbOSWin310 kbWndwProp 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

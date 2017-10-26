@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228487/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228487/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228487/","publisher":null,"image":null,"headline":"Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228487-prb-system-error-message-h80004015-running-activex-dll-in-id">Q228487: PRB: System Error Message "&amp;H80004015" Running ActiveX DLL in ID</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228487
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbInprocSvr kbRegistry kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 10-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While attempting to run an ActiveX dll from the Visual Basic IDE, the following
+error message is displayed:
+
+  System error &amp;H80004015(-2147467243). The class is configured to run as a
+  security ID different from the caller.
+
+CAUSE
+=====
+
+When Visual Basic runs an ActiveX dll from the IDE, it calls the
+CoRegisterClassObject API to temporarily register the server. This creates the
+AppId and specifies it to run in the Interactive User context.
+
+The problem is due to a bug in the Microsoft OLE Libraries 4.0, which are
+included with the Microsoft Platform Software Development Kit (SDK).
+CoRegisterClassObject fails with the error message given earlier under the
+following conditions:
+
+- If the ActiveX server calling the API is set to run using the "Interactive
+  User" identity.
+
+-and-
+
+- The string associated with the following registry key contains any value
+  other than a single valid executable name for the shell process:
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon Shell=
+
+Under Windows 2000, this error occurs when the Certificate Authority service does
+not start.
+
+RESOLUTION
+==========
+
+Make certain that the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows
+NT\CurrentVersion\Winlogon Shell= registry key contains a single valid
+executable name for the shell process.
+
+To resolve this problem under Windows 2000, you can install the "Client for
+Microsoft Network" component and then reboot.
+
+
+See the "REFERENCES" section of this article for instructions on how to handle
+this error when it is related to the Certificate Authority on systems that are
+running Windows 2000.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q170364 CoRegisterClassObject Fails with CO_E_WRONG_SERVER_IDENTITY
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveX kbInprocSvr kbRegistry kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

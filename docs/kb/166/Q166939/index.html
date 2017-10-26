@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166939: BUG: CRecordset::Update Fails After Upgrading | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166939: BUG: CRecordset::Update Fails After Upgrading" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166939/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166939/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166939/","publisher":null,"image":null,"headline":"Q166939: BUG: CRecordset::Update Fails After Upgrading","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166939-bug-crecordsetupdate-fails-after-upgrading">Q166939: BUG: CRecordset::Update Fails After Upgrading</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166939
+Product(s): Microsoft C Compiler
+Version(s): 4.2 4.2b 5.0
+Operating System(s): 
+Keyword(s): kbVC500bugkbbuglist
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you recompile it with Visual C++ 4.2 or Visual C++ 5.0, an MFC/ODBC
+application built with Visual C++ 4.0 or 4.1 begins to fail in
+CRecordset::Update.
+
+CAUSE
+=====
+
+MFC 4.2 removes the "FOR UPDATE OF" clause from SELECT statements generated for
+all CRecordset objects.
+
+Some ODBC drivers depend on this syntax and will fail to process the SQL when it
+is not found.
+
+RESOLUTION
+==========
+
+A member variable CDatabase::m_bAddForUpdate was added in MFC 4.2 to internally
+control the inclusion of the "FOR UPDATE" clause.
+
+Setting this variable to TRUE before opening the recordset will cause "FOR
+UPDATE" to be appended to the generated SQL statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+CDatabase::m_bAddForUpdate is an undocumented member of CDatabase and as such is
+not guaranteed to have the same use or even exist in future versions of MFC.
+
+It is offered for use in this article as a workaround only for this current
+problem.
+
+This problem is not believed to affect many ODBC drivers.
+
+Additional query words: kbvc420bug kbvc500bug kbmfc kbdatabase kbodbc
+
+======================================================================
+Keywords          : kbVC500bug kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC32bitSearch kbVC420b kbVC500Search
+Version           : 4.2 4.2b 5.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

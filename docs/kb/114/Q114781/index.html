@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114781: Rushmore Requires Open Indexes in Order to Operate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114781: Rushmore Requires Open Indexes in Order to Operate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114781/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114781/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114781/","publisher":null,"image":null,"headline":"Q114781: Rushmore Requires Open Indexes in Order to Operate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114781-rushmore-requires-open-indexes-in-order-to-operate">Q114781: Rushmore Requires Open Indexes in Order to Operate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114781
+Product(s): Microsoft FoxPro
+Version(s): 2.0,2.5,2.5a,2.5b,2.5c,2.6a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro's SQL - SELECT command automatically opens any tables called in the FROM
+clause of the command. If any of these tables have an associated structural
+.CDX, that .CDX file is automatically opened. This is the standard behavior of a
+structural .CDX. However, any nonstructural .CDX files or .IDX files associated
+with the tables in the projection list must be explicitly activated in order for
+Rushmore to use them.
+
+MORE INFORMATION
+================
+
+Rushmore requires indexes in order to operate. If no suitable index is
+available, FoxPro will create an index. Creating the index will take some
+additional time, which reduces the benefits of Rushmore's query speed.
+
+To ensure the best performance possible when you use tables with nonstructural
+.CDX and .IDX indexes, open the tables and related indexes prior to issuing the
+SELECT command. FoxPro has no way to associate and automatically open .IDX files
+or nonstructural .CDX files for Rushmore.
+
+Steps to Demonstrate Behavior
+-----------------------------
+
+To see how indexes affect Rushmore's performance, do the following:
+
+1. Issue the following commands in the Command window:
+
+        USE customer
+        COPY TO testrush
+        USE testrush
+        APPEND FROM customer   &amp;&amp; re-execute this command until ;
+                                  there are several thousand ;
+                                  records in the testrush table. ;
+                                  The point is simply to create ;
+                                  a file large enough so that the ;
+                                  timing difference is noticeable.
+
+        INDEX ON company TO testrush
+        CLOSE ALL
+
+2. Issue the following SELECT command in the Command window:
+
+        SELECT * FROM testrush WHERE company = "A"
+
+  Note the query time in the status bar.
+
+3. Close all the tables and run the query with both TESTRUSH.DBF and
+  TESTRUSH.IDX active:
+
+        CLOSE ALL
+        USE testrush INDEX testrush
+        SELECT * FROM testrush WHERE company = "A"
+
+Note the query time in the status bar.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin performance benchmark speed tshoot slow
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : :2.0,2.5,2.5a,2.5b,2.5c,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

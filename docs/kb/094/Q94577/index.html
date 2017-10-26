@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94577/","publisher":null,"image":null,"headline":"Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94577-creating-32-bit-flat-memory-model-masm-code-for-os2-20">Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94577
+Product(s): Microsoft Macro Assembler
+Version(s): MS-DOS:6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 6.0, 6.0a, and 6.0b of the Microsoft Macro Assembler (MASM) provide the
+.MODEL flat directive to support generating 32-bit flat memory model
+applications. When combined with the LINK386 utility and DOSCALLS.LIB library
+provided with OS/2 version 2.0, you can generate a 32-bit flat memory model
+application for the OS/2 version 2.0 environment.
+
+To build a 32-bit flat memory model application for OS/2 2.0, perform the
+following four steps:
+
+1. Place the INCLUDELIB DOSCALLS.LIB directive in each source module that
+  contains a call into the OS/2 2.0 application programming interface (API).
+  DOSCALLS.LIB is the OS/2 2.0 import library that supports application calls
+  to the operating system.
+
+2. Place the .386 or .486 directive before the .MODEL flat, syscall directive to
+  ensure that your code and data segments are set up correctly for a 32-bit
+  flat memory model application. The order in which these two directives appear
+  in the source code is important.
+
+3. Specify the /c assembler option flag on the assembler command line to prevent
+  MASM from invoking its 16-bit linker.
+
+4. Link the object files using LINK386 distributed with OS/2 2.0. If LINK386
+  cannot find the DOSCALLS.LIB file, specify the path to the library.
+
+MORE INFORMATION
+================
+
+The LINK386 utility and DOSCALLS.LIB library are provided by IBM with OS/2
+version 2.0. MASM versions 6.0, 6.0a, and 6.0b does not include either the
+required library support for OS/2 operating system calls or a linker capable of
+producing flat memory model applications. For more information on LINK386,
+DOSCALLS.LIB, or the functions of the OS/2 2.0 API, please contact IBM.
+
+LINK386 may generate two warnings that can be safely ignored:
+
+  LINK386: warning L4071: application type not specified:
+
+  assuming WINDOWCOMPAT
+
+  LINK386: warning L4071: no automatic data segment
+
+MASM version 6.1 does not run with any version of OS/2 including a DOS window
+under OS/2. Microsoft does not support using MASM 6.1 for OS/2. Even though code
+generated by MASM 6.1 running with MS-DOS may link with LINK386, Microsoft does
+not support generating code in this manner.
+
+Some of the products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Sample Code
+-----------
+
+  ; Assemble options needed: /c
+
+  INCLUDELIB DOSCALLS.LIB
+
+  .386
+  .MODEL flat, syscall
+
+  Dos32Write PROTO NEAR32 syscall,
+      hf:WORD, pvBuf:NEAR32, cbBuf:WORD, pcbBytesWritten:NEAR32
+
+  Dos32Exit PROTO NEAR32 syscall,
+      fTerminate:WORD, ulExitCode:WORD
+
+  .STACK 4096
+
+  .DATA
+
+  msg DB "Hello, world.", 13, 10
+  written DW 0
+
+  .CODE
+  _start:
+      INVOKE  Dos32Write,        ; OS/2 system call
+          1,                     ; File handle for screen
+          NEAR32 PTR msg,        ; Address of string
+          LENGTHOF msg,          ; Length of string
+          NEAR32 PTR written     ; Bytes written
+
+      INVOKE  Dos32Exit,         ; OS/2 system call
+          0,                     ; Terminate all threads
+          0                      ; Result code for parent process
+
+  END _start
+
+Additional query words: kbinf 6.00 6.00a 6.00b 6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0,6.0a,6.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

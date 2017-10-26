@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35537: Developing Macros | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35537: Developing Macros" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35537/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35537/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35537/","publisher":null,"image":null,"headline":"Q35537: Developing Macros","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35537-developing-macros">Q35537: Developing Macros</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35537
+Product(s): See article
+Version(s): 1.00   | 1.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | appnote | mspl13_basic
+Last Modified: 4-MAY-1989
+
+The following information is taken from an application note called
+"Microsoft Editor Questions and Answers." The application note also is
+available from Microsoft Product Support Services by calling (206)
+454-2030.
+
+Develop my Own Macros
+
+Developing a macro is similar to programming in a high-level language.
+Each macro represents a command. Instead of a collection of library
+routines, you have a collection of editor functions. You begin with an
+idea of a process that you would like to be performed by simply
+pressing one keystroke.
+
+Suppose you would like to be able to move the cursor to the lower-left
+corner of the editing window. You know you can do this "manually" with
+the arrow keys that are assigned to the "Left" and "Down" editor
+functions. However, it can be simplified more. "Meta Down" moves the
+cursor to the bottom of the window; "Meta Begline" moves the cursor to
+the first column of the line. Together, these functions will do the
+job.
+
+This macro must now be given a unique name, for example, "Bottom". The
+TOOLS.INI statement would look as follows:
+
+   Bottom:=Meta Begline Meta Down
+
+A macro also can be a combination of other macros. The following is an
+example:
+
+   Waydown:=Meta Down
+   Wayleft:=Meta Begline
+   Bottom:=Waydown Wayleft
+
+Suppose that the "Meta Begline" command did not exist. You would need
+to find some way to know that the cursor is in the first column.
+Almost all of the editor functions have boolean (TRUE/FALSE) Return
+Values that can be useful in developing macros.
+
+For the "Bottom" macro, you know that "Begline" will at least move the
+cursor to the first nonblank character on the line. Any further cursor
+movement would have to be done using "Left". "Left" returns TRUE when
+the cursor moves and FALSE when the cursor does not move.
+
+You would want to move left until the cursor does not move anymore,
+i.e., move left until "Left" returns FALSE. The editor allows you to
+do this with Macro Conditionals. The following is an example:
+
+   Bottom:=Begline :&gt;LT Left +&gt;LT Meta Down
+
+   :&gt;LT   defines a label LT
+   +&gt;LT   if Left returns TRUE, go to label LT
+          if Left returns FALSE, continue
+
+Macro Conditionals and a table of Return Values can be found in the
+"Microsoft Editor User's Guide."
+
+The final step is to assign the macro to a keystroke, as follows:
+
+   Bottom:CTRL+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

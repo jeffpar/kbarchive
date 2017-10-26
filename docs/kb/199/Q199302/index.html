@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199302/","publisher":null,"image":null,"headline":"Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199302-xfor-understanding-fb-flow-between-groupwise--exchange-server">Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199302
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Calendar Connector (Calcon) supports the exchange of Free/Busy (F/B)
+information between Exchange Server and Novell GroupWise. This article describes
+the underlying mechanism between both systems.
+
+Exchange Server to GroupWise
+----------------------------
+
+1. The Calcon server continually monitors all F/B requests using an internal
+  store-based mechanism. The Calcon server is also responsible for sending and
+  receiving F/B information based on which mail system the F/B query originated
+  at.
+
+2. The GroupWise provider writes a MSG-Type=SEARCH type API file in the Togwise
+  directory. The following is an example of the API file:
+
+  WPC-API= 1.2;
+  MSG-TYPE= Search;
+  Msg-ID= AFJDHGOI:1998.11.26.1.5:1999.1.25.1.5:1998.11.26.1.5.54;
+  From=
+   WPD= Exchange;
+   WPPO= WasteLand;
+   WPU= BEDLAM-SA;
+   CDBA= Exchange.WasteLand.BEDLAM-SA; ;
+  To=
+   WPD= BETA 5;
+   WPPO= Petaling Jaya;
+   WPU= efong;
+   CDBA= BETA 5.Petaling Jaya.efong; ;
+  Begin-Time= 26/11/1998 1:5 +0;
+  End-Time= 25/1/1999 1:5 +0;
+
+3. The Microsoft Exchange Router for Novell GroupWise moves this API file from
+  the Togwise directory to the Api_in directory on the NetWare server.
+
+4. The API gateway then picks up the F/B query, sees that it is a SEARCH type
+  message, and delivers the message to its internal GroupWise mail system for
+  further processing.
+
+GroupWise to Exchange Server (F/B Responses and Queries)
+--------------------------------------------------------
+
+1. The F/B response or query is dropped into the API gateway's Api_out
+  directory.
+
+2. The GroupWise router picks up the message and moves it to the Freebusy
+  directory on the Exchange Server computer. The GroupWise provider then picks
+  this message up.
+
+3. The GroupWise provider translates the F/B message into an Exchange Server
+  format, and hands it off to the Calcon server.
+
+  If this is an F/B response from the GroupWise system, the new information is
+  updated in the F/B public folder. If the F/B response has timed out, the new
+  data will be automatically written to the folder, refreshing the old data
+  accordingly. This way, the next user that queries for this same GroupWise
+  user will have the new F/B information without going through another complete
+  F/B transaction.
+
+  If this is an F/B query, then the Calcon server sends a request to the MAPI
+  provider for the appropriate F/B information for the target recipients.
+
+MORE INFORMATION
+================
+
+For further information on the installation and configuration of the GroupWise
+API gateway, please refer to the Novell Web site at:
+
+  http://www.novell.com (http://www.novell.com)
+
+Note that both the Togwise and Freebusy directories exist under the
+Exchsrvr\Connect\Exchconn\Gwrouter directory.
+
+
+Additional query words: calcon, GroupWise provider
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

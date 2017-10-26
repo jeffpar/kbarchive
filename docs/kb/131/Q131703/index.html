@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131703/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131703/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131703/","publisher":null,"image":null,"headline":"Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131703-read-errors-with-texel-plextor-single-speed-cd-rom-drive">Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131703
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a Texel (Plextor) single-speed CD-ROM drive, you may
+experience either of the following symptoms:
+
+- You receive read errors when you try to access a CD-ROM in the drive.
+
+- You are unable to play audio CDs.
+
+These problems are known to occur with the following Texel CD-ROM drives:
+
+- DM-3021
+
+CAUSE
+=====
+
+The Texel CD-ROM drive has a firmware version prior to 1.10.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, use either of the following methods:
+
+- Upgrade the firmware in the Texel CD-ROM drive to version 1.10 or higher. For
+  more information about this upgrade, please contact the manufacturer of the
+  drive.
+
+- If Windows 95 is loading protected-mode drivers for the SCSI controller that
+  the Texel CD-ROM drive is connected to, disable the protected- mode drivers.
+  To do so, follow these steps:
+
+  1. Use the right mouse button to click My Computer, then click Properties on
+     the menu that appears.
+
+  2. Click the Device Manager tab.
+
+  3. Click the SCSI controller, then click Properties. Note that you may need
+     to expand a branch of the hardware tree by double-clicking the branch, or
+     by clicking the plus sign (+) to the left of the branch, before you can
+     click the SCSI controller.
+
+  4. Click the Original Configuration (Current) check box to clear it, then
+     click OK.
+
+NOTE: For performance reasons, the first method (upgrading the drive's firmware
+version) is recommended.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

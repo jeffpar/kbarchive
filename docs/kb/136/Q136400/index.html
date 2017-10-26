@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136400/","publisher":null,"image":null,"headline":"Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136400-info-changing-visual-sourcesafe-user-name-in-visual-basic">Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136400
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbVBp400
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Windows NT and Windows 95, Visual Basic automatically tries to connect to
+Visual SourceSafe with your operating system's userID. If the logged in user has
+permission to see the SourceSafe server and there is a SourceSafe user with the
+same ID, the user is assumed to have already been validated and SourceSafe
+performs no additional password validation. If there is no SourceSafe user by
+that name, the login dialog is displayed and the user ID of the currently logged
+on user is placed in the user ID field.
+
+This behavior is by design. However, it means that there is no way to change the
+default Visual SourceSafe user to anyone but the currently logged in SourceSafe
+user. In most situations, this is the behavior you want. However, this article
+describes how to log in as a different SourceSafe user than the one currently
+logged on the machine.
+
+MORE INFORMATION
+================
+
+One method is to use an ID for SourceSafe which is not your user ID on your
+Windows NT or Windows 95 machine. Then you will be prompted for your ID and
+password every time.
+
+Another suggestion is to create a new set of icons for the SourceSafe Explorer
+and SourceSafe Administrator. Use the -y parameter in the icon's command line
+definition, as shown here:
+
+        &lt;path to VSS&gt;\win32\ssexp.exe -yadmin
+
+        &lt;path to VSS&gt;\win32\ssexp.exe -yadmin,&lt;password&gt;
+
+        &lt;path to VSS&gt;\win32\ssadmin.exe -yadmin
+
+        &lt;path to VSS&gt;\win32\ssadmin.exe -yadmin,&lt;password&gt;
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

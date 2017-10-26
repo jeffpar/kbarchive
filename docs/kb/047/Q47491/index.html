@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47491: How SUB and FUNCTION Windows Inherit DEFtype in QB.EXE Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47491: How SUB and FUNCTION Windows Inherit DEFtype in QB.EXE Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47491/","publisher":null,"image":null,"headline":"Q47491: How SUB and FUNCTION Windows Inherit DEFtype in QB.EXE Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47491-how-sub-and-function-windows-inherit-deftype-in-qbexe-editor">Q47491: How SUB and FUNCTION Windows Inherit DEFtype in QB.EXE Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47491
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 21-SEP-1990
+
+The following information applies to the QB.EXE editor in QuickBASIC
+versions 4.00, 4.00b, and 4.50; to the QB.EXE editor in Microsoft
+BASIC Compiler versions 6.00 and 6.00b; and to the QBX.EXE editor in
+Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10.
+
+When creating SUB or FUNCTION procedures in the QB.EXE or QBX.EXE
+editor, the procedures inherit the DEFtype statement shown in the
+window in which they were first created. "DEFtype" refers to the
+following statements: DEFINT, DEFLNG, DEFSNG, DEFDBL, DEFSTR, and
+DEFCUR. (DEFCUR, which is a declaration for the CURRENCY data type, is
+supported only in BASIC PDS 7.00 and 7.10.)
+
+If no DEFtype statement is visible in a window, the default DEFSNG A-Z
+applies. If a certain range of letters is not covered by a DEFtype
+statement in the current window, then that range of letters is covered
+by DEFSNG (since single precision is the default data type).
+
+For more information in a related article, search for the following
+words:
+
+   DEFLNG and MISMATCH and $DYNAMIC
+
+If the module-level code for the current module contains a DEFINT A-Z
+statement, any SUB or FUNCTION created in that module automatically
+has a DEFINT A-Z statement placed just above the SUB or FUNCTION line.
+
+If a SUB or FUNCTION is created and moved to a module (source file)
+with a different DEFtype than the module it was created in, the
+SUBprogram and its new module have different default variable types,
+and SHARED or passed variables may not be recognized in the
+SUBprogram. In this case, the variables that were intended to be
+SHARED may have the same name in both the SUBprogram and the module,
+but the variables are of different types and, thus, are considered
+different variables. You may encounter this same situation if you
+create a SUBprogram (which "inherits" the module-level DEFtype) and
+then change the DEFtype at the module level.
+
+To avoid problems accessing SHARED or passed variables, you can either
+append the appropriate type-specifier character (%, &amp;, !, #, or $) to
+the variable name, or make sure that all your SUBprograms have the
+same DEFtype as the module that calls them.
+
+Code Example
+------------
+
+Executing the following code prints the values 0 and 10, whereas you
+may have wanted 10 and 10. The reason for the difference is that while
+Y% is always an integer variable (the "%" type specifier ensures this)
+and, thus, is recognized as the COMMON SHARED variable Y% in the
+subprogram, "X" is an integer (because of the DEFINT) at the module
+level, and a double-precision variable (because of the DEFDBL before
+the SUB) in the SUBprogram. Thus, Y% is recognized as SHARED and
+changed correctly, while X is considered a local variable in the
+SUBprogram and the COMMON SHARED variable X remains unaltered.
+
+   'Module-level code:
+   DEFINT A-Z
+   COMMON SHARED X, Y%
+   CALL thesub
+   PRINT X, Y%
+   END
+
+   'SUBprogram level in same module -- different DEFtype statement:
+   DEFDBL A-Z
+   SUB thesub
+     X = 5
+     Y% = 10
+   END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186469: PRB: Rights from Parent Project not Inherited | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186469: PRB: Rights from Parent Project not Inherited" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186469/","publisher":null,"image":null,"headline":"Q186469: PRB: Rights from Parent Project not Inherited","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186469-prb-rights-from-parent-project-not-inherited">Q186469: PRB: Rights from Parent Project not Inherited</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186469
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Subprojects, that have user's rights set explicitly, no longer inherit rights
+from their parent projects as expected.
+
+If a user's rights are not explicitly set for a project, the project inherits
+rights from the parent project. This allows you to control the rights of an
+entire subtree by setting the user's rights to the root project. However, once
+explicitly setting a user's rights for a subproject, reverting to inheriting
+rights from the parent project can be difficult and less intuitive.
+
+RESOLUTION
+==========
+
+To change the user's rights back to inherited rights, in the SourceSafe Admin
+utility, from the Tools menu, choose Rights Assignments for the user. Next,
+select the project to which you want to restore inherited rights and then click
+Delete Assignment. This should restore the inherited rights. However, this
+resolution limits you to making changes to one user at a time.
+
+To change the rights for multiple users, from the Tools menu, choose "Rights by
+Project". This allows you to select multiple users and give them explicit rights
+relatively quickly. If you have just given explicit rights to 20 users,
+reassigning inherited rights can be tedious.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Add a new user named TestUser with Read, Check Out/Check In, and
+  Add/Rename/Delete (RCA) rights at the root ($/).
+
+2. Create two projects, $/test1 and $/test2/samp.
+
+3. Using the SourceSafe Admin from the Tools menu, choose "Rights by Project".
+  Select the project named $/test1. TestUser should have RCA rights for
+  $/test1. Note that $/test2/samp inherits those rights.
+
+4. Change TestUser's rights for $/test1 to RC. Note this user's rights to
+  $/test2/samp will also be RC.
+
+5. Change TestUser's rights for $/test1 back to RCA. The rights for /$test2/samp
+  are also now RCA.
+
+6. For TestUser, assign Read, Check Out/Check In, Add/Rename/Delete and Destroy
+  (RCAD) rights for $/. TestUser's rights for $/test1 are still RCA.
+
+
+Additional query words: kbDSupport propagate kbdse kbnokeyword
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

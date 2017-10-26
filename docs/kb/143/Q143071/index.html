@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143071/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143071/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143071/","publisher":null,"image":null,"headline":"Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143071-fix-cpropertysheetdomodal-or-create-causes-an-exception">Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143071
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows 95, calling CPropertySheet::DoModal() or CPropertySheet::Create()
+may cause an exception. The output window displays a message saying
+"First-chance exception in &lt;program.exe&gt; (COMCTL32.DLL): 0xC0000005:
+Access Violation."
+
+There is a second related problem. If the call to DoModal() or Create() is inside
+a try/catch(...) block, you will get an error saying "This program has performed
+an illegal operation..." If you click the Details button, it will say
+"&lt;PROGRAM&gt; caused a stack fault in module MSVCR40D.DLL at..."
+
+CAUSE
+=====
+
+Before a property page is created, it changes the style of the dialog resource
+to the required style. Because resources are generally read-only, this causes an
+exception.
+
+The stack fault problem is caused by a bug in the C++ exception handling routine.
+When the exception occurs and it is trapped by a try/catch(...) block, it is not
+forwarded on to the operating system. This leads to unpredictable results.
+
+RESOLUTION
+==========
+
+The first-chance exception can be ignored because it is safely handled by the
+operating system.
+
+A workaround for the stack fault problem is to use C++ exception handling with
+specific exception types or use structured exception handling where the access
+violation exception is passed through to the operating system.
+
+Sample Code to Demonstrate Workaround to Stack Fault Problem
+------------------------------------------------------------
+
+     /* Compile options needed:  default
+     */ 
+
+     /***** this code will cause unpredictable results *****/ 
+     try
+     {
+         sheet.DoModal();
+     }
+     catch(...)
+     {
+     }
+
+     /***** this code is OK *****/ 
+     try
+     {
+         if (0 == sheet.DoModal())
+             throw "DoModal() failed!";
+     }
+     catch(char * str)
+     {
+         TRACE ("Exception thrown: %s\n", str);
+     }
+
+STATUS
+======
+
+This problem was corrected in Visual C++ version 5.0 and with Comctl32.dll
+included with Internet Explorer 3.2 and later.
+
+REFERENCES
+==========
+
+This is also documented in the Vcread.wri readme file.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

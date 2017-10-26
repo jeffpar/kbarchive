@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142991: Using Wildcard Characters with the Find Command on MSN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142991: Using Wildcard Characters with the Find Command on MSN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142991/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142991/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142991/","publisher":null,"image":null,"headline":"Q142991: Using Wildcard Characters with the Find Command on MSN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142991-using-wildcard-characters-with-the-find-command-on-msn">Q142991: Using Wildcard Characters with the Find Command on MSN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142991
+Product(s): The Microsoft Network
+Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.5,2.51,2.52,2.6
+Operating System(s): 
+Keyword(s): kbmsn
+Last Modified: 17-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 1.0, 1.05, 1.2, 1.3, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use wildcard characters when you use the Find
+command to search for information on MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+The Find feature locates only information matching the exact word you type. For
+example, if you type "art", the Find feature does not locate "arts" or
+"artist".
+
+To locate variations of a word, you can use the wildcard characters "*" and "?".
+Use "?" as a wildcard for one character. Use "*" as a wildcard for no, one, or
+multiple characters. For example:
+
+- "art?" finds "arts" and "arty" but not "artist."
+
+- "art*" finds "art," "arts," "artist," and any other word beginning with
+  "art."
+
+The following rules apply to using the "*" wildcard character:
+
+- You can use "*" only at the end of a search string. For example, "*art" is
+  not valid. The Find feature ignores the "*" character and finds only "art."
+
+- Multiple instances of the "*" character are treated as a single instance.
+
+- When the "*" character is followed by another character or wildcard, every
+  character after "*" is ignored. For example, "ar*s" and "ar*?" are the same
+  as "ar*."
+
+The following rules apply to using the "?" wildcard character:
+
+- You can place the "?" anywhere in a search string except the beginning. For
+  example, "ar?s" is valid, but "?art" is not. If you search for "?art," the
+  Find feature ignores the "?" character and locates only "art."
+
+- You can use more than one "?" character in a search string.
+
+- You cannot search for "?" alone. You will receive the error message "Letter
+  or number required."
+
+REFERENCES
+==========
+
+For additional information about the Find command, see the "Find" topic in MSN
+Help.
+
+Additional query words: msn asterisk question mark 2.50 2.60
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN105 kbMSN250 kbMSN120
+Version           : WINDOWS:1.0,1.05,1.2,1.3,2.5,2.51,2.52,2.6
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

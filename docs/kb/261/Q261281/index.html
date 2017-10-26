@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q261281: XCCC: Unable to Authenticate When Changing Conference Resource | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q261281: XCCC: Unable to Authenticate When Changing Conference Resource" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/261/Q261281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/261/Q261281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/261/Q261281/","publisher":null,"image":null,"headline":"Q261281: XCCC: Unable to Authenticate When Changing Conference Resource","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q261281-xccc-unable-to-authenticate-when-changing-conference-resource">Q261281: XCCC: Unable to Authenticate When Changing Conference Resource</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q261281
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange 2000 Conferencing Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to either extend an existing conference time or change the
+resource location, a Basic authentication dialog box may be displayed that
+prompts you for the user name and the password, but not for the domain name.
+
+CAUSE
+=====
+
+The Basic authentication dialog box may be displayed instead of the Integrated
+Windows authentication dialog box for any of the following reasons:
+
+- Basic authentication for the conferencing v-root is enabled, but Integrated
+  Windows authentication is not.
+
+- The conferencing URL contains the fully qualified domain name (FQDN) of the
+  conferencing server.
+
+If you have not used Microsoft Internet Explorer to define Exception entries
+about the server domain, and you connect through a proxy server, the proxy
+server sends authentication that enables you to extend conference time or change
+resources. However, when you use this configuration, Integrated Windows
+authentication does not function. Therefore, the computer uses Basic
+authentication, and a different credentials box is displayed.
+
+RESOLUTION
+==========
+
+To resolve this issue, use any of the following methods:
+
+Method One
+----------
+
+To enable Integrated Windows authentication for the conferencing v-root:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Internet Services Manager.
+
+2. Right-click Conferencing v-root under the Default Web site, and then click
+  Properties.
+
+3. Click the Directory Security tab, and then click the Edit button in the
+  "Anonymous access and authentication control" section.
+
+4. Click to select the Integrated Windows authentication check box.
+
+5. Click OK, and then click OK again.
+
+Method Two
+----------
+
+If you enable Integrated Windows authentication, use Internet Explorer to enter
+the conferencing server URL information in the Exceptions box on participating
+clients. Also, configure the computer to bypass the proxy server for local
+addresses:
+
+1. Right-click the Internet Explorer icon, and then click Properties.
+
+2. Click the Connections tab, and then click the LAN Settings button.
+
+3. Click to select the "Bypass proxy server for local addresses" check box.
+
+4. Click the Advanced button.
+
+5. In the Exceptions section, in the "Do not use proxy server for addresses
+  beginning with" box, type your FQDN in the following format:
+
+  "&lt;*&gt;.&lt;domainname&gt;.com" (without the quotation marks)
+
+6. Click OK three times.
+
+Method Three
+------------
+
+When the Basic authentication dialog box is displayed, use the following syntax
+for authentication:
+
+  Site: &lt;Site Name&gt;
+  Realm: &lt;Realm Name&gt;
+  User Name: &lt;Domain Name\Username&gt;
+  Password: &lt;Password&gt;
+
+Method Four
+-----------
+
+Use the Conference Management Service snap-in to remove the FQDN in the
+Conference Management Service URL settings; use only the host name.
+
+NOTE: This option is the most radical approach; you must consider this option
+carefully before you implement it because this change can have global effects.
+
+MORE INFORMATION
+================
+
+The Integrated Windows authentication dialog box prompts you for the following
+information:
+
+- User Name
+
+- Password
+
+- Domain
+
+The Basic authentication dialog box prompts you for the following information:
+
+- User Name
+
+- Password
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : Jasper
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000ConfServ
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125975/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125975/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125975/","publisher":null,"image":null,"headline":"Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125975-automating-remote-ras-logons-using-switchinf-scripts">Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125975
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11; winnt:3.1,3.5,3.51,4.0; :3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can use the SWITCH.INF file (or PAD.INF for X.25 networks) to automate the
+log on process to intermediary or remote third-party devices, instead of using
+the manual RAS Terminal screen. SWITCH.INF was designed for automated
+communication with non-X.25 devices, such as intermediary, third- party security
+devices, or in Windows NT RAS 3.5 or later, Internet access providers (which
+usually require user identification before access to the Internet is
+permitted).
+
+All of the information pertaining to SWITCH.INF scripting also applies to PAD.INF
+scripting. However, PAD.INF supports a few more features and has a few more
+requirements that are not the subject of this article.
+
+None of the information in this article applies to Windows 95, because it does
+not support the script language used in the SWITCH.INF and PAD.INF files.
+Therefore, the SWITCH.INF and PAD.INF files do not exist on Windows 95.
+
+To get support for scripting under Windows 95, obtain Windows 95 Service Pack 1
+(SP1). In the Admin directory of SP1 you can find the scripting tool Script.exe.
+The Admin directory also contains the Script.doc file that describes the
+commands and syntax of that script language.
+
+Note: Windows 95 was not tested with X.25 dial-up and therefore is not supported
+as an X.25 client, however, it may work.
+
+Note: Windows NT 4.0 supports the script language used in SWITCH.INF and PAD.INF
+as well as the Windows 95 script language.
+
+MORE INFORMATION
+================
+
+LIMITATIONS
+-----------
+
+RAS versions prior to 3.1 do not support SWITCH.INF scripting. However, you may
+be able to obtain the same functionality by using the PAD.INF file with RAS
+version 1.1x. For more information, refer to the "Using Scripts with Other
+Microsoft RAS Clients" section below.
+
+PAD.INF was designed for X.25 connectivity. Although using PAD.INF with non- X.25
+networks may work, it has not been tested by, and is not supported by Microsoft.
+Before using PAD.INF on non-X.25 networks, study the syntax, structure, and
+common command lines in the PAD.INF file that ships with RAS. Also, refer to
+your RAS manuals on X.25 connectivity.
+
+All of the information in this article applies to all RAS versions that have
+PAD.INF file support. However, the syntax is different for the RAS version 1.1x.
+Refer to your RAS version 1.1x PAD.INF, RAS manual, and release notes for more
+information.
+
+CREATING SCRIPTS FOR RAS
+------------------------
+
+The SWITCH.INF file is like a set of small batch files or scripts, all contained
+in one file. A SWITCH.INF script can contain six elements: a section header,
+comments, commands, responses, response keywords, and reserved macro keywords.
+
+In addition to dividing the SWITCH.INF file into individual scripts, section
+headers start the scripts. Comment lines are used to document the script. Any
+other line in a script is either a command or a response. A command is issued
+from the local RAS client. A response is received from the remote device or
+computer.
+
+To write an automatic script for your RAS client you must know the required
+commands and corresponding responses for the intermediary device. The commands
+and responses must be in the exact order that the device expects to encounter
+them.
+
+Branching statements, such as GOTO or IF command, are not supported by the
+SWITCH.INF and PAD.INF script language. The required sequence of commands and
+responses from intermediary devices should be in the device documentation. If
+you are connecting to a commercial service, the required sequence of commands
+and responses should also be available from the service support staff.
+
+The SWITCH.INF file can contain scripts for each intermediary device or online
+service that the RAS user calls. The scripts are activated by configuring Remote
+Access Phonebook entries as described below in the "Activating SWITCH.INF
+Scripts" section.
+
+SECTION HEADERS
+---------------
+
+A section header marks the beginning of a script, is enclosed in square brackets,
+and cannot exceed 31 characters. For example:
+
+  [Route 66 Login]
+
+Each script requires one section header. The section header appears in the RAS
+Phonebook field allowing you to select RAS Terminal or any other SWITCH.INF
+script. For more information, see the "Activating SWITCH.INF Scripts" section
+below.
+
+COMMENTS
+--------
+
+Comment lines are preceded by semicolons (;) in the left most margin (column
+one), are optional, and can be placed anywhere in the file. For example:
+
+     ; This script was created by Patrick on September 29, 1995
+
+COMMANDS
+--------
+
+A command comes from the local computer. A response comes from the remote device
+or computer. The COMMAND= statement, which can be used in three different ways,
+is used to send commands to the intermediary device.
+
+NOTE: Use upper case for all SWITCH.INF commands.
+
+COMMAND=
+--------
+
+COMMAND= by itself causes an approximate two second delay, depending on CPU speed
+and the presence of caching software (for example, SMARTDRV.EXE). If the
+intermediary device cannot process all of the characters on a
+COMMAND=&lt;CustomString&gt;&lt;cr&gt; line (because they are sent at once), use
+multiple COMMAND= statements.
+
+COMMAND=&lt;CUSTOM STRING&gt;
+-----------------------
+
+COMMAND=&lt;custom string&gt; sends the custom string and causes a slight delay
+of several hundred milliseconds (depending on CPU speed and installed caching
+software). The delay gives the intermediary device time to process the custom
+string and prepare for the next command.
+
+COMMAND=CUSTOM STRING &lt;cr&gt;
+--------------------------
+
+COMMAND=&lt;custom string&gt;&lt;cr&gt; sends the custom string immediately.
+Consult the remote device documentation to determine which strings are
+required.
+
+RESPONSES
+---------
+
+Each command line is followed by one or more response lines. Consult the remote
+device documentation to determine which response strings and dialogs are
+expected by the remote device. RAS compares responses received with what you put
+on the response lines. If it matches, RAS uses the response related keyword and
+macro.
+
+RESPONSE KEYWORDS
+-----------------
+
+The keyword in a response line specifies what your RAS client does with the
+responses it receives from the remote computer.
+
+The response strings your RAS client receives from the remote device or online
+service can be used with one of the following keywords in response lines:
+
+OK= remote_device_response &lt;macro&gt;
+----------------------------------
+
+The OK keyword indicates that RAS can execute the next script line if the
+condition on the right side of the equal sign is met.
+
+LOOP= remote_device_response &lt;macro&gt;
+------------------------------------
+
+The LOOP keyword indicates to RAS to wait for a response that matches the
+condition to the right of the equal sign and if that condition is met to wait
+for the same response again. If a response does not meet the condition on the
+right side of the equal sign RAS executes the next line.
+
+CONNECT= remote_device_response &lt;macro&gt;
+---------------------------------------
+
+This keyword is used near the end of the script to indicate the end of the
+script.
+
+ERROR_NO_CARRIER= remote_device_response &lt;macro&gt;
+------------------------------------------------
+
+This keyword is used to test for the presence of a carrier. Intermediary devices
+report their presence in different ways.
+
+ERROR_DIAGNOSTICS= remote_device_response &lt;macro&gt;
+-------------------------------------------------
+
+This keyword can be used in conjunction with the &lt;Diagnostics&gt; macro to
+allow RAS to display a message box containing a problem cause and diagnostic
+information.
+
+These response related keywords are usually clustered, but do not have to be.
+CONNECT= is usually the last line, unless it is followed by an ERROR_ line. For
+example:
+
+  CONNECT=&lt;match&gt;" CONNECT"
+  ERROR_NO_CARRIER=&lt;match&gt;"NO CARRIER"
+  ERROR_DIAGNOSTICS=&lt;cr&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+  ERROR_DIAGNOSTICS=&lt;lf&gt;&lt;cr&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+
+NORESPONSE
+----------
+
+The RAS client always expects a response from the remote device. The client waits
+until a response is received unless a NoResponse statement follows the COMMAND=
+line. If there is no statement for a response following a COMMAND= line, the
+COMMAND= line still executes, but the script does not execute any further.
+
+RESERVED MACRO KEYWORDS
+-----------------------
+
+The following table explains the function of each reserved macro keyword:
+
+  Macro           Function
+  -----------------------------------------------------------------------
+
+  &lt;cr&gt;            Inserts a carriage return.
+
+  &lt;lf&gt;            Inserts a line feed.
+
+  &lt;match&gt;         Reports a match if the string enclosed in quotation
+                  marks is found in the device response. For example,
+                  &lt;match&gt;"Smith" matches Jane Smith and John Smith III.
+
+  &lt;?&gt;             Inserts a wildcard character. For example, CO&lt;?&gt;&lt;?&gt;2
+                  matches COOL2 or COAT2, but not COOL3.
+
+  &lt;hXX&gt;           Allows any hexadecimal character to appear in a string
+                  including the zero byte, &lt;h00&gt;.
+                  NOTE: XX represents hexadecimal digits.
+
+  &lt;ignore&gt;        Ignores the rest of a response from the macro. For
+                  example, &lt;cr&gt;&lt;lf&gt;CONNECTV-&lt;ignore&gt; reads the following
+                  responses as the same: "crlfCONNECTV-1.1" and
+                  "crlfCONNECTV-2.3."
+
+                  If a lot of information is ignored, like a large welcome
+                  banner, RAS might time out and move on to the next
+                  script line. This usually causes problems. To avoid this
+                  problem, use multiple pairs of COMMAND= followed by
+                  OK=&lt;ignore&gt; to force RAS to wait longer and ignore
+                  additional response stings. For example:
+
+                     COMMAND=
+                     OK=&lt;ignore&gt;
+
+                     COMMAND=
+                     OK=&lt;ignore&gt;
+
+  &lt;diagnostics&gt;   This macro function can be used in conjunction with the
+                  ERROR_DIAGNOSITICS= keyword macro to allow RAS to
+                  display a message box containing a problem cause and
+                  diagnostic information.
+
+ACTIVATING SWITCH.INF SCRIPTS
+-----------------------------
+
+You can configure a RAS entry to run a SWITCH.INF script before dialing, after
+dialing, or both. For example, to automate the task of logging onto a remote
+host, create the script in the SWITCH.INF file and then configure the RAS entry
+to use the created script after dialing.
+
+To activate a script in Windows NT and Windows for Workgroups version 3.11:
+
+1. Run Remote Access and select an entry.
+
+2. Choose the Edit button.
+
+3. If the Security button is not available, choose the Advanced button.
+
+4. Choose the Security button. (In Windows NT 3.1 and Windows for Workgroups
+  3.11 the button is labeled Switch).
+
+5. In the After Dialing box, select the name of the script. The section header
+  in the SWITCH.INF file is what appears as the name of the script. (In Windows
+  NT 3.1 and Windows for Workgroups 3.11 this box is labeled Post-Connect).
+
+6. Choose the OK button until you return to the main Remote Access Screen.
+
+When you dial this entry, the selected script runs after RAS dials and connects
+to the remote host.
+
+Troubleshooting Scripts using DEVICE.LOG and RAS Terminal
+---------------------------------------------------------
+
+Before writing scripts to automate the process of logging onto an intermediary
+device, use the RAS Terminal feature to familiarize yourself with the logon
+sequence of events. For more information on activating the RAS Terminal feature,
+refer to the "Configuring Windows RAS to Use RAS Terminal After Dialing" section
+below.
+
+To find errors that prevent your scripts from working, log all information passed
+between RAS, the modem, and the intermediary device (including errors reported
+by the intermediary device) by turning on logging.
+
+After you enable logging, the DEVICE.LOG file is created (when you start RAS) in
+the Windows NT %systemroot%\SYSTEM32\RAS subdirectory or the of Windows for
+Workgroups \WINDOWS directory.
+
+If an error is encountered during script execution, execution halts. Determine
+the problem by looking at any RAS error messages you receive and by looking at
+the DEVICE.LOG file. Make necessary corrections to the script and then restart
+RAS.
+
+The DEVICE.LOG file appends any communication as long as RAS is not restarted. If
+you restart RAS, the DEVICE.LOG file is erased and re- created. Therefore, if
+you make changes to SWITCH.INF during your script development that require you
+to restart RAS, and you wish to save the current traces contained in the
+DEVICE.LOG file, rename the DEVICE.LOG file before starting RAS again.
+
+ENABLING LOGGING AND CREATING A DEVICE.LOG FILE
+-----------------------------------------------
+
+To enabling logging and creating a DEVICE.LOG file under Windows NT:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Hang up any connections, and exit from Remote Access.
+
+2. Run Registry Editor (REGEDT32.EXE).
+
+3. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  SYSTEM\CurrentControlSet\Services\RasMan\Parametersm
+
+4. Change the value of the Logging parameter to 1. For example:
+
+  Logging:REG_DWORD:0x1
+
+Logging begins when you restart Remote Access or start the Remote Access Server
+service (if your computer is receiving calls). You do not need to shutdown and
+restart Windows NT.
+
+To enabling logging and creating a DEVICE.LOG file under Windows for Workgroups:
+
+1. Using a text editor such as Windows Notepad, edit the SYSTEM.INI file.
+
+2. In the [Remote Access] section, add the following line:
+
+  " LOGGING=1. " (without the quotation marks)
+
+3. Save the file.
+
+The DEVICE.LOG text file is created in the Windows directory when you restart
+Windows and RAS.
+
+CONFIGURING WINDOWS RAS TO USE RAS TERMINAL AFTER DIALING
+---------------------------------------------------------
+
+To configure a Windows NT RAS 3.5 or later entry to use Terminal after dialing:
+
+1. In Remote Access, select an entry.
+
+2. Choose the Edit button.
+
+3. If the Security button is not available, choose the Advanced button.
+
+4. Choose the Security button. (In Windows NT 3.1 and Windows for Workgroups
+  3.11 this button is labeled Switch).
+
+5. In the After Dialing field, select Terminal. (In Windows NT 3.1 and Windows
+  for Workgroups 3.11 this is labeled Post-Connect).
+
+6. Choose the OK button until you return to the main Remote Access Screen.
+
+CREATING ONE SCRIPT FOR MULTIPLE SITUATIONS
+-------------------------------------------
+
+A company with employees working at different locations may need to provide
+employees with the ability to log on to an X.25 service from various locations.
+The RAS script language does not provide any IF/ENDIF, IF/ELSE/ENDIF, or GOTO
+statements. Therefore, you cannot test for logical responses or errors received
+from intermediary devices (such as X.25 providers or third party security hosts)
+and then branch off to a different execution path. However, the script language
+does allow you to catch errors and display them on the screen using:
+
+  ERROR_DIAGNOSTICS=&lt;cr&gt;&lt;lt&gt;&lt;lf&gt;&lt;lt&gt;&lt;Diagnostics&gt;
+
+To provide a variety of RAS clients with an X.25 or other script you need to
+write several scripts to manage all local logon dialog variations. For example:
+
+  If you have a Windows for Workgroups 3.11 RAS client or Microsoft RAS 1.1
+  client, set an environment variable to a value representing the local X.25
+  carrier. Then run a batch file that copies the correct script to the file
+  name PAD.INF or SWITCH.INF (depending on the value of the environment
+  variable) and then start Windows.
+
+  If you have a Windows NT RAS client, create an icon that runs a similar batch
+  file that tests the environment variable and then calls RAS. All scripts can
+  be provided on one disk and all the user has to do is copy the files to a
+  directory on their hard drive and set the environment variable. This can be
+  automated as well to minimize user interaction.
+
+USING SCRIPTS WITH OTHER MICROSOFT RAS CLIENTS
+----------------------------------------------
+
+Microsoft RAS version 1.0 does not have the capability to invoke RAS Terminal or
+use scripts in .INF files. Upgrades to RAS 1.1a are free. Microsoft RAS version
+1.1 and 1.1a support only PAD.INF files. The syntax used in the PAD.INF file
+differs slightly from subsequent versions of Microsoft RAS. Microsoft RAS for
+Windows for Workgroups version 3.11, Windows NT version 3.1, and Windows NT
+version 3.5, 3.51, and 4.0 support RAS Terminal and scripts in SWITCH.INF and
+PAD.INF files. Windows NT 4.0 supports a new script language in addition to the
+old one. The new language is more sophisticated and supports subroutines and If,
+While, and Goto statements, and more.
+
+Additional query words: prodnt 3.10 3.11 1.10 1.10a 1.1x 1.x phone book
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbAudDeveloper kbWinNT310Search kbWinNTW310Search kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11; winnt:3.1,3.5,3.51,4.0; :3.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165681: INFO: Visual C++ 5.0 Readme, Build Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165681: INFO: Visual C++ 5.0 Readme, Build Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165681/","publisher":null,"image":null,"headline":"Q165681: INFO: Visual C++ 5.0 Readme, Build Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165681-info-visual-c-50-readme-build-issues">Q165681: INFO: Visual C++ 5.0 Readme, Build Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165681
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Build Issues
+------------
+
+Reducing the Size of Header Files for Faster Builds Several Project System and
+Debugger Methods are Disabled When the BuildFinish Event is Fired Building ATL
+Projects from the Command Line Can Generate NMAKE Error Help File Names With
+European Characters Do Not Copy Correctly On Windows 95
+
+MORE INFORMATION
+================
+
+Reducing the Size of Header Files for Faster Builds
+---------------------------------------------------
+
+To speed the build process, Visual C++ 5.0 provides the following new defines.
+Use them to reduce the size of the Win32 header files.
+
+- VC_EXTRALEAN
+
+- WIN32_LEAN_AND_MEAN
+
+Newly generated Visual C++ AppWizard applications automatically benefit from
+VC_EXTRALEAN. You can also manually define VC_EXTRALEAN to speed the build
+process of many legacy MFC applications.
+
+Non-MFC C++ and C applications can define WIN32_EXTRA_LEAN and any applicable
+NOservice defines, such as NOSOUND (see DevStudio\Vc\include\Windows.h), to
+reduce their build times.
+
+To add these defines, from the Project menu, choose Settings. The Projects
+settings dialog box appears. Click the C/C++ tab. In the Category list, select
+Preprocessor. Add the desired definitions to the Preprocessor Definitions box.
+
+Several Project System and Debugger Methods are Disabled when the
+
+BuildFinish Event is Fired
+--------------------------
+
+Consider the following VBScript event handler:
+
+     Sub Application_BuildFinish(nNumErrors, nNumWarnings)
+
+     if nNumErrors+nNumWarnings = 0 then
+         ExecuteCommand "ToggleOutputWindow"
+         ExecuteConfiguration
+     end if
+
+     End Sub
+
+ExecuteConfiguration fails because the BuildFinish event is fired before several
+project system and debugger commands have been re-enabled. The methods that
+invoke these commands, like ExecuteConfiguration, will remain disabled between
+the time that the event is fired and the time the event handler returns. After
+the Application_BuildFinish event handler returns, these methods will be
+re-enabled.
+
+Workaround
+
+1. Create a new macro, for example, MyBuild, with the following code:
+
+        Sub MyBuild
+            Build
+            ' Add other method calls here that can't appear in the
+            ' BuildFinish event handler, such as "ExecuteConfiguration"
+        End Sub
+
+2. Always invoke a build by using this new macro instead of using the default
+  Build menu command or toolbar. Note that you can create a custom menu command
+  or toolbar button for your new MyBuild macro by going to the Tools menu,
+  clicking Customize, and using the Commands tab of the dialog box.
+
+The Application_BuildFinish VBScript event handler now becomes:
+
+     Sub Application_BuildFinish(nNumErrors, nNumWarnings)
+
+         if nNumErrors+nNumWarnings = 0 then
+             ExecuteCommand "ToggleOutputWindow"
+         end if
+     End Sub
+
+In this case Build will fire the BuildFinish event and return control to the
+MyBuild subroutine at which time the ExecuteConfiguration will be enabled. You
+can see what other methods are disabled simply by looking at the disabled menu
+items when a build is in progress.
+
+Building ATL Projects from the Command Line Can Generate NMAKE Error
+--------------------------------------------------------------------
+
+Building an ATL program from the command line can generate NMAKE error U1073.
+(This problem does not occur when building ATL samples from within the
+integrated development environment.)
+
+For example, the following command line:
+
+  NMAKE /f beeper.mak CFG="beeper - Win32 Release"
+
+will generate this error:
+
+  NMAKE : fatal error U1073: don't know how to make '".\beeper.h"'
+
+From the command line, ATL projects require two passes to build. The first pass
+directs MIDL to create a header file that is required for the second pass.
+
+WORKAROUND
+==========
+
+Use the following commands to work around this problem:
+
+  nmake /f beeper.mak CFG="beeper - Win32 Release" beeper.h
+  nmake /f beeper.mak CFG="beeper - Win32 Release"
+
+Help File Names with European Characters Do Not Copy Correctly on
+Windows 95
+----------------------------------------------------------------------------
+
+The Help compiler converts the name of the Help file into upper case characters.
+On Windows 95, this causes problems when the Visual Studio Build System tries to
+copy a name that contains European characters (such as umlauted characters) to
+the output directory for the rest of the project build. This is not a problem on
+Windows NT.
+
+Add a copy step with the name of the Help file, in upper case, to the custom
+build rule on the .hpj file in the project.
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

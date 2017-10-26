@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198378/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198378/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198378/","publisher":null,"image":null,"headline":"Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198378-howto-use-the-vb-dataenvironment-in-your-mts-components">Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198378
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,6.0
+Operating System(s): 
+Keyword(s): kbMTS200 kbVBp600 kbDataEnv kbGrpDSVBDB
+Last Modified: 30-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Transaction Server 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Basic DataEnvironment was designed, tested, and configured to run as
+end-user product on a client workstation. It assumes an interactive desktop and
+user profile, and does not provide the level of reentrancy or security that is
+necessary to meet the needs of server-side components that are designed to run
+unattended. Microsoft does not currently recommend, and does not support,
+running the VB DataEnvironment from any unattended, non-interactive server
+application.
+
+If you want to use the Visual Basic DataEnvironment to communicate with your
+database in your Transaction Server components, be sure to set the connection
+objects so that no prompt occurs if the attempt to connect fails.
+
+MORE INFORMATION
+================
+
+By default, the DataEnvironment sets connections so that if the attempt to login
+fails, a dialog box appears to inform the user of the problem and allow the user
+to try to connect successfully.
+
+If you are building a Transaction Server component, you do not want to use this
+feature for the following reasons:
+
+- Your Microsoft Transaction Server (MTS) component is usually running on
+  another server and the user never sees this dialog box.
+
+- Connection pooling does not support this type of login.
+
+- Transaction Server will not enlist this connection in the component's
+  transaction.
+
+If you use ActiveX Data Objects (ADO) code, rather than the DataEnvironment to
+connect to your database, these problems will not occur. By default, ADO
+connections generate errors.
+
+Here are two ways to make sure that your DataEnvironment connection will not
+display a dialog box if the login fails:
+
+- At design time, use the Properties Window (rather than the properties pages)
+  to set the RunPromptBehavior property of the DataEnvironment connection to 4
+  - adPromptNever.
+
+- At run-time, set the Prompt property of the connection object as in the
+  following code:
+
+        DataEnvironment1.cnPubs.Properties("Prompt").Value = adPromptNever
+        DataEnvironment1.cnPubs.Open
+
+REFERENCES
+==========
+
+c) Microsoft Corporation 1998, All Rights Reserved. Contributions by David
+Sceppa, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMTS200 kbVBp600 kbDataEnv kbGrpDSVBDB 
+Technology        : kbVBSearch kbMTSsearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMTS200
+Version           : :2.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181380/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181380/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181380/","publisher":null,"image":null,"headline":"Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181380-ras-disconnects-due-to-line-noise-when-using-multitech-modems">Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181380
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kberrmsg kbnetwork win95
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After dialing into a Windows NT Remote Access Service (RAS) server, where the
+RAS server and the RAS client use Multitech MT2834 modems, Windows NT RAS
+clients and Windows 95 Dial-Up Networking (DUN) clients may randomly disconnect
+from the RAS server with one of the following error messages:
+
+Windows NT RAS Client
+---------------------
+
+  Event ID : 20050
+  Source : Remote Access
+  Description: The user &lt;domain\userid&gt; connected on port &lt;com port&gt;
+  on &lt;date&gt; at &lt;time&gt; and disconnected on &lt;date&gt; at
+  &lt;time&gt;. The user was active for &lt;time length&gt;. &lt;# bytes&gt;
+  bytes were sent and &lt;# bytes&gt; bytes were received. The port speed was
+  28800. The reason for disconnecting was administrator's request.
+
+Windows 95 DUN Client
+---------------------
+
+  You have been disconnected from the computer you dialed. Double-click the
+  connection to try again.
+
+CAUSE
+=====
+
+Disconnects may be caused by one of the following:
+
+- Inactivity Timeout:
+
+  If you are being disconnected at a regular interval, the system you dialed may
+  have an Inactivity Timer that is set fairly low (5-10 minutes). For example,
+  if you are reading a Web page through a connection to an Internet Service
+  Provider (ISP) and are not actively doing anything other than scrolling up or
+  down, the Inactivity Timer can disconnect you.
+
+-or-
+
+- Line Noise causing a modem retrain:
+
+  If you have irregular disconnect problems (immediate disconnect or random
+  disconnect), you may want to modify the default initialization string on your
+  modem, as Multitech modems will automatically try to resynchronize an already
+  established connection, when line noise or other aberrations affect the
+  quality of the connection.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods:
+
+Inactivity Timeout
+------------------
+
+Contact your RAS administrator to increase the Inactivity Timer value.
+
+Line Noise Causing a Modem Retrain
+----------------------------------
+
+Use the following steps to change the Multitech modem's initialization string on
+the RAS or DUN client:
+
+Windows NT version 4.0 and Windows 95:
+
+1. Click Start, point to Settings, and click Control Panel.
+
+2. Double-click Modems, select the Multitech modem, and click Properties.
+
+3. Click the Connection tab, click Advanced, and type the following in the Extra
+  Settings field:
+
+  " AT&amp;FX4#F0$R1%E0 " (without the quotation marks)
+
+4. Click OK, click OK, and click Close.
+
+Windows NT version 3.51:
+
+In Windows NT version 3.51, RAS uses a file called Modem.inf in the
+%Systemroot%\system32\ras sub-directory to send the right communication strings
+to the modem through the selected modem in RAS. Use a text editor, such as
+Notepad.exe to open the Modem.inf file. Then find the modem you selected in RAS,
+and check the COMMAND_INIT string, which is the communication string RAS sends
+to set up the modem for communication. Refer to the "Modifying MODEM.INF"
+section in the RAS Online Help program and the modem init string in step three
+above.
+
+This string will make sure your modem does not initiate a speed change while it
+is connected because of line noise or other unfavorable conditions. Your modem,
+will, however, still follow any speed change that the other modem makes. This
+will ensure that your modem does not cause a disconnect.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbnetwork win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

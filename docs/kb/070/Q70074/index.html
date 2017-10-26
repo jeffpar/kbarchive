@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q70074: HOWTO: Reactivating First (and Only) Instance of an Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q70074: HOWTO: Reactivating First (and Only) Instance of an Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/070/Q70074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/070/Q70074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/070/Q70074/","publisher":null,"image":null,"headline":"Q70074: HOWTO: Reactivating First (and Only) Instance of an Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q70074-howto-reactivating-first-and-only-instance-of-an-application">Q70074: HOWTO: Reactivating First (and Only) Instance of an Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q70074
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKPlatform kbWndw
+Last Modified: 10-JUN-1999
+
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes restricting an application to a single instance is desirable. In that
+case, when the user starts a second instance of the application, a message box
+that says that the application is already running can be displayed. A more
+user-friendly approach is to bring the first instance to the front and activate
+it.
+
+To accomplish this, perform the following four steps:
+
+1. Obtain the main window handle of the first instance.
+
+2. If the first instance has an open dialog box, obtain the window handle of its
+  last active pop-up window.
+
+3. Bring the parent and pop-up window (if present) to the front.
+
+4. Do not run the second instance.
+
+MORE INFORMATION
+================
+
+To determine whether an instance of the application is already running, the
+first method below uses the FindWindow function to look for the an application
+with the same main window class name. The second method uses the hPrevInstance
+parameter to the WinMain function.
+
+The FindWindow method does not depend on any memory architecture or on the
+hPrevInstance parameter; therefore, it is the suggested method for future
+portability. The hPrevInstance assumes a memory architecture for the operating
+system that allows a task to access another application's data segments. In
+future versions of Windows, this may not be possible if applications do not
+share the same local descriptor table (LDT).
+
+Method 1: Use FindWindow Function
+---------------------------------
+
+     HWND FirsthWnd, FirstChildhWnd;
+
+     if (FirsthWnd = FindWindow("MyMainWindowClassName", NULL))
+
+     {
+     // Found another running application with the same class name.
+     // Therefore, one instance is already running.
+     // NOTE: "MyMainWindowClassName" must match the class name of the
+     // program's main window. In the GENERIC sample application,
+     // provided with the Microsoft Windows Software Development Kit,
+     // versions 3.0 and 3.1, the chass name is "GenericWClass", which
+     // is used in the InitApplication and InitInstance functions.
+
+     FirstChildhWnd = GetLastActivePopup(FirsthWnd);
+     BringWindowToTop(FirsthWnd);         // bring main window to top
+
+     if (FirsthWnd != FirstChildhWnd)
+
+        BringWindowToTop(FirstChildhWnd); // a pop-up window is active
+                                          // bring it to the top too
+
+     return FALSE;                        // do not run second instance
+     }
+
+Method 2: Use hPrevInstance Parameter
+-------------------------------------
+
+     // Declare a global variable to save the handle of the first instance
+     // of the main window.
+
+     HWND FirsthWnd;
+
+     // Make the following modifications to the WinMain function:
+
+     HWND FirstChildhWnd;    // handle of last active pop-up window of the
+                             // first application instance
+
+     if (!hPrevInstance)     // other instances of application running?
+
+     if (!InitApplication(hInstance))  // initialize shared things
+
+              return FALSE;  // exits if unable to initialize
+
+        else {}
+
+     else  // a previous instance exists;
+
+           // retrieve the main window handle from the first instance
+        {
+        GetInstanceData(hPrevInstance, (NPSTR)&amp;FirsthWnd, 2);
+
+     FirstChildhWnd = GetLastActivePopup(FirsthWnd);
+     BringWindowToTop(FirsthWnd);         // bring main window to top
+
+     if (FirsthWnd != FirstChildhWnd)
+
+        BringWindowToTop(FirstChildhWnd); // a pop-up window is active
+                                          // bring it to the top too
+
+     return FALSE;                        // do not run second instance
+     }
+
+     // Add this line to the InitApplication function:
+
+      FirsthWnd = NULL;  // no previous window, so this is NULL
+
+      // Add these two lines to the InitInstance function after the
+      // "hWnd = CreateWindow(...);" call:
+
+     if (!FirsthWnd)       // If this is the first instance,
+
+        FirsthWnd = hWnd;  // save the window handle.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

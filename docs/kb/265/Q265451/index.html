@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265451/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265451/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265451/","publisher":null,"image":null,"headline":"Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265451-howto-run-an-evb-application-full-screen-on-a-pocket-pc">Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265451
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB kbDSupport kbVBM300 kbOSWinCEPsPC200 kbOSWinCE300
+Last Modified: 19-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+   - Microsoft Windows CE Platform SDK for Pocket PC 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to programmatically manipulate the various screen
+objects on a Pocket PC device by using the SHFullScreen API function from an
+eMbedded Visual Basic (eVB) application.
+
+It is popular for applications that target Windows CE to use as much of the
+screen of the smaller Palm-sized devices as possible. The new user interface
+(UI) of the Pocket PC platform requires additional work for an application to
+use the full screen area.
+
+MORE INFORMATION
+================
+
+To understand the comments in the code examples in the article, the new Pocket
+PC UI terms are described as follows:
+
+- The taskbar is located at the top of the screen, it displays application
+  captions, and gives the user the ability to start applications.
+
+- The command bar, also known as the menu bar, is located at the bottom of the
+  screen.
+
+- The soft input panel (SIP) button is located on the command bar, to the
+  lower-right corner of the screen.
+
+To create a window that uses as much of the screen as possible, the application
+calls SHFullScreen to hide these elements.
+
+Step-by-Step Example
+--------------------
+
+1. Start eMbedded Visual Basic, and create a new Windows CE for the Pocket PC
+  project.
+
+2. Add four CommandButton controls to Form1.
+
+3. Paste the following code into Form1:
+
+  Option Explicit
+
+  Const SW_HIDE = 0
+  Const SW_SHOWNORMAL = 1
+
+  Const SHFS_SHOWTASKBAR = &amp;H1
+  Const SHFS_HIDETASKBAR = &amp;H2
+  Const SHFS_SHOWSIPBUTTON = &amp;H4
+  Const SHFS_HIDESIPBUTTON = &amp;H8
+  Const SHFS_SHOWSTARTICON = &amp;H10
+  Const SHFS_HIDESTARTICON = &amp;H20
+  Const HWND_TOPMOST = -1
+  Const HWND_NOTOPMOST = -2
+
+  Const SWP_SHOWWINDOW = &amp;H40
+  Const SM_CXSCREEN = &amp;H0
+  Const SM_CYSCREEN = &amp;H1
+  Const HHTASKBARHEIGHT = 26
+
+  Dim bShowMenu As Boolean
+  Dim bShowStart As Boolean
+  Dim bShowTaskbar As Boolean
+  Dim bFullScreen As Boolean
+  Dim lHwnd As Long
+
+  Declare Function GetSystemMetrics Lib "Coredll" ( _
+      ByVal nIndex As Long) As Long
+      
+  Declare Function SHFullScreen Lib "aygshell" ( _
+      ByVal hwndRequester As Long, _
+      ByVal dwState As Long) As Boolean
+
+  Declare Function MoveWindow Lib "Coredll" ( _
+      ByVal hwnd As Long, _
+      ByVal x As Long, _
+      ByVal y As Long, _
+      ByVal nWidth As Long, _
+      ByVal nHeight As Long, _
+      ByVal bRepaint As Long) As Long
+
+  Declare Function SetForegroundWindow Lib "Coredll" ( _
+      ByVal hwnd As Long) As Boolean
+
+  Declare Function GetLastError Lib "Coredll" () As Long
+
+  Declare Function ShowWindow Lib "Coredll" ( _
+      ByVal hwnd As Long, _
+      ByVal nCmdShow As Long) As Long
+
+  Declare Function FindWindow Lib "Coredll" Alias "FindWindowW" ( _
+      ByVal lpClassName As String, _
+      ByVal lpWindowName As String) As Long
+          
+  Private Sub Form_Load()
+      bShowMenu = True
+      bShowStart = True
+      bShowTaskbar = True
+      bFullScreen = False
+      lHwnd = Form1.hwnd
+      Command1.Caption = "Full Screen"
+      Command2.Caption = "Hide Menu"
+      Command3.Caption = "Hide Start"
+      Command4.Caption = "Hide Taskbar"
+      Command4.Visible = False
+      Command1.Move 120, 480, 1335, 495
+      Command2.Move 120, 1080, 1335, 495
+      Command3.Move 120, 1680, 1335, 495
+      Command4.Move 120, 2280, 1335, 495
+  End Sub
+
+  Private Sub Form_OKClick()
+      App.End
+  End Sub
+
+  Private Sub Command1_Click()
+      Dim lret
+      If bFullScreen Then
+          lret = FindWindow("menu_worker", "")
+          If lret &lt;&gt; 0 Then 'window found
+              ShowWindow lret, SW_SHOWNORMAL
+          End If
+          lret = SetForegroundWindow(Me.hwnd)
+          lret = MoveWindow(Me.hwnd, 0, HHTASKBARHEIGHT, _
+              GetSystemMetrics(SM_CXSCREEN), _
+              GetSystemMetrics(SM_CYSCREEN), True)
+          Command1.Caption = "Full Screen"
+      Else
+          'show form full screen
+          lret = FindWindow("menu_worker", "")
+          If lret &lt;&gt; 0 Then 'window found
+              ShowWindow lret, SW_HIDE
+          End If
+          lret = SetForegroundWindow(Me.hwnd)
+          lret = MoveWindow(Me.hwnd, 0, 0, _
+              GetSystemMetrics(SM_CXSCREEN), _
+              GetSystemMetrics(SM_CYSCREEN) + HHTASKBARHEIGHT, 0)
+          Command1.Caption = "Not Full Screen"
+      End If
+      bFullScreen = Not bFullScreen
+      Command4.Visible = bFullScreen
+  End Sub
+
+  Private Sub Command2_Click()
+      Dim lret
+      lret = SetForegroundWindow(lHwnd)
+      If bShowMenu Then
+          lret = SHFullScreen(lHwnd, SHFS_HIDESIPBUTTON)
+          Command2.Caption = "Show Menu"
+      Else
+          lret = SHFullScreen(lHwnd, SHFS_SHOWSIPBUTTON)
+          Command2.Caption = "Hide Menu"
+      End If
+      bShowMenu = Not bShowMenu
+  End Sub
+
+  Private Sub Command3_Click()
+      Dim lret
+      lret = SetForegroundWindow(lHwnd)
+      If bShowStart Then
+          lret = SHFullScreen(lHwnd, SHFS_HIDESTARTICON)
+          Command3.Caption = "Show Start"
+      Else
+          lret = SHFullScreen(lHwnd, SHFS_SHOWSTARTICON)
+          Command3.Caption = "Hide Start"
+      End If
+      bShowStart = Not bShowStart
+  End Sub
+
+  Private Sub Command4_Click()
+      Dim lret
+      lret = SetForegroundWindow(lHwnd)
+      If bShowTaskbar Then
+          lret = SHFullScreen(lHwnd, SHFS_HIDETASKBAR)
+          Command4.Caption = "Show TaskBar"
+      Else
+          lret = SHFullScreen(lHwnd, SHFS_SHOWTASKBAR)
+          Command4.Caption = "Hide TaskBar"
+      End If
+      bShowTaskbar = Not bShowTaskbar
+  End Sub
+
+4. Run the project and test the functionality by clicking the CommandButtons.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q266244 HOWTO: Create Full-Screen Applications for the Pocket PC
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVB kbDSupport kbVBM300 kbOSWinCEPsPC200 kbOSWinCE300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

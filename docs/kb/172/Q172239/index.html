@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172239: BUG: OpenResultset Doesn’t Fire QueryComplete in Class Module | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172239: BUG: OpenResultset Doesn’t Fire QueryComplete in Class Module" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172239/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172239/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172239/","publisher":null,"image":null,"headline":"Q172239: BUG: OpenResultset Doesn’t Fire QueryComplete in Class Module","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172239-bug-openresultset-doesnt-fire-querycomplete-in-class-module">Q172239: BUG: OpenResultset Doesn’t Fire QueryComplete in Class Module</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172239
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Program code in the QueryComplete event procedure of a rdoConnection object will
+not execute if you use the OpenResultset method to execute a query in a class
+module.
+
+RESOLUTION
+==========
+
+The resolution to this problem is to call DoEvents function after opening the
+resultset. For example:
+
+     Set rs = cn.OpenResultset("select * from Authors", _
+         rdOpenKeyset, rdConcurValues)
+     DoEvents
+
+If you use the OpenResultset method with the rdAsyncEnable option, you need to
+use the following code to workaround the problem:
+
+     Set rs = cn.OpenResultset("select * from Authors", _
+         rdOpenKeyset, rdConcurValues, rdAsyncEnable)
+     While rs.StillExecuting
+         DoEvents
+     Wend
+     DoEvents
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic 5.0. Form1 is created by
+  default.
+
+2. Add a new Class Module (Class1) to the project.
+
+3. Insert the following code into the General Declarations section of Class1 and
+  replace ServerName with appropriate SQL server name:
+
+        Private WithEvents cn As rdoConnection
+
+        Private Sub cn_QueryComplete(ByVal Query As RDO.rdoQuery, _
+                                    ByVal ErrorOccurred As Boolean)
+          MsgBox "Query Done --&gt; From QueryComplete Event."
+        End Sub
+
+        Public Sub QueryCompleteTest()
+          Dim rs As rdoResultset
+          Set cn = New rdoConnection
+          With cn
+             .Connect = "UID=sa;PWD=;database=pubs;" _
+                 &amp; "Server=ServerName;" _
+                 &amp; "driver={SQL Server};DSN='';"
+             .QueryTimeout = 5
+             .CursorDriver = rdUseClientBatch
+             .EstablishConnection rdDriverNoPrompt
+          End With
+          Set rs = cn.OpenResultset( _
+             "select * from Authors", _
+             rdOpenKeyset, rdConcurValues)
+          'DoEvents
+        End Sub
+
+4. Add a CommandButton (Command1) to Form1.
+
+5. Insert the following code into the Click event of Command1:
+
+        Private Sub Command1_Click()
+          Dim ClsQuery As New Class1
+          ClsQuery.QueryCompleteTest
+        End Sub
+
+6. Select Project\References, and check Microsoft Remote Data Object 2.0.
+
+7. Press the F5 key to run the program.
+
+8. Click on Command1. Note that the QueryComplete event is not triggered and no
+  message box appears on screen.
+
+Additional query words: kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbVBp400 kbRDO
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

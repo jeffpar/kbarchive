@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155899: WD97: Merged Document Based on Elegant Template Includes Header | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155899: WD97: Merged Document Based on Elegant Template Includes Header" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155899/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155899/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155899/","publisher":null,"image":null,"headline":"Q155899: WD97: Merged Document Based on Elegant Template Includes Header","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155899-wd97-merged-document-based-on-elegant-template-includes-header">Q155899: WD97: Merged Document Based on Elegant Template Includes Header</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155899
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbtemplate kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a mail merge main document using the Elegant, Professional, or
+Contemporary Templates, attach an envelope to the main document, and then merge
+the document, the envelopes for the second and subsequent merged documents may
+include headers and footers.
+
+CAUSE
+=====
+
+During the mail merge process, Word uses the header and footer information from
+the main document in the merged document. This information is in the original
+template on which you based the document (Elegant, Professional or Contemporary
+Template).
+
+The Contemporary and Elegant Templates include a different first page header and
+footer, and a header for the second and subsequent pages. The Professional
+Template includes a different first page header, and a header for the second and
+subsequent pages. During the mail merge process, Word retains the Same as
+Previous property in the header and footer, and as a result, each new section
+places headers and footers into the envelopes.
+
+NOTE: This problem occurs with other Microsoft or third-party templates that have
+a different header for the first page versus the remaining pages in the
+document.
+
+WORKAROUND
+==========
+
+To work around this problem, open the mail merge main document and use either of
+the following methods.
+
+Method 1: Removing the Header and Footer
+----------------------------------------
+
+NOTE: If you use this method, you cannot place and headers or footers into your
+document.
+
+1. On the File menu, click Page Setup, and then click the Layout tab.
+
+  NOTE: If you are unable to click Page Setup, click the first page of your
+  document (not the envelope page).
+
+2. Under Headers and Footers, click to clear the Different First Page check box,
+  and then click OK.
+
+3. On the View menu, click Header and Footer.
+
+4. Click the Show Next button in the Header And Footer toolbar, until the header
+  for section 2 is shown.
+
+5. Select the text in the header, and then click Clear on the Edit menu.
+
+6. Click the "Switch Between Header and Footer" button on the Header and Footer
+  toolbar. If the footer for section 2 is not shown, click the Show Previous or
+  Show Next button until the footer for section 2 is shown.
+
+7. Select the text in the footer, and then click Clear on the Edit menu.
+
+8. Click Close on the Header and Footer toolbar.
+
+Method 2: Retaining the Header and Footer
+-----------------------------------------
+
+NOTE: This method only works with documents that are based on the Elegant or
+Professional Templates. It does not work with documents based on the
+Contemporary Template, because this template contains graphics.
+
+1. Place the insertion point into the upper left part of the envelope within the
+  mail merge main document. The Style should be Envelope Return.
+
+2. On the File menu, click Page Setup, and then click the Layout tab.
+
+3. Under Headers and Footers, click to select the Different First Page check
+  box, and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 8.0 8.00 word8 word97
+
+======================================================================
+Keywords          : kbtemplate kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

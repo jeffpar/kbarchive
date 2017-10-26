@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121167/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121167/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121167/","publisher":null,"image":null,"headline":"Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121167-gp-fault-occurs--keyboard-is-remapped-wproofreader--word-6">Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121167
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the ProofReader utility in Microsoft Word version 6.0 for
+Windows, the following error messages are displayed:
+
+- An error has occurred in your application. If you choose Ignore, you should
+  save your work in a new file. If you close, your application will terminate.
+
+-and-
+
+- Application Error: Winword caused a General Protection fault in module
+  S3640.DRV at 0003:0FD2
+
+The keyboard is remapped for every keyboard entry in all text-based applications.
+
+CAUSE
+=====
+
+The problem with keyboard mapping occurs because the CTRL+N combination is used
+in both Microsoft Word version 6.0 for Windows and Windows Sound System version
+2.0 ProofReader. Word uses the CTRL+N function for starting a new document. In
+ProofReader, the CTRL+N combination is used to begin proofreading a range of
+selected items. ProofReader does not fully release the CTRL key to Word, nor
+does it properly refresh the function of the CTRL key. As a result, it seems as
+if the CTRL key is locked, making it possible for all CTRL functions to occur.
+
+If the CTRL key is pressed in Word after ProofReader has proofread a document,
+the CTRL functions are released back to Word successfully without the GP fault,
+application error, or remapping problems.
+
+RESOLUTION
+==========
+
+To correct this problem, press the CTRL key immediately after ProofReader has
+completed proofreading the selected text in the Word document.
+
+If you receive the GP fault and application error messages, reboot Windows to
+correct the keyboard mappings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Sound System versions
+2.0 and 2.0a. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The keyboard remapping does not effect the MS-DOS environment. The keyboard
+mapping operates correctly after exiting Windows. Additionally, the mappings are
+correct in MS-DOS virtual machines (VMs). However, when you return to the
+Windows environment the mappings are still incorrect. You must restart Windows
+to correct the problem.
+
+Additional query words: 2.00 wss snd winword 6.0 2.0 2.0a gp fault app err interop proof reader gpf
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200 kbWinSoundSys200a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

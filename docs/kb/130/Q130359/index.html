@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130359/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130359/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130359/","publisher":null,"image":null,"headline":"Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130359-windows-nt-35-ras-buying-a-supported-28800-bps-modem">Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130359
+Product(s): Microsoft Windows NT
+Version(s): 3.50
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists high speed (28,800 bits per second [bps]) V.fast and V.34
+modems supported by Windows NT 3.5 Remote Access Service (RAS) that are not on
+the printed Windows NT 3.5 Hardware Compatibility List (HCL).
+
+This article also discusses the V.fast and V.34 communication standards and how
+they affect RAS. This information can be used to help you decide which modem to
+buy, or if you already bought a modem, how to make your modem work with RAS.
+
+NOTE: The V.fast standard is also known as V.fc. The fc in V.fc stands for fast
+class.
+
+MORE INFORMATION
+================
+
+If you want to buy a supported modem for use with RAS, you should look for a
+modem on the list below. When Windows NT 3.5 was released the final version of
+the V.34 communication standard had just been defined and not many V.34 modems
+were available. Therefore, most supported high speed modems comply only with the
+temporary V.fast standard.
+
+V.fast Modems, V.34 Modems, and Modems Supporting V.fast and V.34
+-----------------------------------------------------------------
+
+By early 1995, manufacturers provided upgrade paths for many of the listed modems
+to support both V.fast and V.34 simultaneously. While there is no guarantee that
+these upgraded modems are compatible with RAS, the chances are good that they
+will work with RAS. However, if a V.fast modem was upgraded to only support
+V.34, chances are higher that it has become incompatible with the current driver
+in the RAS MODEM.INF file.
+
+If you know how to use modem commands and know the syntax of the MODEM.INF file,
+you can modify the MODEM.INF file to make your modem work with RAS. If you buy
+an upgraded version of a V.fast modem listed below that now supports both V.fast
+and V.34, few or no changes to the MODEM.INF file are required. However, the
+modem may only be able to negotiate the V.fast standard with another modem when
+used with the current RAS MODEM.INF file. This can be a problem when you call a
+RAS server that has a plain V.34 modem. The V.34 standard does not define fall
+back to V.fast during protocol negotiation, therefore your modem will connect
+using V.32bis, the next lower communications standard which allows only 14,400
+bps connections.
+
+If you need to modify the MODEM.INF file, see the Modifying MODEM.INF topic in
+the Windows NT RAS Help file and refer to your modem command reference manual.
+
+If your modem is not on the supported list, check with your modem manufacturer
+about the availability of a custom Windows NT RAS MODEM.INF file section to make
+your modem work with RAS. If your manufacturer has a MODEM.INF section for only
+Windows for Workgroups 3.11 RAS, you can use that section with Windows NT. If
+you use a Windows for Workgroups RAS MODEM.INF section, Windows NT RAS will not
+be able to autodetect your modem. However, this should not be a problem, because
+you can select your modem driver manually.
+
+V.fast and V.34 Modems Supported by Windows NT 3.5
+--------------------------------------------------
+
+The Windows NT 3.5 MODEM.INF file supports the following 28,800 bps V.fast and
+V.34 modems. These are external modems, unless otherwise noted. There are only
+two V.34 modems listed.
+
+The Modem Names in MODEM.INF column lists the supported modems by using the
+titles of the modem sections exactly as they appear in the MODEM.INF file. These
+titles also appear in Windows NT Control Panel in the RAS modem selection list,
+but without the square brackets. The list shows US modems in alphabetical order
+and three German modems at the end.
+
+The Supported Standards and Comments column gives some additional information,
+but is not a complete list of modem features.
+
+Modem Names in MODEM.INF           Supported Standards and Comments
+========================           =====================================
+[Boca Modem V.Fast Class]          V.fast
+[Codex V.34R]                      V.34
+[MicroCom DeskPorte FAST ES28.8]   V.fast + MNP10 + Fax
+[MicroCom DeskPorte FAST]          V.fast + MNP10 + Fax 9600 bps. Parallel
+                                  port is not supported in Windows NT.
+[Hayes Accura 28800]               V.fast
+[Hayes Optima 28800]               V.fast
+[MultiTech MultiModem MT2834]      V.fast
+[Practical Peripherals PM288PKT]   V.fast + Fax 14400 bps. Pocket modem.
+[Practical Peripherals PC288MT]    V.fast
+[Practical Peripherals PC288SA]    V.fast
+[Supra Fax Modem 288]              V.fast + Fax
+[Supra Fax Modem 288 internal]     V.fast + Fax
+[UDS Motorola V.3400]              V.34
+[US Robotics Sportster 28800 VFC]  V.fast
+[Zoom VFP 28.8 internal]           V.fast
+[Creatix LC288FC - GER]            V.fast. GER= German Modem
+[ELSA MicroLink 288ooTL - GER]     V.fast. GER= German Modem
+[LOGEM 928 - GER]                  V.fast. GER= German Modem
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: prodnt 28.8 Kbps 28.8baud 28800bps 28800 28,800bps baudrate baud
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

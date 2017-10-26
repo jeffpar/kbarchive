@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121130/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121130/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121130/","publisher":null,"image":null,"headline":"Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121130-pc-win-mmfclean-gp-fault-in-large-pol-w-gateway-addresses">Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121130
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.20
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAR-1999
+
+3.20
+WINDOWS
+kbtool kbbug3.20 kbfile
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MMFCLEAN utility may cause a general protection fault (GP fault) in the
+Microsoft Windows operating system when you access a postoffice, if a large
+number of gateway addresses have been added to the postoffice address list.
+
+CAUSE
+=====
+
+Postoffice address lists that include a large number of gateway addresses may
+create a problem for MMFCLEAN during the initialization process.
+
+RESOLUTION
+==========
+
+To work around this problem, perform the following steps:
+
+1. Create two subdirectories, GLB and NME, on a local hard disk drive.
+
+2. Place the three access files (ACCESS.GLB, ACCESS2.GLB, and ACCESS3.GLB) from
+  the postoffice into the local GLB subdirectory, and place a zero- byte
+  ADMIN.NME file in the local NME subdirectory.
+
+3. Run ACCTONME.EXE from the root of the local hard disk drive. A new ADMIN.NME
+  file will be created.
+
+4. Ensure that no one is accessing the postoffice with the Mail Administrator,
+  Import, or Moveuser program.
+
+5. Make a backup copy of the ADMINSHD.NME file.
+
+6. Copy the newly created ADMIN.NME file to the ADMINSHD.NME file located on the
+  active postoffice.
+
+7. Run MMFCLEAN and then restore the ADMINSHD.NME file from backup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of MMFCLEAN. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For more information about the ACCTONME.EXE utility and how to obtain it, please
+see the following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q99419
+  TITLE     : PC DB: Database Maintenance Utilities (Complete)
+
+MMFCLEAN is available as MMFUTIL.EXE. You can find MMFUTIL.EXE, a self-
+extracting file, on the following services:
+
+- Microsoft's World Wide Web Site on the Internet On the www.microsoft.com home
+  page, click the Support icon. Click Knowledge Base, and select the product.
+  Enter kbfile MMFUTIL.EXE, and click GO! Open the article, and click the
+  button to download the file.
+
+- Internet (anonymous FTP) ftp ftp.microsoft.com Change to the Softlib/Mslfiles
+  folder. Get MMFUTIL.EXE
+
+- The Microsoft Network On the Edit menu, click Go To, and then click Other
+  Location. Type "mssupport" (without the quotation marks). Double-click the MS
+  Software Library icon. Find the appropriate product area. Locate and Download
+  MMFUTIL.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+  ARTICLE-ID: &lt;LINK TYPE="ARTICLE" VALUE="Q119591"&gt;Q119591&lt;/LINK&gt;
+
+  TITLE     : How to Obtain Microsoft Support Files from Online
+
+  Services
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : 3.20
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

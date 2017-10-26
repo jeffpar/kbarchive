@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310731/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310731/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310731/","publisher":null,"image":null,"headline":"Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310731-zone-err-msg-connecting-to-zone-the-page-cannot-be-displayed">Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310731
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 30-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a link on a Microsoft Zone Web page, your browser may display a
+generic page titled, "The page cannot be displayed". This page, may list a
+specific reason as to why, such as:
+
+  Cannot find server or DNS Error.
+
+  -or-
+
+  HTTP 403 - Forbidden
+
+  -or-
+
+  HTTP 404 - File not found
+
+  -or-
+
+  HTTP 500 - Internal server error
+
+  -or-
+
+  HTTP 503 - Service unavailable
+
+CAUSE
+=====
+
+This behavior can occur if one of the following conditions is true:
+
+- Secure Sockets Layer (SSL) functionality is not turned on.
+- The Zone servers are down for maintenance or are experiencing problems.
+- Pages stored in the Temporary Internet Files folder on your computer are
+  outdated.
+- An Internet accelerator program is installed on your computer.
+- There is an error on the Domain Name Server (DNS) Server being used by your
+  computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method:
+
+Connecting to a secure (https://) page
+--------------------------------------
+
+1. Start Internet Explorer.
+
+2. On the Tools menu, click Internet Options.
+
+3. On the Advanced tab, scroll down to the Security section, and then select the
+  Use SSL 2.0 and Use SSL 3.0 options.
+
+4. Click OK.
+
+The Zone Servers Are Down or Experiencing a High Load
+-----------------------------------------------------
+
+If you are receiving an error such as 403, the Zone pages are either down for
+maintenance or experiencing a high load. Try connecting to Zone.com again at a
+later time.
+
+Refresh the Current Web Page
+----------------------------
+
+Even if the time stamp for the Web version and your locally stored version are
+the same, pressing CTRL+F5 will force Internet Explorer to download whatever
+copy is currently available on the Internet.
+
+Empty the Temporary Internet Files folder
+-----------------------------------------
+
+1. On the View menu (Internet Explorer 4.x) or Tools menu (Internet Explorer
+  5.0), click Internet Options.
+
+2. Under Temporary Internet Files, click Delete Files, and then click Yes or OK.
+
+3. Click Settings.
+
+4. Under "Check for newer versions of stored pages", click "Every time you start
+  Internet Explorer".
+
+5. Click OK twice.
+
+6. Quit and then restart Internet Explorer.
+
+7. Connect to the Zone.
+
+An Internet Accelerator Program Is Installed
+--------------------------------------------
+
+If an Internet accelerator program is installed on your computer, remove any
+entries for the Zone servers from your Hosts file. To do this, follow these
+steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "hosts" (without the quotation marks).
+
+3. In the Look In box, click My Computer, and then click Find Now.
+
+4. In the list of found files, double-click the Hosts file.
+
+5. In the "Choose the program you want to use" box, click Notepad.
+
+6. Clear the "Always use this program to open this file" check box, and then
+  click OK.
+
+7. Delete any entries that contain a reference to www.zone.com, zone.msn.com, or
+  fdl.msn.com. For example, an entry may look similar to:
+
+  131.107.75.31 www.zone.com
+
+8. On the File menu, click Exit. When you are prompted to save the changes,
+  click Yes.
+
+Verify DNS Server Settings
+--------------------------
+
+If you are receiving a DNS error, the URL of the page you are attempting to
+access may not be correctly associated with its current IP address. As a result,
+your browser will be unable to connect to, and display the page. Verify your DNS
+Server settings with your network administrator or ISP, and make sure the DNS
+servers are working properly.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q241344 Error Message: The Page Cannot Be Displayed
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

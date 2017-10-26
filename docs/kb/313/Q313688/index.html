@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q313688: SNA Server Access Violation in Function S1PWHSES() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q313688: SNA Server Access Violation in Function S1PWHSES()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/313/Q313688/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/313/Q313688/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/313/Q313688/","publisher":null,"image":null,"headline":"Q313688: SNA Server Access Violation in Function S1PWHSES()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q313688-sna-server-access-violation-in-function-s1pwhses">Q313688: SNA Server Access Violation in Function S1PWHSES()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q313688
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SNA Server service may terminate unexpectedly and cause all connected users
+to lose their existing host sessions. If Drwtsn32.exe is configured as the
+default debugger on the system, a Drwtsn32.log file similar to the following is
+generated when this problem occurs:
+
+Application exception occurred:
+       App: exe\snaservr.dbg (pid=&lt;process id&gt;)
+       When: &lt;date&gt; @ &lt;time&gt;
+       Exception number: c0000005 (access violation)
+
+[...]
+
+function: s1pwhses
+       0105eb14 66c745140300     mov     word ptr [ebp+0x14],0x3    ss:0421ea09=????
+       0105eb1a c6451a00         mov     byte ptr [ebp+0x1a],0x0      ss:0421ea08=??
+       0105eb1e b301             mov     bl,0x1
+       0105eb20 e81b6bfaff       call    sbpenq (01005640)
+       0105eb25 e9ea030000       jmp     s1pwhses+0x4b4 (0105ef14)
+       0105eb2a 663d0900         cmp     ax,0x9
+       0105eb2e 0f85e0030000     jne     s1pwhses+0x4b4 (0105ef14)
+       0105eb34 66c745140500     mov     word ptr [ebp+0x14],0x5    ss:0421ea09=????
+       0105eb3a e8e10e0000       call    s1pwcssq (0105fa20)
+       0105eb3f e9ce030000       jmp     s1pwhses+0x4b2 (0105ef12)
+FAULT -&gt;0105eb44 668b4514         mov     ax,[ebp+0x14]              ss:0421ea09=????
+       0105eb48 663bc7           cmp     ax,di
+       0105eb4b 7511             jnz     s1pwhses+0xfe (0105eb5e)
+       0105eb4d 66c745140a00     mov     word ptr [ebp+0x14],0xa    ss:0421ea09=????
+       0105eb53 66c745240000     mov     word ptr [ebp+0x24],0x0    ss:0421ea09=????
+       0105eb59 e9b4030000       jmp     s1pwhses+0x4b2 (0105ef12)
+       0105eb5e 663d0900         cmp     ax,0x9
+       0105eb62 0f85ac030000     jne     s1pwhses+0x4b4 (0105ef14)
+       0105eb68 66c745140100     mov     word ptr [ebp+0x14],0x1    ss:0421ea09=????
+       0105eb6e c644241301       mov     byte ptr [esp+0x13],0x1      ss:01dce92f=??
+       0105eb73 e99a030000       jmp     s1pwhses+0x4b2 (0105ef12)
+       0105eb78 668b4514         mov     ax,[ebp+0x14]              ss:0421ea09=????
+
+*----&gt; Stack Back Trace &lt;----*
+
+FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+03000002 00000000 00000000 00000000 00000000 00000000 snaservr!s1pwhses  (FPO: [EBP 0x00000000] [2,3,4])
+03000012 00000000 00000000 00000000 00000000 00000000 snaservr!&lt;nosymbols&gt;
+
+In addition, the SNA Server computer will log a message similar to the following
+in the Microsoft Windows NT Application Event Log:
+
+  Event ID: 624
+  Source: SNA Server
+  Description: Creating dump file &lt;snaroot&gt;\traces\snadump.log for
+  snaservr.exe.
+
+CAUSE
+=====
+
+The access violation in the S1PWHSES() function occurs because the SNA Server
+service attempts to process an incorrectly formatted message that it receives
+from a client across the native 3270 Emulator Interface Specification interface.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft SNA Server version 4.0 that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++---------------------------------------------+
+| File name    | Date        | Time           | 
++---------------------------------------------+
+| Snaservr.exe | 12-Dec-2001 | 12:00 midnight | 
++---------------------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+NOTE: If this product was already installed on your computer when you purchased
+it from the Original Equipment Manufacturer (OEM) and you need this fix, please
+call the Pay Per Incident number listed on the above Web site. If you contact
+Microsoft to obtain this fix, and if it is determined that you only require the
+fix you requested, no fee will be charged. However, if you request additional
+technical support, and if your no-charge technical support period has expired,
+or if you are not eligible for standard no-charge technical support, you may be
+charged a non-refundable fee.
+
+For more information about eligibility for no-charge technical support, see the
+following article in the Microsoft Knowledge Base:
+
+  Q154871 Determining If You Are Eligible for No-Charge Technical Support
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+4.0, 4.0 Service Pack (SP) 1, 4.0 SP2, 4.0 SP3, and 4.0 SP4.
+
+MORE INFORMATION
+================
+
+After you apply the upgrade, the SNA Server service will discard the invalid
+message that causes this access violation. In addition, the following message
+will be logged in the Windows NT Application Event Log when one of these invalid
+messages is detected:
+
+  Event ID: 98
+  Source: SNA Server
+  Description: A 3270 emulator sent an invalid message, which has been discarded
+  by SNA Server.
+
+  Client Workstation: &lt;workstation name&gt;
+  Client Domain: &lt;domain name&gt;
+  Client User: &lt;user name&gt;
+
+
+For additional information about how to configure Drwtsn32.exe as the default
+debugger, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q188296 How to Disable Dr. Watson for Windows NT
+
+For additional information about SNA Server access violations that are caused by
+an invalid emulator message, click the article numbers below to view the
+articles in the Microsoft Knowledge Base:
+
+  Q214491 SNA Server Access Violation in Function S1PWHSES()
+
+  Q196921 SNA Server Access Violation in Function S1PWLUSE()
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

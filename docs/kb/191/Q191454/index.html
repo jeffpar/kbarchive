@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191454: PRB: Event Procedures May Be Executed for Unhandled Events | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191454: PRB: Event Procedures May Be Executed for Unhandled Events" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191454/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191454/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191454/","publisher":null,"image":null,"headline":"Q191454: PRB: Event Procedures May Be Executed for Unhandled Events","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191454-prb-event-procedures-may-be-executed-for-unhandled-events">Q191454: PRB: Event Procedures May Be Executed for Unhandled Events</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191454
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When adding a control to a DHTML page in Visual Basic 6.0, code from other
+events may be executed.
+
+CAUSE
+=====
+
+In regular Visual Basic applications, if code is not written for an event, no
+other code will be executed when the event fires.
+
+In Visual Basic 6.0 DHTML applications, events are shared between the parent
+object and the child object.
+
+This is called Event Bubbling and is a property of the DHTML object model.
+
+RESOLUTION
+==========
+
+To obtain the same behavior that Visual Basic exhibits, set the cancelBubble
+property of the Event object.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a DHTML Application Project in Visual Basic.
+
+2. Open the DHTMLPage1 DHTML Designer.
+
+3. Insert a Table onto the page.
+
+4. Insert a Button into one of the cells. Make sure that the Button is in the
+  table cell by checking the document pane.
+
+5. Add the following code to the Table1_onclick event:
+
+        MsgBox "Table Clicked"
+
+6. Add the following code to the Button1_onclick event:
+
+        MsgBox "Button Clicked"
+
+7. Run the project. Note that when the button is clicked, the Button1 MsgBox
+  appears. Then, after clicking OK, the Table1 MsgBox appears.
+
+  NOTE: It is easier to insert the Button into the Table cell with Absolute
+  Positioning turned off.
+
+The following line of code will disable Event Bubbling. It can be placed anywhere
+inside your DHTML project.
+
+     BaseWindow.event.cancelBubble = True
+
+Conversely, you can re-enable Event Bubbling by setting the property to False.
+
+REFERENCES
+==========
+
+For more information about DHTML and Event Bubbling, please refer to your Visual
+Basic 6.0 Documentation.
+
+Additional query words: web internet kbInternet kbDHTML kbdse kbDSupport kbVBp kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

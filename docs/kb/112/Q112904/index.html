@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112904/","publisher":null,"image":null,"headline":"Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112904-pc-adm-err-msg-notice-53-error-creating-user-address">Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112904
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add users to or modify a personal address list from the MS-DOS Mail
+client, the following error may occur:
+
+  Notice 53:
+  Error Creating User Address in Personal Address List
+
+CAUSE
+=====
+
+This error can be caused by insufficient network rights, a corrupted or missing
+address list file (&lt;xxxxxxx&gt;.NME file, where &lt;xxxxxxxx&gt; is the
+user's hexadecimal ID), or a missing .NME file.
+
+The error can also be caused by an ownerless .NME file for an user (on Novell) or
+an ownerless .NME directory (on Novell). The client is looking for the user's
+HEXID.NME and cannot get the information if the directory is ownerless.
+
+RESOLUTION
+==========
+
+To resolve this problem, ensure that the user has sufficient network rights to
+the database. If the file is missing or corrupted and no backup exists, create a
+test user. Copy the test user's .NME file to the .NME file of the user
+experiencing the problem. Add names as required.
+
+A second option (see the note below before you attempt this resolution) is to
+copy the ADMIN.NME file to &lt;xxxxxxx&gt;.NME. This makes the complete
+postoffice address list (POL) the user's personal address list (PAL), and any
+unnecessary names can be deleted.
+
+NOTE: If the ADMIN.NME file has a user "Foreign Admin" who is the administrator
+of another postoffice (added by using the Address, Create command in the Mail
+Administrator program) and a user deletes "Foreign Admin" from the PAL, the
+MS-DOS Mail client goes to the NETPO.GLB file and marks the "Foreign Admin"
+record there as deleted. The name remains in the PAL, however, and if the user
+tries to send mail to "Foreign Admin" from the PAL, the following error
+results:
+
+  Address is no longer valid
+
+If neither of these methods works, you may have to reset the NETPO.GLB file by
+using the MS-DOS DEBUG program with the following commands:
+
+(NOTE: Make a backup copy of the NETPO.GLB file before you proceed with the steps
+below.)
+
+  debug netpo.glb
+  -f100,103,0
+  -w
+  -q
+
+This will reset the first 4 bytes of the file.
+
+Additional query words: 2.10x 3.00 3.00a 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0a,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

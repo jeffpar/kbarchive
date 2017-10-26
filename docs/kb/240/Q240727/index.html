@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240727: How to Use the FTP Utility in a Typical Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240727: How to Use the FTP Utility in a Typical Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240727/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240727/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240727/","publisher":null,"image":null,"headline":"Q240727: How to Use the FTP Utility in a Typical Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240727-how-to-use-the-ftp-utility-in-a-typical-session">Q240727: How to Use the FTP Utility in a Typical Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240727
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+This article explains how to use the FTP utility, which is included with Windows
+NT 4.0, in a typical FTP session. This article covers the following topics:
+
+- Opening an FTP site
+
+- Browsing the list of files and folders
+
+- Changing folders
+
+- Copying a file from the FTP site to your local computer
+
+- Copying a file from your local computer to the FTP site
+
+- Ending an FTP session
+
+MORE INFORMATION
+================
+
+NOTES:
+
+- The FTP utility is run from the command prompt.
+- After each description of how to perform a step in the typical FTP session is
+  sample screen output from that part of the session.
+- All FTP commands are case sensitive.
+
+Opening an FTP Site
+-------------------
+
+To open an FTP site, perform the following:
+
+1. At the command prompt, type the following:
+
+  ftp ServerName
+
+  Note that the prompt changes to ftp&gt;.
+
+2. Type "anonymous" (without the quotation marks) when prompted for the user.
+
+3. Type any password.
+
+Note: The "anonymous" user name is typically used to log on to FTP sites,
+particularly those that are not set up for users to copy files to. Usually, any
+text can be supplied for the password, including no text (just press the ENTER
+key when prompted for the password).
+
+  C:\&gt;ftp &lt;ServerName&gt;
+  Connected to &lt;ServerName&gt;.
+  220 &lt;ServerName&gt; Microsoft FTP Service (Version 4.0).
+  User (&lt;ServerName&gt;:(none)): anonymous
+  331 Anonymous access allowed, send identity (e-mail name) as password.
+  Password:
+  230 Anonymous user logged in.
+  ftp&gt;
+
+Browsing the List of Files and Folders
+--------------------------------------
+
+To view the list of files and folders, type "dir" (without the quotation marks)
+at the ftp prompt.
+
+  ftp&gt; dir
+  200 PORT command successful.
+  150 Opening ASCII mode data connection for /bin/ls.
+  08-29-99  08:11PM                   35 File1.txt
+  08-29-99  08:11PM       &lt;DIR&gt;          Folder1
+  226 Transfer complete.
+  98 bytes received in 0.00 seconds (98000.00 Kbytes/sec)
+  ftp&gt;
+
+Changing Folders
+----------------
+
+To change to a different folder (also known as the working directory), use the
+"cd" (without the quotation marks) command.
+
+Note: To change to the root folder, type either "cd /" (without the quotation
+marks) or "cd \" (without the quotation marks). To change to the parent folder,
+use two periods ("cd .." (without the quotation marks)).
+
+  ftp&gt; cd folder1
+  250 CWD command successful.
+  ftp&gt;
+
+Copying a File From the FTP Site to Your Local Computer
+-------------------------------------------------------
+
+To copy a file from the FTP site to your local computer, use the "get" (without
+the quotation marks) command.
+
+  ftp&gt; get file1.txt
+  200 PORT command successful.
+  150 Opening ASCII mode data connection for file1.txt(35 bytes).
+  226 Transfer complete.
+  35 bytes received in 0.16 seconds (0.22 Kbytes/sec)
+  ftp&gt;
+
+Copying a File from your Local Computer to the FTP Site
+-------------------------------------------------------
+
+To copy a file from your local computer to the FTP site, use the "put" (without
+the quotation marks) command.
+
+Note: Most sites only allow users to do this if they have logged on using a
+specific, preassigned user name, NOT the "anonymous" user.
+
+  ftp&gt; put myfile.txt
+  200 PORT command successful.
+  150 Opening ASCII mode data connection for MyFile.txt.
+  226 Transfer complete.
+  36 bytes sent in 0.00 seconds (36000.00 Kbytes/sec)
+  ftp&gt;
+
+Ending an FTP session
+---------------------
+
+To end the FTP session, use the "bye" (without the quotation marks) command.
+
+  ftp&gt; bye
+  221
+
+  C:\&gt;
+
+Additional References
+---------------------
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q229005 How to Connect to a Web or FTP Site Using Non-Default Port
+
+For a full list of the commands and parameters that can be used with the FTP
+utility, perform the following:
+
+1. From the Start menu, click Help.
+
+2. Click the Index tab, and then type "ftp utility" (without the quotation
+  marks).
+
+3. In the list box, double-click the ftp utility entry.
+
+4. For a list of all FTP commands, double-click the (untitled #0) entry. For a
+  list of parameters available when starting the ftp utility, double-click the
+  (untitled #0) entry.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: kbhowto howto overview iis file transfer protocol remote host machine pc akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

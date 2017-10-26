@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99862: NetCon.exe - Connect Net Drive - File Manager Extension | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99862: NetCon.exe - Connect Net Drive - File Manager Extension" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99862/","publisher":null,"image":null,"headline":"Q99862: NetCon.exe - Connect Net Drive - File Manager Extension","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99862-netconexe---connect-net-drive---file-manager-extension">Q99862: NetCon.exe - Connect Net Drive - File Manager Extension</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99862
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 
+Operating System(s): 
+Keyword(s): kbfile kbsample kbFileManExt kbOSWin310 kbGrpDSShell kb16bitonly
+Last Modified: 30-JUL-2001
+
+---------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The NETCON program sample demonstrates how to create a dynamic-link library
+(DLL) that will extend the File Manager application in Microsoft Windows
+versions 3.1 and later. The program sample exports a function called
+FMExtensionProc(), which File Manager sends messages to during its
+initialization. NETCON adds a Quick Connect menu to File Manager (in Windows for
+Workgroups, NETCON adds a toolbar button and a help string to be displayed in
+the status bar when the toolbar button is selected). When the Quick Connect menu
+item is selected, NECON.DLL brings up a Connect Network Drive dialog box. The
+program uses the following network application programming interface (API),
+which must be supported by the network that Windows is running on:
+
+- WNetAddConnection()
+
+- WNetGetConnection()
+
+NETCON also maintains the MRU_Files section of WIN.INI in the exact manner that
+Windows for Workgroups does. Unlike the Connect Network Drive dialog box that
+comes with Windows for Workgroups, this dialog box does not browse for available
+drives during initialization, and therefore startup time may be significantly
+faster.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+NetCon.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+To enable File Manager to use the DLL, and the following line to the [AddOns]
+section of WINFILE.INI:
+
+     Quick Net Connection = netcon.dll
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbFileManExt kbOSWin310 kbGrpDSShell kb16bitonly 
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

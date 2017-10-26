@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62627: M6101 on PG Scatter Charts with Autoscaling Off | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62627: M6101 on PG Scatter Charts with Autoscaling Off" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62627/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62627/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62627/","publisher":null,"image":null,"headline":"Q62627: M6101 on PG Scatter Charts with Autoscaling Off","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62627-m6101-on-pg-scatter-charts-with-autoscaling-off">Q62627: M6101 on PG Scatter Charts with Autoscaling Off</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62627
+Product(s): See article
+Version(s): 6.00 6.00a
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc buglist6.00 buglist6.00a | mspl13_c
+Last Modified: 21-JAN-1991
+
+If you turn autoscaling off in any Presentation Graphics scatter
+chart, you will receive a run-time error M6101 -- invalid math
+operation -- when the _pg_chartscatter() run-time function is called.
+
+Microsoft has confirmed this to be a problem in C versions 6.00 and
+6.00a and QuickC versions 2.50 and 2.51 (buglist2.50 and buglist2.51).
+We are researching this problem and will post new information here as
+it becomes available.
+
+Sample Code
+-----------
+
+The following code is from the SCAT.C sample program, which is the
+sample program found in the online help for the _pg_chartscatter and
+_pg_chartscatterms routines. Note the added lines, which turn off
+autoscaling. Compile the program, then link with the GRAPHICS.LIB and
+PGCHART.LIB files. Running the application will duplicate the M6101
+run-time error.
+
+/* SCAT.C illustrates presentation graphics scatter chart functions
+ * including:
+ *    _pg_chartscatter   _pg_chartscatterms
+ */
+
+#include &lt;conio.h&gt;
+#include &lt;graph.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;pgchart.h&gt;
+
+#define ITEMS  5
+#define SERIES 2
+float _far people[SERIES][ITEMS]  = { { 235.F, 423.F, 596.F, 729.F,
+                                                  963.F },
+                             { 285.F, 392.F, 634.F, 801.F, 895.F }
+                                                                 };
+float _far profits[SERIES][ITEMS] = { { 0.9F,  2.3F,  5.4F,  8.0F,
+                                                             9.3F  },
+                               { 4.2F,  3.4F,  3.6F,  2.9F,  2.7F  }
+                                                                   };
+char  _far *companies[SERIES] = { "Goodstuff,Inc.", "Badjunk &amp; Co." };
+
+void main()
+{
+        chartenv env;
+
+        if( !_setvideomode( _MAXRESMODE ) ) /* Find a valid graphics
+                                                               mode */
+                exit( 1 );
+        _pg_initchart();                 /* Initialize chart system */
+
+        /* Show single-series scatter chart. */
+        _pg_defaultchart (&amp;env, _PG_SCATTERCHART, _PG_POINTONLY );
+        strcpy( env.maintitle.title, "Goodstuff, Inc." );
+        strcpy( env.xaxis.axistitle.title, "Employees" );
+        strcpy( env.yaxis.axistitle.title, "Profitability" );
+
+/****** Note : Turn one of these two to '0' or off, or uncomment
+        this section to cause problem.                          */
+
+/*        env.xaxis.autoscale=1;   */
+/*        env.yaxis.autoscale=0;   */
+
+/********************************************************************/
+
+        _pg_chartscatter( &amp;env, people[0], profits[0], ITEMS );
+        getch();
+        _clearscreen( _GCLEARSCREEN );
+
+        /* Show multiseries scatter chart. */
+        _pg_defaultchart (&amp;env, _PG_SCATTERCHART, _PG_POINTONLY );
+        strcpy( env.xaxis.axistitle.title, "Employees" );
+        strcpy( env.yaxis.axistitle.title, "Profitability" );
+        _pg_chartscatterms( &amp;env, (float _far *)people,
+             (float _far *)profits, SERIES, ITEMS, ITEMS, companies );
+        getch();
+
+        _setvideomode( _DEFAULTMODE );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

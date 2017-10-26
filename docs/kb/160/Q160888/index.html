@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160888/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160888/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160888/","publisher":null,"image":null,"headline":"Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160888-prb-vss-explorer-error-this-is-an-integration-only-project">Q160888: PRB: VSS Explorer Error: "This Is an Integration Only Project"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160888
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,97
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+When you try to use the CheckOut, CheckIn, UndoCheckOut, or GetLatestVersion
+operations on a Microsoft Access 97 object in the Microsoft Visual SourceSafe
+5.0 Explorer, you may receive the following error message:
+
+  This is an integration only project, getting files is not allowed from the
+  SourceSafe Explorer.
+
+RESOLUTION
+==========
+
+In some cases, it may be necessary to perform operations on Microsoft Access
+objects from within the SourceSafe Explorer. In those cases, close SourceSafe
+Explorer, remove or remark the Disable_UI line in the Srcsafe.ini file, and then
+reopen SourceSafe Explorer. Then you will be able to perform the desired
+operation in SourceSafe Explorer. This is an example of the Disable_UI line as
+it might appear in Srcsafe.ini:
+
+     [$/Northwind]
+     Disable_UI = Yes
+
+Note that when you reopen the Microsoft Access database, the Visual SourceSafe
+Integration Component (ACCSCC) adds the Disable_UI = Yes line back to the
+Srcsafe.ini file. Optionally, you can add the line back to the file yourself.
+
+NOTE: This setting has no affect on a SourceSafe 4.0 Explorer.
+
+MORE INFORMATION
+================
+
+The Visual SourceSafe Integration Component (ACCSCC) of Microsoft Access 97 adds
+a setting to the Srcsafe.ini file when you add a Microsoft Access database to
+the SourceSafe server database. This entry flags the files in the SourceSafe
+database as belonging to a Microsoft Access database integration project, and it
+looks similar to this:
+
+     [$/Northwind]
+     Disable_UI = Yes
+
+This .ini file entry prevents you from using the SourceSafe 5.0 Explorer to check
+out the Microsoft Access database files. This is by design because the files are
+textual representations of Microsoft Access objects that you should only
+manipulate in the context of a Microsoft Access project.
+
+In addition, if the .ini setting is missing, it is recreated every time the
+Microsoft Access database is reopened. If the ACCSCC cannot write to Srcsafe.ini
+to add the setting, it attempts to write to the SourceSafe user's Ss.ini file
+instead.
+
+Additional query words: AccScc SS VSS
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe500
+Version           : WINDOWS:5.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

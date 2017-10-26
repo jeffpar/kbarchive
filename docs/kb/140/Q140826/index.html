@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140826: TN3270 Server Rejects First Data RU After Host’s CLEAR Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140826: TN3270 Server Rejects First Data RU After Host’s CLEAR Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140826/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140826/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140826/","publisher":null,"image":null,"headline":"Q140826: TN3270 Server Rejects First Data RU After Host’s CLEAR Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140826-tn3270-server-rejects-first-data-ru-after-hosts-clear-message">Q140826: TN3270 Server Rejects First Data RU After Host’s CLEAR Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140826
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A host application, such as TeleView, allows a user at a terminal to make a
+connection and then spawn additional sessions on the SNA host. Under normal
+conditions, the user may terminate a session with no further incident. In this
+case, however, when a user ends even just one session, the rest of the sessions
+are terminated. This condition may occur when running the TN3270 Service for
+Windows NT. The TN3270 Server may also generate the following error:
+
+  sense data = 081B0000
+
+The IBM Systems Network Architecture (SNA) Formats guide provides the following
+information regarding this error:
+
+  081B0000
+  Receiver in Transmit Mode:
+  A race condition exists: a normal-flow request was received while the
+  half-duplex contention state was NOT-RECEIVED, or while resources (such
+  as buffers) necessary for handling normal-flow data were unavailable.
+
+Contrary to the explanation given in the IBM SNA Formats guide, a race condition
+does not exist in this case. The error is exhibited in the following diagnostic
+tools:
+
+From the Application Log:
+
+  Event ID: 309
+  INIT failed with LUA_COMM_SUBSYSTEM_NOT_LOADED / LUA_SEC_RC_OK for
+  &lt;IP_address&gt; (port &lt;port_number&gt;).
+
+  Event ID: 603
+  TN3270 session with client at &lt;IP_address&gt; (port &lt;port_number&gt;) using LU
+  &lt;LU_name&gt; terminated abnormally because:
+     TN3270 Service Error 505
+     SNA API verb INIT failed.
+        Failure described as:
+        SNA Server has not been started.
+
+  Event ID: 698
+  Invalid Destination L-value. Parameter: 0, Message: 0, Valid range
+                                                                   &lt;range&gt;
+
+  Event ID: 699
+  Invalid message: MsgType 31, MhType 31
+
+  Event  ID: 1955
+  RUI_INIT failed for LU, primary_rc=4f0, secondary_rc=0
+
+From an SNA Server API Trace:
+
+  ...
+  ... RUI    ---------------------------------------------- 13:50:43.15
+  ... RUI    RUI_READ request
+  ...
+  ... RUI    ---------------------------------------------- 13:50:43.56
+  ... RUI    RUI_READ response
+  ... RUI    OK - OK
+  ...
+  ... RUI    ---------------------------------------------- 13:50:43.57
+  ... RUI    RUI_WRITE request
+  ...
+  ... RUI    ---- Data at address 00119CC4 ----
+  ... RUI    081B0000                                &lt;....            &gt;
+  ... RUI    ---------------------------------------------- 13:50:43.65
+  ... RUI    RUI_WRITE response
+  ... RUI    OK - OK
+  ...
+  ... RUI    ---- Data at address 00119CC4 ----
+  ... RUI    081B0000                                &lt;....            &gt;
+  ...
+
+From a TN3270 Server Trace:
+
+  ...
+  &gt;11/27 13:50:43.062 (+ smidgen )  Event=TEV_DataToSNA
+   Thread = 0x000000C3  Session = 0x0026B7D0  Socket = 0x0000017C
+   VCB address=0x0026B9D8
+   verb_length=0x0044  verb=0x0052 (RUI)  opcode=0x8004 (WRITE)
+   sid=0x00010006  correlator=0x0026B7D0  post_handle=0x00000198
+   prim_rc=LUA_OK  sec_rc=LUA_SEC_RC_OK
+   lu_norm    lua_data_length=0x00000004
+   TH Only    efi=0  oadi=0  daf=FD  oaf=01  snf=0001
+   RH -RSP FMD fi=0   sdi=0  bci=1  eci=1  (Only)
+   83 91 80    dr1=1  dr2=0  ri=1   qri=0  pi=1
+               bbi=1  ebi=0  cdi=0  csi=0  edi=0  pdi=0
+   000000  081b0000                             *....            *
+  ...
+  &gt;11/27 13:50:43.562 (+ smidgen )  Event=TEV_DataToSNA
+   Thread = 0x000000C3  Session = 0x0026B7D0  Socket = 0x0000017C
+   VCB address=0x0026B9D8
+   verb_length=0x0044  verb=0x0052 (RUI)  opcode=0x8004 (WRITE)
+   sid=0x00010006  correlator=0x0026B7D0  post_handle=0x00000198
+   prim_rc=LUA_OK  sec_rc=LUA_SEC_RC_OK
+   lu_norm    lua_data_length=0x00000004
+   TH Only    efi=0  oadi=0  daf=FD  oaf=01  snf=0002
+   RH -RSP FMD fi=0   sdi=1  bci=1  eci=1  (Only)
+   87 91 20    dr1=1  dr2=0  ri=1   qri=0  pi=1
+               bbi=0  ebi=0  cdi=1  csi=0  edi=0  pdi=0
+   000000  081b0000                             *....            *
+  ...
+
+CAUSE
+=====
+
+After receiving a CLEAR message from the SNA host, the TN3270 Server may reject
+the first data response unit (RU) from the SNA host. There are two issues here,
+both of which have now been fixed:
+
+1. When the TN3270 Server receives a CLEAR message from the SNA host, it does
+  not reset its internal state which keeps track of whether the TN3270 emulator
+  or the host application has permission to send. This causes the TN3270 Server
+  to reject the first data message received from the SNA host with a sense data
+  = 081B0000, because the TN3270 Server assumes that the TN3270 emulator still
+  has the permission to send. The TN3270 Server then rejects the next data
+  message from the host. At this point, the host application gives up and
+  terminates the session.
+
+2. When the node receives data from the host application which it believes to be
+  out of bracket it passes a message up to a Request Unit Interface (RUI)
+  application with the Sense Data Included Indicator (sdi) bit set. On
+  receiving this, the RUI application is supposed to send a negative response
+  with the sense data which the node passed up to it. The TN3270 Server,
+  however, was not checking for this bit.
+
+RESOLUTION
+==========
+
+Microsoft has updated the files, TN3NTMSG.DLL and TN3SERVR.EXE, to correct this
+problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

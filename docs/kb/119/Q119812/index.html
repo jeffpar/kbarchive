@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119812/","publisher":null,"image":null,"headline":"Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119812-bug-sqlsrvrdll-gp-fault-on-vines-when-sql-server-not-running">Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119812
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCSDK2: 10118 (1.02.3231)
+
+SYMPTOMS
+========
+
+When a Microsoft Windows version 3.1 or Microsoft Windows for Workgroups version
+3.11 workstation is configured to use the Banyan Vines Network Library and
+attempts to connect to a SQL Server machine on a Banyan Vines, but SQL Server is
+not present or not running, SQLSRVR.DLL will cause a general protection fault
+(GP fault).
+
+The following configuration exhibits the above behavior:
+
+- Windows or Windows for Workgroups workstation with Banyan Vines redirector
+  installed
+
+- SQL Server Win16 client Network Library (Net-Library) installed
+  (DBMSVIN3.DLL). This is the Vines IP client-side Network Library.
+
+- A Banyan Vines server with a PC-based service created.
+
+If ODBC is configured to use DBMSVIN3.DLL and an attempt is made to connect to a
+PC-based service name that is currently not being used by SQL Server (for
+example, no SQL server has registered with the PC-based service), then when the
+ODBC client attempts to connect, a GP fault will occur in SQLSRVR.DLL with the
+following message:
+
+  Application Error
+  &lt;application name&gt; caused a General Protection Fault in module
+  SQLSRVR.DLL at 000C:098C.
+
+WORKAROUND
+==========
+
+Make sure SQL Server is started before you attempt to connect with the ODBC SQL
+Server driver and the Banyan Vines Network Library.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC SQL Server driver
+version 1.02.3231. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 1.02.3231 gpf
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264723: WD97: How to Suppress Blank Lines During a Mail Merge | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264723: WD97: How to Suppress Blank Lines During a Mail Merge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264723/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264723/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264723/","publisher":null,"image":null,"headline":"Q264723: WD97: How to Suppress Blank Lines During a Mail Merge","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264723-wd97-how-to-suppress-blank-lines-during-a-mail-merge">Q264723: WD97: How to Suppress Blank Lines During a Mail Merge</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264723
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 word97 kbmerge
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During a mail merge in Microsoft Word, you may want to remove blank lines from
+the merged document if no information is available for that line.
+
+For additional information about how to suppress a blank line when you use a
+conditional statement (IF field), click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q264787 WD97: Blank Line Is Not Suppressed in a Conditional Mail Merge
+
+MORE INFORMATION
+================
+
+Frequently, in mail merges that involve addresses, there is a second line for
+the street address. This second line is normally used for a suite or apartment
+number. In order to close the "gap" in the address when no data exists for that
+merge field, make sure you do not place any spaces, punctuation, or anything
+else except merge fields on that second line. If there is anything else on that
+line, that line appears in all merges.
+
+NOTE: Each line must end with a paragraph mark (&lt;B6&gt;) in order for Word to suppress
+the line, if the result of the MERGEFIELDS is blank. If the line ends with a New
+Line character, Word cannot suppress a blank line.
+
+The mail merge feature evaluates each line as the merge is performed. If there is
+any text on the line, that line appears in the merge result. If there is no text
+on the line, but there is a merge field, the mail merge feature checks to see
+whether there is any data for the merge field. If there is no data for the merge
+field, that line is not created in the merge result.
+
+To change this feature setting, follow these steps:
+
+NOTE: You must be in the mail merge Main (form) document to change the setting
+for the merge.
+
+1. On the Tools menu, click Mail Merge.
+
+2. In the Mail Merge Helper dialog box, click Merge.
+
+  NOTE: You must select the main document and data source for the merge before
+  you perform step 2.
+
+3. In the Merge dialog box, under When Merging Records, click either:
+
+   - Don't print blank lines when data fields are empty.
+
+     -or-
+
+   - Print blank lines when data fields are empty.
+
+4. Click Close in the Merge dialog box, and then click Close in the Mail Merge
+  Helper.
+
+  NOTE: If you made no changes in the Merge dialog box, the Close button is not
+  available. Click Cancel instead.
+
+REFERENCES
+==========
+
+For more information about suppressing blank lines in mail merges, click
+"Contents and Index" on the Help menu, click the Index tab in Word Help, type
+the following text
+
+  troubleshoot mail merge
+
+and then double-click the selected text to go to the "Blank lines are showing in
+the merged documents" topic. If you are unable to find the information you need,
+ask the Office Assistant.
+
+Additional query words: suppress remove empty null close mailmerge
+
+======================================================================
+Keywords          : kbdta word8 word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

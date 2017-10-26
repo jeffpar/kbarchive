@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/278/Q278408/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/278/Q278408/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/278/Q278408/","publisher":null,"image":null,"headline":"Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q278408-prb-datagrid-cannot-be-bound-to-a-non-bookmarkable-recordset">Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q278408
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbADO kbVBp600 kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- ActiveX Data Objects (ADO), versions 2.0, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to bind an OLEDB DataGrid control to a forward-only or dynamic
+ActiveX Data Objects (ADO) recordset, you may receive the following run-time
+error message:
+
+  Run-time error '7004': The Rowset is not bookmarkable
+
+CAUSE
+=====
+
+You cannot bind the DataGrid control to recordsets that do not support
+bookmarks. The forward-only and dynamic ADO recordsets do not support bookmarks,
+and therefore cannot be specified as the DataSource for an OLEDB DataGrid
+control.
+
+RESOLUTION
+==========
+
+Bind the DataGrid to a bookmarkable recordset such as the keyset and static ADO
+recordsets.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual Basic version 6.0, create a new Data project.
+
+2. In the frmDataEnv form, add a DataGrid and a CommandButton control.
+
+3. In the frmDataEnv form module, paste the following code:
+
+NOTE: Supply the required connection parameters to the cn.Open statement to
+connect to the SQL Server, and specify a valid table name in the rs.Open
+statement.
+
+  'General Declarations Section
+  Dim cn As ADODB.Connection
+  Dim rs As ADODB.Recordset
+
+  Private Sub Command1_Click()
+
+  Set cn = New ADODB.Connection
+  Set rs = New ADODB.Recordset
+
+  cn.Open "Provider=SQLOLEDB;Data Source=&lt;&lt;I&gt;SQL Server&lt;/I&gt;&gt;;Initial Catalog=&lt;&lt;I&gt;SQL Database&lt;/I&gt;&gt;;User Id=&lt;&lt;I&gt;SQL UserId&lt;/I&gt;&gt;;Password=&lt;&lt;I&gt;SQL Password&lt;/I&gt;&gt;"
+  rs.Open "Select * from &lt;&lt;I&gt;TableName&lt;/I&gt;&gt;", cn, adOpenDynamic, adLockOptimistic
+
+  Set DataGrid1.DataSource = rs
+
+  End Sub
+
+4. Save and then run the project.
+
+5. When frmDataEnv is displayed, click the command button.
+
+You receive the error specified in the "Symptoms" section of this article.
+
+6. Modify the rs.Open statement in the Command1_Click() event procedure to open
+  a keyset or a static ADO recordset. To do this, replace the constant
+  adOpenDynamic with adOpenKeyset or adOpenStatic.
+
+7. Save and then run the project.
+
+8. On frmDataEnv, click the command button.
+
+The records in the specified table in the OLEDB DataGrid control are displayed.
+
+Additional query words: 7004
+
+======================================================================
+Keywords          : kbADO kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO200 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

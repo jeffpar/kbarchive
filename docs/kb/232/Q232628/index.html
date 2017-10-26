@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232628: Err Msg: The Service Profile Is Damaged. Re-install the… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232628: Err Msg: The Service Profile Is Damaged. Re-install the…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232628/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232628/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232628/","publisher":null,"image":null,"headline":"Q232628: Err Msg: The Service Profile Is Damaged. Re-install the…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232628-err-msg-the-service-profile-is-damaged-re-install-the">Q232628: Err Msg: The Service Profile Is Damaged. Re-install the…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232628
+Product(s): The Microsoft Network
+Version(s): 2.5,2.51,2.52,2.6,5.0,5.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0, 5.4 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows 98 Second Edition 
+- Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you double-click the MSN, Internet Explorer, or Outlook Express icons, you
+may receive the following error message when the MSN dialer tool starts:
+
+  The Service Profile is damaged. Re-install the service profile.
+
+CAUSE
+=====
+
+This problem can occur after you upgrade to Microsoft Windows 98 Second Edition.
+When you do so, the following entry may not exist in the Msn.cms file or the
+Msn.cmp file:
+
+  [Profile Format]
+  Version=1
+
+This message can also occur if the AOL tray is being loaded at startup.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following four methods:
+
+Uninstall and Reinstall MSN
+---------------------------
+
+To uninstall MSN:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs, and then click MSN v2.5 or MSN v2.6 from
+  the Install/Uninstall dialog box that appears.
+
+3. Click Add/Remove, and when asked if you want to remove MSN, click Yes.
+
+To upgrade to the current version of MSN you can download or order your free CD.
+Go to http://free.msn.com/upgrade.asp.
+
+To reinstall MSN using your Windows 98 Second Edition CD:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. Insert your Windows 98 Second Edition CD.
+
+3. In the Look in box, select your CD-ROM drive.
+
+4. In the Named box, type "rstormsn" (without the quotation marks), and then
+  click Find Now.
+
+5. Double-click rstormsn to open, and then double-click rstormsn.exe to
+  reinstall MSN.
+
+6. Once the installation process is complete, return to the desktop by closing
+  all open windows, and then double-click the Setup MSN Internet Access icon to
+  configure MSN.
+
+Rename msn.cmp and msn.cms and install MSN 5.0 or later.
+
+--------------------------------------------------------
+
+- This applies to MSN 5.0 only.
+
+To rename msn.cmp and msn.cms:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "msn.cmp msn.cms" (without the quotation marks), and
+  then click Find Now.
+
+3. Right click on msn.cmp, click Rename, type msn.cmp.old, and then hit ENTER.
+
+4. Right click on msn.cms, click Rename, type msn.cms.old, and then hit ENTER.
+
+5. Close the Find Files or Folders dialogue box.
+
+6. On the Windows 98 CD, in the \Tools\MTSutil\Rstormsn folder, double-click
+  RSTORMSN.EXE.
+
+7. Click OK.
+
+Insert the Missing Text Into the Files
+--------------------------------------
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "msn.cmp msn.cms" (without the quotation marks), and
+  then click Find Now.
+
+3. To open the Msn.cms file, click once to select it, hold down the left SHIFT
+  key, and then right-click the file.
+
+4. Click Open With.
+
+5. In the Open With dialog box, click Notepad, verify that the Always use this
+  program to open this file check box is cleared, and then click OK.
+
+6. Verify that the following information is the first line in the opened text
+  file, and if it is not, add it:
+
+  [Profile Format]
+  Version=1
+
+7. Save the changes to this file, and then repeat steps 3-6 for the Msn.cmp
+  file.
+
+If you do not want MSN installed, delete registry key: HKLM\Software\Microsoft\Connection Manager
+-------------------------------------------------------------------------------------------------
+
+Remove the AOL Tray from the statup group by following these steps:
+-------------------------------------------------------------------
+
+1. Click the Start button, then choose Programs \ Startup.
+
+2. Right-click the AOL Tray and choose Delete
+
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Click Start, point to Find, and then click Files or Folders.
+
+2. Type Reged and click Find Now.
+
+3. Double click on Regedt32.exe or Regedit.exe.
+
+4. Open the following folders in order: HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt;
+  MICROSOFT
+
+5. Delete the folder CONNECTION MANAGER
+
+6. Close the Registry editor.
+
+7. Shut down computer and restart.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 2.50 2.60 5.00 w98hemjul
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbMSNSearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250 kbMSN540
+Version           : :2.5,2.51,2.52,2.6,5.0,5.4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

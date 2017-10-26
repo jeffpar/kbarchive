@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140583: How to Configure CD-ROM Caching for Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140583: How to Configure CD-ROM Caching for Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140583/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140583/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140583/","publisher":null,"image":null,"headline":"Q140583: How to Configure CD-ROM Caching for Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140583-how-to-configure-cd-rom-caching-for-windows-95">Q140583: How to Configure CD-ROM Caching for Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140583
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1995
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to set CD-ROM caching in Windows 95 for optimal system
+performance.
+
+MORE INFORMATION
+================
+
+Use the steps below to configure CD-ROM caching:
+
+Determine Driver Type
+---------------------
+
+Determine if your computer is using protected-mode (native) Windows 95 32- bit
+CD-ROM drivers or real mode (MS-DOS) CD-ROM drivers. Caching is configured
+differently for each type of driver.
+
+To determine the type of cache configuration, do the following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double click the System icon.
+
+3. On the Performance tab, examine the Performance Status screen.
+
+  If the setting in the File System section is 32-bit, you are using 32- bit
+  CD-ROM drivers.
+
+  If the File System setting is:
+
+  Some drives are using MS-DOS compatibility, examine the area below the listed
+  items for detailed information.
+
+  If the drive letter for your CD-ROM is listed, then you are using real mode
+  drivers. If your CD-ROM letter is not listed, then you are using 32-bit
+  drivers.
+
+Use the steps below to optimize your type of cache configuration.
+
+32-Bit Caching
+--------------
+
+1. On the Performance tab in System Properties, click File System (in Advanced
+  Settings).
+
+2. Click the CD-ROM tab.
+
+3. In the Optimize Access Pattern For: section of the Setting window, select the
+  entry corresponding to your CD-ROM drive. For example, if you have a double
+  speed drive, select Double-Speed Drives.
+
+  NOTE: If you only have 4 MB of RAM or are using hardware caching, you may want
+  to select No Read-Ahead. This is the recommended setting if RAM memory is
+  needed for other uses.
+
+4. In the Supplemental Cache Size area, move the slider to the desired setting.
+  The Small setting frees up RAM for other uses, while the Large setting gives
+  the best CD-ROM performance.
+
+5. Click OK, and then click Close. If you are prompted to restart Windows, click
+  Yes.
+
+6. Edit the Autoexec.bat file and check for any references to SmartDrive
+  (Smartdrv or Smartdrv.exe).
+
+  For more information about how to accomplish this task in Windows, see your
+  Windows printed documentation or online help.
+
+  If none of your drives are using MS-DOS compatibility mode, do the following
+  to turn off Smartdrv:
+
+  - At the beginning of the line containing the Smartdrv entry, type:
+
+  REM
+
+  Follow REM with a blank space.
+
+  If any of your drives, such as your hard drive, are using MS-DOS compatibility
+  mode, you can turn off SmartDrive CD-ROM caching by adding "/u" (without the
+  quotation marks) at the end of the Smartdrv line.
+
+  For more information about the "/u" (without the quotation marks) command,
+  please see your Windows printed documentation or online Help.
+
+Caching for Drives Using MS-DOS Compatibility Mode
+--------------------------------------------------
+
+Install Microsoft SmartDrive to cache CD-ROM drives using Real Mode drivers.
+
+To install SmartDrive, do the following:
+
+1. Using a text editor such as Microsoft Notepad, edit the Autoexec.bat file and
+  add the following line if it does not already exist:
+
+     c:\windows\smartdrv.exe
+
+  NOTE: SmartDrive version 5.0 and above does not require the LoadHigh command.
+  By default, SmartDrv loads into Upper Memory if space is available.
+
+  Place this line after the line for Mscdex or Mscdex.exe
+
+2. Save the changes to Autoexec.bat, and restart Windows 95.
+
+For more information about SmartDrive, type the following at the MS-DOS prompt:
+
+  smartdrv /?
+
+-or-
+
+  help smartdrv
+
+For more information on editing Autoexec.bat, please see your Windows printed
+documentation or online Help.
+
+Troubleshooting CD-ROM Problems
+-------------------------------
+
+If you are having problems running compact disc-based programs, use the following
+caching configurations for troubleshooting purposes:
+
+- Disable all references to smartdrive or smartdrv /u in the Autoexec.bat file.
+
+- Turn off read-ahead for 32-bit CD-ROM drivers. If you are already using No
+  read-ahead, change to the setting that corresponds to your CD- ROM drive
+  (single, double, triple or quad-speed).
+
+- Turn off all third-party disk caching software.
+
+- Turn off hardware caching if the option is supported by your CD-ROM
+  controller. For more information about how to accomplish this task, see your
+  CD-ROM user's guide or contact your CD-ROM manufacturer.
+
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm kbhowto 95core 1995
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 1995
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

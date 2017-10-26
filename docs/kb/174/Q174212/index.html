@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174212: FIX: ActiveForm Returns Wrong Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174212: FIX: ActiveForm Returns Wrong Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174212/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174212/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174212/","publisher":null,"image":null,"headline":"Q174212: FIX: ActiveForm Returns Wrong Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174212-fix-activeform-returns-wrong-form">Q174212: FIX: ActiveForm Returns Wrong Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174212
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the ActiveForm property of the Screen object is queried, the wrong form is
+returned as the active form. This behavior occurs after setting the enabled
+property of a Command button on another form to False. The second form is listed
+as the active form, when the form with the calling code is actually the active
+form.
+
+RESOLUTION
+==========
+
+To work around this problem, insert the following line of code immediately after
+the code that sets the enabled property of the button:
+
+     Me.SetFocus
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+This behavior occurs only the first time the enabled property of the button is
+set to False. During subsequent attempts or if the button's enabled property is
+initially False, the problem does not occur.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new "Standard EXE" project in Visual Basic 5.0.
+
+2. Add an MDI form to the project.
+
+3. Add a standard form to the project.
+
+4. Set the MDI Child property of Form1 and Form2 to True.
+
+5. Place a Command button on Form1. Set its caption to "Disable."
+
+6. Insert the following code into the Click event of this button:
+
+        Form2.Command1.Enabled = False
+        'Me.SetFocus         'Uncomment to Workaround this Problem
+        MsgBox Screen.ActiveForm.Name
+
+7. Add a second Command button to Form1. Set its caption to "Enable."
+
+8. Insert the following code into the Click event of this button:
+
+        Form2.Command1.Enabled = True
+
+9. Add a Command button to Form2.
+
+10. Add the following code to the Load event of the MDI form:
+
+        Form1.Show
+        Form2.Show
+        MDIForm1.Arrange 1
+
+11. Run the project, and then click the button labeled "Disable." Note that the
+  message box displays "Form2" when the active form is actually Form1.
+
+12. Click the button labeled "Enable," and then click the button labeled
+  "Disable" one more time. Note that this time, "Form1" is now correctly
+  returned as the active form.
+
+Additional query words: kbVBp500bug kbVBp600fix kbVBp kbdsd kbDSupport kbVBA kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

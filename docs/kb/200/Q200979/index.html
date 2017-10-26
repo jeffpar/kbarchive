@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200979: FIX: File Corruption Occurs When Shadowed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200979: FIX: File Corruption Occurs When Shadowed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200979/","publisher":null,"image":null,"headline":"Q200979: FIX: File Corruption Occurs When Shadowed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200979-fix-file-corruption-occurs-when-shadowed">Q200979: FIX: File Corruption Occurs When Shadowed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200979
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500bug kbSSafe600fix _IK
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+File(s) in the shadow folder are corrupted.
+
+CAUSE
+=====
+
+A carriage return in the file(s) are added only as a carriage return, rather
+than as a carriage return and line feed pairs.
+
+This happens when a shadow directory is set for a project and the shadowed files
+are viewed before they are checked out and checked backed into Visual SourceSafe
+(VSS).
+
+RESOLUTION
+==========
+
+Checking the file(s) out, and then checking them back in should resolve this
+problem once it has occurred.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Visual SourceSafe 4.0, 4.0a, and
+5.0. This bug has been corrected in Visual SourceSafe 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new .txt file with a few lines of text separated by carriage
+  returns.
+
+2. Create a new project in the VSS Explorer.
+
+3. Set a working folder for the project.
+
+4. Add a file to the project.
+
+5. Close VSS Explorer.
+
+6. Run VSS Administrator.
+
+7. Select Tools-&gt;Options-&gt;Shadow Folders tab.
+
+8. Select BROWSE beside the "Set shadow folder for project:" edit box and select
+  the project created in Step 2.
+
+9. Click BROWSE beside the "Set shadow folder to:" edit box to select the
+  location for the Shadow Folder.
+
+10. Add "\test" to the end of the path in the "Name:" edit box.
+
+11. Click OK.
+
+12. Click Yes when prompted to create the new folder.
+
+13. In the options dialog box set "File Date/Time" to 'Check-In'.
+
+14. Click OK.
+
+15. Close VSS Administrator.
+
+16. Open the file in the shadow folder with a text editor. You can see an
+  undefined character where a carriage return and line feed should be.
+
+REFERENCES
+==========
+
+  Q138344 HOWTO: Set up a Shadow Dir in Visual SourceSafe Administrator
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbSSafe600fix _IK 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

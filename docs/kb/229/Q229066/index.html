@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q229066: PC WRmt: Msrmttr.dll Causes Usgeneric.scr to Return NO ANSWER | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q229066: PC WRmt: Msrmttr.dll Causes Usgeneric.scr to Return NO ANSWER" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/229/Q229066/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/229/Q229066/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/229/Q229066/","publisher":null,"image":null,"headline":"Q229066: PC WRmt: Msrmttr.dll Causes Usgeneric.scr to Return NO ANSWER","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q229066-pc-wrmt-msrmttrdll-causes-usgenericscr-to-return-no-answer">Q229066: PC WRmt: Msrmttr.dll Causes Usgeneric.scr to Return NO ANSWER</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q229066
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you replace the Msrmttr.dll from the year 2000 (Y2K) patches for MS Mail
+Remote for Windows and if you are using the Usgeneric modem script, the modem
+may no longer connect and returns a "No Answer" message.
+
+In all cases so far, the failures have occurred when using high speed modems such
+as US Robtics/3COM/Megahertz 56K PCMCIA modem cards, IBM X2 PCCard 56K PCMCIA
+modems, or IBM ThinkPad internal 56K modems.
+
+CAUSE
+=====
+
+The Usgeneric modem script was intended for basic 1200 and 2400 baud modems.
+
+WORKAROUND
+==========
+
+The above-mentioned fast modems require specialized scripts written by the modem
+manufacturer.
+
+The US Robotics/3COM/Megahertz 56K PCMCIA modem cards and the IBM X2 PCCard
+PCMCIA modems have worked correctly with the Ususrhs.scr script available from
+3COM's Web site:
+
+  http://www.3com.com/
+
+The IBM ThinkPad internal 56K modems have worked correctly with the Ibmmwave.scr
+script file available from IBM's Web site:
+
+  http://www.ibm.com/
+
+MORE INFORMATION
+================
+
+Due to various issues involving the combination of different modems, modem
+scripts and upgraded DLL files, it may be necessary after upgrading to this DLL
+file to change out your modem script. If problems start occurring after you
+upgrade to the new DLL file, please contact your modem manufacturer and obtain
+their latest modem script. For information about how to contact your modem
+manufacturer, click the appropriate article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

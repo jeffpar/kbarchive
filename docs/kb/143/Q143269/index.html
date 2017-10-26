@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143269/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143269/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143269/","publisher":null,"image":null,"headline":"Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143269-3d-movie-maker-windows-nt-351-requires-administrative-rights">Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143269
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0; winnt:3.51
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On computers running Windows NT 3.51, 3D Movie Maker runs only if you have
+Administrative privileges. This is a confirmed problem with 3D Movie Maker.
+
+To run 3D Movie Maker with only User privileges, you need to edit the Windows NT
+registry. This article tells how to edit the registry.
+
+MORE INFORMATION
+================
+
+To manually edit the registry, do the following:
+
+1. Run regedt32.exe, located in the Windows directory.
+
+2. Select HKEY_LOCAL_MACHINE.
+
+3. Select the /Software/Microsoft/Microsoft Kids/3D Movie Maker key.
+
+4. On the Security menu, click Permissions.
+
+5. In the Registry Key Permissions dialog box, select everyone on the list of
+  names.
+
+6. Change the type of access setting to Full Control.
+
+7. Make sure Replace Permission On Existing Subkeys is selected.
+
+8. Click OK. Close the Registry Editor.
+
+After following these steps, you should be able, as a User or Power User, to run
+3D Movie Maker the next time you log in.
+
+NOTE: This behavior does not exist in Microsoft Nickelodeon 3D Movie Maker for
+Windows, version 1.0.
+
+Additional query words: 1.00 kbhowto kids mczee kbmm director animated movies melanie 3-d three dimensional new technology nt351 3dmm winnt
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbZNotKeyword kb3dMovieMaker
+Version           : WINDOWS:1.0; winnt:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

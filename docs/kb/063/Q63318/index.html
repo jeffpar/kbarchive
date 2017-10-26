@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63318/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63318/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63318/","publisher":null,"image":null,"headline":"Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63318-bug-pwb-print-does-not-put-crlf-at-eol-if-text-selected">Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63318
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the Programmer's WorkBench (PWB) version 1.0 or 1.1, when a region of text
+is selected and the Print function is invoked, the resulting output contains
+linefeed characters (0x0A) at the end of each line, rather than a carriage
+return-linefeed (&lt;CR&gt;&lt;LF&gt;) combination (0x0D and 0x0A).
+
+Some printer drivers do not recognize this as a valid end-of-line (EOL) character
+and do not print correctly.
+
+RESOLUTION
+==========
+
+The workaround for this problem is to write a program that translates each 0x0A
+found in the output file to the bytes 0x0D and 0x0A, or use a printer driver
+that understands this type of file. In fact, most printers have an escape
+sequence or DIP switch to enable it to recognize this type of file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB versions 1.0 and 1.1. We are
+researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+To reproduce this problem, open a file that contains the &lt;CR&gt;&lt;LF&gt;
+combination at the end of each line. Highlight a region of text in the file and
+from the File menu choose Print. Tab to the second field and type in the
+following:
+
+  " copy %s test.txt" (without the quotation marks)
+
+This will copy the region of selected to the file TEST.TXT. Using a standard hex
+file viewer, you can see that the end of a line is denoted by a single 0A. If
+you look at the original file using the hex viewer, it will contain 0A 0D at the
+end of each line.
+
+Programmer's WorkBench will recognize this type of file (with a single 0A at each
+end of line) and display it correctly if you try to open it within PWB, but many
+printer drivers do not understand this type of file.
+
+
+Additional query words: 1.00 1.10 buglist1.00 buglist1.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

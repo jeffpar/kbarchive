@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81708: HOWTO: Create Applications that Task Manager Does Not Tile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81708: HOWTO: Create Applications that Task Manager Does Not Tile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81708/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81708/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81708/","publisher":null,"image":null,"headline":"Q81708: HOWTO: Create Applications that Task Manager Does Not Tile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81708-howto-create-applications-that-task-manager-does-not-tile">Q81708: HOWTO: Create Applications that Task Manager Does Not Tile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81708
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKPlatform kbGrpDSUser kbWndw
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A variety of applications that provide various types of information have been
+developed for the Windows graphical environment. Depending on the amount of
+information that the application presents, an application icon may provide
+enough screen space to show the information. The FREEMEM program in Chapter 5 of
+Charles Petzold's book "Programming Windows 3" (Microsoft Press) demonstrates
+presenting status data on an icon.
+
+When an application has more data than can be readily represented on an icon, the
+user will often size the application to provide just the information necessary,
+and place the application's window in a convenient place on the screen. However,
+in this situation, if the user selects Cascade or Tile from the Task Manager
+window to arrange the active applications, the status window will probably
+change size and position on the screen.
+
+This article presents a technique that an application can use to prevent itself
+from being cascaded or tiled by the Task Manager.
+
+MORE INFORMATION
+================
+
+To prevent an application from changing position when the Task Manager
+rearranges windows, perform the following four steps:
+
+1. Create a minimum window procedure, called DummyWndProc, with the following
+  code:
+
+        long FAR PASCAL DummyWndProc(HWND hwnd, WORD message,
+                                     WORD wParam, LONG lParam)
+        {
+           return DefWindowProc(hwnd, message, wParam, lParam);
+        }
+
+2. Register a minimum window class, DummyClass, that uses DummyWndProc as the
+  class procedure. Specify the application's icon as the class icon.
+
+3. Create an invisible pop-up window of class DummyClass. Specify the
+  application's name for the window caption text. Optionally, the coordinates
+  for this invisible window can specify a location off the screen.
+
+4. In the CreateWindow call for the top-level visible window, specify the window
+  from step 3 as the hwndParent parameter.
+
+There is one caveat to using this method. If an application uses PostMessage with
+the hwnd parameter set to -1 to post a message to all applications, the
+invisible pop-up window will receive the message. If the application depends on
+any globally posted message, it is necessary to modify the DummyWndProc code
+above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbGrpDSUser kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

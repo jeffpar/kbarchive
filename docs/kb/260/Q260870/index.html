@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260870/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260870/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260870/","publisher":null,"image":null,"headline":"Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260870-restrict-anonymous-prevents-discovery-of-windows-nt-40-domain">Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260870
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Discovery of a Microsoft Windows NT domain is performed, it may not
+work. Also, the operator's log may contain the following error messages:
+
+  Failed to list users for domain &lt;domain name&gt;
+  Error: Logon failure: unknown user name or bad password.
+
+  Failed to enumerate groups for domain &lt;domain name&gt;.
+  Error: Logon failure: unknown user name or bad password.
+  Discovered 0 groups
+  Failed to list local groups for domain &lt;domain name&gt;.
+  Error: Access is denied.
+
+CAUSE
+=====
+
+This issue can occur if the primary domain controller (PDC) of the target
+Windows NT 4.0 domain has the RestrictAnonymous registry parameter enabled, and
+the MMS service is running in the context of the local system account.
+
+RESOLUTION
+==========
+
+To resolve this issue if in the same domain or a domain trusted by the Windows
+NT 4.0 domain, start the service by using an account that is a member of the
+administrators group in the domain, or run the Viaserver process as a console
+program from the command line while you are logged on as a member of the
+administrators group.
+
+To work around this issue in the event that the MMS server is not a member of the
+Windows NT 4.0 domain or a trusted domain, log on to the computer that is
+running MMS by using a parallel local or domain account that uses the same user
+name and password as an account in the administrators group on the Windows NT
+4.0 domain and start the Viaserver process as a console program from the command
+line.
+
+MORE INFORMATION
+================
+
+When the local system account is used by the MMS service, it attempts to make an
+anonymous connection to the target PDC to enumerate users and groups in the
+Windows NT 4.0 domain.
+
+The list of users and groups cannot be obtained through an anonymous connection
+when the RestrictAnonymous setting is enabled. For additional information about
+the restriction placed on anonymous users, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q143474 Restricting Information Available to Anonymous Logon Users
+
+Additional query words: via 2.10 2.20 4.00
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190965: PRB: IntelliSense Limitations with #define Macros | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190965: PRB: IntelliSense Limitations with #define Macros" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190965/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190965/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190965/","publisher":null,"image":null,"headline":"Q190965: PRB: IntelliSense Limitations with #define Macros","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190965-prb-intellisense-limitations-with-define-macros">Q190965: PRB: IntelliSense Limitations with #define Macros</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190965
+Product(s): Microsoft C Compiler
+Version(s): WINNT:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When working with macro definitions in Microsoft Visual C++, the following two
+IntelliSense limitations occur:
+
+- IntelliSense does not dynamically resolve macro definitions.
+
+- Using #ifdef or #ifndef to define functions produces unexpected results.
+
+STATUS
+======
+
+Microsoft is researching these problems and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+IntelliSense Does Not Dynamically Resolve Macro Definitions
+-----------------------------------------------------------
+
+Visual C++ 6.0 does not preprocess any macros while code is being edited. Because
+of this, IntelliSense does not appear as it would if the macro were not used.
+For example, the following TEST_FUNC macro aliases the Test() function:
+
+     #define TEST_FUNC Test
+     void Test(char *pszName);
+     void Test(char *pszName){ printf("Name = %s", pszName); }
+
+In another part of the code, typing "Test" followed by an open parenthesis
+displays the Parameter Info ToolTip for the Test() function. However, typing
+"TEST_FUNC" followed by an open parenthesis does not activate IntelliSense, even
+though it will become the Test() function when it is compiled. This same
+limitation applies to many other uses of macros, because IntelliSense does not
+dynamically resolve macros to known identifiers.
+
+This limitation can also cause problems with standard functions and structures.
+Although most of the standard Win32 functions are handled properly, some header
+files use macros to alias functions and structures. This can result in
+IntelliSense not recognizing the macro. To verify whether this may be the cause
+of the problem, search for the structure or function in the VC98\Include
+directory. If the documented function or structure is actually a macro, this
+could explain why IntelliSense is not recognizing it.
+
+
+Using #ifdef or #ifndef to Define Functions Produces Unexpected Results
+-----------------------------------------------------------------------
+
+When functions are conditionally defined using #ifdef or #ifndef, IntelliSense
+first determines whether the constant is defined in the project. If the macro is
+defined, IntelliSense displays information on the correct function. If the macro
+is undefined in the project, IntelliSense displays information for the first
+function, regardless of whether #ifdef or #ifndef is used. IntelliSense can not
+predict whether a constant will be defined, because constants can be set with
+compiler switches. Do not depend on IntelliSense to always provide the
+appropriate information when code is conditionally included in this way.
+
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q153284 Limitations of IntelliSense in Visual C++ 6.0
+
+"About Automatic Statement Completion;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, Overview: Text Editor, About Automatic
+Statement Completion.
+
+"Automatically Completing Statements;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, How do I ... Topics: Text Editor,
+Automatically completing Statements.
+
+Additional query words: kbvc600
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINNT:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

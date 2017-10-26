@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145889: INFO: Why Floating Point Numbers May Lose Precision | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145889: INFO: Why Floating Point Numbers May Lose Precision" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145889/","publisher":null,"image":null,"headline":"Q145889: INFO: Why Floating Point Numbers May Lose Precision","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145889-info-why-floating-point-numbers-may-lose-precision">Q145889: INFO: Why Floating Point Numbers May Lose Precision</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145889
+Product(s): Microsoft C Compiler
+Version(s): windows:1.00,1.50; winnt:1.00,2.00,4.00
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbGenInfo kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC220 kbVC40
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 2.1, 2.2, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+The information in this article is included in the documentation starting
+with Visual C++ 5.0. Look there for future revisions.
+
+SUMMARY
+=======
+
+Floating point decimal values generally do not have an exact binary
+representation. This is a side effect of how the CPU represents floating point
+data. For this reason, you may experience some loss of precision, and some
+floating point operations may produce unexpected results.
+
+This behavior is the end result of one of the following:
+
+- The binary representation of the decimal number may not be exact.
+
+-or-
+
+- There is a type mismatch between the numbers used (for example, mixing float
+  and double).
+
+To resolve the behavior, you can either ensure that the value is greater or less
+than what you need, or you can get and use a Binary Coded Decimal (BCD) library
+that will maintain the precision.
+
+MORE INFORMATION
+================
+
+Microsoft uses the Institute of Electrical and Electronics Engineers, Inc.
+(IEEE) floating point format for floating point number representation. For
+information about the actual binary representation of floating point values in a
+CPU and how precision and accuracy are affected in a floating point calculation,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q36068 INFO: IEEE Floating-Point Representation and MS Languages
+
+  Q125056 INFO: Precision and Accuracy in Floating-Point Calculations
+
+Sample Code
+-----------
+
+     /* Compile options needed: none
+        Value of c is printed with a decimal point precision of 10 and
+        6 (printf rounded value by default) to show the difference
+     */ 
+
+     #include &lt;stdio.h&gt;
+     #define EPSILON 0.0001   // Define your own tolerance.
+     #define FLOAT_EQ(x,v) (((v - EPSILON) &lt; x) &amp;&amp; (x &lt;( v + EPSILON)))
+
+     void main()
+     {
+      float a,b,c
+      a=1.345f;
+      b=1.123f;
+      c=a+b;
+
+     //if (FLOAT_EQ(c, 2.468))        // Remove comment for correct result.
+
+      if (c == 2.468)                 //Comment this line for correct result.
+       printf("They are equal\n");
+      else
+       printf("They are not equal!!The value of c is %13.10f,or %f",c,c);
+     }
+
+The Output Result
+-----------------
+
+They are not equal. The value of c is 2.4679999352 or 2.468000.
+
+For EPSILON, you may use the constants FLT_EPSILON defined for float as
+1.192092896e-07F or DBL_EPSILON defined for double as 2.2204460492503131 e-016.
+You need to include float.h for these constants. These constants are defined as
+the smallest positive number x, such that x+1.0 is not equal to 1.0. Because
+this is a very small number it is advisable that you employ user-defined
+tolerance for calculations involving very large numbers.
+
+REFERENCES
+==========
+
+For information on other predefined constants, please see:
+
+  Microsoft Developer Network: C Floating-Point Constants Microsoft
+
+Additional query words: 1.00 1.50 2.00 4.00 8.00 8.00c 9.00 9.10 10.00 floating point
+
+======================================================================
+Keywords          : kbcode kbCompiler kbGenInfo kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC220 kbVC400 kbVC600 kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC220 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC152
+Version           : windows:1.00,1.50; winnt:1.00,2.00,4.00
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

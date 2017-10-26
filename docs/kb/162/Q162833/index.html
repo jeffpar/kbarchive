@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162833/","publisher":null,"image":null,"headline":"Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162833-xfor-event-283-may-occur-when-running-the-migration-wizard">Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162833
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5kbbuglist
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Microsoft Exchange Migration Wizard to migrate accounts to a
+Microsoft Exchange Server computer, the following error may be generated in the
+Application event log
+
+  Event ID: 283
+  Source: MSExchangeMIGDS
+  Description: Could not remove object &lt;UserID&gt; because the directory
+  service reported the following error: Changes cannot be written to
+  this directory object. Try connecting to a Microsoft Exchange
+  Server computer in the same site as this object.
+
+where &lt;UserID&gt; is the ID of a user who already exists on the Microsoft
+Exchange server.
+
+MORE INFORMATION
+================
+
+This error may occur if you have insufficient rights or permissions to the
+Microsoft Exchange Directory. In this case, make sure that you are logged into
+the Windows NT domain as a user with sufficient access to the Microsoft Exchange
+Directory.
+
+This error may also occur if an existing mailbox or custom recipient is homed on
+one server in a site and an attempt is made to migrate an account to a server in
+a different site. Microsoft Exchange will attempt to remove the existing
+recipient from the target server and replace it with a new mailbox for the
+migrated account. Since the recipient does not actually exist on the target
+server (it is homed on another server in another site), it cannot be removed. To
+migrate these users, it will be necessary to remove the existing recipients from
+their home server. To do this, perform the following steps:
+
+1. Log on to the Windows NT domain using the Microsoft Exchange Service Account
+  or an account that has administrative permissions for the Microsoft Exchange
+  Server.
+
+2. Use the Microsoft Exchange Server Administrator program to remove the custom
+  recipient or mailbox object for the user that you are trying to migrate from
+  the appropriate recipients container.
+
+3. Allow time for directory replication to occur between the recipient's home
+  server and the target server. This will remove the user from the Global
+  Address List (GAL) of the target server. If you wish to force directory
+  replication to occur, select the Update Now button located on the General tab
+  of the target server's Directory Service Properties dialog.
+
+4. Run the Microsoft Exchange Migration Wizard again.
+
+Additional query words: XADM
+
+======================================================================
+Keywords          : kbusage exc4 exc5 kbbuglist
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157561: STL Sample for the Predicate Version of the merge Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157561: STL Sample for the Predicate Version of the merge Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157561/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157561/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157561/","publisher":null,"image":null,"headline":"Q157561: STL Sample for the Predicate Version of the merge Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157561-stl-sample-for-the-predicate-version-of-the-merge-function">Q157561: STL Sample for the Predicate Version of the merge Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157561
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): _IK
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the predicate version of the merge
+STL function in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;algorithm&gt;
+
+Prototype
+---------
+
+     template&lt;class InputIterator1,
+              class InputIterator2,
+              class OutputIterator
+              class Compare&gt; inline
+     OutputIterator merge( InputIterator1 first1,
+                           InputIterator1 last1,
+                           InputIterator2 first2,
+                           InputIterator2 last2
+                           OutputIterator result,
+                           Compare compare )
+
+NOTE: The class/parameter names in the prototype do not match the original
+version in the header file. They have been modified to improve readability.
+
+Description
+-----------
+
+The merge algorithm merges two sorted sequences: [first1..last1) and
+[first2..last2) into a single sorted sequence starting at result.
+
+This version assumes that the ranges [first1..last1) and [first2..last2) are
+sorted using compare function. If both ranges contain equal values, the value
+from the first range will be stored first.
+
+The result of merging overlapping ranges is undefined.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // merge.cpp : Illustrates how to use predicate version of the merge
+  //             function.
+  // 
+  // Functions:
+  // 
+  //    merge : Merge two sorted sequences
+  //            into a single sorted list.
+  // 
+  // Written by Kalindi Sanghrajka
+  // of Microsoft Product Support Services,
+  // Software Core Developer Support.
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  // disable warning C4786: symbol greater than 255 character,
+  // okay to ignore
+  #pragma warning(disable: 4786)
+
+  #include &lt;iostream&gt;
+  #include &lt;algorithm&gt;
+  #include &lt;vector&gt;
+  #include &lt;list&gt;
+  #include &lt;deque&gt;
+  using namespace std;
+
+  void main()
+  {
+      const int MAX_ELEMENTS = 8 ;
+
+      // Define a template class vector of int
+      typedef vector&lt;int, allocator&lt;int&gt; &gt; IntVector ;
+
+      //Define an iterator for template class vector of ints
+      typedef IntVector::iterator IntVectorIt ;
+
+      IntVector NumbersVector(MAX_ELEMENTS) ;
+
+      IntVectorIt startv, endv, itv ;
+
+      // Define a template class list of int
+      typedef list&lt;int, allocator&lt;int&gt; &gt; IntList ;
+
+      //Define an iterator for template class list of ints
+      typedef IntList::iterator IntListIt ;
+
+      IntList NumbersList ;
+
+      IntListIt first, last, itl ;
+
+      // Define a template class deque of int
+      typedef deque&lt;int, allocator&lt;int&gt; &gt; IntDeque ;
+
+      //Define an iterator for template class deque of ints
+      typedef IntDeque::iterator IntDequeIt ;
+
+      IntDeque NumbersDeque(2 * MAX_ELEMENTS) ;
+
+      IntDequeIt itd ;
+
+      // Initialize vector NumbersVector
+      NumbersVector[0] = 4 ;
+      NumbersVector[1] = 10;
+      NumbersVector[2] = 70 ;
+      NumbersVector[3] = 10 ;
+      NumbersVector[4] = 30 ;
+      NumbersVector[5] = 69 ;
+      NumbersVector[6] = 96 ;
+      NumbersVector[7] = 100;
+
+      startv = NumbersVector.begin() ;   // location of first
+                                         // element of NumbersVector
+
+      endv = NumbersVector.end() ;  // one past the location
+                                    // last element of NumbersVector
+
+      // sort NumbersVector, merge requires the sequences
+      // to be sorted
+      sort(startv, endv, less&lt;int&gt;()) ;
+
+      // print content of NumbersVector
+      cout &lt;&lt; "NumbersVector { " ;
+      for(itv = startv; itv != endv; itv++)
+          cout &lt;&lt; *itv &lt;&lt; " " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+
+      // Initialize vector NumbersList
+      for(int i = 0; i &lt; MAX_ELEMENTS; i++)
+          NumbersList.push_back(i) ;
+
+      first = NumbersList.begin() ;   // location of first
+                                       // element of NumbersList
+
+      last = NumbersList.end() ;  // one past the location
+                                  // last element of NumbersList
+
+      // print content of NumbersList
+      cout &lt;&lt; "NumbersList { " ;
+      for(itl = first; itl != last; itl++)
+          cout &lt;&lt; *itl &lt;&lt; " " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+
+      // merge the elements of NumbersVector
+      // and NumbersList and place the
+      // results in NumbersDeque
+      merge(startv, endv, first, last, NumbersDeque.begin(), less&lt;int&gt;()) ;
+
+      cout &lt;&lt; "After calling merge\n" &lt;&lt; endl ;
+
+      // print content of NumbersDeque
+      cout &lt;&lt; "NumbersDeque { " ;
+      for(itd = NumbersDeque.begin();
+          itd != NumbersDeque.end(); itd++)
+          cout &lt;&lt; *itd &lt;&lt; " " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+  }
+  Program Output is:
+
+  NumbersVector { 4 10 10 30 69 70 96 100  }
+
+  NumbersList { 0 1 2 3 4 5 6 7  }
+
+  After calling merge
+
+  NumbersDeque { 0 1 2 3 4 4 5 6 7 10 10 30 69 70 96 100  }
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL merge
+
+======================================================================
+Keywords          : _IK 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

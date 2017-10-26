@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89970/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89970/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89970/","publisher":null,"image":null,"headline":"Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89970-how-to-determine-interrupt-io-and-dma-channel-conflicts">Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89970
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article covers the valid ranges and some procedures for determining the
+right I/O address, interrupt, and direct memory access (DMA) channel for the
+Windows Sound System card.
+
+MORE INFORMATION
+================
+
+Choosing the Correct I/O Address
+--------------------------------
+
+The Windows Sound System card occupies two I/O address ranges: one is for the
+Yamaha OPL3 synthesis chip, and the other is for the Codec chip. Address range
+0x388- 0x38b is always reserved for the OPL3 chip, whereas the Codec chip uses
+one of the following ranges (depending on the jumper settings on the board):
+
+  0x530-0x537
+  0x604-0x60c
+  0xe80-0xe87
+  0xf40-0xf47
+
+The default I/O address is 0x530. To configure the I/O address after Windows
+Sound System is installed:
+
+1. Run Control Panel.
+
+2. Choose the Drivers icon.
+
+3. Select Microsoft Windows Sound System.
+
+4. Choose the Setup button.
+
+If you see one or more of the following symptoms, there is likely an I/O address
+conflict with the Windows Sound System and another card:
+
+- The Windows Sound System driver displays an error saying it can't find a
+  card.
+
+- The Windows Sound System driver displays an error saying that the card is not
+  responding correctly.
+
+- FM synthesis does not work correctly.
+
+- Windows Sound System does not play any sounds.
+
+- Another card in your system does not work.
+
+- Windows does not start.
+
+- Windows stops responding (hangs).
+
+- Your computer does not start.
+
+If the I/O port you have chosen is not working, the best way to find a new I/O
+port address is to remove the Windows Sound System board and rerun Setup using
+the following procedure. Setup looks for available I/O ports, and recommends the
+correct jumper settings. While Setup can detect available I/O port addresses, it
+may misjudge. In this case, you should consult the documentation for your other
+cards, or experiment with jumper settings.
+
+To test for the correct I/O port, do the following:
+
+1. Turn the computer off and remove the Windows Sound System board.
+
+2. Restart the computer and start Windows.
+
+3. Run Windows Sound System Setup.
+
+4. Choose Continue twice to get to the Microsoft Windows Sound System Setup
+  dialog box.
+
+5. Choose the Board button.
+
+6. Choose the Auto button.
+
+7. Note the jumper settings Setup suggests.
+
+8. Choose Continue, then exit Windows.
+
+9. Turn off the computer and change the jumper settings as suggested by Setup.
+
+Choosing the Correct Interrupt
+------------------------------
+
+The Windows Sound System board uses Interrupts 7, 9, 10, and 11. Interrupts 10
+and 11 are available only if the board is plugged into a 16-bit slot. Interrupt
+11 is the default.
+
+If you see one or more of the following symptoms, there is likely an IRQ
+conflict:
+
+- The first .25 seconds of sound repeats continuously.
+
+- The other card does not function correctly.
+
+- Windows stops responding (hangs).
+
+The only way to find a new interrupt is to experiment. Sometimes the Windows
+Sound System card is able to positively identify an occupied IRQ and can prevent
+you from selecting this interrupt. Some cards, notably network cards, fool the
+Windows Sound System detection, and it can't tell what interrupt the other card
+is using.
+
+Try the following procedure:
+
+1. Restart the computer, but do NOT start Windows.
+
+2. Insert Windows Sound System Disk #1 into your floppy disk drive.
+
+3. From the MS-DOS prompt, run the Windows Sound System Setup program by typing
+  the following:
+
+  &lt;drive&gt;:setup
+
+  where &lt;drive&gt; is the letter of your floppy disk drive.
+
+4. Choose OK and follow the instructions on your screen.
+
+5. When Setup prompts you, remove the Windows Sound System driver.
+
+6. When Windows and Setup run again (automatically), choose Custom Board Setup.
+
+7. Change the IRQ setting.
+
+8. Restart Windows to activate the Windows Sound System driver.
+
+Choosing the Correct DMA Channel
+--------------------------------
+
+The Windows Sound System board uses DMA channels 0, 1, and 3. DMA channel 0 is
+only available if the card is plugged into a 16-bit slot, and is the default.
+
+If you see one or more of the following symptoms, there is likely a DMA
+conflict:
+
+- The sound stops playing as soon as another device uses the DMA channel. For
+  example, if there is a DMA conflict with a disk drive, then the sound stops
+  as soon as the drive is accessed. The sound may continue playing but play the
+  wrong data.
+
+- The other card won't function correctly.
+
+- Windows stops responding (hangs).
+
+The only way to find a new DMA channel is by experimentation or examination of
+the hardware interrupts.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

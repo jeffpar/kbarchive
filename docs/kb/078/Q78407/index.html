@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78407/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78407/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78407/","publisher":null,"image":null,"headline":"Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78407-wyse-dos-33-partitions-incompatible-with-ms-dos-5x-and-6x">Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78407
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When upgrading to MS-DOS 5.0 or later from Wyse DOS version 3.3 or earlier, the
+following message may be displayed:
+
+  Incompatible Drive or Device Driver
+
+CAUSE
+=====
+
+If this error occurs, the partitions created by Wyse DOS must be deleted from
+the hard disk and the MS-DOS 5 or later Upgrade must be installed manually.
+
+MORE INFORMATION
+================
+
+Partitions created by Wyse DOS 3.3 or earlier are not compatible with MS-DOS 5.0
+because of the logical sectoring. Some original equipment manufacturers (OEMs)
+modified their adaptations of MS-DOS to provide logical drives larger than 32 MB
+in versions of MS-DOS earlier than version 4.0. This was usually implemented by
+using a sector size larger than the standard value of 512 bytes. This is called
+"logical sectoring" because the sector size of the drive is a logical value;
+that is, it is dependent on the value in the BIOS parameter block of the drive
+for bytes per sector. Microsoft MS-DOS versions 4.0 and later do NOT support
+this logical sectoring on hard drives. A sector size of 512 bytes per sector is
+assumed on all hard drives.
+
+For more information on repartitioning the hard disk, see Chapter 4 of the
+version 5.0 "Microsoft MS-DOS Getting Started" guide, or query on the following
+words:
+
+  partition and format
+
+For more information on manual installation, query on the following words:
+
+  manual and install
+
+According to Wyse, Wyse DOS 5.0 is not different from MS-DOS 5.0; it also will
+not recognize partitions created by Wyse DOS 3.3.
+
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 3.30 5.00 5.00a 6.00 6.20 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

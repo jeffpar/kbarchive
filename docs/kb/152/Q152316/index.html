@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152316/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152316/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152316/","publisher":null,"image":null,"headline":"Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152316-condocexe-extract-containerdocument-info-with-mfc-dao">Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152316
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbfile kbsample kbDAOsearch kbDatabase kbMFC kbODBC kbVC
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MFC does not currently provide methods for extracting container and document
+information from DAO collections. The sample, CONDOC.EXE demonstrates how to
+implement this extraction using MFC DAO objects and, in particular, demonstrates
+using DAO OLE interfaces not directly available from the MFC DAO classes.
+
+Containers provide an application-independent way for an application to store
+objects in a database. For example, Microsoft Access uses separate containers to
+store forms, reports, macros, and modules. This is in a format native only to
+Access. However, the code below shows how to see which containers are stored in
+an Access database.
+
+Documents are used to store a specific instance of an application-specific object
+within a container, such as a form, a report, etc. A container can have more
+than one document collection. To repeat, Microsoft Access documents and
+containers are in a format native to Access and not available programatically
+from other products except through OLE Automation using Access itself.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Condoc.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+NOTE: Use the -d option when running CONDOC.EXE to decompress the file and
+recreate the proper directory structure.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+The following code demonstrates how to extract Container and Document information
+and store it in a Tree View control:
+
+     // Command handler which performs the pertinent operations
+     ///////////////////////////////////////////////////////////////////// 
+     // 
+     void CCONDOCView::OnGetinfoOpenMDB()
+     {
+         // Prepare the open file dialog
+         static char BASED_CODE szFilter[] = _
+                               T( "Access Database Files  (*.mdb) | *.mdb" );
+
+         CFileDialog dlg(TRUE, "mdb", NULL,
+                         OFN_HIDEREADONLY| OFN_OVERWRITEPROMPT, szFilter);
+
+         // To be retrieved by the open file dialog
+         CString strFile;
+
+         // open file dialog
+         if(dlg.DoModal() == IDOK)
+         {
+             strFile = dlg.m_ofn.lpstrFile;
+
+             if(strFile.Right(3).CompareNoCase("mdb") // verify extension
+             {
+                 AfxMessageBox("File Extension error");
+                 return;
+             }
+         }
+
+         // you will display the info in a tree control
+         CTreeCtrl &amp;tree = GetTreeCtrl();
+
+         // the root of all items!
+         HTREEITEM itemDatabase =    tree.InsertItem(
+                                    dlg.m_ofn.lpstrFile );
+
+         // An MFC DAO object
+         CDaoDatabase db;
+
+         // straight DAO interface pointer variables
+         ConDoctainers *pContainers=NULL;
+         ConDoctainer* pCon=NULL;
+         DAODocuments* pDocuments=NULL;
+         DAODocument* pDoc=NULL;
+
+         // To be used for iterating through the collections
+         short count;
+         short doccount;
+
+         // open the .MDB
+         try
+         {
+             db.Open( strFile );
+         }
+         catch( CDaoException* e )
+         {
+             AfxMessageBox( e-&gt;m_pErrorInfo-&gt;m_strDescription );
+             return;
+         }
+
+         // Using the DAODatabase interface pointer method contained
+         // by the MFC/DAO class CDaoDatabase, you retrieve the interface's
+         // set of collections.
+         if( FAILED( db.m_pDAODatabase-&gt;get_Containers( &amp;pContainers ) ) )
+         {
+             AfxMessageBox( "Collection not found" );
+             db.Close();
+             return;
+         }
+
+         // Once you have the set of collections, you iterate thru each
+         // individual collection, display some of its attributes,
+         // then get the document collection on the container,
+         // and iterate thru the individual documents, displaying some
+         // of the attributes of the documents.
+         // See the dbdao.h in the DAOSDK\INCLUDE for more information
+
+         try
+         {
+             // get the count property of the containers collection
+             pContainers-&gt;get_Count( &amp;count );
+
+             HTREEITEM itemContainers = tree.InsertItem( _T( "Containers" )
+                                                           , itemDatabase );
+
+             // iterate thru the containers
+             while( --count &gt; 0 )
+             {
+                 // get an individual container and iterate thru its
+                 //attributes
+                 pContainers-&gt;get_Item( COleVariant( count, VT_I2 ),
+                                                            &amp;pCon );
+                 BSTR bstr=NULL;
+
+                 pCon-&gt;get_Name( &amp;bstr );
+                 CString strName( ( LPCTSTR ) bstr );
+                 HTREEITEM itemName = tree.InsertItem( strName,
+                                                   itemContainers );
+
+                 pCon-&gt;get_Owner( &amp;bstr );
+                 CString strOwner(_T("Owner: ") );
+                 strOwner += (LPCTSTR) bstr;
+                 HTREEITEM itemOwner = tree.InsertItem( strOwner,
+                                                      itemName );
+
+                 pCon-&gt;get_UserName( &amp;bstr );
+                 CString strUserName(_T("User Name: ") );
+                 strUserName += (LPCTSTR) bstr;
+                 HTREEITEM itemUserName = tree.InsertItem( strUserName,
+                                                             itemName );
+
+                 // Now get the documents collection
+                 if( FAILED ( pCon-&gt;get_Documents( &amp;pDocuments ) ) )
+                 {
+                     AfxMessageBox( "Collection not found" );
+                     db.Close();
+                     return;
+                 }
+
+                 // Now get the number of documents contained in the
+                 // container
+                 pDocuments-&gt;get_Count( &amp;doccount );
+                 HTREEITEM itemDocuments = tree.InsertItem(
+                                             _T( "Documents"), itemName );
+
+                 // iterate thru the documents
+                 while( --doccount &gt; 0 )
+                 {
+                     // get an individual document and iterate thru
+                     // some of its attributes.
+                     pDocuments-&gt;get_Item( COleVariant( doccount, VT_I2 ),
+                                                                  &amp;pDoc );
+
+                     pDoc-&gt;get_Name( &amp;bstr );
+                     CString strDocName( ( LPCTSTR ) bstr );
+                     HTREEITEM itemDocName = tree.InsertItem( strDocName,
+                                                         itemDocuments );
+
+                     pDoc-&gt;get_Owner( &amp;bstr );
+                     CString strDocOwner(_T("Owner: ") );
+                     strDocOwner += (LPCTSTR) bstr;
+                     tree.InsertItem( strDocOwner, itemDocName );
+
+                     pCon-&gt;get_UserName( &amp;bstr );
+                     CString strDocUserName(_T("User Name: ") );
+                     strDocUserName += (LPCTSTR) bstr;
+                     tree.InsertItem( strDocUserName, itemDocName );
+                 }
+             }
+         }
+         catch( CDaoException*  e)
+         {
+             AfxMessageBox( e-&gt;m_pErrorInfo-&gt;m_strDescription );
+             db.Close();
+             return;
+         }
+         db.Close();
+     }
+     ///////////////////////////////////////////////////////////////////// 
+     // END OF SAMPLE CODE
+
+REFERENCES
+==========
+
+Microsoft Jet Database Engine Programmer's Guide, ISBN #: 1-55615-877-7.
+
+Additional query words: 4.00 4.10 4.20 prop
+
+======================================================================
+Keywords          : kbcode kbfile kbsample kbDAOsearch kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

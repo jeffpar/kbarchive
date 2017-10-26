@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190124: PRB: Can Not Create temp Table Using ODBCdirect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190124: PRB: Can Not Create temp Table Using ODBCdirect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190124/","publisher":null,"image":null,"headline":"Q190124: PRB: Can Not Create temp Table Using ODBCdirect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190124-prb-can-not-create-temp-table-using-odbcdirect">Q190124: PRB: Can Not Create temp Table Using ODBCdirect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190124
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to create a temporary table(for example, #temp) with ODBCdirect,
+you receive no indication that the temporary table was created and no errors are
+reported.
+
+CAUSE
+=====
+
+The temporary table is created but as a result of its scope, the table appears
+not to be created. The default execution option for Connection and QueryDef
+statements is to run as a prepared statement. When the statement is executed as
+a prepared statement, the SQLPrepare ODBC API function is called and a temporary
+stored procedure is created in which the statement executes. As a result of the
+temporary stored procedure execution, the temporary table is destroyed as the
+stored procedure terminates. Thus, the scope of local temporary tables is the
+transaction space or stored procedure in which they were created. SQLServer
+Books Online contains a detailed discussion of the scopy of local and global
+temporary tables. To reproduce the problem, refer to the code sample contained
+in the MORE INFORMATION section of this article.
+
+RESOLUTION
+==========
+
+If you need to refer to a temporary table created with ODBCdirect, send the SQL
+statement in one transaction statement or use the &lt;dbExecDirect&gt; option
+with ODBCDirect Connection and QueryDef objects. For example:
+
+1. Create an ODBC DSN called &lt;Pubs&gt; with the ODBC32 administrator.
+
+2. Open Visual Basic and create a new Standard.exe project.
+
+3. On the Project menu, click References, and select the Microsoft DAO 3.5x
+  Object Library.
+
+4. In the &lt;Form-Load&gt; event, paste and run the following code:
+
+        Dim ws As Workspace
+        Dim cn As Connection
+        Dim strConnect as string
+        Dim strSQL as string
+
+        Set ws = DBEngine.CreateWorkspace("", "", "", dbUseODBC)
+        Set cn = ws.OpenConnection("", , ,
+                 "ODBC;DSN=Pubs;Database=Pubs;UID=sa;PWD=")
+
+        strSQL = "CREATE TABLE #test (field1 VARCHAR(20) NULL)" &amp; vbCrLf &amp; _
+           "CREATE TABLE TestTemp(field1 VARCHAR(20) NULL)" &amp; vbCrLf &amp; _
+          "INSERT INTO #test(field1) SELECT fname FROM Employee" &amp; vbCrLf &amp; _
+           "INSERT INTO TestTemp(field1) SELECT field1 FROM #test"
+
+        cn.Execute strSQL
+
+5. Start ISQL_W and run the following statement:
+
+        SELECT * FROM TestTemp
+        DROP TABLE TestTemp
+
+RESULTS: You should see rows returned in the results windows. If the #temp table
+was not created in step 4, TestTemp would not exist.
+
+This example demonstrates that the #temp table is created during step 4 but
+pausing/stopping the code at any point does not reveal that fact. The SQL
+statement is being executed and the connection is closed immediately, so you do
+not see the details within ISQL_W or Visual Basic.
+
+NOTE: The &lt;DROP TABLE&gt; statement deletes the table from the database so you
+may run the example again.
+
+To refer to the temporary table at some other point in the code, use the
+&lt;dbExecDirect&gt; option with the Connection or QueryDef object as in the
+following example.
+
+Follow steps 1 through 3 as in the previous example. Then paste the following
+code in the &lt;Form-Load&gt; event and run the project:
+
+     Dim ws As Workspace
+     Dim cn As Connection
+     Dim strConnect as string
+     Dim strSQL as string
+
+     Set ws = DBEngine.CreateWorkspace("", "", "", dbUseODBC)
+     Set cn = ws.OpenConnection("", , ,
+              "ODBC;DSN=Pubs;Database=Pubs;UID=sa;PWD=")
+
+     strSQL = "CREATE TABLE #test (field1 VARCHAR(20) NULL)" &amp; vbCrLf &amp; _
+              "INSERT INTO #test(field1) SELECT fname FROM Employee"
+     cn.Execute strSQL, dbExecDirect
+
+     strSQL = "CREATE TABLE TestTemp(field1 VARCHAR(20) NULL)" &amp; vbCrLf &amp; _
+              "INSERT INTO TestTemp(field1) SELECT field1 FROM #test"
+     cn.Execute strSQL, dbExecDirect
+
+You should see rows returned in the results windows. This demonstrates that the
+temporary table was created and its scope was not limited to a prepared
+statement (temporary stored procedure) but the database connection.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ODBC DSN called &lt;Pubs&gt; with the ODBC32 administrator.
+
+2. Open Visual Basic and create a new Standard.exe project.
+
+3. On the Project menu, click References, and select the Microsoft DAO 3.5x
+  Object Library.
+
+4. In the &lt;Form-Load&gt; event, paste the following code:
+
+        Dim ws As Workspace
+        Dim cn As Connection
+        Dim strConnect as string
+        Dim strSQL as string
+
+        Set ws = DBEngine.CreateWorkspace("", "", "", dbUseODBC)
+        Set cn = ws.OpenConnection("", , ,
+                 "ODBC;DSN=Pubs;Database=Pubs;UID=sa;PWD=")
+
+        strSQL = "CREATE TABLE #test (field1 VARCHAR(20) NULL)"
+        cn.Execute strSQL
+
+        'This statement results in an error.
+        strSQL = "INSERT INTO #test(field1) SELECT fname FROM Employee"
+        cn.Execute strSQL
+
+The temporary table was created but in a prepared statement (temporary stored
+procedure). Consequently, the temporary table was destroyed when the stored
+procedure terminated, resulting in an error on the subsequent reference to the
+temporary table.
+
+REFERENCES
+==========
+
+SQLServer Books Online Visual Basic Books Online, "ODBCDirect Prepared"
+
+Additional query words: kbDSupport kbdse kbvbp600 kbvbp500 kbDAO350 kbDAO kbSQLServ kbDatabase
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

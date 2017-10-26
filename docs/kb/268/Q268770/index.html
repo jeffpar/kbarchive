@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268770/","publisher":null,"image":null,"headline":"Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268770-prb-loadpicture-and-savepicture-entry-points-are-not-found">Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268770
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kbCOMt kbGrpDSCom kbDSupport
+Last Modified: 12-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following module section in Stdole2.tlb indicates that it is defining the
+LoadPicture and SavePicture functions entry points in Oleaut32.dll:
+
+      module StdFunctions {
+          [entry(0x60000000), helpstring("Loads a picture from a file"), helpcontext(0x00002775)]
+          HRESULT _stdcall LoadPicture(
+                          [in, optional] VARIANT filename, 
+                          [in, optional, defaultvalue(0)] int widthDesired, 
+                          [in, optional, defaultvalue(0)] int heightDesired, 
+                          [in, optional, defaultvalue(0)] LoadPictureConstants flags, 
+                          [out, retval] IPictureDisp** retval);
+          [entry(0x60000001), helpstring("Saves a picture to a file"), helpcontext(0x00002775)]
+          HRESULT _stdcall SavePicture(
+                          [in] IPictureDisp* Picture, 
+                          [in] BSTR filename);
+      };
+
+The following code obtains the LoadPicture entry point:
+
+  HMODULE hInst = LoadLibrary("oleaut32.dll");
+  pnfLoadPicture = GetProcAddress(hInst, "LoadPicture");
+  pnfLoadPicture = GetProcAddress(hInst, MAKEINTRESOURCE(0x60000000));
+
+However, this code fails with "the specified procedure could not be found" error.
+This error indicates that the entry points are not defined in Oleaut32.dll.
+
+You encounter similar behavior for SavePicture.
+
+CAUSE
+=====
+
+These entry points are defined for future feature implementation. They are not
+implemented and may not be implemented. The definitions in Stdole2.tlb are
+retained for backward compatibility with existing applications.
+
+RESOLUTION
+==========
+
+To instantiate the IPicture interface, you can use the OleLoadPicture and
+OleCreatePictureIndirect functions. IPicture's properties and methods can be
+used to manage the picture objects.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q218972 How To Load and Display Graphics Files w/LOADPIC.EXE
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbGrpDSCom kbDSupport 
+Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

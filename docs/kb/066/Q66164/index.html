@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66164: Versions of Utilities (LINK, LIB, Etc.) Shipped with BASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66164: Versions of Utilities (LINK, LIB, Etc.) Shipped with BASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66164/","publisher":null,"image":null,"headline":"Q66164: Versions of Utilities (LINK, LIB, Etc.) Shipped with BASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66164-versions-of-utilities-link-lib-etc-shipped-with-basic">Q66164: Versions of Utilities (LINK, LIB, Etc.) Shipped with BASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66164
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_LINK S_EDITOR S_CodeView S_MAKE S_NMAKE B_BasicCom S_PWB | mspl13_basic
+Last Modified: 17-OCT-1990
+
+Below is a list of the specific versions of Microsoft utility programs
+shipped with Microsoft QuickBASIC versions 1.00, 1.01, 1.02, 2.00,
+2.01, 3.00, 4.00, 4.00b, and 4.50 for MS-DOS; with Microsoft BASIC
+Compiler versions 5.35, 5.36 for MS-DOS and 6.00, 6.00b for MS-DOS and
+MS OS/2; and with Microsoft BASIC Professional Development System
+(PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+This list of utilities includes LINK.EXE (Microsoft Linker), CV.EXE
+(Microsoft CodeView for MS-DOS), CVP.EXE (Microsoft CodeView for MS
+OS/2 protected mode), M.EXE (Microsoft Editor for MS-DOS), MEP.EXE
+(Microsoft Editor for MS OS/2 protected mode), LIB.EXE (Microsoft
+Library Manager), MAKE.EXE (Microsoft Program Maintenance Utility),
+and NMAKE.EXE (newer Microsoft Program Maintenance Utility). LINK.EXE,
+LIB.EXE, MAKE.EXE, and NMAKE.EXE are bound applications (that is, they
+run under either MS-DOS or MS OS/2).
+
+Note: "Segmented Linker" in the table below means segmented-executable
+linker. A "-" in the table below indicates that the utility is not
+shipped with the product.
+
+                    +-----------------------+
+                    | QuickBASIC for MS-DOS |
+                    +-----------------------+
+
+Product  Object  Segmented  Overlay  CV/  M/MEP    LIB  MAKE  NMAKE
+Version  Linker  Linker     Linker   CVP  Editor
+-------  ------  ---------  -------  ---  ------   ---  ----  -----
+
+1.00      3.02       -         -      -     -        -    -      -
+1.01      3.02       -         -      -     -        -    -      -
+1.02      3.02       -         -      -     -        -    -      -
+2.00       -         -        3.06    -     -        -    -      -
+2.01       -         -        3.06    -     -        -    -      -
+3.00       -         -        3.06    -     -        -    -      -
+4.00       -         -        3.61    -     -        -    -      -
+4.00b      -         -        3.65    -     -        -    -      -
+4.50       -         -        3.69    -     -        -    -      -
+
+Note that QuickBASIC versions 1.x, 2.x, 3.00, and 4.x cannot take
+advantage of the code overlay capabilities of the overlay linker.
+
+           +---------------------------------------+
+           | BASIC Compiler for MS-DOS and MS OS/2 |
+           +---------------------------------------+
+
+Product  Object  Segmented  Overlay  CV/  M/MEP    LIB  MAKE  NMAKE
+Version  Linker  Linker     Linker   CVP  Editor
+-------  ------  ---------  -------  ---  ------   ---  ----  -----
+
+5.35      1.10       -         -      -     -       -     -     -
+5.36      1.10       -         -      -     -       -     -     -
+
+For MS-DOS and MS OS/2:
+
+6.00       -     5.01.20       -     2.20  1.00    3.11  4.07   -
+6.00b      -     5.01.20       -     2.20  1.00    3.11  4.07   -
+
++--------------------------------------------------------------------+
+| BASIC Professional Development System (PDS) for MS-DOS and MS OS/2 |
++--------------------------------------------------------------------+
+
+7.00       -     5.05          -     2.35  1.20    3.16   -    1.10
+7.10       -     5.10          -     3.10    -     3.17   -    1.11
+
+Note that Microsoft BASIC Professional Development System (PDS)
+version 7.00 for MS-DOS and MS OS/2 is the first version to support
+the code overlay feature of the linker (LINK.EXE).
+
+BASIC PDS 7.10 introduces the Programmer's WorkBench (PWB.EXE) version
+1.10 for mixed-language and OS/2 programming.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

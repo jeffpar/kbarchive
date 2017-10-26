@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174315/","publisher":null,"image":null,"headline":"Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174315-wd97-warning-when-you-save-multilingual-web-page-or-html-file">Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174315
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word8 word97 kbwdinternet
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- the operating system: Microsoft Windows 2000 
+- the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97, when you save a document as Hypertext Markup Language
+(HTML) or when you save a new Web page, you may receive the following warning
+message:
+
+  This document contains characters that are not in the current language
+  encoding. To preserve them, choose cancel and select the appropriate language
+  encoding. For multilingual documents, use UTF-8.
+
+CAUSE
+=====
+
+This message appears when your document contains multiple languages. The Word
+HTML converter cannot set the correct character set (language encoding) for the
+document.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps:
+
+1. When you get the warning message described in the "Symptoms" section of this
+  article, click OK.
+
+2. On the File menu, click Properties.
+
+3. In the Document Properties dialog box, under "For Saving This Page", click to
+  select the correct language set that your document contains, and then click
+  OK.
+
+  For example:
+
+   - When your document contains English and Polish, select Central European.
+
+     -or-
+
+   - When your document contains English and Russian, select Cyrillic.
+
+4. On the File menu, click Save.
+
+This sets the language encoding of the document.
+
+If You Have a Problem Completing the Resolution
+-----------------------------------------------
+
+To set the correct language encoding, your Word document must be saved in the
+HTML file format before you click Properties on the File menu.
+
+To save as HTML, do one of the following:
+
+- On the File menu, click "Save as HTML".
+
+  -or-
+
+- On the File menu, click Save As. In the Save As dialog box, change the "Save
+  as type" box to HTML Document, and then click OK.
+
+If the Document Properties dialog box containing the option "For saving this
+page" is not displayed when you click Properties on the File menu, or if you are
+unable to save as HTML, Word may be experiencing any of the following problems:
+
+- "Save as HTML" missing on the File menu
+
+- HTML Document missing in the "Save as type" box (on the File menu, click Save
+  As)
+
+- Damaged or missing Windows Registry settings
+
+- Damaged or missing program files or components
+
+To resolve these problems, use one or more of the following methods:
+
+Method 1: Reinstall Microsoft Word:
+
+To reinstall Microsoft Word, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs. In the list of installed programs, click
+  Microsoft Office 97 (Microsoft Word 97), and then click Add/Remove (on
+  Microsoft Windows 2000, click Change/Remove). If you installed Microsoft
+  Office from a CD, you are prompted to insert the first CD.
+
+3. If a dialog box displays a message that states that programs are running,
+  quit the programs, and then click OK.
+
+4. In the Microsoft Office 97 Setup dialog box, click Reinstall.
+
+Method 2: Run Setup with the /y Switch to Correct the Registry:
+
+Setup /y is a switch used by Office Setup and Office program Setup files. It
+allows a reinstallation of Office without performing file checks or actually
+reinstalling the files. Setup /y re-registers all Office components and returns
+the settings to their default values in the registry.
+
+To resolve this problem, try running Setup /y for Word or Office to repair
+registry corruption.
+
+To run Setup with the /y switch, follow these steps:
+
+1. Insert the Microsoft Word or Microsoft Office CD-ROM. If you installed Word
+  or Office from floppy disks, insert the Setup Disk 1 in your computer's
+  floppy disk drive.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following, and then click OK:
+
+  "&lt;drive&gt;:\setup.exe /Y" (without the quotation marks)
+
+  where &lt;drive&gt; is the letter of the drive that contains the CD or Setup
+  Disk 1.
+
+4. Click Reinstall.
+
+Method 3: Completely Remove Word and Reinstall:
+
+To completely remove Microsoft Word and reinstall, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs. In the list of installed programs, click
+  Microsoft Office 97 (Microsoft Word 97), and then click Add/Remove (on
+  Microsoft Windows 2000, click Change/Remove). If you installed Microsoft
+  Office from a CD, you are prompted to insert the first CD.
+
+3. If a dialog box displays a message that states that programs are running,
+  quit the programs, and then click OK.
+
+4. In the Microsoft Office 97 Setup dialog box, click Remove All.
+
+5. Run the Eraser 97 utility to remove all remaining Office/Word files and to
+  delete corresponding registry entries.
+
+For additional information about the Office 97 File and Registry Eraser utility,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q176823 OFF97: Utility to Completely Remove Remaining Office 97 Files
+
+6. When you are prompted to remove shared components, click Remove All.
+
+7. If you are prompted to restart the computer after Setup is completed, restart
+  the computer.
+
+8. Re-install either Microsoft Word 97 or Microsoft Office 97 for Windows.
+
+MORE INFORMATION
+================
+
+When you save your Web page in Word, the HTML converter writes the language
+encoding of the document similar to the following:
+
+  &lt;META HTTP-EQUIV="Content-Type" CONTENT="text/html;
+  charset=windows-1252"&gt;
+
+When your document contains text typed in a different language in addition to
+English, the document may show incorrect characters when viewed in a Web
+browser.
+
+To correctly show text typed in a different language, the document language
+encoding must be set to the language typed. If your document contains text typed
+in a different language in addition to English, you must specify the specific
+language encoding of the additional language.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q141306 How to Enable Support for Multiple Languages in Windows
+
+  Q150620 Error Message When You Change the Default Language
+
+
+  Q159950 WD97: General Information About International Functionality
+
+  Q183857 WD97: Save As HTML Command Missing from File Menu
+
+  Q170937 WD97: Supplemental Converter Not Listed in Files Of Type List
+
+Additional query words: 8.0 8.00 multi-lingual multi-language foreign other
+
+======================================================================
+Keywords          : kbdta word8 word97 kbwdinternet 
+Technology        : kbOSWin2000 kbWordSearch kbOSWinSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOSWinNTSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

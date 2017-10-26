@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196585/","publisher":null,"image":null,"headline":"Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196585-xadm-creating-secondary-proxy-addresses-during-notes-dirsync">Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196585
+Product(s): Microsoft Exchange
+Version(s): WinNT:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Connector for Lotus Notes adds the ability to synchronize
+user lists from Lotus Notes into the Microsoft Exchange Server Global Address
+List. By default, only the Lotus Notes mail address will be imported from the
+Lotus Notes Address Book.
+
+The ability to automatically create secondary addresses such as SMTP or X.400 can
+be added to the Directory Synchronization process.
+
+MORE INFORMATION
+================
+
+IMPORTANT: The below process of editing the Exchange Connector mapping files can
+result in improper operation of the Exchange Connector for Lotus Notes.
+Microsoft recommends backing up all referenced files before editing their
+contents.
+
+To automatically add a second proxy to Exchange Server directory entries, perform
+the following steps:
+
+1. Add a new field to Exchsrvr\Connect\Exchconn\Dxamex\Amap.tbl,
+
+2. Add a second field (the length).
+
+3. Add "Secondary-Proxy-Addresses(Type:)".
+
+  Some examples would be as follows:
+
+  SMTPAddr1 64 Proxy-Addresses(SMTP:)
+  SMTPAddr2 64 Secondary-Proxy-Addresses(SMTP:)
+  SMTPAddr3 64 Secondary-Proxy-Addresses(SMTP:)
+  X400Addr1 64 Proxy-Addresses(X400:)
+  X400Addr2 64 Secondary-Proxy-Addresses(X400:)
+  ccMailAddr 64 Secondary-Proxy-Addresses(CCMAIL:)
+
+  This process creates three new SMTP address fields with SMTPAddr1 being the
+  primary SMTP address. Two new X.400 addresses with X400Addr1 being the
+  primary and one new cc:Mail secondary proxy address.
+
+4. Now that the fields have been defined, edit the mapping file by opening the
+  file Exchsrvr\Connect\Exchconn\Dxamex\Mapnotes.tbl in a text editor.
+
+  Some examples that correspond to the above fields would be:
+
+  SMTPAddr1 = FirstName "." LastName "@exchange.microsoft.com"
+  SMTPAddr2 = Left( FIrstName, "1") "." LastName "@microsoft.com"
+  SMTPAddr3 = ShortName "@microsoft.com"
+  X400Addr1 = "c=US;a=ATTMAILL;p=Exchange;g=" FirstName ";s=" LastName
+  X400Addr2 = "c=US;a=ATTMAIL;p=Microsoft;o=Exchange;ou1=NOTES;g="
+  FirstName ";s=" LastName
+  ccMailAddr = Firstname "." Lastname " at Microsoft"
+
+  After the Directory Synchronization process is complete, the addresses from
+  above will appear on the Notes users as follows:
+
+  SMTPAddr1 will be Firstname.Lastname@exchange.microsoft.com
+  SMTPAddr2 will be F.Lastname@microsoft.com
+  SMTPAddr3 will be user@microsoft.com
+  X400Addr1 will be c=US;a=ATTMAIL;p=Exchange;g=Firstname;s=Lastname
+  X400Addr2 will be
+  c=us;a=ATTMAIL;p=Microsoft;o=Exchange;ou=Notes;g=Firstname;s=Lastname
+  ccMailAddr will be Firstname.Lastname at Microsoft
+
+Additional query words: notesmc linkage
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>
